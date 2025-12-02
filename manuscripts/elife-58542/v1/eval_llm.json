@@ -1,0 +1,331 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C25",
+      "C26",
+      "C27",
+      "C128",
+      "C129"
+    ],
+    "result": "This study assembled and analyzed DNA adenine methylomes for 93 MTBC clinical isolates from seven lineages, representing the largest survey of methylomic diversity in MTBC to date. The study used finished genomes from long-read sequencing with transferred annotations from H37Rv and included sequencing kinetics at all MTase motif sites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C25-C27, C128-C129 collectively establish the scope and scale of the study. The explicit statement of 93 isolates from seven lineages, use of finished genomes, comprehensive motif site analysis, and claim of being the largest survey are internally consistent and supported by the methodological descriptions. The sample size and approach are clearly documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C2",
+      "C28",
+      "C29",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C130",
+      "C131"
+    ],
+    "result": "Methyltransferase allele-methylome mapping corrected previous errors in MTase variant calling, specifically identifying that mamB D59G was previously mischaracterized due to a missed IS6110 insertion when using reference-based short-read mapping. The systematic approach examining all motif sites revealed MTase genotypes with partial function previously mischaracterized as completely inactive.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C28-C29, C47-C53, C130-C131 provide strong evidence for methodological improvements. The identification of the IS6110 insertion missed by prior studies (C47-C53) provides concrete evidence of correction. The comparison showing MamB was active in isolates with D59G without the insertion (C52) supports the conclusion that the insertion, not D59G, caused inactivation (C53). The systematic approach is well-justified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C132"
+    ],
+    "result": "The study resolved the disputed functional impact of mamA variant E270A and identified three MTase alleles (mamAE270A, mamAG152S, mamBK1033T) that confer partial MTase activity, as evidenced by intermediate IPD ratios in 34 isolates with mamAE270A.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C59, C132 document the resolution of a disputed finding. The intermediate IPD ratios observed in 34 mamAE270A isolates (C58) provide direct evidence of partial activity, reconciling contradictory prior reports (C55-C57). The identification of three partially active alleles is supported by IPD ratio data (C59). The evidence is consistent and addresses prior inconsistencies in the literature.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C3",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C133",
+      "C134"
+    ],
+    "result": "Heterogeneity analysis using SMALR revealed that partially active MTase alleles (mamAE270A, mamAG152S, mamBK1033T) drive intracellular stochastic methylation, generating intercellular mosaic methylation (IMM) in 38/93 isolates, including 34/36 East-Asian isolates. The unimodal distribution of native IPD values distinguishes this from phase-variant methylation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C60-C84, C133-C134 provide comprehensive evidence for IMM. The use of SMALR to examine read-level IPD signals (C65-C66) is appropriate. The statistical comparisons showing intermediate native IPD values for mamAG152S (C75: Cohen's d = 1.10 vs inactive, d = 2.14 vs wild-type, both p < 10^-200) and mamAE270A (C78: d = 0.23, p = 8.68\u00d710^-25) are robust. The unimodal distribution (C76, C82) correctly distinguishes stochastic from phase-variant methylation (C69-C70). The conclusion of IMM is well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C4",
+      "C139"
+    ],
+    "result": "Mutation-driven IMM was nearly ubiquitous in the Beijing sublineage, with 34/36 Beijing clinical isolates exhibiting constitutive IMM.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4 and C139 provide specific quantification (34/36 isolates) of IMM prevalence in the Beijing sublineage. The high proportion (94%) supports the characterization as 'nearly ubiquitous.' This is a straightforward descriptive finding supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "Analysis of methionine-starved \u0394metA mutants suggests that intercellular mosaic methylation can be induced by nutrient limitation, as the native IPD value distribution differed from a simulated mixture of wholly methylated and unmethylated reads.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C85-C88 present an interesting hypothesis but with limited evidence. The analysis uses published data from a single mutant strain (C87), and the interpretation relies on comparison to a simulated mixture (C87). While the biochemical link between methionine and SAM is established (C86), the evidence for nutrient-induced IMM is preliminary and speculative (C88 includes 'presumably other nutrient constraints'). Additional experiments would strengthen this conclusion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C33",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "The study identified 40 distinct MTase mutations (29 previously unreported) across 93 isolates, including 12 with reduced or inactive function. MTase activity converged across lineages through multiple distinct mutations and varied within lineages, contradicting previous reports of lineage-specific methylation. All isolates had at least one active MTase, but only 32/93 had all three active.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33, C35-C46 document the diversity of MTase mutations and their functional impacts. The identification of 40 mutations with 29 novel (C36-C37) and 12 affecting function (C44) is clearly stated. The phylogenetic analysis showing convergent evolution (C33, C45-C46) and contradiction of prior lineage-specific findings (C35) is supported by Figure 2B and D. The statistics on MTase activity (C42-C43) are explicit and verifiable.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C135"
+    ],
+    "result": "Comparative methylomic analysis identified 351 hypervariable sites (of 4486 common sites) across isolates, falling within 204 coding regions and near 25 TSSs. Hypervariability was 9.43-fold enriched in orphan MTase sites compared to MamB sites (p = 3.39\u00d710^-17), consistent with reduced selection pressure.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C95, C135 provide quantitative evidence for hypervariable sites. The identification of 351/4486 sites (C91) with specific genomic locations (C92) is explicit. The 9.43-fold enrichment in orphan MTases (C94) with strong statistical significance (p = 3.39\u00d710^-17, C95) supports the interpretation of differential selection pressure. The consistency with prior observations about orphan MTases (C95) strengthens the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "The study identified consistently hypomethylated MTase motif loci, with 34 MamA and 58 HsdM loci significantly hypomethylated (p < 4.72E-07). All 58 HsdM loci matched TFBS motifs, suggesting transcription factor occlusion. A specific example is cobK:304, hypomethylated in 50/68 HsdM-active isolates but methylated in 18 Indo-Oceanic isolates carrying mntR Q131* truncation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C109 document hypomethylated sites with strong statistical support. The identification of 34 MamA and 58 HsdM consistently hypomethylated loci (C98) with stringent p-value threshold (p < 4.72E-07) is robust. The TFBS matching for all 58 HsdM loci (C102) supports the occlusion mechanism. The cobK:304 example (C105-C109) provides a specific case linking hypomethylation to transcription factor binding and genetic variation, strengthening the mechanistic interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C136"
+    ],
+    "result": "DNA adenine methylation is widespread at promoters, with MamA and HsdM motifs showing distinct peaks at the edges of the -10 element. The study identified 22 MamA promoters and 33 HsdM promoters (13 novel) overlapping the -10 element, with 212 genes total having common promoter MTase motif sites. Fifteen genes had hypervariable promoter motif sites, with no MamB promoter sites being hypervariable.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C110-C120, C136 document promoter methylation patterns. The identification of distinct peaks at -10 elements (C110) and specific numbers of promoters (C111-C112) is explicit. The discovery of 13 novel HsdM promoters (C113) and total of 212 genes (C114) provides comprehensive coverage. The absence of hypervariable MamB promoter sites (C120) contrasts with orphan MTases, supporting the RM-system interpretation. The evidence is consistent and well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C138"
+    ],
+    "result": "Promoter methylation is associated with differential expression in the \u0394hsdM transcriptome. Genes with HsdM promoter motifs (n=11) were significantly enriched among 310 differentially expressed genes (p = 0.000215, OR = 4.47), with 9/11 overlapping the -10 element, suggesting HsdM-methylation directly influences transcription, contradicting previous conclusions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C6, C121-C127, C138 provide statistical evidence for transcriptional influence. The enrichment analysis (C124: p = 0.000215, OR = 4.47, 95% CI: 1.99-9.37) is statistically robust. The overlap of 9/11 genes with the -10 element (C126) supports a direct mechanism. However, the magnitude of effect is subtle (|log2-foldchange| \u2264 1.16, C125), and the claim of 'direct influence' (C6) is somewhat speculative. The contradiction of prior work (C138) is justified by the different analytical approach. Overall supported but with caveats about effect size.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C7",
+      "C137"
+    ],
+    "result": "Comparative and functional analyses identified 351 hypervariable sites and numerous putative regulatory interactions, implicating clinically important phenotypes as potentially regulated by DNA adenine methylation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C7 and C137 make broad statements about clinical implications. While the identification of 351 hypervariable sites is well-supported (see previous result), the claim that these implicate 'clinically important phenotypes' (C137) is speculative. The manuscript mentions genes involved in drug resistance, dormancy, and metal homeostasis, but direct evidence linking methylation patterns to clinical phenotypes is not provided. This requires functional validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C140",
+      "C144"
+    ],
+    "result": "The discovery of constitutive IMM driven by MTase genotype raises the possibility that DNA adenine methylation translates into differences in adaptive capacity between MTBC strains, potentially contributing to the global success of the Beijing sublineage.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C140 and C144 are explicitly speculative ('raises the possibility,' 'prompts the question'). While the observation of IMM in Beijing isolates is well-supported, the connection to adaptive capacity and global success is hypothetical. The manuscript acknowledges this is a question for future work. No direct evidence of adaptive benefit or phenotypic consequences is provided.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C141",
+      "C142"
+    ],
+    "result": "The study proposes renaming the orphan methyltransferase encoded by Rv2756c to MamC and its specificity subunit encoded by Rv2761 to mamS/MamS, based on the determination that it lacks a functional restriction component.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C141-C142 propose nomenclature changes based on functional characterization. The rationale that Rv2756c is an orphan MTase (not part of a Type I R-M system) is supported by prior work cited in C14. The proposed nomenclature is consistent with existing conventions for MamA and MamB. This is a reasonable proposal supported by the functional data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C143"
+    ],
+    "result": "This integrative analysis spotlights DNA methylation as a fundamental source of diversity in the MTBC.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C143 is a summary conclusion supported by the collective findings of the study. The documentation of diverse MTase mutations, IMM, hypervariable sites, and promoter methylation patterns across 93 isolates provides strong evidence for methylation as a source of diversity. This is a well-supported overarching conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "The introduction provides background on tuberculosis epidemiology, M. tuberculosis evolution, DNA methyltransferases, and heterogeneous methylation in bacteria, establishing the context and novelty of the study.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C24 are primarily citations of prior work and established knowledge. These provide appropriate context for the study. The citations appear accurate (WHO 2017 for TB statistics, Shell et al. 2013 and Zhu et al. 2016 for MTases, etc.). The claim that no prior study examined heterogeneous methylation in M. tuberculosis (C24) establishes a knowledge gap that the current study addresses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C30",
+      "C31"
+    ],
+    "result": "The study integrated transcription start sites, transcription factor binding sites, and sigma factor binding sites into methylomic analyses, with mean single-strand coverage at target motif sites ranging from 25x-152x (median = 64).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C31 describe methodological aspects. The integration of regulatory elements (C30) is a key feature of the analytical approach. The coverage statistics (C31) are explicit and indicate adequate sequencing depth for methylation analysis. These are straightforward methodological claims that are well-supported.",
+    "result_type": "MINOR"
+  }
+]

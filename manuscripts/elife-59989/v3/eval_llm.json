@@ -1,0 +1,262 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C51",
+      "C52",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C69",
+      "C70",
+      "C71",
+      "C73"
+    ],
+    "result": "Nuclei and their associated centrosomes act as pacemakers for the cell cycle in Xenopus egg extracts. Mitosis commonly initiated at sperm-derived nuclei/centrosomes, accelerating the cell cycle by ~20% (10 min) compared to the slowest regions. Statistical analysis showed that 23% of mitotic sources were within 100 \u00b5m of nuclei, ~5 times higher than expected by chance, with 69/107 cycles showing significant association (p<0.05). The proportion of nucleus-associated sources increased over successive cycles, and 85% of sources accelerating mitosis by >10 min were nucleus-associated.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C7, C51-C52, C63-C67, C69-C71, and C73 provide converging evidence from observational data, quantitative measurements, and statistical analysis. The automated analysis of 107 cycles from 25 experiments provides robust statistical support (bootstrapping with p-values), and the ~20% acceleration is consistently measured across multiple experiments. The correlation between nuclei/centrosomes and trigger wave sources is well-documented through both spatial and temporal analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "Nuclei formed from phage DNA (without centrosomes) act as mitotic sources and accelerate the cell cycle. Analysis of 44 cycles from 11 experiments showed significantly more sources near nuclei than expected by chance (29/44 cycles with p<0.05). Nuclear sources accelerated the cell cycle by 6.6 \u00b1 4 min, about two-thirds of the acceleration seen with sperm-derived nuclei. Phage DNA nuclei replicated but did not promote compartment division, indicating centrosomes are required for division but not for pacemaking.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C102-C110 demonstrate through reconstitution experiments that nuclei alone (without centrosomes) can act as pacemakers. The statistical analysis (44 cycles, 11 experiments) provides robust evidence, and the comparison to sperm-derived nuclei (C110) is quantitative. The observation that compartments don't divide (C103-C105) provides a clear functional distinction between centrosome and nuclear roles.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C93",
+      "C94",
+      "C100",
+      "C101"
+    ],
+    "result": "Purified HeLa cell centrosomes promote microtubule organization and compartment division but do not act as strong mitotic pacemakers. Centrosomes increased in number during each cycle and promoted division of cell-like compartments. However, the distribution of mitotic sources near centrosomes was similar to random chance, with only 3/18 cycles showing more sources near centrosomes than expected. Centrosomes did not accelerate the cell cycle more than edge-associated or other sources.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C89, C93-C94, C100-C101 provide clear negative evidence through statistical analysis and functional assays. The boiled centrosome control (C89) validates that functional centrosomes are required for the observed effects. The statistical comparison to random distribution (C93-C94) and the comparison to other source types (C100-C101) provide strong evidence that centrosomes alone are not sufficient for pacemaking.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "In centrosome-supplemented extracts, adventitious nuclei appeared and acted as strong mitotic sources. These nuclei arose from replication of small amounts of DNA (inhibited by aphidicolin in a dose-dependent manner) and accelerated the cell cycle more than centrosome-associated, edge-associated, or other sources. Once nuclei appeared, 66/149 cycles had more sources near nuclei than expected by chance. Aphidicolin suppressed nucleus appearance without affecting cytoplasmic organization or compartment division.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90-C92, C95-C99 provide strong evidence through pharmacological manipulation (aphidicolin) and statistical analysis. The dose-dependent inhibition by aphidicolin (C91) supports the DNA replication hypothesis (C92). The statistical analysis (C96) and comparison to other source types (C97) demonstrate that nuclei, not centrosomes, are the primary pacemakers. The aphidicolin control (C98-C99) cleanly separates nuclear from centrosomal functions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C114",
+      "C115",
+      "C116"
+    ],
+    "result": "In extracts with both centrosomes and phage DNA, centrosomes facilitated organization and division but appeared to slow the acceleration of the cell cycle by phage DNA nuclei to 4.1 \u00b1 2.5 min (compared to 6.6 \u00b1 4 min without centrosomes). Any additional effect of centrosomes as a staging platform for mitosis was too subtle to detect with this analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C114-C116 present an unexpected finding that centrosomes may slow nuclear pacemaking, but the evidence is limited (12 experiments) and the interpretation is cautious (C116). The result contradicts the expectation that centrosomes would enhance pacemaking and may reflect experimental variability or subtle interactions. Additional experiments with larger sample sizes and direct mechanistic tests would be needed to confirm this finding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "Extracts without sperm chromatin cycled and generated mitotic trigger waves, but sources were generally weaker than nucleus/centrosome-associated sources. The first mitosis occurred nearly simultaneously, followed by emergence of edge sources that dominated subsequent cycles. Wave speeds (67 \u00b1 17 \u00b5m/min) were similar to sperm-containing extracts. Edge sources accelerated the cycle by only -3.1 \u00b1 5.3 min on average, with 1.8% showing \u226510 min acceleration. Adventitious nuclei sometimes appeared in later cycles, presumably from egg DNA replication.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C84 provide comprehensive characterization of the baseline system without added nuclei or centrosomes. The quantitative measurements (C78-C79, C82-C83) are from multiple experiments (28 for wave speed, 24 for acceleration). The comparison to nucleus-associated sources (C84) is well-supported by the data. The speculation about egg DNA (C81) is reasonable but acknowledged as such.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "A 96-well plate assay was developed to monitor cell cycle dynamics in thin layers (~200 \u00b5m) of Xenopus egg extract. Up to 16 samples could be imaged simultaneously with adequate temporal resolution. Sperm-supplemented extracts self-organized into cell-like compartments, with nuclei becoming visible midway through interphase 2. Nuclei and compartments divided exponentially (1.71 \u00b1 0.01 fold per cycle), with only sperm-associated compartments (containing centrosomes) dividing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C37 describe the experimental system and basic observations. The methodology is clearly described and the observations are well-documented through imaging data. The quantitative measurement of nuclear increase (C36) provides specific data. The observation that only centrosome-containing compartments divide (C37) is important for interpreting later results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "The first mitosis occurred nearly simultaneously across the well (phase wave), while subsequent mitoses initiated from well-defined sources and spread as circular trigger waves with constant velocity. Mitotic wave velocity was 54 \u00b1 13 \u00b5m/min (33 events), similar to previous reports. Microtubule polymerization waves during interphase were slower (32 \u00b1 6 \u00b5m/min). Wave speeds are determined by biochemical reaction rates and local diffusion of mitotic regulators.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C50 characterize the spatiotemporal dynamics of mitotic waves. The distinction between phase waves (C38-C39) and trigger waves (C42-C43) is supported by theory (C40-C41) and observation. The quantitative measurements (C44-C48) are from multiple experiments and consistent with previous work. The mechanistic interpretation (C49-C50) is well-supported by citations to theoretical work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C68",
+      "C72"
+    ],
+    "result": "Three types of mitotic sources were identified: nuclear sources, edge sources, and 'other' sources. Edge sources occurred at well boundaries and have been noted in previous studies and mathematical models. 'Other' sources were often seen in the first mitosis or late in subsequent cycles and usually did not generate well-defined circular waves. An automated approach was developed to identify and characterize sources from 25 experiments. Edge and 'other' sources showed modest acceleration (3.5 \u00b1 3.4 min and 2.9 \u00b1 2.2 min, respectively).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C62, C68, C72 describe the classification and characterization of mitotic sources. The automated analysis (C60-C62) provides systematic quantification across multiple experiments. The identification of edge sources is supported by previous work (C54-C55). The quantitative measurements of acceleration (C68, C72) provide important comparisons to nuclear sources.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "Background on mitotic regulation and trigger waves. Mitosis is driven by an oscillator with components in nucleus, centrosome, and cytoplasm. The mitotic entry circuit includes \u22655 feedback loops and functions as a bistable toggle switch. In Xenopus embryos, the cell cycle operates as a relaxation oscillator with precise periodicity. Systems with bistable triggers can generate trigger waves, which originate from the location with the fastest intrinsic rhythm. Previous work suggested mitosis might initiate simultaneously in mammalian cells but at different times in larger cells like frog eggs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C22 provide established background knowledge supported by multiple citations to previous work. These claims set up the theoretical framework and prior observations that motivate the current study. The citations are appropriate and the background is accurately represented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128"
+    ],
+    "result": "Discussion of mechanisms and broader implications. The ability of the nucleus to concentrate Cdc25C and cyclin B-Cdk1 could be the mechanistic basis for pacemaking, though this has not been directly tested. Heart beats and cell cycles share systems-level logic (relaxation oscillator with bistable trigger, trigger wave propagation from pacemaker). The functional significance may relate to reliable mechanics or spatial partitioning of regulators. Concurrent work by Nolet et al. also identified nuclei as pacemakers; the current work extends this by assessing centrosome contribution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C117-C128 provide mechanistic speculation (C117-C118, C124-C125) and broader context (C119-C123, C127-C128). The speculation is appropriately cautious and acknowledges limitations (C118). The comparison to heart pacemaking (C119-C121) is conceptually sound. The citation of concurrent work (C127-C128) appropriately positions the current findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C111",
+      "C112",
+      "C113"
+    ],
+    "result": "Speculation about why phage DNA nuclei show less acceleration than sperm-derived nuclei. The acceleration may be underestimated due to high density of nuclear sources, or phage DNA nuclei may have slower intrinsic rhythms than sperm chromatin nuclei, or nuclei lacking centrosomes may have slower rhythms than those with centrosomes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C111-C113 are explicitly speculative and offer multiple alternative explanations for the observed difference in acceleration between phage DNA and sperm-derived nuclei. While the speculation is reasonable, no experimental evidence is provided to distinguish between these possibilities. This represents an acknowledged limitation rather than a supported finding.",
+    "result_type": "MINOR"
+  }
+]

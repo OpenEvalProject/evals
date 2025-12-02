@@ -1,0 +1,1825 @@
+{
+  "submission": {
+    "id": "e7bce252-b425-465a-8f71-ead44c837eae",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T16:29:43.766012Z",
+    "updated_at": "2025-12-02T16:29:43.766012Z"
+  },
+  "content": [
+    {
+      "id": "a8e5affe-362d-4acc-b007-55d30ead7332",
+      "submission_id": "e7bce252-b425-465a-8f71-ead44c837eae",
+      "content_type": "manuscript",
+      "content_text": "# Improving on legacy conferences by moving online\n\n## Authors\n\n- Titipat Achakulvisut<sup>1</sup> ([ORCID: 0000-0002-2124-2979](https://orcid.org/0000-0002-2124-2979)) \u2020\n- Tulakan Ruangrong<sup>2</sup>\n- Isil Bilgin<sup>3</sup>\n- Sofie Van Den Bossche<sup>4</sup> ([ORCID: 0000-0001-9195-2426](https://orcid.org/0000-0001-9195-2426))\n- Brad Wyble<sup>5</sup> ([ORCID: 0000-0002-9984-3037](https://orcid.org/0000-0002-9984-3037))\n- Dan FM Goodman<sup>6</sup> ([ORCID: 0000-0003-1007-6474](https://orcid.org/0000-0003-1007-6474))\n- Konrad P Kording<sup>7</sup> ([ORCID: 0000-0001-8408-4499](https://orcid.org/0000-0001-8408-4499))\n\n### Affiliations\n\n1. Department of Bioengineering, University of Pennsylvania Philadelphia United States\n2. Department of Biomedical Engineering, Mahidol University Nakhon Pathom Thailand\n3. School of Biological Sciences, University of Reading Reading United Kingdom\n4. Department of Data Analysis, Ghent University Ghent Belgium\n5. Department of Psychology, Penn State University University Park United States\n6. Department of Electrical and Electronic Engineering, Imperial College London London United Kingdom\n7. Department of Bioengineering and the Department of Psychology, University of Pennsylvania Philadelphia United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nScientific conferences and meetings have an important role in research, but they also suffer from a number of disadvantages: in particular, they can have a massive carbon footprint, they are time-consuming, and the high costs involved in attending can exclude many potential participants. The COVID-19 pandemic has led to the cancellation of many conferences, forcing the scientific community to explore online alternatives. Here, we report on our experiences of organizing an online neuroscience conference, neuromatch, that attracted some 3000 participants and featured two days of talks, debates, panel discussions, and one-on-one meetings facilitated by a matching algorithm. By offering most of the benefits of traditional conferences, several clear advantages, and with fewer of the downsides, we feel that online conferences have the potential to replace many legacy conferences.\n\n## Introduction\n\nConferences are places where scientists go to meet other scientists and discuss the latest developments in their field. Talks are given, posters are presented, questions are asked (and sometimes answered), debates are held, collaborations are discussed, job opportunities are discovered, and friendships are renewed. Indeed, conferences and meetings are so central to scientific progress that many scientific societies expend enormous time and effort on the organization of annual meetings. Traditional conferences \u2013 or legacy conferences as we will call them in this article \u2013 clearly matter for scientific communities.\n\nAt the same time, by requiring our presence at a particular location, conferences take a lot from us. We have to interrupt our lives and leave our families to travel to a faraway place, and in doing so we produce significant carbon emissions (Nathans and Sterling, 2016; Pardee, 2015;\u00a0Quinton, 2020) and waste (Kier-Byfield, 2019). Attending a legacy conference can consume an entire week of our lives, and often involves two days of travel. Moreover, going to a meeting requires us to pay for flights, taxis, accommodation, registration, and childcare at home, making conferences expensive for the scientific system, for university administration, and for scientists as individuals. Travel can also hinder scientists who might not make it due to lack of funding, travel bans (Hu, 2018), or visas.\n\nAnd even when we all make it, we might be disappointed as conferences often do not live up to their promise: we may not be able to see the speaker in the big lecture hall, we may miss the colleague we were looking forward to meeting, or we may not meet the right people. Many good connections fail to be made simply due to the variability and constraints of physical places. Legacy conferences also suffer from major communication problems. Questions are typically asked in a first-come, first-served manner, or worse, by the loudest voices. Moreover, the physical dimensions of the venue place strong restrictions on the number of talks. In the way conferences are organized, they tend to reinforce current power structures. Thus, legacy conferences have considerable weaknesses which have, so far, been largely ignored.\n\nThe COVID-19 pandemic has led to most legacy conferences being cancelled or postponed (Viglione, 2020). With many scientists being forced to stay at home and many cancelled meetings, there is an acute need for online conferences. This produces a unique window of opportunity for innovating in the online conference space (Gichora et al., 2010; Abbott, 2020; Rolnick, 2019). Thanks to the current huge increase in attention, ongoing innovation in the virtual space is likely to dramatically improve online conferences, potentially making them a better overall experience than legacy conferences.\n\nIn this paper, we sketch the experiences that we had setting up neuromatch, an online neuroscience conference with 3000 participants (Kording, 2020). We partnered with the University of Pennsylvania and Imperial College, and two journals \u2013 Neurons, Behavior, Data analysis and Theory and eLife. The collaboration with eLife allowed us to incorporate a new component for early-career researchers (eLife, 2020; Sarabipour, 2020; Weissgerber et al., 2020). The conference was free for all participants. The running costs ($150 for a Crowdcast subscription and $60 for Amazon Web Services) were covered by lab start-up costs provided to one of us (KPK) by the University of Pennsylvania. Both in the run up and during the conference, we were forced to make rapid organizational changes, and some of these changes were clearly very helpful. We summarize our approach and discuss what worked and what did not work.\n\n## Moving a conference online\n\nConferences work by providing participants with a broad set of communication and socialization channels. In this article we discuss how these channels can be established in an online conference.\n\n### Poster sessions and short talks\n\nAt a legacy conference, posters allow for a larger number of scientists to present their work than would be possible with talks alone. For neuromatch, all abstracts were accepted for a short talk in a parallel session as there are no limitations on space for an online conference. In principle, these talks could be recorded, ensuring that nobody needs to miss any talk, although we did not have enough time to organize this for the first neuromatch. Short talk sessions featured three 12-minute talks, each followed by three minutes of questions, and there were up to six parallel tracks. We found that these short talks led to exciting debates that are typical for posters, and might allow more time for questions and debate at future events. Each parallel track was a separate Zoom room with a volunteer host, a system that mostly worked well except that some rooms were subject to persistent 'Zoombombing' (organized disruption by online miscreants), a problem that can be solved by careful management of the Zoom room settings, or by switching to other platforms such as Crowdcast (Kording, 2020).\n\n### Invited and contributed talks\n\nWe largely retained the legacy conference format of a single track for invited talks (30 minutes plus 15 minutes for questions) from established scientists, and contributed talks (18 minutes plus 4 minutes for questions) selected from the submitted abstracts to highlight work from up-and-coming researchers. However, the online platform used \u2013 Crowdcast \u2013 allowed for some significant innovations. First, everyone was able to see the speaker more clearly than in a lecture theatre. Second, Crowdcast allows anyone to submit a question to ask the speaker at the end, and viewers can vote on those questions. This led to a question and answer session that was considerably more lively and democratic than in a typical legacy conference, where participants often note that the same established professors are asking the same questions at every talk. As in the case of the short talks, it may be better to extend the questions even more to capitalize on the quality of the questions asked in the safer and more democratic online format.\u00a0The third innovation is the chat window that appears alongside the talk. We did not anticipate how significant this would be. Students and others were able to ask basic questions about definitions or ask for links to papers while the talk was going on. Other participants could answer them in real-time without disrupting the presentation, thereby allowing a deeper level of engagement by the audience than is possible in legacy conferences. Moreover, since recordings of these talks were available immediately after the session, it would be possible to go back and revisit portions of the talk that may have been missed or were presented too quickly.\n\n### One-on-one meetings\n\nOne feature of a legacy conference that would appear to be impossible to replicate online is the social aspect: chance encounters during the coffee breaks, social events or banquets. In place of this aspect, neuromatch algorithmically matched attendees to other like-minded scientists for individual 15-minute chats. We use a combination of topic modeling techniques and linear programming to solve the matching problem based on a sample of their research abstracts (Achakulvisut et al., 2018). The matching part was based on a highly popular experiment carried out at the Conference on Cognitive Computational Neuroscience, but it is particularly well-suited to an online format. There remains considerable scope for further innovations in replicating or improving on the social experience of legacy conferences, especially as the online format may be less socially intimidating.\n\n### Organizing is much easier\n\nWe managed to organize neuromatch extremely quickly with a small team and believe that online conferences can be much less burdensome to organize in general. There is no location to organize, no rooms to book, and no projectors, caterers, entertainment, travel or hotel reservations to worry about. Moreover, there is a worldwide pool of potential volunteers who can help remotely. Leading scientists are also, we feel, more likely to accept invitations to speak at online conferences because the time commitment is significantly less.\n\n### Diversity and inclusivity\n\nLegacy conferences come with additional challenges on the diversity and inclusivity of participants. For example, family duties, gender bias, disabilities, travel bans, limited funding, religious practices, and many other disadvantages may limit participation in legacy conferences. An online platform can remove many of these barriers to increase the potential set of individuals who can participate (Sarabipour, 2020). In neuromatch, we included a session devoted to early-career researchers and had an equal number of men and women among the invited speakers. Moreover, we accepted all short talk submissions.\n\n## Attendance and engagement\n\nOver 1200 people pre-registered, rising to 2000 registrations during the conference, and a total of 3000 registered viewers on Crowdcast. The largest group among the participants were graduate students (47.3%), followed by postdocs (19.9%), professors (11.7%), research staff and assistants (10.7%), researchers from industry (3.5%) and others (6.8%). We also had 468 attendees sign up for the one-on-one matching part of the conference (which had a much earlier deadline): 50% were primarily looking for new collaborations, 23% for casual conversation to spark ideas, and the remainder were potentially interested in both. Ensuring that participants are able to progress their career by meeting potential collaborators and learning about career opportunities should be a priority for anyone organizing an online conference.\n\nParticipants were very much engaged as reported by analytic tools that are unavailable in legacy conferences. At the peak, we had 912 attendees engage in the live session concurrently (with more than 100 simultaneous users on YouTube). We had a median of 678 live attendees per session, and an average live attendance of 4.2 sessions from a total of 21 main sessions. 38% of attendees rewatched talks a day after the conference.\n\n## Conclusion\n\nNeuromatch is an example of how an online conference can have a wide reach yet feel personal to those taking part. Indeed, many participants said that they preferred the online experience (including the social aspects) to a legacy conference. We hope that our experience will be helpful to anyone thinking of organizing an online conference, and that we are about to see the equivalent of a Cambrian explosion in the field of conferences. We are convinced that a shift from legacy to online conferences will make science better and be less harmful to the environment.\n",
+      "created_at": "2025-12-02T16:29:43.766012Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T16:29:43.766012Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T16:29:43.766012Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "867febeb-c443-46fe-8165-6146e75425ad",
+      "content_id": "a8e5affe-362d-4acc-b007-55d30ead7332",
+      "claim_id": "C1",
+      "claim": "Scientific conferences and meetings have an important role in research.",
+      "claim_type": "EXPLICIT",
+      "source": "Scientific conferences and meetings have an important role in research, but they also suffer from a number of disadvantages",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement about the role of conferences in research, drawing from established understanding in the scientific community.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:29:43.766012Z"
+    },
+    {
+      "id": "f4b5f4eb-f593-4273-8c7d-9867d47391f5",
+      "content_id": "a8e5affe-362d-4acc-b007-55d30ead7332",
+      "claim_id": "C2",
+      "claim": "Traditional conferences can have a massive carbon footprint.",
+      "claim_type": "EXPLICIT",
+      "source": "in particular, they can have a massive carbon footprint, they are time-consuming, and the high costs involved in attending can exclude many potential participants",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations in the main text to Nathans and Sterling, 2016; Pardee, 2015; Quinton, 2020.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:29:43.766012Z"
+    },
+    {
+      "id": "6a4f6342-58c6-4095-b831-ea6f38d6a4cc",
+      "content_id": "a8e5affe-362d-4acc-b007-55d30ead7332",
+      "claim_id": "C3",
+      "claim": "Traditional conferences are time-consuming.",
+      "claim_type": "EXPLICIT",
+      "source": "in particular, they can have a massive carbon footprint, they are time-consuming, and the high costs involved in attending can exclude many potential participants",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the statement that attending a legacy conference can consume an entire week and often involves two days of travel.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:29:43.766012Z"
+    },
+    {
+      "id": "b8ed372b-fb78-48aa-8614-49a79e0fdcef",
+      "content_id": "a8e5affe-362d-4acc-b007-55d30ead7332",
+      "claim_id": "C4",
+      "claim": "High costs involved in attending conferences can exclude many potential participants.",
+      "claim_type": "EXPLICIT",
+      "source": "in particular, they can have a massive carbon footprint, they are time-consuming, and the high costs involved in attending can exclude many potential participants",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the discussion of costs for flights, taxis, accommodation, registration, and childcare.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:29:43.766012Z"
+    },
+    {
+      "id": "05ae5d00-daf2-4a10-804c-1bed92a15c9b",
+      "content_id": "a8e5affe-362d-4acc-b007-55d30ead7332",
+      "claim_id": "C5",
+      "claim": "The COVID-19 pandemic has led to the cancellation of many conferences.",
+      "claim_type": "EXPLICIT",
+      "source": "The COVID-19 pandemic has led to the cancellation of many conferences, forcing the scientific community to explore online alternatives.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Viglione, 2020 in the main text and represents a factual observation about the pandemic's impact.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:29:43.766012Z"
+    },
+    {
+      "id": "02532396-2e0c-4f45-b666-7b8971d4543a",
+      "content_id": "a8e5affe-362d-4acc-b007-55d30ead7332",
+      "claim_id": "C6",
+      "claim": "Neuromatch attracted some 3000 participants.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we report on our experiences of organizing an online neuroscience conference, neuromatch, that attracted some 3000 participants",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is directly supported by data from the conference registration and attendance.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:29:43.766012Z"
+    },
+    {
+      "id": "f2a328f2-b982-46ed-85ff-ce4385a5aafa",
+      "content_id": "a8e5affe-362d-4acc-b007-55d30ead7332",
+      "claim_id": "C7",
+      "claim": "Neuromatch featured two days of talks, debates, panel discussions, and one-on-one meetings facilitated by a matching algorithm.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we report on our experiences of organizing an online neuroscience conference, neuromatch, that attracted some 3000 participants and featured two days of talks, debates, panel discussions, and one-on-one meetings facilitated by a matching algorithm.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct description of the conference format by the organizers.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:29:43.766012Z"
+    },
+    {
+      "id": "e306725a-898f-4ded-be07-4051f672c276",
+      "content_id": "a8e5affe-362d-4acc-b007-55d30ead7332",
+      "claim_id": "C8",
+      "claim": "Online conferences have the potential to replace many legacy conferences.",
+      "claim_type": "EXPLICIT",
+      "source": "By offering most of the benefits of traditional conferences, several clear advantages, and with fewer of the downsides, we feel that online conferences have the potential to replace many legacy conferences.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative claim based on the authors' assessment of their experience.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:29:43.766012Z"
+    },
+    {
+      "id": "6f9c0d91-859b-42fa-b001-d89c2a18f487",
+      "content_id": "a8e5affe-362d-4acc-b007-55d30ead7332",
+      "claim_id": "C9",
+      "claim": "Conferences require scientists to produce significant carbon emissions.",
+      "claim_type": "EXPLICIT",
+      "source": "We have to interrupt our lives and leave our families to travel to a faraway place, and in doing so we produce significant carbon emissions (Nathans and Sterling, 2016; Pardee, 2015; Quinton, 2020) and waste (Kier-Byfield, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to published work on conference carbon emissions.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:29:43.766012Z"
+    },
+    {
+      "id": "188e53af-b5c8-4201-9499-43018f2828f1",
+      "content_id": "a8e5affe-362d-4acc-b007-55d30ead7332",
+      "claim_id": "C10",
+      "claim": "Conferences produce waste.",
+      "claim_type": "EXPLICIT",
+      "source": "We have to interrupt our lives and leave our families to travel to a faraway place, and in doing so we produce significant carbon emissions (Nathans and Sterling, 2016; Pardee, 2015; Quinton, 2020) and waste (Kier-Byfield, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Kier-Byfield, 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:29:43.766012Z"
+    },
+    {
+      "id": "b94295ea-eb57-446b-afce-7f1e04fbde05",
+      "content_id": "a8e5affe-362d-4acc-b007-55d30ead7332",
+      "claim_id": "C11",
+      "claim": "Attending a legacy conference can consume an entire week of our lives.",
+      "claim_type": "EXPLICIT",
+      "source": "Attending a legacy conference can consume an entire week of our lives, and often involves two days of travel.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on common knowledge and experience of conference attendance.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:29:43.766012Z"
+    },
+    {
+      "id": "b0abc433-06c5-43d0-9df3-097c582e8f9c",
+      "content_id": "a8e5affe-362d-4acc-b007-55d30ead7332",
+      "claim_id": "C12",
+      "claim": "Attending a legacy conference often involves two days of travel.",
+      "claim_type": "EXPLICIT",
+      "source": "Attending a legacy conference can consume an entire week of our lives, and often involves two days of travel.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on common knowledge and experience of conference attendance.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:29:43.766012Z"
+    },
+    {
+      "id": "54658f5b-07cd-4bc2-89f1-1c8190bef75e",
+      "content_id": "a8e5affe-362d-4acc-b007-55d30ead7332",
+      "claim_id": "C13",
+      "claim": "Going to a meeting requires paying for flights, taxis, accommodation, registration, and childcare at home.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, going to a meeting requires us to pay for flights, taxis, accommodation, registration, and childcare at home, making conferences expensive for the scientific system, for university administration, and for scientists as individuals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on common knowledge of conference-related expenses.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:29:43.766012Z"
+    },
+    {
+      "id": "f151f58e-28f4-4596-aa08-15e8bc112bf3",
+      "content_id": "a8e5affe-362d-4acc-b007-55d30ead7332",
+      "claim_id": "C14",
+      "claim": "Conferences are expensive for the scientific system, for university administration, and for scientists as individuals.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, going to a meeting requires us to pay for flights, taxis, accommodation, registration, and childcare at home, making conferences expensive for the scientific system, for university administration, and for scientists as individuals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the enumeration of costs associated with conference attendance.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:29:43.766012Z"
+    },
+    {
+      "id": "78242e11-1fed-4139-94a2-9d03dad84e62",
+      "content_id": "a8e5affe-362d-4acc-b007-55d30ead7332",
+      "claim_id": "C15",
+      "claim": "Travel can hinder scientists who might not make it due to lack of funding, travel bans, or visas.",
+      "claim_type": "EXPLICIT",
+      "source": "Travel can also hinder scientists who might not make it due to lack of funding, travel bans (Hu, 2018), or visas.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Hu, 2018 regarding travel bans and general knowledge about funding and visa issues.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:29:43.766012Z"
+    },
+    {
+      "id": "b8902918-a834-4a9f-9dcb-7620f7db34a7",
+      "content_id": "a8e5affe-362d-4acc-b007-55d30ead7332",
+      "claim_id": "C16",
+      "claim": "Legacy conferences suffer from major communication problems.",
+      "claim_type": "EXPLICIT",
+      "source": "Legacy conferences also suffer from major communication problems.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by subsequent examples of question-asking dynamics and venue restrictions.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:29:43.766012Z"
+    },
+    {
+      "id": "2a91cd32-f0d6-4239-b7fb-651635846a07",
+      "content_id": "a8e5affe-362d-4acc-b007-55d30ead7332",
+      "claim_id": "C17",
+      "claim": "Questions at legacy conferences are typically asked in a first-come, first-served manner, or by the loudest voices.",
+      "claim_type": "EXPLICIT",
+      "source": "Questions are typically asked in a first-come, first-served manner, or worse, by the loudest voices.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on common knowledge and experience of conference dynamics.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:29:43.766012Z"
+    },
+    {
+      "id": "e9a95a14-20aa-43cc-84bb-12f58661849f",
+      "content_id": "a8e5affe-362d-4acc-b007-55d30ead7332",
+      "claim_id": "C18",
+      "claim": "The physical dimensions of the venue place strong restrictions on the number of talks at legacy conferences.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, the physical dimensions of the venue place strong restrictions on the number of talks.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on logical inference about physical space limitations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:29:43.766012Z"
+    },
+    {
+      "id": "54b8e2bd-dfa9-4215-9137-964669075eb1",
+      "content_id": "a8e5affe-362d-4acc-b007-55d30ead7332",
+      "claim_id": "C19",
+      "claim": "Legacy conferences tend to reinforce current power structures.",
+      "claim_type": "EXPLICIT",
+      "source": "In the way conferences are organized, they tend to reinforce current power structures.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the discussion of who gets to ask questions and other structural issues.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:29:43.766012Z"
+    },
+    {
+      "id": "e059c294-0f5d-4dbd-b02f-811c8e3c7557",
+      "content_id": "a8e5affe-362d-4acc-b007-55d30ead7332",
+      "claim_id": "C20",
+      "claim": "Most legacy conferences have been cancelled or postponed due to the COVID-19 pandemic.",
+      "claim_type": "EXPLICIT",
+      "source": "The COVID-19 pandemic has led to most legacy conferences being cancelled or postponed (Viglione, 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Viglione, 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:29:43.766012Z"
+    },
+    {
+      "id": "a2ed949f-05b3-487d-ace4-15ef75a50526",
+      "content_id": "a8e5affe-362d-4acc-b007-55d30ead7332",
+      "claim_id": "C21",
+      "claim": "There is an acute need for online conferences due to many scientists being forced to stay at home and many cancelled meetings.",
+      "claim_type": "EXPLICIT",
+      "source": "With many scientists being forced to stay at home and many cancelled meetings, there is an acute need for online conferences.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the context of the COVID-19 pandemic and conference cancellations.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:29:43.766012Z"
+    },
+    {
+      "id": "c41a5e7a-c509-4975-bd7b-221212f46392",
+      "content_id": "a8e5affe-362d-4acc-b007-55d30ead7332",
+      "claim_id": "C22",
+      "claim": "The COVID-19 pandemic produces a unique window of opportunity for innovating in the online conference space.",
+      "claim_type": "EXPLICIT",
+      "source": "This produces a unique window of opportunity for innovating in the online conference space (Gichora et al., 2010; Abbott, 2020; Rolnick, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations and represents an inference about the opportunity created by the pandemic.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:29:43.766012Z"
+    },
+    {
+      "id": "6463a58f-a741-4314-b34b-7ca022846446",
+      "content_id": "a8e5affe-362d-4acc-b007-55d30ead7332",
+      "claim_id": "C23",
+      "claim": "Ongoing innovation in the virtual space is likely to dramatically improve online conferences, potentially making them a better overall experience than legacy conferences.",
+      "claim_type": "EXPLICIT",
+      "source": "Thanks to the current huge increase in attention, ongoing innovation in the virtual space is likely to dramatically improve online conferences, potentially making them a better overall experience than legacy conferences.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative claim about future developments.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:29:43.766012Z"
+    },
+    {
+      "id": "0f1aa27d-391e-466e-a9db-a7eb08abce8c",
+      "content_id": "a8e5affe-362d-4acc-b007-55d30ead7332",
+      "claim_id": "C24",
+      "claim": "Neuromatch partnered with the University of Pennsylvania and Imperial College, and two journals \u2013 Neurons, Behavior, Data analysis and Theory and eLife.",
+      "claim_type": "EXPLICIT",
+      "source": "We partnered with the University of Pennsylvania and Imperial College, and two journals \u2013 Neurons, Behavior, Data analysis and Theory and eLife.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a factual statement about the conference organization.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:29:43.766012Z"
+    },
+    {
+      "id": "39c9e62a-f537-4e72-abda-f707cd6e0570",
+      "content_id": "a8e5affe-362d-4acc-b007-55d30ead7332",
+      "claim_id": "C25",
+      "claim": "The collaboration with eLife allowed neuromatch to incorporate a new component for early-career researchers.",
+      "claim_type": "EXPLICIT",
+      "source": "The collaboration with eLife allowed us to incorporate a new component for early-career researchers (eLife, 2020; Sarabipour, 2020; Weissgerber et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations and represents a factual statement about the conference structure.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:29:43.766012Z"
+    },
+    {
+      "id": "45f82bad-0d16-46e3-8e03-94a467997d50",
+      "content_id": "a8e5affe-362d-4acc-b007-55d30ead7332",
+      "claim_id": "C26",
+      "claim": "The neuromatch conference was free for all participants.",
+      "claim_type": "EXPLICIT",
+      "source": "The conference was free for all participants.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a factual statement about the conference.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:29:43.766012Z"
+    },
+    {
+      "id": "256683cb-f66b-46c7-b5be-8e85eb07beca",
+      "content_id": "a8e5affe-362d-4acc-b007-55d30ead7332",
+      "claim_id": "C27",
+      "claim": "The running costs of neuromatch were $150 for a Crowdcast subscription and $60 for Amazon Web Services.",
+      "claim_type": "EXPLICIT",
+      "source": "The running costs ($150 for a Crowdcast subscription and $60 for Amazon Web Services) were covered by lab start-up costs provided to one of us (KPK) by the University of Pennsylvania.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a factual statement about the conference costs.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:29:43.766012Z"
+    },
+    {
+      "id": "8e81d65f-da9c-444c-808b-0eb6f1521f4e",
+      "content_id": "a8e5affe-362d-4acc-b007-55d30ead7332",
+      "claim_id": "C28",
+      "claim": "The running costs of neuromatch were covered by lab start-up costs provided to KPK by the University of Pennsylvania.",
+      "claim_type": "EXPLICIT",
+      "source": "The running costs ($150 for a Crowdcast subscription and $60 for Amazon Web Services) were covered by lab start-up costs provided to one of us (KPK) by the University of Pennsylvania.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a factual statement about how the conference was funded.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:29:43.766012Z"
+    },
+    {
+      "id": "28b3d181-ab9c-49b3-8ff3-6392a5243e0b",
+      "content_id": "a8e5affe-362d-4acc-b007-55d30ead7332",
+      "claim_id": "C29",
+      "claim": "Posters at legacy conferences allow for a larger number of scientists to present their work than would be possible with talks alone.",
+      "claim_type": "EXPLICIT",
+      "source": "At a legacy conference, posters allow for a larger number of scientists to present their work than would be possible with talks alone.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on common knowledge about conference formats.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:29:43.766012Z"
+    },
+    {
+      "id": "6e03dd2f-3479-48de-ae45-ffb211617a44",
+      "content_id": "a8e5affe-362d-4acc-b007-55d30ead7332",
+      "claim_id": "C30",
+      "claim": "All abstracts submitted to neuromatch were accepted for a short talk in a parallel session.",
+      "claim_type": "EXPLICIT",
+      "source": "For neuromatch, all abstracts were accepted for a short talk in a parallel session as there are no limitations on space for an online conference.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a factual statement about the conference policy.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:29:43.766012Z"
+    },
+    {
+      "id": "1b996907-cd61-40ec-9ba0-ef6893658d21",
+      "content_id": "a8e5affe-362d-4acc-b007-55d30ead7332",
+      "claim_id": "C31",
+      "claim": "There are no limitations on space for an online conference.",
+      "claim_type": "EXPLICIT",
+      "source": "For neuromatch, all abstracts were accepted for a short talk in a parallel session as there are no limitations on space for an online conference.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the nature of online platforms.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:29:43.766012Z"
+    },
+    {
+      "id": "97b0579f-6013-48bd-80b1-975b5147ea88",
+      "content_id": "a8e5affe-362d-4acc-b007-55d30ead7332",
+      "claim_id": "C32",
+      "claim": "Short talk sessions at neuromatch featured three 12-minute talks, each followed by three minutes of questions.",
+      "claim_type": "EXPLICIT",
+      "source": "Short talk sessions featured three 12-minute talks, each followed by three minutes of questions, and there were up to six parallel tracks.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a factual description of the conference format.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:29:43.766012Z"
+    },
+    {
+      "id": "3cbd86f7-c13e-4679-a5f0-7a985e458234",
+      "content_id": "a8e5affe-362d-4acc-b007-55d30ead7332",
+      "claim_id": "C33",
+      "claim": "There were up to six parallel tracks at neuromatch.",
+      "claim_type": "EXPLICIT",
+      "source": "Short talk sessions featured three 12-minute talks, each followed by three minutes of questions, and there were up to six parallel tracks.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a factual description of the conference format.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:29:43.766012Z"
+    },
+    {
+      "id": "0293da63-b1f8-477f-bb45-dbb0356d1d52",
+      "content_id": "a8e5affe-362d-4acc-b007-55d30ead7332",
+      "claim_id": "C34",
+      "claim": "Short talks at neuromatch led to exciting debates that are typical for posters.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that these short talks led to exciting debates that are typical for posters, and might allow more time for questions and debate at future events.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the organizers' observations during the conference.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:29:43.766012Z"
+    },
+    {
+      "id": "760aab31-4a48-45b6-a6b0-12fcd780e137",
+      "content_id": "a8e5affe-362d-4acc-b007-55d30ead7332",
+      "claim_id": "C35",
+      "claim": "Short talks might allow more time for questions and debate at future events.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that these short talks led to exciting debates that are typical for posters, and might allow more time for questions and debate at future events.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative claim about future conference formats.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:29:43.766012Z"
+    },
+    {
+      "id": "5cbb501d-0bbe-4c2d-a920-ffb933e88ae1",
+      "content_id": "a8e5affe-362d-4acc-b007-55d30ead7332",
+      "claim_id": "C36",
+      "claim": "Each parallel track at neuromatch was a separate Zoom room with a volunteer host.",
+      "claim_type": "EXPLICIT",
+      "source": "Each parallel track was a separate Zoom room with a volunteer host, a system that mostly worked well except that some rooms were subject to persistent 'Zoombombing' (organized disruption by online miscreants)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a factual description of the conference technical setup.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:29:43.766012Z"
+    },
+    {
+      "id": "d8ba38b2-ddaf-4ecc-b5b9-48678bdeeeec",
+      "content_id": "a8e5affe-362d-4acc-b007-55d30ead7332",
+      "claim_id": "C37",
+      "claim": "The system of separate Zoom rooms with volunteer hosts mostly worked well at neuromatch.",
+      "claim_type": "EXPLICIT",
+      "source": "Each parallel track was a separate Zoom room with a volunteer host, a system that mostly worked well except that some rooms were subject to persistent 'Zoombombing' (organized disruption by online miscreants)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the organizers' assessment of the conference.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:29:43.766012Z"
+    },
+    {
+      "id": "5fa5caaa-8c88-4cd3-83cd-eb69d2f6ba95",
+      "content_id": "a8e5affe-362d-4acc-b007-55d30ead7332",
+      "claim_id": "C38",
+      "claim": "Some Zoom rooms at neuromatch were subject to persistent 'Zoombombing'.",
+      "claim_type": "EXPLICIT",
+      "source": "Each parallel track was a separate Zoom room with a volunteer host, a system that mostly worked well except that some rooms were subject to persistent 'Zoombombing' (organized disruption by online miscreants)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a factual observation about problems encountered during the conference.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:29:43.766012Z"
+    },
+    {
+      "id": "11b503ef-5ef3-44af-b324-679c94aa334a",
+      "content_id": "a8e5affe-362d-4acc-b007-55d30ead7332",
+      "claim_id": "C39",
+      "claim": "Zoombombing can be solved by careful management of the Zoom room settings, or by switching to other platforms such as Crowdcast.",
+      "claim_type": "EXPLICIT",
+      "source": "a problem that can be solved by careful management of the Zoom room settings, or by switching to other platforms such as Crowdcast (Kording, 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation and represents a recommendation based on experience.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:29:43.766012Z"
+    },
+    {
+      "id": "4f6f7b75-5908-43f9-8342-e4f5b03fb917",
+      "content_id": "a8e5affe-362d-4acc-b007-55d30ead7332",
+      "claim_id": "C40",
+      "claim": "Neuromatch retained the legacy conference format of a single track for invited talks from established scientists.",
+      "claim_type": "EXPLICIT",
+      "source": "We largely retained the legacy conference format of a single track for invited talks (30 minutes plus 15 minutes for questions) from established scientists, and contributed talks (18 minutes plus 4 minutes for questions) selected from the submitted abstracts to highlight work from up-and-coming researchers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a factual description of the conference format.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:29:43.766012Z"
+    },
+    {
+      "id": "63344560-e618-44a7-914e-a134a5d467d9",
+      "content_id": "a8e5affe-362d-4acc-b007-55d30ead7332",
+      "claim_id": "C41",
+      "claim": "Invited talks at neuromatch were 30 minutes plus 15 minutes for questions.",
+      "claim_type": "EXPLICIT",
+      "source": "We largely retained the legacy conference format of a single track for invited talks (30 minutes plus 15 minutes for questions) from established scientists, and contributed talks (18 minutes plus 4 minutes for questions) selected from the submitted abstracts to highlight work from up-and-coming researchers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a factual description of the conference format.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:29:43.766012Z"
+    },
+    {
+      "id": "ff41cc2d-9197-4598-be45-381bc383ef35",
+      "content_id": "a8e5affe-362d-4acc-b007-55d30ead7332",
+      "claim_id": "C42",
+      "claim": "Contributed talks at neuromatch were 18 minutes plus 4 minutes for questions.",
+      "claim_type": "EXPLICIT",
+      "source": "We largely retained the legacy conference format of a single track for invited talks (30 minutes plus 15 minutes for questions) from established scientists, and contributed talks (18 minutes plus 4 minutes for questions) selected from the submitted abstracts to highlight work from up-and-coming researchers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a factual description of the conference format.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:29:43.766012Z"
+    },
+    {
+      "id": "b6be6e2c-e7b7-4f38-9eff-80615c673793",
+      "content_id": "a8e5affe-362d-4acc-b007-55d30ead7332",
+      "claim_id": "C43",
+      "claim": "Contributed talks at neuromatch were selected from the submitted abstracts to highlight work from up-and-coming researchers.",
+      "claim_type": "EXPLICIT",
+      "source": "We largely retained the legacy conference format of a single track for invited talks (30 minutes plus 15 minutes for questions) from established scientists, and contributed talks (18 minutes plus 4 minutes for questions) selected from the submitted abstracts to highlight work from up-and-coming researchers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a factual description of the conference format and selection process.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:29:43.766012Z"
+    },
+    {
+      "id": "9415b1ca-ae42-4d24-a7c8-2895cee3dc7e",
+      "content_id": "a8e5affe-362d-4acc-b007-55d30ead7332",
+      "claim_id": "C44",
+      "claim": "Everyone was able to see the speaker more clearly at neuromatch than in a lecture theatre.",
+      "claim_type": "EXPLICIT",
+      "source": "First, everyone was able to see the speaker more clearly than in a lecture theatre.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the nature of online video platforms.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:29:43.766012Z"
+    },
+    {
+      "id": "47a05e7d-8ebf-4df1-9728-e82bf597bba7",
+      "content_id": "a8e5affe-362d-4acc-b007-55d30ead7332",
+      "claim_id": "C45",
+      "claim": "Crowdcast allows anyone to submit a question to ask the speaker at the end, and viewers can vote on those questions.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, Crowdcast allows anyone to submit a question to ask the speaker at the end, and viewers can vote on those questions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a factual description of the Crowdcast platform features.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:29:43.766012Z"
+    },
+    {
+      "id": "9eb9776e-4215-456f-b61d-d0217902ab09",
+      "content_id": "a8e5affe-362d-4acc-b007-55d30ead7332",
+      "claim_id": "C46",
+      "claim": "The Crowdcast question and answer system led to a question and answer session that was considerably more lively and democratic than in a typical legacy conference.",
+      "claim_type": "EXPLICIT",
+      "source": "This led to a question and answer session that was considerably more lively and democratic than in a typical legacy conference, where participants often note that the same established professors are asking the same questions at every talk.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the organizers' observations and comparison to legacy conferences.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:29:43.766012Z"
+    },
+    {
+      "id": "378caad4-c9aa-445c-bd98-420523042012",
+      "content_id": "a8e5affe-362d-4acc-b007-55d30ead7332",
+      "claim_id": "C47",
+      "claim": "At legacy conferences, participants often note that the same established professors are asking the same questions at every talk.",
+      "claim_type": "EXPLICIT",
+      "source": "This led to a question and answer session that was considerably more lively and democratic than in a typical legacy conference, where participants often note that the same established professors are asking the same questions at every talk.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on common knowledge and experience of conference dynamics.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:29:43.766012Z"
+    },
+    {
+      "id": "d8eb0c36-5cff-4c17-bc3f-0b85f2ce92b9",
+      "content_id": "a8e5affe-362d-4acc-b007-55d30ead7332",
+      "claim_id": "C48",
+      "claim": "The chat window appears alongside the talk in Crowdcast.",
+      "claim_type": "EXPLICIT",
+      "source": "The third innovation is the chat window that appears alongside the talk.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a factual description of the Crowdcast platform feature.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:29:43.766012Z"
+    },
+    {
+      "id": "333a4ac2-0abd-4e99-9710-650ab2f0803f",
+      "content_id": "a8e5affe-362d-4acc-b007-55d30ead7332",
+      "claim_id": "C49",
+      "claim": "Students and others were able to ask basic questions about definitions or ask for links to papers while the talk was going on at neuromatch.",
+      "claim_type": "EXPLICIT",
+      "source": "Students and others were able to ask basic questions about definitions or ask for links to papers while the talk was going on.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on observations of how the chat feature was used during the conference.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:29:43.766012Z"
+    },
+    {
+      "id": "1b1ccbf2-cb81-40c8-afef-0dd4034d8b21",
+      "content_id": "a8e5affe-362d-4acc-b007-55d30ead7332",
+      "claim_id": "C50",
+      "claim": "Other participants could answer questions in the chat in real-time without disrupting the presentation at neuromatch.",
+      "claim_type": "EXPLICIT",
+      "source": "Other participants could answer them in real-time without disrupting the presentation, thereby allowing a deeper level of engagement by the audience than is possible in legacy conferences.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on observations of how the chat feature was used during the conference.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:29:43.766012Z"
+    },
+    {
+      "id": "20bcabdb-fc80-42e6-b749-10374c09e1f1",
+      "content_id": "a8e5affe-362d-4acc-b007-55d30ead7332",
+      "claim_id": "C51",
+      "claim": "The chat feature at neuromatch allowed a deeper level of engagement by the audience than is possible in legacy conferences.",
+      "claim_type": "EXPLICIT",
+      "source": "Other participants could answer them in real-time without disrupting the presentation, thereby allowing a deeper level of engagement by the audience than is possible in legacy conferences.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the comparison of online and legacy conference formats.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:29:43.766012Z"
+    },
+    {
+      "id": "5afce584-e0dd-4dea-ad2c-e64e287ab035",
+      "content_id": "a8e5affe-362d-4acc-b007-55d30ead7332",
+      "claim_id": "C52",
+      "claim": "Recordings of talks at neuromatch were available immediately after the session.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, since recordings of these talks were available immediately after the session, it would be possible to go back and revisit portions of the talk that may have been missed or were presented too quickly.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a factual statement about the conference technical capabilities.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:29:43.766012Z"
+    },
+    {
+      "id": "7a5106e0-86fa-4858-9637-71fa79a7265c",
+      "content_id": "a8e5affe-362d-4acc-b007-55d30ead7332",
+      "claim_id": "C53",
+      "claim": "It would be possible to go back and revisit portions of the talk that may have been missed or were presented too quickly at neuromatch.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, since recordings of these talks were available immediately after the session, it would be possible to go back and revisit portions of the talk that may have been missed or were presented too quickly.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the availability of recordings.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:29:43.766012Z"
+    },
+    {
+      "id": "9e805029-3271-441e-92e8-2f77d00807f9",
+      "content_id": "a8e5affe-362d-4acc-b007-55d30ead7332",
+      "claim_id": "C54",
+      "claim": "Neuromatch algorithmically matched attendees to other like-minded scientists for individual 15-minute chats.",
+      "claim_type": "EXPLICIT",
+      "source": "In place of this aspect, neuromatch algorithmically matched attendees to other like-minded scientists for individual 15-minute chats.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a factual description of the conference feature.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:29:43.766012Z"
+    },
+    {
+      "id": "862116fb-27d6-4e05-9ed0-f5b3885da90d",
+      "content_id": "a8e5affe-362d-4acc-b007-55d30ead7332",
+      "claim_id": "C55",
+      "claim": "Neuromatch used a combination of topic modeling techniques and linear programming to solve the matching problem based on a sample of research abstracts.",
+      "claim_type": "EXPLICIT",
+      "source": "We use a combination of topic modeling techniques and linear programming to solve the matching problem based on a sample of their research abstracts (Achakulvisut et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a factual description of the matching algorithm, supported by citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:29:43.766012Z"
+    },
+    {
+      "id": "25cebd94-f2ce-4a8d-83d4-3fb79e3e45ba",
+      "content_id": "a8e5affe-362d-4acc-b007-55d30ead7332",
+      "claim_id": "C56",
+      "claim": "The matching part was based on a highly popular experiment carried out at the Conference on Cognitive Computational Neuroscience.",
+      "claim_type": "EXPLICIT",
+      "source": "The matching part was based on a highly popular experiment carried out at the Conference on Cognitive Computational Neuroscience, but it is particularly well-suited to an online format.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a factual statement about the origin of the matching approach, supported by citation to Achakulvisut et al., 2018.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:29:43.766012Z"
+    },
+    {
+      "id": "5cd90b01-3a02-4770-8a9b-b2f5759f82f7",
+      "content_id": "a8e5affe-362d-4acc-b007-55d30ead7332",
+      "claim_id": "C57",
+      "claim": "The matching approach is particularly well-suited to an online format.",
+      "claim_type": "EXPLICIT",
+      "source": "The matching part was based on a highly popular experiment carried out at the Conference on Cognitive Computational Neuroscience, but it is particularly well-suited to an online format.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the organizers' assessment.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:29:43.766012Z"
+    },
+    {
+      "id": "ed950c8a-4827-4d2a-be13-48e3ad87304b",
+      "content_id": "a8e5affe-362d-4acc-b007-55d30ead7332",
+      "claim_id": "C58",
+      "claim": "There remains considerable scope for further innovations in replicating or improving on the social experience of legacy conferences.",
+      "claim_type": "EXPLICIT",
+      "source": "There remains considerable scope for further innovations in replicating or improving on the social experience of legacy conferences, especially as the online format may be less socially intimidating.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative claim about future possibilities.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:29:43.766012Z"
+    },
+    {
+      "id": "edf4bd04-c9f6-4d0a-8fa2-63d51debf26c",
+      "content_id": "a8e5affe-362d-4acc-b007-55d30ead7332",
+      "claim_id": "C59",
+      "claim": "The online format may be less socially intimidating than legacy conferences.",
+      "claim_type": "EXPLICIT",
+      "source": "There remains considerable scope for further innovations in replicating or improving on the social experience of legacy conferences, especially as the online format may be less socially intimidating.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the nature of online interactions.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:29:43.766012Z"
+    },
+    {
+      "id": "4d5eac8e-74b6-4817-8d99-37c4371bca8f",
+      "content_id": "a8e5affe-362d-4acc-b007-55d30ead7332",
+      "claim_id": "C60",
+      "claim": "The organizers managed to organize neuromatch extremely quickly with a small team.",
+      "claim_type": "EXPLICIT",
+      "source": "We managed to organize neuromatch extremely quickly with a small team and believe that online conferences can be much less burdensome to organize in general.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a factual statement about the conference organization.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:29:43.766012Z"
+    },
+    {
+      "id": "56b41603-d480-4d72-ae5d-cb307b43315d",
+      "content_id": "a8e5affe-362d-4acc-b007-55d30ead7332",
+      "claim_id": "C61",
+      "claim": "Online conferences can be much less burdensome to organize in general.",
+      "claim_type": "EXPLICIT",
+      "source": "We managed to organize neuromatch extremely quickly with a small team and believe that online conferences can be much less burdensome to organize in general.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the organizers' experience.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:29:43.766012Z"
+    },
+    {
+      "id": "64f9fa4c-a358-442a-9108-9f2b5f2c99e8",
+      "content_id": "a8e5affe-362d-4acc-b007-55d30ead7332",
+      "claim_id": "C62",
+      "claim": "There is a worldwide pool of potential volunteers who can help remotely with online conferences.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, there is a worldwide pool of potential volunteers who can help remotely.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the nature of online organization.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:29:43.766012Z"
+    },
+    {
+      "id": "a2bf991a-ee4b-42db-a8c2-f156e5460fc6",
+      "content_id": "a8e5affe-362d-4acc-b007-55d30ead7332",
+      "claim_id": "C63",
+      "claim": "Leading scientists are more likely to accept invitations to speak at online conferences because the time commitment is significantly less.",
+      "claim_type": "EXPLICIT",
+      "source": "Leading scientists are also, we feel, more likely to accept invitations to speak at online conferences because the time commitment is significantly less.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative claim based on the organizers' assessment.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:29:43.766012Z"
+    },
+    {
+      "id": "dfc401a4-eaac-4a53-ab1e-a002f157902c",
+      "content_id": "a8e5affe-362d-4acc-b007-55d30ead7332",
+      "claim_id": "C64",
+      "claim": "Family duties, gender bias, disabilities, travel bans, limited funding, religious practices, and many other disadvantages may limit participation in legacy conferences.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, family duties, gender bias, disabilities, travel bans, limited funding, religious practices, and many other disadvantages may limit participation in legacy conferences.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on common knowledge and supported by citation to Sarabipour, 2020.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:29:43.766012Z"
+    },
+    {
+      "id": "b85ae4d9-f308-4721-bf43-0cbebf6a833a",
+      "content_id": "a8e5affe-362d-4acc-b007-55d30ead7332",
+      "claim_id": "C65",
+      "claim": "An online platform can remove many barriers to increase the potential set of individuals who can participate in conferences.",
+      "claim_type": "EXPLICIT",
+      "source": "An online platform can remove many of these barriers to increase the potential set of individuals who can participate (Sarabipour, 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation and represents an inference about online platforms.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:29:43.766012Z"
+    },
+    {
+      "id": "953986f6-daf5-4eca-820b-cf0dd51a5bd5",
+      "content_id": "a8e5affe-362d-4acc-b007-55d30ead7332",
+      "claim_id": "C66",
+      "claim": "Neuromatch included a session devoted to early-career researchers.",
+      "claim_type": "EXPLICIT",
+      "source": "In neuromatch, we included a session devoted to early-career researchers and had an equal number of men and women among the invited speakers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a factual statement about the conference program.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:29:43.766012Z"
+    },
+    {
+      "id": "70e07ec7-40ce-4ba9-b540-5f39b016331a",
+      "content_id": "a8e5affe-362d-4acc-b007-55d30ead7332",
+      "claim_id": "C67",
+      "claim": "Neuromatch had an equal number of men and women among the invited speakers.",
+      "claim_type": "EXPLICIT",
+      "source": "In neuromatch, we included a session devoted to early-career researchers and had an equal number of men and women among the invited speakers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a factual statement about the conference speaker composition.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:29:43.766012Z"
+    },
+    {
+      "id": "a9279698-0163-49a1-9428-f5f267e1c735",
+      "content_id": "a8e5affe-362d-4acc-b007-55d30ead7332",
+      "claim_id": "C68",
+      "claim": "Neuromatch accepted all short talk submissions.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, we accepted all short talk submissions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a factual statement about the conference policy.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:29:43.766012Z"
+    },
+    {
+      "id": "667c0caa-5680-4a60-9f32-15580f840e80",
+      "content_id": "a8e5affe-362d-4acc-b007-55d30ead7332",
+      "claim_id": "C69",
+      "claim": "Over 1200 people pre-registered for neuromatch.",
+      "claim_type": "EXPLICIT",
+      "source": "Over 1200 people pre-registered, rising to 2000 registrations during the conference, and a total of 3000 registered viewers on Crowdcast.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is data from the conference registration.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:29:43.766012Z"
+    },
+    {
+      "id": "f61971c4-1e41-4b73-a8c6-5e3dc405681a",
+      "content_id": "a8e5affe-362d-4acc-b007-55d30ead7332",
+      "claim_id": "C70",
+      "claim": "Registrations for neuromatch rose to 2000 during the conference.",
+      "claim_type": "EXPLICIT",
+      "source": "Over 1200 people pre-registered, rising to 2000 registrations during the conference, and a total of 3000 registered viewers on Crowdcast.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is data from the conference registration.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:29:43.766012Z"
+    },
+    {
+      "id": "7d366cdd-5c4a-4239-a03b-9bbc70dcae0a",
+      "content_id": "a8e5affe-362d-4acc-b007-55d30ead7332",
+      "claim_id": "C71",
+      "claim": "A total of 3000 viewers registered on Crowdcast for neuromatch.",
+      "claim_type": "EXPLICIT",
+      "source": "Over 1200 people pre-registered, rising to 2000 registrations during the conference, and a total of 3000 registered viewers on Crowdcast.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is data from the conference registration.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:29:43.766012Z"
+    },
+    {
+      "id": "b71745a3-441d-4aff-b992-abae88c077eb",
+      "content_id": "a8e5affe-362d-4acc-b007-55d30ead7332",
+      "claim_id": "C72",
+      "claim": "The largest group among the neuromatch participants were graduate students (47.3%).",
+      "claim_type": "EXPLICIT",
+      "source": "The largest group among the participants were graduate students (47.3%), followed by postdocs (19.9%), professors (11.7%), research staff and assistants (10.7%), researchers from industry (3.5%) and others (6.8%).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is data from the conference participant demographics.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:29:43.766012Z"
+    },
+    {
+      "id": "6ae4d967-0aa2-4629-8015-4171d99b23bf",
+      "content_id": "a8e5affe-362d-4acc-b007-55d30ead7332",
+      "claim_id": "C73",
+      "claim": "19.9% of neuromatch participants were postdocs.",
+      "claim_type": "EXPLICIT",
+      "source": "The largest group among the participants were graduate students (47.3%), followed by postdocs (19.9%), professors (11.7%), research staff and assistants (10.7%), researchers from industry (3.5%) and others (6.8%).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is data from the conference participant demographics.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:29:43.766012Z"
+    },
+    {
+      "id": "4cb13b1e-03c8-4b84-9721-4b6dcab9be69",
+      "content_id": "a8e5affe-362d-4acc-b007-55d30ead7332",
+      "claim_id": "C74",
+      "claim": "11.7% of neuromatch participants were professors.",
+      "claim_type": "EXPLICIT",
+      "source": "The largest group among the participants were graduate students (47.3%), followed by postdocs (19.9%), professors (11.7%), research staff and assistants (10.7%), researchers from industry (3.5%) and others (6.8%).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is data from the conference participant demographics.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:29:43.766012Z"
+    },
+    {
+      "id": "0eff8fd6-fe77-42e0-843b-68e06a3701e9",
+      "content_id": "a8e5affe-362d-4acc-b007-55d30ead7332",
+      "claim_id": "C75",
+      "claim": "10.7% of neuromatch participants were research staff and assistants.",
+      "claim_type": "EXPLICIT",
+      "source": "The largest group among the participants were graduate students (47.3%), followed by postdocs (19.9%), professors (11.7%), research staff and assistants (10.7%), researchers from industry (3.5%) and others (6.8%).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is data from the conference participant demographics.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:29:43.766012Z"
+    },
+    {
+      "id": "9f375647-d560-48bf-b65c-1c3cacf7136b",
+      "content_id": "a8e5affe-362d-4acc-b007-55d30ead7332",
+      "claim_id": "C76",
+      "claim": "3.5% of neuromatch participants were researchers from industry.",
+      "claim_type": "EXPLICIT",
+      "source": "The largest group among the participants were graduate students (47.3%), followed by postdocs (19.9%), professors (11.7%), research staff and assistants (10.7%), researchers from industry (3.5%) and others (6.8%).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is data from the conference participant demographics.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:29:43.766012Z"
+    },
+    {
+      "id": "5e911966-bfd7-4f65-87b2-0b9ac5a5f4dd",
+      "content_id": "a8e5affe-362d-4acc-b007-55d30ead7332",
+      "claim_id": "C77",
+      "claim": "6.8% of neuromatch participants were classified as others.",
+      "claim_type": "EXPLICIT",
+      "source": "The largest group among the participants were graduate students (47.3%), followed by postdocs (19.9%), professors (11.7%), research staff and assistants (10.7%), researchers from industry (3.5%) and others (6.8%).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is data from the conference participant demographics.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:29:43.766012Z"
+    },
+    {
+      "id": "1af59a04-a9e3-4bcd-aba8-560fe18f1f40",
+      "content_id": "a8e5affe-362d-4acc-b007-55d30ead7332",
+      "claim_id": "C78",
+      "claim": "468 attendees signed up for the one-on-one matching part of neuromatch.",
+      "claim_type": "EXPLICIT",
+      "source": "We also had 468 attendees sign up for the one-on-one matching part of the conference (which had a much earlier deadline): 50% were primarily looking for new collaborations, 23% for casual conversation to spark ideas, and the remainder were potentially interested in both.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is data from the conference registration.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:29:43.766012Z"
+    },
+    {
+      "id": "fe6fc9ed-0b8e-4d64-a445-f24d3ff08646",
+      "content_id": "a8e5affe-362d-4acc-b007-55d30ead7332",
+      "claim_id": "C79",
+      "claim": "The one-on-one matching part of neuromatch had a much earlier deadline than other parts of the conference.",
+      "claim_type": "EXPLICIT",
+      "source": "We also had 468 attendees sign up for the one-on-one matching part of the conference (which had a much earlier deadline): 50% were primarily looking for new collaborations, 23% for casual conversation to spark ideas, and the remainder were potentially interested in both.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a factual statement about the conference logistics.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:29:43.766012Z"
+    },
+    {
+      "id": "8ff7ca21-a505-4589-8d5d-598cfb5ea208",
+      "content_id": "a8e5affe-362d-4acc-b007-55d30ead7332",
+      "claim_id": "C80",
+      "claim": "50% of attendees who signed up for one-on-one matching were primarily looking for new collaborations.",
+      "claim_type": "EXPLICIT",
+      "source": "We also had 468 attendees sign up for the one-on-one matching part of the conference (which had a much earlier deadline): 50% were primarily looking for new collaborations, 23% for casual conversation to spark ideas, and the remainder were potentially interested in both.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is data from the conference participant survey or registration.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:29:43.766012Z"
+    },
+    {
+      "id": "f3dd8e2e-f537-4da1-ae66-fda2ff68dd70",
+      "content_id": "a8e5affe-362d-4acc-b007-55d30ead7332",
+      "claim_id": "C81",
+      "claim": "23% of attendees who signed up for one-on-one matching were looking for casual conversation to spark ideas.",
+      "claim_type": "EXPLICIT",
+      "source": "We also had 468 attendees sign up for the one-on-one matching part of the conference (which had a much earlier deadline): 50% were primarily looking for new collaborations, 23% for casual conversation to spark ideas, and the remainder were potentially interested in both.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is data from the conference participant survey or registration.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:29:43.766012Z"
+    },
+    {
+      "id": "616af6be-d745-4fa8-bd05-5158d0b1e442",
+      "content_id": "a8e5affe-362d-4acc-b007-55d30ead7332",
+      "claim_id": "C82",
+      "claim": "The remainder of attendees who signed up for one-on-one matching were potentially interested in both collaborations and casual conversation.",
+      "claim_type": "EXPLICIT",
+      "source": "We also had 468 attendees sign up for the one-on-one matching part of the conference (which had a much earlier deadline): 50% were primarily looking for new collaborations, 23% for casual conversation to spark ideas, and the remainder were potentially interested in both.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is data from the conference participant survey or registration.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:29:43.766012Z"
+    },
+    {
+      "id": "8ccc7226-a5e1-4e94-b941-af5dbbfaa6e0",
+      "content_id": "a8e5affe-362d-4acc-b007-55d30ead7332",
+      "claim_id": "C83",
+      "claim": "Ensuring that participants are able to progress their career by meeting potential collaborators and learning about career opportunities should be a priority for anyone organizing an online conference.",
+      "claim_type": "EXPLICIT",
+      "source": "Ensuring that participants are able to progress their career by meeting potential collaborators and learning about career opportunities should be a priority for anyone organizing an online conference.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a recommendation based on the organizers' experience and assessment.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:29:43.766012Z"
+    },
+    {
+      "id": "95846a5b-c837-449c-8079-69eff830e24b",
+      "content_id": "a8e5affe-362d-4acc-b007-55d30ead7332",
+      "claim_id": "C84",
+      "claim": "Participants at neuromatch were very much engaged as reported by analytic tools that are unavailable in legacy conferences.",
+      "claim_type": "EXPLICIT",
+      "source": "Participants were very much engaged as reported by analytic tools that are unavailable in legacy conferences.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on data from analytics tools used during the conference.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:29:43.766012Z"
+    },
+    {
+      "id": "295a8ae1-fe50-4b23-b51c-4e11003d2824",
+      "content_id": "a8e5affe-362d-4acc-b007-55d30ead7332",
+      "claim_id": "C85",
+      "claim": "At the peak, neuromatch had 912 attendees engage in the live session concurrently.",
+      "claim_type": "EXPLICIT",
+      "source": "At the peak, we had 912 attendees engage in the live session concurrently (with more than 100 simultaneous users on YouTube).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is data from the conference analytics.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:29:43.766012Z"
+    },
+    {
+      "id": "8e803a25-f2f6-4770-9b10-0fca64fd2a86",
+      "content_id": "a8e5affe-362d-4acc-b007-55d30ead7332",
+      "claim_id": "C86",
+      "claim": "Neuromatch had more than 100 simultaneous users on YouTube at peak.",
+      "claim_type": "EXPLICIT",
+      "source": "At the peak, we had 912 attendees engage in the live session concurrently (with more than 100 simultaneous users on YouTube).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is data from the conference analytics.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:29:43.766012Z"
+    },
+    {
+      "id": "cd596a19-5a5f-41dc-97b3-56a59c216ebe",
+      "content_id": "a8e5affe-362d-4acc-b007-55d30ead7332",
+      "claim_id": "C87",
+      "claim": "Neuromatch had a median of 678 live attendees per session.",
+      "claim_type": "EXPLICIT",
+      "source": "We had a median of 678 live attendees per session, and an average live attendance of 4.2 sessions from a total of 21 main sessions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is data from the conference analytics.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:29:43.766012Z"
+    },
+    {
+      "id": "2d32a857-09d1-4457-a5bd-8d0eed2910d8",
+      "content_id": "a8e5affe-362d-4acc-b007-55d30ead7332",
+      "claim_id": "C88",
+      "claim": "Neuromatch had an average live attendance of 4.2 sessions per attendee from a total of 21 main sessions.",
+      "claim_type": "EXPLICIT",
+      "source": "We had a median of 678 live attendees per session, and an average live attendance of 4.2 sessions from a total of 21 main sessions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is data from the conference analytics.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:29:43.766012Z"
+    },
+    {
+      "id": "90ec1841-3616-468b-b4b8-3c94ab65107f",
+      "content_id": "a8e5affe-362d-4acc-b007-55d30ead7332",
+      "claim_id": "C89",
+      "claim": "Neuromatch had a total of 21 main sessions.",
+      "claim_type": "EXPLICIT",
+      "source": "We had a median of 678 live attendees per session, and an average live attendance of 4.2 sessions from a total of 21 main sessions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a factual statement about the conference structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:29:43.766012Z"
+    },
+    {
+      "id": "db62f238-6611-4f95-8c96-d54588750ef5",
+      "content_id": "a8e5affe-362d-4acc-b007-55d30ead7332",
+      "claim_id": "C90",
+      "claim": "38% of attendees rewatched talks a day after the neuromatch conference.",
+      "claim_type": "EXPLICIT",
+      "source": "38% of attendees rewatched talks a day after the conference.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is data from the conference analytics.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:29:43.766012Z"
+    },
+    {
+      "id": "7fa24885-6af2-4eb8-b2bf-d9e85dc313de",
+      "content_id": "a8e5affe-362d-4acc-b007-55d30ead7332",
+      "claim_id": "C91",
+      "claim": "Many participants said that they preferred the online experience (including the social aspects) to a legacy conference.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, many participants said that they preferred the online experience (including the social aspects) to a legacy conference.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on feedback from conference participants.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:29:43.766012Z"
+    },
+    {
+      "id": "483d1e1e-c6c1-4128-a26d-4dc56ca29697",
+      "content_id": "a8e5affe-362d-4acc-b007-55d30ead7332",
+      "claim_id": "C92",
+      "claim": "The organizers are convinced that a shift from legacy to online conferences will make science better and be less harmful to the environment.",
+      "claim_type": "EXPLICIT",
+      "source": "We are convinced that a shift from legacy to online conferences will make science better and be less harmful to the environment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative claim based on the organizers' assessment and experience.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:29:43.766012Z"
+    },
+    {
+      "id": "ca1f436c-b70d-4881-abf2-87a6e54d3a2c",
+      "content_id": "a8e5affe-362d-4acc-b007-55d30ead7332",
+      "claim_id": "C93",
+      "claim": "The organizers hope that their experience will be helpful to anyone thinking of organizing an online conference.",
+      "claim_type": "EXPLICIT",
+      "source": "We hope that our experience will be helpful to anyone thinking of organizing an online conference, and that we are about to see the equivalent of a Cambrian explosion in the field of conferences.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement of the authors' intention in writing the paper.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:29:43.766012Z"
+    },
+    {
+      "id": "246ef60a-712f-4f90-b8ee-5bac839ce3f7",
+      "content_id": "a8e5affe-362d-4acc-b007-55d30ead7332",
+      "claim_id": "C94",
+      "claim": "The organizers hope that we are about to see the equivalent of a Cambrian explosion in the field of conferences.",
+      "claim_type": "EXPLICIT",
+      "source": "We hope that our experience will be helpful to anyone thinking of organizing an online conference, and that we are about to see the equivalent of a Cambrian explosion in the field of conferences.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative claim about future developments in conferences.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:29:43.766012Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "9c58395b-ab65-4dd2-943a-37099c21ff96",
+      "content_id": "a8e5affe-362d-4acc-b007-55d30ead7332",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Legacy conferences have significant environmental, temporal, and financial costs that create barriers to participation. These include massive carbon footprints, waste production, time consumption (entire week plus travel days), and high expenses (flights, accommodation, registration, childcare) that exclude scientists lacking funding, visas, or facing travel bans.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2-C15 are well-supported by multiple citations (Nathans and Sterling, 2016; Pardee, 2015; Quinton, 2020; Kier-Byfield, 2019; Hu, 2018) and common knowledge about conference attendance. The evidence converges to demonstrate substantial barriers to legacy conference participation across environmental, temporal, and financial dimensions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:29:43.766012Z"
+    },
+    {
+      "id": "24a7be72-f7b9-46f9-9c7c-f142f9468ad7",
+      "content_id": "a8e5affe-362d-4acc-b007-55d30ead7332",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Legacy conferences suffer from structural communication problems that reinforce power hierarchies. Questions are dominated by first-come or loudest voices (often established professors), physical venue constraints limit talk numbers, and the format tends to perpetuate existing power structures.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C16-C19 and C47 are supported by common knowledge and experience of conference dynamics. The claims logically connect venue limitations, question-asking dynamics, and power structures, though they rely primarily on inference and general observation rather than quantitative data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:29:43.766012Z"
+    },
+    {
+      "id": "3055e484-ad79-48d1-a702-0d3f89bd73f9",
+      "content_id": "a8e5affe-362d-4acc-b007-55d30ead7332",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The COVID-19 pandemic created an acute need for online conferences by forcing cancellation of legacy conferences, creating a unique window of opportunity for innovation in the online conference space.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5, C20-C22 are supported by citation (Viglione, 2020) and additional references (Gichora et al., 2010; Abbott, 2020; Rolnick, 2019). The factual observation of pandemic-related cancellations and the inference about opportunity for innovation are well-grounded in the 2020 context.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:29:43.766012Z"
+    },
+    {
+      "id": "2ed4df85-6d20-42ad-a03f-f54e7132738b",
+      "content_id": "a8e5affe-362d-4acc-b007-55d30ead7332",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Neuromatch was organized as a free online neuroscience conference with 3000 participants, featuring two days of talks, debates, panel discussions, and algorithmic one-on-one matching. It partnered with universities and journals, with minimal running costs ($210 total) covered by university start-up funds.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6-C7 and C24-C28 provide factual descriptions of the conference organization supported by direct data from the organizers. The attendance numbers, format details, partnerships, and cost information are concrete and verifiable, representing the basic descriptive facts of the conference.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:29:43.766012Z"
+    },
+    {
+      "id": "2603b4f1-bd0d-4b79-b67d-3b7cb3b67192",
+      "content_id": "a8e5affe-362d-4acc-b007-55d30ead7332",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Neuromatch replaced traditional poster sessions with short talks in parallel sessions, accepting all abstracts since online conferences have no space limitations. Sessions featured three 12-minute talks with questions across up to six parallel Zoom tracks, leading to poster-like debates, though some rooms experienced Zoombombing.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C30-C39 describe the short talk format with concrete details (timing, number of tracks) supported by organizers' data and observations. The claim about no space limitations (C31) is reasonable for online platforms. The Zoombombing issue (C38) and proposed solutions (C39) are factually reported, though the assessment that the system 'mostly worked well' (C37) is somewhat subjective.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:29:43.766012Z"
+    },
+    {
+      "id": "b9c49329-5373-44d3-a9ac-0654d790c503",
+      "content_id": "a8e5affe-362d-4acc-b007-55d30ead7332",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Neuromatch's invited and contributed talks used Crowdcast platform innovations including better speaker visibility, democratic question voting, and real-time chat for audience questions. These features enabled more lively and democratic Q&A sessions and deeper audience engagement than legacy conferences, with immediate recording availability.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C40-C53 describe the talk format and platform features with specific details supported by organizers' observations. The comparative claims about being 'more lively and democratic' (C46) and allowing 'deeper engagement' (C51) are based on direct observation during the conference, though they lack quantitative metrics. The platform feature descriptions (C45, C48) are factual.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:29:43.766012Z"
+    },
+    {
+      "id": "98e7727c-0a48-4830-aa3d-eeac2bbfffd1",
+      "content_id": "a8e5affe-362d-4acc-b007-55d30ead7332",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Neuromatch implemented algorithmic matching for 15-minute one-on-one chats between attendees using topic modeling and linear programming based on research abstracts. This approach, adapted from the Conference on Cognitive Computational Neuroscience, is particularly well-suited to online formats.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C54-C57 describe the matching system with citation support (Achakulvisut et al., 2018). The technical approach is clearly specified, and the claim about prior use at another conference is cited. The assessment that it's 'particularly well-suited to an online format' (C57) is an inference but reasonable given the implementation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:29:43.766012Z"
+    },
+    {
+      "id": "ac8a1d43-274b-4582-88c4-8572d2ef808a",
+      "content_id": "a8e5affe-362d-4acc-b007-55d30ead7332",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Online conferences are much less burdensome to organize than legacy conferences, requiring no physical venue logistics, enabling rapid organization with small teams, accessing worldwide volunteer pools, and likely increasing leading scientists' acceptance rates due to reduced time commitment.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C60 is supported by the organizers' experience, but claims C61-C63 are largely inferential or speculative. While the Neuromatch case provides one data point for easier organization, the generalization (C61) and claims about volunteer pools (C62) and speaker acceptance (C63) lack systematic evidence. The assessment relies heavily on a single conference experience.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:29:43.766012Z"
+    },
+    {
+      "id": "8aafaba6-33aa-47a0-bd49-3506d30821de",
+      "content_id": "a8e5affe-362d-4acc-b007-55d30ead7332",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Online platforms can remove barriers to conference participation (family duties, disabilities, funding, travel restrictions) that limit legacy conference attendance. Neuromatch implemented inclusive practices including equal gender representation among invited speakers, an early-career researcher session, and acceptance of all short talk submissions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C64-C65 are supported by citation (Sarabipour, 2020) and common knowledge about barriers to participation. Claims C66-C68 provide concrete data about Neuromatch's inclusive practices. However, the claim that online platforms 'can remove many barriers' (C65) is somewhat aspirational\u2014while they reduce some barriers, they may create others (digital access, time zones).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:29:43.766012Z"
+    },
+    {
+      "id": "6b44b9f7-4cbd-4f2b-9eae-0bd4d5d5389a",
+      "content_id": "a8e5affe-362d-4acc-b007-55d30ead7332",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Neuromatch attracted substantial participation with 1200 pre-registrations rising to 2000 during the conference and 3000 total Crowdcast registrations. Participants were predominantly graduate students (47.3%), followed by postdocs (19.9%), professors (11.7%), research staff (10.7%), industry researchers (3.5%), and others (6.8%).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C69-C77 present concrete attendance and demographic data from conference registration. The numbers are internally consistent and represent direct measurements. However, the manuscript does not clarify the relationship between the three different registration numbers (1200, 2000, 3000), which could represent different metrics or platforms.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:29:43.766012Z"
+    },
+    {
+      "id": "333e805b-1c00-4625-88eb-ab765d9072a2",
+      "content_id": "a8e5affe-362d-4acc-b007-55d30ead7332",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "468 attendees signed up for algorithmic one-on-one matching (with an earlier deadline), with 50% seeking collaborations, 23% seeking casual conversation, and the remainder interested in both. Career progression through collaborations and opportunities should be a priority for online conference organizers.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C78-C82 provide specific data from conference registration about matching participation and motivations. The numbers are concrete and verifiable. Claim C83 is a recommendation based on this data, representing a reasonable inference about conference priorities, though it's somewhat prescriptive rather than empirical.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:29:43.766012Z"
+    },
+    {
+      "id": "d6583690-c12f-47bd-8bf2-9fde0ad8e30a",
+      "content_id": "a8e5affe-362d-4acc-b007-55d30ead7332",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Neuromatch participants showed high engagement measured by analytics unavailable at legacy conferences: 912 peak concurrent attendees (plus 100+ on YouTube), median 678 live attendees per session, average 4.2 sessions attended per person (of 21 total), and 38% rewatched talks afterward.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C84-C90 present concrete engagement metrics from conference analytics. The data are specific and internally consistent. However, the claim that participants were 'very much engaged' (C84) is interpretive\u2014the metrics show attendance but don't directly measure engagement quality. The comparison to legacy conferences lacks baseline data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:29:43.766012Z"
+    },
+    {
+      "id": "66b695a4-8072-42bc-8637-4e839ffb2473",
+      "content_id": "a8e5affe-362d-4acc-b007-55d30ead7332",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Many participants reported preferring the online conference experience, including social aspects, to legacy conferences.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C91 reports participant feedback but provides no quantitative data, methodology for collection, sample size, or specific quotes. The term 'many participants' is vague, and without systematic survey data or response rates, the strength and representativeness of this preference cannot be assessed. This is a critical claim for the paper's argument but lacks supporting evidence.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:29:43.766012Z"
+    },
+    {
+      "id": "574c17d9-408c-42e3-a1c9-481450a008ab",
+      "content_id": "a8e5affe-362d-4acc-b007-55d30ead7332",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Online conferences have the potential to replace many legacy conferences and may become better overall experiences through ongoing innovation. The online format may be less socially intimidating, and a shift to online conferences would make science better and more environmentally friendly, potentially leading to a 'Cambrian explosion' in conference innovation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNSUPPORTED",
+      "evaluation": "Claims C8, C23, C58-C59, and C92-C94 are largely speculative and aspirational, based on a single conference experience. While the Neuromatch case provides some evidence for feasibility, the broad claims about replacement potential (C8), future improvements (C23), reduced intimidation (C59), and overall benefits (C92) lack systematic comparative data. The 'Cambrian explosion' metaphor (C94) is purely speculative. These conclusions require more evidence than one conference provides.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:29:43.766012Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "f4b5f4eb-f593-4273-8c7d-9867d47391f5",
+      "result_id": "9c58395b-ab65-4dd2-943a-37099c21ff96"
+    },
+    {
+      "claim_id": "6a4f6342-58c6-4095-b831-ea6f38d6a4cc",
+      "result_id": "9c58395b-ab65-4dd2-943a-37099c21ff96"
+    },
+    {
+      "claim_id": "b8ed372b-fb78-48aa-8614-49a79e0fdcef",
+      "result_id": "9c58395b-ab65-4dd2-943a-37099c21ff96"
+    },
+    {
+      "claim_id": "6f9c0d91-859b-42fa-b001-d89c2a18f487",
+      "result_id": "9c58395b-ab65-4dd2-943a-37099c21ff96"
+    },
+    {
+      "claim_id": "188e53af-b5c8-4201-9499-43018f2828f1",
+      "result_id": "9c58395b-ab65-4dd2-943a-37099c21ff96"
+    },
+    {
+      "claim_id": "b94295ea-eb57-446b-afce-7f1e04fbde05",
+      "result_id": "9c58395b-ab65-4dd2-943a-37099c21ff96"
+    },
+    {
+      "claim_id": "b0abc433-06c5-43d0-9df3-097c582e8f9c",
+      "result_id": "9c58395b-ab65-4dd2-943a-37099c21ff96"
+    },
+    {
+      "claim_id": "54658f5b-07cd-4bc2-89f1-1c8190bef75e",
+      "result_id": "9c58395b-ab65-4dd2-943a-37099c21ff96"
+    },
+    {
+      "claim_id": "f151f58e-28f4-4596-aa08-15e8bc112bf3",
+      "result_id": "9c58395b-ab65-4dd2-943a-37099c21ff96"
+    },
+    {
+      "claim_id": "78242e11-1fed-4139-94a2-9d03dad84e62",
+      "result_id": "9c58395b-ab65-4dd2-943a-37099c21ff96"
+    },
+    {
+      "claim_id": "b8902918-a834-4a9f-9dcb-7620f7db34a7",
+      "result_id": "24a7be72-f7b9-46f9-9c7c-f142f9468ad7"
+    },
+    {
+      "claim_id": "2a91cd32-f0d6-4239-b7fb-651635846a07",
+      "result_id": "24a7be72-f7b9-46f9-9c7c-f142f9468ad7"
+    },
+    {
+      "claim_id": "e9a95a14-20aa-43cc-84bb-12f58661849f",
+      "result_id": "24a7be72-f7b9-46f9-9c7c-f142f9468ad7"
+    },
+    {
+      "claim_id": "54b8e2bd-dfa9-4215-9137-964669075eb1",
+      "result_id": "24a7be72-f7b9-46f9-9c7c-f142f9468ad7"
+    },
+    {
+      "claim_id": "378caad4-c9aa-445c-bd98-420523042012",
+      "result_id": "24a7be72-f7b9-46f9-9c7c-f142f9468ad7"
+    },
+    {
+      "claim_id": "05ae5d00-daf2-4a10-804c-1bed92a15c9b",
+      "result_id": "3055e484-ad79-48d1-a702-0d3f89bd73f9"
+    },
+    {
+      "claim_id": "e059c294-0f5d-4dbd-b02f-811c8e3c7557",
+      "result_id": "3055e484-ad79-48d1-a702-0d3f89bd73f9"
+    },
+    {
+      "claim_id": "a2ed949f-05b3-487d-ace4-15ef75a50526",
+      "result_id": "3055e484-ad79-48d1-a702-0d3f89bd73f9"
+    },
+    {
+      "claim_id": "c41a5e7a-c509-4975-bd7b-221212f46392",
+      "result_id": "3055e484-ad79-48d1-a702-0d3f89bd73f9"
+    },
+    {
+      "claim_id": "02532396-2e0c-4f45-b666-7b8971d4543a",
+      "result_id": "2ed4df85-6d20-42ad-a03f-f54e7132738b"
+    },
+    {
+      "claim_id": "f2a328f2-b982-46ed-85ff-ce4385a5aafa",
+      "result_id": "2ed4df85-6d20-42ad-a03f-f54e7132738b"
+    },
+    {
+      "claim_id": "0f1aa27d-391e-466e-a9db-a7eb08abce8c",
+      "result_id": "2ed4df85-6d20-42ad-a03f-f54e7132738b"
+    },
+    {
+      "claim_id": "39c9e62a-f537-4e72-abda-f707cd6e0570",
+      "result_id": "2ed4df85-6d20-42ad-a03f-f54e7132738b"
+    },
+    {
+      "claim_id": "45f82bad-0d16-46e3-8e03-94a467997d50",
+      "result_id": "2ed4df85-6d20-42ad-a03f-f54e7132738b"
+    },
+    {
+      "claim_id": "256683cb-f66b-46c7-b5be-8e85eb07beca",
+      "result_id": "2ed4df85-6d20-42ad-a03f-f54e7132738b"
+    },
+    {
+      "claim_id": "8e81d65f-da9c-444c-808b-0eb6f1521f4e",
+      "result_id": "2ed4df85-6d20-42ad-a03f-f54e7132738b"
+    },
+    {
+      "claim_id": "6e03dd2f-3479-48de-ae45-ffb211617a44",
+      "result_id": "2603b4f1-bd0d-4b79-b67d-3b7cb3b67192"
+    },
+    {
+      "claim_id": "1b996907-cd61-40ec-9ba0-ef6893658d21",
+      "result_id": "2603b4f1-bd0d-4b79-b67d-3b7cb3b67192"
+    },
+    {
+      "claim_id": "97b0579f-6013-48bd-80b1-975b5147ea88",
+      "result_id": "2603b4f1-bd0d-4b79-b67d-3b7cb3b67192"
+    },
+    {
+      "claim_id": "3cbd86f7-c13e-4679-a5f0-7a985e458234",
+      "result_id": "2603b4f1-bd0d-4b79-b67d-3b7cb3b67192"
+    },
+    {
+      "claim_id": "0293da63-b1f8-477f-bb45-dbb0356d1d52",
+      "result_id": "2603b4f1-bd0d-4b79-b67d-3b7cb3b67192"
+    },
+    {
+      "claim_id": "5cbb501d-0bbe-4c2d-a920-ffb933e88ae1",
+      "result_id": "2603b4f1-bd0d-4b79-b67d-3b7cb3b67192"
+    },
+    {
+      "claim_id": "d8ba38b2-ddaf-4ecc-b5b9-48678bdeeeec",
+      "result_id": "2603b4f1-bd0d-4b79-b67d-3b7cb3b67192"
+    },
+    {
+      "claim_id": "5fa5caaa-8c88-4cd3-83cd-eb69d2f6ba95",
+      "result_id": "2603b4f1-bd0d-4b79-b67d-3b7cb3b67192"
+    },
+    {
+      "claim_id": "11b503ef-5ef3-44af-b324-679c94aa334a",
+      "result_id": "2603b4f1-bd0d-4b79-b67d-3b7cb3b67192"
+    },
+    {
+      "claim_id": "4f6f7b75-5908-43f9-8342-e4f5b03fb917",
+      "result_id": "b9c49329-5373-44d3-a9ac-0654d790c503"
+    },
+    {
+      "claim_id": "63344560-e618-44a7-914e-a134a5d467d9",
+      "result_id": "b9c49329-5373-44d3-a9ac-0654d790c503"
+    },
+    {
+      "claim_id": "ff41cc2d-9197-4598-be45-381bc383ef35",
+      "result_id": "b9c49329-5373-44d3-a9ac-0654d790c503"
+    },
+    {
+      "claim_id": "b6be6e2c-e7b7-4f38-9eff-80615c673793",
+      "result_id": "b9c49329-5373-44d3-a9ac-0654d790c503"
+    },
+    {
+      "claim_id": "9415b1ca-ae42-4d24-a7c8-2895cee3dc7e",
+      "result_id": "b9c49329-5373-44d3-a9ac-0654d790c503"
+    },
+    {
+      "claim_id": "47a05e7d-8ebf-4df1-9728-e82bf597bba7",
+      "result_id": "b9c49329-5373-44d3-a9ac-0654d790c503"
+    },
+    {
+      "claim_id": "9eb9776e-4215-456f-b61d-d0217902ab09",
+      "result_id": "b9c49329-5373-44d3-a9ac-0654d790c503"
+    },
+    {
+      "claim_id": "d8eb0c36-5cff-4c17-bc3f-0b85f2ce92b9",
+      "result_id": "b9c49329-5373-44d3-a9ac-0654d790c503"
+    },
+    {
+      "claim_id": "333a4ac2-0abd-4e99-9710-650ab2f0803f",
+      "result_id": "b9c49329-5373-44d3-a9ac-0654d790c503"
+    },
+    {
+      "claim_id": "1b1ccbf2-cb81-40c8-afef-0dd4034d8b21",
+      "result_id": "b9c49329-5373-44d3-a9ac-0654d790c503"
+    },
+    {
+      "claim_id": "20bcabdb-fc80-42e6-b749-10374c09e1f1",
+      "result_id": "b9c49329-5373-44d3-a9ac-0654d790c503"
+    },
+    {
+      "claim_id": "5afce584-e0dd-4dea-ad2c-e64e287ab035",
+      "result_id": "b9c49329-5373-44d3-a9ac-0654d790c503"
+    },
+    {
+      "claim_id": "7a5106e0-86fa-4858-9637-71fa79a7265c",
+      "result_id": "b9c49329-5373-44d3-a9ac-0654d790c503"
+    },
+    {
+      "claim_id": "9e805029-3271-441e-92e8-2f77d00807f9",
+      "result_id": "98e7727c-0a48-4830-aa3d-eeac2bbfffd1"
+    },
+    {
+      "claim_id": "862116fb-27d6-4e05-9ed0-f5b3885da90d",
+      "result_id": "98e7727c-0a48-4830-aa3d-eeac2bbfffd1"
+    },
+    {
+      "claim_id": "25cebd94-f2ce-4a8d-83d4-3fb79e3e45ba",
+      "result_id": "98e7727c-0a48-4830-aa3d-eeac2bbfffd1"
+    },
+    {
+      "claim_id": "5cd90b01-3a02-4770-8a9b-b2f5759f82f7",
+      "result_id": "98e7727c-0a48-4830-aa3d-eeac2bbfffd1"
+    },
+    {
+      "claim_id": "4d5eac8e-74b6-4817-8d99-37c4371bca8f",
+      "result_id": "ac8a1d43-274b-4582-88c4-8572d2ef808a"
+    },
+    {
+      "claim_id": "56b41603-d480-4d72-ae5d-cb307b43315d",
+      "result_id": "ac8a1d43-274b-4582-88c4-8572d2ef808a"
+    },
+    {
+      "claim_id": "64f9fa4c-a358-442a-9108-9f2b5f2c99e8",
+      "result_id": "ac8a1d43-274b-4582-88c4-8572d2ef808a"
+    },
+    {
+      "claim_id": "a2bf991a-ee4b-42db-a8c2-f156e5460fc6",
+      "result_id": "ac8a1d43-274b-4582-88c4-8572d2ef808a"
+    },
+    {
+      "claim_id": "dfc401a4-eaac-4a53-ab1e-a002f157902c",
+      "result_id": "8aafaba6-33aa-47a0-bd49-3506d30821de"
+    },
+    {
+      "claim_id": "b85ae4d9-f308-4721-bf43-0cbebf6a833a",
+      "result_id": "8aafaba6-33aa-47a0-bd49-3506d30821de"
+    },
+    {
+      "claim_id": "953986f6-daf5-4eca-820b-cf0dd51a5bd5",
+      "result_id": "8aafaba6-33aa-47a0-bd49-3506d30821de"
+    },
+    {
+      "claim_id": "70e07ec7-40ce-4ba9-b540-5f39b016331a",
+      "result_id": "8aafaba6-33aa-47a0-bd49-3506d30821de"
+    },
+    {
+      "claim_id": "a9279698-0163-49a1-9428-f5f267e1c735",
+      "result_id": "8aafaba6-33aa-47a0-bd49-3506d30821de"
+    },
+    {
+      "claim_id": "667c0caa-5680-4a60-9f32-15580f840e80",
+      "result_id": "6b44b9f7-4cbd-4f2b-9eae-0bd4d5d5389a"
+    },
+    {
+      "claim_id": "f61971c4-1e41-4b73-a8c6-5e3dc405681a",
+      "result_id": "6b44b9f7-4cbd-4f2b-9eae-0bd4d5d5389a"
+    },
+    {
+      "claim_id": "7d366cdd-5c4a-4239-a03b-9bbc70dcae0a",
+      "result_id": "6b44b9f7-4cbd-4f2b-9eae-0bd4d5d5389a"
+    },
+    {
+      "claim_id": "b71745a3-441d-4aff-b992-abae88c077eb",
+      "result_id": "6b44b9f7-4cbd-4f2b-9eae-0bd4d5d5389a"
+    },
+    {
+      "claim_id": "6ae4d967-0aa2-4629-8015-4171d99b23bf",
+      "result_id": "6b44b9f7-4cbd-4f2b-9eae-0bd4d5d5389a"
+    },
+    {
+      "claim_id": "4cb13b1e-03c8-4b84-9721-4b6dcab9be69",
+      "result_id": "6b44b9f7-4cbd-4f2b-9eae-0bd4d5d5389a"
+    },
+    {
+      "claim_id": "0eff8fd6-fe77-42e0-843b-68e06a3701e9",
+      "result_id": "6b44b9f7-4cbd-4f2b-9eae-0bd4d5d5389a"
+    },
+    {
+      "claim_id": "9f375647-d560-48bf-b65c-1c3cacf7136b",
+      "result_id": "6b44b9f7-4cbd-4f2b-9eae-0bd4d5d5389a"
+    },
+    {
+      "claim_id": "5e911966-bfd7-4f65-87b2-0b9ac5a5f4dd",
+      "result_id": "6b44b9f7-4cbd-4f2b-9eae-0bd4d5d5389a"
+    },
+    {
+      "claim_id": "1af59a04-a9e3-4bcd-aba8-560fe18f1f40",
+      "result_id": "333e805b-1c00-4625-88eb-ab765d9072a2"
+    },
+    {
+      "claim_id": "fe6fc9ed-0b8e-4d64-a445-f24d3ff08646",
+      "result_id": "333e805b-1c00-4625-88eb-ab765d9072a2"
+    },
+    {
+      "claim_id": "8ff7ca21-a505-4589-8d5d-598cfb5ea208",
+      "result_id": "333e805b-1c00-4625-88eb-ab765d9072a2"
+    },
+    {
+      "claim_id": "f3dd8e2e-f537-4da1-ae66-fda2ff68dd70",
+      "result_id": "333e805b-1c00-4625-88eb-ab765d9072a2"
+    },
+    {
+      "claim_id": "616af6be-d745-4fa8-bd05-5158d0b1e442",
+      "result_id": "333e805b-1c00-4625-88eb-ab765d9072a2"
+    },
+    {
+      "claim_id": "8ccc7226-a5e1-4e94-b941-af5dbbfaa6e0",
+      "result_id": "333e805b-1c00-4625-88eb-ab765d9072a2"
+    },
+    {
+      "claim_id": "95846a5b-c837-449c-8079-69eff830e24b",
+      "result_id": "d6583690-c12f-47bd-8bf2-9fde0ad8e30a"
+    },
+    {
+      "claim_id": "295a8ae1-fe50-4b23-b51c-4e11003d2824",
+      "result_id": "d6583690-c12f-47bd-8bf2-9fde0ad8e30a"
+    },
+    {
+      "claim_id": "8e803a25-f2f6-4770-9b10-0fca64fd2a86",
+      "result_id": "d6583690-c12f-47bd-8bf2-9fde0ad8e30a"
+    },
+    {
+      "claim_id": "cd596a19-5a5f-41dc-97b3-56a59c216ebe",
+      "result_id": "d6583690-c12f-47bd-8bf2-9fde0ad8e30a"
+    },
+    {
+      "claim_id": "2d32a857-09d1-4457-a5bd-8d0eed2910d8",
+      "result_id": "d6583690-c12f-47bd-8bf2-9fde0ad8e30a"
+    },
+    {
+      "claim_id": "90ec1841-3616-468b-b4b8-3c94ab65107f",
+      "result_id": "d6583690-c12f-47bd-8bf2-9fde0ad8e30a"
+    },
+    {
+      "claim_id": "db62f238-6611-4f95-8c96-d54588750ef5",
+      "result_id": "d6583690-c12f-47bd-8bf2-9fde0ad8e30a"
+    },
+    {
+      "claim_id": "7fa24885-6af2-4eb8-b2bf-d9e85dc313de",
+      "result_id": "66b695a4-8072-42bc-8637-4e839ffb2473"
+    },
+    {
+      "claim_id": "e306725a-898f-4ded-be07-4051f672c276",
+      "result_id": "574c17d9-408c-42e3-a1c9-481450a008ab"
+    },
+    {
+      "claim_id": "6463a58f-a741-4314-b34b-7ca022846446",
+      "result_id": "574c17d9-408c-42e3-a1c9-481450a008ab"
+    },
+    {
+      "claim_id": "ed950c8a-4827-4d2a-be13-48e3ad87304b",
+      "result_id": "574c17d9-408c-42e3-a1c9-481450a008ab"
+    },
+    {
+      "claim_id": "edf4bd04-c9f6-4d0a-8fa2-63d51debf26c",
+      "result_id": "574c17d9-408c-42e3-a1c9-481450a008ab"
+    },
+    {
+      "claim_id": "483d1e1e-c6c1-4128-a26d-4dc56ca29697",
+      "result_id": "574c17d9-408c-42e3-a1c9-481450a008ab"
+    },
+    {
+      "claim_id": "ca1f436c-b70d-4881-abf2-87a6e54d3a2c",
+      "result_id": "574c17d9-408c-42e3-a1c9-481450a008ab"
+    },
+    {
+      "claim_id": "246ef60a-712f-4f90-b8ee-5bac839ce3f7",
+      "result_id": "574c17d9-408c-42e3-a1c9-481450a008ab"
+    }
+  ],
+  "comparisons": []
+}

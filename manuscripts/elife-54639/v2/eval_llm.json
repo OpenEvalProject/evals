@@ -1,0 +1,331 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11"
+    ],
+    "result": "The manuscript provides background on alcohol dehydrogenases (ADHs), particularly the short-chain dehydrogenase/reductase (SDR) family, describing their catalytic properties, substrate range, cofactor requirements, and structural characteristics including the characteristic Ser-Tyr-Lys catalytic triad.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C11 are well-supported by appropriate citations to established literature (Kavanagh et al., 2008; Oppermann et al., 2003; Bhatia et al., 2015; Nealon et al., 2015; Zheng et al., 2017; Sol\u00e9 et al., 2019) and represent accepted knowledge in the field. These background claims provide appropriate context for the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C14",
+      "C111"
+    ],
+    "result": "The manuscript establishes the rationale for enzyme stabilization by explaining that many enzymes have evolved for intracellular conditions and limited lifespans, resulting in moderate stability that is often insufficient for biocatalytic applications.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C14 and C111 are supported by appropriate citations (DePristo et al., 2005; Goldenzweig and Fleishman, 2018; Bommarius and Paye, 2013; Woodley, 2019; Parsell and Sauer, 1989) and represent well-established concepts in protein engineering. This provides clear motivation for the stabilization work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C29",
+      "C30",
+      "C104"
+    ],
+    "result": "ADHA from Candida magnoliae DSMZ 70638 displays high reductive activity toward various ketones with excellent enantioselectivity (>97% ee) but has moderate thermostability (Tm = 43\u00b0C) and loses most activity in reactions lasting 8 hours or longer at 25-30\u00b0C.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C23, C29-C30, and C104 are supported by experimental data presented in Table 1 showing substrate-specific activities and enantioselectivities. The Tm measurement (C17) and stability observations (C30) provide clear justification for pursuing enzyme stabilization. The data are internally consistent and appropriately documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C105",
+      "C109",
+      "C110"
+    ],
+    "result": "The crystal structure of wild-type ADHA was solved in both apo (2.0 \u00c5) and NADP+-bound (1.6 \u00c5) states, revealing a homotetrameric structure typical of SDRs with closest structural homology to another C. magnoliae ADH (PDB 5MLN, RMSD 1.0 \u00c5, 64% sequence identity).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C36, C105, C109-C110 are supported by crystallographic data with appropriate resolution (1.6-2.0 \u00c5) and structural analysis. The structural comparison to PDB 5MLN is quantitatively documented. The observation of a disordered nicotinamide moiety (C110) is a crystallographic detail that becomes relevant later. Crystallographic statistics are referenced in Supplementary file 1A.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C37"
+    ],
+    "result": "The FRESCO computational method was applied to predict stabilizing mutations by calculating folding free energy changes (\u0394\u0394GFold) using two algorithms, followed by molecular dynamics simulations and visual inspection, resulting in selection of 177 mutations for experimental screening.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C25 and C37 describe the computational methodology appropriately. The FRESCO method is previously published (Wijma et al., 2018) and the selection process is clearly described. The number of mutations selected (177) is specific and forms the basis for subsequent experimental work.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "Experimental screening of 177 FRESCO-predicted mutations identified 25 significantly stabilizing mutations (\u0394Tm \u2265 +3\u00b0C), though 11 of these showed poor or no activity. The most stabilizing single mutations included L150F (+14\u00b0C), G149A (+9.5\u00b0C), M157K (+8\u00b0C), and S197E (+7.5\u00b0C).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C50 are supported by experimental data shown in Figure 2 and Table 2. The screening results are quantitatively reported with error estimates. The observation that some stabilizing mutations impair activity (C43) is an important finding that demonstrates the trade-off between stability and function. Technical replicates are mentioned and error bars are provided.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C51",
+      "C52"
+    ],
+    "result": "Combined mutants showed superior expression compared to wild-type and could be expressed at 37\u00b0C overnight. Beyond the M4 mutant, enzymes displayed two melting points in ThermoFluor measurements, with the first appearing 10-11\u00b0C before the second major peak.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C52 are supported by experimental observations documented in Supplementary file 2A and Table 2. The appearance of two melting points (C52) is an interesting biophysical observation that may reflect partial unfolding or tetramer dissociation, as the authors suggest. This is appropriately documented in the data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C53",
+      "C54",
+      "C69",
+      "C70"
+    ],
+    "result": "The 10-fold M9 mutant achieved a Tm of 94\u00b0C (+51\u00b0C), representing the highest FRESCO improvement to date, but showed impaired catalytic properties with 100-fold higher KM for NADP+ (1.0 mM vs 9.5 \u00b5M) and 4-fold decreased kcat (0.27 s\u207b\u00b9 vs 1.1 s\u207b\u00b9).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C27, C53-C54, C69-C70 are supported by experimental data in Tables 2-3 and Figure 3. The dramatic stability improvement is well-documented, as is the impairment in catalytic parameters. The kinetic measurements appear properly conducted with appropriate error estimates. The comparison to previous FRESCO studies (C27) is supported by Table 5.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C106"
+    ],
+    "result": "The M9 crystal structure (2.6 \u00c5 resolution) revealed that all mutations cluster in the same region at the tetramer interface, with overall structure very similar to wild-type (RMSD 0.58 \u00c5). The major structural change is a 3.1 \u00c5 shift in loop 196-214, where the S197E mutation occupies the NADP+ binding site and interacts with R18, explaining the increased KM for cofactor.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C64 and C106 are supported by crystallographic data and structural analysis shown in Figure 4. The structural explanation for the impaired cofactor binding is logical and well-supported by the electron density maps showing absence of NADP+ despite its presence in crystallization conditions (C56). The RMSD value (C59) and loop shift measurement (C60) are quantitative and appropriate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118"
+    ],
+    "result": "Structural analysis reveals that stabilizing mutations work through two main mechanisms: improved hydrophobic packing (G149A, L150F, V193L, T194V, V217P, V238L) or installation of polar/charged groups on solvent-exposed surfaces (M157K, N212R).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C112-C118 provide structural rationalization for the stabilizing effects, supported by crystal structure analysis in Figures 4-5 and appropriate citations (Richardson and Richardson, 1988; Szil\u00e1gyi and Z\u00e1vodszky, 2000). The mechanistic explanations are reasonable based on protein stability principles. The V238L dimer interface interaction (C113) is particularly well-illustrated in Figure 5.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C28",
+      "C65",
+      "C66",
+      "C71",
+      "C72",
+      "C73",
+      "C75"
+    ],
+    "result": "Reverting the S197E mutation in M9 to create M9* rescued activity while maintaining high stability (Tm = 88\u00b0C, +45\u00b0C), with KM for NADP+ restored to wild-type levels (9.6 \u00b5M) and only slightly reduced kcat (0.7 s\u207b\u00b9), while retaining excellent enantioselectivity (>99% ee).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28, C65-C66, C71-C73, C75 are supported by kinetic data in Table 3 and Figure 6. The rational design approach of reverting S197E based on structural analysis successfully rescued activity while maintaining most of the stability improvement. This demonstrates the power of combining computational prediction with structural analysis. The enantioselectivity data confirm that the active site geometry is preserved.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "M9* shows optimal activity at 55-60\u00b0C and remains active at 85\u00b0C, whereas wild-type shows little activity above 40\u00b0C. The stabilizing effect of NADP+ binding is reduced in M9 (+3\u00b0C) compared to wild-type (+9\u00b0C).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C80 are supported by temperature-activity profile data in Figure 7A and cofactor binding experiments. The shifted temperature optimum is consistent with the increased thermostability. The reduced stabilization by cofactor binding in M9 (C79-C80) suggests that the mutations partially stabilize regions normally stabilized by cofactor, which is a reasonable interpretation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "Long-term stability testing at 37\u00b0C showed wild-type ADHA has a half-life of ~2 hours with only 8.7% activity remaining after 22 hours, while M9* maintained full activity after 22 hours and had a half-life of 11 days.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C84 are supported by stability data in Figure 7B and Figure 7\u2014figure supplement 1. The dramatic improvement in operational stability (from 2 hours to 11 days half-life) is highly significant for practical applications. The measurements appear properly conducted with appropriate time points.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "M9* retains substantial stability in the presence of 20% cosolvents, with Tm values of 76\u00b0C (methanol), 71.5\u00b0C (ethanol), and 67\u00b0C (isopropanol), representing decreases of 12-21\u00b0C from the cosolvent-free Tm.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C87 are supported by data in Table 4. The cosolvent tolerance is practically important for biocatalytic applications with hydrophobic substrates. The magnitude of Tm decrease follows the expected trend based on cosolvent hydrophobicity. Error estimates are provided (\u00b10.5\u00b0C).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "This study achieved a +45\u00b0C improvement in Tm, the highest for FRESCO to date. Previous FRESCO applications on eight other enzymes achieved improvements ranging from +8.5\u00b0C to +35\u00b0C, with dimeric and tetrameric enzymes generally showing larger improvements than monomeric enzymes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C97 are supported by comparative data in Table 5 with appropriate citations. The comparison to previous FRESCO studies is fair and well-documented. The observation that quaternary structure may influence the magnitude of improvement (C119-C120) is a reasonable inference from the data, though it would benefit from more systematic analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C122"
+    ],
+    "result": "FRESCO predictions for ADHA had a 22% hit rate (39/177 mutations with >2\u00b0C stabilization). FoldX showed weak correlation with experimental Tm (Pearson r=0.3, p<0.02) while Rosetta showed no correlation, though 4/9 final mutations were not predicted by FoldX alone, demonstrating the value of combining both algorithms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98-C103 and C122 provide appropriate analysis of the computational predictions. The hit rate (22%) is consistent with previous FRESCO studies (C99). The statistical analysis (C100-C101) is appropriate, though the correlation is weak. The observation that some highly stabilizing mutations were missed by FoldX alone (C102) supports the value of the combined approach. The citation to Bu\u00df et al., 2018 (C103) appropriately contextualizes the FoldX vs Rosetta comparison.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C119",
+      "C120",
+      "C121"
+    ],
+    "result": "Analysis of FRESCO results across enzyme types suggests that dimeric and tetrameric enzymes may achieve greater stability improvements than monomeric enzymes, while cofactor-containing enzymes show more moderate improvements, possibly because current algorithms cannot account for cofactor-protein interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C119-C121 represent reasonable inferences from the comparative data in Table 5, but the analysis is limited. The sample size is small (9 enzymes total), and multiple confounding factors (enzyme size, starting stability, structural features) are not systematically controlled. The explanation for cofactor-containing enzymes (C121) is plausible and supported by citation to Wijma et al., 2018, but remains speculative without direct testing.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C107",
+      "C108"
+    ],
+    "result": "While the typical SDR catalytic triad is Ser-Tyr-Lys, ADHA contains Thr-Tyr-Lys, demonstrating that a catalytic threonine can support redox catalysis in SDR-type alcohol dehydrogenases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C107-C108 are supported by structural data and appropriate citation to King et al., 2007 showing precedent for this alternative catalytic triad. This is a minor but interesting structural observation that does not affect the main conclusions of the stabilization work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C67",
+      "C68"
+    ],
+    "result": "Wild-type ADHA has kinetic parameters of kcat = 1.1 \u00b1 0.04 s\u207b\u00b9 and KM,NADP+ = 9.5 \u00b1 1.2 \u00b5M with cyclohexanol as substrate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C68 provide baseline kinetic characterization supported by data in Table 3 and Figure 6. The measurements include appropriate error estimates and appear to be conducted in duplicate or triplicate as stated in methods. These values serve as the reference for evaluating mutant enzymes.",
+    "result_type": "MINOR"
+  }
+]

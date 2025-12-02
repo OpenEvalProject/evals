@@ -1,0 +1,1843 @@
+{
+  "submission": {
+    "id": "9f944e45-734f-4354-8e58-8d7bc45292ff",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T19:43:49.768351Z",
+    "updated_at": "2025-12-02T19:43:49.768351Z"
+  },
+  "content": [
+    {
+      "id": "ea442998-d338-42e4-88ce-d2b2dcfc0392",
+      "submission_id": "9f944e45-734f-4354-8e58-8d7bc45292ff",
+      "content_type": "manuscript",
+      "content_text": "# Sox17 and \u03b2-catenin co-occupy Wnt-responsive enhancers to govern the endoderm gene regulatory network\n\n## Authors\n\n- Shreyasi Mukherjee<sup>1</sup>\n- Praneet Chaturvedi<sup>1</sup>\n- Scott A Rankin<sup>1</sup>\n- Margaret B Fish<sup>3</sup>\n- Marcin Wlizla<sup>1</sup>\n- Kitt D Paraiso<sup>3</sup>\n- Melissa MacDonald<sup>1</sup>\n- Xiaoting Chen<sup>5</sup>\n- Matthew T Weirauch<sup>2</sup>\n- Ira L Blitz<sup>3</sup>\n- Ken WY Cho<sup>3</sup>\n- Aaron M Zorn<sup>1</sup> ([ORCID: 0000-0003-3217-3590](https://orcid.org/0000-0003-3217-3590)) \u2020\n\n### Affiliations\n\n1. Center for Stem Cell and Organoid Medicine (CuSTOM), Division of Developmental Biology, Perinatal Institute, Cincinnati Children\u2019s Hospital Medical Center Cincinnati United States\n2. University of Cincinnati, College of Medicine, Department of Pediatrics Cincinnati United States\n3. Department of Developmental and Cell Biology, University of California, Irvine Irvine United States\n4. Center for Complex Biological Systems, University of California, Irvine Irvine United States\n5. Center for Autoimmune Genomics and Etiology (CAGE), Divisions of Biomedical Informatics and Developmental Biology, Cincinnati Children's Hospital Medical Center Cincinnati United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nLineage specification is governed by gene regulatory networks (GRNs) that integrate the activity of signaling effectors and transcription factors (TFs) on enhancers. Sox17 is a key transcriptional regulator of definitive endoderm development, and yet, its genomic targets remain largely uncharacterized. Here, using genomic approaches and epistasis experiments, we define the Sox17-governed endoderm GRN in Xenopus gastrulae. We show that Sox17 functionally interacts with the canonical Wnt pathway to specify and pattern the endoderm while repressing alternative mesectoderm fates. Sox17 and \u03b2-catenin co-occupy hundreds of key enhancers. In some cases, Sox17 and \u03b2-catenin synergistically activate transcription apparently independent of Tcfs, whereas on other enhancers, Sox17 represses \u03b2-catenin/Tcf-mediated transcription to spatially restrict gene expression domains. Our findings establish Sox17 as a tissue-specific modifier of Wnt responses and point to a novel paradigm where genomic specificity of Wnt/\u03b2-catenin transcription is determined through functional interactions between lineage-specific Sox TFs and \u03b2-catenin/Tcf transcriptional complexes. Given the ubiquitous nature of Sox TFs and Wnt signaling, this mechanism has important implications across a diverse range of developmental and disease contexts.\n\n## Introduction\n\nDuring embryogenesis, the pluripotent zygote progressively gives rise to specialized cell types expressing distinct sets of genes that, in turn, define the cell\u2019s identity and encode proteins necessary for its function. Lineage-specific gene expression is controlled by the genomic integration of signaling pathways and transcription factors (TFs) on DNA cis-regulatory modules (CRMs), such as enhancers, that control transcription (Heinz et al., 2015; Stevens et al., 2017). An important goal of developmental biology is to elucidate how signaling effectors and TFs interact on distinct sets of CRMs within the chromatin landscape to form gene regulatory networks (GRNs) that activate lineage-specific transcriptional programs whilst repressing expression of alternative fates (Charney et al., 2017b). This will provide a deeper understanding of how transcriptional networks are established, dysregulated in disease, and how GRNs might be manipulated for therapeutic purposes.\n\nWe have addressed this in the context of endoderm germ layer specification: one of the earliest cell fate decisions in vertebrate development that provides a relatively simple model to elucidate how GRNs control lineage-specific transcriptional programs (Charney et al., 2017b). In embryos and pluripotent stem cells (PSCs), Nodal/Smad2 and Wnt/\u00df-catenin (Ctnnb1; hereafter Bcat) signaling cooperate to initiate the mesendoderm program and subsequent development of definitive endoderm progenitors, which gives rise to the epithelia of the digestive and respiratory systems (Sumi et al., 2008; Zorn and Wells, 2009). Downstream of Nodal and Wnt, a core set of endoderm TFs: Sox17, Gata4-6, Eomes, Foxa1/2 and Mix family of homeodomain TFs execute the endoderm GRN (Arnold et al., 2008; Charney et al., 2017b; Engert et al., 2013; Sinner et al., 2006). In Xenopus where endoderm specification is well studied, the Nodal and Wnt pathways interact at several levels. First, maternal (m) Wnt/Bcat, active on the dorsal side of the blastula, is required for high levels of nodal expression at the onset of zygotic transcription (Hyde and Old, 2000). Then Nodal and mWnt cooperate to promote the expression of endoderm TFs Sox17, Foxa2 and many dorsal mesendoderm organizer genes (Xanthos et al., 2002). A few hours later, zygotic (z) wnt8 (a Nodal target) is expressed on the ventral side of the gastrula where, together with Nodal signaling, it promotes ventral and posterior mesendoderm identities (Charney et al., 2017b; Stevens et al., 2017). In mammals, early Wnt/Bcat similarly activates expression of Nodal and core endoderm TFs, with prolonged Wnt promoting posterior hindgut fate (Engert et al., 2013; Zorn and Wells, 2009).\n\nFunctional interactions between the core endoderm TFs and the Wnt pathway are thought to (1) segregate the transient mesendoderm into endoderm and mesoderm, (2) pattern the nascent endoderm into spatially distinct subtypes and (3) execute the downstream differentiation program to give rise to endoderm-derived lineages. But mechanistically how the Wnt signaling machinery interacts with core endoderm TFs to execute this differentiation cascade is unresolved. The transcriptional targets of the endoderm TFs are largely unknown, and it is unclear exactly how Wnt/Bcat regulates distinct spatiotemporal transcription programs in the embryo. Indeed, how the canonical Wnt pathway elicits context-specific transcriptional responses in its multitude of different biological roles in development, homeostasis and cancer is still poorly understood. According to the dogma of canonical Wnt signaling, Wnt-activated Fzd-Lrp5/6 receptor complexes sequester the Bcat degradation complex, resulting in the stabilization and translocation of Bcat to the nucleus. There, it interacts with one of four HMG-box Tcf TFs (Tcf7, Tcf7L1, Tcf7L2 and Lef1) at Wnt-responsive CRMs (Cadigan and Waterman, 2012; Schuijers et al., 2014), ultimately activating a multiprotein \u2018Wnt-enhanceosome\u2019 with the scaffold proteins Bcl9, Pygopus and the ChiLS complex (Gammons and Bienz, 2018). In the absence of Bcat, Tcfs are coupled with corepressor proteins Tle/Groucho and histone deacetylase Hdac to inhibit transcription of Wnt target genes. Bcat displaces Tle and recruits a co-activator complex including histone acetyltransferases Ep300 or CBP to stimulate transcription (Cadigan and Waterman, 2012). How distinct context-specific Wnt target genes are selected is unclear since all Tcfs have nearly identical DNA-binding specificities (Badis et al., 2009; Ramakrishnan and Cadigan, 2017) and for the most part they are ubiquitously expressed. An emerging idea is that the Wnt-enhanceosome also interacts with other lineage-specific TFs to integrate lineage-specific inputs (Gammons and Bienz, 2018; Trompouki et al., 2011); yet, how these impact genomic specificity in vivo is largely untested and the idea of Tcf-independent Wnt-mediated transcription remains controversial.\n\nIn this study, we investigated the possibility that Sox17 functionally interacts with Wnt/Bcat to regulate transcription in the Xenopus endodermal GRN. In all vertebrate embryos, Sox17 is specifically expressed in the gastrula endoderm where it is required for early gut development (Clements et al., 2003; Hudson et al., 1997; Kanai-Azuma et al., 2002; Viotti et al., 2014). Despite the critical role of Sox17 in endoderm development, only few of its direct transcriptional targets have been identified (e.g.: hnf1b, foxa1 and dhh) (Ahmed et al., 2004; Sinner et al., 2004; Yagi et al., 2008). In Xenopus, ectopic Sox17 is sufficient to initiate endoderm development in pluripotent blastula animal cap cells (Clements et al., 2003; Hudson et al., 1997), and co-injection of stabilized Bcat can enhance this activity (Sinner et al., 2004). Sox17 can physically interact with Bcat in vitro and suppress the transcriptional activity of generic Tcf/Bcat reporter constructs (TOPflash) in tissue culture experiments (Sinner et al., 2007; Zorn et al., 1999). However, the biological relevance of these interactions and whether Sox17 and Bcat functionally interact on chromatin to regulate the endoderm GRN remains unknown.\n\nHere, we define the genomic targets of Sox17 in the Xenopus gastrula. In addition to promoting expression of endoderm genes, Sox17 also represses ectoderm and mesoderm gene transcription, and acts in a negative feedback loop to restrain Nodal signaling. We demonstrate that functional interactions with canonical Wnt signaling is a key feature of the Sox17-regulated GRN. Over a third of all Bcat and Sox17 genomic binding in the gastrula occur at the same CRMs. In some instances, Sox17 suppresses Bcat-Tcf mediated transcription, while in other cases, Sox17 and Bcat synergistically activates enhancers apparently independently of Tcfs, indicating a novel mode of regulation. These results provide new insight into the GRN controlling endoderm development and have implications for how Sox TFs and Bcat might interact in diverse biological contexts from development to cancer.\n\n## Results\n\n### Sox17 regulates a genomic program controlling germ layer segregation and endoderm development\n\nTo identify the transcriptional program regulated by Sox17, we performed RNA-sequencing (RNA-Seq) on control and Sox17-depleted Xenopus tropicalis embryos at multiple time points during blastula and gastrula stages (NF9-12) when the endoderm germ layer is being specified. In Xenopus tropicalis,\u00a0there are three redundant genes: sox17a, sox17b.1 and sox17b.2 (collectively sox17) with indistinguishable activities and identical expression in presumptive vegetal endoderm cells of gastrula embryos (Figure 1A and Figure 1\u2014figure supplement 1A; D'Souza et al., 2003; Hellsten et al., 2010). Microinjection of a combination of antisense morpholino oligos (sox17aMO and sox17bMO) targeting all three paralogs resulted in a robust knockdown of Sox17 protein as confirmed by immunostaining (Figure 1B and Figure 1\u2014figure supplement 1B). The Sox17-MO phenotype was consistent with previous reports (Clements et al., 2003; Sinner et al., 2006) and phenocopied mouse mutants with defective gut development (Kanai-Azuma et al., 2002). Injection of mRNA encoding mouse Sox17 rescued both the anatomical and gene expression phenotypes confirming the efficacy and specificity of the MOs (Figure 1F and Figure 1\u2014figure supplement 1C,D).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/58029/elife-58029-fig1-v3.jpg)\n\n**Figure 1.:** (A) Endoderm expression of sox17a and sox17b in NF10.5 Xenopus tropicalis gastrula. (B\u2013C) Sox17 immunostaining in control-MO (B) and sox17a/b-MO (C) injected gastrula with an antibody that recognizes both Sox17a and Sox17b shows MO effective knockdown. (D) Time course heatmap of Sox17-regulated transcripts. Differentially expressed genes from a pairwise comparison of control-MO and sox17-MO (>2 fold change, FDR\u00a0<\u00a05%) at each stage showing transcripts that are downregulated or upregulated early (NF9-10) or late (NF10.5\u201312). Key genes are color coded based on regional expression from fate map in (E). (E) Enriched expression of Sox17-regulated transcripts. Gastrula fate map (dorsal right) colored by different tissues. Stacked bar graphs showing different patterns of enriched spatial expression based on RNA-seq of dissected gastrula tissues (Blitz et al., 2017). Distribution of expression patterns statistically different from all genes in the genome was determined by two-sided Kolmogorov-Smirnov tests *p<0.01. (F) In situ validation of Sox17-regulated transcripts. Disrupted expression in sox17-MOs is rescued by co-injection of mouse (m) Sox17 RNA.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/58029/elife-58029-fig1-figsupp1-v3.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) Temporal expression of key endoderm GRN transcripts (GSE65785; Owens et al., 2016). (B) Sequence alignment of antisense sox17a-MO and sox17b-MO (red) with 5\u2019 end of Xenopus tropicalis sox17a, sox17b.1 and sox17b.2 mRNAs (black) spanning the ATG translation start (green). (C) In situ hybridization of markers for the\u00a0liver (nr1h5), stomach, lung, intestine and pharynx (osr1 and islet1) snowing that co-injection of mouse Sox17 RNA rescues gut development in sox17-MO embryos at the tailbud stage. (D) Additional validation of gastrula stage transcripts downregulated (otx2, admp, dhh and gata4) or upregulated (wnt8 and nodal1) in sox17-MO embryos and rescue by co-injection of mSox17. (E) GO term enrichment analysis of Sox17-regulated genes showing fold enrichment by Fisher\u2019s exact test with p-values adjusted to 5% FDR for multiple testing correction.\n\nDifferential expression analysis of control-MO and Sox17-MO embryos identified 1023 Sox17-regulated genes (>2 fold change, FDR<\u00a05%) (Figure 1D and Supplementary file 1). Gene Ontology (GO) enrichment was consistent with the Sox17-regulated transcriptome being involved in \u2018endoderm formation\u2019, \u2018epithelial differentiation\u2019 and \u2018digestive track morphogenesis\u2019 (Figure 1\u2014figure supplement 1E). In total, 493 transcripts were downregulated in Sox17-depleted embryos and 530 transcript were upregulated. The time course data revealed that\u00a0>75% of the differentially expressed genes were changed by Sox17 depletion (either directly or indirectly) during the mid-late gastrula (NF10.5\u201312), consistent with a role in maintaining endodermal fate after initial induction by Nodal signaling in the blastula (NF9) (Figure 1D and Figure 1\u2014figure supplement 1A). Differentially expressed genes include 73 TFs, including known Sox17 targets foxa2 and hnf1b (Sinner et al., 2004; Sinner et al., 2006), and paracrine signaling components (Supplementary file 1) such as the Hedgehog pathway (dhh, hhip, gli1); a key epithelial signal in gut organogenesis. This confirms that Sox17 sits atop of the regulatory hierarchy regulating endoderm differentiation.\n\nWe next investigated how Sox17-regulated genes were spatially expressed, leveraging a previously published RNA-seq of different tissues dissected from gastrula embryos (Blitz et al., 2017). As predicted, a majority of Sox17-dependent genes were enriched in the vegetal endoderm and dorsal mesendoderm (organizer) (Figure 1E) including osr1, hnf1b, dhh and slc5a8 (Figure 1F and Figure 1\u2014figure supplement 1D). Interestingly, over 30% of the genes upregulated early (NF9-10) in the Sox17-depleted embryos were normally enriched in the ectoderm or mesoderm tissue; examples include ectoderm-promoting TFs tfap2a and lhx5 (Houston and Wylie, 2003; Figure 1D\u2013F) as well as the mesoderm TFs foxf1, tbx20 and hlx. This suggests that Sox17 plays an important role in repressing ectoderm and mesoderm fate in vegetal endoderm cells. Unexpectedly Sox17 also negatively regulated\u00a0~150 genes that are normally enriched in the vegetal endoderm and dorsal mesendoderm. Some of these vegetally enriched genes encoded components of the endoderm promoting Nodal pathway including nodal1, nodal6, gdf3, gdf6, foxh1, mix1 and bix1.1, all of which were upregulated in Sox17-depleted embryos (Figure 1D\u2013F and Figure 1\u2014figure supplement 1). Indeed, even sox17 transcripts were modestly increased in Sox17-MO embryos even though previous work has demonstrated that Sox17 directly maintains its own transcription (Howard et al., 2007) after initial induction by Nodal/Smad2. These data indicate that Sox17 acts as a negative feedback inhibitor that restricts excessive endoderm development by restraining Nodal activity after initial induction.\n\nThe observation that over 10% of Sox17-regulated genes are enriched in the organizer mesendoderm while Sox17 is present throughout the endoderm, suggests that Sox17 might also functionally interact with the Wnt and/or Bmp dorso-ventral patterning pathways to control spatial expression. Intriguingly, we found that Sox17 regulates the expression of several Wnt/Bcat pathway components and targets including: dkk1, dkk2, fzd5, nodal3.1, pygo1, sia1, ror1, rsop2 and wnt11 (Figure 1D,F and Supplementary file 1). Together these data suggest that Sox17 regulates both endoderm specification and patterning while suppressing mesectoderm fate and that Sox17 participates in feedback loops with the Wnt and Nodal pathways.\n\n### Sox17 ChIP-Seq reveals direct endodermal targets and a Nodal and Wnt feedback\n\nTo identify direct Sox17 targets we generated and validated anti-Sox17 antibodies (Figure 2\u2014figure supplement 1A\u2013C) and performed Sox17 ChIP-seq in gastrula (NF10.5) embryos, identifying 8436 statistically significant Sox17-bound putative CRMs (IDR; p<0.05) (Supplementary file 2). These were associated with 4801 genes (Figure 2A), based on annotation to the nearest transcription start-site (TSS) by HOMER (Heinz et al., 2010). 88% of Sox17-bound loci were in introns or intergenic regions more than 1 kb away from the TSS, consistent with Sox17 binding at distal CRMs (Figure 2\u2014figure supplement 2). A comparison to published ChIP-seq data of Xenopus embryos at the same stage (Hontelez et al., 2015) showed that most of the Sox17-bound genomic loci were also bound by Ep300, (Figure 2B,E) indicative of active enhancers. Motif analysis of the ChIP-seq peaks confirmed that Sox17 motifs were the most enriched, as expected (Figure 2D and Figure 2\u2014figure supplement 2). Control ChIP-qPCR experiments of Sox17-MO embryos showed binding reduced to near background levels at 9 of 10 loci tested confirming a robust knockdown and the specificity of the Sox17 antibody (Figure 2\u2014figure supplement 1D).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/58029/elife-58029-fig2-v3.jpg)\n\n**Figure 2.:** Sox17 ChIP-seq of gastrula embryos.\u00a0(A) Venn diagram of Sox17-bound genes (and associated peaks) from ChIP-seq intersected with Sox17-regulated genes. Gene intersections are statistically significant based on hypergeometric tests* p<0.001. (B) Peak density plots showing that the Sox17-bound loci are cobound by the histone acetyltransferase Ep300, a marker of active enhancers. Average density of all peaks in top panel. (C) Sox17-bound genes are enriched in the endoderm. Stacked bar graphs showing different patterns of enriched spatial expression based on RNA-seq of dissected gastrula tissues (Blitz et al., 2017). Distribution of expression patterns statistically different from all genes in the genome was determined by two-sided KolmogorovSmirnov tests *p<0.01. (D) Top enriched DNA-binding motifs in Sox17 peaks, based on HOMER hypergeometric test. (E) Genome browser views of representative genes showing RNA-seq expression in control-MO and sox17-MO embryos and ChIPseq tracks of Sox17 and Ep300 binding.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/58029/elife-58029-fig2-figsupp1-v3.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) Schematic and amino acid sequences of the Xenopus tropicalis Sox17 peptides used to immunize rabbits and generate polyclonal antibodies to: pan-Sox17 N-terminal, Sox17b Cterminal and Sox17a C-terminal. (B) Immunoprecipitation of Xenopus laevis embryos expressing V5 epitope-tagged versions of Sox17a-V5 and Sox17b1-V5. Anti-V5 western blot showed that all antibodies specifically immunoprecipitated the target antigen but that the Sox17b C-terminal antibody was the most efficient. (C) ChIP-qPCR validation of anti-Sox17 antibodies on previously known target loci. In preliminary ChIP-qPCR experiments, the pan-Sox17 N-terminal and Sox17b C-terminal antibodies bound to all the same loci, but the Sox17b C-terminal antibody showed higher fold enrichment (data not shown) and was used for ChIPseq experiments. Representative ChIP-qPCR results show relative fold change of Sox17b binding versus IgG control in Sox17-bound positive control loci relative to the negative control region of odc1,. Addition of the Sox17b C-terminal peptide reduced the ChIP signal in a dose-dependent manner indicating specific binding. (D) Representative ChIP-qPCR assessing the efficiency of Sox17MO knockdown. Sox17 enrichment at target loci are shown relative to a negative region (odc1) in embryos injected with either control-MO or Sox17-MO. The Sox17-MO dramatically reduces Sox17 occupancy at all loci. (E) Representative ChIP-qPCR assessing the efficiency of Bcat-MO knockdown. Bcat enrichment at target loci are shown relative to a negative region (odc1) in embryos injected with either controlMO or Bcat-MO. The Bcat-MO dramatically reduces its occupancy at all loci. All ChIP-qPCR experiments were repeated at least twice.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/58029/elife-58029-fig2-figsupp2-v3.jpg)\n\n**Figure 2\u2014figure supplement 2.:** (A) Genomic distributions of 8436 Sox17-bound ChIP-seq peaks associated to cognate promoters using HOMER. 88% of the Sox17 peaks were located in either introns or elements more than 1 kb from the TSS, indicative of distal CRMs. (B) De novo DNA-binding motif enrichment analysis of Sox17 peaks associated with Sox17-regulated genes by HOMER hypergeometric test. (C) GO analysis of 4810 genes associated with Sox17 ChIP-seq peaks showed enrichment for endoderm development and Wnt signaling. Fold enrichment by Fisher\u2019s exact test with p-values adjusted to 5% FDR for multiple testing correction (D) Comparison of the Xenopus genes associated with Sox17 ChIP-seq peaks to published human SOX17 ChIP-seq from human embryonic stem cell (hESC)-derived definitive endoderm (GSE61475; Tsankov et al., 2015). The extensive overlap between Xenopus and human Sox17-bound genes (*p<0.001 by hypergeometric test) indicates that Sox17 regulates an evolutionarily conserved GRN. The intersection only includes Xenopus genes that have human orthologs, unannotated Xenopus genes were excluded from the analysis. (E) GO term enrichment analysis of the 1004 Sox17-bound genes conserved between Xenopus and human by Fisher\u2019s exact test with p-values adjusted to 5% FDR for multiple testing correction.\n\nA comparison to published human ChIP-Seq data revealed that 20% of the Xenopus Sox17-bound genes were also SOX17-bound in hPSC-induced definitive endoderm (Figure 2\u2014figure supplement 2D; Tsankov et al., 2015). GO analysis of the conserved SOX17-bound genes show an enrichment for \u2018Tgfb receptor activity\u2019 and \u2018Bcat binding\u2019 (Figure 2\u2014figure supplement 2E), reinforcing the notion that functional interaction with the Nodal and Wnt pathways is a conserved feature of the Sox17-regulated endoderm GRN.\n\nIntersecting the RNA-seq and ChIP-seq data identified 315 genes associated with 609 Sox17-bound enhancers, which are likely to be direct transcriptional targets (Figure 2A). These putative direct targets had significantly enriched expression in the endoderm or dorsal mesendoderm (44%, 139/315 transcripts) (Figure 2C). Of the Sox17-bound and regulated genes, 197 genes (383 peaks) were positively regulated by Sox17 (down in Sox17MOs) including slc5a8, hnf1b, foxa1 and dhh (Figure 2E), all of which were previously suggested to be direct Sox17-targets. Sox17 negatively regulated 118 putative direct targets (up in Sox17MOs) including ectodermal genes (lhx5, foxi2 and tfap2a), endoderm-enriched Nodal pathway genes (nodal1, gdf3, gdf6 and mix1) and Wnt-regulated organizer genes (dkk and fst), suggesting direct transcriptional repression (Figure 2E). Interestingly,\u00a0~45% of peaks associated with Sox17-activated genes were also enriched for LIM-homeodomain binding sites, in contrast to peaks from Sox17-repressed genes which were enriched for Tbx or Pou motifs (Figure 2\u2014figure supplement 2B). This suggests that Sox17 may coordinately engage enhancers with other core endoderm GRN TFs and mediate activation or repression of target genes depending on the interacting TFs.\n\nThese analyses provide new insight into the endoderm GRN and reveal previously unappreciated roles for Sox17 in germ layer segregation and endoderm patterning involving functional interactions with the Nodal and Wnt pathways. These findings, together with our previous work demonstrating that Sox17-Bcat can physically interact in vitro (Sinner et al., 2007; Zorn et al., 1999) prompted us to their genomic interactions.\n\n### \u03b2-catenin directly regulates the endodermal transcriptome\n\nTo test the hypothesis that Sox17 and Bcat functionally interact in vivo, we set out to identify Bcat-regulated genes and compare these to the Sox17-regulated transcriptome. Injection of a well-characterized Bcat-MO (Heasman et al., 2000) resulted in (a) depletion of nuclear Bcat, (b) reduced expression of a transgenic Wnt-responsive reporter (Tran et al., 2010) and (c) the expected ventralized phenotype, which was rescued by co-injection of stabilized human Bcat mRNA (Figure 3\u2014figure supplement 1). Together, this confirms the efficacy and specificity of the Bcat knockdown. RNA-seq of control-MO and Bcat-MO depleted embryos at eight time points from blastula and gastrula stages (NF7-12) identified a total of 2568 Bcat-regulated genes (>2 fold change, FDR\u00a0<\u00a05%), 1321 of which were downregulated and 1247 upregulated in the Bcat-MO embryos (Figure 3A and Supplementary file 3). Remarkably, the Bcat-dependent genes encoded 251 TFs, (~20% of all the TFs in the genome), reinforcing the notion that Wnt/Bcat initiates a transcriptional cascade in the early embryo.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/58029/elife-58029-fig3-v3.jpg)\n\n**Figure 3.:** (A) Time course heatmap of Bcat-regulated transcripts. Differential expressed genes from a pairwise comparison of control-MO and Bcat-MO embryos (>2 FC, FDR\u00a0<\u00a05%) at each stage identified 2568 Bcat-regulated transcripts; 1321 downregulated and 1247 upregulated in Bcat-MO embryos. Key genes are color coded based on regional expression from (D). (B) Venn diagram intersecting Bcat-regulated genes with Bcat-bound genes (and associated peaks) from published X. tropicalis gastrula Bcat ChIP-seq data (Nakamura et al., 2016) identified 898 putative direct targets associated with 2616 peaks. Statistically significant intersections based on hypergeometric tests* p<0.001.* (C) Motif enrichment analysis of Bcat peaks by HOMER hypergeometric test. (D) Stacked bar graphs showing different patterns of enriched spatial expression based on RNA-seq of dissected gastrula tissues (Blitz et al., 2017). Distribution of expression patterns statistically different from all genes in the genome was determined by twosided Kolmogorov-Smirnov tests *p<0.01. (E) Genome browser views of representative genes showing the RNA-seq expression in control-MO and Bcat-MO embryos and Bcat and Ep300 ChIPseq tracks.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/58029/elife-58029-fig3-figsupp1-v3.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) Immunostaining of Tg(WntREs:dEGFP)Vlem Xenopus tropicalis gastrula embryos show the loss of nuclear Bcat and GFP expression from the Wnt-reporter transgene in Bcat-MO embryos demonstrate effective knockdown. (B\u2013C) Co-injection of RNA encoding a human S37A-stabilized Bcat recues the Bcat-MO-ventralized phenotype. In situ hybridization of gastrula (B) and tailbud embryos (C). In Bcat-MO gastrula, fst and admp are downregulated in the dorsal organizer, whereas wnt8a and ventx3.1 are upregulated consistent with a ventralized phenotype. (C) In situ hybridization of markers for the\u00a0liver (nr1h5), stomach, lung, intestine and pharynx (osr1 and islet1) show that co-injection of human S37A-stabilized Bcat RNA rescues the ventralized phenotype and disrupted gut development in Bcat-MO tailbud embryos.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/58029/elife-58029-fig3-figsupp2-v3.jpg)\n\n**Figure 3\u2014figure supplement 2.:** (A) De-novo motif analysis of Bcat peaks associated with different groups of Bcat-regulated genes, based on HOMER hypergeometric test.\u00a0X. tropicalis stage 10.5 gastrula Bcat ChIP-Seq dataset from GSE72657 (Nakamura et al., 2016). (B) De-novo motif analysis of Bcat-bound peaks from St.10+ Bcat ChIP-Seq data from Gentsch et al., 2019. (C) And of Bcat-3xFlag ChIP-Seq peaks from X. laevis stage 11.5 gastrula from GSE77365, Kjolby and Harland, 2017; show a similar enrichment of SOX motifs based on HOMER hypergeometric test. (D) Comparison of differentially expressed Bcat-regulated genes in this study with other recent genomic analysis of gastrula-stage Wnt targets (Ding et al., 2017; Nakamura et al., 2016; Kjolby and Harland, 2017) shows significant overlap, *p<0.001 by hypergeometric enrichment test. (E) GO enrichment analysis of Bcat-bound and -regulated genes bases on Fisher\u2019s exact test with p-values adjusted to 5% FDR for multiple testing correction.\n\nIntersecting the Bcat-MO RNA-seq data with previously published Bcat ChIP-seq data from Xenopus tropicalis gastrula (Nakamura et al., 2016) identified 898 putative direct target genes associated with 2616 Bcat-bound CRMs (Supplementary file 4). In the Bcat-MO,\u00a0546 genes were downregulated , and 352 genes had increased expression in Bcat-MO embryos (Figure 3B). These included almost all the previously known Bcat targets in early Xenopus embryos and had extensive overlap with other recent genomic analysis of Wnt targets in the Xenopus gastrula (Ding et al., 2017; Kjolby and Harland, 2017; Nakamura et al., 2016; Figure 3\u2014figure supplement 2D). Control Bcat ChIP-qPCR of Bcat-MO embryos showed reduced binding to near background levels confirming a robust knockdown (Figure 2\u2014figure supplement 1E).\n\nAs expected, many of the positively regulated Bcat targets had enriched expression in the dorsal mesoderm (Figure 3D) including most known organizer genes such as cer1, chrd, dkk1, frzb, fst and gsc. In contrast,\u00a0~30% of Bcat-bound genes with increased expression in the early BcatMO embryos (NF7-9) were enriched for ectoderm-specific transcripts, consistent with the expansion of ectoderm and loss of neural tissue in ventralized embryos (Figure 3D). We also identified many direct Bcat targets that are likely to be regulated by zygotic Wnt8, (Kjolby and Harland, 2017; Nakamura et al., 2016) including sp5, axin2, cdx1/2, fzd10, msgrn1 and eight hox genes, all of which were downregulated in Bcat-MOs (Figure 3A,E). A number of zygotic Wnt-targets with enriched expression in the ventral mesoderm were components of BMP pathway including; bambi, bmp7, id2, msx1, smad7, szl, ventx1, and ventx3 (collectively known as the BMP synexpression group) (von Bubnoff et al., 2005). Most of these genes are known to be directly activated by both Bmp4/Smad1 and zWnt8/Bcat (Itasaki and Hoppler, 2010; Stevens et al., 2017) but were upregulated, rather than downregulated, in Bcat-depleted embryos, likely due to the increase in BMP/zWnt8 signaling in ventralized embryos.\n\nMost importantly, almost 200 Bcat-bound and -regulated genes had endoderm enriched expression including most of the core endoderm TFs; sox17, foxa, eomes, gata4, mix1 and mixer (Figure 3D and Supplementary file 3). Thus, contrary to the prevailing view that Bcat promotes endoderm fate primarily by activating Nodal ligand expression (Blythe et al., 2010; Hyde and Old, 2000), we find that Wnt/Bcat also directly regulates the transcription of many endodermal genes. Surprisingly, de novo motif analysis showed that the Bcat-bound peaks were more enriched for Sox than canonical Tcf motifs, 2nd versus 5th ranked, respectively (Figure 3C; Nakamura et al., 2016). Consistent with this, analysis of other previously published Bcat ChIP-Seq datsets in X. tropicalis gastrula embryos (Gentsch et al., 2019) and Flag-tagged Bcat ChIP-Seq in X. laevis gastrula (Kjolby and Harland, 2017) also report a high enrichment for Sox and Tcf motifs (Figure 3\u2014figure supplement 2A\u2013D). Together these data support the hypothesis that Sox17 and Bcat coregulate endodermal transcription.\n\n### Sox17 and \u03b2-catenin co-occupy endoderm enhancers\n\nIntersection of the ChIP-seq datasets identified 3956 genomic loci co-occupied by both Sox17 and Bcat, and these had epigenetic signatures of active enhancers (Figure 4A,B). This represents a third of all Sox17 genomic binding in the gastrula. Comparison of the Sox17-MO and Bcat-MO RNA-seq datasets identified 415 transcripts that were regulated by both Sox17 and Bcat; comprising of\u00a0~40% of the Sox17-regulated and\u00a0~15% of the Bcat-regulated transcriptome (Figure 4A). A similar high overlap between Sox17 and Bcat genomic binding was also observed in another independent Bcat ChIP-seq dataset (Figure 4\u2014figure supplement 1B; Gentsch et al., 2019). This suggests that co-regulation with Wnt/Bcat is a major feature of the Sox17-regulated endoderm GRN. Analysis of publicly available ChIP-seq revealed that Sox17 and Bcat-bound loci are also enriched for other endodermal TFs including VegT, Foxa4, Smad1 and Smad2 (Figure 4\u2014figure supplement 1C; Charney et al., 2017a; Gentsch et al., 2019), consistent with recent reports that the combinatorial activity of multiple TFs at endodermal super-enhancers (Paraiso et al., 2019) coordinate endoderm specification.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/58029/elife-58029-fig4-v3.jpg)\n\n**Figure 4.:** (A) Eighty-four genes (191 Peaks) are cobound and coregulated by Sox17 and Bcat. Venn diagram show that 415 genes are regulated by both Sox17 and Bcat (left), whereas 2411 genes (3956 peaks) are bound by both Sox17 and Bcat. Gene intersections are significant based on hypergeometric tests, *p<0.001. (B) Density plots show that Sox17 and Bcat cobound peaks are enriched for enhancer associated epigenetic marks: Ep300, H3K4me1 and H3K27Ac and RNA pol II. (C) Regional enrichment of all subsets of enhancers cobound and coregulated by Sox17 and Bcat. (D) A representative ChIP-reChIP experiment showing that Sox17 and Bcat coocupy all the test CRMs (six1, dkk1, gli1 and lhx5) in the same cells, in contrast to the gtse1 locus, which is bound only by Bcat. (E) Genome browser views of representative genes showing peak overlap of Sox17, Bcat and Ep300 ChIP-Seq tracks.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/58029/elife-58029-fig4-figsupp1-v3.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A) De-novo motif analysis of Sox17 and Bcat bound and/or regulated peaks by HOMER hypergeometric tests. (B) Overlap of Bcat ChIP-Seq datasets from Nakamura et al., 2016 and Gentsch et al., 2019 with Sox17 ChIP-Seq dataset generated in this study. (C) Density plots show that Sox17 and Bcat-cobound peaks are also enriched for binding of other endodermal TFs: Foxa4 GSE85273, Charney et al., 2017b; Smad1, Smad2, Sox3 and VegT (GSE113186, Gentsch et al., 2019). (D) GO enrichment analysis of gene cobound and cobound/coregulated by Sox17 and Bcat peaks bases on Fisher\u2019s exact test with p-values adjusted to 5% FDR for multiple testing correction.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/58029/elife-58029-fig4-figsupp2-v3.jpg)\n\n**Figure 4\u2014figure supplement 2.:** (A\u2013C) Violin plots show the frequency of Sox and Tcf DNA-binding sites per peak in (A) exclusively Bcat-bound and -regulated peaks (B) exclusively Sox17-bound and -regulated peaks and (C) Sox17/Bcat co-occupied and coregulated peaks. The significance of motif frequency in wild-type test sequences relative to random \u2018shuffled\u2019 background was determined by Fisher exact test (*p<0.05, **p<0.005, ns; not significant). Each wild-type test sequence was randomly scrambled while maintaining dinucleotide frequency to generate \u2018shuffled\u2019 sequences. (D) log2 fold enrichment of Sox and Tcf motif frequencies over random for the three peak categories shown in A-C. (E) Stacked bar charts showing the distribution of Sox and Tcf binding sites in the three groups of enhancers compared to a random set of genomic regions. Distribution of motifs was compared between each group of enhancers and random by two-sided Kolmogorov-Smirnov tests.\n\nIn total, 84 genes (191 Peaks) were bound and regulated by both Sox17 and Bcat (Figure 4A,B). This is likely to be an underestimation of the number of direct coregulated genes, as these had to pass a stringent thresholding of four independent statistical tests to be included in this list. A comprehensive motif analysis of the 191 co-bound and coregulated peaks using the CIS-BP database (Lambert et al., 2019) revealed that 53% (101/191) of the peaks contained both Sox17 and Tcf DNA-binding motifs (e.g. dkk1, lhx5 and osr1) compared to 31% in background genomic sequences (Figure 4\u2014figure supplement 2E and Supplementary file 5). In contrast 24% (46/191) of the peaks had Sox motifs but no Tcf sites (e.g. six1), suggesting that Bcat might be recruited to these loci independent of Tcfs. Only 3/191 peaks had Tcf but no Sox motifs. Moreover, co-occupied enhancers often contained multiple Sox17 motifs (>5), which was also significantly enriched over random (Figure 4\u2014figure supplement 2). In addition, most individual genes were associated with multiple Sox17 and Bcat co-occupied enhancers, suggesting that combinatorial binding and integration of several CRMs is crucial to control lineage-specific transcription.\n\nSince the ChIP-seq experiments were performed on whole embryos, it was possible that Sox17 and Bcat chromatin binding might occur in different cell populations. To test whether Sox17 and Bcat bound the same enhancers in the same cells we performed ChIP-reChIP experiments. First anti-Bcat ChIP was performed on 500 gastrulae. DNA eluted from the first ChIP was then re-precipitated with either anti-Sox17 or a negative control IgG antibody. All four loci tested by ChIP-reChIP qPCR (six1, dkk1, lhx5 and gli1) showed enrichment compared to IgG demonstrating that these genomic loci (~150 bp in length) were simultaneously bound by Sox17 and Bcat in endodermal cells. In contrast, a negative control locus gtse1 which is bound by Bcat but not Sox17 was not enriched in the ChIP-reChIP experiment (Figure 4D).\n\nThe 84 co-bound and coregulated genes fell into four regulatory categories (Figure 4C,E); 32/84 were activated by both Sox17 and Bcat (e.g. six1 and osr1) and tended to have endoderm enriched expression, 27/84 were activated by Bcat but repressed by Sox17 (e.g. dkk1) and these tended to be enriched in the organizer mesendoderm, 19/84 were positively regulated by Sox17 and negatively regulated by Bcat (up in the Bcat MO) and finally 6/84 were negatively regulated by both Sox17 and Bcat. The observation that Bcat positively regulated most of these genes (59/84, 70%) was consistent with its known role in transcriptional activation. Sox17 positively regulated 60% of targets and repressed 40% of targets, suggesting context-dependent activity. For further analysis, we focused on the two major regulatory groups; genes/enhancers activated by both Sox17/Bcat and those activated by Bcat but repressed by Sox17 (Figure 4E).\n\n### Sox17 and \u03b2-catenin coordinate spatial expression domains in the embryo\n\nIt was possible that the overlap in Sox17- and Bcat-regulated genes was largely due to the Sox17-Wnt feedback loop where Bcat is required for robust sox17 expression and Sox17, in turn, regulates the expression of Wnt-pathway components. While this is likely to be part of the mechanism, we directly tested the functional necessity for both Sox17 and Bcat in epistasis experiments, asking whether injection of sox17 mRNA could rescue coregulated genes in Bcat-depleted embryos and vice versa. Co-injection of mSox17 mRNA could not rescue the normal expression patterns of six1, osr1, lhx5 or dkk1 in Bcat-MO embryos, but it did rescue foxa1 expression (Figure 5). This demonstrates that reduced Sox17 in Bcat-depleted embryos cannot account for the disrupted six1, osr1, lhx5 or dkk1 expression, but it can account for the reduced foxa1 expression. Similarly, co-injection of stabilized (ca)Bcat mRNA rescued the normal expression of foxa1 but not six1, osr1, lhx5 or dkk1 in Sox17-morphants indicating that the defects in their expression were not simply due to reduced Wnt signaling (Figure 5).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/58029/elife-58029-fig5-v3.jpg)\n\n**Figure 5.:** In situ hybridization of gastrula embryos (dorsal right) injected with sox17-MO or bcat-MO, some of which were co-injected with RNA encoding either mSox17 or a human S37A stabilized Bcat. The genes osr1, six1 and foxa1 are activated by both Sox17 and Bcat, whereas dkk1 and lhx5 are activated by Bcat but repressed by Sox17. Co-injection of mSox17 cannot rescue normal expression in Bcat-MOs, nor can hBcat S37A RNA rescue Sox17-MOs indicating that both Sox17 and Bcat required for normal expression.\n\nThese experiments also show that Sox17 and Bcat coordinate spatial gene expression in the embryo in a complex gene-specific manner. Wnt/Bcat stimulates expression of lhx5 in the ectoderm, but Sox17 represses this activity in the presumptive endoderm. Sox17 and Bcat are both required for robust expression of osr1 and six1 in the endoderm and dorsal mesendoderm respectively. In contrast, Sox17 normally suppresses Bcat-activated expression of dkk1 in the deep endoderm. Together, with their co-occupancy at CRMs, these data show that Sox17 and Bcat are both required to directly regulate transcription in discrete spatial domains.\n\n### Sox17 and Bcat synergistically regulate transcription of endodermal enhancers\n\nTo examine how Sox17 and Bcat directly regulate endodermal transcription, we first selected four exemplar co-occupied enhancers: (a) a proximal six1 enhancer located \u22121 kb from the TSS, (b) a proximal dkk1 enhancer located \u22121.6 kb from its TSS, (c) a distal \u22127.5 kb dkk1 enhancer and (d) a \u22121 kb lhx5 enhancer (Supplementary file 6). We focused most of our analysis on six1 and dkk1 which are both expressed in the dorsal mesendoderm but have opposite regulation. Sox17-Bcat promotes six1, whilst Sox17 represses Bcat activation of dkk1.\n\nThe \u22121 kb six1 enhancer is evolutionarily conserved from Xenopus to human containing three Sox-binding sites but no predicted Tcf-binding sites (Figure 6B). In mouse, this enhancer can drive transgenic expression in the embryonic gut tube, although the TFs that modulate it were previously unknown (Sato et al., 2012). Analysis of published ChIP-seq data indicate that, like in Xenopus, the human SIX1 CRM is also bound by SOX17 in human PSC-derived endoderm (Figure 6\u2014figure supplement 1A; Tsankov et al., 2015). Mammalian Dkk1 is also known to be a direct Bcat-Tcf target (Niida et al., 2004), but the enhancers that regulate its expression in the gastrula had been previously uncharacterized. Unlike the \u22121 kb six1 enhancer, the \u22121.6 kb and \u22127.5 dkk1 enhancers as well as the \u22121 kb lhx5 enhancer are predicted to harbor both Tcf and Sox DNA-binding sites (Figure 6B, Figure 6\u2014figure supplement 2 and Supplementary file 6).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/58029/elife-58029-fig6-v3.jpg)\n\n**Figure 6.:** (A) Experimental design. (B) IGV genome browser tracks showing Sox17 and Bcat chromatin binding and schematic of reporter constructs showing the predicted Sox17 and Tcf DNA-binding sites in the \u22121 kb six1 and \u22121.6 kb dkk1 enhancers (C\u2013F) Luciferase assay of (C) wildtype (wt) \u22121 kb six1:luc, (D) wt versus DSox-site mutant 1 kb six1:luc, (E) wt \u22121.6 kb dkk1:luc and (F) wt versus DSox-site and DTcf-site mutant \u22121.6 kb dkk1:luc reporters injected in different tissue with the indicated MOs and/or mRNAs. Histograms show mean luciferase activity\u00a0\u00b1\u00a0standard deviation, *p<0.05 in pairwise Student T-tests.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/58029/elife-58029-fig6-figsupp1-v3.jpg)\n\n**Figure 6\u2014figure supplement 1.:** (A) IGV track showing evolutionarily conserved SIX1 peak in human DE (Tsankov et al., 2015). (B, C) IGV tracks and luciferase construct schematic showing predicted Sox17 DNA-binding sites but no detectable Tcf sites at the +7 kb osr1 and +3 kb igf3 enhancers, respectively. (D) Luciferase assay of \u22121 kb SIX1 enhancer (E, F) Luciferase reporter assays of the construct shown in B and C, respectively. Histograms show mean luciferase activity\u00a0\u00b1\u00a0standard deviation, *p<0.05 in pairwise Student T-tests.\n\n![Figure 6\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/58029/elife-58029-fig6-figsupp2-v3.jpg)\n\n**Figure 6\u2014figure supplement 2.:** (A\u2013B) IGV track and schematic of luciferase constructs showing the predicted Sox17 and Tcf DNA-binding sites at the Sox17/Bcat co-occupied (A) \u22127.5 kb dkk1 and (B) \u22121 kb lhx5 enhancers. (C\u2013E) luciferase assay of (C) the wildtype \u22127.5 kb dkk:luc reporter, (D) wildtype \u22121 kb lhx5:luc reporter and (E) wildtype versus DSox-site and DTcf-site mutant \u22127.5 kb dkk1:luc reporters injected in different tissues with the indicated MOs and/or mRNAs. Sox17 represses Bcat-Tcf activation of the dkk1 and lhx5 enhancers. Histograms show mean luciferase activity\u00a0\u00b1\u00a0standard deviation, *p<0.05 in pairwise Student T-tests.\n\nWe cloned each of these CRMs into luciferase (luc) reporter constructs and tested whether they require Sox17 and Bcat for enhancer activity in Xenopus embryos (Figure 6A). Targeted microinjection into different cells of 32-cell-stage Xenopus embryos showed that all the reporters recapitulated the endogenous spatial expression indicating that they are bona fide enhancers. The six1 and dkk1 reporters were both active in the dorsal-anterior endoderm, but not the ventral endoderm or ectoderm, whereas the lhx5 reporter was only active in the dorsal ectoderm (Figure 6C,E and Figure 6\u2014figure supplement 2). Depletion of endogenous Sox17 or Bcat abolished expression of the \u22121six1:luc reporter and this was rescued by adding back mSox17 to Sox17-MO or by adding back caBcat mRNA to Bcat-MO embryos (Figure 6C). However, co-injection of mSox17 could not rescue expression in Bcat-MO embryos and nor could caBcat RNA rescue expression in Sox17-MOs (Figure 6C). These epistasis experiments indicate that both Sox17 and Bcat are required for activation of the \u22121 kb six1 enhancer. The human SIX1:luc construct exhibited identical activity to the Xenopus six1:luc enhancer (Figure 6\u2014figure supplement 1D). In contrast, in the case of the \u22121.6 kb dkk1, \u22127.5 kb dkk1 and the \u22121 kb lhx5:luc constructs, depletion of Bcat abrogated reporter activity, whereas Sox17 depletion resulted in significantly elevated reporter activity, indicating that Sox17 restricts Bcat-mediated transactivation at the dkk1 and lhx5 enhancers (Figure 6E, and Figure 6\u2014figure supplement 2C,D).\n\nTo test whether Sox17 and Bcat were sufficient to regulate the enhancers, we assayed their activity in ventral ectoderm tissue which does not express endogenous Sox17 and has low Wnt/Bcat activity. Injection of mSox17 but not caBcat mRNA was sufficient to stimulate the \u22121 kb six1:luc and human SIX1:luc reporters in the ectoderm, but co-injection of caBcat along with mSox17 synergistically activated the reporters (Figure 6C and Figure 6\u2014figure supplement 1D). On the other hand, caBcat but not mSox17 was able to activate the dkk1 and lhx5 reporters in ventral ectoderm, and co-injection of mSox17 suppressed the ability of caBcat to stimulate these reporters (Figure 6E and Figure 6\u2014figure supplement 2C,D), consistent with the endogenous regulation (Figure 5). The ability of Sox17 to activate the six1 reporter or suppress Bcat-induced activation of the dkk1 and lhx5 reporters required the DNA-binding function of Sox17. A M76A point mutation in mSox17, known to disrupt the DNA-binding HMG domain (Sinner et al., 2007) significantly reduced Sox17\u2019s ability to activate the six1 or repress the dkk1 reporter activity, respectively (Figure 6C,E and Figure 6\u2014figure supplement 2C,D).\n\n### Sox17 and Bcat appear to stimulate some enhancers independent of Tcfs\n\nThe six1 enhancer is predicted to have only Sox sites with no evidence of Tcf-binding sites, whereas the dkk1 and lhx5 enhancers have both Sox17 and Tcf sites. To test whether or not Tcfs regulate these enhancers, we injected a Tcf7l1-VP16 fusion construct which constitutively activates Tcf-target gene transcription (Darken and Wilson, 2001). This had little to no impact on the six1 reporter, but robustly activated the dkk1 and lhx5 reporters in ventral ectoderm (Figure 6D,F and Figure 6\u2014figure supplement 2D,E). We next mutated the Sox17 and Tcf-binding sites in the six1 and dkk1 enhancers and examined the impact on Sox17, Bcat and Tcf regulation. Loss of the Sox17 sites abolished normal and Sox17/Bcat-induced expression of the six1:luc reporter (Figure 6D). In contrast, mutation of the Sox sites in the dkk1 enhancers resulted in elevated reporter activity consistent with Sox17-mediated repression (Figure 6F and Figure 6\u2014figure supplement 2E). Deletion of the Tcf sites in the dkk1 enhancers abolished expression in the dorsal mesendoderm as well as Bcat or Tcf7l1-VP16-induced activation in the ventral ectoderm, consistent with Bcat-Tcf complexes activating these enhancers (Figure 6F and Figure 6\u2014figure supplement 2E).\n\nTo examine the generality of the apparent Tcf-independent regulation of six1, we identified two additional enhancers with similar characteristics: an osr1 enhancer +7 kb downstream of its TSS (Figure 6\u2014figure supplement 1B) and a +3 kb igf3 enhancer (Figure 6\u2014figure supplement 1B,C and Supplementary file 6). Both these enhancers have no evidence of Tcf binding sites and they were both synergistically activated by Sox17 and Bcat, whereas co-injection of Tcf7l1-VP16 failed to activate either reporter (Figure 6\u2014figure supplement 1E,F). From these collective data, we conclude that Sox17 and Bcat synergistically can activate the six, osr1 and igf3 enhancers, likely independent of Tcfs. In contrast, the dkk1 and lhx5 enhancers are activated through a Bcat/Tcf transcription mechanism, with Sox17 spatially restricting Bcat/Tcf activity to maintain cell-type-specific gene expression (Figure 7).\n\n![Figure 7.](https://cdn.elifesciences.org/articles/58029/elife-58029-fig7-v3.jpg)\n\n**Figure 7.:** Differential engagement of Sox17, Bcat and Tcfs on enhancers in different cells modulates spatial expression domains.\u00a0(A) In ectoderm cells lacking Sox17 (and Nodal signaling), ectoderm-specific gene lhx5 is activated through a Bcat/Tcf dependent mechanism while six1 and dkk1 are not transcribed. (B-C) Sox17 is expressed throughout the endoderm and dorsal mesendoderm, while Bcat activity is the higher in dorsal mesendoderm than deep endoderm. (B) In the dorsal region, Sox17 and Bcat synergistically coactivate six1 in the absence of Tcf, whereas Sox17 exerts a repressive influence on Bcat/Tcf-activation of lhx5 and dkk1. We postulate, however, that in the dorsal region Sox17-mediated repression is insufficient to overcome Bcat/Tcf activation of dkk1. (C) In deep endoderm cells where Bcat activity is lower, Sox17-mediated repression of Bcat/Tcf is sufficient to repress dkk1 and lhx5 transcription, but Bcat activity is not high enough to activate six1.\n\n## Discussion\n\n### Overview of findings\n\nSox17 is a key regulator of vertebrate endoderm development and morphogenesis, yet surprisingly, the transcriptional program that it controls has been poorly characterized until now. Here, we defined the Sox17-regulated GRN in Xenopus gastrulae, which includes many conserved SOX17 genomic targets in PSC-derived human definitive endoderm. We show that in addition to acting atop a transcriptional hierarchy promoting endoderm differentiation, Sox17 has previously unappreciated roles in endoderm patterning and germ layer segregation. We demonstrate that functional interactions with the canonical Wnt signaling pathway is a major feature of the Sox17-regulated GRN. Over a third of all Bcat and Sox17 genomic binding events in the gastrula occur at the same enhancers, where they coordinately regulate spatial gene expression in the embryo. Our data suggest that Sox17 and Bcat synergistically activate a subset of endodermal enhancers apparently independent of Tcfs, whereas at other enhancers Sox17-regulated Bcat-Tcf mediated transcriptional activation (either activating or inhibiting). Together these results provide novel insights into the establishment of the endoderm GRN and suggest a new paradigm where Sox17 acts as a tissue-specific modifier of Wnt-signaling responses.\n\n### The Sox17-Bcat-regulated endodermal GRN\n\nOur genomic study revealed an extensive overlap between Sox17- and Bcat-regulated genes. Together with previous work (Charney et al., 2017b; Zorn and Wells, 2009), this suggests that Sox17 and the other core endoderm TFs interact with Wnt and Nodal in a series of positive and negative feedback loops to control germ layer segregation and modulate spatial gene expression. Temporally mesendoderm development is initiated by maternal VegT and Bcat, which together initiate Nodal signaling. We showed that in addition to its known role in activating transcription of endoderm-inducing nodal ligands (Blythe et al., 2010; Hyde and Old, 2000), Bcat directly promotes the expression of many endodermal genes including most of the core endoderm TFs; sox17, eomes, foxa, gata4/5, mix1 and mixer. Sox17 appears to function after initial Nodal signaling in the mid-gastrula stage by promoting expression of endoderm GRN components such as foxa1 and gata4, whilst negatively regulating the expression of some nodal and mix/bix genes. Thus on one hand, Sox17 promotes endodermal fate, and on the other, it restrains excessive Nodal activity. There is precedence for Sox factors influencing nodal ligand transcription. Maternal Sox3, localized in the blastula ectoderm, directly binds the nodal5/6 enhancers to repress Bcat-stimulated transcription, whereas vegetally localized maternal Sox7 enhances nodal5/6 expression in the vegetal cells (Zhang and Klymkowsky, 2007). This suggests a potential of a dynamic handoff model where different Sox TFs might co-occupy the same enhancers with Bcat in different cells to activate or repress transcription in a context-dependent manner. In this model, we predict that in the early blastula Bcat-bound enhancers might be co-occupied by Sox3, Sox7 and/or Tcfs and it is not until the mid-gastrula that co-occupancy of Sox17 and Bcat would be observed.\n\nOur data demonstrate that Sox17-Bcat interactions regulate spatial gene expression in the embryo (Figure 7). Sox17-Bcat interact at some enhancers like six1 and igf3 to promote endoderm transcription. In addition, Sox17 also has a key role in repressing alternative lineages in the vegetal cells, similar to the maternal TFs Foxh1, Vegt and Otx1 (Chiu et al., 2014; Paraiso et al., 2019). For example, Sox17 represses Bcat/Tcf-stimulated expression of the ectoderm specifying TF lhx5 (Houston and Wylie, 2003). Sox17-Bcat interactions also impact spatial expression within the endoderm. Sox17 inhibits the Bcat-Tcf stimulation of the dkk1 enhancer in the deep endoderm, but in the dorsal mesendoderm where Bcat activity is higher, Sox17 appears insufficient to suppress dkk1. The finding that six1 and dkk1 are under opposite regulation by Sox17 and Bcat despite having very similar expression patterns warrants future analysis of the temporal-spatial dynamics in Bcat, Tcf and Sox17 genomic occupancy in dorsal vs ventral cells over time.\n\n### DNA binding specificity of SOX TFs\n\nAn important consideration is how Sox17 selects specific target enhancers. In DNA-binding experiments, all Sox TFs bind to variants of the DNA sequence 5\u2019-(A/T)(A/T)CAA(A/T)3\u2019, which is similar but distinct from Tcf DNA-binding sites 5\u2019-T(A/T)(A/T)CAAG 3\u2019 (Hou et al., 2017; She and Yang, 2015). SOX TFs can act either as monomers or heterodimers with different cell-type specific cofactors, which in turn impact their DNA-binding affinity and ability to activate or repress transcription (Bernard and Harley, 2010; Hou et al., 2017). For example, in PSCs, Oct4-Sox2 heterodimers promote pluripotency and bind to distinct sites than those bound by Oct4-Sox17 complexes that initiate mesendoderm development (Aksoy et al., 2013). It is, therefore, likely, that Sox17 and Bcat cooperate with other TFs to provide lineage specificity to Wnt-responsive transcription during germ layer segregation. Indeed, motif analysis and comparison to other ChIP-seq datasets revealed that Sox17-bound loci were also enriched for Tbx, Gata, Fox and homeodomain motifs suggesting that in addition to regulating each other\u2019s expression, the core endoderm TFs act together in combinatorial manner, perhaps to establish endodermal super enhancers crucial for downstream lineage specification (Paraiso et al., 2019). Interestingly, enhancers that were negatively regulated by Sox17 were enriched for Tbx and Oct motifs whereas enhancers activated by Sox17 were enriched for homeodomain motifs. This suggests that Sox17 interactions with distinct lineage-specific TFs might modulate context-specific transcriptional responses. This is a particularly attractive hypothesis since as monomers Sox TFs bind DNA with low affinity and they are thought to gain DNA-binding specificity by interacting with other TFs (Hou et al., 2017). In the future, it will be important to identify and integrate the genomic targets of all the core endoderm-specifying TFs and examine how combinatorial enhancer binding is integrated into a unified endodermal GRN.\n\n### Sox-Bcat-Tcf interactions on chromatin\n\nMany Sox proteins, including Sox17, can bind to recombinant Bcat and Tcfs in vitro and modulate Wnt/Bcat-stimulated transcription of synthetic reporters assays with multimerized Tcf-sites (pTOPFlash) (Sinner et al., 2007; Zorn et al., 1999). While a number of models have been proposed to explain how Sox factors might impact Bcat activity, (Kormish et al., 2010; She and Yang, 2015; Tan et al., 2019), in most cases the in vivo biological relevance of these interactions was unclear. Although the resolution of ChIP-reChIP assays only allow us to demonstrate that Sox17 and Bcat bind chromatin within 150 bp of each other, taken together with published in vitro data, our results suggest that Sox-Bcat or Sox-Bcat-Tcf transcriptional complexes can be assembled on enhancers in vivo.\n\nAt enhancers like six1, igf3 and +7 kb osr1, where Sox17 and Bcat synergistically stimulate transcription, we postulate that Sox17 and Bcat recruit Ep300/Cbp to chromatin, analogous to Tcf-Bcat in canonical Wnt-signaling. Consistent with this, structure-function studies have found that a conserved 10 amino-acid domain (VDXXEFEQYL) in the Sox17 C-terminus is required for both Bcat-binding and transcriptional transactivation (Sinner et al., 2004). On the other hand, most Bcat and Sox17 co-occupied enhancers contain multiple Sox and Tcf sites clustered within 50 bp, suggesting that Sox17 and Tcf, together with Bcat and scaffolding proteins like Bcl9, (Gammons and Bienz, 2018; Masuda and Ishitani, 2017) might assemble higher-order multiprotein complexes facilitating Wnt-mediated transcription. Both Soxs and Tcfs are HMG-domain containing TFs, capable of binding to the minor groove of DNA and inducing DNA bending. This could further indicate that they are brought into close spatial proximity to establish the assembly of functional enhanceosomes, despite the distance between their binding sites on linear DNA (Bernard and Harley, 2010; Hou et al., 2017).\n\nThe possibility of Sox-Bcat-Tcf ternary complexes raises the question of competitive vs cooperative DNA binding that, in turn, could influence transcriptional repression versus activation. For example, Sox17 might stabilize the formation of Bcat-Tcf-Ep300 complexes or destabilize the binding of co-repressors such as Tle and Hdac to promote transcription (e.g. osr1). To negatively regulate Bcat-Tcf activity (e.g.\u00a0dkk1) Sox17 might destabilize Bcat-Tcf-Ep300-DNA or stabilize Tcf-Tle complexes. This idea is supported by work in mouse cortical neuron progenitors where Sox2 binds within 4\u201310 bp of Tcf/Lef sites and recruits Tle/Gro corepressors to repress Tcf/Bcatmediated Ccnd1 expression (Hagey and Muhr, 2014). Future biochemical studies will need to determine if and how Sox-Bcat-Tcf complexes assemble on DNA.\n\n### Broader implications\n\nAlthough a growing number of non-Tcf Bcat-binding TFs have been reported, (Gammons and Bienz, 2018; Notani et al., 2010; Trompouki et al., 2011), how these impact the genomic specificity of Wnt-responsive transcription has not been well characterized and the idea of Tcf-independent Wnt transcription remains controversial (Doumpas et al., 2019; Schuijers et al., 2014). Our data suggest that in the gastrula endoderm, Sox17 might influence Bcat recruitment to chromatin to control cell-type-specific Wnt-responsive transcription, and that in some cases, this occurs independent of Tcfs. Given that there are 20 Sox TFs encoded in the vertebrate genome with most cell types expressing at least one, it is possible that Sox factors are widespread and previously unappreciated accessory effectors of Bcat that finetune Wnt-regulated transcription across many biological contexts.\n\n## Materials and methods\n\n### Xenopus embryo manipulations\n\nXenopus laevis and Xenopus tropicalis were purchased from Nasco or the National Xenopus Resource (RRID:SCR_013731) and experiments were performed according to CCHMC IACUC approved protocols. Embryos were staged according to Nieuwkoop and Faber, 1967. Microinjection and embryo culture were performed as previously described (Stevens et al., 2017). Antisense morpholino oligos (MO; GeneTools, LLC) were as follows:\n\nTotal amounts of MO injected into X.\u00a0tropicalis embryos were as follows: 2 ng Bcat MO, 8 ng sox17 MO (4 ng each a+b1/2 MO), 8 ng standard control MO.\n\nSynthetic mRNA for injections was generated using the Message Machine SP6 transcription kit (Thermo Fisher AM1340) using the following plasmids: pCS2+ human B-catenin S37A caBCAT (Zorn et al., 1999); pcDNA6-V5-mouse Sox17 (mSox17) and pcDNA6-V5-Sox17 M76A (Sinner et al., 2007); pCS2+ Tcf7l1:VP16 (formerly XTcf3:VP16) (Darken and Wilson, 2001).\n\n### In situ hybridization\n\nIn situ hybridization of Xenopus tropicalis embryos was performed as described (Sive, 2000) with the following minor modifications. After overnight fixation at 4\u00b0C in MEMFA, embryos were washed (2 \u00d7 10 min) in MEMFA buffer without the formaldehyde and stored in 100% ethanol at \u221220\u00b0C. Embryos were serially rehydrated to PBS+0.01% Tween-20 and bisected through the dorsal-ventral axis in on 2% agarose-coated dishes using a fine razor blade (Electron Microscopy Services 72003\u201301), followed by Proteinase K (ThermoFisher AM2548) treatment at 1 \u00b5g/mL for 10 min. TEA/acetic anhydride steps were skipped on day\u00a01. The RNAse A step was 0.25 \u00b5g/mL for 5 min on day 2; and finally the anti-DIG-alkaline phosphatase antibody (Sigma 11093274910) was used at a 1:6000 dilution in MAB buffer + 20% heat-inactivated lamb serum + 2% blocking reagent (Sigma 11096176001) on day2/3. Anti-sense DIG labeled in situ probes were generated using linearized cDNA templates with the 10X DIG RNA labeling mix (Sigma 11277073910) according to manufacturer\u2019s instructions. Details on plasmids used for probe synthesis are listed in Supplementary file 7.\n\n### Antibodies and immunostaining\n\nAffinity purified anti-Xenopus Sox17 rabbit polyclonal antibodies were generated by Bethyl labs to the Sox17a/b N-terminal, Sox17b C-terminal and Sox17a C-terminal with the peptides illustrated in Figure 2\u2014figure supplement 1. Antibodies were validated by immunostaining, western blot, immunoprecipitation and ChIP. Immunoreactivity was not detected in Sox17-deficient tissue and specifically competed by addition of the target peptide to reactions. In preliminary ChIP-qPCR experiments, the pan-Sox17 and Sox17bC-terminal antibodies bound to the same loci, but the Sox17bC-terminal was more efficient and was used for ChIP-seq.\n\nFor Xenopus immunofluorescence, embryos were fixed in ice-cold 100 mM NaCl, 100 mM HEPES (pH7.5), 3.7% methanol-free paraformaldehyde for 1.5 hr at 4\u00b0C and then dehydrated directly into ice-cold Dent\u2019s post-fixative (80%Methanol/20% DMSO) and stored at \u221220\u00b0C. Embryos were serially rehydrated on ice into PBS+0.1% TritonX-100 (PBSTr) and bisected through the dorsal-ventral axis with a fine razor blade. Embryo halves were subjected to antigen retrieval in 1x R-Universal epitope recovery buffer (Electron Microscopy Services #62719\u201310) for 30 min at 55\u201360\u00b0C, washed 2 \u00d7 10 min in PBSTr, blocked for 2 hr in PBSTr + 10% normal donkey serum (Jackson Immunoresearch 017-000-001) + 0.2% DMSO at room temperature, and then incubated overnight at 4\u00b0C in this blocking solution + the following primary antibodies: chicken anti-GFP (Aves GPF-1020; diluted 1:1000), rabbit anti-Sox17a/b N-terminal (1:350), rabbit anti-B-catenin (Santa Cruz Biotechnology sc-7199; 1:500). After extensive washing in PBSTr, samples were incubated overnight at 4\u00b0C in PBSTr + secondary antibodies: donkey antiChicken 488, donkey anti-rabbit Cy3 (Jackson ImmunoResearch # 703-546-155, #711-166-152, both used at 1:1000 dilution).TO-PRO3 nuclear stain (ThermoFisher #T3605) was included in one 30 min PBSTr wash after secondary antibody incubation. Samples were extensively washed in PBSTr, dehydrated into 100% methanol, cleared and imaged in Murray\u2019s Clear (two parts benzyl benzoate, one part benzyl alcohol).\n\n### Luciferase assays\n\nPutative enhancers (wildtype as well as Sox and Tcf DNA-binding site mutants) were synthesized (supplementary sequence file S1) and cloned into the pGL4.23 luc2/miniP vector. (Promega E8411). Xenopus laevis embryos were used for luciferase assays because of the larger size embryos and slower developmental rate. Enhancer activity was assayed by co-injecting embryos with 5 pg of pRL-TKrenilla luciferase vector (Promega E2241), 50 pg of the pGL4.23 luc2/miniPenhancer:luciferase and combinations of the following MOS or mRNAs: ca-Bcat; 5 pg, mSox17; 25 pg, mSox17 M76A; 25 pg, Tcf3-VP16; 10 pg, Xl sox17a+b1/2 MO; 10 ng each, Xl bcat MO; 10 ng. For each condition three tubes of 5 NF10.5 embryos were collected. Embryos were lysed in 100 \u00b5L of 100 mM TRIS-Cl pH7.5, centrifuged for 10 min at\u00a0~13,000 x g and then 25 \u00b5L of the clear supernatant lysate was used separately in Firefly (Biotium #30085\u20131) and Renilla (Biotium 300821) luciferase assays according to the manufacturer\u2019s instructions. The average relative Luciferase activity was normalized Renilla levels for each sample and statistical significance was determined by pairwise Student T-test. Each luciferase experiment was repeated two\u00a0to\u00a0four times with similar results and a representative is shown.\n\n### RNA-sequencing\n\n#### RNA isolation and library preparation\n\nApproximately 200 X. tropicalis embryos were injected with 8 ng of either control-MO or Sox17-MO, or 2 ng of control-MO and Bcat-MO and 10 sibling embryos were collected at every time point from blastula to late gastrula in biological duplicate. Total RNA was extracted with the Nucleo-spin RNA kit (Machery-Nagel). RNA-seq libraries were generated using Smart-seq2 cDNA synthesis followed by tagmentation, quality-tested using an Agilent Bioanalyzer 2100, quantified using KAPA qPCR and sequenced using Illumina sequencers at the UC Irvine Genomics High Throughput Facility.\n\n#### RNA-Seq analysis\n\nRaw reads were quality checked using FastQC and adapters/low-quality reads were removed with Trimmomatic (Bolger et al., 2014). Reads were mapped to the Xenopus tropicalis genome version 9.0 (Hellsten et al., 2010) with bowtie2, quantified using RSEM (Li and Dewey, 2011) and reported in transcripts per million (TPM). X. tropicalis v9.0 gene name annotations were obtained from www.Xenbase.org; RRID:SCR_003280 (Karimi et al., 2018). To visualize the data, aligned bam files generated as above were converted to bigwig format using deeptools v3.4.1 and visualized on IGV v2.4.1.3 (Thorvaldsd\u00f3ttir et al., 2013). Differentially expressed genes (>2 fold change and FDR\u00a0<\u00a05%) were identified by a pairwise comparison between control-MO versus Sox17-MO and control-MO versus Bcat-MO sibling embryos at each stage using RUVSeq (R package) (Risso et al., 2014). Gene ontology enrichment analysis was performed using the Gene Ontology Consortium Online Resource (http://geneontology.org) and default parameters.\n\nTo assess the spatial expression of transcripts, we examined the RNA-seq TPM expression values of dissected stage 10.5 embryo published in GEO GSE81458 (Blitz et al., 2017). Enriched expression in a specific tissue was defined as the normalized expression being\u00a0>1.5 x of the mean expression across dissected tissues. Statistical significance of enriched expression pattern in groups of genes was determined by chi-square test performed in R package MASS.\n\n### Chromatin immunoprecipitation\n\n#### ChIP-Seq\n\nLarge-scale Sox17 ChIP was carried out as previously described (Charney et al., 2017a) using 2000 NF10.5 X. tropicalis embryos and 30 \u00b5g rabbit anti-Sox17b-Cterminal antibody. ChIP-seq libraries were generated using Nextflex ChIP-seq kit (Bio Scientific), analyzed using an Agilent Bioanalyzer 2100, quantified using KAPA qPCR and sequenced using Illumina instruments at the UC Irvine Genomics High Throughput Facility.\n\n#### ChIP-qPCR\n\nwas carried out largely as described in Charney et al., 2017a; Hontelez et al., 2015 with minor modifications. Briefly, 50\u2013200 NF 10.5 Xenopus tropicalis embryos were fixed in 1% formaldehyde in 0.1x MBS at room temperature for 30 min. Sonication was carried out in a Diagenode Bioruptor Pico for 30 cycles of 30 s ON, 30 s OFF. Chromatin extracts were incubated with 10 \u00b5g rabbit anti-Sox17-Cterminal antibody (affinity purified by Bethyl labs, Figure 2\u2014figure supplement 1) or 2.5 \u00b5g rabbit anti-\u03b2-catenin (Life Technologies, 712700) overnight at 4\u00b0C. After washes and elution, DNA was then purified using a MinElute PCR Purification kit and QIAQuick purification columns and eluted in 20 \u00b5l TE.\n\n#### ChIP-reChIP\n\nBefore the first ChIP, the anti-\u03b2-catenin antibody was crosslinked to Protein G Dynabeads. ChIP assay was then carried out on extracts from 500 embryos as described above. At the end of the first ChIP, DNA was eluted with elution buffer supplemented with 10 mM DTT. The eluate was then diluted in 10 volumes of wash buffer (50 mM Tris-HCl pH 8.0, 100 mM NaCl, 2 mM EDTA, 1% NP-40) supplemented with 1x Protease Inhibitor Cocktail and 1 mM DTT. The 2nd ChIP was then carried out as described above.\n\n#### ChIP-Seq analysis\n\nRaw reads were assessed by FastQC and trimmed with Trimmomatic and aligned to Xenopus tropicalis genome (Hellsten et al., 2010) version 9.0 using bowtie2 v2.3.4.7 (Langmead and Salzberg, 2012). Duplicate and multi-mapped reads were removed by Picard (http://broadinstitute.github.io/picard/) and samtools (Li et al., 2009). Peaks were called with MACS2 (Zhang et al., 2008) against NF10.5 input DNA with default options. HOMER v4.1.0 (Heinz et al., 2010) was used to annotate ChIP-seq peaks (intron, intergenic, exon and promoter) and to associate peaks with genes using the nearest TSS function. To identify statistically significant ChIP-seq peaks, we performed Irreproducible discovery rate (IDR) analysis per ENCODE Best Practices guidelines (Landt et al., 2012)\u00a0on pseudoreplicate from pooled Sox17 ChIP-seq biological replicates and pseudoreplicate of the single Bcat ChIP-seq dataset from GEO GSE72657 (Nakamura et al., 2016) with an IDR threshold of 0.01. To visualize the data, aligned bam files generated as above were converted to bigwig format using deeptools v3.4.1 and visualized on IGV v2.4.1.3 (Thorvaldsd\u00f3ttir et al., 2013). Significance of intersected ChIP-seq and RNA-seq datasets was assessed using hyper geometric test (HGT).\n\n#### Motif analysis\n\nDe-novo motif analysis was performed with HOMER v4.1.0 (Heinz et al., 2010). For a comprehensive Sox and Tcf motif analysis, we divided our datasets into three groups: (a) Peaks bound and regulated by Sox17 only, (b) Peaks bound and regulated by Bcat Only and (c) Peaks that were cobound and coregulated by Sox17 and Bcat. DNA sequences of 150 bp centered on the peaks summits were extracted and motif analysis was carried out as follows: (1) To find which peaks have instances of Sox17 and Tcf motifs, HOMER function annotatePeaks.pl was used with the parameters: -size 150 m motif sox17.motif tcf7.motif lef1.motif tcf3.motif tcf7l2.motif. (2) To perform a more exhaustive motif search the enhancers were also scanned with a library of position weight matrices (PWMs) containing all experimentally defined Sox17, Tcf7, Tcf7l1 and Lef1 motifs\u00a0>\u00a070% threshold from the CIS-BP database (Lambert et al., 2019). The HOMER and CIS-BP results were merged to generate BED files and Bedtools v2.27.1 (Quinlan and Hall, 2010) intersect function was then used to extract coordinates of \u2018Sox only\u2019 \u2018Tcf only\u2019 and \u2018Sox and Tcf overlapping\u2019 categories. Fisher\u2019s exact tests were used to determine the statistical significance of Sox17 or Tcf motif frequency in each set of peaks compared to random background DNA generated by randomly scrambling each wild-type test sequence (maintaining dinucleotide composition) ten times to generate randomly shuffled sequences that had the same GC content.\n\n#### Peak density heatmaps\n\nFrom the Sox17 and Bcat peaks called by MACS2, Bedtools intersect function was used to stratify the peaks into \u2018Sox bound only\u2019, \u2018Bcat bound only\u2019 and \u2018Sox and Bcat overlapping peaks\u2019. For each category of peaks, the peak summit was extracted from the TF summit file generated by MACS2 and 2000 bp were added to both sides of the summit using awk. Bedtools computematrix was used to generate per genome regions. The generated matrix was then used with bedtools plotHeatmap to generate heatmaps and signal density plots.\n\n### Analysis of public datasets\n\nThe following datasets were downloaded from GEO: Embryo dissection RNA-seq; GSE81458\u00a0(Blitz et al., 2017), embryonic stage series RNA-seq; GSE65785; (Owens et al., 2016), Bcat\u00a0ChIP-seq; GSE72657 (Nakamura et al., 2016), RNA pol II and Foxa ChIP-seq; GSE85273 (Charney et al., 2017a), H3K27Ac ChIP-seq; GSE56000 (Gupta et al., 2014), H3K4me1 and Ep300 ChIP-seq; GSE67974 (Hontelez et al., 2015), Smad1, Smad2, Sox3 and VegT ChIP-seq; GSE113186 (Gentsch et al., 2019). Raw data was downloaded from GEO and aligned to the Xenopus tropicalis genome version 9.0, and processed to generate bigwig files and heatmaps as described above.\n",
+      "created_at": "2025-12-02T19:43:49.768351Z"
+    },
+    {
+      "id": "afca2918-9c28-4ed1-bdd2-decb3185a6a1",
+      "submission_id": "9f944e45-734f-4354-8e58-8d7bc45292ff",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Carole LaBonne, Northwestern University United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.58029.sa1](https://doi.org/10.7554/eLife.58029.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nAcceptance summary:\n\nThis is an interesting and important contribution that addresses the control of endodermal gene expression through Sox17 and Wnt \u03b2-catenin. The experiments demonstrate that Sox17 acts as an endoderm-specific modifiers of Wnt-signaling responses. The study also fills an important gap in our understanding of early cell fate specification in the embryo by identifying the direct targets of Sox17 in the endoderm.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Sox17 and \u03b2-catenin co-occupy Wnt-responsive enhancers to govern the endodermal gene regulatory network\" for consideration by eLife. Your article has been reviewed by three peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Edward Morrisey as the Senior Editor. The reviewers have opted to remain anonymous.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nAs the editors have judged that your manuscript is of interest, but as described below, that additional experiments may be required before it is published, we would like to draw your attention to changes in our revision policy that we have made in response to COVID-19 (https://elifesciences.org/articles/57162). First, because many researchers have temporarily lost access to the labs, we will give authors as much time as they need to submit revised manuscripts. We are also offering, if you choose, to post the manuscript to bioRxiv (if it is not already there) along with this decision letter and a formal designation that the manuscript is \"in revision at eLife\". Please let us know if you would like to pursue this option. (If your work is more suitable for medRxiv, you will need to post the preprint yourself, as the mechanisms for us to do so are still in development.)\n\nSummary:\n\nThis paper by Mukherjee et al. addresses functional interactions of Sox17 and Wnt signaling in endodermal gene regulation. The results reveal that Sox17 factors act as endoderm-specific modifiers of Wnt-signaling responses, providing strong evidence for a TCF independent role for \u03b2-catenin/Sox17 in promoting endodermal and suppressing mesodermal/ectodermal gene expression. The reviewers felt that this interesting study addresses important questions and is well-executed, but that there are instances where the conclusions seem overgeneralized, and that some additional analysis is needed before the article would be appropriate for publication in eLife.\n\nEssential revisions:\n\n1) Interpreting the Sox17 and \u03b2-catenin knock down results requires assessment of the efficiency knock downs \u2013 is occupancy at high affinity sites being decreased or only low affinity? Ideally this would be shown by ChIP following knockdown.\n\n2) The generalized finding that \"Sox17 and \u03b2-catenin co-occupy a subset of enhancers to synergistically stimulate transcription in the absence of Tcfs\" is not fully supported by the data presented. Although a subset of enhancers lack predicted Tcf binding motifs, functional data is shown only for six1, and only by gain-of function experiments. Data showing that other enhancers behave like six1, and possibly also using a Tcf7l1-EnR fusion, are needed to support this conclusion. Absent such data, conclusions should relate only to Six1 regulation.\n\n3) Please add discussion of the dynamics of Sox17 binding/function. Could this explain differences with reported enrichment in other studies such as Nakamura et al. and Kjolby et al.? Those differences should be discussed.\n\n4) It might be useful to extend the analysis to look at collaborating transcription factors (e.g. Tbx, Pou, etc) by cross-referencing with published data sets (for example such as Gentsch et al.).\n\n5) In the first section of the Results, the text should reflect the possibility that some of the observed transcriptional effects after Sox17 knockdown are caused by indirect mechanisms. Also, please avoid using the non-specific term \"regulates\", and instead use \"inhibits/increases\".\n\n6) Motif frequencies in peaks cannot be compared directly between motifs or different versions of the motifs, as seems to have been done in Figure 4\u2014figure supplement 2A because the baseline for motif occurrence (in random genomic sequences) is highly motif-specific.\n\n7) Please indicate the application of multiple testing correction (adjusted p-value, or FDR) where applicable (Materials and methods, Results; GO analysis). Also indicate p-values for all enrichments and intersections (Figures 2D, Figure 2\u2014figure supplement 2D, Figure 3\u2014figure supplement 2B, Figure 4A).\n\n8) Including a summary of the temporal role of Sox17 in context of other signals and transcription factors, including Nodal/Smad2, BMP, VegT would be useful.\n\n[Editors' note: further revisions were suggested prior to acceptance, as described below.]\n\nThank you for resubmitting your work entitled \"Sox17 and \u03b2-catenin co-occupy Wnt-responsive enhancers to govern the endoderm gene regulatory network\" for further consideration by eLife. Your revised article has been evaluated by Edward Morrisey (Senior Editor) and a Reviewing Editor.\n\nThe manuscript has been greatly improved but there is one remaining issue that should be addressed before acceptance. This concerns the motif analysis in Figure 4\u2014figure supplement 2. Examining background frequencies via scrambling of peak sequences while maintaining di-nucleotide frequencies has strengthened this analysis. However, ranking the motifs by hypergeometric p-value (provided by HOMER) is perhaps not most informative way to represent these data. We suggest instead plotting the 2log fold enrichment over background, in combination with a statistical test (effect size and statistical rigor). Also, it is felt that a discussion of background frequencies is needed where the co-occurring motifs are discussed and Figure 4\u2014figure supplement 2D should be revised by calculating for background sequences.\n",
+      "created_at": "2025-12-02T19:43:49.768351Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T19:43:49.768351Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T19:43:49.768351Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "907924a9-f7ca-4436-aeab-052cf387b334",
+      "content_id": "ea442998-d338-42e4-88ce-d2b2dcfc0392",
+      "claim_id": "C1",
+      "claim": "Sox17 is a key transcriptional regulator of definitive endoderm development.",
+      "claim_type": "EXPLICIT",
+      "source": "Sox17 is a key transcriptional regulator of definitive endoderm development, and yet, its genomic targets remain largely uncharacterized.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract as a known fact about Sox17's role.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:43:49.768351Z"
+    },
+    {
+      "id": "5cd20e1a-b951-4d6e-834e-4e04ce94e43f",
+      "content_id": "ea442998-d338-42e4-88ce-d2b2dcfc0392",
+      "claim_id": "C2",
+      "claim": "Sox17 functionally interacts with the canonical Wnt pathway to specify and pattern the endoderm while repressing alternative mesectoderm fates.",
+      "claim_type": "EXPLICIT",
+      "source": "We show that Sox17 functionally interacts with the canonical Wnt pathway to specify and pattern the endoderm while repressing alternative mesectoderm fates.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding stated in the abstract, supported by the genomic approaches and epistasis experiments described in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:43:49.768351Z"
+    },
+    {
+      "id": "877cf3af-f6ca-48a0-9b63-7e704166ec2f",
+      "content_id": "ea442998-d338-42e4-88ce-d2b2dcfc0392",
+      "claim_id": "C3",
+      "claim": "Sox17 and \u03b2-catenin co-occupy hundreds of key enhancers.",
+      "claim_type": "EXPLICIT",
+      "source": "Sox17 and \u03b2-catenin co-occupy hundreds of key enhancers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding stated in the abstract and supported by ChIP-seq data showing 3956 genomic loci co-occupied by both Sox17 and Bcat.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:43:49.768351Z"
+    },
+    {
+      "id": "0b302ee9-55de-4e98-8160-e5fd9f83f7d6",
+      "content_id": "ea442998-d338-42e4-88ce-d2b2dcfc0392",
+      "claim_id": "C4",
+      "claim": "Sox17 and \u03b2-catenin synergistically activate transcription apparently independent of Tcfs on some enhancers.",
+      "claim_type": "EXPLICIT",
+      "source": "In some cases, Sox17 and \u03b2-catenin synergistically activate transcription apparently independent of Tcfs, whereas on other enhancers, Sox17 represses \u03b2-catenin/Tcf-mediated transcription to spatially restrict gene expression domains.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding stated in the abstract and supported by luciferase reporter assays showing synergistic activation of six1, osr1, and igf3 enhancers.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:43:49.768351Z"
+    },
+    {
+      "id": "bf5cad1f-4c8b-4f0d-ab82-cd13803d246c",
+      "content_id": "ea442998-d338-42e4-88ce-d2b2dcfc0392",
+      "claim_id": "C5",
+      "claim": "Sox17 represses \u03b2-catenin/Tcf-mediated transcription on some enhancers to spatially restrict gene expression domains.",
+      "claim_type": "EXPLICIT",
+      "source": "In some cases, Sox17 and \u03b2-catenin synergistically activate transcription apparently independent of Tcfs, whereas on other enhancers, Sox17 represses \u03b2-catenin/Tcf-mediated transcription to spatially restrict gene expression domains.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding stated in the abstract and supported by luciferase reporter assays showing Sox17 repression of dkk1 and lhx5 enhancers.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:43:49.768351Z"
+    },
+    {
+      "id": "171d2506-6e59-4d23-a6a9-bdfb19e141c1",
+      "content_id": "ea442998-d338-42e4-88ce-d2b2dcfc0392",
+      "claim_id": "C6",
+      "claim": "In Xenopus, there are three redundant sox17 genes: sox17a, sox17b.1 and sox17b.2 with indistinguishable activities and identical expression in presumptive vegetal endoderm cells of gastrula embryos.",
+      "claim_type": "EXPLICIT",
+      "source": "In Xenopus tropicalis, there are three redundant genes: sox17a, sox17b.1 and sox17b.2 (collectively sox17) with indistinguishable activities and identical expression in presumptive vegetal endoderm cells of gastrula embryos (Figure 1A and Figure 1\u2014figure supplement 1A; D'Souza et al., 2003; Hellsten et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section and supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:43:49.768351Z"
+    },
+    {
+      "id": "81e5dad3-238d-453c-be52-74a11c26b1bb",
+      "content_id": "ea442998-d338-42e4-88ce-d2b2dcfc0392",
+      "claim_id": "C7",
+      "claim": "Microinjection of a combination of antisense morpholino oligos targeting all three sox17 paralogs resulted in a robust knockdown of Sox17 protein.",
+      "claim_type": "EXPLICIT",
+      "source": "Microinjection of a combination of antisense morpholino oligos (sox17aMO and sox17bMO) targeting all three paralogs resulted in a robust knockdown of Sox17 protein as confirmed by immunostaining (Figure 1B and Figure 1\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and supported by immunostaining data shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:43:49.768351Z"
+    },
+    {
+      "id": "453d4a06-eb07-42f6-9e09-a3f4cc7dd828",
+      "content_id": "ea442998-d338-42e4-88ce-d2b2dcfc0392",
+      "claim_id": "C8",
+      "claim": "The Sox17-MO phenotype was consistent with previous reports and phenocopied mouse mutants with defective gut development.",
+      "claim_type": "EXPLICIT",
+      "source": "The Sox17-MO phenotype was consistent with previous reports (Clements et al., 2003; Sinner et al., 2006) and phenocopied mouse mutants with defective gut development (Kanai-Azuma et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section and supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:43:49.768351Z"
+    },
+    {
+      "id": "ff88a322-55dd-4b39-91a8-0d8abc15bb35",
+      "content_id": "ea442998-d338-42e4-88ce-d2b2dcfc0392",
+      "claim_id": "C9",
+      "claim": "Injection of mRNA encoding mouse Sox17 rescued both the anatomical and gene expression phenotypes confirming the efficacy and specificity of the MOs.",
+      "claim_type": "EXPLICIT",
+      "source": "Injection of mRNA encoding mouse Sox17 rescued both the anatomical and gene expression phenotypes confirming the efficacy and specificity of the MOs (Figure 1F and Figure 1\u2014figure supplement 1C,D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and supported by in situ hybridization data shown in Figure 1F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:43:49.768351Z"
+    },
+    {
+      "id": "ea26bd59-92b3-492f-aa21-bd955436bcab",
+      "content_id": "ea442998-d338-42e4-88ce-d2b2dcfc0392",
+      "claim_id": "C10",
+      "claim": "Differential expression analysis of control-MO and Sox17-MO embryos identified 1023 Sox17-regulated genes (>2 fold change, FDR< 5%).",
+      "claim_type": "EXPLICIT",
+      "source": "Differential expression analysis of control-MO and Sox17-MO embryos identified 1023 Sox17-regulated genes (>2 fold change, FDR< 5%) (Figure 1D and Supplementary file 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding stated in the Results section based on RNA-seq analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:43:49.768351Z"
+    },
+    {
+      "id": "eef55ef6-3c3b-472e-99ba-cedf0202e83f",
+      "content_id": "ea442998-d338-42e4-88ce-d2b2dcfc0392",
+      "claim_id": "C11",
+      "claim": "493 transcripts were downregulated in Sox17-depleted embryos and 530 transcript were upregulated.",
+      "claim_type": "EXPLICIT",
+      "source": "In total, 493 transcripts were downregulated in Sox17-depleted embryos and 530 transcript were upregulated.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section based on RNA-seq analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:43:49.768351Z"
+    },
+    {
+      "id": "5efb0bf6-8789-4b9b-9831-b2fb91a854ac",
+      "content_id": "ea442998-d338-42e4-88ce-d2b2dcfc0392",
+      "claim_id": "C12",
+      "claim": ">75% of the differentially expressed genes were changed by Sox17 depletion during the mid-late gastrula (NF10.5\u201312).",
+      "claim_type": "EXPLICIT",
+      "source": "The time course data revealed that >75% of the differentially expressed genes were changed by Sox17 depletion (either directly or indirectly) during the mid-late gastrula (NF10.5\u201312), consistent with a role in maintaining endodermal fate after initial induction by Nodal signaling in the blastula (NF9) (Figure 1D and Figure 1\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section based on time course RNA-seq analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:43:49.768351Z"
+    },
+    {
+      "id": "08b6cd79-33ca-4d66-bfd0-816bb97cb2e7",
+      "content_id": "ea442998-d338-42e4-88ce-d2b2dcfc0392",
+      "claim_id": "C13",
+      "claim": "Differentially expressed genes include 73 TFs, including known Sox17 targets foxa2 and hnf1b.",
+      "claim_type": "EXPLICIT",
+      "source": "Differentially expressed genes include 73 TFs, including known Sox17 targets foxa2 and hnf1b (Sinner et al., 2004; Sinner et al., 2006), and paracrine signaling components (Supplementary file 1) such as the Hedgehog pathway (dhh, hhip, gli1); a key epithelial signal in gut organogenesis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section based on RNA-seq analysis and supported by citations to previous work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:43:49.768351Z"
+    },
+    {
+      "id": "2f49d994-7a35-4c38-a0b7-28e6ba53f2fb",
+      "content_id": "ea442998-d338-42e4-88ce-d2b2dcfc0392",
+      "claim_id": "C14",
+      "claim": "Over 30% of the genes upregulated early (NF9-10) in the Sox17-depleted embryos were normally enriched in the ectoderm or mesoderm tissue.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, over 30% of the genes upregulated early (NF9-10) in the Sox17-depleted embryos were normally enriched in the ectoderm or mesoderm tissue; examples include ectoderm-promoting TFs tfap2a and lhx5 (Houston and Wylie, 2003; Figure 1D\u2013F) as well as the mesoderm TFs foxf1, tbx20 and hlx.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section based on RNA-seq analysis and comparison to spatial expression data.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:43:49.768351Z"
+    },
+    {
+      "id": "35ff0ac4-86a0-4e01-a081-ff84489a2e87",
+      "content_id": "ea442998-d338-42e4-88ce-d2b2dcfc0392",
+      "claim_id": "C15",
+      "claim": "Sox17 plays an important role in repressing ectoderm and mesoderm fate in vegetal endoderm cells.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that Sox17 plays an important role in repressing ectoderm and mesoderm fate in vegetal endoderm cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation stated in the Results section based on the observation that ectoderm and mesoderm genes are upregulated in Sox17-depleted embryos.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:43:49.768351Z"
+    },
+    {
+      "id": "e8ccf6ef-8f6d-4e59-9a71-26935721d685",
+      "content_id": "ea442998-d338-42e4-88ce-d2b2dcfc0392",
+      "claim_id": "C16",
+      "claim": "Sox17 negatively regulated ~150 genes that are normally enriched in the vegetal endoderm and dorsal mesendoderm.",
+      "claim_type": "EXPLICIT",
+      "source": "Unexpectedly Sox17 also negatively regulated ~150 genes that are normally enriched in the vegetal endoderm and dorsal mesendoderm.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section based on RNA-seq analysis and comparison to spatial expression data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:43:49.768351Z"
+    },
+    {
+      "id": "7ddf2d86-a8b7-45e3-87a5-82dd507e9aed",
+      "content_id": "ea442998-d338-42e4-88ce-d2b2dcfc0392",
+      "claim_id": "C17",
+      "claim": "Sox17 acts as a negative feedback inhibitor that restricts excessive endoderm development by restraining Nodal activity after initial induction.",
+      "claim_type": "EXPLICIT",
+      "source": "These data indicate that Sox17 acts as a negative feedback inhibitor that restricts excessive endoderm development by restraining Nodal activity after initial induction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation stated in the Results section based on the observation that Nodal pathway genes are upregulated in Sox17-depleted embryos.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:43:49.768351Z"
+    },
+    {
+      "id": "24a946bb-a4d9-402f-91de-5afc2ee00e9c",
+      "content_id": "ea442998-d338-42e4-88ce-d2b2dcfc0392",
+      "claim_id": "C18",
+      "claim": "Sox17 ChIP-seq in gastrula (NF10.5) embryos identified 8436 statistically significant Sox17-bound putative CRMs (IDR; p<0.05).",
+      "claim_type": "EXPLICIT",
+      "source": "To identify direct Sox17 targets we generated and validated anti-Sox17 antibodies (Figure 2\u2014figure supplement 1A\u2013C) and performed Sox17 ChIP-seq in gastrula (NF10.5) embryos, identifying 8436 statistically significant Sox17-bound putative CRMs (IDR; p<0.05) (Supplementary file 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding stated in the Results section based on ChIP-seq analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:43:49.768351Z"
+    },
+    {
+      "id": "b6d7053e-e9ab-44c8-ac49-7ca552004f51",
+      "content_id": "ea442998-d338-42e4-88ce-d2b2dcfc0392",
+      "claim_id": "C19",
+      "claim": "Sox17-bound CRMs were associated with 4801 genes.",
+      "claim_type": "EXPLICIT",
+      "source": "These were associated with 4801 genes (Figure 2A), based on annotation to the nearest transcription start-site (TSS) by HOMER (Heinz et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section based on ChIP-seq analysis and annotation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:43:49.768351Z"
+    },
+    {
+      "id": "a74191fa-e814-4d0c-8a36-cf1d0f0f03c4",
+      "content_id": "ea442998-d338-42e4-88ce-d2b2dcfc0392",
+      "claim_id": "C20",
+      "claim": "88% of Sox17-bound loci were in introns or intergenic regions more than 1 kb away from the TSS, consistent with Sox17 binding at distal CRMs.",
+      "claim_type": "EXPLICIT",
+      "source": "88% of Sox17-bound loci were in introns or intergenic regions more than 1 kb away from the TSS, consistent with Sox17 binding at distal CRMs (Figure 2\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section based on ChIP-seq analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:43:49.768351Z"
+    },
+    {
+      "id": "8d5a4cd5-c3c5-46e5-a5f4-9f6d4dd1bf22",
+      "content_id": "ea442998-d338-42e4-88ce-d2b2dcfc0392",
+      "claim_id": "C21",
+      "claim": "Most of the Sox17-bound genomic loci were also bound by Ep300, indicative of active enhancers.",
+      "claim_type": "EXPLICIT",
+      "source": "A comparison to published ChIP-seq data of Xenopus embryos at the same stage (Hontelez et al., 2015) showed that most of the Sox17-bound genomic loci were also bound by Ep300, (Figure 2B,E) indicative of active enhancers.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section based on comparison to published ChIP-seq data.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:43:49.768351Z"
+    },
+    {
+      "id": "216ef9b3-9e18-4737-b1a6-67f61ad49b6c",
+      "content_id": "ea442998-d338-42e4-88ce-d2b2dcfc0392",
+      "claim_id": "C22",
+      "claim": "Motif analysis of the ChIP-seq peaks confirmed that Sox17 motifs were the most enriched.",
+      "claim_type": "EXPLICIT",
+      "source": "Motif analysis of the ChIP-seq peaks confirmed that Sox17 motifs were the most enriched, as expected (Figure 2D and Figure 2\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section based on motif analysis of ChIP-seq data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:43:49.768351Z"
+    },
+    {
+      "id": "8e50c179-3fc6-4e58-9257-7e28f0edbd15",
+      "content_id": "ea442998-d338-42e4-88ce-d2b2dcfc0392",
+      "claim_id": "C23",
+      "claim": "Control ChIP-qPCR experiments of Sox17-MO embryos showed binding reduced to near background levels at 9 of 10 loci tested confirming a robust knockdown and the specificity of the Sox17 antibody.",
+      "claim_type": "EXPLICIT",
+      "source": "Control ChIP-qPCR experiments of Sox17-MO embryos showed binding reduced to near background levels at 9 of 10 loci tested confirming a robust knockdown and the specificity of the Sox17 antibody (Figure 2\u2014figure supplement 1D).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section based on ChIP-qPCR validation experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:43:49.768351Z"
+    },
+    {
+      "id": "fef20beb-45db-4835-9206-43a1b6efa5af",
+      "content_id": "ea442998-d338-42e4-88ce-d2b2dcfc0392",
+      "claim_id": "C24",
+      "claim": "Intersecting the RNA-seq and ChIP-seq data identified 315 genes associated with 609 Sox17-bound enhancers, which are likely to be direct transcriptional targets.",
+      "claim_type": "EXPLICIT",
+      "source": "Intersecting the RNA-seq and ChIP-seq data identified 315 genes associated with 609 Sox17-bound enhancers, which are likely to be direct transcriptional targets (Figure 2A).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section based on integration of RNA-seq and ChIP-seq data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:43:49.768351Z"
+    },
+    {
+      "id": "0d9a3553-6046-4aa8-973a-e4e9b295d4ed",
+      "content_id": "ea442998-d338-42e4-88ce-d2b2dcfc0392",
+      "claim_id": "C25",
+      "claim": "Of the Sox17-bound and regulated genes, 197 genes (383 peaks) were positively regulated by Sox17.",
+      "claim_type": "EXPLICIT",
+      "source": "Of the Sox17-bound and regulated genes, 197 genes (383 peaks) were positively regulated by Sox17 (down in Sox17MOs) including slc5a8, hnf1b, foxa1 and dhh (Figure 2E), all of which were previously suggested to be direct Sox17-targets.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section based on integration of RNA-seq and ChIP-seq data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:43:49.768351Z"
+    },
+    {
+      "id": "3e3d1a41-2009-40aa-9fe4-582398cc1507",
+      "content_id": "ea442998-d338-42e4-88ce-d2b2dcfc0392",
+      "claim_id": "C26",
+      "claim": "Sox17 negatively regulated 118 putative direct targets including ectodermal genes, endoderm-enriched Nodal pathway genes and Wnt-regulated organizer genes.",
+      "claim_type": "EXPLICIT",
+      "source": "Sox17 negatively regulated 118 putative direct targets (up in Sox17MOs) including ectodermal genes (lhx5, foxi2 and tfap2a), endoderm-enriched Nodal pathway genes (nodal1, gdf3, gdf6 and mix1) and Wnt-regulated organizer genes (dkk and fst), suggesting direct transcriptional repression (Figure 2E).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section based on integration of RNA-seq and ChIP-seq data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:43:49.768351Z"
+    },
+    {
+      "id": "ac44b228-b961-4850-9cfc-e5b8bcf14d56",
+      "content_id": "ea442998-d338-42e4-88ce-d2b2dcfc0392",
+      "claim_id": "C27",
+      "claim": "~45% of peaks associated with Sox17-activated genes were also enriched for LIM-homeodomain binding sites.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, ~45% of peaks associated with Sox17-activated genes were also enriched for LIM-homeodomain binding sites, in contrast to peaks from Sox17-repressed genes which were enriched for Tbx or Pou motifs (Figure 2\u2014figure supplement 2B).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section based on motif analysis of ChIP-seq data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:43:49.768351Z"
+    },
+    {
+      "id": "59a6e21e-2194-4e0e-8bb6-03bb73dfaaa3",
+      "content_id": "ea442998-d338-42e4-88ce-d2b2dcfc0392",
+      "claim_id": "C28",
+      "claim": "Sox17 may coordinately engage enhancers with other core endoderm GRN TFs and mediate activation or repression of target genes depending on the interacting TFs.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that Sox17 may coordinately engage enhancers with other core endoderm GRN TFs and mediate activation or repression of target genes depending on the interacting TFs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation stated in the Results section based on motif analysis showing enrichment of different TF binding sites in activated vs repressed genes.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:43:49.768351Z"
+    },
+    {
+      "id": "7e09dca9-f2ed-48ec-bb49-47f4cfcc754e",
+      "content_id": "ea442998-d338-42e4-88ce-d2b2dcfc0392",
+      "claim_id": "C29",
+      "claim": "RNA-seq of control-MO and Bcat-MO depleted embryos identified a total of 2568 Bcat-regulated genes (>2 fold change, FDR < 5%).",
+      "claim_type": "EXPLICIT",
+      "source": "RNA-seq of control-MO and Bcat-MO depleted embryos at eight time points from blastula and gastrula stages (NF7-12) identified a total of 2568 Bcat-regulated genes (>2 fold change, FDR < 5%), 1321 of which were downregulated and 1247 upregulated in the Bcat-MO embryos (Figure 3A and Supplementary file 3).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding stated in the Results section based on RNA-seq analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:43:49.768351Z"
+    },
+    {
+      "id": "770f2866-cf08-4db2-9155-463962f64225",
+      "content_id": "ea442998-d338-42e4-88ce-d2b2dcfc0392",
+      "claim_id": "C30",
+      "claim": "1321 genes were downregulated and 1247 upregulated in the Bcat-MO embryos.",
+      "claim_type": "EXPLICIT",
+      "source": "RNA-seq of control-MO and Bcat-MO depleted embryos at eight time points from blastula and gastrula stages (NF7-12) identified a total of 2568 Bcat-regulated genes (>2 fold change, FDR < 5%), 1321 of which were downregulated and 1247 upregulated in the Bcat-MO embryos (Figure 3A and Supplementary file 3).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section based on RNA-seq analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:43:49.768351Z"
+    },
+    {
+      "id": "df028b04-4aa2-4835-aeb3-7fd6f19873f5",
+      "content_id": "ea442998-d338-42e4-88ce-d2b2dcfc0392",
+      "claim_id": "C31",
+      "claim": "The Bcat-dependent genes encoded 251 TFs, (~20% of all the TFs in the genome).",
+      "claim_type": "EXPLICIT",
+      "source": "Remarkably, the Bcat-dependent genes encoded 251 TFs, (~20% of all the TFs in the genome), reinforcing the notion that Wnt/Bcat initiates a transcriptional cascade in the early embryo.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section based on RNA-seq analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:43:49.768351Z"
+    },
+    {
+      "id": "1f17568c-b72f-4ea2-b673-009e608dffb1",
+      "content_id": "ea442998-d338-42e4-88ce-d2b2dcfc0392",
+      "claim_id": "C32",
+      "claim": "Intersecting the Bcat-MO RNA-seq data with previously published Bcat ChIP-seq data identified 898 putative direct target genes associated with 2616 Bcat-bound CRMs.",
+      "claim_type": "EXPLICIT",
+      "source": "Intersecting the Bcat-MO RNA-seq data with previously published Bcat ChIP-seq data from Xenopus tropicalis gastrula (Nakamura et al., 2016) identified 898 putative direct target genes associated with 2616 Bcat-bound CRMs (Supplementary file 4).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section based on integration of RNA-seq and published ChIP-seq data.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:43:49.768351Z"
+    },
+    {
+      "id": "9fb47cd8-9a4a-4e85-a68d-d1171d1530c5",
+      "content_id": "ea442998-d338-42e4-88ce-d2b2dcfc0392",
+      "claim_id": "C33",
+      "claim": "In the Bcat-MO, 546 genes were downregulated, and 352 genes had increased expression.",
+      "claim_type": "EXPLICIT",
+      "source": "In the Bcat-MO, 546 genes were downregulated , and 352 genes had increased expression in Bcat-MO embryos (Figure 3B).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section based on integration of RNA-seq and ChIP-seq data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:43:49.768351Z"
+    },
+    {
+      "id": "a7ae4069-ea7a-4348-94c0-ef78409bf554",
+      "content_id": "ea442998-d338-42e4-88ce-d2b2dcfc0392",
+      "claim_id": "C34",
+      "claim": "Almost 200 Bcat-bound and -regulated genes had endoderm enriched expression including most of the core endoderm TFs.",
+      "claim_type": "EXPLICIT",
+      "source": "Most importantly, almost 200 Bcat-bound and -regulated genes had endoderm enriched expression including most of the core endoderm TFs; sox17, foxa, eomes, gata4, mix1 and mixer (Figure 3D and Supplementary file 3).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section based on integration of RNA-seq, ChIP-seq, and spatial expression data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:43:49.768351Z"
+    },
+    {
+      "id": "e67f157d-b685-4ff5-b52a-f68192b8a76f",
+      "content_id": "ea442998-d338-42e4-88ce-d2b2dcfc0392",
+      "claim_id": "C35",
+      "claim": "Wnt/Bcat directly regulates the transcription of many endodermal genes, contrary to the prevailing view that Bcat promotes endoderm fate primarily by activating Nodal ligand expression.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, contrary to the prevailing view that Bcat promotes endoderm fate primarily by activating Nodal ligand expression (Blythe et al., 2010; Hyde and Old, 2000), we find that Wnt/Bcat also directly regulates the transcription of many endodermal genes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section based on the observation that many endoderm genes are directly bound and regulated by Bcat.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:43:49.768351Z"
+    },
+    {
+      "id": "10b98fe9-507e-41d1-8523-3eff321e08f3",
+      "content_id": "ea442998-d338-42e4-88ce-d2b2dcfc0392",
+      "claim_id": "C36",
+      "claim": "De novo motif analysis showed that the Bcat-bound peaks were more enriched for Sox than canonical Tcf motifs, 2nd versus 5th ranked, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "Surprisingly, de novo motif analysis showed that the Bcat-bound peaks were more enriched for Sox than canonical Tcf motifs, 2nd versus 5th ranked, respectively (Figure 3C; Nakamura et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section based on motif analysis of ChIP-seq data.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:43:49.768351Z"
+    },
+    {
+      "id": "a3a1e126-02b0-42b3-987d-4ae1bd5af0d1",
+      "content_id": "ea442998-d338-42e4-88ce-d2b2dcfc0392",
+      "claim_id": "C37",
+      "claim": "Analysis of other previously published Bcat ChIP-Seq datasets in X. tropicalis gastrula embryos and Flag-tagged Bcat ChIP-Seq in X. laevis gastrula also report a high enrichment for Sox and Tcf motifs.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with this, analysis of other previously published Bcat ChIP-Seq datsets in X. tropicalis gastrula embryos (Gentsch et al., 2019) and Flag-tagged Bcat ChIP-Seq in X. laevis gastrula (Kjolby and Harland, 2017) also report a high enrichment for Sox and Tcf motifs (Figure 3\u2014figure supplement 2A\u2013D).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section based on analysis of published ChIP-seq data.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:43:49.768351Z"
+    },
+    {
+      "id": "8c47e0e8-ff36-48f3-81ef-a3529383c10a",
+      "content_id": "ea442998-d338-42e4-88ce-d2b2dcfc0392",
+      "claim_id": "C38",
+      "claim": "3956 genomic loci are co-occupied by both Sox17 and Bcat, and these had epigenetic signatures of active enhancers.",
+      "claim_type": "EXPLICIT",
+      "source": "Intersection of the ChIP-seq datasets identified 3956 genomic loci co-occupied by both Sox17 and Bcat, and these had epigenetic signatures of active enhancers (Figure 4A,B).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding stated in the Results section based on integration of ChIP-seq datasets.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:43:49.768351Z"
+    },
+    {
+      "id": "3269fdcb-04e8-4272-b9ed-656dfbfa82fc",
+      "content_id": "ea442998-d338-42e4-88ce-d2b2dcfc0392",
+      "claim_id": "C39",
+      "claim": "3956 co-occupied loci represent a third of all Sox17 genomic binding in the gastrula.",
+      "claim_type": "EXPLICIT",
+      "source": "This represents a third of all Sox17 genomic binding in the gastrula.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section based on ChIP-seq analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:43:49.768351Z"
+    },
+    {
+      "id": "eaf1c3c7-9a6d-4f3b-901f-02ea6b78de9c",
+      "content_id": "ea442998-d338-42e4-88ce-d2b2dcfc0392",
+      "claim_id": "C40",
+      "claim": "415 transcripts were regulated by both Sox17 and Bcat, comprising of ~40% of the Sox17-regulated and ~15% of the Bcat-regulated transcriptome.",
+      "claim_type": "EXPLICIT",
+      "source": "Comparison of the Sox17-MO and Bcat-MO RNA-seq datasets identified 415 transcripts that were regulated by both Sox17 and Bcat; comprising of ~40% of the Sox17-regulated and ~15% of the Bcat-regulated transcriptome (Figure 4A).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section based on integration of RNA-seq datasets.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:43:49.768351Z"
+    },
+    {
+      "id": "46a48280-84fd-49ec-94f2-5379c6ea8677",
+      "content_id": "ea442998-d338-42e4-88ce-d2b2dcfc0392",
+      "claim_id": "C41",
+      "claim": "Co-regulation with Wnt/Bcat is a major feature of the Sox17-regulated endoderm GRN.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that co-regulation with Wnt/Bcat is a major feature of the Sox17-regulated endoderm GRN.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation stated in the Results section based on the extensive overlap between Sox17 and Bcat genomic binding and regulation.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:43:49.768351Z"
+    },
+    {
+      "id": "ed91e6c9-3ac0-4ab6-9f16-51576f8e7c7a",
+      "content_id": "ea442998-d338-42e4-88ce-d2b2dcfc0392",
+      "claim_id": "C42",
+      "claim": "84 genes (191 Peaks) were bound and regulated by both Sox17 and Bcat.",
+      "claim_type": "EXPLICIT",
+      "source": "In total, 84 genes (191 Peaks) were bound and regulated by both Sox17 and Bcat (Figure 4A,B).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section based on integration of RNA-seq and ChIP-seq data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:43:49.768351Z"
+    },
+    {
+      "id": "5dbd4e89-5cf9-4a4a-8488-8521ab75fe06",
+      "content_id": "ea442998-d338-42e4-88ce-d2b2dcfc0392",
+      "claim_id": "C43",
+      "claim": "53% (101/191) of the co-bound and coregulated peaks contained both Sox17 and Tcf DNA-binding motifs compared to 31% in background genomic sequences.",
+      "claim_type": "EXPLICIT",
+      "source": "A comprehensive motif analysis of the 191 co-bound and coregulated peaks using the CIS-BP database (Lambert et al., 2019) revealed that 53% (101/191) of the peaks contained both Sox17 and Tcf DNA-binding motifs (e.g. dkk1, lhx5 and osr1) compared to 31% in background genomic sequences (Figure 4\u2014figure supplement 2E and Supplementary file 5).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section based on motif analysis of ChIP-seq data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:43:49.768351Z"
+    },
+    {
+      "id": "ad12a518-4718-4c06-980b-d710e5c78b9d",
+      "content_id": "ea442998-d338-42e4-88ce-d2b2dcfc0392",
+      "claim_id": "C44",
+      "claim": "24% (46/191) of the co-bound and coregulated peaks had Sox motifs but no Tcf sites, suggesting that Bcat might be recruited to these loci independent of Tcfs.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast 24% (46/191) of the peaks had Sox motifs but no Tcf sites (e.g. six1), suggesting that Bcat might be recruited to these loci independent of Tcfs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section based on motif analysis of ChIP-seq data.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:43:49.768351Z"
+    },
+    {
+      "id": "f9626de3-333e-4a81-b94f-0d7a95a91fbd",
+      "content_id": "ea442998-d338-42e4-88ce-d2b2dcfc0392",
+      "claim_id": "C45",
+      "claim": "ChIP-reChIP experiments demonstrated that Sox17 and Bcat bound the same enhancers in the same cells.",
+      "claim_type": "EXPLICIT",
+      "source": "To test whether Sox17 and Bcat bound the same enhancers in the same cells we performed ChIP-reChIP experiments. First anti-Bcat ChIP was performed on 500 gastrulae. DNA eluted from the first ChIP was then re-precipitated with either anti-Sox17 or a negative control IgG antibody. All four loci tested by ChIP-reChIP qPCR (six1, dkk1, lhx5 and gli1) showed enrichment compared to IgG demonstrating that these genomic loci (~150 bp in length) were simultaneously bound by Sox17 and Bcat in endodermal cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section based on ChIP-reChIP experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:43:49.768351Z"
+    },
+    {
+      "id": "4791fa8b-29e7-4615-abe0-132e8cfa9fcd",
+      "content_id": "ea442998-d338-42e4-88ce-d2b2dcfc0392",
+      "claim_id": "C46",
+      "claim": "32/84 co-bound and coregulated genes were activated by both Sox17 and Bcat and tended to have endoderm enriched expression.",
+      "claim_type": "EXPLICIT",
+      "source": "The 84 co-bound and coregulated genes fell into four regulatory categories (Figure 4C,E); 32/84 were activated by both Sox17 and Bcat (e.g. six1 and osr1) and tended to have endoderm enriched expression",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section based on integration of RNA-seq, ChIP-seq, and spatial expression data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:43:49.768351Z"
+    },
+    {
+      "id": "a2be2245-877b-4424-adcb-8774e877d8eb",
+      "content_id": "ea442998-d338-42e4-88ce-d2b2dcfc0392",
+      "claim_id": "C47",
+      "claim": "27/84 co-bound and coregulated genes were activated by Bcat but repressed by Sox17 and tended to be enriched in the organizer mesendoderm.",
+      "claim_type": "EXPLICIT",
+      "source": "27/84 were activated by Bcat but repressed by Sox17 (e.g. dkk1) and these tended to be enriched in the organizer mesendoderm",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section based on integration of RNA-seq, ChIP-seq, and spatial expression data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:43:49.768351Z"
+    },
+    {
+      "id": "8767a029-772d-435a-9094-269648ea935a",
+      "content_id": "ea442998-d338-42e4-88ce-d2b2dcfc0392",
+      "claim_id": "C48",
+      "claim": "19/84 co-bound and coregulated genes were positively regulated by Sox17 and negatively regulated by Bcat.",
+      "claim_type": "EXPLICIT",
+      "source": "19/84 were positively regulated by Sox17 and negatively regulated by Bcat (up in the Bcat MO)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section based on integration of RNA-seq and ChIP-seq data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:43:49.768351Z"
+    },
+    {
+      "id": "26cc3f3d-df4a-4e15-adb1-3c99c4c26cb6",
+      "content_id": "ea442998-d338-42e4-88ce-d2b2dcfc0392",
+      "claim_id": "C49",
+      "claim": "6/84 co-bound and coregulated genes were negatively regulated by both Sox17 and Bcat.",
+      "claim_type": "EXPLICIT",
+      "source": "and finally 6/84 were negatively regulated by both Sox17 and Bcat.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section based on integration of RNA-seq and ChIP-seq data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:43:49.768351Z"
+    },
+    {
+      "id": "ed7a2649-2c52-4d7f-b2bf-d7741876661e",
+      "content_id": "ea442998-d338-42e4-88ce-d2b2dcfc0392",
+      "claim_id": "C50",
+      "claim": "Bcat positively regulated most of the co-bound and coregulated genes (59/84, 70%).",
+      "claim_type": "EXPLICIT",
+      "source": "The observation that Bcat positively regulated most of these genes (59/84, 70%) was consistent with its known role in transcriptional activation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section based on integration of RNA-seq and ChIP-seq data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:43:49.768351Z"
+    },
+    {
+      "id": "3dcedf5b-aaa2-4ad8-b47d-ea974d58eae9",
+      "content_id": "ea442998-d338-42e4-88ce-d2b2dcfc0392",
+      "claim_id": "C51",
+      "claim": "Sox17 positively regulated 60% of co-bound and coregulated targets and repressed 40% of targets, suggesting context-dependent activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Sox17 positively regulated 60% of targets and repressed 40% of targets, suggesting context-dependent activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section based on integration of RNA-seq and ChIP-seq data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:43:49.768351Z"
+    },
+    {
+      "id": "ed9d4356-f46d-4662-bbfa-37e4290e5b4b",
+      "content_id": "ea442998-d338-42e4-88ce-d2b2dcfc0392",
+      "claim_id": "C52",
+      "claim": "Co-injection of mSox17 mRNA could not rescue the normal expression patterns of six1, osr1, lhx5 or dkk1 in Bcat-MO embryos, demonstrating that reduced Sox17 in Bcat-depleted embryos cannot account for the disrupted expression.",
+      "claim_type": "EXPLICIT",
+      "source": "Co-injection of mSox17 mRNA could not rescue the normal expression patterns of six1, osr1, lhx5 or dkk1 in Bcat-MO embryos, but it did rescue foxa1 expression (Figure 5). This demonstrates that reduced Sox17 in Bcat-depleted embryos cannot account for the disrupted six1, osr1, lhx5 or dkk1 expression, but it can account for the reduced foxa1 expression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section based on epistasis experiments shown in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:43:49.768351Z"
+    },
+    {
+      "id": "5dfc4611-9b50-4885-9665-f61a614f8177",
+      "content_id": "ea442998-d338-42e4-88ce-d2b2dcfc0392",
+      "claim_id": "C53",
+      "claim": "Co-injection of stabilized (ca)Bcat mRNA rescued the normal expression of foxa1 but not six1, osr1, lhx5 or dkk1 in Sox17-morphants indicating that the defects in their expression were not simply due to reduced Wnt signaling.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, co-injection of stabilized (ca)Bcat mRNA rescued the normal expression of foxa1 but not six1, osr1, lhx5 or dkk1 in Sox17-morphants indicating that the defects in their expression were not simply due to reduced Wnt signaling (Figure 5).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section based on epistasis experiments shown in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:43:49.768351Z"
+    },
+    {
+      "id": "398f5a24-8d3d-414e-a8c5-29d50f70ac08",
+      "content_id": "ea442998-d338-42e4-88ce-d2b2dcfc0392",
+      "claim_id": "C54",
+      "claim": "Sox17 and Bcat coordinate spatial gene expression in the embryo in a complex gene-specific manner.",
+      "claim_type": "EXPLICIT",
+      "source": "These experiments also show that Sox17 and Bcat coordinate spatial gene expression in the embryo in a complex gene-specific manner.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation stated in the Results section based on epistasis experiments.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:43:49.768351Z"
+    },
+    {
+      "id": "099a260e-a21f-467e-be71-72d1d9d99309",
+      "content_id": "ea442998-d338-42e4-88ce-d2b2dcfc0392",
+      "claim_id": "C55",
+      "claim": "The \u22121 kb six1 enhancer is evolutionarily conserved from Xenopus to human containing three Sox-binding sites but no predicted Tcf-binding sites.",
+      "claim_type": "EXPLICIT",
+      "source": "The \u22121 kb six1 enhancer is evolutionarily conserved from Xenopus to human containing three Sox-binding sites but no predicted Tcf-binding sites (Figure 6B).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section based on sequence analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:43:49.768351Z"
+    },
+    {
+      "id": "88185fe9-9479-49a7-8994-738b35c1db40",
+      "content_id": "ea442998-d338-42e4-88ce-d2b2dcfc0392",
+      "claim_id": "C56",
+      "claim": "In mouse, the \u22121 kb six1 enhancer can drive transgenic expression in the embryonic gut tube.",
+      "claim_type": "EXPLICIT",
+      "source": "In mouse, this enhancer can drive transgenic expression in the embryonic gut tube, although the TFs that modulate it were previously unknown (Sato et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section and supported by citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:43:49.768351Z"
+    },
+    {
+      "id": "aa754b15-9c3b-4024-bb0a-75f637d431c9",
+      "content_id": "ea442998-d338-42e4-88ce-d2b2dcfc0392",
+      "claim_id": "C57",
+      "claim": "The human SIX1 CRM is also bound by SOX17 in human PSC-derived endoderm.",
+      "claim_type": "EXPLICIT",
+      "source": "Analysis of published ChIP-seq data indicate that, like in Xenopus, the human SIX1 CRM is also bound by SOX17 in human PSC-derived endoderm (Figure 6\u2014figure supplement 1A; Tsankov et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section based on analysis of published ChIP-seq data.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:43:49.768351Z"
+    },
+    {
+      "id": "062c1181-25c3-4583-a55b-2d7cf8ab1337",
+      "content_id": "ea442998-d338-42e4-88ce-d2b2dcfc0392",
+      "claim_id": "C58",
+      "claim": "Both Sox17 and Bcat are required for activation of the \u22121 kb six1 enhancer.",
+      "claim_type": "EXPLICIT",
+      "source": "Depletion of endogenous Sox17 or Bcat abolished expression of the \u22121six1:luc reporter and this was rescued by adding back mSox17 to Sox17-MO or by adding back caBcat mRNA to Bcat-MO embryos (Figure 6C). However, co-injection of mSox17 could not rescue expression in Bcat-MO embryos and nor could caBcat RNA rescue expression in Sox17-MOs (Figure 6C). These epistasis experiments indicate that both Sox17 and Bcat are required for activation of the \u22121 kb six1 enhancer.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section based on luciferase reporter assays.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:43:49.768351Z"
+    },
+    {
+      "id": "ec1bb08d-e090-4d68-8f5b-4cc311fe010a",
+      "content_id": "ea442998-d338-42e4-88ce-d2b2dcfc0392",
+      "claim_id": "C59",
+      "claim": "Sox17 restricts Bcat-mediated transactivation at the dkk1 and lhx5 enhancers.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, in the case of the \u22121.6 kb dkk1, \u22127.5 kb dkk1 and the \u22121 kb lhx5:luc constructs, depletion of Bcat abrogated reporter activity, whereas Sox17 depletion resulted in significantly elevated reporter activity, indicating that Sox17 restricts Bcat-mediated transactivation at the dkk1 and lhx5 enhancers (Figure 6E, and Figure 6\u2014figure supplement 2C,D).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section based on luciferase reporter assays.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:43:49.768351Z"
+    },
+    {
+      "id": "583da467-ab81-4b0c-a377-2ac18cd98f57",
+      "content_id": "ea442998-d338-42e4-88ce-d2b2dcfc0392",
+      "claim_id": "C60",
+      "claim": "Injection of mSox17 but not caBcat mRNA was sufficient to stimulate the \u22121 kb six1:luc and human SIX1:luc reporters in the ectoderm, but co-injection of caBcat along with mSox17 synergistically activated the reporters.",
+      "claim_type": "EXPLICIT",
+      "source": "Injection of mSox17 but not caBcat mRNA was sufficient to stimulate the \u22121 kb six1:luc and human SIX1:luc reporters in the ectoderm, but co-injection of caBcat along with mSox17 synergistically activated the reporters (Figure 6C and Figure 6\u2014figure supplement 1D).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section based on luciferase reporter assays.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:43:49.768351Z"
+    },
+    {
+      "id": "4914eb56-7fc7-4acf-af34-f17b63d4aae5",
+      "content_id": "ea442998-d338-42e4-88ce-d2b2dcfc0392",
+      "claim_id": "C61",
+      "claim": "caBcat but not mSox17 was able to activate the dkk1 and lhx5 reporters in ventral ectoderm, and co-injection of mSox17 suppressed the ability of caBcat to stimulate these reporters.",
+      "claim_type": "EXPLICIT",
+      "source": "On the other hand, caBcat but not mSox17 was able to activate the dkk1 and lhx5 reporters in ventral ectoderm, and co-injection of mSox17 suppressed the ability of caBcat to stimulate these reporters (Figure 6E and Figure 6\u2014figure supplement 2C,D), consistent with the endogenous regulation (Figure 5).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section based on luciferase reporter assays.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:43:49.768351Z"
+    },
+    {
+      "id": "16988c43-208f-47b4-9c6b-3201426cb653",
+      "content_id": "ea442998-d338-42e4-88ce-d2b2dcfc0392",
+      "claim_id": "C62",
+      "claim": "The ability of Sox17 to activate the six1 reporter or suppress Bcat-induced activation of the dkk1 and lhx5 reporters required the DNA-binding function of Sox17.",
+      "claim_type": "EXPLICIT",
+      "source": "The ability of Sox17 to activate the six1 reporter or suppress Bcat-induced activation of the dkk1 and lhx5 reporters required the DNA-binding function of Sox17. A M76A point mutation in mSox17, known to disrupt the DNA-binding HMG domain (Sinner et al., 2007) significantly reduced Sox17's ability to activate the six1 or repress the dkk1 reporter activity, respectively (Figure 6C,E and Figure 6\u2014figure supplement 2C,D).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section based on luciferase reporter assays with mutant Sox17.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:43:49.768351Z"
+    },
+    {
+      "id": "99f026a1-c919-47e5-a7d7-24e4c43fe590",
+      "content_id": "ea442998-d338-42e4-88ce-d2b2dcfc0392",
+      "claim_id": "C63",
+      "claim": "Tcf7l1-VP16 fusion construct had little to no impact on the six1 reporter, but robustly activated the dkk1 and lhx5 reporters in ventral ectoderm.",
+      "claim_type": "EXPLICIT",
+      "source": "To test whether or not Tcfs regulate these enhancers, we injected a Tcf7l1-VP16 fusion construct which constitutively activates Tcf-target gene transcription (Darken and Wilson, 2001). This had little to no impact on the six1 reporter, but robustly activated the dkk1 and lhx5 reporters in ventral ectoderm (Figure 6D,F and Figure 6\u2014figure supplement 2D,E).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section based on luciferase reporter assays.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:43:49.768351Z"
+    },
+    {
+      "id": "2527bcc7-261c-4bd6-8ebb-ad71a7ce82d5",
+      "content_id": "ea442998-d338-42e4-88ce-d2b2dcfc0392",
+      "claim_id": "C64",
+      "claim": "Loss of the Sox17 sites abolished normal and Sox17/Bcat-induced expression of the six1:luc reporter.",
+      "claim_type": "EXPLICIT",
+      "source": "We next mutated the Sox17 and Tcf-binding sites in the six1 and dkk1 enhancers and examined the impact on Sox17, Bcat and Tcf regulation. Loss of the Sox17 sites abolished normal and Sox17/Bcat-induced expression of the six1:luc reporter (Figure 6D).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section based on luciferase reporter assays with mutant enhancers.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:43:49.768351Z"
+    },
+    {
+      "id": "da9ea0be-f59a-4abb-b46b-a1bbc77fda6a",
+      "content_id": "ea442998-d338-42e4-88ce-d2b2dcfc0392",
+      "claim_id": "C65",
+      "claim": "Mutation of the Sox sites in the dkk1 enhancers resulted in elevated reporter activity consistent with Sox17-mediated repression.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, mutation of the Sox sites in the dkk1 enhancers resulted in elevated reporter activity consistent with Sox17-mediated repression (Figure 6F and Figure 6\u2014figure supplement 2E).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section based on luciferase reporter assays with mutant enhancers.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:43:49.768351Z"
+    },
+    {
+      "id": "882cbf20-b468-40d0-b5b2-c279b12a278b",
+      "content_id": "ea442998-d338-42e4-88ce-d2b2dcfc0392",
+      "claim_id": "C66",
+      "claim": "Deletion of the Tcf sites in the dkk1 enhancers abolished expression in the dorsal mesendoderm as well as Bcat or Tcf7l1-VP16-induced activation in the ventral ectoderm, consistent with Bcat-Tcf complexes activating these enhancers.",
+      "claim_type": "EXPLICIT",
+      "source": "Deletion of the Tcf sites in the dkk1 enhancers abolished expression in the dorsal mesendoderm as well as Bcat or Tcf7l1-VP16-induced activation in the ventral ectoderm, consistent with Bcat-Tcf complexes activating these enhancers (Figure 6F and Figure 6\u2014figure supplement 2E).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section based on luciferase reporter assays with mutant enhancers.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:43:49.768351Z"
+    },
+    {
+      "id": "5429c065-4328-4d2d-838c-a3a7768bdded",
+      "content_id": "ea442998-d338-42e4-88ce-d2b2dcfc0392",
+      "claim_id": "C67",
+      "claim": "An osr1 enhancer +7 kb downstream of its TSS and a +3 kb igf3 enhancer have no evidence of Tcf binding sites and were both synergistically activated by Sox17 and Bcat, whereas co-injection of Tcf7l1-VP16 failed to activate either reporter.",
+      "claim_type": "EXPLICIT",
+      "source": "To examine the generality of the apparent Tcf-independent regulation of six1, we identified two additional enhancers with similar characteristics: an osr1 enhancer +7 kb downstream of its TSS (Figure 6\u2014figure supplement 1B) and a +3 kb igf3 enhancer (Figure 6\u2014figure supplement 1B,C and Supplementary file 6). Both these enhancers have no evidence of Tcf binding sites and they were both synergistically activated by Sox17 and Bcat, whereas co-injection of Tcf7l1-VP16 failed to activate either reporter (Figure 6\u2014figure supplement 1E,F).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section based on luciferase reporter assays.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:43:49.768351Z"
+    },
+    {
+      "id": "1caa02f6-2c63-47eb-b03d-2ad89222e241",
+      "content_id": "ea442998-d338-42e4-88ce-d2b2dcfc0392",
+      "claim_id": "C68",
+      "claim": "Sox17 and Bcat synergistically can activate the six, osr1 and igf3 enhancers, likely independent of Tcfs.",
+      "claim_type": "EXPLICIT",
+      "source": "From these collective data, we conclude that Sox17 and Bcat synergistically can activate the six, osr1 and igf3 enhancers, likely independent of Tcfs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion stated in the Results section based on luciferase reporter assays.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:43:49.768351Z"
+    },
+    {
+      "id": "0e55dc1b-4108-422f-b9c0-4c4d2b7de3a2",
+      "content_id": "ea442998-d338-42e4-88ce-d2b2dcfc0392",
+      "claim_id": "C69",
+      "claim": "The dkk1 and lhx5 enhancers are activated through a Bcat/Tcf transcription mechanism, with Sox17 spatially restricting Bcat/Tcf activity to maintain cell-type-specific gene expression.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the dkk1 and lhx5 enhancers are activated through a Bcat/Tcf transcription mechanism, with Sox17 spatially restricting Bcat/Tcf activity to maintain cell-type-specific gene expression (Figure 7).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion stated in the Results section based on luciferase reporter assays.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:43:49.768351Z"
+    },
+    {
+      "id": "417556ca-1a4f-4e85-98bc-51221ef05dda",
+      "content_id": "ea442998-d338-42e4-88ce-d2b2dcfc0392",
+      "claim_id": "C70",
+      "claim": "In all vertebrate embryos, Sox17 is specifically expressed in the gastrula endoderm where it is required for early gut development.",
+      "claim_type": "EXPLICIT",
+      "source": "In all vertebrate embryos, Sox17 is specifically expressed in the gastrula endoderm where it is required for early gut development (Clements et al., 2003; Hudson et al., 1997; Kanai-Azuma et al., 2002; Viotti et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Introduction and supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:43:49.768351Z"
+    },
+    {
+      "id": "91a4119e-590d-4cb7-a847-5cf9dcae89da",
+      "content_id": "ea442998-d338-42e4-88ce-d2b2dcfc0392",
+      "claim_id": "C71",
+      "claim": "Only few direct transcriptional targets of Sox17 have been identified (e.g.: hnf1b, foxa1 and dhh).",
+      "claim_type": "EXPLICIT",
+      "source": "Despite the critical role of Sox17 in endoderm development, only few of its direct transcriptional targets have been identified (e.g.: hnf1b, foxa1 and dhh) (Ahmed et al., 2004; Sinner et al., 2004; Yagi et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Introduction and supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:43:49.768351Z"
+    },
+    {
+      "id": "c6797d9d-2cec-48ed-9063-da14cb3f8851",
+      "content_id": "ea442998-d338-42e4-88ce-d2b2dcfc0392",
+      "claim_id": "C72",
+      "claim": "In Xenopus, ectopic Sox17 is sufficient to initiate endoderm development in pluripotent blastula animal cap cells.",
+      "claim_type": "EXPLICIT",
+      "source": "In Xenopus, ectopic Sox17 is sufficient to initiate endoderm development in pluripotent blastula animal cap cells (Clements et al., 2003; Hudson et al., 1997), and co-injection of stabilized Bcat can enhance this activity (Sinner et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Introduction and supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:43:49.768351Z"
+    },
+    {
+      "id": "f23e52dc-9f3c-4456-a4d5-51e14b09196b",
+      "content_id": "ea442998-d338-42e4-88ce-d2b2dcfc0392",
+      "claim_id": "C73",
+      "claim": "Co-injection of stabilized Bcat can enhance Sox17's ability to initiate endoderm development in animal cap cells.",
+      "claim_type": "EXPLICIT",
+      "source": "In Xenopus, ectopic Sox17 is sufficient to initiate endoderm development in pluripotent blastula animal cap cells (Clements et al., 2003; Hudson et al., 1997), and co-injection of stabilized Bcat can enhance this activity (Sinner et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Introduction and supported by citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:43:49.768351Z"
+    },
+    {
+      "id": "dd6d5b8a-ae89-459b-984a-aa4fe02f79e6",
+      "content_id": "ea442998-d338-42e4-88ce-d2b2dcfc0392",
+      "claim_id": "C74",
+      "claim": "Sox17 can physically interact with Bcat in vitro.",
+      "claim_type": "EXPLICIT",
+      "source": "Sox17 can physically interact with Bcat in vitro and suppress the transcriptional activity of generic Tcf/Bcat reporter constructs (TOPflash) in tissue culture experiments (Sinner et al., 2007; Zorn et al., 1999).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Introduction and supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:43:49.768351Z"
+    },
+    {
+      "id": "6ab0391e-3276-46e0-af71-6b9fa54f5155",
+      "content_id": "ea442998-d338-42e4-88ce-d2b2dcfc0392",
+      "claim_id": "C75",
+      "claim": "Sox17 can suppress the transcriptional activity of generic Tcf/Bcat reporter constructs (TOPflash) in tissue culture experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "Sox17 can physically interact with Bcat in vitro and suppress the transcriptional activity of generic Tcf/Bcat reporter constructs (TOPflash) in tissue culture experiments (Sinner et al., 2007; Zorn et al., 1999).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Introduction and supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:43:49.768351Z"
+    },
+    {
+      "id": "7a611807-8e57-45e9-9de5-e3dcf58561d0",
+      "content_id": "ea442998-d338-42e4-88ce-d2b2dcfc0392",
+      "claim_id": "C76",
+      "claim": "20% of the Xenopus Sox17-bound genes were also SOX17-bound in hPSC-induced definitive endoderm.",
+      "claim_type": "EXPLICIT",
+      "source": "A comparison to published human ChIP-Seq data revealed that 20% of the Xenopus Sox17-bound genes were also SOX17-bound in hPSC-induced definitive endoderm (Figure 2\u2014figure supplement 2D; Tsankov et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section based on comparison to published ChIP-seq data.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:43:49.768351Z"
+    },
+    {
+      "id": "6f7fb408-2904-4924-bfd3-03a4975cbb53",
+      "content_id": "ea442998-d338-42e4-88ce-d2b2dcfc0392",
+      "claim_id": "C77",
+      "claim": "GO analysis of the conserved SOX17-bound genes show an enrichment for 'Tgfb receptor activity' and 'Bcat binding'.",
+      "claim_type": "EXPLICIT",
+      "source": "GO analysis of the conserved SOX17-bound genes show an enrichment for 'Tgfb receptor activity' and 'Bcat binding' (Figure 2\u2014figure supplement 2E), reinforcing the notion that functional interaction with the Nodal and Wnt pathways is a conserved feature of the Sox17-regulated endoderm GRN.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section based on GO analysis of conserved Sox17-bound genes.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:43:49.768351Z"
+    },
+    {
+      "id": "9a415013-2eb1-4fdf-9b1c-c13635ce712d",
+      "content_id": "ea442998-d338-42e4-88ce-d2b2dcfc0392",
+      "claim_id": "C78",
+      "claim": "Functional interaction with the Nodal and Wnt pathways is a conserved feature of the Sox17-regulated endoderm GRN.",
+      "claim_type": "EXPLICIT",
+      "source": "GO analysis of the conserved SOX17-bound genes show an enrichment for 'Tgfb receptor activity' and 'Bcat binding' (Figure 2\u2014figure supplement 2E), reinforcing the notion that functional interaction with the Nodal and Wnt pathways is a conserved feature of the Sox17-regulated endoderm GRN.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation stated in the Results section based on GO analysis of conserved Sox17-bound genes.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:43:49.768351Z"
+    },
+    {
+      "id": "9f202d28-f776-47fd-a9d7-ec72d5aef841",
+      "content_id": "ea442998-d338-42e4-88ce-d2b2dcfc0392",
+      "claim_id": "C79",
+      "claim": "Sox17 sits atop of the regulatory hierarchy regulating endoderm differentiation.",
+      "claim_type": "EXPLICIT",
+      "source": "This confirms that Sox17 sits atop of the regulatory hierarchy regulating endoderm differentiation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation stated in the Results section based on the observation that Sox17 regulates many TFs and signaling components.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:43:49.768351Z"
+    },
+    {
+      "id": "0a50aec5-0472-4c07-a4d3-5c32969eb809",
+      "content_id": "ea442998-d338-42e4-88ce-d2b2dcfc0392",
+      "claim_id": "C80",
+      "claim": "Sox17 acts in a negative feedback loop to restrain Nodal signaling.",
+      "claim_type": "EXPLICIT",
+      "source": "We demonstrate that functional interactions with canonical Wnt signaling is a key feature of the Sox17-regulated GRN. Over a third of all Bcat and Sox17 genomic binding in the gastrula occur at the same CRMs. In some instances, Sox17 suppresses Bcat-Tcf mediated transcription, while in other cases, Sox17 and Bcat synergistically activates enhancers apparently independently of Tcfs, indicating a novel mode of regulation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract as a primary finding.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:43:49.768351Z"
+    },
+    {
+      "id": "3cc78faf-85c7-4c9a-92c1-956bebe3bf3f",
+      "content_id": "ea442998-d338-42e4-88ce-d2b2dcfc0392",
+      "claim_id": "C81",
+      "claim": "In embryos and pluripotent stem cells (PSCs), Nodal/Smad2 and Wnt/\u00df-catenin signaling cooperate to initiate the mesendoderm program and subsequent development of definitive endoderm progenitors.",
+      "claim_type": "EXPLICIT",
+      "source": "In embryos and pluripotent stem cells (PSCs), Nodal/Smad2 and Wnt/\u00df-catenin (Ctnnb1; hereafter Bcat) signaling cooperate to initiate the mesendoderm program and subsequent development of definitive endoderm progenitors, which gives rise to the epithelia of the digestive and respiratory systems (Sumi et al., 2008; Zorn and Wells, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Introduction and supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:43:49.768351Z"
+    },
+    {
+      "id": "9c1d3e2c-1d06-4636-8641-eb7e3c5cc09a",
+      "content_id": "ea442998-d338-42e4-88ce-d2b2dcfc0392",
+      "claim_id": "C82",
+      "claim": "A core set of endoderm TFs: Sox17, Gata4-6, Eomes, Foxa1/2 and Mix family of homeodomain TFs execute the endoderm GRN.",
+      "claim_type": "EXPLICIT",
+      "source": "Downstream of Nodal and Wnt, a core set of endoderm TFs: Sox17, Gata4-6, Eomes, Foxa1/2 and Mix family of homeodomain TFs execute the endoderm GRN (Arnold et al., 2008; Charney et al., 2017b; Engert et al., 2013; Sinner et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Introduction and supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:43:49.768351Z"
+    },
+    {
+      "id": "ead68ccc-1f6d-4dd3-9339-c80ee712ebdf",
+      "content_id": "ea442998-d338-42e4-88ce-d2b2dcfc0392",
+      "claim_id": "C83",
+      "claim": "In Xenopus, maternal Wnt/Bcat, active on the dorsal side of the blastula, is required for high levels of nodal expression at the onset of zygotic transcription.",
+      "claim_type": "EXPLICIT",
+      "source": "In Xenopus where endoderm specification is well studied, the Nodal and Wnt pathways interact at several levels. First, maternal (m) Wnt/Bcat, active on the dorsal side of the blastula, is required for high levels of nodal expression at the onset of zygotic transcription (Hyde and Old, 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Introduction and supported by citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:43:49.768351Z"
+    },
+    {
+      "id": "2d4d51dc-b432-48dd-aa2f-155aa0e26c2e",
+      "content_id": "ea442998-d338-42e4-88ce-d2b2dcfc0392",
+      "claim_id": "C84",
+      "claim": "Nodal and mWnt cooperate to promote the expression of endoderm TFs Sox17, Foxa2 and many dorsal mesendoderm organizer genes.",
+      "claim_type": "EXPLICIT",
+      "source": "Then Nodal and mWnt cooperate to promote the expression of endoderm TFs Sox17, Foxa2 and many dorsal mesendoderm organizer genes (Xanthos et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Introduction and supported by citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:43:49.768351Z"
+    },
+    {
+      "id": "0a3ec821-e0ce-43d5-bfcd-b75bcef404a8",
+      "content_id": "ea442998-d338-42e4-88ce-d2b2dcfc0392",
+      "claim_id": "C85",
+      "claim": "Zygotic wnt8 is expressed on the ventral side of the gastrula where, together with Nodal signaling, it promotes ventral and posterior mesendoderm identities.",
+      "claim_type": "EXPLICIT",
+      "source": "A few hours later, zygotic (z) wnt8 (a Nodal target) is expressed on the ventral side of the gastrula where, together with Nodal signaling, it promotes ventral and posterior mesendoderm identities (Charney et al., 2017b; Stevens et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Introduction and supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:43:49.768351Z"
+    },
+    {
+      "id": "84a5e792-7d5a-4b0c-92f9-89ddf8057ecc",
+      "content_id": "ea442998-d338-42e4-88ce-d2b2dcfc0392",
+      "claim_id": "C86",
+      "claim": "In mammals, early Wnt/Bcat activates expression of Nodal and core endoderm TFs, with prolonged Wnt promoting posterior hindgut fate.",
+      "claim_type": "EXPLICIT",
+      "source": "In mammals, early Wnt/Bcat similarly activates expression of Nodal and core endoderm TFs, with prolonged Wnt promoting posterior hindgut fate (Engert et al., 2013; Zorn and Wells, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Introduction and supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:43:49.768351Z"
+    },
+    {
+      "id": "250a2939-f4e2-475b-8a69-388097c7a5dd",
+      "content_id": "ea442998-d338-42e4-88ce-d2b2dcfc0392",
+      "claim_id": "C87",
+      "claim": "All Tcfs have nearly identical DNA-binding specificities.",
+      "claim_type": "EXPLICIT",
+      "source": "How distinct context-specific Wnt target genes are selected is unclear since all Tcfs have nearly identical DNA-binding specificities (Badis et al., 2009; Ramakrishnan and Cadigan, 2017) and for the most part they are ubiquitously expressed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Introduction and supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:43:49.768351Z"
+    },
+    {
+      "id": "13b4e7a5-e445-4871-8368-d27a99452f6c",
+      "content_id": "ea442998-d338-42e4-88ce-d2b2dcfc0392",
+      "claim_id": "C88",
+      "claim": "The Wnt-enhanceosome interacts with other lineage-specific TFs to integrate lineage-specific inputs.",
+      "claim_type": "EXPLICIT",
+      "source": "An emerging idea is that the Wnt-enhanceosome also interacts with other lineage-specific TFs to integrate lineage-specific inputs (Gammons and Bienz, 2018; Trompouki et al., 2011); yet, how these impact genomic specificity in vivo is largely untested and the idea of Tcf-independent Wnt-mediated transcription remains controversial.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Introduction and supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:43:49.768351Z"
+    },
+    {
+      "id": "ba669654-91d8-4d9a-8ded-6c78a387ce0d",
+      "content_id": "ea442998-d338-42e4-88ce-d2b2dcfc0392",
+      "claim_id": "C89",
+      "claim": "Sox17 establishes Sox17 as a tissue-specific modifier of Wnt responses.",
+      "claim_type": "EXPLICIT",
+      "source": "Our findings establish Sox17 as a tissue-specific modifier of Wnt responses and point to a novel paradigm where genomic specificity of Wnt/\u03b2-catenin transcription is determined through functional interactions between lineage-specific Sox TFs and \u03b2-catenin/Tcf transcriptional complexes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract as a primary conclusion of the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:43:49.768351Z"
+    },
+    {
+      "id": "e283a9be-8fa9-4883-b094-25cfffbca5cd",
+      "content_id": "ea442998-d338-42e4-88ce-d2b2dcfc0392",
+      "claim_id": "C90",
+      "claim": "Genomic specificity of Wnt/\u03b2-catenin transcription is determined through functional interactions between lineage-specific Sox TFs and \u03b2-catenin/Tcf transcriptional complexes.",
+      "claim_type": "EXPLICIT",
+      "source": "Our findings establish Sox17 as a tissue-specific modifier of Wnt responses and point to a novel paradigm where genomic specificity of Wnt/\u03b2-catenin transcription is determined through functional interactions between lineage-specific Sox TFs and \u03b2-catenin/Tcf transcriptional complexes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract as a primary conclusion of the study.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:43:49.768351Z"
+    },
+    {
+      "id": "ddd5970a-3c3e-4975-b8fc-b4e73d4543be",
+      "content_id": "ea442998-d338-42e4-88ce-d2b2dcfc0392",
+      "claim_id": "C91",
+      "claim": "This mechanism has important implications across a diverse range of developmental and disease contexts given the ubiquitous nature of Sox TFs and Wnt signaling.",
+      "claim_type": "EXPLICIT",
+      "source": "Given the ubiquitous nature of Sox TFs and Wnt signaling, this mechanism has important implications across a diverse range of developmental and disease contexts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract as a broader implication of the findings.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:43:49.768351Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "44f2764c-f2ea-4aaf-9e2a-e9bbfc7c7d53",
+      "content_id": "ea442998-d338-42e4-88ce-d2b2dcfc0392",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Sox17 morpholino knockdown in Xenopus tropicalis effectively depletes Sox17 protein, produces a phenotype consistent with previous reports and mouse mutants, and can be rescued by mouse Sox17 mRNA.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6-C9 establish a validated Sox17 loss-of-function model. The morpholino targets all three sox17 paralogs (C6), achieves robust protein knockdown confirmed by immunostaining (C7), produces a phenotype consistent with prior work (C8), and is rescued by heterologous Sox17 (C9), confirming specificity.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:43:49.768351Z"
+    },
+    {
+      "id": "954a285b-3337-4a71-a5a2-23945ddd7985",
+      "content_id": "ea442998-d338-42e4-88ce-d2b2dcfc0392",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Sox17 regulates 1023 genes including 73 transcription factors, with >75% of changes occurring during mid-late gastrula. Sox17 promotes endoderm genes while repressing ectoderm/mesoderm genes and negatively regulating Nodal pathway components.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C10-C17 define the Sox17-regulated transcriptome through RNA-seq with appropriate statistical thresholds (>2 fold, FDR<5%). The temporal dynamics (C12), spatial enrichment analysis (C14), and identification of repressed alternative lineage genes (C14-C15) and Nodal feedback (C16-C17) are well-supported by the data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:43:49.768351Z"
+    },
+    {
+      "id": "cf828538-cbcd-4c68-85ab-0da9fd0128a6",
+      "content_id": "ea442998-d338-42e4-88ce-d2b2dcfc0392",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Sox17 ChIP-seq identifies 8436 Sox17-bound CRMs associated with 4801 genes, predominantly at distal enhancers co-occupied with Ep300. Integration with RNA-seq identifies 315 direct targets including 197 activated and 118 repressed genes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C18-C26 present comprehensive ChIP-seq analysis with appropriate validation (antibody specificity confirmed by C23, motif enrichment by C22, Ep300 co-occupancy by C21). The integration of ChIP-seq and RNA-seq to identify direct targets (C24-C26) is methodologically sound with proper statistical thresholds (IDR p<0.05).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:43:49.768351Z"
+    },
+    {
+      "id": "2f001234-0f6f-43b2-885b-1abdedfc0e48",
+      "content_id": "ea442998-d338-42e4-88ce-d2b2dcfc0392",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "\u03b2-catenin regulates 2568 genes including 251 transcription factors and directly regulates ~200 endoderm-enriched genes, contrary to the prevailing view that \u03b2-catenin primarily acts through Nodal ligand activation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C29-C35 establish the \u03b2-catenin-regulated transcriptome through RNA-seq and integration with published ChIP-seq data. The identification of direct endoderm targets (C34) and the challenge to prevailing models (C35) are well-supported by the genomic data showing \u03b2-catenin binding at endoderm gene loci.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:43:49.768351Z"
+    },
+    {
+      "id": "7e379f4c-c9e6-4502-935e-d94e7bd2bc0c",
+      "content_id": "ea442998-d338-42e4-88ce-d2b2dcfc0392",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "\u03b2-catenin-bound peaks are more enriched for Sox motifs than canonical Tcf motifs, a finding replicated across multiple independent ChIP-seq datasets.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C36-C37 report a surprising motif enrichment pattern validated across three independent datasets. The consistency across studies (C37) strengthens this finding, though the functional significance requires further investigation through the reporter assays described in later claims.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:43:49.768351Z"
+    },
+    {
+      "id": "19e5024d-a1ee-422e-a617-8986f5bedecd",
+      "content_id": "ea442998-d338-42e4-88ce-d2b2dcfc0392",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Sox17 and \u03b2-catenin co-occupy 3956 genomic loci (one-third of Sox17 binding) with active enhancer signatures, and co-regulate 415 transcripts (~40% of Sox17-regulated genes), indicating extensive functional interaction.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C38-C42 demonstrate extensive Sox17-\u03b2-catenin co-occupancy through ChIP-seq integration with appropriate statistical validation (hypergeometric tests). The epigenetic signatures (C38) and transcriptional co-regulation (C40) provide strong evidence for functional interaction, though the mechanistic basis requires the functional studies in subsequent claims.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:43:49.768351Z"
+    },
+    {
+      "id": "f05abc49-ce6a-4d45-ac6b-8e576625fb4f",
+      "content_id": "ea442998-d338-42e4-88ce-d2b2dcfc0392",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Among co-bound and co-regulated peaks, 53% contain both Sox17 and Tcf motifs while 24% have Sox motifs without Tcf sites. ChIP-reChIP experiments confirm Sox17 and \u03b2-catenin bind the same enhancers in the same cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C43-C45 provide motif analysis and direct biochemical evidence for co-occupancy. The ChIP-reChIP experiments (C45) are critical validation showing that co-occupancy occurs in the same cells rather than different populations, though the resolution (~150 bp) cannot definitively prove direct protein-protein interaction.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:43:49.768351Z"
+    },
+    {
+      "id": "9c28cd8a-8ac6-4b00-9580-ccb6b2e0c7c2",
+      "content_id": "ea442998-d338-42e4-88ce-d2b2dcfc0392",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The 84 co-bound and co-regulated genes fall into four regulatory categories: 32 activated by both factors, 27 activated by \u03b2-catenin but repressed by Sox17, 19 activated by Sox17 but repressed by \u03b2-catenin, and 6 repressed by both.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C46-C51 categorize co-regulated genes based on RNA-seq data from both knockdowns. The classification is data-driven and reveals context-dependent Sox17 activity (C51), though the molecular mechanisms underlying these different regulatory modes require the functional studies in subsequent claims.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:43:49.768351Z"
+    },
+    {
+      "id": "0245674a-245d-4c0b-a67d-f1219e5906c2",
+      "content_id": "ea442998-d338-42e4-88ce-d2b2dcfc0392",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Epistasis experiments demonstrate that Sox17 and \u03b2-catenin are both required for normal expression of six1, osr1, lhx5, and dkk1, indicating they coordinate spatial gene expression in a complex gene-specific manner.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C52-C54 present epistasis experiments showing that neither Sox17 nor \u03b2-catenin alone can rescue expression of key target genes in the other's absence. This provides strong functional evidence for their interdependence, though the experiments are qualitative (in situ hybridization) rather than quantitative.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:43:49.768351Z"
+    },
+    {
+      "id": "593951b9-2ad0-4b72-8476-f4df8a0587a5",
+      "content_id": "ea442998-d338-42e4-88ce-d2b2dcfc0392",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The evolutionarily conserved -1kb six1 enhancer contains Sox-binding sites but no Tcf sites, is bound by SOX17 in human endoderm, and requires both Sox17 and \u03b2-catenin for activation in Xenopus.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C55-C58 establish the six1 enhancer as a model for Sox17-\u03b2-catenin synergy. The evolutionary conservation (C55-C57) and functional requirement for both factors (C58) are well-demonstrated through luciferase assays with appropriate rescue experiments, providing strong evidence for Tcf-independent regulation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:43:49.768351Z"
+    },
+    {
+      "id": "164b223b-abaf-4414-9ee2-4d8420446558",
+      "content_id": "ea442998-d338-42e4-88ce-d2b2dcfc0392",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Sox17 restricts \u03b2-catenin-mediated activation of dkk1 and lhx5 enhancers. Sox17 alone activates six1 reporters while \u03b2-catenin alone activates dkk1/lhx5 reporters, with Sox17 suppressing \u03b2-catenin activation of the latter. This activity requires Sox17 DNA-binding.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C59-C62 demonstrate opposite regulatory modes on different enhancers through luciferase assays in ectopic expression contexts. The requirement for Sox17 DNA-binding (C62) using a characterized mutant provides mechanistic insight. The experiments are well-controlled with appropriate tissue-specific injections.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:43:49.768351Z"
+    },
+    {
+      "id": "a3b2eb84-48ff-40e3-ad9c-e76e76f4ca08",
+      "content_id": "ea442998-d338-42e4-88ce-d2b2dcfc0392",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Tcf7l1-VP16 activates dkk1 and lhx5 but not six1 reporters. Mutation of Sox sites abolishes six1 reporter activity but increases dkk1 activity, while deletion of Tcf sites abolishes dkk1 reporter activity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C63-C66 use constitutively active Tcf and site-directed mutagenesis to dissect the roles of Sox and Tcf binding sites. The differential effects on six1 vs dkk1 enhancers (C63-C66) provide strong evidence for distinct regulatory mechanisms, with appropriate controls and multiple independent enhancers tested.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:43:49.768351Z"
+    },
+    {
+      "id": "3972165b-14e6-4e7a-ac60-447807de96c4",
+      "content_id": "ea442998-d338-42e4-88ce-d2b2dcfc0392",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Two additional enhancers (osr1 and igf3) lacking Tcf sites are synergistically activated by Sox17 and \u03b2-catenin but not by Tcf7l1-VP16, supporting Tcf-independent regulation. In contrast, dkk1 and lhx5 enhancers are activated through \u03b2-catenin/Tcf with Sox17 spatially restricting this activity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C67-C69 extend the findings to additional enhancers and synthesize the two regulatory modes. The identification of multiple enhancers with similar properties (C67) strengthens the generalizability, though the sample size remains limited. The conclusions (C68-C69) are well-supported by the collective luciferase data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:43:49.768351Z"
+    },
+    {
+      "id": "47b2b3ef-7aa5-44b6-8f87-2d4d7295f558",
+      "content_id": "ea442998-d338-42e4-88ce-d2b2dcfc0392",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "20% of Xenopus Sox17-bound genes are also SOX17-bound in human PSC-derived endoderm, with GO enrichment for TGF\u03b2 receptor activity and \u03b2-catenin binding, indicating conserved functional interactions with Nodal and Wnt pathways.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C76-C78 demonstrate evolutionary conservation through comparison with published human data. The significant overlap (C76) and GO enrichment (C77) support conservation of the Sox17-regulated GRN, though the 20% overlap also indicates substantial species-specific differences that are not discussed.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:43:49.768351Z"
+    },
+    {
+      "id": "a9415915-3a4b-4849-81a0-2907b8ac0ee2",
+      "content_id": "ea442998-d338-42e4-88ce-d2b2dcfc0392",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Sox17-activated genes are enriched for LIM-homeodomain binding sites while Sox17-repressed genes are enriched for Tbx or Pou motifs, suggesting Sox17 coordinately engages enhancers with other TFs to mediate context-dependent activation or repression.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C27-C28 identify differential motif enrichment in activated vs repressed genes through computational analysis. While the motif enrichment is data-driven (C27), the interpretation of coordinate TF engagement (C28) is speculative and would require additional experiments to validate functional interactions with these TF families.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:43:49.768351Z"
+    },
+    {
+      "id": "eda790c2-eace-41c9-8c7f-9f715f2c65d7",
+      "content_id": "ea442998-d338-42e4-88ce-d2b2dcfc0392",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Sox17 sits atop the regulatory hierarchy regulating endoderm differentiation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C79 is supported by the observation that Sox17 regulates 73 TFs and multiple signaling pathways (C13). However, this is an interpretive claim about hierarchical position that could be strengthened by temporal analysis showing Sox17 acts upstream of these factors.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:43:49.768351Z"
+    },
+    {
+      "id": "34bd4df8-f410-449f-8bdc-34f7efde6968",
+      "content_id": "ea442998-d338-42e4-88ce-d2b2dcfc0392",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Sox17 acts as a tissue-specific modifier of Wnt responses, establishing a paradigm where genomic specificity of Wnt/\u03b2-catenin transcription is determined through functional interactions between lineage-specific Sox TFs and \u03b2-catenin/Tcf complexes, with broad implications for development and disease.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C89-C91 present the major conceptual conclusions. While C89 is well-supported by the collective data showing Sox17 modulates Wnt responses, C90 extrapolates to a general paradigm for Sox TFs that is speculative beyond Sox17. C91's broader implications are reasonable speculation but lack direct evidence in other contexts.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:43:49.768351Z"
+    },
+    {
+      "id": "0c10727f-ee44-4a0d-9db5-9ce0921496e1",
+      "content_id": "ea442998-d338-42e4-88ce-d2b2dcfc0392",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "Sox17 is a key endoderm transcription factor with few identified direct targets. Prior work shows Sox17 can initiate endoderm development, is enhanced by \u03b2-catenin, and can physically interact with \u03b2-catenin to suppress Tcf/\u03b2-catenin reporter activity in vitro.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C70-C75 summarize established knowledge from prior work, appropriately cited. These provide context for the current study but are not novel findings. The citations appear appropriate for the claims made.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:43:49.768351Z"
+    },
+    {
+      "id": "f916f4da-e948-449c-a39a-339670a4590b",
+      "content_id": "ea442998-d338-42e4-88ce-d2b2dcfc0392",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "Nodal and Wnt signaling cooperate to specify endoderm through core transcription factors. In Xenopus, maternal Wnt/\u03b2-catenin activates nodal expression, then Nodal and Wnt cooperate to promote endoderm TFs and organizer genes, with zygotic wnt8 promoting ventral/posterior identities. Tcfs have identical DNA-binding specificities and may interact with lineage-specific TFs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C81-C88 provide background on endoderm specification and Wnt signaling from prior literature, with appropriate citations. These establish the context and open questions that motivate the current study but are not novel findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:43:49.768351Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "171d2506-6e59-4d23-a6a9-bdfb19e141c1",
+      "result_id": "44f2764c-f2ea-4aaf-9e2a-e9bbfc7c7d53"
+    },
+    {
+      "claim_id": "81e5dad3-238d-453c-be52-74a11c26b1bb",
+      "result_id": "44f2764c-f2ea-4aaf-9e2a-e9bbfc7c7d53"
+    },
+    {
+      "claim_id": "453d4a06-eb07-42f6-9e09-a3f4cc7dd828",
+      "result_id": "44f2764c-f2ea-4aaf-9e2a-e9bbfc7c7d53"
+    },
+    {
+      "claim_id": "ff88a322-55dd-4b39-91a8-0d8abc15bb35",
+      "result_id": "44f2764c-f2ea-4aaf-9e2a-e9bbfc7c7d53"
+    },
+    {
+      "claim_id": "ea26bd59-92b3-492f-aa21-bd955436bcab",
+      "result_id": "954a285b-3337-4a71-a5a2-23945ddd7985"
+    },
+    {
+      "claim_id": "eef55ef6-3c3b-472e-99ba-cedf0202e83f",
+      "result_id": "954a285b-3337-4a71-a5a2-23945ddd7985"
+    },
+    {
+      "claim_id": "5efb0bf6-8789-4b9b-9831-b2fb91a854ac",
+      "result_id": "954a285b-3337-4a71-a5a2-23945ddd7985"
+    },
+    {
+      "claim_id": "08b6cd79-33ca-4d66-bfd0-816bb97cb2e7",
+      "result_id": "954a285b-3337-4a71-a5a2-23945ddd7985"
+    },
+    {
+      "claim_id": "2f49d994-7a35-4c38-a0b7-28e6ba53f2fb",
+      "result_id": "954a285b-3337-4a71-a5a2-23945ddd7985"
+    },
+    {
+      "claim_id": "35ff0ac4-86a0-4e01-a081-ff84489a2e87",
+      "result_id": "954a285b-3337-4a71-a5a2-23945ddd7985"
+    },
+    {
+      "claim_id": "e8ccf6ef-8f6d-4e59-9a71-26935721d685",
+      "result_id": "954a285b-3337-4a71-a5a2-23945ddd7985"
+    },
+    {
+      "claim_id": "7ddf2d86-a8b7-45e3-87a5-82dd507e9aed",
+      "result_id": "954a285b-3337-4a71-a5a2-23945ddd7985"
+    },
+    {
+      "claim_id": "24a946bb-a4d9-402f-91de-5afc2ee00e9c",
+      "result_id": "cf828538-cbcd-4c68-85ab-0da9fd0128a6"
+    },
+    {
+      "claim_id": "b6d7053e-e9ab-44c8-ac49-7ca552004f51",
+      "result_id": "cf828538-cbcd-4c68-85ab-0da9fd0128a6"
+    },
+    {
+      "claim_id": "a74191fa-e814-4d0c-8a36-cf1d0f0f03c4",
+      "result_id": "cf828538-cbcd-4c68-85ab-0da9fd0128a6"
+    },
+    {
+      "claim_id": "8d5a4cd5-c3c5-46e5-a5f4-9f6d4dd1bf22",
+      "result_id": "cf828538-cbcd-4c68-85ab-0da9fd0128a6"
+    },
+    {
+      "claim_id": "216ef9b3-9e18-4737-b1a6-67f61ad49b6c",
+      "result_id": "cf828538-cbcd-4c68-85ab-0da9fd0128a6"
+    },
+    {
+      "claim_id": "8e50c179-3fc6-4e58-9257-7e28f0edbd15",
+      "result_id": "cf828538-cbcd-4c68-85ab-0da9fd0128a6"
+    },
+    {
+      "claim_id": "fef20beb-45db-4835-9206-43a1b6efa5af",
+      "result_id": "cf828538-cbcd-4c68-85ab-0da9fd0128a6"
+    },
+    {
+      "claim_id": "0d9a3553-6046-4aa8-973a-e4e9b295d4ed",
+      "result_id": "cf828538-cbcd-4c68-85ab-0da9fd0128a6"
+    },
+    {
+      "claim_id": "3e3d1a41-2009-40aa-9fe4-582398cc1507",
+      "result_id": "cf828538-cbcd-4c68-85ab-0da9fd0128a6"
+    },
+    {
+      "claim_id": "7e09dca9-f2ed-48ec-bb49-47f4cfcc754e",
+      "result_id": "2f001234-0f6f-43b2-885b-1abdedfc0e48"
+    },
+    {
+      "claim_id": "770f2866-cf08-4db2-9155-463962f64225",
+      "result_id": "2f001234-0f6f-43b2-885b-1abdedfc0e48"
+    },
+    {
+      "claim_id": "df028b04-4aa2-4835-aeb3-7fd6f19873f5",
+      "result_id": "2f001234-0f6f-43b2-885b-1abdedfc0e48"
+    },
+    {
+      "claim_id": "1f17568c-b72f-4ea2-b673-009e608dffb1",
+      "result_id": "2f001234-0f6f-43b2-885b-1abdedfc0e48"
+    },
+    {
+      "claim_id": "9fb47cd8-9a4a-4e85-a68d-d1171d1530c5",
+      "result_id": "2f001234-0f6f-43b2-885b-1abdedfc0e48"
+    },
+    {
+      "claim_id": "a7ae4069-ea7a-4348-94c0-ef78409bf554",
+      "result_id": "2f001234-0f6f-43b2-885b-1abdedfc0e48"
+    },
+    {
+      "claim_id": "e67f157d-b685-4ff5-b52a-f68192b8a76f",
+      "result_id": "2f001234-0f6f-43b2-885b-1abdedfc0e48"
+    },
+    {
+      "claim_id": "10b98fe9-507e-41d1-8523-3eff321e08f3",
+      "result_id": "7e379f4c-c9e6-4502-935e-d94e7bd2bc0c"
+    },
+    {
+      "claim_id": "a3a1e126-02b0-42b3-987d-4ae1bd5af0d1",
+      "result_id": "7e379f4c-c9e6-4502-935e-d94e7bd2bc0c"
+    },
+    {
+      "claim_id": "8c47e0e8-ff36-48f3-81ef-a3529383c10a",
+      "result_id": "19e5024d-a1ee-422e-a617-8986f5bedecd"
+    },
+    {
+      "claim_id": "3269fdcb-04e8-4272-b9ed-656dfbfa82fc",
+      "result_id": "19e5024d-a1ee-422e-a617-8986f5bedecd"
+    },
+    {
+      "claim_id": "eaf1c3c7-9a6d-4f3b-901f-02ea6b78de9c",
+      "result_id": "19e5024d-a1ee-422e-a617-8986f5bedecd"
+    },
+    {
+      "claim_id": "46a48280-84fd-49ec-94f2-5379c6ea8677",
+      "result_id": "19e5024d-a1ee-422e-a617-8986f5bedecd"
+    },
+    {
+      "claim_id": "ed91e6c9-3ac0-4ab6-9f16-51576f8e7c7a",
+      "result_id": "19e5024d-a1ee-422e-a617-8986f5bedecd"
+    },
+    {
+      "claim_id": "5dbd4e89-5cf9-4a4a-8488-8521ab75fe06",
+      "result_id": "f05abc49-ce6a-4d45-ac6b-8e576625fb4f"
+    },
+    {
+      "claim_id": "ad12a518-4718-4c06-980b-d710e5c78b9d",
+      "result_id": "f05abc49-ce6a-4d45-ac6b-8e576625fb4f"
+    },
+    {
+      "claim_id": "f9626de3-333e-4a81-b94f-0d7a95a91fbd",
+      "result_id": "f05abc49-ce6a-4d45-ac6b-8e576625fb4f"
+    },
+    {
+      "claim_id": "4791fa8b-29e7-4615-abe0-132e8cfa9fcd",
+      "result_id": "9c28cd8a-8ac6-4b00-9580-ccb6b2e0c7c2"
+    },
+    {
+      "claim_id": "a2be2245-877b-4424-adcb-8774e877d8eb",
+      "result_id": "9c28cd8a-8ac6-4b00-9580-ccb6b2e0c7c2"
+    },
+    {
+      "claim_id": "8767a029-772d-435a-9094-269648ea935a",
+      "result_id": "9c28cd8a-8ac6-4b00-9580-ccb6b2e0c7c2"
+    },
+    {
+      "claim_id": "26cc3f3d-df4a-4e15-adb1-3c99c4c26cb6",
+      "result_id": "9c28cd8a-8ac6-4b00-9580-ccb6b2e0c7c2"
+    },
+    {
+      "claim_id": "ed7a2649-2c52-4d7f-b2bf-d7741876661e",
+      "result_id": "9c28cd8a-8ac6-4b00-9580-ccb6b2e0c7c2"
+    },
+    {
+      "claim_id": "3dcedf5b-aaa2-4ad8-b47d-ea974d58eae9",
+      "result_id": "9c28cd8a-8ac6-4b00-9580-ccb6b2e0c7c2"
+    },
+    {
+      "claim_id": "ed9d4356-f46d-4662-bbfa-37e4290e5b4b",
+      "result_id": "0245674a-245d-4c0b-a67d-f1219e5906c2"
+    },
+    {
+      "claim_id": "5dfc4611-9b50-4885-9665-f61a614f8177",
+      "result_id": "0245674a-245d-4c0b-a67d-f1219e5906c2"
+    },
+    {
+      "claim_id": "398f5a24-8d3d-414e-a8c5-29d50f70ac08",
+      "result_id": "0245674a-245d-4c0b-a67d-f1219e5906c2"
+    },
+    {
+      "claim_id": "099a260e-a21f-467e-be71-72d1d9d99309",
+      "result_id": "593951b9-2ad0-4b72-8476-f4df8a0587a5"
+    },
+    {
+      "claim_id": "88185fe9-9479-49a7-8994-738b35c1db40",
+      "result_id": "593951b9-2ad0-4b72-8476-f4df8a0587a5"
+    },
+    {
+      "claim_id": "aa754b15-9c3b-4024-bb0a-75f637d431c9",
+      "result_id": "593951b9-2ad0-4b72-8476-f4df8a0587a5"
+    },
+    {
+      "claim_id": "062c1181-25c3-4583-a55b-2d7cf8ab1337",
+      "result_id": "593951b9-2ad0-4b72-8476-f4df8a0587a5"
+    },
+    {
+      "claim_id": "ec1bb08d-e090-4d68-8f5b-4cc311fe010a",
+      "result_id": "164b223b-abaf-4414-9ee2-4d8420446558"
+    },
+    {
+      "claim_id": "583da467-ab81-4b0c-a377-2ac18cd98f57",
+      "result_id": "164b223b-abaf-4414-9ee2-4d8420446558"
+    },
+    {
+      "claim_id": "4914eb56-7fc7-4acf-af34-f17b63d4aae5",
+      "result_id": "164b223b-abaf-4414-9ee2-4d8420446558"
+    },
+    {
+      "claim_id": "16988c43-208f-47b4-9c6b-3201426cb653",
+      "result_id": "164b223b-abaf-4414-9ee2-4d8420446558"
+    },
+    {
+      "claim_id": "99f026a1-c919-47e5-a7d7-24e4c43fe590",
+      "result_id": "a3b2eb84-48ff-40e3-ad9c-e76e76f4ca08"
+    },
+    {
+      "claim_id": "2527bcc7-261c-4bd6-8ebb-ad71a7ce82d5",
+      "result_id": "a3b2eb84-48ff-40e3-ad9c-e76e76f4ca08"
+    },
+    {
+      "claim_id": "da9ea0be-f59a-4abb-b46b-a1bbc77fda6a",
+      "result_id": "a3b2eb84-48ff-40e3-ad9c-e76e76f4ca08"
+    },
+    {
+      "claim_id": "882cbf20-b468-40d0-b5b2-c279b12a278b",
+      "result_id": "a3b2eb84-48ff-40e3-ad9c-e76e76f4ca08"
+    },
+    {
+      "claim_id": "5429c065-4328-4d2d-838c-a3a7768bdded",
+      "result_id": "3972165b-14e6-4e7a-ac60-447807de96c4"
+    },
+    {
+      "claim_id": "1caa02f6-2c63-47eb-b03d-2ad89222e241",
+      "result_id": "3972165b-14e6-4e7a-ac60-447807de96c4"
+    },
+    {
+      "claim_id": "0e55dc1b-4108-422f-b9c0-4c4d2b7de3a2",
+      "result_id": "3972165b-14e6-4e7a-ac60-447807de96c4"
+    },
+    {
+      "claim_id": "7a611807-8e57-45e9-9de5-e3dcf58561d0",
+      "result_id": "47b2b3ef-7aa5-44b6-8f87-2d4d7295f558"
+    },
+    {
+      "claim_id": "6f7fb408-2904-4924-bfd3-03a4975cbb53",
+      "result_id": "47b2b3ef-7aa5-44b6-8f87-2d4d7295f558"
+    },
+    {
+      "claim_id": "9a415013-2eb1-4fdf-9b1c-c13635ce712d",
+      "result_id": "47b2b3ef-7aa5-44b6-8f87-2d4d7295f558"
+    },
+    {
+      "claim_id": "ac44b228-b961-4850-9cfc-e5b8bcf14d56",
+      "result_id": "a9415915-3a4b-4849-81a0-2907b8ac0ee2"
+    },
+    {
+      "claim_id": "59a6e21e-2194-4e0e-8bb6-03bb73dfaaa3",
+      "result_id": "a9415915-3a4b-4849-81a0-2907b8ac0ee2"
+    },
+    {
+      "claim_id": "9f202d28-f776-47fd-a9d7-ec72d5aef841",
+      "result_id": "eda790c2-eace-41c9-8c7f-9f715f2c65d7"
+    },
+    {
+      "claim_id": "ba669654-91d8-4d9a-8ded-6c78a387ce0d",
+      "result_id": "34bd4df8-f410-449f-8bdc-34f7efde6968"
+    },
+    {
+      "claim_id": "e283a9be-8fa9-4883-b094-25cfffbca5cd",
+      "result_id": "34bd4df8-f410-449f-8bdc-34f7efde6968"
+    },
+    {
+      "claim_id": "ddd5970a-3c3e-4975-b8fc-b4e73d4543be",
+      "result_id": "34bd4df8-f410-449f-8bdc-34f7efde6968"
+    },
+    {
+      "claim_id": "907924a9-f7ca-4436-aeab-052cf387b334",
+      "result_id": "0c10727f-ee44-4a0d-9db5-9ce0921496e1"
+    },
+    {
+      "claim_id": "417556ca-1a4f-4e85-98bc-51221ef05dda",
+      "result_id": "0c10727f-ee44-4a0d-9db5-9ce0921496e1"
+    },
+    {
+      "claim_id": "91a4119e-590d-4cb7-a847-5cf9dcae89da",
+      "result_id": "0c10727f-ee44-4a0d-9db5-9ce0921496e1"
+    },
+    {
+      "claim_id": "c6797d9d-2cec-48ed-9063-da14cb3f8851",
+      "result_id": "0c10727f-ee44-4a0d-9db5-9ce0921496e1"
+    },
+    {
+      "claim_id": "f23e52dc-9f3c-4456-a4d5-51e14b09196b",
+      "result_id": "0c10727f-ee44-4a0d-9db5-9ce0921496e1"
+    },
+    {
+      "claim_id": "dd6d5b8a-ae89-459b-984a-aa4fe02f79e6",
+      "result_id": "0c10727f-ee44-4a0d-9db5-9ce0921496e1"
+    },
+    {
+      "claim_id": "6ab0391e-3276-46e0-af71-6b9fa54f5155",
+      "result_id": "0c10727f-ee44-4a0d-9db5-9ce0921496e1"
+    },
+    {
+      "claim_id": "3cc78faf-85c7-4c9a-92c1-956bebe3bf3f",
+      "result_id": "f916f4da-e948-449c-a39a-339670a4590b"
+    },
+    {
+      "claim_id": "9c1d3e2c-1d06-4636-8641-eb7e3c5cc09a",
+      "result_id": "f916f4da-e948-449c-a39a-339670a4590b"
+    },
+    {
+      "claim_id": "ead68ccc-1f6d-4dd3-9339-c80ee712ebdf",
+      "result_id": "f916f4da-e948-449c-a39a-339670a4590b"
+    },
+    {
+      "claim_id": "2d4d51dc-b432-48dd-aa2f-155aa0e26c2e",
+      "result_id": "f916f4da-e948-449c-a39a-339670a4590b"
+    },
+    {
+      "claim_id": "0a3ec821-e0ce-43d5-bfcd-b75bcef404a8",
+      "result_id": "f916f4da-e948-449c-a39a-339670a4590b"
+    },
+    {
+      "claim_id": "84a5e792-7d5a-4b0c-92f9-89ddf8057ecc",
+      "result_id": "f916f4da-e948-449c-a39a-339670a4590b"
+    },
+    {
+      "claim_id": "250a2939-f4e2-475b-8a69-388097c7a5dd",
+      "result_id": "f916f4da-e948-449c-a39a-339670a4590b"
+    },
+    {
+      "claim_id": "13b4e7a5-e445-4871-8368-d27a99452f6c",
+      "result_id": "f916f4da-e948-449c-a39a-339670a4590b"
+    }
+  ],
+  "comparisons": []
+}

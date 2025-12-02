@@ -1,0 +1,1846 @@
+{
+  "submission": {
+    "id": "21dad989-b30b-480b-a80f-ea66f6f162c1",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T13:34:16.260340Z",
+    "updated_at": "2025-12-02T13:34:16.260340Z"
+  },
+  "content": [
+    {
+      "id": "de749ec5-0a8d-4f51-a632-30c546f5f6ee",
+      "submission_id": "21dad989-b30b-480b-a80f-ea66f6f162c1",
+      "content_type": "manuscript",
+      "content_text": "# Cryo-EM structure of the KvAP channel reveals a non-domain-swapped voltage sensor topology\n\n## Authors\n\n- Xiao Tao<sup>1</sup> ([ORCID: 0000-0002-9381-7903](https://orcid.org/0000-0002-9381-7903))\n- Roderick MacKinnon<sup>1</sup> ([ORCID: 0000-0001-7605-4679](https://orcid.org/0000-0001-7605-4679)) \u2020\n\n### Affiliations\n\n1. Laboratory of Molecular Neurobiology and Biophysics The Rockefeller University, Howard Hughes Medical Institute New York United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nConductance in voltage-gated ion channels is regulated by membrane voltage through structural domains known as voltage sensors. A single structural class of voltage sensor domain exists, but two different modes of voltage sensor attachment to the pore occur in nature: domain-swapped and non-domain-swapped. Since the more thoroughly studied Kv1-7, Nav and Cav channels have domain-swapped voltage sensors, much less is known about non-domain-swapped voltage-gated ion channels. In this paper, using cryo-EM, we show that KvAP from Aeropyrum pernix has non-domain-swapped voltage sensors as well as other unusual features. The new structure, together with previous functional data, suggests that KvAP and the Shaker channel, to which KvAP is most often compared, probably undergo rather different voltage-dependent conformational changes when they open.\n\n## Introduction\n\nVoltage sensors are integral membrane proteins that \u2018sense\u2019 transmembrane voltage differences. They exist as regulatory domains on voltage-gated ion channels and voltage-dependent phosphatase enzymes (Hille, 2001; Murata et al., 2005). All voltage sensors have a shared structure consisting of four helical transmembrane segments (Noda et al., 1984; Papazian et al., 1987; Tanabe et al., 1987; Tempel et al., 1987; Jiang et al., 2003a). The fourth helix, termed S4, contains positive-charged amino acids that move within the transmembrane electrical field as part of a global conformational change (Noda et al., 1984; Tanabe et al., 1987; Tempel et al., 1987; Aggarwal and MacKinnon, 1996; Seoh et al., 1996; Long et al., 2005a; Long et al., 2005b; Long et al., 2007; Swartz, 2008; Tao et al., 2010; Guo et al., 2016; Shen et al., 2017; Wisedchaisri et al., 2019; Xu et al., 2019). Sensor conformational changes are imparted onto the channel or enzyme to regulate activity.\n\nAtomic structures of several different eukaryotic voltage-gated K+ (Kv) channels demonstrate that nature employs two topologically distinct connections between the voltage sensors and the ion channel pore (Long et al., 2005a; Whicher and MacKinnon, 2016; Sun and MacKinnon, 2017; Tao et al., 2017; Wang and MacKinnon, 2017). Viewed down an axis perpendicular to the membrane, Kv channels are four-fold symmetric, exhibiting one central pore surrounded by four voltage sensors. Each subunit encodes a voltage sensor from transmembrane helices S1-S4 and one fourth of the pore from S5 and S6. The channel tetramer is held together by a \u2018barrel stave\u2019 assemblage of the pore, with the voltage sensors residing on the periphery\u00a0(Long et al., 2005a). The topological distinction between two classes of Kv channels relates to whether the voltage sensors are \u2018domain-swapped\u2019 or not. If four K+ channel subunits are designated A, B, C and D, to be domain-swapped means the voltage sensor of subunit A leans against the pore-forming helices of subunit B, B against C and so on around the tetramer, as shown in Figure 1A. In non-domain-swapped Kv channels, the voltage sensor of subunit A leans against the pore-forming helices of subunit A, B against B, etc., as shown in Figure 1B. Kv1-7 channels have domain-swapped voltage sensors; Kv10-12 and Slo1 channels have non-domain-swapped voltage sensors (Long et al., 2005a; Whicher and MacKinnon, 2016; Sun and MacKinnon, 2017; Tao et al., 2017; Wang and MacKinnon, 2017). Other voltage-gated channels can also be characterized according to this classification: voltage-gated Na+ (Nav) and Ca2+ (Cav) channels and other cation channels have domain-swapped voltage sensors (Payandeh et al., 2011; Zhang et al., 2012; Guo et al., 2016; Wu et al., 2016; Shen et al., 2017; Yan et al., 2017; She et al., 2018); HCN channels, which are hyperpolarization-activated cation channels, have non-domain-swapped voltage sensors (Lee and MacKinnon, 2017).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/52164/elife-52164-fig1-v2.jpg)\n\n**Figure 1.:** The channels are shown as ribbons and each subunit of a tetramer is colored uniquely. In panels C and D, voltage sensors of the front and back subunit are omitted for clarity. K+ ions are shown as cyan spheres.\n\nThe difference between domain-swapped and non-domain-swapped topologies is much more than an architectural curiosity. In the former case, the voltage sensor is connected to the pore by an\u00a0~20 \u00c5 long S4-S5 linker helix, which runs along the channel\u2019s cytoplasmic surface and contacts the S6 helix, which forms the gate (Figure 1C) (Long et al., 2005a; Long et al., 2007). Conformational changes within the voltage sensor are transmitted to the gate through the S4-S5 linker helix (Long et al., 2005b; Guo et al., 2016; Wisedchaisri et al., 2019; Xu et al., 2019). Channels with non-domain-swapped voltage sensors do not have a helical S4-S5 linker and the mechanism of gate control is unknown (Figure 1D).\n\nKvAP is a Kv channel from the thermophilic archaea Aeropyrum pernix (Ruta et al., 2003). It provided the first atomic structures from a voltage-gated ion channel and the isolated voltage sensor structure turned out to be the prototype for this domain family (Jiang et al., 2003a). Crystallographic analysis of the full-length KvAP channel, however, consistently yielded structures with voltage sensors that were rotated relative to the pore and partially unfolded (Jiang et al., 2003a; Lee et al., 2005). Together with voltage-dependent accessibility measurements, the KvAP structures led us to propose the \u2018paddle model\u2019, in which S4 moves adjacent to the lipid membrane as part of a helix-turn-helix structure consisting of helices S3b and S4 (Jiang et al., 2003b).\n\nUntil recently, all voltage-gated channels were thought to be of the domain-swapped variety (Whicher and MacKinnon, 2016). For this reason, KvAP was considered representative of the more extensively studied Shaker-like (i.e. Kv1) channels, with domain-swapped voltage sensors (Long et al., 2005a).\u00a0We show here with a cryo-EM structure that this is not the case. In addition to being a non-domain-swapped Kv channel, KvAP has other structural features that distinguish it further from Shaker and most other voltage-gated ion channels. Structural differences between KvAP and Shaker may account for some discrepant results in the study of their voltage sensor conformational changes.\n\n## Results\n\n### Image analysis and map calculation\n\nKvAP was expressed in E. coli, extracted in a mixture of lauryl maltose neopentyl glycol (LMNG) and cholesteryl hemisuccinate (CHS), exchanged into digitonin and then purified as a complex with Fab fragments using size exclusion chromatography (Figure 2\u2014figure supplement 1). The Fab fragments, which bind to KvAP\u2019s voltage sensors, were used to assist the alignment of channels in image processing. Following 2D classification, 734,850 particles were 3D-classified in Relion3 with C1 symmetry (Figure 2\u2014figure supplement 2) (Scheres, 2012). All classes showed that the voltage sensors were oriented with Fabs projecting towards the extracellular face of the channel. This orientation is compatible with the extracellular accessibility of these Fabs in electrophysiological studies (Jiang et al., 2003b). The extracellular orientation of Fabs in cryo-EM images contrasts with the non-native orientation of KvAP voltage sensors in crystal structures of the full-length channel, in which detergents more dispersive than digitonin were used (Jiang et al., 2003a; Lee et al., 2005).\n\nWhile the Fabs were on the extracellular surface in all 3D classes, the precise positioning of the Fabs was variable, as shown (Figure 2\u2014figure supplement 2B). The positional variability explains why in both 2D (Figure 2\u2014figure supplement 3A,B) and 3D classes (Figure 2\u2014figure supplement 2B, Figure 2\u2014figure supplement 3C), density for the four Fabs is not constant: in some classes only a single Fab is well aligned, in others 2, 3, or least frequently 4 Fabs are aligned. The variation in Fab orientation is consistent with past studies showing the high degree of mobility of the S3b-S4 paddle region of the voltage sensor (Ruta et al., 2005; Butterwick and MacKinnon, 2010). To increase resolution of the structure we selected one class, representing 13% of the particles, in which all four Fabs were oriented most similarly with respect to each other. We emphasize that these particles were not fundamentally different than the others, but statistically they happened to have more similarly-oriented Fabs, thus permitting better particle averaging. To analyze the pore and voltage sensors in greater detail, we further applied focused 3D classification in Relion3 while masking the KvAP transmembrane region and Fabs and also applying C4 symmetry (Figure 2\u2014figure supplement 2B). The final density map, calculated to 6 \u00c5 resolution, showed continuous density for the transmembrane region, density for the Fabs on the extracellular side and a poorly resolved cytoplasmic domain (CTD) on the intracellular side (Figure 2, Figure 2\u2014figure supplement 2, and Figure 2\u2014figure supplement 4). The existence of the cytoplasmic domain, formed by an extension of the C-terminus, was predicted from protein synthesis studies of KvAP (Figure 2\u2014figure supplement 4C) (McDonald et al., 2019).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/52164/elife-52164-fig2-v2.jpg)\n\n**Figure 2.:** (A) The isolated KvAP voltage sensor crystal structure (PDB: 1ORS, shown as red ribbons) docked into the cryo-EM map (gray mesh), viewed in stereo, parallel to the membrane with the extracellular side up.\u00a0(B) Same representation as panel (A), rotated 180\u00b0 around the vertical axis. (C) The pore domain of a single subunit from the crystal structure of the full-length KvAP (PDB: 1ORQ, shown as red ribbons) docked into the cryo-EM map (gray mesh), viewed in stereo, parallel to the membrane with the extracellular side up. (D) The pore domain of the full-length KvAP crystal structure (PDB: 1ORQ, shown as ribbons with each subunit colored uniquely) docked into the cryo-EM map (gray mesh), viewed from the cytoplasmic side. (E) Overall structure of KvAP, viewed along the 4-fold axis, from the extracellular side. The channel is shown as ribbons and each subunit of the tetramer is colored uniquely. K+ ions are shown as cyan spheres.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/52164/elife-52164-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** Size exclusion chromatography of KvAP alone (black trace) and KvAP-6E1 Fab (red trace). The three peaks indicated by the stars above represent KvAP-6E1 Fab complex (red *), KvAP alone (black **) and Fab alone (red ***).\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/52164/elife-52164-fig2-figsupp2-v2.jpg)\n\n**Figure 2\u2014figure supplement 2.:** (A) Representative raw micrograph.\u00a0(B) Summary of image processing. (C) Euler angle distribution of particles for the final 3D reconstruction. (D) Fourier shell correlation (FSC) curves between the two half maps before (blue) and after (black) postprocessing. (E) Local resolution of the final reconstruction estimated by cryoSPARC (Punjani et al., 2017).\n\n![Figure 2\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/52164/elife-52164-fig2-figsupp3-v2.jpg)\n\n**Figure 2\u2014figure supplement 3.:** (A) 2D class averages of all the particles after removing false positives.\u00a0(B) 2D class averages of the particles used for initial model generation. (C) Overlay of the eight classes after first round of 3D classification showed variation in Fab orientation.\n\n![Figure 2\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/52164/elife-52164-fig2-figsupp4-v2.jpg)\n\n**Figure 2\u2014figure supplement 4.:** (A) 2D class averages showing the presence of a cytoplasmic domain.\u00a0(B) The final 3D reconstruction (gray) with KvAP (purple ribbons) and Fab (gold ribbons) models docked into the density. (C) The amino acid sequence of the cytoplasmic domain.\n\n![Figure 2\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/52164/elife-52164-fig2-figsupp5-v2.jpg)\n\n**Figure 2\u2014figure supplement 5.:** (A) Postprocessed 3D cryo-EM map in Relion at a nominal resolution of 8 \u00c5. Threshold is set at a relatively low level to show the micelle, CTD and Fab density, viewed parallel to the membrane with the extracellular side up. (B) The same map with threshold set at a much higher level shows clear non-domain-swapped S4-S5 linker density. (C) Zoomed-in view of panel (B).\n\n### Structure of KvAP\n\nA model corresponding to the crystal structure of the isolated voltage sensor, unmodified, was placed into the density (Figure 2A,B) (Jiang et al., 2003a). We note that this model is similar to a second structure that we determined independently using NMR (Butterwick and MacKinnon, 2010). A model corresponding to the crystal structure of the pore, unmodified, was also placed into the density (Figure 2C,D) (Jiang et al., 2003a). Small rigid body adjustments of helical segments were made, followed by a round of real-space refinement. The only new model rebuilding at the level of individual amino acids involved four amino acids inside the continuous density connecting S4 to S5. Without the crystal structures it would have been impossible to build more than a poly-alanine model at 6 \u00c5 resolution. However, the crystal structures, which were determined at 1.9 \u00c5 for the voltage sensor and 3.2 \u00c5 for the pore, conform so well to the experimental map (Figure 2) that we know the approximate location of the amino acids in the final model.\n\nAn important first conclusion is that KvAP is a non-domain-swapped voltage-gated ion channel, meaning each voltage sensor is contiguous with the pore element from the same polypeptide chain (Figure 2E). That this must be the case is evident in the short turn connecting S4 to S5 instead of a long \u03b1-helical S4-S5 linker (Figure 2C). Therefore, KvAP is topologically like Kv10-12 channels and unlike Kv1-7 channels (Figures 1 and 2E).\n\nFigure 3 highlights a notable structural difference between KvAP and eag1 (Kv10) even though they both share a non-domain-swapped topology. Viewed from the extracellular side, their voltage sensors orient differently with respect to the pore, as shown (Figure 3A). The unique orientations result from the manner in which the S1 from the voltage sensor and S5 from the pore interact with each other. In eag1, S1 contacts S5 near the extracellular surface, but is displaced about 15 \u00c5 away from S5 near the intracellular surface (Figure 3C). In contrast, S1 in KvAP runs parallel to and in contact with S5 throughout its length inside the membrane (Figure 3B). Perozo and co-workers analyzed amino acid side-chain accessibility and mobility in membrane-embedded KvAP channels using EPR (Cuello et al., 2004). Their data, which we have mapped onto the structure of KvAP, support the S1-S5 contact observed (Figure 4). Specifically, a continuous surface of low side-chain mobility and low O2 collision frequency, which are both signatures of a buried protein surface, is observed where S1 contacts S5 in the cryo-EM structure. Altogether, the cryo-EM structure is consistent with the EPR data. This consistency suggests that the cryo-EM structure is representative of a conformation of KvAP inside lipid bilayers.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/52164/elife-52164-fig3-v2.jpg)\n\n**Figure 3.:** (A) Overlay of KvAP (colored red) and eag1 (PDB: 5K7L, colored blue), viewed along the 4-fold axis, from the extracellular side.\u00a0The two channels are aligned with respect to the pore domain (shown as C\u03b1 traces) and the VSDs are shown as surfaces. For eag1, only the transmembrane region is shown for clarity. (B) Ribbon representation of a single subunit of KvAP, viewed in stereo, parallel to the membrane with the extracellular side up. (C) Ribbon representation of a single subunit of eag1, viewed in stereo, parallel to the membrane with the extracellular side up. Only the transmembrane region is shown for clarity.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/52164/elife-52164-fig4-v2.jpg)\n\n**Figure 4.:** (A,B) Ribbon representation of a single subunit of KvAP, viewed parallel to the membrane with the extracellular side up.\u00a0Panel B is rotated 180\u00b0 from panel A around a vertical axis. (C\u2013F) Remapping of EPR data digitized from Cuello et al. (2004) onto a single subunit of KvAP (pore domain as gray ribbons, voltage sensor domain as gray surface) in the same views as panels A and B (Cuello et al., 2004). Panels C and D show the O2 accessibility (red) and panels E and F show the mobility (green) from reconstituted full-length KvAP.\n\n### Conformational state\n\nFigure 5 shows side views of the KvAP model, excluding the intracellular domain. In electrophysiological studies on KvAP, the membrane must be depolarized first before the extracellularly-applied Fabs can bind (Jiang et al., 2003b). In the structure, the helical turn of S3b into S4, the Fab epitope, is exposed to the extracellular surface, compatible with Fab accessibility and a depolarized conformation of KvAP. The voltage sensor is similar in conformation to depolarized voltage sensors in other voltage-gated ion channels (Figure 5\u2014figure supplement 1). However, because of the unique interaction between S1 and S5, the S3b-S4 paddle in KvAP resides on the outer-most perimeter of the channel, oriented tangent to the pore domain.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/52164/elife-52164-fig5-v2.jpg)\n\n**Figure 5.:** (A) Overall structure of KvAP viewed parallel to the membrane with the extracellular side up.\u00a0The channel is demarcated by a gray translucent surface and voltage sensors, S4-S5 linkers and intracellular part of S5 are shown as cyan ribbons. Blue spheres show C\u03b1 positions of the six positive-charged residues on S4: R117, R120, R123, R126, R133 and K136 from top to bottom. Yellow and two red spheres indicate C\u03b1 positions of the gating charge transfer center (yellow: Leu69; Red: Asp72 and Glu93). Gray bars approximate the location of membrane surfaces. (B) Stereo view of KvAP in the same orientation as in panel (A), with the pore domain shown as a gray surface and the voltage sensor domains, the S4-S5 linkers and the intracellular part of S5 as cyan ribbons. (C) Zoomed-in view of one voltage sensor in the same representation as panel (B). Side-chains of the six positive-charged residues as well as the gating charge transfer center are shown as sticks and colored according to atom type.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/52164/elife-52164-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** Overlay of voltage sensor domains from KvAP (red), eag1 (Kv10.1, PDB: 5K7L, blue), Herg (Kv11.1, PDB: 5VA1, light purple), HCN (PDB: 5U6O, cyan), Kv1.2-Kv2.1 paddle chimera (PDB: 2R9R, orange) and Kv7.1 (PDB: 5VMS, magenta) in stereo view.\n\n![Figure 5\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/52164/elife-52164-fig5-figsupp2-v2.jpg)\n\n**Figure 5\u2014figure supplement 2.:** The channels are shown as C\u03b1 traces and only two opposing subunits (colored blue and red) are shown for clarity. The cytoplasmic region of Kir2.2 is omitted.\n\nThe pore is less open than in the crystal structure of the full-length channel, but more open than in other closed K+ channels (Figure 2D, Figure 5\u2014figure supplement 2) (Jiang et al., 2003a; Tao et al., 2009). Functionally, KvAP opens and then inactivates partially following membrane depolarization (Schmidt et al., 2009). The conformation of the inner helix gate in this structure might reflect a mixture of open and inactivated channels.\n\n### Remapping of biotin-avidin accessibility data\n\nFigure 6 maps previous data on the accessibility of tethered biotin to avidin onto the KvAP structure (Ruta et al., 2005; Banerjee and MacKinnon, 2008). Red and blue spheres show accessibility to the extracellular and intracellular sides of the membrane, respectively. Black spheres show positions inaccessible to either side. With a 1 \u00c5 length tether, only superficial sites near the aqueous surfaces are accessible, except at two positions, shown as blue spheres for intracellular accessibility, on the S4 helix. These outlier positions on the structure are more than 15 \u00c5 away from the intracellular surface. But the accessibility assay was carried out in membranes under voltage clamp. The result implies that the KvAP voltage sensor can undergo very large voltage-dependent conformational changes to bring these positions close to the intracellular surface. Experiments using longer tethers show results consistent with shorter tethers. Specifically, positions on S4 become exposed to both the extracellular and intracellular sides, depending on the membrane voltage (Figure 6\u2014figure supplement 1).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/52164/elife-52164-fig6-v2.jpg)\n\n**Figure 6.:** Previous data on tethered biotin-avidin accessibility with 1 \u00c5 effective tether length is remapped onto the cryo-EM structure of KvAP (Ruta et al., 2005; Banerjee and MacKinnon, 2008). Only two opposing subunits (gray and orange ribbons) are shown for clarity. Red and blue spheres represent positions accessible to the extracellular and intracellular sides of the membrane, respectively. Black spheres represent positions inaccessible to either side of the membrane.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/52164/elife-52164-fig6-figsupp1-v2.jpg)\n\n**Figure 6\u2014figure supplement 1.:** (A,B) Remapping previous data on tethered biotin-avidin accessibility with 9\u201310 \u00c5 (panel A) and 17 \u00c5 (panel B) effective tether lengths onto the cryo-EM structure of KvAP (Ruta et al., 2005; Banerjee and MacKinnon, 2008). Only two opposing subunits (gray and orange ribbons) are shown for clarity. Red and blue spheres represent positions accessible to the extracellular and intracellular sides of the membrane, respectively. Black spheres represent positions inaccessible to either side of the membrane. Yellow spheres represent positions accessible to both sides of the membrane.\n\n## Discussion\n\nThe surprising new finding presented in this paper is that the voltage sensors in KvAP are not domain-swapped. We had assumed incorrectly that KvAP and Kv1 were similar in structure, but they are not (Lee et al., 2005; Ruta et al., 2005). Through studies of domain-swapped Kv, Nav, Cav and other voltage-gated ion channels we are starting to understand certain aspects of how they work (Long et al., 2005b; Long et al., 2007; Tao et al., 2010; Guo et al., 2016; Shen et al., 2017; Wisedchaisri et al., 2019; Xu et al., 2019). We have also seen that even among channels with domain-swapped voltage sensors, the S4 helix apparently moves to different extents to regulate the pore (Guo et al., 2016; Shen et al., 2017; Wisedchaisri et al., 2019; Xu et al., 2019). Channels with non-domain-swapped voltage sensors, because they do not have an S4-S5 linker helix, might undergo conformational changes that are not only different in magnitude, but also in character. Obviously, that KvAP has non-domain-swapped voltage sensors is important to the interpretation of functional data, especially those addressing voltage sensor conformational changes (Cuello et al., 2004; Ruta et al., 2005).\n\nKvAP is an outlier among voltage-gated ion channels, whether domain-swapped or not, in two respects. First, the distribution of positive-charged amino acids on S4 is unique. In other Kv channels the region of S4 that contains gating charge residues \u2013 the active region \u2013 consists of the strict triplet (RXX)n, where R (arginine) is sometimes replaced by K (lysine) and X stands for a hydrophobic amino acid. More rarely R is replaced by a non-charged polar amino acid, but when this occurs the triplet periodicity almost always persists so that the occurrence of subsequent arginine residues remains in-phase in the sequence. But consider the S4 sequence in KvAP: (RLV)(RLL)(RFL)(RIL)(LII)(SRG)(SKF). Here, we observe a discontinuity between the fourth and fifth arginine residues created by six consecutive uncharged amino acids; this produces a phase shift of the fifth and sixth (lysine) with respect to the first four. The fifth R as well as the following lysine in the sequence are certainly part of the active region of S4, because in the structure the lysine resides inside the gating charge transfer center (Figure 5C), which is the site at the center of the voltage sensor that lowers the energy barrier for charged amino acids as they cross the membrane (Tao et al., 2010). In other voltage-gated ion channels, S4 adopts a 310 helix at the center of the membrane; this secondary structure directs the arginine residues towards the gating charge transfer center. The \u03b1 to a 310 transition may well occur when the region of S4 containing the first four arginine residues approaches the center of the membrane (because they are distributed with triplet periodicity), but it might not occur in the gap between the fourth and fifth arginine residues. Because triplet periodicity is not maintained over the lower half of S4 in KvAP, it is not entirely clear whether properties learned from other Kv channels apply to KvAP.\n\nThe second respect in which KvAP is an outlier concerns the gating charge transfer center. KvAP has the typical constellation of negative-charged amino acids to stabilize the positive charge on arginine or lysine. But instead of the phenylalanine found in other Kv channels (357 out of 360 examined), KvAP contains a leucine. The functional significance of this is also unknown.\n\nOur original expectation that KvAP and Shaker-like Kv channels probably undergo similar voltage sensor conformational changes may be incorrect. The present study shows that the voltage sensors in KvAP, in contrast to Shaker, are not domain-swapped. In separate studies in our lab, we have captured the HCN channel, another non-domain-swapped voltage-gated channel, in both depolarized and hyperpolarized conformations (Lee and MacKinnon, 2017; Lee and MacKinnon, 2019). When depolarized, the voltage sensor in HCN is similar to that in KvAP. But when hyperpolarized, the S4 helix translates toward the cytoplasm and breaks into an L-shape, with the bottom half of S4 forming an interfacial helix. Thus, the voltage sensor in HCN couples to the gate in a fundamentally different manner than in domain-swapped voltage-gated channels studied so far, where the S4-S5 linker forms a permanent interfacial helix (Figure 1C). Whether the allosteric communication between the voltage sensor and pore in KvAP will be similar to that observed in HCN remains to be seen.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Gene (Aeropyrum pernix)</td>\n      <td>KvAP</td>\n      <td>synthetic</td>\n      <td></td>\n      <td>Synthesized at GeneWiz.</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pET28a</td>\n      <td>Novagen</td>\n      <td>69864</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (Escherichia coli)</td>\n      <td>BL21(DE3)</td>\n      <td>Invitrogen</td>\n      <td>C600003</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>2,2-didecylpropane-1,3-bis-\u03b2-D-maltopyranoside (LMNG)</td>\n      <td>Anatrace</td>\n      <td>NG310</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Cholesteryl hemisuccinate (CHS)</td>\n      <td>Anatrace</td>\n      <td>CH210</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Digitonin</td>\n      <td>Sigma-Aldrich</td>\n      <td>D141</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>anti-KvAP (mouse monoclonal, Fab)</td>\n      <td>DOI: 10.1038/nature01580</td>\n      <td>6E1</td>\n      <td>KvAP teramer: 6E1 Fab\u00a0=\u00a01: 4.4 molar ratio</td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>Talon metal affinity resin</td>\n      <td>Clontech</td>\n      <td>635504</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>Superdex 200 Increase 10/300 GL</td>\n      <td>GE Healthcare Life Sciences</td>\n      <td>28990944</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>R1.2/1.3 400 mesh Au holey carbon grids</td>\n      <td>Quantifoil</td>\n      <td>1210627</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>SerialEM</td>\n      <td>DOI: 10.1016/j.jsb.2005.07.007</td>\n      <td>http://bio3d.colorado.edu/SerialEM</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>MotionCor2</td>\n      <td>DOI: 10.1038/nmeth.4193</td>\n      <td>https://msg.ucsf.edu/software</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Gctf</td>\n      <td>DOI: 10.1016/j.jsb.2015.11.003</td>\n      <td>https://www.mrc-lmb.cam.ac.uk/kzhang/</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Gautomatch</td>\n      <td>other</td>\n      <td>https://www.mrc-lmb.cam.ac.uk/kzhang/</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>RELION-3</td>\n      <td>DOI: 10.7554/eLife.18722</td>\n      <td>http://www2.mrc-lmb.cam.ac.uk/relion</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>cryoSPARC</td>\n      <td>DOI: 10.1038/nmeth.4169</td>\n      <td>http://www.cryosparc.com</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>FrealignX</td>\n      <td>DOI: 10.1016/j.jsb.2013.07.005</td>\n      <td>http://grigoriefflab.janelia.org/frealign</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>COOT</td>\n      <td>DOI: 10.1107/S0907444910007493</td>\n      <td>https://www2.mrc-lmb.cam.ac.uk/personal/pemsley/coot/</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>PHENIX</td>\n      <td>DOI: 10.1107/S2059798318006551</td>\n      <td>https://www.phenix-online.org</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>UCSF Chimera</td>\n      <td>DOI: 10.1002/jcc.20084</td>\n      <td>https://www.cgl.ucsf.edu/chimera</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Pymol</td>\n      <td>PyMOL Molecular Graphics System, Schr\u00f6dinger, LLC</td>\n      <td>http://www.pymol.org</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>HOLE</td>\n      <td>DOI: 10.1016/s0263-7855(97)00009-x</td>\n      <td>http://www.holeprogram.org</td>\n      <td></td>\n    </tr>\n  </tbody>\n</table>\n\n### Cloning, expression, and purification\n\nDNA encoding residues 12\u2013282 of KvAP was subcloned into protein expression vector pET28a (Novagen) between NcoI and BglII restriction endonuclease sites with a thrombin cleavage site between a carboxy-terminal hexahistidine sequence and the channel. Channel protein was expressed in BL21(DE3) cells (Invitrogen). For large scale culture, a single colony was inoculated in LB medium overnight at 37\u00b0C and then diluted 1:100 (v:v) into auto-inducing ZYM-5052 medium and further inoculated at 37\u00b0C for 24\u201326 hr (Studier, 2005).\n\nThe cell pellet from a\u00a02-liter culture was resuspended in 100 ml of lysis buffer (20 mM Tris-HCl pH 8.0, 150 mM KCl, 0.1 mg/ml DNase I, and protease inhibitors including 0.1 \u03bcg/ml pepstatin A, 1 \u03bcg/ml leupeptin, 1 \u03bcg/ml aprotinin, 0.1 mg/ml soy trypsin inhibitor, 1 mM benzamidine, 0.1 mg/ml 4-(2-Aminoethyl) benzenesulfonyl fluoride hydrochloride (AEBSF) and 2 mM phenylmethysulfonyl fluoride (PMSF)) and then passed through a microfluidizer three times before adding lauryl maltose neopentyl glycol/cholesteryl hemisuccinate (LMNG/CHS) to a final concentration of 10 mM/2 mM. After 2 hr of extraction at room temperature, the lysate was clarified by centrifugation at 39,800 x g for 30 min. Supernatant was then applied to a prepacked 4 ml Talon Co2+ affinity column (Clontech) equilibrated in wash buffer (20 mM Tris-HCl pH 8.0, 150 mM KCl, 0.06% Digitonin). Nonspecifically bound protein was washed using 15 mM imidazole added to the above buffer. The channel was eluted with 400 mM imidazole, concentrated using an Amicon Ultra centrifugal filter (MWCO 50 kDa), and then injected onto a Superdex-200 (10/30) column (GE Healthcare) equilibrated with wash buffer. Fractions corresponding to KvAP tetramer (indicated by black ** in Figure 2\u2014figure supplement 1) were pooled and concentrated to\u00a0~5 mg/ml, mixed with purified 6E1 Fab at a molar ratio of 1:1.1 (KvAP monomer:6E1 Fab) on ice for 0.5 hr, and loaded onto Superdex-200 column again. Fractions corresponding to KvAP-6E1 Fab complex (indicated by red * in Figure 2\u2014figure supplement 1) were pooled, concentrated to\u00a0~6.5 mg/ml and used for cryo-EM grid preparation.\n\n### Fab preparation\n\nMonoclonal antibody 6E1 (mouse immunoglobulin) against KvAP were raised using standard procedures (Harlow, 1989) and purified as previously described (Jiang et al., 2003a). In brief, IgGs from mouse hybridoma cell culture supernatant were purified using a Protein A column (Bio-Rad). Fab fragments were generated by papain proteolysis (Worthington) and purified by Q-Sepharose chromatography (GE Healthcare). The hybridoma cell line has not been authenticated or tested for mycoplasma contamination.\n\n### Cryo-EM grid preparation and imaging\n\n3.5 \u03bcl of purified protein was pipetted onto glow-discharged Quantifoil Au 400 mesh, R 1.2/1.3 holey carbon grids (Quantifoil). Grids were blotted for 4 s with a blotting force of 1 and humidity of 100% and flash frozen in liquid-nitrogen-cooled liquid ethane using a FEI Vitrobot Mark IV (FEI).\n\nGrids were then transferred to a FEI Titan Krios electron microscope operating at an acceleration voltage of 300 keV. Images were recorded in an automated fashion on a Gatan K2 Summit detector (Gatan) set to super-resolution mode using SerialEM (Mastronarde, 2005). Specifically, images were recorded at a super-resolution pixel size of 0.514 \u00c5 and defocus range of 0.8 to 2.2 \u03bcm, for 10 s with a subframe exposure time of 200 ms in a dose of approximately 7.9 electrons per pixel per second (a total accumulated dose of approximately 75 electrons per \u00c52 over 50 subframes or approximately 1.5 electrons per \u00c52 per subframe).\n\n### Image processing and map calculation\n\nDose-fractionated super-resolution images were 2\u00a0\u00d7\u00a02 down sampled by Fourier cropping for motion correction with MotionCor2 (5 \u00d7 5 patches) (Zheng et al., 2017). The parameters of the contrast transfer function were estimated by GCTF (Zhang, 2016). Following motion correction,~5 k particles from a subset of the images were interactively selected using Relion to generate templates representing different views for automated particle selection with gautomatch (https://www.mrc-lmb.cam.ac.uk/kzhang/). The autopicked particles were then subjected to 2D classification in Relion to remove false positives as well as particles belonging to low-abundance classes (Scheres, 2012). Particles belonging to 2D classes with more constant 4 Fabs were used for initial model generation in cryoSPARC (Punjani et al., 2017).\n\n~735 k particle images were selected following 4 rounds of 2D classification in Relion (Scheres, 2012). These particles were separated into eight classes using Relion\u2019s 3D classification algorithm without a mask. All eight classes showed presence of 4 Fabs on the opposite side of the CTD density, although the positions of Fabs are variable. One of the eight classes, accounting\u00a0~13% (~97 k particles) of the total particles, showed most continuous densities for the KvAP channel moiety after 3D auto-refine in Relion imposing C4 symmetry. The resulting map has a resolution of\u00a0~8 \u00c5 before postprocessing, showing clearly non-domain-swapped S4-S5 linker density (Figure 2\u2014figure supplement 5). The refined particle images of this class were subjected to further focused 3D classification masking the KvAP transmembrane region and Fabs while applying C4 symmetry and skipping image alignment. Rotational and translational parameters of particles from two major classes (~67 k particles) of the focused 3D classification were used as the input for further focused refinement masking around the KvAP transmembrane region and Fabs in FrealignX, during which the resolution of the reference map used for alignment was limited to 8 \u00c5 (Lyumkis et al., 2013). The final map achieved a resolution of\u00a0~5.9 \u00c5 as assessed by Fourier shell correlation using the 0.143 cut-off criterion (Figure 2\u2014figure supplement 2) and was sharpened using an isotropic b-factor of \u2212500 \u00c52. Symmetry expansion of the above 67 k particles in Relion followed by local refinement in cryoSPARC slightly improved the map quality (Scheres, 2012; Punjani et al., 2017).\n\n### Model building and refinement\n\nFor model generation, the crystal structure of the isolated voltage sensor (PDB: 1QRS) and a model of the pore from the crystal structure of the full-length KvAP channel (PDB: 1ORQ) were placed into the density. Small rigid body adjustments of helical segments were made, followed by a round of real-space refinement in Phenix (Afonine et al., 2018). The only new model rebuilding at the level of individual amino acids involved four amino acids inside the continuous density connecting S4 to S5. Figures were prepared using PyMOL (Molecular Graphics System, Version 2.2.0 Schrodinger, LLC) and Chimera (Pettersen et al., 2004).\n",
+      "created_at": "2025-12-02T13:34:16.260340Z"
+    },
+    {
+      "id": "76ff7f1d-18be-48c8-a006-e6e4a06f9c0f",
+      "submission_id": "21dad989-b30b-480b-a80f-ea66f6f162c1",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Kenton J Swartz, National Institute of Neurological Disorders and Stroke, National Institutes of Health United States\n\nReviewers:\n- Gilman Toombes, National Institute of Neurological Disorders and Strokes United States\n- Youxing Jiang, University of Texas Southwestern Medical Center United States\n- Fred Sigworth, Yale United States\n\n## Review text\n\nDOI: [10.7554/eLife.52164.sa1](https://doi.org/10.7554/eLife.52164.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nAcceptance summary:\n\nIn this study, Tao and MacKinnon determine the cryo-EM structure of KvAP channel in complex with the Fab fragment of a monoclonal antibody. Despite of low resolution around 6 \u00c5, the previously determined high resolution crystal structure of the isolated VSD of KvAP and the pore region of the full-length KvAP structure conform well with the EM map, allowing them to build an accurate model into the density. The structure reveal some unexpected features that distinguish KvAP from most other canonical Kv channels: (1) the channel adopts a non-domain-swapped topology; (2) S4 does not appear to form a 310 helix and has a distinct arrangement of voltage-sensing arginine residues; (3) KvAP contains a Leu instead of a Phe at its gating charge transfer center; (4) the relative position between VSD and pore in KvAP is different from that in both domain-swapped and non-domain-swapped Kv channels; (5) S1 and S5 form extensive contact in KvAP, which is not observed in other Kv channels. These distinct features suggest that KvAP is an outlier among voltage-gated ion channels and its structural mechanism of voltage gating is likely different from that of most canonical voltage-gated K+ channels. KvAP was the channel for which the first structures were solved and thus has been widely used as a model protein for studying voltage gating, the findings of this study become particularly important and may provide explanations for some discrepant results in the studies of voltage-dependent conformational changes. Overall, this is a straightforward and informative study that will valuable for understanding the fundamental mechanisms by which voltage-activated ion channels open and close in response to changes in membrane voltage. The editors think you have addressed all of the issues raised by reviewers and we are delighted to be able to publish your work in eLife.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Cryo-EM structure of the KvAP channel reveals a non-domain-swapped voltage sensor topology\" for consideration by eLife. Your article has been reviewed by three peer reviewers, and the evaluation has been overseen by Kenton Swartz serving as both Reviewing Editor and Senior Editor. The following individuals involved in review of your submission have agreed to reveal their identity: Gilman Toombes (Reviewer #1); Youxing Jiang (Reviewer #2); Fred Sigworth (Reviewer #3).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nAs you will see from the comments of the reviewers, all three are enthusiastic about publishing your manuscript in eLife and reviewer #1 has suggestions for improving the work in revision. Please consider their comments and address their points in preparing a revised manuscript.\n\nReviewer #1:\n\nIn 2003 the MacKinnon lab revolutionized our understanding of voltage-gated ion channels with the first x-ray crystallographic structures of KvAP, a voltage-gated potassium channel from a thermophilic bacteria. However, KvAP appeared to be distorted in the full-length crystal structure and despite extensive structural and functional studies, the native structure of KvAP is unknown. In this work, the authors have used modern single-particle cryo-EM techniques to obtain a seemingly native-state structure of KvAP in which the voltage-sensing domain (VSD) and pore domain of each KvAP sub-unit are in direct contact, unlike canonical voltage-gated potassium channels (Kv1-9) in which each VSD nestles against the pore domain of the neighboring sub-unit.\n\nThis is an important result, and the article is exceptionally clear and well written. However, there are a few aspects of the study that could benefit from further discussion.\n\n1) Effect of Resolution on Model:\n\nThe authors have clearly accounted for the EM map resolution (~6 \u00c5) during modelling, but it would help a general reader to present whatever cross-checks the authors performed. For example, did the authors manually assess map uncertainties by plotting different sigma level surfaces, or use a more automated approach (e.g. Beckers, M., Jakobi, A.J., and Sachse, C. (2019). Thresholding of cryo-EM density maps by false discovery rate control. IUCrJ 6, 18-33.). Is the direct S4-S5 linker clearly visible in the raw unmasked ~8 \u00c5 map of Class I, or only after masking and symmetry expansion steps? What is the worst resolution at which the EM map could exclude a domain-swapped linker \"smeared out\" by C4 averaging of multiple conformations, especially if the inner gate were to be in a mixture of open and inactivated states (subsection \u201cConformational State\u201d)? Does the direct linker density still jump out even if one incorrectly uses a domain-swapped KvAP model (e.g. Figure 6, Lee et al., 2005) for masking and refinement?\n\n2) Effects of Detergent and Antibodies on Conformation:\n\nThe MacKinnon lab has previously shown that the conformation of voltage sensing proteins, and KvAP in particular, can be very sensitive to the composition of the lipid membrane. In addition, although Jiang et al. (2003) elegantly showed that binding of the 6E1 antibody drives the channel into a non-conducting state this may not be the physiological inactivated state. In this KvAP structure the VSD domain seems to be displaced towards the extra-cellular side of the membrane (relative to the pore domain) whether one looks at the position of aromatic residues in the TM helices or PEG-Biotin accessibility. It may seem crazy to think lipid composition or antibody-protein interactions could switch a 6-TM channel between direct and domain-swapped configurations, but the Sobolevsky lab observed exactly such a transition for TRPV6 following a single point mutation in the S4-S5 linker (Singh, A.K., Saotome, K., and Sobolevsky, A.I. (2017). Swapping Of Transmembrane Domains In The Epithelial Calcium Channel TRPV6. BioRxiv 141523.) Thus, it would be helpful for the authors to discuss whether the conditions used to obtain the structure could influence the domain organization.\n\n3) Consistency of Structure with Published Cysteine Cross-Linking Data:\n\nThe MacKinnon lab has previously reported that KvAP can tetramerize through introduced cysteine residues into the VSD and pore (S4 117C / S5 169C; Figure 5D, Lee et al., 2005; S1 T47C / PD V183C; Lee et al., 2009, PLoS Biol 7, e1000047.) These residue pairs were quite close in KvAP domain-swapped homology models, but are quite distant in this direct KvAP structure. A membrane-based assay to excluded a domain swapped architecture would be especially valuable to check that these cross-links are indeed non-specific.\n\nReviewer #2:\n\nIn this study, Tao and MacKinnon determine the cryo-EM structure of KvAP channel in complex with the Fab fragment of a monoclonal antibody. Despite of low resolution around 6 \u00c5, the previously determined high resolution crystal structure of the isolated VSD of KvAP and the pore region of the full-length KvAP structure conform well with the EM map, allowing them to build a pretty accurately model into the density. The structure reveal some unexpected features that distinguish KvAP from most other canonical Kv channels: (1) the channel adopts a non-domain-swapped topology; (2) S4 does not appear to form a 310 helix and has a distinct arrangement of voltage-sensing arginine residues; (3) KvAP contains a Leu instead of a Phe at its gating charge transfer center; (4) the relative position between VSD and pore in KvAP is different from that in both domain-swapped and non-domain-swapped Kv channels; (5) S1 and S5 form extensive contact in KvAP, which is not observed in other Kv channels. These distinct features suggest that KvAP is an outlier among voltage-gated ion channels and its structural mechanism of voltage gating is likely different from that of most canonical voltage-gated K+ channels. As KvAP has been widely used as a model protein for studying voltage gating, the findings of this study become particularly important and may provide explanations for some discrepant results in the studies of voltage-dependent conformational changes. In short, this is a simple but informative study that will bring some clarifications to the channel field.\n\nReviewer #3:\n\nThis is an important study that answers questions that surrounded the first X-ray structure of a voltage-gated channel, namely this one. It is particularly satisfying to see the mapping of accessibility and EPR experiments on the new structure.\n",
+      "created_at": "2025-12-02T13:34:16.260340Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T13:34:16.260340Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T13:34:16.260340Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "c954cadd-6f16-4d40-8f6b-6a7c9839f942",
+      "content_id": "de749ec5-0a8d-4f51-a632-30c546f5f6ee",
+      "claim_id": "C1",
+      "claim": "Voltage sensors are integral membrane proteins that 'sense' transmembrane voltage differences.",
+      "claim_type": "EXPLICIT",
+      "source": "Voltage sensors are integral membrane proteins that 'sense' transmembrane voltage differences.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established scientific knowledge about voltage sensors.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:34:16.260340Z"
+    },
+    {
+      "id": "86676de5-6368-44da-999c-09aa87f7314c",
+      "content_id": "de749ec5-0a8d-4f51-a632-30c546f5f6ee",
+      "claim_id": "C2",
+      "claim": "Voltage sensors exist as regulatory domains on voltage-gated ion channels and voltage-dependent phosphatase enzymes.",
+      "claim_type": "EXPLICIT",
+      "source": "They exist as regulatory domains on voltage-gated ion channels and voltage-dependent phosphatase enzymes (Hille, 2001; Murata et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Hille, 2001 and Murata et al., 2005.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:34:16.260340Z"
+    },
+    {
+      "id": "cbb1a20b-e727-431d-95de-4364f233f07b",
+      "content_id": "de749ec5-0a8d-4f51-a632-30c546f5f6ee",
+      "claim_id": "C3",
+      "claim": "All voltage sensors have a shared structure consisting of four helical transmembrane segments.",
+      "claim_type": "EXPLICIT",
+      "source": "All voltage sensors have a shared structure consisting of four helical transmembrane segments (Noda et al., 1984; Papazian et al., 1987; Tanabe et al., 1987; Tempel et al., 1987; Jiang et al., 2003a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by multiple citations documenting this structural feature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:34:16.260340Z"
+    },
+    {
+      "id": "5a9dad17-6e1f-4de2-b998-746d027b042b",
+      "content_id": "de749ec5-0a8d-4f51-a632-30c546f5f6ee",
+      "claim_id": "C4",
+      "claim": "The fourth helix (S4) contains positive-charged amino acids that move within the transmembrane electrical field as part of a global conformational change.",
+      "claim_type": "EXPLICIT",
+      "source": "The fourth helix, termed S4, contains positive-charged amino acids that move within the transmembrane electrical field as part of a global conformational change (Noda et al., 1984; Tanabe et al., 1987; Tempel et al., 1987; Aggarwal and MacKinnon, 1996; Seoh et al., 1996; Long et al., 2005a; Long et al., 2005b; Long et al., 2007; Swartz, 2008; Tao et al., 2010; Guo et al., 2016; Shen et al., 2017; Wisedchaisri et al., 2019; Xu et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by extensive citations documenting S4 movement.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:34:16.260340Z"
+    },
+    {
+      "id": "ed328805-451a-4a35-abcd-2d9bb0929d35",
+      "content_id": "de749ec5-0a8d-4f51-a632-30c546f5f6ee",
+      "claim_id": "C5",
+      "claim": "Sensor conformational changes are imparted onto the channel or enzyme to regulate activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Sensor conformational changes are imparted onto the channel or enzyme to regulate activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about voltage sensor function.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:34:16.260340Z"
+    },
+    {
+      "id": "2c630994-7461-409d-bebe-1ecb96b4f4f2",
+      "content_id": "de749ec5-0a8d-4f51-a632-30c546f5f6ee",
+      "claim_id": "C6",
+      "claim": "Nature employs two topologically distinct connections between the voltage sensors and the ion channel pore.",
+      "claim_type": "EXPLICIT",
+      "source": "Atomic structures of several different eukaryotic voltage-gated K+ (Kv) channels demonstrate that nature employs two topologically distinct connections between the voltage sensors and the ion channel pore (Long et al., 2005a; Whicher and MacKinnon, 2016; Sun and MacKinnon, 2017; Tao et al., 2017; Wang and MacKinnon, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to structural studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:34:16.260340Z"
+    },
+    {
+      "id": "d43446cf-2023-4d87-8aa9-8eac373083c4",
+      "content_id": "de749ec5-0a8d-4f51-a632-30c546f5f6ee",
+      "claim_id": "C7",
+      "claim": "Kv channels are four-fold symmetric, exhibiting one central pore surrounded by four voltage sensors.",
+      "claim_type": "EXPLICIT",
+      "source": "Viewed down an axis perpendicular to the membrane, Kv channels are four-fold symmetric, exhibiting one central pore surrounded by four voltage sensors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established structural knowledge about Kv channels.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:34:16.260340Z"
+    },
+    {
+      "id": "a7767e97-b948-4ed2-94d7-ca5ad74c1eda",
+      "content_id": "de749ec5-0a8d-4f51-a632-30c546f5f6ee",
+      "claim_id": "C8",
+      "claim": "Each subunit encodes a voltage sensor from transmembrane helices S1-S4 and one fourth of the pore from S5 and S6.",
+      "claim_type": "EXPLICIT",
+      "source": "Each subunit encodes a voltage sensor from transmembrane helices S1-S4 and one fourth of the pore from S5 and S6.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established structural knowledge about Kv channel subunit composition.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:34:16.260340Z"
+    },
+    {
+      "id": "40ffc5a1-61ac-41ea-b3e5-5b6029f1749c",
+      "content_id": "de749ec5-0a8d-4f51-a632-30c546f5f6ee",
+      "claim_id": "C9",
+      "claim": "The channel tetramer is held together by a 'barrel stave' assemblage of the pore, with the voltage sensors residing on the periphery.",
+      "claim_type": "EXPLICIT",
+      "source": "The channel tetramer is held together by a 'barrel stave' assemblage of the pore, with the voltage sensors residing on the periphery (Long et al., 2005a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Long et al., 2005a.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:34:16.260340Z"
+    },
+    {
+      "id": "6c4a018b-371c-48a0-9860-cbd02ccbd536",
+      "content_id": "de749ec5-0a8d-4f51-a632-30c546f5f6ee",
+      "claim_id": "C10",
+      "claim": "In domain-swapped Kv channels, the voltage sensor of subunit A leans against the pore-forming helices of subunit B, B against C and so on around the tetramer.",
+      "claim_type": "EXPLICIT",
+      "source": "If four K+ channel subunits are designated A, B, C and D, to be domain-swapped means the voltage sensor of subunit A leans against the pore-forming helices of subunit B, B against C and so on around the tetramer, as shown in Figure 1A.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Defined in text and illustrated in Figure 1A.",
+      "evidence_type": "[\"KNOWLEDGE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:34:16.260340Z"
+    },
+    {
+      "id": "9780ef3c-1397-4b97-ad85-df2e2aea77ca",
+      "content_id": "de749ec5-0a8d-4f51-a632-30c546f5f6ee",
+      "claim_id": "C11",
+      "claim": "In non-domain-swapped Kv channels, the voltage sensor of subunit A leans against the pore-forming helices of subunit A, B against B, etc.",
+      "claim_type": "EXPLICIT",
+      "source": "In non-domain-swapped Kv channels, the voltage sensor of subunit A leans against the pore-forming helices of subunit A, B against B, etc., as shown in Figure 1B.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Defined in text and illustrated in Figure 1B.",
+      "evidence_type": "[\"KNOWLEDGE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:34:16.260340Z"
+    },
+    {
+      "id": "fb9bdaaa-0cb7-491a-a8b5-984f4bc1b6e6",
+      "content_id": "de749ec5-0a8d-4f51-a632-30c546f5f6ee",
+      "claim_id": "C12",
+      "claim": "Kv1-7 channels have domain-swapped voltage sensors.",
+      "claim_type": "EXPLICIT",
+      "source": "Kv1-7 channels have domain-swapped voltage sensors; Kv10-12 and Slo1 channels have non-domain-swapped voltage sensors (Long et al., 2005a; Whicher and MacKinnon, 2016; Sun and MacKinnon, 2017; Tao et al., 2017; Wang and MacKinnon, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by multiple citations to structural studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:34:16.260340Z"
+    },
+    {
+      "id": "037bee01-2ee0-41db-9441-a2e881d832e6",
+      "content_id": "de749ec5-0a8d-4f51-a632-30c546f5f6ee",
+      "claim_id": "C13",
+      "claim": "Kv10-12 and Slo1 channels have non-domain-swapped voltage sensors.",
+      "claim_type": "EXPLICIT",
+      "source": "Kv1-7 channels have domain-swapped voltage sensors; Kv10-12 and Slo1 channels have non-domain-swapped voltage sensors (Long et al., 2005a; Whicher and MacKinnon, 2016; Sun and MacKinnon, 2017; Tao et al., 2017; Wang and MacKinnon, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by multiple citations to structural studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:34:16.260340Z"
+    },
+    {
+      "id": "5719b2fe-c246-48ad-8469-e94b8149a961",
+      "content_id": "de749ec5-0a8d-4f51-a632-30c546f5f6ee",
+      "claim_id": "C14",
+      "claim": "Voltage-gated Na+ (Nav) and Ca2+ (Cav) channels and other cation channels have domain-swapped voltage sensors.",
+      "claim_type": "EXPLICIT",
+      "source": "Other voltage-gated channels can also be characterized according to this classification: voltage-gated Na+ (Nav) and Ca2+ (Cav) channels and other cation channels have domain-swapped voltage sensors (Payandeh et al., 2011; Zhang et al., 2012; Guo et al., 2016; Wu et al., 2016; Shen et al., 2017; Yan et al., 2017; She et al., 2018)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by multiple citations to structural studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:34:16.260340Z"
+    },
+    {
+      "id": "3aac8cb7-5457-48ba-b60f-c07b81e0cf1e",
+      "content_id": "de749ec5-0a8d-4f51-a632-30c546f5f6ee",
+      "claim_id": "C15",
+      "claim": "HCN channels, which are hyperpolarization-activated cation channels, have non-domain-swapped voltage sensors.",
+      "claim_type": "EXPLICIT",
+      "source": "HCN channels, which are hyperpolarization-activated cation channels, have non-domain-swapped voltage sensors (Lee and MacKinnon, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Lee and MacKinnon, 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:34:16.260340Z"
+    },
+    {
+      "id": "f1fe50c0-c3de-4345-abcf-279949b7e7e0",
+      "content_id": "de749ec5-0a8d-4f51-a632-30c546f5f6ee",
+      "claim_id": "C16",
+      "claim": "In domain-swapped channels, the voltage sensor is connected to the pore by an ~20 \u00c5 long S4-S5 linker helix.",
+      "claim_type": "EXPLICIT",
+      "source": "In the former case, the voltage sensor is connected to the pore by an ~20 \u00c5 long S4-S5 linker helix, which runs along the channel's cytoplasmic surface and contacts the S6 helix, which forms the gate (Figure 1C) (Long et al., 2005a; Long et al., 2007).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by citations and illustrated in Figure 1C.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:34:16.260340Z"
+    },
+    {
+      "id": "000e9354-2eac-4beb-910b-c5ce3f9cb389",
+      "content_id": "de749ec5-0a8d-4f51-a632-30c546f5f6ee",
+      "claim_id": "C17",
+      "claim": "The S4-S5 linker helix runs along the channel's cytoplasmic surface and contacts the S6 helix, which forms the gate.",
+      "claim_type": "EXPLICIT",
+      "source": "In the former case, the voltage sensor is connected to the pore by an ~20 \u00c5 long S4-S5 linker helix, which runs along the channel's cytoplasmic surface and contacts the S6 helix, which forms the gate (Figure 1C) (Long et al., 2005a; Long et al., 2007).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by citations and illustrated in Figure 1C.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:34:16.260340Z"
+    },
+    {
+      "id": "11d7b7c2-cfd7-4af2-8a8e-a85de6673b5a",
+      "content_id": "de749ec5-0a8d-4f51-a632-30c546f5f6ee",
+      "claim_id": "C18",
+      "claim": "Conformational changes within the voltage sensor are transmitted to the gate through the S4-S5 linker helix in domain-swapped channels.",
+      "claim_type": "EXPLICIT",
+      "source": "Conformational changes within the voltage sensor are transmitted to the gate through the S4-S5 linker helix (Long et al., 2005b; Guo et al., 2016; Wisedchaisri et al., 2019; Xu et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by multiple citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:34:16.260340Z"
+    },
+    {
+      "id": "4fc4fc04-9615-4211-bf77-fc5f92775b4b",
+      "content_id": "de749ec5-0a8d-4f51-a632-30c546f5f6ee",
+      "claim_id": "C19",
+      "claim": "Channels with non-domain-swapped voltage sensors do not have a helical S4-S5 linker.",
+      "claim_type": "EXPLICIT",
+      "source": "Channels with non-domain-swapped voltage sensors do not have a helical S4-S5 linker and the mechanism of gate control is unknown (Figure 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated in text and illustrated in Figure 1D.",
+      "evidence_type": "[\"KNOWLEDGE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:34:16.260340Z"
+    },
+    {
+      "id": "0dfa3975-8334-449c-8f5b-dd9ee2f538bb",
+      "content_id": "de749ec5-0a8d-4f51-a632-30c546f5f6ee",
+      "claim_id": "C20",
+      "claim": "The mechanism of gate control in non-domain-swapped voltage sensors is unknown.",
+      "claim_type": "EXPLICIT",
+      "source": "Channels with non-domain-swapped voltage sensors do not have a helical S4-S5 linker and the mechanism of gate control is unknown (Figure 1D).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Explicitly stated as unknown.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:34:16.260340Z"
+    },
+    {
+      "id": "7addcd01-699c-465c-aefa-8d73ba8ad2de",
+      "content_id": "de749ec5-0a8d-4f51-a632-30c546f5f6ee",
+      "claim_id": "C21",
+      "claim": "KvAP is a Kv channel from the thermophilic archaea Aeropyrum pernix.",
+      "claim_type": "EXPLICIT",
+      "source": "KvAP is a Kv channel from the thermophilic archaea Aeropyrum pernix (Ruta et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Ruta et al., 2003.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:34:16.260340Z"
+    },
+    {
+      "id": "2860855a-b87f-4814-b5e4-0b63d23aa83b",
+      "content_id": "de749ec5-0a8d-4f51-a632-30c546f5f6ee",
+      "claim_id": "C22",
+      "claim": "KvAP provided the first atomic structures from a voltage-gated ion channel.",
+      "claim_type": "EXPLICIT",
+      "source": "It provided the first atomic structures from a voltage-gated ion channel and the isolated voltage sensor structure turned out to be the prototype for this domain family (Jiang et al., 2003a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Jiang et al., 2003a.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:34:16.260340Z"
+    },
+    {
+      "id": "f283abc9-bc3f-4170-af2d-c7f007b1be3b",
+      "content_id": "de749ec5-0a8d-4f51-a632-30c546f5f6ee",
+      "claim_id": "C23",
+      "claim": "The isolated voltage sensor structure of KvAP is the prototype for the voltage sensor domain family.",
+      "claim_type": "EXPLICIT",
+      "source": "It provided the first atomic structures from a voltage-gated ion channel and the isolated voltage sensor structure turned out to be the prototype for this domain family (Jiang et al., 2003a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Jiang et al., 2003a.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:34:16.260340Z"
+    },
+    {
+      "id": "f463a684-2a42-4cad-b58b-490820c530cb",
+      "content_id": "de749ec5-0a8d-4f51-a632-30c546f5f6ee",
+      "claim_id": "C24",
+      "claim": "Crystallographic analysis of the full-length KvAP channel consistently yielded structures with voltage sensors that were rotated relative to the pore and partially unfolded.",
+      "claim_type": "EXPLICIT",
+      "source": "Crystallographic analysis of the full-length KvAP channel, however, consistently yielded structures with voltage sensors that were rotated relative to the pore and partially unfolded (Jiang et al., 2003a; Lee et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Jiang et al., 2003a and Lee et al., 2005.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:34:16.260340Z"
+    },
+    {
+      "id": "26c81bb8-88ba-4fc3-9dd8-a77566a29401",
+      "content_id": "de749ec5-0a8d-4f51-a632-30c546f5f6ee",
+      "claim_id": "C25",
+      "claim": "The KvAP structures led to the proposal of the 'paddle model', in which S4 moves adjacent to the lipid membrane as part of a helix-turn-helix structure consisting of helices S3b and S4.",
+      "claim_type": "EXPLICIT",
+      "source": "Together with voltage-dependent accessibility measurements, the KvAP structures led us to propose the 'paddle model', in which S4 moves adjacent to the lipid membrane as part of a helix-turn-helix structure consisting of helices S3b and S4 (Jiang et al., 2003b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Jiang et al., 2003b.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:34:16.260340Z"
+    },
+    {
+      "id": "107a2793-5ef8-489d-aa87-7f52f1261738",
+      "content_id": "de749ec5-0a8d-4f51-a632-30c546f5f6ee",
+      "claim_id": "C26",
+      "claim": "Until recently, all voltage-gated channels were thought to be of the domain-swapped variety.",
+      "claim_type": "EXPLICIT",
+      "source": "Until recently, all voltage-gated channels were thought to be of the domain-swapped variety (Whicher and MacKinnon, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Whicher and MacKinnon, 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:34:16.260340Z"
+    },
+    {
+      "id": "d543dad3-1304-4c54-bea3-b8bf63c8ad45",
+      "content_id": "de749ec5-0a8d-4f51-a632-30c546f5f6ee",
+      "claim_id": "C27",
+      "claim": "KvAP was considered representative of the more extensively studied Shaker-like (i.e. Kv1) channels, with domain-swapped voltage sensors.",
+      "claim_type": "EXPLICIT",
+      "source": "For this reason, KvAP was considered representative of the more extensively studied Shaker-like (i.e. Kv1) channels, with domain-swapped voltage sensors (Long et al., 2005a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Long et al., 2005a.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:34:16.260340Z"
+    },
+    {
+      "id": "7180cc8f-2482-40ce-9e08-749f044e0fe5",
+      "content_id": "de749ec5-0a8d-4f51-a632-30c546f5f6ee",
+      "claim_id": "C30",
+      "claim": "KvAP and the Shaker channel probably undergo rather different voltage-dependent conformational changes when they open.",
+      "claim_type": "EXPLICIT",
+      "source": "The new structure, together with previous functional data, suggests that KvAP and the Shaker channel, to which KvAP is most often compared, probably undergo rather different voltage-dependent conformational changes when they open.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the new structure and previous functional data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:34:16.260340Z"
+    },
+    {
+      "id": "e257ed4d-7984-4f18-af56-d902b51504ee",
+      "content_id": "de749ec5-0a8d-4f51-a632-30c546f5f6ee",
+      "claim_id": "C31",
+      "claim": "KvAP was expressed in E. coli.",
+      "claim_type": "EXPLICIT",
+      "source": "KvAP was expressed in E. coli, extracted in a mixture of lauryl maltose neopentyl glycol (LMNG) and cholesteryl hemisuccinate (CHS), exchanged into digitonin and then purified as a complex with Fab fragments using size exclusion chromatography (Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological detail describing the experimental procedure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:34:16.260340Z"
+    },
+    {
+      "id": "2d86cc3f-0ad6-48b2-ad68-4eadf1b54218",
+      "content_id": "de749ec5-0a8d-4f51-a632-30c546f5f6ee",
+      "claim_id": "C32",
+      "claim": "KvAP was extracted in a mixture of lauryl maltose neopentyl glycol (LMNG) and cholesteryl hemisuccinate (CHS).",
+      "claim_type": "EXPLICIT",
+      "source": "KvAP was expressed in E. coli, extracted in a mixture of lauryl maltose neopentyl glycol (LMNG) and cholesteryl hemisuccinate (CHS), exchanged into digitonin and then purified as a complex with Fab fragments using size exclusion chromatography (Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological detail describing the experimental procedure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:34:16.260340Z"
+    },
+    {
+      "id": "9718e965-ec9f-4078-8dc2-539425289f6c",
+      "content_id": "de749ec5-0a8d-4f51-a632-30c546f5f6ee",
+      "claim_id": "C33",
+      "claim": "KvAP was exchanged into digitonin.",
+      "claim_type": "EXPLICIT",
+      "source": "KvAP was expressed in E. coli, extracted in a mixture of lauryl maltose neopentyl glycol (LMNG) and cholesteryl hemisuccinate (CHS), exchanged into digitonin and then purified as a complex with Fab fragments using size exclusion chromatography (Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological detail describing the experimental procedure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:34:16.260340Z"
+    },
+    {
+      "id": "d6b36a61-daca-47ec-be1d-7316f4d884fd",
+      "content_id": "de749ec5-0a8d-4f51-a632-30c546f5f6ee",
+      "claim_id": "C34",
+      "claim": "KvAP was purified as a complex with Fab fragments using size exclusion chromatography.",
+      "claim_type": "EXPLICIT",
+      "source": "KvAP was expressed in E. coli, extracted in a mixture of lauryl maltose neopentyl glycol (LMNG) and cholesteryl hemisuccinate (CHS), exchanged into digitonin and then purified as a complex with Fab fragments using size exclusion chromatography (Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a methodological detail describing the experimental procedure, with supporting figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:34:16.260340Z"
+    },
+    {
+      "id": "1b4bf463-68ae-4b67-9057-eafc006caf42",
+      "content_id": "de749ec5-0a8d-4f51-a632-30c546f5f6ee",
+      "claim_id": "C35",
+      "claim": "The Fab fragments bind to KvAP's voltage sensors.",
+      "claim_type": "EXPLICIT",
+      "source": "The Fab fragments, which bind to KvAP's voltage sensors, were used to assist the alignment of channels in image processing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a known property of the Fab fragments used.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:34:16.260340Z"
+    },
+    {
+      "id": "d790219c-e83e-4eb7-bc58-7af6a52c5d33",
+      "content_id": "de749ec5-0a8d-4f51-a632-30c546f5f6ee",
+      "claim_id": "C36",
+      "claim": "The Fab fragments were used to assist the alignment of channels in image processing.",
+      "claim_type": "EXPLICIT",
+      "source": "The Fab fragments, which bind to KvAP's voltage sensors, were used to assist the alignment of channels in image processing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological detail describing the experimental procedure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:34:16.260340Z"
+    },
+    {
+      "id": "6244dd9b-0dc9-4d96-a5fc-8debbe3a32d4",
+      "content_id": "de749ec5-0a8d-4f51-a632-30c546f5f6ee",
+      "claim_id": "C37",
+      "claim": "Following 2D classification, 734,850 particles were 3D-classified in Relion3 with C1 symmetry.",
+      "claim_type": "EXPLICIT",
+      "source": "Following 2D classification, 734,850 particles were 3D-classified in Relion3 with C1 symmetry (Figure 2\u2014figure supplement 2) (Scheres, 2012).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a methodological detail describing the image processing procedure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:34:16.260340Z"
+    },
+    {
+      "id": "22c10252-448c-4083-bce4-404103724c8d",
+      "content_id": "de749ec5-0a8d-4f51-a632-30c546f5f6ee",
+      "claim_id": "C38",
+      "claim": "All classes showed that the voltage sensors were oriented with Fabs projecting towards the extracellular face of the channel.",
+      "claim_type": "EXPLICIT",
+      "source": "All classes showed that the voltage sensors were oriented with Fabs projecting towards the extracellular face of the channel.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the 3D classification results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:34:16.260340Z"
+    },
+    {
+      "id": "352a1f9f-94d0-4da5-b6ad-5fe6bf73f0a6",
+      "content_id": "de749ec5-0a8d-4f51-a632-30c546f5f6ee",
+      "claim_id": "C39",
+      "claim": "The extracellular orientation of Fabs is compatible with the extracellular accessibility of these Fabs in electrophysiological studies.",
+      "claim_type": "EXPLICIT",
+      "source": "This orientation is compatible with the extracellular accessibility of these Fabs in electrophysiological studies (Jiang et al., 2003b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference connecting the structural observation to previous functional data.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:34:16.260340Z"
+    },
+    {
+      "id": "e1993df6-e65f-45e3-8cb4-a20bb651fbea",
+      "content_id": "de749ec5-0a8d-4f51-a632-30c546f5f6ee",
+      "claim_id": "C40",
+      "claim": "The extracellular orientation of Fabs in cryo-EM images contrasts with the non-native orientation of KvAP voltage sensors in crystal structures of the full-length channel.",
+      "claim_type": "EXPLICIT",
+      "source": "The extracellular orientation of Fabs in cryo-EM images contrasts with the non-native orientation of KvAP voltage sensors in crystal structures of the full-length channel, in which detergents more dispersive than digitonin were used (Jiang et al., 2003a; Lee et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison between the current cryo-EM structure and previous crystal structures.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:34:16.260340Z"
+    },
+    {
+      "id": "2ef4ef34-e0f1-41d5-946d-eabf592ba5ee",
+      "content_id": "de749ec5-0a8d-4f51-a632-30c546f5f6ee",
+      "claim_id": "C41",
+      "claim": "The precise positioning of the Fabs was variable.",
+      "claim_type": "EXPLICIT",
+      "source": "While the Fabs were on the extracellular surface in all 3D classes, the precise positioning of the Fabs was variable, as shown (Figure 2\u2014figure supplement 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from the 3D classification results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:34:16.260340Z"
+    },
+    {
+      "id": "31d617b2-ab9f-4fd8-af01-83218ebef631",
+      "content_id": "de749ec5-0a8d-4f51-a632-30c546f5f6ee",
+      "claim_id": "C42",
+      "claim": "The positional variability of Fabs explains why in both 2D and 3D classes, density for the four Fabs is not constant.",
+      "claim_type": "EXPLICIT",
+      "source": "The positional variability explains why in both 2D (Figure 2\u2014figure supplement 3A,B) and 3D classes (Figure 2\u2014figure supplement 2B, Figure 2\u2014figure supplement 3C), density for the four Fabs is not constant: in some classes only a single Fab is well aligned, in others 2, 3, or least frequently 4 Fabs are aligned.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference explaining the observed variability in Fab density.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:34:16.260340Z"
+    },
+    {
+      "id": "2183a116-2313-40dc-aed9-3abe53733692",
+      "content_id": "de749ec5-0a8d-4f51-a632-30c546f5f6ee",
+      "claim_id": "C43",
+      "claim": "The variation in Fab orientation is consistent with past studies showing the high degree of mobility of the S3b-S4 paddle region of the voltage sensor.",
+      "claim_type": "EXPLICIT",
+      "source": "The variation in Fab orientation is consistent with past studies showing the high degree of mobility of the S3b-S4 paddle region of the voltage sensor (Ruta et al., 2005; Butterwick and MacKinnon, 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference connecting the observed variability to previous studies.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:34:16.260340Z"
+    },
+    {
+      "id": "b7271908-ba0b-450a-a942-86307a050b6a",
+      "content_id": "de749ec5-0a8d-4f51-a632-30c546f5f6ee",
+      "claim_id": "C44",
+      "claim": "The final density map was calculated to 6 \u00c5 resolution.",
+      "claim_type": "EXPLICIT",
+      "source": "The final density map, calculated to 6 \u00c5 resolution, showed continuous density for the transmembrane region, density for the Fabs on the extracellular side and a poorly resolved cytoplasmic domain (CTD) on the intracellular side (Figure 2, Figure 2\u2014figure supplement 2, and Figure 2\u2014figure supplement 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a description of the final cryo-EM map.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:34:16.260340Z"
+    },
+    {
+      "id": "b7dc6630-b351-490e-89c1-a9c5837d2db9",
+      "content_id": "de749ec5-0a8d-4f51-a632-30c546f5f6ee",
+      "claim_id": "C45",
+      "claim": "The final density map showed continuous density for the transmembrane region.",
+      "claim_type": "EXPLICIT",
+      "source": "The final density map, calculated to 6 \u00c5 resolution, showed continuous density for the transmembrane region, density for the Fabs on the extracellular side and a poorly resolved cytoplasmic domain (CTD) on the intracellular side (Figure 2, Figure 2\u2014figure supplement 2, and Figure 2\u2014figure supplement 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a description of the final cryo-EM map.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:34:16.260340Z"
+    },
+    {
+      "id": "06af110e-f546-42cd-95fe-b005daf3c254",
+      "content_id": "de749ec5-0a8d-4f51-a632-30c546f5f6ee",
+      "claim_id": "C46",
+      "claim": "The final density map showed density for the Fabs on the extracellular side.",
+      "claim_type": "EXPLICIT",
+      "source": "The final density map, calculated to 6 \u00c5 resolution, showed continuous density for the transmembrane region, density for the Fabs on the extracellular side and a poorly resolved cytoplasmic domain (CTD) on the intracellular side (Figure 2, Figure 2\u2014figure supplement 2, and Figure 2\u2014figure supplement 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a description of the final cryo-EM map.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:34:16.260340Z"
+    },
+    {
+      "id": "d2895c8e-7a02-40f7-935d-a315072c1ee2",
+      "content_id": "de749ec5-0a8d-4f51-a632-30c546f5f6ee",
+      "claim_id": "C47",
+      "claim": "The final density map showed a poorly resolved cytoplasmic domain (CTD) on the intracellular side.",
+      "claim_type": "EXPLICIT",
+      "source": "The final density map, calculated to 6 \u00c5 resolution, showed continuous density for the transmembrane region, density for the Fabs on the extracellular side and a poorly resolved cytoplasmic domain (CTD) on the intracellular side (Figure 2, Figure 2\u2014figure supplement 2, and Figure 2\u2014figure supplement 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a description of the final cryo-EM map.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:34:16.260340Z"
+    },
+    {
+      "id": "5ea5ebf3-b6ff-4c70-821d-f552b287e383",
+      "content_id": "de749ec5-0a8d-4f51-a632-30c546f5f6ee",
+      "claim_id": "C48",
+      "claim": "The existence of the cytoplasmic domain, formed by an extension of the C-terminus, was predicted from protein synthesis studies of KvAP.",
+      "claim_type": "EXPLICIT",
+      "source": "The existence of the cytoplasmic domain, formed by an extension of the C-terminus, was predicted from protein synthesis studies of KvAP (Figure 2\u2014figure supplement 4C) (McDonald et al., 2019).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by citation to McDonald et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:34:16.260340Z"
+    },
+    {
+      "id": "61864ef2-c02e-4e22-b22c-93fe897850b6",
+      "content_id": "de749ec5-0a8d-4f51-a632-30c546f5f6ee",
+      "claim_id": "C49",
+      "claim": "The crystal structure of the isolated voltage sensor conforms well to the experimental cryo-EM map.",
+      "claim_type": "EXPLICIT",
+      "source": "A model corresponding to the crystal structure of the isolated voltage sensor, unmodified, was placed into the density (Figure 2A,B) (Jiang et al., 2003a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by the fit of the crystal structure into the cryo-EM density.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:34:16.260340Z"
+    },
+    {
+      "id": "3885acc6-1d20-4849-9559-ff4f5db14cfc",
+      "content_id": "de749ec5-0a8d-4f51-a632-30c546f5f6ee",
+      "claim_id": "C50",
+      "claim": "The crystal structure of the pore conforms well to the experimental cryo-EM map.",
+      "claim_type": "EXPLICIT",
+      "source": "A model corresponding to the crystal structure of the pore, unmodified, was also placed into the density (Figure 2C,D) (Jiang et al., 2003a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by the fit of the crystal structure into the cryo-EM density.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:34:16.260340Z"
+    },
+    {
+      "id": "8e87b081-2917-4a25-8f29-c6fd857cf2aa",
+      "content_id": "de749ec5-0a8d-4f51-a632-30c546f5f6ee",
+      "claim_id": "C51",
+      "claim": "KvAP is a non-domain-swapped voltage-gated ion channel, meaning each voltage sensor is contiguous with the pore element from the same polypeptide chain.",
+      "claim_type": "EXPLICIT",
+      "source": "An important first conclusion is that KvAP is a non-domain-swapped voltage-gated ion channel, meaning each voltage sensor is contiguous with the pore element from the same polypeptide chain (Figure 2E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is the primary structural finding of the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:34:16.260340Z"
+    },
+    {
+      "id": "0556528f-5225-4168-ba50-c13659cb2b29",
+      "content_id": "de749ec5-0a8d-4f51-a632-30c546f5f6ee",
+      "claim_id": "C52",
+      "claim": "The short turn connecting S4 to S5 instead of a long \u03b1-helical S4-S5 linker indicates that KvAP is non-domain-swapped.",
+      "claim_type": "EXPLICIT",
+      "source": "That this must be the case is evident in the short turn connecting S4 to S5 instead of a long \u03b1-helical S4-S5 linker (Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference from the structural observation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:34:16.260340Z"
+    },
+    {
+      "id": "5388e57c-cf91-417e-9b18-f12cdff778d4",
+      "content_id": "de749ec5-0a8d-4f51-a632-30c546f5f6ee",
+      "claim_id": "C53",
+      "claim": "KvAP is topologically like Kv10-12 channels and unlike Kv1-7 channels.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, KvAP is topologically like Kv10-12 channels and unlike Kv1-7 channels (Figures 1 and 2E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a comparison based on the structural finding.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:34:16.260340Z"
+    },
+    {
+      "id": "8f2fe009-d44a-4233-8e0d-037bbcd7cdf8",
+      "content_id": "de749ec5-0a8d-4f51-a632-30c546f5f6ee",
+      "claim_id": "C54",
+      "claim": "The voltage sensors in KvAP and eag1 orient differently with respect to the pore.",
+      "claim_type": "EXPLICIT",
+      "source": "Figure 3 highlights a notable structural difference between KvAP and eag1 (Kv10) even though they both share a non-domain-swapped topology. Viewed from the extracellular side, their voltage sensors orient differently with respect to the pore, as shown (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a structural comparison shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:34:16.260340Z"
+    },
+    {
+      "id": "b9aa27fe-fbcb-4432-8407-ad745e666058",
+      "content_id": "de749ec5-0a8d-4f51-a632-30c546f5f6ee",
+      "claim_id": "C55",
+      "claim": "In eag1, S1 contacts S5 near the extracellular surface, but is displaced about 15 \u00c5 away from S5 near the intracellular surface.",
+      "claim_type": "EXPLICIT",
+      "source": "In eag1, S1 contacts S5 near the extracellular surface, but is displaced about 15 \u00c5 away from S5 near the intracellular surface (Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a structural observation from the eag1 structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:34:16.260340Z"
+    },
+    {
+      "id": "725d6218-ff23-4dde-a04a-f8e5b1ec6ee7",
+      "content_id": "de749ec5-0a8d-4f51-a632-30c546f5f6ee",
+      "claim_id": "C56",
+      "claim": "In KvAP, S1 runs parallel to and in contact with S5 throughout its length inside the membrane.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, S1 in KvAP runs parallel to and in contact with S5 throughout its length inside the membrane (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a structural observation from the KvAP structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:34:16.260340Z"
+    },
+    {
+      "id": "e7d28745-e02b-492b-a3ce-167c159e6d0c",
+      "content_id": "de749ec5-0a8d-4f51-a632-30c546f5f6ee",
+      "claim_id": "C57",
+      "claim": "EPR data on amino acid side-chain accessibility and mobility in membrane-embedded KvAP channels support the S1-S5 contact observed in the cryo-EM structure.",
+      "claim_type": "EXPLICIT",
+      "source": "Perozo and co-workers analyzed amino acid side-chain accessibility and mobility in membrane-embedded KvAP channels using EPR (Cuello et al., 2004). Their data, which we have mapped onto the structure of KvAP, support the S1-S5 contact observed (Figure 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a comparison between the cryo-EM structure and previous EPR data.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:34:16.260340Z"
+    },
+    {
+      "id": "c9dc71b0-cad1-428c-a05e-f5e859b0102d",
+      "content_id": "de749ec5-0a8d-4f51-a632-30c546f5f6ee",
+      "claim_id": "C58",
+      "claim": "A continuous surface of low side-chain mobility and low O2 collision frequency is observed where S1 contacts S5 in the cryo-EM structure.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, a continuous surface of low side-chain mobility and low O2 collision frequency, which are both signatures of a buried protein surface, is observed where S1 contacts S5 in the cryo-EM structure.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from mapping EPR data onto the structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:34:16.260340Z"
+    },
+    {
+      "id": "e1f028a7-29cf-4441-a305-6f9d5dd73db0",
+      "content_id": "de749ec5-0a8d-4f51-a632-30c546f5f6ee",
+      "claim_id": "C59",
+      "claim": "Low side-chain mobility and low O2 collision frequency are signatures of a buried protein surface.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, a continuous surface of low side-chain mobility and low O2 collision frequency, which are both signatures of a buried protein surface, is observed where S1 contacts S5 in the cryo-EM structure.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about protein structure.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:34:16.260340Z"
+    },
+    {
+      "id": "7f55e930-b61c-4aab-acdb-3e81e4f5db5f",
+      "content_id": "de749ec5-0a8d-4f51-a632-30c546f5f6ee",
+      "claim_id": "C60",
+      "claim": "The cryo-EM structure is consistent with the EPR data.",
+      "claim_type": "EXPLICIT",
+      "source": "Altogether, the cryo-EM structure is consistent with the EPR data.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion from comparing the structure with EPR data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:34:16.260340Z"
+    },
+    {
+      "id": "9df24b7c-aec9-4fa7-bc41-1b491c9c390c",
+      "content_id": "de749ec5-0a8d-4f51-a632-30c546f5f6ee",
+      "claim_id": "C61",
+      "claim": "The consistency between the cryo-EM structure and EPR data suggests that the cryo-EM structure is representative of a conformation of KvAP inside lipid bilayers.",
+      "claim_type": "EXPLICIT",
+      "source": "This consistency suggests that the cryo-EM structure is representative of a conformation of KvAP inside lipid bilayers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the consistency between structure and EPR data.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:34:16.260340Z"
+    },
+    {
+      "id": "8bea55d3-670c-4013-9cee-83ebceab147c",
+      "content_id": "de749ec5-0a8d-4f51-a632-30c546f5f6ee",
+      "claim_id": "C62",
+      "claim": "In electrophysiological studies on KvAP, the membrane must be depolarized first before the extracellularly-applied Fabs can bind.",
+      "claim_type": "EXPLICIT",
+      "source": "In electrophysiological studies on KvAP, the membrane must be depolarized first before the extracellularly-applied Fabs can bind (Jiang et al., 2003b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Jiang et al., 2003b.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:34:16.260340Z"
+    },
+    {
+      "id": "3ceae3ac-06ba-4a47-ac73-32c66892b433",
+      "content_id": "de749ec5-0a8d-4f51-a632-30c546f5f6ee",
+      "claim_id": "C63",
+      "claim": "In the structure, the helical turn of S3b into S4, the Fab epitope, is exposed to the extracellular surface.",
+      "claim_type": "EXPLICIT",
+      "source": "In the structure, the helical turn of S3b into S4, the Fab epitope, is exposed to the extracellular surface, compatible with Fab accessibility and a depolarized conformation of KvAP.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a structural observation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:34:16.260340Z"
+    },
+    {
+      "id": "e6fbbffa-f5e0-4b4c-a8e6-4ab228a9da64",
+      "content_id": "de749ec5-0a8d-4f51-a632-30c546f5f6ee",
+      "claim_id": "C64",
+      "claim": "The exposure of the Fab epitope to the extracellular surface is compatible with Fab accessibility and a depolarized conformation of KvAP.",
+      "claim_type": "EXPLICIT",
+      "source": "In the structure, the helical turn of S3b into S4, the Fab epitope, is exposed to the extracellular surface, compatible with Fab accessibility and a depolarized conformation of KvAP.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference connecting the structural observation to functional data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:34:16.260340Z"
+    },
+    {
+      "id": "ee8167a7-38eb-4ce9-84b1-f7246c05464e",
+      "content_id": "de749ec5-0a8d-4f51-a632-30c546f5f6ee",
+      "claim_id": "C65",
+      "claim": "The voltage sensor is similar in conformation to depolarized voltage sensors in other voltage-gated ion channels.",
+      "claim_type": "EXPLICIT",
+      "source": "The voltage sensor is similar in conformation to depolarized voltage sensors in other voltage-gated ion channels (Figure 5\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a structural comparison shown in Figure 5\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:34:16.260340Z"
+    },
+    {
+      "id": "e5dddd83-700c-4c7f-9d81-d67f2ef4aad1",
+      "content_id": "de749ec5-0a8d-4f51-a632-30c546f5f6ee",
+      "claim_id": "C66",
+      "claim": "Because of the unique interaction between S1 and S5, the S3b-S4 paddle in KvAP resides on the outer-most perimeter of the channel, oriented tangent to the pore domain.",
+      "claim_type": "EXPLICIT",
+      "source": "However, because of the unique interaction between S1 and S5, the S3b-S4 paddle in KvAP resides on the outer-most perimeter of the channel, oriented tangent to the pore domain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a structural observation and inference.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:34:16.260340Z"
+    },
+    {
+      "id": "7ac545dc-b632-4636-bacc-09cd3d4fdc76",
+      "content_id": "de749ec5-0a8d-4f51-a632-30c546f5f6ee",
+      "claim_id": "C67",
+      "claim": "The pore is less open than in the crystal structure of the full-length channel, but more open than in other closed K+ channels.",
+      "claim_type": "EXPLICIT",
+      "source": "The pore is less open than in the crystal structure of the full-length channel, but more open than in other closed K+ channels (Figure 2D, Figure 5\u2014figure supplement 2) (Jiang et al., 2003a; Tao et al., 2009).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a structural comparison with previous structures.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:34:16.260340Z"
+    },
+    {
+      "id": "3d91bc44-f010-4a08-a014-f805df01f73a",
+      "content_id": "de749ec5-0a8d-4f51-a632-30c546f5f6ee",
+      "claim_id": "C68",
+      "claim": "KvAP opens and then inactivates partially following membrane depolarization.",
+      "claim_type": "EXPLICIT",
+      "source": "Functionally, KvAP opens and then inactivates partially following membrane depolarization (Schmidt et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Schmidt et al., 2009.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:34:16.260340Z"
+    },
+    {
+      "id": "b0b9d39a-9e71-40e4-a7ae-d0367b337e11",
+      "content_id": "de749ec5-0a8d-4f51-a632-30c546f5f6ee",
+      "claim_id": "C69",
+      "claim": "The conformation of the inner helix gate in this structure might reflect a mixture of open and inactivated channels.",
+      "claim_type": "EXPLICIT",
+      "source": "The conformation of the inner helix gate in this structure might reflect a mixture of open and inactivated channels.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about the conformational state.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:34:16.260340Z"
+    },
+    {
+      "id": "0f21c98a-57df-48c8-92fe-65593b1f5950",
+      "content_id": "de749ec5-0a8d-4f51-a632-30c546f5f6ee",
+      "claim_id": "C70",
+      "claim": "With a 1 \u00c5 length tether, only superficial sites near the aqueous surfaces are accessible, except at two positions on the S4 helix.",
+      "claim_type": "EXPLICIT",
+      "source": "With a 1 \u00c5 length tether, only superficial sites near the aqueous surfaces are accessible, except at two positions, shown as blue spheres for intracellular accessibility, on the S4 helix.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of previous biotin-avidin accessibility data mapped onto the structure.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:34:16.260340Z"
+    },
+    {
+      "id": "d609c069-7ae7-47a7-ba63-2cff561986f8",
+      "content_id": "de749ec5-0a8d-4f51-a632-30c546f5f6ee",
+      "claim_id": "C71",
+      "claim": "Two outlier positions on S4 are more than 15 \u00c5 away from the intracellular surface.",
+      "claim_type": "EXPLICIT",
+      "source": "These outlier positions on the structure are more than 15 \u00c5 away from the intracellular surface.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a measurement from the structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:34:16.260340Z"
+    },
+    {
+      "id": "c25ac896-93b2-4c10-97d5-f8159033dd69",
+      "content_id": "de749ec5-0a8d-4f51-a632-30c546f5f6ee",
+      "claim_id": "C72",
+      "claim": "The accessibility assay result implies that the KvAP voltage sensor can undergo very large voltage-dependent conformational changes to bring these positions close to the intracellular surface.",
+      "claim_type": "EXPLICIT",
+      "source": "But the accessibility assay was carried out in membranes under voltage clamp. The result implies that the KvAP voltage sensor can undergo very large voltage-dependent conformational changes to bring these positions close to the intracellular surface.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the accessibility data.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:34:16.260340Z"
+    },
+    {
+      "id": "2b9287e7-417f-4a90-901c-325446d9e31b",
+      "content_id": "de749ec5-0a8d-4f51-a632-30c546f5f6ee",
+      "claim_id": "C73",
+      "claim": "Experiments using longer tethers show results consistent with shorter tethers.",
+      "claim_type": "EXPLICIT",
+      "source": "Experiments using longer tethers show results consistent with shorter tethers. Specifically, positions on S4 become exposed to both the extracellular and intracellular sides, depending on the membrane voltage (Figure 6\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a description of previous accessibility data.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:34:16.260340Z"
+    },
+    {
+      "id": "31430f75-f08b-44ab-b83c-9ec35dc860a9",
+      "content_id": "de749ec5-0a8d-4f51-a632-30c546f5f6ee",
+      "claim_id": "C74",
+      "claim": "Positions on S4 become exposed to both the extracellular and intracellular sides, depending on the membrane voltage.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, positions on S4 become exposed to both the extracellular and intracellular sides, depending on the membrane voltage (Figure 6\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a description of previous accessibility data.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:34:16.260340Z"
+    },
+    {
+      "id": "1da96e82-15c1-4011-b507-ba0d888bae15",
+      "content_id": "de749ec5-0a8d-4f51-a632-30c546f5f6ee",
+      "claim_id": "C75",
+      "claim": "KvAP is an outlier among voltage-gated ion channels in the distribution of positive-charged amino acids on S4.",
+      "claim_type": "EXPLICIT",
+      "source": "KvAP is an outlier among voltage-gated ion channels, whether domain-swapped or not, in two respects. First, the distribution of positive-charged amino acids on S4 is unique.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison of KvAP's S4 sequence with other channels.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:34:16.260340Z"
+    },
+    {
+      "id": "2b4a60e5-60ca-4dd0-92f0-149bb2d3b745",
+      "content_id": "de749ec5-0a8d-4f51-a632-30c546f5f6ee",
+      "claim_id": "C76",
+      "claim": "In other Kv channels the region of S4 that contains gating charge residues consists of the strict triplet (RXX)n, where R (arginine) is sometimes replaced by K (lysine) and X stands for a hydrophobic amino acid.",
+      "claim_type": "EXPLICIT",
+      "source": "In other Kv channels the region of S4 that contains gating charge residues \u2013 the active region \u2013 consists of the strict triplet (RXX)n, where R (arginine) is sometimes replaced by K (lysine) and X stands for a hydrophobic amino acid.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about S4 sequences in Kv channels.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:34:16.260340Z"
+    },
+    {
+      "id": "d78b7399-4c9f-4e53-903b-9abb4f29c4d6",
+      "content_id": "de749ec5-0a8d-4f51-a632-30c546f5f6ee",
+      "claim_id": "C77",
+      "claim": "The S4 sequence in KvAP shows a discontinuity between the fourth and fifth arginine residues created by six consecutive uncharged amino acids.",
+      "claim_type": "EXPLICIT",
+      "source": "But consider the S4 sequence in KvAP: (RLV)(RLL)(RFL)(RIL)(LII)(SRG)(SKF). Here, we observe a discontinuity between the fourth and fifth arginine residues created by six consecutive uncharged amino acids; this produces a phase shift of the fifth and sixth (lysine) with respect to the first four.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an analysis of the KvAP S4 sequence.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:34:16.260340Z"
+    },
+    {
+      "id": "40208b29-2a82-47d9-bca3-a76471ff5caf",
+      "content_id": "de749ec5-0a8d-4f51-a632-30c546f5f6ee",
+      "claim_id": "C78",
+      "claim": "The fifth R and the following lysine in the KvAP S4 sequence are part of the active region of S4.",
+      "claim_type": "EXPLICIT",
+      "source": "The fifth R as well as the following lysine in the sequence are certainly part of the active region of S4, because in the structure the lysine resides inside the gating charge transfer center (Figure 5C), which is the site at the center of the voltage sensor that lowers the energy barrier for charged amino acids as they cross the membrane (Tao et al., 2010).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference from the structural position of the lysine.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:34:16.260340Z"
+    },
+    {
+      "id": "edca037a-9e80-4543-b0e2-4c3065f18929",
+      "content_id": "de749ec5-0a8d-4f51-a632-30c546f5f6ee",
+      "claim_id": "C79",
+      "claim": "The gating charge transfer center is the site at the center of the voltage sensor that lowers the energy barrier for charged amino acids as they cross the membrane.",
+      "claim_type": "EXPLICIT",
+      "source": "The fifth R as well as the following lysine in the sequence are certainly part of the active region of S4, because in the structure the lysine resides inside the gating charge transfer center (Figure 5C), which is the site at the center of the voltage sensor that lowers the energy barrier for charged amino acids as they cross the membrane (Tao et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Tao et al., 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:34:16.260340Z"
+    },
+    {
+      "id": "4fbcebed-f8a5-4404-9ac9-fed9698332c0",
+      "content_id": "de749ec5-0a8d-4f51-a632-30c546f5f6ee",
+      "claim_id": "C80",
+      "claim": "In other voltage-gated ion channels, S4 adopts a 310 helix at the center of the membrane.",
+      "claim_type": "EXPLICIT",
+      "source": "In other voltage-gated ion channels, S4 adopts a 310 helix at the center of the membrane; this secondary structure directs the arginine residues towards the gating charge transfer center.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about S4 structure in voltage-gated channels.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:34:16.260340Z"
+    },
+    {
+      "id": "a31fe01e-cefe-4fa0-8a85-1550c075a821",
+      "content_id": "de749ec5-0a8d-4f51-a632-30c546f5f6ee",
+      "claim_id": "C81",
+      "claim": "The 310 helix secondary structure directs the arginine residues towards the gating charge transfer center.",
+      "claim_type": "EXPLICIT",
+      "source": "In other voltage-gated ion channels, S4 adopts a 310 helix at the center of the membrane; this secondary structure directs the arginine residues towards the gating charge transfer center.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about S4 structure in voltage-gated channels.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:34:16.260340Z"
+    },
+    {
+      "id": "395c1d72-f26e-4387-838c-b18a99558737",
+      "content_id": "de749ec5-0a8d-4f51-a632-30c546f5f6ee",
+      "claim_id": "C82",
+      "claim": "Because triplet periodicity is not maintained over the lower half of S4 in KvAP, it is not entirely clear whether properties learned from other Kv channels apply to KvAP.",
+      "claim_type": "EXPLICIT",
+      "source": "Because triplet periodicity is not maintained over the lower half of S4 in KvAP, it is not entirely clear whether properties learned from other Kv channels apply to KvAP.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about the implications of the unique S4 sequence.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:34:16.260340Z"
+    },
+    {
+      "id": "a72dd6c8-b9b8-4a3d-97bc-84f95f9ebb3e",
+      "content_id": "de749ec5-0a8d-4f51-a632-30c546f5f6ee",
+      "claim_id": "C83",
+      "claim": "KvAP is an outlier among voltage-gated ion channels in the composition of the gating charge transfer center.",
+      "claim_type": "EXPLICIT",
+      "source": "The second respect in which KvAP is an outlier concerns the gating charge transfer center. KvAP has the typical constellation of negative-charged amino acids to stabilize the positive charge on arginine or lysine. But instead of the phenylalanine found in other Kv channels (357 out of 360 examined), KvAP contains a leucine.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison of KvAP's gating charge transfer center with other channels.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:34:16.260340Z"
+    },
+    {
+      "id": "fe066205-f1a5-410d-8850-98a702b5e472",
+      "content_id": "de749ec5-0a8d-4f51-a632-30c546f5f6ee",
+      "claim_id": "C84",
+      "claim": "357 out of 360 examined Kv channels contain a phenylalanine in the gating charge transfer center.",
+      "claim_type": "EXPLICIT",
+      "source": "But instead of the phenylalanine found in other Kv channels (357 out of 360 examined), KvAP contains a leucine.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical observation from sequence analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:34:16.260340Z"
+    },
+    {
+      "id": "b13e9691-3bb6-4366-86a6-720c38ea5482",
+      "content_id": "de749ec5-0a8d-4f51-a632-30c546f5f6ee",
+      "claim_id": "C85",
+      "claim": "KvAP contains a leucine instead of phenylalanine in the gating charge transfer center.",
+      "claim_type": "EXPLICIT",
+      "source": "But instead of the phenylalanine found in other Kv channels (357 out of 360 examined), KvAP contains a leucine.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a structural observation from the KvAP structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:34:16.260340Z"
+    },
+    {
+      "id": "503f2bbd-2f35-4ae6-af25-f3df52e171f1",
+      "content_id": "de749ec5-0a8d-4f51-a632-30c546f5f6ee",
+      "claim_id": "C86",
+      "claim": "The functional significance of the leucine in KvAP's gating charge transfer center is unknown.",
+      "claim_type": "EXPLICIT",
+      "source": "The functional significance of this is also unknown.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Explicitly stated as unknown.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:34:16.260340Z"
+    },
+    {
+      "id": "e300a32d-eb38-4101-8861-590ea278ccab",
+      "content_id": "de749ec5-0a8d-4f51-a632-30c546f5f6ee",
+      "claim_id": "C87",
+      "claim": "The HCN channel has been captured in both depolarized and hyperpolarized conformations.",
+      "claim_type": "EXPLICIT",
+      "source": "In separate studies in our lab, we have captured the HCN channel, another non-domain-swapped voltage-gated channel, in both depolarized and hyperpolarized conformations (Lee and MacKinnon, 2017; Lee and MacKinnon, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Lee and MacKinnon, 2017 and 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:34:16.260340Z"
+    },
+    {
+      "id": "327eda6f-4ced-4c07-bfa1-fb401ba33212",
+      "content_id": "de749ec5-0a8d-4f51-a632-30c546f5f6ee",
+      "claim_id": "C88",
+      "claim": "When depolarized, the voltage sensor in HCN is similar to that in KvAP.",
+      "claim_type": "EXPLICIT",
+      "source": "When depolarized, the voltage sensor in HCN is similar to that in KvAP.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a structural comparison.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:34:16.260340Z"
+    },
+    {
+      "id": "078a604b-a511-4c7f-bda3-de26a70e8412",
+      "content_id": "de749ec5-0a8d-4f51-a632-30c546f5f6ee",
+      "claim_id": "C89",
+      "claim": "When hyperpolarized, the S4 helix in HCN translates toward the cytoplasm and breaks into an L-shape, with the bottom half of S4 forming an interfacial helix.",
+      "claim_type": "EXPLICIT",
+      "source": "But when hyperpolarized, the S4 helix translates toward the cytoplasm and breaks into an L-shape, with the bottom half of S4 forming an interfacial helix.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the hyperpolarized HCN structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:34:16.260340Z"
+    },
+    {
+      "id": "ac8af2b7-a845-4411-b9f3-bdec60318933",
+      "content_id": "de749ec5-0a8d-4f51-a632-30c546f5f6ee",
+      "claim_id": "C90",
+      "claim": "The voltage sensor in HCN couples to the gate in a fundamentally different manner than in domain-swapped voltage-gated channels studied so far.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the voltage sensor in HCN couples to the gate in a fundamentally different manner than in domain-swapped voltage-gated channels studied so far, where the S4-S5 linker forms a permanent interfacial helix (Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a comparison between HCN and domain-swapped channels.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:34:16.260340Z"
+    },
+    {
+      "id": "9bdad290-c940-404c-be37-3f45d32af393",
+      "content_id": "de749ec5-0a8d-4f51-a632-30c546f5f6ee",
+      "claim_id": "C91",
+      "claim": "In domain-swapped voltage-gated channels, the S4-S5 linker forms a permanent interfacial helix.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the voltage sensor in HCN couples to the gate in a fundamentally different manner than in domain-swapped voltage-gated channels studied so far, where the S4-S5 linker forms a permanent interfacial helix (Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is established knowledge about domain-swapped channels.",
+      "evidence_type": "[\"KNOWLEDGE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:34:16.260340Z"
+    },
+    {
+      "id": "4fca0971-3293-43d5-bcbd-acd9cdd100b0",
+      "content_id": "de749ec5-0a8d-4f51-a632-30c546f5f6ee",
+      "claim_id": "C92",
+      "claim": "Whether the allosteric communication between the voltage sensor and pore in KvAP will be similar to that observed in HCN remains to be seen.",
+      "claim_type": "EXPLICIT",
+      "source": "Whether the allosteric communication between the voltage sensor and pore in KvAP will be similar to that observed in HCN remains to be seen.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about future findings.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:34:16.260340Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "8899f8b9-688c-43e1-8202-f7e4d2175aa7",
+      "content_id": "de749ec5-0a8d-4f51-a632-30c546f5f6ee",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Voltage sensors are integral membrane proteins with a conserved four-helix structure (S1-S4), where the S4 helix contains positive charges that move in response to voltage changes to regulate channel or enzyme activity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C5 describe well-established background knowledge about voltage sensors, supported by extensive citations to prior work. These claims provide foundational context for the study and are not contested.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:34:16.260340Z"
+    },
+    {
+      "id": "e8592f8e-059a-4dff-956b-54a1b2716b06",
+      "content_id": "de749ec5-0a8d-4f51-a632-30c546f5f6ee",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Voltage-gated channels exhibit two topologically distinct architectures: domain-swapped (Kv1-7, Nav, Cav) where voltage sensors from one subunit contact the pore of an adjacent subunit, and non-domain-swapped (Kv10-12, Slo1, HCN) where voltage sensors contact the pore within the same subunit.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6-C15 describe established structural classifications of voltage-gated channels, supported by multiple citations to structural studies. This background provides essential context for understanding the significance of the KvAP structure.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:34:16.260340Z"
+    },
+    {
+      "id": "7f8ea787-37c5-479b-ac28-a22cd332695e",
+      "content_id": "de749ec5-0a8d-4f51-a632-30c546f5f6ee",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "In domain-swapped channels, voltage sensor conformational changes are transmitted to the gate through a ~20 \u00c5 S4-S5 linker helix, whereas non-domain-swapped channels lack this helical linker and their gating mechanism is unknown.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C16-C20 accurately describe the mechanistic distinction between domain-swapped and non-domain-swapped channels based on cited structural studies. The explicit acknowledgment that the non-domain-swapped gating mechanism is unknown (C20) is appropriate.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:34:16.260340Z"
+    },
+    {
+      "id": "323d6ead-28b8-4118-9231-1d0b71e0973b",
+      "content_id": "de749ec5-0a8d-4f51-a632-30c546f5f6ee",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "KvAP from Aeropyrum pernix provided the first voltage-gated channel structures and was historically considered representative of domain-swapped Shaker-like channels, though previous crystal structures showed non-native voltage sensor orientations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C21-C27 accurately describe the historical context of KvAP structural studies, supported by appropriate citations. The acknowledgment of problematic previous crystal structures (C24) provides important context for the current study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:34:16.260340Z"
+    },
+    {
+      "id": "54bdf05e-9b7a-42f5-bbf9-073d4c46e11b",
+      "content_id": "de749ec5-0a8d-4f51-a632-30c546f5f6ee",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "KvAP was expressed in E. coli, purified in digitonin with Fab fragments that bind voltage sensors, and subjected to cryo-EM analysis with 734,850 particles classified in Relion3.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C31-C37 describe standard methodological procedures that are adequately documented. The use of Fabs to assist alignment is a reasonable approach, though the variability in Fab positioning (addressed in later claims) affects resolution.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:34:16.260340Z"
+    },
+    {
+      "id": "721190bb-5c1f-4483-ba6f-c59bdf978300",
+      "content_id": "de749ec5-0a8d-4f51-a632-30c546f5f6ee",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "All 3D classes showed voltage sensors oriented with Fabs projecting toward the extracellular face, consistent with electrophysiological accessibility data and contrasting with previous non-native crystal structures.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C38-C40 describe observations from image processing that are consistent with prior functional data (C39). The comparison to previous crystal structures (C40) appropriately acknowledges differences in detergent conditions that may explain structural discrepancies.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:34:16.260340Z"
+    },
+    {
+      "id": "b2c33ef8-211f-477a-98d4-080bfb7302c6",
+      "content_id": "de749ec5-0a8d-4f51-a632-30c546f5f6ee",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The Fab fragments showed variable positioning across 3D classes, explaining inconsistent Fab density in 2D and 3D classifications, consistent with known high mobility of the S3b-S4 paddle region.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C41-C43 acknowledge and explain observed heterogeneity in the data. The connection to previous studies on paddle mobility (C43) provides a reasonable mechanistic explanation, though this variability likely limits the achievable resolution.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:34:16.260340Z"
+    },
+    {
+      "id": "71f7c31f-69d5-423d-98b1-79ec9cdbcae6",
+      "content_id": "de749ec5-0a8d-4f51-a632-30c546f5f6ee",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The final cryo-EM map at 6 \u00c5 resolution shows continuous transmembrane density, Fab density on the extracellular side, and a poorly resolved cytoplasmic domain predicted from protein synthesis studies.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C44-C48 describe the quality and features of the final map. The 6 \u00c5 resolution is modest but reasonable given the sample heterogeneity. The poor resolution of the CTD (C47) is acknowledged, and its existence is supported by independent prediction (C48).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:34:16.260340Z"
+    },
+    {
+      "id": "f7f788d5-7195-4fc8-947e-90e4cb8875ae",
+      "content_id": "de749ec5-0a8d-4f51-a632-30c546f5f6ee",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "KvAP is a non-domain-swapped voltage-gated channel, as evidenced by a short S4-S5 turn rather than a long helical linker, making it topologically similar to Kv10-12 channels and distinct from Kv1-7 channels.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C49-C53 present the central structural finding. The fit of previous crystal structures into the cryo-EM density (C49-C50) and the clear observation of a short S4-S5 connection (C52) provide strong evidence for the non-domain-swapped topology (C51). This directly contradicts previous assumptions about KvAP.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:34:16.260340Z"
+    },
+    {
+      "id": "07c8eb7a-59f2-4014-836b-fccd5afb7485",
+      "content_id": "de749ec5-0a8d-4f51-a632-30c546f5f6ee",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Despite both being non-domain-swapped, KvAP differs from eag1 in voltage sensor orientation: in KvAP, S1 contacts S5 throughout the membrane, whereas in eag1, S1 is displaced ~15 \u00c5 from S5 near the intracellular surface.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C54-C56 describe a structural comparison between two non-domain-swapped channels. The observations are clearly illustrated in Figure 3 and represent a meaningful distinction within the non-domain-swapped class.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:34:16.260340Z"
+    },
+    {
+      "id": "1a4d1d4d-5b04-4c23-bf6c-8021a3aa7329",
+      "content_id": "de749ec5-0a8d-4f51-a632-30c546f5f6ee",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The cryo-EM structure is consistent with previous EPR data showing low side-chain mobility and O2 accessibility at the S1-S5 interface, suggesting the structure represents a native conformation in lipid bilayers.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C57-C61 validate the cryo-EM structure against independent EPR data from Cuello et al. 2004. The consistency between structural and functional data (C60) strengthens confidence that the structure represents a physiologically relevant conformation (C61), though this remains an inference.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:34:16.260340Z"
+    },
+    {
+      "id": "afe22084-a203-4d63-aa46-13f3ca6aa0f3",
+      "content_id": "de749ec5-0a8d-4f51-a632-30c546f5f6ee",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The structure shows the Fab epitope (S3b-S4 turn) exposed to the extracellular surface, consistent with depolarization-dependent Fab binding and similarity to depolarized voltage sensors in other channels, with the S3b-S4 paddle positioned at the channel's outer perimeter.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C62-C66 interpret the conformational state based on Fab accessibility (C62-C64) and structural comparisons (C65). The inference that the structure represents a depolarized state is reasonable given the functional data, though the exact state cannot be definitively determined from a single structure.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:34:16.260340Z"
+    },
+    {
+      "id": "08eefd28-8537-48df-a776-7aa83c44c208",
+      "content_id": "de749ec5-0a8d-4f51-a632-30c546f5f6ee",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The pore conformation is intermediate between the open crystal structure and closed K+ channels, possibly reflecting a mixture of open and inactivated states given KvAP's functional properties.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C67-C69 attempt to interpret the pore state. While the structural comparison (C67) is supported by data, the interpretation as a mixture of states (C69) is explicitly speculative. At 6 \u00c5 resolution with acknowledged heterogeneity, definitive assignment of the pore state is challenging.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:34:16.260340Z"
+    },
+    {
+      "id": "533dbf7f-35e6-438c-ac41-de60531ecd0a",
+      "content_id": "de749ec5-0a8d-4f51-a632-30c546f5f6ee",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Remapping of biotin-avidin accessibility data onto the structure reveals two outlier positions on S4 that are >15 \u00c5 from the intracellular surface yet accessible with short tethers, implying large voltage-dependent conformational changes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C70-C74 reinterpret previous accessibility data in light of the new structure. The observation that certain positions are accessible despite being far from the membrane surface (C71-C72) provides strong evidence for large conformational changes, consistent with data from longer tethers (C73-C74).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:34:16.260340Z"
+    },
+    {
+      "id": "f3eb408e-bd40-49c9-9ac5-b95fdcc9eaab",
+      "content_id": "de749ec5-0a8d-4f51-a632-30c546f5f6ee",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "KvAP's S4 sequence is unique among voltage-gated channels, showing a discontinuity in the typical (RXX)n triplet pattern between the fourth and fifth arginine residues, though both are part of the active region as the fifth lysine resides in the gating charge transfer center.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C75-C79 identify an unusual sequence feature in KvAP. The structural evidence that the lysine is in the gating charge transfer center (C78) supports the functional importance of this region despite the atypical sequence pattern. This is a well-supported observation with appropriate citations.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:34:16.260340Z"
+    },
+    {
+      "id": "3a55c159-9d43-4744-9a0b-1ab3f69b07f1",
+      "content_id": "de749ec5-0a8d-4f51-a632-30c546f5f6ee",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "The lack of maintained triplet periodicity in KvAP's lower S4 region raises uncertainty about whether properties of other Kv channels apply to KvAP, particularly regarding the \u03b1-to-310 helix transition that directs arginines toward the gating charge transfer center.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C80-C82 appropriately acknowledge uncertainty about mechanistic extrapolation from other channels to KvAP. The speculation (C82) is reasonable given the sequence differences and is appropriately qualified as uncertain.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:34:16.260340Z"
+    },
+    {
+      "id": "f480480a-1cec-431c-becb-544ce91d2ebe",
+      "content_id": "de749ec5-0a8d-4f51-a632-30c546f5f6ee",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "KvAP contains leucine instead of phenylalanine in the gating charge transfer center, unlike 357 of 360 examined Kv channels, though the functional significance is unknown.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C83-C85 identify another unusual structural feature with strong statistical support (C84). The acknowledgment that functional significance is unknown (C86) is appropriate and honest about the limits of interpretation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:34:16.260340Z"
+    },
+    {
+      "id": "1bdb576f-d5cb-4d85-ad68-6e4560037ec4",
+      "content_id": "de749ec5-0a8d-4f51-a632-30c546f5f6ee",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "Comparison with HCN channel structures suggests that non-domain-swapped channels may use fundamentally different gating mechanisms than domain-swapped channels, though whether KvAP's mechanism resembles HCN's remains unknown.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C87-C92 provide important comparative context from the authors' own work on HCN. The comparison is well-supported by citations (C87), and the acknowledgment of uncertainty about KvAP's specific mechanism (C92) is appropriate given the lack of multiple conformational states.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:34:16.260340Z"
+    },
+    {
+      "id": "706cb293-4797-43cb-8ae7-8ac7f9124d57",
+      "content_id": "de749ec5-0a8d-4f51-a632-30c546f5f6ee",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "KvAP and Shaker channels likely undergo different voltage-dependent conformational changes during opening, based on the new structure and previous functional data.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C30 represents the overarching conclusion of the study. This inference is well-supported by the demonstration that KvAP is non-domain-swapped (unlike Shaker), has unique S4 sequence features, and shows accessibility patterns suggesting large conformational changes. The qualification 'probably' appropriately reflects remaining uncertainty.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:34:16.260340Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "c954cadd-6f16-4d40-8f6b-6a7c9839f942",
+      "result_id": "8899f8b9-688c-43e1-8202-f7e4d2175aa7"
+    },
+    {
+      "claim_id": "86676de5-6368-44da-999c-09aa87f7314c",
+      "result_id": "8899f8b9-688c-43e1-8202-f7e4d2175aa7"
+    },
+    {
+      "claim_id": "cbb1a20b-e727-431d-95de-4364f233f07b",
+      "result_id": "8899f8b9-688c-43e1-8202-f7e4d2175aa7"
+    },
+    {
+      "claim_id": "5a9dad17-6e1f-4de2-b998-746d027b042b",
+      "result_id": "8899f8b9-688c-43e1-8202-f7e4d2175aa7"
+    },
+    {
+      "claim_id": "ed328805-451a-4a35-abcd-2d9bb0929d35",
+      "result_id": "8899f8b9-688c-43e1-8202-f7e4d2175aa7"
+    },
+    {
+      "claim_id": "2c630994-7461-409d-bebe-1ecb96b4f4f2",
+      "result_id": "e8592f8e-059a-4dff-956b-54a1b2716b06"
+    },
+    {
+      "claim_id": "d43446cf-2023-4d87-8aa9-8eac373083c4",
+      "result_id": "e8592f8e-059a-4dff-956b-54a1b2716b06"
+    },
+    {
+      "claim_id": "a7767e97-b948-4ed2-94d7-ca5ad74c1eda",
+      "result_id": "e8592f8e-059a-4dff-956b-54a1b2716b06"
+    },
+    {
+      "claim_id": "40ffc5a1-61ac-41ea-b3e5-5b6029f1749c",
+      "result_id": "e8592f8e-059a-4dff-956b-54a1b2716b06"
+    },
+    {
+      "claim_id": "6c4a018b-371c-48a0-9860-cbd02ccbd536",
+      "result_id": "e8592f8e-059a-4dff-956b-54a1b2716b06"
+    },
+    {
+      "claim_id": "9780ef3c-1397-4b97-ad85-df2e2aea77ca",
+      "result_id": "e8592f8e-059a-4dff-956b-54a1b2716b06"
+    },
+    {
+      "claim_id": "fb9bdaaa-0cb7-491a-a8b5-984f4bc1b6e6",
+      "result_id": "e8592f8e-059a-4dff-956b-54a1b2716b06"
+    },
+    {
+      "claim_id": "037bee01-2ee0-41db-9441-a2e881d832e6",
+      "result_id": "e8592f8e-059a-4dff-956b-54a1b2716b06"
+    },
+    {
+      "claim_id": "5719b2fe-c246-48ad-8469-e94b8149a961",
+      "result_id": "e8592f8e-059a-4dff-956b-54a1b2716b06"
+    },
+    {
+      "claim_id": "3aac8cb7-5457-48ba-b60f-c07b81e0cf1e",
+      "result_id": "e8592f8e-059a-4dff-956b-54a1b2716b06"
+    },
+    {
+      "claim_id": "f1fe50c0-c3de-4345-abcf-279949b7e7e0",
+      "result_id": "7f8ea787-37c5-479b-ac28-a22cd332695e"
+    },
+    {
+      "claim_id": "000e9354-2eac-4beb-910b-c5ce3f9cb389",
+      "result_id": "7f8ea787-37c5-479b-ac28-a22cd332695e"
+    },
+    {
+      "claim_id": "11d7b7c2-cfd7-4af2-8a8e-a85de6673b5a",
+      "result_id": "7f8ea787-37c5-479b-ac28-a22cd332695e"
+    },
+    {
+      "claim_id": "4fc4fc04-9615-4211-bf77-fc5f92775b4b",
+      "result_id": "7f8ea787-37c5-479b-ac28-a22cd332695e"
+    },
+    {
+      "claim_id": "0dfa3975-8334-449c-8f5b-dd9ee2f538bb",
+      "result_id": "7f8ea787-37c5-479b-ac28-a22cd332695e"
+    },
+    {
+      "claim_id": "7addcd01-699c-465c-aefa-8d73ba8ad2de",
+      "result_id": "323d6ead-28b8-4118-9231-1d0b71e0973b"
+    },
+    {
+      "claim_id": "2860855a-b87f-4814-b5e4-0b63d23aa83b",
+      "result_id": "323d6ead-28b8-4118-9231-1d0b71e0973b"
+    },
+    {
+      "claim_id": "f283abc9-bc3f-4170-af2d-c7f007b1be3b",
+      "result_id": "323d6ead-28b8-4118-9231-1d0b71e0973b"
+    },
+    {
+      "claim_id": "f463a684-2a42-4cad-b58b-490820c530cb",
+      "result_id": "323d6ead-28b8-4118-9231-1d0b71e0973b"
+    },
+    {
+      "claim_id": "26c81bb8-88ba-4fc3-9dd8-a77566a29401",
+      "result_id": "323d6ead-28b8-4118-9231-1d0b71e0973b"
+    },
+    {
+      "claim_id": "107a2793-5ef8-489d-aa87-7f52f1261738",
+      "result_id": "323d6ead-28b8-4118-9231-1d0b71e0973b"
+    },
+    {
+      "claim_id": "d543dad3-1304-4c54-bea3-b8bf63c8ad45",
+      "result_id": "323d6ead-28b8-4118-9231-1d0b71e0973b"
+    },
+    {
+      "claim_id": "e257ed4d-7984-4f18-af56-d902b51504ee",
+      "result_id": "54bdf05e-9b7a-42f5-bbf9-073d4c46e11b"
+    },
+    {
+      "claim_id": "2d86cc3f-0ad6-48b2-ad68-4eadf1b54218",
+      "result_id": "54bdf05e-9b7a-42f5-bbf9-073d4c46e11b"
+    },
+    {
+      "claim_id": "9718e965-ec9f-4078-8dc2-539425289f6c",
+      "result_id": "54bdf05e-9b7a-42f5-bbf9-073d4c46e11b"
+    },
+    {
+      "claim_id": "d6b36a61-daca-47ec-be1d-7316f4d884fd",
+      "result_id": "54bdf05e-9b7a-42f5-bbf9-073d4c46e11b"
+    },
+    {
+      "claim_id": "1b4bf463-68ae-4b67-9057-eafc006caf42",
+      "result_id": "54bdf05e-9b7a-42f5-bbf9-073d4c46e11b"
+    },
+    {
+      "claim_id": "d790219c-e83e-4eb7-bc58-7af6a52c5d33",
+      "result_id": "54bdf05e-9b7a-42f5-bbf9-073d4c46e11b"
+    },
+    {
+      "claim_id": "6244dd9b-0dc9-4d96-a5fc-8debbe3a32d4",
+      "result_id": "54bdf05e-9b7a-42f5-bbf9-073d4c46e11b"
+    },
+    {
+      "claim_id": "22c10252-448c-4083-bce4-404103724c8d",
+      "result_id": "721190bb-5c1f-4483-ba6f-c59bdf978300"
+    },
+    {
+      "claim_id": "352a1f9f-94d0-4da5-b6ad-5fe6bf73f0a6",
+      "result_id": "721190bb-5c1f-4483-ba6f-c59bdf978300"
+    },
+    {
+      "claim_id": "e1993df6-e65f-45e3-8cb4-a20bb651fbea",
+      "result_id": "721190bb-5c1f-4483-ba6f-c59bdf978300"
+    },
+    {
+      "claim_id": "2ef4ef34-e0f1-41d5-946d-eabf592ba5ee",
+      "result_id": "b2c33ef8-211f-477a-98d4-080bfb7302c6"
+    },
+    {
+      "claim_id": "31d617b2-ab9f-4fd8-af01-83218ebef631",
+      "result_id": "b2c33ef8-211f-477a-98d4-080bfb7302c6"
+    },
+    {
+      "claim_id": "2183a116-2313-40dc-aed9-3abe53733692",
+      "result_id": "b2c33ef8-211f-477a-98d4-080bfb7302c6"
+    },
+    {
+      "claim_id": "b7271908-ba0b-450a-a942-86307a050b6a",
+      "result_id": "71f7c31f-69d5-423d-98b1-79ec9cdbcae6"
+    },
+    {
+      "claim_id": "b7dc6630-b351-490e-89c1-a9c5837d2db9",
+      "result_id": "71f7c31f-69d5-423d-98b1-79ec9cdbcae6"
+    },
+    {
+      "claim_id": "06af110e-f546-42cd-95fe-b005daf3c254",
+      "result_id": "71f7c31f-69d5-423d-98b1-79ec9cdbcae6"
+    },
+    {
+      "claim_id": "d2895c8e-7a02-40f7-935d-a315072c1ee2",
+      "result_id": "71f7c31f-69d5-423d-98b1-79ec9cdbcae6"
+    },
+    {
+      "claim_id": "5ea5ebf3-b6ff-4c70-821d-f552b287e383",
+      "result_id": "71f7c31f-69d5-423d-98b1-79ec9cdbcae6"
+    },
+    {
+      "claim_id": "61864ef2-c02e-4e22-b22c-93fe897850b6",
+      "result_id": "f7f788d5-7195-4fc8-947e-90e4cb8875ae"
+    },
+    {
+      "claim_id": "3885acc6-1d20-4849-9559-ff4f5db14cfc",
+      "result_id": "f7f788d5-7195-4fc8-947e-90e4cb8875ae"
+    },
+    {
+      "claim_id": "8e87b081-2917-4a25-8f29-c6fd857cf2aa",
+      "result_id": "f7f788d5-7195-4fc8-947e-90e4cb8875ae"
+    },
+    {
+      "claim_id": "0556528f-5225-4168-ba50-c13659cb2b29",
+      "result_id": "f7f788d5-7195-4fc8-947e-90e4cb8875ae"
+    },
+    {
+      "claim_id": "5388e57c-cf91-417e-9b18-f12cdff778d4",
+      "result_id": "f7f788d5-7195-4fc8-947e-90e4cb8875ae"
+    },
+    {
+      "claim_id": "8f2fe009-d44a-4233-8e0d-037bbcd7cdf8",
+      "result_id": "07c8eb7a-59f2-4014-836b-fccd5afb7485"
+    },
+    {
+      "claim_id": "b9aa27fe-fbcb-4432-8407-ad745e666058",
+      "result_id": "07c8eb7a-59f2-4014-836b-fccd5afb7485"
+    },
+    {
+      "claim_id": "725d6218-ff23-4dde-a04a-f8e5b1ec6ee7",
+      "result_id": "07c8eb7a-59f2-4014-836b-fccd5afb7485"
+    },
+    {
+      "claim_id": "e7d28745-e02b-492b-a3ce-167c159e6d0c",
+      "result_id": "1a4d1d4d-5b04-4c23-bf6c-8021a3aa7329"
+    },
+    {
+      "claim_id": "c9dc71b0-cad1-428c-a05e-f5e859b0102d",
+      "result_id": "1a4d1d4d-5b04-4c23-bf6c-8021a3aa7329"
+    },
+    {
+      "claim_id": "e1f028a7-29cf-4441-a305-6f9d5dd73db0",
+      "result_id": "1a4d1d4d-5b04-4c23-bf6c-8021a3aa7329"
+    },
+    {
+      "claim_id": "7f55e930-b61c-4aab-acdb-3e81e4f5db5f",
+      "result_id": "1a4d1d4d-5b04-4c23-bf6c-8021a3aa7329"
+    },
+    {
+      "claim_id": "9df24b7c-aec9-4fa7-bc41-1b491c9c390c",
+      "result_id": "1a4d1d4d-5b04-4c23-bf6c-8021a3aa7329"
+    },
+    {
+      "claim_id": "8bea55d3-670c-4013-9cee-83ebceab147c",
+      "result_id": "afe22084-a203-4d63-aa46-13f3ca6aa0f3"
+    },
+    {
+      "claim_id": "3ceae3ac-06ba-4a47-ac73-32c66892b433",
+      "result_id": "afe22084-a203-4d63-aa46-13f3ca6aa0f3"
+    },
+    {
+      "claim_id": "e6fbbffa-f5e0-4b4c-a8e6-4ab228a9da64",
+      "result_id": "afe22084-a203-4d63-aa46-13f3ca6aa0f3"
+    },
+    {
+      "claim_id": "ee8167a7-38eb-4ce9-84b1-f7246c05464e",
+      "result_id": "afe22084-a203-4d63-aa46-13f3ca6aa0f3"
+    },
+    {
+      "claim_id": "e5dddd83-700c-4c7f-9d81-d67f2ef4aad1",
+      "result_id": "afe22084-a203-4d63-aa46-13f3ca6aa0f3"
+    },
+    {
+      "claim_id": "7ac545dc-b632-4636-bacc-09cd3d4fdc76",
+      "result_id": "08eefd28-8537-48df-a776-7aa83c44c208"
+    },
+    {
+      "claim_id": "3d91bc44-f010-4a08-a014-f805df01f73a",
+      "result_id": "08eefd28-8537-48df-a776-7aa83c44c208"
+    },
+    {
+      "claim_id": "b0b9d39a-9e71-40e4-a7ae-d0367b337e11",
+      "result_id": "08eefd28-8537-48df-a776-7aa83c44c208"
+    },
+    {
+      "claim_id": "0f21c98a-57df-48c8-92fe-65593b1f5950",
+      "result_id": "533dbf7f-35e6-438c-ac41-de60531ecd0a"
+    },
+    {
+      "claim_id": "d609c069-7ae7-47a7-ba63-2cff561986f8",
+      "result_id": "533dbf7f-35e6-438c-ac41-de60531ecd0a"
+    },
+    {
+      "claim_id": "c25ac896-93b2-4c10-97d5-f8159033dd69",
+      "result_id": "533dbf7f-35e6-438c-ac41-de60531ecd0a"
+    },
+    {
+      "claim_id": "2b9287e7-417f-4a90-901c-325446d9e31b",
+      "result_id": "533dbf7f-35e6-438c-ac41-de60531ecd0a"
+    },
+    {
+      "claim_id": "31430f75-f08b-44ab-b83c-9ec35dc860a9",
+      "result_id": "533dbf7f-35e6-438c-ac41-de60531ecd0a"
+    },
+    {
+      "claim_id": "1da96e82-15c1-4011-b507-ba0d888bae15",
+      "result_id": "f3eb408e-bd40-49c9-9ac5-b95fdcc9eaab"
+    },
+    {
+      "claim_id": "2b4a60e5-60ca-4dd0-92f0-149bb2d3b745",
+      "result_id": "f3eb408e-bd40-49c9-9ac5-b95fdcc9eaab"
+    },
+    {
+      "claim_id": "d78b7399-4c9f-4e53-903b-9abb4f29c4d6",
+      "result_id": "f3eb408e-bd40-49c9-9ac5-b95fdcc9eaab"
+    },
+    {
+      "claim_id": "40208b29-2a82-47d9-bca3-a76471ff5caf",
+      "result_id": "f3eb408e-bd40-49c9-9ac5-b95fdcc9eaab"
+    },
+    {
+      "claim_id": "edca037a-9e80-4543-b0e2-4c3065f18929",
+      "result_id": "f3eb408e-bd40-49c9-9ac5-b95fdcc9eaab"
+    },
+    {
+      "claim_id": "4fbcebed-f8a5-4404-9ac9-fed9698332c0",
+      "result_id": "3a55c159-9d43-4744-9a0b-1ab3f69b07f1"
+    },
+    {
+      "claim_id": "a31fe01e-cefe-4fa0-8a85-1550c075a821",
+      "result_id": "3a55c159-9d43-4744-9a0b-1ab3f69b07f1"
+    },
+    {
+      "claim_id": "395c1d72-f26e-4387-838c-b18a99558737",
+      "result_id": "3a55c159-9d43-4744-9a0b-1ab3f69b07f1"
+    },
+    {
+      "claim_id": "a72dd6c8-b9b8-4a3d-97bc-84f95f9ebb3e",
+      "result_id": "f480480a-1cec-431c-becb-544ce91d2ebe"
+    },
+    {
+      "claim_id": "fe066205-f1a5-410d-8850-98a702b5e472",
+      "result_id": "f480480a-1cec-431c-becb-544ce91d2ebe"
+    },
+    {
+      "claim_id": "b13e9691-3bb6-4366-86a6-720c38ea5482",
+      "result_id": "f480480a-1cec-431c-becb-544ce91d2ebe"
+    },
+    {
+      "claim_id": "503f2bbd-2f35-4ae6-af25-f3df52e171f1",
+      "result_id": "f480480a-1cec-431c-becb-544ce91d2ebe"
+    },
+    {
+      "claim_id": "e300a32d-eb38-4101-8861-590ea278ccab",
+      "result_id": "1bdb576f-d5cb-4d85-ad68-6e4560037ec4"
+    },
+    {
+      "claim_id": "327eda6f-4ced-4c07-bfa1-fb401ba33212",
+      "result_id": "1bdb576f-d5cb-4d85-ad68-6e4560037ec4"
+    },
+    {
+      "claim_id": "078a604b-a511-4c7f-bda3-de26a70e8412",
+      "result_id": "1bdb576f-d5cb-4d85-ad68-6e4560037ec4"
+    },
+    {
+      "claim_id": "ac8af2b7-a845-4411-b9f3-bdec60318933",
+      "result_id": "1bdb576f-d5cb-4d85-ad68-6e4560037ec4"
+    },
+    {
+      "claim_id": "9bdad290-c940-404c-be37-3f45d32af393",
+      "result_id": "1bdb576f-d5cb-4d85-ad68-6e4560037ec4"
+    },
+    {
+      "claim_id": "4fca0971-3293-43d5-bcbd-acd9cdd100b0",
+      "result_id": "1bdb576f-d5cb-4d85-ad68-6e4560037ec4"
+    },
+    {
+      "claim_id": "7180cc8f-2482-40ce-9e08-749f044e0fe5",
+      "result_id": "706cb293-4797-43cb-8ae7-8ac7f9124d57"
+    }
+  ],
+  "comparisons": []
+}

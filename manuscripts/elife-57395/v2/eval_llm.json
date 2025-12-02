@@ -1,0 +1,327 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C9",
+      "C10"
+    ],
+    "result": "OptoRaf and optoAKT enable reversible, light-controlled activation of ERK and AKT signaling pathways in mammalian cells. The CIBN-CRY2 system associates within ~1 second upon blue light stimulation and dissociates within 10 minutes in darkness. Activation leads to nuclear translocation of ERK-EGFP (optoRaf) or nuclear export of FOXO3-EGFP (optoAKT), with pERK and pAKT activity increasing within 10 minutes of light stimulation and returning to baseline 30 minutes after light cessation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C10 collectively demonstrate reversible optogenetic control of ERK and AKT pathways. The kinetics data from Western blots (C6, C7, C9, C10) and live-cell imaging (C4, C5) provide converging evidence. The association/dissociation kinetics (C2, C3) are consistent with cited literature and current observations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13",
+      "C31",
+      "C32",
+      "C33",
+      "C70"
+    ],
+    "result": "OptoRaf and optoAKT do not exhibit crosstalk at the level of ERK and AKT phosphorylation in mammalian cells and fly neurons. OptoRaf activation does not increase endogenous pAKT or activate p70S6K, while optoAKT activation does not increase pERK.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C13, C31-C33, and C70 are supported by Western blot data in mammalian cells and immunostaining data in fly neurons showing pathway-specific activation without crosstalk at the measured nodes (pERK, pAKT, p70S6K). However, the authors acknowledge this is limited to specific readouts and does not exclude crosstalk at other signaling nodes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16",
+      "C17"
+    ],
+    "result": "OptoRaf activation requires upstream kinases for full ERK pathway activation. Ser338 phosphorylation in Raf1 is significantly increased upon blue light stimulation, and the S338A mutant significantly reduces pERK activation, indicating that membrane translocation alone is insufficient.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C17 demonstrate that optoRaf requires upstream signaling components. The S338A mutant data (C16) provides functional evidence that upstream kinase activity is necessary. However, the specific upstream kinases are not definitively identified, only inferred from literature (C14).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "OptoAKT activation requires upstream kinases, specifically showing enhanced phosphorylation at T308 upon light stimulation, indicating involvement of PDK1 or similar upstream kinases in addition to membrane translocation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C20 show that optoAKT activation involves upstream kinases. The observation of T308 phosphorylation (C19) supports this conclusion, though the specific kinase (PDK1) is inferred from established knowledge (C18, C20) rather than directly demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C71",
+      "C94"
+    ],
+    "result": "OptoRaf activation, but not optoAKT activation, promotes PC12 cell neuritogenesis. Twenty-four hours of blue light stimulation increases the neuritogenesis ratio from 0.24\u00b10.04 to 0.52\u00b10.03 in optoRaf-expressing cells, while optoAKT shows no effect. Appropriate positive and negative controls validate the specificity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C25, C71, and C94 demonstrate differential effects of ERK vs. AKT activation on PC12 neuritogenesis. The quantitative data (C22, C23) and controls (C24, C25) provide strong support. This establishes functional specificity of the two pathways in this cellular context.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "OptoRaf and optoAKT are functionally active in Drosophila C4da neurons in vivo. Five minutes of light stimulation significantly increases pERK in optoRaf-expressing neurons, while 10-15 minutes increases phospho-p70S6K in optoAKT-expressing neurons. Activation is cell-type specific, occurring only in neurons expressing the optogenetic constructs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C30 demonstrate successful translation of the optogenetic systems to Drosophila. Immunostaining data showing dose-dependent activation (C26, C27, C28) and cell-type specificity (C30) provide strong evidence. This establishes the in vivo functionality required for subsequent regeneration experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "OptoRaf and optoAKT display different inactivation kinetics in fly neurons. pAKT returns to baseline within 15 minutes after light cessation, while pERK remains elevated above baseline even 45 minutes after light is turned off. These differences suggest distinct signaling sensitivities and enable temporal modulation through intermittent light patterns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C39 demonstrate differential inactivation kinetics between the two systems in vivo. The immunostaining data (C34-C37) clearly show slower pERK decay compared to pAKT. The interpretation of distinct signaling sensitivities (C38) is reasonable, and the conclusion about temporal modulation (C39) is supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C95"
+    ],
+    "result": "OptoRaf and optoAKT have opposing effects on dendritic morphology in C4da neurons. OptoRaf activation significantly increases both total dendrite length and branch number, while optoAKT activation causes a slight reduction in dendritic branching.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40, C41, and C95 are supported by quantitative morphological analysis (Figure 2E-G). The data show statistically significant increases with optoRaf and decreases with optoAKT. This demonstrates pathway-specific effects on neuronal development and further validates the lack of crosstalk.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C52"
+    ],
+    "result": "Light-activated optoRaf or optoAKT significantly enhances axon regeneration in regeneration-competent C4da neurons in the PNS. The regeneration index increases from 0.38\u00b10.07 (wild-type) to 0.71\u00b10.10 (optoRaf) and 0.74\u00b10.08 (optoAKT). Co-activation of both pathways does not further increase regeneration, suggesting shared downstream components.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C44 and C52 demonstrate enhanced PNS regeneration with optogenetic activation. The quantitative data show significant increases in regeneration index with appropriate controls. The lack of additivity (C44, C52) is well-documented and suggests convergence on common downstream effectors, though the specific mechanisms remain to be determined.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C96",
+      "C97"
+    ],
+    "result": "OptoRaf and optoAKT display distinct signaling kinetics during axon regeneration: optoRaf shows a threshold-gated response (effective with 15-min off-time but not 45-min off-time), while optoAKT shows a graded response (moderate effect with 15-min off-time, smaller effect with 45-min off-time). This demonstrates differential sensitivity to intermittent light stimulation patterns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C49 and C96-C97 are supported by regeneration data with different light patterns (Figure 3D-F). The gated vs. graded distinction is clearly demonstrated and correlates with the inactivation kinetics data (C34-C39). This provides important insights into how signaling dynamics affect regeneration outcomes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C53"
+    ],
+    "result": "OptoRaf and optoAKT activation converts regeneration cell-type specificity by enabling axon regeneration in normally regeneration-incompetent C3da neurons. Light stimulation increases the regeneration index from -0.03\u00b10.03 (wild-type) to 0.13\u00b10.05 (optoRaf) or 0.14\u00b10.06 (optoAKT). As with C4da neurons, co-activation provides no additional benefit.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50, C51, and C53 demonstrate that optogenetic activation can overcome intrinsic regeneration incompetence. The quantitative data show significant improvements in C3da regeneration. The lack of additivity (C51) is consistent with C4da results. This is a major finding showing that ERK/AKT activation is sufficient to reprogram regeneration capacity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "Spatially restricted optogenetic activation enables guidance of regenerating axons. Regenerating v'ada axons normally grow away from their correct ventral trajectory (>60% bifurcate with preferential dorsal growth). A single 5-minute local light pulse on the ventral branch significantly increases the relative regeneration ratio in optoRaf and optoAKT neurons, while whole-field illumination fails to provide directional guidance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C60 demonstrate spatial control of axon regeneration. The baseline pathfinding defect (C54-C56) is well-documented, and the local stimulation data (C57-C58) show significant improvement in directional growth. The contrast with whole-field stimulation (C59) highlights the importance of spatial precision. This is a novel demonstration of optogenetic guidance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "OptoRaf and optoAKT activation promotes axon regeneration in the CNS. In wild-type larvae, only 16% of lesioned commissure segments show regeneration. Light stimulation significantly increases the regeneration index in optoRaf (5.38\u00b10.34) and optoAKT (4.77\u00b10.42) compared to wild-type (2.64\u00b10.31).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C63 demonstrate CNS regeneration enhancement. The quantitative data (Figure 5) show significant increases in regeneration index with appropriate controls. This extends the PNS findings to the more challenging CNS environment, which is clinically more relevant.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "OptoRaf and optoAKT activation promotes functional behavioral recovery after CNS injury. All injured larvae show impaired thermonociception at 24 hours post-injury. At 48 hours, optoRaf and optoAKT groups show substantial recovery (>2\u00d7 wild-type in both response score and recovery percentage), suggesting that regenerated axons may form functional synapses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C67 are well-supported by behavioral data (Figure 6). The functional recovery correlates with anatomical regeneration, providing strong evidence for meaningful repair. However, C68 (synapse formation) is speculative\u2014while functional recovery suggests synaptic reconnection, this is not directly demonstrated. The claim remains reasonable as an inference but requires validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C8"
+    ],
+    "result": "There is a slight decrease in pERK activity upon optoRaf activation for over 10 minutes, likely due to negative feedback.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C8 is supported by Western blot data (Figure 1C) and is consistent with well-established negative feedback mechanisms in ERK signaling cited from previous studies. This observation validates that the optogenetic system recapitulates natural signaling dynamics.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C69",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "The manuscript discusses the mechanistic basis for lack of crosstalk between optoRaf and optoAKT, noting that both systems bypass upstream signaling nodes (Ras, receptor activation) where crosstalk typically occurs. Potential convergence on downstream transcription factors (CREB, FOXO) is proposed to explain non-additive regeneration effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C69-C77 are primarily literature-based discussion points (C69, C72, C75-C77 cite prior work) with reasonable inferences about the optogenetic systems (C73). The speculation about common downstream effectors (C74) is plausible given the non-additive effects but lacks direct experimental support. These are valuable mechanistic hypotheses that require future validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "The manuscript contextualizes the work within existing literature on neurotrophin signaling, AKT and ERK pathways in regeneration, and the challenges of CNS repair. The role of ERK signaling in regeneration is noted as controversial in the literature, with the current work supporting a pro-regenerative role.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C85 accurately represent the state of the literature with appropriate citations. The acknowledgment of controversy regarding ERK's role (C81) and the authors' speculation about sources of variability (C83) are reasonable. These claims provide important context but are not primary findings of the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "The manuscript discusses advantages of the optogenetic approach over neurotrophin administration, including bypassing physical barriers in the CNS, enabling spatiotemporal control, and avoiding systemic side effects. The importance of signaling strength and location for functional outcomes is emphasized.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C93 present reasonable arguments for the advantages of optogenetic approaches, supported by the experimental data showing spatial guidance (C57-C60) and CNS regeneration (C61-C67). The discussion of neurotrophin limitations (C91-C92) is well-supported by citations. These claims effectively position the work's significance.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "The manuscript proposes mechanistic explanations for the differential kinetics of optoRaf (gated) vs. optoAKT (graded): Raf can be activated by both membrane translocation and CRY2-mediated dimerization, potentially reaching a saturation threshold, while AKT activation depends only on membrane translocation, resulting in dose-dependent, graded responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C98-C101 present plausible mechanistic hypotheses based on known Raf and AKT activation mechanisms and the observed kinetic differences. However, these are inferences rather than directly tested mechanisms. The CRY2 oligomerization effect on Raf (C98) and the saturation threshold (C99) are reasonable but speculative. Additional experiments would be needed to definitively establish these mechanisms.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C102",
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "The manuscript discusses translational potential and technical considerations for mammalian applications, including proof-of-concept for optogenetic control of regeneration, recent successes in zebrafish, and emerging technologies (wireless \u03bcLED devices, upconversion nanoparticles) to overcome light penetration limitations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C102-C105 appropriately discuss future directions and translational potential. The proof-of-concept claim (C102) is supported by the Drosophila data. The citation of recent zebrafish work (C104) and discussion of technical solutions to light penetration (C105) are accurate and well-referenced. These represent reasonable forward-looking statements.",
+    "result_type": "MINOR"
+  }
+]

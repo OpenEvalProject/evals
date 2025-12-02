@@ -1,0 +1,231 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "The CA3-CA1 circuit exhibits precise excitation-inhibition (EI) balance, where hundreds of unique CA3 input combinations recruit excitation and inhibition with a nearly identical ratio. This balance is maintained at a granularity of 5-10 synapses and requires co-tuning of excitatory and inhibitory synaptic weights (detailed balance), as demonstrated by voltage clamp recordings and modeling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C20-C29 collectively demonstrate precise EI balance through voltage clamp data showing proportional E and I responses (R\u00b2 = 0.89 \u00b1 0.06 SD, n=13 cells) across hundreds of stimulus combinations. The modeling work (C25-C27) and variability analysis (C28) provide converging evidence that this balance requires weight tuning rather than just global balance. The experimental design appropriately isolates feedforward inhibition and uses sufficient replicates.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "The delay between excitation and inhibition decreases inversely with excitatory input strength, creating a dynamic millisecond-range window for postsynaptic excitation. This relationship is consistent across cells and emerges naturally from interneuron spiking dynamics. Both EI balance and dynamic EI delays are necessary for subthreshold divisive normalization (SDN).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C44-C49 are well-supported by experimental measurements from voltage clamp data (Figure 6f-h, n=13 cells) showing the inverse relationship between EI delay and excitatory conductance. The modeling work (C47-C49) demonstrates the mechanistic basis and necessity of both components. The shuffling experiments (C49) provide strong evidence that both EI balance and dynamic delays are required for SDN.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C5",
+      "C32",
+      "C33",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C42",
+      "C43",
+      "C49"
+    ],
+    "result": "CA3 inputs sum sublinearly at CA1 through a mechanism termed Subthreshold Divisive Normalization (SDN), which controls membrane depolarization amplitude and timing. This sublinearity is mediated by feedforward inhibition, as blocking inhibition with GABAzine restores near-linear summation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C32-C38, C42-C43, C49 demonstrate SDN through extensive experimental data (93.35% of responses sublinear, n=33 cells) and pharmacological manipulation (GABAzine experiments, n=8 cells, p<0.05). The divisive normalization model fits significantly better than divisive inhibition (BIC comparison, p<0.00005, n=32 cells). Both experimental and modeling approaches converge on the same conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "Precise EI balance is maintained at resting membrane potential, with proportional excitation and inhibition for all stimuli. The median IPSP/EPSP ratio is approximately 0.7, slightly favoring excitation, which is explained by the proximity of inhibition to its reversal potential.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C41 are supported by experimental data comparing control and GABAzine conditions at resting potential (n=8 cells). The derived inhibition method appropriately isolates the inhibitory component. The explanation for lower IPSP/EPSP ratios compared to IPSC/EPSC ratios (C41) is biophysically sound based on the conductance equation and known reversal potentials.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C66"
+    ],
+    "result": "With inhibition intact, input information is encoded in both PSP peak amplitude and timing. Peak timing carries more information in the presence of inhibition, while peak amplitude carries more information in its absence. Knowledge of both amplitude and timing together provides more information about input strength than either alone.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C53, C66 are supported by information theoretic analysis of experimental data (n=7 cells for mutual information, n=8 cells for timing slopes, p<0.05). The statistical tests appropriately compare control and GABAzine conditions. However, the mutual information analysis relies on binning methods that can be sensitive to bin size selection, though the authors used Sturges' Rule to standardize this.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "SDN translates to the spiking domain, encoding stronger stimulus amplitudes as shorter spike latencies. The presence of inhibition decreases the steepness of spike time with conductance, allowing neurons to transition from temporal integration at small inputs to coincidence detection at large inputs. This enables efficient spike coding where large inputs are represented with fewer spikes while conserving information in spike timing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C54-C55, C67-C70 are based on Hodgkin-Huxley model simulations rather than direct experimental measurements of spiking. The authors acknowledge that the mapping is sensitive to multiple parameters including spike threshold, and that most experimental stimuli were subthreshold (only 0.98% of trials produced spikes, C16). While the modeling is reasonable, the lack of direct experimental validation of spike timing relationships limits confidence in these conclusions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C71",
+      "C72",
+      "C74",
+      "C77"
+    ],
+    "result": "SDN provides a biophysical mechanism for gain control at synaptic (millisecond) timescales, expanding the dynamic range of inputs before spike threshold. The degree of normalization can be modulated by changing I/E ratio and EI delay parameters, potentially allowing dynamic control of gain for subsets of inputs to a neuron.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C57, C71-C72, C74, C77 are supported by systematic modeling experiments (Figure 8c) showing how normalization varies with I/E ratio and delay parameters. The novelty of subthreshold, millisecond-timescale gain control compared to traditional rate-based divisive normalization (C73-C74) is well-established. However, the claim about dynamic modulation of input subsets (C57) is more speculative and would benefit from experimental validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19"
+    ],
+    "result": "The optogenetic stimulation protocol reliably activates CA3 neurons with <2 ms jitter and no desensitization, while eliciting predominantly subthreshold responses at CA1 (99% of trials). Single-square stimuli evoke responses with a mode of 0.25 mV, consistent with single synapse responses, and responses are highly consistent across repeats.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C19 establish the validity of the experimental approach through characterization of CA3 responses (n=8 cells for jitter, n=7 for desensitization) and CA1 responses (n=38 cells, 18,668 trials). The consistency metrics (84.74% with variance/mean <0.5) and comparison with literature values for single synapse responses provide strong validation of the method.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C82",
+      "C85"
+    ],
+    "result": "Precise EI balance is maintained in the reduced slice preparation despite lack of intrinsic network dynamics. This balance, combined with dynamic EI delays, could provide a mechanism for input gating in the hippocampus, potentially explaining how silent CA1 cells can be converted to place cells through changes in I/E ratio at specific synapses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C58, C61-C62, C82, C85 make speculative connections between the experimental findings and place cell formation/input gating. While the experimental demonstration of precise balance (C58) is solid, the mechanistic links to place cell conversion (C61-C62) are largely inferential and based on cited literature rather than direct experimental evidence. The proposed gating mechanism (C82, C85) is plausible but requires experimental validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13"
+    ],
+    "result": "EI balance is a fundamental property of neural circuits that controls excitability, dynamic range, and input gating. Theoretical frameworks predict that detailed and tight balance enable input gating, and EI balance has been observed across multiple brain regions and scales.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2, C7-C13 provide background context from established literature. These are well-supported by multiple citations to previous experimental and theoretical work. The claims appropriately frame the current study's contributions within the existing knowledge base.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C34",
+      "C63",
+      "C73",
+      "C78",
+      "C80",
+      "C81",
+      "C83"
+    ],
+    "result": "Previous work has established relevant anatomical and functional properties of the CA3-CA1 circuit and other brain regions, including distributed CA3 projections, linear summation in the absence of inhibition, the role of inhibition in sublinear summation, and mechanisms for modulating I/E ratios.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C31, C34, C63, C73, C78, C80-C81, C83 accurately summarize relevant prior work through appropriate citations. These claims provide necessary context for interpreting the current findings and are not primary results of this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C6",
+      "C76",
+      "C79",
+      "C84"
+    ],
+    "result": "The combination of precise EI balance and dynamic EI delays may form a general mechanism for millisecond-range input gating and subthreshold gain control in feedforward networks. This mechanism could be modulated by behavioral states and may be a general property of feedforward network motifs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C6, C76, C79, C84 make broad generalizations and speculative proposals about the wider applicability of the findings. While the experimental work in CA3-CA1 is solid, the extension to other feedforward networks (C84) and the speculation about behavioral modulation (C79) lack direct experimental support. These are reasonable hypotheses for future work but are not established by the current data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C75"
+    ],
+    "result": "This study demonstrates for the first time that balanced inhibitory input arrives with a delay modulated by excitatory input in a feedforward circuit, and adds a layer of subthreshold gain control to the known suprathreshold gain control in CA1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C65, C75 accurately characterize the novelty of the findings. The inverse relationship between EI delay and excitation (C64-C65) is well-supported by experimental data, and the comparison with previous work (C65) is appropriate. The claim about adding a layer of gain control (C75) is supported by the experimental and modeling evidence.",
+    "result_type": "MAJOR"
+  }
+]

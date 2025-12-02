@@ -1,0 +1,285 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C38",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C111"
+    ],
+    "result": "The authors developed and validated an integrated neuro-histological pipeline for systematic mesoscale connectivity mapping in the common marmoset. The pipeline includes tape-transfer sectioning of brains into ~1700 20 \u00b5m sections, multiple histological staining methods (Nissl, myelin, CTB, fluorescence), high-throughput automated processing, and computational reconstruction with atlas registration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C105, C111 collectively describe a comprehensive experimental and computational pipeline that has been implemented and validated with 118 injections across 49 brains. The methods are described in sufficient detail with specific equipment, parameters, and protocols. The pipeline successfully produces high-quality 3D reconstructions as evidenced by the presented data and figures.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C82",
+      "C83",
+      "C107",
+      "C112"
+    ],
+    "result": "The pipeline uses systematic in-vivo and ex-vivo MRI to guide tracer injections and enable accurate mapping of individual brains to a common reference atlas despite significant individual variation. MRI-guided reconstruction corrects for tissue distortion and achieves 7% shrinkage from in-vivo to ex-vivo MRI and 1% from ex-vivo MRI to histology.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C5, C82, C83, C107, C112 describe the MRI-guided approach with quantitative validation. Figure 6 demonstrates the improvement of MRI-guided reconstruction over unguided methods. The shrinkage measurements provide quantitative validation of the registration accuracy.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C6",
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "The pipeline facilitates systematic assembly of a mesoscale connectivity matrix with automated detection of projection patterns. Example results show projections from V1 to V5 and DLG, from V6 to lateral and medial pulvinar, and retrograde projections to V6 from A6DC, A31, and inferior pulvinar.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C108-C110 are supported by Figure 7 which demonstrates successful automated detection of both anterograde and retrograde projections. The specific anatomical connections identified are consistent with known primate visual system connectivity, providing biological validation of the technical approach.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "The study employs a grid-based injection strategy starting with ~2 mm spacing, adapted based on atlas boundaries and compartment sizes. The plan includes 356 injection centers in 241 structures (221 centers in 118 cortical structures comprising 74% of grey matter). Four injections per animal (2 anterograde, 2 retrograde) achieve effective N=2 per projection when combining bidirectional tracing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C81 describe a systematic and well-justified injection strategy. The grid spacing and adaptation rules are clearly specified. The approach of using 4 injections per animal with bidirectional tracing is a reasonable compromise between animal usage and statistical power, though N=2 is minimal for biological replication.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122"
+    ],
+    "result": "Preliminary analysis shows 73% of injections are localized within atlas-determined compartments while 27% show spread across boundaries. Manual analysis of 15 injections showed diameters of 0.8-2.5mm, with 6 showing boundary spread averaging 68% containment within target regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C118-C122 provide quantitative assessment of injection quality and localization. The data indicate reasonable but imperfect targeting accuracy. The 27% boundary spread rate and 32% leakage for affected injections represent limitations that should be considered when interpreting connectivity results, but the authors appropriately acknowledge this as preliminary analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C114",
+      "C115",
+      "C116",
+      "C117"
+    ],
+    "result": "Analysis of 26 brains shows whole brain volume median of 8222.5 mm\u00b3 (MAD 319.4 mm\u00b3) with no significant relationship to age or body weight. Some compartments (e.g., hippocampal formation) consistently differ from the template brain, suggesting the template may not represent population average.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C114-C117 provide quantitative assessment of individual variation. The sample size of 26 is reasonable for this analysis. The finding that some structures consistently differ from the template is important for interpreting atlas-based analyses and suggests future work should develop population-averaged atlases.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128"
+    ],
+    "result": "To complete brain-wide coverage with 0.8 mm\u00b3 cutoff requires 356 sites (712 injections total). With 190 injections completed in 49 brains and current capacity of 2 brains/month, completion is projected by 2024 requiring 131 additional brains.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C123-C128 provide reasonable projections based on current progress and throughput. The calculations are straightforward and the timeline projection is realistic given stated capacity. However, this assumes sustained funding, personnel, and no technical issues - factors not addressed in the uncertainty analysis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C106"
+    ],
+    "result": "Less than one percent of total sections were excluded from 2D alignment due to quality issues.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C106 indicates excellent technical quality of the sectioning and processing pipeline. The <1% exclusion rate demonstrates the robustness of the tape-transfer method and quality control procedures.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "Marmosets offer several advantages as NHP models including lower cost, ease of handling, smaller brain size (~35\u00d725\u00d720 mm), transgenic capability, and more developed social-vocal behaviors compared to macaques. Despite 40 million years evolutionary divergence from Old World primates, marmosets are phylogenetically closer to humans than rodents and show proportionately larger higher-order cortical areas.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C33 provide well-cited justification for using marmosets as models. The evolutionary and comparative neuroanatomy arguments are supported by appropriate citations. However, claim C28 about marmosets being 'better' models for social-vocal traits is speculative and depends on the specific research question.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "Previous NHP connectivity mapping efforts have been based on literature curation and meta-analyses rather than systematic single-methodology approaches. For macaques, databases like CoCoMac surveyed >400 studies with ~3300 injections establishing a 58-region connectivity matrix. For marmosets, >140 retrograde studies exist but no complete connectivity matrix has been established. The current approach addresses gaps in systematic methodology and enables comparative analysis with existing mouse brain-wide datasets.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C56 provide appropriate context and justification for the current work. The historical review is well-cited and accurately characterizes limitations of prior approaches. The comparison with mouse projects and emphasis on standardized methodology is appropriate. Table 1 effectively summarizes the state of the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "The Brain/MINDS project in Japan was launched following the U.S. BRAIN Initiative and European HBP in 2013, focusing on the common marmoset as an NHP model.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C37 provide factual context about the funding and institutional framework for the research. These are appropriately cited and provide important context for understanding the scope and goals of the project.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "The grid-injection approach represents a practical compromise between ideal comprehensive mapping (which would require synaptic-level EM reconstruction of multiple brains) and targeted classical neuroanatomy. The approach achieves brain-wide coverage at mesoscale resolution, sacrificing synaptic detail but enabling 3D volumetric analysis and cross-brain comparisons not possible with classical methods or current EM approaches.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C71 provide thoughtful discussion of methodological trade-offs and positioning relative to other approaches. The arguments are logical and well-reasoned. The acknowledgment of limitations (e.g., lack of synaptic detail) and advantages (e.g., brain-wide coverage, quantitative analysis) demonstrates appropriate scientific perspective.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C113"
+    ],
+    "result": "Classical Nissl and myelin stains remain the gold standard for cytoarchitectonic texture-based determination of precise brain region location and delineation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C113 is a reasonable statement about the continued value of classical histological methods. The pipeline's inclusion of these stains alongside modern tracers represents a strength, enabling both connectivity mapping and cytoarchitectonic validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C129"
+    ],
+    "result": "The pipeline can be generalized to 2\u00d73 inch slides to handle larger brains such as macaque, with technical innovations in stainers/coverslippers for larger format slides.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C129 is speculative about future applications. While the generalization is plausible, no data or pilot experiments are presented to validate feasibility. Scaling to macaque brains would involve substantial challenges beyond slide size (e.g., increased sectioning time, data storage, processing requirements, animal costs) that are not addressed.",
+    "result_type": "MINOR"
+  }
+]

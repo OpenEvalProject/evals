@@ -1,0 +1,394 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18",
+      "C123"
+    ],
+    "result": "The adapted model of YF occurrence achieves good fit to historical data with an AUC of 0.9004, similar to the original Garske et al. 2014 model, and predicts high probability of YF reports in West Africa consistent with observed patterns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C18 and C123 demonstrate that the model achieves good predictive performance (AUC=0.9004) comparable to prior work and accurately reflects observed YF occurrence patterns in West Africa. The model validation is supported by both statistical metrics and visual comparison with occurrence data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C19",
+      "C20"
+    ],
+    "result": "Temperature suitability for YF transmission varies geographically, with Nigeria and South Sudan showing high suitability while Rwanda, Burundi, and areas of Mali and Mauritania show low suitability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C20 are supported by the temperature suitability model results shown in Figure 2. The geographic variation in temperature suitability is a direct output of the thermal response modeling framework described in the methods.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "Climate change is projected to increase force of infection heterogeneously across Africa, with minimal change in West Africa but notable increases in East and Central Africa, particularly in Central African Republic.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C24 and C32-C34 collectively demonstrate heterogeneous regional impacts supported by model projections in Figures 3-4. The specific quantitative estimates for Guinea Bissau (10.3% change) and Central African Republic (87.1% increase) are provided with credible intervals, though the wide intervals indicate substantial uncertainty.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C2",
+      "C27",
+      "C28",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "There is a high probability (>93%) that annual YF deaths will increase across all climate scenarios, with projected increases of 10.0% under RCP 2.6 to 40.0% under RCP 8.5 by 2070.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C27-C28, C35-C37 present consistent probabilistic projections of increased mortality supported by model outputs in Table 1. The high probabilities (93-96%) of increased deaths are well-quantified with credible intervals, though the lower bounds of credible intervals include negative values indicating some uncertainty.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "The most severe increases in YF burden are projected for RCP 8.5 in 2070, with the most marked increases in East and Central Africa, while West African countries show the least distinct changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C31 are supported by model projections in Table 1 and Figures 5. The geographic heterogeneity in burden changes is consistent with the force of infection projections, showing West Africa (currently highest transmission) has smaller relative increases compared to East/Central Africa.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "Under RCP 2.6, deaths largely cease increasing after 2050, while under RCP 8.5, deaths in East and Central Africa accelerate after 2050, with RCP 2.6 considered potentially unfeasible.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C42 describe temporal dynamics of projected burden supported by Video 1 and model assumptions. The linear interpolation assumption (C38) is explicitly stated, and the differential trajectories between scenarios are supported by citations regarding RCP scenario feasibility (C40).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "Climate change affects both magnitude and distribution of YF burden heterogeneously, with temperature driving transmission variation while rainfall often mitigates, though some countries experience a 'perfect storm' of both factors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C46 are supported by model projections and appendix analyses examining individual contributions of temperature and rainfall. The heterogeneous geographic impacts are demonstrated across multiple figures, and the interaction between temperature and rainfall effects is explicitly analyzed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C47"
+    ],
+    "result": "Countries such as Ethiopia and Somalia may become higher priority targets for vaccination due to climate change impacts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C47 is a reasonable inference from the model projections showing increased burden in East Africa (C30, C22) and is supported by references to Figure 1 supplements showing median death distributions. This represents a policy-relevant conclusion from the modeling results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "The model was adapted from Garske et al. 2014 to include temperature range, temperature suitability, and precipitation instead of vegetation and landcover, resulting in a slight reduction in AUC from 0.9157 to 0.9004.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C50 explicitly describe methodological adaptations necessitated by data availability for climate projections. The reduction in model fit is quantified and acknowledged, with appropriate citations to prior work. This represents a transparent discussion of methodological trade-offs.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C51",
+      "C52"
+    ],
+    "result": "The omission of vegetation factors may lead to overestimation of future burden as desertification and forest fires are not considered.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C51 is supported by general ecological knowledge, but C52 is speculative about the direction of bias. While the authors cite relevant literature on desertification and fires, they do not provide quantitative evidence that the net effect would be overestimation rather than underestimation, as vegetation loss could affect both vectors and NHP reservoirs in complex ways.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "The model does not explicitly include urbanization or climate scenario-specific migration, which may lead to underestimation of burden increases due to human encroachment on sylvatic cycles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C53-C54 accurately describe model limitations with appropriate citations. However, C55 is speculative about the direction of bias. Urbanization has been shown to both reduce burden (Wood et al. 2017) and increase emergence (Gubler 2011), so the net effect on model accuracy is unclear.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C56",
+      "C57"
+    ],
+    "result": "The model does not propagate uncertainty in vaccination coverage, which will underestimate uncertainty in future burden estimates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C57 accurately identify a limitation in uncertainty quantification. The authors explicitly state they hold vaccination constant at 2018 levels (C25-C26) and acknowledge this underestimates total uncertainty. This is a valid methodological limitation that affects interpretation of credible intervals.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "The temperature suitability index relies on severely limited data for extrinsic incubation period from 1930s experiments, which may be outdated due to mosquito adaptation and improved experimental procedures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C59 accurately describe data sources with appropriate citation (Davis 1932). Claims C60-C61 appropriately acknowledge data limitations and call for updated experimental work. The reliance on historical data is a significant limitation for a climate change projection study, as thermal responses may have evolved.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C62",
+      "C63"
+    ],
+    "result": "Focusing only on A. aegypti likely underestimates uncertainty in thermal response and future burden projections, as YF has multiple vectors with different thermal responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C63 identify a key limitation supported by citation to Monath and Vasconcelos 2015. The authors acknowledge focusing on the urban vector due to data availability (C107) but recognize this underestimates uncertainty. This is a significant limitation for projecting sylvatic transmission.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "The model includes detailed temperature relationships but only simple rainfall relationships, as rainfall influences on transmission are not yet well parametrized despite clear links to vector breeding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C66 accurately describe the asymmetry in model complexity between temperature and rainfall components. This reflects the current state of the field where thermal response models are better developed than rainfall-transmission relationships, representing a limitation in model mechanistic detail.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "The model assumes constant force of infection representing sylvatic spillover, which is supported by recent studies but omits urban transmission cycles that play crucial roles in outbreaks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C69 accurately describe the model assumption with supporting citation (Gaythorpe et al. 2019) while acknowledging the importance of urban transmission. Claim C70 appropriately suggests future work to incorporate multiple transmission routes. This represents a transparent discussion of model scope and limitations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C71",
+      "C72"
+    ],
+    "result": "Disease burden and deaths from YF are likely to increase heterogeneously across Africa due to climate change, emphasizing the need for new vaccination activities and consolidated control strategies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C72 represent the main conclusions of the study, supported by the collective evidence from model projections (C2, C27-C28, C35-C37, C43-C46). The policy recommendation (C72) is a reasonable inference from the projected increases in burden, though it does not account for all model limitations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C103",
+      "C105",
+      "C106",
+      "C107",
+      "C112",
+      "C113",
+      "C124"
+    ],
+    "result": "The temperature suitability index is estimated from YF-specific experimental data on extrinsic incubation period, vector mortality, and bite rate for A. aegypti, combined using the Ross-MacDonald formula, with results consistent with prior work.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C103, C105-C107, C112-C113 describe the temperature suitability modeling approach with appropriate citations to data sources (Davis 1932, Tesla et al. 2018, Mordecai et al. 2017, Martens 1998) and theoretical framework (Macdonald 1957). Claim C124 validates the extrinsic incubation period estimates against Johansson et al. 2010, providing external validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C115",
+      "C116",
+      "C117",
+      "C118"
+    ],
+    "result": "The model reformulates YF occurrence to accommodate nonlinear temperature and rainfall dependence, couples with serological transmission models, and estimates parameters within a Bayesian MCMC framework propagating uncertainty.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C108-C111, C115-C118 describe the integrated modeling framework with appropriate citations. The Bayesian hierarchical approach (C117-C118) allows uncertainty propagation from thermal response models through to transmission intensity estimates. The methodology is well-documented with appropriate statistical citations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C120",
+      "C121",
+      "C122"
+    ],
+    "result": "Future projections assume static vaccination at 2018 routine levels and unvarying case management, incorporating climate projections to estimate burden changes compared to a baseline scenario with no climate change.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C26, C120-C122 explicitly describe the projection methodology and assumptions. The static vaccination assumption is clearly stated and acknowledged as a limitation (C56-C57). The comparison to a baseline scenario with constant climate provides appropriate counterfactual for isolating climate change effects.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C1",
+      "C3"
+    ],
+    "result": "Yellow Fever is estimated to cause 78,000 deaths per year in Africa, though underreporting is high.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1 and C3 consistently cite Garske et al. 2014 for the baseline mortality estimate. This provides context for the magnitude of projected climate change impacts. The acknowledgment of underreporting is important for interpreting absolute numbers.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "YF occurrence data were compiled from WHO sources and surveillance databases, with suspected cases used as a measure of surveillance effort assumed constant over time.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C81 describe data sources with appropriate citations and acknowledge limitations of the YFSD database (broad case definition, cross-reactivity issues). The assumption of constant surveillance effort (C81) is a limitation acknowledged due to data scarcity, which could affect model calibration.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "Serological surveys from Central and East Africa were used to assess transmission intensity, including only steady-state populations and generally excluding vaccinated individuals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C84 describe serological data with appropriate inclusion criteria (steady-state populations) and handling of vaccination status. The exclusion of outbreak investigations (C83) is appropriate for estimating endemic transmission. The special handling of South Cameroon data (C84) shows attention to data quality issues.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "Vaccination coverage is estimated from multiple historical sources spanning 1940-present using established methodology, assuming equal vaccination probability across targeted age groups.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C87 describe vaccination data sources with multiple citations and reference to established methodology (Garske et al. 2014, Hamlet et al. 2018a). The assumption of equal vaccination probability (C87) is a simplification that may not reflect real-world clustering of vaccine coverage.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "Demography from UN WPP is disaggregated to province level using LandScan 2014, assuming similar age structure across provinces within countries.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C90 describe demographic data sources with appropriate citations. The assumption of similar age structure across provinces (C90) is a simplification that may not hold in countries with heterogeneous urbanization, potentially affecting burden estimates in specific locations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "Climate projections from WorldClim 1.4 provide temperature and rainfall data for four RCP scenarios (2.6, 4.5, 6.0, 8.5) in 2050 and 2070, with baseline conditions from 1960-1990.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C102 comprehensively describe climate data sources with appropriate citations. The use of WorldClim 1.4 and IPCC5 RCP scenarios is standard practice. The acknowledgment that RCP 2.6 may be unfeasible (C99) provides important context for interpreting results. The baseline period (1960-1990) predates current warming (C97), which is appropriate for the modeling framework.",
+    "result_type": "MINOR"
+  }
+]

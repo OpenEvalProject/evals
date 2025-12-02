@@ -1,0 +1,255 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C68",
+      "C69"
+    ],
+    "result": "Individual Kruppel shadow enhancers act largely independently within the same nucleus. Allele activity is more than twice as correlated in homozygotes (proximal or distal) compared to shadow heterozygotes at 47-57% egg length during nuclear cycle 14, indicating that differential TF inputs are the primary determinants of transcriptional bursts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C32-C35, C68-C69 provide converging experimental evidence from live imaging of biallelic transcription showing significantly lower correlation in shadow heterozygotes versus homozygotes. The data directly support the conclusion that individual enhancers act independently and that TF inputs drive transcriptional bursting. Statistical significance is reported (p-value=6.1\u00d710\u207b\u00b3).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C63",
+      "C65"
+    ],
+    "result": "TF fluctuations are required to reproduce the observed differences in allele correlation between homozygotes and heterozygotes. A stochastic model with bursting TFs recapitulates experimental observations, while a constant TF model fails to do so.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C38, C63, C65 describe modeling results that consistently show the bursting TF model reproduces experimental allele correlation patterns while the constant TF model does not. The modeling provides mechanistic support for the role of TF fluctuations, though the model is simplified and makes several assumptions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "The shadow enhancer pair is less sensitive to Bicoid fluctuations than the distal enhancer alone. Changes in shadow pair activity are significantly less correlated with Bcd-GFP levels (median r=0.14) compared to distal enhancer activity (median r=0.18, p=6.1\u00d710\u207b\u00b3).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C42 present experimental data from simultaneous tracking of Bcd-GFP and enhancer activity with appropriate statistical analysis. The modest correlation values are acknowledged and explained by additional TF inputs and nuclear heterogeneity (C71-C72). Modeling recapitulates the findings (C40).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C75"
+    ],
+    "result": "The shadow enhancer pair displays lower temporal expression noise than duplicated enhancers. The shadow pair's expression noise is ~30% or 15% lower than duplicated proximal or distal enhancers, respectively, and this is not due to higher expression levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C47 provide experimental measurements of coefficient of variation across time showing significantly lower noise for the shadow pair. The control for expression levels (C46) strengthens the conclusion. The finding that shadow enhancers operate upstream of temporal/spatial averaging (C75) provides mechanistic context.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C76"
+    ],
+    "result": "A stochastic model demonstrates that separation of TF inputs is sufficient to explain the lower noise driven by the shadow enhancer pair. The model predicts lower noise for the shadow pair without explicit fitting to CV data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C50, C76 describe modeling results that recapitulate experimental noise differences without additional parameter fitting. This is a strong result showing that TF input separation alone can explain the observations. However, the model makes simplifying assumptions about enhancer interactions and TF dynamics.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C64"
+    ],
+    "result": "The shadow enhancer pair buffers both extrinsic and intrinsic noise sources better than duplicated enhancers. Total noise is 1.4-2.4\u00d7 lower for the shadow pair, with significantly lower covariance and marginally lower inter-allele noise.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C56, C64 present noise decomposition analysis showing the shadow pair has lower total noise, covariance, and inter-allele noise compared to duplicated enhancers. Statistical comparisons are provided. However, the authors acknowledge violations of assumptions for the noise decomposition method (negative covariance observed), requiring use of alternative terminology.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C5",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "The shadow enhancer pair maintains low expression noise across a wide temperature range (17\u00b0C, 26.5\u00b0C, 32\u00b0C). At 32\u00b0C, the shadow pair shows 35-52% lower noise than duplicated enhancers. Temperature perturbations have enhancer-specific effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C57-C62 present experimental data at three temperatures showing the shadow pair consistently drives lower noise. Statistical comparisons are provided. The enhancer-specific temperature responses (C60-C61) suggest differential TF responses, though this is speculative. Results are consistent with prior literature (C62).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C4",
+      "C6",
+      "C7",
+      "C66"
+    ],
+    "result": "TF fluctuations are an appreciable source of noise that shadow enhancers can buffer through separation of TF inputs. This noise-suppressing ability may partially explain the widespread use of shadow enhancers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C6, C7, C66 represent the main conclusions synthesizing the experimental and modeling results. The evidence from allele correlation, Bcd tracking, noise measurements, and modeling collectively support these conclusions. However, C7 is explicitly speculative about evolutionary implications.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "Negative covariance between alleles suggests competition for a limiting factor, likely a spatially-patterned TF rather than MCP-GFP. This may indicate that reporters can affect endogenous gene expression through TF sequestration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C77-C79 present experimental observations of negative covariance with spatial patterns suggesting TF limitation. However, the interpretation is speculative and based on indirect evidence. Claims C80-C81 cite prior work showing TF sequestration can occur, but direct evidence for this mechanism in the current system is lacking.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "Both duplicated distal and proximal enhancers display sub-additive behavior, suggesting competition between enhancers for promoter interactions. This is most pronounced for strong enhancers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97-C100 describe experimental observations of sub-additivity supported by modeling results showing changes in kon and koff values. The connection to prior work (C100) strengthens the interpretation. However, the model cannot distinguish between promoter saturation and enhancer competition.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C95",
+      "C96"
+    ],
+    "result": "The MS2 system reliably tracks two individual transcriptional spots in single nuclei with low levels of transvection at the blastoderm stage.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95-C96 present methodological validation showing the ratio of observed to expected spots is close to 1.0 for all constructs, and two distinct foci are observable. This is consistent with prior literature on low transvection at this stage.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C101",
+      "C102"
+    ],
+    "result": "The distal enhancer at endogenous spacing produces significantly more mRNA but displays significantly higher total noise (p=0.018) compared to the distal enhancer proximal to the promoter.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C101-C102 present experimental comparisons showing position-dependent effects on both expression level and noise. Statistical significance is reported. This validates the choice to use endogenous spacing for noise measurements.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C30",
+      "C31"
+    ],
+    "result": "Kruppel is controlled by two enhancers (proximal and distal) that drive overlapping expression in the embryo center. Each enhancer is activated by different TFs: proximal by Hunchback and Stat92E, distal by Bicoid and Zelda.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C28, C30-C31 describe the Kruppel enhancer system based on prior work (Perry et al., 2011; Wunderlich et al., 2015) and figures showing expression patterns and regulatory inputs. This establishes the experimental system.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C1",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C67"
+    ],
+    "result": "Background on transcriptional bursting, noise in gene expression, and shadow enhancers. Transcriptional bursting is widespread, mRNA fluctuations affect protein levels, and shadow enhancers are found across organisms and are critical for robust expression under perturbations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C8-C19, C67 provide literature-based background establishing the biological context. All claims are supported by appropriate citations to prior work. These establish the motivation for the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "Shadow enhancers may have additional functions beyond noise suppression, including non-redundant roles in different tissues/stages, expression pattern sharpening, and enhancer-enhancer interactions. The diversity among shadow enhancers has not been fully characterized.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C91 discuss alternative and additional functions of shadow enhancers based on prior literature. These are appropriately cited and provide important context for interpreting the current results. Claims about the primary function of Kr enhancers (C88-C89) involve some speculation.",
+    "result_type": "MINOR"
+  }
+]

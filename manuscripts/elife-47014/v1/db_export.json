@@ -1,0 +1,2114 @@
+{
+  "submission": {
+    "id": "e5cf4961-e3e9-4911-bbd4-8451b5e4f400",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T13:08:06.892867Z",
+    "updated_at": "2025-12-02T13:08:06.892867Z"
+  },
+  "content": [
+    {
+      "id": "82cdf482-07e5-4b1b-a503-e8e0ec304a24",
+      "submission_id": "e5cf4961-e3e9-4911-bbd4-8451b5e4f400",
+      "content_type": "manuscript",
+      "content_text": "# The meanings of 'function' in biology and the problematic case of de novo gene emergence\n\n## Authors\n\n- Diane Marie Keeling<sup>1</sup> ([ORCID: 0000-0003-3613-9162](https://orcid.org/0000-0003-3613-9162))\n- Patricia Garza<sup>2</sup>\n- Charisse Michelle Nartey<sup>3</sup> ([ORCID: 0000-0001-5275-366X](https://orcid.org/0000-0001-5275-366X)) \u2020\n- Anne-Ruxandra Carvunis<sup>4</sup> ([ORCID: 0000-0002-6474-6413](https://orcid.org/0000-0002-6474-6413)) \u2020\n\n### Affiliations\n\n1. Department of Communication Studies, College of Arts & Sciences University of San Diego San Diego United States\n2. Colegio de Saberes Mexico City Mexico\n3. Department of Biological Sciences University of Texas at Dallas Richardson United States\n4. Department of Computational and Systems Biology University of Pittsburgh Pittsburgh United States\n5. Pittsburgh Center for Evolutionary Biology and Medicine University of Pittsburgh School of Medicine Pittsburgh United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nThe word function has many different meanings in molecular biology. Here we explore the use of this word (and derivatives like functional) in research papers about de novo gene birth. Based on an analysis of 20 abstracts we propose a simple lexicon that, we believe, will help scientists and philosophers discuss the meaning of function more clearly.\n\n## Introduction\n\nThe scientific enterprise is inherently rhetorical (Condit, 1999; Fahnestock, 2002; Ceccarelli, 2001). When we describe observations, articulate hypotheses or develop theories, we consciously or unconsciously select words to convey the meaning of our work. These words, rather than our own understanding, are what is published, read, interpreted and possibly built upon for the years to follow. Language influences how we communicate, how we think, and how we practice science. A specific and contextual use of language is therefore paramount to a productive global scientific endeavor. In practice, however, confusion and even conflict can arise when the same word is understood differently by authors and readers.\n\nA reader's interpretation of a word in a text depends on who the reader is. What is their field of training? In what country did they grow up? In what decade were they born? What are their metaphysical presuppositions? All these and countless other factors act as a filter between the words themselves and the meanings that readers assign to them. These factors are out of the author's control, and their effect can be amplified when the word is part of everyday language.\n\nA striking example of different interpretations of words leading to controversy was the debate, prompted by the first papers from the ENCODE Project, about what fraction of the human genome is 'functional'. Is it approximately 80%, as suggested by biochemical evidence, or is it closer to 10%, as it appears from evolutionary evidence (The ENCODE Project Consortium, 2012; Doolittle, 2013; Graur et al., 2013; Kellis et al., 2014)?\n\nOf course, the answer to this question entirely depends on what exactly is meant by the word 'function'. For most evolutionary biologists, function relates to selection (that is, the effect for which the gene was selected in the past at the organismal level). For most molecular geneticists and biochemists, it is generally associated with a molecule's activity (such as catalysis or binding), independent of the historical factors that led to its existence. These meanings are epistemological constructions influenced by scientific training. In everyday language, the word 'function' is associated with many additional concepts ranging from someone's professional occupation to the purpose for which a machine has been engineered. Yet some argue that the evolutionary meaning of function is the only one that is relevant for DNA sequences (Graur et al., 2013) and that when referring to other meanings scientists should use other words such as 'effect' or 'activity' (Doolittle et al., 2014).\n\nThis position, and the arguments against it, echo an ongoing conversation in the philosophy of science (Cummins, 1975; Millikan, 1989; Neander, 1991; Amundson and Lauder, 1994; Garson, 2011; Griffiths, 2009). In brief, the conversation divides those who argue function should mean why an entity does what it does (the selected effect definition of function) and those who argue it can also mean what an entity does (the causal role definition of function) (Laubichler et al., 2015). Function strictly defined as selected effect is the historical explanation for the existence of an entity (Millikan, 1989). Function as causal role is ahistorical and describes the contribution of an entity to a complex system (Cummins, 1975). Other theories of biological function have been proposed (Wouters, 2003; Mossio et al., 2009; Roux, 2014), but the selected effect/causal role perspectives have dominated the conversation in the context of genomics.\n\nFar from a fruitless dispute over semantics, the rhetorico-scientific debate has sparked a number of thoughtful studies that have advanced thinking at the interface of evolutionary biology and genomics. For instance, one study interrogates the relationship between organismal complexity and the number of functional elements in a genome (Doolittle, 2013), another highlights the discrepancies between different lines of evidence used to infer functionality of DNA loci (Kellis et al., 2014), and another refines the evolutionary classifications of genomic functions (Graur et al., 2015). However, only a small fraction of biologists \u2013 mostly evolutionary biologists \u2013 are aware of the rhetorical context. Most scientific publications do not explicitly include a definition of 'function' to clarify the meaning of the reported findings.\n\nIt can be argued that this imprecision has tangible implications for the scientific practice. For better or worse, in biological research there is a conflation between what is 'functional' and what 'matters'. Only those genomic sequences deemed 'functional' are worthy of being curated by reference databases, of being named, cloned or incorporated into grant proposals for mechanistic studies. Today, scientists cannot agree on the number of functional genes in the human genome (Pertea et al., 2018; Jungreis et al., 2018), or on what evidence should be required to elevate noncoding RNAs from mere transcriptional noise to functional regulatory elements (Doolittle, 2018). The general confusion about what exactly is meant by \u2018function\u2019 across the literature is such that some have pleaded for the community to deal with the \u2018F-word\u2019 urgently (Doolittle et al., 2014; Doolittle, 2018).\n\nAs an interdisciplinary group of scholars, we sought to understand to what extent the existence of differing meanings of \u2018function\u2019 actually impairs the scientific enterprise. We focused our attention on a relatively recent subfield of evolutionary genomics studying the specific case of de novo gene birth. This field attempts to understand how new \u2018functional\u2019 genes can emerge without having derived from another gene as their ancestor. The process of de novo gene birth was long thought to be implausible on the basis that, as Francois Jacob wrote: \"the probability that a functional protein would appear de novo by random association of amino acids is practically zero\" (Jacob, 1977). However, the explosion of new genome sequences has revealed that many genes have species- or lineage-specific sequences (Khalturin et al., 2009), suggesting that they lack gene ancestors. Studies of a growing number of individual gene candidates have confirmed their de novo emergence, fueling many genomic and evolutionary studies to evaluate the scale and mechanisms of the de novo gene birth phenomenon (Tautz and Domazet-Lo\u0161o, 2011; McLysaght and Hurst, 2016; Van Oss and Carvunis, 2019).\n\nThe meanings of function are at the heart of what constitutes a de novo gene birth event. For a genomic sequence to be labelled as a gene, it must by definition have a function; it must express a product that participates in cellular processes and affects phenotypes in a way that is being maintained by selection. If such a gene has evolved de novo, the locus it came from by definition was not a gene, thus did not have a function, or at least not a function of the same nature as the one the new gene has. The molecular objects of study are thus transitioning between a state without a function and a state with a function. They cannot have upon birth a function by the strict selected effect definition (Millikan, 1989), since their existence cannot have been caused historically by a past selection. The transformative nature of the de novo emergence process thus renders the debates about when and how a locus actually becomes functional highly contentious.\n\nLet us consider a hypothetical example to illustrate the difficulty of thinking about the function of recently emerged coding elements. Imagine a locus that has become transcribed and translated for the first time in somebody\u2019s gamete, generating a novel protein whose expression propagates to future generations. The corresponding protein has no activity whatsoever. Does this locus correspond to a de novo functional gene? Not according to the selected effect definition, since there is no past selection to explain why the locus is here. Not according to the causal role definition either, since it does not do anything. What if the protein happens to confer a fitness benefit to the organism? Still, the locus would not have a function according to the strict selected effect definition (Millikan, 1989), although it might be in the process of acquiring one. What if the protein causes a deadly disease? In that case many may find it acceptable to use derivatives of function and write \u2018the locus functions in the development of disease\u2019, or \u2018the locus is functional\u2019, but not \u2018the function of the locus is to cause a deadly disease\u2019 (Doolittle et al., 2014). One might cautiously call this locus a proto-gene (Carvunis et al., 2012), Zombie or Lazarus DNA (Graur et al., 2015), rather than a functional gene. But, at any rate, this locus \u2018matters\u2019 (Ardern, 2018) and there is a pressing need to find the right words to express what it does, why and how.\n\nIn addition to these fundamental considerations, the de novo field is interdisciplinary and relatively young. It is therefore rich in diverse perspectives and trainings, and de novo researchers lack a commonly accepted jargon. All these challenges make de novo gene evolution a well-suited test bed to evaluate what meanings of function are circulating in this field and whether, and to what extent, the meanings of function hinder scientific communication.\n\n## Constructing a model of function for de novo gene birth research\n\nWe sought to construct an understanding of function specifically tailored to de novo gene birth. We reasoned that this aim would be best achieved by studying how the term is used in the scientific practice of this particular field of research. Indeed, the objects of study and the technical methodologies in this field may lend themselves to different interpretations of function than in other fields such as regulatory genomics, physiology or ecology. In order to derive an initial model of function adapted to de novo gene birth research, we first rhetorically analyzed the scientific literature in the field together with philosophical publications about genomic function. We then applied the constant comparative method of the grounded theory of social sciences (Glaser and Strauss, 1967) to samples of 20 published abstracts in the field (see Methods). Through an organized, iterative process of defining and discussing usages of the term, we inductively converged on the interpretation that, in this set of abstracts, authors writing about the function of a molecular object were almost always describing one or more of the following properties of the object: Expression, Capacities, Interactions, Physiological Implications and Evolutionary Implications. These properties represent five meanings of function that are defined in Table 1.\n\n**Table 1.**\n The Pittsburgh model of function.The hierarchical order of the meanings did not directly derive from our textual analysis, but was inspired from a reductionist interpretation of the flow of genetic information over time and space. It also reflects a possible ordering of the series of properties that must be acquired by a locus to undergo de novo gene birth.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Meanings</th>\n      <th>Definitions</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Evolutionary Implications</td>\n      <td>The object's influence on population dynamics over successive generations, as enabled by its physiological implications and their interplay with environmental pressures</td>\n    </tr>\n    <tr>\n      <td>Physiological Implications</td>\n      <td>The object's involvement in biological processes as enabled by a set of its capacities, interactions and expression patterns, independent of cross-generational considerations</td>\n    </tr>\n    <tr>\n      <td>Interactions</td>\n      <td>Physical contacts, direct or indirect, between the object under investigation and the other components of a system, including contacts that mediate chemical transformations</td>\n    </tr>\n    <tr>\n      <td>Capacities</td>\n      <td>Intrinsic physical properties of the object under investigation; the necessity of the object's behavior given an environment (eg., structural constraints)</td>\n    </tr>\n    <tr>\n      <td>Expression</td>\n      <td>The presence or amount of the object under investigation (RNA or protein object), or the presence or amount of its transcription or translation products (DNA object)</td>\n    </tr>\n    <tr>\n      <td>Vague</td>\n      <td>Sufficient evidence was not found to infer one or more meanings of function within this model, nor to derive a new meaning</td>\n    </tr>\n  </tbody>\n</table>\n\nConveniently, these five meanings map to an interpretation of the epistemological flow of genetic information over time and space. Starting from an object\u2019s presence (Expression), we consider its physical properties (Capacities), binding partners within a system (Interactions), phenotypic impact (Physiological Implications) and influence on population dynamics (Evolutionary Implications). Accordingly, we propose to relate these five meanings of function in a hierarchy inspired from molecular, evolutionary and systems biology (Noble, 2006; Medina, 2005; Ernst and Carvunis, 2018). This hierarchy reflects a possible ordering of the series of properties that must be acquired by a locus to undergo de novo gene birth. Altogether, the definitions and hierarchical organization are hereafter referred to as the Pittsburgh model of function (Table 1). This model summarizes our analyses of how the term function is used in the field. The model also includes a sixth category labelled \u2018vague\u2019, for the few instances where we could neither assign any of the five meanings, nor infer a sixth meaning from the context.\n\nLike the molecules they describe, the five meanings of function are interrelated in complex bottom-up and top-down ways that complicate causal inferences (Noble, 2006). For instance, as has been discussed in the context of the ENCODE debate, Expression is not sufficient to cause Evolutionary Implications (Doolittle, 2018). Inversely, Evolutionary Implications do not necessarily imply Expression since a locus can influence population dynamics through a DNA regulatory activity. The methodological details of the study determine whether the burden of proof has been met to assign one or several of the proposed five meanings of function to a molecular object. Such rigor in functional inference is especially critical for the field of de novo gene birth, where the objects of interest often display some but not all of the properties of established genes (McLysaght and Hurst, 2016; Carvunis et al., 2012; Ruiz-Orera et al., 2018). Our model acknowledges epistemological relationships between different meanings of function while enabling researchers to describe them independently of each other.\n\nThis model presents practical advantages relative to pre-existing ones because it is tailored to one field of research. In particular, it differentiates between different types of biochemical activities for de novo emerging sequences; this enables scientists to articulate more specific functional inferences than with broad terms that generalize across fields such as \u2018causal role\u2019 or \u2018mere activities\u2019 (Cummins, 1975; Wouters, 2003; Doolittle, 2013). Rather than theorizing upon the legitimacy of what function should mean, our model decomposes this complex concept into a hierarchical organization of measurable properties of the object in time and space according to meanings that are circulating in the field currently.\n\nThe Pittsburgh model of function can be seen as a conceptual tool well adapted to describe molecular objects (DNA loci, RNA transcripts and proteins) in a manner that roughly maps to subfields of training and associated measurement techniques currently used in de novo gene birth research. For instance, while RNA-sequencing readily informs upon Expression and yeast two-hybrid upon Interactions, discovering interactions by yeast two-hybrid does not allow the researcher to conclude that a locus is natively expressed; so too, establishing that a locus is expressed does not imply that the corresponding product necessarily interacts with other elements in the cell. Evidently, neither technique gives direct insights into Evolutionary Implications since Expression and Interactions are necessary but not sufficient to cause Physiological Implications, let alone Evolutionary Implications. Separating these meanings from one another enables communicating with increased precision about what the findings are, thereby helping to fallacious logical shortcuts such as \u2018this protein is expressed therefore it is functional therefore it is under selection\u2019.\n\nThe meanings of Physiological Implications and Evolutionary Implications are deliberately broad to allow for detailed descriptions beyond the somewhat restrictive notion of selected effect. For instance, Evolutionary Implications can refer to selection upon a trait driven by the object in the past, as in the strict definition of selected effect (Millikan, 1989), but it can equally describe other ways the object may influence population dynamics such as runaway selection or novel fitness enhancing effects.\n\nThe Pittsburgh model has important limitations. Tested on only 20 abstracts related to the single field of de novo gene birth, by no means does it represent a complete ontology of function. Constructed in a field-specific manner, our model may or may not extend to genomic elements outside of the gene birth framework, such as selfish elements or promoters. It cannot be readily applied to biological objects other than DNA, RNA and protein objects.\n\nThere may be additional meanings available beyond the five we included, and different ways to characterize the relationships between these meanings. Function can for instance refer to an object\u2019s influence on ecological behavior, but this was not the case in the small sample of abstracts we analyzed. Interactions may be better placed below Expression in a hierarchical model that would be tailored to regulatory genomics, where the focus is on how physical interaction of DNA elements with diverse proteins determine regulatory outputs, rather than for de novo gene birth, where the focus is on the loci being expressed themselves. As well, Physiological Implications and Evolutionary Implications may be further subdivided to account for the diverse relationships evident within these concepts and the methodological procedures that inform them.\n\nLastly, our model does not attempt to resolve the teleological dimension of function, especially as it relates to physiological processes and an object's involvement therein (Roux, 2014). Despite these limitations, our proposed model provides a practical lexicon that maps to prevalent data generation and interpretation practices (Laubichler et al., 2015). Therefore, we hope that our work will help researchers from different disciplines with differing backgrounds communicate more effectively about de novo gene birth.\n\n## How multiple meanings of function are used in the field of de novo gene birth\n\nWith this model in hand, we analyzed whether the multiple meanings of function impact understanding of the literature in the field of de novo gene birth. Each member of our team independently assigned one or more meanings to each instance of the word function found in our database of abstracts, gathering contextual evidence primarily from the sentence in which the term was used (4 members; 20 abstracts; 42 instances including 25 nouns, 12 adjectives, 3 verbs and 2 adverbs; see Methods). The abstracts generally provided enough context for each independent reader to confidently assign meanings to most instances, with only rare assignments of the label \u2018vague\u2019 (9 instances with one or more vague assignment, none unanimous). Hence, the Pittsburgh model gave readers a key to decipher more specifically what authors meant by the word function. However, and importantly, a quantitative analysis revealed only that 12% (5/42) of assignments were unanimous, where the same single meaning was chosen by all readers (Figure 1A). In other words, the same instance of the word in the same sentence was most of the times (37/42\u00a0=\u00a088%) interpreted differently by our team members. The most confusing instances, with 4 or 6 distinct assignments, were all assigned \u2018vague\u2019 by at least one reader. This analysis indicates that when the meaning of function is unspecified, the literature in this field of research can become confusing.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/47014/elife-47014-fig1-v1.jpg)\n\n**Figure 1.:** We analyzed a sample of 20 abstracts containing 42 instances where the word function or one of its derivatives was used to describe DNA, RNA or protein objects. First, each of us read the abstracts independently and assigned one or several of the meanings of function as defined in the Pittsburgh model to each of these instances. The distribution of the number of distinct meanings that we assigned to the 42 instances is shown in panel (A). For only 5 instances did all of us independently assign the same unique meaning, suggesting that function is most often interpreted in multiple ways by independent readers. Next, we discussed each instance to see if we could reach consensus assignments based on the textual evidence. Consensus was built through conversations and agreement between the readers, rather than majority opinion. The distribution of the number of unique meanings assigned after consensus agreement to each of the 42 instances is shown in panel (B). Most (26/42) instances are now assigned to a single meaning. When more than one meaning remains, the readers agreed that the textual evidence supported multiple meanings except for one instance where consensus could not be reached and three meanings were assigned to reflect all the differing interpretations of our team members. In panel C, we show the number of times each of the five meanings of function defined in the Pittsburgh model is assigned to an instance of function.\n\nTwo mechanisms could in theory explain why our independent textual analysis led to multiple meanings being assigned to the same instance of function in 88% of cases. On the one hand, it could be that the different readers often interpreted the same text differently due to their different backgrounds. On the other hand, the word function may often be used by authors to reflect several of the five meanings in our model simultaneously.\n\nTo determine to what extent each of these mechanisms was responsible for our observations (Figure 1A), we collectively reviewed and discussed all independent assignments for each instance of the word and built a consensus set of assignments. When we agreed that the textual evidence supported more than one meaning for a single instance, we assigned multiple meanings to this instance as a consensus. This consensus is thought to best reflect what was intended by the authors of the abstracts, although we cannot know for sure without interviewing the authors.\n\nConsensus was successfully reached for all but one instance, suggesting that the Pittsburgh model enabled adequate description of most of the instances of function in our abstract database. We then quantified again the fraction of instances of function that were assigned a unique meaning. This number grew from 5/42 (12%) in the original independent assignments (Figure 1A) to 26/42 (62%) in the consensus assignments (Figure 1B). This shows that, in our analyses, 21/42 (50%) instances were interpreted differently by at least one of four readers upon independent reading of the texts.\n\nIt is notable that, after establishing consensus assignments, still 16/42 (38%) instances were assigned two or three meanings (Figure 1B). This suggests that this one word is often used to mean different things, and that the plurality of function cannot be easily disentangled.\n\nThe meanings most frequently found in our consensus assignments were Physiological Implications (21 instances) and Evolutionary Implications (18 instances; Figure 1C). These two were also most often found assigned together in cases where a single instance was assigned two or three meanings (6 instances). We did not observe strong differences in how function was interpreted when it was used as a noun or an adjective, but such differences may become detectable in a larger text sample. Interestingly though, all but one instances with a vague consensus assignment were nouns. The extent of plurality (Figure 1A and B), as well as the distribution of meanings (Figure 1C), are likely to be field-specific. Yet our rhetorical approach leads us to conclude that the use of function in this field is hard to interpret, and that further nuance in writing would assist the reader in understanding how the authors intend their results to be interpreted.\n\n## Interpretation and recommendations\n\nIn summary, our results provide quantitative support to previous assertions (Doolittle, 2018; Laubichler et al., 2015) that the word function carries convoluted meanings that complicate the scientific conversation. Our rhetorical analysis shows that function becomes an ambiguous concept when applied to the edge case of de novo gene birth, which can lead to confusion in interpretation of the literature. Whether multiple meanings are intended by the authors, or meanings unintended by the authors are interpreted by the readers, or a combination of both, the fact is that scientific communication is hindered by the use of this word within the de novo gene birth field. There may be excellent theoretical arguments to be made about why function should mean one thing or another, but the cultural diversity of readers in this emerging field effectively prevents a unique definition to be imposed in practice. We believe that it will be productive for scientists to acknowledge the diversity of onto-epistemological perspectives in this field and adapt their writing style accordingly. Rather than privileging one meaning of function over another, we endorse qualifying the use of function or avoiding the word altogether (Doolittle, 2018). We hope our model will provide a useful tool for scientists to contextualize their writing so the relationship between the observations reported and the functional inferences made can be clarified and the risk of misunderstanding can be reduced.\n\nFunction is a concept that depends on the methodological practices, measurement procedures and habits of scientists. As these change, so too will the concept of function change and adapt to specific subfields of research, because it is contingent and always in a state of flux. Function requires ongoing attention and theorizing by the scientific community. Therefore, we expect our model to develop and adapt with scientific practice. We encourage researchers to refine the model, adapt it to other subfields of genomics and other types of biological objects (metabolites, cell types, organs), and propose alternatives. One can envision, for instance, exploiting the power of computational natural language processing to generate field-specific models by automatic analysis of large bodies of literature (Friedman et al., 2001; Groth et al., 2016), perhaps using our modest manual analysis as a training set. More generally, we hope that interdisciplinary conversations about philosophy (Laplane et al., 2019), rhetoric and scientific concepts will accompany the emergence of new scientific fields in the future.\n\n## Methods\n\n### An interdisciplinary mixed methods approach\n\nWe approached the question of the meanings of function in the de novo gene birth literature using a mixed methods study design adapted from rhetorical studies and applied communication (Creswell, 2014; McGreavy et al., 2015; Dewulf et al., 2007; Thompson, 2009). First and throughout, we performed a rhetorical analysis by interrogating the assumptions made by scientists within this field and how they inform language in the published literature (Gross, 1990). In addition, we performed a qualitative analysis to iteratively build a model of function as it applies to the field (Strauss and Corbin, 1990). Finally, we performed a quantitative content analysis to analyze how the multiple meanings of function affect understanding of the literature in the field (Neuendorf, 2016).\n\n### Paper selection\n\nA library of 20 published papers that included the term function or its derivatives (functional, functioning) in the abstract was assembled by a team member who is also a published expert in the field of de novo gene birth (Table 2). Publication dates span from 1992 to 2017, with most dated after 2012 because this is a recently expanding field. The papers were chosen to span a variety of journals, countries, citation counts, model organisms, methodologies and scope, in order to derive a context specific rhetorical argument (McGee, 1990). This library is estimated to represent\u00a0~2% of the literature published on the topic of de novo gene emergence, as a Google Scholar search returns 972 results in December 2018 (\u2018\u00a0\u2018\u2018de novo gene birth'\u2019 OR \u2018'de novo gene evolution'\u2019 OR \u2018'de novo gene emergence'\u2019 OR \u2018'de novo genes'\u2019\u00a0\u2019).\n\n**Table 2.**\n References for 20 abstracts analyzed in our study.Countries (based on affiliations of all authors) and model organisms are included to display the diversity of the abstracts.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Papers</th>\n      <th>Countries</th>\n      <th>Model Organisms</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Keese, P. K., and Gibbs, A. (1992). Origins of genes: \u2018big bang\u2019 or continuous creation?\u00a0PNAS 89:9489\u20139493.</td>\n      <td>Australia</td>\n      <td>Cellular life, Viruses</td>\n    </tr>\n    <tr>\n      <td>Kastenmayer, J. P., Ni, L., Chu, A., Kitchen, L. E., Au, W. C., Yang, H.,. .. and Basrai, M. A. (2006).\u00a0Functional genomics of genes with\u00a0small open reading frames\u00a0(sORFs) in\u00a0S. cerevisiae.\u00a0Genome Research\u00a016:365\u2013373.</td>\n      <td>USA</td>\n      <td>S. cerevisiae</td>\n    </tr>\n    <tr>\n      <td>Levine, M. T., Jones, C. D., Kern, A. D., Lindfors, H. A., and Begun, D. J. (2006).\u00a0Novel genes derived from noncoding DNA in Drosophila melanogaster are frequently\u00a0X-linked and exhibit testis-biased expression.\u00a0PNAS\u00a0103:9935\u20139939.</td>\n      <td>USA</td>\n      <td>D. melanogaster</td>\n    </tr>\n    <tr>\n      <td>Stepanov, V. G., and Fox, G. E. (2007). Stress-driven in vivo selection of a functional mini-gene\u00a0from a\u00a0randomized DNA library expressing combinatorial peptides in\u00a0Escherichia coli.\u00a0Molecular Biology and Evolution\u00a024:1480\u20131491.</td>\n      <td>USA</td>\n      <td>E. coli</td>\n    </tr>\n    <tr>\n      <td>Cai, J., Zhao, R., Jiang, H., and Wang, W. (2008). De novo origination of a new protein-coding gene in Saccharomyces cerevisiae. Genetics 179:487\u2013496.</td>\n      <td>China</td>\n      <td>S. cerevisiae</td>\n    </tr>\n    <tr>\n      <td>Zhou, Q., Zhang, G., Zhang, Y., Xu, S., Zhao, R., Zhan, Z.,. .. and Wang, W. (2008). On the origin of new genes in Drosophila. Genome Research 18:1446\u20131455.</td>\n      <td>China</td>\n      <td>Drosophila</td>\n    </tr>\n    <tr>\n      <td>Xiao, W., Liu, H., Li, Y., Li, X., Xu, C., Long, M., and Wang, S. (2009). A rice gene of de novo\u00a0origin negatively regulates pathogen-induced defense response.\u00a0PLoS One\u00a04:e4603.</td>\n      <td>China, USA</td>\n      <td>rice</td>\n    </tr>\n    <tr>\n      <td>Carvunis, A. R., Rolland, T., Wapinski, I., Calderwood, M. A., Yildirim, M. A., Simonis, N.,. ..and Vidal M. (2012). Proto-genes and\u00a0de novo\u00a0gene birth. Nature\u00a0487:370\u2013374.</td>\n      <td>Belgium, France, USA</td>\n      <td>S. cerevisiae</td>\n    </tr>\n    <tr>\n      <td>Ding, Y., Zhou, Q., and Wang, W. (2012). Origins of new genes and evolution of their\u00a0novel functions. Annual Review of Ecology, Evolution, and Systematics\u00a043:345\u2013363.</td>\n      <td>China, USA</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Tautz, D., Neme, R., and Domazet-Lo\u0161o, T. (2013). Evolutionary Origin of Orphan Genes.\u00a0In:\u00a0Encyclopedia of Life Sciences.\u00a0John Wiley &amp; Sons. DOI:\u00a0https://doi.org/10.1002/9780470015902.a0024601</td>\n      <td>Croatia, Germany</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Reinhardt, J. A., Wanjiru, B. M., Brant, A. T., Saelao, P., Begun, D. J., and Jones, C. D. (2013).\u00a0De novo\u00a0ORFs in\u00a0Drosophila\u00a0are important to organismal fitness and evolved rapidly\u00a0from previously non-coding sequences.\u00a0PLoS Genetics\u00a09:e1003860.</td>\n      <td>USA</td>\n      <td>D. melanogaster</td>\n    </tr>\n    <tr>\n      <td>Wissler, L., Gadau, J., Simola, D. F., Helmkampf, M., and Bornberg-Bauer, E. (2013).\u00a0Mechanisms and dynamics of orphan gene emergence in insect genomes.\u00a0Genome Biology and Evolution\u00a05:439\u2013455.</td>\n      <td>Germany, USA</td>\n      <td>Insects</td>\n    </tr>\n    <tr>\n      <td>Brylinski, M. (2013). Exploring the \u2018dark matter\u2019 of a mammalian proteome by protein\u00a0structure and function modeling.\u00a0Proteome Science\u00a011:47.</td>\n      <td>USA</td>\n      <td>M. musculus</td>\n    </tr>\n    <tr>\n      <td>Li, D., Yan, Z., Lu, L., Jiang, H., and Wang, W. (2014). Pleiotropy of the de novo-originated gene MDF1. Scientific Reports\u00a04:7280.</td>\n      <td>China</td>\n      <td>S. cerevisiae</td>\n    </tr>\n    <tr>\n      <td>Wirthlin, M., Lovell, P. V., Jarvis, E. D., and Mello, C. V. (2014). Comparative\u00a0genomics reveals molecular features unique to the\u00a0songbird lineage.\u00a0BMC Genomics\u00a015:1082.</td>\n      <td>USA</td>\n      <td>Songbirds</td>\n    </tr>\n    <tr>\n      <td>Suenaga, Y., Islam, S. R., Alagu, J., Kaneko, Y., Kato, M., Tanaka, Y.,. .. and Nakagawara, A.(2014). NCYM, a Cis-antisense gene of MYCN, encodes a\u00a0de novo\u00a0evolved protein that\u00a0inhibits GSK3\u03b2 resulting in the stabilization of MYCN in human neuroblastomas.\u00a0PLoS Genetics\u00a010:e1003996.</td>\n      <td>Japan</td>\n      <td>Human</td>\n    </tr>\n    <tr>\n      <td>Arendsee, Z. W., Li, L., and Wurtele, E. S. (2014). Coming of age: Orphan genes in plants. Trends in Plant Science\u00a019:698\u2013708.</td>\n      <td>USA</td>\n      <td>A. thaliana</td>\n    </tr>\n    <tr>\n      <td>Ruiz-Orera, J., Hernandez-Rodriguez, J., Chiva, C., Sabid\u00f3, E., Kondova, I., Bontrop, R.,. ..\u00a0and\u00a0Alb\u00e0, M. M. (2015). Origins of\u00a0de novo\u00a0genes\u00a0in human\u00a0and chimpanzee.\u00a0PLoS Genetics\u00a011:e1005721.</td>\n      <td>Spain, The Netherlands</td>\n      <td>Human, Chimpanzee</td>\n    </tr>\n    <tr>\n      <td>Couso, J. P., and Patraquim, P. (2017). Classification and function of small open reading frames.Nature Reviews Molecular Cell Biology 18:575\u2013589.</td>\n      <td>Spain, UK</td>\n      <td>D. melanogaster</td>\n    </tr>\n    <tr>\n      <td>Luis Villanueva-Ca\u00f1as, J., Ruiz-Orera, J., Agea, M. I., Gallo, M., Andreu, D., and Alb\u00e0, M. M. (2017). New genes and functional\u00a0innovation in mammals. Genome Biology and Evolution 9:1886\u20131900.</td>\n      <td>Spain</td>\n      <td>Mammals</td>\n    </tr>\n  </tbody>\n</table>\n\n### Instance selection\n\nInstances of the use of the word function, or its derivatives, were selected for analysis because they explicitly related to a DNA, RNA or protein object within a sentence of the abstracts. We focused on abstracts, as they present a self-contained statement of the motivations, results and conclusions of the studies and they are the text seen by most readers. Instances within article titles were not considered, neither were those where function was used as a subject, referring to bioprocesses such as: We then introduce recent findings that have opened a path to the study of the evolution of novel functions and pathways via novel genes (Ding et al., 2012). Forty-two usages (25 nouns, 12 adjectives, 3 verbs and 2 adverbs) were analyzed across 20 abstracts.\n\n### Qualitative analysis and iterative model construction\n\n#### The need for an improved model of function\n\nWe began the qualitative analysis by establishing the need for refining the selected effect/causal role binary model discussed in the philosophical literature of genomic function. First, the model has contentious philosophical implications, in particular as they relate to teleology, that have been extensively discussed (Allen and Bekoff, 1995; Manning, 1997; Buller, 2001; Roux, 2014). Second, the epistemological reduction of function into a dichotomy mutes the complex ontological relationships between the multiple ways the term can be used and, problematically, leaves theoretical assumptions and measurement constraints implicit and unspecified (Laubichler et al., 2015). Third, evidence suggests that the model has not been widely adopted by the scientists publishing in the field of de novo gene birth. For example, a Google Scholar search for \u2018\u00a0['\u2018de novo gene birth'\u2019 OR \u2018'de novo gene evolution'\u2019 OR \u2018'de novo gene emergence'\u2019 OR \u2018'de novo genes'\u2019] AND \u2018'causal role'\u2019 '\u00a0yields only 10 results in March 2019, whereas 1050 results are found when the AND clause is lacking.\n\n#### Preliminary model construction\n\nWe reasoned that it might be possible to construct a novel model of function by studying the specific uses of the word in the context of the scientific discourse about de novo evolving molecules. We thus began a series of philosophical conversations moderated by a member of our team who is a published expert in interdisciplinary rhetoric and teaches collaborative problem solving. Our objectives were three-fold: i) to reduce teleological overtones; ii) to increase the focus on how ontological relationships map to ongoing practices in biological research; and iii) to propose alternate terms that could conveniently be adopted by scientists. These conversations resulted in the construction of a preliminary theoretical model.\n\n#### Model refinement\n\nNext, we evaluated the accuracy of our preliminary model by conducting a content analysis of the use of function in a sample of the 20 abstracts in our library (Neuendorf, 2016). Individually, we interpreted the meaning of function using the context of the sentence containing the word first, and the general context of the abstract second, to attempt to assign one of the definitions from our preliminary model to each instance. Throughout this process, we identified inconsistencies between our preliminary model and the actual usages of function in the texts, leading to further refinements of the model. This process was repeated iteratively on samples consisting of up to 17 of the 20 papers in our library, until a reasonable agreement between theory and texts was reached and agreed upon by each member of our team (Neuendorf, 2016). The model that emerged from this iterative work was validated using the remaining three texts in the library. This methodology of iterative model construction is known in the social sciences as the constant comparative method of the grounded theory (Glaser and Strauss, 1967). This work resulted in a structured classification of the meanings of function specifically adapted to the de novo gene birth literature, which we named the Pittsburgh model of function after the geographical location where the model crystallized at the occasion of a collaborative retreat between our team members.\n\n#### Quantitative analysis\n\nWe used the Pittsburgh model of function to analyze whether the unspecified multiple meanings of function hinder understanding of the literature in the field of de novo gene birth. If we observed that independent readers tend to agree on which meaning was meant by the authors most of the time the term function is used, we would conclude that the multiple meanings of function are not hindering communication in the field. If, in contrast, independent readers were found to frequently interpret the same instance of function in the same sentence differently, we would conclude that the unspecified use of function leads readers to misunderstand the literature.\n\nWe proceeded to perform a quantitative content analysis of the 42 usages of the word function found in our 20 abstracts by following commonly used social scientific guidelines (Neuendorf, 2016). First, each member of the team (\u2018coders\u2019) read each of the 20 abstracts independently and assigned (\u2018coded\u2019) the relationship they interpreted between the instance and at minimum one of the meanings of function from our model. Second, discordant assignments were discussed as a group and a consensus assignment was made that took into account all perspectives.\n\nThe coding rules were defined as follows:\n\nExamples of function usage and consensus meanings assigned are shown in Table 3. The entire data set of independent and consensus assignments is available in Figure 1\u2014source data 1.\n\n**Table 3.**\n Examples of each meaning of function as assigned to instances of usage.Underlined portions of sentences serve as the contextual evidence used to assign the \u2018code\u2019, or meaning, to the bolded instances analyzed.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reference</th>\n      <th>Instance of function usage</th>\n      <th>Consensus meanings</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Wirthin et al., 2014</td>\n      <td>\u2018Here we performed a comparative analysis of 48 avian genomes to identify genomic features that are unique to songbirds, as well as an initial assessment of function by investigating their tissue distribution and predicted protein domain structure.\u2019</td>\n      <td>Expression, Capacities</td>\n    </tr>\n    <tr>\n      <td>Brylinski, 2013</td>\n      <td>A subsequent structure-based function annotation of small protein models exposes 178,745 putative protein-protein interactions with the remaining gene products in the mouse proteome, 1,100 potential binding sites for small organic molecules and 987 metal-binding signatures.</td>\n      <td>Interaction</td>\n    </tr>\n    <tr>\n      <td>Li et al., 2014</td>\n      <td>\u2018Therefore, MDF1 functions in two important molecular pathways, mating and fermentation, and mediates the crosstalk between reproduction and vegetative growth.\u2019</td>\n      <td>Physiological Implications</td>\n    </tr>\n    <tr>\n      <td>Ruiz-Orera et al., 2015</td>\n      <td>\u2018In general, these transcripts show little evidence of purifying selection, suggesting that many of them are not functional\u2019</td>\n      <td>Evolutionary Implications</td>\n    </tr>\n  </tbody>\n</table>\n",
+      "created_at": "2025-12-02T13:08:06.892867Z"
+    },
+    {
+      "id": "001782bd-e751-4176-95ef-cc12bb801b2e",
+      "submission_id": "e5cf4961-e3e9-4911-bbd4-8451b5e4f400",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Peter Rodgers, eLife United Kingdom\n\nReviewers:\n- Ford Doolittle\n- Etienne Roux\n- Lauren Cagle, University of Kentucky\n\n## Review text\n\nDOI: [10.7554/eLife.47014.010](https://doi.org/10.7554/eLife.47014.010)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"The meanings of \"function\" in biology and the problematic case of de novo evolution\" for consideration by eLife. Your article has been reviewed by four peer reviewers, and the evaluation has been overseen by the eLife Features Editor. The following individuals involved in review of your submission have agreed to reveal their identity: Ford Doolittle (Reviewer #1); Etienne Roux (Reviewer #3); Lauren Cagle (Reviewer #4).\n\nWe would like to invite you to submit a revised manuscript that addresses the points raised by the referees (please see below).\n\nRegarding point 11 from reviewer #3: please address this point by revising your manuscript so as not to present the second half of your work as a test of a hypothesis or model (rather than, for example, performing further work on other abstracts in order to attempt test your hypothesis).\n\nReviewer #1:\n\nIntroduction. The first sentence of this manuscript makes a very strong claim \u2013 not just that scientists inevitably express results in words, but that they do so \"in terms intended to persuade or impress\". At least that's how the OED in my Mac defines \"rhetorical\" and it's what scientists try NOT to do, when describing observations at least. Perhaps we never succeed in being \"objective\", and of course we do want to present theories in the best light, but the goal of science is NOT to \"intend to persuade\" in presenting data. Do authors mean to claim we never succeed in getting rid of such an intent? The second paragraph reminds us, usefully, that words mean different things to different people, which I grant \u2013 just not that any use of words is necessarily \"rhetorical\".\n\nIntroduction. I'm a little unsure why references to me (Doolittle) include my initials or middle name (Ford) while others just have the last name only. Ford is not part of my surname.\n\nIntroduction. I think it is (or should be) more correct to say that ENCODE critics like me don't so much insist that everyone use the SE definition of function, as that they be more precise about the definition they ARE using. Many genomicists and molecular biologist seem to think the \"function\" is unproblematic. This might be so if all activities arise by selection, and I think that most genomicists and molecular biologists are indeed pan-adaptationists, although not realizing it! Authors do say that something like this in the second paragraph on this page.\n\nIntroduction. I like the idea of thinking about the \"function\" of newly arising genes. I think I agree with them that the idea of a gene implies a function, but wonder whether one would say, of a newly arisen stretch of DNA with a promoter, open reading frame producing a substantially long protein with no activity whatever, and terminator, that it was not a gene? One could easily make such a thing in the lab. Would we not call it a \"gene\", or would we also require that it has a biological function?\n\nAuthors do problematize something like this, though having a de novo gene that causes cancer seems to be over-problematizing. I think many who would say \"Gene X functions in the development of cancer [or even some disease that does not itself evolve]\" would balk at saying that \"The function of gene X is to cause cancer\".\n\nNot altogether sure what they mean \"hinder scientific development\". They say (and I agree) that \"function\" and \"matter\" (as in \"Does it matter?\") are often conflated, but possibly any further definition of function will do.\n\nSubsection \u201cA model of function for de novogene birth research\u201d. Pittsburgh model seems very useful and appropriate. Was it just invented for this paper, or does it have a provenance? I think the former, but this should be made clear.\n\nSubsection \u201cThe multiple meanings of function hinder scientific development in the field of de novogene birth\u201d. Only 20 abstracts? Seems a small number, and it is unclear to me why they did not do more. Should be made very clear that all these 20 describe de novo originating genes. And actually, why not abstracts of paper in genomics/molecular biology more generally. Does the Pittsburgh model not apply equally to all?\n\nSubsection \u201cThe multiple meanings of function hinder scientific development in the field of de novogene birth. Not sure what \"consensus\" means. Did all authors get together and try to agree (which is what I think the term usually means) or did they just take the majority of independent opinions.\n\nSubsection \u201cInterpretation and recommendations\u201d. Totally agree that when the word \"function\" is used, it should be qualified, or else it should not be used.\n\nOverall, a nice paper and I very much like the \"Pittsburgh model\". As a suggestion for further work, this is fine. It could so easily have been applied to a much larger number of readers (think of grad students in different biological disciplines, for instance) that I wonder why it wasn't. Or indeed to abstracts in genomics/molecular biology more generally.\n\nReviewer #2:\n\nThe paper seeks to establish a hierarchy of clarifications for the word \"function\", to help reduce confusion. The authors propose a 5-level classification of Expression (E), Capacities (C), Interactions (I), Physiological Implications (PI), and Evolutionary Implications (EI), and then seek to classify the use of the word \"function\" in 20 papers into one of the 5 classes, or \"vague\", if it is unclear which use is meant. The four authors independently assign one of the 6 labels to each instance, and (to their surprise, it seems) find that even the authors themselves cannot agree 88% of the time which of the classes should be used. The authors conclude that this disagreement demonstrates how important their classification scheme is, but I would argue it also demonstrates that such a scheme is very unlikely to catch on.\n\nSpecific comments:\n\n1) Table 1: The classification scheme is problematic. For example, one could argue that E, C, and I could be referred to as \"biochemical activity\", not \"function\", despite the unfortunate naming of the field of \"Functional Genomics\" (which mostly concerns itself with biochemical activity). This 'activity-vs-function' distinction is consistent with the much less frequent usage in Figure 1C of these three categories compared to the last two.\n\n2) Table 1: Still on the classification scheme, one could also argue, the top contenders for the word \"function\", PI and EI are already quite extensively distinguished in the literature in the names of Selected Effect (SE) and Causal Roles (CR). SE seems to be the same as EI, in which case a new term may not be needed. CR seems to be most closely aligned with PI.\n\n3) Introduction: The paper frames itself in the context of ENCODE, and then shifts gears and focuses on the field of gene birth. The authors should take a broader perspective of the utilization of the word function in their Introduction, or take a much narrower perspective focusing on gene birth. The current Introduction distracts instead, and feels more like a bait-and-switch. If the authors choose to start with ENCODE in the Introduction, they should instead take on the task of classifying the 300-some papers by the ENCODE consortium instead.\n\n4) Figure 1: The classification task undertaken is quite modest. Given the ambitious stated goal of the paper, a much larger number of papers should be utilized, to avoid the biases that can come from small datasets.\n\n5) Figure 1: The authors should also provide the full classification by each author of each instance, to enable analysis of which terms are most confused, which are most ambiguous, which specific pairs are switched, etc. The authors should also carry out some of that analysis as well, in a larger sample.\n\n6) Figure 1: The authors should engage third-party scientists (perhaps student volunteers from a graduate program or students from a class) to read the instructions and then classify the words, in order to get a larger sample.\n\n7) Introduction: The first sentence of the third paragraph suggests a very narrow view of the debate surrounding the ENCODE project and the definition of function therein. This is probably not an area that the authors want to get into. In particular, searching for \"ENCODE debacle\" in Google Scholar returns only one paper, which has never been cited. Searching in Google returns only blog posts by Dan Graur and other angry bloggers, which is probably not the view that the authors want to align themselves with. A closer reading of the original ENCODE 2012 paper provides upfront a definition of \"biochemical function\" (which perhaps should be referred to as \"biochemical activity\", despite again the unfortunate naming of \"functional assay\" and \"functional genomics\"). It then uses that definition, and very clearly indicates that only a small fraction of the genome is under evolutionary selection. Even the criticisms of ENCODE have primarily cited the press articles written by news authors, not scientists, that claim that 80% of the genome is functional. Anyways, I would skip that whole section if the authors don't want to re-open a very large can worms.\n\n8) Introduction: The selected effect that gave rise to a trait or a genomic region may be quite different from the current functional roles of that trait or genomic region. Thus, equating function to \"selected effect\" may be inaccurate as well.\n\n9) Introduction: \"scientists cannot agree on the number of functional genes in the human genome\" is a peculiar statement to accompany the Pertea and Jungreis papers. Briefly, Pertea claims to discover thousands of new genes, Jungreis claims that Pertea made specific mistakes resulting in exclusively false positives. Yes, there is debate, but the Pertea paper is not a reference for this statement. This sentence alone indicates a lot of nonchalance on the part of the authors about dismissing the state of broad fields that they should be much more cautious about, especially in a paper that seeks to bring rigor to the field.\n\n10) Introduction, \"practically zero\". This is again a great oversimplification of a rich field of gene birth, and does not reflect well on how scholarly the authors should be.\n\n11) Introduction: \"gene\". Why choose this word, rather than \"functional\". The word \"gene\" itself has a long history of differing definitions and great debate. Once more, throwing this word around without much thought seems out of place for a paper that seeks to be scholarly.\n\n12) Subsection \u201cA model of function for de novo gene birth research\u201d. The example seems contrived. Why conflate the concept of de novo gene birth with the fact that many disease relevant mutations are not in selected elements. These should be two separate examples. Ex1: mutations that lead to disease but lie in non-conserved regions. Ex2: gene birth example.\n\n13) Subsection \u201cA model of function for de novo gene birth research\u201d: Please reword to avoid the word \"fantastic\".\n\n14) Subsection \u201cA model of function for de novo gene birth research\u201d: \"Perturbation effect\" should feature within this list. Perturbation by experimental intervention is one example. Perturbation by natural genetic variation is another. Perhaps both should be separate entries on their classification.\n\n15) Subsection \u201cA model of function for de novo gene birth research\u201d: Naming this Pittsburgh after the affiliation of the last author seems inappropriate. Does every scientist in Pittsburgh agree? Why not \"Carvunis\", since she's the only author from Pittsburgh? Why not \"our\" model, and let others name it \"the Carvunis model\".\n\n16) Table 1: Should this be a hierarchy? Why not a list of checkboxes/attributes. Different papers show evidence of one without evidence of the other.\n\n17) Table 1: Order between C and E is unclear. Perhaps capacities precede expression.\n\n18) Table 1: E: does mere presence of DNA make every DNA segment functional?\n\n19) Table 1: Selfish elements defy this classification. Distinct SE and CR 'functions'. Similarly, \"runaway selection\" for traits that are detrimental to biological functions challenges this definition. Both should be discussed.\n\n20) Page 7, second paragraph: Why not address \"surplus meaning\"? Please expand how it could be addressed. Roux 2014 also brings up many additional important points worth discussing at greater length.\n\n21)Subsection \u201cThe multiple meanings of function hinder scientific development in the field of de novo gene birth\u201d,\"only 12% were unanimous\":\n\n- need heatmap of misclassifications, table of all data.\n\n- which ones were most confused and why\n\n- this result perhaps indicates that nomenclature would not have helped, may be either too ambiguous or overspecified\n\n- an independent cohort of students / trainees / colleagues would be useful in evaluating approach\n\n- more than 20 papers would greatly help.\n\n22) Subsection \u201cThe multiple meanings of function hinder scientific development in the field of de novo gene birth\u201d. \"again supporting our hypothesis...\". Perhaps also suggesting that the proposed classification scheme does not work?\n\n23) Subsection \u201cInterpretation and recommendations\u201d: for \"older\" genes the SE and CR functions are more likely to differ, and thus focusing on gene birth may bias authors' perspective on one hand, and may also lead to non-representative results on the other hand.\n\nReviewer #3:\n\nThe authors address an interesting question regarding the philosophical issue related to the meaning(s) the word \"function\", and in particular the question whether a selective process is required to legitimate the usage of the word \"function\". Though extensive philosophical debate has occurred within the last decades, little attention has been paid to the usage of the word by the biologist themselves. The birth event of de novo gene, understood as the event that occurs prior to any selective process, is an interesting limit case to see whether biologists use or not the word \"function\" to characterize some particular properties of these genes. However, as it is presented in the manuscript, the work exhibits several conceptual and methodological weaknesses.\n\nA) The philosophical issue of de F-word:\n\n1) As stated by the authors, the philosophical debate regarding the function is about (a) what a function means and (b) how this meaning is legitimated. The (a) debate is between, as formulated by Cummins the \"How does it work?\" question (causal role theories) and the \"Why is it here?\" question (teleological-etiological theories). In the first case, legitimation is grounded on the functional (or systemic) analysis of the biological system studied, in the later one, it is grounded, for the selected effect theories, on the existence of a past selective process. Hence, in these theories, the reference to evolutionary implications is not that the effect of a trait is adaptive, but that its presence is the consequence of a past process of adaptation. What legitimates a function is the past, not the current, fitness of a trait, because current fitness is not a legitimate response at the question \"why an entity does what it does\". Regarding this question, the de novo gene occurrence, seen as a transition between no-function to function, is an interesting case. Indeed, the de novo occurrence of a trait cannot be explained by a selective effect, even if it has physiological implications, and even if it considered as adaptive (which means that it has \"positive\" physiological implications). But his critical point is not taken into account by the authors in their study, including in their definition of \"evolutionary implications\".\n\n2) Regarding the teleological-etiological theories, in parallel with the selected-effect theories of function, a new approach has emerged in the last decade, the so-called organizational approach of function (OAP). For these theories, what a function means is, as for the selected effect theories, \"Why is it here?\", but the legitimation is not grounded on a selective process but on organizational properties, basically the existence of a causal loop between the causal role of a trait in the self-maintenance of the system, and the production and maintenance of a trait by the system. The application of this theory to the case of de novo gene birth is interesting, but there is no reference to this theory of function in the manuscript.\n\n3) Taking into account the philosophical issue of the F-word, the emergence of de novo genes is problematic only for the supporters of the selected-effect theories; it is not for the advocates of the causal role theory and the OAP. Indeed, the main critic of the OAP against the selected effect theory is precisely that this theory cannot account for the emergence of function. The title is hence rather misleading, since it refers to a privileged theory of function. The word \"evolution\" is, in the same idea, also confusing. Why use it rather than emergence? Indeed, if the de novo emergence of gene \"function\" has anything specific regarding the F-word philosophical issue, it is that it is de novo, i.e., it has not (or not yet) been submitted to an past selective pressure. If the existence of de novo genes and their effects can be interpreted as a consequence of a selective pressure, they are no longer \"de novo\". The meaning of \"evolution\", used for de novo gene, should be precise. If it precisely means the birth event of a new gene, this event occurs prior to any selection, because selection can act only by differential screening between already existing traits. In this meaning, \"emergence\" seems more adequate.\n\nB) Semantic plurality of the F-word and conceptual confusion.\n\n4) The authors claim that the existence of several meanings of \"function\" is a source of confusion between biologists, but there is no reported evidence of such a confusion. Actually, the word \"function\" is used in biological sciences at least from the sixteenth century, without particular debates within the biologist about what this word means. The fact that there is a philosophical debate about the legitimacy of the meaning of a notion like \"function\", and the fact that this notion is a useful or a confusing conceptual tool is 2 different questions. The authors should precise if the object of their work is to contribute to the philosophical debate by clarifying the meaning of the concept by the biologists, or to highlight to existence of real confusion or discrepancies in the usage of the word by the biologists, specifically in the field of de novo gene research.\n\n5) In their rhetorical analysis, the authors have considered that the meaning of \"function\" is similar when it is used as a name (\"assessment of function\"), a verb (MDF1 functions in two important pathways\"), and adjective (\"functional\"). However, some philosophers have pointed out that \"a function\", \"to function\", and \"functional\" have different meanings, expressed by different words in other languages than English. For example, in the cited though experiment, scientist who may be reluctant to say that \"the function of the pro-oncogenic gene is to generate cancer\", but agree to say that \"the function of the anti-oncogenic gene is to prevent cancer\", would agree to say that both genes are \"functional\". The authors should provide the numbers of instances of the different words used and justify that there is no different meanings statistically associated to the name, the verb and the adjective.\n\n6) The existence of different meanings of a notion does not necessarily imply that the notion is conceptually confusing, if the different meanings are complementary and not contradictory. Actually, the fact that the authors have been able to attribute, according to the \"Pittsburg model of function\", identified meanings to the usage of the term \"function\" can be interpreted as a proof that the word is not so confusing. Additionally, the presentation of the \"Pittsburg model of function\" in table 1 show causal relationships between the different meanings, symbolized by arrows from the lowest line (expression) to the highest (evolutionary implication). It seems to me that these arrows are a \"surplus meaning\" added by the authors from their rhetorical analyses, rather than relationships identified by the rhetorical analysis itself, but, anyway, as it is presented, the \"Pittsburg model of function\" is nothing more than the classical bottom-up view of causal relationships \"from genes to function\".\n\n7) I do not understand on which argument the authors can say that the data presented in Figure 1 support the idea that the literature is hard to interpret. As said previously, if the different meanings are causally subordinated, the interpretation of the data does not seem so difficult, including in the fact that different meanings can be embedded in the term \"function\". Can the authors provide examples of misinterpretations?\n\n8) Regarding the usage of the word \"function\", the main conclusion of the rhetorical analysis is that the large majority of the meanings are physiological implications and evolutionary implications, which represent almost all of the instances (40 on 42). The authors should discuss the implications of such a rather \"integrative\" or \"high level\" meaning of function on the philosophical debate about what a function mean. The fact that, as stated by the authors, \"evidently, neither technique gives direct insights into evolutionary implications\" should also be discussed. Do the authors consider that this methodological difference impacts the legitimation of the meaning of function?\n\nC) Methods\n\n9) Methodologically, the fact that the literature has been studied only on abstracts, and not on the full papers, is a serious limitation of the work. Why the authors haven't work on the full papers? In particular, the \"vague\" classification on abstracts may be not so vague in the full paper. The number of abstracts is also small, as is the number of coders.\n\n10) Another problem is how the abstracts have been selected. A sample can be considered as representative only if it had been randomly picked up, which is not the case in the study. At the best, it can be considered as illustrative. Is the fact that the person who selected the abstracts is an \"expert in the field\" supposed to be, by itself, a guarantee of objectivity?\n\n11) Another important methodological limitation is the fact that the sample of abstracts has been used to build the model, to validate it, and to use it is basically the same; indeed, 17 of the 20 abstracts where used for model refinement, and the remaining 3 for its validation. After that, the same 20 abstracts where used for quantitative analysis and \"hypothesis testing\". I do not clearly see what are the tested hypotheses? But the fact that the same set of material and the same set of coders where used all along the process it for me a serious methodological limitation.\n\n12) Taking together, these methodological considerations greatly impact the accuracy of the study. Independently from these methodological limitations, the question arises of how such a methodology brings novel insights is the F-word issue, and, in particular, the real value of the so-called \"Pittsburg model of function\". As said before, its presentation in table 1 seems no more than the classical bottom-up \"layer cake\" view of stratified levels of organization, from molecules to organisms interacting with their environmental conditions (which is, by the way, seriously challenged by several philosophical studies). The authors should hence precise what is new in the so-called \"model\", either philosophically or conceptually.\n\nReviewer #4:\n\nGeneral assessment: this manuscript is an important and thoroughly argued contribution to eLife. It is particularly notable how accessibly the manuscript is written for a multi-disciplinary audience. The arguments are timely, and the need for this work is justified in the opening section. The description of the findings and later description of the approach are detailed and explanatory, with interpretation provided as relevant. I highly recommend this piece for publication.\n\n[Editors' note: further revisions were requested prior to acceptance, as described below.]\n\nThank you for submitting the revised version of \"The meanings of 'function' in biology and the problematic case of de novo gene emergence\". This version has been seen by two of the reviewers who reviewed the original version (Ford Doolittle \u2013 Reviewer #1; Etienne Roux \u2013 Reviewer #3), and their comments are below. I would like to invite you to submit a second revised version that addresses these comments, and also the additional comments listed below them.\n\nReviewer #1:\n\nI still wish that the authors had looked at more than 20 abstracts, but the writing is very clear and the intellectual clarification this promises is enough, in my view, to justify publication. And I'm sure that many in future will refer (if sometimes critically) to the \"Pittsburgh Model of Function\". So, I think this can be published as is, though I have these residual quibbles.\n\n1) They say, of the top level in that model, that.\u2026\"Evolutionary Implications can refer to selection upon a trait driven by the object in the past, as in selected effect (Millikan, 1989), but it can equally describe novel adaptive effects, as one may expect in gene birth.\" Not sure what an \"adaptive effect\" is. If selection is a force and the effect is fitness-enhancing in environment E, then from the very instant that organism O finds itself in E, this \"adaptive effect\" is under selection, though possibly only purifying selection if it was previously fixed in another environment, where it had no, or another, effect on fitness. If selection is an outcome, then nothing is a selected effect unless actual mutations have actually been eliminated by purifying selection just yesterday, which seems silly. Any species emerging from a bottleneck has no functions, by that account.\n\n2) The statement \"For a genomic sequence to be labelled as a gene, it must by definition have a function.\" needs some further elaboration or justification (as in the response to reviewers.\n\n3) And to say \"The molecular objects of study are thus transitioning between a state without a function and a state with a function. They cannot have a function by the selected effect definition, since their existence cannot be explained by a past selection.\" seems a little problematic. If by a \"new gene\" one means a gene that was never detected in any other species, but it is fixed in the species in which it is detected, and that species has a reasonable population size, then it likely was selected for, in that species, even if we do not know why. And I suspect that most of the literature on de novo genes describes such situations, not situations in which the \"new gene\" is a rare polymorphism in the species in which it is described. So it's really only the parent of the new gene that is not a gene: at the very instant that a replicate of this non-gene parent starts to increase in frequency in its population because of a fitness advantage to its bearers, it has acquired 'function' and becomes a bona fide gene, I think. I don't see this as a gradual process or transition, which the authors in their next paragraph, seem to imply. Of course this could lead further into a discussion of whether selection is a force or an outcome or whatever, and what does fitness mean anyway, but I don't think authors need to go there to be clearer on this point.\n\nReviewer #3:\n\nThe authors have greatly improved the quality of the manuscript and correctly respond to the majority of my comments. There is however 2 points for which the response given by the authors let me unsatisfied.\n\n1) The first one is about the hierarchical relationships introduced by the authors in their model, and symbolized by ascendant arrows in Table 1. Since, as acknowledged by the authors, these relationships are a \"surplus\" meaning injected in, and not extracted from, the rhetorical analysis (so the model is not purely data-driven), the question remains of where this surplus meaning comes from, and why is it needed. As I have said in my initial comment, this view of hierarchically organized relationships is not new, and corresponds to the classical bottom-up causal relationships from lower (gene) to higher level of organization. This is not a question of logic, but a question of causal relationship between different levels of properties, similar to the classical causal relationship usually expressed by arrows from gene to proteins to pathways to subcellular mechanisms to cells to tissues to organs, etc. (see for example Noble, 2006). Saying so, I do not mean that the model is irrelevant, but that, since the authors privilege a bottom-up view of causal relationships between properties expressed at different level of organization which is not consensual, they should be more explicit about the import of this causal pattern in their model (including bibliographical references) and its justification. Also, some expressions seem misleading or inappropriate. For example, I don't see what is a \"logical flow of genetic information\" from lower to upper levels of organizational properties, and top-down causal relationships also exist (typically, gene expression is a consequence of interactions). The notion of \"spatiotemporal relationship between concepts\" does not seem to me relevant. First, the spatiotemporal relationships to which the authors refer are between properties of biological entities, not between concepts, and, in the case of de novo gene, the spatiotemporal relationship between interactions and expression is primarily from interaction to expression, not the opposite, since the expression of a de novo gene cannot occur without prior interaction of the DNA segment with a lot of different proteins involved in a complex interaction network.\n\nIf we admit the relevance of the directional necessary-but-not sufficient causal relationship between from Expression to Evolutionary implications, it can be logically inferred that each level of meaning of function is inclusive of all the meanings of lower levels. The authors should be more explicit in which way this modifies a model of function, compared to a model without these hierarchical relationships (basically, they should explain why they have chosen to add this hierarchical relationship and how it improves the model). Since previous studies have already identified different notions of functions (see for example Wouters, 2003), the authors should refer to these previous studies in their discussion.\n\n2) The second point is about the claim, which is also a section of the article, that \"The multiple meanings of function hinder scientific communication in the field of de novo gene birth\". As I have previously explained, I don't think that, from a biologist viewpoint, the notion of function is confusing, and that is impairs the scientific communication. However, the point is not that I disagree with the authors, but is that the study of the authors provides no evidence for such a claim. The only factual evidence is that, in a set of four encoders, among whom one is an expert is the field, one non-consensual case remains on the 20 abstracts analyzed. Due to the numerous limitations of the study, both in its conception and methodology, these results are clearly unsubstantial; also, non-consensus and discrepancies between members can be interpreted as the inability of the so-called Pittsburg model to account for the actual use of the concept by the researchers themselves. Due to all these limitations, I find such a claim, and the final recommendations, an overinterpretation of the results and, in my opinion, should be removed, or at least reformulated in a less affirmative way.\n",
+      "created_at": "2025-12-02T13:08:06.892867Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T13:08:06.892867Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T13:08:06.892867Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "686caa42-2c42-4cba-b982-ee5cff12692b",
+      "content_id": "82cdf482-07e5-4b1b-a503-e8e0ec304a24",
+      "claim_id": "C1",
+      "claim": "The word function has many different meanings in molecular biology.",
+      "claim_type": "EXPLICIT",
+      "source": "The word function has many different meanings in molecular biology.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the abstract as a primary assertion of the paper.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:08:06.892867Z"
+    },
+    {
+      "id": "71e81b52-f706-4413-8720-0114d00a7252",
+      "content_id": "82cdf482-07e5-4b1b-a503-e8e0ec304a24",
+      "claim_id": "C2",
+      "claim": "The analysis of function meanings is based on 20 abstracts from de novo gene birth research.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on an analysis of 20 abstracts we propose a simple lexicon that, we believe, will help scientists and philosophers discuss the meaning of function more clearly.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract explicitly states the sample size and methodology.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:08:06.892867Z"
+    },
+    {
+      "id": "453c5439-4d5c-4bfd-b6d5-a9a795455429",
+      "content_id": "82cdf482-07e5-4b1b-a503-e8e0ec304a24",
+      "claim_id": "C3",
+      "claim": "The scientific enterprise is inherently rhetorical.",
+      "claim_type": "EXPLICIT",
+      "source": "The scientific enterprise is inherently rhetorical (Condit, 1999; Fahnestock, 2002; Ceccarelli, 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to three scholarly works on the rhetoric of science.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:08:06.892867Z"
+    },
+    {
+      "id": "e544068c-7d62-403b-82d3-784571b44b37",
+      "content_id": "82cdf482-07e5-4b1b-a503-e8e0ec304a24",
+      "claim_id": "C4",
+      "claim": "Language influences how we communicate, think, and practice science.",
+      "claim_type": "EXPLICIT",
+      "source": "Language influences how we communicate, how we think, and how we practice science.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general assertion about the role of language in science, drawing on established understanding in rhetoric and communication studies.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:08:06.892867Z"
+    },
+    {
+      "id": "82f33aea-2538-4b3d-baa0-0849bca2567d",
+      "content_id": "82cdf482-07e5-4b1b-a503-e8e0ec304a24",
+      "claim_id": "C5",
+      "claim": "Confusion and conflict can arise when the same word is understood differently by authors and readers.",
+      "claim_type": "EXPLICIT",
+      "source": "In practice, however, confusion and even conflict can arise when the same word is understood differently by authors and readers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is presented as a general principle about scientific communication.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:08:06.892867Z"
+    },
+    {
+      "id": "1f3bea92-20db-45c8-ad97-f6a3ed184c47",
+      "content_id": "82cdf482-07e5-4b1b-a503-e8e0ec304a24",
+      "claim_id": "C6",
+      "claim": "A reader's interpretation of a word depends on factors including their field of training, country of origin, birth decade, and metaphysical presuppositions.",
+      "claim_type": "EXPLICIT",
+      "source": "What is their field of training? In what country did they grow up? In what decade were they born? What are their metaphysical presuppositions? All these and countless other factors act as a filter between the words themselves and the meanings that readers assign to them.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on general understanding of how context affects interpretation.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:08:06.892867Z"
+    },
+    {
+      "id": "dd0f4d08-7141-4ada-812b-e378ed07f6a7",
+      "content_id": "82cdf482-07e5-4b1b-a503-e8e0ec304a24",
+      "claim_id": "C7",
+      "claim": "The ENCODE Project debate about what fraction of the human genome is functional was prompted by different interpretations of the word 'functional'.",
+      "claim_type": "EXPLICIT",
+      "source": "A striking example of different interpretations of words leading to controversy was the debate, prompted by the first papers from the ENCODE Project, about what fraction of the human genome is 'functional'. Is it approximately 80%, as suggested by biochemical evidence, or is it closer to 10%, as it appears from evolutionary evidence (The ENCODE Project Consortium, 2012; Doolittle, 2013; Graur et al., 2013; Kellis et al., 2014)?",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to the ENCODE papers and subsequent debate papers.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:08:06.892867Z"
+    },
+    {
+      "id": "50b36ae5-2f22-4f17-8bef-e54e7461b7f4",
+      "content_id": "82cdf482-07e5-4b1b-a503-e8e0ec304a24",
+      "claim_id": "C8",
+      "claim": "For most evolutionary biologists, function relates to selection (the effect for which the gene was selected in the past at the organismal level).",
+      "claim_type": "EXPLICIT",
+      "source": "For most evolutionary biologists, function relates to selection (that is, the effect for which the gene was selected in the past at the organismal level).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is presented as a characterization of how evolutionary biologists typically understand function.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:08:06.892867Z"
+    },
+    {
+      "id": "fcec967f-41c7-43c8-a1a3-34e8fab63772",
+      "content_id": "82cdf482-07e5-4b1b-a503-e8e0ec304a24",
+      "claim_id": "C9",
+      "claim": "For most molecular geneticists and biochemists, function is generally associated with a molecule's activity (such as catalysis or binding), independent of historical factors.",
+      "claim_type": "EXPLICIT",
+      "source": "For most molecular geneticists and biochemists, it is generally associated with a molecule's activity (such as catalysis or binding), independent of the historical factors that led to its existence.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is presented as a characterization of how molecular geneticists and biochemists typically understand function.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:08:06.892867Z"
+    },
+    {
+      "id": "ceb8ed25-30df-4ee1-b294-926273a1ec16",
+      "content_id": "82cdf482-07e5-4b1b-a503-e8e0ec304a24",
+      "claim_id": "C10",
+      "claim": "Some argue that the evolutionary meaning of function is the only one relevant for DNA sequences.",
+      "claim_type": "EXPLICIT",
+      "source": "Yet some argue that the evolutionary meaning of function is the only one that is relevant for DNA sequences (Graur et al., 2013) and that when referring to other meanings scientists should use other words such as 'effect' or 'activity' (Doolittle et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Graur et al., 2013 and Doolittle et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:08:06.892867Z"
+    },
+    {
+      "id": "39e70a8f-66bb-40c0-bbd1-e1fa58fbb904",
+      "content_id": "82cdf482-07e5-4b1b-a503-e8e0ec304a24",
+      "claim_id": "C11",
+      "claim": "The debate about function echoes an ongoing conversation in the philosophy of science.",
+      "claim_type": "EXPLICIT",
+      "source": "This position, and the arguments against it, echo an ongoing conversation in the philosophy of science (Cummins, 1975; Millikan, 1989; Neander, 1991; Amundson and Lauder, 1994; Garson, 2011; Griffiths, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to multiple philosophical works.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:08:06.892867Z"
+    },
+    {
+      "id": "2151c297-6387-482c-adc1-a1e33687ce5d",
+      "content_id": "82cdf482-07e5-4b1b-a503-e8e0ec304a24",
+      "claim_id": "C12",
+      "claim": "The philosophical conversation about function divides those who argue function should mean why an entity does what it does (selected effect definition) and those who argue it can also mean what an entity does (causal role definition).",
+      "claim_type": "EXPLICIT",
+      "source": "In brief, the conversation divides those who argue function should mean why an entity does what it does (the selected effect definition of function) and those who argue it can also mean what an entity does (the causal role definition of function) (Laubichler et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim summarizes philosophical positions and is supported by citation to Laubichler et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:08:06.892867Z"
+    },
+    {
+      "id": "d77b6cb4-2159-4815-bde5-430eb2ceb8fe",
+      "content_id": "82cdf482-07e5-4b1b-a503-e8e0ec304a24",
+      "claim_id": "C13",
+      "claim": "Function strictly defined as selected effect is the historical explanation for the existence of an entity.",
+      "claim_type": "EXPLICIT",
+      "source": "Function strictly defined as selected effect is the historical explanation for the existence of an entity (Millikan, 1989).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim defines a philosophical position and is supported by citation to Millikan, 1989.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:08:06.892867Z"
+    },
+    {
+      "id": "80b0c0bc-1eba-4740-a779-9a6e9f3ad2ca",
+      "content_id": "82cdf482-07e5-4b1b-a503-e8e0ec304a24",
+      "claim_id": "C14",
+      "claim": "Function as causal role is ahistorical and describes the contribution of an entity to a complex system.",
+      "claim_type": "EXPLICIT",
+      "source": "Function as causal role is ahistorical and describes the contribution of an entity to a complex system (Cummins, 1975).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim defines a philosophical position and is supported by citation to Cummins, 1975.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:08:06.892867Z"
+    },
+    {
+      "id": "d66cbd3b-6d52-4c3f-860c-deee2d4bad88",
+      "content_id": "82cdf482-07e5-4b1b-a503-e8e0ec304a24",
+      "claim_id": "C15",
+      "claim": "Other theories of biological function have been proposed beyond selected effect and causal role perspectives.",
+      "claim_type": "EXPLICIT",
+      "source": "Other theories of biological function have been proposed (Wouters, 2003; Mossio et al., 2009; Roux, 2014), but the selected effect/causal role perspectives have dominated the conversation in the context of genomics.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to alternative theoretical frameworks.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:08:06.892867Z"
+    },
+    {
+      "id": "21596913-3bb6-4991-8cbc-d2a065be71f7",
+      "content_id": "82cdf482-07e5-4b1b-a503-e8e0ec304a24",
+      "claim_id": "C16",
+      "claim": "The selected effect/causal role perspectives have dominated the conversation about function in the context of genomics.",
+      "claim_type": "EXPLICIT",
+      "source": "Other theories of biological function have been proposed (Wouters, 2003; Mossio et al., 2009; Roux, 2014), but the selected effect/causal role perspectives have dominated the conversation in the context of genomics.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an assertion about the state of the field based on the authors' assessment.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:08:06.892867Z"
+    },
+    {
+      "id": "60fe2a31-bcc8-4493-8246-e2c947af2ebb",
+      "content_id": "82cdf482-07e5-4b1b-a503-e8e0ec304a24",
+      "claim_id": "C17",
+      "claim": "The debate about function has sparked thoughtful studies that have advanced thinking at the interface of evolutionary biology and genomics.",
+      "claim_type": "EXPLICIT",
+      "source": "Far from a fruitless dispute over semantics, the rhetorico-scientific debate has sparked a number of thoughtful studies that have advanced thinking at the interface of evolutionary biology and genomics.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by subsequent citations to specific studies.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:08:06.892867Z"
+    },
+    {
+      "id": "a620a678-bf45-4086-91c5-6924cccf7f08",
+      "content_id": "82cdf482-07e5-4b1b-a503-e8e0ec304a24",
+      "claim_id": "C18",
+      "claim": "One study interrogates the relationship between organismal complexity and the number of functional elements in a genome.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, one study interrogates the relationship between organismal complexity and the number of functional elements in a genome (Doolittle, 2013)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Doolittle, 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:08:06.892867Z"
+    },
+    {
+      "id": "9f07d716-fe5c-4193-a455-729d72edfcf8",
+      "content_id": "82cdf482-07e5-4b1b-a503-e8e0ec304a24",
+      "claim_id": "C19",
+      "claim": "One study highlights the discrepancies between different lines of evidence used to infer functionality of DNA loci.",
+      "claim_type": "EXPLICIT",
+      "source": "another highlights the discrepancies between different lines of evidence used to infer functionality of DNA loci (Kellis et al., 2014)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Kellis et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:08:06.892867Z"
+    },
+    {
+      "id": "361055a8-2a47-4288-a886-b4ad9d4af2f8",
+      "content_id": "82cdf482-07e5-4b1b-a503-e8e0ec304a24",
+      "claim_id": "C20",
+      "claim": "One study refines the evolutionary classifications of genomic functions.",
+      "claim_type": "EXPLICIT",
+      "source": "and another refines the evolutionary classifications of genomic functions (Graur et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Graur et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:08:06.892867Z"
+    },
+    {
+      "id": "7b74c904-d8d6-438c-91c7-a81d5fb8777e",
+      "content_id": "82cdf482-07e5-4b1b-a503-e8e0ec304a24",
+      "claim_id": "C21",
+      "claim": "Only a small fraction of biologists, mostly evolutionary biologists, are aware of the rhetorical context about function.",
+      "claim_type": "EXPLICIT",
+      "source": "However, only a small fraction of biologists \u2013 mostly evolutionary biologists \u2013 are aware of the rhetorical context.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an assertion about the state of awareness in the field.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:08:06.892867Z"
+    },
+    {
+      "id": "616c0296-1e39-462f-be15-a02f2d73dca9",
+      "content_id": "82cdf482-07e5-4b1b-a503-e8e0ec304a24",
+      "claim_id": "C22",
+      "claim": "Most scientific publications do not explicitly include a definition of 'function' to clarify the meaning of reported findings.",
+      "claim_type": "EXPLICIT",
+      "source": "Most scientific publications do not explicitly include a definition of 'function' to clarify the meaning of the reported findings.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation about scientific practice that will be supported by the subsequent analysis.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:08:06.892867Z"
+    },
+    {
+      "id": "3964d1c7-fa8f-4001-a09d-d1e914c72540",
+      "content_id": "82cdf482-07e5-4b1b-a503-e8e0ec304a24",
+      "claim_id": "C23",
+      "claim": "In biological research there is a conflation between what is 'functional' and what 'matters'.",
+      "claim_type": "EXPLICIT",
+      "source": "For better or worse, in biological research there is a conflation between what is 'functional' and what 'matters'.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an assertion about scientific practice and values.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:08:06.892867Z"
+    },
+    {
+      "id": "f2b02433-1228-42de-a94e-b1f4735141c6",
+      "content_id": "82cdf482-07e5-4b1b-a503-e8e0ec304a24",
+      "claim_id": "C24",
+      "claim": "Only genomic sequences deemed 'functional' are worthy of being curated by reference databases, named, cloned, or incorporated into grant proposals for mechanistic studies.",
+      "claim_type": "EXPLICIT",
+      "source": "Only those genomic sequences deemed 'functional' are worthy of being curated by reference databases, of being named, cloned or incorporated into grant proposals for mechanistic studies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation about how the concept of function influences scientific practice.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:08:06.892867Z"
+    },
+    {
+      "id": "0f9ee4f7-4827-43e0-b083-6577d856a879",
+      "content_id": "82cdf482-07e5-4b1b-a503-e8e0ec304a24",
+      "claim_id": "C25",
+      "claim": "Scientists cannot agree on the number of functional genes in the human genome.",
+      "claim_type": "EXPLICIT",
+      "source": "Today, scientists cannot agree on the number of functional genes in the human genome (Pertea et al., 2018; Jungreis et al., 2018)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to two papers with presumably different estimates.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:08:06.892867Z"
+    },
+    {
+      "id": "f4f4acb3-65d0-4401-8ae3-7487967685f5",
+      "content_id": "82cdf482-07e5-4b1b-a503-e8e0ec304a24",
+      "claim_id": "C26",
+      "claim": "Scientists cannot agree on what evidence should be required to elevate noncoding RNAs from mere transcriptional noise to functional regulatory elements.",
+      "claim_type": "EXPLICIT",
+      "source": "or on what evidence should be required to elevate noncoding RNAs from mere transcriptional noise to functional regulatory elements (Doolittle, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Doolittle, 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:08:06.892867Z"
+    },
+    {
+      "id": "b6f5e719-2bb2-48ef-a720-2887b63664d5",
+      "content_id": "82cdf482-07e5-4b1b-a503-e8e0ec304a24",
+      "claim_id": "C27",
+      "claim": "Some have pleaded for the community to deal with the 'F-word' urgently.",
+      "claim_type": "EXPLICIT",
+      "source": "The general confusion about what exactly is meant by 'function' across the literature is such that some have pleaded for the community to deal with the 'F-word' urgently (Doolittle et al., 2014; Doolittle, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Doolittle et al., 2014 and Doolittle, 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:08:06.892867Z"
+    },
+    {
+      "id": "8cef4860-366d-4f6c-bf59-55ccb78b8d67",
+      "content_id": "82cdf482-07e5-4b1b-a503-e8e0ec304a24",
+      "claim_id": "C28",
+      "claim": "The field of de novo gene birth attempts to understand how new 'functional' genes can emerge without having derived from another gene as their ancestor.",
+      "claim_type": "EXPLICIT",
+      "source": "This field attempts to understand how new 'functional' genes can emerge without having derived from another gene as their ancestor.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the research focus of the de novo gene birth field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:08:06.892867Z"
+    },
+    {
+      "id": "b7d94dda-6812-41ea-ab92-9ddbb1bdc31a",
+      "content_id": "82cdf482-07e5-4b1b-a503-e8e0ec304a24",
+      "claim_id": "C29",
+      "claim": "The process of de novo gene birth was long thought to be implausible on the basis that the probability that a functional protein would appear de novo by random association of amino acids is practically zero.",
+      "claim_type": "EXPLICIT",
+      "source": "The process of de novo gene birth was long thought to be implausible on the basis that, as Francois Jacob wrote: \"the probability that a functional protein would appear de novo by random association of amino acids is practically zero\" (Jacob, 1977).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Jacob, 1977.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:08:06.892867Z"
+    },
+    {
+      "id": "68fc0282-a627-4005-a4f2-19e1980f4d4c",
+      "content_id": "82cdf482-07e5-4b1b-a503-e8e0ec304a24",
+      "claim_id": "C30",
+      "claim": "The explosion of new genome sequences has revealed that many genes have species- or lineage-specific sequences, suggesting they lack gene ancestors.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the explosion of new genome sequences has revealed that many genes have species- or lineage-specific sequences (Khalturin et al., 2009), suggesting that they lack gene ancestors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Khalturin et al., 2009 and represents an inference from genomic data.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:08:06.892867Z"
+    },
+    {
+      "id": "c1ed52db-bf43-4b07-be67-7945af42026e",
+      "content_id": "82cdf482-07e5-4b1b-a503-e8e0ec304a24",
+      "claim_id": "C31",
+      "claim": "Studies of a growing number of individual gene candidates have confirmed their de novo emergence.",
+      "claim_type": "EXPLICIT",
+      "source": "Studies of a growing number of individual gene candidates have confirmed their de novo emergence, fueling many genomic and evolutionary studies to evaluate the scale and mechanisms of the de novo gene birth phenomenon (Tautz and Domazet-Lo\u0161o, 2011; McLysaght and Hurst, 2016; Van Oss and Carvunis, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to review papers summarizing the field.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:08:06.892867Z"
+    },
+    {
+      "id": "0281bb68-566e-4053-bd1a-c09659c55554",
+      "content_id": "82cdf482-07e5-4b1b-a503-e8e0ec304a24",
+      "claim_id": "C32",
+      "claim": "The meanings of function are at the heart of what constitutes a de novo gene birth event.",
+      "claim_type": "EXPLICIT",
+      "source": "The meanings of function are at the heart of what constitutes a de novo gene birth event.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a central thesis of the paper.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:08:06.892867Z"
+    },
+    {
+      "id": "8704a73d-5bc4-4989-aa7d-68f3fdd11049",
+      "content_id": "82cdf482-07e5-4b1b-a503-e8e0ec304a24",
+      "claim_id": "C33",
+      "claim": "For a genomic sequence to be labelled as a gene, it must by definition have a function.",
+      "claim_type": "EXPLICIT",
+      "source": "For a genomic sequence to be labelled as a gene, it must by definition have a function; it must express a product that participates in cellular processes and affects phenotypes in a way that is being maintained by selection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is presented as a definitional requirement in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:08:06.892867Z"
+    },
+    {
+      "id": "eb400593-e7d3-4382-be48-95c84d621b82",
+      "content_id": "82cdf482-07e5-4b1b-a503-e8e0ec304a24",
+      "claim_id": "C34",
+      "claim": "A gene must express a product that participates in cellular processes and affects phenotypes in a way that is being maintained by selection.",
+      "claim_type": "EXPLICIT",
+      "source": "For a genomic sequence to be labelled as a gene, it must by definition have a function; it must express a product that participates in cellular processes and affects phenotypes in a way that is being maintained by selection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is presented as part of the definition of a gene.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:08:06.892867Z"
+    },
+    {
+      "id": "b9e613b2-b353-45ce-8ebb-7a4f587d7f41",
+      "content_id": "82cdf482-07e5-4b1b-a503-e8e0ec304a24",
+      "claim_id": "C35",
+      "claim": "If a gene has evolved de novo, the locus it came from by definition was not a gene and did not have a function, or at least not a function of the same nature.",
+      "claim_type": "EXPLICIT",
+      "source": "If such a gene has evolved de novo, the locus it came from by definition was not a gene, thus did not have a function, or at least not a function of the same nature as the one the new gene has.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference from the definition of de novo gene birth.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:08:06.892867Z"
+    },
+    {
+      "id": "7b388181-f3fb-4a7a-8977-ef42d612aebb",
+      "content_id": "82cdf482-07e5-4b1b-a503-e8e0ec304a24",
+      "claim_id": "C36",
+      "claim": "The molecular objects of study in de novo gene birth are transitioning between a state without a function and a state with a function.",
+      "claim_type": "EXPLICIT",
+      "source": "The molecular objects of study are thus transitioning between a state without a function and a state with a function.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a characterization of the nature of de novo gene birth.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:08:06.892867Z"
+    },
+    {
+      "id": "372248f9-1cbb-478a-b18b-ab6783850af4",
+      "content_id": "82cdf482-07e5-4b1b-a503-e8e0ec304a24",
+      "claim_id": "C37",
+      "claim": "De novo emerging sequences cannot have upon birth a function by the strict selected effect definition, since their existence cannot have been caused historically by past selection.",
+      "claim_type": "EXPLICIT",
+      "source": "They cannot have upon birth a function by the strict selected effect definition (Millikan, 1989), since their existence cannot have been caused historically by a past selection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference from the selected effect definition and is supported by citation to Millikan, 1989.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:08:06.892867Z"
+    },
+    {
+      "id": "37c2db1c-fc9e-41a6-a3f8-0b53f4075d69",
+      "content_id": "82cdf482-07e5-4b1b-a503-e8e0ec304a24",
+      "claim_id": "C38",
+      "claim": "The transformative nature of the de novo emergence process renders the debates about when and how a locus actually becomes functional highly contentious.",
+      "claim_type": "EXPLICIT",
+      "source": "The transformative nature of the de novo emergence process thus renders the debates about when and how a locus actually becomes functional highly contentious.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an assertion about the state of debate in the field.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:08:06.892867Z"
+    },
+    {
+      "id": "6fdb1cb3-5791-4a06-81ff-267262afc346",
+      "content_id": "82cdf482-07e5-4b1b-a503-e8e0ec304a24",
+      "claim_id": "C39",
+      "claim": "The de novo field is interdisciplinary and relatively young.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to these fundamental considerations, the de novo field is interdisciplinary and relatively young.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a characterization of the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:08:06.892867Z"
+    },
+    {
+      "id": "25ddae06-27f1-485c-a05d-43150c6d11ec",
+      "content_id": "82cdf482-07e5-4b1b-a503-e8e0ec304a24",
+      "claim_id": "C40",
+      "claim": "The de novo field is rich in diverse perspectives and trainings.",
+      "claim_type": "EXPLICIT",
+      "source": "It is therefore rich in diverse perspectives and trainings, and de novo researchers lack a commonly accepted jargon.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the interdisciplinary nature of the field.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:08:06.892867Z"
+    },
+    {
+      "id": "b3a27938-ae7b-4fe3-8374-e6405621ef1f",
+      "content_id": "82cdf482-07e5-4b1b-a503-e8e0ec304a24",
+      "claim_id": "C41",
+      "claim": "De novo researchers lack a commonly accepted jargon.",
+      "claim_type": "EXPLICIT",
+      "source": "It is therefore rich in diverse perspectives and trainings, and de novo researchers lack a commonly accepted jargon.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation about the state of the field.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:08:06.892867Z"
+    },
+    {
+      "id": "90eb0c5d-82b9-4f71-aed3-65fb29565d34",
+      "content_id": "82cdf482-07e5-4b1b-a503-e8e0ec304a24",
+      "claim_id": "C42",
+      "claim": "De novo gene evolution is a well-suited test bed to evaluate what meanings of function are circulating in the field and whether the meanings of function hinder scientific communication.",
+      "claim_type": "EXPLICIT",
+      "source": "All these challenges make de novo gene evolution a well-suited test bed to evaluate what meanings of function are circulating in this field and whether, and to what extent, the meanings of function hinder scientific communication.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a rationale for the study design.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:08:06.892867Z"
+    },
+    {
+      "id": "8f56a5a8-c835-48df-93a0-80912be9e7c1",
+      "content_id": "82cdf482-07e5-4b1b-a503-e8e0ec304a24",
+      "claim_id": "C43",
+      "claim": "Authors writing about the function of a molecular object in the analyzed abstracts were almost always describing one or more of five properties: Expression, Capacities, Interactions, Physiological Implications and Evolutionary Implications.",
+      "claim_type": "EXPLICIT",
+      "source": "Through an organized, iterative process of defining and discussing usages of the term, we inductively converged on the interpretation that, in this set of abstracts, authors writing about the function of a molecular object were almost always describing one or more of the following properties of the object: Expression, Capacities, Interactions, Physiological Implications and Evolutionary Implications.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the qualitative analysis of abstracts.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:08:06.892867Z"
+    },
+    {
+      "id": "45057bbb-10f8-46f4-a4b4-3ee085bf688f",
+      "content_id": "82cdf482-07e5-4b1b-a503-e8e0ec304a24",
+      "claim_id": "C44",
+      "claim": "The hierarchical order of the meanings in the Pittsburgh model was inspired from a reductionist interpretation of the flow of genetic information over time and space.",
+      "claim_type": "EXPLICIT",
+      "source": "The hierarchical order of the meanings did not directly derive from our textual analysis, but was inspired from a reductionist interpretation of the flow of genetic information over time and space.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the table caption and explains the theoretical basis for the model structure.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:08:06.892867Z"
+    },
+    {
+      "id": "ddff8049-963a-4dbb-8444-82ecf296fbbd",
+      "content_id": "82cdf482-07e5-4b1b-a503-e8e0ec304a24",
+      "claim_id": "C45",
+      "claim": "The hierarchical order in the Pittsburgh model reflects a possible ordering of the series of properties that must be acquired by a locus to undergo de novo gene birth.",
+      "claim_type": "EXPLICIT",
+      "source": "It also reflects a possible ordering of the series of properties that must be acquired by a locus to undergo de novo gene birth.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the table caption and represents a theoretical interpretation.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:08:06.892867Z"
+    },
+    {
+      "id": "177d70a0-36ff-4fef-aebf-ed4a599dc70f",
+      "content_id": "82cdf482-07e5-4b1b-a503-e8e0ec304a24",
+      "claim_id": "C46",
+      "claim": "Expression is not sufficient to cause Evolutionary Implications.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, as has been discussed in the context of the ENCODE debate, Expression is not sufficient to cause Evolutionary Implications (Doolittle, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Doolittle, 2018 and represents a logical relationship between the model components.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:08:06.892867Z"
+    },
+    {
+      "id": "bd8d8d3f-ca54-43f9-898c-786738d81d21",
+      "content_id": "82cdf482-07e5-4b1b-a503-e8e0ec304a24",
+      "claim_id": "C47",
+      "claim": "Evolutionary Implications do not necessarily imply Expression since a locus can influence population dynamics through a DNA regulatory activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Inversely, Evolutionary Implications do not necessarily imply Expression since a locus can influence population dynamics through a DNA regulatory activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference about the relationships between model components.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:08:06.892867Z"
+    },
+    {
+      "id": "f2f3ae98-1c31-40ac-b17e-64c2932b1d5f",
+      "content_id": "82cdf482-07e5-4b1b-a503-e8e0ec304a24",
+      "claim_id": "C48",
+      "claim": "The Pittsburgh model acknowledges epistemological relationships between different meanings of function while enabling researchers to describe them independently of each other.",
+      "claim_type": "EXPLICIT",
+      "source": "Our model acknowledges epistemological relationships between different meanings of function while enabling researchers to describe them independently of each other.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of a feature of the proposed model.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:08:06.892867Z"
+    },
+    {
+      "id": "4b3fe52c-4e5e-46c1-961a-0e5afeb99e68",
+      "content_id": "82cdf482-07e5-4b1b-a503-e8e0ec304a24",
+      "claim_id": "C49",
+      "claim": "The Pittsburgh model presents practical advantages relative to pre-existing models because it is tailored to one field of research.",
+      "claim_type": "EXPLICIT",
+      "source": "This model presents practical advantages relative to pre-existing ones because it is tailored to one field of research.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an assertion about the advantages of the proposed model.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:08:06.892867Z"
+    },
+    {
+      "id": "a93f3ab0-fb72-42d5-8d80-507d5f439a9c",
+      "content_id": "82cdf482-07e5-4b1b-a503-e8e0ec304a24",
+      "claim_id": "C50",
+      "claim": "The Pittsburgh model differentiates between different types of biochemical activities for de novo emerging sequences.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, it differentiates between different types of biochemical activities for de novo emerging sequences; this enables scientists to articulate more specific functional inferences than with broad terms that generalize across fields such as 'causal role' or 'mere activities' (Cummins, 1975; Wouters, 2003; Doolittle, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of a feature of the model, with citations to alternative approaches.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:08:06.892867Z"
+    },
+    {
+      "id": "29b02016-39c6-4bf8-a458-9ce4a1d9e255",
+      "content_id": "82cdf482-07e5-4b1b-a503-e8e0ec304a24",
+      "claim_id": "C51",
+      "claim": "The Pittsburgh model decomposes the complex concept of function into a hierarchical organization of measurable properties of the object in time and space according to meanings that are circulating in the field currently.",
+      "claim_type": "EXPLICIT",
+      "source": "Rather than theorizing upon the legitimacy of what function should mean, our model decomposes this complex concept into a hierarchical organization of measurable properties of the object in time and space according to meanings that are circulating in the field currently.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the approach taken in developing the model.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:08:06.892867Z"
+    },
+    {
+      "id": "76cec67e-79fa-4910-8cce-d0ad7f674874",
+      "content_id": "82cdf482-07e5-4b1b-a503-e8e0ec304a24",
+      "claim_id": "C52",
+      "claim": "The Pittsburgh model can be seen as a conceptual tool well adapted to describe molecular objects (DNA loci, RNA transcripts and proteins) in a manner that roughly maps to subfields of training and associated measurement techniques currently used in de novo gene birth research.",
+      "claim_type": "EXPLICIT",
+      "source": "The Pittsburgh model of function can be seen as a conceptual tool well adapted to describe molecular objects (DNA loci, RNA transcripts and proteins) in a manner that roughly maps to subfields of training and associated measurement techniques currently used in de novo gene birth research.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a characterization of the intended use of the model.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:08:06.892867Z"
+    },
+    {
+      "id": "ab3faaea-641c-4902-95fd-5781ba706d9f",
+      "content_id": "82cdf482-07e5-4b1b-a503-e8e0ec304a24",
+      "claim_id": "C53",
+      "claim": "RNA-sequencing readily informs upon Expression.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, while RNA-sequencing readily informs upon Expression and yeast two-hybrid upon Interactions",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on knowledge of what RNA-sequencing measures.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:08:06.892867Z"
+    },
+    {
+      "id": "04e14e7b-b1d7-4723-9b35-076627ed919f",
+      "content_id": "82cdf482-07e5-4b1b-a503-e8e0ec304a24",
+      "claim_id": "C54",
+      "claim": "Yeast two-hybrid readily informs upon Interactions.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, while RNA-sequencing readily informs upon Expression and yeast two-hybrid upon Interactions",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on knowledge of what yeast two-hybrid assays measure.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:08:06.892867Z"
+    },
+    {
+      "id": "f57cccd5-15f9-4a25-b443-1af7b24daf52",
+      "content_id": "82cdf482-07e5-4b1b-a503-e8e0ec304a24",
+      "claim_id": "C55",
+      "claim": "Discovering interactions by yeast two-hybrid does not allow the researcher to conclude that a locus is natively expressed.",
+      "claim_type": "EXPLICIT",
+      "source": "discovering interactions by yeast two-hybrid does not allow the researcher to conclude that a locus is natively expressed",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on understanding of the limitations of yeast two-hybrid methodology.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:08:06.892867Z"
+    },
+    {
+      "id": "1320dd0c-93dc-4662-bacb-7e3276789952",
+      "content_id": "82cdf482-07e5-4b1b-a503-e8e0ec304a24",
+      "claim_id": "C56",
+      "claim": "Establishing that a locus is expressed does not imply that the corresponding product necessarily interacts with other elements in the cell.",
+      "claim_type": "EXPLICIT",
+      "source": "so too, establishing that a locus is expressed does not imply that the corresponding product necessarily interacts with other elements in the cell.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference about the relationship between expression and interaction.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:08:06.892867Z"
+    },
+    {
+      "id": "661bb796-0121-4d89-b433-74c4af6c1275",
+      "content_id": "82cdf482-07e5-4b1b-a503-e8e0ec304a24",
+      "claim_id": "C57",
+      "claim": "Neither RNA-sequencing nor yeast two-hybrid gives direct insights into Evolutionary Implications.",
+      "claim_type": "EXPLICIT",
+      "source": "Evidently, neither technique gives direct insights into Evolutionary Implications since Expression and Interactions are necessary but not sufficient to cause Physiological Implications, let alone Evolutionary Implications.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference about the limitations of these techniques.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:08:06.892867Z"
+    },
+    {
+      "id": "f929c10a-dfd7-4965-9e63-a506b3abdd99",
+      "content_id": "82cdf482-07e5-4b1b-a503-e8e0ec304a24",
+      "claim_id": "C58",
+      "claim": "Expression and Interactions are necessary but not sufficient to cause Physiological Implications.",
+      "claim_type": "EXPLICIT",
+      "source": "Evidently, neither technique gives direct insights into Evolutionary Implications since Expression and Interactions are necessary but not sufficient to cause Physiological Implications, let alone Evolutionary Implications.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical claim about the relationships between the model components.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:08:06.892867Z"
+    },
+    {
+      "id": "42bdf7bf-a32d-4e34-a0b1-7ac209c52b6c",
+      "content_id": "82cdf482-07e5-4b1b-a503-e8e0ec304a24",
+      "claim_id": "C59",
+      "claim": "Separating the five meanings from one another enables communicating with increased precision about what the findings are.",
+      "claim_type": "EXPLICIT",
+      "source": "Separating these meanings from one another enables communicating with increased precision about what the findings are, thereby helping to fallacious logical shortcuts such as 'this protein is expressed therefore it is functional therefore it is under selection'.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an assertion about the benefit of the proposed model.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:08:06.892867Z"
+    },
+    {
+      "id": "81b4bf28-b33c-49b2-909d-494696c096d9",
+      "content_id": "82cdf482-07e5-4b1b-a503-e8e0ec304a24",
+      "claim_id": "C60",
+      "claim": "The meanings of Physiological Implications and Evolutionary Implications are deliberately broad to allow for detailed descriptions beyond the somewhat restrictive notion of selected effect.",
+      "claim_type": "EXPLICIT",
+      "source": "The meanings of Physiological Implications and Evolutionary Implications are deliberately broad to allow for detailed descriptions beyond the somewhat restrictive notion of selected effect.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of a design choice in the model.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:08:06.892867Z"
+    },
+    {
+      "id": "43997907-8bbf-47a5-b18b-c78e1ccd9cec",
+      "content_id": "82cdf482-07e5-4b1b-a503-e8e0ec304a24",
+      "claim_id": "C61",
+      "claim": "Evolutionary Implications can refer to selection upon a trait driven by the object in the past, as in the strict definition of selected effect.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, Evolutionary Implications can refer to selection upon a trait driven by the object in the past, as in the strict definition of selected effect (Millikan, 1989), but it can equally describe other ways the object may influence population dynamics such as runaway selection or novel fitness enhancing effects.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of what the Evolutionary Implications category can encompass, with citation to Millikan, 1989.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:08:06.892867Z"
+    },
+    {
+      "id": "fc4661ad-81ea-477b-b8d1-262217b5af78",
+      "content_id": "82cdf482-07e5-4b1b-a503-e8e0ec304a24",
+      "claim_id": "C62",
+      "claim": "Evolutionary Implications can describe other ways the object may influence population dynamics such as runaway selection or novel fitness enhancing effects.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, Evolutionary Implications can refer to selection upon a trait driven by the object in the past, as in the strict definition of selected effect (Millikan, 1989), but it can equally describe other ways the object may influence population dynamics such as runaway selection or novel fitness enhancing effects.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of what the Evolutionary Implications category can encompass.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:08:06.892867Z"
+    },
+    {
+      "id": "f0980db4-0401-410e-8c2e-6021e104fae0",
+      "content_id": "82cdf482-07e5-4b1b-a503-e8e0ec304a24",
+      "claim_id": "C63",
+      "claim": "The Pittsburgh model was tested on only 20 abstracts related to the single field of de novo gene birth.",
+      "claim_type": "EXPLICIT",
+      "source": "Tested on only 20 abstracts related to the single field of de novo gene birth, by no means does it represent a complete ontology of function.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the scope and limitations of the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:08:06.892867Z"
+    },
+    {
+      "id": "cb2eee72-d284-4bb1-ba16-5af068870b00",
+      "content_id": "82cdf482-07e5-4b1b-a503-e8e0ec304a24",
+      "claim_id": "C64",
+      "claim": "The Pittsburgh model does not represent a complete ontology of function.",
+      "claim_type": "EXPLICIT",
+      "source": "Tested on only 20 abstracts related to the single field of de novo gene birth, by no means does it represent a complete ontology of function.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an acknowledgment of the model's limitations.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:08:06.892867Z"
+    },
+    {
+      "id": "d59fb7bb-2624-4e1d-bdb8-198ad5d2096e",
+      "content_id": "82cdf482-07e5-4b1b-a503-e8e0ec304a24",
+      "claim_id": "C65",
+      "claim": "The Pittsburgh model may or may not extend to genomic elements outside of the gene birth framework, such as selfish elements or promoters.",
+      "claim_type": "EXPLICIT",
+      "source": "Constructed in a field-specific manner, our model may or may not extend to genomic elements outside of the gene birth framework, such as selfish elements or promoters.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an acknowledgment of uncertainty about the model's generalizability.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:08:06.892867Z"
+    },
+    {
+      "id": "a3c4ef36-e88a-48ca-9365-5f762933a0bb",
+      "content_id": "82cdf482-07e5-4b1b-a503-e8e0ec304a24",
+      "claim_id": "C66",
+      "claim": "The Pittsburgh model cannot be readily applied to biological objects other than DNA, RNA and protein objects.",
+      "claim_type": "EXPLICIT",
+      "source": "It cannot be readily applied to biological objects other than DNA, RNA and protein objects.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the limitations of the model's applicability.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:08:06.892867Z"
+    },
+    {
+      "id": "07dd3926-e3e1-4838-8f61-59df9c08cc50",
+      "content_id": "82cdf482-07e5-4b1b-a503-e8e0ec304a24",
+      "claim_id": "C67",
+      "claim": "There may be additional meanings of function available beyond the five included in the Pittsburgh model.",
+      "claim_type": "EXPLICIT",
+      "source": "There may be additional meanings available beyond the five we included, and different ways to characterize the relationships between these meanings.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an acknowledgment of potential limitations of the model.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:08:06.892867Z"
+    },
+    {
+      "id": "5e93f6a7-a1f7-4ac6-b8c2-5a622b461f09",
+      "content_id": "82cdf482-07e5-4b1b-a503-e8e0ec304a24",
+      "claim_id": "C68",
+      "claim": "The abstracts analyzed generally provided enough context for each independent reader to confidently assign meanings to most instances.",
+      "claim_type": "EXPLICIT",
+      "source": "The abstracts generally provided enough context for each independent reader to confidently assign meanings to most instances, with only rare assignments of the label 'vague' (9 instances with one or more vague assignment, none unanimous).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the quantitative analysis with specific numbers provided.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:08:06.892867Z"
+    },
+    {
+      "id": "702f73d1-eeab-4d25-81c6-b300728cd904",
+      "content_id": "82cdf482-07e5-4b1b-a503-e8e0ec304a24",
+      "claim_id": "C69",
+      "claim": "Only 9 instances had one or more vague assignment, and none were unanimously assigned as vague.",
+      "claim_type": "EXPLICIT",
+      "source": "The abstracts generally provided enough context for each independent reader to confidently assign meanings to most instances, with only rare assignments of the label 'vague' (9 instances with one or more vague assignment, none unanimous).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a specific finding from the data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:08:06.892867Z"
+    },
+    {
+      "id": "8733ff69-458f-4301-b745-35547ea9832e",
+      "content_id": "82cdf482-07e5-4b1b-a503-e8e0ec304a24",
+      "claim_id": "C70",
+      "claim": "The Pittsburgh model gave readers a key to decipher more specifically what authors meant by the word function.",
+      "claim_type": "EXPLICIT",
+      "source": "Hence, the Pittsburgh model gave readers a key to decipher more specifically what authors meant by the word function.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the finding that readers could assign meanings.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:08:06.892867Z"
+    },
+    {
+      "id": "c732495a-b14a-4a4d-a7b5-0d9a446eab3e",
+      "content_id": "82cdf482-07e5-4b1b-a503-e8e0ec304a24",
+      "claim_id": "C71",
+      "claim": "Only 12% (5/42) of assignments were unanimous, where the same single meaning was chosen by all readers.",
+      "claim_type": "EXPLICIT",
+      "source": "However, and importantly, a quantitative analysis revealed only that 12% (5/42) of assignments were unanimous, where the same single meaning was chosen by all readers (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a specific quantitative finding from the analysis, shown in Figure 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:08:06.892867Z"
+    },
+    {
+      "id": "8c48d25c-3796-44d9-8a9c-ae6944e90e92",
+      "content_id": "82cdf482-07e5-4b1b-a503-e8e0ec304a24",
+      "claim_id": "C72",
+      "claim": "88% (37/42) of instances of the word function in the same sentence were interpreted differently by team members.",
+      "claim_type": "EXPLICIT",
+      "source": "In other words, the same instance of the word in the same sentence was most of the times (37/42 = 88%) interpreted differently by our team members.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a specific quantitative finding from the analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:08:06.892867Z"
+    },
+    {
+      "id": "78650aa2-5c59-49d5-8421-0a4a88a906a6",
+      "content_id": "82cdf482-07e5-4b1b-a503-e8e0ec304a24",
+      "claim_id": "C73",
+      "claim": "The most confusing instances, with 4 or 6 distinct assignments, were all assigned 'vague' by at least one reader.",
+      "claim_type": "EXPLICIT",
+      "source": "The most confusing instances, with 4 or 6 distinct assignments, were all assigned 'vague' by at least one reader.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the analysis of the data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:08:06.892867Z"
+    },
+    {
+      "id": "c2dba534-1c9f-4bf2-84c2-208fe81bddf6",
+      "content_id": "82cdf482-07e5-4b1b-a503-e8e0ec304a24",
+      "claim_id": "C74",
+      "claim": "When the meaning of function is unspecified, the literature in the field of de novo gene birth can become confusing.",
+      "claim_type": "EXPLICIT",
+      "source": "This analysis indicates that when the meaning of function is unspecified, the literature in this field of research can become confusing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the quantitative analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:08:06.892867Z"
+    },
+    {
+      "id": "c89f8f93-5ed3-458a-9931-1ebf8897bdd1",
+      "content_id": "82cdf482-07e5-4b1b-a503-e8e0ec304a24",
+      "claim_id": "C75",
+      "claim": "Consensus was successfully reached for all but one instance of function usage.",
+      "claim_type": "EXPLICIT",
+      "source": "Consensus was successfully reached for all but one instance, suggesting that the Pittsburgh model enabled adequate description of most of the instances of function in our abstract database.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the consensus-building process.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:08:06.892867Z"
+    },
+    {
+      "id": "4ff5c2da-5289-4446-bd56-eb73770507ec",
+      "content_id": "82cdf482-07e5-4b1b-a503-e8e0ec304a24",
+      "claim_id": "C76",
+      "claim": "The Pittsburgh model enabled adequate description of most of the instances of function in the abstract database.",
+      "claim_type": "EXPLICIT",
+      "source": "Consensus was successfully reached for all but one instance, suggesting that the Pittsburgh model enabled adequate description of most of the instances of function in our abstract database.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the successful consensus-building.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:08:06.892867Z"
+    },
+    {
+      "id": "6f0c6cf5-dfc1-467f-83b0-3c760ad93c14",
+      "content_id": "82cdf482-07e5-4b1b-a503-e8e0ec304a24",
+      "claim_id": "C77",
+      "claim": "The fraction of instances assigned a unique meaning grew from 5/42 (12%) in independent assignments to 26/42 (62%) in consensus assignments.",
+      "claim_type": "EXPLICIT",
+      "source": "We then quantified again the fraction of instances of function that were assigned a unique meaning. This number grew from 5/42 (12%) in the original independent assignments (Figure 1A) to 26/42 (62%) in the consensus assignments (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a specific quantitative finding comparing independent and consensus assignments, shown in Figures 1A and 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:08:06.892867Z"
+    },
+    {
+      "id": "006923b5-9b70-4e16-a8c9-a8572204e627",
+      "content_id": "82cdf482-07e5-4b1b-a503-e8e0ec304a24",
+      "claim_id": "C78",
+      "claim": "50% (21/42) of instances were interpreted differently by at least one of four readers upon independent reading of the texts.",
+      "claim_type": "EXPLICIT",
+      "source": "This shows that, in our analyses, 21/42 (50%) instances were interpreted differently by at least one of four readers upon independent reading of the texts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a specific quantitative finding from the analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:08:06.892867Z"
+    },
+    {
+      "id": "1ba900b7-9dc1-4b9b-8d3e-398f7f8889cb",
+      "content_id": "82cdf482-07e5-4b1b-a503-e8e0ec304a24",
+      "claim_id": "C79",
+      "claim": "After establishing consensus assignments, 16/42 (38%) instances were assigned two or three meanings.",
+      "claim_type": "EXPLICIT",
+      "source": "It is notable that, after establishing consensus assignments, still 16/42 (38%) instances were assigned two or three meanings (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a specific quantitative finding from the consensus analysis, shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:08:06.892867Z"
+    },
+    {
+      "id": "5db97908-a638-42fe-b861-8df66ca58e02",
+      "content_id": "82cdf482-07e5-4b1b-a503-e8e0ec304a24",
+      "claim_id": "C80",
+      "claim": "The word function is often used to mean different things, and the plurality of function cannot be easily disentangled.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that this one word is often used to mean different things, and that the plurality of function cannot be easily disentangled.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the finding that many instances were assigned multiple meanings even after consensus.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:08:06.892867Z"
+    },
+    {
+      "id": "2dfd1c26-4f74-45c3-90ca-02fc5d114a87",
+      "content_id": "82cdf482-07e5-4b1b-a503-e8e0ec304a24",
+      "claim_id": "C81",
+      "claim": "The meanings most frequently found in consensus assignments were Physiological Implications (21 instances) and Evolutionary Implications (18 instances).",
+      "claim_type": "EXPLICIT",
+      "source": "The meanings most frequently found in our consensus assignments were Physiological Implications (21 instances) and Evolutionary Implications (18 instances; Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a specific quantitative finding from the consensus analysis, shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:08:06.892867Z"
+    },
+    {
+      "id": "46d72dd7-85b0-4acc-b7cd-17a33aebb4ae",
+      "content_id": "82cdf482-07e5-4b1b-a503-e8e0ec304a24",
+      "claim_id": "C82",
+      "claim": "Physiological Implications and Evolutionary Implications were most often found assigned together in cases where a single instance was assigned two or three meanings (6 instances).",
+      "claim_type": "EXPLICIT",
+      "source": "These two were also most often found assigned together in cases where a single instance was assigned two or three meanings (6 instances).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a specific finding about co-occurrence of meanings.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:08:06.892867Z"
+    },
+    {
+      "id": "3e2ab473-0d27-4d6f-9df9-e89db37b8245",
+      "content_id": "82cdf482-07e5-4b1b-a503-e8e0ec304a24",
+      "claim_id": "C83",
+      "claim": "All but one instances with a vague consensus assignment were nouns.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly though, all but one instances with a vague consensus assignment were nouns.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a specific finding about the relationship between part of speech and vagueness.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:08:06.892867Z"
+    },
+    {
+      "id": "92084aad-901f-4374-97c4-49c5afe3de59",
+      "content_id": "82cdf482-07e5-4b1b-a503-e8e0ec304a24",
+      "claim_id": "C84",
+      "claim": "The use of function in the de novo gene birth field is hard to interpret.",
+      "claim_type": "EXPLICIT",
+      "source": "Yet our rhetorical approach leads us to conclude that the use of function in this field is hard to interpret, and that further nuance in writing would assist the reader in understanding how the authors intend their results to be interpreted.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the overall analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:08:06.892867Z"
+    },
+    {
+      "id": "d2e17a48-7d91-404a-be4a-ee277434a948",
+      "content_id": "82cdf482-07e5-4b1b-a503-e8e0ec304a24",
+      "claim_id": "C85",
+      "claim": "Further nuance in writing would assist the reader in understanding how the authors intend their results to be interpreted.",
+      "claim_type": "EXPLICIT",
+      "source": "Yet our rhetorical approach leads us to conclude that the use of function in this field is hard to interpret, and that further nuance in writing would assist the reader in understanding how the authors intend their results to be interpreted.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a recommendation based on the findings.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:08:06.892867Z"
+    },
+    {
+      "id": "cdd8752d-cb93-4c9a-910e-e66ed2951c35",
+      "content_id": "82cdf482-07e5-4b1b-a503-e8e0ec304a24",
+      "claim_id": "C86",
+      "claim": "The word function carries convoluted meanings that complicate the scientific conversation.",
+      "claim_type": "EXPLICIT",
+      "source": "In summary, our results provide quantitative support to previous assertions (Doolittle, 2018; Laubichler et al., 2015) that the word function carries convoluted meanings that complicate the scientific conversation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion supported by the quantitative analysis and citations to previous work.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:08:06.892867Z"
+    },
+    {
+      "id": "c50fd4e9-b185-4ff0-99b5-9b49aac67196",
+      "content_id": "82cdf482-07e5-4b1b-a503-e8e0ec304a24",
+      "claim_id": "C87",
+      "claim": "Function becomes an ambiguous concept when applied to the edge case of de novo gene birth, which can lead to confusion in interpretation of the literature.",
+      "claim_type": "EXPLICIT",
+      "source": "Our rhetorical analysis shows that function becomes an ambiguous concept when applied to the edge case of de novo gene birth, which can lead to confusion in interpretation of the literature.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion from the rhetorical analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:08:06.892867Z"
+    },
+    {
+      "id": "fecb01d4-a0dc-4bbd-933a-8befcf8af494",
+      "content_id": "82cdf482-07e5-4b1b-a503-e8e0ec304a24",
+      "claim_id": "C88",
+      "claim": "Scientific communication is hindered by the use of the word function within the de novo gene birth field.",
+      "claim_type": "EXPLICIT",
+      "source": "Whether multiple meanings are intended by the authors, or meanings unintended by the authors are interpreted by the readers, or a combination of both, the fact is that scientific communication is hindered by the use of this word within the de novo gene birth field.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion from the overall analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:08:06.892867Z"
+    },
+    {
+      "id": "551093cf-fc7c-4617-8e06-b01570cef616",
+      "content_id": "82cdf482-07e5-4b1b-a503-e8e0ec304a24",
+      "claim_id": "C89",
+      "claim": "The cultural diversity of readers in the de novo gene birth field effectively prevents a unique definition of function to be imposed in practice.",
+      "claim_type": "EXPLICIT",
+      "source": "There may be excellent theoretical arguments to be made about why function should mean one thing or another, but the cultural diversity of readers in this emerging field effectively prevents a unique definition to be imposed in practice.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about the practical implications of diversity in the field.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:08:06.892867Z"
+    },
+    {
+      "id": "a5c9f74a-ac35-476a-b1ab-172d7f620729",
+      "content_id": "82cdf482-07e5-4b1b-a503-e8e0ec304a24",
+      "claim_id": "C90",
+      "claim": "It will be productive for scientists to acknowledge the diversity of onto-epistemological perspectives in the de novo gene birth field and adapt their writing style accordingly.",
+      "claim_type": "EXPLICIT",
+      "source": "We believe that it will be productive for scientists to acknowledge the diversity of onto-epistemological perspectives in this field and adapt their writing style accordingly.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a recommendation based on the findings.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:08:06.892867Z"
+    },
+    {
+      "id": "504babf3-1ab9-4bb6-afe3-2d8ba757de69",
+      "content_id": "82cdf482-07e5-4b1b-a503-e8e0ec304a24",
+      "claim_id": "C91",
+      "claim": "The authors endorse qualifying the use of function or avoiding the word altogether.",
+      "claim_type": "EXPLICIT",
+      "source": "Rather than privileging one meaning of function over another, we endorse qualifying the use of function or avoiding the word altogether (Doolittle, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a recommendation with citation to Doolittle, 2018.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:08:06.892867Z"
+    },
+    {
+      "id": "c4674d4a-ccd4-4c02-962c-7fd6bd0e7399",
+      "content_id": "82cdf482-07e5-4b1b-a503-e8e0ec304a24",
+      "claim_id": "C92",
+      "claim": "The Pittsburgh model will provide a useful tool for scientists to contextualize their writing so the relationship between observations and functional inferences can be clarified.",
+      "claim_type": "EXPLICIT",
+      "source": "We hope our model will provide a useful tool for scientists to contextualize their writing so the relationship between the observations reported and the functional inferences made can be clarified and the risk of misunderstanding can be reduced.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement of the intended utility of the model.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:08:06.892867Z"
+    },
+    {
+      "id": "65177e6d-c074-41e9-a492-f0441d17793f",
+      "content_id": "82cdf482-07e5-4b1b-a503-e8e0ec304a24",
+      "claim_id": "C93",
+      "claim": "Function is a concept that depends on the methodological practices, measurement procedures and habits of scientists.",
+      "claim_type": "EXPLICIT",
+      "source": "Function is a concept that depends on the methodological practices, measurement procedures and habits of scientists.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a theoretical assertion about the nature of the concept of function.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:08:06.892867Z"
+    },
+    {
+      "id": "4b808c08-d686-4b11-9b1d-a002fc293b85",
+      "content_id": "82cdf482-07e5-4b1b-a503-e8e0ec304a24",
+      "claim_id": "C94",
+      "claim": "As methodological practices, measurement procedures and habits of scientists change, the concept of function will change and adapt to specific subfields of research.",
+      "claim_type": "EXPLICIT",
+      "source": "As these change, so too will the concept of function change and adapt to specific subfields of research, because it is contingent and always in a state of flux.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a theoretical assertion about how the concept of function evolves.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:08:06.892867Z"
+    },
+    {
+      "id": "118ca9f6-d5ba-4b46-9a73-058baf6ef0a8",
+      "content_id": "82cdf482-07e5-4b1b-a503-e8e0ec304a24",
+      "claim_id": "C95",
+      "claim": "Function requires ongoing attention and theorizing by the scientific community.",
+      "claim_type": "EXPLICIT",
+      "source": "Function requires ongoing attention and theorizing by the scientific community.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a recommendation based on the analysis.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:08:06.892867Z"
+    },
+    {
+      "id": "5064322c-1a84-4204-ad96-e1bd7e9a4fab",
+      "content_id": "82cdf482-07e5-4b1b-a503-e8e0ec304a24",
+      "claim_id": "C96",
+      "claim": "The Pittsburgh model is expected to develop and adapt with scientific practice.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, we expect our model to develop and adapt with scientific practice.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a prediction about the future evolution of the model.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:08:06.892867Z"
+    },
+    {
+      "id": "787b7cb3-46c9-4c42-a45f-b8d035070aa4",
+      "content_id": "82cdf482-07e5-4b1b-a503-e8e0ec304a24",
+      "claim_id": "C97",
+      "claim": "The authors encourage researchers to refine the Pittsburgh model, adapt it to other subfields of genomics and other types of biological objects, and propose alternatives.",
+      "claim_type": "EXPLICIT",
+      "source": "We encourage researchers to refine the model, adapt it to other subfields of genomics and other types of biological objects (metabolites, cell types, organs), and propose alternatives.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a call to action for future research.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:08:06.892867Z"
+    },
+    {
+      "id": "3ba63d87-d630-4623-8970-f62cf51fd053",
+      "content_id": "82cdf482-07e5-4b1b-a503-e8e0ec304a24",
+      "claim_id": "C98",
+      "claim": "Computational natural language processing could be used to generate field-specific models by automatic analysis of large bodies of literature.",
+      "claim_type": "EXPLICIT",
+      "source": "One can envision, for instance, exploiting the power of computational natural language processing to generate field-specific models by automatic analysis of large bodies of literature (Friedman et al., 2001; Groth et al., 2016), perhaps using our modest manual analysis as a training set.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a suggestion for future work with citations to relevant methods.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:08:06.892867Z"
+    },
+    {
+      "id": "9503d42b-5d67-43ed-943f-a3e401d6e3dd",
+      "content_id": "82cdf482-07e5-4b1b-a503-e8e0ec304a24",
+      "claim_id": "C99",
+      "claim": "The authors hope that interdisciplinary conversations about philosophy, rhetoric and scientific concepts will accompany the emergence of new scientific fields in the future.",
+      "claim_type": "EXPLICIT",
+      "source": "More generally, we hope that interdisciplinary conversations about philosophy (Laplane et al., 2019), rhetoric and scientific concepts will accompany the emergence of new scientific fields in the future.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a broader recommendation with citation to Laplane et al., 2019.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:08:06.892867Z"
+    },
+    {
+      "id": "a8316fbb-ea1f-43bb-a3b4-0f09fe22c465",
+      "content_id": "82cdf482-07e5-4b1b-a503-e8e0ec304a24",
+      "claim_id": "C100",
+      "claim": "The study used a mixed methods study design adapted from rhetorical studies and applied communication.",
+      "claim_type": "EXPLICIT",
+      "source": "We approached the question of the meanings of function in the de novo gene birth literature using a mixed methods study design adapted from rhetorical studies and applied communication (Creswell, 2014; McGreavy et al., 2015; Dewulf et al., 2007; Thompson, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the methodological approach with citations to relevant methodological literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:08:06.892867Z"
+    },
+    {
+      "id": "a11ddcd7-4342-4326-83ce-32e7fed1613f",
+      "content_id": "82cdf482-07e5-4b1b-a503-e8e0ec304a24",
+      "claim_id": "C101",
+      "claim": "The study performed a rhetorical analysis by interrogating the assumptions made by scientists within the de novo gene birth field and how they inform language in the published literature.",
+      "claim_type": "EXPLICIT",
+      "source": "First and throughout, we performed a rhetorical analysis by interrogating the assumptions made by scientists within this field and how they inform language in the published literature (Gross, 1990).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a component of the methodology with citation to Gross, 1990.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:08:06.892867Z"
+    },
+    {
+      "id": "82e4ffaa-b2e4-4add-bec2-d46b249f9f21",
+      "content_id": "82cdf482-07e5-4b1b-a503-e8e0ec304a24",
+      "claim_id": "C102",
+      "claim": "The study performed a qualitative analysis to iteratively build a model of function as it applies to the de novo gene birth field.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, we performed a qualitative analysis to iteratively build a model of function as it applies to the field (Strauss and Corbin, 1990).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a component of the methodology with citation to Strauss and Corbin, 1990.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:08:06.892867Z"
+    },
+    {
+      "id": "5dad240f-7711-4538-8ee9-1d58219a385b",
+      "content_id": "82cdf482-07e5-4b1b-a503-e8e0ec304a24",
+      "claim_id": "C103",
+      "claim": "The study performed a quantitative content analysis to analyze how the multiple meanings of function affect understanding of the literature in the field.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, we performed a quantitative content analysis to analyze how the multiple meanings of function affect understanding of the literature in the field (Neuendorf, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a component of the methodology with citation to Neuendorf, 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:08:06.892867Z"
+    },
+    {
+      "id": "3301f8e5-e37f-48ff-affc-7720f5e10fa1",
+      "content_id": "82cdf482-07e5-4b1b-a503-e8e0ec304a24",
+      "claim_id": "C104",
+      "claim": "The library of 20 papers was assembled by a team member who is a published expert in the field of de novo gene birth.",
+      "claim_type": "EXPLICIT",
+      "source": "A library of 20 published papers that included the term function or its derivatives (functional, functioning) in the abstract was assembled by a team member who is also a published expert in the field of de novo gene birth (Table 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes how the paper sample was selected.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:08:06.892867Z"
+    },
+    {
+      "id": "3b0fb37c-4725-48d4-a4ff-f634fbd8b593",
+      "content_id": "82cdf482-07e5-4b1b-a503-e8e0ec304a24",
+      "claim_id": "C105",
+      "claim": "Publication dates of the analyzed papers span from 1992 to 2017, with most dated after 2012.",
+      "claim_type": "EXPLICIT",
+      "source": "Publication dates span from 1992 to 2017, with most dated after 2012 because this is a recently expanding field.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the temporal distribution of the sample.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:08:06.892867Z"
+    },
+    {
+      "id": "5909e25a-63b0-4d13-9a20-f23cde0b2dd8",
+      "content_id": "82cdf482-07e5-4b1b-a503-e8e0ec304a24",
+      "claim_id": "C106",
+      "claim": "The papers were chosen to span a variety of journals, countries, citation counts, model organisms, methodologies and scope.",
+      "claim_type": "EXPLICIT",
+      "source": "The papers were chosen to span a variety of journals, countries, citation counts, model organisms, methodologies and scope, in order to derive a context specific rhetorical argument (McGee, 1990).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the sampling strategy with citation to McGee, 1990.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:08:06.892867Z"
+    },
+    {
+      "id": "53a66d34-986e-4e72-92fc-59a3aa95ca13",
+      "content_id": "82cdf482-07e5-4b1b-a503-e8e0ec304a24",
+      "claim_id": "C107",
+      "claim": "The library of 20 papers represents approximately 2% of the literature published on the topic of de novo gene emergence.",
+      "claim_type": "EXPLICIT",
+      "source": "This library is estimated to represent ~2% of the literature published on the topic of de novo gene emergence, as a Google Scholar search returns 972 results in December 2018 (' ''de novo gene birth'' OR ''de novo gene evolution'' OR ''de novo gene emergence'' OR ''de novo genes'' ').",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This provides context for the sample size based on a Google Scholar search.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:08:06.892867Z"
+    },
+    {
+      "id": "406d3294-b05c-43a1-a9b4-b61cd68d1d15",
+      "content_id": "82cdf482-07e5-4b1b-a503-e8e0ec304a24",
+      "claim_id": "C108",
+      "claim": "42 usages of function (25 nouns, 12 adjectives, 3 verbs and 2 adverbs) were analyzed across 20 abstracts.",
+      "claim_type": "EXPLICIT",
+      "source": "Forty-two usages (25 nouns, 12 adjectives, 3 verbs and 2 adverbs) were analyzed across 20 abstracts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This provides specific details about the instances analyzed.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:08:06.892867Z"
+    },
+    {
+      "id": "16617197-8637-4da9-b123-19ecbe819fa0",
+      "content_id": "82cdf482-07e5-4b1b-a503-e8e0ec304a24",
+      "claim_id": "C109",
+      "claim": "The selected effect/causal role binary model has contentious philosophical implications, particularly as they relate to teleology.",
+      "claim_type": "EXPLICIT",
+      "source": "First, the model has contentious philosophical implications, in particular as they relate to teleology, that have been extensively discussed (Allen and Bekoff, 1995; Manning, 1997; Buller, 2001; Roux, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to philosophical literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:08:06.892867Z"
+    },
+    {
+      "id": "530fe053-17fc-48b0-9178-38b95d7271d9",
+      "content_id": "82cdf482-07e5-4b1b-a503-e8e0ec304a24",
+      "claim_id": "C110",
+      "claim": "The epistemological reduction of function into a dichotomy mutes the complex ontological relationships between the multiple ways the term can be used.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, the epistemological reduction of function into a dichotomy mutes the complex ontological relationships between the multiple ways the term can be used and, problematically, leaves theoretical assumptions and measurement constraints implicit and unspecified (Laubichler et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a critique of the binary model with citation to Laubichler et al., 2015.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:08:06.892867Z"
+    },
+    {
+      "id": "deee77dc-727b-4de2-a818-e8f2fbabd18b",
+      "content_id": "82cdf482-07e5-4b1b-a503-e8e0ec304a24",
+      "claim_id": "C111",
+      "claim": "A Google Scholar search for de novo gene terms AND 'causal role' yields only 10 results in March 2019.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, a Google Scholar search for ' [''de novo gene birth'' OR ''de novo gene evolution'' OR ''de novo gene emergence'' OR ''de novo genes''] AND ''causal role'' ' yields only 10 results in March 2019, whereas 1050 results are found when the AND clause is lacking.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is evidence from a Google Scholar search about adoption of terminology.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:08:06.892867Z"
+    },
+    {
+      "id": "1472521c-074d-4656-9645-97360f36e41e",
+      "content_id": "82cdf482-07e5-4b1b-a503-e8e0ec304a24",
+      "claim_id": "C112",
+      "claim": "A Google Scholar search for de novo gene terms without 'causal role' yields 1050 results.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, a Google Scholar search for ' [''de novo gene birth'' OR ''de novo gene evolution'' OR ''de novo gene emergence'' OR ''de novo genes''] AND ''causal role'' ' yields only 10 results in March 2019, whereas 1050 results are found when the AND clause is lacking.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is evidence from a Google Scholar search.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:08:06.892867Z"
+    },
+    {
+      "id": "3f416974-06fe-4914-be50-c4b97984d9bd",
+      "content_id": "82cdf482-07e5-4b1b-a503-e8e0ec304a24",
+      "claim_id": "C113",
+      "claim": "The methodology of iterative model construction used is known in the social sciences as the constant comparative method of the grounded theory.",
+      "claim_type": "EXPLICIT",
+      "source": "This methodology of iterative model construction is known in the social sciences as the constant comparative method of the grounded theory (Glaser and Strauss, 1967).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the methodological approach with citation to Glaser and Strauss, 1967.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:08:06.892867Z"
+    },
+    {
+      "id": "3a75105e-5b64-4d39-92ea-d2d4757a8478",
+      "content_id": "82cdf482-07e5-4b1b-a503-e8e0ec304a24",
+      "claim_id": "C114",
+      "claim": "The Pittsburgh model is named after the geographical location where the model crystallized at the occasion of a collaborative retreat.",
+      "claim_type": "EXPLICIT",
+      "source": "This work resulted in a structured classification of the meanings of function specifically adapted to the de novo gene birth literature, which we named the Pittsburgh model of function after the geographical location where the model crystallized at the occasion of a collaborative retreat between our team members.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This explains the origin of the model's name.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:08:06.892867Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "307f382e-1c4e-4262-aa9d-b5284c375744",
+      "content_id": "82cdf482-07e5-4b1b-a503-e8e0ec304a24",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The authors developed the 'Pittsburgh model' of function through iterative qualitative analysis of 20 abstracts from de novo gene birth literature, identifying five meanings of function (Expression, Capacities, Interactions, Physiological Implications, and Evolutionary Implications) organized hierarchically. The model was constructed using mixed methods adapted from rhetorical studies and grounded theory, analyzing 42 instances of the word 'function' across abstracts representing ~2% of the field's literature.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2, C43, C100-C108, C113-C114 provide clear methodological details about sample selection, analysis approach, and model construction. Claims C44-C45, C48-C52 describe the model's structure and rationale. Claims C63-C67 appropriately acknowledge limitations including small sample size, field-specificity, and potential incompleteness. The iterative qualitative methodology is well-documented and appropriate for the research question.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:08:06.892867Z"
+    },
+    {
+      "id": "09d57298-682b-494e-9c0b-4cf39730415f",
+      "content_id": "82cdf482-07e5-4b1b-a503-e8e0ec304a24",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Independent coding by four readers showed that only 12% (5/42) of function instances received unanimous single-meaning assignments, with 88% (37/42) interpreted differently by team members. After consensus discussion, 62% (26/42) received single meanings while 38% (16/42) retained multiple meanings. Physiological Implications (21 instances) and Evolutionary Implications (18 instances) were most frequent, often co-occurring (6 instances).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C68-C83 present specific quantitative findings with exact counts and percentages consistently reported. The progression from independent to consensus coding is clearly documented with Figure 1 providing visual support. The finding that 50% of instances were interpreted differently by at least one reader (C78) and 38% retained multiple meanings even after consensus (C79) provides strong evidence for the ambiguity of 'function' in this literature.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:08:06.892867Z"
+    },
+    {
+      "id": "af897814-9102-4088-912e-cc8928c9159b",
+      "content_id": "82cdf482-07e5-4b1b-a503-e8e0ec304a24",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The unspecified use of 'function' in de novo gene birth literature is hard to interpret and hinders scientific communication, with the word carrying convoluted meanings that complicate scientific conversation. The authors conclude that function becomes ambiguous when applied to de novo gene birth.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C84-C88 represent conclusions directly supported by the quantitative findings in C71-C80. The high rate of divergent interpretations (88% initially, 38% after consensus) and the demonstration that readers assign different meanings to the same instances provide strong empirical support for these interpretative conclusions. Citation to prior work (C86) appropriately contextualizes these findings.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:08:06.892867Z"
+    },
+    {
+      "id": "919eb888-f89b-4c56-b87f-ab7844c8dc1f",
+      "content_id": "82cdf482-07e5-4b1b-a503-e8e0ec304a24",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The word 'function' has multiple meanings in molecular biology, with evolutionary biologists typically defining it in terms of selection (selected effect) while molecular geneticists and biochemists associate it with molecular activity (causal role). This ambiguity has led to controversies such as the ENCODE debate about genome functionality, and reflects ongoing philosophical debates about biological function.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C3-C16 establish the background context through appropriate citations to the ENCODE debate (C7) and philosophical literature (C11-C15). The characterizations of how different disciplines understand function (C8-C9) are presented as general knowledge appropriately supported by the cited literature. This provides well-established motivation for the study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:08:06.892867Z"
+    },
+    {
+      "id": "4a448a07-7d16-47e8-b91d-ddd738df4b01",
+      "content_id": "82cdf482-07e5-4b1b-a503-e8e0ec304a24",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The debate about function has sparked productive studies at the interface of evolutionary biology and genomics, but only a small fraction of biologists are aware of the rhetorical context, most publications don't define 'function,' and there is conflation between what is 'functional' and what 'matters' in biological research. Scientists cannot agree on basic questions like the number of functional genes in the human genome.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C17-C20 are supported by specific citations to studies. Claims C21-C22 are reasonable inferences about field awareness. Claims C23-C24 describe observable patterns in scientific practice. Claims C25-C27 are supported by citations documenting ongoing disagreements. Together these establish the practical importance of the ambiguity problem.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:08:06.892867Z"
+    },
+    {
+      "id": "842e9040-7945-46d9-ba85-1a3e53cf93ae",
+      "content_id": "82cdf482-07e5-4b1b-a503-e8e0ec304a24",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "De novo gene birth research studies how new functional genes emerge without gene ancestors, making it a particularly challenging case for defining function because emerging sequences transition between non-functional and functional states and cannot have function by the strict selected effect definition at birth. The field is interdisciplinary, young, and lacks commonly accepted jargon, making it well-suited for studying how multiple meanings of function affect scientific communication.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C28-C31 accurately describe the de novo gene birth field with appropriate citations. Claims C32-C38 present logical arguments about why function is particularly problematic in this context, supported by philosophical citations (C37). Claims C39-C42 characterize the field and justify the study design. The reasoning is sound and well-supported.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:08:06.892867Z"
+    },
+    {
+      "id": "94217515-b34a-4350-adf1-bbb6e5bcdf1d",
+      "content_id": "82cdf482-07e5-4b1b-a503-e8e0ec304a24",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The Pittsburgh model acknowledges complex relationships between the five meanings of function, recognizing that Expression is not sufficient to cause Evolutionary Implications, that different experimental techniques inform different meanings, and that the meanings can be described independently. The model deliberately uses broad definitions for Physiological and Evolutionary Implications to allow descriptions beyond the restrictive notion of selected effect.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C46-C47 establish logical relationships between model components with appropriate citation (C46). Claims C53-C58 correctly describe what different experimental techniques measure and their limitations based on established knowledge. Claims C59-C62 describe design features of the model. These claims are logically consistent and appropriately supported.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:08:06.892867Z"
+    },
+    {
+      "id": "15673c2a-abd3-46db-8830-d86f90e1365c",
+      "content_id": "82cdf482-07e5-4b1b-a503-e8e0ec304a24",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The authors recommend that scientists acknowledge the diversity of perspectives in the field and adapt their writing accordingly, endorsing qualifying the use of function or avoiding it altogether. They propose that function is a contingent concept dependent on scientific practices that will continue to evolve, and encourage refinement of the model and future interdisciplinary conversations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C89-C92 present reasonable recommendations based on the empirical findings. Claims C93-C96 offer theoretical perspectives on the nature of scientific concepts that are consistent with the study's findings. Claims C97-C99 suggest future directions appropriately. These recommendations and perspectives follow logically from the demonstrated ambiguity of function in the literature.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:08:06.892867Z"
+    },
+    {
+      "id": "a96d4ab7-f647-4737-b3d9-dc24d2f99ec3",
+      "content_id": "82cdf482-07e5-4b1b-a503-e8e0ec304a24",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The existing selected effect/causal role binary model has contentious philosophical implications related to teleology and problematically mutes complex ontological relationships while leaving theoretical assumptions implicit. Evidence from Google Scholar searches shows limited adoption of 'causal role' terminology in de novo gene birth literature (10 results with the term vs. 1050 without).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C109-C110 present critiques of the binary model supported by appropriate philosophical citations. Claims C111-C112 provide empirical evidence from Google Scholar searches documenting limited adoption of the philosophical terminology in the field. This supports the rationale for developing a field-specific alternative model.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:08:06.892867Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "71e81b52-f706-4413-8720-0114d00a7252",
+      "result_id": "307f382e-1c4e-4262-aa9d-b5284c375744"
+    },
+    {
+      "claim_id": "8f56a5a8-c835-48df-93a0-80912be9e7c1",
+      "result_id": "307f382e-1c4e-4262-aa9d-b5284c375744"
+    },
+    {
+      "claim_id": "45057bbb-10f8-46f4-a4b4-3ee085bf688f",
+      "result_id": "307f382e-1c4e-4262-aa9d-b5284c375744"
+    },
+    {
+      "claim_id": "ddff8049-963a-4dbb-8444-82ecf296fbbd",
+      "result_id": "307f382e-1c4e-4262-aa9d-b5284c375744"
+    },
+    {
+      "claim_id": "f2f3ae98-1c31-40ac-b17e-64c2932b1d5f",
+      "result_id": "307f382e-1c4e-4262-aa9d-b5284c375744"
+    },
+    {
+      "claim_id": "4b3fe52c-4e5e-46c1-961a-0e5afeb99e68",
+      "result_id": "307f382e-1c4e-4262-aa9d-b5284c375744"
+    },
+    {
+      "claim_id": "a93f3ab0-fb72-42d5-8d80-507d5f439a9c",
+      "result_id": "307f382e-1c4e-4262-aa9d-b5284c375744"
+    },
+    {
+      "claim_id": "29b02016-39c6-4bf8-a458-9ce4a1d9e255",
+      "result_id": "307f382e-1c4e-4262-aa9d-b5284c375744"
+    },
+    {
+      "claim_id": "76cec67e-79fa-4910-8cce-d0ad7f674874",
+      "result_id": "307f382e-1c4e-4262-aa9d-b5284c375744"
+    },
+    {
+      "claim_id": "f0980db4-0401-410e-8c2e-6021e104fae0",
+      "result_id": "307f382e-1c4e-4262-aa9d-b5284c375744"
+    },
+    {
+      "claim_id": "cb2eee72-d284-4bb1-ba16-5af068870b00",
+      "result_id": "307f382e-1c4e-4262-aa9d-b5284c375744"
+    },
+    {
+      "claim_id": "d59fb7bb-2624-4e1d-bdb8-198ad5d2096e",
+      "result_id": "307f382e-1c4e-4262-aa9d-b5284c375744"
+    },
+    {
+      "claim_id": "a3c4ef36-e88a-48ca-9365-5f762933a0bb",
+      "result_id": "307f382e-1c4e-4262-aa9d-b5284c375744"
+    },
+    {
+      "claim_id": "07dd3926-e3e1-4838-8f61-59df9c08cc50",
+      "result_id": "307f382e-1c4e-4262-aa9d-b5284c375744"
+    },
+    {
+      "claim_id": "a8316fbb-ea1f-43bb-a3b4-0f09fe22c465",
+      "result_id": "307f382e-1c4e-4262-aa9d-b5284c375744"
+    },
+    {
+      "claim_id": "a11ddcd7-4342-4326-83ce-32e7fed1613f",
+      "result_id": "307f382e-1c4e-4262-aa9d-b5284c375744"
+    },
+    {
+      "claim_id": "82e4ffaa-b2e4-4add-bec2-d46b249f9f21",
+      "result_id": "307f382e-1c4e-4262-aa9d-b5284c375744"
+    },
+    {
+      "claim_id": "5dad240f-7711-4538-8ee9-1d58219a385b",
+      "result_id": "307f382e-1c4e-4262-aa9d-b5284c375744"
+    },
+    {
+      "claim_id": "3301f8e5-e37f-48ff-affc-7720f5e10fa1",
+      "result_id": "307f382e-1c4e-4262-aa9d-b5284c375744"
+    },
+    {
+      "claim_id": "3b0fb37c-4725-48d4-a4ff-f634fbd8b593",
+      "result_id": "307f382e-1c4e-4262-aa9d-b5284c375744"
+    },
+    {
+      "claim_id": "5909e25a-63b0-4d13-9a20-f23cde0b2dd8",
+      "result_id": "307f382e-1c4e-4262-aa9d-b5284c375744"
+    },
+    {
+      "claim_id": "53a66d34-986e-4e72-92fc-59a3aa95ca13",
+      "result_id": "307f382e-1c4e-4262-aa9d-b5284c375744"
+    },
+    {
+      "claim_id": "406d3294-b05c-43a1-a9b4-b61cd68d1d15",
+      "result_id": "307f382e-1c4e-4262-aa9d-b5284c375744"
+    },
+    {
+      "claim_id": "3f416974-06fe-4914-be50-c4b97984d9bd",
+      "result_id": "307f382e-1c4e-4262-aa9d-b5284c375744"
+    },
+    {
+      "claim_id": "3a75105e-5b64-4d39-92ea-d2d4757a8478",
+      "result_id": "307f382e-1c4e-4262-aa9d-b5284c375744"
+    },
+    {
+      "claim_id": "5e93f6a7-a1f7-4ac6-b8c2-5a622b461f09",
+      "result_id": "09d57298-682b-494e-9c0b-4cf39730415f"
+    },
+    {
+      "claim_id": "702f73d1-eeab-4d25-81c6-b300728cd904",
+      "result_id": "09d57298-682b-494e-9c0b-4cf39730415f"
+    },
+    {
+      "claim_id": "8733ff69-458f-4301-b745-35547ea9832e",
+      "result_id": "09d57298-682b-494e-9c0b-4cf39730415f"
+    },
+    {
+      "claim_id": "c732495a-b14a-4a4d-a7b5-0d9a446eab3e",
+      "result_id": "09d57298-682b-494e-9c0b-4cf39730415f"
+    },
+    {
+      "claim_id": "8c48d25c-3796-44d9-8a9c-ae6944e90e92",
+      "result_id": "09d57298-682b-494e-9c0b-4cf39730415f"
+    },
+    {
+      "claim_id": "78650aa2-5c59-49d5-8421-0a4a88a906a6",
+      "result_id": "09d57298-682b-494e-9c0b-4cf39730415f"
+    },
+    {
+      "claim_id": "c2dba534-1c9f-4bf2-84c2-208fe81bddf6",
+      "result_id": "09d57298-682b-494e-9c0b-4cf39730415f"
+    },
+    {
+      "claim_id": "c89f8f93-5ed3-458a-9931-1ebf8897bdd1",
+      "result_id": "09d57298-682b-494e-9c0b-4cf39730415f"
+    },
+    {
+      "claim_id": "4ff5c2da-5289-4446-bd56-eb73770507ec",
+      "result_id": "09d57298-682b-494e-9c0b-4cf39730415f"
+    },
+    {
+      "claim_id": "6f0c6cf5-dfc1-467f-83b0-3c760ad93c14",
+      "result_id": "09d57298-682b-494e-9c0b-4cf39730415f"
+    },
+    {
+      "claim_id": "006923b5-9b70-4e16-a8c9-a8572204e627",
+      "result_id": "09d57298-682b-494e-9c0b-4cf39730415f"
+    },
+    {
+      "claim_id": "1ba900b7-9dc1-4b9b-8d3e-398f7f8889cb",
+      "result_id": "09d57298-682b-494e-9c0b-4cf39730415f"
+    },
+    {
+      "claim_id": "5db97908-a638-42fe-b861-8df66ca58e02",
+      "result_id": "09d57298-682b-494e-9c0b-4cf39730415f"
+    },
+    {
+      "claim_id": "2dfd1c26-4f74-45c3-90ca-02fc5d114a87",
+      "result_id": "09d57298-682b-494e-9c0b-4cf39730415f"
+    },
+    {
+      "claim_id": "46d72dd7-85b0-4acc-b7cd-17a33aebb4ae",
+      "result_id": "09d57298-682b-494e-9c0b-4cf39730415f"
+    },
+    {
+      "claim_id": "3e2ab473-0d27-4d6f-9df9-e89db37b8245",
+      "result_id": "09d57298-682b-494e-9c0b-4cf39730415f"
+    },
+    {
+      "claim_id": "92084aad-901f-4374-97c4-49c5afe3de59",
+      "result_id": "af897814-9102-4088-912e-cc8928c9159b"
+    },
+    {
+      "claim_id": "d2e17a48-7d91-404a-be4a-ee277434a948",
+      "result_id": "af897814-9102-4088-912e-cc8928c9159b"
+    },
+    {
+      "claim_id": "cdd8752d-cb93-4c9a-910e-e66ed2951c35",
+      "result_id": "af897814-9102-4088-912e-cc8928c9159b"
+    },
+    {
+      "claim_id": "c50fd4e9-b185-4ff0-99b5-9b49aac67196",
+      "result_id": "af897814-9102-4088-912e-cc8928c9159b"
+    },
+    {
+      "claim_id": "fecb01d4-a0dc-4bbd-933a-8befcf8af494",
+      "result_id": "af897814-9102-4088-912e-cc8928c9159b"
+    },
+    {
+      "claim_id": "686caa42-2c42-4cba-b982-ee5cff12692b",
+      "result_id": "919eb888-f89b-4c56-b87f-ab7844c8dc1f"
+    },
+    {
+      "claim_id": "453c5439-4d5c-4bfd-b6d5-a9a795455429",
+      "result_id": "919eb888-f89b-4c56-b87f-ab7844c8dc1f"
+    },
+    {
+      "claim_id": "e544068c-7d62-403b-82d3-784571b44b37",
+      "result_id": "919eb888-f89b-4c56-b87f-ab7844c8dc1f"
+    },
+    {
+      "claim_id": "82f33aea-2538-4b3d-baa0-0849bca2567d",
+      "result_id": "919eb888-f89b-4c56-b87f-ab7844c8dc1f"
+    },
+    {
+      "claim_id": "1f3bea92-20db-45c8-ad97-f6a3ed184c47",
+      "result_id": "919eb888-f89b-4c56-b87f-ab7844c8dc1f"
+    },
+    {
+      "claim_id": "dd0f4d08-7141-4ada-812b-e378ed07f6a7",
+      "result_id": "919eb888-f89b-4c56-b87f-ab7844c8dc1f"
+    },
+    {
+      "claim_id": "50b36ae5-2f22-4f17-8bef-e54e7461b7f4",
+      "result_id": "919eb888-f89b-4c56-b87f-ab7844c8dc1f"
+    },
+    {
+      "claim_id": "fcec967f-41c7-43c8-a1a3-34e8fab63772",
+      "result_id": "919eb888-f89b-4c56-b87f-ab7844c8dc1f"
+    },
+    {
+      "claim_id": "ceb8ed25-30df-4ee1-b294-926273a1ec16",
+      "result_id": "919eb888-f89b-4c56-b87f-ab7844c8dc1f"
+    },
+    {
+      "claim_id": "39e70a8f-66bb-40c0-bbd1-e1fa58fbb904",
+      "result_id": "919eb888-f89b-4c56-b87f-ab7844c8dc1f"
+    },
+    {
+      "claim_id": "2151c297-6387-482c-adc1-a1e33687ce5d",
+      "result_id": "919eb888-f89b-4c56-b87f-ab7844c8dc1f"
+    },
+    {
+      "claim_id": "d77b6cb4-2159-4815-bde5-430eb2ceb8fe",
+      "result_id": "919eb888-f89b-4c56-b87f-ab7844c8dc1f"
+    },
+    {
+      "claim_id": "80b0c0bc-1eba-4740-a779-9a6e9f3ad2ca",
+      "result_id": "919eb888-f89b-4c56-b87f-ab7844c8dc1f"
+    },
+    {
+      "claim_id": "d66cbd3b-6d52-4c3f-860c-deee2d4bad88",
+      "result_id": "919eb888-f89b-4c56-b87f-ab7844c8dc1f"
+    },
+    {
+      "claim_id": "21596913-3bb6-4991-8cbc-d2a065be71f7",
+      "result_id": "919eb888-f89b-4c56-b87f-ab7844c8dc1f"
+    },
+    {
+      "claim_id": "60fe2a31-bcc8-4493-8246-e2c947af2ebb",
+      "result_id": "4a448a07-7d16-47e8-b91d-ddd738df4b01"
+    },
+    {
+      "claim_id": "a620a678-bf45-4086-91c5-6924cccf7f08",
+      "result_id": "4a448a07-7d16-47e8-b91d-ddd738df4b01"
+    },
+    {
+      "claim_id": "9f07d716-fe5c-4193-a455-729d72edfcf8",
+      "result_id": "4a448a07-7d16-47e8-b91d-ddd738df4b01"
+    },
+    {
+      "claim_id": "361055a8-2a47-4288-a886-b4ad9d4af2f8",
+      "result_id": "4a448a07-7d16-47e8-b91d-ddd738df4b01"
+    },
+    {
+      "claim_id": "7b74c904-d8d6-438c-91c7-a81d5fb8777e",
+      "result_id": "4a448a07-7d16-47e8-b91d-ddd738df4b01"
+    },
+    {
+      "claim_id": "616c0296-1e39-462f-be15-a02f2d73dca9",
+      "result_id": "4a448a07-7d16-47e8-b91d-ddd738df4b01"
+    },
+    {
+      "claim_id": "3964d1c7-fa8f-4001-a09d-d1e914c72540",
+      "result_id": "4a448a07-7d16-47e8-b91d-ddd738df4b01"
+    },
+    {
+      "claim_id": "f2b02433-1228-42de-a94e-b1f4735141c6",
+      "result_id": "4a448a07-7d16-47e8-b91d-ddd738df4b01"
+    },
+    {
+      "claim_id": "0f9ee4f7-4827-43e0-b083-6577d856a879",
+      "result_id": "4a448a07-7d16-47e8-b91d-ddd738df4b01"
+    },
+    {
+      "claim_id": "f4f4acb3-65d0-4401-8ae3-7487967685f5",
+      "result_id": "4a448a07-7d16-47e8-b91d-ddd738df4b01"
+    },
+    {
+      "claim_id": "b6f5e719-2bb2-48ef-a720-2887b63664d5",
+      "result_id": "4a448a07-7d16-47e8-b91d-ddd738df4b01"
+    },
+    {
+      "claim_id": "8cef4860-366d-4f6c-bf59-55ccb78b8d67",
+      "result_id": "842e9040-7945-46d9-ba85-1a3e53cf93ae"
+    },
+    {
+      "claim_id": "b7d94dda-6812-41ea-ab92-9ddbb1bdc31a",
+      "result_id": "842e9040-7945-46d9-ba85-1a3e53cf93ae"
+    },
+    {
+      "claim_id": "68fc0282-a627-4005-a4f2-19e1980f4d4c",
+      "result_id": "842e9040-7945-46d9-ba85-1a3e53cf93ae"
+    },
+    {
+      "claim_id": "c1ed52db-bf43-4b07-be67-7945af42026e",
+      "result_id": "842e9040-7945-46d9-ba85-1a3e53cf93ae"
+    },
+    {
+      "claim_id": "0281bb68-566e-4053-bd1a-c09659c55554",
+      "result_id": "842e9040-7945-46d9-ba85-1a3e53cf93ae"
+    },
+    {
+      "claim_id": "8704a73d-5bc4-4989-aa7d-68f3fdd11049",
+      "result_id": "842e9040-7945-46d9-ba85-1a3e53cf93ae"
+    },
+    {
+      "claim_id": "eb400593-e7d3-4382-be48-95c84d621b82",
+      "result_id": "842e9040-7945-46d9-ba85-1a3e53cf93ae"
+    },
+    {
+      "claim_id": "b9e613b2-b353-45ce-8ebb-7a4f587d7f41",
+      "result_id": "842e9040-7945-46d9-ba85-1a3e53cf93ae"
+    },
+    {
+      "claim_id": "7b388181-f3fb-4a7a-8977-ef42d612aebb",
+      "result_id": "842e9040-7945-46d9-ba85-1a3e53cf93ae"
+    },
+    {
+      "claim_id": "372248f9-1cbb-478a-b18b-ab6783850af4",
+      "result_id": "842e9040-7945-46d9-ba85-1a3e53cf93ae"
+    },
+    {
+      "claim_id": "37c2db1c-fc9e-41a6-a3f8-0b53f4075d69",
+      "result_id": "842e9040-7945-46d9-ba85-1a3e53cf93ae"
+    },
+    {
+      "claim_id": "6fdb1cb3-5791-4a06-81ff-267262afc346",
+      "result_id": "842e9040-7945-46d9-ba85-1a3e53cf93ae"
+    },
+    {
+      "claim_id": "25ddae06-27f1-485c-a05d-43150c6d11ec",
+      "result_id": "842e9040-7945-46d9-ba85-1a3e53cf93ae"
+    },
+    {
+      "claim_id": "b3a27938-ae7b-4fe3-8374-e6405621ef1f",
+      "result_id": "842e9040-7945-46d9-ba85-1a3e53cf93ae"
+    },
+    {
+      "claim_id": "90eb0c5d-82b9-4f71-aed3-65fb29565d34",
+      "result_id": "842e9040-7945-46d9-ba85-1a3e53cf93ae"
+    },
+    {
+      "claim_id": "177d70a0-36ff-4fef-aebf-ed4a599dc70f",
+      "result_id": "94217515-b34a-4350-adf1-bbb6e5bcdf1d"
+    },
+    {
+      "claim_id": "bd8d8d3f-ca54-43f9-898c-786738d81d21",
+      "result_id": "94217515-b34a-4350-adf1-bbb6e5bcdf1d"
+    },
+    {
+      "claim_id": "ab3faaea-641c-4902-95fd-5781ba706d9f",
+      "result_id": "94217515-b34a-4350-adf1-bbb6e5bcdf1d"
+    },
+    {
+      "claim_id": "04e14e7b-b1d7-4723-9b35-076627ed919f",
+      "result_id": "94217515-b34a-4350-adf1-bbb6e5bcdf1d"
+    },
+    {
+      "claim_id": "f57cccd5-15f9-4a25-b443-1af7b24daf52",
+      "result_id": "94217515-b34a-4350-adf1-bbb6e5bcdf1d"
+    },
+    {
+      "claim_id": "1320dd0c-93dc-4662-bacb-7e3276789952",
+      "result_id": "94217515-b34a-4350-adf1-bbb6e5bcdf1d"
+    },
+    {
+      "claim_id": "661bb796-0121-4d89-b433-74c4af6c1275",
+      "result_id": "94217515-b34a-4350-adf1-bbb6e5bcdf1d"
+    },
+    {
+      "claim_id": "f929c10a-dfd7-4965-9e63-a506b3abdd99",
+      "result_id": "94217515-b34a-4350-adf1-bbb6e5bcdf1d"
+    },
+    {
+      "claim_id": "42bdf7bf-a32d-4e34-a0b1-7ac209c52b6c",
+      "result_id": "94217515-b34a-4350-adf1-bbb6e5bcdf1d"
+    },
+    {
+      "claim_id": "81b4bf28-b33c-49b2-909d-494696c096d9",
+      "result_id": "94217515-b34a-4350-adf1-bbb6e5bcdf1d"
+    },
+    {
+      "claim_id": "43997907-8bbf-47a5-b18b-c78e1ccd9cec",
+      "result_id": "94217515-b34a-4350-adf1-bbb6e5bcdf1d"
+    },
+    {
+      "claim_id": "fc4661ad-81ea-477b-b8d1-262217b5af78",
+      "result_id": "94217515-b34a-4350-adf1-bbb6e5bcdf1d"
+    },
+    {
+      "claim_id": "551093cf-fc7c-4617-8e06-b01570cef616",
+      "result_id": "15673c2a-abd3-46db-8830-d86f90e1365c"
+    },
+    {
+      "claim_id": "a5c9f74a-ac35-476a-b1ab-172d7f620729",
+      "result_id": "15673c2a-abd3-46db-8830-d86f90e1365c"
+    },
+    {
+      "claim_id": "504babf3-1ab9-4bb6-afe3-2d8ba757de69",
+      "result_id": "15673c2a-abd3-46db-8830-d86f90e1365c"
+    },
+    {
+      "claim_id": "c4674d4a-ccd4-4c02-962c-7fd6bd0e7399",
+      "result_id": "15673c2a-abd3-46db-8830-d86f90e1365c"
+    },
+    {
+      "claim_id": "65177e6d-c074-41e9-a492-f0441d17793f",
+      "result_id": "15673c2a-abd3-46db-8830-d86f90e1365c"
+    },
+    {
+      "claim_id": "4b808c08-d686-4b11-9b1d-a002fc293b85",
+      "result_id": "15673c2a-abd3-46db-8830-d86f90e1365c"
+    },
+    {
+      "claim_id": "118ca9f6-d5ba-4b46-9a73-058baf6ef0a8",
+      "result_id": "15673c2a-abd3-46db-8830-d86f90e1365c"
+    },
+    {
+      "claim_id": "5064322c-1a84-4204-ad96-e1bd7e9a4fab",
+      "result_id": "15673c2a-abd3-46db-8830-d86f90e1365c"
+    },
+    {
+      "claim_id": "787b7cb3-46c9-4c42-a45f-b8d035070aa4",
+      "result_id": "15673c2a-abd3-46db-8830-d86f90e1365c"
+    },
+    {
+      "claim_id": "3ba63d87-d630-4623-8970-f62cf51fd053",
+      "result_id": "15673c2a-abd3-46db-8830-d86f90e1365c"
+    },
+    {
+      "claim_id": "9503d42b-5d67-43ed-943f-a3e401d6e3dd",
+      "result_id": "15673c2a-abd3-46db-8830-d86f90e1365c"
+    },
+    {
+      "claim_id": "16617197-8637-4da9-b123-19ecbe819fa0",
+      "result_id": "a96d4ab7-f647-4737-b3d9-dc24d2f99ec3"
+    },
+    {
+      "claim_id": "530fe053-17fc-48b0-9178-38b95d7271d9",
+      "result_id": "a96d4ab7-f647-4737-b3d9-dc24d2f99ec3"
+    },
+    {
+      "claim_id": "deee77dc-727b-4de2-a818-e8f2fbabd18b",
+      "result_id": "a96d4ab7-f647-4737-b3d9-dc24d2f99ec3"
+    },
+    {
+      "claim_id": "1472521c-074d-4656-9645-97360f36e41e",
+      "result_id": "a96d4ab7-f647-4737-b3d9-dc24d2f99ec3"
+    }
+  ],
+  "comparisons": []
+}

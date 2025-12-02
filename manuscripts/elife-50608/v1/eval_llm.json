@@ -1,0 +1,423 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "The pea aphid male wing dimorphism maps to a single ~190 kb genomic region on the X chromosome. QTL analysis revealed a single LOD peak (LOD 10.8, threshold 3.6), FST analysis showed a single large FST value at the same location, and RFLP analysis narrowed the interval to ~190 kb. SNPs across this region segregated perfectly with male wing phenotype across multiple biotypes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Multiple independent mapping approaches (QTL, FST, RFLP, and cross-biotype association) all converge on the same genomic region with strong statistical support. The LOD score exceeds the permutation threshold, and perfect segregation across biotypes provides robust validation. The combination of linkage and association mapping provides strong evidence for a single locus.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C29",
+      "C39",
+      "C40",
+      "C41",
+      "C103",
+      "C104"
+    ],
+    "result": "A ~120 kb insertion is present in the wingless allele but absent from the winged allele, representing a derived structural variant. Long-read sequencing revealed this insertion in the wingless scaffold, comparative genomics showed the winged scaffold has synteny with other aphid species, and all 14 wingless individuals carried the insertion while all 9 winged individuals lacked it.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The insertion is supported by multiple lines of evidence: long-read sequencing assembly, pool-seq read depth analysis, comparative genomics with multiple aphid species, and perfect segregation across 23 individual genomes from multiple biotypes. The comparative analysis clearly establishes this as a derived insertion rather than a deletion in the winged allele.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "The ~120 kb insertion originated from duplication of an autosomal region, with approximately half showing similarity to an autosomal scaffold and the remainder composed of transposable element sequences that inserted after the duplication event.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "BLASTn analysis clearly identified the autosomal source of approximately half the insertion sequence. The characterization of the remainder as transposable elements is supported by sequence analysis and is consistent with the high TE content (38%) of the pea aphid genome. The temporal ordering (duplication followed by TE insertion) is a reasonable inference from the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C4",
+      "C48",
+      "C49",
+      "C50",
+      "C53",
+      "C54",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "The insertion contains a duplicated follistatin gene (fs-3) as the only non-repetitive ORF with homology to the autosomal source. Annotation predicted 12 ORFs, with 11 being transposable element remnants. The fs-3 gene shows high similarity to Drosophila follistatin and contains three follistatin-Kazal domains. Three fs homologs exist in pea aphid while other aphid species have only one.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The annotation and characterization of ORFs is well-supported by computational analysis. The identification of fs-3 as the only non-repetitive ORF with autosomal homology is clearly established. BLAST analysis provides strong evidence for follistatin homology (e-value 4e-43), and domain analysis confirms functional domains. The comparative genomic analysis across aphid species is appropriately conducted.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C5",
+      "C81",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "fs-3 is a strong candidate gene for causing the male wing dimorphism based on multiple lines of evidence: perfect presence/absence correlation with phenotype, purifying selection (dN/dS < 1), sequence conservation over thousands of generations, and expression at developmentally relevant timepoints.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The candidate gene argument is well-supported by converging evidence: genomic presence/absence perfectly correlates with phenotype, dN/dS analysis demonstrates purifying selection indicating functionality, and RT-PCR confirms expression at appropriate developmental stages. However, the authors appropriately acknowledge that functional validation (transgenic rescue or knockout) is required for definitive proof (C97, C82).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "fs-3 is expressed in wingless males at embryonic and early nymphal stages but not in winged males, consistent with the expected timing of morph determination. Expression occurs before morphological differentiation (2nd instar) and parallels the embryonic timing of female wing determination.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "RT-PCR data clearly demonstrate fs-3 expression in wingless males and absence in winged males across three developmental stages. The timing argument is well-reasoned based on cited literature about morphological differentiation timing and female polyphenism. The inference that api acts embryonically is logical given the parallel with female wing determination.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "Two follistatin duplication events occurred in the pea aphid lineage: an ancient duplication ~42 mya created fs-1 and fs-2/3, followed by a more recent duplication producing fs-2 and fs-3. The timing of the first duplication is supported by dS values (0.28-0.29) consistent with the pea aphid/peach-potato aphid divergence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The phylogenetic analysis clearly shows two duplication events with strong bootstrap support. The molecular clock calculations using dS values are appropriately calibrated against known divergence times and show good concordance. The observation that fs-2 and fs-3 are found only in pea aphid supports the evolutionary scenario, though the authors appropriately note alternative scenarios cannot be excluded given limited taxon sampling.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "All three fs paralogs (fs-1, fs-2, fs-3) are functional genes under purifying selection, with dN/dS values ranging from 0.03-0.21. While fs-3 is not essential for survival (winged males lack it), it appears to provide a selective advantage to carriers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The dN/dS analysis is appropriately conducted and clearly demonstrates purifying selection on all three paralogs. The inference that fs-3 is not essential is logically sound given that winged males survive without it. The conclusion that it provides a benefit is reasonable given its maintenance under purifying selection, though the specific nature of the advantage remains speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C6",
+      "C106",
+      "C107",
+      "C108",
+      "C105"
+    ],
+    "result": "Both winged and wingless alleles were present before pea aphid biotype diversification (~500,000 ya). Phylogenetic network analysis shows that within the api region, winged and wingless alleles are separated by a long branch, while biotypes cluster together, indicating the insertion predates biotype divergence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The phylogenetic network analysis provides clear evidence that allelic divergence at api is older than biotype divergence. The contrast between networks inside and outside the api region is striking and well-illustrated. The inference that the insertion predates biotype divergence is logically sound given the phylogenetic patterns and is further supported by the dS analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C7",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115"
+    ],
+    "result": "The api insertion occurred approximately 10 million years ago based on molecular clock estimates. The dS between fs-3 and fs-2 (0.068) and between api-adjacent genes in winged vs. wingless alleles (0.035-0.045) are an order of magnitude higher than typical between-biotype dS (0.0035) and comparable to pea aphid/rose aphid divergence (dS=0.08, ~13 mya).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The molecular clock analysis is appropriately calibrated using published divergence times and dS values for pea aphid/peach-potato aphid. The comparison of dS values across different genomic regions and taxonomic comparisons is well-designed. The age estimate of ~10 mya is reasonable given the data, though molecular clock assumptions (constant rate, no selection on synonymous sites) introduce some uncertainty that could be better acknowledged.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C8",
+      "C120",
+      "C117",
+      "C118"
+    ],
+    "result": "Both winged and wingless alleles have been maintained in the pea aphid lineage for millions of years, likely due to balancing selection. Currently, 9 of 12 biotypes exhibit both alleles (winged allele frequency 5-94%), while 3 biotypes have fixed the wingless allele.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The maintenance of both alleles for millions of years is well-supported by the age estimates and current distribution data. However, the claim of balancing selection is speculative and not directly tested. Alternative explanations (e.g., introgression between biotypes, recent selective sweeps in some biotypes) are not adequately evaluated. The pool-seq allele frequency estimates are reasonable but the sample sizes per biotype (14-35 individuals) may be insufficient to confidently distinguish true fixation from very low frequency polymorphism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "Five genes outside the insertion but within the api region show no strong evidence of contributing to the dimorphism. No nonsynonymous polymorphisms perfectly segregate with phenotype, as2 is not expressed in males, and four other genes (as1, sam50, frs2, cdg) show no significant differential expression after multiple testing correction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The analysis of flanking genes is thorough and appropriately conducted. The lack of perfectly segregating nonsynonymous polymorphisms is clearly established. The RT-qPCR analysis includes appropriate biological replicates (n=5) and statistical testing with multiple comparison correction. The conclusion that these genes lack strong evidence for involvement is justified, though regulatory mutations cannot be completely ruled out as the authors acknowledge.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "High sequence divergence exists between winged and wingless alleles in flanking regions (~6% divergence plus indels of 1-920 bp in 10 kb flanking the insertion), with many SNPs strongly associated with male phenotype.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The sequence divergence in flanking regions is clearly documented and appropriately quantified. The association of flanking SNPs with phenotype is demonstrated in Figure 2\u2014figure supplement 1. This divergence is consistent with the ancient age of the polymorphism and reduced recombination in the region. However, the functional significance of this flanking divergence remains unclear.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "Based on Drosophila studies, fs-3 might cause winglessness through two potential mechanisms: (1) negatively regulating cell proliferation in wings/musculature, as fs overexpression causes smaller wings in Drosophila, or (2) modulating ecdysone signaling, which regulates the female wing dimorphism in pea aphids.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The mechanistic hypotheses are reasonable extrapolations from Drosophila functional studies, but remain speculative for pea aphids. The connection to ecdysone signaling is intriguing given its role in female wing polyphenism, but this is purely hypothetical without direct evidence in males. The authors appropriately present these as possibilities rather than established mechanisms, but functional validation in pea aphids is needed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C97"
+    ],
+    "result": "Transgenic rescue or mutational knockout experiments are required to definitively determine whether fs-3 causes the male wing polymorphism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This is an appropriate acknowledgment of the limitations of the current study. While the correlative and circumstantial evidence for fs-3 is strong, functional validation through genetic manipulation is indeed necessary for definitive proof of causation. This represents important future work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C119"
+    ],
+    "result": "Inter-biotype variation in allele frequencies raises the possibility that specialization on distinct legume hosts may influence male wing dimorphism variation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "This is an interesting hypothesis based on the observed variation in allele frequencies across biotypes with different host plant specializations. However, this is purely speculative without any direct evidence linking host plant ecology to male wing morph fitness. Alternative explanations (genetic drift, population history, other ecological factors) are not evaluated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C116"
+    ],
+    "result": "Given the ancient age of the insertion (~10 mya), the api region could be responsible for wingless male phenotypes in other related aphid species beyond pea aphids.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "This is a reasonable hypothesis given the age of the insertion, but is speculative without data from other species. The authors mention Acyrthosiphon auctum as a candidate species to test this hypothesis. This represents an interesting direction for future research but is not supported by current data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C61",
+      "C62"
+    ],
+    "result": "fs-1 has a slower rate of evolutionary change compared to fs-2/fs-3, suggesting it likely retains the ancestral follistatin function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The phylogenetic analysis clearly shows differential rates of evolution between fs-1 and the fs-2/fs-3 lineage. The inference that slower evolution indicates retention of ancestral function is reasonable under standard evolutionary theory, though functional studies would be needed to confirm the actual biochemical functions of each paralog.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C122",
+      "C123"
+    ],
+    "result": "This work demonstrates that a dramatic phenotypic difference is due to a relatively old insertion containing a gene duplicate, supporting the role of mutations of large effect in adaptive evolution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The study clearly demonstrates that a large structural variant (120 kb insertion with gene duplication) underlies a major morphological polymorphism that has been maintained for millions of years. This provides a clear example of a large-effect mutation in adaptive evolution, contributing to the ongoing debate about the genetic architecture of adaptation. The conclusion is well-supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C1",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "Pea aphid males exhibit a genetically determined wing dimorphism controlled by a single X-linked locus (aphicarus/api), with winged and wingless morphs differing in correlated anatomical and behavioral traits. Males are XO and carry only one allele.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims describe well-established background knowledge about the pea aphid male wing dimorphism, supported by multiple citations to previous literature. The genetic determination and X-linkage were established in prior work (Braendle et al., 2005; Caillaud et al., 2002). The current study builds on this foundation to identify the molecular basis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "Wing dimorphisms are widespread in insects, often controlled by simple genetic architectures (single locus in many species), and represent evolutionary trade-offs between dispersal and reproduction. Despite their importance, no wing dimorphism loci had been molecularly characterized prior to this study.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims provide important context from the literature about the prevalence and significance of wing dimorphisms in insects. All claims are appropriately supported by citations to previous work. The statement that no loci had been characterized (C16) provides important motivation for the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "The pea aphid is a species complex with up to 15 host-specialized biotypes that began diverging ~500,000 years ago, with limited gene flow between biotypes and some described as incipient species.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims describe the pea aphid species complex and are appropriately supported by citations to previous literature. The divergence time estimate is noted to be uncertain (\"but see Peccoud et al., 2009b\"), appropriately acknowledging controversy in the literature. This background is important for interpreting the evolutionary analysis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "The wingless male phenotype is likely the derived phenotype in pea aphids, as most closely related species produce only winged males.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The phylogenetic comparison (Figure 1\u2014figure supplement 3) clearly shows that most related species have only winged males, making winglessness the derived state by parsimony. This inference is consistent with the finding that the insertion (associated with winglessness) is derived. The logic is sound though formal ancestral state reconstruction could strengthen the conclusion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C60"
+    ],
+    "result": "The peach-potato aphid diverged from the pea aphid over 40 million years ago.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This divergence time estimate is appropriately cited to previous literature (Kim et al., 2011) and is used as a calibration point for molecular clock analyses in the current study. This represents established knowledge from prior phylogenetic work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C23"
+    ],
+    "result": "Environmental cues like high density and low food quality lead to the production of winged versus wingless female morphs in pea aphids.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This describes the well-established environmental determination of the female wing polyphenism in aphids, appropriately cited to previous work (Dixon, 1973). This provides important contrast to the genetic determination of the male dimorphism studied here.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C51",
+      "C52"
+    ],
+    "result": "38% of the pea aphid genome is derived from transposable element sequences, so the api insertion is not unique in containing these elements.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This contextualizes the TE content of the insertion relative to the genome-wide TE content, appropriately cited to the original genome paper. This is important for interpreting the significance of finding TEs in the insertion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C121",
+      "C124",
+      "C125"
+    ],
+    "result": "This study represents an important breakthrough in understanding wing dimorphism evolution. Structural variants underlying morphological adaptations have been underdetected due to technological limitations, but long-read sequencing will likely uncover more cases in the future.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The assessment of the study's significance is reasonable given that this is the first molecular characterization of a wing dimorphism locus despite their widespread occurrence. The point about technological limitations is well-taken and appropriately supported by citations to other structural variant discoveries. The prediction about future discoveries is reasonable speculation based on technological trends.",
+    "result_type": "MINOR"
+  }
+]

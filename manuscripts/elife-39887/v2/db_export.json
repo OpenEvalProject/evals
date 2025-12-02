@@ -1,0 +1,1753 @@
+{
+  "submission": {
+    "id": "0c131761-0aba-4054-92ae-a12192e99ff5",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T06:38:23.490696Z",
+    "updated_at": "2025-12-02T06:38:23.490696Z"
+  },
+  "content": [
+    {
+      "id": "8e8ecc1c-a66c-41a8-9878-338691db7bdc",
+      "submission_id": "0c131761-0aba-4054-92ae-a12192e99ff5",
+      "content_type": "manuscript",
+      "content_text": "# Characterization of a Toxoplasma effector uncovers an alternative GSK3/\u03b2-catenin-regulatory pathway of inflammation\n\n## Authors\n\n- Huan He<sup>1</sup>\n- Marie-Pierre Brenier-Pinchart<sup>1</sup>\n- Laurence Braun<sup>1</sup>\n- Alexandra Kraut<sup>2</sup>\n- Bastien Touquet<sup>3</sup>\n- Yohann Cout\u00e9<sup>2</sup> ([ORCID: 0000-0003-3896-6196](https://orcid.org/0000-0003-3896-6196))\n- Isabelle Tardieux<sup>3</sup> ([ORCID: 0000-0002-5677-7463](https://orcid.org/0000-0002-5677-7463))\n- Mohamed-Ali Hakimi<sup>1</sup> ([ORCID: 0000-0002-2547-8233](https://orcid.org/0000-0002-2547-8233)) \u2020\n- Alexandre Bougdour<sup>1</sup> ([ORCID: 0000-0002-5895-0020](https://orcid.org/0000-0002-5895-0020)) \u2020\n\n### Affiliations\n\n1. Team Host-pathogen interactions & immunity to infection University of Grenoble Alpes, Inserm, CNRS, IAB Grenoble France\n2. University of Grenoble Alpes CEA, Inserm, BIG-BGE Grenoble France\n3. Team Membrane and Cell Dynamics of Host Parasite Interactions University of Grenoble Alpes, Inserm, CNRS, IAB Grenoble France\n\n\u2020 Corresponding author\n\n## Abstract\n\nThe intracellular parasite Toxoplasma gondii, hijacks evolutionarily conserved host processes by delivering effector proteins into the host cell that shift gene expression in a timely fashion. We identified a parasite dense granule protein as GRA18 that once released in the host cell cytoplasm forms versatile complexes with regulatory elements of the \u03b2-catenin destruction complex. By interacting with GSK3/PP2A-B56, GRA18 drives \u03b2-catenin up-regulation and the downstream effects on host cell gene expression. In the context of macrophages infection, GRA18 induces the expression of a specific set of genes commonly associated with an anti-inflammatory response that includes those encoding chemokines CCL17 and CCL22. Overall, this study adds another original strategy by which T. gondii tachyzoites reshuffle the host cell interactome through a GSK3/\u03b2-catenin axis to selectively reprogram immune gene expression.\n\n## Introduction\n\nToxoplasma gondii is the causative agent of toxoplasmosis, a widespread parasitic disease in humans which has been recognized as leading cause of deaths attributed to foodborne illness in the United States (Scallan et al., 2015). Severe to life-threatening Toxoplasmosis mainly occur in immunocompromised people, with acquired immunodeficiency syndrome or under chemo- and graft rejection therapies (Montoya and Liesenfeld, 2004). In addition, outcomes of congenital toxoplasmosis significantly vary with the timing of infection from recurrent eye diseases to adverse motor or neurologic impairments that can cause stillbirth (Halonen and Weiss, 2013). T. gondii belongs to the protozoan phylum Apicomplexa and as most Apicomplexa species, develops and proliferates inside a surrogate host cell. Remarkably, T. gondii\u2019s host range is exceptionally broad since it can infect virtually all nucleated cells of mammals, marsupials and birds (Dubey, 2009).\n\nTo achieve intracellular lifestyle, the invasive tachyzoite stage of T. gondii triggers the formation of a unique membrane-bound compartment called the Parasitophorous Vacuole (PV). The PV is shaped as a niche kept hidden from harmful endocytic processing thereby enabling tachyzoite growth and multiplication (Jones et al., 1972; Mordue et al., 1999). In the last decade, several studies have highlighted the contribution of parasite effectors delivered in the host cell at the very onset of-or post-invasion to promote folding and maturation of a functional PV (Delorme-Walker et al., 2012; Hakimi et al., 2017). Effectors are released from two specialized sets of secretory organelles including the pear-shaped rhoptries that contain the ROP16 and ROP38 effectors and the spherical Dense Granules (DG) in which GRA15, GRA16, GRA24, TgIST, GRA6, and GRA25 proteins are stored (Hakimi et al., 2017). Once delivered in the host cell, these effectors either remain exposed at the cytoplasmic side of the PV Membrane (PVM) or cross the PVM and travel in the cytoplasm. Interestingly, members of the second class (i.e. GRA16, GRA24, and TgIST) have all been assigned the host nucleus as final destination where they target distinct host regulators to modulate the expression of specific sets of genes.\n\nThe comprehensive analysis of how the cohort of effectors interplay during infection at cellular and host levels remains a major challenge which implies identifying and functionally characterizing the T. gondii effector repertoire in given cellular and host contexts. With this concern, we searched for new effectors and characterized GRA18 as the first DG protein that strictly remains in the host cell cytoplasm once delivered from the PV-enclosed tachyzoite. We provide evidence that the exported GRA18 is part of multi-partner - that\u00a0is,\u00a0versatile - complexes, specifically formed with components of the \u03b2-catenin destruction complex, which includes \u03b2-catenin, GSK3\u03b1/\u03b2, and the PR56/B\u2019-containing PP2A holoenzyme and as such prevents the continual elimination of \u03b2-catenin. Accordingly, in presence of GRA18, cytoplasmic \u03b2-catenin travels to and accumulates in the host cell nucleus where it activates otherwise repressed target genes. Nuclear \u03b2-catenin is known as the main effector of the canonical Wnt signaling pathway, acting as a coactivator of the Lymphoid Enhancer-binding Factor (LEF) or T Cell Factor (TCF) proteins to drive Wnt-specific transcriptional programs depending on cell lineages (Cadigan and Waterman, 2012; Schuijers et al., 2014). In murine macrophages, we showed that GRA18 induces in a \u03b2-catenin-dependent fashion the expression of a particular set of chemokines, that\u00a0is, Ccl17, Ccl22, and Ccl24, notoriously known associated with anti-inflammatory effects (Biswas and Mantovani, 2010; Mantovani et al., 2004), but which have yet not been identified as \u03b2-catenin targets. In addition to discovering T. gondii GRA18, its partners and the down signaling pathway in the course of infection, this work also uncovers an unexpected involvement of \u03b2-catenin during the resolution of inflammatory processes.\n\n## Results\n\n### GRA18 is secreted and exported to the cytoplasm of infected host cells\n\nThe gene TGGT1_288840, hereafter referred as GRA18, was originally found along with the previously characterized genes GRA16, GRA24, and TgIST in an in silico search for candidate genes encoding proteins delivered by tachyzoites into host cells (Bougdour et al., 2013; Braun et al., 2013; Gay et al., 2016). GRA18 protein accommodates both a signal peptide for targeting to the secretory pathway and a canonical TEXEL motif found on PV residing proteins (i.e. GRAs proteins), some of which traffic across the PVM to reach the host cell cytoplasm (Coffey et al., 2015; Hakimi et al., 2017; Hammoudi et al., 2015; Hsiao et al., 2013) (Figure 1A). To determine the localization of GRA18, a three hemagglutinin (HA3) epitope tag or HAFlag (HF)-epitope tags were inserted either at the carboxyl-terminus of the endogenous GRA18 locus in the type I strain (RH ku80) or as an extra copy in type II strain (Pru ku80), respectively. In extracellular tachyzoites, GRA18-HF partially co-localized with the DG resident protein GRA1 but not with the micronemal protein MIC2 or the toxofilin rhoptry protein (Figure 1B). When expressed in intracellular replicating tachyzoites, the GRA18-HA3 protein accumulated in the cytoplasm of infected cells over time (Figure 1C, upper panel), but was not detected in host cell nucleus in contrast to the yet identified effectors (i.e. PP2C-hn, ROP16, ROP47, GRA16, GRA24, GRA28, and TgIST; for review, see Hakimi et al., 2017). In cells infected by type II tachyzoites (Pru ku80) expressing the chimeric GRA18-HF under the control of the promoter of GRA1, a similar GRA18-HF cytoplasmic distribution was observed (Figure 1C, lower panel) however the chimeric construct significantly accumulated in the parasite cytoplasm and the PV space, suggesting that secretion and export are limiting steps for GRA18 trafficking. Moreover, in the absence of the parasite MYR1 protein, the export of GRA18 through the PVM no longer occurred (Figure 1D), indicating that GRA18 uses an export pathway shared with the other GRA effectors (Franco et al., 2016). GRA18 is a 70 kDa protein predicted to be partially disordered (Figure 1E) with no apparent homolog counterpart outside of the Coccidia. While GRA18 shows little polymorphism among the three major strain types of T. gondii (99% identity, Figure 1A), the protein is highly divergent in Neospora caninum (39% identity). Collectively, these data indicate that GRA18 is an additional member of the class of T. gondii DG proteins that are exported in the host cell during tachyzoite life cycle (Hakimi et al., 2017; Nadipuram et al., 2016).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/39887/elife-39887-fig1-v2.jpg)\n\n**Figure 1.:** (A) Alignment of GRA18 alleles from T. gondii strains of types I (TGGT1_288840), II (TGME49_288840), and III (TGVEG_288840). The signal peptide sequence (highlighted in green), the B56 SLiM motifs (LxxLx; boxed in red), and the T. gondii Export Element (TEXEL; RRL motif, boxed in blue) are shown. Single amino acid polymorphisms are indicated by red letters. The alignment was done using ClustalW method. (B) GRA18II-HAFlag in Pru ku80 extracellular parasites is contained in cytoplasmic organelles distinct from the apical micronemes (MIC2) and rhoptries (Toxofilin), and partially co-localizing with the dense granule protein GRA1. (C) GRA18 secretion and export to the host cytoplasm. HFFs were infected with type I RH parasites expressing endogenously tagged GRA18 with hemagglutinin (HA) (upper panel, RH\u0394ku80 GRA18-HA3, in red, Triton X-100 permeabilization) or type II Pru strain ectopically expressing a HAFlag (HF)-tagged copy of GRA18II under the control of the strong promoter of GRA1 (Pru \u0394ku80 PGRA1-GRA18II-HF, ethanol permeabilization). Cells were fixed 18 hr post-infection (hpi) and stained with anti-HA antibodies and Hoechst DNA-specific dye (in blue). The white asterisks indicate uninfected HFF cells. (D) MYR1 is required for GRA18 export in the host cell. HFFs were infected with RH WT or RH \u0394myr1 parasites transiently transfected with a vector expressing an HF-tagged GRA18 (PGRA1-GRA18II-HF), and at 18 hpi, the cultures were fixed and stained with antibodies to the HA tag. (E) Schematic representation of GRA18 probability of disorder. Segments with values\u00a0<\u00a00 are predicted to be disordered (in red), and segments with values\u00a0>\u00a00 correspond to folded regions (in green).\n\n### GRA18 forms complexes with host components of the \u03b2-catenin destruction complex\n\nSince GRA18 does not carry any recognizable structural domain that can be used to infer its function, we sought for host molecular partners that could identify the host cell pathway GRA18 could interfere with. Initially, we used a genome-wide yeast-two hybrid (Y2H) screen and screened a human placenta complementary DNA (cDNA) library (referred as prey) using N-terminally fused GRA18 (aa 27 to 648) from type II strain as a bait (LexA-GRA18II). Of a total of 65.8 million cDNA fragments screened, 65 positive hits covering 11 different proteins were found. The binding proteins were given Global Predicted Biological Score (Global PBS) ranging from A to D (\u2018A' having the highest confidence of binding) (Supplementary file 2), if their coding sequences are in-frame and have no in-frame stop codons. Interestingly, multiple components of the \u03b2-catenin destruction complex were found among the interactants: \u03b2-catenin itself, the glycogen synthase kinase-3 (GSK3\u03b1/\u03b2), and the protein phosphatase 2A (PP2A) regulatory subunit B56\u03b1/\u03b2/\u03b3/\u03b4 (Figure 2A and Figure 2\u2014figure supplement 1). These interactions were subsequently validated by chromatography and mass spectrometry\u2013based proteomics analysis on proteins extracted from human cells infected by the Pru PGRA1-GRA18II-HF T. gondii strain. Following Flag affinity chromatography, GRA18 co-eluted with \u03b2-catenin, GSK3\u03b1/\u03b2, and the PP2A-B56\u03b4/\u03b5 within a quite stable complex that resisted to stringent salt and detergent conditions (0.5 M KCl and 0.1% NP-40) (Figure 2B). Interestingly, the identification of the scaffolding subunit PP2A65 RA and the catalytic subunit PP2Ac along with the PP2A-B56, argues for a functional PP2A holoenzyme as part of the complex. The B56 regulatory subunit presumably mediates the recruitment of the PP2A holoenzyme as it was the only PP2A subunit found by Y2H to interact directly with GRA18 (Figure 2A and Supplementary file 2). Importantly, when purified from HFFs infected by RH parasites in which GRA18 endogenous locus was fused to the HA-Flag tags (GRA18-HF), GRA18 was found in a similar complex, with the exception of \u03b2-catenin that was presumably below the detection limit, (Figure 2C). Taken together, these data confirm GRA18 as a partner of GSK3 and the PP2A-B56 subunit and validate the relevance of these interactions in the context of infection by wild-type parasites.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/39887/elife-39887-fig2-v2.jpg)\n\n**Figure 2.:** (A) Yeast-two hybrid screening of a human placental cDNA library to identify potential host partners for GRA18. Schematic representation of the identified partners having the highest Global PBS scores are shown. Summary of the prey clones that interacted with the GRA18 bait are represented as grey bars. Multiple independent interacting prey clones allowed Selected Interaction Domain (SID, in red) analysis that delineates the shortest fragment that is shared with all the interacting clones, and thus represents a potential region mediating the interaction with GRA18. (B) GRA18 associates with \u03b2-catenin, GSK3\u03b1/\u03b2, and PP2A-B56 in infected host cells. GRA18-associated proteins were purified by Flag affinity chromatography from protein extracts of HFF cells infected with parasites expressing HF-tagged GRA18 (Pru k80, PGRA1-GRA18II-HF). HFFs infected with Pru ku80 parasites were used as a mock. Immunopurified proteins were resolved by SDS-PAGE, followed by colloidal blue staining and mass spectrometry analysis. The identity of the proteins and their respective number of peptides are indicated on the right of the figure. (C) GRA18 associates with GSK3 and PP2A-B56 when delivered to HFFs by type I RH parasites expressing endogenously tagged GRA18 with HA-Flag (RH GRA18-HF). IN, input; IP, immunoprecipitation. (D) Immunofluorescence assay (IFA) of FH-GRA18 ectopically and stably expressed in T-Rex-293 cell line. Cells were either left untreated (-) or treated with 1 \u03bcg/mL tetracycline for 12 hr before fixation and staining with anti-HA antibodies (in red) and Hoechst DNA-specific dye (in blue). Scale bar, 10 \u03bcm. (E) Size-Exclusion Chromatography (SEC) analysis of the GRA18-associated proteins. FH-GRA18 was immunopurified from tetracycline-induced T-Rex cells (T-Rex-GRA18FL). SEC fractions were analyzed by immunoblot using the indicated antibodies.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/39887/elife-39887-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** Each grey line indicates a single hit in the screen, and the red segments indicate the minimal fragment of each protein that is predicted to interact with GRA18.\n\nWe then detailed the interactions between GRA18 and the associated proteins using an inducible Flag-tagged GRA18\u2013expressing HEK293 human cell line (T-Rex-293, Figure 2D). GRA18 Flag affinity coupled to Size-Exclusion Chromatography (SEC) and immunoblot analysis revealed that GRA18 forms distinct complexe(s) with \u03b2-catenin, GSK3\u03b2, and the PP2A-B56 holoenzyme ranging from 400 to over 700 kDa globular sizes (Figure 2E). While GSK3\u03b2 and the PP2A-B56 holoenzyme eluted as discrete and overlapping complexes, in contrast, GRA18 and \u03b2-catenin both showed broader elution profiles, possibly reflecting the presence of multiple sub-complexes containing GRA18. Overall, these data confirm the multivalent partnership of GRA18 with the host proteins \u03b2-catenin, GSK3\u03b1/\u03b2, or the PP2A-B56 subunit.\n\n### \u03b2-Catenin, GSK3\u03b1/\u03b2, and PP2A-B56 bind different protein domains of GRA18\n\nTo further detail the mode of interaction between GRA18 and the aforementioned partners, we performed a domain mapping analysis using the Y2H system and challenged the binding of GRA18 fragments to \u03b2-catenin, GSK3\u03b1/\u03b2, or the PP2A-B56 regulatory subunit in yeast (Figure 3A). Interestingly, the N-terminal region of GRA18 sheltered the binding site for \u03b2-catenin, whereas the C-terminal fragments accommodated the interaction with the PP2A-B56 subunit (Figure 3B and D). None of the GRA18 fragments tested other than the full-length protein could support the interactions with GSK3 in this assay, suggesting that binding to GSK3 necessitates a larger contact surface on GRA18 than the other partners.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/39887/elife-39887-fig3-v2.jpg)\n\n**Figure 3.:** (A) Interaction domain mapping by Y2H assay using the indicated fragments of GRA18 to delineate the interacting domains of GRA18 with CTNBB1 (\u03b2-catenin), GSK3A (GSK3\u03b1) and PPP2R5A (PP2A-B56\u03b1). CTNNB1 interacts with the N-terminus of GRA18, whereas PPP2R5A interacts with the C-terminal fragments. GSK3A interacted with full-length GRA18 (amino acids 26\u00a0\u2013\u00a0648) but not with any of the GRA18 fragments tested. (B) Schematic representation of full-length (amino acids 26\u00a0\u2013\u00a0648) and truncated versions of GRA18 (FH-GRA18Nt(aa 26-440) and FH-GRA18Ct(aa 233-648)) proteins stably expressed in T-Rex cells. (C) Cytoplasmic fractions from T-Rex cells presented in (B) were immunoprecipitated with anti-Flag antibodies and analyzed by immunoblotting. Untransfected T-Rex cells were used as a mock. (D) Schematic diagram summarizing the interaction domain mapping of GRA18 obtained from Y2H and biochemical approaches.\n\nIn order to test the GRA18 binding features in a cellular context, we generated inducible T-Rex cell lines expressing each different flag tagged sub-domains of GRA18, performed immuno-tag affinity purification for each chimeric proteins and analyzed the eluates by Western Blot (Figure 3B\u2013C). Figure 3C shows that (i) the full-length GRA18 (FH-GRA18FL) pulled-down \u03b2-catenin, GSK3\u03b2, and PP2A-B56, (ii) the GRA18Ct truncated version lost the ability to bind to PP2A-B56 in agreement with the Y2H experiments, while retaining its ability to interact with GSK3\u03b2. Conversely, GRA18Nt induced in T-Rex cells did not interact with PP2A-B56 and its binding property to GSK3\u03b2 was significantly impaired when compared to the full-length or the C-terminal region of GRA18. Collectively, these results suggest that the GRA18 C-terminal region mediates the interaction with both the phosphatase and the kinase. It is noteworthy that both the N- and C-ter truncated fragments were unable to pull down \u03b2-catenin, which was unexpected based on the Y2H results. We cannot exclude however the possibility that the harsh washing conditions (0.5 M KCl and 0.1% NP-40) shattered the weak interactions between \u03b2-catenin and the GRA18 N-terminal fragment (Figure 3A). Therefore, we propose that the N-terminal region of GRA18 mediates labile interaction with \u03b2-catenin that can be captured by Y2H, whereas the C-terminal region contributes to a rather strong binding to GSK3\u03b2 and the PP2A-B56 holoenzyme (Figure 3D).\n\n### GRA18 functions as a positive regulator of \u03b2-catenin\n\nAs demonstrated above, GRA18 interacts with well-known components of the \u03b2-catenin destruction complex, a multiprotein complex with a pivotal role in the Wnt signaling. Indeed, \u03b2-catenin regulates the transcription of the Wnt target genes. Central to the Wnt pathway is the regulation of \u03b2-catenin levels by a cytoplasmic destruction complex in which \u03b2-catenin is embedded. This complex is composed of a core scaffold protein, named the axis inhibition protein (Axin) that interacts with factors such as the adenomatous polyposis coli protein (APC), the Ser/Thr kinases GSK3, the casein kinase 1 (CK1), and the PP2A-B56 phosphatase (Reviewed by Stamos and Weis, 2013). In the absence of Wnt signaling, the destruction complex efficiently captures cytoplasmic \u03b2-catenin, leading to its phosphorylation by GSK3 and recognition by the \u03b2-TrCP ubiquitin ligase for degradation by the 26S proteasome. Wnt ligands trigger functional inactivation of the destruction complex, with ensuing escape of \u03b2-catenin from degradation, resulting in \u03b2-catenin accumulation and nuclear internalization (Clevers, 2006; Li et al., 2012; Taelman et al., 2010). Given the interactions between GRA18 and \u03b2-catenin, GSK3\u03b2, and PP2A-B56, we hypothesized that GRA18 could interfere with \u03b2-catenin regulation in the course of infection. To test this hypothesis, we generated parasites knockout for GRA18 (Figure 4A and B) in different strain types (Pru ku80 \u0394gra18 and 76K \u0394gra18) which did not show any obvious growth phenotype in cell culture (Figure 4C and data not shown), and a somewhat reduced virulence phenotype in mice\u00a0when challenged by intraperitoneal injection (Figure 4D). While assessing \u03b2-catenin amounts and subcellular localization we showed that \u03b2-catenin signals remained unaffected upon T. gondii infection of both human (HFF) and murine (L929) cells regardless of the GRA18 status (Figure 4E and F, compare Pru ku80 with \u0394gra18). Intriguingly, when parasites expressed high levels of GRA18, referred to as GRA18+++, \u03b2-catenin signals drastically increased in cells infected by the GRA18+++ strain compared to uninfected cells (Figure 4E and F). \u03b2-Catenin upregulation is associated with a strong accumulation of \u03b2-catenin in the host nuclei suggesting that a transcriptionally active bulk of \u03b2-catenin was produced (Figure 4F). To determine whether additional parasite factors may contribute to the GRA18-mediated \u03b2-catenin induction, we used ectopic expression of GRA18 in HEK293 human cell line. As a positive control, cells were treated with exogenous Wnt3A ligand, a natural inducer of \u03b2-catenin, thus confirming that the T-Rex cells carry a functional and regulatable \u03b2-catenin-destruction complex (Figure 4G) (Azzolin et al., 2014). Induction of GRA18 expression with tetracycline promoted the accumulation of \u03b2-catenin, indicating that GRA18 alone was sufficient to drive \u03b2-catenin upregulation to levels comparable to those obtained with Wnt3A (Figure 4G). Therefore, these data indicate that GRA18, very likely through the interactions with GSK3 and PP2A-B56, functions as a positive regulator of \u03b2-catenin.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/39887/elife-39887-fig4-v2.jpg)\n\n**Figure 4.:** (A) Generation and confirmation of insertion/deletion of GRA18 in T. gondii type II Pru strain. Schematic representation of the GRA18 locus with the double homologous recombination event between the knockout construct (pDEST14 KO GRA18) and genomic DNA replacing the GRA18 coding sequence with the DHFR cassette used for positive selection. (B) PCR reactions with the indicated primers confirming the deletion/insertion of GRA18 in the mutant parasites. (C) Parasites lacking GRA18 exhibit no growth defect in vitro as determined by fluorescence imaging assays in HFFs and plaque assays. Data are mean value\u00a0\u00b1\u00a0s.d. of triplicates from two independent experiments. (D) GRA18 mutants exhibit decreased virulence in mice. Virulence of the type II Pru ku80\u0394gra18 and 76K \u0394gra18 strains were compared to the parental strains Pru ku80 and 76K, respectively, in BALB/c mice. Mice were inoculated with 105 tachyzoites of each strain by intraperitoneal injection and survival was monitored. Cumulative results of two independent experiments with at least three mice in each group (n\u00a0\u2265\u00a06) are shown. Significance was tested using Log-rank (Mantel-Cox) test; *p=0.0162 and ***p=0.0005 when compared to the respective wild-type strain. (E) Effect of GRA18 on \u03b2-catenin levels. Murine L929 cells were left uninfected (ui) or infected with wild-type (Pru ku80), \u0394gra18, or the \u0394gra18 GRA18+++ complemented (GRA18+++) strains. At 18 hr post-infection, cells were harvested and analyzed by immunoblot using the indicated antibodies. TgQRS was used to control parasite loading. (F) IFA of \u03b2-catenin in confluent HFFs left uninfected (ui) or infected with the indicated strains for 18 hr. In the lower panel, IFA was performed using an anti-HA antibody to monitor the HF-tagged version of GRA18 in the GRA18+++ complemented strain. Data are representative of at least three independent experiments. (G) Immunoblot analysis of nuclear fraction of the T-Rex FH-GRA18 cell line left untreated or induced with tetracycline for the indicated periods of time. The Wnt3A ligand was used as a positive control.\n\n### GRA18 alters the expression of a specific set of genes in infected cells\n\nThe ability of GRA18 to promote nuclear accumulation of the transcriptional regulator \u03b2-catenin prompted us to investigate whether GRA18-GSK3/\u03b2-catenin partnerships could contribute to the typical changes in gene expression observed in cells infected with tachyzoites. To test this hypothesis, we performed a comparative transcriptomic analysis by RNA-sequencing of mouse Bone Marrow-Derived Macrophages (BMDMs) loaded with parental or \u0394gra18 parasites of the type II Pru strain. Macrophages were chosen because they are infected in mice and play an essential role in the early immune response against T. gondii (Dunay et al., 2008; Jensen et al., 2011). Since GSK3 and \u03b2-catenin were involved in the regulation of the inflammatory gene expression in response to bacterial lipopolysaccharides (LPS) (Chattopadhyay et al., 2015; Jang et al., 2017; Martin et al., 2005; Yang et al., 2010), transcriptomic analysis was also performed on infected macrophages treated with LPS. We focused our analysis on genes that were modulated with more than 3-fold change and had a signal threshold above 5 Reads Per Kilobase of transcript per Million mapped reads (RPKM) in at least one sample when comparing the wild-type and \u0394gra18 mutant strains. Filtered data are presented in Supplementary file 3 (data are accessible through NCBI GEO, accession number GSE103113). Thirty-eight genes were significantly and differentially regulated with most corresponding to genes up-regulated upon macrophage infection by wild-type parasites, but not with the \u0394gra18 strain as revealed by hierarchical clustering (Figure 5A). Complementation of \u0394gra18 mutation with GRA18-HF under the control of the GRA1 promoter (\u0394gra18, GRA18+++) restored the expression pattern to levels observed with wild-type parasites or even higher, in strong support of the GRA18-dependent induction of those genes. Parasite transcriptome analysis indicated that neither \u0394gra18 mutation nor LPS treatment had any significant impact on T. gondii gene expression and that GRA18 expression in the Pru ku80 \u0394gra18, GRA18+++ complemented strain was restored with a\u00a0~\u00a035 fold more transcript reads than in the wild-type strain (Figure 5D, Supplementary file 3, and Figure 5\u2014figure supplement 1A), in line with GRA18 overexpression driven by the GRA1 strong promoter. It is noteworthy that the expression pattern of the aforementioned host genes regulated by GRA18 remained similarly regulated in the infected macrophages subjected to LPS stimulation (Figure 5A and B and Supplementary file 3), indicating that LPS did not affect GRA18 function. Gene set enrichment analysis (GSEA) highlighted pathways significantly affected in a GRA18-dependent fashion (p values\u00a0<\u00a00.05) with functions related to the inflammatory response (e.g., Csf1, Olr1, and Tnfrsf9) and chemotaxis (e.g., Ccr7, Ccl1, Ccl17, Ccl22, and Ccl24) (Figure 5C). Surprisingly, none of the typical Wnt/\u03b2-catenin target genes were found differentially regulated by GRA18 (Figure 5\u2014figure supplement 1B and Supplementary file 3), suggesting either that murine macrophages have a peculiar repertoire of \u03b2-catenin target genes or that GRA18 fosters a singular \u03b2-catenin transcriptional activity or that its action is independent of \u03b2-catenin.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/39887/elife-39887-fig5-v2.jpg)\n\n**Figure 5.:** (A) RNA-Seq analysis of BALB/c BMDMs that were left uninfected (ui) or infected with the indicated strains at an MOI of 1:5. At 18 hr post-infection, cells were left unstimulated or stimulated with LPS (100 ng/mL) for 6 hr. Heat map representation of the differentially expressed mouse genes (\u22653 fold, RPKM\u00a0\u22655 in at least one sample) between parental and \u0394gra18 infected cells in the absence of LPS. RPKM values were log2 transformed, Gene/Row normalized, and mean centered using MeV. (B) Tracks of the BMDMs RNA-Seq reads for Ccl17, Ccl22, and Ccl24 in the indicated samples. (C) Enrichment analysis in functional annotation and GO analysis of the differentially expressed genes defined in Figure 5A using GSEA. Top-scoring pathways regulated in a GRA18-dependent manner, number of genes per pathway, and names of representative genes are shown. (D) Heat map of expression values obtained by RNA-Seq analysis of T. gondii genes from the samples in (A). A selected set of T. gondii ROPs and GRAs are shown. (E) Quantitative chemokine expression was determined by qRT-PCR on BMDMs infected with the wild-type and \u0394gra18 mutant strains in the type II strains Pru and 76K. Values were normalized to the amount of TATA box binding protein (Tbp) in each sample. Data are mean value\u00a0\u00b1\u00a0s.d. of three replicates. The P-values were calculated using two-tailed unpaired Student\u2019s t-test; ****p<0.001. Data are representative of two independent experiments. (F) CCL17 and CCL22 levels were measured by ELISA from supernatants collected 24 hr after BMDM infection with the indicated strains at an MOI of 1:5. Supernatant from uninfected cells was used as a control (ui). Means of four independent experiments are shown. ****, p<0.0001 following one-way ANOVA analysis and multiple-comparison post hoc tests.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/39887/elife-39887-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** gondii transcripts. (A) T. gondii RNA-Seq analysis at the GRA18 genomic locus. Coverage track of the T. gondii RNA-Seq reads for the indicated samples obtained from GenVision Pro, Lasergene version 14 (DNASTAR, Madison, WI, USA). Assembled RNA-Seq reads were plotted along the T. gondii genomic sequence at the GRA18 locus. The graphs correspond to the depth of sequence coverage for each nucleotide position along the T. gondii genomic sequence. (B) Venn diagram depicting the overlap between the Wnt/\u03b2-catenin target genes and those affected in a GRA18-dependent fashion in infected BMDMs. A list of 78 Wnt/\u03b2-catenin target genes were obtained from GSEA. The 130 host genes regulated by GRA18 correspond to the differentially expressed mouse genes (\u22652 fold, RPKM\u00a0\u22655 in at least one sample) between BMDMs infected by the wild-type and \u0394gra18 T. gondii strains in the absence of LPS. (C) Analysis of the GRA18 target genes in BMDMs infected by different T. gondii strains. The GRA18 specific gene set identified in Figure 5A was analyzed in the transcriptomic data obtained from BMDMs infected by different T. gondii strains from (Melo et al., 2013). RAW RNA-Seq data were obtained from the GEO DataSets database and analyzed as described in Materials and methods.\n\n![Figure 5\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/39887/elife-39887-fig5-figsupp2-v2.jpg)\n\n**Figure 5\u2014figure supplement 2.:** (A) In the absence of ASP5, GRA18-HF transiently transfected in type I parasites was no longer exported to the host cytoplasm and instead remained within the PV. (B) In the absence of ASP5, T. gondii parasites failed to induce most of the GRA18-dependent genes of BMDMs. The GRA18 specific gene-set identified in Figure 5A was analyzed in the transcriptomic data obtained from BMDMs infected by \u0394asp5 mutant parasites (Pru strain) from (Hammoudi et al., 2015). RAW RNA-Seq data were obtained from the European Nucleotide Archive and analyzed as described in Materials and methods.\n\nTo confirm the transcriptomic profile, we focused on the chemokines Ccl17, Ccl22, and Ccl24 previously identified as selectively up-regulated genes upon T. gondii infection (Hammoudi et al., 2015; Melo et al., 2013). Quantitative RT-PCR analysis reproducibly demonstrated a pronounced decrease in Ccl17, Ccl22, and Ccl24 expression from cells infected with \u0394gra18 mutant parasites when compared to wild-type Pru or Pru \u0394gra18, GRA18+++ parasites (Figure 5E). Similar data were obtained with the 76K strain, another type II cystogenic strain, highlighting that T. gondii reproducibly regulated those chemokines in a GRA18-dependent manner. GRA18 clearly plays a major role in regulating CCL17 and CCL22 synthesis and secretion since its loss significantly lowered protein levels in the supernatant of mouse macrophages (Figure 5F). Overall, these results support the regulatory function of GRA18 for specific chemokines amongst others.\n\n### GRA18 alters host gene expression in a \u03b2-catenin-dependent fashion\n\nTo evaluate whether \u03b2-catenin is required for the GRA18-induced chemokine expression, we generated macrophage RAW264.7-derived cell line mutated for Ctnnb1 using CRISPR/CAS9-mediated gene editing. Cells were transfected with a vector expressing the CAS9 endonuclease and a guide RNA targeting the third coding exon of the murine Ctnnb1 gene (Figure 6A). Cells harboring insertion/deletion (indel) mutations at the Ctnnb1 locus lack \u03b2-catenin expression when compared to the wild-type parental cell line (Figure 6A and B). As expected, treatment of the Ctnnb1-/- mutant cells with the GSK3 inhibitors did not lead to \u03b2-catenin expression, otherwise induced in the wild-type parental cell line. These results demonstrate that the RAW264.7 murine cells carry a regulatable \u03b2-catenin destruction complex and that the two alleles coding for \u03b2-catenin were successfully disrupted in the Ctnnb1-/- mutant cells.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/39887/elife-39887-fig6-v2.jpg)\n\n**Figure 6.:** (A) Schematic diagram of gRNAs targeting the Ctnnb1 locus. The Protospacer Adjacent Motif (PAM) sequence is lined and highlighted in red; the targeting sequences is shown in green. Bi-directional arrow indicates the Cas9 cleavage site. DNA sequences from the wild-type and mutated RAW264.7-derived cell lines were analyzed by DNA sequencing; the identified deletions are indicated with (-). No mutations in control samples were observed. (B) Immunoblot analysis of \u03b2-catenin in parental RAW264.7 and the Ctnnb1-/- mutant confirmed the absence of \u03b2-catenin expression. As positive controls, cells were treated with 3 mM of BIO or 2 mM of CHIR GSK3 inhibitors for 12 hr. TBP was used as loading control. (C\u2013E) RAW264.7 (WT) and \u03b2-catenin-deficient (Ctnnb1-/-) RAW264.7-derived cell lines were transfected with mCherry vector control (pcDNA-mCherry-HF) or the FH-GRA18II expression vector (pcDNA-FH-GRA18FL). At 18 hr after transfection, cells were either (C) fixed for IFA using anti-HA (red) and anti-\u03b2-catenin (green) antibodies or (D) cells were harvested and analyzed by immunoblot using the indicated antibodies. Anti-HA was used to detect FH-GRA18 and mCherry-HF. In (E) and (F) transcripts for Ccl17, Ccl22, Ccl24, and Ifnb1 were quantified by qPCR and normalized using Tbp. Data are mean value\u00a0\u00b1\u00a0s.d. of three replicates. The P-values were calculated using two-tailed unpaired Student\u2019s t-test or one-way ANOVA with Bonferroni posttests analysis of variance; *p<0.05 and P values greater than 0.05 were considered not significant (ns). In (F) RAW264.7 (WT) and \u03b2-catenin-deficient (Ctnnb1-/-) RAW264.7-derived cell lines were either left uninfected or infected with the indicated wild-type and \u0394gra18 mutant strains at a MOI of 1:6 for 18 hr. Data are representative of two independent experiments.\n\nThe ectopic expression of GRA18 in RAW264.7 macrophages caused a significant increase in endogenous \u03b2-catenin (Figure 6C and D, compare the effect of mCherry with GRA18 expression), similarly to the effect of GRA18 when delivered by the parasites in HFF or L929 cells (Figure 4E and F). As expected for RAW264.7 macrophages whose Ctnnb1 alleles are disrupted, no \u03b2-catenin was detected upon ectopic expression of GRA18 (Figure 6C and D) in contrast to the significant amounts of nuclear \u03b2-catenin found in wild-type RAW264.7 macrophages expressing GRA18. In the same line Ccl17, Ccl22, and Ccl24 were selectively induced in GRA18-expressing wild-type RAW264.7 macrophages when compared to mock - that\u00a0is, mCherry - transfected cells (Figure 6D and E) whereas Ccl17 and Ccl24 were no longer induced in the \u03b2-catenin lacking ones. The slight reduction of Ccl22 expression in the GRA18-expressing mutant RAW264.7 macrophages (Figure 6E) suggests a different mode of regulation for the three chemokines. Consistent with \u03b2-catenin upregulation, similar data were obtained with Ifnb1 (Figure 6E), a known \u03b2-catenin target gene in macrophages (Ma et al., 2014; Rathinam et al., 2010; Yang et al., 2010). To ascertain the \u03b2-catenin requirement for GRA18 activity under more physiological conditions, chemokine expression was monitored upon infection of RAW264.7 cells disrupted or not for Ctnnb1 with wild-type and \u0394gra18 mutant parasites. While \u03b2-catenin was required for full induction of the Ccl17 chemokine, Ccl22 expression remained unaffected in Ctnnb1-/- mutant host cells (Figure 6F), again consistent with a different mode of regulation orchestrating Ccl17 and Ccl22 expression. Importantly, the moderate role played by GRA18 in the regulation of Ccl22 in RAW264.7 cells when compared to BMDMs, suggests that a GRA18-independent pathway controls Ccl22 expression, which is reminiscent of the aforementioned \u03b2-catenin independent mechanism (see discussion). Indeed, Ccl22 was much less induced in RAW264.7 than in BMDM cells (compare Figures 5E and 6F), indicating differences in responsiveness to T. gondii infection. In addition, these data also argue that using the transformed RAW264.7 cell line to monitor GRA18 activity on Ccl22 induction may be less relevant than relying on the primary BMDM cells. Altogether, these results indicate that basal levels of \u03b2-catenin are required for full activity of GRA18 towards Ccl17.\n\n### GRA18 acts as an inhibitor of GSK3 to trigger \u03b2-catenin transcriptional activity\n\nIn order to better map the GRA18 active domains we assayed the different sub-domains of GRA18 (GRA18Nt and GRA18Ct) described above for their ability to upregulate \u03b2-catenin and to induce expression of the downstream target genes in macrophages. While expression of GRA18FL in RAW264.7 macrophages caused a significant increase in endogenous \u03b2-catenin protein levels, leading to the expression of the downstream chemokines (Figure 7A and B), expression of GRA18Nt, which no longer interacts with GSK3 and PP2A-B56 (Figure 3), failed to induce \u03b2-catenin and accordingly chemokine transcripts. Given that the N-terminal region of GRA18 has retained the ability to interact with \u03b2-catenin (Figure 3A), these data suggest that the interactions with \u03b2-catenin alone are not sufficient to promote its accumulation and transcriptional activity. In contrast, GRA18Ct, shown previously to interact with GSK3 and PP2A-B56 (Figure 3) has retained full activity on \u03b2-catenin and downstream transcriptional consequences, further confirming the pivotal role of \u03b2-catenin in driving the expression of the aforementioned chemokines. While the effect of GRA18 on \u03b2-catenin protein levels required interactions with GSK3 and/or PP2A-B56, direct interaction between GRA18 and \u03b2-catenin seems to be dispensable. Altogether these results support a scenario in which GRA18, through its interactions with GSK3 and PP2A-B56 inhibits the \u03b2-catenin-destruction complex, hence stabilizing \u03b2-catenin thereby acting as a positive regulator of \u03b2-catenin level to promote gene expression. Additional evidence for this model is the expression of Ccl22 and Ccl24 induced by GSK3 inhibitors in a manner that resembles the effect of GRA18 (Figure 7C and D).\n\n![Figure 7.](https://cdn.elifesciences.org/articles/39887/elife-39887-fig7-v2.jpg)\n\n**Figure 7.:** (A\u2013B) RAW264.7 cells were transfected with mCherry vector control or the FH-GRA18 expression vectors pcDNA-FH-GRA18FL (GRA18FL), pcDNA-FH-GRA18Nt (GRA18Nt), and pcDNA-FH-GRA18Ct (GRA18Ct). At 18 hr after transfection, cells were harvested and (A) whole cell extracts were analyzed by immunoblot using the indicated antibodies, or (B) quantitative chemokine expression was determined by qRT-PCR as in Figure 6. Asterisks indicate P-values (p<0.05) obtained when comparing GRA18Nt with GRA18FL. (C) Treatment of RAW264.7 cells with the GSK3 inhibitors CHIR and BIO led to \u03b2-catenin protein accumulation and Ccl22 and Ccl24 upregulation as determined by qRT-PCR in (D). ut, untreated; nd, not detected. Data are mean value\u00a0\u00b1\u00a0s.d. of three replicates. The P-values were calculated using two-tailed unpaired Student\u2019s t-test; *p<0.05. Each data set is representative of two independent experiments.\n\n## Discussion\n\n### GRA18 export mechanism\n\nIn search of new T. gondii effectors from the GRA family that would be not only secreted into the PV space but would also traffic beyond - that\u00a0is, across the PVM - and be delivered in the infected host cell, we identified a novel T. gondii GRA protein that we termed GRA18. However, contrasting with the recently described GRA16, GRA24, GRA28 or TgIST, whose final destination is the nucleus of the host cell, GRA18 remained strictly cytoplasmic throughout the intracellular life cycle of the tachyzoite.\n\nAnalyzing GRA18 protein sequence, we recognized in addition to the N-terminal signal peptide, an N-terminal putative TEXEL motif, both embedded in highly intrinsically disordered regions (Figure 1E). The presence of the TEXEL motif suggests that GRA18 might be processed by the aspartic protease TgASP5, an enzyme we and others have recently shown to mediate the secretion or export of a number of GRA proteins (Coffey et al., 2015; Curt-Varesano et al., 2016; Hammoudi et al., 2015). As expected for a TgASP5-dependent export, GRA18 was no longer detected in the cytoplasm of cells invaded by TgASP5 mutant parasites (Figure 5\u2014figure supplement 2A) and accordingly, TgASP5 and GRA18 mutant parasites showed similar inability to induce target genes in macrophages ((Hammoudi et al., 2015), Figure 5\u2014figure supplement 2B). Recent findings showed that the export pathway to the host cell of most of the dense granule effectors depends on MYR1, another DG protein localized at the PVM. In agreement with a common GRA export mechanism, trafficking of GRA18 through the PVM was also dependent on MYR1 (Figure 1D), (Coffey et al., 2016). The detection of GRA18 in the host cell cytoplasm together with GRA18 sequence features prompted us to search for host cell cytoplasmic partners.\n\n### GRA18, a potential inhibitor of the \u03b2-catenin destruction complex\n\nUsing a genetic screen combined with affinity- and size-exclusion chromatography under stringent conditions, and mass spectrometry, we have characterized GRA18 as a strong interactor of host GSK3 and the PP2A-B56 holoenzyme, and to a lesser extent with \u03b2-catenin. The complex(es) promote \u03b2-catenin nuclear accumulation, raising the possibility that GRA18 could modulate \u03b2-catenin stability (see proposed model in Figure 8). However, while GRA18 clearly regulated host cell gene expression, we did not detect significant changes in \u03b2-catenin levels upon infection with wild-type parasites (Figure 4E and D). As only a small fraction of the total \u03b2-catenin pool is destined to transcriptional regulation, possibly GRA18 induces subtle effects on the \u03b2-catenin levels that cannot be captured by IFA or immunoblot. Next, to figure out how GRA18 could interplay with \u03b2-catenin in cells, we engineered \u03b2-catenin mutant in RAW264.7 macrophages and provided definitive evidence for \u03b2-catenin acting epistatically to GRA18\u2019s activity on host cell transcription for a restricted set of target genes (i.e. Ccl17, Ccl24, and Ifnb1) (Figure 6).\n\n![Figure 8.](https://cdn.elifesciences.org/articles/39887/elife-39887-fig8-v2.jpg)\n\n**Figure 8.:** A model depicting how GRA18 interacts and interferes with the \u03b2-catenin destruction complex leading to host cell gene regulation. Possible effect of GRA18 on gene expression through GSK3 but \u03b2-catenin-independent or still unidentified T. gondii factor are represented by dashed lines. Question mark indicates the putative direct interaction with \u03b2-catenin observed by the Y2H or GRA18 overexpression. See also discussion.\n\n\u03b2-Catenin is a dual function co-activator protein with distinct pools serving cell-cell adhesion and gene transcription functions, respectively. \u03b2-Catenin was originally identified as an element of the adherent junction complex together with cadherin and \u03b1-catenin, the latter binding to actin filaments in a process that promotes cell\u2013cell contacts. Further, a nonjunctional pool of cytoplasmic \u03b2-catenin was recognized as a transcriptional coactivator of Wnt canonical signaling pathway. The Wnt signaling represents a complex and essential pathway starting with a repertoire of Wnt ligands and acting at the heart of embryogenesis, but also throughout life by directing stem cell renewal and senescence. Centerpiece of Wnt signaling is the canonical Wnt/\u03b2-catenin pathway genetically dissected in both human and Drosophila. Briefly, in the absence of Wnt ligands, cytosolic \u03b2-catenin is maintained at low levels by the multiprotein complex composed of APC, Axin, GSK3 and PP2A-B56. Within this complex, also referred to as the \u03b2-catenin destruction complex, \u03b2-catenin is constantly phosphorylated for ubiquitylation that directs its degradation by the 26S proteasome (Liu et al., 2002). Mutation in any of these components (APC, Axin, or \u03b2-catenin) leads to inappropriate stabilization of \u03b2-catenin, which results in cancer, most notably of the colon (Stamos and Weis, 2013). Axin, a central scaffold protein of the complex, is typified by intrinsically disordered and flexible regions that mediate direct interactions with all other core components of the destruction complex (\u03b2-catenin, APC, and GSK3) (Stamos and Weis, 2013). Remarkably, the T. gondii tachyzoite GRA18 also carries significant disordered regions (Figure 1E) which could confer the potential of competing with Axin/APC for binding to \u03b2-catenin, GSK3, and PP2A-B56. Accordingly, by disrupting the \u03b2-catenin destruction complex GRA18 would likely promote the stabilization and nuclear translocation of \u03b2-catenin and ultimately \u03b2-catenin-dependent gene expression (Figure 8). RNA-Seq performed on BMDMs indicated that \u03b2-catenin transcripts remained unaffected by GRA18 (Supplementary file 3), which is consistent with a post-transcriptional regulation of \u03b2-catenin. Collectively our data argue for GRA18 acting as a direct regulator of \u03b2-catenin and although the exact modus operandi of GRA18 awaits clarification, some scenarios can be proposed. Interestingly, the Y2H interaction assay allowed defining the region of \u03b2-catenin that promotes the interaction with GRA18 (Figure 2A). Indeed, the SID analysis for interaction between GRA18 and \u03b2-catenin is mediated by a region encompassing amino acids 42\u00a0\u2013\u00a0297 of the latter (Figure 2A), which harbors conserved serine and threonine residues initially phosphorylated by CK1 (Ser45), and subsequently by GSK3 (Thr41, Ser33 and Ser37). Once phosphorylated, Ser33 and Ser37 mediate the interaction with the \u03b2-TrCP adaptor protein for \u03b2-catenin degradation. Therefore, the GRA18 binding features to the N-terminal domain of \u03b2-catenin appear quite peculiar and differ from the binding sites for Axin and APC mapped at central ARM domain. As such, the binding interface of GRA18 to the \u03b2-catenin N-terminal region would confer to GRA18 a unique ability to interfere with both the phosphorylation cascade catalyzed by CK1 and GSK3, but also at a later step with the binding to \u03b2-TrCP. Interestingly, phosphorylation of GSK3\u03b2 Ser9 or GSK3\u03b1 Ser21 is reported to decrease GSK3\u03b1/\u03b2 enzymatic activity (Cross et al., 1995; Peyrollier et al., 2000). Because GRA18 did not alter the phospho-Ser21/Ser9 levels (Figures 6D and 7A), we conclude that the parasite protein, which we found to bind GSK3 and inhibit its pro-degradative activity on cytoplasmic \u03b2-catenin, acts independently of the phosphorylation status of Ser21/Ser9.\n\nIn the context of the Wnt signaling, the function of the PP2A-B56 when associated with the \u03b2-catenin destruction complex remains uncertain (Hsu et al., 1999; Seeling et al., 1999; Yamamoto et al., 2001). A recent study reported that the PP2A regulatory B56 subunit binds to a LxxIxE Short Linear Motif (SLiM) on partner proteins as illustrated with the B56 binding to Axin (Hertz et al., 2016). Interestingly, GRA18 carries two LxxIxE motifs within an intrinsically disordered region of the C-terminal domain, which is in agreement with the B56 binding assays (Figure 3A and C). As we previously showed (Hakimi et al., 2017), SLiMs is a prominent characteristic of the GRA effector family of proteins, probably reflecting a favorable evolutionary strategy to expand and diversify the binding interfaces between host and parasite proteins.\n\nOur data suggested a simultaneous binding of GRA18 to GSK-3 and PP2A-B56 (Figure 2E), but whether the binding of PP2A-B56 is essential for GRA18 activity is yet to determine. GSK3 activity can be regulated by phosphorylation of tyrosine residues (Tyr279/Tyr216 in \u03b1/\u03b2 isoforms, respectively) exposed in the activation loop, which enhances its kinase activity (Dajani et al., 2003). An attractive hypothesis is that PP2A-B56 is recruited to the GRA18 complex in order to dephosphorylate GSK3, hence contributing to the inhibitory activity towards the \u03b2-catenin destruction complex. Alternatively, PP2A-B56 could be recruited to GRA18-GSK3 complex to dephosphorylate \u03b2-catenin, leading to the inhibition of \u03b2-catenin degradation (Su et al., 2008).\n\n### The GRA18-GSK3-\u03b2-catenin axis induces the expression of anti-inflammatory chemokines\n\nOur transcriptomic data have revealed the magnitude by which GRA18 alters the expression of genes of cells infected by T. gondii tachyzoites, particularly the chemokines Ccl17, Ccl22, and Ccl24. Those genes have been found repeatedly induced by T. gondii tachyzoites regardless of the strain type in murine macrophages (Figure 5\u2014figure supplement 1C) (Hammoudi et al., 2015; Melo et al., 2013; Morgado et al., 2011), as expected from the overall conservation of GRA18 across the Toxoplasma lineages. Whether this GRA18 property is also expressed in other intermediate hosts or in different cell types is not known, but given the conservation of the Wnt signaling in vertebrates, GRA18 activity in other hosts can be assumed. Interestingly, the human placental cells, which have the unique ability to resist to T. gondii infection, were shown to specifically respond to the invader by producing the CCL22 chemokine (Ander et al., 2018), whereas other cell types such as human fibroblasts did not ((Ander et al., 2018) and data not shown). Whether the mechanism underlying CCL22 induction in human placental cells is driven by GRA18 or differ from murine macrophages should be addressed in the future. It is noteworthy that a quite substantial residual activation of Ccl17, and Ccl22 was observed in the absence of GRA18 (Figures 5E\u2013F and and 6F), which suggests that an alternative mechanism of activation by the parasites exists.\n\nWe provide here genetic evidence for GRA18 acting in a \u03b2-catenin-dependent manner on chemokine expression in macrophages. Although Wnt \u03b2-catenin signaling has originally been studied in the context of thymocyte development and stem cell biology (Reya et al., 2003; Staal et al., 2008; Verbeek et al., 1995), there is increasing evidence for its contribution in the regulation of innate immunity. For instance, activation of \u03b2-catenin promotes differentiation and activation of dendritic cells to stimulate regulatory T cells (Tregs) and suppresses the inflammatory response (Manicassamy et al., 2010; Zhou et al., 2009), while \u03b2-catenin accumulation triggered by GSK3 inhibitors enables Treg cell survival (Ding et al., 2008). Interestingly, CCL17, CCL22 and CCL24 are expressed by alternatively activated M2-polarized macrophages or tolerant macrophages and the release of these chemokines results in the recruitment of Treg cells and amplification of a\u00a0Th2 response (Biswas and Mantovani, 2010). Thereby, an attractive hypothesis could be that once released in the cell cytoplasm, GRA18 contributes to the characteristic M2 macrophage polarization associated with the T. gondii parasitic process (Jensen et al., 2011) through the GSK3-\u03b2-catenin axis. It is well acknowledged that cytokines and chemokines act as a frontline defense against T. gondii since they promote rapid Th1 cell\u2013mediated pro-inflammatory response typified by the recruitment of immune killer cells at play to control the bulk tachyzoite population. However, counterbalancing the Th1-induced inflammatory effects, Th2 chemokines are efficient at dampening the inflammatory response and are therefore crucial to avoid immunopathology and preserve host and parasite survival. Accordingly these Th2 chemokines likely favour parasite dissemination and colonization of deep organs such as the brain allowing T. gondii bradyzoite to subsequently establish a persistent parasitism within intracellular cysts. Consequently, we propose the following hypothesis in which the infection using \u0394gra18 strains, which may provide a weaker Th2 chemokine profile (Ccl17, Ccl22, and Ccl24) led to early control and lower chance for long-term persistence in mice than GRA18 wild type parasites.\n\nIn conclusion, the discovery and characterization of GRA18 extends our view of how T. gondii has evolved a variety of strategies to interfere with host cells by unveiling the hijacking of the evolutionarily conserved \u03b2-catenin destruction complex.\n\n## Materials and methods\n\n### Parasite and cell culture\n\nT. gondii tachyzoites were maintained by serial passage on human foreskin fibroblast (HFF) monolayers. The strains used in this study were RH ku80, Pru ku80, and 76K-GFP-LUC (gift of M. Grigg, National Institutes of Health, Bethesda, MD). HFF primary cells, T-Rex-293 (RRID:CVCL_D585), L929 (Sigma-Aldrich Cat# 85011425), J774 (J774A.1, Sigma-Aldrich Cat# 91051511), and RAW264.7 (ATCC Cat# TIB-71, RRID:CVCL_0493) cell lines were cultured in Dulbecco\u2019s modified Eagle\u2019s medium (DMEM, Invitrogen) supplemented with 10% heat-inactivated FBS (Invitrogen), 10 mM Hepes buffer, pH 7.2, 2 mM L-glutamine, and 50 \u03bcg/ml penicillin and streptomycin (Thermo Fisher Scientific). Cells were incubated at 37\u00b0C in 5% CO2. Stable transgenic parasites or recombinants were selected with 25 \u00b5g/ml mycophenolic acid and 50 \u00b5g/ml xanthine or 1 \u00b5M pyrimethamine. The cultures were free of mycoplasma, as determined by qualitative PCR and/or IFA.\n\n### Reagents\n\nAntibodies raised against Hemagglutinin (Roche Cat# 3F10, RRID:AB_2314622 or Cell Signaling Technology Cat# 3724, RRID:AB_1549585), GRA1 (provided by J.-F- Dubremetz, UMR 5235 Centre National de la Recherche Scientifique, Montpellier, France), Toxofilin (provided by I. Tardieux, INSERM 1209, Grenoble, France), MIC2 (provided by D.Sibley, Washington University School of Medicine, St. Louis, MO), \u03b2-catenin (BD Biosciences Cat# 610153, RRID:AB_397554), GSK3\u03b2 (Cell Signaling Technology Cat# 12456, RRID:AB_2636978), PP2A-B56 (#MABS270, Millipore), PP2A65 RA (Cell Signaling Technology Cat# 2039S, RRID:AB_10695607), PP2Ac (#2038, Cell signaling), Phospho-GSK3\u03b1/\u03b2 (Cell Signaling Technology Cat# 8566S, RRID:AB_10860069), TBP (Abcam Cat# ab62126, RRID:AB_2287049), and TgQRS (van Rooyen et al., 2014) were used in the immunofluorescence assay and/or Western blotting. Immunofluorescence secondary antibodies were conjugated to Alexa Fluor 488 or Alexa Fluor 594 (Invitrogen). Western blotting secondary antibodies conjugated to alkaline phosphatase was purchased from Promega. The inhibitors CHIR 99021(#252917-06-9) and BIO (#66746362\u20139) were purchased from R and D systems. Recombinant bacterial lipopolysaccharide (LPS) from Escherichia coli O26:B6 (Sigma-Aldrich) was used to stimulate the BMDMs.\n\n### Plasmid constructs\n\nThe plasmids and primers used in this work are listed in Supplementary file 1. To construct the vectors pLIC-GRA18-HA3-DHFR and pLIC-GRA18-HF-DHFR, the coding sequence of GRA18 was amplified using primers LICF-288840_F and LICF-288840_R and RH ku80 genomic DNA as the template. The PCR product was cloned to pLIC-HA3-DHFR and pLIC-HF-DHFR vectors, respectively using the LIC cloning method as described in Huynh and Carruthers, 2009.\n\nThe vector pDEST14 KO GRA18II was generated to construct the deletion/insertion mutation of GRA18 in Pru (type II) T. gondii strain. The Multisite Gateway Pro3-fragment Recombination system was used to clone the DHFR cassette flanked by the 5\u2019 and 3\u2019 surrounding regions of GRA18 coding sequence of type II genomic DNA as described in Bougdour et al. (2013). Briefly, the 5\u2019 flanking region of GRA18 of Pru strain was amplified using primer attB1-288840_F and attB4-288840_R, and was cloned into the plasmid pDONR221 P1-P4 (Invitrogen). The 3\u2019 flanking region of GRA18 was amplified using primers attB3-288840_F and attB2-288840_R and was cloned into the plasmid pDONR221 P3-P2. The resulting vectors, pDONR221/5\u2019GRA18 and pDONR221/3\u2019GRA18, respectively, were then recombined with pDONR221/DHFR into the destination vector pDEST14 KO, yielding the pDEST14 KO GRA18II.\n\nThe plasmid pTOXO_Cas9-CRISPR::sgGRA18 vector was generated as previously described (Curt-Varesano et al., 2016) to construct the gra18 deletion in the 76K strain. Briefly, the sense and anti-sense oligos GRA18-CRISPR-FWD and GRA18-CRISPR-REV containing the sgRNA targeting the GRA18 genomic sequence were phosphorylated, annealed and ligated in the pTOXO_Cas9-CRISPR plasmid linearized with BsaI, yielding pTOXO_Cas9-CRISPR::sgGRA18.\n\nTo construct the pPGRA1-GRA18II-HF vector, the promoter sequence of GRA1 was amplified by PCR using the primers LICF-PGRA1 _F2 and PGRA1 _R. The GRA18 coding sequence of type II T. gondii strain was amplified by PCR using the primers GRA1-GRA181-x_F and LICR-288840_R. The resulting PCR products were assembled using the Gibson assembly kit (NEB) and the resulting PGRA1-GRA18 DNA fragment was cloned into the plasmid pLIC-HF-DHFR, yielding the pPGRA1-GRA18II-HF vector.\n\nThe pX330_hSpCas9::sgCTNNB1 vector was generated using the sense and anti-sense oligos, CTNNB1-CRISPR-FWD and CTNNB1-CRISP-REV, respectively. Annealed oligos were ligated into the pX330_hSpCas9 plasmid linearized with BbsI (Cong et al., 2013). The expressed guide RNA targets the second armadillo repeat of genomic Ctnnb1 sequence.\n\n### Toxoplasma transfection and generation of GRA18 mutant strains\n\nT. gondii strains were transfected using electroporation parameters established previously (Bougdour et al., 2013). Stable integrants or recombinants were selected with 25 \u00b5g/ml mycophenolic acid and 50 \u00b5g/ml xanthine or 1 \u00b5M pyrimethamine, and cloned by limiting dilution.\n\nTo construct the deletion/insertion mutation of GRA18 the type II Pru ku80 strain, the pDEST14 KO GRA18II plasmid was amplified by PCR using primers attB1-288840_F and attB2-288840_R. After sodium acetate/ethanol precipitation, DNA was re-suspended in TlowE buffer and\u00a0~20 \u00b5g of PCR product was used for transfection. Recombinants were selected with 1 \u00b5M pyrimethamine and single-cell cloned by limiting dilution and verified by PCR analysis as described in Figure 4.\n\nTo generate the GRA18 insertional mutant in the 76K strain, the parasites were cotransfected with a mixture of the pTOXO_Cas9CRISPR::sgGRA18 vector with purified amplicons containing the DHFR cassette flanked by sequences homologous to the sequence targeted by sgGRA18 (5:1 mass ratio). These amplicons were generated by PCR amplification of the DHFR cassette using the primers GRA18-DHFR - F and GRA18-DHFR \u2013 R, and a vector carrying the DHFR cassette as template (Donald and Roos, 1993). Stable recombinants were selected with 1 \u03bcM pyrimethamine, single-cell cloned by limiting dilution and verified by PCR analysis as described in Figure 4.\n\n### Immunofluorescence microscopy\n\nImmunofluorescence assays were performed previously (Bougdour et al., 2013). Briefly, cells were fixed in PBS-3% (vol/vol) formaldehyde and permeabilized with PBS-0.1% Triton X-100 (vol/vol) or ethanol (\u221220\u00b0C) for 3 min. After blocking in PBS-3% BSA, samples were incubated in PBS-3% BSA containing the primary antibodies indicated in the figures, followed by the secondary antibodies coupled with Alexa Fluor 488 or Alexa Fluor 568 (Invitrogen) at a 1:1000 dilution. Nuclei of both host-cells and parasites were stained for 10 min at RT with Hoechst 33258 at 2 \u03bcg/ mL in PBS. After four washes in PBS, coverslips were mounted on a glass slide with Mowiol mounting medium. Images were acquired with a fluorescence microscope AxioImager M2 equipped with Apotome module (Carl Zeiss, Inc.).\n\n### Mice and experimental infection\n\nSix-week-old female BALB/cJRj mice were obtained from Janvier Labs and were maintained in specific pathogen-free conditions in accordance with institutional and national regulations. Freshly egressed tachyzoites were washed and diluted in Hank's Balanced Salt Solution (HBSS) supplemented with 10 mM HEPES at pH7.2. Plaque assays were performed on each inoculum to quantify the number of viable tachyzoites injected, and only experiments where comparable numbers were obtained were included in our analyses. Mice were infected by intraperitoneal injection of 105 tachyzoites in 200 \u00b5L volume. The health of the mice was monitored daily until they presented severe symptoms of acute toxoplasmosis (bristled hair and complete prostration associated with reduced mobility). All animal experiments were conducted with the approval and oversight of the Institutional Animal Care and Use Committee at the University Grenoble Alpes (agreement # B38 516 10 006).\n\n### Yeast two-hybrid screen\n\nFull\u2010length GRA18II (aa 27 to 648) cloned in pB27 (N\u2010LexA\u2010bait\u2010C fusion) was used in a ULTImate Y2H screen against a human Human Placenta_RP5 complementary DNA Gal4-activating domain-fusion library (Hybrigenics, Paris, France). The construct was checked by sequencing. Prey fragments of positive clones were amplified by PCR and sequenced at their 5\u2032 and 3\u2032 junctions and the resulting sequences were used to identify corresponding interacting proteins in the GenBank database via a fully automated procedure. A confidence score (Global Predicted Biological Score, Global PBS) was attributed to each interaction as previously described (Formstecher et al., 2005).\n\nThe interaction domain mapping was performed using Full\u2010length GRA18II (aa 27 to 648) and GRA18 fragments (aa 26 to 233, aa 233 to 440, aa 420 to 648, aa 152 to 350, and aa 350 to 585) that were PCR-amplified and cloned in frame with the LexA DNA binding domain (DBD) by Gap-repair into plasmid pB27, derived from the original pBTM116 (Vojtek and Hollenberg, 1995). The Hybrigenics reference for this construct is hgx3694v1_pB27. This construct was used previously to screen the placenta library and was used as a control in this assay. The prey fragments for the human CTNBB1 var3, GSK3A and PPP2R5A were extracted from the above ULTImate Y2H screening of GRA18 against the placenta cDNA library. The prey fragments were cloned in frame with the Gal4 Activation Domain (AD) into plasmid pP6, derived from the original pGADGH (Bartel et al., 1993). The AD constructs were checked by sequencing. The pP7 prey plasmid used as control in this assay is derived from the pP6 plasmid. Bait and prey constructs were transformed in the yeast diploid cells, obtained using a mating protocol with both yeast strains L40\u0394Gal4 (mata) and YHGX13 (Y187 ade2-101::loxP-kanMX-loxP, mat\u03b1) (Fromont-Racine et al., 1997). In order to identify GRA18 fragments interacting with the three tested preys, three diploids for each fragment were picked and the interaction tested by growth assay (robot calibrated drops) on selective medium without tryptophan, leucine and histidine (DO-3). The interaction assays are based on the reporter gene HIS3 (growth assay without histidine). Five different concentrations of 3-AminoTriazol (3-AT), an inhibitor of the HIS3 gene product, were added to the DO-3 plates to increase stringency. The following 3-AT concentrations were tested: 1, 5, 10, 20 and 50 mM 3-AT.\n\n### BMDM\n\nBone marrow derived macrophages were generated as described previously (Bougdour et al., 2013) with the following modifications. Briefly, bone marrow was flushed from femurs and tibias of BALB/c mice and cultured for 1 week in complete macrophage medium (Dulbecco modified Eagle's minimal essential medium (DMEM) (Invitrogen, Breda, the Netherlands) supplemented with 10% fetal calf serum (FCS) (Invitrogen), 20% conditioned medium from macrophage-colony stimulating factor-secreting L929 fibroblasts (Aziz et al., 2009), 50 \u03bcM 2-mercaptoethanol, 1X non-essential amino acids (Thermo Fisher Scientific), and 2% penicillin/streptomycin-glutamine. After 7\u201310 days in culture adherent cells were approximately 95% pure macrophages (F4/80+) and cells were used for experiments.\n\n### Toxoplasma growth assay by fluorescence imaging assays\n\nT. gondii proliferation was determined by high-content fluorescence imaging as described previously (Palencia et al., 2017). Briefly, 10,000 HFFs were seeded in each well of well in 96-well plate and then infected with 4 \u00d7 104 parasites. Invasion was synchronized by briefly centrifuging the plate at 400 rpm, and plates were incubated at 37\u00b0C for 2 hr. Infected cells were then washed three times with PBS and further incubated for a total of 24 hr of growth. Nuclei were stained with Hoechst 33342 at 5 \u00b5g/mL for 20 min and after fixation and permeabilization, parasite vacuoles were labelled using an anti-GRA1 antibody (specific to Toxoplasma). Images were automatically acquired using the ScanR microscope system (Olympus) to determine the number of tachyzoites per vacuole. The experiments were done in triplicate from two independent assays, and data were processed using the GraphPad Prism software.\n\n### Plaque assay\n\nA confluent monolayer of HFFs was infected with\u00a0~50 freshly egressed parasites for 8 days. Cells were fixed in PBS-3% (vol/vol) formaldehyde as described above and plaques were visualized by Giemsa staining (Sigma-Aldrich; GS500) according to the manufacturer\u2019s instructions.\n\n### RNA-seq and sequence alignment\n\nFor each biological assay, 3 \u00d7 106 BMDMs were seeded per well in 3 mL DMEM in six-well tissue culture plates. Cells were left uninfected or infected with the Pru ku80, Pru ku80 \u0394gra18, and Pru ku80 \u0394gra18, GRA18+++ strains (MOI\u00a0=\u00a06) for 18 hr and subsequently subjected or not to LPS stimulation (100 ng/mL of bacterial lipopolysaccharide from Escherichia coli O26:B6; Sigma-Aldrich) for 4 hr. Total RNAs were extracted and purified using TRIzol (Invitrogen, Carlsbad, CA, USA) and RNeasy Plus Mini Kit (Qiagen). RNA quantity and quality were measured by NanoDrop 2000 (Thermo Scientific). RNA integrity was assessed by standard non-denaturing 1.2% TBE agarose gel electrophoresis. The ribosomal large subunits from Toxoplasma and the host cells was used to verify that the ratio between Toxoplasma RNA versus host RNA was equivalent between the different biological samples, thus indicating that the samples had equivalent infection rates. For each condition, total RNAs from two independent biological replicates were pooled to prepare cDNA libraries which were then sequenced using Illumina technology in a single replicate dataset.\n\nRNA-sequencing was performed by GENEWIZ (South Plainfield, NJ, USA). Briefly, the RNA quality was checked with an Agilent 2100 Bioanalyzer (Agilent Technologies, Palo Alto, California, USA) and Illumina TruSEQ RNA library prep and sequencing reagents were used following the manufacturer's recommendations (Illumina, San Diego, CA, USA). The samples were paired-end multiplex sequenced (2\u00a0\u00d7\u00a0125 bp) on the Illumina Hiseq 2500 platform and generated at least 70 million reads for each sample (Supplementary file 3).\n\nThe RNA-Seq reads (FASTQ) were processed and analyzed using the Lasergene Genomics Suite version 14 (DNASTAR, Madison, WI, USA) using default parameters. The paired-end reads were uploaded onto the SeqMan NGen (version 14, DNASTAR. Madison, WI, USA) platform for reference-based assembly using either the Mus musculus genome package (GRCm38.p3) or the Toxoplasma Type II ME49 strain (ToxoDB-24, ME49 genome) as reference template. The ArrayStar module (version 14, DNASTAR. Madison, WI, USA) was used for normalization, differential gene expression and statistical analysis of uniquely mapped paired-end reads using the default parameters. The expression data quantification and normalization were calculated using the RPKM (Reads Per Kilobase of transcript per Million mapped reads) normalization method. Pathway and functional annotation analyses of the differentially expressed genes were conducted using the hallmark gene sets of GSEA (Mootha et al., 2003; Subramanian et al., 2005) with default parameters.\n\n### Transfection of RAW264.7 cells\n\nCells were transfected by electroporation using the Neon Transfection System (Thermo Fisher Scientif). Twenty-four hours before transfection, the RAW264.7 cells were plated at 50% confluency in T-175 tissue culture flask. About 3\u00a0\u00d7\u00a0106 cells were washed once in PBS and resuspended in 100 \u03bcL of R buffer for transfection. This suspension was mixed with 15 \u03bcg of DNA followed by electroporation at 1680 V and 20 ms for one pulse.\n\n### Generation of \u03b2-catenin-deficient RAW 264.7 cell line\n\nRAW264.7 cells was transfected with 15 \u03bcg of pX330-hSpCas9::sgCTNNB1 vector as described above. At 48 hr after electroporation, cells were cloned by limited dilution and individual clones were expanded and tested for \u03b2-catenin expression by IFA and immunoblotting using \u03b2-catenin antibodies. The Ctnnb1 genomic sequences were amplified by PCR using primers Chk ctnnb1_F and Chk ctnnb1_R. The resulting fragments were then ligated into pCR2.1-TOPO for sequencing.\n\n### Chromatographic purification of GRA18-containing complex\n\nCytoplasmic fraction from T-Rex cells stably expressing Flag-tagged protein or J774 cells infected with Pru ku80 expressing Flag-tagged GRA18 (GRA18+++), were incubated with anti-FLAG M2 affinity gel (Sigma-Aldrich) for 1 hr at 4\u00b0C. Beads were washed with 20-column volumes of the BC500 buffer (20 mM Tris-HCl, pH8.0, 0.5 M KCl, 20% Glycerol, 0.5 mM DTT, 0.5% NP40, and protease inhibitors). Bound polypeptides were eluted stepwise with 250 \u03bcg/mL FLAG peptide (Sigma Aldrich) diluted in BC100 buffer. For size-exclusion chromatography, protein eluates were loaded onto a Superose 6 HR 10/30 column equilibrated with BC500. Flow rate was fixed at 0.35 mL/min, and 0.5 mL fractions were collected.\n\n### Co-Immunoprecipitation assay\n\nFlag-tagged GRA18 in T-Rex cells was purified by FLAG affinity as follows. Cells were washed in ice-cold PBS and resuspended in buffer A (10 mM Tris-HCl, pH7.9, 1.5 mM MgCl2, 10 mM KCl, 0.5 mM DTT, 0.2 mM PMSF, and 1X Roche protease inhibitor cocktail). Swelling cells were lysed for 8 min with 0.1% NP40 followed by 10 times dounced with loose plunger to disrupt the plasma membranes. Cell lysates were centrifuged at 1,300 g for 10 min and the supernatant containing the cytosolic fraction was collected.\n\nThe cytoplasmic extracts were supplemented with 1:10th volume of 10X buffer B (0.3 M Tris-HCl, pH7.9, 1.4M KCl, 0.03 M MgCl2) before incubation with 50 \u03bcL FLAG M2 affinity gel (Sigma-Aldrich) for 1 hr at 4\u00b0C. Beads were washed three times in BC500. Bound polypeptides were eluted with 50 \u03bcL 250 \u03bcg/ml FLAG peptide (Sigma Aldrich) diluted in BC100 buffer. Samples were mixed with protein sample buffer (Invitrogen) for immunoblot analysis.\n\n### Mass spectrometry\u2013based proteomics\n\nProtein bands were excised from colloidal blue\u2013stained gels (Thermo Fisher Scientific), treated with DTT and iodoacetamide to alkylate the cysteines before in-gel digestion using modified trypsin (sequencing grade; Promega). Resulting peptides from individual bands were analyzed by nanoLC-MS/MS (UltiMate 3000 coupled to LTQ-Orbitrap Velos Pro; Thermo Fisher Scientific) using a 25 min gradient. Peptides and proteins were identified and quantified using MaxQuant (version 1.5.3.17) through concomitant searches against ToxoDB (20151112 version), SwissProt (Homo sapiens taxonomy, 20151112 version), and the frequently observed contaminant database embedded in MaxQuant. Minimum peptide length was set to seven amino acids. Minimum number of peptides, razor\u00a0+unique peptides, and unique peptides were all set to 1. Maximum false discovery rates were set to 0.01 at peptide and protein levels.\n\n### Immunoblot analysis\n\nImmunoblot analysis of protein was performed as described in Bougdour et al. (2013). Briefly,\u00a0~107 cells were lysed in 50 \u03bcL lysis buffer (10 mM Tris-HCl, pH6.8, 0.5% SDS [v/v], 10% glycerol [v/v], 1 mM EDTA and protease inhibitors cocktail) and sonicated. The protein extracts were separated by SDS-PAGE, and transferred to a PolyVinyliDene Fluoride membrane (PVDF; immobilon-P, Millipore) by liquid transfer. M were then blocked with PBS buffer containing 0.01% Tween 20 (v/v) and 5% nonfat dry milk. Appropriate primary antibodies diluted in PBS containing 0.03% Tween 20 (v/v) were used to probe the membrane. Primary antibodies were detected using alkaline phosphatase or horseradish peroxidase conjugated secondary antibodies with Novex AP Chromogenic Substrate (Invitrogen) or Supersignal West Pico Chemiluminescent Substrate kit (Thermo Fisher Scientific), respectively.\n\n### Quantitative real-time PCR\n\nTotal RNA was isolated using TRIzol reagent (Thermo Fisher Scientific) and RNA quality and integrity was assessed by agarose gel electrophoresis and quantification of 28S and 18S ribosomal RNA. cDNA was synthetized using the High Capacity RNA-to-cDNA kit (Applied Biosystem). Samples were analyzed by real time quantitative PCR for Ccl17, Ccl22, Ccl24 and Ifnb1 using TagMan Gene Expression Master Mix (Applied Biosystems) according to the manufacturer\u2019s instructions. Tbp was used as an internal control gene for normalization. Data were analyzed using the 2-\u0394\u0394Ct method, and statistical analyses were conducted on the \u0394Ct values. Data are represented as mean value\u00a0\u00b1\u00a0s.d. of three technical replicates and the results presented are representative of at least two independent experiments.\n\n### In vitro cytokine ELISA\n\nAbout 106 BMDMs were seeded per well of a 24-well-plate. Cells were left uninfected or infected with freshly egressed T. gondii tachyzoites at an MOI of 1:5. At 24 hr post-infection, supernatants were collected and stored at \u221280\u00b0C for storage. CCL17 and CCL22 levels were determined using Mouse CCL17/TARC and Mouse CCL22/MDC Quantikine ELISA Kits from R and D Systems according to the manufacturer\u2019s instructions. Data are mean value\u00a0\u00b1\u00a0s.d. of four independent experiments from two biological replicates.\n",
+      "created_at": "2025-12-02T06:38:23.490696Z"
+    },
+    {
+      "id": "588ef92b-9217-4657-adaa-ee68fa560c58",
+      "submission_id": "0c131761-0aba-4054-92ae-a12192e99ff5",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Dominique Soldati-Favre, University of Geneva Switzerland\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.39887.026](https://doi.org/10.7554/eLife.39887.026)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\n[Editors\u2019 note: a previous version of this study was rejected after peer review, but the authors submitted for reconsideration. The first decision letter after peer review is shown below.]\n\nThank you for submitting your work entitled \"Characterization of a Toxoplasmaeffector uncovers an alternative \u03b2-catenin-regulatory pathway of inflammation\" for consideration by eLife. Your article has been reviewed by a Senior Editor, a Reviewing Editor and three peer reviewers. The following individuals involved in review of your submission have agreed to reveal their identity: Jon P Boyle (Reviewer #1).\n\nOur decision has been reached after consultation between the reviewers. Based on these discussions and the individual reviews below, we regret to inform you that your work will not be considered at this stage for publication in eLife.\n\nWe all agreed that the reported observations are potentially interesting however some serious concerns were raised including notably the artificial nature of the experimental conditions that always depend on ectopic overexpression of GRA18. Without verifying the effects when expressed at endogenous levels or via KO, the biological relevance of the findings is not clear.\n\nWhile we are rejecting the paper as a result of the criticisms, if you feel that you are able to address these issues, we encourage you for a resubmission that will be handled as revision.\n\nReviewer #1:\n\nSubsection \u201cGRA18 is secreted and exported to the cytoplasm of infected host cells\u201d: Should be more specific about classes of secreted effectors that do or do not go to the host cell nucleus.\n\nSubsection \u201cGRA18 is secreted and exported to the cytoplasm of infected host cells\u201d: \"identity\" not \"identities\" (similar grammatical errors throughout) a couple of places GRA18 is referred to as GRA16.\n\nThis is a very thorough and exciting manuscript identifying a new effector secreted by Toxoplasma gondii as well as a new target pathway that, in murine cells, induces the production of regulatory chemokines like CCL17, CCL22, and CCL24. While many secreted dense granule effectors traffic to the host cell nucleus, GRA18 remains in the host cell cytoplasm, where it interacts with components of the \u03b2-catenin signaling pathway, leading to activation and translocation of \u03b2-catenin into the host cell nucleus. GRA18 itself interacts with these components both during infections and in ectopic expression, indicating that it is required for manipulation of this pathway. overall the work is of high quality and experiments are well-controlled and interpreted properly.\n\nWhile it is clear that gra18 interacts with \u03b2-catenin and \u03b2-catenin signaling components in human and murine cells, the gra18-driven chemokine transcription and/or chemokine secretion was not determined in human cells. This would either establish the chemokine effect as being broadly applicable to cells from multiple species or would suggest that distinct effectors may be responsible for chemokine induction in cells from different species. There is certainly precedent for mouse and human responses to certain effectors being distinct (IRGs vs. rhoptry proteins; profilin vs. Toll-like receptors, e.g.).\n\nIt would be helpful if the in vivo mouse infection data comparing gra18 wt/ko would be shown or described in more detail (as written it is discussed as being slightly less virulent but this should be quantified).\n\nAre there statistical analyses in Figure 6? while the data showing that \u03b2-catenin KO cells don't make as much Ccl17 or Ccl24, the data are less clear for Ccl22.\n\nFor the RNA-Seq experiments I cannot tell how many replicates were performed for each condition. this should be included in the methods and it would be helpful if the heat map in Figure 6 could include all replicates (are they averages? or was there only a single RNA-Seq replicate?)\n\nReviewer #2:\n\nThe mechanisms by which intracellular microbes hijack the host cell is a fascinating area of study. Here the authors explore a novel effector protein produced by the protozoan parasite Toxoplasma. The authors find that this effector, GRA18, can form complexes with the Wnt effector \u03b2-catenin and its regulators GSK3 and PP2A. They find that overexpressing GRA18 can stabilize \u03b2-catenin and lead to downstream effects on genes expression. The results are generally solid, but, as outlined below, I felt there was one major conceptual flaw that undercut the study and reduced the insights available-this significantly reduced my enthusiasm. I also outline below some other experimental concerns.\n\nThe authors present very solid data demonstrating that GRA18 can bind to and coIP with \u03b2-catenin, GSK3 and PP2A. They also show that overexpression of GRA18 can stabilize \u03b2-catenin and lead to downstream effects on genes expression. However, as they admit, loss of GRA18 has no detectable effects on \u03b2-catenin levels, gene expression or parasite proliferation. This may be due to redundancy with other effectors but as a result there is no evidence that role they suggest is a natural one. Anything that tightly bound and sequestered GSK3 would be likely to increase \u03b2-catenin levels when overexpressed, even if this was not its normal function. This issue substantially undercut the biological relevance of these findings and meant that many of the authors strong conclusions should be phrased as what GRA18 \"can do\" rather than what it \"does\".\n\nFigure 1C. The subcellular localization of GRA18 expressed from two different promotors was very different. This was troubling.\n\nFigure 3. The binding of GRA18 to \u03b2-catenin as assessed by 2 hybrid and by coIP gave different results.\n\nReviewer #3:\n\nThis is an interesting report that describes the effects of a secreted parasite protein on host cell signaling. The effector described here (GRA18) is novel as is implication of the \u03b2-catenin pathway that it proposed to modulate. I feel that the work is carefully done but relies too heavily on over-expression and heterologous expression and hence I have some concerns about the validity of the conclusions.\n\nThe lack of a striking phenotype in infected mice for gra18 mutants suggest that the modulation of the \u03b2-catenin pathway described here does not play a major role in pathogenesis. This lack of an overt phenotype should encourage the authors to consider other roles for the effector they have defined. For example, given the chemokine signals evoked here, are there differences in cellular recruitment linked to GRA18?\n\nOne concern about the interactions studied here is that they may be driven by mass action as many of the key experiments are performed by over-expressing the effector either for Y2H or using the inducible T-Rex system. Even the confirmation studies using host cells infected with T. gondii appear to use a construct that is over-expressed (subsection \u201cGRA18 forms versatile complexes with host components of the \u03b2-catenin destruction 112 complex\u201d). Therefore, there is some concern that these interactions are not normally triggered during infection. Paralleling this pattern, it was only when GRA18 was strongly over-expressed (subsection \u201cGRA18 functions as a positive regulator of \u03b2-catenin\u201d) that an effect on \u03b2-catenin could be shown in infected cells.\n\nAlthough it seems clear from RNA-Seq studies that the presence of GRA18 drives induction of chemokines such as Ccr7, Ccl1, Ccl17 and Ccl22, \u2013 these are not typical Wnt-\u03b2-catenin-dependent genes. Thus, it would be important to show that their induction by GRA18 (or loss in gra18 mutants) is actually \u03b2-catenin-dependent. Again, this experiment only seems to have been performed with ectopic over-expression.\n\nI feel that if the pathway describe here is robust the authors should be able to do many of these experiments with infection of WT and mutant strains and examine gene induction by qRT-PCR or cytokine levels by luminex of similar technology. Absent this, there is some chance that the apparent modulation of \u03b2-catenin is only due to over-expression and the true role of GRA18 is chemokine modulation through another pathway.\n\n[Editors\u2019 note: what now follows is the decision letter after the authors submitted for further consideration.]\n\nThank you for submitting your article \"Characterization of a Toxoplasma effector uncovers an alternative GSK3/\u03b2-catenin-regulatory pathway of inflammation\" for consideration by eLife. Your article has been reviewed by Gisela Storz as the Senior Editor, a Reviewing Editor and three peer reviewers. The reviewers have opted to remain anonymous.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nThe authors report here an extensive characterization of a new dense granule protein from Toxoplasma gondii, GRA18, that traffics to the host cell cytosol where, remarkably, it binds to several proteins in the \u03b2-catenin destruction complex, including \u03b2-catenin. GRA18 affects \u03b2-catenin signaling via increased \u03b2-catenin activity and expression of many host genes including specific chemokines. The results are impressive in their scope and the multiple ways in which most of the conclusions are supported by independent experiments. Overall the model is supported by the data presented and the paper is clearly and rigorously written, especially given the complexity of the story being presented. It ends with a mystery in terms of why the genes that are classically considered to be downstream of \u03b2-catenin are not activated by GRA18's action on \u03b2-catenin. The authors are forced to invoke another, as yet unidentified, parasite protein as playing a role that intersects with GRA18 in an infected cell. Although the exact mechanism of interaction is not yet understood, the data shown is solid and in general support the interpretation of GRA18 as the driving force of a non-canonical \u03b2-catenin-dependent signaling pathway conserved over multiple host species.\n\nEssential revisions:\n\nWhile a great deal of data is provided, some of the conclusions reached do not always appear to be strongly supported by the data.\n\n1). GRA18 binding- The authors state that GRA18 directly binds \u03b2-catenin though I think the data they provide is certainly less robust than the data they have for GSK and PPP2R5A/B (e.g. the original Y2H found 3 clones showing \u03b2-catenin interactions with \"B\" ratings as opposed to GSK and PPP2R5A/B- which had over 10 clones with \"A\" ratings; the Y2H with bits of GRA18 shows a direct \u03b2-catenin interaction but the infected macrophage data and T-rex with overexpression do not). The authors need to either provide stronger explanations/data about the direct binding to \u03b2-catenin or soften their conclusion (and possibly to change the model- Figure 8).\n\n2) Subsection \u201cGRA18 functions as a positive regulator of \u03b2-catenin\u201d \u2013 The virulence data shown is from one experiment and there is no mention in the legend or text if this was repeated. Given the variability that can be seen in animal experiments, at least one repeat is needed.\n\n3) Chemokine data- Between Figure 5, Figure 6, and Figure 7 there are inconsistencies. Figure 5E and F show that Ccl17 and Ccl22 have a GRA18-dependent increase in expression and protein levels but Ccl24 only changes at the level of transcript. Instead of exclusively focusing on Ccl17 and Ccl22, all 3 are noted in Figure 6 (using only expression data) with Figure 6F suggesting that Ccl22 changes in GRA18-\u03b2-catenin-independent mechanism. This idea seems to be contradicted in Figure 7 where the authors use Ccl22 as a readout for GRA18 inhibiting GSK3 which leads to increased \u03b2-catenin activity which then drives over-expression of Ccl22. These discrepancies need to be addressed including in the model.\n\n4) Subsection \u201cQuantitative real-time PCR\u201d: Was the RNA quality/integrity controlled and Tbp as the only control gene tested for its expression stability? Not doing so could potentially undermine the robustness and reliability of the qPCR data. Why is only 1 biological replicate shown in the qPCR data and not a combination of 2 or more?\n",
+      "created_at": "2025-12-02T06:38:23.490696Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T06:38:23.490696Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T06:38:23.490696Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "2a76af61-919a-4507-abea-1571ed77b82a",
+      "content_id": "8e8ecc1c-a66c-41a8-9878-338691db7bdc",
+      "claim_id": "C1",
+      "claim": "Toxoplasmosis has been recognized as a leading cause of deaths attributed to foodborne illness in the United States.",
+      "claim_type": "EXPLICIT",
+      "source": "Toxoplasma gondii is the causative agent of toxoplasmosis, a widespread parasitic disease in humans which has been recognized as leading cause of deaths attributed to foodborne illness in the United States (Scallan et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Scallan et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:38:23.490696Z"
+    },
+    {
+      "id": "a20f1d33-2b0f-4fa5-963d-7b9bcf1a0879",
+      "content_id": "8e8ecc1c-a66c-41a8-9878-338691db7bdc",
+      "claim_id": "C2",
+      "claim": "Severe to life-threatening toxoplasmosis mainly occurs in immunocompromised people, with acquired immunodeficiency syndrome or under chemo- and graft rejection therapies.",
+      "claim_type": "EXPLICIT",
+      "source": "Severe to life-threatening Toxoplasmosis mainly occur in immunocompromised people, with acquired immunodeficiency syndrome or under chemo- and graft rejection therapies (Montoya and Liesenfeld, 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Montoya and Liesenfeld, 2004.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:38:23.490696Z"
+    },
+    {
+      "id": "77df7d23-d28b-44ca-b0ee-acccb58886ea",
+      "content_id": "8e8ecc1c-a66c-41a8-9878-338691db7bdc",
+      "claim_id": "C3",
+      "claim": "Outcomes of congenital toxoplasmosis significantly vary with the timing of infection from recurrent eye diseases to adverse motor or neurologic impairments that can cause stillbirth.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, outcomes of congenital toxoplasmosis significantly vary with the timing of infection from recurrent eye diseases to adverse motor or neurologic impairments that can cause stillbirth (Halonen and Weiss, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Halonen and Weiss, 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:38:23.490696Z"
+    },
+    {
+      "id": "7e8900bb-1b35-430d-8292-989d13694981",
+      "content_id": "8e8ecc1c-a66c-41a8-9878-338691db7bdc",
+      "claim_id": "C4",
+      "claim": "T. gondii belongs to the protozoan phylum Apicomplexa.",
+      "claim_type": "EXPLICIT",
+      "source": "T. gondii belongs to the protozoan phylum Apicomplexa and as most Apicomplexa species, develops and proliferates inside a surrogate host cell.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established taxonomic knowledge about T. gondii.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:38:23.490696Z"
+    },
+    {
+      "id": "ec80a829-1238-4c7f-9e81-360ffe83ec6c",
+      "content_id": "8e8ecc1c-a66c-41a8-9878-338691db7bdc",
+      "claim_id": "C5",
+      "claim": "T. gondii can infect virtually all nucleated cells of mammals, marsupials and birds.",
+      "claim_type": "EXPLICIT",
+      "source": "Remarkably, T. gondii's host range is exceptionally broad since it can infect virtually all nucleated cells of mammals, marsupials and birds (Dubey, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Dubey, 2009.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:38:23.490696Z"
+    },
+    {
+      "id": "0fce9aaf-e3c0-4863-8ce9-b542cb6ff6ac",
+      "content_id": "8e8ecc1c-a66c-41a8-9878-338691db7bdc",
+      "claim_id": "C6",
+      "claim": "The invasive tachyzoite stage of T. gondii triggers the formation of a unique membrane-bound compartment called the Parasitophorous Vacuole (PV).",
+      "claim_type": "EXPLICIT",
+      "source": "To achieve intracellular lifestyle, the invasive tachyzoite stage of T. gondii triggers the formation of a unique membrane-bound compartment called the Parasitophorous Vacuole (PV).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about T. gondii infection mechanism.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:38:23.490696Z"
+    },
+    {
+      "id": "767c1282-c238-4da6-b42b-04e618e02cf5",
+      "content_id": "8e8ecc1c-a66c-41a8-9878-338691db7bdc",
+      "claim_id": "C7",
+      "claim": "The PV is shaped as a niche kept hidden from harmful endocytic processing thereby enabling tachyzoite growth and multiplication.",
+      "claim_type": "EXPLICIT",
+      "source": "The PV is shaped as a niche kept hidden from harmful endocytic processing thereby enabling tachyzoite growth and multiplication (Jones et al., 1972; Mordue et al., 1999).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Jones et al., 1972 and Mordue et al., 1999.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:38:23.490696Z"
+    },
+    {
+      "id": "6a84dcaa-1239-41e1-9a04-96b37ac0f83f",
+      "content_id": "8e8ecc1c-a66c-41a8-9878-338691db7bdc",
+      "claim_id": "C8",
+      "claim": "GRA18 is a parasite dense granule protein that once released in the host cell cytoplasm forms versatile complexes with regulatory elements of the \u03b2-catenin destruction complex.",
+      "claim_type": "EXPLICIT",
+      "source": "We identified a parasite dense granule protein as GRA18 that once released in the host cell cytoplasm forms versatile complexes with regulatory elements of the \u03b2-catenin destruction complex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the study supported by experimental data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:38:23.490696Z"
+    },
+    {
+      "id": "4efebd8c-1108-4cbf-af4d-b0d7dfadca71",
+      "content_id": "8e8ecc1c-a66c-41a8-9878-338691db7bdc",
+      "claim_id": "C9",
+      "claim": "GRA18 drives \u03b2-catenin up-regulation and the downstream effects on host cell gene expression by interacting with GSK3/PP2A-B56.",
+      "claim_type": "EXPLICIT",
+      "source": "By interacting with GSK3/PP2A-B56, GRA18 drives \u03b2-catenin up-regulation and the downstream effects on host cell gene expression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the study supported by experimental data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:38:23.490696Z"
+    },
+    {
+      "id": "2353c494-0355-4b28-b0de-bbd7d08799a3",
+      "content_id": "8e8ecc1c-a66c-41a8-9878-338691db7bdc",
+      "claim_id": "C10",
+      "claim": "In the context of macrophages infection, GRA18 induces the expression of a specific set of genes commonly associated with an anti-inflammatory response that includes those encoding chemokines CCL17 and CCL22.",
+      "claim_type": "EXPLICIT",
+      "source": "In the context of macrophages infection, GRA18 induces the expression of a specific set of genes commonly associated with an anti-inflammatory response that includes those encoding chemokines CCL17 and CCL22.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the study supported by experimental data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:38:23.490696Z"
+    },
+    {
+      "id": "9ff0e53f-14ad-47d6-bbba-be7caa3aba88",
+      "content_id": "8e8ecc1c-a66c-41a8-9878-338691db7bdc",
+      "claim_id": "C11",
+      "claim": "GRA18 protein accommodates both a signal peptide for targeting to the secretory pathway and a canonical TEXEL motif found on PV residing proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "GRA18 protein accommodates both a signal peptide for targeting to the secretory pathway and a canonical TEXEL motif found on PV residing proteins (i.e. GRAs proteins), some of which traffic across the PVM to reach the host cell cytoplasm (Coffey et al., 2015; Hakimi et al., 2017; Hammoudi et al., 2015; Hsiao et al., 2013) (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by sequence analysis shown in Figure 1A and citations to previous studies.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:38:23.490696Z"
+    },
+    {
+      "id": "6207de54-57b2-4441-9dc3-f17846bb60e6",
+      "content_id": "8e8ecc1c-a66c-41a8-9878-338691db7bdc",
+      "claim_id": "C12",
+      "claim": "In extracellular tachyzoites, GRA18-HF partially co-localized with the DG resident protein GRA1 but not with the micronemal protein MIC2 or the toxofilin rhoptry protein.",
+      "claim_type": "EXPLICIT",
+      "source": "In extracellular tachyzoites, GRA18-HF partially co-localized with the DG resident protein GRA1 but not with the micronemal protein MIC2 or the toxofilin rhoptry protein (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by immunofluorescence data shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:38:23.490696Z"
+    },
+    {
+      "id": "b63483e7-c3df-4be8-90f5-97e69d51e0f8",
+      "content_id": "8e8ecc1c-a66c-41a8-9878-338691db7bdc",
+      "claim_id": "C13",
+      "claim": "When expressed in intracellular replicating tachyzoites, the GRA18-HA3 protein accumulated in the cytoplasm of infected cells over time.",
+      "claim_type": "EXPLICIT",
+      "source": "When expressed in intracellular replicating tachyzoites, the GRA18-HA3 protein accumulated in the cytoplasm of infected cells over time (Figure 1C, upper panel), but was not detected in host cell nucleus in contrast to the yet identified effectors (i.e. PP2C-hn, ROP16, ROP47, GRA16, GRA24, GRA28, and TgIST; for review, see Hakimi et al., 2017).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by immunofluorescence data shown in Figure 1C and comparison to known effectors.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:38:23.490696Z"
+    },
+    {
+      "id": "68873dc0-a4d5-4548-9a7b-e726120b11d1",
+      "content_id": "8e8ecc1c-a66c-41a8-9878-338691db7bdc",
+      "claim_id": "C14",
+      "claim": "GRA18 was not detected in host cell nucleus in contrast to the yet identified effectors (i.e. PP2C-hn, ROP16, ROP47, GRA16, GRA24, GRA28, and TgIST).",
+      "claim_type": "EXPLICIT",
+      "source": "When expressed in intracellular replicating tachyzoites, the GRA18-HA3 protein accumulated in the cytoplasm of infected cells over time (Figure 1C, upper panel), but was not detected in host cell nucleus in contrast to the yet identified effectors (i.e. PP2C-hn, ROP16, ROP47, GRA16, GRA24, GRA28, and TgIST; for review, see Hakimi et al., 2017).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by immunofluorescence data shown in Figure 1C and comparison to known effectors.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:38:23.490696Z"
+    },
+    {
+      "id": "ea1611d9-f68b-4d91-bd53-83aec865c4b0",
+      "content_id": "8e8ecc1c-a66c-41a8-9878-338691db7bdc",
+      "claim_id": "C15",
+      "claim": "In the absence of the parasite MYR1 protein, the export of GRA18 through the PVM no longer occurred.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, in the absence of the parasite MYR1 protein, the export of GRA18 through the PVM no longer occurred (Figure 1D), indicating that GRA18 uses an export pathway shared with the other GRA effectors (Franco et al., 2016).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by immunofluorescence data shown in Figure 1D and citation to Franco et al., 2016.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:38:23.490696Z"
+    },
+    {
+      "id": "710636ce-a39e-4c7f-864e-c8bd179170aa",
+      "content_id": "8e8ecc1c-a66c-41a8-9878-338691db7bdc",
+      "claim_id": "C16",
+      "claim": "GRA18 uses an export pathway shared with the other GRA effectors.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, in the absence of the parasite MYR1 protein, the export of GRA18 through the PVM no longer occurred (Figure 1D), indicating that GRA18 uses an export pathway shared with the other GRA effectors (Franco et al., 2016).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is inferred from the MYR1 dependency data and supported by citation to Franco et al., 2016.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:38:23.490696Z"
+    },
+    {
+      "id": "13b00cb8-4f9d-476d-919a-af966a12b4f9",
+      "content_id": "8e8ecc1c-a66c-41a8-9878-338691db7bdc",
+      "claim_id": "C17",
+      "claim": "GRA18 is a 70 kDa protein predicted to be partially disordered.",
+      "claim_type": "EXPLICIT",
+      "source": "GRA18 is a 70 kDa protein predicted to be partially disordered (Figure 1E) with no apparent homolog counterpart outside of the Coccidia.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by computational prediction shown in Figure 1E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:38:23.490696Z"
+    },
+    {
+      "id": "99d7087d-5141-421c-b4a9-4e581735b1ca",
+      "content_id": "8e8ecc1c-a66c-41a8-9878-338691db7bdc",
+      "claim_id": "C18",
+      "claim": "GRA18 has no apparent homolog counterpart outside of the Coccidia.",
+      "claim_type": "EXPLICIT",
+      "source": "GRA18 is a 70 kDa protein predicted to be partially disordered (Figure 1E) with no apparent homolog counterpart outside of the Coccidia.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on sequence analysis and comparison.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:38:23.490696Z"
+    },
+    {
+      "id": "fa09739e-1b60-4b1b-8bdf-4644bf34bb24",
+      "content_id": "8e8ecc1c-a66c-41a8-9878-338691db7bdc",
+      "claim_id": "C19",
+      "claim": "GRA18 shows little polymorphism among the three major strain types of T. gondii (99% identity).",
+      "claim_type": "EXPLICIT",
+      "source": "While GRA18 shows little polymorphism among the three major strain types of T. gondii (99% identity, Figure 1A), the protein is highly divergent in Neospora caninum (39% identity).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by sequence alignment data shown in Figure 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:38:23.490696Z"
+    },
+    {
+      "id": "7699b327-21e2-4fa9-9b84-22cbf39ee698",
+      "content_id": "8e8ecc1c-a66c-41a8-9878-338691db7bdc",
+      "claim_id": "C20",
+      "claim": "GRA18 is highly divergent in Neospora caninum (39% identity).",
+      "claim_type": "EXPLICIT",
+      "source": "While GRA18 shows little polymorphism among the three major strain types of T. gondii (99% identity, Figure 1A), the protein is highly divergent in Neospora caninum (39% identity).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on sequence comparison.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:38:23.490696Z"
+    },
+    {
+      "id": "ed209d45-07e9-4ff6-8eb6-1a551924e96a",
+      "content_id": "8e8ecc1c-a66c-41a8-9878-338691db7bdc",
+      "claim_id": "C21",
+      "claim": "GRA18 is an additional member of the class of T. gondii DG proteins that are exported in the host cell during tachyzoite life cycle.",
+      "claim_type": "EXPLICIT",
+      "source": "Collectively, these data indicate that GRA18 is an additional member of the class of T. gondii DG proteins that are exported in the host cell during tachyzoite life cycle (Hakimi et al., 2017; Nadipuram et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by the experimental data presented and citations to previous studies.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:38:23.490696Z"
+    },
+    {
+      "id": "429b0ded-c61a-49fd-9c62-6489177ea414",
+      "content_id": "8e8ecc1c-a66c-41a8-9878-338691db7bdc",
+      "claim_id": "C22",
+      "claim": "Multiple components of the \u03b2-catenin destruction complex were found among the GRA18 interactants: \u03b2-catenin itself, the glycogen synthase kinase-3 (GSK3\u03b1/\u03b2), and the protein phosphatase 2A (PP2A) regulatory subunit B56\u03b1/\u03b2/\u03b3/\u03b4.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, multiple components of the \u03b2-catenin destruction complex were found among the interactants: \u03b2-catenin itself, the glycogen synthase kinase-3 (GSK3\u03b1/\u03b2), and the protein phosphatase 2A (PP2A) regulatory subunit B56\u03b1/\u03b2/\u03b3/\u03b4 (Figure 2A and Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by yeast two-hybrid screening data shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:38:23.490696Z"
+    },
+    {
+      "id": "5f349579-ec3a-4ca6-bebd-8e9e8387d094",
+      "content_id": "8e8ecc1c-a66c-41a8-9878-338691db7bdc",
+      "claim_id": "C23",
+      "claim": "Following Flag affinity chromatography, GRA18 co-eluted with \u03b2-catenin, GSK3\u03b1/\u03b2, and the PP2A-B56\u03b4/\u03b5 within a quite stable complex that resisted to stringent salt and detergent conditions (0.5 M KCl and 0.1% NP-40).",
+      "claim_type": "EXPLICIT",
+      "source": "Following Flag affinity chromatography, GRA18 co-eluted with \u03b2-catenin, GSK3\u03b1/\u03b2, and the PP2A-B56\u03b4/\u03b5 within a quite stable complex that resisted to stringent salt and detergent conditions (0.5 M KCl and 0.1% NP-40) (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by mass spectrometry data shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:38:23.490696Z"
+    },
+    {
+      "id": "5569c876-2f16-475f-8357-4014d9dc25f6",
+      "content_id": "8e8ecc1c-a66c-41a8-9878-338691db7bdc",
+      "claim_id": "C24",
+      "claim": "The identification of the scaffolding subunit PP2A65 RA and the catalytic subunit PP2Ac along with the PP2A-B56, argues for a functional PP2A holoenzyme as part of the complex.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, the identification of the scaffolding subunit PP2A65 RA and the catalytic subunit PP2Ac along with the PP2A-B56, argues for a functional PP2A holoenzyme as part of the complex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the mass spectrometry data identifying all three PP2A subunits.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:38:23.490696Z"
+    },
+    {
+      "id": "5d1c450a-7053-442a-aba8-d33d5e6de8ae",
+      "content_id": "8e8ecc1c-a66c-41a8-9878-338691db7bdc",
+      "claim_id": "C25",
+      "claim": "The B56 regulatory subunit presumably mediates the recruitment of the PP2A holoenzyme as it was the only PP2A subunit found by Y2H to interact directly with GRA18.",
+      "claim_type": "EXPLICIT",
+      "source": "The B56 regulatory subunit presumably mediates the recruitment of the PP2A holoenzyme as it was the only PP2A subunit found by Y2H to interact directly with GRA18 (Figure 2A and Supplementary file 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is inferred from the Y2H data showing only B56 interacts directly with GRA18.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:38:23.490696Z"
+    },
+    {
+      "id": "55d0ce45-9bae-4dd1-9588-02b096a1339b",
+      "content_id": "8e8ecc1c-a66c-41a8-9878-338691db7bdc",
+      "claim_id": "C26",
+      "claim": "GRA18 forms distinct complexe(s) with \u03b2-catenin, GSK3\u03b2, and the PP2A-B56 holoenzyme ranging from 400 to over 700 kDa globular sizes.",
+      "claim_type": "EXPLICIT",
+      "source": "GRA18 Flag affinity coupled to Size-Exclusion Chromatography (SEC) and immunoblot analysis revealed that GRA18 forms distinct complexe(s) with \u03b2-catenin, GSK3\u03b2, and the PP2A-B56 holoenzyme ranging from 400 to over 700 kDa globular sizes (Figure 2E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by size-exclusion chromatography data shown in Figure 2E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:38:23.490696Z"
+    },
+    {
+      "id": "b8366dd1-1d07-442e-bff5-00f1661def69",
+      "content_id": "8e8ecc1c-a66c-41a8-9878-338691db7bdc",
+      "claim_id": "C27",
+      "claim": "The N-terminal region of GRA18 sheltered the binding site for \u03b2-catenin.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, the N-terminal region of GRA18 sheltered the binding site for \u03b2-catenin, whereas the C-terminal fragments accommodated the interaction with the PP2A-B56 subunit (Figure 3B and D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by domain mapping data shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:38:23.490696Z"
+    },
+    {
+      "id": "facfdbdf-5866-4c7e-ac33-67072cf30f9f",
+      "content_id": "8e8ecc1c-a66c-41a8-9878-338691db7bdc",
+      "claim_id": "C28",
+      "claim": "The C-terminal fragments of GRA18 accommodated the interaction with the PP2A-B56 subunit.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, the N-terminal region of GRA18 sheltered the binding site for \u03b2-catenin, whereas the C-terminal fragments accommodated the interaction with the PP2A-B56 subunit (Figure 3B and D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by domain mapping data shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:38:23.490696Z"
+    },
+    {
+      "id": "6a935602-e5ad-4d4e-9e6c-cbc022f63197",
+      "content_id": "8e8ecc1c-a66c-41a8-9878-338691db7bdc",
+      "claim_id": "C29",
+      "claim": "None of the GRA18 fragments tested other than the full-length protein could support the interactions with GSK3 in the Y2H assay.",
+      "claim_type": "EXPLICIT",
+      "source": "None of the GRA18 fragments tested other than the full-length protein could support the interactions with GSK3 in this assay, suggesting that binding to GSK3 necessitates a larger contact surface on GRA18 than the other partners.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by Y2H data and leads to an inference about GSK3 binding requirements.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:38:23.490696Z"
+    },
+    {
+      "id": "97f134f4-8ecb-44fe-8638-2b0adc1b924a",
+      "content_id": "8e8ecc1c-a66c-41a8-9878-338691db7bdc",
+      "claim_id": "C30",
+      "claim": "Binding to GSK3 necessitates a larger contact surface on GRA18 than the other partners.",
+      "claim_type": "EXPLICIT",
+      "source": "None of the GRA18 fragments tested other than the full-length protein could support the interactions with GSK3 in this assay, suggesting that binding to GSK3 necessitates a larger contact surface on GRA18 than the other partners.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the Y2H data showing only full-length GRA18 binds GSK3.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:38:23.490696Z"
+    },
+    {
+      "id": "51348932-8d8e-4a26-9791-c26e6199d87a",
+      "content_id": "8e8ecc1c-a66c-41a8-9878-338691db7bdc",
+      "claim_id": "C31",
+      "claim": "The GRA18 C-terminal region mediates the interaction with both the phosphatase and the kinase.",
+      "claim_type": "EXPLICIT",
+      "source": "Collectively, these results suggest that the GRA18 C-terminal region mediates the interaction with both the phosphatase and the kinase.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the biochemical data showing GRA18Ct retains binding to both GSK3\u03b2 and PP2A-B56.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:38:23.490696Z"
+    },
+    {
+      "id": "82863f09-c77a-4da5-882b-501a7b6195b4",
+      "content_id": "8e8ecc1c-a66c-41a8-9878-338691db7bdc",
+      "claim_id": "C32",
+      "claim": "\u03b2-catenin regulates the transcription of the Wnt target genes.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, \u03b2-catenin regulates the transcription of the Wnt target genes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about \u03b2-catenin function in the Wnt pathway.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:38:23.490696Z"
+    },
+    {
+      "id": "9e0ae170-7a98-458a-8f62-6b395ff82374",
+      "content_id": "8e8ecc1c-a66c-41a8-9878-338691db7bdc",
+      "claim_id": "C33",
+      "claim": "In the absence of Wnt signaling, the destruction complex efficiently captures cytoplasmic \u03b2-catenin, leading to its phosphorylation by GSK3 and recognition by the \u03b2-TrCP ubiquitin ligase for degradation by the 26S proteasome.",
+      "claim_type": "EXPLICIT",
+      "source": "In the absence of Wnt signaling, the destruction complex efficiently captures cytoplasmic \u03b2-catenin, leading to its phosphorylation by GSK3 and recognition by the \u03b2-TrCP ubiquitin ligase for degradation by the 26S proteasome.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about the \u03b2-catenin destruction complex mechanism.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:38:23.490696Z"
+    },
+    {
+      "id": "38206090-6049-4774-95bb-3c74317bb089",
+      "content_id": "8e8ecc1c-a66c-41a8-9878-338691db7bdc",
+      "claim_id": "C34",
+      "claim": "Wnt ligands trigger functional inactivation of the destruction complex, with ensuing escape of \u03b2-catenin from degradation, resulting in \u03b2-catenin accumulation and nuclear internalization.",
+      "claim_type": "EXPLICIT",
+      "source": "Wnt ligands trigger functional inactivation of the destruction complex, with ensuing escape of \u03b2-catenin from degradation, resulting in \u03b2-catenin accumulation and nuclear internalization (Clevers, 2006; Li et al., 2012; Taelman et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to established studies on Wnt signaling.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:38:23.490696Z"
+    },
+    {
+      "id": "261efd72-09e6-4d82-95be-3e944263b4ea",
+      "content_id": "8e8ecc1c-a66c-41a8-9878-338691db7bdc",
+      "claim_id": "C35",
+      "claim": "Parasites knockout for GRA18 did not show any obvious growth phenotype in cell culture.",
+      "claim_type": "EXPLICIT",
+      "source": "To test this hypothesis, we generated parasites knockout for GRA18 (Figure 4A and B) in different strain types (Pru ku80 \u0394gra18 and 76K \u0394gra18) which did not show any obvious growth phenotype in cell culture (Figure 4C and data not shown), and a somewhat reduced virulence phenotype in mice when challenged by intraperitoneal injection (Figure 4D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by growth assay data shown in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:38:23.490696Z"
+    },
+    {
+      "id": "962ab468-f668-4aa4-aba5-996ac93f1a98",
+      "content_id": "8e8ecc1c-a66c-41a8-9878-338691db7bdc",
+      "claim_id": "C36",
+      "claim": "GRA18 knockout parasites showed a somewhat reduced virulence phenotype in mice when challenged by intraperitoneal injection.",
+      "claim_type": "EXPLICIT",
+      "source": "To test this hypothesis, we generated parasites knockout for GRA18 (Figure 4A and B) in different strain types (Pru ku80 \u0394gra18 and 76K \u0394gra18) which did not show any obvious growth phenotype in cell culture (Figure 4C and data not shown), and a somewhat reduced virulence phenotype in mice when challenged by intraperitoneal injection (Figure 4D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by mouse survival data shown in Figure 4D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:38:23.490696Z"
+    },
+    {
+      "id": "a803aacf-db98-4696-9904-534c01d67ea7",
+      "content_id": "8e8ecc1c-a66c-41a8-9878-338691db7bdc",
+      "claim_id": "C37",
+      "claim": "\u03b2-catenin signals remained unaffected upon T. gondii infection of both human (HFF) and murine (L929) cells regardless of the GRA18 status.",
+      "claim_type": "EXPLICIT",
+      "source": "While assessing \u03b2-catenin amounts and subcellular localization we showed that \u03b2-catenin signals remained unaffected upon T. gondii infection of both human (HFF) and murine (L929) cells regardless of the GRA18 status (Figure 4E and F, compare Pru ku80 with \u0394gra18).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by immunoblot and immunofluorescence data shown in Figure 4E and F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:38:23.490696Z"
+    },
+    {
+      "id": "5c7dc7b5-77ca-4884-b453-162e475b32b9",
+      "content_id": "8e8ecc1c-a66c-41a8-9878-338691db7bdc",
+      "claim_id": "C38",
+      "claim": "When parasites expressed high levels of GRA18, \u03b2-catenin signals drastically increased in cells infected by the GRA18+++ strain compared to uninfected cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Intriguingly, when parasites expressed high levels of GRA18, referred to as GRA18+++, \u03b2-catenin signals drastically increased in cells infected by the GRA18+++ strain compared to uninfected cells (Figure 4E and F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by immunoblot and immunofluorescence data shown in Figure 4E and F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:38:23.490696Z"
+    },
+    {
+      "id": "9e5b6042-aff7-4b78-87d7-564f6508f04e",
+      "content_id": "8e8ecc1c-a66c-41a8-9878-338691db7bdc",
+      "claim_id": "C39",
+      "claim": "\u03b2-catenin upregulation is associated with a strong accumulation of \u03b2-catenin in the host nuclei suggesting that a transcriptionally active bulk of \u03b2-catenin was produced.",
+      "claim_type": "EXPLICIT",
+      "source": "\u03b2-Catenin upregulation is associated with a strong accumulation of \u03b2-catenin in the host nuclei suggesting that a transcriptionally active bulk of \u03b2-catenin was produced (Figure 4F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by immunofluorescence data shown in Figure 4F and inference about transcriptional activity.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:38:23.490696Z"
+    },
+    {
+      "id": "99a0e9ea-faf6-4bb5-b022-957a589f333a",
+      "content_id": "8e8ecc1c-a66c-41a8-9878-338691db7bdc",
+      "claim_id": "C40",
+      "claim": "Induction of GRA18 expression with tetracycline promoted the accumulation of \u03b2-catenin to levels comparable to those obtained with Wnt3A.",
+      "claim_type": "EXPLICIT",
+      "source": "Induction of GRA18 expression with tetracycline promoted the accumulation of \u03b2-catenin, indicating that GRA18 alone was sufficient to drive \u03b2-catenin upregulation to levels comparable to those obtained with Wnt3A (Figure 4G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by immunoblot data shown in Figure 4G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:38:23.490696Z"
+    },
+    {
+      "id": "3e052d26-bbf0-4d52-a801-6f05149b8aaf",
+      "content_id": "8e8ecc1c-a66c-41a8-9878-338691db7bdc",
+      "claim_id": "C41",
+      "claim": "GRA18 alone was sufficient to drive \u03b2-catenin upregulation.",
+      "claim_type": "EXPLICIT",
+      "source": "Induction of GRA18 expression with tetracycline promoted the accumulation of \u03b2-catenin, indicating that GRA18 alone was sufficient to drive \u03b2-catenin upregulation to levels comparable to those obtained with Wnt3A (Figure 4G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by immunoblot data from ectopic expression in Figure 4G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:38:23.490696Z"
+    },
+    {
+      "id": "d31ff7c7-0f83-4bf6-8bdf-b814f679f96d",
+      "content_id": "8e8ecc1c-a66c-41a8-9878-338691db7bdc",
+      "claim_id": "C42",
+      "claim": "GRA18 functions as a positive regulator of \u03b2-catenin.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, these data indicate that GRA18, very likely through the interactions with GSK3 and PP2A-B56, functions as a positive regulator of \u03b2-catenin.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the experimental data showing GRA18 increases \u03b2-catenin levels.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:38:23.490696Z"
+    },
+    {
+      "id": "ec4cac4c-90c3-4d98-bf97-e99214833cd8",
+      "content_id": "8e8ecc1c-a66c-41a8-9878-338691db7bdc",
+      "claim_id": "C43",
+      "claim": "Thirty-eight genes were significantly and differentially regulated with most corresponding to genes up-regulated upon macrophage infection by wild-type parasites, but not with the \u0394gra18 strain.",
+      "claim_type": "EXPLICIT",
+      "source": "Thirty-eight genes were significantly and differentially regulated with most corresponding to genes up-regulated upon macrophage infection by wild-type parasites, but not with the \u0394gra18 strain as revealed by hierarchical clustering (Figure 5A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by RNA-seq data shown in Figure 5A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:38:23.490696Z"
+    },
+    {
+      "id": "17ffaed0-4cd3-408d-b268-4a59abd1043f",
+      "content_id": "8e8ecc1c-a66c-41a8-9878-338691db7bdc",
+      "claim_id": "C44",
+      "claim": "Complementation of \u0394gra18 mutation with GRA18-HF under the control of the GRA1 promoter restored the expression pattern to levels observed with wild-type parasites or even higher.",
+      "claim_type": "EXPLICIT",
+      "source": "Complementation of \u0394gra18 mutation with GRA18-HF under the control of the GRA1 promoter (\u0394gra18, GRA18+++) restored the expression pattern to levels observed with wild-type parasites or even higher, in strong support of the GRA18-dependent induction of those genes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by RNA-seq data showing complementation restores gene expression.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:38:23.490696Z"
+    },
+    {
+      "id": "635b08ce-38d5-4889-8621-44cd41574670",
+      "content_id": "8e8ecc1c-a66c-41a8-9878-338691db7bdc",
+      "claim_id": "C45",
+      "claim": "Neither \u0394gra18 mutation nor LPS treatment had any significant impact on T. gondii gene expression.",
+      "claim_type": "EXPLICIT",
+      "source": "Parasite transcriptome analysis indicated that neither \u0394gra18 mutation nor LPS treatment had any significant impact on T. gondii gene expression and that GRA18 expression in the Pru ku80 \u0394gra18, GRA18+++ complemented strain was restored with a ~ 35 fold more transcript reads than in the wild-type strain (Figure 5D, Supplementary file 3, and Figure 5\u2014figure supplement 1A), in line with GRA18 overexpression driven by the GRA1 strong promoter.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by parasite RNA-seq data shown in Figure 5D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:38:23.490696Z"
+    },
+    {
+      "id": "e318da3d-28d0-4c84-99d9-30ca409ce2d3",
+      "content_id": "8e8ecc1c-a66c-41a8-9878-338691db7bdc",
+      "claim_id": "C46",
+      "claim": "GRA18 expression in the Pru ku80 \u0394gra18, GRA18+++ complemented strain was restored with a ~ 35 fold more transcript reads than in the wild-type strain.",
+      "claim_type": "EXPLICIT",
+      "source": "Parasite transcriptome analysis indicated that neither \u0394gra18 mutation nor LPS treatment had any significant impact on T. gondii gene expression and that GRA18 expression in the Pru ku80 \u0394gra18, GRA18+++ complemented strain was restored with a ~ 35 fold more transcript reads than in the wild-type strain (Figure 5D, Supplementary file 3, and Figure 5\u2014figure supplement 1A), in line with GRA18 overexpression driven by the GRA1 strong promoter.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by RNA-seq data shown in Figure 5D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:38:23.490696Z"
+    },
+    {
+      "id": "00f2fe5b-f3b5-4a75-baba-9429a670e0d1",
+      "content_id": "8e8ecc1c-a66c-41a8-9878-338691db7bdc",
+      "claim_id": "C47",
+      "claim": "The expression pattern of the host genes regulated by GRA18 remained similarly regulated in the infected macrophages subjected to LPS stimulation.",
+      "claim_type": "EXPLICIT",
+      "source": "It is noteworthy that the expression pattern of the aforementioned host genes regulated by GRA18 remained similarly regulated in the infected macrophages subjected to LPS stimulation (Figure 5A and B and Supplementary file 3), indicating that LPS did not affect GRA18 function.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by RNA-seq data comparing LPS-treated and untreated samples.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:38:23.490696Z"
+    },
+    {
+      "id": "57e78a63-7c8f-478b-91e6-6e9150a45392",
+      "content_id": "8e8ecc1c-a66c-41a8-9878-338691db7bdc",
+      "claim_id": "C48",
+      "claim": "LPS did not affect GRA18 function.",
+      "claim_type": "EXPLICIT",
+      "source": "It is noteworthy that the expression pattern of the aforementioned host genes regulated by GRA18 remained similarly regulated in the infected macrophages subjected to LPS stimulation (Figure 5A and B and Supplementary file 3), indicating that LPS did not affect GRA18 function.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the RNA-seq data showing similar GRA18-dependent gene expression with or without LPS.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:38:23.490696Z"
+    },
+    {
+      "id": "4852aae5-48f1-4963-b025-5ff06b80dacd",
+      "content_id": "8e8ecc1c-a66c-41a8-9878-338691db7bdc",
+      "claim_id": "C49",
+      "claim": "Gene set enrichment analysis highlighted pathways significantly affected in a GRA18-dependent fashion with functions related to the inflammatory response (e.g., Csf1, Olr1, and Tnfrsf9) and chemotaxis (e.g., Ccr7, Ccl1, Ccl17, Ccl22, and Ccl24).",
+      "claim_type": "EXPLICIT",
+      "source": "Gene set enrichment analysis (GSEA) highlighted pathways significantly affected in a GRA18-dependent fashion (p values < 0.05) with functions related to the inflammatory response (e.g., Csf1, Olr1, and Tnfrsf9) and chemotaxis (e.g., Ccr7, Ccl1, Ccl17, Ccl22, and Ccl24) (Figure 5C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by GSEA analysis shown in Figure 5C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:38:23.490696Z"
+    },
+    {
+      "id": "f5394d20-6e53-4376-b872-3506a7d1073b",
+      "content_id": "8e8ecc1c-a66c-41a8-9878-338691db7bdc",
+      "claim_id": "C50",
+      "claim": "None of the typical Wnt/\u03b2-catenin target genes were found differentially regulated by GRA18.",
+      "claim_type": "EXPLICIT",
+      "source": "Surprisingly, none of the typical Wnt/\u03b2-catenin target genes were found differentially regulated by GRA18 (Figure 5\u2014figure supplement 1B and Supplementary file 3), suggesting either that murine macrophages have a peculiar repertoire of \u03b2-catenin target genes or that GRA18 fosters a singular \u03b2-catenin transcriptional activity or that its action is independent of \u03b2-catenin.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by RNA-seq data analysis shown in Figure 5\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:38:23.490696Z"
+    },
+    {
+      "id": "509921e4-a9b6-4789-8196-00c694b4ce15",
+      "content_id": "8e8ecc1c-a66c-41a8-9878-338691db7bdc",
+      "claim_id": "C51",
+      "claim": "Quantitative RT-PCR analysis reproducibly demonstrated a pronounced decrease in Ccl17, Ccl22, and Ccl24 expression from cells infected with \u0394gra18 mutant parasites when compared to wild-type Pru or Pru \u0394gra18, GRA18+++ parasites.",
+      "claim_type": "EXPLICIT",
+      "source": "Quantitative RT-PCR analysis reproducibly demonstrated a pronounced decrease in Ccl17, Ccl22, and Ccl24 expression from cells infected with \u0394gra18 mutant parasites when compared to wild-type Pru or Pru \u0394gra18, GRA18+++ parasites (Figure 5E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by qRT-PCR data shown in Figure 5E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:38:23.490696Z"
+    },
+    {
+      "id": "efa464d9-e504-4981-abf7-7832e49849f5",
+      "content_id": "8e8ecc1c-a66c-41a8-9878-338691db7bdc",
+      "claim_id": "C52",
+      "claim": "GRA18 clearly plays a major role in regulating CCL17 and CCL22 synthesis and secretion since its loss significantly lowered protein levels in the supernatant of mouse macrophages.",
+      "claim_type": "EXPLICIT",
+      "source": "GRA18 clearly plays a major role in regulating CCL17 and CCL22 synthesis and secretion since its loss significantly lowered protein levels in the supernatant of mouse macrophages (Figure 5F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by ELISA data shown in Figure 5F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:38:23.490696Z"
+    },
+    {
+      "id": "be69d331-9f2e-452f-a010-ee4bb71728b7",
+      "content_id": "8e8ecc1c-a66c-41a8-9878-338691db7bdc",
+      "claim_id": "C53",
+      "claim": "Cells harboring insertion/deletion (indel) mutations at the Ctnnb1 locus lack \u03b2-catenin expression when compared to the wild-type parental cell line.",
+      "claim_type": "EXPLICIT",
+      "source": "Cells harboring insertion/deletion (indel) mutations at the Ctnnb1 locus lack \u03b2-catenin expression when compared to the wild-type parental cell line (Figure 6A and B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by DNA sequencing and immunoblot data shown in Figure 6A and B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:38:23.490696Z"
+    },
+    {
+      "id": "07b4bd43-f8cb-4950-811a-0e8e97780af5",
+      "content_id": "8e8ecc1c-a66c-41a8-9878-338691db7bdc",
+      "claim_id": "C54",
+      "claim": "Treatment of the Ctnnb1-/- mutant cells with the GSK3 inhibitors did not lead to \u03b2-catenin expression, otherwise induced in the wild-type parental cell line.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, treatment of the Ctnnb1-/- mutant cells with the GSK3 inhibitors did not lead to \u03b2-catenin expression, otherwise induced in the wild-type parental cell line.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by immunoblot data showing no \u03b2-catenin induction in mutant cells.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:38:23.490696Z"
+    },
+    {
+      "id": "ce075469-dafc-4823-bae1-af90cbff1f54",
+      "content_id": "8e8ecc1c-a66c-41a8-9878-338691db7bdc",
+      "claim_id": "C55",
+      "claim": "The ectopic expression of GRA18 in RAW264.7 macrophages caused a significant increase in endogenous \u03b2-catenin.",
+      "claim_type": "EXPLICIT",
+      "source": "The ectopic expression of GRA18 in RAW264.7 macrophages caused a significant increase in endogenous \u03b2-catenin (Figure 6C and D, compare the effect of mCherry with GRA18 expression), similarly to the effect of GRA18 when delivered by the parasites in HFF or L929 cells (Figure 4E and F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by immunofluorescence and immunoblot data shown in Figure 6C and D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:38:23.490696Z"
+    },
+    {
+      "id": "d802d696-0324-45a4-b9f1-1739a43240bf",
+      "content_id": "8e8ecc1c-a66c-41a8-9878-338691db7bdc",
+      "claim_id": "C56",
+      "claim": "No \u03b2-catenin was detected upon ectopic expression of GRA18 in RAW264.7 macrophages whose Ctnnb1 alleles are disrupted.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected for RAW264.7 macrophages whose Ctnnb1 alleles are disrupted, no \u03b2-catenin was detected upon ectopic expression of GRA18 (Figure 6C and D) in contrast to the significant amounts of nuclear \u03b2-catenin found in wild-type RAW264.7 macrophages expressing GRA18.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by immunofluorescence and immunoblot data shown in Figure 6C and D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:38:23.490696Z"
+    },
+    {
+      "id": "e57837a3-cf0b-4602-bd36-c083539c3261",
+      "content_id": "8e8ecc1c-a66c-41a8-9878-338691db7bdc",
+      "claim_id": "C57",
+      "claim": "Ccl17, Ccl22, and Ccl24 were selectively induced in GRA18-expressing wild-type RAW264.7 macrophages when compared to mock transfected cells.",
+      "claim_type": "EXPLICIT",
+      "source": "In the same line Ccl17, Ccl22, and Ccl24 were selectively induced in GRA18-expressing wild-type RAW264.7 macrophages when compared to mock - that is, mCherry - transfected cells (Figure 6D and E) whereas Ccl17 and Ccl24 were no longer induced in the \u03b2-catenin lacking ones.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by qRT-PCR data shown in Figure 6E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:38:23.490696Z"
+    },
+    {
+      "id": "07cfd89c-37bc-499c-af8b-e722fcf163a1",
+      "content_id": "8e8ecc1c-a66c-41a8-9878-338691db7bdc",
+      "claim_id": "C58",
+      "claim": "Ccl17 and Ccl24 were no longer induced in the \u03b2-catenin lacking RAW264.7 cells expressing GRA18.",
+      "claim_type": "EXPLICIT",
+      "source": "In the same line Ccl17, Ccl22, and Ccl24 were selectively induced in GRA18-expressing wild-type RAW264.7 macrophages when compared to mock - that is, mCherry - transfected cells (Figure 6D and E) whereas Ccl17 and Ccl24 were no longer induced in the \u03b2-catenin lacking ones.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by qRT-PCR data shown in Figure 6E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:38:23.490696Z"
+    },
+    {
+      "id": "f85de110-c4b2-41cb-88d1-f07dc3dc21f4",
+      "content_id": "8e8ecc1c-a66c-41a8-9878-338691db7bdc",
+      "claim_id": "C59",
+      "claim": "The slight reduction of Ccl22 expression in the GRA18-expressing mutant RAW264.7 macrophages suggests a different mode of regulation for the three chemokines.",
+      "claim_type": "EXPLICIT",
+      "source": "The slight reduction of Ccl22 expression in the GRA18-expressing mutant RAW264.7 macrophages (Figure 6E) suggests a different mode of regulation for the three chemokines.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is inferred from the qRT-PCR data showing differential effects on Ccl22 versus Ccl17/Ccl24.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:38:23.490696Z"
+    },
+    {
+      "id": "47bee914-24ef-4014-92ee-ee5a6e047622",
+      "content_id": "8e8ecc1c-a66c-41a8-9878-338691db7bdc",
+      "claim_id": "C60",
+      "claim": "\u03b2-catenin was required for full induction of the Ccl17 chemokine upon infection.",
+      "claim_type": "EXPLICIT",
+      "source": "While \u03b2-catenin was required for full induction of the Ccl17 chemokine, Ccl22 expression remained unaffected in Ctnnb1-/- mutant host cells (Figure 6F), again consistent with a different mode of regulation orchestrating Ccl17 and Ccl22 expression.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by qRT-PCR data from infected cells shown in Figure 6F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:38:23.490696Z"
+    },
+    {
+      "id": "f799600e-6e58-4fe6-b982-578670a3ff64",
+      "content_id": "8e8ecc1c-a66c-41a8-9878-338691db7bdc",
+      "claim_id": "C61",
+      "claim": "Ccl22 expression remained unaffected in Ctnnb1-/- mutant host cells upon infection.",
+      "claim_type": "EXPLICIT",
+      "source": "While \u03b2-catenin was required for full induction of the Ccl17 chemokine, Ccl22 expression remained unaffected in Ctnnb1-/- mutant host cells (Figure 6F), again consistent with a different mode of regulation orchestrating Ccl17 and Ccl22 expression.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by qRT-PCR data from infected cells shown in Figure 6F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:38:23.490696Z"
+    },
+    {
+      "id": "ada88ea5-a2ed-4ec0-8adf-ea5d0a67ee43",
+      "content_id": "8e8ecc1c-a66c-41a8-9878-338691db7bdc",
+      "claim_id": "C62",
+      "claim": "Expression of GRA18Nt, which no longer interacts with GSK3 and PP2A-B56, failed to induce \u03b2-catenin and accordingly chemokine transcripts.",
+      "claim_type": "EXPLICIT",
+      "source": "While expression of GRA18FL in RAW264.7 macrophages caused a significant increase in endogenous \u03b2-catenin protein levels, leading to the expression of the downstream chemokines (Figure 7A and B), expression of GRA18Nt, which no longer interacts with GSK3 and PP2A-B56 (Figure 3), failed to induce \u03b2-catenin and accordingly chemokine transcripts.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by immunoblot and qRT-PCR data shown in Figure 7A and B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:38:23.490696Z"
+    },
+    {
+      "id": "283a9c4d-7304-4391-99a0-afc33430616e",
+      "content_id": "8e8ecc1c-a66c-41a8-9878-338691db7bdc",
+      "claim_id": "C63",
+      "claim": "GRA18Ct, shown previously to interact with GSK3 and PP2A-B56, has retained full activity on \u03b2-catenin and downstream transcriptional consequences.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, GRA18Ct, shown previously to interact with GSK3 and PP2A-B56 (Figure 3) has retained full activity on \u03b2-catenin and downstream transcriptional consequences, further confirming the pivotal role of \u03b2-catenin in driving the expression of the aforementioned chemokines.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by immunoblot and qRT-PCR data shown in Figure 7A and B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:38:23.490696Z"
+    },
+    {
+      "id": "36f099ac-7988-437b-9e40-198dd10bc7b1",
+      "content_id": "8e8ecc1c-a66c-41a8-9878-338691db7bdc",
+      "claim_id": "C64",
+      "claim": "Direct interaction between GRA18 and \u03b2-catenin seems to be dispensable for GRA18's effect on \u03b2-catenin protein levels.",
+      "claim_type": "EXPLICIT",
+      "source": "While the effect of GRA18 on \u03b2-catenin protein levels required interactions with GSK3 and/or PP2A-B56, direct interaction between GRA18 and \u03b2-catenin seems to be dispensable.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the data showing GRA18Ct (which doesn't bind \u03b2-catenin directly) retains full activity.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:38:23.490696Z"
+    },
+    {
+      "id": "63fdc111-f2bd-4a8e-bcfa-bdce683e309d",
+      "content_id": "8e8ecc1c-a66c-41a8-9878-338691db7bdc",
+      "claim_id": "C65",
+      "claim": "Treatment of RAW264.7 cells with the GSK3 inhibitors CHIR and BIO led to \u03b2-catenin protein accumulation and Ccl22 and Ccl24 upregulation.",
+      "claim_type": "EXPLICIT",
+      "source": "Additional evidence for this model is the expression of Ccl22 and Ccl24 induced by GSK3 inhibitors in a manner that resembles the effect of GRA18 (Figure 7C and D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by immunoblot and qRT-PCR data shown in Figure 7C and D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:38:23.490696Z"
+    },
+    {
+      "id": "62830491-3975-436d-8ead-2b6eb77e3ecd",
+      "content_id": "8e8ecc1c-a66c-41a8-9878-338691db7bdc",
+      "claim_id": "C66",
+      "claim": "GRA18 might be processed by the aspartic protease TgASP5.",
+      "claim_type": "EXPLICIT",
+      "source": "The presence of the TEXEL motif suggests that GRA18 might be processed by the aspartic protease TgASP5, an enzyme we and others have recently shown to mediate the secretion or export of a number of GRA proteins (Coffey et al., 2015; Curt-Varesano et al., 2016; Hammoudi et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the presence of TEXEL motif and supported by citations to previous studies.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:38:23.490696Z"
+    },
+    {
+      "id": "0cde1760-0cd8-4e75-9056-24199e5aa6b5",
+      "content_id": "8e8ecc1c-a66c-41a8-9878-338691db7bdc",
+      "claim_id": "C67",
+      "claim": "GRA18 was no longer detected in the cytoplasm of cells invaded by TgASP5 mutant parasites.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected for a TgASP5-dependent export, GRA18 was no longer detected in the cytoplasm of cells invaded by TgASP5 mutant parasites (Figure 5\u2014figure supplement 2A) and accordingly, TgASP5 and GRA18 mutant parasites showed similar inability to induce target genes in macrophages ((Hammoudi et al., 2015), Figure 5\u2014figure supplement 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by immunofluorescence data shown in Figure 5\u2014figure supplement 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:38:23.490696Z"
+    },
+    {
+      "id": "b130c600-ed0d-44ae-bd47-a71294edcad0",
+      "content_id": "8e8ecc1c-a66c-41a8-9878-338691db7bdc",
+      "claim_id": "C68",
+      "claim": "TgASP5 and GRA18 mutant parasites showed similar inability to induce target genes in macrophages.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected for a TgASP5-dependent export, GRA18 was no longer detected in the cytoplasm of cells invaded by TgASP5 mutant parasites (Figure 5\u2014figure supplement 2A) and accordingly, TgASP5 and GRA18 mutant parasites showed similar inability to induce target genes in macrophages ((Hammoudi et al., 2015), Figure 5\u2014figure supplement 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by RNA-seq data analysis shown in Figure 5\u2014figure supplement 2B and citation to Hammoudi et al., 2015.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:38:23.490696Z"
+    },
+    {
+      "id": "94374bb9-526a-4d6f-9ea3-2f25f4d78559",
+      "content_id": "8e8ecc1c-a66c-41a8-9878-338691db7bdc",
+      "claim_id": "C69",
+      "claim": "\u03b2-catenin is a dual function co-activator protein with distinct pools serving cell-cell adhesion and gene transcription functions, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "\u03b2-Catenin is a dual function co-activator protein with distinct pools serving cell-cell adhesion and gene transcription functions, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about \u03b2-catenin function.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:38:23.490696Z"
+    },
+    {
+      "id": "1194449c-6fa7-44fb-8c4d-fb03c07ba494",
+      "content_id": "8e8ecc1c-a66c-41a8-9878-338691db7bdc",
+      "claim_id": "C70",
+      "claim": "\u03b2-catenin was originally identified as an element of the adherent junction complex together with cadherin and \u03b1-catenin.",
+      "claim_type": "EXPLICIT",
+      "source": "\u03b2-Catenin was originally identified as an element of the adherent junction complex together with cadherin and \u03b1-catenin, the latter binding to actin filaments in a process that promotes cell\u2013cell contacts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about \u03b2-catenin's role in cell adhesion.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:38:23.490696Z"
+    },
+    {
+      "id": "5b4200ed-a378-4545-acc4-b932946bd37e",
+      "content_id": "8e8ecc1c-a66c-41a8-9878-338691db7bdc",
+      "claim_id": "C71",
+      "claim": "A nonjunctional pool of cytoplasmic \u03b2-catenin was recognized as a transcriptional coactivator of Wnt canonical signaling pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "Further, a nonjunctional pool of cytoplasmic \u03b2-catenin was recognized as a transcriptional coactivator of Wnt canonical signaling pathway.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about \u03b2-catenin's role in Wnt signaling.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:38:23.490696Z"
+    },
+    {
+      "id": "6b3758c2-c623-4d23-b777-dfb13c6c64c0",
+      "content_id": "8e8ecc1c-a66c-41a8-9878-338691db7bdc",
+      "claim_id": "C72",
+      "claim": "Mutation in any of the \u03b2-catenin destruction complex components (APC, Axin, or \u03b2-catenin) leads to inappropriate stabilization of \u03b2-catenin, which results in cancer, most notably of the colon.",
+      "claim_type": "EXPLICIT",
+      "source": "Mutation in any of these components (APC, Axin, or \u03b2-catenin) leads to inappropriate stabilization of \u03b2-catenin, which results in cancer, most notably of the colon (Stamos and Weis, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Stamos and Weis, 2013.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:38:23.490696Z"
+    },
+    {
+      "id": "acde0ac8-951b-4750-8a81-316effbe79ec",
+      "content_id": "8e8ecc1c-a66c-41a8-9878-338691db7bdc",
+      "claim_id": "C73",
+      "claim": "Axin is typified by intrinsically disordered and flexible regions that mediate direct interactions with all other core components of the destruction complex (\u03b2-catenin, APC, and GSK3).",
+      "claim_type": "EXPLICIT",
+      "source": "Axin, a central scaffold protein of the complex, is typified by intrinsically disordered and flexible regions that mediate direct interactions with all other core components of the destruction complex (\u03b2-catenin, APC, and GSK3) (Stamos and Weis, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Stamos and Weis, 2013.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:38:23.490696Z"
+    },
+    {
+      "id": "b2ffcf9e-2b36-4079-b2e1-668aa6641d1c",
+      "content_id": "8e8ecc1c-a66c-41a8-9878-338691db7bdc",
+      "claim_id": "C74",
+      "claim": "The T. gondii tachyzoite GRA18 carries significant disordered regions which could confer the potential of competing with Axin/APC for binding to \u03b2-catenin, GSK3, and PP2A-B56.",
+      "claim_type": "EXPLICIT",
+      "source": "Remarkably, the T. gondii tachyzoite GRA18 also carries significant disordered regions (Figure 1E) which could confer the potential of competing with Axin/APC for binding to \u03b2-catenin, GSK3, and PP2A-B56.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is speculative, based on the structural similarity between GRA18 and Axin.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:38:23.490696Z"
+    },
+    {
+      "id": "6c3c570f-7695-4638-9651-15ce1d18e713",
+      "content_id": "8e8ecc1c-a66c-41a8-9878-338691db7bdc",
+      "claim_id": "C75",
+      "claim": "By disrupting the \u03b2-catenin destruction complex GRA18 would likely promote the stabilization and nuclear translocation of \u03b2-catenin and ultimately \u03b2-catenin-dependent gene expression.",
+      "claim_type": "EXPLICIT",
+      "source": "Accordingly, by disrupting the \u03b2-catenin destruction complex GRA18 would likely promote the stabilization and nuclear translocation of \u03b2-catenin and ultimately \u03b2-catenin-dependent gene expression (Figure 8).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is a proposed model based on the experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:38:23.490696Z"
+    },
+    {
+      "id": "286f1f1e-8ded-4254-b809-8a85de9cba2d",
+      "content_id": "8e8ecc1c-a66c-41a8-9878-338691db7bdc",
+      "claim_id": "C76",
+      "claim": "RNA-Seq performed on BMDMs indicated that \u03b2-catenin transcripts remained unaffected by GRA18.",
+      "claim_type": "EXPLICIT",
+      "source": "RNA-Seq performed on BMDMs indicated that \u03b2-catenin transcripts remained unaffected by GRA18 (Supplementary file 3), which is consistent with a post-transcriptional regulation of \u03b2-catenin.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by RNA-seq data and leads to inference about post-transcriptional regulation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:38:23.490696Z"
+    },
+    {
+      "id": "fe895e63-f5be-418a-a202-3488ca4d3762",
+      "content_id": "8e8ecc1c-a66c-41a8-9878-338691db7bdc",
+      "claim_id": "C78",
+      "claim": "GRA18 did not alter the phospho-Ser21/Ser9 levels of GSK3.",
+      "claim_type": "EXPLICIT",
+      "source": "Because GRA18 did not alter the phospho-Ser21/Ser9 levels (Figures 6D and 7A), we conclude that the parasite protein, which we found to bind GSK3 and inhibit its pro-degradative activity on cytoplasmic \u03b2-catenin, acts independently of the phosphorylation status of Ser21/Ser9.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by immunoblot data shown in Figures 6D and 7A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:38:23.490696Z"
+    },
+    {
+      "id": "8d539a56-6668-4a86-ad05-5fec9a2765d7",
+      "content_id": "8e8ecc1c-a66c-41a8-9878-338691db7bdc",
+      "claim_id": "C79",
+      "claim": "GRA18 acts independently of the phosphorylation status of GSK3 Ser21/Ser9.",
+      "claim_type": "EXPLICIT",
+      "source": "Because GRA18 did not alter the phospho-Ser21/Ser9 levels (Figures 6D and 7A), we conclude that the parasite protein, which we found to bind GSK3 and inhibit its pro-degradative activity on cytoplasmic \u03b2-catenin, acts independently of the phosphorylation status of Ser21/Ser9.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the immunoblot data showing no change in GSK3 phosphorylation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:38:23.490696Z"
+    },
+    {
+      "id": "9d76303f-2285-4b4f-b53e-6c9fa2e98f0f",
+      "content_id": "8e8ecc1c-a66c-41a8-9878-338691db7bdc",
+      "claim_id": "C80",
+      "claim": "GRA18 carries two LxxIxE motifs within an intrinsically disordered region of the C-terminal domain.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, GRA18 carries two LxxIxE motifs within an intrinsically disordered region of the C-terminal domain, which is in agreement with the B56 binding assays (Figure 3A and C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by sequence analysis and binding data shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:38:23.490696Z"
+    },
+    {
+      "id": "1000ddcb-5b80-4e8e-8e2b-6fa04401613d",
+      "content_id": "8e8ecc1c-a66c-41a8-9878-338691db7bdc",
+      "claim_id": "C81",
+      "claim": "The chemokines Ccl17, Ccl22, and Ccl24 have been found repeatedly induced by T. gondii tachyzoites regardless of the strain type in murine macrophages.",
+      "claim_type": "EXPLICIT",
+      "source": "Those genes have been found repeatedly induced by T. gondii tachyzoites regardless of the strain type in murine macrophages (Figure 5\u2014figure supplement 1C) (Hammoudi et al., 2015; Melo et al., 2013; Morgado et al., 2011), as expected from the overall conservation of GRA18 across the Toxoplasma lineages.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by citations to multiple previous studies and data shown in Figure 5\u2014figure supplement 1C.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:38:23.490696Z"
+    },
+    {
+      "id": "0dd4029e-5038-4fe8-b504-c01500170600",
+      "content_id": "8e8ecc1c-a66c-41a8-9878-338691db7bdc",
+      "claim_id": "C82",
+      "claim": "Human placental cells have the unique ability to resist to T. gondii infection.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, the human placental cells, which have the unique ability to resist to T. gondii infection, were shown to specifically respond to the invader by producing the CCL22 chemokine (Ander et al., 2018), whereas other cell types such as human fibroblasts did not ((Ander et al., 2018) and data not shown).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Ander et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:38:23.490696Z"
+    },
+    {
+      "id": "57b1ef9f-f1d6-46b4-8fe1-8d8319e03221",
+      "content_id": "8e8ecc1c-a66c-41a8-9878-338691db7bdc",
+      "claim_id": "C83",
+      "claim": "Human placental cells specifically respond to T. gondii by producing the CCL22 chemokine.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, the human placental cells, which have the unique ability to resist to T. gondii infection, were shown to specifically respond to the invader by producing the CCL22 chemokine (Ander et al., 2018), whereas other cell types such as human fibroblasts did not ((Ander et al., 2018) and data not shown).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Ander et al., 2018.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:38:23.490696Z"
+    },
+    {
+      "id": "887ed2ad-223d-4d87-9ce0-90ea73ecd65d",
+      "content_id": "8e8ecc1c-a66c-41a8-9878-338691db7bdc",
+      "claim_id": "C84",
+      "claim": "A quite substantial residual activation of Ccl17, and Ccl22 was observed in the absence of GRA18, which suggests that an alternative mechanism of activation by the parasites exists.",
+      "claim_type": "EXPLICIT",
+      "source": "It is noteworthy that a quite substantial residual activation of Ccl17, and Ccl22 was observed in the absence of GRA18 (Figures 5E\u2013F and and 6F), which suggests that an alternative mechanism of activation by the parasites exists.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is inferred from the data showing partial chemokine induction even without GRA18.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:38:23.490696Z"
+    },
+    {
+      "id": "eab463e3-4961-40a7-ad17-3444297c9bb0",
+      "content_id": "8e8ecc1c-a66c-41a8-9878-338691db7bdc",
+      "claim_id": "C85",
+      "claim": "Activation of \u03b2-catenin promotes differentiation and activation of dendritic cells to stimulate regulatory T cells (Tregs) and suppresses the inflammatory response.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, activation of \u03b2-catenin promotes differentiation and activation of dendritic cells to stimulate regulatory T cells (Tregs) and suppresses the inflammatory response (Manicassamy et al., 2010; Zhou et al., 2009), while \u03b2-catenin accumulation triggered by GSK3 inhibitors enables Treg cell survival (Ding et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Manicassamy et al., 2010 and Zhou et al., 2009.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:38:23.490696Z"
+    },
+    {
+      "id": "72e4e9fb-f499-4f3b-9882-27688a883738",
+      "content_id": "8e8ecc1c-a66c-41a8-9878-338691db7bdc",
+      "claim_id": "C86",
+      "claim": "\u03b2-catenin accumulation triggered by GSK3 inhibitors enables Treg cell survival.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, activation of \u03b2-catenin promotes differentiation and activation of dendritic cells to stimulate regulatory T cells (Tregs) and suppresses the inflammatory response (Manicassamy et al., 2010; Zhou et al., 2009), while \u03b2-catenin accumulation triggered by GSK3 inhibitors enables Treg cell survival (Ding et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Ding et al., 2008.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:38:23.490696Z"
+    },
+    {
+      "id": "f82415de-9c8e-4d32-8fb9-3eba3d887c92",
+      "content_id": "8e8ecc1c-a66c-41a8-9878-338691db7bdc",
+      "claim_id": "C87",
+      "claim": "CCL17, CCL22 and CCL24 are expressed by alternatively activated M2-polarized macrophages or tolerant macrophages.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, CCL17, CCL22 and CCL24 are expressed by alternatively activated M2-polarized macrophages or tolerant macrophages and the release of these chemokines results in the recruitment of Treg cells and amplification of a Th2 response (Biswas and Mantovani, 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Biswas and Mantovani, 2010.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:38:23.490696Z"
+    },
+    {
+      "id": "f65f9534-59ad-4495-a022-b362aff82cd9",
+      "content_id": "8e8ecc1c-a66c-41a8-9878-338691db7bdc",
+      "claim_id": "C88",
+      "claim": "The release of CCL17, CCL22 and CCL24 chemokines results in the recruitment of Treg cells and amplification of a Th2 response.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, CCL17, CCL22 and CCL24 are expressed by alternatively activated M2-polarized macrophages or tolerant macrophages and the release of these chemokines results in the recruitment of Treg cells and amplification of a Th2 response (Biswas and Mantovani, 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Biswas and Mantovani, 2010.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:38:23.490696Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "96c3034e-1a0a-4f47-b89e-9ca6f69c3d7c",
+      "content_id": "8e8ecc1c-a66c-41a8-9878-338691db7bdc",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "GRA18 is a dense granule protein that is secreted into the parasitophorous vacuole and exported to the host cell cytoplasm in a MYR1-dependent manner, where it remains strictly cytoplasmic without nuclear localization.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C11-C21 provide converging evidence from sequence analysis (signal peptide, TEXEL motif), immunofluorescence localization studies, and genetic dependency experiments (MYR1 requirement) that collectively establish GRA18 as an exported dense granule effector protein. The data are internally consistent and supported by appropriate controls and comparisons to known effectors.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T06:38:23.490696Z"
+    },
+    {
+      "id": "29dd588b-b20d-4616-bbbd-9faa1a1cfc8a",
+      "content_id": "8e8ecc1c-a66c-41a8-9878-338691db7bdc",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "GRA18 forms stable multi-protein complexes with components of the \u03b2-catenin destruction complex (\u03b2-catenin, GSK3\u03b1/\u03b2, and PP2A-B56 holoenzyme), with distinct binding domains mediating interactions with different partners.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C22-C31 are supported by multiple complementary approaches including yeast two-hybrid screening, affinity chromatography with mass spectrometry, size-exclusion chromatography, and domain mapping studies. The data consistently demonstrate GRA18's ability to interact with destruction complex components under stringent conditions, with the C-terminal region binding GSK3/PP2A-B56 and N-terminal region binding \u03b2-catenin.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T06:38:23.490696Z"
+    },
+    {
+      "id": "d7b21321-bc4e-4c11-a066-22e07c4d994b",
+      "content_id": "8e8ecc1c-a66c-41a8-9878-338691db7bdc",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "GRA18 functions as a positive regulator of \u03b2-catenin, with overexpression leading to \u03b2-catenin accumulation and nuclear translocation, while knockout parasites show no obvious growth defect in culture but reduced virulence in mice.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C35-C42 are supported by genetic knockout studies, complementation experiments, and ectopic expression assays showing dose-dependent effects of GRA18 on \u03b2-catenin levels. The data demonstrate that high levels of GRA18 are required to observe \u03b2-catenin accumulation, and that GRA18 alone is sufficient to induce \u03b2-catenin upregulation comparable to Wnt3A treatment.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T06:38:23.490696Z"
+    },
+    {
+      "id": "d0bb6c9b-d90e-4a5b-a2b8-9db0c1ea9951",
+      "content_id": "8e8ecc1c-a66c-41a8-9878-338691db7bdc",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "GRA18 induces expression of a specific set of genes in infected macrophages, particularly chemokines Ccl17, Ccl22, and Ccl24, but does not regulate typical Wnt/\u03b2-catenin target genes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C43-C52 are supported by comprehensive RNA-seq analysis with appropriate controls (knockout, complementation, LPS treatment), validated by qRT-PCR and ELISA. The transcriptomic data show consistent GRA18-dependent regulation of specific chemokines across multiple experimental conditions and parasite strains. The absence of typical Wnt target gene regulation is an important negative result that is well-documented.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T06:38:23.490696Z"
+    },
+    {
+      "id": "00a3bfeb-41ea-486d-a89d-83b0b1539bc0",
+      "content_id": "8e8ecc1c-a66c-41a8-9878-338691db7bdc",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "\u03b2-catenin is required for GRA18-mediated induction of Ccl17 and Ccl24, but not Ccl22, as demonstrated using CRISPR/Cas9-generated \u03b2-catenin knockout macrophages.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C53-C61 are supported by well-controlled genetic experiments using CRISPR/Cas9-generated \u03b2-catenin knockout cells. The data show differential requirements for \u03b2-catenin in regulating different chemokines, with appropriate validation of the knockout (DNA sequencing, immunoblotting, GSK3 inhibitor controls). The differential effects on Ccl17/Ccl24 versus Ccl22 suggest distinct regulatory mechanisms.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T06:38:23.490696Z"
+    },
+    {
+      "id": "89211b66-6da9-42c0-a866-bc83aae00317",
+      "content_id": "8e8ecc1c-a66c-41a8-9878-338691db7bdc",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The C-terminal domain of GRA18, which interacts with GSK3 and PP2A-B56, is necessary and sufficient for \u03b2-catenin upregulation and chemokine induction, while direct \u03b2-catenin binding appears dispensable.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C62-C64 are supported by domain deletion analysis showing that GRA18Ct retains full activity while GRA18Nt does not, despite the N-terminal region binding \u03b2-catenin in Y2H assays. This structure-function analysis provides mechanistic insight into how GRA18 regulates \u03b2-catenin through GSK3/PP2A-B56 interactions rather than direct \u03b2-catenin binding.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T06:38:23.490696Z"
+    },
+    {
+      "id": "2cef7301-ab8c-4440-be14-68e4deab0512",
+      "content_id": "8e8ecc1c-a66c-41a8-9878-338691db7bdc",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "GSK3 inhibitors (CHIR and BIO) phenocopy GRA18's effects by inducing \u03b2-catenin accumulation and chemokine expression.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C65 is supported by pharmacological experiments showing that GSK3 inhibitors induce similar effects to GRA18 on \u03b2-catenin levels and chemokine expression. This provides independent validation of the proposed mechanism and supports the model that GRA18 acts through GSK3 inhibition.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T06:38:23.490696Z"
+    },
+    {
+      "id": "a15823ca-da91-4220-911e-01d9c3e689ed",
+      "content_id": "8e8ecc1c-a66c-41a8-9878-338691db7bdc",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "GRA18 export depends on TgASP5, and TgASP5 mutants phenocopy GRA18 mutants in their inability to induce target genes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C66-C68 are supported by immunofluorescence showing loss of GRA18 export in TgASP5 mutants and RNA-seq data showing similar transcriptional phenotypes. This places GRA18 in the known TgASP5-dependent export pathway and validates the requirement for export in GRA18 function.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T06:38:23.490696Z"
+    },
+    {
+      "id": "ed0c65cc-a5a7-43d2-8707-7a5f80cae913",
+      "content_id": "8e8ecc1c-a66c-41a8-9878-338691db7bdc",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "GRA18 regulates \u03b2-catenin post-transcriptionally without altering \u03b2-catenin transcript levels or GSK3 Ser21/Ser9 phosphorylation status.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C76, C78-C79 are supported by RNA-seq data showing no change in \u03b2-catenin transcripts and immunoblot data showing no change in GSK3 phosphorylation. This provides important mechanistic insight that GRA18 acts through a non-canonical mechanism independent of the typical GSK3 inhibitory phosphorylation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T06:38:23.490696Z"
+    },
+    {
+      "id": "08497cf4-1da0-4b4c-a66d-06421bc16777",
+      "content_id": "8e8ecc1c-a66c-41a8-9878-338691db7bdc",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "GRA18 contains two LxxIxE motifs in its C-terminal intrinsically disordered region that mediate PP2A-B56 binding.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C80 is supported by sequence analysis and correlation with B56 binding data. The presence of these motifs is consistent with known PP2A-B56 binding mechanisms and provides structural basis for the observed interactions.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T06:38:23.490696Z"
+    },
+    {
+      "id": "febdd368-9565-495d-9469-02fea11fb2fd",
+      "content_id": "8e8ecc1c-a66c-41a8-9878-338691db7bdc",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "GRA18's intrinsically disordered regions may enable it to compete with Axin/APC for binding to \u03b2-catenin destruction complex components, thereby disrupting the complex and promoting \u03b2-catenin stabilization.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C74-C75 represent a proposed mechanistic model based on structural similarities between GRA18 and Axin, but direct competition experiments are not presented. While the model is plausible and consistent with the data, it remains speculative without direct evidence of competitive binding or displacement of Axin/APC from the destruction complex.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T06:38:23.490696Z"
+    },
+    {
+      "id": "c40ca6ed-bc78-473d-8b76-4b7ad29838fb",
+      "content_id": "8e8ecc1c-a66c-41a8-9878-338691db7bdc",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Ccl17, Ccl22, and Ccl24 are consistently induced by T. gondii across different strains and cell types, with residual activation observed in the absence of GRA18 suggesting alternative activation mechanisms.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C81-C84 are supported by citations to multiple previous studies and the current data showing partial chemokine induction even without GRA18. This contextualizes the findings within the broader literature and acknowledges the complexity of chemokine regulation during infection.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T06:38:23.490696Z"
+    },
+    {
+      "id": "06f56eb5-8115-4d8f-84fc-e804f2165168",
+      "content_id": "8e8ecc1c-a66c-41a8-9878-338691db7bdc",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Background information on T. gondii biology, pathogenesis, and infection mechanisms.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C7 provide established background knowledge supported by appropriate citations. These are standard introductory statements about T. gondii that contextualize the study but do not represent novel findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T06:38:23.490696Z"
+    },
+    {
+      "id": "cbeccf63-54a7-44cf-b4c4-1741a2ce1b07",
+      "content_id": "8e8ecc1c-a66c-41a8-9878-338691db7bdc",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Background information on \u03b2-catenin function and the Wnt signaling pathway.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C32-C34 and C69-C73 provide established knowledge about \u03b2-catenin and Wnt signaling supported by appropriate citations. These are standard background statements that contextualize the mechanistic findings but do not represent novel discoveries.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T06:38:23.490696Z"
+    },
+    {
+      "id": "a1b9c2ee-c4d8-4c9a-a57e-4297133f54e0",
+      "content_id": "8e8ecc1c-a66c-41a8-9878-338691db7bdc",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "\u03b2-catenin activation and CCL17/CCL22/CCL24 chemokines are associated with anti-inflammatory responses, Treg recruitment, and M2 macrophage polarization.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C85-C88 provide established immunological knowledge supported by appropriate citations. These contextualize the potential biological significance of the findings but represent prior knowledge rather than novel discoveries from this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T06:38:23.490696Z"
+    },
+    {
+      "id": "4da83df9-cb9f-4efb-995f-e5d5e148a430",
+      "content_id": "8e8ecc1c-a66c-41a8-9878-338691db7bdc",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Summary claims stating the main findings of the study regarding GRA18's interactions and effects.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8-C10 are high-level summary statements of the main findings that are supported by the detailed experimental evidence presented in other claim groups. These represent the core conclusions of the study.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T06:38:23.490696Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "9ff0e53f-14ad-47d6-bbba-be7caa3aba88",
+      "result_id": "96c3034e-1a0a-4f47-b89e-9ca6f69c3d7c"
+    },
+    {
+      "claim_id": "6207de54-57b2-4441-9dc3-f17846bb60e6",
+      "result_id": "96c3034e-1a0a-4f47-b89e-9ca6f69c3d7c"
+    },
+    {
+      "claim_id": "b63483e7-c3df-4be8-90f5-97e69d51e0f8",
+      "result_id": "96c3034e-1a0a-4f47-b89e-9ca6f69c3d7c"
+    },
+    {
+      "claim_id": "68873dc0-a4d5-4548-9a7b-e726120b11d1",
+      "result_id": "96c3034e-1a0a-4f47-b89e-9ca6f69c3d7c"
+    },
+    {
+      "claim_id": "ea1611d9-f68b-4d91-bd53-83aec865c4b0",
+      "result_id": "96c3034e-1a0a-4f47-b89e-9ca6f69c3d7c"
+    },
+    {
+      "claim_id": "710636ce-a39e-4c7f-864e-c8bd179170aa",
+      "result_id": "96c3034e-1a0a-4f47-b89e-9ca6f69c3d7c"
+    },
+    {
+      "claim_id": "13b00cb8-4f9d-476d-919a-af966a12b4f9",
+      "result_id": "96c3034e-1a0a-4f47-b89e-9ca6f69c3d7c"
+    },
+    {
+      "claim_id": "99d7087d-5141-421c-b4a9-4e581735b1ca",
+      "result_id": "96c3034e-1a0a-4f47-b89e-9ca6f69c3d7c"
+    },
+    {
+      "claim_id": "fa09739e-1b60-4b1b-8bdf-4644bf34bb24",
+      "result_id": "96c3034e-1a0a-4f47-b89e-9ca6f69c3d7c"
+    },
+    {
+      "claim_id": "7699b327-21e2-4fa9-9b84-22cbf39ee698",
+      "result_id": "96c3034e-1a0a-4f47-b89e-9ca6f69c3d7c"
+    },
+    {
+      "claim_id": "ed209d45-07e9-4ff6-8eb6-1a551924e96a",
+      "result_id": "96c3034e-1a0a-4f47-b89e-9ca6f69c3d7c"
+    },
+    {
+      "claim_id": "429b0ded-c61a-49fd-9c62-6489177ea414",
+      "result_id": "29dd588b-b20d-4616-bbbd-9faa1a1cfc8a"
+    },
+    {
+      "claim_id": "5f349579-ec3a-4ca6-bebd-8e9e8387d094",
+      "result_id": "29dd588b-b20d-4616-bbbd-9faa1a1cfc8a"
+    },
+    {
+      "claim_id": "5569c876-2f16-475f-8357-4014d9dc25f6",
+      "result_id": "29dd588b-b20d-4616-bbbd-9faa1a1cfc8a"
+    },
+    {
+      "claim_id": "5d1c450a-7053-442a-aba8-d33d5e6de8ae",
+      "result_id": "29dd588b-b20d-4616-bbbd-9faa1a1cfc8a"
+    },
+    {
+      "claim_id": "55d0ce45-9bae-4dd1-9588-02b096a1339b",
+      "result_id": "29dd588b-b20d-4616-bbbd-9faa1a1cfc8a"
+    },
+    {
+      "claim_id": "b8366dd1-1d07-442e-bff5-00f1661def69",
+      "result_id": "29dd588b-b20d-4616-bbbd-9faa1a1cfc8a"
+    },
+    {
+      "claim_id": "facfdbdf-5866-4c7e-ac33-67072cf30f9f",
+      "result_id": "29dd588b-b20d-4616-bbbd-9faa1a1cfc8a"
+    },
+    {
+      "claim_id": "6a935602-e5ad-4d4e-9e6c-cbc022f63197",
+      "result_id": "29dd588b-b20d-4616-bbbd-9faa1a1cfc8a"
+    },
+    {
+      "claim_id": "97f134f4-8ecb-44fe-8638-2b0adc1b924a",
+      "result_id": "29dd588b-b20d-4616-bbbd-9faa1a1cfc8a"
+    },
+    {
+      "claim_id": "51348932-8d8e-4a26-9791-c26e6199d87a",
+      "result_id": "29dd588b-b20d-4616-bbbd-9faa1a1cfc8a"
+    },
+    {
+      "claim_id": "261efd72-09e6-4d82-95be-3e944263b4ea",
+      "result_id": "d7b21321-bc4e-4c11-a066-22e07c4d994b"
+    },
+    {
+      "claim_id": "962ab468-f668-4aa4-aba5-996ac93f1a98",
+      "result_id": "d7b21321-bc4e-4c11-a066-22e07c4d994b"
+    },
+    {
+      "claim_id": "a803aacf-db98-4696-9904-534c01d67ea7",
+      "result_id": "d7b21321-bc4e-4c11-a066-22e07c4d994b"
+    },
+    {
+      "claim_id": "5c7dc7b5-77ca-4884-b453-162e475b32b9",
+      "result_id": "d7b21321-bc4e-4c11-a066-22e07c4d994b"
+    },
+    {
+      "claim_id": "9e5b6042-aff7-4b78-87d7-564f6508f04e",
+      "result_id": "d7b21321-bc4e-4c11-a066-22e07c4d994b"
+    },
+    {
+      "claim_id": "99a0e9ea-faf6-4bb5-b022-957a589f333a",
+      "result_id": "d7b21321-bc4e-4c11-a066-22e07c4d994b"
+    },
+    {
+      "claim_id": "3e052d26-bbf0-4d52-a801-6f05149b8aaf",
+      "result_id": "d7b21321-bc4e-4c11-a066-22e07c4d994b"
+    },
+    {
+      "claim_id": "d31ff7c7-0f83-4bf6-8bdf-b814f679f96d",
+      "result_id": "d7b21321-bc4e-4c11-a066-22e07c4d994b"
+    },
+    {
+      "claim_id": "ec4cac4c-90c3-4d98-bf97-e99214833cd8",
+      "result_id": "d0bb6c9b-d90e-4a5b-a2b8-9db0c1ea9951"
+    },
+    {
+      "claim_id": "17ffaed0-4cd3-408d-b268-4a59abd1043f",
+      "result_id": "d0bb6c9b-d90e-4a5b-a2b8-9db0c1ea9951"
+    },
+    {
+      "claim_id": "635b08ce-38d5-4889-8621-44cd41574670",
+      "result_id": "d0bb6c9b-d90e-4a5b-a2b8-9db0c1ea9951"
+    },
+    {
+      "claim_id": "e318da3d-28d0-4c84-99d9-30ca409ce2d3",
+      "result_id": "d0bb6c9b-d90e-4a5b-a2b8-9db0c1ea9951"
+    },
+    {
+      "claim_id": "00f2fe5b-f3b5-4a75-baba-9429a670e0d1",
+      "result_id": "d0bb6c9b-d90e-4a5b-a2b8-9db0c1ea9951"
+    },
+    {
+      "claim_id": "57e78a63-7c8f-478b-91e6-6e9150a45392",
+      "result_id": "d0bb6c9b-d90e-4a5b-a2b8-9db0c1ea9951"
+    },
+    {
+      "claim_id": "4852aae5-48f1-4963-b025-5ff06b80dacd",
+      "result_id": "d0bb6c9b-d90e-4a5b-a2b8-9db0c1ea9951"
+    },
+    {
+      "claim_id": "f5394d20-6e53-4376-b872-3506a7d1073b",
+      "result_id": "d0bb6c9b-d90e-4a5b-a2b8-9db0c1ea9951"
+    },
+    {
+      "claim_id": "509921e4-a9b6-4789-8196-00c694b4ce15",
+      "result_id": "d0bb6c9b-d90e-4a5b-a2b8-9db0c1ea9951"
+    },
+    {
+      "claim_id": "efa464d9-e504-4981-abf7-7832e49849f5",
+      "result_id": "d0bb6c9b-d90e-4a5b-a2b8-9db0c1ea9951"
+    },
+    {
+      "claim_id": "be69d331-9f2e-452f-a010-ee4bb71728b7",
+      "result_id": "00a3bfeb-41ea-486d-a89d-83b0b1539bc0"
+    },
+    {
+      "claim_id": "07b4bd43-f8cb-4950-811a-0e8e97780af5",
+      "result_id": "00a3bfeb-41ea-486d-a89d-83b0b1539bc0"
+    },
+    {
+      "claim_id": "ce075469-dafc-4823-bae1-af90cbff1f54",
+      "result_id": "00a3bfeb-41ea-486d-a89d-83b0b1539bc0"
+    },
+    {
+      "claim_id": "d802d696-0324-45a4-b9f1-1739a43240bf",
+      "result_id": "00a3bfeb-41ea-486d-a89d-83b0b1539bc0"
+    },
+    {
+      "claim_id": "e57837a3-cf0b-4602-bd36-c083539c3261",
+      "result_id": "00a3bfeb-41ea-486d-a89d-83b0b1539bc0"
+    },
+    {
+      "claim_id": "07cfd89c-37bc-499c-af8b-e722fcf163a1",
+      "result_id": "00a3bfeb-41ea-486d-a89d-83b0b1539bc0"
+    },
+    {
+      "claim_id": "f85de110-c4b2-41cb-88d1-f07dc3dc21f4",
+      "result_id": "00a3bfeb-41ea-486d-a89d-83b0b1539bc0"
+    },
+    {
+      "claim_id": "47bee914-24ef-4014-92ee-ee5a6e047622",
+      "result_id": "00a3bfeb-41ea-486d-a89d-83b0b1539bc0"
+    },
+    {
+      "claim_id": "f799600e-6e58-4fe6-b982-578670a3ff64",
+      "result_id": "00a3bfeb-41ea-486d-a89d-83b0b1539bc0"
+    },
+    {
+      "claim_id": "ada88ea5-a2ed-4ec0-8adf-ea5d0a67ee43",
+      "result_id": "89211b66-6da9-42c0-a866-bc83aae00317"
+    },
+    {
+      "claim_id": "283a9c4d-7304-4391-99a0-afc33430616e",
+      "result_id": "89211b66-6da9-42c0-a866-bc83aae00317"
+    },
+    {
+      "claim_id": "36f099ac-7988-437b-9e40-198dd10bc7b1",
+      "result_id": "89211b66-6da9-42c0-a866-bc83aae00317"
+    },
+    {
+      "claim_id": "63fdc111-f2bd-4a8e-bcfa-bdce683e309d",
+      "result_id": "2cef7301-ab8c-4440-be14-68e4deab0512"
+    },
+    {
+      "claim_id": "62830491-3975-436d-8ead-2b6eb77e3ecd",
+      "result_id": "a15823ca-da91-4220-911e-01d9c3e689ed"
+    },
+    {
+      "claim_id": "0cde1760-0cd8-4e75-9056-24199e5aa6b5",
+      "result_id": "a15823ca-da91-4220-911e-01d9c3e689ed"
+    },
+    {
+      "claim_id": "b130c600-ed0d-44ae-bd47-a71294edcad0",
+      "result_id": "a15823ca-da91-4220-911e-01d9c3e689ed"
+    },
+    {
+      "claim_id": "286f1f1e-8ded-4254-b809-8a85de9cba2d",
+      "result_id": "ed0c65cc-a5a7-43d2-8707-7a5f80cae913"
+    },
+    {
+      "claim_id": "fe895e63-f5be-418a-a202-3488ca4d3762",
+      "result_id": "ed0c65cc-a5a7-43d2-8707-7a5f80cae913"
+    },
+    {
+      "claim_id": "8d539a56-6668-4a86-ad05-5fec9a2765d7",
+      "result_id": "ed0c65cc-a5a7-43d2-8707-7a5f80cae913"
+    },
+    {
+      "claim_id": "9d76303f-2285-4b4f-b53e-6c9fa2e98f0f",
+      "result_id": "08497cf4-1da0-4b4c-a66d-06421bc16777"
+    },
+    {
+      "claim_id": "b2ffcf9e-2b36-4079-b2e1-668aa6641d1c",
+      "result_id": "febdd368-9565-495d-9469-02fea11fb2fd"
+    },
+    {
+      "claim_id": "6c3c570f-7695-4638-9651-15ce1d18e713",
+      "result_id": "febdd368-9565-495d-9469-02fea11fb2fd"
+    },
+    {
+      "claim_id": "1000ddcb-5b80-4e8e-8e2b-6fa04401613d",
+      "result_id": "c40ca6ed-bc78-473d-8b76-4b7ad29838fb"
+    },
+    {
+      "claim_id": "0dd4029e-5038-4fe8-b504-c01500170600",
+      "result_id": "c40ca6ed-bc78-473d-8b76-4b7ad29838fb"
+    },
+    {
+      "claim_id": "57b1ef9f-f1d6-46b4-8fe1-8d8319e03221",
+      "result_id": "c40ca6ed-bc78-473d-8b76-4b7ad29838fb"
+    },
+    {
+      "claim_id": "887ed2ad-223d-4d87-9ce0-90ea73ecd65d",
+      "result_id": "c40ca6ed-bc78-473d-8b76-4b7ad29838fb"
+    },
+    {
+      "claim_id": "2a76af61-919a-4507-abea-1571ed77b82a",
+      "result_id": "06f56eb5-8115-4d8f-84fc-e804f2165168"
+    },
+    {
+      "claim_id": "a20f1d33-2b0f-4fa5-963d-7b9bcf1a0879",
+      "result_id": "06f56eb5-8115-4d8f-84fc-e804f2165168"
+    },
+    {
+      "claim_id": "77df7d23-d28b-44ca-b0ee-acccb58886ea",
+      "result_id": "06f56eb5-8115-4d8f-84fc-e804f2165168"
+    },
+    {
+      "claim_id": "7e8900bb-1b35-430d-8292-989d13694981",
+      "result_id": "06f56eb5-8115-4d8f-84fc-e804f2165168"
+    },
+    {
+      "claim_id": "ec80a829-1238-4c7f-9e81-360ffe83ec6c",
+      "result_id": "06f56eb5-8115-4d8f-84fc-e804f2165168"
+    },
+    {
+      "claim_id": "0fce9aaf-e3c0-4863-8ce9-b542cb6ff6ac",
+      "result_id": "06f56eb5-8115-4d8f-84fc-e804f2165168"
+    },
+    {
+      "claim_id": "767c1282-c238-4da6-b42b-04e618e02cf5",
+      "result_id": "06f56eb5-8115-4d8f-84fc-e804f2165168"
+    },
+    {
+      "claim_id": "82863f09-c77a-4da5-882b-501a7b6195b4",
+      "result_id": "cbeccf63-54a7-44cf-b4c4-1741a2ce1b07"
+    },
+    {
+      "claim_id": "9e0ae170-7a98-458a-8f62-6b395ff82374",
+      "result_id": "cbeccf63-54a7-44cf-b4c4-1741a2ce1b07"
+    },
+    {
+      "claim_id": "38206090-6049-4774-95bb-3c74317bb089",
+      "result_id": "cbeccf63-54a7-44cf-b4c4-1741a2ce1b07"
+    },
+    {
+      "claim_id": "94374bb9-526a-4d6f-9ea3-2f25f4d78559",
+      "result_id": "cbeccf63-54a7-44cf-b4c4-1741a2ce1b07"
+    },
+    {
+      "claim_id": "1194449c-6fa7-44fb-8c4d-fb03c07ba494",
+      "result_id": "cbeccf63-54a7-44cf-b4c4-1741a2ce1b07"
+    },
+    {
+      "claim_id": "5b4200ed-a378-4545-acc4-b932946bd37e",
+      "result_id": "cbeccf63-54a7-44cf-b4c4-1741a2ce1b07"
+    },
+    {
+      "claim_id": "6b3758c2-c623-4d23-b777-dfb13c6c64c0",
+      "result_id": "cbeccf63-54a7-44cf-b4c4-1741a2ce1b07"
+    },
+    {
+      "claim_id": "acde0ac8-951b-4750-8a81-316effbe79ec",
+      "result_id": "cbeccf63-54a7-44cf-b4c4-1741a2ce1b07"
+    },
+    {
+      "claim_id": "eab463e3-4961-40a7-ad17-3444297c9bb0",
+      "result_id": "a1b9c2ee-c4d8-4c9a-a57e-4297133f54e0"
+    },
+    {
+      "claim_id": "72e4e9fb-f499-4f3b-9882-27688a883738",
+      "result_id": "a1b9c2ee-c4d8-4c9a-a57e-4297133f54e0"
+    },
+    {
+      "claim_id": "f82415de-9c8e-4d32-8fb9-3eba3d887c92",
+      "result_id": "a1b9c2ee-c4d8-4c9a-a57e-4297133f54e0"
+    },
+    {
+      "claim_id": "f65f9534-59ad-4495-a022-b362aff82cd9",
+      "result_id": "a1b9c2ee-c4d8-4c9a-a57e-4297133f54e0"
+    },
+    {
+      "claim_id": "6a84dcaa-1239-41e1-9a04-96b37ac0f83f",
+      "result_id": "4da83df9-cb9f-4efb-995f-e5d5e148a430"
+    },
+    {
+      "claim_id": "4efebd8c-1108-4cbf-af4d-b0d7dfadca71",
+      "result_id": "4da83df9-cb9f-4efb-995f-e5d5e148a430"
+    },
+    {
+      "claim_id": "2353c494-0355-4b28-b0de-bbd7d08799a3",
+      "result_id": "4da83df9-cb9f-4efb-995f-e5d5e148a430"
+    }
+  ],
+  "comparisons": []
+}

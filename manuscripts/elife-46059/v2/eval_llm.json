@@ -1,0 +1,279 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C23",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "The authors developed a feedback-based 3D orbital tracking microscope with nanometer spatial precision (<5 nm laterally, <30 nm axially) and millisecond temporal resolution (100 Hz) capable of tracking individual mitochondria in zebrafish larvae over distances >100 \u00b5m. The system incorporates technical improvements including FPGA-based hardware synchronization, long-range tracking via automated stage recentering, multi-wavelength excitation including 405 nm photoactivation, and dark orbit implementation to reduce phototoxicity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C23, C30-C33 provide comprehensive calibration data demonstrating the stated spatial and temporal resolution using both in vitro (beads) and in vivo (stationary mitochondria) measurements. Claims C80-C84 describe the technical implementations that enable these capabilities. The precision measurements are well-documented with appropriate controls and multiple validation approaches.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C2",
+      "C25",
+      "C90"
+    ],
+    "result": "Individual mitochondria were tracked over distances >100 \u00b5m in vivo with unprecedented spatiotemporal resolution. The study collected 43 trajectories from 16 individual zebrafish larvae.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2 and C25 state the achievement of long-distance tracking, which is demonstrated in the trajectory data (Figures 1-3, Videos 1-2). Claim C90 provides the sample size. The combination of high resolution and extended tracking range represents a significant technical advance over previous methods.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C3",
+      "C26",
+      "C27",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C58",
+      "C61"
+    ],
+    "result": "Five distinct motional states were identified: fast anterograde (0.62 \u00b5m/s), slow anterograde (0.36 \u00b5m/s), fast retrograde (0.72 \u00b5m/s), slow retrograde (0.42 \u00b5m/s), and stationary. The slow movement states, previously undetected, have symmetrical speeds in both directions and carry out movements over shorter distances and timescales than fast states.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C26-C27, C34-C37 are supported by detailed velocity analysis in Figure 2 and Table 1. The identification of slow movement states as distinct from fast states is based on Gaussian fitting of velocity distributions (Figure 2\u2014figure supplement 1). Statistical comparisons confirm significant differences between fast and slow states. The symmetry of slow state velocities (C61) is evident from the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C62"
+    ],
+    "result": "Mitochondrial movement transitions follow defined rules: after pauses, mitochondria predominantly persist in the original direction (\u226577% probability); transient directional changes involve longer pauses; pauses involving fast states show decay constants of 1.94-1.97 s while slow-slow transitions show 3.2 s; very long pauses (>20 s) are associated with slow states (98%) and directional changes (56%); no direct fast anterograde to fast retrograde transitions were observed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C5, C38-C45, C62 are supported by comprehensive transition probability analysis in Figure 2\u2014figure supplement 2. The pause duration distributions are fit to exponential decays with reported decay constants. Statistical analysis of 1,234 transitions provides quantitative support for the transition rules. The data demonstrate non-random, structured transitions between movement states.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C6",
+      "C29",
+      "C46",
+      "C47",
+      "C48",
+      "C63",
+      "C72"
+    ],
+    "result": "Stationary mitochondria act as roadblocks that increase pausing probability and preferentially engage the slow movement state in passing mitochondria. When stationary mitochondria are present, time in stationary state increases substantially (anterograde: 34% to 58%, retrograde: 40% to 58%), and anterograde transport shows a marked shift from fast to slow movement (ratio fast/slow: 5.6 to 1.9), while retrograde transport is less affected.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C29, C46-C48, C63, C72 are supported by analysis in Figure 3 combining trajectory data with wide-field imaging of the cellular environment. The quantitative changes in time spent in different states are clearly documented. The differential effect on anterograde versus retrograde transport is consistent with prior literature (C49, Mallik et al., 2004).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C91"
+    ],
+    "result": "Repetitive tracking of multiple mitochondria along the same axon segment revealed distinct foci where mitochondrial progress is slower. While many pauses coincide with stationary mitochondria, other pause foci appear on 'free' segments, suggesting additional retaining influences. This analysis was based on 50 trajectories from three neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C53 are supported by the repetitive tracking analysis in Figure 3c, which maps pause locations along repeatedly sampled axon segments. Claim C91 provides the sample size. The observation of pause foci on 'free' segments is clearly shown in the data, though the mechanistic interpretation (C54) remains speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C64",
+      "C88"
+    ],
+    "result": "At typical kymography sampling rates (1-2 Hz), the slow movement state (duration ~0.45 s) is on the verge of detectability, explaining why it may have been missed in previous studies. The measured velocities are consistent with a previous study (Pluci\u0144ska et al., 2012) when accounting for differences in temporal resolution and temperature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C64 is supported by the measured duration of slow states in Table 1 and represents a valid inference about detection limits of conventional imaging. Claim C88 is supported by the comparison in Table 2, which shows consistency between methods when accounting for technical differences. This validates the new approach against established methods.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C73"
+    ],
+    "result": "The molecular basis of slow movement states likely involves changes in the engaged transport machinery rather than mitochondrial shape changes. Possible mechanisms include engagement of additional motors (favored hypothesis based on symmetrical speeds), actin-based motors, concomitant engagement of anchors with kinesin/dynein, or unappreciated motor regulation. The slow state may be important for local positioning and movement between microtubule tracks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C65-C66 present reasonable arguments against shape changes based on displacement measurements, but C67-C73 are explicitly speculative hypotheses not tested in this study. While the symmetry of slow state velocities (C68) provides some support for the additional motors hypothesis, no direct molecular evidence is presented. The citations to prior work (C69-C71, C73) provide context but not validation of the specific mechanism in this system.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C49",
+      "C50"
+    ],
+    "result": "Retrograde transport may be less sensitive to obstacles than anterograde transport, and the slow movement state might represent 'a shift to low gear' to circumvent obstacles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C49 is supported by the differential response to obstacles (C47-C48) and citation to Mallik et al., 2004, but C50 is explicitly presented as speculation. While the data show that anterograde transport engages slow states more frequently near obstacles, the mechanistic interpretation as 'shifting to low gear' is not directly tested.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C54"
+    ],
+    "result": "The clustering of pauses near stationary mitochondria might be due to local cytoskeletal structure or attractive milieu influences such as calcium hot spots or substrate availability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C54 is explicitly presented as speculation with supporting citations but no direct experimental evidence in this study. While the observation of pause foci on 'free' segments (C53) suggests additional mechanisms beyond physical obstruction, the specific proposed mechanisms are not tested.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C55",
+      "C18"
+    ],
+    "result": "This is the first application of feedback-based 3D single particle tracking for in vivo particle tracking, bridging the spatial scale gap between motor steps and organelle transport.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C55 asserts novelty while acknowledging other potential techniques exist. Claim C18 is supported by the demonstrated capabilities and citations. The novelty claim appears valid based on the literature review, though the authors appropriately note this is not the only technique capable of such measurements.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C56",
+      "C57"
+    ],
+    "result": "While two-photon excitation might be more favorable for deep tissue imaging, the presented one-photon method is less costly and more versatile for wavelength multiplexing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C57 represent reasonable technical comparisons based on known properties of one-photon versus two-photon excitation. The cost and versatility advantages are valid inferences from established knowledge about these techniques.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C59",
+      "C60"
+    ],
+    "result": "The fast movement components are consistent with classical kinesin- and dynein-mediated transport, with speeds (0.62-0.76 \u00b5m/s) on the order of those measured for these motors in reconstitution assays (0.7-1.0 \u00b5m/s).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C60 are supported by comparison with multiple literature sources (Misgeld and Schwarz, 2017; Toba et al., 2006; King and Schroer, 2000; Milo and Phillips, 2016). The measured velocities fall within the expected range for these motors, providing validation of the biological relevance of the measurements.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "The in vivo 3D SPT approach enables future applications including testing molecular mechanisms in zebrafish, investigating neurological disease models, determining how neuronal landmarks modulate mitochondrial behavior, and combining with biosensors and optogenetic tools to correlate organelle physiology with movement.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C79 describe potential future applications that are reasonable extensions of the demonstrated capabilities. While these are prospective rather than demonstrated results, they represent valid inferences about what the technology enables. The discovery of new movement states (C75) does testify to the power of the approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "Technical validation showed that stem axons near blood vessels exhibit heartbeat-related fluctuations, mitochondrial shape does not impact tracking precision, and moving mitochondria have an average length of 0.71 \u00b1 0.13 \u00b5m.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C87 are supported by analyses in Figure 1\u2014figure supplements 2-3. These represent important technical controls demonstrating the system can distinguish biological signals from artifacts and that the tracking method is robust to mitochondrial shape variations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C89",
+      "C92"
+    ],
+    "result": "The photoactivation system achieved ~25-fold contrast, and the trajectory analysis method correctly assigns >90% of data points when validated with simulated data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89 and C92 provide important validation of key methodological components. The photoactivation contrast (C89) is measured experimentally, and the analysis accuracy (C92) is validated using simulations. These support the reliability of the approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C19",
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "The introduction establishes the biological context and technical gap: while molecular players of axonal transport are known, higher-order regulation is poorly understood; existing 3D SPT methods have been limited to reductionist models; and there is a need for techniques spanning nanometer motor steps to hundreds of micrometers of organelle transport.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C22 establish the scientific context through citations to relevant literature. These background claims are appropriately supported by citations and represent accurate characterizations of the field based on the referenced work. They effectively motivate the need for the developed technology.",
+    "result_type": "MINOR"
+  }
+]

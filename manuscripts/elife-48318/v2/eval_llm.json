@@ -1,0 +1,324 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2"
+    ],
+    "result": "The manuscript provides background information on DUB classification, stating that the human genome encodes approximately 100 putative DUBs that can be grouped into at least five subfamilies based on catalytic motif composition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1 and C2 are well-established facts about DUB classification supported by citations (Liu et al., 2018; Nijman et al., 2005). These are background knowledge claims that provide context for the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10"
+    ],
+    "result": "Through siRNA library screening, the authors identified USP18, USP41, and USP49 as DUBs that facilitate Vif-mediated A3G degradation when knocked down, with USP49 being the most capable inhibitor. USP49 was selected for further study based on its high expression in primary CD4+ T cells, dual nuclear-cytoplasmic localization, and high conservation among anthropoids.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C10 are supported by experimental screening data (Figure 1B-D), subcellular localization data (Figure 1\u2014figure supplement 2), expression analysis (Figure 1\u2014figure supplement 3), and sequence conservation analysis (Figure 1\u2014figure supplement 4). The rationale for selecting USP49 is well-documented with multiple lines of evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13"
+    ],
+    "result": "USP49 counteracts Vif-mediated A3G degradation in a dose-dependent manner, with significant suppression at moderate Vif levels but limited protective effect at high Vif abundance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C13 are supported by dose-dependent transfection experiments shown in Figure 1E. The data demonstrate a clear dose-response relationship between USP49 and A3G protection, though the effect is limited at high Vif concentrations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "USP49 enhances the anti-HIV-1 activity of A3G in a dose-dependent manner. Knockdown of endogenous USP49 enhances HIV-1 infectivity in the presence of Vif, while overexpression of USP49 inhibits HIV-1 infection and increases G-to-A hypermutations in proviral DNA. USP49 alone has no antiviral effect, indicating it exerts its antiviral activity through A3G.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C20 are supported by multiple complementary experiments including luciferase assays (Figures 2A-D), flow cytometry (Figure 2E), and sequencing data showing hypermutations (Figure 2\u2014figure supplement 1A). The control experiment showing USP49 alone has no effect (C18) strengthens the conclusion that USP49 acts through A3G.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "Using a Vif-Y40H mutant with weakened anti-A3G activity, the authors demonstrate that knockdown of USP49 in primary CD4+ T cells restores infectivity of the mutant virus to near-wildtype levels and reduces G-to-A hypermutations, confirming that USP49 depletion enhances Vif's anti-A3G effect.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C25 are supported by P24 ELISA data (Figure 2F) and hypermutation analysis (Figure 2\u2014figure supplement 1B). The use of a naturally occurring Vif mutant provides physiologically relevant evidence. However, the manuscript notes that no reversion of the Y40H mutation was observed, which strengthens the interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "USP49 stabilizes A3G through both Vif-dependent and Vif-independent pathways. Even in the absence of Vif, USP49 knockdown significantly decreases A3G stability (rescued by MG132), and USP49 overexpression enhances A3G levels in both cell lysates and viral particles in a dose-dependent manner.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C31 are supported by multiple experiments including GFP expression assays (Figure 3A), western blots (Figures 3B-E), and viral particle analysis. The MG132 rescue experiment (C26) provides evidence for proteasome-mediated degradation. The discovery of Vif-independent degradation is unexpected and well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C61",
+      "C62"
+    ],
+    "result": "The Vif-independent A3G degradation pathway occurs via the ubiquitin-proteasome system (blocked by MG132) but does not involve the cullin-RING subtype of E3 ligases, as demonstrated by the ineffectiveness of MLN4924 inhibitor and siRNAs targeting Cullin1-7. Depletion of elonginB and elonginC also did not affect Vif-independent A3G degradation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C35, C61-C62 are supported by inhibitor studies (Figure 3F) and siRNA knockdown experiments (Figure 3G, Figure 3\u2014figure supplement 2). While the specific E3 ligase remains unidentified, the exclusion of cullin-RING ligases is well-documented. The authors appropriately acknowledge this limitation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "USP49 directly interacts with A3G in the cytoplasm. This interaction was demonstrated by confocal microscopy showing colocalization, co-immunoprecipitation experiments with both tagged and endogenous proteins, and RNase A treatment confirming the interaction is not RNA-mediated.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C39 are supported by multiple complementary approaches: confocal microscopy (Figure 4A), co-IP with overexpressed proteins (Figure 4B), co-IP with endogenous USP49 (Figure 4C), and RNase A treatment (Figure 4D). The combination of techniques provides strong evidence for direct protein-protein interaction.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "USP49 deubiquitinates A3G by removing K48-linked ubiquitin chains. Overexpression of wild-type USP49 significantly decreases A3G poly-ubiquitination, while the catalytically inactive C262A mutant fails to alter ubiquitination. The effect is specific to K48-linked ubiquitination, as demonstrated using K48 ubiquitin and K48R mutant.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C43 are supported by denaturing immunoprecipitation experiments (Figures 4E-F) and are consistent with prior studies (Mehle et al., 2004; Turner et al., 2016; Luo et al., 2017). The use of the catalytically inactive mutant (C41) provides strong evidence that the deubiquitinase activity is required. The specificity for K48-linked ubiquitination is well-demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "In newly-diagnosed HIV-1-infected individuals (n=21), USP49 mRNA levels positively correlate with A3G protein expression and CD4 counts, and negatively correlate with plasma HIV-1 RNA levels. No such correlations were found for USP18, suggesting USP49 expression in CD4 T-cells is involved in HIV-1 disease progression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C48 are supported by correlation analyses from clinical samples (Figure 5A-D, Figure 5\u2014figure supplement 1). The sample size (n=21) is modest but adequate for correlation analysis. The specificity for USP49 (not USP18) strengthens the findings. However, correlation does not establish causation, and the authors appropriately frame this as suggestive evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "In HIV-1-infected individuals receiving suppressive cART, USP49 and A3G expression positively correlate with G-to-A hypermutations in Vif-positive proviruses (n=7) and negatively correlate with the ratio of intact proviruses (n=24), suggesting USP49 contributes to the generation of defective proviruses in the HIV-1 latent reservoir.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C49-C53 are based on clinical correlation data (Figure 6A-G) using hypermutation analysis and IPDA. While the correlations are statistically significant, the sample sizes are small (n=7 for hypermutation, n=24 for IPDA). The conclusion that USP49 'contributes to' defective provirus generation (C53) is inferential and not directly demonstrated. The authors acknowledge these data are 'preliminary' in the Discussion, which is appropriate given the limitations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C54",
+      "C55"
+    ],
+    "result": "Prior work has shown that USP49 interacts with p53, DUSP, and FKBP51 in the nucleus to suppress their ubiquitination, and can negatively regulate cellular antiviral responses via deconjugation of K63-linked ubiquitin in STING.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C55 are supported by appropriate citations to prior literature (Luo et al., 2017; Tu et al., 2018; Zhang et al., 2019; Ye et al., 2019). These are accurate representations of published work that provide context for the current findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C56",
+      "C57"
+    ],
+    "result": "The authors conclude that USP49 stabilizes A3G by counteracting Vif-mediated ubiquitination through removal of ubiquitin from A3G, thereby significantly enhancing A3G's anti-HIV-1 activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C57 are well-supported conclusions based on the comprehensive experimental data presented, including interaction studies, deubiquitination assays, and functional HIV-1 infectivity assays. The mechanistic link between USP49, A3G stabilization, and antiviral activity is clearly established.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "The authors discovered a Vif-independent A3G degradation pathway that occurs via the ubiquitin-proteasome system (as MG132 blocks degradation). This finding may explain previously reported ubiquitination sites on A3G that are not located at the C-terminus and not regulated by Vif.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C60 are supported by experimental observations (Figures 3A-B) and are consistent with prior literature (Albin et al., 2013; Iwatani et al., 2009; Turner et al., 2016). The discovery of Vif-independent degradation is novel and provides a potential explanation for previously unexplained observations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "The authors discuss the broader significance of APOBEC proteins in antiviral immunity, genome stability, and tumor development, and position their finding that DUBs prevent Vif-independent A3G degradation as revealing a new mechanism for regulating APOBEC3 protein expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C66 are supported by appropriate citations and represent accurate contextualization of the findings. The claim that this represents a 'new mechanism' (C66) is justified by the novelty of the Vif-independent pathway discovery.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "The authors propose that USP49-mediated stabilization of A3G leads to sub-lethal or lethal hypermutations in the HIV-1 genome, resulting in accumulation of defective proviruses. They suggest USP49 and A3G comprise a driving force to contain the viral reservoir, and that USP49 expression could serve as a biomarker for evaluating defective provirus quality and reservoir size.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C67-C71 include both established facts (C67, supported by multiple citations) and speculative conclusions (C69-C71). While the clinical correlation data (C68) support an association, the mechanistic claims about hypermutations (C69) and the proposal that USP49 could serve as a biomarker (C71) are preliminary. The authors appropriately acknowledge these data are 'preliminary' and frame C69-C71 as hypotheses, but stronger evidence would be needed to fully support these conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "The manuscript provides comprehensive background on A3G's antiviral mechanisms, Vif-mediated antagonism, and clinical relevance, including A3G's incorporation into virions, C-to-U editing activity, physical blocking of reverse transcription, induction of sub-lethal hypermutations, Vif's E3 ligase complex formation, and correlations between A3G expression and clinical parameters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C83 are well-established facts from prior literature, appropriately cited throughout. These provide essential background context for understanding the significance of the current findings. All citations appear accurate and relevant.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "The manuscript provides background on the ubiquitin-proteasome system, deubiquitinating enzymes, and their roles in host-virus interactions, establishing that while ubiquitination in Vif-mediated A3G degradation is well-known, the role of DUBs in A3G stability was completely unknown prior to this study.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C94 accurately represent established knowledge about the UPS and DUBs, supported by appropriate citations. The identification of the knowledge gap (C94) is accurate and provides clear rationale for the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "The authors summarize their main findings: USP49 directly interacts with A3G, removes ubiquitin to increase A3G expression and enhance anti-HIV-1 activity; A3G degradation also occurs via a Vif- and cullin-ring-independent pathway counteracted by USP49; and clinical data suggest USP49 correlates with A3G expression, hypermutations in proviruses, and inversely with intact provirus ratio.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95-C101 are accurate summaries of the main findings, well-supported by the experimental and clinical data presented throughout the manuscript. These represent the key conclusions of the study.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C102",
+      "C103"
+    ],
+    "result": "The manuscript provides factual information about ubiquitin structure, noting it contains seven lysine residues (K6, K11, K27, K29, K33, K48, K63) through which poly-ubiquitin chains are linked to substrate proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C102-C103 are established facts about ubiquitin structure and function. This is accurate background knowledge relevant to understanding the K48-linked ubiquitination experiments.",
+    "result_type": "MINOR"
+  }
+]

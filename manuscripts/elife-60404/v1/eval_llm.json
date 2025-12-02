@@ -1,0 +1,315 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13"
+    ],
+    "result": "The authors provide background on smFRET as an established method for studying biomolecular structure and dynamics, highlighting its advantages over ensemble methods and describing the standard workflow for smFRET data analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C13 establish the context for smFRET methodology through citations to published literature (C5-C9, C11-C13) and describe established knowledge about the technique (C1, C10). These background claims are well-supported by appropriate citations and represent accepted knowledge in the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19"
+    ],
+    "result": "The authors identify limitations of existing smFRET analysis software, including the need for manual supervision, parameter tuning by expert users, and potential for cognitive biases, motivating the need for automated analysis methods.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C19 describe limitations of existing approaches through citations (C14-C15, C19) and logical inferences about barriers to adoption (C16-C18). The characterization of existing software limitations is supported by citations and provides appropriate motivation for the work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "The authors establish that deep learning has been successfully applied to various microscopy analysis tasks and describe fundamental properties of deep neural networks relevant to smFRET analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C30 describe established knowledge about deep learning and its applications in microscopy, supported by multiple citations (C20-C21, C24-C26) and fundamental machine learning concepts (C22-C23, C27-C30). These background claims appropriately establish the rationale for applying deep learning to smFRET.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "DeepFRET is an automated software package that integrates a pre-trained deep neural network for classifying smFRET traces into six categories, requiring only a user-defined confidence threshold, and includes comprehensive analysis features from raw image processing to statistical analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C54 describe the DeepFRET software architecture, capabilities, and workflow. These are directly supported by the software implementation described in the manuscript and shown in figures. The technical details are consistent and the software features are clearly documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122"
+    ],
+    "result": "The authors developed a method to generate 150,000 simulated smFRET traces covering all theoretically possible configurations, which were used to train the deep learning model with an 80/20 train-validation split and an independent test set of 20,000 traces.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C113-C122 describe the training data generation and preprocessing methodology. The approach is clearly documented with specific numbers (C116-C119) and the normalization strategy (C120-C122) is appropriate for ensuring model generalization. The methodology is sound and well-described.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C39",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128"
+    ],
+    "result": "The DeepFRET neural network architecture is based on a convolutional neural network with LSTM layers, inspired by ECG time-series classifiers, trained using Keras/TensorFlow with specific hyperparameters including Adam optimizer, learning rate scheduling, and early stopping.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C37, C39, C123-C128 describe the model architecture and training procedure. The architecture is clearly documented with citations to prior work (C38, C124), and training hyperparameters are specified (C126-C128). The technical implementation is appropriate and reproducible.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "On simulated ground truth data (200 smFRET traces mixed with 5000 non-smFRET traces), DeepFRET achieved precision of 0.91 at a threshold of 0.85, substantially outperforming simple thresholding methods (precision 0.22) and completing analysis in ~1 minute versus potentially days for manual inspection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C65 present quantitative performance comparisons on simulated data with specific metrics (C58, C59, C60, C65). The experimental design is clearly described (C55-C56), results are shown in figures (C57, C60-C61), and the performance advantage is substantial and well-documented. The comparison is fair and the metrics are appropriate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "Confusion matrix analysis on the test set showed DeepFRET achieved 94% balanced classification accuracy for both ALEX-enabled and ALEX-disabled models, with high accuracy for bleached/aggregated frames (98%/97%) and lower accuracy for scrambled traces (89%/83%).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C74 present detailed classification performance metrics from confusion matrix analysis shown in Figure 3. The quantitative results are specific and consistent (C68-C70, C73-C74), and the noise threshold justification is provided (C71-C72). The performance metrics are comprehensive and well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "In a comparison with three human operators on 1000 simulated traces (46 true smFRET), human performance averaged 0.76\u00b10.10 precision and 0.83\u00b10.14 recall, comparable to DeepFRET but requiring 5 seconds per trace versus <50ms, with high variability between operators suggesting potential for inconsistent outcomes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C81 describe a human vs. machine comparison with clear experimental design (C75-C77), quantitative results (C78-C79), and appropriate interpretation (C80-C81). The comparison is fair (participants were blinded, C77), and the variability between operators is documented. The conclusion that DeepFRET matches or exceeds human performance while being much faster is well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "On real experimental data from Stella et al. 2018, DeepFRET with a threshold of 0.85 recovered 228 traces compared to 214 from manual selection, with closely matching FRET distributions, completing analysis in <50ms per trace without parameter tuning.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C86 demonstrate generalization to real experimental data with specific quantitative results (C83-C84) and timing measurements (C85). The comparison to manual selection is appropriate, and the close agreement in FRET distributions (shown in Figure 4) validates the approach. The lack of parameter tuning (C84) is a strength.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "Comparative evaluation against existing software (iSMS, SPARTAN, ebFRET, HAMMY) on both simulated and published experimental data showed DeepFRET performed similarly to or better than SPARTAN and iSMS without parameter tuning, with all packages reproducing published FRET distributions with little discrepancy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C90 present systematic comparisons with existing software on both simulated (C88-C89) and real data (C90). The comparisons are shown in supplementary figures and demonstrate that DeepFRET achieves comparable or better performance without requiring extensive parameter tuning. The evaluation is fair and comprehensive.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "DeepFRET is provided as a standalone executable with comprehensive documentation, implements all common smFRET analysis procedures in a user-friendly platform, offers backward compatibility with iSMS, and includes open-source code allowing expert users to customize the analysis pipeline.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C97 describe the software distribution, features, and extensibility. These are implementation details that are verifiable from the software itself and the provided documentation. The comprehensive feature set (C92) and accessibility for both novice and expert users (C91, C95) are appropriate for broad adoption.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134"
+    ],
+    "result": "The bleaching detection algorithm uses a sliding window requiring 4 out of 7 frames to be marked as bleached, the noise threshold of \u03c3=0.25 was validated using D'Agostino-Pearson normality test, and the HMM implementation was verified on external benchmark data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C129-C134 describe specific algorithmic details and validation approaches. The bleaching detection algorithm is clearly specified (C129-C130), the noise threshold is statistically justified (C131-C132, shown in Figure 1 supplement 4), and the HMM implementation is validated (C133-C134). These methodological details are appropriate and well-documented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C4",
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "The authors conclude that DeepFRET achieves >95% classification accuracy on ground truth data, outperforms both human operators and commonly used thresholds, and requires only ~1% of the time compared to manual methods.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2-C4, C98-C100 are summary conclusions supported by the detailed experimental results presented in claims C55-C90. The >95% accuracy claim is consistent with the 94% balanced accuracy reported in C73-C74, and the performance advantages over both simple thresholding and human operators are well-documented with specific metrics.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C101",
+      "C102",
+      "C104",
+      "C105"
+    ],
+    "result": "The authors speculate that DeepFRET's speed will enable larger datasets and high-throughput analysis, has potential to serve as a benchmark for data quality, will contribute to field standardization and reproducibility, and combined with commercial instruments will help establish smFRET as a mainstream structural biology tool.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C101-C102, C104-C105 are forward-looking speculations about the impact of DeepFRET on the field. While the technical capabilities demonstrated in the manuscript support these possibilities, these are predictions about future adoption and impact rather than demonstrated results. The speculation is reasonable but cannot be evaluated as supported or unsupported.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C103",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112"
+    ],
+    "result": "The authors describe current capabilities (2-color ALEX and non-ALEX data), limitations (surface-immobilized particles only, Markov process assumption), and speculate about future extensions to other techniques (3-4 color FRET, PIFE, MIET, i-SET) and applications (particle tracking, other single-molecule trajectories).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C103, C106, C108-C109 accurately describe the current scope and limitations of DeepFRET, which are appropriate to document. Claims C107, C110-C112 are speculations about future extensions with appropriate citations to relevant techniques. The distinction between current capabilities and future possibilities is clear and appropriate.",
+    "result_type": "MINOR"
+  }
+]

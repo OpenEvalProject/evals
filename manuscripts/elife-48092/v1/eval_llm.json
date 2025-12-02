@@ -1,0 +1,394 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "BI 853520 treatment produces a spectrum of responses across different murine tumor models, ranging from complete regression (SCC FAK-wt, SCC7.1) to modest growth delay (SCC6.2, Panc43) to no response (Panc47, Panc117), with Met01 showing heterogeneous responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C22 are well-supported by tumor growth data shown in Figure 1A-G. The experiments include appropriate controls (FAK-/- tumors, vehicle treatment) and demonstrate reproducible differential responses across multiple cell lines. Sample sizes appear adequate (n=8-10 per group) and statistical significance is indicated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "The anti-tumor effects of BI 853520 in SCC7.1 and Met01 tumors are dependent on CD8 T-cells, as demonstrated by antibody-mediated CD8 T-cell depletion experiments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C25 are supported by CD8 depletion experiments shown in Figure 1H-I with appropriate isotype controls. The loss of therapeutic efficacy upon CD8 depletion provides strong mechanistic evidence for CD8 T-cell dependence. The inference in C25 is justified by the experimental data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "CD8 T-cell infiltration alone does not predict response to BI 853520, as Panc117 tumors have high CD8 infiltration but do not respond to treatment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C28 are supported by flow cytometry data in Figure 2\u2014figure supplement 1A. The observation that Panc117 has high CD8 infiltration yet no therapeutic response (C22) provides strong evidence that CD8 infiltration is insufficient as a predictive biomarker. The inference in C28 is logically sound.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "All tumor cell lines express PD-1 on activated CD8 T-cells and can upregulate PD-L1 (but not PD-L2) in response to IFN\u03b3 stimulation, suggesting the PD-1/PD-L1 axis does not explain differential responses to BI 853520.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C29 and C31 are supported by flow cytometry data shown in figures. However, C30 and C32 state 'data not shown,' which prevents independent verification. The conclusion that PD-1/PD-L1 does not explain differential responses is reasonable but relies on incomplete data presentation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C33",
+      "C2",
+      "C46",
+      "C47"
+    ],
+    "result": "CD80 expression on cancer cells correlates with and causally contributes to sensitivity to FAK inhibition, as CD80 is expressed exclusively by responsive cell lines (SCC7.1, Met01) and enforced CD80 expression sensitizes resistant SCC6.2 tumors to BI 853520.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33, C2, C46, and C47 are well-supported by flow cytometry data (Figure 2A-B) and gain-of-function experiments (Figure 2H). The correlation between CD80 expression and response is clear, and the CD80 transfection experiment provides causal evidence. The inference in C47 regarding MHC-I is supported by the nanostring data in C43.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "CD80 is a ligand for both CTLA-4 and CD28, with CTLA-4 having higher affinity and the ability to deplete CD80 through trans-endocytosis; regulatory T-cells are a major source of CTLA-4.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C38 are supported by appropriate citations to established literature. These are well-established facts in immunology that provide necessary background for understanding the mechanism. The citations appear appropriate and the claims are consistent with current knowledge.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "BI 853520 treatment decreases CTLA-4+ immune cells and increases CD80 expression on CD45- cells in SCC7.1 tumors, shifting the balance toward CD80-CD28 interaction and T-cell co-stimulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C40 are supported by flow cytometry data in Figure 2C-D with statistical significance indicated. The inference in C41 is reasonable given the known biology of CD80/CTLA-4/CD28 interactions and the observed changes. The mechanistic interpretation is well-justified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C42"
+    ],
+    "result": "Blocking CD80 or CD28 significantly impairs the anti-tumor efficacy of BI 853520 in SCC7.1 tumors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C42 is supported by tumor growth data in Figure 2E showing that both CD80 and CD28 blockade reduce therapeutic efficacy. This provides functional validation that the CD80-CD28 pathway is mechanistically important for BI 853520 activity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "Enforced expression of CD80 in SCC6.2 cells (which have similar MHC expression to SCC7.1) does not affect tumor growth alone but significantly improves response to BI 853520.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C45 are supported by nanostring data (Figure 2F) and tumor growth experiments (Figure 2H). The gain-of-function experiment provides strong causal evidence that CD80 expression sensitizes tumors to FAK inhibition. Statistical significance is indicated for C45.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "CD80 expression has been reported in human colonic adenomas and in CD80+ cancer stem cells in murine and human skin SCC, which are characterized by expression of specific markers including CD34, integrins, and TGF\u03b2 responsiveness.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C51 are supported by appropriate citations to published literature. These provide important context for the translational relevance of the findings and establish that CD80+ cancer cells exist in human malignancies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "SCC7.1 cells express a gene signature (Cd34, Itga6, Itga2, Itgb1, Itgb2, Itgb4, Cdkn1a, Vegfa) that overlaps with CD80+ cancer stem cells previously identified in murine and human SCCs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C53 are supported by nanostring and flow cytometry data in Figure 3A-E with statistical significance indicated. The inference in C54 is reasonable given the overlap in gene expression patterns with previously reported CSC markers. This provides biological context for CD80+ responsive cells.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "Analysis of human cancer cell line transcriptomics reveals that CD80 is expressed in a substantial proportion of solid epithelial cancers and at higher levels in hematological malignancies, with co-expression of CD80 and PTK2 (FAK) occurring preferentially in Burkitt's Lymphoma, Hodgkin's Lymphoma, CML, and DLBCL.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C59 are supported by analysis of Human Cancer Cell Line Encyclopedia data shown in Figure 4A-E. The analysis is appropriate for the data type. C60 is a knowledge claim that appears accurate. The inference in C61 is reasonable but limited by the fact that cell line data may not fully represent tumor heterogeneity in patients.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "In CD80-negative SCC6.2 tumors, combining BI 853520 with agonistic antibodies targeting OX40 or 4-1BB (but not GITR or CD40) produces enhanced anti-tumor responses, with the OX40 combination achieving complete regression of all tumors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C68 are well-supported by tumor growth data in Figure 5B-E with appropriate sample sizes (n=8 per group) and statistical comparisons. The differential efficacy across different co-stimulatory targets is clearly demonstrated. The inference in C69 is justified by the strong therapeutic responses observed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C70",
+      "C71"
+    ],
+    "result": "SCC6.2 tumor regression in response to BI 853520 + anti-OX40 is CD8 T-cell dependent and results in lasting immunological memory that protects against tumor rechallenge.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C71 are supported by CD8 depletion experiments (Figure 5F) and rechallenge experiments (Figure 5G). The CD8 dependence is clearly demonstrated with appropriate controls, and the rechallenge experiment provides strong evidence for immunological memory. These are critical mechanistic findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "Both anti-OX40 and BI 853520 reduce Tregs in SCC6.2 tumors, while anti-OX40 (alone or with BI 853520) increases non-Treg CD4+ T-cells and CD8 effector T-cells, with anti-OX40 being required for increased CD8eff numbers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C74 are supported by flow cytometry data in Figure 6A-C with statistical significance indicated. The inference in C75 is reasonable based on the observation that BI 853520 alone does not increase CD8eff. The immune profiling provides important mechanistic insights into how the combination works.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C106"
+    ],
+    "result": "FAK inhibition regulates ICOS expression on CD8 effector T-cells in the presence of T-cell co-stimulatory signals, with anti-OX40 increasing ICOS on both CD4 and CD8 T-cells and this effect being further enhanced by BI 853520.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C78 and C106 are supported by flow cytometry data in Figure 6D and supplementary figures with statistical significance. The observation that ICOS upregulation occurs in both SCC6.2 (with anti-OX40) and SCC7.1 (with CD80) supports the broader inference in C79 that FAK regulates ICOS when co-stimulation is present. This is a novel mechanistic finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C105"
+    ],
+    "result": "BI 853520 treatment reduces PD-L2 (but not PD-L1) expression on macrophages, M-MDSCs, and cancer cells in the tumor microenvironment, representing a novel role for FAK in regulating PD-L2 expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C83 and C105 are supported by flow cytometry data in Figure 6F-I with statistical significance. C81 provides an important negative control. The in vitro data in C85 (Figure 6\u2014figure supplement 7) shows only partial reduction, suggesting complex regulation in vivo. The inference in C84 is reasonable. This represents a novel mechanistic finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "Blocking PD-L2 enhances the efficacy of anti-OX40 (with 5/10 tumors achieving complete regression) but has minimal non-significant effect with anti-4-1BB, suggesting PD-L2 regulation contributes more to BI 853520 + anti-OX40 efficacy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C87 are supported by tumor growth data in Figure 6J-K. The differential effects with anti-OX40 vs anti-4-1BB provide evidence for the inference in C88. However, the lack of direct comparison between anti-PD-L2 + anti-OX40 and BI 853520 + anti-OX40 limits the strength of the conclusion about relative contribution.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C89",
+      "C90"
+    ],
+    "result": "Blocking ICOS ligand significantly impairs the anti-tumor efficacy of both BI 853520 + anti-OX40 and BI 853520 + anti-4-1BB, suggesting enhanced ICOS expression is an important mechanism for FAK inhibitor potentiation of these therapies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C90 are supported by tumor growth data in Figure 6L-M with statistical significance. The ICOSL blocking experiments provide functional validation that ICOS signaling is mechanistically important for both combinations. The inference in C90 is well-justified by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "In the poorly immunogenic Panc47 pancreatic cancer model, BI 853520 renders tumors sensitive to anti-4-1BB and anti-OX40 (but not anti-GITR or anti-CD40), producing significant growth delays.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C98 are supported by tumor growth data in Figure 7A-D with statistical significance indicated. The demonstration that FAK inhibition can sensitize a poorly immunogenic tumor model to immunotherapy is important for translational relevance. The inference in C99 is justified. However, the responses are growth delays rather than regressions, unlike in SCC6.2.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "In Panc47 tumors, the triple combination of Gemcitabine + BI 853520 + anti-OX40 produces superior anti-tumor effects compared to any double combination, suggesting additive therapeutic benefit.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C100-C101 are supported by tumor growth data in Figure 7E with statistical significance. The triple combination shows improved efficacy over double combinations, supporting the inference in C102 about additive effects. This has translational relevance given that Gemcitabine is standard-of-care for pancreatic cancer.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C103",
+      "C104"
+    ],
+    "result": "FAK inhibition induces potent anti-tumor immune responses when combined with T-cell co-stimulatory signals (endogenous or exogenous) through reprogramming multiple immune regulatory pathways.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C103-C104 are summary statements supported by the collective experimental findings throughout the manuscript, including tumor growth data, immune profiling, and mechanistic studies. The evidence for reprogramming multiple pathways (Tregs, PD-L2, ICOS, CD80/CTLA-4 balance) is strong.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C1",
+      "C10",
+      "C12"
+    ],
+    "result": "FAK inhibitors are in clinical testing with anti-PD-1, are generally well-tolerated in Phase I trials, but a trial testing Merlin as a predictive biomarker for Defactinib was unsuccessful.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C10, and C12 are supported by appropriate citations to clinical trial reports and trial registries. These provide important clinical context for the study. The claims are factual statements about the current state of clinical development.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C11",
+      "C13",
+      "C14",
+      "C15"
+    ],
+    "result": "FAK is a non-receptor tyrosine kinase that regulates cancer cell processes and tumor microenvironment composition, with previous studies showing FAK inhibitors can drive immune-mediated tumor regression and TME reprogramming.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C9 and C11-C15 are background information supported by appropriate citations to established literature and the authors' previous work. These provide necessary context for the current study and are consistent with the published literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119"
+    ],
+    "result": "Previous studies have established roles for CD80, co-stimulatory receptors, PD-1/PD-L1, and ICOS in anti-tumor immunity, with some findings suggesting complex interactions between these pathways.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C107-C119 are supported by appropriate citations to published literature. These provide important context for interpreting the current findings and situating them within the existing literature. The inference in C113 about PD-L1 vs PD-L2 is reasonable given the current data. The inference in C115 about ICOS and CD8 T-cells is supported by the current findings.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,425 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C44",
+      "C45",
+      "C87"
+    ],
+    "result": "BUD23 is required for ribosome maturation and normal 18S/28S stoichiometry in both human A549 cells and murine cardiac tissue. Knockdown of BUD23 resulted in reduced 40S subunit peak and increased 60/80S peak in polysome profiles, with a significant reduction in 18S/28S RNA ratio observed in both in vitro and in vivo models.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C2, C44, C45, and C87 are well-supported by polysome profiling data (Figure 1D,E) and RNA analysis (Figure 2G, Figure 4B). The consistent observation of ribosomal subunit imbalance across multiple experimental systems provides strong evidence for BUD23's role in ribosome maturation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C53",
+      "C54"
+    ],
+    "result": "BUD23 modulates the translation of mitochondrial transcripts, with all mitochondrially-encoded transcripts showing reduced translational efficiency (approximately 50% reduction) after BUD23 loss in human A549 cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C53, and C54 are supported by polysome profiling data showing selective downregulation of mitochondrial transcript translation (Figure 1G). The observation that all mitochondrial transcripts had negative changes in TE is striking and well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C8",
+      "C57",
+      "C125"
+    ],
+    "result": "BUD23 selectively promotes ribosomal interaction with low GC-content 5'UTRs. A highly significant negative correlation (Pearson's r = -0.1337, p<2.2e-16) was observed between 5'UTR GC content and change in translational efficiency upon BUD23 depletion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C57, and C125 are supported by correlation analysis (Figure 1I) showing a statistically significant relationship between 5'UTR GC content and translational efficiency. However, the correlation coefficient is relatively weak (r = -0.1337), suggesting GC content explains only a small portion of the variance in translational efficiency changes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C55",
+      "C56"
+    ],
+    "result": "BUD23-dependent changes in translational efficiency are not associated with TOP sequence content or 5'UTR length.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55 and C56 are supported by negative results from motif analysis (Figure 1\u2014figure supplement 2) and correlation analysis (Figure 1H). These negative findings help define the specificity of BUD23's mechanism of action.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C42",
+      "C47"
+    ],
+    "result": "BUD23 depletion caused a small but statistically significant decrease in cell proliferation in human airway epithelial cells, with little overall impact on global protein translation rate at 48 hours.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42 and C47 are supported by cell proliferation data (Figure 1C) and 35-S-methionine incorporation assay (Figure 1\u2014figure supplement 1). The findings indicate that early effects of BUD23 loss are selective rather than global.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "BUD23 knockdown in A549 cells resulted in differential protein expression with upregulation of large ribosomal subunit proteins (14/64 upregulated) and downregulation of small ribosomal subunit proteins (22/83 downregulated). TRMT112, an obligate BUD23 partner, was also significantly downregulated.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C63 are supported by proteomic analysis and ontology analysis (Figure 2A, Figure 2\u2014figure supplement 1). The reciprocal changes in ribosomal subunit proteins are consistent with the observed 40S/60S imbalance and provide mechanistic insight.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C64",
+      "C65"
+    ],
+    "result": "Proteomic analysis of BUD23-depleted A549 cells revealed over-representation of downregulated proteins associated with translation, rRNA metabolic processes, mitochondrion organization, and cellular component biogenesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64 and C65 are supported by ontology analysis (Figure 2B). The enrichment for mitochondrial organization terms is particularly notable and connects to the observed mitochondrial phenotype.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "BUD23 depletion in A549 cells resulted in >50% reduction in OXPHOS, ~25% reduction in ETC, no change in LEAK respiration, and no alteration in glycolytic capacity, indicating specificity for mitochondrial energetic pathways.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C69 are supported by Seahorse mitochondrial and glycolytic stress test data (Figure 2C-F, Figure 2\u2014figure supplement 2). The selective impairment of mitochondrial respiration without affecting glycolysis demonstrates specificity of the phenotype.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C70",
+      "C71"
+    ],
+    "result": "BUD23 knockdown resulted in reduced mitochondrial mRNA abundance but no change in mitochondrial genome copy number in A549 cells, suggesting a functional defect rather than loss of mitochondrial mass.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C70 and C71 are based on qPCR data (Figure 2H, I), but the authors acknowledge that measurements were performed soon after siRNA knockdown and a later impact on mitochondrial mass cannot be excluded. The interpretation requires longer-term studies for confirmation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "Depletion of other ribosome biogenesis factors (LTV1, RIOK2, RPS27A) resulted in 40S/60S imbalance, but only LTV1 knockdown (not RPS27A or RIOK2) affected mitochondrial transcript expression similarly to BUD23 knockdown.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C74 are supported by RNA analysis and qPCR data (Figure 2G, H, Figure 2\u2014figure supplement 2). This control experiment demonstrates that ribosomal subunit imbalance alone is not sufficient to cause mitochondrial dysfunction, suggesting BUD23 has specific functions beyond general ribosome biogenesis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C130"
+    ],
+    "result": "BUD23 and TRMT112 are abundant in the cytosolic fraction but not detected (or barely detectable) in the mitochondrial fraction after proteinase K digestion, indicating BUD23 has no direct role within mitochondria.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75, C76, and C130 are supported by cellular fractionation and Western blot data (Figure 2J). This finding is important for establishing that BUD23's effects on mitochondria are indirect, mediated through its role in cytosolic translation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C77",
+      "C10",
+      "C134"
+    ],
+    "result": "Homozygous deletion of Bud23 results in embryonic lethality in mice. Out of 74 pups born from heterozygous crosses, 39 were wild-type, 35 were heterozygous, and zero were homozygous null, indicating complete embryonic lethality.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77, C10, and C134 are supported by genotyping data (Figure 3B). The complete absence of homozygous null offspring demonstrates that BUD23 is essential for mouse development. The deviation from Mendelian ratios is statistically significant.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C78",
+      "C79"
+    ],
+    "result": "Approximately half the expected heterozygote birth rate was observed, suggesting haplo-insufficiency. At embryonic day E10.5, Mendelian ratios of wild-type and heterozygous animals were detected, but no homozygous null embryos were seen.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78 and C79 are supported by genotyping data (Figure 3B). The reduced heterozygote frequency and timing of lethality provide insight into the developmental requirements for BUD23, though the mechanism of haplo-insufficiency is not explored.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C80",
+      "C81"
+    ],
+    "result": "Surviving adult heterozygous Bud23 mice showed no difference from wildtype littermates in body weight, body composition, energy expenditure, or respiratory exchange ratio between 10 and 30 weeks of age.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80 and C81 are supported by body composition analysis (Figure 3C) and metabolic cage data (Figure 3\u2014figure supplement 1). These findings suggest compensatory mechanisms in surviving heterozygous animals, though the nature of these mechanisms is not investigated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C83",
+      "C84"
+    ],
+    "result": "Bud23fl/fl Mck-Cre+/- mice exhibited Cre-mediated deletion of exon 7 of the Bud23 gene in cardiac tissue with consequent reduction in BUD23 protein levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83 and C84 are supported by PCR and Western blot data (Figure 3E, F). This establishes the successful generation of a cardiac-specific knockout model for studying BUD23 function.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C85",
+      "C7",
+      "C135"
+    ],
+    "result": "Loss of BUD23 in cardiac muscle resulted in sudden death between 28-35 days of age in Bud23fl/fl Mck-Cre+/- mice, while littermate controls with at least one functional Bud23 allele were viable and did not die prematurely.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85, C7, and C135 are supported by survival curve data (Figure 4A). The complete penetrance and narrow time window of lethality demonstrate the critical importance of BUD23 in postnatal cardiac function.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "Proteomic analysis of BUD23-deficient cardiac tissue revealed decreased total protein content per cell, with mitochondria subject to the largest loss of protein content. Of 2047 proteins identified, 347 were upregulated and 442 downregulated, with mitochondrial proteins showing 220 downregulated versus only 20 upregulated (50% of all downregulated proteins).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C91 are supported by proteomic analysis (Figure 4C-F). The selective loss of mitochondrial proteins is striking and provides a mechanistic link between BUD23 loss and cardiac dysfunction. The use of the proteomic ruler approach for quantification is appropriate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C92",
+      "C93"
+    ],
+    "result": "In BUD23-deficient cardiac tissue, upregulated proteins were enriched for translational (60S proteins) and proteasomal proteins, while electron transport chain complexes I, IV, and V (ATP synthase) were most strongly reduced among mitochondrial proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92 and C93 are supported by network analysis (Figure 4\u2014figure supplement 1, 3). The upregulation of 60S proteins is consistent with the 40S/60S imbalance, and the selective loss of specific ETC complexes provides mechanistic insight into the mitochondrial dysfunction.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "BUD23-deficient cardiac tissue showed reduced mitochondrial DNA copy number, significantly reduced OXPHOS and ETC (with unaffected LEAK respiration), lower respiratory control ratio indicating reduced ATP production efficiency, and lower citrate synthase activity indicating reduced mitochondrial density.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94-C98 are supported by qPCR data (Figure 5A), Oroboros respirometry measurements (Figure 5B), and citrate synthase activity assays (Figure 5C). The comprehensive assessment of mitochondrial function demonstrates both quantitative and qualitative defects in mitochondria from BUD23-deficient hearts.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "Heterozygous Bud23+/- mice showed no significant difference in mitochondrial respiratory capacity across any state, but exhibited significantly higher citrate synthase activity indicating greater mitochondrial density. The impact of BUD23 loss on mitochondrial function appears sexually dimorphic, with male heterozygotes showing deficiency in OXPHOS and ETS when normalized to citrate synthase, but females not showing this deficiency.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C99-C103 are supported by mitochondrial respiration measurements (Figure 5\u2014figure supplement 1). The sexual dimorphism is an interesting observation, though the mechanism is not explored. The increased citrate synthase activity in heterozygotes suggests compensatory mitochondrial biogenesis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C104",
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "Electron microscopy analysis revealed that individual mitochondria in BUD23-deficient cardiac tissue appear formed normally with equivalent cristae number, but showed marked disorganization of intermyofibrillar mitochondria and numerous spherical electron-dense inclusion bodies within mitochondria.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C104-C107 are supported by electron microscopy data (Figure 5D). The presence of electron-dense inclusion bodies is notable and may represent attempted adaptation to energetic stress, though their composition and significance require further investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C137"
+    ],
+    "result": "BUD23-deficient cardiac tissue showed evidence of compensatory metabolic changes including significant induction of glucokinase (GCK), trends toward induction of PKM and HK2, and significant induction of PGC1a and PGC1b (but not TFAM1), suggesting attempted switches to glycolytic ATP generation and mitochondrial biogenesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C108-C111 and C137 are supported by qPCR data (Figure 5E). The induction of glycolytic enzymes and PGC1 transcription factors represents expected compensatory responses to mitochondrial dysfunction, though these adaptations are clearly insufficient to prevent cardiac failure.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C112",
+      "C113",
+      "C138"
+    ],
+    "result": "BUD23-deficient cardiac tissue showed induction of NRF2 and significantly higher reactive oxygen species levels, indicating a burden of oxidative stress resulting from deranged mitochondria.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C112, C113, and C138 are supported by qPCR data (Figure 5E) and ROS measurements (Figure 5F). The increased ROS burden provides a potential mechanism for the observed cardiomyocyte death and cardiac dysfunction.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C114",
+      "C115",
+      "C116",
+      "C6"
+    ],
+    "result": "Hearts from BUD23-deficient mice showed significant enlargement, ventricle dilatation, and decreased ventricle wall thickness at 26 days old, consistent with severe dilated cardiomyopathy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C114-C116 and C6 are supported by histological analysis (Figure 6A-D). The morphological changes are consistent with dilated cardiomyopathy and provide anatomical evidence for the functional cardiac defects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C117",
+      "C118",
+      "C119"
+    ],
+    "result": "Echocardiography of BUD23-deficient mice at 26-28 days showed systolic dysfunction with significantly dilated left ventricle, significantly decreased fractional shortening, and significantly decreased relative wall thickness.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C117-C119 are supported by echocardiography data (Figure 6E). The functional cardiac defects are severe and consistent with the observed mortality, though the lack of pulmonary or liver edema (C120) suggests the mice die before developing end-stage heart failure.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C122",
+      "C123"
+    ],
+    "result": "Electrocardiography of BUD23-deficient mice revealed significantly shorter QRS and corrected QT intervals but no change in heart rate at 26-28 days of age.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C122 and C123 are supported by ECG data (Figure 6F). The shortened QRS and QTc intervals may reflect altered cardiac conduction, though the clinical significance and mechanism of these changes are not explored.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C121"
+    ],
+    "result": "Proteomic analysis showed increased markers of fibrosis in BUD23-deficient hearts, including Col4a2, CTGF, Galectin-3, and others.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C121 is supported by proteomic analysis (Figure 6\u2014figure supplement 1). The increased fibrosis markers are consistent with the cardiac remodeling observed histologically and functionally.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C9",
+      "C131",
+      "C139"
+    ],
+    "result": "BUD23 plays a critical role in bioenergetics gene expression by promoting efficient translation of mRNA transcripts with low 5'UTR GC content. The mitochondrial phenotype results from impaired translation of nuclear-encoded genes with roles in mitochondrial homeostasis, thereby coupling protein translation to mitochondrial function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9, C131, and C139 represent the central mechanistic conclusion of the study. This is supported by the convergence of multiple lines of evidence: polysome profiling showing GC-content dependence (C57), selective loss of mitochondrial proteins (C89-C91), mitochondrial dysfunction (C95-C98), and absence of BUD23 from mitochondria (C75-C76). However, the direct mechanistic link between low GC-content 5'UTRs and mitochondrial protein translation could be strengthened with additional experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R29",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "Polysome profiling revealed that the most efficiently translated transcripts in control samples were most significantly reduced in BUD23 knockdown, with 650 transcripts showing TE ratio <-1 and 95 transcripts showing TE ratio >1. The downregulated transcripts formed a highly connected network (PPI enrichment p<1e-16) enriched for genes involved in RNA processing, metabolic processes, and organelle organization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C52 are supported by polysome profiling and network analysis (Figure 1F, Figure 1\u2014figure supplement 1). The highly connected nature of affected transcripts and their functional enrichment support the biological significance of BUD23's selective translational effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R30",
+    "claim_ids": [
+      "C133"
+    ],
+    "result": "BUD23 loss resulted in impaired translation of mTOR, a known regulator of mitochondrial activity and biogenesis through regulation of translation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C133 states that BUD23 loss impaired mTOR translation based on polysome profiling data, but the specific data for mTOR is not shown in the figures. While mTOR is mentioned as a candidate linking translational changes to mitochondrial phenotype, direct evidence for reduced mTOR translation or protein levels is not provided.",
+    "result_type": "MINOR"
+  }
+]

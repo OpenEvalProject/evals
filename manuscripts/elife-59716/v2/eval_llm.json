@@ -1,0 +1,275 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4"
+    ],
+    "result": "Neuropixels probes have become widespread for acute recordings in head-fixed mice, but their deployment in chronic implantation experiments requiring unrestrained movement has remained limited despite the importance of such experiments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C4 establish the context and motivation for the study. The claims are well-supported by multiple citations documenting the capabilities of Neuropixels probes (C1), their widespread acute use (C2), the importance of chronic implantations for unrestrained behavior (C3), and the limited deployment in chronic settings (C4).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7",
+      "C8"
+    ],
+    "result": "Prior chronic Neuropixels studies showed stable signals in rat medial prefrontal cortex over 2 months and successful probe reuse in mice, but signal stability likely varies across brain regions due to heterogeneous mechanical properties.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C8 accurately summarize prior work with appropriate citations. The inference about regional variability (C8) is supported by citations to studies on brain mechanical properties. These claims establish the knowledge gaps that motivate the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11",
+      "C12"
+    ],
+    "result": "The authors developed a compact implant assembly (43\u00d725\u00d710.5 mm, 2.6 g) and used it to implant 18 rats with up to three probes simultaneously, recording 46,929 isolated units across 141 sessions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C12 provide specific technical specifications and experimental scope that are directly stated and documented. The dimensions, weight, number of animals, and recording statistics are clearly reported with appropriate precision.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "Unit yield decreased from 1.51 to 0.73 units per electrode during the first week, then remained stable for up to 4 months, with no change in the fraction of single units or spike waveform properties over time.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13-C16 present the core stability findings with confidence intervals and statistical tests (ANOVA). The data show initial decline followed by stability, supported by multiple metrics. Statistical tests appropriately assess stability after the first week (p>0.05 for all metrics).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "A sum-of-exponentials model indicates two subpopulations of units: half decline rapidly with a half-life of ~1.4 days (potentially due to acute insertion damage), while the other half remain stable (consistent with chronic tissue response).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C18 and C56-C58 present model-based interpretations with confidence intervals. The model fitting is appropriate and the biological interpretation is reasonable given the time course. However, the authors acknowledge (C56) that alternative models (e.g., dynamic decay rates) were not tested, which is an appropriate caveat.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "Signal stability depends strongly on dorsoventral position: superficial electrodes (<2 mm depth) showed near-complete unit loss over months (ratio 0.18), while deeper electrodes maintained better stability (ratio 0.50), with significantly different decay rates and time constants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C22 demonstrate depth-dependent stability with quantitative ratios, confidence intervals, and statistical significance (p=0.002 for change rates). The effective time constants differ dramatically (19 vs 106 days for superficial vs deep), providing strong evidence for the depth effect.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "Signal stability also depends on anteroposterior position: posterior recordings showed fewer initial units and more severe decay (ratio 0.09 after 30 days) compared to anterior recordings (ratio 0.50), with significantly different decay rates and time constants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C26 demonstrate AP-dependent stability with statistical tests (p=0.010 for initial units, p=0.002 for decay rates). The dramatic difference in time constants (9 vs 527 days) provides strong evidence. The potential confound of neuron density differences is appropriately acknowledged (C23).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C27",
+      "C28"
+    ],
+    "result": "Regression modeling across 448 variable subsets identified that higher initial unit counts are associated with more anterior and medial positions, while slower unit loss is associated with more anterior positions, locations below dorsal cortex, and shanks oriented parallel to the sagittal plane.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C28 present results from systematic model selection across many variable combinations. The all-subset approach is more rigorous than stepwise selection. The findings are consistent with the simpler analyses in C19-C26, providing convergent evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "Behavioral performance during tethered recording was not impaired compared to untethered performance: trial completion was unchanged, accuracy was slightly higher, and sensitivity/bias parameters were not significantly different, though lapse rate was lower when tethered.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C32 demonstrate that the recording system does not substantially impair behavior. The findings are supported by appropriate statistical comparisons. The lower lapse rate when tethered (C32) is unexpected but the authors provide a reasonable explanation (more frequent tethered sessions leading to better engagement).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "Explanted probes showed only modest increases in noise: recording sites inserted into brain had median RMS noise of 8.30 \u03bcV (vs 8.10 \u03bcV for new probes), an increase of 0.2 \u03bcV that is three orders of magnitude smaller than spike amplitudes (188 \u03bcV), with a small increase in noisy sites (<1%).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C37 provide direct measurements of probe degradation with appropriate statistical tests (p<10^-4). The comparison to spike amplitude (C36) effectively contextualizes the noise increase. The observation that superficial sites show higher noise (C34) is appropriately noted as potentially due to surgical materials.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C38",
+      "C39"
+    ],
+    "result": "The same probe reimplanted three times in medial frontal cortex showed comparable neural signals with no trend of degradation in single unit counts (p=0.362), spike amplitude (p=0.767), or choice selectivity (p=0.382).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C39 provide direct evidence for probe reusability through repeated implantation. The ANOVA tests appropriately assess trends across implantations. This is strong evidence that the modest noise increases observed in C35-C37 do not impair recording quality.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "Noise correlation across banks (R\u00b2=0.89) indicates that most noise originates downstream of recording sites, but the correlation is lower in explanted probes (R\u00b2=0.84 vs 0.94 for new probes, p=0.033), suggesting modest recording site degradation after implantation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C42 use noise correlation analysis to infer the source of noise. The logic is sound: correlated noise across distant sites sharing acquisition channels implicates downstream circuitry. The decreased correlation in explanted probes (C41) provides evidence for site-specific degradation, consistent with the small noise increases in C35.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C43",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "Explantation outcomes: three early failures occurred without petroleum jelly application, three implants detached after >100 days, one probe was damaged by grounding changes, but all other explantations were successful, with one probe reused three times.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C47 document the practical outcomes of the explantation procedure. The systematic reporting of failures and successes provides important information for method adoption. The identification of petroleum jelly as critical (C43) demonstrates iterative method development.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "Neuronal cell death during the acute phase is likely the primary cause of yield decrease, as most loss occurred during the first week before encapsulation, consisted of unit loss without amplitude decrease, and suggests loss of neurons both near and far from the shank.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C50 present a mechanistic interpretation supported by the temporal pattern of loss (C49, with citation to encapsulation timing) and the pattern of amplitude preservation (C50). The inference is reasonable but remains speculative as no direct histological evidence is provided. The authors appropriately use cautious language ('likely', 'suggests').",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C51"
+    ],
+    "result": "The degree of brain micromotion and response to deformation is heterogeneous across brain regions, which may contribute to regional differences in recording stability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C51 is well-supported by multiple citations to studies on brain mechanical properties. This provides a plausible mechanistic explanation for the observed regional differences in stability (C19-C26), though direct evidence linking micromotion to the observed stability patterns is not provided.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C52",
+      "C53"
+    ],
+    "result": "Future probe designs with reduced cross-sectional area and improved tips may reduce acute injury and first-week decline, while increased mechanical flexibility may be essential for reducing slow decline in dorsal cortex and posterior regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C52-C53 are speculative suggestions for future work based on the study's findings. While the suggestions are reasonable given the data, they are explicitly framed as possibilities ('may reduce', 'may be essential') and have not been tested. These are appropriate interpretations but not supported results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C54",
+      "C55"
+    ],
+    "result": "Highly compliant probe designs enable extremely stable long-term recordings but currently lag behind silicon probes in channel count and reusability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C55 accurately summarize the state of alternative probe technologies with appropriate citations (C54). This contextualizes the current work within the broader field of chronic neural recording technology.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "Neuropixels probes withstand months of implantation and explantation with negligible performance reduction for recording sites inserted into brain, though superficial sites show high noise presumably from surgical materials that may not be fully removed by cleaning.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C63 synthesize the probe reusability findings. The conclusion (C63) is well-supported by the noise measurements (C59, C35-C37) and successful reimplantation experiments (C38-C39). The caveat about superficial sites (C61-C62) is appropriately noted with a plausible explanation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C64",
+      "C65"
+    ],
+    "result": "High noise correlation across banks implicates signal processing circuitry as the major noise source, but decreased correlation in explanted probes indicates modest recording site degradation after long-term implantation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C65 provide mechanistic interpretation of the noise correlation data (C40-C42). The logic is sound and the interpretation is appropriately cautious. This complements the direct noise measurements to provide a more complete picture of probe degradation.",
+    "result_type": "MAJOR"
+  }
+]

@@ -1,0 +1,445 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "Optogenetic activation of DA neuron terminals pauses firing of cholinergic interneurons (ChIs) in both medial and lateral dorsal striatum (dStr), but the pause is shorter in lateral dStr (ldStr) due to a subsequent excitation. During photostimulation, firing z-scores were similarly negative in both regions, but post-stimulation, medial dStr (mdStr) ChIs remained inhibited while ldStr ChIs showed increased firing. Basic membrane properties did not differ between regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C2, C27-C29 are well-supported by experimental data showing differential firing responses to optogenetic stimulation in mdStr vs ldStr ChIs, with appropriate statistical analysis (p=0.074 during stimulation, p=0.000 post-stimulation). The data demonstrate that while both regions show initial pauses, only ldStr shows subsequent excitation. Membrane property measurements provide important controls showing the differences are not due to baseline cellular differences.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "The excitation in ldStr ChIs is mediated mainly by mGluR1 and partially by D1-like receptors. Pharmacological experiments show that the D1 antagonist SCH23390 reduced slow EPSCs to 61.4% after 20 min, while mGluR1/5 antagonists (JNJ+MTEP) reduced responses to 36.1%. Combined application nearly eliminated the response (10.1%). JNJ alone was as effective as JNJ+MTEP, while MTEP alone had no effect, indicating mGluR1 (not mGluR5) mediation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C4 and C60-C68 are strongly supported by systematic pharmacological dissection using selective antagonists with appropriate controls and time courses. The data clearly demonstrate that mGluR1 is the primary mediator (based on JNJ vs MTEP effects) with a smaller D1-like receptor contribution. The reversibility of SCH effects but not JNJ+MTEP effects provides additional validation. Statistical comparisons are appropriate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "The slow EPSC is mediated through TrpC3/7 channels as the effector, mainly via TrpC3. The TrpC3 selective antagonist Pyr3 reduced slow EPSCs to 27.2% without affecting fast EPSCs, while the TrpC3/7 antagonist FFA completely blocked slow EPSCs (3.9%) without affecting fast EPSCs. This indicates TrpC3/7 channels couple mGluR1 and D1/5R activation to the slow EPSC.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C73 are well-supported by pharmacological experiments using selective TrpC antagonists. The differential effects of Pyr3 (TrpC3-selective) vs FFA (TrpC3/7) indicate TrpC3 is the primary channel, with possible minor TrpC7 contribution. The selectivity is demonstrated by lack of effect on fast EPSCs. Citation to previous work (C69) on mGluR-TrpC coupling in ChIs provides appropriate context.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "DA neurons elicit ionotropic glutamate responses in spiny projection neurons (SPNs) in ldStr but not mdStr. Fast EPSCs were observed in ldStr direct-pathway SPNs (86.9\u00b112.3 pA) and indirect-pathway SPNs (30.9\u00b15.4 pA), but were minimal in mdStr SPNs (dSPN 6.5\u00b12.0 pA, iSPN 3.0\u00b10.4 pA) and ldStr ChIs (5.9\u00b12.0 pA). These responses were blocked by CNQX+APV, confirming ionotropic glutamate receptor mediation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C6 and C77-C82 are supported by systematic recordings across cell types and regions with appropriate pharmacological validation. The regional and cell-type specificity is clearly demonstrated with statistical comparisons. The use of Cs+-based internal solution and QX-314 for improved space clamp in SPN recordings is methodologically sound. However, the claim of 'no signaling' in mdStr SPNs (C5) may be overstated given small but detectable responses.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "Genetic deletion of VGLUT2 in DA neurons eliminates fast EPSCs in ldStr SPNs and substantially reduces slow EPSCs in ldStr ChIs. In VGLUT2 conditional knockout (cKO) mice, fast EPSCs in ldStr SPNs were absent (1.1\u00b10.3 pA vs 26.1\u00b16.0 pA in controls), and slow EPSCs in ldStr ChIs were significantly reduced (3.0\u00b10.8 pC vs 13.7\u00b12.6 pC). Addition of D1 antagonist nearly eliminated remaining slow EPSCs in cKO mice, confirming both glutamate and D1 mediation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C87 are strongly supported by genetic manipulation experiments that provide critical validation of the glutamate cotransmission hypothesis. The VGLUT2 cKO approach is appropriate and the results clearly demonstrate glutamate dependence of both fast and slow responses. The incomplete elimination of slow EPSCs in cKO (C84) is appropriately addressed by showing D1 antagonist eliminates the remainder (C85), demonstrating both glutamate and dopamine contributions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C7",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "Substantia nigra (SN) DA neurons mediate glutamate cotransmission in ldStr. Retrograde tracing with CTB showed that while most DA neurons projecting to mdStr are in SN (66.4% of CTB+), both VTA and SN contribute equally to ldStr (52.5% and 61.2% TH+/CTB+ respectively). However, conditional retrograde viral tracing (CAV2-FLEX-ZsGreen) in VGLUT2-cre mice showed glutamatergic neurons projecting to ldStr are mostly in SN (157\u00b113 cells) vs VTA (8\u00b14 cells), with 57.0% being DA neurons in SN.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7 and C88-C97 are well-supported by complementary anatomical tracing approaches. The CTB tracing establishes overall projection patterns, while the CAV2 conditional tracing specifically identifies glutamatergic projections. The finding that SN (not VTA) DA neurons mediate glutamate cotransmission in ldStr is surprising given previous literature (C89) but is clearly demonstrated. The discrepancy between non-topographical VTA projections (C91, C93) and lack of VTA glutamatergic projections (C95) is appropriately resolved.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "INTRSECT strategy reveals that approximately 22% of SN DA neurons express VGLUT2 and project preferentially to ldStr. In VGLUT2-cre; TH-flpo mice injected with Con/Fon-ChR2-EYFP in SN, 247\u00b111 TH+/ChR2+ neurons were found (20.7% of immunopositive neurons), with 82.5% specificity for DA neurons. Co-labeled terminals were denser in ldStr than mdStr, and sparse mdStr fibers indicated CAV2 tracing underestimated glutamate-capable DA neurons due to small injection volume.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98-C104 are supported by the INTRSECT approach, which provides an important validation and extension of the CAV2 tracing results. The finding of ~22% VGLUT2+ DA neurons in SN is higher than detected by previous in situ hybridization (C152-C154), which the authors appropriately attribute to methodological sensitivity. The specificity calculation (82.5%) acknowledges some off-target expression. The observation of sparse mdStr fibers (C103) appropriately explains the discrepancy with CAV2 results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "Regional differences in postsynaptic currents are not due to differences in D2 receptor responsivity or DA release, but rather to slow EPSCs revealed after D2 blockade. Sulpiride blocked IPSCs equally in both regions (mdStr: 20.8\u21922.5 pA; ldStr: 18.0\u21923.7 pA), and revealed slow EPSCs more prominently in ldStr. D2-mediated sulpiride-sensitive components did not differ between regions (mdStr 17.2\u00b12.1 pC, ldStr 15.8\u00b12.4 pC). Fast-scan cyclic voltammetry showed no regional differences in DA release with single or train stimulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C38 are well-supported by combined electrophysiology and voltammetry experiments that systematically rule out differences in DA signaling as the basis for regional differences. The sulpiride subtraction approach appropriately isolates D2-mediated components. FSCV measurements provide important validation that DA release itself does not differ between regions. This strengthens the conclusion that slow EPSCs account for regional differences.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "Slow EPSCs are exclusive to ChIs and prominent in ldStr ChIs. Single photostimulation with pharmacological isolation revealed small/no slow EPSCs in mdStr ChIs (2.1\u00b10.5 pC), prominent responses in ldStr ChIs (25.8\u00b14.4 pC), and no responses in SPNs in either region (mdStr 0.93\u00b10.24 pC, ldStr 0.64\u00b10.15 pC). Statistical analysis showed significant cell type, region, and interaction effects. No differences were observed between direct and indirect pathway SPNs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C53 are strongly supported by systematic recordings across cell types and regions with appropriate pharmacological isolation (D2, iGluR, and GABAA antagonists). The two-way ANOVA showing significant cell type \u00d7 region interaction appropriately demonstrates the specificity of slow EPSCs to ldStr ChIs. The inclusion of both dSPNs and iSPNs (C52) strengthens the conclusion that slow EPSCs are ChI-specific. Sample sizes appear adequate (n=20-21 per group).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "Slow EPSCs are monosynaptic and arise from ventral midbrain DA neurons. TTX completely blocked slow EPSCs (26.7\u21921.2 pC), confirming action potential dependence. Addition of 4-AP partially recovered responses (11.3 pC), indicating monosynaptic transmission. Traces were superimposable after scaling with no difference in rise time (pre-drug 0.24\u00b10.03 s, TTX+4AP 0.21\u00b10.02 s), indicating absence of polysynaptic component. Viral ChR2 expression in ventral midbrain of DAT-cre mice produced similar responses to transgenic mice.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C57 are well-supported by appropriate monosynapticity testing using TTX+4AP and kinetic analysis. The TTX+4AP approach is the standard method for testing monosynapticity in optogenetic experiments. The rise time analysis (C56) provides strong evidence against polysynaptic transmission. The viral validation (C57) confirms the responses originate from ventral midbrain DA neurons. However, the partial recovery with 4AP (~42%) suggests either incomplete rescue or some polysynaptic contribution that the rise time analysis may not detect.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C58",
+      "C59"
+    ],
+    "result": "Slow EPSCs are G-protein coupled receptor (GPCR) mediated. When GPCR transduction was blocked by GDP\u03b2S (0.5-1 mM) in the intracellular solution, slow EPSCs were almost completely blocked 9 min after entering whole cell mode (6.0\u00b12.9% of initial), while control cells with GTP showed no reduction (97.0\u00b115.7%). Train stimulation after 10 min confirmed near-complete blockade in GDP\u03b2S cells (2.5\u00b10.9 pC) vs persistence in controls (36.1\u00b110.2 pC).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C59 are strongly supported by the GDP\u03b2S experiments, which provide critical mechanistic insight. The time course of blockade is appropriate for intracellular dialysis, and the control experiments showing no reduction with GTP rule out cell deterioration. The train stimulation validation after 10 min (Figure 5\u2014supplement 1) strengthens the conclusion. This establishes that slow EPSCs require G-protein signaling, narrowing the mechanistic possibilities.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114"
+    ],
+    "result": "Gene expression analysis reveals that TrpC3 enrichment in ChIs and VGLUT2+ DA neuron projections determine slow EPSC distribution. RiboTag immunoprecipitation from ChAT-cre mice showed D5R, TrpC3, and TrpC7 were enriched in ChIs, while mGluR1, mGluR5, and D1R were reduced. Regional comparison showed D1, mGluR5, and TrpC3 differed between mdStr and ldStr ChIs. However, the subregional difference in TrpC3 expression was smaller than the functional difference in slow EPSCs, indicating that presynaptic VGLUT2+ DA neuron projections are the principal determinant of regional differences, while postsynaptic TrpC3 expression determines ChI specificity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C105-C114 are well-supported by RiboTag qPCR experiments with appropriate controls (ChAT and VAChT enrichment validation). The finding that TrpC3 is enriched in ChIs (C106) but shows smaller regional differences than functional responses (C112) appropriately leads to the conclusion that presynaptic factors (VGLUT2+ projections) primarily determine regional differences (C113) while postsynaptic TrpC3 determines cell-type specificity (C114). The stereological validation that ChI density doesn't differ between regions (C110) is important. However, the interpretation relies on comparing fold-changes across different measurement types (enrichment vs absolute expression vs functional responses).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "In ldStr ChIs, slow EPSCs are not mediated by ionotropic glutamate receptors, but small fast EPSCs and IPSCs are present. Slow EPSCs were not blocked by CNQX+APV (14.2\u219214.3 pA), while small fast EPSCs were blocked (8.9\u21921.2 pA). After D2R and iGluR blockade, small fast IPSCs were revealed in some cells and blocked by SR95531, likely due to DA neuron GABA cotransmission. These slow EPSCs were responsible for the delayed increase in firing with train stimulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C44 are supported by systematic pharmacological dissection. The selective blockade of fast but not slow EPSCs by iGluR antagonists (C39-C40) is clear. The revelation of GABAA responses after D2R and iGluR blockade (C41-C42) is appropriately interpreted as GABA cotransmission based on previous work. However, at this point in the manuscript, the mediators of slow EPSCs remain 'unknown' (C44), which is appropriately cautious before the subsequent pharmacological characterization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "Voltage clamp analysis reveals that the shorter firing pause in ldStr ChIs is due to shorter IPSCs with similar peak amplitude, better captured by charge transfer measurements. Peak IPSC amplitudes did not differ between mdStr (23.7\u00b14.5 pA) and ldStr (18.1\u00b12.8 pA) ChIs. However, peak slow EPSC amplitude was greater in ldStr (10.4\u00b11.6 pA) vs mdStr (1.8\u00b10.6 pA), and PSC charge transfer was larger in mdStr (11.7\u00b11.5 pC) than ldStr (3.0\u00b11.6 pC).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C33 are supported by voltage clamp measurements that complement the current clamp firing data. The finding that IPSC peak amplitudes are similar but charge transfer differs (C30, C32) appropriately explains the shorter pause in ldStr (C33). The greater slow EPSC amplitude in ldStr (C31) is consistent with the subsequent excitation. The use of charge transfer as a more sensitive measure than peak amplitude for detecting differences in IPSC duration is methodologically sound.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121"
+    ],
+    "result": "Summary of main findings: DA neurons differentially control ChIs in dStr, inhibiting mdStr ChIs while both inhibiting and exciting ldStr ChIs. The inhibition is D2-mediated and shorter in ldStr due to an ensuing slow EPSC. The slow EPSC is mediated monosynaptically by glutamate cotransmission activating mGluR1 receptors coupled to TrpC3/7, along with D1-like receptor activation. mGluR1 responses are ChI-specific in ldStr, while SPNs show iGluR responses. Topographic SN DA neuron projections mediate these responses, with slow EPSCs occurring discretely in ldStr ChIs due to presynaptic SN DA neuron glutamate cotransmission and postsynaptic TrpC3 enrichment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C115-C121 represent appropriate synthesis of the major experimental findings. These summary claims are well-supported by the collective evidence from electrophysiology (firing patterns, voltage clamp), pharmacology (receptor/channel identification), genetics (VGLUT2 cKO), anatomy (retrograde tracing, INTRSECT), and gene expression (RiboTag). The integration of presynaptic (SN DA neuron glutamate cotransmission) and postsynaptic (TrpC3 enrichment) determinants (C121) appropriately captures the key mechanistic insights.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "Background claims establishing context from prior literature: DA neurons show topographic organization (VTA to ventromedial striatum, SN to dorsolateral striatum), heterogeneity in gene expression, membrane properties, and synaptic signals. DA release and modulation vary across striatal subregions. DA neurons make fast D2-mediated connections to ChIs and slower volume transmission throughout striatum. Glutamate cotransmission shows regional heterogeneity, with strong responses in NAc medial shell but variable observations in dStr. The dStr comprises medial (associative) and lateral (sensorimotor) subregions with different behavioral functions, but functional synaptic connectivity between these subregions has not been addressed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C26 appropriately cite previous literature to establish context and justify the study. The citations appear accurate and relevant. The identification of a knowledge gap (C25) - that functional synaptic connectivity differences between dStr subregions have not been studied - appropriately motivates the current work. The characterization of the mouse model (C26) is supported by appropriate citation. These background claims provide essential context but are not novel findings of this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C138"
+    ],
+    "result": "Discussion claims comparing current findings to previous work on slow excitatory responses: While delayed excitation in olfactory tubercle is solely D1-mediated, D1-like receptors mediate only part of the response in dStr ChIs, with mGluR1 being the primary mediator. The D1 component is likely mainly D5R-mediated based on previous knockout studies. Slow mGluR1 EPSCs were previously described in cerebellar Purkinje cells and midbrain DA neurons but only with spike trains (suggesting spillover), whereas ldStr ChIs show reliable responses to single spikes, suggesting closer receptor-release site proximity. Both ChIs and SPNs express mGluR1 and iGluRs, but differential receptor distribution at DA neuron synapses determines the different responses. ChIs express both mGluR1 and TrpC3, and ldStr ChIs share the same mGluR1-TrpC3 mechanism as Purkinje cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C122-C138 appropriately contextualize the current findings within previous literature. The comparisons to olfactory tubercle (C122-C123), Purkinje cells (C128-C130, C137-C138), and previous receptor expression studies (C125-C126, C131-C133) are well-supported by citations. The inference that mGluR1 receptors are closer to release sites in ChIs than in Purkinje cells (C130) is reasonable based on the single-spike efficacy. The conclusion about differential receptor distribution (C134) appropriately synthesizes the expression and functional data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C139",
+      "C140",
+      "C141",
+      "C142"
+    ],
+    "result": "Discussion of presynaptic mGluR1 effects: mGluR1 is expressed in ventral midbrain DA neurons and terminals, and presynaptic mGluR1s reduce DA release. Since presynaptic receptor activation requires spillover, activation by single spikes is less likely. However, during burst firing, mGluR1-mediated presynaptic inhibition would limit glutamate cotransmission in ldStr and likely reduce temporal summation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C139-C142 are partially supported. The expression of mGluR1 on DA neurons and its effect on DA release (C139-C140) are supported by appropriate citations. The inference that single spikes are unlikely to activate presynaptic mGluR1 (C141) is reasonable based on spillover requirements. However, the speculation about burst firing effects (C142) is not directly tested in this study and remains hypothetical. This represents reasonable speculation based on known mechanisms but lacks direct experimental support.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C143",
+      "C144",
+      "C145",
+      "C146",
+      "C147",
+      "C148",
+      "C149",
+      "C150"
+    ],
+    "result": "Discussion of fast glutamate cotransmission and anatomical projections: While DA neuron cotransmission consistently evokes iGluR EPSCs in NAc medial shell, reports in dStr have varied. Current results reveal that iGluR EPSCs vary by location, with small/no responses in mdStr and larger responses in ldStr, making ldStr a hotspot of glutamate cotransmission. Based on topography, ldStr should receive input solely from SNc. CTB tracing showed non-topographical VTA projections to ldStr (as previously observed in rats), but these do not mediate glutamate cotransmission. The non-topographic projection appears to arise from non-glutamate cotransmitting DA neurons that may contribute to D1/D2 receptor responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C143-C150 appropriately discuss the anatomical basis of functional heterogeneity. The resolution of variable previous reports (C143-C144) by identifying regional differences is well-supported. The identification of ldStr as a glutamate cotransmission hotspot (C145) is justified by the data. The inference that non-topographical VTA projections don't mediate glutamate cotransmission (C148) is supported by comparing CTB and CAV2 results. However, the speculation about functional roles of non-glutamatergic VTA projections (C150) lacks direct experimental support.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C151",
+      "C152",
+      "C153",
+      "C154",
+      "C155",
+      "C156",
+      "C157",
+      "C158",
+      "C159",
+      "C160",
+      "C161"
+    ],
+    "result": "Discussion of VGLUT2 expression in SN DA neurons and projection patterns: Retrograde viral tracing showed most glutamate cotransmission in ldStr arises from SN DA neurons, where VGLUT2 expression has not been previously reported in adult mice. This discrepancy could be due to difficulty detecting small populations with low expression by in situ hybridization. INTRSECT revealed ~20% of SN DA neurons coexpress VGLUT2, more than found by previous methods. While these constitute a minority, they elicit substantial excitation due to restricted projection area. Both TH+/VGLUT2+ and TH-/VGLUT2+ neurons projecting to ldStr reside in SN and don't project to mdStr, consistent with recognized segregation. Glutamate cotransmitting DA neurons and glutamate-only neurons appear to project similarly.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C151-C161 appropriately discuss the surprising finding of VGLUT2 expression in SN DA neurons. The reconciliation with previous literature (C152-C154) through methodological considerations is reasonable. The INTRSECT data (C154) provides strong support for substantial VGLUT2 expression in SN. The inference about functional impact despite minority status (C155) is appropriate. The observation of both DA/glutamate and glutamate-only neurons with similar projections (C158-C161) is well-supported by the tracing data and appropriately cited to previous characterization studies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C162",
+      "C163",
+      "C164",
+      "C165",
+      "C166",
+      "C167",
+      "C168",
+      "C169"
+    ],
+    "result": "Discussion of functional implications for ChI control of striatal circuits: DA neurons may engage ChIs as a hub to control striatal circuits. Although ChIs comprise only 1-2% of striatal neurons, they exert strong control through large axonal fields. In response to reward-related cues, dStr ChIs show burst-pause-burst firing coincident with DA neuron burst firing. The early burst is mediated by thalamic inputs, the pause is principally D2R-mediated, and the rebound is highly variable. Multiple mechanisms likely contribute to rebound firing, including the DA neuron-mediated slow EPSC. The presence of slow EPSCs in ldStr but not mdStr likely contributes to subregional variability in ChI rebound firing and may shorten or cancel the D2R-mediated pause in ldStr ChIs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C162-C169 appropriately discuss functional implications based on integration of current findings with previous in vivo recording studies. The characterization of ChI influence (C163) and firing patterns (C164) are well-supported by citations. The attribution of pause to D2R (C165) is supported by current data. The inference that slow EPSCs contribute to rebound firing (C167-C168) is reasonable based on the timing and magnitude of responses. However, these remain inferences about in vivo function based on ex vivo data, and direct in vivo validation would strengthen these claims.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C170",
+      "C171",
+      "C172",
+      "C173",
+      "C174"
+    ],
+    "result": "Discussion of ChI effects on SPN excitability: Silencing ChIs reduces spontaneous IPSCs in SPNs while ChI firing increases them, presumably through GABA interneuron activation. Cortical/thalamic glutamatergic inputs are reduced by presynaptic muscarinic receptor activation, and a single ChI spike is sufficient to reduce cortical glutamate EPSCs in SPNs. Thus, pausing ChIs provides a window facilitating SPN excitation by lessening GABA inhibition and accentuating glutamate inputs by removing muscarinic inhibition. The delayed increase in ChI firing caused by slow EPSCs may regulate the excitation window for SPNs in ldStr.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C170-C174 appropriately discuss circuit-level implications based on previous functional studies of ChI effects on SPNs. The cited effects on GABA tone (C170) and glutamate inputs (C171-C172) are well-established. The inference about the excitation window (C173) is a reasonable synthesis of these effects. However, the speculation about slow EPSC regulation of this window (C174) is not directly tested and represents a hypothesis for future work rather than a demonstrated result.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C175",
+      "C176",
+      "C177",
+      "C178",
+      "C179",
+      "C180",
+      "C181"
+    ],
+    "result": "Discussion of behavioral implications: Cholinergic tone in dStr modifies DA release frequency dependence, excitatory input strength including long-term plasticity, and GABA tone. DA neuron tonic activity may affect basal cholinergic tone differentially in mdStr and ldStr due to the mGluR component in ldStr. Striatal ChIs play important roles in behavioral flexibility, and chemogenetic activation of ldStr ChIs enhances habit switching. Therefore, the slow EPSC may modulate habit switching by transiently countering tonic DA neuron modulation of ldStr ChIs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C175-C181 discuss behavioral implications but with varying levels of support. The effects of cholinergic tone on circuit function (C175-C177) are well-supported by citations. The speculation about differential effects of tonic DA activity (C178) is reasonable but untested. The role of ChIs in behavioral flexibility (C179-C180) is supported by appropriate citations. However, the speculation about slow EPSC effects on habit switching (C181) is not directly tested and represents a hypothesis for future behavioral experiments rather than a demonstrated result.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C182",
+      "C183",
+      "C184"
+    ],
+    "result": "Summary discussion claims: While DA neurons elicit excitatory signals via D1R and inhibitory signals via D2R across dStr, subregional differences involve differences in signal strength. In contrast, glutamate cotransmission varies in timing and synaptic mechanism, with hotspots of fast cotransmission in NAc medial shell and ldStr, and slow excitation limited to ChIs in ldStr. Thus, DA neuron glutamate cotransmission appears to be a major driver of subregional heterogeneity in DA neuron actions across the striatum.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C182-C184 appropriately synthesize the major conclusions of the study. The distinction between relatively uniform DA signaling and highly heterogeneous glutamate cotransmission (C182-C183) is well-supported by the collective data. The conclusion that glutamate cotransmission is a major driver of subregional heterogeneity (C184) is justified by the comprehensive demonstration of regional, cell-type, and mechanistic differences in glutamate responses. These summary claims appropriately capture the significance of the findings.",
+    "result_type": "MAJOR"
+  }
+]

@@ -1,0 +1,190 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7"
+    ],
+    "result": "The El Hage et al. (2018) study used single MD simulations for each box size without replicates, lacking uncertainty estimates and statistical significance testing for the reported box size dependence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C7 accurately identify a critical methodological limitation in El Hage et al.: single simulations per condition without error estimates. This is a valid critique of the original study's statistical rigor, though it represents analysis of prior work rather than new experimental findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14"
+    ],
+    "result": "Replicate simulations (10-20 per box size) show considerable scatter in T\u2192R transition times with no statistically significant box size effect. The 15 nm box shows transitions in 14/20 simulations within 1 \u03bcs, and RMSD distributions are similar across box sizes. Statistical analysis rejects the box size dependence hypothesis with probabilities of 0.0026 (2-fold effect) and 4.7\u00d710\u207b\u2076 (10-fold effect).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C14 present strong evidence with appropriate statistical power (10-20 replicates) and quantitative probability estimates. Figure 1 supports the high variability and lack of systematic box size effects. The statistical analysis appears sound, though the exact method for probability calculation is not fully detailed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C17"
+    ],
+    "result": "No full back-transitions from R to T state were observed in any simulation, only occasional partial transitions independent of box size, consistent with no preferential T-state stabilization in the 15 nm box.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C17 provide additional evidence against thermodynamic stabilization of the T state in larger boxes. The observation of irreversible transitions is consistent with R-state preference and supports the main conclusion, though this is a negative result that depends on simulation length.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "Apparent box size effects on solvent RDF, water-water hydrogen bonds, and diffusion constants disappear when normalized by analysis volume rather than box volume. The differences are explained by a dilution effect (different protein-to-water ratios), not changes in the hydrophobic effect. This is confirmed in ubiquitin simulations and consistent with prior work showing minimal box size effects above 4 nm.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C30 present a compelling reanalysis identifying a normalization artifact in El Hage et al. The dilution effect explanation is physically reasonable and supported by Figure 2 data. The extrapolation analysis (C21-C22) quantitatively demonstrates that bulk water dilution accounts for observed differences. The ubiquitin control (C24-C26) strengthens the argument by showing similar artifacts in a smaller protein where hydrophobic effects should be minimal.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "Transition times from T to R state report primarily on kinetics (activation barriers and attempt frequencies) rather than thermodynamic stability. Without measuring barriers and attempt frequencies, transition times are insufficient to conclude thermodynamic stabilization of the T state.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C35 present a valid theoretical argument based on rate theory. The logic is sound: longer transition times could reflect kinetic barriers without thermodynamic stabilization. However, this is a conceptual critique rather than experimental evidence, and the distinction between kinetic and thermodynamic effects can be subtle in practice.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C45",
+      "C46"
+    ],
+    "result": "Systematic simulations of deoxy hemoglobin with three different protonation/setup variants (Hub, Kovalevsky, El Hage) across four box sizes (8.25-16.3 nm) show no box size dependence on T\u2192R transition times. Protonation states affect transition kinetics (Hub faster than Kovalevsky, El Hage slowest), consistent with the Bohr effect. The slower transitions in El Hage setup are attributed to differences in center-of-mass motion removal and iron-histidine interaction modeling rather than histidine protonation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C46 present extensive systematic data (Figure 3A) with appropriate controls testing different simulation parameters. The lack of box size dependence is consistent across all setups. The preliminary investigation into slower El Hage transitions (C41-C45) identifies plausible technical differences, though this analysis is acknowledged as preliminary. Claim C46 appropriately notes uncertainty about box geometry effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C47",
+      "C48"
+    ],
+    "result": "No systematic box size effects on transition kinetics were observed for alanine dipeptide and ubiquitin. Free energy profiles for alanine dipeptide, ubiquitin, and the charged pentapeptide RGGGD show only minor box size effects, if any.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C48 extend the analysis to additional test systems with varying complexity and charge states. Figure 3B,C and Figure 4 support these conclusions. The RGGGD peptide with unscreened charges is a particularly stringent test for electrostatic artifacts. The consistency across diverse systems strengthens the overall conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "With an order of magnitude more statistics (10-20 independent simulations vs. 1), the reported box size dependence is not reproducible. Overall, no significant effects of box size on kinetics or thermodynamics were observed. Under simulated conditions, the R state is favored over T state, with histidine protonation affecting transitions consistent with the Bohr effect. Box size effects are within statistical fluctuations, and differences from force fields and starting structures exceed any box size effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C55 provide appropriate summary conclusions supported by the extensive simulation data. The statement about order of magnitude more statistics (C49) is accurate. The contextualization of box size effects relative to other sources of variation (C55) is important and well-supported. Claims C52-C53 about R-state preference and Bohr effect are consistent with prior literature and the current data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4"
+    ],
+    "result": "El Hage et al. (2018) reported that unliganded hemoglobin is only stable in the T state in a 15 nm box (10\u00d7 larger than typical), with spontaneous T\u2192R transitions in smaller boxes, attributed to box size effects on the hydrophobic effect.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C4 accurately summarize the findings of El Hage et al. (2018) based on citation evidence. These are factual statements about prior work that set up the current study's critique. The accuracy of these characterizations would need to be verified against the original paper.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C24",
+      "C25"
+    ],
+    "result": "Ubiquitin is significantly smaller than hemoglobin, so the hydrophobic effect should be significantly smaller following El Hage et al.'s argumentation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C25 present a logical control argument: if box size effects arise from hydrophobic effects scaling with protein size, smaller proteins should show smaller effects. C24 is factually correct (ubiquitin ~8.6 kDa vs hemoglobin ~64 kDa). C25 follows logically from El Hage et al.'s proposed mechanism.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C23"
+    ],
+    "result": "Yeh and Hummer (2004) showed that box size dependence on water diffusion is small for box sizes larger than 4 nm.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C23 cites prior work supporting the authors' findings. This is a factual citation claim that provides context for the diffusion constant analysis. The accuracy depends on correct representation of Yeh and Hummer's findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C38"
+    ],
+    "result": "The finding that Hub et al. (2010) protonation states lead to faster transitions than Kovalevsky et al. (2010) states is consistent with earlier GROMOS96 43A1 force field simulations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C38 contextualizes current findings with prior literature. This is a citation-based claim that supports the validity of the current observations by showing consistency with previous work using different force fields.",
+    "result_type": "MINOR"
+  }
+]

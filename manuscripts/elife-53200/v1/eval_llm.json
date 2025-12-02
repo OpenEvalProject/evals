@@ -1,0 +1,322 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C19",
+      "C20"
+    ],
+    "result": "ICP1 exhibits lysis inhibition in V. cholerae. At MOI=1, ICP1 infection shows early lysis at 20 minutes followed by optical density stabilization. Superinfection (MOI=1 followed by MOSI=5) eliminates the early lysis event and stabilizes optical density. Addition of 2,4-dinitrophenol to high MOI infections causes rapid optical density collapse, confirming proton motive force dependence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C20 provide converging experimental evidence for ICP1 lysis inhibition. The optical density stabilization upon superinfection (C17), MOI-dependent lysis kinetics (C16), and DNP sensitivity (C19) are all consistent with canonical lysis inhibition as observed in T-even phages. The experimental data in Figures 1C and 1D directly support these observations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "ICP1 Gp137 (TeaA) functions as a holin. Bioinformatic analysis identified Gp137 as containing the GTA_holin_3TM domain. Ectopic expression of TeaA collapses proton motive force (measured by DiOC2(3) fluorescence) and causes rapid lysis upon DNP addition, comparable to T4's T-holin. TeaA alone is sufficient to lyse V. cholerae under laboratory conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C29 provide strong evidence for TeaA as a holin through bioinformatic prediction (C23), functional assays showing proton motive force collapse (C27), and DNP-triggered lysis (C28). The comparison to T4's T-holin provides appropriate positive control. The observation that TeaA alone causes lysis (C29) is interesting but adequately supported by the experimental data in Figures 2C and 2D.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C34",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "ICP1 Gp138 (ArrA) functions as an antiholin regulating lysis timing. CRISPR-Cas targeting of arrA produced clear-edged plaques, which reverted to fuzzy edges when ArrA was supplied in trans. Clean deletion of arrA (\u0394arrA ICP1) produces clear-edged plaques and rapid lysis kinetics. Complementation with ArrA in trans restores lysis inhibition phenotype, which is sensitive to DNP disruption.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C44 provide comprehensive evidence for ArrA as an antiholin through genetic manipulation (CRISPR targeting and clean deletion), phenotypic analysis (plaque morphology), lysis kinetics, and complementation. The DNP sensitivity of the complemented strain (C43) confirms the mechanism involves lysis inhibition. The successful construction of \u0394arrA (C40) demonstrates arrA is non-essential, consistent with antiholin function.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "TeaA and ArrA homologs exist in other phages, suggesting widespread lysis inhibition systems. BLASTP analysis revealed TeaA homologs throughout marine phage and bacterial genomes. Some organisms containing TeaA homologs also contain ArrA homologs, limited to vibriophages, suggesting complete homologous lysis inhibition systems exist in phages beyond ICP1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C47 are supported by bioinformatic analysis shown in supplementary figures and files. The identification of co-occurring TeaA and ArrA homologs in vibriophages (C46) provides evidence for complete lysis inhibition systems. However, the functional characterization of these homologs is not provided, so the claim remains at the level of sequence homology.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "A conserved gene, lidI, was identified in all five PLEs through bioinformatic analysis. PLEs 4 and 5 contain ORF26 with transmembrane domains, while PLEs 1-3 contain previously unannotated homologous ORFs (ORF20.1, ORF24.1, ORF24.1). These lidI homologs cluster into two groups based on size (66 vs 121 amino acids) and share transmembrane domains but lack homology to other known genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C54 describe bioinformatic identification of lidI through synteny analysis and transmembrane domain prediction. The identification of previously unannotated ORFs (C52) and their clustering (C53) is supported by sequence analysis shown in Figure 4\u2014figure supplement 1. The lack of homology to known genes (C54) is appropriately stated as negative evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "LidI is expressed during ICP1 infection and is sufficient to cause accelerated lysis. FLAG-tagged LidIPLE1 is not detectable without phage infection but appears 18-20 minutes post-infection (immediately before accelerated lysis). Ectopic expression of LidIPLE1 in PLE(-) V. cholerae recapitulates the PLE-mediated accelerated lysis phenotype during ICP1 infection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C57 are supported by Western blot data (Figure 4B, Figure 4\u2014figure supplement 2) showing infection-dependent expression and lysis kinetics data (Figure 4A) demonstrating sufficiency. The timing of LidI expression immediately before accelerated lysis (C56) provides strong correlative evidence for its role in the phenotype.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C58",
+      "C59"
+    ],
+    "result": "LidI does not function as a canonical holin. Expression of LidIPLE1 alone (without phage) does not alter proton motive force or cause DNP-induced lysis, indicating its lysis activity is dependent on ICP1 presence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C59 are supported by experimental data in Figures 4C and 4D showing no effect on proton motive force or DNP sensitivity in the absence of phage. This distinguishes LidI from canonical holins like TeaA and suggests a different mechanism of action, though the molecular mechanism remains unclear.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "LidI is sufficient but not necessary for PLE-mediated accelerated lysis, suggesting functional redundancy. Deletion of lidI from PLE1 or PLE4 does not prevent accelerated lysis. Single knockouts of all PLE1 ORFs still show accelerated lysis, and no other single ORF is sufficient to recapitulate the phenotype. This suggests PLE-mediated accelerated lysis involves two or more functionally redundant gene products.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C66 are supported by systematic genetic analysis (Figures 4A, 4E, Figure 4\u2014figure supplement 3). The sufficiency of LidI (C57, C62) combined with lack of necessity (C60, C63) and absence of other single sufficient genes (C65) strongly supports the redundancy model (C66). The addition of exogenous phage (C61) rules out the alternative explanation that PLE simply prevents superinfection.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C67",
+      "C68"
+    ],
+    "result": "No single PLE ORF is necessary for inhibition of ICP1 plaque formation, suggesting multiple synergistic anti-phage strategies. This redundancy extends beyond accelerated lysis to include other mechanisms that eliminate phage production.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C68 are supported by systematic knockout analysis (Figure 4\u2014figure supplement 3C). The observation that no single gene is necessary for either accelerated lysis or plaque inhibition suggests PLE employs multiple redundant strategies. However, the specific mechanisms beyond lysis timing remain uncharacterized.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "LidI functions through lysis inhibition disruption. LidI-mediated accelerated lysis timing is MOI-dependent (up to 40 minutes delay at lowest MOI), consistent with differential LIN onset. LidI expression does not affect efficiency of plaquing (initial infection success) but causes loss of fuzzy plaque edges, the expected phenotype of disrupted lysis inhibition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C72 provide strong mechanistic evidence that LidI disrupts lysis inhibition. The MOI-dependent lysis timing (C69, Figure 5A) parallels the MOI-dependent onset of LIN, the unchanged EOP (C71, Figure 5B) indicates no effect on initial infection, and the plaque morphology change (C72, Figure 5C) matches the expected phenotype. These converging lines of evidence support the proposed mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "LidI expression decreases ICP1 phage yield. Induction of lidIPLE1 at or before infection reduces phage yield by 1-2 orders of magnitude compared to empty vector controls. LidIPLE4 shows the same effect. This occurs even at very low MOI (\u22640.001), and LidI is the first PLE-encoded ORF that can singlehandedly reduce ICP1 yield.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C76 are supported by phage yield quantification experiments (Figures 6A, 6B, Figure 6\u2014figure supplement 1). The magnitude of reduction (1-2 orders) is substantial and consistent across LidI homologs (C74). The effect at low MOI (C75) demonstrates the phenomenon is not limited to high MOI conditions. Statistical significance is shown in the figures.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "LidI imposes a population bottleneck that reduces phage escape from CRISPR-Cas targeting. Fewer phage progeny from lidIPLE1-expressing V. cholerae overcome CRISPR-Cas targeting compared to controls. The defect is due to decreased population size rather than changed escape frequency (~2 per thousand phages for spacer C in both conditions), resulting in an order of magnitude fewer escape phages in the population.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C79 are supported by CRISPR escape experiments (Figure 6D, Figure 6\u2014figure supplement 4). The key insight that escape frequency remains constant (C78) while absolute numbers decrease (C79) demonstrates a population bottleneck effect rather than altered mutation rate. The experimental design appropriately tests multiple spacers with varying escape rates.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C80",
+      "C81"
+    ],
+    "result": "LidI limits ICP1 evolution through population bottlenecking. LidI expression decreases the number of progeny phages that successfully recombine to reconstitute functional CRISPR-Cas systems and overcome PLE. While LidI does not directly impact evolvability within cells, it imposes a population bottleneck resulting in fewer diverse phages and limiting ICP1's potential to escape anti-phage activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C81 are supported by homologous recombination experiments using CRISPR-Cas deficient phages (Figures 6E, 6F, Figure 6\u2014figure supplement 3, Figure 6\u2014figure supplement 4). The decreased recombination success (C80) combined with the CRISPR escape data provides strong evidence for the bottleneck effect (C81). The caveat that LidI doesn't affect intracellular evolvability is appropriately stated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10"
+    ],
+    "result": "Historical context and prior characterization of lysis inhibition in T-even phages. Lysis inhibition was discovered in T-even phages, characterized by fuzzy-edged plaques, superinfection-triggered lysis delay, increased burst size, and protection of progeny phage. It has only been well characterized in T-even coliphages where it is mediated by holins and antiholins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C10 provide historical and background context supported by appropriate citations to the primary literature. These claims establish the foundation for the current work by describing the prior state of knowledge about lysis inhibition. All claims are properly attributed to published work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13",
+      "C21",
+      "C25",
+      "C26",
+      "C30",
+      "C32",
+      "C33",
+      "C35",
+      "C36"
+    ],
+    "result": "Background on holin-antiholin lysis systems. Holins are the first step in canonical lysis systems, accumulating in the inner membrane before triggering to enable endolysin access. Antiholins inhibit holin triggering during lysis inhibition and can interact with holins in various cellular compartments. They are often found near holin genes and were initially identified through rapid lysis mutant phenotypes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C36 provide mechanistic background on phage lysis systems, properly supported by citations to the relevant literature. These claims establish the conceptual framework for identifying and characterizing TeaA and ArrA. The information is accurate and appropriately sourced.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "Background on V. cholerae, ICP1, and PLE biology. V. cholerae causes cholera and co-occurs with phages including ICP1 in clinical and environmental samples. PLE is a parasitic satellite that abolishes ICP1 production through multiple mechanisms, excises upon infection, replicates using phage products, and accelerates lysis. ICP1 acquired CRISPR-Cas to overcome PLE. No single PLE gene has been identified as necessary for ICP1 inhibition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C100 provide comprehensive background on the V. cholerae-ICP1-PLE system, properly supported by citations to prior work. These claims establish the biological context and prior knowledge that motivated the current study. The characterization of PLE as completely abolishing ICP1 production (C100) distinguishes it from other satellite systems and sets up the investigation of accelerated lysis mechanisms.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C48",
+      "C49"
+    ],
+    "result": "ICP1 lysis timing varies with MOI and PLE presence. At low MOI (0.1), ICP1 completes virion production in 20-25 minutes in PLE(-) V. cholerae. At high MOI (5), lysis occurs at ~90 minutes in PLE(-) strains but accelerates to 20 minutes in PLE1 strains.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14, C15, C48, C49 describe the basic lysis kinetics that motivated the study, supported by citations to O'Hara et al. (2017) and experimental data in Figure 4A. The dramatic difference between low and high MOI in PLE(-) strains (C14 vs C15) suggested lysis inhibition, while the accelerated lysis in PLE(+) strains (C49) motivated investigation of PLE's mechanism.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C18"
+    ],
+    "result": "2,4-dinitrophenol disrupts lysis inhibition in T-even phages through proton motive force collapse.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C18 provides methodological background on DNP as a tool to test lysis inhibition, properly supported by citations to Abedon (1992) and Heagy (1950). This established the rationale for using DNP in the current experiments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C82",
+      "C83"
+    ],
+    "result": "Summary of major findings: identification of ICP1 holin (teaA) and antiholin (arrA) mediating lysis inhibition, and PLE protein LidI that disrupts lysis inhibition to limit phage production and bottleneck ICP1 populations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C83 accurately summarize the major findings of the work, which are supported by the experimental evidence in the grouped claims above. These summary statements are consistent with the detailed experimental results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C101"
+    ],
+    "result": "The cyclic-oligonucleotide-based anti-phage signaling system found on MGEs can cause accelerated lysis in E. coli.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C101 provides context about another recently discovered system that causes accelerated lysis, properly supported by citation to Cohen et al. (2019). This highlights that accelerated lysis by MGEs may be more common than previously recognized.",
+    "result_type": "MINOR"
+  }
+]

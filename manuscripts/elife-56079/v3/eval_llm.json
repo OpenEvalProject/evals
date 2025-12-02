@@ -1,0 +1,235 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "Cell fate decisions in the ICM are made at the population level, not independently. In chimeras mixing wild-type and Gata6\u2212/\u2212 cells, the fate of wild-type cells depends on the proportion of mutant cells present: with \u226540% Gata6\u2212/\u2212 cells, wild-type cells contribute almost exclusively to PrE, whereas with <40% mutant cells, wild-type cells contribute to both lineages and restore normal ICM composition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C30 provide converging experimental evidence from chimera experiments showing that cell fate decisions are conditional on the composition of the cell population. The data demonstrate non-cell-autonomous fate specification with clear compositional thresholds, supporting the conclusion that intercellular communication coordinates lineage decisions at the population level.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C2",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C94",
+      "C95"
+    ],
+    "result": "A minimal mathematical model containing only indirect mutual inhibition via growth factor signaling is sufficient to robustly generate two ICM compartments (epiblast and PrE), enable lineage scaling with embryo size, and adjust for changes in lineage composition. The model exhibits attractor dynamics with stable cell fate distributions and is robust to changes in parameters and dimensionality.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C33-C38, C94-C95 collectively demonstrate that the mathematical model successfully recapitulates key experimental observations including stable lineage ratios, scaling behavior, and robustness to perturbations. The sensitivity analyses (C36-C37) and dimensional independence (C35) strengthen the conclusion that growth factor-mediated feedback alone is sufficient for robust patterning.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C3",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "Addition of ESCs (lineage-restricted epiblast cells) to embryos causes host cells to shift fate toward PrE, maintaining normal ICM composition up to 2-4x normal epiblast size. ESCs increase total ICM size without affecting host ICM contribution or proliferation, indicating regulation occurs solely through changes in cell fate allocation rather than compensatory proliferation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C50 provide comprehensive experimental evidence from ESC-embryo chimeras showing dose-dependent fate shifts in host cells that maintain ICM composition. The observation that host ICM size remains constant (C41) while lineage proportions change (C43-C44) directly supports the conclusion that regulation occurs through fate allocation rather than proliferation (C49-C50).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C4",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C73",
+      "C74"
+    ],
+    "result": "Laser ablation of specific lineages biases progenitor specification toward the targeted cell type, with recovery capacity depending on both the magnitude of perturbation and developmental timing. Partial reductions (\u226430%) are fully compensated, while complete lineage elimination shows only partial recovery. Changes in ICM composition are primarily compensated by shifts in progenitor differentiation patterns rather than changes in proliferation or cell death.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C69 and C73-C74 provide direct experimental evidence from laser ablation experiments showing that progenitors preferentially adopt the fate of the ablated lineage. The time-lapse tracking data (C66-C69) directly demonstrate fate shifts in progenitor cells. The conclusion that regulation occurs primarily through fate allocation (C73-C74) is appropriately qualified given the small sample size for proliferation/death analyses.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C5",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C80",
+      "C81",
+      "C82",
+      "C84",
+      "C85"
+    ],
+    "result": "FGF4 provides the feedback signal that couples lineage size to cell fate specification. Wild-type ESCs rescue PrE specification in Fgf4\u2212/\u2212 embryos in a dose-dependent manner, with the number of ESCs dictating PrE size. Fgf4\u2212/\u2212 ESCs fail to rescue, confirming FGF4 as the responsible ligand. This feedback enables dynamic adjustment of progenitor differentiation rates in response to perturbations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C78 and C80-C82 provide strong genetic evidence identifying FGF4 as the feedback signal. The rescue experiments with wild-type ESCs and the negative control with Fgf4\u2212/\u2212 ESCs (C77) establish causality. The dose-dependent rescue (C80-C82) demonstrates that FGF4 levels directly control PrE specification, supporting the proposed feedback mechanism (C84-C85).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C21",
+      "C25",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "Epiblast and PrE are generated in precise proportions (close to 50:50 ratio) that scale with embryo size, with embryo-to-embryo variability decreasing over developmental time. Lineage proportions are maintained irrespective of absolute embryo or ICM size, indicating that relative rather than absolute lineage size is the controlled variable.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C32 are supported by quantitative data from multiple datasets showing convergence to a balanced ratio with decreasing variability. Claims C21, C25, C86-C88 establish the scaling behavior through both current data and cited prior work. The inference that relative rather than absolute size is controlled (C88) is well-supported by the scaling observations and perturbation tolerance data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "Two-photon laser ablation enables precise targeting of individual ICM cells at any z-plane without affecting neighboring cells. Targeted cells have a half-life of 3.4 hours, while untargeted cells (including adjacent cells) show identical survival to controls. Ablated embryos maintain normal morphology and size even after 100% lineage elimination.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C61 establish the technical validity of the laser ablation method through direct experimental measurements. The survival data for untargeted cells (C59) and morphological assessments (C60) demonstrate the specificity and minimal off-target effects of the technique. The half-life measurement (C61) provides quantitative validation of cell death kinetics.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C24"
+    ],
+    "result": "PrE cells identified by NANOG and GATA6 expression patterns express later PrE markers SOX17 and GATA4 in patterns consistent with previous observations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C24 is supported by both immunofluorescence data shown in supplementary figures and citations to multiple prior studies. This validation confirms that the NANOG/GATA6-based cell classification system accurately identifies PrE cells, providing methodological support for the main experimental findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C52",
+      "C53"
+    ],
+    "result": "In silico simulations show that proportional reduction of all ICM cell types (30% reduction) maintains relative ICM composition robustly across embryos, with no effect on final lineage ratios regardless of developmental stage or perturbation magnitude.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C53 describe simulation results demonstrating that the model exhibits scaling behavior when all cell types are reduced proportionally. This computational result parallels the experimental scaling observations and validates that the model captures this key biological property.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "Cell ablation increases progenitor cell survival and slightly increases progenitor proliferation following PrE (but not epiblast) ablation. In embryos where 100% of PrE was targeted, high cell death occurred that was not compensated by proliferation or specification.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C70-C72 describe observations about cell death and proliferation following ablation, but the authors explicitly note that small sample sizes (N=3 for 100% PrE ablation, C72) preclude definitive conclusions. While the observations are reported, the limited statistical power and lack of mechanistic explanation make these findings uncertain rather than well-established.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C83"
+    ],
+    "result": "Addition of ESCs at the blastocyst stage (when progenitors are depleted) fails to rescue ICM composition in most cases, with only some chimeras specifying low numbers of PrE cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C83 is supported by experimental data showing that timing of ESC addition is critical for rescue. This result demonstrates that uncommitted progenitors are required for the feedback mechanism to function, supporting the model's prediction that progenitor cells are the substrate for regulation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C89",
+      "C91",
+      "C119"
+    ],
+    "result": "Growth factor-mediated feedback couples cell fate decisions with lineage size in the mouse blastocyst to ensure consistent cell type proportions, enabling robust patterning independent of absolute embryo size and regeneration after injury.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89, C91, and C119 represent the main conclusions of the study, synthesizing results from mathematical modeling, chimera experiments, laser ablation, and FGF4 rescue experiments. These conclusions are well-supported by the convergent evidence from multiple experimental approaches demonstrating feedback-mediated regulation of lineage proportions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C93",
+      "C110",
+      "C111",
+      "C114"
+    ],
+    "result": "The lack of experimental evidence for direct NANOG-GATA6 mutual inhibition, combined with the non-cell-autonomous nature of fate decisions, suggests intercellular feedback alone could drive the epiblast/PrE decision through growth-factor-mediated lateral inhibition, leading to spontaneous divergence of fates among neighboring cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93, C110-C111, and C114 present a mechanistic interpretation supported by the chimera data (showing non-cell-autonomous decisions), the minimal model results (demonstrating sufficiency of intercellular signaling), and the FGF4 rescue experiments (identifying the signaling molecule). The inference is appropriately qualified as a suggestion based on the absence of evidence for direct transcriptional mutual inhibition.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C109"
+    ],
+    "result": "The mathematical model reproduces the asynchronous character of cell fate allocations observed in vivo, which results partly from asynchrony in cell division. This asynchrony may ultimately underlie both the progressive allocation of cell fates and the system's ability to respond to perturbations in lineage composition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C105-C106 describe a feature of the model that matches experimental observations. Claim C109 presents a mechanistic hypothesis about the role of cell cycle asynchrony that is supported by the model behavior and consistent with cited literature on cell cycle effects in other systems (C107-C108). The conclusion is appropriately qualified as a possibility rather than a definitive mechanism.",
+    "result_type": "MINOR"
+  }
+]

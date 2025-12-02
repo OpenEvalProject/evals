@@ -1,0 +1,317 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "Mushroom body neuroblasts sequentially produce three neuronal types (\u03b3, \u03b1'\u03b2', \u03b1\u03b2) through an intrinsic temporal program involving opposing gradients of Imp and Syp RNA-binding proteins. High Imp/Chinmo specifies \u03b3 neurons (~85 divisions), low Imp/Syp with Mamo expression specifies \u03b1'\u03b2' neurons (~40 divisions), and high Syp specifies \u03b1\u03b2 neurons (~125 divisions).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C2, C31-C34 are well-supported by extensive prior literature (C10-C28) and consistent with the experimental framework. The sequential production is demonstrated through multiple markers (Trio, Mamo, FasII) and temporal expression patterns shown in figures. This represents established knowledge that forms the foundation for the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C5",
+      "C42",
+      "C48",
+      "C50",
+      "C55"
+    ],
+    "result": "Loss of the activin receptor Baboon in mushroom body neuroblasts causes complete loss of \u03b1'\u03b2' neurons. In babo mutant clones, \u03b1'\u03b2' neurons are absent based on axonal morphology and molecular markers (Trio, Mamo), with only 2.2% of expected \u03b1'\u03b2' neurons present compared to 25.5% in wildtype.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C42, C48, C50, C55 are strongly supported by multiple independent assays: axonal projections (Figure 1D-E), cell body markers (Figure 1F-G), and quantification with different Gal4 drivers (Figure 1H, J). The phenotype is consistent across multiple experimental approaches and includes appropriate controls (C43, C46 showing similar phenotypes in Smad2 mutants).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C6",
+      "C56",
+      "C58"
+    ],
+    "result": "Loss of Baboon causes a significant decrease in \u03b1\u03b2 neurons, with babo mutant clones containing 228.9 \u00b1 13.2 \u03b1\u03b2 neurons compared to 276 \u00b1 9.1 in wildtype (p<0.01).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C56, C58 are supported by quantitative data in Figure 1K using \u03b1\u03b2-Gal4 (R44E04-Gal4) with appropriate statistical testing (two-sample t-test, p<0.01). The decrease is statistically significant and consistent with the model that the delayed Imp decrease extends the \u03b3 window at the expense of later-born \u03b1\u03b2 neurons.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C7",
+      "C54",
+      "C57"
+    ],
+    "result": "Loss of Baboon likely causes an increase in \u03b3 neurons, with babo mutant clones showing a trend toward higher \u03b3 neuron numbers (178.4 \u00b1 11.9) compared to wildtype (154.3 \u00b1 11.4), though not statistically significant.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C7, C54, C57 are based on a non-significant trend (Figure 1I). While the authors provide a mechanistic explanation (higher Imp/Chinmo extends \u03b3 window), the lack of statistical significance and acknowledged variability due to clone induction timing make this conclusion uncertain. The claim is appropriately hedged as 'likely' but requires additional validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C8",
+      "C52",
+      "C53"
+    ],
+    "result": "Loss of Baboon does not affect overall neuroblast proliferation or cause cell death. Clone sizes are similar between wildtype (533.6 \u00b1 33.3) and babo mutant (551.3 \u00b1 17.6) conditions, and blocking apoptosis with P35 does not rescue \u03b1'\u03b2' neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C52, C53 are supported by quantitative clone size analysis (Figure 1H') and functional rescue experiments with P35 (Figure 1\u2014figure supplement 2A). These controls are essential for ruling out alternative explanations (proliferation defects or cell death) and support the conclusion that the phenotype reflects altered cell fate specification.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "Activin signaling through Myoglianin and Baboon regulates Imp levels in mushroom body neuroblasts. Babo mutant neuroblasts show significantly higher Imp:Syp ratios at L3 (4.2 \u00b1 0.4 vs 2.4 \u00b1 0.2 in wildtype) and at 24hr APF (0.58 \u00b1 0.11 vs 0.27 \u00b1 0.02), driven by elevated Imp without significant changes in Syp. This correlates with loss of Mamo and elevated Chinmo in neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C4, C60-C64 are strongly supported by quantitative fluorescence measurements at multiple developmental timepoints (Figure 2, Figure 2\u2014figure supplement 1B-I) with appropriate statistical testing. The correlation between elevated Imp/Chinmo and loss of Mamo (C61-C62) provides mechanistic support. The temporal persistence of elevated Imp (C63) strengthens the conclusion that activin signaling specifically regulates Imp levels.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "Despite elevated Imp in babo mutants, the absolute level of Imp still decreases over time (though with delayed kinetics), and Syp levels increase from L3 to 24hr APF. The lack of \u03b1'\u03b2' neurons even when Imp is eventually low suggests \u03b1'\u03b2' specification is restricted to the L3-to-pupation window.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C67 are supported by temporal analysis comparing absolute fluorescence values at L3 vs 24hr APF (Figure 2\u2014figure supplement 1J-J'). This demonstrates that an intrinsic clock continues to operate independently of activin signaling. The inference about temporal restriction of \u03b1'\u03b2' specification (C67) is logical but represents an interpretation that could benefit from additional temporal manipulation experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "Activin signaling acts in mushroom body neuroblasts, not in neurons, to specify \u03b1'\u03b2' fate. GMC clones (which bypass neuroblasts) show that babo mutant neurons born at L3 still produce \u03b1'\u03b2' neurons (34/34 clones), while babo mutant \u03b3 neurons show the expected remodeling defect (8/10 clones).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C70 are supported by elegant GMC clone experiments (Figure 2\u2014figure supplement 1K-L') that distinguish neuroblast vs neuronal requirements. The positive control (\u03b3 remodeling defect) validates the approach. This is critical for establishing the cellular site of action and distinguishing from previously known post-mitotic roles of activin signaling in \u03b3 neurons.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "Constitutive activation of Baboon (UAS-Babo-Act) increases \u03b1'\u03b2' neuron production from 25.5% to 32% of total and causes precocious Mamo expression at early L3 when \u03b3 neurons are normally produced. However, activation does not convert all neurons to \u03b1'\u03b2' fate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C73 are supported by quantitative analysis (Figure 3A-B) and developmental expression studies (Figure 3C-D). The gain-of-function experiment complements the loss-of-function data. The observation that not all neurons become \u03b1'\u03b2' (C73) is important for establishing that activin signaling is necessary but not sufficient, requiring integration with other factors.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "Glial knockdown of myoglianin (myo-RNAi with repo-Gal4) dramatically reduces \u03b1'\u03b2' neuron numbers from 428.9 \u00b1 16.2 to 106.6 \u00b1 11.4 and eliminates Mamo expression at L3. Loss of EcR expression in \u03b3 neurons serves as a positive control for knockdown efficiency.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C77 are supported by quantitative analysis (Figure 4A-E) and developmental expression studies (Figure 4F-G). The positive control (C77) validates the knockdown efficiency. However, the incomplete loss of \u03b1'\u03b2' neurons (compared to babo mutants) suggests either incomplete knockdown or involvement of additional ligands, which the authors appropriately acknowledge in the Discussion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "Low Imp levels are specifically required at L3 for \u03b1'\u03b2' specification. Both knockdown and overexpression of Imp eliminate Mamo expression, while Syp knockdown eliminates Mamo but Syp overexpression does not. This indicates that low Imp and low-or-high Syp levels are required for \u03b1'\u03b2' specification.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C81 are supported by systematic manipulation experiments (Figure 5A-E) examining Mamo expression under different conditions. The bidirectional Imp requirement (both knockdown and overexpression block specification) is particularly informative and supports a narrow permissive window. The differential Syp requirements suggest Syp's primary role is in mamo mRNA stabilization rather than specification per se.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C82",
+      "C83"
+    ],
+    "result": "Expressing UAS-babo rescues \u03b1'\u03b2' neurons in babo mutant clones (21.1 \u00b1 2.4% vs 2.2 \u00b1 0.4% in babo alone), while overexpressing Syp does not rescue (1.8 \u00b1 0.5%). Expressing Imp-RNAi in babo mutants also fails to rescue (0.17 \u00b1 0.17%).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C83 are supported by rescue experiments (Figure 5\u2014figure supplement 1F-P) with appropriate quantification. The successful rescue with UAS-babo validates the specificity of the phenotype. The failure to rescue with Syp overexpression (C83) or Imp knockdown supports the model that precise Imp levels (not just the Imp:Syp ratio) are critical. However, the Imp-RNAi failure could also reflect over-reduction below the permissive threshold.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "Ecdysone signaling is not necessary for \u03b1'\u03b2' specification. While UAS-EcR-DN expression blocks \u03b1'\u03b2' neurons and Mamo expression, usp mutants retain \u03b1'\u03b2' neurons, EcR-RNAi does not affect Mamo, EcR-DN does not alter Imp:Syp ratios in neuroblasts, and EcR protein is not detected in Mamo+ cells at L3. The EcR-DN effect appears to be an artifact of off-target Mamo inhibition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C96 are supported by extensive experiments addressing an apparent contradiction with prior literature. The key evidence includes: (1) usp mutants retain \u03b1'\u03b2' neurons (C86), (2) EcR-RNAi doesn't affect Mamo (C91), (3) EcR and Mamo are mutually exclusive (C92), (4) EcR-DN only works when expressed in neurons not neuroblasts (C87-C89), and (5) EcR-DN doesn't affect Imp:Syp ratios (C87). This comprehensive analysis convincingly demonstrates that the EcR-DN phenotype is artifactual and that ecdysone is not required for specification (though it may function later in differentiation).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C9",
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "An extrinsic cue (activin signaling) modifies an intrinsic temporal program (Imp/Syp gradients) to increase neuronal diversity. Activin signaling from glia rapidly reduces Imp at mid-L3 without affecting Syp, establishing a low Imp/low Syp window that enables Chinmo-dependent Mamo expression and \u03b1'\u03b2' specification. Subsequently, high Syp during pupation specifies \u03b1\u03b2 identity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9, C97-C99 represent the main conclusions integrating all experimental findings. The model is well-supported by: (1) temporal correlation between activin signaling and Imp reduction, (2) loss-of-function and gain-of-function phenotypes, (3) demonstration that intrinsic clock continues in babo mutants, and (4) mechanistic connection through Chinmo and Mamo. This represents a significant advance in understanding how extrinsic and intrinsic programs interact.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C104",
+      "C105"
+    ],
+    "result": "Activin signaling times the Imp to Syp transition in mushroom body neuroblasts, similar to ecdysone's function in other central brain neuroblasts. However, the Imp to Syp switch still occurs in both cases, indicating an independent intrinsic clock continues to operate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C104-C105 are supported by the temporal analysis showing continued Imp decrease and Syp increase in babo mutants (C65-C66) and comparison to prior work on ecdysone (C23). This establishes an important principle that extrinsic cues modulate but don't completely override intrinsic temporal programs. The comparison to ecdysone function in other neuroblasts (C104) is supported by appropriate citations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "The authors propose that pioneer-\u03b1\u03b2 neurons (the first \u03b1\u03b2 subclass) are specified when Imp is at very low levels during early pupation, explaining why these neurons may increase in babo mutants while total \u03b1\u03b2 numbers decrease. At least seven mushroom body neuron subtypes exist (2\u03b3, 2\u03b1'\u03b2', 3\u03b1\u03b2) that are specified sequentially.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C101-C103 represent speculation to reconcile their findings with a prior report. While C102-C103 are supported by citations, C101 is explicitly speculative ('we believe', 'we speculate') and lacks direct experimental evidence. The model is plausible but would require subtype-specific markers and quantification to validate. This represents an important hypothesis for future work but is not demonstrated in the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "Background claims establishing the context for temporal patterning in neural development, including vertebrate cortical development, Drosophila neuroblast biology, mushroom body structure and function, and the roles of Imp, Syp, and ecdysone in temporal patterning.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C30 represent established knowledge from prior literature, appropriately cited throughout. These provide essential context but are not novel findings of this study. The claims are well-supported by the cited references and represent accurate summaries of the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C59",
+      "C74"
+    ],
+    "result": "Background claims about the activin signaling pathway: Babo is the sole Type I activin receptor acting through Smad2, babo is expressed evenly in mushroom body neuroblasts, and glia secrete Myoglianin to regulate mushroom body development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C47, C59, C74 represent established knowledge about the activin pathway with appropriate citations. The Smad2 mutant phenotype (C46) provides independent validation of the pathway. The even expression of babo (C59) is supported by transcriptome data and is important for establishing that temporal regulation occurs through ligand availability rather than receptor expression.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117"
+    ],
+    "result": "Discussion claims about conservation of temporal patterning mechanisms, comparison to vertebrate systems, interpretation of ecdysone results, and proposals for how extrinsic cues may generally subdivide intrinsic temporal windows to increase neuronal diversity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C106-C117 represent interpretations and comparisons to other systems, appropriately supported by citations. C108-C113 provide important methodological considerations about EcR-DN experiments. C114 represents a testable hypothesis extending the findings to other neuroblasts. These discussion points are well-reasoned and appropriately hedged where speculative.",
+    "result_type": "MINOR"
+  }
+]

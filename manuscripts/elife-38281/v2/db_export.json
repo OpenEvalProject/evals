@@ -1,0 +1,2147 @@
+{
+  "submission": {
+    "id": "f36eda71-0ed4-413a-b209-babdeb244d90",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T06:33:49.381875Z",
+    "updated_at": "2025-12-02T06:33:49.381875Z"
+  },
+  "content": [
+    {
+      "id": "e091c84d-3c5c-4ce7-8495-1695c02a2a1a",
+      "submission_id": "f36eda71-0ed4-413a-b209-babdeb244d90",
+      "content_type": "manuscript",
+      "content_text": "# Range, routing and kinetics of rod signaling in primate retina\n\n## Authors\n\n- William N Grimes<sup>1</sup>\n- Jacob Baudin<sup>1</sup>\n- Anthony W Azevedo<sup>1</sup>\n- Fred Rieke<sup>1</sup> ([ORCID: 0000-0002-1052-2609](https://orcid.org/0000-0002-1052-2609)) \u2020\n\n### Affiliations\n\n1. Department of Physiology and Biophysics University of Washington Seattle United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nStimulus- or context-dependent routing of neural signals through parallel pathways can permit flexible processing of diverse inputs. For example, work in mouse shows that rod photoreceptor signals are routed through several retinal pathways, each specialized for different light levels. This light-level-dependent routing of rod signals has been invoked to explain several human perceptual results, but it has not been tested in primate retina. Here, we show, surprisingly, that rod signals traverse the primate retina almost exclusively through a single pathway \u2013 the dedicated rod bipolar pathway. Identical experiments in mouse and primate reveal substantial differences in how rod signals traverse the retina. These results require reevaluating human perceptual results in terms of flexible computation within this single pathway. This includes a prominent speeding of rod signals with light level \u2013 which we show is inherited directly from the rod photoreceptors themselves rather than from different pathways with distinct kinetics.\n\n## Introduction\n\nRod photoreceptors contribute to vision across a million-fold range of light intensities. At the low end of this range - for\u00a0example in starlight - photons are few and far between, and retinal circuits face the considerable challenge of detecting and reliably transmitting signals resulting from the absorption of individual photons (reviewed by (Field et al., 2005; Takeshita et al., 2017)). Other challenges emerge as light levels increase. For example, in moonlight the high gain associated with detecting single photons, if unabated, would quickly saturate retinal responses. At the same time, the increased fidelity of light inputs at dawn or dusk creates opportunities for more elaborate computations than possible in starlight.\n\nA prominent hypothesis about how retinal circuits meet these changing demands proposes that the routes that rod-derived signals take through the retina depend on mean light level (Sharpe and Stockman, 1999; Tsukamoto et al., 2001; Bloomfield and Dacheux, 2001; Deans et al., 2002) - with different circuits specialized to handle the challenges associated with different light levels. These circuits include (Figure 1; reviewed by (Bloomfield and Dacheux, 2001; Field et al., 2005; Field and Chichilnisky, 2007; Demb and Singer, 2012)): (1) the primary pathway, in which dedicated rod bipolar cells transmit rod signals, (2) the secondary pathway, in which gap junctions convey rod signals to cones and the associated cone circuitry, and (3) the tertiary pathway, in which Off cone bipolar cell dendrites receive direct rod input. Recent work also proposes that rod signals can reach cones (and then cone bipolar cells) through horizontal cells, creating rod-cone spectral opponency (Joesch and Meister, 2016).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/38281/elife-38281-fig1-v2.jpg)\n\n**Figure 1.:** (A) In the primary pathway, rod signals are routed through dedicated rod bipolar cells to AII amacrine cells. AII amacrine cells in turn transmit \u2018On\u2019 signals to On cone bipolar cells through dendro-axonal gap junctions and \u2018Off\u2019 signals to Off cone bipolar cells through glycinergic synapses. Cone bipolar signals are subsequently transmitted to retinal ganglion cells. (B) In the secondary pathway, rod transmit signals via gap junctions to cone axons, and hence the associated cone circuitry (Kolb, 1977; Schneeweis and Schnapf, 1995; Deans et al., 2002; Hornstein et al., 2005). (C) In the tertiary pathway, rods transmit signals directly to Off cone bipolar cell dendrites (Soucy et al., 1998; Hack et al., 1999; Tsukamoto et al., 2001). Plus and minus signs represent sign-conserving and sign-inverting synapses.\n\nA light-level-dependent routing of rod-derived signals has been invoked to explain several human perceptual observations (reviewed by (Sharpe and Stockman, 1999; Buck, 2004; Stockman and Sharpe, 2006; Buck, 2014; Zele and Cao, 2014)). For example, perceptual experiments show that the kinetics of rod-derived signals speed substantially as luminance levels increase from low to high mesopic conditions (i.e. conditions where rods and cones both contribute to vision) (Connaughton et al., 1999; Sharpe et al., 1989). Relatedly, differences in the kinetics of rod- and cone-derived signals play a central role in how these signals are combined perceptually (MacLeod, 1972; Frumkes et al., 1973; Grimes et al., 2015). The link between these perceptual phenomena and the routing of rod signals is based on the assumption that the primary pathway introduces larger delays in rod-derived signals than the secondary or tertiary pathways.\n\nWork in rodent retina supports the hypothesized light-level-dependent routing of rod signals (Soucy et al., 1998; Deans et al., 2002; Trexler et al., 2005), although this support comes with some caveats. Specifically, while the primary pathway dominates responses of mouse ganglion cells at low light levels, the secondary pathway contributes substantially at mesopic light levels (Deans et al., 2002; Ke et al., 2014; Grimes et al., 2014b). The observed change in routing, however, is incomplete, with at most an approximately equal distribution of signals between primary and secondary pathways at high mesopic light levels (Ke et al., 2014; Grimes et al., 2014b). Further, there is no direct physiological evidence that the kinetics of signals traversing the primary and secondary pathways differ.\n\nDespite its importance for understanding human vision, the routing of rod signals through the primate retina is not well understood, and it is unclear to what extent findings in rodents will translate to primate. Here, we determine (1) the range over which primate rod photoreceptors control retinal output, (2) how and when rod signals traverse a given pathway, and (3) what mechanisms shape the kinetics of rod-derived retinal outputs. Surprisingly, and unlike mouse retina, we find that rod-derived signals in primate retina are largely restricted to the primary pathway even at mesopic light levels. Under the same conditions, the responses of rods themselves speed sufficiently to explain previous human perceptual results, indicating that this speeding does not require the rerouting of rod-derived signals through faster retinal pathways.\n\n## Results\n\n### Rod signaling range and saturation\n\nWe start by defining the range of light levels over which rod photoreceptors respond to light inputs and comparing this range to the range over which rod-derived signals are present in the retinal outputs.\n\nWe used suction electrode recordings to measure rod outer segment membrane currents (i.e. phototransduction currents). Figure 2A compares responses to a series of light steps (10 s) with the response to a saturating flash. Light steps producing\u00a0~40 R*/rod/s halved the outer segment current, and steps producing\u00a0\u2265300 R*/rod/s suppressed nearly all of the dark current. Figure 2B collects results from several such experiments. Mean backgrounds of 250 R*/rod/s suppressed 90% of the dark current (red line). This suppression was maintained during\u00a0light steps that persisted for 2\u20133 min (<5% recovery of dark current, not shown). We did not test suppression for longer steps because of the lack of photopigment regeneration in our preparations (see Discussion).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/38281/elife-38281-fig2-v2.jpg)\n\n**Figure 2.:** (A) Direct recordings of photocurrent from rod outer segments (primate). Comparison of the responses to a short-wavelength saturating flash and a family of 10 s light steps or \u2018backgrounds.\u2019 (B) Current suppression, relative to saturation, plotted as a function of background luminance. Red arrow (250 R*/rod/s) indicates 90% saturation. (C) Gain of rod signals probed with short wavelength flashes on a range of rod adapting backgrounds in rod photoreceptors (top), On parasol RGCs (middle) and On Midget RGCs (bottom; traces are mean responses scaled by the flash strength in R*/rod, see Materials\u00a0and\u00a0methods). Gain is normalized to that measured at 0.3 R*/rod/s. (D) Population data for rod gain measurements in rod photoreceptors and ganglion cells. The solid line shows Weber behavior, and the dashed line highlights the steep drop in gain associated with rod saturation. Gain is normalized to that measured at 0.3 R*/rod/s.\n\nTo compare the signaling range of rods with that of retinal ganglion cells (RGCs; the retinal output neurons), we measured rod photocurrents and RGC spike responses to brief short-wavelength flashes across a range of backgrounds (Figure 2C). Spectral measurements indicated that RGC responses to these short-wavelength flashes were predominantly driven by rods for backgrounds up to 300 R*/rod/s (see Materials and methods). Figure 2D summarizes measurements of the background dependence of rod and RGC response gain (peak response divided by flash strength). Between darkness and 3 R*/rod/s, RGC gain declined considerably more than rod gain. This reduction in RGC gain reflects post-rod circuit adaptation (Lee et al., 1990; Purpura et al., 1990; Dunn et al., 2006; Schwartz and Rieke, 2013) \u2013 for\u00a0example at the rod bipolar output synapse (Dunn and Rieke, 2008; Oesch and Diamond, 2011). For backgrounds between 3 and 100 R*/rod/s, both rod and ganglion cell gain declined approximately inversely with background, as expected for Weber\u2019s Law (reviewed in (Rieke and Rudd, 2009)). Thus, for this range of light levels most of the decline in RGC gain can be accounted for by the rods. Above 100 R*/rod/s, rod signal gain in both rods and RGCs declined with increasing background more sharply than expected from Weber\u2019s Law, falling by a factor of\u00a0~100 between 100 and 1000 R*/rod/s (black line). This abrupt decline in the gain of rod-derived signals coincides closely with the suppression of outer segment current (Figure 2B). The reduction in rod and RGC signal gain, like the reduction in rod outer segment current, was maintained for light steps that persisted for 2\u20133 min.\n\nThese experiments indicate that the primary limitation on the range of rod-derived signaling in the retinal output is a decrease in the gain of rod signals, rather than decreased gain in post-rod circuitry. Rods may continue to weakly modulate retinal output signals above 300 R*/rod/s, as observed in rodents (Yin et al., 2006; Naarendorp et al., 2010; Tikidji-Hamburyan et al., 2017), but such responses are small compared to cone-derived responses for all but short wavelength stimuli under our experimental conditions (see Materials and methods). Hence, we refer to the sharp drop in sensitivity above 300 R*/rod/s as rod saturation and focus on rod signaling for backgrounds of 0 to 300 R*/rod/s. Note that 300 R*/rod/s is an upper bound for large rod-derived RGC responses under the conditions of our experiments, and that cone-derived responses could dominate at lower light levels in pathways with relatively weak rod-derived signals.\n\n### Rod signal routing\n\nWhat route do rod signals take through the primate retina across the range of light levels identified above? The results described below show, surprisingly, that signaling through the rod bipolar pathway dominates rod-derived RGC responses across a broad range of stimuli and light levels.\n\nWe start by comparing responses of key cells in the primary and secondary rod pathways. One such cell is the AII amacrine cell. AII amacrines receive direct glutamatergic input from rod bipolar cells through AMPA-type glutamate receptors and make bidirectional electrical synapses with On cone bipolar cell axons (Figure 3A). Thus, under control conditions, AII responses reflect signaling from both the primary pathway via rod bipolar cells and the secondary pathway via gap junctional input from cone bipolar cells. In the presence of AMPA receptor antagonists, remaining AII responses reflect input only from the secondary pathway (Cohen, 1998; Trexler et al., 2001; Murphy and Rieke, 2008; M\u00fcnch et al., 2009; Grimes et al., 2014b; Ke et al., 2014). Because AMPA receptor antagonists likely alter retinal signaling in multiple ways, we performed complementary experiments on horizontal cells that did not require pharmacological manipulation. We start by describing the AII results.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/38281/elife-38281-fig3-v2.jpg)\n\n**Figure 3.:** (A) Schematic of the primary and secondary rod pathways and action of the pharmacological manipulation used in the AII amacrine recordings. (B,D,F) Responses to short wavelength 600% contrast flashes across a range of rod backgrounds in AII amacrine cells, H1 horizontal cells, and M-cones. (B) Voltage responses of a\u00a0current-clamped AII amacrine cell before (black) and during exposure to NBQX (10 \u00b5M). (C) Population data for AII amacrine recordings with and without NBQX. Responses are normalized by the response amplitude measured at 2000R*/rod/s. (D) Voltage responses of a current-clamped H1 horizontal cell. (E) Population data for H1 horizontal and M-cone recordings. Responses are normalized by the response amplitude measured at 2000\u00a0R*/rod/s. (F) Voltage responses of a M-cone recorded in the perforated-patch configuration.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/38281/elife-38281-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** Example current-clamp recording of scotopic and mesopic signaling in an AII amacrine cell. Flash responses in darkness were largely eliminated by bath application of NBQX. NBQX-insensitive responses emerged as flash strength was further increased. In the presence of dim (3 R*/rod/s) and moderate (30 R*/rod/s) backgrounds, stimuli that produce sub-saturating responses in the RGCs (scaled) are almost entirely blocked by NBQX in AII amacrines. At a background of 300 R*/rod/s (i.e. above rod saturation) flash responses in AIIs are largely insensitive to NBQX application.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/38281/elife-38281-fig3-figsupp2-v2.jpg)\n\n**Figure 3\u2014figure supplement 2.:** (A) Responses of a L cone to a family of brief 405 nm flashes producing from 15 to 1000 R*/cone. Inset shows an example of the rapid response originating in the cone outer segment and the long \u2018tail\u2019 associated with the response originating in the rod outer segment and conveyed to cones through rod-cone gap junctions (see Schneeweis and Schnapf, 1995). (B) Average response of the same cell as in A to a flash producing\u00a0~1 R*/rod (black). For comparison, the gray trace shows the scaled response from the inset in A. (C) Mean response squared and time-dependent variance (corrected for variance without a flash) for the same cell as A and B. Assuming the variance is dominated by Poisson fluctuations in photon absorption, the ratio between the mean response squared and the variance provides an estimate of the mean number of absorbed photons contributing to the response. In this cell, that corresponds to a single photon response of 0.022 mV. For six cells, the mean was 0.046\u00a0\u00b1\u00a00.007 (mean\u00a0\u00b1\u00a0SEM), consistent with previous work (Hornstein et al., 2005).\n\n![Figure 3\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/38281/elife-38281-fig3-figsupp3-v2.jpg)\n\n**Figure 3\u2014figure supplement 3.:** Example recordings of a H1 horizontal cell (top row) and an On parasol RGC (bottom row) from the same retinal mount. As in Figure 3\u2014figure supplement 1, short wavelength rod-preferring (and occasional long wavelength cone-preferring) flash responses were recorded across a range of scotopic and mesopic backgrounds. Rod signals in H1 horizontal cells were weak at low and intermediate backgrounds, despite the cells\u2019 robust responses to long wavelength stimuli. At 300 R*/rod/s, long and short wavelength stimuli evoked responses with similar kinetics, suggesting they both arise from cones. On parasol RGC responses, however, were largest at the dimmest light levels. At 300 R*/rod/s, responses in On parasols had kinetics that were similar to those observed in horizontal cells. Right and left ordinate axes on the middle plots are scaled such the RGC and H1 responses are matched at 300 R*/rod/s (a background at which signals are dominated by cone activity).\n\nAfter achieving a stable current-clamp recording, short-wavelength flashes were delivered on backgrounds ranging from darkness to 2000 R*/rod/s (Figure 3B). These backgrounds extend beyond rod saturation (see Figure 2). Flash strength scaled with background, so that the contrast was fixed (e.g. flashes produced 0.07 R*/rod from a background of 1 R*/rod/s and 0.7 R*/rod from a background of 10 R*/rod/s). Primate AII amacrines did not exhibit the large steady-state hyperpolarization with backgrounds seen in mouse AII amacrines (Grimes et al., 2014b). The sensitivity of AII flash responses recorded in control conditions closely matched that of excitatory synaptic inputs to On parasol RGCs (Figure 3\u2014figure supplement 1). This is consistent with the known role of AII amacrine cells in the circuits that convey rod signals to RGCs across light levels and confirms that AII responses are a reliable indicator of the strength of rod signals in On retinal circuits.\n\nBlock of AMPA receptors with NBQX reduced AII responses more than 80% at backgrounds at or below 30 R*/rod/s (Figure 3B\u2013C). Several properties of the NBQX-insensitive responses suggest that they originated in cones. First, they had shorter durations than control AII responses (Figure 3\u2014figure supplement 1). Second, they grew with increasing background, reaching half-maximal amplitude at\u00a0~300 R*/rod/s (Figure 3C; note that because of the scaling of flash strength with background, a constant response does not mean responses are saturated but instead that they are proportional to contrast). Most importantly for our purposes, NBQX-insensitive responses were largely absent over the range of light levels in which rods modulate the retinal outputs (i.e. below 300 R*/rod/s). This correspondence between rod saturation (Figure 2) and the emergence of NBQX-insensitive responses (Figure 3) suggests that the secondary rod pathway does not play a major role in transmitting rod signals to ganglion cells in primates, regardless of light level.\n\nThe dominance of the primary rod pathway suggested by the AII recordings is subject to the caveat that NBQX will impact retinal signaling in multiple ways. To test this conclusion without the need for pharmacology, we made current-clamp recordings from H1 horizontal cells. H1 horizontal cells receive direct synaptic input from L- and M- cones (Figure 3A; [Kolb, 1970; Rodieck, 1998; Verweij et al., 1999]). Rod input could reach H1 horizontal cells through rod-cone gap junctions and cone synaptic output (Nelson, 1977; Schneeweis and Schnapf, 1995; Hornstein et al., 2005) or through direct rod contacts onto H1 cells as suggested by recent work in mouse (Joesch and Meister, 2016). H1 horizontal cells provide a readout of signals in either of these alternate pathways. H1 responses, like the NBQX-insensitive responses of AII amacrine cells, were weak at low backgrounds but became pronounced at backgrounds\u00a0\u2265\u00a0300 R*/rod/s (Figure 3D,E). Responses of cones were very similar to those of horizontal cells, with the emergence of a sizeable response only for backgrounds\u00a0\u2265\u00a0300 R*/rod/s (Figure 3E,F). Rod responses measured in cones and horizontal cells in our experiments were similar in magnitude and kinetics to those in previous studies (Hornstein et al., 2005; Verweij et al., 1999) (Figure 3\u2014figure supplement 2).\n\nIn a subset of horizontal cell recordings, we compared responses to short-wavelength (rod-preferring) and long-wavelength (cone-preferring) flashes (Figure 3\u2014figure supplement 3). At backgrounds below 300 R*/rod/s, responses to short wavelength flashes had substantially slower kinetics than responses to long wavelength flashes, consistent with rod signaling. These responses, however, were small even for flashes that elicited large RGC responses. At backgrounds\u00a0\u2265\u00a0300 R*/rod/s, responses to long- and short-wavelength flashes had very similar kinetics, suggesting that at these light levels both responses originated in the cones.\n\nThe weak rod responses in cones and horizontal cells are consistent with the NBQX-insensitive responses in AII amacrine cells. The consistency of these results mitigates concerns about off-target effects of AMPA receptor block. Thus, these results collectively indicate that the secondary pathway plays, at most, a minor role in transmitting rod signals to ganglion cells in primate retina for the stimuli probed here.\n\n### Comparison of rod signal routing in mouse and primate\n\nThe lack of prominent secondary pathway contributions in primate was unexpected, as previous experiments in rodents have assigned a substantial role to the secondary pathway in transmitting rod signals (Deans et al., 2002; Trexler et al., 2005; Grimes et al., 2014b; Ke et al., 2014). To confirm this interspecies difference, we repeated several experiments from Figures 2 and 3 in mouse retina (Figure 4).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/38281/elife-38281-fig4-v2.jpg)\n\n**Figure 4.:** (A) Steady-state measurements of the dependence of rod current on mean light level from suction recordings in primate and mouse as in Figure 2A. Traces are normalized to the peak amplitude of a brief saturating flash. (B) NBQX-insensitive responses to fixed contrast flashes across backgrounds in AII amacrine cells recorded in current-clamp (as in Figure 3). Asymptotic responses in these experiments (and in C-D) represent Weber behavior, not signal saturation. Black and gray arrows indicate primate and mouse 90% rod saturation levels. (C) Horizontal cell current-clamp recordings to short wavelength flashes across a range of rod adapting backgrounds in primate (top) and mouse (bottom) as in Figure 3. (D) Population data from horizontal cell recordings in primate and mouse, normalized to the responses recorded at 2000 R*/rod/s.\n\nSuction recordings from rod outer segments were again used to estimate the range of rod signaling by comparing the suppression of current produced by a light step with that produced by a saturating flash, as in Figure 2A. Near-complete suppression of the outer segment current occurred at higher light levels in mouse compared to primate rods (90% saturation at 1000 vs 250 R*/rod/s; Figure 4A). Voltage responses of AII amacrine cells in NBQX (Figure 4B) and of horizontal cells in control conditions (Figure 4C\u2013D) to fixed-contrast stimuli indicated that the contrast sensitivity of signals in the secondary pathway in mouse was half maximal at\u00a0~5 R*/rod/s, nearly two orders of magnitude lower than the half-maximal intensity of secondary-pathway rod signals in primate. For backgrounds\u00a0\u2265\u00a050 R*/rod/s, responses of mouse horizontal cells and NBQX-insensitive responses of mouse AII amacrines to fixed-contrast stimuli depended weakly on background. This does not mean that responses are saturated; instead, consistent responses to fixed contrast across backgrounds indicate Weber behavior (i.e. that gain scales inversely with background).\n\nThese experiments indicate that signaling in mouse and primate rod photoreceptors is much more similar than signaling in the circuits that convey rod signals to ganglion cells. Specifically, the secondary pathway in mouse begins contributing to retinal output at light levels that are more than 100-fold below rod saturation, whereas in primate signals from the secondary pathway are largely absent below rod saturation.\n\n### Routing of responses to continuous stimuli\n\nWe next considered whether continuous stimuli might elicit larger signals through the secondary pathway than the brief flashes used thus far. Sinusoidal stimuli are of particular relevance since they are used in many of the human perceptual studies that motivate the light-level-dependent rod routing hypothesis.\n\nWe started by recording excitatory synaptic input to an On parasol RGC in response to short- (rod-preferring) and long- (cone-preferring) wavelength sinusoidal stimuli at a mid-mesopic light level (10 R*/rod/s). The contrasts of the short and long wavelength stimuli were adjusted so that when modulated individually at 2 Hz they produced roughly equal amplitude modulation of the RGC\u2019s excitatory inputs. These contrast amplitudes were then held fixed as we explored responses to a range of temporal frequencies (Figure 5A,B). As observed previously (Dacey, 2000), cone-derived responses were much larger than rod-derived responses at temporal frequencies\u00a0\u2265\u00a010 Hz (Figure 5B).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/38281/elife-38281-fig5-v2.jpg)\n\n**Figure 5.:** (A) Excitatory synaptic input recorded from an On parasol RGC in response to sinusoidally-modulated short (rod-preferring; blue traces) and long (cone-preferring; red traces) wavelength stimuli. Contrasts were adjusted to produce equal modulation at 2 Hz and were then held fixed for all subsequent recordings (e.g. different frequencies, horizontal recordings). (B) Population data from On parasol RGC recordings (n=2)\u00a0plotting response modulation versus stimulus frequency. (C) Voltage response of an H1 horizontal cell (from the same retinal mount) to short and long wavelength stimuli for the same contrast used for the parasol cell in A. (D) Population data from H1 horizontal recordings (n=4)\u00a0plotting response modulation versus stimulus frequency.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/38281/elife-38281-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** (A) Spike responses to 15 Hz flicker in On parasol RGCs across a range of backgrounds. (B) Responses across frequencies and backgrounds. Averaged spike responses for each cell were fit with sine waves matched to the stimulus frequency. The amplitudes of these fits were used for this analysis. Plot collects data from 4 On and 4 Off parasol cells (mean\u00a0\u00b1\u00a0SEM).\n\nWe next recorded from H1 horizontal cells in the same piece of retina and measured responses to the same stimuli (i.e. contrasts and background) used in the parasol recordings. Across all temporal frequencies that elicited clear rod responses (\u226410 Hz), the ratio of H1 responses to rod- and cone-preferring stimuli was at least seven times smaller than that for On parasol responses to the same stimuli (Figure 5C,D). Hence, rod-derived signals recorded in the secondary pathway in response to sinusoidal stimuli are too weak to explain rod-derived RGC responses. Instead, the primary rod pathway dominates responses to both sinusoidal and flashed stimuli.\n\nA particular perceptual observation that motivates the rod routing hypothesis is an unexpectedly low sensitivity to 15 Hz rod flicker over a specific luminance range (Sharpe et al., 1989). A proposed explanation for this percept is that rod signals in slow and fast retinal circuits arrive at a downstream integration site out of phase and hence cancel (Sharpe and Stockman, 1999). The results described above are inconsistent with this proposal, but also do not probe the relevant stimuli directly. Hence, we measured parasol spike responses to 15 Hz flicker for light levels from 1 to 300 R*/rod/s (and 2000 R*/rod/s to measure cone-derived responses). This includes the light levels at which the perceptual rod flicker null occurs (~5 R*/rod/s; [Sharpe et al., 1989]). On parasol responses increased monotonically without an apparent null or abrupt change in phase needed to explain the perceptual observations (Figure 5\u2014figure supplement 1A). More complete frequency tuning curves measured across the same range of light levels showed a gradual increase in responses at high frequencies with increasing light level from 1 to 300 R*/rod/s (Figure 5\u2014figure supplement 1B). In particular, temporal tuning did not exhibit any abrupt discontinuities across this range of light levels suggestive of rod-rod cancelation. This data suggests that the perceptual flicker null does not originate from convergence of parallel rod circuits prior to On parasol RGCs (see Discussion and Cao et al., 2010).\n\n### Routing of rod signals in Off retinal circuits\n\nOur results thus far suggest that the primary rod pathway continues to convey rod signals to On parasol ganglion cells even when the rods are approaching saturation. Does the primary pathway also dominate responses in Off retinal circuits? Rod signals could reach Off cone bipolar cells from three known sources (Figure 1): (1) dendritic input directly from rods (i.e. tertiary pathway), (2) dendritic input from cones (i.e. secondary pathway), and (3) axonal inhibitory input from AII amacrine cells (i.e. primary pathway). The wiring differences between On and Off circuits suggests that both the relative weighting of rod- and cone-derived signals and the routing of rod signals could differ.\n\nTo test these hypotheses, we first compared the relative weighting of rod- and cone-derived signals in the excitatory synaptic inputs to On and Off parasol and midget RGCs at a mean light level of 20 R*/rod/s (Figure 6A\u2013C). Like the experiments in Figure 5, we began by adjusting the contrasts of rod- and cone-preferring stimuli so that they produced equal amplitude responses in an On parasol RGC (Figure 6A,C). After achieving a match, we presented these response-equated stimuli while recording from other RGC types in the same piece of retina. In Off RGCs, responses to rod-preferring stimuli were roughly half as large as responses to cone-preferring stimuli (Figure 6B,C). This difference in the relative sensitivity of rod and cone signals indicates in turn that rod signals are less strongly routed through Off cone bipolar cells than On cone bipolar cells at this light level. This difference in weighting will be an important consideration for how different retinal circuits contribute to perception at these light levels.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/38281/elife-38281-fig6-v2.jpg)\n\n**Figure 6.:** (A) Excitatory synaptic input recorded from an On parasol RGC in response to sinusoidally\u00a0modulated short (rod-preferring; blue traces) and long (cone preferring; red traces) wavelength stimuli. Contrasts were adjusted to produce equal modulation at 2 Hz, and were then held fixed for subsequent recordings from other cell types (e.g. Off parasol RGC). (B) Excitatory synaptic input recorded from an Off parasol RGC from the same retinal mount as A and in response to the same stimuli. (C) Relative weighting of rod and cone signals in excitatory inputs to On and Off RGCs. Mean light levels for\u00a0A-C\u00a0were~20R*/rod/s and~200R*/L-cone/s.\u00a0(D) Schematic of the primary and tertiary rod circuits that influence Off cone bipolar signaling and the actions of the mGluR6 agonist/antagonist mixture LY/APB. (E) Rod-derived excitatory synaptic inputs to an Off parasol cell at 20 R*/rod/s in control conditions and after suppressing activity in all On bipolar cells with an mGluR6 agonist/antagonist cocktail (LY/APB, see Materials and methods). (F) Response ratio (cocktail:control) across cells as a function of mean luminance. Data are plotted as mean\u00a0\u00b1\u00a0SEM. (G) Rod-derived excitatory inputs to an Off alpha RGC (mouse;\u00a05\u00a0R*/rod/s) in control conditions and after suppressing activity in all On bipolar cells with an mGluR6 agonist/antagonist cocktail (LY/APB, see Materials and methods).\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/38281/elife-38281-fig6-figsupp1-v2.jpg)\n\n**Figure 6\u2014figure supplement 1.:** Example recording of excitatory synaptic input to an Off parasol RGC in response to 2 Hz sine wave modulation of a short (rod-preferring; 100% contrast) or long (cone-preferring; 50% contrast) wavelength LED on a background of\u00a0~20 R*/rod/s and\u00a0~200 R*/L cone/s. Responses to short, but not long, wavelength light modulations were largely eliminated by a mixture of LY341495 and APB (see Materials and methods).\n\nThe On/Off asymmetry supports the conclusion that the secondary rod pathway does not convey strong rod-derived signals in primate. In the secondary pathway, rod- and cone-derived signals are mixed prior to transmission to On and Off bipolar cells; such mixing should lead to similar weighting in On and Off circuits.\n\nRod-derived responses in Off RGCs could also arise through the tertiary pathway via direct rod input to Off cone bipolar cells (Figure 6D). To test this possibility, we used a mixture of a mGluR6 agonist (APB) and antagonist (LY341495) to suppress synaptic input to all On (both rod and cone) bipolar cells. This pharmacological manipulation substantially (but not completely) suppresses light-dependent changes in excitatory synaptic input to On parasol cells (Ala-Laurila et al., 2011), and hence should suppress input to Off RGCs originating from the primary pathway. However, LY/APB should leave intact both secondary and tertiary pathway input to Off cone bipolar cells. Incomplete suppression of signaling in On circuits in these experiments would cause us to overestimate the contributions of non-primary pathway signaling.\n\nSuppression of On pathways had little effect on the excitatory responses to long wavelength stimuli (Figure 6\u2013figure supplement 1), indicating, as expected, that direct cone input to Off cone bipolar dendrites remained intact. However, suppression of On pathways reduced responses to short wavelength stimuli in Off parasol cells more than 80% at backgrounds\u00a0\u2264\u00a020 R*/rod/s (Figure 6E,F). LY/APB reduced Off parasol excitatory synaptic input considerably less at higher light levels (20% reduction at 200 R*/rod/s). Note, however, that we expect cone-derived signals to emerge at lower light levels in Off cells compared to On cells due to the difference in weighting summarized in Figure 6A\u2013C, and hence cones are likely to contribute substantially to responses of Off RGCs at 200 R*/rod/s. Although these results are subject to the caveat that the pharmacology could have off-target affects, they suggest that rod signals reach Off RGCs mainly through the primary rod pathway over most or all of the mesopic range.\n\nWe repeated the LY/APB experiments in mouse retina (Grimes et al., 2014a) to provide a direct comparison across species (Figure 6G,H; see Materials and methods for controls). At a background of 0.5 R*/rod/s, LY/APB reduced excitatory inputs to Off sustained alpha RGCs by\u00a0~90%, indicating that the primary pathway dominates signaling at this light level. At a background of 5 R*/rod/s, LY/APB reduced responses by 35%, and at a background of 50 R*/rod/s, responses were little affected. This is consistent with the results from Figure 4 that show that sizable rod signals reach AII amacrine cells through routes other than the primary pathway in mouse retina. The LY/APB insensitive responses in mouse Off RGCs could similarly arise via the secondary pathway and/or from the tertiary pathway; both of these alternative pathways can convey substantial rod signals at mesopic light levels in this species.\n\nCollectively, the experiments in Figures 3\u20136 indicate a surprising difference between how rod signals traverse the mouse and primate retinas. Specifically, unlike the situation in mouse, the primary rod pathway provides the dominant route that rod-derived signals take through the primate retina across scotopic and mesopic light levels for a wide range of stimuli. This dominance of the primary pathway means that perceptual phenomena previously attributed to a change in routing need to be reinterpreted (e.g. section on kinetics below); it also maximizes opportunities to independently process rod and cone signals since they are not mixed until late in the retinal circuitry.\n\n### Rod signal kinetics\n\nPerceptual experiments show that the kinetics of rod-derived signals speed relative to cone-derived signals as light levels increase (Sharpe et al., 1989). This speeding is often attributed to a luminance-dependent change in the dominant route that rod-derived signals take through the retina (reviewed by (Buck, 2004; Chen et al., 2000; Stockman and Sharpe, 2006; Buck, 2014)), but the experiments described above suggest that such rerouting does not occur. Instead, as described below, the shift in kinetics of rod-derived signals appears to originate within the rods themselves.\n\nWe first determined whether responses of RGCs under our experimental conditions exhibited kinetic shifts similar to those observed perceptually. Spikes (Figure 7A) and excitatory synaptic inputs (Figure 7B) were recorded from On parasol RGCs in response to sinusoidal modulation across a range of light levels (0.2\u2013100 R*/rod/s) over which rods dominate RGC responses. Both spike responses and excitatory synaptic inputs sped by\u00a0~100 ms across the range of light levels probed (Figure 7C). This speeding was similar for temporal frequencies of 4\u201310 Hz (data not shown). Kinetic changes between 1 and 10 R*/rod/s were similar in magnitude to those measured in perceptual experiments (Sharpe et al., 1989), suggesting that the retina makes a substantial contribution to the speeding observed perceptually. The conserved routing of rod signals across these light levels indicates that these kinetic shifts occur within elements of the primary rod pathway rather than from a change in the dominant pathway conveying rod signals through the retina.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/38281/elife-38281-fig7-v2.jpg)\n\n**Figure 7.:** (A) Spike responses to 4 Hz sinusoidal stimuli recorded from an On parasol across a range of rod backgrounds. (B) Excitatory input currents to the same 4 Hz stimuli. (C) Temporal shifts in On parasol responses plotted versus background luminance. The smooth empirical fit to the data is a Hill curve, which is reproduced in F. (D) Recordings of rod outer segment photocurrents in response to brief flashes for\u00a0two rod backgrounds (normalized). (E) Whole-cell current-clamp recordings from rod photoreceptors to brief flashes for the same two backgrounds\u00a0as\u00a0D (normalized). (F) Temporal shifts in rod photoreceptor recordings plotted versus rod background. (G) Exemplary current-clamp recording of a rod photoreceptor responding to a brief flash on two different rod backgrounds. Rods exhibited large steady-state hyperpolarizations as luminance levels increased. (H) Membrane response of a rod to a 1 ms current injection recorded at various physiological membrane potentials. Red dotted lines show bas(I) Measured zero-crossing time of rod responses (n=9)\u00a0to 1 ms current injections plotted as a function of baseline membrane potential.\n\nWe returned to rod suction recordings to determine if rod phototransduction contributes to the kinetic shifts in the retinal output. Measuring rod responses to sinusoidal stimuli for light levels below 1 R*/rod/s would be near impossible due to the noise associated with stochastic photon absorption. Instead, we measured responses to brief flashes (Figure 7D) and used these to infer responses to sinusoids (see Materials and methods). Flash and inferred sinusoidal responses sped as light levels increased (Figure 7F), but not to the full extent observed in responses of RGCs. Specifically, the change in kinetics observed in rod phototransduction currents could account for\u00a0~40% of the change in kinetics observed in RGC responses (Figure 7F, compare dashed blue line and closed circles).\n\nRecent work on current-to-voltage transformations in mouse and goldfish photoreceptors indicates that intrinsic membrane conductances can speed visual responses in rods and cones (Sothilingam et al., 2016; Seeliger et al., 2011; Della Santina et al., 2012; Howlett et al., 2017). Could a similar mechanism account for the additional speeding between rod outer segment currents and RGC responses? To answer this question, we made whole-cell current-clamp recordings from rod photoreceptors in retinal slices. To avoid rundown of responses, we focused on a limited number of backgrounds (typically 2\u20133 per recording). Rod voltage responses (Figure 7E) to brief flashes showed larger changes in kinetics than observed in the photocurrents (Figure 7D). Further, when we used the flash responses to predict responses to sinusoidal stimuli, we found that they could fully explain the\u00a0~100 ms change in kinetics of RGC responses to sinusoidal stimuli (Figure 7F, dashed blue line and open circles).\n\nThe speeding of the rod voltage response coincided with a large steady-state hyperpolarization of the rod membrane potential (9.0\u00a0\u00b1\u00a00.7 mV upon a step from 1 to 60 R*/rod/s, n\u00a0=\u00a010; Figure 7G). To test whether this hyperpolarization could alter the rod membrane time constant, we measured responses to brief hyperpolarizing current pulses across the physiological range of membrane voltages (with the voltage set by injecting steady currents; Figure 7H). Hyperpolarization indeed sped the membrane time constant by a factor of\u00a0~2 (Figure 7I), and this effect was well-matched to the physiological range of rod voltages (resting membrane potential in darkness of \u221244\u00a0\u00b1\u00a01 mV, n\u00a0=\u00a010).\n\nThese experiments indicate that the change in kinetics of the rod-derived retinal outputs originates largely from the rods themselves rather than from a light-dependent shift in the routing of rod signals through fast and slow retinal circuits. Background-dependent changes in post-rod retinal signaling could further shape the kinetics of responses; such effects, however, appear relatively minor as the speeding of rod-derived RGC responses can be explained by changes in the kinetics of phototransduction together with voltage-dependent changes in the conversion of outer segment currents to voltages.\n\n## Discussion\n\n### Meeting the challenges of mesopic vision\n\nSensory systems face the considerable challenge of encoding and processing widely varying inputs. Retinal processing across the 24 hr light-dark cycle exemplifies these challenges. Near visual threshold (e.g. starlight), photons arrive at individual rods only once every hundred to thousand seconds on average. Reliably detecting these sparse inputs requires integration of signals across many rods and across time. Under mesopic conditions (e.g. dawn or dusk), the rate at which photons arrive at the retina increases as much 100,000-fold; this increased rate of photon arrivals alters the functional challenges and opportunities facing retinal circuits. For example, controlling the gain of rod-derived signals to avoid saturating retinal responses becomes a dominant consideration, and the improved signal-to-noise ratio of the inputs enables computations that are not possible in starlight.\n\nA long-standing hypothesis about how rod vision operates effectively from starlight to twilight is that rod signals are routed through different retinal circuits under different conditions, such that the amplification and filtering properties of the dominant circuit are matched to the properties of the input (Dunn and Rieke, 2006). Thus, mechanisms in the primary or rod bipolar pathway are well suited to amplify single-photon responses and remove noise (Field and Rieke, 2002b; Grimes et al., 2014a) and hence support vision in starlight. As light levels increase, the gain of rod signals measured in the retinal output decreases considerably (Lee et al., 1990; Purpura et al., 1990; Schwartz and Rieke, 2013), reflecting adaptation in both the rod photoreceptors and post-rod retinal circuits (Dunn et al., 2006; Dunn and Rieke, 2008; Oesch and Diamond, 2011).\n\nIn addition to decreased gain, RGC responses speed considerably with increasing light level (Figure 8A insets). Indeed, the integration time of rod-derived RGC responses decreases by a factor of\u00a0~3 from low scotopic to high mesopic light levels. The result is a matching of temporal integration (Figure 8A) and signal-to-noise ratio (Figure 8B) to the statistical fluctuations in the light input; the open symbols in Figure 8B show how signal-to-noise depends on mean light level for a fixed (short) integration time, whereas the closed symbols show the situation with a changing integration time. Retinal circuits integrate for relatively long times at low light levels, where detecting sparse photon absorptions is a primary challenge. At low light levels, signal-to-noise is improved\u00a0~2-fold compared to the situation with a fixed short integration time. The relative magnitude of the statistical fluctuations in the input decreases as light levels increase, and the commensurate decrease in integration time enables sensitivity to higher frequency inputs (e.g. Figure 5\u2014figure supplement 1).\n\n![Figure 8.](https://cdn.elifesciences.org/articles/38281/elife-38281-fig8-v2.jpg)\n\n**Figure 8.:** (A) Integration time of retinal output measured from On parasol RGCs (n=8)\u00a0as a function of background luminance. Integration time corresponds to the integral of the response (up to the zero-crossing) divided by the peak amplitude. Inset traces show normalized PSTHs of spike responses from On parasol RGCs, with three luminance levels (i.e. 0.3, 30 and 900 R*/rod/s) highlighted. (B) Model simulating the SNR for photon capture for a range of integration times, and for various levels of mean luminance (i.e. photon flux). Longer integration times improve the reliability of retinal encoding. Solid lines represent the SNRs experienced by individual rods (left axis) and individual RGCs (right axis) as a function of integration time (taken from A) for a range of photon capture rates (i.e. luminance). Black markers represent integration time measurements taken from On parasol RGC spike recordings. White markers represent a simulated scenario in which integration time does not increase as luminance decreases (i.e. integration time observed at the highest background tested is held constant).\n\nThe speeding of rod signals has been attributed to a shift in routing of rod signals from the (presumed slow) primary pathway to the (presumed fast) secondary or cone bipolar pathway. Experiments in non-primate retinas, particularly mice, provide at least partial support for this hypothesis (Soucy et al., 1998; Deans et al., 2002; Trexler et al., 2005). The work described here shows, unexpectedly, that rod-derived signals in primate retinal ganglion cells are restricted to the primary pathway across light levels and across a broad range of stimuli. This implies that light-level-dependent changes in rod signaling in primate, such as those illustrated in Figure 8, are not due to a change in routing, but instead to flexibility within the primary pathway. Indeed, we find that the speeding of rod signals in the retinal output can be explained by a change in kinetics of signals in the rods themselves \u2013 with approximately equal contributions from phototransduction and active conductances in the inner segment.\n\n### Segregation of rod and cone signals\n\nRecent anatomical and functional studies highlight differences in the segregation of rod and cone signals between rodent and primate retina. Specifically, mouse rod bipolar cells, long thought to receive input exclusively from rods, make some contacts with cones (Behrens et al., 2016) and can convey cone-derived signals (Pang et al., 2010; Szikra et al., 2014). Cone inputs to rod bipolar cells have not been observed in primate retina. Similarly, rod contacts on cone bipolar dendrites appear more numerous in mouse than primate (Tsukamoto and Omi, 2014; Tsukamoto and Omi, 2016). This suggests a greater mixing of rod and cone signals in rodent retina than in primate retina.\n\nOur work here shows a surprisingly clear separation of rod and cone signals in primate retina \u2013 with even the well-established gap junctions between rods and cones (Kolb, 1977; Hornstein et al., 2005) conveying at most a small rod-derived signal. The resulting separation of rod and cone signals through most of the retinal circuitry maximizes opportunities for independent processing. Such independent processing may be particularly important under mesopic conditions when rod signals are approaching saturation and cone signals are small and threatened by noise. Our work also provides a cautionary reminder that mechanistic studies derived from mouse may not be directly applicable to humans.\n\n### Potential limitations\n\nAll the experiments described here used an isolated, in vitro retina preparation. Several factors could cause responses in this preparation to differ from in vivo conditions. An issue of particular concern is the washout of neuromodulators that could enhance rod signaling through the secondary pathway \u2013 for\u00a0example the dopaminergic signaling important in circadian rhythms (Ribelayga et al., 2008). We note, however, that the same preparation does not eliminate the secondary pathway in mouse, but this issue is confounded by a lack of circadian regulation in C57/Bl6 mice (Jin and Ribelayga, 2016). Another issue is damage to the retina. We attempted to minimize this issue by adopting strict criteria for including cells in our data set (see Materials and methods), based on the assumption that the most sensitive preparations we see most closely resemble in vivo conditions.\n\nRod suction and RGC recordings (Figures 2 and 4) indicate that rods are largely saturated at light levels at or above\u00a0~300 R*/rod/s in primates and\u00a0~1200 R*/rod/s in mice. Our physiological estimate of the upper end of primate rod signaling agrees well with human perceptual results (Sharpe et al., 1992). However, recordings from rodents reveal that rods can modulate retinal outputs at considerably higher light levels (Yin et al., 2006; Naarendorp et al., 2010). These remaining rod responses rely at least in part on a form of bleaching adaptation that allows rods to regain sensitivity after prolonged exposure (>10 min) to photopic backgrounds (Tikidji-Hamburyan et al., 2017). On short time scales (\u226410 min) and consistent with our results (Figure 4), Tikidji-Hamburyan and colleagues found that rods could no longer modulate RGC output at backgrounds at or above 104 R*/rod/s. It will be interesting to see if this form of slow adaptation found in mouse rods is also present in primates. We did not probe adaptation on time scales longer than 2\u20133 min as we wanted to minimize bleaching given the absence of photopigment regeneration in our preparations.\n\n### Rod flicker null\n\nWe did not find evidence for the 15 Hz flicker null that has been observed perceptually (Sharpe et al., 1989; Sharpe and Stockman, 1999). This flicker null was similarly not observed in previous in vivo recordings from monkey parasol and midget RGCs (Cao et al., 2010). Several issues could contribute to this difference: (1) Cancellation of rod signals was proposed to occur between the primary and secondary pathways, but this might be incorrect. Alternatively, cancellation could reflect the downstream integration of 15 Hz signals from On and Off pathways, or it might arise in a distinct set of RGCs from those recorded here. (2) The rod flicker null is observed over a narrow luminance range that may have been missed in our experiments. (3) Neuromodulators that enhance rod-cone coupling are washed out in our in vitro preparation. Future experiments will be needed to uncover the origins of this perceptual effect.\n\n### Linking neural circuits to perception\n\nInteractions between rod and cone signals affect many aspects of mesopic vision (reviewed by (Buck, 2014; Stockman and Sharpe, 2006). The experiments described here indicate that the speeding of rod-derived signals is not due to a change in routing, as often assumed, but instead occurs largely within the rods themselves. Thus, this work implicates rod adaptation, and not rerouting, as the critical retinal mechanism that shapes the time course of rod-derived signals and ultimately human perception under scotopic and mesopic conditions.\n\n## Materials and methods\n\n### Electrophysiology\n\nExperiments were conducted on whole mount or slice (200 \u03bcm thick) preparations of primate ( M.\u00a0fascicularis, M. mulatta and M. nemestrina) or mouse (C57/BL6) retina as previously described (Dunn et al., 2007; Trong and Rieke, 2008). Retinas were obtained through the Tissue Distribution Program of the Washington National Primate Research Center; all procedures followed protocols approved by the Institutional Animal Care and Use Committee at the University of Washington. In brief, pieces of retina attached to the pigment epithelium were stored in\u00a0~32\u201334\u00b0 C oxygenated (95% O2/5% CO2) Ames medium (Sigma) and dark-adapted for\u00a0>1 hr. Pieces of retina (\u226515\u00b0 eccentricity for primate) were then isolated from the pigment epithelium under infrared illumination and either flattened onto poly-L-lysine slides (whole mount: cone, horizontal cell, AII amacrine cell and RGC recordings) or embedded in agarose and sliced (rod current clamp recordings). Once under the microscope, tissue was perfused with Ames medium at a rate of\u00a0~8 mL/min. Most data was collected during the nominal circadian day for both species.\n\nExtracellular spike recordings from On parasol retinal ganglion cells used\u00a0~3 M\u03a9 electrodes containing Ames medium. Voltage-clamp whole-cell recordings used electrodes (RGC: 2\u20133 M\u03a9, AII, HC: 5\u20136 M\u03a9) containing (in mM): 105 Cs methanesulfonate, 10 TEA-Cl, 20 HEPES, 10 EGTA, 2 QX-314, 5 Mg-ATP, 0.5 Tris-GTP and 0.1 Alexa (488) hydrazide (~280 mOsm; pH\u00a0~7.3 with CsOH). To isolate excitatory synaptic input, cells were held at the estimated reversal potential for inhibitory input (~\u221260 mV). This voltage was adjusted for each cell to maximize isolation. Current-clamp whole-cell recordings were conducted with electrodes (AII: 5\u20136 M\u03a9, HC: 5\u20136 M\u03a9, rods, cones: 10\u201312 M\u03a9) containing (in mM): 123 K-aspartate, 10 KCl, 10 HEPES, 1 MgCl2, 1 CaCl2, 2 EGTA (omitted for rod and cone recordings), 4 Mg-ATP, 0.5 Tris-GTP and 0.1 Alexa (488) hydrazide (~280 mOsm; pH\u00a0~7.2 with KOH). Absolute voltage values have not been corrected for liquid junction potentials (K+-based\u00a0=\u00a0\u221210.8 mV; Cs+-based\u00a0=\u00a0\u22128.5 mV). In initial whole-cell experiments, cell types were confirmed by fluorescence imaging following recording.\n\nPerforated patch clamp recordings from cone photoreceptors were performed in current clamp using electrodes (9\u201311 M\u03a9) containing (in mM): 115 potassium aspartate, 1 MgCl2, 4 KCl, 10 HEPES, 10 diTris phosphocreatine hydrate, 4 Mg-ATP, 0.5 Tris-GTP (276\u2013278 mOsm, pH 7.1\u20137.15 with KOH). Gramicidin was added to the internal solution at 30 \u03bcg/mL. Upon sealing on a cell, access was monitored by tracking the membrane potential as well as the response amplitude to a constant amplitude probe flash. Once access equilibrated (5\u201325 min), recordings were started. Throughout perforated patch recordings, the membrane potential and response to a reference flash were monitored to ensure that electrical access to the cell remained stable.\n\nFor suction recordings, a suspension of finely chopped retina was transferred to a recording chamber, pieces of retina were briefly allowed to settle, then superfused (2\u20133 ml/min, 32 \u00b1 1\u00b0C). Suction electrodes (3\u20134 M\u03a9, tip inner diameter of\u00a0~1.6 \u03bcm) were filled with HEPES-buffered Ames and were voltage clamped at 0 mV (Field and Rieke, 2002a). Individual rod outer segments were drawn into the recording pipette under gentle suction and selected for extended recordings if their outer segment had not been obviously damaged by the suction procedure and if they had maximal light responses exceeding 20 pA for primate and 8 pA for mouse.\n\nActivity of mGluR6 receptors expressed by On bipolar cells was suppressed in some experiments using a mixture of LY341495 (2.5 \u03bcM) and APB (7.5 \u03bcM). This approach was chosen to suppress modulated responses of On bipolar cells while minimizing perturbations to the state of the retina associated with tonic changes in mGluR6 receptor activity (Ala-Laurila et al., 2011; Grimes et al., 2014a). In mouse rod bipolar cells and AII amacrine cells, this mixture of drugs maintained the resting potential and suppressed light-dependent responses by\u00a0>90% (data not shown). Incomplete block of mGluR6 activity would lead to an overestimate of contributions from non-primary pathways.\n\n### Cell selection criteria\n\nTo assay the overall health and sensitivity of the retina, we measured On RGC responses (On parasol cells in primate and On Alpha RGCs in mouse) to brief test flashes. Recorded cells met several criteria: backgrounds producing\u00a0~0.01 R*/rod/s elicited a clear increase in firing rate (from near 0 in darkness to 2\u20135 spikes/s); flashes producing 0.02 R*/rod at a background of 0.3 R*/rod/s elicited clear responses; and, in primate, rod- and cone-derived responses were clearly separable using 405 and 640 nm lights at a background of 10\u201320 R*/rod/s. We measured RGC sensitivity in every piece of retina, and only proceeded to collect data when these criteria were met. Approximately half of the preparations met these criteria.\n\n### Visual stimuli\n\nPsychophysical measurements of rod vision in humans indicate that dark adaptation is near complete in 30\u201345 min (Sharpe et al., 1989). Thus, isolated primate retinas (attached to the pigment epithelium) were dark-adapted for\u00a0\u22651 hr before any data was collected. Mice were dark adapted for\u00a0\u226512 hr before isolating the retina. As we progressed from darkness to mesopic conditions, new backgrounds were typically applied for\u00a0\u22651 min before data was collected. This approach was consistent for all preparations and cell-specific recordings. Responses to repeated stimuli delivered\u00a0~1 min and\u00a0~3 min after a change in background did not differ noticeably.\n\nStimuli were presented and data acquired using a custom written stimulation and acquisition software package (Symphony-DAS, 2018: http://symphony-das.github.io/). Full field illumination (diameter: 500\u2013560 \u03bcm) was delivered to the preparation through a customized condenser from three LEDs (peak power at 405, 520 and 640 nm). Rod responses were elicited by 405 nm light and cone responses by 640 nm light for all but the control experiments described in the next paragraph. Light intensities (photons/\u03bcm2/s) were converted to photoisomerization rates (R*/photoreceptor/s) using the estimated collecting area of rods and cones (1 and 0.37 \u03bcm2, respectively, for primate; 0.5 \u03bcm2 for mouse rods), the LED emission spectra and the photoreceptor absorption spectra (Baylor et al., 1984; Baylor et al., 1987). Rod- and cone-preferring flashes were 10 ms in duration.\n\nThe dim 405 nm light stimulated RGCs primarily through rods rather than cones. To test for a cone contribution to these responses, we monitored the ratio of On parasol responses elicited by the 520 and 405 nm LEDs. This ratio is predicted to differ by a factor of\u00a0~2.4 for responses elicited by rods and M cones based on the measured LED spectral output and the rod and M cone spectral sensitivities (On parasol cells do not get significant S cone input [Field et al., 2010]). The ratio increased noticeably at 100\u2013300 R*/rod/s, reaching a factor of 1.8 at 300 R*/rod/s. Together with the theoretical factor of 2.4, this indicates that responses to the 520 nm LED represented a\u00a0~60% contribution from cones and\u00a0~40% from rods at 300 R*/rod/s. Together with the higher relative sensitivity of the rods compared to M cones to 405 nm light, this indicates that\u00a0~25% of the response to the 405 nm LED at 300R*/rod/s originated in cones. Cone contributions were substantially smaller at lower background light levels. Note that we used the 520 nm LED only for this control experiment, and otherwise used the 405 and 640 nm LEDs.\n\n### Analysis\n\nFor spike recordings from ganglion cells, we detected spike times and compiled them into peristimulus time histograms as previously described (Murphy and Rieke, 2006). Assuming linearity, rod responses to sinusoidal stimuli (Figure 7) were predicted by convolving the measured flash responses with sinusoids of the various frequencies. Electrophysiology example traces presented throughout the figures represent the average of 5\u201320 raw responses to the same stimuli. Data are presented as mean\u00a0\u00b1\u00a0SEM using an unbiased estimate of the standard deviation. We did not have sufficient examples to check whether the data was normally distributed.\n",
+      "created_at": "2025-12-02T06:33:49.381875Z"
+    },
+    {
+      "id": "13cab42b-27a3-46b2-9178-0246986cdb4f",
+      "submission_id": "f36eda71-0ed4-413a-b209-babdeb244d90",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Daeyeol Lee, Yale School of Medicine United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.38281.026](https://doi.org/10.7554/eLife.38281.026)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Rod signaling in primate retina: range, routing and kinetics\" for consideration by eLife. Your article has been reviewed by three peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Timothy Behrens as the Senior Editor. The following individual involved in review of your submission has agreed to reveal his identity: Markus Meister (Reviewer #2).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nThis manuscript presents new insights on visual processing in the retina, specifically how signals from rod photoreceptors are handled. Our visual system must operate over a huge range of light intensities, about 9 log units in the course of a day. In adaptation to this challenge the retina uses two kinds of photoreceptors: In the dimmest conditions only the sensitive rods are active, in the brightest conditions only the cones. In between the retina gradually switches from one input neuron to the other. However, even before the cones take over, the rod pathway undergoes substantial changes with increasing light level: the gain decreases and the speed of processing increases. This article challenges the prevailing notion of how those changes are accomplished.\n\nThe authors distinguish three routes: (1) an interneuron pathway through specialized rod bipolar and amacrine cells, which allows for high spatial convergence and high gain; (2) direct transmission of rod signals to cones via electrical junctions; and (3) transmission from rods to Off bipolar cells that predominantly handle cone signals. Each of these pathways imposes different gain and kinetics on the rod signal because different synaptic pathways are engaged.\n\nWith this background it has been proposed that the changes in human perception of rod stimuli that occur with increasing light level reflect changes in the neural routing of signals through the different synaptic pathways. In the mouse retina there is reasonable evidence for this, but the idea has received less scrutiny in primate retina, which ultimately matters for human vision. Here the authors come to the surprising conclusion that the primate retina uses pathway 1 for rod signals almost exclusively. Furthermore they claim that the changes in kinetics of rod signal processing observed in human psychophysics are largely explained by changes occurring within the rod photoreceptor cell itself. Parallel experiments in mouse retina using the same strategy gave very different results: a large contribution from the pathways 2 and 3 over the functional rod range.\n\nEssential revisions:\n\n1) The authors could improve the comparison to existing data in mouse. For example, Ke et al., 2014 reported that responses in ganglion cells and AII amacrine cells showed a strong reduction in the presence of DNQX at ~250-300 R*/rod/s. Those results would suggest that, similar to the primate recordings in the present study, the primary rod pathway makes the major contribution also in mouse at a relatively high background level. That makes the mouse circuits seem more similar to the primate circuits than the comparison presented in the current study. Was there a difference between the results presented here and in the earlier work?\n\nThe Ke et al. study also showed that ganglion cell responses in control conditions were not slower than those in DNQX (Figure 5I/J of that paper) \u2013 suggesting that moving from the primary+secondary to just the secondary pathway did not affect kinetics much, consistent with the present results in primate apparently. That again makes the mouse and primate results seem more similar than presented in the current study.\n\nThe key point here is that it would be good either in Introduction or Discussion to make a more substantial comparison to the findings in Ke et al., 2014 \u2013 where the main point was that the mouse primary rod pathway was dominating at light levels higher than those believed previously to be carried by this pathway.\n\nFurthermore, Grimes et al., 2014 suggested that the primary rod pathway can become suppressed and shut off in bright light because the rod bipolar cell synapses becomes suppressed, causing hyperpolarization of the AII, etc. Does that seem to happen in the primate circuit? What happens to the AII membrane potential in background light (Figure 3)?\n\n2) The paper does not present a clear role for synaptic transmission in shaping the gain or kinetics of signals in the primate retina. For example, Oesch and Diamond, 2011 describe a synaptic mechanism for adaptation in rod bipolar cells. How do those results relate to e.g., the Weber adaptation described in the primary pathway in the current study?\n\nIt is also not clear how synaptic transmission could play a role in the kinetics of rod responses. For example, rods apparently hyperpolarize 9 mV between 1 and 60 R*/rod/s (Figure 7). This hyperpolarization affects the kinetics of the voltage response. What about the presumed affect, if any, at the synapse?\n\n3) The comparison of mouse and primate rod recordings (Figure 4A) depends on the estimate of saturation in these curves. But there are not many points showing an unambiguous asymptote in either case. There is some concern that the comparison depends too much on the normalization of each curve.\n\nFigure 4B leaves the reader with the impression that mouse AII recordings in NBQX are saturated at 100 R*/rod/s, but there is a clear response to contrast at 250-300 R*/rod/s in AIIs and postsynaptic ganglion cells under similar conditions reported previously (Ke et al., 2014). There should be a little more context when comparing the two species and providing an impression of when certain cell types or pathways are 'shut down' and can be safely assumed to no longer contribute to circuit function at a given background.\n\n4) Psychophysics of parallel rod pathways. The authors suggest that the human perceptual effects can be explained by a single pathway for rod signals whose gain and kinetics vary as a function of light level. However, some psychophysical experiments show that multiple pathways for rod signals are in operation simultaneously, see for example the phenomenon of \"rod self-cancellation\" (Stockman and Sharpe, 2006). Can that be reconciled with the single-pathway hypothesis?\n\n5) Health of rod-cone junctions. In terms of neural mechanisms, the authors suggest that in primate retina the rod-cone junctions are too weak to initiate a substantial pathway 2. Is it possible that these junctions are altered by the procedure of isolating the retina in vitro? The junctions seem to be sensitive to modulation, for example by circadian time, through the actions of dopamine (Ribelayga et al., 2008). That could be perturbed by isolating the retina, which would directly affect the main conclusion. How could one check whether these junctions are in the same state as in the intact human eye?\n\n6) Strength of the third pathway. The single pathway conclusion seems less compelling for the Off retinal ganglion cells. Suppressing the On bipolars (which blocks pathway 1) eliminates 80% of the rod signals at a light level of 20R*/s, but only 20% at 200 R*/s (subsection \u201cRouting of rod signals in Off retinal circuits\u201d, fourth paragraph). In between there is a large range and it all falls within the 300R*/s range that the authors consider for rod signaling. Thus it seems that there could be a substantial contribution from pathways 2 or 3 over a substantial part of the rod signaling range. This should be elaborated further.\n\n7) A fourth pathway. Another potential pathway for rod signals was not considered here: rods excite H1 horizontal cells which inhibit cone terminals. There is reasonable evidence for this route in the mouse retina, where it seems to provide the entire receptive field surround of certain ganglion cells (Joesch and Meister, 2016; Szikra et al., 2014; Tr\u00fcmpler et al., 2008). This may affect the interpretation of some of the mouse experiments here. In the primate retina the H1 cell seems to be much less sensitive to direct rod input (Verweij et al., 1999), as stated in the manuscript (subsection \u201cRod signal routing\u201d, fifth paragraph).\n\n8) Presumably, the macaque and mouse retinas are being examined at opposite phases of their circadian rhythm. Does this matter for the comparison of their rod pathways?\n\n9) The cell selection criteria are strong for the primate retina. It would be helpful to mention if there were any selection criteria for the mouse retina, or if it can be safely assumed that all mouse retinas are in excellent condition given how they are collected.\n\n10) Were the background lights applied for the same duration across all experiments? How much time elapsed from the application of the background to the delivery of flashes? How do the durations of the backgrounds used here compare to those used in psychophysical experiments probing rod vision? These points should be made clear.\n\n11) Figure 8. Why compare the time to peak of rods (8A) with the integration time of RGCs (8B) rather than the integration time for both? For 8C, is the x-axis the RGC integration time? How was the integration time measured (does it include the undershoot in the RGC response)? How was SNR calculated? How was the simulation done? Explanation of the contents of this figure needs to be greatly expanded. As presented, I have a hard time evaluating them.\n\nAdditional comment from Reviewer 3:\n\nOne additional comment: It would be helpful if the authors clarified the wavelength of their cone-preferring stimuli. It's only mentioned for Figure 3\u2014figure supplement 2 (640 nm) but the Materials and methods makes it sound like they focused on 520 nm. As reviewer #2 mentioned (comment 7), 520 does not distinguish between rods and M cones well.\n\nI used Govardovskii nomograms (A1, \u03b2 bands included) to put some numbers on this. The ratio of absorption for monochromatic 520- vs. 405-nm light is 4 for rods, 5.2 for M cones, and 3.9 for L cones-not very different. Between rods and cones, the ratio of ratios is 1.3. The authors give 2.4 in their Materials and methods (subsection \u201cVisual stimuli\u201d). Part of the discrepancy may be due to their use of more broadband light, but this point should be clarified.\n\nFor cone-preferring stimuli, 640 is better (640/405 being 0.004 for rods, 0.1 for M cones, and 0.7 for L cones).\n",
+      "created_at": "2025-12-02T06:33:49.381875Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T06:33:49.381875Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T06:33:49.381875Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "75d22355-c46b-4ccc-8c29-00e3eaf669a8",
+      "content_id": "e091c84d-3c5c-4ce7-8495-1695c02a2a1a",
+      "claim_id": "C1",
+      "claim": "Rod photoreceptors contribute to vision across a million-fold range of light intensities.",
+      "claim_type": "EXPLICIT",
+      "source": "Rod photoreceptors contribute to vision across a million-fold range of light intensities.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement about rod photoreceptor function that draws from established scientific knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:33:49.381875Z"
+    },
+    {
+      "id": "a1a4e153-8166-47ba-a96e-a9330d9006eb",
+      "content_id": "e091c84d-3c5c-4ce7-8495-1695c02a2a1a",
+      "claim_id": "C2",
+      "claim": "Work in mouse shows that rod photoreceptor signals are routed through several retinal pathways, each specialized for different light levels.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, work in mouse shows that rod photoreceptor signals are routed through several retinal pathways, each specialized for different light levels.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim references prior work in mouse retina, implying citation of previous studies.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:33:49.381875Z"
+    },
+    {
+      "id": "2b9ad495-5ae2-42c1-863f-54b922f89a73",
+      "content_id": "e091c84d-3c5c-4ce7-8495-1695c02a2a1a",
+      "claim_id": "C3",
+      "claim": "Light-level-dependent routing of rod signals has been invoked to explain several human perceptual results.",
+      "claim_type": "EXPLICIT",
+      "source": "This light-level-dependent routing of rod signals has been invoked to explain several human perceptual results, but it has not been tested in primate retina.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement references the scientific literature where this hypothesis has been proposed.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:33:49.381875Z"
+    },
+    {
+      "id": "874d50af-1d19-485e-9c42-f3c306765d28",
+      "content_id": "e091c84d-3c5c-4ce7-8495-1695c02a2a1a",
+      "claim_id": "C4",
+      "claim": "Rod signals traverse the primate retina almost exclusively through a single pathway \u2013 the dedicated rod bipolar pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we show, surprisingly, that rod signals traverse the primate retina almost exclusively through a single pathway \u2013 the dedicated rod bipolar pathway.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the study supported by experimental data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:33:49.381875Z"
+    },
+    {
+      "id": "8de70e58-f081-4693-9d86-ed3c10110053",
+      "content_id": "e091c84d-3c5c-4ce7-8495-1695c02a2a1a",
+      "claim_id": "C5",
+      "claim": "There are substantial differences in how rod signals traverse the retina between mouse and primate.",
+      "claim_type": "EXPLICIT",
+      "source": "Identical experiments in mouse and primate reveal substantial differences in how rod signals traverse the retina.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by comparative experimental data from both species presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:33:49.381875Z"
+    },
+    {
+      "id": "6d61db63-23f7-4fc4-9ff5-d6f90ff35f70",
+      "content_id": "e091c84d-3c5c-4ce7-8495-1695c02a2a1a",
+      "claim_id": "C6",
+      "claim": "The speeding of rod signals with light level is inherited directly from the rod photoreceptors themselves rather than from different pathways with distinct kinetics.",
+      "claim_type": "EXPLICIT",
+      "source": "This includes a prominent speeding of rod signals with light level \u2013 which we show is inherited directly from the rod photoreceptors themselves rather than from different pathways with distinct kinetics.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding supported by experimental measurements of rod photoreceptor kinetics.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:33:49.381875Z"
+    },
+    {
+      "id": "d82c196d-7eb7-426c-b355-117877453573",
+      "content_id": "e091c84d-3c5c-4ce7-8495-1695c02a2a1a",
+      "claim_id": "C7",
+      "claim": "In starlight, photons are few and far between, and retinal circuits face the considerable challenge of detecting and reliably transmitting signals resulting from the absorption of individual photons.",
+      "claim_type": "EXPLICIT",
+      "source": "At the low end of this range - for example in starlight - photons are few and far between, and retinal circuits face the considerable challenge of detecting and reliably transmitting signals resulting from the absorption of individual photons (reviewed by (Field et al., 2005; Takeshita et al., 2017)).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to review articles.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:33:49.381875Z"
+    },
+    {
+      "id": "9a559b21-cf08-4983-9c63-870fe847c71c",
+      "content_id": "e091c84d-3c5c-4ce7-8495-1695c02a2a1a",
+      "claim_id": "C8",
+      "claim": "The high gain associated with detecting single photons, if unabated, would quickly saturate retinal responses in moonlight.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, in moonlight the high gain associated with detecting single photons, if unabated, would quickly saturate retinal responses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on known properties of retinal signal processing.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:33:49.381875Z"
+    },
+    {
+      "id": "e6109122-c266-4254-af1e-8085714eaacb",
+      "content_id": "e091c84d-3c5c-4ce7-8495-1695c02a2a1a",
+      "claim_id": "C9",
+      "claim": "A prominent hypothesis proposes that the routes that rod-derived signals take through the retina depend on mean light level.",
+      "claim_type": "EXPLICIT",
+      "source": "A prominent hypothesis about how retinal circuits meet these changing demands proposes that the routes that rod-derived signals take through the retina depend on mean light level (Sharpe and Stockman, 1999; Tsukamoto et al., 2001; Bloomfield and Dacheux, 2001; Deans et al., 2002)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:33:49.381875Z"
+    },
+    {
+      "id": "1fcf3b4a-de69-431f-9cf7-796f5dddf729",
+      "content_id": "e091c84d-3c5c-4ce7-8495-1695c02a2a1a",
+      "claim_id": "C10",
+      "claim": "Different retinal circuits are specialized to handle the challenges associated with different light levels.",
+      "claim_type": "EXPLICIT",
+      "source": "A prominent hypothesis about how retinal circuits meet these changing demands proposes that the routes that rod-derived signals take through the retina depend on mean light level (Sharpe and Stockman, 1999; Tsukamoto et al., 2001; Bloomfield and Dacheux, 2001; Deans et al., 2002) - with different circuits specialized to handle the challenges associated with different light levels.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is part of the hypothesis described in the literature, supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:33:49.381875Z"
+    },
+    {
+      "id": "7e9b0899-cb77-491e-90df-9034c3322e1a",
+      "content_id": "e091c84d-3c5c-4ce7-8495-1695c02a2a1a",
+      "claim_id": "C11",
+      "claim": "In the primary pathway, dedicated rod bipolar cells transmit rod signals.",
+      "claim_type": "EXPLICIT",
+      "source": "These circuits include (Figure 1; reviewed by (Bloomfield and Dacheux, 2001; Field et al., 2005; Field and Chichilnisky, 2007; Demb and Singer, 2012)): (1) the primary pathway, in which dedicated rod bipolar cells transmit rod signals",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is established anatomical knowledge supported by citations and illustrated in Figure 1.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:33:49.381875Z"
+    },
+    {
+      "id": "2c54e6db-7256-489a-a516-c995b491da4a",
+      "content_id": "e091c84d-3c5c-4ce7-8495-1695c02a2a1a",
+      "claim_id": "C12",
+      "claim": "In the secondary pathway, gap junctions convey rod signals to cones and the associated cone circuitry.",
+      "claim_type": "EXPLICIT",
+      "source": "(2) the secondary pathway, in which gap junctions convey rod signals to cones and the associated cone circuitry",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is established anatomical knowledge supported by citations and illustrated in Figure 1.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:33:49.381875Z"
+    },
+    {
+      "id": "d795d68a-bc48-4b37-81ea-5db39a500420",
+      "content_id": "e091c84d-3c5c-4ce7-8495-1695c02a2a1a",
+      "claim_id": "C13",
+      "claim": "In the tertiary pathway, Off cone bipolar cell dendrites receive direct rod input.",
+      "claim_type": "EXPLICIT",
+      "source": "(3) the tertiary pathway, in which Off cone bipolar cell dendrites receive direct rod input.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is established anatomical knowledge supported by citations and illustrated in Figure 1.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:33:49.381875Z"
+    },
+    {
+      "id": "3659ce9a-b390-4018-ad8a-1adf66a18d72",
+      "content_id": "e091c84d-3c5c-4ce7-8495-1695c02a2a1a",
+      "claim_id": "C14",
+      "claim": "Rod signals can reach cones (and then cone bipolar cells) through horizontal cells, creating rod-cone spectral opponency.",
+      "claim_type": "EXPLICIT",
+      "source": "Recent work also proposes that rod signals can reach cones (and then cone bipolar cells) through horizontal cells, creating rod-cone spectral opponency (Joesch and Meister, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to recent work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:33:49.381875Z"
+    },
+    {
+      "id": "a43785ce-674b-4a65-913e-66c4f15db84c",
+      "content_id": "e091c84d-3c5c-4ce7-8495-1695c02a2a1a",
+      "claim_id": "C15",
+      "claim": "Light steps producing ~40 R*/rod/s halved the outer segment current in primate rods.",
+      "claim_type": "EXPLICIT",
+      "source": "Light steps producing ~40 R*/rod/s halved the outer segment current, and steps producing \u2265300 R*/rod/s suppressed nearly all of the dark current.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a direct measurement from suction electrode recordings shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:33:49.381875Z"
+    },
+    {
+      "id": "17656ff5-58e2-487a-a140-89a7cd057d71",
+      "content_id": "e091c84d-3c5c-4ce7-8495-1695c02a2a1a",
+      "claim_id": "C16",
+      "claim": "Light steps producing \u2265300 R*/rod/s suppressed nearly all of the dark current in primate rods.",
+      "claim_type": "EXPLICIT",
+      "source": "Light steps producing ~40 R*/rod/s halved the outer segment current, and steps producing \u2265300 R*/rod/s suppressed nearly all of the dark current.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a direct measurement from suction electrode recordings shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:33:49.381875Z"
+    },
+    {
+      "id": "f904b202-8d58-452a-91e8-a08d155f9475",
+      "content_id": "e091c84d-3c5c-4ce7-8495-1695c02a2a1a",
+      "claim_id": "C17",
+      "claim": "Mean backgrounds of 250 R*/rod/s suppressed 90% of the dark current in primate rods.",
+      "claim_type": "EXPLICIT",
+      "source": "Mean backgrounds of 250 R*/rod/s suppressed 90% of the dark current (red line).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a measurement from multiple experiments summarized in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:33:49.381875Z"
+    },
+    {
+      "id": "20e0bf91-c78c-4c7e-ba07-af9f9e76a28c",
+      "content_id": "e091c84d-3c5c-4ce7-8495-1695c02a2a1a",
+      "claim_id": "C18",
+      "claim": "The suppression of rod dark current was maintained during light steps that persisted for 2\u20133 min with less than 5% recovery.",
+      "claim_type": "EXPLICIT",
+      "source": "This suppression was maintained during light steps that persisted for 2\u20133 min (<5% recovery of dark current, not shown).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an experimental observation from the authors' data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:33:49.381875Z"
+    },
+    {
+      "id": "92b8616e-896a-42cf-b036-10794562168b",
+      "content_id": "e091c84d-3c5c-4ce7-8495-1695c02a2a1a",
+      "claim_id": "C19",
+      "claim": "Between darkness and 3 R*/rod/s, RGC gain declined considerably more than rod gain.",
+      "claim_type": "EXPLICIT",
+      "source": "Between darkness and 3 R*/rod/s, RGC gain declined considerably more than rod gain.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the data presented in Figure 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:33:49.381875Z"
+    },
+    {
+      "id": "a8142e8c-1e1e-4dda-a110-bc97d836ab4b",
+      "content_id": "e091c84d-3c5c-4ce7-8495-1695c02a2a1a",
+      "claim_id": "C20",
+      "claim": "The reduction in RGC gain between darkness and 3 R*/rod/s reflects post-rod circuit adaptation.",
+      "claim_type": "EXPLICIT",
+      "source": "This reduction in RGC gain reflects post-rod circuit adaptation (Lee et al., 1990; Purpura et al., 1990; Dunn et al., 2006; Schwartz and Rieke, 2013)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This interpretation is supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:33:49.381875Z"
+    },
+    {
+      "id": "ce1ff0a7-a5ba-4dbf-8dc2-aae88f9c8343",
+      "content_id": "e091c84d-3c5c-4ce7-8495-1695c02a2a1a",
+      "claim_id": "C21",
+      "claim": "For backgrounds between 3 and 100 R*/rod/s, both rod and ganglion cell gain declined approximately inversely with background, as expected for Weber's Law.",
+      "claim_type": "EXPLICIT",
+      "source": "For backgrounds between 3 and 100 R*/rod/s, both rod and ganglion cell gain declined approximately inversely with background, as expected for Weber's Law (reviewed in (Rieke and Rudd, 2009)).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the data in Figure 2D, with reference to established theory.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:33:49.381875Z"
+    },
+    {
+      "id": "aabb7906-66ad-41d3-ac3e-5965a790cb58",
+      "content_id": "e091c84d-3c5c-4ce7-8495-1695c02a2a1a",
+      "claim_id": "C22",
+      "claim": "Above 100 R*/rod/s, rod signal gain in both rods and RGCs declined with increasing background more sharply than expected from Weber's Law, falling by a factor of ~100 between 100 and 1000 R*/rod/s.",
+      "claim_type": "EXPLICIT",
+      "source": "Above 100 R*/rod/s, rod signal gain in both rods and RGCs declined with increasing background more sharply than expected from Weber's Law, falling by a factor of ~100 between 100 and 1000 R*/rod/s (black line).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the data presented in Figure 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:33:49.381875Z"
+    },
+    {
+      "id": "896ce695-903b-41db-905a-affeb4d6b371",
+      "content_id": "e091c84d-3c5c-4ce7-8495-1695c02a2a1a",
+      "claim_id": "C23",
+      "claim": "The abrupt decline in the gain of rod-derived signals coincides closely with the suppression of outer segment current.",
+      "claim_type": "EXPLICIT",
+      "source": "This abrupt decline in the gain of rod-derived signals coincides closely with the suppression of outer segment current (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference drawn from comparing data in Figure 2B and 2D.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:33:49.381875Z"
+    },
+    {
+      "id": "869dc1b5-1c1d-4e30-8632-4f31b8187fc6",
+      "content_id": "e091c84d-3c5c-4ce7-8495-1695c02a2a1a",
+      "claim_id": "C24",
+      "claim": "The primary limitation on the range of rod-derived signaling in the retinal output is a decrease in the gain of rod signals, rather than decreased gain in post-rod circuitry.",
+      "claim_type": "EXPLICIT",
+      "source": "These experiments indicate that the primary limitation on the range of rod-derived signaling in the retinal output is a decrease in the gain of rod signals, rather than decreased gain in post-rod circuitry.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental data in Figure 2.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:33:49.381875Z"
+    },
+    {
+      "id": "9d051185-9303-4284-bf82-55c9b7cbf79e",
+      "content_id": "e091c84d-3c5c-4ce7-8495-1695c02a2a1a",
+      "claim_id": "C25",
+      "claim": "Rods may continue to weakly modulate retinal output signals above 300 R*/rod/s, as observed in rodents.",
+      "claim_type": "EXPLICIT",
+      "source": "Rods may continue to weakly modulate retinal output signals above 300 R*/rod/s, as observed in rodents (Yin et al., 2006; Naarendorp et al., 2010; Tikidji-Hamburyan et al., 2017)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement based on observations in other species, supported by citations.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:33:49.381875Z"
+    },
+    {
+      "id": "4a6e09d9-87db-46d8-bad5-8764e86ae2e5",
+      "content_id": "e091c84d-3c5c-4ce7-8495-1695c02a2a1a",
+      "claim_id": "C26",
+      "claim": "AII amacrine cells receive direct glutamatergic input from rod bipolar cells through AMPA-type glutamate receptors.",
+      "claim_type": "EXPLICIT",
+      "source": "AII amacrines receive direct glutamatergic input from rod bipolar cells through AMPA-type glutamate receptors and make bidirectional electrical synapses with On cone bipolar cell axons (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is established anatomical knowledge illustrated in Figure 3A.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:33:49.381875Z"
+    },
+    {
+      "id": "5fb77729-dca0-4894-b312-4fb722967e57",
+      "content_id": "e091c84d-3c5c-4ce7-8495-1695c02a2a1a",
+      "claim_id": "C27",
+      "claim": "AII amacrine cells make bidirectional electrical synapses with On cone bipolar cell axons.",
+      "claim_type": "EXPLICIT",
+      "source": "AII amacrines receive direct glutamatergic input from rod bipolar cells through AMPA-type glutamate receptors and make bidirectional electrical synapses with On cone bipolar cell axons (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is established anatomical knowledge illustrated in Figure 3A.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:33:49.381875Z"
+    },
+    {
+      "id": "cd07df3c-4370-4c85-ad6f-897b6c0a7a63",
+      "content_id": "e091c84d-3c5c-4ce7-8495-1695c02a2a1a",
+      "claim_id": "C28",
+      "claim": "Under control conditions, AII responses reflect signaling from both the primary pathway via rod bipolar cells and the secondary pathway via gap junctional input from cone bipolar cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, under control conditions, AII responses reflect signaling from both the primary pathway via rod bipolar cells and the secondary pathway via gap junctional input from cone bipolar cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the known anatomy and physiology of AII amacrine cells.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:33:49.381875Z"
+    },
+    {
+      "id": "ea243692-c638-484f-a93a-7255661c1fe2",
+      "content_id": "e091c84d-3c5c-4ce7-8495-1695c02a2a1a",
+      "claim_id": "C29",
+      "claim": "In the presence of AMPA receptor antagonists, remaining AII responses reflect input only from the secondary pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "In the presence of AMPA receptor antagonists, remaining AII responses reflect input only from the secondary pathway (Cohen, 1998; Trexler et al., 2001; Murphy and Rieke, 2008; M\u00fcnch et al., 2009; Grimes et al., 2014b; Ke et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological approach supported by multiple citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:33:49.381875Z"
+    },
+    {
+      "id": "841470f1-1ffb-4c45-9958-af653e49b8d0",
+      "content_id": "e091c84d-3c5c-4ce7-8495-1695c02a2a1a",
+      "claim_id": "C30",
+      "claim": "Block of AMPA receptors with NBQX reduced AII responses more than 80% at backgrounds at or below 30 R*/rod/s.",
+      "claim_type": "EXPLICIT",
+      "source": "Block of AMPA receptors with NBQX reduced AII responses more than 80% at backgrounds at or below 30 R*/rod/s (Figure 3B\u2013C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a direct experimental finding shown in Figure 3B-C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:33:49.381875Z"
+    },
+    {
+      "id": "016e3128-45bb-49c6-a94a-ac510aad5e62",
+      "content_id": "e091c84d-3c5c-4ce7-8495-1695c02a2a1a",
+      "claim_id": "C31",
+      "claim": "NBQX-insensitive AII responses were largely absent over the range of light levels in which rods modulate the retinal outputs (i.e. below 300 R*/rod/s).",
+      "claim_type": "EXPLICIT",
+      "source": "Most importantly for our purposes, NBQX-insensitive responses were largely absent over the range of light levels in which rods modulate the retinal outputs (i.e. below 300 R*/rod/s).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the data presented in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:33:49.381875Z"
+    },
+    {
+      "id": "f26a1193-d0cb-4332-ae6a-bcdb249340ba",
+      "content_id": "e091c84d-3c5c-4ce7-8495-1695c02a2a1a",
+      "claim_id": "C32",
+      "claim": "The correspondence between rod saturation and the emergence of NBQX-insensitive responses suggests that the secondary rod pathway does not play a major role in transmitting rod signals to ganglion cells in primates, regardless of light level.",
+      "claim_type": "EXPLICIT",
+      "source": "This correspondence between rod saturation (Figure 2) and the emergence of NBQX-insensitive responses (Figure 3) suggests that the secondary rod pathway does not play a major role in transmitting rod signals to ganglion cells in primates, regardless of light level.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from comparing data in Figures 2 and 3.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:33:49.381875Z"
+    },
+    {
+      "id": "319b3706-c72d-49dd-985b-6bb11d096ca9",
+      "content_id": "e091c84d-3c5c-4ce7-8495-1695c02a2a1a",
+      "claim_id": "C33",
+      "claim": "H1 horizontal cells receive direct synaptic input from L- and M- cones.",
+      "claim_type": "EXPLICIT",
+      "source": "H1 horizontal cells receive direct synaptic input from L- and M- cones (Figure 3A; [Kolb, 1970; Rodieck, 1998; Verweij et al., 1999]).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is established anatomical knowledge supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:33:49.381875Z"
+    },
+    {
+      "id": "b7b40fdd-610a-45d4-97e5-7ba1d5049f51",
+      "content_id": "e091c84d-3c5c-4ce7-8495-1695c02a2a1a",
+      "claim_id": "C34",
+      "claim": "Rod input could reach H1 horizontal cells through rod-cone gap junctions and cone synaptic output.",
+      "claim_type": "EXPLICIT",
+      "source": "Rod input could reach H1 horizontal cells through rod-cone gap junctions and cone synaptic output (Nelson, 1977; Schneeweis and Schnapf, 1995; Hornstein et al., 2005)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:33:49.381875Z"
+    },
+    {
+      "id": "6ec5de83-18aa-4ad0-a856-6f9f9ac1eaef",
+      "content_id": "e091c84d-3c5c-4ce7-8495-1695c02a2a1a",
+      "claim_id": "C35",
+      "claim": "Rod input could reach H1 horizontal cells through direct rod contacts onto H1 cells as suggested by recent work in mouse.",
+      "claim_type": "EXPLICIT",
+      "source": "or through direct rod contacts onto H1 cells as suggested by recent work in mouse (Joesch and Meister, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis based on recent work in mouse, supported by citation.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:33:49.381875Z"
+    },
+    {
+      "id": "26f4aac8-9a71-4ce1-9489-69f701d85f68",
+      "content_id": "e091c84d-3c5c-4ce7-8495-1695c02a2a1a",
+      "claim_id": "C36",
+      "claim": "H1 horizontal cell responses were weak at low backgrounds but became pronounced at backgrounds \u2265 300 R*/rod/s.",
+      "claim_type": "EXPLICIT",
+      "source": "H1 responses, like the NBQX-insensitive responses of AII amacrine cells, were weak at low backgrounds but became pronounced at backgrounds \u2265 300 R*/rod/s (Figure 3D,E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a direct experimental finding shown in Figure 3D,E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:33:49.381875Z"
+    },
+    {
+      "id": "cb6b8561-8539-44ef-8c3b-07795aafc0bb",
+      "content_id": "e091c84d-3c5c-4ce7-8495-1695c02a2a1a",
+      "claim_id": "C37",
+      "claim": "Cone responses were very similar to those of horizontal cells, with the emergence of a sizeable response only for backgrounds \u2265 300 R*/rod/s.",
+      "claim_type": "EXPLICIT",
+      "source": "Responses of cones were very similar to those of horizontal cells, with the emergence of a sizeable response only for backgrounds \u2265 300 R*/rod/s (Figure 3E,F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a direct experimental finding shown in Figure 3E,F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:33:49.381875Z"
+    },
+    {
+      "id": "086d3f66-5ede-45bd-b5ab-b7a1068c1ef3",
+      "content_id": "e091c84d-3c5c-4ce7-8495-1695c02a2a1a",
+      "claim_id": "C38",
+      "claim": "The weak rod responses in cones and horizontal cells are consistent with the NBQX-insensitive responses in AII amacrine cells.",
+      "claim_type": "EXPLICIT",
+      "source": "The weak rod responses in cones and horizontal cells are consistent with the NBQX-insensitive responses in AII amacrine cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from comparing data across different cell types.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:33:49.381875Z"
+    },
+    {
+      "id": "63ad06df-6250-4541-9397-c1cd7ba71031",
+      "content_id": "e091c84d-3c5c-4ce7-8495-1695c02a2a1a",
+      "claim_id": "C39",
+      "claim": "The secondary pathway plays, at most, a minor role in transmitting rod signals to ganglion cells in primate retina for the stimuli probed.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, these results collectively indicate that the secondary pathway plays, at most, a minor role in transmitting rod signals to ganglion cells in primate retina for the stimuli probed here.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental data in Figure 3.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:33:49.381875Z"
+    },
+    {
+      "id": "f7a4dfa9-a38b-47c2-b12a-3243ef0384d9",
+      "content_id": "e091c84d-3c5c-4ce7-8495-1695c02a2a1a",
+      "claim_id": "C40",
+      "claim": "Previous experiments in rodents have assigned a substantial role to the secondary pathway in transmitting rod signals.",
+      "claim_type": "EXPLICIT",
+      "source": "The lack of prominent secondary pathway contributions in primate was unexpected, as previous experiments in rodents have assigned a substantial role to the secondary pathway in transmitting rod signals (Deans et al., 2002; Trexler et al., 2005; Grimes et al., 2014b; Ke et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous work in rodents.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:33:49.381875Z"
+    },
+    {
+      "id": "68d6ad55-a8fd-4ca0-973f-040db49793fb",
+      "content_id": "e091c84d-3c5c-4ce7-8495-1695c02a2a1a",
+      "claim_id": "C41",
+      "claim": "Near-complete suppression of the outer segment current occurred at higher light levels in mouse compared to primate rods (90% saturation at 1000 vs 250 R*/rod/s).",
+      "claim_type": "EXPLICIT",
+      "source": "Near-complete suppression of the outer segment current occurred at higher light levels in mouse compared to primate rods (90% saturation at 1000 vs 250 R*/rod/s; Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a direct comparison of experimental measurements shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:33:49.381875Z"
+    },
+    {
+      "id": "66ac3882-7834-4d74-84d3-cabb8e2501da",
+      "content_id": "e091c84d-3c5c-4ce7-8495-1695c02a2a1a",
+      "claim_id": "C42",
+      "claim": "The contrast sensitivity of signals in the secondary pathway in mouse was half maximal at ~5 R*/rod/s, nearly two orders of magnitude lower than the half-maximal intensity of secondary-pathway rod signals in primate.",
+      "claim_type": "EXPLICIT",
+      "source": "Voltage responses of AII amacrine cells in NBQX (Figure 4B) and of horizontal cells in control conditions (Figure 4C\u2013D) to fixed-contrast stimuli indicated that the contrast sensitivity of signals in the secondary pathway in mouse was half maximal at ~5 R*/rod/s, nearly two orders of magnitude lower than the half-maximal intensity of secondary-pathway rod signals in primate.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from comparative experiments shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:33:49.381875Z"
+    },
+    {
+      "id": "f91b85c7-c8b0-409e-88de-ba1ad2cf527f",
+      "content_id": "e091c84d-3c5c-4ce7-8495-1695c02a2a1a",
+      "claim_id": "C43",
+      "claim": "Signaling in mouse and primate rod photoreceptors is much more similar than signaling in the circuits that convey rod signals to ganglion cells.",
+      "claim_type": "EXPLICIT",
+      "source": "These experiments indicate that signaling in mouse and primate rod photoreceptors is much more similar than signaling in the circuits that convey rod signals to ganglion cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the comparative data in Figure 4.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:33:49.381875Z"
+    },
+    {
+      "id": "4cde5ec7-44c7-4134-9a66-a974113206e4",
+      "content_id": "e091c84d-3c5c-4ce7-8495-1695c02a2a1a",
+      "claim_id": "C44",
+      "claim": "The secondary pathway in mouse begins contributing to retinal output at light levels that are more than 100-fold below rod saturation.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, the secondary pathway in mouse begins contributing to retinal output at light levels that are more than 100-fold below rod saturation, whereas in primate signals from the secondary pathway are largely absent below rod saturation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the comparative data in Figure 4.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:33:49.381875Z"
+    },
+    {
+      "id": "487a9d5d-6268-44ec-9002-8225c05e3a36",
+      "content_id": "e091c84d-3c5c-4ce7-8495-1695c02a2a1a",
+      "claim_id": "C45",
+      "claim": "In primate, signals from the secondary pathway are largely absent below rod saturation.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, the secondary pathway in mouse begins contributing to retinal output at light levels that are more than 100-fold below rod saturation, whereas in primate signals from the secondary pathway are largely absent below rod saturation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:33:49.381875Z"
+    },
+    {
+      "id": "233b7f55-57b1-4e3e-8641-70ece4677833",
+      "content_id": "e091c84d-3c5c-4ce7-8495-1695c02a2a1a",
+      "claim_id": "C46",
+      "claim": "Cone-derived responses were much larger than rod-derived responses at temporal frequencies \u2265 10 Hz.",
+      "claim_type": "EXPLICIT",
+      "source": "As observed previously (Dacey, 2000), cone-derived responses were much larger than rod-derived responses at temporal frequencies \u2265 10 Hz (Figure 5B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an experimental finding shown in Figure 5B, consistent with previous work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:33:49.381875Z"
+    },
+    {
+      "id": "c44b23db-55b7-4a47-aa1d-2c021ebf549e",
+      "content_id": "e091c84d-3c5c-4ce7-8495-1695c02a2a1a",
+      "claim_id": "C47",
+      "claim": "Across all temporal frequencies that elicited clear rod responses (\u226410 Hz), the ratio of H1 responses to rod- and cone-preferring stimuli was at least seven times smaller than that for On parasol responses to the same stimuli.",
+      "claim_type": "EXPLICIT",
+      "source": "Across all temporal frequencies that elicited clear rod responses (\u226410 Hz), the ratio of H1 responses to rod- and cone-preferring stimuli was at least seven times smaller than that for On parasol responses to the same stimuli (Figure 5C,D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the data presented in Figure 5C,D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:33:49.381875Z"
+    },
+    {
+      "id": "b697b3de-09d7-403d-a387-3f78bece48e9",
+      "content_id": "e091c84d-3c5c-4ce7-8495-1695c02a2a1a",
+      "claim_id": "C48",
+      "claim": "Rod-derived signals recorded in the secondary pathway in response to sinusoidal stimuli are too weak to explain rod-derived RGC responses.",
+      "claim_type": "EXPLICIT",
+      "source": "Hence, rod-derived signals recorded in the secondary pathway in response to sinusoidal stimuli are too weak to explain rod-derived RGC responses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the data in Figure 5.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:33:49.381875Z"
+    },
+    {
+      "id": "70ddc847-2702-4069-b4fa-141356aa54aa",
+      "content_id": "e091c84d-3c5c-4ce7-8495-1695c02a2a1a",
+      "claim_id": "C49",
+      "claim": "The primary rod pathway dominates responses to both sinusoidal and flashed stimuli.",
+      "claim_type": "EXPLICIT",
+      "source": "Instead, the primary rod pathway dominates responses to both sinusoidal and flashed stimuli.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:33:49.381875Z"
+    },
+    {
+      "id": "1e5776ce-5830-4863-b637-0778d4c06419",
+      "content_id": "e091c84d-3c5c-4ce7-8495-1695c02a2a1a",
+      "claim_id": "C50",
+      "claim": "A perceptual observation shows unexpectedly low sensitivity to 15 Hz rod flicker over a specific luminance range.",
+      "claim_type": "EXPLICIT",
+      "source": "A particular perceptual observation that motivates the rod routing hypothesis is an unexpectedly low sensitivity to 15 Hz rod flicker over a specific luminance range (Sharpe et al., 1989).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to perceptual work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:33:49.381875Z"
+    },
+    {
+      "id": "605ecf55-9b3a-4365-ba2c-010749b355db",
+      "content_id": "e091c84d-3c5c-4ce7-8495-1695c02a2a1a",
+      "claim_id": "C51",
+      "claim": "A proposed explanation for the 15 Hz rod flicker null is that rod signals in slow and fast retinal circuits arrive at a downstream integration site out of phase and hence cancel.",
+      "claim_type": "EXPLICIT",
+      "source": "A proposed explanation for this percept is that rod signals in slow and fast retinal circuits arrive at a downstream integration site out of phase and hence cancel (Sharpe and Stockman, 1999).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis from the literature, supported by citation.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:33:49.381875Z"
+    },
+    {
+      "id": "9c0f103b-587c-493e-9774-a8b5521d138f",
+      "content_id": "e091c84d-3c5c-4ce7-8495-1695c02a2a1a",
+      "claim_id": "C52",
+      "claim": "On parasol responses to 15 Hz flicker increased monotonically without an apparent null or abrupt change in phase.",
+      "claim_type": "EXPLICIT",
+      "source": "On parasol responses increased monotonically without an apparent null or abrupt change in phase needed to explain the perceptual observations (Figure 5\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an experimental finding shown in Figure 5\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:33:49.381875Z"
+    },
+    {
+      "id": "1997a20d-5896-4e2f-884e-2adf0ba7f49f",
+      "content_id": "e091c84d-3c5c-4ce7-8495-1695c02a2a1a",
+      "claim_id": "C53",
+      "claim": "Temporal tuning of On parasol responses did not exhibit any abrupt discontinuities across the range of light levels suggestive of rod-rod cancelation.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, temporal tuning did not exhibit any abrupt discontinuities across this range of light levels suggestive of rod-rod cancelation.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the data in Figure 5\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:33:49.381875Z"
+    },
+    {
+      "id": "c3cb0364-3274-4fcc-beae-480cccf7c17f",
+      "content_id": "e091c84d-3c5c-4ce7-8495-1695c02a2a1a",
+      "claim_id": "C54",
+      "claim": "The perceptual flicker null does not originate from convergence of parallel rod circuits prior to On parasol RGCs.",
+      "claim_type": "EXPLICIT",
+      "source": "This data suggests that the perceptual flicker null does not originate from convergence of parallel rod circuits prior to On parasol RGCs (see Discussion and Cao et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental data, with reference to previous work.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:33:49.381875Z"
+    },
+    {
+      "id": "17453c81-eea7-4d86-b0e1-f4b0a82d25b2",
+      "content_id": "e091c84d-3c5c-4ce7-8495-1695c02a2a1a",
+      "claim_id": "C55",
+      "claim": "Rod signals could reach Off cone bipolar cells from three known sources: dendritic input directly from rods (tertiary pathway), dendritic input from cones (secondary pathway), and axonal inhibitory input from AII amacrine cells (primary pathway).",
+      "claim_type": "EXPLICIT",
+      "source": "Rod signals could reach Off cone bipolar cells from three known sources (Figure 1): (1) dendritic input directly from rods (i.e. tertiary pathway), (2) dendritic input from cones (i.e. secondary pathway), and (3) axonal inhibitory input from AII amacrine cells (i.e. primary pathway).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is established anatomical knowledge illustrated in Figure 1.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:33:49.381875Z"
+    },
+    {
+      "id": "89425b1b-95bd-47d7-982b-8a3434b9ef1a",
+      "content_id": "e091c84d-3c5c-4ce7-8495-1695c02a2a1a",
+      "claim_id": "C56",
+      "claim": "In Off RGCs, responses to rod-preferring stimuli were roughly half as large as responses to cone-preferring stimuli at 20 R*/rod/s.",
+      "claim_type": "EXPLICIT",
+      "source": "In Off RGCs, responses to rod-preferring stimuli were roughly half as large as responses to cone-preferring stimuli (Figure 6B,C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an experimental finding shown in Figure 6B,C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:33:49.381875Z"
+    },
+    {
+      "id": "a487aa26-cd49-4ac1-b780-836c555c4331",
+      "content_id": "e091c84d-3c5c-4ce7-8495-1695c02a2a1a",
+      "claim_id": "C57",
+      "claim": "The difference in the relative sensitivity of rod and cone signals indicates that rod signals are less strongly routed through Off cone bipolar cells than On cone bipolar cells at 20 R*/rod/s.",
+      "claim_type": "EXPLICIT",
+      "source": "This difference in the relative sensitivity of rod and cone signals indicates in turn that rod signals are less strongly routed through Off cone bipolar cells than On cone bipolar cells at this light level.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the data in Figure 6.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:33:49.381875Z"
+    },
+    {
+      "id": "606641b7-a2d6-45d4-9fa6-78f55bab6eec",
+      "content_id": "e091c84d-3c5c-4ce7-8495-1695c02a2a1a",
+      "claim_id": "C58",
+      "claim": "The On/Off asymmetry in rod and cone signal weighting supports the conclusion that the secondary rod pathway does not convey strong rod-derived signals in primate.",
+      "claim_type": "EXPLICIT",
+      "source": "The On/Off asymmetry supports the conclusion that the secondary rod pathway does not convey strong rod-derived signals in primate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the data in Figure 6.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:33:49.381875Z"
+    },
+    {
+      "id": "36374a56-fdff-47fa-b57a-fee33a8541d2",
+      "content_id": "e091c84d-3c5c-4ce7-8495-1695c02a2a1a",
+      "claim_id": "C59",
+      "claim": "In the secondary pathway, rod- and cone-derived signals are mixed prior to transmission to On and Off bipolar cells; such mixing should lead to similar weighting in On and Off circuits.",
+      "claim_type": "EXPLICIT",
+      "source": "In the secondary pathway, rod- and cone-derived signals are mixed prior to transmission to On and Off bipolar cells; such mixing should lead to similar weighting in On and Off circuits.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the known anatomy of the secondary pathway.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:33:49.381875Z"
+    },
+    {
+      "id": "2fdec6e5-ebfb-4c9b-96ef-5f96c3572f88",
+      "content_id": "e091c84d-3c5c-4ce7-8495-1695c02a2a1a",
+      "claim_id": "C60",
+      "claim": "Suppression of On pathways with LY/APB reduced responses to short wavelength stimuli in Off parasol cells more than 80% at backgrounds \u2264 20 R*/rod/s.",
+      "claim_type": "EXPLICIT",
+      "source": "However, suppression of On pathways reduced responses to short wavelength stimuli in Off parasol cells more than 80% at backgrounds \u2264 20 R*/rod/s (Figure 6E,F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an experimental finding shown in Figure 6E,F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:33:49.381875Z"
+    },
+    {
+      "id": "c856b498-d084-4fdd-91fe-542008141942",
+      "content_id": "e091c84d-3c5c-4ce7-8495-1695c02a2a1a",
+      "claim_id": "C61",
+      "claim": "LY/APB reduced Off parasol excitatory synaptic input by 20% at 200 R*/rod/s.",
+      "claim_type": "EXPLICIT",
+      "source": "LY/APB reduced Off parasol excitatory synaptic input considerably less at higher light levels (20% reduction at 200 R*/rod/s).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an experimental finding shown in Figure 6F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:33:49.381875Z"
+    },
+    {
+      "id": "4da03a5d-ff5e-4ebd-aba3-e31b76a28160",
+      "content_id": "e091c84d-3c5c-4ce7-8495-1695c02a2a1a",
+      "claim_id": "C62",
+      "claim": "Rod signals reach Off RGCs mainly through the primary rod pathway over most or all of the mesopic range.",
+      "claim_type": "EXPLICIT",
+      "source": "Although these results are subject to the caveat that the pharmacology could have off-target affects, they suggest that rod signals reach Off RGCs mainly through the primary rod pathway over most or all of the mesopic range.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental data, with acknowledgment of potential caveats.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:33:49.381875Z"
+    },
+    {
+      "id": "219f5196-1c53-4222-9e5f-95b9818c2aed",
+      "content_id": "e091c84d-3c5c-4ce7-8495-1695c02a2a1a",
+      "claim_id": "C63",
+      "claim": "At a background of 0.5 R*/rod/s in mouse, LY/APB reduced excitatory inputs to Off sustained alpha RGCs by ~90%, indicating that the primary pathway dominates signaling at this light level.",
+      "claim_type": "EXPLICIT",
+      "source": "At a background of 0.5 R*/rod/s, LY/APB reduced excitatory inputs to Off sustained alpha RGCs by ~90%, indicating that the primary pathway dominates signaling at this light level.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an experimental finding from mouse retina shown in Figure 6G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:33:49.381875Z"
+    },
+    {
+      "id": "01aa2854-b389-4b4f-862c-807c69ce7794",
+      "content_id": "e091c84d-3c5c-4ce7-8495-1695c02a2a1a",
+      "claim_id": "C64",
+      "claim": "At a background of 5 R*/rod/s in mouse, LY/APB reduced Off alpha RGC responses by 35%.",
+      "claim_type": "EXPLICIT",
+      "source": "At a background of 5 R*/rod/s, LY/APB reduced responses by 35%, and at a background of 50 R*/rod/s, responses were little affected.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an experimental finding from mouse retina shown in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:33:49.381875Z"
+    },
+    {
+      "id": "783d9880-2926-4f11-aec2-90e8dada9be3",
+      "content_id": "e091c84d-3c5c-4ce7-8495-1695c02a2a1a",
+      "claim_id": "C65",
+      "claim": "At a background of 50 R*/rod/s in mouse, LY/APB had little effect on Off alpha RGC responses.",
+      "claim_type": "EXPLICIT",
+      "source": "At a background of 5 R*/rod/s, LY/APB reduced responses by 35%, and at a background of 50 R*/rod/s, responses were little affected.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an experimental finding from mouse retina shown in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:33:49.381875Z"
+    },
+    {
+      "id": "86686238-f256-4ed3-8c5a-80729e33b60f",
+      "content_id": "e091c84d-3c5c-4ce7-8495-1695c02a2a1a",
+      "claim_id": "C66",
+      "claim": "The primary rod pathway provides the dominant route that rod-derived signals take through the primate retina across scotopic and mesopic light levels for a wide range of stimuli.",
+      "claim_type": "EXPLICIT",
+      "source": "Collectively, the experiments in Figures 3\u20136 indicate a surprising difference between how rod signals traverse the mouse and primate retinas. Specifically, unlike the situation in mouse, the primary rod pathway provides the dominant route that rod-derived signals take through the primate retina across scotopic and mesopic light levels for a wide range of stimuli.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary conclusion of the study, supported by data from Figures 3-6.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:33:49.381875Z"
+    },
+    {
+      "id": "35bab5e6-216d-42dc-b67c-9f901072efe4",
+      "content_id": "e091c84d-3c5c-4ce7-8495-1695c02a2a1a",
+      "claim_id": "C67",
+      "claim": "The dominance of the primary pathway maximizes opportunities to independently process rod and cone signals since they are not mixed until late in the retinal circuitry.",
+      "claim_type": "EXPLICIT",
+      "source": "This dominance of the primary pathway means that perceptual phenomena previously attributed to a change in routing need to be reinterpreted (e.g. section on kinetics below); it also maximizes opportunities to independently process rod and cone signals since they are not mixed until late in the retinal circuitry.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the finding of primary pathway dominance.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:33:49.381875Z"
+    },
+    {
+      "id": "af098d64-5207-4bbc-99a5-f2abb4505380",
+      "content_id": "e091c84d-3c5c-4ce7-8495-1695c02a2a1a",
+      "claim_id": "C68",
+      "claim": "Perceptual experiments show that the kinetics of rod-derived signals speed relative to cone-derived signals as light levels increase.",
+      "claim_type": "EXPLICIT",
+      "source": "Perceptual experiments show that the kinetics of rod-derived signals speed relative to cone-derived signals as light levels increase (Sharpe et al., 1989).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to perceptual work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:33:49.381875Z"
+    },
+    {
+      "id": "469053ab-0e30-4eff-8067-079985e5c6a4",
+      "content_id": "e091c84d-3c5c-4ce7-8495-1695c02a2a1a",
+      "claim_id": "C69",
+      "claim": "The speeding of rod-derived signals is often attributed to a luminance-dependent change in the dominant route that rod-derived signals take through the retina.",
+      "claim_type": "EXPLICIT",
+      "source": "This speeding is often attributed to a luminance-dependent change in the dominant route that rod-derived signals take through the retina (reviewed by (Buck, 2004; Chen et al., 2000; Stockman and Sharpe, 2006; Buck, 2014))",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to review articles.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:33:49.381875Z"
+    },
+    {
+      "id": "15559aaf-bd05-4b4f-8cba-d75556f53879",
+      "content_id": "e091c84d-3c5c-4ce7-8495-1695c02a2a1a",
+      "claim_id": "C70",
+      "claim": "The shift in kinetics of rod-derived signals appears to originate within the rods themselves.",
+      "claim_type": "EXPLICIT",
+      "source": "Instead, as described below, the shift in kinetics of rod-derived signals appears to originate within the rods themselves.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the study, supported by data presented later.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:33:49.381875Z"
+    },
+    {
+      "id": "8b0a7bd3-f956-488c-807c-8e625e9cd408",
+      "content_id": "e091c84d-3c5c-4ce7-8495-1695c02a2a1a",
+      "claim_id": "C71",
+      "claim": "Both spike responses and excitatory synaptic inputs of On parasol RGCs sped by ~100 ms across the range of light levels from 0.2 to 100 R*/rod/s.",
+      "claim_type": "EXPLICIT",
+      "source": "Both spike responses and excitatory synaptic inputs sped by ~100 ms across the range of light levels probed (Figure 7C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an experimental finding shown in Figure 7C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:33:49.381875Z"
+    },
+    {
+      "id": "a1eb7723-15a4-495d-92ad-fdf1b5e779e0",
+      "content_id": "e091c84d-3c5c-4ce7-8495-1695c02a2a1a",
+      "claim_id": "C72",
+      "claim": "Kinetic changes in RGC responses between 1 and 10 R*/rod/s were similar in magnitude to those measured in perceptual experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "Kinetic changes between 1 and 10 R*/rod/s were similar in magnitude to those measured in perceptual experiments (Sharpe et al., 1989), suggesting that the retina makes a substantial contribution to the speeding observed perceptually.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison between the authors' data and perceptual data from the literature.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:33:49.381875Z"
+    },
+    {
+      "id": "c9e587cc-3842-4999-8711-d08d03209bba",
+      "content_id": "e091c84d-3c5c-4ce7-8495-1695c02a2a1a",
+      "claim_id": "C73",
+      "claim": "The conserved routing of rod signals across light levels indicates that kinetic shifts occur within elements of the primary rod pathway rather than from a change in the dominant pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "The conserved routing of rod signals across these light levels indicates that these kinetic shifts occur within elements of the primary rod pathway rather than from a change in the dominant pathway conveying rod signals through the retina.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the routing data and kinetic measurements.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:33:49.381875Z"
+    },
+    {
+      "id": "e9571827-6a87-425e-8d90-78ab911477a5",
+      "content_id": "e091c84d-3c5c-4ce7-8495-1695c02a2a1a",
+      "claim_id": "C74",
+      "claim": "The change in kinetics observed in rod phototransduction currents could account for ~40% of the change in kinetics observed in RGC responses.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, the change in kinetics observed in rod phototransduction currents could account for ~40% of the change in kinetics observed in RGC responses (Figure 7F, compare dashed blue line and closed circles).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative finding from the data in Figure 7F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:33:49.381875Z"
+    },
+    {
+      "id": "858ed34c-80cd-454d-a459-12bd82449cd9",
+      "content_id": "e091c84d-3c5c-4ce7-8495-1695c02a2a1a",
+      "claim_id": "C75",
+      "claim": "Rod voltage responses to brief flashes showed larger changes in kinetics than observed in the photocurrents.",
+      "claim_type": "EXPLICIT",
+      "source": "Rod voltage responses (Figure 7E) to brief flashes showed larger changes in kinetics than observed in the photocurrents (Figure 7D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a comparison of experimental data shown in Figure 7D and 7E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:33:49.381875Z"
+    },
+    {
+      "id": "1ad4161d-7c6b-451b-9593-a2302cea8a0d",
+      "content_id": "e091c84d-3c5c-4ce7-8495-1695c02a2a1a",
+      "claim_id": "C76",
+      "claim": "Rod voltage responses to sinusoidal stimuli (predicted from flash responses) could fully explain the ~100 ms change in kinetics of RGC responses to sinusoidal stimuli.",
+      "claim_type": "EXPLICIT",
+      "source": "Further, when we used the flash responses to predict responses to sinusoidal stimuli, we found that they could fully explain the ~100 ms change in kinetics of RGC responses to sinusoidal stimuli (Figure 7F, dashed blue line and open circles).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the analysis shown in Figure 7F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:33:49.381875Z"
+    },
+    {
+      "id": "ee8534c2-34c9-41b8-be6a-c3e36f457c11",
+      "content_id": "e091c84d-3c5c-4ce7-8495-1695c02a2a1a",
+      "claim_id": "C77",
+      "claim": "The speeding of the rod voltage response coincided with a large steady-state hyperpolarization of the rod membrane potential (9.0 \u00b1 0.7 mV upon a step from 1 to 60 R*/rod/s).",
+      "claim_type": "EXPLICIT",
+      "source": "The speeding of the rod voltage response coincided with a large steady-state hyperpolarization of the rod membrane potential (9.0 \u00b1 0.7 mV upon a step from 1 to 60 R*/rod/s, n = 10; Figure 7G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an experimental measurement shown in Figure 7G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:33:49.381875Z"
+    },
+    {
+      "id": "9f79bded-947d-4c9e-90b3-9ef2ec4d5586",
+      "content_id": "e091c84d-3c5c-4ce7-8495-1695c02a2a1a",
+      "claim_id": "C78",
+      "claim": "Hyperpolarization sped the rod membrane time constant by a factor of ~2.",
+      "claim_type": "EXPLICIT",
+      "source": "Hyperpolarization indeed sped the membrane time constant by a factor of ~2 (Figure 7I), and this effect was well-matched to the physiological range of rod voltages (resting membrane potential in darkness of \u221244 \u00b1 1 mV, n = 10).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an experimental finding shown in Figure 7I.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:33:49.381875Z"
+    },
+    {
+      "id": "05c9b42f-e925-4ae1-b6ba-62d6b243f3d5",
+      "content_id": "e091c84d-3c5c-4ce7-8495-1695c02a2a1a",
+      "claim_id": "C79",
+      "claim": "The change in kinetics of the rod-derived retinal outputs originates largely from the rods themselves rather than from a light-dependent shift in the routing of rod signals through fast and slow retinal circuits.",
+      "claim_type": "EXPLICIT",
+      "source": "These experiments indicate that the change in kinetics of the rod-derived retinal outputs originates largely from the rods themselves rather than from a light-dependent shift in the routing of rod signals through fast and slow retinal circuits.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary conclusion of the study, supported by data in Figure 7.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:33:49.381875Z"
+    },
+    {
+      "id": "ac9ca8df-963c-45ac-ac69-13cdba432f5a",
+      "content_id": "e091c84d-3c5c-4ce7-8495-1695c02a2a1a",
+      "claim_id": "C80",
+      "claim": "The speeding of rod-derived RGC responses can be explained by changes in the kinetics of phototransduction together with voltage-dependent changes in the conversion of outer segment currents to voltages.",
+      "claim_type": "EXPLICIT",
+      "source": "Such effects, however, appear relatively minor as the speeding of rod-derived RGC responses can be explained by changes in the kinetics of phototransduction together with voltage-dependent changes in the conversion of outer segment currents to voltages.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental data in Figure 7.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:33:49.381875Z"
+    },
+    {
+      "id": "25dccb8f-e374-4388-bd56-dbe8637e43f2",
+      "content_id": "e091c84d-3c5c-4ce7-8495-1695c02a2a1a",
+      "claim_id": "C81",
+      "claim": "The integration time of rod-derived RGC responses decreases by a factor of ~3 from low scotopic to high mesopic light levels.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, the integration time of rod-derived RGC responses decreases by a factor of ~3 from low scotopic to high mesopic light levels.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the data shown in Figure 8A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:33:49.381875Z"
+    },
+    {
+      "id": "cebd7b75-0966-4c49-aa2b-389313725864",
+      "content_id": "e091c84d-3c5c-4ce7-8495-1695c02a2a1a",
+      "claim_id": "C82",
+      "claim": "Retinal circuits integrate for relatively long times at low light levels, where detecting sparse photon absorptions is a primary challenge.",
+      "claim_type": "EXPLICIT",
+      "source": "Retinal circuits integrate for relatively long times at low light levels, where detecting sparse photon absorptions is a primary challenge.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the data in Figure 8 and general principles of signal processing.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:33:49.381875Z"
+    },
+    {
+      "id": "8dcfbada-45a1-4220-a5a9-91a42eebb722",
+      "content_id": "e091c84d-3c5c-4ce7-8495-1695c02a2a1a",
+      "claim_id": "C83",
+      "claim": "At low light levels, signal-to-noise is improved ~2-fold compared to the situation with a fixed short integration time.",
+      "claim_type": "EXPLICIT",
+      "source": "At low light levels, signal-to-noise is improved ~2-fold compared to the situation with a fixed short integration time.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the modeling shown in Figure 8B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:33:49.381875Z"
+    },
+    {
+      "id": "14b3b711-5c0c-4da8-8d52-25ae19b2e918",
+      "content_id": "e091c84d-3c5c-4ce7-8495-1695c02a2a1a",
+      "claim_id": "C84",
+      "claim": "The speeding of rod signals has been attributed to a shift in routing of rod signals from the (presumed slow) primary pathway to the (presumed fast) secondary or cone bipolar pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "The speeding of rod signals has been attributed to a shift in routing of rod signals from the (presumed slow) primary pathway to the (presumed fast) secondary or cone bipolar pathway.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of a hypothesis from the literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:33:49.381875Z"
+    },
+    {
+      "id": "4de27ba5-1478-42f6-a272-f2de52692152",
+      "content_id": "e091c84d-3c5c-4ce7-8495-1695c02a2a1a",
+      "claim_id": "C85",
+      "claim": "Light-level-dependent changes in rod signaling in primate are not due to a change in routing, but instead to flexibility within the primary pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "This implies that light-level-dependent changes in rod signaling in primate, such as those illustrated in Figure 8, are not due to a change in routing, but instead to flexibility within the primary pathway.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary conclusion of the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:33:49.381875Z"
+    },
+    {
+      "id": "bfb1d80e-4369-4ede-92d6-63f8ffaac4ad",
+      "content_id": "e091c84d-3c5c-4ce7-8495-1695c02a2a1a",
+      "claim_id": "C86",
+      "claim": "Mouse rod bipolar cells make some contacts with cones.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, mouse rod bipolar cells, long thought to receive input exclusively from rods, make some contacts with cones (Behrens et al., 2016)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to recent work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:33:49.381875Z"
+    },
+    {
+      "id": "7bc8caa2-f03f-40c8-986d-a597e2889981",
+      "content_id": "e091c84d-3c5c-4ce7-8495-1695c02a2a1a",
+      "claim_id": "C87",
+      "claim": "Mouse rod bipolar cells can convey cone-derived signals.",
+      "claim_type": "EXPLICIT",
+      "source": "and can convey cone-derived signals (Pang et al., 2010; Szikra et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:33:49.381875Z"
+    },
+    {
+      "id": "f7cf507e-2928-4fdf-99fb-4960c2aa93fd",
+      "content_id": "e091c84d-3c5c-4ce7-8495-1695c02a2a1a",
+      "claim_id": "C88",
+      "claim": "Cone inputs to rod bipolar cells have not been observed in primate retina.",
+      "claim_type": "EXPLICIT",
+      "source": "Cone inputs to rod bipolar cells have not been observed in primate retina.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the absence of a finding in primate retina.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:33:49.381875Z"
+    },
+    {
+      "id": "d027dc22-8e5e-4660-82b9-e04f5f6cc14c",
+      "content_id": "e091c84d-3c5c-4ce7-8495-1695c02a2a1a",
+      "claim_id": "C89",
+      "claim": "Rod contacts on cone bipolar dendrites appear more numerous in mouse than primate.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, rod contacts on cone bipolar dendrites appear more numerous in mouse than primate (Tsukamoto and Omi, 2014; Tsukamoto and Omi, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to anatomical studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:33:49.381875Z"
+    },
+    {
+      "id": "9f35b650-e806-43e2-af73-cef2c476b6d7",
+      "content_id": "e091c84d-3c5c-4ce7-8495-1695c02a2a1a",
+      "claim_id": "C90",
+      "claim": "There is greater mixing of rod and cone signals in rodent retina than in primate retina.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests a greater mixing of rod and cone signals in rodent retina than in primate retina.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the anatomical differences cited.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:33:49.381875Z"
+    },
+    {
+      "id": "c6cc702a-4e33-49dc-9d68-6bb77d3e0d9b",
+      "content_id": "e091c84d-3c5c-4ce7-8495-1695c02a2a1a",
+      "claim_id": "C91",
+      "claim": "The gap junctions between rods and cones convey at most a small rod-derived signal in primate retina.",
+      "claim_type": "EXPLICIT",
+      "source": "Our work here shows a surprisingly clear separation of rod and cone signals in primate retina \u2013 with even the well-established gap junctions between rods and cones (Kolb, 1977; Hornstein et al., 2005) conveying at most a small rod-derived signal.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the study, with reference to previous anatomical work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:33:49.381875Z"
+    },
+    {
+      "id": "c51ae473-a029-4c03-b6b5-9e97a2bda94a",
+      "content_id": "e091c84d-3c5c-4ce7-8495-1695c02a2a1a",
+      "claim_id": "C92",
+      "claim": "The separation of rod and cone signals through most of the retinal circuitry maximizes opportunities for independent processing.",
+      "claim_type": "EXPLICIT",
+      "source": "The resulting separation of rod and cone signals through most of the retinal circuitry maximizes opportunities for independent processing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the finding of signal separation.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:33:49.381875Z"
+    },
+    {
+      "id": "6daac263-c8ea-41db-9269-8cf3621a343c",
+      "content_id": "e091c84d-3c5c-4ce7-8495-1695c02a2a1a",
+      "claim_id": "C93",
+      "claim": "Independent processing of rod and cone signals may be particularly important under mesopic conditions when rod signals are approaching saturation and cone signals are small and threatened by noise.",
+      "claim_type": "EXPLICIT",
+      "source": "Such independent processing may be particularly important under mesopic conditions when rod signals are approaching saturation and cone signals are small and threatened by noise.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation about the functional significance of the findings.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:33:49.381875Z"
+    },
+    {
+      "id": "2726dde8-4c1b-45a7-b0dc-5bce602bfaa6",
+      "content_id": "e091c84d-3c5c-4ce7-8495-1695c02a2a1a",
+      "claim_id": "C94",
+      "claim": "Mechanistic studies derived from mouse may not be directly applicable to humans.",
+      "claim_type": "EXPLICIT",
+      "source": "Our work also provides a cautionary reminder that mechanistic studies derived from mouse may not be directly applicable to humans.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general conclusion drawn from the species differences observed.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:33:49.381875Z"
+    },
+    {
+      "id": "a6173094-0012-4b1d-9c6b-b82bd6b7810c",
+      "content_id": "e091c84d-3c5c-4ce7-8495-1695c02a2a1a",
+      "claim_id": "C95",
+      "claim": "Neuromodulators could enhance rod signaling through the secondary pathway in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "An issue of particular concern is the washout of neuromodulators that could enhance rod signaling through the secondary pathway \u2013 for example the dopaminergic signaling important in circadian rhythms (Ribelayga et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation about potential limitations of the in vitro preparation, with reference to previous work.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:33:49.381875Z"
+    },
+    {
+      "id": "6b0b834d-e9b9-4112-9c2c-f8e79b18b5d9",
+      "content_id": "e091c84d-3c5c-4ce7-8495-1695c02a2a1a",
+      "claim_id": "C96",
+      "claim": "The same in vitro preparation does not eliminate the secondary pathway in mouse.",
+      "claim_type": "EXPLICIT",
+      "source": "We note, however, that the same preparation does not eliminate the secondary pathway in mouse, but this issue is confounded by a lack of circadian regulation in C57/Bl6 mice (Jin and Ribelayga, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the study with reference to a potential confound.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:33:49.381875Z"
+    },
+    {
+      "id": "66fb74a1-6311-4510-a77d-84a52eb6836f",
+      "content_id": "e091c84d-3c5c-4ce7-8495-1695c02a2a1a",
+      "claim_id": "C97",
+      "claim": "The physiological estimate of the upper end of primate rod signaling (300 R*/rod/s) agrees well with human perceptual results.",
+      "claim_type": "EXPLICIT",
+      "source": "Our physiological estimate of the upper end of primate rod signaling agrees well with human perceptual results (Sharpe et al., 1992).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison between the authors' data and perceptual data from the literature.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:33:49.381875Z"
+    },
+    {
+      "id": "03ea9777-a345-438c-a708-5823c34a141e",
+      "content_id": "e091c84d-3c5c-4ce7-8495-1695c02a2a1a",
+      "claim_id": "C98",
+      "claim": "Recordings from rodents reveal that rods can modulate retinal outputs at considerably higher light levels than suggested by short-term saturation measurements.",
+      "claim_type": "EXPLICIT",
+      "source": "However, recordings from rodents reveal that rods can modulate retinal outputs at considerably higher light levels (Yin et al., 2006; Naarendorp et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous work in rodents.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:33:49.381875Z"
+    },
+    {
+      "id": "e02ccaff-4cac-44a4-a534-ef8149ccf666",
+      "content_id": "e091c84d-3c5c-4ce7-8495-1695c02a2a1a",
+      "claim_id": "C99",
+      "claim": "Remaining rod responses at high light levels rely at least in part on a form of bleaching adaptation that allows rods to regain sensitivity after prolonged exposure (>10 min) to photopic backgrounds.",
+      "claim_type": "EXPLICIT",
+      "source": "These remaining rod responses rely at least in part on a form of bleaching adaptation that allows rods to regain sensitivity after prolonged exposure (>10 min) to photopic backgrounds (Tikidji-Hamburyan et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to recent work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:33:49.381875Z"
+    },
+    {
+      "id": "ba383bae-d0e3-4fcf-a915-25c721cfd5ab",
+      "content_id": "e091c84d-3c5c-4ce7-8495-1695c02a2a1a",
+      "claim_id": "C100",
+      "claim": "On short time scales (\u226410 min), rods could no longer modulate RGC output at backgrounds at or above 10^4 R*/rod/s in mouse.",
+      "claim_type": "EXPLICIT",
+      "source": "On short time scales (\u226410 min) and consistent with our results (Figure 4), Tikidji-Hamburyan and colleagues found that rods could no longer modulate RGC output at backgrounds at or above 104 R*/rod/s.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison with previous work, supported by citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:33:49.381875Z"
+    },
+    {
+      "id": "c88471d8-8fd3-4553-8eba-d06349cc5613",
+      "content_id": "e091c84d-3c5c-4ce7-8495-1695c02a2a1a",
+      "claim_id": "C101",
+      "claim": "The 15 Hz rod flicker null was not observed in previous in vivo recordings from monkey parasol and midget RGCs.",
+      "claim_type": "EXPLICIT",
+      "source": "This flicker null was similarly not observed in previous in vivo recordings from monkey parasol and midget RGCs (Cao et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:33:49.381875Z"
+    },
+    {
+      "id": "ca1eaa90-d9c0-4a52-bb8d-64bda82c6a57",
+      "content_id": "e091c84d-3c5c-4ce7-8495-1695c02a2a1a",
+      "claim_id": "C102",
+      "claim": "Interactions between rod and cone signals affect many aspects of mesopic vision.",
+      "claim_type": "EXPLICIT",
+      "source": "Interactions between rod and cone signals affect many aspects of mesopic vision (reviewed by (Buck, 2014; Stockman and Sharpe, 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to review articles.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:33:49.381875Z"
+    },
+    {
+      "id": "8e26ef8a-a4d5-4b1c-8afb-447f7122d893",
+      "content_id": "e091c84d-3c5c-4ce7-8495-1695c02a2a1a",
+      "claim_id": "C103",
+      "claim": "Rod adaptation, and not rerouting, is the critical retinal mechanism that shapes the time course of rod-derived signals and ultimately human perception under scotopic and mesopic conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, this work implicates rod adaptation, and not rerouting, as the critical retinal mechanism that shapes the time course of rod-derived signals and ultimately human perception under scotopic and mesopic conditions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary conclusion of the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:33:49.381875Z"
+    },
+    {
+      "id": "2c0369b0-8bda-4ae0-86f8-0bb5b09e8043",
+      "content_id": "e091c84d-3c5c-4ce7-8495-1695c02a2a1a",
+      "claim_id": "C104",
+      "claim": "Primate retinas were obtained through the Tissue Distribution Program of the Washington National Primate Research Center.",
+      "claim_type": "EXPLICIT",
+      "source": "Retinas were obtained through the Tissue Distribution Program of the Washington National Primate Research Center",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological detail about tissue sourcing.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:33:49.381875Z"
+    },
+    {
+      "id": "6ee862d4-108c-421e-919d-e312ab6cd4b9",
+      "content_id": "e091c84d-3c5c-4ce7-8495-1695c02a2a1a",
+      "claim_id": "C105",
+      "claim": "All procedures followed protocols approved by the Institutional Animal Care and Use Committee at the University of Washington.",
+      "claim_type": "EXPLICIT",
+      "source": "all procedures followed protocols approved by the Institutional Animal Care and Use Committee at the University of Washington.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about ethical approval.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:33:49.381875Z"
+    },
+    {
+      "id": "91800463-100e-4747-86c7-25a9a537b278",
+      "content_id": "e091c84d-3c5c-4ce7-8495-1695c02a2a1a",
+      "claim_id": "C106",
+      "claim": "Pieces of retina were dark-adapted for >1 hr before experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "In brief, pieces of retina attached to the pigment epithelium were stored in ~32\u201334\u00b0 C oxygenated (95% O2/5% CO2) Ames medium (Sigma) and dark-adapted for >1 hr.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological detail about tissue preparation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:33:49.381875Z"
+    },
+    {
+      "id": "1d337afe-e654-49ac-b08f-bd454b79c086",
+      "content_id": "e091c84d-3c5c-4ce7-8495-1695c02a2a1a",
+      "claim_id": "C107",
+      "claim": "Psychophysical measurements of rod vision in humans indicate that dark adaptation is near complete in 30\u201345 min.",
+      "claim_type": "EXPLICIT",
+      "source": "Psychophysical measurements of rod vision in humans indicate that dark adaptation is near complete in 30\u201345 min (Sharpe et al., 1989).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to perceptual work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:33:49.381875Z"
+    },
+    {
+      "id": "6d733002-210e-43fa-a010-3aa452ef8f66",
+      "content_id": "e091c84d-3c5c-4ce7-8495-1695c02a2a1a",
+      "claim_id": "C108",
+      "claim": "Isolated primate retinas were dark-adapted for \u22651 hr before any data was collected.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, isolated primate retinas (attached to the pigment epithelium) were dark-adapted for \u22651 hr before any data was collected.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological detail.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:33:49.381875Z"
+    },
+    {
+      "id": "f5b82c7e-b23c-4004-862b-8247a832b38d",
+      "content_id": "e091c84d-3c5c-4ce7-8495-1695c02a2a1a",
+      "claim_id": "C109",
+      "claim": "Mice were dark adapted for \u226512 hr before isolating the retina.",
+      "claim_type": "EXPLICIT",
+      "source": "Mice were dark adapted for \u226512 hr before isolating the retina.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological detail.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:33:49.381875Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "8f63e96b-4292-4204-8300-0affac1e4498",
+      "content_id": "e091c84d-3c5c-4ce7-8495-1695c02a2a1a",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Rod photoreceptors in primate retina saturate at approximately 250-300 R*/rod/s, with outer segment current suppression closely matching the decline in rod-derived RGC signal gain. The primary limitation on rod signaling range is the decrease in rod gain itself rather than post-rod circuit adaptation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C15-C24 provide converging evidence from suction electrode recordings (C15-C18) and RGC recordings (C19-C22) showing that rod saturation and RGC gain decline coincide (C23), supporting the conclusion that rod gain limits signaling range (C24). The data are internally consistent and directly measured.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T06:33:49.381875Z"
+    },
+    {
+      "id": "c8d25a35-0f2d-4356-9b3d-5f30f4de5e80",
+      "content_id": "e091c84d-3c5c-4ce7-8495-1695c02a2a1a",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "In primate retina, the secondary rod pathway (via rod-cone gap junctions) plays at most a minor role in transmitting rod signals to ganglion cells below rod saturation (300 R*/rod/s). NBQX-insensitive AII responses, horizontal cell responses, and cone responses all emerge only at light levels \u2265300 R*/rod/s.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C30-C39 provide multiple lines of converging evidence from pharmacological manipulation (C30-C32), horizontal cell recordings (C36), and cone recordings (C37) all showing weak secondary pathway signaling below 300 R*/rod/s. The consistency across different cell types and methods strengthens this conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T06:33:49.381875Z"
+    },
+    {
+      "id": "594b6297-d49f-4dbe-97a7-49c0806670c4",
+      "content_id": "e091c84d-3c5c-4ce7-8495-1695c02a2a1a",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Mouse and primate retinas show substantial species differences in rod signal routing. While rod photoreceptor saturation is similar, the secondary pathway in mouse contributes to retinal output at light levels >100-fold below rod saturation (~5 R*/rod/s), whereas in primate the secondary pathway is largely absent below saturation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C41-C45 present direct comparative measurements between mouse and primate showing clear quantitative differences in secondary pathway engagement (C42, C44, C45). The data are internally consistent and support the conclusion of species differences (C43).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T06:33:49.381875Z"
+    },
+    {
+      "id": "7bc08984-455d-4ad7-a212-d42560000f60",
+      "content_id": "e091c84d-3c5c-4ce7-8495-1695c02a2a1a",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "For sinusoidal stimuli in primate retina, rod-derived signals in horizontal cells (secondary pathway) are too weak to explain rod-derived RGC responses at temporal frequencies \u226410 Hz. The primary rod pathway dominates responses to both sinusoidal and flashed stimuli.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C46-C49 provide quantitative comparison showing that H1 horizontal cell responses to rod-preferring stimuli are at least 7-fold weaker than On parasol responses (C47), leading to the logical conclusion that the secondary pathway cannot account for RGC responses (C48, C49).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T06:33:49.381875Z"
+    },
+    {
+      "id": "013d0192-823c-4a36-86e3-153efd198fd9",
+      "content_id": "e091c84d-3c5c-4ce7-8495-1695c02a2a1a",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "On parasol RGC responses to 15 Hz flicker increase monotonically across light levels without exhibiting the perceptual flicker null, suggesting this perceptual phenomenon does not originate from convergence of parallel rod circuits prior to On parasol RGCs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C52-C54 present direct experimental evidence showing absence of the expected null or phase discontinuity in On parasol responses. However, this is a negative result that doesn't definitively rule out all alternative explanations, though it does constrain where the perceptual effect might arise.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T06:33:49.381875Z"
+    },
+    {
+      "id": "59848d3b-eca2-4899-ba06-fbd977b075ab",
+      "content_id": "e091c84d-3c5c-4ce7-8495-1695c02a2a1a",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "In primate Off RGCs, rod signals are less strongly weighted than cone signals compared to On RGCs, and pharmacological suppression of On pathways eliminates >80% of rod responses at backgrounds \u226420 R*/rod/s, indicating that rod signals reach Off RGCs mainly through the primary pathway.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C56-C62 provide converging evidence from signal weighting comparisons (C56-C59) and pharmacological manipulation (C60-C61) supporting the conclusion that the primary pathway dominates in Off circuits (C62). The authors acknowledge potential off-target effects of pharmacology, which is appropriate caution.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T06:33:49.381875Z"
+    },
+    {
+      "id": "f032fc93-3ea6-4abf-92c1-ffff8dddccfc",
+      "content_id": "e091c84d-3c5c-4ce7-8495-1695c02a2a1a",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "In mouse Off alpha RGCs, the primary pathway dominates at 0.5 R*/rod/s (90% reduction with LY/APB), but its contribution decreases at higher light levels (35% reduction at 5 R*/rod/s, minimal effect at 50 R*/rod/s).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C63-C65 present direct experimental measurements from mouse retina showing light-level-dependent changes in pathway contribution. The data are clear and internally consistent, providing important species comparison.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T06:33:49.381875Z"
+    },
+    {
+      "id": "b0901804-2da0-4bf7-86d0-5cfc89ac2d61",
+      "content_id": "e091c84d-3c5c-4ce7-8495-1695c02a2a1a",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The primary rod pathway provides the dominant route for rod signals through primate retina across scotopic and mesopic light levels for a wide range of stimuli, maximizing opportunities for independent processing of rod and cone signals.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C66 is a synthesis conclusion supported by the collective evidence from Figures 3-6 (multiple cell types, stimuli, and methods). Claim C67 is a logical inference about the functional consequence of this routing pattern. Both are well-supported by the experimental data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T06:33:49.381875Z"
+    },
+    {
+      "id": "e5bab595-e520-4bc2-9df0-d5069c913545",
+      "content_id": "e091c84d-3c5c-4ce7-8495-1695c02a2a1a",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "On parasol RGC responses speed by ~100 ms across light levels from 0.2 to 100 R*/rod/s, with kinetic changes between 1 and 10 R*/rod/s similar to those in perceptual experiments. Since rod signal routing is conserved across these light levels, the kinetic shifts occur within the primary pathway rather than from pathway switching.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C71-C73 present direct measurements of RGC kinetics (C71), comparison with perceptual data (C72), and logical inference based on the routing results (C73). The conclusion follows logically from the established dominance of the primary pathway.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T06:33:49.381875Z"
+    },
+    {
+      "id": "370088d6-70e8-4532-9b09-cc8197cf4640",
+      "content_id": "e091c84d-3c5c-4ce7-8495-1695c02a2a1a",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The speeding of rod-derived retinal outputs originates largely from the rods themselves. Rod phototransduction accounts for ~40% of RGC kinetic changes, while voltage-dependent changes in rod membrane properties (due to hyperpolarization speeding the membrane time constant by ~2-fold) fully account for the remaining kinetic changes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C74-C80 provide a mechanistic explanation with quantitative support: phototransduction contributes 40% (C74), voltage responses show larger changes (C75-C76), hyperpolarization occurs (C77) and speeds membrane kinetics (C78), leading to the conclusion that rod mechanisms explain RGC kinetics (C79-C80). The logic is sound and data are consistent.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T06:33:49.381875Z"
+    },
+    {
+      "id": "ecff8506-53f6-4c16-af45-b148d1e433c1",
+      "content_id": "e091c84d-3c5c-4ce7-8495-1695c02a2a1a",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The integration time of rod-derived RGC responses decreases by ~3-fold from low scotopic to high mesopic light levels, with retinal circuits integrating for longer times at low light levels where detecting sparse photons is critical. This adaptive integration improves signal-to-noise by ~2-fold at low light levels compared to fixed short integration.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C81-C83 present direct measurements (C81), functional interpretation (C82), and modeling results (C83) showing the adaptive benefit of changing integration time. The data and modeling are internally consistent and support the functional interpretation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T06:33:49.381875Z"
+    },
+    {
+      "id": "b1012571-c2d1-40ec-8186-7cdba4bc2576",
+      "content_id": "e091c84d-3c5c-4ce7-8495-1695c02a2a1a",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Rod signals traverse primate retina almost exclusively through the primary rod bipolar pathway, contrasting with mouse retina. The speeding of rod signals with light level is inherited from rod photoreceptors themselves rather than pathway switching. Rod adaptation, not rerouting, is the critical mechanism shaping rod signal time course and human perception under scotopic and mesopic conditions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4-C6, C85, and C103 represent the main conclusions of the study, synthesizing evidence from routing experiments, kinetics measurements, and species comparisons. These conclusions are well-supported by the collective experimental evidence presented throughout the manuscript.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T06:33:49.381875Z"
+    },
+    {
+      "id": "02f42d2f-dc51-417e-b590-b46fb4dab2aa",
+      "content_id": "e091c84d-3c5c-4ce7-8495-1695c02a2a1a",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Anatomical and functional evidence suggests greater mixing of rod and cone signals in rodent than primate retina. In primate, even rod-cone gap junctions convey minimal rod signals, resulting in clear separation of rod and cone signals through most retinal circuitry, which may maximize opportunities for independent processing especially under mesopic conditions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C86-C93 synthesize anatomical literature (C86-C90) with the functional findings of this study (C91) to draw conclusions about signal separation (C92) and its potential functional significance (C93). The integration of anatomical and functional evidence is appropriate, though C93 is somewhat speculative.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T06:33:49.381875Z"
+    },
+    {
+      "id": "bce32ae8-9df8-45c6-8387-a2af06728af0",
+      "content_id": "e091c84d-3c5c-4ce7-8495-1695c02a2a1a",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The study provides a cautionary note that mechanistic findings from mouse may not directly apply to humans. Potential limitations include washout of neuromodulators in vitro, though the same preparation preserves secondary pathway function in mouse. The physiological estimate of primate rod saturation (300 R*/rod/s) agrees well with human perceptual results.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C94-C97 appropriately discuss limitations and validate findings. C94 is a reasonable conclusion from the species differences observed. C95-C96 acknowledge potential caveats while noting controls. C97 provides external validation of the saturation measurements.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T06:33:49.381875Z"
+    },
+    {
+      "id": "7caa909b-13b4-49a0-be43-5b38eb766ca3",
+      "content_id": "e091c84d-3c5c-4ce7-8495-1695c02a2a1a",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Background context establishes that rod photoreceptors function across a million-fold light range, face different challenges at different light levels, and that a prominent hypothesis proposes light-level-dependent routing through primary, secondary, and tertiary pathways to meet these challenges.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C14 provide established background knowledge and literature context supported by appropriate citations. These claims accurately represent the state of the field and motivate the current study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T06:33:49.381875Z"
+    },
+    {
+      "id": "9745f356-9635-4c46-82d5-773f1c73e6f3",
+      "content_id": "e091c84d-3c5c-4ce7-8495-1695c02a2a1a",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Anatomical and methodological background describes the known connectivity of AII amacrine cells, horizontal cells, and pathways to Off cone bipolar cells, along with the rationale for using AMPA receptor antagonists to isolate secondary pathway signals.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C26-C29, C33-C35, and C55 describe established anatomical knowledge and methodological approaches supported by appropriate citations. These provide necessary context for interpreting the experimental results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T06:33:49.381875Z"
+    },
+    {
+      "id": "862274b3-23c5-4eb1-91ae-28e1fcbda748",
+      "content_id": "e091c84d-3c5c-4ce7-8495-1695c02a2a1a",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Literature context establishes that rodent studies support light-level-dependent routing, perceptual studies show kinetic changes and flicker nulls attributed to pathway switching, and recent work reveals rods can signal at higher light levels than previously thought through bleaching adaptation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C40, C50-C51, C68-C69, C84, C98-C102 accurately represent prior literature with appropriate citations, providing context for the current findings and highlighting discrepancies between prior hypotheses and current results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T06:33:49.381875Z"
+    },
+    {
+      "id": "e050049e-d5f6-43f7-be7d-726846d338f0",
+      "content_id": "e091c84d-3c5c-4ce7-8495-1695c02a2a1a",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "Methodological details describe tissue sourcing, ethical approval, and dark adaptation protocols (\u22651 hr for primate, \u226512 hr for mouse), with justification based on human psychophysical measurements showing dark adaptation is near complete in 30-45 min.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C104-C109 provide standard methodological details that are clearly stated and appropriately justified with reference to psychophysical literature (C107). These are necessary for reproducibility and interpretation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T06:33:49.381875Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "a43785ce-674b-4a65-913e-66c4f15db84c",
+      "result_id": "8f63e96b-4292-4204-8300-0affac1e4498"
+    },
+    {
+      "claim_id": "17656ff5-58e2-487a-a140-89a7cd057d71",
+      "result_id": "8f63e96b-4292-4204-8300-0affac1e4498"
+    },
+    {
+      "claim_id": "f904b202-8d58-452a-91e8-a08d155f9475",
+      "result_id": "8f63e96b-4292-4204-8300-0affac1e4498"
+    },
+    {
+      "claim_id": "20e0bf91-c78c-4c7e-ba07-af9f9e76a28c",
+      "result_id": "8f63e96b-4292-4204-8300-0affac1e4498"
+    },
+    {
+      "claim_id": "92b8616e-896a-42cf-b036-10794562168b",
+      "result_id": "8f63e96b-4292-4204-8300-0affac1e4498"
+    },
+    {
+      "claim_id": "a8142e8c-1e1e-4dda-a110-bc97d836ab4b",
+      "result_id": "8f63e96b-4292-4204-8300-0affac1e4498"
+    },
+    {
+      "claim_id": "ce1ff0a7-a5ba-4dbf-8dc2-aae88f9c8343",
+      "result_id": "8f63e96b-4292-4204-8300-0affac1e4498"
+    },
+    {
+      "claim_id": "aabb7906-66ad-41d3-ac3e-5965a790cb58",
+      "result_id": "8f63e96b-4292-4204-8300-0affac1e4498"
+    },
+    {
+      "claim_id": "896ce695-903b-41db-905a-affeb4d6b371",
+      "result_id": "8f63e96b-4292-4204-8300-0affac1e4498"
+    },
+    {
+      "claim_id": "869dc1b5-1c1d-4e30-8632-4f31b8187fc6",
+      "result_id": "8f63e96b-4292-4204-8300-0affac1e4498"
+    },
+    {
+      "claim_id": "841470f1-1ffb-4c45-9958-af653e49b8d0",
+      "result_id": "c8d25a35-0f2d-4356-9b3d-5f30f4de5e80"
+    },
+    {
+      "claim_id": "016e3128-45bb-49c6-a94a-ac510aad5e62",
+      "result_id": "c8d25a35-0f2d-4356-9b3d-5f30f4de5e80"
+    },
+    {
+      "claim_id": "f26a1193-d0cb-4332-ae6a-bcdb249340ba",
+      "result_id": "c8d25a35-0f2d-4356-9b3d-5f30f4de5e80"
+    },
+    {
+      "claim_id": "26f4aac8-9a71-4ce1-9489-69f701d85f68",
+      "result_id": "c8d25a35-0f2d-4356-9b3d-5f30f4de5e80"
+    },
+    {
+      "claim_id": "cb6b8561-8539-44ef-8c3b-07795aafc0bb",
+      "result_id": "c8d25a35-0f2d-4356-9b3d-5f30f4de5e80"
+    },
+    {
+      "claim_id": "086d3f66-5ede-45bd-b5ab-b7a1068c1ef3",
+      "result_id": "c8d25a35-0f2d-4356-9b3d-5f30f4de5e80"
+    },
+    {
+      "claim_id": "63ad06df-6250-4541-9397-c1cd7ba71031",
+      "result_id": "c8d25a35-0f2d-4356-9b3d-5f30f4de5e80"
+    },
+    {
+      "claim_id": "68d6ad55-a8fd-4ca0-973f-040db49793fb",
+      "result_id": "594b6297-d49f-4dbe-97a7-49c0806670c4"
+    },
+    {
+      "claim_id": "66ac3882-7834-4d74-84d3-cabb8e2501da",
+      "result_id": "594b6297-d49f-4dbe-97a7-49c0806670c4"
+    },
+    {
+      "claim_id": "f91b85c7-c8b0-409e-88de-ba1ad2cf527f",
+      "result_id": "594b6297-d49f-4dbe-97a7-49c0806670c4"
+    },
+    {
+      "claim_id": "4cde5ec7-44c7-4134-9a66-a974113206e4",
+      "result_id": "594b6297-d49f-4dbe-97a7-49c0806670c4"
+    },
+    {
+      "claim_id": "487a9d5d-6268-44ec-9002-8225c05e3a36",
+      "result_id": "594b6297-d49f-4dbe-97a7-49c0806670c4"
+    },
+    {
+      "claim_id": "233b7f55-57b1-4e3e-8641-70ece4677833",
+      "result_id": "7bc08984-455d-4ad7-a212-d42560000f60"
+    },
+    {
+      "claim_id": "c44b23db-55b7-4a47-aa1d-2c021ebf549e",
+      "result_id": "7bc08984-455d-4ad7-a212-d42560000f60"
+    },
+    {
+      "claim_id": "b697b3de-09d7-403d-a387-3f78bece48e9",
+      "result_id": "7bc08984-455d-4ad7-a212-d42560000f60"
+    },
+    {
+      "claim_id": "70ddc847-2702-4069-b4fa-141356aa54aa",
+      "result_id": "7bc08984-455d-4ad7-a212-d42560000f60"
+    },
+    {
+      "claim_id": "9c0f103b-587c-493e-9774-a8b5521d138f",
+      "result_id": "013d0192-823c-4a36-86e3-153efd198fd9"
+    },
+    {
+      "claim_id": "1997a20d-5896-4e2f-884e-2adf0ba7f49f",
+      "result_id": "013d0192-823c-4a36-86e3-153efd198fd9"
+    },
+    {
+      "claim_id": "c3cb0364-3274-4fcc-beae-480cccf7c17f",
+      "result_id": "013d0192-823c-4a36-86e3-153efd198fd9"
+    },
+    {
+      "claim_id": "89425b1b-95bd-47d7-982b-8a3434b9ef1a",
+      "result_id": "59848d3b-eca2-4899-ba06-fbd977b075ab"
+    },
+    {
+      "claim_id": "a487aa26-cd49-4ac1-b780-836c555c4331",
+      "result_id": "59848d3b-eca2-4899-ba06-fbd977b075ab"
+    },
+    {
+      "claim_id": "606641b7-a2d6-45d4-9fa6-78f55bab6eec",
+      "result_id": "59848d3b-eca2-4899-ba06-fbd977b075ab"
+    },
+    {
+      "claim_id": "36374a56-fdff-47fa-b57a-fee33a8541d2",
+      "result_id": "59848d3b-eca2-4899-ba06-fbd977b075ab"
+    },
+    {
+      "claim_id": "2fdec6e5-ebfb-4c9b-96ef-5f96c3572f88",
+      "result_id": "59848d3b-eca2-4899-ba06-fbd977b075ab"
+    },
+    {
+      "claim_id": "c856b498-d084-4fdd-91fe-542008141942",
+      "result_id": "59848d3b-eca2-4899-ba06-fbd977b075ab"
+    },
+    {
+      "claim_id": "4da03a5d-ff5e-4ebd-aba3-e31b76a28160",
+      "result_id": "59848d3b-eca2-4899-ba06-fbd977b075ab"
+    },
+    {
+      "claim_id": "219f5196-1c53-4222-9e5f-95b9818c2aed",
+      "result_id": "f032fc93-3ea6-4abf-92c1-ffff8dddccfc"
+    },
+    {
+      "claim_id": "01aa2854-b389-4b4f-862c-807c69ce7794",
+      "result_id": "f032fc93-3ea6-4abf-92c1-ffff8dddccfc"
+    },
+    {
+      "claim_id": "783d9880-2926-4f11-aec2-90e8dada9be3",
+      "result_id": "f032fc93-3ea6-4abf-92c1-ffff8dddccfc"
+    },
+    {
+      "claim_id": "86686238-f256-4ed3-8c5a-80729e33b60f",
+      "result_id": "b0901804-2da0-4bf7-86d0-5cfc89ac2d61"
+    },
+    {
+      "claim_id": "35bab5e6-216d-42dc-b67c-9f901072efe4",
+      "result_id": "b0901804-2da0-4bf7-86d0-5cfc89ac2d61"
+    },
+    {
+      "claim_id": "8b0a7bd3-f956-488c-807c-8e625e9cd408",
+      "result_id": "e5bab595-e520-4bc2-9df0-d5069c913545"
+    },
+    {
+      "claim_id": "a1eb7723-15a4-495d-92ad-fdf1b5e779e0",
+      "result_id": "e5bab595-e520-4bc2-9df0-d5069c913545"
+    },
+    {
+      "claim_id": "c9e587cc-3842-4999-8711-d08d03209bba",
+      "result_id": "e5bab595-e520-4bc2-9df0-d5069c913545"
+    },
+    {
+      "claim_id": "e9571827-6a87-425e-8d90-78ab911477a5",
+      "result_id": "370088d6-70e8-4532-9b09-cc8197cf4640"
+    },
+    {
+      "claim_id": "858ed34c-80cd-454d-a459-12bd82449cd9",
+      "result_id": "370088d6-70e8-4532-9b09-cc8197cf4640"
+    },
+    {
+      "claim_id": "1ad4161d-7c6b-451b-9593-a2302cea8a0d",
+      "result_id": "370088d6-70e8-4532-9b09-cc8197cf4640"
+    },
+    {
+      "claim_id": "ee8534c2-34c9-41b8-be6a-c3e36f457c11",
+      "result_id": "370088d6-70e8-4532-9b09-cc8197cf4640"
+    },
+    {
+      "claim_id": "9f79bded-947d-4c9e-90b3-9ef2ec4d5586",
+      "result_id": "370088d6-70e8-4532-9b09-cc8197cf4640"
+    },
+    {
+      "claim_id": "05c9b42f-e925-4ae1-b6ba-62d6b243f3d5",
+      "result_id": "370088d6-70e8-4532-9b09-cc8197cf4640"
+    },
+    {
+      "claim_id": "ac9ca8df-963c-45ac-ac69-13cdba432f5a",
+      "result_id": "370088d6-70e8-4532-9b09-cc8197cf4640"
+    },
+    {
+      "claim_id": "25dccb8f-e374-4388-bd56-dbe8637e43f2",
+      "result_id": "ecff8506-53f6-4c16-af45-b148d1e433c1"
+    },
+    {
+      "claim_id": "cebd7b75-0966-4c49-aa2b-389313725864",
+      "result_id": "ecff8506-53f6-4c16-af45-b148d1e433c1"
+    },
+    {
+      "claim_id": "8dcfbada-45a1-4220-a5a9-91a42eebb722",
+      "result_id": "ecff8506-53f6-4c16-af45-b148d1e433c1"
+    },
+    {
+      "claim_id": "874d50af-1d19-485e-9c42-f3c306765d28",
+      "result_id": "b1012571-c2d1-40ec-8186-7cdba4bc2576"
+    },
+    {
+      "claim_id": "8de70e58-f081-4693-9d86-ed3c10110053",
+      "result_id": "b1012571-c2d1-40ec-8186-7cdba4bc2576"
+    },
+    {
+      "claim_id": "6d61db63-23f7-4fc4-9ff5-d6f90ff35f70",
+      "result_id": "b1012571-c2d1-40ec-8186-7cdba4bc2576"
+    },
+    {
+      "claim_id": "4de27ba5-1478-42f6-a272-f2de52692152",
+      "result_id": "b1012571-c2d1-40ec-8186-7cdba4bc2576"
+    },
+    {
+      "claim_id": "8e26ef8a-a4d5-4b1c-8afb-447f7122d893",
+      "result_id": "b1012571-c2d1-40ec-8186-7cdba4bc2576"
+    },
+    {
+      "claim_id": "bfb1d80e-4369-4ede-92d6-63f8ffaac4ad",
+      "result_id": "02f42d2f-dc51-417e-b590-b46fb4dab2aa"
+    },
+    {
+      "claim_id": "7bc8caa2-f03f-40c8-986d-a597e2889981",
+      "result_id": "02f42d2f-dc51-417e-b590-b46fb4dab2aa"
+    },
+    {
+      "claim_id": "f7cf507e-2928-4fdf-99fb-4960c2aa93fd",
+      "result_id": "02f42d2f-dc51-417e-b590-b46fb4dab2aa"
+    },
+    {
+      "claim_id": "d027dc22-8e5e-4660-82b9-e04f5f6cc14c",
+      "result_id": "02f42d2f-dc51-417e-b590-b46fb4dab2aa"
+    },
+    {
+      "claim_id": "9f35b650-e806-43e2-af73-cef2c476b6d7",
+      "result_id": "02f42d2f-dc51-417e-b590-b46fb4dab2aa"
+    },
+    {
+      "claim_id": "c6cc702a-4e33-49dc-9d68-6bb77d3e0d9b",
+      "result_id": "02f42d2f-dc51-417e-b590-b46fb4dab2aa"
+    },
+    {
+      "claim_id": "c51ae473-a029-4c03-b6b5-9e97a2bda94a",
+      "result_id": "02f42d2f-dc51-417e-b590-b46fb4dab2aa"
+    },
+    {
+      "claim_id": "6daac263-c8ea-41db-9269-8cf3621a343c",
+      "result_id": "02f42d2f-dc51-417e-b590-b46fb4dab2aa"
+    },
+    {
+      "claim_id": "2726dde8-4c1b-45a7-b0dc-5bce602bfaa6",
+      "result_id": "bce32ae8-9df8-45c6-8387-a2af06728af0"
+    },
+    {
+      "claim_id": "a6173094-0012-4b1d-9c6b-b82bd6b7810c",
+      "result_id": "bce32ae8-9df8-45c6-8387-a2af06728af0"
+    },
+    {
+      "claim_id": "6b0b834d-e9b9-4112-9c2c-f8e79b18b5d9",
+      "result_id": "bce32ae8-9df8-45c6-8387-a2af06728af0"
+    },
+    {
+      "claim_id": "66fb74a1-6311-4510-a77d-84a52eb6836f",
+      "result_id": "bce32ae8-9df8-45c6-8387-a2af06728af0"
+    },
+    {
+      "claim_id": "75d22355-c46b-4ccc-8c29-00e3eaf669a8",
+      "result_id": "7caa909b-13b4-49a0-be43-5b38eb766ca3"
+    },
+    {
+      "claim_id": "a1a4e153-8166-47ba-a96e-a9330d9006eb",
+      "result_id": "7caa909b-13b4-49a0-be43-5b38eb766ca3"
+    },
+    {
+      "claim_id": "2b9ad495-5ae2-42c1-863f-54b922f89a73",
+      "result_id": "7caa909b-13b4-49a0-be43-5b38eb766ca3"
+    },
+    {
+      "claim_id": "d82c196d-7eb7-426c-b355-117877453573",
+      "result_id": "7caa909b-13b4-49a0-be43-5b38eb766ca3"
+    },
+    {
+      "claim_id": "9a559b21-cf08-4983-9c63-870fe847c71c",
+      "result_id": "7caa909b-13b4-49a0-be43-5b38eb766ca3"
+    },
+    {
+      "claim_id": "e6109122-c266-4254-af1e-8085714eaacb",
+      "result_id": "7caa909b-13b4-49a0-be43-5b38eb766ca3"
+    },
+    {
+      "claim_id": "1fcf3b4a-de69-431f-9cf7-796f5dddf729",
+      "result_id": "7caa909b-13b4-49a0-be43-5b38eb766ca3"
+    },
+    {
+      "claim_id": "7e9b0899-cb77-491e-90df-9034c3322e1a",
+      "result_id": "7caa909b-13b4-49a0-be43-5b38eb766ca3"
+    },
+    {
+      "claim_id": "2c54e6db-7256-489a-a516-c995b491da4a",
+      "result_id": "7caa909b-13b4-49a0-be43-5b38eb766ca3"
+    },
+    {
+      "claim_id": "d795d68a-bc48-4b37-81ea-5db39a500420",
+      "result_id": "7caa909b-13b4-49a0-be43-5b38eb766ca3"
+    },
+    {
+      "claim_id": "3659ce9a-b390-4018-ad8a-1adf66a18d72",
+      "result_id": "7caa909b-13b4-49a0-be43-5b38eb766ca3"
+    },
+    {
+      "claim_id": "4a6e09d9-87db-46d8-bad5-8764e86ae2e5",
+      "result_id": "9745f356-9635-4c46-82d5-773f1c73e6f3"
+    },
+    {
+      "claim_id": "5fb77729-dca0-4894-b312-4fb722967e57",
+      "result_id": "9745f356-9635-4c46-82d5-773f1c73e6f3"
+    },
+    {
+      "claim_id": "cd07df3c-4370-4c85-ad6f-897b6c0a7a63",
+      "result_id": "9745f356-9635-4c46-82d5-773f1c73e6f3"
+    },
+    {
+      "claim_id": "ea243692-c638-484f-a93a-7255661c1fe2",
+      "result_id": "9745f356-9635-4c46-82d5-773f1c73e6f3"
+    },
+    {
+      "claim_id": "319b3706-c72d-49dd-985b-6bb11d096ca9",
+      "result_id": "9745f356-9635-4c46-82d5-773f1c73e6f3"
+    },
+    {
+      "claim_id": "b7b40fdd-610a-45d4-97e5-7ba1d5049f51",
+      "result_id": "9745f356-9635-4c46-82d5-773f1c73e6f3"
+    },
+    {
+      "claim_id": "6ec5de83-18aa-4ad0-a856-6f9f9ac1eaef",
+      "result_id": "9745f356-9635-4c46-82d5-773f1c73e6f3"
+    },
+    {
+      "claim_id": "17453c81-eea7-4d86-b0e1-f4b0a82d25b2",
+      "result_id": "9745f356-9635-4c46-82d5-773f1c73e6f3"
+    },
+    {
+      "claim_id": "f7a4dfa9-a38b-47c2-b12a-3243ef0384d9",
+      "result_id": "862274b3-23c5-4eb1-91ae-28e1fcbda748"
+    },
+    {
+      "claim_id": "1e5776ce-5830-4863-b637-0778d4c06419",
+      "result_id": "862274b3-23c5-4eb1-91ae-28e1fcbda748"
+    },
+    {
+      "claim_id": "605ecf55-9b3a-4365-ba2c-010749b355db",
+      "result_id": "862274b3-23c5-4eb1-91ae-28e1fcbda748"
+    },
+    {
+      "claim_id": "af098d64-5207-4bbc-99a5-f2abb4505380",
+      "result_id": "862274b3-23c5-4eb1-91ae-28e1fcbda748"
+    },
+    {
+      "claim_id": "469053ab-0e30-4eff-8067-079985e5c6a4",
+      "result_id": "862274b3-23c5-4eb1-91ae-28e1fcbda748"
+    },
+    {
+      "claim_id": "14b3b711-5c0c-4da8-8d52-25ae19b2e918",
+      "result_id": "862274b3-23c5-4eb1-91ae-28e1fcbda748"
+    },
+    {
+      "claim_id": "03ea9777-a345-438c-a708-5823c34a141e",
+      "result_id": "862274b3-23c5-4eb1-91ae-28e1fcbda748"
+    },
+    {
+      "claim_id": "e02ccaff-4cac-44a4-a534-ef8149ccf666",
+      "result_id": "862274b3-23c5-4eb1-91ae-28e1fcbda748"
+    },
+    {
+      "claim_id": "ba383bae-d0e3-4fcf-a915-25c721cfd5ab",
+      "result_id": "862274b3-23c5-4eb1-91ae-28e1fcbda748"
+    },
+    {
+      "claim_id": "c88471d8-8fd3-4553-8eba-d06349cc5613",
+      "result_id": "862274b3-23c5-4eb1-91ae-28e1fcbda748"
+    },
+    {
+      "claim_id": "ca1eaa90-d9c0-4a52-bb8d-64bda82c6a57",
+      "result_id": "862274b3-23c5-4eb1-91ae-28e1fcbda748"
+    },
+    {
+      "claim_id": "2c0369b0-8bda-4ae0-86f8-0bb5b09e8043",
+      "result_id": "e050049e-d5f6-43f7-be7d-726846d338f0"
+    },
+    {
+      "claim_id": "6ee862d4-108c-421e-919d-e312ab6cd4b9",
+      "result_id": "e050049e-d5f6-43f7-be7d-726846d338f0"
+    },
+    {
+      "claim_id": "91800463-100e-4747-86c7-25a9a537b278",
+      "result_id": "e050049e-d5f6-43f7-be7d-726846d338f0"
+    },
+    {
+      "claim_id": "1d337afe-e654-49ac-b08f-bd454b79c086",
+      "result_id": "e050049e-d5f6-43f7-be7d-726846d338f0"
+    },
+    {
+      "claim_id": "6d733002-210e-43fa-a010-3aa452ef8f66",
+      "result_id": "e050049e-d5f6-43f7-be7d-726846d338f0"
+    },
+    {
+      "claim_id": "f5b82c7e-b23c-4004-862b-8247a832b38d",
+      "result_id": "e050049e-d5f6-43f7-be7d-726846d338f0"
+    }
+  ],
+  "comparisons": []
+}

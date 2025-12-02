@@ -1,0 +1,278 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "The manuscript establishes background knowledge about CGRPPBN neurons and threat responses. CGRPPBN neurons receive diverse threat signals, respond to multi-modal threats including somatic pain, and their inactivation attenuates both unconditioned behavioral responses to pain and fear-memory formation. The parabrachial nucleus relays aversive threat information to the forebrain, and threat responses involve behavioral, autonomic, and associative learning components.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C1-C4, C12-C24) are well-supported by citations to prior literature and represent established knowledge in the field. The authors appropriately cite previous work (Han et al., 2015; Campos et al., 2018; LeDoux, 2000; and others) to establish the scientific context for their study. These background claims provide the foundation for the novel experimental work presented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "Activation of CGRPPBN neurons produces diverse behavioral and physiological responses. High-frequency (30 Hz) stimulation induces profound freezing behavior, bradycardia, decreased respiration, and vasoconstriction, while lower frequency (15 Hz) stimulation causes tachycardia. Freezing behavior initiates rapidly (median 0.42 s) while bradycardia develops more slowly (median 22.15 s), suggesting freezing is not simply a consequence of autonomic effects. CGRPPBN activation also produces anxiogenic effects and supports associative fear learning when paired with an auditory CS.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C35 are well-supported by experimental data shown in Figure 1 and supplementary figures. The authors provide quantitative measurements with appropriate statistical analyses (two-way ANOVAs, t-tests) and include both ChR2 experimental and YFP control groups. The temporal dissociation between freezing and bradycardia onset (C32-C34) provides strong evidence that these are independent processes. Sample sizes appear adequate (n=4-8 per group).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "CGRPPBN neurons project to multiple forebrain targets with varying projection strengths. Major projections target the central amygdala (~40%, primarily capsular sub-nucleus), substantia innominata (~20%), and oval BNST (~15%), with weaker projections to parasubthalamic nucleus, thalamus (VPMpc, ~10% each), and insular cortex (~5%). Most targets receive bilateral projections, with the exception of the insular cortex.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C41 are supported by anatomical tracing data in Figure 1I and supplementary figures. The quantification of projection intensity appears systematic, using fluorescent tracer expression in CGRPPBN neurons. However, the manuscript does not fully describe the normalization methods or potential variability in viral transduction efficiency across animals, which could affect the precision of the reported percentages.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C42",
+      "C43"
+    ],
+    "result": "All major downstream targets of CGRPPBN neurons receive reliable excitatory input, with the VPMpc exhibiting significantly greater excitation from terminal activation than any other recording site despite not receiving the strongest input based on fiber density.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C43 are supported by electrophysiological data in Figure 1J-K showing light-evoked EPSCs in downstream targets. The finding that VPMpc shows the strongest synaptic response despite moderate projection density is interesting and well-documented. However, the manuscript notes that IC was not tested, which is a limitation. Sample size (5 cells per site from 4 mice) is modest but reasonable for slice electrophysiology.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "CGRPPBN neurons exhibit extensive collateralization with no one-to-one projections, forming a one-to-many distributed projection arrangement. Three partially separable subsets project to different targets: CeA-projectors collateralize substantially to PSTN, SI, VPMpc, and ovBNST; VPMpc-projectors collateralize to SI and IC; PSTN-projectors have limited collateralization; and ovBNST-projectors collateralize primarily to CeA. VPMpc-projectors show the greatest tendency to collateralize overall.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C55 are supported by sophisticated collateralization tracing experiments using INTRSECT viral approaches (Figure 2). The methodology using retrograde Flp and Cre-dependent/Flp-dependent expression is appropriate for isolating projection-defined subpopulations. The collateralization coefficient calculation is clearly defined. However, n=3 per condition is relatively small for anatomical quantification, and the manuscript acknowledges some subjectivity in defining collateralization thresholds (>50% coefficient or >35% projection distribution).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "Terminal photostimulation of different CGRPPBN projections produces distinct freezing responses. VPMpc and PSTN terminals elicit the most robust freezing (~40% time-spent freezing), while cCeA, SI, and ovBNST terminals produce more subtle effects (~25% freezing). Stimulation of rCeA terminals produces no freezing during stimulation but increases locomotion non-significantly. No individual projection matches the robust freezing produced by cell-body activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C62 are supported by terminal photostimulation data in Figure 3A-F and supplementary figures. The experiments include appropriate controls (YFP-expressing animals) and statistical analyses (two-way ANOVAs with post-hoc tests). The finding that no single projection replicates soma stimulation (C62) is important and well-documented. However, the authors acknowledge potential confounds from antidromic activation, though they provide evidence (Fos expression data, C76) that this is minimal.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "The temporal dynamics of freezing responses differ across projections. Most terminal stimulation groups show short-latency freezing during stimulation (<5 s), except rCeA which elicits freezing only after stimulation offset (~2.4 s). The data suggest that most CGRPPBN projections simultaneously elicit direct freezing effects and generate aversive properties promoting transient contextual freezing, while rCeA stimulation produces primarily contextual memory effects without direct freezing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C66 are supported by detailed temporal analysis in Figure 3 supplement 2C-E. The survival curve analysis and latency measurements provide strong evidence for distinct temporal patterns. The interpretation that rCeA produces contextual rather than direct freezing (C66) is reasonable given the data, though it involves some inference about underlying mechanisms. The analysis distinguishes between direct and learned freezing responses, which is methodologically sound.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "Terminal photostimulation of CGRPPBN projections produces diverse autonomic effects. PSTN activation causes mild tachycardia and vasoconstriction; rCeA activation elicits robust tachycardia, hyperventilation, and vasoconstriction; SI activation causes tachycardia and vasoconstriction; ovBNST activation causes tachycardia and hyperventilation. VPMpc and cCeA activation have no significant effects on heart rate or respiration. Terminal photostimulation does not generate sufficient antidromic activation to induce Fos expression in the PBN.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C76 are supported by autonomic measurements using pulse oximetry and tail-skin temperature (Figure 3G-X). The experiments include appropriate controls and statistical analyses (one-way ANOVAs, t-tests). The Fos expression data (C76, Figure 3 supplement 2G) provides important evidence against substantial antidromic activation. Sample sizes vary (n=5-9) but are generally adequate for physiological measurements. The lack of effects for VPMpc and cCeA is clearly stated and statistically supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C77",
+      "C78"
+    ],
+    "result": "Terminal photostimulation produces distinct effects on anxiety-like behavior. Only ovBNST terminal stimulation significantly reduces open-arm exploration in the elevated-plus-maze, consistent with an anxiogenic effect. Paradoxically, rCeA terminal stimulation increases open-arm exploration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C78 are supported by elevated-plus-maze data in Figure 4B-C. The experiments include appropriate controls and statistical analyses (Welch's t-tests). The paradoxical anxiolytic-like effect of rCeA stimulation (C78) is interesting and the authors provide a reasonable interpretation that this may reflect a shift toward active coping strategies rather than true anxiolysis. Sample sizes (n=4-9) are adequate for behavioral testing.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "Terminal photostimulation produces distinct effects on place preference. Mice robustly avoid photostimulation of CGRPPBN somata or terminals in VPMpc, PSTN, rCeA, or SI in the RTPP assay, indicating negative valence. In contrast, mice show no preference for or against photostimulation of cCeA or ovBNST terminals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C85 are supported by RTPP data in Figure 4E-K. The experiments include appropriate controls and statistical analyses (Welch's t-tests). The finding that rCeA stimulation is aversive in RTPP (C82) despite increasing open-arm exploration in EPM (C78) is interesting and the authors provide a reasonable interpretation. Sample sizes (n=5-9) are adequate. The lack of preference for cCeA and ovBNST stimulation is clearly documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "Terminal photostimulation of VPMpc, PSTN, or SI can serve as an unconditioned stimulus for associative fear learning. After 6 CS-US pairings, VPMpc and SI terminal stimulation generate significant associations (measured by area under curve) and robust conditioned freezing 24 hours later in a novel context. PSTN stimulation produces some conditioned freezing but weaker association strength. The associations formed by VPMpc or SI terminal stimulation are weaker than those driven by CGRPPBN soma stimulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C91 are supported by optogenetic conditioning data in Figure 5. The experiments include appropriate controls, multiple measures of learning (training freezing, probe test, area under curve), and statistical analyses (two-way ANOVAs, t-tests). The finding that VPMpc and SI are sufficient for fear learning is novel and well-documented. Sample sizes (n=4-8) are adequate. The comparison to soma stimulation (C91) provides important context for interpreting the strength of these individual projections.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "Simultaneous activation of multiple CGRPPBN projection sites produces emergent properties. Combined VPMpc and SI stimulation leads to rapid entrainment of freezing to an auditory CS. Combined VPMpc and cCeA stimulation elicits robust freezing behavior (68.9% \u00b1 3.6%) exceeding that produced individually (VPMpc 37.1% \u00b1 2.3%; cCeA 23.2% \u00b1 0.5%) and robustly elicits bradycardia not seen with either projection alone. Bradycardia consistently develops more slowly than freezing responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C95 are supported by multi-fiber stimulation experiments in Figure 6. The technical approach using three fiber-optic cannulae is sophisticated and well-executed. The data clearly show supra-additive effects for freezing and emergence of bradycardia with combined stimulation. Statistical analyses are appropriate (one-way ANOVAs). The temporal dissociation between freezing and bradycardia (C95) is well-documented. Sample sizes (n=4-5) are modest but the effects are robust. The use of ChrimsonR in supplementary experiments strengthens the conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "Photoinhibition of CGRPPBN neurons during foot shock significantly attenuates associative fear learning. Selective inhibition during the 0.5-mA foot shock reduces conditioned freezing responses during training, in a CS-probe trial 24 hours later, and to the training context. This demonstrates that the signal relayed by CGRPPBN neurons during the foot shock directly contributes to associative memory formation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C99 are supported by JAWS photoinhibition experiments in Figure 7A-B. The temporal specificity of inhibition (only during shock) is a strength that addresses whether CGRPPBN activity during the US itself is necessary for learning. The experiments include appropriate controls and statistical analyses (two-way ANOVAs, t-tests). Sample sizes (n=5-8) are adequate. The slice electrophysiology validation of JAWS efficacy (Figure 7 supplement 1A) strengthens confidence in the manipulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "Inhibition of specific CGRPPBN terminals during foot shock reveals projection-specific contributions to fear learning. Inhibiting VPMpc or SI terminals during shock significantly attenuates memory formation and association strength without affecting contextual fear learning. In contrast, inhibiting CeA terminals does not significantly affect cued fear memory formation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C100-C104 are supported by projection-specific photoinhibition experiments in Figure 7E-H. The experiments include appropriate controls, validation of JAWS efficacy at terminals (Figure 7D), and statistical analyses. The dissociation between cued and contextual learning (C104) is important and well-documented. Sample sizes (n=8-12) are good. The finding that CeA terminals are not necessary for fear learning (C102) contrasts with prior work and the authors provide a reasonable discussion of this discrepancy.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C105"
+    ],
+    "result": "CGRPPBN neurons are part of a distributed network that collectively relays affective, motivational signals to forebrain neurons for associative memory formation. Approximately 50% of the conditioned response is maintained when inhibiting CGRPPBN neurons, indicating they are one component of a larger network.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C105 is supported by the photoinhibition data showing partial (not complete) reduction in conditioned responses (Figure 7B). The interpretation is reasonable and supported by citations to prior work on distributed threat processing networks. However, this claim involves inference about circuit organization beyond what is directly demonstrated. The authors appropriately acknowledge this limitation and cite relevant literature (Lanuza et al., 2004; 2008; Shi and Davis, 1999).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C106",
+      "C107"
+    ],
+    "result": "The authors propose a model wherein CGRPPBN connections to CeA, PSTN, SI, and ovBNST drive unconditioned responses to threats, while connections to SI and VPMpc primarily mediate the role of CGRPPBN neurons in associative fear learning.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C106-C107 represent a proposed model based on the collective experimental findings. While the model is consistent with the data presented (terminal stimulation effects, photoinhibition results), it involves speculation about circuit organization and function. The authors appropriately present this as a proposed model rather than established fact. However, the model makes specific predictions that could be tested with additional experiments (e.g., simultaneous inhibition of multiple projections, downstream circuit manipulations). The evidence is suggestive but not definitive.",
+    "result_type": "MAJOR"
+  }
+]

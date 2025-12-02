@@ -1,0 +1,453 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C116",
+      "C113",
+      "C114",
+      "C115",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122"
+    ],
+    "result": "The authors determined a 3.37 \u00c5 resolution cryo-EM structure of a six-protein COMPASS subcomplex bound to a ubiquitinated nucleosome. The structure was obtained using a Xenopus laevis nucleosome with H2B K120 ubiquitinated via a DCA linkage and H3K4 substituted with norleucine to enhance binding affinity. The final model includes one COMPASS complex and the nucleosome core particle, built using homology modeling and prior structural data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C116, C113-C122 collectively describe the structural determination with appropriate resolution (3.37 \u00c5), methodology (cryo-EM), and sample preparation details. The resolution is validated by FSC curves (Figure 1\u2014figure supplement 3), and the modeling approach using homology models from K. lactis structures is clearly documented. The use of H3K4Nle to enhance binding is supported by binding assays (C23-C24).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C2",
+      "C18",
+      "C30",
+      "C31",
+      "C95",
+      "C126"
+    ],
+    "result": "COMPASS methylates H3K4 in an asymmetric manner, recognizing H2B-Ub on one face of the nucleosome and targeting H3K4 on the opposite (trans) face. The Set1 active site is positioned ~35 \u00c5 from the trans-H3 exit point but ~88 \u00c5 from the cis-H3 exit point, making the cis-H3 tail too short to reach the active site.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C18, C30, C31, C95, C126 describe asymmetric methylation with consistent distance measurements shown in Figure 1d. The geometric argument that 88 \u00c5 is too long for the unstructured H3 tail to span (especially considering the ~100 \u00c5 path around the dyad) is structurally sound and supported by the density maps showing the H3 tail is only visible in the active site, not in the intervening region (C28-C29).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C6",
+      "C19",
+      "C33",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C63"
+    ],
+    "result": "The Set1 RxxxRR motif, which is disordered in isolated COMPASS, adopts a helical structure when bound to the H2B-Ub nucleosome. This helix (residues 897-921) extends along the nucleosome surface, making extensive electrostatic contacts with the acidic patch of H2A/H2B through multiple arginine residues (R901, R904, R908, R909, R936). The helix mediates bridging contacts between the nucleosome, ubiquitin, and COMPASS.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C19, C33, C54-C61, C63 describe the RxxxRR helix formation and its interactions with the acidic patch. The structural data in Figures 4 and 1\u2014figure supplement 4 clearly show the helix and specific contacts. The comparison with isolated COMPASS (C55) demonstrates the conformational change upon nucleosome binding. The specific arginine-acidic patch interactions are well-resolved in the 3.37 \u00c5 structure.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C64",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "Mutations in the RxxxRR helix arginines that contact the acidic patch severely impair or abolish H3K4 methylation in vivo. Individual alanine substitutions (R901A, R904A, R908A, R909A) reduce or eliminate di- and tri-methylation, while charge reversal mutations (R901E, R904E, R908E, R909E) are even more severe. The quadruple mutants (4R\u21924A and 4R\u21924E) completely abolish all H3K4 methylation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64, C66-C72 present comprehensive mutagenesis data shown in Figure 4g-h. The Western blots clearly demonstrate dose-dependent effects of mutations on H3K4 methylation states. The data are internally consistent, with charge reversals being more severe than alanine substitutions, and multiple mutations having additive effects. The results directly validate the structural observations of acidic patch contacts and are supported by prior work (C64).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C34",
+      "C75",
+      "C76",
+      "C77",
+      "C79",
+      "C80",
+      "C81",
+      "C83",
+      "C84",
+      "C85",
+      "C87",
+      "C89"
+    ],
+    "result": "Set1, Bre2, and Swd1 bind to H2B-linked ubiquitin in a large cleft burying 930 \u00c5\u00b2 of surface area. The primary contacts are mediated by Swd1 N- and C-terminal extensions, which undergo conformational changes upon ubiquitin binding and interact with both the I44 patch (via Swd1 L12, V401, P8, F9) and flanking electrostatic interactions. Set1 contacts the I36 patch of ubiquitin through the RxxxRR helix (I914, N917, L928).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34, C75-C77, C79-C81, C83-C85, C87, C89 describe the ubiquitin recognition interface with specific residue-level contacts shown in Figures 5, 6, and 1\u2014figure supplement 4. The buried surface area calculation (930 \u00c5\u00b2) is reasonable for this interface. The conformational changes in Swd1 extensions are demonstrated by comparison with apo COMPASS (Figure 6c-d). The contacts with both I44 and I36 patches are well-documented interaction modes for ubiquitin-binding proteins (C82).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "Mutations in Swd1 residues that contact ubiquitin severely impair H3K4 methylation in vivo. The Swd1 L12A mutation completely abolishes H3K4 methylation, while E14A and E14R mutations greatly decrease di- and tri-methylation. The triple mutant F9A/L12A/E14A completely abolishes methylation, and E397R modestly reduces all methylation states.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90-C94 present mutagenesis data validating the ubiquitin interface shown in Figure 6g-h. The Western blots demonstrate clear effects of mutations on H3K4 methylation. The severity of effects correlates with the structural importance of contacts: L12A (central I44 patch contact) is most severe, while E397R (peripheral contact) has modest effects. The data directly support the structural model of ubiquitin recognition.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "Swd1 contains two loops that interact with the nucleosome core histones. Loop 1 (connecting \u03b221-\u03b222) inserts hydrophobic residues V263 and I264 into a crevice at the H2A/H2B/H2B interface, with the I264A mutation abolishing H3K4 di- and tri-methylation. Loop 2 contacts H3 K79 but is less conserved. This interaction mode is conserved in human MLL1 complex (Rbbp5) and K. lactis COMPASS.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C53 describe Swd1-histone interactions with structural data in Figure 3 and mutagenesis validation in Figure 3c-d. The I264A mutation data strongly support the functional importance of Loop 1. The conservation analysis (Figure 3\u2014figure supplement 1) and comparison with MLL1/K. lactis structures (C49, C42) demonstrate this is a conserved recognition mode. Loop 2 is less conserved and functionally less important (C52, N265A has no effect).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "COMPASS interacts with nucleosomal DNA at three distinct locations: (1) a concave surface at the Bre2-Set1 interface with Bre2 K318 contacting DNA, (2) a positively-charged loop in Spp1 (residues 241-261, KRKKKK motif), and (3) Swd1 residues R236 and K266. The Swd1 K266A mutation decreases H3K4 di- and tri-methylation. These DNA interactions are conserved in human MLL1 and K. lactis COMPASS.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C42 describe DNA contacts shown in Figure 2. The three interaction sites are structurally distinct and well-positioned to orient COMPASS on the nucleosome. The Swd1 K266A mutagenesis (Figure 3c-d) validates functional importance. Conservation in MLL1 and K. lactis COMPASS (C42) supports the biological relevance. However, some contacts are inferred from backbone positioning rather than clear sidechain density (C37, Bre2 K318; C39, Spp1 loop is disordered).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C27",
+      "C123",
+      "C124",
+      "C125"
+    ],
+    "result": "Nucleosome-bound COMPASS undergoes large-scale conformational changes compared to isolated COMPASS, flexing around the Set1 catalytic domain and moving Swd3, Spp1, and Swd1 toward the nucleosome by ~36 \u00c5. This movement allows Spp1 to bind DNA and Swd1 to interact with the histone core. Similar flexing was observed in a subset of apo COMPASS particles, suggesting inherent conformational flexibility important for nucleosome recognition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27, C123-C125 describe conformational changes shown in Figure 1c by comparison with apo COMPASS (PDB: 6BX3). The ~36 \u00c5 movement is clearly illustrated. The observation that apo COMPASS shows some flexibility in the same direction (C124) supports the interpretation that this is a functionally relevant conformational change. The structural rearrangements enable the multiple nucleosome contacts described in other results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C7",
+      "C63",
+      "C135"
+    ],
+    "result": "Set1 undergoes multiple structural rearrangements upon nucleosome binding, including formation of the RxxxRR helix and unraveling of helix \u03b1926-933 into an extended \u03b2-strand that lies parallel to the RxxxRR helix. This conformational change alleviates steric clashes and buttresses the RxxxRR helix and catalytic domain.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C63, C135 describe Set1 conformational changes shown in Figure 4f and Figure 1\u2014figure supplement 4. The structural comparison with apo COMPASS clearly demonstrates the helix-to-strand transition. The interpretation that this alleviates steric clashes (C135) is structurally reasonable. These rearrangements are part of the overall mechanism by which nucleosome and ubiquitin binding activate COMPASS.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C23",
+      "C24"
+    ],
+    "result": "COMPASS binds to unmodified and H2B-Ub nucleosomes with the same apparent affinity, indicating H2B-Ub does not significantly contribute to binding energy. However, H2B-Ub nucleosomes containing H3K4Nle bind COMPASS with 2-5 fold higher affinity than unmodified nucleosomes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C24 present binding data from gel mobility shift assays (Figure 1\u2014figure supplement 1). The observation that H2B-Ub alone does not enhance binding is surprising but clearly demonstrated. The H3K4Nle effect is modest (2-5 fold) but sufficient for structural studies. This finding is important for understanding the mechanism of ubiquitin activation\u2014it affects catalysis rather than binding affinity, consistent with similar observations for Dot1L (C107).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C117"
+    ],
+    "result": "In the cryo-EM reconstruction, two COMPASS complexes bind to opposite faces of the nucleosome in a pseudo-symmetric 2:1 arrangement, but only one COMPASS assembly resolved to high resolution. The final model includes one COMPASS complex and the nucleosome core particle.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C26, C117 describe the stoichiometry and asymmetry in the reconstruction shown in Figure 1a and Figure 1\u2014figure supplement 2. The 2:1 binding is clearly visible in the unsharpened density, but differential resolution is common in cryo-EM due to conformational heterogeneity or preferred orientations. The decision to model only the well-resolved complex is appropriate and clearly documented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C28",
+      "C29"
+    ],
+    "result": "The Set1 active site contains density for the SAM cofactor and bound H3 tail (residues R8 and beyond), but the intervening H3 tail sequence from the nucleosome exit point (P38) to R8 is not visible, suggesting high mobility of these residues.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C29 describe the H3 tail density shown in Figure 1d and Figure 1\u2014figure supplement 3. The presence of SAM and H3 tail in the active site validates that the complex is catalytically engaged. The lack of density for intervening residues is a reasonable interpretation of high mobility, consistent with the unstructured nature of histone tails and the long distance they must traverse.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C103"
+    ],
+    "result": "The COMPASS-ubiquitin interaction is more extensive than interactions in MLL1 or Dot1L complexes, and the H2B-linked ubiquitin adopts different orientations in each complex. This reveals striking plasticity in how ubiquitin can interact with and activate different histone methyltransferases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C74, C103 compare ubiquitin recognition modes shown in Figure 5. The structural comparisons clearly demonstrate different orientations and interaction surfaces. The buried surface area for COMPASS (930 \u00c5\u00b2, C75) is indeed more extensive than typical ubiquitin-binding domains. This comparative analysis provides important insights into the versatility of H2B-Ub as a regulatory mark.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C21"
+    ],
+    "result": "The asymmetric recognition of H2B-Ub and H3K4 by COMPASS (and related complexes) represents the first example of trans-nucleosome histone crosstalk, distinct from Dot1L which methylates H3 on the same (cis) face as H2B-Ub.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C97, C21 make the claim of 'first example' of trans-nucleosome crosstalk, supported by comparison with Dot1L (Figure 5c) and concurrent structures of MLL1 and K. lactis COMPASS (C16-C17). The structural evidence for asymmetric recognition is strong (Result 2). The 'first example' claim is reasonable given the publication timing and comparison with Dot1L, though concurrent publications (Hsu et al., 2019; Xue et al., 2019) also describe similar mechanisms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C106",
+      "C107",
+      "C108"
+    ],
+    "result": "There are no discernible conformational changes in the Set1 catalytic domain compared to apo structures that could explain how H2B-Ub stimulates methylation. For both COMPASS and Dot1L, ubiquitin does not increase enzyme affinity for nucleosomes, suggesting ubiquitin primarily affects catalytic activation (increasing kcat but not KM for Dot1L).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C106-C108 describe the lack of active site conformational changes shown in Figure 6\u2014figure supplement 1 and binding data (Figure 1\u2014figure supplement 1). The comparison with Dot1L kinetic data (C108) from prior work provides a mechanistic framework. The absence of active site changes suggests allosteric activation or substrate positioning effects rather than direct active site remodeling.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C110",
+      "C111"
+    ],
+    "result": "The authors speculate that H2B-Ub may activate COMPASS by providing binding energy to induce the disordered RxxxRR motif to form a helix and to unravel the Set1 helix 926-933 into an extended \u03b2-strand, thereby stabilizing the catalytically competent conformation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C110-C111 are explicitly speculative (both use 'may' and C110 states 'We speculate'). While the structural rearrangements are well-documented (Result 10), the energetic coupling between ubiquitin binding and these conformational changes is not directly demonstrated. The model is plausible and consistent with the Dot1L mechanism (C109), but would require additional experiments (e.g., kinetics, thermodynamics, structures without ubiquitin) to validate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "Previous studies showed that 'repressive' H3K27me3 and 'active' H3K4me3 marks can be deposited asymmetrically on opposite H3 tails in the same nucleosome, associated with maintaining poised promoters during differentiation. The COMPASS structure provides a mechanistic framework for understanding asymmetric nucleosome modifications during histone crosstalk.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98-C100 cite prior work on asymmetric bivalent modifications (C98, Voigt et al., 2012) and connect it to the current structural findings. The COMPASS structure does provide a clear example of how asymmetric modifications can be read and deposited (C100), though the connection to bivalent H3K27me3/H3K4me3 is conceptual rather than direct experimental evidence from this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C137",
+      "C138",
+      "C139",
+      "C140"
+    ],
+    "result": "The introduction establishes the biological context: H3K4 methylation is a hallmark of active transcription that depends on H2B ubiquitination, representing histone crosstalk. COMPASS is the conserved complex that catalyzes H3K4 methylation in yeast, with Set1 as the catalytic subunit that is inactive alone but activated by a core subcomplex and further stimulated by H2B-Ub through Spp1 and the RxxxRR motif.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C5, C8-C17, C137-C140 summarize established knowledge from prior literature, all supported by appropriate citations. These claims provide necessary background and are not novel findings of this study. The citations are appropriate and the statements accurately represent the cited work based on the context provided.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C22"
+    ],
+    "result": "Lysine-to-norleucine mutations greatly increase the affinity of SET-domain methyltransferases for their substrates in a SAM-dependent manner.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C22 cites prior work (Jayaram et al., 2016; Lewis et al., 2013; Worden et al., 2019) establishing the norleucine strategy used in this study. This is established methodology appropriately cited, and the application to COMPASS is validated by the binding data (C24).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C78"
+    ],
+    "result": "The Bre2 loop (residues 140-178) that likely contacts ubiquitin is not found in human or other yeast COMPASS complexes and appears specific to S. cerevisiae COMPASS.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C78 describes species-specific features shown in Figure 3\u2014figure supplement 1. The sequence alignment supports the absence of this loop in other species. However, the functional significance is unclear since the loop is unmodeled (C77), and the primary ubiquitin contacts are mediated by Swd1 and Set1 (Result 5).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C62"
+    ],
+    "result": "The RxxxRR motif is conserved in human Set1 orthologs but not in human paralogs MLL1-4, which do not bind the nucleosome acidic patch.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C62 describes conservation patterns shown in Figure 3\u2014figure supplement 1 and cites recent work showing MLL1-4 do not bind the acidic patch (Xue et al., 2019). This observation connects the structural findings to functional divergence in the human COMPASS family.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C101",
+      "C102",
+      "C104"
+    ],
+    "result": "Ubiquitination is a large, complex mark that presents a chemically rich interaction surface, can adopt multiple orientations due to its flexible C-terminal linkage, and likely enables H2B-Ub to communicate with different enzymatic complexes to template deposition of activating marks during transcription.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C101-C102, C104 discuss the general properties of ubiquitin as a regulatory mark, with C101 citing prior work on chromatin decompaction. C104 is somewhat speculative ('likely enables') but is a reasonable interpretation given the structural diversity shown in Figure 5. These are discussion points that synthesize the findings rather than novel experimental results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C105"
+    ],
+    "result": "H2B-Ub may impose a steric barrier to the transcriptional machinery, as efficient transcription elongation requires removal of H2B-Ub.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C105 cites prior work (Wyce et al., 2007) on H2B-Ub removal during elongation and interprets it in light of ubiquitin's size. This is a reasonable interpretation of cited work, though the steric barrier hypothesis is not directly tested in this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C109"
+    ],
+    "result": "It has been suggested that ubiquitin activates Dot1L by using its binding energy to induce a conformational change in histone H3, inserting K79 into the Dot1L active site.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C109 cites a specific mechanistic proposal from prior work (Worden et al., 2019). This is appropriately attributed as a suggestion from prior work and provides context for the COMPASS mechanism discussion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C112"
+    ],
+    "result": "The structure provides a basis for further elucidating the role that H2B ubiquitination plays in stimulating histone methyltransferase activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C112 is a concluding statement about the impact of the work. Given the comprehensive structural and functional data presented, this is a well-supported conclusion about the contribution of the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C20"
+    ],
+    "result": "Interactions with H2B-linked ubiquitin are highly plastic among different ubiquitin-activated methyltransferases, suggesting how a single ubiquitin mark can be utilized by several different enzymes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C20 summarizes the comparative analysis shown in Figure 5 (also covered in Result 14). The structural comparisons clearly demonstrate plasticity in ubiquitin recognition modes. This is a well-supported conclusion from the structural data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C82",
+      "C86",
+      "C88"
+    ],
+    "result": "The I44 patch is a canonical ubiquitin interaction surface contacted by many proteins including MLL1 Rbbp5. The I36 patch is less widely used but is also contacted by Dot1L. Prior studies showed ubiquitin residues L71 and L73 are critical for COMPASS activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82, C86, C88 cite prior work on ubiquitin interaction surfaces and their functional importance. These are appropriately cited background facts that contextualize the COMPASS-ubiquitin interface. The citations support the statements made.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R29",
+    "claim_ids": [
+      "C136"
+    ],
+    "result": "The N- and C-terminal extensions of Swd1 are critical for COMPASS assembly and mediate multiple contacts between COMPASS subunits.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C136 cites prior structural work (Hsu et al., 2018; Qu et al., 2018) on Swd1's role in COMPASS assembly. This provides context for understanding why these extensions are positioned to contact ubiquitin (Result 5).",
+    "result_type": "MINOR"
+  }
+]

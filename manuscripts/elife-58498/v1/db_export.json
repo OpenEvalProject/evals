@@ -1,0 +1,2269 @@
+{
+  "submission": {
+    "id": "f09fc67b-e422-431c-9075-0a437b358b04",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T19:28:18.810589Z",
+    "updated_at": "2025-12-02T19:28:18.810589Z"
+  },
+  "content": [
+    {
+      "id": "e942769c-4ebc-4c5e-9845-6d586e0db1d8",
+      "submission_id": "f09fc67b-e422-431c-9075-0a437b358b04",
+      "content_type": "manuscript",
+      "content_text": "# Nongenetic inheritance and multigenerational plasticity in the nematode C. elegans\n\n## Authors\n\n- L Ryan Baugh<sup>1</sup> ([ORCID: 0000-0003-2148-5492](https://orcid.org/0000-0003-2148-5492)) \u2020\n- Troy Day<sup>2</sup> ([ORCID: 0000-0002-1052-6140](https://orcid.org/0000-0002-1052-6140))\n\n### Affiliations\n\n1. Department of Biology, Center for Genomics and Computational Biology, Duke University Durham United States\n2. Departments of Mathematics and Statistics, Department of Biology, Queens University Kingston Canada\n\n\u2020 Corresponding author\n\n## Abstract\n\nA rapidly growing body of literature in several organisms suggests that environmentally-induced adaptive changes in phenotype can be transmitted across multiple generations. Although within-generation plasticity has been well documented, multigenerational plasticity represents a significant departure from conventional evolutionary thought. Studies of C. elegans have been particularly influential because this species exhibits extensive phenotypic plasticity, it is often essentially isogenic, and it has well-documented molecular and cellular mechanisms through which nongenetic inheritance occurs. However, while experimentalists are eager to claim that nongenetic modes of inheritance characterized in this and other model systems enhance fitness, many biologists remain skeptical given the extraordinary nature of this claim. We establish three criteria to evaluate how compelling the evidence for adaptive multigenerational plasticity is, and we use these criteria to critically examine putative cases of it in C. elegans. We conclude by suggesting potentially fruitful avenues for future research.\n\n## Introduction\n\nBiologists have long been interested in why organisms appear to be well-suited to the environments in which they find themselves. Historically, there have been two main explanations: Lamarckism - organisms change over the course of their lifetimes in ways that make them more suited to their environment, and these beneficial attributes are then transmitted to their offspring, or Darwinism - organisms are largely fixed during their lifetimes, but those that are best suited to their environment survive and/or reproduce best, passing their attributes to their offspring. These two explanations are not mutually exclusive, but this dichotomy was reinforced during the mid-1900\u2019s, when Lamarckism was largely rejected while Darwinism was enshrined in what was called the Modern Synthesis of evolutionary biology (Huxley, 1942; Graham, 2016; Bonduriansky and Day, 2018).\n\nThe above dichotomy is clearly simplistic and virtually all biologists recognize some important subtleties that blur the distinction between the two. For example, within-generation plasticity, where a given genotype can produce different phenotypes as a function of environmental conditions, is both well-documented and central to current evolutionary thought (Schlichting and Pigliucci, 1998). This does not pose any significant challenge to Darwinism since environmentally-induced phenotypes are not transmitted to offspring. As a result, there is a clear separation between what is called acclimation (adaptive changes in a plastic phenotype within a generation) and evolutionary adaptation (changes in allele frequency across generations). Acclimation is an individual-level phenomenon whereby adaptive changes occur within individual organisms, while evolutionary adaptation is a population-level phenomenon whereby adaptation occurs through a change in the (genetic) composition of a population. Furthermore, the developmental capacity for acclimation through plasticity is, itself, an organismal characteristic that has presumably evolved through evolutionary adaption at the population level.\n\nWithin-generation plasticity is ubiquitous but there are also well-known examples in which plastic responses appear to extend from parent to offspring. Maternal effects, in which the environmental conditions of a mother affect the phenotype of their offspring, are probably the best-known examples (Mousseau and Fox, 1998; Marshall and Uller, 2007; Uller, 2008). Such effects can occur, both because mothers transmit many cytoplasmic constituents to their offspring through oocytes, but also because parents in many species (both females and males) provide parental care that can shape the phenotype of their offspring. Nevertheless, it is often reasonable to conceptualize these effects as being mediated by the environment of the offspring rather than that of the parent if we view parental care, and even the conditions under which a female\u2019s oocytes develop, as part of the offspring\u2019s environment. Indeed, this is why studies of evolutionary adaptation often keep organisms in a common environment for multiple generations prior to study, so that these kinds of transient parental effects are \u2018washed out\u2019 of the system.\n\nThis view of maternal effects as passive, carryover effects from the parental generation is also overly simplistic, and examples are known where parents affect offspring phenotype in an adaptive way (Mousseau and Fox, 1998; Agrawal et al., 1999; Marshall and Uller, 2007; West-Eberhard, 2003). For example, in Daphnia parental exposure to chemical cues indicative of predators result in offspring developing protective armor that reduce their susceptibility to predation. Such effects presumably do not simply result from passive carryover of maternal conditions. Instead, they require an evolved mechanism that actively resets offspring developmental programs each generation in ways that enhance their fitness.\n\nEach of the above phenomena have been readily accommodated by evolutionary theory that originates with the Modern Synthesis by conceptualizing both within- and between-generation adaptive plastic responses as arising from a flexible developmental program that has, itself, evolved through natural selection acting on genetic variation. However, the discovery that plastic changes in phenotype can be transmitted across more than one generation (Jablonka and Lamb, 2005; Jablonka and Raz, 2009; Bonduriansky and Day, 2018) suggests that the line between Lamarckism and Darwinism is more blurred. This is true for at least two reasons.\n\nFirst, as the\u00a0number of generations that separate the ancestor and descendent populations increases, it becomes less tenable to conceptualize a descendent individuals\u2019 phenotype as being shaped by direct exposure to the environmental conditions in the ancestral generation. This is why a distinction is often made between intergenerational plasticity, where direct exposure is plausible, and transgenerational plasticity, where it is not (Box 1). The existence of transgenerational plasticity suggests that some form of information, in addition to that carried by the genetic material, is faithfully transmitted over multiple generations. This view is further reinforced by examples of transgenerational effects that are paternally mediated, but where it appears that nothing other than sperm is transmitted by males. Indeed, molecular mechanisms of nongenetic inheritance involving DNA methylation, post-translational modification of histones, and small non-coding RNA have been elucidated in detail (Bo\u0161kovi\u0107 and Rando, 2018; Henderson and Jacobsen, 2007; Skvortsova et al., 2018).\n\nSecond, if the faithful transmission of nongenetic information across multiple generations is commonplace, then this information can, itself, act as a substrate of variation on which natural selection can act. This would blur the line between Lamarckism and Darwinism because any adaptive change in phenotype that occurs between ancestral and descendent populations might then be due to at least three different processes (or any combination thereof): (a) a change in the genetic composition of the population via natural selection (i.e., evolutionary adaption), (b) a change in the nongenetic composition of the population via natural selection, or (c) an induced (i.e., plastic) change in the nongenetic information in the ancestral population that is passed onward to descendants (i.e., adaptive, multigenerational plasticity).\n\nThe impact that recent discoveries of nongenetic inheritance and multigenerational plasticity will have on evolutionary theory depends on the relative importance of each of the above three processes. The finding that either selection acting on nongenetic variation is common (i.e., b) or that adaptive, plastic, changes in traits are often transmitted across multiple generations (i.e., c) would represent a significant advance in evolutionary biology. However, here we will confine our attention to the distinction between (c) and (a/b). The key difference is that processes (a) and (b) both involve natural selection operating on variation whereas (c) does not.\n\n## Documenting adaptive multigenerational plasticity\n\nTo provide compelling evidence for the existence of adaptive multigenerational plasticity we believe that studies should do at least three things: (1) demonstrate that an environmental response is transmitted across generations (i.e., that multigenerational plasticity occurs); (2) demonstrate that multigenerational plasticity improves descendant fitness (i.e., that it is adaptive); and (3) provide an explanation for the mechanistic basis of the phenomenon. To achieve criterion (1) environmental induction of heritable variation needs to be demonstrated, as opposed to selection on existing variation being solely responsible for altered progeny phenotype (Box 2). This requires consideration of potential genetic or nongenetic variation in the experimental strains used (e.g., How clonal are they, what are their mutation and epimutation rates, and what is their effective population size?) and evaluation of potential sources of selection during the experiment (e.g., lethality and differences in fecundity or progeny quality). To achieve criterion (2) explicit tests of the fitness consequences of multigenerational plasticity under ecologically relevant conditions need to be conducted. And to achieve criterion (3) a chain of causality must be defined between environmental stimulus, molecular and cellular mechanisms generating heritable nongenetic variation, and consequential changes in descendant organismal phenotype, typically involving changes in gene expression. Such mechanistic insight is critical to rule out mutation and other potential confounders that could lead to incorrect interpretations.\n\n## C. elegans\n\nThe nematode Caenorhabditis elegans is a small,\u00a0mostly free-living roundworm that consumes a diet of opportunistic microbes on decaying plant matter (F\u00e9lix and Braendle, 2010; Schulenburg and F\u00e9lix, 2017). Like other animals, C. elegans suffers myriad slings and arrows in the wild including biotic (e.g., pathogens, predators, and fluctuating food availability) and abiotic (e.g., temperature, salt, etc) stressors. C. elegans is a premier model system with a number of attributes facilitating investigation of genetic, molecular, and cellular mechanisms governing development, behavior, and aging (Corsi et al., 2015). In particular, C. elegans can complete its lifecycle in as little as three days, making it an exceptionally tractable system for multigenerational studies. Since it primarily relies on self-fertilization as a hermaphrodite, C. elegans can be essentially isogenic, especially lab strains. It also displays substantial phenotypic plasticity, and a variety of molecular and cellular mechanisms of nongenetic inheritance have been characterized in C. elegans (Minkina and Hunter, 2018; Perez and Lehner, 2019; Sommer, 2020). Together these properties make C. elegans a uniquely powerful metazoan model to investigate the potential of adaptive multigenerational plasticity.\n\nBelow we review and critique the existing literature on adaptive multigenerational plasticity in C. elegans. Many papers claim to have demonstrated adaptive multigenerational plasticity, but we believe important shortcomings exist in individual studies and in the field as a whole.\n\nThe ecological and evolutionary significance of nongenetic inheritance hinges on its adaptive value. Extensive research has focused on molecular mechanisms of epigenetic inheritance, but the physiological and adaptive significance of epigenetic inheritance beyond genome surveillance and germline integrity remains obscure (Minkina and Hunter, 2018; Perez and Lehner, 2019). We therefore focus on heritable organismal responses to ecologically relevant conditions. However, it should be noted that our understanding of the dynamics of environmental conditions experienced by natural populations is poor. The frequency, duration, and regularity of specific stressors is not known, and so it is difficult to infer how observed phenotypic responses would actually affect fitness in the wild. Theory suggests that evolution of nongenetic predictive adaptive responses requires variation but sufficient regularity in environmental dynamics such that conditions experienced in one generation serve as reliable cues about future generations (Botero et al., 2015; Proulx and Teot\u00f3nio, 2017). Otherwise, alternative responses such as phenotypic diversification (i.e., bet hedging) or adaptation through natural selection on genetic variation are expected to predominate.\n\n## Examples\n\n### Bacterial pathogens\n\nC. elegans is frequently exposed to, and colonized by, bacterial pathogens (Schulenburg and F\u00e9lix, 2017). It therefore stands to reason that nongenetic heritable pathogen responses could increase fitness, assuming pathogen exposure typically lasts more than one generation but is not ubiquitous. Studies from multiple labs provide evidence that acquired pathogen avoidance behavior and resistance are both transmitted across generations.\n\nNon-lethal exposure of C. elegans to pathogenic Pseudomonas aeruginosa induces avoidance behavior, and this behavior is inherited transgenerationally (Moore et al., 2019). In this study lethality due to pathogen exposure in the parental generation was low (~5%), suggesting that viability selection on pre-existing variation is unlikely. The possibility of fecundity selection due to exposure has not been ruled out, but induction of avoidance behavior in parents is consistent with plasticity. Furthermore, expression of small Piwi-associated RNAs (piRNAs), which are known to be transmitted through the germline (Ghildiyal and Zamore, 2009), was altered in the exposed animals suggesting a source of heritable epigenetic variation. It was also shown that avoidance behavior increases survival of pathogen-exposed descendants, consistent with the response being adaptive. prg-1/Piwi and downstream factors involved in piRNA-mediated regulation are required for inheritance of avoidance behavior, suggesting a molecular mechanism connecting epigenetic variation with changes in gene expression. Increased expression of the TGF-\u00df ligand daf-7 in chemosensory neurons correlates with, and is required for, transgenerational inheritance of avoidance behavior. Furthermore, the transgenerational increase in daf-7 expression requires prg-1/Piwi. However, changes to piRNA expression were not reported in descendants nor connected with daf-7 regulation. Nonethleless, Moore et al., 2019 provide a compelling case for adaptive multigenerational plasticity. Notably, a trade-off between pathogen avoidance and food availability was offered as an explanation for why it is optimal to rely on transient epigenetic memory as opposed to hard-wired genetic adaptation. Such a trade-off also suggests a cost of plasticity for individuals not exposed to pathogenic members of the genus. These are some of the most intriguing recent results because, even the most liberal reading of the Modern Synthesis would not anticipate a phenomenon in which an individual learns a dietary preference that is then passed on to subsequent generations through the germline, without any clear form of direct cultural transmission.\n\nC. elegans can arrest development as dauer larvae (Hu, 2007). This developmental diapause is triggered by high population density, limited food, and heat, serving to postpone reproduction and support dispersal. Dauer larvae have a sealed buccal cavity and do not feed, rendering them resistant to bacterial infection. Exposure of C. elegans to bacterial pathogens P. aeruginosa or Salmonella enterica for two consecutive generations induces dauer formation in the second generation (Palominos et al., 2017). Furthermore, exposure to P. aeruginosa for two consecutive generations increased dauer formation for up to five generations, consistent with transgenerational epigenetic inheritance. Dauers did not form in the first generation of pathogen exposure or controls, consistent with dauer formation being a plastic response to pathogen infection that requires two generations to be expressed. Survival assays were not performed, but it was demonstrated that dauer larvae are not colonized by pathogens, as expected, consistent with the response being adaptive. Nonetheless, there is a clear cost to dauer formation in that reproduction is postponed, so plasticity does not necessarily increase fitness. Several genes involved in RNA interference, a systemic and heritable small RNA-based gene silencing mechanism (Fire et al., 1998; Ghildiyal and Zamore, 2009), are required for pathogen-induced dauer formation. These results support the primary observation by providing negative controls for potential confounders like population density and nutrient availability. Moreover, these results suggest that RNAi somehow connects infection with dauer formation in descendants. However, changes in mRNA or small RNA expression were not demonstrated as molecular support for this genetic model, and effector genes with proximate effects on dauer formation were not identified.\n\nIn addition to inducing avoidance behavior and dauer formation in descendants, exposure to bacterial pathogens can induce heritable resistance to infection. Non-lethal adult exposure to the novel C. elegans pathogen Pseudomonas vranovensis induces resistance to the same pathogen in first-generation progeny, an intergenerational effect, with a substantial effect size (Burton et al., 2020). Exposure for three consecutive generations triggers resistance for two subsequent generations, suggesting epigenetic inheritance but falling one generation short of the three-generation gold standard. There is no lethality among parents due to exposure, arguing against viability selection, but fecundity selection was not ruled out. The strains of P. vranovensis used in this study were isolated from a natural environment of C. elegans, suggesting that heritable resistance to this pathogen would be ecologically relevant and increase fitness in the wild. Moreover, similar intergenerational effects were not seen with other bacterial pathogens, suggesting a species-specific response. However, induction of heritable nongenetic variation was not demonstrated, and transmission mechanism was not identified. Nonetheless, progeny gene expression was affected, and genes involved in the hypoxia response and synthesis of cysteine were identified as proximate effectors of pathogen resistance.\n\nMitochondrial challenge with antimycin, a natural product that mimics the effect of some bacterial pathogens, increases antimycin resistance transgenerationally (Ma et al., 2019). Furthermore, exposure to a Pseudomonas strain isolated from a natural C. elegans habitat can induce antimycin resistance inter- and transgenerationally. These observations are consistent with pathogen infection potentially triggering heritable resistance to pathogens with the same virulence mechanism(s). However, these experiments potentially involved selection, as antimycin treatment has a profound impact on growth and reproduction. The authors were careful to start each experiment with a culture recently derived from a single worm to limit pre-existing variation, but the rate of accumulation of spontaneous nongenetic variation is not known. Induction and inheritance of N6-methyldeoxyadenine (6mA), a type of DNA methylation common in bacteria and recently reported in C. elegans (Greer et al., 2015), was reported to be responsible for transgenerational antimycin resistance (Ma et al., 2019). However, the reliability of methods used to measure 6mA has been called into question with its existence in this and other animals a potential artefact (O'Brown et al., 2019). This work also implicated the COMPASS complex, which methylates histone 3 on lysine 4 (H3K4), in transgenerational antimycin resistance (Ma et al., 2019). Disruption of this complex has transgenerational effects on organismal phenotype (lifespan) (Greer et al., 2011), but whether H3K4 methylation is cause or consequence of heritable effects cannot be distinguished in this case. Nonetheless, gene expression and phenotypic analyses suggest that epigenetic regulation of the ATFS-1-mediated mitochondrial stress response is a proximate mechanism for increased antimycin resistance.\n\n### Fluctuating food availability\n\nWild C. elegans populations are thought to have boom-and-bust population dynamics with fluctuations in food availability (Schulenburg and F\u00e9lix, 2017). Consequently, dauer diapause is central to their lifecycle, and worms found in natural settings are often developmentally arrested as dauer larvae. Such a natural history suggests that nongenetic heritable adaptive responses to starvation and other forms of nutrient stress could provide a fitness advantage, assuming appropriate frequency and duration of such episodes. Evidence now exists that starvation resistance is transmitted across generations through multiple mechanisms.\n\nDietary restriction (DR), a reduction in consumption without starvation or malnutrition, promotes longevity at the cost of reproduction in a variety of animals (Fontana et al., 2010). Worms raised in DR produce fewer but larger progeny with increased starvation resistance (Harvey and Orbidans, 2011; Hibshman et al., 2016). Intergenerational effects on progeny size and starvation resistance last only a single generation. Lethality is not associated with DR and so viability selection is unlikely to be involved, but fecundity selection or selection on gametes or mitochondria are possible. DR increases oocyte provisioning of vitellogenin lipoprotein (yolk), which we consider induction of nongenetic variation, to protect progeny from early life starvation (Jordan et al., 2019). Maternal age also affects vitellogenin oocyte provisioning providing an additional source of phenotypic variation (Perez et al., 2017), but DR increases oocyte size and provisioning independent of maternal age (Hibshman et al., 2016; Jordan et al., 2019). Maternal insulin/IGF signaling together with other pathways mediates this intergenerational response to nutrient availability. Reduction of somatic insulin/IGF signaling in the mother is sufficient to increase progeny size (Hibshman et al., 2016), but it has been suggested that insulin/IGF signaling must be reduced in the soma and germline for maximal effect (Lind et al., 2019). In addition, increased vitellogenin provisioning causes decreased somatic insulin/IGF signaling in progeny to protect them from early life starvation (Jordan et al., 2019). Because food availability presumably wanes before being entirely depleted, DR is likely a reliable indicator of imminent starvation. Thus, plasticity in the form of increased oocyte provisioning is a compelling example of a predictive adaptive multigenerational DR response in anticipation of starvation (Jordan et al., 2019).\n\nExtended larval starvation triggers a transgenerational increase in stress resistance. One week of starvation during the first larval stage (L1) increases resistance to starvation two generations later and to heat three generations later (Jobson et al., 2015). However, L1 starvation was associated with approximately 20% lethality, and development was decanalized such that a minority of the population developed particularly slowly and produced relatively few progeny. Furthermore, experimental selection for this subpopulation was necessary to reveal transgenerational epigenetic inheritance (Jobson et al., 2015). We speculate that pre-existing variation in proteostasis pathways involving DAF-21/Hsp90 and HSF-1/HSF1 may be uncovered by starvation stress, accounting for the observed variation in phenotype and transmission of epigenetic effects (Burga et al., 2011; Casanueva et al., 2012). Increased stress resistance following selection for starvation resistance therefore represents a potential example of epigenetic adaptation by selection on pre-existing variation, though induction of nongenetic variation may also occur (adaptive multigenerational plasticity). Heritable changes in small RNA expression have been reported following L1 starvation (Rechavi et al., 2014; Houri-Ze\u2019evi et al., 2019), suggesting a source of epigenetic variation affecting phenotype. However, the extent of selection in these studies is unclear, and it is unknown if or how small RNAs mediate consequential effects on resistance to starvation or heat.\n\nExtended starvation during dauer diapause causes transgenerational epigenetic inheritance of increased starvation resistance (Webster et al., 2018). Increased starvation resistance includes decreased mortality as well as increased developmental rate and reproductive success after feeding (Webster et al., 2018), revealing a relatively robust effect compared to other nongenetic heritable effects on starvation resistance (Hibshman et al., 2016; Jobson et al., 2015). Transgenerational effects were seen with long-term but not short-term dauer arrest, suggesting that extended starvation rather than dauer development or recovery provokes epigenetic inheritance. Long-term dauer arrest resulted in less than 3% lethality, and ten founder dauer larvae were used in each of several independent biological replicates with reproducible transgenerational effects, together arguing against viability or fecundity selection, though selection on gametes or mitochondria is possible. Pervasive but individually small changes in nutrient-responsive gene expression were reported in F3 larvae, but neither germline transmission mechanism nor an effector mechanism for increased starvation resistance were identified (Webster et al., 2018). Despite lack of mechanistic insight, the fact that long-term dauer arrest, a well-established example of developmental plasticity that facilitates adaptation to starvation, results in a transgenerational increase in starvation resistance suggests adaptive transgenerational plasticity. However, it is notable that worms were grown for two complete generations with ample food after being starved as dauer larvae. Given poor understanding of the frequency of fluctuations in food availability in the wild, and the possibility of trade-offs involving growth, reproduction, and environmental responsiveness (Webster et al., 2018), the actual fitness consequences of transgenerational plasticity are unclear.\n\n### Osmotic stress\n\nThere are a variety of abiotic stressors that worms could consistently encounter in the wild, raising additional possibilities of adaptive multigenerational plasticity. In particular, osmotic stress could occur with adequate regularity in the margins of marine environments. Indeed, culturing worms in high salt conditions (300 mM NaCl) increases progeny survival in even higher salt conditions (500 mM NaCl) (Burton et al., 2017; Frazier and Roth, 2009). There is no apparent viability selection in 300 mM NaCl, and levels of the osmolyte glycerol are increased in the mother and embryos, suggesting altered oocyte provisioning as an induced form of nongenetic variation (Frazier and Roth, 2009). Notably, increased glycerol levels are correlated with decreased glycogen levels. Glycogen supports metabolism during anoxia, and adaptation to high salt compromises progeny survival in anoxia, suggesting a trade-off (Frazier and Roth, 2009). In addition to altered oocyte provisioning, maternal high salt also affects gene expression and metabolism in embryos, suggesting epigenetic regulation of glycerol synthesis in progeny (Burton et al., 2017). This epigenetic regulation occurs downstream of soma-to-germline insulin/IGF signaling in the mother, while altered insulin/IGF signaling also mediates developmental arrest in response to high salt in progeny (Burton et al., 2017). These observations reveal notable similarities (e.g., a role of insulin/IGF signaling in mother and progeny) as well significant distinctions (e.g., sites of action of insulin/IGF signaling and progeny resistance mechanisms) between intergenerational adaptation to osmotic stress and DR (Burton et al., 2017; Hibshman et al., 2016).\n\n## Opportunities to strengthen the case for adaptive multigenerational plasticity\n\nWe believe evidence is mounting in favor of adaptive multigenerational plasticity in C. elegans. However, the case for it could be made stronger by integrating more evolutionary theory into experimental design. For example, distinguishing between selection on pre-existing nongenetic variation and environmental induction of variation is paramount to demonstrating adaptive multigenerational plasticity (Box 2). Inter-individual phenotypic variation is surprisingly common among isogenic C. elegans populations, affecting development, behavior, stress resistance, and RNAi responses (Alcazar et al., 2008; Burga et al., 2011; Jobson et al., 2015; Kimble and Hirsh, 1979; Perez et al., 2017; Rea et al., 2005; Stern et al., 2017; Sulston and Horvitz, 1977). The sources of this nongenetic variation are not well understood, but selection may nevertheless act on it. Evolutionary adaptation through selection on pre-exisiting nongenetic variation also represents a substantial departure from classical views, but this is distinct from adaptive multigenerational plasticity, which posits a heritable, environmentally induced, adaptive, plastic response. Selection on nongenetic variation could also be involved if the induced phenotype increases fitness, but the change in progeny phenotype cannot be based solely on selection, which would reflect evolutionary rather than environmental adaptation. Researchers should be vigilant about the possibility of both viability and fecundity selection, both controlling for it and reporting methodological details pertaining to it (e.g., the number of animals used and the effective population size of their source, whether differential survival or other life-history traits provided an opportunity for selection, etc.). It will be more difficult to monitor selection at the level of gametes or mitochondria, but researchers can at least be mindful of these possibilities.\n\nGiven the possibility of selection on pre-existing nongenetic variation, it would be valuable to characterize such variation. For example, the extent of variation in small RNA expression or heritable histone modifications among individuals in wild and laboratory populations could be determined. Rates of change in expression of small regulatory RNAs ('epimutation' rates) has recently been characterized in mutation accumulation lines (experimental strains propagated over many generations with an effective population size of one to minimize effects of selection), revealing that changes arise frequently but typically last only a few generations (Beltran et al., 2020). Such measurements could also be performed in single worms from the wild, from experimental populations, and across generations. This would allow the rate of change to be better characterized along with the degree of variation in populations with different effective sizes. Such measurements could also be performed with selection. Such characterization of epigenetic variation would address whether there is sufficient variation in a founder population to enable adaptation through selection, or, alternatively, if a putative example of adaptive multigenerational plasticity involves epigenetic changes at the population level that cannot be accounted for by selection, implying induction.\n\nIt is important to focus on ecologically relevant fitness-proximate traits and to connect nongenetic mechanisms with plasticity, including its induction, inheritance, and expression in progeny. Mechanistic insight will help avoid artefacts, making a stronger case for adaptive multigenerational plasticity. Mechanisms of germline transmission of epigenetic information (small RNAs and histone marks in particular) are receiving a great deal of attention, but much of this work is without environmental or organismal context. It should be recognized that many molecular phenomena may be nonadaptive or neutral with respect to organismal phenotype (Lynch, 2007). In addition, purported cases of adaptive multigenerational plasticity implicate different transmission mechanisms, while the generality of any one mechanism or the relationship among different mechanisms has not been established. Additional sources of nongenetic variation (e.g., altered mitochondria, prions, etc) also deserve greater attention. Understanding the specificity of heritable adaptive responses, and how many distinct responses can be channeled across generations, requires deeper insight into germline transmission mechanisms.\n\nThe induction and expression of plasticity needs to be elucidated mechanistically. For example, do germ cells respond autonomously to environmental conditions, or is a somatic response propagated to the germline? The discovery of RNAi illustrated that gene silencing information, either double-stranded RNA or something derived from it, can move from somatic tissues to the germline to influence progeny phenotype (Fire et al., 1998). Genes required for systemic RNAi (spreading of silencing) have been identified (Jose and Hunter, 2007; Winston et al., 2002; Winston et al., 2007), genes required for germline inheritance of RNAi have been identified (Buckley et al., 2012; Spracklin et al., 2017), neuronally-derived small RNAs can influence progeny gene expression (Devanapally et al., 2015), and it has been suggested that such soma-to-germline communication mediates adaptive transgenerational responses (Posner et al., 2019). However, an explicit role of such a mechanism in the context of adaptive multigenerational plasticity has not been demonstrated. Alternatively, (neuro)endocrine signals emanating from the soma could influence germline physiology and inheritance, as shown for insulin/IGF signaling during osmotic stress (Burton et al., 2017).\n\nIt is also unclear how nongenetic changes in the germline shape complex traits in descendants. A variety of observations support the possibility that known epigenetic mechanisms such as histone modification or small RNA regulation can influence progeny gene expression, but such a link between epigenetic mechanism and plasticity of the trait in question is lacking from all purported cases of adaptive multigenerational plasticity.\n\nUltimately, investigation of ecologically relevant traits over a few generations and in limited conditions is not enough. Potential trade-offs complicate interpretation of the fitness consequences of plasticity. For example, there is a trade-off between intergenerational adaptation to osmotic stress and anoxia resistance (Frazier and Roth, 2009), and early life starvation increases resistance to both starvation and heat in progeny (Jobson et al., 2015). Environmental correlations between these stressors are unknown, and these observations complicate experimental interpretations. In addition, two days of starvation at the onset of reproduction in C. remanei appears to increase fitness in the exposed generation but decrease fitness in the next generation, suggesting costs paid for in progeny quality (Mautz et al., 2020), again complicating experimental interpretations.\n\nGiven such complications, experimental evolution and other explicit tests of fitness (e.g., competition studies) are critical. Experimental evolution in C. elegans and C. remanei suggests that anticipatory maternal effects, which fall under the umbrella of adaptive multigenerational plasticity, can evolve in scenarios where environmental conditions in one generation reliably predict conditions in the next generation (Dey et al., 2016; Lind et al., 2020). Furthermore, experimental evolution and modeling of more complex scenarios suggests that anticipatory responses acting over two generations can also evolve (Proulx et al., 2019). These studies demonstrate the power of experimental evolution. Future studies investigating additional conditions, environmental dynamics, and genotypes have the potential to reveal what sorts of adaptive multigenerational plastic responses can evolve and if they resemble the documented cases of multigenerational plasticity.\n\nIt will also be valuable to identify genes involved in adaptive multigenerational plasticity. If such plasticity evolved through natural selection of genetic variation, as we believe, then it is critical to identify the genes involved. Identification of 'switch' genes governing within-generation plasticity in nematodes has been important to show that plasticity is consistent with the Modern Synthesis (Sommer, 2020). Because different ecological contexts are likely to select for different durations of plasticity as a quantitative trait, it would be valuable to identify genes that affect the perdurance of multigenerational plasticity, as has been done for gene silencing by RNAi (Houri-Ze'evi et al., 2016; Perales et al., 2018). Analysis of genes known to be involved in epigenetic inheritance is a great starting place and underway already, but there are also excellent resources for studying the genetic basis of natural variation in C. elegans (Cook et al., 2017). For example, penetrance of a temperature-dependent mortal germline phenotype varies among wild strains. This is presumably a non-adaptive trait, but it is an example of transgenerational plasticity, and a natural genetic variant affecting it has been identified (Fr\u00e9zal et al., 2018).\n\nIt is an exciting time for research on nongenetic inheritance and its potential role in environmental adaption in C. elegans and other multicellular organisms. We believe that closing gaps in our mechanistic understanding and addressing theoretical concerns pertaining to adaptive multigenerational plasticity will ultimately be required if this research is to have a substantial impact on mainstream views about evolutionary adaptation.\n",
+      "created_at": "2025-12-02T19:28:18.810589Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T19:28:18.810589Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T19:28:18.810589Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "54693750-a1f7-4589-9d36-266524df8203",
+      "content_id": "e942769c-4ebc-4c5e-9845-6d586e0db1d8",
+      "claim_id": "C1",
+      "claim": "Environmentally-induced adaptive changes in phenotype can be transmitted across multiple generations.",
+      "claim_type": "EXPLICIT",
+      "source": "A rapidly growing body of literature in several organisms suggests that environmentally-induced adaptive changes in phenotype can be transmitted across multiple generations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by reference to a growing body of literature, indicating citation-based evidence.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:28:18.810589Z"
+    },
+    {
+      "id": "4934781f-f672-4b94-8e47-977259900e48",
+      "content_id": "e942769c-4ebc-4c5e-9845-6d586e0db1d8",
+      "claim_id": "C2",
+      "claim": "Within-generation plasticity has been well documented.",
+      "claim_type": "EXPLICIT",
+      "source": "Although within-generation plasticity has been well documented, multigenerational plasticity represents a significant departure from conventional evolutionary thought.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is presented as established scientific knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:28:18.810589Z"
+    },
+    {
+      "id": "94301f17-9f91-42ef-9859-36d75ea9a2ee",
+      "content_id": "e942769c-4ebc-4c5e-9845-6d586e0db1d8",
+      "claim_id": "C3",
+      "claim": "Multigenerational plasticity represents a significant departure from conventional evolutionary thought.",
+      "claim_type": "EXPLICIT",
+      "source": "Although within-generation plasticity has been well documented, multigenerational plasticity represents a significant departure from conventional evolutionary thought.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the contrast between established theory and new findings.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:28:18.810589Z"
+    },
+    {
+      "id": "25cb20e0-6eb1-42e4-be91-727434dd808b",
+      "content_id": "e942769c-4ebc-4c5e-9845-6d586e0db1d8",
+      "claim_id": "C4",
+      "claim": "C. elegans exhibits extensive phenotypic plasticity.",
+      "claim_type": "EXPLICIT",
+      "source": "Studies of C. elegans have been particularly influential because this species exhibits extensive phenotypic plasticity, it is often essentially isogenic, and it has well-documented molecular and cellular mechanisms through which nongenetic inheritance occurs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is presented as established knowledge about C. elegans.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:28:18.810589Z"
+    },
+    {
+      "id": "ec39e5ce-ead4-43fa-a2a4-9c5141eca709",
+      "content_id": "e942769c-4ebc-4c5e-9845-6d586e0db1d8",
+      "claim_id": "C5",
+      "claim": "C. elegans is often essentially isogenic.",
+      "claim_type": "EXPLICIT",
+      "source": "Studies of C. elegans have been particularly influential because this species exhibits extensive phenotypic plasticity, it is often essentially isogenic, and it has well-documented molecular and cellular mechanisms through which nongenetic inheritance occurs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is presented as established knowledge about C. elegans.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:28:18.810589Z"
+    },
+    {
+      "id": "eccd7406-f8d4-4ee7-9bfd-58607f21cbbf",
+      "content_id": "e942769c-4ebc-4c5e-9845-6d586e0db1d8",
+      "claim_id": "C6",
+      "claim": "C. elegans has well-documented molecular and cellular mechanisms through which nongenetic inheritance occurs.",
+      "claim_type": "EXPLICIT",
+      "source": "Studies of C. elegans have been particularly influential because this species exhibits extensive phenotypic plasticity, it is often essentially isogenic, and it has well-documented molecular and cellular mechanisms through which nongenetic inheritance occurs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is presented as established knowledge supported by existing literature.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:28:18.810589Z"
+    },
+    {
+      "id": "4b6f7de2-df50-4d41-a83b-bd4a7aa31720",
+      "content_id": "e942769c-4ebc-4c5e-9845-6d586e0db1d8",
+      "claim_id": "C7",
+      "claim": "Lamarckism proposes that organisms change over their lifetimes in ways that make them more suited to their environment, and these beneficial attributes are transmitted to offspring.",
+      "claim_type": "EXPLICIT",
+      "source": "Lamarckism - organisms change over the course of their lifetimes in ways that make them more suited to their environment, and these beneficial attributes are then transmitted to their offspring",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of established historical scientific theory.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:28:18.810589Z"
+    },
+    {
+      "id": "3f3d92b3-c93a-4962-a1b3-15776c268133",
+      "content_id": "e942769c-4ebc-4c5e-9845-6d586e0db1d8",
+      "claim_id": "C8",
+      "claim": "Darwinism proposes that organisms are largely fixed during their lifetimes, but those best suited to their environment survive and/or reproduce best, passing their attributes to offspring.",
+      "claim_type": "EXPLICIT",
+      "source": "Darwinism - organisms are largely fixed during their lifetimes, but those that are best suited to their environment survive and/or reproduce best, passing their attributes to their offspring.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of established historical scientific theory.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:28:18.810589Z"
+    },
+    {
+      "id": "bc1ea1ac-8953-433e-8823-1e00c60a3e12",
+      "content_id": "e942769c-4ebc-4c5e-9845-6d586e0db1d8",
+      "claim_id": "C9",
+      "claim": "Lamarckism and Darwinism are not mutually exclusive.",
+      "claim_type": "EXPLICIT",
+      "source": "These two explanations are not mutually exclusive, but this dichotomy was reinforced during the mid-1900's, when Lamarckism was largely rejected while Darwinism was enshrined in what was called the Modern Synthesis of evolutionary biology (Huxley, 1942; Graham, 2016; Bonduriansky and Day, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference made by the authors based on theoretical considerations.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:28:18.810589Z"
+    },
+    {
+      "id": "3224f087-5144-4c6c-87d2-704fb317304e",
+      "content_id": "e942769c-4ebc-4c5e-9845-6d586e0db1d8",
+      "claim_id": "C10",
+      "claim": "During the mid-1900s, Lamarckism was largely rejected while Darwinism was enshrined in the Modern Synthesis of evolutionary biology.",
+      "claim_type": "EXPLICIT",
+      "source": "These two explanations are not mutually exclusive, but this dichotomy was reinforced during the mid-1900's, when Lamarckism was largely rejected while Darwinism was enshrined in what was called the Modern Synthesis of evolutionary biology (Huxley, 1942; Graham, 2016; Bonduriansky and Day, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to historical scientific literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:28:18.810589Z"
+    },
+    {
+      "id": "8e8245a1-583c-4196-8d73-2410465c5343",
+      "content_id": "e942769c-4ebc-4c5e-9845-6d586e0db1d8",
+      "claim_id": "C11",
+      "claim": "Within-generation plasticity, where a given genotype can produce different phenotypes as a function of environmental conditions, is well-documented and central to current evolutionary thought.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, within-generation plasticity, where a given genotype can produce different phenotypes as a function of environmental conditions, is both well-documented and central to current evolutionary thought (Schlichting and Pigliucci, 1998).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to scientific literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:28:18.810589Z"
+    },
+    {
+      "id": "c755a82c-fea7-4639-bec5-b79dd1317235",
+      "content_id": "e942769c-4ebc-4c5e-9845-6d586e0db1d8",
+      "claim_id": "C12",
+      "claim": "Within-generation plasticity does not pose any significant challenge to Darwinism since environmentally-induced phenotypes are not transmitted to offspring.",
+      "claim_type": "EXPLICIT",
+      "source": "This does not pose any significant challenge to Darwinism since environmentally-induced phenotypes are not transmitted to offspring.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on theoretical reasoning about evolutionary mechanisms.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:28:18.810589Z"
+    },
+    {
+      "id": "9c226ef2-9070-4819-b2c0-8a385b23e601",
+      "content_id": "e942769c-4ebc-4c5e-9845-6d586e0db1d8",
+      "claim_id": "C13",
+      "claim": "There is a clear separation between acclimation (adaptive changes in a plastic phenotype within a generation) and evolutionary adaptation (changes in allele frequency across generations).",
+      "claim_type": "EXPLICIT",
+      "source": "As a result, there is a clear separation between what is called acclimation (adaptive changes in a plastic phenotype within a generation) and evolutionary adaptation (changes in allele frequency across generations).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is presented as established knowledge in evolutionary biology.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:28:18.810589Z"
+    },
+    {
+      "id": "7f71ff74-2815-4cfb-9cff-1a966591e495",
+      "content_id": "e942769c-4ebc-4c5e-9845-6d586e0db1d8",
+      "claim_id": "C14",
+      "claim": "Acclimation is an individual-level phenomenon whereby adaptive changes occur within individual organisms.",
+      "claim_type": "EXPLICIT",
+      "source": "Acclimation is an individual-level phenomenon whereby adaptive changes occur within individual organisms, while evolutionary adaptation is a population-level phenomenon whereby adaptation occurs through a change in the (genetic) composition of a population.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is presented as established knowledge in evolutionary biology.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:28:18.810589Z"
+    },
+    {
+      "id": "99cb25d1-33de-4903-ad2a-26194fd09248",
+      "content_id": "e942769c-4ebc-4c5e-9845-6d586e0db1d8",
+      "claim_id": "C15",
+      "claim": "Evolutionary adaptation is a population-level phenomenon whereby adaptation occurs through a change in the genetic composition of a population.",
+      "claim_type": "EXPLICIT",
+      "source": "Acclimation is an individual-level phenomenon whereby adaptive changes occur within individual organisms, while evolutionary adaptation is a population-level phenomenon whereby adaptation occurs through a change in the (genetic) composition of a population.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is presented as established knowledge in evolutionary biology.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:28:18.810589Z"
+    },
+    {
+      "id": "0bd35306-4082-41a6-9551-55ab74e5093a",
+      "content_id": "e942769c-4ebc-4c5e-9845-6d586e0db1d8",
+      "claim_id": "C16",
+      "claim": "The developmental capacity for acclimation through plasticity has presumably evolved through evolutionary adaptation at the population level.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, the developmental capacity for acclimation through plasticity is, itself, an organismal characteristic that has presumably evolved through evolutionary adaption at the population level.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on evolutionary theory.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:28:18.810589Z"
+    },
+    {
+      "id": "71da4012-dbfa-4877-b777-920c80a765e6",
+      "content_id": "e942769c-4ebc-4c5e-9845-6d586e0db1d8",
+      "claim_id": "C17",
+      "claim": "Within-generation plasticity is ubiquitous.",
+      "claim_type": "EXPLICIT",
+      "source": "Within-generation plasticity is ubiquitous but there are also well-known examples in which plastic responses appear to extend from parent to offspring.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is presented as established knowledge in biology.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:28:18.810589Z"
+    },
+    {
+      "id": "3209bbba-8e00-42a0-8c9e-b3bc04e381f9",
+      "content_id": "e942769c-4ebc-4c5e-9845-6d586e0db1d8",
+      "claim_id": "C18",
+      "claim": "There are well-known examples in which plastic responses appear to extend from parent to offspring.",
+      "claim_type": "EXPLICIT",
+      "source": "Within-generation plasticity is ubiquitous but there are also well-known examples in which plastic responses appear to extend from parent to offspring.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by reference to existing scientific knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:28:18.810589Z"
+    },
+    {
+      "id": "fbfa3da6-28f0-4009-90fc-789eb7515fbe",
+      "content_id": "e942769c-4ebc-4c5e-9845-6d586e0db1d8",
+      "claim_id": "C19",
+      "claim": "Maternal effects, in which the environmental conditions of a mother affect the phenotype of their offspring, are well-known examples of plastic responses extending from parent to offspring.",
+      "claim_type": "EXPLICIT",
+      "source": "Maternal effects, in which the environmental conditions of a mother affect the phenotype of their offspring, are probably the best-known examples (Mousseau and Fox, 1998; Marshall and Uller, 2007; Uller, 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to scientific literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:28:18.810589Z"
+    },
+    {
+      "id": "e3e47dd1-97c1-4edf-afb9-2304f20537b7",
+      "content_id": "e942769c-4ebc-4c5e-9845-6d586e0db1d8",
+      "claim_id": "C20",
+      "claim": "Maternal effects can occur because mothers transmit many cytoplasmic constituents to their offspring through oocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "Such effects can occur, both because mothers transmit many cytoplasmic constituents to their offspring through oocytes, but also because parents in many species (both females and males) provide parental care that can shape the phenotype of their offspring.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is presented as established biological knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:28:18.810589Z"
+    },
+    {
+      "id": "0669ea3b-a7f4-4b8e-a27c-6c48f45fafac",
+      "content_id": "e942769c-4ebc-4c5e-9845-6d586e0db1d8",
+      "claim_id": "C21",
+      "claim": "Maternal effects can occur because parents in many species provide parental care that can shape the phenotype of their offspring.",
+      "claim_type": "EXPLICIT",
+      "source": "Such effects can occur, both because mothers transmit many cytoplasmic constituents to their offspring through oocytes, but also because parents in many species (both females and males) provide parental care that can shape the phenotype of their offspring.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is presented as established biological knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:28:18.810589Z"
+    },
+    {
+      "id": "58f8b7f6-e4d0-4448-91b3-fd2bf3030292",
+      "content_id": "e942769c-4ebc-4c5e-9845-6d586e0db1d8",
+      "claim_id": "C22",
+      "claim": "Studies of evolutionary adaptation often keep organisms in a common environment for multiple generations prior to study so that transient parental effects are 'washed out' of the system.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, this is why studies of evolutionary adaptation often keep organisms in a common environment for multiple generations prior to study, so that these kinds of transient parental effects are 'washed out' of the system.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is presented as established methodological practice in evolutionary biology.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:28:18.810589Z"
+    },
+    {
+      "id": "9eee51f4-ff33-4b6e-9e0c-0f3b293a2f5b",
+      "content_id": "e942769c-4ebc-4c5e-9845-6d586e0db1d8",
+      "claim_id": "C23",
+      "claim": "Examples are known where parents affect offspring phenotype in an adaptive way.",
+      "claim_type": "EXPLICIT",
+      "source": "This view of maternal effects as passive, carryover effects from the parental generation is also overly simplistic, and examples are known where parents affect offspring phenotype in an adaptive way (Mousseau and Fox, 1998; Agrawal et al., 1999; Marshall and Uller, 2007; West-Eberhard, 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to scientific literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:28:18.810589Z"
+    },
+    {
+      "id": "cd3e5a33-221f-4c14-a5c2-c183f7799358",
+      "content_id": "e942769c-4ebc-4c5e-9845-6d586e0db1d8",
+      "claim_id": "C24",
+      "claim": "In Daphnia, parental exposure to chemical cues indicative of predators results in offspring developing protective armor that reduces their susceptibility to predation.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, in Daphnia parental exposure to chemical cues indicative of predators result in offspring developing protective armor that reduce their susceptibility to predation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is presented as an established example from the literature.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:28:18.810589Z"
+    },
+    {
+      "id": "90acb1d1-5db5-49ea-9e9b-991ba94b30d3",
+      "content_id": "e942769c-4ebc-4c5e-9845-6d586e0db1d8",
+      "claim_id": "C25",
+      "claim": "Adaptive maternal effects in Daphnia require an evolved mechanism that actively resets offspring developmental programs each generation in ways that enhance their fitness.",
+      "claim_type": "EXPLICIT",
+      "source": "Such effects presumably do not simply result from passive carryover of maternal conditions. Instead, they require an evolved mechanism that actively resets offspring developmental programs each generation in ways that enhance their fitness.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the nature of the observed phenomenon.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:28:18.810589Z"
+    },
+    {
+      "id": "a16c251d-aff1-4a1d-ad70-f918e1dc09a3",
+      "content_id": "e942769c-4ebc-4c5e-9845-6d586e0db1d8",
+      "claim_id": "C26",
+      "claim": "Within- and between-generation adaptive plastic responses have been conceptualized as arising from a flexible developmental program that has evolved through natural selection acting on genetic variation.",
+      "claim_type": "EXPLICIT",
+      "source": "Each of the above phenomena have been readily accommodated by evolutionary theory that originates with the Modern Synthesis by conceptualizing both within- and between-generation adaptive plastic responses as arising from a flexible developmental program that has, itself, evolved through natural selection acting on genetic variation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is presented as established evolutionary theory.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:28:18.810589Z"
+    },
+    {
+      "id": "b8fe6ef4-b186-436d-946e-6573c115a357",
+      "content_id": "e942769c-4ebc-4c5e-9845-6d586e0db1d8",
+      "claim_id": "C27",
+      "claim": "Plastic changes in phenotype can be transmitted across more than one generation.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the discovery that plastic changes in phenotype can be transmitted across more than one generation (Jablonka and Lamb, 2005; Jablonka and Raz, 2009; Bonduriansky and Day, 2018) suggests that the line between Lamarckism and Darwinism is more blurred.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to scientific literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:28:18.810589Z"
+    },
+    {
+      "id": "fbc74e3a-c51d-4acf-bd7b-86257600f456",
+      "content_id": "e942769c-4ebc-4c5e-9845-6d586e0db1d8",
+      "claim_id": "C28",
+      "claim": "As the number of generations separating ancestor and descendent populations increases, it becomes less tenable to conceptualize a descendent individual's phenotype as being shaped by direct exposure to environmental conditions in the ancestral generation.",
+      "claim_type": "EXPLICIT",
+      "source": "First, as the number of generations that separate the ancestor and descendent populations increases, it becomes less tenable to conceptualize a descendent individuals' phenotype as being shaped by direct exposure to the environmental conditions in the ancestral generation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on theoretical reasoning.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:28:18.810589Z"
+    },
+    {
+      "id": "5d15022d-24f5-4a4c-8cff-a5d8b4636c00",
+      "content_id": "e942769c-4ebc-4c5e-9845-6d586e0db1d8",
+      "claim_id": "C29",
+      "claim": "A distinction is often made between intergenerational plasticity, where direct exposure is plausible, and transgenerational plasticity, where it is not.",
+      "claim_type": "EXPLICIT",
+      "source": "This is why a distinction is often made between intergenerational plasticity, where direct exposure is plausible, and transgenerational plasticity, where it is not (Box 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is presented as established terminology in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:28:18.810589Z"
+    },
+    {
+      "id": "8515d9ac-4e79-4cb1-b203-71e5ff8ba8b7",
+      "content_id": "e942769c-4ebc-4c5e-9845-6d586e0db1d8",
+      "claim_id": "C30",
+      "claim": "The existence of transgenerational plasticity suggests that some form of information, in addition to that carried by genetic material, is faithfully transmitted over multiple generations.",
+      "claim_type": "EXPLICIT",
+      "source": "The existence of transgenerational plasticity suggests that some form of information, in addition to that carried by the genetic material, is faithfully transmitted over multiple generations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the observed phenomenon.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:28:18.810589Z"
+    },
+    {
+      "id": "8f50ed58-bf6f-466a-9bb3-aa8253b3023e",
+      "content_id": "e942769c-4ebc-4c5e-9845-6d586e0db1d8",
+      "claim_id": "C31",
+      "claim": "Molecular mechanisms of nongenetic inheritance involving DNA methylation, post-translational modification of histones, and small non-coding RNA have been elucidated in detail.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, molecular mechanisms of nongenetic inheritance involving DNA methylation, post-translational modification of histones, and small non-coding RNA have been elucidated in detail (Bo\u0161kovi\u0107 and Rando, 2018; Henderson and Jacobsen, 2007; Skvortsova et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to scientific literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:28:18.810589Z"
+    },
+    {
+      "id": "d161f100-7573-49b9-9518-e1f705c5a150",
+      "content_id": "e942769c-4ebc-4c5e-9845-6d586e0db1d8",
+      "claim_id": "C32",
+      "claim": "If faithful transmission of nongenetic information across multiple generations is commonplace, then this information can act as a substrate of variation on which natural selection can act.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, if the faithful transmission of nongenetic information across multiple generations is commonplace, then this information can, itself, act as a substrate of variation on which natural selection can act.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on evolutionary theory.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:28:18.810589Z"
+    },
+    {
+      "id": "f6cf0d29-00f1-450d-be0a-0c876607e410",
+      "content_id": "e942769c-4ebc-4c5e-9845-6d586e0db1d8",
+      "claim_id": "C33",
+      "claim": "Adaptive change in phenotype between ancestral and descendent populations might be due to a change in genetic composition via natural selection, a change in nongenetic composition via natural selection, or an induced plastic change in nongenetic information that is passed to descendants.",
+      "claim_type": "EXPLICIT",
+      "source": "This would blur the line between Lamarckism and Darwinism because any adaptive change in phenotype that occurs between ancestral and descendent populations might then be due to at least three different processes (or any combination thereof): (a) a change in the genetic composition of the population via natural selection (i.e., evolutionary adaption), (b) a change in the nongenetic composition of the population via natural selection, or (c) an induced (i.e., plastic) change in the nongenetic information in the ancestral population that is passed onward to descendants (i.e., adaptive, multigenerational plasticity).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on theoretical reasoning about evolutionary mechanisms.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:28:18.810589Z"
+    },
+    {
+      "id": "3f87afcb-ddb0-4404-87c8-c80534e1e759",
+      "content_id": "e942769c-4ebc-4c5e-9845-6d586e0db1d8",
+      "claim_id": "C34",
+      "claim": "To provide compelling evidence for adaptive multigenerational plasticity, studies should demonstrate that an environmental response is transmitted across generations.",
+      "claim_type": "EXPLICIT",
+      "source": "To provide compelling evidence for the existence of adaptive multigenerational plasticity we believe that studies should do at least three things: (1) demonstrate that an environmental response is transmitted across generations (i.e., that multigenerational plasticity occurs)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a criterion proposed by the authors based on theoretical reasoning.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:28:18.810589Z"
+    },
+    {
+      "id": "3403f232-4725-415c-9d02-2593621572fe",
+      "content_id": "e942769c-4ebc-4c5e-9845-6d586e0db1d8",
+      "claim_id": "C35",
+      "claim": "To provide compelling evidence for adaptive multigenerational plasticity, studies should demonstrate that multigenerational plasticity improves descendant fitness.",
+      "claim_type": "EXPLICIT",
+      "source": "(2) demonstrate that multigenerational plasticity improves descendant fitness (i.e., that it is adaptive)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a criterion proposed by the authors based on theoretical reasoning.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:28:18.810589Z"
+    },
+    {
+      "id": "68a6fda6-5fa3-48bd-879a-32efd09c63df",
+      "content_id": "e942769c-4ebc-4c5e-9845-6d586e0db1d8",
+      "claim_id": "C36",
+      "claim": "To provide compelling evidence for adaptive multigenerational plasticity, studies should provide an explanation for the mechanistic basis of the phenomenon.",
+      "claim_type": "EXPLICIT",
+      "source": "(3) provide an explanation for the mechanistic basis of the phenomenon.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a criterion proposed by the authors based on scientific methodology.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:28:18.810589Z"
+    },
+    {
+      "id": "4f71d2c8-3d78-4162-9204-acd49e16eb3e",
+      "content_id": "e942769c-4ebc-4c5e-9845-6d586e0db1d8",
+      "claim_id": "C37",
+      "claim": "C. elegans is a small, mostly free-living roundworm that consumes a diet of opportunistic microbes on decaying plant matter.",
+      "claim_type": "EXPLICIT",
+      "source": "The nematode Caenorhabditis elegans is a small, mostly free-living roundworm that consumes a diet of opportunistic microbes on decaying plant matter (F\u00e9lix and Braendle, 2010; Schulenburg and F\u00e9lix, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to scientific literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:28:18.810589Z"
+    },
+    {
+      "id": "2c34ad27-d191-4d75-af22-776a9f845268",
+      "content_id": "e942769c-4ebc-4c5e-9845-6d586e0db1d8",
+      "claim_id": "C38",
+      "claim": "C. elegans suffers myriad biotic and abiotic stressors in the wild.",
+      "claim_type": "EXPLICIT",
+      "source": "Like other animals, C. elegans suffers myriad slings and arrows in the wild including biotic (e.g., pathogens, predators, and fluctuating food availability) and abiotic (e.g., temperature, salt, etc) stressors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is presented as established knowledge about C. elegans ecology.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:28:18.810589Z"
+    },
+    {
+      "id": "57066f9a-82b9-4bdc-a44f-f53a1f697ac3",
+      "content_id": "e942769c-4ebc-4c5e-9845-6d586e0db1d8",
+      "claim_id": "C39",
+      "claim": "C. elegans can complete its lifecycle in as little as three days.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, C. elegans can complete its lifecycle in as little as three days, making it an exceptionally tractable system for multigenerational studies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is presented as established knowledge about C. elegans biology.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:28:18.810589Z"
+    },
+    {
+      "id": "09b46197-5e01-4155-a28a-2038900ab94f",
+      "content_id": "e942769c-4ebc-4c5e-9845-6d586e0db1d8",
+      "claim_id": "C40",
+      "claim": "C. elegans primarily relies on self-fertilization as a hermaphrodite.",
+      "claim_type": "EXPLICIT",
+      "source": "Since it primarily relies on self-fertilization as a hermaphrodite, C. elegans can be essentially isogenic, especially lab strains.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is presented as established knowledge about C. elegans biology.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:28:18.810589Z"
+    },
+    {
+      "id": "927e2b4b-1d0f-48e7-9721-de1d05e97d25",
+      "content_id": "e942769c-4ebc-4c5e-9845-6d586e0db1d8",
+      "claim_id": "C41",
+      "claim": "C. elegans displays substantial phenotypic plasticity.",
+      "claim_type": "EXPLICIT",
+      "source": "It also displays substantial phenotypic plasticity, and a variety of molecular and cellular mechanisms of nongenetic inheritance have been characterized in C. elegans (Minkina and Hunter, 2018; Perez and Lehner, 2019; Sommer, 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to scientific literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:28:18.810589Z"
+    },
+    {
+      "id": "77202c7d-3924-4e50-83eb-62ba5658816e",
+      "content_id": "e942769c-4ebc-4c5e-9845-6d586e0db1d8",
+      "claim_id": "C42",
+      "claim": "A variety of molecular and cellular mechanisms of nongenetic inheritance have been characterized in C. elegans.",
+      "claim_type": "EXPLICIT",
+      "source": "It also displays substantial phenotypic plasticity, and a variety of molecular and cellular mechanisms of nongenetic inheritance have been characterized in C. elegans (Minkina and Hunter, 2018; Perez and Lehner, 2019; Sommer, 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to scientific literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:28:18.810589Z"
+    },
+    {
+      "id": "8e6c4d8d-c0bb-480f-92c9-116b6a4a02bb",
+      "content_id": "e942769c-4ebc-4c5e-9845-6d586e0db1d8",
+      "claim_id": "C43",
+      "claim": "C. elegans is a uniquely powerful metazoan model to investigate the potential of adaptive multigenerational plasticity.",
+      "claim_type": "EXPLICIT",
+      "source": "Together these properties make C. elegans a uniquely powerful metazoan model to investigate the potential of adaptive multigenerational plasticity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the combined properties of C. elegans.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:28:18.810589Z"
+    },
+    {
+      "id": "62337354-7f18-4884-bd05-88255ede27a8",
+      "content_id": "e942769c-4ebc-4c5e-9845-6d586e0db1d8",
+      "claim_id": "C44",
+      "claim": "The ecological and evolutionary significance of nongenetic inheritance hinges on its adaptive value.",
+      "claim_type": "EXPLICIT",
+      "source": "The ecological and evolutionary significance of nongenetic inheritance hinges on its adaptive value.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on evolutionary theory.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:28:18.810589Z"
+    },
+    {
+      "id": "26d4f391-9468-4890-8db5-c56aabf7471e",
+      "content_id": "e942769c-4ebc-4c5e-9845-6d586e0db1d8",
+      "claim_id": "C45",
+      "claim": "The physiological and adaptive significance of epigenetic inheritance beyond genome surveillance and germline integrity remains obscure.",
+      "claim_type": "EXPLICIT",
+      "source": "Extensive research has focused on molecular mechanisms of epigenetic inheritance, but the physiological and adaptive significance of epigenetic inheritance beyond genome surveillance and germline integrity remains obscure (Minkina and Hunter, 2018; Perez and Lehner, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to scientific literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:28:18.810589Z"
+    },
+    {
+      "id": "0d164572-0695-4893-99e2-c8104754dc5f",
+      "content_id": "e942769c-4ebc-4c5e-9845-6d586e0db1d8",
+      "claim_id": "C46",
+      "claim": "Our understanding of the dynamics of environmental conditions experienced by natural C. elegans populations is poor.",
+      "claim_type": "EXPLICIT",
+      "source": "However, it should be noted that our understanding of the dynamics of environmental conditions experienced by natural populations is poor.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is presented as a limitation in current knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:28:18.810589Z"
+    },
+    {
+      "id": "ae10b66d-692c-42b1-8e7c-8ded39a7705a",
+      "content_id": "e942769c-4ebc-4c5e-9845-6d586e0db1d8",
+      "claim_id": "C47",
+      "claim": "The frequency, duration, and regularity of specific stressors in natural C. elegans populations is not known.",
+      "claim_type": "EXPLICIT",
+      "source": "The frequency, duration, and regularity of specific stressors is not known, and so it is difficult to infer how observed phenotypic responses would actually affect fitness in the wild.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is presented as a limitation in current knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:28:18.810589Z"
+    },
+    {
+      "id": "77969bd3-a127-4a33-a16f-80f6a0e4df06",
+      "content_id": "e942769c-4ebc-4c5e-9845-6d586e0db1d8",
+      "claim_id": "C48",
+      "claim": "Evolution of nongenetic predictive adaptive responses requires variation but sufficient regularity in environmental dynamics such that conditions experienced in one generation serve as reliable cues about future generations.",
+      "claim_type": "EXPLICIT",
+      "source": "Theory suggests that evolution of nongenetic predictive adaptive responses requires variation but sufficient regularity in environmental dynamics such that conditions experienced in one generation serve as reliable cues about future generations (Botero et al., 2015; Proulx and Teot\u00f3nio, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to theoretical literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:28:18.810589Z"
+    },
+    {
+      "id": "89b84434-d6e2-4fe7-bb2a-908a095fb3bb",
+      "content_id": "e942769c-4ebc-4c5e-9845-6d586e0db1d8",
+      "claim_id": "C49",
+      "claim": "C. elegans is frequently exposed to and colonized by bacterial pathogens.",
+      "claim_type": "EXPLICIT",
+      "source": "C. elegans is frequently exposed to, and colonized by, bacterial pathogens (Schulenburg and F\u00e9lix, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to scientific literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:28:18.810589Z"
+    },
+    {
+      "id": "9246a78e-7fee-4d3a-ba84-d535d403b9d6",
+      "content_id": "e942769c-4ebc-4c5e-9845-6d586e0db1d8",
+      "claim_id": "C50",
+      "claim": "Non-lethal exposure of C. elegans to pathogenic Pseudomonas aeruginosa induces avoidance behavior, and this behavior is inherited transgenerationally.",
+      "claim_type": "EXPLICIT",
+      "source": "Non-lethal exposure of C. elegans to pathogenic Pseudomonas aeruginosa induces avoidance behavior, and this behavior is inherited transgenerationally (Moore et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to a specific study with data.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:28:18.810589Z"
+    },
+    {
+      "id": "121ece1f-36c2-4643-a630-bd464a61295a",
+      "content_id": "e942769c-4ebc-4c5e-9845-6d586e0db1d8",
+      "claim_id": "C51",
+      "claim": "Lethality due to P. aeruginosa pathogen exposure in the parental generation was low (~5%) in the Moore et al. 2019 study.",
+      "claim_type": "EXPLICIT",
+      "source": "In this study lethality due to pathogen exposure in the parental generation was low (~5%), suggesting that viability selection on pre-existing variation is unlikely.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is data from the cited study.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:28:18.810589Z"
+    },
+    {
+      "id": "4b8c8a9b-0921-4508-b46a-1a6ecfe8d461",
+      "content_id": "e942769c-4ebc-4c5e-9845-6d586e0db1d8",
+      "claim_id": "C52",
+      "claim": "Expression of small Piwi-associated RNAs (piRNAs) was altered in P. aeruginosa-exposed animals.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, expression of small Piwi-associated RNAs (piRNAs), which are known to be transmitted through the germline (Ghildiyal and Zamore, 2009), was altered in the exposed animals suggesting a source of heritable epigenetic variation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is data from the cited study.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:28:18.810589Z"
+    },
+    {
+      "id": "344513b9-eecf-4b4b-bd77-6d42c7217178",
+      "content_id": "e942769c-4ebc-4c5e-9845-6d586e0db1d8",
+      "claim_id": "C53",
+      "claim": "piRNAs are known to be transmitted through the germline.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, expression of small Piwi-associated RNAs (piRNAs), which are known to be transmitted through the germline (Ghildiyal and Zamore, 2009), was altered in the exposed animals suggesting a source of heritable epigenetic variation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to scientific literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:28:18.810589Z"
+    },
+    {
+      "id": "6cce1621-4b47-4cfd-b3c1-5b7d41f0dfe1",
+      "content_id": "e942769c-4ebc-4c5e-9845-6d586e0db1d8",
+      "claim_id": "C54",
+      "claim": "Avoidance behavior increases survival of pathogen-exposed descendants.",
+      "claim_type": "EXPLICIT",
+      "source": "It was also shown that avoidance behavior increases survival of pathogen-exposed descendants, consistent with the response being adaptive.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is data from the cited study.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:28:18.810589Z"
+    },
+    {
+      "id": "85113ff5-0adb-4149-8f61-14fef23bbd86",
+      "content_id": "e942769c-4ebc-4c5e-9845-6d586e0db1d8",
+      "claim_id": "C55",
+      "claim": "prg-1/Piwi and downstream factors involved in piRNA-mediated regulation are required for inheritance of avoidance behavior.",
+      "claim_type": "EXPLICIT",
+      "source": "prg-1/Piwi and downstream factors involved in piRNA-mediated regulation are required for inheritance of avoidance behavior, suggesting a molecular mechanism connecting epigenetic variation with changes in gene expression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is data from the cited study.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:28:18.810589Z"
+    },
+    {
+      "id": "21882855-7b87-45b8-b9be-e88db538f2fb",
+      "content_id": "e942769c-4ebc-4c5e-9845-6d586e0db1d8",
+      "claim_id": "C56",
+      "claim": "Increased expression of the TGF-\u00df ligand daf-7 in chemosensory neurons correlates with and is required for transgenerational inheritance of avoidance behavior.",
+      "claim_type": "EXPLICIT",
+      "source": "Increased expression of the TGF-\u00df ligand daf-7 in chemosensory neurons correlates with, and is required for, transgenerational inheritance of avoidance behavior.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is data from the cited study.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:28:18.810589Z"
+    },
+    {
+      "id": "f0c34b77-25e8-4080-82c2-072213977ddc",
+      "content_id": "e942769c-4ebc-4c5e-9845-6d586e0db1d8",
+      "claim_id": "C57",
+      "claim": "The transgenerational increase in daf-7 expression requires prg-1/Piwi.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, the transgenerational increase in daf-7 expression requires prg-1/Piwi.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is data from the cited study.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:28:18.810589Z"
+    },
+    {
+      "id": "d1a45b1b-d360-4337-b583-80cde8e1e032",
+      "content_id": "e942769c-4ebc-4c5e-9845-6d586e0db1d8",
+      "claim_id": "C58",
+      "claim": "Moore et al., 2019 provide a compelling case for adaptive multigenerational plasticity.",
+      "claim_type": "EXPLICIT",
+      "source": "Nonethleless, Moore et al., 2019 provide a compelling case for adaptive multigenerational plasticity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference by the authors based on evaluation of the cited study.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:28:18.810589Z"
+    },
+    {
+      "id": "6b93e9b6-f1af-4036-971c-d358adba1931",
+      "content_id": "e942769c-4ebc-4c5e-9845-6d586e0db1d8",
+      "claim_id": "C59",
+      "claim": "A trade-off between pathogen avoidance and food availability was offered as an explanation for why it is optimal to rely on transient epigenetic memory as opposed to hard-wired genetic adaptation.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, a trade-off between pathogen avoidance and food availability was offered as an explanation for why it is optimal to rely on transient epigenetic memory as opposed to hard-wired genetic adaptation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation from the cited study.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:28:18.810589Z"
+    },
+    {
+      "id": "bc7d5724-bb95-425e-9a36-8acc7bac7593",
+      "content_id": "e942769c-4ebc-4c5e-9845-6d586e0db1d8",
+      "claim_id": "C60",
+      "claim": "C. elegans can arrest development as dauer larvae.",
+      "claim_type": "EXPLICIT",
+      "source": "C. elegans can arrest development as dauer larvae (Hu, 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to scientific literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:28:18.810589Z"
+    },
+    {
+      "id": "4e5f75d0-1581-4189-9cbb-6de442d15214",
+      "content_id": "e942769c-4ebc-4c5e-9845-6d586e0db1d8",
+      "claim_id": "C61",
+      "claim": "Dauer diapause is triggered by high population density, limited food, and heat.",
+      "claim_type": "EXPLICIT",
+      "source": "This developmental diapause is triggered by high population density, limited food, and heat, serving to postpone reproduction and support dispersal.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is presented as established knowledge about C. elegans biology.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:28:18.810589Z"
+    },
+    {
+      "id": "f2ef89de-0052-4859-a7f4-473ae5733b34",
+      "content_id": "e942769c-4ebc-4c5e-9845-6d586e0db1d8",
+      "claim_id": "C62",
+      "claim": "Dauer larvae have a sealed buccal cavity and do not feed.",
+      "claim_type": "EXPLICIT",
+      "source": "Dauer larvae have a sealed buccal cavity and do not feed, rendering them resistant to bacterial infection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is presented as established knowledge about C. elegans biology.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:28:18.810589Z"
+    },
+    {
+      "id": "d8d35412-c289-45e2-9eb0-7c739e6b57bb",
+      "content_id": "e942769c-4ebc-4c5e-9845-6d586e0db1d8",
+      "claim_id": "C63",
+      "claim": "Dauer larvae are resistant to bacterial infection.",
+      "claim_type": "EXPLICIT",
+      "source": "Dauer larvae have a sealed buccal cavity and do not feed, rendering them resistant to bacterial infection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the biological properties of dauer larvae.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:28:18.810589Z"
+    },
+    {
+      "id": "11342150-8320-41c9-832f-df003e6245da",
+      "content_id": "e942769c-4ebc-4c5e-9845-6d586e0db1d8",
+      "claim_id": "C64",
+      "claim": "Exposure of C. elegans to bacterial pathogens P. aeruginosa or Salmonella enterica for two consecutive generations induces dauer formation in the second generation.",
+      "claim_type": "EXPLICIT",
+      "source": "Exposure of C. elegans to bacterial pathogens P. aeruginosa or Salmonella enterica for two consecutive generations induces dauer formation in the second generation (Palominos et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is data from the cited study.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:28:18.810589Z"
+    },
+    {
+      "id": "2bde7a38-e4b6-4b3e-9eee-bc5c641696ad",
+      "content_id": "e942769c-4ebc-4c5e-9845-6d586e0db1d8",
+      "claim_id": "C65",
+      "claim": "Exposure to P. aeruginosa for two consecutive generations increased dauer formation for up to five generations.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, exposure to P. aeruginosa for two consecutive generations increased dauer formation for up to five generations, consistent with transgenerational epigenetic inheritance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is data from the cited study.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:28:18.810589Z"
+    },
+    {
+      "id": "0818116d-0b8d-4eda-a35f-4f508fab7793",
+      "content_id": "e942769c-4ebc-4c5e-9845-6d586e0db1d8",
+      "claim_id": "C66",
+      "claim": "Dauer larvae are not colonized by pathogens.",
+      "claim_type": "EXPLICIT",
+      "source": "Survival assays were not performed, but it was demonstrated that dauer larvae are not colonized by pathogens, as expected, consistent with the response being adaptive.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is data from the cited study.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:28:18.810589Z"
+    },
+    {
+      "id": "0cf216ae-9588-41bb-83ae-198e1a87400a",
+      "content_id": "e942769c-4ebc-4c5e-9845-6d586e0db1d8",
+      "claim_id": "C67",
+      "claim": "Several genes involved in RNA interference are required for pathogen-induced dauer formation.",
+      "claim_type": "EXPLICIT",
+      "source": "Several genes involved in RNA interference, a systemic and heritable small RNA-based gene silencing mechanism (Fire et al., 1998; Ghildiyal and Zamore, 2009), are required for pathogen-induced dauer formation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is data from the cited study.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:28:18.810589Z"
+    },
+    {
+      "id": "f97b1e3d-547b-428b-9ce0-80591e936838",
+      "content_id": "e942769c-4ebc-4c5e-9845-6d586e0db1d8",
+      "claim_id": "C68",
+      "claim": "RNA interference is a systemic and heritable small RNA-based gene silencing mechanism.",
+      "claim_type": "EXPLICIT",
+      "source": "Several genes involved in RNA interference, a systemic and heritable small RNA-based gene silencing mechanism (Fire et al., 1998; Ghildiyal and Zamore, 2009), are required for pathogen-induced dauer formation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to scientific literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:28:18.810589Z"
+    },
+    {
+      "id": "ab7b3534-484d-4739-9e87-a6f90226e1cc",
+      "content_id": "e942769c-4ebc-4c5e-9845-6d586e0db1d8",
+      "claim_id": "C69",
+      "claim": "Non-lethal adult exposure to the novel C. elegans pathogen Pseudomonas vranovensis induces resistance to the same pathogen in first-generation progeny.",
+      "claim_type": "EXPLICIT",
+      "source": "Non-lethal adult exposure to the novel C. elegans pathogen Pseudomonas vranovensis induces resistance to the same pathogen in first-generation progeny, an intergenerational effect, with a substantial effect size (Burton et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is data from the cited study.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:28:18.810589Z"
+    },
+    {
+      "id": "744253cd-dcea-418c-ad97-e4eda5622a8a",
+      "content_id": "e942769c-4ebc-4c5e-9845-6d586e0db1d8",
+      "claim_id": "C70",
+      "claim": "Exposure to P. vranovensis for three consecutive generations triggers resistance for two subsequent generations.",
+      "claim_type": "EXPLICIT",
+      "source": "Exposure for three consecutive generations triggers resistance for two subsequent generations, suggesting epigenetic inheritance but falling one generation short of the three-generation gold standard.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is data from the cited study.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:28:18.810589Z"
+    },
+    {
+      "id": "7836bd74-e92e-4cc4-beb5-bf71a8406be2",
+      "content_id": "e942769c-4ebc-4c5e-9845-6d586e0db1d8",
+      "claim_id": "C71",
+      "claim": "The strains of P. vranovensis used in the Burton et al. 2020 study were isolated from a natural environment of C. elegans.",
+      "claim_type": "EXPLICIT",
+      "source": "The strains of P. vranovensis used in this study were isolated from a natural environment of C. elegans, suggesting that heritable resistance to this pathogen would be ecologically relevant and increase fitness in the wild.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is data from the cited study.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:28:18.810589Z"
+    },
+    {
+      "id": "d28511fb-4c71-48c7-a623-c4f227170ff8",
+      "content_id": "e942769c-4ebc-4c5e-9845-6d586e0db1d8",
+      "claim_id": "C72",
+      "claim": "Mitochondrial challenge with antimycin increases antimycin resistance transgenerationally.",
+      "claim_type": "EXPLICIT",
+      "source": "Mitochondrial challenge with antimycin, a natural product that mimics the effect of some bacterial pathogens, increases antimycin resistance transgenerationally (Ma et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is data from the cited study.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:28:18.810589Z"
+    },
+    {
+      "id": "6e7b61be-f620-47e6-9e41-1744dd3a3dc9",
+      "content_id": "e942769c-4ebc-4c5e-9845-6d586e0db1d8",
+      "claim_id": "C73",
+      "claim": "Antimycin is a natural product that mimics the effect of some bacterial pathogens.",
+      "claim_type": "EXPLICIT",
+      "source": "Mitochondrial challenge with antimycin, a natural product that mimics the effect of some bacterial pathogens, increases antimycin resistance transgenerationally (Ma et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is presented as established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:28:18.810589Z"
+    },
+    {
+      "id": "fedc3d6a-2616-4c04-a7d2-751ccf23afbd",
+      "content_id": "e942769c-4ebc-4c5e-9845-6d586e0db1d8",
+      "claim_id": "C74",
+      "claim": "Exposure to a Pseudomonas strain isolated from a natural C. elegans habitat can induce antimycin resistance inter- and transgenerationally.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, exposure to a Pseudomonas strain isolated from a natural C. elegans habitat can induce antimycin resistance inter- and transgenerationally.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is data from the cited study.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:28:18.810589Z"
+    },
+    {
+      "id": "ceca7d55-f226-466b-b25d-1080041e4914",
+      "content_id": "e942769c-4ebc-4c5e-9845-6d586e0db1d8",
+      "claim_id": "C75",
+      "claim": "Antimycin treatment has a profound impact on growth and reproduction.",
+      "claim_type": "EXPLICIT",
+      "source": "However, these experiments potentially involved selection, as antimycin treatment has a profound impact on growth and reproduction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is data from the cited study.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:28:18.810589Z"
+    },
+    {
+      "id": "0550abb3-4c86-4284-9ef6-82bb44533b16",
+      "content_id": "e942769c-4ebc-4c5e-9845-6d586e0db1d8",
+      "claim_id": "C76",
+      "claim": "The reliability of methods used to measure 6mA has been called into question with its existence in C. elegans and other animals a potential artefact.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the reliability of methods used to measure 6mA has been called into question with its existence in this and other animals a potential artefact (O'Brown et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to scientific literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:28:18.810589Z"
+    },
+    {
+      "id": "19bf4f3c-0768-4b61-bc44-0fc576800e96",
+      "content_id": "e942769c-4ebc-4c5e-9845-6d586e0db1d8",
+      "claim_id": "C77",
+      "claim": "Wild C. elegans populations are thought to have boom-and-bust population dynamics with fluctuations in food availability.",
+      "claim_type": "EXPLICIT",
+      "source": "Wild C. elegans populations are thought to have boom-and-bust population dynamics with fluctuations in food availability (Schulenburg and F\u00e9lix, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to scientific literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:28:18.810589Z"
+    },
+    {
+      "id": "45fda107-8cd5-41d6-b68a-db1f7901b249",
+      "content_id": "e942769c-4ebc-4c5e-9845-6d586e0db1d8",
+      "claim_id": "C78",
+      "claim": "Dauer diapause is central to the C. elegans lifecycle.",
+      "claim_type": "EXPLICIT",
+      "source": "Consequently, dauer diapause is central to their lifecycle, and worms found in natural settings are often developmentally arrested as dauer larvae.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on ecological observations.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:28:18.810589Z"
+    },
+    {
+      "id": "062e9c1c-febf-4c82-9cb6-5d048ae3b0e0",
+      "content_id": "e942769c-4ebc-4c5e-9845-6d586e0db1d8",
+      "claim_id": "C79",
+      "claim": "Worms found in natural settings are often developmentally arrested as dauer larvae.",
+      "claim_type": "EXPLICIT",
+      "source": "Consequently, dauer diapause is central to their lifecycle, and worms found in natural settings are often developmentally arrested as dauer larvae.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is presented as established knowledge about C. elegans ecology.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:28:18.810589Z"
+    },
+    {
+      "id": "ab0ae806-ea0c-45b6-898a-35cf6e0bc59e",
+      "content_id": "e942769c-4ebc-4c5e-9845-6d586e0db1d8",
+      "claim_id": "C80",
+      "claim": "Dietary restriction promotes longevity at the cost of reproduction in a variety of animals.",
+      "claim_type": "EXPLICIT",
+      "source": "Dietary restriction (DR), a reduction in consumption without starvation or malnutrition, promotes longevity at the cost of reproduction in a variety of animals (Fontana et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to scientific literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:28:18.810589Z"
+    },
+    {
+      "id": "8023f521-13a8-4b6b-97c4-b15360c8a27f",
+      "content_id": "e942769c-4ebc-4c5e-9845-6d586e0db1d8",
+      "claim_id": "C81",
+      "claim": "Worms raised in dietary restriction produce fewer but larger progeny with increased starvation resistance.",
+      "claim_type": "EXPLICIT",
+      "source": "Worms raised in DR produce fewer but larger progeny with increased starvation resistance (Harvey and Orbidans, 2011; Hibshman et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is data from the cited studies.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:28:18.810589Z"
+    },
+    {
+      "id": "1d9b9068-480e-455a-aad7-c11d55fc754f",
+      "content_id": "e942769c-4ebc-4c5e-9845-6d586e0db1d8",
+      "claim_id": "C82",
+      "claim": "Intergenerational effects on progeny size and starvation resistance from dietary restriction last only a single generation.",
+      "claim_type": "EXPLICIT",
+      "source": "Intergenerational effects on progeny size and starvation resistance last only a single generation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is data from the cited studies.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:28:18.810589Z"
+    },
+    {
+      "id": "d3e0c4e8-abd1-4abb-a90f-aa769563ba7d",
+      "content_id": "e942769c-4ebc-4c5e-9845-6d586e0db1d8",
+      "claim_id": "C83",
+      "claim": "Dietary restriction increases oocyte provisioning of vitellogenin lipoprotein (yolk) to protect progeny from early life starvation.",
+      "claim_type": "EXPLICIT",
+      "source": "DR increases oocyte provisioning of vitellogenin lipoprotein (yolk), which we consider induction of nongenetic variation, to protect progeny from early life starvation (Jordan et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is data from the cited study.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:28:18.810589Z"
+    },
+    {
+      "id": "1b02fe2a-4fc2-4a34-bf51-1e036c089e34",
+      "content_id": "e942769c-4ebc-4c5e-9845-6d586e0db1d8",
+      "claim_id": "C84",
+      "claim": "Maternal age affects vitellogenin oocyte provisioning.",
+      "claim_type": "EXPLICIT",
+      "source": "Maternal age also affects vitellogenin oocyte provisioning providing an additional source of phenotypic variation (Perez et al., 2017), but DR increases oocyte size and provisioning independent of maternal age (Hibshman et al., 2016; Jordan et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is data from the cited study.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:28:18.810589Z"
+    },
+    {
+      "id": "365226db-0721-451d-b3f9-ca9a4ffe9227",
+      "content_id": "e942769c-4ebc-4c5e-9845-6d586e0db1d8",
+      "claim_id": "C85",
+      "claim": "Dietary restriction increases oocyte size and provisioning independent of maternal age.",
+      "claim_type": "EXPLICIT",
+      "source": "Maternal age also affects vitellogenin oocyte provisioning providing an additional source of phenotypic variation (Perez et al., 2017), but DR increases oocyte size and provisioning independent of maternal age (Hibshman et al., 2016; Jordan et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is data from the cited studies.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:28:18.810589Z"
+    },
+    {
+      "id": "84397854-196e-4101-912a-2d51405fff2a",
+      "content_id": "e942769c-4ebc-4c5e-9845-6d586e0db1d8",
+      "claim_id": "C86",
+      "claim": "Maternal insulin/IGF signaling together with other pathways mediates the intergenerational response to nutrient availability.",
+      "claim_type": "EXPLICIT",
+      "source": "Maternal insulin/IGF signaling together with other pathways mediates this intergenerational response to nutrient availability.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is data from the cited studies.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:28:18.810589Z"
+    },
+    {
+      "id": "796c4219-9959-4f25-a67a-1afe5a844b81",
+      "content_id": "e942769c-4ebc-4c5e-9845-6d586e0db1d8",
+      "claim_id": "C87",
+      "claim": "Reduction of somatic insulin/IGF signaling in the mother is sufficient to increase progeny size.",
+      "claim_type": "EXPLICIT",
+      "source": "Reduction of somatic insulin/IGF signaling in the mother is sufficient to increase progeny size (Hibshman et al., 2016), but it has been suggested that insulin/IGF signaling must be reduced in the soma and germline for maximal effect (Lind et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is data from the cited study.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:28:18.810589Z"
+    },
+    {
+      "id": "308d39d7-b7aa-4675-970e-9b0c89ba41cb",
+      "content_id": "e942769c-4ebc-4c5e-9845-6d586e0db1d8",
+      "claim_id": "C88",
+      "claim": "Increased vitellogenin provisioning causes decreased somatic insulin/IGF signaling in progeny to protect them from early life starvation.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, increased vitellogenin provisioning causes decreased somatic insulin/IGF signaling in progeny to protect them from early life starvation (Jordan et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is data from the cited study.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:28:18.810589Z"
+    },
+    {
+      "id": "2ce70f4f-ded5-4550-81f8-af09d32c64ed",
+      "content_id": "e942769c-4ebc-4c5e-9845-6d586e0db1d8",
+      "claim_id": "C89",
+      "claim": "Plasticity in the form of increased oocyte provisioning is a compelling example of a predictive adaptive multigenerational dietary restriction response in anticipation of starvation.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, plasticity in the form of increased oocyte provisioning is a compelling example of a predictive adaptive multigenerational DR response in anticipation of starvation (Jordan et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference by the authors based on evaluation of the cited study.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:28:18.810589Z"
+    },
+    {
+      "id": "fcca5dc0-bfac-405c-87cd-e5d4fea5c950",
+      "content_id": "e942769c-4ebc-4c5e-9845-6d586e0db1d8",
+      "claim_id": "C90",
+      "claim": "One week of starvation during the first larval stage (L1) increases resistance to starvation two generations later and to heat three generations later.",
+      "claim_type": "EXPLICIT",
+      "source": "One week of starvation during the first larval stage (L1) increases resistance to starvation two generations later and to heat three generations later (Jobson et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is data from the cited study.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:28:18.810589Z"
+    },
+    {
+      "id": "9538fba6-3366-48ac-8c79-98a2377dc518",
+      "content_id": "e942769c-4ebc-4c5e-9845-6d586e0db1d8",
+      "claim_id": "C91",
+      "claim": "L1 starvation was associated with approximately 20% lethality.",
+      "claim_type": "EXPLICIT",
+      "source": "However, L1 starvation was associated with approximately 20% lethality, and development was decanalized such that a minority of the population developed particularly slowly and produced relatively few progeny.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is data from the cited study.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:28:18.810589Z"
+    },
+    {
+      "id": "1994f5ee-7348-4898-99e1-74e866dce6c1",
+      "content_id": "e942769c-4ebc-4c5e-9845-6d586e0db1d8",
+      "claim_id": "C92",
+      "claim": "Experimental selection for a subpopulation was necessary to reveal transgenerational epigenetic inheritance following L1 starvation.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, experimental selection for this subpopulation was necessary to reveal transgenerational epigenetic inheritance (Jobson et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is data from the cited study.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:28:18.810589Z"
+    },
+    {
+      "id": "22dc1597-2fc8-473e-a9d8-b5e36c11e656",
+      "content_id": "e942769c-4ebc-4c5e-9845-6d586e0db1d8",
+      "claim_id": "C93",
+      "claim": "Heritable changes in small RNA expression have been reported following L1 starvation.",
+      "claim_type": "EXPLICIT",
+      "source": "Heritable changes in small RNA expression have been reported following L1 starvation (Rechavi et al., 2014; Houri-Ze'evi et al., 2019), suggesting a source of epigenetic variation affecting phenotype.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is data from the cited studies.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:28:18.810589Z"
+    },
+    {
+      "id": "0be0eb9b-8737-45f4-8754-247e053ebaa1",
+      "content_id": "e942769c-4ebc-4c5e-9845-6d586e0db1d8",
+      "claim_id": "C94",
+      "claim": "Extended starvation during dauer diapause causes transgenerational epigenetic inheritance of increased starvation resistance.",
+      "claim_type": "EXPLICIT",
+      "source": "Extended starvation during dauer diapause causes transgenerational epigenetic inheritance of increased starvation resistance (Webster et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is data from the cited study.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:28:18.810589Z"
+    },
+    {
+      "id": "2c0048b1-970e-4732-bd6d-33cb615b6a29",
+      "content_id": "e942769c-4ebc-4c5e-9845-6d586e0db1d8",
+      "claim_id": "C95",
+      "claim": "Increased starvation resistance from extended dauer arrest includes decreased mortality as well as increased developmental rate and reproductive success after feeding.",
+      "claim_type": "EXPLICIT",
+      "source": "Increased starvation resistance includes decreased mortality as well as increased developmental rate and reproductive success after feeding (Webster et al., 2018), revealing a relatively robust effect compared to other nongenetic heritable effects on starvation resistance (Hibshman et al., 2016; Jobson et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is data from the cited study.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:28:18.810589Z"
+    },
+    {
+      "id": "b4858f2a-ff79-49aa-8fc3-4624727aaa98",
+      "content_id": "e942769c-4ebc-4c5e-9845-6d586e0db1d8",
+      "claim_id": "C96",
+      "claim": "Transgenerational effects were seen with long-term but not short-term dauer arrest.",
+      "claim_type": "EXPLICIT",
+      "source": "Transgenerational effects were seen with long-term but not short-term dauer arrest, suggesting that extended starvation rather than dauer development or recovery provokes epigenetic inheritance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is data from the cited study.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:28:18.810589Z"
+    },
+    {
+      "id": "99424b1e-304a-4f0f-a9e8-7702e0cdef0c",
+      "content_id": "e942769c-4ebc-4c5e-9845-6d586e0db1d8",
+      "claim_id": "C97",
+      "claim": "Long-term dauer arrest resulted in less than 3% lethality.",
+      "claim_type": "EXPLICIT",
+      "source": "Long-term dauer arrest resulted in less than 3% lethality, and ten founder dauer larvae were used in each of several independent biological replicates with reproducible transgenerational effects, together arguing against viability or fecundity selection, though selection on gametes or mitochondria is possible.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is data from the cited study.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:28:18.810589Z"
+    },
+    {
+      "id": "e6588edd-1ef6-4c54-80bf-150dfe1236df",
+      "content_id": "e942769c-4ebc-4c5e-9845-6d586e0db1d8",
+      "claim_id": "C98",
+      "claim": "Pervasive but individually small changes in nutrient-responsive gene expression were reported in F3 larvae following extended dauer arrest.",
+      "claim_type": "EXPLICIT",
+      "source": "Pervasive but individually small changes in nutrient-responsive gene expression were reported in F3 larvae, but neither germline transmission mechanism nor an effector mechanism for increased starvation resistance were identified (Webster et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is data from the cited study.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:28:18.810589Z"
+    },
+    {
+      "id": "d42ea8f6-1e12-43a7-87f8-27bbd7472cf7",
+      "content_id": "e942769c-4ebc-4c5e-9845-6d586e0db1d8",
+      "claim_id": "C99",
+      "claim": "Culturing worms in high salt conditions (300 mM NaCl) increases progeny survival in even higher salt conditions (500 mM NaCl).",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, culturing worms in high salt conditions (300 mM NaCl) increases progeny survival in even higher salt conditions (500 mM NaCl) (Burton et al., 2017; Frazier and Roth, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is data from the cited studies.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:28:18.810589Z"
+    },
+    {
+      "id": "d81fbbf5-b12d-4bb3-8409-7081f17addbb",
+      "content_id": "e942769c-4ebc-4c5e-9845-6d586e0db1d8",
+      "claim_id": "C100",
+      "claim": "Levels of the osmolyte glycerol are increased in the mother and embryos following high salt exposure.",
+      "claim_type": "EXPLICIT",
+      "source": "There is no apparent viability selection in 300 mM NaCl, and levels of the osmolyte glycerol are increased in the mother and embryos, suggesting altered oocyte provisioning as an induced form of nongenetic variation (Frazier and Roth, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is data from the cited study.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:28:18.810589Z"
+    },
+    {
+      "id": "ebab0cfd-2f6c-4463-a627-71988e83cfaf",
+      "content_id": "e942769c-4ebc-4c5e-9845-6d586e0db1d8",
+      "claim_id": "C101",
+      "claim": "Increased glycerol levels are correlated with decreased glycogen levels.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, increased glycerol levels are correlated with decreased glycogen levels.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is data from the cited study.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:28:18.810589Z"
+    },
+    {
+      "id": "55e9f5b4-86f9-411a-a198-62b0d2f967f2",
+      "content_id": "e942769c-4ebc-4c5e-9845-6d586e0db1d8",
+      "claim_id": "C102",
+      "claim": "Glycogen supports metabolism during anoxia.",
+      "claim_type": "EXPLICIT",
+      "source": "Glycogen supports metabolism during anoxia, and adaptation to high salt compromises progeny survival in anoxia, suggesting a trade-off (Frazier and Roth, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is presented as established biological knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:28:18.810589Z"
+    },
+    {
+      "id": "d5470ba4-aa51-437a-ac83-1d1eb064fbb9",
+      "content_id": "e942769c-4ebc-4c5e-9845-6d586e0db1d8",
+      "claim_id": "C103",
+      "claim": "Adaptation to high salt compromises progeny survival in anoxia, suggesting a trade-off.",
+      "claim_type": "EXPLICIT",
+      "source": "Glycogen supports metabolism during anoxia, and adaptation to high salt compromises progeny survival in anoxia, suggesting a trade-off (Frazier and Roth, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is data from the cited study.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:28:18.810589Z"
+    },
+    {
+      "id": "4c9c2c8d-19da-4601-9e31-67e1ca49c94b",
+      "content_id": "e942769c-4ebc-4c5e-9845-6d586e0db1d8",
+      "claim_id": "C104",
+      "claim": "Maternal high salt affects gene expression and metabolism in embryos, suggesting epigenetic regulation of glycerol synthesis in progeny.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to altered oocyte provisioning, maternal high salt also affects gene expression and metabolism in embryos, suggesting epigenetic regulation of glycerol synthesis in progeny (Burton et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is data from the cited study.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:28:18.810589Z"
+    },
+    {
+      "id": "52ef0730-131e-4644-9f6e-7a26b9db0f47",
+      "content_id": "e942769c-4ebc-4c5e-9845-6d586e0db1d8",
+      "claim_id": "C105",
+      "claim": "Epigenetic regulation of osmotic stress response occurs downstream of soma-to-germline insulin/IGF signaling in the mother.",
+      "claim_type": "EXPLICIT",
+      "source": "This epigenetic regulation occurs downstream of soma-to-germline insulin/IGF signaling in the mother, while altered insulin/IGF signaling also mediates developmental arrest in response to high salt in progeny (Burton et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is data from the cited study.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:28:18.810589Z"
+    },
+    {
+      "id": "a5e9c2a9-bce7-448b-9a49-8f44630e208c",
+      "content_id": "e942769c-4ebc-4c5e-9845-6d586e0db1d8",
+      "claim_id": "C106",
+      "claim": "Inter-individual phenotypic variation is surprisingly common among isogenic C. elegans populations.",
+      "claim_type": "EXPLICIT",
+      "source": "Inter-individual phenotypic variation is surprisingly common among isogenic C. elegans populations, affecting development, behavior, stress resistance, and RNAi responses (Alcazar et al., 2008; Burga et al., 2011; Jobson et al., 2015; Kimble and Hirsh, 1979; Perez et al., 2017; Rea et al., 2005; Stern et al., 2017; Sulston and Horvitz, 1977).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to multiple studies.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:28:18.810589Z"
+    },
+    {
+      "id": "c913f673-e94c-4d62-86ea-902fb0f35275",
+      "content_id": "e942769c-4ebc-4c5e-9845-6d586e0db1d8",
+      "claim_id": "C107",
+      "claim": "The sources of nongenetic variation in C. elegans are not well understood.",
+      "claim_type": "EXPLICIT",
+      "source": "The sources of this nongenetic variation are not well understood, but selection may nevertheless act on it.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is presented as a limitation in current knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:28:18.810589Z"
+    },
+    {
+      "id": "4662107f-d15a-4ee4-b29b-874e41d2a8b3",
+      "content_id": "e942769c-4ebc-4c5e-9845-6d586e0db1d8",
+      "claim_id": "C108",
+      "claim": "Rates of change in expression of small regulatory RNAs ('epimutation' rates) has recently been characterized in mutation accumulation lines.",
+      "claim_type": "EXPLICIT",
+      "source": "Rates of change in expression of small regulatory RNAs ('epimutation' rates) has recently been characterized in mutation accumulation lines (experimental strains propagated over many generations with an effective population size of one to minimize effects of selection), revealing that changes arise frequently but typically last only a few generations (Beltran et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is data from the cited study.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:28:18.810589Z"
+    },
+    {
+      "id": "a09eef72-bab7-46e7-9942-88e0ad376a5e",
+      "content_id": "e942769c-4ebc-4c5e-9845-6d586e0db1d8",
+      "claim_id": "C109",
+      "claim": "Changes in small regulatory RNA expression arise frequently but typically last only a few generations.",
+      "claim_type": "EXPLICIT",
+      "source": "Rates of change in expression of small regulatory RNAs ('epimutation' rates) has recently been characterized in mutation accumulation lines (experimental strains propagated over many generations with an effective population size of one to minimize effects of selection), revealing that changes arise frequently but typically last only a few generations (Beltran et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is data from the cited study.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:28:18.810589Z"
+    },
+    {
+      "id": "13acdf74-785e-474c-bc48-7d3508bbc708",
+      "content_id": "e942769c-4ebc-4c5e-9845-6d586e0db1d8",
+      "claim_id": "C110",
+      "claim": "Many molecular phenomena may be nonadaptive or neutral with respect to organismal phenotype.",
+      "claim_type": "EXPLICIT",
+      "source": "It should be recognized that many molecular phenomena may be nonadaptive or neutral with respect to organismal phenotype (Lynch, 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to scientific literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:28:18.810589Z"
+    },
+    {
+      "id": "4c666790-568d-477d-b56e-364cac0837a8",
+      "content_id": "e942769c-4ebc-4c5e-9845-6d586e0db1d8",
+      "claim_id": "C111",
+      "claim": "RNAi illustrated that gene silencing information can move from somatic tissues to the germline to influence progeny phenotype.",
+      "claim_type": "EXPLICIT",
+      "source": "The discovery of RNAi illustrated that gene silencing information, either double-stranded RNA or something derived from it, can move from somatic tissues to the germline to influence progeny phenotype (Fire et al., 1998).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to scientific literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:28:18.810589Z"
+    },
+    {
+      "id": "80b0e676-452a-4db0-b674-bbddc58eb8e8",
+      "content_id": "e942769c-4ebc-4c5e-9845-6d586e0db1d8",
+      "claim_id": "C112",
+      "claim": "Genes required for systemic RNAi (spreading of silencing) have been identified.",
+      "claim_type": "EXPLICIT",
+      "source": "Genes required for systemic RNAi (spreading of silencing) have been identified (Jose and Hunter, 2007; Winston et al., 2002; Winston et al., 2007), genes required for germline inheritance of RNAi have been identified (Buckley et al., 2012; Spracklin et al., 2017), neuronally-derived small RNAs can influence progeny gene expression (Devanapally et al., 2015), and it has been suggested that such soma-to-germline communication mediates adaptive transgenerational responses (Posner et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to scientific literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:28:18.810589Z"
+    },
+    {
+      "id": "9c968d9e-8be4-4b44-9ac1-25c7f2155a77",
+      "content_id": "e942769c-4ebc-4c5e-9845-6d586e0db1d8",
+      "claim_id": "C113",
+      "claim": "Genes required for germline inheritance of RNAi have been identified.",
+      "claim_type": "EXPLICIT",
+      "source": "Genes required for systemic RNAi (spreading of silencing) have been identified (Jose and Hunter, 2007; Winston et al., 2002; Winston et al., 2007), genes required for germline inheritance of RNAi have been identified (Buckley et al., 2012; Spracklin et al., 2017), neuronally-derived small RNAs can influence progeny gene expression (Devanapally et al., 2015), and it has been suggested that such soma-to-germline communication mediates adaptive transgenerational responses (Posner et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to scientific literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:28:18.810589Z"
+    },
+    {
+      "id": "8634f2d9-34dd-4a6c-ab7e-d148f3bce6c6",
+      "content_id": "e942769c-4ebc-4c5e-9845-6d586e0db1d8",
+      "claim_id": "C114",
+      "claim": "Neuronally-derived small RNAs can influence progeny gene expression.",
+      "claim_type": "EXPLICIT",
+      "source": "Genes required for systemic RNAi (spreading of silencing) have been identified (Jose and Hunter, 2007; Winston et al., 2002; Winston et al., 2007), genes required for germline inheritance of RNAi have been identified (Buckley et al., 2012; Spracklin et al., 2017), neuronally-derived small RNAs can influence progeny gene expression (Devanapally et al., 2015), and it has been suggested that such soma-to-germline communication mediates adaptive transgenerational responses (Posner et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to scientific literature.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:28:18.810589Z"
+    },
+    {
+      "id": "699e7172-616d-4fa0-95b9-169d480946dc",
+      "content_id": "e942769c-4ebc-4c5e-9845-6d586e0db1d8",
+      "claim_id": "C115",
+      "claim": "There is a trade-off between intergenerational adaptation to osmotic stress and anoxia resistance.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, there is a trade-off between intergenerational adaptation to osmotic stress and anoxia resistance (Frazier and Roth, 2009), and early life starvation increases resistance to both starvation and heat in progeny (Jobson et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is data from the cited study.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:28:18.810589Z"
+    },
+    {
+      "id": "dc02515c-d350-4cef-8db0-9da150e9da3e",
+      "content_id": "e942769c-4ebc-4c5e-9845-6d586e0db1d8",
+      "claim_id": "C116",
+      "claim": "Early life starvation increases resistance to both starvation and heat in progeny.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, there is a trade-off between intergenerational adaptation to osmotic stress and anoxia resistance (Frazier and Roth, 2009), and early life starvation increases resistance to both starvation and heat in progeny (Jobson et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is data from the cited study.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:28:18.810589Z"
+    },
+    {
+      "id": "e46d829b-74aa-4d4d-b991-0024a5cfd97b",
+      "content_id": "e942769c-4ebc-4c5e-9845-6d586e0db1d8",
+      "claim_id": "C117",
+      "claim": "Two days of starvation at the onset of reproduction in C. remanei appears to increase fitness in the exposed generation but decrease fitness in the next generation.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, two days of starvation at the onset of reproduction in C. remanei appears to increase fitness in the exposed generation but decrease fitness in the next generation, suggesting costs paid for in progeny quality (Mautz et al., 2020), again complicating experimental interpretations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is data from the cited study.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:28:18.810589Z"
+    },
+    {
+      "id": "51f42557-634d-44a9-9faf-142823abe9c5",
+      "content_id": "e942769c-4ebc-4c5e-9845-6d586e0db1d8",
+      "claim_id": "C118",
+      "claim": "Experimental evolution in C. elegans and C. remanei suggests that anticipatory maternal effects can evolve in scenarios where environmental conditions in one generation reliably predict conditions in the next generation.",
+      "claim_type": "EXPLICIT",
+      "source": "Experimental evolution in C. elegans and C. remanei suggests that anticipatory maternal effects, which fall under the umbrella of adaptive multigenerational plasticity, can evolve in scenarios where environmental conditions in one generation reliably predict conditions in the next generation (Dey et al., 2016; Lind et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is data from the cited studies.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:28:18.810589Z"
+    },
+    {
+      "id": "b47343cc-a29e-45d7-b032-b993710cb5ce",
+      "content_id": "e942769c-4ebc-4c5e-9845-6d586e0db1d8",
+      "claim_id": "C119",
+      "claim": "Experimental evolution and modeling of more complex scenarios suggests that anticipatory responses acting over two generations can evolve.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, experimental evolution and modeling of more complex scenarios suggests that anticipatory responses acting over two generations can also evolve (Proulx et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is data from the cited study.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:28:18.810589Z"
+    },
+    {
+      "id": "00050e89-1abc-4cbe-b1da-eb15b32ffa10",
+      "content_id": "e942769c-4ebc-4c5e-9845-6d586e0db1d8",
+      "claim_id": "C120",
+      "claim": "Identification of 'switch' genes governing within-generation plasticity in nematodes has been important to show that plasticity is consistent with the Modern Synthesis.",
+      "claim_type": "EXPLICIT",
+      "source": "Identification of 'switch' genes governing within-generation plasticity in nematodes has been important to show that plasticity is consistent with the Modern Synthesis (Sommer, 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to scientific literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:28:18.810589Z"
+    },
+    {
+      "id": "9399e96f-9aaa-4f48-b746-665dbe7bd4a2",
+      "content_id": "e942769c-4ebc-4c5e-9845-6d586e0db1d8",
+      "claim_id": "C121",
+      "claim": "Penetrance of a temperature-dependent mortal germline phenotype varies among wild C. elegans strains.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, penetrance of a temperature-dependent mortal germline phenotype varies among wild strains. This is presumably a non-adaptive trait, but it is an example of transgenerational plasticity, and a natural genetic variant affecting it has been identified (Fr\u00e9zal et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is data from the cited study.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:28:18.810589Z"
+    },
+    {
+      "id": "f520f147-4c2e-4fa9-ab33-cbb3903fdc1a",
+      "content_id": "e942769c-4ebc-4c5e-9845-6d586e0db1d8",
+      "claim_id": "C122",
+      "claim": "A natural genetic variant affecting the temperature-dependent mortal germline phenotype has been identified.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, penetrance of a temperature-dependent mortal germline phenotype varies among wild strains. This is presumably a non-adaptive trait, but it is an example of transgenerational plasticity, and a natural genetic variant affecting it has been identified (Fr\u00e9zal et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is data from the cited study.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:28:18.810589Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "94c83c39-d507-438b-9b07-0baff05c82eb",
+      "content_id": "e942769c-4ebc-4c5e-9845-6d586e0db1d8",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Environmentally-induced adaptive changes in phenotype can be transmitted across multiple generations through nongenetic mechanisms. This transgenerational plasticity suggests that information beyond genetic material is faithfully transmitted, with molecular mechanisms involving DNA methylation, histone modifications, and small non-coding RNAs having been elucidated in detail.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1 and C27 establish the phenomenon based on a growing body of literature. C30 provides the theoretical inference that nongenetic information must be transmitted, and C31 provides mechanistic support through documented molecular mechanisms. Together, these claims provide strong converging evidence for the existence of transgenerational plasticity.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:28:18.810589Z"
+    },
+    {
+      "id": "55fdc4a0-f734-4618-a0db-863197fa2e16",
+      "content_id": "e942769c-4ebc-4c5e-9845-6d586e0db1d8",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The authors propose three criteria for demonstrating adaptive multigenerational plasticity: (1) environmental response transmission across generations, (2) fitness improvement in descendants, and (3) mechanistic explanation of the phenomenon.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These claims (C34-C36) represent methodological criteria proposed by the authors based on theoretical reasoning and scientific methodology. The criteria are logically sound and appropriate for distinguishing adaptive multigenerational plasticity from alternative explanations like selection on pre-existing variation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:28:18.810589Z"
+    },
+    {
+      "id": "bf459467-9d60-4414-8bb2-9cc9b91100d4",
+      "content_id": "e942769c-4ebc-4c5e-9845-6d586e0db1d8",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "C. elegans is established as a uniquely powerful model system for studying adaptive multigenerational plasticity due to its extensive phenotypic plasticity, isogenic nature, rapid lifecycle (3 days), well-documented nongenetic inheritance mechanisms, and exposure to diverse environmental stressors.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4-C6 and C37-C43 collectively establish C. elegans as an ideal model system. These claims are supported by established knowledge and citations to scientific literature. The inference in C43 that these properties make C. elegans uniquely powerful is well-justified by the preceding claims.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:28:18.810589Z"
+    },
+    {
+      "id": "df6e1341-2aa2-4041-a0b8-2346c9bbc5a8",
+      "content_id": "e942769c-4ebc-4c5e-9845-6d586e0db1d8",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Non-lethal exposure to P. aeruginosa induces transgenerational avoidance behavior in C. elegans that increases descendant survival. This response requires prg-1/Piwi and piRNA-mediated regulation, involves altered piRNA expression, and requires increased daf-7 expression in chemosensory neurons.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C50-C58 describe the Moore et al. 2019 study, which the authors evaluate as providing a compelling case for adaptive multigenerational plasticity (C58). The study demonstrates transmission (C50), fitness benefit (C54), and mechanistic basis (C52, C55-C57). Low lethality (C51) argues against selection, though fecundity selection was not ruled out.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:28:18.810589Z"
+    },
+    {
+      "id": "3bafbfa3-83ad-429c-a292-c5fabd1ecaa1",
+      "content_id": "e942769c-4ebc-4c5e-9845-6d586e0db1d8",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Two consecutive generations of pathogen exposure to P. aeruginosa or S. enterica induces dauer formation in C. elegans that persists for up to five generations. This response requires genes involved in RNA interference and prevents pathogen colonization of dauer larvae.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C64-C67 describe transgenerational dauer formation with mechanistic involvement of RNAi genes (C67). However, survival assays were not performed, and the authors note there is a clear cost to dauer formation (postponed reproduction). Changes in mRNA or small RNA expression were not demonstrated, and effector genes were not identified, limiting mechanistic understanding.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:28:18.810589Z"
+    },
+    {
+      "id": "0c2eecbd-37c9-4bfc-95e8-cae809ebd77b",
+      "content_id": "e942769c-4ebc-4c5e-9845-6d586e0db1d8",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Non-lethal exposure to P. vranovensis induces pathogen resistance in first-generation progeny, with three consecutive generations of exposure triggering resistance for two subsequent generations. The pathogen strains were isolated from natural C. elegans environments.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C69-C71 describe heritable pathogen resistance with ecological relevance (C71). However, the response falls one generation short of the three-generation standard for transgenerational inheritance (C70). Fecundity selection was not ruled out, and induction of heritable nongenetic variation and transmission mechanisms were not demonstrated, limiting confidence in adaptive multigenerational plasticity.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:28:18.810589Z"
+    },
+    {
+      "id": "6f4a9ea0-cac7-43e3-b8dd-ec4941cbfa20",
+      "content_id": "e942769c-4ebc-4c5e-9845-6d586e0db1d8",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Antimycin exposure increases antimycin resistance transgenerationally, with similar effects from natural Pseudomonas strains. The mechanism was proposed to involve N6-methyldeoxyadenine (6mA) DNA methylation and the COMPASS complex.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNSUPPORTED",
+      "evaluation": "Claims C72-C74 describe transgenerational antimycin resistance, but C75 indicates profound impacts on growth and reproduction, suggesting potential selection. Critically, C76 notes that the reliability of 6mA measurement methods has been questioned, with its existence in C. elegans potentially being an artifact. The mechanistic basis is therefore uncertain, and selection cannot be ruled out.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:28:18.810589Z"
+    },
+    {
+      "id": "2d553b95-245f-4268-bcf9-3488123ab7f9",
+      "content_id": "e942769c-4ebc-4c5e-9845-6d586e0db1d8",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Dietary restriction in C. elegans produces larger progeny with increased starvation resistance through increased oocyte provisioning of vitellogenin. This intergenerational response is mediated by maternal insulin/IGF signaling and represents predictive adaptive plasticity in anticipation of starvation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C81-C89 describe a well-characterized intergenerational response to dietary restriction. The mechanism involves altered oocyte provisioning (C83, C85) mediated by insulin/IGF signaling (C86-C88). The response lasts only one generation (C82), making it intergenerational rather than transgenerational. The authors' evaluation (C89) that this represents compelling adaptive plasticity is well-supported by the mechanistic and fitness data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:28:18.810589Z"
+    },
+    {
+      "id": "5665defc-4ab9-46bc-85fa-87cbd266fb10",
+      "content_id": "e942769c-4ebc-4c5e-9845-6d586e0db1d8",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "One week of L1 starvation increases starvation and heat resistance two to three generations later. However, this response was associated with 20% lethality and required experimental selection of a subpopulation to reveal transgenerational effects.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNSUPPORTED",
+      "evaluation": "Claims C90-C93 describe transgenerational stress resistance following L1 starvation. However, C91 indicates substantial lethality (~20%), and C92 shows that experimental selection was necessary to reveal the effect. This strongly suggests selection on pre-existing variation rather than induced plasticity. While C93 reports heritable small RNA changes, the extent of selection is unclear, making it impossible to distinguish adaptive multigenerational plasticity from epigenetic adaptation through selection.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:28:18.810589Z"
+    },
+    {
+      "id": "eb6a1313-bb00-4dfc-b398-b4632fe89b0d",
+      "content_id": "e942769c-4ebc-4c5e-9845-6d586e0db1d8",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Extended starvation during dauer diapause causes transgenerational inheritance of increased starvation resistance, including decreased mortality and increased developmental rate and reproductive success. Long-term but not short-term dauer arrest produces this effect, with minimal lethality (<3%).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C94-C97 describe robust transgenerational starvation resistance with minimal lethality (C97), arguing against viability selection. The specificity to long-term arrest (C96) supports environmental induction. However, C98 indicates that neither germline transmission mechanism nor effector mechanism were identified. Additionally, worms were grown for two complete generations with ample food after starvation, and the fitness consequences in natural fluctuating environments remain unclear.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:28:18.810589Z"
+    },
+    {
+      "id": "45b5182d-78d7-40f1-86c0-5dba67eb51d0",
+      "content_id": "e942769c-4ebc-4c5e-9845-6d586e0db1d8",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "High salt exposure (300 mM NaCl) increases progeny survival in higher salt conditions (500 mM NaCl) through increased glycerol provisioning and epigenetic regulation of glycerol synthesis. This response is mediated by insulin/IGF signaling and involves a trade-off with anoxia resistance.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C99-C105 describe intergenerational osmotic stress adaptation with both altered oocyte provisioning (C100) and epigenetic regulation (C104). The mechanism involves insulin/IGF signaling (C105). No viability selection was apparent. The trade-off with anoxia resistance (C103) adds complexity but supports the adaptive nature of the response. The mechanistic detail and lack of selection provide strong support.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:28:18.810589Z"
+    },
+    {
+      "id": "92bd6490-5a1b-4dae-92ba-3793c8f651b3",
+      "content_id": "e942769c-4ebc-4c5e-9845-6d586e0db1d8",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Inter-individual phenotypic variation is common among isogenic C. elegans populations, but the sources are not well understood. Epimutation rates for small regulatory RNAs have been characterized, showing that changes arise frequently but typically last only a few generations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C106-C109 describe nongenetic variation in C. elegans populations. C106 establishes the phenomenon through multiple citations. C107 acknowledges the knowledge gap. C108-C109 provide recent data on epimutation rates from mutation accumulation lines, showing transient changes. These claims are well-supported but highlight a significant limitation in understanding the sources and dynamics of nongenetic variation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:28:18.810589Z"
+    },
+    {
+      "id": "c137c8ec-97f6-4eaf-8856-1ea5eae5c205",
+      "content_id": "e942769c-4ebc-4c5e-9845-6d586e0db1d8",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "RNAi demonstrates that gene silencing information can move from somatic tissues to the germline to influence progeny phenotype. Genes required for systemic RNAi, germline inheritance of RNAi, and neuronal influence on progeny gene expression have been identified.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C111-C114 describe established mechanisms of soma-to-germline communication through RNAi. These claims are supported by multiple citations to scientific literature and represent well-documented molecular mechanisms. However, the authors note that an explicit role in adaptive multigenerational plasticity has not been demonstrated.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:28:18.810589Z"
+    },
+    {
+      "id": "16765583-9b0e-4cdd-bddf-44a150caef43",
+      "content_id": "e942769c-4ebc-4c5e-9845-6d586e0db1d8",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Experimental evolution in C. elegans and C. remanei demonstrates that anticipatory maternal effects can evolve when environmental conditions in one generation reliably predict conditions in the next generation, including responses acting over two generations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C118-C119 describe experimental evolution studies showing that adaptive multigenerational plasticity can evolve under appropriate environmental conditions. These claims are supported by citations to data and modeling studies. This provides important evidence that such plasticity is evolutionarily plausible and can arise through natural selection on genetic variation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:28:18.810589Z"
+    },
+    {
+      "id": "a2a6ef70-be6a-42ea-ac82-1d09c0cff823",
+      "content_id": "e942769c-4ebc-4c5e-9845-6d586e0db1d8",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The ecological and evolutionary significance of nongenetic inheritance depends on its adaptive value, but the physiological significance beyond genome surveillance remains obscure. Understanding of natural environmental dynamics is poor, limiting inference about fitness effects in the wild.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C44-C48 identify critical knowledge gaps in the field. C44 makes the logical inference that adaptive value is key to significance. C45 notes the obscurity of physiological significance beyond genome surveillance. C46-C47 acknowledge poor understanding of natural environmental dynamics. C48 provides theoretical context for when nongenetic predictive responses should evolve. These claims accurately identify limitations in current knowledge.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:28:18.810589Z"
+    },
+    {
+      "id": "0074fb11-5282-4e0b-96b0-26dbfd44b99d",
+      "content_id": "e942769c-4ebc-4c5e-9845-6d586e0db1d8",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "The historical dichotomy between Lamarckism and Darwinism is not mutually exclusive, though Lamarckism was largely rejected during the Modern Synthesis. Within-generation plasticity is well-documented and does not challenge Darwinism since environmentally-induced phenotypes are not transmitted to offspring, maintaining a clear separation between acclimation and evolutionary adaptation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7-C16 provide historical and theoretical context. C7-C10 accurately describe the historical theories and their treatment during the Modern Synthesis, supported by citations. C11-C16 explain why within-generation plasticity is compatible with the Modern Synthesis. These claims are well-supported by established knowledge and provide essential background for understanding the significance of multigenerational plasticity.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:28:18.810589Z"
+    },
+    {
+      "id": "285bb191-c68a-44df-92ce-665a7cd2f80f",
+      "content_id": "e942769c-4ebc-4c5e-9845-6d586e0db1d8",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "As generations separating ancestors and descendants increase, direct environmental exposure becomes less plausible, leading to the distinction between intergenerational and transgenerational plasticity. If nongenetic information is faithfully transmitted across generations, it can act as a substrate for natural selection, blurring the line between Lamarckism and Darwinism.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C28-C33 develop the theoretical argument for why transgenerational plasticity challenges conventional evolutionary thought. C28-C29 establish the conceptual distinction between inter- and transgenerational effects. C30 infers nongenetic information transmission. C32-C33 reason that this information could be subject to selection, creating three possible mechanisms for adaptive change. The logical progression is sound and well-supported by inference.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:28:18.810589Z"
+    },
+    {
+      "id": "66079341-5469-4024-a248-395b6c0597be",
+      "content_id": "e942769c-4ebc-4c5e-9845-6d586e0db1d8",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "Trade-offs complicate interpretation of multigenerational plasticity, including between osmotic stress adaptation and anoxia resistance, cross-stress effects of starvation on heat resistance, and fitness costs across generations in C. remanei.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C115-C117 describe trade-offs and complications in interpreting fitness effects of multigenerational plasticity. These are supported by citations to data. The authors correctly note that such trade-offs complicate experimental interpretations and highlight the need for more comprehensive fitness assessments in ecologically relevant contexts.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:28:18.810589Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "54693750-a1f7-4589-9d36-266524df8203",
+      "result_id": "94c83c39-d507-438b-9b07-0baff05c82eb"
+    },
+    {
+      "claim_id": "b8fe6ef4-b186-436d-946e-6573c115a357",
+      "result_id": "94c83c39-d507-438b-9b07-0baff05c82eb"
+    },
+    {
+      "claim_id": "8515d9ac-4e79-4cb1-b203-71e5ff8ba8b7",
+      "result_id": "94c83c39-d507-438b-9b07-0baff05c82eb"
+    },
+    {
+      "claim_id": "8f50ed58-bf6f-466a-9bb3-aa8253b3023e",
+      "result_id": "94c83c39-d507-438b-9b07-0baff05c82eb"
+    },
+    {
+      "claim_id": "3f87afcb-ddb0-4404-87c8-c80534e1e759",
+      "result_id": "55fdc4a0-f734-4618-a0db-863197fa2e16"
+    },
+    {
+      "claim_id": "3403f232-4725-415c-9d02-2593621572fe",
+      "result_id": "55fdc4a0-f734-4618-a0db-863197fa2e16"
+    },
+    {
+      "claim_id": "68a6fda6-5fa3-48bd-879a-32efd09c63df",
+      "result_id": "55fdc4a0-f734-4618-a0db-863197fa2e16"
+    },
+    {
+      "claim_id": "25cb20e0-6eb1-42e4-be91-727434dd808b",
+      "result_id": "bf459467-9d60-4414-8bb2-9cc9b91100d4"
+    },
+    {
+      "claim_id": "ec39e5ce-ead4-43fa-a2a4-9c5141eca709",
+      "result_id": "bf459467-9d60-4414-8bb2-9cc9b91100d4"
+    },
+    {
+      "claim_id": "eccd7406-f8d4-4ee7-9bfd-58607f21cbbf",
+      "result_id": "bf459467-9d60-4414-8bb2-9cc9b91100d4"
+    },
+    {
+      "claim_id": "4f71d2c8-3d78-4162-9204-acd49e16eb3e",
+      "result_id": "bf459467-9d60-4414-8bb2-9cc9b91100d4"
+    },
+    {
+      "claim_id": "2c34ad27-d191-4d75-af22-776a9f845268",
+      "result_id": "bf459467-9d60-4414-8bb2-9cc9b91100d4"
+    },
+    {
+      "claim_id": "57066f9a-82b9-4bdc-a44f-f53a1f697ac3",
+      "result_id": "bf459467-9d60-4414-8bb2-9cc9b91100d4"
+    },
+    {
+      "claim_id": "09b46197-5e01-4155-a28a-2038900ab94f",
+      "result_id": "bf459467-9d60-4414-8bb2-9cc9b91100d4"
+    },
+    {
+      "claim_id": "927e2b4b-1d0f-48e7-9721-de1d05e97d25",
+      "result_id": "bf459467-9d60-4414-8bb2-9cc9b91100d4"
+    },
+    {
+      "claim_id": "77202c7d-3924-4e50-83eb-62ba5658816e",
+      "result_id": "bf459467-9d60-4414-8bb2-9cc9b91100d4"
+    },
+    {
+      "claim_id": "8e6c4d8d-c0bb-480f-92c9-116b6a4a02bb",
+      "result_id": "bf459467-9d60-4414-8bb2-9cc9b91100d4"
+    },
+    {
+      "claim_id": "9246a78e-7fee-4d3a-ba84-d535d403b9d6",
+      "result_id": "df6e1341-2aa2-4041-a0b8-2346c9bbc5a8"
+    },
+    {
+      "claim_id": "121ece1f-36c2-4643-a630-bd464a61295a",
+      "result_id": "df6e1341-2aa2-4041-a0b8-2346c9bbc5a8"
+    },
+    {
+      "claim_id": "4b8c8a9b-0921-4508-b46a-1a6ecfe8d461",
+      "result_id": "df6e1341-2aa2-4041-a0b8-2346c9bbc5a8"
+    },
+    {
+      "claim_id": "344513b9-eecf-4b4b-bd77-6d42c7217178",
+      "result_id": "df6e1341-2aa2-4041-a0b8-2346c9bbc5a8"
+    },
+    {
+      "claim_id": "6cce1621-4b47-4cfd-b3c1-5b7d41f0dfe1",
+      "result_id": "df6e1341-2aa2-4041-a0b8-2346c9bbc5a8"
+    },
+    {
+      "claim_id": "85113ff5-0adb-4149-8f61-14fef23bbd86",
+      "result_id": "df6e1341-2aa2-4041-a0b8-2346c9bbc5a8"
+    },
+    {
+      "claim_id": "21882855-7b87-45b8-b9be-e88db538f2fb",
+      "result_id": "df6e1341-2aa2-4041-a0b8-2346c9bbc5a8"
+    },
+    {
+      "claim_id": "f0c34b77-25e8-4080-82c2-072213977ddc",
+      "result_id": "df6e1341-2aa2-4041-a0b8-2346c9bbc5a8"
+    },
+    {
+      "claim_id": "d1a45b1b-d360-4337-b583-80cde8e1e032",
+      "result_id": "df6e1341-2aa2-4041-a0b8-2346c9bbc5a8"
+    },
+    {
+      "claim_id": "11342150-8320-41c9-832f-df003e6245da",
+      "result_id": "3bafbfa3-83ad-429c-a292-c5fabd1ecaa1"
+    },
+    {
+      "claim_id": "2bde7a38-e4b6-4b3e-9eee-bc5c641696ad",
+      "result_id": "3bafbfa3-83ad-429c-a292-c5fabd1ecaa1"
+    },
+    {
+      "claim_id": "0818116d-0b8d-4eda-a35f-4f508fab7793",
+      "result_id": "3bafbfa3-83ad-429c-a292-c5fabd1ecaa1"
+    },
+    {
+      "claim_id": "0cf216ae-9588-41bb-83ae-198e1a87400a",
+      "result_id": "3bafbfa3-83ad-429c-a292-c5fabd1ecaa1"
+    },
+    {
+      "claim_id": "f97b1e3d-547b-428b-9ce0-80591e936838",
+      "result_id": "3bafbfa3-83ad-429c-a292-c5fabd1ecaa1"
+    },
+    {
+      "claim_id": "ab7b3534-484d-4739-9e87-a6f90226e1cc",
+      "result_id": "0c2eecbd-37c9-4bfc-95e8-cae809ebd77b"
+    },
+    {
+      "claim_id": "744253cd-dcea-418c-ad97-e4eda5622a8a",
+      "result_id": "0c2eecbd-37c9-4bfc-95e8-cae809ebd77b"
+    },
+    {
+      "claim_id": "7836bd74-e92e-4cc4-beb5-bf71a8406be2",
+      "result_id": "0c2eecbd-37c9-4bfc-95e8-cae809ebd77b"
+    },
+    {
+      "claim_id": "d28511fb-4c71-48c7-a623-c4f227170ff8",
+      "result_id": "6f4a9ea0-cac7-43e3-b8dd-ec4941cbfa20"
+    },
+    {
+      "claim_id": "6e7b61be-f620-47e6-9e41-1744dd3a3dc9",
+      "result_id": "6f4a9ea0-cac7-43e3-b8dd-ec4941cbfa20"
+    },
+    {
+      "claim_id": "fedc3d6a-2616-4c04-a7d2-751ccf23afbd",
+      "result_id": "6f4a9ea0-cac7-43e3-b8dd-ec4941cbfa20"
+    },
+    {
+      "claim_id": "ceca7d55-f226-466b-b25d-1080041e4914",
+      "result_id": "6f4a9ea0-cac7-43e3-b8dd-ec4941cbfa20"
+    },
+    {
+      "claim_id": "0550abb3-4c86-4284-9ef6-82bb44533b16",
+      "result_id": "6f4a9ea0-cac7-43e3-b8dd-ec4941cbfa20"
+    },
+    {
+      "claim_id": "8023f521-13a8-4b6b-97c4-b15360c8a27f",
+      "result_id": "2d553b95-245f-4268-bcf9-3488123ab7f9"
+    },
+    {
+      "claim_id": "1d9b9068-480e-455a-aad7-c11d55fc754f",
+      "result_id": "2d553b95-245f-4268-bcf9-3488123ab7f9"
+    },
+    {
+      "claim_id": "d3e0c4e8-abd1-4abb-a90f-aa769563ba7d",
+      "result_id": "2d553b95-245f-4268-bcf9-3488123ab7f9"
+    },
+    {
+      "claim_id": "1b02fe2a-4fc2-4a34-bf51-1e036c089e34",
+      "result_id": "2d553b95-245f-4268-bcf9-3488123ab7f9"
+    },
+    {
+      "claim_id": "365226db-0721-451d-b3f9-ca9a4ffe9227",
+      "result_id": "2d553b95-245f-4268-bcf9-3488123ab7f9"
+    },
+    {
+      "claim_id": "84397854-196e-4101-912a-2d51405fff2a",
+      "result_id": "2d553b95-245f-4268-bcf9-3488123ab7f9"
+    },
+    {
+      "claim_id": "796c4219-9959-4f25-a67a-1afe5a844b81",
+      "result_id": "2d553b95-245f-4268-bcf9-3488123ab7f9"
+    },
+    {
+      "claim_id": "308d39d7-b7aa-4675-970e-9b0c89ba41cb",
+      "result_id": "2d553b95-245f-4268-bcf9-3488123ab7f9"
+    },
+    {
+      "claim_id": "2ce70f4f-ded5-4550-81f8-af09d32c64ed",
+      "result_id": "2d553b95-245f-4268-bcf9-3488123ab7f9"
+    },
+    {
+      "claim_id": "fcca5dc0-bfac-405c-87cd-e5d4fea5c950",
+      "result_id": "5665defc-4ab9-46bc-85fa-87cbd266fb10"
+    },
+    {
+      "claim_id": "9538fba6-3366-48ac-8c79-98a2377dc518",
+      "result_id": "5665defc-4ab9-46bc-85fa-87cbd266fb10"
+    },
+    {
+      "claim_id": "1994f5ee-7348-4898-99e1-74e866dce6c1",
+      "result_id": "5665defc-4ab9-46bc-85fa-87cbd266fb10"
+    },
+    {
+      "claim_id": "22dc1597-2fc8-473e-a9d8-b5e36c11e656",
+      "result_id": "5665defc-4ab9-46bc-85fa-87cbd266fb10"
+    },
+    {
+      "claim_id": "0be0eb9b-8737-45f4-8754-247e053ebaa1",
+      "result_id": "eb6a1313-bb00-4dfc-b398-b4632fe89b0d"
+    },
+    {
+      "claim_id": "2c0048b1-970e-4732-bd6d-33cb615b6a29",
+      "result_id": "eb6a1313-bb00-4dfc-b398-b4632fe89b0d"
+    },
+    {
+      "claim_id": "b4858f2a-ff79-49aa-8fc3-4624727aaa98",
+      "result_id": "eb6a1313-bb00-4dfc-b398-b4632fe89b0d"
+    },
+    {
+      "claim_id": "99424b1e-304a-4f0f-a9e8-7702e0cdef0c",
+      "result_id": "eb6a1313-bb00-4dfc-b398-b4632fe89b0d"
+    },
+    {
+      "claim_id": "e6588edd-1ef6-4c54-80bf-150dfe1236df",
+      "result_id": "eb6a1313-bb00-4dfc-b398-b4632fe89b0d"
+    },
+    {
+      "claim_id": "d42ea8f6-1e12-43a7-87f8-27bbd7472cf7",
+      "result_id": "45b5182d-78d7-40f1-86c0-5dba67eb51d0"
+    },
+    {
+      "claim_id": "d81fbbf5-b12d-4bb3-8409-7081f17addbb",
+      "result_id": "45b5182d-78d7-40f1-86c0-5dba67eb51d0"
+    },
+    {
+      "claim_id": "ebab0cfd-2f6c-4463-a627-71988e83cfaf",
+      "result_id": "45b5182d-78d7-40f1-86c0-5dba67eb51d0"
+    },
+    {
+      "claim_id": "55e9f5b4-86f9-411a-a198-62b0d2f967f2",
+      "result_id": "45b5182d-78d7-40f1-86c0-5dba67eb51d0"
+    },
+    {
+      "claim_id": "d5470ba4-aa51-437a-ac83-1d1eb064fbb9",
+      "result_id": "45b5182d-78d7-40f1-86c0-5dba67eb51d0"
+    },
+    {
+      "claim_id": "4c9c2c8d-19da-4601-9e31-67e1ca49c94b",
+      "result_id": "45b5182d-78d7-40f1-86c0-5dba67eb51d0"
+    },
+    {
+      "claim_id": "52ef0730-131e-4644-9f6e-7a26b9db0f47",
+      "result_id": "45b5182d-78d7-40f1-86c0-5dba67eb51d0"
+    },
+    {
+      "claim_id": "a5e9c2a9-bce7-448b-9a49-8f44630e208c",
+      "result_id": "92bd6490-5a1b-4dae-92ba-3793c8f651b3"
+    },
+    {
+      "claim_id": "c913f673-e94c-4d62-86ea-902fb0f35275",
+      "result_id": "92bd6490-5a1b-4dae-92ba-3793c8f651b3"
+    },
+    {
+      "claim_id": "4662107f-d15a-4ee4-b29b-874e41d2a8b3",
+      "result_id": "92bd6490-5a1b-4dae-92ba-3793c8f651b3"
+    },
+    {
+      "claim_id": "a09eef72-bab7-46e7-9942-88e0ad376a5e",
+      "result_id": "92bd6490-5a1b-4dae-92ba-3793c8f651b3"
+    },
+    {
+      "claim_id": "4c666790-568d-477d-b56e-364cac0837a8",
+      "result_id": "c137c8ec-97f6-4eaf-8856-1ea5eae5c205"
+    },
+    {
+      "claim_id": "80b0e676-452a-4db0-b674-bbddc58eb8e8",
+      "result_id": "c137c8ec-97f6-4eaf-8856-1ea5eae5c205"
+    },
+    {
+      "claim_id": "9c968d9e-8be4-4b44-9ac1-25c7f2155a77",
+      "result_id": "c137c8ec-97f6-4eaf-8856-1ea5eae5c205"
+    },
+    {
+      "claim_id": "8634f2d9-34dd-4a6c-ab7e-d148f3bce6c6",
+      "result_id": "c137c8ec-97f6-4eaf-8856-1ea5eae5c205"
+    },
+    {
+      "claim_id": "51f42557-634d-44a9-9faf-142823abe9c5",
+      "result_id": "16765583-9b0e-4cdd-bddf-44a150caef43"
+    },
+    {
+      "claim_id": "b47343cc-a29e-45d7-b032-b993710cb5ce",
+      "result_id": "16765583-9b0e-4cdd-bddf-44a150caef43"
+    },
+    {
+      "claim_id": "62337354-7f18-4884-bd05-88255ede27a8",
+      "result_id": "a2a6ef70-be6a-42ea-ac82-1d09c0cff823"
+    },
+    {
+      "claim_id": "26d4f391-9468-4890-8db5-c56aabf7471e",
+      "result_id": "a2a6ef70-be6a-42ea-ac82-1d09c0cff823"
+    },
+    {
+      "claim_id": "0d164572-0695-4893-99e2-c8104754dc5f",
+      "result_id": "a2a6ef70-be6a-42ea-ac82-1d09c0cff823"
+    },
+    {
+      "claim_id": "ae10b66d-692c-42b1-8e7c-8ded39a7705a",
+      "result_id": "a2a6ef70-be6a-42ea-ac82-1d09c0cff823"
+    },
+    {
+      "claim_id": "77969bd3-a127-4a33-a16f-80f6a0e4df06",
+      "result_id": "a2a6ef70-be6a-42ea-ac82-1d09c0cff823"
+    },
+    {
+      "claim_id": "4b6f7de2-df50-4d41-a83b-bd4a7aa31720",
+      "result_id": "0074fb11-5282-4e0b-96b0-26dbfd44b99d"
+    },
+    {
+      "claim_id": "3f3d92b3-c93a-4962-a1b3-15776c268133",
+      "result_id": "0074fb11-5282-4e0b-96b0-26dbfd44b99d"
+    },
+    {
+      "claim_id": "bc1ea1ac-8953-433e-8823-1e00c60a3e12",
+      "result_id": "0074fb11-5282-4e0b-96b0-26dbfd44b99d"
+    },
+    {
+      "claim_id": "3224f087-5144-4c6c-87d2-704fb317304e",
+      "result_id": "0074fb11-5282-4e0b-96b0-26dbfd44b99d"
+    },
+    {
+      "claim_id": "8e8245a1-583c-4196-8d73-2410465c5343",
+      "result_id": "0074fb11-5282-4e0b-96b0-26dbfd44b99d"
+    },
+    {
+      "claim_id": "c755a82c-fea7-4639-bec5-b79dd1317235",
+      "result_id": "0074fb11-5282-4e0b-96b0-26dbfd44b99d"
+    },
+    {
+      "claim_id": "9c226ef2-9070-4819-b2c0-8a385b23e601",
+      "result_id": "0074fb11-5282-4e0b-96b0-26dbfd44b99d"
+    },
+    {
+      "claim_id": "7f71ff74-2815-4cfb-9cff-1a966591e495",
+      "result_id": "0074fb11-5282-4e0b-96b0-26dbfd44b99d"
+    },
+    {
+      "claim_id": "99cb25d1-33de-4903-ad2a-26194fd09248",
+      "result_id": "0074fb11-5282-4e0b-96b0-26dbfd44b99d"
+    },
+    {
+      "claim_id": "0bd35306-4082-41a6-9551-55ab74e5093a",
+      "result_id": "0074fb11-5282-4e0b-96b0-26dbfd44b99d"
+    },
+    {
+      "claim_id": "fbc74e3a-c51d-4acf-bd7b-86257600f456",
+      "result_id": "285bb191-c68a-44df-92ce-665a7cd2f80f"
+    },
+    {
+      "claim_id": "5d15022d-24f5-4a4c-8cff-a5d8b4636c00",
+      "result_id": "285bb191-c68a-44df-92ce-665a7cd2f80f"
+    },
+    {
+      "claim_id": "8515d9ac-4e79-4cb1-b203-71e5ff8ba8b7",
+      "result_id": "285bb191-c68a-44df-92ce-665a7cd2f80f"
+    },
+    {
+      "claim_id": "d161f100-7573-49b9-9518-e1f705c5a150",
+      "result_id": "285bb191-c68a-44df-92ce-665a7cd2f80f"
+    },
+    {
+      "claim_id": "f6cf0d29-00f1-450d-be0a-0c876607e410",
+      "result_id": "285bb191-c68a-44df-92ce-665a7cd2f80f"
+    },
+    {
+      "claim_id": "699e7172-616d-4fa0-95b9-169d480946dc",
+      "result_id": "66079341-5469-4024-a248-395b6c0597be"
+    },
+    {
+      "claim_id": "dc02515c-d350-4cef-8db0-9da150e9da3e",
+      "result_id": "66079341-5469-4024-a248-395b6c0597be"
+    },
+    {
+      "claim_id": "e46d829b-74aa-4d4d-b991-0024a5cfd97b",
+      "result_id": "66079341-5469-4024-a248-395b6c0597be"
+    }
+  ],
+  "comparisons": []
+}

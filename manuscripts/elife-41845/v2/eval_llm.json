@@ -1,0 +1,220 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C22",
+      "C23",
+      "C64"
+    ],
+    "result": "The cryo-EM structure of OSCA1.2 reveals a dimeric architecture with eleven transmembrane helices per subunit. Structures were determined at 3.1 \u00c5 (nanodiscs) and 3.5 \u00c5 (LMNG) resolution, allowing modeling of 82% of the full-length sequence. The dimer is 139 \u00c5 wide with an intracellular domain extending ~31 \u00c5 below the membrane, and the two subunits are separated by an ~8 \u00c5 cleft within the membrane with no inter-subunit contacts in the transmembrane region.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2-C23 and C64 collectively provide strong structural evidence from high-resolution cryo-EM data. The resolution values, structural dimensions, and architectural features are directly supported by the experimental data and processing workflows described. The structures in two different environments (nanodiscs and LMNG) are nearly identical (RMSD = 0.81 \u00c5), providing additional validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "OSCA1.2 shares surprising topological similarities with TMEM16 proteins, with ten of eleven transmembrane helices following the topology of TMEM16A. However, OSCA1.2 has an additional N-terminal helix (TM0), a different dimeric packing arrangement resulting in a >20 \u00c5 wider transmembrane domain, a distinct intracellular domain architecture, and lacks the Ca2+ binding site conserved in TMEM16 proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4 and C26-C31 are well-supported by structural comparisons with published TMEM16 structures. The structural alignments, measurements, and identification of key differences (additional TM0, wider dimer, different ICD composition, absence of Ca2+ binding site) are directly demonstrated through cryo-EM data and comparative analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C42",
+      "C46",
+      "C47"
+    ],
+    "result": "OSCA1.2 contains two ion permeation pores, one within each subunit, formed by transmembrane helices TM3-TM7. The pore has a wide extracellular opening (>12 \u00c5) that narrows to a constricted neck region (minimum radius 0.5 \u00c5) lined by hydrophobic residues and featuring \u03c0-helical turns in TM5 and TM6a. Below the neck, the pore widens and contains hydrophilic residues including E531, R572, and T568.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C37, C42, C46-C47 are supported by multiple lines of evidence: structural similarity to TMEM16A (which has two pores per dimer), HOLE program analysis of pore dimensions, identification of pore-lining residues from the structure, consistency with single subconductance states in electrophysiology, and validation through MD simulations showing water distribution consistent with the proposed pore pathway.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C5",
+      "C43",
+      "C44",
+      "C45",
+      "C60",
+      "C61",
+      "C62",
+      "C69"
+    ],
+    "result": "The conserved acidic residue E531 is a determinant of OSCA1.2 channel conductance. The E531A mutation decreased single-channel conductance by 1.6-fold while maintaining comparable maximal current responses and modestly faster inactivation kinetics, demonstrating that E531 contributes to the ion permeation pathway and may play a role in cation binding or sequestration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C43-C45, C60-C62, and C69 are well-supported by functional electrophysiology data comparing wildtype and E531A mutant channels. The mutation specifically affects conductance without abolishing channel function, and E531 is the only conserved pore-facing acidic residue in this region across OSCA/TMEM63 families. The alternative explanation (C69) regarding structural effects is appropriately presented as a possibility based on observed interactions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C6",
+      "C20",
+      "C21",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C55",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "Molecular dynamics simulations reveal extensive membrane-protein interactions suggesting roles for lipids in OSCA1.2 structure and gating. Lipids occupy the inter-subunit cleft and the cytoplasmic half of the pore, with phosphate head groups interacting with lysine residues. The hook-shaped loop and amphipathic helix IL1H1 are membrane-embedded features that could sense membrane tension. The absence of inter-subunit contacts in the membrane may allow area expansion in response to tension.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C20-C21, C48-C53, C55, and C79-C86 are supported by extensive MD simulation data (both coarse-grained and atomistic) showing lipid positioning, protein-lipid interactions, and membrane deformations. However, the mechanistic interpretations regarding gating (C50, C53) are appropriately presented as hypotheses based on structural features and comparisons to other mechanosensitive channels. The simulations provide strong evidence for lipid-protein interactions but cannot directly demonstrate gating mechanisms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "\u03c0-helical turns in TM5 and TM6a near the pore neck region could be associated with gating and channel opening through \u03c0-to-\u03b1 transitions. Similar \u03c0-helical turns exist in TMEM16A and nhTMEM16 at analogous positions, and \u03b1-to-\u03c0 transitions in TM6 underlie Ca2+-dependent activation in TMEM16A. The pore-lining helices of TRPV6 also undergo \u03c0-to-\u03b1 transitions during gating.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C38-C41 present a reasonable hypothesis based on structural observations and comparisons to other channels. The presence of \u03c0-helical turns is directly observed (C37, C39), and the precedent from TMEM16A and TRPV6 is well-cited (C40-C41). However, C38 is explicitly speculative, and no direct experimental evidence is provided that these transitions occur during OSCA1.2 gating. This remains an untested mechanistic hypothesis requiring future validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C24",
+      "C25"
+    ],
+    "result": "The intracellular domain of OSCA1.2 is primarily composed of the second intracellular linker (IL2), which spans over 150 residues and contains a 4-stranded antiparallel \u03b2-sheet (IL2\u03b21-IL2\u03b24) with well-conserved sequences across the OSCA family, along with four helices (IL2H1-IL2H4).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C25 are directly supported by the cryo-EM structure and sequence alignment analysis across the OSCA family. The structural features of IL2 are clearly resolved in the density maps and the conservation is demonstrated through sequence alignments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "TMC proteins, which are pore-forming subunits of the hair cell mechanotransduction apparatus, are distantly related to TMEM16 proteins and proposed to share similar topology. The structural similarities between TMEM16 and OSCA1.2 suggest that OSCA/TMEM63, TMEM16, and TMC proteins likely utilize a similar architectural scaffold for diverse membrane functions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C56-C57 are well-supported by citations to published literature. However, C58-C59 are inferences based on the observed structural similarities between OSCA1.2 and TMEM16. While the logic is reasonable, no direct structural data for TMC proteins is presented, and the molecular identity of the MET channel remains incompletely understood (as acknowledged in the text). This represents an interesting hypothesis requiring validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C1",
+      "C7",
+      "C8",
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "OSCA/TMEM63 proteins constitute a newly-identified family of eukaryotic mechanically activated ion channels. Plants with mutant OSCA1 show impaired osmotic stress signaling, and TMEM63 proteins are animal orthologues that produce mechanically activated currents. These proteins are not homologous to other known MA ion channels and their molecular structure had not been previously addressed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C7-C8, and C75-C78 establish the biological context and novelty of the study. These claims are supported by citations to prior work (companion paper Murthy et al., 2018 for C1, C8; Yuan et al., 2014 for C7) and represent established knowledge in the field (C75-C76). The novelty claims (C77-C78) are appropriate given the lack of prior structural studies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C54"
+    ],
+    "result": "A general principle of mechanically activated ion channels is that their cross-sectional area should increase in response to membrane tension.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C54 represents established knowledge in the mechanosensitive channel field, supported by multiple citations (Guo and MacKinnon, 2017; Haswell et al., 2011; Phillips et al., 2009). This is a well-accepted principle used to interpret the structural features of OSCA1.2.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C63"
+    ],
+    "result": "Cryo-EM structures of OSCA1.1 and OSCA3.1 were published by Zhang et al., 2018 after the initial BioRxiv deposition of this work.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C63 is a factual statement about publication timeline supported by appropriate citations. This provides important context regarding the priority and independence of the current work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "Methodological details including construct design (codon-optimized OSCA1.2 in pcDNA3.1 with C-terminal EGFP tag via PreScission Protease cleavable linker), protein yields (~60 \u00b5g/L for LMNG, ~30 \u00b5g/L for nanodiscs), validation that the PP-EGFP fusion does not affect function, and data deposition (EMDB codes 9112, 9113; PDB IDs 6MGV, 6MGW).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C68 and C70-C74 provide essential methodological information directly stated in the Materials and Methods and Data Availability sections. These are straightforward factual claims about experimental procedures and data sharing that are appropriately documented.",
+    "result_type": "MINOR"
+  }
+]

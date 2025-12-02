@@ -1,0 +1,319 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C101",
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "The STROBE system is a closed-loop optogenetic platform that triggers LED activation with minimal latency (37 \u00b1 17 ms) upon detection of food interactions via capacitance changes in the FlyPAD system. The system shows strong correlation (R\u00b2 = 0.963) with the FlyPAD algorithm, though it triggers approximately 1.4 times more LED activations due to detection of fleeting interactions in addition to full sips.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C54 and C101-C104 provide comprehensive technical validation of the STROBE system through latency measurements, correlation analysis with the established FlyPAD algorithm, and video confirmation of timing. The measured 37 ms latency is well within the timeframe of typical sips (>100 ms), and the strong R\u00b2 value demonstrates reliable performance. The explanation for increased LED activations compared to FlyPAD sips is mechanistically sound and confirmed by video evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C67"
+    ],
+    "result": "Optogenetic activation of sweet gustatory receptor neurons (Gr64f-GAL4) in the STROBE produces strong attraction to the light-triggering food, with preference stable above 1.85 mW/cm\u00b2 light intensity and interaction numbers peaking at 6.5 mW/cm\u00b2. The behavioral response is established within 15 minutes and remains stable throughout the hour-long assay, with dye ingestion assays confirming that interaction preferences reflect actual food consumption.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C63 and C67 demonstrate robust behavioral effects of sweet neuron activation with appropriate controls (retinal vs. no retinal), dose-response characterization, temporal analysis, and validation through dye ingestion. The stable preference over time and linear accumulation of interactions support the interpretation that the system produces consistent, physiologically relevant responses without sensitization or adaptation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "Optogenetic activation of bitter gustatory receptor neurons (Gr66a-GAL4) in the STROBE produces strong avoidance of the light-triggering food in an intensity-dependent manner, with maximum suppression at the highest intensity tested (16.4 mW/cm\u00b2). The avoidance behavior is established within 15 minutes and remains stable, with dye ingestion confirming reduced consumption of the light-paired food.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C67 demonstrate that bitter neuron activation produces the expected aversive response with proper controls, dose-response characterization, and validation through dye ingestion. The temporal stability and intensity-dependence parallel the sweet neuron results, establishing that the STROBE can reliably modulate feeding in both attractive and aversive directions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "Starvation modulates STROBE-driven behavior in a modality-specific manner: increasing starvation duration (12-48 hrs) enhances preference for light-paired food when sweet neurons are activated, driven by increased interaction numbers, while having no significant effect on bitter neuron-mediated avoidance. The timing of preference establishment remains unchanged across starvation conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C72 demonstrate physiologically relevant modulation of optogenetic responses by internal state. The starvation effect on sweet but not bitter neuron activation is consistent with known biology (C68 cites prior work), and the data show clear dose-dependent effects with appropriate statistical testing. This validates that STROBE-driven behavior reflects natural feeding regulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C122"
+    ],
+    "result": "The presence of natural taste ligands modulates STROBE-driven behavior: increasing sucrose concentrations cause dose-dependent inhibition of sweet neuron-driven attraction and mild enhancement of bitter neuron-driven avoidance, while denatonium causes dose-dependent inhibition of bitter neuron-driven avoidance with little effect on sweet neuron-driven attraction. Preferences remain stable over time, indicating no satiety effects from consumption.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C79 and C122 demonstrate that optogenetic activation can be modulated by chemical ligands in physiologically meaningful ways. The dose-dependent effects are well-characterized with appropriate controls, and the differential effects of sucrose vs. denatonium on the two neuron types support the specificity of the responses. The stable preferences over time rule out post-ingestive effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C130",
+      "C131"
+    ],
+    "result": "Activation of the Fdg feeding command neuron in the STROBE produces extremely high numbers of food interactions (near-complete preference for light side), demonstrating that the system can effectively modulate feeding through activation of central neurons in addition to peripheral sensory neurons. Flies appear trapped in a feeding loop throughout the experiment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C81 and C130-C131 demonstrate that the STROBE works for central neuron activation, not just peripheral GRNs. The extremely high interaction numbers and near-complete preference are consistent with Fdg's known role as a feeding command neuron (C130 cites Flood et al., 2013). This establishes the broad applicability of the system beyond sensory neurons.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C5",
+      "C134"
+    ],
+    "result": "Activation of PPL1 dopaminergic input neurons produces avoidance behavior in the STROBE (context-dependent for narrow subset, robust for broader subset), while activation of their post-synaptic MBONs produces strong attraction in both agar and sucrose contexts. This demonstrates that DANs and MBONs from the same compartment drive opposing feeding behaviors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C85, C5, and C134 demonstrate opposing behavioral effects of DAN vs. MBON activation from the same MB compartment, consistent with established MB circuit models. The use of multiple driver lines (MB308B, MB065B for PPL1; MB093C, MB026B for MBONs) and testing in different contexts (agar vs. sucrose) strengthens the conclusions. The context-dependence for narrow PPL1 subset is appropriately noted.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C91",
+      "C133"
+    ],
+    "result": "Activation of \u03b22m,\u03b2'2p PAM dopaminergic neurons produces attraction in the STROBE, while activation of corresponding \u03b22m,\u03b2'2p,\u03b35 MBONs produces avoidance when sucrose is present. This demonstrates that appetitive PAM neurons and their post-synaptic MBONs also drive opposing feeding behaviors, consistent with their established roles in reward signaling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C87, C91, and C133 demonstrate the expected opposing effects for PAM/MBON pairs, using multiple driver lines and appropriate controls. The results are consistent with the established role of PAM neurons in reward signaling (C29-C30, C133 cite prior work) and support the generality of the DAN/MBON opposition principle across different MB compartments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C136",
+      "C137",
+      "C138",
+      "C139"
+    ],
+    "result": "Activation of PAM \u03b33 neurons produces light avoidance in the STROBE, while activation of corresponding \u03b2'1,\u03b33 MBONs produces attraction. This demonstrates that not all PAM neurons convey positive signals, with PAM \u03b33 encoding negative valence consistent with their excitation by electric shocks and inhibition by sucrose.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C90, C91, and C136-C139 demonstrate an important exception to the general PAM=reward rule. The aversive effect of PAM \u03b33 activation is consistent with prior physiological characterization (C88, C137-C138 cite prior work showing shock excitation and sucrose inhibition), and the opposing MBON effect maintains the DAN/MBON opposition principle. This adds important nuance to MB circuit understanding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "For PPL1 and MBON activation, dye ingestion consistently produces stronger preference measures than interaction counts, and MBON activation shows linearly increasing interactions across light intensities (unlike sweet GRN activation which peaks mid-range). Relative interaction numbers remain stable throughout the one-hour assay.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C94 provide important methodological validation showing that interaction-based preferences underestimate actual consumption preferences for MB neurons, and reveal distinct intensity-response profiles for different neuron types. The temporal stability confirms that MB neuron activation, like GRN activation, produces consistent effects without adaptation over the experimental timeframe.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "Silencing PPL1 or MBON populations with Kir2.1 expression did not affect feeding behavior in the choice paradigm tested, indicating that while activation of these populations is sufficient to affect food choice, they are not necessary in this particular task.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95-C97 appropriately distinguish between sufficiency (demonstrated by activation experiments) and necessity (tested by silencing). The negative result is clearly stated with appropriate caveats about the specific paradigm tested. This is methodologically sound, though the authors appropriately note that broader silencing might reveal effects.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "The STROBE's primary advantage over existing systems (particularly optoPAD) is its temporal resolution achieved through FPGA implementation, providing tight coupling to food contact events (~37 ms latency) that better mimics natural taste input dynamics. The optoPAD offers more flexible timing control but with longer, more variable latencies due to computer-based processing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98-C110 provide a fair comparison between STROBE and optoPAD systems, acknowledging trade-offs between approaches. The technical explanation for latency differences (FPGA vs. computer processing) is sound, and the speculation about relative utility for different applications (C109-C110) is appropriately qualified. The comparison is supported by citations and technical understanding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C111",
+      "C112",
+      "C113"
+    ],
+    "result": "Similar closed-loop optogenetic paradigms have been developed for rodents, where lick-triggered light stimulation of taste receptor cells or amygdala circuits drives appetitive and aversive taste behaviors in mice, demonstrating that the same principle reveals insights into consummatory behaviors across species.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C111-C113 appropriately place the STROBE work in broader context by citing parallel developments in mammalian systems (C112 cites Wang et al., 2018; Zocchi et al., 2017). This supports the general utility of closed-loop optogenetic approaches for studying feeding across model organisms.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121"
+    ],
+    "result": "Light-driven behavior in the STROBE shows physiologically relevant properties including starvation-dependent modulation of sweet neuron responses. However, sweet neuron activation shows non-linear intensity-dependence (peaking at sub-maximal intensity) that contrasts with bitter and MB neurons, possibly due to non-physiological responses at high intensities or visual interference, highlighting the need for careful intensity calibration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C114-C121 provide important discussion of system validation and limitations. The starvation-dependence (C115) validates physiological relevance, while the non-linear intensity response for sweet neurons (C116, C120) is honestly reported with speculation about mechanisms (C119). The recommendation for careful calibration (C121) is appropriate and well-justified by the data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C123",
+      "C124",
+      "C125",
+      "C126"
+    ],
+    "result": "PAM and appetitive MBON activation-driven attraction is typically similar in the presence or absence of sugar, unlike sweet GRN activation which is suppressed by sugar. This may suggest parallel circuits for sweet taste and PAM/MBON activation. Flies also prefer 1 M sucrose alone over 1 M sucrose plus optogenetic sweet GRN activation, possibly because optogenetic activation plateaus below natural stimulation levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C123-C126 identify an important mechanistic distinction between peripheral and central feeding circuits. The differential ligand sensitivity is clearly demonstrated in the data (Figures 4, 6), and the speculation about parallel circuits (C124) and activation plateaus (C126) is appropriately qualified. The observation about 1 M sucrose preference (C125) is intriguing and honestly reported.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C132",
+      "C133",
+      "C135"
+    ],
+    "result": "PPL1 stimulation produces avoidance while PAM stimulation produces attraction in the STROBE, consistent with their established valences in memory formation. The opposing effects of DAN and MBON activation from the same compartment support the current model that DAN activity depresses KC-MBON synapses in their respective compartments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C132-C133 and C135 appropriately connect the feeding results to established MB circuit models. The consistency with memory formation roles (extensively cited) and the support for synaptic depression models (C135 cites multiple papers) strengthen the interpretation. This represents a key conceptual contribution linking feeding and memory circuits.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C6",
+      "C140",
+      "C141",
+      "C142",
+      "C143"
+    ],
+    "result": "The results suggest a role for mushroom body circuits in processing na\u00efve taste responses. While the mechanisms remain unclear and learning seems unlikely given the experimental design, the same reward/punishment signals underlying memory formation likely also acutely modify feeding behavior, with MBONs known to modulate various innate behaviors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C140-C143 provide appropriate interpretation of the MB feeding results. The suggestion of MB involvement in na\u00efve taste responses (C6) is supported by the data, the exclusion of learning-based mechanisms (C142) is well-reasoned based on experimental design, and the speculation about shared reward/punishment signals (C143) is appropriately qualified. The connection to prior MBON work (C141) provides supporting context.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C2",
+      "C43"
+    ],
+    "result": "The STROBE's utility was previously demonstrated by Jaeger et al., 2018, and represents one of three recently emerged closed-loop optogenetic systems for feeding flies (optoPAD, STROBE, and optoFLIC), built on the FlyPAD and FLIC platforms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2 and C43 appropriately cite prior work and place the current study in context. The citations are accurate and the description of the three systems is supported by the referenced papers. This provides necessary background for understanding the current contribution.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C146",
+      "C147",
+      "C148"
+    ],
+    "result": "All experiments were performed with 5-9 day old female flies between 10:00 am and 5:00 pm to reduce variability, as sex differences were not under investigation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C146-C148 describe standard methodological controls for Drosophila behavioral experiments. The use of single-sex cohorts, age-matched flies, and consistent time windows are appropriate practices to reduce variability. However, the exclusive use of females limits generalizability to males, though this is acknowledged.",
+    "result_type": "MINOR"
+  }
+]

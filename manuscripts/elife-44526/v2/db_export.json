@@ -1,0 +1,1056 @@
+{
+  "submission": {
+    "id": "38a03cc4-298b-4c2e-9b6c-71707208e50d",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T09:33:53.479253Z",
+    "updated_at": "2025-12-02T09:33:53.479253Z"
+  },
+  "content": [
+    {
+      "id": "007b304d-8536-4649-8159-6d9da2f112ac",
+      "submission_id": "38a03cc4-298b-4c2e-9b6c-71707208e50d",
+      "content_type": "manuscript",
+      "content_text": "# State-dependent geometry of population activity in rat auditory cortex\n\n## Authors\n\n- Dmitry Kobak<sup>1</sup> ([ORCID: 0000-0002-5639-7209](https://orcid.org/0000-0002-5639-7209))\n- Jose L Pardo-Vazquez<sup>1</sup> ([ORCID: 0000-0003-4623-2440](https://orcid.org/0000-0003-4623-2440)) \u2020\n- Mafalda Valente<sup>1</sup> ([ORCID: 0000-0002-1824-0462](https://orcid.org/0000-0002-1824-0462))\n- Christian K Machens<sup>1</sup> ([ORCID: 0000-0003-1717-1562](https://orcid.org/0000-0003-1717-1562))\n- Alfonso Renart<sup>1</sup> ([ORCID: 0000-0001-7916-9930](https://orcid.org/0000-0001-7916-9930)) \u2020\n\n### Affiliations\n\n1. Champalimaud Center for the Unknown Lisbon Portugal\n2. Institute for Ophthalmic Research University of T\u00fcbingen T\u00fcbingen Germany\n3. Neuroscience and Motor Control Group University of A Coru\u00f1a Coru\u00f1a Spain\n\n\u2020 Corresponding author\n\n## Abstract\n\nThe accuracy of the neural code depends on the relative embedding of signal and noise in the activity of neural populations. Despite a wealth of theoretical work on population codes, there are few empirical characterizations of the high-dimensional signal and noise subspaces. We studied the geometry of population codes in the rat auditory cortex across brain states along the activation-inactivation continuum, using sounds varying in difference and mean level across the ears. As the cortex becomes more activated, single-hemisphere populations go from preferring contralateral loud sounds to a symmetric preference across lateralizations and intensities, gain-modulation effectively disappears, and the signal and noise subspaces become approximately orthogonal to each other and to the direction corresponding to global activity modulations. Level-invariant decoding of sound lateralization also becomes possible in the active state. Our results provide an empirical foundation for the geometry and state-dependence of cortical population codes.\n\n## Introduction\n\nSensory stimuli are represented in the brain through the activity of large populations of neurons. While this fact has motivated the study of neural population codes for several decades, the bulk of this work has been theoretical, since only recently has it become feasible to record the simultaneous activity of large neuronal ensembles.\n\nEarly theoretical studies relied on parametric models of neuronal firing to quantify how the accuracy of a population code depended on factors such as the shape of neural tuning curves, the dimensionality of sensory stimuli or the duration of spike-count windows (Seung and Sompolinsky, 1993; Zhang and Sejnowski, 1999; Bethge et al., 2002). It was recognized that pairwise \u2018noise\u2019 correlations between the activity of different neurons had a potentially large impact on the accuracy of a population code, and that the effect of correlated variability depends on the relative orientation of the subspaces where the signal and the noise reside (Abbott and Dayan, 1999; Panzeri et al., 1999; Sompolinsky et al., 2001; Wu et al., 2001; Shamir and Sompolinsky, 2006; Averbeck et al., 2006; Cohen and Kohn, 2011; Ecker et al., 2011; Moreno-Bote et al., 2014). The signal subspace describes the set of trial-averaged network states visited by the population as the sensory stimulus is varied. The noise subspace describes the set of states visited by the population as a result of trial-to-trial variability for any given fixed stimulus. If the signal and noise subspaces are aligned, then a putative decoder will be unable to tease apart the stimulus from the noise, and this will decrease the accuracy of the code. Despite the amount of theoretical work on this topic, the geometry of the signal and noise subspaces in large populations of neurons has not yet been thoroughly characterized.\n\nHere, we conducted such an investigation with an emphasis on understanding how the geometry of the population is affected by the global dynamics of the brain. A salient feature of brain dynamics that becomes immediately apparent when global activity is measured \u2014 either in the form of populations of single neurons or in the form of mesoscopic signals such as the LFP or EEG \u2014 is the existence of different \u2018global dynamical regimes\u2019, or \u2018brain states\u2019 (Vanderwolf, 2003; Harris and Thiele, 2011; McCormick et al., 2015). Behavioral context, such as overt motion during wakefulness (Vanderwolf, 1988; Castro-Alamancos, 2004; Gervasoni et al., 2004), whisking (Poulet and Petersen, 2008; Fanselow and Nicolelis, 1999), sleep phase (Steriade et al., 1990; Steriade and McCarley, 2013), or the type of actions that animals are performing (Vanderwolf, 2003; Gervasoni et al., 2004), have a large impact on brain state. Different brain states are also associated to different neuromodulatory systems (Vanderwolf, 2003; Lydic and Baghdoyan, 1998; Lee and Dan, 2012). From a physiological perspective, different brain states can be arranged along a one-dimensional continuum of cortical activation (Berger, 1929; Harris and Thiele, 2011). At one end of the continuum (inactive or synchronized state) the population undergoes global, large-amplitude, low-frequency oscillations leading to alternations between periods of firing and of silence referred to as up and down states (Steriade et al., 1993). These states are typical of slow-wave sleep, the anesthetized brain under most, but not all, anesthetics, and quiet wakefulness (Harris and Thiele, 2011). At the other end of the continuum (active or desynchronized state), firing rates are tonic, and the population-averaged activity of the population shows much weaker fluctuations (Destexhe et al., 2003; Steriade and McCarley, 2013; Renart et al., 2010). Active states are typical of REM sleep, can be observed under urethane anesthesia (Clement et al., 2008) and are associated with locomotion and active sampling of the environment, including attentive wakefulness (Vanderwolf, 2003; Harris and Thiele, 2011). The population can find itself also in intermediate activation states (Curto et al., 2009). Since the magnitude and nature of correlated variability change along the activation continuum, brain state can be expected to have a strong influence on the geometry of sensory population codes. Recent studies generally tend to find that the amount of information about the stimulus in a population code is larger during active than during inactive states (Goard and Dan, 2009; Marguet and Harris, 2011; Pachitariu et al., 2015; Beaman et al., 2017).\n\nWe have studied the state-dependence of the geometry of population codes in the rat auditory cortex. Different brain states were evoked through the use of urethane anesthesia (Murakami et al., 2005; Clement et al., 2008; Renart et al., 2010). We recorded population activity in response to binaural noise bursts varying both in inter-aural level difference (ILD: the difference in sound intensity in dB between the two ears) as well as in absolute binaural level (ABL: the arithmetic average of the left and right intensities). Since rodents do not use phase information for sound localization, they rely mainly on ILD to localize sounds in the horizontal plane (Wesolek et al., 2010; Lauer et al., 2011). Neurons in the auditory cortex in several species, including rats, represent ILD in the form of broad tuning curves with maximum slope at near-zero ILDs, that\u00a0is corresponding to sounds arriving from the front of the animal (Stecker et al., 2005; Campbell et al., 2006; Yao et al., 2013). ABL and ILD are prototypical examples of prothetic and metathetic sensory continua, respectively (Stevens, 1957). Prothetic sensory continua are associated with changes in the total energy carried by the stimulus, whereas along metathetic continua the total amount of energy stays constant and the stimuli differ along some other feature dimensions \u2014 in our case in lateralization. Other examples of metathetic continua include sound frequency, or spatial location and stimulus orientation in vision. By systematically varying ABL and ILD, our study allowed us to investigate how these two types of sensory continua are represented at the population level. The state-dependence of the representation of prothetic stimuli is particularly interesting, both because it has not been systematically explored previously, and because global up-down fluctuations in the inactive state are expected to specially interfere with the representation of stimuli varying along a prothetic continuum (ABL).\n\n## Results\n\nThe simultaneous activity of many well-isolated single units was recorded unilaterally from the auditory cortex of urethane-anesthetized rats using 8-shank, 64-channel silicon probes (Neuronexus Tech.). We obtained data from $n=23$ sessions (after quality control, see Materials and methods), with 104\u00a0\u00b1\u00a023 isolated neurons per session (mean \u00b1 standard deviation across sessions).\n\nUnder urethane anaesthesia, the cortex undergoes spontaneous transitions between states with varying degrees of \u2018activation\u2019, also known as \u2018desynchronization\u2019 (Clement et al., 2008). Characteristic examples of these states are shown in Figure 1 as raster plots (sorted by firing rate), taken from periods of spontaneous activity. As shown previously (Curto et al., 2009; Renart et al., 2010), during the inactive state, there are globally correlated low-frequency fluctuations in population activity (Figure 1A; also known as the \u2018slow oscillation\u2019). In this state, there are brief periods when all neurons are silent (down states) separated by periods of firing (up states). These up-down oscillations induce positive correlations between most pairs of neurons evident as vertical stripes in the population raster (Renart et al., 2010; Ecker et al., 2014). In contrast, during the active state, neurons fire tonically in a globally uncorrelated fashion (Figure 1B), as evident from the lack of vertical stripes in the raster (Renart et al., 2010; Ecker et al., 2010).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/44526/elife-44526-fig1-v2.jpg)\n\n**Figure 1.:** (A) Exemplary raster plot of 20 s of spontaneous activity in an inactive state ($N=141$ neurons, sorted by firing rate). (B) Exemplary raster plot of 20 s of spontaneous activity in an active state ($N=114$ neurons, sorted by firing rate). (C) Stimulus set. The auditory stimuli used throughout this study consisted of brief broad-band (5\u201320 KHz) noise bursts. The colors represent ILD and the dot sizes represent ABL. This color/size code is maintained throughout our study. (D) Relationship between coefficient of variation (CV) of the total spike count and the fraction of down states across all recorded sessions. Green/orange dots correspond to sessions that we will use as \u2018active sessions\u2019 and \u2018inactive sessions\u2019 (as the two extremes of the activation-inactivation continuum) but state-dependence will always be assessed using all recordings by regressing various quantities of interest against CV. Black circles show two sessions used for raster plots in (A), (B).\n\nOur set of auditory stimuli was designed to probe the representation of ILD (the cue used by rodents to localize sound on the horizontal plane [Wesolek et al., 2010; Lauer et al., 2011]) and its intensity dependence. We varied the ILD of the sounds at constant absolute binaural level (ABL, the arithmetic mean of the level (in dB SPL) across the two ears). We used a headphone-like configuration with two speakers positioned closely (0.5 cm) to each ear in order to replicate the conditions of a behavioral study in our laboratory where we have thoroughly characterized the ILD-discrimination abilities of freely moving rats using custom made headphones (Pardo-Vazquez et al., 2018). Since that study focused on ILD discrimination with respect to the midline, our stimulus set also focused on small-magnitude ILDs (\u00b11.5, \u00b13, \u00b14.5, \u00b16, \u00b112, \u00b120 dB), which were presented at three different overall intensities (ABL\u00a0=\u00a020, 40, 60 dB SPL; see Figure 1C). Sounds consisted of wide-band (5\u201320 KHz) noise bursts lasting 150 ms separated by ~850 ms silence. Each of the 36 stimuli was presented 100 times.\n\nWe quantified the degree of (in)activation in two different ways. First, we computed the coefficient of variation (CV, standard deviation divided by the mean) of the total number of spikes from all single neurons across 20 ms bins (see Materials and methods). This number \u2014 the CV of the population rate \u2014 varied from around 0.4 to around 2.2. If all neurons are Poisson and statistically independent, then the CV of the population rate will approach zero. Second, we also quantified the degree of inactivation by the fraction of 20 ms windows corresponding to down states, which varied from 0% to over 70% across sessions. Both measures turned out to be strongly correlated ($r=0.98$, Figure 1D), and we will subsequently use the CV of the population rate to quantify the degree of activation. The distribution of either of these measures is unimodal, suggesting that active and inactive states are not clearly distinct bur rather form a continuum (Curto et al., 2009). Thus, we quantify the effect of brain state on different aspects of neural activity using regressions against the value of the CV across sessions. In order to illustrate the state-dependence of various features of interest, we arbitrarily defined all sessions with $\ud835\udc36\ud835\udc49<0.6$ as \u2018active\u2019 ($n=3$) and all sessions with $\ud835\udc36\ud835\udc49>1.2$ as \u2018inactive\u2019 ($n=9$), see Figure 1D. This was used only for illustration purposes. In addition, throughout the paper, we will use one example active and one example inactive sessions for illustration purposes.\n\n### Mean evoked activity\n\nWe begin with analyzing evoked activity averaged across all neurons within a session. Figure 2A shows mean evoked activity for an exemplary inactive session, and Figure 2B shows evoked responses additionally averaged across all inactive sessions. We see that the magnitude of the neural response strongly depends on the presented stimulus: loud stimuli evoke stronger responses than silent stimuli, and contralateral stimuli evoke stronger responses than ipsilateral stimuli. The same responses averaged over the whole 150 ms of stimulus duration are shown in Figure 2C. This \u2018tuning curve\u2019 clearly shows contralateral as well as loud preference. The same effect is observed in the \u2018onset\u2019 response (20\u201340 ms, small dots), perhaps even stronger. We observed that an increase in overall stimulus intensity (ABL) leads to the increased slope of the ILD tuning: for ABLs 20, 40, and 60 dB, the absolute value of the slope of firing rate regressed on ILD increased from 0.012 to 0.018 to 0.028 (and from 0.022 to 0.026 to 0.048 for onset responses). This effect of overall stimulus intensity (ABL) as a modulation of the gain of the tuning to ILD is reminiscent of the effect of visual contrast on, for\u00a0example orientation tuning (Skottun et al., 1987). Note, however, that the effect shown in Figure 2C is at the level of the population-averaged tuning curve. We address gain modulation at the level of single neurons below.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/44526/elife-44526-fig2-v2.jpg)\n\n**Figure 2.:** (A) Exemplary inactive session. Each line is a population PSTH (peri-stimulus time histogram) corresponding to one stimulus (color coded as in Figure 1, line thickness corresponds to ABL). Population PSTHs were computed by averaging the Gaussian-smoothed ($\\sigma=5$ ms) PSTHs of $N=141$ single neurons. (B) Mean of the population PSTHs across nine inactive sessions. (C) Average firing rate over 150 ms of stimulus duration for each stimulus, corresponding to panel B. Dots show the early response, defined as the average over 20\u201340 ms window. (D\u2013F) The same for one exemplary and three overall active sessions. (G) The ratio of the evoked responses for the loudest, most contralateral stimuli and the most silent, most ipsilateral stimuli, computed for each session. Green dots are active sessions, orange dots are inactive sessions, black circles mark the two exemplary sessions used in (A) and (D).\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/44526/elife-44526-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) Mean evoked response for each stimulus conditioned on the up-state (average over inactive sessions). Note some tuning in the early responses. (B) The tuning curve corresponding to (A), based on the 0\u2013150 ms interval. Small dots: tuning curve based on the 20\u201340 ms interval. (C) Coefficients of linear fits to the up-state-conditioned tuning curves of all single neurons from all inactive sessions. Only neurons with significant linear tuning ($p<0.01$) are shown, as in Figure 3. Note that most significantly tuned neurons are located in the upper-left quadrant, corresponding to the loud contralateral preference. (D\u2013F) The same for conditioning on the down-state. The loud contralateral preference is much more pronounced.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/44526/elife-44526-fig2-figsupp2-v2.jpg)\n\n**Figure 2\u2014figure supplement 2.:** Horizontal line shows baseline firing rate. Vertical line shows the scale from 0 to 20 Hz (same in all subplots).\n\nIn the active state the picture is different (Figure 2D\u2013F). Here, the responses are similar and strongly overlap without a pronounced monotonic ILD or ABL tuning. Especially close to the midline, which is the most critical stimulus region where behavioral accuracy is the highest (Heffner and Heffner, 1988; Recanzone et al., 1998; Recanzone and Beckerman, 2004), the tuning curve displays very weak contralateral tuning and is approximately flat, meaning that all stimuli evoke roughly the same neural response (number of spikes) in the auditory cortex of a single hemisphere.\n\nTo quantify this effect on a session-by-session basis, we computed the ratio of the mean response (mean across neurons and across 150 ms) evoked by the loudest, most contralateral stimulus (large blue circle in Figure 2C,F) and that evoked by the faintest, most ipsilateral stimulus (small orange circle). This ratio was positively correlated with CV with $r=0.74$ (Figure 2G, $p=0.00005$), being close to one in the most active sessions and reaching almost five in the most inactive one.\n\nIn the above analysis, we averaged the responses over all trials with the same stimulus. However, in the inactive state any given stimulus will sometimes occur during a down state and sometimes during an up state. Conditioning the analysis on these two situations showed that responses to stimuli arriving during down-states are more similar to the unconditioned responses shown above. However, the responses to stimuli arriving during up-states are still different from those in the active state, particularly in the early onset response. While onset responses in the active state show no clear ILD tuning (Figure 2F), onset responses to sounds arriving during up-states show a clear preference for contralateral ILDs (Figure 2\u2014figure supplement 1). Given that the difference between responses in the active and inactive states persists when only responses during up-states are considered (see also Pachitariu et al., 2015), we will not be conditioning on the phase of the slow oscillation in subsequent analyses.\n\n### Evoked activity of single neurons\n\nThe small and unspecific population-averaged responses in the active state could result from a generic lack of tuning of single neurons. Alternatively, single neurons during the active state could be strongly tuned, but with heterogeneous preferences, leading to unspecific population-averaged responses. To distinguish between these two possibilities, we examined the tuning of single cells to ILD and ABL.\n\nAs typical in the cortex, the tuning of single neurons was highly diverse. A snapshot of this diversity is shown in Figure 2\u2014figure supplement 2, where we plot the tuning curves for the 50 neurons with highest activity in our exemplary recordings of active and inactive states. To summarize the tuning of each single neuron, we regressed its mean firing rate in each condition (computed in the 150 ms window of stimulus presentation and averaged across trials) on the ABL and ILD values. For each neuron, mean firing rates were $z$-scored before the regression, so that the regression coefficients were not affected by high/low overall firing rate and only quantified the strength of linear tuning (see Figure 3\u2014figure supplement 1 for the same analysis without $z$-scoring). ABL values (possible values: 20, 40, and 60) were centered by subtracting 40. For each neuron, the model takes the following form:\n\n$$\nz-score(Meanfiringrate)=\\beta_{0}+\\beta_{ILD}\u22c5ILD+\\beta_{ABL}\u22c5(ABL\u221240)+\\beta_{inter}\u22c5(ABL\u221240)\u22c5ILD+\\epsilon.\n$$\n\nApproximately linear ILD tuning near the midline is expected given previous characterizations (Stecker et al., 2005; Yao et al., 2013). The interaction term can account for the effects of gain modulation that we described above at the level of the population-averaged response. Note that both ILD and ABL (after subtracting 40) are centered and the $3\\times12$ design is balanced; it follows that all three linear terms in this model are estimated independently (i.e. each of them corresponds to the value that one would obtain using uni-variate linear regression), and the presence of the interaction term does not influence $\\beta_{ILD}$ and $\\beta_{ABL}$.\n\nOf course, this simple model cannot fully represent the complexity of neural tuning, but it provides a first approximation sufficient to reveal strong differences in tuning between brain states. The quality of the model fit was roughly the same in the inactive and the active states ($R^{2}=0.36\\pm0.24$ and $0.34\\pm0.22$ correspondingly, mean\u00a0\u00b1\u00a0SD across all neurons in all active and all inactive sessions). In both states, around one half of the neurons showed significant linear tuning with overall $p<0.01$ (53.5%, 489/914, in the inactive sessions and 49.5%, 154/311, in the active sessions).\n\nWe first focused on the way neurons are separately tuned to ILD and ABL, by examining the distribution of coefficients $\\beta_{ILD}$ and $\\beta_{ABL}$ across the population. Figure 3A shows these coefficients for each neuron in an exemplary inactive session, with $\\beta_{ILD}$ on the horizontal and $\\beta_{ABL}$ on the vertical axis. Only neurons with significant ($p<0.01$) tuning are shown here; Figure 3\u2014figure supplement 2 presents the same analysis with all neurons. Most neurons are located in the upper-left quadrant with negative $\\beta_{ILD}$ and positive $\\beta_{ABL}$, meaning that they are tuned to the loud contralateral sounds. Figure 3B pools neurons from nine inactive sessions and Figure 3C shows the corresponding angular histogram, both supporting the same conclusion. This is consistent with previous work showing a preference for contralateral sounds in the auditory cortex (Stecker et al., 2005; Campbell et al., 2006; Yao et al., 2013).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/44526/elife-44526-fig3-v2.jpg)\n\n**Figure 3.:** (A) Single neurons from one exemplary inactive session. The tuning of each neuron was characterized with a linear additive model (see text); horizontal axis shows ILD coefficient and vertical axis shows ABL coefficient. Only neurons with significant tuning ($p<0.01$) are shown. (B) Single neurons ($n=489$ neurons with significant tuning out of $n=914$) from nine inactive sessions. $R^{2}$ values correspond to the average \u00b1 standard deviation across the significantly tuned neurons. (C) Circular distribution of the neurons from panel (B). (D) Single neurons from one exemplary active session. Insets show tuning curves of eight exemplary neurons. (E) Single neurons ($n=154$ neurons with significant tuning out of $n=311$) from three active sessions. (F) Circular distribution of the neurons from panel (E). (G) Fraction of neurons with contralateral preference (located to the left of the $y$ axis in panels (A) and (D)) across sessions. Green dots are active sessions, orange dots are inactive sessions, black circles mark the two exemplary sessions used in (A) and (D). (H) The same for the fraction of neurons with loud preference (located above the $x$ axis). (I) The same for the fraction of neurons with positive gain modulation (see text).\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/44526/elife-44526-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** It only affects panels A, B, D, and E.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/44526/elife-44526-fig3-figsupp2-v2.jpg)\n\n![Figure 3\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/44526/elife-44526-fig3-figsupp3-v2.jpg)\n\n**Figure 3\u2014figure supplement 3.:** Only neurons with significant linear tuning ($p<0.01$) are shown, as in Figure 3. (A) Distribution of the ILD coefficients and ABL coefficients across all neurons in the inactive sessions for evoked responses in 0\u201350 ms after stimulus onset. The early responses are mostly contralateral and loud preferring. The fraction of significantly tuned neurons is 31.5% (288/914). (B) The same but for evoked responses in 100\u2013150 ms after stimulus onset. The fraction of significantly tuned neurons is 32.2% (294/914). (C\u2013D) The same as in (A\u2013B) but without -scoring the tuning curves. Here, one can see that the late responses are smaller than the early responses. (E\u2013H) The same for all active sessions. In the last two panels, one can see that the high-firing early responses are mostly contralateral and loud preferring, while the late responses are more balanced. The fractions of significantly tuned neurons in the early and in the late responses were 23.1% (78/311) and 41.8% (130/311), a significant difference ($p=0.00001$, Fisher\u2019s exact text). The distances $d=\\sqrt{(\\beta_{ILD}^{onset}\u2212\\beta_{ILD}^{late})^{2}+(\\beta_{ABL}^{onset}\u2212\\beta_{ABL}^{late})^{2}}$\u00a0between the \u2018'early\u2019' and the \u2018late\u2019' locations were very similar in both states:\u00a00.036\u00a0\u00b1\u00a00.023 in the active state (mean\u00a0\u00b1\u00a0SD for 117 neurons present in panels A and B) and 0.036\u00a0\u00b1\u00a00.023\u00a0in the inactive state (mean \u00b1 SD for 41 neurons present in panels E and F).\n\n![Figure 3\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/44526/elife-44526-fig3-figsupp4-v2.jpg)\n\n**Figure 3\u2014figure supplement 4.:** Left subplot shows the same session as in Figure 3D), the other two subplots show two other active sessions. Ellipses show 90% coverage for each shank, assuming 2D Gaussian distributions. Only neurons with significant linear tuning ($p<0.01$) are shown, as in Figure 3.\n\n![Figure 3\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/44526/elife-44526-fig3-figsupp5-v2.jpg)\n\n**Figure 3\u2014figure supplement 5.:** Only neurons with significant linear tuning ($p<0.01$) are shown, as in Figure 3. (A) Distribution of the ILD coefficients and ABL coefficients across all neurons in the inactive sessions. This panel reproduces Figure 3B. (B) Distribution of the ILD coefficients and coefficients across all neurons in the inactive sessions. Most neurons have negative ILD coefficient and negative interaction coefficient, meaning that increasing ABL increases the ILD tuning. This shows gain modulation. (C) Distribution of the ABL coefficients and coefficients across all neurons in the inactive sessions. (D\u2013F) The same for the active sessions. Panel (D) reproduces Figure 3D. If large ABLs increased the slope of ILD tuning (that in active sessions is sometimes positive and sometimes negative) then we would expect to see a positive correlation on panel (E). Correlation is indeed positive ($r=0.18,p=0.03$) but rather weak.\n\nIn the active state the situation is again different (Figure 3D\u2013F). The distribution of linear coefficients is roughly symmetric with respect to the horizontal and the vertical axes. As we go around the clock in Figure 3D, we see neurons preferring loud, then ipsilateral, then faint, then contralateral sounds (insets show tuning curves of eight exemplary neurons using the same format as in Figure 2C,F). Separate analysis of the onset (0\u201350 ms) and the late (100\u2013150 ms) responses revealed that this strong tuning heterogeneity was already present in the onset responses (Figure 3\u2014figure supplement 3), even though there was some contralateral and loud bias in the early responses. Interestingly, in the active state more neurons were significantly tuned in the late response compared to the early response (41.8% vs. 23.1%, Figure 3\u2014figure supplement 3).\n\nThis tuning heterogeneity was not explained by the physical location of the neurons in the tissue: it persisted within individual shanks of our recording probes (8 shanks spaced 200 \u03bcm apart; Figure 3\u2014figure supplement 4). Also, the surprising preference for ipsilateral and faint sounds was not explained by the inhibitory contralateral responses: many ipsilateral neurons had evoked responses well above their baseline (insets in Figure 3D, see also Figure 2\u2014figure supplement 2).\n\nThese observations provide an explanation for the population PSTHs in Figure 2. In the inactive state, most neurons are similarly tuned, leading to the loud contralateral preference of the average. In the active state, the neural tuning is diverse and, when averaging across neurons, individual differences get averaged out. Across sessions, the fraction of significantly tuned neurons with contralateral preference is positively correlated with CV ($r=0.70$, $p=0.0002$, Figure 3G), and so is the fraction of neurons with loud preference ($r=0.71$, $p=0.0002$, Figure 3H).\n\nInspection of the regression coefficients $\\beta_{\ud835\udc56\ud835\udc5b\ud835\udc61\ud835\udc52\ud835\udc5f}$ of the $\ud835\udc3c\ud835\udc3f\ud835\udc37\u22c5\ud835\udc34\ud835\udc35\ud835\udc3f$ interaction term revealed that the degree of gain modulation across the population is also state-dependent (Figure 3\u2014figure supplement 5). One might expect that loud sounds should make ipsilateral cells more ipisilateral, and contralateral cells more contralateral, which would imply a positive correlation between the coefficients $\\beta_{\ud835\udc3c\ud835\udc3f\ud835\udc37}$ and $\\beta_{\ud835\udc56\ud835\udc5b\ud835\udc61\ud835\udc52\ud835\udc5f}$. Scatter plots of these two coefficients across cells show a much stronger correlation in the inactive than in the active state. Figure 3I shows the fraction of significantly tuned neurons in the first and third quadrants of this scatter plot as a function of CV. This fraction is positively correlated with CV ($r=0.66$, $p=0.0006$, Figure 3I). Thus, in the inactive state ABL increases the gain of the tuning of single neurons to ILD, consistent with Figure 2C. In the active state, on the other hand, the fraction is approximately 0.5, consistent with an idiosyncratic effect of ABL on ILD tuning. This means that, while ABL might change the tuning to ILD for single neurons, the nature of this change is, across neurons, not consistent with the standard notion of gain modulation.\n\n### Signal and noise correlation matrices\n\nWe now turn to the structure and state-dependence of the evoked activity at the population level, which is the main focus of this study.\n\nThe regions in firing rate space spanned by the sensory stimuli and those occupied by trial-to-trial variability can be estimated through the eigendecomposition of the signal and noise correlation matrices, respectively (Figure 4). In each session, both matrices are of size $p\\timesp$ where $p$ is the number of recorded neurons. A signal correlation matrix contains correlations between \u2018tuning curves\u2019 of all pairs of neurons (i.e. correlations are computed across trial-averaged responses for $n=36$ stimuli). An element $(i,j)$ of this matrix is the similarity between the tuning of neurons $i$ and $j$. A noise correlation matrix contains correlations between trial-to-trial fluctuations for all pairs of neurons (here we pool the trials from all stimuli and compute correlations across all $n=36\u22c5100$ single trial responses after subtraction of the corresponding mean responses). An element $(i,j)$ of this matrix is the similarity between trial-to-trial fluctuations between neurons $i$ and $j$.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/44526/elife-44526-fig4-v2.jpg)\n\n**Figure 4.:** (A) Signal correlation matrix in an exemplary inactive session. Neurons are ordered by their ILD tuning from contralateral (top/left) to ipsilateral (bottom/right). (B) Signal correlation matrix in an exemplary active session. Neurons are ordered in the same way. (C) Average off-diagonal signal correlation as a function of CV. Here and in the other panels green dots are active sessions, red dots are inactive sessions, black circles mark the two exemplary sessions. (D) Fraction of variance explained by the first principal component of the signal correlation matrix as a function of CV. (E) Estimated dimensionality of the signal correlation matrix as a function of CV. (F\u2013J) The same for noise correlation matrices. Note that the color scale in (F), (G) is different from (A), (B).\n\nConsider the signal correlation matrices for one exemplary inactive and one exemplary active session shown in Figure 4A\u2013B. The neurons are sorted (from up/left to bottom/right) according to the value of $\\beta_{ILD}$ from Figure 3A,D. In the inactive state, there is a group of similar neurons with contralateral preference, and the remaining neurons do not seem to show any similarity. On the other hand, in the active state there are neurons with similar contralateral preference but also neurons with similar ipsilateral preference. The tuning of these two sets of neurons is anti-correlated.\n\nFor the signal correlation matrix in each session, we can compute: (a) the mean correlation, (b) the fraction of variance explained by the first principal component (i.e. $\\lambda_{\ud835\udc5a\ud835\udc4e\ud835\udc65}/p$, where $\\lambda_{\ud835\udc5a\ud835\udc4e\ud835\udc65}$ is the largest eigenvalue), and (c) the dimensionality. Here, \u2018dimensionality\u2019 refers to the number of significant principal components (out of the total number of 36 PCs). We estimated the dimensionality using Monte Carlo permutations to obtain the distribution of eigenvalues under the assumption of uncorrelated neurons (see Materials and methods). We found that all these three measures were correlated with CV: the more inactive the cortical state, the larger the signal correlations, the larger the first eigenvalue, and the smaller the dimensionality (Figure 4C\u2013E). All these effects point to the same underlying phenomenon: as the state progresses from active to inactive, signal correlation matrix \u2018simplifies\u2019 as all neurons become similarly tuned. An alternative analysis using unbiased estimates of the signal correlation matrices yielded the same conclusions (see Materials and methods).\n\nThe same analysis for the noise correlation matrices is shown in Figure 4F\u2013J. Consistent with previous reports (Goard and Dan, 2009; Renart et al., 2010; Ecker et al., 2010; Pachitariu et al., 2015; Beaman et al., 2017), we found that the mean pairwise correlation in the active state was around zero (Figure 4F) but reached $\u223c\u20090.1$ in the most inactive sessions. The reason for this is well understood (Renart et al., 2010; Ecker et al., 2014; Okun et al., 2015): up-down fluctuations in the inactive state (Figure 1A) induce positive correlations between most neurons. Going beyond pairwise analysis, we again see that, with increasing CV, the dimensionality of the noise subspace decreases, while the first eigenvalue of the correlation matrix increases (Figure 4I\u2013J). In the active state, the fraction of variance explained by the first PC was not much bigger than $1/p$ (Figure 4I), suggesting that the shape of the noise subspace in the active state was approximately (although not perfectly) spherical. Nonetheless, the number of trials in our dataset provided us with enough power to find a large number of significant noise PCs even during the most active states (Figure 4J).\n\n### Geometry of the population activity\n\nWe saw that both the signal and the noise correlation matrices get similarly re-structured when CV is increasing. To explore how these two processes influence the overall population geometry, we consider $p$-dimensional space where each recorded neuron corresponds to one dimension (Figure 5A). The state when all neurons are silent corresponds to the origin of coordinates. Evoked activity in every single trial can be thought of as one point in this space. For each stimulus, there is a \u2018cloud\u2019 of 100 points centered at the mean response. Overall, we have 36 such clouds.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/44526/elife-44526-fig5-v2.jpg)\n\n**Figure 5.:** (A) Schematic of the population geometry analysis. The firing rate of each neuron forms a dimension, and evoked activity in each trial is represented by a dot in this space. (B) Projection of all single trials on the signal plane in one exemplary inactive session. Big dots and ellipses show averages and 50% coverage ellipses for each stimulus. Color coding as in previous figures. Horizontal black line is the ILD axis, the other black line is the ABL axis. (C) The same for one exemplary active session. (D\u2013G) Relationship between CV and the angles between the ILD axis and the ABL axis (D), between the noise axis and the signal plane (E), between the noise axis and the global axis (F), and between the global axis and the signal plane (G).\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/44526/elife-44526-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** All correlations (and p-values) apart from ABL/ILD stay very similar to the ones in Figure 5D\u2013G. The correlation of ABL/ILD angle with CV drops to \u22120.36\u00a0with\u00a0$p=0.09$. It seems that the decrease might be mostly explained by one strong outlier (the session with the smallest angle). For that reason we added a p-value for the slope of robust regression (robustfit in MATLAB) to all panels ($p_{r}$). For the ABL/ILD angle it was\u00a0$p_{r}=0.03$.\n\nWe use principal component analysis (PCA) to define a two-dimensional signal plane that approximately goes through the 36 mean stimulus responses (cloud centers). To do this, we compute an ILD axis as the PC1 direction of the 12 mean stimulus responses after averaging over ABL, and similarly compute an ABL axis as the PC1 direction of the three mean stimulus responses after averaging over ILD. These two axes span a plane, which we define as the signal plane. In our data, this plane is usually very close to the plane spanned by PC1 and PC2 of all 36 mean stimulus responses, but we prefer to use the ILD axis and the ABL axis because it gives an opportunity to explore the relationship between the two.\n\nFigure 5B shows the projection of all single trials onto the signal plane in the exemplary inactive session. The loud contralateral stimulus is prominently removed from the rest, corresponding to the single neuron tuning we saw above. At the same time, not much of the ipsilateral tuning can be seen. The same plot for the example active session is shown in Figure 5C and is strikingly different. Here, the stimuli locations closely resemble the grid structure of the used stimuli (cf. Figure 1C). The ABL and the ILD axes are nearly orthogonal, unlike in Figure 5B.\n\nWe systematically assessed how the organization of the code changes as a function of state by computing the angle between several salient axes in firing rate space and by evaluating the dependence of these angles on CV. When interpreting these results, one should keep in mind that, because of the large dimensionality of the space (equal to the number of neurons in a particular recording), random vectors will be close to orthogonal. Angles of approximately 90\u00b0 should thus be expected if all axes were randomly oriented. Using this approach, we found that, across all sessions, the angle between the ILD and the ABL axes is negatively correlated with CV ($r=-0.57$, $p=0.004$; Figure 5D).\n\nAnother important axis in the population representation is the dominant noise axis, which we define as the direction in which the clouds are most stretched (Figure 5A). We find it by doing PCA on the pooled noise data (i.e. on all 3600 single-trial points after subtracting the corresponding stimulus means). The orientation of the noise axis relative to the signal plane can show how much the noise interferes with the stimulus representation. Across sessions, the angle between the noise axis and the signal plane is negatively correlated with CV ($r=-0.46$, $p=0.03$; Figure 5E), reflecting a significant overlap between the signal and noise subspaces in the inactive, but not in the active, state. If we analyze the angles between the noise axis and the ILD and ABL axes separately, both are negatively correlated with CV ($r=-0.42$ and $-0.39$). Given that the noise subspace is approximately spherical in the active state (Figure 4I), the direction of the principal noise axis is expected to be effectively random in this state, and thus close to orthogonal to the signal plane, as we observe.\n\nWe also explored the relationship between the signal and noise subspaces and the \u2018global\u2019 direction, which we define as going from the center of coordinates to the grand mean of all single-trial responses (Figure 5A). This is approximately the direction along which the population fluctuates during up-down transitions. The angle between the noise axis and the global axis is also negatively correlated with CV ($r=-0.64$, $p=0.001$; Figure 5F). In the active state, they are close to orthogonal, but in the inactive state up-down fluctuations become the dominant mode of the noise in the evoked responses. The angle between the signal plane and the global axis is negatively correlated with CV as well ($r=-0.67$, $p=0.0005$; Figure 5G), and this remains true for ILD and ABL axes separately ($r=-0.61$ and $-0.61$). This shows that, in the active state, different stimuli evoke approximately the same number of spikes from the population as a whole, whereas in the inactive state different stimuli evoke different numbers of spikes from the population.\n\nWe get very similar results if instead of PCA we use demixed PCA (dPCA) that we have previously developed (Kobak et al., 2016) to define ABL and ILD axes (with dPCA, the four correlation coefficients in Figure 5D\u2013G differed at most by 0.01; see Materials and methods). For the main analysis, we chose PCA for the reason of simplicity. Also, repeating the analysis shown in Figure 5D\u2013G using only the early onset responses (0\u201350 ms instead of 0\u2013150 ms) led to similar conclusions (Figure 5\u2014figure supplement 1) with only ABL/ILD angle becoming somewhat less correlated with the CV.\n\nIn summary, we saw that the evoked activity in the rat auditory cortex in the inactive state is squeezed along the global axis. However, in the active state all relevant subspaces become close to orthogonal to each other: ABL encoding is nearly orthogonal to the ILD encoding, both of them are nearly orthogonal to the global axis (due to the diversity in tuning across neurons), and the noise axis (as expected from the approximately spherical shape of the noise subspace) is nearly orthogonal to ILD, ABL and global axis. We can see this more directly using a 3D animation (Video 1), where the shown three-dimensional subspace is spanned by the signal plane and the global axis. Note that the dominant noise dimension cannot be fully shown because there is only space for three axes in a 3D animation.\n\n![Video 1.](https://cdn.elifesciences.org/articles/44526/elife-44526-video1.mp4.jpg)\n\n### Decoding analysis\n\nHow do the state-dependent changes of the population geometry described above influence the amount of information about the stimulus carried by the evoked activity? We can use the decoding of stimulus identity from the population activity to answer this question.\n\nFor each session, we trained a binary classifier (decoder) to predict the sign of ILD from neural activity. We chose ILD sign because this allows us to compare the performance of the classifier with the behavioral performance of animals classifying sounds according to ILD (Pardo-Vazquez et al., 2018). Furthermore, behavioral studies suggest that ILD discrimination with respect to the midline is more relevant than the estimation of arbitrary ILDs (Heffner and Heffner, 1988; Recanzone et al., 1998; Recanzone and Beckerman, 2004), consistent with the observation that tuning with respect to ILD generally displays a high slope, rather than a peak, at the midline (Stecker et al., 2005; Yao et al., 2013). We used logistic regression regularized with elastic net and employed nested cross-validation to compute all performance estimates (see Materials and methods). The classifier was trained on trials pooled across all ABLs.\n\nFigure 6B shows \u2018population neurometric curves\u2019: classifier performance for each ABL and ILD, averaged over inactive sessions. Individual sessions often yielded noisy curves, but the averages can be very accurately fit with logistic functions. The performance clearly decreases and becomes biased (asymmetric) with decreasing ABL. Because neurons in the inactive state prefer loud contralateral sounds, the overall number of spikes evoked by the population increases with increasing ABL for negative (contralateral) ILDs. The decoder classifies trials with many spikes as contralateral, and so its performance for negative ILDs degrades with decreasing ABL. For positive (ipsilateral) ILDs, there are almost no spikes, which the decoder reliably and correctly classifies as ipsilateral for all ABLs.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/44526/elife-44526-fig6-v2.jpg)\n\n**Figure 6.:** (A) Population neurometric curves in inactive sessions. Dots show the fraction of ipsilateral classifications when classifying the sign of ILD (from grey to black, ABL\u00a0=\u00a020 dB to ABL\u00a0=\u00a060 dB), averaged across inactive sections. Curves show logistic fits. (B) Population neurometric curves in active sessions. (C\u2013E) Integral classification accuracy for $ILD\\in[-20,+20]$ across sessions for each ABL separately. Gray lines show constrained linear fits for each ABL. Black lines highlight the fit corresponding to the respective scatter plot. (F) The change of linear fits when one uses separate decoder for each ABL (green). (G) The change of linear fits after shuffling trials for each neuron in each condition (yellow). (H) The change of linear fits after shuffling the training sets only (magenta).\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/44526/elife-44526-fig6-figsupp1-v2.jpg)\n\n**Figure 6\u2014figure supplement 1.:** (A\u2013C) Time-resolved average classification accuracy (average over all ILD values) for each ABL separately, using the spike counts in time window $[0,T]$\u00a0ms. The window end changed between 10 and 150 ms in steps of 10 ms. Thin lines are individual sessions, thick lines are averages over active and inactive sessions. (D\u2013F) The average classification accuracy (average over all ILD values) for each ABL separately using a subsampled pool of neurons (averages over 10 random subsamples are shown). The number of neurons ranged between 10 and the number of neurons in a session, in steps of 10. Thin lines are individual sessions, thick lines show averages across sessions. The averages over sessions are shown until 100 neurons only.\n\n![Figure 6\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/44526/elife-44526-fig6-figsupp2-v2.jpg)\n\n**Figure 6\u2014figure supplement 2.:** Linear fits are the form $R^{2}=(a+b\u22c5ABL+c\u22c5ifIpsi)+(d+e\u22c5ABL+f\u22c5ifIpsi)\u22c5CV+\u03f5$.\u00a0This fits a linear dependency between CV and the goodness of ILD prediction (cross-validated ), and we allow the slope and the intercept to change with ABL and be different for ipsilateral ($ifIpsi=1$) and contralateral ($ifIpsi=0$) decoding. This model has only six coefficients instead of 12 that six independent regressions would have but this simpler model was preferred by both AIC and BIC $(BIC=\u2212496vs.\u2212474)$. (A\u2013C) $R^{2}$\u00a0of linear decoder of ILD value, separately for each ABL and for ipsilateral and contralateral ILD values. Grey lines show constrained linear fits (solid lines: contralateral decoding, dashed lines: ipsilateral decoding). Black lines highlight fits corresponding to the respective subplot. Solid dots show values for contralateral decoding, open circles show values for ipsilateral decoding.\n\nEach logistic curve can be conveniently summarized with a \u2018just noticeable difference\u2019 (JND): horizontal distance between points with 75% performance on each side. JND was equal to 9.1 for ABL\u00a0=\u00a020 dB, to 8.5 for ABL\u00a0=\u00a040 dB, and to 5.5 for ABL\u00a0=\u00a060 dB.\n\nFigure 6B shows the same analysis for the active sessions. Here, the neurometric curves for three ABLs strongly overlap, are approximately symmetric, and display little bias. JND ranges from 2.5 to 3.4 which is similar to behavioral values measured in other species (Scott et al., 2007; Keating et al., 2013). We have recently studied ILD discrimination in rats using a subset of stimuli used here with ILDs between \u00b16 dB (Pardo-Vazquez et al., 2018). The average JND of rats was 2.2 dB, thus just slightly smaller than the decoded JND in the active state. Comparisons between behavioral discrimination accuracy and the discrimination accuracy of a decoder from a neural population, however, should be interpreted carefully, as the latter quantity can depend on the number of recorded neurons or time window of analysis. Indeed, we found that the classification accuracy increased with the number of neurons and did not saturate when using all available neurons, either in the active or inactive state (Figure 6\u2014figure supplement 1). We also found that the accuracy increased with the length of the spike count window and did not saturate at 150 ms in the active state. In the inactive state, it did tend to saturate at ~50 ms, converging to an ABL-dependent value (Figure 6\u2014figure supplement 1).\n\nTo quantify classifier performance across ILDs in each session and for each ABL, we computed the average (integral) classification accuracy for all ILDs from \u221220 to\u00a0+20 according to the logistic fit (see Materials\u00a0and\u00a0methods). Figure 6C\u2013E shows these average accuracies for every session and for every ABL. For each ABL, the average accuracy dropped with increasing CV. We summarized the average accuracies using a simple linear model\n\n$$\n\ud835\udc34\ud835\udc50\ud835\udc50\ud835\udc62\ud835\udc5f\ud835\udc4e\ud835\udc50\ud835\udc66=(a+b\u22c5\ud835\udc34\ud835\udc35\ud835\udc3f)+(c+d\u22c5\ud835\udc34\ud835\udc35\ud835\udc3f)\u22c5\ud835\udc36\ud835\udc49+\\epsilon,\n$$\n\nwhich was preferred by both AIC and BIC over three independent regressions, one for each ABL (BIC = \u2212327\u00a0vs. \u2212320). Linear fits for three ABLs intersected at $\ud835\udc36\ud835\udc49\u22480.3$, indicating that in the active state there was no difference in performance between ABLs. In recordings of the inactive state, on the other hand, the difference between ABLs was pronounced, in agreement with Figure 6A\u2013B.\n\nIn the above analysis, we used one common classifier for all ABLs in a given session. If instead we train three separate classifiers per session, then the performance increases but only slightly: Figure 6F shows the comparison of linear fits for the \u2018common\u2019 and \u2018ABL-specialized\u2019 classifiers. The difference is absent in the active state, meaning that the sign of ILD can be classified with an ABL-invariant decoder. In the inactive state, the difference was 0.019\u00a0\u00b1\u00a00.023 (mean\u00a0\u00b1\u00a0SD across nine inactive sessions and 3 ABLs), a small but statistically significant difference ($p=0.0004$, Wilcoxon sign-rank test).\n\nIn the previous sections, we saw that the inactive state is characterized by different neural tuning and by different noise structure. How much of the classification performance decrease can be attributed to each of these two factors? To address this question, we employed a previously suggested shuffling approach (Averbeck et al., 2006). We randomly permuted all the trials within each stimulus, separately for each neuron; this procedure effectively sets all noise correlations to zero while preserving the mean responses. After that we ran the same decoding analysis as above (with a single, common decoder for all ABLs), and averaged the results across random shuffles. Figure 6G shows the comparison of linear fits for the shuffled and non-shuffled cases. The difference was absent in the active state, while performance increased after shuffling in the inactive state (0.025\u00a0\u00b1\u00a00.028, $p=0.0004$). In other words, the noise correlations in the inactive state impair the accuracy of the code, consistent with our observations above that the noise subspace is aligned with the stimulus subspace in the inactive state.\n\nThis finding does not necessarily imply that the presence of noise correlations affects the optimal decoding strategy, as has been pointed out before (Averbeck et al., 2006). To check this, we performed trial shuffling only on the training sets, while preserving the testing sets intact (Averbeck et al., 2006). Figure 6H shows the comparison of linear fits for the shuffled and non-shuffled cases. Once more, the difference was absent in the active state, but performance noticeably decreased in the inactive state (\u22120.050\u00a0\u00b1\u00a00.047, $p=0.0003$). These analyses suggest that, while the signal and noise subspaces display a significant degree of collinearity in the inactive state, they are still not fully aligned.\n\nDecoding performance in the inactive state after shuffling remains clearly worse than performance in the active state (Figure 6G), suggesting that tuning curve reorganization also contributes strongly to the state-dependence of ILD discrimination. The fact that many neurons in the active state, but not in the inactive state, are tuned to ipsilateral ILDs, raises the question of whether this increased discrimination ability is simply due to an ability to represent ipsilateral sounds in the active state. To address this question, we assessed the accuracy of ILD estimation (as opposed to discrimination with respect to the midline) separately for ipsi- and contralateral sounds across states. This analysis revealed that estimation accuracy still degrades with increasing CV for both ipsi- as well as contralateral ILDs, even when they are considered separately (Figure 6\u2014figure supplement 2).\n\n## Discussion\n\nWe have described the state-dependence of population activity in the rat auditory cortex at three different levels: the average population response, the responses of single neurons, and the geometrical structure of the high-dimensional population responses. Our stimulus set was two-dimensional, with one dimension, ABL, varying along a prothetic continuum (different stimulus intensity), and the other, ILD, varying along a metathetic one (different lateralization at constant intensity). One can expect that the intensity of the neural population response reflects the intensity of the stimulus; at the same time, the intensity of population activity is strongly affected by the brain state, with inactive states causing global up-down fluctuations of this intensity. Thus, our stimulus set is particularly useful to explore the state-dependence of the representation of intensity, and of the effect of intensity on other tuning dimensions (typically described as changes in gain). Both these issues have so far remained largely unexplored. That said, our stimulus set is still low-dimensional, preventing us from studying the state-dependence of the geometrical structure of high-dimensional stimulus spaces such as natural images or sounds (Stringer et al., 2018). Nevertheless, Pachitariu et al. (2015) also found more accurate representations of natural sounds in the desynchronized state.\n\n### State-dependence of neural tuning to the stimulus\n\nThe canonical picture of neural tuning in auditory cortex is that neurons within a given hemisphere tend to prefer contralateral sounds (Stecker et al., 2005; Campbell et al., 2006; Keating et al., 2013; Lui et al., 2015; Keating et al., 2015). In rat, in particular, it was recently reported that all recorded neurons in one study had a contralateral preference (Yao et al., 2013). In terms of sound intensity, the canonical V-shaped frequency-amplitude tuning curve present already at the level of the auditory nerve and in subsequent processing stages (Moore et al., 2010; Schnupp et al., 2011) implies a preference for loud sounds, although this picture describes only the typical trend, and neurons with non-monotonic tuning to intensity can be found throughout the auditory pathway, including the periphery (Davis et al., 1996; Greenwood and Maruyama, 1965; Aitkin, 1991; Wu et al., 2006).\n\nSince our recordings came from a single hemisphere, this literature strongly suggests that we should observe a clear preference of the population-averaged activity for large ABLs and negative ILDs. We find that this expectation holds true in the inactive state (Figure 2A\u2013C) but that, surprisingly, it breaks down as the cortex becomes strongly activated (Figure 2D\u2013G). Examination of single-cell tuning curves revealed that this phenomenon is not due to the loss of tuning under cortical activation. Rather, it is due to the appearance of tuning diversity. Our analysis revealed an approximately symmetric preference for ipsi-, contra-, quiet and loud stimuli across the neural population in the most active states (Figure 3D\u2013H). The state-dependent tuning to stimulus lateralization has the significant implication that the oft-observed preference for contralateral sounds in the auditory cortex is not a hard-wired property.\n\nA possible explanation for the previously unreported flat tuning of the population-averaged firing rate to ILD and ABL is that the activation/inactivation continuum might not have been sampled with sufficient depth in the past. For example, in Yao et al. (2013), no explicit quantification of brain state was provided, although the authors state that recordings took place under \u2018deep\u2019 anesthesia. Most studies of ILD coding were conducted under anesthesia, and the anesthetized brain is typically inactivated. In contrast, results more similar to what we observed in the active state have been reported in unanesthetized animals, for example with respect to non-monotonic level tuning (Evans and Whitfield, 1964; Young and Brownell, 1976; Pfingst and O'Connor, 1981; Davis et al., 1996; Sadagopan and Wang, 2008). Urethane anesthesia \u2014 used in our study \u2014 is well known to be compatible with a variety of levels of activation (Murakami et al., 2005; Clement et al., 2008; Renart et al., 2010), although, depending on the protocol, this variety is not always observed. Our results emphasize the importance of taking the brain state prevalent during an experiment into account when studying the neural code (Harris and Thiele, 2011; Zagha and McCormick, 2014).\n\nBeyond single-cell analysis, we have characterized signal and noise correlation matrices from neural population data, which previous theoretical work has shown to be critical for understanding the accuracy of population codes (Panzeri et al., 1999; Sompolinsky et al., 2001; Averbeck et al., 2006; Moreno-Bote et al., 2014). The structure of the signal subspace confirms intuitions derived from neural tuning curves. The overall preference of most neurons for loud, contralateral sounds in the inactive state is reflected in the overlap between the ILD, ABL and global activity axes during cortical inactivation. The signal subspace in the most active states is nearly orthogonal to the global activity axis, consistent with the flat tuning of the population firing rate (Figure 2). More surprisingly, the approximately symmetric and idiosyncratic tuning to ABL and ILD in this state furnaces a nearly orthogonal representation of the two dimensions at the level of the population (Figure 5C). Although ILD and ABL are \u2018orthogonal\u2019 stimulus dimensions (Figure 1C), this finding is far from trivial because all our neurons are recorded from the same hemisphere. As we argued above, one could have expected that populations containing neurons from both hemispheres would be needed to reveal explicitly the differential nature of the ILD code (as described previously in Keating et al., 2015). Since neurons in the auditory pathway before the superior olive are uni-lateral, this kind of representation \u2014 faithful to the structure of the stimuli themselves (compare Figures 1C and 5C) \u2014 is constituted de novo and becomes available during cortical activation. The possibility of observing the full differential ILD code in a single hemisphere is consistent with lesion studies showing that ILD estimation close to the midline is still possible under uni-lateral inactivations of the auditory cortex (Malhotra and Lomber, 2007; Malhotra et al., 2008).\n\n### State-dependence of ILD-tuning at different sound levels\n\nWe explored the way in which stimulus intensity affects the coding of stimulus identity by quantifying how the interaction between ILD and ABL is represented by neural populations in the auditory cortex. We found that the effect of ABL on ILD tuning is also significantly shaped by the brain state. Stimulus intensity enhanced contralateral tuning during the inactive state both at the level of the population-averaged activity (Figure 2C) and at the single cell level (Figure 3\u2014figure supplement 5D\u2013E). Similar changes in gain have been observed in tuning curves to sound location (see e.g. Figure\u00a06 in Stecker et al., 2005) driven by changes in sound intensity and in tuning curves to the orientation of visual gratings (Skottun et al., 1987) driven by changes in stimulus contrast. If the same pattern held during cortical activation, one would see a strong correlation between the sign of the ILD term and the sign of the interaction term in Equation (1). These two quantities were, however, only weakly related across the population in the active state (Figure 3I\u00a0and Figure 3\u2014figure supplement 5F). At the population level, gain modulation in the inactive state is reflected in the overlap between the ILD and the ABL axes (Figure 5B,D), and in the level-dependence of the accuracy and bias of the decoders of sound lateralization (Figure 6B, C\u2013F). At the same time, the lack of a consistent pattern of gain modulation across the population in the active state results in the faithful orthogonal stimulus representation shown in Figure 5C,D and in the level-invariant accuracy of our lateralization decoders (Figure 6B, C\u2013F), similar to what was observed behaviorally (Recanzone and Beckerman, 2004; Stellmack et al., 2004; Nodal et al., 2008; Pardo-Vazquez et al., 2018). Presumably, if tuning curves for ILD were gain modulated in the standard fashion during the active state, the ILD and ABL axes in Figure 5C would still be approximately orthogonal, but the separation between the centroids for each ABL (the three approximately horizontal rows of large points in this figure) would grow with ABL. This would possibly lead to an increase in decoding accuracy with increasing ABL, unlike what is observed behaviorally.\n\nThe fact that, behaviorally, ILD discrimination is level-invariant has sparked interest in finding neurons representing ILD in a way that is explicitly invariant to sound level. Such explicitly invariant representations are generally not found (Park et al., 2004; Tsai et al., 2010; Kyweriga et al., 2014). Opponent-process models (Stecker et al., 2005; Tsai et al., 2010; Keating et al., 2015) suggest that explicitly invariant representations are not necessary for a functionally invariant representation. In these models, a feature can be invariantly represented by a population if the effect of intensity is the same on neurons oppositely tuned to the feature, so that the effect of intensity will not be present on the difference between the activity of these oppositely tuned cells. The mechanism for level invariance in our data during cortical activation is similar in spirit, although less organized, as the effect of ABL on ILD tuning is generally unstructured (Figure 3I and Figure 3\u2014figure supplement 5F). Invariance to certain stimulus features by means of approximately orthogonal representations between these and other \u2018nuisance\u2019 features across a neural population, has also been highlighted previously in the context of invariant object recognition in the ventral visual pathway (DiCarlo and Cox, 2007; Pagan et al., 2013; Rust, 2014).\n\n### State-dependence of trial-to-trial variability\n\nChanges in brain state have been shown to have a large effect on trial-to-trial variability and temporal fluctuations in neural activity (Poulet and Petersen, 2008; Renart et al., 2010; Ecker et al., 2014). Several studies addressed this issue by quantifying the effect of brain state on pairwise correlations in spike counts. These studies found that the mean pairwise correlation decreases with the level of cortical activation, sometimes to negligible levels. In turn, the positive correlations found during cortical inactivation reflect global coherent activity fluctuations across the population (Goard and Dan, 2009; Renart et al., 2010; Ecker et al., 2010; Ecker et al., 2014; Okun et al., 2015; Pachitariu et al., 2015; Beaman et al., 2017). Our results confirm these previous findings (Figure 4H).\n\nAt the population level, we found that the noise subspace becomes more anisotropic as the cortex becomes more inactivated. Moreover, the overall orientation of the noise subspace tends to align with the global activity axis, along which all neurons are modulated coherently. This noise structure impairs the representation of stimulus dimensions that also carry the population activity along the global axis. Because in the inactive state this is true for both ILD and ABL, the neural representation of ILD suffers and becomes ABL-dependent, as confirmed by our decoding results (Figure 6).\n\nThe near-zero mean correlation found in recordings of the most active states (Figure 4H) is consistent with both a spherical noise subspace (i.e. the dashed ellipsoid in Figure 5A looking more like a sphere), or with the existence of preferred noise directions that are approximately orthogonal to the diagonal direction (Montijn et al., 2016). Our data suggest the former scenario. This means that spiking correlations do not significantly constrain the accuracy of the population code during the active state. Consistent with this finding, we found effectively no difference between the accuracy of sound lateralization decoders using the actual data, or trial-shuffled data (Figure 6G), in this state.\n\n### Time-course of stimulus representations during the evoked response\n\nIn this study, we focused on quantifying the state-dependence of neural codes using spike counts, thus leaving for future analyses the important problem of the detailed temporal structure of the code. Nevertheless, inspection of the results using spike count windows of different lengths or centered at different time points already revealed some interesting findings.\n\nBrain state had a large impact on the structure of late sensory responses. Only in the active state the number of significantly tuned neurons increased from the onset (0\u201350 ms) to the late (100\u2013150 ms) period, which likely explains why decoding accuracy grew monotonically during the evoked response in this state, whereas it saturated after the onset in recordings during inactive states (Figure 6\u2014figure supplement 1A\u2013C). Many neurons in the active state displayed inhibitory responses (below baseline, see Figure 2\u2014figure supplement 2), especially in the late period. The approximate balance of excitatory and inhibitory responses was largely responsible for the weak modulation of the population-averaged response in the active state (Figure 2F) which dropped slightly below baseline in the late period (Figure 2E).\n\nThese findings raise the issue of whether the strong reorganization of the code across states that we have described is present already in the onset response, which typically receives more attention in auditory physiology. Our analyses suggested that this is indeed the case. At the single neuron level, the heterogeneity (and lack thereof) in tuning in the active (inactive) state is maintained in the onset period (Figure 3\u2014figure supplement 3). At the population level, the state dependence of the geometry of the population code is also maintained qualitatively if only onset responses are considered (Figure 5\u2014figure supplement 1). Thus, while late responses clearly contribute to the state-dependence of the full evoked response, onset responses contribute to it in a similar fashion.\n\n### Mechanisms of state-dependence\n\nWhat mechanisms could underlie the state-driven reorganization of sound-evoked responses that we have observed? Many studies have suggested that changes in the prevalence of slow global spiking coordination within cortical circuits can be mediated by changes in the effective level of \u2018adaptation\u2019 present in the circuit (Latham et al., 2000; Bazhenov et al., 2002; Compte et al., 2003; Parga and Abbott, 2007; Curto et al., 2009; Sanchez-Vives et al., 2010; Mochol et al., 2015). The key dynamical property of \u2018adaptation\u2019 is to generate slow negative feedback in the circuit dynamics. Thus, many different biophysical mechanisms could be responsible for it, including for instance slow activity-dependent hyperpolarizing currents (Compte et al., 2003), synaptic depression (Bazhenov et al., 2002), or feedback inhibition mediated by GABA-B receptors (Sanchez-Vives et al., 2010).\n\nAlthough the activation/inactivation continuum as we defined it here is one-dimensional, the space of global network regimes which we summarize as \u2018brain state\u2019 is surely higher dimensional. Even at the level of neuromodulation, cholinergic, noradrenergic and serotoninergic influences can have independent effects on cortical dynamics (Vanderwolf, 1988; Constantinople and Bruno, 2011; Polack et al., 2013), and different cell types can be responsible for (presumably different forms of) cortical desynchronization (Fu et al., 2014; Chen et al., 2015). Nevertheless, Clement et al. (2008)\u00a0found that state transitions under urethane resemble those observed between slow-wave and REM sleep, and have the same cholinergic origin. Activation of the nucleus basalis, directly or indirectly, desynchronizes the cortex (Goard and Dan, 2009; Sakata and Harris, 2012; Harris and Thiele, 2011). A recent study found that ACh-induced cortical activation is locally mediated by somatostatin (SOM) interneurons in visual cortex (Chen et al., 2015). Changes in the interplay between recurrent and feedforwad excitation and local inhibition could mediate the diversification of tuning profiles we have observed, specially taking into account that many stimulus-specific responses are inhibitory in the active state (Figure 2\u2014figure supplement 2). This is also consistent with recent theoretical studies suggesting that changes in local inhibition are the critical factor underlying differences in brain dynamics across different states of cortical activation (Stringer et al., 2016) or during attention (Kanashiro et al., 2017). The established role of ACh in mediating the effects of attention (Harris and Thiele, 2011; Thiele and Bellgrove, 2018) suggests a possible link between attention-driven desynchronization (Cohen and Maunsell, 2009) and the desynchronized activity we have studied.\n\n### Functional implications\n\nWhat are the functional consequences of the different coding schemes that we observe across brain states? The emphasis on difference (as opposed to sum) modes that is apparent in the most active states seems to be well suited for sensory representations supporting a process of discrimination. Decision variables in sensory discrimination tasks are posited to involve differences in activity between oppositely tuned populations of neurons (Gold and Shadlen, 2002; Machens et al., 2005; Brunton et al., 2013; Pardo-Vazquez et al., 2018). Indeed, our decoders for ILD end up subtracting the activity of neurons with coefficients $\\beta_{ILD}$ of different signs (fraction of non-zero decoder weights that have the same sign as $\\beta_{ILD}$ was 0.81\u00a0\u00b1\u00a00.08, mean\u00a0\u00b1\u00a0SD across sessions). As in engineering, this implements a process of common-mode-rejection that will render the discrimination process robust to overall changes in excitability, or any sources of noise causing common fluctuations in both relevant populations. Consistent with this interpretation, brain activation is seen during behavioral states of attentive wakefulness and active information sampling (Vanderwolf, 2003; Castro-Alamancos, 2004; Gervasoni et al., 2004; Poulet and Petersen, 2008; Harris and Thiele, 2011; Zagha and McCormick, 2014) during which the brain is presumably actively engaged in identifying the fine structure of the environment.\n\nThe functional role of the population structure in the inactive state is more uncertain. Brain inactivation is observed during immobility or \u2018automatic\u2019 behaviors during wakefulness (Vanderwolf, 2003; Castro-Alamancos, 2004; Gervasoni et al., 2004; Poulet and Petersen, 2008; Harris and Thiele, 2011; Zagha and McCormick, 2014), and during slow wave sleep (Steriade et al., 1990; Steriade et al., 1993; Steriade and McCarley, 2013). These observations, together with the fact that the strong global temporal fluctuations observed during this state have an internal origin (Sanchez-Vives and McCormick, 2000; Poulet et al., 2012), suggest that perhaps inactivated dynamics support an internal role, that is a role not directly related to the interrogation of the environment. Data showing that cortical upstate-onsets coincide with hippocampal sharp-wave-ripples (Battaglia et al., 2004), which are important for memory consolidation, support this view.\n\nRecent studies quantified the effect of rapid, trial-by-trial changes in the degree of desynchronization in auditory cortex during auditory detection in mice (McGinley et al., 2015a; McGinley et al., 2015b). They found that states of maximal synchronization and desynchronization, both led to errors (misses and false alarms respectively), with an intermediate state being associated with the best performance. These results suggest that the overall \u2018excitability\u2019 of the tissue might increase with the level of desynchronization. It will be of interest to explore how these findings generalize to sensory discrimination tasks where, by definition, the tendency to response is decoupled from correct performance.\n\n### Conclusions\n\nWe showed that the cortical activation continuum is associated with a complete reorganization of the geometry of the population code that effectively eliminates all influence of the average firing rate during states of strong cortical activation. This means that, for these states, all sources of variability (ILD, ABL and noise) are reflected in differences in the identity of the responding neurons, and not between the overall number of spikes fired by the population as a whole. As the cortex becomes more inactive, this identity code becomes progressively replaced by an intensity code, in which the total number of spikes fired by the population reflects both the ILD and ABL of the stimulus and trial-to-trial variability. The massive reorganization of sensory activity across levels of cortical activation that we have demonstrated in our study highlights the importance of a more detailed understanding of the cognitive/behavioral processes associated with the activation continuum and the functional role of brain state in general.\n\n## Materials and methods\n\n### Electrophysiology\n\n#### Surgery and anesthesia\n\nAll experimental procedures in this study, covered under project #2018/007 \u2018Principles of Sensory- and Memory-guided Auditory Decision Making: Behavior and Neural Basis\u2019, have been approved by the Champalimaud Foundation\u2019s animal welfare body.\n\nEighteen adult female Long-Evans rats (240\u2013400 g; Charles River, Italy) were used for electrophysiological recordings in this study. Seven animals were anesthetized with 1.65 g/kg urethane (solution at 25%, ip) and the rest with 1.35 g/kg urethane (solution at 20%, ip). All were given Atropine Methil-Nitrate (0.5 mg/Kg ip); Dexamethasone (1.2 mg/Kg ip); and saline (1 ml ip). Immediately before surgery Ketamine-Xylazine (1 ml/Kg of a solution containing 75 mg/ml of ketamine and 5 mg/ml of xylazine, ip) was administered, the rat was placed in a stereotaxic frame and 0.2 ml of lidocaine was injected sc in the scalp. Core body temperature was monitored with a rectal thermometer and maintained at 37\u00b0C with an electric heating pad. The temporal muscle was partially removed and a screw was implanted in the anterior part of the skull, using bone screws and acrylic cement. Then the head of the animal was held using the implanted screw and the mouthpiece and the ear bars of the stereotaxic were removed. Following stereotaxic coordinates and external landmarks in the temporal bone (Ogawa et al., 2011), a 3\u00a0\u00d7\u00a02 mm window was open in the skull on top of the auditory cortex. The dura was removed under a dissection microscope and the probe was positioned, with a manual micromanipulator, perpendicular to the brain surface, avoiding blood vessels. The skull cavity was kept moist with saline during this process.\n\n#### Experimental setup and stimulus generation\n\nSystem three equipment from Tucker-Davis Technologies (TDT, Alachua, FL), controlled by a personal computer running OpenProject (TDT), was used for stimulus presentation and data acquisition. The recordings were made in a double-wall anechoic chamber. The head of the rat was supported from the front and the area around the ears was unobstructed. Binaural sounds were presented from two loudspeakers (Knowles model number 2403 260 00029) placed in front of the ear canals at 0.5 cm distance. The speakers were calibrated before each experiment to flatten (\u00b12 dB SPL) their frequency response, using a Br\u00fcel and Kjaer Free-field $\\frac{1}{4}$-inch microphone. Stimuli were 150 ms broadband (5\u201320 kHz) noise burst with 5 ms raised-cosine onset/offset ramps generated by a TDT RZ6 module, with 24 bit precision at a 50 kHz sampling rate.\n\n#### Experimental procedure\n\nExtracellular recordings were performed with 64 channel (8 shanks \u00d7\u00a08 sites) silicon probes (Buzsaki64, NeuroNexus, Ann Arbor, MI). The probe was connected to an analog headstage, which sent the data to a PZ5 module (TDT). Raw electrophysiological data at a 24 kHz sampling rate was recorded with a RZ2 module (TDT) and stored, together with stimuli information and time stamps, in a computer for off-line analysis. The probe was advanced manually while visualizing the neural activity, and the final depth was adjusted to maximize the number of channels showing spikes and clear auditory evoked responses in the local field potential. Then, the craneotomy was filled with warm agarose at 5% in saline solution to protect the exposed cortex and provide lateral support to the probe shanks. The recording protocol included 30 min of spontaneous activity followed by the stimulation period, which lasted for about 1 hr. Noise bursts were presented at different intensities to each ear (interaural level difference, ILD) to create a percept of lateralization and the effect of sound intensity was tested by using different average binaural levels (ABLs). A total of 36 combinations (12 ILDs \u00d7 3 ABLs) were presented. ILDs were \u00b11.5, \u00b13, \u00b14.5, \u00b16, \u00b112, and \u00b120 dB; ABLs were 20, 40 and 60 dB SPL. Negative ILD values correspond to stimuli with higher intensity to the left ear (contralateral to the recording hemisphere). Each combination was presented 100 times, in pseudorandom order, with all 36 combinations being presented every 36 trials (except for rat #1 where stimuli were chosen randomly; this rat had 67\u2013138 repetitions per stimulus, with the same 3600 overall). The inter-stimulus interval changed randomly between 850 and 1150 ms across presentations.\n\n#### Spike sorting\n\nSingle units were isolated by a semi-automatic algorithm (https://sourceforge.net/projects/klustakwik) followed by manual clustering (https://github.com/klusta-team/klustaviewa), as described in Rossant et al. (2016). Single units selected for further analysis had less than 10% contamination in an absolute refractory period of 2 ms.\n\n#### Quality control and data preprocessing\n\nWe obtained 22 recording sessions from 18 animals. The recordings in one animal (#6) showed so little evoked activity that we excluded its sessions from further analysis. Among the remaining 20 sessions, several showed marked changes in the amount of cortical activation during the recording. We manually split three sessions into more active and more inactive parts, obtaining $n=23$\u00a0\u2018sessions\u2019 that were analyzed downstream. These sessions had 104\u00a0\u00b1\u00a023 (mean\u00a0\u00b1\u00a0SD) isolated neurons (min 67, max 174).\n\n### Data analysis\n\nThe full MATLAB code for the analysis is located at\u00a0https://github.com/dkobak/a1geometry\u00a0(Kobak, 2019; copy archived at https://github.com/elifesciences-publications/a1geometry). We made the spike count data (spike counts for each neuron for each stimulus presentation from \u221250 ms to 150 ms in 50 ms bins) available in the same repository. This allows to reproduce most of our figures. The complete dataset that was collected, including spike time data not analyzed here, is available upon reasonable request to the corresponding author.\n\n#### Statistical testing\n\nAll reported p-values for Pearson\u2019s correlation coefficients are computed using $t$-distribution. For paired tests we used Wilcoxon sign-rank test. We did not use power analysis to plan the sample size because our study is exploratory, not confirmatory. All reported p-values should be interpreted in this context.\n\n#### Measures of activation\n\nWe used a sliding (without overlaps) window of 30 s to compute measures of cortical activation. Inside each window, we used a sliding (without overlaps) sub-window of 20 ms and counted the total number of spikes (from all neurons) in each sub-window. If this number was 0, this sub-window was counted as a down state. We computed a fraction of down states as the fraction of down-state sub-windows in each window, and coefficient of variation (CV) as the standard deviation of spike counts divided by the mean spike count across all sub-windows in each window. We inspected the fraction of down states and the CV across time in each session, and manually split three sessions where they changed a lot (see above). Figure 1D shows the average fraction of down states and the average CV across all windows in each session. We use the average CV as our measure of activation for all downstream analysis.\n\nFor the conditioning analysis (Figure 2\u2014figure supplement 1), we split all stimuli presentations into those with no spikes from any of the neurons in the 50 ms window before stimulus onset (conditioning on down state) and the rest (conditioning on the up state). The rest of the analysis is fully explained in the Results section.\n\n#### Analysis of correlation matrices\n\nLet the number of neurons recorded in a session be $p$. The number of different stimuli is $36$ and the total number of stimuli presented during each session is $n=3600$ (except for the sessions that were split in two parts, as described above). The starting point of this analysis is $n\\timesp$ matrix of evoked responses averaged across the 150 ms window after stimulus onset.\n\nTo obtain the stimulus correlation matrix, we averaged the responses of each neuron to each stimulus over the repeated presentations of this stimulus, collected them into a $36\\timesp$ matrix $X$, standardized each column and computed the correlation matrix $X^{\u22a4}\u2062X/36$. This procedure can potentially introduce a bias towards the noise correlations. We have additionally used an unbiased estimate of signal correlations, splitting all trials into two parts, averaging over them separately to obtain $X_{1}$ and $X_{2}$, and estimating the signal correlation matrix as $X_{1}^{\u22a4}\u2062X_{2}/36$ (Stringer et al., 2018). This did not affect our conclusions.\n\nTo obtain the noise correlation matrix, for each neuron and each stimulus, we subtracted the average response over repetitions from each of the repetitions. We collected the resulting trial-to-trial deviations into a $n\\timesp$ matrix $X$, standardized each column and computed the correlation matrix $X^{\u22a4}\u2062X/n$. We used a sliding window of 11 trials (for each stimulus type) to subtract a running average, so that the noise correlation matrix were not influenced by any slow changes in tuning that could happen within a session. This had only a minor effect on Figure 4 (compared to using the global average).\n\nWe estimated the dimensionality of these matrices (Figure 4E and J) using a permutation-based Monte Carlo approach. On each of the 100 Monte Carlo iterations, we permuted the values in each column of the $X$ matrix, independently in each column. This sets all population correlations to zero. We then computed the correlation matrix and its eigenvalues, sorted the eigenvalues in the decreasing order, and found 99th percentile across Monte Carlo repetitions. The dimensionality was defined as the number of the original eigenvalues (when sorted in the decreasing order) that were larger than the corresponding Monte Carlo percentile value.\n\n#### Stimulus and noise subspaces\n\nWe again average the responses of each neuron to each stimulus over the repeated presentations of this stimulus, collecting the resulting mean responses into a $36\\timesp$ matrix $X$. We define ILD axis as the first principal component direction of $X$ after it is averaged over ABL (yielding a $12\\timesp$ matrix). Similarly, we define ABL axis as the first principal component direction of $X$ after it is averaged over ILD (yielding a $3\\timesp$ matrix). We define signal plane as the plane spanned by these two axes. An angle between a plane A and a vector B was defined as the angle between B and its projection on A.\n\nWhen projecting the single-trial data onto the signal plane in Figure 5B\u2013C, we subtracted the mean response over all stimuli (mean of the $36\\timesp$ matrix $X$) from each single trial.\n\nFor demixed PCA (Kobak et al., 2016), we represented the $n\\timesp$ matrix as a four-dimensional array $X_{i\u2062j\u2062k\u2062l}$ with a separate dimension for neuron id, ILD, ABL, and stimulus repetition number. Briefly, dPCA decomposes population activity into ILD components, ABL components, ILD\u22c5ABL interaction components, and the noise, and finds a decoder and an encoder for each component. A decoder is a linear readout that allows to obtain a component from the population activity and an encoder is an axis that shows how strongly each neuron is expressing this component. We used MATLAB dPCA implementation from https://github.com/machenslab/dpca and used built-in cross-validation to get the optimal regularization parameter. The encoding axis of the leading ILD component was always very similar to the ILD axis defined above, and the same was true for the ABL axes. We recomputed the correlations shown in Figure 5D\u2013G using these two dPCA axes and obtained practically identical results (all differences in correlation coefficients within 0.01).\n\n#### Decoding\n\nAll decoding (classification/regression) analyses were run for each session separately. We used either logistic regression (for binary classification) or linear regression with elastic net regularization from the glmnet MATLAB library (Friedman et al., 2010). The $\\alpha$ parameter that determines the balance between the ridge and the lasso regularization penalties was fixed at $\\alpha=.5$. We used nested cross-validation to choose the optimal value of the regularization parameter $\\lambda$ and to obtain an unbiased estimate of the performance. The outer loop was 10-fold cross-validation. The inner loop was performed using the cvglmnet function that does 10-fold cross-validation internally. We then used the value of $\\lambda$ that yielded minimum cross-validation loss (lambda_min) to make the test-set predictions. Outer-loop performance was assessed via test-set accuracy for binary classification and test-set $R^{2}$ for regression. We trained the following decoders:\n\n#### Assessing performance of binary classifiers\n\nFor every binary classifier that we trained, we assessed its performance for each ILD/ABL combination (meaning that we computed the test-set accuracy for each ILD/ABL stimulus separately). For each ABL, we then fit a logistic curve (using nlninfit in MATLAB) of the form\n\n$$\ny=a+(b-a)\u22c5\\frac{1}{exp\u2061(-c\u2062(x-d))},\n$$\n\nwhere $x$ is the ILD value and $y$ is the fraction of ipsilateral classifications (Figure 6A\u2013B). Parameters $a$ and $b$ specify the left and the right asymptote values, parameter $c$ specifies the slope in the middle of the curve, and parameter $d$ specifies the horizontal position of the middle. A perfect classifier would have $a=0$, $b=1$, $c=\u221e$, and $d=0$. We defined just noticeable difference (JND) as the horizontal distance between the points on the curve that yield 75% accuracy ($y=.25$ and $y=.75$).\n\nTo have one single number to describe the classifier performance for each ABL, we used the integral performance for ILDs from \u221220 to +20 under our logistic fit, that is\n\n$$\n\\frac{1}{40}[\\int_{0}^{20}ydx+\\int_{\u221220}^{0}(1\u2212y)dx].\n$$\n\nThis measure was used for Figure 6C\u2013H. For several sessions/ABLs, nlninfit returned a convergence error indicating a poor logistic fit; we excluded these cases from the analysis (0 for Figure 6C\u2013E, 2 for Figure 6F, 2 for Figure 6G and 4 for Figure 6H).\n\nFor the subsampling and time-resolved analyses shown in Figure 6\u2014figure supplement 1, we used an accuracy simply averaged over all ILDs (as opposed to the integral accuracy estimated via the logistic fit), because logistic fits were unreliable for small numbers of neurons or short time windows.\n\n#### Model selection for decoder performance summaries\n\nThe integral accuracies shown in Figure 6C\u2013E can be fit with three separate regressions (six parameters): one for each ABL. Our regression model described in the main text only had four parameters and was preferred by both AIC and BIC. We only report BIC as the more stringent criterion. For simplicity, we used the same regression model for three variants of the classification analysis (Figure 6F\u2013H).\n",
+      "created_at": "2025-12-02T09:33:53.479253Z"
+    },
+    {
+      "id": "fbf6d546-8128-41be-a610-8ce144b9a803",
+      "submission_id": "38a03cc4-298b-4c2e-9b6c-71707208e50d",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Emilio Salinas, Wake Forest School of Medicine United States\n\nReviewers:\n- Dan FM Goodman, Imperial College London United Kingdom\n\n## Review text\n\nDOI: [10.7554/eLife.44526.021](https://doi.org/10.7554/eLife.44526.021)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"State-dependent geometry of population activity in rat auditory cortex\" for consideration by eLife. Your article has been reviewed by three peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Eve Marder as the Senior Editor. The following individuals involved in review of your submission have agreed to reveal their identity: Dan Goodman (Reviewer #1).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nKobak et al. study the representation of sounds in primary auditory cortex (A1) as a function of their overall loudness (absolute binaural level or ABL) and of their azimuth (inter-aural level difference or ILD). Using silicon probe recordings of populations of neurons in urethane anesthetized rats, the authors ask how the encoding of ABL and ILD depends on the brain state. They report on two main discoveries. First, they find that the more activated the state, the weaker is the preference of the neurons towards contralateral and/or loud sounds. Second, they consider the geometry of the firing rate vector, and report that in the more active states the representations of ABL and ILD become almost orthogonal to each other and to the axis of overall activity level.\n\nThe paper is well written and addresses a major issue of interest to both theorists and experimentalists. The results will help guide the theory of neural coding, and provide a useful framework for future analyses of population activity. What makes the study most interesting is the state dependence reported by the authors, which can be seen in simpler measures and is nicely summarized with their geometric picture. Prior work suggests that neural codes themselves are state dependent, and the current manuscript is a significant new contribution to this line of research.\n\nHowever, a few issues were identified that need to be addressed before the manuscript can be published.\n\nEssential revisions:\n\n1) On the z-score(Mean firing rate) formula, Equation 1: I think the \"subtracting 40\" from the ABL values needs some better justification. Why 40? Also, I'd like to see a short explanation, and certainly a reference, justifying why the interaction term (ABL-40)*ILD is the right one for capturing the effects of gain modulation. Most importantly, given that the gain modulation is not working quite as expected, I would really like to know what happens when you remove that interaction term from your formula. This will yield different fits for \u03b2ILD and \u03b2ABL. If you re-do the analyses of Figure 3 using those fits, are the results qualitatively the same? Given that many of your insights depend on interpreting these coefficients, I'd like to make sure these results don't depend too much on the precise form you chose for Equation 1.\n\n2) It appears that the geometry analyses were carried out using spike counts over the entire 150ms duration of the stimulus. However the PSTHs (Figure 2 and Figure 2\u2014figure supplement 1) demonstrate that in the active state (or in up states) the late part of the response consists of reduction in firing rate relative to the baseline, which is not the case for the inactive state. It should be clarified whether this suppression of firing is the key to the orthogonality of the representations of ABL or ILD, or if it holds for the onset response as well. Also, is the 1st mode (PC) of the onset response (20-40ms) the same as the 1st mode of the late (70-150ms) portion of the response? Related: is it the case that the values in Figure 3\u2014figure supplement 3A and B are (almost) identical whereas the values in Figure 3\u2014figure supplement 3E and F are not? I believe providing this information is of major importance, e.g. it might suggest that in the active state the response has a second part, which is absent in the inactive state.\n\n3) One of the main shortcomings of the study is that it was performed under anesthesia, hence there is always the question of to what extent the results apply to awake and behaving rodents. This would be even more worrying if it turns out that suppression of firing by the auditory stimulus is key to the presented results (point 3 above), as that would rely on the existence of a highly active state which seems rather unique to urethane. Indeed, McGinley et al. (McGinley et al., 2015) suggest that the best brain state for auditory detection (in awake and behaving rodents) is of moderate rather than high activation. At the very least this point should be included in the Discussion.\n\n4) In the analyses of the signal and noise correlation matrices, you compute (a) mean correlation, (b) fraction of variance by first PCA component, and (c) the dimensionality. This last item is not as self-explanatory as the first two, and it's important to say a bit more in the main text about what exactly you mean by \"dimensionality,\" and how you estimate it. In other words, please don't relegate the entire discussion of this to the Materials and methods, as it is an important point.\n\n5) If I understand correctly the evoked response of every recorded neuron was used. In such studies it is typical to find a substantial percentage of neurons without statistically significant sensory responses. First, it is important to report the percentage of neurons with significant ABL/ILD tuning as a function of brain state. Second, what is the impact of those non-tuned neurons? Some of the analyses (e.g. Figure 3) would benefit if such neurons were excluded. In fact, one probably should only use neurons that show significant tuning to ABL or ILD (or their interaction), otherwise neurons that simply respond to an up-state triggered by the stimulus (Figure 2\u2014figure supplement 1D) would be included as well.\n",
+      "created_at": "2025-12-02T09:33:53.479253Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T09:33:53.479253Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T09:33:53.479253Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "d0538a1e-a17a-4c86-9ca2-292e3707d5f5",
+      "content_id": "007b304d-8536-4649-8159-6d9da2f112ac",
+      "claim_id": "C2",
+      "claim": "Under urethane anesthesia, the cortex undergoes spontaneous transitions between states with varying degrees of activation.",
+      "claim_type": "EXPLICIT",
+      "source": "Under urethane anaesthesia, the cortex undergoes spontaneous transitions between states with varying degrees of 'activation', also known as 'desynchronization' (Clement et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The statement is supported by a citation to Clement et al., 2008.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:33:53.479253Z"
+    },
+    {
+      "id": "71daa5bd-22e7-4bfd-a05f-86c251c503b2",
+      "content_id": "007b304d-8536-4649-8159-6d9da2f112ac",
+      "claim_id": "C3",
+      "claim": "During the inactive state, there are globally correlated low-frequency fluctuations in population activity.",
+      "claim_type": "EXPLICIT",
+      "source": "As shown previously (Curto et al., 2009; Renart et al., 2010), during the inactive state, there are globally correlated low-frequency fluctuations in population activity (Figure 1A; also known as the 'slow oscillation').",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by citations to previous work and reference to Figure 1A showing raster plots.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:33:53.479253Z"
+    },
+    {
+      "id": "1da56154-0897-4a8e-b9d7-ac2472fefb43",
+      "content_id": "007b304d-8536-4649-8159-6d9da2f112ac",
+      "claim_id": "C4",
+      "claim": "In the inactive state, there are brief periods when all neurons are silent (down states) separated by periods of firing (up states).",
+      "claim_type": "EXPLICIT",
+      "source": "In this state, there are brief periods when all neurons are silent (down states) separated by periods of firing (up states).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript directly describes the up-down state dynamics observed in the data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:33:53.479253Z"
+    },
+    {
+      "id": "db06860c-0c6b-431c-9d2c-a4c011e8d4d4",
+      "content_id": "007b304d-8536-4649-8159-6d9da2f112ac",
+      "claim_id": "C5",
+      "claim": "During the active state, neurons fire tonically in a globally uncorrelated fashion.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, during the active state, neurons fire tonically in a globally uncorrelated fashion (Figure 1B), as evident from the lack of vertical stripes in the raster (Renart et al., 2010; Ecker et al., 2010).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by reference to Figure 1B and citations to previous work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:33:53.479253Z"
+    },
+    {
+      "id": "cae3169b-c695-48d3-bc95-0edf5bcf6210",
+      "content_id": "007b304d-8536-4649-8159-6d9da2f112ac",
+      "claim_id": "C6",
+      "claim": "Rodents rely mainly on ILD to localize sounds in the horizontal plane because they do not use phase information for sound localization.",
+      "claim_type": "EXPLICIT",
+      "source": "Since rodents do not use phase information for sound localization, they rely mainly on ILD to localize sounds in the horizontal plane (Wesolek et al., 2010; Lauer et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Wesolek et al., 2010 and Lauer et al., 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:33:53.479253Z"
+    },
+    {
+      "id": "505029ec-a194-4f26-a207-104a54dab169",
+      "content_id": "007b304d-8536-4649-8159-6d9da2f112ac",
+      "claim_id": "C7",
+      "claim": "Neurons in the auditory cortex in several species, including rats, represent ILD in the form of broad tuning curves with maximum slope at near-zero ILDs.",
+      "claim_type": "EXPLICIT",
+      "source": "Neurons in the auditory cortex in several species, including rats, represent ILD in the form of broad tuning curves with maximum slope at near-zero ILDs, that is corresponding to sounds arriving from the front of the animal (Stecker et al., 2005; Campbell et al., 2006; Yao et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to multiple studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:33:53.479253Z"
+    },
+    {
+      "id": "e59e642b-b7e0-4393-be83-21c8fbae57f2",
+      "content_id": "007b304d-8536-4649-8159-6d9da2f112ac",
+      "claim_id": "C9",
+      "claim": "An increase in overall stimulus intensity (ABL) leads to increased slope of the ILD tuning in inactive sessions.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed that an increase in overall stimulus intensity (ABL) leads to the increased slope of the ILD tuning: for ABLs 20, 40, and 60 dB, the absolute value of the slope of firing rate regressed on ILD increased from 0.012 to 0.018 to 0.028 (and from 0.022 to 0.026 to 0.048 for onset responses).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript reports specific numerical values for the slopes at different ABLs.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:33:53.479253Z"
+    },
+    {
+      "id": "067da5b7-b8e0-4488-a1b2-c10794aade6d",
+      "content_id": "007b304d-8536-4649-8159-6d9da2f112ac",
+      "claim_id": "C11",
+      "claim": "In the active state, the responses to different stimuli are similar and strongly overlap without a pronounced monotonic ILD or ABL tuning.",
+      "claim_type": "EXPLICIT",
+      "source": "In the active state the picture is different (Figure 2D\u2013F). Here, the responses are similar and strongly overlap without a pronounced monotonic ILD or ABL tuning.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript describes the observation and references Figures 2D-F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:33:53.479253Z"
+    },
+    {
+      "id": "6958b690-18e5-4ad9-9a0b-adaa936e4d71",
+      "content_id": "007b304d-8536-4649-8159-6d9da2f112ac",
+      "claim_id": "C12",
+      "claim": "In the active state, the tuning curve displays very weak contralateral tuning and is approximately flat near the midline.",
+      "claim_type": "EXPLICIT",
+      "source": "Especially close to the midline, which is the most critical stimulus region where behavioral accuracy is the highest (Heffner and Heffner, 1988; Recanzone et al., 1998; Recanzone and Beckerman, 2004), the tuning curve displays very weak contralateral tuning and is approximately flat, meaning that all stimuli evoke roughly the same neural response (number of spikes) in the auditory cortex of a single hemisphere.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes the observation and cites behavioral studies.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:33:53.479253Z"
+    },
+    {
+      "id": "3dc97f5f-eca9-4f90-9d78-47c87af84029",
+      "content_id": "007b304d-8536-4649-8159-6d9da2f112ac",
+      "claim_id": "C15",
+      "claim": "In the active state, the distribution of linear coefficients is roughly symmetric with respect to the horizontal and the vertical axes.",
+      "claim_type": "EXPLICIT",
+      "source": "In the active state the situation is again different (Figure 3D\u2013F). The distribution of linear coefficients is roughly symmetric with respect to the horizontal and the vertical axes.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript describes the observation and references Figures 3D-F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:33:53.479253Z"
+    },
+    {
+      "id": "a6861b48-210c-4939-9087-d9da9d36388d",
+      "content_id": "007b304d-8536-4649-8159-6d9da2f112ac",
+      "claim_id": "C18",
+      "claim": "The tuning heterogeneity in the active state was not explained by the physical location of the neurons in the tissue.",
+      "claim_type": "EXPLICIT",
+      "source": "This tuning heterogeneity was not explained by the physical location of the neurons in the tissue: it persisted within individual shanks of our recording probes (8 shanks spaced 200 \u03bcm apart; Figure 3\u2014figure supplement 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript describes the analysis and references Figure 3\u2014figure supplement 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:33:53.479253Z"
+    },
+    {
+      "id": "57fa0779-8ec8-448e-ab3b-2405a5560332",
+      "content_id": "007b304d-8536-4649-8159-6d9da2f112ac",
+      "claim_id": "C20",
+      "claim": "Up-down fluctuations in the inactive state induce positive correlations between most neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "The reason for this is well understood (Renart et al., 2010; Ecker et al., 2014; Okun et al., 2015): up-down fluctuations in the inactive state (Figure 1A) induce positive correlations between most neurons.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript explains the mechanism and cites previous work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:33:53.479253Z"
+    },
+    {
+      "id": "61796544-121b-4796-a2ec-76bf0247e87f",
+      "content_id": "007b304d-8536-4649-8159-6d9da2f112ac",
+      "claim_id": "C26",
+      "claim": "In the active state, different stimuli evoke approximately the same number of spikes from the population as a whole.",
+      "claim_type": "EXPLICIT",
+      "source": "This shows that, in the active state, different stimuli evoke approximately the same number of spikes from the population as a whole, whereas in the inactive state different stimuli evoke different numbers of spikes from the population.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes the observation based on the analysis of the angle between signal plane and global axis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:33:53.479253Z"
+    },
+    {
+      "id": "5154768b-4b05-4ce5-a101-d69bfc365ddb",
+      "content_id": "007b304d-8536-4649-8159-6d9da2f112ac",
+      "claim_id": "C27",
+      "claim": "In the inactive state, the performance of the ILD sign classifier clearly decreases and becomes biased (asymmetric) with decreasing ABL.",
+      "claim_type": "EXPLICIT",
+      "source": "The performance clearly decreases and becomes biased (asymmetric) with decreasing ABL.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes the observation from the decoding analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:33:53.479253Z"
+    },
+    {
+      "id": "c846d5f6-2234-4b9c-8e48-1373bed1fa0e",
+      "content_id": "007b304d-8536-4649-8159-6d9da2f112ac",
+      "claim_id": "C28",
+      "claim": "In the active state, the neurometric curves for three ABLs strongly overlap, are approximately symmetric, and display little bias.",
+      "claim_type": "EXPLICIT",
+      "source": "Figure 6B shows the same analysis for the active sessions. Here, the neurometric curves for three ABLs strongly overlap, are approximately symmetric, and display little bias.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript describes the observation and references Figure 6B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:33:53.479253Z"
+    },
+    {
+      "id": "05e45878-2eb7-43e2-95c6-866aae33fe99",
+      "content_id": "007b304d-8536-4649-8159-6d9da2f112ac",
+      "claim_id": "C29",
+      "claim": "The JND in the active state ranges from 2.5 to 3.4 dB, which is similar to behavioral values measured in other species.",
+      "claim_type": "EXPLICIT",
+      "source": "JND ranges from 2.5 to 3.4 which is similar to behavioral values measured in other species (Scott et al., 2007; Keating et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript reports the JND values and cites behavioral studies.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:33:53.479253Z"
+    },
+    {
+      "id": "8b009638-2c93-4791-90a3-c6a6f93bcb55",
+      "content_id": "007b304d-8536-4649-8159-6d9da2f112ac",
+      "claim_id": "C30",
+      "claim": "The average JND of rats in a behavioral study was 2.2 dB, slightly smaller than the decoded JND in the active state.",
+      "claim_type": "EXPLICIT",
+      "source": "We have recently studied ILD discrimination in rats using a subset of stimuli used here with ILDs between \u00b16 dB (Pardo-Vazquez et al., 2018). The average JND of rats was 2.2 dB, thus just slightly smaller than the decoded JND in the active state.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript reports the behavioral JND and cites the study.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:33:53.479253Z"
+    },
+    {
+      "id": "0b7b243c-60ac-4b8e-b934-ac8efdb5f1ba",
+      "content_id": "007b304d-8536-4649-8159-6d9da2f112ac",
+      "claim_id": "C31",
+      "claim": "The classification accuracy increased with the number of neurons and did not saturate when using all available neurons, either in the active or inactive state.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, we found that the classification accuracy increased with the number of neurons and did not saturate when using all available neurons, either in the active or inactive state (Figure 6\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript reports the observation and references Figure 6\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:33:53.479253Z"
+    },
+    {
+      "id": "83381fa0-a4ab-45f8-bfce-d3cfbe80d88b",
+      "content_id": "007b304d-8536-4649-8159-6d9da2f112ac",
+      "claim_id": "C32",
+      "claim": "In the active state, the accuracy increased with the length of the spike count window and did not saturate at 150 ms.",
+      "claim_type": "EXPLICIT",
+      "source": "We also found that the accuracy increased with the length of the spike count window and did not saturate at 150 ms in the active state.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript reports the observation from the time-resolved analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:33:53.479253Z"
+    },
+    {
+      "id": "b20c178e-c614-468e-9883-b7dfbf0d5e78",
+      "content_id": "007b304d-8536-4649-8159-6d9da2f112ac",
+      "claim_id": "C33",
+      "claim": "In the inactive state, the decoding accuracy tended to saturate at ~50 ms, converging to an ABL-dependent value.",
+      "claim_type": "EXPLICIT",
+      "source": "In the inactive state, it did tend to saturate at ~50 ms, converging to an ABL-dependent value (Figure 6\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript reports the observation and references Figure 6\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:33:53.479253Z"
+    },
+    {
+      "id": "98fbbb82-3479-43f0-8bea-1cc75a769092",
+      "content_id": "007b304d-8536-4649-8159-6d9da2f112ac",
+      "claim_id": "C35",
+      "claim": "In the inactive state, the difference in decoding performance between ABLs was pronounced.",
+      "claim_type": "EXPLICIT",
+      "source": "In recordings of the inactive state, on the other hand, the difference between ABLs was pronounced, in agreement with Figure 6A\u2013B.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript describes the observation and references Figures 6A-B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:33:53.479253Z"
+    },
+    {
+      "id": "961a78a0-10e5-4cff-b0c0-c733562bb1ee",
+      "content_id": "007b304d-8536-4649-8159-6d9da2f112ac",
+      "claim_id": "C36",
+      "claim": "In the active state, the sign of ILD can be classified with an ABL-invariant decoder.",
+      "claim_type": "EXPLICIT",
+      "source": "The difference is absent in the active state, meaning that the sign of ILD can be classified with an ABL-invariant decoder.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes the observation from comparing common and ABL-specialized classifiers.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:33:53.479253Z"
+    },
+    {
+      "id": "ad38a0bc-8d05-44bd-8a27-43ca8f5dd5da",
+      "content_id": "007b304d-8536-4649-8159-6d9da2f112ac",
+      "claim_id": "C37",
+      "claim": "In the inactive state, the noise correlations impair the accuracy of the code.",
+      "claim_type": "EXPLICIT",
+      "source": "In other words, the noise correlations in the inactive state impair the accuracy of the code, consistent with our observations above that the noise subspace is aligned with the stimulus subspace in the inactive state.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes the conclusion from the shuffling analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:33:53.479253Z"
+    },
+    {
+      "id": "777319b4-0ad4-4207-9a05-179c5c2c03ed",
+      "content_id": "007b304d-8536-4649-8159-6d9da2f112ac",
+      "claim_id": "C38",
+      "claim": "In the active state, spiking correlations do not significantly constrain the accuracy of the population code.",
+      "claim_type": "EXPLICIT",
+      "source": "This means that spiking correlations do not significantly constrain the accuracy of the population code during the active state.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes the conclusion from the shuffling analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:33:53.479253Z"
+    },
+    {
+      "id": "d6113c8e-2066-49fe-bee3-c12b013f5f79",
+      "content_id": "007b304d-8536-4649-8159-6d9da2f112ac",
+      "claim_id": "C39",
+      "claim": "Only in the active state the number of significantly tuned neurons increased from the onset (0\u201350 ms) to the late (100\u2013150 ms) period.",
+      "claim_type": "EXPLICIT",
+      "source": "Only in the active state the number of significantly tuned neurons increased from the onset (0\u201350 ms) to the late (100\u2013150 ms) period, which likely explains why decoding accuracy grew monotonically during the evoked response in this state, whereas it saturated after the onset in recordings during inactive states (Figure 6\u2014figure supplement 1A\u2013C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript reports the observation and references Figure 6\u2014figure supplement 1A\u2013C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:33:53.479253Z"
+    },
+    {
+      "id": "fcec1ece-ed7a-4522-ae0e-732c1ed0e3e1",
+      "content_id": "007b304d-8536-4649-8159-6d9da2f112ac",
+      "claim_id": "C40",
+      "claim": "Many neurons in the active state displayed inhibitory responses (below baseline), especially in the late period.",
+      "claim_type": "EXPLICIT",
+      "source": "Many neurons in the active state displayed inhibitory responses (below baseline, see Figure 2\u2014figure supplement 2), especially in the late period.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript describes the observation and references Figure 2\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:33:53.479253Z"
+    },
+    {
+      "id": "dc24eeae-eb0e-40db-be39-c4c47e03820c",
+      "content_id": "007b304d-8536-4649-8159-6d9da2f112ac",
+      "claim_id": "C41",
+      "claim": "The approximate balance of excitatory and inhibitory responses was largely responsible for the weak modulation of the population-averaged response in the active state.",
+      "claim_type": "EXPLICIT",
+      "source": "The approximate balance of excitatory and inhibitory responses was largely responsible for the weak modulation of the population-averaged response in the active state (Figure 2F) which dropped slightly below baseline in the late period (Figure 2E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript describes the inference and references Figures 2E and 2F.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:33:53.479253Z"
+    },
+    {
+      "id": "4966f883-eb1a-4279-a240-7d8805b4c23f",
+      "content_id": "007b304d-8536-4649-8159-6d9da2f112ac",
+      "claim_id": "C42",
+      "claim": "At the single neuron level, the heterogeneity (and lack thereof) in tuning in the active (inactive) state is maintained in the onset period.",
+      "claim_type": "EXPLICIT",
+      "source": "At the single neuron level, the heterogeneity (and lack thereof) in tuning in the active (inactive) state is maintained in the onset period (Figure 3\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript describes the observation and references Figure 3\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:33:53.479253Z"
+    },
+    {
+      "id": "d22e24fc-7c7d-49c0-9043-0479ce6ff966",
+      "content_id": "007b304d-8536-4649-8159-6d9da2f112ac",
+      "claim_id": "C43",
+      "claim": "At the population level, the state dependence of the geometry of the population code is maintained qualitatively if only onset responses are considered.",
+      "claim_type": "EXPLICIT",
+      "source": "At the population level, the state dependence of the geometry of the population code is also maintained qualitatively if only onset responses are considered (Figure 5\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript describes the observation and references Figure 5\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:33:53.479253Z"
+    },
+    {
+      "id": "0dd0d1ee-703c-4fc0-9a8d-385b704b42ae",
+      "content_id": "007b304d-8536-4649-8159-6d9da2f112ac",
+      "claim_id": "C44",
+      "claim": "Changes in the prevalence of slow global spiking coordination within cortical circuits can be mediated by changes in the effective level of 'adaptation' present in the circuit.",
+      "claim_type": "EXPLICIT",
+      "source": "Many studies have suggested that changes in the prevalence of slow global spiking coordination within cortical circuits can be mediated by changes in the effective level of 'adaptation' present in the circuit (Latham et al., 2000; Bazhenov et al., 2002; Compte et al., 2003; Parga and Abbott, 2007; Curto et al., 2009; Sanchez-Vives et al., 2010; Mochol et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites multiple studies supporting this mechanism.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:33:53.479253Z"
+    },
+    {
+      "id": "e05e14a7-1ca7-4625-b2a5-74322615ff18",
+      "content_id": "007b304d-8536-4649-8159-6d9da2f112ac",
+      "claim_id": "C45",
+      "claim": "State transitions under urethane resemble those observed between slow-wave and REM sleep, and have the same cholinergic origin.",
+      "claim_type": "EXPLICIT",
+      "source": "Nevertheless, Clement et al. (2008) found that state transitions under urethane resemble those observed between slow-wave and REM sleep, and have the same cholinergic origin.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites Clement et al. (2008) for this finding.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:33:53.479253Z"
+    },
+    {
+      "id": "d25b250f-232f-47a5-ba5b-50ab904d9ab1",
+      "content_id": "007b304d-8536-4649-8159-6d9da2f112ac",
+      "claim_id": "C46",
+      "claim": "Activation of the nucleus basalis, directly or indirectly, desynchronizes the cortex.",
+      "claim_type": "EXPLICIT",
+      "source": "Activation of the nucleus basalis, directly or indirectly, desynchronizes the cortex (Goard and Dan, 2009; Sakata and Harris, 2012; Harris and Thiele, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites multiple studies supporting this mechanism.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:33:53.479253Z"
+    },
+    {
+      "id": "a32d7b82-e4da-4cf9-8a19-4808290d5373",
+      "content_id": "007b304d-8536-4649-8159-6d9da2f112ac",
+      "claim_id": "C47",
+      "claim": "ACh-induced cortical activation is locally mediated by somatostatin (SOM) interneurons in visual cortex.",
+      "claim_type": "EXPLICIT",
+      "source": "A recent study found that ACh-induced cortical activation is locally mediated by somatostatin (SOM) interneurons in visual cortex (Chen et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites Chen et al., 2015 for this finding.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:33:53.479253Z"
+    },
+    {
+      "id": "361729ba-a4c5-4cdb-a72a-1a718f5ab686",
+      "content_id": "007b304d-8536-4649-8159-6d9da2f112ac",
+      "claim_id": "C48",
+      "claim": "Decision variables in sensory discrimination tasks are posited to involve differences in activity between oppositely tuned populations of neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Decision variables in sensory discrimination tasks are posited to involve differences in activity between oppositely tuned populations of neurons (Gold and Shadlen, 2002; Machens et al., 2005; Brunton et al., 2013; Pardo-Vazquez et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites multiple studies supporting this theoretical framework.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:33:53.479253Z"
+    },
+    {
+      "id": "b8a2515f-7949-46f2-a566-07278397bff5",
+      "content_id": "007b304d-8536-4649-8159-6d9da2f112ac",
+      "claim_id": "C49",
+      "claim": "Brain activation is seen during behavioral states of attentive wakefulness and active information sampling.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with this interpretation, brain activation is seen during behavioral states of attentive wakefulness and active information sampling (Vanderwolf, 2003; Castro-Alamancos, 2004; Gervasoni et al., 2004; Poulet and Petersen, 2008; Harris and Thiele, 2011; Zagha and McCormick, 2014) during which the brain is presumably actively engaged in identifying the fine structure of the environment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites multiple studies supporting this observation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:33:53.479253Z"
+    },
+    {
+      "id": "97ab0804-2348-4f89-a5af-1456fea8e2d6",
+      "content_id": "007b304d-8536-4649-8159-6d9da2f112ac",
+      "claim_id": "C50",
+      "claim": "Brain inactivation is observed during immobility or 'automatic' behaviors during wakefulness.",
+      "claim_type": "EXPLICIT",
+      "source": "Brain inactivation is observed during immobility or 'automatic' behaviors during wakefulness (Vanderwolf, 2003; Castro-Alamancos, 2004; Gervasoni et al., 2004; Poulet and Petersen, 2008; Harris and Thiele, 2011; Zagha and McCormick, 2014), and during slow wave sleep (Steriade et al., 1990; Steriade et al., 1993; Steriade and McCarley, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites multiple studies supporting this observation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:33:53.479253Z"
+    },
+    {
+      "id": "075afdcb-bf81-4361-9ca6-f54e7bf9fd7f",
+      "content_id": "007b304d-8536-4649-8159-6d9da2f112ac",
+      "claim_id": "C51",
+      "claim": "Cortical upstate-onsets coincide with hippocampal sharp-wave-ripples, which are important for memory consolidation.",
+      "claim_type": "EXPLICIT",
+      "source": "Data showing that cortical upstate-onsets coincide with hippocampal sharp-wave-ripples (Battaglia et al., 2004), which are important for memory consolidation, support this view.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites Battaglia et al., 2004 for this finding.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:33:53.479253Z"
+    },
+    {
+      "id": "01f3421c-729f-466a-beb4-225e382c0169",
+      "content_id": "007b304d-8536-4649-8159-6d9da2f112ac",
+      "claim_id": "C52",
+      "claim": "States of maximal synchronization and desynchronization both led to errors (misses and false alarms respectively) in auditory detection tasks in mice, with an intermediate state being associated with the best performance.",
+      "claim_type": "EXPLICIT",
+      "source": "They found that states of maximal synchronization and desynchronization, both led to errors (misses and false alarms respectively), with an intermediate state being associated with the best performance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes findings from McGinley et al., 2015a; McGinley et al., 2015b.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:33:53.479253Z"
+    },
+    {
+      "id": "cfddc53d-6d7e-4652-b786-c60a0097f5db",
+      "content_id": "007b304d-8536-4649-8159-6d9da2f112ac",
+      "claim_id": "C53",
+      "claim": "For active states, all sources of variability (ILD, ABL and noise) are reflected in differences in the identity of the responding neurons, and not in the overall number of spikes fired by the population as a whole.",
+      "claim_type": "EXPLICIT",
+      "source": "We showed that the cortical activation continuum is associated with a complete reorganization of the geometry of the population code that effectively eliminates all influence of the average firing rate during states of strong cortical activation. This means that, for these states, all sources of variability (ILD, ABL and noise) are reflected in differences in the identity of the responding neurons, and not between the overall number of spikes fired by the population as a whole.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript summarizes the main finding of the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:33:53.479253Z"
+    },
+    {
+      "id": "67397a98-bd8a-413d-b761-1b702fa55a4a",
+      "content_id": "007b304d-8536-4649-8159-6d9da2f112ac",
+      "claim_id": "C54",
+      "claim": "As the cortex becomes more inactive, the identity code becomes progressively replaced by an intensity code.",
+      "claim_type": "EXPLICIT",
+      "source": "As the cortex becomes more inactive, this identity code becomes progressively replaced by an intensity code, in which the total number of spikes fired by the population reflects both the ILD and ABL of the stimulus and trial-to-trial variability.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript summarizes the main finding of the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:33:53.479253Z"
+    },
+    {
+      "id": "91086aa5-91d1-48c6-8140-eeca428a568c",
+      "content_id": "007b304d-8536-4649-8159-6d9da2f112ac",
+      "claim_id": "C55",
+      "claim": "Eighteen adult female Long-Evans rats (240\u2013400 g) were used for electrophysiological recordings.",
+      "claim_type": "EXPLICIT",
+      "source": "Eighteen adult female Long-Evans rats (240\u2013400 g; Charles River, Italy) were used for electrophysiological recordings in this study.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript directly states the number and type of animals used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:33:53.479253Z"
+    },
+    {
+      "id": "d3dfe14b-1243-4e74-9daf-708e8c13320a",
+      "content_id": "007b304d-8536-4649-8159-6d9da2f112ac",
+      "claim_id": "C56",
+      "claim": "Seven animals were anesthetized with 1.65 g/kg urethane and the rest with 1.35 g/kg urethane.",
+      "claim_type": "EXPLICIT",
+      "source": "Seven animals were anesthetized with 1.65 g/kg urethane (solution at 25%, ip) and the rest with 1.35 g/kg urethane (solution at 20%, ip).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript directly states the anesthesia protocol.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:33:53.479253Z"
+    },
+    {
+      "id": "dc9c2518-5cf3-4f28-aaf9-26e512473bfe",
+      "content_id": "007b304d-8536-4649-8159-6d9da2f112ac",
+      "claim_id": "C57",
+      "claim": "Extracellular recordings were performed with 64 channel (8 shanks \u00d7 8 sites) silicon probes.",
+      "claim_type": "EXPLICIT",
+      "source": "Extracellular recordings were performed with 64 channel (8 shanks \u00d7 8 sites) silicon probes (Buzsaki64, NeuroNexus, Ann Arbor, MI).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript directly states the recording equipment used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:33:53.479253Z"
+    },
+    {
+      "id": "03524a8d-6789-427e-a6ae-b47b5c1fd2d9",
+      "content_id": "007b304d-8536-4649-8159-6d9da2f112ac",
+      "claim_id": "C58",
+      "claim": "Stimuli were 150 ms broadband (5\u201320 kHz) noise bursts with 5 ms raised-cosine onset/offset ramps.",
+      "claim_type": "EXPLICIT",
+      "source": "Stimuli were 150 ms broadband (5\u201320 kHz) noise burst with 5 ms raised-cosine onset/offset ramps generated by a TDT RZ6 module, with 24 bit precision at a 50 kHz sampling rate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript directly describes the stimulus parameters.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:33:53.479253Z"
+    },
+    {
+      "id": "0800697c-3ca0-4ad6-a095-14737c8323a2",
+      "content_id": "007b304d-8536-4649-8159-6d9da2f112ac",
+      "claim_id": "C59",
+      "claim": "A total of 36 combinations (12 ILDs \u00d7 3 ABLs) were presented, with each combination presented 100 times.",
+      "claim_type": "EXPLICIT",
+      "source": "A total of 36 combinations (12 ILDs \u00d7 3 ABLs) were presented. ILDs were \u00b11.5, \u00b13, \u00b14.5, \u00b16, \u00b112, and \u00b120 dB; ABLs were 20, 40 and 60 dB SPL. Negative ILD values correspond to stimuli with higher intensity to the left ear (contralateral to the recording hemisphere). Each combination was presented 100 times, in pseudorandom order, with all 36 combinations being presented every 36 trials (except for rat #1 where stimuli were chosen randomly; this rat had 67\u2013138 repetitions per stimulus, with the same 3600 overall).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript directly describes the stimulus presentation protocol.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:33:53.479253Z"
+    },
+    {
+      "id": "dd706baf-2b9d-4774-8cb1-b284c66f6890",
+      "content_id": "007b304d-8536-4649-8159-6d9da2f112ac",
+      "claim_id": "C60",
+      "claim": "The inter-stimulus interval changed randomly between 850 and 1150 ms across presentations.",
+      "claim_type": "EXPLICIT",
+      "source": "The inter-stimulus interval changed randomly between 850 and 1150 ms across presentations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript directly states the inter-stimulus interval.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:33:53.479253Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "1d01cd7f-6f98-43d7-afdc-c12d4f5f3808",
+      "content_id": "007b304d-8536-4649-8159-6d9da2f112ac",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Under urethane anesthesia, rat auditory cortex spontaneously transitions between inactive states (characterized by globally correlated low-frequency fluctuations, up-down states) and active states (characterized by tonic, uncorrelated firing).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2-C5 collectively describe well-established brain state dynamics under urethane anesthesia, supported by both citations to prior work (Clement et al., 2008; Curto et al., 2009; Renart et al., 2010) and visual evidence in Figure 1A-B showing raster plots. The characterization is consistent with known literature.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T09:33:53.479253Z"
+    },
+    {
+      "id": "f4fdb71c-e30a-4ee6-8304-072ab0cd4c07",
+      "content_id": "007b304d-8536-4649-8159-6d9da2f112ac",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Rodents rely on ILD for sound localization in the horizontal plane, and auditory cortex neurons represent ILD with broad tuning curves having maximum slope near zero ILD.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6-C7 are well-supported by multiple citations to established literature (Wesolek et al., 2010; Lauer et al., 2011; Stecker et al., 2005; Campbell et al., 2006; Yao et al., 2013). These are established facts about rodent auditory processing that provide context for the current study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T09:33:53.479253Z"
+    },
+    {
+      "id": "cccd3b7a-b27d-46d0-941b-4214d1241443",
+      "content_id": "007b304d-8536-4649-8159-6d9da2f112ac",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "In inactive states, population-averaged responses show strong contralateral and loud preference with ABL-dependent gain modulation of ILD tuning. In active states, responses to different stimuli overlap with weak, flat tuning near the midline.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C9, C11-C12 describe population-averaged tuning differences across states, supported by quantitative data (specific slope values) and visual evidence in Figures 2A-G. The contrast between states is clearly demonstrated with numerical measurements and appropriate statistical comparisons (r=0.74, p=0.00005 for state dependence).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T09:33:53.479253Z"
+    },
+    {
+      "id": "2117733a-5bac-444a-937f-87dac0a592eb",
+      "content_id": "007b304d-8536-4649-8159-6d9da2f112ac",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "In active states, single neurons show heterogeneous tuning with roughly symmetric distribution of ILD and ABL preferences, and this heterogeneity is not explained by physical location in tissue.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C15 and C18 are supported by data in Figures 3D-F and Figure 3\u2014figure supplement 4 showing diverse tuning across neurons within individual recording shanks. The analysis appropriately controls for spatial organization, strengthening the conclusion about genuine tuning heterogeneity.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T09:33:53.479253Z"
+    },
+    {
+      "id": "f640a177-492c-4888-b972-0ef4fbf43651",
+      "content_id": "007b304d-8536-4649-8159-6d9da2f112ac",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Up-down fluctuations in inactive states induce positive correlations between most neurons.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C20 is well-supported by citations to established mechanisms (Renart et al., 2010; Ecker et al., 2014; Okun et al., 2015) and is consistent with the data shown in Figure 1A and the noise correlation analysis in Figure 4. This is an established phenomenon being confirmed in this dataset.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T09:33:53.479253Z"
+    },
+    {
+      "id": "f38a7dbf-24b8-4e7a-94ef-8d72f6087de7",
+      "content_id": "007b304d-8536-4649-8159-6d9da2f112ac",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "In active states, different stimuli evoke approximately the same total number of spikes from the population, whereas in inactive states different stimuli evoke different numbers of spikes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C26 is supported by the geometric analysis showing the angle between signal plane and global axis is negatively correlated with CV (r=-0.67, p=0.0005, Figure 5G). This inference follows logically from the orthogonality analysis and is consistent with the population-averaged tuning data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T09:33:53.479253Z"
+    },
+    {
+      "id": "6c4a1de4-d7b3-47a7-9b1b-00501e2be0af",
+      "content_id": "007b304d-8536-4649-8159-6d9da2f112ac",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "ILD sign decoding shows ABL-dependent bias and reduced performance in inactive states, but ABL-invariant, symmetric performance in active states with JND (2.5-3.4 dB) matching behavioral performance in rats (2.2 dB).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C27-C30 are supported by decoding analysis with logistic fits (Figure 6A-B) and comparison to behavioral data (Pardo-Vazquez et al., 2018). However, the comparison between neural and behavioral JND should be interpreted cautiously as acknowledged by the authors, since decoder performance depends on number of neurons and time window (C31-C33).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T09:33:53.479253Z"
+    },
+    {
+      "id": "b48a2489-55c3-4af0-b3fb-eb68e60b7e35",
+      "content_id": "007b304d-8536-4649-8159-6d9da2f112ac",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Classification accuracy increases with neuron number without saturation in both states, increases with time window in active states without saturation at 150 ms, but saturates at ~50 ms in inactive states.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C31-C33 are supported by systematic analysis in Figure 6\u2014figure supplement 1 showing how decoder performance scales with population size and integration time. These analyses appropriately qualify the main decoding results and demonstrate that the conclusions are not artifacts of limited sampling.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T09:33:53.479253Z"
+    },
+    {
+      "id": "20290467-4824-4059-b820-14200a85aa54",
+      "content_id": "007b304d-8536-4649-8159-6d9da2f112ac",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "In active states, ILD sign can be classified with an ABL-invariant decoder, but in inactive states, ABL-specialized decoders perform better.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C35-C36 are supported by comparison of common vs. ABL-specialized classifiers (Figure 6F). The difference is statistically significant in inactive states (0.019\u00b10.023, p=0.0004) but absent in active states, consistent with the geometric analysis showing orthogonal ILD/ABL representations in active states.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T09:33:53.479253Z"
+    },
+    {
+      "id": "16ce8c9f-e371-4179-8158-67ae7b3df44a",
+      "content_id": "007b304d-8536-4649-8159-6d9da2f112ac",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Noise correlations impair coding accuracy in inactive states but do not significantly constrain accuracy in active states.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C37-C38 are supported by trial-shuffling analysis (Figure 6G-H) showing performance changes only in inactive states. The analysis appropriately distinguishes between effects on optimal decoding strategy (training shuffle) vs. decoder performance (test shuffle), providing mechanistic insight into how noise structure affects coding.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T09:33:53.479253Z"
+    },
+    {
+      "id": "84eba858-d325-415b-bae2-71df34c600eb",
+      "content_id": "007b304d-8536-4649-8159-6d9da2f112ac",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "In active states, the number of significantly tuned neurons increases from onset to late period, many neurons show inhibitory responses especially late, and the balance of excitatory/inhibitory responses explains weak population-averaged modulation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C39-C41 are supported by time-resolved analysis (Figure 6\u2014figure supplement 1A-C, Figure 2\u2014figure supplement 2). The increase in tuned neurons (23.1% to 41.8%, p=0.00001) and presence of inhibitory responses provide mechanistic explanation for temporal dynamics of decoding accuracy and population responses.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T09:33:53.479253Z"
+    },
+    {
+      "id": "aa899efc-88cb-4421-8f0a-1d11250a1be7",
+      "content_id": "007b304d-8536-4649-8159-6d9da2f112ac",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "State-dependent differences in tuning heterogeneity and population geometry are maintained in onset responses (0-50 ms).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C42-C43 are supported by onset-specific analysis (Figure 3\u2014figure supplement 3, Figure 5\u2014figure supplement 1). While some correlations weaken slightly for onset responses (e.g., ABL/ILD angle correlation drops to r=-0.36), the qualitative patterns persist, indicating state effects are not solely due to late response dynamics.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T09:33:53.479253Z"
+    },
+    {
+      "id": "69dbb439-0e62-4134-b6ec-62f6eca30847",
+      "content_id": "007b304d-8536-4649-8159-6d9da2f112ac",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "State transitions under urethane resemble sleep state transitions with cholinergic origin, and cortical activation can be mediated by changes in adaptation, nucleus basalis activation, or somatostatin interneurons.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C44-C47 cite established literature on mechanisms of cortical state transitions. These provide appropriate context for interpreting the observed state-dependent changes but are not novel findings of this study. The citations appear accurate and relevant.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T09:33:53.479253Z"
+    },
+    {
+      "id": "e9a8a134-dc27-494b-af92-1a72566f96e2",
+      "content_id": "007b304d-8536-4649-8159-6d9da2f112ac",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Brain activation occurs during attentive wakefulness and active sampling, inactivation during immobility and sleep, with functional implications for discrimination vs. memory consolidation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C48-C52 cite established literature on behavioral correlates and functional roles of brain states. These provide appropriate context for the Discussion but are not novel findings. The citations appear accurate and the interpretations are reasonable, though speculative regarding functional implications.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T09:33:53.479253Z"
+    },
+    {
+      "id": "3d0e7758-7d31-4d50-ac84-2ebc91639c35",
+      "content_id": "007b304d-8536-4649-8159-6d9da2f112ac",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Cortical activation is associated with reorganization from an intensity code (where spike count reflects ILD, ABL, and noise) to an identity code (where stimulus information is in which neurons respond, not total spike count).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C53-C54 represent the main conceptual conclusion, integrating findings about population geometry, tuning diversity, and decoding. This is well-supported by the collective evidence from geometric analysis (Figure 5), single-neuron tuning (Figure 3), and decoding results (Figure 6), though it represents a high-level interpretation of the data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T09:33:53.479253Z"
+    },
+    {
+      "id": "1a96b857-c768-44b3-a9fa-2cfc394a7b13",
+      "content_id": "007b304d-8536-4649-8159-6d9da2f112ac",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Recordings were obtained from 18 female Long-Evans rats under urethane anesthesia using 64-channel silicon probes, with 150 ms broadband noise stimuli varying in ILD (12 levels) and ABL (3 levels), each presented 100 times.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C55-C60 describe the experimental methods, which are clearly stated and appropriately detailed. The methods appear sound and sufficient for the analyses performed. Quality control procedures (spike sorting, session splitting) are described in Materials and methods.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T09:33:53.479253Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "d0538a1e-a17a-4c86-9ca2-292e3707d5f5",
+      "result_id": "1d01cd7f-6f98-43d7-afdc-c12d4f5f3808"
+    },
+    {
+      "claim_id": "71daa5bd-22e7-4bfd-a05f-86c251c503b2",
+      "result_id": "1d01cd7f-6f98-43d7-afdc-c12d4f5f3808"
+    },
+    {
+      "claim_id": "1da56154-0897-4a8e-b9d7-ac2472fefb43",
+      "result_id": "1d01cd7f-6f98-43d7-afdc-c12d4f5f3808"
+    },
+    {
+      "claim_id": "db06860c-0c6b-431c-9d2c-a4c011e8d4d4",
+      "result_id": "1d01cd7f-6f98-43d7-afdc-c12d4f5f3808"
+    },
+    {
+      "claim_id": "cae3169b-c695-48d3-bc95-0edf5bcf6210",
+      "result_id": "f4fdb71c-e30a-4ee6-8304-072ab0cd4c07"
+    },
+    {
+      "claim_id": "505029ec-a194-4f26-a207-104a54dab169",
+      "result_id": "f4fdb71c-e30a-4ee6-8304-072ab0cd4c07"
+    },
+    {
+      "claim_id": "e59e642b-b7e0-4393-be83-21c8fbae57f2",
+      "result_id": "cccd3b7a-b27d-46d0-941b-4214d1241443"
+    },
+    {
+      "claim_id": "067da5b7-b8e0-4488-a1b2-c10794aade6d",
+      "result_id": "cccd3b7a-b27d-46d0-941b-4214d1241443"
+    },
+    {
+      "claim_id": "6958b690-18e5-4ad9-9a0b-adaa936e4d71",
+      "result_id": "cccd3b7a-b27d-46d0-941b-4214d1241443"
+    },
+    {
+      "claim_id": "3dc97f5f-eca9-4f90-9d78-47c87af84029",
+      "result_id": "2117733a-5bac-444a-937f-87dac0a592eb"
+    },
+    {
+      "claim_id": "a6861b48-210c-4939-9087-d9da9d36388d",
+      "result_id": "2117733a-5bac-444a-937f-87dac0a592eb"
+    },
+    {
+      "claim_id": "57fa0779-8ec8-448e-ab3b-2405a5560332",
+      "result_id": "f640a177-492c-4888-b972-0ef4fbf43651"
+    },
+    {
+      "claim_id": "61796544-121b-4796-a2ec-76bf0247e87f",
+      "result_id": "f38a7dbf-24b8-4e7a-94ef-8d72f6087de7"
+    },
+    {
+      "claim_id": "5154768b-4b05-4ce5-a101-d69bfc365ddb",
+      "result_id": "6c4a1de4-d7b3-47a7-9b1b-00501e2be0af"
+    },
+    {
+      "claim_id": "c846d5f6-2234-4b9c-8e48-1373bed1fa0e",
+      "result_id": "6c4a1de4-d7b3-47a7-9b1b-00501e2be0af"
+    },
+    {
+      "claim_id": "05e45878-2eb7-43e2-95c6-866aae33fe99",
+      "result_id": "6c4a1de4-d7b3-47a7-9b1b-00501e2be0af"
+    },
+    {
+      "claim_id": "8b009638-2c93-4791-90a3-c6a6f93bcb55",
+      "result_id": "6c4a1de4-d7b3-47a7-9b1b-00501e2be0af"
+    },
+    {
+      "claim_id": "0b7b243c-60ac-4b8e-b934-ac8efdb5f1ba",
+      "result_id": "b48a2489-55c3-4af0-b3fb-eb68e60b7e35"
+    },
+    {
+      "claim_id": "83381fa0-a4ab-45f8-bfce-d3cfbe80d88b",
+      "result_id": "b48a2489-55c3-4af0-b3fb-eb68e60b7e35"
+    },
+    {
+      "claim_id": "b20c178e-c614-468e-9883-b7dfbf0d5e78",
+      "result_id": "b48a2489-55c3-4af0-b3fb-eb68e60b7e35"
+    },
+    {
+      "claim_id": "98fbbb82-3479-43f0-8bea-1cc75a769092",
+      "result_id": "20290467-4824-4059-b820-14200a85aa54"
+    },
+    {
+      "claim_id": "961a78a0-10e5-4cff-b0c0-c733562bb1ee",
+      "result_id": "20290467-4824-4059-b820-14200a85aa54"
+    },
+    {
+      "claim_id": "ad38a0bc-8d05-44bd-8a27-43ca8f5dd5da",
+      "result_id": "16ce8c9f-e371-4179-8158-67ae7b3df44a"
+    },
+    {
+      "claim_id": "777319b4-0ad4-4207-9a05-179c5c2c03ed",
+      "result_id": "16ce8c9f-e371-4179-8158-67ae7b3df44a"
+    },
+    {
+      "claim_id": "d6113c8e-2066-49fe-bee3-c12b013f5f79",
+      "result_id": "84eba858-d325-415b-bae2-71df34c600eb"
+    },
+    {
+      "claim_id": "fcec1ece-ed7a-4522-ae0e-732c1ed0e3e1",
+      "result_id": "84eba858-d325-415b-bae2-71df34c600eb"
+    },
+    {
+      "claim_id": "dc24eeae-eb0e-40db-be39-c4c47e03820c",
+      "result_id": "84eba858-d325-415b-bae2-71df34c600eb"
+    },
+    {
+      "claim_id": "4966f883-eb1a-4279-a240-7d8805b4c23f",
+      "result_id": "aa899efc-88cb-4421-8f0a-1d11250a1be7"
+    },
+    {
+      "claim_id": "d22e24fc-7c7d-49c0-9043-0479ce6ff966",
+      "result_id": "aa899efc-88cb-4421-8f0a-1d11250a1be7"
+    },
+    {
+      "claim_id": "0dd0d1ee-703c-4fc0-9a8d-385b704b42ae",
+      "result_id": "69dbb439-0e62-4134-b6ec-62f6eca30847"
+    },
+    {
+      "claim_id": "e05e14a7-1ca7-4625-b2a5-74322615ff18",
+      "result_id": "69dbb439-0e62-4134-b6ec-62f6eca30847"
+    },
+    {
+      "claim_id": "d25b250f-232f-47a5-ba5b-50ab904d9ab1",
+      "result_id": "69dbb439-0e62-4134-b6ec-62f6eca30847"
+    },
+    {
+      "claim_id": "a32d7b82-e4da-4cf9-8a19-4808290d5373",
+      "result_id": "69dbb439-0e62-4134-b6ec-62f6eca30847"
+    },
+    {
+      "claim_id": "361729ba-a4c5-4cdb-a72a-1a718f5ab686",
+      "result_id": "e9a8a134-dc27-494b-af92-1a72566f96e2"
+    },
+    {
+      "claim_id": "b8a2515f-7949-46f2-a566-07278397bff5",
+      "result_id": "e9a8a134-dc27-494b-af92-1a72566f96e2"
+    },
+    {
+      "claim_id": "97ab0804-2348-4f89-a5af-1456fea8e2d6",
+      "result_id": "e9a8a134-dc27-494b-af92-1a72566f96e2"
+    },
+    {
+      "claim_id": "075afdcb-bf81-4361-9ca6-f54e7bf9fd7f",
+      "result_id": "e9a8a134-dc27-494b-af92-1a72566f96e2"
+    },
+    {
+      "claim_id": "01f3421c-729f-466a-beb4-225e382c0169",
+      "result_id": "e9a8a134-dc27-494b-af92-1a72566f96e2"
+    },
+    {
+      "claim_id": "cfddc53d-6d7e-4652-b786-c60a0097f5db",
+      "result_id": "3d0e7758-7d31-4d50-ac84-2ebc91639c35"
+    },
+    {
+      "claim_id": "67397a98-bd8a-413d-b761-1b702fa55a4a",
+      "result_id": "3d0e7758-7d31-4d50-ac84-2ebc91639c35"
+    },
+    {
+      "claim_id": "91086aa5-91d1-48c6-8140-eeca428a568c",
+      "result_id": "1a96b857-c768-44b3-a9fa-2cfc394a7b13"
+    },
+    {
+      "claim_id": "d3dfe14b-1243-4e74-9daf-708e8c13320a",
+      "result_id": "1a96b857-c768-44b3-a9fa-2cfc394a7b13"
+    },
+    {
+      "claim_id": "dc9c2518-5cf3-4f28-aaf9-26e512473bfe",
+      "result_id": "1a96b857-c768-44b3-a9fa-2cfc394a7b13"
+    },
+    {
+      "claim_id": "03524a8d-6789-427e-a6ae-b47b5c1fd2d9",
+      "result_id": "1a96b857-c768-44b3-a9fa-2cfc394a7b13"
+    },
+    {
+      "claim_id": "0800697c-3ca0-4ad6-a095-14737c8323a2",
+      "result_id": "1a96b857-c768-44b3-a9fa-2cfc394a7b13"
+    },
+    {
+      "claim_id": "dd706baf-2b9d-4774-8cb1-b284c66f6890",
+      "result_id": "1a96b857-c768-44b3-a9fa-2cfc394a7b13"
+    }
+  ],
+  "comparisons": []
+}

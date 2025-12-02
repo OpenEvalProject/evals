@@ -1,0 +1,258 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5"
+    ],
+    "result": "Loss of RBP-J in hair follicle epithelial cells using Sox9-CreER results in ectopic pigmentation in the bulge region during telogen to anagen transition, with over 60% of cKO HFs showing this phenotype at transition and ~90% in early anagen, while HFSC markers CD34 and Sox9 remain expressed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C5 provide converging evidence from lineage tracing (C1), knockout validation (C2), marker expression (C3), and quantified melanin staining (C4-C5) demonstrating the ectopic pigmentation phenotype. The data are internally consistent and appropriately quantified across multiple mice and follicles.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "Using a newly generated Krt6-CreER line that specifically labels HFSCs and CPL cells but not sHG cells, the authors demonstrate that loss of RBP-J specifically in HFSCs (after wax removal of CPL cells) is sufficient to induce ectopic McSC differentiation in the bulge in a paracrine fashion, revealing an essential role of HFSCs in maintaining a differentiation refractory niche for McSCs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C20 provide a logical progression from tool generation (C7), validation of labeling specificity (C8-C11), experimental manipulation (C14-C15), controls (C16), and phenotypic characterization (C17-C18) leading to the conclusion (C19-C20). The wax experiment elegantly isolates HFSCs as the responsible cell type. However, the paracrine conclusion (C19) relies on inference from CPL removal rather than direct demonstration of secreted factors at this stage.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "RBP-J is broadly expressed in HFs across developmental stages, but active Notch signaling (as measured by Notch ICDs and downstream targets Hes1/Hey1) is absent in HFSCs and restricted to differentiated cells, indicating RBP-J functions as a repressor in HFSCs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C27 provide complementary evidence from immunofluorescence (C21-C22), Western blot (C23-C24), and qPCR (C25-C26) across multiple cell types and hair cycle stages. The conclusion that RBP-J acts as a repressor (C27) is well-supported by the low levels of active Notch signaling components in HFSCs despite RBP-J expression.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "Loss of RBP-J in HFSCs leads to upregulation of retinoid metabolic process genes (ADH1, RBP2, RDH1) and increased RA levels in the niche (from ~50 pg to ~90 pg per million HFSCs), demonstrating that RBP-J functions as a repressor of retinoid metabolism to regulate RA levels in the shared HFSC-McSC niche.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C33 provide a logical progression from unbiased discovery (C28-C29), validation by qPCR (C30), downstream target confirmation (C31), direct RA measurement (C32), to mechanistic conclusion (C33). The ELISA measurement (C32) provides direct quantification of RA levels, strengthening the inference. However, C31 appears to describe MITF/Tyrp1 data rather than RA downstream genes as stated, suggesting a potential mislabeling in the claim extraction.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "ATAC-seq analysis reveals that loss of RBP-J increases chromatin accessibility at promoter regions of target genes including Adh1, Hes1, and Krt10, overlapping with putative RBP-J binding motifs. Luciferase assays confirm that RBP-J represses Adh1 promoter activity, which is reversed by N1ICD co-expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C40 provide mechanistic insight through ATAC-seq (C34-C36), comparison with published ChIP-seq (C37), and functional validation via luciferase assay (C38-C39). The data support the model that RBP-J directly represses target genes through chromatin regulation. The enrichment for promoter regions (C35) is consistent with RBP-J function as a transcriptional repressor.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "Treatment with RA synthesis inhibitor WIN18446 reduces RA levels in cKO HFs (from ~90 pg to ~30 pg per million HFSCs) and rescues the ectopic pigmentation phenotype (from ~80% to ~20% of HFs), with corresponding downregulation of MITF and Tyrp1 in McSCs, demonstrating that RA is necessary for ectopic McSC differentiation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C45 provide a necessity test through pharmacological inhibition with appropriate quantification of RA levels (C41), phenotypic rescue (C42-C43), and molecular markers (C44). The rescue is substantial though not complete, which is appropriate given the complexity of the system. This establishes RA as necessary for the phenotype.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "Topical RA treatment at 2-200 nM is sufficient to induce ectopic pigmentation in ~50% of WT HFs, and RA treatment of cultured McSCs induces c-Kit and Tyrp1 expression in a time- and dose-dependent manner, demonstrating that elevated RA is both necessary and sufficient to induce ectopic McSC differentiation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C49 provide a sufficiency test through gain-of-function experiments both in vivo (C46) and in vitro (C47). The dose-response and time-course data (C47) strengthen the conclusion. Together with the necessity data (C41-C45), this establishes RA as both necessary and sufficient (C49), though the in vivo RA treatment may affect multiple cell types.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "Loss of RBP-J increases the percentage of c-Kit-high McSCs 2-fold, which is reversed by RA synthesis inhibitor treatment. RA increases c-Kit protein levels post-translationally (via 5'UTR regulation) without changing mRNA levels, and increased c-Kit expression in melanocytes elevates Tyrp1 levels, linking elevated RA to increased c-Kit protein and ectopic differentiation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C57 establish a mechanistic link between RA and c-Kit through FACS quantification (C50, C52), pharmacological manipulation (C52), in vivo RA treatment (C53), demonstration of post-transcriptional regulation (C54-C55), and functional consequence (C56). The 5'UTR mechanism (C55) is supported by in vitro data and citation. However, the 5'UTR experiment uses 293t cells rather than melanocytes, which may limit direct applicability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "SCF is expressed in HFSCs at both telogen and anagen with no difference between WT and cKO, but increases significantly during telogen-to-anagen transition. Genetic deletion of SCF together with RBP-J completely rescues the ectopic pigmentation phenotype, demonstrating that HFSC-derived SCF activates the c-Kit pathway to induce McSC differentiation in the mutant niche.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C63 provide strong genetic evidence through double knockout rescue (C60-C61) that SCF from HFSCs is the relevant ligand. The qPCR data (C58-C59) establish that SCF levels are unchanged in cKO but increase during hair cycle transition. The complete rescue (C60) is striking and supports the conclusion (C62). This elegantly demonstrates that the niche contains differentiation signals that are normally ineffective due to low c-Kit levels on McSCs.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "Increased pERK signaling is observed in cKO McSCs, and MEK inhibitor PD0325901 efficiently rescues the ectopic pigmentation phenotype, while mTOR inhibitor rapamycin does not, demonstrating that the c-Kit-MEK pathway is required for ectopic McSC differentiation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C71 identify the relevant downstream pathway through pharmacological inhibition. The differential effects of MEK vs mTOR inhibition (C67, C69) appropriately distinguish between pathways. The pERK data (C66) provides molecular evidence for pathway activation. The effect on normal melanocyte differentiation (C71) is consistent with known c-Kit function and strengthens the interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "The shared HFSC-McSC niche is not devoid of differentiation signals (SCF), but McSCs maintain self-renewal by expressing low c-Kit levels to remain insensitive to these signals. HFSCs actively maintain a differentiation-refractory niche by suppressing RA levels through RBP-J-mediated repression of retinoid metabolic genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C65 and C77-C80 represent the major conceptual conclusions of the study, integrating findings from multiple experiments. These conclusions are well-supported by the genetic rescue experiments (SCF deletion, RA inhibition) and the demonstration that SCF is present but ineffective in WT due to low c-Kit levels. The model that HFSCs actively regulate the niche environment (C65, C80) is a significant conceptual advance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C6"
+    ],
+    "result": "RBP-J is required for HFSC downstream progenies terminal differentiation, consistent with previous publications.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C6 is supported by citation to previous work (Demehri and Kopan, 2009) and is consistent with the observed HF degeneration phenotype in the mutants. This is confirmatory rather than novel.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C12",
+      "C13"
+    ],
+    "result": "McSCs do not express Krt6, and the number of McSCs and their downstream melanocyte progenies are normal in Krt6-CreER::RBP-J cKO mice.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C13 provide important controls demonstrating that the phenotype is not due to changes in McSC number or their ability to generate differentiated progeny. The quantification of DCT+ cells (C13) is appropriate. This establishes that the phenotype reflects ectopic differentiation rather than altered cell numbers.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C72",
+      "C73"
+    ],
+    "result": "Topical RA treatment at concentrations similar to daily cosmetic use (1 \u03bcg) does not affect McSC number, while lower concentrations (1 ng) slightly increase McSC number.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C73 address a practical concern about RA safety in cosmetics. The data are appropriately quantified and suggest RA is safe at typical use concentrations. The slight increase at low doses (C73) is interesting but requires further investigation to understand the mechanism.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C74",
+      "C75"
+    ],
+    "result": "Nfib expression is unchanged and Edn family genes show decreased or absent expression in cKO HFSCs based on RNA-seq data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C75 provide important negative controls ruling out alternative pathways (Nfib/Edn) previously implicated in McSC regulation. The RNA-seq FPKM values are provided. This helps establish the specificity of the RA pathway in the observed phenotype.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C76"
+    ],
+    "result": "Metabolites represent a new realm of signaling molecules mediating stem cell and niche crosstalk.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C76 represents a broad conceptual conclusion that metabolites can function as signaling molecules in stem cell niches. This is well-supported by the demonstration that RA mediates HFSC-McSC crosstalk, though the generalization to other metabolites and systems requires future work as acknowledged in the claim.",
+    "result_type": "MAJOR"
+  }
+]

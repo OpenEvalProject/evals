@@ -1,0 +1,228 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C7",
+      "C8",
+      "C9"
+    ],
+    "result": "The manuscript establishes the anatomical and functional organization of SNr inputs from the basal ganglia. SNr is the primary rodent basal ganglia output nucleus receiving GABAergic inputs from GPe (indirect pathway, somatic, tonically active, short-term depression) and striatum (direct pathway, dendritic, sparse, short-term facilitation).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C4, C7-C9 collectively describe well-established anatomical and physiological properties of basal ganglia circuitry, all supported by appropriate citations to prior literature. These represent foundational knowledge for the study rather than novel findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "A two-compartment conductance-based SNr model was developed with baseline firing rate (~10 Hz), action potential characteristics, and afterhyperpolarization tuned to match experimental data from in vitro rodent slice recordings.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C20 describe model validation against multiple experimental datasets (Richards et al., 1997; Atherton and Bevan, 2005; Yanovsky et al., 2006; Zhou et al., 2008; Ding et al., 2011; Higgs and Wilson, 2016). The model parameters are appropriately constrained by empirical data, providing a solid foundation for subsequent simulations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "The model reconciles apparently conflicting experimental findings on short-term synaptic plasticity by demonstrating that voltage-clamp data (Connelly et al., 2010) showing frequency-independent depression/facilitation and current-clamp data (Lavian and Korngreen, 2016) showing frequency-dependent effects can be explained by the same underlying synaptic mechanisms when accounting for membrane potential changes during current-clamp.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C30 present a coherent explanation for discrepancies in the literature. The model tuned to voltage-clamp data (C27) successfully reproduces current-clamp observations (C28-C29) when membrane potential is allowed to vary, demonstrating that the apparent frequency dependence arises from changes in driving force rather than different synaptic mechanisms. This represents strong computational evidence supported by Figure 2 and Figure 3.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C37",
+      "C38"
+    ],
+    "result": "Computational simulations predict that SNr responses to GABAergic inputs depend on E_GABA and chloride dynamics, producing diverse response types including complete inhibition, no effect, excitation, partial inhibition (two subtypes), and biphasic inhibitory-to-excitatory responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C34 and C37-C38 describe model predictions supported by Figures 4 and 5. The mechanistic explanations are grounded in established biophysical principles (E_GABA relative to membrane potential, chloride accumulation, short-term plasticity). The diversity of responses emerges naturally from parameter variations in chloride load and extrusion capacity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "Optogenetic stimulation experiments in mouse brain slices confirm model predictions, revealing diverse SNr responses to GPe and Str terminal stimulation including all predicted response types. Str inputs are initially more effective at inhibition (72-77% reduction) than GPe inputs (43-62% reduction), but inhibition weakens during sustained stimulation, consistent with chloride accumulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C47 present experimental validation of model predictions using optogenetic stimulation with cell-attached recordings (preserving intracellular chloride). The diversity of responses (C41-C42), frequency-dependent effects (C44), differential effectiveness of Str vs GPe (C45), and weakening of inhibition over time (C46-C47) all align with model predictions. Data are supported by Figure 6 and supplementary figures with appropriate sample sizes (n=4 animals, 12 slices, 24-40 cells per condition).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C48",
+      "C53",
+      "C58"
+    ],
+    "result": "The model predicts that local GABAergic collaterals within SNr (1-4 inputs per neuron) can generate phase-slipping oscillations at approximately 1 Hz when E_GABA is sufficiently hyperpolarized, with the synchrony relationship maintained across different presynaptic firing rates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48, C53, and C58 describe model predictions about SNr network dynamics based on phase response curve analysis. The sparse connectivity (C48, supported by Higgs and Wilson, 2016) leads to specific oscillatory dynamics (C53) that are robust to firing rate variations (C58). The predictions are supported by Figures 8-10 and extensive robustness analyses in supplementary figures.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "In dopamine-depleted mice, optogenetic stimulation of GPe terminals in SNr suppresses slow oscillations (0.25-4 Hz band) without significantly affecting firing rates, consistent with model predictions that GPe activity modulates E_GABA and thereby controls SNr synchrony.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C66 present in vivo experimental evidence supporting model predictions. Slow oscillations were detected in 5 oscillatory units (1.46-1.95 Hz, mean 1.7\u00b10.204 Hz) under dopamine-depleted conditions (C64). GPe stimulation significantly reduced oscillation power (p=0.0341, C66) without affecting firing rates (p=0.8531, C65), consistent with the model's prediction that GPe modulates synchrony through E_GABA. Data from 4 animals with 12 total units recorded.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C17"
+    ],
+    "result": "The model predicts that GPe activity levels can tune SNr synchrony and oscillations through modulation of E_GABA, and that ongoing GPe activity could modulate the effectiveness of striatal inputs in action selection by adjusting SNr responses to direct pathway signals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C17 represent key predictions from the computational model that are partially validated by experimental data. C15-C16 are supported by the optogenetic experiments showing GPe stimulation suppresses oscillations (C64-C66). C17 remains a prediction supported by simulations (Figure 13) but lacks direct experimental validation in the manuscript. The mechanistic basis (E_GABA modulation) is well-established in the model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C11",
+      "C73",
+      "C75",
+      "C84"
+    ],
+    "result": "Excitatory and biphasic GABAergic responses in SNr, while surprising, are consistent with prior observations in SNr and other brain regions, and can be explained by depolarized E_GABA and chloride dynamics rather than network disinhibition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11, C73, C75, and C84 contextualize the findings within existing literature. The observation of excitatory responses to GABAergic stimulation is supported by prior in vivo work (Freeze et al., 2013, showing 55% excitatory responses, C84) and has precedent in other brain regions (C73). The frequency-dependence is supported by comparison to 2 Hz stimulation studies (C75). These claims appropriately situate the novel findings within the broader literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "The manuscript establishes the theoretical framework for how SNr integrates inputs during perceptual decision-making, where evidence accumulation in striatum generates ramping activity that pauses SNr firing to disinhibit motor targets.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C70 describe established theoretical frameworks for basal ganglia function in decision-making, supported by appropriate citations (Basso and Wurtz, 2002; Basso et al., 2005; Shires et al., 2010; Sato and Hikosaka, 2002; Ding and Gold, 2010; Wei et al., 2015; Dunovan et al., 2019). These provide context for the model's predictions about GPe modulation of decision timing but represent prior knowledge rather than novel findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C90",
+      "C92",
+      "C93"
+    ],
+    "result": "The model's predictions about E_GABA modulation are consistent with effects of dopamine depletion, which increases SNr synchrony and promotes slow oscillations in mice, potentially through reduced GPe firing and enhanced GABAergic inhibition that can be attenuated by D2 receptor activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90, C92, and C93 connect model predictions to dopamine depletion effects. The observations of increased synchrony and oscillations under DA depletion (C90, supported by Willard et al., 2019; Whalen et al., 2020) are consistent with model predictions of hyperpolarized E_GABA. The D2 receptor effects (C92, Martin and Waszczak, 1996) and accelerated decisions in humans (C93, van Stockum et al., 2011, 2013) provide additional supporting evidence for the model's framework.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "The model makes several simplifying assumptions including simplified GPe synapse localization, exclusion of glia, omission of other ion dynamics, absence of slower synaptic depression components, and lack of direct neuromodulator effects, which may limit the quantitative accuracy of predictions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94-C100 appropriately acknowledge model limitations. The simplifications are clearly stated and justified (e.g., C94-C95 note that GPe synapses are primarily somatic but also proximal dendritic, with 54% somatic and 32% distal dendritic from Smith and Bolam, 1991). These limitations are important for interpreting the model's predictions and suggest directions for future refinement.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C14"
+    ],
+    "result": "The computational model with short-term synaptic plasticity successfully matches a range of experimental findings on SNr firing patterns, including novel optogenetic stimulation results.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C14 represents a summary statement validated by the collective experimental and modeling results. The model reproduces voltage-clamp data (Figure 2), current-clamp data (Figure 3), diverse response types (Figures 4-5), and matches optogenetic experiments (Figure 6). This demonstrates strong agreement between model and experiment across multiple conditions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C57"
+    ],
+    "result": "SNr neurons spike at 10.4\u00b10.2 Hz and 10.7\u00b10.9 Hz under normal conditions in in vitro slice preparations, providing a baseline for model calibration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C57 cites established experimental measurements (Zhou et al., 2008, 2009) that provide empirical constraints for model parameters. This represents well-documented baseline physiology used for model validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C86",
+      "C88"
+    ],
+    "result": "Given sparse SNr collateral connectivity, unidirectional connections are predicted to be the dominant motif, and model-predicted oscillations are slower than \u03b2 oscillations typically associated with parkinsonism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86 and C88 represent reasonable inferences from the model and literature. The prediction of unidirectional dominance (C86) follows logically from sparse connectivity (Higgs and Wilson, 2016; Simmons et al., 2018). The distinction from \u03b2 oscillations (C88) appropriately contextualizes the ~1-2 Hz oscillations predicted and observed in the study relative to the more commonly discussed 13-30 Hz \u03b2 band in parkinsonism.",
+    "result_type": "MINOR"
+  }
+]

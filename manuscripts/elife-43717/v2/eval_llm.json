@@ -1,0 +1,307 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C4"
+    ],
+    "result": "The manuscript establishes the biological context that synaptic connections undergo continuous turnover (exchanging up to 50% over weeks), yet memories remain stable and can improve without further training, especially during sleep.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2-C4 are well-supported by multiple experimental citations establishing the paradox that motivates the study: synaptic turnover is extensive yet memories persist and improve. These are literature-based claims that provide the biological foundation for the computational work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7"
+    ],
+    "result": "The manuscript reviews existing hypotheses for memory retention including stable/unstable synapse pools, hippocampal replay mechanisms, and notes that hippocampal replay is not necessary for cortical memory maintenance based on patient H.M.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C7 accurately summarize prior hypotheses with appropriate citations. The inference about patient H.M. (C7) is a well-established observation in neuroscience, though the claim could be more nuanced about what H.M.'s case actually demonstrates.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10"
+    ],
+    "result": "The manuscript establishes that spontaneous activity alternations (Up-Down dynamics) occur during sleep and rest, memory-related patterns reactivate during these periods, and larger synapses are more stable than smaller ones.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C10 are well-supported by appropriate experimental citations. These establish key biological phenomena that the computational model aims to capture: spontaneous reactivation dynamics, memory replay during rest, and size-dependent synaptic stability.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C11",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "The main finding is that combining structural plasticity, synaptic plasticity, and self-generated reactivation stabilizes cell assemblies against synaptic turnover, strengthens connectivity, increases robustness, and leads to offline memory improvement.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11, C47-C51 represent the core conclusions supported by extensive simulation data (Figures 2-7). The model demonstrates that brief daily reactivations during rest maintain and strengthen assemblies despite ongoing turnover, with improved pattern completion. The computational evidence is internally consistent and mechanistically explained.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C12",
+      "C13"
+    ],
+    "result": "During learning, stimulated neuron groups form highly interconnected cell assemblies while non-assembly connections remain sparse, with connectivity following synaptic strength on an hours timescale.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C13 are supported by simulation data in Figure 2B showing differential strengthening of intra-assembly versus inter-assembly connections. The temporal dynamics of weight and connectivity changes are clearly demonstrated, though the specific timescale depends on model parameters.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19"
+    ],
+    "result": "The model exhibits distinct dynamics during sensory versus rest phases: assemblies decay during sensory input due to lateral inhibition, but spontaneously reactivate during rest when sufficient recurrence exists, with winner-take-all dynamics ensuring only one assembly activates at a time, terminated by short-term depression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C19 describe the core dynamical mechanism supported by Figures 3A-C. The phase-plane analysis (Figure 3A) and activity correlation data (Figures 3Ci-ii) demonstrate the reactivation mechanism. The role of short-term depression in terminating high activity is well-established in cited prior models and implemented here.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "Without rest phases, assembly weights and connectivity decay over days, but interleaving sensory and rest phases preserves and gradually increases intra-assembly connectivity while maintaining weak inter-assembly connections and removing spurious connections.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C24 are strongly supported by simulation data in Figures 4A-C and supplement 1. The contrast between continuous sensory input (decay) and alternating phases (strengthening) is clearly demonstrated. The removal of spurious connections during rest is an important refinement shown in supplementary data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C25"
+    ],
+    "result": "Without structural plasticity during retention, assemblies initially remain stable but are eventually lost after prolonged sensory phases that drive them below reactivation threshold.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C25 is supported by Figure 4D showing assembly loss after ~100 hours when structural plasticity is blocked. This demonstrates the necessity of structural plasticity for long-term memory maintenance in the model, though the specific timescale depends on parameters.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "The model exhibits ongoing synapse turnover (~10% daily) with transiently increased creation after learning, continuous removal of learning-formed synapses, and strengthening through stabilizing more synapses than are removed rather than simple addition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C29 are supported by Figure 5A-C and comparisons to experimental data. The turnover rate and post-learning dynamics match experimental observations. The mechanistic insight that strengthening emerges from differential stabilization rather than net addition (C29) is well-demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C32"
+    ],
+    "result": "Self-induced strengthening through reactivation improves recall quality and pattern completion robustness.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C32 is supported by Figure 6 showing improved separation of input current distributions and better pattern completion at higher corruption levels after rest-phase strengthening (t=300h vs t=15h). The functional benefit of structural changes is clearly demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C33",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "Assembly connectivity increases with longer rest and shorter sensory phases, with dynamics explained by a theory assuming maximal potentiation during rest and exponential decay during sensory phases; larger initial connectivity enables longer survival without reactivation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C37 are supported by Figures 7A-C showing parameter dependencies and theory-simulation agreement. The theoretical framework (Materials and methods) provides mechanistic understanding. However, the theory makes simplifying assumptions (homogeneous connectivity, maximal potentiation) that may not fully capture heterogeneity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C38",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "Assembly connectivity exhibits bistable dynamics, converging to either decay or a stationary value that increases with longer rest and shorter sensory phases; even brief rest (3 min) can maintain connectivity for up to 20 hours of sensory input.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C42 are supported by Figures 7D-G showing convergence dynamics and theoretical predictions of stationary states. The bistability is a key mechanistic insight. However, the claim about 3-minute rest (C42) is based on theoretical extrapolation (Figure 7G) and would benefit from simulation validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "Short-term depression maintains overlapping assemblies while spike-frequency adaptation causes separation, because adaptation of neurons prevents reactivation with multiple assemblies whereas synaptic depression only affects transmission.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C46 are supported by Figure 8A-B showing contrasting outcomes. The mechanistic explanation (C45-C46) is logically sound: neuronal adaptation creates competition while synaptic depression does not. This demonstrates an important functional difference between adaptation mechanisms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "The mechanism requires five critical ingredients: spontaneous reactivation capability, activity termination via adaptation, lateral inhibition for winner-take-all dynamics, structural plasticity favoring large synapses, and Hebbian plasticity that depresses asynchronous connections.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C57 accurately identify the necessary model components. Each requirement is justified by the model's behavior and supported by the simulation results. The clarification that structural plasticity becomes associative indirectly (C56) is an important mechanistic insight.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "The current model advances beyond previous work by using self-generated rather than external reactivation, demonstrating survival for many hours without reactivation, and showing memory strengthening through selective synapse stabilization despite ongoing turnover.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C62 appropriately position the work relative to prior models with accurate citations. The advances are genuine: self-organized reactivation without external cues, longer timescales, and explicit structural plasticity. The comparisons are fair and the novelty is substantiated by the simulation results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "Offline memory gains generally emerge from bistable connectivity dynamics where creation balances removal at weak and strong configurations; slow structural plasticity prevents saturation during learning, enabling post-learning strengthening unlike faster synaptic-only plasticity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C67 provide theoretical generalization supported by the bistability analysis (Figure 7) and appropriate citations to alternative mechanisms. The distinction between structural and synaptic plasticity timescales (C65-C67) explains why offline gains occur here but not in some prior models. The reasoning is sound.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "The model's reactivation dynamics during rest phases parallel experimental observations of memory reactivation during NREM/slow-wave sleep, Up-Down state dynamics, stereotypical activity patterns, and phase-coupling with Up-states, potentially relating to sleep's beneficial effects on memory.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C73 establish strong parallels between model and experimental observations with appropriate citations. The connection to sleep benefits (C74) is appropriately speculative. The biological plausibility is well-argued, though direct experimental validation of the specific mechanism would require additional work.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "The model predicts memory instability after very long wake phases, but additional mechanisms (stable synapse pools, wake reactivations) may prevent memory loss during sleep deprivation; offline gains during wakefulness and rest-period reactivation are experimentally observed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C80 appropriately discuss model limitations (C75-C77) and supporting evidence (C78-C80) with relevant citations. The speculation about additional protective mechanisms (C76-C77) is reasonable given that sleep deprivation doesn't cause massive memory loss. The experimental support for wake reactivation strengthens the model's relevance.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "The model reconciles competing hypotheses about sleep's effects on connectivity: intra-assembly connections strengthen (supporting consolidation evidence) while inter-assembly and control connections weaken (supporting synaptic homeostasis), with memory representations selectively up-regulated.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C85 effectively synthesize how the model addresses an ongoing debate with appropriate citations to both hypotheses. The simulation data (Figures 4B-C, supplement 1) support the differential effects. This is an important conceptual contribution showing both hypotheses can be partially correct in different network compartments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "While the model's daily weight changes are comparable to experiments, synapses segregate into stable/unstable pools unlike some experimental observations; the impact of intrinsic weight fluctuations on memory maintenance requires future investigation, though connectivity build-up should provide robustness.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C86-C88 identify a discrepancy between model and some experimental data regarding synapse pool segregation, supported by Figure 4-supplement 2. Claims C89-C90 appropriately acknowledge this as a limitation requiring future work. The speculation about robustness (C90) is reasonable but untested. This honest assessment of model limitations is appropriate.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,211 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C73",
+      "C84",
+      "C85"
+    ],
+    "result": "Multiple kinesins (2-8) induce tension (0-4 pN) between each other during cargo transport, with approximately 2/3 driving and 1/3 resisting at any given time. Driving kinesins stay attached longer (3.0\u00b10.21 s vs 2.15\u00b10.15 s) and travel further (2.31\u00b10.18 \u00b5m vs 1.42\u00b10.09 \u00b5m) than resisting kinesins, demonstrating asymmetric run length and duration. This asymmetry suggests non-zero tension between motors and enables kinesins to communicate through mechanical coupling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C44, C62-C66, C73, C84-C85 provide converging experimental evidence from the force-gliding assay showing tension between kinesins, asymmetric behavior of driving vs resisting motors, and the constant 2/3 driving fraction. The force measurements (0-4 pN) are semi-quantitatively validated against published single-motor data (C85), and the 1/3 resisting fraction matches simulation predictions (C69). The experimental design allows direct observation of individual motor dynamics while measuring cargo motion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C86",
+      "C87"
+    ],
+    "result": "Driving kinesins slow down and resisting kinesins speed up to match the cargo velocity (~830 nm/s), demonstrating velocity asymmetry in multi-motor transport. Driving kinesins start at ~1200 nm/s and resisting kinesins at ~500 nm/s relative to the microtubule, but both converge to the cargo speed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C49, C86-C87 present direct experimental observations of velocity asymmetry from the force-gliding assay. The data show clear convergence of driving and resisting motor velocities to match cargo speed, consistent with tension-mediated coordination. This extends single-motor velocity asymmetry observations (C22) to the multi-motor context.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C75",
+      "C76"
+    ],
+    "result": "Multiple kinesins exhibit negative cooperativity: when kinesin surface concentration increases 16-fold (0.03 to 0.46 kinesin/\u00b5m\u00b2), the total number of active kinesins increases only 2-fold, and individual kinesin run length and duration decrease 2-3-fold. This negative cooperativity arises from shorter run lengths and binding durations as more kinesins participate in transport.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C51, C75-C76 provide direct experimental evidence for negative cooperativity through systematic variation of kinesin concentration. The mechanism (decreased run length/duration with more motors) is directly observed rather than inferred from bulk measurements. This explains previous observations of negative cooperativity (C26) at the single-motor level.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C77",
+      "C78",
+      "C88"
+    ],
+    "result": "Multiple kinesins can rescue stuck cargo by collectively detaching kinesins stuck at roadblocks. As roadblock concentration increases (0 to 100 nM), the proportion of stuck microtubules increases (7% to 29%), but increasing kinesin number (1 to 6-8) reduces stuck events to nearly zero while maintaining constant velocity (~805 nm/s). 18 rescue events were observed where stuck microtubules were freed by other kinesins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C58, C77-C78, C88 demonstrate roadblock rescue through systematic variation of both roadblock and kinesin concentrations. The data show clear trends: more roadblocks increase pausing, but more motors reduce it. Direct observation of 18 rescue events provides qualitative support, though the number is relatively small given the dataset size. The mechanism is consistent with the tension and force augmentation results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C32",
+      "C59",
+      "C60",
+      "C61",
+      "C79",
+      "C89"
+    ],
+    "result": "Multiple kinesins can combine forces to overcome roadblocks, occasionally detaching stuck kinesins from the surface. Optical trap experiments show DNA tethers rupture at 30 pN (10 nm/s loading) or >45 pN (100 nm/s loading), suggesting ~4 driving kinesins may exert additive forces exceeding single-kinesin stall force (~6 pN). Nine instances were observed where driving kinesins detached a stuck resisting kinesin from the coverslip.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C32, C59-C61, C79, C89 suggest force augmentation, but the evidence is indirect and limited. Only 9 detachment events were observed, and the authors acknowledge significant uncertainty in force measurements due to DNA extension variability (Appendix 2). The optical trap rupture forces (30-45 pN) have broad distributions, meaning detachment could occur at <6 pN (noted in Appendix 6). While suggestive of additive forces, the data do not definitively prove forces exceed single-motor capacity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "The force-gliding assay uses kinesins labeled 1:1 with quantum dots and tethered to a PEG-coated coverslip via 1565-bp dsDNA that acts as a non-linear spring, enabling simultaneous measurement of individual motor positions, forces, and cargo velocity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C36 describe the core experimental methodology. The 1:1 labeling is achieved through MiCA purification (Materials and methods), and the DNA spring properties are characterized using eWLC model. This assay design is novel and enables the key measurements reported. However, the force measurements have acknowledged uncertainties (Appendix 2, Figure 2-supplement 1).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "Kinesins transition between driving and resisting states at an average rate of 4.9 transitions/min, with 52% being drive-to-drive transitions and 16% each for drive-to-resist and resist-to-drive transitions. This demonstrates the highly dynamic nature of kinesin teamwork.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C83 quantify the dynamic switching behavior observed in the force-gliding assay (N=685 transitions). The transition rates and distributions are directly measured from experimental traces. This supports the conclusion that kinesins constantly change roles rather than maintaining fixed states.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C90",
+      "C91"
+    ],
+    "result": "An asymmetric tug-of-war with negative cooperativity and additive forces defines collective kinesin transport and may facilitate uninterrupted cargo transport in dense cellular environments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90-C91 represent the authors' overall synthesis of their findings. The asymmetric tug-of-war (C27-C49), negative cooperativity (C50-C76), and additive forces (C32, C59-C61, C79) are each supported by experimental data, though the additive force evidence is weaker. The cellular relevance (C91) is speculative but reasonable given the experimental findings. The conclusion integrates multiple well-supported results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C67",
+      "C70",
+      "C72",
+      "C74"
+    ],
+    "result": "The authors predict that in cells with shorter/stiffer linkers, tension will increase, membrane fluidity will reduce tension, and the 33% resisting kinesin strategy balances drag and run length for optimal transport.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C67, C70, C72, C74 are predictions/speculations about cellular conditions not tested experimentally. While the reasoning is logical based on the experimental findings and comparison to simulations (C68-C69) and other motor systems (C71), these remain untested hypotheses requiring future experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "Background claims establish that kinesin-1 is a well-characterized motor (8.4 nm/ATP, ~0.77 \u00b5m/s, ~6 pN force, asymmetric load response) important for cellular transport, that cells are dense environments where cargos nevertheless move efficiently, that 1-7 motors bind cellular cargos, and that prior simulations and experiments suggest tension between motors and negative cooperativity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C26 are background knowledge supported by appropriate citations to established literature. These provide context for the current work and justify the research questions. The citations appear accurate based on the referenced findings (e.g., Milic et al. 2014 for asymmetric run length, Arpa\u011f et al. 2014 for simulations predicting 1/3 resisting motors).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C33"
+    ],
+    "result": "Multiple kinesins acting as a team may play a significant role in facilitating smooth cargo motion in dense cellular environments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C33 is a reasonable inference from the experimental findings showing tension-mediated coordination, roadblock rescue, and maintained velocity despite obstacles. However, this remains an extrapolation from in vitro to in vivo conditions. The experimental system uses long flexible DNA tethers and a rigid surface, which differ from cellular conditions with membrane-bound motors and vesicular cargos.",
+    "result_type": "MAJOR"
+  }
+]

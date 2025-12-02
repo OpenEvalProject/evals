@@ -1,0 +1,406 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5"
+    ],
+    "result": "TRPV1 is a polymodal nociceptor activated by capsaicin with high efficacy (near unity open probability) and potency (EC50 ~100 nM), underlying spicy sensation and used for topical pain treatment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C5 are all supported by citations to prior work and represent well-established background knowledge about TRPV1 function and capsaicin activation. These claims provide context for the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8"
+    ],
+    "result": "TRPV1's ligand-binding pocket resides within the transmembrane domain, formed by S3, S4, S4-S5 linker from one subunit and S5, S6 from a neighboring subunit due to domain-swapping arrangement.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C8 describe the structural organization of TRPV1's ligand-binding pocket, supported by multiple citations and Figure 1A. This is established structural knowledge from prior cryo-EM studies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "Capsaicin activates TRPV1 through an allosteric mechanism involving a vertical 'head-down tail-up' binding pose with two hydrogen bonds (to T551 and E571) that lifts the S4-S5 linker upward/outward by 1.3 \u00c5, leading to S6 movement and pore opening.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C16 describe the established capsaicin activation mechanism, supported by multiple citations and Figure 1B showing the structural changes. This represents prior knowledge that forms the basis for the current study's design.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "Piperine uses a less efficacious horizontal binding pose involving direct interaction with S6 (bridging T551 and T671), distinct from capsaicin's vertical pose, as demonstrated by differential effects of E571A and T671 mutations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C20 describe prior work on piperine binding, supported by citations. The mutational data (C19-C20) from prior studies validates the existence of two distinct binding poses, providing important context for the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "Cap+1 and Cap-1 were designed as capsaicin analogs with altered neck length (\u00b11 CH2 group, ~1.5 \u00c5 change), matching the S4-S5 linker movement distance while preserving key functional groups.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C24 describe the rational design of the molecular rulers, supported by Figure 1C. The design logic is sound: the \u00b11.5 \u00c5 changes match the 1.3 \u00c5 S4-S5 linker movement, and preserving functional groups allows testing of size effects independently.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "Cap-1 and Cap+1 strongly activate TRPV1 at the same binding site as capsaicin. Cap-1 shows similar EC50 and Po to capsaicin (after conductance correction), while Cap+1 shows similar Po but ~30-fold higher EC50.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C35 are well-supported by experimental data in Figure 2, including macroscopic and single-channel recordings. The capsazepine competition (C26) confirms same binding site. The conductance correction for Cap-1 (C31-C32) is appropriate. Statistical analysis appears adequate (n=3-8 cells).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C36",
+      "C37"
+    ],
+    "result": "Rosetta modeling predicted capsaicin-like vertical binding poses for Cap-1 and Cap+1 with hydrogen bonds to T551 and E571, functionally confirmed by T551V and E571A mutations causing 10-100 fold EC50 increases and reduced Po_max.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C37 combine computational predictions with functional validation. The mutational data in Figure 3C, F and Table 1 strongly support the vertical binding pose for both analogs. The dramatic effects of T551V and E571A mutations provide convincing functional evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "Cap-1 also adopts a semi-horizontal pose interacting with T671 on S6 and Y512 on S2-S3 linker, as T671S and Y512F mutations right-shifted Cap-1 concentration-response by 100-fold, while having minimal effects on capsaicin.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C42 are supported by computational modeling (Figure 3A) and functional validation (Figure 3C, supplementary figures). The differential effects of T671S and Y512F on Cap-1 versus capsaicin (C41-C42) provide strong evidence for an alternative binding pose.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "Cap+1 adopts a horizontal pose predominantly interacting with T671 (not E571), with hydrogen bonds to T551 and T671, as shown by binding energy distribution and T671S/T551V mutations causing 100-fold EC50 increases. The tail cannot fully extend into the hydrophobic pocket, reducing VDW interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C49 are supported by computational modeling (Figure 3D-E) and functional validation (Figure 3F). The binding energy analysis (C44) and mutational data (C46) support the horizontal pose. The inference about reduced VDW interactions (C47-C49) is reasonable given prior work (C48) and modeling results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "Cap-1 and Cap+1 bind less tightly than capsaicin, with 2-6 fold faster OFF rates and easier competition by capsazepine. Using I574A mutant channels, Cap+1 showed reduced efficacy (lower L value) in addition to weaker binding (higher KD).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C54 are supported by kinetic measurements (Figure 4A), competition assays (Figure 4B), and allosteric gating analysis with I574A mutant (Figure 4D-F). The use of I574A to separate KD and L effects is methodologically sound and well-justified in the text.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "Despite drastically different ligand poses, Cap-1 and Cap+1 stabilize nearly identical ligand-binding pocket conformations resembling capsaicin-bound structure (3J5R), with maximal deviation <1 \u00c5 and deviations clustered around T551, E571, and T671.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C58 are supported by computational analysis in Figure 5A-B showing RMSD comparisons. The observation that different ligand poses produce similar pocket conformations is a key finding. The clustering of deviations around interaction sites (C58) suggests local adaptations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C59",
+      "C60"
+    ],
+    "result": "Structurally distinct ligands stabilize a single permissive conformation in the TRPV1 ligand-binding pocket, suggesting a dominant low-energy conformation when vanilloid molecules replace endogenous lipids.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C60 represent a major conclusion supported by the structural modeling (C55-C58) and functional data showing similar maximal Po values. This is a key mechanistic insight about TRPV1 activation, though it remains an inference from the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "Pore conformations of Cap-1 and Cap+1 bound models are nearly identical to capsaicin-bound structure (maximal deviation <0.4 \u00c5), with similar cation selectivity and permeability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C63 are supported by computational analysis (Figure 5 supplement 1) and functional measurements (Figure 5 supplement 2). The similar pore properties across ligands support the single permissive conformation model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "The TRPV1 ligand-binding pocket allows distinct ligand binding poses but adopts a single permissive conformation. Allosteric activation can be induced by structurally similar analogs in distinct ways, with strength correlating with ligand size.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C64-C65 summarize major findings and are well-supported. However, C66 (correlation with size) is problematic: Cap-1 (shorter) and Cap+1 (longer) both show reduced activation compared to capsaicin, which doesn't support a simple size correlation. The relationship is more complex than stated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C67"
+    ],
+    "result": "Endovanilloids like anandamide and 12-HEPTE target TRPV1 for physiological functions that can be antagonized by capsazepine or iodo-resiniferatoxin.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C67 is supported by citations to prior work and provides context for the broader significance of understanding TRPV1 ligand binding mechanisms.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C68",
+      "C69"
+    ],
+    "result": "The stability of the open pore (determining Po) is linked to the stability of the permissive ligand-binding pocket conformation, which is determined by molecular interactions between ligand and channel residues.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C69 represent mechanistic inferences from the allosteric model and experimental data. This is a reasonable interpretation supported by the gating analysis and structural findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C70",
+      "C71"
+    ],
+    "result": "In glutamate receptors, structurally distinct ligands bind in similar poses and induce graded conformational changes defining partial and full agonists.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C71 describe prior work on glutamate receptors, supported by citations. This provides important context for comparing TRPV1's distinct mechanism.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C72",
+      "C73"
+    ],
+    "result": "There exists a single stable permissive conformation for the TRPV1 ligand-binding pocket. Ligands that better stabilize this conformation yield more stable pore conformations and stronger activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C73 represent major mechanistic conclusions supported by the structural modeling, functional data, and comparison to prior cryo-EM structures. This distinguishes TRPV1 from other ligand-gated channels.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C74"
+    ],
+    "result": "Conformational changes in the TRPV1 pore involve movements of S6 and the selectivity filter.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C74 is supported by citations to prior work and provides context for understanding the coupling between ligand-binding pocket and pore.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C75",
+      "C76"
+    ],
+    "result": "Capsaicin's molecular structure makes it a potent TRPV1 agonist because its hydrophobic/hydrophilic group distribution matches the ligand-binding pocket electrostatics, and the separation between hydrogen bond-forming groups perfectly matches the T551-E571 distance in the permissive conformation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C76 represent key mechanistic insights supported by the comparative analysis of capsaicin and its analogs. The perfect match between capsaicin's structure and the pocket geometry explains its high potency.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "The size mismatch of Cap-1 and Cap+1 (~1.5 \u00c5 shorter/longer) causes them to be less stable than capsaicin in the vertical binding pose, leading them to explore alternative low-energy binding poses that are less stable.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C79 represent reasonable inferences from the computational modeling (Figure 3) and functional data. The size mismatch explanation for alternative poses is logical and supported by the evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C80",
+      "C81"
+    ],
+    "result": "When T551 and E571 are simultaneously mutated, capsaicin becomes less potent but can still induce strong activation at high concentrations, suggesting capsaicin can bind in alternative poses when the vertical pose is prohibited.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C81 are supported by citation to prior work (Yang et al., 2015) and provide important context for understanding ligand binding flexibility.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C82"
+    ],
+    "result": "The electrostatic potential distribution inside the ligand-binding pocket might play an important role in ligand binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C82 is explicitly speculative ('we speculate') and lacks direct experimental validation. While reasonable based on structural considerations, this remains a hypothesis requiring further testing.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "The binding poses of capsaicin analogs are stabilized by both polar and nonpolar interactions. VDW interactions with the hydrophobic tail are important, as shown by tail-shortening studies and the horizontal pose of Cap+1 preventing full tail extension. F544 contributes substantially to tail VDW interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C88 are supported by computational modeling (Figure 3B) and citations to prior work. The inference about Cap+1's reduced VDW interactions (C85-C86) is reasonable. The F544 data (C87-C88) from prior studies supports the importance of hydrophobic interactions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "The ligand-binding pocket is mostly electro-neutral to accommodate lipids (closed) and capsaicin (open), though local electrostatic changes occur during activation. Capsaicin and its analogs have distinct electrostatic potential distributions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C91 are supported by electrostatic potential analysis (Figure 5 supplements 4-5) and citations to prior structures. The observations about local changes and distinct ligand electrostatics are well-documented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C92",
+      "C93"
+    ],
+    "result": "A side portal in the ligand-binding pocket provides direct access to the electro-negative pore. This portal is not observed in the apo state and is associated with activation conformational changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C93 are supported by structural analysis (Figure 5 supplement 3). The observation of an activation-associated portal is interesting, though its functional significance requires further investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C94"
+    ],
+    "result": "Introducing a single halogen atom (Cl, Br, or I) to the head of capsaicin or RTX converts these agonists into competitive antagonists.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C94 is supported by citations to prior work and Figure 5 supplement 6 showing electrostatic potential maps. This provides important context for understanding how small chemical changes affect ligand function.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C95",
+      "C96"
+    ],
+    "result": "In TRPV1, the ligand recognition mechanism follows the allosteric principle, where full and partial agonists are distinguished by their ability to stabilize the permissive conformation through distinct ligand-receptor interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95-C96 represent the major mechanistic conclusion of the study, supported by the combined structural modeling, functional data, and gating analysis. This distinguishes TRPV1's mechanism from other ligand-gated channels.",
+    "result_type": "MAJOR"
+  }
+]

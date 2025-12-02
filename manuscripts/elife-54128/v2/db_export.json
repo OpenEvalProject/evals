@@ -1,0 +1,2473 @@
+{
+  "submission": {
+    "id": "a168c32e-1820-4b93-ac89-8d9e2b7c09ac",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T15:50:55.213524Z",
+    "updated_at": "2025-12-02T15:50:55.213524Z"
+  },
+  "content": [
+    {
+      "id": "be1a88bd-775a-4010-83be-0436deb4111c",
+      "submission_id": "a168c32e-1820-4b93-ac89-8d9e2b7c09ac",
+      "content_type": "manuscript",
+      "content_text": "# Monoubiquitination by the human Fanconi anemia core complex clamps FANCI:FANCD2 on DNA in filamentous arrays\n\n## Authors\n\n- Winnie Tan<sup>1</sup> ([ORCID: 0000-0003-3229-4157](https://orcid.org/0000-0003-3229-4157))\n- Sylvie van Twest<sup>1</sup> ([ORCID: 0000-0001-5602-0906](https://orcid.org/0000-0001-5602-0906))\n- Andrew Leis<sup>3</sup> ([ORCID: 0000-0003-4905-9401](https://orcid.org/0000-0003-4905-9401))\n- Rohan Bythell-Douglas<sup>1</sup> ([ORCID: 0000-0002-3823-8749](https://orcid.org/0000-0002-3823-8749))\n- Vincent J Murphy<sup>1</sup>\n- Michael Sharp<sup>1</sup> ([ORCID: 0000-0002-1019-3729](https://orcid.org/0000-0002-1019-3729))\n- Michael W Parker<sup>3</sup> ([ORCID: 0000-0002-3101-1138](https://orcid.org/0000-0002-3101-1138))\n- Wayne Crismani<sup>1</sup> ([ORCID: 0000-0003-0143-8293](https://orcid.org/0000-0003-0143-8293))\n- Andrew J Deans<sup>1</sup> ([ORCID: 0000-0002-5271-4422](https://orcid.org/0000-0002-5271-4422)) \u2020\n\n### Affiliations\n\n1. Genome Stability Unit, St. Vincent\u2019s Institute of Medical Research Fitzroy Australia\n2. Department of Medicine (St. Vincent\u2019s Health), The University of Melbourne Melbourne Australia\n3. Bio21 Institute, University of Melbourne Parkville Australia\n4. Structural Biology Unit, St. Vincent\u2019s Institute of Medical Research Fitzroy Australia\n\n\u2020 Corresponding author\n\n## Abstract\n\nFANCI:FANCD2 monoubiquitination is a critical event for replication fork stabilization by the Fanconi anemia (FA) DNA repair pathway. It has been proposed that at stalled replication forks, monoubiquitinated-FANCD2 serves to recruit DNA repair proteins that contain ubiquitin-binding motifs. Here, we have reconstituted the FA pathway in vitro to study functional consequences of FANCI:FANCD2 monoubiquitination. We report that monoubiquitination does not promote any specific exogenous protein:protein interactions, but instead stabilizes FANCI:FANCD2 heterodimers on dsDNA. This clamping requires monoubiquitination of only the FANCD2 subunit. We further show using electron microscopy that purified monoubiquitinated FANCI:FANCD2 forms filament-like arrays on long dsDNA. Our results reveal how monoubiquitinated FANCI:FANCD2, defective in many cancer types and all cases of FA, is activated upon DNA binding.\n\n## Introduction\n\nFanconi anemia (FA) is a devastating childhood syndrome that results in bone marrow failure, leukemia and head and neck cancers (Gillio et al., 1997; Butturini et al., 1994). FA is caused by inheritance of one of 22 dysfunctional FA genes (FANCA-FANCW) (Tan and Deans, 2017). Absence of any one member of the pathway causes genome instability during DNA replication, which results in mutagenic (cancer-causing) DNA damage and hypersensitivity to chemotherapeutic (normal and cancer-killing) DNA damage (Deans and West, 2011). Central to the FA pathway is the conjugation of ubiquitin to FANCI:FANCD2 (ID2) complexes (Walden and Deans, 2014). ID2 monoubiquitination is critical to prevention of bone marrow failure in FA, but it is currently unknown how ID2-ub differs in its function to ID2. Several proteins have been proposed to specifically bind FANCIUb or FANCD2Ub but not the un-ubiquitinated proteins (Smogorzewska et al., 2010; Lachaud et al., 2014). For example, FAN1 nuclease was proposed to interact with FANCD2Ub via its ubiquitin-binding domain (UBZ) (Smogorzewska et al., 2010), whereas recruitment of SLX4 endonuclease to the interstrand crosslink site was shown to be dependent on FANCD2 ubiquitination (Klein Douwel et al., 2014). However, support for these interactions is limited to analysis of ubiquitination-deficient (K\u00a0>\u00a0R) mutants, rather than evidence for direct ubiquitin-mediated protein interactions.\n\nThe retention of FANCD2 in chromatin foci is dependent on its monoubiquitination by a \u2018core complex\u2019 of Fanconi anemia proteins (Walden and Deans, 2014). FANCI and the FA core complex are required to generate FANCD2-foci that mark the location of double strand breaks, stalled replication forks and R-loops (Taniguchi et al., 2002; Schwab et al., 2015; Wienert et al., 2019) in the nucleus, and protect nascent DNA at these sites from degradation by cellular nucleases (Schlacher et al., 2012). The ubiquitinated form of FANCD2, and also its ubiquitinated partner protein FANCI, become resistant to detergent and high-salt extraction from these foci (Smogorzewska et al., 2007; Montes de Oca et al., 2005), leading to speculation about the existence of a chromatin anchor or altered DNA binding specificity post-monoubiquitination (Longerich et al., 2014).\n\nA recent electron microscopy study revealed a DNA interacting domain that is required for FANCI:FANCD2 binding to DNA (Liang et al., 2016). The crystal structure of the non-ubiquitinated FANCI:FANCD2 shows that the monoubiquitination sites of FANCI:FANCD2 are buried and therefore inaccessible in the dimer interface of the complex (Joo et al., 2011), suggesting that DNA binding might be required to expose the ubiquitin binding sites. Based on biochemical analyses, non-ubiquitinated FANCI and FANCD2 preferentially bind to branched DNA molecules which mimic DNA replication and repair intermediates (Longerich et al., 2014; Longerich et al., 2009; Niraj et al., 2017); however, how that activates monoubiquitination of FANCI:FANCD2 remains poorly understood. DNA is a cofactor for maximal ubiquitination (Longerich et al., 2014; van Twest et al., 2017), as is phosphorylation by the ATR kinase (Tan et al., 2020b; Ishiai et al., 2008).\n\nHere, we have reconstituted the FA pathway using recombinant FA core complex and fluorescently labeled DNA oligomer substrates. We show that once monoubiquitinated, FANCI:FANCD2 forms a tight interaction with double-stranded containing DNA. We report the successful purification of monoubiquitinated FANCI:FANCD2 complex bound to DNA using an Avi-ubiquitin construct, and show that the monoubiquitination does not promote any new protein:protein interactions with other factors in vitro. Instead, we reveal a new role of monoubiquitinated FANCI:FANCD2 in forming higher order structures and demonstrate how monoubiquitinated FANCI:FANCD2 interacts with DNA to initiate DNA repair. Our work uncovers the molecular function of the pathogenetic defect in most cases of FA.\n\n## Results\n\n### Monoubiquitination does not promote association of FANCI:FANCD2 with a panel of proteins previously hypothesized to bind the ubiquitinated form\n\nMono-ubiquitinated FANCI:FANCD2 (henceforth IUbD2Ub) is the active form of the complex in repair of DNA damage. Many previous studies have speculated about the existence of DNA repair proteins that specifically associate with IUbD2Ub. A summary of these proteins is presented in Table 1. Using recombinant ID2 or IUbD2Ub prepared by Avi-ubiquitin purification method (Tan et al., 2020a), we sought to directly compare the binding of this panel of ID2-associated proteins. Each of the partner proteins was expressed using reticulocyte extracts (Figure 1a), and the majority bound to the ID2 complex as predicted based on previously identified associations (Figure 1b). The strongest binding proteins in terms of fraction of protein recovered were SLX4, FAAP20, SMARCAD, FANCJ, PSMD4, SF3B1, MCM5 and BRE. Although SMARCAD and SF3B1 appeared \u2018sticky\u2019 in control experiments, recovery of these proteins was still enriched by FANCD2:FANCI beads compared to background. Luciferase protein was used as a control 35S-labeled prey-protein. Surprisingly, our main observation was that none of the proteins showed any increased affinity for IUbD2Ub over ID2 (Figure 1d).\n\n**Table 1.**\n List of proteins containing ubiquitin binding domain that are described or predicted to bind to ubiquitinated FANCD2.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Protein</th>\n      <th>Function</th>\n      <th>Domain</th>\n      <th>Reference</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>FAN1</td>\n      <td>Nuclease</td>\n      <td>UBZ4</td>\n      <td>(Kratz et al., 2010)</td>\n    </tr>\n    <tr>\n      <td>SLX4</td>\n      <td>Nuclease</td>\n      <td>UBZ1</td>\n      <td>(Lachaud et al., 2014)</td>\n    </tr>\n    <tr>\n      <td>FAAP20</td>\n      <td>FANCA partner</td>\n      <td>UBZ</td>\n      <td>(Hein et al., 2015)</td>\n    </tr>\n    <tr>\n      <td>RAP80</td>\n      <td>BRCA1 partner</td>\n      <td>UIM</td>\n      <td>(Castillo et al., 2014)</td>\n    </tr>\n    <tr>\n      <td>SMARCAD1</td>\n      <td>Chromatin remodeler</td>\n      <td>CUE</td>\n      <td>(Densham et al., 2016)</td>\n    </tr>\n    <tr>\n      <td>FANCJ</td>\n      <td>Helicase</td>\n      <td>-</td>\n      <td>(Raghunandan et al., 2015)</td>\n    </tr>\n    <tr>\n      <td>PSMD4</td>\n      <td>Protease</td>\n      <td>UIM</td>\n      <td>(Jacquemont and Taniguchi, 2007)</td>\n    </tr>\n    <tr>\n      <td>SF3B1</td>\n      <td>RNA binding protein</td>\n      <td>UBZ</td>\n      <td>(Moriel-Carretero et al., 2017)</td>\n    </tr>\n    <tr>\n      <td>TRIM25</td>\n      <td>E3 ligase</td>\n      <td>RING finger</td>\n      <td>(Lossaint et al., 2013)</td>\n    </tr>\n    <tr>\n      <td>MCM5</td>\n      <td>CMG component</td>\n      <td>-</td>\n      <td>(Lossaint et al., 2013)</td>\n    </tr>\n    <tr>\n      <td>BRE</td>\n      <td>BRCA1 partner</td>\n      <td>-</td>\n      <td>(Wang, 2007)</td>\n    </tr>\n    <tr>\n      <td>BRCC</td>\n      <td>BRCA1 partner</td>\n      <td>-</td>\n      <td>(Wang, 2007)</td>\n    </tr>\n    <tr>\n      <td>SNM1A</td>\n      <td>Nuclease</td>\n      <td>UBZ</td>\n      <td>(Yang et al., 2010)</td>\n    </tr>\n    <tr>\n      <td>CtIP*</td>\n      <td>Nuclease activator</td>\n      <td>C2H2 zinc finger</td>\n      <td>(Murina et al., 2014)</td>\n    </tr>\n    <tr>\n      <td>Rev1*</td>\n      <td>Translesion polymerase</td>\n      <td>UBZ3</td>\n      <td>(Moldovan et al., 2010)</td>\n    </tr>\n  </tbody>\n</table>\n\n_*Indicates not tested in our experiments, because protein not produced in TnT system._\n\n![Figure 1.](https://cdn.elifesciences.org/articles/54128/elife-54128-fig1-v2.jpg)\n\n**Figure 1.:** (a) 35S-labelled FAN1, SLX4, FAAP20, RAP80, SMARCAD, FANCJ, PSMD4, SF3B1, TRIM25, MCM5, BRE, BRCC, SNM1A or luciferase (control) inputs were expressed using reticulocyte\u00a0extracts. (b\u2013c) The inputs prepared from (a) were incubated with the indicated FLAG-ID2 (b) or FLAG-IubD2ub (c) followed by FLAG pull-down and elution. The complexes were subjected to SDS-PAGE, and radiolabelled proteins were detected by autoradiography (representative experiment of n\u00a0=\u00a02). (d) Quantification showing percentage of ID2, IubD2ub or FLAG resin binding to inputs.\n\n### Monoubiquitination clamps FANCI:FANCD2 on DNA\n\nAn alternative explanation for the observed increase in association between ID2 and its associated proteins after DNA damage is that IUbD2Ub has an increased affinity for DNA, which brings the protein into closer proximity to these partners. The majority of ID2 associated proteins are chromatin localized. In order to explore the stability of IUbD2Ub on DNA, we performed in vitro monoubiquitination reactions in the presence of IR-dye700 labeled 60 bp double-stranded DNA (dsDNA). As previously characterized (van Twest et al., 2017), we observed DNA-dependent appearance of monoubiquitinated forms of FANCD2 and FANCI when using recombinant FA core complex components (Figure 2a\u2013b). ID2 monoubiquitination readily lead to DNA mobility shifts using EMSA (electromobility shift assay) even at low concentrations, but this was not observed for the unmodified (apo)-ID2 complex in the absence of the enzymatically active\u00a0FA core complex, or when monoubiquitination-defective K-to-R mutants of ID2 were used in the reaction (Figure 2c, lanes 2\u20134).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/54128/elife-54128-fig2-v2.jpg)\n\n**Figure 2.:** (a) Schematic of the electrophoretic mobility shift assay (EMSA) using IRDye-700 labeled dsDNA. (b) Coomassie stained SDS-PAGE gel showing monoubiquitination of FANCI:FANCD2 using recombinant FA core complex and IR-dye700 labeled dsDNA. 25, 50 and 100 nM of ID2 or IKRD2KR were incubated with 25 nM of the IR-dye700 dsDNA for 90 min. The respective\u00a0percentage of FANCI or FANCD2 monoubiquitination were calculated and shown under SDS-PAGE gel. (c) Monoubiquitination reactions from (b) were resolved on 6% native PAGE gel for EMSA analysis. The percentage of ID2 binding to DNA was calculated and shown under native PAGE gel.\n\nPreviously, we and others showed that various different dsDNA-containing structures could robustly stimulate ID2 monoubiquitination (Longerich et al., 2014; van Twest et al., 2017; Sareen et al., 2012), but that single-stranded DNA (ssDNA) does not. To determine if monoubiquitinated ID2 had increased affinity for other dsDNA containing structures, we repeated the monoubiquitination reactions in the presence of different IR-dye700 labeled DNA structures. Interestingly, non-ubiquitinated ID2 also exhibited high affinity toward 3\u2019 flap DNA structure (similar to a replication fork stalled on the lagging strand), which has been previously observed (Liang et al., 2016). The 3\u2019-Flap structure, and each of the other dsDNA containing structures, led to increased ID2 monoubiquitination and increased retention of an EMSA shifted band (Figure 3). Conversely, ssDNA, which stimulates monoubiquitination more slowly (van Twest et al., 2017) but to similar levels at the long time point of this assay, did not cause an EMSA shift.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/54128/elife-54128-fig3-v2.jpg)\n\n**Figure 3.:** EMSA gels showing binding of monoubiquitinated or unmodified ID2 complex to different oligo-based DNA substrates. Above each panel, a schematic representing the tested DNA substrate is shown. 25, 50 and 100 nM of ID2 or IKRD2KR were incubated with 25 nM of the indicated DNA substrate and the protein:DNA complexes were resolved on 6% PAGE gels (top). The percentage of DNA binding was calculated and shown under each EMSA gel. Coomassie stained SDS-PAGE gel (bottom) showing the ubiquitination reactions used in the EMSA. The percentage of FANCD2 monoubiquitination was calculated and shown under each SDS-PAGE gel.\n\n### Both FANCIub and FANCD2ub are associated with a \u2018clamped\u2019 protein:DNA complex\n\nPrevious studies reported that monoubiquitination of ID2 complex may lead to dissociation of the heterodimer to its individual subunits, as measured by loss of co-immunoprecipitation of FANCI with FANCD2 (40, 41). In contrast, we did not observe any Ub-mediated dissociation of ID2 in vitro. First, western blotting of the EMSA gels confirmed that the gel shifted DNA band contains both FANCI and FANCD2 proteins (Figure 4a). Second, FANCIUb still co-immunoprecipitated with FANCD2Ub at the plateau of the in vitro ubiquitination reaction (Figure 4b).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/54128/elife-54128-fig4-v2.jpg)\n\n**Figure 4.:** (a) Western blots of the EMSA gels containing 50, 100 and 200 nM of IubD2ub, ID2 or IKRD2KR in the presence of 25 nM IRDye-700 labeled dsDNA (red). Left panels correspond to anti-FANCI antibody (green) and right panels correspond to anti-FANCD2 antibody (green) (b) StrepII affinity purification of mono-ubiquitinated (+ATP) and non-ubiquitinated ID2 (-ATP). (c) EMSA gels (top) and western blots (bottom) showing the monoubiquitination of 25, 50 and 100 nM IWTD2WT, IKRD2WT, IWTD2KR or IKRD2KR in the presence of 25 nM IRDye-700 labeled dsDNA. (d) Western blots of the EMSA gels showing monoubiquitination of 50, 100 and 200 nM IWTD2WT, IKRD2WT, IWTD2KR or IKRD2KR in the presence of 25 nM IRDye-700 labeled dsDNA. FANCI (left, green) and FANCD2 (right, green) remained bound to IRDye-700 labeled DNA (red) after mono-ubiquitination.\n\nTo determine the contribution of each of FANCD2Ub and FANCIUb to the clamping of IUbD2 Ub complex to DNA, we used ubiquitination-deficient (KR) mutants in the ubiquitination reaction. FANCIKR:FANCD2WT or FANCIWT:FANCD2KR mutant results in decrease in EMSA shift, and FANCIKR:FANCD2KR did not bind to DNA (Figure 4c). However, this retention on DNA correlated with the extent of FANCD2 monoubiquitination retained by these mutant complexes. Western blotting the EMSA gels confirmed that both FANCD2 and FANCI are found in the EMSA shifted product, although in higher amounts when both proteins are capable of being monoubiquitinated (Figure 4d).\n\n### Mutant forms of ubiquitin can still clamp ID2 onto DNA\n\nWe postulated that the altered affinity for DNA induced by monoubiquitination must result from either a conformational change in the ID2 heterodimer after monoubiquitination, or participation of the conjugated ubiquitin directly in protein:DNA or protein:protein binding. To help distinguish these possibilities, we utilized mutants of ubiquitin that have previously been shown to mediate the known protein:ubiquitin or protein:DNA interactions in other ubiquitinated protein interactions (Figure 5a;\u00a0Husnjak and Dikic, 2012). Each of these Ub mutants were conjugated to ID2 by the FA core complex with similar efficiency (Figure 5b) and their clamping onto DNA was then measured. Mutations in surface patch 1 (F4A, D58A), surface patch 2 (I44A, V70A), a DNA binding residue (K11R) or a tail mutant (L73P) had no apparent effect on DNA clamping (Figure 5c). This result suggests that no canonical surface or region of ubiquitin is critical for DNA clamping of ID2, and instead ubiquitin conjugation to ID2 probably induces a conformational rearrangement of the heterodimer.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/54128/elife-54128-fig5-v2.jpg)\n\n**Figure 5.:** (a) Crystal structure of ubiquitin with ubiquitin mutant sites depicted (PDB: 1UBQ). Hydrophobic binding pockets are indicated in blue and pink. (b) Western blots showing the time course ubiquitination assays of ID2 using wild-type ubiquitin\u00a0or ubiquitin F4A, V70A, I44A, D58A, K11R and L73P\u00a0mutants. (c) EMSA gels showing 25, 50 and 100 nM monoubiquitinated ID2 binding to 25 nM IRDye-700 dsDNA using various ubiquitin mutants (top). Western blots of ID2 ubiquitination products were shown at the bottom and the percentage of FANCI and FANCD2 ubiquitination were shown at the bottom of each western blot panel.\n\n### Purification of monoubiquitinated FANCI:FANCD2 complex bound to dsDNA reveals a filamentous architecture\n\nIn order to examine the architecture of purified recombinant IUbD2Ub complex in the presence of dsDNA plasmid, we utilized a recombinant Avi-tag ubiquitin construct containing a 3C protease site between the biotinylated Avi-tag and the N-terminus of ubiquitin (Tan et al., 2020a;\u00a0Figure 6a). This tagged ubiquitin is incorporated onto FANCI:FANCD2 by the FA core complex, allowing Avidin-Sepharose purification of monoubiquitinated ID2 that is then eluted by 3C protease cleavage. We recovered monoubiquitinated FANCI:FANCD2 complex only when FANCI is monoubiquitinated, suggesting that the N-terminus of D2-attached ubiquitin may be buried within the di-ubiquitinated complex, but the N-terminus of ubiquitin attached to FANCI is accessible for avidin binding (Figure 6b).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/54128/elife-54128-fig6-v2.jpg)\n\n**Figure 6.:** (a) Schematic of purification of monoubiquitinated FANCI:FANCD2 using Avi-ubiquitin. (b) Coomassie stained SDS-PAGE gel (top) and western blots (bottom) showing the purification of monoubiquitinated FANCI:FANCD2 complex eluted using PreScission protease (lanes 1\u20137) compared to without PreScission protease (lanes 8\u201314). (c\u2013e) Representative negative-stained EM image of purified FANCIub:FANCD2ub complex bound to 2.7 kb plasmid, unmodified FANCI:FANCD2 incubated with 2.7 kb plasmid and unmodified FANCI:FANCD2 complex. Pseudo-colored regions are shown to highlight particular filament-like arrays in FANCIub:FANCD2ub but not other samples.\n\nUsing this purified protein, we compared FANCIub:FANCD2ub to unmodified FANCI:FANCD2 using electron microscopy (EM). Surprisingly, we observed that FANCIub:FANCD2ub forms filament-like arrays when bound to dsDNA plasmid (Figure 6c). Such arrays were not observed in the unmodified FANCI:FANCD2 protein preparation in the absence of presence of plasmid DNA, nor in previous investigations of human or Xenopus FANCI:FANCD2 complexes studied by EM (Figure 6d\u2013e and Swuec et al., 2017; Liang et al., 2016; Lopez-Martinez et al., 2019).\n\nWhen smaller DNA molecules were used as the substrate for ID2 binding, we either observed no filament-like structures (60 bp, Figure 7a) or shorter filament-like structures (150 bp, Figure 7b) compared to structures that were on average 7-8x longer than the characteristic double saxophone structure of ID2 heterodimer in the non-ubiquitinated state (Figure 7c).\n\n![Figure 7.](https://cdn.elifesciences.org/articles/54128/elife-54128-fig7-v2.jpg)\n\n**Figure 7.:** (a\u2013d) Representative EM image of monoubiquitinated FANCI:FANCD2 bound to (a) 60 bp dsDNA, (b) 150 bp dsDNA, (c) 2.7 kb dsDNA, and (d) 2.7 kb dsDNA and Benzonase-treated. Scale bar, 100 nm. Arrows indicate formation of 1\u20132 ID2 array; boxes indicate multiple ID2 arrays. (e) Representative 2D class average of ID2. Views of the side and top of ID2 are shown, framed in blue for comparison. (f) Representative 2D class average of IubD2ub bound to 60 bp DNA. Views of the side and top of IubD2ub are shown, framed in red for comparison. (g\u2013h) Example comparison of the length (y) and width (x) of class average images ID2 and IubD2ub (likely an overestimate, because uranyl formate staining increases apparent\u00a0particle size).\n\nThe observation that array length correlated with the size of DNA available for ID2 binding strongly suggested that the association between heterodimer subunits in the array was DNA-mediated. To test whether the array of IubD2ub is also dependent upon binding to the same DNA molecule, we examined the plasmid-stimulated ubiquitination reaction products after treatment with the non-specific endonuclease, Benzonase. It is apparent from EM images that addition of Benzonase breaks the long arrays formed by IubD2ub complex into very short or heterodimer-sized units (Figure 7d). This finding is consistent with Benzonase cleaving exposed DNA between IubD2ub units, leading to destabilization of the filamentous arrays. Together our results show that, in vitro, ubiquitination of ID2 leads to a ubiquitin- and DNA- stabilized filament-like structure.\n\n### Single IubD2ub heterodimers on short 60 bp DNA have an altered architecture\n\nDue to variability in the length and shape of filament-like IubD2ub structures on longer DNA molecules we have not been able to uncover the shape or subunit rearrangement of the individual units of the arrays because attempts to class average arrays failed due to a lack of order. However, examination of IubD2ub purified together with short 60 bp DNA allowed us to collect sufficient images of individual particles for analysis. These particles were similar in size to non-ubiquitinated ID2, but it is clear from individual molecule and class average views that the IubD2ub complex forms a distinct architecture from that of ID2 (Figure 7e\u2013f). In particular, the overall shape of individual particles and their class averages reveal a twisting that repositions the solenoid arms of one or both of the subunits bringing them into closer proximity. The conformational change induced appears to reduce the size of ID2 in one direction (x vs y) but not the other (Figure 7g\u2013h), similar to that predicted in a previously proposed model that placed DNA in a channel between FANCI and FANCD2 post DNA binding (Longerich et al., 2014). These images support the view that monoubiquitination induces a conformational change in the ID2 complex that clamps it upon DNA.\n\n## Discussion\n\nThe protection of stalled forks by DNA repair factors is essential for proper DNA replication and the maintenance of genome stability. The primary mechanism of replication fork stabilization at interstrand crosslinks, and other replication blocking damage, utilizes the proteins of the FA-BRCA DNA repair pathway. Monoubiquitination of FANCI:FANCD2 by the FA core complex is the central event in this pathway. Here, we showed that monoubiquitination directly clamps the ID2 complex onto double-stranded DNA, and promotes a filament-like coating of long DNA molecules. This finding answers a long-standing question about the nature of the biochemical reaction that is absent in the majority of patients with FA (Wang and Smogorzewska, 2015; Gregory et al., 2003).\n\n\u2018Fork protection\u2019 involves (i) exclusion of cellular nucleases such as MRE11 and DNA2 from the stalled DNA replication fork, and (ii) specific recruitment of other factors that are able to restart DNA replication (Schlacher et al., 2012; Tian et al., 2017; Madireddy et al., 2016). The role of nuclease exclusion seems most important because inhibition of either of two nucleases, MRE11 or DNA2, can significantly alleviate the sensitivity of FA-BRCA mutant cells to replication stalling agents (Schlacher et al., 2012; Tian et al., 2017). But in many studies, specific association of various repair factors with IUbD2Ub compared to ID2 have been described. These proteins mostly contain ubiquitin-binding domains, providing an impetus for the recruitment-based hypothesis (summary and references in Table 1). However, because these previous studies focused on use of ubiquitination-deficient mutants, they could not address the underlying question of whether ubiquitin on either FANCI, FANCD2 or both proteins directly mediated the interaction. Now, we have shown that none of these proteins specifically bind recombinant purified IUbD2Ub compared to ID2. This finding was unexpected, and included proteins such as SLX4 (FANCP), MCM5, and FAN1, which have a demonstrated and essential role in the FA-pathway (Walden and Deans, 2014; Lossaint et al., 2013; MacKay et al., 2010).\n\nInstead, our data provide direct evidence that ID2 undergoes a conformational change after monoubiquitination, that leads to it becoming clamped on double-stranded DNA. It is likely that in previous cell-based experiments specific interaction between SLX4 and FAN1 with FANCD2 but not FANCD2K561R was observed because FANCD2K561R does not become clamped on DNA, even in the presence of active FA core complex. This finding is supported by the observation that FANCD2K561R also does not becomes chromatin localized at damage sites even after extensive DNA damage (Matsushita et al., 2005). We propose that IUbD2Ub does not demonstrate restricted interaction with any specific protein partner. None-the-less, its retention in chromatin after ubiquitination would be much more likely to bring the complex into proximity of these other DNA repair factors, where it could still influence their activity.\n\nClamping onto DNA occurs through a ubiquitin-mediated conformational change in the ID2 complex. A ubiquitin binding-domain (UBD) in FANCD2 has previously been shown necessary for the retention of the protein in the chromatin faction, and for strong binding to FANCI (Rego et al., 2012). This UBD domain sits in the FANCD2 structure opposite to where ubiquitin is likely to reside after its conjugation on to FANCI by the FA core complex, and most likely mediates the clamping function and conformational rearrangement. A high-resolution cryo-EM structure of chicken ID2Ub published by Alc\u00f3n\u00a0et al alongside our study (Alc\u00f3n et al., 2020), also uncovered a conformational rearrangement of ID2 that is then stapled in place by ubiquitin:UBD association. Other DNA-binding proteins such as histone H2A show an increased association with DNA after monoubiquitination (Zhang, 2003) and monoubiquitination also increases the DNA occupancy of transcription factors such as FOXO4 and CIITA (Greer et al., 2003). It\u00a0is\u00a0possible that ubiquitin to UBD mediated clamping is a general mechanism of protein:DNA target stabilization.\n\n### IUbD2Ub clamped in nucleoprotein arrays\n\nIn addition to a conformational change in ID2 induced by monoubiquitination (that has also been concurrently discovered and reported by the Pavletich, Walden and Passmore labs Alc\u00f3n et al., 2020; Wang et al., 2020; Rennie et al., 2020) we found that monoubiquitinated IUbD2Ub formed large filament-like arrays when it was purified together with plasmid DNA, but not short 60 bp DNA fragments. Fourier Transformation of the EM images did not reveal clear evidence for layer lines, that are expected for fiber diffraction, so we expect that the IUbD2Ub is not a true filament. On average, the length of plasmid-associated structures is 7-8x (but up to 40x) that of that associated with 60 bp DNA. Larger or longer arrays may potentially be obscured from view because the purification strategy makes elution exponentially more difficult with increasing numbers of conjugated ubiquitin-molecules. Steps to remove \u2018aggregates\u2019 may have also inadvertently removed larger arrays. However, as the number of potential plasmid DNA binding sites for ID2 was in large excess the concentration of ID2 used to stimulate reaction, there appears to be some purpose to creation of these filamentous arrays. The modular nature of IUbD2Ub arrays suggests that IUbD2Ub binding to DNA is flexible and can adopt multiple conformations, akin to RPA binding and protecting ssDNA (Yates et al., 2018).\n\nThere is evidence that IUbD2Ub clamped in nucleoprotein filaments exist in cells. Antibodies against FANCD2 have long been used as a marker of double strand breaks, stalled replication forks and R-loops because the protein forms large, intensely stained foci during S-phase that are increased after treatment with DNA damaging agents (Taniguchi et al., 2002; Schwab et al., 2015; Deans and West, 2009). We suspect that these intense foci are due to coating of DNA around damaged forks, potentially in filamentous arrays similar to those we observed by EM. Support for the large size and extent of DNA binding reflective of filamentous arrays also comes from chromatin immunoprecipitation and sequencing (ChIP-Seq) using anti-FANCD2 (13). FANCD2, and two other damage markers MRE11 and \u03b3H2AX, showed no specific localization in a bulk population of cells, but strongly localized adjacent to a Cas9-induced site-specific DNA break. Both \u03b3H2AX and FANCD2 produced a broad peak centered at the target site kilobases (kb) to megabases (mb) in length. In contrast, MRE11 is located within a very tight peak within\u00a0~100 bp of the break. Chromatin within 1\u20132 kb of the DSB showed reduced occupancy by \u03b3H2AX, consistent with dechromatinization around break sites (Iacovoni et al., 2010), but FANCD2 was present right up to the DSB. Accumulation of FANCD2 increases at the DSB early after cleavage, and accumulates more distant from the DSB progressively with time post-cleavage. This is suggestive of a polymerization of the FANCD2 signal away from the break site, as we\u00a0hypothesize would occur for a protein that forms a growing array of molecules at broken DNA (Wienert et al., 2019). The conserved function of FANCD2 as a histone chaperone (Sato et al., 2012; Higgs et al., 2018) may even be directly linked to displacement of nucleosomes as filamentous arrays extend into break-adjacent chromatin.\n\nIn this study, we also observed direct association of two ID2 heterodimers by co-immunopurification only after the protein becomes monoubiquitinated. This approach, if performed in cells, could be used to further delineate the mechanism and cellular factors required for the extension of IUbD2Ub arrays during fork protection. Of particular interest will be determining the role of BRCA1 in clamping and/or array extension. BRCA1:BARD1 was initially thought to be the E3 for FANCD2 monoubiquitination, because it co-immunoprecipitates FANCD2, and FANCD2 does not form nuclear foci after damage in BRCA1-deficient cells (Raghunandan et al., 2015). However, in various assays it was later shown that FANCD2 monoubiquitination does occur in BRCA1-deficient cells, but it is uncoupled from FANCD2 foci formation (Jacquemont and Taniguchi, 2007; Moriel-Carretero et al., 2017).\n\n### How would a clamped IUbD2Ub array mediate fork protection?\n\nFilamentous structures on DNA play a genome protective role in prokaryotes: eg DAN protein forms a rigid collaborative filament that reduces accessibility during anoxia (Lim et al., 2013), while the Vibrio cholera protein ParA2 forms protective filamentous structures on DNA during segregation (Hui et al., 2010). Structural characterization has demonstrated how these filaments function and, in the case of ParA2, can be targeted therapeutically (Misra et al., 2018). The coating of ssDNA by RPA in eukaryotes, also protect DNA from the activity of nucleases, and directs the specific activity of others (de Laat et al., 1998; Chen et al., 2013; Nguyen et al., 2017). We propose that a FANCIub:D2ub arrays may have a similar stabilizing role on newly synthesized dsDNA at a stalled replication fork. This property would explain why stalled forks are prone to degradation in FA and BRCA patient cells (Schlacher et al., 2012; Tian et al., 2017). In particular, we hypothesize that filamentous DNA-clamped Iub:D2ub could prevent access to DNA by MRE11 and DNA2 nucleases and prevent aberrant ligation of broken DNA to other parts of the genome by non-homologous end-joining.\n\nSecond, the tight binding of FANCIub:D2ub to dsDNA, when localized to stalled replication forks, may also prevent the branch migration of replication forks and inhibit their spontaneous or helicase-mediated reversal (Neelsen and Lopes, 2015). Reversed forks are the substrate for degradation by DNA2 and WRN nuclease activities, providing a hypothetical link between the activities of FANCD2-monoubiquitination and the nuclease activity of DNA2 and WRN (Thangavel et al., 2015; Sidorova et al., 2013).\n\nThird, Iub:D2ub arrays may also locally suppress non-homologous end-joining (NHEJ) factors, and/or delineate the newly synthesized chromatin from unreplicated regions during the promotion of templated repair processes such as homologous recombination. FANCD2, FANCI, and components of the FA core complex were identified amongst relatively few other factors, in a genome-wide screen for genes that promote templated repair over NHEJ (Richardson et al., 2017). Stabilization of RAD51 filaments, required for HR, is also an in vitro property of ID2 (Sato et al., 2016), suggesting Iub:D2ub filamentous arrays may exist adjacent to or coincident with RAD51 filaments in cells, in order to provide a polarity to the homologous recombination reaction without loss or gain of genomic sequences.\n\n### Role of FANCI-monoubiquitination\n\nFanci and Fancd2 have common and distinct functions in mouse models of Fanconi anemia (Dubois et al., 2019), while the double knockout of FANCI and FANCD2 has an unexpectedly distinct phenotype compared to single knockouts in human cells (Thompson et al., 2017). But FANCIK523R expressing cells are less sensitive to DNA damage than FANCI knockout in human cells\u00a0(Smogorzewska et al., 2007), so what is the role of FANCI monoubiquitination? Previous studies demonstrated that FANCI monoubiquitination is always subsequent to FANCD2 monoubiquitination, both in cells (Sareen et al., 2012) and in biochemical assays (van Twest et al., 2017). FANCI also likely plays a role in recruiting the FA core complex to the substrate (Castella et al., 2015). In this study, we show that FANCI-monoubiquitination is not necessary for clamping of the ID2 complex onto DNA (Figure 4). However, in vivo it is likely that FANCI monoubiquitination plays a critical role in regulating deubiquitination of the ID2 complex. FANCI recruits the deubiquitinating enzyme USP1:UAF1 (Yang et al., 2011), which prevents trapping of monoubiquitinated FANCD2 at non-productive DNA damage sites, but only ID2Uband\u00a0not IUbD2Ub is a substrate (van Twest et al., 2017). It is also clear from our EM investigations that FANCI must play an important role in the structural integrity of IUbD2Ub filamentous arrays on DNA, possibly creating an asymmetry necessary for a specific polarity to array assembly.\n\n### Implications for understanding the deficiency of Fanconi anemia\n\nOnset of progressive bone marrow failure occurs at a median age of 7 in children with FA (Butturini et al., 1994). Almost all these patients lack FANCD2 and FANCI monoubiquitination, due to mutation in either FANCD2 or FANCI or one of the nine other FANC proteins required for their monoubiquitination (Walden and Deans, 2014). The importance of the monoubiquitin signal is highlighted by the observation that up to 20% of patients acquire somatic reversion of the inherited mutation in a fraction of blood cells (Soulier et al., 2005). These mutations restore monoubiquitination and prevent bone marrow failure. Our work suggests two potential strategies for treatment of FA: restoration of gene function, such as that which occurs in somatic revertants or, identification of novel mechanisms to stabilize an ID2:DNA-clamped complex for fork protection by ubiquitin-mediated or innovative means. New small molecule activators or inhibitors of ID2:DNA clamping could be therapeutics in FA or cancer-treatment. In vitro biochemistry has proven to be the most powerful tool in uncovering new functions of FANCD2-monoubiquination that had gone undiscovered for nearly 20 years. The approach is likely to be formidable in drugging the FA pathway in future studies.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Recombinant DNA reagent (X. laevis)</td>\n      <td>pFastbac1-FLAG-xFANCI</td>\n      <td>(Klein Douwel et al., 2014)</td>\n      <td></td>\n      <td>Gift from Puck Knipscheer</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent (X. laevis)</td>\n      <td>pFastbac1-StrepII-xFANCD2</td>\n      <td>(Klein Douwel et al., 2014)</td>\n      <td></td>\n      <td>Gift from Puck Knipscheer</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent (H. sapiens)</td>\n      <td>pFL-EGFP-His-hFANCI</td>\n      <td>(Tan et al., 2020a)</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent (H. sapiens)</td>\n      <td>pFastbac1-FLAG-hFANCD2opt</td>\n      <td>(Tan et al., 2020a)</td>\n      <td>RRID:Addgene_ 134904</td>\n      <td>Gift from Angelos Constantinou</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent (H. sapiens)</td>\n      <td>pFL/pSPL-EGFP-FLAG-B-L-100</td>\n      <td>(van Twest et al., 2017)</td>\n      <td></td>\n      <td>Codon optimized FANCB</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent (H. sapiens)</td>\n      <td>pFL-MBP-C-E-F</td>\n      <td>(van Twest et al., 2017)</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent (H. sapiens)</td>\n      <td>pGEX-KG-GST-UBE2T</td>\n      <td>(van Twest et al., 2017)</td>\n      <td></td>\n      <td>Codon optimized</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent (E. coli)</td>\n      <td>pet16b-Avi-ubiquitin_rbs_BirA</td>\n      <td>(Tan et al., 2020a)</td>\n      <td>RRID:Addgene_134897</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent (E. coli)</td>\n      <td>pSRK2706-GST-HRV-3Cprotease</td>\n      <td>(Raran-Kurussi and Waugh, 2016)</td>\n      <td>RRID:Addgene_78571</td>\n      <td>A gift from David Waugh</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent (E. coli)</td>\n      <td>pUC19 plasmid</td>\n      <td>New England BioLabs</td>\n      <td>N3041S</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (E. coli)</td>\n      <td>BL21 (DE3)</td>\n      <td>Agilent Technologies</td>\n      <td>200131</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Cell line (Spodoptera frugiperda)</td>\n      <td>Sf9</td>\n      <td>Thermo Fisher Scientific</td>\n      <td>RRID:CVCL_0549</td>\n      <td>Maintained in Sf-900 II SFM</td>\n    </tr>\n    <tr>\n      <td>Cell line (Trichoplusia ni)</td>\n      <td>High Five</td>\n      <td>Thermo Fisher Scientific</td>\n      <td>RRID:CVCL_C190</td>\n      <td>Maintained in Sf-900 II SFM</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Rabbit polyclonal antibodies against StrepII</td>\n      <td>Abcam</td>\n      <td>RRID:AB_76949</td>\n      <td>one in 3000 dilution</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Rabbit polyclonal antibodies against FANCI</td>\n      <td>Abcam</td>\n      <td>RRID:AB_74332</td>\n      <td>one in 3000 dilution</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Rabbit polyclonal antibodies against FANCD2</td>\n      <td>Abcam</td>\n      <td>RRID:AB_10862535</td>\n      <td>one in 3000 dilution</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Mouse monoclonal antibodies against FLAG</td>\n      <td>Aviva Biosciences</td>\n      <td>RRID:AB_10884242</td>\n      <td>one in 3000 dilution</td>\n    </tr>\n    <tr>\n      <td>Peptide, recombinant protein</td>\n      <td>FLAG peptide</td>\n      <td>Sigma-Aldrich</td>\n      <td>F3290</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Peptide, recombinant protein</td>\n      <td>Recombinant Human His6-Ubiquitin E1 Enzyme carrier free</td>\n      <td>Boston Biochem</td>\n      <td>E-304\u2013050</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Peptide, recombinant protein</td>\n      <td>Ubiquitin and associated mutant variants</td>\n      <td>Boston Biochem</td>\n      <td>U-110H, UM-I44A, UM-D58A, UM-F4A, UM-L73P, UM-K11R</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>TNT T7 Quick Coupled Transcription/Translation System</td>\n      <td>Promega Corporation</td>\n      <td>L1170</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>Anti-FLAG-M2 affinity gel</td>\n      <td>Sigma Aldrich</td>\n      <td>RRID:AB_10063035</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>EasyTagL-[35S]-Methionine</td>\n      <td>PerkinElmer Life Sciences</td>\n      <td>NEG709A500UC</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>XMIPP</td>\n      <td>(de la Rosa-Trev\u00edn et al., 2013)</td>\n      <td></td>\n      <td></td>\n    </tr>\n  </tbody>\n</table>\n\n### Protein purification\n\nFlag-FANCI and StrepII-FANCD2 were expressed using the pFastBac1 vector (Life Technologies). For FANCI:FANCD2 complex, Hi5 cell pellets were resuspended in lysis buffer (50 mM Tris-HCl pH 8.0, 0.1 M NaCl, 1 mM EDTA, 10% glycerol and 1X mammalian protease inhibitor), and sonicated. Lysates were clarified by centrifugation at 20,000 g and the supernatants were incubated with M2 anti-FLAG agarose resin for 2 hr. The resin was washed 5 \u00d7 5 min incubation with wash buffer (20 mM Tris-HCl pH 8.0, 0.1 M NaCl, 10% glycerol), and the protein was eluted in the same buffer containing 100 \u03bcg/mL FLAG peptide. GST-UBE2T, Flag-BL100, MBP-CEF were purified as described (van Twest et al., 2017). Ubiquitin and His-UBE1 were purchased from Boston Biochem.\n\n### Biotinylated-Avi-ubiquitin purification\n\nHis-Avi-ubiquitin was purified as described in Tan et al. (2020a).\n\n### In vitro ubiquitination assay\n\nStandard ubiquitination reactions contained 10 \u03bcM recombinant human avidin-biotin-ubiquitin, 50 nM human recombinant UBE1, 100 nM UBE2T, 100 nM PUC19 plasmid, 2 mM ATP, 100 nM FANCI:FANCD2 complex wild type (WT) or ubiquitination-deficient (KR), in reaction buffer (50 mM Tris-HCl pH 7.4, 2.5 mM MgCl2, 150 mM NaCl, 0.01% Triton X-100). 20 \u03bcL reactions were set up on ice and incubated at 25\u00b0C for 90 min. Reactions were stopped by adding 10 \u03bcL NuPage LDS sample buffer and heated at 80\u00b0C for 5 min. Reactions were loaded onto 4\u201312% SDS PAGE and run using NuPAGE MOPS buffer and assessed by western blot analysis using Flag (Aviva\u00a0Biosciences) or StrepII (Abcam) antibody.\n\n### In vitro transcription/translation pull down of 35S-labeled proteins\n\nFlag-tagged FANCI:FANCD2 and monoubiquitinated FANCI:FANCD2 was prepared by incubating purified FANCI:FANCD2 or monoubiquitinated FANCI:FANCD2 on Flag beads for 2 hr followed by extensive washes in buffer A (20 mM TEA pH 8.0, 150 mM NaCl, 10% glycerol). 35S-labeled proteins containing UBZ or other ubiquitin domains (Table 1) were generated using the TNT Quick Coupled T7 Transcription/Translation System (Promega) and 35S-labeled methionine (Perkin Elmer). 10 \u03bcL of TNT product was incubated for 4 hr at 4\u00b0C in buffer A with 100 ng Flag-tagged FANCI:FANCD2 or monoubiquitinated FANCI:FANCD2, 20 \u03bcL of Flag-beads (Sigma-Aldrich) in a 100 \u03bcL reaction. Beads were washed five times with buffer A and resuspended in LDS loading buffer. Proteins were separated by SDS-PAGE and visualized by autoradiography.\n\n### Electrophoretic mobility shift assay\n\nOligonucleotides used to create fluorescently labeled DNA were IRDYE-700-labeled X0m1 (IDTDNA) and other oligos with the sequences shown in Supplementary file 1. Assembly of the different DNA structures was performed exactly as previously described (Supplementary file 1; van Twest et al., 2017). 25 nM DNA substrates were incubated in 20 \u03bcL ubiquitination buffer containing 100 nM FANCI:FANCD2, 100 nM BL100, 100 nM CEF, 10 uM HA-ubiquitin (Boston Biochem), 50 nM UBE1 (Boston Biochem) and 100 nM UBE2T at room temperature for 90 min to initiate ubiquitination. The reaction was resolved by electrophoresis through a 6% non-denaturing polyacrylamide gel in TBE (100 mM Tris, 90 mM boric acid, 1 mM EDTA) buffer and visualized by Licor Odyssey system.\n\n### Purification of monoubiquitinated FANCI:FANCD2 complex\n\nDi-monoubiquitinated FANCI:FANCD2 complex was purified as described (Tan et al., 2020a). DNA molecules of 60 bp or 150 bp (dsDNA from oligonucleotides) or 2.6 kb (circular plasmid DNA) were used to stimulate the reaction for different experiments, as indicated.\n\n### Mass spectrometry analysis of monoubiquitinated FANCI:FANCD2 complex\n\nGels containing monoubiquitinated FANCI and FANCD2 bands were excised and in-gel digested with trypsin and subjected to LC/MS analysis on ESI-FTICR mass spectrometer at Bio21, The University of Melbourne. The analysis program MASCOT was used to identify ubiquitination sites on FANCI and FANCD2.\n\n### Negative stain electron microscopy\n\nFreshly purified monoubiquitinated or non-ubiquitinated FANCI:FANCD2 complex was applied to glow-discharged, carbon/formvar grids and allowed to adsorb for 60 s. Specimen was then stained with 2% uranyl formate for 60 s. Specimen were imaged at a magnification of 73,000 x on\u00a0a\u00a0Ceta camera (corresponding to a pixel size of 1.9\u00a0\u00c5) in Talos 120 kV. For FANCI:FANCD2 complex, 20 micrographs were analyzed and 4553 particles were picked for 2D classification. For monoubiquitinated FANCI:FANCD2 complex, 20 micrographs were analyzed and 4698 particles were picked for 2D classification. The length and width of 2D class average were measured using ImageJ.\n\n### Single-particle image processing\n\nMonoubiquitinated or non-ubiquitinated FANCI:FANCD2 particles were semi-automatically picked using XMIPP3 (83). The parameters of the contrast transfer function (CTF) for negative stained data was estimated on each micrograph using CTFFIND3 (Mindell and Grigorieff, 2003). Finally, reference free 2D alignment and averaging were executed using XMIPP3.\n",
+      "created_at": "2025-12-02T15:50:55.213524Z"
+    },
+    {
+      "id": "c200c691-c45f-45c5-a6a3-b1c505d6223d",
+      "submission_id": "a168c32e-1820-4b93-ac89-8d9e2b7c09ac",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Wolf-Dietrich Heyer, University of California, Davis United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.54128.sa1](https://doi.org/10.7554/eLife.54128.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nAcceptance summary:\n\nThe authors reconstituted FANCI:FANCD2 ubiquitination by the FA core complex in vitro, and found that monoubiquitination of FANCD2 stabilizes FANCI:FANCD2 heterodimers on dsDNA, and that the purified monoubiquitinated FANCI:FANCD2 forms filamentous arrays in dsDNA. These findings provide some important insights in the role of monoubiquitination of the FANCI:FANCD2 complex in the regulation of the FA pathway.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Monoubiquitination by the Fanconi Anemia core complex locks FANCI:FANCD2 on DNA in filamentous arrays\" for consideration by eLife. Your article has been reviewed by three peer reviewers, and the evaluation has been overseen by a Reviewing Editor and John Kuriyan as the Senior Editor. The reviewers have opted to remain anonymous.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nThank you for sending your manuscript entitled 'Monoubiquitination by the Fanconi Anemia core complex locks FANCI:FANCD2 on DNA in filamentous arrays' to eLife. Your submission was reviewed by three experts in the field, and there is a strong consensus that your study reports significant progress in our understanding of the structure and function of the FANC core complex and has the potential to make a significant impact. However, the reviewers also felt that additional experimentation and analysis is required prior to final acceptance.\n\nEssential revisions:\n\n1) The description of the protocol for FANCI-FANCD2 complex formation requires more information on the exact experimental protocol and detail.\n\n2) More evidence for filament formation by FANCI-FANCD2 is needed to distinguish a filament from other types of oligomeric structures.\n\nFor example, biochemical experiments could provide evidence for filament formation. Under conditions of excess DNA, do several protein complexes bind to a single DNA (indicative of a preference of filament formation)? Are there indications of cooperativity?\n\nIn addition, it seems that more structural analysis could address this issue. Perhaps 2D averaging of the ID2 filaments could be attempted (since the authors already have made negative stain grids and would probably just need to collect more data). If a repeating unit emerges from the 2D analysis, this would provide a strong argument that the nucleoprotein complex observed is actually composed of a structured filament. This should be tried, but a negative result would not preclude publication.\n\n3) Figure 1 is missing a control of no IDs-complex control for the pull downs.\n\n4) Figure 3: Figure 3, 4th panel from the left: quantification of% DNA bound seems strange. In the gel picture, significant amount of ID2:DNA complex is visible in I/D2 and I-KR/D2-KR lanes, which suggest that this type of DNAs can bind to I:D2 complex even in the absence of ubiquitination. The authors should mention this and show how to interpret this.\n\n5) Figure 4D: Quality of the FANCI blot in this figure is poor, and it is difficult to interpret this data. The result of ID2:dsDNA complex formation shown in Figure 4D is not consistent with the result shown in Figure 4C. (In Figure 4C, less ID2:dsDNA complex is seen in I-WT/D2-KR compared to in I-KR/D2-WT, but in Figure 4D, more ID2:dsDNA complex is seen in I-WT/D2-KR compared to in I-KR/D2-WT.)\n\n6) Figure 8: \"reduce the size of ID2 in an X but not Y direction\" needs quantification.\n",
+      "created_at": "2025-12-02T15:50:55.213524Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T15:50:55.213524Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T15:50:55.213524Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "097b0cd9-ea3b-4584-8f08-042ae19111f2",
+      "content_id": "be1a88bd-775a-4010-83be-0436deb4111c",
+      "claim_id": "C1",
+      "claim": "Fanconi anemia (FA) is a childhood syndrome that results in bone marrow failure, leukemia and head and neck cancers.",
+      "claim_type": "EXPLICIT",
+      "source": "Fanconi anemia (FA) is a devastating childhood syndrome that results in bone marrow failure, leukemia and head and neck cancers (Gillio et al., 1997; Butturini et al., 1994).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Gillio et al., 1997 and Butturini et al., 1994",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:50:55.213524Z"
+    },
+    {
+      "id": "53ecfee3-efad-489a-9026-3b2783932e6c",
+      "content_id": "be1a88bd-775a-4010-83be-0436deb4111c",
+      "claim_id": "C2",
+      "claim": "FA is caused by inheritance of one of 22 dysfunctional FA genes (FANCA-FANCW).",
+      "claim_type": "EXPLICIT",
+      "source": "FA is caused by inheritance of one of 22 dysfunctional FA genes (FANCA-FANCW) (Tan and Deans, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Tan and Deans, 2017",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:50:55.213524Z"
+    },
+    {
+      "id": "2c5c913c-1d27-46f2-8565-7f06bab64591",
+      "content_id": "be1a88bd-775a-4010-83be-0436deb4111c",
+      "claim_id": "C3",
+      "claim": "Absence of any one member of the FA pathway causes genome instability during DNA replication.",
+      "claim_type": "EXPLICIT",
+      "source": "Absence of any one member of the pathway causes genome instability during DNA replication, which results in mutagenic (cancer-causing) DNA damage and hypersensitivity to chemotherapeutic (normal and cancer-killing) DNA damage (Deans and West, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Deans and West, 2011",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:50:55.213524Z"
+    },
+    {
+      "id": "56ee0b80-8376-40fa-9e34-85a4e626ef6a",
+      "content_id": "be1a88bd-775a-4010-83be-0436deb4111c",
+      "claim_id": "C4",
+      "claim": "The conjugation of ubiquitin to FANCI:FANCD2 (ID2) complexes is central to the FA pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "Central to the FA pathway is the conjugation of ubiquitin to FANCI:FANCD2 (ID2) complexes (Walden and Deans, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Walden and Deans, 2014",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:50:55.213524Z"
+    },
+    {
+      "id": "2dcf1911-a2d3-4656-a0f4-a112593b9cd8",
+      "content_id": "be1a88bd-775a-4010-83be-0436deb4111c",
+      "claim_id": "C5",
+      "claim": "ID2 monoubiquitination is critical to prevention of bone marrow failure in FA.",
+      "claim_type": "EXPLICIT",
+      "source": "ID2 monoubiquitination is critical to prevention of bone marrow failure in FA, but it is currently unknown how ID2-ub differs in its function to ID2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement of established importance of ID2 monoubiquitination in FA pathology",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:50:55.213524Z"
+    },
+    {
+      "id": "22a310f5-c7be-41e9-a6f4-d43307cf7aaf",
+      "content_id": "be1a88bd-775a-4010-83be-0436deb4111c",
+      "claim_id": "C6",
+      "claim": "FAN1 nuclease was proposed to interact with FANCD2Ub via its ubiquitin-binding domain (UBZ).",
+      "claim_type": "EXPLICIT",
+      "source": "For example, FAN1 nuclease was proposed to interact with FANCD2Ub via its ubiquitin-binding domain (UBZ) (Smogorzewska et al., 2010), whereas recruitment of SLX4 endonuclease to the interstrand crosslink site was shown to be dependent on FANCD2 ubiquitination (Klein Douwel et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Smogorzewska et al., 2010",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:50:55.213524Z"
+    },
+    {
+      "id": "1e0f091a-cece-4ce8-9360-b6b92bb57e52",
+      "content_id": "be1a88bd-775a-4010-83be-0436deb4111c",
+      "claim_id": "C7",
+      "claim": "Recruitment of SLX4 endonuclease to the interstrand crosslink site was shown to be dependent on FANCD2 ubiquitination.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, FAN1 nuclease was proposed to interact with FANCD2Ub via its ubiquitin-binding domain (UBZ) (Smogorzewska et al., 2010), whereas recruitment of SLX4 endonuclease to the interstrand crosslink site was shown to be dependent on FANCD2 ubiquitination (Klein Douwel et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Klein Douwel et al., 2014",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:50:55.213524Z"
+    },
+    {
+      "id": "97ec5915-810e-4725-a803-b848370bbc3e",
+      "content_id": "be1a88bd-775a-4010-83be-0436deb4111c",
+      "claim_id": "C8",
+      "claim": "The retention of FANCD2 in chromatin foci is dependent on its monoubiquitination by a 'core complex' of Fanconi anemia proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "The retention of FANCD2 in chromatin foci is dependent on its monoubiquitination by a 'core complex' of Fanconi anemia proteins (Walden and Deans, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Walden and Deans, 2014",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:50:55.213524Z"
+    },
+    {
+      "id": "fef48449-5afa-4fe6-a1a8-b5884b4af430",
+      "content_id": "be1a88bd-775a-4010-83be-0436deb4111c",
+      "claim_id": "C9",
+      "claim": "FANCI and the FA core complex are required to generate FANCD2-foci that mark the location of double strand breaks, stalled replication forks and R-loops in the nucleus.",
+      "claim_type": "EXPLICIT",
+      "source": "FANCI and the FA core complex are required to generate FANCD2-foci that mark the location of double strand breaks, stalled replication forks and R-loops (Taniguchi et al., 2002; Schwab et al., 2015; Wienert et al., 2019) in the nucleus, and protect nascent DNA at these sites from degradation by cellular nucleases (Schlacher et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Taniguchi et al., 2002; Schwab et al., 2015; Wienert et al., 2019",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:50:55.213524Z"
+    },
+    {
+      "id": "19294bc5-b857-4634-aca5-9d24ce79d1b5",
+      "content_id": "be1a88bd-775a-4010-83be-0436deb4111c",
+      "claim_id": "C10",
+      "claim": "FANCD2-foci protect nascent DNA at double strand breaks, stalled replication forks and R-loops from degradation by cellular nucleases.",
+      "claim_type": "EXPLICIT",
+      "source": "FANCI and the FA core complex are required to generate FANCD2-foci that mark the location of double strand breaks, stalled replication forks and R-loops (Taniguchi et al., 2002; Schwab et al., 2015; Wienert et al., 2019) in the nucleus, and protect nascent DNA at these sites from degradation by cellular nucleases (Schlacher et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Schlacher et al., 2012",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:50:55.213524Z"
+    },
+    {
+      "id": "1282930a-6230-4660-9ded-e72c5b8c74ef",
+      "content_id": "be1a88bd-775a-4010-83be-0436deb4111c",
+      "claim_id": "C11",
+      "claim": "The ubiquitinated forms of FANCD2 and FANCI become resistant to detergent and high-salt extraction from chromatin foci.",
+      "claim_type": "EXPLICIT",
+      "source": "The ubiquitinated form of FANCD2, and also its ubiquitinated partner protein FANCI, become resistant to detergent and high-salt extraction from these foci (Smogorzewska et al., 2007; Montes de Oca et al., 2005), leading to speculation about the existence of a chromatin anchor or altered DNA binding specificity post-monoubiquitination (Longerich et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Smogorzewska et al., 2007; Montes de Oca et al., 2005",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:50:55.213524Z"
+    },
+    {
+      "id": "e35a024f-6fd3-4823-9958-2bc198851d76",
+      "content_id": "be1a88bd-775a-4010-83be-0436deb4111c",
+      "claim_id": "C12",
+      "claim": "A DNA interacting domain is required for FANCI:FANCD2 binding to DNA.",
+      "claim_type": "EXPLICIT",
+      "source": "A recent electron microscopy study revealed a DNA interacting domain that is required for FANCI:FANCD2 binding to DNA (Liang et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Liang et al., 2016",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:50:55.213524Z"
+    },
+    {
+      "id": "a501c3ad-bea0-4c1a-96d2-f4776c20bfce",
+      "content_id": "be1a88bd-775a-4010-83be-0436deb4111c",
+      "claim_id": "C13",
+      "claim": "The monoubiquitination sites of FANCI:FANCD2 are buried and inaccessible in the dimer interface of the complex.",
+      "claim_type": "EXPLICIT",
+      "source": "The crystal structure of the non-ubiquitinated FANCI:FANCD2 shows that the monoubiquitination sites of FANCI:FANCD2 are buried and therefore inaccessible in the dimer interface of the complex (Joo et al., 2011), suggesting that DNA binding might be required to expose the ubiquitin binding sites.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Joo et al., 2011",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:50:55.213524Z"
+    },
+    {
+      "id": "04a75461-7d0c-41d2-a05b-2d1a1e9f401c",
+      "content_id": "be1a88bd-775a-4010-83be-0436deb4111c",
+      "claim_id": "C14",
+      "claim": "Non-ubiquitinated FANCI and FANCD2 preferentially bind to branched DNA molecules which mimic DNA replication and repair intermediates.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on biochemical analyses, non-ubiquitinated FANCI and FANCD2 preferentially bind to branched DNA molecules which mimic DNA replication and repair intermediates (Longerich et al., 2014; Longerich et al., 2009; Niraj et al., 2017); however, how that activates monoubiquitination of FANCI:FANCD2 remains poorly understood.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Longerich et al., 2014; Longerich et al., 2009; Niraj et al., 2017",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:50:55.213524Z"
+    },
+    {
+      "id": "48c06eca-f15d-4808-8423-bb5f814497d3",
+      "content_id": "be1a88bd-775a-4010-83be-0436deb4111c",
+      "claim_id": "C15",
+      "claim": "DNA is a cofactor for maximal ubiquitination of FANCI:FANCD2.",
+      "claim_type": "EXPLICIT",
+      "source": "DNA is a cofactor for maximal ubiquitination (Longerich et al., 2014; van Twest et al., 2017), as is phosphorylation by the ATR kinase (Tan et al., 2020b; Ishiai et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Longerich et al., 2014; van Twest et al., 2017",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:50:55.213524Z"
+    },
+    {
+      "id": "24da9727-d8b7-4cb4-a51c-a73cbbe257be",
+      "content_id": "be1a88bd-775a-4010-83be-0436deb4111c",
+      "claim_id": "C16",
+      "claim": "Phosphorylation by the ATR kinase is a cofactor for maximal ubiquitination of FANCI:FANCD2.",
+      "claim_type": "EXPLICIT",
+      "source": "DNA is a cofactor for maximal ubiquitination (Longerich et al., 2014; van Twest et al., 2017), as is phosphorylation by the ATR kinase (Tan et al., 2020b; Ishiai et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Tan et al., 2020b; Ishiai et al., 2008",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:50:55.213524Z"
+    },
+    {
+      "id": "865b9075-af37-4de1-9972-8892d18b40a7",
+      "content_id": "be1a88bd-775a-4010-83be-0436deb4111c",
+      "claim_id": "C17",
+      "claim": "None of the tested proteins containing ubiquitin binding domains showed increased affinity for monoubiquitinated FANCI:FANCD2 over non-ubiquitinated FANCI:FANCD2.",
+      "claim_type": "EXPLICIT",
+      "source": "Surprisingly, our main observation was that none of the proteins showed any increased affinity for IUbD2Ub over ID2 (Figure 1d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Experimental data shown in Figure 1d comparing binding of proteins to ubiquitinated vs non-ubiquitinated ID2",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:50:55.213524Z"
+    },
+    {
+      "id": "1b18392f-cfac-485c-8a54-4250838b9be0",
+      "content_id": "be1a88bd-775a-4010-83be-0436deb4111c",
+      "claim_id": "C18",
+      "claim": "Monoubiquitination of FANCI:FANCD2 leads to DNA mobility shifts in EMSA even at low concentrations.",
+      "claim_type": "EXPLICIT",
+      "source": "ID2 monoubiquitination readily lead to DNA mobility shifts using EMSA (electromobility shift assay) even at low concentrations, but this was not observed for the unmodified (apo)-ID2 complex in the absence of the enzymatically active FA core complex, or when monoubiquitination-defective K-to-R mutants of ID2 were used in the reaction (Figure 2c, lanes 2\u20134).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Experimental data shown in Figure 2c demonstrating DNA mobility shifts with monoubiquitinated ID2",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:50:55.213524Z"
+    },
+    {
+      "id": "d8997913-3f06-46b3-abc5-c4d91410df49",
+      "content_id": "be1a88bd-775a-4010-83be-0436deb4111c",
+      "claim_id": "C19",
+      "claim": "Unmodified FANCI:FANCD2 complex does not cause DNA mobility shifts in EMSA in the absence of enzymatically active FA core complex.",
+      "claim_type": "EXPLICIT",
+      "source": "ID2 monoubiquitination readily lead to DNA mobility shifts using EMSA (electromobility shift assay) even at low concentrations, but this was not observed for the unmodified (apo)-ID2 complex in the absence of the enzymatically active FA core complex, or when monoubiquitination-defective K-to-R mutants of ID2 were used in the reaction (Figure 2c, lanes 2\u20134).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Experimental data shown in Figure 2c showing no DNA mobility shifts with unmodified ID2",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:50:55.213524Z"
+    },
+    {
+      "id": "1ae2aaff-d3ee-447d-89b3-ee9cb01c0a8f",
+      "content_id": "be1a88bd-775a-4010-83be-0436deb4111c",
+      "claim_id": "C20",
+      "claim": "Monoubiquitination-defective K-to-R mutants of FANCI:FANCD2 do not cause DNA mobility shifts in EMSA.",
+      "claim_type": "EXPLICIT",
+      "source": "ID2 monoubiquitination readily lead to DNA mobility shifts using EMSA (electromobility shift assay) even at low concentrations, but this was not observed for the unmodified (apo)-ID2 complex in the absence of the enzymatically active FA core complex, or when monoubiquitination-defective K-to-R mutants of ID2 were used in the reaction (Figure 2c, lanes 2\u20134).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Experimental data shown in Figure 2c showing no DNA mobility shifts with K-to-R mutants",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:50:55.213524Z"
+    },
+    {
+      "id": "b9cb9a12-e959-432b-94f3-adbe98e9da29",
+      "content_id": "be1a88bd-775a-4010-83be-0436deb4111c",
+      "claim_id": "C21",
+      "claim": "Various different dsDNA-containing structures can robustly stimulate ID2 monoubiquitination.",
+      "claim_type": "EXPLICIT",
+      "source": "Previously, we and others showed that various different dsDNA-containing structures could robustly stimulate ID2 monoubiquitination (Longerich et al., 2014; van Twest et al., 2017; Sareen et al., 2012), but that single-stranded DNA (ssDNA) does not.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Longerich et al., 2014; van Twest et al., 2017; Sareen et al., 2012",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:50:55.213524Z"
+    },
+    {
+      "id": "566e178f-be61-4e24-9005-3a058d90c01c",
+      "content_id": "be1a88bd-775a-4010-83be-0436deb4111c",
+      "claim_id": "C22",
+      "claim": "Single-stranded DNA (ssDNA) does not robustly stimulate ID2 monoubiquitination.",
+      "claim_type": "EXPLICIT",
+      "source": "Previously, we and others showed that various different dsDNA-containing structures could robustly stimulate ID2 monoubiquitination (Longerich et al., 2014; van Twest et al., 2017; Sareen et al., 2012), but that single-stranded DNA (ssDNA) does not.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Longerich et al., 2014; van Twest et al., 2017; Sareen et al., 2012",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:50:55.213524Z"
+    },
+    {
+      "id": "dd11dbd7-4ba0-4d78-9d28-03577cfadede",
+      "content_id": "be1a88bd-775a-4010-83be-0436deb4111c",
+      "claim_id": "C23",
+      "claim": "Non-ubiquitinated ID2 exhibits high affinity toward 3' flap DNA structure.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, non-ubiquitinated ID2 also exhibited high affinity toward 3' flap DNA structure (similar to a replication fork stalled on the lagging strand), which has been previously observed (Liang et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Experimental observation in this study, with citation to Liang et al., 2016 for previous observation",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:50:55.213524Z"
+    },
+    {
+      "id": "692c0e65-df4a-4a5d-bd53-bcd2830f094d",
+      "content_id": "be1a88bd-775a-4010-83be-0436deb4111c",
+      "claim_id": "C24",
+      "claim": "The 3'-Flap structure and other dsDNA containing structures lead to increased ID2 monoubiquitination and increased retention of an EMSA shifted band.",
+      "claim_type": "EXPLICIT",
+      "source": "The 3'-Flap structure, and each of the other dsDNA containing structures, led to increased ID2 monoubiquitination and increased retention of an EMSA shifted band (Figure 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Experimental data shown in Figure 3",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:50:55.213524Z"
+    },
+    {
+      "id": "3627b5db-1316-4807-a756-d8d703108814",
+      "content_id": "be1a88bd-775a-4010-83be-0436deb4111c",
+      "claim_id": "C25",
+      "claim": "Single-stranded DNA does not cause an EMSA shift despite stimulating monoubiquitination to similar levels at long time points.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, ssDNA, which stimulates monoubiquitination more slowly (van Twest et al., 2017) but to similar levels at the long time point of this assay, did not cause an EMSA shift.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Experimental observation with citation to van Twest et al., 2017",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:50:55.213524Z"
+    },
+    {
+      "id": "bf69c8a4-397b-4526-b504-810f43e61319",
+      "content_id": "be1a88bd-775a-4010-83be-0436deb4111c",
+      "claim_id": "C26",
+      "claim": "The gel shifted DNA band contains both FANCI and FANCD2 proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "First, western blotting of the EMSA gels confirmed that the gel shifted DNA band contains both FANCI and FANCD2 proteins (Figure 4a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Experimental data shown in Figure 4a using western blotting",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:50:55.213524Z"
+    },
+    {
+      "id": "9e396d63-2201-48de-b097-d9ef78141c33",
+      "content_id": "be1a88bd-775a-4010-83be-0436deb4111c",
+      "claim_id": "C27",
+      "claim": "FANCIUb still co-immunoprecipitates with FANCD2Ub at the plateau of the in vitro ubiquitination reaction.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, FANCIUb still co-immunoprecipitated with FANCD2Ub at the plateau of the in vitro ubiquitination reaction (Figure 4b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Experimental data shown in Figure 4b using co-immunoprecipitation",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:50:55.213524Z"
+    },
+    {
+      "id": "fc074b14-32a4-48f3-b0f5-90274ea23014",
+      "content_id": "be1a88bd-775a-4010-83be-0436deb4111c",
+      "claim_id": "C28",
+      "claim": "Monoubiquitination of FANCI:FANCD2 does not lead to dissociation of the heterodimer in vitro.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, we did not observe any Ub-mediated dissociation of ID2 in vitro.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Experimental observation from this study",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:50:55.213524Z"
+    },
+    {
+      "id": "d8f3f729-b6f6-4301-87ea-5572e58b0170",
+      "content_id": "be1a88bd-775a-4010-83be-0436deb4111c",
+      "claim_id": "C29",
+      "claim": "FANCIKR:FANCD2WT or FANCIWT:FANCD2KR mutants result in decreased EMSA shift.",
+      "claim_type": "EXPLICIT",
+      "source": "FANCIKR:FANCD2WT or FANCIWT:FANCD2KR mutant results in decrease in EMSA shift, and FANCIKR:FANCD2KR did not bind to DNA (Figure 4c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Experimental data shown in Figure 4c",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:50:55.213524Z"
+    },
+    {
+      "id": "14125be0-7ad5-41a7-9d87-56b354374524",
+      "content_id": "be1a88bd-775a-4010-83be-0436deb4111c",
+      "claim_id": "C30",
+      "claim": "FANCIKR:FANCD2KR did not bind to DNA.",
+      "claim_type": "EXPLICIT",
+      "source": "FANCIKR:FANCD2WT or FANCIWT:FANCD2KR mutant results in decrease in EMSA shift, and FANCIKR:FANCD2KR did not bind to DNA (Figure 4c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Experimental data shown in Figure 4c",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:50:55.213524Z"
+    },
+    {
+      "id": "2dec847f-1b8a-429e-a56d-aecda7d05348",
+      "content_id": "be1a88bd-775a-4010-83be-0436deb4111c",
+      "claim_id": "C31",
+      "claim": "Retention of FANCI:FANCD2 on DNA correlates with the extent of FANCD2 monoubiquitination.",
+      "claim_type": "EXPLICIT",
+      "source": "However, this retention on DNA correlated with the extent of FANCD2 monoubiquitination retained by these mutant complexes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Experimental observation from mutant analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:50:55.213524Z"
+    },
+    {
+      "id": "cbe6b9ef-78fc-4357-86e2-dbc71581ea12",
+      "content_id": "be1a88bd-775a-4010-83be-0436deb4111c",
+      "claim_id": "C32",
+      "claim": "Both FANCD2 and FANCI are found in the EMSA shifted product, in higher amounts when both proteins are capable of being monoubiquitinated.",
+      "claim_type": "EXPLICIT",
+      "source": "Western blotting the EMSA gels confirmed that both FANCD2 and FANCI are found in the EMSA shifted product, although in higher amounts when both proteins are capable of being monoubiquitinated (Figure 4d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Experimental data shown in Figure 4d using western blotting",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:50:55.213524Z"
+    },
+    {
+      "id": "3535cfdf-4a91-4a31-9c32-1444d6f214ee",
+      "content_id": "be1a88bd-775a-4010-83be-0436deb4111c",
+      "claim_id": "C33",
+      "claim": "Ubiquitin mutants F4A, D58A, I44A, V70A, K11R, and L73P were conjugated to ID2 by the FA core complex with similar efficiency.",
+      "claim_type": "EXPLICIT",
+      "source": "Each of these Ub mutants were conjugated to ID2 by the FA core complex with similar efficiency (Figure 5b) and their clamping onto DNA was then measured.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Experimental data shown in Figure 5b",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:50:55.213524Z"
+    },
+    {
+      "id": "30ff8dc1-28b2-4189-ab6f-2dcd30cbc0d9",
+      "content_id": "be1a88bd-775a-4010-83be-0436deb4111c",
+      "claim_id": "C34",
+      "claim": "Mutations in ubiquitin surface patch 1 (F4A, D58A), surface patch 2 (I44A, V70A), a DNA binding residue (K11R) or a tail mutant (L73P) had no apparent effect on DNA clamping.",
+      "claim_type": "EXPLICIT",
+      "source": "Mutations in surface patch 1 (F4A, D58A), surface patch 2 (I44A, V70A), a DNA binding residue (K11R) or a tail mutant (L73P) had no apparent effect on DNA clamping (Figure 5c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Experimental data shown in Figure 5c",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:50:55.213524Z"
+    },
+    {
+      "id": "8f124433-284c-48f2-a165-6c3ce1b0b924",
+      "content_id": "be1a88bd-775a-4010-83be-0436deb4111c",
+      "claim_id": "C35",
+      "claim": "No canonical surface or region of ubiquitin is critical for DNA clamping of ID2.",
+      "claim_type": "EXPLICIT",
+      "source": "This result suggests that no canonical surface or region of ubiquitin is critical for DNA clamping of ID2, and instead ubiquitin conjugation to ID2 probably induces a conformational rearrangement of the heterodimer.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from experimental results with ubiquitin mutants",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:50:55.213524Z"
+    },
+    {
+      "id": "115efdeb-c6c0-448d-8752-f3615feeeb54",
+      "content_id": "be1a88bd-775a-4010-83be-0436deb4111c",
+      "claim_id": "C36",
+      "claim": "Ubiquitin conjugation to ID2 probably induces a conformational rearrangement of the heterodimer.",
+      "claim_type": "EXPLICIT",
+      "source": "This result suggests that no canonical surface or region of ubiquitin is critical for DNA clamping of ID2, and instead ubiquitin conjugation to ID2 probably induces a conformational rearrangement of the heterodimer.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from experimental results with ubiquitin mutants",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:50:55.213524Z"
+    },
+    {
+      "id": "47acb5bd-606c-419a-b82f-1f752a1bbb66",
+      "content_id": "be1a88bd-775a-4010-83be-0436deb4111c",
+      "claim_id": "C37",
+      "claim": "Monoubiquitinated FANCI:FANCD2 complex is recovered only when FANCI is monoubiquitinated using Avi-tag ubiquitin purification.",
+      "claim_type": "EXPLICIT",
+      "source": "We recovered monoubiquitinated FANCI:FANCD2 complex only when FANCI is monoubiquitinated, suggesting that the N-terminus of D2-attached ubiquitin may be buried within the di-ubiquitinated complex, but the N-terminus of ubiquitin attached to FANCI is accessible for avidin binding (Figure 6b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Experimental data shown in Figure 6b",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:50:55.213524Z"
+    },
+    {
+      "id": "25e1b207-7564-4f1e-a4fe-f9a7b316e143",
+      "content_id": "be1a88bd-775a-4010-83be-0436deb4111c",
+      "claim_id": "C38",
+      "claim": "The N-terminus of FANCD2-attached ubiquitin may be buried within the di-ubiquitinated complex.",
+      "claim_type": "EXPLICIT",
+      "source": "We recovered monoubiquitinated FANCI:FANCD2 complex only when FANCI is monoubiquitinated, suggesting that the N-terminus of D2-attached ubiquitin may be buried within the di-ubiquitinated complex, but the N-terminus of ubiquitin attached to FANCI is accessible for avidin binding (Figure 6b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Inference from purification results shown in Figure 6b",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:50:55.213524Z"
+    },
+    {
+      "id": "e6232157-ee5e-4884-95b0-8c3276ace037",
+      "content_id": "be1a88bd-775a-4010-83be-0436deb4111c",
+      "claim_id": "C39",
+      "claim": "The N-terminus of ubiquitin attached to FANCI is accessible for avidin binding.",
+      "claim_type": "EXPLICIT",
+      "source": "We recovered monoubiquitinated FANCI:FANCD2 complex only when FANCI is monoubiquitinated, suggesting that the N-terminus of D2-attached ubiquitin may be buried within the di-ubiquitinated complex, but the N-terminus of ubiquitin attached to FANCI is accessible for avidin binding (Figure 6b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Inference from purification results shown in Figure 6b",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:50:55.213524Z"
+    },
+    {
+      "id": "cdd8c07b-5842-4f08-8801-bbc1858bb612",
+      "content_id": "be1a88bd-775a-4010-83be-0436deb4111c",
+      "claim_id": "C40",
+      "claim": "FANCIub:FANCD2ub forms filament-like arrays when bound to dsDNA plasmid.",
+      "claim_type": "EXPLICIT",
+      "source": "Surprisingly, we observed that FANCIub:FANCD2ub forms filament-like arrays when bound to dsDNA plasmid (Figure 6c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Experimental data shown in Figure 6c using electron microscopy",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:50:55.213524Z"
+    },
+    {
+      "id": "f70fdcdc-8533-4412-a475-a4897345c094",
+      "content_id": "be1a88bd-775a-4010-83be-0436deb4111c",
+      "claim_id": "C41",
+      "claim": "Filament-like arrays were not observed in unmodified FANCI:FANCD2 protein preparation in the absence or presence of plasmid DNA.",
+      "claim_type": "EXPLICIT",
+      "source": "Such arrays were not observed in the unmodified FANCI:FANCD2 protein preparation in the absence of presence of plasmid DNA, nor in previous investigations of human or Xenopus FANCI:FANCD2 complexes studied by EM (Figure 6d\u2013e and Swuec et al., 2017; Liang et al., 2016; Lopez-Martinez et al., 2019).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Experimental data shown in Figure 6d-e and citations to previous studies",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:50:55.213524Z"
+    },
+    {
+      "id": "7a8d27ac-547c-486c-81a5-30180f0f99f6",
+      "content_id": "be1a88bd-775a-4010-83be-0436deb4111c",
+      "claim_id": "C42",
+      "claim": "No filament-like structures were observed when monoubiquitinated FANCI:FANCD2 was bound to 60 bp DNA.",
+      "claim_type": "EXPLICIT",
+      "source": "When smaller DNA molecules were used as the substrate for ID2 binding, we either observed no filament-like structures (60 bp, Figure 7a) or shorter filament-like structures (150 bp, Figure 7b) compared to structures that were on average 7-8x longer than the characteristic double saxophone structure of ID2 heterodimer in the non-ubiquitinated state (Figure 7c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Experimental data shown in Figure 7a",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:50:55.213524Z"
+    },
+    {
+      "id": "07495c77-0e8d-46c3-80aa-dd85ec4bb29b",
+      "content_id": "be1a88bd-775a-4010-83be-0436deb4111c",
+      "claim_id": "C43",
+      "claim": "Shorter filament-like structures were observed when monoubiquitinated FANCI:FANCD2 was bound to 150 bp DNA.",
+      "claim_type": "EXPLICIT",
+      "source": "When smaller DNA molecules were used as the substrate for ID2 binding, we either observed no filament-like structures (60 bp, Figure 7a) or shorter filament-like structures (150 bp, Figure 7b) compared to structures that were on average 7-8x longer than the characteristic double saxophone structure of ID2 heterodimer in the non-ubiquitinated state (Figure 7c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Experimental data shown in Figure 7b",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:50:55.213524Z"
+    },
+    {
+      "id": "8300496d-4fc1-4943-8f30-e070855b038a",
+      "content_id": "be1a88bd-775a-4010-83be-0436deb4111c",
+      "claim_id": "C44",
+      "claim": "Filament-like structures on plasmid DNA were on average 7-8x longer than the characteristic double saxophone structure of ID2 heterodimer in the non-ubiquitinated state.",
+      "claim_type": "EXPLICIT",
+      "source": "When smaller DNA molecules were used as the substrate for ID2 binding, we either observed no filament-like structures (60 bp, Figure 7a) or shorter filament-like structures (150 bp, Figure 7b) compared to structures that were on average 7-8x longer than the characteristic double saxophone structure of ID2 heterodimer in the non-ubiquitinated state (Figure 7c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Experimental data shown in Figure 7c",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:50:55.213524Z"
+    },
+    {
+      "id": "4a9b87ce-42c9-4cb6-a002-402472475806",
+      "content_id": "be1a88bd-775a-4010-83be-0436deb4111c",
+      "claim_id": "C45",
+      "claim": "Array length correlates with the size of DNA available for ID2 binding.",
+      "claim_type": "EXPLICIT",
+      "source": "The observation that array length correlated with the size of DNA available for ID2 binding strongly suggested that the association between heterodimer subunits in the array was DNA-mediated.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from experimental observations with different DNA lengths",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:50:55.213524Z"
+    },
+    {
+      "id": "8c1a41f6-0db4-4bc0-9e89-e0dc3e3f15c4",
+      "content_id": "be1a88bd-775a-4010-83be-0436deb4111c",
+      "claim_id": "C46",
+      "claim": "The association between heterodimer subunits in the array is DNA-mediated.",
+      "claim_type": "EXPLICIT",
+      "source": "The observation that array length correlated with the size of DNA available for ID2 binding strongly suggested that the association between heterodimer subunits in the array was DNA-mediated.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from experimental observations with different DNA lengths",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:50:55.213524Z"
+    },
+    {
+      "id": "59034f6d-f3bf-4615-b553-1a847504e5d6",
+      "content_id": "be1a88bd-775a-4010-83be-0436deb4111c",
+      "claim_id": "C47",
+      "claim": "Addition of Benzonase breaks the long arrays formed by IubD2ub complex into very short or heterodimer-sized units.",
+      "claim_type": "EXPLICIT",
+      "source": "It is apparent from EM images that addition of Benzonase breaks the long arrays formed by IubD2ub complex into very short or heterodimer-sized units (Figure 7d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Experimental data shown in Figure 7d",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:50:55.213524Z"
+    },
+    {
+      "id": "fa3b5389-4836-4fd6-8dbb-e86da23bda0f",
+      "content_id": "be1a88bd-775a-4010-83be-0436deb4111c",
+      "claim_id": "C48",
+      "claim": "Benzonase cleaves exposed DNA between IubD2ub units, leading to destabilization of the filamentous arrays.",
+      "claim_type": "EXPLICIT",
+      "source": "This finding is consistent with Benzonase cleaving exposed DNA between IubD2ub units, leading to destabilization of the filamentous arrays.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from Benzonase treatment results",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:50:55.213524Z"
+    },
+    {
+      "id": "b5a37f2d-795a-46da-a61e-661b458ad4eb",
+      "content_id": "be1a88bd-775a-4010-83be-0436deb4111c",
+      "claim_id": "C49",
+      "claim": "Ubiquitination of ID2 leads to a ubiquitin- and DNA-stabilized filament-like structure in vitro.",
+      "claim_type": "EXPLICIT",
+      "source": "Together our results show that, in vitro, ubiquitination of ID2 leads to a ubiquitin- and DNA- stabilized filament-like structure.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary of experimental findings from this study",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:50:55.213524Z"
+    },
+    {
+      "id": "b4249e0e-b8cc-486c-9ca4-193bdc85fc7e",
+      "content_id": "be1a88bd-775a-4010-83be-0436deb4111c",
+      "claim_id": "C50",
+      "claim": "The IubD2ub complex forms a distinct architecture from that of ID2.",
+      "claim_type": "EXPLICIT",
+      "source": "These particles were similar in size to non-ubiquitinated ID2, but it is clear from individual molecule and class average views that the IubD2ub complex forms a distinct architecture from that of ID2 (Figure 7e\u2013f).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Experimental data shown in Figure 7e-f from EM analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:50:55.213524Z"
+    },
+    {
+      "id": "9bd67c7f-3213-4d2d-9cc7-aa592c53c0c9",
+      "content_id": "be1a88bd-775a-4010-83be-0436deb4111c",
+      "claim_id": "C51",
+      "claim": "The overall shape of IubD2ub particles reveals a twisting that repositions the solenoid arms of one or both of the subunits bringing them into closer proximity.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, the overall shape of individual particles and their class averages reveal a twisting that repositions the solenoid arms of one or both of the subunits bringing them into closer proximity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Observation from EM class averages",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:50:55.213524Z"
+    },
+    {
+      "id": "b87ccab5-0bf5-4807-9f0c-48112a2de8a4",
+      "content_id": "be1a88bd-775a-4010-83be-0436deb4111c",
+      "claim_id": "C52",
+      "claim": "The conformational change induced by monoubiquitination appears to reduce the size of ID2 in one direction (x vs y) but not the other.",
+      "claim_type": "EXPLICIT",
+      "source": "The conformational change induced appears to reduce the size of ID2 in one direction (x vs y) but not the other (Figure 7g\u2013h), similar to that predicted in a previously proposed model that placed DNA in a channel between FANCI and FANCD2 post DNA binding (Longerich et al., 2014).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Experimental data shown in Figure 7g-h with citation to Longerich et al., 2014",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:50:55.213524Z"
+    },
+    {
+      "id": "0f68e88a-7c8f-4e35-8327-b6dfacb58c3f",
+      "content_id": "be1a88bd-775a-4010-83be-0436deb4111c",
+      "claim_id": "C53",
+      "claim": "Monoubiquitination induces a conformational change in the ID2 complex that clamps it upon DNA.",
+      "claim_type": "EXPLICIT",
+      "source": "These images support the view that monoubiquitination induces a conformational change in the ID2 complex that clamps it upon DNA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from EM structural analysis",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:50:55.213524Z"
+    },
+    {
+      "id": "ed909358-58c1-468c-ae47-5a93675907d5",
+      "content_id": "be1a88bd-775a-4010-83be-0436deb4111c",
+      "claim_id": "C54",
+      "claim": "Monoubiquitination of FANCI:FANCD2 by the FA core complex is the central event in the FA-BRCA DNA repair pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "Monoubiquitination of FANCI:FANCD2 by the FA core complex is the central event in this pathway.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement of established knowledge about the FA pathway",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:50:55.213524Z"
+    },
+    {
+      "id": "ac507946-be77-4f6c-81c3-ed5d302775d4",
+      "content_id": "be1a88bd-775a-4010-83be-0436deb4111c",
+      "claim_id": "C55",
+      "claim": "Monoubiquitination directly clamps the ID2 complex onto double-stranded DNA.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we showed that monoubiquitination directly clamps the ID2 complex onto double-stranded DNA, and promotes a filament-like coating of long DNA molecules.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary of experimental findings from this study",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:50:55.213524Z"
+    },
+    {
+      "id": "1d1a17cf-d900-488a-8f0e-5dff20c76a2c",
+      "content_id": "be1a88bd-775a-4010-83be-0436deb4111c",
+      "claim_id": "C56",
+      "claim": "Monoubiquitination promotes a filament-like coating of long DNA molecules by ID2.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we showed that monoubiquitination directly clamps the ID2 complex onto double-stranded DNA, and promotes a filament-like coating of long DNA molecules.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary of experimental findings from this study",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:50:55.213524Z"
+    },
+    {
+      "id": "40a1d67e-5c5d-4995-98cb-c8985ae4bb43",
+      "content_id": "be1a88bd-775a-4010-83be-0436deb4111c",
+      "claim_id": "C57",
+      "claim": "Fork protection involves exclusion of cellular nucleases such as MRE11 and DNA2 from the stalled DNA replication fork.",
+      "claim_type": "EXPLICIT",
+      "source": "'Fork protection' involves (i) exclusion of cellular nucleases such as MRE11 and DNA2 from the stalled DNA replication fork, and (ii) specific recruitment of other factors that are able to restart DNA replication (Schlacher et al., 2012; Tian et al., 2017; Madireddy et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Schlacher et al., 2012; Tian et al., 2017; Madireddy et al., 2016",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:50:55.213524Z"
+    },
+    {
+      "id": "988eda44-3293-4b12-9993-6b3e7600ef9e",
+      "content_id": "be1a88bd-775a-4010-83be-0436deb4111c",
+      "claim_id": "C58",
+      "claim": "Fork protection involves specific recruitment of factors that are able to restart DNA replication.",
+      "claim_type": "EXPLICIT",
+      "source": "'Fork protection' involves (i) exclusion of cellular nucleases such as MRE11 and DNA2 from the stalled DNA replication fork, and (ii) specific recruitment of other factors that are able to restart DNA replication (Schlacher et al., 2012; Tian et al., 2017; Madireddy et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Schlacher et al., 2012; Tian et al., 2017; Madireddy et al., 2016",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:50:55.213524Z"
+    },
+    {
+      "id": "04b55c7f-3476-423b-a69c-3abc60ee6a1c",
+      "content_id": "be1a88bd-775a-4010-83be-0436deb4111c",
+      "claim_id": "C59",
+      "claim": "Inhibition of either MRE11 or DNA2 nucleases can significantly alleviate the sensitivity of FA-BRCA mutant cells to replication stalling agents.",
+      "claim_type": "EXPLICIT",
+      "source": "The role of nuclease exclusion seems most important because inhibition of either of two nucleases, MRE11 or DNA2, can significantly alleviate the sensitivity of FA-BRCA mutant cells to replication stalling agents (Schlacher et al., 2012; Tian et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Schlacher et al., 2012; Tian et al., 2017",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:50:55.213524Z"
+    },
+    {
+      "id": "421c44ae-ef2d-4419-9cd2-c48331d93a94",
+      "content_id": "be1a88bd-775a-4010-83be-0436deb4111c",
+      "claim_id": "C60",
+      "claim": "IUbD2Ub does not demonstrate restricted interaction with any specific protein partner.",
+      "claim_type": "EXPLICIT",
+      "source": "We propose that IUbD2Ub does not demonstrate restricted interaction with any specific protein partner.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion from experimental findings in this study",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:50:55.213524Z"
+    },
+    {
+      "id": "16181c2c-1000-4c27-8167-fd6f558240e3",
+      "content_id": "be1a88bd-775a-4010-83be-0436deb4111c",
+      "claim_id": "C61",
+      "claim": "Retention of IUbD2Ub in chromatin after ubiquitination would bring the complex into proximity of DNA repair factors where it could influence their activity.",
+      "claim_type": "EXPLICIT",
+      "source": "None-the-less, its retention in chromatin after ubiquitination would be much more likely to bring the complex into proximity of these other DNA repair factors, where it could still influence their activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from experimental findings",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:50:55.213524Z"
+    },
+    {
+      "id": "81f46631-5d80-4f7e-bb9f-2361508563f7",
+      "content_id": "be1a88bd-775a-4010-83be-0436deb4111c",
+      "claim_id": "C62",
+      "claim": "Clamping onto DNA occurs through a ubiquitin-mediated conformational change in the ID2 complex.",
+      "claim_type": "EXPLICIT",
+      "source": "Clamping onto DNA occurs through a ubiquitin-mediated conformational change in the ID2 complex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary of experimental findings from this study",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:50:55.213524Z"
+    },
+    {
+      "id": "1610dbf3-f982-418b-adb3-a3787837d61d",
+      "content_id": "be1a88bd-775a-4010-83be-0436deb4111c",
+      "claim_id": "C63",
+      "claim": "A ubiquitin binding-domain (UBD) in FANCD2 has been shown necessary for the retention of the protein in the chromatin fraction and for strong binding to FANCI.",
+      "claim_type": "EXPLICIT",
+      "source": "A ubiquitin binding-domain (UBD) in FANCD2 has previously been shown necessary for the retention of the protein in the chromatin faction, and for strong binding to FANCI (Rego et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Rego et al., 2012",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:50:55.213524Z"
+    },
+    {
+      "id": "32641d3a-5355-44e3-9f28-029838f06352",
+      "content_id": "be1a88bd-775a-4010-83be-0436deb4111c",
+      "claim_id": "C64",
+      "claim": "The UBD domain in FANCD2 most likely mediates the clamping function and conformational rearrangement.",
+      "claim_type": "EXPLICIT",
+      "source": "This UBD domain sits in the FANCD2 structure opposite to where ubiquitin is likely to reside after its conjugation on to FANCI by the FA core complex, and most likely mediates the clamping function and conformational rearrangement.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from structural information and experimental findings",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:50:55.213524Z"
+    },
+    {
+      "id": "06087c80-cde6-4f8e-9484-c9f5188d938e",
+      "content_id": "be1a88bd-775a-4010-83be-0436deb4111c",
+      "claim_id": "C65",
+      "claim": "A high-resolution cryo-EM structure of chicken ID2Ub uncovered a conformational rearrangement of ID2 that is stapled in place by ubiquitin:UBD association.",
+      "claim_type": "EXPLICIT",
+      "source": "A high-resolution cryo-EM structure of chicken ID2Ub published by Alc\u00f3n et al alongside our study (Alc\u00f3n et al., 2020), also uncovered a conformational rearrangement of ID2 that is then stapled in place by ubiquitin:UBD association.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Alc\u00f3n et al., 2020",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:50:55.213524Z"
+    },
+    {
+      "id": "40edba01-703c-4393-bcc5-04c2a8144e34",
+      "content_id": "be1a88bd-775a-4010-83be-0436deb4111c",
+      "claim_id": "C66",
+      "claim": "Histone H2A shows an increased association with DNA after monoubiquitination.",
+      "claim_type": "EXPLICIT",
+      "source": "Other DNA-binding proteins such as histone H2A show an increased association with DNA after monoubiquitination (Zhang, 2003) and monoubiquitination also increases the DNA occupancy of transcription factors such as FOXO4 and CIITA (Greer et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Zhang, 2003",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:50:55.213524Z"
+    },
+    {
+      "id": "4f8b714d-8f3b-471b-9120-09506483fb9f",
+      "content_id": "be1a88bd-775a-4010-83be-0436deb4111c",
+      "claim_id": "C67",
+      "claim": "Monoubiquitination increases the DNA occupancy of transcription factors such as FOXO4 and CIITA.",
+      "claim_type": "EXPLICIT",
+      "source": "Other DNA-binding proteins such as histone H2A show an increased association with DNA after monoubiquitination (Zhang, 2003) and monoubiquitination also increases the DNA occupancy of transcription factors such as FOXO4 and CIITA (Greer et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Greer et al., 2003",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:50:55.213524Z"
+    },
+    {
+      "id": "6ddd8882-e7d9-4de1-8c31-8cad073c539d",
+      "content_id": "be1a88bd-775a-4010-83be-0436deb4111c",
+      "claim_id": "C68",
+      "claim": "Ubiquitin to UBD mediated clamping may be a general mechanism of protein:DNA target stabilization.",
+      "claim_type": "EXPLICIT",
+      "source": "It is possible that ubiquitin to UBD mediated clamping is a general mechanism of protein:DNA target stabilization.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculation based on findings in this study and other systems",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:50:55.213524Z"
+    },
+    {
+      "id": "1cee0bb9-ceb1-4a65-9fa3-bf30673d3b59",
+      "content_id": "be1a88bd-775a-4010-83be-0436deb4111c",
+      "claim_id": "C69",
+      "claim": "Fourier Transformation of the EM images did not reveal clear evidence for layer lines expected for fiber diffraction.",
+      "claim_type": "EXPLICIT",
+      "source": "Fourier Transformation of the EM images did not reveal clear evidence for layer lines, that are expected for fiber diffraction, so we expect that the IUbD2Ub is not a true filament.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Analysis of EM data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:50:55.213524Z"
+    },
+    {
+      "id": "ce2ce1e0-31db-4947-82a5-f265b4466ed9",
+      "content_id": "be1a88bd-775a-4010-83be-0436deb4111c",
+      "claim_id": "C70",
+      "claim": "IUbD2Ub is not a true filament.",
+      "claim_type": "EXPLICIT",
+      "source": "Fourier Transformation of the EM images did not reveal clear evidence for layer lines, that are expected for fiber diffraction, so we expect that the IUbD2Ub is not a true filament.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from Fourier Transformation analysis",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:50:55.213524Z"
+    },
+    {
+      "id": "d659e9b6-8b3d-4fc3-8e51-cf5eeeb2e588",
+      "content_id": "be1a88bd-775a-4010-83be-0436deb4111c",
+      "claim_id": "C71",
+      "claim": "The length of plasmid-associated IUbD2Ub structures is on average 7-8x (but up to 40x) that associated with 60 bp DNA.",
+      "claim_type": "EXPLICIT",
+      "source": "On average, the length of plasmid-associated structures is 7-8x (but up to 40x) that of that associated with 60 bp DNA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Quantitative analysis of EM data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:50:55.213524Z"
+    },
+    {
+      "id": "36403dbe-3df6-43ba-87b1-bac3d3dd5dc3",
+      "content_id": "be1a88bd-775a-4010-83be-0436deb4111c",
+      "claim_id": "C72",
+      "claim": "IUbD2Ub binding to DNA is flexible and can adopt multiple conformations, akin to RPA binding and protecting ssDNA.",
+      "claim_type": "EXPLICIT",
+      "source": "The modular nature of IUbD2Ub arrays suggests that IUbD2Ub binding to DNA is flexible and can adopt multiple conformations, akin to RPA binding and protecting ssDNA (Yates et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from EM observations with citation to Yates et al., 2018",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:50:55.213524Z"
+    },
+    {
+      "id": "2613fe5a-c079-40c9-b90e-8c30d32b1a83",
+      "content_id": "be1a88bd-775a-4010-83be-0436deb4111c",
+      "claim_id": "C73",
+      "claim": "Antibodies against FANCD2 have been used as a marker of double strand breaks, stalled replication forks and R-loops because the protein forms large, intensely stained foci during S-phase that are increased after treatment with DNA damaging agents.",
+      "claim_type": "EXPLICIT",
+      "source": "Antibodies against FANCD2 have long been used as a marker of double strand breaks, stalled replication forks and R-loops because the protein forms large, intensely stained foci during S-phase that are increased after treatment with DNA damaging agents (Taniguchi et al., 2002; Schwab et al., 2015; Deans and West, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Taniguchi et al., 2002; Schwab et al., 2015; Deans and West, 2009",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:50:55.213524Z"
+    },
+    {
+      "id": "fcb4d27d-1d5a-493f-8253-2eb7e11007bb",
+      "content_id": "be1a88bd-775a-4010-83be-0436deb4111c",
+      "claim_id": "C74",
+      "claim": "FANCD2 foci are due to coating of DNA around damaged forks, potentially in filamentous arrays.",
+      "claim_type": "EXPLICIT",
+      "source": "We suspect that these intense foci are due to coating of DNA around damaged forks, potentially in filamentous arrays similar to those we observed by EM.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculation based on experimental findings",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:50:55.213524Z"
+    },
+    {
+      "id": "10b35064-9a03-4b74-94e4-eedeff31aa73",
+      "content_id": "be1a88bd-775a-4010-83be-0436deb4111c",
+      "claim_id": "C75",
+      "claim": "FANCD2 and \u03b3H2AX showed no specific localization in a bulk population of cells, but strongly localized adjacent to a Cas9-induced site-specific DNA break.",
+      "claim_type": "EXPLICIT",
+      "source": "FANCD2, and two other damage markers MRE11 and \u03b3H2AX, showed no specific localization in a bulk population of cells, but strongly localized adjacent to a Cas9-induced site-specific DNA break.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of ChIP-Seq results",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:50:55.213524Z"
+    },
+    {
+      "id": "a7bd7a51-8647-49ef-9787-d64f6d676ac4",
+      "content_id": "be1a88bd-775a-4010-83be-0436deb4111c",
+      "claim_id": "C76",
+      "claim": "Both \u03b3H2AX and FANCD2 produced a broad peak centered at the target site kilobases (kb) to megabases (mb) in length in ChIP-Seq.",
+      "claim_type": "EXPLICIT",
+      "source": "Both \u03b3H2AX and FANCD2 produced a broad peak centered at the target site kilobases (kb) to megabases (mb) in length.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of ChIP-Seq results",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:50:55.213524Z"
+    },
+    {
+      "id": "40eb9c2a-9a5e-49e0-b17f-c63a5e26cf38",
+      "content_id": "be1a88bd-775a-4010-83be-0436deb4111c",
+      "claim_id": "C77",
+      "claim": "MRE11 is located within a very tight peak within ~100 bp of the break in ChIP-Seq.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, MRE11 is located within a very tight peak within ~100 bp of the break.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of ChIP-Seq results",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:50:55.213524Z"
+    },
+    {
+      "id": "b9b63055-f4c4-47f9-a01a-9606a391d61e",
+      "content_id": "be1a88bd-775a-4010-83be-0436deb4111c",
+      "claim_id": "C78",
+      "claim": "Chromatin within 1\u20132 kb of the DSB showed reduced occupancy by \u03b3H2AX, consistent with dechromatinization around break sites.",
+      "claim_type": "EXPLICIT",
+      "source": "Chromatin within 1\u20132 kb of the DSB showed reduced occupancy by \u03b3H2AX, consistent with dechromatinization around break sites (Iacovoni et al., 2010), but FANCD2 was present right up to the DSB.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of ChIP-Seq results with citation to Iacovoni et al., 2010",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:50:55.213524Z"
+    },
+    {
+      "id": "4af132d4-dc61-4d11-a5f5-fe14d2e99562",
+      "content_id": "be1a88bd-775a-4010-83be-0436deb4111c",
+      "claim_id": "C79",
+      "claim": "FANCD2 was present right up to the DSB in ChIP-Seq.",
+      "claim_type": "EXPLICIT",
+      "source": "Chromatin within 1\u20132 kb of the DSB showed reduced occupancy by \u03b3H2AX, consistent with dechromatinization around break sites (Iacovoni et al., 2010), but FANCD2 was present right up to the DSB.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of ChIP-Seq results",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:50:55.213524Z"
+    },
+    {
+      "id": "23cc26b8-1f1a-44bb-88e2-d137aa166d0d",
+      "content_id": "be1a88bd-775a-4010-83be-0436deb4111c",
+      "claim_id": "C80",
+      "claim": "Accumulation of FANCD2 increases at the DSB early after cleavage, and accumulates more distant from the DSB progressively with time post-cleavage.",
+      "claim_type": "EXPLICIT",
+      "source": "Accumulation of FANCD2 increases at the DSB early after cleavage, and accumulates more distant from the DSB progressively with time post-cleavage.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of ChIP-Seq results",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:50:55.213524Z"
+    },
+    {
+      "id": "121078c9-5c53-4b1c-a3f5-3a54bf60b43e",
+      "content_id": "be1a88bd-775a-4010-83be-0436deb4111c",
+      "claim_id": "C81",
+      "claim": "The progressive accumulation of FANCD2 is suggestive of a polymerization of the FANCD2 signal away from the break site.",
+      "claim_type": "EXPLICIT",
+      "source": "This is suggestive of a polymerization of the FANCD2 signal away from the break site, as we hypothesize would occur for a protein that forms a growing array of molecules at broken DNA (Wienert et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from ChIP-Seq results with citation to Wienert et al., 2019",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:50:55.213524Z"
+    },
+    {
+      "id": "664a1689-82e7-45bb-8169-7ebc2a36849d",
+      "content_id": "be1a88bd-775a-4010-83be-0436deb4111c",
+      "claim_id": "C82",
+      "claim": "FANCD2 has a conserved function as a histone chaperone.",
+      "claim_type": "EXPLICIT",
+      "source": "The conserved function of FANCD2 as a histone chaperone (Sato et al., 2012; Higgs et al., 2018) may even be directly linked to displacement of nucleosomes as filamentous arrays extend into break-adjacent chromatin.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Sato et al., 2012; Higgs et al., 2018",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:50:55.213524Z"
+    },
+    {
+      "id": "73fd8528-82ca-4dbb-96a2-6a427f41d5a2",
+      "content_id": "be1a88bd-775a-4010-83be-0436deb4111c",
+      "claim_id": "C83",
+      "claim": "FANCD2's histone chaperone function may be directly linked to displacement of nucleosomes as filamentous arrays extend into break-adjacent chromatin.",
+      "claim_type": "EXPLICIT",
+      "source": "The conserved function of FANCD2 as a histone chaperone (Sato et al., 2012; Higgs et al., 2018) may even be directly linked to displacement of nucleosomes as filamentous arrays extend into break-adjacent chromatin.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculation based on experimental findings and known functions",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:50:55.213524Z"
+    },
+    {
+      "id": "4035016a-15f5-4445-a5f7-df36f78d61d4",
+      "content_id": "be1a88bd-775a-4010-83be-0436deb4111c",
+      "claim_id": "C84",
+      "claim": "Direct association of two ID2 heterodimers was observed by co-immunopurification only after the protein becomes monoubiquitinated.",
+      "claim_type": "EXPLICIT",
+      "source": "In this study, we also observed direct association of two ID2 heterodimers by co-immunopurification only after the protein becomes monoubiquitinated.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Experimental observation from this study",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:50:55.213524Z"
+    },
+    {
+      "id": "4cdf921e-2e1b-47a5-87e3-01c250342dc9",
+      "content_id": "be1a88bd-775a-4010-83be-0436deb4111c",
+      "claim_id": "C85",
+      "claim": "BRCA1:BARD1 was initially thought to be the E3 for FANCD2 monoubiquitination because it co-immunoprecipitates FANCD2 and FANCD2 does not form nuclear foci after damage in BRCA1-deficient cells.",
+      "claim_type": "EXPLICIT",
+      "source": "BRCA1:BARD1 was initially thought to be the E3 for FANCD2 monoubiquitination, because it co-immunoprecipitates FANCD2, and FANCD2 does not form nuclear foci after damage in BRCA1-deficient cells (Raghunandan et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Raghunandan et al., 2015",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:50:55.213524Z"
+    },
+    {
+      "id": "f3d98151-0a4e-4bc1-8846-840765a51500",
+      "content_id": "be1a88bd-775a-4010-83be-0436deb4111c",
+      "claim_id": "C86",
+      "claim": "FANCD2 monoubiquitination does occur in BRCA1-deficient cells, but it is uncoupled from FANCD2 foci formation.",
+      "claim_type": "EXPLICIT",
+      "source": "However, in various assays it was later shown that FANCD2 monoubiquitination does occur in BRCA1-deficient cells, but it is uncoupled from FANCD2 foci formation (Jacquemont and Taniguchi, 2007; Moriel-Carretero et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Jacquemont and Taniguchi, 2007; Moriel-Carretero et al., 2017",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:50:55.213524Z"
+    },
+    {
+      "id": "b6d91203-f4d5-4bca-aca9-0b54bfcfeb27",
+      "content_id": "be1a88bd-775a-4010-83be-0436deb4111c",
+      "claim_id": "C87",
+      "claim": "DAN protein forms a rigid collaborative filament that reduces DNA accessibility during anoxia in prokaryotes.",
+      "claim_type": "EXPLICIT",
+      "source": "Filamentous structures on DNA play a genome protective role in prokaryotes: eg DAN protein forms a rigid collaborative filament that reduces accessibility during anoxia (Lim et al., 2013), while the Vibrio cholera protein ParA2 forms protective filamentous structures on DNA during segregation (Hui et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Lim et al., 2013",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:50:55.213524Z"
+    },
+    {
+      "id": "9095e3dd-6530-45cf-8902-183a45a9c148",
+      "content_id": "be1a88bd-775a-4010-83be-0436deb4111c",
+      "claim_id": "C88",
+      "claim": "Vibrio cholera protein ParA2 forms protective filamentous structures on DNA during segregation.",
+      "claim_type": "EXPLICIT",
+      "source": "Filamentous structures on DNA play a genome protective role in prokaryotes: eg DAN protein forms a rigid collaborative filament that reduces accessibility during anoxia (Lim et al., 2013), while the Vibrio cholera protein ParA2 forms protective filamentous structures on DNA during segregation (Hui et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Hui et al., 2010",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:50:55.213524Z"
+    },
+    {
+      "id": "ceef3307-ee01-4db4-aabf-dd792f4b8422",
+      "content_id": "be1a88bd-775a-4010-83be-0436deb4111c",
+      "claim_id": "C89",
+      "claim": "The coating of ssDNA by RPA in eukaryotes protects DNA from the activity of nucleases and directs the specific activity of others.",
+      "claim_type": "EXPLICIT",
+      "source": "The coating of ssDNA by RPA in eukaryotes, also protect DNA from the activity of nucleases, and directs the specific activity of others (de Laat et al., 1998; Chen et al., 2013; Nguyen et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to de Laat et al., 1998; Chen et al., 2013; Nguyen et al., 2017",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:50:55.213524Z"
+    },
+    {
+      "id": "fd0f8a03-2ca9-48ab-a2d3-b13a826bc786",
+      "content_id": "be1a88bd-775a-4010-83be-0436deb4111c",
+      "claim_id": "C90",
+      "claim": "FANCIub:D2ub arrays may have a stabilizing role on newly synthesized dsDNA at a stalled replication fork.",
+      "claim_type": "EXPLICIT",
+      "source": "We propose that a FANCIub:D2ub arrays may have a similar stabilizing role on newly synthesized dsDNA at a stalled replication fork.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculation based on experimental findings and comparison to other systems",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:50:55.213524Z"
+    },
+    {
+      "id": "4074200d-78a7-4332-a25d-9ee54efe2995",
+      "content_id": "be1a88bd-775a-4010-83be-0436deb4111c",
+      "claim_id": "C91",
+      "claim": "Filamentous DNA-clamped Iub:D2ub could prevent access to DNA by MRE11 and DNA2 nucleases.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, we hypothesize that filamentous DNA-clamped Iub:D2ub could prevent access to DNA by MRE11 and DNA2 nucleases and prevent aberrant ligation of broken DNA to other parts of the genome by non-homologous end-joining.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculation based on experimental findings",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:50:55.213524Z"
+    },
+    {
+      "id": "5fd6772d-1aa6-42cf-a8b3-b35cb0ab05b8",
+      "content_id": "be1a88bd-775a-4010-83be-0436deb4111c",
+      "claim_id": "C92",
+      "claim": "Filamentous DNA-clamped Iub:D2ub could prevent aberrant ligation of broken DNA to other parts of the genome by non-homologous end-joining.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, we hypothesize that filamentous DNA-clamped Iub:D2ub could prevent access to DNA by MRE11 and DNA2 nucleases and prevent aberrant ligation of broken DNA to other parts of the genome by non-homologous end-joining.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculation based on experimental findings",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:50:55.213524Z"
+    },
+    {
+      "id": "3f12bde3-2c50-41aa-9125-8405a153defd",
+      "content_id": "be1a88bd-775a-4010-83be-0436deb4111c",
+      "claim_id": "C93",
+      "claim": "The tight binding of FANCIub:D2ub to dsDNA at stalled replication forks may prevent the branch migration of replication forks and inhibit their spontaneous or helicase-mediated reversal.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, the tight binding of FANCIub:D2ub to dsDNA, when localized to stalled replication forks, may also prevent the branch migration of replication forks and inhibit their spontaneous or helicase-mediated reversal (Neelsen and Lopes, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculation based on experimental findings with citation to Neelsen and Lopes, 2015",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:50:55.213524Z"
+    },
+    {
+      "id": "02829709-2b87-4be6-beaf-f2b36c4d5f32",
+      "content_id": "be1a88bd-775a-4010-83be-0436deb4111c",
+      "claim_id": "C94",
+      "claim": "Reversed forks are the substrate for degradation by DNA2 and WRN nuclease activities.",
+      "claim_type": "EXPLICIT",
+      "source": "Reversed forks are the substrate for degradation by DNA2 and WRN nuclease activities, providing a hypothetical link between the activities of FANCD2-monoubiquitination and the nuclease activity of DNA2 and WRN (Thangavel et al., 2015; Sidorova et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Thangavel et al., 2015; Sidorova et al., 2013",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:50:55.213524Z"
+    },
+    {
+      "id": "6a1ca057-2cb7-417e-847a-e003332a133f",
+      "content_id": "be1a88bd-775a-4010-83be-0436deb4111c",
+      "claim_id": "C95",
+      "claim": "Iub:D2ub arrays may locally suppress non-homologous end-joining (NHEJ) factors.",
+      "claim_type": "EXPLICIT",
+      "source": "Third, Iub:D2ub arrays may also locally suppress non-homologous end-joining (NHEJ) factors, and/or delineate the newly synthesized chromatin from unreplicated regions during the promotion of templated repair processes such as homologous recombination.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculation based on experimental findings",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:50:55.213524Z"
+    },
+    {
+      "id": "b2c6f275-7eec-45c9-8ab1-ea0c355a7fc3",
+      "content_id": "be1a88bd-775a-4010-83be-0436deb4111c",
+      "claim_id": "C96",
+      "claim": "Iub:D2ub arrays may delineate the newly synthesized chromatin from unreplicated regions during the promotion of templated repair processes such as homologous recombination.",
+      "claim_type": "EXPLICIT",
+      "source": "Third, Iub:D2ub arrays may also locally suppress non-homologous end-joining (NHEJ) factors, and/or delineate the newly synthesized chromatin from unreplicated regions during the promotion of templated repair processes such as homologous recombination.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculation based on experimental findings",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:50:55.213524Z"
+    },
+    {
+      "id": "4ffa0c11-ae2f-4867-9d97-2f997552160f",
+      "content_id": "be1a88bd-775a-4010-83be-0436deb4111c",
+      "claim_id": "C97",
+      "claim": "FANCD2, FANCI, and components of the FA core complex were identified in a genome-wide screen for genes that promote templated repair over NHEJ.",
+      "claim_type": "EXPLICIT",
+      "source": "FANCD2, FANCI, and components of the FA core complex were identified amongst relatively few other factors, in a genome-wide screen for genes that promote templated repair over NHEJ (Richardson et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Richardson et al., 2017",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:50:55.213524Z"
+    },
+    {
+      "id": "50b515f0-1f83-43f4-9f18-2940b4360f66",
+      "content_id": "be1a88bd-775a-4010-83be-0436deb4111c",
+      "claim_id": "C98",
+      "claim": "Stabilization of RAD51 filaments is an in vitro property of ID2.",
+      "claim_type": "EXPLICIT",
+      "source": "Stabilization of RAD51 filaments, required for HR, is also an in vitro property of ID2 (Sato et al., 2016), suggesting Iub:D2ub filamentous arrays may exist adjacent to or coincident with RAD51 filaments in cells, in order to provide a polarity to the homologous recombination reaction without loss or gain of genomic sequences.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Sato et al., 2016",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:50:55.213524Z"
+    },
+    {
+      "id": "9969edf1-e570-4698-a8ba-adac722db61f",
+      "content_id": "be1a88bd-775a-4010-83be-0436deb4111c",
+      "claim_id": "C99",
+      "claim": "Iub:D2ub filamentous arrays may exist adjacent to or coincident with RAD51 filaments in cells to provide polarity to the homologous recombination reaction without loss or gain of genomic sequences.",
+      "claim_type": "EXPLICIT",
+      "source": "Stabilization of RAD51 filaments, required for HR, is also an in vitro property of ID2 (Sato et al., 2016), suggesting Iub:D2ub filamentous arrays may exist adjacent to or coincident with RAD51 filaments in cells, in order to provide a polarity to the homologous recombination reaction without loss or gain of genomic sequences.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculation based on experimental findings and citation to Sato et al., 2016",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:50:55.213524Z"
+    },
+    {
+      "id": "f5d9bc22-8d44-48a9-bc30-1830156e5b98",
+      "content_id": "be1a88bd-775a-4010-83be-0436deb4111c",
+      "claim_id": "C100",
+      "claim": "Fanci and Fancd2 have common and distinct functions in mouse models of Fanconi anemia.",
+      "claim_type": "EXPLICIT",
+      "source": "Fanci and Fancd2 have common and distinct functions in mouse models of Fanconi anemia (Dubois et al., 2019), while the double knockout of FANCI and FANCD2 has an unexpectedly distinct phenotype compared to single knockouts in human cells (Thompson et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Dubois et al., 2019",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:50:55.213524Z"
+    },
+    {
+      "id": "79f85343-db49-4338-a2d6-b4a794656a68",
+      "content_id": "be1a88bd-775a-4010-83be-0436deb4111c",
+      "claim_id": "C101",
+      "claim": "The double knockout of FANCI and FANCD2 has an unexpectedly distinct phenotype compared to single knockouts in human cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Fanci and Fancd2 have common and distinct functions in mouse models of Fanconi anemia (Dubois et al., 2019), while the double knockout of FANCI and FANCD2 has an unexpectedly distinct phenotype compared to single knockouts in human cells (Thompson et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Thompson et al., 2017",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:50:55.213524Z"
+    },
+    {
+      "id": "42996be6-1fb1-48ba-9c76-285453be51f3",
+      "content_id": "be1a88bd-775a-4010-83be-0436deb4111c",
+      "claim_id": "C102",
+      "claim": "FANCIK523R expressing cells are less sensitive to DNA damage than FANCI knockout in human cells.",
+      "claim_type": "EXPLICIT",
+      "source": "But FANCIK523R expressing cells are less sensitive to DNA damage than FANCI knockout in human cells (Smogorzewska et al., 2007), so what is the role of FANCI monoubiquitination?",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Smogorzewska et al., 2007",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:50:55.213524Z"
+    },
+    {
+      "id": "cebbfaa7-c99c-429e-978f-e69d68028722",
+      "content_id": "be1a88bd-775a-4010-83be-0436deb4111c",
+      "claim_id": "C103",
+      "claim": "FANCI monoubiquitination is always subsequent to FANCD2 monoubiquitination, both in cells and in biochemical assays.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous studies demonstrated that FANCI monoubiquitination is always subsequent to FANCD2 monoubiquitination, both in cells (Sareen et al., 2012) and in biochemical assays (van Twest et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Sareen et al., 2012 and van Twest et al., 2017",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:50:55.213524Z"
+    },
+    {
+      "id": "fd6f4dc7-aafc-4e4a-8508-2d495f9f9fc0",
+      "content_id": "be1a88bd-775a-4010-83be-0436deb4111c",
+      "claim_id": "C104",
+      "claim": "FANCI likely plays a role in recruiting the FA core complex to the substrate.",
+      "claim_type": "EXPLICIT",
+      "source": "FANCI also likely plays a role in recruiting the FA core complex to the substrate (Castella et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Castella et al., 2015",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:50:55.213524Z"
+    },
+    {
+      "id": "1f2f6577-2b84-46d0-8fe8-e032fc64fbf1",
+      "content_id": "be1a88bd-775a-4010-83be-0436deb4111c",
+      "claim_id": "C105",
+      "claim": "FANCI-monoubiquitination is not necessary for clamping of the ID2 complex onto DNA.",
+      "claim_type": "EXPLICIT",
+      "source": "In this study, we show that FANCI-monoubiquitination is not necessary for clamping of the ID2 complex onto DNA (Figure 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Experimental data shown in Figure 4",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:50:55.213524Z"
+    },
+    {
+      "id": "457e494b-e8c1-4203-ad36-dc0d7a1d32cb",
+      "content_id": "be1a88bd-775a-4010-83be-0436deb4111c",
+      "claim_id": "C106",
+      "claim": "FANCI monoubiquitination likely plays a critical role in regulating deubiquitination of the ID2 complex in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "However, in vivo it is likely that FANCI monoubiquitination plays a critical role in regulating deubiquitination of the ID2 complex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculation based on experimental findings and known biology",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:50:55.213524Z"
+    },
+    {
+      "id": "02f1fb87-c544-43d6-818c-f51b3993c299",
+      "content_id": "be1a88bd-775a-4010-83be-0436deb4111c",
+      "claim_id": "C107",
+      "claim": "FANCI recruits the deubiquitinating enzyme USP1:UAF1.",
+      "claim_type": "EXPLICIT",
+      "source": "FANCI recruits the deubiquitinating enzyme USP1:UAF1 (Yang et al., 2011), which prevents trapping of monoubiquitinated FANCD2 at non-productive DNA damage sites, but only ID2Uband not IUbD2Ub is a substrate (van Twest et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Yang et al., 2011 and van Twest et al., 2017",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:50:55.213524Z"
+    },
+    {
+      "id": "4cdb3ceb-833c-4a7e-9c39-4a76dbcfa826",
+      "content_id": "be1a88bd-775a-4010-83be-0436deb4111c",
+      "claim_id": "C108",
+      "claim": "USP1:UAF1 prevents trapping of monoubiquitinated FANCD2 at non-productive DNA damage sites.",
+      "claim_type": "EXPLICIT",
+      "source": "FANCI recruits the deubiquitinating enzyme USP1:UAF1 (Yang et al., 2011), which prevents trapping of monoubiquitinated FANCD2 at non-productive DNA damage sites, but only ID2Uband not IUbD2Ub is a substrate (van Twest et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Yang et al., 2011 and van Twest et al., 2017",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:50:55.213524Z"
+    },
+    {
+      "id": "fb436196-b36c-455b-af4e-fd176b7a1e59",
+      "content_id": "be1a88bd-775a-4010-83be-0436deb4111c",
+      "claim_id": "C109",
+      "claim": "Only ID2Ub and not IUbD2Ub is a substrate for USP1:UAF1.",
+      "claim_type": "EXPLICIT",
+      "source": "FANCI recruits the deubiquitinating enzyme USP1:UAF1 (Yang et al., 2011), which prevents trapping of monoubiquitinated FANCD2 at non-productive DNA damage sites, but only ID2Uband not IUbD2Ub is a substrate (van Twest et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to van Twest et al., 2017",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:50:55.213524Z"
+    },
+    {
+      "id": "4e9316bf-4fee-44a5-aa42-53fb40fda96a",
+      "content_id": "be1a88bd-775a-4010-83be-0436deb4111c",
+      "claim_id": "C110",
+      "claim": "FANCI must play an important role in the structural integrity of IUbD2Ub filamentous arrays on DNA.",
+      "claim_type": "EXPLICIT",
+      "source": "It is also clear from our EM investigations that FANCI must play an important role in the structural integrity of IUbD2Ub filamentous arrays on DNA, possibly creating an asymmetry necessary for a specific polarity to array assembly.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from EM observations",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:50:55.213524Z"
+    },
+    {
+      "id": "043e159d-8b41-4c6a-a285-08216569a229",
+      "content_id": "be1a88bd-775a-4010-83be-0436deb4111c",
+      "claim_id": "C111",
+      "claim": "FANCI possibly creates an asymmetry necessary for a specific polarity to array assembly.",
+      "claim_type": "EXPLICIT",
+      "source": "It is also clear from our EM investigations that FANCI must play an important role in the structural integrity of IUbD2Ub filamentous arrays on DNA, possibly creating an asymmetry necessary for a specific polarity to array assembly.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculation based on EM observations",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:50:55.213524Z"
+    },
+    {
+      "id": "eea093d6-f64d-48b0-b835-a082575fef27",
+      "content_id": "be1a88bd-775a-4010-83be-0436deb4111c",
+      "claim_id": "C112",
+      "claim": "Onset of progressive bone marrow failure occurs at a median age of 7 in children with FA.",
+      "claim_type": "EXPLICIT",
+      "source": "Onset of progressive bone marrow failure occurs at a median age of 7 in children with FA (Butturini et al., 1994).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Butturini et al., 1994",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:50:55.213524Z"
+    },
+    {
+      "id": "add0dea7-4ad0-4924-ac1d-a755533e185a",
+      "content_id": "be1a88bd-775a-4010-83be-0436deb4111c",
+      "claim_id": "C113",
+      "claim": "Almost all FA patients lack FANCD2 and FANCI monoubiquitination due to mutation in either FANCD2 or FANCI or one of the nine other FANC proteins required for their monoubiquitination.",
+      "claim_type": "EXPLICIT",
+      "source": "Almost all these patients lack FANCD2 and FANCI monoubiquitination, due to mutation in either FANCD2 or FANCI or one of the nine other FANC proteins required for their monoubiquitination (Walden and Deans, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Walden and Deans, 2014",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:50:55.213524Z"
+    },
+    {
+      "id": "0cf531fc-dc2f-412d-89e6-6a9083251965",
+      "content_id": "be1a88bd-775a-4010-83be-0436deb4111c",
+      "claim_id": "C114",
+      "claim": "Up to 20% of FA patients acquire somatic reversion of the inherited mutation in a fraction of blood cells.",
+      "claim_type": "EXPLICIT",
+      "source": "The importance of the monoubiquitin signal is highlighted by the observation that up to 20% of patients acquire somatic reversion of the inherited mutation in a fraction of blood cells (Soulier et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Soulier et al., 2005",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:50:55.213524Z"
+    },
+    {
+      "id": "a409e50b-f468-4ef3-b236-c6de9d712e98",
+      "content_id": "be1a88bd-775a-4010-83be-0436deb4111c",
+      "claim_id": "C115",
+      "claim": "Somatic reversion mutations restore monoubiquitination and prevent bone marrow failure in FA patients.",
+      "claim_type": "EXPLICIT",
+      "source": "These mutations restore monoubiquitination and prevent bone marrow failure.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about the effect of somatic reversion",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:50:55.213524Z"
+    },
+    {
+      "id": "e09044b4-68c8-4e30-8f28-b2b46335d090",
+      "content_id": "be1a88bd-775a-4010-83be-0436deb4111c",
+      "claim_id": "C116",
+      "claim": "Two potential strategies for treatment of FA are restoration of gene function or identification of novel mechanisms to stabilize an ID2:DNA-clamped complex for fork protection.",
+      "claim_type": "EXPLICIT",
+      "source": "Our work suggests two potential strategies for treatment of FA: restoration of gene function, such as that which occurs in somatic revertants or, identification of novel mechanisms to stabilize an ID2:DNA-clamped complex for fork protection by ubiquitin-mediated or innovative means.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculation about therapeutic implications based on findings",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:50:55.213524Z"
+    },
+    {
+      "id": "eb328cc5-db07-461c-86ef-2a8dbd2ac4bd",
+      "content_id": "be1a88bd-775a-4010-83be-0436deb4111c",
+      "claim_id": "C117",
+      "claim": "New small molecule activators or inhibitors of ID2:DNA clamping could be therapeutics in FA or cancer-treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "New small molecule activators or inhibitors of ID2:DNA clamping could be therapeutics in FA or cancer-treatment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculation about therapeutic implications based on findings",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:50:55.213524Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "b8e4746d-f3f1-43ec-b2fb-69680f60b9a3",
+      "content_id": "be1a88bd-775a-4010-83be-0436deb4111c",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Fanconi anemia (FA) is a childhood syndrome caused by inheritance of dysfunctional FA genes, leading to genome instability, bone marrow failure, leukemia, and cancers. The conjugation of ubiquitin to FANCI:FANCD2 (ID2) complexes is central to the FA pathway and critical for preventing bone marrow failure.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C5 are all supported by appropriate citations to prior work and represent well-established background knowledge about FA. These claims provide the foundational context for the study and are appropriately referenced.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:50:55.213524Z"
+    },
+    {
+      "id": "30af6d69-952e-450b-bae4-b23fa4267914",
+      "content_id": "be1a88bd-775a-4010-83be-0436deb4111c",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Prior work has proposed that monoubiquitinated FANCD2 recruits specific proteins (FAN1, SLX4) and that ubiquitinated FANCI:FANCD2 becomes resistant to extraction from chromatin foci, where it protects nascent DNA from nuclease degradation at sites of DNA damage.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6-C11 accurately summarize prior work with appropriate citations. These claims establish the existing hypotheses about FANCD2 function that the current study challenges or refines, providing important context for the experimental work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:50:55.213524Z"
+    },
+    {
+      "id": "6cf4dce9-0c69-4a01-b70c-09fbbda534d2",
+      "content_id": "be1a88bd-775a-4010-83be-0436deb4111c",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Prior structural and biochemical studies revealed that FANCI:FANCD2 has a DNA interacting domain, that monoubiquitination sites are buried in the dimer interface, that the complex preferentially binds branched DNA structures, and that DNA and ATR phosphorylation are cofactors for maximal ubiquitination.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C12-C16 accurately cite prior structural and biochemical work that provides mechanistic context for understanding ID2 activation. These are well-supported by appropriate citations and establish the knowledge gaps the current study addresses.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:50:55.213524Z"
+    },
+    {
+      "id": "48ca3fee-b6b6-4cec-bcbf-e549631d7562",
+      "content_id": "be1a88bd-775a-4010-83be-0436deb4111c",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "None of the tested proteins containing ubiquitin binding domains showed increased affinity for monoubiquitinated FANCI:FANCD2 over non-ubiquitinated FANCI:FANCD2.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C17 is directly supported by experimental data shown in Figure 1d, which compares binding of multiple proteins to ubiquitinated vs non-ubiquitinated ID2. This is a key negative result that challenges the prevailing hypothesis about ubiquitin-mediated protein recruitment.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:50:55.213524Z"
+    },
+    {
+      "id": "bc307b47-5976-430f-87d2-9e9d86fe6021",
+      "content_id": "be1a88bd-775a-4010-83be-0436deb4111c",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Monoubiquitination of FANCI:FANCD2 leads to DNA mobility shifts in EMSA at low concentrations, while unmodified ID2 and monoubiquitination-defective K-to-R mutants do not cause such shifts.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C18-C20 are supported by experimental data in Figure 2c showing clear differences in EMSA behavior between monoubiquitinated and non-ubiquitinated forms. The use of appropriate controls (K-to-R mutants, absence of FA core complex) strengthens the conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:50:55.213524Z"
+    },
+    {
+      "id": "62bd318a-d03d-4f11-816c-7ee75596d101",
+      "content_id": "be1a88bd-775a-4010-83be-0436deb4111c",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Various dsDNA-containing structures robustly stimulate ID2 monoubiquitination and lead to increased EMSA shifts, while single-stranded DNA does not cause EMSA shifts despite stimulating monoubiquitination at long time points. Non-ubiquitinated ID2 exhibits high affinity for 3' flap DNA structures.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C21-C25 are supported by experimental data in Figure 3 and appropriate citations to prior work. The distinction between dsDNA and ssDNA effects is clearly demonstrated, and the observation about 3' flap binding is consistent with prior studies.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:50:55.213524Z"
+    },
+    {
+      "id": "ffa43dc2-ca27-4bff-a04e-fdd8f0b69af9",
+      "content_id": "be1a88bd-775a-4010-83be-0436deb4111c",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The gel-shifted DNA band contains both FANCI and FANCD2 proteins, FANCIUb co-immunoprecipitates with FANCD2Ub, and monoubiquitination does not lead to dissociation of the heterodimer in vitro.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C26-C28 are supported by western blotting (Figure 4a) and co-immunoprecipitation data (Figure 4b). This directly contradicts prior reports of ubiquitin-mediated dissociation and is an important finding, though the authors should acknowledge this discrepancy more explicitly.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:50:55.213524Z"
+    },
+    {
+      "id": "98b39e90-3ab5-4b00-b805-3316034895fb",
+      "content_id": "be1a88bd-775a-4010-83be-0436deb4111c",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Monoubiquitination-defective mutants (FANCIKR:FANCD2WT or FANCIWT:FANCD2KR) show decreased EMSA shifts, while FANCIKR:FANCD2KR does not bind DNA. Retention on DNA correlates with the extent of FANCD2 monoubiquitination, and both proteins are found in the EMSA shifted product in higher amounts when both can be monoubiquitinated.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C29-C32 are supported by experimental data in Figure 4c-d using appropriate mutants. The correlation between FANCD2 monoubiquitination and DNA retention is clearly demonstrated, though the mechanism requires further investigation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:50:55.213524Z"
+    },
+    {
+      "id": "395b88d5-6ded-46ef-a27b-e9d8d3161730",
+      "content_id": "be1a88bd-775a-4010-83be-0436deb4111c",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Ubiquitin mutants affecting various surfaces and regions (F4A, D58A, I44A, V70A, K11R, L73P) were conjugated to ID2 with similar efficiency and had no apparent effect on DNA clamping, suggesting that ubiquitin conjugation induces a conformational rearrangement rather than mediating specific interactions through canonical ubiquitin surfaces.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C33-C36 are supported by experimental data in Figure 5b-c. The systematic testing of ubiquitin mutants provides strong evidence for the conformational change hypothesis, though C35-C36 are inferences that could benefit from additional structural data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:50:55.213524Z"
+    },
+    {
+      "id": "57a3324f-e0ec-47b7-b49e-763df488e52d",
+      "content_id": "be1a88bd-775a-4010-83be-0436deb4111c",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Using Avi-tag ubiquitin purification, monoubiquitinated FANCI:FANCD2 complex is recovered only when FANCI is monoubiquitinated, suggesting differential accessibility of ubiquitin N-termini on FANCI vs FANCD2.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C37 is supported by experimental data in Figure 6b, while C38-C39 are reasonable inferences from the purification results. This provides insight into the structural arrangement of ubiquitin moieties in the di-ubiquitinated complex.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:50:55.213524Z"
+    },
+    {
+      "id": "12f2bc95-8713-4cbd-a307-c0f9a4b013e4",
+      "content_id": "be1a88bd-775a-4010-83be-0436deb4111c",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Monoubiquitinated FANCIub:FANCD2ub forms filament-like arrays when bound to dsDNA plasmid, which were not observed with unmodified FANCI:FANCD2 or in previous EM studies.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C40-C41 are supported by EM data in Figure 6c-e. This is a novel and important observation, though the authors should provide more quantitative analysis of array frequency and characteristics. The comparison to prior EM studies is appropriate.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:50:55.213524Z"
+    },
+    {
+      "id": "9957a0e1-0900-48b6-8a89-82041a74bc21",
+      "content_id": "be1a88bd-775a-4010-83be-0436deb4111c",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The length of filament-like structures formed by monoubiquitinated FANCI:FANCD2 correlates with DNA length: no structures on 60 bp DNA, shorter structures on 150 bp DNA, and structures 7-8x longer than individual heterodimers on plasmid DNA, suggesting DNA-mediated association between heterodimers.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C42-C44 are supported by EM data in Figure 7a-c, and C45-C46 are reasonable inferences from the DNA length-dependent observations. The correlation provides strong evidence for DNA-mediated array formation, though more quantitative measurements would strengthen the conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:50:55.213524Z"
+    },
+    {
+      "id": "7b611eaf-696e-46dd-be1a-b5e49c5df5b2",
+      "content_id": "be1a88bd-775a-4010-83be-0436deb4111c",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Benzonase treatment breaks long IubD2ub arrays into very short or heterodimer-sized units, consistent with nuclease cleavage of exposed DNA between units, demonstrating that ubiquitination leads to a ubiquitin- and DNA-stabilized filament-like structure in vitro.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C47-C49 are supported by EM data in Figure 7d. The Benzonase experiment provides strong evidence that DNA mediates array formation, and C49 appropriately summarizes the key finding while noting the in vitro context.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:50:55.213524Z"
+    },
+    {
+      "id": "c210a962-1a2f-468b-a784-8865911e8d7b",
+      "content_id": "be1a88bd-775a-4010-83be-0436deb4111c",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The monoubiquitinated IubD2ub complex forms a distinct architecture from non-ubiquitinated ID2, with twisting that repositions solenoid arms and reduces size in one direction, supporting the view that monoubiquitination induces a conformational change that clamps the complex onto DNA.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C50-C52 are supported by EM class average data in Figure 7e-h, and C53 is a reasonable inference. However, the resolution is limited and the structural interpretation would benefit from higher-resolution structural data, which the authors acknowledge by citing concurrent cryo-EM studies.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:50:55.213524Z"
+    },
+    {
+      "id": "52031019-20bb-4c2e-8381-28b6b3f2fde6",
+      "content_id": "be1a88bd-775a-4010-83be-0436deb4111c",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The study demonstrates that monoubiquitination of FANCI:FANCD2, the central event in the FA pathway, directly clamps the ID2 complex onto double-stranded DNA and promotes filament-like coating of long DNA molecules.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C54-C56 appropriately summarize the major findings of the study. C54 provides context, while C55-C56 state the key conclusions supported by multiple lines of experimental evidence (EMSA, EM, mutant analysis).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:50:55.213524Z"
+    },
+    {
+      "id": "be6a4aa9-e615-4227-b4a2-bd904cfded2e",
+      "content_id": "be1a88bd-775a-4010-83be-0436deb4111c",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Fork protection involves exclusion of nucleases (MRE11, DNA2) and recruitment of restart factors, with nuclease exclusion being particularly important as inhibition of MRE11 or DNA2 alleviates sensitivity of FA-BRCA mutant cells to replication stalling agents.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C57-C59 accurately cite prior work establishing the importance of fork protection and nuclease exclusion in the FA pathway. These provide important context for interpreting the functional significance of the DNA clamping mechanism.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:50:55.213524Z"
+    },
+    {
+      "id": "4963bec3-778b-4ec4-8fc1-bd8da488667b",
+      "content_id": "be1a88bd-775a-4010-83be-0436deb4111c",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "The authors propose that monoubiquitinated IUbD2Ub does not demonstrate restricted interaction with specific protein partners, but its chromatin retention would bring it into proximity of DNA repair factors where it could influence their activity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C60 is supported by the negative results in Figure 1d, while C61 is a reasonable inference that reconciles the current findings with prior observations of functional interactions. This represents an important reinterpretation of the mechanism.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:50:55.213524Z"
+    },
+    {
+      "id": "3ad68f8f-6dfa-40fe-a636-5a79b8cec2c5",
+      "content_id": "be1a88bd-775a-4010-83be-0436deb4111c",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "DNA clamping occurs through a ubiquitin-mediated conformational change, likely mediated by a ubiquitin binding domain (UBD) in FANCD2 that sits opposite to where ubiquitin resides after conjugation to FANCI.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C62 is supported by the ubiquitin mutant data (Figure 5), C63 is appropriately cited to prior work, and C64 is a reasonable inference from structural information. This provides a mechanistic model for the clamping function.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:50:55.213524Z"
+    },
+    {
+      "id": "9d96f855-b897-4fa8-af1b-e7e73b3e6b27",
+      "content_id": "be1a88bd-775a-4010-83be-0436deb4111c",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "Concurrent high-resolution cryo-EM studies and examples from other DNA-binding proteins (H2A, FOXO4, CIITA) support the conformational rearrangement model and suggest that ubiquitin-to-UBD mediated clamping may be a general mechanism of protein:DNA stabilization.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C65-C67 appropriately cite concurrent and prior work, while C68 is reasonable speculation based on the findings and analogous systems. This places the work in broader context, though C68 remains speculative.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:50:55.213524Z"
+    },
+    {
+      "id": "642f51c2-5c32-40fc-b6d7-2bafe63f5e78",
+      "content_id": "be1a88bd-775a-4010-83be-0436deb4111c",
+      "result_id": "R20",
+      "result_category": "llm",
+      "result": "Fourier transformation analysis indicates IUbD2Ub is not a true filament, with plasmid-associated structures averaging 7-8x (up to 40x) longer than 60 bp DNA-associated structures. The modular nature suggests flexible, multi-conformational DNA binding similar to RPA on ssDNA.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C69-C71 are supported by analysis of EM data, while C72 is a reasonable inference by analogy to RPA. The distinction between filament-like arrays and true filaments is important, though more detailed structural characterization would be valuable.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:50:55.213524Z"
+    },
+    {
+      "id": "c4d5656c-5c76-4679-98a0-6c25ebb1a55e",
+      "content_id": "be1a88bd-775a-4010-83be-0436deb4111c",
+      "result_id": "R21",
+      "result_category": "llm",
+      "result": "FANCD2 forms large foci at DNA damage sites that may represent filamentous arrays. ChIP-Seq data show FANCD2 produces broad peaks (kb to mb) at Cas9-induced breaks, present right up to the DSB, with progressive accumulation over time suggestive of polymerization away from the break site.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C73-C74 appropriately cite prior work and offer reasonable speculation. However, C75-C81 describe ChIP-Seq results that are not shown in the manuscript figures provided, making it impossible to evaluate the quality of this data. The interpretation is plausible but requires verification of the underlying data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:50:55.213524Z"
+    },
+    {
+      "id": "b776160d-9f8f-4647-83ec-993bd12bb004",
+      "content_id": "be1a88bd-775a-4010-83be-0436deb4111c",
+      "result_id": "R22",
+      "result_category": "llm",
+      "result": "FANCD2's conserved histone chaperone function may be linked to nucleosome displacement as filamentous arrays extend into chromatin. Direct association of two ID2 heterodimers was observed by co-immunopurification only after monoubiquitination.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C82 is appropriately cited, C83 is reasonable speculation, and C84 is supported by experimental data (Figure 4b). The connection between histone chaperone activity and array extension is speculative but plausible.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:50:55.213524Z"
+    },
+    {
+      "id": "51d423b3-aca9-4457-b95a-b9fc0ad1b35e",
+      "content_id": "be1a88bd-775a-4010-83be-0436deb4111c",
+      "result_id": "R23",
+      "result_category": "llm",
+      "result": "BRCA1:BARD1 was initially thought to be the E3 for FANCD2 monoubiquitination, but later work showed that FANCD2 monoubiquitination occurs in BRCA1-deficient cells though uncoupled from foci formation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C85-C86 accurately cite prior work showing the evolution of understanding about BRCA1's role. This provides important context for understanding the relationship between monoubiquitination and foci formation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:50:55.213524Z"
+    },
+    {
+      "id": "b15d329f-7587-4cdf-a6a0-5728b6c43584",
+      "content_id": "be1a88bd-775a-4010-83be-0436deb4111c",
+      "result_id": "R24",
+      "result_category": "llm",
+      "result": "Filamentous DNA-binding proteins play protective roles in prokaryotes (DAN, ParA2) and eukaryotes (RPA on ssDNA). The authors propose that FANCIub:D2ub arrays may have a similar stabilizing role on dsDNA at stalled replication forks.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C87-C89 appropriately cite examples of protective DNA-binding proteins, while C90 is reasonable speculation by analogy. This provides functional context for interpreting the biological significance of the arrays.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:50:55.213524Z"
+    },
+    {
+      "id": "6a1aa66a-d07b-4605-8c56-c18a1bfad2fa",
+      "content_id": "be1a88bd-775a-4010-83be-0436deb4111c",
+      "result_id": "R25",
+      "result_category": "llm",
+      "result": "The authors hypothesize that filamentous DNA-clamped Iub:D2ub could prevent nuclease access, prevent aberrant NHEJ, and inhibit fork reversal. Reversed forks are substrates for DNA2 and WRN degradation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C91-C93 are speculative hypotheses about mechanism, while C94 appropriately cites prior work. These are reasonable proposals based on the findings, but they remain untested hypotheses that require experimental validation. The speculation is clearly presented as such.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:50:55.213524Z"
+    },
+    {
+      "id": "0f66fdc6-af3b-4e78-bc3d-1089f0725cac",
+      "content_id": "be1a88bd-775a-4010-83be-0436deb4111c",
+      "result_id": "R26",
+      "result_category": "llm",
+      "result": "Iub:D2ub arrays may suppress NHEJ factors and delineate newly synthesized chromatin to promote homologous recombination. FA proteins were identified in screens for genes promoting templated repair over NHEJ, and ID2 stabilizes RAD51 filaments in vitro.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C95-C96 are speculative, C97-C98 appropriately cite prior work, and C99 is speculation based on the in vitro property. While plausible, these functional hypotheses require experimental testing in cells.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:50:55.213524Z"
+    },
+    {
+      "id": "aeac56c8-5400-40f7-b9da-c77b5d2102fb",
+      "content_id": "be1a88bd-775a-4010-83be-0436deb4111c",
+      "result_id": "R27",
+      "result_category": "llm",
+      "result": "FANCI and FANCD2 have common and distinct functions in mouse and human models. FANCI monoubiquitination is always subsequent to FANCD2 monoubiquitination and FANCI likely recruits the FA core complex.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C100-C104 appropriately cite prior work establishing the relationship between FANCI and FANCD2 functions and the order of monoubiquitination events. This provides context for interpreting the role of FANCI monoubiquitination.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:50:55.213524Z"
+    },
+    {
+      "id": "f5af02ef-1868-4b1a-98a6-5bfd64118a6a",
+      "content_id": "be1a88bd-775a-4010-83be-0436deb4111c",
+      "result_id": "R28",
+      "result_category": "llm",
+      "result": "FANCI monoubiquitination is not necessary for DNA clamping but likely plays a critical role in regulating deubiquitination. FANCI recruits USP1:UAF1, which prevents trapping of monoubiquitinated FANCD2, with only ID2Ub (not IUbD2Ub) being a substrate.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C105 is supported by Figure 4 data, C106 is reasonable speculation, and C107-C109 appropriately cite prior work. This provides a plausible model for FANCI's regulatory role, though C106 remains speculative.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:50:55.213524Z"
+    },
+    {
+      "id": "f27ad5de-4527-453a-bc0c-3220f3e714ae",
+      "content_id": "be1a88bd-775a-4010-83be-0436deb4111c",
+      "result_id": "R29",
+      "result_category": "llm",
+      "result": "FANCI plays an important role in the structural integrity of IUbD2Ub filamentous arrays, possibly creating asymmetry necessary for specific polarity in array assembly.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C110 is a reasonable inference from EM observations, while C111 is speculation. The role of FANCI in array structure is plausible but requires more detailed structural and functional analysis to confirm.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:50:55.213524Z"
+    },
+    {
+      "id": "ffa18b6e-f361-44c0-9105-33ec38dde0c5",
+      "content_id": "be1a88bd-775a-4010-83be-0436deb4111c",
+      "result_id": "R30",
+      "result_category": "llm",
+      "result": "FA patients develop bone marrow failure at median age 7, almost all lacking FANCD2/FANCI monoubiquitination. Up to 20% acquire somatic reversion mutations that restore monoubiquitination and prevent bone marrow failure.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C112-C115 appropriately cite clinical data about FA, providing important context for the therapeutic relevance of understanding the monoubiquitination mechanism. These establish the clinical significance of the findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:50:55.213524Z"
+    },
+    {
+      "id": "89d4a75d-44e7-4e82-bd10-39064194f41f",
+      "content_id": "be1a88bd-775a-4010-83be-0436deb4111c",
+      "result_id": "R31",
+      "result_category": "llm",
+      "result": "The work suggests two potential therapeutic strategies for FA: restoration of gene function or identification of mechanisms to stabilize ID2:DNA-clamped complexes. Small molecule modulators of ID2:DNA clamping could be therapeutics.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C116-C117 are speculative proposals about therapeutic applications. While the findings provide a mechanistic foundation for such approaches, these remain untested hypotheses. The speculation is appropriate for a discussion section but should not be overstated.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:50:55.213524Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "097b0cd9-ea3b-4584-8f08-042ae19111f2",
+      "result_id": "b8e4746d-f3f1-43ec-b2fb-69680f60b9a3"
+    },
+    {
+      "claim_id": "53ecfee3-efad-489a-9026-3b2783932e6c",
+      "result_id": "b8e4746d-f3f1-43ec-b2fb-69680f60b9a3"
+    },
+    {
+      "claim_id": "2c5c913c-1d27-46f2-8565-7f06bab64591",
+      "result_id": "b8e4746d-f3f1-43ec-b2fb-69680f60b9a3"
+    },
+    {
+      "claim_id": "56ee0b80-8376-40fa-9e34-85a4e626ef6a",
+      "result_id": "b8e4746d-f3f1-43ec-b2fb-69680f60b9a3"
+    },
+    {
+      "claim_id": "2dcf1911-a2d3-4656-a0f4-a112593b9cd8",
+      "result_id": "b8e4746d-f3f1-43ec-b2fb-69680f60b9a3"
+    },
+    {
+      "claim_id": "22a310f5-c7be-41e9-a6f4-d43307cf7aaf",
+      "result_id": "30af6d69-952e-450b-bae4-b23fa4267914"
+    },
+    {
+      "claim_id": "1e0f091a-cece-4ce8-9360-b6b92bb57e52",
+      "result_id": "30af6d69-952e-450b-bae4-b23fa4267914"
+    },
+    {
+      "claim_id": "97ec5915-810e-4725-a803-b848370bbc3e",
+      "result_id": "30af6d69-952e-450b-bae4-b23fa4267914"
+    },
+    {
+      "claim_id": "fef48449-5afa-4fe6-a1a8-b5884b4af430",
+      "result_id": "30af6d69-952e-450b-bae4-b23fa4267914"
+    },
+    {
+      "claim_id": "19294bc5-b857-4634-aca5-9d24ce79d1b5",
+      "result_id": "30af6d69-952e-450b-bae4-b23fa4267914"
+    },
+    {
+      "claim_id": "1282930a-6230-4660-9ded-e72c5b8c74ef",
+      "result_id": "30af6d69-952e-450b-bae4-b23fa4267914"
+    },
+    {
+      "claim_id": "e35a024f-6fd3-4823-9958-2bc198851d76",
+      "result_id": "6cf4dce9-0c69-4a01-b70c-09fbbda534d2"
+    },
+    {
+      "claim_id": "a501c3ad-bea0-4c1a-96d2-f4776c20bfce",
+      "result_id": "6cf4dce9-0c69-4a01-b70c-09fbbda534d2"
+    },
+    {
+      "claim_id": "04a75461-7d0c-41d2-a05b-2d1a1e9f401c",
+      "result_id": "6cf4dce9-0c69-4a01-b70c-09fbbda534d2"
+    },
+    {
+      "claim_id": "48c06eca-f15d-4808-8423-bb5f814497d3",
+      "result_id": "6cf4dce9-0c69-4a01-b70c-09fbbda534d2"
+    },
+    {
+      "claim_id": "24da9727-d8b7-4cb4-a51c-a73cbbe257be",
+      "result_id": "6cf4dce9-0c69-4a01-b70c-09fbbda534d2"
+    },
+    {
+      "claim_id": "865b9075-af37-4de1-9972-8892d18b40a7",
+      "result_id": "48ca3fee-b6b6-4cec-bcbf-e549631d7562"
+    },
+    {
+      "claim_id": "1b18392f-cfac-485c-8a54-4250838b9be0",
+      "result_id": "bc307b47-5976-430f-87d2-9e9d86fe6021"
+    },
+    {
+      "claim_id": "d8997913-3f06-46b3-abc5-c4d91410df49",
+      "result_id": "bc307b47-5976-430f-87d2-9e9d86fe6021"
+    },
+    {
+      "claim_id": "1ae2aaff-d3ee-447d-89b3-ee9cb01c0a8f",
+      "result_id": "bc307b47-5976-430f-87d2-9e9d86fe6021"
+    },
+    {
+      "claim_id": "b9cb9a12-e959-432b-94f3-adbe98e9da29",
+      "result_id": "62bd318a-d03d-4f11-816c-7ee75596d101"
+    },
+    {
+      "claim_id": "566e178f-be61-4e24-9005-3a058d90c01c",
+      "result_id": "62bd318a-d03d-4f11-816c-7ee75596d101"
+    },
+    {
+      "claim_id": "dd11dbd7-4ba0-4d78-9d28-03577cfadede",
+      "result_id": "62bd318a-d03d-4f11-816c-7ee75596d101"
+    },
+    {
+      "claim_id": "692c0e65-df4a-4a5d-bd53-bcd2830f094d",
+      "result_id": "62bd318a-d03d-4f11-816c-7ee75596d101"
+    },
+    {
+      "claim_id": "3627b5db-1316-4807-a756-d8d703108814",
+      "result_id": "62bd318a-d03d-4f11-816c-7ee75596d101"
+    },
+    {
+      "claim_id": "bf69c8a4-397b-4526-b504-810f43e61319",
+      "result_id": "ffa43dc2-ca27-4bff-a04e-fdd8f0b69af9"
+    },
+    {
+      "claim_id": "9e396d63-2201-48de-b097-d9ef78141c33",
+      "result_id": "ffa43dc2-ca27-4bff-a04e-fdd8f0b69af9"
+    },
+    {
+      "claim_id": "fc074b14-32a4-48f3-b0f5-90274ea23014",
+      "result_id": "ffa43dc2-ca27-4bff-a04e-fdd8f0b69af9"
+    },
+    {
+      "claim_id": "d8f3f729-b6f6-4301-87ea-5572e58b0170",
+      "result_id": "98b39e90-3ab5-4b00-b805-3316034895fb"
+    },
+    {
+      "claim_id": "14125be0-7ad5-41a7-9d87-56b354374524",
+      "result_id": "98b39e90-3ab5-4b00-b805-3316034895fb"
+    },
+    {
+      "claim_id": "2dec847f-1b8a-429e-a56d-aecda7d05348",
+      "result_id": "98b39e90-3ab5-4b00-b805-3316034895fb"
+    },
+    {
+      "claim_id": "cbe6b9ef-78fc-4357-86e2-dbc71581ea12",
+      "result_id": "98b39e90-3ab5-4b00-b805-3316034895fb"
+    },
+    {
+      "claim_id": "3535cfdf-4a91-4a31-9c32-1444d6f214ee",
+      "result_id": "395b88d5-6ded-46ef-a27b-e9d8d3161730"
+    },
+    {
+      "claim_id": "30ff8dc1-28b2-4189-ab6f-2dcd30cbc0d9",
+      "result_id": "395b88d5-6ded-46ef-a27b-e9d8d3161730"
+    },
+    {
+      "claim_id": "8f124433-284c-48f2-a165-6c3ce1b0b924",
+      "result_id": "395b88d5-6ded-46ef-a27b-e9d8d3161730"
+    },
+    {
+      "claim_id": "115efdeb-c6c0-448d-8752-f3615feeeb54",
+      "result_id": "395b88d5-6ded-46ef-a27b-e9d8d3161730"
+    },
+    {
+      "claim_id": "47acb5bd-606c-419a-b82f-1f752a1bbb66",
+      "result_id": "57a3324f-e0ec-47b7-b49e-763df488e52d"
+    },
+    {
+      "claim_id": "25e1b207-7564-4f1e-a4fe-f9a7b316e143",
+      "result_id": "57a3324f-e0ec-47b7-b49e-763df488e52d"
+    },
+    {
+      "claim_id": "e6232157-ee5e-4884-95b0-8c3276ace037",
+      "result_id": "57a3324f-e0ec-47b7-b49e-763df488e52d"
+    },
+    {
+      "claim_id": "cdd8c07b-5842-4f08-8801-bbc1858bb612",
+      "result_id": "12f2bc95-8713-4cbd-a307-c0f9a4b013e4"
+    },
+    {
+      "claim_id": "f70fdcdc-8533-4412-a475-a4897345c094",
+      "result_id": "12f2bc95-8713-4cbd-a307-c0f9a4b013e4"
+    },
+    {
+      "claim_id": "7a8d27ac-547c-486c-81a5-30180f0f99f6",
+      "result_id": "9957a0e1-0900-48b6-8a89-82041a74bc21"
+    },
+    {
+      "claim_id": "07495c77-0e8d-46c3-80aa-dd85ec4bb29b",
+      "result_id": "9957a0e1-0900-48b6-8a89-82041a74bc21"
+    },
+    {
+      "claim_id": "8300496d-4fc1-4943-8f30-e070855b038a",
+      "result_id": "9957a0e1-0900-48b6-8a89-82041a74bc21"
+    },
+    {
+      "claim_id": "4a9b87ce-42c9-4cb6-a002-402472475806",
+      "result_id": "9957a0e1-0900-48b6-8a89-82041a74bc21"
+    },
+    {
+      "claim_id": "8c1a41f6-0db4-4bc0-9e89-e0dc3e3f15c4",
+      "result_id": "9957a0e1-0900-48b6-8a89-82041a74bc21"
+    },
+    {
+      "claim_id": "59034f6d-f3bf-4615-b553-1a847504e5d6",
+      "result_id": "7b611eaf-696e-46dd-be1a-b5e49c5df5b2"
+    },
+    {
+      "claim_id": "fa3b5389-4836-4fd6-8dbb-e86da23bda0f",
+      "result_id": "7b611eaf-696e-46dd-be1a-b5e49c5df5b2"
+    },
+    {
+      "claim_id": "b5a37f2d-795a-46da-a61e-661b458ad4eb",
+      "result_id": "7b611eaf-696e-46dd-be1a-b5e49c5df5b2"
+    },
+    {
+      "claim_id": "b4249e0e-b8cc-486c-9ca4-193bdc85fc7e",
+      "result_id": "c210a962-1a2f-468b-a784-8865911e8d7b"
+    },
+    {
+      "claim_id": "9bd67c7f-3213-4d2d-9cc7-aa592c53c0c9",
+      "result_id": "c210a962-1a2f-468b-a784-8865911e8d7b"
+    },
+    {
+      "claim_id": "b87ccab5-0bf5-4807-9f0c-48112a2de8a4",
+      "result_id": "c210a962-1a2f-468b-a784-8865911e8d7b"
+    },
+    {
+      "claim_id": "0f68e88a-7c8f-4e35-8327-b6dfacb58c3f",
+      "result_id": "c210a962-1a2f-468b-a784-8865911e8d7b"
+    },
+    {
+      "claim_id": "ed909358-58c1-468c-ae47-5a93675907d5",
+      "result_id": "52031019-20bb-4c2e-8381-28b6b3f2fde6"
+    },
+    {
+      "claim_id": "ac507946-be77-4f6c-81c3-ed5d302775d4",
+      "result_id": "52031019-20bb-4c2e-8381-28b6b3f2fde6"
+    },
+    {
+      "claim_id": "1d1a17cf-d900-488a-8f0e-5dff20c76a2c",
+      "result_id": "52031019-20bb-4c2e-8381-28b6b3f2fde6"
+    },
+    {
+      "claim_id": "40a1d67e-5c5d-4995-98cb-c8985ae4bb43",
+      "result_id": "be6a4aa9-e615-4227-b4a2-bd904cfded2e"
+    },
+    {
+      "claim_id": "988eda44-3293-4b12-9993-6b3e7600ef9e",
+      "result_id": "be6a4aa9-e615-4227-b4a2-bd904cfded2e"
+    },
+    {
+      "claim_id": "04b55c7f-3476-423b-a69c-3abc60ee6a1c",
+      "result_id": "be6a4aa9-e615-4227-b4a2-bd904cfded2e"
+    },
+    {
+      "claim_id": "421c44ae-ef2d-4419-9cd2-c48331d93a94",
+      "result_id": "4963bec3-778b-4ec4-8fc1-bd8da488667b"
+    },
+    {
+      "claim_id": "16181c2c-1000-4c27-8167-fd6f558240e3",
+      "result_id": "4963bec3-778b-4ec4-8fc1-bd8da488667b"
+    },
+    {
+      "claim_id": "81f46631-5d80-4f7e-bb9f-2361508563f7",
+      "result_id": "3ad68f8f-6dfa-40fe-a636-5a79b8cec2c5"
+    },
+    {
+      "claim_id": "1610dbf3-f982-418b-adb3-a3787837d61d",
+      "result_id": "3ad68f8f-6dfa-40fe-a636-5a79b8cec2c5"
+    },
+    {
+      "claim_id": "32641d3a-5355-44e3-9f28-029838f06352",
+      "result_id": "3ad68f8f-6dfa-40fe-a636-5a79b8cec2c5"
+    },
+    {
+      "claim_id": "06087c80-cde6-4f8e-9484-c9f5188d938e",
+      "result_id": "9d96f855-b897-4fa8-af1b-e7e73b3e6b27"
+    },
+    {
+      "claim_id": "40edba01-703c-4393-bcc5-04c2a8144e34",
+      "result_id": "9d96f855-b897-4fa8-af1b-e7e73b3e6b27"
+    },
+    {
+      "claim_id": "4f8b714d-8f3b-471b-9120-09506483fb9f",
+      "result_id": "9d96f855-b897-4fa8-af1b-e7e73b3e6b27"
+    },
+    {
+      "claim_id": "6ddd8882-e7d9-4de1-8c31-8cad073c539d",
+      "result_id": "9d96f855-b897-4fa8-af1b-e7e73b3e6b27"
+    },
+    {
+      "claim_id": "1cee0bb9-ceb1-4a65-9fa3-bf30673d3b59",
+      "result_id": "642f51c2-5c32-40fc-b6d7-2bafe63f5e78"
+    },
+    {
+      "claim_id": "ce2ce1e0-31db-4947-82a5-f265b4466ed9",
+      "result_id": "642f51c2-5c32-40fc-b6d7-2bafe63f5e78"
+    },
+    {
+      "claim_id": "d659e9b6-8b3d-4fc3-8e51-cf5eeeb2e588",
+      "result_id": "642f51c2-5c32-40fc-b6d7-2bafe63f5e78"
+    },
+    {
+      "claim_id": "36403dbe-3df6-43ba-87b1-bac3d3dd5dc3",
+      "result_id": "642f51c2-5c32-40fc-b6d7-2bafe63f5e78"
+    },
+    {
+      "claim_id": "2613fe5a-c079-40c9-b90e-8c30d32b1a83",
+      "result_id": "c4d5656c-5c76-4679-98a0-6c25ebb1a55e"
+    },
+    {
+      "claim_id": "fcb4d27d-1d5a-493f-8253-2eb7e11007bb",
+      "result_id": "c4d5656c-5c76-4679-98a0-6c25ebb1a55e"
+    },
+    {
+      "claim_id": "10b35064-9a03-4b74-94e4-eedeff31aa73",
+      "result_id": "c4d5656c-5c76-4679-98a0-6c25ebb1a55e"
+    },
+    {
+      "claim_id": "a7bd7a51-8647-49ef-9787-d64f6d676ac4",
+      "result_id": "c4d5656c-5c76-4679-98a0-6c25ebb1a55e"
+    },
+    {
+      "claim_id": "40eb9c2a-9a5e-49e0-b17f-c63a5e26cf38",
+      "result_id": "c4d5656c-5c76-4679-98a0-6c25ebb1a55e"
+    },
+    {
+      "claim_id": "b9b63055-f4c4-47f9-a01a-9606a391d61e",
+      "result_id": "c4d5656c-5c76-4679-98a0-6c25ebb1a55e"
+    },
+    {
+      "claim_id": "4af132d4-dc61-4d11-a5f5-fe14d2e99562",
+      "result_id": "c4d5656c-5c76-4679-98a0-6c25ebb1a55e"
+    },
+    {
+      "claim_id": "23cc26b8-1f1a-44bb-88e2-d137aa166d0d",
+      "result_id": "c4d5656c-5c76-4679-98a0-6c25ebb1a55e"
+    },
+    {
+      "claim_id": "121078c9-5c53-4b1c-a3f5-3a54bf60b43e",
+      "result_id": "c4d5656c-5c76-4679-98a0-6c25ebb1a55e"
+    },
+    {
+      "claim_id": "664a1689-82e7-45bb-8169-7ebc2a36849d",
+      "result_id": "b776160d-9f8f-4647-83ec-993bd12bb004"
+    },
+    {
+      "claim_id": "73fd8528-82ca-4dbb-96a2-6a427f41d5a2",
+      "result_id": "b776160d-9f8f-4647-83ec-993bd12bb004"
+    },
+    {
+      "claim_id": "4035016a-15f5-4445-a5f7-df36f78d61d4",
+      "result_id": "b776160d-9f8f-4647-83ec-993bd12bb004"
+    },
+    {
+      "claim_id": "4cdf921e-2e1b-47a5-87e3-01c250342dc9",
+      "result_id": "51d423b3-aca9-4457-b95a-b9fc0ad1b35e"
+    },
+    {
+      "claim_id": "f3d98151-0a4e-4bc1-8846-840765a51500",
+      "result_id": "51d423b3-aca9-4457-b95a-b9fc0ad1b35e"
+    },
+    {
+      "claim_id": "b6d91203-f4d5-4bca-aca9-0b54bfcfeb27",
+      "result_id": "b15d329f-7587-4cdf-a6a0-5728b6c43584"
+    },
+    {
+      "claim_id": "9095e3dd-6530-45cf-8902-183a45a9c148",
+      "result_id": "b15d329f-7587-4cdf-a6a0-5728b6c43584"
+    },
+    {
+      "claim_id": "ceef3307-ee01-4db4-aabf-dd792f4b8422",
+      "result_id": "b15d329f-7587-4cdf-a6a0-5728b6c43584"
+    },
+    {
+      "claim_id": "fd0f8a03-2ca9-48ab-a2d3-b13a826bc786",
+      "result_id": "b15d329f-7587-4cdf-a6a0-5728b6c43584"
+    },
+    {
+      "claim_id": "4074200d-78a7-4332-a25d-9ee54efe2995",
+      "result_id": "6a1aa66a-d07b-4605-8c56-c18a1bfad2fa"
+    },
+    {
+      "claim_id": "5fd6772d-1aa6-42cf-a8b3-b35cb0ab05b8",
+      "result_id": "6a1aa66a-d07b-4605-8c56-c18a1bfad2fa"
+    },
+    {
+      "claim_id": "3f12bde3-2c50-41aa-9125-8405a153defd",
+      "result_id": "6a1aa66a-d07b-4605-8c56-c18a1bfad2fa"
+    },
+    {
+      "claim_id": "02829709-2b87-4be6-beaf-f2b36c4d5f32",
+      "result_id": "6a1aa66a-d07b-4605-8c56-c18a1bfad2fa"
+    },
+    {
+      "claim_id": "6a1ca057-2cb7-417e-847a-e003332a133f",
+      "result_id": "0f66fdc6-af3b-4e78-bc3d-1089f0725cac"
+    },
+    {
+      "claim_id": "b2c6f275-7eec-45c9-8ab1-ea0c355a7fc3",
+      "result_id": "0f66fdc6-af3b-4e78-bc3d-1089f0725cac"
+    },
+    {
+      "claim_id": "4ffa0c11-ae2f-4867-9d97-2f997552160f",
+      "result_id": "0f66fdc6-af3b-4e78-bc3d-1089f0725cac"
+    },
+    {
+      "claim_id": "50b515f0-1f83-43f4-9f18-2940b4360f66",
+      "result_id": "0f66fdc6-af3b-4e78-bc3d-1089f0725cac"
+    },
+    {
+      "claim_id": "9969edf1-e570-4698-a8ba-adac722db61f",
+      "result_id": "0f66fdc6-af3b-4e78-bc3d-1089f0725cac"
+    },
+    {
+      "claim_id": "f5d9bc22-8d44-48a9-bc30-1830156e5b98",
+      "result_id": "aeac56c8-5400-40f7-b9da-c77b5d2102fb"
+    },
+    {
+      "claim_id": "79f85343-db49-4338-a2d6-b4a794656a68",
+      "result_id": "aeac56c8-5400-40f7-b9da-c77b5d2102fb"
+    },
+    {
+      "claim_id": "42996be6-1fb1-48ba-9c76-285453be51f3",
+      "result_id": "aeac56c8-5400-40f7-b9da-c77b5d2102fb"
+    },
+    {
+      "claim_id": "cebbfaa7-c99c-429e-978f-e69d68028722",
+      "result_id": "aeac56c8-5400-40f7-b9da-c77b5d2102fb"
+    },
+    {
+      "claim_id": "fd6f4dc7-aafc-4e4a-8508-2d495f9f9fc0",
+      "result_id": "aeac56c8-5400-40f7-b9da-c77b5d2102fb"
+    },
+    {
+      "claim_id": "1f2f6577-2b84-46d0-8fe8-e032fc64fbf1",
+      "result_id": "f5af02ef-1868-4b1a-98a6-5bfd64118a6a"
+    },
+    {
+      "claim_id": "457e494b-e8c1-4203-ad36-dc0d7a1d32cb",
+      "result_id": "f5af02ef-1868-4b1a-98a6-5bfd64118a6a"
+    },
+    {
+      "claim_id": "02f1fb87-c544-43d6-818c-f51b3993c299",
+      "result_id": "f5af02ef-1868-4b1a-98a6-5bfd64118a6a"
+    },
+    {
+      "claim_id": "4cdb3ceb-833c-4a7e-9c39-4a76dbcfa826",
+      "result_id": "f5af02ef-1868-4b1a-98a6-5bfd64118a6a"
+    },
+    {
+      "claim_id": "fb436196-b36c-455b-af4e-fd176b7a1e59",
+      "result_id": "f5af02ef-1868-4b1a-98a6-5bfd64118a6a"
+    },
+    {
+      "claim_id": "4e9316bf-4fee-44a5-aa42-53fb40fda96a",
+      "result_id": "f27ad5de-4527-453a-bc0c-3220f3e714ae"
+    },
+    {
+      "claim_id": "043e159d-8b41-4c6a-a285-08216569a229",
+      "result_id": "f27ad5de-4527-453a-bc0c-3220f3e714ae"
+    },
+    {
+      "claim_id": "eea093d6-f64d-48b0-b835-a082575fef27",
+      "result_id": "ffa18b6e-f361-44c0-9105-33ec38dde0c5"
+    },
+    {
+      "claim_id": "add0dea7-4ad0-4924-ac1d-a755533e185a",
+      "result_id": "ffa18b6e-f361-44c0-9105-33ec38dde0c5"
+    },
+    {
+      "claim_id": "0cf531fc-dc2f-412d-89e6-6a9083251965",
+      "result_id": "ffa18b6e-f361-44c0-9105-33ec38dde0c5"
+    },
+    {
+      "claim_id": "a409e50b-f468-4ef3-b236-c6de9d712e98",
+      "result_id": "ffa18b6e-f361-44c0-9105-33ec38dde0c5"
+    },
+    {
+      "claim_id": "e09044b4-68c8-4e30-8f28-b2b46335d090",
+      "result_id": "89d4a75d-44e7-4e82-bd10-39064194f41f"
+    },
+    {
+      "claim_id": "eb328cc5-db07-461c-86ef-2a8dbd2ac4bd",
+      "result_id": "89d4a75d-44e7-4e82-bd10-39064194f41f"
+    }
+  ],
+  "comparisons": []
+}

@@ -1,0 +1,258 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19"
+    ],
+    "result": "The authors establish the scientific context and motivation for developing PESCA by describing the properties of enhancers, the current state of cell type cataloging, and the limitations of existing methods for identifying and testing cell-type-specific gene regulatory elements.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C19 provide well-supported background knowledge about enhancers, cell types, and current methodological limitations. These claims are appropriately cited to published literature (C2, C7, C8, C9, C14, C16, C17) or represent established knowledge in the field (C1, C3, C11, C12, C13, C15, C18, C19). The context establishes a clear rationale for the development of PESCA.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "The authors developed PESCA, a scalable method that merges massively parallel reporter assays with single-cell RNA sequencing to identify and functionally assess cell-type-specific enhancers across mammalian cell types, and applied it to generate viral reagents for accessing SST+ cortical interneurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C6 and C20-C24 describe the development and key features of PESCA with appropriate citations to prior methodologies (C20). The method description is clear and the application to SST+ interneurons is demonstrated through the experimental results presented in subsequent claims. The integration of MPRA and scRNA-seq principles is well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "The authors used comparative ATAC-Seq on INTACT-purified chromatin from SST, PV, and VIP interneurons to identify candidate GREs, identifying 57,932, 61,108, and 79,124 peaks respectively, then filtered 323,369 cortical neuron accessible regions for conservation to obtain 36,215 conserved GREs, from which the top 287 SST-enriched GREs were selected for screening.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C32 describe a systematic experimental approach with clear quantitative results. The INTACT method is appropriately cited (C26), and the filtering strategy for conservation and SST-enrichment is described with specific numbers. The data are presented in Figures 1b-d and supplementary figures, providing visual confirmation of the approach.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "The authors constructed a PESCA library of 861 GRE-barcode pairs (287 GREs \u00d7 3 barcodes each) in an AAV9 vector with a human beta-globin promoter, achieving 93.1% barcode recovery (802/861) and 99.3% GRE recovery (285/287) in the final viral library.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C39 describe the library construction with clear experimental design rationale (C33, C35) and quantitative validation (C38, C39). The choice of promoter and viral serotype is justified with appropriate citations (C35, C36, C37). The high recovery rates demonstrate successful library construction, as shown in Figure 2b.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "The authors developed a PCR enrichment protocol that increased viral transcript recovery 382-fold (p=0, Mann-Whitney U-test) to 15.6 unique viral transcripts per nucleus, enabling detection of viral transcripts in 86% of 32,335 analyzed nuclei with high correlation (r=0.9, p<2.2\u00d710\u207b\u00b9\u2076) between library abundance and infection rate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C47 describe a critical technical innovation with strong statistical support. The 382-fold enrichment is statistically significant (C40), and the high correlation between library composition and infection (C46) demonstrates that the enrichment did not introduce substantial bias. The low error rate (0.3\u00b10.06%, C47) confirms technical robustness. Data are shown in Figure 2c and supplementary figures.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "The authors classified nuclei into ten cell types and identified several GREs with highly specific SST+ enrichment (q<0.01, fold-change>7), with high correlation between replicate barcodes (r=0.52\u00b10.05, p<2.2\u00d710\u207b\u00b9\u2076) and between animals (r=0.54, p<2.2\u00d710\u207b\u00b9\u2076), significantly higher than shuffled controls (r=0.002\u00b10.06, p=0.003).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C53 present the core screening results with robust statistical validation. The correlation between technical replicates (C49) and biological replicates (C52) is strong and highly significant. The shuffled control (C50) demonstrates that the correlations are not due to chance. The identification of specific hits (C53) is supported by appropriate statistical thresholds. Data are shown in Figures 2c-j and supplementary figures.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C84"
+    ],
+    "result": "The authors observed that highly abundant GRE-driven transcripts were more likely to be significantly enriched in SST+ cells, and computational subsampling demonstrated that reduced viral transcript numbers decreased the ability to detect enrichment, leading to an estimate that approximately 2/3 of the 287 GREs had sufficient power for assessment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54, C55, and C84 provide an honest assessment of the method's limitations. The observation about abundance-dependent detection (C54) is supported by data in Figure 2\u2014figure supplement 5f. The subsampling analysis (C55) provides computational validation shown in Figure 2\u2014figure supplement 6. The power estimate (C84) is a reasonable inference from these analyses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "Fluorescence microscopy validation in Sst-Cre;Ai14 mice showed that GRE12, GRE22, and GRE44 drove GFP expression in 90.7\u00b12.1%, 72.9\u00b14.2%, and 95.8\u00b10.6% SST+ cells respectively, compared to 27.2\u00b11.9% for the \u0394GRE control, with GRE incorporation increasing SST+ GFP+ cells 1.7-2-fold and decreasing SST- GFP+ cells 3-32-fold.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C63 provide strong validation of PESCA hits using an orthogonal method. The specificity percentages (C56-C59) are based on substantial cell counts (170-2066 cells across 3-4 animals). The comparison to \u0394GRE control (C59) and mDlx5/6 enhancer (C61) demonstrates that the GREs provide both enhancement and restriction of expression (C60, C62, C63). Data are shown in Figure 3a-g and supplementary figures.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "Among major interneuron classes, GRE12, GRE22, and GRE44 showed high SST-specificity with only 2.6\u00b12.6%, 3.5\u00b12.0%, and 6.0\u00b12.7% of GFP+ cells being VIP+ or PV+, confirming that all three GRE-driven vectors are highly SST-specific.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C67 demonstrate specificity among interneuron subtypes using immunostaining and transgenic reporter mice. The low percentages of off-target expression in VIP+ and PV+ cells (C64-C66) support the conclusion of high SST-specificity (C67). Data are shown in Figure 3h and Figure 3\u2014figure supplement 4.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C68",
+      "C69"
+    ],
+    "result": "GRE12 and GRE44 showed preferential expression in cortical layers IV and V, with laminar distributions significantly different from the full SST+ population (p=1.3\u00d710\u207b\u2076 and p<2.2\u00d710\u207b\u00b9\u2076 respectively, Mann-Whitney U test).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C69 demonstrate that PESCA can identify GREs targeting specific SST+ subpopulations defined by laminar distribution. The statistical significance is strong (C69) and the data are shown in Figure 3i and Figure 3\u2014figure supplement 5. This suggests the GREs may target functionally distinct SST+ subtypes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "Electrophysiological recordings showed that both GRE44+ and GRE44- SST+ neurons display adapting interneuron properties, but GRE44+ neurons have significantly broader action potentials, lower rheobase, slower rising phase, and lower maximal firing frequencies compared to GRE44- SST+ neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C74 demonstrate that GRE44 targets an electrophysiologically distinct SST+ subpopulation. The recordings show shared properties (C70) consistent with prior literature, but also significant differences in multiple parameters (C71-C74). Data are shown in Figure 4a-d and Supplementary file 4 with appropriate statistical comparisons.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "GRE12-driven Gq-DREADD expression enabled robust and specific modulation of SST+ neuron activity, with all tdTomato+ cells showing significantly increased firing rates and depolarized resting potentials upon CNO application, while nearby uninfected pyramidal neurons showed no significant changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C79 demonstrate functional utility of PESCA-identified GREs for manipulating neuronal activity. The DREADD experiments show robust responses in infected cells (C75-C77) with appropriate specificity controls (C78). The conclusion (C79) is well-supported by the data shown in Figure 4e-j.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "PESCA extends previous paralleled reporter assays by incorporating single-cell RNA-seq readout, enabling rapid in vivo screening of hundreds of GREs without transgenic tools, and the identified GREs likely function to both enhance and restrict viral expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C82 discuss the methodological advance and mechanistic implications. The extension of prior methods (C80) is appropriately cited and the advantage over current approaches (C81) is demonstrated by the results. The inference about dual enhancer/repressor function (C82) is reasonable given the observed increase in on-target and decrease in off-target expression, though the mechanism remains to be explored as stated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C83",
+      "C85",
+      "C86"
+    ],
+    "result": "The authors note that consideration of excitatory neuron ATAC-Seq data could have refined GRE selection by excluding ~half of screened GREs, and that snRNA-seq enrichment values (8.3-9.1-fold) differed from protein-level specificity (73-96%), highlighting the importance of validation at multiple levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83, C85, and C86 provide thoughtful discussion of optimization opportunities and the relationship between RNA and protein measurements. The suggestion about excitatory neuron data (C83) is appropriately cited. The comparison between RNA and protein levels (C85, C86) acknowledges important technical considerations for interpreting PESCA results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "The authors propose that PESCA can likely be applied to other cell types, organisms, tissues, and viral types based on conservation of gene regulatory mechanisms, and has potential for developing targeted gene therapy vehicles for diseases with cell-type-specific etiologies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C87-C91 are largely speculative about future applications. While the underlying principle of conserved regulatory mechanisms (C87) is reasonable, the claims about broad applicability (C88, C89) and therapeutic potential (C91) are not directly tested in this study. The flexibility of the cloning strategy (C90) is supported by the modular design, but the other claims require additional validation.",
+    "result_type": "MINOR"
+  }
+]

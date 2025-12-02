@@ -1,0 +1,445 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C29",
+      "C59",
+      "C149"
+    ],
+    "result": "Lkb1 is essential for the survival of adult mice, with systemic Stk11 deletion leading to death within 3.5 weeks post-tamoxifen administration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C29, C59, and C149 are supported by survival data in Figure 2a showing that Stk11-/- mice die within 25 days (3.5 weeks). The experimental design using tamoxifen-inducible Cre recombinase in adult mice (C42-C43) provides appropriate temporal control for assessing acute loss effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C30",
+      "C31",
+      "C41",
+      "C55",
+      "C105"
+    ],
+    "result": "Autophagy is upregulated in response to acute Lkb1 loss and temporarily extends survival, but co-deletion of Atg7 and Stk11 reduces survival to 2 weeks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C30, C31, and C105 are supported by survival data (Figure 2a) showing Stk11-/- mice survive longer than Atg7-/-;Stk11-/- mice, and by molecular evidence of autophagy upregulation (C30, C55) shown in Figure 1 including LC3-II accumulation, Atg5-Atg12 conjugation, and HCQ flux assays (C53-C54). The compensatory but insufficient nature of autophagy is demonstrated by the failure to restore full homeostasis (C105).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C136",
+      "C137",
+      "C139",
+      "C146"
+    ],
+    "result": "Acute Lkb1 loss leads to AMPK activation and mTORC1 inactivation through both AMPK-dependent and independent pathways, resulting in autophagy upregulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C52 and C136 are supported by western blot and IHC data in Figure 1d-e showing pAMPK(T172), pULK1(S555), pACC(S79), reduced pS6, reduced pULK1(S757), and Atg5-Atg12 conjugation in Stk11-/- tissues. The interpretation that Lkb1-AMPK-mTORC1 may not be the only pathway (C137, C146) is reasonable given AMPK activation despite Lkb1 loss, consistent with alternative kinases CaMKK and TAK1 (C46-C47, C135).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C5",
+      "C32",
+      "C33",
+      "C67",
+      "C69",
+      "C70",
+      "C77",
+      "C110",
+      "C111",
+      "C112",
+      "C158",
+      "C159"
+    ],
+    "result": "Acute Lkb1 deletion causes impaired intestinal barrier function with enlarged undifferentiated goblet-Paneth cells, which is exacerbated by concurrent Atg7 deletion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C32-C33, C69-C70, and C110-C111 are supported by histology (Figure 3a-c) showing enlarged goblet-Paneth cells and FITC-dextran permeability assays (Figure 3g) demonstrating increased intestinal permeability in Stk11-/- mice that worsens in Atg7-/-;Stk11-/- mice. The observation that short-term Atg7 deletion alone does not impair barrier function (C112) strengthens the conclusion that autophagy compensates for Lkb1 loss (C158-C159).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C85",
+      "C86",
+      "C114",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120"
+    ],
+    "result": "Broad-spectrum antibiotics partially rescue survival of Atg7-/-;Stk11-/- mice but not Stk11-/- mice, indicating autophagy prevents infection-related death in the context of Lkb1 loss.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C37 and C85-C86 are supported by survival data with antibiotic treatment (Figure 3i) showing rescue of Atg7-/-;Stk11-/- but not Stk11-/- mice. The increased D-lyxose levels (C114) in Atg7-/-;Stk11-/- mice (Figure 3h) provide evidence of bacterial invasion. However, the interpretation that Stk11-/- death is due to systemic catastrophe rather than infection alone (C87) is appropriately cautious given the lack of antibiotic rescue.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C35",
+      "C90",
+      "C91",
+      "C92",
+      "C94",
+      "C95",
+      "C122",
+      "C123",
+      "C125",
+      "C126",
+      "C127",
+      "C128"
+    ],
+    "result": "Autophagy activation in Stk11-deficient mice prevents p53-mediated apoptosis to temporarily extend survival, as demonstrated by p53 deletion rescuing Atg7-/-;Stk11-/- but not Stk11-/- mice.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90-C91 and C125-C126 are supported by survival data (Figure 4c) showing Trp53 deletion rescues Atg7-/-;Stk11-/- but not Stk11-/- mice. Supporting evidence includes increased nuclear p53 and downstream targets (C122-C123, Figure 4a-b), increased apoptosis in Atg7-/-;Stk11-/- intestine (C94, Figure 3e-f), and rescue of apoptosis by p53 deletion (C95, C127, Figure 4d-e). The mechanistic link between autophagy and p53 inhibition is well-established (C121).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C6",
+      "C38",
+      "C39",
+      "C40",
+      "C98",
+      "C100",
+      "C101",
+      "C142",
+      "C153",
+      "C172",
+      "C173"
+    ],
+    "result": "Acute deletion of Lkb1 or Atg7 causes hypoglycemia and depletion of serum amino acids and metabolites involved in TCA cycle, urea cycle, and glycolysis, with effects enhanced by concurrent deletion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C38-C40, C98, C100-C101, and C172-C173 are supported by comprehensive metabolomics data (Figure 5) showing decreased amino acids, TCA cycle intermediates, urea cycle metabolites, and glycolysis intermediates, along with reduced blood glucose and insulin levels. The observation that TCA cycle intermediates are reduced only in Atg7-deficient mice (C171) adds specificity. The consistency between serum and intestinal metabolomics (C102, C129) supports systemic effects (C103).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C7",
+      "C102",
+      "C103",
+      "C104",
+      "C130",
+      "C132",
+      "C154"
+    ],
+    "result": "Both Lkb1 and autophagy are essential for maintaining systemic metabolic homeostasis in adult mice, with impaired homeostasis contributing to mouse death.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C104, C130, and C132 are supported by the comprehensive metabolomics data (Figure 5) showing widespread metabolic dysfunction. The consistency between serum and intestinal metabolomics (C102) supports the interpretation of systemic rather than tissue-specific effects (C103). The conclusion that impaired homeostasis contributes to death (C154) is reasonable given the severity and breadth of metabolic alterations, though causality is not definitively established.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C41",
+      "C97",
+      "C133"
+    ],
+    "result": "Autophagy and Lkb1 work synergistically to maintain adult mouse homeostasis, with autophagy upregulation partially rescuing Lkb1 loss-induced defects via p53 inhibition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C9, C41, C97, and C133 represent integrative conclusions supported by multiple lines of evidence: survival extension (Figure 2a), intestinal barrier protection (Figure 3g), p53-mediated apoptosis prevention (Figure 4), and metabolic support (Figure 5). The mechanistic link through p53 inhibition is demonstrated by genetic rescue experiments. However, the partial nature of rescue and failure to restore full homeostasis (C105-C106) appropriately qualifies these conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "Tamoxifen-inducible Cre recombinase system produces near-complete deletion of Atg7 and Lkb1 proteins in all tissues of adult mice, with p62 accumulation confirming autophagy blockade.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C43 are supported by western blot data (Figure 1b) showing loss of Atg7 and Lkb1 proteins across multiple tissues. Claim C44 is supported by IHC data (Figure 1c) showing p62 accumulation in Atg7-ablated tissues. The interpretation that p62 accumulation indicates autophagy blockade (C45) is based on established knowledge and is appropriate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "Systemic Atg7 ablation leads to extensive tissue damage and limits mouse survival to 2.5 months, consistent with previous reports.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C28 and C56-C57 are supported by survival data (Figure 2a) and citations to previous literature (Karsli-Uzunbas et al., 2014). The consistency with prior work (C58) strengthens confidence in the experimental system. However, this result primarily validates the model rather than providing novel findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C61",
+      "C62"
+    ],
+    "result": "Body weight loss occurs in Stk11-/- mice at 10 days post-tamoxifen injection and is exacerbated by concurrent Atg7 deletion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C62 are supported by body weight measurements (Figure 2b) showing significant weight loss in Stk11-/- mice that worsens in Atg7-/-;Stk11-/- mice. While this provides additional phenotypic characterization, it is a secondary observation supporting the broader metabolic dysfunction.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C152"
+    ],
+    "result": "Blood cell counts show no differences among WT, Atg7-/-, and Stk11-/- mice, but platelet count is elevated in Atg7-/-;Stk11-/- mice.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C65 and C152 are supported by blood count data (Figure 2\u2014figure supplement 1). This finding distinguishes the systemic deletion phenotype from hematopoietic-specific Stk11 deletion (C63, C151) and suggests death is not due to pancytopenia. However, the elevated platelet count in double mutants lacks mechanistic explanation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C66",
+      "C67"
+    ],
+    "result": "After 10 days of gene deletion, most tissues show no visible damage by H&E staining except the intestine.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C67 are supported by H&E staining data (Figure 3\u2014figure supplement 1a and Figure 3a). This observation focuses attention on the intestine as a critical site of pathology, though it does not exclude functional defects in other tissues revealed by metabolomics.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C71",
+      "C167"
+    ],
+    "result": "Decreased lysozyme and OLFM4 staining indicates reduced and undifferentiated Paneth cells and intestinal stem cells in Stk11-/- and Atg7-/-;Stk11-/- mice.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71 and C167 are supported by IHC data (Figure 3c-d) showing decreased lysozyme and OLFM4 staining. These findings provide cellular-level detail about intestinal pathology but are descriptive rather than mechanistic.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C72"
+    ],
+    "result": "LC3-II puncta are observed in the intestine of Stk11-/- mice, consistent with autophagy induction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C72 is supported by IHC data (Figure 3\u2014figure supplement 1c) showing LC3-II puncta in Stk11-/- intestine. This provides tissue-specific confirmation of autophagy upregulation but is redundant with systemic evidence from Figure 1.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C96",
+      "C157"
+    ],
+    "result": "Cell proliferation rates in intestinal crypts show no significant differences among genotypes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96 and C157 are supported by Ki67 staining data (Figure 3\u2014figure supplement 1d). This negative result helps establish that intestinal pathology is due to increased apoptosis rather than decreased proliferation, supporting the mechanistic interpretation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C113"
+    ],
+    "result": "Upregulated autophagy by acute Stk11 deletion is required for maintenance of intestinal epithelium barrier.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C113 is an interpretation based on FITC-dextran permeability data (Figure 3g) showing that Atg7 deletion worsens barrier function in Stk11-/- mice while Atg7 deletion alone has no effect. This interpretation is logical but represents a synthesis of observations rather than direct experimental evidence.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "Background claims establish the known roles of LKB1/STK11 and autophagy in cellular metabolism, stress response, and disease.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2 and C10-C26 represent established knowledge from prior literature, appropriately cited. These provide necessary context for the study but are not novel findings. The accuracy of these background claims depends on the cited literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C134",
+      "C135"
+    ],
+    "result": "AMPK can be activated by CaMKK and TAK1 in addition to Lkb1, leading to autophagy activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C47 and C134-C135 are supported by citations to previous literature. This background knowledge is essential for interpreting the observation of AMPK activation in Lkb1-deficient mice but represents prior work rather than novel findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C68",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C155"
+    ],
+    "result": "The intestinal phenotype in systemic Stk11-/- mice recapitulates findings from tissue-specific deletions reported in prior literature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68, C73-C76, and C155 compare current findings to previous literature on tissue-specific Stk11 deletions. The consistency with prior work validates the model but does not constitute a novel finding. The citations provide appropriate context.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C88",
+      "C89",
+      "C93",
+      "C121",
+      "C160",
+      "C161",
+      "C162",
+      "C163",
+      "C164",
+      "C168",
+      "C169",
+      "C170"
+    ],
+    "result": "Background claims establish the roles of goblet cells, Paneth cells, autophagy, and p53 in intestinal homeostasis and barrier function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C79, C81-C84, C88-C89, C93, C121, and C160-C170 represent established knowledge from prior literature, appropriately cited. These provide mechanistic context for interpreting the experimental findings but are not novel results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C99",
+      "C107",
+      "C108",
+      "C138",
+      "C140",
+      "C141",
+      "C143",
+      "C145",
+      "C147",
+      "C148",
+      "C150",
+      "C151"
+    ],
+    "result": "Background claims establish the roles of Lkb1 in metabolism, mTORC1 regulation, and development, and compare tissue-specific deletion phenotypes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C99, C107-C108, C138, C140-C141, C143, C145, and C147-C151 represent established knowledge from prior literature, appropriately cited. These provide context for interpreting metabolic findings and comparing phenotypes but are not novel results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C106",
+      "C109",
+      "C144",
+      "C146"
+    ],
+    "result": "Interpretive claims suggest Lkb1 has autophagy-independent functions and that systemic metabolic collapse contributes to mTORC1 inactivation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C106, C109, C144, and C146 represent interpretations and hypotheses rather than directly demonstrated findings. While C106 is supported by survival data showing p53 deletion does not rescue Stk11-/- mice, the mechanistic claims about autophagy-independent functions (C109) and metabolic collapse causing mTORC1 inactivation (C144, C146) are plausible but not definitively proven. These require additional experiments to validate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C87",
+      "C116",
+      "C120",
+      "C124",
+      "C165"
+    ],
+    "result": "Interpretive claims propose mechanisms for Stk11-/- mouse death and autophagy's protective role.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C87, C116, C120, C124, and C165 represent hypotheses and interpretations based on experimental data. While supported by circumstantial evidence (metabolomics, D-lyxose levels, antibiotic rescue), these mechanistic claims are not definitively proven. The distinction between systemic catastrophe and infection (C87) and the proposed mechanisms (C120, C124) require additional validation.",
+    "result_type": "MINOR"
+  }
+]

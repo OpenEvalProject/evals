@@ -1,0 +1,427 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4"
+    ],
+    "result": "Twenty healthy right-handed participants (13 females; mean age: 28 years; age range: 20\u201346) with normal or corrected-to-normal vision and no history of neurological or psychiatric disease participated in the study. The experiment was approved by the ethics committee at RHUL (REF 2015/088), and all but one participant were na\u00efve to the study purpose.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1\u2013C4 provide standard methodological details about participant characteristics, inclusion criteria, ethics approval, and blinding. These are explicitly stated and represent appropriate experimental design for an fMRI study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C107"
+    ],
+    "result": "Participants showed significant inter-observer correlations in their behavioral arrangements of actions across all models (semantic: 0.61, body: 0.57, scene: 0.63, movement: 0.47, object: 0.51; all p<0.0001, FDR corrected), indicating that participants' arrangements were reliable and based on comparable principles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17, C18, and C107 report significant inter-observer correlations with specific correlation coefficients and statistical significance. The inference that arrangements were reliable is justified by the significant correlations, though the correlation values are moderate, suggesting some individual variability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21",
+      "C39"
+    ],
+    "result": "Behavioral analysis revealed six optimal clusters of actions (locomotion, social/communicative, leisure-related, food-related, and cleaning-related) organized along three principal components that together explained approximately 78% of the observed variance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19\u2013C21 and C39 describe the results of K-means clustering and PCA analyses. The Silhouette analysis (C19) provides objective justification for six clusters, and the PCA results (C39) are explicitly stated. The cluster labels (C21) are descriptive interpretations of the data patterns.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "The three principal components underlying action organization appear to reflect: (1) type of change induced by the action (location vs. physical/mental state), (2) fulfillment of basic versus higher-order needs (similar to Maslow's hierarchy), and (3) degree of social directedness toward another person.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C40\u2013C43 provide post-hoc interpretations of the principal components. While the authors acknowledge that PCA and K-means do not provide objective labels (C40), these interpretations are speculative and not empirically validated. The comparison to Maslow's hierarchy (C42) is interesting but remains a conjecture without independent validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C22",
+      "C48"
+    ],
+    "result": "Standard RSA using the semantic model revealed significant clusters in bilateral LOTC extending into inferior temporal cortex, bilateral posterior intraparietal sulcus (pIPS), and bilateral inferior frontal gyrus/ventral premotor cortex, corresponding to the action observation network.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22 and C48 report the results of standard RSA with appropriate statistical correction (cluster-based permutation analysis with 5000 iterations, p<0.001). The identified regions are consistent with the cited action observation network literature (C48).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C49",
+      "C38"
+    ],
+    "result": "Multiple regression RSA revealed that the semantic model explained significant variance over and above six action component models and three control models specifically in the left anterior LOTC at the junction to the posterior middle temporal gyrus. All models except sociality and scene revealed significant clusters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23, C24, C49, and C38 report the key finding from multiple regression RSA. The analysis appropriately controls for multiple predictors, with VIF values indicating low multicollinearity risk (C127). The statistical approach is sound, using cluster-based permutation correction. This represents the primary novel contribution of the study.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "Multiple regression RSA for individual action component models revealed distinct anatomical patterns: body model in left angular gyrus and right pMTG (more dorsal than EBA), movement model in left SPL and inferior occipital gyrus, object model in right IPS1 and left fusiform gyrus, transitivity model in left inferior occipital gyrus, and HMAX-C1 model in calcarine cortex and occipital regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25\u2013C30 describe the anatomical locations of clusters for different models in the multiple regression RSA. The comparison to EBA (C26) is supported by Figure 6\u2014figure supplement 2. These results demonstrate that different action components are represented in partially overlapping but distinct brain regions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "The RSA results are unlikely to be due to low-level image features, as the study introduced substantial perceptual variability across exemplars (varying actor, viewpoint, scene, and object) and included three control models (distance, 1 vs 2 people, HMAX-C1) in the multiple regression analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31\u2013C33 describe important experimental controls. The stimulus design (C32) appropriately varied low-level features, and the inclusion of control models (C33) in the multiple regression analysis provides statistical control. The HMAX-C1 model revealed distinct clusters from the semantic model (C30), supporting the claim that semantic effects are not driven by low-level features.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "In the left LOTC cluster, the semantic model showed the highest correlation with neural RDMs (0.0645), though correlations were generally low. The neural organization resembled the behavioral semantic clustering, as visualized by MDS and hierarchical clustering.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34\u2013C36 describe ROI-based analyses of the LOTC cluster. The low correlation values (C35) are acknowledged and contextualized with citations to similar findings in other studies. The qualitative similarity between neural and behavioral organization (C36) is supported by visual inspection of Figures 3 and 8C, though quantitative measures of this similarity are not provided.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7",
+      "C37",
+      "C67"
+    ],
+    "result": "The semantic dissimilarity structure of observed actions was best captured by patterns of activation in the left LOTC, and the organization of observed actions in the LOTC resembles the organizing principles used by participants to classify actions behaviorally, supporting the view that LOTC is crucial for accessing the meaning of actions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5\u2013C7, C37, and C67 represent the main conclusions of the study. These are supported by the convergence of behavioral (inverse MDS) and neural (multiple regression RSA) findings. However, the claim that LOTC is 'crucial' (C7, C67) is stronger than the data warrant\u2014the study shows correlation, not causation. The study demonstrates that LOTC represents semantic information, but does not establish necessity through lesion or disruption studies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C55",
+      "C60",
+      "C61"
+    ],
+    "result": "The LOTC captures semantic aspects of actions at higher-order visual levels, while anterior portions might capture stimulus-independent or verbal representations. The LOTC hosts a variety of different, partially overlapping representations of action components that are likely integrated flexibly according to task demands, organized along dimensions including input modality, person presence/orientation, and action directedness.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C55, C60, and C61 provide theoretical interpretations of the findings. While these interpretations are consistent with the data and cited literature, they go beyond what the current study directly demonstrates. The distinction between posterior and anterior LOTC (C55) is based on comparisons to other studies rather than direct evidence from this study. The claim about flexible integration (C60) is plausible but speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "The transitivity model results were consistent with previous studies, but the study failed to obtain reliable results for the sociality model, likely because only a small number of actions were directed toward another person and these co-varied with the 1 vs 2 people model.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57\u2013C59 acknowledge a negative result (C58) and provide a reasonable explanation (C59). The authors appropriately note that the study was not designed to test the sociality model, and the confound with the 1 vs 2 people model is a valid limitation. This represents appropriate scientific reporting of null findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C62"
+    ],
+    "result": "The results obtained in the IPL and precentral gyrus for the semantic model in standard RSA were likely due to some combination of the models accounted for in the multiple regression RSA, as no individual model alone revealed clusters in these regions that survived correction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C62 provides a reasonable interpretation of the difference between standard and multiple regression RSA results. This inference is supported by the observation that standard RSA showed broader activation (C22) while multiple regression RSA showed only LOTC activation (C23), suggesting that the broader activation was explained by the component models.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "The action categories revealed in this study (locomotion, communicative actions, food-related actions, cleaning-related actions) show similarities to semantic fields proposed in linguistic research (e.g., Levin 1993: change of location, communication, cooking, change of state), though action categories revealed by visual stimuli may differ from those revealed by language.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44\u2013C47 appropriately contextualize the findings within linguistic research on verb semantics. The comparison to Levin's semantic fields (C46) is reasonable, and the acknowledgment that visual and linguistic categories may differ (C47) is appropriately cautious. These claims represent appropriate discussion of the findings in relation to prior work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "Previous studies have shown that LOTC can discriminate between actions generalizing across objects and kinematics. Studies using verbal stimuli or cross-modal tasks recruit anterior left LOTC, while studies using static pictures or videos recruit LOTC bilaterally and more posteriorly. Actions can be decoded across stimulus formats in posterior LOTC.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50\u2013C54 summarize relevant prior literature with appropriate citations. These claims provide important context for interpreting the current findings, particularly regarding the anatomical location of the semantic cluster (posterior LOTC) and the use of static images. The citations support the claims made.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "Similar to the object domain, where LOTC represents similarity structure and animate/inanimate distinctions have special status due to evolutionary pressures, similar evolutionary mechanisms might have produced distinctions between action categories like locomotion, food-related actions, and communicative actions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C63\u2013C65 appropriately cite prior work on object categorization. However, C66 is speculative\u2014the authors 'conjecture' that evolutionary mechanisms might explain action categorization, but provide no direct evidence for this claim. This is clearly marked as speculation in the text, which is appropriate, but the claim itself remains unsubstantiated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "The study used a rigorous stimulus selection procedure involving online surveys (36 participants identifying common actions, 20% threshold), pilot inverse MDS experiments (N=15, repeated with independent images), cosine distance analysis to select consistent actions, and creation of 12 exemplars per action varying actor, scene, and viewpoint. Static images were used instead of videos to avoid kinematic confounds and suit the inverse MDS task.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68\u2013C78 describe the stimulus selection and creation procedures. The multi-stage validation process (online survey, pilot experiments, cosine distance analysis, final validation) is thorough and appropriate. The rationale for using static images (C78) is clearly stated, though this choice has limitations for capturing dynamic action components, which the authors acknowledge in the discussion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "The fMRI experiment consisted of twelve functional runs with 56 experimental trials and 18 null events per run, presenting each action 24 times across the experiment. Trials consisted of 1s image presentation followed by 3s fixation. Seven catch trials per run (4.41%) required participants to detect action repetitions to ensure attention.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79\u2013C87 describe the fMRI experimental design. The design is appropriate with adequate repetitions (24 per action), proper randomization, null events for design efficiency, and attention checks via catch trials. The quasi-balanced design across actors and scenes is acknowledged as a limitation but is reasonable given the constraints.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "Functional data were acquired using a Siemens TIM Trio 3T scanner with T2*-weighted gradient EPI sequence (TR=2.5s, TE=30ms, flip angle=85\u00b0, 3\u00d73\u00d73mm voxels, 37 slices, 142 volumes per run). Structural data were acquired using T1*-weighted MPRAGE sequence (1\u00d71\u00d71mm voxels).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88\u2013C92 provide standard MRI acquisition parameters. These are appropriate for an fMRI study and are reported with sufficient detail for replication. The parameters are typical for action observation studies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "Anatomical data were segmented using FreeSurfer, and functional data were preprocessed using SPM12 (slice-time correction, realignment, coregistration). Analyses were conducted in individual volume space using FreeSurfer surfaces as constraints for searchlight selection (CoSMoMVPA), then resampled to HCP FS_LR 32k common space. Multivariate analyses used unsmoothed data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93\u2013C99 describe appropriate preprocessing and analysis procedures. The use of surface-constrained searchlights (C97) is a strength, as it respects cortical anatomy. The use of unsmoothed data (C99) is appropriate for multivariate analyses. Software versions and citations are provided.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "Following the fMRI experiment, participants completed inverse MDS tasks for five dimensions (meaning, body parts, scene, movement, object) in counterbalanced order. PCA and K-means clustering (with Silhouette method for optimal cluster number) were used to characterize the structure. Individual dissimilarity matrices were used as models for multiple regression RSA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C100\u2013C106 describe the behavioral experiment and analysis procedures. The counterbalancing (C102) controls for order effects. The use of Silhouette analysis (C105) provides objective justification for cluster number. The integration of behavioral and neural data (C106) is a key strength of the study design.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C108",
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "Additional models were constructed using separate online experiments: sociality and transitivity models from Likert scale ratings (N=20), distance model from distance judgments (N=20), 1 vs 2 people model from binary coding, and HMAX-C1 model from C1 representations of stimulus images.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C108\u2013C111 describe the construction of additional predictor models. The use of separate participant groups for ratings (C108, C109) is appropriate to avoid circularity. The HMAX-C1 model (C111) provides a computational control for low-level visual features. The methods are clearly described with appropriate citations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C112",
+      "C113",
+      "C127"
+    ],
+    "result": "There are modest correlations between different models, but Variance Inflation Factors were relatively small (range: 1.06\u20131.63), indicating low risk of multicollinearity and justifying the use of multiple regression RSA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C112, C113, and C127 address an important concern about multicollinearity in the multiple regression analysis. The VIF values are reported and are well below the typical threshold of concern (VIF>5 or 10), supporting the validity of the multiple regression approach. This represents appropriate statistical validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122"
+    ],
+    "result": "Searchlight RSA used 100-feature searchlights (~12mm radius) with custom Matlab functions and CoSMoMVPA. The design matrix included 28 action predictors plus nuisance regressors, yielding 28 beta maps per participant. For standard RSA, betas were averaged across runs, neural RDMs computed using squared Euclidean distance, correlated with model RDMs, Fisher transformed, and tested against zero using one-tailed t-tests with cluster-based permutation correction (5000 iterations, p<0.001).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C114\u2013C122 describe the RSA analysis procedures in detail. The searchlight size (C114) is appropriate. The use of squared Euclidean distance (C119) is justified for comparison with multiple regression RSA. The statistical correction (C122) is appropriate and well-powered (5000 iterations). Code availability (C115) supports reproducibility.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C128"
+    ],
+    "result": "For multiple regression RSA, beta patterns were normalized across images and averaged across runs, then normalized across features before computing neural RDMs using squared Euclidean distance (which sums linearly). Individual beta maps for each predictor were tested against zero at the group level.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C123\u2013C126 and C128 describe the multiple regression RSA procedure. The normalization steps (C123, C124) are appropriate. The use of squared Euclidean distance (C125, C126) is justified by the linear summation property, which is important for multiple regression. The procedure follows established methods (Bonner & Epstein 2018, cited in C125).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "Prior research has established a fronto-parietal network for action control and recognition with dorsal stream preferences for reaching/grasping, but less is known about complex actions. Higher-level semantic categories often covary with basic action components (body parts, movements, objects). Previous MVPA studies showed that LOTC, IPL, and PMv can distinguish between actions, with LOTC containing action-related object properties and LOTC/IPL (but not PMv) generalizing across action performance, suggesting representation of action meaning.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8\u2013C16 appropriately summarize prior literature with citations. These claims establish the background and motivation for the current study. The observation that semantic categories covary with action components (C10) is important context for the multiple regression approach used in this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C56"
+    ],
+    "result": "LOTC has been shown to be sensitive to categorical action distinctions, such as whether actions are directed towards persons or objects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C56 cites prior work (Wurm et al., 2017) supporting this statement. This provides context for the transitivity and sociality models used in the current study.",
+    "result_type": "MINOR"
+  }
+]

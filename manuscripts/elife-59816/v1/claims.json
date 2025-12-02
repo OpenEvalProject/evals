@@ -1,0 +1,1834 @@
+[
+  {
+    "claim_id": "C1",
+    "claim": "Electrophysiological recordings were performed in the retrosplenial cortex (RSC) of rats as they explored a squared open field arena and foraged for scattered chocolate pellets.",
+    "claim_type": "EXPLICIT",
+    "source": "We performed electrophysiological recordings of neuronal activity in RSC (Figure 1A, Figure 1\u2014figure supplement 1) of rats as they explored a squared open field arena and foraged for scattered chocolate pellets (Figure 1B).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript directly describes the experimental procedure performed.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C2",
+    "claim": "A total of 5415 RSC neurons were recorded across eight animals in 82 sessions.",
+    "claim_type": "EXPLICIT",
+    "source": "We recorded the activity of 5415 RSC neurons across eight animals (n = 82 sessions) and observed a subpopulation of cells that fired consistently at the edge of the arena (Figure 1C).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript provides specific numbers from the experimental data collection.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C3",
+    "claim": "A subpopulation of RSC cells fired consistently at the edge of the arena.",
+    "claim_type": "EXPLICIT",
+    "source": "We recorded the activity of 5415 RSC neurons across eight animals (n = 82 sessions) and observed a subpopulation of cells that fired consistently at the edge of the arena (Figure 1C).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript describes an observed firing pattern in the recorded neurons.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C4",
+    "claim": "RSC border cells exhibited a variety of preferred firing distances from the wall, ranging from very near proximity up to 15-18 cm away.",
+    "claim_type": "EXPLICIT",
+    "source": "Across this subgroup, there was a variety of preferred firing distances from the wall, ranging from very near proximity up to a body-length (15\u201318 cm) away.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript describes the range of firing distances observed in the data.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C5",
+    "claim": "RSC border cells fire throughout the environment on each of the four available walls, unlike traditional border cells found in MEC and subiculum.",
+    "claim_type": "EXPLICIT",
+    "source": "Unlike traditional border cells found in MEC and subiculum (Solstad et al., 2008; Stewart et al., 2014), these border responses occurred throughout the environment on each of the four available walls.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript compares the observed RSC border cells to previously reported border cells in other brain regions.",
+    "evidence_type": [
+      "DATA",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C6",
+    "claim": "RSC border cells form multiple firing fields that are not necessarily directly connected to the wall.",
+    "claim_type": "EXPLICIT",
+    "source": "RSC border cells furthermore form multiple firing fields that are not necessarily directly connected to the wall.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript describes a characteristic of the observed firing patterns.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C7",
+    "claim": "The original border score identified only a small fraction of border cells in RSC because it is based on the occupancy of a single firing field along a wall and is strongly biased to connected bins.",
+    "claim_type": "EXPLICIT",
+    "source": "Typical border cell classification using the original border score (Solstad et al., 2008) identified only a small fraction of border cells in RSC, as this score is based on the occupancy of a single firing field along a wall and is strongly biased to connected bins (Figure 1\u2014figure supplement 2A\u2013C).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "The manuscript explains why the traditional classification method was inadequate for RSC border cells, referencing both the original method and supplementary figure data.",
+    "evidence_type": [
+      "DATA",
+      "CITATION",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C8",
+    "claim": "A new model-based approach using a template-matching procedure was developed to classify border cells in RSC.",
+    "claim_type": "EXPLICIT",
+    "source": "We thus developed a new model-based approach using a template-matching procedure to classify these border cells in RSC (Figure 1D\u2013F), based on Grossberger et al., 2018.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "The manuscript describes the development of a new classification method.",
+    "evidence_type": [
+      "DATA",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C9",
+    "claim": "The Earth Mover's Distance (EMD) is a normalized score calculated as the minimum cost required to match a cell's firing rate map with the template distribution by moving firing rate units.",
+    "claim_type": "EXPLICIT",
+    "source": "The EMD is a normalized score, calculated as the minimum cost required to match a cell's firing rate map with the template distribution by moving firing rate units, also known as the Wasserstein distance.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript defines the EMD metric used in the analysis.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C10",
+    "claim": "The EMD metric is sensitive to changes in the geometric shape of rate maps but robust to small variations of preferred firing distances or pixel-by-pixel jittering.",
+    "claim_type": "EXPLICIT",
+    "source": "While this metric is sensitive to a change in the geometric shape of rate maps, it is robust to small variations of preferred firing distances or pixel-by-pixel jittering, giving a single metric that can quantitatively assess changes in the cell's spatial tuning as a function of experimental manipulations, such as reshaping of the maze or adding an object or wall.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript describes the properties of the EMD metric.",
+    "evidence_type": [
+      "KNOWLEDGE",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C11",
+    "claim": "Border cells were defined as cells with an EMD score below the 1st percentile of a spike-shuffled null distribution of 0.191 and an average firing rate above 0.5 Hz.",
+    "claim_type": "EXPLICIT",
+    "source": "Border cells were defined as cells with a low dissimilarity EMD score below the 1st percentile of a spike-shuffled null distribution of 0.191, and an average firing rate (FR) above 0.5 Hz.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript provides the specific criteria used for border cell classification.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C12",
+    "claim": "485 out of 5415 RSC cells (9.0%) passed the border cell classification criteria.",
+    "claim_type": "EXPLICIT",
+    "source": "In total, 485 out of 5415 RSC cells (9.0%) passed this criterion (Figure 1E,F, Figure 1\u2014figure supplement 2G), where neurons showed no relationship between their overall spiking rate and associated EMD score (Pearson's correlation: r = 0.037, p=0.42; Figure 1\u2014figure supplement 2D).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "The manuscript reports the proportion of cells classified as border cells.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C13",
+    "claim": "There was no relationship between neurons' overall spiking rate and associated EMD score (Pearson's correlation: r = 0.037, p=0.42).",
+    "claim_type": "EXPLICIT",
+    "source": "In total, 485 out of 5415 RSC cells (9.0%) passed this criterion (Figure 1E,F, Figure 1\u2014figure supplement 2G), where neurons showed no relationship between their overall spiking rate and associated EMD score (Pearson's correlation: r = 0.037, p=0.42; Figure 1\u2014figure supplement 2D).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "The manuscript reports a statistical test result showing no correlation.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C14",
+    "claim": "Selected border cells had a similar distribution of average firing rates compared to other recorded cells (border cells: FR = 2.97 \u00b1 0.20 Hz, others: FR = 3.25 \u00b1 0.07 Hz; Wilcoxon ranksum test: z = 0.057, p=0.955).",
+    "claim_type": "EXPLICIT",
+    "source": "Selected border cells had a similar distribution of average firing rates compared to other recorded cells (border cells: FR = 2.97 \u00b1 0.20 Hz, others: FR = 3.25 \u00b1 0.07 Hz; Wilcoxon ranksum test: z = 0.057, p=0.955; Figure 1G), but had significantly higher spatial correlations between the first and last recording sessions (border cells: r = 0.52 \u00b1 0.008, others: r = 0.20 \u00b1 0.003; Wilcoxon ranksum test: z = \u221224.50, p=1.60 \u00d7 10\u2212132; Figure 1H).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "The manuscript reports statistical comparison of firing rates between border cells and other cells.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C15",
+    "claim": "Border cells had significantly higher spatial correlations between the first and last recording sessions compared to other cells (border cells: r = 0.52 \u00b1 0.008, others: r = 0.20 \u00b1 0.003; Wilcoxon ranksum test: z = \u221224.50, p=1.60 \u00d7 10\u2212132).",
+    "claim_type": "EXPLICIT",
+    "source": "Selected border cells had a similar distribution of average firing rates compared to other recorded cells (border cells: FR = 2.97 \u00b1 0.20 Hz, others: FR = 3.25 \u00b1 0.07 Hz; Wilcoxon ranksum test: z = 0.057, p=0.955; Figure 1G), but had significantly higher spatial correlations between the first and last recording sessions (border cells: r = 0.52 \u00b1 0.008, others: r = 0.20 \u00b1 0.003; Wilcoxon ranksum test: z = \u221224.50, p=1.60 \u00d7 10\u2212132; Figure 1H).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "The manuscript reports statistical comparison of spatial correlations between border cells and other cells.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C16",
+    "claim": "Border cells were recorded across the granular and dysgranular regions of the RSC.",
+    "claim_type": "EXPLICIT",
+    "source": "Border cells were recorded across the granular and dysgranular regions of the RSC, and had waveform properties similar to other cells recorded on the same tetrodes (Figure 1\u2014figure supplement 3A,B,D,E).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "The manuscript describes the anatomical locations where border cells were found.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C17",
+    "claim": "Border cells had waveform properties similar to other cells recorded on the same tetrodes.",
+    "claim_type": "EXPLICIT",
+    "source": "Border cells were recorded across the granular and dysgranular regions of the RSC, and had waveform properties similar to other cells recorded on the same tetrodes (Figure 1\u2014figure supplement 3A,B,D,E).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "The manuscript reports a comparison of electrophysiological properties.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C18",
+    "claim": "Border cells showed activity already from the beginning of the session and did not need time for adaptation in a novel arena and experimental room.",
+    "claim_type": "EXPLICIT",
+    "source": "Border cells showed activity already from the beginning of the session and did not need time for adaptation in a novel arena and experimental room (first-half familiar session, FR = 1.98 \u00b1 0.42 Hz; first-half novel session, FR = 2.30 \u00b1 0.53 Hz, p=0.56; second half novel session, FR = 1.71 \u00b1 0.54 Hz, p=0.68; Wilcoxon signed-rank test; n = 14 border cells; Figure 1\u2014figure supplement 4D\u2013G).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "The manuscript reports data from novel environment experiments showing immediate border cell activity.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C19",
+    "claim": "Firing of RSC border cells was modulated by the running speed of the animal, with lower firing rates in the low-speed range (p<0.05 in the range of 0\u201312 cm/s).",
+    "claim_type": "EXPLICIT",
+    "source": "While firing of RSC border cells was additionally modulated by the running speed of the animal, with lower firing rates in the low-speed range (p<0.05 in the range of 0\u201312 cm/s; Wilcoxon ranksum test; Figure 1\u2014figure supplement 3G), this modulation could not account for the cell's spatial tuning, as the animal's average speed was uniform across space and unrelated to the distance to any boundary (non-significant in the range of 5\u201345 cm; Wilcoxon ranksum test against overall median; Bonferroni-corrected \u03b1 = 0.005; Figure 1\u2014figure supplement 3F,H).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "The manuscript reports statistical analysis of speed modulation of border cell firing.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C20",
+    "claim": "Speed modulation could not account for the cell's spatial tuning because the animal's average speed was uniform across space and unrelated to the distance to any boundary.",
+    "claim_type": "EXPLICIT",
+    "source": "While firing of RSC border cells was additionally modulated by the running speed of the animal, with lower firing rates in the low-speed range (p<0.05 in the range of 0\u201312 cm/s; Wilcoxon ranksum test; Figure 1\u2014figure supplement 3G), this modulation could not account for the cell's spatial tuning, as the animal's average speed was uniform across space and unrelated to the distance to any boundary (non-significant in the range of 5\u201345 cm; Wilcoxon ranksum test against overall median; Bonferroni-corrected \u03b1 = 0.005; Figure 1\u2014figure supplement 3F,H).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "The manuscript provides statistical evidence that speed does not explain spatial tuning.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C21",
+    "claim": "Running speed and wall-distance are two independent factors that explain the activity of RSC cells.",
+    "claim_type": "EXPLICIT",
+    "source": "Applying an unbiased classification approach based on linear-nonlinear models (Hardcastle et al., 2017) showed that running speed and wall-distance are two independent factors that explain the activity of RSC cells, confirming that RSC border and speed tuning are separately expressed features (Figure 1\u2014figure supplement 3C).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "The manuscript reports results from a linear-nonlinear model analysis.",
+    "evidence_type": [
+      "DATA",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C22",
+    "claim": "Border cells formed new firing fields around added walls, with firing rate inside a region-of-interest around the wall increasing significantly in the added wall sessions (Regular: FR = 1.19 \u00b1 0.13 Hz; Added wall: FR = 1.58 \u00b1 0.21 Hz; Wilcoxon signed-rank test: z = \u22122.67, p=0.0076; n = 42 border cells).",
+    "claim_type": "EXPLICIT",
+    "source": "Border cells formed new firing fields around the added walls accordingly, as their firing rate inside a region-of-interest (ROI; 15 \u00d7 5 spatial bins) around the wall increased significantly in the added wall sessions (Regular: FR = 1.19 \u00b1 0.13 Hz; Added wall: FR = 1.58 \u00b1 0.21 Hz; Wilcoxon signed-rank test: z = \u22122.67, p=0.0076; n = 42 border cells; Figure 2C).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "The manuscript reports statistical analysis of firing rate changes when walls were added.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C23",
+    "claim": "Spatial correlations between rate maps dropped sharply when comparing regular versus added wall sessions (Reg-Reg: r = 0.51 \u00b1 0.04, Reg-Wall: r = 0.25 \u00b1 0.04; Wilcoxon signed-rank test: z = 4.43, p=9.31 \u00d7 10\u22126).",
+    "claim_type": "EXPLICIT",
+    "source": "This was accompanied by a sharp drop in spatial correlations between rate maps of regular versus added wall sessions (Reg-Reg: r = 0.51 \u00b1 0.04, Reg-Wall: r = 0.25 \u00b1 0.04; Wilcoxon signed-rank test: z = 4.43, p=9.31 \u00d7 10\u22126; Bonferroni-corrected \u03b1 = 0.025; Figure 2D), while correlations remained high when comparing within session types (Wall-Wall: r = 0.47 \u00b1 0.03; Wilcoxon signed-rank test with Reg-Reg correlation: z = 0.63, p=0.53; Bonferroni-corrected \u03b1 = 0.025; Figure 2D).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "The manuscript reports statistical analysis of spatial correlations across different session types.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C24",
+    "claim": "Correlations remained high when comparing within session types (Wall-Wall: r = 0.47 \u00b1 0.03; Wilcoxon signed-rank test with Reg-Reg correlation: z = 0.63, p=0.53).",
+    "claim_type": "EXPLICIT",
+    "source": "This was accompanied by a sharp drop in spatial correlations between rate maps of regular versus added wall sessions (Reg-Reg: r = 0.51 \u00b1 0.04, Reg-Wall: r = 0.25 \u00b1 0.04; Wilcoxon signed-rank test: z = 4.43, p=9.31 \u00d7 10\u22126; Bonferroni-corrected \u03b1 = 0.025; Figure 2D), while correlations remained high when comparing within session types (Wall-Wall: r = 0.47 \u00b1 0.03; Wilcoxon signed-rank test with Reg-Reg correlation: z = 0.63, p=0.53; Bonferroni-corrected \u03b1 = 0.025; Figure 2D).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "The manuscript reports statistical analysis showing stable correlations within session types.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C25",
+    "claim": "The EMD metric showed a significant increase in dissimilarity between rate maps of added wall sessions and the original boundary template.",
+    "claim_type": "EXPLICIT",
+    "source": "The EMD metric furthermore showed a significant increase in dissimilarity between rate maps of these added wall sessions and the original boundary template (Normalized boundary EMD score: R1, 1.0 \u00b1 0, W1, 1.178 \u00b1 0.03, W2, 1.223 \u00b1 0.03, R2, 1.016 \u00b1 0.01; Friedman test: X2(3)=77.9, p=8.6 \u00d7 10\u221217; Post-hoc Wilcoxon signed-rank test: R1-W1, z = \u22125.35, p=9.0 \u00d7 10\u22128, R1-W2, z = \u22125.58, p=2.37 \u00d7 10\u22128, R1-R2, z = \u22121.27, p=0.20; Bonferroni-corrected \u03b1 = 0.017; Figure 2E).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "The manuscript reports statistical analysis of EMD scores with the boundary template.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C26",
+    "claim": "The dissimilarity between rate maps and an 'added wall' template decreased significantly in added wall sessions.",
+    "claim_type": "EXPLICIT",
+    "source": "In contrast, the dissimilarity between the same rate maps and an 'added wall' template decreased significantly (Normalized wall EMD score: R1, 1.0 \u00b1 0, W1, 0.918 \u00b1 0.02, W2, 0.934 \u00b1 0.03, R2, 1.057 \u00b1 0.02; Friedman test: X2(3)=33.7, p=2.3 \u00d7 10\u22127; Post-hoc Wilcoxon signed-rank test: R1-W1, z = \u22123.89, p=9.8 \u00d7 10\u22125, R1-W2, z = 2.59, p=0.0095, R1-R2, z = \u22122.22, p=0.027; Bonferroni-corrected \u03b1 = 0.017; Figure 2E), indicating that firing fields of border cells incorporated boundary information of the added wall.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "The manuscript reports statistical analysis of EMD scores with the added wall template.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C27",
+    "claim": "Firing fields of border cells incorporated boundary information of the added wall.",
+    "claim_type": "EXPLICIT",
+    "source": "In contrast, the dissimilarity between the same rate maps and an 'added wall' template decreased significantly (Normalized wall EMD score: R1, 1.0 \u00b1 0, W1, 0.918 \u00b1 0.02, W2, 0.934 \u00b1 0.03, R2, 1.057 \u00b1 0.02; Friedman test: X2(3)=33.7, p=2.3 \u00d7 10\u22127; Post-hoc Wilcoxon signed-rank test: R1-W1, z = \u22123.89, p=9.8 \u00d7 10\u22125, R1-W2, z = 2.59, p=0.0095, R1-R2, z = \u22122.22, p=0.027; Bonferroni-corrected \u03b1 = 0.017; Figure 2E), indicating that firing fields of border cells incorporated boundary information of the added wall.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "The manuscript interprets the EMD analysis results.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C28",
+    "claim": "RSC border cells maintained tuning only to the outer walls and did not fire when objects were inside their receptive field (Regular: FR = 1.39 \u00b1 0.26 Hz; Added object: FR = 1.42 \u00b1 0.21 Hz; Wilcoxon signed-rank test: z = \u22120.63, p=0.53; n = 23 border cells).",
+    "claim_type": "EXPLICIT",
+    "source": "Contrary to an added wall, RSC border cells maintained tuning only to the outer walls and did not fire whenever objects were inside their receptive field (Circular ROI, eight bins in diameter; Regular: FR = 1.39 \u00b1 0.26 Hz; Added object: FR = 1.42 \u00b1 0.21 Hz; Wilcoxon signed-rank test: z = \u22120.63, p=0.53; n = 23 border cells; Figure 2H).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "The manuscript reports statistical analysis showing no change in firing rate near objects.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C29",
+    "claim": "EMD analyses showed a significant increase in dissimilarity to the boundary template in the object sessions.",
+    "claim_type": "EXPLICIT",
+    "source": "EMD analyses however showed a significant increase in dissimilarity to the boundary template in the object sessions (Normalized boundary EMD score: R1, 1.0 \u00b1 0, O1, 1.097 \u00b1 0.031, O2, 1.079 \u00b1 0.028, R2, 1.024 \u00b1 0.021; Friedman test: X2(3)=14.7, p=0.002; Post-hoc Wilcoxon signed-rank test: R1-O1, z = \u22122.74, p=0.006, R1-O2, z = \u22122.62, p=0.009, R1-R2, z = \u22121.00, p=0.32; Bonferroni-corrected \u03b1 = 0.017; Figure 2J), indicating changes in the rate maps by the object.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "The manuscript reports statistical analysis of EMD scores in object sessions.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C30",
+    "claim": "Fitting an 'object' template did not lead to a decrease in dissimilarity during object sessions, indicating cells did not form new firing fields around the object.",
+    "claim_type": "EXPLICIT",
+    "source": "This change was not due to new firing fields around the object, however, because fitting an 'object' template did not lead to a decrease in dissimilarity during object sessions (Normalized object EMD score: R1, 1.0 \u00b1 0, O1, 1.026 \u00b1 0.026, O2, 0.995 \u00b1 0.029, R2, 0.990 \u00b1 0.025; Friedman test: X2(3)=2.32, p=0.51; Figure 2J).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "The manuscript reports statistical analysis showing no fit to object template.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C31",
+    "claim": "Spatial correlations did not drop when comparing rate maps between regular and object sessions for either the outer rows of pixels adjacent to the walls or the inner area surrounding the object.",
+    "claim_type": "EXPLICIT",
+    "source": "The maintenance of original firing fields was further confirmed by spatial correlations across session types that did not drop when comparing rate maps between regular and object sessions, neither for the outer rows of pixels adjacent to the walls (Reg-Reg: r = 0.36 \u00b1 0.07, Object-Object: r = 0.47 \u00b1 0.07; z = \u22120.88, p=0.38; Reg-Object: r = 0.45 \u00b1 0.07; comparing with R-R: z = \u22121.28, p=0.20; comparing with R-O: z = 1.16, p=0.25; Wilcoxon signed-rank test; Bonferroni-corrected \u03b1 = 0.017; Figure 2I, right panel), nor the inner area surrounding the object (Reg-Reg: r = 0.29 \u00b1 0.07, Object-Object: r = 0.49 \u00b1 0.05: z = \u22121.58, p=0.11; Reg-Object: r = 0.33 \u00b1 0.07; comparing with R-R: z = \u22120.49, p=0.63; comparing with R-O: z = 1.16, p=0.25; Wilcoxon signed-rank test; Bonferroni-corrected \u03b1 = 0.017; Figure 2I, left panel).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "The manuscript reports statistical analysis of spatial correlations in object sessions.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C32",
+    "claim": "RSC border cells encode information that is specific to boundaries of the spatial layout where cell responses differentiate between the types of added features.",
+    "claim_type": "EXPLICIT",
+    "source": "Taken together, these results indicate that RSC border cells encode information that is specific to boundaries of the spatial layout where cell responses differentiate between the types of added features.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript provides an interpretation of the combined results from wall and object experiments.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C33",
+    "claim": "There were no significant changes in EMD dissimilarity scores across dim-light and darkness sessions (Boundary EMD score: R1, 0.183 \u00b1 0.001, D1, 0.185 \u00b1 0.003, D2, 0.177 \u00b1 0.003, R2, 0.182 \u00b1 0.002; Friedman test: X2(3)=1.23, p=0.75; n = 21 border cells).",
+    "claim_type": "EXPLICIT",
+    "source": "We recorded the activity of RSC border cells in both dim-light and darkness conditions, but observed no significant changes in EMD dissimilarity scores across the sessions (Boundary EMD score: R1, 0.183 \u00b1 0.001, D1, 0.185 \u00b1 0.003, D2, 0.177 \u00b1 0.003, R2, 0.182 \u00b1 0.002; Friedman test: X2(3)=1.23, p=0.75; n = 21 border cells; Figure 3B,D).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "The manuscript reports statistical analysis of border cell activity in darkness.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C34",
+    "claim": "There were no changes in spatial correlations between different session types in light versus dark conditions (Reg-Reg: r = 0.42 \u00b1 0.03, Reg-Dark: r = 0.38 \u00b1 0.03; Wilcoxon signed-rank test z = 0.61, p=0.54; Dark-Dark: r = 0.42 \u00b1 0.05).",
+    "claim_type": "EXPLICIT",
+    "source": "There were also no changes across spatial correlations between different session types (Reg-Reg: r = 0.42 \u00b1 0.03, Reg-Dark: r = 0.38 \u00b1 0.03; Wilcoxon signed-rank test z = 0.61, p=0.54; Dark-Dark: r = 0.42 \u00b1 0.05, Wilcoxon signed-rank test with Reg-Reg correlation, z = 1.20, p=0.23; Bonferroni-corrected \u03b1 = 0.025; Figure 3C), indicating that activity is not generated through visual sensory input.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "The manuscript reports statistical analysis of spatial correlations in darkness.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C35",
+    "claim": "Border cell activity is not generated through visual sensory input.",
+    "claim_type": "EXPLICIT",
+    "source": "There were also no changes across spatial correlations between different session types (Reg-Reg: r = 0.42 \u00b1 0.03, Reg-Dark: r = 0.38 \u00b1 0.03; Wilcoxon signed-rank test z = 0.61, p=0.54; Dark-Dark: r = 0.42 \u00b1 0.05, Wilcoxon signed-rank test with Reg-Reg correlation, z = 1.20, p=0.23; Bonferroni-corrected \u03b1 = 0.025; Figure 3C), indicating that activity is not generated through visual sensory input.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "The manuscript interprets the darkness experiment results.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C36",
+    "claim": "The majority of border cells were unaffected by wall removal in the drop-edge experiment, with no significant changes in EMD scores (Unaffected cells: boundary EMD score: R1, 0.183 \u00b1 0.002, Drop, 0.186 \u00b1 0.003, R2, 0.183 \u00b1 0.001; Friedman test: X2(2)=4.59, p=0.10; n = 17 border cells).",
+    "claim_type": "EXPLICIT",
+    "source": "The EMD scores showed that the majority of border cells were unaffected by the wall removal, with no significant changes in the drop-edge session (Unaffected cells: boundary EMD score: R1, 0.183 \u00b1 0.002, Drop, 0.186 \u00b1 0.003, R2, 0.183 \u00b1 0.001; Friedman test: X2(2)=4.59, p=0.10; n = 17 border cells; Figure 3G).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "The manuscript reports statistical analysis of border cells in the drop-edge experiment.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C37",
+    "claim": "A subset of cells (n = 8/25) had disrupted firing nearby the boundary edges in the drop-edge experiment.",
+    "claim_type": "EXPLICIT",
+    "source": "However, a subset of cells had disrupted firing nearby the boundary edges (n = 8/25 affected cells, separated based on an increase in EMD that exceeded the 95th-percentile of a null distribution of change, computed using the differences between first and last regular sessions; boundary EMD score: R1, 0.169 \u00b1 0.008, Drop, 0.202 \u00b1 0.004, R2, 0.175 \u00b1 0.006; Friedman test: X2(2)=11.0, p=0.004; Post-hoc Wilcoxon signed-rank test: R1-Drop, z = \u22122.95, p=0.003, R1-R2, z = 0, p=1.0; Bonferroni-corrected \u03b1 = 0.025; Figure 3G).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "The manuscript reports data on a subset of affected cells in the drop-edge experiment.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C38",
+    "claim": "Rate map correlations remained high for unaffected cells when comparing regular and drop-edge sessions (Unaffected cells: Reg-Reg, r = 0.50 \u00b1 0.04, Reg-Drop, r = 0.45 \u00b1 0.04; Wilcoxon signed-rank test: z = 1.21, p=0.23).",
+    "claim_type": "EXPLICIT",
+    "source": "A similar result emerged from the spatial correlations, where rate map correlations remained high when comparing regular and drop-edge sessions, but only for the unaffected cells that had stable EMD scores across session type (Unaffected cells: Reg-Reg, r = 0.50 \u00b1 0.04, Reg-Drop, r = 0.45 \u00b1 0.04; Wilcoxon signed-rank test: z = 1.21, p=0.23; Affected cells: Reg-Reg, r = 0.57 \u00b1 0.05, Reg-Drop, r = 0.14 \u00b1 0.07; Wilcoxon signed-rank test: p=0.008; Figure 3H).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "The manuscript reports statistical analysis of spatial correlations in the drop-edge experiment.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C39",
+    "claim": "Affected cells showed significantly decreased correlations in the drop-edge session (Affected cells: Reg-Reg, r = 0.57 \u00b1 0.05, Reg-Drop, r = 0.14 \u00b1 0.07; Wilcoxon signed-rank test: p=0.008).",
+    "claim_type": "EXPLICIT",
+    "source": "A similar result emerged from the spatial correlations, where rate map correlations remained high when comparing regular and drop-edge sessions, but only for the unaffected cells that had stable EMD scores across session type (Unaffected cells: Reg-Reg, r = 0.50 \u00b1 0.04, Reg-Drop, r = 0.45 \u00b1 0.04; Wilcoxon signed-rank test: z = 1.21, p=0.23; Affected cells: Reg-Reg, r = 0.57 \u00b1 0.05, Reg-Drop, r = 0.14 \u00b1 0.07; Wilcoxon signed-rank test: p=0.008; Figure 3H).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "The manuscript reports statistical analysis showing disruption in affected cells.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C40",
+    "claim": "Whisker trimming did not result in a significant change in the proportion of border cells in RSC (intact whiskers: 29/276 cells classified as border cells; trimmed whiskers: 23/285 cells classified as border cells; change in proportion: z = 1.00, p=0.32, binomial test).",
+    "claim_type": "EXPLICIT",
+    "source": "To directly test the necessity of whisker-mediated tactile sensation, we trimmed the animal's whiskers after which they freely explored the arena (Figure 3\u2014figure supplement 1A,B). We did not observe a significant change in the proportion of border cells in RSC after the trimming of whiskers (intact whiskers: 29/276 cells classified as border cells, boundary EMD score = 0.183 \u00b1 0.002; trimmed whiskers: 23/285 cells classified as border cells, boundary EMD score = 0.186 \u00b1 0.005; change in proportion of border cells: z = 1.00, p=0.32, binomial test; Figure 3\u2014figure supplement 1B), nor did we see a change in the overall firing rates (before: FR = 1.58 \u00b1 0.38; after: FR = 1.16 \u00b1 0.47; Wilcoxon signed-rank test: z = 1.04, p=0.30; Figure 3\u2014figure supplement 1C), suggesting that whisker sensation is not essential for boundary representation.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "The manuscript reports statistical analysis of border cells after whisker trimming.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C41",
+    "claim": "Whisker trimming did not result in a change in overall firing rates (before: FR = 1.58 \u00b1 0.38; after: FR = 1.16 \u00b1 0.47; Wilcoxon signed-rank test: z = 1.04, p=0.30).",
+    "claim_type": "EXPLICIT",
+    "source": "To directly test the necessity of whisker-mediated tactile sensation, we trimmed the animal's whiskers after which they freely explored the arena (Figure 3\u2014figure supplement 1A,B). We did not observe a significant change in the proportion of border cells in RSC after the trimming of whiskers (intact whiskers: 29/276 cells classified as border cells, boundary EMD score = 0.183 \u00b1 0.002; trimmed whiskers: 23/285 cells classified as border cells, boundary EMD score = 0.186 \u00b1 0.005; change in proportion of border cells: z = 1.00, p=0.32, binomial test; Figure 3\u2014figure supplement 1B), nor did we see a change in the overall firing rates (before: FR = 1.58 \u00b1 0.38; after: FR = 1.16 \u00b1 0.47; Wilcoxon signed-rank test: z = 1.04, p=0.30; Figure 3\u2014figure supplement 1C), suggesting that whisker sensation is not essential for boundary representation.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "The manuscript reports statistical analysis of firing rates after whisker trimming.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C42",
+    "claim": "Whisker sensation is not essential for boundary representation.",
+    "claim_type": "EXPLICIT",
+    "source": "To directly test the necessity of whisker-mediated tactile sensation, we trimmed the animal's whiskers after which they freely explored the arena (Figure 3\u2014figure supplement 1A,B). We did not observe a significant change in the proportion of border cells in RSC after the trimming of whiskers (intact whiskers: 29/276 cells classified as border cells, boundary EMD score = 0.183 \u00b1 0.002; trimmed whiskers: 23/285 cells classified as border cells, boundary EMD score = 0.186 \u00b1 0.005; change in proportion of border cells: z = 1.00, p=0.32, binomial test; Figure 3\u2014figure supplement 1B), nor did we see a change in the overall firing rates (before: FR = 1.58 \u00b1 0.38; after: FR = 1.16 \u00b1 0.47; Wilcoxon signed-rank test: z = 1.04, p=0.30; Figure 3\u2014figure supplement 1C), suggesting that whisker sensation is not essential for boundary representation.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "The manuscript interprets the whisker trimming results.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C43",
+    "claim": "A subpopulation of cells in the barrel field region of the somatosensory cortex (S1bf) fired nearby boundaries (n = 23/173 cells classified as border cells).",
+    "claim_type": "EXPLICIT",
+    "source": "We further recorded from cells located in the barrel field region of the somatosensory cortex (S1bf) in order to understand the nature of somatosensory information through whiskers (Figure 3\u2014figure supplement 1D\u2013F). Although we were able to identify a subpopulation of cells that fired nearby boundaries in the somatosensory cortex (n = 23/173 cells classified as border cells using the same criteria; Figure 3\u2014figure supplement 1G), an important difference with RSC cells is that S1bf neurons fired consistently near added objects when introduced into the arena, highlighting the selective tuning of RSC border cells to boundaries but not objects (Normalized boundary EMD score: R1, 1.0 \u00b1 0, O1, 1.067 \u00b1 0.01, O2, 1.084 \u00b1 0.01, R2, 0.971 \u00b1 0.01; Friedman test: X2(3)=47.1, p=3.3 \u00d7 10\u221210; Post-hoc Wilcoxon signed-rank test: R1-O1, z = \u22123.65, p=2.6 \u00d7 10\u22124, R1-O2, z = \u22123.89, p=9.9 \u00d7 10\u22125, R1-R2, z = 2.95, p=0.003; Bonferroni-corrected \u03b1 = 0.017; Normalized object EMD score: R1, 1.0 \u00b1 0 O1, 0.977 \u00b1 0.005, O2, 0.967 \u00b1 0.005, R2, 1.015 \u00b1 0.004; Friedman test: X2(3)=47.5, p=2.7 \u00d7 10\u221210; Post-hoc Wilcoxon signed-rank test: R1-O1, z = 3.50, p=4.7 \u00d7 10\u22124, R1-O2, z = 3.80, p=1.4 \u00d7 10\u22124, R1-R2, z = \u22123.16, p=0.002; Bonferroni-corrected \u03b1 = 0.017; Figure 3\u2014figure supplement 1H).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "The manuscript reports data from S1bf recordings.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C44",
+    "claim": "S1bf neurons fired consistently near added objects when introduced into the arena, unlike RSC border cells.",
+    "claim_type": "EXPLICIT",
+    "source": "We further recorded from cells located in the barrel field region of the somatosensory cortex (S1bf) in order to understand the nature of somatosensory information through whiskers (Figure 3\u2014figure supplement 1D\u2013F). Although we were able to identify a subpopulation of cells that fired nearby boundaries in the somatosensory cortex (n = 23/173 cells classified as border cells using the same criteria; Figure 3\u2014figure supplement 1G), an important difference with RSC cells is that S1bf neurons fired consistently near added objects when introduced into the arena, highlighting the selective tuning of RSC border cells to boundaries but not objects (Normalized boundary EMD score: R1, 1.0 \u00b1 0, O1, 1.067 \u00b1 0.01, O2, 1.084 \u00b1 0.01, R2, 0.971 \u00b1 0.01; Friedman test: X2(3)=47.1, p=3.3 \u00d7 10\u221210; Post-hoc Wilcoxon signed-rank test: R1-O1, z = \u22123.65, p=2.6 \u00d7 10\u22124, R1-O2, z = \u22123.89, p=9.9 \u00d7 10\u22125, R1-R2, z = 2.95, p=0.003; Bonferroni-corrected \u03b1 = 0.017; Normalized object EMD score: R1, 1.0 \u00b1 0 O1, 0.977 \u00b1 0.005, O2, 0.967 \u00b1 0.005, R2, 1.015 \u00b1 0.004; Friedman test: X2(3)=47.5, p=2.7 \u00d7 10\u221210; Post-hoc Wilcoxon signed-rank test: R1-O1, z = 3.50, p=4.7 \u00d7 10\u22124, R1-O2, z = 3.80, p=1.4 \u00d7 10\u22124, R1-R2, z = \u22123.16, p=0.002; Bonferroni-corrected \u03b1 = 0.017; Figure 3\u2014figure supplement 1H).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "The manuscript reports statistical analysis comparing S1bf and RSC responses to objects.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C45",
+    "claim": "The activity of RSC border cells is not simply driven by the detection of boundaries through visual or tactile sensation.",
+    "claim_type": "EXPLICIT",
+    "source": "Together, these results suggest that the activity of RSC border cells is not simply driven by the detection of boundaries through visual or tactile sensation, and their distinct firing around boundaries but not objects implies additional computations in the brain.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript provides an interpretation of the combined sensory manipulation results.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C46",
+    "claim": "The distinct firing of RSC border cells around boundaries but not objects implies additional computations in the brain.",
+    "claim_type": "EXPLICIT",
+    "source": "Together, these results suggest that the activity of RSC border cells is not simply driven by the detection of boundaries through visual or tactile sensation, and their distinct firing around boundaries but not objects implies additional computations in the brain.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript provides an interpretation of the results.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C47",
+    "claim": "190 out of 485 RSC border cells (39.2%) had significant egocentric directional tuning, with mean vector lengths above the 95th percentile of a spike-shuffled distribution in all regular sessions.",
+    "claim_type": "EXPLICIT",
+    "source": "Across the population of border cells identified with the EMD metric, 190 out of 485 neurons (39.2%) had significant egocentric directional tuning, with mean vector lengths above the 95th percentile of a spike-shuffled distribution in all regular sessions (Figure 4\u2014figure supplement 1A,B).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "The manuscript reports the proportion of border cells with directional tuning.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C48",
+    "claim": "Only 190 out of 666 directionally-tuned cells (28.5%) had additional boundary-distance tuning.",
+    "claim_type": "EXPLICIT",
+    "source": "Conversely, only 190 out of 666 directionally-tuned cells (28.5%) had additional boundary-distance tuning (Figure 4\u2014figure supplement 1A), making the population of neurons reported here considerably different from Alexander et al., 2020.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "The manuscript reports the proportion of directionally-tuned cells with boundary-distance tuning.",
+    "evidence_type": [
+      "DATA",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C49",
+    "claim": "The population of neurons reported here is considerably different from Alexander et al., 2020.",
+    "claim_type": "EXPLICIT",
+    "source": "Conversely, only 190 out of 666 directionally-tuned cells (28.5%) had additional boundary-distance tuning (Figure 4\u2014figure supplement 1A), making the population of neurons reported here considerably different from Alexander et al., 2020.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "The manuscript compares the current findings to a previous study.",
+    "evidence_type": [
+      "DATA",
+      "CITATION",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C50",
+    "claim": "Directionally-tuned border cells fired predominantly whenever the wall occupied proximal space at a particular angle from the animal's viewpoint.",
+    "claim_type": "EXPLICIT",
+    "source": "Projecting trajectory data onto new body-centric axes, where coordinates indicate distance and direction of the nearest wall relative to the animal, confirmed that directionally-tuned border cells fired predominantly whenever the wall occupied proximal space at a particular angle from the animal's viewpoint (Figure 4B,C, Figure 4\u2014figure supplement 2).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "The manuscript describes the firing properties of directionally-tuned border cells using body-centric coordinate analysis.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C51",
+    "claim": "All allocentric head-direction cells rotated their tuning curves when the experimental setup was rotated 90\u00b0 clockwise, although not a full 90\u00b0.",
+    "claim_type": "EXPLICIT",
+    "source": "As a result, all allocentric head-direction (HD) cells rotated their tuning curves accordingly, although not a full 90\u00b0 (A-A': median shift = 2.6\u00b0, z = 1.23, p=0.23; B1-B2: median shift = 0.8\u00b0, z = 0.61, p=0.54; A-B1: median shift = 62.9\u00b0, z = 4.62, p=3.8 \u00d7 10\u22126; A-B1 rotated: median shift = \u221227.3\u00b0, z = \u22123.07, p=0.002; Wilcoxon signed-rank test; Bonferroni-corrected \u03b1 = 0.013; n = 28 HD cells; Figure 4G).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "The manuscript reports statistical analysis of head-direction cell tuning shifts during rotation.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C52",
+    "claim": "The preferred direction of border cells with significant directional tuning remained unchanged during rotation (A-A': median shift = 0\u00b0, z = 0.14, p=0.89; B1-B2: median shift = 0\u00b0, z = \u22121.21, p=0.22; A-B1: median shift = 0\u00b0, z = 2.42, p=0.015; A-B1 rotated: median shift = \u221268\u00b0, z = \u22123.74, p=1.8 \u00d7 10\u22124; n = 31 directionally-tuned border cells).",
+    "claim_type": "EXPLICIT",
+    "source": "The preferred direction of all border cells that had significant directional tuning, in contrast, remained unchanged (two representative cells in Figure 4E,F; A-A': median shift = 0\u00b0, z = 0.14, p=0.89; B1-B2: median shift = 0\u00b0, z = \u22121.21, p=0.22; A-B1: median shift = 0\u00b0, z = 2.42, p=0.015; A-B1 rotated: median shift = \u221268\u00b0, z = \u22123.74, p=1.8 \u00d7 10\u22124; Wilcoxon signed-rank test; Bonferroni-corrected \u03b1 = 0.013; n = 31 directionally-tuned border cells; Figure 4G).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "The manuscript reports statistical analysis showing invariance of border cell directional tuning during rotation.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C53",
+    "claim": "The direction tuning of RSC border cells is generated either through local sensation of walls independent of the head-direction signal or by the integration of allocentric boundary-position and head-direction coding that rotated together.",
+    "claim_type": "EXPLICIT",
+    "source": "This result indicates that the direction tuning of RSC border cells is generated either through the local sensation of walls independent of the head-direction signal or by the integration of allocentric boundary-position and head-direction coding that rotated together.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript provides two possible interpretations of the rotation results.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C54",
+    "claim": "RSC neurons with position-selective firing rotated along with head-direction cells in RSC (spatial correlations: A-A', r = 0.63 \u00b1 0.018, A-B, r = 0.48 \u00b1 0.058, Wilcoxon signed-rank test: z = 3.52, p=4.4 \u00d7 10\u22124; A-B rotated, r = 0.70 \u00b1 0.033, Wilcoxon signed-rank test: z = \u22121.07, p=0.29; n = 32/384 spatially stable cells).",
+    "claim_type": "EXPLICIT",
+    "source": "By contrast, in accordance with the latter possibility, we found that RSC neurons with position-selective firing, defined as cells with spatial correlations above the 99th percentile of a spike-shuffled distribution that are not border cells, rotated along with head-direction cells in RSC (two example cells in Figure 4H; spatial correlations: A-A', r = 0.63 \u00b1 0.018, A-B, r = 0.48 \u00b1 0.058, Wilcoxon signed-rank test: z = 3.52, p=4.4 \u00d7 10\u22124; A-B rotated, r = 0.70 \u00b1 0.033, Wilcoxon signed-rank test: z = \u22121.07, p=0.29; n = 32/384 spatially stable cells).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "The manuscript reports statistical analysis of spatially-stable cells during rotation.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C55",
+    "claim": "RSC border cells maintained wall-tuning as their conjunctive coding of position and head-direction rotated together with the environment.",
+    "claim_type": "EXPLICIT",
+    "source": "RSC border cells thus maintained wall-tuning as their conjunctive coding of position and head-direction rotated together with the environment.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript provides an interpretation of the rotation experiment results.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C56",
+    "claim": "Across the population, border cells were tuned predominantly to the very near proximity (main peak at 5 cm).",
+    "claim_type": "EXPLICIT",
+    "source": "Across the population, cells were tuned predominantly to the very near proximity (main peak at 5 cm; Figure 4J), although some cells had fields at extended distances up to 20 cm away from the wall.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "The manuscript describes the distance tuning distribution of border cells.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C57",
+    "claim": "Some border cells had fields at extended distances up to 20 cm away from the wall.",
+    "claim_type": "EXPLICIT",
+    "source": "Across the population, cells were tuned predominantly to the very near proximity (main peak at 5 cm; Figure 4J), although some cells had fields at extended distances up to 20 cm away from the wall.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "The manuscript describes the range of distance tuning in border cells.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C58",
+    "claim": "The boundary template was able to classify cells with firing fields up to 18 cm away from the walls.",
+    "claim_type": "EXPLICIT",
+    "source": "In order to account for a potential proximity bias of our boundary template, we simulated a set of synthetic neurons that fire at specific wall distances using all behavioral data, and found that our boundary template was able to classify cells with firing fields up to 18 cm away from the walls (Figure 4\u2014figure supplement 1C).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "The manuscript reports results from simulations testing the template's distance range.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C59",
+    "claim": "Cell classification using new templates with fields at increasing distances did not yield a substantial new number of cells.",
+    "claim_type": "EXPLICIT",
+    "source": "However, cell classification using new templates with fields at increasing distances did not yield a substantial new number of cells (Figure 4\u2014figure supplement 1D), confirming that the majority of RSC border cells exhibit distance tuning at the proximity of walls.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "The manuscript reports results from testing alternative templates.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C60",
+    "claim": "The majority of RSC border cells exhibit distance tuning at the proximity of walls.",
+    "claim_type": "EXPLICIT",
+    "source": "However, cell classification using new templates with fields at increasing distances did not yield a substantial new number of cells (Figure 4\u2014figure supplement 1D), confirming that the majority of RSC border cells exhibit distance tuning at the proximity of walls.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "The manuscript interprets the template testing results.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C61",
+    "claim": "Border cells recorded in the left hemisphere had a mean direction of \u2212114\u00b0 (z = 3.16, p=0.041; n = 41 directionally-tuned border cells).",
+    "claim_type": "EXPLICIT",
+    "source": "Regarding their preferred egocentric tuning direction, we observed a disproportionately biased distribution of preferred directions, dependent on the hemisphere where cells were recorded (Left hemisphere: mean direction = \u2212114\u00b0, z = 3.16, p=0.041; n = 41 directionally-tuned border cells; Right hemisphere: mean direction = 41\u00b0, z = 38.8, p=9.1 \u00d7 10\u221219; n = 149 directionally-tuned border cells; Rayleigh test; comparing both distributions: two-sample Kuiper test, k = 3.1 \u00d7 103, p=0.001; Figure 4I).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "The manuscript reports statistical analysis of directional tuning by hemisphere.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C62",
+    "claim": "Border cells recorded in the right hemisphere had a mean direction of 41\u00b0 (z = 38.8, p=9.1 \u00d7 10\u221219; n = 149 directionally-tuned border cells).",
+    "claim_type": "EXPLICIT",
+    "source": "Regarding their preferred egocentric tuning direction, we observed a disproportionately biased distribution of preferred directions, dependent on the hemisphere where cells were recorded (Left hemisphere: mean direction = \u2212114\u00b0, z = 3.16, p=0.041; n = 41 directionally-tuned border cells; Right hemisphere: mean direction = 41\u00b0, z = 38.8, p=9.1 \u00d7 10\u221219; n = 149 directionally-tuned border cells; Rayleigh test; comparing both distributions: two-sample Kuiper test, k = 3.1 \u00d7 103, p=0.001; Figure 4I).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "The manuscript reports statistical analysis of directional tuning by hemisphere.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C63",
+    "claim": "There was a disproportionately biased distribution of preferred directions, dependent on the hemisphere where cells were recorded (comparing both distributions: two-sample Kuiper test, k = 3.1 \u00d7 103, p=0.001).",
+    "claim_type": "EXPLICIT",
+    "source": "Regarding their preferred egocentric tuning direction, we observed a disproportionately biased distribution of preferred directions, dependent on the hemisphere where cells were recorded (Left hemisphere: mean direction = \u2212114\u00b0, z = 3.16, p=0.041; n = 41 directionally-tuned border cells; Right hemisphere: mean direction = 41\u00b0, z = 38.8, p=9.1 \u00d7 10\u221219; n = 149 directionally-tuned border cells; Rayleigh test; comparing both distributions: two-sample Kuiper test, k = 3.1 \u00d7 103, p=0.001; Figure 4I).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "The manuscript reports statistical comparison of directional distributions between hemispheres.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C64",
+    "claim": "The majority of border cells were tuned to the contralateral side of the recorded hemisphere, although not exclusively.",
+    "claim_type": "EXPLICIT",
+    "source": "The majority of border cells were tuned to the contralateral side of the recorded hemisphere, although not exclusively (Figure 4I).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "The manuscript describes the directional tuning bias observed in the data.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C65",
+    "claim": "Loss of tactile sensation by whisker trimming had no effect on the extent of directional tuning of border cells (before trimming: 7/49 cells had significant directional tuning, MVL = 0.538 \u00b1 0.06; after trimming: 10/49 cells were significantly tuned, MVL = 0.502 \u00b1 0.08; change in MVL: t(6) = 1.80, p=0.12, t-test; change in cell proportion: z = 1.05, p=0.29, binomial test).",
+    "claim_type": "EXPLICIT",
+    "source": "However, a loss of tactile sensation by whisker trimming had no effect on the extent of directional tuning of border cells (before trimming: 7/49 cells had significant directional tuning, MVL = 0.538 \u00b1 0.06; after trimming: 10/49 cells were significantly tuned, MVL = 0.502 \u00b1 0.08; change in MVL: t(6) = 1.80, p=0.12, t-test; change in cell proportion: z = 1.05, p=0.29, binomial test; Figure 3\u2014figure supplement 1A,B), nor did recording in complete darkness affect the directional tuning of cells (light conditions: 5/21 cells had significant directional tuning, MVL = 0.326 \u00b1 0.07; darkness: 4/5 cells maintained their tuning, 2/16 cells were tuned only in darkness, MVL = 0.318 \u00b1 0.05; change in MVL: t(4) = \u22120.51, p=0.64, t-test; change in cell proportion: z = 0.33, p=0.75, binomial test), implying that this bias is not a direct consequence of the lateralized nature of sensory input.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "The manuscript reports statistical analysis of directional tuning after whisker trimming.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C66",
+    "claim": "Recording in complete darkness did not affect the directional tuning of cells (light conditions: 5/21 cells had significant directional tuning, MVL = 0.326 \u00b1 0.07; darkness: 4/5 cells maintained their tuning, 2/16 cells were tuned only in darkness, MVL = 0.318 \u00b1 0.05; change in MVL: t(4) = \u22120.51, p=0.64, t-test; change in cell proportion: z = 0.33, p=0.75, binomial test).",
+    "claim_type": "EXPLICIT",
+    "source": "However, a loss of tactile sensation by whisker trimming had no effect on the extent of directional tuning of border cells (before trimming: 7/49 cells had significant directional tuning, MVL = 0.538 \u00b1 0.06; after trimming: 10/49 cells were significantly tuned, MVL = 0.502 \u00b1 0.08; change in MVL: t(6) = 1.80, p=0.12, t-test; change in cell proportion: z = 1.05, p=0.29, binomial test; Figure 3\u2014figure supplement 1A,B), nor did recording in complete darkness affect the directional tuning of cells (light conditions: 5/21 cells had significant directional tuning, MVL = 0.326 \u00b1 0.07; darkness: 4/5 cells maintained their tuning, 2/16 cells were tuned only in darkness, MVL = 0.318 \u00b1 0.05; change in MVL: t(4) = \u22120.51, p=0.64, t-test; change in cell proportion: z = 0.33, p=0.75, binomial test), implying that this bias is not a direct consequence of the lateralized nature of sensory input.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "The manuscript reports statistical analysis of directional tuning in darkness.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C67",
+    "claim": "The hemisphere-specific directional tuning bias is not a direct consequence of the lateralized nature of sensory input.",
+    "claim_type": "EXPLICIT",
+    "source": "However, a loss of tactile sensation by whisker trimming had no effect on the extent of directional tuning of border cells (before trimming: 7/49 cells had significant directional tuning, MVL = 0.538 \u00b1 0.06; after trimming: 10/49 cells were significantly tuned, MVL = 0.502 \u00b1 0.08; change in MVL: t(6) = 1.80, p=0.12, t-test; change in cell proportion: z = 1.05, p=0.29, binomial test; Figure 3\u2014figure supplement 1A,B), nor did recording in complete darkness affect the directional tuning of cells (light conditions: 5/21 cells had significant directional tuning, MVL = 0.326 \u00b1 0.07; darkness: 4/5 cells maintained their tuning, 2/16 cells were tuned only in darkness, MVL = 0.318 \u00b1 0.05; change in MVL: t(4) = \u22120.51, p=0.64, t-test; change in cell proportion: z = 0.33, p=0.75, binomial test), implying that this bias is not a direct consequence of the lateralized nature of sensory input.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "The manuscript interprets the sensory manipulation results regarding directional bias.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C68",
+    "claim": "The RSC has direct, bi-directional connections with the medial entorhinal cortex (MEC).",
+    "claim_type": "EXPLICIT",
+    "source": "The RSC is known to have direct, bi-directional connections with the medial entorhinal cortex (MEC) (Jones and Witter, 2007; Ohara et al., 2018), which contains several types of neurons that exhibit allocentric spatial tuning such as grid cells, head-direction cells or border cells (Boccara et al., 2010; Hafting et al., 2005; Sargolini et al., 2006; Solstad et al., 2008).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript cites previous anatomical studies.",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C69",
+    "claim": "MEC contains several types of neurons that exhibit allocentric spatial tuning such as grid cells, head-direction cells or border cells.",
+    "claim_type": "EXPLICIT",
+    "source": "The RSC is known to have direct, bi-directional connections with the medial entorhinal cortex (MEC) (Jones and Witter, 2007; Ohara et al., 2018), which contains several types of neurons that exhibit allocentric spatial tuning such as grid cells, head-direction cells or border cells (Boccara et al., 2010; Hafting et al., 2005; Sargolini et al., 2006; Solstad et al., 2008).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript cites previous studies on MEC cell types.",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C70",
+    "claim": "Subcutaneous administration of agonist-21 resulted in a drastic reduction of firing for a group of cells in MEC that were infected with the virus (26 out of 44 cells recorded near the injection site significantly reduced their firing rates to 47.2 \u00b1 5.5% of their baseline firing).",
+    "claim_type": "EXPLICIT",
+    "source": "Subcutaneous administration of agonist-21 (DREADDs agonist; Thompson et al., 2018) resulted in a drastic reduction of firing after 20 min for a group of cells in MEC that were infected with the virus (26 out of 44 cells recorded near the injection site with additional tetrodes in MEC significantly reduced their firing rates to 47.2 \u00b1 5.5% of their baseline firing; Figure 5B, Figure 5\u2014figure supplement 1), while not affecting the running speed of the animal (Figure 5\u2014figure supplement 1).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "The manuscript reports the effect of DREADDs manipulation on MEC cells.",
+    "evidence_type": [
+      "DATA",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C71",
+    "claim": "DREADDs-mediated inactivation of MEC did not affect the running speed of the animal.",
+    "claim_type": "EXPLICIT",
+    "source": "Subcutaneous administration of agonist-21 (DREADDs agonist; Thompson et al., 2018) resulted in a drastic reduction of firing after 20 min for a group of cells in MEC that were infected with the virus (26 out of 44 cells recorded near the injection site with additional tetrodes in MEC significantly reduced their firing rates to 47.2 \u00b1 5.5% of their baseline firing; Figure 5B, Figure 5\u2014figure supplement 1), while not affecting the running speed of the animal (Figure 5\u2014figure supplement 1).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "The manuscript reports behavioral data during DREADDs manipulation.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C72",
+    "claim": "Inactivation of MEC led to a subsequent partial disruption of firing in a subset of RSC border cells, worsening border tuning that resulted in higher EMD scores (before: EMD score = 0.181 \u00b1 0.002, after: EMD score = 0.186 \u00b1 0.003; Wilcoxon signed-rank test: z = \u22122.40, p=0.016; n = 102 border cells).",
+    "claim_type": "EXPLICIT",
+    "source": "Inactivation of MEC led to a subsequent partial disruption of firing in a subset of RSC border cells (Figure 5C), worsening border tuning that resulted in higher EMD scores (before: EMD score = 0.181 \u00b1 0.002, after: EMD score = 0.186 \u00b1 0.003; Wilcoxon signed-rank test: z = \u22122.40, p=0.016; n = 102 border cells; Figure 5D) and lower overall firing rates after the manipulation (before: FR = 1.52 \u00b1 0.20 Hz, after: FR = 1.12 \u00b1 0.24 Hz, Wilcoxon signed-rank test: z = 3.15, p=0.0016; Figure 5E).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "The manuscript reports statistical analysis of RSC border cells after MEC inactivation.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C73",
+    "claim": "Inactivation of MEC resulted in lower overall firing rates of RSC border cells (before: FR = 1.52 \u00b1 0.20 Hz, after: FR = 1.12 \u00b1 0.24 Hz, Wilcoxon signed-rank test: z = 3.15, p=0.0016).",
+    "claim_type": "EXPLICIT",
+    "source": "Inactivation of MEC led to a subsequent partial disruption of firing in a subset of RSC border cells (Figure 5C), worsening border tuning that resulted in higher EMD scores (before: EMD score = 0.181 \u00b1 0.002, after: EMD score = 0.186 \u00b1 0.003; Wilcoxon signed-rank test: z = \u22122.40, p=0.016; n = 102 border cells; Figure 5D) and lower overall firing rates after the manipulation (before: FR = 1.52 \u00b1 0.20 Hz, after: FR = 1.12 \u00b1 0.24 Hz, Wilcoxon signed-rank test: z = 3.15, p=0.0016; Figure 5E).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "The manuscript reports statistical analysis of firing rates after MEC inactivation.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C74",
+    "claim": "RSC inhibition had no significant effect on MEC border cell tuning (before: border score = 0.53 \u00b1 0.013, after: border score = 0.53 \u00b1 0.01; Wilcoxon signed-rank test: z = 0.56, p=0.57; n = 83 border cells).",
+    "claim_type": "EXPLICIT",
+    "source": "Administration of agonist-21 led to similar decreased activity in RSC for the infected cells (Figure 5G), but RSC inhibition had no significant effect on MEC border cell tuning (before: border score = 0.53 \u00b1 0.013, after: border score = 0.53 \u00b1 0.01; Wilcoxon signed-rank test: z = 0.56, p=0.57; n = 83 border cells; Figure 5H,I) or average firing rates (before: FR = 1.33 \u00b1 0.11 Hz, after: FR = 1.27 \u00b1 0.12 Hz; Wilcoxon signed-rank test: z = \u22120.31, p=0.76; Figure 5J).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "The manuscript reports statistical analysis of MEC border cells after RSC inactivation.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C75",
+    "claim": "RSC inhibition had no significant effect on MEC border cell average firing rates (before: FR = 1.33 \u00b1 0.11 Hz, after: FR = 1.27 \u00b1 0.12 Hz; Wilcoxon signed-rank test: z = \u22120.31, p=0.76).",
+    "claim_type": "EXPLICIT",
+    "source": "Administration of agonist-21 led to similar decreased activity in RSC for the infected cells (Figure 5G), but RSC inhibition had no significant effect on MEC border cell tuning (before: border score = 0.53 \u00b1 0.013, after: border score = 0.53 \u00b1 0.01; Wilcoxon signed-rank test: z = 0.56, p=0.57; n = 83 border cells; Figure 5H,I) or average firing rates (before: FR = 1.33 \u00b1 0.11 Hz, after: FR = 1.27 \u00b1 0.12 Hz; Wilcoxon signed-rank test: z = \u22120.31, p=0.76; Figure 5J).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "The manuscript reports statistical analysis of MEC firing rates after RSC inactivation.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C76",
+    "claim": "Optogenetic inhibition of MEC axon terminals in RSC led to disruption of border coding in RSC, with cells losing specificity of firing near the edges and forming firing fields in the center of the arena.",
+    "claim_type": "EXPLICIT",
+    "source": "Activation of laser light during behavior of the animal led to a subsequent disruption of border coding in RSC, with cells losing specificity of firing near the edges and forming firing fields in the center of the arena (Figure 5L,N), resulting in an increase in EMD dissimilarity scores across the population, both for axon-terminal inhibition (Boundary EMD score: laser OFF1, 0.187 \u00b1 0.003, laser ON, 0.203 \u00b1 0.003, laser OFF2, 0.190 \u00b1 0.005; Friedman test: X2(2)=6.9, p=0.032; Post-hoc Wilcoxon signed-rank test: OFF1-ON, z = \u22123.45, p=5.7 \u00d7 10\u22124, OFF1-OFF2, z = \u22121.55, p=0.12; Bonferroni-corrected \u03b1 = 0.025; n = 34 border cells; Figure 5O, Figure 5\u2014figure supplement 3B) and cell-body inhibition (Boundary EMD score: laser OFF1, 0.184 \u00b1 0.002, laser ON, 0.192 \u00b1 0.002, laser OFF2, 0.189 \u00b1 0.002; Friedman test: X2(2)=24.5, p=4.7 \u00d7 10\u22126; Post-hoc Wilcoxon signed-rank test: OFF1-ON, z = \u22124.97, p=6.7 \u00d7 10\u22127, OFF1-OFF2, z = \u22124.11, p=4.0 \u00d7 10\u22125; Bonferroni-corrected \u03b1 = 0.025; n = 141 border cells; Figure 5O, Figure 5\u2014figure supplement 3B) that partially recovered after turning laser light off.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "The manuscript reports statistical analysis of optogenetic manipulation effects.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C77",
+    "claim": "Optogenetic axon-terminal inhibition resulted in increased EMD scores (Boundary EMD score: laser OFF1, 0.187 \u00b1 0.003, laser ON, 0.203 \u00b1 0.003, laser OFF2, 0.190 \u00b1 0.005; Friedman test: X2(2)=6.9, p=0.032; Post-hoc Wilcoxon signed-rank test: OFF1-ON, z = \u22123.45, p=5.7 \u00d7 10\u22124, OFF1-OFF2, z = \u22121.55, p=0.12; n = 34 border cells).",
+    "claim_type": "EXPLICIT",
+    "source": "Activation of laser light during behavior of the animal led to a subsequent disruption of border coding in RSC, with cells losing specificity of firing near the edges and forming firing fields in the center of the arena (Figure 5L,N), resulting in an increase in EMD dissimilarity scores across the population, both for axon-terminal inhibition (Boundary EMD score: laser OFF1, 0.187 \u00b1 0.003, laser ON, 0.203 \u00b1 0.003, laser OFF2, 0.190 \u00b1 0.005; Friedman test: X2(2)=6.9, p=0.032; Post-hoc Wilcoxon signed-rank test: OFF1-ON, z = \u22123.45, p=5.7 \u00d7 10\u22124, OFF1-OFF2, z = \u22121.55, p=0.12; Bonferroni-corrected \u03b1 = 0.025; n = 34 border cells; Figure 5O, Figure 5\u2014figure supplement 3B) and cell-body inhibition (Boundary EMD score: laser OFF1, 0.184 \u00b1 0.002, laser ON, 0.192 \u00b1 0.002, laser OFF2, 0.189 \u00b1 0.002; Friedman test: X2(2)=24.5, p=4.7 \u00d7 10\u22126; Post-hoc Wilcoxon signed-rank test: OFF1-ON, z = \u22124.97, p=6.7 \u00d7 10\u22127, OFF1-OFF2, z = \u22124.11, p=4.0 \u00d7 10\u22125; Bonferroni-corrected \u03b1 = 0.025; n = 141 border cells; Figure 5O, Figure 5\u2014figure supplement 3B) that partially recovered after turning laser light off.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "The manuscript reports statistical analysis of axon-terminal inhibition effects.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C78",
+    "claim": "Optogenetic cell-body inhibition resulted in increased EMD scores (Boundary EMD score: laser OFF1, 0.184 \u00b1 0.002, laser ON, 0.192 \u00b1 0.002, laser OFF2, 0.189 \u00b1 0.002; Friedman test: X2(2)=24.5, p=4.7 \u00d7 10\u22126; Post-hoc Wilcoxon signed-rank test: OFF1-ON, z = \u22124.97, p=6.7 \u00d7 10\u22127, OFF1-OFF2, z = \u22124.11, p=4.0 \u00d7 10\u22125; n = 141 border cells).",
+    "claim_type": "EXPLICIT",
+    "source": "Activation of laser light during behavior of the animal led to a subsequent disruption of border coding in RSC, with cells losing specificity of firing near the edges and forming firing fields in the center of the arena (Figure 5L,N), resulting in an increase in EMD dissimilarity scores across the population, both for axon-terminal inhibition (Boundary EMD score: laser OFF1, 0.187 \u00b1 0.003, laser ON, 0.203 \u00b1 0.003, laser OFF2, 0.190 \u00b1 0.005; Friedman test: X2(2)=6.9, p=0.032; Post-hoc Wilcoxon signed-rank test: OFF1-ON, z = \u22123.45, p=5.7 \u00d7 10\u22124, OFF1-OFF2, z = \u22121.55, p=0.12; Bonferroni-corrected \u03b1 = 0.025; n = 34 border cells; Figure 5O, Figure 5\u2014figure supplement 3B) and cell-body inhibition (Boundary EMD score: laser OFF1, 0.184 \u00b1 0.002, laser ON, 0.192 \u00b1 0.002, laser OFF2, 0.189 \u00b1 0.002; Friedman test: X2(2)=24.5, p=4.7 \u00d7 10\u22126; Post-hoc Wilcoxon signed-rank test: OFF1-ON, z = \u22124.97, p=6.7 \u00d7 10\u22127, OFF1-OFF2, z = \u22124.11, p=4.0 \u00d7 10\u22125; Bonferroni-corrected \u03b1 = 0.025; n = 141 border cells; Figure 5O, Figure 5\u2014figure supplement 3B) that partially recovered after turning laser light off.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "The manuscript reports statistical analysis of cell-body inhibition effects.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C79",
+    "claim": "There were no significant changes in the overall firing rates of RSC border cells during optogenetic manipulation (Laser ON: normalized FR = 0.94 \u00b1 0.04, Wilcoxon signed-rank test: z = 1.68, p=0.09; laser OFF2: normalized FR = 0.96 \u00b1 0.04, Wilcoxon signed-rank test: z = \u22121.80, p=0.07).",
+    "claim_type": "EXPLICIT",
+    "source": "Unlike our DREADD inhibition results, there were no significant changes in the overall firing rates of RSC border cells (Laser ON: normalized FR = 0.94 \u00b1 0.04, Wilcoxon signed-rank test: z = 1.68, p=0.09; laser OFF2: normalized FR = 0.96 \u00b1 0.04, Wilcoxon signed-rank test: z = \u22121.80, p=0.07; Figure 5\u2014figure supplement 3A), and there were no observable changes in the behavior of the animals (Figure 5\u2014figure supplement 3D\u2013F).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "The manuscript reports statistical analysis of firing rates during optogenetic manipulation.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C80",
+    "claim": "There were no observable changes in the behavior of the animals during optogenetic manipulation.",
+    "claim_type": "EXPLICIT",
+    "source": "Unlike our DREADD inhibition results, there were no significant changes in the overall firing rates of RSC border cells (Laser ON: normalized FR = 0.94 \u00b1 0.04, Wilcoxon signed-rank test: z = 1.68, p=0.09; laser OFF2: normalized FR = 0.96 \u00b1 0.04, Wilcoxon signed-rank test: z = \u22121.80, p=0.07; Figure 5\u2014figure supplement 3A), and there were no observable changes in the behavior of the animals (Figure 5\u2014figure supplement 3D\u2013F).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "The manuscript reports behavioral observations during optogenetic manipulation.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C81",
+    "claim": "Recording of RSC neurons in the absence of inhibitory opsin expression showed stable firing patterns for border cells near all boundaries of the environment before, during and after the application of laser light, with no changes in EMD scores (Boundary EMD score: laser OFF1, 0.173 \u00b1 0.002, laser ON1, 0.176 \u00b1 0.003, laser ON2, 0.174 \u00b1 0.004, laser OFF2, 0.170 \u00b1 0.001; Friedman test: X2(3)=5.44, p=0.14; n = 33 border cells).",
+    "claim_type": "EXPLICIT",
+    "source": "In order to control for non-specific effects of laser application, we performed an additional control experiment in two animals (Figure 5\u2014figure supplement 4). Recording of RSC neurons in the absence of inhibitory opsin expression showed stable firing patterns for border cells near all boundaries of the environment, before, during and after the application of laser light, with no changes for the neurons in their EMD scores (Boundary EMD score: laser OFF1, 0.173 \u00b1 0.002, laser ON1, 0.176 \u00b1 0.003, laser ON2, 0.174 \u00b1 0.004, laser OFF2, 0.170 \u00b1 0.001; Friedman test: X2(3)=5.44, p=0.14; n = 33 border cells; Figure 5\u2014figure supplement 4D) or overall firing rates (FR: laser OFF1, 2.95 \u00b1 0.72, laser ON1, 2.43 \u00b1 0.75, laser ON2, 2.39 \u00b1 0.88, laser OFF2, 2.78 \u00b1 0.68; Friedman test: X2(3)=2.64, p=0.45; Figure 5\u2014figure supplement 4C), confirming that the impairment of boundary tuning in RSC during laser application is specific to the silencing of MEC inputs.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "The manuscript reports control experiment results showing no laser effects without opsins.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C82",
+    "claim": "The impairment of boundary tuning in RSC during laser application is specific to the silencing of MEC inputs.",
+    "claim_type": "EXPLICIT",
+    "source": "In order to control for non-specific effects of laser application, we performed an additional control experiment in two animals (Figure 5\u2014figure supplement 4). Recording of RSC neurons in the absence of inhibitory opsin expression showed stable firing patterns for border cells near all boundaries of the environment, before, during and after the application of laser light, with no changes for the neurons in their EMD scores (Boundary EMD score: laser OFF1, 0.173 \u00b1 0.002, laser ON1, 0.176 \u00b1 0.003, laser ON2, 0.174 \u00b1 0.004, laser OFF2, 0.170 \u00b1 0.001; Friedman test: X2(3)=5.44, p=0.14; n = 33 border cells; Figure 5\u2014figure supplement 4D) or overall firing rates (FR: laser OFF1, 2.95 \u00b1 0.72, laser ON1, 2.43 \u00b1 0.75, laser ON2, 2.39 \u00b1 0.88, laser OFF2, 2.78 \u00b1 0.68; Friedman test: X2(3)=2.64, p=0.45; Figure 5\u2014figure supplement 4C), confirming that the impairment of boundary tuning in RSC during laser application is specific to the silencing of MEC inputs.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "The manuscript interprets the control experiment results.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C83",
+    "claim": "Optogenetic manipulations did not affect allocentric head-direction tuning in RSC, with no changes in firing rate (Average FR: laser OFF1, 1.86 \u00b1 0.53, laser ON, 1.68 \u00b1 0.61, laser OFF2, 1.91 \u00b1 0.62; Friedman test: X2(2)=0.17, p=0.92; n = 47 HD cells).",
+    "claim_type": "EXPLICIT",
+    "source": "In contrast to border cells, our optogenetic manipulations did not affect allocentric head-direction tuning in RSC, with no changes in firing rate (Average FR: laser OFF1, 1.86 \u00b1 0.53, laser ON, 1.68 \u00b1 0.61, laser OFF2, 1.91 \u00b1 0.62; Friedman test: X2(2)=0.17, p=0.92; n = 47 HD cells; Figure 5\u2014figure supplement 3G), mean vector length (MVL: laser OFF1, 0.29 \u00b1 0.03, laser ON, 0.26 \u00b1 0.03, laser OFF2, 0.28 \u00b1 0.03; Friedman test: X2(2)=6.64, p=0.036; Post-hoc Wilcoxon signed-rank test: OFF1-ON, z = 2.17, p=0.030, OFF1-OFF2, z = 1.92, p=0.055; Bonferroni-corrected \u03b1 = 0.025; Figure 5\u2014figure supplement 3H), nor a shift in the preferred direction (Shift in preferred direction: laser OFF1-ON, 0.056 \u00b1 0.06; Wilcoxon signed-rank test: z = 0.95, p=0.34; laser OFF1-OFF2, \u22120.005 \u00b1 0.07; Wilcoxon ranksum test: z = 0.20, p=0.84; Bonferroni-corrected \u03b1 = 0.025; Figure 5\u2014figure supplement 3I) for allocentric head-direction cells, indicating that the head-direction signal in RSC is likely provided by brain regions other than MEC, for example, the anterodorsal thalamic nucleus (Mitchell et al., 2018).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "The manuscript reports statistical analysis of head-direction cells during optogenetic manipulation.",
+    "evidence_type": [
+      "DATA",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C84",
+    "claim": "The head-direction signal in RSC is likely provided by brain regions other than MEC, for example, the anterodorsal thalamic nucleus.",
+    "claim_type": "EXPLICIT",
+    "source": "In contrast to border cells, our optogenetic manipulations did not affect allocentric head-direction tuning in RSC, with no changes in firing rate (Average FR: laser OFF1, 1.86 \u00b1 0.53, laser ON, 1.68 \u00b1 0.61, laser OFF2, 1.91 \u00b1 0.62; Friedman test: X2(2)=0.17, p=0.92; n = 47 HD cells; Figure 5\u2014figure supplement 3G), mean vector length (MVL: laser OFF1, 0.29 \u00b1 0.03, laser ON, 0.26 \u00b1 0.03, laser OFF2, 0.28 \u00b1 0.03; Friedman test: X2(2)=6.64, p=0.036; Post-hoc Wilcoxon signed-rank test: OFF1-ON, z = 2.17, p=0.030, OFF1-OFF2, z = 1.92, p=0.055; Bonferroni-corrected \u03b1 = 0.025; Figure 5\u2014figure supplement 3H), nor a shift in the preferred direction (Shift in preferred direction: laser OFF1-ON, 0.056 \u00b1 0.06; Wilcoxon signed-rank test: z = 0.95, p=0.34; laser OFF1-OFF2, \u22120.005 \u00b1 0.07; Wilcoxon ranksum test: z = 0.20, p=0.84; Bonferroni-corrected \u03b1 = 0.025; Figure 5\u2014figure supplement 3I) for allocentric head-direction cells, indicating that the head-direction signal in RSC is likely provided by brain regions other than MEC, for example, the anterodorsal thalamic nucleus (Mitchell et al., 2018).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "The manuscript interprets the head-direction cell results and cites a previous study.",
+    "evidence_type": [
+      "DATA",
+      "CITATION",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C85",
+    "claim": "Inhibition of MEC affected firing of spatial cells in RSC, as spatial correlations significantly dropped during laser on sessions (spatial correlations: laser OFF1-OFF2, r = 0.59 \u00b1 0.02, laser OFF1-ON, r = 0.44 \u00b1 0.03; Wilcoxon signed-rank test: z = 5.87, p=4.5 \u00d7 10\u22129; n = 83 spatial cells).",
+    "claim_type": "EXPLICIT",
+    "source": "Further analysis on spatially-stable cells, classified based on high spatial correlations across sessions (see Figure 4H), shows that inhibition of MEC did affect firing of spatial cells in RSC, as spatial correlations significantly dropped during laser on sessions (spatial correlations: laser OFF1-OFF2, r = 0.59 \u00b1 0.02, laser OFF1-ON, r = 0.44 \u00b1 0.03; Wilcoxon signed-rank test: z = 5.87, p=4.5 \u00d7 10\u22129; n = 83 spatial cells; Figure 5\u2014figure supplement 3C), suggesting that spatial firing beyond border cording is contingent on spatial information coming from MEC.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "The manuscript reports statistical analysis of spatially-stable cells during MEC inhibition.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C86",
+    "claim": "Spatial firing beyond border coding is contingent on spatial information coming from MEC.",
+    "claim_type": "EXPLICIT",
+    "source": "Further analysis on spatially-stable cells, classified based on high spatial correlations across sessions (see Figure 4H), shows that inhibition of MEC did affect firing of spatial cells in RSC, as spatial correlations significantly dropped during laser on sessions (spatial correlations: laser OFF1-OFF2, r = 0.59 \u00b1 0.02, laser OFF1-ON, r = 0.44 \u00b1 0.03; Wilcoxon signed-rank test: z = 5.87, p=4.5 \u00d7 10\u22129; n = 83 spatial cells; Figure 5\u2014figure supplement 3C), suggesting that spatial firing beyond border cording is contingent on spatial information coming from MEC.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "The manuscript interprets the spatial cell results.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C87",
+    "claim": "Both RSC and MEC are involved in a broader border coding network, where border representations in RSC are dependent on direct inputs from MEC but not vice versa.",
+    "claim_type": "EXPLICIT",
+    "source": "Altogether our manipulation results confirm that both RSC and MEC are involved in a broader border coding network, where border representations in RSC are dependent on direct inputs from MEC but not vice versa.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript provides an interpretation of all manipulation experiment results.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C88",
+    "claim": "MEC border cells have firing fields consistently attached to only one or two walls rather than all, indicating allocentric representations of boundaries.",
+    "claim_type": "EXPLICIT",
+    "source": "We have shown that MEC input is necessary to maintain sharp border tuning in RSC. However, border cells in both regions differ in their respective firing properties, for example, MEC border cells have firing fields consistently attached to only one or two walls rather than all, indicating allocentric representations of boundaries (two examples shown in Figure 6A; variance between average FR near each wall: RSC, CV = 0.103 \u00b1 0.004, MEC, CV = 0.458 \u00b1 0.02; Wilcoxon ranksum test: z = \u221213.25, p=4.6 \u00d7 10\u221240; Figure 6\u2014figure supplement 1C).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "The manuscript describes differences between RSC and MEC border cells.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C89",
+    "claim": "The variance between average firing rate near each wall is significantly different between RSC and MEC border cells (RSC, CV = 0.103 \u00b1 0.004, MEC, CV = 0.458 \u00b1 0.02; Wilcoxon ranksum test: z = \u221213.25, p=4.6 \u00d7 10\u221240).",
+    "claim_type": "EXPLICIT",
+    "source": "We have shown that MEC input is necessary to maintain sharp border tuning in RSC. However, border cells in both regions differ in their respective firing properties, for example, MEC border cells have firing fields consistently attached to only one or two walls rather than all, indicating allocentric representations of boundaries (two examples shown in Figure 6A; variance between average FR near each wall: RSC, CV = 0.103 \u00b1 0.004, MEC, CV = 0.458 \u00b1 0.02; Wilcoxon ranksum test: z = \u221213.25, p=4.6 \u00d7 10\u221240; Figure 6\u2014figure supplement 1C).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "The manuscript reports statistical comparison of firing properties between RSC and MEC.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C90",
+    "claim": "The peak firing rates of border cells in RSC were lower than in MEC (RSC: FR = 4.02 \u00b1 0.53 Hz, MEC: FR = 5.30 \u00b1 0.47 Hz, Wilcoxon ranksum test: z = 2.79, p=0.0053).",
+    "claim_type": "EXPLICIT",
+    "source": "The peak firing rates of border cells in RSC were lower than in MEC (RSC: FR = 4.02 \u00b1 0.53 Hz, MEC: FR = 5.30 \u00b1 0.47 Hz, Wilcoxon ranksum test: z = 2.79, p=0.0053; Figure 6\u2014figure supplement 1D), but both populations had a similar distribution of peak distance tuning (Figure 4J, Figure 6\u2014figure supplement 1E).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "The manuscript reports statistical comparison of peak firing rates.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C91",
+    "claim": "Both RSC and MEC border cell populations had a similar distribution of peak distance tuning.",
+    "claim_type": "EXPLICIT",
+    "source": "The peak firing rates of border cells in RSC were lower than in MEC (RSC: FR = 4.02 \u00b1 0.53 Hz, MEC: FR = 5.30 \u00b1 0.47 Hz, Wilcoxon ranksum test: z = 2.79, p=0.0053; Figure 6\u2014figure supplement 1D), but both populations had a similar distribution of peak distance tuning (Figure 4J, Figure 6\u2014figure supplement 1E).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "The manuscript compares distance tuning distributions between RSC and MEC.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C92",
+    "claim": "Nearly all directionally-selective border cells in RSC have egocentric directional tuning, while MEC border cells show a high degree of conjunctive selectivity to allocentric head-direction.",
+    "claim_type": "EXPLICIT",
+    "source": "Regarding directional tuning properties, we observed that nearly all directionally-selective border cells in RSC have egocentric directional tuning, while MEC border cells show a high degree of conjunctive selectivity to allocentric head-direction (Figure 6B).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "The manuscript describes differences in directional tuning between RSC and MEC border cells.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C93",
+    "claim": "A decoder based on support vector machines estimated the animal's distance away from the wall using population spiking activity and performed with high accuracy for both MEC and RSC in the lower distance range (p<0.05 for 0\u201320 cm).",
+    "claim_type": "EXPLICIT",
+    "source": "A decoder based on support vector machines estimated the animal's distance away from the wall using population spiking activity, and performed with high accuracy for both MEC and RSC in the lower distance range (p<0.05 for 0\u201320 cm, compared with a chance level of 20%; Figure 6C), whereas the animal's running speed was not significantly different across distance bins (Kruskal-Wallis test: X2(4)=3.24, p=0.519).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "The manuscript reports decoding analysis results.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C94",
+    "claim": "Decoding performance from RSC activity dropped to chance level in the higher distance range (p>0.05 for 30\u201350 cm).",
+    "claim_type": "EXPLICIT",
+    "source": "However, decoding performance from RSC activity dropped to chance level in the higher distance range (p>0.05 for 30\u201350 cm; Figure 6C), suggesting RSC border cells mainly encode local information.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "The manuscript reports decoding analysis results for RSC at higher distances.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C95",
+    "claim": "RSC border cells mainly encode local information.",
+    "claim_type": "EXPLICIT",
+    "source": "However, decoding performance from RSC activity dropped to chance level in the higher distance range (p>0.05 for 30\u201350 cm; Figure 6C), suggesting RSC border cells mainly encode local information.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "The manuscript interprets the decoding results.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C96",
+    "claim": "MEC computes distance information that extends toward the center of the arena, with decoding performance above chance-level until the maximum range of 50 cm (p<0.05 for 0\u201350 cm).",
+    "claim_type": "EXPLICIT",
+    "source": "Conversely, MEC computes distance information that extends toward the center of the arena, with decoding performance above chance-level until the maximum range of 50 cm (p<0.05 for 0\u201350 cm; Figure 6C).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "The manuscript reports decoding analysis results for MEC.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C97",
+    "claim": "Population vector correlations along neighboring bins decay faster for MEC than RSC, particularly when the animals are more than 20 cm away from the wall.",
+    "claim_type": "EXPLICIT",
+    "source": "Even though MEC border cells fire maximally at the edge of the arena, population vector correlations along neighboring bins decay faster for MEC than RSC, particularly when the animals are more than 20 cm away from the wall (Figure 6\u2014figure supplement 1A,B), which allows for MEC cells to distinguish wall distance to a larger extent.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "The manuscript reports analysis of population vector correlations.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C98",
+    "claim": "The faster decay of population vector correlations in MEC allows MEC cells to distinguish wall distance to a larger extent.",
+    "claim_type": "EXPLICIT",
+    "source": "Even though MEC border cells fire maximally at the edge of the arena, population vector correlations along neighboring bins decay faster for MEC than RSC, particularly when the animals are more than 20 cm away from the wall (Figure 6\u2014figure supplement 1A,B), which allows for MEC cells to distinguish wall distance to a larger extent.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "The manuscript interprets the population vector correlation results.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C99",
+    "claim": "Spikes of RSC border cells tend to precede a particular movement of the animal, as the amount of information present in motion maps is maximal when shifting spikes earlier in time (p<0.05 for the time lag range of \u2212300 to \u221250 ms compared to shuffled data).",
+    "claim_type": "EXPLICIT",
+    "source": "Shifting spike times in respect to the animal's motion revealed that spikes of RSC border cells tend to precede a particular movement of the animal, as the amount of information present in motion maps is maximal when shifting spikes earlier in time (p<0.05 for the time lag range of \u2212300 to \u221250 ms compared to shuffled data; Figure 6E,F).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "The manuscript reports analysis of time-lagged motion maps.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C100",
+    "claim": "The time-lag shift in motion information was not observed in motion rate maps of MEC border cells, which peaks at zero time lag.",
+    "claim_type": "EXPLICIT",
+    "source": "This shift was not observed in motion rate maps of MEC border cells, which peaks at zero time lag (Figure 6G), showing that spike correlations of RSC border cells with prospective motion are not simply due to behavioral restrictions near walls.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "The manuscript reports analysis of MEC motion maps.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C101",
+    "claim": "Spike correlations of RSC border cells with prospective motion are not simply due to behavioral restrictions near walls.",
+    "claim_type": "EXPLICIT",
+    "source": "This shift was not observed in motion rate maps of MEC border cells, which peaks at zero time lag (Figure 6G), showing that spike correlations of RSC border cells with prospective motion are not simply due to behavioral restrictions near walls.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "The manuscript interprets the comparison between RSC and MEC motion maps.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C102",
+    "claim": "Aligning the animal's changes in movement direction using the cell's spike timings revealed consistent turning behavior of the animal 200 ms after cell firing.",
+    "claim_type": "EXPLICIT",
+    "source": "Next, we aligned the animal's changes in movement direction using the cell's spike timings, which revealed consistent turning behavior of the animal 200 ms after cell firing (Figure 6H).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "The manuscript reports spike-triggered average analysis results.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C103",
+    "claim": "The direction of turning was opposite for cells recorded in different hemispheres, where border cells in right RSC fired prospective to right turns, while spikes in left RSC preceded left turns.",
+    "claim_type": "EXPLICIT",
+    "source": "The direction of turning was opposite for cells recorded in different hemispheres, where border cells in right RSC fired prospective to right turns, while spikes in left RSC preceded left turns (Figure 6H).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "The manuscript reports hemisphere-specific prospective activity.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C104",
+    "claim": "Prospective correlates were not observed in MEC border cells.",
+    "claim_type": "EXPLICIT",
+    "source": "Such prospective correlates were not observed in MEC border cells (Figure 6I), nor in simulated cells with egocentric border tuning (Figure 6\u2014figure supplement 1F,G), confirming the relationship between RSC border cell firing and the animal's next motion.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "The manuscript reports analysis of MEC border cells showing no prospective activity.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C105",
+    "claim": "Prospective correlates were not observed in simulated cells with egocentric border tuning.",
+    "claim_type": "EXPLICIT",
+    "source": "Such prospective correlates were not observed in MEC border cells (Figure 6I), nor in simulated cells with egocentric border tuning (Figure 6\u2014figure supplement 1F,G), confirming the relationship between RSC border cell firing and the animal's next motion.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "The manuscript reports analysis of simulated cells showing no prospective activity.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C106",
+    "claim": "The results confirm the relationship between RSC border cell firing and the animal's next motion.",
+    "claim_type": "EXPLICIT",
+    "source": "Such prospective correlates were not observed in MEC border cells (Figure 6I), nor in simulated cells with egocentric border tuning (Figure 6\u2014figure supplement 1F,G), confirming the relationship between RSC border cell firing and the animal's next motion.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "The manuscript interprets the combined results on prospective activity.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C107",
+    "claim": "RSC and MEC encode different aspects of border representations, playing distinct roles in navigation behavior.",
+    "claim_type": "EXPLICIT",
+    "source": "These results together support the idea that RSC and MEC encode different aspects of border representations, playing distinct roles in navigation behavior.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript provides an overall interpretation of the comparative results.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C108",
+    "claim": "Rodents are able to discriminate positions within an open field arena by relying on distal cues in the room, allowing them to navigate to a desired location.",
+    "claim_type": "EXPLICIT",
+    "source": "Rodents, for example, are able to discriminate positions within an open field arena by relying on distal cues in the room, allowing them to navigate to a desired location (Morris, 1981).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript cites a previous study on rodent navigation.",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C109",
+    "claim": "Population activity of place cells can distinguish nearby positions at several centimeter resolution in an open field arena.",
+    "claim_type": "EXPLICIT",
+    "source": "This ability is manifested in the activity of neurons that fire at particular locations in space, such as place cells or grid cells (Hafting et al., 2005; O'Keefe and Dostrovsky, 1971), and population activity of place cells can distinguish nearby positions at several centimeter resolution in an open field arena (Brown et al., 1998).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript cites previous studies on place cell spatial resolution.",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C110",
+    "claim": "Accurate spatial coding is based on the estimation of distance and direction relative to landmarks, particularly environmental boundaries such as walls or edges.",
+    "claim_type": "EXPLICIT",
+    "source": "It has been suggested that this accurate spatial coding is based on the estimation of distance and direction relative to landmarks, particularly environmental boundaries such as walls or edges (Barry et al., 2006; O'Keefe and Burgess, 1996).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript cites previous theoretical work on spatial coding.",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C111",
+    "claim": "Border cells in MEC develop earlier than grid cells after birth, exhibiting adult-like firing fields at postnatal days 16\u201318 when grid cells still exhibit immature irregular firing fields.",
+    "claim_type": "EXPLICIT",
+    "source": "In accordance with this idea, border cells in MEC develop earlier than grid cells after birth, exhibiting adult-like firing fields at postnatal days 16\u201318 when grid cells still exhibit immature irregular firing fields (Bjerknes et al., 2014).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript cites a previous developmental study.",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C112",
+    "claim": "Position errors of firing fields of grid cells accumulate after the animal leaves a wall of an open field arena, suggesting an error-correcting role of environmental boundaries for internal spatial representations.",
+    "claim_type": "EXPLICIT",
+    "source": "It has further been shown that position errors of firing fields of grid cells accumulate after the animal leaves a wall of an open field arena, suggesting an error-correcting role of environmental boundaries for internal spatial representations (Hardcastle et al., 2015).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript cites a previous study on grid cell error correction.",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C113",
+    "claim": "Recent studies have identified neurons that encode various spatial landmarks in a self-centered egocentric perspective in several brain regions.",
+    "claim_type": "EXPLICIT",
+    "source": "While neurons in MEC or subiculum represent environmental boundaries in a viewpoint-invariant allocentric coordinate frame, recent studies have identified neurons that encode various spatial landmarks in a self-centered egocentric perspective, for example, objects in the lateral entorhinal cortex (Wang et al., 2018), the arena center in the postrhinal cortex (LaChance et al., 2019) and nearby boundaries in the dorsomedial striatum (Hinman et al., 2019), postrhinal cortex (Gofman et al., 2019), and retrosplenial cortex (Alexander et al., 2020).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript cites multiple recent studies on egocentric spatial coding.",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C114",
+    "claim": "It is still largely unclear how each type of representation (egocentric or allocentric) is generated, and the degree of functional interaction and dependency that exists between them.",
+    "claim_type": "EXPLICIT",
+    "source": "The brain thus forms landmark representations in two different reference frames, in either egocentric or allocentric spatial coordinate systems. It is however still largely unclear how each type of representation is generated, and the degree of functional interaction and dependency that exists between them.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript identifies a gap in current knowledge.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C115",
+    "claim": "Self-referenced representations can be generated directly by sensory inputs, as incoming sensory information is initially anchored to sensory organs mapped on the body.",
+    "claim_type": "EXPLICIT",
+    "source": "Self-referenced representations can be generated directly by sensory inputs, as incoming sensory information is initially anchored to sensory organs mapped on the body, for example, visual information on the retina, tactile sensation on the skin, or proprioceptive signals from skeletal muscles.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript describes a theoretical possibility for generating egocentric representations.",
+    "evidence_type": [
+      "KNOWLEDGE",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C116",
+    "claim": "Egocentric representations may be the result of a coordinate transformation of the brain's allocentric map to guide the animal's behavior, because navigational plans and their underlying sequence of motor actions based on the internal map should be executed in the brain's motor areas in self-referenced coordinates.",
+    "claim_type": "EXPLICIT",
+    "source": "It is however also possible that egocentric representations are the result of a coordinate transformation of the brain's allocentric map to guide the animal's behavior, because navigational plans and their underlying sequence of motor actions based on the internal map should be executed in the brain's motor areas in self-referenced coordinates (Ekstrom et al., 2014; Georgopoulos, 1988).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript describes an alternative theoretical possibility and cites previous work.",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C117",
+    "claim": "Previous studies suggested the importance of coordinate transformation for spatial navigation relying on the brain's allocentric map.",
+    "claim_type": "EXPLICIT",
+    "source": "While previous studies suggested the importance of coordinate transformation for spatial navigation relying on the brain's allocentric map (Bicanski and Burgess, 2018; Byrne et al., 2007; Clark et al., 2018), the direct evidence of such transformation in the brain is still missing.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript cites previous theoretical work on coordinate transformation.",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C118",
+    "claim": "Direct evidence of coordinate transformation in the brain is still missing.",
+    "claim_type": "EXPLICIT",
+    "source": "While previous studies suggested the importance of coordinate transformation for spatial navigation relying on the brain's allocentric map (Bicanski and Burgess, 2018; Byrne et al., 2007; Clark et al., 2018), the direct evidence of such transformation in the brain is still missing.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript identifies a gap in current knowledge.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C119",
+    "claim": "RSC locates at an interface region of the hippocampus and MEC with sensory and motor cortices.",
+    "claim_type": "EXPLICIT",
+    "source": "Anatomically, RSC locates at an interface region of the hippocampus and MEC with sensory and motor cortices (van Groen and Wyss, 1990; van Groen and Wyss, 1992; Van Groen and Wyss, 2003; Jones and Witter, 2007; Sugar et al., 2011).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript cites previous anatomical studies.",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C120",
+    "claim": "Both human patients and rodents with lesions in RSC exhibited severe impairment in navigation ability.",
+    "claim_type": "EXPLICIT",
+    "source": "While both human patients and rodents with lesions in RSC exhibited severe impairment in navigation ability (Takahashi et al., 1997; Vann et al., 2009), the exact role of RSC has been largely unclear until recently, with several recent studies providing clues for understanding RSC function.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript cites previous lesion studies.",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C121",
+    "claim": "An fMRI study in humans demonstrated that RSC is particularly engaged in representing permanent landmarks in the environment.",
+    "claim_type": "EXPLICIT",
+    "source": "An fMRI study in humans demonstrated that RSC is particularly engaged in representing permanent landmarks in the environment (Auger et al., 2012), which is consistent with the present finding of border cells as walls can serve as permanent landmarks in an open field arena, especially in the absence of local cues.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript cites a previous human imaging study.",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C122",
+    "claim": "Recording studies in rats have identified several types of spatially-tuned cells in RSC, such as head-direction cells, place cells, and cells that represent geometric features of the environment.",
+    "claim_type": "EXPLICIT",
+    "source": "On the other hand, recording studies in rats have identified several types of spatially-tuned cells in RSC, such as head-direction cells, place cells, and the cells that represent geometric features of the environment (Alexander and Nitz, 2015; Cho and Sharp, 2001; Mao et al., 2017).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript cites previous recording studies in rats.",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C123",
+    "claim": "RSC has been considered an ideal brain region to implement a transformation of spatial representations between egocentric and allocentric coordinate systems.",
+    "claim_type": "EXPLICIT",
+    "source": "Because of the existence of these spatially-tuned cells as well as anatomical connections, RSC has been considered an ideal brain region to implement a transformation of spatial representations between egocentric and allocentric coordinate systems (Bicanski and Burgess, 2018; Byrne et al., 2007; Mitchell et al., 2018).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript cites previous theoretical work on RSC function.",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C124",
+    "claim": "Allocentric-egocentric transformation is an essential computational step for navigation because spatial representations in the parahippocampal regions are anchored to external features while motor execution is referenced to the actor's body.",
+    "claim_type": "EXPLICIT",
+    "source": "The allocentric-egocentric transformation is an essential computational step for navigation because, while spatial representations in the parahippocampal regions about head-direction, places, or borders, are anchored to external features of the environment (i.e., in allocentric coordinates), experiencing the world through sensory organs and executing motor plans to move through space is referenced to the actor's body and viewpoint (i.e., in egocentric coordinates).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript provides a theoretical argument for the necessity of coordinate transformation.",
+    "evidence_type": [
+      "KNOWLEDGE",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C125",
+    "claim": "A theoretical model proposed that information about allocentric boundary locations is integrated with head-direction signals to form egocentric border representations.",
+    "claim_type": "EXPLICIT",
+    "source": "This idea was proposed as a theoretical model (Byrne et al., 2007), in which the information about allocentric boundary locations is integrated with head-direction signals to form egocentric border representations.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript cites a previous theoretical model.",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C126",
+    "claim": "RSC provides inputs to brain regions necessary for motor control and initiation, such as premotor and motor cortices, cingulate cortex, as well as the dorsal striatum.",
+    "claim_type": "EXPLICIT",
+    "source": "RSC provides inputs to brain regions necessary for motor control and initiation, such as premotor and motor cortices, cingulate cortex, as well as the dorsal striatum (Guo et al., 2015; Jones et al., 2005; Yamawaki et al., 2016).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript cites previous anatomical studies on RSC outputs.",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C127",
+    "claim": "A recent recording study on the dorsomedial striatum has identified a type of neurons that fire near environmental borders in a similar manner as RSC border cells do.",
+    "claim_type": "EXPLICIT",
+    "source": "A recent recording study on the dorsomedial striatum has identified a type of neurons that fire near environmental borders in a similar manner as RSC border cells do.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript references a recent related study.",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C128",
+    "claim": "Striatal border cells' egocentric tuning is largely dependent on the animal's movement direction, rather than head-direction as in RSC border cells.",
+    "claim_type": "EXPLICIT",
+    "source": "However, their egocentric tuning is largely dependent on the animal's movement direction (Hinman et al., 2019), rather than head-direction as in RSC border cells (Alexander et al., 2020).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript cites studies comparing striatal and RSC border cells.",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C129",
+    "claim": "All experiments were approved by the local authorities (RP Darmstadt, protocol F126/1009) in concordance with the European Convention for the Protection of Vertebrate Animals used for Experimental and Other Scientific Purposes.",
+    "claim_type": "EXPLICIT",
+    "source": "All experiments were approved by the local authorities (RP Darmstadt, protocol F126/1009) in concordance with the European Convention for the Protection of Vertebrate Animals used for Experimental and Other Scientific Purposes.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript states ethical approval for the experiments.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C130",
+    "claim": "Subjects were 19 male Long-Evans rats weighing 400 to 550 g (aged 3\u20135 months) at the start of the experiment.",
+    "claim_type": "EXPLICIT",
+    "source": "Subjects were 19 male Long-Evans rats weighing 400 to 550 g (aged 3\u20135 months) at the start of the experiment.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript describes the experimental subjects.",
+    "evidence_type": [
+      "DATA"
+    ]
+  }
+]

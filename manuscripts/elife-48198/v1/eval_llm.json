@@ -1,0 +1,316 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C5",
+      "C6",
+      "C7"
+    ],
+    "result": "Utah multi-electrode arrays were successfully implanted in area 2 of S1 in three monkeys, with receptive field mapping confirming array placement. Both deep and cutaneous receptive fields were found across arrays, and a proximal-to-distal somatotopic gradient was observed in Monkeys C and H, consistent with previous literature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C2, C5, C6, and C7 provide converging evidence from surgical implantation, receptive field mapping, and comparison to prior studies (Pons et al., 1985). The somatotopic gradient analysis includes appropriate statistical testing (p < 0.05) and is shown in Figure 1. The limitation for Monkey L (C7) is appropriately acknowledged.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C41"
+    ],
+    "result": "The whole-arm model significantly outperformed the hand-only model in predicting neural activity variance across two workspaces. Of 288 neurons, 238 were significantly better predicted by the whole-arm model (p < 0.05), while 50 showed no significant difference.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C10 present clear statistical results with appropriate significance testing (p < 0.05, Bonferroni corrected) and cross-validation (C127-C128). The pseudo-R2 metric is justified for Poisson-distributed neural data (C103-C105). Results are shown in Figure 4 and meet the first criterion for model effectiveness (C41).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C42"
+    ],
+    "result": "The whole-arm model demonstrates a consistent, generalizable relationship between neural activity and arm kinematics across workspaces. Models trained on both workspaces achieved similar accuracy to models trained on individual workspaces.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C12 show that the whole-arm model maintains predictive accuracy when trained across both workspaces (Figure 5), satisfying the second effectiveness criterion (C42). The unity line comparison provides clear visual evidence of model consistency, and the cross-validation approach ensures generalizability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C43"
+    ],
+    "result": "The whole-arm model successfully predicted changes in directional tuning curves between workspaces. Of 288 neurons, 138 were significantly better predicted by the whole-arm model in tuning curve correlation, while only 2 were better predicted by the hand-only model.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13-C17 demonstrate that the whole-arm model captures tuning curve changes not explicitly trained on (C43), meeting the third effectiveness criterion. Statistical testing (p < 0.05) and Figure 6 support the superiority of the whole-arm model. The analysis appropriately focuses on the 260 neurons significantly tuned in both workspaces.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "The whole-arm model predicted preferred direction (PD) shifts between workspaces with high accuracy (circular VAF = 0.75) compared to the hand-only model (cVAF = 0.57). The whole-arm model outperformed the hand-only model in 7 of 8 sessions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C20 provide quantitative evidence with appropriate circular statistics (cVAF) for angular data. Figure 7 shows both individual neuron predictions and session-level comparisons. The statistical testing is rigorous with session-by-session pairwise comparisons, and only one session showed no significant difference.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C54"
+    ],
+    "result": "In the active/passive experiment, whole-arm kinematics were highly separable between conditions (89% LDA classification accuracy), and many area 2 neurons showed above-chance separability indices, despite similar hand kinematics in the 120 ms analysis window.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21, C22, and C54 establish that while hand kinematics were similar (Figure 8B), whole-arm kinematics and neural responses differed between active and passive movements. The LDA classification provides quantitative evidence of separability. The 120 ms window is justified by behavioral similarity and reaction time considerations (C52-C53).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C37"
+    ],
+    "result": "Model consistency (whole-arm model pR2 trained across both active and passive conditions) correlated negatively with neural separability index. Neurons that distinguished active from passive movements were those for which a consistent whole-arm kinematic model could not be found.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C24 present a counterintuitive but well-supported finding shown in Figure 11. The negative correlation suggests that neurons distinguishing movement types do so based on non-kinematic factors. The analysis appropriately uses model consistency as a proxy for kinematic representation and includes confidence intervals from cross-validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C25",
+      "C59",
+      "C60"
+    ],
+    "result": "The differential neural responses to active versus passive movements that cannot be explained by kinematics may reflect efference copy signals from motor areas or altered gamma drive to muscle spindles during voluntary movements.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C25, C59, and C60 offer plausible mechanistic explanations supported by citations, but remain speculative. While the negative correlation between model consistency and separability (C23) supports the conclusion that non-kinematic factors are involved, the specific mechanisms (efference copy vs. gamma drive) are not directly tested. Alternative explanations like nonlinear kinematic encoding (C106-C107) are also discussed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "Neural activity in area 2 includes representation of the whole arm during reaching, and many neurons represented limb state differently during active and passive movements.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C36 summarize the main findings from both experiments. The whole-arm representation is strongly supported by the two-workspace experiment results (C8-C20), and the differential representation during active/passive movements is supported by the model consistency analysis (C23-C24, Figure 10-11).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "The two-workspace experimental design with random target placement reduced movement stereotypy and created different correlations between behavioral signals across workspaces, enabling reliable discrimination between kinematic models.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C48 explain the rationale for the experimental design. The approach addresses the challenge that highly correlated behavioral signals in typical center-out tasks make model comparison difficult. The different arm postures in the two workspaces (C45) force models to make different predictions, as demonstrated by the results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "The whole-arm model, which adds elbow position and velocity to hand kinematics, performed as well as or better than more complex biomechanical models based on joint angles or muscle lengths.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C40 describe the models tested. The comparison to more complex models is stated to be detailed in Appendix 1 (C40). The choice of the simpler whole-arm Cartesian model over more complex alternatives is justified by comparable or superior performance, though the full evidence is in the appendix.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C103",
+      "C104",
+      "C105",
+      "C126"
+    ],
+    "result": "Neural activity was modeled using Poisson generalized linear models with pseudo-R2 as the goodness-of-fit metric, appropriate for the Poisson-like statistics of neural firing rates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C103-C105 and C126 justify the methodological choices with appropriate citations. Pseudo-R2 is correctly described as more suitable than R2 or VAF for count data, with proper interpretation guidelines (0.2 as 'good' fit). The Poisson GLM framework is standard for neural spike data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131"
+    ],
+    "result": "Models were evaluated using repeated 5-fold cross-validation (20 repeats, n=100 samples) with corrected resampled t-tests for statistical comparisons. A Bonferroni correction factor of 6 was applied for multiple comparisons, and all tests were performed within sessions or neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C127-C131 describe rigorous statistical methods. The cross-validation approach prevents overfitting, the corrected resampled t-test (Ernst 2017; Nadeau & Bengio 2003) accounts for dependencies in cross-validation, and the Bonferroni correction is conservative (accounting for exploratory analyses). Within-session/neuron testing avoids inappropriate pooling across subjects.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "The two-workspace experiment included 8 total sessions (3 each from Monkeys C and H, 2 from Monkey L), and the active/passive experiment included 4 sessions (2 each from Monkeys C and H).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C51 clearly state the sample sizes for each experiment. While the number of sessions is modest, the analysis is performed at the neuron level (288 neurons for two-workspace, shown in C9) with appropriate within-session statistical testing (C130).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C118",
+      "C119",
+      "C120"
+    ],
+    "result": "Arm kinematics were tracked using a custom Microsoft Kinect-based motion tracking system that recorded 3D locations of colored markers painted on the monkey's arm, aligned to the manipulandum coordinate frame.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C118-C120 describe the motion tracking methodology with appropriate citation (Chan & Moran, 2006). The alignment procedure to the manipulandum frame is clearly described. Code availability is mentioned (C119), supporting reproducibility.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "Different whole-arm kinematic representations (Cartesian, joint angles, muscle lengths) have one-to-one correspondence and thus comparisons between them test coordinate frame rather than information content. Such comparisons are only meaningful for linear models.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C84 provide important conceptual clarification about model comparisons. The mathematical argument that hand+elbow position determines joint angles and muscle lengths is sound. The limitation that coordinate frame comparisons become problematic with nonlinear models is appropriately acknowledged with citation to related work (Lucas et al., 2019).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C106",
+      "C107"
+    ],
+    "result": "Some neurons with inconsistent linear relationships across active/passive conditions may reflect single nonlinear relationships requiring different linear approximations in each condition, as evidenced by high within-condition pR2 values.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C106-C107 present an alternative explanation for inconsistent model fits. While C107 provides supporting evidence (high within-condition pR2 in Figure 10), this remains speculative. The GLM framework used (C126) assumes linear relationships, so nonlinearity cannot be directly tested with the current analysis. This is appropriately presented as a limitation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "Prior literature established that area 2 is important for proprioception during reaching, receives mixed muscle and cutaneous inputs, and has been modeled primarily using hand kinematics. However, computational studies suggest endpoint tuning may reflect limb biomechanics, and recent work found muscle lengths better predict area 2 activity than hand kinematics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C33 accurately summarize relevant prior work with appropriate citations. The progression from hand-based models (C28) to biomechanical considerations (C30) to muscle-based models (C31) provides context for the current study. The citations appear accurate and relevant.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "Current ICMS approaches for proprioceptive feedback in BCIs have limitations. Previous attempts to use area 2 PDs for ICMS-based proprioceptive feedback showed mixed results, possibly because they relied on hand-based models and assumed similar representation of active and passive movements. A whole-arm model approach may be more successful.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C65-C75 discuss BCI applications and prior ICMS work. The replication failure (C73) and proposed explanation (C74) are appropriately speculative. While the current findings suggest whole-arm models may improve ICMS paradigms (C75), this remains untested. The discussion appropriately distinguishes between perception and action streams (C76-C78) but these remain future directions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "The study leaves open questions about how proprioceptive information is processed across different areas (DRG, cuneate nucleus, thalamus, S1 areas 3a, 2, and 5). Different areas likely have different representations, with area 3a potentially retaining muscle-like representations and area 5 having higher-level representations. Future multi-area recordings could examine information flow between these regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C102 appropriately acknowledge limitations and suggest future directions. The speculation about different representations across areas (C92-C100) is supported by citations about their inputs and properties. The suggestion for multi-area recordings (C101-C102) is reasonable given technological advances. These are appropriately framed as open questions rather than conclusions.",
+    "result_type": "MINOR"
+  }
+]

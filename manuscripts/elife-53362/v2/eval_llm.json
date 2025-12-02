@@ -1,0 +1,349 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C25",
+      "C26",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C47",
+      "C48"
+    ],
+    "result": "H2A.1 deletion, but not H2A.2 deletion, significantly increases CAG repeat expansion frequency (7-fold, p=2.7\u00d710\u207b\u2075) and contractions (2.6-fold), while H2A.2 deletion has no significant effect on expansions. Among histone H2 proteins, only H2A.1 plays a significant role in preventing CAG repeat expansions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The differential effects are well-documented with appropriate statistical analysis (C37, C38) and multiple independent measurements. The fragility data showed high variability (C34) but the instability assays provide robust support. Controls with H2A.2 deletion consistently show no effect, strengthening the specificity claim. The conclusion is appropriately limited to the data presented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C51",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "The sequence of H2A.1, not histone expression levels or timing, is required to prevent CAG repeat expansions. When H2A.2 is expressed from the H2A.1 promoter (hta1\u0394::HTA2), CAG expansions remain significantly elevated (p=4.2\u00d710\u207b\u2074) despite equal H2A protein levels and no gene amplification.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The hta1\u0394::HTA2 experiment is well-designed to distinguish sequence from expression effects. Western blot confirmation of equal expression (C53) and qPCR verification of no gene amplification (C54) provide strong controls. The persistent elevation of expansions (C55) despite normalized expression convincingly demonstrates sequence-specific requirements. The partial suppression of contractions (C56) suggests some functions are dosage-dependent while others are sequence-specific.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "Nucleosome positioning at the CAG repeat is maintained in hta1\u0394 mutants. Both MNase digestion and Illumina array analysis show positioned nucleosomes with canonical spacing that are not altered in hta1\u0394 or hta2\u0394 backgrounds, indicating nucleosome positioning is not the major factor in CAG instability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Two independent methods (MNase indirect end-labeling and Illumina array) converge on the same conclusion (C60, C62, C64). The data show discrete protected fragments with ~165 bp spacing (C61) and strong protection at CAG-containing probes (C62) that is unchanged in mutants. The conclusion appropriately acknowledges that subtle differences not detected by these methods could still exist (C66). The methods are appropriate for the question asked.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C27",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C73",
+      "C74",
+      "C76",
+      "C77"
+    ],
+    "result": "The H2A.1 threonine 126 (T126) residue is required to prevent CAG expansions. The T126A mutation significantly increases expansions (3.7-fold, p=0.04), and this effect is not rescued by the phospho-mimic T126E mutation (3.7-fold, p=0.01). The T126 residue primarily protects against expansions rather than contractions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The T126A mutation phenocopies the hta1\u0394 expansion phenotype (C68, C70), providing strong genetic evidence. The lack of rescue by T126E (C73) suggests either dynamic phosphorylation or another property of threonine is important (C74). The differential effect on expansions vs. contractions (C76) is clearly documented. However, the p-values are marginal (p=0.04) and the conclusion about phosphorylation (C72, C74) remains somewhat uncertain given the T126E result.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C100",
+      "C101"
+    ],
+    "result": "H2A-S129 phosphorylation is not required for CAG repeat stability. The hta1-S129A mutant shows no significant change in expansion or contraction frequencies, and the double hta1-S129A/T126A mutant shows no additive effect beyond T126A alone. S129 phosphorylation is not impaired by the T126A mutation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The lack of phenotype in hta1-S129A (C79) is clearly demonstrated, and the epistasis with T126A (C80) suggests these residues function in different contexts. Western blot data showing normal S129ph in T126A mutants (C100) rules out indirect effects through S129 phosphorylation. This negative result is important for understanding the specificity of T126 function and is well-controlled.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "A custom antibody raised against H2A.1-T126ph specifically recognizes the H2A.1 isoform. The antibody signal is reduced to 20-30% in hta1\u0394 and hta1-T126A strains but not in hta2\u0394, while total H2A levels remain constant. Phosphatase treatment reduces signal by only 30%.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The antibody characterization reveals significant limitations. While it shows specificity by peptide dot blot (C82) and differential recognition of H2A variants (C84), the modest 30% reduction with phosphatase treatment (C83) indicates it primarily recognizes the unphosphorylated H2A.1 isoform rather than the phosphorylated form. This complicates interpretation of all ChIP and Western blot experiments using this antibody. The authors acknowledge this limitation but the antibody should be designated as 'H2A.1' rather than 'H2A.1T126' or 'H2A.1-T126ph' to avoid confusion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "H2A.1 is specifically enriched at the CAG repeat 40 minutes into S-phase, coinciding with peak \u03b3H2A levels, and returns to baseline by 60 minutes. This enrichment is specific to H2A.1 and not due to increased nucleosome occupancy, as H2B and H3 levels remain constant. H2A.1 protein levels do not increase across the cell cycle.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The ChIP time course (C88) shows clear enrichment at the CAG repeat but not at the ACT1 control locus (C87). Controls for H2B and H3 occupancy (C89) rule out general nucleosome changes. The timing relative to \u03b3H2A and Mre11 (C92) is consistent with a repair function. However, given the antibody limitations noted above, the signal likely reflects H2A.1 incorporation rather than T126 phosphorylation specifically. The conclusion about damage-specific incorporation (C94) is reasonable but should be stated more cautiously.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "H2A.1 expression and H2A.1-T126 phosphorylation are not induced by DNA damage. Treatment with MMS or HU+MMS does not increase H2A.1T126 antibody signal, and the hta1-T126A mutant shows no sensitivity to DNA damaging agents.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Multiple lines of evidence support this conclusion: MMS treatment decreases rather than increases the antibody signal (C95), HU+MMS treatment shows no change (C96), and the T126A mutant is not sensitive to DNA damaging agents (C99). The conclusion is appropriately stated as tentative regarding T126 phosphorylation (C98) given antibody limitations. This negative result is important for understanding that H2A.1 functions differently from damage-inducible modifications.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "CAG expansions in hta1\u0394 and hta1-T126A mutants do not arise through NHEJ. Expansion frequencies remain elevated in hta1\u0394lif1\u0394 and hta1-T126A lif1\u0394 double mutants, and previous work found no NHEJ defects in hta1-T126A.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The lack of suppression by lif1\u0394 (C104) clearly rules out NHEJ as the source of expansions. This is corroborated by previous work (C106). The conclusion is straightforward and well-supported. This negative result appropriately narrows the mechanistic possibilities.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "H2A.1 does not appear to contribute to the fidelity of Rad5-dependent post-replication repair. Expansions in hta1\u0394rad5\u0394 show some suppression but not statistically significant, and expansions remain elevated in hta1-T126A rad5\u0394. The non-additive phenotype suggests Rad5 may work upstream of H2A.1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The data show a trend toward suppression (C108) but lack statistical significance. The authors appropriately note the caveat that rad5\u0394 itself elevates expansions (C110), which could mask suppression. The inference about pathway order (C111) is reasonable but speculative. This result is inconclusive and would benefit from additional experiments or larger sample sizes to achieve statistical power.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118"
+    ],
+    "result": "CAG expansions in hta1\u0394 arise through Rad51- and Rad52-dependent homologous recombination. Expansions are significantly suppressed in hta1\u0394rad52\u0394 (2.9-fold, p=2.8\u00d710\u207b\u00b3), hta1\u0394rad51\u0394 (5.2-fold, p=7.7\u00d710\u207b\u00b3), and hta1\u0394rad57\u0394 (4.5-fold, p=1.4\u00d710\u207b\u00b3) double mutants. Similar trends are observed in hta1-T126A double mutants. The suppression by rad57\u0394 suggests involvement of sister chromatid recombination.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The suppression in multiple HR mutants (C112, C113) with significant p-values provides strong evidence for HR-dependent expansions. The ~2-fold suppression in T126A double mutants (C114), while not statistically significant, shows consistent trends. The connection to SCR through Rad57 (C117, C118) is well-reasoned based on previous literature. The genetic evidence is robust and the conclusions are appropriately stated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129"
+    ],
+    "result": "H2A.1 and H2A.1-T126 are required for efficient sister chromatid recombination (SCR). SCR is suppressed 2.4-fold in hta1\u0394 (p=7.9\u00d710\u207b\u00b3) and 2.7-fold in hta1-T126A (p=4.9\u00d710\u207b\u00b3), but not in hta2\u0394. The reduction is independent of H2A.2 presence and occurs despite increased CAG expansions, suggesting a defect after initiation during D-loop synthesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The SCR assay shows clear differential effects between H2A.1 and H2A.2 (C119, C120) with significant p-values. The T126A phenotype (C122) mirrors the deletion, and the effect is independent of H2A.2 (C125, C126). The inference about D-loop synthesis (C127) is logical given decreased SCR but increased HR-dependent expansions. The S129A effect (C123) is milder and consistent with previous work. The data are internally consistent and well-controlled.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C130",
+      "C131",
+      "C132",
+      "C133"
+    ],
+    "result": "H2A.1 is not required for single-strand annealing (SSA) repair or DNA damage checkpoint activation. No differences in SSA viability or repair kinetics were observed between hta1\u0394, hta2\u0394, and wild-type strains, and no significant defect in Rad53 phosphorylation was detected in hta1\u0394.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The SSA assay (C130) and checkpoint analysis (C132) provide clear negative results that help define the specificity of H2A.1 function. The conclusion that H2A.1 is not important for resection, alignment, or gap fill-in (C131) is logical since these are required for SSA. These negative controls strengthen the overall model by showing H2A.1 is specifically required for D-loop-mediated repair pathways.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C137",
+      "C138",
+      "C139",
+      "C140"
+    ],
+    "result": "H2A.1 and T126 function in the same pathway as Pol32 (Pol\u03b4 subunit) during sister chromatid recombination. SCR is significantly suppressed in pol32\u0394, and this suppression is epistatic to hta1\u0394 and hta1-T126A, as SCR rates are not further diminished in double mutants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The epistasis analysis (C139) is well-designed and clearly demonstrates that H2A.1/T126 and Pol32 function in the same pathway. The establishment that Pol32 is required for D-loop extension in this assay (C138) is novel and important. The conclusion about facilitating D-loop extension (C140) is well-supported by the genetic data. This is a key mechanistic insight.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C141",
+      "C142",
+      "C143",
+      "C144",
+      "C145",
+      "C146",
+      "C147",
+      "C148",
+      "C149",
+      "C150"
+    ],
+    "result": "Pol32 is required to prevent CAG repeat expansions, and expansions in pol32\u0394 occur during recombination. The pol32\u0394 mutant shows 5.8-fold increased expansions (p=2.0\u00d710\u207b\u00b3) and increased fragility. Expansions are partially suppressed by rad51\u0394 and show less-than-additive effects in hta1\u0394pol32\u0394 and hta1-T126A pol32\u0394 double mutants, suggesting Pol32-dependent synthesis is responsible for some expansions in hta1\u0394 backgrounds.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The pol32\u0394 expansion phenotype (C141) is well-documented with significant p-values. The suppression by rad51\u0394 (C144) demonstrates recombination-dependence. The less-than-additive phenotype in double mutants (C146, C148) suggests pathway interaction, though the lack of statistical significance (C148) is noted. The inference about Pol32-dependent synthesis (C147) is reasonable given the genetic data. The conclusion about downstream function (C149) is well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C152",
+      "C153",
+      "C154",
+      "C155",
+      "C156",
+      "C157",
+      "C158",
+      "C159",
+      "C160",
+      "C161"
+    ],
+    "result": "H2A.1 is required for efficient break-induced replication (BIR). BIR frequency is suppressed 2.3-fold in hta1\u0394 (p=1.0\u00d710\u207b\u2074) but remains at wild-type levels in hta2\u0394 and hta1-T126A. The repair outcome profile is altered in hta1\u0394 with increased alternative repair pathways, similar to pol32\u0394.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The BIR assay shows clear suppression in hta1\u0394 (C153) with highly significant p-values, but no effect in hta2\u0394 or T126A (C154). The altered repair outcomes (C158, C159) provide additional support. The lack of T126A effect (C155) distinguishes BIR from SCR and suggests different requirements. The speculation about histone levels affecting pathway choice (C157) is reasonable but appropriately presented as speculative. The data support a role for H2A.1 in BIR that is independent of T126.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C163",
+      "C164",
+      "C166",
+      "C222"
+    ],
+    "result": "H2A.1 is more efficient at promoting high-fidelity HR than H2A.2 due to protein sequence, specifically the position of threonine 126. Yeast H2A.1 is functionally a closer homolog of mammalian H2AX than H2A.2, playing a greater HR-specific role.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This conclusion integrates multiple lines of evidence: differential effects on CAG stability (Result 1), sequence-specific requirements (Result 2), T126 function (Result 4), SCR defects (Result 12), and BIR defects (Result 16). The comparison to mammalian H2AX (C166) is well-reasoned based on functional similarities and sequence conservation (C167). The conclusion is appropriately broad and supported by the cumulative data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C171",
+      "C172",
+      "C176",
+      "C177",
+      "C178",
+      "C179"
+    ],
+    "result": "H2A.1-T126 promotes high-fidelity recombination by facilitating efficient D-loop extension. Overall HR/SCR levels are suppressed in hta1\u0394 and hta1-T126A, but the recombination that occurs proceeds with low fidelity, leading to expansions. Expansions likely arise downstream of synapsis during D-loop synthesis, as they are suppressed by HR mutants but H2A.1 plays no role in SSA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This mechanistic conclusion integrates multiple results: decreased SCR (Result 12), increased HR-dependent expansions (Result 11), suppression by HR mutants (Result 11), epistasis with Pol32 (Result 14), and lack of SSA defects (Result 13). The inference about D-loop extension (C179) is well-supported by converging genetic evidence. The logic is sound and the conclusion appropriately synthesizes the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C202",
+      "C203",
+      "C204",
+      "C205"
+    ],
+    "result": "Proposed model: In wild-type cells, H2A.1 incorporation and/or H2A.1-T126ph ensures efficient Pol32-mediated D-loop extension during SCR repair of CAG repeat gaps, leading to high-fidelity repair. In hta1\u0394, suboptimal signaling from H2A.2-T125 impedes D-loop extension, allowing CAG secondary structure formation and slippage during synthesis, or permits multiple aberrant invasion events causing misalignments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "This is a speculative model (C202, C203, C204, C205) that synthesizes the data but goes beyond what is directly demonstrated. The model is plausible and consistent with the genetic data, but key mechanistic details remain untested: (1) whether H2A.1 is phosphorylated at T126 during repair (antibody limitations), (2) what factors H2A.1 recruits or excludes, (3) how chromatin structure specifically affects Pol32 processivity. The model provides testable hypotheses but should be clearly labeled as speculative. Alternative mechanisms (C135, C180) are appropriately mentioned.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C188",
+      "C189",
+      "C190",
+      "C191",
+      "C192",
+      "C193"
+    ],
+    "result": "Proposed model for T126 and S129 phosphorylation: T126ph is a pre-existing modification independent of S129ph, but the two modifications may work together combinatorially to promote efficient repair by binding or excluding repair factors. T126ph becomes enriched at damage sites through H2A.1 incorporation and disappears after repair. Dynamic phosphorylation/dephosphorylation of T126 may be important for repair fidelity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "This model (C188, C189, C190) is highly speculative and not well-supported by the data. The antibody primarily recognizes unphosphorylated H2A.1 (only 30% reduction with phosphatase), so the ChIP data likely reflect H2A.1 incorporation rather than T126 phosphorylation. The failure of T126E to rescue (C73) argues against simple phosphorylation being sufficient. The inference about dephosphorylation (C191) is reasonable but untested. Alternative explanations (C192, C193) are appropriately mentioned. This model requires substantial additional experimental support.",
+    "result_type": "MINOR"
+  }
+]

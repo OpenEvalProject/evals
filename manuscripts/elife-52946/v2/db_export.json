@@ -1,0 +1,1946 @@
+{
+  "submission": {
+    "id": "09caa394-f870-4b44-a053-061ca3d5ea94",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T16:04:02.978784Z",
+    "updated_at": "2025-12-02T16:04:02.978784Z"
+  },
+  "content": [
+    {
+      "id": "3af5c2bb-f22a-4523-9171-0f9cb45b7cf1",
+      "submission_id": "09caa394-f870-4b44-a053-061ca3d5ea94",
+      "content_type": "manuscript",
+      "content_text": "# Identification of drug modifiers for RYR1-related myopathy using a multi-species discovery pipeline\n\n## Authors\n\n- Jonathan R Volpatti<sup>1</sup>\n- Yukari Endo<sup>1</sup>\n- Jessica Knox<sup>2</sup>\n- Linda Groom<sup>4</sup>\n- Stephanie Brennan<sup>1</sup>\n- Ramil Noche<sup>1</sup>\n- William J Zuercher<sup>5</sup>\n- Peter Roy<sup>2</sup>\n- Robert T Dirksen<sup>4</sup> ([ORCID: 0000-0002-3182-1755](https://orcid.org/0000-0002-3182-1755))\n- James J Dowling<sup>1</sup> ([ORCID: 0000-0002-3984-4169](https://orcid.org/0000-0002-3984-4169)) \u2020\n\n### Affiliations\n\n1. Program for Genetics and Genome Biology, Hospital for Sick Children Toronto Canada\n2. Department of Molecular Genetics, University of Toronto Toronto Canada\n3. Department of Pharmacology and Toxicology, University of Toronto Toronto Canada\n4. Department of Pharmacology, University of Rochester Rochester United States\n5. UNC Eshelman School of Pharmacy, SGC Center for Chemical Biology, University of North Carolina Chapel Hill United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nRyanodine receptor type I-related myopathies (RYR1-RMs) are a common group of childhood muscle diseases associated with severe disabilities and early mortality for which there are no available treatments. The goal of this study is to identify new therapeutic targets for RYR1-RMs. To accomplish this, we developed a discovery pipeline using nematode, zebrafish, and mammalian cell models. We first performed large-scale drug screens in C. elegans which uncovered 74 hits. Targeted testing in zebrafish yielded positive results for two p38 inhibitors. Using mouse myotubes, we found that either pharmacological inhibition or siRNA silencing of p38 impaired caffeine-induced Ca2+ release from wild type cells while promoting intracellular Ca2+ release in Ryr1 knockout cells. Lastly, we demonstrated that p38 inhibition blunts the aberrant temperature-dependent increase in resting Ca2+ in myotubes from an RYR1-RM mouse model. This unique platform for RYR1-RM therapy development is potentially applicable to a broad range of neuromuscular disorders.\n\n## Introduction\n\nThe ryanodine receptor type I (RyR1) is a calcium release channel located in the terminal cisternae of the sarcoplasmic reticulum (SR) in skeletal muscle. During excitation-contraction coupling (ECC), RyR1 is activated by the voltage sensing L-type calcium channel dihydropyridine receptor (DHPR), located in the transverse tubule (T-tubule) membrane. Together, the T-tubule and two adjacent SR terminal cisternae form a junctional membrane unit referred to as the triad (Jungbluth, 2007; Dowling et al., 2014; Jungbluth et al., 2018). Mutations in the RYR1 gene are the most common cause of non-dystrophic muscle disease in humans (Colombo et al., 2015; Gonorazky et al., 2018; Jungbluth et al., 2018). RYR1 mutations are associated with a wide range of clinical phenotypes, collectively referred to as RYR1-related myopathies (RYR1-RM), that can include wheelchair and ventilator dependence, and dynamic symptoms such as exercise induced myalgias, heat stroke, and malignant hyperthermia (Klein et al., 2012; Amburgey et al., 2013; Snoeck et al., 2015; Jungbluth et al., 2016; Matthews et al., 2018). Despite their relatively high prevalence and associated morbidities, there are currently no approved pharmacological therapies for patients with RYR1-RM.\n\nMuch of what is known about the function of RyR1 and the impact of its mutations on skeletal muscle comes from animal models. Well described recessive models of RYR1-RM include the C. elegans unc-68 mutant (null mutant with impaired motility [Maryon et al., 1996; Maryon et al., 1998]), the relatively relaxed zebrafish (loss of function ryr1b mutant with impaired motility and early death (Hirata et al., 2007), and the \u2018dyspedic\u2019 Ryr1 null mouse (perinatal lethal [Buck et al., 1997; Avila and Dirksen, 2000]). In addition, two compound heterozygous mouse models of recessive RYR1-RM were with recently generated and characterized (Brennan et al., 2019; Elbaz et al., 2019). These models are complimented by \u2018knock-in\u2019 mutants in mice that mirror specific dominant human mutations, including the I4895T mutant (associated with central core disease and referred to as the IT model) (Zvaritch et al., 2007; Zvaritch et al., 2009; Lee et al., 2017), the R163C mutant (associated with malignant hyperthermia) (Yang et al., 2006), and the Y522S mutant (associated with malignant hyperthermia and referred to as the YS mouse) (Chelu et al., 2006; Durham et al., 2008; Lanner et al., 2012; Yarotskyy et al., 2013).\n\nPrevious work using these models identified potential therapeutic targets for RYR1-RM (for a comprehensive review, see Lawal et al., 2018) including anti-oxidants (Durham et al., 2008; Dowling et al., 2012; Michelucci et al., 2017), ER stress modulators (Lee et al., 2017), and chemicals that influence the binding of RyR1 to modifying partners (e.g. S107, which promotes RyR1/calstabin1 interaction) (Lehnart et al., 2008; Bellinger et al., 2008; Andersson et al., 2011). However, as of yet none of these targets has successfully translated to patients, though N-acetylcysteine was tested in a recently completed clinical trial (ClinicalTrials.gov identifier: NCT02362425), where it failed to achieve its primary endpoint (Todd et al., 2020). There is thus a critical need to identify and develop new treatment strategies.\n\nWith the goal of identifying new therapies for RYR1-RM, we set out to establish a novel multi-species translational pipeline (Figure 1). This pipeline is based on the functional conservation of RyR1 across many species, and takes advantage of specific attributes of C. elegans (ability to rapidly screen thousands of compounds), zebrafish (large-scale testing in a vertebrate model), and mammalian cell lines (translatability to humans). We screened several thousand compounds, and discovered that p38 inhibition modifies RyR1 phenotypes in all three systems. Our study identifies a new potential therapeutic strategy for RYR1-RM, outlines the utility of multi-species drug discovery, and lays the groundwork for future similar screens for other neuromuscular disorders.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/52946/elife-52946-fig1-v2.jpg)\n\n**Figure 1.:** The pipeline involved screening C. elegans and zebrafish with thousands of compounds for suppressors of RYR1 mutant phenotypes, followed by further characterization in zebrafish and evaluation in mammalian cell lines.\n\n## Results\n\n### Large-scale chemical screen in\u00a0C. elegans\u00a0identifies 74 unc-68 suppressors\n\nWe performed a drug screen using the unc-68(r1162) C. elegans model of RYR1-RM (Figure 2). This model has a deletion in the worm ryanodine receptor, lacks RyR protein expression by western blot, and manifests an unc-68 null phenotype characterized by an \u2018uncoordinated\u2019 (unc) movement phenotype, defective pharyngeal pumping, impaired calcium regulation, and reduced fitness (Maryon et al., 1996; Maryon et al., 1998). We first considered using a liquid-based movement assay (i.e., the C. elegans \u2018thrashing assay\u2019 (Maryon et al., 1996; Maryon et al., 1998) as the basis for our drug screen because unc-68 mutants thrash at lower rates than WT (Figure 2\u2014figure supplement 1A), but found that automatable methods for this assay were sufficiently variable to prevent use in a screen of thousands of compounds. Instead, we developed a sensitized screen based on our observation that nemadipine-A, an inhibitor of the dihydropyridine receptor (Kwok et al., 2006), induces developmental growth arrest in unc-68 mutants (Figure 2\u2014figure supplement 1B). Specifically, unc-68 worms exposed to 25 \u03bcM nemadipine-A arrest at the L1-L3 larval stage, while the majority of wild type N2 strain treated with nemadipine-A have either normal development or, in a small percentage, arrest at the L4 stage (Figure 2\u2014figure supplement 1B). Based on this, we screened for chemicals that could overcome this growth arrest by counting the number of L4 and adult stage worms after six days of exposure to both nemadipine-A and chemical (Figure 2A).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/52946/elife-52946-fig2-v2.jpg)\n\n**Figure 2.:** (A) Schematic of our screen methodology showing the expected growth arrest phenotype of unc-68 worms exposed to 25 \u03bcM nemadipine after 6 days of exposure and the expected phenotype of a chemical that suppresses this growth arrest. (B) Summary of the 74 \u2018hits\u2019 from this screen that reproducibly suppressed nemadipine-induced growth arrest of unc-68 mutants. (C) Heat map visualization of Tanimoto scores from the \u2018hit\u2019 compounds (y-axis) screened from the 880 compounds in the GlaxoSmithKline Published Kinase Inhibitor set (x-axis). Tanimoto scores were calculated for each pair of compounds as a measure of structural similarity and similar clusters were identified via hierarchical clustering of Tanimoto scores (legend indicates the Tanimoto score). As shown, chemicals with similar molecular fingerprints are associated with similar annotated functions/targets. Fisher\u2019s exact test was used to determine enrichment based on the number of structurally similar members in each cluster that were either hits or not hits out of the total number of the compounds in the library. (D) RNA interference targeting either pmk-1, pmk-2, pmk-3, or a combination of the three shows that p38 MAPK gene knockdown allows a greater proportion of individual unc-68 worms to escape nemadipine-A-induced growth arrest compared to an empty vector control. Statistical analysis by Kruskal-Wallis test, followed by Dunn's post-test; ns p=0.7360, *p=0.0246, **p=0.0031, ***p<0.001; left-right: n\u00a0=\u00a0406, 364, 308, 292, 276, 266.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/52946/elife-52946-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) The \u2018thrashing assay\u2019 is performed by counting the waveforms propagated by individual C.\u00a0elegans in one minute (Maryon et al., 1996). Consistent with previous reports (Maryon et al., 1996; Maryon et al., 1998), we found that unc-68 mutants thrash at a significantly lower rate than N2 (wild type) in two independent assays (n\u00a0=\u00a010 per genotype; Student\u2019s T-test: ***p<0.001). (B) In both liquid and solid media, the DHPR inhibitor nemadipine-A (Kwok et al., 2006) induces concentration-dependent developmental growth arrest in unc-68(r1161) (strain TR2170) and unc-68(r1162) (strain TR2171) mutants. L1 larvae were plated in chemical at Day 0 (n\u00a0=\u00a020/well liquid 96-well plate; n\u00a0=\u00a050/well solid 24-well plate) and developmental stage was measured at Day 6 (liquid) and Day 5 (solid). Abbreviations: og\u00a0=\u00a0overgrown with larvae/eggs and food source depleted; tnc\u00a0=\u00a0larvae and eggs were too numerous to count, but food source not depleted; ne: no eggs have been laid (this phenotype is consistent with inhibition of egg-laying defective protein EGL-19, a DHPR, by nemadipine-A).\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/52946/elife-52946-fig2-figsupp2-v2.jpg)\n\n**Figure 2\u2014figure supplement 2.:** It is important to note that this was performed with the assumption that 20 worms were in each well as a means of estimating the proportion of actual L4 and adult counts in each well. In other words, we assumed #L1-L3 larvae\u00a0=\u00a020 \u2013 (#L4 + #adult). Plots shown are from independent screens of (A) 7.5 \u03bcM wactives, (B) 60 \u03bcM wactives, (C) 60 \u03bcM \u2018random\u2019 non-wactives, and (D) 60 \u03bcM US Drug Collection. Statistical analysis by Kruskal-Wallis test with Dunn\u2019s multiple comparisons post-test\u00a0where *p<0.05, **p<0.01, ***p<0.001.\n\n![Figure 2\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/52946/elife-52946-fig2-figsupp3-v2.jpg)\n\n**Figure 2\u2014figure supplement 3.:** It is important to note that this was performed with the assumption that 20 worms were in each well as a means of estimating the proportion of actual L4 and adult counts in each well. In other words, we assumed #L1-L3 larvae\u00a0=\u00a020 \u2013 (#L4 + #adult). Plots shown are from independent screens of (E) 60 \u03bcM GlaxoSmithKline Published Kinase Inhibitor set. Statistical analysis by Kruskal-Wallis test with Dunn\u2019s multiple comparisons post-test\u00a0where *p<0.05, **p<0.01, ***p<0.001.\n\n![Figure 2\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/52946/elife-52946-fig2-figsupp4-v2.jpg)\n\n**Figure 2\u2014figure supplement 4.:** (A) Chemical dose-response re-testing of five compounds shows consistent ability to suppress nemadipine-A-induced growth arrest of unc-68 mutants.\u00a0Note: wact-526 precipitated at 30 and 60 \u03bcM and rand-62 precipitated at 60 \u03bcM.\u00a0(B\u2013G) Post-hoc statistical analysis showing the developmental stage distributions of the 145 re-tested molecules from the primary screen, and identifying those that were significantly different from DMSO wells (red arrows). Again, it is important to note that this was performed while assuming that 20 worms were in each well as a means of estimating the proportion of actual L4 and adult counts in each well. In other words, we assumed #L1-L3 larvae\u00a0=\u00a020 \u2013 (#L4 + #adult). Plots shown are from independent screens of (B) 7.5 \u03bcM wactives, (C) 60 \u03bcM wactives, (D) 60 \u03bcM \u2018random\u2019 non-wactives, (E) 60 \u03bcM US Drug Collection and (F-G) 60 \u03bcM GlaxoSmithKline Published Kinase Inhibitor (PKI) set. In the PKI set, p38 inhibitors that suppressed growth arrest are highlighted by green arrows. Statistical analysis by Kruskal-Wallis test with Dunn\u2019s multiple comparisons post-test\u00a0where *p<0.05, **p<0.01, ***p<0.001.\n\n![Figure 2\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/52946/elife-52946-fig2-figsupp5-v2.jpg)\n\n**Figure 2\u2014figure supplement 5.:** Tanimoto scores were calculated for each pair of compounds as a measure of structural similarity and similar clusters were identified via hierarchical clustering of Tanimoto scores (legend indicates the Tanimoto score). As shown, chemicals with similar molecular fingerprints are associated with similar annotated functions/targets. Fisher\u2019s exact test was used to determine enrichment based on the number of structurally similar members in each cluster that were either hits or not hits out of the total number of the compounds in the library.\n\nWe evaluated 3700 chemicals in duplicate from a combination of libraries. We screened 770 worm-bioactive (a.k.a. \u2018wactives\u2019) and non-wactives at 7.5 \u03bcM and 60 \u03bcM, with doses based on bioactivity established in previous screens with C. elegans (Burns et al., 2015). We also screened 880 kinase inhibitors (GlaxoSmithKline Published Kinase Inhibitor Set) at 60 \u03bcM. Lastly, we screened 1280 drugs from the US Drug Collection of clinical trial stage compounds at 60 \u03bcM (MicroSource Discovery Systems). The concentration used for the latter two libraries was based on previous C. elegans screens performed in the 25\u201360 \u03bcM range (Kwok et al., 2006; Burns et al., 2010; Otten et al., 2018). This concentration range is used to overcome the poor bioaccumulation of exogenous compounds in C. elegans (Burns et al., 2010).\n\nThe primary screen found 278 chemical\u00a0conditions out of 3700 (~7.5%) that contained at least one L4 or adult worm in duplicate wells (Figure 2B). However, 62 single DMSO vehicle control wells\u00a0out of 760 (~8.2%) and 360 single experimental wells out of 7400 (~4.9%) also contained at least one unc-68 mutant that reached the L4 or adult stage, which we collectively refer to as \u2018random escapees\u2019. Based on this, we concluded that many of the 278 chemicals may potentially be false positives. We prioritized 145 of the 278 chemicals for re-testing because they demonstrated in duplicate wells the most complete (i.e. highest number of L4 and adult) suppression the phenotype.\n\nOf note, we only counted the number of \u2018rescued\u2019 worms (L4 and adult) per well, and did not count the exact number of L1-L3 worms in each well. Precise counts would have allowed us to calculate the true proportion of worms which escaped growth suppression and thus more accurately determine which chemicals promoted statistically meaningful growth arrest rescue values as compared to random escapee wells. We instead addressed this by performing a post-hoc analysis using an assumption of a standard number of worms plated in each well (n\u00a0=\u00a020, where realistically this number ranged from 15 to 25). We estimated the % arrest based on this assumption, using a formula where the number of L1-L3 larvae\u00a0=\u00a020 \u2013(true count of L4-adult) and found that 142 of the original 278 chemical wells were statistically different from random escapee wells (Figure 2\u2014figure supplements 2\u20133). Given that 88% of those identified as statistically significant were in our prioritization group of 145, this provided us with confidence that they merited additional examination.\n\nWe re-tested the 145 chemicals in duplicate and found that 74 reproducibly suppressed the nemadipine-A-induced growth suppression of unc-68 mutants (Figure 2B). Among these 74 \u2018hits\u2019, we identified five wactives and seven non-wactives, 44 kinase inhibitors, and 18 compounds from the MicroSource library (Supplementary file 1). For several of the strongest suppressors, we performed dose-response analyses to confirm the effect of suppression (Figure 2\u2014figure supplement 4A).\n\nMany of the chemicals in our libraries have overlapping targets and/or functions (e.g. there are several EGFR inhibitors in the kinase library and several steroid hormones in the US Drug Collection). Therefore, we reasoned that hits that are overrepresented among groups of structurally and/or functionally related chemicals should be prioritized for further testing in zebrafish. To determine enrichment based on structural similarity, we compared the chemical fingerprints of the hits with those of the chemicals in each library by hierarchical clustering of their Tanimoto scores (Figure 2C and Figure 2\u2014figure supplement 5; Burns et al., 2015). This method shows how structurally similar chemicals cluster with one another.\n\nUsing this methodology, we found that p38 inhibitors were significantly overrepresented (**p=0.0022, Fisher\u2019s exact test) when considering the total number of p38 inhibitors in the kinase inhibitor library. Interestingly, structurally dissimilar p38 inhibitors suppressed the phenotype (clusters 5, 6, 16, and 19 in Figure 2C), suggesting that inhibition of their common target was responsible for the activity. We then applied the same post-hoc analysis to the re-tested molecules as we did with the primary screen to visualize changes in developmental stage distribution after chemical treatment (Figure 2\u2014figure supplement 4B\u2013G). As shown, p38 inhibitors were among the strongest suppressors identified from the inhibitor set. Finally, we validated p38 as a target by knocking down the p38 MAPK orthologs pmk-1, pmk-2, pmk-3 alone and in combination, and we observed a modest increase in the proportion of unc-68 mutants that escaped nemadipine-A induced growth arrest with each of the four conditions (Figure 2D).\n\nAdditionally, from the 44 hits in the kinase library we found that EGFR, PERK, and PLK1 inhibitors were overrepresented (**p=0.0060, *p=0.0109, *p=0.0326, respectively). Multiple GSK3 (n\u00a0=\u00a09) and PI3K (n\u00a0=\u00a03) inhibitors also strongly suppressed the phenotype, but these were not statistically overrepresented (p=0.4093 and p=0.1027, respectively). Among the 18 positive hits from the MicroSource library, several chemical classes were overrepresented (Figure 2\u2014figure supplement 5): riboflavins (***p=0.0002), surfactants (***p=0.0002), benzophenones (**p=0.0018), anthracenes (*p=0.0279), salicylates (*p=0.0416), and tricyclic antihistamines (*p=0.0416). Interestingly, two DHPR inhibitors out of nine present in the library (**p=0.0063) were identified as suppressors of the growth arrest induced by nemadipine-A, itself a DHPR inhibitor. This may reflect competition for receptor binding which diminishes the effect of nemadipine-A, or perhaps a higher effective concentration which becomes agonistic to the receptor. Of note, riboflavin and riboflavin 5-phosphate sodium both strongly suppressed growth arrest (Figure 2\u2014figure supplement 4A,E) and they appear to be structurally distinct from every other chemical in the US Drug Collection (cluster 11, Figure 2\u2014figure supplement 5). Similarly, thiostrepton suppressed growth arrest strongly (Figure 2\u2014figure supplement 4E), is a structurally unique molecule and overrepresented among the 18 hits (*p=0.0141). Altogether, the overrepresented groups of chemicals and the structurally unique molecules were prioritized for follow-up testing in ryr1b mutant zebrafish.\n\n### Large-scale chemical screen in ryr1 zebrafish\n\nIn parallel, we performed a screen in a zebrafish model of RYR1-RM. Zebrafish have two ryr1 paralogs. Recessive mutations in ryr1a cause no overt phenotype, while recessive mutations in ryr1b result in abnormal swim behavior and early lethality after 11\u201313 days of life (Hirata et al., 2007). ryr1a; ryr1b double mutants exhibit no movement and have a median survival of 5 days of life (Figure 3\u2014figure supplement 1A\u2013B; Chagovetz et al., 2019). We used the double mutants for our screen because of their obvious motor phenotype and because variability in the ryr1b single mutant motor phenotype precluded large-scale screening (Figure 3\u2014figure supplement 1C). We screened 436 kinase inhibitors at 10 \u03bcM from the DiscoveryProbe Kinase Inhibitor Library (ApexBio) and 1360 drugs at 10 \u03bcM from the US Drug Collection (MicroSource Discovery Systems), using improvement in motility of the ryr1a; ryr1b double mutants (as measured by touch-evoked escape response) as the primary outcome measure. We did not identify a single compound that was able to promote movement in these fish.\n\n### Targeted drug testing in ryr1 zebrafish\n\nUsing our prioritized list based on enrichment modeling, we next sought to determine if any positive hits from our C. elegans screen could improve phenotypes in either the ryr1a; ryr1b double mutants or the ryr1b single mutant zebrafish. We used motility as our outcome measure, examining both touch-evoked escape response and optogenetically induced swimming as per our previously established testing methodology (Sabha et al., 2016). Among the overall group of 74 hits, we tested 4/5 wactives, 7/7 non-wactives, 16/18 MicroSource drugs, and several inhibitors from the six classes of kinase inhibitors over-represented among the hits.\n\nFirst, we tested all of these at a single concentration of 10 \u03bcM for the ability to promote movement in the ryr1a; ryr1b double mutants, which in the untreated state lack any movement. Consistent with our large-scale screen done with the ryr1a; ryr1b mutants, none of these chemicals improved the double mutant phenotype (Figure 3). We then tested all of these chemicals for the ability to suppress the abnormal touch-evoke escape response of ryr1b mutants, but these chemicals did not modulate this phenotype either. However, the utility of this phenotype as a readout of improvement may be unreliable given that it only transiently exists between 3\u20134 days of life, after which time the ryr1b mutants are indistinguishable by eye from their WT siblings (Hirata et al., 2007).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/52946/elife-52946-fig3-v2.jpg)\n\n**Figure 3.:** We did not identify any suppressors of the double mutant phenotype.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/52946/elife-52946-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) ryr1a;ryr1b double mutants exhibit complete lack of movement as shown by optovin-6b8 induced swimming (n\u00a0=\u00a024 per genotype; Student\u2019s T-test: ***p<0.001).\u00a0They do not respond to touch stimuli either data not shown; independently shown by Chagovetz et al.\u00a0(2019). (B) The ryr1a;ryr1b double mutants exhibit early larval lethality with a median survival of 5 days and maximum survival of 7 days (n\u00a0=\u00a058 per group; Mantel-Cox: ***p<0.001). (C) The ryr1b mutants show significantly reduced movement speed (n\u00a0=\u00a048; 5.42 \u00b1\u00a00.1327 mm/s) at four dpf by optovin-6b8 induced swimming versus WT siblings (n\u00a0=\u00a047; 8.598 \u00b1\u00a00.2728 mm/s) (Student\u2019s t-test: ***p<0.001). However, there is sufficient overlap with WT siblings to preclude large-scale screening.\n\nHence, we assayed many of these chemicals on the ryr1b single mutants using our quantitative optogenetic motility assay. We tested for chemical-genetic interactions, which we defined as unexpected larval movement not resulting from the predicted combined effects of genotype and chemical treatment (see Methods). In other words, we assessed whether the movement speed of ryr1b mutants treated with a chemical was different from that which could be predicted from the combination of the ryr1b mutant effect plus the effect of the chemical on wild type. The p38 inhibitors SB239063 and PH-797804 decreased motility in wildtype controls, but had no effect on\u00a0ryr1\u00a0mutants (Figure 4A\u2013B).\u00a0The absence of effects in ryr1 mutant models stands in contrast to predicted additive and multiplicative effects for these compounds (Figure 4A'\u2013B'), suggesting that RyR1-related pathways mediate the effects of SB239063 and PH-797804. Additionally, we found significant positive interactions for three wactives, a PI3K inhibitor, and the anti-psoriatic drug anthralin (Figure 4\u2014figure supplement 1A\u2013E). We did not observe chemical-genetic interactions with two additional p38 inhibitors, SB203580 and SB202190 (Figure 4C\u2013D) or with 18 other \u2018hits\u2019 (Figure 4\u2014figure supplements 1\u20133F\u2013W). Notably,\u00a0we did not identify any chemicals that significantly improved ryr1b mutant movement speed relative\u00a0to untreated mutant\u00a0controls.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/52946/elife-52946-fig4-v2.jpg)\n\n**Figure 4.:** Compared to the average speed of DMSO WT controls, treatment with (A) SB239063 and (B) PH-797804 reduced the average speed of WT siblings while the expected decrease in movement speed in treated ryr1b was not observed. The difference in average speed of ryr1b+p38 inhibitor compared to WT controls (i.e. WT siblings+DMSO vehicle) is higher than expected given the effects of genotype and chemical alone, indicative of a positive chemical-genetic interaction. Chemical-genetic interactions were not observed for p38 inhibitors (C) SB203580 and (D) SB202190. Data are presented as mean\u00a0\u00b1\u00a0SEM movement speed (mm/s) normalized to DMSO-treated WT siblings for n\u00a0=\u00a02 independent experiments. Statistical analysis by two-way ANOVA followed by Tukey\u2019s multiple comparisons post-test. *p<0.05, **p<0.01, ***p<0.001; Sample size n\u00a0=\u00a019 or 20 for each treatment group in a set.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/52946/elife-52946-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** Compared to the average speed of DMSO WT controls, treatment with (A) wact-405, (B) wact-488, (C) wact-526, (D) PI3K inhibitor PI-103, and (E) anthralin reduced the average speed of WT siblings while the expected decrease in movement speed in treated ryr1b was not observed. The difference in average speed of ryr1b+p38 inhibitor compared to WT controls (i.e. WT siblings+DMSO vehicle) is higher than expected given the effects of genotype and chemical alone, indicative of a positive chemical-genetic interaction. Chemical-genetic interactions were not observed for the remaining 18 hits from the C. elegans screen when tested in this assay (Figure 4\u2014figure supplement 2\u20133F\u2013W). Data are presented as mean\u00a0\u00b1\u00a0SEM movement speed (mm/s) normalized to DMSO-treated WT siblings for n\u00a0=\u00a02 independent experiments for (A\u2013E), (G), (H), (K), (L), and R), where sample size n\u00a0=\u00a019 or 20 for each treatment group in a set and n\u00a0=\u00a01 experiment and sample size n\u00a0=\u00a09 or 10 for the remainder. Statistical analysis by two-way ANOVA followed by Tukey\u2019s multiple comparisons post-test. *p<0.05, **p<0.01, ***p<0.001.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/52946/elife-52946-fig4-figsupp2-v2.jpg)\n\n**Figure 4\u2014figure supplement 2.:** Compared to the average speed of DMSO WT controls, chemical-genetic interactions were not observed for 18 hits from the C. elegans screen when tested in this assay (Figure 4\u2014figure supplement 2\u20133F\u2013W). Data are presented as mean\u00a0\u00b1\u00a0SEM movement speed (mm/s) normalized to DMSO-treated WT siblings for n\u00a0=\u00a02 independent experiments for (A\u2013E), (G), (H), (K), (L), and (R), where sample size n\u00a0=\u00a019 or 20 for each treatment group in a set and n\u00a0=\u00a01 experiment and sample size n\u00a0=\u00a09 or 10 for the remainder. Statistical analysis by two-way ANOVA followed by Tukey\u2019s multiple comparisons post-test. *p<0.05, **p<0.01, ***p<0.001.\n\n![Figure 4\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/52946/elife-52946-fig4-figsupp3-v2.jpg)\n\n**Figure 4\u2014figure supplement 3.:** Compared to the average speed of DMSO WT controls, chemical-genetic interactions were not observed for 18 hits from the C. elegans screen when tested in this assay (Figure 4\u2014figure supplement 2\u20133F\u2013W). Data are presented as mean\u00a0\u00b1\u00a0SEM movement speed (mm/s) normalized to DMSO-treated WT siblings for n\u00a0=\u00a02 independent experiments for (A\u2013E), (G), (H), (K), (L), and (R), where sample size n\u00a0=\u00a019 or 20 for each treatment group in a set and n\u00a0=\u00a01 experiment and sample size n\u00a0=\u00a09 or 10 for the remainder. Statistical analysis by two-way ANOVA followed by Tukey\u2019s multiple comparisons post-test. *p<0.05, **p<0.01, ***p<0.001.\n\n### Testing positive hits in C2C12 myotubes\n\nWe sought to examine the potential translatability of our findings to mammalian models of RYR1-RM. To accomplish this, we tested the effect of two p38 inhibitors on RyR1-dependent Ca2+ release in C2C12 mouse myotubes. We examined this in wild type C2C12 cells and in a C2C12 Ryr1 knockout line that we created using CRISPR/Cas9 gene editing. This new line contains a bi-allelic frameshift deletion mutation in Ryr1 (which we refer to as \u2018KO\u2019). Successful targeting of the Ryr1 locus was demonstrated by Sanger sequencing, lack of off-target mutations verified by whole genome sequencing, and absence of RyR1 protein expression confirmed by western blot analysis (Figure 5\u2014figure supplement 1).\n\nWe measured intracellular calcium release from RyR1 in response to acute application of 10 mM caffeine (Tong et al., 1997; Meissner, 2017) in wild type control and Ryr1 KO C2C12 myotubes after 24 hr incubation with either SB203580 or SB202190. As expected, Ryr1 KO myotubes treated with DMSO vehicle control lacked caffeine-induced Ca2+ release (Figure 5A\u2013B). KO myotubes treated with SB203580 or SB202190, however, exhibited a dose dependent increase in caffeine-induced calcium release (Figure 5A\u2013B). Conversely, these chemicals impaired caffeine-induced calcium release in control WT C2C12 myotubes (Figure 5A\u2013B).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/52946/elife-52946-fig5-v2.jpg)\n\n**Figure 5.:** Ratiometric fura-2 imaging with 10 mM caffeine induction after treatment with p38 inhibitors (A) SB203580 (# of myotubes from left-right: n\u00a0=\u00a056, 30, 28, 43, 45, 57, 46, 79) and (B) SB202190 (n\u00a0=\u00a078, 44, 25, 45, 50, 58, 50, 142) or after (C) siRNA targeting p38\u03b1 (Mapk14), p38\u03b2 (Mapk11), and p38\u03b3 (Mapk12) (n\u00a0=\u00a017, 27,18, 23, 11, 11, 33, 13). Panels on the left show the peak change in calcium concentration within 30 s of adding caffeine normalized to the average of 10 s of baseline resting free Ca2+ concentration ([Ca2+]i), that\u00a0is normalized \u0394 ratio, while plots on the right show calcium levels normalized to [Ca2+]i after addition of caffeine. This data shows that p38 inhibition or knockdown impairs Ca2+ release in wild type myotubes while promoting some Ca2+ release in Ryr1 knockout cells. Note: labels directly above each group indicate the statistical significance compared to DMSO control within the same genotype. Data are presented as mean\u00a0\u00b1\u00a0SEM derived from Ca2+ measurements of individual myotubes (Figure 5\u2014figure supplement 3A\u2013C). Corresponding plots showing [Ca2+]i levels without normalization are also provided (Figure 5\u2014figure supplement 4D\u2013F). Statistical analysis by two-way ANOVA followed by Tukey\u2019s multiple comparisons post-test where *p<0.05, **p<0.01, ***p<0.001. (D) Overnight treatment of myotubes from Y522S mutant mice with 10 \u03bcM SB203580 significantly reduced a temperature-dependent increase in resting Ca2+ concentration.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/52946/elife-52946-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** (A) DNA sequence of Ryr1 KO showing frameshift mutation and premature stop codon. (B) Western blotting analysis of RyR1 in C2C12 myotubes at after 5 days of differentiation.\n\n![Figure 5\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/52946/elife-52946-fig5-figsupp2-v2.jpg)\n\n**Figure 5\u2014figure supplement 2.:** As shown, the siRNAs reduce target gene expression by\u00a0>50% in WT cells (A) while the degree of knockdown achieved in Ryr1 KO myotubes (B) was more variable. Data are presented as mean\u00a0\u00b1\u00a0SEM fold change for n\u00a0=\u00a03 independent myotube cultures. Statistical analysis by one-way ANOVA followed by Holm-Sidak\u2019s multiple comparisons post-test to compare each group to the negative control siRNA. *p<0.05, **p<0.01, ***p<0.001.\n\n![Figure 5\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/52946/elife-52946-fig5-figsupp3-v2.jpg)\n\n**Figure 5\u2014figure supplement 3.:** Ratiometric fura-2 imaging with 10 mM caffeine induction after treatment with A) SB203580, (B) SB202190, and C) p38 MAPK siRNAs. Black lines indicate individual myofibers while red lines present the mean\u00a0\u00b1\u00a0SEM as show in Figure 5. Ratiometric 340/380 data were normalized to the average of 10 s of baseline resting free Ca2+ concentration ([Ca2+]i), that\u00a0is normalized \u0394 ratio.\n\n![Figure 5\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/52946/elife-52946-fig5-figsupp4-v2.jpg)\n\n**Figure 5\u2014figure supplement 4.:** Ratiometric fura-2 imaging with 10 mM caffeine induction after treatment with D) SB203580, (E) SB202190, and F) p38 MAPK siRNAs. Panels on the left show the peak change in calcium concentration from [Ca2+]i within 30 s of adding caffeine without normalization (i.e. \u0394 ratio), while plots on the right show [Ca2+]i followed by changes in fura-2 340/380 nm ratio after addition of caffeine.\n\nTo interrogate the pathway specificity of SB203580 or SB202190, and to corroborate their positive effect, we examined caffeine-induced calcium release in the setting of siRNA knockdown of p38 isoforms \u03b1, \u03b2, and \u03b3. Using commercially available siRNA we achieved roughly 50\u201380% knockdown of p38 MAPK targets as compared to non-targeting negative control siRNA (Figure 5\u2014figure supplement 2). In Ryr1 KO C2C12 cells, siRNA knockdown of Mapk11 (p38\u03b2) promoted increased caffeine-induced calcium release in KO cells versus negative control siRNA (Figure 5C). Knockdown of Mapk14 (p38\u03b1) and Mapk12 (p38\u03b3) also increased calcium release in Ryr1 KO myotubes but to a lesser degree. These data thus suggest that in KO C2C12 cells, p38 inhibition (either via chemical or genetic inhibition) is able to promote intracellular calcium release independent of RyR1. This is consistent with the ability of p38 inhibitors and RNAi to suppress the unc-68 (i.e. RyR1 null) phenotype in C. elegans.\n\nUnlike with SB203580 or SB202190 treatment, siRNA knockdown of p38 isoforms did not impair Ca2+ release in WT cells (Figure 5C), perhaps suggesting that inhibition may be partially caused by off-target effects of the chemicals. Alternatively, this may instead be a reflection of the incomplete p38 knockdown we achieved with siRNA, or could reflect siRNA toxicity, as caffeine-induced calcium release from WT cells was lower with control siRNA treatment when compared to DMSO-treated conditions.\n\n### SB203580 abrogates the temperature-dependent increase in resting Ca2+ in YS myotubes\n\nThe fact that p38 chemical inhibitors negatively modulate swim behavior in WT zebrafish and caffeine-induced calcium release in C2C12 cells opens the possibility that they may serve as modifiers of phenotypes related to RyR1 hyperexcitability. To test this, we examined calcium dynamics in myotubes from the YS mouse model of RYR1-RM. The YS model contains a point mutation analogous to the Y522S mutation found in patients with malignant hyperthermia and central core pathology (Quane et al., 1994). The YS mutation enhances both the sensitivity of RyR1 to activators (e.g. DHPR, caffeine, 4-chloro-m-cresol) and the temperature-dependence of RyR1 Ca2+ leak, alterations that underlie the MH susceptibility and exertional heat stroke phenotypes of these mice (Chelu et al., 2006; Durham et al., 2008; Lanner et al., 2012). We examined if the temperature dependent increase in resting myoplasmic Ca2+ concentration in YS myotubes was abrogated by the p38 inhibitor SB203580. Overnight incubation of YS myotubes with 10 \u03bcM SB203580 significantly reduced the temperature-dependent increase in resting Ca2+ observed in YS myotubes (Figure 5D).\n\n## Discussion\n\nIn this study, we developed a multi-system pipeline for drug discovery and development for RYR1-RM. Using this platform, we were able to screen several thousand compounds and test their efficacy across multiple species. We identified p38 inhibitors as a new class of potential modifiers of RyR1 signaling. This platform can be applied to new compounds that may improve RYR1-RM phenotypes, as well as for additional diseases with suitable animal models.\n\nThe strengths of our pipeline include the rapidity with which we are able to screen drugs and the potential for increased translatability in drugs that positively modify a diverse group of in vivo models. In terms of speed, the initial screen in C. elegans was completed within two weeks, while the large-scale screen in zebrafish was accomplished in one month. While this does not approach the speed and scale of cell culture screens, it is fast and efficient and importantly is done in vivo using outcome measures that are relatable to human disease phenotypes. It would additionally be possible to add a cell culture based screen into the pipeline as a pre-screen or in parallel with the animal model testing. For example, studies for RyR1 functional interactors are underway using novel calcium indicators such as SERCaMP (Henderson et al., 2014); these indicators may prove ideal for screens in disease relevant cell models. Recently, a high-throughput screen was performed with HEK293 cells that successfully identified novel inhibitors of RyR1 (Murayama et al., 2018), supporting the potential utility of a cell-based screen in identifying modifiers of mutant RyR1 activity.\n\nIn terms of translatability, it is difficult to say whether a multi-organism strategy is superior to other approaches and/or more likely to yield targets that will work in humans. This is because, at present, no drugs have successfully been translated to patients with RYR1-RM. However, there is reason to speculate that a compound that can modify phenotype(s) associated with dysfunction of a gene in these diverse evolutionary settings may promote improvement in a more universal way.\n\nMost relevant to future clinical intervention of RYR1-RM, our study identifies p38 inhibition as a modifier of RYR1-related phenotypes in both C. elegans and murine myotubes. The potential translational value of this observation awaits additional study, including in vivo testing in newly developed mouse models of RYR1-RM (see below). Interestingly, it was shown recently that combined treatment of N-acetylcysteine (NAC) and the p38 inhibitor SB203580 leads to robust expansion of myogenic satellite cell populations in vitro and in vivo (L'honor\u00e9 et al., 2018). This is noteworthy because NAC has been shown to reduce aberrant oxidative stress and improve phenotypes of preclinical RYR1-RM models (zebrafish and patient cells) (Dowling et al., 2012). Based on these data, NAC was recently tested via clinical trial in RYR1-RM patients, where a non-significant trend toward improvement was observed (Todd et al., 2020). These observations open the prospective of polytherapy as a potential treatment strategy. Future work will be needed to establish the interplay between p38 inhibition and anti-oxidant therapy, both in the setting of normal myogenesis and with mutation in RYR1, and likely in the whole animal setting.\n\nAs p38 inhibition emerged as the most promising hit from our study, we considered potential mechanisms of action. Our observation of increased caffeine-induced intracellular calcium release in Ryr1 KO C2C12 cells suggesting that p38 inhibition modulates non-RyR1 calcium channels. In the developing myotube, these could include RyR3 (Tarroni et al., 1997), the inositol 1,4,5-trisphosphate (IP3) receptor (IP3R), which has been shown to mediate calcium release in a caffeine-dependent manner (Kang et al., 2010), or the store-operated calcium entry (SOCE) system mediated by STIM1/ORAI1 (Soboloff et al., 2006; Endo et al., 2015). If we hypothesize a similar mechanism of action in both C. elegans and C2C12 cells, this would exclude RyR3 activation, as there is only a single RyR in C. elegans encoded by unc-68. Alternatively, both IP3R and the SOCE machinery are present in C. elegans, and enhanced calcium release from either of these sources provides a plausible explanation for our data. Interestingly, a previous study in endothelial cells showed that p38 inhibition (chemical and siRNA mediated) increased calcium entry via SOCE activation through a mechanism of blocking STIM1 phosphorylation (Sundivakkam et al., 2013). Future investigation, beyond the scope of this manuscript, is required to parse out the specific mechanisms related to the improvement seen with p38 inhibition.\n\nAn alternative explanation for some of our positive hits, is that they functioned by activating the dihydropyridine receptor (DHPR) and/or by overcoming its inhibition by nemadipine-A. This would be consistent with the observation that gain-of-function mutations in egl-19, theC. eleganshomolog of DHPR, suppress the effects of nemadipine-A (Kwok et al., 2006) This mechanism could also explain the observed benefit of p38 inhibition in C2C12 myotubes, as DHPR has previously been shown to interact with and activated by RyR3 (Sheridan et al., 2006).\n\nOf note, our data indicates that p38 chemical inhibitors may alter RyR1-mediated calcium dynamics in wild type zebrafish, wild type C2C12 cells, and YS mouse myotubes. Whether this is directly through p38 inhibition, or instead through other pathways, is not completely clear, as these chemicals may have off-target effects and our siRNA knockdown of p38 isoforms in wild type C2C12 cells did not replicate these effects. However, if we assume direct inhibition on the p38 pathway, plausible mechanisms include direct action on RyR1 (which has several phosphorylation sites known to impact its calcium release activity) or else modulation of RyR1 regulators (such as FKBP12, junctin or calsequestrin, proteins which bind to RyR1 and influence its channel function). To our knowledge, there is no evidence currently showing direct modulation of RyR1 phosphorylation status by the p38 pathway, nor any data supporting action on known RyR1 modifiers.\n\nOne shortcoming of our study is the relative lack of positive hits in the zebrafish. This may reflect the specific nature of our primary outcome measure in fish, which is focused on improving swimming locomotion. Locomotion is a complex trait that may be difficult to modify, especially in the double mutant fish which are completely paralyzed. We have observed mixed results with this outcome measure in other zebrafish myopathy models, where we have successfully identified chemicals that rescue the swimming defect in mtm1 mutant zebrafish (Sabha et al., 2016), meanwhile we found no positive hits in neb deficient zebrafish which show complete paralysis (Qiu et al., 2019). As discussed below, we believe development of new models that do not completely lack RyR1 expression and that more closely mirror human mutations will overcome this limitation in the future.\n\nOne potential explanation for why we identified hits in C. elegans but not zebrafish is that the C. elegans screen was based on a developmental phenotype, and it is very plausible that alternative calcium pathways (e.g. DHPR, SOCE and/or IP3 receptor) are better able to compensate for developmental arrest as opposed to locomotor behavior, which is more specifically related to mature skeletal muscle function and likely has a more absolute requirement for RyR1-dependent ECC. This would be consistent with our positive results in our cell studies as well, which reflect immature/developing myotubes that may more readily utilize other calcium release pathways.\n\nAnother consideration of our study is that our screens were performed on models that completely lack expression of RyR1. There are currently no human patients with bi-allelic null mutations, and thus our models do not accurately mirror the human disease. In addition, our screens may miss chemicals that positively modulate mutant RyR1 channels but that cannot compensate for its complete loss. One of our primary future directions is therefore to develop new models of RYR1-RM that are better suited to drug discovery and for subsequent testing in mammals. In this vein, there are very recent publications detailing new recessive RYR1-RM mouse models including a p.G2435R mutant (Lopez et al., 2018), a p.A4329D/p.Q1970fsX16 compound heterozygote model (Elbaz et al., 2019), and a p.T4706M/indel compound heterozygote model generated by our group (Brennan et al., 2019). In addition, seven RYR1-RM equivalent mutations in unc-68 were modeled by transgenic overexpression in C. elegans and these mutants exhibited hypersensitivity to caffeine and the malignant hyperthermia triggering agent halothane (Baines et al., 2017).\n\n### Conclusion\n\nWe established a unique \u2018multi species\u2019 pipeline for drug discovery for RYR1-RM. This platform is rapid and robust, and provides the ability to examine multiple different types of in vivo models. Our study lays the ground work for its future use in RYR1-RM drug development, and for establishment of similarly platforms for other rare diseases.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Genetic reagent (C. elegans)</td>\n      <td>unc-68(r1162)</td>\n      <td>C. elegans Genetics Center (University of Minnesota)</td>\n      <td>Strain TR2171 RRID:WB-STRAIN:WBStrain00034950</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (C. elegans)</td>\n      <td>unc-68(r1161)</td>\n      <td>C. elegans Genetics Center (University of Minnesota)</td>\n      <td>Strain TR2170 RRID:WB-STRAIN:WBStrain00034949</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (E. coli)</td>\n      <td>HB101</td>\n      <td>C. elegans Genetics Center (University of Minnesota)</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (E. coli)</td>\n      <td>HT115 (DE3)</td>\n      <td>C. elegans RNAi Collection (Ahringer) from Source BioScience</td>\n      <td>Clones IV-9P08 (pmk-1), IV-4G23 (pmk-2), IV-4I01 (pmk-3), and I-1K04 (pop-1)</td>\n      <td>RNAi library</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (D. rerio)</td>\n      <td>ryr1a(z42)</td>\n      <td>Chagovetz et al., 2019</td>\n      <td>ZFIN ID: ZDB-ALT-180925\u201310</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (D. rerio)</td>\n      <td>ryr1b(mi340)</td>\n      <td>Hirata et al. (2007)</td>\n      <td>ZFIN ID: ZDB-ALT-070928\u20131</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>The US Drug Collection</td>\n      <td>MicroSource Discovery Systems, Inc</td>\n      <td></td>\n      <td>Chemical library</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>DiscoveryProbe Kinase Inhibitor Library</td>\n      <td>APExBIO</td>\n      <td>Catalog #L1024</td>\n      <td>Chemical library</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Nemadipine-A</td>\n      <td>ChemBridge</td>\n      <td>Catalog #5619779</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Optovin analog 6b8</td>\n      <td>ChemBridge</td>\n      <td>Catalog #5707191</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>SB203580</td>\n      <td>Sigma</td>\n      <td>Catalog #S8307</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>SB202190</td>\n      <td>Sigma</td>\n      <td>Catalog #S7067</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Cell line (M. musculus)</td>\n      <td>C2C12 myoblasts</td>\n      <td>ATCC</td>\n      <td>Catalog #CRL1772</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Cell line (M. musculus)</td>\n      <td>Ryr1 KO C2C12 myoblasts</td>\n      <td>This paper</td>\n      <td></td>\n      <td>2 bp deletion in exon 6 of Ryr1: c.497_498del, p.Val166GlyfsX3</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>anti-Ryanodine receptor (Mouse monoclonal)</td>\n      <td>Developmental Studies Hybridoma Bank (University of Iowa)</td>\n      <td>Catalog #34C, RRID:AB_528457</td>\n      <td>WB (1:100)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>anti- beta actin (Mouse monoclonal)</td>\n      <td>Abcam</td>\n      <td>Catalog #ab8226 RRID:AB_306371</td>\n      <td>WB (1:5000)</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>ON-TARGETplus Mouse Mapk11 siRNA</td>\n      <td>Horizon Discovery (Dharmacon)</td>\n      <td>Catalog # J-050928-05-0010</td>\n      <td>Target sequence: 5\u2019-AUGAGGAGAUGACCGGAUA-3\u2019</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>ON-TARGETplus Mouse Mapk12 siRNA</td>\n      <td>Horizon Discovery (Dharmacon)</td>\n      <td>Catalog # J-062913-05-0010</td>\n      <td>Target sequence: 5\u2019-AAUGGAAGCGUGUGACUUA-3\u2019</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>ON-TARGETplus Mouse Mapk14 siRNA</td>\n      <td>Horizon Discovery (Dharmacon)</td>\n      <td>Catalog # J-040125-06-0010</td>\n      <td>Target sequence: 5\u2019-GCAAGAAACUACAUUCAGU-3\u2019</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>ON-TARGETplus Non-targeting siRNA #1</td>\n      <td>Horizon Discovery (Dharmacon)</td>\n      <td>Catalog # D-001810-01-05</td>\n      <td>Target sequence: 5\u2019-UGGUUUACAUGUCGACUAA-3\u2019</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>Tbp forward primer</td>\n      <td>This paper</td>\n      <td>Mouse Tbp gene: ENSMUSG00000014767</td>\n      <td>5\u2019-TGCTGCAGTCATCATGAG-3\u2019</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>Tbp reverse primer</td>\n      <td>This paper</td>\n      <td>Mouse Tbp gene: ENSMUSG00000014767</td>\n      <td>5\u2019-CTTGCTGCTAGTCTGGATTG-3\u2019</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>Mapk11 forward primer</td>\n      <td>This paper</td>\n      <td>Mouse Mapk11 gene: ENSMUSG00000053137</td>\n      <td>5\u2019-CCAGCAATGTAGCGGTGAACGAG-3\u2019</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>Mapk11 reverse primer</td>\n      <td>This paper</td>\n      <td>Mouse Mapk11 gene: ENSMUSG00000053137</td>\n      <td>5\u2019-GCATGATCTCTGGCGCCCGGTAC-3\u2019</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>Mapk12 forward primer</td>\n      <td>This paper</td>\n      <td>Mouse Mapk12 gene: ENSMUSG00000022610</td>\n      <td>5\u2019-CACTGAGGATGAACCCAAGGCC-3\u2019</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>Mapk12 reverse primer</td>\n      <td>This paper</td>\n      <td>Mouse Mapk12 gene: ENSMUSG00000022610</td>\n      <td>5\u2019-CTCCTAGCTGCCTAGGAGGCTTG-3\u2019</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>Mapk14 forward primer</td>\n      <td>This paper</td>\n      <td>Mouse Mapk14 gene: ENSMUSG00000053436</td>\n      <td>5\u2019-CAGCAGATAATGCGTCTGACGGG-3\u2019</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>Mapk14 reverse primer</td>\n      <td>This paper</td>\n      <td>Mouse Mapk14 gene: ENSMUSG00000053436</td>\n      <td>5\u2019-GCGAAGTTCATCTTCGGCATCTGG-3\u2019</td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>RNeasy Mini Kit</td>\n      <td>Qiagen</td>\n      <td>Catalog #74104</td>\n      <td></td>\n    </tr>\n  </tbody>\n</table>\n\n### Animal ethics statement\n\nAll zebrafish experiments were performed in accordance with all relevant ethical regulations, specifically following the policies and guidelines of the Canadian Council on Animal Care and an institutionally reviewed and approved animal use protocol (#41617). No additional ethical approval was required for our experiments with the invertebrate nematode worm C. elegans.\n\n### Chemical sources\n\nChemical libraries used in this study include the US Drug Collection (1280 compounds; MicroSource Discovery Systems Inc), the DiscoveryProbe Kinase Inhibitor Library (436 compounds; APExBIO), the GlaxoSmithKline Published Kinase Inhibitor (PKI) Set (880 compounds; William Zuercher), and a collection of 770 worm-bioactives (\u2018wactives\u2019) that were identified in a screen for bioactive small molecules in C. elegans (Burns et al., 2015). Nemadipine-A (#5619779), optovin analog 6b8 (#5707191), and wactives/non-wactives (ID numbers in Supplementary file 1) were purchased from ChemBridge. Chemicals from the US Drug Collection identified as \u2018hits\u2019 in the C. elegans screen were purchased from Sigma-Aldrich for testing in zebrafish. Kinase inhibitors representative of those identified as \u2018hits\u2019 in the C. elegans screen, including p38 inhibitors, were purchased individually from APExBIO or selected from the DiscoveryProbe Kinase Inhibitor Library for testing in zebrafish and cell lines.\n\n### C.\u00a0elegans strains and culture\n\nAll animals were cultured under standard methods at 20\u00b0C (Burns et al., 2015). The wild type (N2), and unc-68(r1161) and unc-68(r1162) (TR2170 and TR2171, respectively) strains of Caenorhabditis elegans were obtained from the C. elegans Genetics Center (University of Minnesota). The \u2018thrashing assay\u2019 is performed by counting the waveforms propagated by individual C. elegans in one minute as previously described (Maryon et al., 1996).\n\n### C.\u00a0elegans chemical screening\n\nThe protocol for the 96-well liquid-based chemical screens was described previously (Burns et al., 2015). Briefly, nematode growth media (NGM; for recipe see Burns et al., 2015) was used to concentrate saturated E. coli HB101 bacteria two-fold (NGM-HB101). Nemadipine-A (NEM) was added to NGM+HB101 to a final concentration of 31.25 \u03bcM/0.5% DMSO (NEM+NGM+HB101). A total of 40 \u03bcL of NEM+NGM+HB101 was dispensed into each well of a 96-well plate, and 300 nL of chemical dissolved in DMSO was pinned into the wells using a 96-well pinning tool (V and P Scientific). At Day 0, approximately 20 synchronized first larval-stage (L1), unc-68(r1162) (TR2171) worms obtained from an embryo preparation were added to each well in 10 \u03bcL of M9 buffer (Burns et al., 2015). The unc-68(r1162) strain TR2171 was selected for screening because its growth rate was comparable to N2 wild type whereas strain TR2170 grew noticeably slower than N2. The final concentration of dimethyl sulfoxide (DMSO) in the wells was 1% v/v. Plates were sealed with parafilm, wrapped in damp paper towels to reduce evaporation in wells, and incubated for 6 days at 20\u00b0C while shaking at 200 rpm (New Brunswick I26/I26R shaker, Eppendorf). A stereomicroscope was used to assess developmental stage after 6 days incubation. All preliminary screens and re-tests were performed in duplicate. Post-hoc statistical analysis was performed by assuming 20 worms in each well and assigning each individual worm in L1-L3, L4, or adult stage a rank score of 1, 2, and 3, respectively. Next, the developmental stage distributions were compared to the random escapee wells using a nonparametric Kruskal-Wallis test with Dunn\u2019s multiple comparisons post-test in GraphPad Prism 8.\n\n### C.\u00a0elegans RNA interference\n\nRNAi knock-down was carried out in 96-well plate liquid culture as previously described (Lehner et al., 2006). Synchronized L1-stage unc-68(r1162) mutant worms were fed E. coli HT115 bacteria expressing double-stranded RNA targeting pmk-1, pmk-2, pmk-3 or a combination of the three from the Source BioScience RNAi library. The E. coli HT115 strain carrying the L4440 empty vector was used as a control for RNAi machinery induction, and pop\u20101 RNAi which produces a severe embryonic lethality phenotype was used as a control for RNAi induction efficiency. A total of 40 \u03bcL of bacterial suspension containing nemadipine-A or DMSO was dispensed into each well of a flat-bottomed 96-well plate. Approximately 25 unc-68(r1162) L1 worms were dispensed into the wells in 10 \u03bcL of M9 buffer. The final concentration of nemadipine-A in the wells was 25 \u03bcM in 0.4% DMSO v/v. Plates were sealed with parafilm and incubated at 20\u00b0C with shaking at 200 rpm. On Day six the plates were observed under a dissection microscope and the distribution of developmental stages in each condition was assessed. Each experiment was performed in quadruplicate and repeated at least three times. For statistical analysis, each individual worm in L1-L3, L4, or adult stage was assigned a rank score of 1, 2, and 3, respectively, and the developmental stage distributions were compared to the negative empty vector control using a nonparametric Kruskal-Wallis test with Dunn\u2019s multiple comparisons post-test in GraphPad Prism 8.\n\n### Cheminformatics\n\nPairwise Tanimoto coefficient scores were calculated for each chemical \u2018hit\u2019 and compound in the screening library using OpenBabel (http://openbabel.org) as previously described (Burns et al., 2015). Tanimoto coefficient scores were hierarchically clustered in Cluster 3.0 using an unweighted Euclidean distance similarity metric with complete linkage clustering and visualized in TreeView as previously described (Folts et al., 2016). For enrichment analysis, chemicals were counted based on the number of structurally similar members in each cluster (Tanimoto scores were\u00a0>0.55 for the majority of members in a given cluster) and Fisher\u2019s exact test (GraphPad Prism 8) was used to calculate enrichment.\n\n### Zebrafish care and husbandry\n\nIn this study, we used ryr1a and ryr1b mutant alleles that have been previously characterized (Hirata et al., 2007; Chagovetz et al., 2019). Both mutants result in loss of RYR1 protein expression from the mutant allele. For follow-up screens, we generated single ryr1b-/- mutants via incross of ryr1b+/- carriers. Phenotypic analysis of all ryr1 mutants was performed on a stereomicroscope.\n\n### Zebrafish chemical treatments\n\nAll chemical stocks were prepared in DMSO and added to egg water at 0.1\u20130.5% of the final volume to prepare working concentrations (depending on chemical solubility). Equal volumes of vehicle solvent were used in all conditions for a single assay. Note that methylene blue was not added to the egg water. Dishes or 96-well plates were sealed with parafilm, wrapped in aluminum foil, and incubated at 28.5\u00b0C until the assay date. Different volumes and culture dish formats were used depending on the endpoint assay.\n\n### Zebrafish chemical screening\n\nThe US Drug Collection (1280 compounds) and the DiscoveryProbe Kinase Inhibitor Library (436 compounds) were screened for chemicals that could promote motility in ryr1a; ryr1b double mutants. Library stocks of 10 mM in DMSO were added to 0.1% of the final volume to egg water to prepare a 10 \u03bcM screening concentration. Specifically, 150 \u00b5L of egg water was added to every well of two separate 96-well plates. Double mutants were generated by in-cross of ryr1a-/-;ryr1b+/- mutants. Embryos were manually dechorionated at one dpf. Then at two dpf two double mutant embryos were added to each well of one plate while two phenotypically wild type siblings were added to the second plate as a control. We reasoned that testing two larvae would be sufficient to detect if a chemical rescued the striking immotile phenotype. Care was taken to lower embryos to the bottom of a Pasteur pipette tip and deposit embryos into the well by surface tension to minimize changes to well volume. Next, 250 \u00b5L of the drug library was prepared at 40 \u00b5M working concentration in a separate 96-well plate by adding 1 \u00b5L of the 10 mM stock to 249 \u00b5L of egg water. Next, 50 \u00b5L of the 40 \u00b5M working concentration was added to the 150 \u00b5L water containing embryos to give a final concentration of 10 \u00b5M drug. After 24 hr incubation in chemical, motility of 3 dpf wild type and double mutant larvae was assessed by touch-evoked response (Hirata et al., 2007) under a stereomicroscope.\n\n### Photoactivation of motor behavior assay\n\nAt three dpf, ryr1b mutants were segregated from wild type (ryr1b+/+ or ryr1b+/-) siblings based on their phenotype and distributed into sterile 6 cm tissue culture dishes containing 10 mL of egg water plus chemical. Please note that care was taken to evenly distribute larvae from one pair of parents across all conditions, that\u00a0is sibling-matching, to minimize potential effects arising from clutch-to-clutch variability. Additionally, dysmorphic or underdeveloped larvae were not used. All assays were performed at 4 dpf after 24 hr incubation using the ZebraBox platform (ViewPoint) and 10 \u03bcM optovin analog 6b8 as previously described (Sabha et al., 2016). Using G*Power Version 3.1 (Faul et al., 2009), we calculated that a sample size n\u00a0=\u00a09 larvae per group would allow us a 99% probability of detecting a difference between WT and ryr1b mutants given their group means and standard deviations in movement speed (mm/s). For the majority of chemicals, two independent experiments with n\u00a0=\u00a09 or 10 larvae per group were performed. To compare effects from independent experiments, movement speed of individual larvae in each group were normalized to the average movement speed of DMSO treated WT siblings from the same assay. This would allow us to estimate chemical-genetic interactions based on an unexpected change in the difference between WT and ryr1b following chemical treatment. We adapted the formulas for calculating additive and multiplicative models of genetic interactions Figure 1 in Baryshnikova et al. (2013) to calculate and visualize expected chemical-genetic interactions based on larval movement speed. Statistical significance for the interaction was calculated by two-way ANOVA with Tukey\u2019s multiple comparison post-test (GraphPad Prism 8).\n\n### Generating Ryr1 knockout C2C12 cells using CRISPR-Cas9 strategy\n\nThe original C2C12 (ATCC CRL1772) was purchased from American Type Culture Collection (Manassas, VA, USA). The sgRNA sequence (5\u2019-AGGAGAGAAGGTTCGAGTTG-3\u2019) against Ryr1 in Exon six was designed by the online CRISPR Design Tool (http://tools.genome-engineering.org) and cloned at the BbsI site into pSpCas9(BB)\u22122A-Puro (PX459) V2.0 (Addgene plasmid ID: 62988). The CRISPR plasmids are transfected into C2C12 cells by electroporation (Amaxa Nucleofector Lonza). Seventy-two hours later, the transfected cells were selected in medium containing 4 \u00b5g/mL puromycin for three days and then subcloned into 96-well plates. Once at sufficient cell density, the genomic DNA of subclones was analyzed by Sanger sequencing. Primers used were (forward) 5\u2019-GTGTGACGGGAGTCCCAAAT-3\u2019 and (reverse)5\u2019-ACTGGGCATGCCAATGATGA-3\u2019. Cells were tested and found negative for mycoplasma.\n\n### Western blot\n\nProtein was isolated in RIPA buffer from C2C12 myotubes at 5 days after starting differentiation. Cells are incubated with 100 nM SB202190, 10 \u03bcM SB203580, DMSO and without treatment for 24 hr from day4. A total of 30 \u03bcg of total protein was run on either 4.5% SDS-acrylyamide gel for RyR1 or 15% SDS-acrylamide gel for \u03b2-actin. Blots were run for 3\u20133.5 hr for Ryr1 or for 2\u20132.5 hr for \u03b2actin at 100 V and transferred overnight at 20 V. The membrane was blocked in 3% bovine serum albumin (BSA) in Tris Buffered Saline with Tween 20 (TBST) for 1 hr at room temperature before incubating with primary antibodies overnight at 4\u00b0C. Antibodies used were anti-Ryanodine receptor antibody 34C (Developmental Studies Hybridoma Bank) at 1:100 dilution and anti-beta actin antibody (Abcam) at 1:5000 dilution. After three washes in TBST, blots were incubated with Anti-Mouse IgG-HRP conjugate (Bio-Rad) at 1:10000 dilution. Blots were imaged by chemiluminescence (Western Lightning Plus-ECL, PerkinElmer) using the Gel Doc XR + Gel Documentation System (BioRad), and band signal intensities determined using ImageLab software (BioRad).\n\n### Small-interfering RNA (siRNA) interference in myotubes\n\nC2C12 myoblasts were seeded at 2.5\u00a0\u00d7\u00a0104 cells\u00b7cm\u22122 density in 24-well plates (Falcon) containing glass coverslips coated with 5 \u03bcg/cm2 collagen and grown in DMEM with 20% (v/v) fetal bovine serum (FBS). Once cells reached 80\u201390% confluency, media was changed to differentiation media (DMEM with 2% (v/v) horse serum, 1 \u03bcg/mL insulin and 50 \u03bcg/mL gentamicin) representing Day 0 of differentiation. At Day 4, myotubes were transfected for 6 hr with 50 pmol ON-TARGETplus siRNA (Horizon Discovery) against p38\u03b1/Mapk14 (5\u2019-GCAAGAAACTACATTCAGT-3\u2019), p38\u03b2/Mapk11 (5\u2019-ATGAGGAGATGACCGGATA-3\u2019), p38\u03b3/Mapk12 (5\u2019-AATGGAAGCGTGTGACTTA-3\u2019) or a non-targeting negative control (5\u2019-TGGTTTACATGTCGACTAA-3\u2019) in complex with 5 \u03bcL Lipofectamine RNAi/MAX (Invitrogen) in 500 \u03bcL Optimem solution (Gibco). Fresh differentiation medium was added until Day five when myotubes were transfected again following the same protocol. Finally, myotubes were maintained in differentiation media until Day 6. At Day 6, myotubes were either used for calcium measurements or qPCR analysis. It is important to note that siRNA knockdown was started after differentiation into myotubes because siRNA knockdown of either the \u03b1, \u03b2, or \u03b3 isoforms of p38 prevents C2C12 myoblast differentiation into myotubes (Wang et al., 2008).\n\n### Quantitative real-time PCR\n\nRNA was extracted with the RNeasy Mini kit (Qiagen) from n\u00a0=\u00a03 independent myotube cultures for each siRNA condition. Each sample was run in triplicate using SYBR Green master mix Applied Biosystems StepOne system (ThermoFisher). Comparative \u0394\u0394CT method was used to determine relative expression of target genes after siRNA knockdown. Briefly, target gene expression was normalized to endogenous control gene Tbp as an endogenous control to obtain \u0394CT values. Next, relative fold change in gene expression for each siRNA condition was calculated by normalizing to the mean \u0394CT value for negative control siRNA. The following primer pairs were used: Tbp (Forward: 5\u2019-TGCTGCAGTCATCATGAG-3\u2019; Reverse: 5\u2019-CTTGCTGCTAGTCTGGATTG-3\u2019), p38\u03b1/Mapk14 (Forward: 5\u2019-CAGCAGATAATGCGTCTGACGGG-3\u2019; Reverse: 5\u2019-GCGAAGTTCATCTTCGGCATCTGG-3\u2019), p38\u03b2/Mapk11 (Forward: 5\u2019-CCAGCAATGTAGCGGTGAACGAG-3\u2019; Reverse: 5\u2019-GCATGATCTCTGGCGCCCGGTAC-3\u2019), p38\u03b3/Mapk12 (Forward: 5\u2019-CACTGAGGATGAACCCAAGGCC-3\u2019; Reverse: 5\u2019-CTCCTAGCTGCCTAGGAGGCTTG-3\u2019).\n\n### Intracellular Ca2+ measurements in myotubes\n\nIntracellular Ca2+ measurements were obtained from Fura-2 (Invitrogen) AM-loaded myotubes as described previously (Goonasekera et al., 2007). Briefly, myotubes were differentiated for 5\u20136 days on glass bottom dishes and loaded with 5 \u03bcM Fura-2 AM for 45 min at 37\u00b0C in a normal rodent Ringer\u2019s solution consisting of 145 mM NaCl, 5 mM KCl, 2 mM CaCl2, 1 mM MgCl2, 10 mM HEPES, pH 7.4. Coverslips of Fura-2\u2013loaded cells were then mounted in a tissue chamber on the stage of an epifluorescence-equipped inverted microscope (Zeiss). Cells were sequentially excited at 340- and 380 nm wavelength and fluorescence emission at 510 nm was collected using a high-speed CCD camera (Hamamatsu). The results are presented as the ratio of 340/380 nm. Maximal increase or peak change in intracellular Ca2+ by induction of 10 mM caffeine was defined as the difference between peak and 10 s of baseline fluorescence ratios prior to addition of caffeine. To better visualize differences in peak change across multiple treatment groups, 340/380 ratios for each individual myofiber were normalized to their own 10 s of baseline 340/380 ratios prior to addition of caffeine. Data are also presented without normalization in Figure 5\u2014figure supplement 1D\u2013F.\n\n### Temperature-dependence of resting calcium in YS myotubes\n\nResting [Ca2+]i was measured in primary myotubes derived from Ryr1Y524S/+ (YS) mice cultured on glass bottom dishes using Fura-2 (Invitrogen) and a temperature controlled chamber (Lanner et al., 2012). The day before measurements, myotube cultures were incubated overnight in either vehicle or 10 \u03bcM SB203580. Fura-2 was excited at 340 nm and 380 nm and images of myotubes were collected using a CCD camera connected to a TILL monochromator (TILL Photonics Inc). The myotubes were first imaged at temperature just above room temperature (25\u00b0C). The temperature of the bathing solution was then raised to 37\u00b0C and the same cells were re-imaged again at 37\u00b0C for paired statistical comparison. Ratio images of 340/380 nm for Fura-2 were created using TILLvisION software and analyzed offline using ImageJ software. Resting free calcium concentration ([Ca2+]i) was calculated using a calibration curve of Fura-2 as described previously (Lanner et al., 2012).\n\n### Statistical analysis\n\nTests of statistical significance were performed using Microsoft Office Excel 2008 (Microsoft) and GraphPad Prism eight for Mac OSX (GraphPad Software). Differences were considered to be statistically significant at p<0.05 (*), p<0.01 (**), or p<0.001 (***). All data unless otherwise specified are presented as mean\u00a0\u00b1\u00a0SEM.\n",
+      "created_at": "2025-12-02T16:04:02.978784Z"
+    },
+    {
+      "id": "8a44b94b-54c7-46ff-8e12-83dec38512f2",
+      "submission_id": "09caa394-f870-4b44-a053-061ca3d5ea94",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Jeff S Mumm, Johns Hopkins University United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.52946.sa1](https://doi.org/10.7554/eLife.52946.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nAcceptance summary:\n\nModern \"target-based\" drug discovery is a costly, time-consuming, and frankly inefficient endeavor, with new drugs now costing billions of dollars. This paper exemplifies how screening drugs directly in living miniaturized disease models (e.g., worms, fish, and mammalian cell culture) has the potential to streamline the discovery process and reveal promising new drug targets. Using a novel cross-species screening cascade, the authors implicate the p38 signaling pathway in mediating ryanodine receptor type I-related myopathies (RYR1-RMs), suggesting that p38 inhibition could provide a new therapeutic strategy for treating this devastating childhood muscle disease for which no current treatments are available.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Identification of drug modifiers for RYR1 related myopathy using a multi-species discovery pipeline\" for consideration by eLife. Your article has been reviewed by four peer reviewers, including Jeff S Mumm as the Reviewing Editor and Reviewer #1, and the evaluation has been overseen by Didier Stainier as the Senior Editor. The following individuals involved in review of your submission have agreed to reveal their identity: Isaac Pessah (Reviewer #2); Guy M Benian (Reviewer #3); Clarissa Henry (Reviewer #4).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nThe manuscript reports results from extensive whole organism chemical screens in worms and fish, as well as a mouse cell culture models, of a debilitating muscle disease associated with mutations in the ryanodine receptor type I-related (RYR1) gene, specifically: (a) Mitigation of developmental arrest in RyR mutant nematodes (aka, \"unc68\") exposed to nemadipine-A; (b) Mitigation of motor function deficits in zebrafish models with and without expression of ryr1 isoforms (WT and Ca-leaky RYR1 mutations), and; (c) An in vitro myotube model that assesses mitigation of ER/SR Ca leak due to expression of ryanodine receptor (RyR) pathogenic mutations. The pipeline the authors developed is a substantial achievement and exemplifies the potential for cross-species phenotypic screening to enhance modern drug discovery. The authors finding that p38 inhibition could provide a new therapeutic strategy for treating ryanodine receptor type I-related myopathies (RYR1-RMs) is intriguing and deserving of further study. Overall, the study is innovative and enlightening. However, several key issues were flagged by the reviewer's which need to be addressed to improve the quality of the manuscript.\n\nEssential revisions:\n\n1) Power calculations should be performed and confirmatory tests of positive hits performed with adequate samples sizes to overcome shortcomings of the primary screen regarding inadequate sample size.\n\n2) Given the high concentrations of compounds used in the C. elegans assays (sometimes >4 orders of magnitude higher than published affinities for target), target dependency of p38 inhibitor effects in C. elegans should be validated using RNAi. Similarly, siRNA should be used to validate p38 as a target in C2C12 myotube cultures. Alternatively, dose-responses could be performed to better define concentrations range producing observed effects.\n\n3) \"\u2026loss of expression mutation\u2026\" for the unc-68 allele used, unc-68(r1162), is not supported. A Western Blot to showing loss of protein is needed to confirm. If not a null allele this could explain differences between worm and fish screens (and be useful for addressing any discrepancies with requested RNA0 and siRNA experiments in #1).\n",
+      "created_at": "2025-12-02T16:04:02.978784Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T16:04:02.978784Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T16:04:02.978784Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "c2ad3db6-b898-4d7d-9705-45cf37396485",
+      "content_id": "3af5c2bb-f22a-4523-9171-0f9cb45b7cf1",
+      "claim_id": "C1",
+      "claim": "RYR1-related myopathies (RYR1-RMs) are a common group of childhood muscle diseases associated with severe disabilities and early mortality.",
+      "claim_type": "EXPLICIT",
+      "source": "Ryanodine receptor type I-related myopathies (RYR1-RMs) are a common group of childhood muscle diseases associated with severe disabilities and early mortality for which there are no available treatments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the abstract as a characterization of RYR1-RMs.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:04:02.978784Z"
+    },
+    {
+      "id": "49258bd4-5781-440b-a558-97fb6ebe67af",
+      "content_id": "3af5c2bb-f22a-4523-9171-0f9cb45b7cf1",
+      "claim_id": "C2",
+      "claim": "There are no available treatments for RYR1-related myopathies.",
+      "claim_type": "EXPLICIT",
+      "source": "Ryanodine receptor type I-related myopathies (RYR1-RMs) are a common group of childhood muscle diseases associated with severe disabilities and early mortality for which there are no available treatments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the abstract.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:04:02.978784Z"
+    },
+    {
+      "id": "b25f76dd-eb99-4fcf-9bde-b49d15971f8f",
+      "content_id": "3af5c2bb-f22a-4523-9171-0f9cb45b7cf1",
+      "claim_id": "C3",
+      "claim": "A multi-species discovery pipeline using nematode, zebrafish, and mammalian cell models was developed for identifying therapeutic targets for RYR1-RMs.",
+      "claim_type": "EXPLICIT",
+      "source": "To accomplish this, we developed a discovery pipeline using nematode, zebrafish, and mammalian cell models.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract as a methodological approach.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:04:02.978784Z"
+    },
+    {
+      "id": "27168f38-d43e-431d-aa3e-7b0279df6ee5",
+      "content_id": "3af5c2bb-f22a-4523-9171-0f9cb45b7cf1",
+      "claim_id": "C4",
+      "claim": "Large-scale drug screens in C. elegans uncovered 74 hits.",
+      "claim_type": "EXPLICIT",
+      "source": "We first performed large-scale drug screens in C. elegans which uncovered 74 hits.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement of the screening results in the abstract.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:04:02.978784Z"
+    },
+    {
+      "id": "8699d2be-5ddd-44b9-9c8b-e5324a2c0541",
+      "content_id": "3af5c2bb-f22a-4523-9171-0f9cb45b7cf1",
+      "claim_id": "C5",
+      "claim": "Targeted testing in zebrafish yielded positive results for two p38 inhibitors.",
+      "claim_type": "EXPLICIT",
+      "source": "Targeted testing in zebrafish yielded positive results for two p38 inhibitors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the abstract as a result of zebrafish testing.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:04:02.978784Z"
+    },
+    {
+      "id": "65bb8c6f-2baa-4446-ac78-88e7bfb8b1e8",
+      "content_id": "3af5c2bb-f22a-4523-9171-0f9cb45b7cf1",
+      "claim_id": "C6",
+      "claim": "Pharmacological inhibition of p38 impaired caffeine-induced Ca2+ release from wild type mouse myotubes.",
+      "claim_type": "EXPLICIT",
+      "source": "Using mouse myotubes, we found that either pharmacological inhibition or siRNA silencing of p38 impaired caffeine-induced Ca2+ release from wild type cells while promoting intracellular Ca2+ release in Ryr1 knockout cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and supported by experimental data in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:04:02.978784Z"
+    },
+    {
+      "id": "1e9d0421-085a-4b09-a419-1e8833cb9eb0",
+      "content_id": "3af5c2bb-f22a-4523-9171-0f9cb45b7cf1",
+      "claim_id": "C7",
+      "claim": "siRNA silencing of p38 impaired caffeine-induced Ca2+ release from wild type mouse myotubes.",
+      "claim_type": "EXPLICIT",
+      "source": "Using mouse myotubes, we found that either pharmacological inhibition or siRNA silencing of p38 impaired caffeine-induced Ca2+ release from wild type cells while promoting intracellular Ca2+ release in Ryr1 knockout cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and supported by experimental data in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:04:02.978784Z"
+    },
+    {
+      "id": "6f4c7aeb-4411-41e0-b96d-59abf05567b4",
+      "content_id": "3af5c2bb-f22a-4523-9171-0f9cb45b7cf1",
+      "claim_id": "C8",
+      "claim": "Pharmacological inhibition of p38 promoted intracellular Ca2+ release in Ryr1 knockout mouse myotubes.",
+      "claim_type": "EXPLICIT",
+      "source": "Using mouse myotubes, we found that either pharmacological inhibition or siRNA silencing of p38 impaired caffeine-induced Ca2+ release from wild type cells while promoting intracellular Ca2+ release in Ryr1 knockout cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and supported by experimental data in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:04:02.978784Z"
+    },
+    {
+      "id": "096106c2-5fba-412e-b83d-b01aaa44087b",
+      "content_id": "3af5c2bb-f22a-4523-9171-0f9cb45b7cf1",
+      "claim_id": "C9",
+      "claim": "siRNA silencing of p38 promoted intracellular Ca2+ release in Ryr1 knockout mouse myotubes.",
+      "claim_type": "EXPLICIT",
+      "source": "Using mouse myotubes, we found that either pharmacological inhibition or siRNA silencing of p38 impaired caffeine-induced Ca2+ release from wild type cells while promoting intracellular Ca2+ release in Ryr1 knockout cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and supported by experimental data in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:04:02.978784Z"
+    },
+    {
+      "id": "26b7d297-0e22-441a-aa79-1a8e65528dca",
+      "content_id": "3af5c2bb-f22a-4523-9171-0f9cb45b7cf1",
+      "claim_id": "C10",
+      "claim": "p38 inhibition blunts the aberrant temperature-dependent increase in resting Ca2+ in myotubes from an RYR1-RM mouse model.",
+      "claim_type": "EXPLICIT",
+      "source": "Lastly, we demonstrated that p38 inhibition blunts the aberrant temperature-dependent increase in resting Ca2+ in myotubes from an RYR1-RM mouse model.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and supported by experimental data in Figure 5D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:04:02.978784Z"
+    },
+    {
+      "id": "fb42bf77-27d7-4198-95e3-30d04d0ec3e9",
+      "content_id": "3af5c2bb-f22a-4523-9171-0f9cb45b7cf1",
+      "claim_id": "C11",
+      "claim": "The ryanodine receptor type I (RyR1) is a calcium release channel located in the terminal cisternae of the sarcoplasmic reticulum in skeletal muscle.",
+      "claim_type": "EXPLICIT",
+      "source": "The ryanodine receptor type I (RyR1) is a calcium release channel located in the terminal cisternae of the sarcoplasmic reticulum (SR) in skeletal muscle.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction as established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:04:02.978784Z"
+    },
+    {
+      "id": "d173d8ea-723e-41ef-9786-73b7c5592e40",
+      "content_id": "3af5c2bb-f22a-4523-9171-0f9cb45b7cf1",
+      "claim_id": "C12",
+      "claim": "During excitation-contraction coupling, RyR1 is activated by the voltage sensing L-type calcium channel dihydropyridine receptor (DHPR).",
+      "claim_type": "EXPLICIT",
+      "source": "During excitation-contraction coupling (ECC), RyR1 is activated by the voltage sensing L-type calcium channel dihydropyridine receptor (DHPR), located in the transverse tubule (T-tubule) membrane.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction as established knowledge about ECC mechanism.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:04:02.978784Z"
+    },
+    {
+      "id": "e8aa7468-94c5-48ba-b474-4d38294592de",
+      "content_id": "3af5c2bb-f22a-4523-9171-0f9cb45b7cf1",
+      "claim_id": "C13",
+      "claim": "Mutations in the RYR1 gene are the most common cause of non-dystrophic muscle disease in humans.",
+      "claim_type": "EXPLICIT",
+      "source": "Mutations in the RYR1 gene are the most common cause of non-dystrophic muscle disease in humans (Colombo et al., 2015; Gonorazky et al., 2018; Jungbluth et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction and supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:04:02.978784Z"
+    },
+    {
+      "id": "3755c450-6023-438b-b205-14285af74d4a",
+      "content_id": "3af5c2bb-f22a-4523-9171-0f9cb45b7cf1",
+      "claim_id": "C14",
+      "claim": "There are currently no approved pharmacological therapies for patients with RYR1-RM.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite their relatively high prevalence and associated morbidities, there are currently no approved pharmacological therapies for patients with RYR1-RM.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction as a clinical gap.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:04:02.978784Z"
+    },
+    {
+      "id": "2d95a43d-aa8f-48d2-bd28-a63fa72cd138",
+      "content_id": "3af5c2bb-f22a-4523-9171-0f9cb45b7cf1",
+      "claim_id": "C15",
+      "claim": "The C. elegans unc-68 mutant is a recessive model of RYR1-RM with impaired motility.",
+      "claim_type": "EXPLICIT",
+      "source": "Well described recessive models of RYR1-RM include the C. elegans unc-68 mutant (null mutant with impaired motility [Maryon et al., 1996; Maryon et al., 1998])",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction and supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:04:02.978784Z"
+    },
+    {
+      "id": "a9f3994f-9134-41a0-9d0d-db2d69b466f7",
+      "content_id": "3af5c2bb-f22a-4523-9171-0f9cb45b7cf1",
+      "claim_id": "C16",
+      "claim": "The relatively relaxed zebrafish is a loss of function ryr1b mutant with impaired motility and early death.",
+      "claim_type": "EXPLICIT",
+      "source": "the relatively relaxed zebrafish (loss of function ryr1b mutant with impaired motility and early death (Hirata et al., 2007)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction and supported by citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:04:02.978784Z"
+    },
+    {
+      "id": "2ff33001-d6a0-4631-be67-33d87a0eb220",
+      "content_id": "3af5c2bb-f22a-4523-9171-0f9cb45b7cf1",
+      "claim_id": "C17",
+      "claim": "The 'dyspedic' Ryr1 null mouse is perinatal lethal.",
+      "claim_type": "EXPLICIT",
+      "source": "the 'dyspedic' Ryr1 null mouse (perinatal lethal [Buck et al., 1997; Avila and Dirksen, 2000])",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction and supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:04:02.978784Z"
+    },
+    {
+      "id": "e4c9bbed-619f-4719-a513-9603b58dc804",
+      "content_id": "3af5c2bb-f22a-4523-9171-0f9cb45b7cf1",
+      "claim_id": "C18",
+      "claim": "Two compound heterozygous mouse models of recessive RYR1-RM were recently generated and characterized.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, two compound heterozygous mouse models of recessive RYR1-RM were with recently generated and characterized (Brennan et al., 2019; Elbaz et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction and supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:04:02.978784Z"
+    },
+    {
+      "id": "5a27aa16-eaae-44c0-bec1-aa2f37f71ad8",
+      "content_id": "3af5c2bb-f22a-4523-9171-0f9cb45b7cf1",
+      "claim_id": "C19",
+      "claim": "N-acetylcysteine was tested in a clinical trial for RYR1-RM and failed to achieve its primary endpoint.",
+      "claim_type": "EXPLICIT",
+      "source": "N-acetylcysteine was tested in a recently completed clinical trial (ClinicalTrials.gov identifier: NCT02362425), where it failed to achieve its primary endpoint (Todd et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction and supported by citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:04:02.978784Z"
+    },
+    {
+      "id": "3a4b42d0-c4ec-4dda-a744-829ab9390c44",
+      "content_id": "3af5c2bb-f22a-4523-9171-0f9cb45b7cf1",
+      "claim_id": "C20",
+      "claim": "The unc-68(r1162) C. elegans model has a deletion in the worm ryanodine receptor.",
+      "claim_type": "EXPLICIT",
+      "source": "This model has a deletion in the worm ryanodine receptor, lacks RyR protein expression by western blot, and manifests an unc-68 null phenotype characterized by an 'uncoordinated' (unc) movement phenotype, defective pharyngeal pumping, impaired calcium regulation, and reduced fitness (Maryon et al., 1996; Maryon et al., 1998).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section and supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:04:02.978784Z"
+    },
+    {
+      "id": "33e1b558-7302-410b-b0e2-baaa96c35c43",
+      "content_id": "3af5c2bb-f22a-4523-9171-0f9cb45b7cf1",
+      "claim_id": "C21",
+      "claim": "The unc-68(r1162) C. elegans model lacks RyR protein expression by western blot.",
+      "claim_type": "EXPLICIT",
+      "source": "This model has a deletion in the worm ryanodine receptor, lacks RyR protein expression by western blot, and manifests an unc-68 null phenotype characterized by an 'uncoordinated' (unc) movement phenotype, defective pharyngeal pumping, impaired calcium regulation, and reduced fitness (Maryon et al., 1996; Maryon et al., 1998).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section and supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:04:02.978784Z"
+    },
+    {
+      "id": "29e224e8-88ab-4708-9ed0-d9618c0dff02",
+      "content_id": "3af5c2bb-f22a-4523-9171-0f9cb45b7cf1",
+      "claim_id": "C22",
+      "claim": "Nemadipine-A is an inhibitor of the dihydropyridine receptor.",
+      "claim_type": "EXPLICIT",
+      "source": "we developed a sensitized screen based on our observation that nemadipine-A, an inhibitor of the dihydropyridine receptor (Kwok et al., 2006), induces developmental growth arrest in unc-68 mutants",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section and supported by citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:04:02.978784Z"
+    },
+    {
+      "id": "e9f23973-95a4-4135-9604-f251b97a0c4c",
+      "content_id": "3af5c2bb-f22a-4523-9171-0f9cb45b7cf1",
+      "claim_id": "C23",
+      "claim": "unc-68 worms exposed to 25 \u03bcM nemadipine-A arrest at the L1-L3 larval stage.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, unc-68 worms exposed to 25 \u03bcM nemadipine-A arrest at the L1-L3 larval stage, while the majority of wild type N2 strain treated with nemadipine-A have either normal development or, in a small percentage, arrest at the L4 stage (Figure 2\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and supported by data shown in Figure 2\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:04:02.978784Z"
+    },
+    {
+      "id": "09fd2ef5-bd19-4243-9ffa-063b4923b012",
+      "content_id": "3af5c2bb-f22a-4523-9171-0f9cb45b7cf1",
+      "claim_id": "C24",
+      "claim": "3700 chemicals were evaluated in duplicate from a combination of libraries in the C. elegans screen.",
+      "claim_type": "EXPLICIT",
+      "source": "We evaluated 3700 chemicals in duplicate from a combination of libraries.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section as a description of the screening methodology.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:04:02.978784Z"
+    },
+    {
+      "id": "e27480df-a0a5-402f-9317-fc8635829dbf",
+      "content_id": "3af5c2bb-f22a-4523-9171-0f9cb45b7cf1",
+      "claim_id": "C25",
+      "claim": "The primary screen found 278 chemical conditions out of 3700 (~7.5%) that contained at least one L4 or adult worm in duplicate wells.",
+      "claim_type": "EXPLICIT",
+      "source": "The primary screen found 278 chemical conditions out of 3700 (~7.5%) that contained at least one L4 or adult worm in duplicate wells (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and supported by Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:04:02.978784Z"
+    },
+    {
+      "id": "839da139-717d-4860-b80a-ed0ad096fa80",
+      "content_id": "3af5c2bb-f22a-4523-9171-0f9cb45b7cf1",
+      "claim_id": "C26",
+      "claim": "74 chemicals reproducibly suppressed the nemadipine-A-induced growth suppression of unc-68 mutants upon re-testing.",
+      "claim_type": "EXPLICIT",
+      "source": "We re-tested the 145 chemicals in duplicate and found that 74 reproducibly suppressed the nemadipine-A-induced growth suppression of unc-68 mutants (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and supported by Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:04:02.978784Z"
+    },
+    {
+      "id": "0d9eca0f-a38b-49d3-9a48-7dcf158a9c52",
+      "content_id": "3af5c2bb-f22a-4523-9171-0f9cb45b7cf1",
+      "claim_id": "C27",
+      "claim": "Among the 74 'hits', there were 5 wactives, 7 non-wactives, 44 kinase inhibitors, and 18 compounds from the MicroSource library.",
+      "claim_type": "EXPLICIT",
+      "source": "Among these 74 'hits', we identified five wactives and seven non-wactives, 44 kinase inhibitors, and 18 compounds from the MicroSource library (Supplementary file 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section as a breakdown of the hits.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:04:02.978784Z"
+    },
+    {
+      "id": "7a613612-97d2-4feb-a480-e3227f0e5687",
+      "content_id": "3af5c2bb-f22a-4523-9171-0f9cb45b7cf1",
+      "claim_id": "C28",
+      "claim": "p38 inhibitors were significantly overrepresented among the hits from the kinase inhibitor library.",
+      "claim_type": "EXPLICIT",
+      "source": "Using this methodology, we found that p38 inhibitors were significantly overrepresented (**p=0.0022, Fisher's exact test) when considering the total number of p38 inhibitors in the kinase inhibitor library.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section and supported by statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:04:02.978784Z"
+    },
+    {
+      "id": "6a57ca66-1ece-431a-afad-91d713559cd0",
+      "content_id": "3af5c2bb-f22a-4523-9171-0f9cb45b7cf1",
+      "claim_id": "C29",
+      "claim": "Structurally dissimilar p38 inhibitors suppressed the unc-68 phenotype.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, structurally dissimilar p38 inhibitors suppressed the phenotype (clusters 5, 6, 16, and 19 in Figure 2C), suggesting that inhibition of their common target was responsible for the activity.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and supported by Figure 2C showing structural clustering.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:04:02.978784Z"
+    },
+    {
+      "id": "c53a90f6-4788-47b7-91e7-142c9482a929",
+      "content_id": "3af5c2bb-f22a-4523-9171-0f9cb45b7cf1",
+      "claim_id": "C30",
+      "claim": "RNAi knockdown of p38 MAPK orthologs pmk-1, pmk-2, pmk-3 alone and in combination increased the proportion of unc-68 mutants that escaped nemadipine-A induced growth arrest.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, we validated p38 as a target by knocking down the p38 MAPK orthologs pmk-1, pmk-2, pmk-3 alone and in combination, and we observed a modest increase in the proportion of unc-68 mutants that escaped nemadipine-A induced growth arrest with each of the four conditions (Figure 2D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and supported by data in Figure 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:04:02.978784Z"
+    },
+    {
+      "id": "d2195fde-2052-40cc-b7d9-a8cedf116bb6",
+      "content_id": "3af5c2bb-f22a-4523-9171-0f9cb45b7cf1",
+      "claim_id": "C31",
+      "claim": "A screen of 436 kinase inhibitors at 10 \u03bcM from the DiscoveryProbe Kinase Inhibitor Library in ryr1a; ryr1b double mutant zebrafish did not identify any compounds that promoted movement.",
+      "claim_type": "EXPLICIT",
+      "source": "We screened 436 kinase inhibitors at 10 \u03bcM from the DiscoveryProbe Kinase Inhibitor Library (ApexBio) and 1360 drugs at 10 \u03bcM from the US Drug Collection (MicroSource Discovery Systems), using improvement in motility of the ryr1a; ryr1b double mutants (as measured by touch-evoked escape response) as the primary outcome measure. We did not identify a single compound that was able to promote movement in these fish.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section as a negative result from the zebrafish screen.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:04:02.978784Z"
+    },
+    {
+      "id": "b7a042c2-b2b8-44fa-a9a3-04393f804f0d",
+      "content_id": "3af5c2bb-f22a-4523-9171-0f9cb45b7cf1",
+      "claim_id": "C32",
+      "claim": "A screen of 1360 drugs at 10 \u03bcM from the US Drug Collection in ryr1a; ryr1b double mutant zebrafish did not identify any compounds that promoted movement.",
+      "claim_type": "EXPLICIT",
+      "source": "We screened 436 kinase inhibitors at 10 \u03bcM from the DiscoveryProbe Kinase Inhibitor Library (ApexBio) and 1360 drugs at 10 \u03bcM from the US Drug Collection (MicroSource Discovery Systems), using improvement in motility of the ryr1a; ryr1b double mutants (as measured by touch-evoked escape response) as the primary outcome measure. We did not identify a single compound that was able to promote movement in these fish.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section as a negative result from the zebrafish screen.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:04:02.978784Z"
+    },
+    {
+      "id": "23df14c9-a200-4e19-bdba-e664b661ef76",
+      "content_id": "3af5c2bb-f22a-4523-9171-0f9cb45b7cf1",
+      "claim_id": "C33",
+      "claim": "None of the tested chemicals improved the ryr1a; ryr1b double mutant phenotype at 10 \u03bcM.",
+      "claim_type": "EXPLICIT",
+      "source": "First, we tested all of these at a single concentration of 10 \u03bcM for the ability to promote movement in the ryr1a; ryr1b double mutants, which in the untreated state lack any movement. Consistent with our large-scale screen done with the ryr1a; ryr1b mutants, none of these chemicals improved the double mutant phenotype (Figure 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and supported by Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:04:02.978784Z"
+    },
+    {
+      "id": "0c999f25-d6bd-4ad3-951d-5a564af230e2",
+      "content_id": "3af5c2bb-f22a-4523-9171-0f9cb45b7cf1",
+      "claim_id": "C34",
+      "claim": "The p38 inhibitors SB239063 and PH-797804 decreased motility in wildtype zebrafish controls but had no effect on ryr1b mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "The p38 inhibitors SB239063 and PH-797804 decreased motility in wildtype controls, but had no effect on ryr1 mutants (Figure 4A\u2013B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and supported by data in Figure 4A-B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:04:02.978784Z"
+    },
+    {
+      "id": "daa28dbb-0527-4c11-a7e8-16c3edf067d2",
+      "content_id": "3af5c2bb-f22a-4523-9171-0f9cb45b7cf1",
+      "claim_id": "C35",
+      "claim": "The absence of effects of SB239063 and PH-797804 in ryr1 mutant zebrafish stands in contrast to predicted additive and multiplicative effects.",
+      "claim_type": "EXPLICIT",
+      "source": "The absence of effects in ryr1 mutant models stands in contrast to predicted additive and multiplicative effects for these compounds (Figure 4A'\u2013B'), suggesting that RyR1-related pathways mediate the effects of SB239063 and PH-797804.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and supported by data in Figure 4A'-B'.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:04:02.978784Z"
+    },
+    {
+      "id": "fd6b9bdd-4572-4aed-8151-cdbe5b5ee018",
+      "content_id": "3af5c2bb-f22a-4523-9171-0f9cb45b7cf1",
+      "claim_id": "C36",
+      "claim": "A new Ryr1 knockout C2C12 cell line was created using CRISPR/Cas9 gene editing.",
+      "claim_type": "EXPLICIT",
+      "source": "We examined this in wild type C2C12 cells and in a C2C12 Ryr1 knockout line that we created using CRISPR/Cas9 gene editing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section as a methodological development.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:04:02.978784Z"
+    },
+    {
+      "id": "840d00ec-118f-43b8-9c36-f0260f4b73f5",
+      "content_id": "3af5c2bb-f22a-4523-9171-0f9cb45b7cf1",
+      "claim_id": "C37",
+      "claim": "The Ryr1 knockout C2C12 line contains a bi-allelic frameshift deletion mutation in Ryr1.",
+      "claim_type": "EXPLICIT",
+      "source": "This new line contains a bi-allelic frameshift deletion mutation in Ryr1 (which we refer to as 'KO').",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section as a characterization of the knockout line.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:04:02.978784Z"
+    },
+    {
+      "id": "37b750de-0c2c-4289-9bb6-60986c3f77aa",
+      "content_id": "3af5c2bb-f22a-4523-9171-0f9cb45b7cf1",
+      "claim_id": "C38",
+      "claim": "Successful targeting of the Ryr1 locus was demonstrated by Sanger sequencing.",
+      "claim_type": "EXPLICIT",
+      "source": "Successful targeting of the Ryr1 locus was demonstrated by Sanger sequencing, lack of off-target mutations verified by whole genome sequencing, and absence of RyR1 protein expression confirmed by western blot analysis (Figure 5\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and supported by Figure 5\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:04:02.978784Z"
+    },
+    {
+      "id": "dabdcbbd-8481-46d2-8f43-9b0199b34d8a",
+      "content_id": "3af5c2bb-f22a-4523-9171-0f9cb45b7cf1",
+      "claim_id": "C39",
+      "claim": "Lack of off-target mutations in the Ryr1 knockout C2C12 line was verified by whole genome sequencing.",
+      "claim_type": "EXPLICIT",
+      "source": "Successful targeting of the Ryr1 locus was demonstrated by Sanger sequencing, lack of off-target mutations verified by whole genome sequencing, and absence of RyR1 protein expression confirmed by western blot analysis (Figure 5\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and supported by Figure 5\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:04:02.978784Z"
+    },
+    {
+      "id": "155b840e-0233-46e9-9762-5948e3e4e997",
+      "content_id": "3af5c2bb-f22a-4523-9171-0f9cb45b7cf1",
+      "claim_id": "C40",
+      "claim": "Absence of RyR1 protein expression in the Ryr1 knockout C2C12 line was confirmed by western blot analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "Successful targeting of the Ryr1 locus was demonstrated by Sanger sequencing, lack of off-target mutations verified by whole genome sequencing, and absence of RyR1 protein expression confirmed by western blot analysis (Figure 5\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and supported by Figure 5\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:04:02.978784Z"
+    },
+    {
+      "id": "c01c9cac-6ef6-4459-9ad3-d06bf5b53be9",
+      "content_id": "3af5c2bb-f22a-4523-9171-0f9cb45b7cf1",
+      "claim_id": "C41",
+      "claim": "Ryr1 KO myotubes treated with DMSO vehicle control lacked caffeine-induced Ca2+ release.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, Ryr1 KO myotubes treated with DMSO vehicle control lacked caffeine-induced Ca2+ release (Figure 5A\u2013B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and supported by data in Figure 5A-B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:04:02.978784Z"
+    },
+    {
+      "id": "2a06b4be-aa79-496e-a909-99b1bb856098",
+      "content_id": "3af5c2bb-f22a-4523-9171-0f9cb45b7cf1",
+      "claim_id": "C42",
+      "claim": "Ryr1 KO myotubes treated with SB203580 or SB202190 exhibited a dose dependent increase in caffeine-induced calcium release.",
+      "claim_type": "EXPLICIT",
+      "source": "KO myotubes treated with SB203580 or SB202190, however, exhibited a dose dependent increase in caffeine-induced calcium release (Figure 5A\u2013B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and supported by data in Figure 5A-B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:04:02.978784Z"
+    },
+    {
+      "id": "f617aaff-baa3-4543-a745-86050656cf57",
+      "content_id": "3af5c2bb-f22a-4523-9171-0f9cb45b7cf1",
+      "claim_id": "C43",
+      "claim": "SB203580 and SB202190 impaired caffeine-induced calcium release in control WT C2C12 myotubes.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, these chemicals impaired caffeine-induced calcium release in control WT C2C12 myotubes (Figure 5A\u2013B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and supported by data in Figure 5A-B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:04:02.978784Z"
+    },
+    {
+      "id": "85c5a174-759d-4897-8ee9-bb3cd146e53e",
+      "content_id": "3af5c2bb-f22a-4523-9171-0f9cb45b7cf1",
+      "claim_id": "C44",
+      "claim": "siRNA knockdown of Mapk11 (p38\u03b2) promoted increased caffeine-induced calcium release in Ryr1 KO cells versus negative control siRNA.",
+      "claim_type": "EXPLICIT",
+      "source": "In Ryr1 KO C2C12 cells, siRNA knockdown of Mapk11 (p38\u03b2) promoted increased caffeine-induced calcium release in KO cells versus negative control siRNA (Figure 5C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and supported by data in Figure 5C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:04:02.978784Z"
+    },
+    {
+      "id": "302d4c11-4e83-450b-8e94-6cf97df858d9",
+      "content_id": "3af5c2bb-f22a-4523-9171-0f9cb45b7cf1",
+      "claim_id": "C45",
+      "claim": "Knockdown of Mapk14 (p38\u03b1) and Mapk12 (p38\u03b3) increased calcium release in Ryr1 KO myotubes but to a lesser degree than Mapk11 knockdown.",
+      "claim_type": "EXPLICIT",
+      "source": "Knockdown of Mapk14 (p38\u03b1) and Mapk12 (p38\u03b3) also increased calcium release in Ryr1 KO myotubes but to a lesser degree.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section as a comparison of siRNA effects.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:04:02.978784Z"
+    },
+    {
+      "id": "f178e445-3d05-4e4e-ad16-6b04fa474630",
+      "content_id": "3af5c2bb-f22a-4523-9171-0f9cb45b7cf1",
+      "claim_id": "C46",
+      "claim": "siRNA knockdown of p38 isoforms did not impair Ca2+ release in WT C2C12 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Unlike with SB203580 or SB202190 treatment, siRNA knockdown of p38 isoforms did not impair Ca2+ release in WT cells (Figure 5C)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and supported by data in Figure 5C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:04:02.978784Z"
+    },
+    {
+      "id": "c26e0654-29ad-4ef8-a171-ea04ad4ca2d7",
+      "content_id": "3af5c2bb-f22a-4523-9171-0f9cb45b7cf1",
+      "claim_id": "C47",
+      "claim": "Overnight incubation of YS myotubes with 10 \u03bcM SB203580 significantly reduced the temperature-dependent increase in resting Ca2+.",
+      "claim_type": "EXPLICIT",
+      "source": "Overnight incubation of YS myotubes with 10 \u03bcM SB203580 significantly reduced the temperature-dependent increase in resting Ca2+ observed in YS myotubes (Figure 5D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and supported by data in Figure 5D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:04:02.978784Z"
+    },
+    {
+      "id": "dcd68ca0-acb1-4847-8529-94f5638dbaac",
+      "content_id": "3af5c2bb-f22a-4523-9171-0f9cb45b7cf1",
+      "claim_id": "C48",
+      "claim": "The YS model contains a point mutation analogous to the Y522S mutation found in patients with malignant hyperthermia and central core pathology.",
+      "claim_type": "EXPLICIT",
+      "source": "The YS model contains a point mutation analogous to the Y522S mutation found in patients with malignant hyperthermia and central core pathology (Quane et al., 1994).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section and supported by citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:04:02.978784Z"
+    },
+    {
+      "id": "c41fd2a8-c8c4-4a18-8138-50350f3f92f8",
+      "content_id": "3af5c2bb-f22a-4523-9171-0f9cb45b7cf1",
+      "claim_id": "C49",
+      "claim": "The YS mutation enhances the sensitivity of RyR1 to activators.",
+      "claim_type": "EXPLICIT",
+      "source": "The YS mutation enhances both the sensitivity of RyR1 to activators (e.g. DHPR, caffeine, 4-chloro-m-cresol) and the temperature-dependence of RyR1 Ca2+ leak, alterations that underlie the MH susceptibility and exertional heat stroke phenotypes of these mice (Chelu et al., 2006; Durham et al., 2008; Lanner et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section and supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:04:02.978784Z"
+    },
+    {
+      "id": "2e3edf14-b1e5-4471-8378-e2fe2d87a0b5",
+      "content_id": "3af5c2bb-f22a-4523-9171-0f9cb45b7cf1",
+      "claim_id": "C50",
+      "claim": "The YS mutation enhances the temperature-dependence of RyR1 Ca2+ leak.",
+      "claim_type": "EXPLICIT",
+      "source": "The YS mutation enhances both the sensitivity of RyR1 to activators (e.g. DHPR, caffeine, 4-chloro-m-cresol) and the temperature-dependence of RyR1 Ca2+ leak, alterations that underlie the MH susceptibility and exertional heat stroke phenotypes of these mice (Chelu et al., 2006; Durham et al., 2008; Lanner et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section and supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:04:02.978784Z"
+    },
+    {
+      "id": "1b777107-12d3-4c4c-a99d-bc56bef834ca",
+      "content_id": "3af5c2bb-f22a-4523-9171-0f9cb45b7cf1",
+      "claim_id": "C51",
+      "claim": "The initial screen in C. elegans was completed within two weeks.",
+      "claim_type": "EXPLICIT",
+      "source": "In terms of speed, the initial screen in C. elegans was completed within two weeks, while the large-scale screen in zebrafish was accomplished in one month.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion section as a description of the pipeline's efficiency.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:04:02.978784Z"
+    },
+    {
+      "id": "1d077482-5462-4483-a6b9-2a8d619e3b4e",
+      "content_id": "3af5c2bb-f22a-4523-9171-0f9cb45b7cf1",
+      "claim_id": "C52",
+      "claim": "The large-scale screen in zebrafish was accomplished in one month.",
+      "claim_type": "EXPLICIT",
+      "source": "In terms of speed, the initial screen in C. elegans was completed within two weeks, while the large-scale screen in zebrafish was accomplished in one month.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion section as a description of the pipeline's efficiency.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:04:02.978784Z"
+    },
+    {
+      "id": "cd044a78-d695-41d9-829a-d11a16b949cb",
+      "content_id": "3af5c2bb-f22a-4523-9171-0f9cb45b7cf1",
+      "claim_id": "C53",
+      "claim": "Combined treatment of N-acetylcysteine (NAC) and the p38 inhibitor SB203580 leads to robust expansion of myogenic satellite cell populations in vitro and in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, it was shown recently that combined treatment of N-acetylcysteine (NAC) and the p38 inhibitor SB203580 leads to robust expansion of myogenic satellite cell populations in vitro and in vivo (L'honor\u00e9 et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion section and supported by citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:04:02.978784Z"
+    },
+    {
+      "id": "dcb5714c-2da7-42ce-a118-652fec18939a",
+      "content_id": "3af5c2bb-f22a-4523-9171-0f9cb45b7cf1",
+      "claim_id": "C54",
+      "claim": "NAC has been shown to reduce aberrant oxidative stress and improve phenotypes of preclinical RYR1-RM models.",
+      "claim_type": "EXPLICIT",
+      "source": "This is noteworthy because NAC has been shown to reduce aberrant oxidative stress and improve phenotypes of preclinical RYR1-RM models (zebrafish and patient cells) (Dowling et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion section and supported by citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:04:02.978784Z"
+    },
+    {
+      "id": "75787320-2d3e-4c53-948e-ff6bfff3b4ce",
+      "content_id": "3af5c2bb-f22a-4523-9171-0f9cb45b7cf1",
+      "claim_id": "C55",
+      "claim": "p38 inhibition in endothelial cells increased calcium entry via SOCE activation through a mechanism of blocking STIM1 phosphorylation.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, a previous study in endothelial cells showed that p38 inhibition (chemical and siRNA mediated) increased calcium entry via SOCE activation through a mechanism of blocking STIM1 phosphorylation (Sundivakkam et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion section and supported by citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:04:02.978784Z"
+    },
+    {
+      "id": "f16fd850-5998-45a1-88c3-ebbfe125f60c",
+      "content_id": "3af5c2bb-f22a-4523-9171-0f9cb45b7cf1",
+      "claim_id": "C56",
+      "claim": "Gain-of-function mutations in egl-19, the C. elegans homolog of DHPR, suppress the effects of nemadipine-A.",
+      "claim_type": "EXPLICIT",
+      "source": "This would be consistent with the observation that gain-of-function mutations in egl-19, theC. eleganshomolog of DHPR, suppress the effects of nemadipine-A (Kwok et al., 2006)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion section and supported by citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:04:02.978784Z"
+    },
+    {
+      "id": "acb3d7ab-f89a-420d-93de-1cb6211bcadf",
+      "content_id": "3af5c2bb-f22a-4523-9171-0f9cb45b7cf1",
+      "claim_id": "C57",
+      "claim": "DHPR has previously been shown to interact with and activated by RyR3.",
+      "claim_type": "EXPLICIT",
+      "source": "This mechanism could also explain the observed benefit of p38 inhibition in C2C12 myotubes, as DHPR has previously been shown to interact with and activated by RyR3 (Sheridan et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion section and supported by citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:04:02.978784Z"
+    },
+    {
+      "id": "534fbb96-f3ce-4f1e-942b-455bc8efbb36",
+      "content_id": "3af5c2bb-f22a-4523-9171-0f9cb45b7cf1",
+      "claim_id": "C58",
+      "claim": "The ryr1a; ryr1b double mutants exhibit no movement and have a median survival of 5 days of life.",
+      "claim_type": "EXPLICIT",
+      "source": "ryr1a; ryr1b double mutants exhibit no movement and have a median survival of 5 days of life (Figure 3\u2014figure supplement 1A\u2013B; Chagovetz et al., 2019).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and supported by Figure 3\u2014figure supplement 1A-B and citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:04:02.978784Z"
+    },
+    {
+      "id": "34f8d6d7-6fe5-43cf-99a6-1e0488b9d959",
+      "content_id": "3af5c2bb-f22a-4523-9171-0f9cb45b7cf1",
+      "claim_id": "C59",
+      "claim": "There are currently no human patients with bi-allelic null mutations in RYR1.",
+      "claim_type": "EXPLICIT",
+      "source": "There are currently no human patients with bi-allelic null mutations, and thus our models do not accurately mirror the human disease.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion section as a limitation of the models used.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:04:02.978784Z"
+    },
+    {
+      "id": "f4e8765a-9354-40cc-9ec2-d3d3d9df34e9",
+      "content_id": "3af5c2bb-f22a-4523-9171-0f9cb45b7cf1",
+      "claim_id": "C60",
+      "claim": "Seven RYR1-RM equivalent mutations in unc-68 were modeled by transgenic overexpression in C. elegans and these mutants exhibited hypersensitivity to caffeine and halothane.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, seven RYR1-RM equivalent mutations in unc-68 were modeled by transgenic overexpression in C. elegans and these mutants exhibited hypersensitivity to caffeine and the malignant hyperthermia triggering agent halothane (Baines et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion section and supported by citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:04:02.978784Z"
+    },
+    {
+      "id": "a89cd372-90c2-4309-9b4f-389dc8fba4ae",
+      "content_id": "3af5c2bb-f22a-4523-9171-0f9cb45b7cf1",
+      "claim_id": "C61",
+      "claim": "p38 inhibition modulates non-RyR1 calcium channels in Ryr1 KO C2C12 cells.",
+      "claim_type": "IMPLICIT",
+      "source": "Our observation of increased caffeine-induced intracellular calcium release in Ryr1 KO C2C12 cells suggesting that p38 inhibition modulates non-RyR1 calcium channels.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observation that p38 inhibition promotes calcium release in cells lacking RyR1.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:04:02.978784Z"
+    },
+    {
+      "id": "a6671cd7-791f-4c3c-bce2-62896408ccb8",
+      "content_id": "3af5c2bb-f22a-4523-9171-0f9cb45b7cf1",
+      "claim_id": "C62",
+      "claim": "The multi-species platform developed in this study is potentially applicable to a broad range of neuromuscular disorders.",
+      "claim_type": "EXPLICIT",
+      "source": "This unique platform for RYR1-RM therapy development is potentially applicable to a broad range of neuromuscular disorders.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract as a broader implication of the work.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:04:02.978784Z"
+    },
+    {
+      "id": "eaeccb5e-f6d8-40e0-a9bc-9c2ba50a8522",
+      "content_id": "3af5c2bb-f22a-4523-9171-0f9cb45b7cf1",
+      "claim_id": "C63",
+      "claim": "The pipeline is based on the functional conservation of RyR1 across many species.",
+      "claim_type": "EXPLICIT",
+      "source": "This pipeline is based on the functional conservation of RyR1 across many species, and takes advantage of specific attributes of C. elegans (ability to rapidly screen thousands of compounds), zebrafish (large-scale testing in a vertebrate model), and mammalian cell lines (translatability to humans).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction as the rationale for the multi-species approach.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:04:02.978784Z"
+    },
+    {
+      "id": "9b772c62-a89a-48ca-8f58-1a971e51693e",
+      "content_id": "3af5c2bb-f22a-4523-9171-0f9cb45b7cf1",
+      "claim_id": "C64",
+      "claim": "C. elegans has the ability to rapidly screen thousands of compounds.",
+      "claim_type": "EXPLICIT",
+      "source": "This pipeline is based on the functional conservation of RyR1 across many species, and takes advantage of specific attributes of C. elegans (ability to rapidly screen thousands of compounds), zebrafish (large-scale testing in a vertebrate model), and mammalian cell lines (translatability to humans).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction as an advantage of using C. elegans.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:04:02.978784Z"
+    },
+    {
+      "id": "7559ed14-14e9-4290-a867-bb0ddbaab463",
+      "content_id": "3af5c2bb-f22a-4523-9171-0f9cb45b7cf1",
+      "claim_id": "C65",
+      "claim": "Zebrafish allows large-scale testing in a vertebrate model.",
+      "claim_type": "EXPLICIT",
+      "source": "This pipeline is based on the functional conservation of RyR1 across many species, and takes advantage of specific attributes of C. elegans (ability to rapidly screen thousands of compounds), zebrafish (large-scale testing in a vertebrate model), and mammalian cell lines (translatability to humans).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction as an advantage of using zebrafish.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:04:02.978784Z"
+    },
+    {
+      "id": "f6858874-043d-4995-9655-d40689434bf2",
+      "content_id": "3af5c2bb-f22a-4523-9171-0f9cb45b7cf1",
+      "claim_id": "C66",
+      "claim": "Mammalian cell lines provide translatability to humans.",
+      "claim_type": "EXPLICIT",
+      "source": "This pipeline is based on the functional conservation of RyR1 across many species, and takes advantage of specific attributes of C. elegans (ability to rapidly screen thousands of compounds), zebrafish (large-scale testing in a vertebrate model), and mammalian cell lines (translatability to humans).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction as an advantage of using mammalian cell lines.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:04:02.978784Z"
+    },
+    {
+      "id": "61de3c4a-727b-46f4-aeb4-6d09eba4bcca",
+      "content_id": "3af5c2bb-f22a-4523-9171-0f9cb45b7cf1",
+      "claim_id": "C67",
+      "claim": "EGFR inhibitors were overrepresented among the hits from the kinase inhibitor library.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, from the 44 hits in the kinase library we found that EGFR, PERK, and PLK1 inhibitors were overrepresented (**p=0.0060, *p=0.0109, *p=0.0326, respectively).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section and supported by statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:04:02.978784Z"
+    },
+    {
+      "id": "df69c758-f047-48c0-84c1-879d40f35389",
+      "content_id": "3af5c2bb-f22a-4523-9171-0f9cb45b7cf1",
+      "claim_id": "C68",
+      "claim": "PERK inhibitors were overrepresented among the hits from the kinase inhibitor library.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, from the 44 hits in the kinase library we found that EGFR, PERK, and PLK1 inhibitors were overrepresented (**p=0.0060, *p=0.0109, *p=0.0326, respectively).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section and supported by statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:04:02.978784Z"
+    },
+    {
+      "id": "66993964-627d-47f1-907e-6f3b340c15fb",
+      "content_id": "3af5c2bb-f22a-4523-9171-0f9cb45b7cf1",
+      "claim_id": "C69",
+      "claim": "PLK1 inhibitors were overrepresented among the hits from the kinase inhibitor library.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, from the 44 hits in the kinase library we found that EGFR, PERK, and PLK1 inhibitors were overrepresented (**p=0.0060, *p=0.0109, *p=0.0326, respectively).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section and supported by statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:04:02.978784Z"
+    },
+    {
+      "id": "dac23a9d-6374-4385-9db0-463a38f51847",
+      "content_id": "3af5c2bb-f22a-4523-9171-0f9cb45b7cf1",
+      "claim_id": "C70",
+      "claim": "Multiple GSK3 inhibitors (n = 9) strongly suppressed the unc-68 phenotype but were not statistically overrepresented.",
+      "claim_type": "EXPLICIT",
+      "source": "Multiple GSK3 (n = 9) and PI3K (n = 3) inhibitors also strongly suppressed the phenotype, but these were not statistically overrepresented (p=0.4093 and p=0.1027, respectively).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section with statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:04:02.978784Z"
+    },
+    {
+      "id": "c4a6b6ae-1fc1-46b5-99a6-f1f985119247",
+      "content_id": "3af5c2bb-f22a-4523-9171-0f9cb45b7cf1",
+      "claim_id": "C71",
+      "claim": "Multiple PI3K inhibitors (n = 3) strongly suppressed the unc-68 phenotype but were not statistically overrepresented.",
+      "claim_type": "EXPLICIT",
+      "source": "Multiple GSK3 (n = 9) and PI3K (n = 3) inhibitors also strongly suppressed the phenotype, but these were not statistically overrepresented (p=0.4093 and p=0.1027, respectively).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section with statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:04:02.978784Z"
+    },
+    {
+      "id": "9562d361-d00f-4437-8c95-eaf8902110d0",
+      "content_id": "3af5c2bb-f22a-4523-9171-0f9cb45b7cf1",
+      "claim_id": "C72",
+      "claim": "Riboflavins were overrepresented among the 18 positive hits from the MicroSource library.",
+      "claim_type": "EXPLICIT",
+      "source": "Among the 18 positive hits from the MicroSource library, several chemical classes were overrepresented (Figure 2\u2014figure supplement 5): riboflavins (***p=0.0002), surfactants (***p=0.0002), benzophenones (**p=0.0018), anthracenes (*p=0.0279), salicylates (*p=0.0416), and tricyclic antihistamines (*p=0.0416).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and supported by Figure 2\u2014figure supplement 5 and statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:04:02.978784Z"
+    },
+    {
+      "id": "23afe0d7-36fa-463e-a7e1-6d7c022f6557",
+      "content_id": "3af5c2bb-f22a-4523-9171-0f9cb45b7cf1",
+      "claim_id": "C73",
+      "claim": "Surfactants were overrepresented among the 18 positive hits from the MicroSource library.",
+      "claim_type": "EXPLICIT",
+      "source": "Among the 18 positive hits from the MicroSource library, several chemical classes were overrepresented (Figure 2\u2014figure supplement 5): riboflavins (***p=0.0002), surfactants (***p=0.0002), benzophenones (**p=0.0018), anthracenes (*p=0.0279), salicylates (*p=0.0416), and tricyclic antihistamines (*p=0.0416).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and supported by Figure 2\u2014figure supplement 5 and statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:04:02.978784Z"
+    },
+    {
+      "id": "778e5d11-d530-4490-a816-c0218bc17878",
+      "content_id": "3af5c2bb-f22a-4523-9171-0f9cb45b7cf1",
+      "claim_id": "C74",
+      "claim": "Benzophenones were overrepresented among the 18 positive hits from the MicroSource library.",
+      "claim_type": "EXPLICIT",
+      "source": "Among the 18 positive hits from the MicroSource library, several chemical classes were overrepresented (Figure 2\u2014figure supplement 5): riboflavins (***p=0.0002), surfactants (***p=0.0002), benzophenones (**p=0.0018), anthracenes (*p=0.0279), salicylates (*p=0.0416), and tricyclic antihistamines (*p=0.0416).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and supported by Figure 2\u2014figure supplement 5 and statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:04:02.978784Z"
+    },
+    {
+      "id": "c91c9fb5-3501-431d-95b5-ca2a6244f6c1",
+      "content_id": "3af5c2bb-f22a-4523-9171-0f9cb45b7cf1",
+      "claim_id": "C75",
+      "claim": "Anthracenes were overrepresented among the 18 positive hits from the MicroSource library.",
+      "claim_type": "EXPLICIT",
+      "source": "Among the 18 positive hits from the MicroSource library, several chemical classes were overrepresented (Figure 2\u2014figure supplement 5): riboflavins (***p=0.0002), surfactants (***p=0.0002), benzophenones (**p=0.0018), anthracenes (*p=0.0279), salicylates (*p=0.0416), and tricyclic antihistamines (*p=0.0416).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and supported by Figure 2\u2014figure supplement 5 and statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:04:02.978784Z"
+    },
+    {
+      "id": "f660a6ee-fc9a-47c7-83da-0d8261e7a447",
+      "content_id": "3af5c2bb-f22a-4523-9171-0f9cb45b7cf1",
+      "claim_id": "C76",
+      "claim": "Salicylates were overrepresented among the 18 positive hits from the MicroSource library.",
+      "claim_type": "EXPLICIT",
+      "source": "Among the 18 positive hits from the MicroSource library, several chemical classes were overrepresented (Figure 2\u2014figure supplement 5): riboflavins (***p=0.0002), surfactants (***p=0.0002), benzophenones (**p=0.0018), anthracenes (*p=0.0279), salicylates (*p=0.0416), and tricyclic antihistamines (*p=0.0416).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and supported by Figure 2\u2014figure supplement 5 and statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:04:02.978784Z"
+    },
+    {
+      "id": "ff25935b-cffa-44d3-b400-ed31226ad1dd",
+      "content_id": "3af5c2bb-f22a-4523-9171-0f9cb45b7cf1",
+      "claim_id": "C77",
+      "claim": "Tricyclic antihistamines were overrepresented among the 18 positive hits from the MicroSource library.",
+      "claim_type": "EXPLICIT",
+      "source": "Among the 18 positive hits from the MicroSource library, several chemical classes were overrepresented (Figure 2\u2014figure supplement 5): riboflavins (***p=0.0002), surfactants (***p=0.0002), benzophenones (**p=0.0018), anthracenes (*p=0.0279), salicylates (*p=0.0416), and tricyclic antihistamines (*p=0.0416).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and supported by Figure 2\u2014figure supplement 5 and statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:04:02.978784Z"
+    },
+    {
+      "id": "3c3b021e-8020-4bbc-b759-c489d8b65b59",
+      "content_id": "3af5c2bb-f22a-4523-9171-0f9cb45b7cf1",
+      "claim_id": "C78",
+      "claim": "Two DHPR inhibitors out of nine present in the MicroSource library were identified as suppressors of the growth arrest induced by nemadipine-A.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, two DHPR inhibitors out of nine present in the library (**p=0.0063) were identified as suppressors of the growth arrest induced by nemadipine-A, itself a DHPR inhibitor.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section and supported by statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:04:02.978784Z"
+    },
+    {
+      "id": "f82e04e8-9003-42da-90a0-f1fa7070e41d",
+      "content_id": "3af5c2bb-f22a-4523-9171-0f9cb45b7cf1",
+      "claim_id": "C79",
+      "claim": "Riboflavin and riboflavin 5-phosphate sodium both strongly suppressed growth arrest in unc-68 mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "Of note, riboflavin and riboflavin 5-phosphate sodium both strongly suppressed growth arrest (Figure 2\u2014figure supplement 4A,E) and they appear to be structurally distinct from every other chemical in the US Drug Collection (cluster 11, Figure 2\u2014figure supplement 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and supported by Figure 2\u2014figure supplement 4A,E and Figure 2\u2014figure supplement 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:04:02.978784Z"
+    },
+    {
+      "id": "c58b891a-e7c7-43e7-9196-47e960861323",
+      "content_id": "3af5c2bb-f22a-4523-9171-0f9cb45b7cf1",
+      "claim_id": "C80",
+      "claim": "Thiostrepton strongly suppressed growth arrest in unc-68 mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, thiostrepton suppressed growth arrest strongly (Figure 2\u2014figure supplement 4E), is a structurally unique molecule and overrepresented among the 18 hits (*p=0.0141).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and supported by Figure 2\u2014figure supplement 4E and statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:04:02.978784Z"
+    },
+    {
+      "id": "6ec223e1-3d4d-4497-b9cf-7d92da2321da",
+      "content_id": "3af5c2bb-f22a-4523-9171-0f9cb45b7cf1",
+      "claim_id": "C81",
+      "claim": "Thiostrepton is overrepresented among the 18 hits from the MicroSource library.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, thiostrepton suppressed growth arrest strongly (Figure 2\u2014figure supplement 4E), is a structurally unique molecule and overrepresented among the 18 hits (*p=0.0141).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section and supported by statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:04:02.978784Z"
+    },
+    {
+      "id": "59315868-d531-4597-a37b-41ed0b22fa75",
+      "content_id": "3af5c2bb-f22a-4523-9171-0f9cb45b7cf1",
+      "claim_id": "C82",
+      "claim": "Significant positive interactions were found for three wactives in the zebrafish optogenetic motility assay.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, we found significant positive interactions for three wactives, a PI3K inhibitor, and the anti-psoriatic drug anthralin (Figure 4\u2014figure supplement 1A\u2013E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and supported by Figure 4\u2014figure supplement 1A-E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:04:02.978784Z"
+    },
+    {
+      "id": "8c6e839e-aa39-4c9c-91c6-4da5c0defd8c",
+      "content_id": "3af5c2bb-f22a-4523-9171-0f9cb45b7cf1",
+      "claim_id": "C83",
+      "claim": "A significant positive interaction was found for a PI3K inhibitor in the zebrafish optogenetic motility assay.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, we found significant positive interactions for three wactives, a PI3K inhibitor, and the anti-psoriatic drug anthralin (Figure 4\u2014figure supplement 1A\u2013E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and supported by Figure 4\u2014figure supplement 1A-E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:04:02.978784Z"
+    },
+    {
+      "id": "2d7b7991-18b2-43e5-8d0f-bb09591beaf1",
+      "content_id": "3af5c2bb-f22a-4523-9171-0f9cb45b7cf1",
+      "claim_id": "C84",
+      "claim": "A significant positive interaction was found for the anti-psoriatic drug anthralin in the zebrafish optogenetic motility assay.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, we found significant positive interactions for three wactives, a PI3K inhibitor, and the anti-psoriatic drug anthralin (Figure 4\u2014figure supplement 1A\u2013E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and supported by Figure 4\u2014figure supplement 1A-E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:04:02.978784Z"
+    },
+    {
+      "id": "9862dcbe-215f-4e53-bb58-e6f08954d8b6",
+      "content_id": "3af5c2bb-f22a-4523-9171-0f9cb45b7cf1",
+      "claim_id": "C85",
+      "claim": "No chemicals were identified that significantly improved ryr1b mutant movement speed relative to untreated mutant controls.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, we did not identify any chemicals that significantly improved ryr1b mutant movement speed relative to untreated mutant controls.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section as a negative finding.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:04:02.978784Z"
+    },
+    {
+      "id": "adfb4ec7-3db2-41bd-abc0-a320ae0944d6",
+      "content_id": "3af5c2bb-f22a-4523-9171-0f9cb45b7cf1",
+      "claim_id": "C86",
+      "claim": "Chemical-genetic interactions were not observed for p38 inhibitors SB203580 and SB202190 in the zebrafish optogenetic motility assay.",
+      "claim_type": "EXPLICIT",
+      "source": "We did not observe chemical-genetic interactions with two additional p38 inhibitors, SB203580 and SB202190 (Figure 4C\u2013D)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and supported by Figure 4C-D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:04:02.978784Z"
+    },
+    {
+      "id": "434d792b-d690-4c43-a2d4-c5d0937ec8f4",
+      "content_id": "3af5c2bb-f22a-4523-9171-0f9cb45b7cf1",
+      "claim_id": "C87",
+      "claim": "Roughly 50-80% knockdown of p38 MAPK targets was achieved using commercially available siRNA compared to non-targeting negative control siRNA.",
+      "claim_type": "EXPLICIT",
+      "source": "Using commercially available siRNA we achieved roughly 50\u201380% knockdown of p38 MAPK targets as compared to non-targeting negative control siRNA (Figure 5\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and supported by Figure 5\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:04:02.978784Z"
+    },
+    {
+      "id": "690cab58-697c-46a8-be26-b0f146b667c2",
+      "content_id": "3af5c2bb-f22a-4523-9171-0f9cb45b7cf1",
+      "claim_id": "C88",
+      "claim": "siRNA knockdown of either the \u03b1, \u03b2, or \u03b3 isoforms of p38 prevents C2C12 myoblast differentiation into myotubes.",
+      "claim_type": "EXPLICIT",
+      "source": "It is important to note that siRNA knockdown was started after differentiation into myotubes because siRNA knockdown of either the \u03b1, \u03b2, or \u03b3 isoforms of p38 prevents C2C12 myoblast differentiation into myotubes (Wang et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Methods section and supported by citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:04:02.978784Z"
+    },
+    {
+      "id": "55cd1274-313b-492d-b41e-709fe588a3a5",
+      "content_id": "3af5c2bb-f22a-4523-9171-0f9cb45b7cf1",
+      "claim_id": "C89",
+      "claim": "The concentration range of 25-60 \u03bcM is used for C. elegans screens to overcome the poor bioaccumulation of exogenous compounds.",
+      "claim_type": "EXPLICIT",
+      "source": "The concentration used for the latter two libraries was based on previous C. elegans screens performed in the 25\u201360 \u03bcM range (Kwok et al., 2006; Burns et al., 2010; Otten et al., 2018). This concentration range is used to overcome the poor bioaccumulation of exogenous compounds in C. elegans (Burns et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section and supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:04:02.978784Z"
+    },
+    {
+      "id": "11eb0179-2e77-481f-8140-8211fd6998f6",
+      "content_id": "3af5c2bb-f22a-4523-9171-0f9cb45b7cf1",
+      "claim_id": "C90",
+      "claim": "62 single DMSO vehicle control wells out of 760 (~8.2%) contained at least one unc-68 mutant that reached the L4 or adult stage.",
+      "claim_type": "EXPLICIT",
+      "source": "However, 62 single DMSO vehicle control wells out of 760 (~8.2%) and 360 single experimental wells out of 7400 (~4.9%) also contained at least one unc-68 mutant that reached the L4 or adult stage, which we collectively refer to as 'random escapees'.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section as background information for interpreting the screen results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:04:02.978784Z"
+    },
+    {
+      "id": "bf8782ac-e4f7-4b2f-8671-e038144af557",
+      "content_id": "3af5c2bb-f22a-4523-9171-0f9cb45b7cf1",
+      "claim_id": "C91",
+      "claim": "360 single experimental wells out of 7400 (~4.9%) contained at least one unc-68 mutant that reached the L4 or adult stage.",
+      "claim_type": "EXPLICIT",
+      "source": "However, 62 single DMSO vehicle control wells out of 760 (~8.2%) and 360 single experimental wells out of 7400 (~4.9%) also contained at least one unc-68 mutant that reached the L4 or adult stage, which we collectively refer to as 'random escapees'.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section as background information for interpreting the screen results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:04:02.978784Z"
+    },
+    {
+      "id": "c9614ef3-7a7f-491f-8205-ae3fba6a8a04",
+      "content_id": "3af5c2bb-f22a-4523-9171-0f9cb45b7cf1",
+      "claim_id": "C92",
+      "claim": "145 of the 278 chemicals were prioritized for re-testing because they demonstrated in duplicate wells the most complete suppression of the phenotype.",
+      "claim_type": "EXPLICIT",
+      "source": "We prioritized 145 of the 278 chemicals for re-testing because they demonstrated in duplicate wells the most complete (i.e. highest number of L4 and adult) suppression the phenotype.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section as a description of the prioritization strategy.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:04:02.978784Z"
+    },
+    {
+      "id": "c12271a4-ed25-423f-ae84-116461817b9b",
+      "content_id": "3af5c2bb-f22a-4523-9171-0f9cb45b7cf1",
+      "claim_id": "C93",
+      "claim": "142 of the original 278 chemical wells were statistically different from random escapee wells in post-hoc analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "We estimated the % arrest based on this assumption, using a formula where the number of L1-L3 larvae = 20 \u2013(true count of L4-adult) and found that 142 of the original 278 chemical wells were statistically different from random escapee wells (Figure 2\u2014figure supplements 2\u20133).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and supported by Figure 2\u2014figure supplements 2-3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:04:02.978784Z"
+    },
+    {
+      "id": "2ad6681a-7711-4329-80e5-5644e79e9193",
+      "content_id": "3af5c2bb-f22a-4523-9171-0f9cb45b7cf1",
+      "claim_id": "C94",
+      "claim": "88% of the chemicals identified as statistically significant in post-hoc analysis were in the prioritization group of 145.",
+      "claim_type": "EXPLICIT",
+      "source": "Given that 88% of those identified as statistically significant were in our prioritization group of 145, this provided us with confidence that they merited additional examination.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section as validation of the prioritization strategy.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:04:02.978784Z"
+    },
+    {
+      "id": "094ec3f4-620e-49fd-9125-21d500313bb9",
+      "content_id": "3af5c2bb-f22a-4523-9171-0f9cb45b7cf1",
+      "claim_id": "C95",
+      "claim": "The unc-68(r1162) strain TR2171 was selected for screening because its growth rate was comparable to N2 wild type.",
+      "claim_type": "EXPLICIT",
+      "source": "The unc-68(r1162) strain TR2171 was selected for screening because its growth rate was comparable to N2 wild type whereas strain TR2170 grew noticeably slower than N2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Methods section as a rationale for strain selection.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:04:02.978784Z"
+    },
+    {
+      "id": "a615f581-ad73-4fb7-afaf-8ea5760bf05c",
+      "content_id": "3af5c2bb-f22a-4523-9171-0f9cb45b7cf1",
+      "claim_id": "C96",
+      "claim": "The unc-68(r1161) strain TR2170 grew noticeably slower than N2 wild type.",
+      "claim_type": "EXPLICIT",
+      "source": "The unc-68(r1162) strain TR2171 was selected for screening because its growth rate was comparable to N2 wild type whereas strain TR2170 grew noticeably slower than N2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Methods section as a rationale for strain selection.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:04:02.978784Z"
+    },
+    {
+      "id": "25bb6f2d-1cb3-488b-a658-f44128d53e2d",
+      "content_id": "3af5c2bb-f22a-4523-9171-0f9cb45b7cf1",
+      "claim_id": "C97",
+      "claim": "Variability in the ryr1b single mutant motor phenotype precluded large-scale screening in zebrafish.",
+      "claim_type": "EXPLICIT",
+      "source": "We used the double mutants for our screen because of their obvious motor phenotype and because variability in the ryr1b single mutant motor phenotype precluded large-scale screening (Figure 3\u2014figure supplement 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and supported by Figure 3\u2014figure supplement 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:04:02.978784Z"
+    },
+    {
+      "id": "83dcbf01-ca19-46e0-9529-b257a6671923",
+      "content_id": "3af5c2bb-f22a-4523-9171-0f9cb45b7cf1",
+      "claim_id": "C98",
+      "claim": "The touch-evoked escape response phenotype of ryr1b mutants only transiently exists between 3-4 days of life.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the utility of this phenotype as a readout of improvement may be unreliable given that it only transiently exists between 3\u20134 days of life, after which time the ryr1b mutants are indistinguishable by eye from their WT siblings (Hirata et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section and supported by citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:04:02.978784Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "3f70eed6-9bb8-4e25-90fb-c57783255469",
+      "content_id": "3af5c2bb-f22a-4523-9171-0f9cb45b7cf1",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "RYR1-related myopathies (RYR1-RMs) are common childhood muscle diseases with severe morbidity and mortality, for which no approved pharmacological therapies currently exist.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C2, C13, and C14 establish the clinical significance and unmet therapeutic need for RYR1-RM. These claims are supported by citations to the literature and represent established knowledge in the field.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:04:02.978784Z"
+    },
+    {
+      "id": "e9018d06-edf1-4267-989a-2ac2976bd6fa",
+      "content_id": "3af5c2bb-f22a-4523-9171-0f9cb45b7cf1",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "A multi-species drug discovery pipeline was developed using C. elegans, zebrafish, and mammalian cell models, leveraging the functional conservation of RyR1 and the specific advantages of each model system.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3 and C63-C66 describe the methodological framework of the study. The pipeline is clearly described and the rationale for using each model system is provided. The development and implementation of this pipeline is demonstrated throughout the manuscript.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:04:02.978784Z"
+    },
+    {
+      "id": "7bd391a2-4ace-4612-b160-e665c2a1df9c",
+      "content_id": "3af5c2bb-f22a-4523-9171-0f9cb45b7cf1",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "A large-scale chemical screen in C. elegans identified 74 reproducible hits that suppressed nemadipine-A-induced growth arrest in unc-68 mutants from 3700 compounds tested.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4 and C24-C27 describe the primary screening results, while C90-C94 provide important context about false positive rates and validation. The screen methodology is described, statistical validation is provided, and the hit rate is reasonable given the 'random escapee' background rate of ~8.2% in controls.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:04:02.978784Z"
+    },
+    {
+      "id": "2819e8e3-edab-469a-9a7f-3b5af33d68a5",
+      "content_id": "3af5c2bb-f22a-4523-9171-0f9cb45b7cf1",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "p38 inhibitors were significantly overrepresented among hits from the kinase inhibitor library, with structurally dissimilar p38 inhibitors showing activity, and RNAi knockdown of p38 MAPK orthologs validating p38 as a target.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C28-C30 establish p38 as a key hit from the C. elegans screen with statistical support (p=0.0022), structural diversity analysis, and genetic validation via RNAi. Claims C67-C71 identify additional overrepresented kinase inhibitor classes. The convergence of chemical and genetic evidence supports p38 as a validated target.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:04:02.978784Z"
+    },
+    {
+      "id": "8e07ca47-ba66-4a05-96cf-65aeb636ece9",
+      "content_id": "3af5c2bb-f22a-4523-9171-0f9cb45b7cf1",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Multiple chemical classes were overrepresented among hits from the MicroSource library, including riboflavins, surfactants, benzophenones, anthracenes, salicylates, tricyclic antihistamines, DHPR inhibitors, and thiostrepton.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C72-C81 identify overrepresented chemical classes from the MicroSource library with statistical support. The enrichment analysis is appropriate and p-values are provided for each class. However, the biological significance and mechanism of action for many of these hits remain unclear.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:04:02.978784Z"
+    },
+    {
+      "id": "b854d17b-1b2e-497c-a42f-22b502ad115f",
+      "content_id": "3af5c2bb-f22a-4523-9171-0f9cb45b7cf1",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Large-scale chemical screens in ryr1a;ryr1b double mutant zebrafish did not identify any compounds that promoted movement from 1796 compounds tested.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C31-C33 and C85 consistently report negative results from the zebrafish screen. This is an important negative finding that is clearly stated and helps contextualize the subsequent targeted testing approach.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:04:02.978784Z"
+    },
+    {
+      "id": "d247d67c-0c53-46ec-85cc-aee5ea823130",
+      "content_id": "3af5c2bb-f22a-4523-9171-0f9cb45b7cf1",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Targeted testing in zebrafish identified chemical-genetic interactions for two p38 inhibitors (SB239063 and PH-797804) and several other compounds, but not for two additional p38 inhibitors (SB203580 and SB202190).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5 and C34-C35 describe positive chemical-genetic interactions for two p38 inhibitors in zebrafish, supported by Figure 4A-B. Claims C82-C84 identify additional positive interactions. Claim C86 reports negative results for two other p38 inhibitors. The chemical-genetic interaction analysis is appropriately designed and statistically analyzed, though the inconsistency across p38 inhibitors raises questions about mechanism.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:04:02.978784Z"
+    },
+    {
+      "id": "7e2063f5-65ec-4ce4-a4ac-c4494182f7db",
+      "content_id": "3af5c2bb-f22a-4523-9171-0f9cb45b7cf1",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "A Ryr1 knockout C2C12 cell line was generated using CRISPR/Cas9 with a bi-allelic frameshift deletion, validated by Sanger sequencing, whole genome sequencing, and western blot.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C36-C40 describe the generation and validation of the Ryr1 KO cell line. The validation is thorough, including Sanger sequencing, whole genome sequencing for off-targets, and protein-level confirmation by western blot (Figure 5\u2014figure supplement 1). This represents rigorous characterization of a new model.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:04:02.978784Z"
+    },
+    {
+      "id": "91803ba2-74d2-43e5-bcb8-47ce87ac7086",
+      "content_id": "3af5c2bb-f22a-4523-9171-0f9cb45b7cf1",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Pharmacological inhibition of p38 with SB203580 or SB202190 impaired caffeine-induced Ca2+ release in wild-type C2C12 myotubes but promoted dose-dependent Ca2+ release in Ryr1 knockout myotubes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6, C8, C41-C43 describe the effects of p38 inhibitors on calcium release in C2C12 cells, supported by data in Figure 5A-B. The dose-dependent effects in KO cells and opposing effects in WT cells are clearly demonstrated. This is a key finding showing that p38 inhibition can promote calcium release independent of RyR1.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:04:02.978784Z"
+    },
+    {
+      "id": "c09755e2-3e1e-49e1-95f4-7c2ffa4664d6",
+      "content_id": "3af5c2bb-f22a-4523-9171-0f9cb45b7cf1",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "siRNA knockdown of p38 isoforms (particularly Mapk11/p38\u03b2) promoted Ca2+ release in Ryr1 KO myotubes but did not impair Ca2+ release in wild-type cells, unlike pharmacological inhibition.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C7, C9, C44-C46 describe siRNA knockdown effects, with C87 documenting 50-80% knockdown efficiency. The siRNA results in KO cells support the pharmacological findings (C44-C45), but the lack of effect in WT cells (C46) contradicts the pharmacological inhibitor results (C43). The authors acknowledge this discrepancy and suggest possible explanations (incomplete knockdown, off-target effects, siRNA toxicity), but the inconsistency raises uncertainty about mechanism.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:04:02.978784Z"
+    },
+    {
+      "id": "2068e655-768f-42f9-b214-58e1ac0084f1",
+      "content_id": "3af5c2bb-f22a-4523-9171-0f9cb45b7cf1",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "p38 inhibition with SB203580 significantly reduced the aberrant temperature-dependent increase in resting Ca2+ in myotubes from the YS mouse model of RYR1-RM.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C10 and C47 describe the effect of p38 inhibition in the YS model, supported by Figure 5D. Claims C48-C50 provide context about the YS model. This result demonstrates that p38 inhibition can modify a disease-relevant phenotype in a gain-of-function RYR1 mutation model, supporting potential therapeutic relevance.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:04:02.978784Z"
+    },
+    {
+      "id": "fdfedb86-dbdb-4b46-a845-c9e9af9b580a",
+      "content_id": "3af5c2bb-f22a-4523-9171-0f9cb45b7cf1",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The multi-species screening pipeline was rapid, with the C. elegans screen completed in two weeks and the zebrafish screen in one month.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C51-C52 describe the efficiency of the screening pipeline. These timelines are stated in the Discussion and are reasonable given the methodologies described.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:04:02.978784Z"
+    },
+    {
+      "id": "cab3ec52-4a00-4de1-aa77-f205c223dcd1",
+      "content_id": "3af5c2bb-f22a-4523-9171-0f9cb45b7cf1",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The animal models used have limitations: no human patients have bi-allelic null RYR1 mutations, and the ryr1b single mutant zebrafish phenotype is variable and transient, precluding large-scale screening.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C59, C97, and C98 acknowledge important limitations of the models used. These are appropriately discussed by the authors and represent honest assessment of the study's translational limitations.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:04:02.978784Z"
+    },
+    {
+      "id": "f5f7cfff-99ef-4067-9a77-256bbac5a622",
+      "content_id": "3af5c2bb-f22a-4523-9171-0f9cb45b7cf1",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "p38 inhibition modulates non-RyR1 calcium channels in Ryr1 KO C2C12 cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C61 is an inference from the observation that p38 inhibition promotes calcium release in cells lacking RyR1. This is a logical inference supported by the data in C42 and C44, though the specific channels involved are not identified.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:04:02.978784Z"
+    },
+    {
+      "id": "871d851a-f769-4938-ba5f-d4aa8eb44318",
+      "content_id": "3af5c2bb-f22a-4523-9171-0f9cb45b7cf1",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Multiple animal models of RYR1-RM exist across species with well-characterized phenotypes, and specific methodological considerations were applied for screening.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C15-C18, C20-C23, C58, C60, C88-C89, and C95-C96 describe existing models and methodological details. These are supported by appropriate citations and represent established knowledge or methodological justifications.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:04:02.978784Z"
+    },
+    {
+      "id": "66cdd4a1-1581-465a-a3b8-948106621d5d",
+      "content_id": "3af5c2bb-f22a-4523-9171-0f9cb45b7cf1",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Prior work has tested N-acetylcysteine in clinical trials (which failed), shown synergy between NAC and p38 inhibition for satellite cell expansion, and identified potential mechanisms involving SOCE, DHPR, and RyR3.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C19 and C53-C57 cite prior work relevant to interpreting the current findings. These are appropriately cited and provide important context for the Discussion.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:04:02.978784Z"
+    },
+    {
+      "id": "1755154b-b2da-421f-9269-462034974e42",
+      "content_id": "3af5c2bb-f22a-4523-9171-0f9cb45b7cf1",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "The multi-species platform is potentially applicable to a broad range of neuromuscular disorders.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C62 is speculative about future applications. While the platform's potential is reasonable given its design, this has not been demonstrated and remains to be tested.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:04:02.978784Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "c2ad3db6-b898-4d7d-9705-45cf37396485",
+      "result_id": "3f70eed6-9bb8-4e25-90fb-c57783255469"
+    },
+    {
+      "claim_id": "49258bd4-5781-440b-a558-97fb6ebe67af",
+      "result_id": "3f70eed6-9bb8-4e25-90fb-c57783255469"
+    },
+    {
+      "claim_id": "e8aa7468-94c5-48ba-b474-4d38294592de",
+      "result_id": "3f70eed6-9bb8-4e25-90fb-c57783255469"
+    },
+    {
+      "claim_id": "3755c450-6023-438b-b205-14285af74d4a",
+      "result_id": "3f70eed6-9bb8-4e25-90fb-c57783255469"
+    },
+    {
+      "claim_id": "b25f76dd-eb99-4fcf-9bde-b49d15971f8f",
+      "result_id": "e9018d06-edf1-4267-989a-2ac2976bd6fa"
+    },
+    {
+      "claim_id": "eaeccb5e-f6d8-40e0-a9bc-9c2ba50a8522",
+      "result_id": "e9018d06-edf1-4267-989a-2ac2976bd6fa"
+    },
+    {
+      "claim_id": "9b772c62-a89a-48ca-8f58-1a971e51693e",
+      "result_id": "e9018d06-edf1-4267-989a-2ac2976bd6fa"
+    },
+    {
+      "claim_id": "7559ed14-14e9-4290-a867-bb0ddbaab463",
+      "result_id": "e9018d06-edf1-4267-989a-2ac2976bd6fa"
+    },
+    {
+      "claim_id": "f6858874-043d-4995-9655-d40689434bf2",
+      "result_id": "e9018d06-edf1-4267-989a-2ac2976bd6fa"
+    },
+    {
+      "claim_id": "27168f38-d43e-431d-aa3e-7b0279df6ee5",
+      "result_id": "7bd391a2-4ace-4612-b160-e665c2a1df9c"
+    },
+    {
+      "claim_id": "09fd2ef5-bd19-4243-9ffa-063b4923b012",
+      "result_id": "7bd391a2-4ace-4612-b160-e665c2a1df9c"
+    },
+    {
+      "claim_id": "e27480df-a0a5-402f-9317-fc8635829dbf",
+      "result_id": "7bd391a2-4ace-4612-b160-e665c2a1df9c"
+    },
+    {
+      "claim_id": "839da139-717d-4860-b80a-ed0ad096fa80",
+      "result_id": "7bd391a2-4ace-4612-b160-e665c2a1df9c"
+    },
+    {
+      "claim_id": "0d9eca0f-a38b-49d3-9a48-7dcf158a9c52",
+      "result_id": "7bd391a2-4ace-4612-b160-e665c2a1df9c"
+    },
+    {
+      "claim_id": "11eb0179-2e77-481f-8140-8211fd6998f6",
+      "result_id": "7bd391a2-4ace-4612-b160-e665c2a1df9c"
+    },
+    {
+      "claim_id": "bf8782ac-e4f7-4b2f-8671-e038144af557",
+      "result_id": "7bd391a2-4ace-4612-b160-e665c2a1df9c"
+    },
+    {
+      "claim_id": "c9614ef3-7a7f-491f-8205-ae3fba6a8a04",
+      "result_id": "7bd391a2-4ace-4612-b160-e665c2a1df9c"
+    },
+    {
+      "claim_id": "c12271a4-ed25-423f-ae84-116461817b9b",
+      "result_id": "7bd391a2-4ace-4612-b160-e665c2a1df9c"
+    },
+    {
+      "claim_id": "2ad6681a-7711-4329-80e5-5644e79e9193",
+      "result_id": "7bd391a2-4ace-4612-b160-e665c2a1df9c"
+    },
+    {
+      "claim_id": "7a613612-97d2-4feb-a480-e3227f0e5687",
+      "result_id": "2819e8e3-edab-469a-9a7f-3b5af33d68a5"
+    },
+    {
+      "claim_id": "6a57ca66-1ece-431a-afad-91d713559cd0",
+      "result_id": "2819e8e3-edab-469a-9a7f-3b5af33d68a5"
+    },
+    {
+      "claim_id": "c53a90f6-4788-47b7-91e7-142c9482a929",
+      "result_id": "2819e8e3-edab-469a-9a7f-3b5af33d68a5"
+    },
+    {
+      "claim_id": "61de3c4a-727b-46f4-aeb4-6d09eba4bcca",
+      "result_id": "2819e8e3-edab-469a-9a7f-3b5af33d68a5"
+    },
+    {
+      "claim_id": "df69c758-f047-48c0-84c1-879d40f35389",
+      "result_id": "2819e8e3-edab-469a-9a7f-3b5af33d68a5"
+    },
+    {
+      "claim_id": "66993964-627d-47f1-907e-6f3b340c15fb",
+      "result_id": "2819e8e3-edab-469a-9a7f-3b5af33d68a5"
+    },
+    {
+      "claim_id": "dac23a9d-6374-4385-9db0-463a38f51847",
+      "result_id": "2819e8e3-edab-469a-9a7f-3b5af33d68a5"
+    },
+    {
+      "claim_id": "c4a6b6ae-1fc1-46b5-99a6-f1f985119247",
+      "result_id": "2819e8e3-edab-469a-9a7f-3b5af33d68a5"
+    },
+    {
+      "claim_id": "9562d361-d00f-4437-8c95-eaf8902110d0",
+      "result_id": "8e07ca47-ba66-4a05-96cf-65aeb636ece9"
+    },
+    {
+      "claim_id": "23afe0d7-36fa-463e-a7e1-6d7c022f6557",
+      "result_id": "8e07ca47-ba66-4a05-96cf-65aeb636ece9"
+    },
+    {
+      "claim_id": "778e5d11-d530-4490-a816-c0218bc17878",
+      "result_id": "8e07ca47-ba66-4a05-96cf-65aeb636ece9"
+    },
+    {
+      "claim_id": "c91c9fb5-3501-431d-95b5-ca2a6244f6c1",
+      "result_id": "8e07ca47-ba66-4a05-96cf-65aeb636ece9"
+    },
+    {
+      "claim_id": "f660a6ee-fc9a-47c7-83da-0d8261e7a447",
+      "result_id": "8e07ca47-ba66-4a05-96cf-65aeb636ece9"
+    },
+    {
+      "claim_id": "ff25935b-cffa-44d3-b400-ed31226ad1dd",
+      "result_id": "8e07ca47-ba66-4a05-96cf-65aeb636ece9"
+    },
+    {
+      "claim_id": "3c3b021e-8020-4bbc-b759-c489d8b65b59",
+      "result_id": "8e07ca47-ba66-4a05-96cf-65aeb636ece9"
+    },
+    {
+      "claim_id": "f82e04e8-9003-42da-90a0-f1fa7070e41d",
+      "result_id": "8e07ca47-ba66-4a05-96cf-65aeb636ece9"
+    },
+    {
+      "claim_id": "c58b891a-e7c7-43e7-9196-47e960861323",
+      "result_id": "8e07ca47-ba66-4a05-96cf-65aeb636ece9"
+    },
+    {
+      "claim_id": "6ec223e1-3d4d-4497-b9cf-7d92da2321da",
+      "result_id": "8e07ca47-ba66-4a05-96cf-65aeb636ece9"
+    },
+    {
+      "claim_id": "d2195fde-2052-40cc-b7d9-a8cedf116bb6",
+      "result_id": "b854d17b-1b2e-497c-a42f-22b502ad115f"
+    },
+    {
+      "claim_id": "b7a042c2-b2b8-44fa-a9a3-04393f804f0d",
+      "result_id": "b854d17b-1b2e-497c-a42f-22b502ad115f"
+    },
+    {
+      "claim_id": "23df14c9-a200-4e19-bdba-e664b661ef76",
+      "result_id": "b854d17b-1b2e-497c-a42f-22b502ad115f"
+    },
+    {
+      "claim_id": "9862dcbe-215f-4e53-bb58-e6f08954d8b6",
+      "result_id": "b854d17b-1b2e-497c-a42f-22b502ad115f"
+    },
+    {
+      "claim_id": "8699d2be-5ddd-44b9-9c8b-e5324a2c0541",
+      "result_id": "d247d67c-0c53-46ec-85cc-aee5ea823130"
+    },
+    {
+      "claim_id": "0c999f25-d6bd-4ad3-951d-5a564af230e2",
+      "result_id": "d247d67c-0c53-46ec-85cc-aee5ea823130"
+    },
+    {
+      "claim_id": "daa28dbb-0527-4c11-a7e8-16c3edf067d2",
+      "result_id": "d247d67c-0c53-46ec-85cc-aee5ea823130"
+    },
+    {
+      "claim_id": "59315868-d531-4597-a37b-41ed0b22fa75",
+      "result_id": "d247d67c-0c53-46ec-85cc-aee5ea823130"
+    },
+    {
+      "claim_id": "8c6e839e-aa39-4c9c-91c6-4da5c0defd8c",
+      "result_id": "d247d67c-0c53-46ec-85cc-aee5ea823130"
+    },
+    {
+      "claim_id": "2d7b7991-18b2-43e5-8d0f-bb09591beaf1",
+      "result_id": "d247d67c-0c53-46ec-85cc-aee5ea823130"
+    },
+    {
+      "claim_id": "adfb4ec7-3db2-41bd-abc0-a320ae0944d6",
+      "result_id": "d247d67c-0c53-46ec-85cc-aee5ea823130"
+    },
+    {
+      "claim_id": "fd6b9bdd-4572-4aed-8151-cdbe5b5ee018",
+      "result_id": "7e2063f5-65ec-4ce4-a4ac-c4494182f7db"
+    },
+    {
+      "claim_id": "840d00ec-118f-43b8-9c36-f0260f4b73f5",
+      "result_id": "7e2063f5-65ec-4ce4-a4ac-c4494182f7db"
+    },
+    {
+      "claim_id": "37b750de-0c2c-4289-9bb6-60986c3f77aa",
+      "result_id": "7e2063f5-65ec-4ce4-a4ac-c4494182f7db"
+    },
+    {
+      "claim_id": "dabdcbbd-8481-46d2-8f43-9b0199b34d8a",
+      "result_id": "7e2063f5-65ec-4ce4-a4ac-c4494182f7db"
+    },
+    {
+      "claim_id": "155b840e-0233-46e9-9762-5948e3e4e997",
+      "result_id": "7e2063f5-65ec-4ce4-a4ac-c4494182f7db"
+    },
+    {
+      "claim_id": "65bb8c6f-2baa-4446-ac78-88e7bfb8b1e8",
+      "result_id": "91803ba2-74d2-43e5-bcb8-47ce87ac7086"
+    },
+    {
+      "claim_id": "6f4c7aeb-4411-41e0-b96d-59abf05567b4",
+      "result_id": "91803ba2-74d2-43e5-bcb8-47ce87ac7086"
+    },
+    {
+      "claim_id": "c01c9cac-6ef6-4459-9ad3-d06bf5b53be9",
+      "result_id": "91803ba2-74d2-43e5-bcb8-47ce87ac7086"
+    },
+    {
+      "claim_id": "2a06b4be-aa79-496e-a909-99b1bb856098",
+      "result_id": "91803ba2-74d2-43e5-bcb8-47ce87ac7086"
+    },
+    {
+      "claim_id": "f617aaff-baa3-4543-a745-86050656cf57",
+      "result_id": "91803ba2-74d2-43e5-bcb8-47ce87ac7086"
+    },
+    {
+      "claim_id": "1e9d0421-085a-4b09-a419-1e8833cb9eb0",
+      "result_id": "c09755e2-3e1e-49e1-95f4-7c2ffa4664d6"
+    },
+    {
+      "claim_id": "096106c2-5fba-412e-b83d-b01aaa44087b",
+      "result_id": "c09755e2-3e1e-49e1-95f4-7c2ffa4664d6"
+    },
+    {
+      "claim_id": "85c5a174-759d-4897-8ee9-bb3cd146e53e",
+      "result_id": "c09755e2-3e1e-49e1-95f4-7c2ffa4664d6"
+    },
+    {
+      "claim_id": "302d4c11-4e83-450b-8e94-6cf97df858d9",
+      "result_id": "c09755e2-3e1e-49e1-95f4-7c2ffa4664d6"
+    },
+    {
+      "claim_id": "f178e445-3d05-4e4e-ad16-6b04fa474630",
+      "result_id": "c09755e2-3e1e-49e1-95f4-7c2ffa4664d6"
+    },
+    {
+      "claim_id": "434d792b-d690-4c43-a2d4-c5d0937ec8f4",
+      "result_id": "c09755e2-3e1e-49e1-95f4-7c2ffa4664d6"
+    },
+    {
+      "claim_id": "26b7d297-0e22-441a-aa79-1a8e65528dca",
+      "result_id": "2068e655-768f-42f9-b214-58e1ac0084f1"
+    },
+    {
+      "claim_id": "c26e0654-29ad-4ef8-a171-ea04ad4ca2d7",
+      "result_id": "2068e655-768f-42f9-b214-58e1ac0084f1"
+    },
+    {
+      "claim_id": "dcd68ca0-acb1-4847-8529-94f5638dbaac",
+      "result_id": "2068e655-768f-42f9-b214-58e1ac0084f1"
+    },
+    {
+      "claim_id": "c41fd2a8-c8c4-4a18-8138-50350f3f92f8",
+      "result_id": "2068e655-768f-42f9-b214-58e1ac0084f1"
+    },
+    {
+      "claim_id": "2e3edf14-b1e5-4471-8378-e2fe2d87a0b5",
+      "result_id": "2068e655-768f-42f9-b214-58e1ac0084f1"
+    },
+    {
+      "claim_id": "1b777107-12d3-4c4c-a99d-bc56bef834ca",
+      "result_id": "fdfedb86-dbdb-4b46-a845-c9e9af9b580a"
+    },
+    {
+      "claim_id": "1d077482-5462-4483-a6b9-2a8d619e3b4e",
+      "result_id": "fdfedb86-dbdb-4b46-a845-c9e9af9b580a"
+    },
+    {
+      "claim_id": "34f8d6d7-6fe5-43cf-99a6-1e0488b9d959",
+      "result_id": "cab3ec52-4a00-4de1-aa77-f205c223dcd1"
+    },
+    {
+      "claim_id": "25bb6f2d-1cb3-488b-a658-f44128d53e2d",
+      "result_id": "cab3ec52-4a00-4de1-aa77-f205c223dcd1"
+    },
+    {
+      "claim_id": "83dcbf01-ca19-46e0-9529-b257a6671923",
+      "result_id": "cab3ec52-4a00-4de1-aa77-f205c223dcd1"
+    },
+    {
+      "claim_id": "a89cd372-90c2-4309-9b4f-389dc8fba4ae",
+      "result_id": "f5f7cfff-99ef-4067-9a77-256bbac5a622"
+    },
+    {
+      "claim_id": "2d95a43d-aa8f-48d2-bd28-a63fa72cd138",
+      "result_id": "871d851a-f769-4938-ba5f-d4aa8eb44318"
+    },
+    {
+      "claim_id": "a9f3994f-9134-41a0-9d0d-db2d69b466f7",
+      "result_id": "871d851a-f769-4938-ba5f-d4aa8eb44318"
+    },
+    {
+      "claim_id": "2ff33001-d6a0-4631-be67-33d87a0eb220",
+      "result_id": "871d851a-f769-4938-ba5f-d4aa8eb44318"
+    },
+    {
+      "claim_id": "e4c9bbed-619f-4719-a513-9603b58dc804",
+      "result_id": "871d851a-f769-4938-ba5f-d4aa8eb44318"
+    },
+    {
+      "claim_id": "3a4b42d0-c4ec-4dda-a744-829ab9390c44",
+      "result_id": "871d851a-f769-4938-ba5f-d4aa8eb44318"
+    },
+    {
+      "claim_id": "33e1b558-7302-410b-b0e2-baaa96c35c43",
+      "result_id": "871d851a-f769-4938-ba5f-d4aa8eb44318"
+    },
+    {
+      "claim_id": "29e224e8-88ab-4708-9ed0-d9618c0dff02",
+      "result_id": "871d851a-f769-4938-ba5f-d4aa8eb44318"
+    },
+    {
+      "claim_id": "e9f23973-95a4-4135-9604-f251b97a0c4c",
+      "result_id": "871d851a-f769-4938-ba5f-d4aa8eb44318"
+    },
+    {
+      "claim_id": "534fbb96-f3ce-4f1e-942b-455bc8efbb36",
+      "result_id": "871d851a-f769-4938-ba5f-d4aa8eb44318"
+    },
+    {
+      "claim_id": "f4e8765a-9354-40cc-9ec2-d3d3d9df34e9",
+      "result_id": "871d851a-f769-4938-ba5f-d4aa8eb44318"
+    },
+    {
+      "claim_id": "690cab58-697c-46a8-be26-b0f146b667c2",
+      "result_id": "871d851a-f769-4938-ba5f-d4aa8eb44318"
+    },
+    {
+      "claim_id": "55cd1274-313b-492d-b41e-709fe588a3a5",
+      "result_id": "871d851a-f769-4938-ba5f-d4aa8eb44318"
+    },
+    {
+      "claim_id": "094ec3f4-620e-49fd-9125-21d500313bb9",
+      "result_id": "871d851a-f769-4938-ba5f-d4aa8eb44318"
+    },
+    {
+      "claim_id": "a615f581-ad73-4fb7-afaf-8ea5760bf05c",
+      "result_id": "871d851a-f769-4938-ba5f-d4aa8eb44318"
+    },
+    {
+      "claim_id": "5a27aa16-eaae-44c0-bec1-aa2f37f71ad8",
+      "result_id": "66cdd4a1-1581-465a-a3b8-948106621d5d"
+    },
+    {
+      "claim_id": "cd044a78-d695-41d9-829a-d11a16b949cb",
+      "result_id": "66cdd4a1-1581-465a-a3b8-948106621d5d"
+    },
+    {
+      "claim_id": "dcb5714c-2da7-42ce-a118-652fec18939a",
+      "result_id": "66cdd4a1-1581-465a-a3b8-948106621d5d"
+    },
+    {
+      "claim_id": "75787320-2d3e-4c53-948e-ff6bfff3b4ce",
+      "result_id": "66cdd4a1-1581-465a-a3b8-948106621d5d"
+    },
+    {
+      "claim_id": "f16fd850-5998-45a1-88c3-ebbfe125f60c",
+      "result_id": "66cdd4a1-1581-465a-a3b8-948106621d5d"
+    },
+    {
+      "claim_id": "acb3d7ab-f89a-420d-93de-1cb6211bcadf",
+      "result_id": "66cdd4a1-1581-465a-a3b8-948106621d5d"
+    },
+    {
+      "claim_id": "a6671cd7-791f-4c3c-bce2-62896408ccb8",
+      "result_id": "1755154b-b2da-421f-9269-462034974e42"
+    }
+  ],
+  "comparisons": []
+}

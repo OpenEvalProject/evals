@@ -1,0 +1,149 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C5",
+      "C7",
+      "C8",
+      "C9",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "HDX-MS reveals that ATP binding causes opposing conformational changes in SecA and SecYEG: SecA becomes stabilized (closes) around the pre-protein while SecYEG becomes destabilized (opens), with the opposite occurring upon ATP hydrolysis to ADP. The most dramatic changes occur in regions that directly contact the translocating pre-protein.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C7-C9, C33-C57 collectively demonstrate nucleotide-dependent conformational changes using HDX-MS with high peptide coverage (82-95%, C33, C66). The data show ATP-dependent stabilization of SecA (C37, C40, C56) and destabilization of SecYEG (C42, C46, C55) in regions contacting the pre-protein (C39, C43, C57), with reversal in the ADP state (C41, C47, C50). The findings are internally consistent and supported by appropriate controls comparing isolated SecA (minimal changes, C34-C35) versus the complex (C36-C38).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "MD simulations demonstrate that both SecA pores (particularly pore 1) are more constricted in the ATP-bound state compared to ADP, with statistically significant differences in pore size. This computational finding is consistent with HDX-MS data showing protection of pore residues in the ATP state.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C53, C67-C71 provide convergent evidence from MD simulations and HDX-MS. The pore size quantification shows statistically significant constriction in ATP state (pore 1: 1.9 vs 2.6 \u00c5\u00b2, p<0.0001; pore 2: 2.4 vs 2.1 \u00c5\u00b2, p=0.0061, C70-C71). The specific residues identified in the pores (C67-C68) are shown to be protected in HDX data (C69), providing independent validation. The statistical analysis appears appropriate with sufficient sampling (snapshots every 25 ns from 750-1000 ns).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C10",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "The observed alternating conformational dynamics of SecA and SecYEG are proposed to impose directionality on the Brownian ratchet mechanism for protein transport, potentially explaining why pre-proteins do not backslide in the presence of non-hydrolysable ATP analogues.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C10, C58-C63 present mechanistic interpretations that are explicitly speculative (C10, C59, C61-C63 marked as SPECULATION). While the HDX-MS and MD data support ATP-dependent conformational changes, the causal link to Brownian ratchet directionality and prevention of backsliding remains inferential. The consistency with prior models (C58, C60) and observations (C62) is noted, but direct experimental validation of the proposed mechanism is not provided. The claims appropriately use cautious language ('could help', 'presumably', 'likely', 'potentially').",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C64",
+      "C65"
+    ],
+    "result": "HDX-MS is established as a sensitive method for studying membrane protein conformational dynamics, and AMPPNP was used as a non-hydrolysable ATP analogue because ATP is rapidly hydrolyzed in the active complex.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C32, C64-C65 describe established methodological principles supported by citations (C28-C31) and biochemical knowledge (C65). The choice of AMPPNP is appropriately justified (C65), and the general utility of HDX-MS for membrane protein complexes is well-documented (C28, C32). Claim C64 appropriately summarizes the integrative approach combining HDX-MS, biochemistry, and MD simulations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15"
+    ],
+    "result": "The Sec translocon is a conserved multi-protein complex (SecYEG in bacteria, Sec61\u03b1\u03b2\u03b3 in eukaryotes) that mediates ATP-dependent protein translocation across membranes, with SecA serving as the motor ATPase in bacteria.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2, C11-C15 provide background on the Sec system supported by established knowledge and citations (C12, C14-C15). These are well-established facts in the field describing the composition, distribution, and basic function of the Sec translocon. The claims accurately represent prior work and provide necessary context for the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "Prior work established a Brownian ratchet model for Sec-mediated transport based on ATP/ADP-dependent opening/closing of SecY, but the structural dynamics of SecA and the mechanism preventing backsliding remained unclear, particularly regarding subtle conformational changes not captured by techniques like FRET.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C4, C16-C27 accurately summarize prior work with appropriate citations (C16-C17, C19-C26) and identify knowledge gaps (C4, C18, C27). The claims correctly note that no ADP-bound structure exists (C18), that MD/FRET suggest nucleotide-dependent SecY dynamics (C19), and that SecA clamping changes may be subtle (C27). This establishes the rationale for the current HDX-MS study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C66"
+    ],
+    "result": "The HDX-MS experiments achieved high peptide coverage ranging from 82% to 95% for the respective subunits of the SecA-SecYEG complex.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C66 (duplicate of C33) reports a data quality metric directly from the experimental results, supported by Figure 2\u2014figure supplement 1. The high coverage across all subunits (82-95%) indicates comprehensive analysis of the complex, which is essential for the validity of the conformational dynamics conclusions.",
+    "result_type": "MINOR"
+  }
+]

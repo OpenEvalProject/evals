@@ -1,0 +1,1657 @@
+{
+  "submission": {
+    "id": "ee479f3c-0ba6-4eac-a319-6c3b2910a17c",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T18:27:31.534669Z",
+    "updated_at": "2025-12-02T18:27:31.534669Z"
+  },
+  "content": [
+    {
+      "id": "f00e3e4e-8aee-4004-b17c-bd8de7b86eca",
+      "submission_id": "ee479f3c-0ba6-4eac-a319-6c3b2910a17c",
+      "content_type": "manuscript",
+      "content_text": "# Does the human placenta express the canonical cell entry mediators for SARS-CoV-2?\n\n## Authors\n\n- Roger Pique-Regi<sup>1</sup> ([ORCID: 0000-0002-1262-2275](https://orcid.org/0000-0002-1262-2275)) \u2020\n- Roberto Romero<sup>1</sup> ([ORCID: 0000-0002-4448-5121](https://orcid.org/0000-0002-4448-5121)) \u2020\n- Adi L Tarca<sup>1</sup> ([ORCID: 0000-0003-1712-7588](https://orcid.org/0000-0003-1712-7588))\n- Francesca Luca<sup>2</sup> ([ORCID: 0000-0001-8252-9052](https://orcid.org/0000-0001-8252-9052))\n- Yi Xu<sup>1</sup>\n- Adnan Alazizi<sup>2</sup>\n- Yaozhu Leng<sup>1</sup>\n- Chaur-Dong Hsu<sup>1</sup>\n- Nardhy Gomez-Lopez<sup>1</sup> ([ORCID: 0000-0002-3406-5262](https://orcid.org/0000-0002-3406-5262)) \u2020\n\n### Affiliations\n\n1. Perinatology Research Branch, Division of Obstetrics and Maternal-Fetal Medicine, Division of Intramural Research Eunice Kennedy Shriver National Institute of Child Health and Human Development, National Institutes of Health, U.S. Department of Health and Human Services Detroit United States\n2. Center for Molecular Medicine and Genetics, Wayne State University School of Medicine Detroit United States\n3. Department of Obstetrics and Gynecology, Wayne State University School of Medicine Detroit United States\n4. Department of Obstetrics and Gynecology, University of Michigan Ann Arbor United States\n5. Department of Epidemiology and Biostatistics, Michigan State University East Lansing United States\n6. Detroit Medical Center Detroit United States\n7. Department of Obstetrics and Gynecology, Florida International University Miami United States\n8. Department of Computer Science, Wayne State University College of Engineering Detroit United States\n9. Department of Physiology, Wayne State University School of Medicine Detroit United States\n10. Department of Biochemistry, Microbiology and Immunology, Wayne State University School of Medicine Detroit United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nThe pandemic of coronavirus disease 2019 (COVID-19) caused by the severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2) has affected more than 10 million people, including pregnant women. To date, no consistent evidence for the vertical transmission of SARS-CoV-2 exists. The novel coronavirus canonically utilizes the angiotensin-converting enzyme 2 (ACE2) receptor and the serine protease TMPRSS2 for cell entry. Herein, building upon our previous single-cell study (Pique-Regi et al., 2019), another study, and new single-cell/nuclei RNA-sequencing data, we investigated the expression of ACE2 and TMPRSS2 throughout pregnancy in the placenta as well as in third-trimester chorioamniotic membranes. We report that co-transcription of ACE2 and TMPRSS2 is negligible in the placenta, thus not a likely path of vertical transmission for SARS-CoV-2. By contrast, receptors for Zika virus and cytomegalovirus, which cause congenital infections, are highly expressed by placental cell types. These data show that the placenta minimally expresses the canonical cell-entry mediators for SARS-CoV-2.\n\n## Introduction\n\nThe placenta serves as the lungs, gut, kidneys, and liver of the fetus (Burton and Jauniaux, 2015; Maltepe and Fisher, 2015). This fetal organ also has major biological actions that modulate maternal physiology (Burton and Jauniaux, 2015; Sasaki and Norwitz, 2011; Taglauer et al., 2014; Fitzgerald et al., 2018) and, importantly, together with the extraplacental chorioamniotic membranes, shield the fetus against microbes from hematogenous dissemination and from invading the amniotic cavity (Ander et al., 2019; Kwon et al., 2014). Indeed, most pathogens that cause hematogenous infections in the mother cannot reach the fetus, which is largely due to the potent protective mechanisms provided by placental cells (i.e. trophoblast cells: syncytiotrophoblasts and cytotrophoblasts) (Parry et al., 1997; Koi et al., 2002; Arora et al., 2017). Yet, some of these pathogens such as Toxoplasma gondii, Rubella virus, herpesvirus (HSV), cytomegalovirus (CMV), and Zika virus (ZIKV), among others, are capable of crossing the placenta and infecting the fetus, thus causing congenital disease (Stegmann and Carey, 2002; Coyne and Lazear, 2016).\n\nIn December 2019, a local outbreak of pneumonia caused by a novel coronavirus\u2014severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2)\u2014was reported in Wuhan (Hubei, China) (Dong et al., 2020a). After exposure to SARS-COV-2, susceptible individuals can develop coronavirus disease 2019 (COVID-19) consisting of symptoms that may range from fever and cough to severe respiratory illness; in some cases, COVID-19 is life-threatening (Centers for Disease Control and Prevention, 2020a; Wadman, 2020). Since the onset of the outbreak, more than 10 million COVID-19 cases have been confirmed, accounting for more than 500,000 deaths (COVID-19, 2020). This pandemic has now spread throughout the entire world with recent epicenters in Europe (Italy and Spain) and the United States. By April 2019, the states of New York and Michigan were the most severely affected (COVID-19, 2020), given that the metropolitan areas of New York City and Detroit possess large populations subject to health disparities that include limited access to health care, chronic exposure to pollution, and pre-existing cardiovascular conditions (Centers for Disease Control and Prevention, 2020b).\n\nPregnant women and their fetuses represent a potential high-risk population in light of the COVID-19 outbreak\u00a0(Dashraath et al., 2020; Liu et al., 2020; Rasmussen et al., 2020; Ashokka et al., 2020; Della Gatta et al., 2020; Weber LeBrun et al., 2020; Tekbali, 2020; Vintzileos, 2020; Lokken, 2020) given that viral infections such as influenza\u00a0(Neuzil et al., 1998; Lindsay et al., 2006; Jamieson et al., 2006; Cervantes-Gonzalez and Launay, 2010; Pandemic H1N1 Influenza in Pregnancy Working Group et al., 2010; Mosby et al., 2011; Pazos et al., 2012; Raj et al., 2014), varicella\u00a0(Triebwasser et al., 1967; Paryani and Arvin, 1986; Esmonde et al., 1989; Haake et al., 1990; Swamy and Dotters-Katz, 2019), Ebola\u00a0(Olgun, 2018; Muehlenbachs et al., 2017), and measles\u00a0(Christensen et al., 1954; Atmar et al., 1992) show increased severity in this physiological state. Other coronaviruses, such as SARS-CoV-1 and MERS-CoV, have severe effects in both the mother and the fetus, but vertical transmission has not been proven\u00a0(Wong et al., 2004; Ng et al., 2006; Alserehi et al., 2016; Jeong et al., 2017), albeit these studies included very few cases. By contrast with the above-mentioned viral infections, only\u00a0~15% of pregnant women test positive for SARS-CoV-2 and a small fraction of them are symptomatic\u00a0(Sutton et al., 2020), most of whom experience only a mild illness\u00a0(Chen et al., 2020a). Consequently, the clinical characteristics of pregnant women with COVID-19 appear similar to those of non-pregnant adults\u00a0(Yu et al., 2020). Yet, recent reports have shown that severe COVID-19 can lead to maternal death\u00a0(Hantoushzadeh et al., 2020; Blitz, 2020). However, thus far, no conclusive evidence of vertical transmission has been generated\u00a0(Weber LeBrun et al., 2020; Chen et al., 2020b; Stower, 2020; Lamouroux et al., 2020; Yan et al., 2020;\u00a0Siberry et al., 2020). Consistently, infants born to mothers with COVID-19 test negative for SARS-CoV-2, do not develop serious clinical symptoms (e.g., fever, cough, diarrhea, or abnormal radiologic or hematologic evidence), and are promptly discharged from the hospital\u00a0(Chen et al., 2020c). Nevertheless, new evidence has emerged suggesting that the fetus can respond to SARS-CoV-2 infection.\n\nCase reports have shown that a small fraction of neonates born to women with COVID-19 tested positive for the virus at 1\u20134 days of life\u00a0(Zeng et al., 2020a; Alzamora et al., 2020), yet these neonates subsequently tested negative on day 6-7\u00a0(Zeng et al., 2020a). In addition, serological studies revealed that a few neonates born to mothers with COVID-19 had increased concentrations of SARS-CoV-2 immunoglobulin (Ig)M as well as IgG\u00a0(Zeng et al., 2020b; Dong et al., 2020b). The elevated concentrations of IgG are likely due to the passive transfer of this immunoglobulin from the mother to the fetus across the placenta. However, the increased levels of IgM suggest that the fetus was infected with SARS-CoV-2 given that this immunoglobulin cannot cross the placenta as a result of its large molecular weight. Nonetheless, all neonates included in the above-mentioned studies tested negative for the virus and did not present any symptoms\u00a0(Zeng et al., 2020b; Dong et al., 2020b).\n\nMore recently, two case reports indicated that SARS-CoV-2 RNA has been detected in the amniotic fluid and placental tissues. In the first case report, the viral RNA was detected in amniotic fluid from a woman who was severely affected and died of COVID-19\u00a0(Zamaniyan, 2020). The premature neonate tested negative for SARS-CoV-2 after delivery but 24 hr later tested positive\u00a0(Zamaniyan, 2020). In the second case report, the viral RNA was detected in the placenta and umbilical cord from a woman with severe pre-eclampsia, placental abruption, and other complications, yet none of the fetal tissues tested positive\u00a0(Hosier, 2020). Therefore, whether SARS-CoV-2 can reach the fetus by crossing the placenta is still unclear.\n\n## Results and discussion\n\nCell entry and the spread of SARS-CoV-2 are widely thought to depend on the angiotensin-converting enzyme 2 (ACE2) receptor\u00a0(Shang et al., 2020; Wang et al., 2020a) and the serine protease TMPRSS2\u00a0(Hoffmann et al., 2020). In the study herein, we investigated whether the receptors responsible for SARS-CoV-2 infection are expressed in the human placenta (including the decidual tissues) throughout the three trimesters of pregnancy by using publicly available single-cell RNA-sequencing (scRNA-seq) data\u00a0(Vento-Tormo et al., 2018; Pique-Regi et al., 2019) together with newly generated data (Supplementary file 1).\n\nStrikingly, we found that very few cells co-express ACE2 and TMPRSS2 (Figure 1A and B). Using a very permissive threshold of expression of one transcript per cell, only four cells with co-expression were detected in any of the three trimesters, resulting in an estimated\u00a0<1/10,000 cells. Our first-trimester data are in agreement with a prior report showing minimal expression of ACE2 at the human maternal-fetal interface (Zheng et al., 2020); however, the same dataset was recently used to report the opposite (Li et al., 2020). Nonetheless, the co-expression of ACE2 and TMPRSS2 was not examined by either study, and it is important to consider log-transformation and data analysis issues for low-expressed genes, focusing on the fraction of cells expressing the transcripts (Booeshaghi and Pachter, 2020). We also evaluated the expression of SARS-CoV-2 receptors in the chorioamniotic membranes (also known as the extraplacental membranes) in the third trimester; these tissues may also serve as a point of entry for microbial invasion of the amniotic cavity and potentially the fetus (Kim et al., 2015). Again, co-expression of ACE2 and TMPRSS2 was minimally detected in the chorioamniotic membranes (Figure 1A and B).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/58716/elife-58716-fig1-v3.jpg)\n\n**Figure 1.:** (A) Uniform Manifold Approximation Plot (UMAP), where dots represent single cells/nuclei and are colored by cell type (abbreviations used are: STB, Syncytiotrophoblast; EVT, Extravillous trophoblast; CTB, cytotrophoblast; HSC, hematopoietic stem cell; npiCTB, non-proliferative interstitial cytotrophoblast; LED, lymphoid endothelial decidual cell) (B) UMAP plot with cells/nuclei co-expressing one or more transcripts for ACE2 and TMPRSS2, genes that are necessary for SARS-CoV-2 viral infection and spreading, in red.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/58716/elife-58716-fig1-figsupp1-v3.jpg)\n\n**Figure 1\u2014figure supplement 1.:** Uniform Manifold Approximation Plot (UMAP), where dots represent single cells/nuclei and are colored the combined gene expression of CGA + CSH1 + GH2 and normalized to transcripts per million per cell.\n\nA challenge in scRNA-seq studies is generating high-quality, single-cell suspensions containing both rare and difficult-to-dissociate (e.g., multinucleated cells) cell types. This is likely the reason why the reported scRNA-seq studies of the human placenta contain a low fraction of syncytiotrophoblast cells [STB, multinucleated cells forming the outermost fetal component of the placenta in direct contact with the maternal circulation (i.e., intervillous space)] (Vento-Tormo et al., 2018; Pique-Regi et al., 2019; Tsang et al., 2017). Therefore, we considered whether the expression of ACE2 and TMPRSS2 was minimally observed in the placental cell types as a result of the reduced fraction of STB cells (i.e., dissociation bias). To address this possibility, we prepared single-nucleus suspensions of the placental tissues (including the decidua basalis) and performed single-nuclear RNAseq (snRNA-seq), which reduces the dissociation bias against large cells (Wu et al., 2019). An important advantage of snRNA-seq is its compatibility with biobank-frozen samples; therefore, we pooled 32 placental villi/decidua samples collected in the third trimester (Supplementary file 2). This represents the first snRNA-seq study of the placental tissues. As expected, a larger fraction of STB cells/nuclei was observed using snRNA-seq compared to scRNA-seq (Figure 1A and Figure 1\u2014figure supplement 1). Consistent with the scRNAseq analyses, the snRNAseq data demonstrated that co-expression of ACE2 and TMPRSS2 is unlikely in the placental tissues (Figure 1B). A limitation of snRNA-seq is that it has a higher background compared to scRNAseq and could capture ACE2 and TMPRSS2 transcripts from other cell types, but this should not affect the analyses reported herein because co-expression is not observed.\n\nFinally, we explored the expression of ACE2 and TMPRSS2 in third-trimester placental tissues by mining two microarray datasets that we have previously reported (Kim et al., 2009; Toft et al., 2008). These analyses of bulk gene expression data revealed that, while ACE2 was detected above background in most of the samples, TMPRSS2 was largely undetected (Supplementary file 3). Collectively, these results consistently indicate that the human placental tissues negligibly co-express ACE2 and TMPRSS2. This reduced expression contrasts with the high expression of ACE2 and TMPRSS2 in nasal goblet and ciliated cells within the human airways, lungs, and gastrointestinal tract, which are targeted during COVID-19 (Muus, 2020; Wang, 2020b; HCA Lung Biological Network et al., 2020). Therefore, our results suggest that vertical transmission of SARS-CoV-2 is unlikely to occur unless facilitated by other concomitant pathological conditions resulting in a breach of the maternal-fetal crosstalk.\n\nThere is a possibility, however, that SARS-CoV-2 could infect the human placenta by using alternate entry routes while interacting with other proteins (Gordon et al., 2020). The expression of additional SARS-CoV-2-related receptors or proteins in the human placenta is shown in Figure 2, CoV-Alt; however, further research is required to test their participation in the pathogenesis of COVID-19. For example, in vitro studies suggest that BSG (Basigin, also called CD147 or EMMPRIN, transmembrane glycoprotein belonging to the immunoglobulin superfamily) provides an alternate entry for SARS-CoV-2 when ACE2 and TMPRSS2 are not expressed\u00a0(Blanco-Melo et al., 2020; Wang, 2020c; Ulrich and Pillat, 2020). We found that the placenta and chorioamniotic membranes expressed high levels of BSG throughout pregnancy (Figure 2, CoV-Alt), yet this transcript is also widely expressed in all human tissues and cell types (Figure 2\u2014figure supplement 1). Therefore, it is unlikely that this protein alone is a sufficient requirement for SARS-CoV-2 viral entry, and other proteins may be required to explain the cell type primarily affected by COVID-19. Moreover, cathepsin L (CSTL) and FURIN may also function as proteases priming the SARS-CoV-2 S protein (Lukassen et al., 2020). We found that these proteases are highly expressed by the placental tissues throughout gestation (Figure 2, CoV-Alt). Nevertheless, these proteases may not provide sufficient levels of priming by themselves (Shirato et al., 2017; Shirato et al., 2018; Iwata-Yoshikawa et al., 2019) when tested with SARS-CoV-1, yet this has not been verified for SARS-CoV-2. Given that the placental tissues are enriched in maternal and fetal macrophages (Pique-Regi et al., 2019), and that a subset of these immune cells expressing sialoadhesin (SIGLEC1, also known as CD169) can contribute to viral spread during SARS-CoV-2 infection (Chen, 2020; Park, 2020), we also investigated the expression of SIGLEC1 in this study. As expected, SIGLEC1 was expressed by macrophages in the placenta and chorioamniotic membranes and, to a lesser extent, in T cells (Figure 2, CoV-Alt). However, even if the virus could infect the placental/decidual macrophages expressing SIGLEC1, this is not sufficient for viral spreading. The expression of ADAM17 was also investigated in the placental tissues as this metalloproteinase competes with TMPRSS2 in ACE2 processing (Heurich et al., 2014). The placenta and chorioamniotic membranes highly expressed ADAM17 (Figure 2\u2014figure supplement 2); however, only cleavage by TMPRSS2 results in augmented SARS-S-driven cell entry (Heurich et al., 2014). While these CoV-Alt molecules may be used for SARS-CoV-2 infection, they are likely to be less efficient than ACE2 and TMPRSS2, which are already targeted for antiviral interventions (Hoffmann et al., 2020); yet, new candidate host:viral interacting proteins and possible drugs are being investigated (Gordon et al., 2020).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/58716/elife-58716-fig2-v3.jpg)\n\n**Figure 2.:** Each row represents a different cell type, and columns are grouped first by virus type, receptor/molecule gene, and placental tissue/time-of sampling (1DP, 2DP and 3DP represent the first, second, and third trimester, 3Nuc represents the third trimester nuclei, and 3CAM represents the third trimester chorioamniotic membranes). The size of the dot represents the proportion of cells that express the receptor with more than zero transcripts, and the color represents the average gene expression for the subset of cells expressing that gene in transcripts per million (TPM). Cell type abbreviations used are: STB, Syncytiotrophoblast; EVT, Extravillous trophoblast; CTB, cytotrophoblast; HSC, hematopoietic stem cell; npiCTB, non-proliferative interstitial cytotrophoblast; LED, lymphoid endothelial decidual cell.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/58716/elife-58716-fig2-figsupp1-v3.jpg)\n\n**Figure 2\u2014figure supplement 1.:** For each tissue, a violin plot and a boxplot describe the variation in gene expression levels for BSG across all of the samples collected by the project sorted left to right by median gene expression (plot generated through the GTEx portal).\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/58716/elife-58716-fig2-figsupp2-v3.jpg)\n\n**Figure 2\u2014figure supplement 2.:** Each row represents a different cell type, and columns are grouped first by virus type, receptor/molecule gene, and placental tissue/time-of sampling (1DP, 2DP and 3DP represent the first, second and third trimester, 3Nuc represents the third trimester nuclei, and 3CAM represents the third trimester chorioamniotic membranes). The size of the dot represents the proportion of cells that express the receptor with more than zero transcripts, and the color represents the average gene expression for the subset of cells expressing that gene in transcripts per million (TPM). Cell type abbreviations used are: STB, Syncytiotrophoblast; EVT, Extravillous trophoblast; CTB, cytotrophoblast; HSC, hematopoietic stem cell; npiCTB, non-proliferative interstitial cytotrophoblast; LED, lymphoid endothelial decidual cell.\n\nGiven that the main mediators for cell entry of SARS-CoV-2 were minimally expressed by the human placenta, we also investigated whether the receptors for congenital viruses such as CMV (Stegmann and Carey, 2002; Arechavaleta-Velasco et al., 2002; Aronoff et al., 2017; Pereira et al., 2017; Al-Haddad et al., 2019; Faure Bardon et al., 2020) and ZIKV (Coyne and Lazear, 2016; Adams Waldorf et al., 2016; Aldo et al., 2016; Cao et al., 2017; Aagaard et al., 2017; Mysorekar, 2017; Valentine et al., 2018; Adams Waldorf et al., 2018; Dudley et al., 2018; Walker et al., 2019; Nelson et al., 2020), which are known to infect and cross the placenta, were detectable using our pipeline. Known receptors for CMV include NRP2\u00a0(Martinez-Martin et al., 2018), PDFGRA (Martinez-Martin et al., 2018), and CD46 (Stein et al., 2019). Notably, all of these receptors were highly expressed in several placental cell types (Figure 2, CMV and Figure 2\u2014figure supplement 2). Next, we investigated the expression of the AXL receptor for ZIKV (Richard et al., 2017; Persaud et al., 2018) as well as other related molecules such as CD209 (Carbaugh et al., 2019) and TYRO3 (Oliveira and Peron, 2019). Consistent with vertical transmission, AXL, the preferred receptor for ZIKV, was highly expressed by the cells of the human placenta and chorioamniotic membranes throughout gestation (Figure 2, ZIKV). The expression of CD209 was mainly found in the maternal and fetal macrophage subsets, as expected (Svensson et al., 2011; Swieboda et al., 2020). Yet, the expression of TYRO3 was low (Figure 2\u2014figure supplement 2), consistent with the view that TAM receptors are not essential for ZIKV infection (Hastings et al., 2017). The expression of other viral receptors involved in congenital disease was also documented in the placental tissues (Figure 2\u2014figure supplement 2).\n\n### Conclusion\n\nIn conclusion, the single-cell transcriptomic analysis presented herein provides evidence that SARS-CoV-2 is unlikely to infect the placenta and fetus since its canonical receptor and protease, ACE2 and TMPRSS2, are only minimally expressed by the human placenta throughout pregnancy. In addition, we showed that the SARS-CoV-2 receptors are not expressed by the chorioamniotic membranes in the third trimester. However, viral receptors utilized by CMV, ZIKV, and others are highly expressed by the human placental tissues. While transcript levels do not always correlate with protein expression, our data indicate a low likelihood of placental infection and vertical transmission of SARS-CoV-2. However, it is still possible that the expression of these proteins is much higher in individuals with pregnancy complications related to the renin-angiotensin-aldosterone system (RAAS), which can alter the expression of ACE2\u00a0(Herse et al., 2007; Alexandre et al., 2020). The cellular receptors and mechanisms that could be exploited by SARS-CoV-2 are still under investigation (Gordon et al., 2020), yet single-cell atlases can help to identify cell types with a similar transcriptional profile to those that are known to participate in COVID-19.\n\n## Materials and methods\n\n### Data availability\n\nPlacental and decidual scRNA-seq data from first-trimester samples were downloaded through ArrayExpress (E-MTAB-6701). Data for third-trimester samples previously collected by our group are available through NIH dbGAP (accession number phs001886.v2.p1), and newly generated second-trimester scRNA-seq and third-trimester snRNA-seq data are being deposited into the same repository (Supplementary file 1). All software and R packages used herein are detailed in the \u2018scRNA-seq and snRNA-seq data analysis.\u2019 Scripts detailing the analyses are also available at https://github.com/piquelab/sclabor\u00a0(Pique-Regi, 2020; copy archived at https://github.com/elifesciences-publications/sclabor).\n\n### Sample collection and processing, single-cell/nuclei preparation, library preparation, and sequencing\n\n#### Human subjects\n\nPlacental tissues were obtained immediately after a clinically indicated delivery from (i) a patient diagnosed with placenta accreta at 18 weeks of gestation and (ii) 32 patients spanning different conditions in the third trimester (Supplementary file 2). A sample of the basal plate of the placenta including the decidua basalis and placental villi tissue was (i) dissociated as previously described (Pique-Regi et al., 2019) for scRNA-seq or (ii) preserved in RNAlater and subsequently frozen for snRNA-seq. The collection and use of human materials for research purposes were approved by the Institutional Review Boards of the Wayne State University School of Medicine\u00a0and\u00a0NICHD. All participating women provided written informed consent prior to sample collection.\n\n#### Single-cell preparation\n\nCells from the placental villi and basal plate were isolated by enzymatic digestion using previously described protocols with modifications (Pique-Regi et al., 2019; Tsang et al., 2017; Xu et al., 2015). Briefly, placental tissues were homogenized using a gentleMACS Dissociator (Miltenyi Biotec, San Diego, CA) either in an enzyme cocktail from the Umbilical Cord Dissociation Kit (Miltenyi Biotec) or in collagenase A (Sigma Aldrich, St. Louis, MO). After digestion, homogenized tissues were washed with ice-cold 1X phosphate-buffered saline (PBS) and filtered through a cell strainer (Fisher Scientific, Durham, NC). Cell suspensions were then collected and centrifuged at 300 x g for 5 min. at 4\u00b0C. Red blood cells were lysed using a lysing buffer (Life Technologies, Grand Island, NY). Next, the cells were washed with ice-cold 1X PBS and resuspended in 1X PBS for cell counting using an automatic cell counter (Cellometer Auto 2000; Nexcelom Bioscience, Lawrence, MA). Lastly, dead cells were removed from the cell suspensions using the Dead Cell Removal Kit (Miltenyi Biotec), and cells were counted again to determine final viable cell numbers.\n\n#### Single-cell library preparation using the 10x genomics platform\n\nViable cells were utilized for single-cell RNAseq library construction using the Chromium Controller and Chromium Single Cell 3' Version 3 Kit (10x Genomics, Pleasanton, CA), following the manufacturer\u2019s instructions. Briefly, viable cell suspensions were loaded into the Chromium Controller to generate gel beads in emulsion (GEM), with each GEM containing a single cell as well as barcoded oligonucleotides. Next, the GEMs were placed in the Veriti 96-well Thermal Cycler (Thermo Fisher Scientific, Wilmington, DE) and reverse transcription was performed in each GEM (GEM-RT). After the reaction, the complementary (c)DNA was cleaned by using Silane DynaBeads (Thermo Fisher Scientific) and the SPRIselect Reagent Kit (Beckman Coulter, Indianapolis, IN). Next, the cDNA was amplified using the Veriti 96-well Thermal Cycler and cleaned using the SPRIselect Reagent Kit. Indexed sequencing libraries were then constructed using the Chromium Single Cell 3' Version 3 Kit, following the manufacturer\u2019s instructions.\n\ncDNA was fragmented, end-repaired, and A-tailed using the Chromium Single Cell 3' Version 3 Kit, following the manufacturer\u2019s instructions. Next, adaptor ligation was performed using the Chromium Single Cell 3' Version 3 Kit, followed by post-ligation clean-up using the SPRIselect Reagent Kit to obtain the final library constructs, which were then amplified using PCR. After performing a post-sample index double-sided size selection using the SPRIselect Reagent Kit, the quality and quantity of the DNA were analyzed using the Agilent Bioanalyzer High Sensitivity Chip (Agilent Technologies, Wilmington, DE). The Kapa DNA Quantification Kit for Illumina platforms (Kapa Biosystems, Wilmington, MA) was used to quantify the DNA libraries, following the manufacturer's instructions.\n\n#### Single-nuclei sample preparation\n\nWe developed a new protocol to isolate nuclei from frozen placenta samples, based on DroNc-seq (Habib et al., 2017) and an early version of the protocol developed by the Martelotto lab (https://www.protocols.io/view/frankenstein-protocol-for-nuclei-isolation-from-f-3eqgjdw). For each placenta sample, 1 mm frozen placenta biopsy punches were collected and immediately lysed with ice-cold lysis buffer (10 mM Tris-HCl, pH 7.5, 10 mM NaCl, 3 mM MgCl2, 2% BSA, 0.2 U/\u00b5l ROCHE\u00a0Protector RNase Inhibitor, and 0.1% IGEPAL-630) for 5 min. During incubation the samples were gently mixed by swirling the tube twice and collected by centrifugation at 500 x g for 5 min at 4\u00b0C. The process was repeated twice for a total of 3 cycles of lysis (5 min long each). Next, the pellets were washed with ice-cold nuclei suspension buffer (1X PBS containing 2% BSA and 0.2 U/\u00b5l ROCHE\u00a0Protector RNase Inhibitor) and filtered through a 30 \u03bcm cell strainer (Fisher Scientific). Nuclei suspensions were then collected and centrifuged at 500 x g for 5 min at 4\u00b0C. Nuclei were counted using a Countess II FL (Thermo Fisher Scientific, Durham, NC). All samples exhibited 100% cell death with DAPI staining, indicative of complete cell lysis. Nuclei were then utilized for single-nuclei RNAseq library construction using the Chromium Controller and Chromium Single Cell 3' version 2 kit (10x Genomics), following the manufacturer\u2019s instructions.\n\n#### Sequencing\n\nLibraries were sequenced on the Illumina NextSeq 500 in the Luca/Pique-Regi laboratory and in the CMMG Genomics Services Center (GSC). The Illumina 75 Cycle Sequencing Kit was used with 58 cycles for R2, 26 for R1, and 8 for I1.\n\n### scRNA-seq and snRNA-seq data analyses\n\nRaw fastq files were downloaded from previously established resources (as detailed in \u2018Data Availability\u2019), and the new sequencing data were processed using Cell Ranger version 3.0.0 from 10X Genomics for de-multiplexing. The fastq files were then aligned using kallisto (Bray et al., 2016), and bustools (Melsted, 2019) summarized the cell/gene transcript counts in a matrix for each sample, using the \u2018lamanno\u2019 workflow for scRNA-seq and the \u2018nucleus\u2019 workflow for snRNA-seq. Each sample was then processed using DIEM (Alvarez, 2019) to eliminate debris and empty droplets for both scRNA-seq and snRNA-seq. To avoid the loss of cells that may express viral receptors, we did not exclude cell doublets from the analyses included in this report, which should have negligible effects on the results and conclusions. All count data matrices were then normalized and combined using the \u2018NormalizeData,\u2019 \u2018FindVariableFeatures,\u2019 and \u2018ScaleData\u2019 methods implemented in the Seurat package in R (Seurat version 3.1, R version 3.6.1) (Hafemeister and Satija, 2019) and (Stuart et al., 2019). Afterward, the Seurat \u2018RunPCA\u2019 function was applied to obtain the first 50 principal components, and the different batches and locations were integrated and harmonized using the Harmony package in R (Korsunsky et al., 2019). The top 30 harmony components were then processed using the Seurat \u2018runUMAP\u2019 function to embed and visualize the cells in a two-dimensional map via the Uniform Manifold Approximation and Projection for Dimension Reduction (UMAP) algorithm (McInnes et al., 2020; Becht et al., 2019). To label the cells, the Seurat \u2018FindTransferAnchors\u2019 and \u2018TransferData\u2019 functions were used for each group of locations separately to assign a cell-type identity based on our previously labeled data as reference panel (as performed in Pique-Regi et al., 2019). Cell type abbreviations used are: STB, Syncytiotrophoblast; EVT, Extravillous trophoblast; CTB, cytotrophoblast; HSC, hematopoietic stem cell; npiCTB, non proliferative interstitial cytotrophoblast; LED, lymphoid endothelial decidual cell. Visualization of viral receptor gene expression was performed using the ggplot2 (Wickham, 2011) package in R with gene expression values scaled to transcripts per million (TPM) and to the proportion of cells expressing the transcript within a given cell type (Booeshaghi and Pachter, 2020).\n\n### Bulk gene expression data analysis of ACE2 and TMPRSS2 in the placental tissues\n\nGene expression data for the study by Kim et al., 2009 was available from the www.ebi.ac.uk/microarray-as/ae/ database (entry ID: E-TABM-577), while data for the study by Toft et al., 2008 is available in our data repertoire. The mas5calls function from the affy package in Bioconductor was used to determine presence above background of each probeset corresponding to a given gene (Gautier et al., 2004).\n",
+      "created_at": "2025-12-02T18:27:31.534669Z"
+    },
+    {
+      "id": "aa32725f-ce48-4671-b5ef-e99680b3bb90",
+      "submission_id": "ee479f3c-0ba6-4eac-a319-6c3b2910a17c",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Stephen CJ Parker, University of Michigan United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.58716.sa1](https://doi.org/10.7554/eLife.58716.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nAcceptance summary:\n\nWe believe this timely manuscript fills a critical gap in understanding vertical transmission biology of SARS-CoV-2 and other viruses. These results will help form the foundation for a broad network of single cell/nucleus profiles that can collectively help to dissect mechanisms relevant to the current pandemic. Thank you for the quick scientific progress from your team.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Does the human placenta express the canonical cell entry mediators for SARS-CoV-2?\" for consideration by eLife. Your article has been reviewed by two peer reviewers, one of whom is a member of our Board of Reviewing Editors, and the evaluation has been overseen by Marianne Bronner as the Senior Editor. The reviewers have opted to remain anonymous.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nWe would like to draw your attention to changes in our revision policy that we have made in response to COVID-19 (https://elifesciences.org/articles/57162). Specifically, we are asking editors to accept without delay manuscripts, like yours, that they judge can stand as eLife papers without additional data, even if they feel that they would make the manuscript stronger. Thus the revisions requested below only address clarity and presentation.\n\nSummary:\n\nThe paper by Pique-Regi and collaborators is of high interest in the current SARS-CoV-2 pandemics, trying to dissect molecular mechanisms behind the apparent lack of placental viral transfer to the fetus. In contrast to ZIka and cytomegalovirus infections in pregnancy, this new coronavirus does not seem to infect pregnant women more than others, nor do they get sicker if infected. Also, a vertical transmission to the fetus seems unlikely, but the molecular mechanisms for this fetal protection are unknown. Therefore, this paper fills an important knowledge gap by its findings of a lacking co-expression of two canonical receptor pathways for SARS-CoV-2 cellular infection (ACE2 and TMPRSS2). Overall, this is a timely and well-written manuscript that fills an important niche in the scientific literature. This is a strong work that only need a few revisions to increase clarity.\n\nEssential revisions:\n\n1) The authors claim that the new snRNA-seq data should help to identify multi-nucleated cells, like STB cells, which they do find in only (or predominantly) in the snRNA-seq data. However, in the UMAP plot in Figure 1A, these cells appear to be in two different clusters that mostly overlap what looks like fibroblasts (in purple) or immune cells (blue, light blue). Some explanation as to why the STB cells appear across these two otherwise distinct clusters would be helpful.\n",
+      "created_at": "2025-12-02T18:27:31.534669Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T18:27:31.534669Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T18:27:31.534669Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "218ac30b-4a3d-4fc4-bb26-880ab5dffe21",
+      "content_id": "f00e3e4e-8aee-4004-b17c-bd8de7b86eca",
+      "claim_id": "C1",
+      "claim": "The pandemic of coronavirus disease 2019 (COVID-19) caused by SARS-CoV-2 has affected more than 10 million people, including pregnant women.",
+      "claim_type": "EXPLICIT",
+      "source": "The pandemic of coronavirus disease 2019 (COVID-19) caused by the severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2) has affected more than 10 million people, including pregnant women.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a factual statement about the scale of the pandemic at the time of writing, representing established knowledge about COVID-19 case numbers.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:27:31.534669Z"
+    },
+    {
+      "id": "3e532e75-51f3-45a1-88bb-b2ed46a4bc8b",
+      "content_id": "f00e3e4e-8aee-4004-b17c-bd8de7b86eca",
+      "claim_id": "C2",
+      "claim": "No consistent evidence for vertical transmission of SARS-CoV-2 exists.",
+      "claim_type": "EXPLICIT",
+      "source": "To date, no consistent evidence for the vertical transmission of SARS-CoV-2 exists.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement summarizes the state of scientific knowledge at the time of publication regarding vertical transmission.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:27:31.534669Z"
+    },
+    {
+      "id": "74377f7e-1eae-4c70-8708-e2d45fb94dcb",
+      "content_id": "f00e3e4e-8aee-4004-b17c-bd8de7b86eca",
+      "claim_id": "C3",
+      "claim": "SARS-CoV-2 canonically utilizes the angiotensin-converting enzyme 2 (ACE2) receptor and the serine protease TMPRSS2 for cell entry.",
+      "claim_type": "EXPLICIT",
+      "source": "The novel coronavirus canonically utilizes the angiotensin-converting enzyme 2 (ACE2) receptor and the serine protease TMPRSS2 for cell entry.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established scientific knowledge about SARS-CoV-2 cell entry mechanisms, widely accepted in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:27:31.534669Z"
+    },
+    {
+      "id": "fa4cd155-680d-4a20-8818-0dc0ee250dcb",
+      "content_id": "f00e3e4e-8aee-4004-b17c-bd8de7b86eca",
+      "claim_id": "C4",
+      "claim": "Co-transcription of ACE2 and TMPRSS2 is negligible in the placenta.",
+      "claim_type": "EXPLICIT",
+      "source": "We report that co-transcription of ACE2 and TMPRSS2 is negligible in the placenta, thus not a likely path of vertical transmission for SARS-CoV-2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the study based on single-cell/nuclei RNA-sequencing data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:27:31.534669Z"
+    },
+    {
+      "id": "a496c408-d01f-4b41-8738-3887d2a9b834",
+      "content_id": "f00e3e4e-8aee-4004-b17c-bd8de7b86eca",
+      "claim_id": "C5",
+      "claim": "Receptors for Zika virus and cytomegalovirus are highly expressed by placental cell types.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, receptors for Zika virus and cytomegalovirus, which cause congenital infections, are highly expressed by placental cell types.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the study's data analysis comparing expression of different viral receptors.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:27:31.534669Z"
+    },
+    {
+      "id": "6978576f-e2bf-48f2-b05f-c2ab40a3452d",
+      "content_id": "f00e3e4e-8aee-4004-b17c-bd8de7b86eca",
+      "claim_id": "C6",
+      "claim": "The placenta minimally expresses the canonical cell-entry mediators for SARS-CoV-2.",
+      "claim_type": "EXPLICIT",
+      "source": "These data show that the placenta minimally expresses the canonical cell-entry mediators for SARS-CoV-2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main conclusion of the study based on the RNA-sequencing data presented.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:27:31.534669Z"
+    },
+    {
+      "id": "e9cd0a90-b5ea-4c4f-89fe-99f4856e2e0c",
+      "content_id": "f00e3e4e-8aee-4004-b17c-bd8de7b86eca",
+      "claim_id": "C7",
+      "claim": "The placenta serves as the lungs, gut, kidneys, and liver of the fetus.",
+      "claim_type": "EXPLICIT",
+      "source": "The placenta serves as the lungs, gut, kidneys, and liver of the fetus (Burton and Jauniaux, 2015; Maltepe and Fisher, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:27:31.534669Z"
+    },
+    {
+      "id": "38a14325-0ac0-4e8f-96af-105a3b2c18b1",
+      "content_id": "f00e3e4e-8aee-4004-b17c-bd8de7b86eca",
+      "claim_id": "C8",
+      "claim": "The placenta has major biological actions that modulate maternal physiology.",
+      "claim_type": "EXPLICIT",
+      "source": "This fetal organ also has major biological actions that modulate maternal physiology (Burton and Jauniaux, 2015; Sasaki and Norwitz, 2011; Taglauer et al., 2014; Fitzgerald et al., 2018)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by multiple citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:27:31.534669Z"
+    },
+    {
+      "id": "b22775db-cd71-4476-99c3-1a76ca6b9397",
+      "content_id": "f00e3e4e-8aee-4004-b17c-bd8de7b86eca",
+      "claim_id": "C9",
+      "claim": "The placenta and chorioamniotic membranes shield the fetus against microbes from hematogenous dissemination and from invading the amniotic cavity.",
+      "claim_type": "EXPLICIT",
+      "source": "and, importantly, together with the extraplacental chorioamniotic membranes, shield the fetus against microbes from hematogenous dissemination and from invading the amniotic cavity (Ander et al., 2019; Kwon et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:27:31.534669Z"
+    },
+    {
+      "id": "a7fdbb97-5449-490b-bc37-87865d3590f1",
+      "content_id": "f00e3e4e-8aee-4004-b17c-bd8de7b86eca",
+      "claim_id": "C10",
+      "claim": "Most pathogens that cause hematogenous infections in the mother cannot reach the fetus due to protective mechanisms provided by placental trophoblast cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, most pathogens that cause hematogenous infections in the mother cannot reach the fetus, which is largely due to the potent protective mechanisms provided by placental cells (i.e. trophoblast cells: syncytiotrophoblasts and cytotrophoblasts) (Parry et al., 1997; Koi et al., 2002; Arora et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:27:31.534669Z"
+    },
+    {
+      "id": "b3316909-c26e-4a7a-8d87-11cb73de4870",
+      "content_id": "f00e3e4e-8aee-4004-b17c-bd8de7b86eca",
+      "claim_id": "C11",
+      "claim": "Toxoplasma gondii, Rubella virus, herpesvirus (HSV), cytomegalovirus (CMV), and Zika virus are capable of crossing the placenta and infecting the fetus, causing congenital disease.",
+      "claim_type": "EXPLICIT",
+      "source": "Yet, some of these pathogens such as Toxoplasma gondii, Rubella virus, herpesvirus (HSV), cytomegalovirus (CMV), and Zika virus (ZIKV), among others, are capable of crossing the placenta and infecting the fetus, thus causing congenital disease (Stegmann and Carey, 2002; Coyne and Lazear, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:27:31.534669Z"
+    },
+    {
+      "id": "94139b6a-d91d-4cdd-90bf-91ae3b36a0ac",
+      "content_id": "f00e3e4e-8aee-4004-b17c-bd8de7b86eca",
+      "claim_id": "C12",
+      "claim": "A local outbreak of pneumonia caused by SARS-CoV-2 was reported in Wuhan, China in December 2019.",
+      "claim_type": "EXPLICIT",
+      "source": "In December 2019, a local outbreak of pneumonia caused by a novel coronavirus\u2014severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2)\u2014was reported in Wuhan (Hubei, China) (Dong et al., 2020a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to prior literature documenting the outbreak.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:27:31.534669Z"
+    },
+    {
+      "id": "430c21e5-38d6-49e9-8199-a5c660219651",
+      "content_id": "f00e3e4e-8aee-4004-b17c-bd8de7b86eca",
+      "claim_id": "C13",
+      "claim": "After exposure to SARS-CoV-2, susceptible individuals can develop COVID-19 with symptoms ranging from fever and cough to severe respiratory illness, and in some cases it is life-threatening.",
+      "claim_type": "EXPLICIT",
+      "source": "After exposure to SARS-COV-2, susceptible individuals can develop coronavirus disease 2019 (COVID-19) consisting of symptoms that may range from fever and cough to severe respiratory illness; in some cases, COVID-19 is life-threatening (Centers for Disease Control and Prevention, 2020a; Wadman, 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to CDC and other sources.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:27:31.534669Z"
+    },
+    {
+      "id": "18dfb00e-383f-4ae2-a16a-a2266b1cbcec",
+      "content_id": "f00e3e4e-8aee-4004-b17c-bd8de7b86eca",
+      "claim_id": "C14",
+      "claim": "More than 10 million COVID-19 cases have been confirmed, accounting for more than 500,000 deaths.",
+      "claim_type": "EXPLICIT",
+      "source": "Since the onset of the outbreak, more than 10 million COVID-19 cases have been confirmed, accounting for more than 500,000 deaths (COVID-19, 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to COVID-19 data sources.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:27:31.534669Z"
+    },
+    {
+      "id": "2869e57b-9aff-4f0d-a2f5-472d16fcc74a",
+      "content_id": "f00e3e4e-8aee-4004-b17c-bd8de7b86eca",
+      "claim_id": "C15",
+      "claim": "By April 2019, New York and Michigan were the most severely affected states in the United States.",
+      "claim_type": "EXPLICIT",
+      "source": "By April 2019, the states of New York and Michigan were the most severely affected (COVID-19, 2020)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to COVID-19 data sources.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:27:31.534669Z"
+    },
+    {
+      "id": "5989558d-2fec-4c7b-b83a-f957349ccced",
+      "content_id": "f00e3e4e-8aee-4004-b17c-bd8de7b86eca",
+      "claim_id": "C16",
+      "claim": "The metropolitan areas of New York City and Detroit possess large populations subject to health disparities including limited access to health care, chronic exposure to pollution, and pre-existing cardiovascular conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "given that the metropolitan areas of New York City and Detroit possess large populations subject to health disparities that include limited access to health care, chronic exposure to pollution, and pre-existing cardiovascular conditions (Centers for Disease Control and Prevention, 2020b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to CDC sources.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:27:31.534669Z"
+    },
+    {
+      "id": "c6e3429f-793b-48f3-8a17-1a18b996c4ae",
+      "content_id": "f00e3e4e-8aee-4004-b17c-bd8de7b86eca",
+      "claim_id": "C17",
+      "claim": "Pregnant women and their fetuses represent a potential high-risk population in light of the COVID-19 outbreak.",
+      "claim_type": "EXPLICIT",
+      "source": "Pregnant women and their fetuses represent a potential high-risk population in light of the COVID-19 outbreak (Dashraath et al., 2020; Liu et al., 2020; Rasmussen et al., 2020; Ashokka et al., 2020; Della Gatta et al., 2020; Weber LeBrun et al., 2020; Tekbali, 2020; Vintzileos, 2020; Lokken, 2020)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by multiple citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:27:31.534669Z"
+    },
+    {
+      "id": "659bee64-bc00-479d-b2c2-05d5181ee819",
+      "content_id": "f00e3e4e-8aee-4004-b17c-bd8de7b86eca",
+      "claim_id": "C18",
+      "claim": "Viral infections such as influenza show increased severity in pregnant women.",
+      "claim_type": "EXPLICIT",
+      "source": "given that viral infections such as influenza (Neuzil et al., 1998; Lindsay et al., 2006; Jamieson et al., 2006; Cervantes-Gonzalez and Launay, 2010; Pandemic H1N1 Influenza in Pregnancy Working Group et al., 2010; Mosby et al., 2011; Pazos et al., 2012; Raj et al., 2014), varicella (Triebwasser et al., 1967; Paryani and Arvin, 1986; Esmonde et al., 1989; Haake et al., 1990; Swamy and Dotters-Katz, 2019), Ebola (Olgun, 2018; Muehlenbachs et al., 2017), and measles (Christensen et al., 1954; Atmar et al., 1992) show increased severity in this physiological state.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by multiple citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:27:31.534669Z"
+    },
+    {
+      "id": "0624c22d-a59b-44b5-b2f3-2a458fe089f9",
+      "content_id": "f00e3e4e-8aee-4004-b17c-bd8de7b86eca",
+      "claim_id": "C19",
+      "claim": "SARS-CoV-1 and MERS-CoV have severe effects in both the mother and the fetus, but vertical transmission has not been proven.",
+      "claim_type": "EXPLICIT",
+      "source": "Other coronaviruses, such as SARS-CoV-1 and MERS-CoV, have severe effects in both the mother and the fetus, but vertical transmission has not been proven (Wong et al., 2004; Ng et al., 2006; Alserehi et al., 2016; Jeong et al., 2017)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:27:31.534669Z"
+    },
+    {
+      "id": "78a1f34f-9974-46f2-9492-eab3e44be6b3",
+      "content_id": "f00e3e4e-8aee-4004-b17c-bd8de7b86eca",
+      "claim_id": "C20",
+      "claim": "Only ~15% of pregnant women test positive for SARS-CoV-2 and a small fraction of them are symptomatic.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast with the above-mentioned viral infections, only ~15% of pregnant women test positive for SARS-CoV-2 and a small fraction of them are symptomatic (Sutton et al., 2020)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:27:31.534669Z"
+    },
+    {
+      "id": "8974b55b-6e01-49cd-8745-2f8a697ba8f0",
+      "content_id": "f00e3e4e-8aee-4004-b17c-bd8de7b86eca",
+      "claim_id": "C21",
+      "claim": "Most pregnant women with SARS-CoV-2 experience only a mild illness.",
+      "claim_type": "EXPLICIT",
+      "source": "most of whom experience only a mild illness (Chen et al., 2020a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:27:31.534669Z"
+    },
+    {
+      "id": "289eaf0f-2abe-4867-b01d-d23879c88246",
+      "content_id": "f00e3e4e-8aee-4004-b17c-bd8de7b86eca",
+      "claim_id": "C22",
+      "claim": "The clinical characteristics of pregnant women with COVID-19 appear similar to those of non-pregnant adults.",
+      "claim_type": "EXPLICIT",
+      "source": "Consequently, the clinical characteristics of pregnant women with COVID-19 appear similar to those of non-pregnant adults (Yu et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:27:31.534669Z"
+    },
+    {
+      "id": "7731fe0b-6bab-45c5-be65-35fd1cac8a41",
+      "content_id": "f00e3e4e-8aee-4004-b17c-bd8de7b86eca",
+      "claim_id": "C23",
+      "claim": "Severe COVID-19 can lead to maternal death.",
+      "claim_type": "EXPLICIT",
+      "source": "Yet, recent reports have shown that severe COVID-19 can lead to maternal death (Hantoushzadeh et al., 2020; Blitz, 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:27:31.534669Z"
+    },
+    {
+      "id": "c0eb5819-f667-4b22-a346-1448c222eed9",
+      "content_id": "f00e3e4e-8aee-4004-b17c-bd8de7b86eca",
+      "claim_id": "C24",
+      "claim": "No conclusive evidence of vertical transmission of SARS-CoV-2 has been generated.",
+      "claim_type": "EXPLICIT",
+      "source": "However, thus far, no conclusive evidence of vertical transmission has been generated (Weber LeBrun et al., 2020; Chen et al., 2020b; Stower, 2020; Lamouroux et al., 2020; Yan et al., 2020; Siberry et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by multiple citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:27:31.534669Z"
+    },
+    {
+      "id": "4cf91dc3-7615-4e6a-af40-5200a7895862",
+      "content_id": "f00e3e4e-8aee-4004-b17c-bd8de7b86eca",
+      "claim_id": "C25",
+      "claim": "Infants born to mothers with COVID-19 test negative for SARS-CoV-2 and do not develop serious clinical symptoms.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistently, infants born to mothers with COVID-19 test negative for SARS-CoV-2, do not develop serious clinical symptoms (e.g., fever, cough, diarrhea, or abnormal radiologic or hematologic evidence), and are promptly discharged from the hospital (Chen et al., 2020c).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:27:31.534669Z"
+    },
+    {
+      "id": "415065a6-5f5c-4294-95fb-2e9f3bd57aeb",
+      "content_id": "f00e3e4e-8aee-4004-b17c-bd8de7b86eca",
+      "claim_id": "C26",
+      "claim": "A small fraction of neonates born to women with COVID-19 tested positive for the virus at 1-4 days of life.",
+      "claim_type": "EXPLICIT",
+      "source": "Case reports have shown that a small fraction of neonates born to women with COVID-19 tested positive for the virus at 1\u20134 days of life (Zeng et al., 2020a; Alzamora et al., 2020)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to case reports.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:27:31.534669Z"
+    },
+    {
+      "id": "d6189cce-989a-4891-8cb8-c77cd51cf321",
+      "content_id": "f00e3e4e-8aee-4004-b17c-bd8de7b86eca",
+      "claim_id": "C27",
+      "claim": "Neonates who tested positive for SARS-CoV-2 at 1-4 days of life subsequently tested negative on day 6-7.",
+      "claim_type": "EXPLICIT",
+      "source": "yet these neonates subsequently tested negative on day 6-7 (Zeng et al., 2020a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to a case report.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:27:31.534669Z"
+    },
+    {
+      "id": "27b73c37-0ddf-4c4b-af4d-23aa19401b59",
+      "content_id": "f00e3e4e-8aee-4004-b17c-bd8de7b86eca",
+      "claim_id": "C28",
+      "claim": "A few neonates born to mothers with COVID-19 had increased concentrations of SARS-CoV-2 IgM and IgG.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, serological studies revealed that a few neonates born to mothers with COVID-19 had increased concentrations of SARS-CoV-2 immunoglobulin (Ig)M as well as IgG (Zeng et al., 2020b; Dong et al., 2020b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:27:31.534669Z"
+    },
+    {
+      "id": "60c39bc9-b93b-4b8a-906e-7d8b7a41adaa",
+      "content_id": "f00e3e4e-8aee-4004-b17c-bd8de7b86eca",
+      "claim_id": "C29",
+      "claim": "Elevated concentrations of IgG in neonates are likely due to passive transfer from the mother to the fetus across the placenta.",
+      "claim_type": "EXPLICIT",
+      "source": "The elevated concentrations of IgG are likely due to the passive transfer of this immunoglobulin from the mother to the fetus across the placenta.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on established knowledge about IgG transfer across the placenta.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:27:31.534669Z"
+    },
+    {
+      "id": "e2e47e91-15cc-4dbe-bd26-1efa09dcea56",
+      "content_id": "f00e3e4e-8aee-4004-b17c-bd8de7b86eca",
+      "claim_id": "C30",
+      "claim": "Increased levels of IgM in neonates suggest that the fetus was infected with SARS-CoV-2 because IgM cannot cross the placenta due to its large molecular weight.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the increased levels of IgM suggest that the fetus was infected with SARS-CoV-2 given that this immunoglobulin cannot cross the placenta as a result of its large molecular weight.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on established knowledge about IgM properties and placental transfer.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:27:31.534669Z"
+    },
+    {
+      "id": "3f234b9d-a8eb-4e6a-b645-d15c8d285d95",
+      "content_id": "f00e3e4e-8aee-4004-b17c-bd8de7b86eca",
+      "claim_id": "C31",
+      "claim": "All neonates with elevated IgM tested negative for SARS-CoV-2 and did not present any symptoms.",
+      "claim_type": "EXPLICIT",
+      "source": "Nonetheless, all neonates included in the above-mentioned studies tested negative for the virus and did not present any symptoms (Zeng et al., 2020b; Dong et al., 2020b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:27:31.534669Z"
+    },
+    {
+      "id": "9cf2115f-f233-405a-9560-06d028b1fc0c",
+      "content_id": "f00e3e4e-8aee-4004-b17c-bd8de7b86eca",
+      "claim_id": "C32",
+      "claim": "SARS-CoV-2 RNA has been detected in amniotic fluid from a woman who died of COVID-19.",
+      "claim_type": "EXPLICIT",
+      "source": "In the first case report, the viral RNA was detected in amniotic fluid from a woman who was severely affected and died of COVID-19 (Zamaniyan, 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to a case report.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:27:31.534669Z"
+    },
+    {
+      "id": "e003d6e3-e444-471d-8ae6-f2e82273a153",
+      "content_id": "f00e3e4e-8aee-4004-b17c-bd8de7b86eca",
+      "claim_id": "C33",
+      "claim": "A premature neonate from a woman who died of COVID-19 tested negative for SARS-CoV-2 after delivery but 24 hr later tested positive.",
+      "claim_type": "EXPLICIT",
+      "source": "The premature neonate tested negative for SARS-CoV-2 after delivery but 24 hr later tested positive (Zamaniyan, 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to a case report.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:27:31.534669Z"
+    },
+    {
+      "id": "ff2abb76-8452-42bb-866f-4a50b0dbc341",
+      "content_id": "f00e3e4e-8aee-4004-b17c-bd8de7b86eca",
+      "claim_id": "C34",
+      "claim": "SARS-CoV-2 RNA was detected in the placenta and umbilical cord from a woman with severe pre-eclampsia and placental abruption, yet none of the fetal tissues tested positive.",
+      "claim_type": "EXPLICIT",
+      "source": "In the second case report, the viral RNA was detected in the placenta and umbilical cord from a woman with severe pre-eclampsia, placental abruption, and other complications, yet none of the fetal tissues tested positive (Hosier, 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to a case report.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:27:31.534669Z"
+    },
+    {
+      "id": "495dc58f-4826-4fd2-b261-e1cf23539d33",
+      "content_id": "f00e3e4e-8aee-4004-b17c-bd8de7b86eca",
+      "claim_id": "C35",
+      "claim": "Cell entry and spread of SARS-CoV-2 are widely thought to depend on the ACE2 receptor.",
+      "claim_type": "EXPLICIT",
+      "source": "Cell entry and the spread of SARS-CoV-2 are widely thought to depend on the angiotensin-converting enzyme 2 (ACE2) receptor (Shang et al., 2020; Wang et al., 2020a)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:27:31.534669Z"
+    },
+    {
+      "id": "224d974e-3018-450c-884e-14c3c6b99374",
+      "content_id": "f00e3e4e-8aee-4004-b17c-bd8de7b86eca",
+      "claim_id": "C36",
+      "claim": "Cell entry and spread of SARS-CoV-2 are widely thought to depend on the serine protease TMPRSS2.",
+      "claim_type": "EXPLICIT",
+      "source": "Cell entry and the spread of SARS-CoV-2 are widely thought to depend on the angiotensin-converting enzyme 2 (ACE2) receptor (Shang et al., 2020; Wang et al., 2020a) and the serine protease TMPRSS2 (Hoffmann et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:27:31.534669Z"
+    },
+    {
+      "id": "0afe358d-2e8d-4ade-baf5-4fc0e6517887",
+      "content_id": "f00e3e4e-8aee-4004-b17c-bd8de7b86eca",
+      "claim_id": "C37",
+      "claim": "Very few cells co-express ACE2 and TMPRSS2 in the human placenta throughout the three trimesters of pregnancy.",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, we found that very few cells co-express ACE2 and TMPRSS2 (Figure 1A and B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding of the study based on single-cell RNA-sequencing data analysis and shown in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:27:31.534669Z"
+    },
+    {
+      "id": "6b537fcf-f1e7-48d3-9d13-d338afb3e8f3",
+      "content_id": "f00e3e4e-8aee-4004-b17c-bd8de7b86eca",
+      "claim_id": "C38",
+      "claim": "Using a threshold of one transcript per cell, only four cells with co-expression of ACE2 and TMPRSS2 were detected in any of the three trimesters, resulting in an estimated <1/10,000 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Using a very permissive threshold of expression of one transcript per cell, only four cells with co-expression were detected in any of the three trimesters, resulting in an estimated <1/10,000 cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative finding from the study's data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:27:31.534669Z"
+    },
+    {
+      "id": "07e8cf16-b218-4873-994e-b814985692c4",
+      "content_id": "f00e3e4e-8aee-4004-b17c-bd8de7b86eca",
+      "claim_id": "C39",
+      "claim": "The first-trimester data showing minimal expression of ACE2 at the human maternal-fetal interface are in agreement with a prior report.",
+      "claim_type": "EXPLICIT",
+      "source": "Our first-trimester data are in agreement with a prior report showing minimal expression of ACE2 at the human maternal-fetal interface (Zheng et al., 2020)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement compares the study's findings to prior literature.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:27:31.534669Z"
+    },
+    {
+      "id": "a5409538-ace5-43e2-a08c-2ad8bea7ef1d",
+      "content_id": "f00e3e4e-8aee-4004-b17c-bd8de7b86eca",
+      "claim_id": "C40",
+      "claim": "Co-expression of ACE2 and TMPRSS2 was minimally detected in the chorioamniotic membranes.",
+      "claim_type": "EXPLICIT",
+      "source": "Again, co-expression of ACE2 and TMPRSS2 was minimally detected in the chorioamniotic membranes (Figure 1A and B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the study's data analysis shown in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:27:31.534669Z"
+    },
+    {
+      "id": "9fdd560a-015a-419f-addd-ae45e4b90b01",
+      "content_id": "f00e3e4e-8aee-4004-b17c-bd8de7b86eca",
+      "claim_id": "C41",
+      "claim": "Reported scRNA-seq studies of the human placenta contain a low fraction of syncytiotrophoblast cells due to dissociation bias.",
+      "claim_type": "EXPLICIT",
+      "source": "This is likely the reason why the reported scRNA-seq studies of the human placenta contain a low fraction of syncytiotrophoblast cells [STB, multinucleated cells forming the outermost fetal component of the placenta in direct contact with the maternal circulation (i.e., intervillous space)] (Vento-Tormo et al., 2018; Pique-Regi et al., 2019; Tsang et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on technical limitations of scRNA-seq and citations to prior studies.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:27:31.534669Z"
+    },
+    {
+      "id": "d1c8082a-379f-4c69-a36b-ebcc088fdd7a",
+      "content_id": "f00e3e4e-8aee-4004-b17c-bd8de7b86eca",
+      "claim_id": "C42",
+      "claim": "Single-nucleus RNA-seq reduces dissociation bias against large cells.",
+      "claim_type": "EXPLICIT",
+      "source": "To address this possibility, we prepared single-nucleus suspensions of the placental tissues (including the decidua basalis) and performed single-nuclear RNAseq (snRNA-seq), which reduces the dissociation bias against large cells (Wu et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to prior literature about snRNA-seq methodology.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:27:31.534669Z"
+    },
+    {
+      "id": "a4626b40-5a0d-4730-a52a-bb7aab4ff8ce",
+      "content_id": "f00e3e4e-8aee-4004-b17c-bd8de7b86eca",
+      "claim_id": "C43",
+      "claim": "snRNA-seq is compatible with biobank-frozen samples.",
+      "claim_type": "EXPLICIT",
+      "source": "An important advantage of snRNA-seq is its compatibility with biobank-frozen samples",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about snRNA-seq methodology.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:27:31.534669Z"
+    },
+    {
+      "id": "a37d5fee-ffd8-4310-b67f-4fa713f889bc",
+      "content_id": "f00e3e4e-8aee-4004-b17c-bd8de7b86eca",
+      "claim_id": "C44",
+      "claim": "This study represents the first snRNA-seq study of the placental tissues.",
+      "claim_type": "EXPLICIT",
+      "source": "This represents the first snRNA-seq study of the placental tissues.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a claim about the novelty of the study's methodology.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:27:31.534669Z"
+    },
+    {
+      "id": "b43f8f83-da6c-468c-8454-3d26e62a40d6",
+      "content_id": "f00e3e4e-8aee-4004-b17c-bd8de7b86eca",
+      "claim_id": "C45",
+      "claim": "A larger fraction of syncytiotrophoblast cells/nuclei was observed using snRNA-seq compared to scRNA-seq.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, a larger fraction of STB cells/nuclei was observed using snRNA-seq compared to scRNA-seq (Figure 1A and Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the study's data analysis shown in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:27:31.534669Z"
+    },
+    {
+      "id": "3e7c14e8-5fad-4d02-ad41-eb1d2b5f4eba",
+      "content_id": "f00e3e4e-8aee-4004-b17c-bd8de7b86eca",
+      "claim_id": "C46",
+      "claim": "The snRNA-seq data demonstrated that co-expression of ACE2 and TMPRSS2 is unlikely in the placental tissues.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with the scRNAseq analyses, the snRNAseq data demonstrated that co-expression of ACE2 and TMPRSS2 is unlikely in the placental tissues (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the study's snRNA-seq data analysis shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:27:31.534669Z"
+    },
+    {
+      "id": "df7c600a-9fc7-4631-a0a7-90e62e06bf58",
+      "content_id": "f00e3e4e-8aee-4004-b17c-bd8de7b86eca",
+      "claim_id": "C47",
+      "claim": "snRNA-seq has a higher background compared to scRNA-seq.",
+      "claim_type": "EXPLICIT",
+      "source": "A limitation of snRNA-seq is that it has a higher background compared to scRNAseq",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about the technical limitations of snRNA-seq.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:27:31.534669Z"
+    },
+    {
+      "id": "edef16d3-54b4-4cc2-a908-7353c3653a3e",
+      "content_id": "f00e3e4e-8aee-4004-b17c-bd8de7b86eca",
+      "claim_id": "C48",
+      "claim": "ACE2 was detected above background in most third-trimester placental tissue samples in microarray datasets.",
+      "claim_type": "EXPLICIT",
+      "source": "These analyses of bulk gene expression data revealed that, while ACE2 was detected above background in most of the samples, TMPRSS2 was largely undetected (Supplementary file 3).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the study's analysis of microarray data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:27:31.534669Z"
+    },
+    {
+      "id": "762b5540-d6e8-4157-909d-f79ac409b44d",
+      "content_id": "f00e3e4e-8aee-4004-b17c-bd8de7b86eca",
+      "claim_id": "C49",
+      "claim": "TMPRSS2 was largely undetected in third-trimester placental tissues in microarray datasets.",
+      "claim_type": "EXPLICIT",
+      "source": "These analyses of bulk gene expression data revealed that, while ACE2 was detected above background in most of the samples, TMPRSS2 was largely undetected (Supplementary file 3).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the study's analysis of microarray data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:27:31.534669Z"
+    },
+    {
+      "id": "b489c776-c87a-405e-874e-0a8fb1ed2a8c",
+      "content_id": "f00e3e4e-8aee-4004-b17c-bd8de7b86eca",
+      "claim_id": "C50",
+      "claim": "The human placental tissues negligibly co-express ACE2 and TMPRSS2.",
+      "claim_type": "EXPLICIT",
+      "source": "Collectively, these results consistently indicate that the human placental tissues negligibly co-express ACE2 and TMPRSS2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on multiple lines of data from the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:27:31.534669Z"
+    },
+    {
+      "id": "8c4d9b60-0a75-4ed4-8899-e4b933f2fafd",
+      "content_id": "f00e3e4e-8aee-4004-b17c-bd8de7b86eca",
+      "claim_id": "C51",
+      "claim": "The reduced expression of ACE2 and TMPRSS2 in placenta contrasts with the high expression in nasal goblet and ciliated cells within the human airways, lungs, and gastrointestinal tract.",
+      "claim_type": "EXPLICIT",
+      "source": "This reduced expression contrasts with the high expression of ACE2 and TMPRSS2 in nasal goblet and ciliated cells within the human airways, lungs, and gastrointestinal tract, which are targeted during COVID-19 (Muus, 2020; Wang, 2020b; HCA Lung Biological Network et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement compares the study's findings to prior literature about expression in other tissues.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:27:31.534669Z"
+    },
+    {
+      "id": "ac68c724-4570-461a-80c4-7a19d8a0dc1d",
+      "content_id": "f00e3e4e-8aee-4004-b17c-bd8de7b86eca",
+      "claim_id": "C52",
+      "claim": "Vertical transmission of SARS-CoV-2 is unlikely to occur unless facilitated by other concomitant pathological conditions resulting in a breach of the maternal-fetal crosstalk.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, our results suggest that vertical transmission of SARS-CoV-2 is unlikely to occur unless facilitated by other concomitant pathological conditions resulting in a breach of the maternal-fetal crosstalk.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the study's data with speculation about possible exceptions.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:27:31.534669Z"
+    },
+    {
+      "id": "a42b973a-48c3-4098-a444-a326cf92f3f4",
+      "content_id": "f00e3e4e-8aee-4004-b17c-bd8de7b86eca",
+      "claim_id": "C53",
+      "claim": "SARS-CoV-2 could potentially infect the human placenta by using alternate entry routes while interacting with other proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "There is a possibility, however, that SARS-CoV-2 could infect the human placenta by using alternate entry routes while interacting with other proteins (Gordon et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about alternative mechanisms, supported by a citation.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:27:31.534669Z"
+    },
+    {
+      "id": "4251bb22-a9e9-48fb-93e5-6b93214ee91e",
+      "content_id": "f00e3e4e-8aee-4004-b17c-bd8de7b86eca",
+      "claim_id": "C54",
+      "claim": "In vitro studies suggest that BSG provides an alternate entry for SARS-CoV-2 when ACE2 and TMPRSS2 are not expressed.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, in vitro studies suggest that BSG (Basigin, also called CD147 or EMMPRIN, transmembrane glycoprotein belonging to the immunoglobulin superfamily) provides an alternate entry for SARS-CoV-2 when ACE2 and TMPRSS2 are not expressed (Blanco-Melo et al., 2020; Wang, 2020c; Ulrich and Pillat, 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:27:31.534669Z"
+    },
+    {
+      "id": "307d85f9-87e6-44e7-a371-06e1707be162",
+      "content_id": "f00e3e4e-8aee-4004-b17c-bd8de7b86eca",
+      "claim_id": "C55",
+      "claim": "The placenta and chorioamniotic membranes expressed high levels of BSG throughout pregnancy.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the placenta and chorioamniotic membranes expressed high levels of BSG throughout pregnancy (Figure 2, CoV-Alt)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the study's data analysis shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:27:31.534669Z"
+    },
+    {
+      "id": "27a58446-c537-432a-b998-af0c74f898d2",
+      "content_id": "f00e3e4e-8aee-4004-b17c-bd8de7b86eca",
+      "claim_id": "C56",
+      "claim": "BSG is widely expressed in all human tissues and cell types.",
+      "claim_type": "EXPLICIT",
+      "source": "yet this transcript is also widely expressed in all human tissues and cell types (Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the study's analysis shown in Figure 2\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:27:31.534669Z"
+    },
+    {
+      "id": "1c0ca55d-e816-4cf3-a212-c8efdacd6045",
+      "content_id": "f00e3e4e-8aee-4004-b17c-bd8de7b86eca",
+      "claim_id": "C57",
+      "claim": "BSG alone is unlikely to be a sufficient requirement for SARS-CoV-2 viral entry.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, it is unlikely that this protein alone is a sufficient requirement for SARS-CoV-2 viral entry, and other proteins may be required to explain the cell type primarily affected by COVID-19.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the widespread expression of BSG and the specific cell tropism of SARS-CoV-2.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:27:31.534669Z"
+    },
+    {
+      "id": "b8850026-d890-467b-8073-08740367b8e5",
+      "content_id": "f00e3e4e-8aee-4004-b17c-bd8de7b86eca",
+      "claim_id": "C58",
+      "claim": "Cathepsin L (CSTL) and FURIN may function as proteases priming the SARS-CoV-2 S protein.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, cathepsin L (CSTL) and FURIN may also function as proteases priming the SARS-CoV-2 S protein (Lukassen et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:27:31.534669Z"
+    },
+    {
+      "id": "76e9806e-56d8-4c69-940f-49122b0012da",
+      "content_id": "f00e3e4e-8aee-4004-b17c-bd8de7b86eca",
+      "claim_id": "C59",
+      "claim": "CSTL and FURIN are highly expressed by the placental tissues throughout gestation.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that these proteases are highly expressed by the placental tissues throughout gestation (Figure 2, CoV-Alt).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the study's data analysis shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:27:31.534669Z"
+    },
+    {
+      "id": "6bbada4b-7ac3-491e-9761-bfc0d400c222",
+      "content_id": "f00e3e4e-8aee-4004-b17c-bd8de7b86eca",
+      "claim_id": "C60",
+      "claim": "CSTL and FURIN may not provide sufficient levels of priming by themselves when tested with SARS-CoV-1.",
+      "claim_type": "EXPLICIT",
+      "source": "Nevertheless, these proteases may not provide sufficient levels of priming by themselves (Shirato et al., 2017; Shirato et al., 2018; Iwata-Yoshikawa et al., 2019) when tested with SARS-CoV-1",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to prior literature about SARS-CoV-1.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:27:31.534669Z"
+    },
+    {
+      "id": "aa78f8c5-f18f-42ec-84c3-318147388d88",
+      "content_id": "f00e3e4e-8aee-4004-b17c-bd8de7b86eca",
+      "claim_id": "C61",
+      "claim": "The placental tissues are enriched in maternal and fetal macrophages.",
+      "claim_type": "EXPLICIT",
+      "source": "Given that the placental tissues are enriched in maternal and fetal macrophages (Pique-Regi et al., 2019)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:27:31.534669Z"
+    },
+    {
+      "id": "bd260909-095a-4381-9455-2284fd7fa8d2",
+      "content_id": "f00e3e4e-8aee-4004-b17c-bd8de7b86eca",
+      "claim_id": "C62",
+      "claim": "A subset of macrophages expressing sialoadhesin (SIGLEC1) can contribute to viral spread during SARS-CoV-2 infection.",
+      "claim_type": "EXPLICIT",
+      "source": "and that a subset of these immune cells expressing sialoadhesin (SIGLEC1, also known as CD169) can contribute to viral spread during SARS-CoV-2 infection (Chen, 2020; Park, 2020)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:27:31.534669Z"
+    },
+    {
+      "id": "6f2e8e3e-d3da-4dd1-b392-c836751e46b1",
+      "content_id": "f00e3e4e-8aee-4004-b17c-bd8de7b86eca",
+      "claim_id": "C63",
+      "claim": "SIGLEC1 was expressed by macrophages in the placenta and chorioamniotic membranes and, to a lesser extent, in T cells.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, SIGLEC1 was expressed by macrophages in the placenta and chorioamniotic membranes and, to a lesser extent, in T cells (Figure 2, CoV-Alt).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the study's data analysis shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:27:31.534669Z"
+    },
+    {
+      "id": "2be41911-2853-447f-a7db-14c1c81b7089",
+      "content_id": "f00e3e4e-8aee-4004-b17c-bd8de7b86eca",
+      "claim_id": "C64",
+      "claim": "Even if the virus could infect placental/decidual macrophages expressing SIGLEC1, this is not sufficient for viral spreading.",
+      "claim_type": "EXPLICIT",
+      "source": "However, even if the virus could infect the placental/decidual macrophages expressing SIGLEC1, this is not sufficient for viral spreading.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about the requirements for viral spreading.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:27:31.534669Z"
+    },
+    {
+      "id": "325aaf9a-dda4-4311-8745-de2a60669660",
+      "content_id": "f00e3e4e-8aee-4004-b17c-bd8de7b86eca",
+      "claim_id": "C65",
+      "claim": "ADAM17 is a metalloproteinase that competes with TMPRSS2 in ACE2 processing.",
+      "claim_type": "EXPLICIT",
+      "source": "The expression of ADAM17 was also investigated in the placental tissues as this metalloproteinase competes with TMPRSS2 in ACE2 processing (Heurich et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:27:31.534669Z"
+    },
+    {
+      "id": "3ea4d2ed-2dfc-4615-853d-7819b831afeb",
+      "content_id": "f00e3e4e-8aee-4004-b17c-bd8de7b86eca",
+      "claim_id": "C66",
+      "claim": "The placenta and chorioamniotic membranes highly expressed ADAM17.",
+      "claim_type": "EXPLICIT",
+      "source": "The placenta and chorioamniotic membranes highly expressed ADAM17 (Figure 2\u2014figure supplement 2)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the study's data analysis shown in Figure 2\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:27:31.534669Z"
+    },
+    {
+      "id": "9088d276-e5c1-4252-b292-50a9761fff3a",
+      "content_id": "f00e3e4e-8aee-4004-b17c-bd8de7b86eca",
+      "claim_id": "C67",
+      "claim": "Only cleavage by TMPRSS2 results in augmented SARS-S-driven cell entry.",
+      "claim_type": "EXPLICIT",
+      "source": "however, only cleavage by TMPRSS2 results in augmented SARS-S-driven cell entry (Heurich et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:27:31.534669Z"
+    },
+    {
+      "id": "a08988b0-0fb6-4c9c-928f-8a875a9b433d",
+      "content_id": "f00e3e4e-8aee-4004-b17c-bd8de7b86eca",
+      "claim_id": "C68",
+      "claim": "CoV-Alt molecules are likely to be less efficient than ACE2 and TMPRSS2 for SARS-CoV-2 infection.",
+      "claim_type": "EXPLICIT",
+      "source": "While these CoV-Alt molecules may be used for SARS-CoV-2 infection, they are likely to be less efficient than ACE2 and TMPRSS2, which are already targeted for antiviral interventions (Hoffmann et al., 2020)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the study's findings and a citation to prior literature.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:27:31.534669Z"
+    },
+    {
+      "id": "6e5da171-cd16-4352-9578-c59d0ff8c534",
+      "content_id": "f00e3e4e-8aee-4004-b17c-bd8de7b86eca",
+      "claim_id": "C69",
+      "claim": "Known receptors for CMV include NRP2, PDFGRA, and CD46.",
+      "claim_type": "EXPLICIT",
+      "source": "Known receptors for CMV include NRP2 (Martinez-Martin et al., 2018), PDFGRA (Martinez-Martin et al., 2018), and CD46 (Stein et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:27:31.534669Z"
+    },
+    {
+      "id": "5e6f853b-a365-4a75-bbea-56b34352ae11",
+      "content_id": "f00e3e4e-8aee-4004-b17c-bd8de7b86eca",
+      "claim_id": "C70",
+      "claim": "All CMV receptors (NRP2, PDFGRA, and CD46) were highly expressed in several placental cell types.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, all of these receptors were highly expressed in several placental cell types (Figure 2, CMV and Figure 2\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the study's data analysis shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:27:31.534669Z"
+    },
+    {
+      "id": "ec4e0fc2-b41e-4921-871c-0ef69070c889",
+      "content_id": "f00e3e4e-8aee-4004-b17c-bd8de7b86eca",
+      "claim_id": "C71",
+      "claim": "AXL is the preferred receptor for ZIKV.",
+      "claim_type": "EXPLICIT",
+      "source": "Next, we investigated the expression of the AXL receptor for ZIKV (Richard et al., 2017; Persaud et al., 2018)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:27:31.534669Z"
+    },
+    {
+      "id": "4041fc8f-1bf4-43cd-99d4-e574aa6ea6de",
+      "content_id": "f00e3e4e-8aee-4004-b17c-bd8de7b86eca",
+      "claim_id": "C72",
+      "claim": "AXL was highly expressed by the cells of the human placenta and chorioamniotic membranes throughout gestation.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with vertical transmission, AXL, the preferred receptor for ZIKV, was highly expressed by the cells of the human placenta and chorioamniotic membranes throughout gestation (Figure 2, ZIKV).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the study's data analysis shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:27:31.534669Z"
+    },
+    {
+      "id": "03b72929-ba73-4610-93c9-ee87ba1d882a",
+      "content_id": "f00e3e4e-8aee-4004-b17c-bd8de7b86eca",
+      "claim_id": "C73",
+      "claim": "The expression of CD209 was mainly found in the maternal and fetal macrophage subsets.",
+      "claim_type": "EXPLICIT",
+      "source": "The expression of CD209 was mainly found in the maternal and fetal macrophage subsets, as expected (Svensson et al., 2011; Swieboda et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the study's data analysis, consistent with citations to prior literature.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:27:31.534669Z"
+    },
+    {
+      "id": "e049f69d-4ed5-49f9-9b3e-f66949947547",
+      "content_id": "f00e3e4e-8aee-4004-b17c-bd8de7b86eca",
+      "claim_id": "C74",
+      "claim": "The expression of TYRO3 was low in placental tissues.",
+      "claim_type": "EXPLICIT",
+      "source": "Yet, the expression of TYRO3 was low (Figure 2\u2014figure supplement 2)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the study's data analysis shown in Figure 2\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:27:31.534669Z"
+    },
+    {
+      "id": "3557fb5b-f3c6-40e6-9dbf-6e21c8c37504",
+      "content_id": "f00e3e4e-8aee-4004-b17c-bd8de7b86eca",
+      "claim_id": "C75",
+      "claim": "TAM receptors are not essential for ZIKV infection.",
+      "claim_type": "EXPLICIT",
+      "source": "consistent with the view that TAM receptors are not essential for ZIKV infection (Hastings et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:27:31.534669Z"
+    },
+    {
+      "id": "7a02fd68-0048-4945-a665-438ece522f31",
+      "content_id": "f00e3e4e-8aee-4004-b17c-bd8de7b86eca",
+      "claim_id": "C76",
+      "claim": "SARS-CoV-2 is unlikely to infect the placenta and fetus since its canonical receptor and protease, ACE2 and TMPRSS2, are only minimally expressed by the human placenta throughout pregnancy.",
+      "claim_type": "EXPLICIT",
+      "source": "In conclusion, the single-cell transcriptomic analysis presented herein provides evidence that SARS-CoV-2 is unlikely to infect the placenta and fetus since its canonical receptor and protease, ACE2 and TMPRSS2, are only minimally expressed by the human placenta throughout pregnancy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main conclusion of the study based on the data presented.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:27:31.534669Z"
+    },
+    {
+      "id": "af6733af-c27c-46da-aea2-eb2c611c2b90",
+      "content_id": "f00e3e4e-8aee-4004-b17c-bd8de7b86eca",
+      "claim_id": "C77",
+      "claim": "SARS-CoV-2 receptors are not expressed by the chorioamniotic membranes in the third trimester.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, we showed that the SARS-CoV-2 receptors are not expressed by the chorioamniotic membranes in the third trimester.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the study's data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:27:31.534669Z"
+    },
+    {
+      "id": "9c4c4184-ee20-4e91-af9a-a226ace99c40",
+      "content_id": "f00e3e4e-8aee-4004-b17c-bd8de7b86eca",
+      "claim_id": "C78",
+      "claim": "Viral receptors utilized by CMV, ZIKV, and others are highly expressed by the human placental tissues.",
+      "claim_type": "EXPLICIT",
+      "source": "However, viral receptors utilized by CMV, ZIKV, and others are highly expressed by the human placental tissues.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the study's data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:27:31.534669Z"
+    },
+    {
+      "id": "ed8cb37e-1c8f-4089-8e37-de325dd82b5d",
+      "content_id": "f00e3e4e-8aee-4004-b17c-bd8de7b86eca",
+      "claim_id": "C79",
+      "claim": "The data indicate a low likelihood of placental infection and vertical transmission of SARS-CoV-2.",
+      "claim_type": "EXPLICIT",
+      "source": "While transcript levels do not always correlate with protein expression, our data indicate a low likelihood of placental infection and vertical transmission of SARS-CoV-2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the study's data with acknowledgment of limitations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:27:31.534669Z"
+    },
+    {
+      "id": "3b8ce481-be60-4f17-bfa0-4b204671ac62",
+      "content_id": "f00e3e4e-8aee-4004-b17c-bd8de7b86eca",
+      "claim_id": "C80",
+      "claim": "It is possible that the expression of ACE2 and TMPRSS2 is much higher in individuals with pregnancy complications related to the renin-angiotensin-aldosterone system (RAAS), which can alter the expression of ACE2.",
+      "claim_type": "EXPLICIT",
+      "source": "However, it is still possible that the expression of these proteins is much higher in individuals with pregnancy complications related to the renin-angiotensin-aldosterone system (RAAS), which can alter the expression of ACE2 (Herse et al., 2007; Alexandre et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about possible exceptions, supported by citations.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:27:31.534669Z"
+    },
+    {
+      "id": "c9a6f8a8-8f4a-426a-a9c5-b177029337e6",
+      "content_id": "f00e3e4e-8aee-4004-b17c-bd8de7b86eca",
+      "claim_id": "C81",
+      "claim": "The cellular receptors and mechanisms that could be exploited by SARS-CoV-2 are still under investigation.",
+      "claim_type": "EXPLICIT",
+      "source": "The cellular receptors and mechanisms that could be exploited by SARS-CoV-2 are still under investigation (Gordon et al., 2020)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to ongoing research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:27:31.534669Z"
+    },
+    {
+      "id": "4388d4a8-53c2-4f2e-b3e0-8aa8a4c265f6",
+      "content_id": "f00e3e4e-8aee-4004-b17c-bd8de7b86eca",
+      "claim_id": "C82",
+      "claim": "Single-cell atlases can help to identify cell types with a similar transcriptional profile to those that are known to participate in COVID-19.",
+      "claim_type": "EXPLICIT",
+      "source": "yet single-cell atlases can help to identify cell types with a similar transcriptional profile to those that are known to participate in COVID-19.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement about the utility of single-cell atlases.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:27:31.534669Z"
+    },
+    {
+      "id": "6851c390-d4c6-47fa-afce-9baaba1270ba",
+      "content_id": "f00e3e4e-8aee-4004-b17c-bd8de7b86eca",
+      "claim_id": "C83",
+      "claim": "32 placental villi/decidua samples collected in the third trimester were pooled for snRNA-seq analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "therefore, we pooled 32 placental villi/decidua samples collected in the third trimester (Supplementary file 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the study's methodology.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:27:31.534669Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "450e36bc-e1bb-49a0-ad7e-cacccad66ca9",
+      "content_id": "f00e3e4e-8aee-4004-b17c-bd8de7b86eca",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "ACE2 and TMPRSS2, the canonical cell entry mediators for SARS-CoV-2, are negligibly co-expressed in human placental tissues across all three trimesters of pregnancy. Using single-cell RNA-seq, single-nucleus RNA-seq, and microarray data, the authors found fewer than 1/10,000 cells co-expressing both genes, with TMPRSS2 largely undetected in bulk tissue analysis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4, C37, C38, C40, C46, C48, C49, and C50 converge on the same finding using multiple complementary methodologies (scRNA-seq, snRNA-seq, and microarray). The quantitative threshold (1 transcript per cell) is explicitly stated (C38), and the finding is consistent across trimesters and tissue types. The use of snRNA-seq addresses potential technical bias from scRNA-seq (C41-C46), strengthening the conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:27:31.534669Z"
+    },
+    {
+      "id": "f1a2dba4-a1a9-4813-a51f-e02c0a9f2bf8",
+      "content_id": "f00e3e4e-8aee-4004-b17c-bd8de7b86eca",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The authors developed and applied single-nucleus RNA-seq (snRNA-seq) to placental tissues to address dissociation bias against large syncytiotrophoblast cells in scRNA-seq studies. This represents the first snRNA-seq study of placental tissues and successfully captured a larger fraction of syncytiotrophoblast cells compared to scRNA-seq.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C41-C45 describe a methodological innovation addressing a known technical limitation. The rationale (C41-C42), implementation (C43-C44), and validation (C45) are clearly presented. Figure 1 shows the increased STB fraction, supporting the claim that snRNA-seq reduces dissociation bias.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:27:31.534669Z"
+    },
+    {
+      "id": "f16339a3-bb34-4e4c-951d-a063d2648826",
+      "content_id": "f00e3e4e-8aee-4004-b17c-bd8de7b86eca",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Receptors for viruses known to cause congenital infections (CMV and ZIKV) are highly expressed in placental cell types. CMV receptors (NRP2, PDFGRA, CD46) and the ZIKV receptor AXL show high expression across multiple placental cell types throughout gestation, contrasting with the minimal expression of SARS-CoV-2 receptors.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5, C69-C74, and C78 demonstrate high expression of CMV and ZIKV receptors using the same analytical pipeline that showed minimal SARS-CoV-2 receptor expression. This internal positive control validates the methodology and supports the biological interpretation. Figure 2 provides visual evidence of the expression patterns.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:27:31.534669Z"
+    },
+    {
+      "id": "1fc8436c-5a06-40fc-b3b2-7e33192e2b75",
+      "content_id": "f00e3e4e-8aee-4004-b17c-bd8de7b86eca",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The placenta minimally expresses canonical SARS-CoV-2 cell-entry mediators, suggesting low likelihood of vertical transmission. The minimal co-expression of ACE2 and TMPRSS2 contrasts with high expression in COVID-19 target tissues (airways, lungs, gastrointestinal tract), indicating the placenta is not a likely route for vertical transmission.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6, C50-C52, C76-C77, and C79 represent the main conclusion, directly supported by the expression data (C4, C37-C40, C46, C48-C49). The comparison to COVID-19 target tissues (C51) provides important context. The authors appropriately acknowledge limitations (transcript vs. protein levels in C79) and potential exceptions (C52, C80).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:27:31.534669Z"
+    },
+    {
+      "id": "a44e4f4e-204d-4779-94cf-eb4540585606",
+      "content_id": "f00e3e4e-8aee-4004-b17c-bd8de7b86eca",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Alternative SARS-CoV-2 entry mediators (BSG, CTSL, FURIN, SIGLEC1, ADAM17) are expressed in placental tissues, but their role in placental infection remains uncertain. While BSG, CTSL, and FURIN are highly expressed, BSG's ubiquitous expression and the requirement for TMPRSS2 (not ADAM17) for efficient viral entry suggest these alternative pathways are likely less efficient than the canonical ACE2/TMPRSS2 route.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C53-C68 document expression of alternative entry mediators but appropriately note uncertainty about their functional significance. The widespread expression of BSG (C56) undermines its specificity as an entry mediator (C57). Evidence from SARS-CoV-1 studies (C60, C67) may not directly apply to SARS-CoV-2. The inference that these pathways are less efficient (C68) is reasonable but not directly tested.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:27:31.534669Z"
+    },
+    {
+      "id": "908ed6c8-9075-4567-9f79-743455f35d44",
+      "content_id": "f00e3e4e-8aee-4004-b17c-bd8de7b86eca",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The first-trimester findings of minimal ACE2 expression at the maternal-fetal interface agree with a prior report by Zheng et al., 2020.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C39 appropriately contextualizes the study's findings within existing literature, noting agreement with prior work. This strengthens confidence in the first-trimester results through independent replication.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:27:31.534669Z"
+    },
+    {
+      "id": "b1faf71c-f8f6-4447-b403-ade88ff1a6af",
+      "content_id": "f00e3e4e-8aee-4004-b17c-bd8de7b86eca",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Expression of ACE2 and TMPRSS2 might be higher in individuals with pregnancy complications related to the renin-angiotensin-aldosterone system (RAAS), which can alter ACE2 expression.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C80 is speculative and acknowledges a potential limitation of the study. The samples analyzed may not represent pathological pregnancies where RAAS dysregulation could alter receptor expression. This caveat is appropriately noted but not tested in the current study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:27:31.534669Z"
+    },
+    {
+      "id": "02a25467-a165-4e23-ba3e-f1ef5775e50e",
+      "content_id": "f00e3e4e-8aee-4004-b17c-bd8de7b86eca",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Prior literature shows no consistent evidence for vertical transmission of SARS-CoV-2, though rare cases of neonatal infection and detection of viral RNA in amniotic fluid and placental tissues have been reported. Most neonates born to COVID-19 positive mothers test negative and remain asymptomatic.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2, C24-C34 accurately summarize the state of knowledge from prior literature regarding vertical transmission. The citations support the claims about clinical outcomes, serological findings, and rare case reports. This background contextualizes the study's investigation of receptor expression.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:27:31.534669Z"
+    },
+    {
+      "id": "99afbf24-1345-4bea-b886-5140111feced",
+      "content_id": "f00e3e4e-8aee-4004-b17c-bd8de7b86eca",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "SARS-CoV-2 canonically utilizes ACE2 and TMPRSS2 for cell entry, as established in prior literature.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C35, and C36 accurately represent established knowledge about SARS-CoV-2 cell entry mechanisms, supported by appropriate citations. This provides the scientific rationale for investigating these specific receptors in placental tissues.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:27:31.534669Z"
+    },
+    {
+      "id": "c4e6705b-6dc6-4ce1-9611-0ea4095a391d",
+      "content_id": "f00e3e4e-8aee-4004-b17c-bd8de7b86eca",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "32 placental villi/decidua samples from the third trimester were pooled for snRNA-seq analysis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C83 describes a methodological detail that is clearly stated and referenced to supplementary materials. Pooling samples increases statistical power but may mask individual variation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:27:31.534669Z"
+    },
+    {
+      "id": "63ab9ad1-33bf-4c38-8620-098a2c7165b9",
+      "content_id": "f00e3e4e-8aee-4004-b17c-bd8de7b86eca",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "snRNA-seq has higher background compared to scRNA-seq, which is a known technical limitation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C47 accurately describes a known limitation of snRNA-seq methodology. The authors appropriately note this does not affect their co-expression analysis since co-expression was not observed even with potentially elevated background.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:27:31.534669Z"
+    },
+    {
+      "id": "f5e41139-c77a-4f2d-b905-48dbd8a1f1e7",
+      "content_id": "f00e3e4e-8aee-4004-b17c-bd8de7b86eca",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Background information on COVID-19 pandemic, clinical characteristics in pregnant women, and comparison to other viral infections during pregnancy.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C12-C23 provide epidemiological and clinical context from prior literature and public health data. These claims are appropriately cited and establish the rationale for studying SARS-CoV-2 and pregnancy.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:27:31.534669Z"
+    },
+    {
+      "id": "9cbe4093-f66d-430f-ac83-603021ea9b2f",
+      "content_id": "f00e3e4e-8aee-4004-b17c-bd8de7b86eca",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The placenta serves multiple physiological functions and, together with chorioamniotic membranes, provides protection against most maternal pathogens, though some viruses (Toxoplasma, Rubella, HSV, CMV, ZIKV) can cross the placenta and cause congenital disease.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7-C11 accurately summarize established knowledge about placental function and vertical transmission of pathogens, supported by appropriate citations. This provides biological context for the study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:27:31.534669Z"
+    },
+    {
+      "id": "7beb27f5-640e-4400-b308-e10dfc017b44",
+      "content_id": "f00e3e4e-8aee-4004-b17c-bd8de7b86eca",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Cellular receptors and mechanisms exploited by SARS-CoV-2 are still under investigation, and single-cell atlases can help identify susceptible cell types based on transcriptional profiles.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C81-C82 appropriately acknowledge ongoing research and the utility of single-cell approaches. This contextualizes the study's contribution within the broader research landscape.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:27:31.534669Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "fa4cd155-680d-4a20-8818-0dc0ee250dcb",
+      "result_id": "450e36bc-e1bb-49a0-ad7e-cacccad66ca9"
+    },
+    {
+      "claim_id": "0afe358d-2e8d-4ade-baf5-4fc0e6517887",
+      "result_id": "450e36bc-e1bb-49a0-ad7e-cacccad66ca9"
+    },
+    {
+      "claim_id": "6b537fcf-f1e7-48d3-9d13-d338afb3e8f3",
+      "result_id": "450e36bc-e1bb-49a0-ad7e-cacccad66ca9"
+    },
+    {
+      "claim_id": "a5409538-ace5-43e2-a08c-2ad8bea7ef1d",
+      "result_id": "450e36bc-e1bb-49a0-ad7e-cacccad66ca9"
+    },
+    {
+      "claim_id": "3e7c14e8-5fad-4d02-ad41-eb1d2b5f4eba",
+      "result_id": "450e36bc-e1bb-49a0-ad7e-cacccad66ca9"
+    },
+    {
+      "claim_id": "edef16d3-54b4-4cc2-a908-7353c3653a3e",
+      "result_id": "450e36bc-e1bb-49a0-ad7e-cacccad66ca9"
+    },
+    {
+      "claim_id": "762b5540-d6e8-4157-909d-f79ac409b44d",
+      "result_id": "450e36bc-e1bb-49a0-ad7e-cacccad66ca9"
+    },
+    {
+      "claim_id": "b489c776-c87a-405e-874e-0a8fb1ed2a8c",
+      "result_id": "450e36bc-e1bb-49a0-ad7e-cacccad66ca9"
+    },
+    {
+      "claim_id": "9fdd560a-015a-419f-addd-ae45e4b90b01",
+      "result_id": "f1a2dba4-a1a9-4813-a51f-e02c0a9f2bf8"
+    },
+    {
+      "claim_id": "d1c8082a-379f-4c69-a36b-ebcc088fdd7a",
+      "result_id": "f1a2dba4-a1a9-4813-a51f-e02c0a9f2bf8"
+    },
+    {
+      "claim_id": "a4626b40-5a0d-4730-a52a-bb7aab4ff8ce",
+      "result_id": "f1a2dba4-a1a9-4813-a51f-e02c0a9f2bf8"
+    },
+    {
+      "claim_id": "a37d5fee-ffd8-4310-b67f-4fa713f889bc",
+      "result_id": "f1a2dba4-a1a9-4813-a51f-e02c0a9f2bf8"
+    },
+    {
+      "claim_id": "b43f8f83-da6c-468c-8454-3d26e62a40d6",
+      "result_id": "f1a2dba4-a1a9-4813-a51f-e02c0a9f2bf8"
+    },
+    {
+      "claim_id": "a496c408-d01f-4b41-8738-3887d2a9b834",
+      "result_id": "f16339a3-bb34-4e4c-951d-a063d2648826"
+    },
+    {
+      "claim_id": "6e5da171-cd16-4352-9578-c59d0ff8c534",
+      "result_id": "f16339a3-bb34-4e4c-951d-a063d2648826"
+    },
+    {
+      "claim_id": "5e6f853b-a365-4a75-bbea-56b34352ae11",
+      "result_id": "f16339a3-bb34-4e4c-951d-a063d2648826"
+    },
+    {
+      "claim_id": "ec4e0fc2-b41e-4921-871c-0ef69070c889",
+      "result_id": "f16339a3-bb34-4e4c-951d-a063d2648826"
+    },
+    {
+      "claim_id": "4041fc8f-1bf4-43cd-99d4-e574aa6ea6de",
+      "result_id": "f16339a3-bb34-4e4c-951d-a063d2648826"
+    },
+    {
+      "claim_id": "03b72929-ba73-4610-93c9-ee87ba1d882a",
+      "result_id": "f16339a3-bb34-4e4c-951d-a063d2648826"
+    },
+    {
+      "claim_id": "e049f69d-4ed5-49f9-9b3e-f66949947547",
+      "result_id": "f16339a3-bb34-4e4c-951d-a063d2648826"
+    },
+    {
+      "claim_id": "9c4c4184-ee20-4e91-af9a-a226ace99c40",
+      "result_id": "f16339a3-bb34-4e4c-951d-a063d2648826"
+    },
+    {
+      "claim_id": "6978576f-e2bf-48f2-b05f-c2ab40a3452d",
+      "result_id": "1fc8436c-5a06-40fc-b3b2-7e33192e2b75"
+    },
+    {
+      "claim_id": "b489c776-c87a-405e-874e-0a8fb1ed2a8c",
+      "result_id": "1fc8436c-5a06-40fc-b3b2-7e33192e2b75"
+    },
+    {
+      "claim_id": "8c4d9b60-0a75-4ed4-8899-e4b933f2fafd",
+      "result_id": "1fc8436c-5a06-40fc-b3b2-7e33192e2b75"
+    },
+    {
+      "claim_id": "ac68c724-4570-461a-80c4-7a19d8a0dc1d",
+      "result_id": "1fc8436c-5a06-40fc-b3b2-7e33192e2b75"
+    },
+    {
+      "claim_id": "7a02fd68-0048-4945-a665-438ece522f31",
+      "result_id": "1fc8436c-5a06-40fc-b3b2-7e33192e2b75"
+    },
+    {
+      "claim_id": "af6733af-c27c-46da-aea2-eb2c611c2b90",
+      "result_id": "1fc8436c-5a06-40fc-b3b2-7e33192e2b75"
+    },
+    {
+      "claim_id": "ed8cb37e-1c8f-4089-8e37-de325dd82b5d",
+      "result_id": "1fc8436c-5a06-40fc-b3b2-7e33192e2b75"
+    },
+    {
+      "claim_id": "a42b973a-48c3-4098-a444-a326cf92f3f4",
+      "result_id": "a44e4f4e-204d-4779-94cf-eb4540585606"
+    },
+    {
+      "claim_id": "4251bb22-a9e9-48fb-93e5-6b93214ee91e",
+      "result_id": "a44e4f4e-204d-4779-94cf-eb4540585606"
+    },
+    {
+      "claim_id": "307d85f9-87e6-44e7-a371-06e1707be162",
+      "result_id": "a44e4f4e-204d-4779-94cf-eb4540585606"
+    },
+    {
+      "claim_id": "27a58446-c537-432a-b998-af0c74f898d2",
+      "result_id": "a44e4f4e-204d-4779-94cf-eb4540585606"
+    },
+    {
+      "claim_id": "1c0ca55d-e816-4cf3-a212-c8efdacd6045",
+      "result_id": "a44e4f4e-204d-4779-94cf-eb4540585606"
+    },
+    {
+      "claim_id": "b8850026-d890-467b-8073-08740367b8e5",
+      "result_id": "a44e4f4e-204d-4779-94cf-eb4540585606"
+    },
+    {
+      "claim_id": "76e9806e-56d8-4c69-940f-49122b0012da",
+      "result_id": "a44e4f4e-204d-4779-94cf-eb4540585606"
+    },
+    {
+      "claim_id": "6bbada4b-7ac3-491e-9761-bfc0d400c222",
+      "result_id": "a44e4f4e-204d-4779-94cf-eb4540585606"
+    },
+    {
+      "claim_id": "aa78f8c5-f18f-42ec-84c3-318147388d88",
+      "result_id": "a44e4f4e-204d-4779-94cf-eb4540585606"
+    },
+    {
+      "claim_id": "bd260909-095a-4381-9455-2284fd7fa8d2",
+      "result_id": "a44e4f4e-204d-4779-94cf-eb4540585606"
+    },
+    {
+      "claim_id": "6f2e8e3e-d3da-4dd1-b392-c836751e46b1",
+      "result_id": "a44e4f4e-204d-4779-94cf-eb4540585606"
+    },
+    {
+      "claim_id": "2be41911-2853-447f-a7db-14c1c81b7089",
+      "result_id": "a44e4f4e-204d-4779-94cf-eb4540585606"
+    },
+    {
+      "claim_id": "325aaf9a-dda4-4311-8745-de2a60669660",
+      "result_id": "a44e4f4e-204d-4779-94cf-eb4540585606"
+    },
+    {
+      "claim_id": "3ea4d2ed-2dfc-4615-853d-7819b831afeb",
+      "result_id": "a44e4f4e-204d-4779-94cf-eb4540585606"
+    },
+    {
+      "claim_id": "9088d276-e5c1-4252-b292-50a9761fff3a",
+      "result_id": "a44e4f4e-204d-4779-94cf-eb4540585606"
+    },
+    {
+      "claim_id": "a08988b0-0fb6-4c9c-928f-8a875a9b433d",
+      "result_id": "a44e4f4e-204d-4779-94cf-eb4540585606"
+    },
+    {
+      "claim_id": "07e8cf16-b218-4873-994e-b814985692c4",
+      "result_id": "908ed6c8-9075-4567-9f79-743455f35d44"
+    },
+    {
+      "claim_id": "3b8ce481-be60-4f17-bfa0-4b204671ac62",
+      "result_id": "b1faf71c-f8f6-4447-b403-ade88ff1a6af"
+    },
+    {
+      "claim_id": "3e532e75-51f3-45a1-88bb-b2ed46a4bc8b",
+      "result_id": "02a25467-a165-4e23-ba3e-f1ef5775e50e"
+    },
+    {
+      "claim_id": "c0eb5819-f667-4b22-a346-1448c222eed9",
+      "result_id": "02a25467-a165-4e23-ba3e-f1ef5775e50e"
+    },
+    {
+      "claim_id": "4cf91dc3-7615-4e6a-af40-5200a7895862",
+      "result_id": "02a25467-a165-4e23-ba3e-f1ef5775e50e"
+    },
+    {
+      "claim_id": "415065a6-5f5c-4294-95fb-2e9f3bd57aeb",
+      "result_id": "02a25467-a165-4e23-ba3e-f1ef5775e50e"
+    },
+    {
+      "claim_id": "d6189cce-989a-4891-8cb8-c77cd51cf321",
+      "result_id": "02a25467-a165-4e23-ba3e-f1ef5775e50e"
+    },
+    {
+      "claim_id": "27b73c37-0ddf-4c4b-af4d-23aa19401b59",
+      "result_id": "02a25467-a165-4e23-ba3e-f1ef5775e50e"
+    },
+    {
+      "claim_id": "60c39bc9-b93b-4b8a-906e-7d8b7a41adaa",
+      "result_id": "02a25467-a165-4e23-ba3e-f1ef5775e50e"
+    },
+    {
+      "claim_id": "e2e47e91-15cc-4dbe-bd26-1efa09dcea56",
+      "result_id": "02a25467-a165-4e23-ba3e-f1ef5775e50e"
+    },
+    {
+      "claim_id": "3f234b9d-a8eb-4e6a-b645-d15c8d285d95",
+      "result_id": "02a25467-a165-4e23-ba3e-f1ef5775e50e"
+    },
+    {
+      "claim_id": "9cf2115f-f233-405a-9560-06d028b1fc0c",
+      "result_id": "02a25467-a165-4e23-ba3e-f1ef5775e50e"
+    },
+    {
+      "claim_id": "e003d6e3-e444-471d-8ae6-f2e82273a153",
+      "result_id": "02a25467-a165-4e23-ba3e-f1ef5775e50e"
+    },
+    {
+      "claim_id": "ff2abb76-8452-42bb-866f-4a50b0dbc341",
+      "result_id": "02a25467-a165-4e23-ba3e-f1ef5775e50e"
+    },
+    {
+      "claim_id": "74377f7e-1eae-4c70-8708-e2d45fb94dcb",
+      "result_id": "99afbf24-1345-4bea-b886-5140111feced"
+    },
+    {
+      "claim_id": "495dc58f-4826-4fd2-b261-e1cf23539d33",
+      "result_id": "99afbf24-1345-4bea-b886-5140111feced"
+    },
+    {
+      "claim_id": "224d974e-3018-450c-884e-14c3c6b99374",
+      "result_id": "99afbf24-1345-4bea-b886-5140111feced"
+    },
+    {
+      "claim_id": "6851c390-d4c6-47fa-afce-9baaba1270ba",
+      "result_id": "c4e6705b-6dc6-4ce1-9611-0ea4095a391d"
+    },
+    {
+      "claim_id": "df7c600a-9fc7-4631-a0a7-90e62e06bf58",
+      "result_id": "63ab9ad1-33bf-4c38-8620-098a2c7165b9"
+    },
+    {
+      "claim_id": "218ac30b-4a3d-4fc4-bb26-880ab5dffe21",
+      "result_id": "f5e41139-c77a-4f2d-b905-48dbd8a1f1e7"
+    },
+    {
+      "claim_id": "94139b6a-d91d-4cdd-90bf-91ae3b36a0ac",
+      "result_id": "f5e41139-c77a-4f2d-b905-48dbd8a1f1e7"
+    },
+    {
+      "claim_id": "430c21e5-38d6-49e9-8199-a5c660219651",
+      "result_id": "f5e41139-c77a-4f2d-b905-48dbd8a1f1e7"
+    },
+    {
+      "claim_id": "18dfb00e-383f-4ae2-a16a-a2266b1cbcec",
+      "result_id": "f5e41139-c77a-4f2d-b905-48dbd8a1f1e7"
+    },
+    {
+      "claim_id": "2869e57b-9aff-4f0d-a2f5-472d16fcc74a",
+      "result_id": "f5e41139-c77a-4f2d-b905-48dbd8a1f1e7"
+    },
+    {
+      "claim_id": "5989558d-2fec-4c7b-b83a-f957349ccced",
+      "result_id": "f5e41139-c77a-4f2d-b905-48dbd8a1f1e7"
+    },
+    {
+      "claim_id": "c6e3429f-793b-48f3-8a17-1a18b996c4ae",
+      "result_id": "f5e41139-c77a-4f2d-b905-48dbd8a1f1e7"
+    },
+    {
+      "claim_id": "659bee64-bc00-479d-b2c2-05d5181ee819",
+      "result_id": "f5e41139-c77a-4f2d-b905-48dbd8a1f1e7"
+    },
+    {
+      "claim_id": "0624c22d-a59b-44b5-b2f3-2a458fe089f9",
+      "result_id": "f5e41139-c77a-4f2d-b905-48dbd8a1f1e7"
+    },
+    {
+      "claim_id": "78a1f34f-9974-46f2-9492-eab3e44be6b3",
+      "result_id": "f5e41139-c77a-4f2d-b905-48dbd8a1f1e7"
+    },
+    {
+      "claim_id": "8974b55b-6e01-49cd-8745-2f8a697ba8f0",
+      "result_id": "f5e41139-c77a-4f2d-b905-48dbd8a1f1e7"
+    },
+    {
+      "claim_id": "289eaf0f-2abe-4867-b01d-d23879c88246",
+      "result_id": "f5e41139-c77a-4f2d-b905-48dbd8a1f1e7"
+    },
+    {
+      "claim_id": "7731fe0b-6bab-45c5-be65-35fd1cac8a41",
+      "result_id": "f5e41139-c77a-4f2d-b905-48dbd8a1f1e7"
+    },
+    {
+      "claim_id": "e9cd0a90-b5ea-4c4f-89fe-99f4856e2e0c",
+      "result_id": "9cbe4093-f66d-430f-ac83-603021ea9b2f"
+    },
+    {
+      "claim_id": "38a14325-0ac0-4e8f-96af-105a3b2c18b1",
+      "result_id": "9cbe4093-f66d-430f-ac83-603021ea9b2f"
+    },
+    {
+      "claim_id": "b22775db-cd71-4476-99c3-1a76ca6b9397",
+      "result_id": "9cbe4093-f66d-430f-ac83-603021ea9b2f"
+    },
+    {
+      "claim_id": "a7fdbb97-5449-490b-bc37-87865d3590f1",
+      "result_id": "9cbe4093-f66d-430f-ac83-603021ea9b2f"
+    },
+    {
+      "claim_id": "b3316909-c26e-4a7a-8d87-11cb73de4870",
+      "result_id": "9cbe4093-f66d-430f-ac83-603021ea9b2f"
+    },
+    {
+      "claim_id": "c9a6f8a8-8f4a-426a-a9c5-b177029337e6",
+      "result_id": "7beb27f5-640e-4400-b308-e10dfc017b44"
+    },
+    {
+      "claim_id": "4388d4a8-53c2-4f2e-b3e0-8aa8a4c265f6",
+      "result_id": "7beb27f5-640e-4400-b308-e10dfc017b44"
+    }
+  ],
+  "comparisons": []
+}

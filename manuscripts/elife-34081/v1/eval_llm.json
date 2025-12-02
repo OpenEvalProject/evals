@@ -1,0 +1,440 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C22",
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "COMPASS mutations, specifically loss of H3K4me3, reduce replicative lifespan in budding yeast. Multiple COMPASS mutants (swd1\u0394, set1H1017L, spp1\u0394) and histone H3K4 mutants show substantially reduced viability during aging.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C22-C25 provide converging evidence from multiple mutants (COMPASS components and histone H3K4 itself) showing reduced replicative lifespan. The data include viability measurements across aging time points with statistical significance, and the phenotype is recapitulated across different genetic perturbations affecting H3K4me3, supporting the specificity of the effect.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C2",
+      "C41",
+      "C42",
+      "C43",
+      "C46",
+      "C47",
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "COMPASS mutations cause age-dependent gene expression defects affecting hundreds of genes. The number of differentially expressed genes increases with age (107 at log phase, 389 at 24hr, 488 at 48hr), with the magnitude of under-expression also increasing during aging.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C41-C43, C46-C47, C108-C110 collectively demonstrate age-dependent gene expression defects using DESeq2 analysis with appropriate replication. The progressive increase in both number and magnitude of expression defects with age is well-documented across multiple time points, supporting the conclusion that COMPASS function becomes more critical during aging.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C4",
+      "C44",
+      "C111",
+      "C112"
+    ],
+    "result": "The repressive function of H3K4 methylation progressively declines with age. Genes over-expressed in COMPASS mutants at log phase show diminishing over-expression with age, but this loss of repressive capacity does not explain the lifespan defect.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C44, C111-C112 demonstrate age-dependent loss of repressive function through differential expression data. The inference that this is not the cause of lifespan defects (C112) is supported by the observation that spp1\u0394 shows similar lifespan defects to swd1\u0394 but does not show the same repressive defects, providing appropriate genetic controls.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C5",
+      "C39",
+      "C40",
+      "C45",
+      "C46",
+      "C53",
+      "C113"
+    ],
+    "result": "Hundreds of genes become dependent on H3K4me3 for full expression during aging, with the majority of genes affected by COMPASS loss failing to be properly upregulated with age. This represents an activating function of H3K4me3 that is unmasked during aging.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C39-C40, C45-C46, C53, C113 provide strong evidence for age-dependent activating function of H3K4me3. The data show that under-expression in COMPASS mutants increases in both number and magnitude with age, and comparison to other transitions (stationary to log phase) shows this is specific to aging. The conclusion that this function is 'unmasked' during aging is well-supported by the age-dependent phenotype.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "Genes under-expressed in COMPASS mutants during aging are enriched for cell wall organization and de novo NAD+ biosynthesis functions. This enrichment is observed in both pooled COMPASS mutants and specifically in spp1\u0394, indicating H3K4me3-dependence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C49, C54-C56 demonstrate consistent GO enrichment across different analytical approaches (pooled COMPASS mutants and spp1\u0394-specific analysis). The observation of similar enrichments in spp1\u0394, which specifically affects H3K4me3, supports the inference that these functions are H3K4me3-dependent. The GO analysis methodology appears appropriate with FDR correction.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C6",
+      "C61",
+      "C63",
+      "C64",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "H3K4me3 is required for both basal and induced expression of BNA genes (NAD+ biosynthesis pathway). This effect is observed in both young cells treated with nicotinamide and aged cells, and is recapitulated in histone H3K4 mutants, demonstrating direct action through H3K4 methylation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C61, C63-C64, C66-C72 provide comprehensive validation of H3K4me3 function in BNA gene expression using multiple approaches: RNAseq in aged cells, northern blots in nicotinamide-treated young cells, and validation in histone H3K4 mutants. The convergence of evidence from different experimental systems and genetic perturbations strongly supports the conclusion that H3K4me3 directly facilitates BNA gene expression.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C7",
+      "C73",
+      "C74",
+      "C75",
+      "C81",
+      "C90"
+    ],
+    "result": "Gene induction during aging is associated with increasing promoter H3K4me3. There is a strong positive correlation between age-linked gene induction and changes in promoter H3K4me3 signal, with progressive loss of repressed promoters lacking H3K4me3.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C73-C75, C81, C90 demonstrate correlation between gene induction and H3K4me3 changes using spike-in normalized ChIPseq data. The use of Drosophila spike-in normalization (C117) is critical for accurate quantification during aging. The correlation analysis (C75) and violin plots (C73-C74) provide appropriate statistical support for the relationship between H3K4me3 and gene expression changes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C8",
+      "C76",
+      "C79",
+      "C80",
+      "C82",
+      "C91"
+    ],
+    "result": "H3K4me3 accumulates in non-promoter regions during aging, associated with increased pervasive transcription. Antisense transcripts increase uniformly across genes regardless of sense transcript changes, indicating genome-wide loss of transcriptional fidelity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C76, C79-C80, C82, C91 demonstrate spreading of H3K4me3 beyond promoters and increased pervasive transcription. The observation that antisense transcription increases uniformly (C79) independent of sense transcript changes provides strong evidence for genome-wide transcriptional dysregulation. The ChIPseq profiles (C76) directly support H3K4me3 spreading.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C9",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "H3K4me3 massively accumulates in ribosomal DNA during aging due to loss of rDNA silencing combined with 7-fold rDNA amplification. This results in a 2-fold increase in total cellular H3K4me3, with the proportion in rDNA rising from 2.5% to 40%.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9, C83-C89 provide comprehensive quantification of H3K4me3 changes in rDNA using spike-in normalized ChIPseq and western blot validation. The calculation of total H3K4me3 changes accounts for both density changes and copy number amplification, which is methodologically sound. The western blot validation (C89) independently confirms the ChIPseq-based inference.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "Principal component analysis of the mRNAseq dataset shows that age (PC1, 49% variance) and COMPASS genotype (PC2, 6% variance) have separable effects on gene expression, indicating that COMPASS mutant phenotypes are not simply due to accelerated aging.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C31 appropriately use PCA to demonstrate that age and genotype effects are orthogonal. The observation that wild-type and COMPASS mutants of equivalent ages cluster together on PC1 but separate on PC2 provides strong evidence that the gene expression phenotype is separable from aging per se. This is an important control for interpreting the results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "Age-related gene expression changes in wild-type cells recapitulate known aging signatures: 2842 genes differ between log and 48hr, with translation genes down-regulated and cell wall/metabolism genes up-regulated. These changes correlate strongly with histone H3 depletion effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C37 validate the aging model by showing consistency with previous studies. The differential expression analysis uses appropriate statistics (DESeq2, p<0.01) with adequate replication (n=5). The correlation with H3 depletion data (C37) from an independent study provides external validation of the aging phenotype.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "204 genes are robustly upregulated during aging but not upon H3 depletion, enriched for cell wall organization. 13% of these genes are under-expressed in COMPASS mutants specifically during aging, suggesting H3K4 methylation functions are unmasked during aging-specific gene induction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C40 use appropriate filtering to identify aging-specific genes and demonstrate that a subset requires COMPASS for full expression. The filtering strategy (excluding H3 depletion-responsive and glucose-repressed genes) is methodologically sound. However, the 13% figure (C39) represents a relatively small subset, and the inference about 'unmasking' (C40) would benefit from additional mechanistic validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C26",
+      "C27"
+    ],
+    "result": "COMPASS mutants have reduced chronological lifespan due to Dot1-mediated apoptosis, but this mechanism does not explain the replicative lifespan defect, as swd1\u0394 dot1\u0394 double mutants show no suppression of the replicative phenotype.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C27 appropriately use genetic epistasis (double mutant analysis) to demonstrate that replicative and chronological lifespan defects have distinct mechanisms. The lack of suppression in the double mutant (C27) provides clear evidence that the Dot1-mediated chronological lifespan pathway does not contribute to the replicative defect.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C51",
+      "C52"
+    ],
+    "result": "Different COMPASS mutations (swd1\u0394, set1H1017L, spp1\u0394) have similar effects on gene expression during aging. Analysis of swd1\u0394 alone identifies 240 under-expressed genes at 48hr with 60% overlap with the pooled dataset.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C52 validate the pooling strategy by showing consistency across individual mutants. The hierarchical clustering (C51) and overlap analysis (C52) demonstrate that pooling is appropriate. However, the 60% overlap suggests some mutant-specific effects that may be obscured by pooling.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C57",
+      "C58"
+    ],
+    "result": "H3K4me2 levels are similar in wild-type and spp1\u0394 in both young and old cells, while Spp1 is required for H3K4me3 in old cells, confirming that COMPASS activity is globally similar across ages and that spp1\u0394 specifically affects H3K4me3.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C58 provide important validation that the spp1\u0394 phenotype is specific to H3K4me3 and not due to age-dependent changes in COMPASS activity. The western blot data directly address a potential confounding factor in interpreting the age-dependent gene expression defects.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C77",
+      "C78"
+    ],
+    "result": "H3K4me3 changes during aging vary by gene expression level: highly expressed genes show reduced H3K4me3 peaks between 24-48hr, while lowly expressed genes show dramatic increases in H3K4me3 around the TSS.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C78 demonstrate gene-specific H3K4me3 dynamics using appropriate stratification by expression level. The ChIPseq profiles for the 300 most and least induced genes provide clear evidence for differential H3K4me3 behavior. This heterogeneity is important for understanding the relationship between H3K4me3 and gene expression.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "H3K4 methylation has antagonistic activating (H3K4me3) and repressive (H3K4me2) activities that vary by gene. Loss of Spp1 reduces BNA gene expression, while loss of Swd1 has variable effects reflecting the balance of H3K4me2 and H3K4me3 activities.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C100-C104 propose a model to explain the complex and gene-specific effects of COMPASS mutations. The differential effects of spp1\u0394 (H3K4me3-specific) versus swd1\u0394 (affects all H3K4 methylation) on BNA genes provide strong support for antagonistic activities. However, this model is largely inferential and would benefit from more direct mechanistic evidence.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C116",
+      "C117",
+      "C118"
+    ],
+    "result": "H3K4me3 is progressively gained at euchromatic promoters during aging despite mild H3 density reduction. Spike-in normalization was critical for accurate measurement, as internal normalization erroneously suggests H3K4me3 loss. The increase in euchromatic H3K4me3 is dwarfed by rDNA accumulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C116-C118 highlight the importance of spike-in normalization for aging studies and quantify H3K4me3 changes. The comparison between spike-in and internal normalization (C117) is methodologically important. The quantification of relative contributions of euchromatin versus rDNA (C118) provides important context for interpreting global H3K4me3 changes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C121",
+      "C124",
+      "C125"
+    ],
+    "result": "rDNA amplification may titrate repressive factors (through H3K4me2 accumulation) and histones/histone-binding factors, potentially contributing to age-linked gene expression changes. This represents a speculative model for how rDNA amplification drives aging phenotypes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C121, C124-C125 are explicitly speculative (\"tempting to speculate,\" \"seems very likely\") and lack direct experimental support. While the rDNA amplification and H3K4me3 accumulation are well-documented, the titration model is inferential. Testing this model would require measuring free histone/factor levels or demonstrating that supplying additional histones/factors suppresses aging phenotypes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C3",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "Background on H3K4me3 and COMPASS: H3K4me3 is ubiquitously observed at active gene promoters and is deposited by COMPASS complexes. Despite correlation with transcription, direct evidence for H3K4me3 in gene activation is controversial. COMPASS components have differential requirements for H3K4 methylation states.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C11-C21 provide literature context supported by appropriate citations. These are established facts from prior work that set up the rationale for the current study. The citations appear appropriate and the characterization of the controversy (C13) is fair.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130"
+    ],
+    "result": "Background on COMPASS recruitment: COMPASS is recruited through interactions with RNA Pol II elongation factors, H2B ubiquitylation, and nascent mRNA. In mammals, additional CxxC domains provide DNA methylation-dependent recruitment to promoters and enhancers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C126-C130 summarize established mechanisms of COMPASS recruitment supported by appropriate citations. This background is relevant for understanding how COMPASS activity might be regulated during aging.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C138"
+    ],
+    "result": "Background on H3K4me3 function: Loss of Set1 does not drastically impair transcription in yeast, with later studies reporting mostly gene upregulation, suggesting primarily repressive function. Studies on Spp1 (yeast) and CFP1 (mammals) show variable effects on gene expression, and a general role for H3K4me3 in transcriptional activation remains unproven.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C131-C138 accurately summarize the controversial state of the field regarding H3K4me3 function, supported by appropriate citations. The characterization of the evidence as controversial and the conclusion that a general activating role is unproven (C138) is fair and sets up the rationale for the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C139",
+      "C140",
+      "C141",
+      "C142",
+      "C143"
+    ],
+    "result": "Background on histone modifications and aging: Histone modifications are associated with aging, and genome-wide histone loss has been reported during aging in yeast and human cells, leading to chromatin opening and widespread gene induction. This has been proposed to underlie age-linked gene expression changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C139-C143 provide relevant background on aging and chromatin supported by appropriate citations. This context is important for interpreting the current findings on H3K4me3 during aging.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C105",
+      "C106"
+    ],
+    "result": "H3K4me3-binding proteins (Yng1, Yng2, Sgf29) recruit histone acetyltransferase complexes that should enhance transcription, but loss of this recruitment has little effect under normal conditions. However, it may impact specific genes during environmental change or chromatin remodeling such as occurs during aging.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C105-C106 summarize established mechanisms and cite appropriate studies. The speculation that these mechanisms may be important during aging (C106) is reasonable given the current findings but lacks direct experimental support in this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C119",
+      "C120"
+    ],
+    "result": "H3K4me3 recruits pro-expression factors while H3K4me2 recruits repressive complexes (Set3, Rpd3), providing a mechanistic basis for antagonistic activities of different H3K4 methylation states.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C119-C120 cite established mechanisms that support the antagonistic model proposed in the discussion. These are well-established facts from prior work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C122",
+      "C123"
+    ],
+    "result": "H3 density in euchromatin decreases during aging as previously reported, but this is more than offset by increased H3 associated with amplified rDNA, resulting in a net increase in total cellular H3.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C122-C123 reconcile the current findings with previous reports of histone loss during aging. The spike-in normalized ChIPseq data support both the euchromatic decrease and the overall increase when rDNA is included. This is an important clarification of previous findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C28",
+      "C59",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C107",
+      "C114",
+      "C115"
+    ],
+    "result": "Summary and interpretation: H3K4me3 has a prominent and critical function in aging cells, with ~4.5% of genes requiring COMPASS for normal expression across the replicative lifespan. H3K4 methylation has complex effects on gene expression, with both repressive and activating activities. The widespread gene mis-regulation in COMPASS mutants explains their reduced lifespan.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28, C59, C92-C99, C107, C114-C115 provide summary statements and interpretations that are well-supported by the experimental data presented. The conclusion that H3K4me3 is critical for maintaining gene expression and viability across the lifespan is strongly supported by the convergence of lifespan, gene expression, and chromatin data.",
+    "result_type": "MAJOR"
+  }
+]

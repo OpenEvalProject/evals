@@ -1,0 +1,331 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "GPT and IPT scores are significantly correlated in both pilot (r=0.272, p=0.018) and fMRI (r=0.543, p=0.005) datasets, suggesting IPT may be a confounding factor in identifying specific effects of trait-greed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C25 provide consistent evidence across two independent samples showing significant correlations between GPT and IPT scores. The statistical tests are appropriate and the inference about confounding is reasonable given the correlation strength, particularly in the fMRI dataset.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "GPT scores selectively correlate with risky choices in mixed gambles (r=0.440, p=0.032) but not in gain-only (r=0.236, p=0.267) or loss-only (r=-0.002, p=0.992) gambles, while IPT scores show no correlation with risky choices in any gamble type.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C30 present a coherent pattern of selective association between GPT and mixed gambles. The statistical tests are appropriate with adequate sample size (n=25), and the pattern is theoretically meaningful. The lack of correlation in gain/loss-only conditions strengthens the specificity of the finding. IPT control analyses (C29) appropriately rule out confounding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "Prospect theory modeling shows that subjects exhibit general loss aversion (\u03bb=1.561, significantly >1, t=3.874, p=0.001) and risk neutrality (\u03b1=1.033, not significantly different from 1, t=0.812, p=0.425), with risk attitude and loss aversion parameters being independent (r=0.020, p=0.925).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C36 provide model-based evidence using hierarchical Bayesian analysis. The statistical tests are appropriate, and the finding of loss aversion replicates prior literature (C33). The independence of \u03b1 and \u03bb (C36) validates the model structure. However, the sample size (n=25) is modest for individual parameter estimation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "GPT scores are negatively correlated with loss aversion coefficients (r=-0.479, p=0.018) but not with risk attitude (r=0.062, p=0.775), while IPT scores show no correlation with either parameter, indicating GPT specifically relates to loss aversion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C40 demonstrate selective association between GPT and loss aversion using model-derived parameters. The pattern is consistent with behavioral findings (C26-C28) and appropriately controls for IPT. Statistical significance is achieved despite modest sample size, though the correlation strength (r=-0.479) suggests moderate effect size.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "Loss aversion coefficient fully mediates the relationship between GPT scores and risky choice percentage, with significant indirect effect (a\u00d7b=0.024, 95% CI [0.007, 0.045]) and non-significant direct effect (c'=-0.003, 95% CI [-0.014, 0.008]).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C42 provide formal mediation analysis with bootstrap confidence intervals. The full mediation is supported by non-overlapping CIs for indirect effect and CI containing zero for direct effect. The strong correlation between \u03bb and risky choices (r=-0.919, p<0.001) supports the mediation pathway. Sample size (n=25) is adequate for mediation analysis with bootstrap methods.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "Neural networks including bilateral OFC, parietal cortex, and posterior cingulate show activity positively correlated with gains, while right OFC, bilateral striatum, insula, and inferior parietal gyrus show activity negatively correlated with losses. Conjunction analysis identifies mOFC as encoding both gain and loss prospects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C47 report whole-brain fMRI results with appropriate multiple comparison correction (FDR p<0.05). The findings replicate prior literature and the conjunction analysis appropriately identifies overlapping regions. The orthogonalization of gain and loss magnitudes (C105, r=0.011, p=0.867) validates separate analysis. Ventral striatum finding at lenient threshold (C47) is appropriately qualified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "Neural loss aversion in mOFC correlates with behavioral loss aversion (r=0.450, p=0.024) and negatively with GPT scores (r=-0.449, p=0.028), while ventral striatum shows no such correlations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C51 provide ROI analyses linking neural and behavioral measures. The correlations are statistically significant and survive robust regression correction for outliers. The selective finding in mOFC but not ventral striatum (C50-C51) strengthens specificity. However, the modest sample size (n=25) and moderate correlation strengths warrant caution in interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "Neural loss aversion in mOFC fully mediates the relationship between GPT scores and behavioral loss aversion (indirect effect: a\u00d7b=-0.024, 95% CI [-0.084, -0.001]; direct effect: c'=-0.047, 95% CI [-0.117, 0.024]), suggesting mOFC integrates gain and loss prospects to influence behavior.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C54 provide neural mediation analysis linking personality, brain activity, and behavior. The bootstrap CIs support full mediation with significant indirect effect and non-significant direct effect. The finding is theoretically coherent and consistent with prior claims. However, the CI for indirect effect barely excludes zero (lower bound=-0.001), suggesting the effect may be modest. Sample size (n=25) is at the lower limit for neural mediation analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "The study confirms the association between greed personality trait and risk-taking, demonstrating that this correlation is selectively mediated by loss aversion (not risk attitude) at both behavioral and neural levels, with mOFC encoding neural loss aversion as the mediating mechanism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C60 synthesize the main findings across behavioral and neuroimaging analyses. The multi-level evidence (behavioral correlations, model-based parameters, mediation analyses, fMRI activations, and neural mediation) converges to support the conclusion. The experimental design with gain, loss, and mixed gambles appropriately tests the specificity of the effect. Replication in independent behavioral sample strengthens confidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "The lack of correlation between GPT and risk attitude in the current study may be due to the young adult sample (mean age 21.36 years) exhibiting risk neutrality (\u03b1=1.033) rather than risk aversion, potentially creating a ceiling effect that minimizes greed-related variance in risk attitude.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C61-C64 provide a speculative explanation for null findings. While the reasoning is plausible and supported by citations about age effects (C62), the ceiling effect hypothesis (C63) is not directly tested. The risk neutrality finding (C64) is descriptive but doesn't demonstrate that this explains the null correlation. Alternative explanations (e.g., true lack of relationship, measurement issues) are not considered.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "The study's findings support the hypothesis that mOFC encodes subjective value of both gains and losses in the same region, with asymmetric responses constituting neural loss aversion, rather than the distributed network hypothesis involving separate processing in amygdala and ventral striatum.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C72 situate the findings within competing theoretical frameworks. The evidence from conjunction analysis (C46), correlation with behavioral loss aversion (C48, C71), and mediation analysis (C52, C72) supports the integrated encoding hypothesis. The citations to prior work (C66-C70) appropriately contextualize the findings. However, the failure to find ventral striatum correlations (C50-C51, C74) may reflect methodological differences rather than definitively ruling out its role.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "Unlike previous studies, ventral striatum activity did not correlate with behavioral loss aversion, potentially due to differences in task design (two-alternative choice vs. accept/reject paradigm), as task framing can affect value representation and risk-taking.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C73-C76 acknowledge discrepancy with prior literature and propose methodological explanation. While the task difference is real (C75) and framing effects are documented (C76), the causal link between task design and null ventral striatum findings is speculative. The lenient threshold finding (C73) suggests ventral striatum may be involved but with weaker effects. Alternative explanations (e.g., power, individual differences) are not fully explored.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "The study included 76 subjects in pilot study, 25 subjects in fMRI experiment (after exclusions), and 49 subjects in behavioral replication study (after exclusions), all meeting inclusion criteria for neurological/psychiatric health and with appropriate ethical approval.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C85 provide methodological details about samples. The exclusion criteria are reasonable and clearly stated. The fMRI sample size (n=25) is modest but within acceptable range for neuroimaging studies, particularly with within-subject designs. The replication study (n=49) strengthens confidence in behavioral findings. Ethical approval is documented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "Greed personality was measured using the 7-item Dispositional Greed Scale (DGS) with 5-point Likert scale (scores 7-35), and impulsivity was measured using the 30-item Barratt Impulsiveness Scale (BIS-11) with three subscales, both using validated instruments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C91 describe validated measurement instruments with appropriate citations. The scales are well-established in the literature and appropriate for the constructs being measured. The description of scoring is clear and complete.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "The gambling task included 230 trials (40 gain, 40 loss, 144 mixed, 6 catch) with randomized presentation, 5-second response window, jittered ITI, and incentive-compatible payment structure, with all subjects performing correctly on catch trials.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C104 provide comprehensive task description. The design is appropriate for testing the hypotheses, with adequate trial numbers, proper randomization, attention checks (catch trials), and incentive compatibility. The successful performance on catch trials (C97) validates engagement. The orthogonalization of gain and loss magnitudes (C105) is critical for separate analysis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "The experimental design orthogonalized gain and loss magnitudes (r=0.011, p=0.867), and hierarchical Bayesian analysis was used for model fitting, with model comparison showing no significant advantage for separate gain/loss risk attitudes (PXP=0.539, BOR=0.796).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C105-C107 describe critical design and analysis features. The orthogonalization (C105) validates separate analysis of gain and loss effects. The HBA approach (C106) is appropriate and superior to MLE for small samples. The model comparison (C107) justifies using single risk attitude parameter, though the BOR value (0.796) suggests models are not highly distinguishable.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113"
+    ],
+    "result": "fMRI data were acquired on 3T Siemens Prisma scanner, preprocessed and analyzed using SPM12 with appropriate multiple comparison correction (voxel p<0.001, cluster FDR p<0.05), and mediation analyses used PROCESS macro with 5000 bootstrap samples.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C108-C113 describe standard neuroimaging methods. The scanner specifications, preprocessing pipeline, and statistical corrections are appropriate and clearly documented. The multiple comparison correction (C110) is adequate though not the most conservative. The mediation analysis approach (C112-C113) with bootstrap resampling is appropriate for the sample size.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14"
+    ],
+    "result": "Prior literature establishes that dispositional greed is characterized by insatiable desire for more and dissatisfaction with current possessions, is associated with impulsivity and risk-taking, but shows inconsistent empirical relationships with risk-taking behavior across different task contexts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C14 provide literature review establishing the research context. The characterization of greed (C1, C8) is well-cited, as are associations with impulsivity and risk-taking (C2, C9-C10). The identification of inconsistent findings (C11-C13) and EEG evidence (C14) appropriately motivates the current study. These are primarily knowledge claims supported by citations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "Theoretical framework based on prospect theory predicts that greed personality should relate to loss aversion rather than risk attitude, affecting risk-taking selectively in mixed gambles where loss aversion operates, with neural loss aversion potentially encoded in ventral striatum, amygdala, and OFC.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C22 establish the theoretical framework and hypotheses. The prospect theory foundation (C15-C17) is well-established. The hypothesis linking greed to loss aversion (C18-C19) is novel but logically derived from the literature review. The neural predictions (C20) are appropriately grounded in prior neuroimaging work. The consideration of impulsivity as confound (C21-C22) strengthens the design.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C65",
+      "C77",
+      "C78"
+    ],
+    "result": "Greed is conceptualized as a multi-faceted trait with two components: insatiable appetite for more (linked to impulsivity and addiction) and dissatisfaction with current state (linked to loss aversion through framing effects), which may manifest differently across contexts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C56, C65, C77-C78 provide theoretical discussion of greed components. The two-facet conceptualization is supported by citations (C55-C56) and consistent with the empirical findings. The speculation about context-dependence (C77-C78) is appropriately qualified and supported by citations. This provides theoretical coherence to the findings.",
+    "result_type": "MINOR"
+  }
+]

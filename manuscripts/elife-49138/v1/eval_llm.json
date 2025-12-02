@@ -1,0 +1,488 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C24",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "In silico saturation mutagenesis was performed on MLH1, generating 10,716 variants covering 75% of all possible missense variants. FoldX predictions revealed that 34% of substitutions change stability by less than 0.7 kcal/mol (the typical error), while 32% cause substantial destabilization (>2.5 kcal/mol).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24, C29-C33 describe the computational saturation mutagenesis approach and its results. The methodology is clearly described, the calculations are straightforward (19 amino acids \u00d7 564 positions = 10,716 variants), and the distribution of predicted stability changes is presented in Figure 1E. The approach is standard and the results are internally consistent.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C22",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "Experimental measurement of 69 MLH1 variants showed that all benign variants had steady-state levels >70%, while 62% (18/29) of pathogenic variants had levels <70%, indicating that protein destabilization is a common feature of pathogenic MLH1 variants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C22, C34-C36 are supported by the experimental data in Figure 2B and Table 1. The measurements were performed using automated immunofluorescence microscopy with appropriate controls (n=5 experiments, 200-1000 cells per variant). The correlation between pathogenicity and reduced protein levels is clear and statistically meaningful.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C6",
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "There is a strong correlation between predicted structural destabilization (\u0394\u0394G), reduced steady-state levels, and loss-of-function (DME scores). Functional variants (DME=3) have high steady-state levels (22/23 >70%) and low predicted destabilization (none >3 kcal/mol), while non-functional variants (DME=0) show the opposite pattern (only 5/23 >70% levels, 18/23 predicted \u0394\u0394G >3 kcal/mol).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C37-C40 describe correlations between three independent measures: computational predictions, experimental protein levels, and functional assays from prior work (Takahashi et al., 2007). The data in Figure 2C-D and Table 1 clearly support these correlations. The consistency across three orthogonal measures strengthens the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "Detailed analysis of eight selected MLH1 variants confirmed that six variants with reduced steady-state levels are rapidly degraded (half-lives 3-12 hours) via the proteasome, as demonstrated by cycloheximide chase experiments and rescue by proteasome inhibitor bortezomib.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C49 are supported by multiple complementary experiments shown in Figure 3. Western blots (Figure 3A-B) confirm reduced levels, cycloheximide chase experiments (Figure 3C-D) demonstrate rapid degradation, and bortezomib treatment (Figure 3E) rescues unstable variants while not affecting stable ones. The experiments include appropriate controls and replicates (n=3).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C4",
+      "C67",
+      "C68",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "Four destabilized MLH1 variants (G67R, R100P, T117M, R265C) show strong interaction with HSP70 (up to 7-fold greater than wild-type), and HSP70 inhibition increases levels of three of these variants, demonstrating that HSP70 actively participates in detecting and directing certain destabilized MLH1 variants for degradation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C67-C68, C72-C74 are supported by co-immunoprecipitation experiments (Figure 5A-B) showing selective HSP70 binding to destabilized variants, and HSP70 inhibition experiments (Figure 5E-F) showing rescue of the most unstable variants. The mechanistic link between HSP70 binding and degradation is well-established in the literature and the data are consistent with this model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C5",
+      "C23",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "Degradation of MLH1 results in proteasomal degradation of binding partners PMS1 and PMS2. In the absence of MLH1, PMS1 and PMS2 are rapidly degraded (t\u00bd ~3-5 hours), but are stabilized (t\u00bd ~12 hours) when wild-type MLH1 is present. MLH1 levels correlate with PMS1 and PMS2 levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C23, C56-C60 are supported by cycloheximide chase experiments (Figure 4A-B), bortezomib rescue experiments (Figure 4C), and correlation analyses (Figure 4F). The experiments demonstrate that PMS1/PMS2 stability depends on MLH1 presence, consistent with the known biology of orphan proteins lacking their binding partners. The data include appropriate controls and replicates (n=3).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "Co-immunoprecipitation experiments showed that wild-type and stable MLH1 variants bind PMS2 efficiently, while several unstable variants do not bind PMS2 even when degradation is blocked. The K618A variant retains PMS2 binding despite being unstable, suggesting it may be functional but prematurely degraded.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C65 are supported by co-IP experiments in Figure 4H performed with bortezomib treatment to ensure sufficient protein levels. The differential binding patterns are clear, and the K618A result is particularly interesting as it suggests a variant that is unstable but retains function. This is further supported by K618's distal position from the PMS2 binding site (C66).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C8",
+      "C25",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "A logistic regression model combining FoldX \u0394\u0394G predictions and evolutionary sequence energies achieves the best performance (AUC 0.90\u00b10.03) in separating pathogenic from benign MLH1 variants, correctly classifying 85% (99/116) of ClinVar variants in jackknife testing. This outperforms individual predictors and existing tools (REVEL AUC 0.83, PolyPhen2 AUC 0.84, PROVEAN AUC 0.76).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C25, C88-C94 are supported by comprehensive ROC analyses shown in Figure 6F and Figure 6\u2014figure supplement 3. The jackknife cross-validation approach (Figure 6E) appropriately addresses overfitting concerns. The comparison with established predictors is fair and the performance metrics are clearly reported with error estimates from 100 randomly sampled balanced subsets. The combination of structure-based and evolution-based predictions is conceptually sound.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "Analysis of population frequency data (gnomAD) and ClinVar annotations shows that common variants are predicted to be stable (low \u0394\u0394G) and functional, while pathogenic variants are enriched for destabilizing mutations. In the study dataset, 54% of pathogenic variants have \u0394\u0394G >3 kcal/mol while no benign variants have \u0394\u0394G >1.5 kcal/mol. Similar trends are observed across all ClinVar variants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C87 are supported by analyses shown in Figure 6A-B. The correlation between population frequency, predicted stability, and pathogenicity is clear and biologically sensible. The specific percentages are directly calculated from the data. The consistency between the study's 69 variants and the broader ClinVar dataset strengthens the conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "SpliceAI predictions indicate that 16% (19/116) of ClinVar variants may affect splicing, all of which are pathogenic variants. Notably, 4 of 7 variants misclassified by the regression model are predicted to affect splicing, suggesting they may be pathogenic through splicing defects rather than protein-level effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95-C97 are supported by SpliceAI analysis shown in Figure 6G. The observation that misclassified variants are enriched for predicted splicing effects (4/7 = 57% vs 15/88 = 17% for correctly classified variants) is statistically meaningful and provides a plausible explanation for the model's errors. This demonstrates appropriate consideration of alternative mechanisms of pathogenicity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C50",
+      "C51"
+    ],
+    "result": "Destabilized MLH1 variants are more insoluble than stable variants, and bortezomib treatment primarily increases the insoluble fraction of MLH1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C51 are supported by fractionation experiments in Figure 3\u2014figure supplement 1. The observation that proteasome inhibition leads to accumulation of insoluble protein is consistent with the model that destabilized variants are targeted for degradation before they can aggregate extensively. The experiments include appropriate controls (GAPDH for soluble, PMCA for insoluble fractions).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C75"
+    ],
+    "result": "HSP90 binds to all tested MLH1 variants including wild-type, and HSP90 inhibition does not affect MLH1 protein levels. This suggests HSP90 may be involved in de novo folding or complex assembly rather than degradation of destabilized variants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C70, C75 are supported by co-IP experiments (Figure 5C-D) and HSP90 inhibition experiments (Figure 5G-H). The uniform binding pattern and lack of effect on protein levels distinguish HSP90 from HSP70. However, C70 is speculative about HSP90's role in folding/assembly, which is appropriately noted in the claim evidence. The data support the conclusion that HSP90 does not play a role in selective degradation of variants.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "Unstable and non-functional variants are distributed throughout both N- and C-terminal domains of MLH1 rather than being clustered, though affected positions are closer to each other than random pairs (17.3 \u00c5 vs 24.1 \u00c5 in N-terminal, 14.7 \u00c5 vs 21.0 \u00c5 in C-terminal). The linker region is depleted in detrimental variants but not benign variants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C43 are supported by structural analyses shown in Figure 2E and Figure 2\u2014figure supplement 2. The distance calculations are straightforward and the observation that pathogenic variants are somewhat clustered but not localized to a single site is clearly demonstrated. The depletion of pathogenic variants in the unstructured linker region is biologically sensible.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C104",
+      "C105"
+    ],
+    "result": "Wild-type MLH1 appears to be only marginally stable based on thermal stability assays, and the effects of destabilizing substitutions may result from local unfolding events rather than global unfolding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C104-C105 are supported by thermal stability data in Figure 2\u2014figure supplement 1 showing that MLH1 is less thermostable than abundant cellular proteins. However, C105 is explicitly speculative about local vs. global unfolding. The speculation is reasonable given that mild destabilization (~3 kcal/mol) triggers degradation, but direct evidence for local unfolding is not provided. The authors appropriately acknowledge this as an area for future research (C124).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C7",
+      "C112",
+      "C113",
+      "C135",
+      "C136",
+      "C137"
+    ],
+    "result": "The authors propose a model where missense mutations cause MLH1 destabilization, leading to degron exposure, HSP70-assisted proteasomal degradation, disruption of MMR, and ultimately increased cancer risk in Lynch syndrome patients. Loss of stability and cellular degradation is suggested as an important mechanism underlying many MLH1 variants in Lynch syndrome.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C112-C113, C135-C137 represent the overall mechanistic model supported by the collective experimental evidence. The model integrates computational predictions, protein stability measurements, degradation kinetics, chaperone interactions, and functional data. While individual components are well-supported, the complete mechanistic chain (especially the role of degrons, C135) involves some inference beyond the direct experimental data. The model is consistent with established protein quality control mechanisms and the data presented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C103",
+      "C109"
+    ],
+    "result": "A relatively mild destabilization of approximately 3 kcal/mol is sufficient to trigger MLH1 degradation, and predictions of changes to global folding stability are effective in distinguishing variants that are stable from those that are rapidly degraded.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C103 and C109 are supported by the correlation between predicted \u0394\u0394G values and measured degradation (Figure 2B-D). The ~3 kcal/mol threshold is consistent with prior studies on other proteins (cited in C103). However, the authors acknowledge surprise that global stability predictions work well (C109) given that local unfolding may be the actual mechanism, suggesting some mechanistic uncertainty despite the empirical correlation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "Full-length human MLH1 is a 756 residue protein with two folded domains (N-terminal residues 7-315, C-terminal residues 502-756) separated by a flexible intrinsically disordered linker.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C28 describe the established structure of MLH1 supported by citation to Mitchell et al., 2019 and the crystal structures used in the study (PDB IDs 4P7A and 3RBN). This is well-established structural knowledge and provides essential context for the computational and experimental work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "FoldX provides an orthogonal structure-based prediction method that was trained solely on biophysical stability measurements rather than pathogenicity data, reducing overfitting risk and enabling mechanistic insights into why mutations are problematic.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C79 accurately describe the FoldX method and its advantages. C77 is supported by citation to the original FoldX paper (Guerois et al., 2002). C78 correctly notes that training on biophysical data rather than pathogenicity reduces overfitting. C79 is supported by multiple citations demonstrating the utility of stability predictions for understanding disease mechanisms. These claims provide important methodological context.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C119",
+      "C120",
+      "C121"
+    ],
+    "result": "Analysis of variants of uncertain significance (VUS) suggests that E23D may be pathogenic despite not being destabilized (based on high evolutionary sequence energy), K618A may be functional but prematurely degraded (retains PMS2 binding), and several VUS (G54E, G244V, L676R) are likely pathogenic based on low steady-state levels, high \u0394\u0394G, and low DME scores.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C119-C121 represent interpretations of VUS data that are explicitly speculative (C119, C120) or inferential (C121). While the data supporting these interpretations are sound (evolutionary energies for E23D, PMS2 binding for K618A, multiple metrics for G54E/G244V/L676R), these remain predictions rather than validated classifications. The authors appropriately present these as suggestions rather than definitive conclusions. Additional functional validation would be needed to confirm these predictions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "Background claims about mismatch repair, Lynch syndrome, and the role of MLH1/MSH2 mutations in hereditary cancer.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2, C9-C16 represent well-established background knowledge about DNA mismatch repair and Lynch syndrome, supported by multiple citations to the literature. These provide essential context but are not novel findings of this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "Background claims about mechanisms by which missense mutations cause disease, including prior work on protein destabilization and degradation in various diseases including Lynch syndrome.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C21, C99-C101 provide background on protein destabilization as a disease mechanism, supported by citations to prior work on cystic fibrosis, phenylketonuria, Parkinson's disease, and MSH2-linked Lynch syndrome. These establish the conceptual framework and prior art for the current study but are not novel findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "Background claims about MLH1 protein complexes: MLH1 associates with PMS2 to form MutL\u03b1 (essential for MMR), can bind PMS1 to form MutL\u03b2 (function unknown), and PMS2 is unstable without MLH1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C55 describe established biology of MLH1 complexes, supported by multiple citations. These provide necessary biological context for understanding the experimental results on PMS1/PMS2 degradation but are not novel findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C106",
+      "C107",
+      "C108"
+    ],
+    "result": "The protein quality control system is tightly tuned to detect minor structural defects and preferably targets folding intermediates, as supported by prior work showing some destabilized MSH2 variants are functional when degradation is blocked.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C106-C108 represent inferences about protein quality control mechanisms based on the current data (C106) and prior work on MSH2 and other proteins (C107-C108). The inferences are reasonable and supported by citations (Arlow et al., 2013; Bershtein et al., 2013), though they extend beyond the direct experimental evidence in this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C122",
+      "C123",
+      "C124"
+    ],
+    "result": "In cellular context, local elements of MLH1 likely unfold rather than complete unfolding, and the locally unfolded state allows chaperones and quality control components to target the protein for degradation. Better understanding of local unfolding is identified as an important area for future research.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C122-C124 represent a mechanistic hypothesis about local vs. global unfolding that is explicitly speculative (C122, C124) and based on general knowledge of protein quality control (C123). While the hypothesis is reasonable and consistent with the data (mild destabilization triggers degradation), direct evidence for local unfolding is not provided. The authors appropriately identify this as an area requiring further research.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C125",
+      "C126",
+      "C127",
+      "C128"
+    ],
+    "result": "Stability calculations can identify approximately 60% of pathogenic variants at high specificity, similar to findings in PTEN. Stability prediction has high specificity but may have lower sensitivity because stability is necessary but not sufficient for function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C125-C128 are supported by ROC analysis (Figure 6F) and comparison to prior work on PTEN (C126, cited as Jepsen et al., 2019). The interpretation that stability is necessary but not sufficient (C128) is speculative but reasonable given that some stable variants are pathogenic. The ~60% figure for variants affected by destabilization is consistent across MLH1 and PTEN, suggesting this may be a general phenomenon.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134"
+    ],
+    "result": "Degradation signals (degrons) are buried in native protein structures and exposed upon destabilization, leading to recognition by chaperones and degradation. While biophysical calculations can predict destabilization, in silico prediction of degrons is not currently possible because their nature is largely undefined.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C129-C134 integrate the current findings with established knowledge about protein quality control and degrons. C129-C130 are supported by multiple citations to the degron literature. C131 represents a reasonable inference about the dual role of stability and degrons. C132 is supported by the success of the stability predictions in this study. C133-C134 accurately describe current limitations in the field, supported by citations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C138"
+    ],
+    "result": "The findings potentially open up new therapeutic approaches including inhibiting protein quality control-mediated clearance of marginally stable MLH1 variants or using small molecule stabilizers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C138 is explicitly speculative about potential therapeutic applications. While the mechanistic understanding developed in this study could inform such approaches, no therapeutic experiments or proof-of-concept studies are presented. This represents a reasonable direction for future work but is not a supported result of the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C110",
+      "C111"
+    ],
+    "result": "Improved understanding of cellular quality control biophysics might lead to better predictions of cellular abundance, and multiple disease-linked MLH1 variants are expected to display reduced cellular levels based on the correlation between predicted stability and pathogenicity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C110-C111 represent reasonable inferences from the data. C110 is speculative about future improvements but is based on the observation that current predictions work well despite mechanistic uncertainties. C111 is a reasonable extrapolation from the observed correlation between predicted stability and pathogenicity to the broader set of disease-linked variants. Both are appropriately qualified as expectations/suggestions rather than proven facts.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R29",
+    "claim_ids": [
+      "C114",
+      "C115"
+    ],
+    "result": "Among variants with low or no function (DME=0 or 1), 20/31 have steady-state levels <70% of wild-type. Loss-of-function variants with high steady-state levels can affect function without modifying stability, for example by changing binding interfaces or active sites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C114-C115 are supported by the data in Table 1 and Figure 2C. C114 is a direct count from the data. C115 represents established knowledge about mechanisms of loss-of-function (supported by citation to Gueneau et al., 2013) and explains the observation that some non-functional variants are stable. This is an important caveat to the main findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R30",
+    "claim_ids": [
+      "C66"
+    ],
+    "result": "K618 is positioned distally to the PMS2 binding site in MLH1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C66 is supported by citation to Gueneau et al., 2013 and represents structural knowledge that helps explain why the K618A variant can bind PMS2 despite being unstable. This is a minor supporting detail for the interpretation of the K618A results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R31",
+    "claim_ids": [
+      "C102"
+    ],
+    "result": "Single amino acid changes in MLH1 are sufficient to cause degradation, similar to results from other proteins including PTEN, TPMT, and MSH2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C102 is supported by the experimental data in this study showing that single missense mutations lead to degradation, and by citations to similar findings in other proteins. This represents an important general principle about protein quality control that is reinforced by the current findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R32",
+    "claim_ids": [
+      "C118"
+    ],
+    "result": "According to ClinVar, approximately 84% (711/851) of reported MLH1 missense variants are classified as variants of uncertain significance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C118 is a factual statement about the ClinVar database supported by citation to Landrum et al., 2018. This provides important context for the clinical relevance of the predictive methods developed in the study, as the majority of reported variants lack definitive classification.",
+    "result_type": "MINOR"
+  }
+]

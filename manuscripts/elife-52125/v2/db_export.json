@@ -1,0 +1,1756 @@
+{
+  "submission": {
+    "id": "8c586c7f-27c4-45b9-b106-8db7b021e2e1",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T15:03:44.545912Z",
+    "updated_at": "2025-12-02T15:03:44.545912Z"
+  },
+  "content": [
+    {
+      "id": "d28e558a-c09d-4fdf-85db-9cf6c8e1a0cc",
+      "submission_id": "8c586c7f-27c4-45b9-b106-8db7b021e2e1",
+      "content_type": "manuscript",
+      "content_text": "# Structural basis of transcription inhibition by the DNA mimic protein Ocr of bacteriophage T7\n\n## Authors\n\n- Fuzhou Ye<sup>1</sup>\n- Ioly Kotta-Loizou<sup>2</sup>\n- Milija Jovanovic<sup>2</sup>\n- Xiaojiao Liu<sup>1</sup>\n- David TF Dryden<sup>4</sup>\n- Martin Buck<sup>2</sup> ([ORCID: 0000-0002-7580-8982](https://orcid.org/0000-0002-7580-8982))\n- Xiaodong Zhang<sup>1</sup> ([ORCID: 0000-0001-9786-7038](https://orcid.org/0000-0001-9786-7038)) \u2020\n\n### Affiliations\n\n1. Section of Structural Biology, Department of Infectious Diseases, Faculty of Medicine Imperial College London London United Kingdom\n2. Department of Life Sciences, Faculty of Natural Sciences Imperial College London London United Kingdom\n3. College of Food Science and Engineering Northwest A&F University Yangling China\n4. Department Biosciences Durham University Durham United Kingdom\n\n\u2020 Corresponding author\n\n## Abstract\n\nBacteriophage T7 infects Escherichia coli and evades the host restriction/modification system. The Ocr protein of T7 was shown to exist as a dimer mimicking DNA and to bind to host restriction enzymes, thus preventing the degradation of the viral genome by the host. Here we report that Ocr can also inhibit host transcription by directly binding to bacterial RNA polymerase (RNAP) and competing with the recruitment of RNAP by sigma factors. Using cryo electron microscopy, we determined the structures of Ocr bound to RNAP. The structures show that an Ocr dimer binds to RNAP in the cleft, where key regions of sigma bind and where DNA resides during transcription synthesis, thus providing a structural basis for the transcription inhibition. Our results reveal the versatility of Ocr in interfering with host systems and suggest possible strategies that could be exploited in adopting DNA mimicry as a basis for forming novel antibiotics.\n\n## Introduction\n\nBacteriophage T7 infects Escherichia coli and hijacks the host cellular machinery to replicate its genome (Studier, 1972; Kr\u00fcger and Schroeder, 1981; Hausmann and Messerschmid, 1988). The T7 genome encodes 56 proteins with many functioning as structural proteins for the bacteriophage. A number of T7 proteins are known to specifically inhibit the bacterial cellular machinery. For example, proteins gp0.7, gp2 and gp5.7 inhibit cellular transcription (C\u00e1mara et al., 2010; Tabib-Salazar et al., 2018) whereas gp0.3 inhibits restriction/modification (RM) enzymes (Studier, 1975).\n\nGp0.3 is the first T7 gene expressed after infection and T7 variants lacking gene 0.3 were shown to have genomes susceptible to E. coli RM systems (Studier, 1975). Subsequently the 117 amino acid protein gp0.3 was named Overcome Classical Restriction (Ocr) (Kr\u00fcger and Schroeder, 1981). Ocr is abundantly expressed and forms a dimer that mimics the structure of a slightly bent 20 base pair B-form DNA (Issinger and Hausmann, 1972; Walkinshaw et al., 2002) and blocks the DNA binding grooves of the type I RM enzyme, preventing the degradation and modification of the T7 genome by the host. Intriguingly, Type I RM enzymes are present in very low numbers (estimated at\u00a0~60 molecules per cell [Kelleher and Raleigh, 1994]). Since Ocr is a DNA mimicry protein, it is possible that the abundantly expressed Ocr (estimated to be several hundreds of molecules per cell at least) (Hausmann and Messerschmid, 1988) also interferes with other DNA processing systems of the host. Indeed early evidence of an interaction between Ocr and the host RNA polymerase (RNAP) was obtained using pull-down affinity chromatography (Ratner, 1974).\n\nRNA polymerase is the central enzyme for transcription, which is a highly controlled process and can be regulated at numerous distinct functional stages (Kornberg, 1998; Decker and Hinton, 2013). The large majority of transcription regulation, however, is executed at the recruitment and initiation stage (Browning and Busby, 2004; Hahn and Young, 2011; Browning and Busby, 2016). To ensure transcription specificity, bacterial RNAP relies on sigma (\u03c3) factors to recognise gene-specific promoter regions. E. coli has seven sigma factors which can be grouped into two classes, the \u03c370 class represented by \u03c370, responsible for transcribing housekeeping genes, and the \u03c354 class, responsible for transcribing stress-induced genes including phage infection (Fekl\u00edstov et al., 2014; Browning and Busby, 2016). Much work has yielded a detailed mechanistic understanding of how transcription directed by \u03c370 and \u03c354 is initiated (Zhang et al., 2012; Glyde et al., 2018). Specifically, the two large RNAP subunits \u03b2 and \u03b2\u2019 form a crab claw structure that encloses the DNA binding cleft, accommodating the transcription bubble and the downstream double-stranded (ds) DNA (Bae et al., 2015; Zuo and Steitz, 2015).\n\nInhibiting host transcription is widely exploited by bacteriophages including T7 on E. coli and P23-45 on T. thermophilus (Tagami et al., 2014; Tabib-Salazar et al., 2017; Ooi et al., 2018). Gp0.7, gp2 and gp5.7 of T7 were shown to inhibit bacterial RNAP (C\u00e1mara et al., 2010; Tabib-Salazar et al., 2017). Gp0.7 is a protein kinase that phosphorylates the E. coli RNAP-\u03c370, resulting in transcription termination at sites located between the early and middle genes on the T7 genome, gp2 specifically inhibits \u03c370-dependent transcription initiation and gp5.7 inhibits \u03c3S, responsible for stationary phase adaptation (Bae et al., 2013; Tabib-Salazar et al., 2018). Two proteins gp39 and gp76 of bacteriophage P23-45 were shown to inhibit T. thermophilus transcription (Tagami et al., 2014; Ooi et al., 2018). Importantly, RNAP is a validated antibacterial target and novel inhibitors of RNAP hold promise for potential new antibiotic development against antimicrobial resistance (Ho et al., 2009; Srivastava et al., 2011; Ma et al., 2016).\n\nIn this work, we investigate the potential effects of Ocr on the host transcriptional machinery. Our results with purified components show that Ocr can bind to RNAP and inhibit both \u03c370 and \u03c354 dependent transcription. Specifically we establish that an Ocr competes with sigma binding, thus affecting recruitment and can inhibit transcription both in vitro and in E. coli cells when over-expressed. Using structural biology, we show that the Ocr dimer directly binds to RNAP at the RNAP cleft, where sigma factors and the transcription bubble bind, suggesting that Ocr interferes with transcription recruitment by competing with sigma factor binding, and could also interfere with transcription initiation. Our work thus reveals the detailed molecular mechanisms of how Ocr could potentially affect the host through inhibiting transcription in addition to its role in knocking out host restriction and modification. These new structural details of RNAP-Ocr complexes allow comparisons with known transcription initiation complexes and other phage proteins suggesting new avenues to be exploited for inhibiting bacterial transcription and combating antibiotic resistance.\n\n## Results\n\n### Ocr interacts with RNAP with high affinity\n\nAn early study by Ratner (1974) showed that upon T7 infection, Ocr protein was detected in pull-down experiments using host RNAP as bait, suggesting that Ocr could associate with the host transcriptional machinery. To assess if Ocr can engage with RNAP directly, we carried out in vitro interaction studies using purified components (Figure 1, Figure 1\u2014figure supplement 1). We observed that purified Ocr co-eluted with RNAP in gel filtration experiments, suggesting a tight interaction of RNAP and Ocr sufficient to withstand the lengthy elution time of the complex during chromatography (Figure 1A\u2013C). The complex persisted for the order of minutes during chromatography, suggesting a stable complex. To quantify the interactions, we carried out binding experiments between RNAP and Ocr using microscale thermophoresis (MST). Our results show the binding affinity (dissociation constant, Kd) is in the order of 10 nM, similar to that of RNAP with sigma factors (Figure 1D\u2013F). These results thus confirm the basis for the RNAP-Ocr interaction originally observed (Ratner, 1974). Our observed affinity of Ocr for RNAP is about three orders of magnitude lower than the values reported for the association of Ocr with the EcoKI type I restriction modification enzyme (Atanasiu et al., 2002) as would be expected if the type I RM enzyme was the primary target for Ocr.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/52125/elife-52125-fig1-v2.jpg)\n\n**Figure 1.:** (A) Gel filtration chromatography profiles of RNAP (green), Ocr (blue) and RNAP-Ocr complex (orange). Two peaks correspond to RNAP-Ocr complexes (B) SDS-PAGE of the corresponding fractions from (A) as indicated by coloured dashed lines in (A) and the purified RNAP and Ocr as comparison, the same below in (C). (C) Western blotting of samples from RNAP-Ocr gel filtration fractions to verify the presence of Ocr co-eluting with RNAP, here only Ocr is his-tagged. Two fractions under each peak (as coloured dash arrows shows) in gel-filtration is loaded. (D\u2013F). MST experiments measure the dissociation constants (Kd) of Ocr, \u03c370 and \u03c354 with RNAP. These Kd values represent maximum values.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/52125/elife-52125-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) Quality of proteins used in this study as judged by SDS-PAGE gels. (B\u2013C) RNAP-\u03c370 and RNAP-\u03c354 holoenzymes are formed and purified by gel filtration chromatography and assessed by SDS-PAGE.\n\n### Structures of Ocr in complex with RNAP\n\nIn order to understand how Ocr interacts with RNAP, we subjected the purified complex from size-exclusion chromatography to cryo electron microscopy (cryoEM) single particle analysis. After several rounds of 2D classification, which allowed us to remove ice contaminations, very large particles or particles much smaller than RNAP, the remaining particles were subject to 3D classifications using the structure of the RNAP filtered to 60 \u00c5 as an initial model (PDB code 6GH5, Figure 2\u2014figure supplement 1). Two classes with clear density for Ocr were refined to a global resolution 3.7 and 3.8 \u00c5 respectively although the quality is not uniform in the reconstruction, as demonstrated in the resolution distribution. Two resolution zones seem to be evident, around 3\u20134 \u00c5 and around 7\u20138 \u00c5, reflecting the structural features of the complex (some domains are mobile) and partly due to preferential orientations of the particles (Figure 2, Figure 2\u2014figure supplement 2 and Figure 2\u2014figure supplement 3). The electron density for RNAP is clearly resolved and two distinct structural models of RNAP (taken from PDB code 6GH6 and 6GH5) can be readily fitted into the two reconstructions (Figure 2 and Figure 2\u2014figure supplement 3A). The remaining density region that is not accounted for by RNAP can accommodate an Ocr dimer (Figure 2\u2014figure supplement 3A). The density for Ocr is of sufficient quality that allows accurate positioning of the Ocr atomic structure (PDB code 1S7Z) (Figure 2\u2014figure supplement 3B\u20133C). The regions with the highest resolution within the reconstruction are in the RNAP core (Figure 2\u2014figure supplement 2), where density for many side chains is clearly visible (Figure 2\u2014figure supplement 3C).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/52125/elife-52125-fig2-v2.jpg)\n\n**Figure 2.:** (A) \u2018wide-clamp\u2019 mode. (B) \u2018narrow-clamp\u2019 mode. RNAP and \u03c370 were shown as surface, Ocr shows as cartoon. The colour key is below the figure. \u03b1-grey, \u03b2-pale cyan, \u03b2\u2019-wheat, \u03c9-slate, \u03c370-palegreen, Ocr\u2013magenta (proximal subunit) and yellow (distal subunit), non-template strand DNA(NT)-sky blue, template strand DNA (T)-black. (C) RNAP-\u03c370 open promoter complex (PDB code 6CA0).\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/52125/elife-52125-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** Included are a typical micrograph, representative 2D classes and image processing flowchart, and the two distinct RNAP-Ocr complexes obtained.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/52125/elife-52125-fig2-figsupp2-v2.jpg)\n\n**Figure 2\u2014figure supplement 2.:** (A) \u2018Wide-clamp\u2019 (B) \u2018narrow-clamp\u2019. (A and B) Local resolution maps in surface view and cut-through views (separated by resolution indicator), and angular distribution of particles (the extreme right panel of (A) and (B)). (C) The corresponding FSC curves of wide-clamp and narrow-clamp structures including corrected, unmasked, masked and phase randomized masked maps). (D) Plots showing the spread of the directional resolutions (+/-\u00a01 s.d., green dotted lines) from the global FSC (red line) and the histogram of directional resolutions (blue bars). Labels on the left Y-axis refer to directional FSC histograms. Labels on the right axis refer to global FSC. The grey dotted line indicates when FSC\u00a0=\u00a00.143. (E) FSC curves of model vs the two half maps. The model is only refined against half map 1.\n\n![Figure 2\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/52125/elife-52125-fig2-figsupp3-v2.jpg)\n\n**Figure 2\u2014figure supplement 3.:** (A) Overall fit of the atomic structural models into the corresponding reconstructions. Maps are filtered to local resolutions. left panel - wide clamp conformation (global resolution at 3.7 \u00c5), right panels - narrow clamp conformation (global resolution at 3.8 \u00c5). (B) Views showing structural models of Ocr fitted into the electron density map and the surrounding RNAP. (C) Well defined regions showing clear density of RNAP and Ocr including side chains.\n\n![Figure 2\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/52125/elife-52125-fig2-figsupp4-v2.jpg)\n\n**Figure 2\u2014figure supplement 4.:** The structures are aligned on one Ocr monomer.\n\nDuring 3D classification, it is clear that a number of different conformational and structural classes exist within the dataset and two distinct classes were identified due to their widely differing RNAP clamp conformations (Figure 2\u2014figure supplement 1). Bacterial RNAP consists of five subunits forming a crab claw shape with the two large subunits \u03b2 and \u03b2\u2019 forming the claws (or clamp) which enclose the RNAP channel that accommodates the transcription bubble and downstream double-stranded (ds) DNA. The RNAP clamp is highly dynamic and single-molecule Forster Resonant Energy Transfer data have shown that the RNAP clamp adapts a range of conformations from closed to open involving more than 20 \u00c5 movement and 20o rotation of the clamp (Chakraborty et al., 2012). Our recent structural work showed that specific clamp conformations are associated with distinct RNAP functional states with the widely opened clamp conformation associated with the DNA loading intermediate state (Glyde et al., 2018).\n\nIn both of the distinct RNAP-Ocr complex structures, Ocr remains as a dimer upon binding to RNAP (Figure 2A\u2013B) and the Ocr dimers are slightly less bent compared to that of an Ocr alone crystal structure (Figure 2\u2014figure supplement 4). In one structure, the entire Ocr dimer inserts deeply into the RNAP cleft, occupying the full RNAP nucleic acid binding channel including where the transcription bubble and the downstream DNA resides in the transcriptional open and transcribing complex (Figure 2A, Figure 2C, Figure 3A). In this interaction mode, the RNAP clamp is wide open and both Ocr subunits are involved in the interactions (Figure 2A, Figure 3B, Figure 2\u2014figure supplement 3), we thus denote it as the \u2018wide clamp structure\u2019. The second structure involves only one of the two Ocr subunits within the dimer contacting RNAP, occupying only the downstream DNA channel. Here the RNAP clamp is less open and we denote this structure the \u2018narrow clamp structure\u2019 (Figure 2B, Figure 2\u2014figure supplement 3).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/52125/elife-52125-fig3-v2.jpg)\n\n**Figure 3.:** (A\u2013B) Comparison with initial transcribing complex structure (PDB 4YLN). (C) Ocr resides in the positively charged RNAP channel. (D\u2013E) Detailed charge distributions of RNAP and Ocr in the interacting regions. Blue \u2013 positive charge, red \u2013 negative charge.\n\nIn the wide clamp structure, the RNAP clamp conformation is very similar to the conformation observed in the transcription initiation intermediate complex where the clamp is wide open and DNA is partially loaded into the cleft Glyde et al., 2018). In this structure, the Ocr dimer inserts into the RNAP channel and each of the two Ocr subunits, which we term proximal and distal, and makes distinct interactions with RNAP. The proximal subunit is deeply embedded in the RNAP cleft and occupies the space for the template strand DNA, the complementary newly synthesised RNA and the non-template strand DNA (Figure 2 and Figure 3, magenta [Bae et al., 2015; Zuo and Steitz, 2015; Glyde et al., 2018]). The distal Ocr subunit occupies the position of the downstream DNA (Figure 2 and Figure 3A, yellow). The negatively charged surface of the proximal Ocr complements the highly positively charged surface of the surrounding RNAP and fits snugly into the channel formed by \u03b2 and \u03b2\u2019 subunits (Figure 3C\u2013E). The distal Ocr subunit mimics the downstream DNA in its interactions with the \u03b2\u2019 clamp. Superposition of the \u03b2\u2019 clamp in the RNAP-Ocr structure with that of initial transcribing complex shows the distal Ocr monomer aligns with downstream dsDNA in the initial transcribing complex (Figure 3B). However, the Ocr dimer has a rigid conformation that resembles a bent B-DNA. Consequently, in order to maintain the interactions between both Ocr subunits and RNAP, the \u03b2\u2019 clamp has to open up (to\u00a0~58 \u00c5 in RNAP-Ocr from\u00a0~35 \u00c5 in RPo) to accommodate the Ocr dimer compared to RPo that accommodates a transcriptional bubble and dsDNA (Figure 2).\n\nIn the narrow clamp mode, the proximal Ocr subunit interacts with the \u03b2\u2019 clamp, again mimicking downstream DNA in RPo although the clamp is more open (~45 \u00c5) compared to that in RPo (~35 \u00c5) (Figure 2B\u2013C). Interestingly, although an Ocr monomer surface mimics that of a dsDNA in the overall dimension and the negative charge distributions, the Ocr subunit in the narrow clamp structure does not exactly overlay with the downstream dsDNA in RPo when RNAP is aligned on its bridge helix, the highly conserved structural feature that is close to the active centre and connects \u03b2 and \u03b2\u2019 clamps (Figure 4A). Instead Ocr is shifted upwards compared to the dsDNA in RPo (Figure 4A). Inspecting the structures of Ocr and RNAP explain the differences. The downstream binding channel of RNAP consists of \u03b2 and \u03b2\u2019 clamps on two sides and the \u03b2\u2019 jaw domain as a base, providing a positively charged environment on three sides, required to accommodate and engage with the negatively charged DNA during transcription (Figure 4B). Although an Ocr monomer has a largely negatively charged surface, there are also positively charged patches on the Ocr surface, especially those facing the \u03b2\u2019 jaw domain (Figure 4C). In order to maintain the interactions between Ocr and the \u03b2\u2019 clamp and to overcome charge repulsions with the \u03b2\u2019 jaw, the \u03b2\u2019 clamp is opened up, shifting Ocr upwards and away from the jaw domain.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/52125/elife-52125-fig4-v2.jpg)\n\n**Figure 4.:** (A) Two orthogonal views of RNAP-Ocr narrow-clamp structure (RNAP shows as surface and Ocr shows as cartoon (magenta and yellow), overlaid with \u03c370 open complex structure (PDB code 6CA0). (B) Surface charge distribution of RNAP showing positively charged surfaces in the cleft where Ocr binds. Magenta ellipse \u2013 where Ocr binds. (C) Surface charge distribution of Ocr facing the bottom of the cleft including \u03b2\u2019 jaw domain. Magenta ellipse \u2013 area of Ocr that is inside the cleft showing both negative and positively charged areas. Blue \u2013 positively charged, red \u2013 negatively charged.\n\n### Ocr inhibits transcription in vitro and in cells\n\nIn order to understand the significance of Ocr binding to RNAP, we investigated the effects of Ocr on in vitro transcription using short-primed RNA (spRNA) assays performed on various promoter DNAs (see Materials and methods). To determine the effect of Ocr on RNAP-\u03c370 transcription activity we performed in vitro transcription assays using different promoters and promoter variants such as linear \u03c370 promoter, or lacUV5 promoter (C\u00e1mara et al., 2010) as well as a T7A1 supercoiled promoter (Figure 5A\u2013B, Figure 5\u2014figure supplement 1). Our data reveal that adding 5 \u03bcM Ocr decreased activity of RNAP-\u03c370 on the different promoters in the range of 70\u201310%. On the linear promoter in the presence of 5 \u03bcM Ocr the amount of spRNA was significantly reduced (to 10\u201330%) when Ocr was added prior to or after the holoenzyme formation but before DNA was added (Figure 5A-B I-II). However, the effect of Ocr after DNA was added was less pronounced (Figure 5A\u2013B III). Ocr did not abolish transcription on the supercoiled T7A1 promoter at the same extent as on the linear promoters, indicating a role for DNA topology and perhaps the energy barriers of DNA opening in open complex formation and the promoter sensitivity to Ocr (Figure 5\u2014figure supplement 1C I-III).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/52125/elife-52125-fig5-v2.jpg)\n\n**Figure 5.:** (A-B) spRNA experiments on \u03c370 using two different promoter DNAs. Reaction schematics are shown with I, II, III representing experiments when Ocr is added during different stages of transcription initiation reaction. A control lane without Ocr is also shown. (C-D) using a reporter assay, we show that over-express of Ocr in E. coli cells inhibits cell growth (C) and \u03b2-galactosidase activities (D). At least three independent experiments were performed, each with 3\u20135 technical replicates.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/52125/elife-52125-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** Reaction schematics are shown with I, II, III, IV representing experiments when Ocr is added during different stages of transcription initiation reaction. A control lane without Ocr is also shown. Data here show that Ocr can inhibit \u03c354 and \u03c370-dependent transcription during different stages of initiation and independent of promoters. At least three independent experiments were performed, each with 3\u20135 technical replicates.\n\n![Figure 5\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/52125/elife-52125-fig5-figsupp2-v2.jpg)\n\n**Figure 5\u2014figure supplement 2.:** (A) \u03b2-galactosidase activity and (B) lacZ mRNA levels at 15 hr post-induction in the presence and absence of Ocr. At least three independent experiments were performed, each with 3\u20135 technical replicates.\n\nThe effect of Ocr on the major variant RNAP-\u03c354 dependent transcription was also assessed using different variants of Sinorhizobium meliloti nifH promoter including linear and supercoiled DNA (Chaney and Buck, 1999; Glyde et al., 2018), (Figure 5\u2014figure supplement 1A,B). The phage shock protein F (PspF1-275) was used as an activator of RNAP-\u03c354 transcription to promote open complex formation (see Materials and methods). Again, on both linear and supercoiled nifH promoters the RNAP-\u03c354 complexes were sensitive to Ocr (Figure 5\u2014figure supplement 1).\n\nOur results show that Ocr can efficiently inhibit transcription in vitro. We next tested to see if expression of Ocr in cells could indeed exhibit an effect in cells. We used E. coli MG1655 cells expressing Ocr from a plasmid vector under the control of an arabinose-inducible promoter and a range of growth conditions (Supplementary file 1).\n\nAn Ocr-mediated growth inhibition effect was indeed observed in minimal modified M9 media (Figure 5C). The effects were further assessed using the chromosomal \u03b2-galactosidase gene as a reporter. During the 5 hr period following induction with IPTG, a\u00a0~\u00a010 fold decrease of normalised \u03b2-galactosidase activity was observed in E. coli cells expressing Ocr compared to cells that do not express Ocr (Figure 5D). Moreover, at 15 hr post-induction, upon induction, there was a 4-fold increase of normalised \u03b2-galactosidase activity in cells not expressing Ocr, while the \u03b2-galactosidase activity in cells expressing Ocr was lower overall and the observed increase upon induction was less than 2-fold (Figure 5\u2014figure supplement 2A). Subsequent measurements of lacZ mRNA using reverse transcription followed by quantitative polymerase chain reaction (RT-qPCR) showed that the observed \u03b2-galactosidase activity is concomitant with lacZ mRNA levels (Figure 5\u2014figure supplement 2B), confirming that Ocr was inhibitory for transcription in cells.\n\n### Ocr inhibits RNAP recruitment and open complex formation but does not disrupt pre-formed open complexes\n\nSince Ocr interfered with transcription, we wanted to investigate whether it does so through interfering with RNAP recruitment by sigma and/or other processes required for transcription. Specifically, we probed the ability of Ocr in interfering with RNAP- \u03c3 holoenzyme and holoenzyme-promoter complex formation (recruitment) and pre-formed open complex, which is competent for transcription, thus allowing us to assess the effects on elongation.\n\nUsing purified components and gel mobility shift assays, Ocr was observed to inhibit RNAP-\u03c370 holoenzyme formation in a concentration dependent fashion and irrespective of whether Ocr is added before or after \u03c3 (Figure 6A and B, comparing lane 6 with 7\u201310). Direct competition experiments with pre-formed RNAP-\u03c370 holoenzyme show that appearance of a RNAP-Ocr complex accompanies the disappearance of the RNAP-\u03c370 holoenzyme, (Figure 6A and B, comparing lane 6 with lanes 11\u201312). Indeed, MST experiment of Ocr binding to RNAP-\u03c370 revealed that Ocr can displace \u03c370 with an\u00a0apparent Kd of\u00a0~20 nM (Figure 6\u2014figure supplement 1C). This is also consistent with data showing that RNAP has similar affinities for Ocr and \u03c3 (Figure 1D\u2013F).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/52125/elife-52125-fig6-v2.jpg)\n\n**Figure 6.:** (A and B) Native PAGE shows Ocr can inhibit and disrupt RNAP-\u03c370 holoenzyme formation. Coomassie blue staining (A) and Western blots against His-tagged \u03c370 (B). (A and B) reaction schemes are indicated above. E represents RNAP core enzyme; I, II, III indicate the point when Ocr was added during the reactions. In Reaction III, holoenzyme was preformed and purified by size exclusion chromatography first. Protein concentrations are shown in the reaction schemes. In lanes 7, 9, 11, a 1:1 molar ratio of Ocr to \u03c3 was used, whereas in lane 8, 10, 12, a 4:1 molar ratio of Ocr to \u03c3 was used. The exact Ocr concentrations are labelled above each lane. (C and D) \u03c370 open complex formation with different promoter DNA as assayed by native-PAGE gels and stained for DNA. Reaction schemes are indicated above. I, II, III indicate the point when Ocr was added during the reactions. The same experimental conditions were used as in vitro transcription assays in Figure 5, with either 0.4 \u00b5M or 5 \u00b5M final concentration Ocr added for each reaction, as indicated in each lane. Reaction in the absence of Ocr (w/o Ocr) was used as a control. All reactions include 100 \u00b5g/ml heparin to ensure only open complexes are captured.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/52125/elife-52125-fig6-figsupp1-v2.jpg)\n\n**Figure 6\u2014figure supplement 1.:** Native PAGE gels. (A) Western blots against His-tagged \u03c354\u00a0(B) Coomassie blue staining. Reaction schemes are indicated above. E represents core enzyme RNAP; I, II, III indicate the point when Ocr was added during the reactions. Proteins and DNA concentrations are shown. In lanes 7, 9, 11. a 1:1 molar ratio of Ocr to \u03c3 was used, whereas in lane 8, 10, 12, a 4:1 molar ratio of Ocr to \u03c3 was used. (C) Microscale thermophoresis (MST) experiment of Ocr binding to the RNAP-\u03c370 holoenzyme, supporting that Ocr competes with sigma in RNAP binding. (D) MST experiment of RNAP-\u03c370 and RNAP-\u03c354 binding to promoter DNA with high affinity. The bindings are too tight to give a reliable Kd.\n\nWe next assessed the ability of Ocr in inhibiting recruitment to the promoter DNA by monitoring the amount of DNA bound holoenzymes using two different promoters (Figure 6C\u2013D). Ocr clearly inhibits the formation of a RNAP-\u03c370-DNA complex in a concentration dependent manner. Adding 5 \u03bcM Ocr either before or after \u03c3 addition resulted in\u00a0~30% promoter complex formation (Figure 6C\u2013D,I\u2013II). Adding Ocr after DNA has only limited effects (Figure 6C\u2013D III). This is consistent with the higher binding affinity between RNAP-\u03c3 and DNA (0.1 nM for \u03c370 and 3 nM \u03c354) (Figure 6\u2014figure supplement 1) compared to RNAP-Ocr (Figure 1D). These results are in excellent agreement with those in vitro transcription assay (Figure 5).\n\nSimilar effects were observed for RNAP-\u03c354 (Figure 6\u2014figure supplement 1). Due to the lower sensitivity of the diffused \u03c354 band to Coomassie blue staining, the displaced free \u03c354 from the RNAP-\u03c354 holoenzyme was observed by western blotting with an antibody to the His-tag on \u03c354.\n\nTogether our binding experiments and in vitro transcription assays support the proposal that Ocr inhibits RNAP recruitment to the promoter DNA by directly competing with \u03c3 for RNAP binding. However, Ocr has only limited effects on pre-formed RNAP-\u03c3-DNA complexes. This is similar to the interactions of Ocr with a type I RM enzyme where Ocr only affects the enzyme when not bound to DNA (Bandyopadhyay et al., 1985).\n\n## Discussion\n\n### Ocr is a bifunctional protein\n\nOur data here characterise a new activity for Ocr in inhibiting the host transcriptional machinery in addition to its established role in inhibiting the type I RM systems of the host. Thus, Ocr is a bifunctional DNA mimic protein.\n\nThe in vitro transcription assay and Ocr competition experiments clearly show that Ocr can inhibit \u03c3 binding and recruitment of RNAP to promoter DNA. Our data using a reporter assay also demonstrate the ability of Ocr in inhibiting in vivo the E. coli transcription machinery. The structures of Ocr-RNAP show that Ocr occupies the space where \u03c3 binds (Figure 7A\u2013B) and where the transcription bubble and downstream DNA reside in the open complex and elongation complex, thus explaining how Ocr inhibits RNAP recruitment by \u03c3 (Vassylyev et al., 2007; Zuo and Steitz, 2015).\n\n![Figure 7.](https://cdn.elifesciences.org/articles/52125/elife-52125-fig7-v2.jpg)\n\n**Figure 7.:** (A) Ocr overlay with RNAP-\u03c370 holoenzyme B) Complex structure of gp2 of T7 with \u03c370 holoenzyme (PDB 4LLG), (C) Complex structure of gp76-gp39 of P23-45 with \u03c370 holoenzyme (PDB 5XJ0), (D) Enlarged view of gp76 and \u03c370. RNAP shows as cartoon and coloured as grey, \u03c370 shows as surface and coloured pale green. Gp2, gp39, gp76 are show as surface and coloured as firebrick, light pink and firebrick, respectively.\n\nOur data suggest an answer to the puzzle of why Ocr is so abundantly overexpressed immediately upon a T7 infection (Issinger and Hausmann, 1972; Studier, 1975), when its high affinity classical target, the Type I RM enzyme, is present in very low numbers (estimated at\u00a0~60 molecules per cell, [Kelleher and Raleigh, 1994]). The very tight binding between Ocr and Type I RM enzymes ensures complete inhibition of restriction and modification. It would appear from our data that the excess Ocr molecules could then start the process of shutting down host transcription by binding to any non-transcribing RNAP. An earlier study by McAllister and Barrett used host strains lacking the host restriction systems, thus eliminating the effects of Ocr on host restriction enzymes. They showed that expression of gp0.3 (Ocr) resulted in a delayed inhibition of host \u03b2-galactosidase synthesis and delayed inhibition of total RNA synthesis (McAllister and Barrett, 1977). This inhibitory effect is consistent with our studies here showing that Ocr can inhibit host transcription. Since Ocr is expressed by host RNAP, it thus takes time for a sufficient amount of Ocr to be synthesized by the host, resulting in the delayed response. Indeed, Ocr could bind to free RNAP and/or potentially compete with host \u03c370 which are in the range of hundreds of molecules per cell (https://pax-db.org/dataset/511145/137/), since their binding affinities to RNAP are similar (Figure 1D\u2013F) and Ocr can compete with \u03c370 for RNAP binding and promoter DNA binding (Figure 6\u2014figure supplement 1C). Interestingly, when Ocr and gp1.1 (a small protein with unknown function) were both expressed, the host protein synthesis was shutdown effectively, suggesting that gp1.1 and Ocr might have complementary/synergetic effects.\n\nThe bifunctionality observed in Ocr may also be shared by other DNA mimic proteins. For example, the phage T4 Arn protein targeting the McrBC restriction enzyme also has weak interaction with histone-like protein H-NS (Ho et al., 2014). Arn is very similar in shape to Ocr but since T4 requires the host RNAP throughout its life cycle it is unlikely to target RNAP as strongly as Ocr. Additional functions may also exist for other DNA mimics like phage \u03bb Gam protein (Wilkinson et al., 2016) and the recently discovered anti-CRISPR proteins (Wang et al., 2018). How the multifunctionality of these proteins are utilised by phage is an interesting topic for further study.\n\n### Comparisons with other RNAP inhibiting bacteriophage proteins\n\nSeveral other bacteriophage proteins inhibit transcription. These include T7 gp2 and gp5.7, which inhibits E. coli RNAP, and P23-45 gp39 and gp76, which inhibit T. thermophilus transcription. Structural and biochemical studies show that gp2 specifically inhibits \u03c370-dependent transcription through the interactions and stabilisation of the position of the inhibitory region 1.1 of \u03c370, between the \u03b2 and \u03b2\u2019 clamps at the rim of the downstream DNA binding channel (Figure 7B; Bae et al., 2013). Gp39 binds at region 4 of \u03c3A and restricts its conformation so that it is unable to bind to \u221235 promoter regions (Figure 7C; Tagami et al., 2014). Gp76 on the other hand, binds deeply in the RNAP cleft, preventing open complex formation as well as transcription elongation (Figure 7D; Ooi et al., 2018). However, the binding site of gp76 is adjacent to, but not overlapping the \u03c370 region \u03c33.2, thus gp76 does not inhibit holoenzyme formation (Figure 7D).\n\nIn all the cases above, the bacteriophage proteins do not inhibit holoenzyme formation. Ocr on the other hand, inhibits holoenzyme formation per se and can disrupt a pre-formed holoenzyme (Figure 6A\u2013B, Figure 6\u2014figure supplement 1, Figure 7A). In addition, Ocr can also inhibit open complex formation but is unable to effectively disrupt pre-formed open complex (Figure 6).\n\n### Unique features of Ocr defines its ability in specific DNA processing systems\n\nOcr was shown to mimic a dsDNA in both shape and charge distribution (Walkinshaw et al., 2002) and an Ocr dimer mimics a slightly bent B-form DNA. Ocr has been shown to occupy the DNA binding grooves of type I RM enzymes through specific interactions, thus preventing viral DNA from being degraded or modified by the host RM system (Atanasiu et al., 2002; Kennaway et al., 2009).\n\nThe structural model of the archetypal Type I RM enzyme EcoKI (Kennaway et al., 2009) shows a close association of Ocr with the M.EcoKI modification methyltransferase core of the Type I RM enzyme in that Ocr is completely encircled by the enzyme, similar to DNA encircled by a DNA clamp (Kennaway et al., 2012; Walkinshaw et al., 2002) (PDB 1S7Z). Ocr, on the other hand, binds in the cleft, surrounded on three sides by RNAP. Therefore it is not surprising that both Ocr-RNAP and Ocr-M.EcoKI complexes are sufficiently stable to persist during lengthy size exclusion chromatography experiments (Figure 1 and Atanasiu et al., 2002).\n\nIn this work, we show that Ocr remains as a dimer and binds at the downstream DNA channel of RNAP via the complementary charge interactions between the positively charged RNAP channel and the negatively charged Ocr dimer. However, due to the extensive positively charged surface within RNAP, the binding is not specific. Indeed, two distinct binding modes have been detected which allow either the proximal or distal Ocr monomer to interact with the positively charged \u03b2\u2019 clamp. The RNAP clamp opens up in the \u2018wide clamp\u2019 binding mode in order to accommodate the Ocr dimer conformation while maintaining the charge complementarity, both deep inside the cleft and with the \u03b2\u2019 clamp. When the clamp is closed as in the transcriptional open complex, even though there is ample space to accommodate one Ocr subunit, the charge repulsion between the \u03b2\u2019 jaw domain and the Ocr surface results in the opening of the \u03b2\u2019 clamp, thus shifting Ocr upwards and away from the \u03b2\u2019 jaw domain. These structures demonstrate that the structural flexibility of RNAP clamp plays a key role in its ability to accommodate Ocr. A study of the kinetics of the formation of the complexes between Ocr and RNAP would be interesting and may show multiple consecutive reactions as found for the interaction of a small DNA mimic Uracil glycosylase inhibitor (UGI) with uracil glycosylase (Bennett et al., 1993).\n\nThe interactions and structures of Ocr with RNAP observed here suggest that Ocr could potentially interact and inhibit other DNA processing enzymes through a series of non-specific interactions with dsDNA binding sites/channels. However, the rigidity and the bent conformation of the Ocr dimer imposes constraints on the binding sites, which are optimised for the RM enzymes it inhibits but can still be accommodated by the structurally flexible RNAP DNA binding channel. The rigidity of the dimer is defined by the interactions between the Ocr subunits. Work presented here suggests that Ocr could be modified to fine-tune its DNA mimicry for binding to specific DNA processing proteins, either by reducing the rigidity of the dimer or changing the bend angle to create a new dimer interface. DNA mimicry has been proposed as a potential effective therapeutic tool (Putnam and Tainer, 2005; Dryden, 2006; Roberts et al., 2012), Ocr could thus be exploited to create specific variants that can target specific DNA binding proteins, especially those that are shown to be antibiotic targets. In addition, our data here show that Ocr can effectively inhibit transcription under stress conditions when transcriptional activity is reduced. It is thus possible that during other growth conditions/phases, such as stationary phases or persistence, Ocr could be effectively utilised to inhibit transcription and thus diminish\u00a0bacterial survival.\n\n## Materials and methods\n\n### RNAP-Ocr complex formation\n\nE. coli RNA polymerase was purified as previously reported (Yang et al., 2015). As well as being purified as previously described (Sturrock et al., 2001), Ocr was ligated into pOPINF vector with a N-terminal His-tag. Three purification steps (Ni-NTA affinity, Heparin, and Gel filtration chromatography) were employed, which generated homogeneous Ocr protein as judged by SDS-PAGE gel. The RNAP-Ocr complex was purified by gel filtration chromatography. Initially RNAP (final concentration 14.5 \u00b5M) and Ocr (all Ocr concentrations are for the dimeric form, final concentration 58.0 \u00b5M) were mixed at a 1:4 molar ratio in a 150 \u00b5l reaction volume and the mixture (150 \u00b5l) was incubated on ice for 30 mins before being loaded onto the gel filtration column with a flowrate of 0.3 ml/min (Superose 6 10/300, GE Healthcare) and eluted in buffer containing 20 mM Tris pH8.0, 150 mM NaCl, 1 mM TCEP, 5 mM MgCl2. The fractions were run on SDS-PAGE and the presence of Ocr was confirmed by Western blot against the His-tag. The same amount and concentration of RNAP and Ocr alone were also loaded on a Superose 6 10/300 column separately as a control .\n\n### Microscale thermophoresis (MST)\n\nAll MST experiments were performed using a Monolith NT.115 instrument (NanoTemper Technologies, Germany) at 22 \u00b0C. PBS (137 mM NaCl, 2.7 mM KCl, 10 mM Na2HPO4, 1.8 mM KH2PO4) supplemented with 0.05% Tween-20 was used as MST-binding buffer for all experiments. In all cases hydrophobic treated capillaries were used. \u03c354, \u03c354-R336A and \u03c370 were purified to homogeneity similarly as described previously (Nechaev and Severinov, 1999; Yang et al., 2015). \u03c354-R336A and \u03c370 holoenyzme were individually produced with gel filtration chromatography by mixing RNAP and \u03c3 with 1:4 molar ratio and incubating on ice for half an hour before loading to superpose 6 10/300 column.\n\nOcr, \u03c354, and \u03c370, \u03c354-R336A -RNAP holoenzyme and \u03c370-RNAP holoenzyme were all His tagged and labelled with the kit (Monolith His-Tag Labeling Kit RED-tris-NTA 2nd Generation) separately. The labelled Ocr and sigma factors were diluted to a concentration of 50 nM and mixed with an equal volume of a serial dilution series of RNAP incubated at room temperature for 20 min before loading into MST capillaries thus giving a final concentration of 25 nM for Ocr and the sigma factors in the direct titration of RNAP. For Ocr competitive binding with \u03c370 holoenzyme, 50 nM of his-labeled \u03c370 holoenzyme, diluted in MST-binding buffer, was mixed with equal volumes of a dilution series of Ocr in MST-binding buffer. For DNA with holoenzyme binding affinity, linear promoter DNA (Zuo and Steitz, 2015) was used \u03c370 and a\u00a0nifH promoter\u00a0with\u00a0mismatch DNA between -10 and -1 (Glyde et al., 2018) was used. 40 nm of his-tagged holoenzyme was mixed with equal volumes of a dilution series of DNA in MST-binding buffer. MST experiments were performed using 70\u2013100% LED power and 40\u201360% MST power with a wait time of 5 s, laser on time of 30 s and a back-diffusion time of 5 s. For all the binding experiments (Ocr or \u03c3 with RNAP, or DNA with holoenzyme), MST data were analysed using Grafit 3.0 (Erithacus Software) and the data were fitted with a quadratic tight binding equation with the concentration of the constituent being titrated kept constant in the fitting process. The dissociation constants obtained are maximum values and the real values are likely to be rather smaller. This is due to the concentration of the protein being titrated being larger than the dissociation constant. In the competitive binding experiment with Ocr and \u03c370-RNAP holoenzyme, the data were fitted using the tight binding equation to determine the apparent dissociation constant. Each experiment was repeated at least three times.\n\n### CryoEM sample preparation\n\nFor structural studies using cryoEM, the His-tag of Ocr was cleaved and the purification procedure was as previously reported (Sturrock et al., 2001). The complex was formed as described above. The RNAP-Ocr complex sample was concentrated to 0.6 mg/ml and 3.5 \u00b5l of the complex was applied to R2/2 holey carbon grids (Quantifoil). The vitrification process was performed using a Vitrobot Mark IV (FEI) at 4\u00b0C and 95% humidity, blotted for 1.5 s with blotting force \u22126. The grid was then flash frozen in liquid ethane and stored in the liquid nitrogen before data collection.\n\n### Electron microscopy data collection\n\nThe cryoEM data were collected at eBIC (Diamond Light Source, UK) on a Titan Krios using EPU (FEI) operated at 300 kV and a K2 summit direct electron detector (Gatan). The data were collected with a defocus (underfocus) range between 1.5 \u00b5m to 3.5 \u00b5m. A total of 3543 micrographs were collected at pixel size of 1.06 \u00c5/pixel and a dose of 50 e-/\u00c52 and each micrograph was fractioned into 41 frames (1.21 e-/\u00c52/frame).\n\n### Image processing\n\nThe procedure of data processing is summarised in Figure 2\u2014figure supplement 1. Frame alignment and dose weighting were carried out with MotionCor2 (Zheng et al., 2017) before estimating CTF parameters using Gctf (Zhang, 2016) and particle picking using Gautomatch (https://www.mrc-lmb.cam.ac.uk/kzhang/Gautomatch/) without a template. The picked particles were then extracted into boxes of 256\u00a0\u00d7\u00a0256 pixels. Initial 2D classification of the data was carried out in Cryosparc (Punjani et al., 2017) to remove junk particles due to ice contamination or other defects on the grids. Subsequent image processing was carried out in Relion 2.1 (Scheres, 2012). Briefly, the particles were separated using 3D classification. Three out of five classes were subsequently refined using the RNAP from the closed complex RPc (EMD-3695) filtered to 60 \u00c5 as the initial reference map. The remaining two classes were discarded due to their lack of clear structural features, probably derived from particles that are of poor quality. After combining the remaining three classes and refinement, one more round of focused 3D classification by applying a mask was carried out to separate different complexes or conformations. To generate the mask, structural models of RNAP and Ocr were first fitted into the refined 3D reconstruction. Ocr and the surrounding RNAP clamp regions were then used to calculate a volume in Chimera. Two classes with clearly different conformations of RNAP and both with Ocr bound, were refined, polished and post-processed (with masking and sharpening), resulting in the final reconstructions at 3.7 \u00c5 (for the wide clamp RNAP-Ocr) and 3.8 \u00c5 (for the narrow clamp RNAP-Ocr) based on the gold-standard Fourier shell correlation (FSC) at 0.143 criterion. The directional FSC analysis and histogram of directional resolution were performed using the 3D-FSC server (3dfsc.salk.edu) (Tan et al., 2017).\n\n### Model building, refinement and structural analysis\n\nThe RNAP from RPo (PDB code: 6GH5) and RPip (PDB code: 6GH6) was used as an initial model for the model building of narrow clamp and wide clamp reconstructions, respectively. Briefly, the RNAP was first fitted into the RNAP-Ocr density map in Chimera (Goddard et al., 2007). Subsequently the RNAP structure was subject to flexible fitting using MDFF (Trabuco et al., 2009). The Ocr crystal structure (PDB code: 1S7Z) was manually fitted into the extra density of the RNAP-Ocr map in Coot (Emsley et al., 2010). Jelly body refinement in Refmac (Murshudov et al., 2011) and real space refinement in Phenix (Afonine et al., 2012) were used to improve the model quality. The final statistics of the model are in Table 1. The figures used for structure analysis and comparison were produced in Pymol (The PyMOL Molecular Graphics System, Version 2.0 Schr\u00f6dinger, LLC) and UCSF Chimera (Goddard et al., 2007).\n\n**Table 1.**\n Cryo-EM data collection and refinement statistics.\n\n\n<table>\n  <thead>\n    <tr>\n      <th></th>\n      <th>RNAP-Ocr</th>\n      <th></th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Data collection and processing</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Magnification</td>\n      <td>47393</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Total micrographs</td>\n      <td>3543</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Movie frames</td>\n      <td>41</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Pixel size (\u00c5)</td>\n      <td>1.055</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Defocus range (\u00b5m)</td>\n      <td>\u22121.2 to \u22123</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Voltage (kV)</td>\n      <td>300</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Electron dose (e-/\u00c5\u22122)</td>\n      <td>49.53</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Total particles</td>\n      <td>753783</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>FSC threshold</td>\n      <td>0.143</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Reconstruction\u00a0(RELION)</td>\n      <td>Wide clamp</td>\n      <td>Narrow clamp</td>\n    </tr>\n    <tr>\n      <td>Particles</td>\n      <td>33646</td>\n      <td>27312</td>\n    </tr>\n    <tr>\n      <td>Resolution (\u00c5)</td>\n      <td>3.7</td>\n      <td>3.8</td>\n    </tr>\n    <tr>\n      <td>Refinement</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Resolution (\u00c5)</td>\n      <td>3.7</td>\n      <td>3.8</td>\n    </tr>\n    <tr>\n      <td>R.m.s.\u00a0deviations</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Bond length (\u00c5)</td>\n      <td>0.003</td>\n      <td>0.003</td>\n    </tr>\n    <tr>\n      <td>Bond angle (\u00b0)</td>\n      <td>0.816</td>\n      <td>0.865</td>\n    </tr>\n    <tr>\n      <td>Ramachandran plot</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Favored regions (%)</td>\n      <td>91.88</td>\n      <td>91.05</td>\n    </tr>\n    <tr>\n      <td>Allowed regions (%)</td>\n      <td>8.06</td>\n      <td>8.69</td>\n    </tr>\n    <tr>\n      <td>Outlier</td>\n      <td>0.06</td>\n      <td>0.27</td>\n    </tr>\n    <tr>\n      <td>Validation</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>All-atom clashscore</td>\n      <td>4.63</td>\n      <td>4.5</td>\n    </tr>\n    <tr>\n      <td>Rotamer outliers (%)</td>\n      <td>0.15</td>\n      <td>0.18</td>\n    </tr>\n    <tr>\n      <td>C-beta deviations</td>\n      <td>0</td>\n      <td>0</td>\n    </tr>\n  </tbody>\n</table>\n\n### Native gel mobility assay and western blotting\n\n\u03c354 as well as \u03c370 were purified to homogeneity as described previously (Nechaev and Severinov, 1999; Yang et al., 2015). All the reactions were carried out in the binding buffer (20 mM Tris-HCl pH8.0, 200 mM KCl, 5 mM MgCl2,1 mM DTT, 5% glycerol) at room temperature, for the sequentially addition of different components in each step, the incubation time was approximately15-20 min and all the gels used were polyacrylamide. To test the effects of Ocr on holoenzyme formation for both \u03c354 and \u03c370, all the reactions were carried out in 20 \u00b5l at room temperature. The order of addition, final concentrations and molar ratio of different components are listed in corresponding figures. For each 20 \u00b5l reaction, 10 \u00b5l was taken out and loaded into one polyacrylamide gel (4.5%) and the remaining 10 \u00b5l of each sample was loaded to another identical gel (4.5%) and run in parallel for 160 mins at 80 volts at 4\u00b0C cold room. One gel was then stained with Coomassie blue and visualised, whilst the other gel was used for western blotting against the His-tagged protein of either \u03c354 or \u03c370, following the standard western blotting protocol (iBlot 2 Dry Blotting System, Thermo Fisher Scientific).\n\nTo test the effects of Ocr on the formation \u03c370 open complexes, DNA probes used in this study were all Cy3 labelled. For \u03c370 open complex experiments, one linear DNA used, the non-template DNA used was 5\u2019- ACTTGACATCCCACCTCACGTATGCTATAATCCTACGAGTCTGACGCGG \u22123\u2019, and the template DNA used was 5\u2019-CCGCGTCAGACTCGTAGGATTATAGCATACGTGAGGTGGGATGTCAAGT \u22123\u2019. All the other reactions were carried out at room temperature. The lacUV5 linear DNA used was the same as reported (C\u00e1mara et al., 2010). The sequence of addition, the final concentration, molar ratios of different reactions are described in respective figures. All the gel (5%) are run at 4 \u00b0C in cold rooms, with 100 volts for 75 mins. The results were analysed by visualizing and quantifying the fluorescent signals of Cy3, attached to the DNA probes.\n\nAll the experiments were repeated at least once and the results are consistent with each other.\n\n### Small primed RNA assays\n\nAll reactions were performed in 10 \u00b5l final volumes containing: STA buffer (Burrows et al., 2010), 100 nM holoenzyme (1:4 ratio of RNAP:\u03c354), 20 nM promoter DNA probe (for \u03c354 dependent transcription open complex formation, 4 mM dATP and 5 mM PspF1-275 were also present) and incubated at room temperature. The sp RNA synthesis was initiated by adding 0.5 mM dinucleotide primer (ApG, ApA, CpA or UpG), 0.2 mCi/ml [\u03b1-32P] GTP (3000 Ci/mmol) or 0.2 mCi/ml [\u03b1-32P] UTP (3000 Ci/mmol). The reaction mixtures were quenched by addition of 4 \u00b5l of denaturing formamide loading buffer and run on a 20% denaturing gel and visualised using a Fuji FLA-5000 Phosphorimager. At least three independent experiments were carried out and values were within 5% of the relative % values measured.\n\n### Bacterial growth curves\n\nGrowth of E. coli MG1655 cells not expressing Ocr (WT/pBAD18cm) and expressing Ocr (WT/pBAD18cm[ocr]) was monitored for 20 hr using a FLUOstar Omega plate reader (BMG LABTECH). Starting cultures of 0.1 OD600 were inoculated in four different media, Luria-Bertani Broth (LB) with low (5 g/L) and high (10 g/L) salt concentration, nutrient broth (Oxoid) and modified M9 medium (Teknova), at two different temperatures, 37\u00b0C and 25\u00b0C. Expression of Ocr was induced using two different concentration of arabinose, 0.02%(w/v) and 0.2%(w/v).\n\n### Beta-galactosidase assays\n\nGene expression levels of beta-galactosidase in E. coli MG1655 cells not expressing Ocr (WT/pBAD18cm) and expressing Ocr (WT/pBAD18cm[ocr]) were assessed using 0.002 mg/ml fluorescein di(beta-D-galactopyranoside) (FDG; Sigma-Aldrich). FDG results in fluorescence signals, which are proportional to the enzymatic activities after being hydrolysed to fluorescein by beta-galactosidase. Beta-galactosidase expression was induced by 1 mM IPTG 5 hr post-inoculation.\n\n### RNA extraction, DNase digestion, reverse transcription and quantitative polymerase chain reaction (RT-qPCR)\n\nFollowing the beta-galactosidase assays, total bacterial RNA was extracted from E. coli MG1655 cells using the RNeasy Mini Kit (Qiagen) according to the manufacturer\u2019s instructions. Residual DNA was digested by DNase I (Promega) and cDNA synthesis was performed using 500 ng of RNA and the SuperScript IV reverse transcriptase (Invitrogen) according to the manufacturer\u2019s instructions. Quantitation of the beta-galactosidase mRNA levels was performed using the specific oligonucleotide primers 5\u2019-ATG GGT AAC AGT CTT GGC GG-3\u2019 and 5\u2019-GGC GTA TCG CCA AAA TCA CC-3\u2019, the Power SYBR Green PCR Master Mix (Applied Biosystems) and the relative standard curve quantitation method as implemented by the OneStep Plus Real-Time qPCR System (Applied Biosystems).\n",
+      "created_at": "2025-12-02T15:03:44.545912Z"
+    },
+    {
+      "id": "f02adb90-ee62-4d80-b1d0-4d966de349ca",
+      "submission_id": "8c586c7f-27c4-45b9-b106-8db7b021e2e1",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Seth Darst, The Rockefeller University United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.52125.sa1](https://doi.org/10.7554/eLife.52125.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nAcceptance summary:\n\nThe results in this manuscript confirm that bacteriophage T7-encoded Ocr interacts with host E. coli RNAP, show that Ocr inhibits transcription by host RNAP, indicate that Ocr inhibits transcription by host RNAP through disruption of RNAP-\u03c3 and RNAP-DNA interactions, and define structures of RNAP-Ocr complexes that show Ocr interacts with the RNAP DNA binding determinants as a molecular mimic of DNA and suggest Ocr disrupts RNAP-\u03c3 and RNAP-DNA interactions through steric clash. The findings provide a striking example of protein function through structural mimicry of DNA. In addition, the results may provide an example of dual-targeted regulation \u2013 namely, a bacteriophage regulator that may functionally inhibit both host type I restriction endonucleases and host RNAP.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Structural basis of transcription inhibition by the DNA mimic protein Ocr of bacteriophage T7\" for consideration by eLife. Your article has been reviewed by two peer reviewers, and the evaluation has been overseen by a guest Reviewing Editor and Cynthia Wolberger as the Senior Editor.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nPrevious studies showed that bacteriophage T7 gp0.3 (Ocr) overcomes host restriction by serving as a molecular mimic of double-stranded DNA that binds to, and inhibits, host type I restriction endonucleases. Early work had also suggested that Ocr may interact with host RNAP. The results in this manuscript confirm that Ocr interacts with host RNAP and show that Ocr inhibits transcription by host RNAP by disrupting interactions with both \u03c3 factor and DNA interactions. The authors determine structures of RNAP-Ocr complexes, which show that Ocr interacts with the RNAP DNA binding determinants by serving as a molecular mimic of DNA and suggest Ocr disrupts RNAP-\u03c3 and RNAP-DNA interactions through steric clash. The findings provide a striking example of protein function through structural mimicry of DNA. In addition, the results may provide an example of dual-targeted regulation \u2013 namely, a bacteriophage regulator that may functionally inhibit both host type I restriction endonucleases and host RNAP.\n\nOverall the structural work itself is of significant interest but requires substantial revision in terms of presentation. The part of the manuscript on mechanism is weaker but could be improved substantially with revisions (detailed below). The main weakness of the manuscript is that it does not sufficiently address to what extent the observed interaction of Ocr with RNAP is biologically relevant for bacteriophage T7 virulence, and how its functional importance compares to Ocr's interaction with type I restriction enzymes. The reviewers suggest that additional experiments addressing functional relevance is within the scope of the manuscript and are desirable but not essential.\n\nEssential revisions:\n\nI) Presentation of structural studies:\n\n1) A broad issue concerning the presentation of the structural results is the overall focus on comparing Ocr-RNAP complexes with \u03c354-holoenzyme complexes since functional relevance of Ocr inhibition of \u03c354-dependent transcription is extremely unlikely. The reviewers agree that it's important to show the relationship between binding modes of Ocr in the Ocr-RNAP structures and binding modes of DNA in transcription initiation complexes, but that should be done with \u03c370-RNAP structures (which are all available). The presentation here makes it appear that phage-mediated inhibition of \u03c354-dependent transcription is a central component of phage infection, which is almost certainly not the case. The figures and data concerning Ocr inhibition of \u03c354-dependent transcription should be removed and/or moved to the supplement. These changes concern (although may not be limited to):\n\nFigure 2C should show \u03c370-RPo complex, not \u03c354-RPo (6GH5).\n\nFigure 4 should use a \u03c370-RPo, not \u03c354-RPo.\n\nData presented in Figure 6D, E \u2013 possibly irrelevant.\n\nData presented in Figure 7A, C \u2013 possibly irrelevant.\n\nData presented in Figure 8A \u2013 possibly irrelevant.\n\n2) It is surprising that the authors did not compare the Ocr dimer structures in their cryo-EM maps with previously published Ocr structures, both in isolation and bound to EcoKI. Such a comparison, as well as of the interactions of Ocr with RNAP and EcoKI, is warranted at least as a comment in the main text, if not in a figure.\n\n3) There are many issues regarding the figures and presentation of structural and mechanistic data. These are detailed below (Figure revisions).\n\nII) Studies of Ocr inhibition mechanism:\n\n1) The data on transcription inhibition in uninfected cells engineered to overproduce Ocr (Figure 5) is relatively uninformative and should be removed.\n\n2) Figure 6, presenting confusing 'reaction schematics' and gel images for 44 different assays and conditions should be replaced by bar graphs with error bars, presenting the most important assays and conditions.\n\n3) The in vitro transcription experiments of Figure 6 were performed with fully duplex promoter DNAs, while the gel shifts and competition experiments of Figure 7C and 7D are done with promoter DNAs that have mismatch transcription bubbles \u2013 that explains why Ocr reduces in vitro transcription from 100 to 39%, but in 7D (for example), there is no decrease in open complex formation whatsoever. It\u2019s not clear why the experiments were done this way \u2013 the gel shift/competition experiments with mismatch promoters aren't really very informative of anything. These experiments should be removed or repeated with relevant DNA templates (i.e. fully duplex).\n\n4) The text describing the Ocr inhibition mechanism could be shortened.\n\nIII) Biological relevance of inhibition of RNAP function by Ocr to T7 phage virulence:\n\nThe weakest part of the manuscript is the proposal that Ocr functionally inhibits host RNAP during infection by bacteriophage T7 \u2013 i.e., the proposal that inhibition of host RNAP by OCR occurs during, and is important for, infection by bacteriophage T7. This proposal should be either: (1) tempered with strong caveats, or (2) bolstered by additional experimental data. One experiment that potentially could be performed quickly would be to compare burst sizes for infection of host cells lacking type I restriction endonucleases (available commercially) with bacteriophage T7 derivatives having or lacking the gene encoding Ocr; If the authors proposal is true, there should be measurable differences in burst sizes. The reviewers strongly encourage, but do not absolutely require, the authors to attempt to compare burst sizes of ocr+ and ocr= T7 phage in hosts strains lacking type I restriction.\n\nFigure Revisions:\n\nFigure 1:\n\n1) In A, there are two peaks of the RNAP-Ocr complex eluting between 40-57 ml. Do the authors know what the difference is between the complexes in both peaks? Which peak was used for structural studies?\n\n2) In C, it is unclear why the RNAP-Ocr complex is loaded twice in the western blot. What's the difference between both lanes?\n\n3) In D-E, the authors use EC50 and Kd interchangeably. To avoid confusion, the authors should be consistent and refer to Kd. Moreover, considering the labeled ligand in these experiments is at 25 nM concentration and the Kd for the interactions is in a similar concentration range, the binding measurements are performed under conditions of RNAP depletion (i.e. the free concentration of RNAP does not equal the concentration of added RNAP for each data point). If the authors cannot use ligand concentration 10-fold below the Kd for technical reasons, they should use a binding model that accounts for this change in free RNAP concentration or at least acknowledge that the reported Kds are higher than the true Kds.\n\n4) The authors also state that Ocr is much more abundant in T7 infected cells than type I restriction enzymes, arguing that the additional Ocr molecules interact with PNAP. It would be helpful if the authors could comment on the intracellular concentration of Ocr compared to \u03c3 factors and whether these are in a range where Ocr can effectively compete with \u03c3 factors for binding to RNAP.\n\nFigure 2:\n\n5) Should be revised to compare Ocr-RNAP binding with \u03c370-holoenzyme transcription initiation complexes.\n\n6) For non-experts, it is not easily evident where the template and non-template DNA strands, as well as the RNA, are located in the structure. The authors should consider coloring these elements differently (also in Figure 3).\n\nFigure 2\u2014figure supplement 1:\n\n7) The authors used focused 3D classification but do not explain how the masks were generated. A description should be included in the Materials and methods section, and it would be useful to also show the masks used in the figure.\n\nFigure 2\u2014figure supplement 2:\n\n8) A and B, the particle orientation distributions are far from isotropic, the effect of this on the FSC curves should be assessed with directional FSC plots (https://3dfsc.salk.edu/). Some of the density maps shown in Figure 2\u2014figure supplement 3 may suffer from this.\n\n9) In A and B, the display threshold for rendering the EM volumes seems too low. Increasing the threshold will likely help to bring out the secondary structure features that should be easily identifiable at this resolution but are not well visible in the representations shown in the figures.\n\n10) In D, what's the difference between both half-map FSCs? Presumably one map was used for model refinement and the other as control, but it is not clear which is which.\n\nFigure 2\u2014figure supplement 3:\n\n11) The authors state that many side chain densities are resolved in the map, but this is not well visible in panel C.\n\nFigure 4:\n\n12) Should be revised to compare Ocr-RNAP binding with \u03c370-holoenzyme transcription initiation complexes.\n\n13) The authors state in the text (subsection \u201cStructures of Ocr in complex with RNAP\u201d, last paragraph) that the downstream DNA binding channel provides a positively charged surface composed of b, b' clamps and b' jaw, but this is not shown in the figure. The authors further state that positively charged areas on the Ocr surface face the b' jaw domain, but this is also not evident in this figure as the b' jaw is not shown in B. It would be helpful to revise the figure accordingly.\n\nFigure 7 and Figure 7\u2014figure supplement 1:\n\n14) How were the gels stained in the different panels?\n\n15) In Figure 7A and B, the authors argue that there is a gradual disappearance of the RNAP-\u03c354 complex when adding increasing concentrations of Ocr. However, in conditions I and II in 7A there seems to be no or very little RNAP-\u03c354 complex present at either Ocr concentration. A more careful titration would be necessary to make this point. The low abundance of RNAP-\u03c354 in lanes 7 and 9 is also surprising since one would expect a similar abundance of both RNAP-Ocr and RNAP-\u03c354 at equimolar concentration of the components given the similar Kds for the interactions. In condition III, the authors add Ocr to preformed RNAP-\u03c354 purified by gel filtration, but it seems there is barely any \u03c354 present (see also the very weak signal in Figure 7\u2014figure supplement 1A when comparing lanes 11 and 12 to lane 6). Therefore, it is unclear whether Ocr actually competes with \u03c354 or binds to abundant free RNAP. To substantiate their claim, the authors should demonstrate that the preformed RNAP-\u03c3 complexes contain stoichiometric amounts of all components as expected. More generally, the gels shown could also benefit from quantitation.\n\n16) In Figure 7C and D, the authors changed the protein concentrations for the different reactions compared to A and B. To ease comparison with the other panels in this figure, it would make more sense to use similar experimental conditions as in the previous experiments. It would also be helpful if the authors could comment on the affinity of the DNA for RNAP-\u03c3. Is binding tighter than that of Ocr to RNAP to explain that DNA can overcome the inhibitory effect of Ocr that is pre-bound to RNAP?\n\n[Editors' note: further revisions were suggested prior to acceptance, as described below.]\n\nThank you for resubmitting your work entitled \"Structural basis of transcription inhibition by the DNA mimic protein Ocr of bacteriophage T7\" for further consideration by eLife. Your revised article has been evaluated by Cynthia Wolberger (Senior Editor) and a Reviewing Editor.\n\nThe manuscript has been improved and the comments of the reviewers have been satisfactorily addressed. However, there is a remaining issues with one of the figures that needs to be addressed before acceptance, as outlined below:\n\nFigure 6 in the revised manuscript is problematic \u2013 the discussion of Figure 6 in the text, in the Figure 6 legend, and the figure itself are inconsistent. While Figure 6 contains panels A \u2013 D, the figure legend only refers to panels A \u2013 C. In addition, the legend does not adequately describe the figures. The legend to panel A should describe the experiment more completely and explain what Roman numerals I, II and III denote in that panel, as well as in panel B. It would perhaps be best to relabel the panels to denote the reaction scheme as panel A and to explicitly point the reader to that scheme in explaining I, II and III. The differences between the pairs of lanes 7-8, 9-10, 11-12 should also be explained.\n\n[Editors' note: further revisions were suggested prior to acceptance, as described below.]\n\nThank you for submitting your article \"Structural basis of transcription inhibition by the DNA mimic protein Ocr of bacteriophage T7\" for consideration by eLife. The evaluation has been overseen by a Reviewing Editor and Cynthia Wolberger as the Senior Editor.\n\nFigure 6 and the legend are now improved in that one can better understand what is in the figure based on the legend. In panels C and D, the authors helpfully added labels above the gel lanes to explain the differences between the pairs of lanes in 'I', 'II', and 'III' (0.5 vs. 5 microM); however, the same needs to be done for panels A and B. Please label panels A and B with the concentrations of Ocr above the pairs of lanes in I, II, and III so that all the panels in the figure are labeled optimally and the same.\n",
+      "created_at": "2025-12-02T15:03:44.545912Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T15:03:44.545912Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T15:03:44.545912Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "5be8e639-612d-4519-a378-23a98d258a2c",
+      "content_id": "d28e558a-c09d-4fdf-85db-9cf6c8e1a0cc",
+      "claim_id": "C1",
+      "claim": "Bacteriophage T7 infects Escherichia coli.",
+      "claim_type": "EXPLICIT",
+      "source": "Bacteriophage T7 infects Escherichia coli and evades the host restriction/modification system.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and supported by citations in the introduction (Studier, 1972; Kr\u00fcger and Schroeder, 1981; Hausmann and Messerschmid, 1988).",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:03:44.545912Z"
+    },
+    {
+      "id": "e37f296f-5331-48c0-b041-162882d80b69",
+      "content_id": "d28e558a-c09d-4fdf-85db-9cf6c8e1a0cc",
+      "claim_id": "C2",
+      "claim": "The Ocr protein of T7 exists as a dimer mimicking DNA.",
+      "claim_type": "EXPLICIT",
+      "source": "The Ocr protein of T7 was shown to exist as a dimer mimicking DNA and to bind to host restriction enzymes, thus preventing the degradation of the viral genome by the host.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and supported by structural data presented in the manuscript (Figure 2) and citations (Walkinshaw et al., 2002).",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:03:44.545912Z"
+    },
+    {
+      "id": "23ef959d-140d-4073-bf01-8d09c1d3bd5f",
+      "content_id": "d28e558a-c09d-4fdf-85db-9cf6c8e1a0cc",
+      "claim_id": "C3",
+      "claim": "Ocr binds to host restriction enzymes, preventing degradation of the viral genome.",
+      "claim_type": "EXPLICIT",
+      "source": "The Ocr protein of T7 was shown to exist as a dimer mimicking DNA and to bind to host restriction enzymes, thus preventing the degradation of the viral genome by the host.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and supported by citations (Studier, 1975; Walkinshaw et al., 2002).",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:03:44.545912Z"
+    },
+    {
+      "id": "21d5b911-75f3-4b01-b7a3-50aae5f5712f",
+      "content_id": "d28e558a-c09d-4fdf-85db-9cf6c8e1a0cc",
+      "claim_id": "C4",
+      "claim": "Ocr can inhibit host transcription by directly binding to bacterial RNA polymerase (RNAP).",
+      "claim_type": "EXPLICIT",
+      "source": "Here we report that Ocr can also inhibit host transcription by directly binding to bacterial RNA polymerase (RNAP) and competing with the recruitment of RNAP by sigma factors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data including gel filtration, MST, and in vitro transcription assays (Figures 1, 5, 6).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:03:44.545912Z"
+    },
+    {
+      "id": "b5984dca-f836-42c4-b4a0-509d0a1be0cd",
+      "content_id": "d28e558a-c09d-4fdf-85db-9cf6c8e1a0cc",
+      "claim_id": "C5",
+      "claim": "Ocr competes with the recruitment of RNAP by sigma factors.",
+      "claim_type": "EXPLICIT",
+      "source": "Here we report that Ocr can also inhibit host transcription by directly binding to bacterial RNA polymerase (RNAP) and competing with the recruitment of RNAP by sigma factors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by gel mobility shift assays and MST experiments showing Ocr can disrupt RNAP-sigma holoenzyme formation (Figure 6).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:03:44.545912Z"
+    },
+    {
+      "id": "d06527f6-a37a-4e9c-b8e4-1afd97835805",
+      "content_id": "d28e558a-c09d-4fdf-85db-9cf6c8e1a0cc",
+      "claim_id": "C6",
+      "claim": "The structures of Ocr bound to RNAP were determined using cryo electron microscopy.",
+      "claim_type": "EXPLICIT",
+      "source": "Using cryo electron microscopy, we determined the structures of Ocr bound to RNAP.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the cryoEM data and structural models presented (Figures 2, 3, 4).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:03:44.545912Z"
+    },
+    {
+      "id": "64b6fef3-3b35-4340-9276-cb3d72c9a77e",
+      "content_id": "d28e558a-c09d-4fdf-85db-9cf6c8e1a0cc",
+      "claim_id": "C7",
+      "claim": "An Ocr dimer binds to RNAP in the cleft where key regions of sigma bind and where DNA resides during transcription synthesis.",
+      "claim_type": "EXPLICIT",
+      "source": "The structures show that an Ocr dimer binds to RNAP in the cleft, where key regions of sigma bind and where DNA resides during transcription synthesis, thus providing a structural basis for the transcription inhibition.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the structural data showing Ocr occupying the DNA binding channel (Figures 2, 3).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:03:44.545912Z"
+    },
+    {
+      "id": "295d053f-bcd9-4de4-8606-ebbd6cceae94",
+      "content_id": "d28e558a-c09d-4fdf-85db-9cf6c8e1a0cc",
+      "claim_id": "C8",
+      "claim": "T7 genome encodes 56 proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "The T7 genome encodes 56 proteins with many functioning as structural proteins for the bacteriophage.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction and is established knowledge about T7.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:03:44.545912Z"
+    },
+    {
+      "id": "818287a4-3823-450f-ae12-7a90b3d69e65",
+      "content_id": "d28e558a-c09d-4fdf-85db-9cf6c8e1a0cc",
+      "claim_id": "C9",
+      "claim": "T7 proteins gp0.7, gp2 and gp5.7 inhibit cellular transcription.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, proteins gp0.7, gp2 and gp5.7 inhibit cellular transcription (C\u00e1mara et al., 2010; Tabib-Salazar et al., 2018) whereas gp0.3 inhibits restriction/modification (RM) enzymes (Studier, 1975).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:03:44.545912Z"
+    },
+    {
+      "id": "bfbe510a-ab5f-4940-b1f8-122b856bf095",
+      "content_id": "d28e558a-c09d-4fdf-85db-9cf6c8e1a0cc",
+      "claim_id": "C10",
+      "claim": "Gp0.3 inhibits restriction/modification (RM) enzymes.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, proteins gp0.7, gp2 and gp5.7 inhibit cellular transcription (C\u00e1mara et al., 2010; Tabib-Salazar et al., 2018) whereas gp0.3 inhibits restriction/modification (RM) enzymes (Studier, 1975).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Studier, 1975.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:03:44.545912Z"
+    },
+    {
+      "id": "1a9237f1-b5dd-455c-98e1-9ca8715abff2",
+      "content_id": "d28e558a-c09d-4fdf-85db-9cf6c8e1a0cc",
+      "claim_id": "C11",
+      "claim": "Gp0.3 is the first T7 gene expressed after infection.",
+      "claim_type": "EXPLICIT",
+      "source": "Gp0.3 is the first T7 gene expressed after infection and T7 variants lacking gene 0.3 were shown to have genomes susceptible to E. coli RM systems (Studier, 1975).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Studier, 1975.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:03:44.545912Z"
+    },
+    {
+      "id": "2dcb153a-e96f-4bee-b14e-e26a8585b496",
+      "content_id": "d28e558a-c09d-4fdf-85db-9cf6c8e1a0cc",
+      "claim_id": "C12",
+      "claim": "T7 variants lacking gene 0.3 have genomes susceptible to E. coli RM systems.",
+      "claim_type": "EXPLICIT",
+      "source": "Gp0.3 is the first T7 gene expressed after infection and T7 variants lacking gene 0.3 were shown to have genomes susceptible to E. coli RM systems (Studier, 1975).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Studier, 1975.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:03:44.545912Z"
+    },
+    {
+      "id": "706ed5ef-669d-4b40-8035-95397cb230b4",
+      "content_id": "d28e558a-c09d-4fdf-85db-9cf6c8e1a0cc",
+      "claim_id": "C13",
+      "claim": "The 117 amino acid protein gp0.3 was named Overcome Classical Restriction (Ocr).",
+      "claim_type": "EXPLICIT",
+      "source": "Subsequently the 117 amino acid protein gp0.3 was named Overcome Classical Restriction (Ocr) (Kr\u00fcger and Schroeder, 1981).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Kr\u00fcger and Schroeder, 1981.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:03:44.545912Z"
+    },
+    {
+      "id": "a1d747c9-313b-4ee6-b797-4a1785dc184c",
+      "content_id": "d28e558a-c09d-4fdf-85db-9cf6c8e1a0cc",
+      "claim_id": "C14",
+      "claim": "Ocr forms a dimer that mimics the structure of a slightly bent 20 base pair B-form DNA.",
+      "claim_type": "EXPLICIT",
+      "source": "Ocr is abundantly expressed and forms a dimer that mimics the structure of a slightly bent 20 base pair B-form DNA (Issinger and Hausmann, 1972; Walkinshaw et al., 2002) and blocks the DNA binding grooves of the type I RM enzyme, preventing the degradation and modification of the T7 genome by the host.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Issinger and Hausmann, 1972 and Walkinshaw et al., 2002.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:03:44.545912Z"
+    },
+    {
+      "id": "31cf92a9-1f10-42d7-a84c-cd1b0f786cfa",
+      "content_id": "d28e558a-c09d-4fdf-85db-9cf6c8e1a0cc",
+      "claim_id": "C15",
+      "claim": "Ocr blocks the DNA binding grooves of the type I RM enzyme.",
+      "claim_type": "EXPLICIT",
+      "source": "Ocr is abundantly expressed and forms a dimer that mimics the structure of a slightly bent 20 base pair B-form DNA (Issinger and Hausmann, 1972; Walkinshaw et al., 2002) and blocks the DNA binding grooves of the type I RM enzyme, preventing the degradation and modification of the T7 genome by the host.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations and established knowledge about Ocr function.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:03:44.545912Z"
+    },
+    {
+      "id": "098dd8a3-aa78-4061-96c6-2f0646981c62",
+      "content_id": "d28e558a-c09d-4fdf-85db-9cf6c8e1a0cc",
+      "claim_id": "C16",
+      "claim": "Type I RM enzymes are present in very low numbers, estimated at ~60 molecules per cell.",
+      "claim_type": "EXPLICIT",
+      "source": "Intriguingly, Type I RM enzymes are present in very low numbers (estimated at ~60 molecules per cell [Kelleher and Raleigh, 1994]).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Kelleher and Raleigh, 1994.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:03:44.545912Z"
+    },
+    {
+      "id": "49dd16df-e9ff-4b69-bbb6-02d273bc50bc",
+      "content_id": "d28e558a-c09d-4fdf-85db-9cf6c8e1a0cc",
+      "claim_id": "C17",
+      "claim": "Ocr is abundantly expressed, estimated to be several hundreds of molecules per cell at least.",
+      "claim_type": "EXPLICIT",
+      "source": "Since Ocr is a DNA mimicry protein, it is possible that the abundantly expressed Ocr (estimated to be several hundreds of molecules per cell at least) (Hausmann and Messerschmid, 1988) also interferes with other DNA processing systems of the host.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Hausmann and Messerschmid, 1988.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:03:44.545912Z"
+    },
+    {
+      "id": "ddf27db2-65cc-4279-9a6e-4ad85ef411d2",
+      "content_id": "d28e558a-c09d-4fdf-85db-9cf6c8e1a0cc",
+      "claim_id": "C18",
+      "claim": "Early evidence of an interaction between Ocr and the host RNA polymerase (RNAP) was obtained using pull-down affinity chromatography.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed early evidence of an interaction between Ocr and the host RNA polymerase (RNAP) was obtained using pull-down affinity chromatography (Ratner, 1974).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Ratner, 1974.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:03:44.545912Z"
+    },
+    {
+      "id": "438680ee-e6e0-435a-b41c-4cc1cd68b6bc",
+      "content_id": "d28e558a-c09d-4fdf-85db-9cf6c8e1a0cc",
+      "claim_id": "C19",
+      "claim": "The large majority of transcription regulation is executed at the recruitment and initiation stage.",
+      "claim_type": "EXPLICIT",
+      "source": "The large majority of transcription regulation, however, is executed at the recruitment and initiation stage (Browning and Busby, 2004; Hahn and Young, 2011; Browning and Busby, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Browning and Busby, 2004; Hahn and Young, 2011; Browning and Busby, 2016.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:03:44.545912Z"
+    },
+    {
+      "id": "f13b7e71-2cb1-4b64-98d8-ba901deded3a",
+      "content_id": "d28e558a-c09d-4fdf-85db-9cf6c8e1a0cc",
+      "claim_id": "C20",
+      "claim": "E. coli has seven sigma factors which can be grouped into two classes.",
+      "claim_type": "EXPLICIT",
+      "source": "E. coli has seven sigma factors which can be grouped into two classes, the \u03c370 class represented by \u03c370, responsible for transcribing housekeeping genes, and the \u03c354 class, responsible for transcribing stress-induced genes including phage infection (Fekl\u00edstov et al., 2014; Browning and Busby, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Fekl\u00edstov et al., 2014 and Browning and Busby, 2016.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:03:44.545912Z"
+    },
+    {
+      "id": "dfeeb94f-9c35-4307-9c54-596330fd5703",
+      "content_id": "d28e558a-c09d-4fdf-85db-9cf6c8e1a0cc",
+      "claim_id": "C21",
+      "claim": "The \u03c370 class is responsible for transcribing housekeeping genes.",
+      "claim_type": "EXPLICIT",
+      "source": "E. coli has seven sigma factors which can be grouped into two classes, the \u03c370 class represented by \u03c370, responsible for transcribing housekeeping genes, and the \u03c354 class, responsible for transcribing stress-induced genes including phage infection (Fekl\u00edstov et al., 2014; Browning and Busby, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations and established knowledge.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:03:44.545912Z"
+    },
+    {
+      "id": "051549ef-c659-4af1-af41-f814cf21bd49",
+      "content_id": "d28e558a-c09d-4fdf-85db-9cf6c8e1a0cc",
+      "claim_id": "C22",
+      "claim": "The \u03c354 class is responsible for transcribing stress-induced genes including phage infection.",
+      "claim_type": "EXPLICIT",
+      "source": "E. coli has seven sigma factors which can be grouped into two classes, the \u03c370 class represented by \u03c370, responsible for transcribing housekeeping genes, and the \u03c354 class, responsible for transcribing stress-induced genes including phage infection (Fekl\u00edstov et al., 2014; Browning and Busby, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations and established knowledge.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:03:44.545912Z"
+    },
+    {
+      "id": "e50639f6-fbf8-47d4-9198-622d1654a96d",
+      "content_id": "d28e558a-c09d-4fdf-85db-9cf6c8e1a0cc",
+      "claim_id": "C23",
+      "claim": "The two large RNAP subunits \u03b2 and \u03b2' form a crab claw structure that encloses the DNA binding cleft.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, the two large RNAP subunits \u03b2 and \u03b2' form a crab claw structure that encloses the DNA binding cleft, accommodating the transcription bubble and the downstream double-stranded (ds) DNA (Bae et al., 2015; Zuo and Steitz, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Bae et al., 2015 and Zuo and Steitz, 2015.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:03:44.545912Z"
+    },
+    {
+      "id": "6b601aa5-da31-47af-a606-e6e1e737d164",
+      "content_id": "d28e558a-c09d-4fdf-85db-9cf6c8e1a0cc",
+      "claim_id": "C24",
+      "claim": "Gp0.7 is a protein kinase that phosphorylates the E. coli RNAP-\u03c370, resulting in transcription termination at sites located between the early and middle genes on the T7 genome.",
+      "claim_type": "EXPLICIT",
+      "source": "Gp0.7 is a protein kinase that phosphorylates the E. coli RNAP-\u03c370, resulting in transcription termination at sites located between the early and middle genes on the T7 genome, gp2 specifically inhibits \u03c370-dependent transcription initiation and gp5.7 inhibits \u03c3S, responsible for stationary phase adaptation (Bae et al., 2013; Tabib-Salazar et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Bae et al., 2013 and Tabib-Salazar et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:03:44.545912Z"
+    },
+    {
+      "id": "b7f77ec0-9ab5-4efc-8d75-bfb6232257f6",
+      "content_id": "d28e558a-c09d-4fdf-85db-9cf6c8e1a0cc",
+      "claim_id": "C25",
+      "claim": "Gp2 specifically inhibits \u03c370-dependent transcription initiation.",
+      "claim_type": "EXPLICIT",
+      "source": "Gp0.7 is a protein kinase that phosphorylates the E. coli RNAP-\u03c370, resulting in transcription termination at sites located between the early and middle genes on the T7 genome, gp2 specifically inhibits \u03c370-dependent transcription initiation and gp5.7 inhibits \u03c3S, responsible for stationary phase adaptation (Bae et al., 2013; Tabib-Salazar et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Bae et al., 2013 and Tabib-Salazar et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:03:44.545912Z"
+    },
+    {
+      "id": "a116be48-6d0c-4ad8-9fa4-34752d27f348",
+      "content_id": "d28e558a-c09d-4fdf-85db-9cf6c8e1a0cc",
+      "claim_id": "C26",
+      "claim": "Gp5.7 inhibits \u03c3S, responsible for stationary phase adaptation.",
+      "claim_type": "EXPLICIT",
+      "source": "Gp0.7 is a protein kinase that phosphorylates the E. coli RNAP-\u03c370, resulting in transcription termination at sites located between the early and middle genes on the T7 genome, gp2 specifically inhibits \u03c370-dependent transcription initiation and gp5.7 inhibits \u03c3S, responsible for stationary phase adaptation (Bae et al., 2013; Tabib-Salazar et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Bae et al., 2013 and Tabib-Salazar et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:03:44.545912Z"
+    },
+    {
+      "id": "81e3f68a-b420-4d85-b658-2b4a2b792a75",
+      "content_id": "d28e558a-c09d-4fdf-85db-9cf6c8e1a0cc",
+      "claim_id": "C27",
+      "claim": "Two proteins gp39 and gp76 of bacteriophage P23-45 were shown to inhibit T. thermophilus transcription.",
+      "claim_type": "EXPLICIT",
+      "source": "Two proteins gp39 and gp76 of bacteriophage P23-45 were shown to inhibit T. thermophilus transcription (Tagami et al., 2014; Ooi et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Tagami et al., 2014 and Ooi et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:03:44.545912Z"
+    },
+    {
+      "id": "0760f67e-a7a1-4231-83bf-9b9c677a2da3",
+      "content_id": "d28e558a-c09d-4fdf-85db-9cf6c8e1a0cc",
+      "claim_id": "C28",
+      "claim": "RNAP is a validated antibacterial target.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, RNAP is a validated antibacterial target and novel inhibitors of RNAP hold promise for potential new antibiotic development against antimicrobial resistance (Ho et al., 2009; Srivastava et al., 2011; Ma et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Ho et al., 2009; Srivastava et al., 2011; Ma et al., 2016.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:03:44.545912Z"
+    },
+    {
+      "id": "58329ed9-3a5e-49df-a96d-04bdd7b95e92",
+      "content_id": "d28e558a-c09d-4fdf-85db-9cf6c8e1a0cc",
+      "claim_id": "C29",
+      "claim": "Purified Ocr co-eluted with RNAP in gel filtration experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed that purified Ocr co-eluted with RNAP in gel filtration experiments, suggesting a tight interaction of RNAP and Ocr sufficient to withstand the lengthy elution time of the complex during chromatography (Figure 1A\u2013C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1A-C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:03:44.545912Z"
+    },
+    {
+      "id": "27ff1968-9988-4345-a6e0-ffba2daa76c5",
+      "content_id": "d28e558a-c09d-4fdf-85db-9cf6c8e1a0cc",
+      "claim_id": "C30",
+      "claim": "The binding affinity (dissociation constant, Kd) of Ocr with RNAP is in the order of 10 nM.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results show the binding affinity (dissociation constant, Kd) is in the order of 10 nM, similar to that of RNAP with sigma factors (Figure 1D\u2013F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by MST experimental data shown in Figure 1D-F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:03:44.545912Z"
+    },
+    {
+      "id": "f2b27fe7-a5a2-4d3a-a38f-08e5e3235548",
+      "content_id": "d28e558a-c09d-4fdf-85db-9cf6c8e1a0cc",
+      "claim_id": "C31",
+      "claim": "The binding affinity of Ocr with RNAP is similar to that of RNAP with sigma factors.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results show the binding affinity (dissociation constant, Kd) is in the order of 10 nM, similar to that of RNAP with sigma factors (Figure 1D\u2013F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by MST experimental data shown in Figure 1D-F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:03:44.545912Z"
+    },
+    {
+      "id": "f9750560-8cb7-4648-aee3-719f808be05a",
+      "content_id": "d28e558a-c09d-4fdf-85db-9cf6c8e1a0cc",
+      "claim_id": "C32",
+      "claim": "The affinity of Ocr for RNAP is about three orders of magnitude lower than the values reported for the association of Ocr with the EcoKI type I restriction modification enzyme.",
+      "claim_type": "EXPLICIT",
+      "source": "Our observed affinity of Ocr for RNAP is about three orders of magnitude lower than the values reported for the association of Ocr with the EcoKI type I restriction modification enzyme (Atanasiu et al., 2002) as would be expected if the type I RM enzyme was the primary target for Ocr.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by comparison with cited data from Atanasiu et al., 2002.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:03:44.545912Z"
+    },
+    {
+      "id": "3d93decc-2e8d-49d2-80e3-e76b844c5348",
+      "content_id": "d28e558a-c09d-4fdf-85db-9cf6c8e1a0cc",
+      "claim_id": "C33",
+      "claim": "Two distinct structural classes of RNAP-Ocr complexes were identified due to their widely differing RNAP clamp conformations.",
+      "claim_type": "EXPLICIT",
+      "source": "During 3D classification, it is clear that a number of different conformational and structural classes exist within the dataset and two distinct classes were identified due to their widely differing RNAP clamp conformations (Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by cryoEM data processing shown in Figure 2\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:03:44.545912Z"
+    },
+    {
+      "id": "cd011750-1e5a-479e-a6c8-3b79ee8e8208",
+      "content_id": "d28e558a-c09d-4fdf-85db-9cf6c8e1a0cc",
+      "claim_id": "C34",
+      "claim": "The RNAP clamp is highly dynamic and adapts a range of conformations from closed to open involving more than 20 \u00c5 movement and 20\u00b0 rotation of the clamp.",
+      "claim_type": "EXPLICIT",
+      "source": "The RNAP clamp is highly dynamic and single-molecule Forster Resonant Energy Transfer data have shown that the RNAP clamp adapts a range of conformations from closed to open involving more than 20 \u00c5 movement and 20o rotation of the clamp (Chakraborty et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Chakraborty et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:03:44.545912Z"
+    },
+    {
+      "id": "0677a2df-6363-4635-b7c5-20acbfc35e1b",
+      "content_id": "d28e558a-c09d-4fdf-85db-9cf6c8e1a0cc",
+      "claim_id": "C35",
+      "claim": "Ocr remains as a dimer upon binding to RNAP.",
+      "claim_type": "EXPLICIT",
+      "source": "In both of the distinct RNAP-Ocr complex structures, Ocr remains as a dimer upon binding to RNAP (Figure 2A\u2013B) and the Ocr dimers are slightly less bent compared to that of an Ocr alone crystal structure (Figure 2\u2014figure supplement 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by structural data shown in Figures 2A-B and Figure 2\u2014figure supplement 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:03:44.545912Z"
+    },
+    {
+      "id": "9ab4e43f-1b31-4e0d-8e67-963852e3c5c0",
+      "content_id": "d28e558a-c09d-4fdf-85db-9cf6c8e1a0cc",
+      "claim_id": "C36",
+      "claim": "The Ocr dimers are slightly less bent compared to that of an Ocr alone crystal structure.",
+      "claim_type": "EXPLICIT",
+      "source": "In both of the distinct RNAP-Ocr complex structures, Ocr remains as a dimer upon binding to RNAP (Figure 2A\u2013B) and the Ocr dimers are slightly less bent compared to that of an Ocr alone crystal structure (Figure 2\u2014figure supplement 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by structural comparison shown in Figure 2\u2014figure supplement 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:03:44.545912Z"
+    },
+    {
+      "id": "03d27d37-ff58-4bae-ae81-222653c24bd3",
+      "content_id": "d28e558a-c09d-4fdf-85db-9cf6c8e1a0cc",
+      "claim_id": "C37",
+      "claim": "In the wide clamp structure, the entire Ocr dimer inserts deeply into the RNAP cleft, occupying the full RNAP nucleic acid binding channel.",
+      "claim_type": "EXPLICIT",
+      "source": "In one structure, the entire Ocr dimer inserts deeply into the RNAP cleft, occupying the full RNAP nucleic acid binding channel including where the transcription bubble and the downstream DNA resides in the transcriptional open and transcribing complex (Figure 2A, Figure 2C, Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by structural data shown in Figures 2A, 2C, and 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:03:44.545912Z"
+    },
+    {
+      "id": "0bb43eda-9597-455f-afb4-c14ba58cdcc4",
+      "content_id": "d28e558a-c09d-4fdf-85db-9cf6c8e1a0cc",
+      "claim_id": "C38",
+      "claim": "In the wide clamp structure, the RNAP clamp is wide open and both Ocr subunits are involved in the interactions.",
+      "claim_type": "EXPLICIT",
+      "source": "In this interaction mode, the RNAP clamp is wide open and both Ocr subunits are involved in the interactions (Figure 2A, Figure 3B, Figure 2\u2014figure supplement 3), we thus denote it as the 'wide clamp structure'.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by structural data shown in Figures 2A, 3B, and Figure 2\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:03:44.545912Z"
+    },
+    {
+      "id": "401ea979-62b8-4ee2-bfaa-c9b632fe2259",
+      "content_id": "d28e558a-c09d-4fdf-85db-9cf6c8e1a0cc",
+      "claim_id": "C39",
+      "claim": "In the narrow clamp structure, only one of the two Ocr subunits within the dimer contacts RNAP, occupying only the downstream DNA channel.",
+      "claim_type": "EXPLICIT",
+      "source": "The second structure involves only one of the two Ocr subunits within the dimer contacting RNAP, occupying only the downstream DNA channel.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by structural data shown in Figure 2B and Figure 2\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:03:44.545912Z"
+    },
+    {
+      "id": "30a58064-153a-4c16-a951-1ed8632c6193",
+      "content_id": "d28e558a-c09d-4fdf-85db-9cf6c8e1a0cc",
+      "claim_id": "C40",
+      "claim": "In the narrow clamp structure, the RNAP clamp is less open.",
+      "claim_type": "EXPLICIT",
+      "source": "Here the RNAP clamp is less open and we denote this structure the 'narrow clamp structure' (Figure 2B, Figure 2\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by structural data shown in Figure 2B and Figure 2\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:03:44.545912Z"
+    },
+    {
+      "id": "e0e362d7-7076-4bbc-83bc-5557157e68f0",
+      "content_id": "d28e558a-c09d-4fdf-85db-9cf6c8e1a0cc",
+      "claim_id": "C41",
+      "claim": "The proximal Ocr subunit is deeply embedded in the RNAP cleft and occupies the space for the template strand DNA, the complementary newly synthesised RNA and the non-template strand DNA.",
+      "claim_type": "EXPLICIT",
+      "source": "The proximal subunit is deeply embedded in the RNAP cleft and occupies the space for the template strand DNA, the complementary newly synthesised RNA and the non-template strand DNA (Figure 2 and Figure 3, magenta [Bae et al., 2015; Zuo and Steitz, 2015; Glyde et al., 2018]).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by structural data shown in Figures 2 and 3, and comparison with cited structures.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:03:44.545912Z"
+    },
+    {
+      "id": "a3a4b82d-acc4-4538-a298-54399bb364a8",
+      "content_id": "d28e558a-c09d-4fdf-85db-9cf6c8e1a0cc",
+      "claim_id": "C42",
+      "claim": "The distal Ocr subunit occupies the position of the downstream DNA.",
+      "claim_type": "EXPLICIT",
+      "source": "The distal Ocr subunit occupies the position of the downstream DNA (Figure 2 and Figure 3A, yellow).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by structural data shown in Figures 2 and 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:03:44.545912Z"
+    },
+    {
+      "id": "e8908bd1-8999-49e9-ace4-93679ffa4c6c",
+      "content_id": "d28e558a-c09d-4fdf-85db-9cf6c8e1a0cc",
+      "claim_id": "C43",
+      "claim": "The negatively charged surface of the proximal Ocr complements the highly positively charged surface of the surrounding RNAP and fits snugly into the channel formed by \u03b2 and \u03b2' subunits.",
+      "claim_type": "EXPLICIT",
+      "source": "The negatively charged surface of the proximal Ocr complements the highly positively charged surface of the surrounding RNAP and fits snugly into the channel formed by \u03b2 and \u03b2' subunits (Figure 3C\u2013E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by structural data showing charge complementarity in Figures 3C-E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:03:44.545912Z"
+    },
+    {
+      "id": "c0930b7c-a53a-4604-9680-f52a87449c0d",
+      "content_id": "d28e558a-c09d-4fdf-85db-9cf6c8e1a0cc",
+      "claim_id": "C44",
+      "claim": "The \u03b2' clamp has to open up to ~58 \u00c5 in RNAP-Ocr from ~35 \u00c5 in RPo to accommodate the Ocr dimer.",
+      "claim_type": "EXPLICIT",
+      "source": "Consequently, in order to maintain the interactions between both Ocr subunits and RNAP, the \u03b2' clamp has to open up (to ~58 \u00c5 in RNAP-Ocr from ~35 \u00c5 in RPo) to accommodate the Ocr dimer compared to RPo that accommodates a transcriptional bubble and dsDNA (Figure 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by structural measurements shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:03:44.545912Z"
+    },
+    {
+      "id": "9f23c25a-cf7b-4389-b31a-fb10908c6998",
+      "content_id": "d28e558a-c09d-4fdf-85db-9cf6c8e1a0cc",
+      "claim_id": "C45",
+      "claim": "In the narrow clamp mode, the clamp is more open (~45 \u00c5) compared to that in RPo (~35 \u00c5).",
+      "claim_type": "EXPLICIT",
+      "source": "In the narrow clamp mode, the proximal Ocr subunit interacts with the \u03b2' clamp, again mimicking downstream DNA in RPo although the clamp is more open (~45 \u00c5) compared to that in RPo (~35 \u00c5) (Figure 2B\u2013C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by structural measurements shown in Figures 2B-C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:03:44.545912Z"
+    },
+    {
+      "id": "63f6a794-9f64-48c1-a726-82193dca995e",
+      "content_id": "d28e558a-c09d-4fdf-85db-9cf6c8e1a0cc",
+      "claim_id": "C46",
+      "claim": "Adding 5 \u03bcM Ocr decreased activity of RNAP-\u03c370 on different promoters in the range of 70\u201310%.",
+      "claim_type": "EXPLICIT",
+      "source": "Our data reveal that adding 5 \u03bcM Ocr decreased activity of RNAP-\u03c370 on the different promoters in the range of 70\u201310%.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by in vitro transcription assay data shown in Figures 5A-B and Figure 5\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:03:44.545912Z"
+    },
+    {
+      "id": "1551b4b3-e276-4279-9ca4-72b9d4bb5cab",
+      "content_id": "d28e558a-c09d-4fdf-85db-9cf6c8e1a0cc",
+      "claim_id": "C47",
+      "claim": "On the linear promoter in the presence of 5 \u03bcM Ocr the amount of spRNA was significantly reduced (to 10\u201330%) when Ocr was added prior to or after the holoenzyme formation but before DNA was added.",
+      "claim_type": "EXPLICIT",
+      "source": "On the linear promoter in the presence of 5 \u03bcM Ocr the amount of spRNA was significantly reduced (to 10\u201330%) when Ocr was added prior to or after the holoenzyme formation but before DNA was added (Figure 5A-B I-II).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by in vitro transcription assay data shown in Figures 5A-B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:03:44.545912Z"
+    },
+    {
+      "id": "7ab1a9bf-cb2e-4392-b4fb-718c7e85d2c8",
+      "content_id": "d28e558a-c09d-4fdf-85db-9cf6c8e1a0cc",
+      "claim_id": "C48",
+      "claim": "The effect of Ocr after DNA was added was less pronounced.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the effect of Ocr after DNA was added was less pronounced (Figure 5A\u2013B III).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by in vitro transcription assay data shown in Figures 5A-B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:03:44.545912Z"
+    },
+    {
+      "id": "9ad56cb6-23a5-4763-a715-f567360b6b88",
+      "content_id": "d28e558a-c09d-4fdf-85db-9cf6c8e1a0cc",
+      "claim_id": "C49",
+      "claim": "Over-expression of Ocr in E. coli cells inhibits cell growth.",
+      "claim_type": "EXPLICIT",
+      "source": "using a reporter assay, we show that over-express of Ocr in E. coli cells inhibits cell growth (C) and \u03b2-galactosidase activities (D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by growth curve data shown in Figure 5C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:03:44.545912Z"
+    },
+    {
+      "id": "76cca116-203b-44c9-b3b4-f8113f6a3f7d",
+      "content_id": "d28e558a-c09d-4fdf-85db-9cf6c8e1a0cc",
+      "claim_id": "C50",
+      "claim": "Over-expression of Ocr in E. coli cells inhibits \u03b2-galactosidase activities.",
+      "claim_type": "EXPLICIT",
+      "source": "using a reporter assay, we show that over-express of Ocr in E. coli cells inhibits cell growth (C) and \u03b2-galactosidase activities (D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by \u03b2-galactosidase activity data shown in Figure 5D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:03:44.545912Z"
+    },
+    {
+      "id": "2390b40e-95f4-49b1-b6dd-c4b2d0a31940",
+      "content_id": "d28e558a-c09d-4fdf-85db-9cf6c8e1a0cc",
+      "claim_id": "C51",
+      "claim": "An Ocr-mediated growth inhibition effect was observed in minimal modified M9 media.",
+      "claim_type": "EXPLICIT",
+      "source": "An Ocr-mediated growth inhibition effect was indeed observed in minimal modified M9 media (Figure 5C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by growth curve data shown in Figure 5C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:03:44.545912Z"
+    },
+    {
+      "id": "58a246fc-5bdb-4e8f-a633-802acd0eae46",
+      "content_id": "d28e558a-c09d-4fdf-85db-9cf6c8e1a0cc",
+      "claim_id": "C52",
+      "claim": "During the 5 hr period following induction with IPTG, a ~ 10 fold decrease of normalised \u03b2-galactosidase activity was observed in E. coli cells expressing Ocr compared to cells that do not express Ocr.",
+      "claim_type": "EXPLICIT",
+      "source": "During the 5 hr period following induction with IPTG, a ~ 10 fold decrease of normalised \u03b2-galactosidase activity was observed in E. coli cells expressing Ocr compared to cells that do not express Ocr (Figure 5D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by \u03b2-galactosidase activity data shown in Figure 5D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:03:44.545912Z"
+    },
+    {
+      "id": "f8dc287b-25be-4451-a5e8-c9c92ec13438",
+      "content_id": "d28e558a-c09d-4fdf-85db-9cf6c8e1a0cc",
+      "claim_id": "C53",
+      "claim": "Ocr was observed to inhibit RNAP-\u03c370 holoenzyme formation in a concentration dependent fashion.",
+      "claim_type": "EXPLICIT",
+      "source": "Using purified components and gel mobility shift assays, Ocr was observed to inhibit RNAP-\u03c370 holoenzyme formation in a concentration dependent fashion and irrespective of whether Ocr is added before or after \u03c3 (Figure 6A and B, comparing lane 6 with 7\u201310).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by gel mobility shift assay data shown in Figures 6A and B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:03:44.545912Z"
+    },
+    {
+      "id": "b33e5e3d-b92b-4daf-823b-e1764c889dc0",
+      "content_id": "d28e558a-c09d-4fdf-85db-9cf6c8e1a0cc",
+      "claim_id": "C54",
+      "claim": "Appearance of a RNAP-Ocr complex accompanies the disappearance of the RNAP-\u03c370 holoenzyme.",
+      "claim_type": "EXPLICIT",
+      "source": "Direct competition experiments with pre-formed RNAP-\u03c370 holoenzyme show that appearance of a RNAP-Ocr complex accompanies the disappearance of the RNAP-\u03c370 holoenzyme, (Figure 6A and B, comparing lane 6 with lanes 11\u201312).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by gel mobility shift assay data shown in Figures 6A and B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:03:44.545912Z"
+    },
+    {
+      "id": "cb9f65a4-9d3a-4028-a9af-3d0dad5181fa",
+      "content_id": "d28e558a-c09d-4fdf-85db-9cf6c8e1a0cc",
+      "claim_id": "C55",
+      "claim": "Ocr can displace \u03c370 with an apparent Kd of ~20 nM.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, MST experiment of Ocr binding to RNAP-\u03c370 revealed that Ocr can displace \u03c370 with an apparent Kd of ~20 nM (Figure 6\u2014figure supplement 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by MST data shown in Figure 6\u2014figure supplement 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:03:44.545912Z"
+    },
+    {
+      "id": "c3edda68-4dbc-4d6b-947e-317acffa7be2",
+      "content_id": "d28e558a-c09d-4fdf-85db-9cf6c8e1a0cc",
+      "claim_id": "C56",
+      "claim": "Ocr clearly inhibits the formation of a RNAP-\u03c370-DNA complex in a concentration dependent manner.",
+      "claim_type": "EXPLICIT",
+      "source": "Ocr clearly inhibits the formation of a RNAP-\u03c370-DNA complex in a concentration dependent manner.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by gel mobility shift assay data shown in Figures 6C-D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:03:44.545912Z"
+    },
+    {
+      "id": "6e63b2ef-947e-4f1a-a9db-97acea047862",
+      "content_id": "d28e558a-c09d-4fdf-85db-9cf6c8e1a0cc",
+      "claim_id": "C57",
+      "claim": "Adding 5 \u03bcM Ocr either before or after \u03c3 addition resulted in ~30% promoter complex formation.",
+      "claim_type": "EXPLICIT",
+      "source": "Adding 5 \u03bcM Ocr either before or after \u03c3 addition resulted in ~30% promoter complex formation (Figure 6C\u2013D,I\u2013II).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by gel mobility shift assay data shown in Figures 6C-D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:03:44.545912Z"
+    },
+    {
+      "id": "f6216abd-e06b-4ee5-8ccd-f2c42464e627",
+      "content_id": "d28e558a-c09d-4fdf-85db-9cf6c8e1a0cc",
+      "claim_id": "C58",
+      "claim": "Adding Ocr after DNA has only limited effects.",
+      "claim_type": "EXPLICIT",
+      "source": "Adding Ocr after DNA has only limited effects (Figure 6C\u2013D III).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by gel mobility shift assay data shown in Figures 6C-D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:03:44.545912Z"
+    },
+    {
+      "id": "5e7c7a01-ce71-4a18-a774-323cd4afa507",
+      "content_id": "d28e558a-c09d-4fdf-85db-9cf6c8e1a0cc",
+      "claim_id": "C59",
+      "claim": "Ocr inhibits RNAP recruitment to the promoter DNA by directly competing with \u03c3 for RNAP binding.",
+      "claim_type": "EXPLICIT",
+      "source": "Together our binding experiments and in vitro transcription assays support the proposal that Ocr inhibits RNAP recruitment to the promoter DNA by directly competing with \u03c3 for RNAP binding.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple experimental data including gel mobility shift assays, MST, and in vitro transcription assays (Figures 5, 6).",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:03:44.545912Z"
+    },
+    {
+      "id": "c3912cef-1c42-478b-b932-ad7f62f24660",
+      "content_id": "d28e558a-c09d-4fdf-85db-9cf6c8e1a0cc",
+      "claim_id": "C60",
+      "claim": "Ocr has only limited effects on pre-formed RNAP-\u03c3-DNA complexes.",
+      "claim_type": "EXPLICIT",
+      "source": "However, Ocr has only limited effects on pre-formed RNAP-\u03c3-DNA complexes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by gel mobility shift assay data shown in Figures 6C-D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:03:44.545912Z"
+    },
+    {
+      "id": "b677d204-fed9-4de0-8654-6c8e590dd3fa",
+      "content_id": "d28e558a-c09d-4fdf-85db-9cf6c8e1a0cc",
+      "claim_id": "C61",
+      "claim": "Ocr is a bifunctional DNA mimic protein.",
+      "claim_type": "EXPLICIT",
+      "source": "Our data here characterise a new activity for Ocr in inhibiting the host transcriptional machinery in addition to its established role in inhibiting the type I RM systems of the host. Thus, Ocr is a bifunctional DNA mimic protein.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the experimental data showing Ocr inhibits both RM systems and transcription.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:03:44.545912Z"
+    },
+    {
+      "id": "6e0559cb-9aee-4f42-92f6-677b85dd70f0",
+      "content_id": "d28e558a-c09d-4fdf-85db-9cf6c8e1a0cc",
+      "claim_id": "C62",
+      "claim": "The structures of Ocr-RNAP show that Ocr occupies the space where \u03c3 binds.",
+      "claim_type": "EXPLICIT",
+      "source": "The structures of Ocr-RNAP show that Ocr occupies the space where \u03c3 binds (Figure 7A\u2013B) and where the transcription bubble and downstream DNA reside in the open complex and elongation complex, thus explaining how Ocr inhibits RNAP recruitment by \u03c3 (Vassylyev et al., 2007; Zuo and Steitz, 2015).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by structural data shown in Figures 7A-B and comparison with cited structures.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:03:44.545912Z"
+    },
+    {
+      "id": "bc8c8be2-274a-4210-82db-4b2bc04730ba",
+      "content_id": "d28e558a-c09d-4fdf-85db-9cf6c8e1a0cc",
+      "claim_id": "C63",
+      "claim": "Ocr occupies the space where the transcription bubble and downstream DNA reside in the open complex and elongation complex.",
+      "claim_type": "EXPLICIT",
+      "source": "The structures of Ocr-RNAP show that Ocr occupies the space where \u03c3 binds (Figure 7A\u2013B) and where the transcription bubble and downstream DNA reside in the open complex and elongation complex, thus explaining how Ocr inhibits RNAP recruitment by \u03c3 (Vassylyev et al., 2007; Zuo and Steitz, 2015).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by structural data shown in Figures 7A-B and comparison with cited structures.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:03:44.545912Z"
+    },
+    {
+      "id": "4c57ed2b-e115-4629-8e9b-81ab3906ccea",
+      "content_id": "d28e558a-c09d-4fdf-85db-9cf6c8e1a0cc",
+      "claim_id": "C64",
+      "claim": "Expression of gp0.3 (Ocr) resulted in a delayed inhibition of host \u03b2-galactosidase synthesis and delayed inhibition of total RNA synthesis.",
+      "claim_type": "EXPLICIT",
+      "source": "An earlier study by McAllister and Barrett used host strains lacking the host restriction systems, thus eliminating the effects of Ocr on host restriction enzymes. They showed that expression of gp0.3 (Ocr) resulted in a delayed inhibition of host \u03b2-galactosidase synthesis and delayed inhibition of total RNA synthesis (McAllister and Barrett, 1977).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to McAllister and Barrett, 1977.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:03:44.545912Z"
+    },
+    {
+      "id": "e53fe78a-d674-4c0b-a314-7209e2aaf8ee",
+      "content_id": "d28e558a-c09d-4fdf-85db-9cf6c8e1a0cc",
+      "claim_id": "C65",
+      "claim": "Gp2 specifically inhibits \u03c370-dependent transcription through the interactions and stabilisation of the position of the inhibitory region 1.1 of \u03c370, between the \u03b2 and \u03b2' clamps at the rim of the downstream DNA binding channel.",
+      "claim_type": "EXPLICIT",
+      "source": "Structural and biochemical studies show that gp2 specifically inhibits \u03c370-dependent transcription through the interactions and stabilisation of the position of the inhibitory region 1.1 of \u03c370, between the \u03b2 and \u03b2' clamps at the rim of the downstream DNA binding channel (Figure 7B; Bae et al., 2013).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by citation to Bae et al., 2013 and structural comparison shown in Figure 7B.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:03:44.545912Z"
+    },
+    {
+      "id": "8a06f8e4-7397-4758-8ec6-b4be43f4fa49",
+      "content_id": "d28e558a-c09d-4fdf-85db-9cf6c8e1a0cc",
+      "claim_id": "C66",
+      "claim": "Gp39 binds at region 4 of \u03c3A and restricts its conformation so that it is unable to bind to \u221235 promoter regions.",
+      "claim_type": "EXPLICIT",
+      "source": "Gp39 binds at region 4 of \u03c3A and restricts its conformation so that it is unable to bind to \u221235 promoter regions (Figure 7C; Tagami et al., 2014).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by citation to Tagami et al., 2014 and structural comparison shown in Figure 7C.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:03:44.545912Z"
+    },
+    {
+      "id": "0c22aec3-f598-4888-aa15-4668b97f9647",
+      "content_id": "d28e558a-c09d-4fdf-85db-9cf6c8e1a0cc",
+      "claim_id": "C67",
+      "claim": "Gp76 binds deeply in the RNAP cleft, preventing open complex formation as well as transcription elongation.",
+      "claim_type": "EXPLICIT",
+      "source": "Gp76 on the other hand, binds deeply in the RNAP cleft, preventing open complex formation as well as transcription elongation (Figure 7D; Ooi et al., 2018).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by citation to Ooi et al., 2018 and structural comparison shown in Figure 7D.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:03:44.545912Z"
+    },
+    {
+      "id": "ad050f9a-91cd-4866-9673-67327554705d",
+      "content_id": "d28e558a-c09d-4fdf-85db-9cf6c8e1a0cc",
+      "claim_id": "C68",
+      "claim": "The binding site of gp76 is adjacent to, but not overlapping the \u03c370 region \u03c33.2, thus gp76 does not inhibit holoenzyme formation.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the binding site of gp76 is adjacent to, but not overlapping the \u03c370 region \u03c33.2, thus gp76 does not inhibit holoenzyme formation (Figure 7D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by structural comparison shown in Figure 7D.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:03:44.545912Z"
+    },
+    {
+      "id": "3ec26090-63a5-41d5-8afe-54df1244180b",
+      "content_id": "d28e558a-c09d-4fdf-85db-9cf6c8e1a0cc",
+      "claim_id": "C69",
+      "claim": "Ocr inhibits holoenzyme formation per se and can disrupt a pre-formed holoenzyme.",
+      "claim_type": "EXPLICIT",
+      "source": "Ocr on the other hand, inhibits holoenzyme formation per se and can disrupt a pre-formed holoenzyme (Figure 6A\u2013B, Figure 6\u2014figure supplement 1, Figure 7A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by gel mobility shift assay data shown in Figures 6A-B and Figure 6\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:03:44.545912Z"
+    },
+    {
+      "id": "ffebb35c-ef25-4e6e-9ec1-99a13441e515",
+      "content_id": "d28e558a-c09d-4fdf-85db-9cf6c8e1a0cc",
+      "claim_id": "C70",
+      "claim": "Ocr can also inhibit open complex formation but is unable to effectively disrupt pre-formed open complex.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, Ocr can also inhibit open complex formation but is unable to effectively disrupt pre-formed open complex (Figure 6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by gel mobility shift assay data shown in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:03:44.545912Z"
+    },
+    {
+      "id": "a6189137-ef35-49bc-a09f-bd31a0cd466e",
+      "content_id": "d28e558a-c09d-4fdf-85db-9cf6c8e1a0cc",
+      "claim_id": "C71",
+      "claim": "Ocr was shown to mimic a dsDNA in both shape and charge distribution.",
+      "claim_type": "EXPLICIT",
+      "source": "Ocr was shown to mimic a dsDNA in both shape and charge distribution (Walkinshaw et al., 2002) and an Ocr dimer mimics a slightly bent B-form DNA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Walkinshaw et al., 2002.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:03:44.545912Z"
+    },
+    {
+      "id": "93ef8cb1-5f0b-467b-bac2-0945e114e004",
+      "content_id": "d28e558a-c09d-4fdf-85db-9cf6c8e1a0cc",
+      "claim_id": "C72",
+      "claim": "Ocr has been shown to occupy the DNA binding grooves of type I RM enzymes through specific interactions.",
+      "claim_type": "EXPLICIT",
+      "source": "Ocr has been shown to occupy the DNA binding grooves of type I RM enzymes through specific interactions, thus preventing viral DNA from being degraded or modified by the host RM system (Atanasiu et al., 2002; Kennaway et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Atanasiu et al., 2002 and Kennaway et al., 2009.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:03:44.545912Z"
+    },
+    {
+      "id": "2bfc6349-9e8d-4156-857f-23fbb75530aa",
+      "content_id": "d28e558a-c09d-4fdf-85db-9cf6c8e1a0cc",
+      "claim_id": "C73",
+      "claim": "Ocr binds in the cleft, surrounded on three sides by RNAP.",
+      "claim_type": "EXPLICIT",
+      "source": "Ocr, on the other hand, binds in the cleft, surrounded on three sides by RNAP.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by structural data shown in Figures 2 and 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:03:44.545912Z"
+    },
+    {
+      "id": "2ea4b402-efb2-4bef-8451-2b42d9b1b52c",
+      "content_id": "d28e558a-c09d-4fdf-85db-9cf6c8e1a0cc",
+      "claim_id": "C74",
+      "claim": "Both Ocr-RNAP and Ocr-M.EcoKI complexes are sufficiently stable to persist during lengthy size exclusion chromatography experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore it is not surprising that both Ocr-RNAP and Ocr-M.EcoKI complexes are sufficiently stable to persist during lengthy size exclusion chromatography experiments (Figure 1 and Atanasiu et al., 2002).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by gel filtration data shown in Figure 1 and citation to Atanasiu et al., 2002.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:03:44.545912Z"
+    },
+    {
+      "id": "82d3162e-47a8-4226-bb02-742079f6cef6",
+      "content_id": "d28e558a-c09d-4fdf-85db-9cf6c8e1a0cc",
+      "claim_id": "C75",
+      "claim": "Ocr remains as a dimer and binds at the downstream DNA channel of RNAP via the complementary charge interactions between the positively charged RNAP channel and the negatively charged Ocr dimer.",
+      "claim_type": "EXPLICIT",
+      "source": "In this work, we show that Ocr remains as a dimer and binds at the downstream DNA channel of RNAP via the complementary charge interactions between the positively charged RNAP channel and the negatively charged Ocr dimer.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by structural data shown in Figures 2 and 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:03:44.545912Z"
+    },
+    {
+      "id": "35760f07-fa24-44e1-b31c-612269eb17d9",
+      "content_id": "d28e558a-c09d-4fdf-85db-9cf6c8e1a0cc",
+      "claim_id": "C76",
+      "claim": "Due to the extensive positively charged surface within RNAP, the binding is not specific.",
+      "claim_type": "EXPLICIT",
+      "source": "However, due to the extensive positively charged surface within RNAP, the binding is not specific.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the structural data showing charge complementarity and multiple binding modes (Figures 2, 3).",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:03:44.545912Z"
+    },
+    {
+      "id": "a0b6c22f-0083-4adb-87bb-a9fcd396cd9f",
+      "content_id": "d28e558a-c09d-4fdf-85db-9cf6c8e1a0cc",
+      "claim_id": "C77",
+      "claim": "Two distinct binding modes have been detected which allow either the proximal or distal Ocr monomer to interact with the positively charged \u03b2' clamp.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, two distinct binding modes have been detected which allow either the proximal or distal Ocr monomer to interact with the positively charged \u03b2' clamp.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by structural data showing two distinct RNAP-Ocr structures (Figures 2A-B).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:03:44.545912Z"
+    },
+    {
+      "id": "e30cde79-a44a-40aa-81e5-f88237636cdb",
+      "content_id": "d28e558a-c09d-4fdf-85db-9cf6c8e1a0cc",
+      "claim_id": "C78",
+      "claim": "The structural flexibility of RNAP clamp plays a key role in its ability to accommodate Ocr.",
+      "claim_type": "EXPLICIT",
+      "source": "These structures demonstrate that the structural flexibility of RNAP clamp plays a key role in its ability to accommodate Ocr.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the structural data showing different clamp conformations in the two RNAP-Ocr structures (Figures 2, 3, 4).",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:03:44.545912Z"
+    },
+    {
+      "id": "ba72db87-c5dc-4b1a-b839-a697840937df",
+      "content_id": "d28e558a-c09d-4fdf-85db-9cf6c8e1a0cc",
+      "claim_id": "C79",
+      "claim": "The rigidity and the bent conformation of the Ocr dimer imposes constraints on the binding sites, which are optimised for the RM enzymes it inhibits but can still be accommodated by the structurally flexible RNAP DNA binding channel.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the rigidity and the bent conformation of the Ocr dimer imposes constraints on the binding sites, which are optimised for the RM enzymes it inhibits but can still be accommodated by the structurally flexible RNAP DNA binding channel.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the structural data and comparison with Ocr-RM enzyme structures.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:03:44.545912Z"
+    },
+    {
+      "id": "1168839a-0ad7-468c-a439-a5afb4cec5f6",
+      "content_id": "d28e558a-c09d-4fdf-85db-9cf6c8e1a0cc",
+      "claim_id": "C80",
+      "claim": "Ocr could be modified to fine-tune its DNA mimicry for binding to specific DNA processing proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "Work presented here suggests that Ocr could be modified to fine-tune its DNA mimicry for binding to specific DNA processing proteins, either by reducing the rigidity of the dimer or changing the bend angle to create a new dimer interface.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculative reasoning based on the structural insights gained from this work.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:03:44.545912Z"
+    },
+    {
+      "id": "e8e82b03-3b7a-48bc-8da6-c49c39a46968",
+      "content_id": "d28e558a-c09d-4fdf-85db-9cf6c8e1a0cc",
+      "claim_id": "C81",
+      "claim": "DNA mimicry has been proposed as a potential effective therapeutic tool.",
+      "claim_type": "EXPLICIT",
+      "source": "DNA mimicry has been proposed as a potential effective therapeutic tool (Putnam and Tainer, 2005; Dryden, 2006; Roberts et al., 2012), Ocr could thus be exploited to create specific variants that can target specific DNA binding proteins, especially those that are shown to be antibiotic targets.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Putnam and Tainer, 2005; Dryden, 2006; Roberts et al., 2012.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:03:44.545912Z"
+    },
+    {
+      "id": "f564e4ad-52d3-490a-b67a-26ae89891d6a",
+      "content_id": "d28e558a-c09d-4fdf-85db-9cf6c8e1a0cc",
+      "claim_id": "C82",
+      "claim": "Ocr can effectively inhibit transcription under stress conditions when transcriptional activity is reduced.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, our data here show that Ocr can effectively inhibit transcription under stress conditions when transcriptional activity is reduced.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the growth inhibition data in minimal M9 media (Figure 5C).",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:03:44.545912Z"
+    },
+    {
+      "id": "0b3b9ea6-cf8f-46c6-80db-884bd7a1330f",
+      "content_id": "d28e558a-c09d-4fdf-85db-9cf6c8e1a0cc",
+      "claim_id": "C83",
+      "claim": "The wide clamp structure was refined to a global resolution of 3.7 \u00c5.",
+      "claim_type": "EXPLICIT",
+      "source": "Two classes with clear density for Ocr were refined to a global resolution 3.7 and 3.8 \u00c5 respectively although the quality is not uniform in the reconstruction, as demonstrated in the resolution distribution.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section describing the cryoEM structures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:03:44.545912Z"
+    },
+    {
+      "id": "9181efe6-0707-43eb-857b-92b63cf750c1",
+      "content_id": "d28e558a-c09d-4fdf-85db-9cf6c8e1a0cc",
+      "claim_id": "C84",
+      "claim": "The narrow clamp structure was refined to a global resolution of 3.8 \u00c5.",
+      "claim_type": "EXPLICIT",
+      "source": "Two classes with clear density for Ocr were refined to a global resolution 3.7 and 3.8 \u00c5 respectively although the quality is not uniform in the reconstruction, as demonstrated in the resolution distribution.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section describing the cryoEM structures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:03:44.545912Z"
+    },
+    {
+      "id": "740a8734-a287-476b-ae8f-0eed8bff0c89",
+      "content_id": "d28e558a-c09d-4fdf-85db-9cf6c8e1a0cc",
+      "claim_id": "C85",
+      "claim": "The binding affinity between RNAP-\u03c3 and DNA is 0.1 nM for \u03c370 and 3 nM for \u03c354.",
+      "claim_type": "EXPLICIT",
+      "source": "This is consistent with the higher binding affinity between RNAP-\u03c3 and DNA (0.1 nM for \u03c370 and 3 nM \u03c354) (Figure 6\u2014figure supplement 1) compared to RNAP-Ocr (Figure 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by MST data shown in Figure 6\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:03:44.545912Z"
+    },
+    {
+      "id": "b0122233-aa1d-4e19-b472-6b57f29cf0cd",
+      "content_id": "d28e558a-c09d-4fdf-85db-9cf6c8e1a0cc",
+      "claim_id": "C86",
+      "claim": "A total of 3543 micrographs were collected for the cryoEM data.",
+      "claim_type": "EXPLICIT",
+      "source": "A total of 3543 micrographs were collected at pixel size of 1.06 \u00c5/pixel and a dose of 50 e-/\u00c52 and each micrograph was fractioned into 41 frames (1.21 e-/\u00c52/frame).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Materials and methods section describing data collection.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:03:44.545912Z"
+    },
+    {
+      "id": "f930f7f2-4c1b-4706-b222-b96f3f695a29",
+      "content_id": "d28e558a-c09d-4fdf-85db-9cf6c8e1a0cc",
+      "claim_id": "C87",
+      "claim": "The cryoEM data were collected at a pixel size of 1.06 \u00c5/pixel.",
+      "claim_type": "EXPLICIT",
+      "source": "A total of 3543 micrographs were collected at pixel size of 1.06 \u00c5/pixel and a dose of 50 e-/\u00c52 and each micrograph was fractioned into 41 frames (1.21 e-/\u00c52/frame).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Materials and methods section describing data collection.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:03:44.545912Z"
+    },
+    {
+      "id": "316e1848-204b-4ce7-afd3-63c19db980fe",
+      "content_id": "d28e558a-c09d-4fdf-85db-9cf6c8e1a0cc",
+      "claim_id": "C88",
+      "claim": "The cryoEM data were collected with a dose of 50 e-/\u00c52.",
+      "claim_type": "EXPLICIT",
+      "source": "A total of 3543 micrographs were collected at pixel size of 1.06 \u00c5/pixel and a dose of 50 e-/\u00c52 and each micrograph was fractioned into 41 frames (1.21 e-/\u00c52/frame).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Materials and methods section describing data collection.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:03:44.545912Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "be2cbfdf-970d-4d01-b02d-111e31caca2c",
+      "content_id": "d28e558a-c09d-4fdf-85db-9cf6c8e1a0cc",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Ocr binds to RNAP with high affinity (Kd ~10 nM), similar to sigma factors, but with ~1000-fold lower affinity than to its primary target, the EcoKI restriction enzyme. This interaction is stable enough to persist through gel filtration chromatography.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C29-C32 are well-supported by gel filtration (Figure 1A-C) and MST experiments (Figure 1D-F) showing co-elution and quantified binding affinity. The comparison with EcoKI affinity (C32) provides important context for the biological relevance of this interaction.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:03:44.545912Z"
+    },
+    {
+      "id": "8a67f251-2f83-4296-aa06-da8bf05c9ffe",
+      "content_id": "d28e558a-c09d-4fdf-85db-9cf6c8e1a0cc",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "CryoEM structures of RNAP-Ocr complexes reveal two distinct binding modes: a 'wide clamp' structure (3.7 \u00c5) where the entire Ocr dimer occupies the full nucleic acid binding channel with the clamp opened to ~58 \u00c5, and a 'narrow clamp' structure (3.8 \u00c5) where only one Ocr subunit contacts RNAP with the clamp at ~45 \u00c5. In both structures, Ocr remains as a dimer.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The structural claims are well-supported by cryoEM data (Figures 2-4, Figure 2\u2014supplements 1-4) with appropriate resolution and quality metrics. The two distinct conformational states are clearly identified through 3D classification, and structural measurements of clamp opening are provided. The resolution is sufficient for model building and interpretation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:03:44.545912Z"
+    },
+    {
+      "id": "f9193a9a-8064-4731-bca6-41cd6b6b5452",
+      "content_id": "d28e558a-c09d-4fdf-85db-9cf6c8e1a0cc",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Ocr occupies the RNAP cleft where sigma factors bind and where DNA resides during transcription. The proximal Ocr subunit occupies space for template DNA, RNA, and non-template DNA, while the distal subunit mimics downstream DNA. Binding occurs via charge complementarity between the negatively charged Ocr surface and the positively charged RNAP channel.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These structural observations are directly supported by the cryoEM structures (Figures 2, 3, 7) and comparisons with known transcription complexes. The charge complementarity is demonstrated in Figure 3C-E. The overlap with sigma binding sites and DNA positions provides a clear structural basis for the inhibitory mechanism.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:03:44.545912Z"
+    },
+    {
+      "id": "30dd3716-69b7-4123-98bd-d3071dd53e76",
+      "content_id": "d28e558a-c09d-4fdf-85db-9cf6c8e1a0cc",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Ocr inhibits transcription by competing with sigma factor recruitment to RNAP. In vitro transcription assays show 70-90% reduction in activity when 5 \u03bcM Ocr is added before or after holoenzyme formation but before DNA addition. However, Ocr has limited effect when added after DNA binding.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4, C5, C46-C48, and C59 are well-supported by multiple in vitro transcription assays on different promoters (Figures 5A-B, Figure 5\u2014supplement 1). The timing-dependent effects clearly demonstrate that Ocr acts primarily at the recruitment stage rather than on pre-formed open complexes, consistent with the structural data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:03:44.545912Z"
+    },
+    {
+      "id": "fb226785-0f99-4a72-b3e6-8aa8b0cd09ae",
+      "content_id": "d28e558a-c09d-4fdf-85db-9cf6c8e1a0cc",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Ocr inhibits RNAP-\u03c370 holoenzyme formation in a concentration-dependent manner and can disrupt pre-formed holoenzyme (apparent Kd ~20 nM). Ocr also inhibits open complex formation (~70% reduction at 5 \u03bcM) but cannot effectively disrupt pre-formed open complexes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These claims are strongly supported by gel mobility shift assays (Figure 6A-D) and MST experiments (Figure 6\u2014supplement 1C). The concentration-dependent effects are clearly demonstrated, and the differential effects on holoenzyme versus open complex formation are consistent across multiple experiments and promoters.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:03:44.545912Z"
+    },
+    {
+      "id": "fe4ac4f8-e680-482a-b03b-80900005467f",
+      "content_id": "d28e558a-c09d-4fdf-85db-9cf6c8e1a0cc",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Over-expression of Ocr in E. coli cells inhibits cell growth and \u03b2-galactosidase activity (~10-fold decrease) in minimal M9 media, demonstrating that Ocr can effectively inhibit transcription in vivo under stress conditions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C49-C52 and C82 are supported by growth curves (Figure 5C) and \u03b2-galactosidase reporter assays (Figure 5D, Figure 5\u2014supplement 2). The effects are quantified and reproducible. However, the in vivo effects are less pronounced than in vitro, which is appropriately discussed in the context of competing cellular factors and DNA binding affinities.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:03:44.545912Z"
+    },
+    {
+      "id": "51529539-4bd3-4091-b9ef-9891b8f41a2b",
+      "content_id": "d28e558a-c09d-4fdf-85db-9cf6c8e1a0cc",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Ocr is a bifunctional DNA mimic protein that inhibits both host restriction/modification systems and transcription. This dual function explains why Ocr is abundantly expressed (hundreds of molecules per cell) despite type I RM enzymes being present at only ~60 molecules per cell.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C61 is supported by the combined experimental evidence showing Ocr inhibits both RM systems (established prior work, C2-C3, C10, C15) and transcription (current work, C4-C5, C46-C60). The citation to McAllister and Barrett (C64) provides independent historical support. The abundance argument (C16-C17) provides biological context for the bifunctionality.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:03:44.545912Z"
+    },
+    {
+      "id": "92b58268-6976-476c-a6b2-1e75a10d5605",
+      "content_id": "d28e558a-c09d-4fdf-85db-9cf6c8e1a0cc",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Ocr binding to RNAP is non-specific due to extensive positively charged surfaces within RNAP. Two distinct binding modes exist, and the structural flexibility of the RNAP clamp is key to accommodating the rigid, bent Ocr dimer structure that is optimized for RM enzyme binding.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These interpretive claims (C76-C79) are well-supported by the structural data showing two binding modes (Figures 2-4), charge distribution analysis (Figure 3C-E, Figure 4B-C), and comparisons with Ocr-RM enzyme structures. The inference about non-specificity is reasonable given the multiple binding modes and charge complementarity observed.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:03:44.545912Z"
+    },
+    {
+      "id": "95b3eae6-6190-48aa-9d83-e60acd9319c7",
+      "content_id": "d28e558a-c09d-4fdf-85db-9cf6c8e1a0cc",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Comparison with other phage transcription inhibitors shows distinct mechanisms: gp2 stabilizes \u03c370 region 1.1, gp39 restricts \u03c3A region 4 conformation, and gp76 binds in the RNAP cleft adjacent to but not overlapping \u03c33.2. Unlike these proteins, Ocr directly inhibits holoenzyme formation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C65-C68 are supported by citations to prior structural studies and comparisons shown in Figure 7B-D. These comparisons appropriately contextualize the unique mechanism of Ocr inhibition relative to other characterized phage transcription inhibitors.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:03:44.545912Z"
+    },
+    {
+      "id": "7671f37e-7ae3-4492-aaa1-d0fb77fe3fb6",
+      "content_id": "d28e558a-c09d-4fdf-85db-9cf6c8e1a0cc",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Ocr could potentially be modified to fine-tune its DNA mimicry for binding specific DNA processing proteins, and DNA mimicry has been proposed as a therapeutic tool for targeting antibiotic-resistant bacteria.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C80-C81 are speculative proposals for future applications. While C81 is supported by citations to prior proposals about DNA mimicry as a therapeutic strategy, C80 is purely speculative reasoning based on the structural insights. These represent potential future directions rather than demonstrated results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:03:44.545912Z"
+    },
+    {
+      "id": "fae3b36b-435f-4694-a0f1-a9d215cdf517",
+      "content_id": "d28e558a-c09d-4fdf-85db-9cf6c8e1a0cc",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Background on T7 bacteriophage and Ocr: T7 infects E. coli and encodes 56 proteins including transcription inhibitors (gp0.7, gp2, gp5.7) and Ocr (gp0.3), a 117 amino acid protein that forms a DNA-mimicking dimer and inhibits type I RM enzymes. Ocr is abundantly expressed (hundreds of molecules per cell) while type I RM enzymes are rare (~60 per cell).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These background claims (C1-C18) are well-established facts supported by appropriate citations to prior literature. They provide necessary context for the current work and are not contested.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:03:44.545912Z"
+    },
+    {
+      "id": "b89e43cc-89f1-4fab-af29-9012be1b881b",
+      "content_id": "d28e558a-c09d-4fdf-85db-9cf6c8e1a0cc",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Background on bacterial transcription: Transcription regulation occurs primarily at recruitment/initiation. E. coli has seven sigma factors in two classes (\u03c370 for housekeeping, \u03c354 for stress response). RNAP has a dynamic clamp structure that can open >20 \u00c5. RNAP is a validated antibacterial target.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These background claims (C19-C28, C34) are established knowledge about bacterial transcription, appropriately cited to prior literature. They provide necessary context for understanding the significance of Ocr's mechanism.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:03:44.545912Z"
+    },
+    {
+      "id": "db9c7df8-8b94-4f6d-a28b-b3da8122ffe5",
+      "content_id": "d28e558a-c09d-4fdf-85db-9cf6c8e1a0cc",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Ocr mimics dsDNA in shape and charge distribution and occupies DNA binding grooves of type I RM enzymes through specific interactions. Both Ocr-RNAP and Ocr-M.EcoKI complexes are stable during size exclusion chromatography.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C71-C72 are supported by citations to prior structural work on Ocr. Claim C74 is supported by the gel filtration data in Figure 1 and comparison with cited work on Ocr-M.EcoKI. These provide important context for understanding Ocr's DNA mimicry mechanism.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:03:44.545912Z"
+    },
+    {
+      "id": "5133f61c-9a34-47f7-b14a-4728b229b44e",
+      "content_id": "d28e558a-c09d-4fdf-85db-9cf6c8e1a0cc",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The binding affinity between RNAP-\u03c3 holoenzyme and DNA is 0.1 nM for \u03c370 and 3 nM for \u03c354, which is tighter than RNAP-Ocr binding.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C85 is supported by MST data shown in Figure 6\u2014supplement 1D. This measurement provides important context for understanding why Ocr has limited effects on pre-formed open complexes.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:03:44.545912Z"
+    },
+    {
+      "id": "b4e50a0a-54d8-4ec2-a84a-a61251ae69f9",
+      "content_id": "d28e558a-c09d-4fdf-85db-9cf6c8e1a0cc",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "CryoEM data collection parameters: 3543 micrographs were collected at 1.06 \u00c5/pixel with a total dose of 50 e-/\u00c5\u00b2 fractionated into 41 frames.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C86-C88 are methodological details stated in the Materials and methods section and supported by the data quality metrics shown in supplementary figures. These are standard reporting requirements for cryoEM studies.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:03:44.545912Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "58329ed9-3a5e-49df-a96d-04bdd7b95e92",
+      "result_id": "be2cbfdf-970d-4d01-b02d-111e31caca2c"
+    },
+    {
+      "claim_id": "27ff1968-9988-4345-a6e0-ffba2daa76c5",
+      "result_id": "be2cbfdf-970d-4d01-b02d-111e31caca2c"
+    },
+    {
+      "claim_id": "f2b27fe7-a5a2-4d3a-a38f-08e5e3235548",
+      "result_id": "be2cbfdf-970d-4d01-b02d-111e31caca2c"
+    },
+    {
+      "claim_id": "f9750560-8cb7-4648-aee3-719f808be05a",
+      "result_id": "be2cbfdf-970d-4d01-b02d-111e31caca2c"
+    },
+    {
+      "claim_id": "d06527f6-a37a-4e9c-b8e4-1afd97835805",
+      "result_id": "8a67f251-2f83-4296-aa06-da8bf05c9ffe"
+    },
+    {
+      "claim_id": "3d93decc-2e8d-49d2-80e3-e76b844c5348",
+      "result_id": "8a67f251-2f83-4296-aa06-da8bf05c9ffe"
+    },
+    {
+      "claim_id": "0677a2df-6363-4635-b7c5-20acbfc35e1b",
+      "result_id": "8a67f251-2f83-4296-aa06-da8bf05c9ffe"
+    },
+    {
+      "claim_id": "9ab4e43f-1b31-4e0d-8e67-963852e3c5c0",
+      "result_id": "8a67f251-2f83-4296-aa06-da8bf05c9ffe"
+    },
+    {
+      "claim_id": "03d27d37-ff58-4bae-ae81-222653c24bd3",
+      "result_id": "8a67f251-2f83-4296-aa06-da8bf05c9ffe"
+    },
+    {
+      "claim_id": "0bb43eda-9597-455f-afb4-c14ba58cdcc4",
+      "result_id": "8a67f251-2f83-4296-aa06-da8bf05c9ffe"
+    },
+    {
+      "claim_id": "401ea979-62b8-4ee2-bfaa-c9b632fe2259",
+      "result_id": "8a67f251-2f83-4296-aa06-da8bf05c9ffe"
+    },
+    {
+      "claim_id": "30a58064-153a-4c16-a951-1ed8632c6193",
+      "result_id": "8a67f251-2f83-4296-aa06-da8bf05c9ffe"
+    },
+    {
+      "claim_id": "0b3b9ea6-cf8f-46c6-80db-884bd7a1330f",
+      "result_id": "8a67f251-2f83-4296-aa06-da8bf05c9ffe"
+    },
+    {
+      "claim_id": "9181efe6-0707-43eb-857b-92b63cf750c1",
+      "result_id": "8a67f251-2f83-4296-aa06-da8bf05c9ffe"
+    },
+    {
+      "claim_id": "64b6fef3-3b35-4340-9276-cb3d72c9a77e",
+      "result_id": "f9193a9a-8064-4731-bca6-41cd6b6b5452"
+    },
+    {
+      "claim_id": "e0e362d7-7076-4bbc-83bc-5557157e68f0",
+      "result_id": "f9193a9a-8064-4731-bca6-41cd6b6b5452"
+    },
+    {
+      "claim_id": "a3a4b82d-acc4-4538-a298-54399bb364a8",
+      "result_id": "f9193a9a-8064-4731-bca6-41cd6b6b5452"
+    },
+    {
+      "claim_id": "e8908bd1-8999-49e9-ace4-93679ffa4c6c",
+      "result_id": "f9193a9a-8064-4731-bca6-41cd6b6b5452"
+    },
+    {
+      "claim_id": "c0930b7c-a53a-4604-9680-f52a87449c0d",
+      "result_id": "f9193a9a-8064-4731-bca6-41cd6b6b5452"
+    },
+    {
+      "claim_id": "9f23c25a-cf7b-4389-b31a-fb10908c6998",
+      "result_id": "f9193a9a-8064-4731-bca6-41cd6b6b5452"
+    },
+    {
+      "claim_id": "6e0559cb-9aee-4f42-92f6-677b85dd70f0",
+      "result_id": "f9193a9a-8064-4731-bca6-41cd6b6b5452"
+    },
+    {
+      "claim_id": "bc8c8be2-274a-4210-82db-4b2bc04730ba",
+      "result_id": "f9193a9a-8064-4731-bca6-41cd6b6b5452"
+    },
+    {
+      "claim_id": "2bfc6349-9e8d-4156-857f-23fbb75530aa",
+      "result_id": "f9193a9a-8064-4731-bca6-41cd6b6b5452"
+    },
+    {
+      "claim_id": "82d3162e-47a8-4226-bb02-742079f6cef6",
+      "result_id": "f9193a9a-8064-4731-bca6-41cd6b6b5452"
+    },
+    {
+      "claim_id": "21d5b911-75f3-4b01-b7a3-50aae5f5712f",
+      "result_id": "30dd3716-69b7-4123-98bd-d3071dd53e76"
+    },
+    {
+      "claim_id": "b5984dca-f836-42c4-b4a0-509d0a1be0cd",
+      "result_id": "30dd3716-69b7-4123-98bd-d3071dd53e76"
+    },
+    {
+      "claim_id": "63f6a794-9f64-48c1-a726-82193dca995e",
+      "result_id": "30dd3716-69b7-4123-98bd-d3071dd53e76"
+    },
+    {
+      "claim_id": "1551b4b3-e276-4279-9ca4-72b9d4bb5cab",
+      "result_id": "30dd3716-69b7-4123-98bd-d3071dd53e76"
+    },
+    {
+      "claim_id": "7ab1a9bf-cb2e-4392-b4fb-718c7e85d2c8",
+      "result_id": "30dd3716-69b7-4123-98bd-d3071dd53e76"
+    },
+    {
+      "claim_id": "5e7c7a01-ce71-4a18-a774-323cd4afa507",
+      "result_id": "30dd3716-69b7-4123-98bd-d3071dd53e76"
+    },
+    {
+      "claim_id": "f8dc287b-25be-4451-a5e8-c9c92ec13438",
+      "result_id": "fb226785-0f99-4a72-b3e6-8aa8b0cd09ae"
+    },
+    {
+      "claim_id": "b33e5e3d-b92b-4daf-823b-e1764c889dc0",
+      "result_id": "fb226785-0f99-4a72-b3e6-8aa8b0cd09ae"
+    },
+    {
+      "claim_id": "cb9f65a4-9d3a-4028-a9af-3d0dad5181fa",
+      "result_id": "fb226785-0f99-4a72-b3e6-8aa8b0cd09ae"
+    },
+    {
+      "claim_id": "c3edda68-4dbc-4d6b-947e-317acffa7be2",
+      "result_id": "fb226785-0f99-4a72-b3e6-8aa8b0cd09ae"
+    },
+    {
+      "claim_id": "6e63b2ef-947e-4f1a-a9db-97acea047862",
+      "result_id": "fb226785-0f99-4a72-b3e6-8aa8b0cd09ae"
+    },
+    {
+      "claim_id": "f6216abd-e06b-4ee5-8ccd-f2c42464e627",
+      "result_id": "fb226785-0f99-4a72-b3e6-8aa8b0cd09ae"
+    },
+    {
+      "claim_id": "c3912cef-1c42-478b-b932-ad7f62f24660",
+      "result_id": "fb226785-0f99-4a72-b3e6-8aa8b0cd09ae"
+    },
+    {
+      "claim_id": "3ec26090-63a5-41d5-8afe-54df1244180b",
+      "result_id": "fb226785-0f99-4a72-b3e6-8aa8b0cd09ae"
+    },
+    {
+      "claim_id": "ffebb35c-ef25-4e6e-9ec1-99a13441e515",
+      "result_id": "fb226785-0f99-4a72-b3e6-8aa8b0cd09ae"
+    },
+    {
+      "claim_id": "9ad56cb6-23a5-4763-a715-f567360b6b88",
+      "result_id": "fe4ac4f8-e680-482a-b03b-80900005467f"
+    },
+    {
+      "claim_id": "76cca116-203b-44c9-b3b4-f8113f6a3f7d",
+      "result_id": "fe4ac4f8-e680-482a-b03b-80900005467f"
+    },
+    {
+      "claim_id": "2390b40e-95f4-49b1-b6dd-c4b2d0a31940",
+      "result_id": "fe4ac4f8-e680-482a-b03b-80900005467f"
+    },
+    {
+      "claim_id": "58a246fc-5bdb-4e8f-a633-802acd0eae46",
+      "result_id": "fe4ac4f8-e680-482a-b03b-80900005467f"
+    },
+    {
+      "claim_id": "f564e4ad-52d3-490a-b67a-26ae89891d6a",
+      "result_id": "fe4ac4f8-e680-482a-b03b-80900005467f"
+    },
+    {
+      "claim_id": "b677d204-fed9-4de0-8654-6c8e590dd3fa",
+      "result_id": "51529539-4bd3-4091-b9ef-9891b8f41a2b"
+    },
+    {
+      "claim_id": "4c57ed2b-e115-4629-8e9b-81ab3906ccea",
+      "result_id": "51529539-4bd3-4091-b9ef-9891b8f41a2b"
+    },
+    {
+      "claim_id": "35760f07-fa24-44e1-b31c-612269eb17d9",
+      "result_id": "92b58268-6976-476c-a6b2-1e75a10d5605"
+    },
+    {
+      "claim_id": "a0b6c22f-0083-4adb-87bb-a9fcd396cd9f",
+      "result_id": "92b58268-6976-476c-a6b2-1e75a10d5605"
+    },
+    {
+      "claim_id": "e30cde79-a44a-40aa-81e5-f88237636cdb",
+      "result_id": "92b58268-6976-476c-a6b2-1e75a10d5605"
+    },
+    {
+      "claim_id": "ba72db87-c5dc-4b1a-b839-a697840937df",
+      "result_id": "92b58268-6976-476c-a6b2-1e75a10d5605"
+    },
+    {
+      "claim_id": "e53fe78a-d674-4c0b-a314-7209e2aaf8ee",
+      "result_id": "95b3eae6-6190-48aa-9d83-e60acd9319c7"
+    },
+    {
+      "claim_id": "8a06f8e4-7397-4758-8ec6-b4be43f4fa49",
+      "result_id": "95b3eae6-6190-48aa-9d83-e60acd9319c7"
+    },
+    {
+      "claim_id": "0c22aec3-f598-4888-aa15-4668b97f9647",
+      "result_id": "95b3eae6-6190-48aa-9d83-e60acd9319c7"
+    },
+    {
+      "claim_id": "ad050f9a-91cd-4866-9673-67327554705d",
+      "result_id": "95b3eae6-6190-48aa-9d83-e60acd9319c7"
+    },
+    {
+      "claim_id": "1168839a-0ad7-468c-a439-a5afb4cec5f6",
+      "result_id": "7671f37e-7ae3-4492-aaa1-d0fb77fe3fb6"
+    },
+    {
+      "claim_id": "e8e82b03-3b7a-48bc-8da6-c49c39a46968",
+      "result_id": "7671f37e-7ae3-4492-aaa1-d0fb77fe3fb6"
+    },
+    {
+      "claim_id": "5be8e639-612d-4519-a378-23a98d258a2c",
+      "result_id": "fae3b36b-435f-4694-a0f1-a9d215cdf517"
+    },
+    {
+      "claim_id": "e37f296f-5331-48c0-b041-162882d80b69",
+      "result_id": "fae3b36b-435f-4694-a0f1-a9d215cdf517"
+    },
+    {
+      "claim_id": "23ef959d-140d-4073-bf01-8d09c1d3bd5f",
+      "result_id": "fae3b36b-435f-4694-a0f1-a9d215cdf517"
+    },
+    {
+      "claim_id": "295d053f-bcd9-4de4-8606-ebbd6cceae94",
+      "result_id": "fae3b36b-435f-4694-a0f1-a9d215cdf517"
+    },
+    {
+      "claim_id": "818287a4-3823-450f-ae12-7a90b3d69e65",
+      "result_id": "fae3b36b-435f-4694-a0f1-a9d215cdf517"
+    },
+    {
+      "claim_id": "bfbe510a-ab5f-4940-b1f8-122b856bf095",
+      "result_id": "fae3b36b-435f-4694-a0f1-a9d215cdf517"
+    },
+    {
+      "claim_id": "1a9237f1-b5dd-455c-98e1-9ca8715abff2",
+      "result_id": "fae3b36b-435f-4694-a0f1-a9d215cdf517"
+    },
+    {
+      "claim_id": "2dcb153a-e96f-4bee-b14e-e26a8585b496",
+      "result_id": "fae3b36b-435f-4694-a0f1-a9d215cdf517"
+    },
+    {
+      "claim_id": "706ed5ef-669d-4b40-8035-95397cb230b4",
+      "result_id": "fae3b36b-435f-4694-a0f1-a9d215cdf517"
+    },
+    {
+      "claim_id": "a1d747c9-313b-4ee6-b797-4a1785dc184c",
+      "result_id": "fae3b36b-435f-4694-a0f1-a9d215cdf517"
+    },
+    {
+      "claim_id": "31cf92a9-1f10-42d7-a84c-cd1b0f786cfa",
+      "result_id": "fae3b36b-435f-4694-a0f1-a9d215cdf517"
+    },
+    {
+      "claim_id": "098dd8a3-aa78-4061-96c6-2f0646981c62",
+      "result_id": "fae3b36b-435f-4694-a0f1-a9d215cdf517"
+    },
+    {
+      "claim_id": "49dd16df-e9ff-4b69-bbb6-02d273bc50bc",
+      "result_id": "fae3b36b-435f-4694-a0f1-a9d215cdf517"
+    },
+    {
+      "claim_id": "ddf27db2-65cc-4279-9a6e-4ad85ef411d2",
+      "result_id": "fae3b36b-435f-4694-a0f1-a9d215cdf517"
+    },
+    {
+      "claim_id": "438680ee-e6e0-435a-b41c-4cc1cd68b6bc",
+      "result_id": "b89e43cc-89f1-4fab-af29-9012be1b881b"
+    },
+    {
+      "claim_id": "f13b7e71-2cb1-4b64-98d8-ba901deded3a",
+      "result_id": "b89e43cc-89f1-4fab-af29-9012be1b881b"
+    },
+    {
+      "claim_id": "dfeeb94f-9c35-4307-9c54-596330fd5703",
+      "result_id": "b89e43cc-89f1-4fab-af29-9012be1b881b"
+    },
+    {
+      "claim_id": "051549ef-c659-4af1-af41-f814cf21bd49",
+      "result_id": "b89e43cc-89f1-4fab-af29-9012be1b881b"
+    },
+    {
+      "claim_id": "e50639f6-fbf8-47d4-9198-622d1654a96d",
+      "result_id": "b89e43cc-89f1-4fab-af29-9012be1b881b"
+    },
+    {
+      "claim_id": "6b601aa5-da31-47af-a606-e6e1e737d164",
+      "result_id": "b89e43cc-89f1-4fab-af29-9012be1b881b"
+    },
+    {
+      "claim_id": "b7f77ec0-9ab5-4efc-8d75-bfb6232257f6",
+      "result_id": "b89e43cc-89f1-4fab-af29-9012be1b881b"
+    },
+    {
+      "claim_id": "a116be48-6d0c-4ad8-9fa4-34752d27f348",
+      "result_id": "b89e43cc-89f1-4fab-af29-9012be1b881b"
+    },
+    {
+      "claim_id": "81e3f68a-b420-4d85-b658-2b4a2b792a75",
+      "result_id": "b89e43cc-89f1-4fab-af29-9012be1b881b"
+    },
+    {
+      "claim_id": "0760f67e-a7a1-4231-83bf-9b9c677a2da3",
+      "result_id": "b89e43cc-89f1-4fab-af29-9012be1b881b"
+    },
+    {
+      "claim_id": "cd011750-1e5a-479e-a6c8-3b79ee8e8208",
+      "result_id": "b89e43cc-89f1-4fab-af29-9012be1b881b"
+    },
+    {
+      "claim_id": "a6189137-ef35-49bc-a09f-bd31a0cd466e",
+      "result_id": "db9c7df8-8b94-4f6d-a28b-b3da8122ffe5"
+    },
+    {
+      "claim_id": "93ef8cb1-5f0b-467b-bac2-0945e114e004",
+      "result_id": "db9c7df8-8b94-4f6d-a28b-b3da8122ffe5"
+    },
+    {
+      "claim_id": "2ea4b402-efb2-4bef-8451-2b42d9b1b52c",
+      "result_id": "db9c7df8-8b94-4f6d-a28b-b3da8122ffe5"
+    },
+    {
+      "claim_id": "740a8734-a287-476b-ae8f-0eed8bff0c89",
+      "result_id": "5133f61c-9a34-47f7-b14a-4728b229b44e"
+    },
+    {
+      "claim_id": "b0122233-aa1d-4e19-b472-6b57f29cf0cd",
+      "result_id": "b4e50a0a-54d8-4ec2-a84a-a61251ae69f9"
+    },
+    {
+      "claim_id": "f930f7f2-4c1b-4706-b222-b96f3f695a29",
+      "result_id": "b4e50a0a-54d8-4ec2-a84a-a61251ae69f9"
+    },
+    {
+      "claim_id": "316e1848-204b-4ce7-afd3-63c19db980fe",
+      "result_id": "b4e50a0a-54d8-4ec2-a84a-a61251ae69f9"
+    }
+  ],
+  "comparisons": []
+}

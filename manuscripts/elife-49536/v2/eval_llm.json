@@ -1,0 +1,347 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "During early training in the DT5 task, rats showed behavioral improvements including suppression of within-sequence port entries, increased response rate, decreased trial-by-trial variability, and decreased latency to first lever press. After extended training, these behavioral measures reached asymptotic levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C24 provide converging behavioral evidence with appropriate statistical tests (Friedman ANOVA, repeated measures ANOVA) showing significant improvements during early training and plateau after extended training. The data are well-documented with specific p-values and F-statistics, and are supported by figures showing the behavioral trajectories.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "Responding in the DT5 task was relatively insensitive to reward devaluation after both early and extended training, suggesting habitual control, though statistical significance was not reached and there was variability within groups.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C25-C27 report non-significant devaluation effects (p=0.06-0.09) which the authors interpret as evidence for habitual control. However, the lack of statistical significance and acknowledged within-group variability make this interpretation uncertain. The authors appropriately note the variability, but the conclusion of habitual control rests on non-significant trends.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C2",
+      "C42",
+      "C63"
+    ],
+    "result": "Despite significant behavioral improvements during early training, there were no significant changes in mean normalized neural activity in DMS and DLS across early training sessions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C42, and C63 consistently report the absence of neural activity changes across early training sessions using appropriate statistical tests (repeated measures ANOVA with non-significant main effects and interactions). This finding is surprising but well-documented with specific F-values and p-values, and is a key negative result of the study.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C3",
+      "C34",
+      "C35",
+      "C36",
+      "C39",
+      "C40"
+    ],
+    "result": "During early training, DMS and DLS showed distinct neural activity patterns: DLS neurons predominantly showed sustained excitation during the behavioral sequence, while DMS neurons predominantly showed inhibition during lever presses with excitation at sequence boundaries.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C34-C36, C39-C40 provide consistent evidence from multiple analyses (proportions of excitations/inhibitions, mean population activity, repeated measures ANOVA) showing regional differences during early training. The statistical tests are appropriate (chi-squared tests, repeated measures ANOVA with significant region and region*event interactions), and the findings are supported by figures showing heatmaps and population averages.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C4",
+      "C38",
+      "C41"
+    ],
+    "result": "After extended training, DMS and DLS neural activity patterns became similar, with comparable distributions of excited and inhibited neurons and no significant regional differences in mean population activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C38, and C41 demonstrate convergence of DMS and DLS activity after extended training using appropriate statistical tests (chi-squared test showing no difference in proportions, repeated measures ANOVA showing no main effect of region or region*event interaction). This is a key finding showing a shift from early to extended training.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "Hierarchical clustering of neurons from extended training identified Phasic neurons (N=635) and Non-phasic neurons (N=113). Phasic neurons were further classified into Start, Stop, and Middle neurons, with similar proportions and activity patterns in DLS and DMS.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C48 describe a systematic classification approach using hierarchical clustering with appropriate validation (permutation test, Calinski Harabasz criterion). The proportions and activity patterns are compared between regions with appropriate statistical tests (chi-squared, repeated measures ANOVA). The classification is well-documented and provides a framework for understanding neural response types.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "Non-phasic neurons were classified into INH (sustained inhibition) and EXC (sustained excitation) neurons. The proportion of EXC neurons was significantly higher in DLS compared to DMS, though activity patterns within each class did not differ between regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C56 report a significant regional difference in Non-phasic neuron proportions (chi-squared test, p<0.05) but no difference in activity patterns within classes (repeated measures ANOVA, non-significant region*event interactions). This finding is consistent with the overall pattern of regional differences during extended training being primarily in proportions rather than activity patterns.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C49",
+      "C50"
+    ],
+    "result": "Only 15% of Phasic Start neurons showed increased spiking activity prior to the first lever press, suggesting these neurons primarily respond to the lever insertion cue rather than signaling motor sequence initiation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C50 provide a specific quantitative finding (15% of Start neurons) with appropriate statistical analysis comparing activity before the first lever press to baseline. The interpretation that these neurons respond to the cue rather than signal motor initiation is reasonable given the data, though it remains an inference. This finding challenges prior interpretations of 'Start' neurons.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "Phasic Stop neurons showed increased activity after the last lever press and before port entry, but not during inter-trial interval port entries, suggesting they may encode sequence termination and/or reward expectation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C53 describe a specific pattern of Stop neuron activity with appropriate comparisons between trial and inter-trial interval port entries. The interpretation that this activity encodes sequence termination and/or reward expectation is speculative but reasonable given the data. The finding is well-documented with figures showing the activity patterns.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "During early training, the proportion of Phasic neuron subtypes was similar between DLS and DMS in most sessions, but Non-phasic neurons were differentially distributed in every session, with DLS showing predominantly EXC neurons and DMS showing predominantly INH neurons. These proportions did not change significantly across early training sessions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C62 provide detailed session-by-session analyses with appropriate statistical tests (chi-squared tests for proportions). The finding that Non-phasic neuron distributions differ consistently across regions but do not change over early training sessions is well-documented and consistent with the overall lack of neural changes during early training despite behavioral improvements.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C64"
+    ],
+    "result": "Regional differences in the magnitude of mean normalized activity were detected within Start, Stop, and Middle neuron populations during early training, with higher firing in DLS during lever presses and higher activity in DMS after lever insertion and retraction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C64 reports significant regional differences using repeated measures ANOVA with appropriate corrections and specific F-values and p-values for each neuron class. This finding provides additional detail about the nature of regional differences beyond simple proportions of neuron types.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "Linear discriminant analysis models could accurately decode brain region identity (DLS vs DMS) based on sequence-related neural activity during early training but not after extended training, demonstrating that DMS and DLS neurons cannot be differentiated after extended training.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C68 describe a systematic decoding analysis using LDA with appropriate cross-validation and permutation tests. The finding that decoding accuracy is significantly above chance during early training but not after extended training provides strong quantitative support for the convergence of DMS and DLS activity patterns. The analysis was performed with two different approaches (mean peri-event z-scores and PCA) yielding consistent results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C69",
+      "C70"
+    ],
+    "result": "Individual differences in sensitivity to outcome devaluation did not substantially correlate with DMS and DLS neural activity patterns during either early or extended training.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C70 report analyses comparing neural activity in rats showing different sensitivities to devaluation. The statistical tests (repeated measures ANOVA) show some significant interactions during early training but no significant differences during extended training. The authors appropriately conclude that neural patterns do not substantially correlate with devaluation sensitivity, though the small sample sizes when split by devaluation sensitivity limit the strength of this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "Pharmacological inactivation of DMS resulted in a subtle but significant decrease in lever presses and a trend toward increased first lever press latency, while DLS inactivation resulted in decreased response rate but no effect on first lever press latency. Both inactivations confirm concurrent involvement of DMS and DLS during sequence performance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C79 describe inactivation experiments with appropriate statistical tests (repeated measures ANOVA, sign tests, Kolmogorov-Smirnov tests). The effects are modest but statistically significant or show clear trends. The interpretation that both regions are concurrently involved is reasonable given that both inactivations affect performance, though through different mechanisms. The use of appropriate controls (saline) and counterbalancing strengthens the findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "After extended training, 42% of recorded MSNs showed trial-by-trial correlations between neural activity and performance measures. DMS showed a higher proportion of neurons correlated with port entry latency compared to DLS, suggesting DMS remains involved in optimized performance, particularly at sequence termination.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C85 describe correlation analyses with appropriate controls for spurious correlations (shuffled data controls). The finding that a substantial proportion of neurons in both regions correlate with performance, with regional differences in which aspects of performance are encoded, is well-documented with appropriate statistical tests (chi-squared tests). This finding challenges the hypothesis that DMS disengages after extended training.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C5",
+      "C6"
+    ],
+    "result": "Performance after extended training was not associated with DMS disengagement, suggesting that behavioral sequences may continue to engage both striatal regions long after initial acquisition when skilled performance is consolidated.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C6 represent the main conclusion of the study, which is supported by multiple lines of evidence including the similarity of DMS and DLS activity patterns after extended training (C4, C38, C41), the correlation of DMS activity with performance (C80-C85), and the effects of DMS inactivation on performance (C71-C73). This conclusion is well-supported by the data presented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C37"
+    ],
+    "result": "During early training, an average of 37 and 81 units per session were recorded in DLS and DMS respectively, with stable numbers across sessions. In extended training, 387 and 462 neurons were recorded in DLS and DMS. Putative MSNs represented 95% and 88% of recorded units in early and extended training groups, with 78.2% and 76.5% being task-responsive.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C33, C37 provide basic descriptive statistics about the recorded neurons with appropriate documentation of cell type classification methods. The numbers are consistent with the analyses presented and provide important context for interpreting the results. The stability of recorded units across sessions is important for the longitudinal analyses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C43"
+    ],
+    "result": "An increase in DLS neural activity in the 500 ms before the first lever press was observed across DT1 sessions, potentially reflecting shortening of the first lever press latency as rats learned about the task.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C43 describes a specific finding during the transition from DT1 to DT5 training with appropriate statistical tests (Wilcoxon tests). This finding provides some evidence for neural changes during very early learning, though it is limited to the pre-DT5 period and does not extend to the main DT5 training period analyzed in the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C111",
+      "C112",
+      "C113"
+    ],
+    "result": "The over-representation of sustained excitation in DLS and sustained inhibition in DMS during early training likely explains the regional differences in average activity. After extended training, there is a higher proportion of INH patterns in DLS and EXC patterns in DMS relative to early training, leading to similar average responding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C111-C113 provide interpretations linking the classification results to the population-level findings. These interpretations are reasonable given the data on neuron proportions and activity patterns, and help explain the mechanism by which regional differences emerge during early training and converge after extended training.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C114",
+      "C115"
+    ],
+    "result": "The difference in proportions of neuron subtypes across DLS and DMS in early training permits reliable decoding of brain region identity, and three different analytical approaches demonstrate that DMS and DLS activity was relatively dissimilar during early training but similar after extended training.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C114-C115 provide summary interpretations of the decoding and classification results. These interpretations are well-supported by the multiple analytical approaches used (population averages, classification, decoding) which all converge on the same conclusion about regional differences during early training and similarity after extended training.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C116",
+      "C117"
+    ],
+    "result": "The specific DMS and DLS neural patterns observed during early training do not substantially correlate with the presence or absence of habitual control, and it is not clear whether or how sequence-related activity relates to either skill learning/performance or habit learning/performance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C116-C117 acknowledge important limitations of the study's findings. The lack of correlation between neural patterns and devaluation sensitivity (C69-C70) and the absence of neural changes during behavioral improvements (C2, C42, C63) support these conclusions. The authors appropriately acknowledge uncertainty about the functional significance of the observed neural patterns.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C103",
+      "C104",
+      "C105",
+      "C145",
+      "C146",
+      "C147",
+      "C148"
+    ],
+    "result": "The study used two groups of rats: an early training group (N=9) with fixed electrodes implanted before DT5 training, and an extended training group (N=8) with drivable electrodes implanted after >8 weeks of training. Additional groups were used for inactivation experiments. Electrode placements were similar across groups.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C103-C105, C145-C148 describe the experimental design and groups. The design is appropriate for comparing early and extended training, with adequate sample sizes for electrophysiology studies. The use of fixed electrodes for early training and drivable electrodes for extended training is appropriate for the different experimental goals. The verification of similar electrode placements across groups is important for comparing results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "Putative MSNs and interneurons were distinguished using firing rates and waveform properties, with neurons showing intermediate characteristics excluded from analysis. The study focused only on the putative MSN population, assuming minimal impact from any misclassified TANs given their low proportion (~1%) in dorsal striatum.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C106-C110 describe the cell type classification methods with appropriate citations to prior work. The approach is standard for striatal electrophysiology studies. The assumption about minimal impact of misclassified TANs is reasonable given their low proportion, though it introduces some uncertainty. The exclusion of neurons with intermediate characteristics is conservative and appropriate.",
+    "result_type": "MINOR"
+  }
+]

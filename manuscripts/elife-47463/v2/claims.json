@@ -1,0 +1,2792 @@
+[
+  {
+    "claim_id": "C1",
+    "claim": "In many daily tasks, we make multiple decisions before reaching a goal.",
+    "claim_type": "EXPLICIT",
+    "source": "In many daily tasks, we make multiple decisions before reaching a goal.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a general statement about human behavior that is part of the introduction's motivation.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C2",
+    "claim": "A mechanism to link earlier actions to later reward is necessary for learning sequences of decisions.",
+    "claim_type": "EXPLICIT",
+    "source": "In order to learn such sequences of decisions, a mechanism to link earlier actions to later reward is necessary.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a theoretical statement about requirements for learning, based on established understanding in reinforcement learning.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C3",
+    "claim": "Reinforcement learning theory suggests two classes of algorithms solving the credit assignment problem.",
+    "claim_type": "EXPLICIT",
+    "source": "Reinforcement learning (RL) theory suggests two classes of algorithms solving this credit assignment problem: In classic temporal-difference learning, earlier actions receive reward information only after multiple repetitions of the task, whereas models with eligibility traces reinforce entire sequences of actions from a single experience (one-shot).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This claim is supported by references to established RL theory and literature.",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C4",
+    "claim": "Classic temporal-difference learning requires multiple repetitions of the task before earlier actions receive reward information.",
+    "claim_type": "EXPLICIT",
+    "source": "In classic temporal-difference learning, earlier actions receive reward information only after multiple repetitions of the task",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a theoretical property of TD learning algorithms, established in RL literature.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C5",
+    "claim": "Models with eligibility traces reinforce entire sequences of actions from a single experience (one-shot).",
+    "claim_type": "EXPLICIT",
+    "source": "models with eligibility traces reinforce entire sequences of actions from a single experience (one-shot)",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a theoretical property of eligibility trace algorithms, established in RL literature.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C6",
+    "claim": "The study shows one-shot learning of sequences.",
+    "claim_type": "EXPLICIT",
+    "source": "Here, we show one-shot learning of sequences.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is the main claim of the paper, supported by experimental data presented in the results section.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C7",
+    "claim": "The study developed a novel paradigm to directly observe which actions and states along a multi-step sequence are reinforced after a single reward.",
+    "claim_type": "EXPLICIT",
+    "source": "We developed a novel paradigm to directly observe which actions and states along a multi-step sequence are reinforced after a single reward.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the experimental design, which is detailed in the methods section.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C8",
+    "claim": "RL with and without eligibility trace make qualitatively distinct predictions for specific states.",
+    "claim_type": "EXPLICIT",
+    "source": "By focusing our analysis on those states for which RL with and without eligibility trace make qualitatively distinct predictions",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is demonstrated through theoretical analysis and model predictions shown in Figure 1.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C9",
+    "claim": "The study finds direct behavioral (choice probability) signatures of reinforcement learning with eligibility trace across multiple sensory modalities.",
+    "claim_type": "EXPLICIT",
+    "source": "we find direct behavioral (choice probability) and physiological (pupil dilation) signatures of reinforcement learning with eligibility trace across multiple sensory modalities.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by behavioral data shown in Figure 2(e) and (f).",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C10",
+    "claim": "The study finds direct physiological (pupil dilation) signatures of reinforcement learning with eligibility trace across multiple sensory modalities.",
+    "claim_type": "EXPLICIT",
+    "source": "we find direct behavioral (choice probability) and physiological (pupil dilation) signatures of reinforcement learning with eligibility trace across multiple sensory modalities.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by pupil dilation data shown in Figure 4.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C11",
+    "claim": "Reinforcement learning models have been successfully used to describe reward-based learning in humans.",
+    "claim_type": "EXPLICIT",
+    "source": "Reinforcement learning (RL) models (Sutton and Barto, 2018) have been successfully used to describe reward-based learning in humans (Pessiglione et al., 2006; Gl\u00e4scher et al., 2010; Daw et al., 2011; Niv et al., 2012; O'Doherty et al., 2017; Tartaglia et al., 2017).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This claim is supported by multiple citations to prior work.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C12",
+    "claim": "Classic Temporal-Difference algorithms (such as TD-0) cannot support one-shot learning of long sequences.",
+    "claim_type": "EXPLICIT",
+    "source": "The first class, containing classic Temporal-Difference algorithms (such as TD-0 Sutton, 1988) cannot support one-shot learning of long sequences, because multiple repetitions of the task are needed before reward information arrives at states far away from the goal.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a theoretical property of TD-0 algorithms, supported by citation to Sutton, 1988.",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C13",
+    "claim": "One-shot learning requires algorithms that keep a memory of past states and actions making them eligible for delayed reinforcement.",
+    "claim_type": "EXPLICIT",
+    "source": "Instead, one-shot learning requires algorithms that keep a memory of past states and actions making them eligible for later, that is delayed reinforcement.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a theoretical requirement derived from the nature of one-shot learning.",
+    "evidence_type": [
+      "INFERENCE",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C14",
+    "claim": "Memory of past state-action associations is a key feature of RL with eligibility trace.",
+    "claim_type": "EXPLICIT",
+    "source": "Such a memory is a key feature of the second class of RL theories \u2013 called RL with eligibility trace \u2013, which includes algorithms with explicit eligibility traces (Sutton, 1988; Watkins, 1989; Williams, 1992; Peng and Williams, 1996; Singh and Sutton, 1996) and related reinforcement learning models (Watkins, 1989; Moore and Atkeson, 1993; Blundell et al., 2016; Mnih et al., 2016; Sutton and Barto, 2018).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by citations to multiple RL algorithms and models.",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C15",
+    "claim": "Eligibility traces are well-established in computational models.",
+    "claim_type": "EXPLICIT",
+    "source": "Eligibility traces are well-established in computational models (Sutton and Barto, 2018)",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by citation to a standard RL textbook.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C16",
+    "claim": "Eligibility traces are supported by synaptic plasticity experiments.",
+    "claim_type": "EXPLICIT",
+    "source": "and supported by synaptic plasticity experiments (Yagishita et al., 2014; He et al., 2015; Bittner et al., 2017; Fisher et al., 2017; Gerstner et al., 2018).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by citations to multiple experimental studies.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C17",
+    "claim": "It is unclear whether humans show one-shot learning.",
+    "claim_type": "EXPLICIT",
+    "source": "However, it is unclear whether humans show one-shot learning",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This identifies a gap in the literature that the study addresses.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C18",
+    "claim": "A direct test of predictions that are manifestly different between the classes of RL models with and without eligibility trace has never been performed.",
+    "claim_type": "EXPLICIT",
+    "source": "and a direct test of predictions that are manifestly different between the classes of RL models with and without eligibility trace has never been performed.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This identifies a methodological gap in the literature.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C19",
+    "claim": "Multi-step sequence learning with delayed feedback offers a way to directly compare RL models with and without eligibility trace.",
+    "claim_type": "EXPLICIT",
+    "source": "Multi-step sequence learning with delayed feedback (Gl\u00e4scher et al., 2010; Daw et al., 2011; Walsh and Anderson, 2011; Tartaglia et al., 2017) offers a way to directly compare the two, because the two classes of RL models make qualitatively different predictions.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by citations and theoretical reasoning about model predictions.",
+    "evidence_type": [
+      "CITATION",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C20",
+    "claim": "The two classes of RL models make qualitatively different predictions in multi-step sequence learning with delayed feedback.",
+    "claim_type": "EXPLICIT",
+    "source": "because the two classes of RL models make qualitatively different predictions.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is demonstrated through theoretical analysis shown in Figure 1.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C21",
+    "claim": "The study designed a novel sequential learning task to directly observe which actions and states of a multi-step sequence are reinforced.",
+    "claim_type": "EXPLICIT",
+    "source": "To answer these questions, we designed a novel sequential learning task to directly observe which actions and states of a multi-step sequence are reinforced.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the experimental design detailed in the methods section.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C22",
+    "claim": "After a single reward, models of learning without eligibility traces and with eligibility traces make qualitatively distinct predictions about changes in action-selection bias.",
+    "claim_type": "EXPLICIT",
+    "source": "We exploit that after a single reward, models of learning without eligibility traces (our null hypothesis) and with eligibility traces (alternative hypothesis) make qualitatively distinct predictions about changes in action-selection bias and in state evaluation (Figure 1).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is demonstrated through theoretical analysis and illustrated in Figure 1.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C23",
+    "claim": "After a single reward, models of learning without eligibility traces and with eligibility traces make qualitatively distinct predictions about changes in state evaluation.",
+    "claim_type": "EXPLICIT",
+    "source": "We exploit that after a single reward, models of learning without eligibility traces (our null hypothesis) and with eligibility traces (alternative hypothesis) make qualitatively distinct predictions about changes in action-selection bias and in state evaluation (Figure 1).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is demonstrated through theoretical analysis and illustrated in Figure 1.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C24",
+    "claim": "The qualitative difference in the second episode allows drawing conclusions about the presence or absence of eligibility traces independently of specific model fitting procedures.",
+    "claim_type": "EXPLICIT",
+    "source": "This qualitative difference in the second episode (i.e. after a single reward) allows us to draw conclusions about the presence or absence of eligibility traces independently of specific model fitting procedures and independently of the choice of physiological correlates, be it EEG, fMRI, or pupil responses.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a methodological claim about the study design, based on theoretical reasoning.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C25",
+    "claim": "The qualitative differences between model predictions are referred to as 'direct' evidence.",
+    "claim_type": "EXPLICIT",
+    "source": "We therefore refer to these qualitative differences as 'direct' evidence.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a definitional statement about the terminology used in the study.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C26",
+    "claim": "The study measures changes in action-selection bias from behavior.",
+    "claim_type": "EXPLICIT",
+    "source": "We measure changes in action-selection bias from behavior and changes in state evaluation from a physiological signal, namely the pupil dilation.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the experimental measurements, shown in Figure 2.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C27",
+    "claim": "The study measures changes in state evaluation from pupil dilation.",
+    "claim_type": "EXPLICIT",
+    "source": "We measure changes in action-selection bias from behavior and changes in state evaluation from a physiological signal, namely the pupil dilation.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the experimental measurements, shown in Figure 4.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C28",
+    "claim": "Pupil responses have been previously linked to decision making.",
+    "claim_type": "EXPLICIT",
+    "source": "Pupil responses have been previously linked to decision making, and in particular to variables that reflect changes in state value such as expected reward, reward prediction error, surprise, and risk (O'Doherty et al., 2003; Jepma and Nieuwenhuis, 2011; Otero et al., 2011; Preuschoff et al., 2011).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by citations to prior work.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C29",
+    "claim": "Pupil responses have been linked to expected reward.",
+    "claim_type": "EXPLICIT",
+    "source": "Pupil responses have been previously linked to decision making, and in particular to variables that reflect changes in state value such as expected reward, reward prediction error, surprise, and risk (O'Doherty et al., 2003; Jepma and Nieuwenhuis, 2011; Otero et al., 2011; Preuschoff et al., 2011).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by citations to prior work.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C30",
+    "claim": "Pupil responses have been linked to reward prediction error.",
+    "claim_type": "EXPLICIT",
+    "source": "Pupil responses have been previously linked to decision making, and in particular to variables that reflect changes in state value such as expected reward, reward prediction error, surprise, and risk (O'Doherty et al., 2003; Jepma and Nieuwenhuis, 2011; Otero et al., 2011; Preuschoff et al., 2011).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by citations to prior work.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C31",
+    "claim": "Pupil responses have been linked to surprise.",
+    "claim_type": "EXPLICIT",
+    "source": "Pupil responses have been previously linked to decision making, and in particular to variables that reflect changes in state value such as expected reward, reward prediction error, surprise, and risk (O'Doherty et al., 2003; Jepma and Nieuwenhuis, 2011; Otero et al., 2011; Preuschoff et al., 2011).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by citations to prior work.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C32",
+    "claim": "Pupil responses have been linked to risk.",
+    "claim_type": "EXPLICIT",
+    "source": "Pupil responses have been previously linked to decision making, and in particular to variables that reflect changes in state value such as expected reward, reward prediction error, surprise, and risk (O'Doherty et al., 2003; Jepma and Nieuwenhuis, 2011; Otero et al., 2011; Preuschoff et al., 2011).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by citations to prior work.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C33",
+    "claim": "The study finds direct behavioral signatures of reinforcement learning with eligibility trace across multiple sensory modalities.",
+    "claim_type": "EXPLICIT",
+    "source": "By focusing our analysis on those states for which the two hypotheses make distinct predictions after a single reward ('one-shot'), we find direct behavioral and physiological signatures of reinforcement learning with eligibility trace.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by behavioral data shown in Figure 2.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C34",
+    "claim": "The study finds direct physiological signatures of reinforcement learning with eligibility trace across multiple sensory modalities.",
+    "claim_type": "EXPLICIT",
+    "source": "By focusing our analysis on those states for which the two hypotheses make distinct predictions after a single reward ('one-shot'), we find direct behavioral and physiological signatures of reinforcement learning with eligibility trace.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by pupil dilation data shown in Figure 4.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C35",
+    "claim": "The observed one-shot learning sheds light on a long-standing question in human reinforcement learning.",
+    "claim_type": "EXPLICIT",
+    "source": "The observed one-shot learning sheds light on a long-standing question in human reinforcement learning (Bogacz et al., 2007; Daw et al., 2011; Walsh and Anderson, 2011; Walsh and Anderson, 2012; Weinberg et al., 2012; Tartaglia et al., 2017).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by citations to prior work that has addressed related questions.",
+    "evidence_type": [
+      "CITATION",
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C36",
+    "claim": "The learning environment had six states plus a goal G.",
+    "claim_type": "EXPLICIT",
+    "source": "Our learning environment had six states plus a goal G (Figures 1 and 2) identified by clip-art images shown on a computer screen in front of the participants.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This describes the experimental design, illustrated in Figures 1 and 2.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C37",
+    "claim": "States were identified by clip-art images shown on a computer screen.",
+    "claim_type": "EXPLICIT",
+    "source": "Our learning environment had six states plus a goal G (Figures 1 and 2) identified by clip-art images shown on a computer screen in front of the participants.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This describes the experimental design for the clip-art condition.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C38",
+    "claim": "The environment was designed such that participants were likely to encounter in episode 2 the same states D1 and/or D2 as in episode 1.",
+    "claim_type": "EXPLICIT",
+    "source": "It was designed such that participants were likely to encounter in episode 2 the same states D1 (one step away from the goal) and/or D2 (two steps away) as in episode 1 (Figure 1 (a)).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This describes a key feature of the experimental design.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C39",
+    "claim": "In each state, participants chose one out of two actions, 'a' or 'b'.",
+    "claim_type": "EXPLICIT",
+    "source": "In each state, participants chose one out of two actions, 'a' or 'b', and explored the environment until they discovered the goal G (the image of a reward) which terminated the episode.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the experimental procedure.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C40",
+    "claim": "Participants explored the environment until they discovered the goal G which terminated the episode.",
+    "claim_type": "EXPLICIT",
+    "source": "In each state, participants chose one out of two actions, 'a' or 'b', and explored the environment until they discovered the goal G (the image of a reward) which terminated the episode.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the experimental procedure.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C41",
+    "claim": "Participants were instructed to complete as many episodes as possible within a limited time of 12 min.",
+    "claim_type": "EXPLICIT",
+    "source": "The participants were instructed to complete as many episodes as possible within a limited time of 12 min (Materials and methods).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the experimental instructions.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C42",
+    "claim": "Both classes of algorithms, with or without eligibility trace, predicted that effects of learning after the first reward should be reflected in the action choice probability during a subsequent visit of state D1.",
+    "claim_type": "EXPLICIT",
+    "source": "Both classes of algorithms, with or without eligibility trace, predicted that effects of learning after the first reward should be reflected in the action choice probability during a subsequent visit of state D1 (Figure 1 (b)).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is a theoretical prediction based on RL models, illustrated in Figure 1.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C44",
+    "claim": "RL without eligibility trace (null hypothesis) such as TD-0 predicted that the action choice probability at D2 during episode 2 should be at 50 percent.",
+    "claim_type": "EXPLICIT",
+    "source": "RL without eligibility trace (null hypothesis) such as TD-0, predicted that the action choice probability at D2 during episode 2 should be at 50 percent, since information about the reward at the goal state G cannot 'travel' two steps.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a theoretical prediction based on TD-0 algorithm properties.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C45",
+    "claim": "The class of RL with eligibility trace (alternative hypothesis) predicted an increase in the probability of choosing the correct action at D2.",
+    "claim_type": "EXPLICIT",
+    "source": "However, the class of RL with eligibility trace (alternative hypothesis) predicted an increase in the probability of choosing the correct action, that is the one leading toward the goal",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a theoretical prediction based on eligibility trace algorithms.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C46",
+    "claim": "Under the null hypothesis, the evaluation of the state D2 could not change after a single reward.",
+    "claim_type": "EXPLICIT",
+    "source": "Under the null hypothesis, the evaluation of the state D2 could not change after a single reward.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a theoretical prediction based on RL without eligibility trace.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C47",
+    "claim": "Learning with eligibility trace predicted a change in state evaluation at D2, presumably reflected in pupil dilation.",
+    "claim_type": "EXPLICIT",
+    "source": "In contrast, learning with eligibility trace predicted a change in state evaluation, presumably reflected in pupil dilation (Figure 1(b)).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is a theoretical prediction based on eligibility trace algorithms, illustrated in Figure 1.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C48",
+    "claim": "Actions were assigned to state transitions 'on the fly' to maximize encounters with states D1 and D2.",
+    "claim_type": "EXPLICIT",
+    "source": "Participants could freely choose actions, but in order to maximize encounters with states D1 and D2, we assigned actions to state transitions 'on the fly'.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes a key feature of the experimental design.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C49",
+    "claim": "In the first episode, all participants started in state S.",
+    "claim_type": "EXPLICIT",
+    "source": "In the first episode, all participants started in state S (Figure 1 (a) and 2(a))",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This describes the experimental procedure.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C50",
+    "claim": "Independently of their choice and unbeknownst to the participants, the first action brought them always to state D2.",
+    "claim_type": "EXPLICIT",
+    "source": "Independently of their choice and unbeknownst to the participants, the first action brought them always to state D2, two steps away from the goal.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the experimental manipulation.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C51",
+    "claim": "In D2, participants could freely choose an action but always transitioned to D1.",
+    "claim_type": "EXPLICIT",
+    "source": "Similarly, in D2, participants could freely choose an action but always transitioned to D1",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the experimental manipulation.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C52",
+    "claim": "With their third action, participants always transitioned to G.",
+    "claim_type": "EXPLICIT",
+    "source": "and with their third action, to G.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the experimental manipulation.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C53",
+    "claim": "The initial actions determined the assignment of state-action pairs to state transitions for all remaining episodes in this environment.",
+    "claim_type": "EXPLICIT",
+    "source": "These initial actions determined the assignment of state-action pairs to state transitions for all remaining episodes in this environment.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the experimental procedure.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C54",
+    "claim": "In episode 2, half of the participants started from state Y.",
+    "claim_type": "EXPLICIT",
+    "source": "In episode 2, half of the participants started from state Y.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the experimental design.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C55",
+    "claim": "For participants starting from Y, their first action always brought them to D2.",
+    "claim_type": "EXPLICIT",
+    "source": "Their first action always brought them to D2, which they had already seen once during the first episode.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the experimental design.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C56",
+    "claim": "The other half of the participants started in state X and their first action brought them to D1.",
+    "claim_type": "EXPLICIT",
+    "source": "The other half of the participants started in state X and their first action brought them to D1 (Figure 2 (b)).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This describes the experimental design.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C57",
+    "claim": "Participants who started episode 2 in state X started episode 3 in state Y and vice versa.",
+    "claim_type": "EXPLICIT",
+    "source": "Participants who started episode 2 in state X started episode 3 in state Y and vice versa.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the experimental design.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C58",
+    "claim": "In episodes 4 to 7, the starting states were randomly chosen from {S, D2, X, Y, Z}.",
+    "claim_type": "EXPLICIT",
+    "source": "In episodes 4 to 7, the starting states were randomly chosen from {S, D2, X, Y, Z}.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the experimental design.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C59",
+    "claim": "After seven episodes, the task was considered as solved, and the same procedure started again in a new environment.",
+    "claim_type": "EXPLICIT",
+    "source": "After seven episodes, we considered the task as solved, and the same procedure started again in a new environment",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the experimental procedure.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C60",
+    "claim": "The action taken in state D1 that led to the rewarding state G was reinforced after episode 1.",
+    "claim_type": "EXPLICIT",
+    "source": "As expected, we found that the action taken in state D1 that led to the rewarding state G was reinforced after episode 1.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by behavioral data shown in Figure 2(e).",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C61",
+    "claim": "Reinforcement at D1 was visible as an action bias toward the correct action when D1 was seen again in episode 2.",
+    "claim_type": "EXPLICIT",
+    "source": "Reinforcement was visible as an action bias toward the correct action when D1 was seen again in episode 2 (Figure 2 (e)).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is supported by behavioral data shown in Figure 2(e).",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C62",
+    "claim": "The action bias at D1 is predicted by many different RL algorithms including the early theories of Rescorla and Wagner (1972).",
+    "claim_type": "EXPLICIT",
+    "source": "This action bias is predicted by many different RL algorithms including the early theories of Rescorla and Wagner (1972).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by citation to Rescorla and Wagner (1972).",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C63",
+    "claim": "A strong action bias was found in state D2 in episode 2.",
+    "claim_type": "EXPLICIT",
+    "source": "Importantly, we also found a strong action bias in state D2 in episode 2",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by behavioral data shown in Figure 2(f).",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C64",
+    "claim": "Participants repeated the correct action in state D2 in 85% of the cases.",
+    "claim_type": "EXPLICIT",
+    "source": "participants repeated the correct action (the one leading toward the goal) in 85% of the cases.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by behavioral data shown in Figure 2(f).",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C65",
+    "claim": "The strong bias at D2 is significantly different from chance level 50% (p<0.001).",
+    "claim_type": "EXPLICIT",
+    "source": "This strong bias is significantly different from chance level 50% (p<0.001; Figure 2 (f))",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is supported by statistical analysis of behavioral data shown in Figure 2(f).",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C66",
+    "claim": "The strong bias at D2 indicates that participants learned to assign a positive value to the correct state-action pair after a single exposure to state D2 and a single reward at the end of episode 1.",
+    "claim_type": "EXPLICIT",
+    "source": "and indicates that participants learned to assign a positive value to the correct state-action pair after a single exposure to state D2 and a single reward at the end of episode 1.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an interpretation of the behavioral data shown in Figure 2(f).",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C67",
+    "claim": "Evidence was found for one-shot learning in a state two steps away from goal in a multi-step decision task.",
+    "claim_type": "EXPLICIT",
+    "source": "In other words, we found evidence for one-shot learning in a state two steps away from goal in a multi-step decision task.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by behavioral data shown in Figure 2(f).",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C68",
+    "claim": "The finding is compatible with the alternative hypothesis, that is the broad class of RL 'with eligibility trace'.",
+    "claim_type": "EXPLICIT",
+    "source": "This is compatible with our alternative hypothesis, that is the broad class of RL 'with eligibility trace', (Sutton, 1988; Watkins, 1989; Williams, 1992; Moore and Atkeson, 1993; Peng and Williams, 1996; Singh and Sutton, 1996; Mnih et al., 2016; Blundell et al., 2016; Sutton and Barto, 2018) that keep explicit or implicit memories of past state-action pairs (see Discussion).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an interpretation of the behavioral data, supported by citations to RL algorithms.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C69",
+    "claim": "The finding is not compatible with the null hypothesis, that is RL 'without eligibility trace'.",
+    "claim_type": "EXPLICIT",
+    "source": "However, it is not compatible with the null hypothesis, that is RL 'without eligibility trace'.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an interpretation of the behavioral data.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C70",
+    "claim": "In both classes of algorithms, action biases or values that reflect the expected future reward are assigned to states.",
+    "claim_type": "EXPLICIT",
+    "source": "In both classes of algorithms, action biases or values that reflect the expected future reward are assigned to states.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a theoretical property of RL algorithms.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C71",
+    "claim": "In RL 'without eligibility trace', value information collected in a single action step is shared only between neighboring states.",
+    "claim_type": "EXPLICIT",
+    "source": "In RL 'without eligibility trace', however, value information collected in a single action step is shared only between neighboring states (for example between states G and D1)",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a theoretical property of RL without eligibility trace.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C72",
+    "claim": "In RL 'with eligibility trace' value information can reach state D2 after a single episode.",
+    "claim_type": "EXPLICIT",
+    "source": "whereas in RL 'with eligibility trace' value information can reach state D2 after a single episode.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a theoretical property of RL with eligibility trace.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C73",
+    "claim": "The argument about eligibility traces is both fundamental and qualitative in the sense that it does not rely on any specific choice of parameters or implementation details of an algorithm.",
+    "claim_type": "EXPLICIT",
+    "source": "Importantly, the above argument is both fundamental and qualitative in the sense that it does not rely on any specific choice of parameters or implementation details of an algorithm.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a methodological claim about the nature of the evidence.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C74",
+    "claim": "The finding can be interpreted as a signature of a behavioral eligibility trace in human multi-step decision making.",
+    "claim_type": "EXPLICIT",
+    "source": "Our finding can be interpreted as a signature of a behavioral eligibility trace in human multi-step decision making",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an interpretation of the behavioral data.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C75",
+    "claim": "The finding complements the well-established synaptic eligibility traces observed in animal models.",
+    "claim_type": "EXPLICIT",
+    "source": "and complements the well-established synaptic eligibility traces observed in animal models (Yagishita et al., 2014; He et al., 2015; Bittner et al., 2017; Fisher et al., 2017; Gerstner et al., 2018).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by citations to animal studies.",
+    "evidence_type": [
+      "CITATION",
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C76",
+    "claim": "The study tested participants in environments where states were defined by acoustic stimuli (sound condition).",
+    "claim_type": "EXPLICIT",
+    "source": "We tested participants in environments where states were defined by acoustic stimuli (2nd experiment: sound condition)",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the experimental design.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C77",
+    "claim": "The study tested participants in environments where states were defined by the spatial location of a black-and-white rectangular grid on the grey screen (spatial condition).",
+    "claim_type": "EXPLICIT",
+    "source": "or by the spatial location of a black-and-white rectangular grid on the grey screen (3rd experiment: spatialcondition; see Figure 2 and Materials and methods).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This describes the experimental design.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C78",
+    "claim": "Across all conditions, results were qualitatively similar.",
+    "claim_type": "EXPLICIT",
+    "source": "Across all conditions, results were qualitatively similar (Figure 2 (f))",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is supported by behavioral data shown in Figure 2(f).",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C79",
+    "claim": "Not only the action directly leading to the goal (i.e. the action in D1) but also the correct action in state D2 were chosen in episode 2 with a probability significantly different from random choice.",
+    "claim_type": "EXPLICIT",
+    "source": "not only the action directly leading to the goal (i.e. the action in D1) but also the correct action in state D2 were chosen in episode 2 with a probability significantly different from random choice.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by behavioral data shown in Figure 2(e) and (f).",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C80",
+    "claim": "The behavior is consistent with the class of RL with eligibility trace, and excludes all algorithms in the class of RL without eligibility trace.",
+    "claim_type": "EXPLICIT",
+    "source": "This behavior is consistent with the class of RL with eligibility trace, and excludes all algorithms in the class of RL without eligibility trace.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an interpretation of the behavioral data across all conditions.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C81",
+    "claim": "A control experiment was performed to exclude a reward-independent memorization strategy.",
+    "claim_type": "EXPLICIT",
+    "source": "To exclude a reward-independent memorization strategy, we performed a control experiment in which we tested the action-bias at state D2 (see Figure 3) in the absence of a reward.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This describes the control experiment design.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C82",
+    "claim": "In the control experiment, participants freely chose actions that moved them through a defined, non-rewarded, sequence of states during the first episode.",
+    "claim_type": "EXPLICIT",
+    "source": "In a design similar to the clip-art condition (Figure 1 (a)), the participants freely chose actions that moved them through a defined, non-rewarded, sequence of states (namely S-D2-D1-N-Y-D2, see Figure 3 (b) during the first episode.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This describes the control experiment design.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C83",
+    "claim": "By design of the control experiment, participants reach the state D2 twice before they encounter any reward.",
+    "claim_type": "EXPLICIT",
+    "source": "By design of the control experiment, participants reach the state D2 twice before they encounter any reward.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the control experiment design.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C84",
+    "claim": "In the control experiment, a weak non-significant (p=0.45) action-repetition bias of only 56% was observed.",
+    "claim_type": "EXPLICIT",
+    "source": "In the control experiment we observed a weak non-significant (p=0.45) action-repetition bias of only 56% (Figure 3 (c)",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is supported by behavioral data from the control experiment shown in Figure 3(c).",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C85",
+    "claim": "In the main experiment, a repetition bias of 85% was observed at D2.",
+    "claim_type": "EXPLICIT",
+    "source": "in contrast to the main experiment (with a reward between the first and second encounter of state D2) where we observed a repetition bias of 85%.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by behavioral data from the main experiment.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C86",
+    "claim": "The results indicate that earlier rewards influence the action choice when a state is encountered a second time.",
+    "claim_type": "EXPLICIT",
+    "source": "These results indicate that earlier rewards influence the action choice when a state is encountered a second time.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an interpretation of the comparison between main and control experiments.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C87",
+    "claim": "A significant change in the pupil dilatory response to stimulus D1 was observed between episode 1 and episode 2.",
+    "claim_type": "EXPLICIT",
+    "source": "We observed a significant change in the pupil dilatory response to stimulus D1 between episode 1 (black curve) and episode 2 (red curve).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by pupil dilation data shown in Figure 4(a).",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C88",
+    "claim": "The difference in pupil response at D1 was computed per time point using paired samples t-test.",
+    "claim_type": "EXPLICIT",
+    "source": "The difference was computed per time point (paired samples t-test)",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the statistical analysis method.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C89",
+    "claim": "Significance levels were adjusted to control for false discovery rate (FDR).",
+    "claim_type": "EXPLICIT",
+    "source": "significance levels were adjusted to control for false discovery rate (FDR, Benjamini and Hochberg, 1995)",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the statistical analysis method, with citation.",
+    "evidence_type": [
+      "DATA",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C90",
+    "claim": "FDR is a conservative measure given the temporal correlations of the pupillometric signal.",
+    "claim_type": "EXPLICIT",
+    "source": "which is a conservative measure given the temporal correlations of the pupillometric signal.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a methodological statement about the statistical analysis.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C91",
+    "claim": "The result suggests that participants change the evaluation of D1 after a single reward and that this change is reflected in pupil dilation.",
+    "claim_type": "EXPLICIT",
+    "source": "This result suggests that participants change the evaluation of D1 after a single reward and that this change is reflected in pupil dilation.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an interpretation of the pupil dilation data at D1.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C92",
+    "claim": "The pupil dilatory response to the state D2 was significantly stronger in episode 2 than in episode 1.",
+    "claim_type": "EXPLICIT",
+    "source": "Importantly, the pupil dilatory response to the state D2 was also significantly stronger in episode 2 than in episode 1.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by pupil dilation data shown in Figure 4(b).",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C94",
+    "claim": "For visual stimuli, pupil responses changed with stimulus luminance.",
+    "claim_type": "EXPLICIT",
+    "source": "First, for visual stimuli, pupil responses changed with stimulus luminance.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a known property of pupil responses.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C95",
+    "claim": "The rapid initial contraction of the pupil observed in the clip-art condition was a response to the 300 ms display of the images.",
+    "claim_type": "EXPLICIT",
+    "source": "The rapid initial contraction of the pupil observed in the clip-art condition (bottom row in Figure 4) was a response to the 300 ms display of the images.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is an interpretation of the pupil data in the clip-art condition.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C96",
+    "claim": "In the spatial condition, the initial transient was absent, but the difference in state D2 between episode 1 and episode 2 were equally significant.",
+    "claim_type": "EXPLICIT",
+    "source": "In the spatial condition, this initial transient was absent, but the difference in state D2 between episode 1 and episode 2 were equally significant.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by pupil dilation data shown in Figure 4.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C97",
+    "claim": "For the sound condition, the significant separation of the curves occurred slightly later than in the other two conditions.",
+    "claim_type": "EXPLICIT",
+    "source": "For the sound condition, in which stimuli were longer on average (Materials and methods), the significant separation of the curves occurred slightly later than in the other two conditions.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by pupil dilation data shown in Figure 4.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C98",
+    "claim": "Across all three conditions, pupil dilation changes significantly between episodes 1 and 2 (paired t-test, p<0.001 for the spatial condition, p<0.01 for the two others).",
+    "claim_type": "EXPLICIT",
+    "source": "A paired t-test of differences showed that, across all three conditions, pupil dilation changes significantly between episodes 1 and 2 (Figure 4(c); paired t-test, p<0.001 for the spatial condition, p<0.01 for the two others).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is supported by statistical analysis of pupil dilation data shown in Figure 4(c).",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C99",
+    "claim": "Since in all three conditions luminance is identical in episodes 1 and 2, luminance cannot explain the observed differences.",
+    "claim_type": "EXPLICIT",
+    "source": "Since in all three conditions luminance is identical in episodes 1 and 2, luminance cannot explain the observed differences.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a logical inference based on the experimental design.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C100",
+    "claim": "A control experiment was performed to check whether the differences in the pupil traces could be explained by the novelty of a state during episode 1, or familiarity with the state in episode 2.",
+    "claim_type": "EXPLICIT",
+    "source": "Second, we checked whether the differences in the pupil traces could be explained by the novelty of a state during episode 1, or familiarity with the state in episode 2 (Otero et al., 2011), rather than by reward-based learning.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the control experiment design.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C101",
+    "claim": "In the control experiment, a different set of participants saw a sequence of states, replayed from the main experiment.",
+    "claim_type": "EXPLICIT",
+    "source": "In a further control experiment, a different set of participants saw a sequence of states, replayed from the main experiment.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the control experiment design.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C102",
+    "claim": "In the control experiment, participants had to push a button in each state and count the number of states from start to goal to ensure they were focusing on the state sequence and engaged in the task.",
+    "claim_type": "EXPLICIT",
+    "source": "In order to ensure that participants were focusing on the state sequence and engaged in the task, they had to push a button in each state (freely choosing either 'a' or 'b'), and count the number of states from start to goal.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the control experiment design.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C104",
+    "claim": "The significant differences in pupil dilation in response to state D2 cannot be explained by novelty or familiarity alone.",
+    "claim_type": "EXPLICIT",
+    "source": "indicating that the significant differences in pupil dilation in response to state D2 cannot be explained by novelty or familiarity alone.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an interpretation of the comparison between main and control experiments.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C105",
+    "claim": "The findings in the control experiment also exclude other interpretations of correlations of pupil diameter such as memory formation in the absence of reward.",
+    "claim_type": "EXPLICIT",
+    "source": "The findings in the control experiment also exclude other interpretations of correlations of pupil diameter such as memory formation in the absence of reward.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an interpretation of the control experiment results.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C106",
+    "claim": "Across three different stimulus modalities, the single reward received at the end of the first episode strongly influenced the pupil responses to the same stimuli later in episode 2.",
+    "claim_type": "EXPLICIT",
+    "source": "In summary, across three different stimulus modalities, the single reward received at the end of the first episode strongly influenced the pupil responses to the same stimuli later in episode 2.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a summary of the pupil dilation results across all conditions.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C107",
+    "claim": "This effect was observed not only in state D1 (one step before the goal) but also in state D2 (two steps before the goal).",
+    "claim_type": "EXPLICIT",
+    "source": "Importantly, this effect was observed not only in state D1 (one step before the goal) but also in state D2 (two steps before the goal).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by pupil dilation data shown in Figure 4.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C108",
+    "claim": "A mere engagement in button presses while observing a sequence of stimuli, as in the control experiment, did not evoke the same pupil responses as the main task.",
+    "claim_type": "EXPLICIT",
+    "source": "Furthermore, a mere engagement in button presses while observing a sequence of stimuli, as in the control experiment, did not evoke the same pupil responses as the main task.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by comparison of pupil data between main and control experiments.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C109",
+    "claim": "The single reward at the end of the first episode triggered increases in pupil diameter during later encounters of the same state.",
+    "claim_type": "EXPLICIT",
+    "source": "Together these results suggested that the single reward at the end of the first episode triggered increases in pupil diameter during later encounters of the same state.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an interpretation of the pupil dilation results.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C112",
+    "claim": "The fact that very similar changes are also observed in state D2 excludes the possibility that the learning-related contribution to the pupil diameter can be predicted by RL without eligibility trace.",
+    "claim_type": "EXPLICIT",
+    "source": "However, the fact that very similar changes are also observed in state D2 excludes the possibility that the learning-related contribution to the pupil diameter can be predicted by RL without eligibility trace.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an interpretation of the pupil dilation data at D2.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C113",
+    "claim": "The pupil dilation was much larger after transitions with high TD-error compared to transitions with zero TD-error.",
+    "claim_type": "EXPLICIT",
+    "source": "We found that the pupil dilation was much larger after transitions with high TD-error compared to transitions with zero TD-error (Figure 6 (a) and Materials and methods).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is supported by pupil dilation data shown in Figure 6(a).",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C114",
+    "claim": "The temporal profiles of the pupil responses to states with high TD-error had striking similarities across the three experimental conditions.",
+    "claim_type": "EXPLICIT",
+    "source": "Importantly, these temporal profiles of the pupil responses to states with high TD-error had striking similarities across the three experimental conditions",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by pupil dilation data shown in Figure 6(a).",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C115",
+    "claim": "The mean response time course was different across the three conditions.",
+    "claim_type": "EXPLICIT",
+    "source": "whereas the mean response time course was different across the three conditions (Figure 6 (c).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is supported by pupil dilation data shown in Figure 6(c).",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C116",
+    "claim": "The underlying physiological process causing the TD-error-driven component in the pupil responses was invariant to stimulation details.",
+    "claim_type": "EXPLICIT",
+    "source": "This suggests that the underlying physiological process causing the TD-error-driven component in the pupil responses was invariant to stimulation details.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an interpretation of the similarity of pupil responses across conditions.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C117",
+    "claim": "A statistical analysis including data with low, medium, and high TD-error confirmed the correlation of pupil dilation with TD error.",
+    "claim_type": "EXPLICIT",
+    "source": "Second, a statistical analysis including data with low, medium, and high TD-error confirmed the correlation of pupil dilation with TD error (see subsection regression analysis in methods).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by regression analysis described in the methods section.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C118",
+    "claim": "A further qualitative analysis revealed that TD-error, rather than value itself, was a factor modulating pupil dilation.",
+    "claim_type": "EXPLICIT",
+    "source": "Third, a further qualitative analysis revealed that TD-error, rather than value itself, was a factor modulating pupil dilation (Figure 6 (b).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is supported by pupil dilation data shown in Figure 6(b).",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C119",
+    "claim": "The four RL algorithms with eligibility trace explained human behavior better than the Hybrid Learner.",
+    "claim_type": "EXPLICIT",
+    "source": "We found that the four RL algorithms with eligibility trace explained human behavior better than the Hybrid Learner, which was the top-scoring among all other RL algorithms.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by model comparison results shown in Table 1.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C120",
+    "claim": "Cross-validation confirmed that the ranking based on the Akaike Information Criterion (AIC) was robust.",
+    "claim_type": "EXPLICIT",
+    "source": "Cross-validation confirmed that our ranking based on the Akaike Information Criterion (AIC, Akaike, 1974; see Materials and methods) was robust.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by cross-validation results shown in Table 1.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C122",
+    "claim": "The models Q-\u03bb and SARSA-\u03bb with eligibility trace performed each significantly better than the corresponding models Q-0 and SARSA-0 without eligibility trace.",
+    "claim_type": "EXPLICIT",
+    "source": "The models Q-\u03bb and SARSA-\u03bb with eligbility trace performed each significantly better than the corresponding models Q-0 and SARSA-0 without eligbility trace.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by model comparison results shown in Table 1.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C123",
+    "claim": "The best fitting values of the eligibility trace parameter \u03bb were 0.81 in the clip-art, 0.96 in the sound, and 0.69 in the spatial condition.",
+    "claim_type": "EXPLICIT",
+    "source": "We found that the best fitting values (maximum likelihood, see Materials and methods) of the eligibility trace parameter \u03bb were 0.81 in the clip-art, 0.96 in the sound, and 0.69 in the spatial condition (see Figure 7).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is supported by model fitting results shown in Figure 7.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C124",
+    "claim": "These values of \u03bb are all significantly larger than zero (p<0.001) indicating the presence of an eligibility trace.",
+    "claim_type": "EXPLICIT",
+    "source": "These values are all significantly larger than zero (p<0.001) indicating the presence of an eligibility trace consistent with our findings in the previous subsections.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by statistical analysis of model parameters.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C126",
+    "claim": "The time constant \u03c4 of around 10s corresponds to 2 to 3 inter-stimulus intervals.",
+    "claim_type": "EXPLICIT",
+    "source": "corresponding to 2 to 3 inter-stimulus intervals.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is based on the measured inter-stimulus intervals in the experiment.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C127",
+    "claim": "An action taken 10s before a reward was reinforced and associated with the state in which it was taken \u2013 even if one or several decisions happened in between.",
+    "claim_type": "EXPLICIT",
+    "source": "This implies that an action taken 10s before a reward was reinforced and associated with the state in which it was taken \u2013 even if one or several decisions happened in between (see Discussion).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an interpretation of the time constant \u03c4.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C128",
+    "claim": "Eligibility traces, that is memories of past state-action pairs, decay over about 10s and can be linked to a reward occurring during that time span.",
+    "claim_type": "EXPLICIT",
+    "source": "Thus eligibility traces, that is memories of past state-action pairs, decay over about 10s and can be linked to a reward occurring during that time span.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a summary of the model fitting results.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C129",
+    "claim": "Eligibility traces provide a mechanism for learning temporally extended action sequences from a single reward (one-shot).",
+    "claim_type": "EXPLICIT",
+    "source": "Eligibility traces provide a mechanism for learning temporally extended action sequences from a single reward (one-shot).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a theoretical statement supported by the experimental findings.",
+    "evidence_type": [
+      "KNOWLEDGE",
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C130",
+    "claim": "One-shot learning is a well-known phenomenon for tasks such as image recognition.",
+    "claim_type": "EXPLICIT",
+    "source": "While one-shot learning is a well-known phenomenon for tasks such as image recognition (Standing, 1973; Brady et al., 2008)",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by citations to prior work.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C131",
+    "claim": "One-shot learning is a well-known phenomenon for one-step decision making.",
+    "claim_type": "EXPLICIT",
+    "source": "and one-step decision making (Duncan and Shohamy, 2016; Greve et al., 2017; Rouhani et al., 2018)",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by citations to prior work.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C132",
+    "claim": "One-shot learning has so far not been linked to Reinforcement Learning (RL) with eligibility traces in multi-step decision making.",
+    "claim_type": "EXPLICIT",
+    "source": "it has so far not been linked to Reinforcement Learning (RL) with eligibility traces in multi-step decision making.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This identifies a gap in the literature that the study addresses.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C133",
+    "claim": "The study formulated mutually exclusive hypotheses, which predict directly observable changes in behavior and in physiological measures when learning with or without eligibility traces.",
+    "claim_type": "EXPLICIT",
+    "source": "We formulated mutually exclusive hypotheses, which predict directly observable changes in behavior and in physiological measures when learning with or without eligibility traces.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the study's approach.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C134",
+    "claim": "Using a novel paradigm, the study could reject the null hypothesis of learning without eligibility trace in favor of the alternative hypothesis of learning with eligibility trace.",
+    "claim_type": "EXPLICIT",
+    "source": "Using a novel paradigm, we could reject the null hypothesis of learning without eligibility trace in favor of the alternative hypothesis of learning with eligibility trace.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is the main conclusion of the study, supported by behavioral and physiological data.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C135",
+    "claim": "The multi-step decision task shares aspects with earlier work in the neurosciences.",
+    "claim_type": "EXPLICIT",
+    "source": "Our multi-step decision task shares aspects with earlier work in the neurosciences (Pessiglione et al., 2006; Gl\u00e4scher et al., 2010; Daw et al., 2011; Walsh and Anderson, 2011; Niv et al., 2012; O'Doherty et al., 2017)",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by citations to prior work.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C136",
+    "claim": "The task overcomes limitations of earlier work by using a recurrent graph structure of the environment that enables relatively long episodes.",
+    "claim_type": "EXPLICIT",
+    "source": "but overcomes their limitations (i) by using a recurrent graph structure of the environment that enables relatively long episodes (Tartaglia et al., 2017)",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes an advantage of the study's design.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C137",
+    "claim": "The task overcomes limitations of earlier work by implementing an 'on-the-fly' assignment rule for state-action transitions during the first episodes.",
+    "claim_type": "EXPLICIT",
+    "source": "and (ii) by implementing an 'on-the-fly' assignment rule for state-action transitions during the first episodes.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes an advantage of the study's design.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C138",
+    "claim": "This novel design allows the study of human learning in specific and controlled conditions, without interfering with the participant's free choices.",
+    "claim_type": "EXPLICIT",
+    "source": "This novel design allows the study of human learning in specific and controlled conditions, without interfering with the participant's free choices.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes an advantage of the study's design.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C139",
+    "claim": "In relatively simple tasks typically used in animal or human studies, the two hypotheses make qualitatively different predictions only during the first episodes.",
+    "claim_type": "EXPLICIT",
+    "source": "A difficulty in the study of eligibility traces, is that in the relatively simple tasks typically used in animal (Pan et al., 2005) or human (Bogacz et al., 2007; Gureckis and Love, 2009; Daw et al., 2011; Walsh and Anderson, 2011; Weinberg et al., 2012; Tartaglia et al., 2017) studies, the two hypotheses make qualitatively different predictions only during the first episodes",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by citations to prior work and theoretical reasoning.",
+    "evidence_type": [
+      "CITATION",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C140",
+    "claim": "At the end of the first episode, algorithms in the class of RL without eligibility trace update only the value of state D1 (but not of D2).",
+    "claim_type": "EXPLICIT",
+    "source": "At the end of the first episode, algorithms in the class of RL without eligibility trace update only the value of state D1 (but not of D2, see Figure 1, Null hypothesis).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is a theoretical property of RL without eligibility trace.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C141",
+    "claim": "The value of D1 will drive learning at state D2 when the participants move from D2 to D1 during episode 2.",
+    "claim_type": "EXPLICIT",
+    "source": "Then, this value of D1 will drive learning at state D2 when the participants move from D2 to D1 during episode 2.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a theoretical property of RL without eligibility trace.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C142",
+    "claim": "Algorithms in the class of RL with eligibility trace update D2 already during episode one.",
+    "claim_type": "EXPLICIT",
+    "source": "In contrast, algorithms in the class of RL with eligibility trace, update D2 already during episode one.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a theoretical property of RL with eligibility trace.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C143",
+    "claim": "Only during episode 2, the behavioral data permits a clean, qualitative dissociation between the two classes.",
+    "claim_type": "EXPLICIT",
+    "source": "Therefore, only during episode 2, the behavioral data permits a clean, qualitative dissociation between the two classes.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a methodological insight about the study design.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C144",
+    "claim": "For most episodes, the differences between the two classes are not qualitative.",
+    "claim_type": "EXPLICIT",
+    "source": "On the other hand, the fact that for most episodes, the differences are not qualitative",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a theoretical observation about RL models.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C145",
+    "claim": "Eligibility trace contributions have typically been statistically inferred from many trials through model selection.",
+    "claim_type": "EXPLICIT",
+    "source": "is the reason why eligibility trace contributions have typically been statistically inferred from many trials through model selection (Pan et al., 2005; Bogacz et al., 2007; Gureckis and Love, 2009; Daw et al., 2011; Walsh and Anderson, 2011; Tartaglia et al., 2017).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by citations to prior work.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C146",
+    "claim": "By a specific task design and a focus on episodes 1 and 2, the study provided directly observable, qualitative, evidence for learning with eligibility traces from behavior and pupil data without the need of model selection.",
+    "claim_type": "EXPLICIT",
+    "source": "Here, by a specific task design and a focus on episodes 1 and 2, we provided directly observable, qualitative, evidence for learning with eligibility traces from behavior and pupil data without the need of model selection.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the study's methodological contribution.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C147",
+    "claim": "In the quantitative analysis, RL models with eligibility trace explained the behavioral data significantly better than the best tested RL models without.",
+    "claim_type": "EXPLICIT",
+    "source": "In the quantitative analysis, RL models with eligibility trace explained the behavioral data significantly better than the best tested RL models without.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by model comparison results shown in Table 1.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C148",
+    "claim": "There are several alternative algorithms in the reinforcement learning literature that would also account for one-shot learning but do not rely on the explicit eligibility traces formulated in Equation 1.",
+    "claim_type": "EXPLICIT",
+    "source": "There are, however, in the reinforcement learning literature, several alternative algorithms that would also account for one-shot learning but do not rely on the explicit eligibility traces formulated in Equation 1.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a theoretical observation about RL algorithms.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C150",
+    "claim": "Reinforcement learning algorithms with storage of past sequences enable the offline replay of the first episode so as to update values of states far away from the goal.",
+    "claim_type": "EXPLICIT",
+    "source": "Second, reinforcement learning algorithm with storage of past sequences (Moore and Atkeson, 1993; Blundell et al., 2016; Mnih et al., 2016) enable the offline replay of the first episode so as to update values of states far away from the goal.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by citations to RL literature.",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C151",
+    "claim": "These approaches implement the idea of eligibility traces as memory of past state-action pairs, albeit in a different algorithmic framework.",
+    "claim_type": "EXPLICIT",
+    "source": "While these approaches are formally different from eligibility traces, they nevertheless implement the idea of eligibility traces as memory of past state-action pairs (Crow, 1968; Fr\u00e9maux and Gerstner, 2015), albeit in a different algorithmic framework.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by citations to RL literature.",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C152",
+    "claim": "Prioritized sweeping with small backups is, if applied to the deterministic environment after the end of the first episode, equivalent to both episodic control and an eligibility trace.",
+    "claim_type": "EXPLICIT",
+    "source": "For example, prioritized sweeping with small backups (Seijen and Sutton, 2013) is an offline algorithm that is, if applied to our deterministic environment after the end of the first episode, equivalent to both episodic control (Brea, 2017) and an eligibility trace.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by citations to RL literature.",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C154",
+    "claim": "When behavioral data from the experiments were fitted across all seven episodes, the two model-based algorithms performed significantly worse than the RL models with explicit eligibility traces.",
+    "claim_type": "EXPLICIT",
+    "source": "Nevertheless, when behavioral data from our experiments were fitted across all seven episodes, the two model-based algorithms performed significantly worse than the RL models with explicit eligibility traces.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by model comparison results shown in Table 1.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C155",
+    "claim": "The experimental design does not allow distinguishing between different algorithmic implementations of closely related ideas.",
+    "claim_type": "EXPLICIT",
+    "source": "Since our experimental design does not allow us to distinguish between these different algorithmic implementations of closely related ideas, we put them all in the class of RL with eligibility traces.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a methodological limitation of the study.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C156",
+    "claim": "RL algorithms with explicit eligibility traces can be mapped to known synaptic and circuit mechanisms.",
+    "claim_type": "EXPLICIT",
+    "source": "Importantly, RL algorithms with explicit eligibility traces (Sutton, 1988; Williams, 1992; Peng and Williams, 1996; Izhikevich, 2007; Fr\u00e9maux and Gerstner, 2015) can be mapped to known synaptic and circuit mechanisms (Yagishita et al., 2014; He et al., 2015; Bittner et al., 2017; Fisher et al., 2017; Gerstner et al., 2018).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by citations to neuroscience literature.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C157",
+    "claim": "A time scale of the eligibility trace of about 10s in the experiments is in the range of, but a bit longer than those observed for dopamine modulated plasticity in the striatum.",
+    "claim_type": "EXPLICIT",
+    "source": "A time scale of the eligibility trace of about 10s in our experiments is in the range of, but a bit longer than those observed for dopamine modulated plasticity in the striatum (Yagishita et al., 2014)",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by citation to a neuroscience study.",
+    "evidence_type": [
+      "CITATION",
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C158",
+    "claim": "The time scale of about 10s is in the range of serotonin and norepinephrine modulated plasticity in the cortex.",
+    "claim_type": "EXPLICIT",
+    "source": "serotonin and norepinephrine modulated plasticity in the cortex (He et al., 2015)",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by citation to a neuroscience study.",
+    "evidence_type": [
+      "CITATION",
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C159",
+    "claim": "The time scale of about 10s is in the range of complex-spike plasticity in hippocampus.",
+    "claim_type": "EXPLICIT",
+    "source": "or complex-spike plasticity in hippocampus (Bittner et al., 2017)",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by citation to a neuroscience study.",
+    "evidence_type": [
+      "CITATION",
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C160",
+    "claim": "The time scale of about 10s is shorter than the time scales of minutes reported in hippocampus.",
+    "claim_type": "EXPLICIT",
+    "source": "but shorter than the time scales of minutes reported in hippocampus (Brzosko et al., 2017).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by citation to a neuroscience study.",
+    "evidence_type": [
+      "CITATION",
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C163",
+    "claim": "Neuromodulator signals could include dopamine.",
+    "claim_type": "EXPLICIT",
+    "source": "Neuromodulator signals could include dopamine (Schultz, 2015)",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by citation to neuroscience literature.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C164",
+    "claim": "Reward-related signals could also be conveyed, together with novelty or attention-related signals, by other modulators.",
+    "claim_type": "EXPLICIT",
+    "source": "but reward-related signals could also be conveyed, together with novelty or attention-related signals, by other modulators (Fr\u00e9maux and Gerstner, 2015).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by citation to neuroscience literature.",
+    "evidence_type": [
+      "CITATION",
+      "SPECULATION"
+    ]
+  },
+  {
+    "claim_id": "C165",
+    "claim": "Since the inter-stimulus interval (ISI) was not systematically varied, the study cannot distinguish between an eligibility trace with purely time-dependent, exponential decay, and one that decays discretely, triggered by events such as states or actions.",
+    "claim_type": "EXPLICIT",
+    "source": "Since in our paradigm the inter-stimulus interval (ISI) was not systematically varied, we cannot distinguish between an eligibility trace with purely time-dependent, exponential decay, and one that decays discretely, triggered by events such as states or actions.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a methodological limitation of the study.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C166",
+    "claim": "Future research needs to show whether the decay is event-triggered or defined by molecular characteristics, independent of the experimental paradigm.",
+    "claim_type": "EXPLICIT",
+    "source": "Future research needs to show whether the decay is event-triggered or defined by molecular characteristics, independent of the experimental paradigm.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a suggestion for future research.",
+    "evidence_type": [
+      "SPECULATION"
+    ]
+  },
+  {
+    "claim_id": "C167",
+    "claim": "The finding that changes of pupil dilation correlate with reward-driven variables of reinforcement learning goes beyond the changes linked to state recognition reported earlier.",
+    "claim_type": "EXPLICIT",
+    "source": "Our finding that changes of pupil dilation correlate with reward-driven variables of reinforcement learning (such as value or TD error) goes beyond the changes linked to state recognition reported earlier (Otero et al., 2011; Kucewicz et al., 2018).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by citations to prior work and the study's pupil dilation data.",
+    "evidence_type": [
+      "CITATION",
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C168",
+    "claim": "Non-luminance related pupil diameter is influenced by the neuromodulator norepinephrine.",
+    "claim_type": "EXPLICIT",
+    "source": "Also, since non-luminance related pupil diameter is influenced by the neuromodulator norepinephrine (Joshi et al., 2016)",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by citation to neuroscience literature.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C169",
+    "claim": "Reward-based learning is associated with the neuromodulator dopamine.",
+    "claim_type": "EXPLICIT",
+    "source": "while reward-based learning is associated with the neuromodulator dopamine (Schultz, 2015)",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by citation to neuroscience literature.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C170",
+    "claim": "The findings suggest that the roles, and regions of influence, of neuromodulators could be mixed.",
+    "claim_type": "EXPLICIT",
+    "source": "our findings suggest that the roles, and regions of influence, of neuromodulators could be mixed (Fr\u00e9maux and Gerstner, 2015; Berke, 2018)",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an interpretation of the pupil dilation findings, supported by citations.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C171",
+    "claim": "The roles and regions of influence of neuromodulators could be less well segregated than suggested by earlier theories.",
+    "claim_type": "EXPLICIT",
+    "source": "and less well segregated than suggested by earlier theories.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an interpretation of the pupil dilation findings.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C172",
+    "claim": "From the qualitative analysis of the pupillometric data of the main experiment, together with those of the control experiment, it was concluded that changes in pupil dilation reflected a learned, reward-related property of the state.",
+    "claim_type": "EXPLICIT",
+    "source": "From the qualitative analysis of the pupillometric data of the main experiment (Figure 5), together with those of the control experiment (Figure 5), we concluded that changes in pupil dilation reflected a learned, reward-related property of the state.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is an interpretation of the pupil dilation data.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C173",
+    "claim": "In the context of decision making and learning, pupil dilation is most frequently associated with violation of an expectation in the form of a reward prediction error or stimulus prediction error as in an oddball-task.",
+    "claim_type": "EXPLICIT",
+    "source": "In the context of decision making and learning, pupil dilation is most frequently associated with violation of an expectation in the form of a reward prediction error or stimulus prediction error as in an oddball-task (Nieuwenhuis et al., 2011).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by citation to prior work.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C174",
+    "claim": "The experimental paradigm was not designed to decide whether pupil diameter correlates stronger with state values or TD-errors.",
+    "claim_type": "EXPLICIT",
+    "source": "However, our experimental paradigm was not designed to decide whether pupil diameter correlates stronger with state values or TD-errors.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a methodological limitation of the study.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C175",
+    "claim": "A more systematic analysis suggests that correlation of pupil dilation with TD-errors is stronger than correlation with state values.",
+    "claim_type": "EXPLICIT",
+    "source": "Nevertheless, a more systematic analysis (see Materials and methods and Figure 6) suggests that correlation of pupil dilation with TD-errors is stronger than correlation with state values.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is supported by regression analysis and pupil dilation data shown in Figure 6.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C176",
+    "claim": "Eligibility traces are a fundamental factor underlying the human capability of quick learning and adaptation.",
+    "claim_type": "EXPLICIT",
+    "source": "Eligibility traces are a fundamental factor underlying the human capability of quick learning and adaptation.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a theoretical statement supported by the study's findings.",
+    "evidence_type": [
+      "KNOWLEDGE",
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C177",
+    "claim": "Eligibility traces implement a memory of past state-action associations and are a crucial element to efficiently solve the credit assignment problem in complex tasks.",
+    "claim_type": "EXPLICIT",
+    "source": "They implement a memory of past state-action associations and are a crucial element to efficiently solve the credit assignment problem in complex tasks (Izhikevich, 2007; Sutton and Barto, 2018; Gerstner et al., 2018).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a theoretical statement supported by citations.",
+    "evidence_type": [
+      "KNOWLEDGE",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C178",
+    "claim": "The present study provides both qualitative and quantitative evidence for one-shot sequence-learning with eligibility traces.",
+    "claim_type": "EXPLICIT",
+    "source": "The present study provides both qualitative and quantitative evidence for one-shot sequence-learning with eligibility traces.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a summary of the study's main findings.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C179",
+    "claim": "The correlation of the pupillometric signals with an RL algorithm with eligibility traces suggests that humans not only exploit memories of past state-action pairs in behavior but also assign reward-related values to these memories.",
+    "claim_type": "EXPLICIT",
+    "source": "The correlation of the pupillometric signals with an RL algorithm with eligibility traces suggests that humans not only exploit memories of past state-action pairs in behavior but also assign reward-related values to these memories.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an interpretation of the pupil dilation data.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C180",
+    "claim": "The consistency and similarity of the findings across three experimental conditions suggests that the underlying cognitive, or neuromodulatory, processes are independent of the stimulus modality.",
+    "claim_type": "EXPLICIT",
+    "source": "The consistency and similarity of our findings across three experimental conditions suggests that the underlying cognitive, or neuromodulatory, processes are independent of the stimulus modality.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an interpretation of the consistency of results across conditions.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C181",
+    "claim": "It is an interesting question for future research to actually identify the neural implementation of these memory traces.",
+    "claim_type": "EXPLICIT",
+    "source": "It is an interesting question for future research to actually identify the neural implementation of these memory traces.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a suggestion for future research.",
+    "evidence_type": [
+      "SPECULATION"
+    ]
+  },
+  {
+    "claim_id": "C182",
+    "claim": "Three different experimental conditions were implemented based on the same Markov Decision Process (MDP).",
+    "claim_type": "EXPLICIT",
+    "source": "We implemented three different experimental conditions based on the same Markov Decision Process (MDP) of Figure 2(a).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This describes the experimental design.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C183",
+    "claim": "The conditions only differed in the way the states were presented to the participants.",
+    "claim_type": "EXPLICIT",
+    "source": "The conditions only differed in the way the states were presented to the participants.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the experimental design.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C184",
+    "claim": "After completing seven episodes in the same environment, the experiment paused for 45 s while participants were instructed to close and relax their eyes.",
+    "claim_type": "EXPLICIT",
+    "source": "Furthermore, in order to collect enough samples from early trials, where the learning effects are strongest, participants did not perform one long experiment. Instead, after completing seven episodes in the same environment, the experiment paused for 45 s while participants were instructed to close and relax their eyes.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the experimental procedure.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C185",
+    "claim": "After the pause, the experiment restarted with a new environment: the transition graph was reset, a different, unused, stimulus was assigned to each state, and the participant had to explore and learn the new environment.",
+    "claim_type": "EXPLICIT",
+    "source": "Then the experiment restarted with a new environment: the transition graph was reset, a different, unused, stimulus was assigned to each state, and the participant had to explore and learn the new environment.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the experimental procedure.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C186",
+    "claim": "Participants were instructed to reach the goal state as often as possible within a limited time (12 min in the sound and clip-art condition, 20 min in the spatial condition).",
+    "claim_type": "EXPLICIT",
+    "source": "We instructed the participants to reach the goal state as often as possible within a limited time (12 min in the sound and clip-art condition, 20 min in the spatial condition).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the experimental instructions.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C187",
+    "claim": "On average, participants completed 48.1 episodes (6.9 environments) in the spatial condition.",
+    "claim_type": "EXPLICIT",
+    "source": "On average, they completed 48.1 episodes (6.9 environments) in the spatial condition",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a summary of the experimental data.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C188",
+    "claim": "On average, participants completed 19.4 episodes (2.7 environments) in the sound condition.",
+    "claim_type": "EXPLICIT",
+    "source": "19.4 episodes (2.7 environments) in the sound condition",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a summary of the experimental data.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C189",
+    "claim": "On average, participants completed 25.1 episodes (3.6 environments) in the clip-art condition.",
+    "claim_type": "EXPLICIT",
+    "source": "and 25.1 episodes (3.6 environments) in the clip-art condition.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a summary of the experimental data.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C190",
+    "claim": "In the spatial condition, each state was defined by the location on the screen of a 100 \u00d7 260 pixels checkerboard image, flashed for 100 ms.",
+    "claim_type": "EXPLICIT",
+    "source": "In the spatial condition, each state was defined by the location (on an invisible circle) on the screen of a 100 \u00d7 260 pixels checkerboard image, flashed for 100 ms, Figure 2(d).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This describes the experimental design for the spatial condition.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C191",
+    "claim": "The goal state in the spatial condition was represented by the same rectangular checkerboard, but rotated by 90\u00b0.",
+    "claim_type": "EXPLICIT",
+    "source": "The goal state was represented by the same rectangular checkerboard, but rotated by 90\u00b0.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the experimental design for the spatial condition.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C192",
+    "claim": "The checkerboard had the same average luminance as the grey background screen.",
+    "claim_type": "EXPLICIT",
+    "source": "The checkerboard had the same average luminance as the grey background screen.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the experimental design for the spatial condition.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C193",
+    "claim": "In each new environment, the states were randomly assigned to locations and the checkerboards were rotated.",
+    "claim_type": "EXPLICIT",
+    "source": "In each new environment, the states were randomly assigned to locations and the checkerboards were rotated (states: 260 \u00d7 100 pixels checkerboard, goal: 100 \u00d7 260).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the experimental design for the spatial condition.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C194",
+    "claim": "In the sound condition, each state was represented by a unique acoustic stimulus (tones and natural sounds) of 300 ms to 600 ms duration.",
+    "claim_type": "EXPLICIT",
+    "source": "In the sound condition, each state was represented by a unique acoustic stimulus (tones and natural sounds) of 300 ms to 600 ms duration.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the experimental design for the sound condition.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C195",
+    "claim": "New, randomly chosen, stimuli were used in each environment in the sound condition.",
+    "claim_type": "EXPLICIT",
+    "source": "New, randomly chosen, stimuli were used in each environment.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the experimental design for the sound condition.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C196",
+    "claim": "At the goal state in the sound condition, an applause was played.",
+    "claim_type": "EXPLICIT",
+    "source": "At the goal state an applause was played.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the experimental design for the sound condition.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C197",
+    "claim": "An experimental advantage of the sound condition is that a change in the pupil dilation cannot stem from a luminance change but must be due to a task-specific condition.",
+    "claim_type": "EXPLICIT",
+    "source": "An experimental advantage of the sound condition is that a change in the pupil dilation cannot stem from a luminance change but must be due to a task-specific condition.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a methodological observation about the sound condition.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C198",
+    "claim": "In the clip-art condition, each state was represented by a unique 100 \u00d7 100 pixel clip-art image that appeared for 300 ms in the center of the screen.",
+    "claim_type": "EXPLICIT",
+    "source": "In the clip-art condition, each state was represented by a unique 100 \u00d7 100 pixel clip-art image that appeared for 300 ms in the center of the screen.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the experimental design for the clip-art condition.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C199",
+    "claim": "For each environment in the clip-art condition, a new set of images was used, except for the goal state which was always the same (a person holding a trophy) in all experiments.",
+    "claim_type": "EXPLICIT",
+    "source": "For each environment, a new set of images was used, except for the goal state which was always the same (a person holding a trophy) in all experiments.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the experimental design for the clip-art condition.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C200",
+    "claim": "The screen resolution was 1920 \u00d7 1080 pixels.",
+    "claim_type": "EXPLICIT",
+    "source": "The screen resolution was 1920 \u00d7 1080 pixels.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the experimental setup.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C201",
+    "claim": "In all three conditions, the background screen was grey with a fixation cross in the center of the screen.",
+    "claim_type": "EXPLICIT",
+    "source": "In all three conditions, the background screen was grey with a fixation cross in the center of the screen.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the experimental setup.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C202",
+    "claim": "The fixation cross was rotated from + to \u00d7 to signal to the participants when to enter their decision by pressing one of two push-buttons.",
+    "claim_type": "EXPLICIT",
+    "source": "It was rotated from + to \u00d7 to signal to the participants when to enter their decision by pressing one of two push-buttons (one in the left and the other in the right hand).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the experimental procedure.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C203",
+    "claim": "No lower or upper bound was imposed on the reaction time.",
+    "claim_type": "EXPLICIT",
+    "source": "No lower or upper bound was imposed on the reaction time.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the experimental procedure.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C204",
+    "claim": "The next state appeared after a random delay of 2.5s to 4s after the push-button was pressed.",
+    "claim_type": "EXPLICIT",
+    "source": "The next state appeared after a random delay of 2.5s to 4s after the push-buttons was pressed.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the experimental procedure.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C205",
+    "claim": "Prior to the actual learning task, participants performed a few trials to check they all understood the instructions.",
+    "claim_type": "EXPLICIT",
+    "source": "Prior to the actual learning task, they performed a few trials to check they all understood the instructions.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the experimental procedure.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C206",
+    "claim": "While the participants performed the sound- and clip-art conditions, the pupil diameter was recorded using an SMI iViewX high speed video-based eye tracker (recorded at 500 Hz, down-sampled to 100 Hz for the analysis by averaging over five samples).",
+    "claim_type": "EXPLICIT",
+    "source": "While the participants performed the sound- and clip-art conditions, we recorded the pupil diameter using an SMI iViewX high speed video-based eye tracker (recorded at 500 Hz, down-sampled to 100 Hz for the analysis by averaging over five samples).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the experimental setup for pupil recording.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C207",
+    "claim": "From participants performing the spatial condition, the pupil diameter was recorded using a 60 Hz Tobii Pro tracker.",
+    "claim_type": "EXPLICIT",
+    "source": "From participants performing the spatial condition, we recorded the pupil diameter using a 60 Hz Tobii Pro tracker.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the experimental setup for pupil recording.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C208",
+    "claim": "An eye tracker calibration protocol was run for each participant.",
+    "claim_type": "EXPLICIT",
+    "source": "An eye tracker calibration protocol was run for each participant.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the experimental procedure.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C209",
+    "claim": "All experiments were implemented using the Psychophysics Toolbox.",
+    "claim_type": "EXPLICIT",
+    "source": "All experiments were implemented using the Psychophysics Toolbox (Brainard, 1997).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the experimental implementation, with citation.",
+    "evidence_type": [
+      "DATA",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C210",
+    "claim": "The number of participants performing the sound condition was 15.",
+    "claim_type": "EXPLICIT",
+    "source": "The number of participants performing the task was: sound: 15",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the experimental sample size.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C211",
+    "claim": "The number of participants performing the clip-art condition was 12.",
+    "claim_type": "EXPLICIT",
+    "source": "clip-art: 12",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the experimental sample size.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C212",
+    "claim": "The number of participants performing the spatial condition was 22.",
+    "claim_type": "EXPLICIT",
+    "source": "spatial: 22 participants",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the experimental sample size.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C213",
+    "claim": "The number of participants performing the Control sound condition was 9.",
+    "claim_type": "EXPLICIT",
+    "source": "Control sound: 9",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the experimental sample size for the control experiment.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C214",
+    "claim": "The number of participants performing the Control clip-art condition was 10.",
+    "claim_type": "EXPLICIT",
+    "source": "Control clip-art: 10",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the experimental sample size for the control experiment.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C215",
+    "claim": "The number of participants performing the Control spatial condition was 12.",
+    "claim_type": "EXPLICIT",
+    "source": "Control spatial: 12.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the experimental sample size for the control experiment.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C216",
+    "claim": "The participants were recruited from the EPFL students pool.",
+    "claim_type": "EXPLICIT",
+    "source": "The participants were recruited from the EPFL students pool.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the participant recruitment.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C217",
+    "claim": "Participants had normal or corrected-to-normal vision.",
+    "claim_type": "EXPLICIT",
+    "source": "They had normal or corrected-to-normal vision.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the participant inclusion criteria.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C218",
+    "claim": "Experiments were conducted in accordance with the Helsinki declaration and approved by the ethics commission of the Canton de Vaud (164/14 Titre: Aspects fondamentaux de la reconnaissance des objets : protocole g\u00e9n\u00e9ral).",
+    "claim_type": "EXPLICIT",
+    "source": "Experiments were conducted in accordance with the Helsinki declaration and approved by the ethics commission of the Canton de Vaud (164/14 Titre: Aspects fondamentaux de la reconnaissance des objets : protocole g\u00e9n\u00e9ral).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the ethical approval for the study.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C219",
+    "claim": "All participants were informed about the general purpose of the experiment and provided written, informed consent.",
+    "claim_type": "EXPLICIT",
+    "source": "All participants were informed about the general purpose of the experiment and provided written, informed consent.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the ethical procedures.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C220",
+    "claim": "Participants were told that they could quit the experiment at any time they wish.",
+    "claim_type": "EXPLICIT",
+    "source": "They were told that they could quit the experiment at any time they wish.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the ethical procedures.",
+    "evidence_type": [
+      "DATA"
+    ]
+  }
+]

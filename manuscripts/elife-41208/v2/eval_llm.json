@@ -1,0 +1,393 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C43",
+      "C101"
+    ],
+    "result": "French Flag GRN realizations exhibit transient dynamic gene expression domains that eventually stabilize at morphogen thresholds, with the threshold-based steady state being the defining feature of the French Flag model.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C23, C43, and C101 collectively demonstrate through computational modeling that French Flag GRN realizations show dynamic gene expression during an initial transient phase but ultimately reach steady state at morphogen thresholds. The computational evidence (Videos 1-2, Figure 1\u2014figure supplement 1A) directly supports this characterization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C44",
+      "C102"
+    ],
+    "result": "The Speed Regulation model is threshold-free, with gap genes wired into a genetic cascade that is sequentially activated, and gene expression domains continuously shift without reaching steady state unless the morphogen gradient retracts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C27, C44, and C102 describe the Speed Regulation model based on prior literature (Zhu et al., 2017; Kuhlmann and El-Sherif, 2018) and computational modeling shown in Figure 1\u2014figure supplement 1C and Videos 3-5. The characterization is well-supported by both citations and computational demonstrations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "The Speed Regulation GRN realization employs two modules: a dynamic module (genetic cascade for sequential activation) and a static module (multi-stable network for stabilization), with the morphogen gradient activating the dynamic module while repressing the static module.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C42 describe the two-module GRN realization of the Speed Regulation model, supported by Figure 1B'' and computational modeling. The mechanism by which the morphogen gradient differentially regulates the two modules to achieve speed regulation is clearly demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "The French Flag with a Timer Gene (FFTG) model uses a Timer Gene activated by the posterior morphogen with negligible decay, forming a long-range gradient that sets fate boundaries through concentration thresholds, and can operate in both gradient-based and wavefront-based modes similar to the Speed Regulation model.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C62 describe the FFTG model with support from computational modeling (Figure 2C-D, Video 7). The model is shown to exhibit similar dynamics to the Speed Regulation model while maintaining threshold-based patterning. The computational evidence adequately supports these theoretical predictions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "The key mechanistic difference between Speed Regulation and FFTG models is that sequential gene activation is mediated by fate-specifying genes themselves in SR versus by the Timer Gene in FFTG, leading to different responses when the leading gene is re-induced: SR resets the cascade while FFTG maintains the pattern.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C68 articulate the critical distinction between the two models and predict differential responses to perturbation. This is supported by computational modeling shown in Figure 2E and Videos 8-9, which clearly demonstrate the contrasting behaviors upon re-induction of the leading gene.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C28",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "Re-inducing hunchback at 26-29 hr AEL in Tribolium embryos results in a dual response: premature down-regulation of gap genes anterior to the active-zone and re-induction of the gap gene cascade within the active-zone that propagates anteriorly.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28, C72-C85 describe the main experimental findings from heat-shock experiments at 26-29 hr AEL. The dual response is well-documented through in situ hybridization data (Figures 4A, 4C, Figure 4\u2014figure supplement 2) with quantification showing distinct behaviors in different embryonic regions. The experimental evidence is robust with appropriate controls.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "The re-induction of the entire gap gene sequence upon re-inducing hb at a time when gap genes are not normally expressed indicates gap genes form an aperiodic clock that can be reset at any time, arguing against threshold-based French Flag regulation and supporting the Speed Regulation model.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C91 present the key interpretation of the experimental results. The logic is sound: re-inducing the gap gene cascade at 26-29 hr AEL (when the active-zone is void of gap gene expression in WT) demonstrates self-regulatory, threshold-free behavior. This interpretation is well-supported by the experimental data in Figures 3-4.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "The dual response to hb re-induction supports the two-module GRN realization of the Speed Regulation model, with the transient down-regulation before re-induction indicating a genetic cascade with mutual-repressive links.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C95 connect the experimental observations to the specific GRN architecture. The dual response (different behaviors in active-zone vs. anterior) and transient down-regulation (observed in 23-26 hr and 20-23 hr AEL experiments, Figure 5) provide indirect but compelling support for the two-module architecture with mutual repression.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "The re-activation of gap gene sequence upon re-inducing hb is specific to the cad-expressing region, as demonstrated by axn RNAi experiments where the entire embryo becomes an enlarged active-zone and shows gap gene re-activation throughout.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C100 describe the axn RNAi experiments that test whether gap gene re-activation is specific to the cad-expressing domain. The experimental results (Figure 6, Figure 6\u2014figure supplement 1) clearly show that expanding the cad domain expands the region of gap gene re-activation, supporting the hypothesis and disfavoring alternative models.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C28",
+      "C110",
+      "C111",
+      "C125"
+    ],
+    "result": "The gap gene network in Tribolium castaneum operates via a threshold-free Speed Regulation mechanism where the speed of a genetic cascade is regulated by a posterior morphogen gradient, and the network is self-regulatory and can be reset by re-inducing hunchback.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C6, C28, C110-C111, and C125 represent the main conclusion of the paper. This conclusion is well-supported by the combination of computational modeling (showing the theoretical distinction between models) and experimental evidence (heat-shock experiments demonstrating cascade resetting). The experimental design appropriately tests the key prediction that distinguishes SR from FFTG models.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C33",
+      "C34",
+      "C35",
+      "C90"
+    ],
+    "result": "The self-regulatory behavior of gap gene regulation argues against threshold-based French Flag models and is difficult to explain using such models, while being indicative of time-based Speed Regulation patterning.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C31, C33-C35, and C90 present the comparative argument against the French Flag model. The computational modeling (Figure 2E, Videos 8-9) demonstrates that French Flag/FFTG models cannot recapitulate the observed resetting behavior, while the Speed Regulation model can. The experimental test (resetting the patterning scheme) effectively discriminates between the models.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "Insect development varies by germ type: short-germ insects specify most AP fates in the growing germband, long-germ insects specify most fates in the non-growing blastoderm, and intermediate-germ insects use both, with evolutionary trends toward long-germ development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C50 describe established knowledge about insect development and evolution, supported by appropriate citations (Davis and Patel, 2002; El-Sherif et al., 2012b; Peel et al., 2005; Peel, 2004) and illustrated in Figure 2A. This background information is well-established in the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "The Speed Regulation model can operate in gradient-based and wavefront-based modes to pattern both non-elongating and elongating tissues, offering an evolutionary mechanism for smooth transitions between short-germ and long-germ insect development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C54 describe the application of the Speed Regulation model to insect development, based on prior work (Zhu et al., 2017) and supported by computational modeling (Figure 2B, Video 6). The flexibility of the model to accommodate different developmental modes is well-demonstrated computationally.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "During AP patterning in Tribolium, gap genes (hb, Kr, mlpt, gt) are expressed in sequential waves propagating from posterior to anterior in the presence of a cad gradient, stabilizing into static domains upon cad retraction, with some genes having two trunk expression domains.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C71 describe the normal gap gene expression dynamics in Tribolium, supported by in situ hybridization data (Figure 3) and citations to prior literature. This characterization provides the essential baseline for interpreting the perturbation experiments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "The Speed Regulation and FFTG models are intimately related, both composed of an aperiodic clock regulated by the posterior morphogen, but differ in the nature of the clock: SR uses fate-specifying gene interactions while FFTG uses Timer Gene concentrations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C103-C109 present a theoretical synthesis comparing the two models. The conceptual framework is well-articulated and supported by the computational modeling. The distinction between the two clock mechanisms provides the basis for the experimental test. Claim C107 appropriately notes that no Timer Gene has been discovered in insects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C36",
+      "C37"
+    ],
+    "result": "In the French Flag GRN, the morphogen gradient activates different genes with different strengths, and cross-regulatory interactions between genes further delimit gene expression bands.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C37 describe the mechanism of the French Flag GRN realization shown in Figure 1A'' and simulated in Videos 1-2. The computational modeling adequately demonstrates this mechanism, which is based on GRN realizations from Fran\u00e7ois and Siggia (2010).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C19"
+    ],
+    "result": "The French Flag model is one of the earliest models of pattern formation where morphogen gradient thresholds set boundaries between gene expression domains, though the general description is purely phenomenological.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C9 and C19 provide historical context about the French Flag model, appropriately cited to Wolpert (1969). The characterization as phenomenological is accurate and sets up the motivation for examining GRN realizations of the model.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "Gene expression domains are typically dynamic and often expressed sequentially in wave-like fashion, morphogen exposure time has crucial effects on patterning, and recent work suggests a more dynamic time-based paradigm rather than threshold-based patterning.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C18 provide important background on challenges to the simple French Flag model, supported by extensive citations to relevant literature. This establishes the motivation for the study and the context for distinguishing between threshold-based and time-based mechanisms.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C1",
+      "C2"
+    ],
+    "result": "Gap genes mediate AP axis division in insects by regulating downstream hox genes, and in Drosophila are regulated through a threshold-based mechanism guided by morphogen gradients.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2 provide essential background on gap gene function and regulation in Drosophila, supported by decades of research. This establishes the contrast with the findings in Tribolium and motivates the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C7",
+      "C32"
+    ],
+    "result": "The gap gene network may be self-regulatory in other short/intermediate-germ insects, and the basic French Flag model is incapable of reproducing insect development and evolution phenomenology.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C7 is explicitly speculative, extending findings from Tribolium to other insects without direct evidence. Claim C32 is a strong assertion but is based primarily on the inability of the basic French Flag model to accommodate the flexibility needed for different germ types, which is more of a theoretical argument than a demonstrated limitation. Additional experimental evidence from other species would strengthen these claims.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C112",
+      "C113",
+      "C114"
+    ],
+    "result": "Hox genes in vertebrates are expressed sequentially in waves and hypothesized to be regulated by a 'hox clock', though it is unclear if this clock is self-regulatory or threshold-based, and similar perturbation experiments might resolve this.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C112-C114 draw a parallel to vertebrate Hox gene regulation, appropriately cited, and suggest future experiments. This is a reasonable extension of the work, though C114 is speculative about the potential of the proposed experiments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C115",
+      "C116"
+    ],
+    "result": "The failure of French Flag GRN to re-induce the patterning sequence is due to the morphogen gradient being the driving factor rather than cross-regulatory interactions, while the dual response in Tribolium supports the two-module Speed Regulation realization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C115-C116 provide mechanistic explanations for the modeling and experimental results. The reasoning is sound and supported by the computational modeling (Videos 8, 11) showing the contrast between different GRN architectures.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C117",
+      "C118",
+      "C119",
+      "C120"
+    ],
+    "result": "The AC-DC GRN can operate as either a multi-stable circuit or clock depending on morphogen concentration, but it is unclear if it can mediate the transition needed for wavefront-based patterning, and it lacks the flexibility of the two-modules model.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C117-C120 discuss an alternative GRN realization (AC-DC motif) from the literature, appropriately noting its limitations compared to the two-modules model. The assessment is fair and acknowledges both the economy and constraints of this alternative architecture.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C121",
+      "C122",
+      "C123",
+      "C124"
+    ],
+    "result": "Gap genes interact with pair-rule genes in Tribolium, hb re-activation induced extra segments in cuticles, and hb depletion in Bombyx mori also led to extra segments, possibly due to species differences or RNAi timing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C121-C124 discuss downstream effects and comparative observations. C121 is supported by citation, C122 is an experimental observation (with details in Appendix 1), C123 cites another study, and C124 appropriately speculates about possible explanations for the difference. These observations are noted but not central to the main conclusions.",
+    "result_type": "MINOR"
+  }
+]

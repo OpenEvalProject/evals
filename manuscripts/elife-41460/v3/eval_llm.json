@@ -1,0 +1,306 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C4",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C38"
+    ],
+    "result": "The authors developed barcoded exosomal microRNAs (bEXOmiRs) as reporters for EV release. bEXOmiRs were designed based on miR-30 with a 15 nt barcode and EV-targeting motifs from miR-601, expressed in cells, detected in EV fractions by RT-PCR alongside EV protein markers, protected from RNase digestion, floated in sucrose gradients, and showed reproducible abundance measurements (R\u00b2=0.95) across replicates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C19-C33, C38 collectively demonstrate successful development and validation of bEXOmiRs. The design is clearly described (C19-C21), experimental detection is shown (C22-C27, C29-C31), and reproducibility is demonstrated (C33). Controls confirm RNA source (C24) and membrane enclosure (C25-C26). The approach is well-validated through multiple orthogonal methods.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C5",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "A genome-wide CRISPR/Cas9 screen using bEXOmiRs identified genes regulating EV release. The screen required >100 liters of culture supernatants, showed excellent reproducibility (R\u00b2=0.95), revealed known regulators (SMPD3, MCOLN3, YKT6, RAB27A, ESCRT components), and demonstrated no correlation between cell growth and EV release phenotype or between cellular and EV bEXOmiR abundance (R\u00b2=0.13-0.17).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C41-C57 describe a well-executed genome-wide screen. Known positive controls were identified (C43-C50), reproducibility was high (C54), and important controls ruled out confounding effects of cell growth (C57) and differential expression (C55-C56). The scale (C53) and technical rigor support the validity of novel hits identified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "Functional network analysis of screen hits identified gene clusters regulating EV biogenesis including miRNA processing (XPO5, RANGAP1), actin dynamics (ARHGEF18), Wnt signaling, GPCR signaling (histamine H3 receptor), and ribosome biogenesis. ARHGEF18 was identified as a guanine nucleotide exchange factor for Rho GTPases that regulates actin dynamics and invadopodia formation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C67 describe network analysis results supported by the screen data (C58, C61-C62) and citations to prior work establishing gene functions (C59, C63-C67). The analysis appropriately integrates screen results with known biological pathways to identify functionally related gene clusters.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "Validation experiments confirmed roles for ARHGEF18, SMPD3, RHOV, BAIAP3, PPP1R1C, and TREM1 in EV formation. Knockout of SMPD3 or ARHGEF18 decreased ~50% of endogenous miRNAs in EVs (Nanostring), siRNA depletion of RHOV, ARHGEF18, BAIAP3, or PPP1R1C decreased MVE exocytosis (TIRF microscopy), and nanoparticle tracking analysis confirmed reduced EV particle release (100-150 nm peak size) without changes in CD63-positive compartment abundance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C81 provide strong orthogonal validation using multiple independent methods (Nanostring, qPCR, immunoblot, TIRF microscopy, NTA). The convergent evidence from different assays measuring endogenous miRNAs (C68-C70), EV proteins (C71), live MVE exocytosis (C73-C75), and particle counts (C76-C78) strongly supports roles for these genes in MVE exocytosis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C18",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "The screen uncovered genes with unrecognized roles in MVE exocytosis including Wnt signaling components. Wnt signaling modulators (LYPD6B, RNF146, NKD2) appeared as EV biogenesis regulators. Prior work showed Wnt signaling involves intralumenal targeting of GSK3 and Axin into MVEs, GSK3 regulates endolysosome biogenesis via MITF/TFEB/TFE3, and Wnt stimulation activates ARHGEF18 and upregulates RHOV. PP1 regulatory subunits (PPP1R1C, PPP1R14D) showed opposite roles in EV release.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C7, C18, C85-C100 establish connections between Wnt signaling and EV release through screen data (C85, C88-C89, C96) and extensive citations to prior work (C86-C87, C90-C95, C97-C100). The identification of multiple Wnt pathway components with consistent directional effects supports this as a genuine regulatory mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "Wnt3a addition to serum-starved K562 cells decreased EV markers (LAMP1, HSC70, CD81), which were rescued by DKK1. GSK3 inhibitor CHIR99021 and LiCl decreased EV levels from K562 and HEK293T cells. CHIR99021 increased LAMP1 protein levels and lysosome numbers, and increased mRNA levels of LAMP1, MCOLN1, and AXIN2, consistent with stabilization of MITF/TFE transcription factors that regulate MVE exocytosis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C101-C110 provide experimental validation of Wnt/GSK3 regulation of EV release using multiple approaches (Wnt3a, DKK1, CHIR99021, LiCl) and measurements (immunoblot, flow cytometry, microscopy, qPCR). The results are internally consistent and align with known Wnt pathway biology (C107-C108, C110). The paradoxical decrease in EV release upon Wnt activation is acknowledged and explored.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C131"
+    ],
+    "result": "In K562 cells, GSK3 inhibition by CHIR99021 caused ~50% reduction in RAB27A mRNA and protein levels, likely explaining reduced EV release. This was unexpected as MITF/TFE stabilization would be predicted to upregulate RAB27A. RPE cells behaved differently, showing increased EV production without RAB27A decrease. Cell type-specific effects and starvation conditions contribute to differences in GSK3-mediated EV generation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C113-C120, C131 describe an unexpected finding (RAB27A downregulation) supported by experimental data (C113-C114) and acknowledge cell type-specific differences (C117-C118). The authors appropriately note the paradox (C116) and experimental conditions (C119-C120) that may contribute. The mechanistic explanation (C115) is reasonable given RAB27A's known role in EV release.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C39",
+      "C40"
+    ],
+    "result": "Intrinsic differences in barcode sequences influenced exosomal targeting, with some bEXOmiRs efficiently detected in EVs while others were not. This did not reflect synthesis differences as cellular and EV bEXOmiR levels showed poor correlation. Initial motif searches were unsuccessful, and certain sequences dominated sequencing. Technical improvements (excluding outliers, size fractionation, hairpin oligonucleotide) improved sequencing depth.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C37, C39-C40 honestly describe technical limitations and solutions. The barcode bias is acknowledged (C34-C35), shown not to reflect expression (C36), and addressed through technical improvements (C40). The negative motif search result (C37) is appropriately reported. These limitations are important for interpreting screen results but do not invalidate the approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C51",
+      "C52"
+    ],
+    "result": "The opposite phenotypes of ESCRT and SMPD3 knockouts may reflect distinct EV release pathways, and knockout of key components specific to one route may artificially increase flux through another pathway.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C51-C52 are speculative interpretations (C51 uses 'may reflect') of the observed opposite phenotypes. While the speculation is reasonable given known pathway complexity, no direct experimental evidence is provided to test these alternative explanations or rule out other mechanisms. This remains an inference requiring further investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C121",
+      "C122",
+      "C123",
+      "C124"
+    ],
+    "result": "K562 cells express Wnts and Frizzled receptors, but blocking Wnt secretion with C59 did not change EV levels in parental cultures. Under screen conditions (but not validation conditions), knockout of Wnt components may reflect protein roles independent of Wnt signaling. GSK3 kinase showed a very strong role in EV release regulation in wild-type parental cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C121-C124 address an important discrepancy between screen and validation conditions. The C59 experiment (C122) and strong GSK3 effect (C124) are supported by data. The interpretation (C123) appropriately acknowledges context-dependent effects. This highlights the complexity of Wnt signaling in EV regulation and the importance of experimental conditions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C125",
+      "C126",
+      "C127"
+    ],
+    "result": "Bafilomycin A1 treatment activates EV release but inhibits Wnt signaling. The EV pathway that may generate functional Wnt signals is directly regulated by Wnt signaling via a feedback mechanism. Complex crosstalk between signaling pathways may influence EV secretion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C125-C127 synthesize findings into a feedback model. C125 is supported by citation, C126 integrates multiple lines of evidence into a coherent model, and C127 appropriately acknowledges complexity and need for future work. The feedback mechanism is a reasonable interpretation of the data, though the exact molecular details remain to be characterized.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C128",
+      "C129",
+      "C130",
+      "C132",
+      "C133",
+      "C135"
+    ],
+    "result": "The genome-wide screen using barcoded miRNAs as surrogate reporters validated known players and discovered new ones including a gene cluster for cortical actin dynamics and ARHGEF18's role in MVE exocytosis. EV biogenesis and release appear to be part of a complex feedback mechanism regulating Wnt signaling. The screen also uncovered genes involved in intracellular trafficking and processing of miRNAs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C128-C130, C132-C133, C135 summarize the major findings. The approach (C128), novel discoveries (C129-C130, C133), and overall impact (C135) are well-supported by the extensive experimental data presented. The feedback mechanism conclusion (C132) integrates multiple lines of evidence. These summary claims accurately reflect the supported results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17"
+    ],
+    "result": "Background claims about EV biology: EVs mediate transfer of biologically active molecules and may play roles in physiology and disease. EVs comprise microvesicles (shed from plasma membrane) and exosomes (formed by MVE intra-lumenal budding). EVs contain diverse molecules including miRNAs that may induce biological changes. The molecular mechanisms of EV biogenesis, miRNA packaging, and biological significance remain poorly understood.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3, C9-C17 provide established background knowledge supported by citations (C9-C10, C13-C15) and accurately reflect the state of the field. These are not novel findings but appropriate context. The speculative language ('may') is appropriate for uncertain aspects (C2, C13-C14). This background accurately motivates the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C90",
+      "C91",
+      "C93",
+      "C107",
+      "C108",
+      "C111",
+      "C112"
+    ],
+    "result": "Background on Wnt signaling: Wnts are growth factors and developmental regulators implicated in cancer, palmitoylated and may be carried on EVs. Canonical Wnt signaling requires Frizzled/LRP receptors and leads to \u03b2-Catenin nuclear translocation. Wnt signaling involves intralumenal targeting of GSK3/Axin into MVEs, inhibiting GSK3 to stabilize \u03b2-Catenin. GSK3 regulates endolysosome biogenesis via MITF/TFEB/TFE3, which regulate MVE exocytosis and RAB27A expression in melanosomes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C84, C90-C91, C93, C107-C108, C111-C112 provide established background on Wnt signaling supported by citations. This accurately summarizes prior work relevant to interpreting the screen results. The connection between Wnt signaling and MVE biology provides important context for the novel findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C8",
+      "C134"
+    ],
+    "result": "Novelty claims: This is the first time a nucleic acid tag has been associated with individual membrane vesicles. bEXOmiR technology can be leveraged to study miRNA biogenesis, processing, and binding to RNA-binding proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C8 asserts a 'first' based on authors' knowledge of the field, which is difficult to verify without comprehensive literature review. While the bEXOmiR approach appears novel, the absolute claim of being 'first' is uncertain. Claim C134 about future applications is speculative. These claims about novelty and potential applications are not directly supported by experimental data in the manuscript.",
+    "result_type": "MINOR"
+  }
+]

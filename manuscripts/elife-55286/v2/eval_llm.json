@@ -1,0 +1,259 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C27",
+      "C28",
+      "C56",
+      "C57",
+      "C86"
+    ],
+    "result": "Axial line-scanning FCS using a TAG lens provides significant technical advantages over lateral scanning, including faster scanning (microseconds vs milliseconds), enhanced time resolution, easier dual-color alignment, and approximately 5-fold reduction in data acquisition time for comparable precision.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C15, C27-C28, C56-C57, and C86 collectively demonstrate the technical superiority of axial lsFCS through direct experimental comparisons (Figure 2), technical specifications of the TAG lens (147 kHz resonance, ~6.8 \u00b5s period), and quantitative measurements showing SD \u2248 0.1 can be reached in one-fifth the time. The circular observation area and reduced photobleaching effects are well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C33",
+      "C34",
+      "C58",
+      "C63",
+      "C64",
+      "C77"
+    ],
+    "result": "The axial lsFCS method delivers precise KD measurements for DKK-LRP6 interactions across a wide range of receptor densities (20-1000 \u00b5m\u207b\u00b2), with KD values of 0.08-0.09 nM for CRISPR/Cas9 edited and stably transfected cells, and 0.22-0.49 nM for transiently transfected cells, demonstrating density-dependent affinity modulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C4, C33-C34, C58, C63-C64, and C77 are strongly supported by extensive experimental data (Figures 5-6, Tables 1-2) showing consistent KD measurements across different expression systems and receptor densities. The method successfully measures affinities at near-native receptor levels (~20 \u00b5m\u207b\u00b2) in CRISPR/Cas9 edited cells, and the systematic increase in KD with receptor density is well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C19",
+      "C36",
+      "C37",
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "The method shows impressive consistency and robustness across different fluorescent protein tags (mCherry, tdTomato, eGFP-SNAP), with KD values remaining consistent regardless of tag size or brightness, demonstrating minimal perturbation of ligand-receptor interactions by fusion tags.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19, C36-C37, C40-C43 are well-supported by experimental data comparing different fluorescent markers. DKK1-eGFP vs DKK1-eGFP-SNAP yielded KD = 0.49 \u00b1 0.09 vs 0.46 \u00b1 0.09 nM (Table 1), and LRP6-mCherry vs LRP6-tdTomato showed identical KD values within error (Tables 1-2), confirming that fusion tags do not significantly affect binding measurements.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C75"
+    ],
+    "result": "DKK1 binding to xKremen2 alone shows weak affinity (KD = 10.3 \u00b1 2.1 nM), but co-expression with LRP6 increases apparent affinity ~20-fold (KD = 0.54 \u00b1 0.06 nM), indicating formation of a ternary DKK1-LRP6-xKremen2 complex where DKK1 binding is primarily mediated by LRP6.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C51 and C75 are supported by experimental data (Figure 7, Table 2) showing the dramatic affinity change upon LRP6 co-expression. The interpretation that the ternary complex is stabilized primarily by DKK1-LRP6 and Kremen-LRP6 interactions is logically inferred from the KD values, though the mechanistic details remain somewhat speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C76"
+    ],
+    "result": "Dual-color axial lsFCS experiments demonstrate direct LRP6-xKremen2 heterodimer formation, with 25 \u00b1 14% of LRP6 receptors and 15 \u00b1 6% of xKremen2 receptors co-diffusing, confirming physical interaction between the two receptors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C53 and C76 are supported by dual-color cross-correlation data (Figure 7\u2014figure supplement 3) showing significant co-diffusion of the two receptor species. The asymmetric percentages are consistent with different receptor abundances, and the data provide direct evidence for heterodimer formation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C39",
+      "C38"
+    ],
+    "result": "DKK2 shows significantly reduced affinity for LRP6 (KD = 0.26 \u00b1 0.04 nM) compared to DKK1 (KD = 0.08 \u00b1 0.01 nM) in stably transfected NCI-H1703 cells, confirming prior reports of differential binding affinities.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C39 are supported by experimental data (Figure 6\u2014figure supplement 2, Table 2) and consistent with prior literature (C38). The ~3-fold difference in KD between DKK1 and DKK2 is statistically significant and well-documented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C29",
+      "C31"
+    ],
+    "result": "The data analysis pipeline effectively corrects for background fluorescence and photobleaching, with minimal impact on KD determination (0.08 \u00b1 0.01 nM with correction vs 0.10 \u00b1 0.02 nM without).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29 and C31 are supported by Figure 5 showing that background correction has minimal effect on the final KD value. The robustness of the \u0393(CL) function to background effects is demonstrated both experimentally and theoretically in the Materials and Methods.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "CRISPR/Cas9 edited cells express the endogenously tagged LRP6 allele at higher levels than both wild-type alleles and the untagged allele, possibly due to removal of miRNA binding sites in the 3' UTR.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C61 are supported by western blot data (Figure 3\u2014figure supplement 2), showing clear differences in expression levels. However, C62 (the miRNA hypothesis) is speculative and supported only by citations to prior literature, not by direct experimental evidence in this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "The microscope setup employs pulsed interleaved excitation (470, 561, 640 nm lasers with 12.5 ns delay) and TAG lens-based axial scanning (147 kHz resonance, ~6.8 \u00b5s period), with confocal width parameters \u03c9\u2080 = 207 \u00b1 3 nm (470 nm) and 251 \u00b1 8 nm (561 nm).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C22, C81-C85 provide detailed technical specifications supported by experimental measurements (Figures 1-2 supplements). The pulsed interleaved excitation reduces crosstalk, and the focus parameters are precisely measured using calibration beads.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C23",
+      "C24"
+    ],
+    "result": "Axial lsFCS data can be visualized as kymographs and analyzed using a 2D diffusion model with circular observation area, yielding excellent fits to experimental autocorrelation functions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C24 are supported by Figure 2c-d showing kymograph visualization and excellent fits to the diffusion model (Equation 1). The methodology is well-established and appropriately applied.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C32"
+    ],
+    "result": "Different gene insertion methods yield widely varying LRP6-mCherry receptor densities: 18 \u00b5m\u207b\u00b2 (CRISPR/Cas9), ~45 \u00b5m\u207b\u00b2 (stable transfection), ~140 \u00b5m\u207b\u00b2 (transient transfection NCI-H1703), and ~1000 \u00b5m\u207b\u00b2 (transient transfection HEK293T).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C32 is directly supported by receptor density measurements shown in Figure 6a and Table 1. The wide range of densities demonstrates the versatility of the method across different expression systems.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C54",
+      "C55"
+    ],
+    "result": "The method has measured KD values between 0.08 and 10 nM and is estimated to be extendable by about one order of magnitude, with potential applicability to tissue samples and model organisms beyond cultured cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C54 is partially supported by experimental data showing the 0.08-10 nM range, but the extension to lower/higher KD values is speculative. Claim C55 regarding tissue samples and model organisms is entirely speculative with no supporting data in the manuscript.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C74"
+    ],
+    "result": "The observed density-dependent affinity modulation may result from receptor-receptor interactions or clustering effects, with higher LRP6 expression potentially leading to denser ectodomain packing that restricts the curved conformation favorable for DKK binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C65-C67 and C74 present mechanistic speculation about the density-dependent KD changes. While the density dependence is well-documented (C64), the proposed mechanisms involving receptor clustering and ectodomain conformational changes are largely speculative, supported primarily by citations to prior structural studies rather than direct experimental evidence in this work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "Systematic errors in KD determination can arise from incomplete fluorophore maturation, lack of binding competence of ligands/receptors, and imprecise ligand concentration measurements, all of which are discussed in the Materials and Methods.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C80 accurately identify known sources of systematic error in FCS-based affinity measurements. The manuscript provides detailed mathematical treatment of these effects in the Materials and Methods section, demonstrating awareness of potential limitations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11"
+    ],
+    "result": "Background context on cell-cell signaling, Wnt pathway complexity, and limitations of in vitro assays, establishing the motivation for developing live-cell FCS methods.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2, C5-C11 provide established background knowledge supported by appropriate citations to prior literature. These claims establish the scientific context and motivation for the study but do not represent novel findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C44",
+      "C45",
+      "C46",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "Prior literature reports on DKK-LRP6 binding affinities, Kremen function, and LRP6 structural biology, providing context for interpreting the current results.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C17, C44-C46, C68-C73 accurately summarize prior literature with appropriate citations. These provide important context for comparing the current results to previous in vitro measurements and understanding the structural basis of LRP6 function.",
+    "result_type": "MINOR"
+  }
+]

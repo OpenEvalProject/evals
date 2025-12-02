@@ -1,0 +1,235 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13"
+    ],
+    "result": "The authors constructed a large segregant panel from 16 diverse yeast strains, generating 13,950 progeny that capture 82% of common genetic diversity in S. cerevisiae. These segregants were genotyped at ~299,000 variants using low-coverage whole-genome sequencing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C7-C13 provide consistent, explicit data on the experimental design. The crossing scheme, sample sizes, sequencing coverage, and genetic diversity captured are clearly documented with specific numbers. The design is well-justified for detecting both common and rare variants.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C2",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "Joint QTL mapping across all crosses identified 4,552 QTLs at 5% FDR (average 120 per trait), explaining a median of 73% of additive heritability. This joint approach was more powerful than within-cross mapping, detecting 458 additional QTLs with smaller effect sizes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C17-C24 present a coherent QTL mapping result with appropriate statistical controls (FDR), cross-validation for heritability estimates, and direct comparison between methods. The statistical test (Wilcoxon rank sum, p=9e-5) supports the claim that additional QTLs have smaller effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C15",
+      "C16"
+    ],
+    "result": "Variance component analysis revealed that additive genetic effects account for just over half of total phenotypic variance on average, while pairwise genetic interactions account for only 8% (approximately 1/6 as much as additive effects).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C16 report variance partitioning results using established methods (cited appropriately). The findings are presented with Figure 2 support and are consistent with prior work in yeast. The relative contribution of epistasis versus additive effects is clearly quantified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C3",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "Rare variants (MAF <0.01) make a disproportionate contribution to trait variation, explaining a median of 51.7% of variance despite constituting only 27.8% of variants. This contribution varies widely across traits, from nearly zero for copper sulfate/lithium chloride to over 75% for cadmium chloride and other stressors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C25-C31 present a major finding with appropriate variance partitioning methodology. The disproportionate contribution is well-supported given that rare variants are expected to explain less variance per variant (C27). Trait-specific patterns are validated by comparison with independent GWAS data (C30-C31).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "Most QTLs have small effects (64% <0.1 SD) and common lead variants (78%), but large-effect QTLs are highly enriched for rare variants. Among QTLs with effects \u22650.3 SD, 145 lead variants were rare versus 90 common, with rare variants being 6.7-fold more likely to have large effects (p<2e-16).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C37 describe the relationship between effect size and allele frequency with specific quantitative data and appropriate statistical testing (Fisher's exact test). The enrichment is substantial and highly significant, supporting the inverse relationship between frequency and effect size.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "Evolutionary analysis using S. paradoxus as an outgroup revealed that recent variants (sharing major allele with S. paradoxus) are 1.8-fold more likely to have large effects (>0.1 SD, p=9e-5) and 1.5-fold more likely to be deleterious (p=8e-3). Strikingly, no ancient variant decreased fitness by >0.5 SD, whereas 41 recent variants did (p=7e-3).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C44 integrate theoretical expectations (C38, C40-C41) with empirical observations (C42-C44). The use of S. paradoxus for ancestral state determination is appropriate, and the statistical tests support the conclusion that negative selection has shaped the frequency-effect relationship. The stark difference in large deleterious effects is particularly compelling.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C4",
+      "C5"
+    ],
+    "result": "The disproportionate contribution of rare variants to trait variation is driven by recently arising variants, and negative selection has shaped the relationship between variant frequency and effect size.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C5 are high-level conclusions supported by the detailed evolutionary analyses in C38-C44. The integration of theoretical expectations with empirical data on recent versus ancient variants provides strong evidence for the role of negative selection.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C6",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C62"
+    ],
+    "result": "Statistical fine-mapping resolved 427 QTLs to 195 unique causal genes at 20% FDR, with 26 genes validated by prior experimental evidence. At 5% FDR, 105 genes were identified, including 24 of the 26 experimentally validated genes. This represents approximately 8% of all detected QTLs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C45-C48, C62 describe fine-mapping results using an appropriate Bayesian method (PICS). The validation rate (26/195 or 24/105 genes with prior experimental support) provides strong evidence for the accuracy of the approach. The FDR control and validation against literature are appropriate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "Causal genes are enriched for plasma membrane (q=1.8e-7), metal ion transport (q=0.0009), and nitrogen compound biosynthesis (q=0.0076) functions. Strikingly, 5 of 6 cAMP biosynthesis genes were identified (q=0.0002), along with additional RAS/cAMP pathway genes, suggesting abundant functional variation in glucose-to-alternative carbon source switching.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C56 present GO enrichment analysis with appropriate multiple testing correction (q-values). The enrichment of the RAS/cAMP pathway is particularly striking (5/6 genes, highly significant). The hypothesis in C56 is reasonable given the data, though explicitly labeled as speculation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "The findings generalize previous BY-RM cross results to the broader S. cerevisiae population, showing that S288c is not exceptional and that additive effects dominate trait variation with little missing heritability in sufficiently powered studies. The authors believe these findings will apply broadly beyond yeast.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C57-C61 mix supported findings (C57-C58 based on current data) with speculation about generalizability (C59-C60 explicitly stated as beliefs). While C58 is supported by the multi-strain design, the broader claims about missing heritability and generalization beyond yeast (C59-C60) are speculative and cannot be fully evaluated from this study alone.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C63"
+    ],
+    "result": "Different S. cerevisiae strains may have evolved different strategies for nutrient sensing and response as a function of specializing in particular environmental niches.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C63 is explicitly speculative (\"suggesting that\") based on functional clustering of causal genes. While the functional enrichment is well-supported, the evolutionary interpretation about niche specialization requires additional evidence beyond the genetic mapping data presented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C14"
+    ],
+    "result": "Growth measurements in different environments are not strongly correlated and are treated as separate traits.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C14 states an observation with citation to prior work (Bloom et al., 2013). This justifies treating the 38 conditions as separate phenotypes rather than as repeated measures of a single trait, which is appropriate for the subsequent analyses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "Prior work establishes that GWAS cannot detect rare variants by design, that negative selection is expected to create an inverse relationship between effect size and allele frequency, and that empirical studies in humans, maize, and yeast have observed this pattern. However, statistical power limitations confound frequency and effect size in typical studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C76 accurately summarize prior knowledge and cite appropriate literature. These claims establish the theoretical and empirical context for the current study and correctly identify the statistical challenges (ascertainment bias, power limitations) that the current study design addresses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "The crossing design provides high power to detect rare variants because even variants present in only one parent appear in ~1000 progeny. The study decouples variant frequency from effect size by measuring population frequencies in an independent panel of 1011 sequenced isolates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C79 describe key methodological advantages of the study design. The logic is sound: the crossing scheme amplifies rare variants in the mapping population (C77-C78), while using external frequency data (C79) avoids the confounding between power and frequency that plagues typical association studies.",
+    "result_type": "MAJOR"
+  }
+]

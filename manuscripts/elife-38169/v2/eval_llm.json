@@ -1,0 +1,332 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C40"
+    ],
+    "result": "Reanalysis of existing grid cell data (Barry et al., 2007; Stensola et al., 2012) reveals boundary-tethered shifts in grid phase during environmental deformations. Grid shift increased along deformed but not undeformed dimensions, even in small-scale grid cells and cells whose time-averaged patterns did not appear to rescale, and this effect was not due to sampling differences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C17 and C40 provide convergent statistical evidence from reanalysis of two independent datasets showing boundary-tethered phase shifts. The analysis includes appropriate controls for sampling biases (C17, Figure 2\u2014figure supplement 1) and demonstrates the effect across different grid scales and rescaling conditions. The statistical tests are clearly reported with p-values and sample sizes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C18"
+    ],
+    "result": "Boundary rate maps maintain their familiar phase relationship relative to the corresponding boundary rather than the opposite boundary during deformations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C18 is supported by statistical analysis of 390 comparisons showing that correlation between deformed and familiar rate maps was maximized when aligned by the corresponding boundary (313/390 comparisons, sign test p<0.001). This provides direct evidence for boundary-tethered phase anchoring.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C19"
+    ],
+    "result": "Boundary-conditioning reduces the appearance of rescaling in grid cell rate maps.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C19 is supported by statistical analysis (Figure 3A) showing significant reduction in rescaling when data are conditioned on most recently contacted boundary. This demonstrates that boundary-tethered shifts contribute to the appearance of rescaling in whole-trial rate maps. Controls for sampling differences were included.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C20"
+    ],
+    "result": "Field length increases along deformed but not undeformed dimensions during compression deformations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C20 is supported by statistical analysis (Figure 3B) showing dimension-specific increases in field length during compressions. This is consistent with boundary-tethered phase shift predictions and inconsistent with simple rescaling, which would predict decreased field length during compressions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C21",
+      "C22"
+    ],
+    "result": "Peak firing rates decrease during deformations while mean firing rates remain unchanged.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C22 are supported by statistical analysis (Figure 3C) showing significant reduction in peak firing rates (p<0.001) but no significant change in mean firing rates during deformations. This pattern is consistent with boundary-tethered phase shifts causing spatial redistribution of firing without changing overall activity levels.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C23"
+    ],
+    "result": "Recorded rate maps during compressions are better predicted by the boundary-tethered model than by matched rescaling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C23 is supported by statistical comparison (paired t-test, t(132)=2.95, p=0.004) of correlation values between recorded maps and predictions from the two models. The boundary-tethered model particularly excels at predicting maps that do not resemble simple rescaling, as shown in Figure 3E-F.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "A computational model implementing border-grid interactions via Hebbian learning reproduces boundary-tethered phase shifts and the appearance of rescaling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C27 and C67-C71 describe a mechanistically plausible computational model based on established principles (Burak & Fiete 2009 attractor dynamics, Hebbian learning). The model successfully reproduces the key experimental observations including boundary-tethered phase shifts and their contribution to apparent rescaling (Figure 4). The model architecture and learning rules are clearly specified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C28",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "The computational model reproduces scale-dependent rescaling through boundary-tethered shifts, with rescaling appearance depending on the interaction between grid scale and deformation extent rather than being an inherent module property.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28 and C41-C47 demonstrate that the model reproduces scale-dependent rescaling observed experimentally (Stensola et al., 2012) and provides a mechanistic explanation based on the relationship between grid period and deformation extent. The model predictions are consistent with comparisons across multiple experimental studies. Figure 5B shows quantitative agreement with experimental observations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C49",
+      "C50",
+      "C52"
+    ],
+    "result": "The computational model reproduces local distortions of grid patterns during partial deformations, with distortions mediated by sampling biases that determine which boundary was most recently encountered.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C30 show the model reproduces local distortions observed experimentally (Krupic et al., 2018), with population vector correlations high far from displaced walls but reduced nearby (Figure 5D). Claims C49-C50 and C52 explain this through sampling biases shown in Figure 6, providing a mechanistic account of how local distortions emerge from global phase shifts.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "The study concludes that boundary-tethered shifts in grid phase are directly observed during deformations, can emerge from border-grid interactions, and indicate that time-averaged analyses may have overestimated grid metric malleability while the effects depend on movement history.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C35 represent the main conclusions of the study. C31-C32 are well-supported by the convergent experimental reanalysis and computational modeling results. C33-C35 are reasonable interpretations of these findings, though they represent inferences about the implications rather than direct observations. The conclusions are appropriately qualified (e.g., \"may have overestimated\").",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C77",
+      "C78",
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "Simulated place cells receiving input from the grid model exhibit heterogeneous responses to environmental deformations including stretching, bifurcation, directional modulation, and boundary-tethered updating, similar to experimental observations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C75 and C77-C78 and C80-C82 describe diverse place cell behaviors in the model that qualitatively match experimental observations (O'Keefe & Burgess 1996, Gothard et al. 1996, Barry et al. 2006). Claim C83 appropriately concludes these behaviors could arise from boundary-tethered grid shifts. The simulations demonstrate the model's explanatory scope, though quantitative validation is limited.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "Border-grid interactions are sufficient to reproduce boundary-tethered shifts, though other mechanisms including visual inputs, place-to-grid feedback, and developmental factors may also contribute.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C53 is supported by the computational modeling demonstrating sufficiency. Claims C54-C56 appropriately acknowledge alternative mechanisms supported by prior literature. This represents a balanced interpretation recognizing that sufficiency in a model does not establish necessity or exclusivity of the mechanism in biology.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C60",
+      "C61"
+    ],
+    "result": "The model does not capture long-term relaxation of grid distortions back to familiar scale because weights were fixed during deformation trials.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C61 acknowledge a known limitation of the model. C60 correctly cites experimental evidence for relaxation (Barry et al., 2007), and C61 clearly states the model limitation. This represents appropriate recognition of the model's scope and limitations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C63",
+      "C64"
+    ],
+    "result": "The authors suggest boundary-tethered grid shift may contribute to cross-species effects in spatial memory and predict similar shifts should be observed in human spatial memory during deformations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C63-C64 represent speculative predictions for future research. While the suggestion is reasonable given the model results and place cell simulations, these are predictions rather than tested hypotheses. The claims are appropriately qualified as suggestions and predictions, but lack direct supporting evidence.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C1",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13"
+    ],
+    "result": "Background claims about grid cells, place cells, border cells, and their properties based on prior literature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1 and C4-C13 represent well-established background knowledge appropriately cited from the literature. These provide necessary context for the study but are not novel findings. The citations appear appropriate for the claims made.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C84",
+      "C85"
+    ],
+    "result": "Description of experimental datasets reanalyzed and methodological choices for the reanalysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C39 and C84-C85 accurately describe the experimental designs from prior studies and the inclusion criteria for the reanalysis. The methodological choices are clearly justified, including the decision not to exclude cells poorly fit by rescaling (C85), which is appropriate given the boundary-tethered hypothesis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "Description of computational and analysis methods including sampling constraints, rate map construction, and metric calculations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C90 describe standard and appropriate methods for computational simulations and grid cell analysis. The methods are clearly specified with sufficient detail for reproduction. The acknowledgment of computational constraints (C86) is appropriate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C2",
+      "C3"
+    ],
+    "result": "Environmental deformations induce scale-dependent and local distortions of time-averaged grid patterns, which can emerge from boundary-tethered phase shifts via border-grid interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2-C3 represent the core thesis supported by both the reanalysis and modeling. C2 is supported by prior literature and confirmed by reanalysis. C3 is the novel mechanistic proposal supported by the computational model and its ability to reproduce experimental observations. These claims are well-integrated with the detailed results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "Grid patterns are influenced by multiple factors including novelty, visual features, and environmental asymmetry, which were not captured by the current model implementation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C59 appropriately acknowledge phenomena from the literature that the current model does not address. This represents honest discussion of the model's limitations and scope. The citations support the claims about these additional influences on grid patterns.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C62"
+    ],
+    "result": "Recent evidence suggests rescaling can be observed in human grid cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C62 cites Nadasdy et al., 2017 for evidence of rescaling in human grid cells. However, without access to evaluate this citation, and given ongoing debates about grid cell recordings in humans, this claim's support is uncertain. The claim is appropriately qualified as \"suggests\" rather than definitively stating.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C65",
+      "C66"
+    ],
+    "result": "Border units in the model had firing fields covering 50% of boundary length and maintained proportional coverage during deformations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C66 describe specific implementation choices for the model's border units, based on prior experimental and modeling work (Solstad et al., 2008; Savelli et al., 2008; Pollock et al., 2018). These choices are clearly stated and appropriately cited. Supplementary simulations (Figure 5\u2014figure supplement 1) show results hold with 100% coverage.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C72",
+      "C76",
+      "C79"
+    ],
+    "result": "Prior experimental studies show heterogeneous place cell responses to environmental deformations including stretching, compression, and boundary insertion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72, C76, and C79 accurately summarize prior experimental findings about place cell behavior during deformations, with appropriate citations. These provide context for the place cell simulations but are not novel findings of this study.",
+    "result_type": "MINOR"
+  }
+]

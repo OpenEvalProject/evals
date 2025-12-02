@@ -1,0 +1,413 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "Among >4000 CHD patients studied by WES through the PCGC, nine heterozygous de novo GATA6 variants were identified (four LoF, five missense). All 70 damaging GATA6 variants (61 published + 9 PCGC) caused CHD. Extra-cardiac phenotypes occurred in 41% of patients, more frequently with LoF variants. Notably, 11 missense variants clustered in exon 4 (p=0.0004), with 9/11 of these patients having pancreatic agenesis or congenital diaphragmatic hernia versus 0/32 with missense variants elsewhere (p=1.1e-6).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The clinical genotype-phenotype correlations are well-supported by WES data from a large cohort (>4000 patients) with appropriate statistical testing. The significant clustering of exon 4 missense variants and their strong association with extra-cardiac malformations is robustly demonstrated with highly significant p-values. The data clearly establish distinct phenotypic consequences for different variant types and locations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C45",
+      "C46"
+    ],
+    "result": "Computational modeling using PyMOL positioned GATA6 residue R456 alongside polar residue N466 in close proximity to DNA. Substitution of R456 with non-polar glycine (R456G) is predicted to disrupt DNA interactions and alter GATA6 DNA binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The structural modeling is appropriately conducted and the prediction is reasonable based on the chemical properties of the amino acid substitution. The inference that replacing a charged arginine with a small non-polar glycine would disrupt DNA binding is chemically sound, though this remains a computational prediction requiring experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "GATA6+/- hiPSCs exhibited mono-allelic GATA6 expression suggesting nonsense-mediated decay. GATA6+/- hiPSC-CMs showed weaker GFP fluorescence and fewer beating sarcomeres than WT, while GATA6-/- cells showed no fluorescence or beating. GATA6R456G/R456G cells showed fluorescence comparable to GATA6+/- and beating in ~60% of differentiation rounds.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The differentiation phenotypes are well-documented with fluorescence microscopy and functional beating assays across multiple independent differentiation experiments (n=25 per genotype). The graded severity (WT > +/- > R456G/R456G > -/-) is consistent and reproducible. The mono-allelic expression data supports nonsense-mediated decay as the mechanism for reduced GATA6 in heterozygous cells.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C60"
+    ],
+    "result": "Day 4 WT cells expressed both pluripotent stem cell markers (POU5F1) and early cardiomyocyte differentiation markers (SMYD1, TBX5, TBX20, MEF2C), as well as endodermal markers (HNF family, FOXA1/2, SOX17). From day 8 onward, stem cell markers were extinguished while cardiomyocyte transcripts increased. PDX1 was expressed through day 12 but not after metabolic enrichment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The temporal gene expression patterns during differentiation are well-characterized by RNA-seq at multiple time points (days 0, 4, 8, 12, 30) with appropriate biological replicates. The data demonstrate expected developmental progression from pluripotent to differentiated states, with both cardiac and endodermal lineage markers present during early differentiation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C66",
+      "C69",
+      "C72"
+    ],
+    "result": "GATA6+/- cells at day 4 had lower transcript levels of primordial cardiomyocyte genes compared to WT. Gene ontology analyses indicated reduced pathways for cardiac muscle contraction, development, and chamber organization. SMYD1 expression was strikingly diminished, along with multiple HAND2 network genes. Expression of HOXA1, HOXB1, MSX1, KDR, and NRPI was also reduced.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The transcriptional deficits in GATA6+/- cells are comprehensively documented by bulk RNA-seq with appropriate statistical analysis and gene ontology enrichment. The coordinated downregulation of cardiac developmental genes, particularly the SMYD1-HAND2 axis and neural crest/outflow tract genes, is consistent across multiple related genes and supported by the data shown in Figures 3B-D.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C67",
+      "C68"
+    ],
+    "result": "Among 54 PCGC patients with damaging variants in 11 HAND2-network and second heart field genes, 40 had outflow tract malformations, including all 5 CHD patients with damaging de novo variants in TBX20.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The clinical correlation between HAND2-network gene variants and outflow tract malformations is well-documented from the PCGC cohort. The 100% penetrance of outflow tract defects in TBX20 variant carriers (5/5) is notable, though the small sample size limits generalizability. This supports the functional relevance of the HAND2 network disruption observed in GATA6+/- cells.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "Day 8 GATA6+/- cells expressed many cardiomyocyte transcripts at WT levels, but single-cell RNA-seq revealed persistent differences including reduced MYH7 expression. Day 30 GATA6+/- cardiomyocytes had 10-fold higher ISL1 and 4-fold higher MYH6 (fetal myosin) expression, suggesting developmental immaturity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The persistence of developmental abnormalities is well-documented by both bulk and single-cell RNA-seq at multiple time points. The elevated expression of fetal markers (ISL1, MYH6) and reduced mature markers (MYH7) at day 30 provides strong evidence for developmental immaturity. The interpretation is appropriate given the known roles of these genes as developmental stage markers.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "In GATA6+/- cells, transcript levels of GATA4, HNF1, and HNF4A were lower than WT, while FOXA1/2 were normal. Day 12 peak PDX1 expression seen in WT was absent in GATA6+/- cells. Day 8 GATA6+/- cells showed 2-3-fold higher NR2F2 and half WT levels of ZFPM2. Since damaging variants in NR2F2 and ZFPM2 cause congenital diaphragmatic hernia, GATA6 haploinsufficiency may cause diaphragmatic dysgenesis by disrupting these gene programs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The endodermal and diaphragm-related gene expression changes are well-documented by RNA-seq. The inference that GATA6 haploinsufficiency causes diaphragmatic dysgenesis through NR2F2/ZFPM2 disruption is reasonable given the known roles of these genes (supported by citation to Kardon et al., 2017) and the observed expression changes. However, this remains an inference requiring functional validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "GATA6-/- hiPSCs had profound deficits in cardiomyocyte differentiation. Transcripts for early mesoderm specification (MESP1) and primordial cardiomyocyte factors were more depressed than in GATA6+/- cells. Endodermal genes were abnormal: GATA4 was 10-fold reduced, FOXA1/2 transiently expressed only at day 4, and HNF4A/PDX1 were extinguished. Single-cell RNA-seq identified two populations: one maintaining high POU5F1 (stem cell marker) and another with increased fibroblast and neural differentiation markers, suggesting adoption of alternative differentiation programs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The severe differentiation defects in GATA6-/- cells are comprehensively documented by bulk and single-cell RNA-seq. The complete absence of cardiomyocyte differentiation and adoption of alternative cell fates is well-supported by the expression data. The interpretation that cells lacking GATA6 signals adopt alternative programs is reasonable given the observed expression patterns.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C101",
+      "C102",
+      "C106",
+      "C107"
+    ],
+    "result": "At days 4-12, primordial cardiomyocyte transcripts (GATA4, HAND2, SMYD1) in GATA6R456G/R456G cells were expressed at levels between GATA6+/- and GATA6-/- but markedly below WT. GATA6R456G/R456G cells showed aberrant RA signaling: ALDH1A2 was 50-fold higher, RARA/RARB/STRA6 increased 2-3-fold, and HOXB1 increased 100-fold at day 4. PAX3 increased 100-fold and PAX7 3-fold. HOXA1 (6-fold) and ZIC1 (8-fold) were increased. NR2F2 was ~8-fold increased and ZFPM2 was 5-12-fold decreased.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The aberrant RA signaling in GATA6R456G/R456G cells is extensively documented by RNA-seq with dramatic fold-changes in multiple RA pathway components. The coordinated upregulation of RA biosynthesis (ALDH1A2), receptors (RARA/RARB/STRA6), and downstream targets (HOXB1, PAX3/7, HOXA1, ZIC1) provides strong evidence for pathway activation. The dysregulation of diaphragm genes (NR2F2, ZFPM2) is also well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "RA inhibitor treatment of WT cells decreased heart/muscle differentiation transcripts and increased endodermal fate specification and Wnt signaling. Treated GATA6R456G/R456G cells showed increased myoblast differentiation and circulatory system development transcripts. Notably, 25% of genes in treated GATA6R456G/R456G cells had expression levels found in or approaching untreated WT cells (e.g., HOXB1, FOXH1, HOXA1, HAND2, RARB, TBX20).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The RA inhibitor rescue experiment provides functional validation that aberrant RA signaling contributes to the GATA6R456G/R456G phenotype. The partial normalization of gene expression in 25% of genes (including key cardiac genes) upon RA inhibition supports the mechanistic role of excessive RA signaling. However, the incomplete rescue indicates additional mechanisms are involved.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C111",
+      "C112",
+      "C114",
+      "C116",
+      "C117"
+    ],
+    "result": "GATA6R456G/R456G cells had markedly lower HNF family transcripts and striking loss (\u2265100-fold) of FOXA1/2 expression. SOX6, which represses PDX1-dependent insulin gene activation, was increased. Despite multiple transcriptional abnormalities, metabolic enrichment yielded day 30 GATA6R456G/R456G cardiomyocytes with prototypic gene expression, though they exhibited a higher MYH6:MYH7 ratio than WT, indicating immaturity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The endodermal gene dysregulation is well-documented by RNA-seq with dramatic fold-changes. The loss of FOXA1/2 and increased SOX6 provide mechanistic insight into pancreatic agenesis. The persistence of immaturity markers (high MYH6:MYH7 ratio) at day 30 despite metabolic selection is notable and well-supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C2",
+      "C118",
+      "C119",
+      "C121",
+      "C122",
+      "C125",
+      "C126",
+      "C127"
+    ],
+    "result": "GATA6 is a pioneer factor in cardiac development. At day 4, GATA6 bound ~21,000 peaks genome-wide. Only 12% overlapped with ATAC peaks (open chromatin) and were enriched for GATA motifs. By contrast, 88% of GATA6-bound peaks occurred in closed chromatin, enriched for MEF2 motifs rather than GATA motifs. Of 2878 genes differentially expressed between days 4-5, 1049 (36.4%) were associated with GATA6-bound closed chromatin, with 583 (56%) showing increased expression at day 5, including GATA4, SMYD1, KDR, and TBX5.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The pioneer factor activity is strongly supported by integrated ChIP-seq, ATAC-seq, and RNA-seq data. The predominant binding to closed chromatin (88%), lack of GATA motif enrichment in closed regions, enrichment for MEF2 motifs, and temporal correlation with gene activation (583 genes upregulated at day 5) provide compelling evidence for pioneer factor function. This is a major mechanistic finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133"
+    ],
+    "result": "Day 4 GATA6+/- cells had ~6500 diminished GATA6 ChIP-seq peaks and ~5800 diminished ATAC peaks compared to WT. Diminished ATAC peaks near promoters were enriched for GATA, HAND, HNF, and SOX motifs. Few diminished GATA-bound peaks (10.7%) resided in open chromatin. Instead, GATA6+/- cells had prominent loss (89%) and gain (97%) of GATA-bound peaks within closed chromatin. This suggests GATA interactions with closed chromatin are highly sensitive to protein dosage, while interactions with open chromatin at promoters remain relatively intact.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The dosage-sensitive effects on chromatin binding are well-documented by ChIP-seq and ATAC-seq. The differential sensitivity of closed versus open chromatin binding to GATA6 levels is a key mechanistic insight supported by quantitative analysis. The inference about dosage sensitivity is appropriate given the data showing preferential loss of closed chromatin peaks.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C134",
+      "C135",
+      "C136"
+    ],
+    "result": "Day 4 GATA6-/- cells contained ~29,000 diminished ATAC-seq peaks, with ~31% near promoters. Diminished ATAC peaks showed enrichment for NFY binding motifs (ubiquitous CCAAT-box binding factor). This implies extinguishing GATA6 expression caused widespread deficits in promoter activation, likely accounting for failed mesoderm specification and cardiomyocyte differentiation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The widespread loss of chromatin accessibility in GATA6-/- cells is well-documented by ATAC-seq. The enrichment for NFY motifs suggests global promoter dysfunction. The inference that this accounts for differentiation failure is reasonable given the scale of the defect (~29,000 peaks) and the enrichment at promoters, though this remains correlative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C137",
+      "C138",
+      "C139",
+      "C141",
+      "C142",
+      "C143",
+      "C144",
+      "C145"
+    ],
+    "result": "ChIP-seq of GATA6R456G/R456G cells identified ~8000 diminished peaks, with a significantly higher proportion (21%) in open chromatin compared to other mutants. Remarkably, missense cells had ~44,000 augmented and ectopic peaks. Among upregulated peaks, ~4% were in open chromatin (enriched for CTCF motif) and ~12% associated with differential gene expression. The vast majority (96%) of increased/ectopic peaks resided in closed chromatin lacking GATA6 motifs, with 14% associated with differential gene expression. The GATA6R456G variant appears to impair normal GATA motif binding while promoting promiscuous binding with repressive or activating effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The dramatic gain-of-function chromatin binding phenotype (~44,000 ectopic peaks) is unprecedented and well-documented by ChIP-seq. The loss of normal binding specificity (lack of GATA motif enrichment) combined with promiscuous binding provides strong mechanistic insight into how this missense variant causes more severe phenotypes than haploinsufficiency. The integration with gene expression data strengthens the functional relevance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C146",
+      "C147",
+      "C148",
+      "C149"
+    ],
+    "result": "GATA6-bound peaks were universally decreased in GATA6+/- cells at genes like HAND2, KDR, and TBX5, with normal or modest transcript reduction. GATA6R456G/R456G cells also had diminished peaks but additionally showed many enhanced/augmented peaks with greater differential gene expression. Only GATA6R456G/R456G cells had diminished peaks at GATA4 and MEF2A, plus new peaks at MEF2C, ZIC1, and ZIC3. The distinct epigenetic profiles in GATA6R456G/R456G may contribute to greater dysregulation of cardiac gene expression and cardiomyocyte maturation versus GATA6+/- cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The comparative epigenetic analysis across genotypes is well-executed with specific examples shown in Figure 7. The distinct pattern in GATA6R456G/R456G cells (both loss and gain of binding) versus GATA6+/- cells (primarily loss) provides mechanistic insight into phenotypic differences. The inference about contribution to greater dysregulation is reasonable given the data, though causality is not definitively established.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C152",
+      "C155",
+      "C156",
+      "C157",
+      "C158"
+    ],
+    "result": "GATA6R456G aberrantly bound chromatin associated with FOXA2, DEANR1, and PDX1, diminishing their transcription. In GATA6R456G/R456G cells, prominent ATAC peaks with GATA, SOX6, HOX, and RARa motifs were identified at ALDH1A2 promoter/exon 1. SOX6 had augmented ATAC peaks with RARa and GATA motifs, and GATA6R456G bound an intron 1 motif. GATA6R456G/R456G cells showed increased ATAC peaks with RARa motifs near the RA-responsive element in HOXB1. GATA6R456G protein aberrantly bound the STRA6 locus.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The mechanistic links between aberrant GATA6R456G binding and RA pathway activation are well-documented by integrated ChIP-seq, ATAC-seq, and motif analysis. The identification of specific regulatory elements (ALDH1A2 promoter, HOXB1 RA-responsive element, STRA6 locus) with aberrant binding/accessibility provides detailed mechanistic insight. The connection to pancreatic and diaphragm phenotypes through these pathways is well-reasoned.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5"
+    ],
+    "result": "GATA6 regulates SMYD1 that activates HAND2, and KDR that with HAND2 orchestrates outflow tract formation. GATA6 LoF variants perturbed cardiac genes and endoderm lineage genes directing PDX1 expression and pancreatic development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These regulatory relationships are well-supported by the integrated RNA-seq, ChIP-seq, and ATAC-seq data showing coordinated downregulation of SMYD1, HAND2, and KDR in GATA6 mutant cells, along with GATA6 binding at these loci. The perturbation of both cardiac and endodermal genes is comprehensively documented. These are key mechanistic findings linking GATA6 to specific developmental pathways.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C9"
+    ],
+    "result": "An exon 4 GATA6 missense variant (R456G) is highly associated with extra-cardiac malformations. This variant caused ectopic pioneer activities (~44,000 augmented/ectopic ChIP-seq peaks), profoundly diminished GATA4, FOXA1/2, and PDX1 expression, and increased RA signaling (ALDH1A2, RARA, RARB, STRA6, HOXB1) that promotes diaphragm development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The association of exon 4 missense variants with extra-cardiac malformations is strongly supported by clinical data (9/11 patients, p=1.1e-6). The ectopic pioneer activities are dramatically demonstrated by ChIP-seq (~44,000 peaks). The profound loss of endodermal transcription factors and activation of RA signaling are well-documented by RNA-seq with large fold-changes. This represents a major finding explaining genotype-phenotype correlations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C1",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "Background and context: CHD is the leading birth defect worldwide (~1% of newborns). GATA6 is expressed in first and second heart fields and plays critical roles in second heart field development and neural crest recruitment for outflow tract formation. GATA6 is also critical for endodermal development. Some CHD patients with damaging GATA6 variants have pancreatic agenesis, congenital diaphragmatic hernia, or other abdominal malformations. GATA family members serve as endodermal pioneer factors. Mouse models have limitations in recapitulating human phenotypes. hiPSC-CM differentiation activates transcriptional networks regulating early human cardiogenesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These background claims are well-supported by appropriate citations to established literature. The statements about CHD prevalence, GATA6 expression patterns, developmental roles, and clinical associations are standard knowledge in the field with proper attribution. The limitations of mouse models and utility of hiPSC systems are appropriately noted.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C64",
+      "C65",
+      "C70",
+      "C71",
+      "C73",
+      "C74",
+      "C86",
+      "C90",
+      "C100",
+      "C103",
+      "C104",
+      "C105",
+      "C113",
+      "C115",
+      "C150",
+      "C151",
+      "C153",
+      "C154",
+      "C159"
+    ],
+    "result": "Supporting knowledge from prior work: FOXA1/2 activate PDX1 expression; PDX1 is essential for pancreas development; SMYD1 regulates HAND2; HAND2 is a critical second heart field regulator; HOXA1, HOXB1, MSX1 regulate neural crest development; HOXB1 specifies pancreatic endoderm; mutations in HOXA1, KDR, NR2F2, ZFPM2, and STRA6 cause relevant developmental defects; various other gene functions and regulatory relationships.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims about gene functions and regulatory relationships are appropriately cited to established literature. They provide necessary context for interpreting the experimental findings. The citations appear accurate and relevant to the claims made.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C160",
+      "C161",
+      "C162"
+    ],
+    "result": "Conclusions: In vitro hiPSC differentiation evokes developmental gene expression profiles independent of 3D morphological cues. Genetic perturbation of GATA6 altered network-level transcriptional pathways critically involved in heart, endodermal lineage, pancreas, and diaphragm development. Development of these organs is highly sensitive to changes in GATA6 gene dosage from LoF variants and from missense variants in the zinc-finger domain that alter RA signaling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These summary conclusions are well-supported by the comprehensive experimental data presented throughout the manuscript. The integrated analysis of clinical data, transcriptomics, and epigenomics across multiple GATA6 variants provides strong evidence for the stated conclusions about GATA6's role in multi-organ development and the distinct mechanisms by which different variant types cause disease.",
+    "result_type": "MAJOR"
+  }
+]

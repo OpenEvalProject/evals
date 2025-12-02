@@ -1,0 +1,355 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C12",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134"
+    ],
+    "result": "The study employed two-photon phosphorescence lifetime microscopy using a novel oxygen probe (Oxyphor2P) to measure microvascular PO2 and RBC flow in cortical layers I-V (0-600 \u03bcm depth) in awake, head-restrained mice (n=15). Measurements were performed in 6544 vascular segments for PO2 and 978 capillaries for detailed flow parameters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The methodological claims are well-documented with specific technical details about the imaging system, probe characteristics, sample sizes, and experimental protocols. The use of awake mice and the improved Oxyphor2P probe are clearly justified advantages over previous studies. Sample sizes are explicitly stated and appear adequate for the analyses performed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C15",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C139"
+    ],
+    "result": "Oxyphor2P exhibits superior properties compared to its predecessor PtP-C343, including red-shifted excitation/emission, higher quantum yield, larger two-photon absorption cross-section, and well-defined single-exponential decay kinetics, enabling improved PO2 measurements and RBC detection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims about Oxyphor2P properties are supported by citations to prior characterization work (Esipova et al., 2017, 2019). The functional advantages (improved accuracy, deeper imaging, RBC detection) are demonstrated through the successful acquisition of large datasets at depths up to 600 \u03bcm, which exceeded previous studies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C6"
+    ],
+    "result": "Arteriolar PO2 decreased from 99\u00b14 mmHg (layer I) to 84\u00b13 mmHg (layer V), while venular PO2 increased slightly from 43\u00b13 mmHg (layer V) to 49\u00b14 mmHg (layer I). Depth-dependent oxygen extraction fraction (DOEF) was highest in layers IV (39.9\u00b13.2%) and V (38.7\u00b13.3%) compared to layers I (32.0\u00b12.7%) and II/III (33.3\u00b12.7%).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The PO2 and SO2 measurements in arterioles and venules across cortical depths are clearly presented with error estimates. The calculated DOEF values follow logically from the measured SO2 differences. Statistical significance is indicated in figures, and the pattern of increased OEF in deeper layers is consistent with the hypothesis of higher metabolic demand in layer IV.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "Mean capillary RBC flux was slightly lower in layers IV (36\u00b14 RBC/s) and V (38\u00b16 RBC/s) compared to layers I (41\u00b12 RBC/s) and II/III (41\u00b11 RBC/s). Importantly, both standard deviation and coefficient of variation of RBC flux were significantly lower in layers IV-V, reaching a minimum in layer IV.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The measurements of RBC flux across layers are well-documented with appropriate statistical comparisons (ANOVA with post-hoc tests). The finding of reduced heterogeneity (lower STD and CV) in deeper layers is statistically significant and supported by Figure 3. The interpretation that this may facilitate oxygen extraction is appropriately qualified and supported by theoretical citations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C99",
+      "C100",
+      "C101",
+      "C151",
+      "C152"
+    ],
+    "result": "Temporal fluctuations of capillary RBC flux (quantified by STD and CV) decreased only in layer V, while temporal fluctuations of Mean-PO2 were significantly attenuated in layers IV and V. The 0.6 s temporal resolution averaged out cardiac and respiratory fluctuations while capturing oxygen consumption dynamics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The temporal analysis is based on 9-s acquisitions divided into 0.6 s bins (373 capillaries, n=7 mice). The rationale for the temporal resolution is well-justified with citations. Statistical significance is demonstrated in Figure 4. However, the magnitude of temporal fluctuations is noted to be much smaller than spatial variations, which is appropriately acknowledged.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "Mean-PO2 within individual capillaries was most strongly correlated with RBC flux (median r=0.71) compared to RBC speed (median r=0.37) or line-density (median r=0.29), with statistical significance confirmed by Fisher z-transformation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The correlation analysis is appropriately conducted using Pearson correlation coefficients converted to Fisher z values for statistical comparison. The sample size (373 capillaries) is adequate. The finding that RBC flux is the best predictor of PO2 is biologically plausible given that most oxygen is carried by hemoglobin in RBCs. Statistical methods are appropriate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "Intracapillary PO2 gradients (erythrocyte-associated transients, EAT) were measured in 373 capillaries down to 600 \u03bcm depth. EAT was significantly reduced in layers IV (9.9\u00b10.8 mmHg) and V (11.0\u00b10.8 mmHg) compared to layers I (13.4\u00b10.6 mmHg) and II/III (13.3\u00b10.3 mmHg), suggesting lower intracapillary resistance to oxygen transport in deeper layers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The EAT measurements represent a substantial improvement over previous studies in sample size and depth penetration. The methodology for calculating EAT from RBC-PO2 and InterRBC-PO2 is clearly described. Statistical significance is demonstrated (ANOVA with post-hoc tests). The interpretation regarding intracapillary resistance is appropriately supported by theoretical citations (Hellums, 1977), though the authors acknowledge the multifactorial nature of EAT.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "In layers I-III, upstream (A1-A3) capillaries had significantly higher Mean-PO2 (64.4\u00b12.4 mmHg) and SO2 (77.6\u00b11.7%) than downstream (V1-V3) capillaries (41.8\u00b10.9 mmHg and 67.3\u00b11.2%, respectively). RBC flux was ~2.7 times higher in A1-A3 versus V1-V3 capillaries. Strong positive correlations between RBC flux and oxygenation were found in downstream but not upstream capillaries. Approximately 34% of oxygen extraction occurred from pial arterioles to A1 capillaries, with 66% extracted post-arteriolarly.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The branching order analysis provides detailed characterization of oxygen gradients along capillary paths. Sample sizes are adequate (47 upstream, 50 downstream capillaries, n=5 mice). Statistical comparisons are appropriate (t-tests). The correlation analysis showing differential relationships in upstream vs. downstream capillaries is well-supported by Figure 7. The oxygen extraction calculations are clearly explained and represent important quantitative findings, though they rely on several assumptions about capillary organization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C7",
+      "C82",
+      "C83"
+    ],
+    "result": "Oxygen demand is presumably highest in layer IV, which has the highest neuronal and capillary densities and exhibits the highest cytochrome oxidase labeling activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This claim is appropriately qualified as presumptive and is well-supported by multiple citations to prior anatomical and metabolic studies (Blinder et al., 2013; Lefort et al., 2009; Patel, 1983; Wu et al., 2016; Land and Simons, 1985). The authors do not claim to have directly measured metabolism, which is appropriate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C8",
+      "C37",
+      "C91",
+      "C92",
+      "C105"
+    ],
+    "result": "More homogeneous distribution of capillary RBC flux and oxygenation in deeper cortical layers represents an adaptation of the microvascular network to facilitate oxygen delivery in regions with higher metabolic demand, as predicted by theoretical models.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This interpretive claim integrates the experimental findings of reduced heterogeneity (Claims C35-C36) with increased OEF (Claims C26-C29) and reduced EAT (Claims C53-C57) in deeper layers. The interpretation is appropriately supported by citations to theoretical predictions (Hartung et al., 2018; Jespersen and \u00d8stergaard, 2012; Schmid et al., 2017) and is consistent with the observed data patterns.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "The observed mean capillary RBC flux (41.5\u00b11.2 RBC/s) agrees well with previous studies in awake mice (41.9\u00b11.8 RBC/s, Lyons et al., 2016) and is somewhat lower than ~48 RBC/s reported by Moeini et al. (2018). Mean capillary PO2 increased by ~7 mmHg from layer I to V, consistent with previous reports.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These validation claims demonstrate consistency with prior literature, which strengthens confidence in the measurements. The comparisons are appropriate and differences are acknowledged. The slight increase in capillary PO2 with depth is explained by potential changes in the ratio of upstream to downstream capillaries.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C117",
+      "C118",
+      "C119",
+      "C155"
+    ],
+    "result": "The depth ranges 0-100, 100-320, 320-450, and 450-600 \u03bcm correspond approximately to cortical layers I, II/III, IV, and V in the whisker barrel cortex of 3-month-old C57BL/6 mice. The interrogated range of 450-600 \u03bcm likely overlaps primarily with layer Va. Technical limitations at greater depths contributed to smaller sampling sizes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The layer assignments are based on well-cited anatomical studies (Blinder et al., 2013; Lefort et al., 2009). The authors appropriately acknowledge this as a limitation since layer boundaries were not directly verified in each animal. The acknowledgment of technical limitations affecting sampling at depth is appropriate and transparent.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C145",
+      "C146"
+    ],
+    "result": "RBC speed was estimated as v=\u00f8/\u0394t assuming a constant RBC diameter of 6 \u03bcm, where \u0394t is the time for RBC passage through the focal zone. Mean RBC speed for each capillary was calculated by averaging over all RBC-passage events.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While the method is clearly described and cited (Unekawa et al., 2010), the authors acknowledge in Figure 1\u2014figure supplement 2 that RBC size may vary with speed, line-density, and capillary diameter. Supplementary validation with line-scan measurements (n=58 capillaries) shows reasonable agreement for mean values but indicates potential errors for instantaneous measurements, especially at high speeds. The authors appropriately note these limitations should be considered when interpreting the data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C141",
+      "C142",
+      "C143",
+      "C144",
+      "C147",
+      "C148",
+      "C149",
+      "C150",
+      "C156",
+      "C157"
+    ],
+    "result": "Data analysis procedures included: rejecting initial 5 \u03bcs of phosphorescence decay, fitting remaining 285 \u03bcs to single-exponential function, converting lifetime to PO2 using Stern-Volmer calibration, segmenting intensity time courses using Otsu thresholding (rejecting R\u00b2<0.5), calculating RBC flux by counting detected RBCs, computing SO2 using Hill equation with mouse-specific parameters, and calculating depth-dependent OEF. Motion artifacts were rejected using accelerometer signals and visual inspection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The data analysis pipeline is thoroughly described with appropriate citations for established methods. Quality control measures (R\u00b2 threshold, motion artifact rejection) are clearly stated. The use of mouse-specific Hill equation parameters (Uchida et al., 1998) is appropriate. The methods are reproducible based on the descriptions provided.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C158"
+    ],
+    "result": "Sample size (n=15 mice) was determined based on power analysis to detect 30% difference in mean EAT values (coefficient of variance=0.3, power=0.8, \u03b1=0.05), anticipated to be the most demanding measurement.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The power analysis rationale is clearly stated and appears reasonable. The achieved sample sizes for different measurements (6544 vascular segments, 978 capillaries with detailed analysis) are substantial and exceed those of previous studies. The statistical comparisons performed show adequate power to detect significant differences where claimed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11",
+      "C84",
+      "C89",
+      "C90",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C102",
+      "C103",
+      "C104",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C111",
+      "C112",
+      "C114",
+      "C115"
+    ],
+    "result": "The study's findings are contextualized within prior literature on cerebral oxygen delivery, cortical layer anatomy and metabolism, theoretical predictions of blood flow homogeneity, and observations in disease models including Alzheimer's disease.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims appropriately cite relevant prior work to provide context for the current findings. The citations appear accurate and relevant. The comparisons to prior studies (both in healthy and diseased states) help interpret the significance of the current observations. The discussion of theoretical predictions provides appropriate framework for understanding the functional implications.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C65",
+      "C110",
+      "C111",
+      "C112"
+    ],
+    "result": "In awake mice, approximately 66% of oxygen extraction occurred post-arteriolarly (with 34% from pial arterioles to A1 capillaries), contrasting with ~50% post-arteriolar extraction in isoflurane-anesthetized mice from a previous study. This discrepancy may be due to anesthesia effects on metabolism and vasodilation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The comparison between awake and anesthetized conditions is based on the current data and a prior study by the same group (Sakad\u017ei\u0107 et al., 2014). The calculation of oxygen extraction fractions is clearly explained. The proposed explanation for the difference (anesthesia effects) is reasonable and supported by appropriate citations (Alkire et al., 1999; Goldberg et al., 1966; Ogawa et al., 1990), though it remains somewhat speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C113",
+      "C116"
+    ],
+    "result": "Capillary flow and oxygenation distributions were highly heterogeneous and strongly positively correlated, particularly in downstream capillaries. An example of a poorly oxygenated/perfused capillary with PO2 ~15 mmHg and no detectable RBC flow during 9-s acquisition was identified.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The heterogeneity is well-documented throughout the results (Figures 3, 7). The identification of a stalled or poorly perfused capillary (Figure 7\u2014figure supplement 4) provides a concrete example at the extreme of the distribution. This observation is contextualized with literature on stalled capillaries in healthy (~0.4%) versus Alzheimer's disease mice (~2%), though the prevalence in the current study is not quantified.",
+    "result_type": "MINOR"
+  }
+]

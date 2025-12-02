@@ -1,0 +1,1908 @@
+{
+  "submission": {
+    "id": "2b421885-aae2-49ed-ae86-00665bb35a0b",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T11:48:41.595878Z",
+    "updated_at": "2025-12-02T11:48:41.595878Z"
+  },
+  "content": [
+    {
+      "id": "4af041a6-e3cb-4df7-8244-6b3abb89f084",
+      "submission_id": "2b421885-aae2-49ed-ae86-00665bb35a0b",
+      "content_type": "manuscript",
+      "content_text": "# A de novo evolved gene in the house mouse regulates female pregnancy cycles\n\n## Authors\n\n- Chen Xie<sup>1</sup> ([ORCID: 0000-0002-6183-7301](https://orcid.org/0000-0002-6183-7301))\n- Cemalettin Bekpen<sup>1</sup>\n- Sven K\u00fcnzel<sup>1</sup>\n- Maryam Keshavarz<sup>1</sup>\n- Rebecca Krebs-Wheaton<sup>1</sup>\n- Neva Skrabar<sup>1</sup>\n- Kristian Karsten Ullrich<sup>1</sup> ([ORCID: 0000-0003-4308-9626](https://orcid.org/0000-0003-4308-9626))\n- Diethard Tautz<sup>1</sup> ([ORCID: 0000-0002-0460-5344](https://orcid.org/0000-0002-0460-5344)) \u2020\n\n### Affiliations\n\n1. Department of Evolutionary Genetics Max Planck Institute for Evolutionary Biology Pl\u00f6n Germany\n\n\u2020 Corresponding author\n\n## Abstract\n\nThe de novo emergence of new genes has been well documented through genomic analyses. However, a functional analysis, especially of very young protein-coding genes, is still largely lacking. Here, we identify a set of house mouse-specific protein-coding genes and assess their translation by ribosome profiling and mass spectrometry data. We functionally analyze one of them, Gm13030, which is specifically expressed in females in the oviduct. The interruption of the reading frame affects the transcriptional network in the oviducts at a specific stage of the estrous cycle. This includes the upregulation of Dcpp genes, which are known to stimulate the growth of preimplantation embryos. As a consequence, knockout females have their second litters after shorter times and have a higher infanticide rate. Given that Gm13030 shows no signs of positive selection, our findings support the hypothesis that a de novo evolved gene can directly adopt a function without much sequence adaptation.\n\n## Introduction\n\nThe evolution of new genes through duplication-divergence processes is well understood (Chen et al., 2013; Kaessmann, 2010; Long et al., 2013; Tautz and Domazet-Lo\u0161o, 2011). But the evolution of new genes from non-coding DNA has been little considered for a long time (Tautz, 2014). However, with the increasing availability of comparative genome data from closely related species, more and more cases of unequivocal de novo gene emergence have been described (McLysaght and Hurst, 2016; Schl\u00f6tterer, 2015; Tautz, 2014; Tautz and Domazet-Lo\u0161o, 2011). These analyses have shown that de novo gene emergence is a very active process in all evolutionary lineages analyzed. A comparative analysis of closely related mouse species has even suggested that virtually the whole genome is \u2018scanned\u2019 by transcript emergence and loss within about 10 million years of evolutionary history (Neme and Tautz, 2016).\n\nBut unlike the detection of the transcriptional and translational expression of de novo genes, functional studies of such genes have lacked behind. In yeast, the de novo evolved gene BSC4 was found to be involved in DNA repair (Cai et al., 2008) and MDF1 (Li et al., 2010; Li et al., 2014) was found to suppress mating and to promote fermentation. Knockdown of candidates of de novo genes in Drosophila have suggested effects on viability and male fertility (Chen et al., 2010; Reinhardt et al., 2013). Male fertility was also found to be affected for Pldi in mice, which codes for a lncRNA. In this case the knockout was shown to affect sperm motility and testis weight (Heinen et al., 2009). There is generally a tendency to focus on male testis effects for newly evolved genes. However, considering that the mammalian females have complex reproduction cycles, including morphology, physiology and behavior relating to mate choice, pregnancy, and parenting, de novo genes in mammals should also be expected to have a function in female-specific organs and affect female fertility and reproductive behavior as well.\n\nHere, we have first generated a list of candidate genes that have evolved in the lineage of mice, after they split from rats. We have analyzed ribosome profiling and mass spectrometry data for these and find that most of them are translated. From this list, we have then chosen a gene specifically expressed in the female reproductive system to address the question of the role of de novo gene evolution in this as yet little studied context. We used a knockout line for the reading frame of the gene, created through CRISPR/Cas9-mediated frameshift mutagenesis, and subjected it to extensive molecular and phenotypic analysis. We conclude that it functions in the oviduct and affects female fertility cycles and that its emergence may have been driven by an evolutionary conflict situation. Given that we find no measurable acceleration of sequence evolution in the gene, we conclude that it became directly functional after its open reading frame became functional. These results support the notion that random protein sequences have a good probability for conveying evolutionarily relevant functions (Neme et al., 2017).\n\n## Results\n\n### De novo evolved genes in the mouse genome\n\nTo identify candidates for recently evolved de novo genes, we have applied a combined phylostratigraphy and synteny-based approach. We were able to identify 119 predicted protein-coding genes from intergenic regions that occur only in the mouse genome, but not in rats or humans. We re-assembled their transcript structures and estimated their expression levels using available ENCODE RNA-Seq data in 35 tissues from the mouse (Figure 1, Figure 1\u2014source data 1). To validate that their predicted open reading frames (ORFs) are indeed translated, we have searched ribosome profiling and peptide mass spectrometry datasets (Figure 1\u2014source data 1). We found for 110 out of the 119 candidate genes direct evidence for translation.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/44392/elife-44392-fig1-v2.jpg)\n\n**Figure 1.:** (A) Transcriptional abundance in each mouse tissue, represented as the sum of log-transformed FPKM values of each transcript: sum(log2(FPKM + 1)). Details on tissue designations and RNA samples are provided in Figure 1\u2014source data 1. The five tissues with the highest fractions are highlighted in red and the lowest ones in blue. (B) Comparison of overall expression levels (represented as the highest FPKM values in the 35 tissues) between de novo and all other protein-coding genes (\u2018De novo\u2019 and \u2018Other\u2019 on the x-axis). (C) Comparison of averages of intrinsic structural disorder scores between de novo and all other protein-coding genes. (D) Comparison of fractions of sequence covered by hydrophobic clusters between de novo and all other protein-coding genes.\n\nExpression of these genes is found throughout all tissues analyzed, with notable differences. Testis and brain express the relatively largest abundance of these candidate de novo genes, while the digestive system and liver express the lowest (Figure 1A). Expression levels of these genes are generally lower than those of other protein-coding genes (FPKM medians: 0.63 vs. 8.18; two-tailed Wilcoxon rank sum test, p-value<2.2\u00a0\u00d7\u00a010\u221216; Figure 1B). Most overall molecular patterns are similar to previous findings (Neme and Tautz, 2013; Schmitz et al., 2018; Wilson et al., 2017). They have fewer exons (medians: 2 vs. 7; two-tailed Wilcoxon rank sum test, p-value<2.2\u00a0\u00d7\u00a010\u221216) and fewer coding exons than other protein-coding genes (medians: 1 vs. 6; two-tailed Wilcoxon rank sum test, p-value<2.2\u00a0\u00d7\u00a010\u221216). The lengths of their proteins are shorter than those of other proteins (medians: 125 vs. 397; two-tailed\u00a0Wilcoxon rank sum test, p-value<2.2\u00a0\u00d7\u00a010\u221216). However, their proteins are predicted to be less disordered than other proteins (medians: 0.20 vs. 0.27; two-tailed Wilcoxon rank sum test, p-value=0.0024; Figure 1C) and equally hydrophobic to other proteins (medians: 0.56 vs. 0.57; two-tailed Wilcoxon rank sum test, p-value=0.52; Figure 1D), but note that the two sets of values show a broad distribution.\n\n### Analysis of a female expressed gene\n\nTo study the function of a gene expressed in the female reproductive tract, we picked Gm13030 (Figure 2) from the above list for in-depth analyses, including evolutionary history, reading-frame knockout, transcriptomic studies and phenotyping. According to the ENCODE RNA-Seq data, Gm13030 is only expressed in two tissues, the ovary of 8 weeks old females (FPKM 0.135), as well as the subcutaneous adipose tissue of 8 weeks old animals (FPKM 0.115) (Figure 1\u2014source data 1). Given that the ovary is a small organ, with closely attached tissues, such as oviduct and gonadal fat pad, there could be contamination between these different tissue types. Hence, we were interested whether there is specificity for one of them. We used reverse transcription PCR on RNA from the respective carefully prepared tissue samples, to trace the expression of Gm13030 and a control gene (Uba1). We found that Gm13030 is not expressed in the ovary, but predominantly in the oviduct with only a weak signal from the adjacent fat pad (Figure 2B).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/44392/elife-44392-fig2-v2.jpg)\n\n**Figure 2.:** (A) General information on transcript ID, location and protein characteristics. (B) Reverse transcription PCR across intron junctions to study Gm13030 expression in gonadal fat pad, ovary, oviduct, and uterus. Fat: gonadal fat pad; M: marker (from top to bottom: 1500 bp, 850 bp, 400 bp, 200 bp, 50 bp); U: Uba1 (control gene, 255 bp); j1: Gm13030 junction 1 (161 bp); j2: Gm13030 junction 2 (209 bp). (C) Transcript structure, DNA target, guide RNA, and depiction of the deletion created by the CRISPR/Cas9 knockout of Gm13030. The 20-nt guide sequence is colored blue and the 3-nt PAM is colored red. The induced deletion was verified by sequencing.\n\n### Evolutionary analysis of Gm13030\n\nTo trace the evolutionary emergence of Gm13030, we used available whole genome information of different mouse species to generate alignments, combined with Sanger sequencing data of PCR fragments from mouse populations, subspecies, and related species from the genus Mus. We found the respective genomic region covering the ORF in all mouse species analyzed. It is not possible to identify an unequivocal orthologous region in the rat, because the unique genomic region in the mouse matches with multiple diverged genomic fragments in the rat reference genome, and all these fragments overlap only marginally with the mouse region.\n\nThe alignments for the whole coding region allowed us to infer mutations that have led to the opening of the reading frame (enabler mutations), as well as further substitutions and secondary disablers along the tree topology (Figure 3, Figure 3\u2014figure supplement 1). The most distant species in which we can trace the orthologous genomic region, M. pahari, lacks part of the coding region. Two further outgoup species, M. matheyi and M. caroli have an orthologous genomic region that spans the whole reading frame, but harbor stop codons at position 204 and 258 of the alignment (Figure 3, Figure 3\u2014figure supplement 1). At position 258 we find a change from TGA to TGC in all ingroup species, that\u00a0is this is a clear enabler mutation. The same change is seen at position 204, but some of the ingroup species that show also secondary disablers (see below) retain the TGA. But since both enabler mutations are at least seen in M. spicilegus, we place the emergence of the Gm13030 ORF at this node, that\u00a0is between 2\u20134 million years ago. Figure 3 includes all coding and non-coding substitutions that have occurred beyond this node. This includes secondary disablers in M. spretus, as well as M. m. domesticus. Most notably, all three M. m. domesticus populations carry a 17nt deletion that leads to a disruption of the reading frame. They share also several other substitutions, not only among them, but also with M. spretus and M. spicilegus, suggesting a secondary introgression effect (Figure 3, Figure 3\u2014figure supplement 1). Hence, after the emergence of the Gm13030 ORF, only the M. m. musculus and M. m. castaneus populations have retained it.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/44392/elife-44392-fig3-v2.jpg)\n\n**Figure 3.:** The tree is based on the alignments shown in Figure 3\u2014figure supplement 1, with only M. caroli included as the outgroup. The relevant substitutions at the different nodes are shown in boxes. Numbers refer to coding:non-coding substitutions, \u2018stop\u2019 refers to a mutation that creates a stop codon in the reading frame, \u2018DEL\u2019 refers to a deletion, \u2018INT\u2019 to an assumed introgression. 3-letter codes on the tips refer to the different populations of the respective sub-species. Expected substitutions on the top are inferred from whole genome distances and represent the approximately neutral number of substitutions for the respective comparisons (Figure 3\u2014figure supplement 2).\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/44392/elife-44392-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** All nucleotide sequences are aligned to the mm10 mouse reference, and amino acids are translated according to the reference frame (note that this implies that the frameshifts in the individual sequences are not shown). Alignment was done in Geneious Prime (2019.0.3 Biomatters Ltd.). The topology of the species tree is shown to the left. \u2018Mus m.\u2019 represents Mus musculus. Mus musculus populations are marked with 3-letter origin designations, and sequences from inbred strains are marked with strain designations. Nucleotides and amino acids are shown in IUPAC codes. The two rectangles mark the positions of the enabler mutations.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/44392/elife-44392-fig3-figsupp2-v2.jpg)\n\n![Figure 3\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/44392/elife-44392-fig3-figsupp3-v2.jpg)\n\n**Figure 3\u2014figure supplement 3.:** P-values were calculated in a 2 \u00d7 2 contingency table using Fisher\u2019s exact test.\n\nWhen focusing on the substitutions that occurred within the lineage towards M. m. musculus, we find a total of 7 coding and six non-coding substitutions. Hence, the total number of substitutions is slightly higher than the 6\u20137 expected for approximately neutral substitutions from a genomic average between these populations (indicated on top of Figure 3), but there is no bias towards coding mutations. Overall, there are too few mutations to apply a dN/dS test and the ratios of non-coding to coding mutations are all non-significant (Figure 3\u2014figure supplement 3). Hence, we conclude that there is no traceable signal of positive selection on the protein after the emergence of the ORF.\n\n### Generation of gene knockout and off-target analysis\n\nFor the further functional characterization of Gm13030, we obtained a knockout line with a frameshift in the ORF through CRISPR/Cas9 mutagenesis. The knockout line is from a laboratory strain that is nominally derived from Mus musculus domesticus (C57BL/6N). However, as stated above, Mus musculus domesticus populations have disabling mutations. But C57BL/6N is known to carry also alleles from Mus musculus musculus (Yang et al., 2011) and the Gm13030 allele represents indeed the non-interrupted version that is found in M. m. musculus and M. m. castaneus. The CRISPR/Cas9 treatment introduced a 7 bp deletion at the beginning of the ORF (position 41\u201347) causing a frameshift and a premature stop codon in exon 2 (Figure 2C).\n\nThe CRISPR/Cas9 experiment to generate our knockout line might have generated potential off-target mutations. In order to rule out this possibility, we performed whole genome sequencing on both animals of our founding pair. The female and male of our founding pair were selected from the first-generation offspring of the mating among mosaic and wildtype mice which were directly developed from the zygotes injected. Each of them contained the 7 bp deletion allele described above and a wildtype allele. If there were any off-target sites, they should exist as heterozygous or homozygous indels or single nucleotide variants. However, in our genome sequencing results, we found no variant located in the 100 bp regions around the genome-wide 343 predicted off-target sites. Further, we manually checked the reads mapped to the regions around the top 20 predicted sites in both samples and none of them yielded an indication of variants.\n\n### Knockout effect on the transcriptome\n\nThe Gm13030 knockout line is homozygous viable and fertile. We were therefore interested in studying the impact on the transcriptional network in the tissue in which Gm13030 is predominantly expressed. Given the observation that Gm13030 is specifically expressed in adult oviducts, we focused the RNA-Seq analysis on the oviducts of 12 homozygous knockout and 12 wildtype females (10\u201311 weeks old). There were on average 75.9 million unique mapped reads per sample (range from 57.5 to 93.0 million reads; Figure 4\u2014figure supplement 1). The genotypes of the 24 samples were further confirmed by the reads covering the sites in which the 7-bps deletion locates (Figure 4\u2014figure supplement 1). In the initial analysis involving all samples, we found no differentially expressed gene between knockouts and wildtypes.\n\nHowever, given that the expression in oviducts should be fluctuating according to estrous cycle, we clustered the transcriptomes of the individuals based on both principle component analysis (PCA) and hierarchical clustering methods, which allowed to distinguish three major clusters (Figure 4A and B). To confirm that these correspond to three different phases of the estrous cycle, we analyzed the expression of three known cycle dependent genes in the respective clusters, progesterone receptor (Pgr) and estrogen receptors (Esr1 and Gper1). We found that these genes change indeed in the expected directions, both in the wildtype as well as the knockout animals (Figure 4C\u2013E).\n\nBased on this finding, we performed the differential expression analysis on the three clusters separately. We found 21 differentially expressed genes in cluster 1 (DESeq2, adjusted p-value\u22640.01; fold changes range from 0.75 to 1.59; Table 1), but still none for clusters 2 and 3. The 21 differentially expressed genes in cluster 1 do not include the genes neighboring Gm13030 (Pla2g2e and Pla2g5). This suggests that Gm13030 acts during the phase of high progesterone receptor and estrogen receptor 1 expression, and low G protein-coupled estrogen receptor 1 expression, corresponding to proestrus or the starting of estrus, that\u00a0is, the phase where females start to become receptive for implantation.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/44392/elife-44392-fig4-v2.jpg)\n\n**Figure 4.:** (A) PC1 values from the PCA analysis, (B) hierarchical clustering result. Sample codes and genotypes are listed along X-axis. The 24 samples are assigned into three clusters accordingly. (C-E) The expression levels of three sex hormone receptor genes (Pgr, Esr1, Gper1) are shown by box plots.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/44392/elife-44392-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** Read statistics for the RNA-Seq samples of oviducts.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/44392/elife-44392-fig4-figsupp2-v2.jpg)\n\n**Figure 4\u2014figure supplement 2.:** The relative expression levels of three Dcpp genes in cluster one samples. Comparison of RNA-Seq counts and two replicates of ddPCR experiments (see experimental details in the Materials\u00a0and\u00a0method section). Note that the three Dcpp genes (Dcpp1, Dcpp2, and Dcpp3) are too similar to each other to allow to place primers that could distinguish them. Hence, both the RNA-Seq counts, as well as the ddPCR results reflect the cumulative expression levels. ddPCR test on the relative expression levels of the three Dcpp genes in cluster one samples.\n\n![Figure 4\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/44392/elife-44392-fig4-figsupp3-v2.jpg)\n\n**Table 1.**\n Differentially expressed genes in oviduct cluster 1.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Gene ID</th>\n      <th>Gene name</th>\n      <th>Base meana</th>\n      <th>Fold change</th>\n      <th>Adjusted P-Value</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>ENSMUSG00000057417</td>\n      <td>Dcpp3</td>\n      <td>3700</td>\n      <td>1.59</td>\n      <td>0.0000</td>\n    </tr>\n    <tr>\n      <td>ENSMUSG00000096278</td>\n      <td>Dcpp2</td>\n      <td>427</td>\n      <td>1.47</td>\n      <td>0.0000</td>\n    </tr>\n    <tr>\n      <td>ENSMUSG00000096445</td>\n      <td>Dcpp1</td>\n      <td>415</td>\n      <td>1.45</td>\n      <td>0.0000</td>\n    </tr>\n    <tr>\n      <td>ENSMUSG00000034009</td>\n      <td>Rxfp1</td>\n      <td>4410</td>\n      <td>1.35</td>\n      <td>0.0003</td>\n    </tr>\n    <tr>\n      <td>ENSMUSG00000022206</td>\n      <td>Npr3</td>\n      <td>349</td>\n      <td>1.36</td>\n      <td>0.0011</td>\n    </tr>\n    <tr>\n      <td>ENSMUSG00000035864</td>\n      <td>Syt1</td>\n      <td>666</td>\n      <td>1.34</td>\n      <td>0.0011</td>\n    </tr>\n    <tr>\n      <td>ENSMUSG00000070348</td>\n      <td>Ccnd1</td>\n      <td>7382</td>\n      <td>0.80</td>\n      <td>0.0012</td>\n    </tr>\n    <tr>\n      <td>ENSMUSG00000058897</td>\n      <td>Col25a1</td>\n      <td>1605</td>\n      <td>1.34</td>\n      <td>0.0015</td>\n    </tr>\n    <tr>\n      <td>ENSMUSG00000059908</td>\n      <td>Mug1</td>\n      <td>268</td>\n      <td>1.35</td>\n      <td>0.0015</td>\n    </tr>\n    <tr>\n      <td>ENSMUSG00000063130</td>\n      <td>Calml3</td>\n      <td>698</td>\n      <td>1.31</td>\n      <td>0.0018</td>\n    </tr>\n    <tr>\n      <td>ENSMUSG00000015966</td>\n      <td>Il17rb</td>\n      <td>637</td>\n      <td>0.75</td>\n      <td>0.0025</td>\n    </tr>\n    <tr>\n      <td>ENSMUSG00000022358</td>\n      <td>Fbxo32</td>\n      <td>3614</td>\n      <td>1.31</td>\n      <td>0.0038</td>\n    </tr>\n    <tr>\n      <td>ENSMUSG00000040724</td>\n      <td>Kcna2</td>\n      <td>895</td>\n      <td>0.75</td>\n      <td>0.0038</td>\n    </tr>\n    <tr>\n      <td>ENSMUSG00000061477</td>\n      <td>Rps7</td>\n      <td>6247</td>\n      <td>1.20</td>\n      <td>0.0052</td>\n    </tr>\n    <tr>\n      <td>ENSMUSG00000067786</td>\n      <td>Nnat</td>\n      <td>658</td>\n      <td>1.32</td>\n      <td>0.0052</td>\n    </tr>\n    <tr>\n      <td>ENSMUSG00000019987</td>\n      <td>Arg1</td>\n      <td>1208</td>\n      <td>1.32</td>\n      <td>0.0068</td>\n    </tr>\n    <tr>\n      <td>ENSMUSG00000079017</td>\n      <td>Ifi27l2a</td>\n      <td>1065</td>\n      <td>1.32</td>\n      <td>0.0073</td>\n    </tr>\n    <tr>\n      <td>ENSMUSG00000028031</td>\n      <td>Dkk2</td>\n      <td>678</td>\n      <td>1.31</td>\n      <td>0.0077</td>\n    </tr>\n    <tr>\n      <td>ENSMUSG00000022037</td>\n      <td>Clu</td>\n      <td>17139</td>\n      <td>1.22</td>\n      <td>0.0086</td>\n    </tr>\n    <tr>\n      <td>ENSMUSG00000033715</td>\n      <td>Akr1c14</td>\n      <td>23879</td>\n      <td>1.21</td>\n      <td>0.0086</td>\n    </tr>\n    <tr>\n      <td>ENSMUSG00000034039</td>\n      <td>Prss29</td>\n      <td>176</td>\n      <td>1.29</td>\n      <td>0.0086</td>\n    </tr>\n  </tbody>\n</table>\n\n_aThe mean of the normalized read counts for all cluster one samples._\n\nThe top three differentially expressed genes belong all to a single young gene family, namely Dcpp1, Dcpp2 and Dcpp3, all three of which were significantly up-regulated in the knockout samples (DESeq2, fold changes: 1.45 for Dcpp1, 1.47 for Dcpp2, and 1.59 for Dcpp3, Figure 4\u2014figure supplement 2). These genes are expressed in female and male reproductive organs and the thymus, and were previously found to function in oviducts to stimulate pre-implantation embryo development (Lee et al., 2006). Given the special importance of the expression differences for the Dcpp genes, we confirmed them by a quantitative PCR assay (Figure 4\u2014figure supplement 2). The fourth gene in the list of significantly changed expression is Rxfp1, the receptor for the pregnancy hormone relaxin. Relaxin signaling is involved in a variety of cellular processes (Valkovic et al., 2019), whereby the regulation of the reproductive cycle is one of them (Anand-Ivell and Ivell, 2014).\n\n### Knockout phenotype\n\nGiven that the Dcpp genes are more highly expressed in the knockouts, one could predict a higher implantation frequency of embryos, as it has been shown through experimental manipulation of Dcpp levels (Lee et al., 2006). We assessed the litters of pairs that were produced from our normal breeding stocks and found that the first litters from homozygous knockout females were produced after the same time as those from wildtype or heterozygous females (medians: 23 vs. 22 days, Figure 5\u2014source data 1). However, we saw a major difference with respect to the second litter. Homozygous knockout females tended to produce this faster than wildtype or heterozygous females (medians: 23 vs. 38 days, Figure 5\u2014source data 1). To test this observation directly, we set up additional 10 mating pairs of homozygous knockout females with wildtype males and 10 wildtype pairs for control, all at approximately the same age at the start (8\u20139 weeks old). We found that the knockout and wildtype pairs had their first litter after the same time (medians: 23 vs. 22 days, Figure 5\u2014source data 1), while the knockout females had their second litter after a shorter time (medians: 24 vs. 36 days, Figure 5\u2014source data 1), thus confirming the initial observation. However, the data have to be seen in the context of the non-continuous nature of pregnancy, caused by the ovulation cycles of females. Females can ovulate within a day of giving birth, but if no successful mating occurs at that time, ovulation is suppressed while the female is lactating. This results in a delay in the timing of the next pregnancy. Figure 5 shows that this pattern is also evident in our data.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/44392/elife-44392-fig5-v2.jpg)\n\n**Figure 5.:** Time points of the second litter are plotted for the different genotypes, with box plots marked. A bimodal distribution becomes evident, as discussed in the text.\n\nWe found that the times to the second litter were either smaller than or equal to 25 days (early group) or larger than or equal to 35 days (late group) for both the homozygous knockout females and the wildtype or heterozygous females. But in the homozygous knockouts, we saw more in the early group, leading to the median values having a big difference. When using the two-tailed Wilcoxon rank sum test which does not require the assumption of a normal distribution, we found that this difference is significant when calculated across all breeding data (p-value=0.042).\n\nInterestingly, we found not only a timing difference for the second litter but also infanticide in about a quarter of the litters (4 out of 16) from homozygous females, but none in wildtype or heterozygous females (two-tailed Fisher's exact test, p-value=0.031, Figure 5\u2014source data 1). This could indicate that when the second litter follows too quickly, the females may be under stronger postpartum stress resulting in partial killing of pups. In addition, one could also have expected to see homozygous knockout females having larger litter sizes than those of wildtype or heterozygous females, but they were almost the same (medians: 6.5 vs. 7.0 for littler 1 and 6.5 vs. 7.5 for litter 2, Figure 5\u2014source data 1). One possible explanation is that considering the high infanticide rate for homozygous knockouts, more pups from homozygous knockout females were eaten before being observed.\n\nThese results suggest that the loss of Gm13030 should be detrimental to the animals in the wild. Still, we see that the M. m. domesticus populations have secondarily lost this gene (Figure 3). Intriguingly, when inspecting the copy number variation data that we have produced previously (Pezer et al., 2015), we found that Dcpp3 was also lost in M. m. domesticus populations (Figure 4\u2014figure supplement 3). Under the assumption that this results in an overall lowered expression of Dcpp RNAs, it could be considered to compensate for the loss of Gm13030.\n\n## Discussion\n\nThe aim of this study was to trace the possible functions of a gene that has evolved only very recently out of an intergenic region. Out of a list of 119 candidate genes that have evolved de novo ORFs in the mouse lineage, we have chosen a gene specifically expressed in the female reproductive system for detailed molecular and functional analysis. We have used CRISPR/Cas9 induced frameshift mutation within the ORF to obtain the knockout line. This implies that it is indeed the protein, rather than the RNA that is functional. We find that the knockout has an impact on the transcriptome in the oviduct only at a specific stage of the female estrous cycle, and we also find a unique female-specific phenotype. Hence, we propose to give a formal name to Gm13030. We name it after a female figure, Shiji (Shj), who was born from stone (de novo) as a mythology character in the Chinese traditional novel Investiture of the Gods (Fengshen Yanyi), which was published in the 16th century.\n\n### Transcriptome and phenotype changes\n\nThe knockout line did not show an overt phenotype, but we considered this also as a priori unlikely, given that a de novo evolved gene is expected to be only added to an existing network of genes (Zhang et al., 2015). But given the observed transcriptome changes in the oviducts, we were encouraged to apply the fertility test. We identified a possible direct link between the identified phenotype of a shorter interval to second birth in the knockouts and the transcriptomic changes. We found that the expression level of all three copies of Dcpp genes in C57BL/6N mice is enhanced in the Shj knockout animals. Dcpp expression is induced in the oviduct by pre-implantation embryos and is then secreted into the oviduct. This in turn stimulates the further maturation of the embryos and eventually the implantation (Lee et al., 2006). Hence, this is a system where a selfish tendency for Dcpp expression favoring embryo implantation could develop, in expense of the interest of the mother that wants to build up new resources first. Accordingly, Shj could have found its function in controlling this expression, that\u00a0is, \u2018defending\u2019 the interests of the mother. Intriguingly, the secondary loss of Shj in M. m. domesticus populations is accompanied by a loss of Dccp3 in the same populations. This is compatible with the notion that an evolutionary conflict of interest exists for these interactions, whereby it remains open whether the loss of Dcpp3 preceded the loss of Shj or vice versa. We note that Shj inactivation alleles segregate also in the populations of the other subspecies (M. m. musculus and M. m. castaneus) in low frequency, implying that the evolutionary process of fully integrating this new gene is still ongoing.\n\n### Male bias versus female bias\n\nThere has so far been much focus on de novo genes and other new genes to have male-biased expression and to affect male fertility (Chen et al., 2013; Ellegren and Parsch, 2007; Heinen et al., 2009; Kaessmann, 2010; Long et al., 2013; Reinhardt et al., 2013; Zhao et al., 2014). Only recently, one of a pair of duplicated genes in Drosophila, Arts, has been shown to have high expression in the ovary and to affect fertility (VanKuren and Long, 2018). Here we have shown that a de novo gene specifically expressed in the female reproductive tract affects the female fertility cycle. Female reproduction should be subject to accelerated evolution patterns, especially in mammals which have high complexities in female reproduction, including mate choice, pregnancy, and parenting, which has been neglected so far. One reason is that the estrous cycle in females adds to the complexity of the analysis. Our clustering analysis of the transcriptomic data, which considers the stages of estrous cycle, provides an approach for studying biased gene expression in female mammals as well. Another reason for the current focus on males is the large number of new genes that are transcribed in testis. However, this is due to the promiscuous phase of expression in meiotic cells, where many genes use alternative promotors (Kleene, 2001). These meiotic cells are abundant in testis, but are difficult to analyze in ovaries. Hence, it is still open whether there might be a similar phase of over-expression of new genes in female meiotic stages as well.\n\nShj exerts its effects in somatic cells, that\u00a0is, independent of a possible expression in meiosis, but in the context of a possible selfish gene conflict situation, which has so far been ascribed mostly to the male reproductive system (Kleene, 2005). Hence, we expect that a better analysis of female-specific expression of genes should reveal more evolutionary interesting insights in the future.\n\n### Functional de novo gene emergence\n\nIt has long been assumed that the emergence of function out of non-coding DNA regions must be rare, and if it occurs, the resulting genes would be far away from assuming a function. Our results do not support these assumptions. It is possible to find many well supported transcripts that could be considered to be true de novo genes. We have shown here that Shj has functions on the transcriptome and the phenotype. In fact, we have initial data for two additional de novo genes expressed in the brain and limbs, where knockouts produce an effect on the transcriptome and show subtle phenotypes (data available on bioRxiv doi.org/10.1101/510214). However, since lacZ replacement constructs were used instead of CRISPR-induced knockouts, it remains still open whether the effects are due to the new ORFs or to chromatin effects caused by the deletion constructs. This will need further analysis.\n\nThe Shj ORF has acquired only a small number of additional substitutions, both coding and non-coding after it emerged. This suggests that it did not need additional adaptation of the protein sequence to become functional. This is in line with a similar analysis on a larger set of de novo ORFs in the mouse (Ruiz-Orera et al., 2018). Hence, this raises the question whether we should necessarily expect signatures of positive selection around de novo genes as part of proof that it is a true gene (McLysaght and Hurst, 2016). Alternatively, given the observation that a large set of expressed random sequences can exert phenotypes (Bao et al., 2017; Neme et al., 2017), it would seem more likely that the conversion of a non-coding region into a coding one would already be sufficient to create a gene function. In the early phase of evolution, such genes would likely be frequently subject to secondary loss (Palmieri et al., 2014), but they could eventually also become fixed and then further evolutionarily optimized.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Gene (Mus musculus)</td>\n      <td>Gm13030; Shj</td>\n      <td>NA</td>\n      <td>Ensembl:ENSMUSG00000078518</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (M. musculus)</td>\n      <td>Gm13030 line</td>\n      <td>this paper</td>\n      <td></td>\n      <td>Generated from C57BL/6N line by introducing a 7 bp deletion using CRISPR/Cas9 at Mouse Biology Program (MBP). See detail in Materials and methods.</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>Reverse transcription PCR primers</td>\n      <td>this paper</td>\n      <td></td>\n      <td>See Materials and methods.</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>PCR and Sanger sequencing primers</td>\n      <td>this paper</td>\n      <td></td>\n      <td>See Materials and methods.</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>Genotyping primers</td>\n      <td>this paper</td>\n      <td></td>\n      <td>See Materials and methods.</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>Droplet digital PCR primers and probes</td>\n      <td>this paper</td>\n      <td></td>\n      <td>See Materials and methods.</td>\n    </tr>\n  </tbody>\n</table>\n\n### Ethics statement\n\nThe mouse studies were approved by the supervising authority (Ministerium f\u00fcr Energiewende, Landwirtschaftliche R\u00e4ume und Umwelt, Kiel) under the registration numbers V244-71173/2015, V244-4415/2017 and V244-47238/17. Animals were kept according to FELASA (Federation of European Laboratory Animal Science Association) guidelines, with the permit from the Veterin\u00e4ramt Kreis Pl\u00f6n: 1401\u2013144/PL\u00d6\u2212004697. The respective animal welfare officer at the University of Kiel was informed about the sacrifice of the animals for this study.\n\n### Genome-wide identification of de novo genes\n\nWe modified previous phylostratigraphy and synteny-based methods to identify Mus-specific de novo protein-coding genes from intergenic regions. Note that while the phylostratigraphy based approach was criticized to potentially include false positives (Moyers and Zhang, 2015), we have shown that the problem is relatively small and that it is in particularly not relevant for the most recently diverged lineages within which de novo gene evolution is traced (Domazet-Lo\u0161o et al., 2017). We started with mouse proteins annotated in Ensembl (Version 80) (Zerbino et al., 2018) (1) with protein length not smaller than 30 amino acids, (2) with a start codon at the beginning of the ORF, (3) with a stop codon at the end of the ORF, (4) without stop codons within the annotated ORF. For the phylostratigraphy-based strategy, in order to save computational time, we first used NCBI BLASTP (2.5.0+) to align low complexity region masked mouse protein sequences to rat protein sequences annotated in Ensembl (Version 80) and filtered out the mouse sequences having hits with E-values smaller than 1\u00a0\u00d7\u00a010\u22127. Next we used NCBI BLASTP (2.5.0+) to align the remaining low complexity region masked sequences to NCBI nr protein sequences (10 Nov. 2016) (O'Leary et al., 2016) and filtered out the mouse sequences having non-genus Mus hits with E-values smaller than 1\u00a0\u00d7\u00a010\u22123 according to Neme and Tautz (2013).\n\nThe genes remaining after these filtering steps are the candidates for the de novo evolved genes. In order to deal also with proteins having low complexity regions, we further applied a synteny-based strategy on the rest proteins by taking advantage of the Chain annotation from Comparative Genomics of UCSC Genome Browser (http://genome.ucsc.edu/) (Kent et al., 2002). We filtered out the proteins encoded on unassembled scaffolds because their chromosome information is not compatible between Ensembl and UCSC annotations. We only compared rat and human proteins with mouse proteins because their genomes are well assembled and genes are well annotated. We performed the same procedures on rat and human data separately, and used \u2018mm10.rn5.all.chain\u2019 and \u2018rn5ToRn6.over.chain\u2019 from UCSC and gene annotation from Ensembl (Version 80) for rat, and \u2018mm10.hg38.all.chain\u2019 from UCSC and gene annotation from Ensembl (Version 80) for human. For each mouse gene, if its ORF overlaps with any ORFs in the rat or human mapping regions in Chain annotation, we aligned its protein sequence to those protein sequences with program water from EMBOSS (6.5.7.0) (Rice et al., 2000); if one of the alignment scores is not smaller than 40, we filtered out the protein. The remaining 119 genes are the candidates for the following analysis and the pool for us to select the gene for further functional experiments.\n\n### ENCODE RNA-Seq analysis\n\nWe downloaded the raw read files of 135 strand-specific paired-end RNA-Seq samples generated by the lab of Thomas Gingeras, CSHL from ENCODE (ENCODE Project Consortium, 2012; Sloan et al., 2016) including 35 tissues from different organs and different developmental stages, and each of them had multiple biological or technical replicates. We trimmed the raw reads with Trimmomatic (0.35) (Bolger et al., 2014), and only used paired-end reads left for the following analyses. We mapped the trimmed reads to the mouse genome GRCm38 (Waterston et al., 2002; Zerbino et al., 2018) with HISAT2 (2.0.4) (Kim et al., 2015) and SAMtools (1.3.1) (Li et al., 2009), and took advantage of the mouse gene annotation in Ensembl (Version 80) by using the --ss and --exon options of hisat2-build. We assembled transcripts in each sample, and merged annotated transcripts in Ensembl (Version 80) and all assembled transcripts with StringTie (1.3.4d) (Pertea et al., 2015). Then we estimated the abundances of transcripts, FPKM values, in each sample with StringTie (1.3.4d). For each tissue, we summarized the FPKM values of each transcript by averaging the values from multiple biological or technical replicates; and if a gene has multiple transcripts, we assigned the summary of the FPKM values of the transcripts as the transcriptional abundance of the gene.\n\n### Ribosome profiling and proteomics analysis\n\nWe downloaded the datasets that included both strand-specific ribosome profiling (Ribo-Seq) and RNA-Seq experiments of the same mouse samples from Gene Expression Omnibus (Barrett et al., 2013) under accession numbers GSE51424 (Gonzalez et al., 2014), GSE72064 (Cho et al., 2015), GSE41426 (Djiane et al., 2013), GSE22001 (Guo et al., 2010), GSE62134 (Diaz-Mu\u00f1oz et al., 2015), and GSE50983 (Casta\u00f1eda et al., 2014), which corresponded to brain, hippocampus, neural ES cells, heart, skeletal muscle, neutrophils, splenic B cells, and testis. Ribo-seq datasets were depleted of possible rRNA contaminants by discarding reads mapped to annotated rRNAs, and then the rest reads were mapped to GRCm38 (Waterston et al., 2002; Zerbino et al., 2018) with Bowtie2 (2.1.0) (Langmead and Salzberg, 2012). RNA-Seq reads were mapped to the mouse genome GRCm38 with TopHat2 (2.0.8) (Kim et al., 2013). Then we applied RiboTaper (1.3) (Calviello et al., 2016) which used the triplet periodicity of ribosomal footprints to identify translated regions to the bam files. Mouse GENCODE Gene Set M5 (Ensembl Version 80) (Mudge and Harrow, 2015) was used as gene annotation input. The Ribo-seq read lengths to use and the distance cutoffs to define the positions of P-sites were determined from the metaplots around annotated start and stop codons as shown below.\n\n<table>\n  <thead>\n    <tr>\n      <th>Sample</th>\n      <th>Read lengths</th>\n      <th>Offsets</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Brain</td>\n      <td>29,30</td>\n      <td>12,12</td>\n    </tr>\n    <tr>\n      <td>Hippocampus</td>\n      <td>29,30</td>\n      <td>12,12</td>\n    </tr>\n    <tr>\n      <td>Neural ES cells</td>\n      <td>27,28,29,30</td>\n      <td>12,12,12,12</td>\n    </tr>\n    <tr>\n      <td>Heart</td>\n      <td>29,30</td>\n      <td>12,12</td>\n    </tr>\n    <tr>\n      <td>Skeletal muscle</td>\n      <td>29,30</td>\n      <td>12,12</td>\n    </tr>\n    <tr>\n      <td>Neutrophils</td>\n      <td>25,26,27,28,29,30,31,32,33</td>\n      <td>12,12,12,12,12,12,12,12,12</td>\n    </tr>\n    <tr>\n      <td>Splenic B cells</td>\n      <td>30,31</td>\n      <td>12,12</td>\n    </tr>\n    <tr>\n      <td>Testis</td>\n      <td>28</td>\n      <td>12</td>\n    </tr>\n  </tbody>\n</table>\n\nAll mouse peptide evidence from large-scale mass spectrometry studies was retrieved from PRIDE (09 Aug. 2015) (Vizcaino et al., 2016) and PeptideAtlas (31 Jul. 2015) (Desiere, 2006) databases. We performed the same procedures on PRIDE and PeptideAtlas data separately following the method described in Xie et al. (2012). In brief, if the whole sequence of a peptide was identical to one fragment of the tested de novo protein sequence, and had at least two amino acids difference compared to all the fragments of other protein sequences in the mouse genome, the peptide was considered to be convincing evidence for the translational expression of the respective de novo protein.\n\n### Molecular patterns of de novo genes\n\nThe exon number of a gene was assigned as the exon number of the transcript having highest FPKM value among all the transcripts of the gene. The intrinsic structural disorder of proteins was predicted using IUPred (Doszt\u00e1nyi et al., 2005), long prediction type was used. The intrinsic structural disorder score of a protein was assigned as the average of the scores of all its amino acids. The hydrophobic clusters of proteins were predicted using SEG-HCA (Faure and Callebaut, 2013), and then the fraction of the sequence covered by hydrophobic clusters for each protein was calculated. \u2018Other\u2019 genes used to compare against the de novo protein-coding genes were the protein-coding genes annotated in Ensembl (Version 80) excluding the de novo genes.\n\n### Reverse transcription PCR\n\nThe ovaries, oviducts, uterus, and gonadal fat pad from the females from the Gm13030 line were carefully collected and immediately frozen in liquid nitrogen. Total RNAs from those tissues were purified using QIAGEN RNeasy Microarray Tissue Mini Kit (Catalog no. 73304), and the genomic DNAs were removed using DNase I, RNase-free (Catalog no. 74106). The first strand cDNAs were synthesized using the Thermo Scientific RevertAid First Strand cDNA Synthesis Kit (Catalog no. K1622) by targeting poly-A mRNAs with oligo dT primers. Two pairs of primers targeted on the two junctions of Gm13030 gene structure and a pair of primers targeted on a control gene Uba1 were used. The sequences of the primers are shown below. PCR was done under standard conditions for 38 cycles.\n\n<table>\n  <thead>\n    <tr>\n      <th>Primer name</th>\n      <th>Sequence (5\u2019&gt;3\u2019)</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>junc1_F</td>\n      <td>GGACACAGGCCAGGGAAATG</td>\n    </tr>\n    <tr>\n      <td>junc1_R</td>\n      <td>CCTTAGGCCTTGCGAAGGAA</td>\n    </tr>\n    <tr>\n      <td>junc2_F</td>\n      <td>GCCTGCTTTCACCATTTCAGG</td>\n    </tr>\n    <tr>\n      <td>junc2_R</td>\n      <td>TATGAAAGGCTGGGTGAGGTG</td>\n    </tr>\n    <tr>\n      <td>Uba1_F</td>\n      <td>GAAGATCATCCCAGCCATTG</td>\n    </tr>\n    <tr>\n      <td>Uba1_R</td>\n      <td>TTGAGGGTCATCTCCTCACC</td>\n    </tr>\n  </tbody>\n</table>\n\n### Genomic DNA sequences of the Gm13030 locus\n\nThe genomic sequences from wild mice M. spretus (eight individuals), M. m. castaneus (TAI, 10 individuals), M. m. musculus from Kazakhstan (KAZ, eight individuals), M. m. musculus from Afghanistan (AFG, six individuals), M. m. musculus from Czech Republic (CZE, eight individuals), M. m. domesticus from Iran (IRA, eight individuals), M. m. domesticus from Germany (GER, 11 individuals), and M. m. domesticus from France (FRA, eight individuals) were retrieved from the whole genome sequencing data in Harr et al. (2016). The genomic sequences from mouse strains CAROLI/EiJ (M. caroli) and PAHARI/EiJ (M. pahari) were retrieved from the whole genome sequencing data in Thybert et al. (2018). For all these sequences, we manually checked and corrected the substitutions based on the original mapped reads.\n\nThe genomic sequences from wild mice M. mattheyi (four individuals) and M. spicilegus (four individuals) were determined by Sanger sequencing of the PCR fragments from the genomic DNAs purified with salt precipitation. The PCR primers listed below were designed according to the whole genome sequencing data in Neme and Tautz\u00a0(2016).\n\n<table>\n  <thead>\n    <tr>\n      <th>Fragment</th>\n      <th>Direction</th>\n      <th>Sequence (5\u2019&gt;3\u2019)</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td rowspan=\"2\">1</td>\n      <td>Forward</td>\n      <td>CAATATACAGACTTATACCAATGAAAACC</td>\n    </tr>\n    <tr>\n      <td>Reverse</td>\n      <td>TGGGATCCTTAAGGTTCATTGTG</td>\n    </tr>\n    <tr>\n      <td rowspan=\"2\">2</td>\n      <td>Forward</td>\n      <td>CCAGAGACCTCTGGATTTGC</td>\n    </tr>\n    <tr>\n      <td>Reverse</td>\n      <td>AAGGCACATCTCAAAGTAAAAGC</td>\n    </tr>\n  </tbody>\n</table>\n\n### Molecular distance analysis\n\nWhole genome sequencing data in Harr et al. (2016) and\u00a0Neme and Tautz (2016) were used to obtain the average distances for the taxa in this analysis. For each individual, the mean mapping coverage was calculated using ANGSD (0.921\u201310-g2d8881c) (Korneliussen et al., 2014) with the options \u2018-doDepth 1 -doCounts 1 -minQ 20 -minMapQ 30 -maxDepth 99999\u2019. Then, ANGSD (0.921\u201310-g2d8881c) was used to extract the consensus sequence for each population accounting for the number of individuals and the average mapping coverage per population (mean + three times standard deviation) with the options \u201c-doFasta 2 -doCounts 1 -maxDepth 99999 -minQ 20 -minMapQ 30 -minIndDepth 5 -setMinDepthInd 5 -minInd X1 -setMinDepth X2 -setMaxDepthInd X3 -setMaxDepth X4\u2019. X1, X2, X3, and X4 are listed below. The consensus sequences of the mouse populations were used to calculate the Jukes-Cantor distances for 10,000 random non-overlapping 25 kbp windows from the autosomes with APE (5.1, \u2018dist.dna\u2019 function) (Paradis et al., 2004). The average distances obtained in this way are provided in Figure 3\u2014figure supplement 2. The expected distances for Gm13030 were calculated by multiplying the length of the gap-free alignment with the average distances. The observed values were retrieved from the distance table of the alignments using Geneious (11.1.2).\n\nPairwise substitution comparisons for the Gm13030 reading frame were calculated with DnaSP (Librado and Rozas, 2009). For this, indels were excluded, stop codons were treated as 21st amino acid following the settings of the program. The results are included in Figure 3\u2014figure supplement 3.\n\n<table>\n  <thead>\n    <tr>\n      <th>Population</th>\n      <th>Mean coverage</th>\n      <th>Standard deviation of coverage</th>\n      <th>X1</th>\n      <th>X2</th>\n      <th>X3</th>\n      <th>X4</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>M. mattheyi</td>\n      <td>23.304</td>\n      <td>83.028</td>\n      <td>1</td>\n      <td>5</td>\n      <td>273</td>\n      <td>273</td>\n    </tr>\n    <tr>\n      <td>M. spicilegus</td>\n      <td>25.138</td>\n      <td>24.627</td>\n      <td>1</td>\n      <td>5</td>\n      <td>100</td>\n      <td>100</td>\n    </tr>\n    <tr>\n      <td>M. spretus</td>\n      <td>24.885</td>\n      <td>14.216</td>\n      <td>4</td>\n      <td>20</td>\n      <td>68</td>\n      <td>54</td>\n    </tr>\n    <tr>\n      <td>M. m. castaneus</td>\n      <td>14.015</td>\n      <td>7.573</td>\n      <td>5</td>\n      <td>25</td>\n      <td>37</td>\n      <td>370</td>\n    </tr>\n    <tr>\n      <td>M. m. musculus from Afghanistan</td>\n      <td>17.768</td>\n      <td>58.551</td>\n      <td>3</td>\n      <td>15</td>\n      <td>59</td>\n      <td>354</td>\n    </tr>\n    <tr>\n      <td>M. m. musculus from Kazakhstan</td>\n      <td>25.123</td>\n      <td>15.975</td>\n      <td>4</td>\n      <td>20</td>\n      <td>74</td>\n      <td>592</td>\n    </tr>\n    <tr>\n      <td>M. m. musculus from Czech Republic</td>\n      <td>24.338</td>\n      <td>14.103</td>\n      <td>4</td>\n      <td>20</td>\n      <td>67</td>\n      <td>536</td>\n    </tr>\n    <tr>\n      <td>M. m. domesticus from Iran</td>\n      <td>20.249</td>\n      <td>9.820</td>\n      <td>4</td>\n      <td>20</td>\n      <td>50</td>\n      <td>400</td>\n    </tr>\n    <tr>\n      <td>M. m. domesticus from Germany</td>\n      <td>21.639</td>\n      <td>10.518</td>\n      <td>4</td>\n      <td>20</td>\n      <td>54</td>\n      <td>432</td>\n    </tr>\n    <tr>\n      <td>M. m. domesticus from France</td>\n      <td>21.499</td>\n      <td>10.027</td>\n      <td>4</td>\n      <td>20</td>\n      <td>52</td>\n      <td>416</td>\n    </tr>\n  </tbody>\n</table>\n\n### Gm13030 knockout line\n\nGm13030 was originally targeted by the Knock-Out Mouse Project (KOMP), but the line was lost. Hence, we obtained a custom-made CRISPR/Cas9 line from the Mouse Biology Program (MBP). The guide RNA was designed to target the beginning of the ORF in the second coding exon and away from the splicing site (genomic DNA target: 5\u2019 TGCTCCATCTGCTTTTCAGG 3\u2019). We obtained three mosaic frameshift knockout mice (genetic background: C57BL/6N). Then we mated them with the wildtypes from the same litters to have heterozygous pups, and selected one female and one male with a heterozygous 7 bp deletion (chr4:138,873,545\u2013138,873,551) as the founding pair for further breeding and experiments. Primers for genotyping are listed below.\n\n<table>\n  <thead>\n    <tr>\n      <th>Allele (Fragment length)</th>\n      <th>Direction</th>\n      <th>Sequence (5\u2019&gt;3\u2019)</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td rowspan=\"2\">KO (502 bp)</td>\n      <td>Forward</td>\n      <td>CCTACCACATTGGGGCCATC</td>\n    </tr>\n    <tr>\n      <td>Reverse</td>\n      <td>TACAAGCCATAAAACCTCCTGGAT</td>\n    </tr>\n    <tr>\n      <td rowspan=\"2\">WT (353 bp)</td>\n      <td>Forward</td>\n      <td>TTTTCTGCTCCATCTGCTTTTCA</td>\n    </tr>\n    <tr>\n      <td>Reverse</td>\n      <td>AGTCACAGAGAAGGGGACGA</td>\n    </tr>\n  </tbody>\n</table>\n\n### Whole genome sequencing of the founding pair and off-target analysis\n\nThe genomic DNAs from the founding pair were purified with salt precipitation. Then the samples were prepared with Illumina TruSeq Nano DNA HT Library Prep Kit (Catalog no. FC-121\u20134003), and sequenced on HiSeq 2500 with TruSeq PE Cluster Kit v3-cBot-HS (Catalog no. PE-401\u20133001) and HiSeq Rapid SBS Kit v2 (500 cycles) (Catalog no. FC-402\u20134023). The reads were 2\u00a0\u00d7\u00a0250 bp in order to have good power to detect indels.\n\nWe followed GATK Best Practices (Van der Auwera et al., 2013) to call variants. Specifically, we mapped the reads to mouse genome GRCm38 (Waterston et al., 2002; Zerbino et al., 2018) with BWA (0.7.15-r1140) (Li and Durbin, 2009), and marked duplicates with Picard (2.9.0) (http://broadinstitute.github.io/picard), and realigned around the indels founded in C57BL/6NJ line (Keane et al., 2011) with GATK (3.7), and recalibrated base quality scores with GATK (3.7) using variants founded in C57BL/6NJ line (Keane et al., 2011) to get analysis-ready reads. We assessed coverage with GATK (3.7) and SAMtools (1.3.1) (Li et al., 2009), and the coverage of female was 35.48 X and the one of male was 35.09 X. High coverages also provided good power to detect indels. We called variants with GATK (3.7), and applied generic hard filters with GATK (3.7): \"QD\u00a0<2.0 || FS\u00a0>60.0 || MQ\u00a0<40.0 || MQRankSum\u00a0<\u221212.5 || ReadPosRankSum\u00a0<\u22128.0 || SOR\u00a0>\u00a03.0\u2019 for SNVs and \u2018QD\u00a0<2.0 || FS\u00a0>200.0 || ReadPosRankSum\u00a0<\u221220.0 || SOR\u00a0>\u00a010.0\u2019 for indels. We found 80375 SNVs and 73387 indels in the female and 81213 SNVs and 71857 indels in the male.\n\n347 potential off-target sites were predicted on http://crispr.mit.edu:8079/ based on mouse genome mm9. 343 of them still existed in mouse genome mm10 (GRCm38) after converting by liftOver (26 Jan. 2015) (Kent et al., 2002), and the four missing sites were ranked low anyway: 131, 132, 143, and 200. GATK (3.7) was used to look for variants found in the whole genome sequencing in the 100 bp regions around the 343 sites. In addition, the reads mapped to the regions around the top 20 sites were manually checked in both samples.\n\n### RNA-Seq and data analysis\n\nThe oviducts of 10\u201311 weeks old females from the Gm13030 line were carefully collected and immediately frozen in liquid nitrogen. Then, total RNAs were purified using QIAGEN RNeasy Microarray Tissue Mini Kit (Catalog no. 73304), and prepared using Illumina TruSeq Stranded mRNA HT Library Prep Kit (Catalog no. RS-122\u20132103), and sequenced using Illumina NextSeq 500 and NextSeq 500/550 High Output v2 Kit (150 cycles) (Catalog no. FC-404\u20132002). All procedures were performed in a standardized and parallel way to reduce experimental variance.\n\nRaw sequencing outputs were converted to FASTQ files with bcl2fastq (2.17.1.14), and reads were trimmed with Trimmomatic (0.35) (Bolger et al., 2014). Only paired-end reads left were used for following analyses. We mapped the trimmed reads to mouse genome GRCm38 (Waterston et al., 2002; Zerbino et al., 2018) with HISAT2 (2.0.4) (Kim et al., 2015) and SAMtools (1.3.1) (Li and Durbin, 2009), and took advantage of the mouse gene annotation in Ensembl (Version 86) by using the --ss and --exon options of hisat2-build. We counted fragments mapped to the genes annotated by Ensembl (Version 86) with HTSeq (0.6.1p1) (Anders et al., 2015), and performed differential expression analysis with DESeq2 (1.14.1) (Love et al., 2014). Principle component analysis and hierarchical clustering with Euclidean distance and complete agglomeration method on the variance stabilized transformed fragment counts were also performed using DESeq2 (1.14.1) to assign the 24 samples into three clusters.\n\n### Droplet digital PCR (the quantitative PCR assay)\n\nThe relative expression levels of three Dcpp genes (Dcpp1, Dcpp2, and Dcpp3) in the six cluster 1 samples of the oviducts were further validated by droplet digital PCR. For each sample, 20 \u00b5l first strand cDNA solution was obtained using the Thermo Scientific RevertAid First Strand cDNA Synthesis Kit (Catalog no. K1622) by targeting poly-A mRNAs with oligo dT primers from 1 \u03bcg RNAs. Then the cDNA samples were diluted with water 1:400 for the PCR reactions. The information of probes and primers for three Dcpp genes, and Uba1 (the reference gene) are listed below. The sequences of the probe and primers for Dcpp genes were carefully designed to target all three genes at the same time. All PCR reactions were run with the same master mix and in the same plate. The PCR reaction mixture was prepared from 12.5 \u03bcL Bio-Rad ddPCR Supermix for Probes (Catalog no. 1863010), 1.25 \u03bcL oligo mix (5 \u03bcM probes, 18 \u03bcM forward primers, and 18 \u03bcM reverse primers) for Dcpp genes, 1.25 \u03bcL oligo mix for Uba1, and 10 \u03bcL cDNA dilution. The oil droplets containing 20 \u03bcL of the reaction mixture for each sample were generated by Bio-Rad QX100 Droplet Generator (Catalog no. 1863002). After droplet generation, the plate was sealed with a pierceable foil heat seal using Bio-Rad PX1 PCR Plate Sealer (Catalog no. 1814000) and then placed on a thermal cycler for amplification. The thermal cycling conditions were: 95\u00b0C for 10 min (one cycle), 94\u00b0C for 30 s and 56\u00b0C for 60 s (40 cycles), 98\u00b0C for 10 min (one cycle). After PCR, the 96-well PCR plate was loaded into Bio-Rad QX100 Droplet Reader (Catalog no. 1863003) which reads the signals in the droplets. Raw data were analyzed with Bio-Rad QuantaSoft analysis software provided with the Bio-Rad QX100 Droplet Reader. The relative expression level of Dcpp genes in each sample was calculated by dividing the concentration of Dcpp genes by the concentration of Uba1. For each sample, two independent technical replicates were performed.\n\n<table>\n  <thead>\n    <tr>\n      <th>Gene</th>\n      <th>Oligo</th>\n      <th>5\u2019 modification</th>\n      <th>Sequence (5\u2019&gt;3\u2019)</th>\n      <th>3\u2019 modification</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td rowspan=\"3\">Three Dcpp genes</td>\n      <td>Probe</td>\n      <td>FAM</td>\n      <td>GGACGGTCAAGTGTATGGCT</td>\n      <td>BHQ1</td>\n    </tr>\n    <tr>\n      <td>Forward primer</td>\n      <td></td>\n      <td>GATTATCATGGTCCAGAAGTTGGA</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Reverse primer</td>\n      <td></td>\n      <td>ATGTGCTCTTCCTTAGACAGTCTG</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td rowspan=\"3\">Uba1</td>\n      <td>Probe</td>\n      <td>HEX</td>\n      <td>CTGAACCTCTTGCTGCACCT</td>\n      <td>BHQ2</td>\n    </tr>\n    <tr>\n      <td>Forward primer</td>\n      <td></td>\n      <td>GAAGATCATCCCAGCCATTG</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Reverse primer</td>\n      <td></td>\n      <td>TTGAGGGTCATCTCCTCACC</td>\n      <td></td>\n    </tr>\n  </tbody>\n</table>\n\n### Fertility test\n\nIn addition to using the fertility data from the stock breeding of the Gm13030 animals, dedicated mating pairs were set up for the fertility test. The female and male in each pair were 8\u20139 weeks old when the mating was started. All the males were wildtype, and 10 females were homozygous knockout and the other 10 were wildtype. The time (days) until having the first and second litters, the numbers of pups of the first and second litters, and whether the pups were eaten later for each mating pair were carefully observed and recorded by animal caretakers who were blind for the genotypes. Figure 5\u2014source data 1 provides the details of the mice, the individual phenotype scores and the notes on the losses of litters, both for the stock breeding, as well as the specifically set up pairs.\n",
+      "created_at": "2025-12-02T11:48:41.595878Z"
+    },
+    {
+      "id": "100089a2-9305-42d9-ae76-84f3c1867ec7",
+      "submission_id": "2b421885-aae2-49ed-ae86-00665bb35a0b",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- George H Perry, Pennsylvania State University United States\n\nReviewers:\n- George H Perry, Pennsylvania State University United States\n- Douglas B Menke, University of Georgia United States\n\n## Review text\n\nDOI: [10.7554/eLife.44392.023](https://doi.org/10.7554/eLife.44392.023)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Studying the dawn of de novo gene emergence in mice reveals fast integration of new genes into functional networks\" for consideration by eLife. Your article has been reviewed by four peer reviewers, including George H Perry as the Reviewing Editor and Reviewer #1, and the evaluation has been overseen by Detlef Weigel as the Senior Editor. The following individual involved in review of your submission has agreed to reveal his identity: Douglas B Menke (Reviewer #4).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nYou present a knockout study of three putative mouse lineage-specific de novo (not originating from duplication) emergent protein-coding genes, with an integrative transcriptomic and phenotypic analysis. The reviewers praised the aims of the study; this is a potentially fundamentally insightful research program into the functional mechanics of an important evolutionary process that has never previously been studied at nearly this depth in vertebrates. However, we also collectively identified several significant limitations of the current study design and presentation of the manuscript, some of which could potentially be addressed in a revision, although included among the comments is one request for new experimental data that may not be feasible in a reasonable timeframe (but we choose to present the request and the option, in case something can be done in a cell line or in case additional data are already in hand). For another major concern, related to the specificity of two of the three knockouts, we suggest a revised manuscript presentation that would focus on the third knockout (otherwise, updating and repeating the experiments for the first two knockouts would be well beyond a reasonable scope of revision; although note that following a straightforward analytical verification, we suggest that one of these two experiments could still be secondarily described and discussed in the paper). We very much hope that you will consider such a strategy. If you choose to address our essential revisions and resubmit your manuscript to eLife, a thorough re-evaluation would be required since the perceived definitiveness of the results could change depending on the revised results.\n\nEssential revisions:\n\n1) For two of the gene knockout models used for this study, Udng1 and Udng2, the introduced mutations are not small and they overlap and/or are nearby different annotated transcripts. While the specific details and genomic contexts are not provided by the authors (this information should be provided and illustrated in the revision, and carefully discussed), for example the Undg1 knockout mutation used in this study is a deletion >3kb that also removes part of the annotated ORF A930004D18Rik. Udng2 is located directly upstream of the zinc finger protein encoding Zpf169. Therefore, based on current results it is uncertain whether reported effects are explained by the knockout of Udng1 and 2, knockout of (in one case) the overlapping transcript, removal of functional regulatory sequence for neighboring transcripts, or combinations thereof.\n\n2) The CRISPR/Cas9 induced Udng3 knockout is a 7bp deletion, less likely than the Udng1 and 2 knockouts to have incidental effects on the expression of other genes which could instead explain the findings. We suggest that the authors focus the manuscript on Udng3 primarily, but with two additional requests.\n\ni) Verify perturbed Dcpp expression with Udng3 knockout by an independent experimental analysis (this is the additional experimental requirement mentioned above). The knockout effects on expression levels of Dcpp family genes, alongside the interesting discussion context of the pseudogenization of both Udng3 and Dcpp3 in M. m. domesticus, are potentially exciting and valuable components of the study, but one that reviewers determined should be verified given questions about other results.\n\nii) Verify that the expression levels of genes neighboring Udng3 are not affected by the 7 bp deletion.\n\n3) If desired, more speculative results on Udng2 could still be offered secondarily, as long as the authors verify that expression levels of the neighboring zinc finger gene are not altered by the deletion.\n\n4) The manuscript should be revised (from the interpretation through to the discussion) to acknowledge that prior to the origin of these ORFs, the non-coding sequences might have had some function and, in fact, that any such ancestral non-coding function might still exist.\n\n5) The phenotyping and behavioral study designs, data, and results are under-reported, and the reviewers raised questions about the statistical analyses performed on these data. How many (and which specific) morphological phenotypes and behavioral traits were measured and tested for each knockout experiment? What were the methods/experimental designs for how each measurement was collected or observation recorded? Importantly, the authors should introduce a multiple test-correction framework and revise their discussion of the results accordingly. Please also provide the individual-level data for each variable tested.\n\n6) A specific concern was raised about the reproductive phenotype highlighted from the Udng3 experiment, which needs to be addressed. Specifically, a large timing difference between the birth of the first and second litters (23 days for KO vs 36 for WT) is reported. Yet WT females often ovulate within a day of giving birth; if a male is present, mating can produce a second litter within 21 days. If the female does not ovulate or mating is not successful, then ovulation is suppressed while the female is lactating, causing a substantial delay in the timing of the next pregnancy. Given the established non-continuous nature of pregnancy intervals in this model system, it is unclear that the authors have robustly identified a reproductive phenotype from these data.\n\n7) The evolutionary analysis of gene gain needs to be strengthened beyond the current 'intact/not intact' assessment presented in Figure 2, and should also include an expanded set of available genomes in the comparison. At present it is assumed that the functional genes emerged in the M. musculus lineage following divergence from common ancestors shared with other studied taxa, yet without more detailed analysis it remains possible that these genes emerged earlier and then accumulated pseudogenizing mutations in the other lineage(s). Here, the analysis should include the specific pattern of ancestral vs. derived mutations that open up (or maintain as closed) the reading frame.\n\nIn addition, the authors use an older version of the mouse genome annotation, Ensembl 80 (from 2015), while the current is Ensembl 95. Between these two versions a new set of mouse species annotations have become available, which should be included in the revised Figure 2 analysis and will help inform the study. For example, the 3 genes studied in this paper have annotated protein coding orthologs in Mus caroli (3 MY divergence with M. musculus) and M. Pahari (6 MY), suggesting earlier emergence timing for these genes than currently presented in the paper.\n\n8) In the initial analysis of the ENCODE RNA-seq data a very low transcription threshold of 0.1 FPKM was used, whereas most mouse protein coding genes have expression levels higher than 5 FPKM in the 35 tissues investigated. With such a low threshold, pervasive transcription of much of the genome could potentially be observed. The authors should comment on this issue, their choice of threshold, and consider further analyses to justify / confirm that transcripts would not be spuriously identified.\n\nThe process used to select the three genes for detailed study from among the larger set of candidates should be detailed more precisely, especially given that the expression levels for two of the loci are relatively low. Were these the only three candidates meeting all of the (general) criteria mentioned? Are here any additional data (e.g. antibody staining of tissues) that protein products are produced?\n\n9) The transcriptome analysis from the knockout experiments should be strengthened. Especially, it would be more convincing that the magnitude of the observed differences and the specific results themselves do not simply reflect experimental noise (i.e. on a genomic scale, sets of differentially expressed transcripts are always observed even between sets of technical replicates) if the authors were to compare two sets of control experiments to each other, or for example to randomly select WT and KO sample size-matched sets of individuals from the whole sample (which can then be permuted), and evaluate accordingly.\n\n[Editors' note: further revisions were requested prior to acceptance, as described below.]\n\nThank you for submitting your article \"Studying the dawn of de novo gene emergence in mice reveals fast integration of new genes into functional networks\" for consideration by eLife. Your article has been reviewed by six peer reviewers, including George H Perry as the Reviewing Editor and Reviewer #1, and the evaluation has been overseen by Detlef Weigel as the Senior Editor. The following individuals involved in review of your submission have agreed to reveal their identity: Douglas B Menke (Reviewer #4); Julian Christians (Reviewer #5).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nYour revised manuscript was first reviewed by the four reviewers of the original submission. While stark improvements on multiple fronts were noted, three major concerns \u2013 one related to each of the three de novo gene experiments \u2013 remained. These concerns are detailed below. In two cases, we sought specific input from reviewers with appropriate expertise to help finalize our decision.\n\nFirst, the 3kb Undg1 knockout also removes two strongly conserved non-coding sequences (e.g. chr2:18,026,405-18,026,620 of the mouse mm10 assembly), the potentially-relevant functional consequences of which are not mentioned. Concern about the inability of this experimental design to account for the consequences of removal of DNA sequence involved in gene regulatory processes was mentioned briefly in the previous decision letter, with deeper investigation now revealing these specific conserved sequences.\n\nAs an editor, while I appreciate that efficient techniques to effectively limit knockout footprints have only recently become practicable, the appropriate interpretative approach should still be to attribute any observed phenotypic consequences to simultaneously affected, deeply-conserved sequences than to the absence of a protein encoded by a de novo gene. This null and conservative hypothesis should only be rejected alongside convincing evidence to the contrary. In the absence of any understanding of the biological functions of the de novo gene (i.e. one of the goals of this study) this is quite a difficult proposition within the bounds of the present experiment. Since your original interpretations may ultimately be proven correct, and because these experimental results could be a key part of that process and of developing understandings of de novo gene evolution, I still encourage the inclusion of the Undg1 experiment as a secondary and tentative result, with caveats leading the way.\n\nSecond, the proximity of the Undg2 knockout to the zinc finger protein-encoding Zpf169 gene led to concern expressed in the previous decision letter that expression levels of this gene might be affected, which could thus be a more likely explanation for the phenotypic observations. We had requested your evaluation of Zpf169 expression levels from the RNA-seq data. Indeed, Zpf169 expression is significantly reduced (with approximately 0.75-fold expression) in the Undg2 knockout experiment. In the revision, you conclude that an expression difference of this magnitude would be very unlikely to result in the observed phenotypic effects because Zpf169 is a KRAB-Zn-finger protein, family members of which bind to transposable elements to silence them. After seeking further input, we conclude that this statement is unwarranted. Even if Zpf169 is ultimately confirmed to be TE-controlling, such loci can have marked transcriptome effects across various developmental stages and cell types.\n\nThird, your revised analysis of the reproductive phenotype data from the Undg3 targeted knockout experiment was considered a substantial improvement. An additional reviewer described the revised analytical approach as appropriate and considered the results compelling, helping to resolve our remaining questions concerning this experiment.\n\nBased on this evaluation process, I am recommending that your manuscript be considered further for publication if you choose to make the following essential revisions. The first three essential revision points are summary conclusions based on the above detailed report of the review process.\n\nEssential revisions:\n\n1) Focus the manuscript on the Undg3 experiments and results.\n\n2) Remove the Undg2 knockout experiment and results from the main text and figures of the paper. If presented in supplementary information to help support the description of the overall process of the investigation, the strong (and null hypothesis) possibility that phenotypic observations are explained by the Zpf169 expression change should be used to help frame the presentation and discussion.\n\n3) The Undg1 knockout experiment and results could be presented as secondary in the main text or as part of the supplementary information. In either case the approach described above should be followed.\n\n4) The selection process for the de novo genes chosen for detailed examination (e.g. as discussed in the responses to reviewer comments) should be presented more fully in the main text of the paper.\n\n5) Figure 2 should differentiate between the total absence of a gene from the presence of a disabled version of the gene.\n\n[Editors' note: a further round of revisions were suggested.]\n\nThank you for resubmitting your work entitled \"A de novo evolved gene in the house mouse regulates female pregnancy cycles\" for further consideration at eLife. Your revised article has been evaluated by Detlef Weigel (Senior Editor), George Perry (Reviewing Editor), and four reviewers.\n\nYou extensively revised your manuscript in response to reviewer and editor feedback, and when I read the manuscript I am impressed with the current approach and results. I see a thorough, multi-step, novel investigation into a difficult-to-study phenomenon (de novo gene emergence), with analyses spanning from genome-scale to locus specific, and approaches across the spectrum from transcriptomic to detailed molecular biology to in vivo.\n\nWhile the reviewers were generally pleased with how the paper was revised, there remains some skepticism concerning the ultimate in vivo reproductive phenotype (and they also raise some specific concerns and questions, including on the newly-presented data, that require your attention; see below). However, I do recognize the multiple in vitro results that altogether help strengthen that case, and I (George Perry) take responsibility for the decision to proceed with the understanding that (as always) future experiments may further clarify the biology. Overall, I conclude that the multiple layers of valuable insight that will provided by this eventual publication are likely to represent a substantial advance in this field of research, and thus I would encourage you to consider the below remaining issues to be addressed before acceptance.\n\nEssential revisions from reviewer comments:\n\n1) A data reporting / statistical inconsistency was identified by that needs to be addressed: The text states that they set up 10 mating pairs with homozygous mutant females and 10 mating pairs with WT females. However, Figure 5 (and the supplemental data) show that they actually collected data from 16 mating pairs with homozygous females, 13 matings pairs with WT females, and 7 mating pairs with heterozygous females. The p-value of 0.042 was obtained by combining the WT and Het data and comparing it against the homozygous mutant data. I get the same p-value (0.042) when I used the same statistical test used by the authors (two-tailed Wilcoxon rank sum test). When only WT is compared against mutant, the p-value is 0.12.\n\n2) The authors have observed that deletion of Gm13030 affects gene expression in only one phase of the estrous cycle (when there is high progesterone receptor and estrogen receptor 1 expression, and low G protein-coupled estrogen receptor 1 expression). How does this phase correspond to the period between ovulation and implantation (when the deletion would presumably exert its effect)?\n\n3) Subsection \u201cTranscriptome and phenotype changes\u201d: \"We identified a possible direct link between the identified phenotype of a shorter gestation length in the knockouts\" Gestation length (i.e., between fertilization and birth) was not measured; a difference was observed in the timing between the birth of the first and second litter.\n\n4) The authors suggest that Gm13030 may be involved in a parent-offspring conflict of interest, i.e., \"this is a system where a selfish tendency of embryos in expense of the resources of the mothers could develop.\" (subsection \u201cTranscriptome and phenotype changes\u201d and related statements in this section and \u201cMale bias versus female bias\u201d). However, it does not appear that there is a conflict of interest here, and it is not clear how such a conflict might work. The pups that are born earlier are more likely to be cannibalized/ neglected by the mother, in addition to being more likely to compete with older siblings. Thus, there is potentially a trade-off between having a second litter quickly (more reproduction sooner) vs waiting (when second litters will be more likely to survive), but this isn't a conflict between parent and offspring. Parent-offspring conflicts generally involve situations where individual offspring would like the parent to invest more in them, whereas the parent would like to preserve resources for other offspring. While traveling down the oviduct, it is not clear how conceptuses could extract more resources from the mother in a way that compromised the mother's future reproduction without impacting their own survival.\n\n5) Provide a clearer justification/statement explaining why you selected Gm13030 for detailed analysis from the broader set of candidates and/or why you desired to study the function of a gene expressed in the female reproductive tract.\n\n6) Figure 3 describes the expected number of substitutions expected between species. However, the number of coding and non-coding substitutions should be provided separately to support the statement \"there is no bias towards coding mutations\".\n",
+      "created_at": "2025-12-02T11:48:41.595878Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T11:48:41.595878Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T11:48:41.595878Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "679579e3-ec6a-4518-9705-677c27af2e9b",
+      "content_id": "4af041a6-e3cb-4df7-8244-6b3abb89f084",
+      "claim_id": "C1",
+      "claim": "119 predicted protein-coding genes from intergenic regions occur only in the mouse genome, but not in rats or humans.",
+      "claim_type": "EXPLICIT",
+      "source": "We were able to identify 119 predicted protein-coding genes from intergenic regions that occur only in the mouse genome, but not in rats or humans.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by the phylostratigraphy and synteny-based analysis described in the methods section.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:48:41.595878Z"
+    },
+    {
+      "id": "bec9b02b-e86d-4f1b-8b82-846a847a2d2a",
+      "content_id": "4af041a6-e3cb-4df7-8244-6b3abb89f084",
+      "claim_id": "C2",
+      "claim": "110 out of 119 candidate de novo genes have direct evidence for translation.",
+      "claim_type": "EXPLICIT",
+      "source": "We found for 110 out of the 119 candidate genes direct evidence for translation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by ribosome profiling and peptide mass spectrometry datasets analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:48:41.595878Z"
+    },
+    {
+      "id": "07c6f186-c6df-4ceb-aa90-eedcb7220786",
+      "content_id": "4af041a6-e3cb-4df7-8244-6b3abb89f084",
+      "claim_id": "C3",
+      "claim": "Testis and brain express the relatively largest abundance of candidate de novo genes.",
+      "claim_type": "EXPLICIT",
+      "source": "Testis and brain express the relatively largest abundance of these candidate de novo genes, while the digestive system and liver express the lowest (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by ENCODE RNA-Seq data analysis shown in Figure 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:48:41.595878Z"
+    },
+    {
+      "id": "d6b90ed5-8ae1-4528-8bee-0281d23163b7",
+      "content_id": "4af041a6-e3cb-4df7-8244-6b3abb89f084",
+      "claim_id": "C4",
+      "claim": "De novo genes have lower expression levels than other protein-coding genes.",
+      "claim_type": "EXPLICIT",
+      "source": "Expression levels of these genes are generally lower than those of other protein-coding genes (FPKM medians: 0.63 vs. 8.18; two-tailed Wilcoxon rank sum test, p-value<2.2 \u00d7 10\u221216; Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by statistical comparison of FPKM values between de novo and other protein-coding genes.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:48:41.595878Z"
+    },
+    {
+      "id": "74cea9f1-77ba-4042-8cf9-185fb4103b30",
+      "content_id": "4af041a6-e3cb-4df7-8244-6b3abb89f084",
+      "claim_id": "C5",
+      "claim": "De novo genes have fewer exons than other protein-coding genes.",
+      "claim_type": "EXPLICIT",
+      "source": "They have fewer exons (medians: 2 vs. 7; two-tailed Wilcoxon rank sum test, p-value<2.2 \u00d7 10\u221216)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by statistical comparison of exon numbers.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:48:41.595878Z"
+    },
+    {
+      "id": "732f601e-0f4a-48aa-9252-48833231d832",
+      "content_id": "4af041a6-e3cb-4df7-8244-6b3abb89f084",
+      "claim_id": "C6",
+      "claim": "De novo genes have fewer coding exons than other protein-coding genes.",
+      "claim_type": "EXPLICIT",
+      "source": "and fewer coding exons than other protein-coding genes (medians: 1 vs. 6; two-tailed Wilcoxon rank sum test, p-value<2.2 \u00d7 10\u221216).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by statistical comparison of coding exon numbers.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:48:41.595878Z"
+    },
+    {
+      "id": "d4eb0af0-83fb-42b1-bb55-2e4df25a1380",
+      "content_id": "4af041a6-e3cb-4df7-8244-6b3abb89f084",
+      "claim_id": "C7",
+      "claim": "De novo gene proteins are shorter than other proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "The lengths of their proteins are shorter than those of other proteins (medians: 125 vs. 397; two-tailed Wilcoxon rank sum test, p-value<2.2 \u00d7 10\u221216).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by statistical comparison of protein lengths.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:48:41.595878Z"
+    },
+    {
+      "id": "742d86b9-1386-4339-aba8-42bd736b7cf7",
+      "content_id": "4af041a6-e3cb-4df7-8244-6b3abb89f084",
+      "claim_id": "C8",
+      "claim": "De novo gene proteins are predicted to be less disordered than other proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "However, their proteins are predicted to be less disordered than other proteins (medians: 0.20 vs. 0.27; two-tailed Wilcoxon rank sum test, p-value=0.0024; Figure 1C)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by intrinsic structural disorder score predictions and statistical comparison.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:48:41.595878Z"
+    },
+    {
+      "id": "21e6bddd-f4cc-4708-8c9d-0136450e95f9",
+      "content_id": "4af041a6-e3cb-4df7-8244-6b3abb89f084",
+      "claim_id": "C9",
+      "claim": "De novo gene proteins are equally hydrophobic to other proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "and equally hydrophobic to other proteins (medians: 0.56 vs. 0.57; two-tailed Wilcoxon rank sum test, p-value=0.52; Figure 1D)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by hydrophobic cluster analysis and statistical comparison.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:48:41.595878Z"
+    },
+    {
+      "id": "092459d2-5416-4781-91b2-62e898ec8d0f",
+      "content_id": "4af041a6-e3cb-4df7-8244-6b3abb89f084",
+      "claim_id": "C10",
+      "claim": "Gm13030 is only expressed in the ovary and subcutaneous adipose tissue according to ENCODE RNA-Seq data.",
+      "claim_type": "EXPLICIT",
+      "source": "According to the ENCODE RNA-Seq data, Gm13030 is only expressed in two tissues, the ovary of 8 weeks old females (FPKM 0.135), as well as the subcutaneous adipose tissue of 8 weeks old animals (FPKM 0.115) (Figure 1\u2014source data 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by ENCODE RNA-Seq data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:48:41.595878Z"
+    },
+    {
+      "id": "1a8e2d2a-07f1-45e4-97bd-fb2f5d23507c",
+      "content_id": "4af041a6-e3cb-4df7-8244-6b3abb89f084",
+      "claim_id": "C11",
+      "claim": "Gm13030 is not expressed in the ovary, but predominantly in the oviduct.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that Gm13030 is not expressed in the ovary, but predominantly in the oviduct with only a weak signal from the adjacent fat pad (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by reverse transcription PCR experiments on carefully prepared tissue samples.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:48:41.595878Z"
+    },
+    {
+      "id": "cfaf5c68-e1a3-45cf-ac28-1ce29803d7e4",
+      "content_id": "4af041a6-e3cb-4df7-8244-6b3abb89f084",
+      "claim_id": "C12",
+      "claim": "The Gm13030 ORF emerged between 2-4 million years ago.",
+      "claim_type": "EXPLICIT",
+      "source": "But since both enabler mutations are at least seen in M. spicilegus, we place the emergence of the Gm13030 ORF at this node, that is between 2\u20134 million years ago.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on phylogenetic analysis of enabler mutations across mouse species.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:48:41.595878Z"
+    },
+    {
+      "id": "3d9c746c-e837-44bd-8cfd-bcef9162ae77",
+      "content_id": "4af041a6-e3cb-4df7-8244-6b3abb89f084",
+      "claim_id": "C13",
+      "claim": "All three M. m. domesticus populations carry a 17nt deletion that leads to a disruption of the Gm13030 reading frame.",
+      "claim_type": "EXPLICIT",
+      "source": "Most notably, all three M. m. domesticus populations carry a 17nt deletion that leads to a disruption of the reading frame.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by sequence alignment analysis shown in Figure 3 and Figure 3\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:48:41.595878Z"
+    },
+    {
+      "id": "b0003e92-ba62-4ba1-94c9-b110f10a880b",
+      "content_id": "4af041a6-e3cb-4df7-8244-6b3abb89f084",
+      "claim_id": "C14",
+      "claim": "Only M. m. musculus and M. m. castaneus populations have retained the Gm13030 ORF after its emergence.",
+      "claim_type": "EXPLICIT",
+      "source": "Hence, after the emergence of the Gm13030 ORF, only the M. m. musculus and M. m. castaneus populations have retained it.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on phylogenetic analysis of secondary disablers across mouse populations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:48:41.595878Z"
+    },
+    {
+      "id": "7114f5dc-f890-4b64-99c4-a38cd0009dfc",
+      "content_id": "4af041a6-e3cb-4df7-8244-6b3abb89f084",
+      "claim_id": "C15",
+      "claim": "There is no traceable signal of positive selection on the Gm13030 protein after the emergence of the ORF.",
+      "claim_type": "EXPLICIT",
+      "source": "Hence, we conclude that there is no traceable signal of positive selection on the protein after the emergence of the ORF.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on analysis of coding vs. non-coding substitution ratios shown in Figure 3 and Figure 3\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:48:41.595878Z"
+    },
+    {
+      "id": "02ed4252-6d64-427c-9d16-0e808ce82f6b",
+      "content_id": "4af041a6-e3cb-4df7-8244-6b3abb89f084",
+      "claim_id": "C16",
+      "claim": "The CRISPR/Cas9 treatment introduced a 7 bp deletion at the beginning of the Gm13030 ORF causing a frameshift and premature stop codon.",
+      "claim_type": "EXPLICIT",
+      "source": "The CRISPR/Cas9 treatment introduced a 7 bp deletion at the beginning of the ORF (position 41\u201347) causing a frameshift and a premature stop codon in exon 2 (Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by sequencing verification of the deletion.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:48:41.595878Z"
+    },
+    {
+      "id": "8d6bef49-ee73-4d50-bfcf-51621bb2d128",
+      "content_id": "4af041a6-e3cb-4df7-8244-6b3abb89f084",
+      "claim_id": "C17",
+      "claim": "No off-target variants were found in the 100 bp regions around the 343 predicted off-target sites in the genome sequencing of the founding pair.",
+      "claim_type": "EXPLICIT",
+      "source": "However, in our genome sequencing results, we found no variant located in the 100 bp regions around the genome-wide 343 predicted off-target sites.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by whole genome sequencing analysis of the founding pair.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:48:41.595878Z"
+    },
+    {
+      "id": "f91c8587-10c4-452e-9862-8ff7f5586fe1",
+      "content_id": "4af041a6-e3cb-4df7-8244-6b3abb89f084",
+      "claim_id": "C18",
+      "claim": "The Gm13030 knockout line is homozygous viable and fertile.",
+      "claim_type": "EXPLICIT",
+      "source": "The Gm13030 knockout line is homozygous viable and fertile.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on observation of the knockout line.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:48:41.595878Z"
+    },
+    {
+      "id": "14456a30-cecf-4354-9e5f-120a0954a677",
+      "content_id": "4af041a6-e3cb-4df7-8244-6b3abb89f084",
+      "claim_id": "C19",
+      "claim": "No differentially expressed genes were found between knockouts and wildtypes in the initial analysis involving all oviduct samples.",
+      "claim_type": "EXPLICIT",
+      "source": "In the initial analysis involving all samples, we found no differentially expressed gene between knockouts and wildtypes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on RNA-Seq differential expression analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:48:41.595878Z"
+    },
+    {
+      "id": "79ff48cf-fdce-4c2e-8fcc-3f08bb9bb225",
+      "content_id": "4af041a6-e3cb-4df7-8244-6b3abb89f084",
+      "claim_id": "C20",
+      "claim": "The oviduct transcriptomes cluster into three major groups corresponding to different phases of the estrous cycle.",
+      "claim_type": "EXPLICIT",
+      "source": "Given that the expression in oviducts should be fluctuating according to estrous cycle, we clustered the transcriptomes of the individuals based on both principle component analysis (PCA) and hierarchical clustering methods, which allowed to distinguish three major clusters (Figure 4A and B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by PCA and hierarchical clustering analysis shown in Figure 4A and B.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:48:41.595878Z"
+    },
+    {
+      "id": "e4d35821-349b-4669-ac45-ca14774284bf",
+      "content_id": "4af041a6-e3cb-4df7-8244-6b3abb89f084",
+      "claim_id": "C21",
+      "claim": "21 genes are differentially expressed in cluster 1 between knockout and wildtype samples.",
+      "claim_type": "EXPLICIT",
+      "source": "We found 21 differentially expressed genes in cluster 1 (DESeq2, adjusted p-value\u22640.01; fold changes range from 0.75 to 1.59; Table 1), but still none for clusters 2 and 3.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by DESeq2 differential expression analysis on cluster 1 samples.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:48:41.595878Z"
+    },
+    {
+      "id": "1eeddb73-c2ea-4e42-84e2-0eb27839c91e",
+      "content_id": "4af041a6-e3cb-4df7-8244-6b3abb89f084",
+      "claim_id": "C22",
+      "claim": "Gm13030 acts during the phase of high progesterone receptor and estrogen receptor 1 expression, and low G protein-coupled estrogen receptor 1 expression.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that Gm13030 acts during the phase of high progesterone receptor and estrogen receptor 1 expression, and low G protein-coupled estrogen receptor 1 expression, corresponding to proestrus or the starting of estrus, that is, the phase where females start to become receptive for implantation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the expression patterns of sex hormone receptor genes in cluster 1 shown in Figure 4C-E.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:48:41.595878Z"
+    },
+    {
+      "id": "127c1f56-0a08-4f4f-944b-8194128adbe9",
+      "content_id": "4af041a6-e3cb-4df7-8244-6b3abb89f084",
+      "claim_id": "C23",
+      "claim": "Dcpp1, Dcpp2, and Dcpp3 are significantly upregulated in knockout samples in cluster 1.",
+      "claim_type": "EXPLICIT",
+      "source": "The top three differentially expressed genes belong all to a single young gene family, namely Dcpp1, Dcpp2 and Dcpp3, all three of which were significantly up-regulated in the knockout samples (DESeq2, fold changes: 1.45 for Dcpp1, 1.47 for Dcpp2, and 1.59 for Dcpp3, Figure 4\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by DESeq2 analysis and confirmed by quantitative PCR assay.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:48:41.595878Z"
+    },
+    {
+      "id": "76736142-1c48-448a-a459-bb441c5f556f",
+      "content_id": "4af041a6-e3cb-4df7-8244-6b3abb89f084",
+      "claim_id": "C24",
+      "claim": "Dcpp genes are expressed in female and male reproductive organs and the thymus.",
+      "claim_type": "EXPLICIT",
+      "source": "These genes are expressed in female and male reproductive organs and the thymus, and were previously found to function in oviducts to stimulate pre-implantation embryo development (Lee et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to previous work by Lee et al., 2006.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:48:41.595878Z"
+    },
+    {
+      "id": "1ac44568-25ca-4e6a-a21d-6336eed5a60a",
+      "content_id": "4af041a6-e3cb-4df7-8244-6b3abb89f084",
+      "claim_id": "C25",
+      "claim": "Dcpp genes function in oviducts to stimulate pre-implantation embryo development.",
+      "claim_type": "EXPLICIT",
+      "source": "These genes are expressed in female and male reproductive organs and the thymus, and were previously found to function in oviducts to stimulate pre-implantation embryo development (Lee et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to previous work by Lee et al., 2006.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:48:41.595878Z"
+    },
+    {
+      "id": "16b018c6-c09c-47d8-98ff-212fff27c134",
+      "content_id": "4af041a6-e3cb-4df7-8244-6b3abb89f084",
+      "claim_id": "C26",
+      "claim": "Rxfp1 is the receptor for the pregnancy hormone relaxin.",
+      "claim_type": "EXPLICIT",
+      "source": "The fourth gene in the list of significantly changed expression is Rxfp1, the receptor for the pregnancy hormone relaxin.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on established scientific knowledge about Rxfp1.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:48:41.595878Z"
+    },
+    {
+      "id": "00b13771-685d-4a80-8a48-95142d1333f2",
+      "content_id": "4af041a6-e3cb-4df7-8244-6b3abb89f084",
+      "claim_id": "C27",
+      "claim": "Relaxin signaling is involved in regulation of the reproductive cycle.",
+      "claim_type": "EXPLICIT",
+      "source": "Relaxin signaling is involved in a variety of cellular processes (Valkovic et al., 2019), whereby the regulation of the reproductive cycle is one of them (Anand-Ivell and Ivell, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Valkovic et al., 2019 and Anand-Ivell and Ivell, 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:48:41.595878Z"
+    },
+    {
+      "id": "9a67dc34-920b-4808-9c3d-22d29ceb4a8d",
+      "content_id": "4af041a6-e3cb-4df7-8244-6b3abb89f084",
+      "claim_id": "C29",
+      "claim": "Homozygous knockout females produce their second litter faster than wildtype or heterozygous females.",
+      "claim_type": "EXPLICIT",
+      "source": "However, we saw a major difference with respect to the second litter. Homozygous knockout females tended to produce this faster than wildtype or heterozygous females (medians: 23 vs. 38 days, Figure 5\u2014source data 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by breeding data from normal breeding stocks and confirmed by additional mating pairs.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:48:41.595878Z"
+    },
+    {
+      "id": "ccbd649a-3ac1-497e-a206-94fea7eed7e3",
+      "content_id": "4af041a6-e3cb-4df7-8244-6b3abb89f084",
+      "claim_id": "C30",
+      "claim": "The difference in time to second litter between knockout and wildtype/heterozygous females is statistically significant.",
+      "claim_type": "EXPLICIT",
+      "source": "When using the two-tailed Wilcoxon rank sum test which does not require the assumption of a normal distribution, we found that this difference is significant when calculated across all breeding data (p-value=0.042).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by statistical analysis of breeding data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:48:41.595878Z"
+    },
+    {
+      "id": "260547b8-d2a7-4931-a4ad-b62b53421c6a",
+      "content_id": "4af041a6-e3cb-4df7-8244-6b3abb89f084",
+      "claim_id": "C31",
+      "claim": "About a quarter of litters from homozygous knockout females show infanticide, but none from wildtype or heterozygous females.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, we found not only a timing difference for the second litter but also infanticide in about a quarter of the litters (4 out of 16) from homozygous females, but none in wildtype or heterozygous females (two-tailed Fisher's exact test, p-value=0.031, Figure 5\u2014source data 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by breeding observations and statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:48:41.595878Z"
+    },
+    {
+      "id": "ed871a55-69d3-4e86-907f-f14497bcc5ec",
+      "content_id": "4af041a6-e3cb-4df7-8244-6b3abb89f084",
+      "claim_id": "C32",
+      "claim": "Homozygous knockout females have similar litter sizes to wildtype or heterozygous females.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, one could also have expected to see homozygous knockout females having larger litter sizes than those of wildtype or heterozygous females, but they were almost the same (medians: 6.5 vs. 7.0 for littler 1 and 6.5 vs. 7.5 for litter 2, Figure 5\u2014source data 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by breeding data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:48:41.595878Z"
+    },
+    {
+      "id": "9ff59cf7-45c8-4141-b388-52d60877a284",
+      "content_id": "4af041a6-e3cb-4df7-8244-6b3abb89f084",
+      "claim_id": "C33",
+      "claim": "Dcpp3 was lost in M. m. domesticus populations.",
+      "claim_type": "EXPLICIT",
+      "source": "Intriguingly, when inspecting the copy number variation data that we have produced previously (Pezer et al., 2015), we found that Dcpp3 was also lost in M. m. domesticus populations (Figure 4\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by copy number variation data from Pezer et al., 2015.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:48:41.595878Z"
+    },
+    {
+      "id": "1ea4e10d-dbc4-4885-9de5-d7f7fe6d6d03",
+      "content_id": "4af041a6-e3cb-4df7-8244-6b3abb89f084",
+      "claim_id": "C34",
+      "claim": "The loss of Gm13030 should be detrimental to animals in the wild.",
+      "claim_type": "EXPLICIT",
+      "source": "These results suggest that the loss of Gm13030 should be detrimental to the animals in the wild.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the observed phenotypes of shorter intervals to second birth and higher infanticide rates.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:48:41.595878Z"
+    },
+    {
+      "id": "b8f5929e-0353-4b08-a91a-d99c7fb8cd85",
+      "content_id": "4af041a6-e3cb-4df7-8244-6b3abb89f084",
+      "claim_id": "C35",
+      "claim": "The secondary loss of Dcpp3 in M. m. domesticus could compensate for the loss of Gm13030.",
+      "claim_type": "EXPLICIT",
+      "source": "Under the assumption that this results in an overall lowered expression of Dcpp RNAs, it could be considered to compensate for the loss of Gm13030.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is speculative, based on the observation that both Gm13030 and Dcpp3 are lost in M. m. domesticus.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:48:41.595878Z"
+    },
+    {
+      "id": "66a13861-1ec8-443c-9cb1-2484f63405a4",
+      "content_id": "4af041a6-e3cb-4df7-8244-6b3abb89f084",
+      "claim_id": "C36",
+      "claim": "The knockout has an impact on the transcriptome in the oviduct only at a specific stage of the female estrous cycle.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that the knockout has an impact on the transcriptome in the oviduct only at a specific stage of the female estrous cycle, and we also find a unique female-specific phenotype.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by RNA-Seq analysis showing differential expression only in cluster 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:48:41.595878Z"
+    },
+    {
+      "id": "518c6551-0187-466e-813b-ed0caf956b31",
+      "content_id": "4af041a6-e3cb-4df7-8244-6b3abb89f084",
+      "claim_id": "C37",
+      "claim": "Gm13030 is named Shiji (Shj) after a female figure born from stone in Chinese mythology.",
+      "claim_type": "EXPLICIT",
+      "source": "Hence, we propose to give a formal name to Gm13030. We name it after a female figure, Shiji (Shj), who was born from stone (de novo) as a mythology character in the Chinese traditional novel Investiture of the Gods (Fengshen Yanyi), which was published in the 16th century.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a naming decision by the authors based on the de novo origin of the gene.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:48:41.595878Z"
+    },
+    {
+      "id": "ef4325e5-213f-409b-aa75-efc9490b3164",
+      "content_id": "4af041a6-e3cb-4df7-8244-6b3abb89f084",
+      "claim_id": "C38",
+      "claim": "Dcpp expression is induced in the oviduct by pre-implantation embryos and is then secreted into the oviduct.",
+      "claim_type": "EXPLICIT",
+      "source": "Dcpp expression is induced in the oviduct by pre-implantation embryos and is then secreted into the oviduct. This in turn stimulates the further maturation of the embryos and eventually the implantation (Lee et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Lee et al., 2006.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:48:41.595878Z"
+    },
+    {
+      "id": "7d59c511-7a91-42f0-ab49-7b395279f16e",
+      "content_id": "4af041a6-e3cb-4df7-8244-6b3abb89f084",
+      "claim_id": "C39",
+      "claim": "Shj could have found its function in controlling Dcpp expression, defending the interests of the mother.",
+      "claim_type": "EXPLICIT",
+      "source": "Hence, this is a system where a selfish tendency for Dcpp expression favoring embryo implantation could develop, in expense of the interest of the mother that wants to build up new resources first. Accordingly, Shj could have found its function in controlling this expression, that is, 'defending' the interests of the mother.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is speculative, based on the observed upregulation of Dcpp genes in knockouts and the phenotypic consequences.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:48:41.595878Z"
+    },
+    {
+      "id": "62da6a6a-8d96-47e9-8722-ecac53cfc52c",
+      "content_id": "4af041a6-e3cb-4df7-8244-6b3abb89f084",
+      "claim_id": "C40",
+      "claim": "An evolutionary conflict of interest exists for the interactions between Shj and Dcpp genes.",
+      "claim_type": "EXPLICIT",
+      "source": "This is compatible with the notion that an evolutionary conflict of interest exists for these interactions, whereby it remains open whether the loss of Dcpp3 preceded the loss of Shj or vice versa.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the co-occurrence of Shj and Dcpp3 losses in M. m. domesticus.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:48:41.595878Z"
+    },
+    {
+      "id": "d3c1c90a-65af-4b41-a2fa-18a9ed65b2c4",
+      "content_id": "4af041a6-e3cb-4df7-8244-6b3abb89f084",
+      "claim_id": "C41",
+      "claim": "Shj inactivation alleles segregate in M. m. musculus and M. m. castaneus populations in low frequency.",
+      "claim_type": "EXPLICIT",
+      "source": "We note that Shj inactivation alleles segregate also in the populations of the other subspecies (M. m. musculus and M. m. castaneus) in low frequency, implying that the evolutionary process of fully integrating this new gene is still ongoing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on sequence analysis shown in Figure 3 and Figure 3\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:48:41.595878Z"
+    },
+    {
+      "id": "df70dde1-782f-4973-a6ce-2f27cc9e3632",
+      "content_id": "4af041a6-e3cb-4df7-8244-6b3abb89f084",
+      "claim_id": "C42",
+      "claim": "There has been much focus on de novo genes to have male-biased expression and to affect male fertility.",
+      "claim_type": "EXPLICIT",
+      "source": "There has so far been much focus on de novo genes and other new genes to have male-biased expression and to affect male fertility (Chen et al., 2013; Ellegren and Parsch, 2007; Heinen et al., 2009; Kaessmann, 2010; Long et al., 2013; Reinhardt et al., 2013; Zhao et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by multiple citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:48:41.595878Z"
+    },
+    {
+      "id": "61b6902f-5ac2-457e-99ab-6e489c59ed78",
+      "content_id": "4af041a6-e3cb-4df7-8244-6b3abb89f084",
+      "claim_id": "C43",
+      "claim": "Arts, a duplicated gene in Drosophila, has high expression in the ovary and affects fertility.",
+      "claim_type": "EXPLICIT",
+      "source": "Only recently, one of a pair of duplicated genes in Drosophila, Arts, has been shown to have high expression in the ovary and to affect fertility (VanKuren and Long, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to VanKuren and Long, 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:48:41.595878Z"
+    },
+    {
+      "id": "11c29d8a-41a5-4051-8c99-da9fd98876cb",
+      "content_id": "4af041a6-e3cb-4df7-8244-6b3abb89f084",
+      "claim_id": "C44",
+      "claim": "Female reproduction should be subject to accelerated evolution patterns, especially in mammals.",
+      "claim_type": "EXPLICIT",
+      "source": "Female reproduction should be subject to accelerated evolution patterns, especially in mammals which have high complexities in female reproduction, including mate choice, pregnancy, and parenting, which has been neglected so far.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is speculative, based on the complexity of female reproduction in mammals.",
+      "evidence_type": "[\"SPECULATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:48:41.595878Z"
+    },
+    {
+      "id": "46309bf8-d472-4f86-9663-010694979156",
+      "content_id": "4af041a6-e3cb-4df7-8244-6b3abb89f084",
+      "claim_id": "C45",
+      "claim": "The estrous cycle in females adds to the complexity of analyzing biased gene expression.",
+      "claim_type": "EXPLICIT",
+      "source": "One reason is that the estrous cycle in females adds to the complexity of the analysis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on the authors' experience with the current study.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:48:41.595878Z"
+    },
+    {
+      "id": "2aa1ee97-bae2-4afe-ab54-78103e07d1b5",
+      "content_id": "4af041a6-e3cb-4df7-8244-6b3abb89f084",
+      "claim_id": "C46",
+      "claim": "The large number of new genes transcribed in testis is due to the promiscuous phase of expression in meiotic cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Another reason for the current focus on males is the large number of new genes that are transcribed in testis. However, this is due to the promiscuous phase of expression in meiotic cells, where many genes use alternative promotors (Kleene, 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Kleene, 2001.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:48:41.595878Z"
+    },
+    {
+      "id": "56fff3e1-1440-4275-8d2c-8c524866ba7e",
+      "content_id": "4af041a6-e3cb-4df7-8244-6b3abb89f084",
+      "claim_id": "C47",
+      "claim": "Meiotic cells are abundant in testis but difficult to analyze in ovaries.",
+      "claim_type": "EXPLICIT",
+      "source": "These meiotic cells are abundant in testis, but are difficult to analyze in ovaries.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on established knowledge about the differences in meiotic cell abundance between testis and ovaries.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:48:41.595878Z"
+    },
+    {
+      "id": "fd36af86-e424-41fb-b2ce-0b2d78cd42f4",
+      "content_id": "4af041a6-e3cb-4df7-8244-6b3abb89f084",
+      "claim_id": "C48",
+      "claim": "Shj exerts its effects in somatic cells, independent of possible expression in meiosis.",
+      "claim_type": "EXPLICIT",
+      "source": "Shj exerts its effects in somatic cells, that is, independent of a possible expression in meiosis, but in the context of a possible selfish gene conflict situation, which has so far been ascribed mostly to the male reproductive system (Kleene, 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on the observation that Shj is expressed in the oviduct, a somatic tissue.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:48:41.595878Z"
+    },
+    {
+      "id": "fd2cc908-9f2f-46c8-a76d-1b05ac7035b6",
+      "content_id": "4af041a6-e3cb-4df7-8244-6b3abb89f084",
+      "claim_id": "C49",
+      "claim": "It has long been assumed that the emergence of function out of non-coding DNA regions must be rare.",
+      "claim_type": "EXPLICIT",
+      "source": "It has long been assumed that the emergence of function out of non-coding DNA regions must be rare, and if it occurs, the resulting genes would be far away from assuming a function.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim refers to historical assumptions in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:48:41.595878Z"
+    },
+    {
+      "id": "764671a6-7c52-48c9-a4c1-05a65a5814da",
+      "content_id": "4af041a6-e3cb-4df7-8244-6b3abb89f084",
+      "claim_id": "C50",
+      "claim": "The results do not support the assumption that de novo gene emergence is rare or that resulting genes are far from assuming a function.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results do not support these assumptions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on the findings of the current study showing functional effects of Shj.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:48:41.595878Z"
+    },
+    {
+      "id": "b1939709-d56f-4d80-8d6f-d0cbcc2fe640",
+      "content_id": "4af041a6-e3cb-4df7-8244-6b3abb89f084",
+      "claim_id": "C51",
+      "claim": "It is possible to find many well supported transcripts that could be considered to be true de novo genes.",
+      "claim_type": "EXPLICIT",
+      "source": "It is possible to find many well supported transcripts that could be considered to be true de novo genes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on the identification of 119 candidate de novo genes with translation evidence.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:48:41.595878Z"
+    },
+    {
+      "id": "16e49a29-9189-4a6a-a797-ac106e16b589",
+      "content_id": "4af041a6-e3cb-4df7-8244-6b3abb89f084",
+      "claim_id": "C52",
+      "claim": "Shj has functions on the transcriptome and the phenotype.",
+      "claim_type": "EXPLICIT",
+      "source": "We have shown here that Shj has functions on the transcriptome and the phenotype.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by RNA-Seq analysis and breeding experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:48:41.595878Z"
+    },
+    {
+      "id": "6183345b-9b8b-417c-b8f3-3116ec8574e0",
+      "content_id": "4af041a6-e3cb-4df7-8244-6b3abb89f084",
+      "claim_id": "C53",
+      "claim": "The Shj ORF has acquired only a small number of additional substitutions after it emerged.",
+      "claim_type": "EXPLICIT",
+      "source": "The Shj ORF has acquired only a small number of additional substitutions, both coding and non-coding after it emerged.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on phylogenetic analysis shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:48:41.595878Z"
+    },
+    {
+      "id": "5d4d36de-75d7-44cf-9c80-e5c89b5e6912",
+      "content_id": "4af041a6-e3cb-4df7-8244-6b3abb89f084",
+      "claim_id": "C54",
+      "claim": "Shj did not need additional adaptation of the protein sequence to become functional.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that it did not need additional adaptation of the protein sequence to become functional.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the lack of positive selection signal and the small number of substitutions.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:48:41.595878Z"
+    },
+    {
+      "id": "e989c324-6a9b-4381-bf31-0a09a46f6db4",
+      "content_id": "4af041a6-e3cb-4df7-8244-6b3abb89f084",
+      "claim_id": "C55",
+      "claim": "A similar analysis on a larger set of de novo ORFs in the mouse shows lack of additional adaptation.",
+      "claim_type": "EXPLICIT",
+      "source": "This is in line with a similar analysis on a larger set of de novo ORFs in the mouse (Ruiz-Orera et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Ruiz-Orera et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:48:41.595878Z"
+    },
+    {
+      "id": "87971b96-5104-4395-bb34-b0d07d1334a5",
+      "content_id": "4af041a6-e3cb-4df7-8244-6b3abb89f084",
+      "claim_id": "C56",
+      "claim": "Signatures of positive selection around de novo genes should not necessarily be expected as proof that it is a true gene.",
+      "claim_type": "EXPLICIT",
+      "source": "Hence, this raises the question whether we should necessarily expect signatures of positive selection around de novo genes as part of proof that it is a true gene (McLysaght and Hurst, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is speculative, questioning a common assumption in the field.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:48:41.595878Z"
+    },
+    {
+      "id": "166a7e1d-c87c-4feb-aee4-a445642c802b",
+      "content_id": "4af041a6-e3cb-4df7-8244-6b3abb89f084",
+      "claim_id": "C57",
+      "claim": "A large set of expressed random sequences can exert phenotypes.",
+      "claim_type": "EXPLICIT",
+      "source": "Alternatively, given the observation that a large set of expressed random sequences can exert phenotypes (Bao et al., 2017; Neme et al., 2017), it would seem more likely that the conversion of a non-coding region into a coding one would already be sufficient to create a gene function.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Bao et al., 2017 and Neme et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:48:41.595878Z"
+    },
+    {
+      "id": "522a7108-ba57-455d-905c-8fbc555a2a8a",
+      "content_id": "4af041a6-e3cb-4df7-8244-6b3abb89f084",
+      "claim_id": "C58",
+      "claim": "In the early phase of evolution, de novo genes would likely be frequently subject to secondary loss.",
+      "claim_type": "EXPLICIT",
+      "source": "In the early phase of evolution, such genes would likely be frequently subject to secondary loss (Palmieri et al., 2014), but they could eventually also become fixed and then further evolutionarily optimized.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Palmieri et al., 2014 and is consistent with the observation of secondary losses in the current study.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:48:41.595878Z"
+    },
+    {
+      "id": "672151a6-3e3d-4767-9c30-ff860beb7514",
+      "content_id": "4af041a6-e3cb-4df7-8244-6b3abb89f084",
+      "claim_id": "C59",
+      "claim": "The conversion of a non-coding region into a coding one would already be sufficient to create a gene function.",
+      "claim_type": "EXPLICIT",
+      "source": "Alternatively, given the observation that a large set of expressed random sequences can exert phenotypes (Bao et al., 2017; Neme et al., 2017), it would seem more likely that the conversion of a non-coding region into a coding one would already be sufficient to create a gene function.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is speculative, based on cited evidence about random sequences and the findings of the current study.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:48:41.595878Z"
+    },
+    {
+      "id": "44c43523-ec95-40eb-b941-165ecd4c4747",
+      "content_id": "4af041a6-e3cb-4df7-8244-6b3abb89f084",
+      "claim_id": "C60",
+      "claim": "A de novo evolved gene can directly adopt a function without much sequence adaptation.",
+      "claim_type": "EXPLICIT",
+      "source": "Given that Gm13030 shows no signs of positive selection, our findings support the hypothesis that a de novo evolved gene can directly adopt a function without much sequence adaptation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on the lack of positive selection signal and the observed functional effects of Shj.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:48:41.595878Z"
+    },
+    {
+      "id": "d1137277-eeb3-4b5a-ad26-1e96d4e4bf9b",
+      "content_id": "4af041a6-e3cb-4df7-8244-6b3abb89f084",
+      "claim_id": "C61",
+      "claim": "The interruption of the Gm13030 reading frame affects the transcriptional network in the oviducts at a specific stage of the estrous cycle.",
+      "claim_type": "EXPLICIT",
+      "source": "The interruption of the reading frame affects the transcriptional network in the oviducts at a specific stage of the estrous cycle.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by RNA-Seq analysis showing differential expression only in cluster 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:48:41.595878Z"
+    },
+    {
+      "id": "adb8b9f0-c3cd-48b3-b6d1-62d8989dc848",
+      "content_id": "4af041a6-e3cb-4df7-8244-6b3abb89f084",
+      "claim_id": "C62",
+      "claim": "The interruption of Gm13030 includes the upregulation of Dcpp genes.",
+      "claim_type": "EXPLICIT",
+      "source": "This includes the upregulation of Dcpp genes, which are known to stimulate the growth of preimplantation embryos.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by RNA-Seq and ddPCR analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:48:41.595878Z"
+    },
+    {
+      "id": "12d5edd3-487a-477f-ad26-937048590aae",
+      "content_id": "4af041a6-e3cb-4df7-8244-6b3abb89f084",
+      "claim_id": "C63",
+      "claim": "Dcpp genes are known to stimulate the growth of preimplantation embryos.",
+      "claim_type": "EXPLICIT",
+      "source": "This includes the upregulation of Dcpp genes, which are known to stimulate the growth of preimplantation embryos.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on established knowledge, likely from Lee et al., 2006 cited elsewhere in the manuscript.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:48:41.595878Z"
+    },
+    {
+      "id": "d19c72dc-91e5-4137-af75-0e922e4da538",
+      "content_id": "4af041a6-e3cb-4df7-8244-6b3abb89f084",
+      "claim_id": "C64",
+      "claim": "Knockout females have their second litters after shorter times.",
+      "claim_type": "EXPLICIT",
+      "source": "As a consequence, knockout females have their second litters after shorter times and have a higher infanticide rate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by breeding data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:48:41.595878Z"
+    },
+    {
+      "id": "42553289-9bf1-4435-bb12-fd9fc82557c7",
+      "content_id": "4af041a6-e3cb-4df7-8244-6b3abb89f084",
+      "claim_id": "C65",
+      "claim": "Knockout females have a higher infanticide rate.",
+      "claim_type": "EXPLICIT",
+      "source": "As a consequence, knockout females have their second litters after shorter times and have a higher infanticide rate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by breeding observations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:48:41.595878Z"
+    },
+    {
+      "id": "48eb7197-377f-4b52-9546-f0ac21bd554e",
+      "content_id": "4af041a6-e3cb-4df7-8244-6b3abb89f084",
+      "claim_id": "C66",
+      "claim": "The de novo emergence of new genes has been well documented through genomic analyses.",
+      "claim_type": "EXPLICIT",
+      "source": "The de novo emergence of new genes has been well documented through genomic analyses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim refers to established knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:48:41.595878Z"
+    },
+    {
+      "id": "e2c343d6-3d7b-4a8c-9ebd-8ae6ca3d2280",
+      "content_id": "4af041a6-e3cb-4df7-8244-6b3abb89f084",
+      "claim_id": "C67",
+      "claim": "Functional analysis of very young protein-coding genes is still largely lacking.",
+      "claim_type": "EXPLICIT",
+      "source": "However, a functional analysis, especially of very young protein-coding genes, is still largely lacking.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim refers to a gap in the current state of research.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:48:41.595878Z"
+    },
+    {
+      "id": "76eac099-d83a-4567-b5fc-eaf9ba228ded",
+      "content_id": "4af041a6-e3cb-4df7-8244-6b3abb89f084",
+      "claim_id": "C68",
+      "claim": "The evolution of new genes through duplication-divergence processes is well understood.",
+      "claim_type": "EXPLICIT",
+      "source": "The evolution of new genes through duplication-divergence processes is well understood (Chen et al., 2013; Kaessmann, 2010; Long et al., 2013; Tautz and Domazet-Lo\u0161o, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by multiple citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:48:41.595878Z"
+    },
+    {
+      "id": "0d311301-84b2-47c3-883d-5fdaf66260db",
+      "content_id": "4af041a6-e3cb-4df7-8244-6b3abb89f084",
+      "claim_id": "C69",
+      "claim": "The evolution of new genes from non-coding DNA has been little considered for a long time.",
+      "claim_type": "EXPLICIT",
+      "source": "But the evolution of new genes from non-coding DNA has been little considered for a long time (Tautz, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Tautz, 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:48:41.595878Z"
+    },
+    {
+      "id": "89ae308d-5b4e-4c37-8176-50b919ddd153",
+      "content_id": "4af041a6-e3cb-4df7-8244-6b3abb89f084",
+      "claim_id": "C70",
+      "claim": "With increasing availability of comparative genome data, more cases of de novo gene emergence have been described.",
+      "claim_type": "EXPLICIT",
+      "source": "However, with the increasing availability of comparative genome data from closely related species, more and more cases of unequivocal de novo gene emergence have been described (McLysaght and Hurst, 2016; Schl\u00f6tterer, 2015; Tautz, 2014; Tautz and Domazet-Lo\u0161o, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by multiple citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:48:41.595878Z"
+    },
+    {
+      "id": "16246fc2-19d7-4fd6-85e6-9f81f53dde96",
+      "content_id": "4af041a6-e3cb-4df7-8244-6b3abb89f084",
+      "claim_id": "C71",
+      "claim": "De novo gene emergence is a very active process in all evolutionary lineages analyzed.",
+      "claim_type": "EXPLICIT",
+      "source": "These analyses have shown that de novo gene emergence is a very active process in all evolutionary lineages analyzed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on cited comparative genomic analyses.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:48:41.595878Z"
+    },
+    {
+      "id": "b1f53cca-b57f-4934-ac23-a0089eea2d2a",
+      "content_id": "4af041a6-e3cb-4df7-8244-6b3abb89f084",
+      "claim_id": "C72",
+      "claim": "Virtually the whole genome is 'scanned' by transcript emergence and loss within about 10 million years of mouse evolutionary history.",
+      "claim_type": "EXPLICIT",
+      "source": "A comparative analysis of closely related mouse species has even suggested that virtually the whole genome is 'scanned' by transcript emergence and loss within about 10 million years of evolutionary history (Neme and Tautz, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Neme and Tautz, 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:48:41.595878Z"
+    },
+    {
+      "id": "be5ac1e9-cea5-433c-b1d0-f5ce5430daa7",
+      "content_id": "4af041a6-e3cb-4df7-8244-6b3abb89f084",
+      "claim_id": "C73",
+      "claim": "Functional studies of de novo genes have lacked behind the detection of their transcriptional and translational expression.",
+      "claim_type": "EXPLICIT",
+      "source": "But unlike the detection of the transcriptional and translational expression of de novo genes, functional studies of such genes have lacked behind.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim refers to a gap in the current state of research.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:48:41.595878Z"
+    },
+    {
+      "id": "06392259-d0a9-4b5a-af6c-1c984cabe00f",
+      "content_id": "4af041a6-e3cb-4df7-8244-6b3abb89f084",
+      "claim_id": "C74",
+      "claim": "In yeast, the de novo evolved gene BSC4 was found to be involved in DNA repair.",
+      "claim_type": "EXPLICIT",
+      "source": "In yeast, the de novo evolved gene BSC4 was found to be involved in DNA repair (Cai et al., 2008)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Cai et al., 2008.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:48:41.595878Z"
+    },
+    {
+      "id": "edcef80a-6d1e-453e-8746-9bab410e008b",
+      "content_id": "4af041a6-e3cb-4df7-8244-6b3abb89f084",
+      "claim_id": "C75",
+      "claim": "In yeast, MDF1 was found to suppress mating and to promote fermentation.",
+      "claim_type": "EXPLICIT",
+      "source": "and MDF1 (Li et al., 2010; Li et al., 2014) was found to suppress mating and to promote fermentation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Li et al., 2010 and Li et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:48:41.595878Z"
+    },
+    {
+      "id": "02dda88f-6857-4912-8460-e4b1d95fa078",
+      "content_id": "4af041a6-e3cb-4df7-8244-6b3abb89f084",
+      "claim_id": "C76",
+      "claim": "Knockdown of candidates of de novo genes in Drosophila have suggested effects on viability and male fertility.",
+      "claim_type": "EXPLICIT",
+      "source": "Knockdown of candidates of de novo genes in Drosophila have suggested effects on viability and male fertility (Chen et al., 2010; Reinhardt et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Chen et al., 2010 and Reinhardt et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:48:41.595878Z"
+    },
+    {
+      "id": "cccd1616-91ff-4d9d-95b2-d57f9c153513",
+      "content_id": "4af041a6-e3cb-4df7-8244-6b3abb89f084",
+      "claim_id": "C77",
+      "claim": "Male fertility was found to be affected for Pldi in mice, which codes for a lncRNA.",
+      "claim_type": "EXPLICIT",
+      "source": "Male fertility was also found to be affected for Pldi in mice, which codes for a lncRNA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on established knowledge, likely from Heinen et al., 2009 cited elsewhere.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:48:41.595878Z"
+    },
+    {
+      "id": "0e6c20b0-44ea-4037-843a-616fe0eac6c9",
+      "content_id": "4af041a6-e3cb-4df7-8244-6b3abb89f084",
+      "claim_id": "C78",
+      "claim": "The knockout of Pldi was shown to affect sperm motility and testis weight.",
+      "claim_type": "EXPLICIT",
+      "source": "In this case the knockout was shown to affect sperm motility and testis weight (Heinen et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Heinen et al., 2009.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:48:41.595878Z"
+    },
+    {
+      "id": "1a82c9cf-22b7-428e-a63d-964878578bb2",
+      "content_id": "4af041a6-e3cb-4df7-8244-6b3abb89f084",
+      "claim_id": "C79",
+      "claim": "Mammalian females have complex reproduction cycles, including morphology, physiology and behavior relating to mate choice, pregnancy, and parenting.",
+      "claim_type": "EXPLICIT",
+      "source": "However, considering that the mammalian females have complex reproduction cycles, including morphology, physiology and behavior relating to mate choice, pregnancy, and parenting, de novo genes in mammals should also be expected to have a function in female-specific organs and affect female fertility and reproductive behavior as well.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on established knowledge about mammalian female reproduction.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:48:41.595878Z"
+    },
+    {
+      "id": "a62030d9-9ea9-4d12-b362-f9affea10dcc",
+      "content_id": "4af041a6-e3cb-4df7-8244-6b3abb89f084",
+      "claim_id": "C80",
+      "claim": "De novo genes in mammals should be expected to have a function in female-specific organs and affect female fertility and reproductive behavior.",
+      "claim_type": "EXPLICIT",
+      "source": "However, considering that the mammalian females have complex reproduction cycles, including morphology, physiology and behavior relating to mate choice, pregnancy, and parenting, de novo genes in mammals should also be expected to have a function in female-specific organs and affect female fertility and reproductive behavior as well.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is speculative, based on the complexity of female reproduction.",
+      "evidence_type": "[\"SPECULATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:48:41.595878Z"
+    },
+    {
+      "id": "d7cbd0e8-045f-4faf-8ae8-f9990537f49a",
+      "content_id": "4af041a6-e3cb-4df7-8244-6b3abb89f084",
+      "claim_id": "C81",
+      "claim": "Most de novo genes are translated based on ribosome profiling and mass spectrometry data.",
+      "claim_type": "EXPLICIT",
+      "source": "We have analyzed ribosome profiling and mass spectrometry data for these and find that most of them are translated.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by ribosome profiling and mass spectrometry analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:48:41.595878Z"
+    },
+    {
+      "id": "26d32dc7-e051-44e4-8004-bb507cb4ce20",
+      "content_id": "4af041a6-e3cb-4df7-8244-6b3abb89f084",
+      "claim_id": "C82",
+      "claim": "The emergence of Gm13030 may have been driven by an evolutionary conflict situation.",
+      "claim_type": "EXPLICIT",
+      "source": "We conclude that it functions in the oviduct and affects female fertility cycles and that its emergence may have been driven by an evolutionary conflict situation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is speculative, based on the observed interactions between Shj and Dcpp genes.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:48:41.595878Z"
+    },
+    {
+      "id": "ed61dbb0-408e-445a-b084-5dc03b752ddf",
+      "content_id": "4af041a6-e3cb-4df7-8244-6b3abb89f084",
+      "claim_id": "C83",
+      "claim": "Random protein sequences have a good probability for conveying evolutionarily relevant functions.",
+      "claim_type": "EXPLICIT",
+      "source": "These results support the notion that random protein sequences have a good probability for conveying evolutionarily relevant functions (Neme et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Neme et al., 2017 and the findings of the current study.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:48:41.595878Z"
+    },
+    {
+      "id": "2a10170f-4c47-43df-900a-c581b6f42bd0",
+      "content_id": "4af041a6-e3cb-4df7-8244-6b3abb89f084",
+      "claim_id": "C85",
+      "claim": "The Gm13030 allele in C57BL/6N represents the non-interrupted version found in M. m. musculus and M. m. castaneus.",
+      "claim_type": "EXPLICIT",
+      "source": "and the Gm13030 allele represents indeed the non-interrupted version that is found in M. m. musculus and M. m. castaneus.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on sequence comparison with the reference genome and wild populations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:48:41.595878Z"
+    },
+    {
+      "id": "cdd22559-c41e-49f6-8e27-6dddb9e42886",
+      "content_id": "4af041a6-e3cb-4df7-8244-6b3abb89f084",
+      "claim_id": "C86",
+      "claim": "The 21 differentially expressed genes in cluster 1 do not include the genes neighboring Gm13030.",
+      "claim_type": "EXPLICIT",
+      "source": "The 21 differentially expressed genes in cluster 1 do not include the genes neighboring Gm13030 (Pla2g2e and Pla2g5).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on RNA-Seq differential expression analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:48:41.595878Z"
+    },
+    {
+      "id": "d58828d7-3418-4b69-a615-0f98a867ae48",
+      "content_id": "4af041a6-e3cb-4df7-8244-6b3abb89f084",
+      "claim_id": "C87",
+      "claim": "When the second litter follows too quickly, females may be under stronger postpartum stress resulting in partial killing of pups.",
+      "claim_type": "EXPLICIT",
+      "source": "This could indicate that when the second litter follows too quickly, the females may be under stronger postpartum stress resulting in partial killing of pups.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is speculative, based on the observed correlation between shorter intervals and infanticide.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:48:41.595878Z"
+    },
+    {
+      "id": "9a659d72-e894-4849-accb-e0af30f9d6f7",
+      "content_id": "4af041a6-e3cb-4df7-8244-6b3abb89f084",
+      "claim_id": "C88",
+      "claim": "More pups from homozygous knockout females may have been eaten before being observed, explaining similar litter sizes.",
+      "claim_type": "EXPLICIT",
+      "source": "One possible explanation is that considering the high infanticide rate for homozygous knockouts, more pups from homozygous knockout females were eaten before being observed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is speculative, offered as a possible explanation for the lack of difference in litter sizes.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:48:41.595878Z"
+    },
+    {
+      "id": "11d72aed-9758-446b-bd57-90a686ef088f",
+      "content_id": "4af041a6-e3cb-4df7-8244-6b3abb89f084",
+      "claim_id": "C89",
+      "claim": "Females can ovulate within a day of giving birth.",
+      "claim_type": "EXPLICIT",
+      "source": "Females can ovulate within a day of giving birth, but if no successful mating occurs at that time, ovulation is suppressed while the female is lactating.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on established knowledge about mouse reproductive biology.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:48:41.595878Z"
+    },
+    {
+      "id": "2e0cf4a7-21c9-4381-9487-dd8e272bdbc7",
+      "content_id": "4af041a6-e3cb-4df7-8244-6b3abb89f084",
+      "claim_id": "C90",
+      "claim": "Ovulation is suppressed while the female is lactating if no successful mating occurs shortly after giving birth.",
+      "claim_type": "EXPLICIT",
+      "source": "Females can ovulate within a day of giving birth, but if no successful mating occurs at that time, ovulation is suppressed while the female is lactating.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on established knowledge about mouse reproductive biology.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:48:41.595878Z"
+    },
+    {
+      "id": "fe271ecb-2798-4098-830d-bd30263e71c4",
+      "content_id": "4af041a6-e3cb-4df7-8244-6b3abb89f084",
+      "claim_id": "C91",
+      "claim": "Suppression of ovulation during lactation results in a delay in the timing of the next pregnancy.",
+      "claim_type": "EXPLICIT",
+      "source": "This results in a delay in the timing of the next pregnancy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on established knowledge about mouse reproductive biology.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:48:41.595878Z"
+    },
+    {
+      "id": "c39c7ddd-b66c-48ee-bc69-78f6226d929f",
+      "content_id": "4af041a6-e3cb-4df7-8244-6b3abb89f084",
+      "claim_id": "C92",
+      "claim": "The bimodal distribution pattern of time to second litter is evident in the data.",
+      "claim_type": "EXPLICIT",
+      "source": "Figure 5 shows that this pattern is also evident in our data.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by the data shown in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:48:41.595878Z"
+    },
+    {
+      "id": "2787daa9-17ed-4f8a-ad73-d055271be926",
+      "content_id": "4af041a6-e3cb-4df7-8244-6b3abb89f084",
+      "claim_id": "C93",
+      "claim": "Times to the second litter were either smaller than or equal to 25 days (early group) or larger than or equal to 35 days (late group).",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the times to the second litter were either smaller than or equal to 25 days (early group) or larger than or equal to 35 days (late group) for both the homozygous knockout females and the wildtype or heterozygous females.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on analysis of breeding data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:48:41.595878Z"
+    },
+    {
+      "id": "f152b724-c728-4afb-a683-f8d4a56020f1",
+      "content_id": "4af041a6-e3cb-4df7-8244-6b3abb89f084",
+      "claim_id": "C94",
+      "claim": "In homozygous knockouts, more females were in the early group for second litter timing.",
+      "claim_type": "EXPLICIT",
+      "source": "But in the homozygous knockouts, we saw more in the early group, leading to the median values having a big difference.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on analysis of breeding data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:48:41.595878Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "70aee903-460d-4310-ac07-939c72a1f384",
+      "content_id": "4af041a6-e3cb-4df7-8244-6b3abb89f084",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The authors identified 119 mouse-specific protein-coding genes from intergenic regions using phylostratigraphy and synteny-based approaches, with 110 of these showing direct evidence of translation via ribosome profiling and mass spectrometry.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C2, and C81 are well-supported by the described computational pipeline combining phylostratigraphy, synteny analysis, ribosome profiling, and mass spectrometry data. The methods are clearly described and appropriate for identifying de novo genes and validating their translation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:48:41.595878Z"
+    },
+    {
+      "id": "b431c0f0-4ef0-4dc2-9607-9a7978ede3a2",
+      "content_id": "4af041a6-e3cb-4df7-8244-6b3abb89f084",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "De novo genes show distinct molecular characteristics compared to other protein-coding genes: lower expression levels, fewer exons and coding exons, shorter protein lengths, less predicted disorder, and similar hydrophobicity. Testis and brain show the highest expression of these genes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3-C9 are supported by statistical comparisons using appropriate tests (Wilcoxon rank sum) with highly significant p-values (<2.2\u00d710^-16 for most comparisons, p=0.0024 for disorder, p=0.52 for hydrophobicity). The tissue expression patterns are derived from ENCODE RNA-Seq data analysis.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:48:41.595878Z"
+    },
+    {
+      "id": "9d689018-c8cd-4be1-b4e2-a753dd7450a5",
+      "content_id": "4af041a6-e3cb-4df7-8244-6b3abb89f084",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Gm13030 is predominantly expressed in the oviduct, not the ovary as initially suggested by ENCODE data, as confirmed by reverse transcription PCR on carefully dissected tissues.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C10 and C11 demonstrate appropriate experimental validation. The authors recognized potential tissue contamination in ENCODE data (C10) and performed targeted RT-PCR experiments (C11) to precisely localize expression, showing scientific rigor in addressing potential artifacts.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:48:41.595878Z"
+    },
+    {
+      "id": "57f20d7a-8988-423d-8851-f4afaaa997cf",
+      "content_id": "4af041a6-e3cb-4df7-8244-6b3abb89f084",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The Gm13030 ORF emerged 2-4 million years ago through enabler mutations and was retained only in M. m. musculus and M. m. castaneus populations, with M. m. domesticus populations carrying a 17nt deletion disrupting the reading frame. The gene shows no signal of positive selection after emergence.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C12-C15, C53, and C85 are supported by comprehensive phylogenetic analysis including sequence alignments, identification of enabler and disabler mutations, and statistical analysis of substitution patterns. The lack of positive selection is demonstrated through dN/dS-like analyses showing no bias toward coding mutations.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:48:41.595878Z"
+    },
+    {
+      "id": "c2f51aa5-fb7f-499c-854e-8f1d3af56ff0",
+      "content_id": "4af041a6-e3cb-4df7-8244-6b3abb89f084",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "CRISPR/Cas9 generated a 7 bp deletion causing a frameshift in Gm13030, with no detected off-target effects in whole genome sequencing. The knockout line is homozygous viable and fertile.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C16-C18 are well-supported. The deletion was verified by sequencing (C16), comprehensive off-target analysis using whole genome sequencing at 35X coverage found no variants near 343 predicted sites (C17), and viability/fertility were directly observed (C18). The off-target analysis is particularly rigorous.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:48:41.595878Z"
+    },
+    {
+      "id": "6b26034e-2922-43d9-91ca-f5f64404609f",
+      "content_id": "4af041a6-e3cb-4df7-8244-6b3abb89f084",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Gm13030 knockout affects the oviduct transcriptome only at a specific estrous cycle stage (cluster 1), with 21 genes differentially expressed (adjusted p\u22640.01), but no effect in other cycle stages. The affected stage corresponds to proestrus/early estrus based on hormone receptor expression patterns.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C19-C22, C36, C61, and C86 demonstrate sophisticated experimental design accounting for estrous cycle variation. The clustering approach (PCA and hierarchical) is appropriate, and the identification of cycle-specific effects is validated by hormone receptor expression patterns. The differential expression analysis using DESeq2 with appropriate statistical thresholds is sound.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:48:41.595878Z"
+    },
+    {
+      "id": "98aa793f-dc6f-4611-8cb5-d33b585fe552",
+      "content_id": "4af041a6-e3cb-4df7-8244-6b3abb89f084",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Dcpp1, Dcpp2, and Dcpp3 are significantly upregulated in knockout samples (fold changes 1.45-1.59), and these genes are known to stimulate pre-implantation embryo development in the oviduct.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C23 and C62 are supported by both RNA-Seq (DESeq2) and independent validation by ddPCR. Claims C24, C25, and C63 appropriately cite prior work (Lee et al., 2006) for the known function of Dcpp genes. The convergence of RNA-Seq and ddPCR provides strong validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:48:41.595878Z"
+    },
+    {
+      "id": "dc662010-deac-4dc8-8609-fe2308b9df01",
+      "content_id": "4af041a6-e3cb-4df7-8244-6b3abb89f084",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Homozygous knockout females produce their second litter significantly faster than wildtype or heterozygous females (median 23 vs. 38 days, p=0.042 by Wilcoxon rank sum test).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C29, C30, and C64 are supported by breeding data from both stock breeding and dedicated mating experiments. The use of non-parametric statistics (Wilcoxon rank sum test) is appropriate given the bimodal distribution of the data. However, the p-value of 0.042 is marginal and the sample sizes are modest (N=16 KO, N=20 WT/HET).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:48:41.595878Z"
+    },
+    {
+      "id": "99d917c5-f20a-490b-8a42-b3a38d19b3af",
+      "content_id": "4af041a6-e3cb-4df7-8244-6b3abb89f084",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "About a quarter of litters from homozygous knockout females show infanticide (4/16), while none from wildtype or heterozygous females do (0/20), a statistically significant difference (p=0.031 by Fisher's exact test).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C31 and C65 are supported by breeding observations and appropriate statistical analysis (Fisher's exact test). However, the p-value is marginal (0.031), and the absolute numbers are small (4 events). The result would benefit from replication with larger sample sizes.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:48:41.595878Z"
+    },
+    {
+      "id": "10810f36-47da-4d42-99bb-dedbf69233f3",
+      "content_id": "4af041a6-e3cb-4df7-8244-6b3abb89f084",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Homozygous knockout females have similar litter sizes to wildtype or heterozygous females (medians: 6.5 vs. 7.0 for litter 1, 6.5 vs. 7.5 for litter 2).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C32 is supported by breeding data showing no substantial difference in litter sizes. However, no statistical test is reported for this comparison, which would strengthen the conclusion of no difference.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:48:41.595878Z"
+    },
+    {
+      "id": "409ba18c-efb6-4463-88a2-e9045c143bc4",
+      "content_id": "4af041a6-e3cb-4df7-8244-6b3abb89f084",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Dcpp3 was lost in M. m. domesticus populations, which could potentially compensate for the loss of Gm13030 by lowering overall Dcpp expression.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C33 is supported by copy number variation data from prior work (Pezer et al., 2015). However, claim C35 is explicitly speculative ('could be considered to compensate') and lacks direct experimental validation. The compensatory mechanism is an interesting hypothesis but remains unproven.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:48:41.595878Z"
+    },
+    {
+      "id": "67ecf9a9-c4aa-44a3-bc1a-4a5dcc839a93",
+      "content_id": "4af041a6-e3cb-4df7-8244-6b3abb89f084",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The loss of Gm13030 should be detrimental in the wild, with faster second litters potentially causing postpartum stress and infanticide. Higher infanticide may explain similar litter sizes if pups were eaten before observation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C34, C87, and C88 are speculative interpretations of the phenotypic data. While the observed phenotypes (shorter intervals, infanticide) are real, the inference about wild fitness (C34) and the mechanistic explanations (C87, C88) lack direct evidence. These are reasonable hypotheses but require validation through field studies or additional experiments.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:48:41.595878Z"
+    },
+    {
+      "id": "953314a3-e779-4851-ad4f-6d4447e95f35",
+      "content_id": "4af041a6-e3cb-4df7-8244-6b3abb89f084",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Dcpp expression is induced by pre-implantation embryos and stimulates embryo maturation. Shj may function to control Dcpp expression in the mother's interest, representing an evolutionary conflict situation that may have driven Shj emergence.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C38 is supported by citation to Lee et al., 2006. However, claims C39, C40, and C82 are explicitly speculative ('could have found its function', 'may have been driven'). While the upregulation of Dcpp genes in knockouts is consistent with a regulatory role for Shj, the specific mechanism and evolutionary conflict hypothesis lack direct experimental support.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:48:41.595878Z"
+    },
+    {
+      "id": "8213c9e6-cafb-43ef-9aba-57bdb6d87205",
+      "content_id": "4af041a6-e3cb-4df7-8244-6b3abb89f084",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Shj inactivation alleles segregate at low frequency in M. m. musculus and M. m. castaneus populations, suggesting ongoing evolutionary integration.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C41 is supported by sequence analysis data shown in Figure 3 and supplements, which document the presence of inactivating mutations at low frequencies in these populations.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:48:41.595878Z"
+    },
+    {
+      "id": "5860500d-6a59-42ad-9908-4c5d37f20fb6",
+      "content_id": "4af041a6-e3cb-4df7-8244-6b3abb89f084",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Shj did not require additional protein sequence adaptation to become functional after ORF emergence, challenging the expectation that positive selection is necessary proof of de novo gene functionality. The conversion of non-coding to coding sequence may be sufficient for function.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C54 and C60 are supported by the lack of positive selection signal (C15) combined with demonstrated functional effects (transcriptomic and phenotypic). Claim C55 appropriately cites supporting evidence from Ruiz-Orera et al., 2018. Claims C56 and C59 are interpretive but logically follow from the data. This represents an important conceptual contribution to understanding de novo gene evolution.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:48:41.595878Z"
+    },
+    {
+      "id": "8264c622-5f8f-4d4a-9c88-ec2a17ee40a8",
+      "content_id": "4af041a6-e3cb-4df7-8244-6b3abb89f084",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "The bimodal distribution of time to second litter reflects mouse reproductive biology: females can ovulate shortly after birth (early group, \u226425 days) or have suppressed ovulation during lactation (late group, \u226535 days). More knockout females fall in the early group.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C89-C91 correctly describe established mouse reproductive biology. Claims C92-C94 are supported by the breeding data shown in Figure 5, which clearly demonstrates the bimodal distribution and the shift toward earlier second litters in knockouts.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:48:41.595878Z"
+    },
+    {
+      "id": "3e507a42-437f-4e1e-b31a-9e6465569dc3",
+      "content_id": "4af041a6-e3cb-4df7-8244-6b3abb89f084",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Rxfp1, the receptor for pregnancy hormone relaxin, is differentially expressed in cluster 1, and relaxin signaling is involved in reproductive cycle regulation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C26 and C27 are supported by established knowledge (C26) and appropriate citations (C27 to Valkovic et al., 2019 and Anand-Ivell and Ivell, 2014). Rxfp1 is among the 21 differentially expressed genes in Table 1.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:48:41.595878Z"
+    },
+    {
+      "id": "c2428e5c-7bdf-4171-9fc6-62089293d333",
+      "content_id": "4af041a6-e3cb-4df7-8244-6b3abb89f084",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "The authors name Gm13030 as Shiji (Shj) after a female figure born from stone in Chinese mythology, reflecting its de novo origin.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C37 is a nomenclature decision by the authors, appropriately justified by the de novo origin of the gene and its female-specific function.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:48:41.595878Z"
+    },
+    {
+      "id": "f6bf007b-dff5-447a-a151-d67d47416560",
+      "content_id": "4af041a6-e3cb-4df7-8244-6b3abb89f084",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "Previous research has focused on male-biased expression and male fertility effects of de novo genes. Female reproduction should also show accelerated evolution but has been neglected, partly due to estrous cycle complexity and the abundance of meiotic cells in testis versus ovaries. Shj acts in somatic oviduct cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C42, C43, and C46 are supported by appropriate citations to prior work. Claims C44, C45, and C47 represent reasonable assessments of the field and biological complexity. Claim C48 is supported by the oviduct expression data. These claims provide important context for the significance of studying female-specific de novo genes.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:48:41.595878Z"
+    },
+    {
+      "id": "633eb287-29f7-478c-a4d7-51bbe4355f0c",
+      "content_id": "4af041a6-e3cb-4df7-8244-6b3abb89f084",
+      "result_id": "R20",
+      "result_category": "llm",
+      "result": "Contrary to historical assumptions that functional de novo gene emergence is rare, the authors demonstrate that many well-supported de novo gene transcripts exist, Shj has clear transcriptomic and phenotypic functions, and random protein sequences can convey evolutionarily relevant functions, though early-stage genes are subject to frequent secondary loss.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C49-C52 are supported by the identification of 119 candidate genes with translation evidence and the functional characterization of Shj. Claims C57, C58, and C83 appropriately cite supporting literature (Bao et al., 2017; Neme et al., 2017; Palmieri et al., 2014) and integrate these with the current findings. This represents a major conceptual contribution.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:48:41.595878Z"
+    },
+    {
+      "id": "9ccb8993-a0dc-4c47-9b70-b5f9ad1d02a6",
+      "content_id": "4af041a6-e3cb-4df7-8244-6b3abb89f084",
+      "result_id": "R21",
+      "result_category": "llm",
+      "result": "The introduction establishes that while de novo gene emergence is well-documented genomically and duplication-divergence is well-understood, functional analysis of young de novo genes has been lacking. Prior functional studies focused mainly on yeast and male fertility in flies/mice. Mammalian females have complex reproduction and should harbor functional de novo genes affecting female fertility.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C66-C80 provide appropriate background context, accurately citing prior work and identifying the gap in knowledge that this study addresses. These claims establish the motivation and significance of the research.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:48:41.595878Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "679579e3-ec6a-4518-9705-677c27af2e9b",
+      "result_id": "70aee903-460d-4310-ac07-939c72a1f384"
+    },
+    {
+      "claim_id": "bec9b02b-e86d-4f1b-8b82-846a847a2d2a",
+      "result_id": "70aee903-460d-4310-ac07-939c72a1f384"
+    },
+    {
+      "claim_id": "d7cbd0e8-045f-4faf-8ae8-f9990537f49a",
+      "result_id": "70aee903-460d-4310-ac07-939c72a1f384"
+    },
+    {
+      "claim_id": "07c6f186-c6df-4ceb-aa90-eedcb7220786",
+      "result_id": "b431c0f0-4ef0-4dc2-9607-9a7978ede3a2"
+    },
+    {
+      "claim_id": "d6b90ed5-8ae1-4528-8bee-0281d23163b7",
+      "result_id": "b431c0f0-4ef0-4dc2-9607-9a7978ede3a2"
+    },
+    {
+      "claim_id": "74cea9f1-77ba-4042-8cf9-185fb4103b30",
+      "result_id": "b431c0f0-4ef0-4dc2-9607-9a7978ede3a2"
+    },
+    {
+      "claim_id": "732f601e-0f4a-48aa-9252-48833231d832",
+      "result_id": "b431c0f0-4ef0-4dc2-9607-9a7978ede3a2"
+    },
+    {
+      "claim_id": "d4eb0af0-83fb-42b1-bb55-2e4df25a1380",
+      "result_id": "b431c0f0-4ef0-4dc2-9607-9a7978ede3a2"
+    },
+    {
+      "claim_id": "742d86b9-1386-4339-aba8-42bd736b7cf7",
+      "result_id": "b431c0f0-4ef0-4dc2-9607-9a7978ede3a2"
+    },
+    {
+      "claim_id": "21e6bddd-f4cc-4708-8c9d-0136450e95f9",
+      "result_id": "b431c0f0-4ef0-4dc2-9607-9a7978ede3a2"
+    },
+    {
+      "claim_id": "092459d2-5416-4781-91b2-62e898ec8d0f",
+      "result_id": "9d689018-c8cd-4be1-b4e2-a753dd7450a5"
+    },
+    {
+      "claim_id": "1a8e2d2a-07f1-45e4-97bd-fb2f5d23507c",
+      "result_id": "9d689018-c8cd-4be1-b4e2-a753dd7450a5"
+    },
+    {
+      "claim_id": "cfaf5c68-e1a3-45cf-ac28-1ce29803d7e4",
+      "result_id": "57f20d7a-8988-423d-8851-f4afaaa997cf"
+    },
+    {
+      "claim_id": "3d9c746c-e837-44bd-8cfd-bcef9162ae77",
+      "result_id": "57f20d7a-8988-423d-8851-f4afaaa997cf"
+    },
+    {
+      "claim_id": "b0003e92-ba62-4ba1-94c9-b110f10a880b",
+      "result_id": "57f20d7a-8988-423d-8851-f4afaaa997cf"
+    },
+    {
+      "claim_id": "7114f5dc-f890-4b64-99c4-a38cd0009dfc",
+      "result_id": "57f20d7a-8988-423d-8851-f4afaaa997cf"
+    },
+    {
+      "claim_id": "6183345b-9b8b-417c-b8f3-3116ec8574e0",
+      "result_id": "57f20d7a-8988-423d-8851-f4afaaa997cf"
+    },
+    {
+      "claim_id": "2a10170f-4c47-43df-900a-c581b6f42bd0",
+      "result_id": "57f20d7a-8988-423d-8851-f4afaaa997cf"
+    },
+    {
+      "claim_id": "02ed4252-6d64-427c-9d16-0e808ce82f6b",
+      "result_id": "c2f51aa5-fb7f-499c-854e-8f1d3af56ff0"
+    },
+    {
+      "claim_id": "8d6bef49-ee73-4d50-bfcf-51621bb2d128",
+      "result_id": "c2f51aa5-fb7f-499c-854e-8f1d3af56ff0"
+    },
+    {
+      "claim_id": "f91c8587-10c4-452e-9862-8ff7f5586fe1",
+      "result_id": "c2f51aa5-fb7f-499c-854e-8f1d3af56ff0"
+    },
+    {
+      "claim_id": "14456a30-cecf-4354-9e5f-120a0954a677",
+      "result_id": "6b26034e-2922-43d9-91ca-f5f64404609f"
+    },
+    {
+      "claim_id": "79ff48cf-fdce-4c2e-8fcc-3f08bb9bb225",
+      "result_id": "6b26034e-2922-43d9-91ca-f5f64404609f"
+    },
+    {
+      "claim_id": "e4d35821-349b-4669-ac45-ca14774284bf",
+      "result_id": "6b26034e-2922-43d9-91ca-f5f64404609f"
+    },
+    {
+      "claim_id": "1eeddb73-c2ea-4e42-84e2-0eb27839c91e",
+      "result_id": "6b26034e-2922-43d9-91ca-f5f64404609f"
+    },
+    {
+      "claim_id": "66a13861-1ec8-443c-9cb1-2484f63405a4",
+      "result_id": "6b26034e-2922-43d9-91ca-f5f64404609f"
+    },
+    {
+      "claim_id": "d1137277-eeb3-4b5a-ad26-1e96d4e4bf9b",
+      "result_id": "6b26034e-2922-43d9-91ca-f5f64404609f"
+    },
+    {
+      "claim_id": "cdd22559-c41e-49f6-8e27-6dddb9e42886",
+      "result_id": "6b26034e-2922-43d9-91ca-f5f64404609f"
+    },
+    {
+      "claim_id": "127c1f56-0a08-4f4f-944b-8194128adbe9",
+      "result_id": "98aa793f-dc6f-4611-8cb5-d33b585fe552"
+    },
+    {
+      "claim_id": "76736142-1c48-448a-a459-bb441c5f556f",
+      "result_id": "98aa793f-dc6f-4611-8cb5-d33b585fe552"
+    },
+    {
+      "claim_id": "1ac44568-25ca-4e6a-a21d-6336eed5a60a",
+      "result_id": "98aa793f-dc6f-4611-8cb5-d33b585fe552"
+    },
+    {
+      "claim_id": "adb8b9f0-c3cd-48b3-b6d1-62d8989dc848",
+      "result_id": "98aa793f-dc6f-4611-8cb5-d33b585fe552"
+    },
+    {
+      "claim_id": "12d5edd3-487a-477f-ad26-937048590aae",
+      "result_id": "98aa793f-dc6f-4611-8cb5-d33b585fe552"
+    },
+    {
+      "claim_id": "9a67dc34-920b-4808-9c3d-22d29ceb4a8d",
+      "result_id": "dc662010-deac-4dc8-8609-fe2308b9df01"
+    },
+    {
+      "claim_id": "ccbd649a-3ac1-497e-a206-94fea7eed7e3",
+      "result_id": "dc662010-deac-4dc8-8609-fe2308b9df01"
+    },
+    {
+      "claim_id": "d19c72dc-91e5-4137-af75-0e922e4da538",
+      "result_id": "dc662010-deac-4dc8-8609-fe2308b9df01"
+    },
+    {
+      "claim_id": "260547b8-d2a7-4931-a4ad-b62b53421c6a",
+      "result_id": "99d917c5-f20a-490b-8a42-b3a38d19b3af"
+    },
+    {
+      "claim_id": "42553289-9bf1-4435-bb12-fd9fc82557c7",
+      "result_id": "99d917c5-f20a-490b-8a42-b3a38d19b3af"
+    },
+    {
+      "claim_id": "ed871a55-69d3-4e86-907f-f14497bcc5ec",
+      "result_id": "10810f36-47da-4d42-99bb-dedbf69233f3"
+    },
+    {
+      "claim_id": "9ff59cf7-45c8-4141-b388-52d60877a284",
+      "result_id": "409ba18c-efb6-4463-88a2-e9045c143bc4"
+    },
+    {
+      "claim_id": "b8f5929e-0353-4b08-a91a-d99c7fb8cd85",
+      "result_id": "409ba18c-efb6-4463-88a2-e9045c143bc4"
+    },
+    {
+      "claim_id": "1ea4e10d-dbc4-4885-9de5-d7f7fe6d6d03",
+      "result_id": "67ecf9a9-c4aa-44a3-bc1a-4a5dcc839a93"
+    },
+    {
+      "claim_id": "d58828d7-3418-4b69-a615-0f98a867ae48",
+      "result_id": "67ecf9a9-c4aa-44a3-bc1a-4a5dcc839a93"
+    },
+    {
+      "claim_id": "9a659d72-e894-4849-accb-e0af30f9d6f7",
+      "result_id": "67ecf9a9-c4aa-44a3-bc1a-4a5dcc839a93"
+    },
+    {
+      "claim_id": "ef4325e5-213f-409b-aa75-efc9490b3164",
+      "result_id": "953314a3-e779-4851-ad4f-6d4447e95f35"
+    },
+    {
+      "claim_id": "7d59c511-7a91-42f0-ab49-7b395279f16e",
+      "result_id": "953314a3-e779-4851-ad4f-6d4447e95f35"
+    },
+    {
+      "claim_id": "62da6a6a-8d96-47e9-8722-ecac53cfc52c",
+      "result_id": "953314a3-e779-4851-ad4f-6d4447e95f35"
+    },
+    {
+      "claim_id": "26d32dc7-e051-44e4-8004-bb507cb4ce20",
+      "result_id": "953314a3-e779-4851-ad4f-6d4447e95f35"
+    },
+    {
+      "claim_id": "d3c1c90a-65af-4b41-a2fa-18a9ed65b2c4",
+      "result_id": "8213c9e6-cafb-43ef-9aba-57bdb6d87205"
+    },
+    {
+      "claim_id": "5d4d36de-75d7-44cf-9c80-e5c89b5e6912",
+      "result_id": "5860500d-6a59-42ad-9908-4c5d37f20fb6"
+    },
+    {
+      "claim_id": "e989c324-6a9b-4381-bf31-0a09a46f6db4",
+      "result_id": "5860500d-6a59-42ad-9908-4c5d37f20fb6"
+    },
+    {
+      "claim_id": "87971b96-5104-4395-bb34-b0d07d1334a5",
+      "result_id": "5860500d-6a59-42ad-9908-4c5d37f20fb6"
+    },
+    {
+      "claim_id": "672151a6-3e3d-4767-9c30-ff860beb7514",
+      "result_id": "5860500d-6a59-42ad-9908-4c5d37f20fb6"
+    },
+    {
+      "claim_id": "44c43523-ec95-40eb-b941-165ecd4c4747",
+      "result_id": "5860500d-6a59-42ad-9908-4c5d37f20fb6"
+    },
+    {
+      "claim_id": "11d72aed-9758-446b-bd57-90a686ef088f",
+      "result_id": "8264c622-5f8f-4d4a-9c88-ec2a17ee40a8"
+    },
+    {
+      "claim_id": "2e0cf4a7-21c9-4381-9487-dd8e272bdbc7",
+      "result_id": "8264c622-5f8f-4d4a-9c88-ec2a17ee40a8"
+    },
+    {
+      "claim_id": "fe271ecb-2798-4098-830d-bd30263e71c4",
+      "result_id": "8264c622-5f8f-4d4a-9c88-ec2a17ee40a8"
+    },
+    {
+      "claim_id": "c39c7ddd-b66c-48ee-bc69-78f6226d929f",
+      "result_id": "8264c622-5f8f-4d4a-9c88-ec2a17ee40a8"
+    },
+    {
+      "claim_id": "2787daa9-17ed-4f8a-ad73-d055271be926",
+      "result_id": "8264c622-5f8f-4d4a-9c88-ec2a17ee40a8"
+    },
+    {
+      "claim_id": "f152b724-c728-4afb-a683-f8d4a56020f1",
+      "result_id": "8264c622-5f8f-4d4a-9c88-ec2a17ee40a8"
+    },
+    {
+      "claim_id": "16b018c6-c09c-47d8-98ff-212fff27c134",
+      "result_id": "3e507a42-437f-4e1e-b31a-9e6465569dc3"
+    },
+    {
+      "claim_id": "00b13771-685d-4a80-8a48-95142d1333f2",
+      "result_id": "3e507a42-437f-4e1e-b31a-9e6465569dc3"
+    },
+    {
+      "claim_id": "518c6551-0187-466e-813b-ed0caf956b31",
+      "result_id": "c2428e5c-7bdf-4171-9fc6-62089293d333"
+    },
+    {
+      "claim_id": "df70dde1-782f-4973-a6ce-2f27cc9e3632",
+      "result_id": "f6bf007b-dff5-447a-a151-d67d47416560"
+    },
+    {
+      "claim_id": "61b6902f-5ac2-457e-99ab-6e489c59ed78",
+      "result_id": "f6bf007b-dff5-447a-a151-d67d47416560"
+    },
+    {
+      "claim_id": "11c29d8a-41a5-4051-8c99-da9fd98876cb",
+      "result_id": "f6bf007b-dff5-447a-a151-d67d47416560"
+    },
+    {
+      "claim_id": "46309bf8-d472-4f86-9663-010694979156",
+      "result_id": "f6bf007b-dff5-447a-a151-d67d47416560"
+    },
+    {
+      "claim_id": "2aa1ee97-bae2-4afe-ab54-78103e07d1b5",
+      "result_id": "f6bf007b-dff5-447a-a151-d67d47416560"
+    },
+    {
+      "claim_id": "56fff3e1-1440-4275-8d2c-8c524866ba7e",
+      "result_id": "f6bf007b-dff5-447a-a151-d67d47416560"
+    },
+    {
+      "claim_id": "fd36af86-e424-41fb-b2ce-0b2d78cd42f4",
+      "result_id": "f6bf007b-dff5-447a-a151-d67d47416560"
+    },
+    {
+      "claim_id": "fd2cc908-9f2f-46c8-a76d-1b05ac7035b6",
+      "result_id": "633eb287-29f7-478c-a4d7-51bbe4355f0c"
+    },
+    {
+      "claim_id": "764671a6-7c52-48c9-a4c1-05a65a5814da",
+      "result_id": "633eb287-29f7-478c-a4d7-51bbe4355f0c"
+    },
+    {
+      "claim_id": "b1939709-d56f-4d80-8d6f-d0cbcc2fe640",
+      "result_id": "633eb287-29f7-478c-a4d7-51bbe4355f0c"
+    },
+    {
+      "claim_id": "16e49a29-9189-4a6a-a797-ac106e16b589",
+      "result_id": "633eb287-29f7-478c-a4d7-51bbe4355f0c"
+    },
+    {
+      "claim_id": "166a7e1d-c87c-4feb-aee4-a445642c802b",
+      "result_id": "633eb287-29f7-478c-a4d7-51bbe4355f0c"
+    },
+    {
+      "claim_id": "522a7108-ba57-455d-905c-8fbc555a2a8a",
+      "result_id": "633eb287-29f7-478c-a4d7-51bbe4355f0c"
+    },
+    {
+      "claim_id": "ed61dbb0-408e-445a-b084-5dc03b752ddf",
+      "result_id": "633eb287-29f7-478c-a4d7-51bbe4355f0c"
+    },
+    {
+      "claim_id": "48eb7197-377f-4b52-9546-f0ac21bd554e",
+      "result_id": "9ccb8993-a0dc-4c47-9b70-b5f9ad1d02a6"
+    },
+    {
+      "claim_id": "e2c343d6-3d7b-4a8c-9ebd-8ae6ca3d2280",
+      "result_id": "9ccb8993-a0dc-4c47-9b70-b5f9ad1d02a6"
+    },
+    {
+      "claim_id": "76eac099-d83a-4567-b5fc-eaf9ba228ded",
+      "result_id": "9ccb8993-a0dc-4c47-9b70-b5f9ad1d02a6"
+    },
+    {
+      "claim_id": "0d311301-84b2-47c3-883d-5fdaf66260db",
+      "result_id": "9ccb8993-a0dc-4c47-9b70-b5f9ad1d02a6"
+    },
+    {
+      "claim_id": "89ae308d-5b4e-4c37-8176-50b919ddd153",
+      "result_id": "9ccb8993-a0dc-4c47-9b70-b5f9ad1d02a6"
+    },
+    {
+      "claim_id": "16246fc2-19d7-4fd6-85e6-9f81f53dde96",
+      "result_id": "9ccb8993-a0dc-4c47-9b70-b5f9ad1d02a6"
+    },
+    {
+      "claim_id": "b1f53cca-b57f-4934-ac23-a0089eea2d2a",
+      "result_id": "9ccb8993-a0dc-4c47-9b70-b5f9ad1d02a6"
+    },
+    {
+      "claim_id": "be5ac1e9-cea5-433c-b1d0-f5ce5430daa7",
+      "result_id": "9ccb8993-a0dc-4c47-9b70-b5f9ad1d02a6"
+    },
+    {
+      "claim_id": "06392259-d0a9-4b5a-af6c-1c984cabe00f",
+      "result_id": "9ccb8993-a0dc-4c47-9b70-b5f9ad1d02a6"
+    },
+    {
+      "claim_id": "edcef80a-6d1e-453e-8746-9bab410e008b",
+      "result_id": "9ccb8993-a0dc-4c47-9b70-b5f9ad1d02a6"
+    },
+    {
+      "claim_id": "02dda88f-6857-4912-8460-e4b1d95fa078",
+      "result_id": "9ccb8993-a0dc-4c47-9b70-b5f9ad1d02a6"
+    },
+    {
+      "claim_id": "cccd1616-91ff-4d9d-95b2-d57f9c153513",
+      "result_id": "9ccb8993-a0dc-4c47-9b70-b5f9ad1d02a6"
+    },
+    {
+      "claim_id": "0e6c20b0-44ea-4037-843a-616fe0eac6c9",
+      "result_id": "9ccb8993-a0dc-4c47-9b70-b5f9ad1d02a6"
+    },
+    {
+      "claim_id": "1a82c9cf-22b7-428e-a63d-964878578bb2",
+      "result_id": "9ccb8993-a0dc-4c47-9b70-b5f9ad1d02a6"
+    },
+    {
+      "claim_id": "a62030d9-9ea9-4d12-b362-f9affea10dcc",
+      "result_id": "9ccb8993-a0dc-4c47-9b70-b5f9ad1d02a6"
+    }
+  ],
+  "comparisons": []
+}

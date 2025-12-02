@@ -1,0 +1,1961 @@
+{
+  "submission": {
+    "id": "c6af8029-954e-4d7b-8005-57beadefef07",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T06:32:08.834220Z",
+    "updated_at": "2025-12-02T06:32:08.834220Z"
+  },
+  "content": [
+    {
+      "id": "1f6ac84b-069d-482c-b838-209d5bfe12ba",
+      "submission_id": "c6af8029-954e-4d7b-8005-57beadefef07",
+      "content_type": "manuscript",
+      "content_text": "# Feedback optimizes neural coding and perception of natural stimuli\n\n## Authors\n\n- Chengjie G Huang<sup>1</sup> ([ORCID: 0000-0001-7491-6060](https://orcid.org/0000-0001-7491-6060))\n- Michael G Metzen<sup>1</sup> ([ORCID: 0000-0002-2365-4192](https://orcid.org/0000-0002-2365-4192))\n- Maurice J Chacron<sup>1</sup> ([ORCID: 0000-0002-3032-452X](https://orcid.org/0000-0002-3032-452X)) \u2020\n\n### Affiliations\n\n1. Department of Physiology McGill University Montreal Canada\n\n\u2020 Corresponding author\n\n## Abstract\n\nGrowing evidence suggests that sensory neurons achieve optimal encoding by matching their tuning properties to the natural stimulus statistics. However, the underlying mechanisms remain unclear. Here we demonstrate that feedback pathways from higher brain areas mediate optimized encoding of naturalistic stimuli via temporal whitening in the weakly electric fish Apteronotus leptorhynchus. While one source of direct feedback uniformly enhances neural responses, a separate source of indirect feedback selectively attenuates responses to low frequencies, thus creating a high-pass neural tuning curve that opposes the decaying spectral power of natural stimuli. Additionally, we recorded from two populations of higher brain neurons responsible for the direct and indirect descending inputs. While one population displayed broadband tuning, the other displayed high-pass tuning and thus performed temporal whitening. Hence, our results demonstrate a novel function for descending input in optimizing neural responses to sensory input through temporal whitening that is likely to be conserved across systems and species.\n\n## Introduction\n\nHow sensory neurons process incoming sensory input thereby leading to perception and behavior remains a central question in systems neuroscience. There is growing evidence showing that neural systems can efficiently process natural sensory input by matching their tuning properties to natural stimulus statistics, thereby removing redundancy and thus maximizing information transmission (Fairhall et al., 2001; Brenner et al., 2000; Maravall et al., 2007). Theory posits that efficient coding is achieved by ensuring that the neural tuning function is inversely proportional to stimulus intensity as a function of frequency, thereby achieving a neural response whose amplitude is independent of frequency (Rieke et al., 1996). While such \u2018whitening\u2019 has been observed across species and systems (Dan et al., 1996; Wang et al., 2003; Huang et al., 2016; Pozzorini et al., 2013; Pitkow and Meister, 2012), the nature of the underlying mechanisms remains unclear.\n\nWeakly electric fish offer an attractive model system for studying the mechanisms underlying optimized coding of natural stimuli because of well-characterized anatomy and physiology (Clarke et al., 2015; Berman and Maler, 1999; Chacron et al., 2011). These fish generate a quasi-sinusoidal signal called the electric organ discharge (EOD) around their body, thereby allowing them to explore the environment and communicate with conspecifics. When two conspecifics are located close (<1 m) to one another, each fish experiences an amplitude modulation of its own EOD (i.e., a beat or first-order) whose amplitude (i.e., envelope or second-order) is a function of the distance and relative orientation between two conspecifics (Yu et al., 2012; Fotowat et al., 2013) (see (Stamper et al., 2013) for review). Natural electrosensory envelopes due to movement measured in freely moving animals display scale invariance in that their spectral power decays as a power law as a function of increasing temporal frequency (Fotowat et al., 2013; Metzen and Chacron, 2014). Weakly electric fish furthermore give robust behavioral responses to movement related envelopes in which the EOD frequency tracks the stimulus\u2019 detailed (Metzen and Chacron, 2014).\n\nEnvelopes and other electrosensory stimuli are sensed by peripheral receptors scattered over the animal\u2019s skin. These project to pyramidal cells within the electrosensory lateral line lobe (ELL) which in turn project to higher brain structures, thereby giving rise to behavior (Figure 1B). ELL pyramidal cells also receive large amounts of descending inputs (i.e., feedback) from higher brain centers such as the nucleus praeeminentialis (nP) and contact ELL pyramidal cells either directly (i.e., the direct feedback pathway) or indirectly (i.e., the indirect feedback pathway; Figure 1B) (Berman and Maler, 1999; Sas and Maler, 1983; Sas and Maler, 1987). Pyramidal cell responses to beats and other first-order electrosensory stimuli are well characterized in general (see (Clarke et al., 2015; Chacron et al., 2011; Marsat et al., 2012; Krahe and Maler, 2014; Huang and Chacron, 2017) for review) and several studies have shown that both direct and indirect feedback inputs play important roles in shaping (Bastian, 1986a; Bastian et al., 2004; Bastian, 1999; Bol et al., 2011; Chacron, 2006; Chacron et al., 2005) as well as synthesizing (Clarke and Maler, 2017) these. Recent studies have focused on characterizing ELL pyramidal cell responses to envelopes (Huang et al., 2016; Stamper et al., 2013; Huang and Chacron, 2017; Middleton et al., 2006; Zhang and Chacron, 2016; Huang and Chacron, 2016; Martinez et al., 2016). Specifically, it was shown that ELL pyramidal cells can optimally encode natural electrosensory envelopes because their high-pass tuning properties effectively oppose the decaying stimulus power, such that the response power is whitened (Huang et al., 2016; Zhang and Chacron, 2016; Huang and Chacron, 2016; Martinez et al., 2016). However, whether and, if so, how direct and indirect feedback inputs mediate optimized coding of envelopes by ELL pyramidal cells has not been investigated to date.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/38935/elife-38935-fig1-v2.jpg)\n\n**Figure 1.:** The stimuli consisted of amplitude modulations of the animal\u2019s own EOD: shown are an example AM waveform (blue), its envelope (red), and the full signal received by the animal (cyan) with their respective frequency contents. (B) Simplified schematic showing the relevant anatomy and circuitry of the electrosensory system. Peripheral receptors make excitatory synaptic contact with ON-type pyramidal cells (green) within the electrosensory lateral line lobe (ELL) and local interneurons (granule cells: GC) that inhibit OFF-type pyramidal cells (blue). All ELL pyramidal cells project to the midbrain torus semicircularis (TS) via the lateral lemniscus (LL), which in turn projects to higher brain areas (black) but also projects back to the nucleus praeeminentialis (nP). Stellate cells (St) within nP receive input from TS and project back to ELL pyramidal cells via the tractus stratum fibrosum (TsF). This feedback loop is known as the direct feedback pathway. A subclass of ELL pyramidal cells (deep cells) projects to nP multipolar cells (MP) that, together with several other cell types within nP (not shown) (Sas and Maler, 1983; Sas and Maler, 1987), in turn project to the Eminentia Granularis posterior (EGp) via the praeeminentialis electrosensory tract (PET). EGp granule cells (not shown) project back to ELL via parallel fibers (PF). This feedback loop is known at the indirect feedback pathway.\n\nHere we used a systems level approach to investigate how feedback input mediates optimized processing of natural envelope stimuli by ELL pyramidal cells. Pharmacological inactivation of all sources of descending input strongly reduced pyramidal cell and behavioral responses to envelopes. However, pyramidal cell responses to high envelope frequencies were relatively more attenuated than those to low envelope frequencies, such that the resulting tuning was no longer high-pass but independent of envelope frequency. As a consequence, optimized coding of natural stimuli by temporal whitening was compromised. In contrast, selective inactivation of indirect feedback input strongly increased both pyramidal cell and behavioral sensitivity to envelopes. However, enhancement was primarily seen for low envelope frequencies, such that the resulting pyramidal cell tuning curve was broadband, which also compromised optimized coding of natural stimuli by temporal whitening. Finally, we recorded from two different groups of nP neurons that project either directly or indirectly back to ELL pyramidal cells. nP neurons projecting directly to ELL displayed broadband envelope frequency tuning curves and thus did not perform temporal whitening. In contrast, nP neurons projecting indirectly to ELL displayed high-pass envelope frequency tuning curves that effectively opposed the decaying envelope stimulus spectral power content, thereby enabling temporal whitening. Our results demonstrate clear but distinct functional roles for both direct and indirect feedback pathways in determining how ELL pyramidal cells respond to envelopes. While the direct pathway enhances responses to envelopes independently of frequency, the indirect pathway instead selectively attenuates responses to low frequencies, thereby giving rise to the high-pass tuning that is necessary to optimize coding of natural envelopes via temporal whitening. Interestingly, our results also show that indirect feedback input to ELL is temporally whitened. Our results thus demonstrate an important new function for descending inputs onto sensory neurons in optimizing their responses to natural stimuli and their perception at the organismal level.\n\n## Results\n\nWe investigated the mechanisms that enable ELL pyramidal cells to optimally encode envelope stimuli. To do so, we performed recordings from these in awake behaving animals (Figure 1A). Data obtained from ON- and OFF-type ELL pyramidal neurons were pooled because, consistent with previous studies (Huang and Chacron, 2016), we found no overall difference between their responses to envelopes. Our stimuli consisted of sinusoidal AMs with constant amplitude as well as noisy EOD AMs whose envelope varied sinusoidally at different frequencies. The left panel of Figure 1A shows example traces of the AM (blue, first-order), envelope (red, second-order), and the full signal (cyan) received by the animal with their respective temporal frequency contents. It is further important to realize that the animal\u2019s EOD is a carrier and that the meaningful stimulus here is the EOD AM. Thus, both first- and second-order features of the stimulus correspond to the second- and third-order features of the full signal received by the animal, respectively. We recorded both the neural activity as well as the animal\u2019s behavioral response that consists of changes in the EOD frequency (Figure 1A). Figure 1B shows a simplified diagram of the relevant anatomy and circuitry of the electrosensory system. Peripheral receptors make synaptic contact onto ELL pyramidal cells either directly with excitation for ON-type cells or indirectly via local inhibitory interneurons for OFF-type cells. Pyramidal cells are the sole output neurons of the ELL and project to the midbrain torus semicircularis (TS) which in turn projects to higher brain areas. As mentioned above, ELL pyramidal cells receive large amounts of feedback input both directly from nP (direct feedback; Figure 1B, brown) and indirectly via the Eminentia Granularis posterior (EGp) (indirect feedback; Figure 1B, orange). As explained above, previous studies have shown that ELL pyramidal cells can optimally encode natural envelope stimuli because their high-pass tuning curves (Figure 2, middle panel) are set to counter the decaying stimulus spectral power (Figure 2, left panel). The resulting response spectrum is thus independent of frequency (Figure 2, right panel) which optimizes information transmission (Huang et al., 2016; Huang and Chacron, 2016) (see (Huang and Chacron, 2017) for review).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/38935/elife-38935-fig2-v2.jpg)\n\n### Descending input shapes neural responses and perception of envelopes\n\nWe performed several manipulations that either completely or selectively inactivated feedback input onto ELL pyramidal cells that are schematized in Figure 3. The first consists of completely inactivating feedback by injecting the sodium channel antagonist lidocaine bilaterally into nP (Figure 3A). The second consists of selectively inactivating the indirect feedback by injecting lidocaine bilaterally (for behavior) or ipsilaterally (for neurons) into PET (Figure 3B). The third consists of selectively inactivating the indirect feedback by injecting the non-competitive glutamate receptor antagonist 6-cyano-7-nitroquinoxaline-2,3-dione (CNQX) into the ELL molecular layer (Figure 3C). We note that injecting lidocaine into PET will block indirect feedback input to most if not all pyramidal cells within the ipsilateral ELL. In contrast, injecting CNQX into the ELL molecular layer will only block indirect feedback input in the vicinity of the ELL being recorded from (Chacron et al., 2005; Bastian, 1993).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/38935/elife-38935-fig3-v2.jpg)\n\n**Figure 3.:** In all cases, neural recordings were obtained from pyramidal cells within the ipsilateral ELL. (A) Schematic showing a method to inactivate both the direct and the indirect feedback pathways (i.e., complete feedback inactivation) that involves injecting lidocaine bilaterally into nP. (B) Schematic showing a method to inactivate the indirect feedback that involves injecting lidocaine bilaterally (for behavior) or ipsilaterally (for neurons) into PET. (C) Schematic showing an alternative method to inactivate the indirect feedback that involves injecting CNQX into the ipsilateral ELL molecular layer.\n\nWe initially investigated the effects of complete feedback inactivation on neural and behavioral responses to envelopes (Figure 4). We found that complete feedback inactivation strongly attenuated ELL pyramidal neural responses to envelopes (Figure 4A, compare black and purple). Under control conditions, cells typically responded vigorously to the sinusoidal envelope (Figure 4A, top panel, red) through changes in firing rate (Figure 4A, bottom panel, black). However, after complete feedback inactivation, responses to the envelope were strongly reduced (Figure 4A, bottom panel, purple). We next varied the envelope frequency and investigated the effects of complete feedback inactivation on envelope tuning. Under control conditions, the tuning curve of ELL pyramidal cells is high-pass, such that neural gain increases as a power law when envelope frequency is increased (Figure 4B, black). Further, the power law exponent is set such as to oppose the decay of the spectrum of natural envelopes, thereby causing the response power to be independent of frequency (i.e., is \u2018whitened\u2019, Figure 4C, black) as quantified by a white index (see methods) value near unity (Figure 4F, left panel, black), which is required for optimal coding. Complete feedback inactivation strongly affected tuning curves as well as temporal whitening. Indeed, we observed a strong attenuation in neural gain for all envelope frequencies tested (Figure 4B, compare black and purple). However, the attenuation was more pronounced for higher envelope frequencies, such as the resulting tuning curve was flat as characterized by a power law exponent near zero (Figure 4B, purple, see inset). Such a change in tuning strongly affected whitening as response power was no longer independent of frequency (Figure 4C, purple), as quantified by a lower white index value (Figure 4F, left panel, purple) together with a decrease in neural sensitivity (Figure 4F, right panel) indicating sub-optimal coding. These results imply that feedback inputs optimize neural coding of envelopes by enhancing neural responses in a frequency dependent manner. Indeed, higher envelope frequencies are more amplified relative to lower envelope frequencies, thereby whitening neural responses to natural envelopes.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/38935/elife-38935-fig4-v2.jpg)\n\n**Figure 4.:** Results are shown before and after complete feedback inactivation was achieved via injection of lidocaine into nP. (A) Top: sinusoidal envelope waveform (red). Middle: time dependent firing rate from a typical ELL pyramidal cell before (black) and after (purple) lidocaine application. Bottom: spiking activity from this same neuron in response to stimulation before (black) and after (purple) lidocaine application. (B) Population-averaged tuning curve quantified by the neural gain as a function of envelope frequency before (black) and after (purple) lidocaine application. The dashed lines show the best power law fits to the data. Inset: Population-averaged best-fit power law exponents before (black) and after (purple) lidocaine injection were significantly different from one another (p=0.0156, Wilcoxon Signed-Rank Test). (C) Population-averaged neural response power as a function of envelope frequency before (black) and after (purple) lidocaine application. The dashed lines show the best power law fits to the data. (D) Top: sinusoidal envelope waveform (red). Bottom: time dependent EOD frequency from a typical fish before (black) and after (purple) lidocaine application. (E) Population-averaged behavioral gain as a function of envelope frequency before (black) and after (purple) lidocaine application. The dashed lines show the best power law fits to the data. Inset: Population-averaged best-fit power law exponents before (black) and after (purple) lidocaine injection were significantly different from one another (p=0.0313, Wilcoxon Signed-Rank Test). (F) Left: population-averaged white index values before (black) and after (purple) lidocaine application were significantly different from one another (p=0.0234, Wilcoxon Signed-Rank Test). Right: population-averaged relative changes in neural (left) and behavioral (right) gain following lidocaine application were both significantly different from zero (neuron: p=4.77*10\u22124, Wilcoxon Signed-Rank Test, behavior: p=0.002, Wilcoxon Signed-Rank Test). \u2018*' indicates statistical significance at the p=0.05 level.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/38935/elife-38935-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A) Spike-triggered average (STA) of the noisy AM stimulus waveform before (black) and after (purple) complete feedback inactivation for a typical ON-type pyramidal cell. (B) Population-averaged STA amplitudes before and after injection were not significantly different from one another (p=0.469, Wilcoxon Signed-Rank Test).\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/38935/elife-38935-fig4-figsupp2-v2.jpg)\n\n**Figure 4\u2014figure supplement 2.:** (A) Top: sinusoidal envelope waveform (red). Middle: time dependent firing rate from a typical ELL pyramidal cell before (black) and after (beige) saline application. Bottom: spiking activity from this same neuron before (black) and after (beige) saline application. (B) Population-averaged tuning curve quantified by the neural gain as a function of envelope frequency before (black) and after (beige) saline application. The dashed lines show the best power law fits to the data. Inset: population-averaged best-fit power law exponent before (black) and after (beige) saline injection. No significant changes were observed (p=0.641 Wilcoxon Signed-Rank Test). (C) Population-averaged neural response power before (black) and after (beige) saline application. The dashed lines show the best power law fits to the data. (D) Top: Sinusoidal envelope waveform (red). Bottom: time dependent EOD frequency in response to the stimulus from a typical fish before (black) and after (beige) saline application. (E) Population-averaged behavioral gain as a function of envelope frequency before (black) and after (beige) saline application. The dashed lines show the best power law fits to the data. Inset: population-averaged best-fit power law exponent before (black) and after (beige) saline injection. No significant changes were observed (p=0.938, Wilcoxon Signed-Rank Test). (F) Left: population-averaged white index values before (black) and after (beige) saline application. No significant changes were observed (p=0.547, Wilcoxon Signed-Rank Test). Right: population-averaged relative changes in neural and behavioral sensitivities following saline application. No significant changes were observed (neuron: p=0.710, Wilcoxon Signed-Rank Test, behavior p=0.750, Wilcoxon Signed-Rank Test). \u2018n. s.\u2019 indicates that the p-value was greater than 0.05.\n\n![Figure 4\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/38935/elife-38935-fig4-figsupp3-v2.jpg)\n\n**Figure 4\u2014figure supplement 3.:** (A) Top: sinusoidal envelope waveform (red). Middle: time dependent firing rate from a typical ELL pyramidal cell before (black) and after (purple) contralateral lidocaine application. Bottom: spiking activity from this same neuron before (black) and after (purple) lidocaine application. (B) Population-averaged tuning curve quantified by neural gain as a function of envelope frequency before (black) and after (purple) lidocaine application. The dashed lines show the best power law fits to the data. Inset: population-averaged best-fit power law exponent before (black) and after (purple) lidocaine application (p=0.0039, Wilcoxon Signed-Rank Test). (C) Population-averaged neural response power as a function of envelope frequency before (black) and after (purple) lidocaine application. The dashed lines show the best power law fits to the data. Inset: white index for neural response power before (black) and after (purple) lidocaine application (p=0.0156, Wilcoxon Signed-Rank Test).\n\nChanges in neural responses are only behaviorally relevant if they are actually decoded by downstream areas. Thus, we next investigated the effects of pharmacological inactivation of feedback pathways on behavioral responses. Under control conditions, the animal\u2019s EOD frequency tracks the envelope (Figure 4D, black). However, changes in EOD frequency are greater for low envelope frequencies, resulting in a behavioral gain that decreases as a power law for increasing envelope frequency, in a power-law manner (Figure 4E, black), consistent with previous results (Metzen and Chacron, 2014). Complete feedback inactivation strongly attenuated the animal\u2019s behavioral responses to envelopes (Figure 4D, purple) in a frequency dependent manner, such that attenuation was strongest for low envelope frequencies (Figure 4E, purple). Decreases in neural sensitivity were accompanied by decreases in behavioral sensitivity (Figure 4F, right panel).\n\nInterestingly, complete feedback inactivation did not affect ELL pyramidal cell responses to AMs (Figure 4\u2014figure supplement 1). We note that performing a \u2018Sham complete feedback inactivation\u2019 by injecting saline instead of lidocaine bilaterally into nP did not alter neural or behavioral responses to envelopes (Figure 4\u2014figure supplement 2). Finally, our results showing that complete feedback inactivation strongly affects ELL neural responses to envelopes were robust. This is because injecting lidocaine unilaterally within the contralateral nP while recording from pyramidal cells within the ipsilateral ELL gave rise to similar changes in neural responses to envelopes (Figure 4\u2014figure supplement 3).\n\n### Direct feedback enhances while indirect feedback optimizes neural responses to natural envelopes\n\nWe next investigated how direct and indirect sources of descending input contribute to determining ELL pyramidal cell and behavioral responses to envelopes (Figure 5). To do so, we inactivated the indirect feedback pathway by injecting lidocaine into PET bilaterally (Figure 3B). Consistent with previous results, lidocaine injection increased ELL pyramidal neuron responses to AMs (Figure 5\u2014figure supplement 1). We found that indirect feedback inactivation enhanced neural responses to envelopes (Figure 5A, compare black and orange). However, the envelope tuning quantified by neural gain was increased for low but not for high envelope frequencies, such that the tuning curve, which was initially high-pass (Figure 5B, black), became independent of frequency after lidocaine injection (Figure 5B, orange). This change in tuning antagonized optimal coding of envelopes, in that the response power spectrum was no longer independent of envelope frequency (Figure 5C, compare black and orange), as quantified by a decrease in the white index (Figure 5F, left, orange). Neural sensitivity was significantly increased (Figure 5F, right, orange). Thus, our results show that indirect sources of descending input actively shape ELL pyramidal cell tuning to envelopes by attenuating responses to low but not high envelope frequencies, thereby optimizing coding through whitening.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/38935/elife-38935-fig5-v2.jpg)\n\n**Figure 5.:** Results are shown before and after indirect feedback inactivation was achieved via bilateral injection of lidocaine into the PET. Data obtained from ELL pyramidal neurons were pooled as there are no significant differences between the envelope response of ON- and OFF-type pyramidal cells (Huang and Chacron, 2016). (A) Top: Sinusoidal envelope waveform (red). Middle: Time dependent firing rate from a typical ELL pyramidal cell before (black) and after (orange) lidocaine application. Bottom: spiking activity from this same neuron in response to stimulation before (black) and after (orange) lidocaine application. (B) Population-averaged tuning curve quantified by neural gain to sinusoidal envelopes as a function of envelope frequency before (black) and after (green) lidocaine application. The dashed lines show the best power law fits to the data. Inset: population-averaged best-fit power law exponent before (black) and after (orange) lidocaine injection (p=0.0039, Wilcoxon Signed-Rank Test). (C) Population-averaged neural response power as a function of envelope frequency before (black) and after (orange) lidocaine application. The dashed lines show the best power law fits to the data. (D) Top: sinusoidal envelope waveform (red). Bottom: Time dependent EOD frequency from a typical fish before (black) and after bilateral (orange) lidocaine injection. (E) Population-averaged behavioral gain as a function of envelope frequency before (black) and after (orange) lidocaine injection. Inset: population-averaged best-fit power law exponent before (black) and after (orange) lidocaine injection (p=0.0234, Wilcoxon Signed-Rank Test). The dashed lines show the best power law fits to the data. (F) Left: population-averaged white index before (black) and after (orange) lidocaine application (p=0.0273, Wilcoxon Signed-Rank Test). Right: population-averaged relative changes in neural and behavioral sensitivity following lidocaine application (neuron: p=7.03*10\u22126, Wilcoxon Signed-Rank Test, behavior: p=6.74*10\u22124, Wilcoxon Signed-Rank Test). \u2018*' indicates statistical significance at the p=0.05 level.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/38935/elife-38935-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** (A) Spike-triggered average (STA) of the noisy AM stimulus waveform from an example ELL pyramidal cell before (black) and after (orange) lidocaine injection. (B) Population-averaged STA amplitude was significantly increased by lidocaine injection (p=0.0391, Wilcoxon Signed-Rank Test).\n\n![Figure 5\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/38935/elife-38935-fig5-figsupp2-v2.jpg)\n\n**Figure 5\u2014figure supplement 2.:** (A) Top: sinusoidal envelope waveform (red). Middle: time dependent firing rate from a typical ELL pyramidal cell before (black) and after (orange) CNQX application. Bottom: spiking activity from this same neuron in response to stimulation before (black) and after (orange) CNQX application. (B) Population-averaged tuning curve quantified by neural gain as a function of envelope frequency before (black) and after (orange) CNQX application. The dashed lines show the best power law fits to the data. Inset: Population-averaged best-fit power law exponent before (black) and after (orange) CNQX application were significantly different from one another (p=0.0156, Wilcoxon Signed-Rank Test). (C) Population-averaged neural response power as a function of envelope frequency before (black) and after (orange) CNQX application. The dashed lines show the best power law fits to the data. Inset: Population-averaged white index values before (black) and after (orange) CNQX application were significantly different from one another (p=0.039, Wilcoxon Signed-Rank Test).\n\n![Figure 5\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/38935/elife-38935-fig5-figsupp3-v2.jpg)\n\n**Figure 5\u2014figure supplement 3.:** (A) Spike-triggered average (STA) of the noisy AM stimulus waveform from an example ELL pyramidal cell before (black) and after (orange) CNQX injection. (B) Population-averaged STA amplitude was significantly increased by CNQX injection (p=0.008, Wilcoxon Signed-Rank Test).\n\nIndirect feedback inactivation significantly enhanced the animal\u2019s behavioral responses to envelopes (Figure 5D, compare black and orange) only for low frequencies (Figure 5E, compare black and orange). The behavioral response curve thus decreased more steeply with increasing envelope frequency as reflected by a significant decrease in the behavioral exponent (Figure 5E, inset), leading to an increased behavioral sensitivity to envelopes only at low frequencies (Figure 5F, right, orange). Taken together, our results show that both direct and indirect feedback inputs onto ELL pyramidal cells have differential effects on envelope tuning and optimized coding. Specifically, they suggest that the function of the direct input is to enhance envelope responses independently of frequency while the indirect input selectively attenuates low frequencies, thereby optimizing coding.\n\nWe note that inactivating indirect feedback by injecting CNQX in the ELL molecular layer (Figure 3C) gave rise to similar effects on ELL pyramidal cell responses to envelopes (Figure 5\u2014figure supplement 2). Also, consistent with previous results (Bastian et al., 2004), this manipulation significantly increased ELL pyramidal cell responses to AMs (Figure 5\u2014figure supplement 3).\n\n### Responses of nP neurons that give rise to descending input onto ELL pyramidal cells\n\nFinally, we investigated the nature of the descending signals that are received by ELL pyramidal cells. To do so, we recorded from nP neurons that project both directly and indirectly to ELL (Figure 6A). Specifically, nP stellate cells project directly to ELL pyramidal cells while nP multipolar cells instead project indirectly through the EGp (Sas and Maler, 1983; Sas and Maler, 1987). Both cell types can easily be distinguished from one another based on their electrophysiological properties (Bastian and Bratton, 1990; Bratton and Bastian, 1990) (Figure 6\u2014figure supplement 1). Overall, our results show that both stellate and multipolar cells responded strongly to envelopes (Figure 6B) but showed differential envelope frequency tuning (Figure 6C). Specifically, stellate cell sensitivity was largely independent of envelope frequency (Figure 6C, brown) as quantified by a power law exponent near zero (Figure 6E, left panel, brown). As such, these cells did not perform temporal whitening of natural envelopes as their response power spectra decayed with increasing frequency (Figure 6D and E right, brown). These results confirm our hypothesis that the function of the direct feedback input is to enhance ELL pyramidal cell responses to envelopes independently of temporal frequency.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/38935/elife-38935-fig6-v2.jpg)\n\n**Figure 6.:** (A) Recordings were obtained from either Stellate (St) or multipolar (MP) cells within nP. (B) Top: sinusoidal envelope waveform (red). Bottom: Time dependent firing from typical nP stellate (brown) and multipolar (orange) cells. (C) Population-averaged tuning curve quantified by neural gain as a function of envelope frequency for nP stellate (brown) and multipolar (orange) cells. The dashed lines show the best power law fits to the data. (D) Population-averaged neural response power for stellate (brown) and multipolar (orange) cells. The dashed lines show the best power law fits to the data. (E) Population-averaged best-fit power law exponents (left) and white index (right) values for stellate (brown) and multipolar (orange) cells. In both cases, values obtained for stellate and multipolar cells were significantly different from one another (exponent: \u03c72\u00a0=\u00a012, p=5.32*10 - 4, Kruskal-Wallis ANOVA; white index: \u03c72\u00a0=\u00a010.7, p=0.0011, Kruskal-Wallis ANOVA). \u2018*' indicates statistical significance at the p=0.05 level.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/38935/elife-38935-fig6-figsupp1-v2.jpg)\n\n**Figure 6\u2014figure supplement 1.:** (A) Brown: AM frequency tuning curve for nP stellate cells. Note that the tuning curve rapidly drops off at higher frequencies\u00a0>\u00a032 Hz due to a lack of spiking responses to those frequencies. Orange: AM frequency tuning curve for nP multipolar cells. Note that the multipolar cells in contrast respond to the higher frequencies\u00a0>\u00a032 Hz. The tuning curves are in agreement with previous studies (Bastian and Bratton, 1990; Bratton and Bastian, 1990). (B) Whisker-boxplot of baseline (i.e., in the absence of stimulation firing rate distributions of stellate (brown) and multipolar (orange) cells from our dataset. Consistent with previous studies (Bastian and Bratton, 1990; Bratton and Bastian, 1990), multipolar cells have significantly higher baseline firing rates than stellate cells (\u03c72 = 12, p=5.32*10- 4, Kruskal-Wallis ANOVA). \u2018*' indicates statistical significance at the p=0.05 level.\n\nIn contrast, multipolar cells instead displayed high-pass tuning to envelopes (Figure 6C, orange) as quantified by a power law exponent near 0.4 (Figure 6E left, orange) that is similar to that observed for ELL pyramidal cells (compare with Figure 4B). As a result, we found that multipolar cells perform temporal whitening of envelopes as their response spectra was independent of frequency (Figure 6D, orange) as quantified by a white index near unity (Figure 6E right, orange). Thus, our results reveal that the feedback input that is sent indirectly to ELL pyramidal cells via the EGp is already temporally whitened. This result has important implications for understanding how temporal whitening of ELL pyramidal cell responses is achieved as discussed below.\n\n## Discussion\n\nWe investigated the roles of both direct and indirect sources of descending input onto ELL pyramidal cells in determining their responses to envelopes. Pharmacological inactivation of both direct and indirect sources strongly attenuated pyramidal cell and behavioral responses to envelopes. Because responses to higher envelope frequencies were more attenuated, the resulting tuning curve became independent of frequency, thereby compromising optimized coding through temporal whitening. Pharmacological inactivation of indirect input instead increased pyramidal cell and behavioral responses to envelopes. However, enhancement was observed primarily for low envelope frequencies, such that the resulting tuning curve was independent of frequency, which also compromised optimized coding through temporal whitening. Finally, we investigated the nature of the feedback signals being received both directly and indirectly by ELL pyramidal cells. Specifically, nP stellate cells that project directly to ELL displayed tuning curves that were independent of envelope frequency and did not perform temporal whitening. In contrast, nP multipolar cells that project indirectly to ELL displayed high-pass tuning and optimally encoded envelopes through temporal whitening. Thus, our results provide the first experimental evidence showing how descending pathways mediate optimized coding of stimuli by sensory neurons. While direct feedback input enhances neural responses independently of frequency, our results show that indirect feedback input selectively attenuates responses to low envelope frequencies, thereby giving rise to a high-pass tuning that opposes natural envelope statistics and optimizes coding through temporal whitening.\n\nOur results provide a new function for this feedback pathway by showing that nP stellate cells enhance the responses of ELL pyramidal cells to envelopes. Indeed, while previous studies have suggested that the function of this feedback pathway was to enhance responses to salient stimuli (Berman and Maler, 1999; Bratton and Bastian, 1990; Berman and Maler, 1998), experimental evidence supporting this hypothesis was lacking until recently when a clear role in synthesizing responses to motion stimuli consisting exclusively of first-order stimulus features was established (Clarke and Maler, 2017). A recent study has furthermore shown that the direct feedback pathway enables neural responses to weak envelope stimuli (Metzen et al., 2018). Our results show an important novel functional role for the direct feedback pathway in enhancing both neural responses to and perception of behaviorally relevant second-order (i.e., envelope) stimuli that is independent of frequency. Interestingly, previous studies have suggested that the direct feedback pathway could function as a sensory searchlight (Berman and Maler, 1999), as originally proposed by Crick (Crick, 1984), thereby enhancing salient stimulus features and attenuating others. Our results are consistent with descending input onto ELL pyramidal cells acting in this manner but instead suggest that concerted action from both direct and indirect sources is necessary. Indeed, while the direct pathway enhances responses to envelopes independently of frequency, the indirect pathway instead selectively attenuates responses to low frequencies, thereby favoring responses to higher frequencies.\n\nOverall, our results are consistent with previous ones showing that the tuning function of ELL pyramidal cells must be matched to natural statistics in order to optimize coding, which in turn ensures that behavioral sensitivity is greatest for frequencies at which natural stimuli contain the most power (Huang et al., 2016). However, we found that feedback inactivation altered ELL pyramidal cell tuning, thereby rendering coding sub-optimal, which caused a mismatch between behavioral sensitivity and natural statistics. However, our results suggest that the relationship between ELL pyramidal cell and behavioral responses to envelopes is more complicated than previously expected. Specifically, it was assumed that changes in the neural exponent of ELL pyramidal cells alone would determine changes in the behavioral exponent. Our current results show that this is not the case as pharmacological inactivation of both direct and indirect feedback input led to similar changes in the neural tuning exponent but led to opposite changes in the behavioral tuning exponent. Thus, it is not only the tuning exponent of ELL pyramidal cells that determines the behavioral exponent, but also the overall sensitivity. Further studies are needed to better understand how information transmitted by ELL pyramidal cells is decoded by higher brain areas in order to lead to behavioral responses.\n\nPrevious results have demonstrated important functions for the indirect feedback pathway such as gain control (Bastian, 1986a; Bastian, 1986b) as well as cancelation of both self and externally-generated low (<15 Hz) frequency spatially diffuse AM (i.e., first-order) stimuli (Bastian et al., 2004; Bastian, 1999; Chacron, 2006; Chacron et al., 2005; Clarke and Maler, 2017; Bastian, 1986b; Bastian, 1996a; Bastian, 1996b; Bastian, 1998), thereby allowing better detection of spatially localized stimuli (e.g., those caused by prey) (Bastian et al., 2004; Litwin-Kumar et al., 2012). Specifically, previous studies have shown that this pathway generates a negative image of the stimulus, thereby strongly reducing ELL pyramidal cell responses. More recent studies have shed light on how short-term burst-timing dependent depression helps in sculpting this negative image in an adaptive fashion (Bol et al., 2011; Bol et al., 2013; Mejias et al., 2013). In contrast, our results have demonstrated an important new function for indirect feedback in mediating optimized coding of envelope (i.e., second-order) stimuli by selectively attenuating responses to low frequencies.\n\nHow then can the same feedback pathway mediate attenuation of responses to both low-frequency AMs and envelopes? One possibility is that in both cases it is the same mechanisms that facilitate response attenuation. This is however unlikely to be the case because of the important difference between the frequency ranges of AMs and envelopes for which responses are attenuated, as mentioned above. Specifically, while the response to a 1 Hz AM will be strongly attenuated by feedback (Bol et al., 2011), our results show that this is not the case for a 1 Hz envelope. Previous results have shown that SK1 channels strongly determine envelope but not AM tuning properties. Specifically, pharmacological inactivation of SK1 channels gave rise to minimal effects on responses to AMs (Toporikova and Chacron, 2009) but compromised optimized coding of envelopes by causing the tuning curve to become broadband (Huang et al., 2016). In fact, the effects of indirect feedback inactivation and of SK1 channel antagonists on ELL pyramidal cell tuning to envelopes were strikingly similar (compare our Figure 4B to Figure 6B of (Huang et al., 2016)). We propose that indirect feedback excitation provides the necessary intracellular calcium entry that activates SK1 channels. These in turn give rise to spike frequency adaptation, thereby selectively attenuating responses to low envelope frequencies and causing the envelope tuning curve to become high-pass (Huang et al., 2016; Benda and Herz, 2003; Deemyad et al., 2012) (see (Huang and Chacron, 2017) for review). Thus, blocking indirect feedback input would strongly attenuate calcium entry via NMDA receptors, thereby effectively inhibiting SK1 channels and explaining why the effects on ELL pyramidal cell tuning to envelopes are similar to those previously observed after application of SK channel antagonists (Huang et al., 2016). The fact that calcium-permeable NMDA receptors are highly expressed within the apical dendrites of ELL pyramidal cells (Harvey-Girard and Dunn, 2003; Bottai et al., 1997), where indirect feedback input terminates (Berman and Maler, 1999) and SK1 channels are located (Ellis et al., 2008), supports our hypothesis. However, the exact mechanisms by which SK1 channels determine responses to envelopes but not AMs, though critical in order to enable the indirect pathway to perform multiple functions, are not well-understood and should be the focus of future studies. We also note that anatomical studies have shown that multiple cell types within nP project to EGp (Sas and Maler, 1983; Sas and Maler, 1987). However, with the exception of multipolar cells, the electrophysiological properties of these neurons are unknown to this day. It is very likely that projections from these multiple types underlie the different functions of the indirect feedback pathway but further studies are needed to test this hypothesis.\n\nIt is important to note that the envelope stimuli considered here are behaviorally relevant and contain important information as to the relative position between both conspecifics. Since our results show that the indirect feedback did not attenuate responses to envelopes with higher (>0.2 Hz) frequencies, it is conceivable that these could interfere with the detection of other behaviorally-relevant low frequency AM stimuli (e.g., those caused by prey) since the responses to both stimuli should be enhanced by the direct feedback pathway. This is unlikely to be the case however because: 1) the AM stimuli caused by prey are spatially localized whereas envelope stimuli are spatially diffuse and; 2) the temporal frequency content of envelopes tends to be much lower (0\u00a0\u2013\u00a01 Hz) than that of prey stimuli (0\u00a0\u2013\u00a010 Hz) (Stamper et al., 2013; Nelson and Maciver, 1999). We hypothesize that these differences in spatial extent and temporal frequency content are used by the animal to distinguish between both stimuli, but further studies are needed to verify that this is the case.\n\nWe have shown for the first time how neurons within nP that project either directly or indirectly back to ELL respond to envelopes. Stellate cells projecting directly to ELL pyramidal cells displayed broadband tuning curves. The fact that ELL pyramidal cells displayed broadband tuning curves after pharmacological inactivation of indirect descending input suggests that they perform little filtering of input from stellate cells. Interestingly, multipolar cells projecting indirectly have tuning properties that are similar to those of ELL pyramidal cells and optimize coding via temporal whitening. This result has important implications for understanding how temporal whitening of envelopes occurs in ELL pyramidal cells as it implies that the output of the nP received by EGp granule cells that project back to ELL is temporally whitened. It is very likely that the output of nP multipolar cells, which is critical in determining ELL pyramidal cell tuning and responses to envelopes, undergoes significant filtering both by EGp granule cells to enable filtering by SK1 channels in ELL pyramidal cells. Further studies are needed to gain further understanding as to the underlying mechanisms.\n\nOur results provide novel functional roles for the indirect feedback pathway in optimizing ELL pyramidal cell responses to envelopes through temporal whitening by selective attenuation of low frequencies. It should be noted that the architecture of the indirect feedback pathway by which parallel fibers emanating from the EGp terminate onto distal ELL pyramidal cell apical dendrites shares many similarities with the cerebellum and other cerebellum-like structures (e.g., the dorsal cochlear nucleus). Studies performed in cerebellum as well as cerebellum-like structures have shown clear common functions and mechanisms mediating how such descending input in attenuating or even cancelling responses to self-generated sensory input (Cullen, 2011; Bell et al., 2008; Requarth and Sawtell, 2011; Warren and Sawtell, 2016; Sawtell, 2017; Singla et al., 2017). It is likely that our results showing that feedback input from parallel fibers in the cerebellar-like ELL mediate optimized coding of natural stimuli through whitening will be applicable to the cerebellum as well as other cerebellum-like structures.\n\nFinally, recent results have emphasized the critical role of descending pathways, which are found ubiquitously in sensory systems (Cajal, 1909; Holl\u00e4nder, 1970; Ostapoff et al., 1990; Sherman and Guillery, 2002), in determining accurate sensory neural and behavioral responses to sensory input (Manita et al., 2015; Kwon et al., 2016; Takahashi et al., 2016). In particular, it was shown that feedback terminating on the apical dendrites of cortical pyramidal neurons was essential in determining both responses and perception to somatosensory input (Takahashi et al., 2016). Critically, the electrosensory system of weakly electric fish displays many documented similarities with the mammalian visual, auditory, and vestibular systems (Clarke et al., 2015; Chacron et al., 2011; Metzen et al., 2015). Thus, given that temporal whitening has been observed across sensory systems (Dan et al., 1996; Wang et al., 2003; Pozzorini et al., 2013; Lundstrom et al., 2010), it is likely that our results showing how feedback pathways mediate temporal whitening of sensory input by ELL pyramidal cells in the electrosensory system of weakly electric fish will be generally applicable to other systems.\n\n## Materials and methods\n\n### Animals\n\nThe wave-type weakly electric fish Apteronotus leptorhynchus was used exclusively in the present study. Fish were supplied by tropical fish suppliers and were housed in groups of 2\u00a0\u2013\u00a010 at appropriate water temperatures and water conductivities similar to their natural habitats according to published guidelines (Hitschfeld et al., 2009). All procedures were approved by McGill University\u2019s animal care committee under protocol 5285 and were performed in accordance to the guidelines set out by the Canadian Council of Animal Care.\n\n### Surgery\n\n0.1\u00a0\u2013\u00a00.5 mg of tubocurarine (Sigma) was injected intramuscularly in order to immobilize the fish for both electrophysiology and behavioral experiments. Experiments were performed in a tank (30 cm x 30 cm x 10 cm) filled with the fish\u2019s home tank water. The fish were respired using a constant flow of 10 mL/min of oxygenated water over its gills for the duration of the experiment. A 2 mm2 hole was then exposed over either the hindbrain and/or midbrain near T0 to gain access to either ELL pyramidal neurons or nP neurons respectively for electrophysiology and/or drug injection. Bilateral exposure of the brain was performed for experiments requiring bilateral drug injections.\n\n### Stimulation\n\nThe electric organ discharge of A. leptorhynchus is neurogenic, and therefore is not affected by injection of curare. All stimuli consisting of AMs of the animal\u2019s own EOD were produced by triggering a function generator to emit one cycle of a sine wave for each zero crossing of the EOD as done previously (Bastian et al., 2002). The frequency of the emitted sine wave was set slightly higher (30\u00a0\u2013\u00a040 Hz) than that of the EOD, which allowed the output of the function generator to be synchronized to the animal\u2019s discharge. The emitted sine wave was subsequently multiplied with the desired AM waveform (MT3 multiplier; Tucker Davis Technologies), and the resulting signal was isolated from ground (A395 linear stimulus isolator; World Precision Instruments). The isolated signal was then delivered through a pair of chloridized silver wire electrodes placed 15 cm away from the animal on either side of the recording tank perpendicular to the fish\u2019s rostro-caudal axis. Depending on polarity, the isolated signal either added or subtracted from the animal\u2019s own discharge. The resultant signals which arrives at the fish\u2019s skin was approximated using a dipole with 1 mm of distance between the two poles to simulate what the electroreceptors would pick up.\n\nBoth neural and behavioral experiments utilized stimuli consisting of a 5\u00a0\u2013\u00a015 Hz noise (4th order Butterworth) carrier waveform (i.e., AM) whose amplitude was further modulated (i.e., envelope) at frequencies ranging from 0.05 to 1 Hz, a behaviorally relevant range of frequencies which mimicked the envelope signals due to relative movement between two fish (Stamper et al., 2013; Metzen and Chacron, 2014). The depth of modulation for the envelope was approximately 20% of the baseline EOD amplitude as in previous studies (Deemyad et al., 2013; Metzen et al., 2016; Metzen and Chacron, 2017). This was confirmed using the dipole recording mentioned above.\n\nWe note that movement envelopes, which are the focus of the current study, are fundamentally different than so-called \u2018social\u2019 envelopes that are instead due to interaction between the EODs of three of more fish (Stamper et al., 2013) and which have been the focus of previous studies (Middleton et al., 2006; Stamper et al., 2012; Savard et al., 2011; McGillivray et al., 2012; Thomas et al., 2018). Indeed, for social envelopes, the frequency content of the envelope is mostly determined by the frequencies of the three EODs. This is because the envelope frequency is given by the difference between the two resulting beat frequencies. In contrast, for movement envelopes occurring during interactions between two conspecifics, the envelope frequency content is not determined by the two EOD frequencies or the resulting beat frequency. Rather, it is determined solely by the relative movements of both fish (Fotowat et al., 2013; Metzen and Chacron, 2014). We further note that field studies have shown that Apteronotid species tend to encounter movement envelopes much more frequently than social envelopes: this is because they tend to be found in groups of 2 much more frequently than in groups of 3+ (Stamper et al., 2010). It is expected that social envelopes will be more relevant for weakly electric fish species that tend to be more gregarious (e.g., Eigenmannia virescens).\n\n### Pharmacology\n\nThe composition of the vehicle/control saline was as follows: (all chemicals were obtained from Sigma): 111 mM NaCl, 2 mM KCl, 2 mM CaCl2, 1 mM MgSO4, 1 mM NaHCO3 and 0.5 mM NaH2PO4. The pH of the saline solution was 6.8. Glutamate (Sigma), lidocaine (Astra Pharmaceuticals) and CNQX 6-cyano-7-nitroquinoxaline-2,3-dione (CNQX, Sigma) were dissolved in saline for application as done before (Huang et al., 2016; Deemyad et al., 2013). Drug application electrodes were made using either two-barrel KG-33 glass micropipettes (OD 1.5 mm, ID 0.86 mm, A-M Systems) pulled by a vertical micropipette puller (Stoelting Co.) or single barrel pipettes to a fine tip and subsequently broken to attain a tip diameter of\u00a0~5 \u03bcm for each barrel.\n\nThe two barrel pipettes were used for separate application of either lidocaine (1 mM) or CNQX (1 mM), as well as glutamate (1 mM) or saline. In order to block the indirect feedback, we injected CNQX into the ELL in proximity of a pyramidal neuron we were recording from, which we confirmed by using the excitatory response to glutamate application, as done previously (Deemyad et al., 2013). We also blocked the indirect feedback pathway by injecting lidocaine into the praeeminential electrosensory tract (PET) (behavior: bilateral; neurons: ipsilateral) projecting to the ipsilateral EGp rostral to ELL, as done previously (Bastian, 1986b). We then compared ELL neural and behavioral responses before and after injection. In order to block both the direct and indirect feedback pathways, we instead inserted two pipettes containing lidocaine into both the ipsilateral and contralateral nPs. Again, both ELL neural and behavioral responses were compared before and after injection. Bilateral injections of lidocaine were performed in order to completely silence the respective feedback pathways to directly observe the effect on neural responses and behavior, as done previously (Huang et al., 2016; Deemyad et al., 2013). In some cases, lidocaine was injected into the contralateral nP while recording from a pyramidal cell within the ipsilateral ELL (Figure 4\u2014figure supplement 1). Saline controls were performed in the nP and we observed that there was no effect of the microinjection itself on either electrophysiology or behavior (Figure 4\u2014figure supplement 2 ). All pharmacological injections were performed using a duration of 130 ms at 103\u00a0\u2013\u00a0138 kPa using a Picospritzer (General Valve).\n\n### Electrophysiology\n\nWe used well-established techniques to perform extracellular recordings with Woods metal electrodes from pyramidal cells (Frank and Becker, 1964) located within the lateral segment of the ELL based on recording depth and mediolateral placement of the electrode on the brain surface as done previously (Huang and Chacron, 2016; Krahe et al., 2008). We recorded pyramidal cells for control in conjunction with their responses after either lidocaine (nP injections: n\u00a0=\u00a07; PET injections: n\u00a0=\u00a09), CNQX (n\u00a0=\u00a08), or saline (n\u00a0=\u00a08) injections. In addition, by tailoring the tip shape of our Woods metal electrodes, we also performed extracellular recordings from nP stellate (n\u00a0=\u00a011) and multipolar cells (n\u00a0=\u00a08) in the midbrain. We confirmed the identity of each cell type based on recording depth, spontaneous baseline firing rates, and AM tuning curves (Figure 6 - figure supplement 1). While stellate cells have low spontaneous firing rates (1.37\u00a0\u00b1\u00a00.42 Hz) and do not respond to high AM frequencies, multipolar cells have high spontaneous firing rates (55.53\u00a0\u00b1\u00a08.05 Hz and do respond well to high AM frequencies\u00a0>\u00a032 Hz. These results match the results found in the literature (Bastian and Bratton, 1990; Bratton and Bastian, 1990), confirming our recordings were appropriate. All recordings were digitized at 10 kHz sampling rate using CED 1401 plus hardware and Spike2 software (Cambridge Electronic Design) and stored on a computer hard disk for offline analysis.\n\n### Behavior\n\nAnimals were immobilized by an intramuscular injection of 0.1\u00a0\u2013\u00a00.5 mg tubocurarine and set up in the recording tank similarly to the method described above. Different surgeries were performed depending on the pharmacology protocol. Both nPs or both ELLs were exposed on either side of the head in order to bilaterally inject lidocaine (nP injection: n\u00a0=\u00a09; PET injection: n\u00a0=\u00a08), saline (n\u00a0=\u00a08) or CNQX (n\u00a0=\u00a07), respectively. Pipettes containing lidocaine/saline were placed approximately 1000\u00a0\u2013\u00a01250 \u03bcm below the surface where the nP is located, while pipettes containing CNQX were placed superficially at about 200\u00a0\u2013\u00a0300 \u03bcm below the surface of the hindbrain where the EGp feedback terminates on the apical dendrites of pyramidal cells. Additionally, lidocaine injections were performed 50\u00a0\u2013\u00a0100 \u03bcm below the brain surface adjacent to the rostral end of the ELL, where the PET is located terminating on the EGp, in order to block indirect feedback. Multiple injections (typically 3\u00a0\u2013\u00a05) were performed to ensure that both hemispheres of nP and ELL were sufficiently affected by the pharmacological agents. Stimuli were then presented as described above in order to elicit behavioral responses before and after drug application. The animal\u2019s behavior was recorded through a pair of electrodes located at the rostrum and tail of the animal. The zero-crossings of the recorded EOD signal were used to generate a binary sequence as described above that was low-pass filtered (2nd order Butterworth filter with 0.05 Hz cut-off frequency) to obtain the time-varying EOD frequency.\n\n### Data analysis\n\nData obtained from ELL pyramidal neurons were pooled as there is no difference in envelope response between ON- and OFF-type pyramidal cells (Huang and Chacron, 2016). All data analysis was performed offline using custom written codes in MATLAB software (MathWorks) (Huang et al., 2018). The recorded potentials were first high-pass filtered (100 Hz; 8th order Butterworth). Spike times were sorted using Spike2 software and defined as the times at which the signal crossed a given threshold value from below. To quantify the neural responses and relate them to the stimulus envelope, we used linear systems identifications techniques to compute the gain relationships to envelope frequency. We approximated the gain by averaging over the cycles of the stimulus and fitting a sinewave to the resultant cycle histogram to determine the firing rate modulation. We then divided the amplitude of the firing rate modulation to the stimulus envelope amplitude observed in the dipole to obtain the gain to any given envelope frequency. Our filtered firing rates were obtained using a second-order Butterworth filter with cutoff frequencies of 0.2, 0.35, 0.75, 1.5, 2.5, and 3.5 Hz for envelope frequencies 0.05, 0.1, 0.2, 0.5, 0.75, and 1 Hz, respectively, as done in previous studies (Huang and Chacron, 2016). Gain values calculated for behavior was performed using similar methods.\n\nResponses to AMs were calculated using standard techniques by determining the spike-triggered average (STA) change in amplitude of the AM stimuli. The STA is the mean stimulus waveform that triggers an action potential and was obtained by averaging the stimulus waveforms within a 2 s time window surrounding each spike. We used the same envelope stimuli containing 5\u00a0\u2013\u00a015 Hz AM in order to calculate our STAs and determine the response to AMs. The response was then quantified as the peak-to-peak amplitude of each STA change in amplitude and was compared before and after drug application. We then quantified the change before and after drug application as a percentage of control, where the control STA was normalized to 100%.\n\nTemporal whitening performed by ELL pyramidal neurons and nP neurons were calculated based on their observed tuning properties by squaring the gain at a given envelope frequency and multiplying it by the power of the natural stimulus whose spectrum decays as a power law with exponent \u03b1\u00a0=\u00a0\u22120.8. The result provided us with an accurate estimation of the response power of the neuron across the range of frequencies we investigated. Indeed, previous studies have shown that an accurate approximation of the response power spectrum could be correctly predicted using the tuning function with this transfer function, as a change in the tuning curve of the neuron directly caused changes in the response power experimentally (Huang et al., 2016; Huang and Chacron, 2016). From the temporal whitening response power curves, the whitening index was calculated by taking the area under the power spectrum curve of the spiking response using a trapezoidal method and dividing by that obtained by replacing all values by the maximum value in the power spectrum. The whitening index ranges between 0 and 1, where one indicates complete whitening (i.e., a power spectrum that is independent of temporal frequency), as done previously (Huang et al., 2016). Finally, the change in sensitivity between control and/or drug conditions was calculated using the following formula:\n\n$$\n\\frac{G_{Drug}-G_{Control}}{G_{Control}}\\times100\n$$\n\nwhere GDrug is the gain response of the neuron after drug injection at a given envelope frequency and GControl is the gain response of the neuron under control conditions at the same given envelope frequency. We then pooled the changes in sensitivity across envelope frequencies in order to obtain the case individually for neuron and behavior.\n\n### Statistics\n\nStatistical significance was assessed through a non-parametric Kruskal-Wallis ANOVA test if the data was unpaired or Wilcoxon signed-rank test for paired measures at the p=0.05 level. Data is presented as mean\u00a0\u00b1\u00a0standard error (SEM). For the whisker boxplot in Figure 6 - figure supplement 1, the central mark indicates the median, and the bottom and top edges of the box indicate the 25th and 75th percentiles, respectively. The whiskers extend to the range of data points.\n",
+      "created_at": "2025-12-02T06:32:08.834220Z"
+    },
+    {
+      "id": "8cd4ca88-f36b-48a3-a14b-392d33baceac",
+      "submission_id": "c6af8029-954e-4d7b-8005-57beadefef07",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Catherine Emily Carr, University of Maryland United States\n- Eve Marder, Brandeis University United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.38935.019](https://doi.org/10.7554/eLife.38935.019)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Feedback optimizes neural coding and perception of natural stimuli\" for consideration by eLife. Your article has been reviewed by three peer reviewers, including Catherine Emily Carr as the Reviewing Editor and Reviewer #1, and the evaluation has been overseen by Eve Marder as the Senior Editor. The following individual involved in review of your submission has agreed to reveal their identity: Len Maler (Reviewer #2).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nThe main strength of the manuscript is the insight into mechanisms whereby sensory neurons match their tuning properties to natural stimulus statistics.\n\nThe manuscript extends previous published work on the role of feedback to the first order electrosensory lobe (ELL) of a gymnotiform weakly electric fish. Previous work emphasized the response of ELL pyramidal cells to first order modulations (AMs) of the amplitude of the electric field produced by the sinusoidal electric organ discharge (EOD). A direct feedback pathway enhances responses to local AMs, i.e., those produced by objects causing AMs over a restricted portion of the body surface. The indirect feedback pathway attenuates the responses to the global low frequency AMs and thus prevents interference with prey detection. The novel contribution of this manuscript is that both feedback pathways also control the pyramidal cell responses to envelope signals. This is surprising because, not only are such signals detected via different neural mechanisms than AM signals, but their frequency content is mostly very low. The authors also show the effects on behavior and record from the cells that give rise to the direct and indirect pathways.\n\nEssential revisions:\n\n1) The major issues with the manuscript appear to be with presentation. As one reviewer wrote \"if the Introduction clearly (and simply) gave the relevant background, the rest of the manuscript would be much easier to follow.\"\n\n2) The regular and supplemental figures are intermixed (and sometimes repetitive). There is a lot of overlap between panels of different figures. Often the differences are difficult to see at first, it appears that at least three figures have half of the panels in common. Only after careful consideration one finds subtle differences between panels. The figures should be carefully re-evaluated.\n\n3) It would be good to provide a concise summary of the anatomy rather than adding circuit descriptions piece by piece. For example, the authors mention that there are two different groups of nP neurons in the last paragraph of the Introduction, the notation for nP is clarified, in the first paragraph of the subsection \u201cDescending input shapes neural responses and perception of envelopes\u201d, as referring to the nuclei praeeminentialis, and the specific cell types are introduced in the subsection \u201cResponses of nP neurons that give rise to descending input onto ELL pyramidal cells\u201d. Also, more specifically in the sentences \"the former displayed broadband envelope frequency tuning curves.\u2026\" and \"the latter displayed high-pass envelope frequency tuning curves.\u2026\" it is ambiguous what former/latter refers to, because it could refer to nP/ELL cells or cells providing direct/indirect feedback.\n\n4) The Introduction meanders between the discussion of how envelopes are represented, the contribution of SK1 channel, and feedback. The properties of SK1 channels are discussed in the Introduction but the interaction with feedback is only explained in the Discussion. The Introduction just sets them up as different and unrelated mechanisms for implementing optimal coding. This initially lends the impression that the present study contradicts previous published works by the authors.\n\n5) A reviewer points out that stellate cells may be the only source of the direct feedback pathway. On the other hand, there are a number of nP neurons that project to the EGp and therefore contribute electrosensory input to the indirect feedback pathway. The authors should make clear that there are multiple nP cells that project to EGp and that therefore will contribute to the many effects of this complex feedback system. The multipolar cell does not respond very effectively to either low frequency global signals or object motion (local stimuli) and, as the authors show, it is well suited for modulation of envelope responses. The authors could put in one or two simple sentences just to make clear that the various functions of the indirect feedback pathway may be based on the multiplicity of nP cells projecting to EGp.\n",
+      "created_at": "2025-12-02T06:32:08.834220Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T06:32:08.834220Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T06:32:08.834220Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "7d78e521-b7b2-470c-ab59-bcf56c4ee645",
+      "content_id": "1f6ac84b-069d-482c-b838-209d5bfe12ba",
+      "claim_id": "C1",
+      "claim": "Sensory neurons achieve optimal encoding by matching their tuning properties to the natural stimulus statistics.",
+      "claim_type": "EXPLICIT",
+      "source": "Growing evidence suggests that sensory neurons achieve optimal encoding by matching their tuning properties to the natural stimulus statistics.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by references to established research in the field, as indicated by the phrase 'growing evidence suggests'.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:32:08.834220Z"
+    },
+    {
+      "id": "895b014a-363f-4d2b-a8c2-6719d8f0d3bb",
+      "content_id": "1f6ac84b-069d-482c-b838-209d5bfe12ba",
+      "claim_id": "C2",
+      "claim": "Feedback pathways from higher brain areas mediate optimized encoding of naturalistic stimuli via temporal whitening in the weakly electric fish Apteronotus leptorhynchus.",
+      "claim_type": "EXPLICIT",
+      "source": "Here we demonstrate that feedback pathways from higher brain areas mediate optimized encoding of naturalistic stimuli via temporal whitening in the weakly electric fish Apteronotus leptorhynchus.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the study, supported by experimental data presented throughout the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:32:08.834220Z"
+    },
+    {
+      "id": "07ee25c6-ce8b-40c0-a705-0258215adedd",
+      "content_id": "1f6ac84b-069d-482c-b838-209d5bfe12ba",
+      "claim_id": "C3",
+      "claim": "One source of direct feedback uniformly enhances neural responses.",
+      "claim_type": "EXPLICIT",
+      "source": "While one source of direct feedback uniformly enhances neural responses, a separate source of indirect feedback selectively attenuates responses to low frequencies, thus creating a high-pass neural tuning curve that opposes the decaying spectral power of natural stimuli.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data from pharmacological manipulations and neural recordings presented in the results section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:32:08.834220Z"
+    },
+    {
+      "id": "427f31cf-2fbe-42cc-9a89-d5a46f336fd4",
+      "content_id": "1f6ac84b-069d-482c-b838-209d5bfe12ba",
+      "claim_id": "C4",
+      "claim": "Indirect feedback selectively attenuates responses to low frequencies, creating a high-pass neural tuning curve that opposes the decaying spectral power of natural stimuli.",
+      "claim_type": "EXPLICIT",
+      "source": "While one source of direct feedback uniformly enhances neural responses, a separate source of indirect feedback selectively attenuates responses to low frequencies, thus creating a high-pass neural tuning curve that opposes the decaying spectral power of natural stimuli.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data from pharmacological manipulations showing differential effects of indirect feedback inactivation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:32:08.834220Z"
+    },
+    {
+      "id": "391f1026-adfe-46dc-864f-0329637510c6",
+      "content_id": "1f6ac84b-069d-482c-b838-209d5bfe12ba",
+      "claim_id": "C5",
+      "claim": "One population of higher brain neurons displayed broadband tuning.",
+      "claim_type": "EXPLICIT",
+      "source": "While one population displayed broadband tuning, the other displayed high-pass tuning and thus performed temporal whitening.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by recordings from nP stellate cells showing frequency-independent tuning.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:32:08.834220Z"
+    },
+    {
+      "id": "e1bf3059-f526-484a-979a-d6c1e70d7675",
+      "content_id": "1f6ac84b-069d-482c-b838-209d5bfe12ba",
+      "claim_id": "C6",
+      "claim": "One population of higher brain neurons displayed high-pass tuning and performed temporal whitening.",
+      "claim_type": "EXPLICIT",
+      "source": "While one population displayed broadband tuning, the other displayed high-pass tuning and thus performed temporal whitening.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by recordings from nP multipolar cells showing high-pass tuning characteristics.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:32:08.834220Z"
+    },
+    {
+      "id": "b6404b93-c905-4f41-ab91-dba4b9dcabc0",
+      "content_id": "1f6ac84b-069d-482c-b838-209d5bfe12ba",
+      "claim_id": "C7",
+      "claim": "Efficient coding is achieved by ensuring that the neural tuning function is inversely proportional to stimulus intensity as a function of frequency, thereby achieving a neural response whose amplitude is independent of frequency.",
+      "claim_type": "EXPLICIT",
+      "source": "Theory posits that efficient coding is achieved by ensuring that the neural tuning function is inversely proportional to stimulus intensity as a function of frequency, thereby achieving a neural response whose amplitude is independent of frequency (Rieke et al., 1996).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to theoretical work by Rieke et al., 1996.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:32:08.834220Z"
+    },
+    {
+      "id": "d085e148-c001-4c6b-8ed9-36ddd977252c",
+      "content_id": "1f6ac84b-069d-482c-b838-209d5bfe12ba",
+      "claim_id": "C8",
+      "claim": "Whitening has been observed across species and systems.",
+      "claim_type": "EXPLICIT",
+      "source": "While such 'whitening' has been observed across species and systems (Dan et al., 1996; Wang et al., 2003; Huang et al., 2016; Pozzorini et al., 2013; Pitkow and Meister, 2012), the nature of the underlying mechanisms remains unclear.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to studies across different systems.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:32:08.834220Z"
+    },
+    {
+      "id": "5c00bc41-4b10-432a-8580-66ae679d2a6d",
+      "content_id": "1f6ac84b-069d-482c-b838-209d5bfe12ba",
+      "claim_id": "C9",
+      "claim": "The nature of the mechanisms underlying whitening remains unclear.",
+      "claim_type": "EXPLICIT",
+      "source": "While such 'whitening' has been observed across species and systems (Dan et al., 1996; Wang et al., 2003; Huang et al., 2016; Pozzorini et al., 2013; Pitkow and Meister, 2012), the nature of the underlying mechanisms remains unclear.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement identifies a gap in knowledge that the current study addresses.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:32:08.834220Z"
+    },
+    {
+      "id": "8bedadbd-ea87-42a0-9d14-178b26a556c5",
+      "content_id": "1f6ac84b-069d-482c-b838-209d5bfe12ba",
+      "claim_id": "C10",
+      "claim": "Weakly electric fish generate a quasi-sinusoidal signal called the electric organ discharge (EOD) around their body.",
+      "claim_type": "EXPLICIT",
+      "source": "These fish generate a quasi-sinusoidal signal called the electric organ discharge (EOD) around their body, thereby allowing them to explore the environment and communicate with conspecifics.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about the biology of weakly electric fish.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:32:08.834220Z"
+    },
+    {
+      "id": "2a85d58e-f0ae-4df7-a4d6-2482b9f0eaff",
+      "content_id": "1f6ac84b-069d-482c-b838-209d5bfe12ba",
+      "claim_id": "C11",
+      "claim": "When two conspecifics are located close (<1 m) to one another, each fish experiences an amplitude modulation of its own EOD.",
+      "claim_type": "EXPLICIT",
+      "source": "When two conspecifics are located close (<1 m) to one another, each fish experiences an amplitude modulation of its own EOD (i.e., a beat or first-order) whose amplitude (i.e., envelope or second-order) is a function of the distance and relative orientation between two conspecifics (Yu et al., 2012; Fotowat et al., 2013) (see (Stamper et al., 2013) for review).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:32:08.834220Z"
+    },
+    {
+      "id": "b24552e1-42e8-439e-94ba-d5ace8c79df7",
+      "content_id": "1f6ac84b-069d-482c-b838-209d5bfe12ba",
+      "claim_id": "C12",
+      "claim": "Natural electrosensory envelopes due to movement measured in freely moving animals display scale invariance in that their spectral power decays as a power law as a function of increasing temporal frequency.",
+      "claim_type": "EXPLICIT",
+      "source": "Natural electrosensory envelopes due to movement measured in freely moving animals display scale invariance in that their spectral power decays as a power law as a function of increasing temporal frequency (Fotowat et al., 2013; Metzen and Chacron, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous studies characterizing natural stimuli.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:32:08.834220Z"
+    },
+    {
+      "id": "c4a85c36-f488-47c2-b9d4-2b58c9dc8301",
+      "content_id": "1f6ac84b-069d-482c-b838-209d5bfe12ba",
+      "claim_id": "C13",
+      "claim": "Weakly electric fish give robust behavioral responses to movement related envelopes in which the EOD frequency tracks the stimulus' detailed time course.",
+      "claim_type": "EXPLICIT",
+      "source": "Weakly electric fish furthermore give robust behavioral responses to movement related envelopes in which the EOD frequency tracks the stimulus' detailed (Metzen and Chacron, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to a previous behavioral study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:32:08.834220Z"
+    },
+    {
+      "id": "e98cddba-3510-4e62-9ad1-6f978932a55e",
+      "content_id": "1f6ac84b-069d-482c-b838-209d5bfe12ba",
+      "claim_id": "C14",
+      "claim": "Peripheral receptors project to pyramidal cells within the electrosensory lateral line lobe (ELL) which in turn project to higher brain structures, thereby giving rise to behavior.",
+      "claim_type": "EXPLICIT",
+      "source": "These project to pyramidal cells within the electrosensory lateral line lobe (ELL) which in turn project to higher brain structures, thereby giving rise to behavior (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the anatomical organization of the electrosensory system, supported by the schematic in Figure 1B.",
+      "evidence_type": "[\"KNOWLEDGE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:32:08.834220Z"
+    },
+    {
+      "id": "2ed3a801-9c72-4146-96a1-15943c68355f",
+      "content_id": "1f6ac84b-069d-482c-b838-209d5bfe12ba",
+      "claim_id": "C15",
+      "claim": "ELL pyramidal cells receive large amounts of descending inputs (i.e., feedback) from higher brain centers such as the nucleus praeeminentialis (nP).",
+      "claim_type": "EXPLICIT",
+      "source": "ELL pyramidal cells also receive large amounts of descending inputs (i.e., feedback) from higher brain centers such as the nucleus praeeminentialis (nP) and contact ELL pyramidal cells either directly (i.e., the direct feedback pathway) or indirectly (i.e., the indirect feedback pathway; Figure 1B) (Berman and Maler, 1999; Sas and Maler, 1983; Sas and Maler, 1987).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This anatomical claim is supported by citations to previous anatomical studies and illustrated in Figure 1B.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:32:08.834220Z"
+    },
+    {
+      "id": "e3a0b449-b277-400b-a327-37d0918fa456",
+      "content_id": "1f6ac84b-069d-482c-b838-209d5bfe12ba",
+      "claim_id": "C16",
+      "claim": "Both direct and indirect feedback inputs play important roles in shaping pyramidal cell responses to beats and other first-order electrosensory stimuli.",
+      "claim_type": "EXPLICIT",
+      "source": "Pyramidal cell responses to beats and other first-order electrosensory stimuli are well characterized in general (see (Clarke et al., 2015; Chacron et al., 2011; Marsat et al., 2012; Krahe and Maler, 2014; Huang and Chacron, 2017) for review) and several studies have shown that both direct and indirect feedback inputs play important roles in shaping (Bastian, 1986a; Bastian et al., 2004; Bastian, 1999; Bol et al., 2011; Chacron, 2006; Chacron et al., 2005) as well as synthesizing (Clarke and Maler, 2017) these.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:32:08.834220Z"
+    },
+    {
+      "id": "faac6e7e-febd-45ea-b301-c60fc8e1bda9",
+      "content_id": "1f6ac84b-069d-482c-b838-209d5bfe12ba",
+      "claim_id": "C17",
+      "claim": "ELL pyramidal cells can optimally encode natural electrosensory envelopes because their high-pass tuning properties effectively oppose the decaying stimulus power, such that the response power is whitened.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, it was shown that ELL pyramidal cells can optimally encode natural electrosensory envelopes because their high-pass tuning properties effectively oppose the decaying stimulus power, such that the response power is whitened (Huang et al., 2016; Zhang and Chacron, 2016; Huang and Chacron, 2016; Martinez et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous studies from the same research group.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:32:08.834220Z"
+    },
+    {
+      "id": "2fac2e97-c68d-44d4-865b-ed2e7a9ccf93",
+      "content_id": "1f6ac84b-069d-482c-b838-209d5bfe12ba",
+      "claim_id": "C18",
+      "claim": "Complete feedback inactivation strongly reduced pyramidal cell and behavioral responses to envelopes.",
+      "claim_type": "EXPLICIT",
+      "source": "Pharmacological inactivation of all sources of descending input strongly reduced pyramidal cell and behavioral responses to envelopes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:32:08.834220Z"
+    },
+    {
+      "id": "8dffa208-fe79-475e-9a3f-7057063d3d20",
+      "content_id": "1f6ac84b-069d-482c-b838-209d5bfe12ba",
+      "claim_id": "C19",
+      "claim": "After complete feedback inactivation, pyramidal cell responses to high envelope frequencies were relatively more attenuated than those to low envelope frequencies.",
+      "claim_type": "EXPLICIT",
+      "source": "However, pyramidal cell responses to high envelope frequencies were relatively more attenuated than those to low envelope frequencies, such that the resulting tuning was no longer high-pass but independent of envelope frequency.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the tuning curve data presented in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:32:08.834220Z"
+    },
+    {
+      "id": "89dce710-c45f-4a75-b908-5ac80cbc7356",
+      "content_id": "1f6ac84b-069d-482c-b838-209d5bfe12ba",
+      "claim_id": "C20",
+      "claim": "Complete feedback inactivation compromised optimized coding of natural stimuli by temporal whitening.",
+      "claim_type": "EXPLICIT",
+      "source": "As a consequence, optimized coding of natural stimuli by temporal whitening was compromised.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the white index measurements shown in Figure 4F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:32:08.834220Z"
+    },
+    {
+      "id": "37d83733-8722-4459-9d88-e66b3231799e",
+      "content_id": "1f6ac84b-069d-482c-b838-209d5bfe12ba",
+      "claim_id": "C21",
+      "claim": "Selective inactivation of indirect feedback input strongly increased both pyramidal cell and behavioral sensitivity to envelopes.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, selective inactivation of indirect feedback input strongly increased both pyramidal cell and behavioral sensitivity to envelopes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:32:08.834220Z"
+    },
+    {
+      "id": "d6a73133-9805-44b6-b34b-cb011b7cfb56",
+      "content_id": "1f6ac84b-069d-482c-b838-209d5bfe12ba",
+      "claim_id": "C22",
+      "claim": "After indirect feedback inactivation, enhancement was primarily seen for low envelope frequencies, such that the resulting pyramidal cell tuning curve was broadband.",
+      "claim_type": "EXPLICIT",
+      "source": "However, enhancement was primarily seen for low envelope frequencies, such that the resulting pyramidal cell tuning curve was broadband, which also compromised optimized coding of natural stimuli by temporal whitening.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the tuning curve data presented in Figure 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:32:08.834220Z"
+    },
+    {
+      "id": "88254d86-4415-4b60-b0b1-3dd6a1c76374",
+      "content_id": "1f6ac84b-069d-482c-b838-209d5bfe12ba",
+      "claim_id": "C23",
+      "claim": "nP neurons projecting directly to ELL displayed broadband envelope frequency tuning curves and did not perform temporal whitening.",
+      "claim_type": "EXPLICIT",
+      "source": "nP neurons projecting directly to ELL displayed broadband envelope frequency tuning curves and thus did not perform temporal whitening.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by recordings from nP stellate cells shown in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:32:08.834220Z"
+    },
+    {
+      "id": "0674d6cd-0e12-4a17-815b-373f62a4be76",
+      "content_id": "1f6ac84b-069d-482c-b838-209d5bfe12ba",
+      "claim_id": "C24",
+      "claim": "nP neurons projecting indirectly to ELL displayed high-pass envelope frequency tuning curves that effectively opposed the decaying envelope stimulus spectral power content, thereby enabling temporal whitening.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, nP neurons projecting indirectly to ELL displayed high-pass envelope frequency tuning curves that effectively opposed the decaying envelope stimulus spectral power content, thereby enabling temporal whitening.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by recordings from nP multipolar cells shown in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:32:08.834220Z"
+    },
+    {
+      "id": "18a8aa15-1fb6-4be5-8769-ce2fc64342de",
+      "content_id": "1f6ac84b-069d-482c-b838-209d5bfe12ba",
+      "claim_id": "C25",
+      "claim": "Complete feedback inactivation did not affect ELL pyramidal cell responses to AMs.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, complete feedback inactivation did not affect ELL pyramidal cell responses to AMs (Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by spike-triggered average data shown in Figure 4\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:32:08.834220Z"
+    },
+    {
+      "id": "f3dfa899-7879-4f30-a88f-538a0e45d6a0",
+      "content_id": "1f6ac84b-069d-482c-b838-209d5bfe12ba",
+      "claim_id": "C26",
+      "claim": "Performing a 'Sham complete feedback inactivation' by injecting saline instead of lidocaine bilaterally into nP did not alter neural or behavioral responses to envelopes.",
+      "claim_type": "EXPLICIT",
+      "source": "We note that performing a 'Sham complete feedback inactivation' by injecting saline instead of lidocaine bilaterally into nP did not alter neural or behavioral responses to envelopes (Figure 4\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This control experiment is documented in Figure 4\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:32:08.834220Z"
+    },
+    {
+      "id": "cb0f0e4f-30c1-447b-b242-82dbd433ae8f",
+      "content_id": "1f6ac84b-069d-482c-b838-209d5bfe12ba",
+      "claim_id": "C27",
+      "claim": "Injecting lidocaine unilaterally within the contralateral nP while recording from pyramidal cells within the ipsilateral ELL gave rise to similar changes in neural responses to envelopes as bilateral injection.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, our results showing that complete feedback inactivation strongly affects ELL neural responses to envelopes were robust. This is because injecting lidocaine unilaterally within the contralateral nP while recording from pyramidal cells within the ipsilateral ELL gave rise to similar changes in neural responses to envelopes (Figure 4\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 4\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:32:08.834220Z"
+    },
+    {
+      "id": "12061797-6a6c-4f49-8e9e-aadf11a54d50",
+      "content_id": "1f6ac84b-069d-482c-b838-209d5bfe12ba",
+      "claim_id": "C28",
+      "claim": "Lidocaine injection into PET increased ELL pyramidal neuron responses to AMs.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with previous results, lidocaine injection increased ELL pyramidal neuron responses to AMs (Figure 5\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by spike-triggered average data shown in Figure 5\u2014figure supplement 1 and is consistent with previous studies.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:32:08.834220Z"
+    },
+    {
+      "id": "cf6535c4-8508-40bc-94ae-ca0fc999806c",
+      "content_id": "1f6ac84b-069d-482c-b838-209d5bfe12ba",
+      "claim_id": "C29",
+      "claim": "Inactivating indirect feedback by injecting CNQX in the ELL molecular layer gave rise to similar effects on ELL pyramidal cell responses to envelopes as lidocaine injection into PET.",
+      "claim_type": "EXPLICIT",
+      "source": "We note that inactivating indirect feedback by injecting CNQX in the ELL molecular layer (Figure 3C) gave rise to similar effects on ELL pyramidal cell responses to envelopes (Figure 5\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 5\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:32:08.834220Z"
+    },
+    {
+      "id": "b7d4cf05-7485-4041-90c6-832b755e2b98",
+      "content_id": "1f6ac84b-069d-482c-b838-209d5bfe12ba",
+      "claim_id": "C30",
+      "claim": "CNQX injection in the ELL molecular layer significantly increased ELL pyramidal cell responses to AMs.",
+      "claim_type": "EXPLICIT",
+      "source": "Also, consistent with previous results (Bastian et al., 2004), this manipulation significantly increased ELL pyramidal cell responses to AMs (Figure 5\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by spike-triggered average data shown in Figure 5\u2014figure supplement 3 and is consistent with previous studies.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:32:08.834220Z"
+    },
+    {
+      "id": "5ab2b3ab-c2ef-416c-868c-d21a49a4b122",
+      "content_id": "1f6ac84b-069d-482c-b838-209d5bfe12ba",
+      "claim_id": "C31",
+      "claim": "nP stellate cells project directly to ELL pyramidal cells while nP multipolar cells project indirectly through the EGp.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, nP stellate cells project directly to ELL pyramidal cells while nP multipolar cells instead project indirectly through the EGp (Sas and Maler, 1983; Sas and Maler, 1987).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This anatomical claim is supported by citations to previous anatomical studies.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:32:08.834220Z"
+    },
+    {
+      "id": "0bdfc307-fb1b-40c8-ab97-f0d5abd5dab9",
+      "content_id": "1f6ac84b-069d-482c-b838-209d5bfe12ba",
+      "claim_id": "C32",
+      "claim": "Both stellate and multipolar cell types can be distinguished from one another based on their electrophysiological properties.",
+      "claim_type": "EXPLICIT",
+      "source": "Both cell types can easily be distinguished from one another based on their electrophysiological properties (Bastian and Bratton, 1990; Bratton and Bastian, 1990) (Figure 6\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by citations to previous studies and data shown in Figure 6\u2014figure supplement 1.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:32:08.834220Z"
+    },
+    {
+      "id": "f7b9360d-1ade-427f-823f-d4b0a85415e6",
+      "content_id": "1f6ac84b-069d-482c-b838-209d5bfe12ba",
+      "claim_id": "C33",
+      "claim": "Both stellate and multipolar cells responded strongly to envelopes.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, our results show that both stellate and multipolar cells responded strongly to envelopes (Figure 6B) but showed differential envelope frequency tuning (Figure 6C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by neural response data shown in Figure 6B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:32:08.834220Z"
+    },
+    {
+      "id": "db801a8d-e82e-4e40-84a5-a6da66bc4e2c",
+      "content_id": "1f6ac84b-069d-482c-b838-209d5bfe12ba",
+      "claim_id": "C34",
+      "claim": "Stellate and multipolar cells showed differential envelope frequency tuning.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, our results show that both stellate and multipolar cells responded strongly to envelopes (Figure 6B) but showed differential envelope frequency tuning (Figure 6C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by tuning curve data shown in Figure 6C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:32:08.834220Z"
+    },
+    {
+      "id": "1a4d711a-b7b6-42df-9bc6-dcb01a051164",
+      "content_id": "1f6ac84b-069d-482c-b838-209d5bfe12ba",
+      "claim_id": "C35",
+      "claim": "Stellate cell sensitivity was largely independent of envelope frequency.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, stellate cell sensitivity was largely independent of envelope frequency (Figure 6C, brown) as quantified by a power law exponent near zero (Figure 6E, left panel, brown).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by tuning curve and exponent data shown in Figure 6C and 6E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:32:08.834220Z"
+    },
+    {
+      "id": "4b1c7524-920a-4ec0-856c-dd0760d835d5",
+      "content_id": "1f6ac84b-069d-482c-b838-209d5bfe12ba",
+      "claim_id": "C36",
+      "claim": "Stellate cells did not perform temporal whitening of natural envelopes as their response power spectra decayed with increasing frequency.",
+      "claim_type": "EXPLICIT",
+      "source": "As such, these cells did not perform temporal whitening of natural envelopes as their response power spectra decayed with increasing frequency (Figure 6D and E right, brown).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by response power and white index data shown in Figure 6D and 6E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:32:08.834220Z"
+    },
+    {
+      "id": "41cfa5d2-382a-4075-a818-32049b343428",
+      "content_id": "1f6ac84b-069d-482c-b838-209d5bfe12ba",
+      "claim_id": "C37",
+      "claim": "The function of the direct feedback input is to enhance ELL pyramidal cell responses to envelopes independently of temporal frequency.",
+      "claim_type": "EXPLICIT",
+      "source": "These results confirm our hypothesis that the function of the direct feedback input is to enhance ELL pyramidal cell responses to envelopes independently of temporal frequency.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the stellate cell recording data and pharmacological manipulation experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:32:08.834220Z"
+    },
+    {
+      "id": "6873d049-e2b1-4050-a0c9-54c754ff0564",
+      "content_id": "1f6ac84b-069d-482c-b838-209d5bfe12ba",
+      "claim_id": "C38",
+      "claim": "The direct feedback pathway provides a new function by enhancing responses of ELL pyramidal cells to envelopes.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results provide a new function for this feedback pathway by showing that nP stellate cells enhance the responses of ELL pyramidal cells to envelopes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a novel finding of the study supported by experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:32:08.834220Z"
+    },
+    {
+      "id": "3a245026-4301-4e85-b3af-3b25b681eed4",
+      "content_id": "1f6ac84b-069d-482c-b838-209d5bfe12ba",
+      "claim_id": "C39",
+      "claim": "Previous studies suggested that the function of the direct feedback pathway was to enhance responses to salient stimuli, but experimental evidence supporting this hypothesis was lacking until recently.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, while previous studies have suggested that the function of this feedback pathway was to enhance responses to salient stimuli (Berman and Maler, 1999; Bratton and Bastian, 1990; Berman and Maler, 1998), experimental evidence supporting this hypothesis was lacking until recently when a clear role in synthesizing responses to motion stimuli consisting exclusively of first-order stimulus features was established (Clarke and Maler, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous studies and identifies a gap in the literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:32:08.834220Z"
+    },
+    {
+      "id": "c4cc76c9-0608-47cc-b968-38e4a39e983f",
+      "content_id": "1f6ac84b-069d-482c-b838-209d5bfe12ba",
+      "claim_id": "C40",
+      "claim": "A recent study showed that the direct feedback pathway enables neural responses to weak envelope stimuli.",
+      "claim_type": "EXPLICIT",
+      "source": "A recent study has furthermore shown that the direct feedback pathway enables neural responses to weak envelope stimuli (Metzen et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to a recent study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:32:08.834220Z"
+    },
+    {
+      "id": "2478c955-0160-418d-9402-fd1e0c5ceb77",
+      "content_id": "1f6ac84b-069d-482c-b838-209d5bfe12ba",
+      "claim_id": "C41",
+      "claim": "Previous studies suggested that the direct feedback pathway could function as a sensory searchlight, as originally proposed by Crick.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, previous studies have suggested that the direct feedback pathway could function as a sensory searchlight (Berman and Maler, 1999), as originally proposed by Crick (Crick, 1984), thereby enhancing salient stimulus features and attenuating others.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous studies and theoretical work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:32:08.834220Z"
+    },
+    {
+      "id": "b550f3ba-0398-42f5-bce7-03c60b4ecf17",
+      "content_id": "1f6ac84b-069d-482c-b838-209d5bfe12ba",
+      "claim_id": "C42",
+      "claim": "Concerted action from both direct and indirect sources of descending input is necessary for the sensory searchlight function.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results are consistent with descending input onto ELL pyramidal cells acting in this manner but instead suggest that concerted action from both direct and indirect sources is necessary.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the current results in the context of previous hypotheses.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:32:08.834220Z"
+    },
+    {
+      "id": "5c2d7e39-310c-4330-9f4a-c92f9100a7c9",
+      "content_id": "1f6ac84b-069d-482c-b838-209d5bfe12ba",
+      "claim_id": "C43",
+      "claim": "The tuning function of ELL pyramidal cells must be matched to natural statistics in order to optimize coding, which ensures that behavioral sensitivity is greatest for frequencies at which natural stimuli contain the most power.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, our results are consistent with previous ones showing that the tuning function of ELL pyramidal cells must be matched to natural statistics in order to optimize coding, which in turn ensures that behavioral sensitivity is greatest for frequencies at which natural stimuli contain the most power (Huang et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to a previous study and is consistent with the current findings.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:32:08.834220Z"
+    },
+    {
+      "id": "4b340ec0-f98c-48a2-acd1-f81b14b7f418",
+      "content_id": "1f6ac84b-069d-482c-b838-209d5bfe12ba",
+      "claim_id": "C44",
+      "claim": "Feedback inactivation altered ELL pyramidal cell tuning, thereby rendering coding sub-optimal, which caused a mismatch between behavioral sensitivity and natural statistics.",
+      "claim_type": "EXPLICIT",
+      "source": "However, we found that feedback inactivation altered ELL pyramidal cell tuning, thereby rendering coding sub-optimal, which caused a mismatch between behavioral sensitivity and natural statistics.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the experimental data showing changes in tuning and white index after feedback inactivation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:32:08.834220Z"
+    },
+    {
+      "id": "fb5909cf-6376-4880-8eac-5c991e4711cd",
+      "content_id": "1f6ac84b-069d-482c-b838-209d5bfe12ba",
+      "claim_id": "C45",
+      "claim": "The relationship between ELL pyramidal cell and behavioral responses to envelopes is more complicated than previously expected.",
+      "claim_type": "EXPLICIT",
+      "source": "However, our results suggest that the relationship between ELL pyramidal cell and behavioral responses to envelopes is more complicated than previously expected.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation based on the observation that similar changes in neural tuning led to opposite changes in behavioral tuning.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:32:08.834220Z"
+    },
+    {
+      "id": "dbe545c9-f79b-4cfe-8bbd-b434fc65a702",
+      "content_id": "1f6ac84b-069d-482c-b838-209d5bfe12ba",
+      "claim_id": "C46",
+      "claim": "It is not only the tuning exponent of ELL pyramidal cells that determines the behavioral exponent, but also the overall sensitivity.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, it is not only the tuning exponent of ELL pyramidal cells that determines the behavioral exponent, but also the overall sensitivity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the observation that pharmacological inactivation of both direct and indirect feedback led to similar changes in neural tuning exponent but opposite changes in behavioral tuning exponent.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:32:08.834220Z"
+    },
+    {
+      "id": "f4859622-b620-463f-875f-490411d030ad",
+      "content_id": "1f6ac84b-069d-482c-b838-209d5bfe12ba",
+      "claim_id": "C47",
+      "claim": "Previous results have demonstrated important functions for the indirect feedback pathway such as gain control.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous results have demonstrated important functions for the indirect feedback pathway such as gain control (Bastian, 1986a; Bastian, 1986b) as well as cancelation of both self and externally-generated low (<15 Hz) frequency spatially diffuse AM (i.e., first-order) stimuli (Bastian et al., 2004; Bastian, 1999; Chacron, 2006; Chacron et al., 2005; Clarke and Maler, 2017; Bastian, 1986b; Bastian, 1996a; Bastian, 1996b; Bastian, 1998), thereby allowing better detection of spatially localized stimuli (e.g., those caused by prey) (Bastian et al., 2004; Litwin-Kumar et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:32:08.834220Z"
+    },
+    {
+      "id": "6a51051a-01a0-412e-b596-55414e357150",
+      "content_id": "1f6ac84b-069d-482c-b838-209d5bfe12ba",
+      "claim_id": "C48",
+      "claim": "The indirect feedback pathway generates a negative image of the stimulus, thereby strongly reducing ELL pyramidal cell responses.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, previous studies have shown that this pathway generates a negative image of the stimulus, thereby strongly reducing ELL pyramidal cell responses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by reference to previous studies on the indirect feedback pathway.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:32:08.834220Z"
+    },
+    {
+      "id": "58636b16-20d3-480d-bfa5-00e178c567fb",
+      "content_id": "1f6ac84b-069d-482c-b838-209d5bfe12ba",
+      "claim_id": "C49",
+      "claim": "Short-term burst-timing dependent depression helps in sculpting the negative image generated by indirect feedback in an adaptive fashion.",
+      "claim_type": "EXPLICIT",
+      "source": "More recent studies have shed light on how short-term burst-timing dependent depression helps in sculpting this negative image in an adaptive fashion (Bol et al., 2011; Bol et al., 2013; Mejias et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to recent studies on plasticity mechanisms.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:32:08.834220Z"
+    },
+    {
+      "id": "df96a088-c43f-4d13-8d68-83d54bea61d8",
+      "content_id": "1f6ac84b-069d-482c-b838-209d5bfe12ba",
+      "claim_id": "C50",
+      "claim": "The indirect feedback pathway mediates an important new function in optimized coding of envelope (i.e., second-order) stimuli by selectively attenuating responses to low frequencies.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, our results have demonstrated an important new function for indirect feedback in mediating optimized coding of envelope (i.e., second-order) stimuli by selectively attenuating responses to low frequencies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a novel finding of the study supported by experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:32:08.834220Z"
+    },
+    {
+      "id": "73dc1499-03e0-4e4c-a069-4cc307f88433",
+      "content_id": "1f6ac84b-069d-482c-b838-209d5bfe12ba",
+      "claim_id": "C51",
+      "claim": "SK1 channels strongly determine envelope but not AM tuning properties.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous results have shown that SK1 channels strongly determine envelope but not AM tuning properties.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by reference to previous studies on ion channel contributions to tuning.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:32:08.834220Z"
+    },
+    {
+      "id": "8582d10c-89a6-4386-bb17-ae23a74f7efd",
+      "content_id": "1f6ac84b-069d-482c-b838-209d5bfe12ba",
+      "claim_id": "C52",
+      "claim": "Pharmacological inactivation of SK1 channels gave rise to minimal effects on responses to AMs.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, pharmacological inactivation of SK1 channels gave rise to minimal effects on responses to AMs (Toporikova and Chacron, 2009) but compromised optimized coding of envelopes by causing the tuning curve to become broadband (Huang et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:32:08.834220Z"
+    },
+    {
+      "id": "b896d39e-09b0-4778-ae04-cc6a37baae13",
+      "content_id": "1f6ac84b-069d-482c-b838-209d5bfe12ba",
+      "claim_id": "C53",
+      "claim": "Pharmacological inactivation of SK1 channels compromised optimized coding of envelopes by causing the tuning curve to become broadband.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, pharmacological inactivation of SK1 channels gave rise to minimal effects on responses to AMs (Toporikova and Chacron, 2009) but compromised optimized coding of envelopes by causing the tuning curve to become broadband (Huang et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:32:08.834220Z"
+    },
+    {
+      "id": "e5bfa637-25f5-422b-9017-5d88cc910f49",
+      "content_id": "1f6ac84b-069d-482c-b838-209d5bfe12ba",
+      "claim_id": "C54",
+      "claim": "The effects of indirect feedback inactivation and of SK1 channel antagonists on ELL pyramidal cell tuning to envelopes were strikingly similar.",
+      "claim_type": "EXPLICIT",
+      "source": "In fact, the effects of indirect feedback inactivation and of SK1 channel antagonists on ELL pyramidal cell tuning to envelopes were strikingly similar (compare our Figure 4B to Figure 6B of (Huang et al., 2016)).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by comparison of data from the current study with a previous study.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:32:08.834220Z"
+    },
+    {
+      "id": "e925cb67-39c4-4295-b826-b8808f836abd",
+      "content_id": "1f6ac84b-069d-482c-b838-209d5bfe12ba",
+      "claim_id": "C55",
+      "claim": "Indirect feedback excitation provides the necessary intracellular calcium entry that activates SK1 channels.",
+      "claim_type": "EXPLICIT",
+      "source": "We propose that indirect feedback excitation provides the necessary intracellular calcium entry that activates SK1 channels.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a mechanistic hypothesis proposed by the authors based on their findings.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:32:08.834220Z"
+    },
+    {
+      "id": "54047ecc-f09f-45fb-84ad-46b867a6f123",
+      "content_id": "1f6ac84b-069d-482c-b838-209d5bfe12ba",
+      "claim_id": "C56",
+      "claim": "SK1 channels give rise to spike frequency adaptation, thereby selectively attenuating responses to low envelope frequencies and causing the envelope tuning curve to become high-pass.",
+      "claim_type": "EXPLICIT",
+      "source": "These in turn give rise to spike frequency adaptation, thereby selectively attenuating responses to low envelope frequencies and causing the envelope tuning curve to become high-pass (Huang et al., 2016; Benda and Herz, 2003; Deemyad et al., 2012) (see (Huang and Chacron, 2017) for review).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous studies on spike frequency adaptation mechanisms.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:32:08.834220Z"
+    },
+    {
+      "id": "32a2ba57-c0ea-4f9c-aa7f-1c80dc315e90",
+      "content_id": "1f6ac84b-069d-482c-b838-209d5bfe12ba",
+      "claim_id": "C57",
+      "claim": "Blocking indirect feedback input would strongly attenuate calcium entry via NMDA receptors, thereby effectively inhibiting SK1 channels.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, blocking indirect feedback input would strongly attenuate calcium entry via NMDA receptors, thereby effectively inhibiting SK1 channels and explaining why the effects on ELL pyramidal cell tuning to envelopes are similar to those previously observed after application of SK channel antagonists (Huang et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a mechanistic explanation proposed by the authors to explain their findings.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:32:08.834220Z"
+    },
+    {
+      "id": "fd12b961-b377-4329-a2fb-0461774f728f",
+      "content_id": "1f6ac84b-069d-482c-b838-209d5bfe12ba",
+      "claim_id": "C58",
+      "claim": "Calcium-permeable NMDA receptors are highly expressed within the apical dendrites of ELL pyramidal cells.",
+      "claim_type": "EXPLICIT",
+      "source": "The fact that calcium-permeable NMDA receptors are highly expressed within the apical dendrites of ELL pyramidal cells (Harvey-Girard and Dunn, 2003; Bottai et al., 1997), where indirect feedback input terminates (Berman and Maler, 1999) and SK1 channels are located (Ellis et al., 2008), supports our hypothesis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This anatomical claim is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:32:08.834220Z"
+    },
+    {
+      "id": "8fe2bc20-6089-48c9-a39d-3bd0dd89a9ea",
+      "content_id": "1f6ac84b-069d-482c-b838-209d5bfe12ba",
+      "claim_id": "C59",
+      "claim": "Indirect feedback input terminates on the apical dendrites of ELL pyramidal cells where SK1 channels are located.",
+      "claim_type": "EXPLICIT",
+      "source": "The fact that calcium-permeable NMDA receptors are highly expressed within the apical dendrites of ELL pyramidal cells (Harvey-Girard and Dunn, 2003; Bottai et al., 1997), where indirect feedback input terminates (Berman and Maler, 1999) and SK1 channels are located (Ellis et al., 2008), supports our hypothesis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This anatomical claim is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:32:08.834220Z"
+    },
+    {
+      "id": "ffa03df8-7928-4fcf-b66b-0277c203c691",
+      "content_id": "1f6ac84b-069d-482c-b838-209d5bfe12ba",
+      "claim_id": "C60",
+      "claim": "The exact mechanisms by which SK1 channels determine responses to envelopes but not AMs are not well-understood.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the exact mechanisms by which SK1 channels determine responses to envelopes but not AMs, though critical in order to enable the indirect pathway to perform multiple functions, are not well-understood and should be the focus of future studies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement identifies a gap in understanding that requires future investigation.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:32:08.834220Z"
+    },
+    {
+      "id": "26582331-cb03-42dd-ba86-df8841b8fe09",
+      "content_id": "1f6ac84b-069d-482c-b838-209d5bfe12ba",
+      "claim_id": "C61",
+      "claim": "Multiple cell types within nP project to EGp.",
+      "claim_type": "EXPLICIT",
+      "source": "We also note that anatomical studies have shown that multiple cell types within nP project to EGp (Sas and Maler, 1983; Sas and Maler, 1987).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This anatomical claim is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:32:08.834220Z"
+    },
+    {
+      "id": "3a7c3c40-53df-4f51-8bdd-7c61a078e172",
+      "content_id": "1f6ac84b-069d-482c-b838-209d5bfe12ba",
+      "claim_id": "C62",
+      "claim": "With the exception of multipolar cells, the electrophysiological properties of nP neurons projecting to EGp are unknown.",
+      "claim_type": "EXPLICIT",
+      "source": "However, with the exception of multipolar cells, the electrophysiological properties of these neurons are unknown to this day.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement identifies a gap in knowledge about the electrophysiology of nP neurons.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:32:08.834220Z"
+    },
+    {
+      "id": "7fb2dd02-dc04-447e-91a0-dec3ecb95fd0",
+      "content_id": "1f6ac84b-069d-482c-b838-209d5bfe12ba",
+      "claim_id": "C63",
+      "claim": "Projections from multiple nP cell types likely underlie the different functions of the indirect feedback pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "It is very likely that projections from these multiple types underlie the different functions of the indirect feedback pathway but further studies are needed to test this hypothesis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis proposed by the authors that requires future testing.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:32:08.834220Z"
+    },
+    {
+      "id": "10ca7879-3d14-497f-8141-c7ab401629e2",
+      "content_id": "1f6ac84b-069d-482c-b838-209d5bfe12ba",
+      "claim_id": "C64",
+      "claim": "The envelope stimuli considered in the study are behaviorally relevant and contain important information as to the relative position between both conspecifics.",
+      "claim_type": "EXPLICIT",
+      "source": "It is important to note that the envelope stimuli considered here are behaviorally relevant and contain important information as to the relative position between both conspecifics.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is based on established knowledge about the behavioral significance of envelope stimuli.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:32:08.834220Z"
+    },
+    {
+      "id": "34447cf7-a3ea-4239-8dc3-57fb73d7ef98",
+      "content_id": "1f6ac84b-069d-482c-b838-209d5bfe12ba",
+      "claim_id": "C65",
+      "claim": "The indirect feedback did not attenuate responses to envelopes with higher (>0.2 Hz) frequencies.",
+      "claim_type": "EXPLICIT",
+      "source": "Since our results show that the indirect feedback did not attenuate responses to envelopes with higher (>0.2 Hz) frequencies, it is conceivable that these could interfere with the detection of other behaviorally-relevant low frequency AM stimuli (e.g., those caused by prey) since the responses to both stimuli should be enhanced by the direct feedback pathway.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:32:08.834220Z"
+    },
+    {
+      "id": "99ccdf2d-f11b-4c1a-aae8-ba34cc8ac667",
+      "content_id": "1f6ac84b-069d-482c-b838-209d5bfe12ba",
+      "claim_id": "C66",
+      "claim": "AM stimuli caused by prey are spatially localized whereas envelope stimuli are spatially diffuse.",
+      "claim_type": "EXPLICIT",
+      "source": "This is unlikely to be the case however because: 1) the AM stimuli caused by prey are spatially localized whereas envelope stimuli are spatially diffuse and; 2) the temporal frequency content of envelopes tends to be much lower (0 \u2013 1 Hz) than that of prey stimuli (0 \u2013 10 Hz) (Stamper et al., 2013; Nelson and Maciver, 1999).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous studies characterizing stimulus properties.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:32:08.834220Z"
+    },
+    {
+      "id": "ae583da3-a86d-4250-9e59-7dd0802fdb95",
+      "content_id": "1f6ac84b-069d-482c-b838-209d5bfe12ba",
+      "claim_id": "C67",
+      "claim": "The temporal frequency content of envelopes tends to be much lower (0 \u2013 1 Hz) than that of prey stimuli (0 \u2013 10 Hz).",
+      "claim_type": "EXPLICIT",
+      "source": "This is unlikely to be the case however because: 1) the AM stimuli caused by prey are spatially localized whereas envelope stimuli are spatially diffuse and; 2) the temporal frequency content of envelopes tends to be much lower (0 \u2013 1 Hz) than that of prey stimuli (0 \u2013 10 Hz) (Stamper et al., 2013; Nelson and Maciver, 1999).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous studies characterizing stimulus properties.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:32:08.834220Z"
+    },
+    {
+      "id": "0885bb80-83c3-4936-a48d-b5ea65e46864",
+      "content_id": "1f6ac84b-069d-482c-b838-209d5bfe12ba",
+      "claim_id": "C68",
+      "claim": "Differences in spatial extent and temporal frequency content are used by the animal to distinguish between envelope and prey stimuli.",
+      "claim_type": "EXPLICIT",
+      "source": "We hypothesize that these differences in spatial extent and temporal frequency content are used by the animal to distinguish between both stimuli, but further studies are needed to verify that this is the case.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis proposed by the authors that requires future testing.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:32:08.834220Z"
+    },
+    {
+      "id": "4e239299-68f6-4b02-8af8-8eca201508a5",
+      "content_id": "1f6ac84b-069d-482c-b838-209d5bfe12ba",
+      "claim_id": "C69",
+      "claim": "ELL pyramidal cells displayed broadband tuning curves after pharmacological inactivation of indirect descending input.",
+      "claim_type": "EXPLICIT",
+      "source": "The fact that ELL pyramidal cells displayed broadband tuning curves after pharmacological inactivation of indirect descending input suggests that they perform little filtering of input from stellate cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the experimental data showing broadband tuning after indirect feedback inactivation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:32:08.834220Z"
+    },
+    {
+      "id": "eb132d6e-4b49-493f-9b5e-460dccc863f4",
+      "content_id": "1f6ac84b-069d-482c-b838-209d5bfe12ba",
+      "claim_id": "C70",
+      "claim": "ELL pyramidal cells perform little filtering of input from stellate cells.",
+      "claim_type": "EXPLICIT",
+      "source": "The fact that ELL pyramidal cells displayed broadband tuning curves after pharmacological inactivation of indirect descending input suggests that they perform little filtering of input from stellate cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the observation that ELL pyramidal cells show broadband tuning similar to stellate cells when indirect feedback is blocked.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:32:08.834220Z"
+    },
+    {
+      "id": "2c4dafb3-4328-4f57-9430-371e8e2e3d46",
+      "content_id": "1f6ac84b-069d-482c-b838-209d5bfe12ba",
+      "claim_id": "C71",
+      "claim": "Multipolar cells have tuning properties that are similar to those of ELL pyramidal cells and optimize coding via temporal whitening.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, multipolar cells projecting indirectly have tuning properties that are similar to those of ELL pyramidal cells and optimize coding via temporal whitening.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the tuning curve and white index data for multipolar cells shown in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:32:08.834220Z"
+    },
+    {
+      "id": "50a18178-93de-45f1-91da-698ca9c956c1",
+      "content_id": "1f6ac84b-069d-482c-b838-209d5bfe12ba",
+      "claim_id": "C72",
+      "claim": "The output of nP received by EGp granule cells that project back to ELL is temporally whitened.",
+      "claim_type": "EXPLICIT",
+      "source": "This result has important implications for understanding how temporal whitening of envelopes occurs in ELL pyramidal cells as it implies that the output of the nP received by EGp granule cells that project back to ELL is temporally whitened.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the finding that multipolar cells show temporal whitening.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:32:08.834220Z"
+    },
+    {
+      "id": "e169de77-59bd-484d-bf52-440fc3de3fc4",
+      "content_id": "1f6ac84b-069d-482c-b838-209d5bfe12ba",
+      "claim_id": "C73",
+      "claim": "The output of nP multipolar cells undergoes significant filtering both by EGp granule cells to enable filtering by SK1 channels in ELL pyramidal cells.",
+      "claim_type": "EXPLICIT",
+      "source": "It is very likely that the output of nP multipolar cells, which is critical in determining ELL pyramidal cell tuning and responses to envelopes, undergoes significant filtering both by EGp granule cells to enable filtering by SK1 channels in ELL pyramidal cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis proposed by the authors about signal processing in the indirect feedback pathway.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:32:08.834220Z"
+    },
+    {
+      "id": "34aaf48c-3ac6-41bb-8f79-5d857e43486d",
+      "content_id": "1f6ac84b-069d-482c-b838-209d5bfe12ba",
+      "claim_id": "C74",
+      "claim": "The architecture of the indirect feedback pathway shares many similarities with the cerebellum and other cerebellum-like structures.",
+      "claim_type": "EXPLICIT",
+      "source": "It should be noted that the architecture of the indirect feedback pathway by which parallel fibers emanating from the EGp terminate onto distal ELL pyramidal cell apical dendrites shares many similarities with the cerebellum and other cerebellum-like structures (e.g., the dorsal cochlear nucleus).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparative anatomical observation based on established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:32:08.834220Z"
+    },
+    {
+      "id": "b4d4dadc-9dfe-4a15-b59b-416a25b9652a",
+      "content_id": "1f6ac84b-069d-482c-b838-209d5bfe12ba",
+      "claim_id": "C75",
+      "claim": "Studies performed in cerebellum and cerebellum-like structures have shown clear common functions and mechanisms mediating how descending input attenuates or cancels responses to self-generated sensory input.",
+      "claim_type": "EXPLICIT",
+      "source": "Studies performed in cerebellum as well as cerebellum-like structures have shown clear common functions and mechanisms mediating how such descending input in attenuating or even cancelling responses to self-generated sensory input (Cullen, 2011; Bell et al., 2008; Requarth and Sawtell, 2011; Warren and Sawtell, 2016; Sawtell, 2017; Singla et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to studies in cerebellum and cerebellum-like structures.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:32:08.834220Z"
+    },
+    {
+      "id": "c95a9081-17f6-490f-9f1a-67e0b99e1334",
+      "content_id": "1f6ac84b-069d-482c-b838-209d5bfe12ba",
+      "claim_id": "C76",
+      "claim": "Results showing that feedback input from parallel fibers in the cerebellar-like ELL mediate optimized coding of natural stimuli through whitening will be applicable to the cerebellum and other cerebellum-like structures.",
+      "claim_type": "EXPLICIT",
+      "source": "It is likely that our results showing that feedback input from parallel fibers in the cerebellar-like ELL mediate optimized coding of natural stimuli through whitening will be applicable to the cerebellum as well as other cerebellum-like structures.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a prediction about the generalizability of the findings based on structural similarities.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:32:08.834220Z"
+    },
+    {
+      "id": "e0c77db2-af66-461f-b0e4-9ef74dd2275a",
+      "content_id": "1f6ac84b-069d-482c-b838-209d5bfe12ba",
+      "claim_id": "C77",
+      "claim": "Descending pathways are found ubiquitously in sensory systems.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, recent results have emphasized the critical role of descending pathways, which are found ubiquitously in sensory systems (Cajal, 1909; Holl\u00e4nder, 1970; Ostapoff et al., 1990; Sherman and Guillery, 2002), in determining accurate sensory neural and behavioral responses to sensory input (Manita et al., 2015; Kwon et al., 2016; Takahashi et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to anatomical and functional studies across sensory systems.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:32:08.834220Z"
+    },
+    {
+      "id": "8fa8e5ed-8ab7-4309-94e3-5078c8e826db",
+      "content_id": "1f6ac84b-069d-482c-b838-209d5bfe12ba",
+      "claim_id": "C78",
+      "claim": "Feedback terminating on the apical dendrites of cortical pyramidal neurons was essential in determining both responses and perception to somatosensory input.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, it was shown that feedback terminating on the apical dendrites of cortical pyramidal neurons was essential in determining both responses and perception to somatosensory input (Takahashi et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to a study in the somatosensory system.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:32:08.834220Z"
+    },
+    {
+      "id": "4ccc1af2-9ae7-4740-a103-8dad90cc2e0f",
+      "content_id": "1f6ac84b-069d-482c-b838-209d5bfe12ba",
+      "claim_id": "C79",
+      "claim": "The electrosensory system of weakly electric fish displays many documented similarities with the mammalian visual, auditory, and vestibular systems.",
+      "claim_type": "EXPLICIT",
+      "source": "Critically, the electrosensory system of weakly electric fish displays many documented similarities with the mammalian visual, auditory, and vestibular systems (Clarke et al., 2015; Chacron et al., 2011; Metzen et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to comparative studies.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:32:08.834220Z"
+    },
+    {
+      "id": "428f1247-5a45-46b0-a58f-fff8bc69f45e",
+      "content_id": "1f6ac84b-069d-482c-b838-209d5bfe12ba",
+      "claim_id": "C80",
+      "claim": "Temporal whitening has been observed across sensory systems.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, given that temporal whitening has been observed across sensory systems (Dan et al., 1996; Wang et al., 2003; Pozzorini et al., 2013; Lundstrom et al., 2010), it is likely that our results showing how feedback pathways mediate temporal whitening of sensory input by ELL pyramidal cells in the electrosensory system of weakly electric fish will be generally applicable to other systems.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to studies across different sensory systems.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:32:08.834220Z"
+    },
+    {
+      "id": "146713bd-0f31-4e6f-9ceb-cc04139fbc59",
+      "content_id": "1f6ac84b-069d-482c-b838-209d5bfe12ba",
+      "claim_id": "C81",
+      "claim": "Results showing how feedback pathways mediate temporal whitening of sensory input by ELL pyramidal cells will be generally applicable to other systems.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, given that temporal whitening has been observed across sensory systems (Dan et al., 1996; Wang et al., 2003; Pozzorini et al., 2013; Lundstrom et al., 2010), it is likely that our results showing how feedback pathways mediate temporal whitening of sensory input by ELL pyramidal cells in the electrosensory system of weakly electric fish will be generally applicable to other systems.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a prediction about the generalizability of the findings based on cross-system comparisons.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:32:08.834220Z"
+    },
+    {
+      "id": "49c2efd7-0b07-429e-ab04-29094e3a612a",
+      "content_id": "1f6ac84b-069d-482c-b838-209d5bfe12ba",
+      "claim_id": "C82",
+      "claim": "The wave-type weakly electric fish Apteronotus leptorhynchus was used exclusively in the present study.",
+      "claim_type": "EXPLICIT",
+      "source": "The wave-type weakly electric fish Apteronotus leptorhynchus was used exclusively in the present study.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological statement about the experimental subjects.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:32:08.834220Z"
+    },
+    {
+      "id": "3f4c56f3-fb70-4d78-a6eb-98b913f8b618",
+      "content_id": "1f6ac84b-069d-482c-b838-209d5bfe12ba",
+      "claim_id": "C83",
+      "claim": "Data obtained from ON- and OFF-type ELL pyramidal neurons were pooled because there is no overall difference between their responses to envelopes.",
+      "claim_type": "EXPLICIT",
+      "source": "Data obtained from ON- and OFF-type ELL pyramidal neurons were pooled because, consistent with previous studies (Huang and Chacron, 2016), we found no overall difference between their responses to envelopes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This methodological decision is justified by the current findings and consistency with previous studies.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:32:08.834220Z"
+    },
+    {
+      "id": "1060b731-1e29-4a89-aeef-b3d432367b7b",
+      "content_id": "1f6ac84b-069d-482c-b838-209d5bfe12ba",
+      "claim_id": "C84",
+      "claim": "The stimuli consisted of sinusoidal AMs with constant amplitude as well as noisy EOD AMs whose envelope varied sinusoidally at different frequencies.",
+      "claim_type": "EXPLICIT",
+      "source": "Our stimuli consisted of sinusoidal AMs with constant amplitude as well as noisy EOD AMs whose envelope varied sinusoidally at different frequencies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the experimental stimuli used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:32:08.834220Z"
+    },
+    {
+      "id": "c1f9a432-f2cc-4535-80ba-02820f560c7f",
+      "content_id": "1f6ac84b-069d-482c-b838-209d5bfe12ba",
+      "claim_id": "C85",
+      "claim": "The animal's EOD is a carrier and the meaningful stimulus is the EOD AM.",
+      "claim_type": "EXPLICIT",
+      "source": "It is further important to realize that the animal's EOD is a carrier and that the meaningful stimulus here is the EOD AM.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an explanation of how to interpret the stimulus structure in the context of the animal's sensory system.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:32:08.834220Z"
+    },
+    {
+      "id": "3c747250-7de5-4d0f-abb1-71e947d7c227",
+      "content_id": "1f6ac84b-069d-482c-b838-209d5bfe12ba",
+      "claim_id": "C86",
+      "claim": "Both first- and second-order features of the stimulus correspond to the second- and third-order features of the full signal received by the animal, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, both first- and second-order features of the stimulus correspond to the second- and third-order features of the full signal received by the animal, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an explanation of the relationship between stimulus features and the signal received by the animal.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:32:08.834220Z"
+    },
+    {
+      "id": "12a73cc4-c0f5-4519-8a42-2479c4678c4c",
+      "content_id": "1f6ac84b-069d-482c-b838-209d5bfe12ba",
+      "claim_id": "C87",
+      "claim": "Peripheral receptors make synaptic contact onto ELL pyramidal cells either directly with excitation for ON-type cells or indirectly via local inhibitory interneurons for OFF-type cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Peripheral receptors make synaptic contact onto ELL pyramidal cells either directly with excitation for ON-type cells or indirectly via local inhibitory interneurons for OFF-type cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established anatomical and physiological knowledge about the electrosensory system.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:32:08.834220Z"
+    },
+    {
+      "id": "2ccdbaa5-f825-4880-bfbd-16dd4f0d2265",
+      "content_id": "1f6ac84b-069d-482c-b838-209d5bfe12ba",
+      "claim_id": "C88",
+      "claim": "Pyramidal cells are the sole output neurons of the ELL and project to the midbrain torus semicircularis (TS) which in turn projects to higher brain areas.",
+      "claim_type": "EXPLICIT",
+      "source": "Pyramidal cells are the sole output neurons of the ELL and project to the midbrain torus semicircularis (TS) which in turn projects to higher brain areas.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established anatomical knowledge about the electrosensory system.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:32:08.834220Z"
+    },
+    {
+      "id": "8f5909af-fbb1-4b18-8a3e-2e851f3047c4",
+      "content_id": "1f6ac84b-069d-482c-b838-209d5bfe12ba",
+      "claim_id": "C89",
+      "claim": "Injecting lidocaine into PET will block indirect feedback input to most if not all pyramidal cells within the ipsilateral ELL.",
+      "claim_type": "EXPLICIT",
+      "source": "We note that injecting lidocaine into PET will block indirect feedback input to most if not all pyramidal cells within the ipsilateral ELL.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an explanation of the expected effect of the pharmacological manipulation based on anatomy.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:32:08.834220Z"
+    },
+    {
+      "id": "5f081e1f-330e-42e0-8f00-60d2a13ac1c3",
+      "content_id": "1f6ac84b-069d-482c-b838-209d5bfe12ba",
+      "claim_id": "C90",
+      "claim": "Injecting CNQX into the ELL molecular layer will only block indirect feedback input in the vicinity of the ELL being recorded from.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, injecting CNQX into the ELL molecular layer will only block indirect feedback input in the vicinity of the ELL being recorded from (Chacron et al., 2005; Bastian, 1993).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an explanation of the expected effect of the pharmacological manipulation based on previous studies.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:32:08.834220Z"
+    },
+    {
+      "id": "508ddf16-e1b3-40d0-a020-3b627df3d6f6",
+      "content_id": "1f6ac84b-069d-482c-b838-209d5bfe12ba",
+      "claim_id": "C91",
+      "claim": "Movement envelopes are fundamentally different than 'social' envelopes that are due to interaction between the EODs of three or more fish.",
+      "claim_type": "EXPLICIT",
+      "source": "We note that movement envelopes, which are the focus of the current study, are fundamentally different than so-called 'social' envelopes that are instead due to interaction between the EODs of three of more fish (Stamper et al., 2013) and which have been the focus of previous studies (Middleton et al., 2006; Stamper et al., 2012; Savard et al., 2011; McGillivray et al., 2012; Thomas et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This distinction is supported by citations to previous studies characterizing different types of envelope stimuli.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:32:08.834220Z"
+    },
+    {
+      "id": "2a45b632-ffbc-4bfd-8d85-2fbc9feca9de",
+      "content_id": "1f6ac84b-069d-482c-b838-209d5bfe12ba",
+      "claim_id": "C92",
+      "claim": "For social envelopes, the frequency content of the envelope is mostly determined by the frequencies of the three EODs.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, for social envelopes, the frequency content of the envelope is mostly determined by the frequencies of the three EODs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an explanation of the physical basis of social envelope generation.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:32:08.834220Z"
+    },
+    {
+      "id": "9486fd50-6960-41e5-8a01-4f931db8db84",
+      "content_id": "1f6ac84b-069d-482c-b838-209d5bfe12ba",
+      "claim_id": "C93",
+      "claim": "For movement envelopes occurring during interactions between two conspecifics, the envelope frequency content is determined solely by the relative movements of both fish.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, for movement envelopes occurring during interactions between two conspecifics, the envelope frequency content is not determined by the two EOD frequencies or the resulting beat frequency. Rather, it is determined solely by the relative movements of both fish (Fotowat et al., 2013; Metzen and Chacron, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous studies characterizing movement envelopes.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:32:08.834220Z"
+    },
+    {
+      "id": "4f220ab4-d2d1-44bf-a8c5-e47a671d161d",
+      "content_id": "1f6ac84b-069d-482c-b838-209d5bfe12ba",
+      "claim_id": "C94",
+      "claim": "Field studies have shown that Apteronotid species tend to encounter movement envelopes much more frequently than social envelopes.",
+      "claim_type": "EXPLICIT",
+      "source": "We further note that field studies have shown that Apteronotid species tend to encounter movement envelopes much more frequently than social envelopes: this is because they tend to be found in groups of 2 much more frequently than in groups of 3+ (Stamper et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to a field study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:32:08.834220Z"
+    },
+    {
+      "id": "3d3c20fb-1b09-4240-b13e-fb38ebbdbade",
+      "content_id": "1f6ac84b-069d-482c-b838-209d5bfe12ba",
+      "claim_id": "C95",
+      "claim": "Social envelopes are expected to be more relevant for weakly electric fish species that tend to be more gregarious (e.g., Eigenmannia virescens).",
+      "claim_type": "EXPLICIT",
+      "source": "It is expected that social envelopes will be more relevant for weakly electric fish species that tend to be more gregarious (e.g., Eigenmannia virescens).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a prediction based on the social behavior of different species.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:32:08.834220Z"
+    },
+    {
+      "id": "a2512437-96b6-4c9a-af06-cb197f73361a",
+      "content_id": "1f6ac84b-069d-482c-b838-209d5bfe12ba",
+      "claim_id": "C96",
+      "claim": "Stellate cells have low spontaneous firing rates (1.37 \u00b1 0.42 Hz) and do not respond to high AM frequencies.",
+      "claim_type": "EXPLICIT",
+      "source": "While stellate cells have low spontaneous firing rates (1.37 \u00b1 0.42 Hz) and do not respond to high AM frequencies, multipolar cells have high spontaneous firing rates (55.53 \u00b1 8.05 Hz and do respond well to high AM frequencies > 32 Hz.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by electrophysiological data from the current study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:32:08.834220Z"
+    },
+    {
+      "id": "15945cc1-956e-48f1-97f1-f5c917e1149c",
+      "content_id": "1f6ac84b-069d-482c-b838-209d5bfe12ba",
+      "claim_id": "C97",
+      "claim": "Multipolar cells have high spontaneous firing rates (55.53 \u00b1 8.05 Hz) and respond well to high AM frequencies > 32 Hz.",
+      "claim_type": "EXPLICIT",
+      "source": "While stellate cells have low spontaneous firing rates (1.37 \u00b1 0.42 Hz) and do not respond to high AM frequencies, multipolar cells have high spontaneous firing rates (55.53 \u00b1 8.05 Hz and do respond well to high AM frequencies > 32 Hz.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by electrophysiological data from the current study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:32:08.834220Z"
+    },
+    {
+      "id": "cb6e7e7e-4b17-4485-af83-9e278d513fe9",
+      "content_id": "1f6ac84b-069d-482c-b838-209d5bfe12ba",
+      "claim_id": "C98",
+      "claim": "The electrophysiological properties of stellate and multipolar cells match the results found in the literature.",
+      "claim_type": "EXPLICIT",
+      "source": "These results match the results found in the literature (Bastian and Bratton, 1990; Bratton and Bastian, 1990), confirming our recordings were appropriate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by comparison with previous studies and validates the current recordings.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:32:08.834220Z"
+    },
+    {
+      "id": "922c96cc-163e-4c63-9399-258ec3c2b90c",
+      "content_id": "1f6ac84b-069d-482c-b838-209d5bfe12ba",
+      "claim_id": "C99",
+      "claim": "Multipolar cells have significantly higher baseline firing rates than stellate cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with previous studies (Bastian and Bratton, 1990; Bratton and Bastian, 1990), multipolar cells have significantly higher baseline firing rates than stellate cells (\u03c72 = 12, p=5.32*10- 4, Kruskal-Wallis ANOVA).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by statistical analysis of baseline firing rates shown in Figure 6\u2014figure supplement 1B and is consistent with previous studies.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:32:08.834220Z"
+    },
+    {
+      "id": "ff1fd5a1-6321-40d0-9514-35143aa253cc",
+      "content_id": "1f6ac84b-069d-482c-b838-209d5bfe12ba",
+      "claim_id": "C100",
+      "claim": "Complete feedback inactivation significantly decreased the power law exponent of ELL pyramidal cell tuning curves.",
+      "claim_type": "EXPLICIT",
+      "source": "Population-averaged best-fit power law exponents before (black) and after (purple) lidocaine injection were significantly different from one another (p=0.0156, Wilcoxon Signed-Rank Test).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by statistical analysis of the data shown in Figure 4B inset.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:32:08.834220Z"
+    },
+    {
+      "id": "fe336c00-4791-42f8-a0f3-edb256f501b7",
+      "content_id": "1f6ac84b-069d-482c-b838-209d5bfe12ba",
+      "claim_id": "C101",
+      "claim": "Complete feedback inactivation significantly decreased the white index of ELL pyramidal cell responses.",
+      "claim_type": "EXPLICIT",
+      "source": "Population-averaged white index values before (black) and after (purple) lidocaine application were significantly different from one another (p=0.0234, Wilcoxon Signed-Rank Test).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by statistical analysis of the data shown in Figure 4F left panel.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:32:08.834220Z"
+    },
+    {
+      "id": "9193baf5-cac4-48b4-a186-f6fe26216700",
+      "content_id": "1f6ac84b-069d-482c-b838-209d5bfe12ba",
+      "claim_id": "C102",
+      "claim": "Complete feedback inactivation significantly decreased neural sensitivity to envelopes.",
+      "claim_type": "EXPLICIT",
+      "source": "Population-averaged relative changes in neural (left) and behavioral (right) gain following lidocaine application were both significantly different from zero (neuron: p=4.77*10\u22124, Wilcoxon Signed-Rank Test, behavior: p=0.002, Wilcoxon Signed-Rank Test).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by statistical analysis of the data shown in Figure 4F right panel.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:32:08.834220Z"
+    },
+    {
+      "id": "5379ca60-b86c-492c-b441-3e432bb1b3e3",
+      "content_id": "1f6ac84b-069d-482c-b838-209d5bfe12ba",
+      "claim_id": "C103",
+      "claim": "Complete feedback inactivation significantly decreased behavioral sensitivity to envelopes.",
+      "claim_type": "EXPLICIT",
+      "source": "Population-averaged relative changes in neural (left) and behavioral (right) gain following lidocaine application were both significantly different from zero (neuron: p=4.77*10\u22124, Wilcoxon Signed-Rank Test, behavior: p=0.002, Wilcoxon Signed-Rank Test).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by statistical analysis of the data shown in Figure 4F right panel.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:32:08.834220Z"
+    },
+    {
+      "id": "a2ebf96b-0015-4e7e-a5c9-5a134701d6df",
+      "content_id": "1f6ac84b-069d-482c-b838-209d5bfe12ba",
+      "claim_id": "C104",
+      "claim": "Indirect feedback inactivation significantly decreased the power law exponent of ELL pyramidal cell tuning curves.",
+      "claim_type": "EXPLICIT",
+      "source": "Population-averaged best-fit power law exponent before (black) and after (orange) lidocaine injection (p=0.0039, Wilcoxon Signed-Rank Test).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by statistical analysis of the data shown in Figure 5B inset.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:32:08.834220Z"
+    },
+    {
+      "id": "5be0db33-a07e-4ec5-a737-22dab87d585b",
+      "content_id": "1f6ac84b-069d-482c-b838-209d5bfe12ba",
+      "claim_id": "C105",
+      "claim": "Indirect feedback inactivation significantly decreased the white index of ELL pyramidal cell responses.",
+      "claim_type": "EXPLICIT",
+      "source": "Population-averaged white index before (black) and after (orange) lidocaine application (p=0.0273, Wilcoxon Signed-Rank Test).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by statistical analysis of the data shown in Figure 5F left panel.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:32:08.834220Z"
+    },
+    {
+      "id": "70f65d09-9d25-4a78-9b82-0273d00f8676",
+      "content_id": "1f6ac84b-069d-482c-b838-209d5bfe12ba",
+      "claim_id": "C106",
+      "claim": "Indirect feedback inactivation significantly increased neural sensitivity to envelopes.",
+      "claim_type": "EXPLICIT",
+      "source": "Population-averaged relative changes in neural and behavioral sensitivity following lidocaine application (neuron: p=7.03*10\u22126, Wilcoxon Signed-Rank Test, behavior: p=6.74*10\u22124, Wilcoxon Signed-Rank Test).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by statistical analysis of the data shown in Figure 5F right panel.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:32:08.834220Z"
+    },
+    {
+      "id": "d99a1259-5e57-494f-92b8-e80e55f1a9cf",
+      "content_id": "1f6ac84b-069d-482c-b838-209d5bfe12ba",
+      "claim_id": "C107",
+      "claim": "Indirect feedback inactivation significantly increased behavioral sensitivity to envelopes.",
+      "claim_type": "EXPLICIT",
+      "source": "Population-averaged relative changes in neural and behavioral sensitivity following lidocaine application (neuron: p=7.03*10\u22126, Wilcoxon Signed-Rank Test, behavior: p=6.74*10\u22124, Wilcoxon Signed-Rank Test).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by statistical analysis of the data shown in Figure 5F right panel.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:32:08.834220Z"
+    },
+    {
+      "id": "817c9932-8b32-4155-ab46-df313d50f447",
+      "content_id": "1f6ac84b-069d-482c-b838-209d5bfe12ba",
+      "claim_id": "C108",
+      "claim": "The power law exponents of stellate and multipolar cells were significantly different from one another.",
+      "claim_type": "EXPLICIT",
+      "source": "In both cases, values obtained for stellate and multipolar cells were significantly different from one another (exponent: \u03c72 = 12, p=5.32*10 - 4, Kruskal-Wallis ANOVA; white index: \u03c72 = 10.7, p=0.0011, Kruskal-Wallis ANOVA).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by statistical analysis of the data shown in Figure 6E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:32:08.834220Z"
+    },
+    {
+      "id": "5542b86f-75fb-49f9-87a2-b3c8b07ec081",
+      "content_id": "1f6ac84b-069d-482c-b838-209d5bfe12ba",
+      "claim_id": "C109",
+      "claim": "The white index values of stellate and multipolar cells were significantly different from one another.",
+      "claim_type": "EXPLICIT",
+      "source": "In both cases, values obtained for stellate and multipolar cells were significantly different from one another (exponent: \u03c72 = 12, p=5.32*10 - 4, Kruskal-Wallis ANOVA; white index: \u03c72 = 10.7, p=0.0011, Kruskal-Wallis ANOVA).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by statistical analysis of the data shown in Figure 6E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:32:08.834220Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "473ff383-889d-4375-88af-226f7c75684b",
+      "content_id": "1f6ac84b-069d-482c-b838-209d5bfe12ba",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Complete pharmacological inactivation of all feedback pathways (direct and indirect) from nP to ELL pyramidal cells strongly attenuated neural and behavioral responses to envelope stimuli, with responses to high frequencies more attenuated than low frequencies, resulting in broadband (frequency-independent) tuning and compromised temporal whitening.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C18-C20 and C100-C103 provide converging experimental evidence from pharmacological manipulations (bilateral lidocaine injection into nP), neural recordings showing frequency-dependent attenuation, tuning curve changes, white index decreases, and behavioral measurements. The data are statistically significant (p<0.05) and supported by appropriate controls (C26, saline injection). The conclusion that complete feedback inactivation compromises optimal coding is well-supported by the experimental design and data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T06:32:08.834220Z"
+    },
+    {
+      "id": "54974cf4-89e3-4777-8810-3a13b79ae170",
+      "content_id": "1f6ac84b-069d-482c-b838-209d5bfe12ba",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Selective pharmacological inactivation of indirect feedback (via lidocaine into PET or CNQX into ELL molecular layer) increased neural and behavioral sensitivity to envelopes, with enhancement primarily at low frequencies, resulting in broadband tuning and compromised temporal whitening.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C21-C22 and C104-C107 are supported by experimental data from two independent pharmacological approaches (lidocaine into PET and CNQX into ELL molecular layer, C29-C30), both showing consistent effects. Statistical significance is demonstrated (p<0.05), and the results converge on the conclusion that indirect feedback selectively attenuates low-frequency responses. The consistency across methods strengthens the conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T06:32:08.834220Z"
+    },
+    {
+      "id": "0a9e67fe-5ac9-4203-9f87-1e0deb49617c",
+      "content_id": "1f6ac84b-069d-482c-b838-209d5bfe12ba",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Two distinct populations of nP neurons projecting to ELL show differential envelope frequency tuning: stellate cells (direct pathway) display broadband tuning without temporal whitening, while multipolar cells (indirect pathway) display high-pass tuning and perform temporal whitening.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C23-C24 and C33-C36 are supported by direct electrophysiological recordings from identified nP stellate and multipolar cells (C31-C32, C96-C99). The cell types were distinguished based on established electrophysiological criteria consistent with literature (C98-C99). Statistical analyses show significant differences in power law exponents and white index values between cell types (C108-C109, p<0.001). The data directly demonstrate the differential tuning properties of the two feedback pathways.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T06:32:08.834220Z"
+    },
+    {
+      "id": "0a7f587f-a796-4e5a-97c3-828a73e3c812",
+      "content_id": "1f6ac84b-069d-482c-b838-209d5bfe12ba",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The direct feedback pathway from nP stellate cells enhances ELL pyramidal cell responses to envelopes independently of temporal frequency.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C37-C38 are supported by the combination of stellate cell recordings showing broadband tuning (C23, C35-C36) and the effects of complete feedback inactivation showing uniform attenuation (C3, C18). The inference that direct feedback provides frequency-independent enhancement is logically consistent with the data, though it relies on combining results from different experiments rather than direct manipulation of only the direct pathway.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T06:32:08.834220Z"
+    },
+    {
+      "id": "c55b92f8-dafd-4e0b-be46-b413e3466a08",
+      "content_id": "1f6ac84b-069d-482c-b838-209d5bfe12ba",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The indirect feedback pathway mediates optimized coding of envelope stimuli by selectively attenuating responses to low frequencies, thereby creating high-pass tuning necessary for temporal whitening.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C50 is supported by the selective inactivation experiments (C21-C22, C104-C107) showing that blocking indirect feedback specifically enhances low-frequency responses and compromises whitening. This is further supported by multipolar cell recordings showing high-pass tuning (C24, C71). The mechanistic interpretation is consistent with the experimental data and represents a novel finding of the study.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T06:32:08.834220Z"
+    },
+    {
+      "id": "f8af4caf-8495-46d0-b5b6-0118597ee36d",
+      "content_id": "1f6ac84b-069d-482c-b838-209d5bfe12ba",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Indirect feedback excitation provides intracellular calcium entry via NMDA receptors that activates SK1 channels, which mediate spike frequency adaptation and selective attenuation of low-frequency envelope responses.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C55-C57 are mechanistic hypotheses proposed by the authors but not directly tested in this study. While the anatomical support (C58-C59) and similarity to previous SK1 channel manipulation effects (C54) provide circumstantial evidence, no direct measurements of calcium dynamics, NMDA receptor activity, or SK1 channel function were performed. The hypothesis is plausible and well-reasoned but requires experimental validation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T06:32:08.834220Z"
+    },
+    {
+      "id": "64980596-2f74-4056-8989-b9bb90c90a3d",
+      "content_id": "1f6ac84b-069d-482c-b838-209d5bfe12ba",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Multipolar cells in nP perform temporal whitening, implying that the output sent to EGp and subsequently to ELL via the indirect pathway is already temporally whitened, though this signal likely undergoes further filtering by EGp granule cells and SK1 channels in ELL pyramidal cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C71 is directly supported by multipolar cell recordings showing high-pass tuning and temporal whitening (C24, C108-C109). Claim C72 is a logical inference from C71 supported by the data. Claim C73 is a hypothesis about signal processing that, while plausible, is not directly tested. The core finding about multipolar cell whitening is well-supported, but the downstream processing mechanisms remain speculative.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T06:32:08.834220Z"
+    },
+    {
+      "id": "8ca10b16-aacd-4216-8d49-b0bcbde1f57a",
+      "content_id": "1f6ac84b-069d-482c-b838-209d5bfe12ba",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Feedback manipulations differentially affect responses to envelopes versus amplitude modulations (AMs): complete feedback inactivation does not affect AM responses, while indirect feedback inactivation increases AM responses.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C25, C28, and C30 are supported by spike-triggered average measurements showing differential effects on AM versus envelope responses. This demonstrates stimulus-specific effects of feedback pathways and is consistent with previous literature (C28, C30 cite prior work). The finding supports the interpretation that feedback pathways can perform multiple functions depending on stimulus type.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T06:32:08.834220Z"
+    },
+    {
+      "id": "ab2dbc47-e535-4a36-b5f9-35442588bdf6",
+      "content_id": "1f6ac84b-069d-482c-b838-209d5bfe12ba",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Feedback inactivation alters the relationship between neural tuning and behavioral responses in a complex manner: both overall neural sensitivity and tuning exponent contribute to determining behavioral responses, not tuning exponent alone.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C44-C46 are supported by the observation that complete and indirect feedback inactivation produced similar changes in neural tuning exponent but opposite changes in behavioral tuning exponent (Figures 4E, 5E). This demonstrates that the neural-behavioral relationship is more complex than previously assumed. However, the mechanistic understanding of how downstream areas decode ELL output remains incomplete.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T06:32:08.834220Z"
+    },
+    {
+      "id": "e5dc6a91-79a6-4d49-bbd9-9dbbb44f6bd4",
+      "content_id": "1f6ac84b-069d-482c-b838-209d5bfe12ba",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Control experiments validate the specificity of pharmacological manipulations: saline injection (sham) does not alter responses, and unilateral contralateral lidocaine injection produces similar effects to bilateral injection.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C26-C27 are supported by control experiments shown in supplementary figures. These controls are essential for validating that the observed effects are due to feedback inactivation rather than injection artifacts or non-specific effects. The controls strengthen confidence in the main experimental findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T06:32:08.834220Z"
+    },
+    {
+      "id": "21866a82-d6a4-4dfa-b369-16929bfc46d4",
+      "content_id": "1f6ac84b-069d-482c-b838-209d5bfe12ba",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Sensory neurons achieve optimal encoding by matching tuning properties to natural stimulus statistics through temporal whitening, a phenomenon observed across species and systems, though underlying mechanisms have remained unclear.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1 and C7-C9 establish the theoretical framework and prior knowledge context for the study. These are well-supported by citations to established literature (Rieke et al., 1996; Dan et al., 1996; Wang et al., 2003; etc.). Claim C9 identifies the knowledge gap that the current study addresses. This provides appropriate scientific context.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T06:32:08.834220Z"
+    },
+    {
+      "id": "1c9b5020-13b3-454c-99b2-a4de7f29252d",
+      "content_id": "1f6ac84b-069d-482c-b838-209d5bfe12ba",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The findings regarding feedback-mediated temporal whitening in the electrosensory system are likely applicable to cerebellum, cerebellum-like structures, and other sensory systems due to architectural similarities and the ubiquity of temporal whitening across systems.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C76 and C81 are predictions about generalizability based on structural similarities (C74-C75, C77-C80) and cross-system observations of whitening. While the comparative arguments are reasonable and supported by citations, these remain speculative predictions that require experimental validation in other systems. The claims appropriately use cautious language ('likely', 'it is likely').",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T06:32:08.834220Z"
+    },
+    {
+      "id": "ca8aaa8c-0a17-4c06-9cef-859d469f90ff",
+      "content_id": "1f6ac84b-069d-482c-b838-209d5bfe12ba",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Methodological details: experiments used Apteronotus leptorhynchus, pooled ON- and OFF-type pyramidal cells, and employed envelope stimuli consisting of amplitude-modulated EODs where the envelope represents behaviorally relevant second-order stimulus features.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C82-C88 describe methodological choices that are well-justified. Pooling ON/OFF cells is supported by lack of differences (C83) and consistency with prior work. The stimulus design (C84-C86) is appropriate for studying envelope responses. The anatomical descriptions (C87-C88) are established knowledge. These methodological details are adequately documented.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T06:32:08.834220Z"
+    },
+    {
+      "id": "681002d9-e9c6-49a6-98e0-0b089df08bbb",
+      "content_id": "1f6ac84b-069d-482c-b838-209d5bfe12ba",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Stellate and multipolar cells in nP can be reliably distinguished based on electrophysiological properties: stellate cells have low baseline firing rates and do not respond to high AM frequencies, while multipolar cells have high baseline firing rates and respond well to high AM frequencies.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C96-C99 are supported by electrophysiological recordings and statistical analysis (\u03c7\u00b2=12, p<0.001 for baseline firing rates). The properties match established literature (Bastian and Bratton, 1990; Bratton and Bastian, 1990), validating the cell type identification. This is essential for interpreting the differential tuning results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T06:32:08.834220Z"
+    },
+    {
+      "id": "6b888c3a-f63e-41cb-810d-5ba8418fb741",
+      "content_id": "1f6ac84b-069d-482c-b838-209d5bfe12ba",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Several mechanistic questions remain unresolved and require future investigation: how SK1 channels differentially affect envelope versus AM responses, the electrophysiological properties of other nP cell types projecting to EGp, and how animals distinguish between envelope and prey stimuli.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C60, C62-C63, and C68 appropriately identify limitations and gaps in current understanding. These are honest assessments of what the study does not address and what future work is needed. The identification of these gaps is important for guiding future research and does not diminish the significance of the current findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T06:32:08.834220Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "895b014a-363f-4d2b-a8c2-6719d8f0d3bb",
+      "result_id": "473ff383-889d-4375-88af-226f7c75684b"
+    },
+    {
+      "claim_id": "07ee25c6-ce8b-40c0-a705-0258215adedd",
+      "result_id": "473ff383-889d-4375-88af-226f7c75684b"
+    },
+    {
+      "claim_id": "427f31cf-2fbe-42cc-9a89-d5a46f336fd4",
+      "result_id": "473ff383-889d-4375-88af-226f7c75684b"
+    },
+    {
+      "claim_id": "2fac2e97-c68d-44d4-865b-ed2e7a9ccf93",
+      "result_id": "473ff383-889d-4375-88af-226f7c75684b"
+    },
+    {
+      "claim_id": "8dffa208-fe79-475e-9a3f-7057063d3d20",
+      "result_id": "473ff383-889d-4375-88af-226f7c75684b"
+    },
+    {
+      "claim_id": "89dce710-c45f-4a75-b908-5ac80cbc7356",
+      "result_id": "473ff383-889d-4375-88af-226f7c75684b"
+    },
+    {
+      "claim_id": "ff1fd5a1-6321-40d0-9514-35143aa253cc",
+      "result_id": "473ff383-889d-4375-88af-226f7c75684b"
+    },
+    {
+      "claim_id": "fe336c00-4791-42f8-a0f3-edb256f501b7",
+      "result_id": "473ff383-889d-4375-88af-226f7c75684b"
+    },
+    {
+      "claim_id": "9193baf5-cac4-48b4-a186-f6fe26216700",
+      "result_id": "473ff383-889d-4375-88af-226f7c75684b"
+    },
+    {
+      "claim_id": "5379ca60-b86c-492c-b441-3e432bb1b3e3",
+      "result_id": "473ff383-889d-4375-88af-226f7c75684b"
+    },
+    {
+      "claim_id": "37d83733-8722-4459-9d88-e66b3231799e",
+      "result_id": "54974cf4-89e3-4777-8810-3a13b79ae170"
+    },
+    {
+      "claim_id": "d6a73133-9805-44b6-b34b-cb011b7cfb56",
+      "result_id": "54974cf4-89e3-4777-8810-3a13b79ae170"
+    },
+    {
+      "claim_id": "a2ebf96b-0015-4e7e-a5c9-5a134701d6df",
+      "result_id": "54974cf4-89e3-4777-8810-3a13b79ae170"
+    },
+    {
+      "claim_id": "5be0db33-a07e-4ec5-a737-22dab87d585b",
+      "result_id": "54974cf4-89e3-4777-8810-3a13b79ae170"
+    },
+    {
+      "claim_id": "70f65d09-9d25-4a78-9b82-0273d00f8676",
+      "result_id": "54974cf4-89e3-4777-8810-3a13b79ae170"
+    },
+    {
+      "claim_id": "d99a1259-5e57-494f-92b8-e80e55f1a9cf",
+      "result_id": "54974cf4-89e3-4777-8810-3a13b79ae170"
+    },
+    {
+      "claim_id": "cf6535c4-8508-40bc-94ae-ca0fc999806c",
+      "result_id": "54974cf4-89e3-4777-8810-3a13b79ae170"
+    },
+    {
+      "claim_id": "b7d4cf05-7485-4041-90c6-832b755e2b98",
+      "result_id": "54974cf4-89e3-4777-8810-3a13b79ae170"
+    },
+    {
+      "claim_id": "88254d86-4415-4b60-b0b1-3dd6a1c76374",
+      "result_id": "0a9e67fe-5ac9-4203-9f87-1e0deb49617c"
+    },
+    {
+      "claim_id": "0674d6cd-0e12-4a17-815b-373f62a4be76",
+      "result_id": "0a9e67fe-5ac9-4203-9f87-1e0deb49617c"
+    },
+    {
+      "claim_id": "391f1026-adfe-46dc-864f-0329637510c6",
+      "result_id": "0a9e67fe-5ac9-4203-9f87-1e0deb49617c"
+    },
+    {
+      "claim_id": "e1bf3059-f526-484a-979a-d6c1e70d7675",
+      "result_id": "0a9e67fe-5ac9-4203-9f87-1e0deb49617c"
+    },
+    {
+      "claim_id": "f7b9360d-1ade-427f-823f-d4b0a85415e6",
+      "result_id": "0a9e67fe-5ac9-4203-9f87-1e0deb49617c"
+    },
+    {
+      "claim_id": "db801a8d-e82e-4e40-84a5-a6da66bc4e2c",
+      "result_id": "0a9e67fe-5ac9-4203-9f87-1e0deb49617c"
+    },
+    {
+      "claim_id": "1a4d711a-b7b6-42df-9bc6-dcb01a051164",
+      "result_id": "0a9e67fe-5ac9-4203-9f87-1e0deb49617c"
+    },
+    {
+      "claim_id": "4b1c7524-920a-4ec0-856c-dd0760d835d5",
+      "result_id": "0a9e67fe-5ac9-4203-9f87-1e0deb49617c"
+    },
+    {
+      "claim_id": "817c9932-8b32-4155-ab46-df313d50f447",
+      "result_id": "0a9e67fe-5ac9-4203-9f87-1e0deb49617c"
+    },
+    {
+      "claim_id": "5542b86f-75fb-49f9-87a2-b3c8b07ec081",
+      "result_id": "0a9e67fe-5ac9-4203-9f87-1e0deb49617c"
+    },
+    {
+      "claim_id": "41cfa5d2-382a-4075-a818-32049b343428",
+      "result_id": "0a7f587f-a796-4e5a-97c3-828a73e3c812"
+    },
+    {
+      "claim_id": "6873d049-e2b1-4050-a0c9-54c754ff0564",
+      "result_id": "0a7f587f-a796-4e5a-97c3-828a73e3c812"
+    },
+    {
+      "claim_id": "07ee25c6-ce8b-40c0-a705-0258215adedd",
+      "result_id": "0a7f587f-a796-4e5a-97c3-828a73e3c812"
+    },
+    {
+      "claim_id": "df96a088-c43f-4d13-8d68-83d54bea61d8",
+      "result_id": "c55b92f8-dafd-4e0b-be46-b413e3466a08"
+    },
+    {
+      "claim_id": "427f31cf-2fbe-42cc-9a89-d5a46f336fd4",
+      "result_id": "c55b92f8-dafd-4e0b-be46-b413e3466a08"
+    },
+    {
+      "claim_id": "d6a73133-9805-44b6-b34b-cb011b7cfb56",
+      "result_id": "c55b92f8-dafd-4e0b-be46-b413e3466a08"
+    },
+    {
+      "claim_id": "e925cb67-39c4-4295-b826-b8808f836abd",
+      "result_id": "f8af4caf-8495-46d0-b5b6-0118597ee36d"
+    },
+    {
+      "claim_id": "54047ecc-f09f-45fb-84ad-46b867a6f123",
+      "result_id": "f8af4caf-8495-46d0-b5b6-0118597ee36d"
+    },
+    {
+      "claim_id": "32a2ba57-c0ea-4f9c-aa7f-1c80dc315e90",
+      "result_id": "f8af4caf-8495-46d0-b5b6-0118597ee36d"
+    },
+    {
+      "claim_id": "fd12b961-b377-4329-a2fb-0461774f728f",
+      "result_id": "f8af4caf-8495-46d0-b5b6-0118597ee36d"
+    },
+    {
+      "claim_id": "8fe2bc20-6089-48c9-a39d-3bd0dd89a9ea",
+      "result_id": "f8af4caf-8495-46d0-b5b6-0118597ee36d"
+    },
+    {
+      "claim_id": "2c4dafb3-4328-4f57-9430-371e8e2e3d46",
+      "result_id": "64980596-2f74-4056-8989-b9bb90c90a3d"
+    },
+    {
+      "claim_id": "50a18178-93de-45f1-91da-698ca9c956c1",
+      "result_id": "64980596-2f74-4056-8989-b9bb90c90a3d"
+    },
+    {
+      "claim_id": "e169de77-59bd-484d-bf52-440fc3de3fc4",
+      "result_id": "64980596-2f74-4056-8989-b9bb90c90a3d"
+    },
+    {
+      "claim_id": "18a8aa15-1fb6-4be5-8769-ce2fc64342de",
+      "result_id": "8ca10b16-aacd-4216-8d49-b0bcbde1f57a"
+    },
+    {
+      "claim_id": "12061797-6a6c-4f49-8e9e-aadf11a54d50",
+      "result_id": "8ca10b16-aacd-4216-8d49-b0bcbde1f57a"
+    },
+    {
+      "claim_id": "b7d4cf05-7485-4041-90c6-832b755e2b98",
+      "result_id": "8ca10b16-aacd-4216-8d49-b0bcbde1f57a"
+    },
+    {
+      "claim_id": "4b340ec0-f98c-48a2-acd1-f81b14b7f418",
+      "result_id": "ab2dbc47-e535-4a36-b5f9-35442588bdf6"
+    },
+    {
+      "claim_id": "fb5909cf-6376-4880-8eac-5c991e4711cd",
+      "result_id": "ab2dbc47-e535-4a36-b5f9-35442588bdf6"
+    },
+    {
+      "claim_id": "dbe545c9-f79b-4cfe-8bbd-b434fc65a702",
+      "result_id": "ab2dbc47-e535-4a36-b5f9-35442588bdf6"
+    },
+    {
+      "claim_id": "f3dfa899-7879-4f30-a88f-538a0e45d6a0",
+      "result_id": "e5dc6a91-79a6-4d49-bbd9-9dbbb44f6bd4"
+    },
+    {
+      "claim_id": "cb0f0e4f-30c1-447b-b242-82dbd433ae8f",
+      "result_id": "e5dc6a91-79a6-4d49-bbd9-9dbbb44f6bd4"
+    },
+    {
+      "claim_id": "7d78e521-b7b2-470c-ab59-bcf56c4ee645",
+      "result_id": "21866a82-d6a4-4dfa-b369-16929bfc46d4"
+    },
+    {
+      "claim_id": "b6404b93-c905-4f41-ab91-dba4b9dcabc0",
+      "result_id": "21866a82-d6a4-4dfa-b369-16929bfc46d4"
+    },
+    {
+      "claim_id": "d085e148-c001-4c6b-8ed9-36ddd977252c",
+      "result_id": "21866a82-d6a4-4dfa-b369-16929bfc46d4"
+    },
+    {
+      "claim_id": "5c00bc41-4b10-432a-8580-66ae679d2a6d",
+      "result_id": "21866a82-d6a4-4dfa-b369-16929bfc46d4"
+    },
+    {
+      "claim_id": "c95a9081-17f6-490f-9f1a-67e0b99e1334",
+      "result_id": "1c9b5020-13b3-454c-99b2-a4de7f29252d"
+    },
+    {
+      "claim_id": "146713bd-0f31-4e6f-9ceb-cc04139fbc59",
+      "result_id": "1c9b5020-13b3-454c-99b2-a4de7f29252d"
+    },
+    {
+      "claim_id": "49c2efd7-0b07-429e-ab04-29094e3a612a",
+      "result_id": "ca8aaa8c-0a17-4c06-9cef-859d469f90ff"
+    },
+    {
+      "claim_id": "3f4c56f3-fb70-4d78-a6eb-98b913f8b618",
+      "result_id": "ca8aaa8c-0a17-4c06-9cef-859d469f90ff"
+    },
+    {
+      "claim_id": "1060b731-1e29-4a89-aeef-b3d432367b7b",
+      "result_id": "ca8aaa8c-0a17-4c06-9cef-859d469f90ff"
+    },
+    {
+      "claim_id": "c1f9a432-f2cc-4535-80ba-02820f560c7f",
+      "result_id": "ca8aaa8c-0a17-4c06-9cef-859d469f90ff"
+    },
+    {
+      "claim_id": "3c747250-7de5-4d0f-abb1-71e947d7c227",
+      "result_id": "ca8aaa8c-0a17-4c06-9cef-859d469f90ff"
+    },
+    {
+      "claim_id": "12a73cc4-c0f5-4519-8a42-2479c4678c4c",
+      "result_id": "ca8aaa8c-0a17-4c06-9cef-859d469f90ff"
+    },
+    {
+      "claim_id": "2ccdbaa5-f825-4880-bfbd-16dd4f0d2265",
+      "result_id": "ca8aaa8c-0a17-4c06-9cef-859d469f90ff"
+    },
+    {
+      "claim_id": "a2512437-96b6-4c9a-af06-cb197f73361a",
+      "result_id": "681002d9-e9c6-49a6-98e0-0b089df08bbb"
+    },
+    {
+      "claim_id": "15945cc1-956e-48f1-97f1-f5c917e1149c",
+      "result_id": "681002d9-e9c6-49a6-98e0-0b089df08bbb"
+    },
+    {
+      "claim_id": "cb6e7e7e-4b17-4485-af83-9e278d513fe9",
+      "result_id": "681002d9-e9c6-49a6-98e0-0b089df08bbb"
+    },
+    {
+      "claim_id": "922c96cc-163e-4c63-9399-258ec3c2b90c",
+      "result_id": "681002d9-e9c6-49a6-98e0-0b089df08bbb"
+    },
+    {
+      "claim_id": "ffa03df8-7928-4fcf-b66b-0277c203c691",
+      "result_id": "6b888c3a-f63e-41cb-810d-5ba8418fb741"
+    },
+    {
+      "claim_id": "3a7c3c40-53df-4f51-8bdd-7c61a078e172",
+      "result_id": "6b888c3a-f63e-41cb-810d-5ba8418fb741"
+    },
+    {
+      "claim_id": "7fb2dd02-dc04-447e-91a0-dec3ecb95fd0",
+      "result_id": "6b888c3a-f63e-41cb-810d-5ba8418fb741"
+    },
+    {
+      "claim_id": "0885bb80-83c3-4936-a48d-b5ea65e46864",
+      "result_id": "6b888c3a-f63e-41cb-810d-5ba8418fb741"
+    }
+  ],
+  "comparisons": []
+}

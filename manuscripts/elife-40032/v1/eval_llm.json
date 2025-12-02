@@ -1,0 +1,245 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C20",
+      "C21"
+    ],
+    "result": "L. monocytogenes cell-to-cell spread proceeds anisotropically in MDCK epithelial monolayers, with infection foci boundaries dominated by rare pioneer bacteria that spread farther than the rest, creating irregular shapes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C3, C20, and C21 are directly supported by live microscopy data (Figure 1A-B) showing irregular infection foci boundaries and pioneer bacteria at the edges. The experimental observations are clear and reproducible across multiple foci.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "Intracellular L. monocytogenes replication is approximately exponential with an average doubling time of ~180 min, comparable to previous reports in other epithelial cell types.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22 and C23 are supported by quantitative analysis of bacterial fluorescence intensity over time (Figure 1C, Figure 1\u2014figure supplement 1A-C). The doubling time is consistent with prior literature (C24), providing validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "The mean squared displacement (MSD) of bacterial positions is linear between 360-960 min post-infection, consistent with random walk behavior, but the MSD slope increases with time, suggesting the appearance of fast-spreading organisms. Growth rate and MSD are uncorrelated.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C29 are supported by MSD analysis (Figure 1C-D, Figure 1\u2014figure supplement 1B-C). The linear MSD is consistent with random walk theory (C26), the increasing slope matches expectations for heterogeneous populations (C27-C28), and the lack of correlation between growth and MSD (C29) is demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "A reaction-diffusion equation predicts circular, isotropic infection foci, but this continuum model cannot account for the experimentally observed irregular, anisotropic focus shapes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C32 are supported by solving the reaction-diffusion equation (Figure 2A, Video 2) and comparing the circular solutions to experimental data. The discrepancy between model predictions and observations is clear and motivates further investigation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "Stochastic simulations of bacterial spread via random walk generate approximately circular foci that are significantly more circular than experimental foci. Adding directional persistence and host cell boundaries does not significantly affect circularity, indicating that random walk alone cannot explain the observed anisotropy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C39 are supported by stochastic simulations and quantitative circularity measurements (Figure 2C-E, Figure 2\u2014figure supplement 4A-B). The simulations systematically test different factors and demonstrate that simple random walk models fail to reproduce experimental observations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "Pioneer bacteria can reach non-adjacent recipient host cells in less than 30 min via long protrusions, despite the fact that protrusion uptake takes ~45 min. Non-pioneer bacteria typically move only 1-2 \u00b5m in 5-min intervals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C44 are supported by direct microscopy observations (Figure 3A, Video 6) and comparison with known uptake kinetics from prior work (C43). The distinction between pioneer and non-pioneer behavior is clearly demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "Simulations incorporating pioneer bacteria (with probability P of becoming a pioneer and diffusion coefficient ratio Dfast/Dslow) recapitulate the anisotropic boundaries and increasing MSD slope observed experimentally. Experimental circularity matches simulations with pioneer probabilities of 10^-3 to 10^-2, suggesting ~1.4-12% of bacteria are pioneers or have pioneer ancestors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C52 are supported by extensive simulations (Figure 3B-E, Figure 3\u2014figure supplement 1A-C) that systematically vary pioneer parameters and compare to experimental data. The quantitative agreement between simulations and experiments (C49-C50) provides strong support for the heterogeneous spread model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C72",
+      "C73"
+    ],
+    "result": "The GRR mutant, which has reduced directional persistence and shorter actin comet tails, produces significantly more circular infection foci than wild-type bacteria. This supports the hypothesis that pioneer behavior via long, straight protrusions is critical for anisotropic spread, and that bacterial properties (not just host heterogeneity) contribute to focus anisotropy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C59, C72-C73 are supported by experimental comparison of wild-type and GRR mutant foci (Figure 4B) and simulations showing that directional persistence has minimal effect on circularity when pioneers are present (Figure 4\u2014figure supplement 1). The inference that GRR mutants create shorter protrusions (C73) is reasonable but indirect.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C60",
+      "C61"
+    ],
+    "result": "L. monocytogenes cell-to-cell spread is heterogeneous, proceeding via local non-pioneers and far-spreading pioneers that likely spread via long extracellular protrusions to non-adjacent host cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C61 synthesize the experimental and simulation results. The heterogeneous spread model is well-supported by the combined evidence from microscopy, simulations, and GRR mutant experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "Simulations incorporating host cell extrusion show that heterogeneous spread (with Dfast/Dslow ratios of 60-90) improves the chances of L. monocytogenes reaching a stable steady state compared to random walk alone. This stable steady state would allow bacterial persistence in the actively extruding intestinal epithelium without causing excessive host damage.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C65, C89-C91 are supported by host cell extrusion simulations (Figure 5C-D, Figure 5\u2014figure supplement 1-2). The simulations demonstrate that heterogeneous spread widens the parameter space for stable steady state outcomes. However, the biological interpretation (C65, C89) is speculative and not directly tested in vivo.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "Simulations with two diffusion coefficients (pioneer and non-pioneer) better approximate experimental focus shapes than single-behavior simulations. Non-circular foci require high Dfast/Dslow ratios and small absolute numbers of pioneers due to stochastic fluctuations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C71 are supported by systematic comparison of simulation results with experimental data (Figure 3). The stochastic nature of the model and the requirement for small pioneer numbers to generate anisotropy are well-explained.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C1",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C24",
+      "C26",
+      "C28",
+      "C30",
+      "C35",
+      "C36",
+      "C66",
+      "C67",
+      "C68",
+      "C75",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "Background knowledge and prior work establish that L. monocytogenes uses actin-based motility for cell-to-cell spread, that this process is critical for virulence, and that various bacterial and host proteins facilitate spread. Analogous heterogeneous spreading behaviors are observed in other pathogens and ecological systems.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C5-C19, C24, C26, C28, C30, C35-C36, C66-C68, C75, C77-C88, C93-C97 are supported by citations to prior literature. These claims provide essential context and validation for the current work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C74",
+      "C76",
+      "C92"
+    ],
+    "result": "The authors speculate that in the intestinal epithelium, pioneers likely spread laterally or basally rather than apically due to the dense brush border. They also speculate that pathogens spreading without long protrusions would exhibit random walk behavior, and that pioneers may be more successful at reaching distant organs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C74, C76, C92 are speculative inferences not directly tested in this work. While reasonable based on the model and known biology, these hypotheses require experimental validation.",
+    "result_type": "MINOR"
+  }
+]

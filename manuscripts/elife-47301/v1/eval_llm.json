@@ -1,0 +1,178 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15"
+    ],
+    "result": "Applying three data quality filters (excluding heterozygous sites in haploid nuclei, duplicated genomic regions, and low-coverage base calls) to the Chen et al. dataset removed 91% of putative recombination sites while reducing total analyzed sites by only ~22%. After filtering, strain A4 had no consecutive recombined SNPs remaining, while strains A5 and SL1 retained only 2 and 4 recombined blocks respectively, with reduced block lengths.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C9-C15 are well-supported by quantitative data presented in Figure 1 and Table 1. The filters are methodologically sound and standard in genomic analyses (C44). The dramatic reduction in recombination signal (91%) with minimal loss of total sites (22%) strongly suggests the original signal was largely artifactual. Statistical tests and visual data support the findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "A specific example from scaffold 70 in isolate A4 demonstrates how duplicated genomic regions can produce false recombination signals. Multiple nuclei showed heterozygosity at specific positions despite high sequencing depth (>30\u00d7), and BLAST analysis revealed these positions had 100% identity matches to scaffold 3570, indicating chimeric assembly of duplicated sequences that caused reads to map equally to both locations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C25 provide a concrete, well-documented example supported by Figure 2 showing read depth data, BLAST results, and alignment evidence. The high sequencing depth (>30\u00d7) eliminates sequencing error as an explanation (C19), and the 100% identity BLAST matches (C22) strongly support the chimeric assembly interpretation. This example effectively demonstrates the necessity of filtering duplicated regions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "Analysis of read depth distributions reveals that the Chen et al. study used insufficient coverage thresholds (minimum 2 reads) and that putative recombination sites are significantly overrepresented at low-coverage positions. SL1 nuclei had ~95% fewer high-coverage sites compared to A4 and A5, and covered only 14% of the genome versus 42-53% for the other strains. Statistical testing showed recombined sites had significantly lower depth than non-recombined sites in A4 (p=3.2\u00d710\u207b\u2079) and A5 (p=2.9\u00d710\u207b\u2076).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C31 are supported by Figure 3 data and appropriate statistical testing (Wilcoxon ranked sum tests with highly significant p-values). The minimum 2-read threshold is demonstrably insufficient (C27), and the correlation between low coverage and recombination signal is statistically robust for A4 and A5. The SL1 coverage issues are well-documented and explain the reduced power for that strain.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "Genome-wide pairwise SNP analysis after filtering shows that nearly all differences between nuclei of the same mating type disappear in strains A4 and A5. For SL1, filtering reduced within-mating-type differences but left nuclei sharing an average of only 9 SNPs for comparison, with many nucleus pairs having no overlapping SNPs at all. Apparent similarities between opposite mating types were based on only 1-2 shared SNP positions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C35 are supported by Figure 4 showing heatmaps and quantitative data on SNP overlap. The dramatic reduction in within-mating-type differences after filtering (C32) and the extremely limited SNP overlap in SL1 (average 9 SNPs, C33) are clearly documented. The finding that apparent cross-mating-type similarities rest on 1-2 SNPs (C35) effectively undermines confidence in these signals.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "The strongest remaining evidence for recombination in Chen et al.\u2014nucleus 07 from SL1 clustering with the opposite mating type despite PCR genotyping as MAT-1\u2014is undermined by the finding that no Illumina reads from this nucleus mapped to either mating type locus. This indicates the mating locus was not amplified during whole genome amplification, leaving only an unconfirmed PCR result as evidence, which the authors suggest is more likely due to contamination than recombination.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C43 are supported by Figure 4\u2014figure supplement 1 showing read mapping to mating loci. The absence of Illumina reads mapping to the mating locus for nucleus 07 (C39) is clear evidence that undermines the PCR-based mating type assignment. The inference that PCR contamination is more likely than recombination (C43) is reasonable given billions of Illumina reads showing no supporting evidence, though this remains somewhat speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "After applying standard genomic filters to approximately 10 Mb (first 100 contigs), only a handful of putative recombination sites remain: 3 blocks in SL1 and 2 in A5, with some likely persisting due to the heterozygosity filter requiring minimum 10 reads. The authors conclude these few remaining SNPs cannot be confidently distinguished from amplification or sequencing noise.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C49 are supported by Table 1 data and represent a reasonable synthesis of the filtering results. The filters are acknowledged as standard practice (C44), and the scope of analysis is clearly stated (C48). The conclusion that the remaining handful of sites cannot be distinguished from noise (C49) is a reasonable inference given the small numbers and known limitations of the heterozygosity filter (C47).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "The authors discuss technical limitations and future directions, noting that while small blocks might represent gene conversion, the limited markers make high-confidence identification difficult. They explain that mapping recombination in repetitive regions requires longer reads than standard short-read technologies, that more contiguous assemblies will include more repetitive regions requiring exclusion, and that improved assembly contiguity would not change their analysis since recombined blocks are smaller than existing contigs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C56 represent reasonable technical discussion supported by appropriate citations (C51, C53). The points about gene conversion detection challenges (C50-C51), sequencing technology limitations (C52-C53), and the relationship between assembly contiguity and repetitive regions (C54-C56) are all based on established knowledge and logical reasoning. These are appropriate caveats and future directions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "The authors suggest methodological improvements for future work, including data normalization to address variable coverage from multiple displacement amplification, model-based approaches to incorporate uncertainty from low-coverage sites, and emphasize that removing heterozygous sites from haploid single-nuclei data should be a self-evident requirement.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C60 are supported by appropriate citations (C58, C59) and represent reasonable methodological recommendations. The characterization of multiple displacement amplification producing variable coverage (C57) and the suggestion that heterozygous site removal from haploid data is self-evident (C60) are both based on established knowledge. These are constructive suggestions for future work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C1",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8"
+    ],
+    "result": "The manuscript provides background context on arbuscular mycorrhizal fungi (AMF), noting their historical presumption of asexuality, retention of core meiosis genes suggesting a meiosis-like process, previous false evidence for recombination based on duplicated genes or paralogous sequences, and Chen et al.'s 2018 report of recombination evidence in dikaryotic isolates with two mating type classes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C3-C8 provide appropriate background context supported by relevant citations (Halary et al. 2011, Croll and Sanders 2009, Pawlowska and Taylor 2004, Maeda et al. 2018, Ropars et al. 2016, Chen et al. 2018a). These claims accurately represent the historical understanding and prior work in the field, establishing the scientific context for the reanalysis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "The authors conclude that while conserved meiosis genes suggest a meiosis-like process in Glomeromycota and uncovering this would be a major breakthrough, the data from Chen et al. are not robust enough to support or reject the proposed models. They acknowledge the models as valuable frameworks but maintain that the mystery of recombination in these fungi remains unsolved.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C66 represent the authors' overall conclusions, which are well-supported by the comprehensive reanalysis presented. The inference about meiosis genes suggesting a meiosis-like process (C61) is reasonable, and the conclusion that Chen et al.'s data are insufficient (C65) follows logically from the demonstrated filtering effects. The acknowledgment of the models' value (C64) while rejecting the data quality is appropriately balanced.",
+    "result_type": "MAJOR"
+  }
+]

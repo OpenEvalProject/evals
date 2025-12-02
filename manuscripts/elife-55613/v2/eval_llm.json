@@ -1,0 +1,382 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "The experimental design successfully dissociates word-level properties from chunk structure by using sequences of living/nonliving nouns with no syntactic chunks, where participants learned artificial chunking rules that varied between same-category and different-category conditions. Behavioral performance was high and equivalent across conditions (85-86% correct).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C37 describe the experimental design and behavioral results. The design effectively controls for lexical properties while manipulating chunk structure through explicit rules. High and equivalent behavioral performance (C36-C37) confirms participants successfully learned both chunking rules, validating the experimental manipulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "Model simulations predict distinct neural signatures for three competing models: the lexical property model predicts no 1 Hz response, while both the semantic relatedness model and rule-based chunking model predict 1 Hz responses but with opposite phase relationships (180\u00b0 vs 0\u00b0 phase difference between conditions).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C46 describe model simulations shown in Figure 2. The predictions are mathematically sound and clearly distinguish the three models. The 180\u00b0 phase difference prediction for the semantic relatedness model follows from the one-word offset between conditions in alternating sequences, while the 0\u00b0 prediction for the rule-based model follows from chunk boundaries being condition-invariant.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "MEG recordings show significant 1 Hz and 2 Hz spectral peaks in both conditions for both alternating-order and random-order sequences, with no significant 0.5 Hz peak. The 1 Hz response power does not differ significantly between sequence types or conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C61 report spectral analysis results with appropriate statistical tests (F-tests with FDR correction). The presence of 1 Hz peaks (p<10^-7) and absence of 0.5 Hz peaks (p>0.17) are clearly demonstrated. The lack of power differences between conditions (p>0.90) is properly tested. Results are consistent across both sequence types.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "The 1 Hz response phase difference between same-category and different-category conditions is significantly closer to 0\u00b0 than 180\u00b0 for both alternating-order (mean=0.5\u00b0, 99% CI: -22.9\u00b0 to 18.7\u00b0, p=1\u00d710^-4) and random-order sequences (mean=20.3\u00b0, 99% CI: -0.1\u00b0 to 56.6\u00b0, p=4\u00d710^-4).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C64 report phase analysis results using appropriate bootstrap statistics. The phase differences are significantly closer to 0\u00b0 than 180\u00b0 in both sequence types, with narrow confidence intervals that exclude 180\u00b0. The effect is observed across all 306 MEG sensors for alternating sequences and 196 sensors for random sequences (p<0.01, FDR corrected).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C247",
+      "C248"
+    ],
+    "result": "The main findings of 1 Hz spectral peaks and near-0\u00b0 phase differences are reliably observed at the individual participant level, with 14 out of 16 participants showing both effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C56 and C247-C248 report individual participant results shown in Figure 3\u2014figure supplement 1A. The consistency across 87.5% of participants (14/16) demonstrates the robustness of the main findings and rules out the possibility that group-level effects are driven by a small subset of participants.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C111",
+      "C113"
+    ],
+    "result": "Source localization reveals that both 1 Hz and 2 Hz responses are generated from bilateral temporal and frontal lobes, with significantly stronger responses in the left superior temporal gyrus than the left inferior frontal gyrus (F128,128=2.0, p=7.1\u00d710^-4). The frontal activation shows no clear hemispheric lateralization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C68, C111, and C113 report source localization results shown in Figure 3CD and Figure 3\u2014figure supplement 1C. The bilateral activation pattern and temporal>frontal gradient are clearly demonstrated. However, MEG source localization has limited spatial resolution, which the authors acknowledge. The statistical comparison between ROIs is appropriate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C115",
+      "C143",
+      "C144"
+    ],
+    "result": "Low-frequency neural activity tracks multi-word chunks constructed based on artificial chunking rules, providing strong evidence that the chunk-rate response reflects rule-based chunking rather than word-level properties or semantic relatedness.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C70, C115, C143-C144 state the main conclusions. The 0\u00b0 phase difference between conditions (vs. 180\u00b0 predicted by semantic relatedness model) and presence of 1 Hz response (vs. absence predicted by lexical property model) strongly support rule-based chunking. The experimental design successfully dissociates chunk structure from word properties.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C120",
+      "C121",
+      "C122",
+      "C123"
+    ],
+    "result": "The broad semantic categories used (animals, plants, manipulatable objects, non-manipulatable objects) result in only weak semantic relationships between words within categories, which may explain the weak semantic relatedness effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C120-C123 provide a reasonable explanation for why semantic relatedness did not drive strong neural responses. The argument is supported by citations showing that broad categories produce weaker priming than narrow categories. However, this is a post-hoc explanation rather than a directly tested hypothesis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C137"
+    ],
+    "result": "The 500 ms SOA and blocked design allow strategic priming based on learned chunking rules, where word predictability correlates with chunk structure rather than semantic relatedness in long-term memory.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C131-C137 provide a mechanistic explanation for how strategic predictions could contribute to the chunk-rate response. The argument is logically sound and consistent with the literature on strategic vs. automatic priming. However, this is an inference about underlying mechanisms rather than a directly tested hypothesis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C138",
+      "C139",
+      "C140",
+      "C141",
+      "C142"
+    ],
+    "result": "The chunk-rate response may reflect either the actual chunking process or downstream processes such as attention and prediction synchronized to chunk structure, but the current results cannot distinguish between these possibilities.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C138-C142 acknowledge an important limitation: the study demonstrates chunk-rate neural activity but cannot determine whether it reflects parsing, attention, prediction, or other chunk-related processes. This is an honest assessment of what can and cannot be concluded from the data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "The task engages sequential decision-making but with non-incremental updates (only at the second word of each chunk). The bilateral topography of the chunk-rate response differs from the central topography of typical decision signals (P300/CPP), suggesting the response is not identical to the P300 but may still reflect distributed decision-related activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97-C103 provide a careful analysis of how the chunk-rate response relates to decision-making. The comparison with P300 topography is appropriate and the conclusion is appropriately cautious. The authors correctly note that the bilateral topography argues against identification with P300 while acknowledging that decision signals can be distributed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C145",
+      "C146",
+      "C147",
+      "C189",
+      "C190",
+      "C191",
+      "C192",
+      "C193",
+      "C194"
+    ],
+    "result": "The study used 16 right-handed participants (19-27 years, mean 22.6, 8 female) with no hearing loss or neurological disorders. MEG data were acquired at 1 kHz using a 306-sensor system, and structural MRI was acquired for source localization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C145-C147 and C189-C194 describe the participant sample and data acquisition. The sample size is modest but adequate given the large effect sizes (p<10^-4 for main effects). The post-hoc power analysis (C245-C246) confirms adequate power. Ethical approval was obtained from two institutions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C195",
+      "C196",
+      "C197",
+      "C198",
+      "C199",
+      "C200",
+      "C201",
+      "C202",
+      "C203",
+      "C204",
+      "C205",
+      "C206",
+      "C207",
+      "C208",
+      "C209",
+      "C210",
+      "C211",
+      "C212",
+      "C213",
+      "C214",
+      "C215"
+    ],
+    "result": "MEG preprocessing included tSSS for artifact removal, bandpass filtering (0.3-2.7 Hz), EOG regression, and DSS denoising (retaining 6 components). Frequency-domain analysis used DFT on 10 s epochs (excluding first 2 s) with 0.1 Hz resolution. Phase analysis used circular statistics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C195-C215 describe standard MEG preprocessing and analysis methods. The procedures are appropriate and well-documented. The DSS denoising is commonly used for extracting speech-entrained responses. The frequency resolution (0.1 Hz) is adequate for distinguishing 0.5, 1, and 2 Hz responses. Circular statistics are appropriate for phase analysis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C216",
+      "C217",
+      "C218",
+      "C219",
+      "C220",
+      "C221",
+      "C222",
+      "C223",
+      "C224",
+      "C225",
+      "C226"
+    ],
+    "result": "Source localization used cortex-constrained minimum norm estimation (MNE) with overlapping sphere forward model, identity noise covariance, and dSPM for visualization. Individual brains were normalized to ICBM 152 template. ROI analysis used 90th percentile of power in anatomically defined regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C216-C226 describe standard MEG source localization methods implemented in Brainstorm. The use of identity noise covariance is a limitation (ideally would use pre-stimulus baseline), but is acceptable given the focus on relative comparisons. The 90th percentile metric for ROI analysis is reasonable for capturing peak activity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C227",
+      "C228",
+      "C229",
+      "C230",
+      "C231",
+      "C232",
+      "C233",
+      "C234",
+      "C235",
+      "C236",
+      "C237",
+      "C238"
+    ],
+    "result": "Model simulations used pulse sequences at word onsets, with amplitudes determined by binary lexical features (lexical property model), 1-minus-correlation between consecutive words (semantic relatedness model), or unit pulses at chunk onsets (rule-based model). Pulses were convolved with 500 ms Gaussian windows to generate smooth waveforms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C227-C238 describe the model simulation procedures shown in Figure 2\u2014figure supplement 1. The simulations are clearly described and mathematically sound. The use of 1-minus-correlation for semantic relatedness appropriately models neural adaptation. The robustness analysis (C238) confirms predictions are not sensitive to specific waveform assumptions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C239",
+      "C240",
+      "C241",
+      "C242",
+      "C243",
+      "C244",
+      "C245",
+      "C246"
+    ],
+    "result": "Statistical testing used F-tests for spectral peaks (comparing target frequency to neighbors) with F(2N,4N) distribution and FDR correction. Phase analysis used bias-corrected accelerated bootstrap (100,000 resamples). Post-hoc power analysis confirmed adequate sample size.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C239-C246 describe appropriate statistical methods. The F-test for spectral peaks is standard for frequency-domain analysis. The bootstrap approach for phase analysis is appropriate for circular data. The conservative assumption about sensor independence (C240) is reasonable. Post-hoc power analysis confirms the study was adequately powered.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C148",
+      "C149",
+      "C150",
+      "C151",
+      "C152",
+      "C153",
+      "C154",
+      "C155",
+      "C156",
+      "C157",
+      "C158",
+      "C159",
+      "C160",
+      "C161"
+    ],
+    "result": "Stimuli consisted of 240 disyllabic Mandarin Chinese nouns (120 living: animals/plants; 120 nonliving: manipulatable/non-manipulatable objects), synthesized at 500 ms duration and equal intensity, concatenated without pauses to create isochronous 2 Hz sequences with no acoustically defined chunk boundaries.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C148-C161 describe the stimulus generation in detail. The procedure ensures that chunk boundaries are defined only by semantic category and learned rules, not by acoustic cues. The isochronous presentation at 2 Hz is appropriate for studying 1 Hz chunk-rate responses. The synthesis procedure produces natural-sounding words while controlling acoustic properties.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C162",
+      "C163",
+      "C164",
+      "C165",
+      "C166",
+      "C167",
+      "C168",
+      "C170",
+      "C171",
+      "C172"
+    ],
+    "result": "Sequences consisted of 12 chunks (12 s duration) in either alternating order (fixed NNLL/NLLN structure) or random order. Random-order sequences were included as fillers to prevent an alternative strategy where participants could use the same rules for both conditions by ignoring the first word in different-category sequences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C162-C172 describe the sequence structure and rationale for including random-order sequences. The identification of the potential alternative strategy (C170-C171) and the solution (C172) demonstrate careful experimental design. The alternating sequences allow clear phase predictions while random sequences prevent strategic shortcuts.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C173",
+      "C174",
+      "C175",
+      "C176",
+      "C177",
+      "C178",
+      "C179",
+      "C180",
+      "C181",
+      "C182",
+      "C183",
+      "C184",
+      "C185",
+      "C186",
+      "C187",
+      "C188"
+    ],
+    "result": "Participants received explicit training on chunking rules for each condition, with practice until reaching 80% accuracy (4/5 correct). During MEG recording, 16 outlier sequences (with invalid chunks) were mixed with 44 normal sequences per condition, and participants indicated whether each sequence contained invalid chunks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C173-C188 describe the training and task procedures. The explicit instruction and practice ensure participants understand the rules. The outlier detection task ensures attention to chunk structure throughout the experiment. The blocked design (same vs. different conditions in separate blocks) is appropriate for the phase analysis.",
+    "result_type": "MINOR"
+  }
+]

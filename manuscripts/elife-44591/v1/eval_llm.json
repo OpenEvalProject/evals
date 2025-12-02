@@ -1,0 +1,355 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "MinD, MinE, and ATP are insufficient for Min wave emergence in microdroplets covered with E. coli polar lipids, but sufficient with modified lipid composition (85% DOPC and 15% cardiolipin), indicating that encapsulation in micro-sized space alters critical parameters for wave emergence compared to 2D membranes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C25 provide converging experimental evidence from multiple conditions (E. coli lipids vs. modified lipids, with appropriate controls for fluorescent tags) demonstrating that confinement changes wave emergence conditions. The data in Figure 1C, Videos 1-2, and control experiments with sfGFP-MinC tracking provide strong support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "BSA at high concentration (100 mg/mL) enables Min wave emergence in microdroplets with E. coli polar lipids, requiring ~1 \u03bcM concentrations of both MinD and MinE and ATP dependence, producing pole-to-pole oscillations and traveling waves with MinE enrichment patterns similar to those in vivo and on 2D membranes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C32 collectively demonstrate BSA's enabling effect through multiple lines of evidence: concentration titrations (C28, Figure 1E), ATP dependence controls (C29, Figure 1\u2014figure supplement 2), pattern characterization (C30-C32, Figure 1F, Figure 1\u2014figure supplement 3), and specificity compared to other crowding agents (C27, Videos 4-5). The data are internally consistent and well-controlled.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "BSA does not significantly affect diffusion rates of GFP or MinD at concentrations enabling wave emergence (50-100 mg/mL), and does not bind directly to MinD or MinE or enhance MinDE complex formation, ruling out these mechanisms as explanations for BSA's effect.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C37 provide systematic exclusion of alternative mechanisms through FCS (C33, Figure 2A), FRAP (C35, Figure 2B), and pull-down assays (C36-C37, Figure 2C). The data convincingly rule out diffusion changes and direct protein interactions as primary mechanisms, though the pull-down assay interpretation assumes proper protein folding and binding conditions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "BSA modulates MinE localization by preventing spontaneous membrane attachment: without BSA, MinE localizes to membranes, but with BSA, MinE remains in the cytosol while MinD localization is largely unchanged. This effect is not due to membrane defects or protein denaturation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C43 present a coherent mechanism supported by confocal microscopy (C39-C40, Figure 2D) and appropriate controls (C41-C42, Figure 2D and Figure 2\u2014figure supplement 2). The FRAP data showing MinE-mCherry diffuses faster than sfGFP-MinD provides evidence against denaturation. However, the mechanism by which BSA prevents MinE membrane binding remains incompletely characterized.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C51"
+    ],
+    "result": "The cytosol-to-membrane ratio (c/m) of MinE increases proportionally with BSA concentration, showing a sigmoidal relationship with Min wave emergence probability: waves occur in few droplets at c/m <0.4 but in almost all droplets at c/m >0.7, indicating high c/m is required for stable wave emergence in 3D closed geometry.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C47 and C51 present quantitative relationships supported by systematic measurements (Figure 3B-C). The sigmoidal dose-response curve (C45) with clear threshold behavior provides strong evidence for c/m as a critical parameter. The c/m metric is well-defined and consistently measured across conditions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "E. coli cell extract modulates MinE c/m similarly to BSA (though more strongly) and enables Min wave emergence in microdroplets with E. coli polar lipids, showing a similar sigmoidal relationship between c/m and wave emergence probability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C50 demonstrate that the BSA effect generalizes to a more physiologically relevant crowding agent (Figure 3D-E, Video 7). The addition of ATP recycling system is appropriate given the complexity of cell extract. This strengthens the biological relevance of the findings, though the exact components responsible in cell extract remain unidentified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "PEG8000 and Ficoll70 do not increase MinE c/m (remaining similar to no-BSA conditions), while modified lipid composition (15% cardiolipin, 85% DOPC) yields c/m ~0.4, supporting that suppression of MinE membrane attachment without MinD is key to wave emergence in micro-sized space.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C54 provide critical comparative data (Figure 3F) showing specificity of the protein crowder effect versus synthetic polymers and demonstrating that lipid modification achieves similar c/m values. This supports the mechanistic interpretation, though the exact molecular basis for why protein crowders but not synthetic polymers affect MinE binding remains unclear.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "MinE c/m shows size-dependent behavior: in smaller droplets (<20 \u03bcm), c/m <0.2, while in larger droplets (>20 \u03bcm), c/m increases proportionally with MinE concentration, with the droplet diameter at which c/m reaches 0.5 being ~45 \u03bcm at 10 \u03bcM MinE, ~70 \u03bcm at 3 \u03bcM MinE, and >130 \u03bcm at 1 \u03bcM MinE.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C59 present systematic size-dependence data (Figure 4) across multiple MinE concentrations. The data clearly demonstrate surface-area-to-volume effects on protein localization. The measurements appear robust with appropriate sample sizes (n=208-386), though error bars are large at some size ranges, particularly for 3 \u03bcM MinE.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C60",
+      "C61"
+    ],
+    "result": "At 10 mg/mL BSA (minimum concentration for wave emergence), MinE c/m does not depend on droplet size but remains >0.7, consistent with BSA suppressing size-dependent MinE membrane localization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C61 provide important control data (Figure 4\u2014figure supplement 2) showing that BSA eliminates the size-dependence of c/m while maintaining high values. This is consistent with the proposed mechanism, though the sample size and size range tested are not explicitly stated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "Numerical simulations show that spontaneous MinE binding shifts conditions for wave emergence, with the critical MinE localization concentration being higher in planar membranes than closed membranes. Under confinement, the shift eliminates wave generation at stronger MinE localization, while planar membranes are more robust. Models I and II produce the same results in closed geometry.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C66 present computational results (Figure 5) that are consistent with experimental observations. The comparison of two models (C66) strengthens confidence in the conclusions. However, the simulations depend on parameter choices and model assumptions that may not fully capture biological complexity. The agreement between models in closed geometry is reassuring but the divergence in planar geometry warrants further investigation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C69",
+      "C99",
+      "C100"
+    ],
+    "result": "In closed membranes, wave generation (inhomogeneous oscillations) occurs rather than uniform oscillation because the phase boundary for homogeneous oscillation requires higher protein concentrations than for Min waves, and cell-sized space stabilizes the homogeneous state.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69, C99-C100 present theoretical analysis results (Figure 6) explaining why spatial patterns emerge instead of temporal oscillations. The linear stability analysis provides mechanistic insight, though the biological relevance of the distinction between wave instability and homogeneous oscillation in actual cells is not fully established.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C71"
+    ],
+    "result": "For small systems, the effect of bulk dynamics remains only for the zero mode of the spherical membrane, as demonstrated by theoretical analysis of confinement effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C71 presents a specific theoretical prediction (Figure 7) about mode-dependent bulk effects. The mathematical analysis appears sound, but experimental validation of this specific prediction is not provided. The claim is supported by theory but would benefit from experimental confirmation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "Wave generation in planar membranes shows greater robustness against MinE localization than predicted by linear stability analysis, possibly due to system excitability where the homogeneous stationary state is linearly stable but responds strongly to finite perturbations, with waves starting from cores rather than uniform oscillation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C76 identify an important discrepancy between linear stability analysis and numerical simulations (Figure 5, Figure 8), proposing excitability as an explanation. The hypothesis (C74) is reasonable and supported by simulation data (C75, Figure 8) and consistency with prior observations (C76). However, C74 is explicitly speculative and experimental validation of excitability would strengthen this result.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C78",
+      "C103"
+    ],
+    "result": "Closed membranes do not show excitability, quickly relaxing to stationary state, because large changes in local membrane concentrations during excitable waves inevitably change bulk concentrations in small closed systems.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78 and C103 present simulation results (Figure 8B) and theoretical reasoning explaining the absence of excitability in closed membranes. The mechanistic explanation is logical and consistent with the geometry constraints, though direct experimental evidence for the absence of excitability in closed systems is not provided.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "Model II demonstrates excitable system behaviors including propagating solitary waves in 1D and 2D membranes and spiral waves obtained by cutting solitary bands, consistent with known properties of excitable systems.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C81 show that the model exhibits canonical excitable system behaviors (Figure 8C-D). The observations are consistent with established theory (C79, with citations), providing validation of the model's excitable regime. However, experimental observation of these specific patterns in the Min system would strengthen the biological relevance.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "Min wave emergence in small microdroplets proceeds through a deterministic transition from initial pulsing between cytosol and membrane, to pole-to-pole oscillation, to stable traveling waves. This transition is recapitulated by simulation and is independent of stochastic noise, indicating reaction-diffusion coupling is the sole driving force.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C86 describe the temporal dynamics of wave emergence with both experimental (Figure 9, Video 9) and computational (Figure 9, Video 8) evidence. The noise-independence test (C85) strengthens the deterministic interpretation. However, the claim that RD coupling is the 'only' driving force (C86) may be overstated, as other factors could contribute without being noise-dependent.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C4",
+      "C87",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "Confinement in cell-sized space changes conditions for Min wave emergence by increasing surface-to-volume ratio, which enhances protein membrane localization. Spontaneous MinE localization inhibits wave generation, requiring suppression for stable waves. The rate of spontaneous MinE localization is a critical determinant of wave generation in confined spaces.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2-C4 and C87-C90 represent the core conclusions of the study, integrating experimental and theoretical findings. The evidence from multiple experimental approaches (localization measurements, wave emergence assays, size-dependence studies) and computational modeling provides strong support. The mechanistic explanation linking surface-to-volume ratio to localization efficiency to wave emergence is well-established through the presented data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "BSA and cell extract modify MinE-membrane interactions at relatively low concentrations (1-10 mg/mL) compared to physiological crowding (100-300 mg/mL), through a mechanism different from viscosity increase. Competitive inhibition is proposed as a plausible mechanism, and tuning lipid conditions to reduce spontaneous MinE attachment appears important for wave generation without auxiliary molecules.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C91-C95 present mechanistic interpretations and hypotheses. While C91-C92 are supported by experimental comparisons with PEG/Ficoll, the competitive inhibition mechanism (C94) is explicitly speculative and relies on a single citation about BSA-membrane binding (C93). The proposal about lipid tuning (C95) is reasonable but not directly tested. More direct evidence for the competitive inhibition mechanism would be needed for full support.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C101",
+      "C102"
+    ],
+    "result": "Planar membranes show robust wave generation despite increased spontaneous MinE binding, explained by two mechanisms: coupling between membrane and bulk dynamics, and system excitability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C101-C102 synthesize simulation results (Figure 5) to explain planar membrane robustness. The two-mechanism explanation is supported by the computational analysis, though the relative contributions of each mechanism are not quantified. The interpretation is reasonable but somewhat speculative regarding which mechanism dominates.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C5",
+      "C107",
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "Cell-sized confinement strictly limits parameters for wave emergence by inhibiting both instability and excitability, shifts equilibrium of protein membrane binding, and changes conditions for iRD wave generation and stability. These effects are expected to be universal features among iRD waves and biosystems due to surface-to-volume effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C5, C107-C110 present broad conclusions and generalizations. While C5, C107-C108 are well-supported by the Min system data, the claims of universality (C109-C110) are speculative extrapolations. The theoretical analysis suggests these effects should be general, but experimental evidence from other iRD systems would be needed to fully support the universality claims. The logic is sound but the scope of the claims exceeds the direct evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C96",
+      "C97"
+    ],
+    "result": "MinE conformation exists in equilibrium between open (membrane-binding) and closed conformations, with open conformation preferentially binding membranes, as established by recent studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C97 cite established knowledge from recent literature. These are background claims that provide context for the authors' mechanistic interpretations. The citations appear appropriate and the claims are presented as established knowledge rather than novel findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C98"
+    ],
+    "result": "Computational simulations show Min wave emergence depends on both membrane MinE accumulation and membrane size.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C98 summarizes simulation results (Figure 5) showing dual dependence on MinE localization and system size. This is well-supported by the computational data and consistent with experimental observations, representing a clear prediction from the modeling work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C111"
+    ],
+    "result": "On 2D lipid bilayers showing Min wave emergence without BSA, c/m was estimated to be 0.76.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C111 provides a specific measurement (Figure 4\u2014figure supplement 1) that is important for comparing 2D and 3D systems. The measurement appears straightforward, though the method for measuring c/m on 2D surfaces may have different technical considerations than in droplets.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C113",
+      "C114",
+      "C115"
+    ],
+    "result": "Numerical simulations show wave generation occurs when MinD and MinE concentrations are comparable, with pole-to-pole oscillation occurring near the boundary between stationary and rotating wave states. Wave generation on planar membranes occurs with weak MinE localization, consistent with previous studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C113-C115 present simulation observations that are consistent with experimental data and prior literature (C115 with citations). These provide validation of the computational models and establish parameter ranges for wave emergence. The agreement with previous studies (C115) strengthens confidence in the modeling approach.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,253 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13"
+    ],
+    "result": "The manuscript establishes background knowledge about sexual reproduction and mating types in isogamous organisms. Sexual reproduction typically involves asymmetric partners (C1, C8), and isogamous species possess self-incompatible gametes determined at mating-type regions with suppressed recombination (C2, C10), which are likely precursors to sex chromosomes (C3). These mating type systems restrict mating to different types, introducing a cost (C13).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims represent well-established knowledge in the field, supported by multiple citations to prior work (C9, C10, C13). The claims are internally consistent and provide appropriate context for the study. They accurately represent the current understanding of mating type evolution.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "The manuscript reviews existing hypotheses for mating type evolution, including inbreeding avoidance (C14) and mitochondrial inheritance (C15), but notes that these hypotheses may not fully explain mating types since some species maintain mating types despite inbreeding or biparental mitochondrial inheritance being the rule (C16, C17, C18).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims accurately summarize prior hypotheses and their limitations, supported by appropriate citations (C14, C15, C16, C17). The inference that these hypotheses may not alone explain mating type evolution (C18) is logically sound given the cited counterexamples.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "The manuscript presents an alternative hypothesis that mating types are determined by molecular systems regulating gamete interactions (C19), which are more efficient when operating asymmetrically (C20). Sexual signaling in isogamous species is universally asymmetric (C24, C25), and membrane-bound ligands are universal while diffusible signals are not (C26, C27). Self-signaling (producing and sensing the same molecule) impairs signal detection and slows partner finding (C22, C23).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims are well-supported by citations to prior work, including the authors' own review (C24, C25). The evidence for asymmetric signaling being more efficient (C20, C22) and the universality of membrane-bound ligands (C26) is appropriately cited. The claims provide strong motivation for the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6",
+      "C7"
+    ],
+    "result": "The authors develop a model of ligand-receptor dynamics that identifies factors determining cellular signaling capacity (C4) and specifies conditions favoring asymmetric ligand and receptor production (C5). When recombination rate evolves, conditions favoring asymmetric signaling also favor tight linkage between ligand and receptor loci (C6). The results suggest that selection for asymmetric gamete signaling could be the first step in mating-type loci evolution (C7).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims accurately summarize the main findings of the study, which are supported by the mathematical model and simulations presented in the Results section. The model is mathematically sound (Equations 1-10), and the simulations systematically explore parameter space (Figures 2-8). The inference in C7 is appropriately qualified as a suggestion based on the model results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "The model demonstrates that symmetric ligand-receptor production leads to self-binding that impairs intercellular signaling (C29), while asymmetric production resolves this issue (C30). For low degradation rates, self-binding dominates molecule removal (C31), and lower degradation leads to higher ligand/receptor levels (C32). The fold-increase in signaling strength (W12) is large even without self-binding costs (C33), and asymmetric production eliminates self-binding problems (C34).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims are directly supported by the mathematical model (Equations 1-8) and Figure 2. The steady-state analysis is mathematically correct, and the conclusions about self-binding effects are logically derived from the model structure. Figure 2 clearly shows the predicted relationships between parameters and signaling strength.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C35",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "The evolutionary simulations identify two stable equilibria: E1 (symmetric signaling, s*\u22481) and E2 (asymmetric signaling, s*\u22480) (C41-C44). A symmetric resident cannot be invaded by single mutants (C35), but E1 persists only when intracellular binding (k+) is small (C45-C47). Larger k+ promotes asymmetry evolution (C48), with the E1-to-E2 transition depending on degradation rate (C49), mutation rate (C50-C51), between-cell binding strength (C52), and self-binding cost (C53-C54). Ligand/receptor synergy facilitates asymmetry evolution (C55-C56), and both equilibria are evolutionarily stable (C57).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims are well-supported by Figures 3-5 and the adaptive dynamics analysis. The pairwise invasibility plots (Figure 3) clearly demonstrate the conditions under which mutants can invade, and the evolutionary simulations (Figure 4) systematically explore parameter space. The dependence on mutation rate (Figure 4\u2014supplement 1) and other parameters (Figure 4e, 4\u2014supplement 2) is clearly documented. The conclusion about evolutionary stability (C57) is appropriately qualified as an inference.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C60",
+      "C62",
+      "C63"
+    ],
+    "result": "Adaptive dynamics analysis shows that E2's basin of attraction is larger when k+ and mutation frequency (p) are high and degradation (\u03b3) is small (C60). Lower mutant frequency increases the probability that complementary mutants meet before drift eliminates them (C62). Asymmetry in both ligand and receptor production is necessary for signaling asymmetry evolution (C63).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims are supported by Figure 5, which systematically maps the invasion conditions for different parameter combinations. The inference about drift effects (C62) is reasonable given the finite population size. The requirement for asymmetry in both ligand and receptor (C63) is consistent with Figure 3a and Figure 6.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "When recombination is introduced, s* increases with recombination rate \u03c1 at equilibrium E2 (C65). At low recombination (\u03c1\u22640.1), the population consists mainly of fully asymmetric cells (1,0,0,1) and (0,1,1,0) with few recombinants (C66-C67). Higher recombination (\u03c1\u22650.3) pushes s* to 0.5, with cells producing one ligand fully and both receptors at 0.5 (C68-C69), maintaining some asymmetry even at free recombination (C70).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims are directly supported by Figure 7, which shows how population composition changes with recombination rate. The observation that some asymmetry persists even at high recombination (C70) is an important finding clearly demonstrated in Figure 7b. The model correctly accounts for recombination effects on offspring genotypes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "When recombination rate evolves, it evolves to \u03c1*=0 (tight linkage) whenever E2 is reached (C71-C72). Asymmetric signaling and recombination rate coevolve (C73), with dynamics depending on selection strength: strong selection (k+=10) leads to rapid asymmetry evolution followed by sharp recombination reduction (C74), weaker selection (k+=3) shows slower coevolution (C75), and very weak selection (k+=1) results in no asymmetry and neutral recombination rate fluctuation (C76).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims are well-supported by Figure 8, which clearly shows the coevolutionary dynamics for different parameter values. The observation that tight linkage evolves under the same conditions favoring asymmetric signaling (C71-C72) is a key finding. The parameter-dependent dynamics (C74-C76) are clearly demonstrated and make biological sense.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C91",
+      "C92",
+      "C105",
+      "C106"
+    ],
+    "result": "The main conclusions state that asymmetry in ligand-receptor production evolves in response to selection for swift gamete communication (C77), and the same conditions favor tight linkage between receptor and ligand genes (C78). Selection for asymmetric signaling could be important in early gamete differentiation evolution (C79), could be the first step in tight linkage evolution (C92), and could lead to self-incompatible mating types at non-recombinant loci (C105), potentially being the first step toward sexual asymmetry, anisogamy, sex chromosomes, and sexes (C106).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These conclusions are appropriately supported by the model results presented throughout the manuscript. The claims are carefully qualified with 'could' and 'suggest,' acknowledging that this is a theoretical model. The logical chain from asymmetric signaling to tight linkage to mating types is well-established by the results. However, the broader evolutionary implications (C106) are more speculative, though reasonably grounded in the findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "The discussion contextualizes findings relative to prior work. Gene duplication could explain two ligand-receptor pairs (C80-C81). The model explains why pansexual-mating type coexistence is rare (C82), contrasting with previous models showing negative frequency-dependent selection (C83-C85). The present model shows positive frequency-dependent selection (C86), where recombinant offspring are eliminated even with recombination (C87), suggesting mitochondrial inheritance and inbreeding avoidance models unlikely generate strong selection for suppressed recombination (C88).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims appropriately contextualize the findings within existing literature. The contrast with previous models (C83-C85) is well-supported by citations, and the observation about positive frequency-dependent selection (C86) is clearly demonstrated in Figures 3-4. The inference about other models (C88) is reasonable but somewhat speculative, as it's based on comparison rather than direct analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "The discussion connects findings to mating type loci and sex chromosome evolution. Mating type identity is determined by loci carrying multiple genes (C89), with suppressed recombination being common across species (C90). In yeasts, mating type loci only code for ligand and receptor molecules (C93). Mating type loci with suppressed recombination are precursors to sex chromosomes (C94), and this work provides insights about sex chromosome origins (C95).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims are well-supported by appropriate citations (C89, C90, C93, C94). The connection to sex chromosome evolution (C94, C95) is reasonable given the established relationship between mating type loci and sex chromosomes in the literature. The claim about providing 'crucial insights' (C95) may be somewhat overstated but is defensible given the novel findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "The discussion identifies future research directions. Opposite mating type gametes often use diffusible signals for attraction (C96), and including long-range signals would provide further benefits for asymmetric signaling (C97). Mating type number varies across species and likely depends on sexual reproduction frequency and mutation rates (C98).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims appropriately identify extensions of the current work. C96 is supported by citations, and C97 is a reasonable speculation supported by a citation to prior work. C98 is supported by a citation and represents an appropriate direction for future research. These are appropriately framed as future work rather than current findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "The discussion addresses mutation rate effects on asymmetric signaling evolution. Evolution of asymmetric signaling is contingent on mutation rate (C99), with low probability of complementary mutants co-segregating when population size is small and mutation rates are low (C100). Increasing population size or mutation rate enhances co-segregation probability (C101), and in infinite populations, evolution should be independent of mutation rate (C102). Unicellular eukaryotes undergo many asexual generations between sexual reproduction (C103), making effective mutation rates orders of magnitude higher (C104).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims are supported by Figure 4\u2014supplement 1 and the adaptive dynamics analysis (Figure 5). The reasoning about co-segregation probability (C100-C101) is sound, and the theoretical prediction for infinite populations (C102) is appropriate. The observation about asexual generations (C103) is well-cited, and the inference about effective mutation rates (C104) is logical, though it would benefit from quantitative support.",
+    "result_type": "MINOR"
+  }
+]

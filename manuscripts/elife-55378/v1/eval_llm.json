@@ -1,0 +1,250 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C47",
+      "C48",
+      "C50"
+    ],
+    "result": "Biophysical properties of spiral ganglion neurons (SGN) vary in a spatial gradient with synaptic position on inner hair cells. Neurons contacting the modiolar face have higher current thresholds, more hyperpolarized voltage thresholds and resting potentials, shorter after-hyperpolarization times, larger maximum conductances (gmax), and larger low-voltage gated conductances (g-30) compared to pillar-contacting neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C39-C43, C47-C48, and C50 collectively demonstrate strong correlations between multiple biophysical properties and normalized basal position (NBP) with statistically significant p-values (p<0.05 for all correlations). The data are supported by both current-clamp and voltage-clamp measurements across 38 labeled neurons, with consistent trends shown in Figures 2F, 4F-I.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C69",
+      "C70"
+    ],
+    "result": "The alignment between in vitro biophysical properties and in vivo functional properties suggests that post-synaptic biophysical variability contributes to intensity coding. Neurons with low current thresholds in vitro are found at pillar positions where high spontaneous rate, low-intensity threshold fibers are found in vivo.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C5, C69, and C70 establish a qualitative alignment between in vitro measurements and in vivo observations from the literature (Kiang et al., 1965; Liberman, 1978). The direction of biophysical gradients is consistent with known functional properties, though the causal contribution of post-synaptic properties to intensity coding remains inferential rather than directly demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C71"
+    ],
+    "result": "Biophysical gradients are present at all ages examined (P1-P16) and persist during maturation. The coefficient of variation for biophysical features does not change with age, indicating that diversity emerges early and is maintained. Prediction models based on biophysical properties successfully predict synaptic position even within narrow age ranges (P3-P5 and P6-P8).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C7, C54-C59, and C71 are supported by data showing significant correlations at multiple developmental time points and successful prediction models (R\u00b2=0.55, p<0.001) within narrow age bins. The stability of the coefficient of variation across ages (Figure 6B, D, F) provides quantitative evidence that relative dispersion is maintained during development.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C8",
+      "C52",
+      "C54",
+      "C55"
+    ],
+    "result": "Multiple regression models successfully predict synaptic position based solely on biophysical properties. The best model for spiking neurons (P3-P10) accounts for 75% of variance with \u00b19% margin of error using current threshold, gmax, and inactivation time constant. Models using only response latency account for 55% of variance in narrow age ranges.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C52, C54, and C55 are supported by detailed regression analyses presented in Table 3 and Figure 5. The models show strong predictive power (adjusted R\u00b2=0.75, p=0.0004 for the full model) with appropriate statistical validation including variable inflation factor analysis to avoid overfitting. The success across different age ranges and neuron types strengthens the findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "Response latencies are faster for neurons contacting the modiolar face compared to the pillar face, with this relationship holding for both spiking and non-spiking neurons. ANCOVA analysis confirms no significant difference in mean latency or regression slope between spiking and non-spiking groups.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C46 are supported by correlation analysis (r(34)=-0.74, p<0.0001 pooled) and ANCOVA results (p=0.94 for mean, p=0.71 for slope) shown in Table 1 and Figure 3D. The statistical approach appropriately tests whether the two groups can be pooled, strengthening subsequent analyses.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "There is a significant interaction between age and synaptic position on biophysical maturation. Modiolar-contacting neurons develop faster than pillar-contacting neurons, with gmax growing nearly twice as fast with age for modiolar neurons. Similar interactions are observed for response latency.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C62 are supported by ANCOVA analysis showing significant interaction terms (F(1,33)=5.98, p=0.0199 for gmax; F(1,33)=8.4, p=0.0066 for latency) in Table 1. The differential developmental rates are visualized in Figure 6C and G with distinct regression slopes for modiolar vs. pillar groups.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "Terminal branch pruning occurs faster in modiolar-contacting neurons compared to pillar-contacting neurons. Mature one-to-one connections are observed as early as P5 on the modiolar face, while no pillar-contacting fibers show mature morphology by P10. Modiolar fibers have significantly fewer branches than pillar fibers from P5-P10 (1.9\u00b10.24 vs. 3.2\u00b10.32, p=0.030).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C66 are supported by morphological analysis showing a strong correlation between branch number and age (r(53)=-0.79, p<0.0001) and a statistically significant difference in branch number between modiolar and pillar groups (p=0.030, t-test) as shown in Figure 7B-C. This provides independent morphological evidence supporting the differential maturation rates observed in biophysical properties.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "Type I SGN contact inner hair cells (n=50) while Type II SGN project to outer hair cells making 6-15 contacts (n=9). NBP values for Type I neurons range from -0.32 to +0.52 (n=38), with 34 classified as modiolar-contacting and 16 as pillar-contacting. This distribution is consistent with previous reports in rat and cat.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C26 describe the basic morphological classification supported by direct observation and quantification from confocal imaging (Figure 1). The distribution is appropriately compared to literature (Liberman and Oliver, 1984; Kalluri and Monges-Hernandez, 2017), providing context for the findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "Firing patterns in response to current injection are diverse, with rapidly-accommodating patterns most prevalent (n=49), followed by intermediate-accommodating (n=19), graded responses (n=55), and slow-accommodating (n=5). All patterns are observed in Type I SGN, while Type II SGN show only rapidly-accommodating and graded responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C29, C31-C33 provide descriptive statistics of firing pattern distributions directly observed from current-clamp recordings. The counts are clearly reported and the distribution across neuron types is documented, though the functional significance of this diversity is addressed in other results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "Action potential features vary significantly by spike pattern. Current thresholds, voltage thresholds, and AHP time constants differ among rapidly-, intermediate-, and slow-accommodating neurons (Welch's ANOVA, p<0.05 for all). Spiking neurons have more hyperpolarized resting potentials than non-spiking neurons (-56.86\u00b10.98 mV vs. -51.77\u00b11.14 mV, p=0.0010).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C38 are supported by appropriate statistical tests (Welch's ANOVA for unequal variances, t-test for two groups) with significant p-values. The data are shown in Figure 2E with clear quantification of the differences among groups.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C67",
+      "C68"
+    ],
+    "result": "Type I SGN have significantly larger fiber diameters than Type II SGN (1.28\u00b10.05 \u00b5m vs. 0.59\u00b10.12 \u00b5m, p<0.0001). Fiber diameters do not differ significantly between modiolar- and pillar-contacting Type I neurons (1.25\u00b10.29 \u00b5m vs. 1.11\u00b10.22 \u00b5m, p=0.25).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C68 are supported by morphological measurements with appropriate statistical comparisons (t-tests) shown in Figure 7D. The lack of difference between modiolar and pillar Type I neurons is consistent with reports that fiber diameter differentiation occurs around hearing onset in mice.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C49"
+    ],
+    "result": "The half-activation voltage (V1/2) of whole-cell conductance was not significantly correlated with normalized basal position (r(34)=-0.23, p=0.17).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C49 reports a non-significant correlation appropriately, indicating that not all voltage-clamp parameters vary with position. This negative result is important for understanding which specific conductance properties drive the spatial gradients.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C30"
+    ],
+    "result": "Slow-accommodating firing patterns might be an immature phenotype in acute preparations, as all observations (n=5) occurred between P1 and P3.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C30 is speculative based on limited observations (n=5) restricted to early ages. While the age restriction is suggestive, the small sample size and lack of direct evidence for immaturity (e.g., comparison with cultured preparations or older ages) make this interpretation uncertain. Alternative explanations (e.g., sampling bias, preparation artifacts) are not excluded.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C20"
+    ],
+    "result": "This is the first study to demonstrate an alignment between the intrinsic properties of spiral ganglion neurons and their function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C20 is a novelty claim supported by the comprehensive demonstration of correlations between biophysical properties and synaptic position, which has not been previously shown. The claim is appropriately contextualized with citations to prior work showing diversity in isolation but not spatial organization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C92",
+      "C93"
+    ],
+    "result": "Type II fibers have small steady-state outward potassium currents that inactivate rapidly, positioning them at the extreme of the Type I distribution. This is consistent with previous reports (Jagger and Housley, 2003).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C92-C93 describe Type II properties based on limited sample size (n=9 across P3-P8). While the observation is consistent with prior work, the authors acknowledge that small numbers over a wide age range and potential Type II subtypes limit statistical evaluation. The qualitative trend is noted but not definitively characterized.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19"
+    ],
+    "result": "Background claims establishing the context for the study, including the existence of SGN subgroups with different spontaneous rates and thresholds, their spatial organization on hair cells, and prior knowledge of SGN biophysical diversity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2, C9-C19 are background knowledge appropriately cited from established literature. These provide the necessary context and motivation for the current study but are not results of the present work.",
+    "result_type": "MINOR"
+  }
+]

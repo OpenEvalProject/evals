@@ -1,0 +1,1980 @@
+{
+  "submission": {
+    "id": "07ca3804-c16d-428b-a080-1f33bd6599cc",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T07:01:55.278020Z",
+    "updated_at": "2025-12-02T07:01:55.278020Z"
+  },
+  "content": [
+    {
+      "id": "a5917f38-219c-4386-b0c5-b2ff8b611f97",
+      "submission_id": "07ca3804-c16d-428b-a080-1f33bd6599cc",
+      "content_type": "manuscript",
+      "content_text": "# New tools for automated high-resolution cryo-EM structure determination in RELION-3\n\n## Authors\n\n- Jasenko Zivanov<sup>1</sup> ([ORCID: 0000-0001-8407-0759](https://orcid.org/0000-0001-8407-0759))\n- Takanori Nakane<sup>1</sup> ([ORCID: 0000-0003-2697-2767](https://orcid.org/0000-0003-2697-2767))\n- Bj\u00f6rn O Forsberg<sup>2</sup>\n- Dari Kimanius<sup>2</sup>\n- Wim JH Hagen<sup>3</sup> ([ORCID: 0000-0001-6229-2692](https://orcid.org/0000-0001-6229-2692))\n- Erik Lindahl<sup>2</sup> ([ORCID: 0000-0002-2734-2794](https://orcid.org/0000-0002-2734-2794)) \u2020\n- Sjors HW Scheres<sup>1</sup> ([ORCID: 0000-0002-0462-6540](https://orcid.org/0000-0002-0462-6540)) \u2020\n\n### Affiliations\n\n1. MRC Laboratory of Molecular Biology Cambridge United Kingdom\n2. Department of Biochemistry and Biophysics, Science for Life Laboratory Stockholm University Stockholm Sweden\n3. Structural and Computational Biology Unit European Molecular Biology Laboratory Heidelberg Germany\n4. Cryo-Electron Microscopy Service Platform European Molecular Biology Laboratory Heidelberg Germany\n5. Department of Applied Physics, Swedish e-Science Research Center KTH Royal Institute of Technology Stockholm Sweden\n\n\u2020 Corresponding author\n\n## Abstract\n\nHere, we describe the third major release of RELION. CPU-based vector acceleration has been added in addition to GPU support, which provides flexibility in use of resources and avoids memory limitations. Reference-free autopicking with Laplacian-of-Gaussian filtering and execution of jobs from python allows non-interactive processing during acquisition, including 2D-classification, de novo model generation and 3D-classification. Per-particle refinement of CTF parameters and correction of estimated beam tilt provides higher resolution reconstructions when particles are at different heights in the ice, and/or coma-free alignment has not been optimal. Ewald sphere curvature correction improves resolution for large particles. We illustrate these developments with publicly available data sets: together with a Bayesian approach to beam-induced motion correction it leads to resolution improvements of 0.2\u20130.7 \u00c5 compared to previous RELION versions.\n\n## Introduction\n\nMacromolecular structure determination by single-particle analysis of electron cryo-microscopy (cryo-EM) images has undergone rapid progress in recent years. Before 2010, cryo-EM structures to resolutions beyond 4 \u00c5 had only been obtained for large icosahedral viruses, for\u00a0example Jiang et al., 2008, Yu et al., 2008,\u00a0and Zhang et al., 2008. Since then, cryo-EM structures to resolutions that are sufficient for de novo atomic modelling have been achieved for a wide range of samples (Fernandez-Leiro and Scheres, 2016), and several structures beyond 2 \u00c5 resolution have been reported (Merk et al., 2016; Bartesaghi et al., 2018). In 2012, the availability of the first prototypes of direct electron detectors, which recorded images with unprecedented signal-to-noise ratios (McMullan et al., 2009), represented a crucial step forward. This advance was closely followed and partially overlapped with important improvements in image processing software. Together, they led to what was termed the \u2019resolution revolution\u2019 in cryo-EM structure determination (Kuhlbrandt, 2014).\n\nSince the start of this revolution, many new software solutions have been introduced. Some new programs exploited specific opportunities provided by the new detectors, like the correction of beam-induced motions through movie processing (Brilot et al., 2012; Li et al., 2013; Rubinstein and Brubaker, 2015; Abrishami et al., 2015; McLeod et al., 2017; Zheng et al., 2017). Other programs tackled individual steps in the single-particle workflow, like fast and robust estimation of the contrast transfer function (CTF) (Rohou and Grigorieff, 2015; Zhang, 2016), local-resolution estimation (Kucukelbir et al., 2014), or on-the-fly processing of images while they are being acquired at the microscope (de la Rosa-Trev\u00edn et al., 2016; Biyani et al., 2017). In the mean time, also general-purpose programs that already existed, like EMAN2 (Tang et al., 2007), Frealign (Grigorieff, 2007) or IMAGIC (van Heel et al., 1996), were further improved and used for high-resolution structure determination. Both old and new programs benefitted from the increase in image signal-to-noise ratios provided by the new detectors.\n\nThe availability of the first direct-electron detectors coincided with the introduction of the RELION software (Scheres, 2012b). This computer program introduced an empirical Bayesian approach, in which optimal Fourier filters for alignment and reconstruction are derived from the data in a fully automated manner (Scheres, 2012a). This strongly reduced the need for user expertise in tuning ad-hoc filter parameters compared to existing programs, and probably contributed to the rapid uptake of cryo-EM structure determination by non-expert groups. Nowadays, RELION is widely used (Patwardhan, 2017), and similar statistical approaches have been implemented in software packages that were developed since: cryoSPARC (Punjani et al., 2017) uses the same regularised likelihood optimisation target as RELION, and SPHIRE (Moriya et al., 2017) and cisTEM (Grant et al., 2018) implement likelihood-based classification methods.\n\nRELION underwent a major change in 2016 with the release of its second version, which comprised a pipelined approach for the entire single-particle workflow (Fernandez-Leiro and Scheres, 2016) and used acceleration on graphical procesing units (GPUs) to reduce its computational costs (Kimanius et al., 2016). In addition, its functionality was expanded with the incorporation of sub-tomogram averaging (Bharat et al., 2015) and helical reconstruction (He and Scheres, 2017). In this paper, we introduce version 3 of RELION. In the Materials\u00a0and\u00a0methods section, we describe algorithmic improvements and changes in implementation that have been made throughout the single-particle pipeline in RELION-3. In the Results and Discussion section, we illustrate how these changes allow for improved automation, fast accelerated reconstruction on normal hardware (CPUs) in addition to GPUs, and how the new features enable higher resolution reconstructions compared to previous releases.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type</th>\n      <th>Designation</th>\n      <th>Reference</th>\n      <th>Identifier</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>software</td>\n      <td>RELION</td>\n      <td>Scheres, 2012b</td>\n      <td>RRID:SCR_016274</td>\n    </tr>\n  </tbody>\n</table>\n\n### Laplacian-of-Gaussian auto-picking\n\nThe recommended procedure for the selection of particles from micrographs in previous versions of RELION was to calculate templates for reference-based auto-picking from particles that were manually picked in a subset of the micrographs (Scheres, 2015). To allow non-interactive, on-the-fly processing, we implemented a reference-free particle picking method based on the Laplacian-of-Gaussian (LoG) filter. Our method is related to the approach in DoGpicker (Voss et al., 2009), which uses a Difference-of-Gaussian (DoG) filter. Similar to the implementation in swarmPS (Woolford et al., 2007), we apply a LoG-filter with an optimum response for blobs of size $d$ by multiplying the Fourier transform of a micrograph by\n\n$$\n\\frac{|k|^{2}}{\\sigma^{2}}\u2062exp\u2061(\\frac{|k|^{2}}{-2\u2062\\sigma^{2}})\n$$\n\nwhere $k\\in\u211d^{2}$ is the image frequency, $\\sigma=2/d$, and the division by $\\sigma^{2}$ outside the exponentiation provides a normalised response of the filter for different values of $d$.\n\nIn order to deal with elongated particles, the user specifies a minimum ($d_{m\u2062i\u2062n}$) and maximum ($d_{m\u2062a\u2062x}$) particle diameter. The program then applies four LoG-filters to detect areas in the micrograph with blobs that are smaller than $d_{m\u2062i\u2062n}$ (with $d=d_{m\u2062i\u2062n}/n$ and $n=2,3,4$ or $5$); four filters to detect blobs that are larger than $d_{m\u2062a\u2062x}$ (with $d=n*d_{m\u2062a\u2062x}$ and $n=2,3,4$ or $5$); and three filters to detect blobs within the user-specified particle size (with $d=d_{m\u2062i\u2062n}$, $d=(d_{m\u2062i\u2062n}+d_{m\u2062a\u2062x})/2$ and $d=d_{m\u2062a\u2062x}$).\n\nOnly pixels for which the highest LoG-filtered value over all eleven filtered micrographs ($L\u2062o\u2062G_{b\u2062e\u2062s\u2062t}$) is above a user-controlled threshold and the corresponding blob size $d_{b\u2062e\u2062s\u2062t}$ is in the user-specified particle diameter range are considered for particle picking. Particles are picked iteratively at the highest remaining $L\u2062o\u2062G_{b\u2062e\u2062s\u2062t}$ value, and around each picked particle one discards all pixels within a circle with diameter $d_{b\u2062e\u2062s\u2062t}$. This process is repeated until no suitable pixels remain. To normalise the threshold for $L\u2062o\u2062G_{b\u2062e\u2062s\u2062t}$ over many different data sets, the default threshold is set to the mean of all $L\u2062o\u2062G_{b\u2062e\u2062s\u2062t}$ values for which the corresponding $d_{b\u2062e\u2062s\u2062t}$ is in the user-specified particle diameter range, and deviations from the default are expressed in standard deviations of those same values.\n\n### CTF refinement\n\nIn RELION, per-micrograph CTF parameters are determined through wrappers to CTFFIND (Rohou and Grigorieff, 2015) or Gctf (Zhang, 2016). These programs fit CTFs to the Thon rings visible in the power spectra of (patches of) micrographs. In RELION-3, we have implemented a program to refine the CTF parameters, that\u00a0is to re-estimate defocus and astigmatism, using a 3D reference structure. This allows CTF estimation to exploit both the phases and the amplitudes of the experimental images, instead of having to rely exclusively on their power spectra. This approach thus produces significantly more reliable estimates, due to higher signal-to-noise ratios and also because it does not require separation of the Thon rings from the background intensity of the power spectrum. This is illustrated in Figure 1. The increased stability of the CTF fitting can be leveraged to estimate independent defoci for individual particles. Similar functionality also exists in Frealign (Grigorieff, 2007) and cisTEM (Grant et al., 2018).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/42166/elife-42166-fig1-v2.jpg)\n\n**Figure 1.:** Top: Sum over the power spectra $||X_{k}||$ of all polished particle images in micrograph EMD-2984_0000 of EMPIAR-10061 (left) and the averages and standard deviations of that sum over Fourier rings between 10 \u00c5 and 2.5 \u00c5 (right). The dashed grey curves are located one std. deviation of each ring above and below the average. The overall rise in spectral power as a function of frequency is a consequence of particle polishing. Bottom: The corresponding plot for the sum over the real components of $V_{k}^{*}\u2062X_{k}$, instead of the power spectra. Note that the latter term is not only centered around zero, obviating the need to estimate the background intensity, but it also offers a higher signal-to-noise ratio.\n\nFormally, CTF refinement in RELION-3 works as follows. Let $V$ be the (complex-valued) Fourier-space representation of the reference structure. We assume the viewing direction and particle position to be known for each observed particle $p$. This allows us to project and shift the 3D reference, yielding $V_{p}$, the corresponding reference projection in 2D. The Fourier space representation of experimental particle image $X_{p}$ is now assumed equal to $V_{p}$, multiplied by the CTF and distorted by noise. We could then estimate the optimal CTF from $V_{p}$ and $X_{p}$ by determining a set of CTF-parameters $\\theta$ that minimises the squared difference between them:\n\n$$\n\\theta=argmin\\theta^{\u2032}(\\sumk,pg_{k}(X_{p,k}\u2212CTF(\\theta^{\u2032},k)V_{p,k})^{2}).\n$$\n\nInstead, we maximise their correlation:\n\n$$\n\\theta=argmax\\theta^{\u2032}(\\sumkg_{k}CTF(\\theta^{\u2032},k)\\sumpRe(V_{p,k}^{\u2217}X_{p,k})),\n$$\n\nwhere the asterisk indicates complex conjugation, $k$ is the 2D Fourier-space frequency and per-frequency weights $g_{k}$ are given by the FSC between two independently refined half-maps \u2013 this a heuristic that serves to attenuate the effect of frequencies where the reference is less reliable.\n\nThe value of the CTF for a spatial frequency $k$ is defined as follows:\n\n$$\nCTF\u2062(k)=-sin\u2061(\\pi\u2062\\lambda\u2062(\\delta_{0}+\\delta_{A}\u2062cos\u2061(2\u2062(\u03d5_{k}-\u03d5_{A})))\u2062|k|^{2}+\\frac{\\pi}{2}\u2062C_{s}\u2062\\lambda^{3}\u2062|k|^{4}-\u03c7),\n$$\n\nwhere $\\lambda$ is the wavelength of the electrons, $\\delta_{0}$ the average defocus, $\\delta_{A}$ half the difference between the two effective defoci resulting from astigmatism, $\u03d5_{k}$ and $\u03d5_{A}$ are the azimuthal angles of $k$ and the major astigmatism axis, respectively, $C_{s}$ is the spherical aberration constant of the microscope and $\u03c7$ the overall phase shift resulting from amplitude contrast and, if one is used, a phase plate.\n\nThe expression in Equation 3\u00a0allows the CTF-parameters $\\theta={\\delta_{0},\\delta_{A},\u03d5_{A},C_{s},\u03c7}$ to be determined either as constant for all particles in an entire micrograph or for every particle separately. In the latter case, the second sum consists of one single term corresponding to the index $p$ of the particle in question, and the result will be independent on the number of particles per micrograph. Our implementation allows for the estimation of $\\delta_{0}$ on a per-particle basis, $\\delta_{A}$ and $\u03d5_{A}$ on a per-particle or per-micrograph basis, and $C_{s}$ and $\u03c7$ on a per-micrograph basis. In our experiments, we have found that for many data sets the best results are obtained by estimating only $\\delta_{0}$ for individual particles, while leaving all the other parameters unchanged.\n\nBecause the large number of CTF-parameters for a given dataset introduces the risk of overfitting, it is important to maintain a strict separation between the two independently refined half-sets. For that reason, the reference image $V_{p}$ used to estimate the parameters of particle $p$ is always obtained by projecting the reference map computed from the half-set to which particle $p$ belongs. For completeness, we note that by default RELION combines the lowest frequencies of the two half-set reconstructions in order to avoid a situation where the two refinements converge onto reconstructions with small differences in orientation. Since this combination is only done for frequencies below 40 \u00c5, this does not have noticeable effects on the CTF refinement.\n\n### Beam-tilt estimation and correction\n\nA tilted beam alters the phase delays of the scattered beam components with respect to the unscattered reference beam. The delays $\u03c8_{1}$ and $\u03c8_{2}$ for a pair of corresponding Friedel mates are then no longer identical. We can decompose them into a symmetrical component $\u03c8_{s}=(\u03c8_{1}+\u03c8_{2})/2$ and an anti-symmetrical one, $\u03c8_{a}=(\u03c8_{1}-\u03c8_{2})/2$. The symmetrical part only induces astigmatism, which is already being modelled reasonably by our CTF model (Equation 4). The anti-symmetrical part, however, induces axial coma, that\u00a0is a phase shift $\u03d5$ in the respective image frequencies. The magnitude of $\u03d5$ as a function of tilt $b\\in\u211d^{2}$ is given by (Glaeser et al., 2011; Zemlin et al., 1978):\n\n$$\n\u03d5\u2062(b)=2\u2062\\pi\u2062C_{s}\u2062\\lambda^{2}<k,b>|k|^{2},\n$$\n\nwhere $C_{s}$ is the spherical aberration constant of the microscope, $\\lambda$ the wavelength of the electrons and $<,>$ denotes the scalar product in 2D.\n\nWe have developed an efficient method to determine the tilt vector $b$ from a set of observations of a particle and the corresponding high-resolution reference. Let $V_{j,k}\\in\u2102$ denote the predicted complex amplitude of image frequency $k$ of particle $j$ (including the effects of the CTF) and $X_{j,k}\\inC$ the corresponding amplitude observed in the experimental image $X$. We aim to find a vector $b\\in\u211d^{2}$ that minimises the squared difference between the observations and the prediction:\u00a0\n\n$$\nb=argmin\\beta\\sumj,k|z_{k}(\\beta)V_{j,k}\u2212X_{j,k}|^{2},\n$$\n\nwhere the phase shift is expressed as a multiplication with a complex number: $z_{k}\u2062(\\beta)=exp\u2061(i\u2062\u03d5\u2062(\\beta))$. Since the error in Equation 6 is a sum of quadratic functions, the equation can be transformed into:\u00a0\n\n$$\nb=argmin\\beta\\sumkw_{k}|z_{k}(\\beta)\u2212q_{k}|^{2}\n$$\n\nwith the per-pixel optima $q_{k}\\in\u2102$ and weights $w_{k}\\in\u211d$ given by:\n\n$$\n(8)q_{k}=\\sumj(X_{j,k}V_{j,k}^{\u2217})/\\sumj|V_{j,k}|^{2}(9)w_{k}=\\sumj|V_{j,k}|^{2},\n$$\n\nwhere the asterisk indicates complex conjugation. The computation of $q_{k}$ can be thought of as an averaging of the phase differences between the projected reference and the experimental images for Fourier-space pixel $k$ over all the images. Because of the cyclical nature of phase angles, a naive average over the angles themselves would not produce the desired result.\n\nThis formulation allows us to first compute $q_{k}$ and $w_{k}$ for each pixel by only iterating over the dataset once. This takes less than one hour for most datasets. Once the $q_{k}$ and $w_{k}$ are known, we can fit the optimal $b$ to them using an iterative non-linear method, such as Nelder-Mead downhill simplex (Nelder and Mead, 1965). Due to the small number of $k$, this iterative optimisation then only takes seconds.\n\nIn addition, inspecting the phases of $q_{k}$ allows us to ascertain that the effects observed are really those of a tilted beam. If we were to merely fit the optimal tilt vector $b$ to the data directly, we would run the risk of fitting $b$ to noise. Example plots of phase angles of $q_{k}$ are shown in Figure 4\u2014figure supplement 1. Furthermore, such phase-error plots make it possible to observe the effects of higher-order anti-symmetrical aberrations, such as three-fold astigmatism (Saxton, 1995; Krivanek and Stadelmann, 1995). Although no methods are available to correct for these yet, we are currently investigating these.\n\nOnce the tilt vector $b$ is known, it can be used to account for the expected phase error in $X$ during refinement and reconstruction. This functionality has already been present in RELION since release 2.0, but no practical methods were available to estimate $b$ until now.\n\n### Ewald sphere correction\n\nWe implemented the single-side band algorithm to correct for Ewald sphere curvature as proposed by (Russo and Henderson, 2018), which bears resemblance to the method implemented in Frealign (Grigorieff, 2007; Wolf et al., 2006). Our implementation was made in the relion_reconstruct program, which was also parallelised using the message-passing interface (MPI) standard.\n\nBriefly, one divides the Fourier transform of each extracted particle into two halves and multiplies each half with one of the following single-side band CTFs:\n\n$$\nCTFP=e^{+i(\u03c8+\\pi/2)}\u00a0andCTFQ=e^{\u2212i(\u03c8+\\pi/2)},\n$$\n\nwhere $\u03c8$ is the phase shift of the electron wave caused by the objective lens, and the term $\\pi/2$ is the phase shift upon scattering by the specimen. These complex multiplications leave the amplitudes of the Fourier components intact, but change the phases, resulting in a breakage of Friedel symmetry. To avoid discontinuities at the edge between the two halves of the Fourier transform, the multiplication is done in sectors by rotating the edge between the two halves. Two Fourier transforms, one for each side-band, are then obtained for each particle by combination of those parts of the Fourier transform that are furthest away from the edge in the different sectors. The number of sectors can be controlled by the user. By default it is set to two.\n\nThe two Fourier transforms of each particle sample the 3D transform in positions that are slightly above and below the central section. Both are back-transformed, masked in real space to remove noise in the area around the particle, and then transformed back into Fourier space before being inserted into their correct position in the 3D transform. The user has the option to use either upward or downward curvature of the Ewald sphere. The distance $\u0394\u2062z^{*}$ from the central section is calculated as:\n\n$$\n\u0394z^{\u2217}=\\lambda/2|k|^{2}.\n$$\n\nBecause an unknown number of mirroring operations may have been introduced during the data acquisition and image processing, the actual direction of curvature of the Ewald sphere is often unknown for a given data set. Therefore, the user may typically want to perform Ewald sphere correction with both directions. For this purpose, we implemented the --reverse_curvature option. If Ewald sphere curvature is a limiting factor for the resolution of a reconstruction, one direction of curvature should yield a higher resolution map than the other. DeRosier (2000) estimates that the frequency $k^{*}$ for which Ewald sphere curvature becomes limiting for a particle with diameter $d$ is approximated by:\n\n$$\nk^{*}=\\sqrt{\\frac{1.4}{d\u2062\\lambda}}.\n$$\n\n### CPU vector acceleration\n\nThe large computational load of the cryo-EM pipeline requires RELION to be highly parallel. In RELION-2, a new code-path was introduced, which off-loaded the core computations onto graphical processing units (GPUs) (Kimanius et al., 2016). This new path was by design less demanding of double precision arithmetics and memory, and provided a large improvement in data throughput by virtue of the greatly increased speed. However, the GPU acceleration is only available for cards from a single vendor, and it cannot use many of the large-scale computational resources available in existing centres, local clusters, or even researchers\u2019 laptops. In addition, the memory available on typical GPUs limits the box sizes that can be used, which could turn into a severe bottleneck for large particles. For RELION-3, we have developed a new general code path where CPU algorithms have been rewritten to mirror the GPU acceleration, which provides dual execution branches of the code that work very efficiently both on accelerators as well as the single-instruction, multiple-data vector units present on traditional CPUs. This has enabled lower\u00a0precision arithmetics, it reduces memory requirements considerably, and it also makes it possible to exploit the very large amounts of memory that can be fitted on CPU servers. In addition, it provides a transparent source code where new algorithms may be accelerated immediately, and it enables a significant speedup compared to the legacy code path, which is nonetheless still present in RELION-3 for comparative purposes.\n\n### Python scripts for automated processing\n\nAs of release 2.0, RELION has used a pipelined approach, where the execution of individual command-line programs is organised into jobs. Multiple different types of jobs exist for the different tasks in the single-particle workflow, for example\u00a0there are specific jobs for CTF estimation, particle picking, 2D classification and 3D refinement. Each job takes specific types of files, called nodes as input and produces other nodes as output. By using output nodes from one job as input for the next job, the entire process of structure determination is expressed as a directional graph. Parameters for jobs are typically provided through the GUI, where jobs can be executed or scheduled for later, possibly repeated, execution.\n\nIn RELION-3, we have expanded the functionality to schedule and execute jobs from the GUI to the command line by modifications in the relion_pipeliner program. This has allowed the generation of (python) scripts to perform complicated, standardised tasks by execution of a series of jobs. All jobs executed by these scripts become part of the standard pipeline, and one can use the GUI to follow the process live, or to do other things in the same directory meanwhile. With RELION-3, we distribute two example scripts. We envision that these will serve as inspiration for scripts written by others to reflect their specific needs.\n\nThe first example script is called bfactor_plot.py. It automatically runs multiple 3D refinements on random subsets of an input data set, where each time the size of the subset is doubled from a user-specified minimum number of particles. The script then automatically generated a B-factor plot according to Rosenthal and Henderson (Rosenthal and Henderson, 2003), where $1/d^{2}$, with $d$ being the resolution of each refinement, is plotted against the logarithm of the number of particles in the subset. The script also calculates the B-factor from the slope of a fitted line through the plotted points, and uses extrapolation of this line to make predictions about the number of particles needed to achieve higher resolutions.\n\nThe second example script is called relion_it.py. It is designed to provide on-the-fly feedback on the quality of micrographs, while they are being acquired at the microscope. The script repeatedly executes jobs for micrograph-based motion correction, CTF estimation, LoG-based auto-picking and particle extraction. In the mean time, the script keeps track of how many particles have been extracted, and can also execute 2D and/or 3D classification jobs in batches of a user-defined number of particles. If no 3D reference is available for 3D classification, an SGD initial model generation job will be executed to create one automatically. In addition, it is possible to replace the LoG-based auto-picking job by a template-based auto-picking job once a suitable 3D reference has been obtained from 3D classification of the LoG-picked particles.\n\nAlthough almost all parameters from the GUI are accessible through the relion_it.py script, the procedure has been designed to rely on only a few dataset-specific parameters. Besides parameters describing the microscopy and computational setup, the most important parameters are $d_{m\u2062i\u2062n}$ and $d_{m\u2062a\u2062x}$ for the LoG-based auto-picking and box sizes for the extracted particles. The default thresholds for the LoG-based and template-based auto-picking jobs are set to relatively low values. This typically results in many false positives in the picking, which are then sorted out in the subsequent classifications. This way, completely non-interactive, on-the-fly feedback on data quality may be achieved.\n\n### Other developments\n\nBesides the developments described above, RELION-3 comprises two major algorithmic advances that have already been described elsewhere.\n\nFirstly, Bayesian particle polishing implements a Gaussian Process regression algorithm for estimating beam-induced motion tracks for individual particles, and an improved B-factor estimation algorithm for resolution-dependent weighting of individual movie frames. Although not strictly necessary, Bayesian polishing is typically performed after motion-correction at the micrograph (patch) level by MotionCor2 (Zheng et al., 2017). To expose the metadata of this algorithm better to the Bayesian polishing approach, we also implemented our own version of the MotionCor2 algorithm. Unlike the UCSF implementation, our version does not use GPU-acceleration but runs on multi-core CPUs using OpenMP multi-threading. For $4\u2062k\\times4\u2062k$ movies, and using 12 cores, our program runs at comparable speeds to the UCSF implementation. More details about the Bayesian polishing and our implementation of the MotionCor2 algorithm have been described by Zivanov et al, (2018).\n\nSecondly, multi-body refinement implements an automated and iterative approach for focused refinement with partial signal subtraction on multiple independently moving parts of a complex (Nakane et al., 2018). This approach is useful for improving densities of flexible multi-domain complexes, and yields insights into the type of inter-domain motions that are present in those.\n\nIn addition, many smaller programs and functionalities have been added throughout the single-particle processing workflow. We highlight the following. The motion correction, CTF estimation and auto-picking jobs now output PDF files with metadata plots for all micrographs. We have improved our 3D initial model generation by adopting a stochastic gradient descent (SGD) procedure that follows the implementation in cryoSPARC much more closely than our previous version. We achieved considerably speedups in 2D and 3D classification by using subsets of particles in the first few iterations, which was inspired by a similar implementation in cistem (Grant et al., 2018). We have added a program called relion_star_handler that implements a range of useful operations for metadata files in the star format (Hall, 1991). And we have implemented a program called relion_align_symmetry that aligns the symmetry axes of a 3D map in arbitrary orientation according to the conventions in RELION.\n\n## Results and discussion\n\n### CPU vector acceleration\n\nThe functions that perform the expectation step (particle alignment) in RELION-3 can now use the same code path and structure as the GPU-accelerated code that was introduced in RELION-2, even if executing on systems without GPUs. This has led to several key improvements. First, the algorithm strength reductions first introduced for the GPU code makes it possible to use single precision in most places, which cuts the memory footprint in half for large parts of the code. Second, data has been organised to better fit modern hardware. The legacy CPU code would for instance allocate space for all possible orientations under the current sampling level, while the new CPU code makes use of coalesced memory allocation limited to the orientations that will be investigated. These type of changes result in a higher compute intensity with more coalesced memory access in smaller allocations. It is evident that the generalised and more streamlined code path facilitates compiler optimisation compared to the previous CPU version. The standard 3D benchmark for example runs 1.5x and 2.5x faster on the previous (Broadwell) and current (Skylake) generations of x86 processors, respectively (Figure 2A,B), without compromising the results (Figure 2\u2014figure supplement 1). However, the new coalesced memory allocation also makes it possible to instruct the compiler to generate efficient code targeting the single-instruction, multiple-data (SIMD) vector units present in modern CPUs. These operate on many input data elements at once, somewhat similar to GPUs, and typically also provide better throughput for single-precision data. Examples of this includes the so-called avx (advanced vector extensions) instructions present in all 64-bit x86 CPUs that operate on eight single-precision floating-point numbers, or the avx512 instructions present in the newest CPUs that extend the width to 16 single-precision numbers. By explicitly instructing the compiler to use avx-instructions for the new generalised code path, we see a further performance increase of 5.4x on Skylake-generation CPUs (Figure 2B). This enables x86 CPU nodes to approach the cost-efficiency of professional GPU hardware (Figure 2C), with results that are qualitatively identical to the legacy code path (Figure 2\u2014figure supplement 1).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/42166/elife-42166-fig2-v2.jpg)\n\n**Figure 2.:** Enabling vectorisation during compilation with the Intel compiler benefits the new streamlined code path, but not the legacy code. (B) For latest-generation Skylake CPUs, the difference is much larger even with only AVX2 vectorisation enabled, and when enabling the new AVX512 instructions the performance is roughly 4.5x higher than the legacy code path. (C) The accelerated CPU code executing on dual-socket x86 nodes provides cost-efficiency that is at least approaching that of professional-class GPU hardware (but not consumer GPUs).\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/42166/elife-42166-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** Additional FSCs compare the reconstruction of the acc-CPU and acc-GPU using the legacy-CPU as a base of comparison, showing numerical agreement beyond the reconstructed signal threshold. This validates that the quality of results has not been compromised from using lower precision or compiler optimisation.\n\nNotably, use of AVX-instructions does not improve on performance for legacy CPU-execution at all since the code parallelism is not expressed clearly enough for the compiler to recognise it. The performance also depends on which compiler is used, as they are able to optimise the program to varying degrees. The GNU compiler (GCC, verison 7.3) seems less able to convert RELIONs current formulation to efficient parallel instructions than the Intel compiler (ICC, version 2018.3.222), and presently the former provides no additional benefit on a Broadwell-generation CPU when the slightly newer AVX2 instructions are enabled. The better performance of icc is not unreasonable given that these benchmarks target Intel CPUs, although the negligible benefit of enabling AVX2 support in GCC is a bit surprising - hopefully this will improve in future compiler versions.\n\nA handful of things are worth emphasising:\n\n### Per-particle defocus correction\n\nPer-particle defocus variations within a micrograph arise from different particles being situated at different heights within the field of view. This may happen when the ice layer is relatively thick, and/or when the ice layer is not perpendicular to the electron beam. The latter may occur when the sample support film wrinkles upon flash freezing or when the sample stage is tilted in the microscope, for example to ameliorate a problem of preferred particle orientations (Tan et al., 2017; Naydenova and Russo, 2017). As an extreme case of non-horizontal samples, we re-processed an influenza virus hemagglutinin dataset (EMPIAR-10097) that was collected at 40 degree stage tilt to overcome a strong preferred orientation of the particles (Tan et al., 2017). At this tilt angle, the height differences within a single micrograph are more than 4000 \u00c5. A reconstruction from this data set was originally published at 4.2 \u00c5 resolution. Recently, the same data were also re-processed in Warp and cryoSPARC, resulting in an improved resolution of 3.2 \u00c5\u00a0(Tegunov and Cramer, 2018).\n\nWe aligned and dose-weighted the 668 movies with our own implementation of the MotionCor2 algorithm, and estimated per-micrograph defocus parameters using CTFFIND4 (Rohou and Grigorieff, 2015). Because of the high tilt, Thon rings were very weak and the estimated resolution from CTFFIND4 was limited to about 10 \u00c5. We applied LoG autopicking to an initial subset of 210 micrographs, and subjected the resulting 75,360 particles to 2D classification. We then used four good 2D class averages as templates for reference-based autopicking of all micrographs. The resulting 608,919 particles were then classified into 100 2D classes, from which we selected 361,507 particles that contributed to reasonable 2D class averages. We generated an initial 3D model using the SGD algorithm with C3 symmetry. Up to this point, we did not perform CTF-amplitude correction at resolutions lower than their first peak. A first 3D refinement with full CTF correction yielded only 6.6 \u00c5 resolution, and the FSC curve between the two half-maps showed strong oscillations, indicating inaccuracies in the CTF correction (Figure 3A,B). We then refined the per-particle defoci with a search range of \u00b12500\u00a0\u00c5, which improved the resolution to 4.4 \u00c5. Repeating per-particle defocus refinement and 3D refinement two more times yielded 4.0 and 3.8 \u00c5. Since a fourth iteration did not improve the resolution any further, we then proceeded with Bayesian polishing, which improved the resolution to 3.5 \u00c5. We then used 3D classification into six classes to select a subset of 152,960 particles contributing to the best class, again resulting in 3.5 \u00c5 resolution after 3D refinement. CTF refinement with beam-tilt correction and 3D refinement were then again iterated three times, giving 3.3 \u00c5, 3.2 \u00c5, and finally 3.1 \u00c5 resolution. During these refinements, 1364 particles were translated within 30 \u00c5 of their closest neighbour. Since duplicated particles may invalidate gold-standard separation and thereby inflate resolution, we removed these duplicate particles before the final 3D refinement using new functionality in the 'Subset selection\u2019 jobtype on the GUI. Plots of the final defocus values for particles within a single micrograph clearly replicate the tilt geometry of the experiment (Figure 3\u2014figure supplement 1).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/42166/elife-42166-fig3-v2.jpg)\n\n**Figure 3.:** (B) As in A, but FSC curves are between the cryo-EM maps and the corresponding atomic model (PDB-4FNK) (Ekiert et al., 2012). (C) Representative density features for some of the maps for which FSC curves are shown in A and B.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/42166/elife-42166-fig3-figsupp1-v2.jpg)\n\nThis example demonstrates that even for models with intermediate resolution (in this case 6.6 \u00c5) our per-particle defocus refinement can yield improved defoci. It also illustrates the robustness of the method against the initial values being far off. Using initial defoci that are closer to the correct ones will reduce the need for performing multiple cycles of per-particle defocus refinement. Therefore, in practice it would probably be faster to start from defoci provided by local CTF estimation programs, such as CTFTILT (Mindell and Grigorieff, 2003), Gctf (Zhang, 2016) or Warp (Tegunov and Cramer, 2018). Currently, this requires some scripting by the user, as the wrappers to CTFFIND4 and Gctf on the RELION-3 GUI do not allow local CTF estimation.\n\n### Beam tilt correction\n\nUntil to date, beam tilt has been largely ignored in cryo-EM single-particle analysis. Prior to the resolution revolution, the amount of beam tilt present in typical data sets did not affect their achievable resolution to a noticeable extent. More recently, even though methods to correct for beam tilt already existed in RELION and Frealign, the lack of reliable tools to estimate beam tilt meant these corrections were hardly ever used. Beam tilt results from sub-optimal coma-free alignment of the microscope. Based on our experience, we estimate that currently available microscope alignment procedures may still leave up to a quarter mrad of beam tilt in the data. This will not limit the resolution of 3 \u00c5 structures, but as shown for $\\beta$-galactosidase in section 3.6, such amounts of beam tilt are limiting for 2 \u00c5 structures. Therefore, as resolutions keep improving, beam tilt correction will gain in importance.\n\nThere are data acquisition scenarios where beam tilt becomes a limiting factor at much lower resolutions. With the elevated costs of high-end electron microscopes, faster data acquisition methods are highly sought after. A rate-limiting step in many data acquisition schemes is to physically move the sample stage from one hole in the carbon to the next, as one needs to wait for mechanical stage drift to settle. Because it is much faster to shift the electron beam instead, one could achieve higher data acquisition rates by using beam-shift to image multiple holes before shifting the stage. Beam-shift is already used extensively to take multiple images within a single hole, but because it introduces beam tilt, its use for imaging multiple holes has only recently attracted attention (Cheng et al., 2018). Although it is possible to actively compensate for the introduced beam tilt using the microscope\u2019s deflection coils (Eades, 2006; Glaeser et al., 2011), this procedure puts more stringent requirements on microscope alignment.\n\nWe evaluated our methods for beam tilt estimation and correction using two data sets on horse spleen apo-ferritin (purchased from Sigma), which were acquired with or without active beam tilt compensation. The data were recorded using serialEM (Mastronarde, 2005) in combination with a patch in the Thermo Fischer microscope software to perform active beam tilt compensation. (At the time of our experiment, active beam-tilt compensation was not yet implemented in serialEM.) For both data sets, we used the same R2/2 Quantifoil grid; the same Titan Krios microscope with a Gatan energy filter (with a slit width of 20 eV); the same K2-summit detector; and we used beam-shift to take five images in nine holes each before shifting the stage. This procedure was repeated nine times for the first data set and ten times for the second, because the area imaged in the latter contained fewer particles. We only used active beam tilt compensation for the first data set. Movies with a total dose of 41 electrons per \u00c5$^{2}$ were fractionated into 40 frames with a pixel size of 1.04 \u00c5. Template-based auto-picking yielded 104,992 particles for the first and 109,646 particles for the second data set. After selection of suitable 2D classes, the first and second data sets comprised 79,985 and 65,131 particles, respectively.\n\nThe first data set, with active beam tilt compensation, yielded a resolution of 2.3 \u00c5 after standard 3D auto-refinement, and 2.2 \u00c5 after Bayesian polishing and a second round of refinement (Figure 4A,B). The second data set, without active beam tilt compensation, yielded 2.9 \u00c5 after the first refinement, and 2.8 \u00c5 after Bayesian polishing. Beam tilt estimation was then performed independently for nine subsets of the data: one subset for each of the nine holes that were imaged before shifting the stage, and each subset thus comprising $10\\times5$ movies.\n\nPlots of the phase differences measured for each of the nine holes clearly show the effects of beam tilt at higher resolution (Figure 4\u2014figure supplement 1). Smaller phase shifts in the opposite direction at intermediate resolution indicate that during refinement, the images have shifted off-center in an attempt to compensate for the beam tilt-induced phase shifts. A third round of refinement with correction for the estimated beam tilts improved the resolution to 2.2 \u00c5. Plots of the estimated beam tilt against the beam-shift recorded by serialEM (Figure 4\u2014figure supplement 2) revealed a linear relationship of 0.19 mrad of beam tilt per $\\mu$m of beam-shift in both the X and Y directions. We then also ran a fourth refinement, where we predicted the beam tilt for each movie separately based on the recorded beam-shift values by serial\u00a0EM. This resulted in a resolution of 2.2 \u00c5. Features in the reconstructed density confirmed the improvement in resolution caused by beam tilt correction (Figure 4C). These results illustrate that beam tilt estimation and correction in RELION-3 may be a feasible alternative to active beam tilt compensation at the microscope. Future studies will need to explore which of these methods is preferable under different experimental conditions.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/42166/elife-42166-fig4-v2.jpg)\n\n**Figure 4.:** (B) As in A, but FSC curves are between the cryo-EM maps and the corresponding atomic model (PDB-2W0O) (de Val et al., 2012). (C) Representative density features from the 2.2 \u00c5 map from the data set with active beam tilt compensation (left); the 2.9 \u00c5 map from the data set without active beam tilt compensation and without beam tilt correction (middle); and the 2.2 \u00c5 map from the data set without active beam tilt compensation but with beam tilt correction (right).\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/42166/elife-42166-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** The average per-pixel phase differences (in radiants) between reference projections and the individual experimental particle images (i.e. the phase angle of $q_{k}$ in Equation 8).The nine plots correspond to subsets of images collected at the nine different holes without active beam-tilt compensation. Note that the applied beam shift values have been recorded in stage coordinates giving a 175 degree X-axis rotation for the magnification used, which is reflected in the relative position of the nine plots. The inside regions showing the opposite slope to the global trend result from a systematic error in particle alignment caused by beam tilt.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/42166/elife-42166-fig4-figsupp2-v2.jpg)\n\n**Figure 4\u2014figure supplement 2.:** Linear fits through these points indicate there is 0.19 mrad of beam tilt for each $\\mu$m of beam shift.\n\n### Ewald sphere correction\n\nEwald sphere correction has also been largely ignored, although a few contributions have recently described high-resolution reconstructions where Ewald sphere correction did make a difference (Tan et al., 2018; Zhu et al., 2018). To test our Ewald-sphere correction implementation, we used particle images of the P22 virion capsid protein (Hryc et al., 2017), which we downloaded from EMPIAR-10083 (Iudin et al., 2016). The diameter of the P22 virion is approximately 700 \u00c5, which leads to an estimated resolution limit of 3.1 \u00c5 due to Ewald sphere curvature (DeRosier, 2000). To reduce memory consumption and to accelerate the processing, we down-sampled the particles to 1.54 \u00c5/pixel, and skipped Fourier padding during refinement. As we did not have access to the original micrographs, we used the defocus parameters for 45,150 particles as they were refined by JSPR in the original publication, which were kindly provided by Wah Chiu. We ignored variations in magnification as estimated by JSPR, because magnification correction is not implemented in RELION-3. Standard 3D auto-refinement, with correction for an estimated beam tilt of 0.6 mrad in X and \u22120.13 mrad in Y, gave a reconstruction with an estimated resolution of 3.5 \u00c5\u00a0(Figure 5A,B). Subsequent Ewald sphere correction improved this to 3.3 \u00c5. Features in the reconstructed density confirmed the improvement in resolution caused by beam tilt correction (Figure 5C). Ewald sphere correction with the opposite curvature gave only 3.9 \u00c5. In theory, if one knows the number of mirroring operations during data acquisition and image processing, Ewald sphere correction could therefore also be used to determine the absolute hand of a structure. However, at the resolutions where Ewald sphere correction matters, this is often no longer a relevant question.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/42166/elife-42166-fig5-v2.jpg)\n\n**Figure 5.:** (B) As in A, but FSC curves are between the cryo-EM and the corresponding atomic model (PDB-5UU5) (Hryc et al., 2017). (C) Representative density features without Ewald sphere correction (grey) with Ewald sphere correction and the correct curvature (green) and with Ewald sphere correction and the reverse curvature (orange).\n\n### Non-interactive data exploration\n\nTo illustrate the general applicability of the relion_it.py script, we re-processed our previously published $\\gamma$-secretase data set (Bai et al., 2015b; Bai et al., 2015a), which we deposited at EMPIAR-10194. We chose this data set as a representative of a non-straightforward data set, as $\\gamma$-secretase is a small (130 kDa ordered mass), asymmetrical, membrane-embedded protein complex.\n\nUsing default parameters, we performed motion correction of the 2,925 16-frame movies in our own implementation of the MotionCor2 algorithm, and estimated CTF parameters in Gctf (Zhang, 2016). LoG-based picking (with $d_{m\u2062i\u2062n}=120$ and $d_{m\u2062i\u2062n}=180$) at the default threshold led to 2.6 million particles (Figure 6A), which were divided in batches of 10,000 particles. Only the first batch was used for 2D classification, which revealed the presence of different views of the complex (Figure 6B). The script could have run similar 2D classification on all batches, for example to monitor data quality during data acquisition.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/42166/elife-42166-fig6-v2.jpg)\n\n**Figure 6.:** (A) Particle positions as selected by the LoG-based auto-picking algorithm are shown as yellow dots.\u00a0(B) The 2D class averages for the eight largest classes after LoG-based autopicking of the first batch of 10,000 particles. (C) 3D models generated by the script: after SGD initial model generation (left), and after 3D classification for the largest class (middle) and the second largest class (right). The two maps after 3D classification are thresholded at the same intensity level. (D) FSC curves between independently refined half-maps for EMD-3061 (grey), for the map obtained after non-interactive pre-processing (orange) and for the map obtained after processing of the originally published subset of particles in RELION-3. (E) FSC curves between PDB-5A63 and the same maps as in D. (F) Representative density features for the maps in E and F.\n\nInstead, we chose to let the script proceed with SGD initial model generation and 3D classification on the same batch of 10,000 particles (Figure 6C). After 3D classification, the script automatically selects the 3D class with the highest resolution reconstruction. As all four classes had an equal resolution of 23 \u00c5, the script selected the largest class (with an accumulated weight of 34.5%). However, the second largest class (with an accumulated weight of 34.4%) was actually the correct structure, which was obvious from a visual inspection of the density (Figure 6C). At this stage, we intervened. We stopped the script and edited the file RELION_IT_2NDPASS_3DREF to point to the correct map. This intervention probably reflects the weakest point in our otherwise non-interactive procedure. Robust, non-interactive selection of 3D class reconstructions (or 2D class averages) is a subject of ongoing research in our groups.\n\nUpon re-starting the script, template-based auto-picking with the correct 3D structure and the default threshold (0.4) led to 1.8 million particles, which were then used for 2D classification into 200 classes. At this point, the non-interactive script finished and the rest of the data processing was performed manually. Selection of the best 2D class averages led to a subset comprising 665,102 particles, which were subjected to Bayesian particle polishing and two rounds of 3D classification into eight classes. Two classes, comprising 333,377 particles, were selected for refinement of the per-particle defocus values and separate estimations of the beam tilt in the six microscopy sessions that this data set comprises. A second 3D classification yielded a majority class with 240,777 particles, which led to a final resolution of 3.3 \u00c5\u00a0(Figure 6E\u2013G).\n\nWhen we originally processed this data set in RELION-1.3, we obtained a map at 3.4 \u00c5 resolution from 159,549 particles, which were selected after 3D classification of 412,272 polished particles (Bai et al., 2015b). This set of particles was obtained through careful tuning of template-based auto-picking parameters for each of the six microscopy sessions, and careful selection of 2D and 3D classes. To assess whether the non-interactive pre-processing procedure can compete with this expert-driven approach, we used the same set of 412,272 particles also for Bayesian polishing, refinement of per-particle defocus values, beam tilt estimation and 3D classification. The resulting selection of 246,602 particles gave a final resolution of 3.2 \u00c5 (Figure 6E\u2013G). The improvement from 3.4 \u00c5 to 3.2 \u00c5 represents the contribution of the new functionality in RELION-3, whereas the gain from 3.3 \u00c5 to 3.2 \u00c5 represents the added value of the expert user. However, the map from the automatically pre-processed data does not correlate with the atomic model as well as one would expect from the half-map FSC curves. This suggests a higher fraction of false positives in the data resulting from the relion_it.py script compared to the expert selection, which may be caused by the relatively low default for the auto-picking threshold in the script. These results illustrate that non-interactive pre-processing gets close to the performance of a human expert, but for challenging data sets there is still a benefit in careful tuning of parameters. Future investigations will aim to reduce this gap.\n\n### High-resolution refinement I: \u03b2-galactosidase\n\nTo illustrate the combined effects of the RELION-3 implementation on high-resolution structure determination, we re-processed the $\\beta$-galactosidase data set at EMPIAR-10061 (Bartesaghi et al., 2015) that we also used to illustrate RELION-2.0 (Kimanius et al., 2016). This data set was made available to the community by the Subramaniam group. Using RELION-2.0, we previously obtained a 2.2 \u00c5 resolution reconstruction (EMD-4116).\n\nWe aligned the original, super-resolution movies using the UCSF implementation of MotionCor2 (version 1.0.5) (Zheng et al., 2017) in four by four patches with dose weighting and two-fold binning. CTF parameters were estimated using CTFFIND 4.1.10 (Rohou and Grigorieff, 2015). We initially picked 4084 particles using the LoG-based algorithm from a subset of 462 movies and classified these particles into 20 2D classes. Six of the resulting 2D class averages were used for template-based auto-picking of 229,553 particles from the entire data set. After an initial 2D classification into 200 classes, we chose to reject only the most obvious outliers, resulting in a data set of 217,752 particles. Although many of the selected particles were probably sub-optimal, we chose to keep them until the Bayesian polishing step, where relatively high particle numbers per micrograph may improve the description of the motion tracks. An initial 3D auto-refinement with these particles yielded a map with an estimated resolution of 2.3 \u00c5\u00a0(Figure 7A,B). Re-refining the same data set after only per-particle defocus refinement or beam tilt estimation improved the resolution to 2.2 in both cases. Application of both methods gave 2.1 \u00c5 resolution. We then performed Bayesian polishing, which gave 1.94 \u00c5, and classified the resulting shiny particles into six classes. The 134,900 particles that contributed to the three best 3D classes were then re-refined to 1.92 \u00c5 resolution. A second round of per-particle defocus refinement and beam tilt estimation, followed by another 3D auto-refinement yielded a final resolution of 1.90 \u00c5. Ewald sphere correction for this data set did not improve the resolution by at least one Fourier shell, although a small increase in FSC values near the estimated resolution was visible. The reconstructed density showed features that one would expect at this resolution (Figure 7C). FSC curves between the maps and PDB-5A1A confirmed that RELION-3 improved resolution by 0.3 \u00c5 compared to RELION-2.0 (Figure 7\u2014figure supplement 1). Application of the bfactor_plot.py script produced an estimate for the overall B-factor of 56 \u00c52 (Figure 7\u2014figure supplement 2). By extrapolation, the script predicts a resolution of 1.75 \u00c5 when using four times more particles, and 1.69 \u00c5 when using eight times more particles.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/42166/elife-42166-fig7-v2.jpg)\n\n**Figure 7.:** High-resolution refinement: $\\beta$-galactosidase (A) FSC curves between independently refined half-maps for the different stages of processing as explained in the main text.(B) FSC curves between PDB-5A1A and the maps at the same stages of processing as in A. (C) Representative density features for some of the maps for which FSC curves are shown in A and B.\n\n![Figure 7\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/42166/elife-42166-fig7-figsupp1-v2.jpg)\n\n![Figure 7\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/42166/elife-42166-fig7-figsupp2-v2.jpg)\n\n**Figure 7\u2014figure supplement 2.:** The script performed nine 3D refinement and post-processing jobs with subsets of increasing sizes for the beta-galactosidase data set. Fitting a straight line through the inverse of the resolution squared of each refinement against the natural logarithm of the number of particles in the corresponding subset yielded an estimated B-factor of 56 \u00c52.\n\nRecently, the Subramaniam group also re-processed this data set using new methods for defocus estimation, motion correction and radiation damage weighting (Bartesaghi et al., 2018). The resulting map (EMD-7770) was reported as an atomic resolution structure. The resolution according to the 0.143 FSC criterion was 1.9 \u00c5. Despite the same nominal resolution of 1.9 \u00c5, the RELION-3 map correlated with PDB-5A1A to 0.15 \u00c5 higher resolution than EMD-7770 (Figure 7\u2014figure supplement 2). In Bartesaghi et al. (2018) it is argued that the FSC curves may under-estimate the true resolution of cryo-EM maps, and a point is made for showing figures of high-resolution density features to claim atomic resolution instead. We disagree. The high-resolution figures in that paper were made using a map that was sharpened to resolutions well beyond the true resolution, resulting in high levels of noise. This noise was subsequently removed from regions outside the protein density with a high-resolution mask. As this noise still exists within the protein region, the resulting map is prone to incorrect interpretations. FSC curves between half-maps and between model and map are not without their own problems. They do not account for modelling errors or local variations in resolution, and they can be inflated by overfitting or the use of suboptimal masks. Nevertheless, provided suitably soft and low-resolution masks are used and care is taken to avoid overfitting (Scheres and Chen, 2012; Brown et al., 2015), FSC curves provide an objective overall assessment of map quality. Discarding this information in favour of a few selected density figures would be a mistake.\n\n### High-resolution refinement II: human apo-ferritin\n\nFor a final illustration of the combined functionality in RELION-3, we processed a data set on a human apo-ferritin sample, which was a gift from Fei Sun. These data were collected on the same K2 detector and Titan Krios microscope as the horse spleen apo-ferritin data set in section 3.3. We used serialEM to record seven images per hole in the R2/2 Quantifoil grid, before moving the stage to the next hole. Movies with a total dose of 47 electrons per \u00c5$^{2}$ were fractionated into 40 frames with a pixel size of 0.814 \u00c5. We have deposited these data at EMPIAR-10200.\n\nWe again used the relion_it.py script for non-interactive pre-processing of the data. Using default parameters, the script launched motion correction of the 1255 40-frame movies in our own implementation of the\u00a0MotionCor2\u00a0algorithm, and estimated CTF parameters in Gctf (Zhang, 2016). LoG-based picking (with $d_{m\u2062i\u2062n}=110$ and $d_{m\u2062a\u2062x}=150$) at the default threshold led to 723,524 particles, which were divided in batches of 10,000 particles. Only the first batch was used for initial model generation and 3D classification. Automated selection of the highest resolution 3D class (at 6.5 \u00c5) yielded a good apo-ferritin model, which was used for template-based auto-picking using the default (0.4) threshold. The resulting 427,694 particles were used for 2D classification into 200 classes.\n\nWe then proceeded processing in an interactive manner. Selection of suitable 2D class averages led to a subset of 426,450 particles, which were subjected to Bayesian polishing and per-particle defocus refinement. A final 3D refinement yielded a resolution of 1.65 \u00c5, which is two resolution shells below the Nyquist frequency (Figure 8A,B). Estimation of the beam tilt yielded values below 0.1 mrad, and refinement with these values did not improve the map. As expected at this resolution, the map shows spherical-like features around some of the atoms (Figure 8C). However, as these are not yet separated, it would be a stretch to call this an atomic resolution structure. Application of the bfactor_plot.py script produced an estimate for the overall B-factor of 66 \u00c52\ufeff (Figure 8\u2014figure supplement 1).\n\n![Figure 8.](https://cdn.elifesciences.org/articles/42166/elife-42166-fig8-v2.jpg)\n\n**Figure 8.:** (B) FSC curves between PDB-5N27 (Ferraro et al., 2017) and the cryo-EM map at different stages of the processing. (C) Representative density features at different stages of the processing.\n\n![Figure 8\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/42166/elife-42166-fig8-figsupp1-v2.jpg)\n\n**Figure 8\u2014figure supplement 1.:** The script performed ten 3D refinement and post-processing jobs with subsets of increasing sizes for the high-resolution apo-ferritin data set. Fitting a straight line through the inverse of the resolution squared of each refinement against the natural logarithm of the number of particles in the corresponding subset yielded an estimated B-factor of 66 \u00c52.\n\nBesides the selection of suitable 2D and 3D classes, which as mentioned is a topic of ongoing research in our groups, all of the calculations performed to yield this map could be incorporated into an extended version of the relion_it.py script. Thereby, completely automated, high-resolution cryo-EM structure determination of relatively straightforward samples like apo-ferritin is within close reach. This will be useful for the standardised processing of data sets on test samples to assess microscope performance. In the future, improved versions of procedures like this may facilitate high-throughput cryo-EM structure determination, for example for the screening of small-molecule compounds bound to drug targets.\n\n### Conclusions\n\nThe new functionality in RELION-3 allows faster, more automated and higher resolution cryo-EM structure determination compared to previous versions. CPU acceleration makes it possible to use a much wider range of hardware efficiently for RELION, including laptops and desktops, and it avoids the box size limits still present when offloading to GPU accelerators. The functionality to schedule and execute jobs from the command-line, coupled with python scripting, provides a versatile and extendable platform to standardise and automate complicated tasks. Corrections for per-particle defocus variations, beam tilt and the Ewald sphere already improve resolutions for currently available data sets, and will become even more important as the resolutions of typical cryo-EM structures improve in the future. RELION is distributed under the GNU General Public License (GPL, version 2), meaning it is completely free to use or modify by anyone, which we hope will maximise its usefulness to the community.\n",
+      "created_at": "2025-12-02T07:01:55.278020Z"
+    },
+    {
+      "id": "c748591a-d4e8-4d8d-b907-764ca143e528",
+      "submission_id": "07ca3804-c16d-428b-a080-1f33bd6599cc",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Edward H Egelman, University of Virginia United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.42166.029](https://doi.org/10.7554/eLife.42166.029)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"RELION-3: new tools for automated high-resolution cryo-EM structure determination\" for consideration by eLife. Your article has been favorably reviewed by three peer reviewers, including Edward H Egelman as the Reviewing Editor and Reviewer #1, and the evaluation has been overseen by John Kuriyan as the Senior Editor. The following individuals involved in review of your submission have also agreed to reveal their identity: John L Rubinstein (Reviewer #2); Eva Nogales (Reviewer #3).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nAll reviewers agreed that this paper would be an excellent contribution to the Tools or Resources category in eLife, and would be helpful to many people currently using cryo-EM as well as those hoping to use cryo-EM. The new algorithms described in the paper, including CTF/Defocus refinement of individual particles, Ewald sphere correction and beam-tilt correction, appear promising, and it is clear that Relion 3.0 will be an important software package for many people. No major concerns were raised, only minor points that can be easily addressed.\n\nMinor points:\n\n1) The authors estimate the resolution in some instances to a hundredth of an \u00c5. This level of precision makes no sense in cryo-EM, where the FSC curve is never monotonic, and results are easily influenced by masking. In addition, Sjors recently wrote in a CCPEM forum that \"we have seen artificially high FSC curves in cases of strong 'rotational smearing' of the particles due to extremely broad posterior probability functions of the orientations.\" So simply smearing the map can improve the FSC, as previously noted by Grigorieff. Thus, defining the FSC resolution, which can be easily altered by tenths of an \u00c5 by masking and smearing, to a precision of a hundredth of an \u00c5 defies common sense. Therefore, 3.49 should be 3.5, and 3.11 should be 3.1.\n\n2) Figure 1 needs the y-axes to be labelled in both parts. Without knowing precisely what is being plotted, it is confusing that the function oscillates about zero (I had guessed correlation, but that would be positive everywhere there is correlation).\n\n3) CTF refinement: It might be useful to add a few statements regarding the performance of the per-particle CTF refinement algorithm when dealing with i) particles of different size (e.g. are smaller particles less reliably fit), ii) reconstructions of different resolution (e.g. will using a low-resolution reference structure lead to degraded defocus estimates; if so, at which resolutions has this been observed?), and iii) micrographs with different numbers of particles. Regarding the last point, it appears that the algorithm does not use the particle population of a micrograph to improve the accuracy of CTF fitting, e.g. by fitting a plane or to avoid outliers (e.g. Figure 4, supplement 1). This would imply that the number of particles per micrograph does not play a role in the per-particle use case \u2013 is this correct?\n\nAlso, since the refined map is needed for CTF refinement, how reliable is the procedure with reconstructions at medium resolution (in the 5-7\u00c5 regime)? Finally, have the authors compared their method with the local CTF estimation method done using Gctf, where no input map is needed?\n\n4) Ewald sphere correction: Could the authors give the radius of the test specimen used, and the resolutions at which Ewald sphere curvature becomes limiting for this radius, according to previous estimates in the literature (e.g. by DeRosier, Grigorieff, and others)?\n\n5) Automated data exploration: The script failed to select the correct structure because it used, at equal resolution, the largest class. Did any of the other refinement parameters point to the correct structure (e.g. translation or rotation accuracies from the alignment)?\n\n6) \u0392-galactosidase: The comparison to previous reconstructions from the same and other groups is insightful and the emphasis on using proper validation statistics is important.\n",
+      "created_at": "2025-12-02T07:01:55.278020Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T07:01:55.278020Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T07:01:55.278020Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "02809020-bc83-4f65-9943-60420a4faaea",
+      "content_id": "a5917f38-219c-4386-b0c5-b2ff8b611f97",
+      "claim_id": "C1",
+      "claim": "RELION-3 includes CPU-based vector acceleration in addition to GPU support.",
+      "claim_type": "EXPLICIT",
+      "source": "CPU-based vector acceleration has been added in addition to GPU support, which provides flexibility in use of resources and avoids memory limitations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the abstract of the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:01:55.278020Z"
+    },
+    {
+      "id": "05a0db48-e142-479b-bfc1-fa7e78f5161a",
+      "content_id": "a5917f38-219c-4386-b0c5-b2ff8b611f97",
+      "claim_id": "C2",
+      "claim": "CPU-based vector acceleration provides flexibility in use of resources and avoids memory limitations.",
+      "claim_type": "EXPLICIT",
+      "source": "CPU-based vector acceleration has been added in addition to GPU support, which provides flexibility in use of resources and avoids memory limitations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a benefit of the CPU acceleration in the abstract.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:01:55.278020Z"
+    },
+    {
+      "id": "0d7b30d0-3d75-4080-9474-2727cdf5d88c",
+      "content_id": "a5917f38-219c-4386-b0c5-b2ff8b611f97",
+      "claim_id": "C3",
+      "claim": "RELION-3 includes reference-free autopicking with Laplacian-of-Gaussian filtering.",
+      "claim_type": "EXPLICIT",
+      "source": "Reference-free autopicking with Laplacian-of-Gaussian filtering and execution of jobs from python allows non-interactive processing during acquisition, including 2D-classification, de novo model generation and 3D-classification.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the abstract as a new feature.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:01:55.278020Z"
+    },
+    {
+      "id": "5a049104-e74d-439f-b248-c170d9c73eac",
+      "content_id": "a5917f38-219c-4386-b0c5-b2ff8b611f97",
+      "claim_id": "C4",
+      "claim": "RELION-3 allows execution of jobs from python for non-interactive processing during acquisition.",
+      "claim_type": "EXPLICIT",
+      "source": "Reference-free autopicking with Laplacian-of-Gaussian filtering and execution of jobs from python allows non-interactive processing during acquisition, including 2D-classification, de novo model generation and 3D-classification.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the abstract.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:01:55.278020Z"
+    },
+    {
+      "id": "b010e532-f7e3-42a7-87b5-f1d77a3d7dc9",
+      "content_id": "a5917f38-219c-4386-b0c5-b2ff8b611f97",
+      "claim_id": "C5",
+      "claim": "Per-particle refinement of CTF parameters provides higher resolution reconstructions when particles are at different heights in the ice.",
+      "claim_type": "EXPLICIT",
+      "source": "Per-particle refinement of CTF parameters and correction of estimated beam tilt provides higher resolution reconstructions when particles are at different heights in the ice, and/or coma-free alignment has not been optimal.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract as a benefit of the new functionality.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:01:55.278020Z"
+    },
+    {
+      "id": "ed539aa2-059f-452b-a48f-1517dc21ff07",
+      "content_id": "a5917f38-219c-4386-b0c5-b2ff8b611f97",
+      "claim_id": "C6",
+      "claim": "Correction of estimated beam tilt provides higher resolution reconstructions when coma-free alignment has not been optimal.",
+      "claim_type": "EXPLICIT",
+      "source": "Per-particle refinement of CTF parameters and correction of estimated beam tilt provides higher resolution reconstructions when particles are at different heights in the ice, and/or coma-free alignment has not been optimal.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract as a benefit of the new functionality.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:01:55.278020Z"
+    },
+    {
+      "id": "34c8c347-c7de-4b6e-910e-a9e330fd6226",
+      "content_id": "a5917f38-219c-4386-b0c5-b2ff8b611f97",
+      "claim_id": "C7",
+      "claim": "Ewald sphere curvature correction improves resolution for large particles.",
+      "claim_type": "EXPLICIT",
+      "source": "Ewald sphere curvature correction improves resolution for large particles.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the abstract.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:01:55.278020Z"
+    },
+    {
+      "id": "0a73ea23-bf4d-4f3d-abc4-0dbbdbd15304",
+      "content_id": "a5917f38-219c-4386-b0c5-b2ff8b611f97",
+      "claim_id": "C8",
+      "claim": "RELION-3 leads to resolution improvements of 0.2\u20130.7 \u00c5 compared to previous RELION versions.",
+      "claim_type": "EXPLICIT",
+      "source": "We illustrate these developments with publicly available data sets: together with a Bayesian approach to beam-induced motion correction it leads to resolution improvements of 0.2\u20130.7 \u00c5 compared to previous RELION versions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and demonstrated with data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:01:55.278020Z"
+    },
+    {
+      "id": "67898846-4ac4-4c7c-814b-39dab9df0791",
+      "content_id": "a5917f38-219c-4386-b0c5-b2ff8b611f97",
+      "claim_id": "C9",
+      "claim": "Before 2010, cryo-EM structures to resolutions beyond 4 \u00c5 had only been obtained for large icosahedral viruses.",
+      "claim_type": "EXPLICIT",
+      "source": "Before 2010, cryo-EM structures to resolutions beyond 4 \u00c5 had only been obtained for large icosahedral viruses, for example Jiang et al., 2008, Yu et al., 2008, and Zhang et al., 2008.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:01:55.278020Z"
+    },
+    {
+      "id": "afecc99d-4657-4715-b969-bd84740753e5",
+      "content_id": "a5917f38-219c-4386-b0c5-b2ff8b611f97",
+      "claim_id": "C10",
+      "claim": "Cryo-EM structures to resolutions sufficient for de novo atomic modelling have been achieved for a wide range of samples since 2010.",
+      "claim_type": "EXPLICIT",
+      "source": "Since then, cryo-EM structures to resolutions that are sufficient for de novo atomic modelling have been achieved for a wide range of samples (Fernandez-Leiro and Scheres, 2016), and several structures beyond 2 \u00c5 resolution have been reported (Merk et al., 2016; Bartesaghi et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:01:55.278020Z"
+    },
+    {
+      "id": "54961438-e46c-4714-b13e-36d5be2683f2",
+      "content_id": "a5917f38-219c-4386-b0c5-b2ff8b611f97",
+      "claim_id": "C11",
+      "claim": "Several cryo-EM structures beyond 2 \u00c5 resolution have been reported.",
+      "claim_type": "EXPLICIT",
+      "source": "Since then, cryo-EM structures to resolutions that are sufficient for de novo atomic modelling have been achieved for a wide range of samples (Fernandez-Leiro and Scheres, 2016), and several structures beyond 2 \u00c5 resolution have been reported (Merk et al., 2016; Bartesaghi et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:01:55.278020Z"
+    },
+    {
+      "id": "6d333776-591f-448c-8bf7-f1a3462fd345",
+      "content_id": "a5917f38-219c-4386-b0c5-b2ff8b611f97",
+      "claim_id": "C12",
+      "claim": "The availability of the first prototypes of direct electron detectors in 2012 represented a crucial step forward in cryo-EM.",
+      "claim_type": "EXPLICIT",
+      "source": "In 2012, the availability of the first prototypes of direct electron detectors, which recorded images with unprecedented signal-to-noise ratios (McMullan et al., 2009), represented a crucial step forward.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a historical fact with citation support.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:01:55.278020Z"
+    },
+    {
+      "id": "f7bbc035-9465-412e-879d-11b05360e61f",
+      "content_id": "a5917f38-219c-4386-b0c5-b2ff8b611f97",
+      "claim_id": "C13",
+      "claim": "Direct electron detectors recorded images with unprecedented signal-to-noise ratios.",
+      "claim_type": "EXPLICIT",
+      "source": "In 2012, the availability of the first prototypes of direct electron detectors, which recorded images with unprecedented signal-to-noise ratios (McMullan et al., 2009), represented a crucial step forward.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to McMullan et al., 2009.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:01:55.278020Z"
+    },
+    {
+      "id": "0ae41df4-81fd-4f8a-b109-d66dd84f5893",
+      "content_id": "a5917f38-219c-4386-b0c5-b2ff8b611f97",
+      "claim_id": "C14",
+      "claim": "Improvements in image processing software closely followed and partially overlapped with the introduction of direct electron detectors.",
+      "claim_type": "EXPLICIT",
+      "source": "This advance was closely followed and partially overlapped with important improvements in image processing software.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a historical observation.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:01:55.278020Z"
+    },
+    {
+      "id": "fe5282be-d2cb-4fc5-8d77-f7f574019a81",
+      "content_id": "a5917f38-219c-4386-b0c5-b2ff8b611f97",
+      "claim_id": "C15",
+      "claim": "Direct electron detectors and image processing software improvements together led to the 'resolution revolution' in cryo-EM structure determination.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, they led to what was termed the 'resolution revolution' in cryo-EM structure determination (Kuhlbrandt, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Kuhlbrandt, 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:01:55.278020Z"
+    },
+    {
+      "id": "3b28035c-8e30-40ef-bb3d-c942634197fd",
+      "content_id": "a5917f38-219c-4386-b0c5-b2ff8b611f97",
+      "claim_id": "C16",
+      "claim": "RELION introduced an empirical Bayesian approach where optimal Fourier filters for alignment and reconstruction are derived from the data in a fully automated manner.",
+      "claim_type": "EXPLICIT",
+      "source": "This computer program introduced an empirical Bayesian approach, in which optimal Fourier filters for alignment and reconstruction are derived from the data in a fully automated manner (Scheres, 2012a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a feature of RELION with citation support.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:01:55.278020Z"
+    },
+    {
+      "id": "dc91068f-de67-4ecf-bd18-431f4ab51607",
+      "content_id": "a5917f38-219c-4386-b0c5-b2ff8b611f97",
+      "claim_id": "C17",
+      "claim": "RELION's Bayesian approach strongly reduced the need for user expertise in tuning ad-hoc filter parameters compared to existing programs.",
+      "claim_type": "EXPLICIT",
+      "source": "This strongly reduced the need for user expertise in tuning ad-hoc filter parameters compared to existing programs, and probably contributed to the rapid uptake of cryo-EM structure determination by non-expert groups.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an inference about the impact of RELION's approach.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:01:55.278020Z"
+    },
+    {
+      "id": "48134e31-b794-4c5f-840c-af86f59b89ec",
+      "content_id": "a5917f38-219c-4386-b0c5-b2ff8b611f97",
+      "claim_id": "C18",
+      "claim": "RELION is widely used.",
+      "claim_type": "EXPLICIT",
+      "source": "Nowadays, RELION is widely used (Patwardhan, 2017), and similar statistical approaches have been implemented in software packages that were developed since: cryoSPARC (Punjani et al., 2017) uses the same regularised likelihood optimisation target as RELION, and SPHIRE (Moriya et al., 2017) and cisTEM (Grant et al., 2018) implement likelihood-based classification methods.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Patwardhan, 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:01:55.278020Z"
+    },
+    {
+      "id": "c81342e9-b8c8-417e-a113-a719bac1ad58",
+      "content_id": "a5917f38-219c-4386-b0c5-b2ff8b611f97",
+      "claim_id": "C19",
+      "claim": "cryoSPARC uses the same regularised likelihood optimisation target as RELION.",
+      "claim_type": "EXPLICIT",
+      "source": "Nowadays, RELION is widely used (Patwardhan, 2017), and similar statistical approaches have been implemented in software packages that were developed since: cryoSPARC (Punjani et al., 2017) uses the same regularised likelihood optimisation target as RELION, and SPHIRE (Moriya et al., 2017) and cisTEM (Grant et al., 2018) implement likelihood-based classification methods.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citation support.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:01:55.278020Z"
+    },
+    {
+      "id": "5ca3410e-646d-4f52-b64a-e4f3e6f4f9d2",
+      "content_id": "a5917f38-219c-4386-b0c5-b2ff8b611f97",
+      "claim_id": "C20",
+      "claim": "SPHIRE and cisTEM implement likelihood-based classification methods.",
+      "claim_type": "EXPLICIT",
+      "source": "Nowadays, RELION is widely used (Patwardhan, 2017), and similar statistical approaches have been implemented in software packages that were developed since: cryoSPARC (Punjani et al., 2017) uses the same regularised likelihood optimisation target as RELION, and SPHIRE (Moriya et al., 2017) and cisTEM (Grant et al., 2018) implement likelihood-based classification methods.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citation support.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:01:55.278020Z"
+    },
+    {
+      "id": "0575c2ae-a5e7-4089-9312-0b4d2356d006",
+      "content_id": "a5917f38-219c-4386-b0c5-b2ff8b611f97",
+      "claim_id": "C21",
+      "claim": "RELION-2 comprised a pipelined approach for the entire single-particle workflow.",
+      "claim_type": "EXPLICIT",
+      "source": "RELION underwent a major change in 2016 with the release of its second version, which comprised a pipelined approach for the entire single-particle workflow (Fernandez-Leiro and Scheres, 2016) and used acceleration on graphical procesing units (GPUs) to reduce its computational costs (Kimanius et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citation support.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:01:55.278020Z"
+    },
+    {
+      "id": "7f67384d-8e81-4fb3-afb1-29e4b480f505",
+      "content_id": "a5917f38-219c-4386-b0c5-b2ff8b611f97",
+      "claim_id": "C22",
+      "claim": "RELION-2 used GPU acceleration to reduce computational costs.",
+      "claim_type": "EXPLICIT",
+      "source": "RELION underwent a major change in 2016 with the release of its second version, which comprised a pipelined approach for the entire single-particle workflow (Fernandez-Leiro and Scheres, 2016) and used acceleration on graphical procesing units (GPUs) to reduce its computational costs (Kimanius et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citation support.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:01:55.278020Z"
+    },
+    {
+      "id": "d9a0c208-59b9-4293-bb22-d6e1ab85ef35",
+      "content_id": "a5917f38-219c-4386-b0c5-b2ff8b611f97",
+      "claim_id": "C23",
+      "claim": "RELION-2's functionality was expanded with the incorporation of sub-tomogram averaging and helical reconstruction.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, its functionality was expanded with the incorporation of sub-tomogram averaging (Bharat et al., 2015) and helical reconstruction (He and Scheres, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citation support.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:01:55.278020Z"
+    },
+    {
+      "id": "7054e066-ff53-4d55-9497-061862b3e389",
+      "content_id": "a5917f38-219c-4386-b0c5-b2ff8b611f97",
+      "claim_id": "C24",
+      "claim": "The Laplacian-of-Gaussian auto-picking method in RELION-3 is related to the approach in DoGpicker.",
+      "claim_type": "EXPLICIT",
+      "source": "Our method is related to the approach in DoGpicker (Voss et al., 2009), which uses a Difference-of-Gaussian (DoG) filter.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citation support.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:01:55.278020Z"
+    },
+    {
+      "id": "bf73e069-a921-4040-ad39-8f3d54bac499",
+      "content_id": "a5917f38-219c-4386-b0c5-b2ff8b611f97",
+      "claim_id": "C26",
+      "claim": "CTF refinement in RELION-3 allows CTF estimation to exploit both the phases and the amplitudes of the experimental images.",
+      "claim_type": "EXPLICIT",
+      "source": "This allows CTF estimation to exploit both the phases and the amplitudes of the experimental images, instead of having to rely exclusively on their power spectra.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a feature of the CTF refinement method.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:01:55.278020Z"
+    },
+    {
+      "id": "acb955a8-35ac-48f2-b370-0b8510fa035d",
+      "content_id": "a5917f38-219c-4386-b0c5-b2ff8b611f97",
+      "claim_id": "C27",
+      "claim": "CTF refinement produces significantly more reliable estimates due to higher signal-to-noise ratios.",
+      "claim_type": "EXPLICIT",
+      "source": "This approach thus produces significantly more reliable estimates, due to higher signal-to-noise ratios and also because it does not require separation of the Thon rings from the background intensity of the power spectrum.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a benefit of the CTF refinement approach.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:01:55.278020Z"
+    },
+    {
+      "id": "7f51f64d-d24d-4007-9ea8-42d31ad424d0",
+      "content_id": "a5917f38-219c-4386-b0c5-b2ff8b611f97",
+      "claim_id": "C28",
+      "claim": "The increased stability of CTF fitting can be leveraged to estimate independent defoci for individual particles.",
+      "claim_type": "EXPLICIT",
+      "source": "The increased stability of the CTF fitting can be leveraged to estimate independent defoci for individual particles.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a capability enabled by the improved CTF fitting.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:01:55.278020Z"
+    },
+    {
+      "id": "5f736931-7e7d-4133-bab7-b63eb42ecf9e",
+      "content_id": "a5917f38-219c-4386-b0c5-b2ff8b611f97",
+      "claim_id": "C29",
+      "claim": "Similar CTF refinement functionality exists in Frealign and cisTEM.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar functionality also exists in Frealign (Grigorieff, 2007) and cisTEM (Grant et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citation support.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:01:55.278020Z"
+    },
+    {
+      "id": "c7d327b8-5b39-4644-b043-78a27cc09c5b",
+      "content_id": "a5917f38-219c-4386-b0c5-b2ff8b611f97",
+      "claim_id": "C30",
+      "claim": "The sum over the real components of V*X offers a higher signal-to-noise ratio than power spectra for CTF estimation.",
+      "claim_type": "EXPLICIT",
+      "source": "Note that the latter term is not only centered around zero, obviating the need to estimate the background intensity, but it also offers a higher signal-to-noise ratio.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and illustrated in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:01:55.278020Z"
+    },
+    {
+      "id": "92a096fe-3e67-49b5-8119-7ed5e828060b",
+      "content_id": "a5917f38-219c-4386-b0c5-b2ff8b611f97",
+      "claim_id": "C31",
+      "claim": "A tilted beam alters the phase delays of the scattered beam components with respect to the unscattered reference beam.",
+      "claim_type": "EXPLICIT",
+      "source": "A tilted beam alters the phase delays of the scattered beam components with respect to the unscattered reference beam.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a physical principle.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:01:55.278020Z"
+    },
+    {
+      "id": "102aacfe-08b7-4612-afbd-d795be5e3069",
+      "content_id": "a5917f38-219c-4386-b0c5-b2ff8b611f97",
+      "claim_id": "C33",
+      "claim": "RELION-3 implemented the single-side band algorithm to correct for Ewald sphere curvature as proposed by Russo and Henderson, 2018.",
+      "claim_type": "EXPLICIT",
+      "source": "We implemented the single-side band algorithm to correct for Ewald sphere curvature as proposed by (Russo and Henderson, 2018), which bears resemblance to the method implemented in Frealign (Grigorieff, 2007; Wolf et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citation support.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:01:55.278020Z"
+    },
+    {
+      "id": "1b6fc3b9-4295-4c1f-b48d-000b42d2a000",
+      "content_id": "a5917f38-219c-4386-b0c5-b2ff8b611f97",
+      "claim_id": "C34",
+      "claim": "The Ewald sphere correction method in RELION-3 bears resemblance to the method implemented in Frealign.",
+      "claim_type": "EXPLICIT",
+      "source": "We implemented the single-side band algorithm to correct for Ewald sphere curvature as proposed by (Russo and Henderson, 2018), which bears resemblance to the method implemented in Frealign (Grigorieff, 2007; Wolf et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citation support.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:01:55.278020Z"
+    },
+    {
+      "id": "189a1bf0-b05f-474c-ae6e-daa1876d2d4b",
+      "content_id": "a5917f38-219c-4386-b0c5-b2ff8b611f97",
+      "claim_id": "C36",
+      "claim": "The new CPU code path in RELION-3 uses single precision in most places, which cuts the memory footprint in half.",
+      "claim_type": "EXPLICIT",
+      "source": "First, the algorithm strength reductions first introduced for the GPU code makes it possible to use single precision in most places, which cuts the memory footprint in half for large parts of the code.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a benefit of the new CPU code path.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:01:55.278020Z"
+    },
+    {
+      "id": "5a8a66fb-8b3b-4276-854f-9d60a8644571",
+      "content_id": "a5917f38-219c-4386-b0c5-b2ff8b611f97",
+      "claim_id": "C37",
+      "claim": "The new CPU code in RELION-3 makes use of coalesced memory allocation limited to the orientations that will be investigated.",
+      "claim_type": "EXPLICIT",
+      "source": "The legacy CPU code would for instance allocate space for all possible orientations under the current sampling level, while the new CPU code makes use of coalesced memory allocation limited to the orientations that will be investigated.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an improvement in the new CPU code.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:01:55.278020Z"
+    },
+    {
+      "id": "fd78de99-57f8-41f5-bc01-d0270b452d72",
+      "content_id": "a5917f38-219c-4386-b0c5-b2ff8b611f97",
+      "claim_id": "C38",
+      "claim": "The standard 3D benchmark runs 1.5x faster on Broadwell processors with the new CPU code compared to legacy code.",
+      "claim_type": "EXPLICIT",
+      "source": "The standard 3D benchmark for example runs 1.5x and 2.5x faster on the previous (Broadwell) and current (Skylake) generations of x86 processors, respectively (Figure 2A,B), without compromising the results (Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:01:55.278020Z"
+    },
+    {
+      "id": "7d9dd64f-5f87-4a0b-92eb-2afe2b730283",
+      "content_id": "a5917f38-219c-4386-b0c5-b2ff8b611f97",
+      "claim_id": "C39",
+      "claim": "The standard 3D benchmark runs 2.5x faster on Skylake processors with the new CPU code compared to legacy code.",
+      "claim_type": "EXPLICIT",
+      "source": "The standard 3D benchmark for example runs 1.5x and 2.5x faster on the previous (Broadwell) and current (Skylake) generations of x86 processors, respectively (Figure 2A,B), without compromising the results (Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:01:55.278020Z"
+    },
+    {
+      "id": "ffc204c1-03f4-4fee-a201-23e1b7503f75",
+      "content_id": "a5917f38-219c-4386-b0c5-b2ff8b611f97",
+      "claim_id": "C40",
+      "claim": "Explicitly instructing the compiler to use avx-instructions yields a further performance increase of 5.4x on Skylake-generation CPUs.",
+      "claim_type": "EXPLICIT",
+      "source": "By explicitly instructing the compiler to use avx-instructions for the new generalised code path, we see a further performance increase of 5.4x on Skylake-generation CPUs (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:01:55.278020Z"
+    },
+    {
+      "id": "e1268260-7a24-4c67-a1f4-e1c4533e287a",
+      "content_id": "a5917f38-219c-4386-b0c5-b2ff8b611f97",
+      "claim_id": "C41",
+      "claim": "x86 CPU nodes with accelerated code approach the cost-efficiency of professional GPU hardware.",
+      "claim_type": "EXPLICIT",
+      "source": "This enables x86 CPU nodes to approach the cost-efficiency of professional GPU hardware (Figure 2C), with results that are qualitatively identical to the legacy code path (Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and shown in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:01:55.278020Z"
+    },
+    {
+      "id": "e0c20844-bd98-4e7d-8bec-4b98ee423246",
+      "content_id": "a5917f38-219c-4386-b0c5-b2ff8b611f97",
+      "claim_id": "C42",
+      "claim": "The quality of results has not been compromised from using lower precision or compiler optimisation in the new CPU code.",
+      "claim_type": "EXPLICIT",
+      "source": "The standard 3D benchmark for example runs 1.5x and 2.5x faster on the previous (Broadwell) and current (Skylake) generations of x86 processors, respectively (Figure 2A,B), without compromising the results (Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and shown in Figure 2\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:01:55.278020Z"
+    },
+    {
+      "id": "c5c1421b-d9aa-40ca-806f-fce86f7f25ab",
+      "content_id": "a5917f38-219c-4386-b0c5-b2ff8b611f97",
+      "claim_id": "C43",
+      "claim": "Per-particle defocus variations within a micrograph arise from different particles being situated at different heights within the field of view.",
+      "claim_type": "EXPLICIT",
+      "source": "Per-particle defocus variations within a micrograph arise from different particles being situated at different heights within the field of view.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a physical explanation.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:01:55.278020Z"
+    },
+    {
+      "id": "506c54be-f9f7-4b30-938f-24ad882c7d53",
+      "content_id": "a5917f38-219c-4386-b0c5-b2ff8b611f97",
+      "claim_id": "C44",
+      "claim": "The influenza virus hemagglutinin dataset (EMPIAR-10097) was collected at 40 degree stage tilt to overcome a strong preferred orientation of the particles.",
+      "claim_type": "EXPLICIT",
+      "source": "As an extreme case of non-horizontal samples, we re-processed an influenza virus hemagglutinin dataset (EMPIAR-10097) that was collected at 40 degree stage tilt to overcome a strong preferred orientation of the particles (Tan et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citation support.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:01:55.278020Z"
+    },
+    {
+      "id": "38cb807c-2eca-49ee-81af-104c21e2c28d",
+      "content_id": "a5917f38-219c-4386-b0c5-b2ff8b611f97",
+      "claim_id": "C45",
+      "claim": "At 40 degree tilt angle, the height differences within a single micrograph are more than 4000 \u00c5.",
+      "claim_type": "EXPLICIT",
+      "source": "At this tilt angle, the height differences within a single micrograph are more than 4000 \u00c5.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a consequence of the tilt angle.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:01:55.278020Z"
+    },
+    {
+      "id": "d0ffdc4d-b220-4a3f-a314-20e8faf3a3bc",
+      "content_id": "a5917f38-219c-4386-b0c5-b2ff8b611f97",
+      "claim_id": "C46",
+      "claim": "The influenza virus hemagglutinin dataset was originally published at 4.2 \u00c5 resolution.",
+      "claim_type": "EXPLICIT",
+      "source": "A reconstruction from this data set was originally published at 4.2 \u00c5 resolution.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a historical fact.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:01:55.278020Z"
+    },
+    {
+      "id": "b09515e0-9881-4630-b141-c1da0b9a1ac8",
+      "content_id": "a5917f38-219c-4386-b0c5-b2ff8b611f97",
+      "claim_id": "C47",
+      "claim": "The influenza virus hemagglutinin data were re-processed in Warp and cryoSPARC, resulting in an improved resolution of 3.2 \u00c5.",
+      "claim_type": "EXPLICIT",
+      "source": "Recently, the same data were also re-processed in Warp and cryoSPARC, resulting in an improved resolution of 3.2 \u00c5 (Tegunov and Cramer, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citation support.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:01:55.278020Z"
+    },
+    {
+      "id": "51574e1f-bff8-442e-9a94-a88e89a62442",
+      "content_id": "a5917f38-219c-4386-b0c5-b2ff8b611f97",
+      "claim_id": "C48",
+      "claim": "RELION-3 processing of the influenza hemagglutinin dataset yielded a final resolution of 3.1 \u00c5.",
+      "claim_type": "EXPLICIT",
+      "source": "CTF refinement with beam-tilt correction and 3D refinement were then again iterated three times, giving 3.3 \u00c5, 3.2 \u00c5, and finally 3.1 \u00c5 resolution.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a result of the processing.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:01:55.278020Z"
+    },
+    {
+      "id": "40bfff55-8b02-497e-8290-68e7ed6250a3",
+      "content_id": "a5917f38-219c-4386-b0c5-b2ff8b611f97",
+      "claim_id": "C49",
+      "claim": "Plots of the final defocus values for particles within a single micrograph clearly replicate the tilt geometry of the experiment.",
+      "claim_type": "EXPLICIT",
+      "source": "Plots of the final defocus values for particles within a single micrograph clearly replicate the tilt geometry of the experiment (Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and shown in Figure 3\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:01:55.278020Z"
+    },
+    {
+      "id": "f5e03415-59a7-475b-84b9-9178b5b0d488",
+      "content_id": "a5917f38-219c-4386-b0c5-b2ff8b611f97",
+      "claim_id": "C50",
+      "claim": "Per-particle defocus refinement in RELION-3 can yield improved defoci even for models with intermediate resolution (6.6 \u00c5).",
+      "claim_type": "EXPLICIT",
+      "source": "This example demonstrates that even for models with intermediate resolution (in this case 6.6 \u00c5) our per-particle defocus refinement can yield improved defoci.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a conclusion from the influenza hemagglutinin example.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:01:55.278020Z"
+    },
+    {
+      "id": "9bd0e87d-11ea-4958-aeab-a2b53db106fe",
+      "content_id": "a5917f38-219c-4386-b0c5-b2ff8b611f97",
+      "claim_id": "C51",
+      "claim": "The method for per-particle defocus refinement is robust against the initial values being far off.",
+      "claim_type": "EXPLICIT",
+      "source": "It also illustrates the robustness of the method against the initial values being far off.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a conclusion from the influenza hemagglutinin example.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:01:55.278020Z"
+    },
+    {
+      "id": "04c36103-99ed-4f07-a906-a591cb31587d",
+      "content_id": "a5917f38-219c-4386-b0c5-b2ff8b611f97",
+      "claim_id": "C52",
+      "claim": "Beam tilt has been largely ignored in cryo-EM single-particle analysis until recently.",
+      "claim_type": "EXPLICIT",
+      "source": "Until to date, beam tilt has been largely ignored in cryo-EM single-particle analysis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a historical observation.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:01:55.278020Z"
+    },
+    {
+      "id": "7a837364-169f-4bda-b9d2-c8cc2e64ddd8",
+      "content_id": "a5917f38-219c-4386-b0c5-b2ff8b611f97",
+      "claim_id": "C53",
+      "claim": "Currently available microscope alignment procedures may still leave up to a quarter mrad of beam tilt in the data.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on our experience, we estimate that currently available microscope alignment procedures may still leave up to a quarter mrad of beam tilt in the data.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an estimate based on experience.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:01:55.278020Z"
+    },
+    {
+      "id": "e9ff8057-5d42-4ae0-ae70-23abf7c0be85",
+      "content_id": "a5917f38-219c-4386-b0c5-b2ff8b611f97",
+      "claim_id": "C56",
+      "claim": "Beam-shift is faster than physically moving the sample stage.",
+      "claim_type": "EXPLICIT",
+      "source": "Because it is much faster to shift the electron beam instead, one could achieve higher data acquisition rates by using beam-shift to image multiple holes before shifting the stage.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a rationale for using beam-shift.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:01:55.278020Z"
+    },
+    {
+      "id": "1ffd4b6c-e593-4ba5-b049-2d1b32bac24d",
+      "content_id": "a5917f38-219c-4386-b0c5-b2ff8b611f97",
+      "claim_id": "C57",
+      "claim": "Beam-shift introduces beam tilt.",
+      "claim_type": "EXPLICIT",
+      "source": "Beam-shift is already used extensively to take multiple images within a single hole, but because it introduces beam tilt, its use for imaging multiple holes has only recently attracted attention (Cheng et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citation support.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:01:55.278020Z"
+    },
+    {
+      "id": "9b4afff0-2e76-4ef1-b9ba-fc7cbe9eb4b1",
+      "content_id": "a5917f38-219c-4386-b0c5-b2ff8b611f97",
+      "claim_id": "C58",
+      "claim": "The first ferritin data set with active beam tilt compensation yielded a resolution of 2.3 \u00c5 after standard 3D auto-refinement.",
+      "claim_type": "EXPLICIT",
+      "source": "The first data set, with active beam tilt compensation, yielded a resolution of 2.3 \u00c5 after standard 3D auto-refinement, and 2.2 \u00c5 after Bayesian polishing and a second round of refinement (Figure 4A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:01:55.278020Z"
+    },
+    {
+      "id": "30612e39-25e3-4983-b76a-fef0ec30801d",
+      "content_id": "a5917f38-219c-4386-b0c5-b2ff8b611f97",
+      "claim_id": "C59",
+      "claim": "The second ferritin data set without active beam tilt compensation yielded 2.9 \u00c5 after the first refinement.",
+      "claim_type": "EXPLICIT",
+      "source": "The second data set, without active beam tilt compensation, yielded 2.9 \u00c5 after the first refinement, and 2.8 \u00c5 after Bayesian polishing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a result of the processing.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:01:55.278020Z"
+    },
+    {
+      "id": "357b3651-4589-4c75-9e00-94b63f86a3f0",
+      "content_id": "a5917f38-219c-4386-b0c5-b2ff8b611f97",
+      "claim_id": "C60",
+      "claim": "Beam tilt correction improved the resolution of the second ferritin data set to 2.2 \u00c5.",
+      "claim_type": "EXPLICIT",
+      "source": "A third round of refinement with correction for the estimated beam tilts improved the resolution to 2.2 \u00c5.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a result of the processing.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:01:55.278020Z"
+    },
+    {
+      "id": "053516c1-a1a2-45c2-bd95-84991ca24a27",
+      "content_id": "a5917f38-219c-4386-b0c5-b2ff8b611f97",
+      "claim_id": "C62",
+      "claim": "Beam tilt estimation and correction in RELION-3 may be a feasible alternative to active beam tilt compensation at the microscope.",
+      "claim_type": "EXPLICIT",
+      "source": "These results illustrate that beam tilt estimation and correction in RELION-3 may be a feasible alternative to active beam tilt compensation at the microscope.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a conclusion from the ferritin beam tilt experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:01:55.278020Z"
+    },
+    {
+      "id": "272ecafe-7a34-4d16-a945-6812550e7f94",
+      "content_id": "a5917f38-219c-4386-b0c5-b2ff8b611f97",
+      "claim_id": "C63",
+      "claim": "The P22 virion capsid protein has a diameter of approximately 700 \u00c5.",
+      "claim_type": "EXPLICIT",
+      "source": "The diameter of the P22 virion is approximately 700 \u00c5, which leads to an estimated resolution limit of 3.1 \u00c5 due to Ewald sphere curvature (DeRosier, 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a property of the P22 virion.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:01:55.278020Z"
+    },
+    {
+      "id": "dc828e61-5227-4acf-9006-45800974ab34",
+      "content_id": "a5917f38-219c-4386-b0c5-b2ff8b611f97",
+      "claim_id": "C64",
+      "claim": "The estimated resolution limit for P22 virion due to Ewald sphere curvature is 3.1 \u00c5.",
+      "claim_type": "EXPLICIT",
+      "source": "The diameter of the P22 virion is approximately 700 \u00c5, which leads to an estimated resolution limit of 3.1 \u00c5 due to Ewald sphere curvature (DeRosier, 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citation to DeRosier, 2000.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:01:55.278020Z"
+    },
+    {
+      "id": "e7ddb67b-bda6-42c2-bc6f-58fc0c706c2e",
+      "content_id": "a5917f38-219c-4386-b0c5-b2ff8b611f97",
+      "claim_id": "C65",
+      "claim": "Standard 3D auto-refinement of P22 virion data gave a reconstruction with an estimated resolution of 3.5 \u00c5.",
+      "claim_type": "EXPLICIT",
+      "source": "Standard 3D auto-refinement, with correction for an estimated beam tilt of 0.6 mrad in X and \u22120.13 mrad in Y, gave a reconstruction with an estimated resolution of 3.5 \u00c5 (Figure 5A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and shown in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:01:55.278020Z"
+    },
+    {
+      "id": "82876e0b-3b4e-42fc-bced-1a6993c63be8",
+      "content_id": "a5917f38-219c-4386-b0c5-b2ff8b611f97",
+      "claim_id": "C66",
+      "claim": "Ewald sphere correction improved the P22 virion reconstruction to 3.3 \u00c5.",
+      "claim_type": "EXPLICIT",
+      "source": "Subsequent Ewald sphere correction improved this to 3.3 \u00c5.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a result of the processing.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:01:55.278020Z"
+    },
+    {
+      "id": "ba172192-5712-48e6-8980-2e64f070c4fb",
+      "content_id": "a5917f38-219c-4386-b0c5-b2ff8b611f97",
+      "claim_id": "C67",
+      "claim": "Ewald sphere correction with the opposite curvature gave only 3.9 \u00c5 for P22 virion.",
+      "claim_type": "EXPLICIT",
+      "source": "Ewald sphere correction with the opposite curvature gave only 3.9 \u00c5.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a result of the processing.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:01:55.278020Z"
+    },
+    {
+      "id": "f5c5e515-9ced-426f-961d-7ce4f7e48ce5",
+      "content_id": "a5917f38-219c-4386-b0c5-b2ff8b611f97",
+      "claim_id": "C68",
+      "claim": "Ewald sphere correction could be used to determine the absolute hand of a structure if the number of mirroring operations is known.",
+      "claim_type": "EXPLICIT",
+      "source": "In theory, if one knows the number of mirroring operations during data acquisition and image processing, Ewald sphere correction could therefore also be used to determine the absolute hand of a structure.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a theoretical possibility.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:01:55.278020Z"
+    },
+    {
+      "id": "fc3bfe1c-2b33-460b-ac25-4436f96b798e",
+      "content_id": "a5917f38-219c-4386-b0c5-b2ff8b611f97",
+      "claim_id": "C69",
+      "claim": "At the resolutions where Ewald sphere correction matters, determining absolute hand is often no longer a relevant question.",
+      "claim_type": "EXPLICIT",
+      "source": "However, at the resolutions where Ewald sphere correction matters, this is often no longer a relevant question.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a practical observation.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:01:55.278020Z"
+    },
+    {
+      "id": "4eec1a49-5a4d-43a0-b01c-0dc9e99cfc46",
+      "content_id": "a5917f38-219c-4386-b0c5-b2ff8b611f97",
+      "claim_id": "C73",
+      "claim": "The final resolution for the \u03b3-secretase dataset processed with RELION-3 was 3.3 \u00c5.",
+      "claim_type": "EXPLICIT",
+      "source": "A second 3D classification yielded a majority class with 240,777 particles, which led to a final resolution of 3.3 \u00c5 (Figure 6E\u2013G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and shown in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:01:55.278020Z"
+    },
+    {
+      "id": "3375344f-0d66-40b4-8b4a-b1d509721586",
+      "content_id": "a5917f38-219c-4386-b0c5-b2ff8b611f97",
+      "claim_id": "C74",
+      "claim": "The original processing of the \u03b3-secretase dataset in RELION-1.3 obtained a map at 3.4 \u00c5 resolution from 159,549 particles.",
+      "claim_type": "EXPLICIT",
+      "source": "When we originally processed this data set in RELION-1.3, we obtained a map at 3.4 \u00c5 resolution from 159,549 particles, which were selected after 3D classification of 412,272 polished particles (Bai et al., 2015b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citation support.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:01:55.278020Z"
+    },
+    {
+      "id": "ec6e88a2-0598-4bde-b79a-d965cb4d9dd3",
+      "content_id": "a5917f38-219c-4386-b0c5-b2ff8b611f97",
+      "claim_id": "C75",
+      "claim": "Processing the same set of 412,272 \u03b3-secretase particles with RELION-3 gave a final resolution of 3.2 \u00c5.",
+      "claim_type": "EXPLICIT",
+      "source": "To assess whether the non-interactive pre-processing procedure can compete with this expert-driven approach, we used the same set of 412,272 particles also for Bayesian polishing, refinement of per-particle defocus values, beam tilt estimation and 3D classification. The resulting selection of 246,602 particles gave a final resolution of 3.2 \u00c5 (Figure 6E\u2013G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and shown in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:01:55.278020Z"
+    },
+    {
+      "id": "d79a3a3c-707d-4d63-bf72-6c8cf723da5d",
+      "content_id": "a5917f38-219c-4386-b0c5-b2ff8b611f97",
+      "claim_id": "C76",
+      "claim": "The improvement from 3.4 \u00c5 to 3.2 \u00c5 for \u03b3-secretase represents the contribution of the new functionality in RELION-3.",
+      "claim_type": "EXPLICIT",
+      "source": "The improvement from 3.4 \u00c5 to 3.2 \u00c5 represents the contribution of the new functionality in RELION-3, whereas the gain from 3.3 \u00c5 to 3.2 \u00c5 represents the added value of the expert user.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an interpretation of the results.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:01:55.278020Z"
+    },
+    {
+      "id": "32ef121a-7b0b-4343-8b16-ef61bae4d532",
+      "content_id": "a5917f38-219c-4386-b0c5-b2ff8b611f97",
+      "claim_id": "C77",
+      "claim": "The gain from 3.3 \u00c5 to 3.2 \u00c5 for \u03b3-secretase represents the added value of the expert user.",
+      "claim_type": "EXPLICIT",
+      "source": "The improvement from 3.4 \u00c5 to 3.2 \u00c5 represents the contribution of the new functionality in RELION-3, whereas the gain from 3.3 \u00c5 to 3.2 \u00c5 represents the added value of the expert user.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an interpretation of the results.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:01:55.278020Z"
+    },
+    {
+      "id": "98e2fecb-744f-4f3a-a657-085636666020",
+      "content_id": "a5917f38-219c-4386-b0c5-b2ff8b611f97",
+      "claim_id": "C78",
+      "claim": "The map from the automatically pre-processed \u03b3-secretase data does not correlate with the atomic model as well as one would expect from the half-map FSC curves.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the map from the automatically pre-processed data does not correlate with the atomic model as well as one would expect from the half-map FSC curves.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an observation from the results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:01:55.278020Z"
+    },
+    {
+      "id": "9bfe92f5-a24a-4cb8-bf9f-52deb80a23e2",
+      "content_id": "a5917f38-219c-4386-b0c5-b2ff8b611f97",
+      "claim_id": "C79",
+      "claim": "The lower correlation of the automatically pre-processed \u03b3-secretase map suggests a higher fraction of false positives compared to the expert selection.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests a higher fraction of false positives in the data resulting from the relion_it.py script compared to the expert selection, which may be caused by the relatively low default for the auto-picking threshold in the script.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an inference from the observation.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:01:55.278020Z"
+    },
+    {
+      "id": "d0575a99-ba10-4aaf-bcfe-ff659a3e736d",
+      "content_id": "a5917f38-219c-4386-b0c5-b2ff8b611f97",
+      "claim_id": "C80",
+      "claim": "Non-interactive pre-processing gets close to the performance of a human expert for \u03b3-secretase.",
+      "claim_type": "EXPLICIT",
+      "source": "These results illustrate that non-interactive pre-processing gets close to the performance of a human expert, but for challenging data sets there is still a benefit in careful tuning of parameters.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a conclusion from the \u03b3-secretase example.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:01:55.278020Z"
+    },
+    {
+      "id": "765a5cc8-f1ef-4504-bd84-03eebf5d7784",
+      "content_id": "a5917f38-219c-4386-b0c5-b2ff8b611f97",
+      "claim_id": "C81",
+      "claim": "For challenging data sets there is still a benefit in careful tuning of parameters compared to non-interactive pre-processing.",
+      "claim_type": "EXPLICIT",
+      "source": "These results illustrate that non-interactive pre-processing gets close to the performance of a human expert, but for challenging data sets there is still a benefit in careful tuning of parameters.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a conclusion from the \u03b3-secretase example.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:01:55.278020Z"
+    },
+    {
+      "id": "8c5a8ae5-9f20-4091-8823-dc03de8b4d05",
+      "content_id": "a5917f38-219c-4386-b0c5-b2ff8b611f97",
+      "claim_id": "C82",
+      "claim": "Using RELION-2.0, a 2.2 \u00c5 resolution reconstruction (EMD-4116) was previously obtained for the \u03b2-galactosidase data set at EMPIAR-10061.",
+      "claim_type": "EXPLICIT",
+      "source": "This data set was made available to the community by the Subramaniam group. Using RELION-2.0, we previously obtained a 2.2 \u00c5 resolution reconstruction (EMD-4116).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a historical result.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:01:55.278020Z"
+    },
+    {
+      "id": "26c61752-78ee-4b75-b790-5db328525fac",
+      "content_id": "a5917f38-219c-4386-b0c5-b2ff8b611f97",
+      "claim_id": "C83",
+      "claim": "An initial 3D auto-refinement of \u03b2-galactosidase yielded a map with an estimated resolution of 2.3 \u00c5.",
+      "claim_type": "EXPLICIT",
+      "source": "An initial 3D auto-refinement with these particles yielded a map with an estimated resolution of 2.3 \u00c5 (Figure 7A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and shown in Figure 7.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:01:55.278020Z"
+    },
+    {
+      "id": "fb0c4e48-52c3-4042-896b-9d27a78b7e29",
+      "content_id": "a5917f38-219c-4386-b0c5-b2ff8b611f97",
+      "claim_id": "C84",
+      "claim": "Re-refining \u03b2-galactosidase after only per-particle defocus refinement improved the resolution to 2.2 \u00c5.",
+      "claim_type": "EXPLICIT",
+      "source": "Re-refining the same data set after only per-particle defocus refinement or beam tilt estimation improved the resolution to 2.2 in both cases.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a result of the processing.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:01:55.278020Z"
+    },
+    {
+      "id": "b37f8177-fc7a-4104-80cf-386760b5ead1",
+      "content_id": "a5917f38-219c-4386-b0c5-b2ff8b611f97",
+      "claim_id": "C85",
+      "claim": "Re-refining \u03b2-galactosidase after only beam tilt estimation improved the resolution to 2.2 \u00c5.",
+      "claim_type": "EXPLICIT",
+      "source": "Re-refining the same data set after only per-particle defocus refinement or beam tilt estimation improved the resolution to 2.2 in both cases.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a result of the processing.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:01:55.278020Z"
+    },
+    {
+      "id": "62be35c2-9c2b-4b54-95ec-9341f07476d2",
+      "content_id": "a5917f38-219c-4386-b0c5-b2ff8b611f97",
+      "claim_id": "C86",
+      "claim": "Application of both per-particle defocus refinement and beam tilt estimation gave 2.1 \u00c5 resolution for \u03b2-galactosidase.",
+      "claim_type": "EXPLICIT",
+      "source": "Application of both methods gave 2.1 \u00c5 resolution.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a result of the processing.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:01:55.278020Z"
+    },
+    {
+      "id": "9fa58cab-c9c3-4c92-b3b7-783fbe7f6435",
+      "content_id": "a5917f38-219c-4386-b0c5-b2ff8b611f97",
+      "claim_id": "C87",
+      "claim": "Bayesian polishing of \u03b2-galactosidase gave 1.94 \u00c5 resolution.",
+      "claim_type": "EXPLICIT",
+      "source": "We then performed Bayesian polishing, which gave 1.94 \u00c5, and classified the resulting shiny particles into six classes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a result of the processing.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:01:55.278020Z"
+    },
+    {
+      "id": "de41c64e-f7f3-4aed-9775-618fc5c07435",
+      "content_id": "a5917f38-219c-4386-b0c5-b2ff8b611f97",
+      "claim_id": "C88",
+      "claim": "The final resolution for \u03b2-galactosidase after all processing steps in RELION-3 was 1.90 \u00c5.",
+      "claim_type": "EXPLICIT",
+      "source": "A second round of per-particle defocus refinement and beam tilt estimation, followed by another 3D auto-refinement yielded a final resolution of 1.90 \u00c5.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a result of the processing.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:01:55.278020Z"
+    },
+    {
+      "id": "26b3e181-605a-499e-a56f-a8f284f63241",
+      "content_id": "a5917f38-219c-4386-b0c5-b2ff8b611f97",
+      "claim_id": "C89",
+      "claim": "Ewald sphere correction for the \u03b2-galactosidase data set did not improve the resolution by at least one Fourier shell.",
+      "claim_type": "EXPLICIT",
+      "source": "Ewald sphere correction for this data set did not improve the resolution by at least one Fourier shell, although a small increase in FSC values near the estimated resolution was visible.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a result of the processing.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:01:55.278020Z"
+    },
+    {
+      "id": "84fd5c50-388d-46c1-9ced-7ef7d6b1ef43",
+      "content_id": "a5917f38-219c-4386-b0c5-b2ff8b611f97",
+      "claim_id": "C90",
+      "claim": "The bfactor_plot.py script produced an estimate for the overall B-factor of 56 \u00c5\u00b2 for \u03b2-galactosidase.",
+      "claim_type": "EXPLICIT",
+      "source": "Application of the bfactor_plot.py script produced an estimate for the overall B-factor of 56 \u00c52 (Figure 7\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and shown in Figure 7\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:01:55.278020Z"
+    },
+    {
+      "id": "983f443e-8045-4b8d-b981-a31f03078161",
+      "content_id": "a5917f38-219c-4386-b0c5-b2ff8b611f97",
+      "claim_id": "C91",
+      "claim": "The bfactor_plot.py script predicts a resolution of 1.75 \u00c5 for \u03b2-galactosidase when using four times more particles.",
+      "claim_type": "EXPLICIT",
+      "source": "By extrapolation, the script predicts a resolution of 1.75 \u00c5 when using four times more particles, and 1.69 \u00c5 when using eight times more particles.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a prediction from the script.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:01:55.278020Z"
+    },
+    {
+      "id": "d97f40ac-5a39-4145-90bf-927c6b9756fe",
+      "content_id": "a5917f38-219c-4386-b0c5-b2ff8b611f97",
+      "claim_id": "C92",
+      "claim": "The bfactor_plot.py script predicts a resolution of 1.69 \u00c5 for \u03b2-galactosidase when using eight times more particles.",
+      "claim_type": "EXPLICIT",
+      "source": "By extrapolation, the script predicts a resolution of 1.75 \u00c5 when using four times more particles, and 1.69 \u00c5 when using eight times more particles.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a prediction from the script.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:01:55.278020Z"
+    },
+    {
+      "id": "32a3f84d-5f88-43cf-8b68-6ee55cdd98f1",
+      "content_id": "a5917f38-219c-4386-b0c5-b2ff8b611f97",
+      "claim_id": "C93",
+      "claim": "The Subramaniam group re-processed the \u03b2-galactosidase data set using new methods, resulting in map EMD-7770 with a reported resolution of 1.9 \u00c5.",
+      "claim_type": "EXPLICIT",
+      "source": "Recently, the Subramaniam group also re-processed this data set using new methods for defocus estimation, motion correction and radiation damage weighting (Bartesaghi et al., 2018). The resulting map (EMD-7770) was reported as an atomic resolution structure. The resolution according to the 0.143 FSC criterion was 1.9 \u00c5.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citation support.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:01:55.278020Z"
+    },
+    {
+      "id": "c9065495-025c-4e19-8d9a-0ea1604e17bf",
+      "content_id": "a5917f38-219c-4386-b0c5-b2ff8b611f97",
+      "claim_id": "C94",
+      "claim": "The RELION-3 \u03b2-galactosidase map correlated with PDB-5A1A to 0.15 \u00c5 higher resolution than EMD-7770.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite the same nominal resolution of 1.9 \u00c5, the RELION-3 map correlated with PDB-5A1A to 0.15 \u00c5 higher resolution than EMD-7770 (Figure 7\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and shown in Figure 7\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:01:55.278020Z"
+    },
+    {
+      "id": "a7c86e4c-c322-4d3f-bd6e-121989601903",
+      "content_id": "a5917f38-219c-4386-b0c5-b2ff8b611f97",
+      "claim_id": "C95",
+      "claim": "FSC curves provide an objective overall assessment of map quality when suitably soft and low-resolution masks are used and care is taken to avoid overfitting.",
+      "claim_type": "EXPLICIT",
+      "source": "Nevertheless, provided suitably soft and low-resolution masks are used and care is taken to avoid overfitting (Scheres and Chen, 2012; Brown et al., 2015), FSC curves provide an objective overall assessment of map quality.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citation support.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:01:55.278020Z"
+    },
+    {
+      "id": "4ac9b435-d319-4b2a-a4e5-ea9b045969c2",
+      "content_id": "a5917f38-219c-4386-b0c5-b2ff8b611f97",
+      "claim_id": "C96",
+      "claim": "The human apo-ferritin data were collected on the same K2 detector and Titan Krios microscope as the horse spleen apo-ferritin data set.",
+      "claim_type": "EXPLICIT",
+      "source": "For a final illustration of the combined functionality in RELION-3, we processed a data set on a human apo-ferritin sample, which was a gift from Fei Sun. These data were collected on the same K2 detector and Titan Krios microscope as the horse spleen apo-ferritin data set in section 3.3.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a description of the data collection.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:01:55.278020Z"
+    },
+    {
+      "id": "ad0028dc-6d61-46f8-bf7d-598bf616cb50",
+      "content_id": "a5917f38-219c-4386-b0c5-b2ff8b611f97",
+      "claim_id": "C97",
+      "claim": "The human apo-ferritin data have been deposited at EMPIAR-10200.",
+      "claim_type": "EXPLICIT",
+      "source": "We have deposited these data at EMPIAR-10200.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a data availability statement.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:01:55.278020Z"
+    },
+    {
+      "id": "9e059b5f-5490-4448-b02f-e36389fa5c9b",
+      "content_id": "a5917f38-219c-4386-b0c5-b2ff8b611f97",
+      "claim_id": "C98",
+      "claim": "A final 3D refinement of human apo-ferritin yielded a resolution of 1.65 \u00c5.",
+      "claim_type": "EXPLICIT",
+      "source": "Selection of suitable 2D class averages led to a subset of 426,450 particles, which were subjected to Bayesian polishing and per-particle defocus refinement. A final 3D refinement yielded a resolution of 1.65 \u00c5, which is two resolution shells below the Nyquist frequency (Figure 8A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and shown in Figure 8.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:01:55.278020Z"
+    },
+    {
+      "id": "50f37fbf-a567-4068-bc8e-da4e3aae362f",
+      "content_id": "a5917f38-219c-4386-b0c5-b2ff8b611f97",
+      "claim_id": "C99",
+      "claim": "The 1.65 \u00c5 resolution for human apo-ferritin is two resolution shells below the Nyquist frequency.",
+      "claim_type": "EXPLICIT",
+      "source": "A final 3D refinement yielded a resolution of 1.65 \u00c5, which is two resolution shells below the Nyquist frequency (Figure 8A,B).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a property of the resolution.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:01:55.278020Z"
+    },
+    {
+      "id": "3c534f32-f193-425c-9133-c446e4261bb9",
+      "content_id": "a5917f38-219c-4386-b0c5-b2ff8b611f97",
+      "claim_id": "C100",
+      "claim": "Estimation of the beam tilt for human apo-ferritin yielded values below 0.1 mrad.",
+      "claim_type": "EXPLICIT",
+      "source": "Estimation of the beam tilt yielded values below 0.1 mrad, and refinement with these values did not improve the map.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a result of the processing.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:01:55.278020Z"
+    },
+    {
+      "id": "92da4712-04a4-4f42-8da6-86bed93e843b",
+      "content_id": "a5917f38-219c-4386-b0c5-b2ff8b611f97",
+      "claim_id": "C101",
+      "claim": "The human apo-ferritin map shows spherical-like features around some of the atoms.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected at this resolution, the map shows spherical-like features around some of the atoms (Figure 8C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and shown in Figure 8C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:01:55.278020Z"
+    },
+    {
+      "id": "1eed2c97-723d-4a07-8ff0-ca44007357b8",
+      "content_id": "a5917f38-219c-4386-b0c5-b2ff8b611f97",
+      "claim_id": "C102",
+      "claim": "The bfactor_plot.py script produced an estimate for the overall B-factor of 66 \u00c5\u00b2 for human apo-ferritin.",
+      "claim_type": "EXPLICIT",
+      "source": "Application of the bfactor_plot.py script produced an estimate for the overall B-factor of 66 \u00c52\ufeff (Figure 8\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and shown in Figure 8\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:01:55.278020Z"
+    },
+    {
+      "id": "d49644c6-ee6d-4423-b3ab-1ab6235c881c",
+      "content_id": "a5917f38-219c-4386-b0c5-b2ff8b611f97",
+      "claim_id": "C103",
+      "claim": "Completely automated, high-resolution cryo-EM structure determination of relatively straightforward samples like apo-ferritin is within close reach.",
+      "claim_type": "EXPLICIT",
+      "source": "Thereby, completely automated, high-resolution cryo-EM structure determination of relatively straightforward samples like apo-ferritin is within close reach.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a conclusion from the apo-ferritin example.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:01:55.278020Z"
+    },
+    {
+      "id": "4d7b7483-4442-489c-ac17-351d5ab01ef4",
+      "content_id": "a5917f38-219c-4386-b0c5-b2ff8b611f97",
+      "claim_id": "C104",
+      "claim": "The new functionality in RELION-3 allows faster, more automated and higher resolution cryo-EM structure determination compared to previous versions.",
+      "claim_type": "EXPLICIT",
+      "source": "The new functionality in RELION-3 allows faster, more automated and higher resolution cryo-EM structure determination compared to previous versions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a summary conclusion.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:01:55.278020Z"
+    },
+    {
+      "id": "bd260733-65ed-420e-ab5b-57e494bc7818",
+      "content_id": "a5917f38-219c-4386-b0c5-b2ff8b611f97",
+      "claim_id": "C105",
+      "claim": "CPU acceleration makes it possible to use a much wider range of hardware efficiently for RELION.",
+      "claim_type": "EXPLICIT",
+      "source": "CPU acceleration makes it possible to use a much wider range of hardware efficiently for RELION, including laptops and desktops, and it avoids the box size limits still present when offloading to GPU accelerators.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a benefit of CPU acceleration.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:01:55.278020Z"
+    },
+    {
+      "id": "643ccaab-35d9-4d1e-b507-e70d387695e3",
+      "content_id": "a5917f38-219c-4386-b0c5-b2ff8b611f97",
+      "claim_id": "C106",
+      "claim": "CPU acceleration avoids the box size limits still present when offloading to GPU accelerators.",
+      "claim_type": "EXPLICIT",
+      "source": "CPU acceleration makes it possible to use a much wider range of hardware efficiently for RELION, including laptops and desktops, and it avoids the box size limits still present when offloading to GPU accelerators.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a benefit of CPU acceleration.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:01:55.278020Z"
+    },
+    {
+      "id": "7b381d48-abcf-441a-807f-958a63eeffa7",
+      "content_id": "a5917f38-219c-4386-b0c5-b2ff8b611f97",
+      "claim_id": "C107",
+      "claim": "Corrections for per-particle defocus variations, beam tilt and the Ewald sphere will become even more important as the resolutions of typical cryo-EM structures improve in the future.",
+      "claim_type": "EXPLICIT",
+      "source": "Corrections for per-particle defocus variations, beam tilt and the Ewald sphere already improve resolutions for currently available data sets, and will become even more important as the resolutions of typical cryo-EM structures improve in the future.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a prediction about future importance.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:01:55.278020Z"
+    },
+    {
+      "id": "b5ed8009-17b3-4f3f-aac1-3d3cd0c906a9",
+      "content_id": "a5917f38-219c-4386-b0c5-b2ff8b611f97",
+      "claim_id": "C108",
+      "claim": "RELION is distributed under the GNU General Public License (GPL, version 2).",
+      "claim_type": "EXPLICIT",
+      "source": "RELION is distributed under the GNU General Public License (GPL, version 2), meaning it is completely free to use or modify by anyone, which we hope will maximise its usefulness to the community.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a licensing fact.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:01:55.278020Z"
+    },
+    {
+      "id": "75a5b5a1-d279-41fe-8a71-a020af7ee6d2",
+      "content_id": "a5917f38-219c-4386-b0c5-b2ff8b611f97",
+      "claim_id": "C109",
+      "claim": "RELION is completely free to use or modify by anyone.",
+      "claim_type": "EXPLICIT",
+      "source": "RELION is distributed under the GNU General Public License (GPL, version 2), meaning it is completely free to use or modify by anyone, which we hope will maximise its usefulness to the community.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a consequence of the GPL license.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:01:55.278020Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "90ce00ca-2621-4a07-842f-cbdc308d4670",
+      "content_id": "a5917f38-219c-4386-b0c5-b2ff8b611f97",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "RELION-3 implements CPU-based vector acceleration that provides significant performance improvements (1.5x-5.4x speedup depending on processor generation and compiler settings) while maintaining result quality, enabling efficient use of diverse hardware and avoiding GPU memory limitations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C38-C42 provide quantitative benchmark data showing speedups on different CPU generations with validation that results are not compromised (Figure 2). The technical implementation details (C36-C37) explain the mechanisms (single precision, coalesced memory allocation), and C41 demonstrates cost-efficiency approaching GPU hardware. The benefits stated in C1-C2, C105-C106 are well-supported by the experimental evidence.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:01:55.278020Z"
+    },
+    {
+      "id": "11942c41-0a91-4dbe-ba55-fcd2fe6497c9",
+      "content_id": "a5917f38-219c-4386-b0c5-b2ff8b611f97",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "RELION-3 includes reference-free autopicking using Laplacian-of-Gaussian filtering and enables execution of jobs from Python for non-interactive processing during data acquisition.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The LoG autopicking method is described in detail in the Materials and Methods section with mathematical formulation, and its relationship to prior work (DoGpicker, C24) is acknowledged. The Python scripting capability (C4) is demonstrated through the relion_it.py script examples. The functionality is validated in the \u03b3-secretase processing example (Figure 6).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:01:55.278020Z"
+    },
+    {
+      "id": "f7eafb3a-7b3e-4e26-b4fb-3991015533e5",
+      "content_id": "a5917f38-219c-4386-b0c5-b2ff8b611f97",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Per-particle CTF refinement in RELION-3 enables estimation of individual particle defoci by exploiting both phases and amplitudes of experimental images, providing more reliable estimates than power spectrum-based methods and improving resolution even for particles at extreme tilt angles or with intermediate-resolution starting models.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The method is rigorously described with mathematical formulation (Equations 2-4, 8-9) and validated on the influenza hemagglutinin dataset collected at 40\u00b0 tilt (C44-C51). The improvement from 4.2 \u00c5 (original) to 3.1 \u00c5 (RELION-3, C48) demonstrates effectiveness. Figure 1 and C30 show the improved signal-to-noise ratio of the cross-correlation approach. The robustness claims (C50-C51) are supported by the extreme test case.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:01:55.278020Z"
+    },
+    {
+      "id": "cfb6a84c-8dc4-489d-a7a1-79c42c6411d8",
+      "content_id": "a5917f38-219c-4386-b0c5-b2ff8b611f97",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "RELION-3 implements beam tilt estimation and correction that can recover resolution losses caused by imperfect coma-free alignment or beam-shift imaging, providing a computational alternative to active microscope-based beam tilt compensation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The method is described with physical principles (C31) and mathematical formulation (Equations 5-9). The ferritin beam-shift experiment (C58-C60) provides direct validation: data without active compensation improved from 2.9 \u00c5 to 2.2 \u00c5 after computational correction, matching the 2.2 \u00c5 achieved with active compensation. Figure 4 and supplementary figures show phase error patterns and linear beam tilt-beam shift relationships. The conclusion (C62) is appropriately cautious ('may be feasible').",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:01:55.278020Z"
+    },
+    {
+      "id": "cf92e165-0092-4f7a-aaf4-5423ee62ee30",
+      "content_id": "a5917f38-219c-4386-b0c5-b2ff8b611f97",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "RELION-3 implements Ewald sphere curvature correction using a single-side band algorithm that improves resolution for large particles, as demonstrated by improvement of P22 virion reconstruction from 3.5 \u00c5 to 3.3 \u00c5.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The implementation (C33-C34) is described with appropriate citations. The P22 virion test case (C63-C67) provides validation: the ~700 \u00c5 diameter particle improved from 3.5 \u00c5 to 3.3 \u00c5 with correct curvature but only 3.9 \u00c5 with reverse curvature, demonstrating specificity. The theoretical resolution limit of 3.1 \u00c5 (C64) provides context. Claims C68-C69 about hand determination are appropriately speculative. Figure 5 shows density improvements.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:01:55.278020Z"
+    },
+    {
+      "id": "5e02a8f7-5fee-4976-90c4-a85ee4212de3",
+      "content_id": "a5917f38-219c-4386-b0c5-b2ff8b611f97",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "RELION-3 achieves resolution improvements of 0.2-0.7 \u00c5 compared to previous versions across multiple test datasets through combined application of new methods, with \u03b2-galactosidase improving from 2.2 \u00c5 (RELION-2.0) to 1.90 \u00c5 and \u03b3-secretase improving from 3.4 \u00c5 (RELION-1.3) to 3.2 \u00c5.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Multiple datasets provide convergent evidence: influenza HA (3.2 \u00c5 to 3.1 \u00c5, C48), \u03b3-secretase (3.4 \u00c5 to 3.2 \u00c5, C75-C76), and \u03b2-galactosidase (2.2 \u00c5 to 1.90 \u00c5, C82-C88). The improvements are documented with FSC curves and density features in Figures 3, 6, and 7. The incremental contributions of individual methods (defocus refinement, beam tilt correction, polishing) are systematically evaluated (C84-C87). The RELION-3 map also outperforms a competing method (EMD-7770) by 0.15 \u00c5 in model correlation (C94).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:01:55.278020Z"
+    },
+    {
+      "id": "fac1bdb9-f837-438d-90cf-8d7113a15c5b",
+      "content_id": "a5917f38-219c-4386-b0c5-b2ff8b611f97",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Non-interactive preprocessing using the relion_it.py script approaches expert-level performance for \u03b3-secretase (3.3 \u00c5 vs 3.2 \u00c5), though the automated approach shows higher false positive rates and challenging datasets still benefit from manual parameter tuning.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The \u03b3-secretase reprocessing provides a direct comparison: automated preprocessing (3.3 \u00c5, C73) vs expert selection with RELION-3 (3.2 \u00c5, C75) vs original expert processing (3.4 \u00c5, C74). The 0.1 \u00c5 difference between automated and expert approaches (C77) is small but the observation about model correlation (C78-C79) reveals limitations. The conclusions (C80-C81) are appropriately balanced. Figure 6 shows the processing workflow and results.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:01:55.278020Z"
+    },
+    {
+      "id": "ed979eb4-df8e-4359-9e4d-476bd5502989",
+      "content_id": "a5917f38-219c-4386-b0c5-b2ff8b611f97",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "RELION-3 processing of human apo-ferritin achieved 1.65 \u00c5 resolution with spherical-like atomic features, demonstrating that automated high-resolution structure determination of straightforward samples is within close reach.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The 1.65 \u00c5 resolution (C98) is documented with FSC curves and density features in Figure 8. The resolution is appropriately contextualized as two shells below Nyquist (C99). The observation of spherical atomic features (C101) is shown in Figure 8C. The B-factor analysis (C102) provides additional characterization. The conclusion about automation (C103) is reasonable given the successful application of the relion_it.py script with minimal intervention. Data deposition (C97) enables reproducibility.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:01:55.278020Z"
+    },
+    {
+      "id": "c6e10576-a510-44aa-ad97-6d2c30ebfb4a",
+      "content_id": "a5917f38-219c-4386-b0c5-b2ff8b611f97",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Similar CTF refinement functionality exists in Frealign and cisTEM.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "This is a straightforward citation-supported claim (C29) acknowledging prior/parallel work. The statement is appropriately placed in context and does not overstate RELION-3's novelty.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:01:55.278020Z"
+    },
+    {
+      "id": "f93a9672-0e16-416b-a0a4-1124da3cb93f",
+      "content_id": "a5917f38-219c-4386-b0c5-b2ff8b611f97",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The introduction provides historical context for the cryo-EM resolution revolution, attributing it to direct electron detectors (introduced 2012) and concurrent image processing software improvements.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These are well-established historical facts supported by appropriate citations (C9-C15). The claims provide necessary context for understanding RELION-3's contributions but are not novel findings of this work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:01:55.278020Z"
+    },
+    {
+      "id": "f5f24603-9d25-444f-a2b1-9099e3aa00e3",
+      "content_id": "a5917f38-219c-4386-b0c5-b2ff8b611f97",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The manuscript describes the evolution of RELION through versions 1-2, including its Bayesian approach, pipelined workflow, GPU acceleration, and expanded functionality for sub-tomogram averaging and helical reconstruction.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These claims (C16-C23) accurately describe prior RELION versions with appropriate citations. They provide necessary background but are not new results of this manuscript.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:01:55.278020Z"
+    },
+    {
+      "id": "e6d3b668-994d-47ad-bd31-5f96710eeeee",
+      "content_id": "a5917f38-219c-4386-b0c5-b2ff8b611f97",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "For \u03b2-galactosidase, Ewald sphere correction did not improve resolution by a full Fourier shell, and B-factor analysis predicts resolutions of 1.75 \u00c5 and 1.69 \u00c5 with 4x and 8x more particles respectively.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The Ewald sphere result (C89) is clearly stated and appropriate for the particle size. The B-factor predictions (C90-C92) are generated by the bfactor_plot.py script with documented methodology (Rosenthal & Henderson approach) and shown in Figure 7 supplement 2. These are valid characterizations of the dataset but secondary findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:01:55.278020Z"
+    },
+    {
+      "id": "6e349038-4dfe-4972-bbb2-7428a21088a8",
+      "content_id": "a5917f38-219c-4386-b0c5-b2ff8b611f97",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The RELION-3 \u03b2-galactosidase map shows better model correlation than the Subramaniam group's EMD-7770 despite identical nominal resolution, and FSC curves provide objective map quality assessment when properly used.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The comparison to EMD-7770 (C93-C94) is documented in Figure 7 supplement 2 showing 0.15 \u00c5 better correlation. The discussion of FSC methodology (C95) is appropriately nuanced with citations. However, the comparison involves some methodological differences and the critique of the competing work, while scientifically valid, is somewhat polemical.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:01:55.278020Z"
+    },
+    {
+      "id": "f827782f-16d4-4819-b599-d3fde141d76e",
+      "content_id": "a5917f38-219c-4386-b0c5-b2ff8b611f97",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Corrections for per-particle defocus, beam tilt, and Ewald sphere will become more important as cryo-EM resolutions continue to improve.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "This is a reasonable extrapolation (C107) based on the demonstrated benefits at current resolutions and the physics of the corrections. It is appropriately presented as a prediction rather than a proven fact.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:01:55.278020Z"
+    },
+    {
+      "id": "bd84f703-d0e8-4b8d-a2d3-477cb32d406c",
+      "content_id": "a5917f38-219c-4386-b0c5-b2ff8b611f97",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "RELION is distributed under GPL version 2, making it free to use or modify.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "This is a factual statement about software licensing (C108-C109). While important for accessibility, it is not a scientific result.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:01:55.278020Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "02809020-bc83-4f65-9943-60420a4faaea",
+      "result_id": "90ce00ca-2621-4a07-842f-cbdc308d4670"
+    },
+    {
+      "claim_id": "05a0db48-e142-479b-bfc1-fa7e78f5161a",
+      "result_id": "90ce00ca-2621-4a07-842f-cbdc308d4670"
+    },
+    {
+      "claim_id": "189a1bf0-b05f-474c-ae6e-daa1876d2d4b",
+      "result_id": "90ce00ca-2621-4a07-842f-cbdc308d4670"
+    },
+    {
+      "claim_id": "5a8a66fb-8b3b-4276-854f-9d60a8644571",
+      "result_id": "90ce00ca-2621-4a07-842f-cbdc308d4670"
+    },
+    {
+      "claim_id": "fd78de99-57f8-41f5-bc01-d0270b452d72",
+      "result_id": "90ce00ca-2621-4a07-842f-cbdc308d4670"
+    },
+    {
+      "claim_id": "7d9dd64f-5f87-4a0b-92eb-2afe2b730283",
+      "result_id": "90ce00ca-2621-4a07-842f-cbdc308d4670"
+    },
+    {
+      "claim_id": "ffc204c1-03f4-4fee-a201-23e1b7503f75",
+      "result_id": "90ce00ca-2621-4a07-842f-cbdc308d4670"
+    },
+    {
+      "claim_id": "e1268260-7a24-4c67-a1f4-e1c4533e287a",
+      "result_id": "90ce00ca-2621-4a07-842f-cbdc308d4670"
+    },
+    {
+      "claim_id": "e0c20844-bd98-4e7d-8bec-4b98ee423246",
+      "result_id": "90ce00ca-2621-4a07-842f-cbdc308d4670"
+    },
+    {
+      "claim_id": "bd260733-65ed-420e-ab5b-57e494bc7818",
+      "result_id": "90ce00ca-2621-4a07-842f-cbdc308d4670"
+    },
+    {
+      "claim_id": "643ccaab-35d9-4d1e-b507-e70d387695e3",
+      "result_id": "90ce00ca-2621-4a07-842f-cbdc308d4670"
+    },
+    {
+      "claim_id": "0d7b30d0-3d75-4080-9474-2727cdf5d88c",
+      "result_id": "11942c41-0a91-4dbe-ba55-fcd2fe6497c9"
+    },
+    {
+      "claim_id": "5a049104-e74d-439f-b248-c170d9c73eac",
+      "result_id": "11942c41-0a91-4dbe-ba55-fcd2fe6497c9"
+    },
+    {
+      "claim_id": "7054e066-ff53-4d55-9497-061862b3e389",
+      "result_id": "11942c41-0a91-4dbe-ba55-fcd2fe6497c9"
+    },
+    {
+      "claim_id": "b010e532-f7e3-42a7-87b5-f1d77a3d7dc9",
+      "result_id": "f7eafb3a-7b3e-4e26-b4fb-3991015533e5"
+    },
+    {
+      "claim_id": "bf73e069-a921-4040-ad39-8f3d54bac499",
+      "result_id": "f7eafb3a-7b3e-4e26-b4fb-3991015533e5"
+    },
+    {
+      "claim_id": "acb955a8-35ac-48f2-b370-0b8510fa035d",
+      "result_id": "f7eafb3a-7b3e-4e26-b4fb-3991015533e5"
+    },
+    {
+      "claim_id": "7f51f64d-d24d-4007-9ea8-42d31ad424d0",
+      "result_id": "f7eafb3a-7b3e-4e26-b4fb-3991015533e5"
+    },
+    {
+      "claim_id": "c7d327b8-5b39-4644-b043-78a27cc09c5b",
+      "result_id": "f7eafb3a-7b3e-4e26-b4fb-3991015533e5"
+    },
+    {
+      "claim_id": "c5c1421b-d9aa-40ca-806f-fce86f7f25ab",
+      "result_id": "f7eafb3a-7b3e-4e26-b4fb-3991015533e5"
+    },
+    {
+      "claim_id": "506c54be-f9f7-4b30-938f-24ad882c7d53",
+      "result_id": "f7eafb3a-7b3e-4e26-b4fb-3991015533e5"
+    },
+    {
+      "claim_id": "38cb807c-2eca-49ee-81af-104c21e2c28d",
+      "result_id": "f7eafb3a-7b3e-4e26-b4fb-3991015533e5"
+    },
+    {
+      "claim_id": "d0ffdc4d-b220-4a3f-a314-20e8faf3a3bc",
+      "result_id": "f7eafb3a-7b3e-4e26-b4fb-3991015533e5"
+    },
+    {
+      "claim_id": "b09515e0-9881-4630-b141-c1da0b9a1ac8",
+      "result_id": "f7eafb3a-7b3e-4e26-b4fb-3991015533e5"
+    },
+    {
+      "claim_id": "51574e1f-bff8-442e-9a94-a88e89a62442",
+      "result_id": "f7eafb3a-7b3e-4e26-b4fb-3991015533e5"
+    },
+    {
+      "claim_id": "40bfff55-8b02-497e-8290-68e7ed6250a3",
+      "result_id": "f7eafb3a-7b3e-4e26-b4fb-3991015533e5"
+    },
+    {
+      "claim_id": "f5e03415-59a7-475b-84b9-9178b5b0d488",
+      "result_id": "f7eafb3a-7b3e-4e26-b4fb-3991015533e5"
+    },
+    {
+      "claim_id": "9bd0e87d-11ea-4958-aeab-a2b53db106fe",
+      "result_id": "f7eafb3a-7b3e-4e26-b4fb-3991015533e5"
+    },
+    {
+      "claim_id": "ed539aa2-059f-452b-a48f-1517dc21ff07",
+      "result_id": "cfb6a84c-8dc4-489d-a7a1-79c42c6411d8"
+    },
+    {
+      "claim_id": "92a096fe-3e67-49b5-8119-7ed5e828060b",
+      "result_id": "cfb6a84c-8dc4-489d-a7a1-79c42c6411d8"
+    },
+    {
+      "claim_id": "04c36103-99ed-4f07-a906-a591cb31587d",
+      "result_id": "cfb6a84c-8dc4-489d-a7a1-79c42c6411d8"
+    },
+    {
+      "claim_id": "7a837364-169f-4bda-b9d2-c8cc2e64ddd8",
+      "result_id": "cfb6a84c-8dc4-489d-a7a1-79c42c6411d8"
+    },
+    {
+      "claim_id": "e9ff8057-5d42-4ae0-ae70-23abf7c0be85",
+      "result_id": "cfb6a84c-8dc4-489d-a7a1-79c42c6411d8"
+    },
+    {
+      "claim_id": "1ffd4b6c-e593-4ba5-b049-2d1b32bac24d",
+      "result_id": "cfb6a84c-8dc4-489d-a7a1-79c42c6411d8"
+    },
+    {
+      "claim_id": "9b4afff0-2e76-4ef1-b9ba-fc7cbe9eb4b1",
+      "result_id": "cfb6a84c-8dc4-489d-a7a1-79c42c6411d8"
+    },
+    {
+      "claim_id": "30612e39-25e3-4983-b76a-fef0ec30801d",
+      "result_id": "cfb6a84c-8dc4-489d-a7a1-79c42c6411d8"
+    },
+    {
+      "claim_id": "357b3651-4589-4c75-9e00-94b63f86a3f0",
+      "result_id": "cfb6a84c-8dc4-489d-a7a1-79c42c6411d8"
+    },
+    {
+      "claim_id": "053516c1-a1a2-45c2-bd95-84991ca24a27",
+      "result_id": "cfb6a84c-8dc4-489d-a7a1-79c42c6411d8"
+    },
+    {
+      "claim_id": "34c8c347-c7de-4b6e-910e-a9e330fd6226",
+      "result_id": "cf92e165-0092-4f7a-aaf4-5423ee62ee30"
+    },
+    {
+      "claim_id": "102aacfe-08b7-4612-afbd-d795be5e3069",
+      "result_id": "cf92e165-0092-4f7a-aaf4-5423ee62ee30"
+    },
+    {
+      "claim_id": "1b6fc3b9-4295-4c1f-b48d-000b42d2a000",
+      "result_id": "cf92e165-0092-4f7a-aaf4-5423ee62ee30"
+    },
+    {
+      "claim_id": "272ecafe-7a34-4d16-a945-6812550e7f94",
+      "result_id": "cf92e165-0092-4f7a-aaf4-5423ee62ee30"
+    },
+    {
+      "claim_id": "dc828e61-5227-4acf-9006-45800974ab34",
+      "result_id": "cf92e165-0092-4f7a-aaf4-5423ee62ee30"
+    },
+    {
+      "claim_id": "e7ddb67b-bda6-42c2-bc6f-58fc0c706c2e",
+      "result_id": "cf92e165-0092-4f7a-aaf4-5423ee62ee30"
+    },
+    {
+      "claim_id": "82876e0b-3b4e-42fc-bced-1a6993c63be8",
+      "result_id": "cf92e165-0092-4f7a-aaf4-5423ee62ee30"
+    },
+    {
+      "claim_id": "ba172192-5712-48e6-8980-2e64f070c4fb",
+      "result_id": "cf92e165-0092-4f7a-aaf4-5423ee62ee30"
+    },
+    {
+      "claim_id": "f5c5e515-9ced-426f-961d-7ce4f7e48ce5",
+      "result_id": "cf92e165-0092-4f7a-aaf4-5423ee62ee30"
+    },
+    {
+      "claim_id": "fc3bfe1c-2b33-460b-ac25-4436f96b798e",
+      "result_id": "cf92e165-0092-4f7a-aaf4-5423ee62ee30"
+    },
+    {
+      "claim_id": "0a73ea23-bf4d-4f3d-abc4-0dbbdbd15304",
+      "result_id": "5e02a8f7-5fee-4976-90c4-a85ee4212de3"
+    },
+    {
+      "claim_id": "51574e1f-bff8-442e-9a94-a88e89a62442",
+      "result_id": "5e02a8f7-5fee-4976-90c4-a85ee4212de3"
+    },
+    {
+      "claim_id": "4eec1a49-5a4d-43a0-b01c-0dc9e99cfc46",
+      "result_id": "5e02a8f7-5fee-4976-90c4-a85ee4212de3"
+    },
+    {
+      "claim_id": "ec6e88a2-0598-4bde-b79a-d965cb4d9dd3",
+      "result_id": "5e02a8f7-5fee-4976-90c4-a85ee4212de3"
+    },
+    {
+      "claim_id": "d79a3a3c-707d-4d63-bf72-6c8cf723da5d",
+      "result_id": "5e02a8f7-5fee-4976-90c4-a85ee4212de3"
+    },
+    {
+      "claim_id": "8c5a8ae5-9f20-4091-8823-dc03de8b4d05",
+      "result_id": "5e02a8f7-5fee-4976-90c4-a85ee4212de3"
+    },
+    {
+      "claim_id": "26c61752-78ee-4b75-b790-5db328525fac",
+      "result_id": "5e02a8f7-5fee-4976-90c4-a85ee4212de3"
+    },
+    {
+      "claim_id": "fb0c4e48-52c3-4042-896b-9d27a78b7e29",
+      "result_id": "5e02a8f7-5fee-4976-90c4-a85ee4212de3"
+    },
+    {
+      "claim_id": "b37f8177-fc7a-4104-80cf-386760b5ead1",
+      "result_id": "5e02a8f7-5fee-4976-90c4-a85ee4212de3"
+    },
+    {
+      "claim_id": "62be35c2-9c2b-4b54-95ec-9341f07476d2",
+      "result_id": "5e02a8f7-5fee-4976-90c4-a85ee4212de3"
+    },
+    {
+      "claim_id": "9fa58cab-c9c3-4c92-b3b7-783fbe7f6435",
+      "result_id": "5e02a8f7-5fee-4976-90c4-a85ee4212de3"
+    },
+    {
+      "claim_id": "de41c64e-f7f3-4aed-9775-618fc5c07435",
+      "result_id": "5e02a8f7-5fee-4976-90c4-a85ee4212de3"
+    },
+    {
+      "claim_id": "c9065495-025c-4e19-8d9a-0ea1604e17bf",
+      "result_id": "5e02a8f7-5fee-4976-90c4-a85ee4212de3"
+    },
+    {
+      "claim_id": "4d7b7483-4442-489c-ac17-351d5ab01ef4",
+      "result_id": "5e02a8f7-5fee-4976-90c4-a85ee4212de3"
+    },
+    {
+      "claim_id": "4eec1a49-5a4d-43a0-b01c-0dc9e99cfc46",
+      "result_id": "fac1bdb9-f837-438d-90cf-8d7113a15c5b"
+    },
+    {
+      "claim_id": "3375344f-0d66-40b4-8b4a-b1d509721586",
+      "result_id": "fac1bdb9-f837-438d-90cf-8d7113a15c5b"
+    },
+    {
+      "claim_id": "ec6e88a2-0598-4bde-b79a-d965cb4d9dd3",
+      "result_id": "fac1bdb9-f837-438d-90cf-8d7113a15c5b"
+    },
+    {
+      "claim_id": "d79a3a3c-707d-4d63-bf72-6c8cf723da5d",
+      "result_id": "fac1bdb9-f837-438d-90cf-8d7113a15c5b"
+    },
+    {
+      "claim_id": "32ef121a-7b0b-4343-8b16-ef61bae4d532",
+      "result_id": "fac1bdb9-f837-438d-90cf-8d7113a15c5b"
+    },
+    {
+      "claim_id": "98e2fecb-744f-4f3a-a657-085636666020",
+      "result_id": "fac1bdb9-f837-438d-90cf-8d7113a15c5b"
+    },
+    {
+      "claim_id": "9bfe92f5-a24a-4cb8-bf9f-52deb80a23e2",
+      "result_id": "fac1bdb9-f837-438d-90cf-8d7113a15c5b"
+    },
+    {
+      "claim_id": "d0575a99-ba10-4aaf-bcfe-ff659a3e736d",
+      "result_id": "fac1bdb9-f837-438d-90cf-8d7113a15c5b"
+    },
+    {
+      "claim_id": "765a5cc8-f1ef-4504-bd84-03eebf5d7784",
+      "result_id": "fac1bdb9-f837-438d-90cf-8d7113a15c5b"
+    },
+    {
+      "claim_id": "4ac9b435-d319-4b2a-a4e5-ea9b045969c2",
+      "result_id": "ed979eb4-df8e-4359-9e4d-476bd5502989"
+    },
+    {
+      "claim_id": "ad0028dc-6d61-46f8-bf7d-598bf616cb50",
+      "result_id": "ed979eb4-df8e-4359-9e4d-476bd5502989"
+    },
+    {
+      "claim_id": "9e059b5f-5490-4448-b02f-e36389fa5c9b",
+      "result_id": "ed979eb4-df8e-4359-9e4d-476bd5502989"
+    },
+    {
+      "claim_id": "50f37fbf-a567-4068-bc8e-da4e3aae362f",
+      "result_id": "ed979eb4-df8e-4359-9e4d-476bd5502989"
+    },
+    {
+      "claim_id": "3c534f32-f193-425c-9133-c446e4261bb9",
+      "result_id": "ed979eb4-df8e-4359-9e4d-476bd5502989"
+    },
+    {
+      "claim_id": "92da4712-04a4-4f42-8da6-86bed93e843b",
+      "result_id": "ed979eb4-df8e-4359-9e4d-476bd5502989"
+    },
+    {
+      "claim_id": "1eed2c97-723d-4a07-8ff0-ca44007357b8",
+      "result_id": "ed979eb4-df8e-4359-9e4d-476bd5502989"
+    },
+    {
+      "claim_id": "d49644c6-ee6d-4423-b3ab-1ab6235c881c",
+      "result_id": "ed979eb4-df8e-4359-9e4d-476bd5502989"
+    },
+    {
+      "claim_id": "5f736931-7e7d-4133-bab7-b63eb42ecf9e",
+      "result_id": "c6e10576-a510-44aa-ad97-6d2c30ebfb4a"
+    },
+    {
+      "claim_id": "67898846-4ac4-4c7c-814b-39dab9df0791",
+      "result_id": "f93a9672-0e16-416b-a0a4-1124da3cb93f"
+    },
+    {
+      "claim_id": "afecc99d-4657-4715-b969-bd84740753e5",
+      "result_id": "f93a9672-0e16-416b-a0a4-1124da3cb93f"
+    },
+    {
+      "claim_id": "54961438-e46c-4714-b13e-36d5be2683f2",
+      "result_id": "f93a9672-0e16-416b-a0a4-1124da3cb93f"
+    },
+    {
+      "claim_id": "6d333776-591f-448c-8bf7-f1a3462fd345",
+      "result_id": "f93a9672-0e16-416b-a0a4-1124da3cb93f"
+    },
+    {
+      "claim_id": "f7bbc035-9465-412e-879d-11b05360e61f",
+      "result_id": "f93a9672-0e16-416b-a0a4-1124da3cb93f"
+    },
+    {
+      "claim_id": "0ae41df4-81fd-4f8a-b109-d66dd84f5893",
+      "result_id": "f93a9672-0e16-416b-a0a4-1124da3cb93f"
+    },
+    {
+      "claim_id": "fe5282be-d2cb-4fc5-8d77-f7f574019a81",
+      "result_id": "f93a9672-0e16-416b-a0a4-1124da3cb93f"
+    },
+    {
+      "claim_id": "3b28035c-8e30-40ef-bb3d-c942634197fd",
+      "result_id": "f5f24603-9d25-444f-a2b1-9099e3aa00e3"
+    },
+    {
+      "claim_id": "dc91068f-de67-4ecf-bd18-431f4ab51607",
+      "result_id": "f5f24603-9d25-444f-a2b1-9099e3aa00e3"
+    },
+    {
+      "claim_id": "48134e31-b794-4c5f-840c-af86f59b89ec",
+      "result_id": "f5f24603-9d25-444f-a2b1-9099e3aa00e3"
+    },
+    {
+      "claim_id": "c81342e9-b8c8-417e-a113-a719bac1ad58",
+      "result_id": "f5f24603-9d25-444f-a2b1-9099e3aa00e3"
+    },
+    {
+      "claim_id": "5ca3410e-646d-4f52-b64a-e4f3e6f4f9d2",
+      "result_id": "f5f24603-9d25-444f-a2b1-9099e3aa00e3"
+    },
+    {
+      "claim_id": "0575c2ae-a5e7-4089-9312-0b4d2356d006",
+      "result_id": "f5f24603-9d25-444f-a2b1-9099e3aa00e3"
+    },
+    {
+      "claim_id": "7f67384d-8e81-4fb3-afb1-29e4b480f505",
+      "result_id": "f5f24603-9d25-444f-a2b1-9099e3aa00e3"
+    },
+    {
+      "claim_id": "d9a0c208-59b9-4293-bb22-d6e1ab85ef35",
+      "result_id": "f5f24603-9d25-444f-a2b1-9099e3aa00e3"
+    },
+    {
+      "claim_id": "26b3e181-605a-499e-a56f-a8f284f63241",
+      "result_id": "e6d3b668-994d-47ad-bd31-5f96710eeeee"
+    },
+    {
+      "claim_id": "84fd5c50-388d-46c1-9ced-7ef7d6b1ef43",
+      "result_id": "e6d3b668-994d-47ad-bd31-5f96710eeeee"
+    },
+    {
+      "claim_id": "983f443e-8045-4b8d-b981-a31f03078161",
+      "result_id": "e6d3b668-994d-47ad-bd31-5f96710eeeee"
+    },
+    {
+      "claim_id": "d97f40ac-5a39-4145-90bf-927c6b9756fe",
+      "result_id": "e6d3b668-994d-47ad-bd31-5f96710eeeee"
+    },
+    {
+      "claim_id": "32a3f84d-5f88-43cf-8b68-6ee55cdd98f1",
+      "result_id": "6e349038-4dfe-4972-bbb2-7428a21088a8"
+    },
+    {
+      "claim_id": "c9065495-025c-4e19-8d9a-0ea1604e17bf",
+      "result_id": "6e349038-4dfe-4972-bbb2-7428a21088a8"
+    },
+    {
+      "claim_id": "a7c86e4c-c322-4d3f-bd6e-121989601903",
+      "result_id": "6e349038-4dfe-4972-bbb2-7428a21088a8"
+    },
+    {
+      "claim_id": "7b381d48-abcf-441a-807f-958a63eeffa7",
+      "result_id": "f827782f-16d4-4819-b599-d3fde141d76e"
+    },
+    {
+      "claim_id": "b5ed8009-17b3-4f3f-aac1-3d3cd0c906a9",
+      "result_id": "bd84f703-d0e8-4b8d-a2d3-477cb32d406c"
+    },
+    {
+      "claim_id": "75a5b5a1-d279-41fe-8a71-a020af7ee6d2",
+      "result_id": "bd84f703-d0e8-4b8d-a2d3-477cb32d406c"
+    }
+  ],
+  "comparisons": []
+}

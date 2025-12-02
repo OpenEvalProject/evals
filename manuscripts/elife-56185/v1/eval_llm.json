@@ -1,0 +1,237 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C64"
+    ],
+    "result": "The cryo-EM structure of RNF213 reveals a 584 kDa protein organized into three major structural modules: an N-terminal stalk (N-arm, residues 1-1290, 180 \u00c5 long), a dynein-like AAA core (residues 1775-3405, comprising six non-equivalent AAA units), and a multidomain E3 module (residues 3589-4926) containing a heart-shaped 4-domain scaffold with an E3-RING domain (residues 3940-3999). The wildtype and R4753K mutant structures were resolved at average resolutions of 3.2 \u00c5 and 3.1 \u00c5, respectively, with RNF213 existing as a monomer in solution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The structural characterization is well-supported by high-resolution cryo-EM data (C6, C7), biophysical validation of the monomeric state (C5), and detailed domain mapping (C8-C14, C59-C62). The resolution achieved allows for confident assignment of >80% of side chains, and the structure is validated by cross-linking mass spectrometry data showing 90% of crosslinks within expected distances. The focused refinement approach yielded high-quality density maps for individual modules (C58).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C90",
+      "C91"
+    ],
+    "result": "RNF213 belongs to the dynein ATPase family with six AAA units in a single polypeptide, but differs fundamentally from dynein in its ATPase organization. Only AAA3 and AAA4 are catalytically competent, while AAA2 contains a bound ATP molecule but lacks catalytic residues for hydrolysis. Two conserved regulatory insertions (IR3 in AAA3 and IR5 in AAA5) sterically block nucleotide binding to AAA3 and AAA4, resulting in an auto-inhibited state with ATPase activity an order of magnitude lower than processive AAA machines and ~3-fold lower than resting dynein. The structure most closely resembles the resting states of dynein (phi-particle and apo form) with an open AAA ring.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The structural and functional characterization of the AAA core is well-supported by multiple lines of evidence: direct observation of ATP bound to AAA2 in cryo-EM density (C17), structural analysis of catalytic motifs (C16, C18), visualization of inhibitory insertions IR3 and IR5 (C19, C20), and quantitative ATPase assays comparing RNF213 to dynein and processive ATPases (C26, C27). The structural homology to dynein is validated by detailed alignments (C15, C24, C91), though the functional interpretation as auto-inhibited (C22) is inferential and would benefit from additional activation studies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C89",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C103"
+    ],
+    "result": "RNF213 represents a novel class of E3 ubiquitin ligase that functions independently of its RING domain. The E3-RING contains an atypical leucine residue instead of the conserved lysine/arginine linchpin, and a \u0394RING mutant exhibits wildtype-like auto-ubiquitination activity. RNF213 preferentially collaborates with UbcH7, a cysteine-reactive E2 enzyme (2-3 times more efficient than UbcH5 variants), suggesting a transthiolation mechanism similar to HECT, RBR, and RCR ligases but utilizing a structurally distinct E3 scaffold with no homology to known E3 ligases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The characterization of RNF213 as a novel E3 ligase class is supported by multiple converging lines of evidence: structural observation of the atypical linchpin residue (C29), comprehensive E2 screening identifying UbcH7 as the preferred partner (C30, C79), functional demonstration that \u0394RING retains full activity (C33, C34), independent proteomics validation (C32, C82), and DALI searches showing no structural homology to known E3 ligases (C35, C36, C89). However, the specific cysteine residue and detailed mechanism remain unidentified, which the authors acknowledge (C103, C104). The conclusion that RNF213 represents a founding member of a new E3 class is well-justified but requires future mechanistic studies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "The R4753K Moyamoya disease founder mutation causes minimal structural changes (0.69 \u00c5 RMSD for 4308 C\u03b1 atoms) localized to an omega motif where Arg4753 forms a salt bridge with Asp4806. The mutation disrupts this salt bridge, leading to small local structural adaptations but does not significantly alter ATPase or ubiquitination activity in vitro. This is consistent with the low penetrance of R4753K (1 in 200 carriers develop disease).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The structural and functional characterization of the R4753K mutation is well-supported by high-resolution cryo-EM comparison (C37), direct visualization of the salt bridge disruption in density maps (C39, C40), and quantitative enzymatic assays showing no significant functional changes (C42). The correlation with low disease penetrance (C43) and the observation that the partner residue Asp4806 is also associated with MMD (C41) strengthen the interpretation. However, the lack of in vitro functional changes raises questions about the disease mechanism that would require cellular or in vivo studies to resolve.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C105",
+      "C106"
+    ],
+    "result": "Moyamoya disease mutations cluster predominantly in the E3 module, with 21 out of 28 severe mutations (CADD score >20) localized to one of the four E3 subdomains. The most pathogenic mutations are located at subdomain interfaces and are predicted to alter the conformation and dynamics of the E3 module, thereby interfering with ubiquitination activity through either mechanistic inhibition or altered substrate binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The mutation clustering analysis is supported by systematic mapping of known MMD mutations onto the structure with CADD score analysis (C44, C105). The observation that high-pathogenicity mutations localize to subdomain interfaces (C45) is based on structural data. However, the proposed mechanism of interference with ubiquitination activity (C106) is inferential and not directly tested experimentally. The analysis would be strengthened by functional validation of representative high-CADD mutations beyond R4753K.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C46",
+      "C47",
+      "C86"
+    ],
+    "result": "RNF213 is the major susceptibility factor for Moyamoya disease, a progressive cerebrovascular disorder leading to stroke. The disease is most prevalent in East Asia, where at least 16 million people carry RNF213 mutations, with over 50,000 disease cases, and more than 2% of the East Asian population carry disease-associated mutations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These epidemiological and disease association claims are well-established in the literature and properly cited (C1, C2, C46, C47, C86). The claims represent accepted knowledge in the field rather than novel findings from this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C87"
+    ],
+    "result": "RNF213 plays important roles in lipid metabolism (modulating lipotoxicity, fat storage, and lipid droplet formation), coordinates cellular response to hypoxia with PTP1B and HIF1A (controlling non-mitochondrial oxygen consumption), causes changes in the ubiquitome particularly affecting NF-\u03baB pathway members upon knockdown, and is capable of activating NF-\u03baB signaling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These functional roles are properly cited from recent published studies (C48-C52, C87) and represent established knowledge from prior work rather than findings from the current study. The claims accurately summarize the cited literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C88"
+    ],
+    "result": "RNF213 is the largest E3 ubiquitin ligase in the human proteome at 591 kDa and uniquely combines RING and AAA domains in a single polypeptide, making it a unique E3 machine in the ubiquitination system.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims about RNF213's size and unique domain architecture are well-established facts properly cited from prior literature (C53, C54, C88). They provide important context but are not novel findings from this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C63",
+      "C73",
+      "C74",
+      "C95",
+      "C96"
+    ],
+    "result": "Prior work proposed RNF213 forms hexameric particles, but this is contradicted by the current structure. Dynein's AAA1 drives processive movement while AAA3/AAA4 function as a molecular switch. The ribosome maturation factor Rea1 exhibits auto-inhibition via AAA2 insertion, with cofactors promoting release of the inhibitory element.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims accurately represent prior work on RNF213 (C63), dynein (C73, C74), and Rea1 (C95, C96) from cited literature. The current study's structure contradicts the hexamerization hypothesis (C63, C64), which is appropriately noted. These are contextual claims about prior work rather than novel findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94",
+      "C97",
+      "C104",
+      "C107"
+    ],
+    "result": "RNF213 likely does not function as a processive ATPase but rather as a regulated switch promoting conformational changes through AAA ring opening and closing. By analogy to Rea1, the AAA switch could be transmitted to the E3 module to regulate ubiquitination activity. The findings highlight unexplored mechanistic diversity in the ubiquitination network, and the structure provides a roadmap for dissecting RNF213's role in vascular formation and Moyamoya disease.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "These mechanistic proposals are largely inferential, based on structural features (C92, C94), analogy to Rea1 (C97), and the lack of processive ATPase activity (C93). While the inferences are reasonable given the structural data, they represent hypotheses rather than demonstrated mechanisms. The authors appropriately acknowledge that key mechanistic details remain unresolved (C104). The claims about future utility of the structure (C107) are forward-looking rather than results. Direct experimental evidence for the proposed regulatory mechanism is needed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C76",
+      "C77",
+      "C80",
+      "C81",
+      "C102"
+    ],
+    "result": "General principles of AAA ATPase domain organization and RING E3 ligase mechanisms are described, including that AAA domains comprise large \u03b1/\u03b2 and small \u03b1-helical domains with the arginine finger provided by adjacent units, RING E3s use a conserved Lys/Arg linchpin for catalysis, UbcH5 variants are promiscuous E2 enzymes, UbcH7 lacks lysine reactivity, and novel E3-like ligases (NEL) operate in a RING-independent manner.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These are accurate statements of established knowledge about AAA domains (C65, C66), RING E3 mechanisms (C76, C77), and E2 enzyme properties (C80, C81, C102), properly supported by citations. They provide necessary background context but are not novel findings from this study.",
+    "result_type": "MINOR"
+  }
+]

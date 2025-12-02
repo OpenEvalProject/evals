@@ -1,0 +1,336 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C41",
+      "C67",
+      "C70",
+      "C79",
+      "C186",
+      "C187",
+      "C188"
+    ],
+    "result": "R-CHOP drugs do not exhibit synergistic interaction; pairwise interactions range from additive to antagonistic, with vincristine being strongly antagonized by cyclophosphamide and doxorubicin. The combined activity of all five drugs is close to purely additive according to both Bliss Independence and Loewe Additivity criteria.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C3, C41, C67, C70, C79, C186-C188 are supported by comprehensive experimental data from isobologram analysis and Bliss independence testing across multiple DLBCL cell lines (C46-C48, C60-C63). The checkerboard experiments (C60) spanning 100-fold concentration ranges with appropriate controls (C64) provide robust evidence. The antagonism between vincristine and cyclophosphamide/doxorubicin (C67-C69) is mechanistically plausible based on cell cycle effects. FIC values for high-order combinations (C72-C75) consistently show additivity to slight antagonism across three cell lines.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C43",
+      "C81",
+      "C83",
+      "C168",
+      "C169",
+      "C171",
+      "C172"
+    ],
+    "result": "Multi-drug resistance to R-CHOP components is near the theoretical minimum predicted by Law (1952), with cross-resistance parameter \u03be averaging 0.016 in barcode tracing experiments and 0.05 across CRISPRi/a screens. This confirms the 50-year-old hypothesis that low cross-resistance is achievable.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43, C81, C83, C168-C172 are strongly supported by three independent experimental approaches: random mutagenesis with clone tracing (C108-C120), CRISPRi screens (C121-C152), and CRISPRa screens (C122-C166). The barcode tracing identified thousands of single-drug resistant clones but only 30-300 double-resistant and 1-10 triple-resistant clones (C117-C119), with no quadruple-resistant clones detected (C120). The cross-resistance parameter \u03be quantifies deviation from theoretical minimum (Materials and methods), and observed values are consistently low across all three methods. Validation experiments (C140-C143) confirm screen reliability with strong correlations (r=0.66-0.84).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C45",
+      "C191"
+    ],
+    "result": "R-CHOP achieves greater fractional kill according to both Loewe dose-additivity and Bliss effect-independence models, supporting that high single-agent activity and low cross-resistance are key attributes of this curative regimen.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C5, C45, C191 are supported by the experimental data showing additive drug interactions (C41, C70, C79) combined with low cross-resistance (C43, C172). The fractional kill is the product of individual drug kills when cross-resistance is minimal (C44), which is precisely what was observed. However, the claim about 'greater' fractional kill is somewhat imprecise\u2014the data show fractional kill consistent with additivity, not exceeding it. The conclusion that these are 'key attributes' (C45) is a reasonable inference from the data but represents interpretation rather than direct measurement.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C9"
+    ],
+    "result": "The study provides evidence for the 50-year-old Law and Frei hypothesis that curative cancer therapy can be constructed from independently effective drugs with non-overlapping resistance mechanisms, without requiring synergistic interaction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C9 are supported by the combination of experimental results showing lack of synergy (C70, C79) and low cross-resistance (C172) in R-CHOP, a clinically curative regimen (C1, C25). The historical attribution to Law and Frei is properly cited (C8, C44). However, the study tests this hypothesis in cell culture, not in patients, which is a limitation acknowledged by the authors (C80, C98-C100). The evidence is 'direct' in the sense that it measures the proposed properties in a relevant experimental system, but extrapolation to clinical cure requires caution.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C139"
+    ],
+    "result": "CRISPRi and CRISPRa screens successfully identified biologically relevant resistance genes consistent with known drug mechanisms: MS4A1 (CD20) for rituximab, TOP2A (topoisomerase II) for doxorubicin, and TUBB (\u03b2-tubulin) for vincristine.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C128-C131, C139 are supported by the screen results (Figure 5) and are consistent with established mechanisms of drug action (citations to Thorn et al., 2011; Weiner, 2010). These serve as positive controls validating the screening approach. The validation experiments (C140-C143) show strong correlations between screen hits and IC50 changes (r=0.66-0.84, p<10^-5), confirming reproducibility. The identification of known targets provides confidence in the novel findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C144",
+      "C145",
+      "C152",
+      "C153",
+      "C154"
+    ],
+    "result": "CRISPRi identified 19 genes conferring double resistance and 4 genes conferring triple resistance, with no genes conferring resistance to all four drugs (RCHO). CRISPRa identified 42 double-resistant and 4 triple-resistant genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C144-C145, C152-C154 are supported by the screen data (Figure 7A-D, Figure 7\u2014figure supplement 1B,D). The thresholds for calling cross-resistance were set to yield <1 false positive per ~19,000 negative control genes (Figure 7\u2014figure supplement 1A,C), providing stringent control of false discovery rate. The absence of quadruple-resistant genes in CRISPRi (C152) is a key finding supporting low cross-resistance. The specific numbers are clearly reported with appropriate statistical controls.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C155",
+      "C156",
+      "C157",
+      "C158",
+      "C165",
+      "C166"
+    ],
+    "result": "CRISPRa identified ABC transporters (ABCB1, ABCC1, ABCG2) conferring resistance to subsets of drugs, and glutathione biosynthesis genes (GCLC, NFE2L2) conferring triple-drug resistance to C, H, and O. Even 'multi-drug resistance' genes conferred resistance to only subsets of drugs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C155-C158, C165-C166 are supported by CRISPRa screen data (Figure 7C). The finding that ABCB1/ABCC1 confer resistance to H and O but not C (C155), and ABCG2 only to H (C156), demonstrates specificity rather than pan-drug resistance. The glutathione pathway genes (C158) are supported by citations (Kitamura and Motohashi, 2018; Zanotto-Filho et al., 2016) and clinical associations (C162: Andreadis et al., 2007). The complementary finding that GCLC knockdown causes hypersensitivity (C163-C164) provides additional validation. This is important because it shows that even canonical 'MDR' mechanisms have limited cross-resistance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "Prednisolone showed no cytotoxicity to DLBCL cell lines at clinically relevant concentrations, though it reduced cell division rate. This contrasts with clinical efficacy and may reflect selection for resistance in post-treatment cell lines.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C54-C55 are supported by experimental data (Figure 1\u2014figure supplement 1B) showing lack of cytotoxicity in 7 DLBCL cell lines. However, this creates a significant limitation for the study's conclusions about R-CHOP. The speculation that cell lines may be resistant due to post-treatment origin (C58) is reasonable but unverified. The absence of treatment-na\u00efve cell lines (C59) prevents testing this hypothesis. This limitation is acknowledged (C91) but means the study cannot fully evaluate cross-resistance patterns involving prednisone, which is a component of the clinical regimen. The prednisolone barcode experiments (Figure 4\u2014figure supplement 1A,B) show enrichment patterns but their clinical relevance is uncertain.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "The study only assessed rituximab's complement-mediated cytotoxicity (CMC) mechanism, not ADCC or direct signaling, which are additional mechanisms of rituximab action in vivo. Rituximab may behave as multiple drugs due to its multiple mechanisms, though CD20 loss is a shared resistance mechanism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C90-C97 acknowledge important limitations in assessing rituximab. The study only scored CMC (C91) because DLBCL cultures showed little direct apoptosis and ADCC reconstitution yields insufficient killing (<50%) for resistance selection (C92, citations to Dall'Ozzo et al., 2004; Reff et al., 1994). The speculation that ADCC may not synergize with chemotherapy due to immunosuppression (C93) is reasonable but unverified. The success of R-CHOP in AIDS-related DLBCL (C96-C97, Ribera et al., 2008) suggests adaptive immunity is not essential, but this doesn't address ADCC specifically. The concept that rituximab behaves as 'several drugs in one' (C94) is interesting but speculative. These limitations mean the study may underestimate rituximab's contribution to low cross-resistance.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C173",
+      "C174",
+      "C175"
+    ],
+    "result": "Collateral sensitivity does not play a major role in R-CHOP therapy; only 13 of 778 (1.7%) resistance genes exhibited hypersensitivity to a different drug. Resistance is primarily eradicated by drugs active against the parental population.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C173-C175 are supported by systematic analysis of hypersensitivity (Figure 7\u2014figure supplement 2A,C). The low frequency of collateral sensitivity (1.7%) indicates this is not a major mechanism. However, the analysis only examined genes that first conferred resistance to one drug\u2014it doesn't capture genes that might confer hypersensitivity without first conferring resistance. The conclusion that 'resistance is primarily eradicated by drugs active against the parental population' (C175) is a reasonable inference but somewhat overstated\u2014the data show lack of collateral sensitivity, not direct evidence for the proposed mechanism.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C176",
+      "C177",
+      "C178",
+      "C179"
+    ],
+    "result": "CRISPRa of LMO2 sensitized cells to cyclophosphamide and vincristine. High LMO2 expression is the strongest predictor of survival in DLBCL patients treated with CHOP/R-CHOP, potentially mediated through sensitivity to these drugs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C176 is supported by CRISPRa screen data. Claims C177-C178 are supported by citations (Alizadeh et al., 2000; Lossos et al., 2004; Natkunam et al., 2008) establishing LMO2 as a prognostic marker. However, the inference that LMO2's prognostic value is 'mediated in part through its impact on sensitivity to cyclophosphamide and vincristine' (C179) is speculative. The screen shows LMO2 overexpression causes sensitization, but the clinical association is with high LMO2 expression predicting better outcomes\u2014these could be consistent if high LMO2 in tumors makes them more sensitive to treatment, but this mechanistic link is not directly demonstrated. The speculation is reasonable but requires validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "Current synergy tests are limited to IC50 doses and the drug-susceptible population, while rare resistance mutations are the primary obstacle to cure. Clone tracing and CRISPR technologies enable systematic cross-resistance analysis, which should become routine in pre-clinical pharmacology.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C101-C107 present a methodological argument supported by the study's results. The limitation of synergy testing to IC50 doses (C101-C102) is a valid conceptual point. The historical difficulty of cross-resistance analysis (C103, Law, 1956) is well-documented. The demonstration that clone tracing and CRISPR enable systematic cross-resistance analysis (C104-C105) is supported by the successful execution of these methods in this study. The proposal that cross-resistance screening should become routine (C107) is a reasonable recommendation based on the findings, though it represents advocacy rather than a direct result. The citation to Bhang et al., 2015 (C106) supports that this approach has been proposed previously.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C192",
+      "C193",
+      "C194",
+      "C195",
+      "C196",
+      "C197"
+    ],
+    "result": "Drug additivity and low cross-resistance are not sufficient for cure; the absolute magnitude of each drug's efficacy (log-kills) is critical. Each drug in R-CHOP likely contributes 2-3 log kills on average. Patient-to-patient variability in drug sensitivity also contributes to combination therapy benefit.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C192-C197 present important caveats and conceptual framework. The point that additivity and low cross-resistance are not sufficient without adequate individual drug efficacy (C192) is a crucial limitation properly acknowledged. The estimate that each drug must contribute 2-3 log kills (C193) is reasonable speculation based on tumor burden (C87: >10^10 cells) and treatment goals, though it's not directly measured. The uncertainty about whether cure requires <1 cell or some threshold (C194, Frei, 1972) is appropriately acknowledged. The role of patient variability (C195-C197) is supported by citation to previous work (Palmer and Sorger, 2017). These claims provide important context for interpreting the main findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C80",
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "Cell culture is an appropriate and necessary setting to test the Law and Frei hypothesis, as it enables molecular manipulations and dose-range screens impossible in vivo. The assessment of synergistic interactions in new combinations is typically performed in culture, making this analysis relevant to drug discovery.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80, C98-C100 address the limitation that experiments were performed in cell culture rather than in vivo. The justification that cell culture is necessary for systematic testing (C98) is valid\u2014the molecular manipulations (mutagenesis, CRISPR) and comprehensive dose-response measurements cannot be performed in patients or animal models. The point that in vivo benefit doesn't discriminate among mechanisms (C99) is conceptually sound. The relevance to current drug discovery (C100) is supported by the fact that synergy testing is routinely done in culture. However, the limitation remains that specific resistance frequencies (C80) and some mechanisms (ADCC, immune interactions) cannot be fully captured in culture. The authors appropriately acknowledge these limitations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116"
+    ],
+    "result": "Barcode tracing showed reproducible enrichment of thousands of resistant clones, with >300-fold more barcodes enriched \u226510-fold than expected by chance. Correlations between replicates were highly significant (p<10^-900) though modest in magnitude (0.1-0.3), with false discovery rates of 2.5% and 0.1% for double- and triple-drug resistance at 10-fold enrichment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C111-C116 describe the statistical properties of the barcode tracing experiments. The reproducibility (C111-C112) is supported by comparison to an error model using scrambled barcodes (Figure 4A). The correlation statistics (C113-C114) are clearly reported with appropriate sample sizes (n\u224810^6). The modest correlation magnitude despite high significance is explained by stochastic bottlenecks affecting non-resistant clones\u2014this is a reasonable interpretation. The use of geometric mean (C115) appropriately penalizes irreproducible enrichment. The false discovery rates (C116) are calculated from the error model. These statistical methods appear sound, though the modest correlations (0.1-0.3) do raise some concern about noise in the measurements.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C138"
+    ],
+    "result": "CRISPRi/a screens identified mechanistically relevant cyclophosphamide resistance genes: SLFN11 knockdown conferred resistance; knockdown of DNA repair genes (FANCE, FANCD2, BRCA1, BRCA2) caused hypersensitivity; overexpression of ALDHs and AKRs conferred resistance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C133-C138 are supported by CRISPRi/a screen data (Figure 5, Figure 5\u2014figure supplement 1B,C) and are mechanistically consistent with cyclophosphamide's mode of action as a DNA alkylating agent (C132). The identification of SLFN11 (C133, citations to Murai et al., 2018; Zoppoli et al., 2012) and DNA repair genes (C134-C135) as modifiers of sensitivity validates the screens. The role of ALDHs in cyclophosphamide inactivation (C136-C137, Cox et al., 1975) is well-established. The gene ontology enrichment for DNA repair pathways (Figure 5\u2014figure supplement 1C) provides additional validation. These findings demonstrate the screens can identify biologically relevant resistance mechanisms.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C146",
+      "C147",
+      "C148",
+      "C149",
+      "C150",
+      "C151"
+    ],
+    "result": "CRISPRi identified genes conferring double resistance (e.g., SMARCE1, CAD for rituximab and doxorubicin) and triple resistance (genes involved in translation, chromatin modification, protein degradation). Triple-resistant genes conferred mild resistance and reduced proliferation, potentially acting through growth rate reduction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C146-C151 are supported by CRISPRi screen data (Figure 7A,B). The identification of SMARCE1 (C146, Shain and Pollack, 2013) and CAD (C147, Jost et al., 2017) is supported by citations. The characterization of triple-resistant genes (C148-C150) is based on screen data and growth phenotype analysis (Figure 7\u2014source data 1). The interpretation that these genes may act through proliferation reduction (C151) is reasonable speculation supported by the observation that they cause growth defects (p<10^-5) and the citation that slow proliferation predisposes to chemotherapy resistance (Jost et al., 2017). However, this mechanism is not directly demonstrated\u2014it's an inference from correlative data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C158",
+      "C159",
+      "C160",
+      "C161",
+      "C162",
+      "C163",
+      "C164"
+    ],
+    "result": "Glutathione biosynthesis genes (GCLC, NFE2L2) conferred triple-drug resistance in CRISPRa screens. Glutathione plays an important role in chemotherapy resistance, and high expression of glutathione genes is associated with poor survival in DLBCL. Complementary knockdown of GCLC and SLC7A11 caused hypersensitivity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C158-C164 are supported by CRISPRa screen data (Figure 7C) and multiple lines of evidence. The identification of GCLC and NFE2L2 (C158-C160) is supported by citations (Kitamura and Motohashi, 2018; Zanotto-Filho et al., 2016). The general role of glutathione in chemotherapy resistance (C161, Bansal and Simon, 2018) and specific association with DLBCL survival (C162, Andreadis et al., 2007) provide clinical relevance. The complementary finding that GCLC and SLC7A11 knockdown causes hypersensitivity (C163-C164) provides strong validation\u2014this bidirectional effect (overexpression causes resistance, knockdown causes sensitivity) is compelling evidence for a causal role. This is one of the best-validated findings in the paper.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127"
+    ],
+    "result": "CRISPRa screens were performed in K562 CML cells rather than Pfeiffer DLBCL cells due to technical limitations. Screen hits from K562 could be reproduced in Pfeiffer cells, validating cross-cell-line applicability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C123-C127 describe an important methodological limitation and its mitigation. The inability to generate Pfeiffer CRISPRa cells (C123) and inefficient lentiviral transduction in B lymphocytes (C124, Li et al., 2001) are technical constraints. The use of K562 CML cells (C123) is justified by noting these drugs have been used in CML treatment. The validation that K562 hits reproduce in Pfeiffer (C127) is supported by strong correlations in validation experiments (C142-C143: r=0.82, p<10^-5 and r=0.62, p=0.001). However, the validation in Pfeiffer showed weaker effects than in K562 (Figure 6\u2014figure supplement 1C,D), suggesting some cell-line specificity. This limitation is acknowledged but adequately addressed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C78"
+    ],
+    "result": "High-order drug combinations in R-CHOP showed net effects ranging from approximately additive to slightly antagonistic across three DLBCL cell lines (FIC values: Pfeiffer 0.80\u00b10.15, SU-DHL-6 1.1\u00b10.3, SU-DHL-4 1.7\u00b10.2). Emergent interactions were mostly consistent with no interaction (FIC=1) with only mild antagonism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C76, C78 are supported by experimental data (Figure 2B,C, Figure 2\u2014figure supplement 1B,C). The FIC values (C73-C75) are clearly reported with confidence intervals and sample sizes (n=4-8). The finding that small excesses over additivity for R and P are balanced by antagonism within CHO (C72) is consistent with the pairwise interaction data (C67). The Bliss analysis (C76) provides independent confirmation. The emergent interaction analysis (C78, Cokol et al., 2017) shows no higher-order synergy. The consistency across three cell lines strengthens the conclusions. However, the FIC value for SU-DHL-4 (1.7\u00b10.2) indicates substantial antagonism, which is somewhat downplayed in the interpretation.",
+    "result_type": "MAJOR"
+  }
+]

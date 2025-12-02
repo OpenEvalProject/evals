@@ -1,0 +1,341 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "The KSHV transcriptome is extensively m6A-methylated during lytic replication. Using m6aViewer software, the authors mapped m6A modifications in TREx BCBL1-Rta cells during latency and at 8 hr and 20 hr post-reactivation, identifying 6, 33, and 75 viral m6A peaks respectively. Cellular m6A peaks were also consistently identified across replicates, with enrichment in coding regions and 3'UTRs, and the DRm6ACH consensus motif was confirmed in both cellular and viral mRNAs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C58 collectively demonstrate comprehensive m6A mapping in KSHV-infected cells using a novel peak-calling algorithm. The data show reproducible m6A peak identification across biological replicates (C46), validation by qRT-PCR (C47), and consistent motif enrichment (C56-C58). The experimental design is well-described (C42) and results are supported by multiple figures.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "RNA affinity chromatography coupled with mass spectrometry identified eight members of the Tudor domain 'Royal family' as putative m6A readers. Using m6A-modified viral RNA baits from ORF50 and ORF37, the authors found that all three m6A baits enriched for YTH readers, while m6A-ORF50-1 specifically enriched SND1 and other Royal family members including all three plant agenet members, three PWWP domain proteins, and the chromo protein CBX3.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C78 describe a systematic RNA affinity approach that identified Royal family proteins as m6A readers. The mass spectrometry data (C59-C73) is validated by western blot (C62-C63), and the findings are contextualized with known protein functions (C64-C69, C77-C78). The selective enrichment of specific Royal family members in different baits suggests specificity rather than non-specific binding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "Royal domains display selective binding to m6A-modified RNA in a structure-dependent manner. EMSAs demonstrated that recombinant SND1-C-terminus, FXR1, and PSIP1 Royal domains selectively shifted m6A-ORF50-1 bait but not other baits. The binding appears to require specific RNA structural features, as cropped or stabilized versions of ORF50-1 abolished selective binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C98 provide direct biochemical evidence for Royal domain binding to m6A-modified RNA through EMSAs with recombinant proteins. The structure-dependency is demonstrated through systematic testing of different RNA constructs (C84-C88), and appropriate controls (GST, sperm DNA) are included (C93-C96). The ESI data (C82) confirms bait purity, strengthening the conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C118"
+    ],
+    "result": "SND1 is a bona fide RNA-binding protein that preferentially targets m6A-modified RNAs. RIP-seq in TREx BCBL1-Rta cells identified 5,061 SND1 target transcripts, with ~50% of high-confidence targets being m6A-modified compared to ~24% of non-targets. Gene ontology analysis revealed enrichment for transcripts involved in GTPase activity regulation, nervous system development, and cell morphogenesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C99-C110 and C118 establish SND1 as an RNA-binding protein with preference for m6A-modified RNAs through transcriptome-wide RIP-seq analysis. The enrichment of m6A-bearing RNAs in targets (C107-C109) is statistically meaningful, though the ~1 kB resolution (C102) is acknowledged as a limitation. The lack of correlation between m6A peak number and SND1 enrichment (C110) is appropriately noted.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117"
+    ],
+    "result": "SND1 shares substantial overlap with YTH reader targets for m6A-modified RNAs but has a distinct binding profile. Approximately 50%, 32%, and 37% of SND1 m6A-modified targets are common to YTHDF1, YTHDF2, and YTHDF3 respectively, while only 4%, 1%, and 3% of SND1 targets lacking m6A are shared with these YTH readers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C111-C117 demonstrate that SND1 has both overlapping and distinct targets compared to YTH readers through comparative analysis of published datasets. The much lower overlap for non-m6A targets (C115-C117) supports the specificity of SND1 for m6A-modified RNAs. However, the comparison between different cell types (TREx BCBL1-Rta vs HeLa) is a limitation that should be considered.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133"
+    ],
+    "result": "A novel localized enrichment analysis identified 32,314 transcriptomic regions significantly bound by SND1, with 20% of SND1-enriched intronic regions directly overlapping m6A peaks compared to only 1.3% of unbound regions. Motif analysis revealed enrichment of U-tracts and GAC-containing motifs, with U-tracts immediately followed by m6A motifs in SND1-bound intronic regions containing m6A peaks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C119-C133 describe a novel analytical approach that improves upon transcript-wide analysis by identifying localized binding regions. The 20% vs 1.3% overlap (C126-C127) provides strong evidence for SND1 targeting of m6A-modified regions. The motif analysis (C130-C132) is consistent with known m6A reader binding patterns, and the U-tract enrichment (C133) connects to established m6A biology.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C134",
+      "C135",
+      "C136",
+      "C137"
+    ],
+    "result": "RIP-seq identified differential SND1 binding that correlates with dynamic m6A modification during KSHV infection. Examples include the TPO transcript intron that gains m6A modification and SND1 binding during lytic replication, and DUSP5P1-RHOU transcripts where specific m6A peaks and SND1 binding disappear at 20 hr post-reactivation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C134-C137 demonstrate dynamic regulation of SND1 binding correlated with m6A status during viral infection. The specific examples (TPO, DUSP5P1-RHOU) provide concrete evidence for this correlation, though additional validation of these specific interactions would strengthen the conclusions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C138",
+      "C139",
+      "C140",
+      "C141",
+      "C142",
+      "C143",
+      "C144",
+      "C145",
+      "C146",
+      "C147",
+      "C148"
+    ],
+    "result": "eCLIP analysis confirms SND1 has a binding profile similar to established m6A readers. Analysis of ENCODE datasets showed 77% overlap of m6A-modified transcripts between TREx BCBL1-Rta and HepG2 cells, with 88% of overlapping SND1-bound transcripts containing m6A sites. SND1 showed comparable binding site overlap with m6A peaks to established readers and recognized the consensus GGAC motif, with 58% of SND1 binding sites on m6A-modified exons directly overlapping m6A sites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C139-C148 provide independent validation of SND1 as an m6A reader using publicly available eCLIP data. The analysis is comprehensive, including appropriate controls (TIAL1), and the GGAC motif enrichment (C145-C147) is consistent with m6A reader function. The cross-cell-line validation strengthens the generalizability of the findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C149",
+      "C150",
+      "C151",
+      "C152",
+      "C153",
+      "C154",
+      "C155",
+      "C156",
+      "C157",
+      "C158",
+      "C159",
+      "C160"
+    ],
+    "result": "SND1 binds to KSHV ORF50 RNA with high affinity. RIP-seq identified ORF50 as a high-confidence SND1 target, with RIP-qPCR validation showing ~40-fold enrichment in the second exon and ~10-fold enrichment in the intron. Other Royal family members (FXR1, FXR2, PSIP1) and YTH readers (YTHDF1, YTHDF3) also bound ORF50 RNA, but SND1 displayed the highest affinity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C149-C160 establish ORF50 RNA as a key SND1 target through both genome-wide (RIP-seq) and targeted (RIP-qPCR) approaches. The validation by RIP-qPCR (C154-C155) confirms the RIP-seq findings, and testing of multiple readers (C156-C159) provides context for SND1's relative binding affinity. The comparison with ORF57 (C150) serves as an appropriate control.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C161",
+      "C162",
+      "C163",
+      "C164",
+      "C165",
+      "C166",
+      "C167",
+      "C168"
+    ],
+    "result": "SND1 depletion in TREx BCBL1-Rta cells does not significantly affect KSHV lytic replication. Following 24 hr of lytic replication, there were no significant differences in viral transcript or protein levels between scramble and SND1 knockdown cells, with the exception of upregulation of ORF71 and ORF72 mRNAs. This lack of phenotype is attributed to constitutive overexpression of Myc-tagged RTA masking SND1's role in ORF50 RNA stabilization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C161-C168 accurately report the lack of phenotype in TREx BCBL1-Rta cells and provide a reasonable explanation (C166-C168). The RNA-seq data (C164) confirms the qRT-PCR and western blot results. The interpretation that RTA overexpression masks SND1's function is logical and is subsequently tested in BCBL1 cells.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C169",
+      "C170",
+      "C171",
+      "C172"
+    ],
+    "result": "SND1 is essential for KSHV lytic replication in BCBL1 cells. SND1 knockdown in BCBL1 cells resulted in dramatic decreases in viral RNAs including ORF50, and reduced RTA, ORF57, and ORF54 protein levels. RNA-seq confirmed that 48 KSHV RNAs were significantly downregulated in SND1-depleted cells, indicating global impairment of lytic replication downstream of RTA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C169-C172 demonstrate SND1's essential role in KSHV replication through multiple complementary approaches (qRT-PCR, western blot, RNA-seq). The dramatic phenotype in BCBL1 cells contrasts with TREx BCBL1-Rta cells, supporting the hypothesis that endogenous RTA expression is affected. The use of two independent shRNAs strengthens the conclusion that effects are specific to SND1 depletion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C173",
+      "C174",
+      "C175",
+      "C176",
+      "C177"
+    ],
+    "result": "SND1 does not regulate splicing or transcriptional activation of ORF50. Splicing analysis revealed no significant differences between scramble and SND1-depleted cells for cellular or viral transcripts. ChIP experiments showed no significant enrichment of SND1 at the ORF50 promoter or other viral promoters, and RNA-seq showed no downregulated viral gene expression in TREx BCBL1-Rta SND1-depleted cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C173-C177 systematically rule out alternative mechanisms for SND1 function through appropriate experiments (splicing analysis, ChIP, RNA-seq). The negative results are important for establishing that SND1 acts post-transcriptionally rather than at the transcriptional or splicing level, supporting the RNA stability hypothesis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C178",
+      "C179",
+      "C180",
+      "C181"
+    ],
+    "result": "SND1 stabilizes unspliced ORF50 RNA. RNA stability assays in TREx BCBL1-Rta cells showed that native ORF50 RNA was significantly more unstable in SND1-depleted cells, with ~80% remaining at 6 hr post-transcription inhibition in scramble cells versus ~50% in depleted cells. Other high-confidence SND1 KSHV RNA targets (ORF71, ORF72) decayed similarly in scramble and depleted cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C178-C181 provide direct evidence for SND1's role in ORF50 RNA stabilization through actinomycin D chase experiments. The specific effect on ORF50 versus other SND1 targets (C181) suggests transcript-specific regulation. The experimental design appropriately uses TREx BCBL1-Rta cells to avoid confounding effects of sodium butyrate on RNA decay.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C182",
+      "C183",
+      "C184",
+      "C185",
+      "C186",
+      "C187",
+      "C188",
+      "C189"
+    ],
+    "result": "m6A modification has a pro-viral role in KSHV lytic replication. Transient METTL3 depletion reduced viral transcript and protein levels, while FTO depletion increased them. Depletion of YTHDF1 or YTHDF3 decreased ORF50 RNA and other lytic RNAs, with YTHDF1 depletion also reducing viral protein levels. YTHDF2 depletion decreased RTA protein without affecting most viral RNA levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C182-C189 demonstrate the pro-viral role of m6A through manipulation of writers, erasers, and readers. The opposite effects of METTL3 vs FTO depletion (C182-C184) are internally consistent. However, the inconsistent METTL3 knockdown efficiency (C182-C183) and inability to achieve stable YTHDF2 depletion suggest technical challenges that somewhat limit the strength of these conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C190",
+      "C191",
+      "C192",
+      "C193",
+      "C194",
+      "C195",
+      "C196"
+    ],
+    "result": "m6A modification of ORF50 RNA regulates SND1 binding. Point mutation in the ORF50-1 motif significantly reduced m6A enrichment, confirming this site is m6A-modified, though it did not significantly decrease SND1 binding, indicating multiple binding sites are involved. Treatment with the m6A inhibitor DAA effectively reduced m6A enrichment across all ORF50 regions and led to significant decrease in SND1 binding, completely abolishing binding to native ORF50 transcript.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C190-C196 provide strong evidence that m6A modification regulates SND1 binding through both mutational analysis and pharmacological inhibition. The DAA experiments (C193-C195) are particularly compelling, showing complete loss of SND1 binding upon m6A inhibition. The observation that single point mutation is insufficient (C192) appropriately indicates multiple m6A sites contribute to SND1 binding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9"
+    ],
+    "result": "The study identifies Royal family members as m6A readers and establishes SND1 as essential for KSHV lytic replication through m6A-dependent stabilization of ORF50 RNA. Seven Royal family members were identified as putative m6A readers, RIP-seq and eCLIP characterized SND1's transcriptome-wide binding profile, and functional studies demonstrated that m6A modification of ORF50 RNA is critical for SND1 binding, which stabilizes the transcript and is essential for viral replication.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C9 represent the main conclusions of the manuscript, which are well-supported by the comprehensive experimental evidence including RNA affinity/mass spec (C3), EMSAs (C9), RIP-seq/eCLIP (C4), DAA treatment (C5), RNA stability assays (C6), and knockdown experiments (C7-C8). The multiple lines of evidence converge to support these major findings.",
+    "result_type": "MAJOR"
+  }
+]

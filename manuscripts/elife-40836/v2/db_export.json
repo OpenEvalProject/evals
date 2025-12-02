@@ -1,0 +1,1628 @@
+{
+  "submission": {
+    "id": "fcf9dc39-6682-4948-b8e8-9d76f8ab9b12",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T07:54:40.176271Z",
+    "updated_at": "2025-12-02T07:54:40.176271Z"
+  },
+  "content": [
+    {
+      "id": "3ab41311-f9d8-485b-ad1b-faba3279b961",
+      "submission_id": "fcf9dc39-6682-4948-b8e8-9d76f8ab9b12",
+      "content_type": "manuscript",
+      "content_text": "# Synergy between RecBCD subunits is essential for efficient DNA unwinding\n\n## Authors\n\n- Rani Zananiri<sup>1</sup> ([ORCID: 0000-0002-0094-4197](https://orcid.org/0000-0002-0094-4197))\n- Omri Malik<sup>1</sup>\n- Sergei Rudnizky<sup>1</sup>\n- Vera Gaydar<sup>1</sup>\n- Roman Kreiserman<sup>1</sup>\n- Arnon Henn<sup>1</sup> ([ORCID: 0000-0001-6360-7211](https://orcid.org/0000-0001-6360-7211))\n- Ariel Kaplan<sup>1</sup> ([ORCID: 0000-0002-9731-6962](https://orcid.org/0000-0002-9731-6962)) \u2020\n\n### Affiliations\n\n1. Faculty of Biology Technion \u2013 Israel Institute of Technology Haifa Israel\n2. Russell Berrie Nanotechnology Institute Technion \u2013 Israel Institute of Technology Haifa Israel\n3. Faculty of Physics Technion \u2013 Israel Institute of Technology Haifa Israel\n\n\u2020 Corresponding author\n\n## Abstract\n\nThe subunits of the bacterial RecBCD act in coordination, rapidly and processively unwinding DNA at the site of a double strand break. RecBCD is able to displace DNA-binding proteins, suggesting that it generates high forces, but the specific role of each subunit in the force generation is unclear. Here, we present a novel optical tweezers assay that allows monitoring the activity of RecBCD\u2019s individual subunits, when they are part of an intact full complex. We show that RecBCD and its subunits are able to generate forces up to 25\u201340 pN without a significant effect on their velocity. Moreover, the isolated RecD translocates fast but is a weak helicase with limited processivity. Experiments at a broad range of [ATP] and forces suggest that RecD unwinds DNA as a Brownian ratchet, rectified by ATP binding, and that the presence of the other subunits shifts the ratchet equilibrium towards the post-translocation state.\n\n## Introduction\n\nThe homologous recombination (HR) pathway, responsible for the repair of double-strand breaks (DSBs), is essential to preserve the integrity of the genome and exists in all domains of life\u00a0(Sung and Klein, 2006). In Escherichia coli, the HR process is initiated by RecBCD, which binds to the damage site and unwinds the DNA, in preparation for strand invasion\u00a0(Dillingham and Kowalczykowski, 2008). RecBCD possesses three subunits, two of which are super-family one helicases: RecB, a 134 kDa, 3\u2019\u22125\u2019 helicase and RecD, a 67 kDa helicase with 5\u2019\u22123\u2019 polarity. The RecC subunit is a 128 kDa, catalytically dead helicase-nuclease sharing a similar structure to RecB, which acts as a scaffold protein stapling RecB and RecD\u00a0(Dillingham and Kowalczykowski, 2008), and is responsible for recognition of the regulatory Chi sequence\u00a0(Handa et al., 2012; Singleton et al., 2004). Previous studies (Churchill et al., 1999; Dillingham et al., 2003; Farah and Smith, 1997; Kowalczykowski et al., 1994; Smith, 2012; Spies et al., 2003; Wiktor et al., 2018) have resulted in a working model for the initiation process of HR. First, RecBCD binds the blunt end DNA resulting from the DSB and unwinds the DNA, primarily nicking the 3\u2019 tail. The opposing translocation polarities of RecB and RecD allow them to simultaneously translocate on opposite strands of the DNA\u00a0(Dillingham et al., 2003; Taylor and Smith, 2003) but, since RecD is faster than RecB under physiological conditions\u00a0(Dillingham and Kowalczykowski, 2008; Spies et al., 2007; Taylor and Smith, 2003), a single-stranded loop accumulates on the 3\u2019-ended strand\u00a0(Taylor and Smith, 2003; Wong et al., 2006). A major conformational change in RecBCD takes place upon recognition of the Chi sequence by the RecC subunit (Spies et al., 2007; Taylor et al., 2014), which switches RecB\u2019s nuclease activity (Wang et al., 2000) from nicking primarily the 3\u2019-ended strand to nicking primarily the 5\u2019-ended strand (Anderson and Kowalczykowski, 1997; Dixon and Kowalczykowski, 1993). Finally, RecA is recruited to the 3\u2019-end of the ssDNA. The RecA nucleofilament is then used to invade the acceptor DNA.\n\nBulk and single molecule biochemical and biophysical studies of RecBCD revealed that it possesses a remarkable unwinding rate approaching\u00a0~\u00a01600 bp s\u22121\u00a0(Handa et al., 2005; Liu et al., 2013; Lucius et al., 2002; Roman and Kowalczykowski, 1989a; Xie et al., 2013), and real-time imaging of live E. coli cells has recently confirmed this result\u00a0(Wiktor et al., 2018). In a recent work, we showed that this fast rate is supported by additional, weak ATP-binding sites, beyond the catalytic ones in RecB and RecD, that serve as auxiliary sites from which ATP is transferred to the catalytic sites. This mechanism was shown to result in a significant increase in RecBCD\u2019s unwinding velocity at intermediate ATP concentrations\u00a0(Zananiri et al., 2017). Other works, using ATPase deficient mutants in both subunits, showed that fully active helicase subunits are also required to achieve the fast rates of the complex (Xie et al., 2013), suggesting an important role for interactions between the subunits. This is further strengthened by the overall structural organization of RecBCD. The crystal structure of RecBCD\u2019s initiation complex shows that 4\u20136 bps of DNA are unwound at the \u2018pin\u2019 domain of RecC after which the split strands are directed towards the helicase subunits, RecB and RecD\u00a0(Singleton et al., 2004; Wilkinson et al., 2016). As a result, one model of RecBCD\u2019s translocation postulates that the helicase subunits pull the nascent DNA strands against the pin to catalyze unwinding. Moreover, it was proposed that there is a separation between helicase translocation and unwinding, whereby RecBCD unwinds 4\u20136 bp of DNA using the pin in a distinct step, and only then the helicase subunits pull the unwound DNA\u00a0(Lohman and Fazio, 2018). In addition, an \u2018arm\u2019 domain of RecB interacts with the DNA 12 bps ahead\u00a0(Saikrishnan et al., 2008; Singleton et al., 2004). It was suggested to direct the DNA ends toward the helicase, acting as a guide for the duplex DNA during translocation, to mediate the large translocation step across ssDNA gaps, or to play a direct role in destabilizing the duplex ahead of the translocating enzyme (Bianco and Kowalczykowski, 2000; Dillingham and Kowalczykowski, 2008; Simon et al., 2016). Nonetheless, since the DNA encounters these two structural domains before reaching the helicase domains in RecB and RecD, it was proposed that they play roles in destabilizing the fork (Lohman and Fazio, 2018; Simon et al., 2016; Wu et al., 2012; Xie et al., 2013), but their role in the unwinding reaction is still unclear.\n\nMotivated by the fact that long stretches of naked DNA are rare in vivo, the ability of RecBCD to overcome DNA binding proteins \u2018roadblocks\u2019 was studied in vitro\u00a0(Finkelstein et al., 2010). In these studies, it was shown that RecBCD is able to evict or displace bound proteins or complexes, such as RNA polymerase, EcoRI, the lac repressor and even nucleosomes. RecBCD did not pause during these collisions and often pushed proteins thousands of base-pairs before evicting them from DNA. A recent study addressing the physiologically\u00a0relevant case of multiple roadblocks, showed that RecBCD is able to push the proximal one into the neighboring one, which results in its eviction from the DNA\u00a0(Terakawa et al., 2017). Interestingly, it is likely that the ability to displace these \u2018roadblocks\u2019 is a reflection of the high forces generated by RecBCD. For example, single-molecule studies using DNA unzipping to probe DNA-bound proteins have shown that\u00a0~\u00a020\u201330 pN of force are required to evict RNA polymerase (Jin et al., 2010), nucleosomes\u00a0(Hall et al., 2009; Rudnizky et al., 2016; ), and the Egr-1 transcription factor\u00a0(Rudnizky et al., 2018). However, a previous single-molecule study reported that RecBCD is unable to translocate against forces higher than\u00a0~8 pN\u00a0(Perkins et al., 2004), although these measurements were performed at very low ATP concentrations (<15 \u03bcM). Hence, addressing the mechanism of force generation by RecBCD, and the specific roles played by its subunits, at physiological ATP concentrations, is of great interest.\n\nHere, we present a novel optical tweezers assay that allows us to monitor the activity of RecBCD\u2019s individual subunits in the context of a native, full complex. Using this assay, we study the activity of RecD, and compare it with the activity of an isolated RecD subunit, probed using a classical single-molecule helicase assay. Our results show that RecD necessitates structural features present in the other subunits to achieve its full processivity and velocity. Next, by repeating these experiments at a broad range of [ATP] and forces, and comparing the results with the prediction of different kinetic models, we determined that RecD likely functions as a Brownian ratchet, where [ATP] binding traps forward translocation fluctuations to produce net directional movement. Remarkably, our data reveals that structural elements in RecC or RecB shift the ratchet equilibrium towards the post-translocation state, thus stimulating unwinding.\n\n## Results\n\n### Optical tweezers can monitor the force response of individual subunits in a native, full RecBCD complex\n\nSingle-molecule experiments using optical or magnetic tweezers have proven to be very useful for studying the mechanism of unwinding by helicases (Dumont et al., 2006; Johnson et al., 2007; Lionnet et al., 2007; Manosas et al., 2010; Manosas et al., 2013; Qi et al., 2013). In these experiments, a DNA or RNA hairpin is held under tension by attaching it to molecular \u2018handles\u2019 that are bound to two trapped microscopic beads (or a single trapped bead and a fixed attachment point). The construct is then exposed to the helicase under study, which can bind the \u2018fork\u2019 of the DNA hairpin and unwind the DNA, resulting in a measurable extension change. Unfortunately, this assay is not appropriate for the study of RecBCD since, in line with its biological function that requires binding to DSB sites, RecBCD\u2019s affinity towards DNA lacking a double stranded end is 106-fold weaker than that for blunt ends or short overhangs\u00a0(Bianco et al., 2001; Roman and Kowalczykowski, 1989a; Taylor and Smith, 1985). Hence, to monitor unwinding and translocation by RecBCD we developed a novel single molecule assay based on a dual trap optical tweezers setup. A DNA construct consisting of a stem with a blunt end mimicking a dsDNA break at one end, is attached to two dsDNA \u2018tracks\u2019, each containing a specific tag at its 5\u2019 end, that enable binding to two specifically modified microscopic beads (Figure 1a). Each of the beads is trapped in a separate optical trap, thus allowing to apply tension on the construct and monitor its extension. The tether is then moved into a different channel of the laminar flow cell that contains ATP (2 mM, unless specified otherwise) and RecBCD (25 nM). The enzyme binds the blunt end of the DNA and translocates on the stem, without affecting the extension of the tether, until it reaches the fork. Then, due to the opposite polarities of RecB and RecD, each of the subunits translocates on an opposite track, as evidenced by a decrease in the tether\u2019s extension (Figure 1b) and an increase in the tension (Figure 1c). As the force increases beyond 42\u201350 pN, RecBCD dissociates from the track, resulting in breaking of the tether (Figure 1b\u2013c). Control experiments where the stem\u2019s end was blocked by ligating a short loop or in the absence of ATP showed no translocation activity. Remarkably, this setup enables us also to study the activity of the individual subunits of RecBCD: If one track is made very short (35 nt; Figure 1d), the subunit translocating on it reaches the bead in a very short time, and only the activity of the second subunit, translocating on a long track (4200 bp), affects the tether\u2019s extension. Hence, by asymmetrically manipulating the tracks\u2019 length, we can directly measure the activity of the individual subunits in the WT RecBCD complex without the need for mutations. Moreover, the applied force directly opposes translocation by each of the subunits as it unwinds its track (Figure 1\u2014figure supplement 1), allowing us to study the subunits\u2019 mechanical response. Figure 1e shows representative traces probing the activities of both subunits (left), RecD (middle), and RecB (right) at four ATP concentrations.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/40836/elife-40836-fig1-v2.jpg)\n\n**Figure 1.:** (a) Schematic representation of the experimental optical tweezers setup. From top to bottom: RecBCD binds to, and translocates on a DNA stem connected to optically trapped beads through DNA \u2018tracks\u2019. Upon reaching the fork, the helicase subunits translocate in different directions due to their opposing polarities, shortening the tether length and increasing the tension on it. The force increases up to a point where RecBCD dissociates from the construct. (b) Two representative contour-time traces, for [ATP]\u00a0=\u00a02 mM (blue) and [ATP]\u00a0=\u00a0350 uM (purple). Raw data is shown in grey, filtered data (fc\u00a0=\u00a0250 Hz) is shown in blue and purple. (c) The corresponding force-time trace. Raw data is shown in grey; filtered data is shown in blue. (d) Symmetric molecular construct (top, 600 bp and 600 bp) to probe RecBCD and asymmetric constructs (middle, 35 nt and 4200 bp, and bottom, 4200 bp and 35 nt) to probe RecB and RecD, respectively. (e) Representative traces probing both translocases (left), RecD (middle) and RecD (right), at different ATP concentrations (purple, 2 mM; gray, 1 mM; red, 100 \u03bcM; green, 20 \u03bcM). Raw data is shown in light colors, filtered data (fc\u00a0=\u00a0250 Hz) is shown in dark colors.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/40836/elife-40836-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (a)\u00a0During unwinding of the \u2018stem\u2019, the force acts on the DNA fork, not on RecBCD, and is below the force required to \u2018unzip\u2019 the DNA. (b\u2013c) As RecBCD finishes unwinding the stem and each subunit engages its track, an effective force acts pulling the DNA on one side and each subunit on the other, in the direction opposite to its translocation. This opposing force functions as an inhibitor of the translocation step.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/40836/elife-40836-fig1-figsupp2-v2.jpg)\n\n**Figure 1\u2014figure supplement 2.:** (a)\u00a0To verify that all force measurements are in the traps\u2019 linear regime, two similar beads are simultaneously trapped in a weak (k\u00a0~\u00a00.2 pN/nm) and strong (k\u00a0~\u00a00.75 pN/nm) trap, respectively. A flowing buffer creates a Stoke\u2019s flow on the trapped beads, and thus a displacement that depends on the traps\u2019 stiffness. Since the displacement of the bead in the stronger trap is small (<35 nm) the force measurement is assumed to be in the linear regime, and enables to check the linearity of the weak trap, where the bead\u2019s displacement is larger. (b) Calculated forces, based on the beads\u2019 displacement and the traps\u2019 calibrated stiffness. The difference in slope stems from the variability (~10%) in the size of the beads. (c) The force, measured using the strongly trap bead, remains linear (within 1%) with the displacement of the weakly trapped bead up to the measured displacement of\u00a0~\u00a0140 nm.\n\nInterestingly, a previous work showed that when the unwinding and translocation of a surface-attached RecBCD was probed against an applied force, direction reversals were observed\u00a0(Perkins et al., 2004). We did not observe these events in our traces for RecBCD or its subunits. Moreover, it was reported that RecBCD is unable to function against forces larger than\u00a0~6 pN, in stark contrast to the high forces measured in our experiments\u00a0(Perkins et al., 2004). Since the authors of the previous work ruled out the potential effects of the protein biotinylation or surface interactions, it is possible that these effects are evident only for longer runs of activity and at the low [ATP] concentrations used in their work in order to achieve high resolution.\n\nFinally, since the traces in our experiments are terminated by the force-induced dissociation of the complex from DNA, the observed lengths of the unwinding traces (490\u00a0\u00b1\u00a013 bp, 116\u00a0\u00b1\u00a016 bp and 380\u00a0\u00b1\u00a043 bp, mean\u00a0\u00b1\u00a0s.e.m, for RecBCD, RecD and RecB, respectively) do not represent the processivity of the enzyme or its subunits.\n\n### Synergy between its subunits supports unwinding by RecBCD\n\nWe use in our experiments a passive mode of operation, where the position of the optical traps is constant and, as the distance decreases between the beads, the force against which RecBCD or a subunit has to translocate increases (Figure 1b\u2013c). Hence, we probe the velocity against a range of forces in each individual experimental trace (Materials\u00a0and\u00a0methods). We first measured force-velocity curves under saturating ATP concentrations, for both RecBCD and its subunits. As expected for our experimental geometry, in which the helicase translocates against an opposing force, the velocities of RecBCD and its individual subunits decrease due to the external force (Figure 2). However, the drop in the velocity takes place only above a relatively large range of forces at which the opposing force has no effect. This indicates that, in this range, the velocity is not limited by the force-sensitive translocation step, but rather by a force-independent chemical step in RecBCD\u2019s mechano-chemical reaction cycle. At higher forces, translocation becomes rate-limiting and results in slowing down RecBCD and its subunits. The force at which the velocity drops to half its maximal value is an indication of the maximal force the enzyme can generate. Hence, Figure 2a indicates that RecBCD is able to generate a high force (43\u00a0\u00b1\u00a02 pN; Fitted force for half-maximal velocity\u00a0\u00b1\u00a0standard error). Considering the typical forces required to displace DNA-bound proteins, as measured by unzipping the DNA\u00a0(Jiang et al., 2005; Koch and Wang, 2003; Koch et al., 2002; Meng et al., 2017; Rudnizky et al., 2018) or by using a second DNA molecule as a probe\u00a0(Noom et al., 2007), our measurements provide a mechanical basis for the ability of RecBCD to overcome protein \u2018roadblocks\u2019\u00a0(Finkelstein et al., 2010; Gorman and Greene, 2008; Terakawa et al., 2017). Interestingly, although RecB is able to generate similar forces (40\u00a0\u00b1\u00a03 pN; Figure 2c), the maximal forces generated by RecD are\u00a0~\u00a030% smaller (29\u00a0\u00b1\u00a03 pN; Figure 2b), suggesting that this subunit, by itself, is unable to generate the maximal forces observed for RecBCD.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/40836/elife-40836-fig2-v2.jpg)\n\n**Figure 2.:** Force velocity curves at [ATP]\u00a0=\u00a02 mM for\u00a0(a) RecBCD, (b) RecD and (c) RecB. Data shown as mean\u00a0\u00b1\u00a0s.e.m.; the number of experiments is listed in Supplementary file 4. Lines through the data are best fits to Equation 1.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/40836/elife-40836-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (a)\u00a0Force-velocity curves on the asymmetric construct probing RecD, for RecBCD (blue, data similar to Figure 2d) and RecBK29QCD (red), at [ATP]\u00a0=\u00a02 mM. Data shown as mean\u00a0\u00b1\u00a0s.e.m., lines through the data are best fits to Equation 1. The number of experiments is listed in Supplementary file 4. (b) Representative trace for RecBC activity on the symmetric construct. RecBC\u2019s secondary translocase can sustain\u00a0forces up to 8.3\u00a0\u00b1\u00a01.2 pN (mean\u00a0\u00b1\u00a0s.e.m.). Raw data is shown in grey, filtered data (fc\u00a0=\u00a0250 Hz) is shown in red.\n\nRecent studies have shown that RecB possesses a \u2018secondary\u2019 translocase activity (Wu et al., 2010; Wu et al., 2012; Xie et al., 2013), which translocates on DNA in the 5\u2019\u21923\u2019 direction, that\u00a0is with an opposite polarity with respect to its \u2018primary\u2019 translocase. Hence, the activity attributed above to RecD may, in principle, be the result of both RecD and RecB\u2019s secondary translocase. To test whether the secondary translocase contributes to the activity observed in our measurements, we expressed and purified the mutant RecBK29QCD, which is deficient in RecB\u2019s ATPase activity and was shown to be inactive for both translocases (primary and secondary) of RecB\u00a0(Xie et al., 2013). If the secondary translocase affects our measurements, we would expect a different behavior between RecBCD and RecBK29QCD on the asymmetric construct designed to probe RecD. However, Figure 2\u2014figure supplement 1a shows that the measured force-velocity curves are indistinguishable. In addition, we measured the activity of the RecBC complex, lacking the RecD subunit. Although we were able to follow its activity in our assay (Figure 2\u2014figure supplement 1b), our measurements show that it can sustain maximal forces of only\u00a0~9 pN\u2019s, suggesting that the secondary translocase is not able to maintain its grip of the DNA, and therefore not active, at higher forces. Taken together, this indicates that our measurements are indeed able to probe separately the activities of RecB and RecD as they are part of a full complex.\n\nAt low forces, experiments with the asymmetric constructs reveal that both subunits unwind DNA at\u00a0~400 bp/s. Experiments probing the whole complex, where each subunit unwinds a different track, show an unwinding rate of\u00a0~1100 bp/s, significantly higher than the sum of the rates measured for the individual subunits. This is in line with previous experiments showing that, while each of the subunits (RecB, RecD) is capable of independently catalyzing unwinding, neither of the subunits alone can reach the unwinding rates of RecBCD\u00a0(Dillingham et al., 2005; Pavankumar et al., 2010; Taylor and Smith, 2003; Xie et al., 2013). The 2\u20133 fold higher velocity previously measured for RecBCD relative to its subunits indicates some degree of synergy between them. Our results, which show a 1.4-fold faster activity when both subunits are present but unwinding different substrates, suggest that at least part of this effect results from direct allosteric interactions between the subunits.\n\nOur data shows that DNA is efficiently unwound by the activity of the RecD subunit when it is part of the full RecBCD complex. Therefore, to clarify whether the rest of the complex supports the activity of RecD, it is essential to examine whether RecD as an isolated subunit can also support unwinding. Hence, we expressed and purified the RecD protein (Materials and methods) to compare its force-velocity behavior with that of RecD in complex. Notably, since the experimental configuration used so far takes advantage of the two opposite translocations of the subunits, each one taking place on a different strand of the DNA, it cannot be used to test an isolated subunit. Thus, we used a different experimental geometry (Figure 3a), as was previously used for other helicases and polymerases (see for example Refs. (Dumont et al., 2006; Johnson et al., 2007; Lionnet et al., 2007; Malik et al., 2017b; Malik et al., 2017a; Manosas et al., 2010; Manosas et al., 2012; Manosas et al., 2013; Morin et al., 2012; Qi et al., 2013)). Here, a DNA hairpin is held under tension between two handles attached to beads trapped in optical tweezers. Upon introduction, the helicase unwinds the hairpin, increasing the extension of the tether and reducing the tension on the hairpin.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/40836/elife-40836-fig3-v2.jpg)\n\n**Figure 3.:** (a)\u00a0Schematic representation of RecD unwinding in optical tweezers. (b) Representative unwinding trace. Raw data is shown in grey, filtered data (fc\u00a0=\u00a0250 Hz) is shown in blue. [ATP]\u00a0=\u00a02 mM. (c) Velocity-force curve for the isolated RecD at 2 mM ATP follows a sigmoidal-like behavior saturating at high forces. Data shown as mean\u00a0\u00b1\u00a0s.e.m., number of traces in Supplementary file 4. The line through the data is a best fit to Equation S29, Supplementary file 3. (d) Force-free velocities for RecD, obtained from (c) and Figure 2b by extrapolating to F\u00a0=\u00a00, show\u00a0~\u00a02\u20133 orders of magnitude difference between the enzyme in-complex and the isolated one (Extrapolated result\u00a0\u00b1\u00a0s.e.).\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/40836/elife-40836-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** Contour-time trace for long timescales shows peaks of RecD activity. Zoomed-in windows indicate individual activity events of RecD followed by dissociation. [ATP]\u00a0=\u00a02 mM. Raw data is shown in grey, filtered data (fc\u00a0=\u00a0250 Hz) is shown in black.\n\nThe contour-time data for RecD showed multiple activity peaks per trace (Figure 3\u2014figure supplement 1). Each of these peaks, when zoomed in, showed a gradual increase in the extension of the tether, followed by a sudden drop (Figure 3b and Figure 3\u2014figure supplement 1). We interpret this as multiple unwinding events that are terminated by dissociation of the enzyme. RecD showed poor processivity (~\u00a050 bps), in accordance with previous measurements (Dillingham and Kowalczykowski, 2008). When compared with the reported\u00a0~\u00a030,000 bp processivity of RecBCD\u00a0(Dillingham and Kowalczykowski, 2008), this indicates that the presence of RecC and/or RecB, perhaps acting as a \u2018toehold\u2019 as previously proposed\u00a0(Carter et al., 2016), is required to fully achieve RecBCD\u2019s processivity.\n\nAs opposed to the previous setup (Figure 1a), here the force acts as an aiding factor for the helicase and thus, as the helicase unwinds and the force drops, the velocity decreases (Figure 3a). The force-velocity curve shows a logistic shape with a plateau at high forces (Figure 3c) indicating that when the fork is significantly destabilized, RecD\u2019s activity is mainly limited by a chemical step in its mechano-chemical cycle. However, at low forces, RecD\u2019s velocity dropped significantly indicating that RecD is severely limited in its ability to disrupt the dsDNA fork, that is that the isolated RecD is a weak helicase. Remarkably, although the two experimental configurations used (Figure 1a and Figure 3a) are different, their extrapolation to zero force reflects the same physical situation (i.e.\u00a0unwinding of an unperturbed dsDNA), and therefore are expected to exhibit the same unwinding rates. However, comparing RecD\u2019s activity in both configurations, extrapolated to zero force, reveals a significant difference (Figure 3d): while RecD in complex can unwind and translocate at very fast rates (~430 bp/s), the isolated subunit is practically unable to unwind the fork. Thus, we conclude that the presence of the RecC and/or RecB subunits is necessary for the RecD subunit to efficiently and processively unwind DNA.\n\n### RecBC stimulates RecD unwinding, by shifting the translocation equilibrium\n\nMechanistically, the facilitating action of RecB/RecC on RecD may be achieved by different means, such as allosterically increasing the rate of ATP binding, hydrolysis or product release. Therefore, to further clarify the mechanism by which the other subunits in the complex support unwinding by RecD, we analyzed the mechano-chemical cycle of RecD, and the expected effect of an external force in the two sets of experiments presented above, characterizing the unwinding of RecD in complex and the isolated RecD. The ATPase cycle of the helicase can be simplified to the following minimal three step reaction, described by ATP binding (with forward and reverse rate rates $k_{+b}$ and\u00a0$k_{-b}$, respectively), irreversible hydrolysis ($k_{h}$) and product release ($k_{r}$) steps:\n\n$R+T\u21cck_{\u2212b}k_{+b}R\u22c5T\u2192k_{h}R\u22c5D\u22c5Pi\u2192k_{r}R+D+Pi$\u00a0,\u00a0where $R$\u00a0is the helicase-DNA complex, $T$\u00a0is ATP, $D$\u00a0is ADP and $Pi$\u00a0is inorganic phosphate. In addition, for a processive helicase performing multiple enzymatic cycles without dissociation, the complete kinetic cycle must include also a translocation step, at which the helicase moves forward by a single step ($R_{n}\u2192R_{n+1}$, where $n$\u00a0denotes the number of steps carried out by the helicase on the DNA substrate). To characterize how this translocation step is incorporated into the enzyme\u2019s ATPase cycle, two questions need to be addressed\u00a0(Malik et al., 2017a): First, it is necessary to determine the location of the translocation step within the chemical steps comprising the ATPase cycle. For instance, the translocation step for the XPD helicase takes place after ATP binding\u00a0(Qi et al., 2013). In addition, the mechanism by which translocation takes place should be elucidated, between two alternative ideal mechanisms: a 'power stroke' (PS) mechanism postulates that the energy resulting from a chemical step is directly harnessed to power translocation, making the chemical reaction and the translocation tightly coupled. (Note, that the power stroke mechanism should not be confused with the large conformational change that powers the movement, also denoted 'power stroke' in the molecular motors community). For a PS mechanism, the translocation is integrated with the ATPase cycle by considering a specific chemical step as involving also the translocation. In contrast, a 'Brownian ratchet' (BR) mechanism postulates that the enzyme thermally and rapidly fluctuates between the pre- and post-translocation state, and that these fluctuations are converted into directional movement by a chemical step that 'traps' the post-translocation configuration. Hence, a BR mechanism is integrated by including an additional step in the cycle, before the rectifying chemical step. Taken together, this means we can postulate six models for the Mechano-chemical cycle, as described in the Supplementary file 1. All these models predict an [ATP]-dependent unwinding rate ($v$) that follows Michaelis-Menten kinetics, $v=v_{max}T/K_{M}+T$, but have different predictions for the steady state kinetic parameters $v_{max}$ and $K_{M}$ as a function of the applied force.\n\nNotably, each of our experimental geometries (Figure 1a and Figure 3a), will be affected differently by the force. In the assay of Figure 1a, when RecD is active as part of the whole complex, the external force directly opposes translocation. Assuming that the translocation step is a simple, single barrier crossing step, the forward and backwards kinetic rates are modulated by the factors $exp\u2061-Fx^{\u2021}/k_{b}T$ and\u00a0$exp\u2061F\\delta-x^{\u2021}/k_{b}T$, respectively, where $x^{\u2021}$ is the distance to the forward translocation transition state and $\\delta$\u00a0is the step size. Alternatively, in the configuration of Figure 3a, used to probe RecD in isolation, there is no external force on the helicase. However, the force on the tether affects the helicase velocity by modulating the stability of the unwinding fork: since translocation depends on the existence of an open fork, and DNA breathing fluctuations are very fast\u00a0(Betterton and J\u00fclicher, 2005), the open fork can be considered as a 'substrate' of the translocation reaction. Therefore, a step that involves forward translocation will be modulated by the factor$P_{open}$, equal to the probability of finding an open fork that is at least the size of the helicase step\u00a0(Malik et al., 2017a). $P_{open}$\u00a0is a function of the inherent stability of the DNA fork, a potential destabilization energy provided by the helicase, and the destabilization by the applied force. . Finally, we used the force-dependence of the translocation step, in each of the experimental geometries, to derive equations for the force dependence of the Michaelis-Menten parameters, for each of the models in Supplementary file 1, and for each of the two experimental geometries (Supplementary file 2 and 3). With these equations in hand, and given a set of model-dependent parameters, it is possible to calculate the velocity predicted by each one of the models, for any force and [ATP]. Of note, the existence of auxiliary ATP-binding sites as we recently showed (Zananiri et al., 2017) does not affect the interpretation of the force dependence of the Michaelis-Menten parameters, as it can be accommodated by considering effective ATP binding and unbinding rates.\n\nTo elucidate which of the models best describes RecD\u2019s mechanism of unwinding, we globally fitted the expressions derived above to the experimental data, taken at a broad range of forces and [ATP]. First, we performed a global fitting of each one of the expressions in Supplementary file 2 and 3 to both experimental datasets simultaneously, that is fitting the same model, with the same microscopic rates ($k_{+b}$, $k_{-b}$, $k_{+h}$\u00a0and, for BR models, $k_{tr}$\u00a0and\u00a0$k_{tr}$). However, this procedure failed to recapitulate the force dependence of the Michaelis-Menten curves in both experimental setups. This is not surprising, since we showed in the previous section that RecD relies on a contribution of RecC and/or RecB for disrupting the fork. We assume that the presence of the other subunits is less likely to alter the reaction pathway by which RecD functions, but rather affect (e.g. allosterically) the microscopic rates of the biochemical transitions. Therefore, we fitted each one of the models to each one of the two datasets separately, that is using the same model to fit both datasets but allowing for different microscopic rates for each case. This strategy was successful in recapitulating the data, revealing that the model that best describes RecD, in complex and isolated, is a BR where ATP-binding traps the system in the post-translocation state (Figure 4, Figure 4-figure supplements 1 and 2). Interestingly, a previous single-molecule study reported on extensive conformational dynamics of the RecBCD-DNA complex, arising from back-and-forth motion of the enzyme relative dsDNA\u00a0(Carter et al., 2016). These dynamics were observed in the absence of ATP and depend on the GC content of the DNA, but are suppressed by a non-hydrolyzable ATP analog. Given that RecD is the leading helicase before the Chi sequence\u00a0(Liu et al., 2013;\u00a0Spies et al., 2007) and in view of our results, it is possible that the previously observed dynamics represent the fluctuations of RecD between its pre- and post-translocation states.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/40836/elife-40836-fig4-v2.jpg)\n\n**Figure 4.:** (a) and isolated (b). Data shown as mean \u00b1 s.e.m. Lines through the data are the result of a global fit to a kinetic model of a Brownian ratchet before ATP binding (Equations S7 and S8 in Supplementary file 2 and Equations S19 and S20 in Supplementary file 3). Different colors indicate different forces. (c\u2013d). Force-dependent $v_{max}$ for RecD in complex (c) and isolated RecD (d). Discrete data points indicate $v_{max}$ as a result of fitting Michaelis-Menten curves to the data in a and b for each force separately (shown as fit result \u00b1 s.e.). Lines through the data indicate the results of the global fitting. (e\u2013f) Force dependent $v_{max}/K_{M}$ for RecD in complex (e) and isolated (f). Discrete data points indicate $v_{max}/K_{M}$ as a result of fitting Michaelis-Menten curves to the data in a and b for each force separately (shown as fit result \u00b1 s.e.). Lines through the data indicate the results of the global fitting.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/40836/elife-40836-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** Different colors indicate different forces (Materials and methods). Data shown as mean\u00a0\u00b1\u00a0s.e.m. Lines show the results of fitting the data with the kinetic models described by Equations S1-S12, Supplementary file 2.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/40836/elife-40836-fig4-figsupp2-v2.jpg)\n\n**Figure 4\u2014figure supplement 2.:** Different colors indicate different forces (Materials and methods). Data shown as mean\u00a0\u00b1\u00a0s.e.m. Lines show the results of fitting the data with the kinetic models described by Equations S13-S24, Supplementary file 3.\n\nRemarkably, comparing the rate constants resulting from the global fitting, for RecD in complex and when isolated, revealed that most microscopic rates are not greatly affected, and that the only profound effect of being in complex is reflected in shifting the equilibrium of the ratchet towards the post translocation state, by approximately 200-fold (Figure 5). Interestingly, two structural features in the RecBCD complex, which have been postulated to play a role in destabilizing the fork, may be the basis for this effect. First, it was shown in the crystal structure of RecBCD that there is a \u2018pin\u2019 domain in RecC against which the fork is split enabling RecB and RecD to pull the opposite unwound ssDNA strands\u00a0(Singleton et al., 2004). Second, it has been postulated that the \u2018arm\u2019 protrusion in RecB may play a direct role in destabilizing the duplex ahead of the translocating enzyme (analogous to the role suggested for auxiliary domain 2B of the PcrA helicase)\u00a0(Dillingham and Kowalczykowski, 2008; Velankar et al., 1999) and a recent work showed that an arm deletion results in RecBCD\u2019s inability to unwind DNA\u00a0(Lohman and Fazio, 2018; Simon et al., 2016). In both cases, the synergy between the subunits is expressed in the separation between the domain responsible for destabilizing the fork, and the fast translocase pulling the structurally unwound strands. Both features are needed for full activity by the complex.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/40836/elife-40836-fig5-v2.jpg)\n\n**Figure 5.:** (a)\u00a0Forward ATP binding rate,\u00a0$k_{b}$. (b) Backward binding rate,\u00a0$k_{-b}$. (c) effective catalytic rate,\u00a0$k_{c}^{eff}$. (d) Step size,\u00a0$\\delta$. (f) Equilibrium constant of translocation,\u00a0shifted by the\u00a0complex\u00a0toward the post-translocation state.\n\nIncidentally, the results from the global fitting can provide additional information on the mechanism of unwinding. First, they reveal that RecD\u2019s step size is ~3 bps, which is in accordance with previously reported step sizes characterized by RecBCD when RecD is the leading subunit (before the Chi sequence)\u00a0(Lucius et al., 2002) but, surprisingly, not with the 1 bp step size reported for the related SF1 helicase UvrD\u00a0(Lee and Yang, 2006). In addition, RecD\u2019s destabilization energy, $\u0394G_{RecD}\u22480.6k_{b}T$, further demonstrates that RecD is a 'passive' enzyme, which is able to translocate only thanks to the thermal breathing of the fork.\n\n## Discussion\n\nProcessive helicases couple ATP hydrolysis with translocation on the DNA. Hence, their function takes place in a 2D mechano-chemical energy landscape that is affected by both [ATP] (a chemical reaction coordinate) and an external force (a mechanical reaction coordinate)\u00a0(Bustamante et al., 2004; Keller and Bustamante, 2000). Hence, by studying how a helicase is affected by [ATP] and force, we can learn about the biochemical and mechanical transitions in its mechano-chemical cycle. However, for a heterotrimeric helicase, such as RecBCD, a comprehensive characterization of the mechano-chemistry presents additional challenges, since each of its helicase subunits is likely to play a different role in the generation of force. Moreover, although mutagenesis can be used to dissect the specific role of different units in a complex, it has its limitations too, since it requires to assume a\u00a0priori the allosteric effect that one subunit has on the others. Hence, a method that can probe the activity of a single subunit, in the context of a complete complex, is of great interest. Here, we present such a method, and use it to probe the activity of the bacterial RecBCD and its subunits.\n\nUsing our novel single-molecule optical tweezers assay, we characterized the response of RecBCD and its subunits to an external force. Previous studies showed that RecBCD is able to overcome DNA-bound proteins without a significant effect on its velocity (Finkelstein et al., 2010; Terakawa et al., 2017), often pushing them thousands of base pairs before evicting them from DNA. A similar behavior was observed for a variety of DNA-binding proteins and also for nucleosomes, suggesting that RecBCD uses mechanical force to disrupt these obstacles in its way. However, these experiments cannot provide information of the magnitude of the force. Our measurements show that RecBCD is able to generate forces that reach up to\u00a0~40 pN, providing a mechanical basis for these previous observations. Notably, the forces measured here seem to be inconsistent with previous reports, where a maximal force of\u00a0~6 pN was reported for a biotinylated-RecBCD attached to a surface unwinding a DNA molecule under tension\u00a0(Perkins et al., 2004). These differences may be related to the different chemical conditions at which the experiments were performed. The previous studies used a very low [ATP], aimed at maximizing the spatial resolution of the experiments. Under these conditions, the enzyme spends most of the time fluctuating between the pre- and post-translocation states, waiting for an ATP molecule that can \u2018lock\u2019 it in the post-translocation state and allow it to continue the catalytic cycle. These dynamic states (pre-translocation and post-translocation with no ATP bound) are likely characterized by weaker protein-DNA interactions and thus particularly sensitive to an applied force. Since the complex has an increased force-dependent probability of dissociation from these states, and it dwells longer in them when ATP is scarce, the net result is that at very low ATP concentrations RecBCD will be prone to dissociate with the application of a moderate force. Higher [ATP] allows the enzyme to minimize the time it spends in the force-sensitive states, thus reaching much higher forces. Another possible explanation stems from the different geometry used in the experiments. It has been shown that due to the difference in unwinding rates by the subunits, a loop forms on one strand of the unwound DNA. The formation of the loop may have a significant effect in the biotinylated RecBCD setup previously reported, and might be the reason for RecBCD\u2019s slippage against forces larger than\u00a0~8 pN\u00a0(Perkins et al., 2004). In our setup, where each subunit unwinds a different dsDNA segment, no loop formation takes place. Interestingly, if this is the reason for the differences observed, it may stress the potential regulatory role of the loop. Additional studies will be required to clarify this important point.\n\nWe characterized the role of the different subunits in the generation of force, by comparing RecD\u2019s activity when in complex to its activity as an isolated protein. Our findings indicate that the isolated RecD is a fast ssDNA translocase, but a very weak and poorly processive helicase, with a fork destabilizing energy of only\u00a0$~0.6\\pm0.1k_{B}T$. However, when complexed with the other subunits, RecD can efficiently and processively unwind DNA. This supports a model in which the helicase subunits function by a division of labor throughout the unwinding reaction. While the helicase subunits pull the DNA, they seem to play a very minor role in destabilizing the fork. Hence, to further clarify the mechanism by which RecB/RecC facilitate unwinding by RecD, we characterized the full mechano-chemical cycle of RecD, and how it is affected by the presence of the complex. Our measurements suggest that RecD unwinds the DNA as a Brownian ratchet that is rectified by ATP binding. Interestingly, a previous single-molecule study reported the existence of nanometer-scale conformational dynamics in RecBCD-DNA\u00a0(Carter et al., 2016). These dynamics were observed also in the absence of ATP, but suppressed by ADP-BeFx. The BR mechanism described here seems to be consistent with this previous report, and suggest that the conformational dynamics observed may represent the ratchet fluctuations, which exist independently of ATP, but are suppressed if the enzyme is locked in the post-translocation state by the non-hydrolyzable analog. The similar size of these dynamics (~4 bp) and the step size measured here (~3.3 bp) further support this interpretation. Notably, our results show that the effect of the additional units on RecD is expressed in shifting the ratchet equilibrium toward the post-translocation state. We speculate that this effect may be mediated by two structural motifs in the RecBCD complex. First, it has been shown that RecC has a pin that separates the complex, sending each strand into the RecB and RecD subunits\u00a0(Dillingham and Kowalczykowski, 2008; Singleton et al., 2004). This results in RecD translocating on the single stranded DNA that has been unwound by RecC. Second, a recent work suggested that RecBCD can unwind duplex DNA processively in the absence of ssDNA translocation by the canonical motors\u00a0(Simon et al., 2016). This was related to the arm protrusion in RecB that interacts with the double-stranded DNA ahead, which may also play a role in destabilizing the fork. Notably, the role of separate structural domains in destabilizing the duplex DNA is not a new proposal. In fact, a common feature of structural models for DNA unwinding by helicases is that melting occurs as the ssDNA translocase pulls the duplex DNA against a protein wedge or pin at the ss/dsDNA junction. For RecBCD, the structure of the full complex suggests that the pin is in RecC\u00a0(Singleton et al., 2004). However, despite these structural insights, functional information was lacking. By comparing the activity of the RecD subunit, when it is part of a wild-type, complete RecBCD complex to its activity in isolation, our assays allow us to experimentally demonstrate a functional role for the presence of the other subunits.\n\nOur assay has limitations: Normally, as a DNA molecule is unwound by RecBCD, two complementary strands are translocated by the two subunits, RecB and RecD. This means that RecC\u2019s pin, or any other structural element involved in unwinding, is accurately positioned to split these strands, for\u00a0example by engaging at the DNA fork. In our assay, each of the helicase subunits (RecB and RecD) unwinds a separate dsDNA segment and therefore a structural element normally destabilizing the fork cannot be simultaneously destabilizing the two DNA segments. On the other hand, our experiments clearly demonstrate that RecBCD unwinds the DNA (Figure 2a), and that it does so by exploiting the unwinding activity of both helicases, RecB and RecD (Figure 2b,c). One possible way to reconcile these observations is that there is more than one structural element catalyzing unwinding, and that in our assay at least one of them assists the unwinding by RecB, while at least another one assist RecD. A different explanation, which we favor, is that RecBCD can fluctuate between two different conformations: one in which the pin, or other structural elements, are positioned to assist unwinding of the dsDNA in RecB, and therefore no unwinding takes place by RecD, and a conformation that allows unwinding of the DNA in RecD, but not the one in RecB. As a result, since the subunits alternate between active and inactive states, their average velocity is slower than the velocity under normal operation, thus meaning that our assay underestimates the unwinding velocities. However, this possible underestimation does not affect our conclusions. First, the velocities measured are just multiplied by a constant factor: In the first possible scenario, this is the partial degree of destabilization offered by having only a subset of the destabilizing elements for each subunit. In the second scenario, this is the fraction of the time RecBCD spends in each of the conformations. Up to this numerical constant, the functional dependence of the velocity on the force as we measure truly represents the force response of the whole enzyme and its subunits. Specifically, for RecD, the underestimation of its velocity in the in-complex assay only strengthens the fact that at the zero-force extrapolation of Figure 2b (>400 bp/s) and Figure 3c (~0 bp/s) are in disagreement, and suggest the existence of a destabilizing element in the complex. Moreover, the modeling and global fitting are not affected, with the exception of a possible underestimation of the in-complex $K_{eq}$ in Figure 2e.\n\nWe recently reported the existence of additional, non-catalytic but functionally important ATP-binding sites in RecBCD\u00a0(Zananiri et al., 2017). The requirement of both binding and dissociation of ATP from these sites during unwinding indicates that they serve to transfer ATP to the catalytic sites, thus increasing the total ATP flux at intermediate concentrations. It is possible that the existence of the auxiliary sites and the results presented here are related: In the case of a BR coupled to ATP binding, an opposing force such as an externally applied force or a DNA-binding protein presenting a roadblock for translocation, decreases the rate of reaching the post-translocation state, and therefore the rate of ATP binding. Hence, it is possible that the ATP auxiliary sites play a role in overcoming the effect of the force, by allowing binding via a parallel pathway.\n\n## Materials and methods\n\n### Reagents and purification of protein constructs\n\nAll chemicals and reagents were the highest purity commercially available. ATP was purchased from Roche Molecular Biochemicals (Indianapolis, IN). A molar equivalent of MgCl2 was added to nucleotides immediately before use. Nucleotide concentrations were determined by absorbance using an extinction coefficient \u03b5259 of 15,400 M\u22121 cm\u22121. Unless otherwise specified, all experiments were conducted in RecBCD Buffer (RB: 20 mM MOPS pH 7.4, 2 mM MgCl2,1 mM DTT, 0.1 mM EDTA and, unless specified, 75 NaCl). Over-expression and purification of recombinant RecBCD was based on the method described by Roman et. al.\u00a0(Roman and Kowalczykowski, 1989b). All steps of purification were carried out at 4\u00b0C, and contained RB at the indicated NaCl concertation, in addition to 1 mM PMSF, 1 mM Benzamidine. Four liters of E.\u00a0coli cells expressing RecBCD were lysed using Microfluidizer, followed by centrifugation at 10,000\u00a0\u00d7\u00a0g. The supernatant was further clarified by centrifugation at 100,000\u00a0\u00d7\u00a0g and treated with Benzonase for two hours before initial purification by DEAE chromatography (a weak anion exchanger, to remove nucleic acids contaminants) using a linear NaCl gradient from 75 mM to 700 mM. RecBCD-containing DEAE fractions were eluted from a Q-sepharose column (a strong anion exchanger which highly selects for active RecBCD) using a linear NaCl gradient from 75 mM to 1 M. Fractions containing RecBCD were precipitated using (NH4)2SO4 (45% saturation), and collected by centrifugation at 14,000\u00a0\u00d7\u00a0g. Precipitated RecBCD was resuspended and loaded onto Superdex 200 equilibrated with RB, and the monodisperse peak containing the heterotrimer complex of RecBCD was\u00a0collected. Fractions containing purified RecBCD were concentrated using an Amicon concentrator (50 kDa cutoff), aliquoted and flash frozen in liquid nitrogen before storage at \u221280\u00b0C. RecBCD concentration was determined using an extinction coefficient \u03b5280nm of 4.2\u00a0\u00d7\u00a0105 M\u22121 cm\u22121 in Guanidine chloride. RecBK29QCD and RecBC were obtained by transforming the RecBK29Q ATPase mutant pPB800 (a gift from S. Kowalczykowski) and pPB700 (a gift from P. Bianco) plasmids, respectively, into the RecBD-null V330 strain, and following the same purification protocol as for WT RecBCD. RecBC concentration was determined using \u03b5ex,coeff. of 3.7\u00a0\u00d7\u00a0105 M\u22121 cm\u22121.\n\nThe RecD gene flanked by HindIII and NdeI was obtained via PCR on the pPB800 plasmid with forward (5\u2019-CTGATCGCATATGAAATTGCAAAAGCAATTACTGGAAGCTGTGGAG-3\u2019) and backward (5\u2019-GCTGACTAAAGCTTTTATTCCCGTGAACTAAACAACGCCGCCA-3\u2019) primers (IDT), purified, cut and ligated into a HindIII and NdeI treated PET15b plasmid. Gene insertion was verified via sequencing, then heat-shock transformed into BL21 bacteria. All purification procedures were carried out at 4\u00b0C. Similar to the purification from inclusion bodies by Chen et al. (1997), eight liters of E.coli cells expressing Histidine tagged RecD (RecD for short) were lysed in Lysis Buffer (20 mM Tris-HCl pH 7.5, 500 mM NaCl, 1 mM Benzamidine and 1 mM PMSF) using the microfluidizer, and centrifuged for 10 min at 7000\u00a0\u00d7\u00a0g. Pellets containing RecD in inclusion bodies were suspended in Resuspension Buffer (20 mM Tris-HCl pH 7.5, 500 mM NaCl, 6 M Guanidinium chloride, 5 mM Imidazole) and centrifuged for 45 min at 50,000\u00a0\u00d7\u00a0g. The supernatant was applied to a pre-equilibrated (Equilibration buffer: Tris-HCl pH 7.5, 500 mM NaCl, 8 M Urea and 5 mM Imidazole) Nickel column (2 ml of HisPur, Thermo), and eluted with a stepwise gradient of imidazole (25\u2013300 mM). Fractions containing denatured RecD where loaded onto Superdex 200 equilibrated with 20 mM Tris-HCl, pH 7.5, 500 mM NaCl and 6 M Urea. Fractions containing RecD, were concentrated using an Amicon concentrator (30 kDa cutoff) and gradient dialyzed into storage buffer (20 mM Tris-HCl, pH 8.0, 1 mM DTT, 0.05% Triton X-100, 500 mM NaCl, 20% glycerol). Then, it was aliquoted and flush frozen in liquid nitrogen before storage at \u221280\u00b0C. RecD concentration was determined using an extinction coefficient \u03b5280nm of 4.8\u00a0\u00d7\u00a0104 M\u22121 cm\u22121 in Guanidine chloride.\n\n### Molecular constructs for single-molecule experiments\n\nWe generated unwinding/translocation tracks of different lengths similarly to previously described methods\u00a0(Rudnizky et al., 2016; Rudnizky et al., 2018). 600 and 4200 bp tracks were obtained using standard PCR reactions (Supplementary file 5, IDT), nicked using Nt.BbvCI for the Biotin-terminated track and Nb.BbvCI for the Digoxygenin-terminated one (enzymes from New England Biolabs), resulting in complementary 29-nucleotides, flanked with three nucleotides (5\u2019-TGC-3\u2019). For the symmetric geometry, the 600 biotin and digoxigenin tracks were mixed at equal molar ratios for DNA annealing, creating a \u223c1200 bp fragment. For the asymmetric geometries, 4200 bp handles were annealed to complementary purchased oligonucleotides with the opposite modification (Supplementary file 5, HPLC purified, IDT). This resulted in asymmetric handles with 4200 bps and\u00a0~\u00a035 nt single stranded DNA on opposite sides. All constructs were ligated to a\u00a0~\u00a0250 dsDNA stem (\u2018601\u2019 DNA) generated as previously described\u00a0(Rudnizky et al., 2016).\n\n### Optical tweezers\n\nExperiments were performed in a custom-made double-trap optical tweezers apparatus\u00a0(Moffitt et al., 2006), as previously described\u00a0(Malik et al., 2017b; Rudnizky et al., 2016). Briefly, the beam from a 855 nm laser (TA PRO, Toptica) was coupled into a polarization-maintaining single-mode optical fiber. The collimated beam out of the fiber was split by a polarizing beam splitter (PBS) into two orthogonal polarizations, each directed into a mirror and combined again with a second BS. One of the mirrors is mounted on a nanometer scale mirror mount (Nano-MTA, Mad City Labs). A X2 telescope expands the beam, and also images the plane of the mirrors into the back focal plane of the focusing microscope objective (Nikon, Plan Apo VC 60X, NA/1.2). Two optical traps are formed at the objective\u2019s focal plane, each by a different polarization, and with a typical stiffness of 0.3\u20130.5 pN/nm. The light is collected by a second, identical objective, the two polarizations separated by a PBS, and imaged onto two Position Sensitive Detectors (First Sensor). The position of the beads relative to the center of the trap is determined by back focal plane interferometry\u00a0(Gittes and Schmidt, 1998). Calibration of the setup was done by analysis of the thermal fluctuations of the trapped beads\u00a0(Berg-S\u00f8rensen and Flyvbjerg, 2004), which were sampled at 100 kHz. Separate measurements confirmed that the beads remain in the optical traps\u2019 linear range for the entire experiment (Figure 1\u2014figure supplement 2).\n\n### Single-molecule experiments\n\nThe complete DNA construct was incubated for 15 min on ice with 0.9 \u00b5m polystyrene beads (Spherotech), coated with anti-Digoxygenin (anti-DIG). The reaction was then diluted 1000-fold in RB, with the addition of a 1:1 ratio of Mg\u00b7ATP, 0.05 mg/ml BSA, and an ATP regeneration system consisting of 7.5 mM Phosphocreatine and 0.05 mg/ml Creatine phosphokinase. Tether formation was performed in situ (inside the experimental chamber) by trapping an anti-DIG bead (bound by DNA) in one trap, trapping a 0.9 \u00b5m streptavidin-coated polystyrene beads in the second trap, and bringing the two beads into close proximity to allow binding of the biotin tag in the DNA to the streptavidin in the bead. The laminar flow cell (Lumicks) had four channels: streptavidin beads pre-bound to the DNA construct, anti-digoxigenin beads, RB, and RB with the addition of RecBCD/RecD (25 nM). Single DNA tethers were verified in the buffer-only channel and then held at a tension of 5 pN and translocated to the RecBCD channel, until activity was observed as indicated by a rapid decrease in the extension and increase in the force. Data were digitized at a sampling rate fs\u00a0=\u00a02,500 Hz and saved to a disk. All further processing of the data was done with Matlab (Mathworks). The measured extension was transformed into contour lengths, in units of bp of dsDNA, using the extensible worm-like chain model with a persistence length of 40 nm and a stretching modulus of 1000 pN.\n\n### Force-velocity curves\n\nForce-time data were smoothed using a moving average filter to fc\u00a0=\u00a0250 Hz. Instantaneous force velocity curves were then calculated as a linear fit in a 100 ms time window of the contour-time data, the velocity in the time window was taken as the mean velocity. Instantaneous force velocity data was further smoothed using a median filter one tenth of the data length. Smoothed force velocity curves were then quantized in the range of 0\u201360 pN with a bin\u00a0size of 3 pN for RecBCD data and 2pN for isolated RecD. Force-velocity curves were then averaged over the ensemble\u00a0of\u00a0experiments.\n\n### Derivation of Michaelis-Menten parameters for the different kinetic models\n\nBy combining two mechanism of translocation (BR and PS) with three potential locations for the translocation step within the chemical cycle (with/before ATP binding, with/before ATP hydrolysis, and with/before the release of the hydrolysis products), six potential kinetic schemes are formulated (Supplementary file 1). The derivation of the force-dependent Michaelis-Menten parameters for these models is based on the net rate theory\u00a0(Cleland, 1975; Dangkulwanich et al., 2013), considering how force affects a translocation step in each assay: In the assay in Fig. 1a, where unwinding takes place against an opposing force, a translocation step $R_{n}k_{+i,0}\u21cck_{-i,0}R_{n+1}$ is affected by force such that the forward rate will decrease by a factor of\u00a0$k_{+i,0}\u2192k_{+i,0}exp\u2061-\\frac{Fx^{\u2021}}{k_{b}T}$,\u00a0where $x^{\u2021}$ is the distance to transition state, while the backward rate will increase by a factor of\u00a0$k_{-i,0}\u2192k_{-i,0}exp\u2061F\\delta-x^{\u2021}/k_{b}T$,\u00a0where $\\delta$\u00a0is the step size\u00a0(Bustamante et al., 2004). Under rapid equilibrium conditions, the force will affect the equilibrium constant $K_{i}=k_{-i}/k_{+i}$ according to\u00a0$K_{i}\u2192K_{i}exp\u2061F\\delta/k_{b}T\u2261K_{i}exp\u2061F/F_{0}$. In the unwinding of a hairpin under tension setup (Figure 3a), the translocation step is modulated by force such that the forward rate is modulated by a factor $k_{+i,0}\u2192k_{i,0}P_{open}$, where $P_{open}$ is the probability that at least $n$\u00a0bp ahead are unwound, and $n$\u00a0is the helicase step size in bp. $P_{open}$\u00a0was calculated as previously reported (Malik et al., 2017a). Together, this results in separate predictions for the force-dependence of the Michaelis-Menten parameters for each of the models in Supplementary file 1 and in each of the experimental assays. These predictions are summarized in Supplementary file 2 and 3.\n\nInterestingly, in cases where $v_{max}$ decreases with force, all PS models lead to a simple relation:\n\n$$\nv(F)=\\frac{v_{0}}{1+exp\u2061[\\frac{F\u2212F_{1/2}}{F_{0}}]}\n$$\n\nas obtained in earlier reports (Abbondanzieri et al., 2005). This expression is also valid for BR models, assuming that $x^{\u2021}\u2248\\delta$\u00a0and that the translocation rates ($k_{\\pmtr}$) are faster than all other rates dominating their corresponding exponents. Equation 1 was used to fit force velocity curves in Figure 2.\n\n### Global fitting of the mechano-chemical cycle\n\nTo elucidate which of the models best describes RecD\u2019s translocation mechanism, we used two sets of data of the form\u00a0$vF,[ATP]$. The first, $D_{1}$, measured in the 'unwinding under force' geometry (Figure 1) and the second, $D_{2}$, measure in the 'hairpin under tension' assay (Figure 3). Using the expressions for the expected force-dependent $v_{max}$ and $K_{M}$ it is possible, for any given model-dependent set of parameters, to calculate the expected velocity for the values of $F$ and $[ATP]$ at which the experimental data was taken, $M_{1}^{i}$ and $M_{2}^{i}$, where the superscript $i$\u00a0represents the specific model, and the subscript 1,2 the experimental geometry. To find the parameters that maximize the fit of each model we minimized the sum of square errors (SSE) between the experimental data and the calculated values, that is minimizing $SSE_{1}=\\sum_{F,[ATP]}D_{1}-M_{1}^{i}^{2}$ and $SSE_{2}=\\sum_{F,[ATP]}D_{2}-M_{2}^{i}^{2}$ for each model over their relevant set of parameters, using a Global search optimization\u00a0(Ugray et al., 2007) implemented in MATLAB. The model resulting in the lowest sum of minimized SSE was chosen to be the model best describing RecD\u2019s translocation mechanism. The goodness of the fits in Figure 4\u2014figure supplement 1 and 2 were calculated as\u00a0$R^{2}=1-SSE/SST$, where $SST$ is the total sum of squares. For illustration, Michaelis-Menten parameters were obtained from fitting Michaelis-Menten expressions separately for each force range (Figure 4c\u2013f, data points) and are compared to the predictions of the selected model, with the parameters found (Figure 4c\u2013f, lines).\n",
+      "created_at": "2025-12-02T07:54:40.176271Z"
+    },
+    {
+      "id": "0f4d56ee-e60f-4645-b5b1-29b81e15b215",
+      "submission_id": "fcf9dc39-6682-4948-b8e8-9d76f8ab9b12",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Taekjip Ha, Johns Hopkins University School of Medicine United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.40836.025](https://doi.org/10.7554/eLife.40836.025)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Synergy between RecBCD subunits is essential for efficient DNA unwinding\" for consideration by eLife. Your article has been reviewed by two peer reviewers, and the evaluation has been overseen by a Reviewing Editor and John Kuriyan as the Senior Editor. The following individual involved in review of your submission has agreed to reveal her identity: Maria Spies (Reviewer #2).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nThe authors have developed a very clever optical-tweezer-based assay to monitor duplex unwinding/translocation and force generation by the two motor subunits within the holoenzyme of the RecBCD helicase/nuclease. The innovation is in the design of the substrate. They use a hairpin-unzippering assay, but without a loop at the end of the substrate that allows for RecBCD to load from a blunt end. The enzyme then unwinds the unloaded dsDNA of the hairpin until it encounters the base of the hairpin and starts to simultaneously unwind two dsDNA substrates due to the two helicases in RecBCD, one going 5'-3' and the other 3'-5'. By placing the base of the hairpin near one of the two beds, the motor activity of the RecB or RecD was investigated within the context of the intact RecBCD complex but where one of the motors had stalled by coming to the end of its substrate. RecD's activity while not in the RecBCD context was investigate in similar assay but where the enzyme unwinds the base of the hairpin, akin to pioneering helicase hairpin unwinding experiments by Bustamante and colleagues (Dumont, 2006). In both of these experiments, the force is free to vary as unwinding occurs (no force clamp), and the main data the authors collect is how the instantaneous unwinding rate changes as a function of force. They do this as a function of ATP concentration. This data is then compared against a number of kinetic models in order to determine the translocation mechanism of RecD, and how the other subunits modify that mechanism. The two most significant value added aspects of this work are (1) the ability to monitor the translocation and force generation by two RecBCD motors within the context of fully functional holoenzyme; and (2) a carefully elaborated model for the RecD Brownian ratchet mechanism. Overall the experiments are well designed and expertly executed. However, there are several major issues that need to be addressed before publication is considered.\n\nEssential revisions:\n\nFirst, there is great detail provided about the different kinetic modes developed to fit the force-velocity data, but there is not a corresponding attention to demonstrate the quality of the optical tweezer data. This information is critical to the manuscript because the authors are trying to distinguish different models based on their analysis of force-velocity. Hence force needs to be well measured. However, neither this manuscript nor a quick review through several of the preceding papers from this group seem to do a thorough presentation of the calibration results of their optical tweezers set up. There are several reasons to be concerned. First, the authors report measuring force of 50 pN with an optical tweezer stiffness of k = 0.3-0.5 pN/nm. This means the microsphere is displaced 100-150 nm from the trap center. To accurately measure force at this significant displacement, the authors need to demonstrate the linearity of their trap. There is clear evidence in the literature that if the authors are assuming F = -kx at such large displacement, there can be significant errors (Greenleaf, et al. 2005). Each tweezer setup is different, so it is critical that the authors demonstrate it for their setup. Second, they have two trapped microspheres quite close together (1200 bp = 400 nm) and the distance gets smaller as shown in Figure 1B. However, it is well known that there can be (1) cross-talk between both the two detector channels when using different polarizations for the same laser, (2) cross talk hydrodynamically between the microspheres, and (3) optical-induced effects of one trap being near another (see for example von Hansen, et al., 2012. Auto- and cross-power spectral analysis of dual trap optical tweezer experiments using Bayesian inference. Rev Sci Instrum and references therein). Another metric the authors should report is the persistence length they get for fitting their DNA to a WLC model and the other fitting parameters (such as stretch modulus).\n\nSecond, the manuscript seems to lack metrics presented to the reader for how the authors distinguished between competing kinetic models. The authors just state one model is the best. This is not acceptable as it doesn't allow for the reader or the reviewer to see how well the different models are distinguished. For an example of how to present model differentiation much better, see Supplementary Figure 1 of Larson, et al., 2012. Trigger loop dynamics mediate the balance between the transcriptional fidelity and speed of RNA polymerase II. PNAS. In the present manuscript, Figure 4 might be trying to do this, but it has several problems: (a) Curves in 4A and 4B are colored coded, but nowhere is it specified what the colors mean. (b) For 4C-F, the authors are fitting Brownian ratchet models to RecD Michalis Menten parameters. How did they calculate these parameters? It is never explicitly stated. The authors also mention that they did all of these studies as a function of ATP, so there should be a possibility of fitting everything to one global model (see for instance Figure 2 of Schnitzer, et al., 2000. Force production by single kinesin motors. Nature Cell Biology).\n\nThird, the authors need to do a much better job discussing the nuances of force applied to the enzyme in their novel assay and the state of the DNA interacting with the RecBCD. In Figure 1A, the force is acting on the entrance to RecBCD and shearing the DNA, rather than across the enzyme and along the axis of the DNA that is seen in the Perkins et al., 2004 assay, where the enzyme is anchored to the surface. In Figure 1A, it might be quite conceivable that at 40 pN of tension within the substrate \u2013 well above the force needed to unzipper dsDNA \u2013 the DNA going into the front of RecBCD would both be ssDNA at the hole at the leading edge of RecBCD that normally admits dsDNA. Moreover, two segments of non-complementary ssDNA are being fed through the protein pore ahead of the pin. Hence, it is likely that the portion of RecB that interacts with the dsDNA ahead of the pin in the normal geometry may likely be interacting with ssDNA, if at all in this taut configuration. Also, the force in Figure 3B is assisting. The authors need to discuss both the benefits of their assay and limitations in drawing conclusions.\n\nFourth, the data shown in Figure 1B seems to be in contradiction to the force velocity curves shown in Figure 2. Note Figure 1B shows a significant reduction in velocity as the force is increased from ~6 pN to ~14 pN. It states it is a representative curve for RecBCD motion. Yet Figure 2 shows a flat force-velocity curve upto ~35-40 pN. Is there significant heterogeneity or different classes of response for ReBCD? Perhaps Figure 1B is at a lower ATP concentration, which would be interesting since it shows a different force-velocity response and as discussed in the Schnitzer kinesin paper, fitting the full force-velocity relation as a function of ATP concentration can yield interesting information and significantly constrain the model.\n\nFifth, the authors need to carefully discuss the geometric arrangement of the DNA-RecBCD complex. Structural studies of the RecBCD (X-ray crystallography and CryoEM from the Wigley lab) suggest several structural elements within RecB subunit are responsible for the duplex destabilization ahead of the RecBCD \u2013 the authors provide a very nice discussion of this. One would expect such duplex destabilization is essential for the unwinding mechanism. However, in the authors' experimental arrangement, only one of the two duplexes unwound by RecBCD may experience these duplex destabilizing elements. Would this underestimate the RecD activity? What are the possible structural/geometric arrangements with respect to the two duplexes being unwound?\n\nSixth, another puzzling observation is that if RecD is indeed the leading subunit, it should arrive at the junction ahead of RecB creating perhaps a loop. While RecB is catching up, RecD should start unwinding its duplex at its rate. After RecB catches up, both arms of the construct will be unwound. Hence, one would expect a region of the trace (at point 2 in Figure 1B) that will show a slower rate that is then increased. This slow rate should correspond to the RecD activity and the faster rate should be a sum of RecB and RecD-mediated unwinding of their respective arms. From the difference between the two rates, one, in principle, should be able to extract the rates for both subunits and compare them to the experiment with the entry site near the bead. Would this be possible, or is the length of the entry stem is two short?\n",
+      "created_at": "2025-12-02T07:54:40.176271Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T07:54:40.176271Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T07:54:40.176271Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "870f461a-fa14-4806-849f-7ea36b6d3b24",
+      "content_id": "3ab41311-f9d8-485b-ad1b-faba3279b961",
+      "claim_id": "C1",
+      "claim": "RecBCD is able to generate forces up to 25\u201340 pN without a significant effect on their velocity.",
+      "claim_type": "EXPLICIT",
+      "source": "We show that RecBCD and its subunits are able to generate forces up to 25\u201340 pN without a significant effect on their velocity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is directly stated in the abstract and supported by experimental data presented in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:54:40.176271Z"
+    },
+    {
+      "id": "c4d3e060-2728-4de0-8cd8-72db80585341",
+      "content_id": "3ab41311-f9d8-485b-ad1b-faba3279b961",
+      "claim_id": "C2",
+      "claim": "The isolated RecD translocates fast but is a weak helicase with limited processivity.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, the isolated RecD translocates fast but is a weak helicase with limited processivity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is stated in the abstract and supported by experimental data in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:54:40.176271Z"
+    },
+    {
+      "id": "b2ac67e0-4199-4660-bc8f-e1f335eefbe1",
+      "content_id": "3ab41311-f9d8-485b-ad1b-faba3279b961",
+      "claim_id": "C3",
+      "claim": "RecD unwinds DNA as a Brownian ratchet, rectified by ATP binding.",
+      "claim_type": "EXPLICIT",
+      "source": "Experiments at a broad range of [ATP] and forces suggest that RecD unwinds DNA as a Brownian ratchet, rectified by ATP binding, and that the presence of the other subunits shifts the ratchet equilibrium towards the post-translocation state.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is stated in the abstract and supported by kinetic modeling and global fitting of experimental data shown in Figure 4.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:54:40.176271Z"
+    },
+    {
+      "id": "b9780173-1f57-43c9-bb27-c66502932bfa",
+      "content_id": "3ab41311-f9d8-485b-ad1b-faba3279b961",
+      "claim_id": "C4",
+      "claim": "The presence of the other subunits shifts the ratchet equilibrium towards the post-translocation state.",
+      "claim_type": "EXPLICIT",
+      "source": "Experiments at a broad range of [ATP] and forces suggest that RecD unwinds DNA as a Brownian ratchet, rectified by ATP binding, and that the presence of the other subunits shifts the ratchet equilibrium towards the post-translocation state.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is stated in the abstract and supported by comparison of kinetic parameters between isolated RecD and RecD in complex, shown in Figure 5.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:54:40.176271Z"
+    },
+    {
+      "id": "e68acb15-ac00-4991-8abc-1bb420de00be",
+      "content_id": "3ab41311-f9d8-485b-ad1b-faba3279b961",
+      "claim_id": "C5",
+      "claim": "RecBCD possesses a remarkable unwinding rate approaching ~ 1600 bp s\u22121.",
+      "claim_type": "EXPLICIT",
+      "source": "Bulk and single molecule biochemical and biophysical studies of RecBCD revealed that it possesses a remarkable unwinding rate approaching ~ 1600 bp s\u22121 (Handa et al., 2005; Liu et al., 2013; Lucius et al., 2002; Roman and Kowalczykowski, 1989a; Xie et al., 2013), and real-time imaging of live E. coli cells has recently confirmed this result (Wiktor et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to multiple previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:54:40.176271Z"
+    },
+    {
+      "id": "9e627517-15a0-41bc-b9f3-2653aed25c7a",
+      "content_id": "3ab41311-f9d8-485b-ad1b-faba3279b961",
+      "claim_id": "C6",
+      "claim": "RecBCD is able to evict or displace bound proteins or complexes, such as RNA polymerase, EcoRI, the lac repressor and even nucleosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "In these studies, it was shown that RecBCD is able to evict or displace bound proteins or complexes, such as RNA polymerase, EcoRI, the lac repressor and even nucleosomes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to previous work by Finkelstein et al., 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:54:40.176271Z"
+    },
+    {
+      "id": "ef833b49-af1f-4b19-bbbe-901d20b989d5",
+      "content_id": "3ab41311-f9d8-485b-ad1b-faba3279b961",
+      "claim_id": "C7",
+      "claim": "RecBCD did not pause during collisions with protein roadblocks and often pushed proteins thousands of base-pairs before evicting them from DNA.",
+      "claim_type": "EXPLICIT",
+      "source": "RecBCD did not pause during these collisions and often pushed proteins thousands of base-pairs before evicting them from DNA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on previous studies cited in the introduction.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:54:40.176271Z"
+    },
+    {
+      "id": "60efb140-a925-47a1-b775-75af54069a29",
+      "content_id": "3ab41311-f9d8-485b-ad1b-faba3279b961",
+      "claim_id": "C8",
+      "claim": "~ 20\u201330 pN of force are required to evict RNA polymerase.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, single-molecule studies using DNA unzipping to probe DNA-bound proteins have shown that ~ 20\u201330 pN of force are required to evict RNA polymerase (Jin et al., 2010), nucleosomes (Hall et al., 2009; Rudnizky et al., 2016; ), and the Egr-1 transcription factor (Rudnizky et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Jin et al., 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:54:40.176271Z"
+    },
+    {
+      "id": "0bdd5a8d-7064-4ab5-812e-e2180b7d3101",
+      "content_id": "3ab41311-f9d8-485b-ad1b-faba3279b961",
+      "claim_id": "C9",
+      "claim": "A previous single-molecule study reported that RecBCD is unable to translocate against forces higher than ~8 pN.",
+      "claim_type": "EXPLICIT",
+      "source": "However, a previous single-molecule study reported that RecBCD is unable to translocate against forces higher than ~8 pN (Perkins et al., 2004), although these measurements were performed at very low ATP concentrations (<15 \u03bcM).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Perkins et al., 2004.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:54:40.176271Z"
+    },
+    {
+      "id": "bb442a82-700f-4093-bf92-225093fb615b",
+      "content_id": "3ab41311-f9d8-485b-ad1b-faba3279b961",
+      "claim_id": "C10",
+      "claim": "RecBCD binds the blunt end DNA resulting from the DSB and unwinds the DNA, primarily nicking the 3' tail.",
+      "claim_type": "EXPLICIT",
+      "source": "First, RecBCD binds the blunt end DNA resulting from the DSB and unwinds the DNA, primarily nicking the 3' tail.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on previous studies cited in the introduction.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:54:40.176271Z"
+    },
+    {
+      "id": "51964596-ea8a-4605-93a5-8c138543afb6",
+      "content_id": "3ab41311-f9d8-485b-ad1b-faba3279b961",
+      "claim_id": "C11",
+      "claim": "The opposing translocation polarities of RecB and RecD allow them to simultaneously translocate on opposite strands of the DNA.",
+      "claim_type": "EXPLICIT",
+      "source": "The opposing translocation polarities of RecB and RecD allow them to simultaneously translocate on opposite strands of the DNA (Dillingham et al., 2003; Taylor and Smith, 2003) but, since RecD is faster than RecB under physiological conditions (Dillingham and Kowalczykowski, 2008; Spies et al., 2007; Taylor and Smith, 2003), a single-stranded loop accumulates on the 3'-ended strand (Taylor and Smith, 2003; Wong et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to multiple previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:54:40.176271Z"
+    },
+    {
+      "id": "27eb4a82-d45c-4d9f-a26f-ed299af13727",
+      "content_id": "3ab41311-f9d8-485b-ad1b-faba3279b961",
+      "claim_id": "C12",
+      "claim": "RecD is faster than RecB under physiological conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "The opposing translocation polarities of RecB and RecD allow them to simultaneously translocate on opposite strands of the DNA (Dillingham et al., 2003; Taylor and Smith, 2003) but, since RecD is faster than RecB under physiological conditions (Dillingham and Kowalczykowski, 2008; Spies et al., 2007; Taylor and Smith, 2003), a single-stranded loop accumulates on the 3'-ended strand (Taylor and Smith, 2003; Wong et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:54:40.176271Z"
+    },
+    {
+      "id": "a5a93bfa-0dd9-4ee0-a8d2-a018786888c2",
+      "content_id": "3ab41311-f9d8-485b-ad1b-faba3279b961",
+      "claim_id": "C13",
+      "claim": "A single-stranded loop accumulates on the 3'-ended strand.",
+      "claim_type": "EXPLICIT",
+      "source": "The opposing translocation polarities of RecB and RecD allow them to simultaneously translocate on opposite strands of the DNA (Dillingham et al., 2003; Taylor and Smith, 2003) but, since RecD is faster than RecB under physiological conditions (Dillingham and Kowalczykowski, 2008; Spies et al., 2007; Taylor and Smith, 2003), a single-stranded loop accumulates on the 3'-ended strand (Taylor and Smith, 2003; Wong et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:54:40.176271Z"
+    },
+    {
+      "id": "ad183845-6044-4254-8d44-3b5a8154e421",
+      "content_id": "3ab41311-f9d8-485b-ad1b-faba3279b961",
+      "claim_id": "C14",
+      "claim": "RecBCD is able to generate a high force (43 \u00b1 2 pN).",
+      "claim_type": "EXPLICIT",
+      "source": "Hence, Figure 2a indicates that RecBCD is able to generate a high force (43 \u00b1 2 pN; Fitted force for half-maximal velocity \u00b1 standard error).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 2a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:54:40.176271Z"
+    },
+    {
+      "id": "d6917564-81f4-401f-ad54-d95a91d843fe",
+      "content_id": "3ab41311-f9d8-485b-ad1b-faba3279b961",
+      "claim_id": "C15",
+      "claim": "RecB is able to generate similar forces (40 \u00b1 3 pN).",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, although RecB is able to generate similar forces (40 \u00b1 3 pN; Figure 2c), the maximal forces generated by RecD are ~ 30% smaller (29 \u00b1 3 pN; Figure 2b), suggesting that this subunit, by itself, is unable to generate the maximal forces observed for RecBCD.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 2c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:54:40.176271Z"
+    },
+    {
+      "id": "7445e425-a894-4553-88a3-0f9856babced",
+      "content_id": "3ab41311-f9d8-485b-ad1b-faba3279b961",
+      "claim_id": "C16",
+      "claim": "The maximal forces generated by RecD are ~ 30% smaller (29 \u00b1 3 pN).",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, although RecB is able to generate similar forces (40 \u00b1 3 pN; Figure 2c), the maximal forces generated by RecD are ~ 30% smaller (29 \u00b1 3 pN; Figure 2b), suggesting that this subunit, by itself, is unable to generate the maximal forces observed for RecBCD.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 2b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:54:40.176271Z"
+    },
+    {
+      "id": "5254fca4-87b9-4783-9c85-21b0aaf3a6bf",
+      "content_id": "3ab41311-f9d8-485b-ad1b-faba3279b961",
+      "claim_id": "C17",
+      "claim": "RecD, by itself, is unable to generate the maximal forces observed for RecBCD.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, although RecB is able to generate similar forces (40 \u00b1 3 pN; Figure 2c), the maximal forces generated by RecD are ~ 30% smaller (29 \u00b1 3 pN; Figure 2b), suggesting that this subunit, by itself, is unable to generate the maximal forces observed for RecBCD.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the comparison of force measurements for RecBCD and RecD.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:54:40.176271Z"
+    },
+    {
+      "id": "d3ba5579-ed26-4c97-a53e-ac5ae11ea404",
+      "content_id": "3ab41311-f9d8-485b-ad1b-faba3279b961",
+      "claim_id": "C18",
+      "claim": "Both subunits unwind DNA at ~400 bp/s at low forces.",
+      "claim_type": "EXPLICIT",
+      "source": "At low forces, experiments with the asymmetric constructs reveal that both subunits unwind DNA at ~400 bp/s.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data from asymmetric constructs.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:54:40.176271Z"
+    },
+    {
+      "id": "81408755-3331-42b4-8207-53c43e21eaa6",
+      "content_id": "3ab41311-f9d8-485b-ad1b-faba3279b961",
+      "claim_id": "C19",
+      "claim": "Experiments probing the whole complex show an unwinding rate of ~1100 bp/s.",
+      "claim_type": "EXPLICIT",
+      "source": "Experiments probing the whole complex, where each subunit unwinds a different track, show an unwinding rate of ~1100 bp/s, significantly higher than the sum of the rates measured for the individual subunits.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data from the symmetric construct.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:54:40.176271Z"
+    },
+    {
+      "id": "41b355b0-42f4-41f8-962e-133828ae24ab",
+      "content_id": "3ab41311-f9d8-485b-ad1b-faba3279b961",
+      "claim_id": "C20",
+      "claim": "The unwinding rate of the whole complex is significantly higher than the sum of the rates measured for the individual subunits.",
+      "claim_type": "EXPLICIT",
+      "source": "Experiments probing the whole complex, where each subunit unwinds a different track, show an unwinding rate of ~1100 bp/s, significantly higher than the sum of the rates measured for the individual subunits.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by comparison of experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:54:40.176271Z"
+    },
+    {
+      "id": "59b202f2-d1be-489c-a7dc-c1dfe78f17fb",
+      "content_id": "3ab41311-f9d8-485b-ad1b-faba3279b961",
+      "claim_id": "C21",
+      "claim": "RecD showed poor processivity (~ 50 bps).",
+      "claim_type": "EXPLICIT",
+      "source": "RecD showed poor processivity (~ 50 bps), in accordance with previous measurements (Dillingham and Kowalczykowski, 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data and citation to previous work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:54:40.176271Z"
+    },
+    {
+      "id": "6cd5258b-da44-4e87-b8be-32191b739952",
+      "content_id": "3ab41311-f9d8-485b-ad1b-faba3279b961",
+      "claim_id": "C22",
+      "claim": "RecBCD has a processivity of ~ 30,000 bp.",
+      "claim_type": "EXPLICIT",
+      "source": "When compared with the reported ~ 30,000 bp processivity of RecBCD (Dillingham and Kowalczykowski, 2008), this indicates that the presence of RecC and/or RecB, perhaps acting as a 'toehold' as previously proposed (Carter et al., 2016), is required to fully achieve RecBCD's processivity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Dillingham and Kowalczykowski, 2008.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:54:40.176271Z"
+    },
+    {
+      "id": "143de885-e079-4b74-a188-68d326912282",
+      "content_id": "3ab41311-f9d8-485b-ad1b-faba3279b961",
+      "claim_id": "C23",
+      "claim": "The presence of RecC and/or RecB is required to fully achieve RecBCD's processivity.",
+      "claim_type": "EXPLICIT",
+      "source": "When compared with the reported ~ 30,000 bp processivity of RecBCD (Dillingham and Kowalczykowski, 2008), this indicates that the presence of RecC and/or RecB, perhaps acting as a 'toehold' as previously proposed (Carter et al., 2016), is required to fully achieve RecBCD's processivity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from comparison of processivity measurements.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:54:40.176271Z"
+    },
+    {
+      "id": "9fcea3b9-6d4d-4472-a70e-5ef699c61dbf",
+      "content_id": "3ab41311-f9d8-485b-ad1b-faba3279b961",
+      "claim_id": "C24",
+      "claim": "While RecD in complex can unwind and translocate at very fast rates (~430 bp/s), the isolated subunit is practically unable to unwind the fork.",
+      "claim_type": "EXPLICIT",
+      "source": "However, comparing RecD's activity in both configurations, extrapolated to zero force, reveals a significant difference (Figure 3d): while RecD in complex can unwind and translocate at very fast rates (~430 bp/s), the isolated subunit is practically unable to unwind the fork.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 3d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:54:40.176271Z"
+    },
+    {
+      "id": "8f7bc105-ac78-422c-99cc-499a5798ab33",
+      "content_id": "3ab41311-f9d8-485b-ad1b-faba3279b961",
+      "claim_id": "C25",
+      "claim": "The presence of the RecC and/or RecB subunits is necessary for the RecD subunit to efficiently and processively unwind DNA.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, we conclude that the presence of the RecC and/or RecB subunits is necessary for the RecD subunit to efficiently and processively unwind DNA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is a conclusion drawn from experimental data comparing isolated RecD to RecD in complex.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:54:40.176271Z"
+    },
+    {
+      "id": "b0866106-3a59-44f0-bb53-af76f8cb8db2",
+      "content_id": "3ab41311-f9d8-485b-ad1b-faba3279b961",
+      "claim_id": "C26",
+      "claim": "RecD's step size is ~3 bps.",
+      "claim_type": "EXPLICIT",
+      "source": "First, they reveal that RecD's step size is ~3 bps, which is in accordance with previously reported step sizes characterized by RecBCD when RecD is the leading subunit (before the Chi sequence) (Lucius et al., 2002) but, surprisingly, not with the 1 bp step size reported for the related SF1 helicase UvrD (Lee and Yang, 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is derived from global fitting of kinetic models to experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:54:40.176271Z"
+    },
+    {
+      "id": "b62f24fc-e423-442d-a007-b5610d1926f1",
+      "content_id": "3ab41311-f9d8-485b-ad1b-faba3279b961",
+      "claim_id": "C29",
+      "claim": "The only profound effect of being in complex is reflected in shifting the equilibrium of the ratchet towards the post translocation state, by approximately 200-fold.",
+      "claim_type": "EXPLICIT",
+      "source": "Remarkably, comparing the rate constants resulting from the global fitting, for RecD in complex and when isolated, revealed that most microscopic rates are not greatly affected, and that the only profound effect of being in complex is reflected in shifting the equilibrium of the ratchet towards the post translocation state, by approximately 200-fold (Figure 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by comparison of kinetic parameters shown in Figure 5.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:54:40.176271Z"
+    },
+    {
+      "id": "a6b2050b-d684-4b14-8c07-a5d90eb83439",
+      "content_id": "3ab41311-f9d8-485b-ad1b-faba3279b961",
+      "claim_id": "C30",
+      "claim": "RecB is a 134 kDa, 3'\u22125' helicase.",
+      "claim_type": "EXPLICIT",
+      "source": "RecBCD possesses three subunits, two of which are super-family one helicases: RecB, a 134 kDa, 3'\u22125' helicase and RecD, a 67 kDa helicase with 5'\u22123' polarity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about RecB structure and function.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:54:40.176271Z"
+    },
+    {
+      "id": "a6290c35-cecc-46ea-9aa1-7265fd6fcc50",
+      "content_id": "3ab41311-f9d8-485b-ad1b-faba3279b961",
+      "claim_id": "C31",
+      "claim": "RecD is a 67 kDa helicase with 5'\u22123' polarity.",
+      "claim_type": "EXPLICIT",
+      "source": "RecBCD possesses three subunits, two of which are super-family one helicases: RecB, a 134 kDa, 3'\u22125' helicase and RecD, a 67 kDa helicase with 5'\u22123' polarity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about RecD structure and function.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:54:40.176271Z"
+    },
+    {
+      "id": "217b5af5-0424-4f9e-8cb2-509b54246fe4",
+      "content_id": "3ab41311-f9d8-485b-ad1b-faba3279b961",
+      "claim_id": "C32",
+      "claim": "The RecC subunit is a 128 kDa, catalytically dead helicase-nuclease sharing a similar structure to RecB.",
+      "claim_type": "EXPLICIT",
+      "source": "The RecC subunit is a 128 kDa, catalytically dead helicase-nuclease sharing a similar structure to RecB, which acts as a scaffold protein stapling RecB and RecD (Dillingham and Kowalczykowski, 2008), and is responsible for recognition of the regulatory Chi sequence (Handa et al., 2012; Singleton et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about RecC structure and function, supported by citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:54:40.176271Z"
+    },
+    {
+      "id": "8d071860-b335-47bf-be18-2af299ed6ef2",
+      "content_id": "3ab41311-f9d8-485b-ad1b-faba3279b961",
+      "claim_id": "C33",
+      "claim": "RecC acts as a scaffold protein stapling RecB and RecD.",
+      "claim_type": "EXPLICIT",
+      "source": "The RecC subunit is a 128 kDa, catalytically dead helicase-nuclease sharing a similar structure to RecB, which acts as a scaffold protein stapling RecB and RecD (Dillingham and Kowalczykowski, 2008), and is responsible for recognition of the regulatory Chi sequence (Handa et al., 2012; Singleton et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Dillingham and Kowalczykowski, 2008.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:54:40.176271Z"
+    },
+    {
+      "id": "fdcfff25-5f21-42f6-a77c-33803e9d839e",
+      "content_id": "3ab41311-f9d8-485b-ad1b-faba3279b961",
+      "claim_id": "C34",
+      "claim": "RecC is responsible for recognition of the regulatory Chi sequence.",
+      "claim_type": "EXPLICIT",
+      "source": "The RecC subunit is a 128 kDa, catalytically dead helicase-nuclease sharing a similar structure to RecB, which acts as a scaffold protein stapling RecB and RecD (Dillingham and Kowalczykowski, 2008), and is responsible for recognition of the regulatory Chi sequence (Handa et al., 2012; Singleton et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Handa et al., 2012 and Singleton et al., 2004.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:54:40.176271Z"
+    },
+    {
+      "id": "1325cecb-cba3-4276-b5c6-53e11e29cbdb",
+      "content_id": "3ab41311-f9d8-485b-ad1b-faba3279b961",
+      "claim_id": "C35",
+      "claim": "The crystal structure of RecBCD's initiation complex shows that 4\u20136 bps of DNA are unwound at the 'pin' domain of RecC.",
+      "claim_type": "EXPLICIT",
+      "source": "The crystal structure of RecBCD's initiation complex shows that 4\u20136 bps of DNA are unwound at the 'pin' domain of RecC after which the split strands are directed towards the helicase subunits, RecB and RecD (Singleton et al., 2004; Wilkinson et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to structural studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:54:40.176271Z"
+    },
+    {
+      "id": "f9008968-5f71-49a3-b744-41df16d85a91",
+      "content_id": "3ab41311-f9d8-485b-ad1b-faba3279b961",
+      "claim_id": "C36",
+      "claim": "An 'arm' domain of RecB interacts with the DNA 12 bps ahead.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, an 'arm' domain of RecB interacts with the DNA 12 bps ahead (Saikrishnan et al., 2008; Singleton et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to structural studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:54:40.176271Z"
+    },
+    {
+      "id": "5ca27721-d556-4ebe-af7e-211002731940",
+      "content_id": "3ab41311-f9d8-485b-ad1b-faba3279b961",
+      "claim_id": "C37",
+      "claim": "RecBCD's affinity towards DNA lacking a double stranded end is 10^6-fold weaker than that for blunt ends or short overhangs.",
+      "claim_type": "EXPLICIT",
+      "source": "Unfortunately, this assay is not appropriate for the study of RecBCD since, in line with its biological function that requires binding to DSB sites, RecBCD's affinity towards DNA lacking a double stranded end is 106-fold weaker than that for blunt ends or short overhangs (Bianco et al., 2001; Roman and Kowalczykowski, 1989a; Taylor and Smith, 1985).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:54:40.176271Z"
+    },
+    {
+      "id": "35f76919-462a-44f0-96be-bf20aed7f4a4",
+      "content_id": "3ab41311-f9d8-485b-ad1b-faba3279b961",
+      "claim_id": "C38",
+      "claim": "RecB possesses a 'secondary' translocase activity which translocates on DNA in the 5'\u21923' direction.",
+      "claim_type": "EXPLICIT",
+      "source": "Recent studies have shown that RecB possesses a 'secondary' translocase activity (Wu et al., 2010; Wu et al., 2012; Xie et al., 2013), which translocates on DNA in the 5'\u21923' direction, that is with an opposite polarity with respect to its 'primary' translocase.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:54:40.176271Z"
+    },
+    {
+      "id": "a8d3423d-d345-4033-96cd-3722a8290933",
+      "content_id": "3ab41311-f9d8-485b-ad1b-faba3279b961",
+      "claim_id": "C39",
+      "claim": "RecBK29QCD is deficient in RecB's ATPase activity and was shown to be inactive for both translocases (primary and secondary) of RecB.",
+      "claim_type": "EXPLICIT",
+      "source": "To test whether the secondary translocase contributes to the activity observed in our measurements, we expressed and purified the mutant RecBK29QCD, which is deficient in RecB's ATPase activity and was shown to be inactive for both translocases (primary and secondary) of RecB (Xie et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Xie et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:54:40.176271Z"
+    },
+    {
+      "id": "ad012759-ed5c-4375-aba3-d4d9942bd64a",
+      "content_id": "3ab41311-f9d8-485b-ad1b-faba3279b961",
+      "claim_id": "C40",
+      "claim": "The measured force-velocity curves for RecBCD and RecBK29QCD on the asymmetric construct designed to probe RecD are indistinguishable.",
+      "claim_type": "EXPLICIT",
+      "source": "However, Figure 2\u2014figure supplement 1a shows that the measured force-velocity curves are indistinguishable.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 2\u2014figure supplement 1a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:54:40.176271Z"
+    },
+    {
+      "id": "eb94df78-488f-41d0-abe9-abaeb8bcde3c",
+      "content_id": "3ab41311-f9d8-485b-ad1b-faba3279b961",
+      "claim_id": "C41",
+      "claim": "RecBC can sustain maximal forces of only ~9 pN's.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, we measured the activity of the RecBC complex, lacking the RecD subunit. Although we were able to follow its activity in our assay (Figure 2\u2014figure supplement 1b), our measurements show that it can sustain maximal forces of only ~9 pN's, suggesting that the secondary translocase is not able to maintain its grip of the DNA, and therefore not active, at higher forces.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 2\u2014figure supplement 1b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:54:40.176271Z"
+    },
+    {
+      "id": "e62226b9-8d1a-4aa0-bcb0-e3e808d3b2d0",
+      "content_id": "3ab41311-f9d8-485b-ad1b-faba3279b961",
+      "claim_id": "C42",
+      "claim": "The secondary translocase is not able to maintain its grip of the DNA, and therefore not active, at higher forces.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, we measured the activity of the RecBC complex, lacking the RecD subunit. Although we were able to follow its activity in our assay (Figure 2\u2014figure supplement 1b), our measurements show that it can sustain maximal forces of only ~9 pN's, suggesting that the secondary translocase is not able to maintain its grip of the DNA, and therefore not active, at higher forces.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the low force measurements for RecBC.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:54:40.176271Z"
+    },
+    {
+      "id": "62f7020b-85e3-4504-ae57-28d6cfff4133",
+      "content_id": "3ab41311-f9d8-485b-ad1b-faba3279b961",
+      "claim_id": "C43",
+      "claim": "The measurements are able to probe separately the activities of RecB and RecD as they are part of a full complex.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, this indicates that our measurements are indeed able to probe separately the activities of RecB and RecD as they are part of a full complex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is a conclusion drawn from the experimental validation with mutants.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:54:40.176271Z"
+    },
+    {
+      "id": "6fd10693-4ba4-40c1-b6ed-555e6e3e2576",
+      "content_id": "3ab41311-f9d8-485b-ad1b-faba3279b961",
+      "claim_id": "C44",
+      "claim": "The 2\u20133 fold higher velocity previously measured for RecBCD relative to its subunits indicates some degree of synergy between them.",
+      "claim_type": "EXPLICIT",
+      "source": "This is in line with previous experiments showing that, while each of the subunits (RecB, RecD) is capable of independently catalyzing unwinding, neither of the subunits alone can reach the unwinding rates of RecBCD (Dillingham et al., 2005; Pavankumar et al., 2010; Taylor and Smith, 2003; Xie et al., 2013). The 2\u20133 fold higher velocity previously measured for RecBCD relative to its subunits indicates some degree of synergy between them.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on previous studies and comparison of velocities.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:54:40.176271Z"
+    },
+    {
+      "id": "79d7518c-83d3-41c0-babe-e6d506219133",
+      "content_id": "3ab41311-f9d8-485b-ad1b-faba3279b961",
+      "claim_id": "C45",
+      "claim": "At least part of the synergy effect results from direct allosteric interactions between the subunits.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results, which show a 1.4-fold faster activity when both subunits are present but unwinding different substrates, suggest that at least part of this effect results from direct allosteric interactions between the subunits.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the experimental observation of increased velocity when both subunits are active.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:54:40.176271Z"
+    },
+    {
+      "id": "4cf32006-a09a-4cb9-abc9-e1c6b597c54e",
+      "content_id": "3ab41311-f9d8-485b-ad1b-faba3279b961",
+      "claim_id": "C46",
+      "claim": "The observed lengths of the unwinding traces (490 \u00b1 13 bp, 116 \u00b1 16 bp and 380 \u00b1 43 bp, mean \u00b1 s.e.m, for RecBCD, RecD and RecB, respectively) do not represent the processivity of the enzyme or its subunits.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, since the traces in our experiments are terminated by the force-induced dissociation of the complex from DNA, the observed lengths of the unwinding traces (490 \u00b1 13 bp, 116 \u00b1 16 bp and 380 \u00b1 43 bp, mean \u00b1 s.e.m, for RecBCD, RecD and RecB, respectively) do not represent the processivity of the enzyme or its subunits.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is explicitly stated as a caveat about the interpretation of the data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:54:40.176271Z"
+    },
+    {
+      "id": "cfe7f7ce-470c-4f13-a045-5c31fa8bfa14",
+      "content_id": "3ab41311-f9d8-485b-ad1b-faba3279b961",
+      "claim_id": "C47",
+      "claim": "A previous single-molecule study reported on extensive conformational dynamics of the RecBCD-DNA complex, arising from back-and-forth motion of the enzyme relative dsDNA.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, a previous single-molecule study reported on extensive conformational dynamics of the RecBCD-DNA complex, arising from back-and-forth motion of the enzyme relative dsDNA (Carter et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Carter et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:54:40.176271Z"
+    },
+    {
+      "id": "7363bc3f-e32b-4c26-b446-b6caf22e3e1a",
+      "content_id": "3ab41311-f9d8-485b-ad1b-faba3279b961",
+      "claim_id": "C48",
+      "claim": "The conformational dynamics were observed in the absence of ATP and depend on the GC content of the DNA, but are suppressed by a non-hydrolyzable ATP analog.",
+      "claim_type": "EXPLICIT",
+      "source": "These dynamics were observed in the absence of ATP and depend on the GC content of the DNA, but are suppressed by a non-hydrolyzable ATP analog.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on previous work by Carter et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:54:40.176271Z"
+    },
+    {
+      "id": "e69eec68-4276-4221-a469-06b5806f6064",
+      "content_id": "3ab41311-f9d8-485b-ad1b-faba3279b961",
+      "claim_id": "C49",
+      "claim": "RecD is the leading helicase before the Chi sequence.",
+      "claim_type": "EXPLICIT",
+      "source": "Given that RecD is the leading helicase before the Chi sequence (Liu et al., 2013; Spies et al., 2007) and in view of our results, it is possible that the previously observed dynamics represent the fluctuations of RecD between its pre- and post-translocation states.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:54:40.176271Z"
+    },
+    {
+      "id": "ab8d23be-a9aa-4cf9-b639-e6e4ba49ca61",
+      "content_id": "3ab41311-f9d8-485b-ad1b-faba3279b961",
+      "claim_id": "C50",
+      "claim": "The previously observed dynamics may represent the fluctuations of RecD between its pre- and post-translocation states.",
+      "claim_type": "EXPLICIT",
+      "source": "Given that RecD is the leading helicase before the Chi sequence (Liu et al., 2013; Spies et al., 2007) and in view of our results, it is possible that the previously observed dynamics represent the fluctuations of RecD between its pre- and post-translocation states.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is speculative, connecting previous observations with the current findings.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:54:40.176271Z"
+    },
+    {
+      "id": "64c6a0e2-52d1-4fdc-ae7f-ad19103a44f9",
+      "content_id": "3ab41311-f9d8-485b-ad1b-faba3279b961",
+      "claim_id": "C51",
+      "claim": "The forces measured here provide a mechanical basis for RecBCD's ability to overcome DNA-bound proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "Considering the typical forces required to displace DNA-bound proteins, as measured by unzipping the DNA (Jiang et al., 2005; Koch and Wang, 2003; Koch et al., 2002; Meng et al., 2017; Rudnizky et al., 2018) or by using a second DNA molecule as a probe (Noom et al., 2007), our measurements provide a mechanical basis for the ability of RecBCD to overcome protein 'roadblocks' (Finkelstein et al., 2010; Gorman and Greene, 2008; Terakawa et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from comparison of measured forces with known forces required to displace proteins.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:54:40.176271Z"
+    },
+    {
+      "id": "473a1605-b1fc-4bf8-9918-13739a4c5da2",
+      "content_id": "3ab41311-f9d8-485b-ad1b-faba3279b961",
+      "claim_id": "C52",
+      "claim": "The differences in force measurements may be related to the different chemical conditions at which the experiments were performed.",
+      "claim_type": "EXPLICIT",
+      "source": "These differences may be related to the different chemical conditions at which the experiments were performed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about the reasons for differences with previous studies.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:54:40.176271Z"
+    },
+    {
+      "id": "e78ea242-0ae6-4bc7-9900-125dcb55b9ab",
+      "content_id": "3ab41311-f9d8-485b-ad1b-faba3279b961",
+      "claim_id": "C53",
+      "claim": "At very low ATP concentrations, the enzyme spends most of the time fluctuating between the pre- and post-translocation states.",
+      "claim_type": "EXPLICIT",
+      "source": "Under these conditions, the enzyme spends most of the time fluctuating between the pre- and post-translocation states, waiting for an ATP molecule that can 'lock' it in the post-translocation state and allow it to continue the catalytic cycle.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the kinetic model and the effect of low ATP.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:54:40.176271Z"
+    },
+    {
+      "id": "5c7a6ae2-d38c-492e-8a87-01cda428d47d",
+      "content_id": "3ab41311-f9d8-485b-ad1b-faba3279b961",
+      "claim_id": "C54",
+      "claim": "The dynamic states (pre-translocation and post-translocation with no ATP bound) are likely characterized by weaker protein-DNA interactions.",
+      "claim_type": "EXPLICIT",
+      "source": "These dynamic states (pre-translocation and post-translocation with no ATP bound) are likely characterized by weaker protein-DNA interactions and thus particularly sensitive to an applied force.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about the nature of the dynamic states.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:54:40.176271Z"
+    },
+    {
+      "id": "b2bc7977-ff7d-4800-a5be-ee1d2e338ac3",
+      "content_id": "3ab41311-f9d8-485b-ad1b-faba3279b961",
+      "claim_id": "C55",
+      "claim": "Higher [ATP] allows the enzyme to minimize the time it spends in the force-sensitive states, thus reaching much higher forces.",
+      "claim_type": "EXPLICIT",
+      "source": "Higher [ATP] allows the enzyme to minimize the time it spends in the force-sensitive states, thus reaching much higher forces.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the kinetic model and experimental observations.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:54:40.176271Z"
+    },
+    {
+      "id": "fe5a6fdb-e1fa-4129-ad79-84f50ffa2d9e",
+      "content_id": "3ab41311-f9d8-485b-ad1b-faba3279b961",
+      "claim_id": "C56",
+      "claim": "The formation of the loop may have a significant effect in the biotinylated RecBCD setup previously reported.",
+      "claim_type": "EXPLICIT",
+      "source": "The formation of the loop may have a significant effect in the biotinylated RecBCD setup previously reported, and might be the reason for RecBCD's slippage against forces larger than ~8 pN (Perkins et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about the reasons for differences with previous studies.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:54:40.176271Z"
+    },
+    {
+      "id": "a1054a45-0ec9-47e7-ad42-8f5359ad9a69",
+      "content_id": "3ab41311-f9d8-485b-ad1b-faba3279b961",
+      "claim_id": "C57",
+      "claim": "In the current setup, where each subunit unwinds a different dsDNA segment, no loop formation takes place.",
+      "claim_type": "EXPLICIT",
+      "source": "In our setup, where each subunit unwinds a different dsDNA segment, no loop formation takes place.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the experimental design.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:54:40.176271Z"
+    },
+    {
+      "id": "9d2f0329-33d7-4c84-b050-d501acd507ff",
+      "content_id": "3ab41311-f9d8-485b-ad1b-faba3279b961",
+      "claim_id": "C58",
+      "claim": "The loop formation may have a potential regulatory role.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, if this is the reason for the differences observed, it may stress the potential regulatory role of the loop.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about the biological significance of loop formation.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:54:40.176271Z"
+    },
+    {
+      "id": "ee4e50f6-d207-4498-8e3c-3f61882438a4",
+      "content_id": "3ab41311-f9d8-485b-ad1b-faba3279b961",
+      "claim_id": "C59",
+      "claim": "The helicase subunits function by a division of labor throughout the unwinding reaction.",
+      "claim_type": "EXPLICIT",
+      "source": "This supports a model in which the helicase subunits function by a division of labor throughout the unwinding reaction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a model proposed based on the experimental findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:54:40.176271Z"
+    },
+    {
+      "id": "99ababa6-d46e-4a9e-98cc-ebef75d84c9c",
+      "content_id": "3ab41311-f9d8-485b-ad1b-faba3279b961",
+      "claim_id": "C60",
+      "claim": "While the helicase subunits pull the DNA, they seem to play a very minor role in destabilizing the fork.",
+      "claim_type": "EXPLICIT",
+      "source": "While the helicase subunits pull the DNA, they seem to play a very minor role in destabilizing the fork.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the low destabilization energy measured for RecD.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:54:40.176271Z"
+    },
+    {
+      "id": "e372bc8e-4fa0-4606-b061-53ae6151d8ba",
+      "content_id": "3ab41311-f9d8-485b-ad1b-faba3279b961",
+      "claim_id": "C61",
+      "claim": "The effect of the additional units on RecD may be mediated by two structural motifs in the RecBCD complex.",
+      "claim_type": "EXPLICIT",
+      "source": "We speculate that this effect may be mediated by two structural motifs in the RecBCD complex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about the structural basis for the observed effects.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:54:40.176271Z"
+    },
+    {
+      "id": "e9bb463a-1bea-488d-8528-d85cd7f5cbf4",
+      "content_id": "3ab41311-f9d8-485b-ad1b-faba3279b961",
+      "claim_id": "C62",
+      "claim": "RecC has a pin that separates the complex, sending each strand into the RecB and RecD subunits.",
+      "claim_type": "EXPLICIT",
+      "source": "First, it has been shown that RecC has a pin that separates the complex, sending each strand into the RecB and RecD subunits (Dillingham and Kowalczykowski, 2008; Singleton et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous structural studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:54:40.176271Z"
+    },
+    {
+      "id": "fd413668-0909-4ae9-bb45-65daaf9b0f5c",
+      "content_id": "3ab41311-f9d8-485b-ad1b-faba3279b961",
+      "claim_id": "C63",
+      "claim": "RecBCD can unwind duplex DNA processively in the absence of ssDNA translocation by the canonical motors.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, a recent work suggested that RecBCD can unwind duplex DNA processively in the absence of ssDNA translocation by the canonical motors (Simon et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Simon et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:54:40.176271Z"
+    },
+    {
+      "id": "f8337fbe-084e-4999-b07b-225368f50fba",
+      "content_id": "3ab41311-f9d8-485b-ad1b-faba3279b961",
+      "claim_id": "C64",
+      "claim": "The arm protrusion in RecB may play a role in destabilizing the fork.",
+      "claim_type": "EXPLICIT",
+      "source": "This was related to the arm protrusion in RecB that interacts with the double-stranded DNA ahead, which may also play a role in destabilizing the fork.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation based on structural features and previous work.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:54:40.176271Z"
+    },
+    {
+      "id": "3ea60e7e-3dcf-46f7-b423-fdc680de9cbc",
+      "content_id": "3ab41311-f9d8-485b-ad1b-faba3279b961",
+      "claim_id": "C65",
+      "claim": "A common feature of structural models for DNA unwinding by helicases is that melting occurs as the ssDNA translocase pulls the duplex DNA against a protein wedge or pin at the ss/dsDNA junction.",
+      "claim_type": "EXPLICIT",
+      "source": "In fact, a common feature of structural models for DNA unwinding by helicases is that melting occurs as the ssDNA translocase pulls the duplex DNA against a protein wedge or pin at the ss/dsDNA junction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about helicase mechanisms.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:54:40.176271Z"
+    },
+    {
+      "id": "3e4ab8ac-fb12-413a-98b0-6b6869b97ab5",
+      "content_id": "3ab41311-f9d8-485b-ad1b-faba3279b961",
+      "claim_id": "C66",
+      "claim": "For RecBCD, the structure of the full complex suggests that the pin is in RecC.",
+      "claim_type": "EXPLICIT",
+      "source": "For RecBCD, the structure of the full complex suggests that the pin is in RecC (Singleton et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to structural studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:54:40.176271Z"
+    },
+    {
+      "id": "c598ba4b-9a38-48d8-8c0a-94b9e83df73f",
+      "content_id": "3ab41311-f9d8-485b-ad1b-faba3279b961",
+      "claim_id": "C67",
+      "claim": "The assays allow us to experimentally demonstrate a functional role for the presence of the other subunits.",
+      "claim_type": "EXPLICIT",
+      "source": "By comparing the activity of the RecD subunit, when it is part of a wild-type, complete RecBCD complex to its activity in isolation, our assays allow us to experimentally demonstrate a functional role for the presence of the other subunits.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the main contribution of the work.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:54:40.176271Z"
+    },
+    {
+      "id": "eeba0a8e-b748-448b-a56b-6b70d161c391",
+      "content_id": "3ab41311-f9d8-485b-ad1b-faba3279b961",
+      "claim_id": "C68",
+      "claim": "In the normal operation of RecBCD, two complementary strands are translocated by the two subunits, RecB and RecD.",
+      "claim_type": "EXPLICIT",
+      "source": "Normally, as a DNA molecule is unwound by RecBCD, two complementary strands are translocated by the two subunits, RecB and RecD.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about RecBCD function.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:54:40.176271Z"
+    },
+    {
+      "id": "d98b2d7a-f0c9-4cc8-83da-5f8f6587746e",
+      "content_id": "3ab41311-f9d8-485b-ad1b-faba3279b961",
+      "claim_id": "C69",
+      "claim": "In the current assay, each of the helicase subunits (RecB and RecD) unwinds a separate dsDNA segment.",
+      "claim_type": "EXPLICIT",
+      "source": "In our assay, each of the helicase subunits (RecB and RecD) unwinds a separate dsDNA segment and therefore a structural element normally destabilizing the fork cannot be simultaneously destabilizing the two DNA segments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the experimental design.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:54:40.176271Z"
+    },
+    {
+      "id": "49056ea5-6536-4cd2-a3d8-dc5fa9d70351",
+      "content_id": "3ab41311-f9d8-485b-ad1b-faba3279b961",
+      "claim_id": "C70",
+      "claim": "A structural element normally destabilizing the fork cannot be simultaneously destabilizing the two DNA segments in the current assay.",
+      "claim_type": "EXPLICIT",
+      "source": "In our assay, each of the helicase subunits (RecB and RecD) unwinds a separate dsDNA segment and therefore a structural element normally destabilizing the fork cannot be simultaneously destabilizing the two DNA segments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a limitation of the experimental design.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:54:40.176271Z"
+    },
+    {
+      "id": "6fda0b47-87f0-482e-b96e-b81ff2131aed",
+      "content_id": "3ab41311-f9d8-485b-ad1b-faba3279b961",
+      "claim_id": "C71",
+      "claim": "The experiments clearly demonstrate that RecBCD unwinds the DNA.",
+      "claim_type": "EXPLICIT",
+      "source": "On the other hand, our experiments clearly demonstrate that RecBCD unwinds the DNA (Figure 2a), and that it does so by exploiting the unwinding activity of both helicases, RecB and RecD (Figure 2b,c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:54:40.176271Z"
+    },
+    {
+      "id": "39a51d96-4b44-42b6-bf11-d02cb297378c",
+      "content_id": "3ab41311-f9d8-485b-ad1b-faba3279b961",
+      "claim_id": "C72",
+      "claim": "RecBCD unwinds DNA by exploiting the unwinding activity of both helicases, RecB and RecD.",
+      "claim_type": "EXPLICIT",
+      "source": "On the other hand, our experiments clearly demonstrate that RecBCD unwinds the DNA (Figure 2a), and that it does so by exploiting the unwinding activity of both helicases, RecB and RecD (Figure 2b,c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 2b,c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:54:40.176271Z"
+    },
+    {
+      "id": "65193caf-c431-4de4-b9d5-94ab6365e87e",
+      "content_id": "3ab41311-f9d8-485b-ad1b-faba3279b961",
+      "claim_id": "C73",
+      "claim": "There may be more than one structural element catalyzing unwinding in RecBCD.",
+      "claim_type": "EXPLICIT",
+      "source": "One possible way to reconcile these observations is that there is more than one structural element catalyzing unwinding, and that in our assay at least one of them assists the unwinding by RecB, while at least another one assist RecD.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about the mechanism to reconcile observations.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:54:40.176271Z"
+    },
+    {
+      "id": "dce1c52e-12e4-42bc-96d0-6e1733cfdcc2",
+      "content_id": "3ab41311-f9d8-485b-ad1b-faba3279b961",
+      "claim_id": "C74",
+      "claim": "RecBCD can fluctuate between two different conformations: one in which structural elements assist unwinding of the dsDNA in RecB, and a conformation that allows unwinding of the DNA in RecD.",
+      "claim_type": "EXPLICIT",
+      "source": "A different explanation, which we favor, is that RecBCD can fluctuate between two different conformations: one in which the pin, or other structural elements, are positioned to assist unwinding of the dsDNA in RecB, and therefore no unwinding takes place by RecD, and a conformation that allows unwinding of the DNA in RecD, but not the one in RecB.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative model proposed to explain the observations.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:54:40.176271Z"
+    },
+    {
+      "id": "1cf82955-2774-463d-a176-931b9fbfd9ea",
+      "content_id": "3ab41311-f9d8-485b-ad1b-faba3279b961",
+      "claim_id": "C75",
+      "claim": "The subunits alternate between active and inactive states, thus their average velocity is slower than the velocity under normal operation.",
+      "claim_type": "EXPLICIT",
+      "source": "As a result, since the subunits alternate between active and inactive states, their average velocity is slower than the velocity under normal operation, thus meaning that our assay underestimates the unwinding velocities.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about the consequence of the proposed conformational fluctuations.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:54:40.176271Z"
+    },
+    {
+      "id": "77c5242c-8dd7-45f8-91a0-dc629eed251e",
+      "content_id": "3ab41311-f9d8-485b-ad1b-faba3279b961",
+      "claim_id": "C76",
+      "claim": "The assay may underestimate the unwinding velocities.",
+      "claim_type": "EXPLICIT",
+      "source": "As a result, since the subunits alternate between active and inactive states, their average velocity is slower than the velocity under normal operation, thus meaning that our assay underestimates the unwinding velocities.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a caveat about the interpretation of the measurements.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:54:40.176271Z"
+    },
+    {
+      "id": "c97c21ae-1616-45ab-a04c-37afc76cbaed",
+      "content_id": "3ab41311-f9d8-485b-ad1b-faba3279b961",
+      "claim_id": "C77",
+      "claim": "The possible underestimation does not affect the conclusions about force response.",
+      "claim_type": "EXPLICIT",
+      "source": "However, this possible underestimation does not affect our conclusions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an argument about the validity of the conclusions despite the limitation.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:54:40.176271Z"
+    },
+    {
+      "id": "f22c2625-44de-41b0-9390-35c9bfb6b636",
+      "content_id": "3ab41311-f9d8-485b-ad1b-faba3279b961",
+      "claim_id": "C78",
+      "claim": "The velocities measured are just multiplied by a constant factor due to the assay design.",
+      "claim_type": "EXPLICIT",
+      "source": "First, the velocities measured are just multiplied by a constant factor: In the first possible scenario, this is the partial degree of destabilization offered by having only a subset of the destabilizing elements for each subunit. In the second scenario, this is the fraction of the time RecBCD spends in each of the conformations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an argument about how the assay limitation affects the measurements.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:54:40.176271Z"
+    },
+    {
+      "id": "95471b3c-c940-4099-bce8-fd69840fee32",
+      "content_id": "3ab41311-f9d8-485b-ad1b-faba3279b961",
+      "claim_id": "C79",
+      "claim": "The functional dependence of the velocity on the force as measured truly represents the force response of the whole enzyme and its subunits.",
+      "claim_type": "EXPLICIT",
+      "source": "Up to this numerical constant, the functional dependence of the velocity on the force as we measure truly represents the force response of the whole enzyme and its subunits.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an argument about the validity of the force-velocity relationships measured.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:54:40.176271Z"
+    },
+    {
+      "id": "29a81686-9358-4eae-9167-2c786d75f4a8",
+      "content_id": "3ab41311-f9d8-485b-ad1b-faba3279b961",
+      "claim_id": "C80",
+      "claim": "The underestimation of RecD velocity in the in-complex assay only strengthens the fact that the zero-force extrapolations are in disagreement.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, for RecD, the underestimation of its velocity in the in-complex assay only strengthens the fact that at the zero-force extrapolation of Figure 2b (>400 bp/s) and Figure 3c (~0 bp/s) are in disagreement, and suggest the existence of a destabilizing element in the complex.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an argument about how the limitation affects the interpretation of the data.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:54:40.176271Z"
+    },
+    {
+      "id": "0caccaef-b90e-4ee9-b16c-22e4813ca9a8",
+      "content_id": "3ab41311-f9d8-485b-ad1b-faba3279b961",
+      "claim_id": "C82",
+      "claim": "Additional, weak ATP-binding sites beyond the catalytic ones in RecB and RecD serve as auxiliary sites from which ATP is transferred to the catalytic sites.",
+      "claim_type": "EXPLICIT",
+      "source": "In a recent work, we showed that this fast rate is supported by additional, weak ATP-binding sites, beyond the catalytic ones in RecB and RecD, that serve as auxiliary sites from which ATP is transferred to the catalytic sites.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on previous work by the authors.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:54:40.176271Z"
+    },
+    {
+      "id": "0293b1c6-e8d1-456c-8154-d830e320ff82",
+      "content_id": "3ab41311-f9d8-485b-ad1b-faba3279b961",
+      "claim_id": "C83",
+      "claim": "The auxiliary ATP-binding sites result in a significant increase in RecBCD's unwinding velocity at intermediate ATP concentrations.",
+      "claim_type": "EXPLICIT",
+      "source": "This mechanism was shown to result in a significant increase in RecBCD's unwinding velocity at intermediate ATP concentrations (Zananiri et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on previous work by the authors.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:54:40.176271Z"
+    },
+    {
+      "id": "d3fddcbc-fd63-4066-9f16-b022d358e03e",
+      "content_id": "3ab41311-f9d8-485b-ad1b-faba3279b961",
+      "claim_id": "C84",
+      "claim": "It is possible that the existence of the auxiliary sites and the results presented here are related.",
+      "claim_type": "EXPLICIT",
+      "source": "It is possible that the existence of the auxiliary sites and the results presented here are related: In the case of a BR coupled to ATP binding, an opposing force such as an externally applied force or a DNA-binding protein presenting a roadblock for translocation, decreases the rate of reaching the post-translocation state, and therefore the rate of ATP binding.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about the connection between auxiliary sites and force response.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:54:40.176271Z"
+    },
+    {
+      "id": "c468de6b-f7cb-47a4-b1a8-08db583d9208",
+      "content_id": "3ab41311-f9d8-485b-ad1b-faba3279b961",
+      "claim_id": "C85",
+      "claim": "The ATP auxiliary sites may play a role in overcoming the effect of the force, by allowing binding via a parallel pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "Hence, it is possible that the ATP auxiliary sites play a role in overcoming the effect of the force, by allowing binding via a parallel pathway.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about the functional role of auxiliary sites.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:54:40.176271Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "588b2f3f-918b-43f4-a88b-1cf361f1af3c",
+      "content_id": "3ab41311-f9d8-485b-ad1b-faba3279b961",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "RecBCD and its subunits RecB and RecD generate high forces (RecBCD: 43\u00b12 pN, RecB: 40\u00b13 pN, RecD: 29\u00b13 pN) without significant velocity reduction at forces below these maxima. RecD alone generates ~30% less force than RecBCD or RecB.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C14-C17 are directly supported by force-velocity measurements in Figure 2a-c showing force generation capabilities. The experimental design using optical tweezers with asymmetric DNA constructs allows independent measurement of each subunit's force generation within the intact complex. Error estimates are provided and the data clearly shows RecD's reduced force capacity compared to the full complex.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:54:40.176271Z"
+    },
+    {
+      "id": "1b5a68ba-39af-4926-94a8-2b5ec7404de6",
+      "content_id": "3ab41311-f9d8-485b-ad1b-faba3279b961",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Isolated RecD is a fast translocase but a weak helicase with poor processivity (~50 bp). When RecD is in complex with RecB/RecC, it can unwind DNA at ~430 bp/s, but isolated RecD is practically unable to unwind DNA at zero force. The presence of RecC and/or RecB is necessary for RecD to efficiently and processively unwind DNA.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2, C21, C23-C25 are well-supported by experimental data comparing RecD in complex (Figure 2b) versus isolated RecD (Figure 3). The zero-force extrapolation shows a dramatic difference (~430 bp/s vs ~0 bp/s, Figure 3d), and processivity measurements (~50 bp isolated vs ~30,000 bp for RecBCD) clearly demonstrate RecD's dependence on other subunits. The experimental designs appropriately test the two conditions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:54:40.176271Z"
+    },
+    {
+      "id": "d6fd9c39-8d5f-4bc9-8a0f-08abac3ed9a9",
+      "content_id": "3ab41311-f9d8-485b-ad1b-faba3279b961",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "RecD operates as a Brownian ratchet mechanism rectified by ATP binding, with a step size of ~3 bp. The presence of RecB/RecC shifts the ratchet equilibrium toward the post-translocation state by approximately 200-fold, without greatly affecting other microscopic rates.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C4, C26, C29 are supported by global fitting of kinetic models to force-velocity data across multiple ATP concentrations (Figure 4, Figure 5). The Brownian ratchet before ATP binding model provided the best fit (R\u00b2=0.76 for in-complex, R\u00b2=0.78 for isolated). The 200-fold shift in equilibrium constant (Figure 5e) is derived from fitting parameters. However, the model selection relies on goodness-of-fit comparisons and alternative models cannot be definitively excluded.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:54:40.176271Z"
+    },
+    {
+      "id": "f6b22457-0b69-4eca-a524-62cb98bb2a14",
+      "content_id": "3ab41311-f9d8-485b-ad1b-faba3279b961",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Both RecB and RecD subunits unwind DNA at ~400 bp/s at low forces when measured individually in the complex, but the whole complex shows ~1100 bp/s, significantly higher than the sum of individual rates. This 1.4-fold increase suggests synergy from direct allosteric interactions between subunits.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C18-C20, C44-C45 are supported by velocity measurements using symmetric and asymmetric constructs. The observation that the combined rate (1100 bp/s) exceeds the sum of individual rates (2\u00d7400=800 bp/s) demonstrates synergy. The interpretation of allosteric interactions (C45) is reasonable given the experimental design where subunits unwind different DNA tracks, though the mechanism remains inferential.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:54:40.176271Z"
+    },
+    {
+      "id": "da292ebf-f694-4ac7-a419-7a26c4e502c3",
+      "content_id": "3ab41311-f9d8-485b-ad1b-faba3279b961",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The measured forces (25-40 pN) provide a mechanical basis for RecBCD's ability to overcome DNA-bound protein roadblocks, consistent with forces required to evict proteins like RNA polymerase (20-30 pN).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C51 appropriately connects the measured forces (C1, C14-C16) with literature values for protein displacement (C8). The comparison with prior observations of RecBCD displacing proteins without pausing (C6, C7) is logically consistent. However, this is an inference connecting current measurements with prior observations rather than direct experimental validation of protein displacement in this study.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:54:40.176271Z"
+    },
+    {
+      "id": "cb7586e9-3107-4316-a29e-9941126a4640",
+      "content_id": "3ab41311-f9d8-485b-ad1b-faba3279b961",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Control experiments with RecBK29QCD mutant (deficient in RecB ATPase) show indistinguishable force-velocity curves from wild-type when probing RecD, and RecBC alone sustains only ~9 pN, confirming that the asymmetric constructs specifically probe RecB and RecD activities without contribution from RecB's secondary translocase.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C40-C43 are supported by control experiments (Figure 2\u2014figure supplement 1a,b). The RecBK29QCD mutant control validates that RecB's secondary translocase doesn't contribute to the measured RecD activity. The low force tolerance of RecBC (~9 pN) further confirms the secondary translocase is inactive at higher forces. These controls strengthen the interpretation that the assay specifically measures individual subunit activities.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:54:40.176271Z"
+    },
+    {
+      "id": "61840385-3013-40fa-bb56-a419902b04d4",
+      "content_id": "3ab41311-f9d8-485b-ad1b-faba3279b961",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The discrepancy between current measurements (25-40 pN) and previous reports (~8 pN) may be explained by differences in ATP concentration or loop formation in different experimental geometries. At low ATP, the enzyme spends more time in force-sensitive pre/post-translocation states, while higher ATP allows minimizing time in these states.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C52-C56 are largely speculative explanations for the discrepancy with prior work (C9). While the mechanistic reasoning about ATP-dependent state occupancy (C53-C55) is consistent with the Brownian ratchet model, and the loop formation hypothesis (C56) is plausible, these remain untested hypotheses. The manuscript appropriately presents these as speculation, but they lack direct experimental support.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:54:40.176271Z"
+    },
+    {
+      "id": "3caa125d-20bc-4966-8088-f6d9687d8cf8",
+      "content_id": "3ab41311-f9d8-485b-ad1b-faba3279b961",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The helicase subunits function by division of labor: they pull DNA but play a minor role in fork destabilization. The effect may be mediated by RecC's pin domain and RecB's arm domain, consistent with structural models where melting occurs as translocases pull DNA against a protein wedge.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C59-C60 are supported by the low destabilization energy measured for RecD (~0.6 kBT) and the 200-fold shift in translocation equilibrium when in complex. Claims C61-C62, C64-C66 appropriately cite structural studies to propose mechanisms. However, the specific structural basis (C61, C64) remains speculative as the current study doesn't directly test these structural elements. The division of labor model is well-supported by the data, but the structural mechanism is inferred.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:54:40.176271Z"
+    },
+    {
+      "id": "03b35124-3337-4b05-97d9-45951347791c",
+      "content_id": "3ab41311-f9d8-485b-ad1b-faba3279b961",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Previously observed conformational dynamics of RecBCD-DNA complex may represent fluctuations of RecD between pre- and post-translocation states, consistent with the Brownian ratchet mechanism and the ~3-4 bp step size.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C47-C49 accurately cite prior work. Claim C50 is explicitly speculative, connecting previous observations with current findings. While the connection between the ~4 bp dynamics observed previously and the ~3.3 bp step size measured here is suggestive, this remains an untested hypothesis. The manuscript appropriately presents this as speculation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:54:40.176271Z"
+    },
+    {
+      "id": "434f99c6-1653-475c-8c74-3239704425f6",
+      "content_id": "3ab41311-f9d8-485b-ad1b-faba3279b961",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The assay has limitations: structural elements cannot simultaneously destabilize both DNA segments in the asymmetric geometry. However, the functional force-velocity relationships remain valid, and velocity underestimation (if present) only strengthens the conclusion about RecD's dependence on other subunits for fork destabilization.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C69-C80 provide a thorough discussion of experimental limitations and their impact on interpretation. The authors acknowledge that the assay may underestimate velocities (C75-C76) but correctly argue this doesn't affect force-response conclusions (C77-C79). The logic that underestimation strengthens the RecD dependence conclusion (C80) is sound. The discussion of alternative explanations (C73-C74) is appropriately speculative. This represents good scientific practice in acknowledging limitations.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:54:40.176271Z"
+    },
+    {
+      "id": "bfe87a66-357d-458a-bba6-fea36bfa47cd",
+      "content_id": "3ab41311-f9d8-485b-ad1b-faba3279b961",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The observed unwinding trace lengths (490\u00b113 bp for RecBCD, 116\u00b116 bp for RecD, 380\u00b143 bp for RecB) do not represent true processivity because traces are terminated by force-induced dissociation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C46 is explicitly stated and represents an important caveat about data interpretation. The reasoning is sound: in the passive mode where force increases during unwinding, dissociation is force-induced rather than reflecting intrinsic processivity. This is an appropriate limitation to acknowledge.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:54:40.176271Z"
+    },
+    {
+      "id": "6f5042be-f012-45dd-a9bb-bf59c26a2e14",
+      "content_id": "3ab41311-f9d8-485b-ad1b-faba3279b961",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Auxiliary ATP-binding sites previously identified may help overcome force effects by providing a parallel ATP binding pathway, potentially explaining RecBCD's ability to maintain activity under force.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C82-C83 cite prior work by the authors. Claims C84-C85 are explicitly speculative connections between auxiliary sites and force response. While the hypothesis is mechanistically reasonable given the Brownian ratchet model, it lacks direct experimental support in this study. The manuscript appropriately presents this as speculation for future investigation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:54:40.176271Z"
+    },
+    {
+      "id": "f0fe26e3-adeb-4dba-b8c6-4a7663180a17",
+      "content_id": "3ab41311-f9d8-485b-ad1b-faba3279b961",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Background information on RecBCD structure, function, and properties from prior literature.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C30-C39 represent established knowledge and prior work appropriately cited. These provide necessary context but are not novel findings of this study. The citations appear accurate and relevant.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:54:40.176271Z"
+    },
+    {
+      "id": "3d6fb73b-d7d2-443c-9fd4-4ff8ba756999",
+      "content_id": "3ab41311-f9d8-485b-ad1b-faba3279b961",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Background information on RecBCD mechanism and properties from prior literature.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5, C10-C13, C22, C63, C68 represent established knowledge from prior studies, appropriately cited. These provide necessary background but are not novel findings. The citations appear accurate.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:54:40.176271Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "870f461a-fa14-4806-849f-7ea36b6d3b24",
+      "result_id": "588b2f3f-918b-43f4-a88b-1cf361f1af3c"
+    },
+    {
+      "claim_id": "ad183845-6044-4254-8d44-3b5a8154e421",
+      "result_id": "588b2f3f-918b-43f4-a88b-1cf361f1af3c"
+    },
+    {
+      "claim_id": "d6917564-81f4-401f-ad54-d95a91d843fe",
+      "result_id": "588b2f3f-918b-43f4-a88b-1cf361f1af3c"
+    },
+    {
+      "claim_id": "7445e425-a894-4553-88a3-0f9856babced",
+      "result_id": "588b2f3f-918b-43f4-a88b-1cf361f1af3c"
+    },
+    {
+      "claim_id": "5254fca4-87b9-4783-9c85-21b0aaf3a6bf",
+      "result_id": "588b2f3f-918b-43f4-a88b-1cf361f1af3c"
+    },
+    {
+      "claim_id": "c4d3e060-2728-4de0-8cd8-72db80585341",
+      "result_id": "1b5a68ba-39af-4926-94a8-2b5ec7404de6"
+    },
+    {
+      "claim_id": "59b202f2-d1be-489c-a7dc-c1dfe78f17fb",
+      "result_id": "1b5a68ba-39af-4926-94a8-2b5ec7404de6"
+    },
+    {
+      "claim_id": "143de885-e079-4b74-a188-68d326912282",
+      "result_id": "1b5a68ba-39af-4926-94a8-2b5ec7404de6"
+    },
+    {
+      "claim_id": "9fcea3b9-6d4d-4472-a70e-5ef699c61dbf",
+      "result_id": "1b5a68ba-39af-4926-94a8-2b5ec7404de6"
+    },
+    {
+      "claim_id": "8f7bc105-ac78-422c-99cc-499a5798ab33",
+      "result_id": "1b5a68ba-39af-4926-94a8-2b5ec7404de6"
+    },
+    {
+      "claim_id": "b2ac67e0-4199-4660-bc8f-e1f335eefbe1",
+      "result_id": "d6fd9c39-8d5f-4bc9-8a0f-08abac3ed9a9"
+    },
+    {
+      "claim_id": "b9780173-1f57-43c9-bb27-c66502932bfa",
+      "result_id": "d6fd9c39-8d5f-4bc9-8a0f-08abac3ed9a9"
+    },
+    {
+      "claim_id": "b0866106-3a59-44f0-bb53-af76f8cb8db2",
+      "result_id": "d6fd9c39-8d5f-4bc9-8a0f-08abac3ed9a9"
+    },
+    {
+      "claim_id": "b62f24fc-e423-442d-a007-b5610d1926f1",
+      "result_id": "d6fd9c39-8d5f-4bc9-8a0f-08abac3ed9a9"
+    },
+    {
+      "claim_id": "d3ba5579-ed26-4c97-a53e-ac5ae11ea404",
+      "result_id": "f6b22457-0b69-4eca-a524-62cb98bb2a14"
+    },
+    {
+      "claim_id": "81408755-3331-42b4-8207-53c43e21eaa6",
+      "result_id": "f6b22457-0b69-4eca-a524-62cb98bb2a14"
+    },
+    {
+      "claim_id": "41b355b0-42f4-41f8-962e-133828ae24ab",
+      "result_id": "f6b22457-0b69-4eca-a524-62cb98bb2a14"
+    },
+    {
+      "claim_id": "6fd10693-4ba4-40c1-b6ed-555e6e3e2576",
+      "result_id": "f6b22457-0b69-4eca-a524-62cb98bb2a14"
+    },
+    {
+      "claim_id": "79d7518c-83d3-41c0-babe-e6d506219133",
+      "result_id": "f6b22457-0b69-4eca-a524-62cb98bb2a14"
+    },
+    {
+      "claim_id": "64c6a0e2-52d1-4fdc-ae7f-ad19103a44f9",
+      "result_id": "da292ebf-f694-4ac7-a419-7a26c4e502c3"
+    },
+    {
+      "claim_id": "9e627517-15a0-41bc-b9f3-2653aed25c7a",
+      "result_id": "da292ebf-f694-4ac7-a419-7a26c4e502c3"
+    },
+    {
+      "claim_id": "ef833b49-af1f-4b19-bbbe-901d20b989d5",
+      "result_id": "da292ebf-f694-4ac7-a419-7a26c4e502c3"
+    },
+    {
+      "claim_id": "60efb140-a925-47a1-b775-75af54069a29",
+      "result_id": "da292ebf-f694-4ac7-a419-7a26c4e502c3"
+    },
+    {
+      "claim_id": "ad012759-ed5c-4375-aba3-d4d9942bd64a",
+      "result_id": "cb7586e9-3107-4316-a29e-9941126a4640"
+    },
+    {
+      "claim_id": "eb94df78-488f-41d0-abe9-abaeb8bcde3c",
+      "result_id": "cb7586e9-3107-4316-a29e-9941126a4640"
+    },
+    {
+      "claim_id": "e62226b9-8d1a-4aa0-bcb0-e3e808d3b2d0",
+      "result_id": "cb7586e9-3107-4316-a29e-9941126a4640"
+    },
+    {
+      "claim_id": "62f7020b-85e3-4504-ae57-28d6cfff4133",
+      "result_id": "cb7586e9-3107-4316-a29e-9941126a4640"
+    },
+    {
+      "claim_id": "0bdd5a8d-7064-4ab5-812e-e2180b7d3101",
+      "result_id": "61840385-3013-40fa-bb56-a419902b04d4"
+    },
+    {
+      "claim_id": "473a1605-b1fc-4bf8-9918-13739a4c5da2",
+      "result_id": "61840385-3013-40fa-bb56-a419902b04d4"
+    },
+    {
+      "claim_id": "e78ea242-0ae6-4bc7-9900-125dcb55b9ab",
+      "result_id": "61840385-3013-40fa-bb56-a419902b04d4"
+    },
+    {
+      "claim_id": "5c7a6ae2-d38c-492e-8a87-01cda428d47d",
+      "result_id": "61840385-3013-40fa-bb56-a419902b04d4"
+    },
+    {
+      "claim_id": "b2bc7977-ff7d-4800-a5be-ee1d2e338ac3",
+      "result_id": "61840385-3013-40fa-bb56-a419902b04d4"
+    },
+    {
+      "claim_id": "fe5a6fdb-e1fa-4129-ad79-84f50ffa2d9e",
+      "result_id": "61840385-3013-40fa-bb56-a419902b04d4"
+    },
+    {
+      "claim_id": "ee4e50f6-d207-4498-8e3c-3f61882438a4",
+      "result_id": "3caa125d-20bc-4966-8088-f6d9687d8cf8"
+    },
+    {
+      "claim_id": "99ababa6-d46e-4a9e-98cc-ebef75d84c9c",
+      "result_id": "3caa125d-20bc-4966-8088-f6d9687d8cf8"
+    },
+    {
+      "claim_id": "e372bc8e-4fa0-4606-b061-53ae6151d8ba",
+      "result_id": "3caa125d-20bc-4966-8088-f6d9687d8cf8"
+    },
+    {
+      "claim_id": "e9bb463a-1bea-488d-8528-d85cd7f5cbf4",
+      "result_id": "3caa125d-20bc-4966-8088-f6d9687d8cf8"
+    },
+    {
+      "claim_id": "f8337fbe-084e-4999-b07b-225368f50fba",
+      "result_id": "3caa125d-20bc-4966-8088-f6d9687d8cf8"
+    },
+    {
+      "claim_id": "3ea60e7e-3dcf-46f7-b423-fdc680de9cbc",
+      "result_id": "3caa125d-20bc-4966-8088-f6d9687d8cf8"
+    },
+    {
+      "claim_id": "3e4ab8ac-fb12-413a-98b0-6b6869b97ab5",
+      "result_id": "3caa125d-20bc-4966-8088-f6d9687d8cf8"
+    },
+    {
+      "claim_id": "cfe7f7ce-470c-4f13-a045-5c31fa8bfa14",
+      "result_id": "03b35124-3337-4b05-97d9-45951347791c"
+    },
+    {
+      "claim_id": "7363bc3f-e32b-4c26-b446-b6caf22e3e1a",
+      "result_id": "03b35124-3337-4b05-97d9-45951347791c"
+    },
+    {
+      "claim_id": "e69eec68-4276-4221-a469-06b5806f6064",
+      "result_id": "03b35124-3337-4b05-97d9-45951347791c"
+    },
+    {
+      "claim_id": "ab8d23be-a9aa-4cf9-b639-e6e4ba49ca61",
+      "result_id": "03b35124-3337-4b05-97d9-45951347791c"
+    },
+    {
+      "claim_id": "d98b2d7a-f0c9-4cc8-83da-5f8f6587746e",
+      "result_id": "434f99c6-1653-475c-8c74-3239704425f6"
+    },
+    {
+      "claim_id": "49056ea5-6536-4cd2-a3d8-dc5fa9d70351",
+      "result_id": "434f99c6-1653-475c-8c74-3239704425f6"
+    },
+    {
+      "claim_id": "6fda0b47-87f0-482e-b96e-b81ff2131aed",
+      "result_id": "434f99c6-1653-475c-8c74-3239704425f6"
+    },
+    {
+      "claim_id": "39a51d96-4b44-42b6-bf11-d02cb297378c",
+      "result_id": "434f99c6-1653-475c-8c74-3239704425f6"
+    },
+    {
+      "claim_id": "65193caf-c431-4de4-b9d5-94ab6365e87e",
+      "result_id": "434f99c6-1653-475c-8c74-3239704425f6"
+    },
+    {
+      "claim_id": "dce1c52e-12e4-42bc-96d0-6e1733cfdcc2",
+      "result_id": "434f99c6-1653-475c-8c74-3239704425f6"
+    },
+    {
+      "claim_id": "1cf82955-2774-463d-a176-931b9fbfd9ea",
+      "result_id": "434f99c6-1653-475c-8c74-3239704425f6"
+    },
+    {
+      "claim_id": "77c5242c-8dd7-45f8-91a0-dc629eed251e",
+      "result_id": "434f99c6-1653-475c-8c74-3239704425f6"
+    },
+    {
+      "claim_id": "c97c21ae-1616-45ab-a04c-37afc76cbaed",
+      "result_id": "434f99c6-1653-475c-8c74-3239704425f6"
+    },
+    {
+      "claim_id": "f22c2625-44de-41b0-9390-35c9bfb6b636",
+      "result_id": "434f99c6-1653-475c-8c74-3239704425f6"
+    },
+    {
+      "claim_id": "95471b3c-c940-4099-bce8-fd69840fee32",
+      "result_id": "434f99c6-1653-475c-8c74-3239704425f6"
+    },
+    {
+      "claim_id": "29a81686-9358-4eae-9167-2c786d75f4a8",
+      "result_id": "434f99c6-1653-475c-8c74-3239704425f6"
+    },
+    {
+      "claim_id": "4cf32006-a09a-4cb9-abc9-e1c6b597c54e",
+      "result_id": "bfe87a66-357d-458a-bba6-fea36bfa47cd"
+    },
+    {
+      "claim_id": "0caccaef-b90e-4ee9-b16c-22e4813ca9a8",
+      "result_id": "6f5042be-f012-45dd-a9bb-bf59c26a2e14"
+    },
+    {
+      "claim_id": "0293b1c6-e8d1-456c-8154-d830e320ff82",
+      "result_id": "6f5042be-f012-45dd-a9bb-bf59c26a2e14"
+    },
+    {
+      "claim_id": "d3fddcbc-fd63-4066-9f16-b022d358e03e",
+      "result_id": "6f5042be-f012-45dd-a9bb-bf59c26a2e14"
+    },
+    {
+      "claim_id": "c468de6b-f7cb-47a4-b1a8-08db583d9208",
+      "result_id": "6f5042be-f012-45dd-a9bb-bf59c26a2e14"
+    },
+    {
+      "claim_id": "a6b2050b-d684-4b14-8c07-a5d90eb83439",
+      "result_id": "f0fe26e3-adeb-4dba-b8c6-4a7663180a17"
+    },
+    {
+      "claim_id": "a6290c35-cecc-46ea-9aa1-7265fd6fcc50",
+      "result_id": "f0fe26e3-adeb-4dba-b8c6-4a7663180a17"
+    },
+    {
+      "claim_id": "217b5af5-0424-4f9e-8cb2-509b54246fe4",
+      "result_id": "f0fe26e3-adeb-4dba-b8c6-4a7663180a17"
+    },
+    {
+      "claim_id": "8d071860-b335-47bf-be18-2af299ed6ef2",
+      "result_id": "f0fe26e3-adeb-4dba-b8c6-4a7663180a17"
+    },
+    {
+      "claim_id": "fdcfff25-5f21-42f6-a77c-33803e9d839e",
+      "result_id": "f0fe26e3-adeb-4dba-b8c6-4a7663180a17"
+    },
+    {
+      "claim_id": "1325cecb-cba3-4276-b5c6-53e11e29cbdb",
+      "result_id": "f0fe26e3-adeb-4dba-b8c6-4a7663180a17"
+    },
+    {
+      "claim_id": "f9008968-5f71-49a3-b744-41df16d85a91",
+      "result_id": "f0fe26e3-adeb-4dba-b8c6-4a7663180a17"
+    },
+    {
+      "claim_id": "5ca27721-d556-4ebe-af7e-211002731940",
+      "result_id": "f0fe26e3-adeb-4dba-b8c6-4a7663180a17"
+    },
+    {
+      "claim_id": "35f76919-462a-44f0-96be-bf20aed7f4a4",
+      "result_id": "f0fe26e3-adeb-4dba-b8c6-4a7663180a17"
+    },
+    {
+      "claim_id": "a8d3423d-d345-4033-96cd-3722a8290933",
+      "result_id": "f0fe26e3-adeb-4dba-b8c6-4a7663180a17"
+    },
+    {
+      "claim_id": "e68acb15-ac00-4991-8abc-1bb420de00be",
+      "result_id": "3d6fb73b-d7d2-443c-9fd4-4ff8ba756999"
+    },
+    {
+      "claim_id": "bb442a82-700f-4093-bf92-225093fb615b",
+      "result_id": "3d6fb73b-d7d2-443c-9fd4-4ff8ba756999"
+    },
+    {
+      "claim_id": "51964596-ea8a-4605-93a5-8c138543afb6",
+      "result_id": "3d6fb73b-d7d2-443c-9fd4-4ff8ba756999"
+    },
+    {
+      "claim_id": "27eb4a82-d45c-4d9f-a26f-ed299af13727",
+      "result_id": "3d6fb73b-d7d2-443c-9fd4-4ff8ba756999"
+    },
+    {
+      "claim_id": "a5a93bfa-0dd9-4ee0-a8d2-a018786888c2",
+      "result_id": "3d6fb73b-d7d2-443c-9fd4-4ff8ba756999"
+    },
+    {
+      "claim_id": "6cd5258b-da44-4e87-b8be-32191b739952",
+      "result_id": "3d6fb73b-d7d2-443c-9fd4-4ff8ba756999"
+    },
+    {
+      "claim_id": "fd413668-0909-4ae9-bb45-65daaf9b0f5c",
+      "result_id": "3d6fb73b-d7d2-443c-9fd4-4ff8ba756999"
+    },
+    {
+      "claim_id": "eeba0a8e-b748-448b-a56b-6b70d161c391",
+      "result_id": "3d6fb73b-d7d2-443c-9fd4-4ff8ba756999"
+    }
+  ],
+  "comparisons": []
+}

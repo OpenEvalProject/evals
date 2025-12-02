@@ -1,0 +1,186 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C31",
+      "C9",
+      "C8"
+    ],
+    "result": "The authors establish the theoretical relationship between sign epistasis and signed circuit interactions. Sign epistasis implies signed circuit interactions, but the converse is not true, meaning signed circuits are not generalizations of sign epistasis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31, C9, and C8 establish the theoretical framework and relationship between sign epistasis and signed circuits. The logical relationship is clearly stated (C31) with proper definition (C9) and attribution (C8), forming a coherent theoretical contribution.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "Analysis of malaria parasite fitness landscapes reveals that order perturbations beyond sign epistasis are prevalent in antimalarial drug-resistance, with the drug-free environment showing twice as many size 2 and 3 perturbations as the drug-exposed environment, indicating adaptation is more difficult in the drug-free environment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C12-C16 form a coherent analysis of malaria data with quantitative support from Table 1. The finding that drug-free environments have more perturbations (C12) while sign epistasis is equal (C13) supports the conclusion about adaptation difficulty (C14), which aligns with prior observations (C15). The superior discriminatory power of complete perturbation statistics (C16) strengthens the result.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C20",
+      "C35"
+    ],
+    "result": "Analysis of Methylobacterium extorquens adapting to methanol demonstrates that rectangular perturbations can detect epistasis when conventional sign epistasis methods cannot, as the system has size 2 perturbations but no sign epistasis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C17-C18 and C20 present an interesting case where size 2 perturbations reveal epistasis despite absence of sign epistasis. However, the authors explicitly state they assume published measurements are exact, which is a strong assumption. The manuscript acknowledges measurement error sensitivity but does not provide statistical validation of the perturbations detected. Without error analysis or replication, the detection of epistasis remains uncertain.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C34"
+    ],
+    "result": "For three-locus systems, only 96 out of 384 orders compatible with absence of sign epistasis are compatible with additive fitness, representing 0.24% of all 40,320 possible rank orders, demonstrating that very few rank orders are compatible with additive fitness.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C28 provide specific computational results with clear numerical support. C26 cites prior work, C27 describes the authors' verification, and C28 provides the calculated percentage. The generalization to all systems (C34) follows logically from these specific calculations and is appropriately qualified as an inference.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C29",
+      "C30",
+      "C51",
+      "C52"
+    ],
+    "result": "The relationship between rectangular perturbations and additive fitness varies by system size: for n=2, sign epistasis is necessary and sufficient; for n=4, rectangular perturbations are necessary and sufficient; but for n\u22655, counterexamples exist where rank orders without perturbations are incompatible with additive fitness.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C33 establish the pattern for smaller systems, while C29-C30 and C51-C52 document the breakdown for n=5 with proper citations to Kraft et al. (1959) and Maclagan (1998). This progression from simple to complex cases is well-supported by both the authors' work and cited literature.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C22",
+      "C23"
+    ],
+    "result": "Simulations demonstrate that for additive fitness with deleterious mutations, the proportion of unexpected results (apparent fitness increases due to measurement error) decreases with the number of loci replaced, because noise levels remain similar while effect sizes increase.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C23 are supported by simulation results in Figure 3 showing the pattern for both normal and Student's t-distributions. The explanation (C23) is mechanistically sound: larger replacements have larger effect sizes while noise remains constant, improving signal-to-noise ratio. The simulation methodology is described in Materials and Methods.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C49",
+      "C50"
+    ],
+    "result": "For four-locus systems, computational verification identifies exactly 14 rank orders (up to equivalence) with no order perturbations, and all are compatible with additive fitness.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C50 present computational verification results that are internally consistent and follow from the theoretical framework. The verification method is described (solving systems of linear inequalities), and the result aligns with the pattern established for smaller systems before the breakdown at n=5.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C47",
+      "C48"
+    ],
+    "result": "For three-locus systems, each equivalence class of rank orders consists of 48 orders, and the 8! total rank orders partition into 840 equivalence classes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C48 present straightforward mathematical calculations (2^3 \u00d7 3! = 48 and 8!/48 = 840) that follow from the definition of equivalence classes under cube isomorphisms. The calculations are verifiable and internally consistent.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "Figure 1 illustrates the three types of two-locus systems: absence of sign epistasis (A), sign epistasis (B), and reciprocal sign epistasis (C), which can be characterized by the number of downward-pointing arrows (0, 1, or 2 respectively) when 00 has minimal fitness.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C56 accurately describe Figure 1, which provides clear visual representation of the three epistasis types. The characterization by arrow direction (C56) is a valid simplification under the stated assumptions and aids in understanding the concepts.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "Figure 2 demonstrates that compatibility with additive fitness requires all pairs of parallel arrows to point in the same direction, with graph 2A being compatible while 2B-2D are not, and illustrates both sign epistasis (short arrows) and size 2 perturbations (long arrows).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C60 accurately describe Figure 2 and its caption. The visual representation effectively illustrates the key concepts of rectangular perturbations and their relationship to additive fitness, supporting the theoretical framework developed in the manuscript.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C6",
+      "C7",
+      "C8",
+      "C10",
+      "C11",
+      "C24",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "The manuscript establishes context by reviewing the history and established knowledge of rank orders in evolutionary biology, including their robustness, applications across multiple fields, and known limitations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3, C6-C8, C10-C11, C24, C36-C38 provide appropriate background context with proper citations. These establish the historical foundation (Wright 1932, Weinreich et al. 2005) and acknowledge limitations of rank-order methods, demonstrating scholarly awareness of the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C44"
+    ],
+    "result": "The manuscript establishes mathematical properties of circuits, including that there are 20 circuits for n=3, all circuits are zero for additive fitness, and each rectangle corresponds to exactly two rectangular perturbations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C40 and C44 present mathematical facts that are verifiable and consistent with the circuit theory framework. These provide necessary technical foundations for the perturbation analysis, though they are supporting rather than primary contributions.",
+    "result_type": "MINOR"
+  }
+]

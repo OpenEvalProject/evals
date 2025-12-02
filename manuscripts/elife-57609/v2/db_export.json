@@ -1,0 +1,1356 @@
+{
+  "submission": {
+    "id": "8f7636bb-433d-4a1d-a261-ba1db165ef40",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T19:38:00.464408Z",
+    "updated_at": "2025-12-02T19:38:00.464408Z"
+  },
+  "content": [
+    {
+      "id": "2220da68-cc94-4180-8134-03a4b20c15f2",
+      "submission_id": "8f7636bb-433d-4a1d-a261-ba1db165ef40",
+      "content_type": "manuscript",
+      "content_text": "# Resource plasticity-driven carbon-nitrogen budgeting enables specialization and division of labor in a clonal community\n\n## Authors\n\n- Sriram Varahan<sup>1</sup> ([ORCID: 0000-0002-3609-4032](https://orcid.org/0000-0002-3609-4032))\n- Vaibhhav Sinha<sup>2</sup> ([ORCID: 0000-0002-5169-5485](https://orcid.org/0000-0002-5169-5485))\n- Adhish Walvekar<sup>1</sup> ([ORCID: 0000-0001-7344-7653](https://orcid.org/0000-0001-7344-7653))\n- Sandeep Krishna<sup>2</sup> ([ORCID: 0000-0002-0581-173X](https://orcid.org/0000-0002-0581-173X)) \u2020\n- Sunil Laxman<sup>1</sup> ([ORCID: 0000-0002-0861-5080](https://orcid.org/0000-0002-0861-5080)) \u2020\n\n### Affiliations\n\n1. InStem - Institute for Stem Cell Science and Regenerative Medicine Bangalore India\n2. Simons Centre for the Study of Living Machines, National Center for Biological Sciences, Tata Institute for Fundamental Research Bangalore India\n3. Manipal Academy of Higher Education Manipal India\n\n\u2020 Corresponding author\n\n## Abstract\n\nPreviously, we found that in glucose-limited Saccharomyces cerevisiae colonies, metabolic constraints drive cells into groups exhibiting gluconeogenic or glycolytic states. In that study, threshold amounts of trehalose - a limiting, produced carbon-resource, controls the emergence and self-organization of cells exhibiting the glycolytic state, serving as a carbon source that fuels glycolysis (Varahan et al., 2019). We now discover that the plasticity of use of a non-limiting resource, aspartate, controls both resource production and the emergence of heterogeneous cell states, based on differential metabolic budgeting. In gluconeogenic cells, aspartate is a carbon source for trehalose production, while in glycolytic cells using trehalose for carbon, aspartate is predominantly a nitrogen source for nucleotide synthesis. This metabolic plasticity of aspartate enables carbon-nitrogen budgeting, thereby driving the biochemical self-organization of distinct cell states. Through this organization, cells in each state exhibit true division of labor, providing growth/survival advantages for the whole community.\n\n## Introduction\n\nDuring the development of microbial communities, groups of cells come together and exhibit heterogeneity within spatial organization (Ackermann, 2015). As the community develops, cells can present specialization of function, which allows the community as a whole to perform various tasks including the acquisition of food, defense against competing microorganisms, or more efficient growth (Newman, 2016; Niklas, 2014; West and Cooper, 2016). This division of labor allows breakdown of complex biological processes into simpler steps, eliminating the need for individual cells to perform several tasks simultaneously, thereby enhancing the overall efficiency with which cells in the community function (Giri et al., 2019; Johnson et al., 2012; Rueffler et al., 2012; van Gestel et al., 2015). Due to these advantages, division of labor is widely prevalent across diverse microbial communities and can be found at different levels of biological organization (Gordon, 2016; Kirk, 2003; Tarnita et al., 2013). However, the underlying rules that enable division of labor within cell populations remain to be deciphered.\n\nIn particular, microbial community development is commonly triggered by nutrient limitation (Ackermann, 2015; Hoehler and J\u00f8rgensen, 2013; Johnson et al., 2012). Clearly, an optimal allocation of resources is critical for maximizing overall fitness within a microbial community, especially when the availability of nutrients is limiting (Litchman et al., 2015; Wessely et al., 2011). One strategy by which the community can manage the requirement of different resources is by sharing metabolic products, and this is employed by many microbial communities (D'Souza et al., 2018; Liu et al., 2015). Since resources can often be insufficient, the sharing of such resources might incur a cost to the cell. Hence, different cells of the community exhibit metabolic interdependencies, presumably to balance out trade-offs arising from resource sharing. While this concept has been demonstrated for example, in synthetically engineered systems, where required metabolic dependencies are created between non-isogenic cells (Campbell et al., 2016; Campbell et al., 2015), this has been exceptionally challenging to demonstrate within a clonal community of cells. We recently discovered that metabolic constraints are sufficient to enable the emergence and maintenance of cells in specialized biochemical states within a clonal S. cerevisiae community (Varahan et al., 2019). Remarkably, this occurs through a simple, self-organized biochemical system. In yeast growing in low glucose, cells are predominantly gluconeogenic. As the colony matures, groups of cells exhibiting glycolytic metabolism emerge with spatial organization. Strikingly, this occurs through the production (via gluconeogenesis) and accumulation of a limiting metabolic resource, trehalose. As this resource builds up, some cells spontaneously switch to utilizing trehalose for carbon, which then drives a glycolytic state. This also depletes the resource, and therefore a self-organized system of trehalose producers and utilizers establish themselves, enabling structured phenotypic heterogeneity (Varahan et al., 2019).\n\nThis observation raises a deeper question, of how such groups of heterogeneous cells can sustain themselves in this self-organized biochemical system. In particular, is it sufficient to only have the build-up of this limiting, controlling resource? How are carbon and nitrogen requirements balanced within the cells in the heterogeneous states? In this study, we uncover how a non-limiting resource with plasticity in function can control the organization of this entire system. We find that the amino acid aspartate, through distinct use of its carbon or nitrogen backbone, enables the emergence and organization of heterogeneous cells. In gluconeogenic cells, aspartate is utilized in order to produce the limiting carbon resource, trehalose, which in turn is utilized by other cells that switch to and stabilize in a glycolytic state. Combining biochemical, computational modeling and analytical approaches, we find that aspartate is differentially utilized by the oppositely specialized cells of the community as a carbon or a nitrogen source to sustain different metabolism. This carbon/nitrogen budgeting of aspartate is crucial for the emergence of distinct cell states in this isogenic community. Through this, cell groups show complete division of labor, and each specialized state provides distinct proliferation and survival advantages to the colony. Collectively, we show how the carbon/nitrogen economy of a cell community enables a self-organizing system based on non-limiting and limiting resources, and this allows organized phenotypic heterogeneity in cells.\n\n## Results\n\n### Amino acid driven gluconeogenesis is critical for emergence of metabolic heterogeneity\n\nIn a previous study (Varahan et al., 2019), we discovered that trehalose controls the emergence of spatially organized, metabolically heterogeneous groups of cells within a S. cerevisiae colony growing in low glucose. Within this colony were cells with high gluconeogenic activity, and other cells showing high glycolytic/pentose phosphate pathway (PPP) activity (Figure 1A). The high glycolytic/PPP activity cells could be distinguished as \u2018light\u2019 cells, and the highly gluconeogenic cells as \u2018dark\u2019, based purely on optical density as observed by brightfield microscopy, as shown in Figure 1A (Varahan et al., 2019). In this system, cells start in a gluconeogenic state, and these cells (dark) produce trehalose. When a threshold concentration of external trehalose is reached, a subpopulation of cells switch to trehalose consumption that drives a glycolytic state, and these cells continue to proliferate as light cells (Figure 1A). Trehalose is a limiting resource since it is not freely available in the glucose limited external environment, and must be synthesized via gluconeogenesis (Fran\u00e7ois et al., 1991). We therefore first asked how the loss of gluconeogenesis affects the emergence of metabolically specialized light cells. For this, we genetically generated mutants that lack two key gluconeogenic enzymes (PCK1 and FBP1). These gluconeogenic mutants (\u0394pck1 and \u0394fbp1) expectedly formed smooth colonies completely lacking structured morphology (which correlates with the absence of metabolic heterogeneity;\u00a0Figure 1B and Figure 1\u2014figure supplement 1A). Further, these mutants had essentially undetectable cells with high PPP activity (light cells), based on the fluorescence-signal of a PPP reporter, as compared to a wild-type colony, although the total number of viable cells in all the colonies were comparable (Figure 1C and Figure 1\u2014figure supplement 1B). This confirms that gluconeogenesis is critical for the emergence and maintenance of metabolic heterogeneity in the colony.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/57609/elife-57609-fig1-v2.jpg)\n\n**Figure 1.:** (A) External trehalose controls the emergence of light cells. Trehalose synthesized by the dark cells fuels glycolysis and pentose phosphate pathway in light cells. (B) Gluconeogenesis is required for development of structural morphology in the colonies. The panel shows the morphology of mature wild-type and gluconeogenic mutant (\u2206pck1 and \u2206fbp1) yeast colonies in rich medium, with supplemented glucose as the sole variable. Scale bar: 2 mm. Also see Figure 1\u2014figure supplement 1A for more information. (C) Spatial distribution of mCherry fluorescence across a colony, indicating the activity of a reporter for pentose phosphate pathway (TKL1) activity in wild-type and gluconeogenesis defective mutants (\u2206pck1 and \u2206fbp1). (D) Amino acids and in particular aspartate is required for the development of structural morphologies in the colonies in a gluconeogenesis dependent manner. The panel shows the morphology of mature wild-type and gluconeogenesis-defective (\u2206pck1) yeast colonies in minimal medium (low glucose), with and without amino acid supplementation, or with only aspartate supplementation. (E) Spatial distribution of mCherry fluorescence across a colony, indicating the activity of a reporter for pentose phosphate pathway (TKL1) activity in wild-type colonies grown either in minimal media or minimal media supplemented with all amino acids or just aspartate.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/57609/elife-57609-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) Gluconeogenesis is required for development of structural morphology in the colonies.\u00a0The panel shows the morphology of mature wild-type and gluconeogenesis defective (\u2206pck1 and \u2206fbp1) yeast colonies in rich medium, with supplemented glucose as the sole variable. Scale bar: 2 mm. (B) Viability of cells in wild-type, \u0394pck1 and \u0394fbp1 colonies grown in rich medium (low glucose) for 7 days were measured by collecting cells from the colonies and plating them in rich medium (n\u00a0=\u00a05). Statistical significance was calculated using unpaired t test and error bars represent standard deviation. Similarly, viability of cells in wild-type colonies grown either in minimal media or minimal media supplemented with all amino acids, or just aspartate, were measured by collecting cells from the colonies and plating them in rich medium (n\u00a0=\u00a05). Statistical significance was calculated using unpaired t test and error bars represent standard deviation. (C) The panel shows the morphology of mature wild-type and gluconeogenesis defective (\u2206pck1) yeast colonies grown for 7 days in minimal medium (low glucose), with and without supplementation of the indicated amino acids. Scale bar: 2 mm.\n\nTrehalose, the produced resource controlling the switch to the light state (Varahan et al., 2019), is a disaccharide made up of two molecules of glucose and is produced via gluconeogenesis. This two-state community of cells requires a continuous supply of trehalose to sustain itself. Therefore, in order to address how dark cells maintained threshold concentrations of trehalose, we asked how this resource itself is produced. Notably, the media conditions under which these colonies develop essentially have non-limiting amounts of amino acid resources (2% yeast extract and 2% peptone). We therefore hypothesized that amino acids (available in non-limiting levels) could act as carbon sources (via possible anaplerotic processes) to fuel trehalose production in dark cells. We tested this by growing wild-type cells in media devoid of free amino acids, but with sufficient ammonium sulfate (Minimal medium). Wild-type colonies failed to develop structured colonies (which correlates with the lack of metabolic heterogeneity) in the absence of free amino acids, and this could be rescued by adding back amino acids to this media (Figure 1D). Expectedly, this amino acid dependent rescue of colony morphology depended on gluconeogenesis, since a \u0394pck1 strain failed to develop morphology even after the addition of amino acids to the medium (Figure 1D). This shows that non-limiting amino acids promote the development of structured colonies exhibiting metabolic heterogeneity, in a gluconeogenesis dependent manner. Interestingly this amino acid dependent effect is specific. In add-back experiments in minimal medium, amongst all amino acids tested, aspartate supplementation strongly promoted the development of structured colonies exhibiting metabolic heterogeneity (Figure 1D). This \u2018rescue\u2019 by aspartate was stronger than that seen with the addition of any other amino acids individually or in combination (Figure 1D and Figure 1\u2014figure supplement 1C). This was further validated via experiments wherein wild-type colonies that developed in minimal medium, supplemented either with all amino acids, or only aspartate alone, exhibited spatially restricted metabolic heterogeneity comparable to the wild-type colonies grown in rich media. The light cell population was estimated using the fluorescent PPP reporter, which serves as an excellent proxy for light cells (Varahan et al., 2019;\u00a0Figure 1E and Figure 1\u2014figure supplement 1B). Collectively, these results reveal that aspartate is sufficient for the development of metabolically specialized colonies in a gluconeogenesis-dependent manner. The addition of other amino acids (particularly glutamine/glutamate) only show a delayed, weaker emergence of light cells. This would be consistent with their eventual, steady conversion to aspartate, which will not result in a build-up of excess amounts of this amino acid.\n\n### Aspartate promotes light cell emergence by directly fueling trehalose synthesis\n\nIn contrast to their canonical roles as nitrogen sources, amino acids can also act as carbon donors for several metabolic processes (Boyle, 2005). While many amino acids can enter the tricarboxylic acid (TCA) cycle via anaplerosis, and TCA intermediates in turn can enter gluconeogenesis, aspartate is unique. It is the only amino acid that can directly enter gluconeogenesis, without entering into the TCA cycle. This is via the conversion of aspartate into oxaloacetate directly in the cytosol through the activity of aspartate transaminase. In this cytosolic process, aspartate and 2-oxoglutarate combine to give one molecule each of oxaloacetate and glutamate. All the other amino acids have to be first transported to the mitochondria and enter the TCA cycle, and these TCA intermediates must then be transported back to the cytosol to enter gluconeogenesis (Brunengraber and Roe, 2006). Since the addition of aspartate alone to minimal media was sufficient for light cells to emerge, we tested if aspartate is a direct carbon source required for trehalose production within the colony, since trehalose is a pre-requisite for light cell emergence. Wild-type colonies were grown in minimal media supplemented with all amino acids, or aspartate alone, or all amino acids without aspartate (aspartate dropout) and total trehalose levels in the 7 day old colonies were measured. As controls, trehalose levels in the \u0394pck1 colonies (gluconeogenesis defective) and \u0394tps1 colonies (trehalose synthesis defective) were measured. Compared to colonies grown in minimal medium, colonies grown in minimal medium supplemented with all amino acids, or aspartate alone, had significantly higher amounts of trehalose (Figure 2A). Notably, the level of trehalose in wild-type colonies grown in aspartate dropout minimal medium was significantly lower compared to colonies grown in minimal media supplemented with all amino acids or just aspartate, demonstrating that aspartate can be the primary carbon contributor towards trehalose synthesis (Figure 2A). As expected, \u0394pck1 colonies (gluconeogenesis defective) and \u0394tps1 (trehalose synthesis defective) had background levels of trehalose (Figure 2A). Furthermore, colonies grown on aspartate dropout medium had fewer light cells (quantified using the PPP reporter activity) compared to colonies grown in minimal media supplemented with all amino acids or just aspartate (Figure 2B and Figure 2\u2014figure supplement 1). This shows that aspartate enables trehalose production, which in turn controls the emergence of metabolic heterogeneity in these clonal colonies (Figure 2A and B). To demonstrate that aspartate directly provides the carbon backbone of trehalose, we grew colonies in minimal medium (low glucose) supplemented with 13C-labeled aspartate, and measured intracellular levels of 13C\u2013labeled gluconeogenic intermediates or end-products directly by targeted mass spectrometric methods described earlier (Vengayil et al., 2019;\u00a0Figure 2C). Cells in wild-type colonies accumulated 13C-labeled 3-phosphoglycerate (3 PG) and 13C-labeled trehalose, while these labeled metabolites were undetectable in a gluconeogenic mutant (\u0394pck1) (Figure 2D). Collectively, these data show that aspartate provides the carbon skeleton for trehalose production via gluconeogenesis, and this turn is essential for the emergence of spatially restricted metabolic heterogeneity.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/57609/elife-57609-fig2-v2.jpg)\n\n**Figure 2.:** (A) Comparative steady-state amounts of trehalose measured in wild-type, \u2206pck1 (gluconeogenesis defective) and \u2206tps1 (trehalose synthesis defective) colonies grown in minimal medium, or minimal medium supplemented with either all amino acids, or aspartate alone, or all amino acids without aspartate (aspartate dropout) (n\u00a0=\u00a03). Colony insets represent wild-type colony morphology in different media conditions. Statistical significance was calculated using unpaired t test (*** indicates p<0.001) and error bars represent standard deviation. (B) Aspartate significantly contributes to colony development and emergence of light cells. Spatial distribution of mCherry fluorescence across a colony, indicating the activity of a reporter for pentose phosphate pathway (TKL1) activity in wild-type yeast colonies grown in minimal medium (low glucose), supplemented with either all amino acids, or aspartate alone, or all amino acids without aspartate (aspartate dropout). Also see Figure 2\u2014figure supplement 1A for more information. (C and D) Metabolic-flux based analysis comparing relative 13C incorporation from 13C-labeled aspartate into newly synthesized gluconeogenic intermediates (3-phosphoglycerate and glucose-6-phosphate) and trehalose, in wild-type and \u2206pck1 colonies.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/57609/elife-57609-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) The light cell population was calculated by spotting wild-type cells harboring the PPP reporter plasmid either in minimal media or minimal media supplemented with either all amino acids or aspartate or all amino acids without aspartate (aspartate dropout).\u00a0After 7 days of growth, cells from the entire colony (for each media condition) were collected and the percentage of fluorescent cells from colonies grown in each media condition were quantified (2000 cells per colony and three colonies per media condition). Statistical significance was calculated using unpaired t test (** indicates p<0.01, *** indicates p<0.001) and error bars represent standard deviation.\n\n### An agent-based model suggests how differential aspartate utilization drives the emergence of self-organized, metabolically heterogeneous states\n\nWe had previously noted that the light cells had higher rates of nucleotide synthesis (Varahan et al., 2019). Synthesis of the nucleotide backbone requires an assimilation of carbon (typically from glucose derived metabolites, notably pentose sugars from the PPP), as well as nitrogen that comes from amino acids (primarily glutamine and aspartate) (Boyle, 2005). Indeed, this donation of nitrogen by aspartate towards nucleotide synthesis is considered a primary role of this amino acid. Interestingly, within the dark cells of the colony, aspartate is also being used as a carbon source for the synthesis of trehalose (Figure 2D). This raises the central idea of molecular budgeting: how is the utilization of aspartate as a carbon/nitrogen source managed in different types of cells? To theoretically address this question, we refined our originally coarse-grained mathematical model from Varahan et al., 2019. In the original model that simulates the development of the colony with dark and light cells, the resource driving the emergence of light cells was featureless and could only be used to drive hypothetically opposite metabolism (Varahan et al., 2019). In our new model, we now build-in molecule specificity. Based on experimental data, we incorporate aspartate utilization for the emergence of metabolic subpopulations, and self-organization within the colony. The processes now included in the model are explained below (See Materials and methods for a detailed description):\n\nBoth dark and light cells utilize externally available resources to synthesize and accumulate the metabolites needed for growth. We can now assign two specific categories for these accumulating metabolites: carbon (C) and nitrogen (N). The dark cells utilize a single resource, aspartate, to serve both C and N requirements. Aspartate itself is a molecule that is in excess in the environment (non-limiting). We propose that the dark cells budget the aspartate flux for both these requirements, and some of the accumulated C (as trehalose) becomes available in the extracellular environment. From our earlier findings (Varahan et al., 2019), we know that the extracellular trehalose controls when some dark cells switch to being light cells. The light cells utilize the available trehalose for their C needs (driving glycolysis and the PPP). However, aspartate remains readily available for their N requirements, which includes nucleotide synthesis (this is illustrated in the model schematic and sample colony in Figure 3A). We now implement this revised model as an agent-based simulation, and monitor colony growth with these new assumptions of aspartate utilization. The specific modifications from the original model and the new parameters are introduced below:\n\n![Figure 3.](https://cdn.elifesciences.org/articles/57609/elife-57609-fig3-v2.jpg)\n\n**Figure 3.:** (A) A model schematic based on an experimental understanding of aspartate utilization by the two cell types in the system. Dark and light cells are colored accordingly. Dark cells take in aspartate, budget it for nitrogen (N) and carbon (C) needs. Some of the accumulating C is released into the extracellular environment as trehalose, triggering the switching into light cells and also acting as the primary C source for light cells as it diffuses in the 2D space. On the right, we have a representative simulated colony generated from a default parameter set. Parameters are indicated in the parentheses. (B) Varying the fraction of aspartate flux allocated towards nitrogen (N) in order to observe the simulated colony over the same length of time. When the majority of the flux is used for carbon (C) needs, the simulated colonies resemble experimental colonies. If less aspartate is allocated for C rather than N, the developed colonies no longer resemble the experimental colonies. (C) Varying the relative rate of aspartate uptake compared to trehalose uptake by the light cells in order to observe simulated colonies over the same length of time. If the rate is the same, as shown in the first simulated colony where AspU\u00a0=\u00a01.0, the colony is underdeveloped. A middle value of AspU\u00a0=\u00a04.0 generates colonies similar to experimental colonies, while for a large value of AspU on the right, the dark cell blocks and light cell blocks have similar division times and the final colony is larger.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/57609/elife-57609-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** Dark cells secrete a fraction, Pf, of their internal carbon levels as trehalose. However, we place an upper limit on the absolute amount of secreted trehalose at 0.12 units/Time. This limit is meant to mimic realistic export conditions. An assumption made is that due to physiological constraints on the cell, the amount of trehalose exported/present outside should not be arbitrarily large. This figure shows that most of the time, the cells are operating well below this upper limit. This demonstrates that the rate of trehalose production in the system is governed by other processes of the model pertaining to uptake, budgeting and growth by division.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/57609/elife-57609-fig3-figsupp2-v2.jpg)\n\n**Figure 3\u2014figure supplement 2.:** The bins along the x-axis measure the time steps elapsed between a cell block\u2019s birth and when it divides. The cell blocks have the same probability of division once they build up sufficient N and C reserves. These histograms illustrate that the division times in our simulation are different due to resource requirements being fulfilled at different times.\n\n![Figure 3\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/57609/elife-57609-fig3-figsupp3-v2.jpg)\n\n**Figure 3\u2014figure supplement 3.:** Each panel is a generated colony using the values of \u2018f\u2019 and \u2018AspU\u2019 corresponding to its location. Note: the axes values are not on a linear or logarithmic scale but are chosen for representative purposes to show parametric trends. Increasing AspU increases the rate of aspartate influx into the system. Overall, this generates larger colonies. Since dark cell blocks are not limited by the trehalose production, they divide at about the same rate as light cell blocks. This is contrary to experimental observations where dark cells grow slower than light cells. With the parameter f, extremely low values allocate too little of the metabolic budget to nitrogen reserves. This results in slow growing colonies which have a higher fraction of light cell blocks. On the other hand, higher values allocate too much of the budget to nitrogen reserves. This slows down the rate of trehalose production, thereby slowing down the emergence of light cells and their proliferation and gives us smaller overall colonies. Thus, increasing both AspU and f together leads to realistic looking colonies as observed along the top diagonal elements in this figure. The blue shaded central panel in the figure is a colony generated using default values of f and AspU.\n\n![Figure 3\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/57609/elife-57609-fig3-figsupp4-v2.jpg)\n\n**Figure 3\u2014figure supplement 4.:** (A) A colony where light cell blocks are not allowed to switch to dark cell blocks during the simulation.\u00a0This is similar to the original model implemented in\u00a0Varahan et al., 2019. (B) A colony implemented using our current model, where light cell blocks can switch to dark cell blocks with a low probability (PLD\u00a0=\u00a010\u22124/Time), if the level of trehalose at their location is below a certain threshold (TLD\u00a0=\u00a010\u22124 units). The two panels illustrate how the colonies are not significantly different, but the current model does not constrain the light cells to remain fixed in their metabolic state.\n\n![Figure 3\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/57609/elife-57609-fig3-figsupp5-v2.jpg)\n\n**Figure 3\u2014figure supplement 5.:** A step-by-step description is provided in the Materials\u00a0and\u00a0methods section of the main text.\n\nBy varying the two main parameters in this study, the model makes the following predictions:\n\n![Video 1.](https://cdn.elifesciences.org/articles/57609/elife-57609-video1.mp4.jpg)\n\n**Video 1.:** A simulation movie of the WT colony over 750 time-steps (~6 days in real time). The colony starts with 95\u201399% dark cells, which go through switching and growth phases as observed. This colony is generated using default parameter values in the model.\n\n![Video 2.](https://cdn.elifesciences.org/articles/57609/elife-57609-video2.mp4.jpg)\n\n**Video 2.:** A simulation movie where the budgeting fraction \u2018f\u2019 is 50%, i.e., 50% of the aspartate flux is allocated towards nitrogen reserves. The dark cell blocks cannot allocate sufficient carbon for themselves, leading to almost no divisions by the dark cell blocks while the light cells at the edge keep proliferating. For comparison, the default value of \u2018f\u2019 is 12.5%.\n\n![Video 3.](https://cdn.elifesciences.org/articles/57609/elife-57609-video3.mp4.jpg)\n\n**Video 3.:** A simulation movie where the relative rate of aspartate uptake is equal to the trehalose uptake rate. (i.e. AspU\u00a0=\u00a01.0). In this case, the aspartate uptake by dark cells is much slower, which also leads to slower trehalose production, resulting in smaller colonies consisting of predominantly dark cell blocks.\n\n![Video 4.](https://cdn.elifesciences.org/articles/57609/elife-57609-video4.mp4.jpg)\n\n**Video 4.:** A simulation movie where the relative rate of aspartate uptake is high. (i.e. AspU\u00a0=\u00a08.0). In this case, the dark cells allocate adequate aspartate for both nitrogen and carbon requirements rapidly enough. This leads to both dark and light cells having nearly the same division rate.\n\n### Aspartate allows differential carbon/nitrogen budgeting in light and dark cells of the colony in vivo\n\nOur agent-based model suggested that the emergence of light cells and the spatial patterns similar to those observed experimentally arise when aspartate is used predominantly as a carbon source in dark cells. We therefore hypothesized that distinct cells in the colony might differentially utilize aspartate predominantly as either a carbon or a nitrogen source. We previously showed that light cells exhibit high PPP activity and nucleotide biosynthesis, using carbon precursors derived from the trehalose, provided by the dark cells (Varahan et al., 2019). As mentioned earlier, aspartate serves as a nitrogen donor in the synthesis of purine and pyrimidine nucleotides, but can also serve as a gluconeogenic substrate, providing the carbon backbone for the synthesis of trehalose (Figure 4A;\u00a0Jones, 1980). Based both on theory and our model simulations, can we now experimentally test if aspartate predominantly serves as a carbon source in dark cells to fuel trehalose production, while primarily providing nitrogen for nucleotide biosynthesis in light cells? Note that this will not be absolute: all cells will make some nucleotides, and so aspartate will provide nitrogen in both dark and light cells. An expectation would be a relative difference in flux, which is the essence of this idea of differential carbon/nitrogen budgeting.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/57609/elife-57609-fig4-v2.jpg)\n\n**Figure 4.:** (A) Metabolic fates of aspartate: The carbon of aspartate (green) can be used for synthesis of molecules like trehalose via gluconeogenesis (green boxed). The nitrogen of aspartate (red) is incorporated into nucleotide precursors including inositol monophosphate (IMP) AND cytidine monophosphate (CMP) (red boxed). (B and C) Metabolic-flux based analysis comparing relative 13C incorporation from 13C labelled aspartate into newly synthesized gluconeogenic intermediate (3-phosphoglycerate) (n\u00a0=\u00a03) and trehalose, and 15N incorporation from 15N labelled aspartate into newly synthesized nucleotides, in light and dark cells (n\u00a0=\u00a02). Statistical significance was calculated using unpaired t test (** indicates p<0.01) and error bars represent standard deviation. For panel C, two independently carried out biological replicates are shown.\n\nWe decided to investigate this directly, by using a stable-isotope based quantitative metabolic-flux approach. We grew wild-type colonies in minimal media containing 13C-labeled aspartate, and collected light and dark cells by rapid micro-dissection of the\u00a0~1 cm colonies, followed by immediate quenching of the cells and metabolite extraction (see Materials and methods), and measured the amounts of 13C\u2013labeled gluconeogenic metabolites (3 PG and 13C\u2013trehalose), respectively in dark and light cells by LC-MS/MS. Dark cells accumulated significantly higher levels of 13C-labeled 3 PG and 13C-labeled trehalose as compared to the light cells (Figure 4B). Using a similar experimental approach with 15N-labeled aspartate provided, we next measured the relative nitrogen-label incorporation into nucleotides in light and dark cells. Here, in stark contrast to the earlier results for carbon, the light cells accumulated substantially higher levels of 15N-labeled nucleotides compared to dark cells (Figure 4C). Collectively, we experimentally observe differential C/N budgeting in light and dark cells, based on aspartate utilization.\n\nThus, aspartate exhibits metabolite plasticity within the cells of a colony. The gluconeogenic dark cells utilize this amino acid primarily as a carbon source in gluconeogenesis (leading to trehalose production), while the light cells (with high PPP activity) predominantly utilize aspartate as a nitrogen donor for nucleotide biosynthesis. Collectively, these results reveal how plasticity in the use of a non-limiting resource, aspartate, enables the development of metabolically heterogeneous colonies.\n\n### Dark and light cells exhibit division of labor, with distinct survival and collective growth advantages\n\nWhat can this type of formation of specialized states, derived from biochemically self-organizing systems, mean for such a community of cells? Non-genetic heterogeneity can be beneficial for cell populations. Due to heterogeneity, some individual cells can survive environmental changes, which thereby allow genotypes to persist in ever-changing environments. Further, division of labor between individuals of a community can enhance collective community growth, development, and the efficiency of the functions that they perform (Giri et al., 2019; van Gestel et al., 2015). We therefore wondered if the distinct metabolic states within the yeast colony conferred a collective growth or survival advantage. Yeast cells routinely encounter environmental fluctuations like desiccation and freezing/thawing regularly (Gasch, 2007; Gasch and Werner-Washburne, 2002). Here, trehalose particularly enables the survival of yeast cells when faced with such environmental insults (D'Amore et al., 1991; Erkut et al., 2016; Wiemken, 1990). Since dark (gluconeogenic) cells accumulate high amounts of trehalose (Varahan et al., 2019), we suspected that these cells might better survive extreme conditions like desiccation and freezing/thawing. To test this, we isolated light and dark cells from\u00a0~7 day old colonies and subjected them to repeated freeze/thaw cycles or severe desiccation (7 and 14 days). We used yeast cells grown in glycolytic or gluconeogenic liquid medium as controls, and measured cell survival either by spotting the cells on a fresh plate (for a freeze/thaw tolerance) or counting the percentage of surviving cells (for desiccation tolerance). Dark cells showed markedly higher survival rates post freeze/thaw treatment (similar to the gluconeogenic control) compared to light cells (which phenocopied cells grown in high glucose) (Figure 5A). Similarly, dark cells survived complete desiccation better than light cells (Figure 5B). Finally, we looked at the role of dark cells in the long-term survivability of the wild-type colony as a whole. To dissect this, we used cells lacking the trehalase enzyme (\u0394nth1) as a control, since colonies from these cells produce but cannot utilize trehalose to fuel glycolysis, and lack light cells (Varahan et al., 2019). We also compared these to the long-term survivability of \u0394pck1 cells (gluconeogenesis-defective), since these colonies lack both light and dark cells. Although we did not see a difference in the number of viable cells in the 7 day old colonies, in mature (21 day) colonies the percentage of viable cells were significantly lower in the \u0394pck1 colonies compared to the wild-type and \u0394nth1 colonies (Figure 5C). Therefore, the presence of dark cells positively influences the long-term survivability of the colony as a whole, and these cells can survive environmental insults like desiccation, freeze/thaw cycles and nutrient limitation.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/57609/elife-57609-fig5-v2.jpg)\n\n**Figure 5.:** (A) Equal numbers of light and dark cells were subjected to multiple freeze-thaw cycles, and survival estimated by spotting onto rich media plates and allowing growth for 18 hr. Cells grown in gluconeogenic medium (2% ethanol/glycerol) and glycolytic medium (2% glucose) were used as controls. (B) Desiccation tolerance of light and dark cells were measured after 7 days and 14 days (n\u00a0=\u00a03). Statistical significance was calculated using unpaired t test (** indicates p<0.01) and error bars represent standard deviation. (C) Long term viability of cells in wild-type (light and dark cells), \u0394nth1 (only dark cells) and \u0394pck1 (no light or dark cells) colonies were measured by growing colonies for either 7 or 21 days and collecting cells from the colonies and plating them in rich medium (n\u00a0=\u00a05). Statistical significance was calculated using unpaired t test (** indicates p<0.01) and error bars represent standard deviation. (D and E) Foraging responses of wild-type, \u0394nth1 and \u0394pck1 cells measured as a function of their ability to spread on a plate. Colony spreading was quantified by measuring the diameter of the colonies every day for 21 days (n\u00a0=\u00a03). Statistical significance was calculated using unpaired t test (** indicates p<0.01) and error bars represent standard deviation. Scale bar: 2 mm. (F) Directional foraging of light cells towards glucose was measured by growing wild-type cells, \u0394nth1 cells and \u0394pck1 cells on rich medium plates (low glucose) and placing a paper disc soaked in 50% glucose at a distance of 2 cm from the colonies (n\u00a0=\u00a03).\n\nComplex colony development under nutrient limitation includes foraging responses, where the outward expansion of the colony allows the cells to reach fresh nutrient sources (Palkov\u00e1 and V\u00e1chov\u00e1, 2016; V\u00e1chov\u00e1 and Palkov\u00e1, 2018). We previously observed that light cells enable efficient colony expansion, and colonies with only dark cells (\u0394nth1 trehalase mutants) cannot expand as efficiently as a wild-type colony (Varahan et al., 2019). Since the gluconeogenesis defective mutant (\u0394pck1) lacked light cells, we also hypothesized that these colonies are compromised at colony expansion as well. To test this, wild-type, \u2206nth1 and \u2206pck1 were spotted as colonies and colony expansion was monitored over time (7 days and 21 days). At 21 days, the \u0394nth1 and \u0394pck1 colonies had significantly reduced expansion compared to wild-type colonies. This reiterates that the light cells are important for the effective long-term expansion of the colony (Figure 5D and E). This also suggests the possibility that colonies lacking light cells may not be able to expand towards suitable nutrients. To contextualize this with the localized availability of high-quality nutrients, we designed an experiment where an external source of glucose was added to the plate at some distance from the colony, and the expansion of colonies towards this glucose source was estimated (Figure 5F). Strikingly, the light cells from wild-type colonies showed rapid, directional proliferation towards the glucose source. Notably, both the \u0394nth1 cells (trehalose-breakdown deficient, no light cells), and the \u0394pck1 cells (no trehalose production) showed markedly reduced directional movement towards the glucose source (Figure 5F). This was quantified using an expansion factor (the ratio of the colony area of the half of the colony growing towards the glucose source/colony area of the other half of the colony) (Figure 5F). These data conclusively show that light cells are essential for the outward expansion and foraging response of the colony. Together, the presence of dark and light cells allows greater colony survival, resistance to stress, and the ability to expand towards preferred nutrient sources. This can collectively provide the colony with the ability to persist and thrive in varying environments, and is further discussed below.\n\n## Discussion\n\nWe present data illustrating how plasticity in the use of a non-limiting resource, aspartate, is sufficient for the emergence and maintenance of spatially organized, distinct metabolic states of groups of cells. Aspartate is required for gluconeogenic cells to achieve threshold concentrations of a limiting resource, trehalose, which in turn drives specialization in these clonal microbial communities (Figure 6). In low glucose conditions, cells expectedly perform gluconeogenesis to replenish glucose reserves. During this process, cells utilize aspartate predominantly as a carbon source that drives gluconeogenesis, via its conversion to oxaloacetate. One eventual metabolic outcome of gluconeogenesis is trehalose synthesis, and cells accumulate synthesized trehalose. Trehalose also directly benefits gluconeogenic cells, allowing them to survive environmental stresses including desiccation and repeated freeze/thaw cycles. As trehalose builds-up and threshold concentrations of externally available trehalose are reached, some cells stochastically take up and consume trehalose, breaking it down to glucose. This uptake and consumption of trehalose switches the metabolic state of these cells to that of high PPP/Glycolysis. In this complimentary metabolic state, cells now utilize aspartate as a nitrogen source. The combination of available glucose (from trehalose) combined with the use of aspartate as a nitrogen source allows light cells to synthesize end point molecules like nucleotides, which enable rapid proliferation, and efficient expansion and foraging for nutrients (Figure 6).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/57609/elife-57609-fig6-v2.jpg)\n\n**Figure 6.:** Cells in low glucose perform gluconeogenesis (Dark cells), as would be required in low glucose medium. During this process, dark cells predominantly budget aspartate for their carbon needs to synthesize trehalose. The accumulated trehalose reserves in the dark cells allow them to survive environmental challenges including desiccation and repeated freeze/thaw cycles. Trehalose also accumulates externally, and once threshold levels of external trehalose are reached, some cells stochastically switch to the light state and utilize this trehalose to fuel their high glycolysis and pentose phosphate pathway (PPP) activity. Cells that switch to the light cell state predominantly use aspartate as a \u2018nitrogen\u2019 source to synthesize nucleotides via PPP, while utilizing trehalose for their carbon needs. This makes light cells primed for proliferation, which in turn results in increased or directional colony expansion. This metabolic specialization and division of labor between the light and dark cells creates a cross-feeding system (built around trehalose), and allows the colony as a whole to survive unfavorable conditions and forage efficiently even in nutrient limiting conditions.\n\nKey to understanding this self-organized system of cells existing in specialized states, with cells in one state dependent on the functioning of the other, is the idea of distinct carbon-nitrogen budgeting which depends on a metabolically plastic resource. This can function as both a carbon and nitrogen source. Previously we showed how trehalose availability can create a self-organized system, where some cells will switch a new (glycolytic) metabolic state, and these cells will themselves be sustained by the cells in the original (gluconeogenic) metabolic state that produce trehalose (Varahan et al., 2019). In this system, trehalose is a limiting metabolite. It is minimal in the cells that seed the colony, and builds up over time due to gluconeogenesis, which is the required metabolic state in low glucose conditions. Only when trehalose builds up, some cells switch to a glycolytic state. Such an idea of threshold amounts of sentinel metabolites that can control cell states is an emerging area of interest (Cai and Tu, 2011; Krishna and Laxman, 2018). In this study, we take a step back to discover that the underpinnings of this system, which lead to the formation of this limiting resource (trehalose) lies in a metabolic economy where carbon and nitrogen need to be \u2018budgeted\u2019 distinctly. This requires a metabolically plastic resource available in sufficient (\u2018non-limiting\u2019) quantities. In order for cells to achieve threshold levels of the limiting resource, trehalose, cells utilize a non-limiting resource (aspartate) to fuel trehalose biosynthesis. Conventionally, aspartate is thought of as a \u2018nitrogen\u2019 source since it is required for nucleotide metabolism (Boyle, 2005). However, as we also observe in this study, aspartate serves as an effective carbon source to synthesize trehalose via gluconeogenesis in dark cells. In light cells, carbon is no longer limiting (since these cells can utilize the built-up trehalose). In these cells, aspartate can go back to predominantly satisfy its \u2018conventional\u2019 role as a nitrogen donor for nucleotide synthesis. This differential use of a single metabolite to meet distinct carbon and nitrogen demands of cells in opposite metabolic states is a remarkable example of metabolic budgeting within spatially organized cells. This plastic ability of aspartate, combined with non-limiting amounts at which it is available makes it the driver of phenotypic heterogeneity in this system. Cross-feeding systems, where groups of cells produce resources that another group of cells utilize are widely prevalent in microbial systems (D'Souza et al., 2018; Doebeli, 2002). Typically, this involves multi-species communities, or dependent auxotrophs. Here one group of cells cannot efficiently carry out a specific metabolic task, and obtain required precursors from other cells that produce it (and vice versa) (Johnson et al., 2012; Mee et al., 2014; Wintermute and Silver, 2010). Contrastingly, studies of organized, interdependent specialization of function in cell groups within spatially restricted, clonal microbial communities are relatively uncommon. Our study in a clonal yeast colony illustrates how simpler, self-organized biochemical networks, built on differential metabolic budgeting, and driven by mass-action based flux towards the production/utilization of specific resources, are sufficient to enable sustainable cross-feeding systems without a requirement for metabolic auxotrophies or metabolic deficiencies.\n\nIn these contexts, our coarse-grained and more refined agent-based models can be instructive in revealing the range of possible scenarios that can enable such metabolic networks in cross-feeding systems (Laxman and Krishna, 2020). Our original model only showed how a build-up of a resource, and its subsequent consumption, would create a specific type of patterning/organization of cells (with resource \u2018users\u2019 and \u2018producers\u2019) (Varahan et al., 2019). With this improved, agent-based model, we can now bring context and dissect out what the consequences of differential carbon/nitrogen budgeting, with the use of non-limiting resources, and the production and use of limiting resources, might entail. Note that such models only demonstrate that the mechanisms they include are sufficient to explain observed phenomena; they do not demonstrate the necessity of these mechanisms. However, showing sufficiency is useful as a consistency check on our biological understanding of the mechanisms at play, and in providing a framework within which to explore constraints on the mechanisms that we believe are biologically important. Our model suggested that, with the mechanisms included, the experimentally observed spatial patterns only arose when aspartate was predominantly used as a carbon source in gluconeogenic cells, which we then confirmed experimentally. Importantly, such models also show how such processes require spatial structure and organization to sustain themselves, and suggest entirely different requirements for well-mixed populations of cells. For example, well-mixed yeast cultures in glucose limitation undergo well studied metabolic cycles (Laxman and Tu, 2010; Kudlicki et al., 2005), coincident with a fraction of the population committing to growth and proliferation while other cells remain quiescent. In this context, distinct models, based on the formation of relaxation oscillators, explain how threshold amounts of metabolites control cell state switching and heterogeneity (Burnetti et al., 2016; Krishna and Laxman, 2018; Laxman and Krishna, 2020).\n\nThis population of clonal yeast cells existing as a cross-feeding population exhibits many features that are consistent with a colony level bet-hedging strategy. The dark cells (which are a majority of the population) are highly gluconeogenic, and exhibit general features of a starvation state. When glucose is limited, cells will shift to gluconeogenesis, and in these conditions, mass action dependent metabolic flux is extremely high towards trehalose synthesis, making the production of this resource an unavoidable, \u2018default\u2019 outcome. Since aspartate is available in non-limiting amounts for these developing colonies, dark cells have no shortage of carbon precursors required for the synthesis of trehalose. Trehalose is a versatile metabolite, that enables dark cells to survive and persist through extreme environments that yeast cells come across naturally (such as surviving water loss [desiccation], or freeze-thaw cycles etc. [D'Amore et al., 1991; Erkut et al., 2016; Wiemken, 1990]). In contrast, the light cells are glycolytic, with high pentose phosphate activity. This is a metabolic signature of a \u2018growth state\u2019 (van den Brink et al., 2008; Wiebe et al., 2008), and these cells achieve this state because they can take up and breakdown the available trehalose to fuel glycolysis. Importantly, cells in both states are required, for the colony as a whole to collectively, successfully expand and forage for nutrients (as shown here, and previously [Varahan et al., 2019]). Foraging for nutrients is an important strategy used by microbial communities to tackle nutrient limitation. The presence of cells in both metabolic states allows the following: each state is primed for a different nutrient condition. The dark cells will easily transition to quiescence and survive extreme stress. The light cells are poised to rapidly grow when the colony reaches a more favorable (glucose replete) nutrient environment by foraging. It therefore appears that the benefits of trehalose production and utilization by the dark and light cells (for different purposes, via the differential budgeting of carbon and nitrogen coming from aspartate) are considerable, in contrast to the minimal biochemical costs of production.\n\nThe principles emerging from this two-state system in a yeast colony are pertinent to the emergence of complexity from relatively simple processes. In an elegant theoretical framework, Cornish-Bowden and Cardenas formulated how in a living system, self-organizing processes can maintain themselves indefinitely, and how they can be modified across generations (Cornish-Bowden and C\u00e1rdenas, 2008). In their study, they extend the original idea of \u2018metabolism-replacement systems\u2019 (M-R systems), and the importance of metabolic closure (Rosen, 1972; Rosen, 1966; Rosen, 1965). A living M-R system, as conceptualized (Cornish-Bowden and C\u00e1rdenas, 2008), requires a few specific properties: (1) some molecules are available in unlimited quantities from the environment, (2) a partition must be present to separate the system from its environment, (3) these molecules can enter in and out of the partition, (4) the chemistry of these molecules enable them to participate in biochemical cycles, (5) these molecules/reactions will not participate in processes that interfere with these biochemical cycles, and (6) the thermodynamics of these reactions are sufficiently favorable. By these definitions, this yeast colony where the combination of aspartate in (practically) non-limiting amounts, as well as the build-up and use of a limiting resource (trehalose), along with the separation of compartments (and cells) for different biochemical processes where these molecules are used, largely works as a M-R system that enables the stable emergence and maintenance of phenotypically heterogeneous states. This system, with biochemical specialization and division of (metabolic) labor is also a demonstration of both the importance of specific enzymes (eg. trehalase), and metabolic control analysis, leading to the distribution of tasks via the differential budgeting of carbon and nitrogen. This is the essence of a cellular or multi-cellular economy where metabolic supply and demand must be balanced, and which depends on the combination of resources available (Hofmeyr, 2008; Hofmeyr and Cornish-Bowden, 2000).\n\nThe result of this self-organized system are groups of clonal cells, spatially organized into groups that exhibit division of labor (van Gestel et al., 2015; West and Cooper, 2016). Dividing tasks between lower units (such as groups of cells) can allow tremendous enhancements in efficiency of processes. By enforcing division of labor, microbial communities effectively achieve what multicellular organisms do within tissues, and aid in the development of the whole community. While division of labor has often been used loosely, more stringent definitions of division of labor require (1) functional complementarity, (2) synergistic advantages, (3) negative frequency-dependent selection, and (4) positive assortment (Giri et al., 2019). This yeast colony, with its self-organized system of cells in opposite metabolic states, appears to satisfy these criteria for division of labor. The result is a community of clonal cells where each metabolic/phenotypic state has individual advantages (greater survival or greater proliferation), enables the colony to adapt to fluctuating nutrient environments and survive environmental adversities, and also provides an increased growth advantage and capability to forage for new nutrients.\n\nSummarizing, we demonstrate how efficient carbon/nitrogen resource budgeting and metabolic plasticity of a non-limiting resource are sufficient to control the emergence of spatially separated cells in specialized states. This division of labor, resulting in an interdependent cross-feeding system of cells provides collective advantages to the population to survive environmental challenges and expand towards new resources, in a manner reminiscent of multicellular organisms.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Gene (Saccharomyces cerevisiae)</td>\n      <td>pck1</td>\n      <td>Saccharomyces genome database (SGD)</td>\n      <td>SGD:S000001805</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Gene (Saccharomyces cerevisiae)</td>\n      <td>fbp1</td>\n      <td>Saccharomyces genome database (SGD)</td>\n      <td>SGD:S000004369</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Gene (Saccharomyces cerevisiae)</td>\n      <td>nth1</td>\n      <td>Saccharomyces genome database (SGD)</td>\n      <td>SGD:S000002408</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (Saccharomyces cerevisiae)</td>\n      <td>Prototrophic sigma1278b, MATa (WT)</td>\n      <td>Isolate from Fink Lab.</td>\n      <td>YBC16G1</td>\n      <td>Wild-type strain.</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (Saccharomyces cerevisiae)</td>\n      <td>\u0394pck1</td>\n      <td>This study</td>\n      <td></td>\n      <td>sigma1278b MAT a pck1::kanMX6</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (Saccharomyces cerevisiae)</td>\n      <td>\u0394fbp1</td>\n      <td>This study</td>\n      <td></td>\n      <td>sigma1278b MAT a fbp1::kanMX6</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (Saccharomyces cerevisiae)</td>\n      <td>\u0394nth1</td>\n      <td>Varahan et al., 2019</td>\n      <td></td>\n      <td>sigma1278b MAT a nth1::kanMX6</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (Saccharomyces cerevisiae)</td>\n      <td>WT (pTKL1-mCherry)</td>\n      <td>Varahan et al., 2019</td>\n      <td></td>\n      <td>Wild-type strain with pentose phosphate pathway reporter plasmid (mCherry with TKL1 promoter)</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (Saccharomyces cerevisiae)</td>\n      <td>\u0394pck1 (pTKL1-mCherry)</td>\n      <td>This study</td>\n      <td></td>\n      <td>\u0394pck1 strain with pentose phosphate pathway reporter plasmid (mCherry with TKL1 promoter)</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (Saccharomyces cerevisiae)</td>\n      <td>\u0394fbp1 (pTKL1-mCherry)</td>\n      <td>This study</td>\n      <td></td>\n      <td>\u0394fbp1 strain with pentose phosphate pathway reporter plasmid (mCherry with TKL1 promoter)</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pTKL1-mCherry</td>\n      <td>Varahan et al., 2019</td>\n      <td></td>\n      <td>mCherry under the TKL1 promoter and CYC1 terminator. p417 centromeric plasmid backbone, G418R.</td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>Glucose (GO) Assay Kit</td>\n      <td>Sigma Aldrich</td>\n      <td>Cat. #: GAGO20-1KT</td>\n      <td>Kit used for the biochemical measurement of trehalose from cells.</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>15N Aspartate</td>\n      <td>Cambridge isotope laboratories</td>\n      <td>Cat. #: NLM-718-PK</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>15N Ammonium sulphate</td>\n      <td>Cambridge isotope laboratories</td>\n      <td>Cat. #: NLM-713-PK</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>13C Aspartate</td>\n      <td>Cambridge isotope laboratories</td>\n      <td>Cat. #: CLM-1801-PK</td>\n      <td></td>\n    </tr>\n  </tbody>\n</table>\n\n### Yeast strains and growth media\n\nThe natural, prototrophic sigma 1278b strain of S. cerevisiae (referred to as wild-type or WT) was used in all experiments. Strains with gene deletions or chromosomally tagged proteins (at the C-terminus) were generated as described (Longtine et al., 1998). Strains used in this study are listed above. The growth medium used in this study is rich medium (1% yeast extract, 2% peptone and 2% glucose or 0.1% glucose).\n\n### Colony spotting assay\n\nAll strains were grown overnight at 30 \u00b0C in either rich medium or defined minimal medium, as specified. 5 microliters of the overnight cultures were spotted on rich medium (low glucose) (1% yeast extract, 2% peptone, 0.1% glucose and 2% agar) or minimal medium (low glucose) (0.67% yeast nitrogen base with ammonium sulfate, without amino acids and 2% agar) supplemented with either all amino acids, all amino acids excluding aspartate or just aspartate at a concentration of 2 mM. Plates were incubated at 30 \u00b0C for 7 days unless mentioned otherwise.\n\n### Colony imaging\n\nFor observing colony morphology, colonies were imaged using SZX-16 stereo microscope (Olympus) wherein the light source was above the colony. Bright-field imaging of 7 day old colonies were done using SZX-16 stereo microscope (Olympus) wherein the light source was below the colony. Epifluorescence microscopy imaging of 7 day old gluconeogenesis reporter colonies (pPCK1-mCherry), pentose phosphate pathway (PPP) reporter colonies (pTKL1-mCherry) and HXK1 reporter colonies (pHXK1-mCherry) were imaged using the red filter (excitation of 587 nm, emission of 610 nm) of SZX-16 stereo microscope (Olympus).\n\n### Biochemical estimation of trehalose/glycogen levels\n\nTrehalose and glycogen from yeast samples were quantified as described previously, with minor modifications (Gupta and Laxman, 2020). 10 OD600 of light cells and dark cells from 7 day old wild-type colonies (rich medium, 0.1% glucose) were collected. After re-suspension in water, 0.5 ml of cell suspension was transferred to four tubes (two tubes for glycogen assay and the other two tubes for trehalose assay). When sample collections were complete, cell samples (in 0.25\u2009M sodium carbonate) were boiled at 95\u201398\u00b0C for 4 hr, and processed as described earlier (Gupta and Laxman, 2020) to estimate steady state trehalose amounts, based on glucose release. Assays were done using a 96-well plate format. Samples were added into each well with appropriate dilution within the dynamic range of the assay (20\u201380 \u00b5g/ml glucose). For the measurement of extracellular trehalose, a single wild-type colony (1 day to 7 day old colony) was re-suspended in 100 microliters of water and centrifuged at 20000 g for 5 min. The supernatant was collected and buffered to a pH of 5.4 (optimal for trehalase activity) using sodium acetate buffer (pH 5.0), and subsequently trehalose was estimated using the same protocol.\n\n### Freeze-thaw survival assay\n\nLight cells and dark cells were isolated from 7 day old wild-type colonies and washed twice with MilliQ water. Subsequently cells were resuspended in MilliQ water at an OD600 of 0.1. These were subjected to rapid freezing by plunging tubes into liquid nitrogen for five mins, followed by thawing at room temperature for five mins, for multiple cycles using protocols described earlier (Erkut et al., 2016). 5 \u00b5l from each of these samples were spotted onto rich medium plates (2% glucose). Cells were allowed to grow for 18 hr at 30 \u00b0C before imaging the plates and estimating survival using growth in a colony spot assay as the output.\n\n### Desiccation tolerance assay\n\nDesiccation tolerance assays were performed as described earlier (Erkut et al., 2016), with slight modifications. Briefly, light and dark cells were isolated from 7 day old wild-type colonies and brought to a final volume of 1 ml in PBS. Two hundred microliter aliquots were transferred to a 96- well tissue culture plate, centrifuged, and the excess water was removed. Cells were allowed to desiccate in a humid incubator at 27 \u00b0C for 7 days or 14 days. Samples were resuspended in diluted PBS to a final volume of 200 \u00b5l and plated for colony counting. The number of colony forming units per milliliter (cfu/ml) for each plate was measured, using an average from three independent controls. The relative viability of each experimental sample (done in biological triplicate) was determined by dividing the cfu/ml for that sample by the average cfu/ml of the control plates.\n\n### Glucose foraging assay\n\nWild-type, \u2206nth1 and \u2206pck1 cells were grown overnight and 5 \u00b5l were spotted onto rich, low glucose medium. A small paper disc was soaked in 50% glucose solution overnight and placed at a distance of 2 cm from the colony spots. Colonies were allowed to develop at 30 \u00b0C for 7 days and were imaged. As a control, strains were spotted on a plate containing paper discs soaked in PBS.\n\n### Metabolite extractions and measurements by LC-MS/MS\n\nLight cells and dark cells isolated from wild-type colonies grown in different media were rapidly harvested and metabolites were extracted as described earlier (Walvekar et al., 2018). Metabolites were measured using LC-MS/MS method as described earlier (Walvekar et al., 2018). Standards were used for developing multiple reaction monitoring (MRM) methods on Sciex QTRAP 6500. Metabolites were separated using a Synergi 4\u00b5 Fusion-RP 80A column (100\u00a0\u00d7\u00a04.6 mm, Phenomenex) on Agilent\u2019s 1290 infinity series UHPLC system coupled to the mass spectrometer. For positive polarity mode, buffers used for separation were- buffer A: 99.9% H2O/0.1% formic acid and buffer B: 99.9% methanol/0.1% formic acid (Column temperature, 40\u00b0C; Flow rate, 0.4 ml/min; T\u00a0=\u00a00 min, 0% B; T\u00a0=\u00a03 min, 5% B; T\u00a0=\u00a010 min, 60% B; T\u00a0=\u00a011 min, 95% B; T\u00a0=\u00a014 min, 95% B; T\u00a0=\u00a015 min, 5% B; T\u00a0=\u00a016 min, 0% B; T\u00a0=\u00a021 min, stop). For negative polarity mode, buffers used for separation were- buffer A: 5 mM ammonium acetate in H2O and buffer B: 100% acetonitrile (Column temperature, 25\u00b0C; Flow rate: 0.4 ml/min; T\u00a0=\u00a00 min, 0% B; T\u00a0=\u00a03 min, 5% B; T\u00a0=\u00a010 min, 60% B; T\u00a0=\u00a011 min, 95% B; T\u00a0=\u00a014 min, 95% B; T\u00a0=\u00a015 min, 5% B; T\u00a0=\u00a016 min, 0% B; T\u00a0=\u00a021 min, stop). The area under each peak was calculated using AB SCIEX MultiQuant software 3.0.1.\n\n### 15N- and 13C- based metabolite labelling experiments\n\nFor detecting 15N label incorporation in nucleotides, 15N Ammonium sulfate (Sigma-Aldrich) and 15N Aspartate (Cambridge Isotope Laboratories) with all nitrogen atoms labeled were used. For 13C-labeling experiment, 13C aspartate with all carbon atoms labeled (Cambridge Isotope Laboratories) was used. All the parent/product masses measured are enlisted in Table 1. For all the nucleotide measurements, release of the nitrogen base was monitored in positive polarity mode. For all sugar phosphates, the phosphate release was monitored in negative polarity mode. The HPLC and MS/MS protocol was similar to those explained above.\n\n**Table 1.**\n Mass transitions used for LC-MS/MS experiments.\n\n\n<table>\n  <tbody>\n    <tr>\n      <td>Nucleotides</td>\n      <td>Formula</td>\n      <td>Parent/Product (positive polarity)</td>\n      <td>Comment (for 15N experiment)</td>\n    </tr>\n    <tr>\n      <td>AMP</td>\n      <td>C10H14N5O7P</td>\n      <td>348/136</td>\n      <td>Product has all N</td>\n    </tr>\n    <tr>\n      <td>15N_AMP_1</td>\n      <td></td>\n      <td>349/137</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>15N_AMP_2</td>\n      <td></td>\n      <td>350/138</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>15N_AMP_3</td>\n      <td></td>\n      <td>351/139</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>15N_AMP_4</td>\n      <td></td>\n      <td>352/140</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>15N_AMP_5</td>\n      <td></td>\n      <td>353/141</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>GMP</td>\n      <td>C10H14N5O8P</td>\n      <td>364/152</td>\n      <td>Product has all N</td>\n    </tr>\n    <tr>\n      <td>15N_GMP_1</td>\n      <td></td>\n      <td>365/153</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>15N_GMP_2</td>\n      <td></td>\n      <td>366/154</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>15N_GMP_3</td>\n      <td></td>\n      <td>367/155</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>15N_GMP_4</td>\n      <td></td>\n      <td>368/156</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>15N_GMP_5</td>\n      <td></td>\n      <td>369/157</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>CMP</td>\n      <td>C9H14N3O8P</td>\n      <td>324/112</td>\n      <td>Product has all N</td>\n    </tr>\n    <tr>\n      <td>15N_CMP_1</td>\n      <td></td>\n      <td>325/113</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>15N_CMP_2</td>\n      <td></td>\n      <td>326/114</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>15N_CMP_3</td>\n      <td></td>\n      <td>327/115</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>UMP</td>\n      <td>C9H13N2O9P</td>\n      <td>325/113</td>\n      <td>Product has all N</td>\n    </tr>\n    <tr>\n      <td>15N_UMP_1</td>\n      <td></td>\n      <td>326/114</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>15N_UMP_2</td>\n      <td></td>\n      <td>327/115</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Trehalose and sugar phosphates</td>\n      <td>Formula</td>\n      <td>Parent/Product (negative polarity)</td>\n      <td>Comment (for 13C experiment)</td>\n    </tr>\n    <tr>\n      <td>Trehalose</td>\n      <td>C12H22O11</td>\n      <td>341.3/179.3</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>13C_Trehalose_12</td>\n      <td></td>\n      <td>353.3/185.3</td>\n      <td>Product has 6 C all of which are labeled</td>\n    </tr>\n    <tr>\n      <td>13C_3 PG_3</td>\n      <td></td>\n      <td>188/97</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>G6P</td>\n      <td>C6H13O9P</td>\n      <td>259/97</td>\n      <td>Monitoring the phosphate release</td>\n    </tr>\n    <tr>\n      <td>13C_G6P_6</td>\n      <td></td>\n      <td>265/97</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>6 PG</td>\n      <td>C6H13O10P</td>\n      <td>275/97</td>\n      <td>Monitoring the phosphate release</td>\n    </tr>\n  </tbody>\n</table>\n\n### Model methods and parameters\n\n#### Model construction\n\nWe extend the coarse-grained model from our previous study (Varahan et al., 2019) to include the idea that both dark and light cells need to accumulate enough N and C for cell division. Once again, the model consists of a population of dark and light \u2018cell blocks\u2019 on a 2D grid. Additionally, we track the spatiotemporal levels of extracellular trehalose on this grid as it is secreted, consumed and diffuses. We do not track the levels of aspartate as it is assumed to be a non-limiting resource.\n\n#### Initial conditions of the model\n\nWe start with an approximately circular colony 20 grid lengths in radius at the center of our grid. 95\u201399% of the 1257 cell blocks are in the dark state. There is no extracellular trehalose on the grid at the start.\n\n#### Model implementation\n\nRunning the model is almost identical to the implementation in Varahan et al., 2019, except for a few extra steps, refinements, and parameters to consider. For clarity, we will outline the entire algorithm here using default parameter values. The following steps are to be carried out in each time step after colony initialization.\n\nThe above algorithm and default parameter values simulate a wild type colony as seen in Figure 3A. For variations of the two main parameters, f and AspU, refer to Figure 3B & C and for a more detailed picture, refer to Figure 3\u2014figure supplement 3. The set of parameters used in the model is shown in Table 2 and for a flowchart of the algorithm, refer to Figure 3\u2014figure supplement 5.\n\n**Table 2.**\n Model parameters.\n\n\n<table>\n  <tbody>\n    <tr>\n      <td>Main parameters</td>\n      <td>Notation</td>\n      <td>Default Value</td>\n      <td>Range of Variation</td>\n    </tr>\n    <tr>\n      <td>Fraction of aspartate flux allocated to N in dark cell blocks</td>\n      <td>f</td>\n      <td>0.125</td>\n      <td>0.0\u20131.0 (0\u2013100%)</td>\n    </tr>\n    <tr>\n      <td>Relative rate of aspartate uptake compared to trehalose uptake rate</td>\n      <td>AspU</td>\n      <td>4.0</td>\n      <td>1.0\u20138.0</td>\n    </tr>\n    <tr>\n      <td>Additional parameters</td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Yield (converting N to C)</td>\n      <td>Y</td>\n      <td>0.31 C/N</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Fraction secreted as trehalose, per dark cell block</td>\n      <td>Pf</td>\n      <td>0.049/Time</td>\n      <td>--</td>\n    </tr>\n    <tr>\n      <td>Max secreted trehalose, per dark cell block</td>\n      <td>--</td>\n      <td>0.12 units/Time</td>\n      <td>--</td>\n    </tr>\n    <tr>\n      <td>Extra N for light cells</td>\n      <td>ExN</td>\n      <td>4.0</td>\n      <td>--</td>\n    </tr>\n    <tr>\n      <td>Aspartate consumed by dark and light cell blocks</td>\n      <td>AspU*Cmax</td>\n      <td>0.2/Time</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Parameters from previous model</td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Growth rate (light and dark cell block)</td>\n      <td>g</td>\n      <td>0.04/Time</td>\n      <td>--</td>\n    </tr>\n    <tr>\n      <td>Max trehalose consumed by a light cell block</td>\n      <td>Cmax</td>\n      <td>0.05 units/Time</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Switching threshold (dark to light)</td>\n      <td>TDL</td>\n      <td>1.5 units</td>\n      <td>--</td>\n    </tr>\n    <tr>\n      <td>Switching probability (dark to light)</td>\n      <td>PDL</td>\n      <td>0.5/Time</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Switching threshold (light to dark)</td>\n      <td>TLD</td>\n      <td>0.0001 units</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Switching probability (light to dark)</td>\n      <td>PLD</td>\n      <td>0.0001/Time</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Scaled diffusion constant of trehalose</td>\n      <td>Deff</td>\n      <td>0.24 L2/Time</td>\n      <td></td>\n    </tr>\n  </tbody>\n</table>\n\n#### Model parameters\n\nThe new parameters introduced in the current model are chosen to reliably reproduce patterns similar to the experimental WT colony (both the final form, as well as at different stages of its growth). Our purpose here is simply to show that this model is sufficient to produce spatial patterns similar to what we observe experimentally, not to do a detailed fitting of parameter values to data. However we outline the biological reasoning behind some of the choices below:\n\n### Code availability\n\nWe implemented the model using Python and Jupyter Notebooks. The code used in this study is available at: https://github.com/vaibhhav/metabplastic\u00a0(Varahan, 2020; copy archived at https://github.com/elifesciences-publications/metabplastic).\n",
+      "created_at": "2025-12-02T19:38:00.464408Z"
+    },
+    {
+      "id": "afab4ff6-932d-4b3c-8410-4dfde892e10c",
+      "submission_id": "8f7636bb-433d-4a1d-a261-ba1db165ef40",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Kevin J Verstrepen, VIB-KU Leuven Center for Microbiology Belgium\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.57609.sa1](https://doi.org/10.7554/eLife.57609.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nThank you for submitting your article \"Metabolite plasticity drives carbon-nitrogen resource budgeting to enable division of labor in a clonal community\" for consideration by eLife. Your article has been reviewed by two peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Naama Barkai as the Senior Editor. The following individuals involved in review of your submission have agreed to reveal their identity: Maliheh Mehrshad (Reviewer #1); Gabriel Leventhal (Reviewer #2).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nWe would like to draw your attention to changes in our revision policy that we have made in response to COVID-19 (https://elifesciences.org/articles/57162). Specifically, we are asking editors to accept without delay manuscripts, like yours, that they judge can stand as eLife papers without additional data, even if they feel that they would make the manuscript stronger. Thus the revisions requested below only address clarity and presentation.\n\nAll reviewers agreed that your work is interesting because it shows how differentiation and cross-feeding can develop in a clonal population, and provides some level of mechanistic insight into this phenomenon. The reviewers also agreed that the experimental part is really the central pillar of the study. By contrast, the mathematical model seems to contribute only little and may suffer a few shortcomings. Our advice would therefore be to delete the model from the text.\n\nMajor technical points and questions regarding the model:\n\nThe model is just an attempt to recreate the observed patterning using simulations, rather than to investigate whether some set of first principles might be responsible for the phenotypes. The authors themselves state that many of the parameters are chosen just to best recreate the patterns. It is always possible to devise an arbitrary simulation to reproduce some pattern. Rather, the model distracts from the experimental narrative of the paper.\n\nThe interaction model the authors invoke does not require spatial structuring per se. The spatial expansion might facilitate the visualization of the two phenotypes, but whether heterogeneity in trehalose and/or aspartate is the basis for the phenotypic bistability is less convincing. In this sense, the added complexity of space might not be needed. Does this phenomenon only occur on plates or can it also be observed in batch?\n\n\u2013 The increased growth rate/nucleotide synthesis rate in the light phenotype need not imply that those cells require more nitrogen per division. Rather, the increased synthesis rate results in a father growth and higher nitrogen consumption.\n\n\u2013 What happens to cells at (x,y) when there are no free neighbors?\n\n\u2013 The choice of parameter values should be motivated by the biology, not by those that best reproduce the behaviour.\n\n2) Why should aspartate be used only as a nitrogen or carbon source? In either phenotype, breakdown of aspartate should generate both nitrogen and carbon.\n\n3) In more than one instance the authors state that asparate, rather than any other amino acid, is necessary or essential for the stability of the two phenotypes (at the end of the subsection \u201cAmino acid driven gluconeogenesis is critical for emergence of metabolic heterogeneity\u201d and in the first paragraph of the Discussion ). In my view, the authors only show that it is sufficient. In fact, I think the data rather show that other amino acids might also produce this effect, albeit less strongly.\n\n4) The authors do show differential survival and expansion between the two phenotypes, but I don't think the data go as far to make the statement that this is a colony level bet-hedging strategy. For this, I think you need to have a better characterization of what the benefits and costs of trehalose overproduction are for the dark cells: why are they secreting trehalose and what is the benefit to themselves? Rather, I think there's an interesting statement to be made about being both carbon and nitrogen limited, and then receiving carbon and nitrogen in the same molecule that might lead to metabolic differentiation of cells.\n",
+      "created_at": "2025-12-02T19:38:00.464408Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T19:38:00.464408Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T19:38:00.464408Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "1597e35e-4909-467d-b7a7-1c55d7d649d4",
+      "content_id": "2220da68-cc94-4180-8134-03a4b20c15f2",
+      "claim_id": "C1",
+      "claim": "In glucose-limited Saccharomyces cerevisiae colonies, metabolic constraints drive cells into groups exhibiting gluconeogenic or glycolytic states.",
+      "claim_type": "EXPLICIT",
+      "source": "Previously, we found that in glucose-limited Saccharomyces cerevisiae colonies, metabolic constraints drive cells into groups exhibiting gluconeogenic or glycolytic states.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to a previous study (Varahan et al., 2019) mentioned in the abstract.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:38:00.464408Z"
+    },
+    {
+      "id": "25d07758-9e22-45db-a040-4eb45d5a5b0e",
+      "content_id": "2220da68-cc94-4180-8134-03a4b20c15f2",
+      "claim_id": "C2",
+      "claim": "Threshold amounts of trehalose control the emergence and self-organization of cells exhibiting the glycolytic state.",
+      "claim_type": "EXPLICIT",
+      "source": "In that study, threshold amounts of trehalose - a limiting, produced carbon-resource, controls the emergence and self-organization of cells exhibiting the glycolytic state, serving as a carbon source that fuels glycolysis (Varahan et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to a previous study (Varahan et al., 2019).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:38:00.464408Z"
+    },
+    {
+      "id": "541850f6-19ba-429b-a921-688e272d81c0",
+      "content_id": "2220da68-cc94-4180-8134-03a4b20c15f2",
+      "claim_id": "C3",
+      "claim": "In gluconeogenic cells, aspartate is a carbon source for trehalose production.",
+      "claim_type": "EXPLICIT",
+      "source": "In gluconeogenic cells, aspartate is a carbon source for trehalose production, while in glycolytic cells using trehalose for carbon, aspartate is predominantly a nitrogen source for nucleotide synthesis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data presented in the manuscript, including isotope labeling experiments shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:38:00.464408Z"
+    },
+    {
+      "id": "46ad4158-bc5c-47eb-af3e-aff6caa929d7",
+      "content_id": "2220da68-cc94-4180-8134-03a4b20c15f2",
+      "claim_id": "C4",
+      "claim": "In glycolytic cells using trehalose for carbon, aspartate is predominantly a nitrogen source for nucleotide synthesis.",
+      "claim_type": "EXPLICIT",
+      "source": "In gluconeogenic cells, aspartate is a carbon source for trehalose production, while in glycolytic cells using trehalose for carbon, aspartate is predominantly a nitrogen source for nucleotide synthesis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data presented in the manuscript, including isotope labeling experiments shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:38:00.464408Z"
+    },
+    {
+      "id": "7446c7b1-2139-4100-a6b1-f341e4a5a1ed",
+      "content_id": "2220da68-cc94-4180-8134-03a4b20c15f2",
+      "claim_id": "C5",
+      "claim": "Metabolic plasticity of aspartate enables carbon-nitrogen budgeting, thereby driving the biochemical self-organization of distinct cell states.",
+      "claim_type": "EXPLICIT",
+      "source": "This metabolic plasticity of aspartate enables carbon-nitrogen budgeting, thereby driving the biochemical self-organization of distinct cell states.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data and computational modeling presented throughout the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:38:00.464408Z"
+    },
+    {
+      "id": "9a7d85b4-db61-4b72-a4bb-3bb564d80905",
+      "content_id": "2220da68-cc94-4180-8134-03a4b20c15f2",
+      "claim_id": "C6",
+      "claim": "Cells in each state exhibit true division of labor, providing growth/survival advantages for the whole community.",
+      "claim_type": "EXPLICIT",
+      "source": "Through this organization, cells in each state exhibit true division of labor, providing growth/survival advantages for the whole community.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 5, demonstrating survival and foraging advantages.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:38:00.464408Z"
+    },
+    {
+      "id": "07a7a399-f726-42b4-b79c-0be5a01e11b8",
+      "content_id": "2220da68-cc94-4180-8134-03a4b20c15f2",
+      "claim_id": "C7",
+      "claim": "Division of labor allows breakdown of complex biological processes into simpler steps, eliminating the need for individual cells to perform several tasks simultaneously.",
+      "claim_type": "EXPLICIT",
+      "source": "This division of labor allows breakdown of complex biological processes into simpler steps, eliminating the need for individual cells to perform several tasks simultaneously, thereby enhancing the overall efficiency with which cells in the community function (Giri et al., 2019; Johnson et al., 2012; Rueffler et al., 2012; van Gestel et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to multiple studies on division of labor.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:38:00.464408Z"
+    },
+    {
+      "id": "d88c2a79-43d6-4ea2-9fd8-28c700d17ea5",
+      "content_id": "2220da68-cc94-4180-8134-03a4b20c15f2",
+      "claim_id": "C8",
+      "claim": "Division of labor is widely prevalent across diverse microbial communities and can be found at different levels of biological organization.",
+      "claim_type": "EXPLICIT",
+      "source": "Due to these advantages, division of labor is widely prevalent across diverse microbial communities and can be found at different levels of biological organization (Gordon, 2016; Kirk, 2003; Tarnita et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to studies on division of labor in biological systems.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:38:00.464408Z"
+    },
+    {
+      "id": "b3004b07-c135-4274-84bf-1a43215ecc66",
+      "content_id": "2220da68-cc94-4180-8134-03a4b20c15f2",
+      "claim_id": "C9",
+      "claim": "Microbial community development is commonly triggered by nutrient limitation.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, microbial community development is commonly triggered by nutrient limitation (Ackermann, 2015; Hoehler and J\u00f8rgensen, 2013; Johnson et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to studies on microbial community development.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:38:00.464408Z"
+    },
+    {
+      "id": "b3a8d74b-7d47-4a39-8e00-f0a593651154",
+      "content_id": "2220da68-cc94-4180-8134-03a4b20c15f2",
+      "claim_id": "C10",
+      "claim": "Optimal allocation of resources is critical for maximizing overall fitness within a microbial community, especially when the availability of nutrients is limiting.",
+      "claim_type": "EXPLICIT",
+      "source": "Clearly, an optimal allocation of resources is critical for maximizing overall fitness within a microbial community, especially when the availability of nutrients is limiting (Litchman et al., 2015; Wessely et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to studies on resource allocation in microbial communities.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:38:00.464408Z"
+    },
+    {
+      "id": "53f00164-db05-4de7-b939-4de26dcc750e",
+      "content_id": "2220da68-cc94-4180-8134-03a4b20c15f2",
+      "claim_id": "C11",
+      "claim": "Many microbial communities manage the requirement of different resources by sharing metabolic products.",
+      "claim_type": "EXPLICIT",
+      "source": "One strategy by which the community can manage the requirement of different resources is by sharing metabolic products, and this is employed by many microbial communities (D'Souza et al., 2018; Liu et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to studies on metabolic product sharing in microbial communities.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:38:00.464408Z"
+    },
+    {
+      "id": "3a6a4635-106b-48d5-b815-583ac26fe6f5",
+      "content_id": "2220da68-cc94-4180-8134-03a4b20c15f2",
+      "claim_id": "C12",
+      "claim": "Gluconeogenic mutants (\u0394pck1 and \u0394fbp1) formed smooth colonies completely lacking structured morphology.",
+      "claim_type": "EXPLICIT",
+      "source": "These gluconeogenic mutants (\u0394pck1 and \u0394fbp1) expectedly formed smooth colonies completely lacking structured morphology (which correlates with the absence of metabolic heterogeneity; Figure 1B and Figure 1\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1B and Figure 1\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:38:00.464408Z"
+    },
+    {
+      "id": "3cc04aa3-4609-45a9-bf86-982d15e83b5f",
+      "content_id": "2220da68-cc94-4180-8134-03a4b20c15f2",
+      "claim_id": "C13",
+      "claim": "Gluconeogenic mutants had essentially undetectable cells with high PPP activity (light cells), as compared to a wild-type colony.",
+      "claim_type": "EXPLICIT",
+      "source": "Further, these mutants had essentially undetectable cells with high PPP activity (light cells), based on the fluorescence-signal of a PPP reporter, as compared to a wild-type colony, although the total number of viable cells in all the colonies were comparable (Figure 1C and Figure 1\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1C and Figure 1\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:38:00.464408Z"
+    },
+    {
+      "id": "bce3a3b1-17af-44da-ae4c-5e2fd7fa8440",
+      "content_id": "2220da68-cc94-4180-8134-03a4b20c15f2",
+      "claim_id": "C14",
+      "claim": "Gluconeogenesis is critical for the emergence and maintenance of metabolic heterogeneity in the colony.",
+      "claim_type": "EXPLICIT",
+      "source": "This confirms that gluconeogenesis is critical for the emergence and maintenance of metabolic heterogeneity in the colony.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the experimental data showing that gluconeogenic mutants lack metabolic heterogeneity.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:38:00.464408Z"
+    },
+    {
+      "id": "77216490-f233-49a3-b3fd-758faa63b50c",
+      "content_id": "2220da68-cc94-4180-8134-03a4b20c15f2",
+      "claim_id": "C15",
+      "claim": "Wild-type colonies failed to develop structured colonies in the absence of free amino acids.",
+      "claim_type": "EXPLICIT",
+      "source": "Wild-type colonies failed to develop structured colonies (which correlates with the lack of metabolic heterogeneity) in the absence of free amino acids, and this could be rescued by adding back amino acids to this media (Figure 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:38:00.464408Z"
+    },
+    {
+      "id": "19bfde37-ba2b-4a11-9e61-343d654a08b5",
+      "content_id": "2220da68-cc94-4180-8134-03a4b20c15f2",
+      "claim_id": "C16",
+      "claim": "Amino acid dependent rescue of colony morphology depended on gluconeogenesis.",
+      "claim_type": "EXPLICIT",
+      "source": "Expectedly, this amino acid dependent rescue of colony morphology depended on gluconeogenesis, since a \u0394pck1 strain failed to develop morphology even after the addition of amino acids to the medium (Figure 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:38:00.464408Z"
+    },
+    {
+      "id": "4b9fc4fc-371f-4486-9442-332f5fd855d0",
+      "content_id": "2220da68-cc94-4180-8134-03a4b20c15f2",
+      "claim_id": "C17",
+      "claim": "Non-limiting amino acids promote the development of structured colonies exhibiting metabolic heterogeneity, in a gluconeogenesis dependent manner.",
+      "claim_type": "EXPLICIT",
+      "source": "This shows that non-limiting amino acids promote the development of structured colonies exhibiting metabolic heterogeneity, in a gluconeogenesis dependent manner.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the experimental data showing amino acid and gluconeogenesis requirements.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:38:00.464408Z"
+    },
+    {
+      "id": "ca589c3a-002c-430d-8844-5b3c98ba83c7",
+      "content_id": "2220da68-cc94-4180-8134-03a4b20c15f2",
+      "claim_id": "C18",
+      "claim": "Aspartate supplementation strongly promoted the development of structured colonies exhibiting metabolic heterogeneity.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly this amino acid dependent effect is specific. In add-back experiments in minimal medium, amongst all amino acids tested, aspartate supplementation strongly promoted the development of structured colonies exhibiting metabolic heterogeneity (Figure 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:38:00.464408Z"
+    },
+    {
+      "id": "ac9e5fcb-81a1-4b3d-b160-4197868a187f",
+      "content_id": "2220da68-cc94-4180-8134-03a4b20c15f2",
+      "claim_id": "C19",
+      "claim": "Aspartate 'rescue' was stronger than that seen with the addition of any other amino acids individually or in combination.",
+      "claim_type": "EXPLICIT",
+      "source": "This 'rescue' by aspartate was stronger than that seen with the addition of any other amino acids individually or in combination (Figure 1D and Figure 1\u2014figure supplement 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1D and Figure 1\u2014figure supplement 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:38:00.464408Z"
+    },
+    {
+      "id": "4f13043b-9832-486a-838c-fa17052630f2",
+      "content_id": "2220da68-cc94-4180-8134-03a4b20c15f2",
+      "claim_id": "C20",
+      "claim": "Aspartate is sufficient for the development of metabolically specialized colonies in a gluconeogenesis-dependent manner.",
+      "claim_type": "EXPLICIT",
+      "source": "Collectively, these results reveal that aspartate is sufficient for the development of metabolically specialized colonies in a gluconeogenesis-dependent manner.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the experimental data showing aspartate's effects on colony development.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:38:00.464408Z"
+    },
+    {
+      "id": "7334663a-a2af-4b5e-8782-9f429d9fdc10",
+      "content_id": "2220da68-cc94-4180-8134-03a4b20c15f2",
+      "claim_id": "C21",
+      "claim": "Aspartate is the only amino acid that can directly enter gluconeogenesis, without entering into the TCA cycle.",
+      "claim_type": "EXPLICIT",
+      "source": "While many amino acids can enter the tricarboxylic acid (TCA) cycle via anaplerosis, and TCA intermediates in turn can enter gluconeogenesis, aspartate is unique. It is the only amino acid that can directly enter gluconeogenesis, without entering into the TCA cycle.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on established biochemical knowledge about aspartate metabolism.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:38:00.464408Z"
+    },
+    {
+      "id": "4288e7b8-d004-41b7-a0ec-bb253c58b107",
+      "content_id": "2220da68-cc94-4180-8134-03a4b20c15f2",
+      "claim_id": "C22",
+      "claim": "Aspartate is converted into oxaloacetate directly in the cytosol through the activity of aspartate transaminase.",
+      "claim_type": "EXPLICIT",
+      "source": "This is via the conversion of aspartate into oxaloacetate directly in the cytosol through the activity of aspartate transaminase.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on established biochemical knowledge about aspartate metabolism.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:38:00.464408Z"
+    },
+    {
+      "id": "53abc476-e160-4b13-97cd-b42a14afc749",
+      "content_id": "2220da68-cc94-4180-8134-03a4b20c15f2",
+      "claim_id": "C23",
+      "claim": "Colonies grown in minimal medium supplemented with all amino acids, or aspartate alone, had significantly higher amounts of trehalose compared to colonies grown in minimal medium.",
+      "claim_type": "EXPLICIT",
+      "source": "Compared to colonies grown in minimal medium, colonies grown in minimal medium supplemented with all amino acids, or aspartate alone, had significantly higher amounts of trehalose (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:38:00.464408Z"
+    },
+    {
+      "id": "5a1ce17f-b177-4044-b399-dd50d4d12bb8",
+      "content_id": "2220da68-cc94-4180-8134-03a4b20c15f2",
+      "claim_id": "C24",
+      "claim": "The level of trehalose in wild-type colonies grown in aspartate dropout minimal medium was significantly lower compared to colonies grown in minimal media supplemented with all amino acids or just aspartate.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, the level of trehalose in wild-type colonies grown in aspartate dropout minimal medium was significantly lower compared to colonies grown in minimal media supplemented with all amino acids or just aspartate, demonstrating that aspartate can be the primary carbon contributor towards trehalose synthesis (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:38:00.464408Z"
+    },
+    {
+      "id": "b2b78e20-ed79-4e14-b39b-54bd1980726b",
+      "content_id": "2220da68-cc94-4180-8134-03a4b20c15f2",
+      "claim_id": "C25",
+      "claim": "Aspartate can be the primary carbon contributor towards trehalose synthesis.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, the level of trehalose in wild-type colonies grown in aspartate dropout minimal medium was significantly lower compared to colonies grown in minimal media supplemented with all amino acids or just aspartate, demonstrating that aspartate can be the primary carbon contributor towards trehalose synthesis (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is inferred from the experimental data showing reduced trehalose in aspartate dropout conditions.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:38:00.464408Z"
+    },
+    {
+      "id": "ebf67887-95b6-4545-9baf-67edd48a3543",
+      "content_id": "2220da68-cc94-4180-8134-03a4b20c15f2",
+      "claim_id": "C26",
+      "claim": "\u0394pck1 colonies (gluconeogenesis defective) and \u0394tps1 (trehalose synthesis defective) had background levels of trehalose.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, \u0394pck1 colonies (gluconeogenesis defective) and \u0394tps1 (trehalose synthesis defective) had background levels of trehalose (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:38:00.464408Z"
+    },
+    {
+      "id": "0504a399-1ac5-4b4a-9d33-a430a9d3cd2b",
+      "content_id": "2220da68-cc94-4180-8134-03a4b20c15f2",
+      "claim_id": "C27",
+      "claim": "Colonies grown on aspartate dropout medium had fewer light cells compared to colonies grown in minimal media supplemented with all amino acids or just aspartate.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, colonies grown on aspartate dropout medium had fewer light cells (quantified using the PPP reporter activity) compared to colonies grown in minimal media supplemented with all amino acids or just aspartate (Figure 2B and Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 2B and Figure 2\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:38:00.464408Z"
+    },
+    {
+      "id": "2f2c185b-2750-409e-9945-fb90d5eaacda",
+      "content_id": "2220da68-cc94-4180-8134-03a4b20c15f2",
+      "claim_id": "C28",
+      "claim": "Aspartate enables trehalose production, which in turn controls the emergence of metabolic heterogeneity in these clonal colonies.",
+      "claim_type": "EXPLICIT",
+      "source": "This shows that aspartate enables trehalose production, which in turn controls the emergence of metabolic heterogeneity in these clonal colonies (Figure 2A and B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is inferred from the experimental data showing the relationship between aspartate, trehalose, and light cell emergence.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:38:00.464408Z"
+    },
+    {
+      "id": "a0814ccd-3a0a-4aee-9732-2e9bc8789a7d",
+      "content_id": "2220da68-cc94-4180-8134-03a4b20c15f2",
+      "claim_id": "C29",
+      "claim": "Cells in wild-type colonies accumulated 13C-labeled 3-phosphoglycerate (3 PG) and 13C-labeled trehalose when grown with 13C-labeled aspartate.",
+      "claim_type": "EXPLICIT",
+      "source": "Cells in wild-type colonies accumulated 13C-labeled 3-phosphoglycerate (3 PG) and 13C-labeled trehalose, while these labeled metabolites were undetectable in a gluconeogenic mutant (\u0394pck1) (Figure 2D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:38:00.464408Z"
+    },
+    {
+      "id": "c60fae30-e67a-49cd-b8c8-e3a904f6654d",
+      "content_id": "2220da68-cc94-4180-8134-03a4b20c15f2",
+      "claim_id": "C30",
+      "claim": "13C-labeled metabolites were undetectable in a gluconeogenic mutant (\u0394pck1) when grown with 13C-labeled aspartate.",
+      "claim_type": "EXPLICIT",
+      "source": "Cells in wild-type colonies accumulated 13C-labeled 3-phosphoglycerate (3 PG) and 13C-labeled trehalose, while these labeled metabolites were undetectable in a gluconeogenic mutant (\u0394pck1) (Figure 2D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:38:00.464408Z"
+    },
+    {
+      "id": "047f8658-6e8c-42f8-8111-4f36e5bd580d",
+      "content_id": "2220da68-cc94-4180-8134-03a4b20c15f2",
+      "claim_id": "C31",
+      "claim": "Aspartate provides the carbon skeleton for trehalose production via gluconeogenesis.",
+      "claim_type": "EXPLICIT",
+      "source": "Collectively, these data show that aspartate provides the carbon skeleton for trehalose production via gluconeogenesis, and this turn is essential for the emergence of spatially restricted metabolic heterogeneity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the isotope labeling experiments shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:38:00.464408Z"
+    },
+    {
+      "id": "d16b384f-16d6-41ed-b6ac-f5584755f582",
+      "content_id": "2220da68-cc94-4180-8134-03a4b20c15f2",
+      "claim_id": "C32",
+      "claim": "Light cells had higher rates of nucleotide synthesis.",
+      "claim_type": "EXPLICIT",
+      "source": "We had previously noted that the light cells had higher rates of nucleotide synthesis (Varahan et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:38:00.464408Z"
+    },
+    {
+      "id": "db446e1c-87d1-4a93-8020-6755d60806a2",
+      "content_id": "2220da68-cc94-4180-8134-03a4b20c15f2",
+      "claim_id": "C33",
+      "claim": "Synthesis of the nucleotide backbone requires an assimilation of carbon (typically from glucose derived metabolites, notably pentose sugars from the PPP), as well as nitrogen that comes from amino acids (primarily glutamine and aspartate).",
+      "claim_type": "EXPLICIT",
+      "source": "Synthesis of the nucleotide backbone requires an assimilation of carbon (typically from glucose derived metabolites, notably pentose sugars from the PPP), as well as nitrogen that comes from amino acids (primarily glutamine and aspartate) (Boyle, 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on established biochemical knowledge and supported by citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:38:00.464408Z"
+    },
+    {
+      "id": "075bbc2c-2421-41b4-a918-a0f3368446c0",
+      "content_id": "2220da68-cc94-4180-8134-03a4b20c15f2",
+      "claim_id": "C34",
+      "claim": "Aspartate serves as a nitrogen donor in the synthesis of purine and pyrimidine nucleotides.",
+      "claim_type": "EXPLICIT",
+      "source": "As mentioned earlier, aspartate serves as a nitrogen donor in the synthesis of purine and pyrimidine nucleotides, but can also serve as a gluconeogenic substrate, providing the carbon backbone for the synthesis of trehalose (Figure 4A; Jones, 1980).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is based on established biochemical knowledge and supported by citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:38:00.464408Z"
+    },
+    {
+      "id": "0c61a4af-6f8b-462b-99f9-10e8dc9b7105",
+      "content_id": "2220da68-cc94-4180-8134-03a4b20c15f2",
+      "claim_id": "C35",
+      "claim": "Aspartate can serve as a gluconeogenic substrate, providing the carbon backbone for the synthesis of trehalose.",
+      "claim_type": "EXPLICIT",
+      "source": "As mentioned earlier, aspartate serves as a nitrogen donor in the synthesis of purine and pyrimidine nucleotides, but can also serve as a gluconeogenic substrate, providing the carbon backbone for the synthesis of trehalose (Figure 4A; Jones, 1980).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is based on established biochemical knowledge and supported by citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:38:00.464408Z"
+    },
+    {
+      "id": "c078e2a8-9148-48b3-89f0-45279f37d3ca",
+      "content_id": "2220da68-cc94-4180-8134-03a4b20c15f2",
+      "claim_id": "C36",
+      "claim": "Dark cells accumulated significantly higher levels of 13C-labeled 3 PG and 13C-labeled trehalose as compared to the light cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Dark cells accumulated significantly higher levels of 13C-labeled 3 PG and 13C-labeled trehalose as compared to the light cells (Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:38:00.464408Z"
+    },
+    {
+      "id": "cda2e79e-d318-4cca-a3eb-bac8a0a6f11d",
+      "content_id": "2220da68-cc94-4180-8134-03a4b20c15f2",
+      "claim_id": "C37",
+      "claim": "Light cells accumulated substantially higher levels of 15N-labeled nucleotides compared to dark cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, in stark contrast to the earlier results for carbon, the light cells accumulated substantially higher levels of 15N-labeled nucleotides compared to dark cells (Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:38:00.464408Z"
+    },
+    {
+      "id": "881731d7-fbf1-4d64-89cd-c87653965c69",
+      "content_id": "2220da68-cc94-4180-8134-03a4b20c15f2",
+      "claim_id": "C38",
+      "claim": "Gluconeogenic dark cells utilize aspartate primarily as a carbon source in gluconeogenesis (leading to trehalose production).",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, aspartate exhibits metabolite plasticity within the cells of a colony. The gluconeogenic dark cells utilize this amino acid primarily as a carbon source in gluconeogenesis (leading to trehalose production), while the light cells (with high PPP activity) predominantly utilize aspartate as a nitrogen donor for nucleotide biosynthesis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the isotope labeling experiments shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:38:00.464408Z"
+    },
+    {
+      "id": "d8a67586-ee79-4b99-bb85-98312d8e61b8",
+      "content_id": "2220da68-cc94-4180-8134-03a4b20c15f2",
+      "claim_id": "C39",
+      "claim": "Light cells (with high PPP activity) predominantly utilize aspartate as a nitrogen donor for nucleotide biosynthesis.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, aspartate exhibits metabolite plasticity within the cells of a colony. The gluconeogenic dark cells utilize this amino acid primarily as a carbon source in gluconeogenesis (leading to trehalose production), while the light cells (with high PPP activity) predominantly utilize aspartate as a nitrogen donor for nucleotide biosynthesis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the isotope labeling experiments shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:38:00.464408Z"
+    },
+    {
+      "id": "41da02b6-1f5c-422f-bb60-f76dcdabd0c1",
+      "content_id": "2220da68-cc94-4180-8134-03a4b20c15f2",
+      "claim_id": "C40",
+      "claim": "Plasticity in the use of a non-limiting resource, aspartate, enables the development of metabolically heterogeneous colonies.",
+      "claim_type": "EXPLICIT",
+      "source": "Collectively, these results reveal how plasticity in the use of a non-limiting resource, aspartate, enables the development of metabolically heterogeneous colonies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the experimental data showing differential aspartate utilization.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:38:00.464408Z"
+    },
+    {
+      "id": "65dd4883-bd43-4011-994c-db6f5453d617",
+      "content_id": "2220da68-cc94-4180-8134-03a4b20c15f2",
+      "claim_id": "C41",
+      "claim": "Trehalose enables the survival of yeast cells when faced with environmental insults like desiccation and freezing/thawing.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, trehalose particularly enables the survival of yeast cells when faced with such environmental insults (D'Amore et al., 1991; Erkut et al., 2016; Wiemken, 1990).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to studies on trehalose's protective effects.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:38:00.464408Z"
+    },
+    {
+      "id": "09f4b059-4392-4ecf-897b-ad12bcf18451",
+      "content_id": "2220da68-cc94-4180-8134-03a4b20c15f2",
+      "claim_id": "C42",
+      "claim": "Dark cells showed markedly higher survival rates post freeze/thaw treatment compared to light cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Dark cells showed markedly higher survival rates post freeze/thaw treatment (similar to the gluconeogenic control) compared to light cells (which phenocopied cells grown in high glucose) (Figure 5A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 5A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:38:00.464408Z"
+    },
+    {
+      "id": "977f0832-5688-4b7c-be11-9a8f18064b37",
+      "content_id": "2220da68-cc94-4180-8134-03a4b20c15f2",
+      "claim_id": "C43",
+      "claim": "Dark cells survived complete desiccation better than light cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, dark cells survived complete desiccation better than light cells (Figure 5B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:38:00.464408Z"
+    },
+    {
+      "id": "ed2e6659-3839-493a-a8cc-09b92d5a9b3b",
+      "content_id": "2220da68-cc94-4180-8134-03a4b20c15f2",
+      "claim_id": "C44",
+      "claim": "In mature (21 day) colonies the percentage of viable cells were significantly lower in the \u0394pck1 colonies compared to the wild-type and \u0394nth1 colonies.",
+      "claim_type": "EXPLICIT",
+      "source": "Although we did not see a difference in the number of viable cells in the 7 day old colonies, in mature (21 day) colonies the percentage of viable cells were significantly lower in the \u0394pck1 colonies compared to the wild-type and \u0394nth1 colonies (Figure 5C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 5C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:38:00.464408Z"
+    },
+    {
+      "id": "0bc67b07-3ec4-4a48-a1c8-6938f9475f1f",
+      "content_id": "2220da68-cc94-4180-8134-03a4b20c15f2",
+      "claim_id": "C45",
+      "claim": "The presence of dark cells positively influences the long-term survivability of the colony as a whole.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, the presence of dark cells positively influences the long-term survivability of the colony as a whole, and these cells can survive environmental insults like desiccation, freeze/thaw cycles and nutrient limitation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the experimental data showing survival advantages of dark cells.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:38:00.464408Z"
+    },
+    {
+      "id": "87baf832-5bbb-41cc-9db1-d92d65bc94c5",
+      "content_id": "2220da68-cc94-4180-8134-03a4b20c15f2",
+      "claim_id": "C46",
+      "claim": "Light cells enable efficient colony expansion.",
+      "claim_type": "EXPLICIT",
+      "source": "We previously observed that light cells enable efficient colony expansion, and colonies with only dark cells (\u0394nth1 trehalase mutants) cannot expand as efficiently as a wild-type colony (Varahan et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:38:00.464408Z"
+    },
+    {
+      "id": "2c0f8601-6233-4d3b-aec2-fed8a27a9f35",
+      "content_id": "2220da68-cc94-4180-8134-03a4b20c15f2",
+      "claim_id": "C47",
+      "claim": "At 21 days, the \u0394nth1 and \u0394pck1 colonies had significantly reduced expansion compared to wild-type colonies.",
+      "claim_type": "EXPLICIT",
+      "source": "At 21 days, the \u0394nth1 and \u0394pck1 colonies had significantly reduced expansion compared to wild-type colonies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 5D and E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:38:00.464408Z"
+    },
+    {
+      "id": "d9f8a40e-cea6-460a-b1aa-d91aec6e39ae",
+      "content_id": "2220da68-cc94-4180-8134-03a4b20c15f2",
+      "claim_id": "C48",
+      "claim": "Light cells are important for the effective long-term expansion of the colony.",
+      "claim_type": "EXPLICIT",
+      "source": "This reiterates that the light cells are important for the effective long-term expansion of the colony (Figure 5D and E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is inferred from the experimental data showing reduced expansion in mutants lacking light cells.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:38:00.464408Z"
+    },
+    {
+      "id": "c0cd8f8c-412f-4fb9-a329-aff8124d55ed",
+      "content_id": "2220da68-cc94-4180-8134-03a4b20c15f2",
+      "claim_id": "C49",
+      "claim": "Light cells from wild-type colonies showed rapid, directional proliferation towards the glucose source.",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, the light cells from wild-type colonies showed rapid, directional proliferation towards the glucose source.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 5F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:38:00.464408Z"
+    },
+    {
+      "id": "73d92692-01be-496d-9137-a0ed6016266c",
+      "content_id": "2220da68-cc94-4180-8134-03a4b20c15f2",
+      "claim_id": "C50",
+      "claim": "Both the \u0394nth1 cells (trehalose-breakdown deficient, no light cells), and the \u0394pck1 cells (no trehalose production) showed markedly reduced directional movement towards the glucose source.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, both the \u0394nth1 cells (trehalose-breakdown deficient, no light cells), and the \u0394pck1 cells (no trehalose production) showed markedly reduced directional movement towards the glucose source (Figure 5F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 5F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:38:00.464408Z"
+    },
+    {
+      "id": "cf3737fb-89a9-4518-81d2-f821985871e9",
+      "content_id": "2220da68-cc94-4180-8134-03a4b20c15f2",
+      "claim_id": "C51",
+      "claim": "Light cells are essential for the outward expansion and foraging response of the colony.",
+      "claim_type": "EXPLICIT",
+      "source": "These data conclusively show that light cells are essential for the outward expansion and foraging response of the colony.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the experimental data showing foraging defects in mutants lacking light cells.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:38:00.464408Z"
+    },
+    {
+      "id": "b89b1e40-d2ba-4eee-8647-7cd6bc607bca",
+      "content_id": "2220da68-cc94-4180-8134-03a4b20c15f2",
+      "claim_id": "C52",
+      "claim": "The presence of dark and light cells allows greater colony survival, resistance to stress, and the ability to expand towards preferred nutrient sources.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, the presence of dark and light cells allows greater colony survival, resistance to stress, and the ability to expand towards preferred nutrient sources.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the experimental data showing various advantages of having both cell types.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:38:00.464408Z"
+    },
+    {
+      "id": "fb929f09-560d-4458-9384-da39c1290946",
+      "content_id": "2220da68-cc94-4180-8134-03a4b20c15f2",
+      "claim_id": "C53",
+      "claim": "The agent-based model predicts that experimentally observed spatial patterns only arose when aspartate was predominantly used as a carbon source in gluconeogenic cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Our model suggested that, with the mechanisms included, the experimentally observed spatial patterns only arose when aspartate was predominantly used as a carbon source in gluconeogenic cells, which we then confirmed experimentally.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the computational modeling results shown in Figure 3.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:38:00.464408Z"
+    },
+    {
+      "id": "9852d645-18b1-47bb-bbf7-534a58e3d457",
+      "content_id": "2220da68-cc94-4180-8134-03a4b20c15f2",
+      "claim_id": "C54",
+      "claim": "When glucose is limited, cells will shift to gluconeogenesis, and in these conditions, mass action dependent metabolic flux is extremely high towards trehalose synthesis.",
+      "claim_type": "EXPLICIT",
+      "source": "When glucose is limited, cells will shift to gluconeogenesis, and in these conditions, mass action dependent metabolic flux is extremely high towards trehalose synthesis, making the production of this resource an unavoidable, 'default' outcome.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on established biochemical knowledge and inference from the experimental system.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:38:00.464408Z"
+    },
+    {
+      "id": "717a1f80-c3ae-4780-9413-8572e2aa965e",
+      "content_id": "2220da68-cc94-4180-8134-03a4b20c15f2",
+      "claim_id": "C56",
+      "claim": "Light cells are glycolytic, with high pentose phosphate activity, which is a metabolic signature of a 'growth state'.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the light cells are glycolytic, with high pentose phosphate activity. This is a metabolic signature of a 'growth state' (van den Brink et al., 2008; Wiebe et al., 2008), and these cells achieve this state because they can take up and breakdown the available trehalose to fuel glycolysis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to studies on metabolic states and experimental data from the manuscript.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:38:00.464408Z"
+    },
+    {
+      "id": "9095bd4a-d978-4661-8a1d-51999dcc7105",
+      "content_id": "2220da68-cc94-4180-8134-03a4b20c15f2",
+      "claim_id": "C57",
+      "claim": "Cells in both states are required, for the colony as a whole to collectively, successfully expand and forage for nutrients.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, cells in both states are required, for the colony as a whole to collectively, successfully expand and forage for nutrients (as shown here, and previously [Varahan et al., 2019]).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data in Figure 5 and citation to a previous study.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:38:00.464408Z"
+    },
+    {
+      "id": "d456561a-3925-4bef-97db-db4bc933497f",
+      "content_id": "2220da68-cc94-4180-8134-03a4b20c15f2",
+      "claim_id": "C58",
+      "claim": "The dark cells will easily transition to quiescence and survive extreme stress.",
+      "claim_type": "EXPLICIT",
+      "source": "The dark cells will easily transition to quiescence and survive extreme stress.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the experimental data showing survival advantages of dark cells.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:38:00.464408Z"
+    },
+    {
+      "id": "5276ada5-3f1b-4844-8457-6e55f7503f07",
+      "content_id": "2220da68-cc94-4180-8134-03a4b20c15f2",
+      "claim_id": "C59",
+      "claim": "The light cells are poised to rapidly grow when the colony reaches a more favorable (glucose replete) nutrient environment by foraging.",
+      "claim_type": "EXPLICIT",
+      "source": "The light cells are poised to rapidly grow when the colony reaches a more favorable (glucose replete) nutrient environment by foraging.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the experimental data showing foraging advantages of light cells.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:38:00.464408Z"
+    },
+    {
+      "id": "180f926b-fa7f-4082-9ef4-b97ce0c17d23",
+      "content_id": "2220da68-cc94-4180-8134-03a4b20c15f2",
+      "claim_id": "C60",
+      "claim": "This yeast colony where the combination of aspartate in (practically) non-limiting amounts, as well as the build-up and use of a limiting resource (trehalose), along with the separation of compartments (and cells) for different biochemical processes where these molecules are used, largely works as a M-R system that enables the stable emergence and maintenance of phenotypically heterogeneous states.",
+      "claim_type": "EXPLICIT",
+      "source": "By these definitions, this yeast colony where the combination of aspartate in (practically) non-limiting amounts, as well as the build-up and use of a limiting resource (trehalose), along with the separation of compartments (and cells) for different biochemical processes where these molecules are used, largely works as a M-R system that enables the stable emergence and maintenance of phenotypically heterogeneous states.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on theoretical framework and inference from the experimental system.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:38:00.464408Z"
+    },
+    {
+      "id": "6c41f268-308c-43d6-b2f1-f1ab76dba78e",
+      "content_id": "2220da68-cc94-4180-8134-03a4b20c15f2",
+      "claim_id": "C61",
+      "claim": "This yeast colony, with its self-organized system of cells in opposite metabolic states, appears to satisfy criteria for division of labor including functional complementarity, synergistic advantages, negative frequency-dependent selection, and positive assortment.",
+      "claim_type": "EXPLICIT",
+      "source": "This yeast colony, with its self-organized system of cells in opposite metabolic states, appears to satisfy these criteria for division of labor.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the experimental data and theoretical considerations about division of labor.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:38:00.464408Z"
+    },
+    {
+      "id": "39788121-5b11-413a-b6e1-0558b8c86486",
+      "content_id": "2220da68-cc94-4180-8134-03a4b20c15f2",
+      "claim_id": "C62",
+      "claim": "Efficient carbon/nitrogen resource budgeting and metabolic plasticity of a non-limiting resource are sufficient to control the emergence of spatially separated cells in specialized states.",
+      "claim_type": "EXPLICIT",
+      "source": "Summarizing, we demonstrate how efficient carbon/nitrogen resource budgeting and metabolic plasticity of a non-limiting resource are sufficient to control the emergence of spatially separated cells in specialized states.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the experimental data and modeling results presented throughout the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:38:00.464408Z"
+    },
+    {
+      "id": "798e6873-213a-47a0-beb3-4aaa5ebc36bb",
+      "content_id": "2220da68-cc94-4180-8134-03a4b20c15f2",
+      "claim_id": "C63",
+      "claim": "This division of labor, resulting in an interdependent cross-feeding system of cells provides collective advantages to the population to survive environmental challenges and expand towards new resources.",
+      "claim_type": "EXPLICIT",
+      "source": "This division of labor, resulting in an interdependent cross-feeding system of cells provides collective advantages to the population to survive environmental challenges and expand towards new resources, in a manner reminiscent of multicellular organisms.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the experimental data showing survival and foraging advantages.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:38:00.464408Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "620c953b-4e46-48ac-9448-bbff1ba41c45",
+      "content_id": "2220da68-cc94-4180-8134-03a4b20c15f2",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Gluconeogenesis is critical for the emergence and maintenance of metabolic heterogeneity in yeast colonies. Gluconeogenic mutants (\u0394pck1 and \u0394fbp1) formed smooth colonies lacking structured morphology and had essentially undetectable light cells with high PPP activity compared to wild-type colonies.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C12-C14 provide strong experimental evidence using genetic mutants and fluorescent reporters. The loss-of-function approach with two independent gluconeogenic enzymes (PCK1 and FBP1) showing consistent phenotypes strengthens the conclusion. The correlation between colony morphology and metabolic heterogeneity is well-established through the PPP reporter system.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:38:00.464408Z"
+    },
+    {
+      "id": "bb72489e-5799-419e-9206-a99ea02ae40a",
+      "content_id": "2220da68-cc94-4180-8134-03a4b20c15f2",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Aspartate is sufficient for the development of metabolically specialized colonies in a gluconeogenesis-dependent manner. Wild-type colonies failed to develop structured morphology in the absence of amino acids, which could be rescued by adding amino acids back. Among all amino acids tested, aspartate supplementation most strongly promoted structured colony development.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C15-C20 demonstrate through systematic add-back experiments that aspartate is both necessary and sufficient for colony development. The specificity is shown by comparing aspartate to other amino acids individually and in combination. The gluconeogenesis-dependence is confirmed using \u0394pck1 mutants. The experimental design with appropriate controls is sound.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:38:00.464408Z"
+    },
+    {
+      "id": "5eb304ec-88f9-4449-a5ac-ea586ae10287",
+      "content_id": "2220da68-cc94-4180-8134-03a4b20c15f2",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Aspartate enables trehalose production, which controls the emergence of metabolic heterogeneity. Colonies supplemented with aspartate had significantly higher trehalose levels compared to minimal medium, and aspartate dropout conditions resulted in lower trehalose and fewer light cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C23-C28 provide biochemical measurements linking aspartate to trehalose production and light cell emergence. The use of appropriate controls (\u0394pck1, \u0394tps1 mutants) and the aspartate dropout experiment strengthen the causal connection. Statistical significance is reported (p<0.001), though sample sizes (n=3) are modest.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:38:00.464408Z"
+    },
+    {
+      "id": "d78ae420-d8d2-49f4-992a-bdcca8c01bc5",
+      "content_id": "2220da68-cc94-4180-8134-03a4b20c15f2",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Aspartate provides the carbon skeleton for trehalose production via gluconeogenesis. Wild-type colonies accumulated 13C-labeled 3-phosphoglycerate and trehalose when grown with 13C-labeled aspartate, while these labeled metabolites were undetectable in gluconeogenic mutants.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C29-C31 use isotope tracing to directly demonstrate carbon flux from aspartate to trehalose. The use of 13C-labeled aspartate and LC-MS/MS detection provides strong mechanistic evidence. The negative control with \u0394pck1 mutants confirms gluconeogenesis-dependence. This is a rigorous metabolic flux analysis.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:38:00.464408Z"
+    },
+    {
+      "id": "6f73b596-34e3-4052-acee-6570fecbf8d0",
+      "content_id": "2220da68-cc94-4180-8134-03a4b20c15f2",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Aspartate exhibits metabolic plasticity within the colony. Dark cells accumulated higher levels of 13C-labeled gluconeogenic metabolites and trehalose, while light cells accumulated higher levels of 15N-labeled nucleotides, demonstrating differential carbon/nitrogen budgeting.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C36-C40 provide compelling dual-isotope tracing evidence (13C and 15N) showing differential aspartate utilization in dark versus light cells. The experimental approach of isolating cell populations and measuring both carbon and nitrogen incorporation is rigorous. However, the nucleotide data shows only n=2 biological replicates, which is below standard for definitive conclusions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:38:00.464408Z"
+    },
+    {
+      "id": "19fdebe7-d5ae-4a2b-a81c-e355cecb0991",
+      "content_id": "2220da68-cc94-4180-8134-03a4b20c15f2",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The agent-based model predicts that experimentally observed spatial patterns only arose when aspartate was predominantly used as a carbon source in gluconeogenic cells, which was then confirmed experimentally.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C53 is supported by the modeling results in Figure 3 and the experimental validation through isotope tracing. The model makes specific predictions about parameter ranges (budgeting fraction f and relative uptake rate AspU) that produce realistic colony patterns. The experimental confirmation with 13C-aspartate strengthens this result.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:38:00.464408Z"
+    },
+    {
+      "id": "e03b976e-7131-425b-a37c-41f5dee00f2c",
+      "content_id": "2220da68-cc94-4180-8134-03a4b20c15f2",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Dark cells show enhanced survival under environmental stress and contribute to long-term colony viability. Dark cells survived freeze/thaw cycles and desiccation better than light cells, and \u0394pck1 colonies (lacking both cell types) showed reduced viability at 21 days.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C42-C45 demonstrate functional advantages of dark cells through multiple stress assays. The experimental design includes appropriate controls (cells grown in different glucose conditions). Statistical significance is reported (p<0.01), with adequate replication (n=3-5). The long-term viability experiment provides ecological context.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:38:00.464408Z"
+    },
+    {
+      "id": "579dd994-2abf-4102-8874-cea794287a8a",
+      "content_id": "2220da68-cc94-4180-8134-03a4b20c15f2",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Light cells are essential for colony expansion and foraging. \u0394nth1 and \u0394pck1 colonies showed reduced expansion compared to wild-type, and light cells from wild-type colonies showed rapid directional proliferation toward glucose sources.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C47-C51 demonstrate functional advantages of light cells through colony expansion and foraging assays. The use of mutants lacking light cells (\u0394nth1) or both cell types (\u0394pck1) provides clear genetic evidence. The directional foraging experiment with external glucose is particularly compelling. Statistical significance is reported (p<0.01) with n=3 replicates.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:38:00.464408Z"
+    },
+    {
+      "id": "ca210693-aaa1-4e55-8444-c8c6f07ee6ef",
+      "content_id": "2220da68-cc94-4180-8134-03a4b20c15f2",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The presence of both dark and light cells enables division of labor, providing collective advantages including survival, stress resistance, and nutrient foraging. This system satisfies criteria for division of labor and represents efficient carbon/nitrogen resource budgeting.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C52, C57, C61-C63 synthesize the experimental findings into a coherent framework of division of labor. The evidence from survival, expansion, and foraging experiments collectively supports this interpretation. However, the claim that the system satisfies formal criteria for division of labor (functional complementarity, synergistic advantages, etc.) is somewhat inferential and could benefit from more explicit testing of these criteria.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:38:00.464408Z"
+    },
+    {
+      "id": "dff9fbf4-06a0-47b4-861b-ee5c33743f10",
+      "content_id": "2220da68-cc94-4180-8134-03a4b20c15f2",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Previous work established that metabolic constraints drive cells into gluconeogenic or glycolytic states, and threshold amounts of trehalose control the emergence of glycolytic cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C2 are supported by citation to prior work (Varahan et al., 2019). These establish the foundation for the current study and are appropriately referenced as background.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:38:00.464408Z"
+    },
+    {
+      "id": "9c6b49c8-e9e3-4fee-af0d-2eada6ecd4b8",
+      "content_id": "2220da68-cc94-4180-8134-03a4b20c15f2",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Aspartate is unique among amino acids in that it can directly enter gluconeogenesis without entering the TCA cycle, via conversion to oxaloacetate in the cytosol through aspartate transaminase.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C21-C22 are based on established biochemical knowledge about aspartate metabolism. This is well-documented in the literature and provides important mechanistic context for why aspartate has special properties in this system.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:38:00.464408Z"
+    },
+    {
+      "id": "f6716488-bb5f-40cd-80c2-65f8994c30b0",
+      "content_id": "2220da68-cc94-4180-8134-03a4b20c15f2",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Nucleotide synthesis requires both carbon (from glucose-derived metabolites) and nitrogen (from amino acids including aspartate). Aspartate serves as both a nitrogen donor for nucleotide synthesis and a gluconeogenic substrate for trehalose production.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C32-C35 combine prior experimental findings (C32) with established biochemical knowledge (C33-C35). These are well-supported by citations and provide necessary background for understanding aspartate's dual role.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:38:00.464408Z"
+    },
+    {
+      "id": "7a6c71ad-a8ad-4c3b-b716-2623f82792e3",
+      "content_id": "2220da68-cc94-4180-8134-03a4b20c15f2",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Trehalose enables yeast cell survival when faced with environmental insults like desiccation and freezing/thawing.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C41 is supported by multiple citations to established literature on trehalose's protective functions. This provides important context for the survival experiments.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:38:00.464408Z"
+    },
+    {
+      "id": "6aeb9d1c-5d09-47e0-a012-7c3e922d403a",
+      "content_id": "2220da68-cc94-4180-8134-03a4b20c15f2",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Light cells enable efficient colony expansion, and colonies with only dark cells cannot expand as efficiently as wild-type colonies.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C46 is supported by citation to prior work (Varahan et al., 2019). This provides context for the expansion experiments in the current study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:38:00.464408Z"
+    },
+    {
+      "id": "2e86886a-f861-4a83-86e2-4a8f64ea7327",
+      "content_id": "2220da68-cc94-4180-8134-03a4b20c15f2",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "In glucose limitation, cells shift to gluconeogenesis with high metabolic flux toward trehalose synthesis. Light cells exhibit a glycolytic/growth metabolic state, while dark cells are primed for quiescence and stress survival.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C54, C56, C58-C59 integrate biochemical knowledge with experimental observations. The characterization of metabolic states is supported by citations and consistent with the experimental data, though some aspects are inferential.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:38:00.464408Z"
+    },
+    {
+      "id": "481905f8-9b50-46b5-9aeb-6db1be1134e4",
+      "content_id": "2220da68-cc94-4180-8134-03a4b20c15f2",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "The yeast colony system functions as a metabolism-replacement (M-R) system with aspartate in non-limiting amounts, trehalose as a limiting resource, and spatial separation of biochemical processes, enabling stable emergence of heterogeneous states.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C60 applies a theoretical framework (M-R systems) to interpret the experimental system. While the analogy is interesting and the system does exhibit properties consistent with M-R systems, this is primarily a theoretical interpretation rather than an experimentally tested hypothesis. The claim would benefit from more explicit testing of M-R system criteria.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:38:00.464408Z"
+    },
+    {
+      "id": "1e01186f-cfc0-4aa0-9baf-616b8b091b21",
+      "content_id": "2220da68-cc94-4180-8134-03a4b20c15f2",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Division of labor is widely prevalent in microbial communities, enhances efficiency, and is commonly triggered by nutrient limitation. Optimal resource allocation and metabolic product sharing are important strategies in microbial communities.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7-C11 provide general background on division of labor and microbial communities, supported by appropriate citations. These establish the broader context for the study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:38:00.464408Z"
+    },
+    {
+      "id": "d7090bef-a6f6-4c92-860a-5bf27faa688e",
+      "content_id": "2220da68-cc94-4180-8134-03a4b20c15f2",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "Aspartate serves as a carbon source for trehalose production in gluconeogenic cells and as a nitrogen source for nucleotide synthesis in glycolytic cells. This metabolic plasticity enables carbon-nitrogen budgeting and division of labor with growth/survival advantages.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3-C6 summarize the main findings of the study. These are well-supported by the experimental evidence presented throughout the manuscript, including isotope tracing, genetic mutants, and functional assays. This represents the core contribution of the work.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:38:00.464408Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "3a6a4635-106b-48d5-b815-583ac26fe6f5",
+      "result_id": "620c953b-4e46-48ac-9448-bbff1ba41c45"
+    },
+    {
+      "claim_id": "3cc04aa3-4609-45a9-bf86-982d15e83b5f",
+      "result_id": "620c953b-4e46-48ac-9448-bbff1ba41c45"
+    },
+    {
+      "claim_id": "bce3a3b1-17af-44da-ae4c-5e2fd7fa8440",
+      "result_id": "620c953b-4e46-48ac-9448-bbff1ba41c45"
+    },
+    {
+      "claim_id": "77216490-f233-49a3-b3fd-758faa63b50c",
+      "result_id": "bb72489e-5799-419e-9206-a99ea02ae40a"
+    },
+    {
+      "claim_id": "19bfde37-ba2b-4a11-9e61-343d654a08b5",
+      "result_id": "bb72489e-5799-419e-9206-a99ea02ae40a"
+    },
+    {
+      "claim_id": "4b9fc4fc-371f-4486-9442-332f5fd855d0",
+      "result_id": "bb72489e-5799-419e-9206-a99ea02ae40a"
+    },
+    {
+      "claim_id": "ca589c3a-002c-430d-8844-5b3c98ba83c7",
+      "result_id": "bb72489e-5799-419e-9206-a99ea02ae40a"
+    },
+    {
+      "claim_id": "ac9e5fcb-81a1-4b3d-b160-4197868a187f",
+      "result_id": "bb72489e-5799-419e-9206-a99ea02ae40a"
+    },
+    {
+      "claim_id": "4f13043b-9832-486a-838c-fa17052630f2",
+      "result_id": "bb72489e-5799-419e-9206-a99ea02ae40a"
+    },
+    {
+      "claim_id": "53abc476-e160-4b13-97cd-b42a14afc749",
+      "result_id": "5eb304ec-88f9-4449-a5ac-ea586ae10287"
+    },
+    {
+      "claim_id": "5a1ce17f-b177-4044-b399-dd50d4d12bb8",
+      "result_id": "5eb304ec-88f9-4449-a5ac-ea586ae10287"
+    },
+    {
+      "claim_id": "b2b78e20-ed79-4e14-b39b-54bd1980726b",
+      "result_id": "5eb304ec-88f9-4449-a5ac-ea586ae10287"
+    },
+    {
+      "claim_id": "ebf67887-95b6-4545-9baf-67edd48a3543",
+      "result_id": "5eb304ec-88f9-4449-a5ac-ea586ae10287"
+    },
+    {
+      "claim_id": "0504a399-1ac5-4b4a-9d33-a430a9d3cd2b",
+      "result_id": "5eb304ec-88f9-4449-a5ac-ea586ae10287"
+    },
+    {
+      "claim_id": "2f2c185b-2750-409e-9945-fb90d5eaacda",
+      "result_id": "5eb304ec-88f9-4449-a5ac-ea586ae10287"
+    },
+    {
+      "claim_id": "a0814ccd-3a0a-4aee-9732-2e9bc8789a7d",
+      "result_id": "d78ae420-d8d2-49f4-992a-bdcca8c01bc5"
+    },
+    {
+      "claim_id": "c60fae30-e67a-49cd-b8c8-e3a904f6654d",
+      "result_id": "d78ae420-d8d2-49f4-992a-bdcca8c01bc5"
+    },
+    {
+      "claim_id": "047f8658-6e8c-42f8-8111-4f36e5bd580d",
+      "result_id": "d78ae420-d8d2-49f4-992a-bdcca8c01bc5"
+    },
+    {
+      "claim_id": "c078e2a8-9148-48b3-89f0-45279f37d3ca",
+      "result_id": "6f73b596-34e3-4052-acee-6570fecbf8d0"
+    },
+    {
+      "claim_id": "cda2e79e-d318-4cca-a3eb-bac8a0a6f11d",
+      "result_id": "6f73b596-34e3-4052-acee-6570fecbf8d0"
+    },
+    {
+      "claim_id": "881731d7-fbf1-4d64-89cd-c87653965c69",
+      "result_id": "6f73b596-34e3-4052-acee-6570fecbf8d0"
+    },
+    {
+      "claim_id": "d8a67586-ee79-4b99-bb85-98312d8e61b8",
+      "result_id": "6f73b596-34e3-4052-acee-6570fecbf8d0"
+    },
+    {
+      "claim_id": "41da02b6-1f5c-422f-bb60-f76dcdabd0c1",
+      "result_id": "6f73b596-34e3-4052-acee-6570fecbf8d0"
+    },
+    {
+      "claim_id": "fb929f09-560d-4458-9384-da39c1290946",
+      "result_id": "19fdebe7-d5ae-4a2b-a81c-e355cecb0991"
+    },
+    {
+      "claim_id": "09f4b059-4392-4ecf-897b-ad12bcf18451",
+      "result_id": "e03b976e-7131-425b-a37c-41f5dee00f2c"
+    },
+    {
+      "claim_id": "977f0832-5688-4b7c-be11-9a8f18064b37",
+      "result_id": "e03b976e-7131-425b-a37c-41f5dee00f2c"
+    },
+    {
+      "claim_id": "ed2e6659-3839-493a-a8cc-09b92d5a9b3b",
+      "result_id": "e03b976e-7131-425b-a37c-41f5dee00f2c"
+    },
+    {
+      "claim_id": "0bc67b07-3ec4-4a48-a1c8-6938f9475f1f",
+      "result_id": "e03b976e-7131-425b-a37c-41f5dee00f2c"
+    },
+    {
+      "claim_id": "2c0f8601-6233-4d3b-aec2-fed8a27a9f35",
+      "result_id": "579dd994-2abf-4102-8874-cea794287a8a"
+    },
+    {
+      "claim_id": "d9f8a40e-cea6-460a-b1aa-d91aec6e39ae",
+      "result_id": "579dd994-2abf-4102-8874-cea794287a8a"
+    },
+    {
+      "claim_id": "c0cd8f8c-412f-4fb9-a329-aff8124d55ed",
+      "result_id": "579dd994-2abf-4102-8874-cea794287a8a"
+    },
+    {
+      "claim_id": "73d92692-01be-496d-9137-a0ed6016266c",
+      "result_id": "579dd994-2abf-4102-8874-cea794287a8a"
+    },
+    {
+      "claim_id": "cf3737fb-89a9-4518-81d2-f821985871e9",
+      "result_id": "579dd994-2abf-4102-8874-cea794287a8a"
+    },
+    {
+      "claim_id": "b89b1e40-d2ba-4eee-8647-7cd6bc607bca",
+      "result_id": "ca210693-aaa1-4e55-8444-c8c6f07ee6ef"
+    },
+    {
+      "claim_id": "9095bd4a-d978-4661-8a1d-51999dcc7105",
+      "result_id": "ca210693-aaa1-4e55-8444-c8c6f07ee6ef"
+    },
+    {
+      "claim_id": "6c41f268-308c-43d6-b2f1-f1ab76dba78e",
+      "result_id": "ca210693-aaa1-4e55-8444-c8c6f07ee6ef"
+    },
+    {
+      "claim_id": "39788121-5b11-413a-b6e1-0558b8c86486",
+      "result_id": "ca210693-aaa1-4e55-8444-c8c6f07ee6ef"
+    },
+    {
+      "claim_id": "798e6873-213a-47a0-beb3-4aaa5ebc36bb",
+      "result_id": "ca210693-aaa1-4e55-8444-c8c6f07ee6ef"
+    },
+    {
+      "claim_id": "1597e35e-4909-467d-b7a7-1c55d7d649d4",
+      "result_id": "dff9fbf4-06a0-47b4-861b-ee5c33743f10"
+    },
+    {
+      "claim_id": "25d07758-9e22-45db-a040-4eb45d5a5b0e",
+      "result_id": "dff9fbf4-06a0-47b4-861b-ee5c33743f10"
+    },
+    {
+      "claim_id": "7334663a-a2af-4b5e-8782-9f429d9fdc10",
+      "result_id": "9c6b49c8-e9e3-4fee-af0d-2eada6ecd4b8"
+    },
+    {
+      "claim_id": "4288e7b8-d004-41b7-a0ec-bb253c58b107",
+      "result_id": "9c6b49c8-e9e3-4fee-af0d-2eada6ecd4b8"
+    },
+    {
+      "claim_id": "d16b384f-16d6-41ed-b6ac-f5584755f582",
+      "result_id": "f6716488-bb5f-40cd-80c2-65f8994c30b0"
+    },
+    {
+      "claim_id": "db446e1c-87d1-4a93-8020-6755d60806a2",
+      "result_id": "f6716488-bb5f-40cd-80c2-65f8994c30b0"
+    },
+    {
+      "claim_id": "075bbc2c-2421-41b4-a918-a0f3368446c0",
+      "result_id": "f6716488-bb5f-40cd-80c2-65f8994c30b0"
+    },
+    {
+      "claim_id": "0c61a4af-6f8b-462b-99f9-10e8dc9b7105",
+      "result_id": "f6716488-bb5f-40cd-80c2-65f8994c30b0"
+    },
+    {
+      "claim_id": "65dd4883-bd43-4011-994c-db6f5453d617",
+      "result_id": "7a6c71ad-a8ad-4c3b-b716-2623f82792e3"
+    },
+    {
+      "claim_id": "87baf832-5bbb-41cc-9db1-d92d65bc94c5",
+      "result_id": "6aeb9d1c-5d09-47e0-a012-7c3e922d403a"
+    },
+    {
+      "claim_id": "9852d645-18b1-47bb-bbf7-534a58e3d457",
+      "result_id": "2e86886a-f861-4a83-86e2-4a8f64ea7327"
+    },
+    {
+      "claim_id": "717a1f80-c3ae-4780-9413-8572e2aa965e",
+      "result_id": "2e86886a-f861-4a83-86e2-4a8f64ea7327"
+    },
+    {
+      "claim_id": "d456561a-3925-4bef-97db-db4bc933497f",
+      "result_id": "2e86886a-f861-4a83-86e2-4a8f64ea7327"
+    },
+    {
+      "claim_id": "5276ada5-3f1b-4844-8457-6e55f7503f07",
+      "result_id": "2e86886a-f861-4a83-86e2-4a8f64ea7327"
+    },
+    {
+      "claim_id": "180f926b-fa7f-4082-9ef4-b97ce0c17d23",
+      "result_id": "481905f8-9b50-46b5-9aeb-6db1be1134e4"
+    },
+    {
+      "claim_id": "07a7a399-f726-42b4-b79c-0be5a01e11b8",
+      "result_id": "1e01186f-cfc0-4aa0-9baf-616b8b091b21"
+    },
+    {
+      "claim_id": "d88c2a79-43d6-4ea2-9fd8-28c700d17ea5",
+      "result_id": "1e01186f-cfc0-4aa0-9baf-616b8b091b21"
+    },
+    {
+      "claim_id": "b3004b07-c135-4274-84bf-1a43215ecc66",
+      "result_id": "1e01186f-cfc0-4aa0-9baf-616b8b091b21"
+    },
+    {
+      "claim_id": "b3a8d74b-7d47-4a39-8e00-f0a593651154",
+      "result_id": "1e01186f-cfc0-4aa0-9baf-616b8b091b21"
+    },
+    {
+      "claim_id": "53f00164-db05-4de7-b939-4de26dcc750e",
+      "result_id": "1e01186f-cfc0-4aa0-9baf-616b8b091b21"
+    },
+    {
+      "claim_id": "541850f6-19ba-429b-a921-688e272d81c0",
+      "result_id": "d7090bef-a6f6-4c92-860a-5bf27faa688e"
+    },
+    {
+      "claim_id": "46ad4158-bc5c-47eb-af3e-aff6caa929d7",
+      "result_id": "d7090bef-a6f6-4c92-860a-5bf27faa688e"
+    },
+    {
+      "claim_id": "7446c7b1-2139-4100-a6b1-f341e4a5a1ed",
+      "result_id": "d7090bef-a6f6-4c92-860a-5bf27faa688e"
+    },
+    {
+      "claim_id": "9a7d85b4-db61-4b72-a4bb-3bb564d80905",
+      "result_id": "d7090bef-a6f6-4c92-860a-5bf27faa688e"
+    }
+  ],
+  "comparisons": []
+}

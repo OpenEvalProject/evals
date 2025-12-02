@@ -1,0 +1,248 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C23",
+      "C24",
+      "C93"
+    ],
+    "result": "The authors identified a GT-A common core consisting of 231 aligned positions defined by eight \u03b2 sheets and six \u03b1 helices through analysis of over 600,000 GT-A fold sequences. This core contains 20 conserved residues including catalytic motifs (DxD, xED) and 14 hydrophobic residues that connect the catalytic site to the Rossmann fold.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C15-C20, C23-C24, and C93 collectively provide strong computational and structural evidence for the GT-A common core. The analysis of >600,000 sequences (C93), identification of 231 aligned positions (C15), structural characterization (C16), and conservation analysis (C17-C20, C23-C24) converge to support this result. The methodology is clearly described and the structural mapping to representative proteins validates the findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "Three hypervariable regions (HVs) extending from the common core contribute to GT-A diversity and acceptor specificity. These HVs contain family-specific residues that form unique binding pockets for different acceptor substrates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C25-C28 establish the existence and location of three HVs through sequence alignment analysis. Claims C62-C64 provide specific structural examples showing how HV residues contribute to acceptor specificity in different GT families (GT7, GT16, GT64), supported by structural data in Figure 5. The combination of computational identification and structural validation strongly supports this result.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C36",
+      "C39",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "The authors generated a phylogenetic framework classifying GT-A sequences into 53 major families/subfamilies organized into 9 clades, revealing evolutionary relationships and functional groupings. Fifteen GT-A families are found in both prokaryotes and eukaryotes, suggesting ancient divergence predating the prokaryote-eukaryote split.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C34 describe the classification methodology (BPPS) and resulting phylogenetic organization, supported by Figure 3 and bootstrap analysis. Claims C36, C39, C41 provide specific examples of functionally related families clustering together. Claims C42-C43 address taxonomic distribution. The phylogenetic tree is supported by orthogonal methods (Figure 3\u2014figure supplement 3) and bootstrap values, though some nodes have low support as acknowledged by the authors.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C53",
+      "C85",
+      "C86"
+    ],
+    "result": "Inverting and retaining catalytic mechanisms emerged independently multiple times during GT-A evolution. The xED-Asp catalytic base is conserved in most inverting families but variable in retaining families, and substitutions at this position may represent transitional phases between mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C45 establish the differential conservation of xED-Asp between inverting and retaining families (supported by Figure 4A). Claims C46-C48 provide specific examples of variations. Claims C49, C53 show phylogenetic placement of mixed inverting/retaining clades. Claims C85-C86 present mechanistic interpretations. The phylogenetic dispersion of mechanisms (Figure 3) combined with conservation analysis strongly supports multiple independent origins, though the transitional phase hypothesis (C86) is more speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C5",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C72",
+      "C74"
+    ],
+    "result": "A gradient-boosted decision tree (GDBT) machine learning model predicts donor sugar specificity with ~90% accuracy (92% on validation set). The model was used to predict donor specificities for uncharacterized GT-A enzymes including human GLT8D1 (predicted glucosyltransferase) and COLGALT1/2 N-terminal domains.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C66-C67 report the model performance with specific accuracy metrics from 10-fold cross-validation and independent validation. Claim C68 describes confidence levels. Claims C69, C72, C74 provide specific predictions. The methodology is well-described with 713 training sequences, 239 features, and proper validation procedures. However, the predictions (C69, C72, C74) remain computational hypotheses requiring experimental validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "Feature importance analysis of the ML model identified key specificity-determining residues including catalytic residues (DxD, xED, G-loop, C-His) and residues in the alpha-C helix. Both direct donor-binding residues and distal residues contribute to donor specificity, with a model using only donor-binding residues achieving only 75% accuracy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C76 describe the feature importance analysis supported by Figure 7. Claims C77-C78 provide experimental validation from prior literature showing that mutations at identified positions alter donor specificity. Claim C79 demonstrates that distal residues contribute beyond direct binding through the reduced performance of the donor-binding-only model. The combination of computational feature ranking and literature validation supports the importance of both direct and indirect contributions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "Families in phylogenetic clade 2 (GT2-DPs, GT55, GT78, GT81) share structurally equivalent conserved residues in HV2 that coordinate phosphate-linked acceptors, supporting their evolutionary relationship.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C52 describe conserved acceptor-binding residues in HV2 across clade 2 families, supported by structural analysis in Figures 3\u2014figure supplement 2 and 5A. The structural equivalence of R117/R131/S135 in GT2-DP with G184/R185/T187 in GT81 provides strong evidence for convergent or conserved acceptor recognition mechanisms supporting the phylogenetic grouping.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "Each residue position within the GT-A core has been mutated during evolution, demonstrating tolerance to sequence variation. Compensatory mechanisms maintain function when conserved residues are lost, such as water molecules or alternative residues replacing the C-His for metal coordination.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C56 establishes the general principle of mutational tolerance. Claims C57-C58 provide specific examples of motif variations (DxH in GT27/GT60, loss of DxD in GT14/GT6). Claims C59-C61 demonstrate compensatory mechanisms for C-His loss through structural analysis (Figure 4B). The combination of conservation analysis and structural evidence supports the tolerance and compensation mechanisms.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "The GT-A common core represents the minimal ancestral structural unit for catalytic function, present across all kingdoms of life. GT function diversified through mutations in the core (donor specificity) and expansion of hypervariable loops (acceptor recognition).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C82 present an evolutionary model based on the structural and phylogenetic analyses. The presence of the core across all kingdoms (C80) is supported by the taxonomic distribution data. The proposed diversification model (C82) is a reasonable inference from the observed patterns of core conservation and HV variation, though it remains a hypothesis about evolutionary history rather than directly demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "Mammalian N-glycan GlcNAc branching enzymes MGAT1, MGAT2, and MGAT4 cluster in the same phylogenetic clade suggesting common origin, while MGAT3 is in a separate clade consistent with its unique bisecting function, and MGAT5 is a GT-B fold enzyme with distinct evolutionary origin.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C89 describe the phylogenetic placement of MGAT enzymes supported by Figure 3. The clustering of MGAT1/2/4 versus separate placement of MGAT3 is consistent with their functional differences (C88 supported by citation to Ikeda et al., 2014). The distinct fold of MGAT5 (C89) is established knowledge. This provides a coherent evolutionary framework for the MGAT family.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "COSMC (C1GALT1C1) shares high sequence similarity with T-synthase (C1GALT1) but has lost catalytic motifs (DxD, xED) and functions as a chaperone rather than an enzyme, representing an example of GT-A fold repurposing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90-C92 describe the COSMC-T-synthase relationship based on established knowledge (C90-C91) and citation to Aryal et al., 2012 (C92). This example illustrates GT-A fold functional diversification beyond catalysis, though it is primarily a literature-based observation rather than a novel finding from this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C1",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C83",
+      "C84",
+      "C94"
+    ],
+    "result": "Background claims establishing GT prevalence, structural features, and catalytic mechanisms based on prior knowledge and literature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C1, C6-C14, C83-C84, C94) provide established background information about GTs supported by citations and general knowledge. They set the context for the study but do not represent novel findings. The claims are well-supported by the cited literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C35",
+      "C37",
+      "C38",
+      "C54",
+      "C55",
+      "C70",
+      "C71",
+      "C73"
+    ],
+    "result": "Literature-based claims about specific GT family functions and structural features cited from prior work.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C21-C22, C35, C37-C38, C54-C55, C70-C71, C73) cite prior literature to support specific functional and structural observations about various GT families. They are appropriately cited and provide context for the current analysis, though they represent prior knowledge rather than novel findings from this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C40"
+    ],
+    "result": "LARGE1 and LARGE2 are multi-domain enzymes with two tandem GT-A domains.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C40 states established structural knowledge about LARGE proteins. This is well-documented in the literature and provides context for the phylogenetic placement analysis (C41).",
+    "result_type": "MINOR"
+  }
+]

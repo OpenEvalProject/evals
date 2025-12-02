@@ -1,0 +1,201 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C58",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "BMP/SMAD1 signaling is stable while ACTIVIN/SMAD2 signaling is transient (adaptive), with SMAD4 following the dynamics of the receptor-associated SMADs. The SMAD1 response to BMP4 is stable over 12 hours and dose-dependent, while SMAD2 shows a transient pulse of nuclear translocation (1-2 hours) followed by gradual decrease, with an elevated baseline that does not return to pre-stimulus levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C17 and C58 are well-supported by live imaging data from CRISPR/Cas9-engineered reporter lines (Figures 2-3), validated by immunofluorescence and western blotting (C14, C81). The reporter lines are validated by prior work (C80, C82, C83) and show consistent behavior across micropatterned colonies and single cells. The transient SMAD2 response is not due to ligand depletion (C15). The dose-response characteristics are well-documented (C84, C85).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "ACTIVIN induces transient mesendodermal gene expression that is not maintained, with cells returning to pluripotency. RNA-seq analysis identified 3,529 differentially expressed genes in three groups: transiently expressed mesendoderm genes (2,956 genes peaking at 2.5h), stably induced pluripotency genes (452 genes), and downregulated genes (121 genes). The transiently expressed group shows enrichment for mesendoderm transcription factor binding sites and endodermal genes from mouse embryos.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C26 are supported by comprehensive RNA-seq analysis with appropriate time-course sampling (Figure 4A). The clustering analysis identifies distinct temporal patterns, and motif enrichment analysis (C24) and comparison to mouse embryo data (C25) provide independent validation of the mesendodermal identity of transiently expressed genes. The conclusion that cells transiently activate differentiation but return to pluripotency (C22, C26) is a reasonable inference from the combined SMAD2 dynamics and transcriptional data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C40",
+      "C42",
+      "C62"
+    ],
+    "result": "SMAD3 is dispensable for both pluripotency maintenance and the transcriptional response to ACTIVIN in hESCs, as well as for ACTIVIN-dependent mesendoderm induction following WNT priming. SMAD3 knockout cells maintain pluripotency markers and show identical transcriptional responses to ACTIVIN as parental cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C31, C40, C42, and C62 are supported by CRISPR/Cas9-mediated SMAD3 knockout experiments using two independent sgRNAs (Figure 4\u2014figure supplement 2). The knockout cells maintain pluripotency markers (C29) and show identical transcriptional responses to ACTIVIN for both pluripotency and mesendoderm genes (C30). The findings are consistent with prior mouse studies (C27, C28) and extend to WNT-primed differentiation (C40, C42). The caveat about possible SMAD2/SMAD3 redundancy is appropriately noted (C31).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "The elevated SMAD2 baseline following transient response is ligand-dependent and required for maintaining pluripotency. Inhibition of SMAD2/3 signaling with SB431542 reduces SMAD2 to unstimulated levels and causes loss of pluripotency markers. Pluripotency is maintained at ACTIVIN concentrations from 1-100 ng/mL but is lost with SB treatment, demonstrating insensitivity to graded ACTIVIN levels above a threshold.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C37 are supported by experiments using the SMAD2/3 inhibitor SB431542 in both reporter and parental cell lines (Figure 5). The data show that SB treatment 8 hours after ACTIVIN stimulation reduces SMAD2 levels (C32) and eliminates NANOG expression (C33), supporting the conclusion that the elevated baseline maintains pluripotency (C34). The dose-response experiments (C35, C36) demonstrate similar pluripotency marker expression at 1-100 ng/mL ACTIVIN but loss with SB treatment, validated across multiple experiments and cell lines using KS distance analysis (Figure 5E-F).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C41",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C60",
+      "C63",
+      "C66",
+      "C67",
+      "C74",
+      "C77"
+    ],
+    "result": "WNT priming establishes a cellular memory that is required for ACTIVIN to function as a morphogen and induce stable mesendoderm differentiation. WNT alone does not induce differentiation, but pre-exposure to WNT enables dose-dependent mesendoderm induction by ACTIVIN without changing SMAD2 dynamics. This memory is mediated by \u03b2-catenin (blocked by endo-IWR-1) but does not require ongoing WNT secretion (not blocked by IWP-2).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C51, C60, C63, C66, C67, C74, and C77 describe the central finding of WNT memory and are supported by sequential treatment experiments (Figures 6-7). WNT alone maintains pluripotency (C38, C67), but WNT priming followed by ACTIVIN induces dose-dependent mesendoderm differentiation (C39, C41). The memory mechanism is supported by: (1) \u03b2-catenin requirement shown by endo-IWR-1 blocking differentiation (C43), (2) lack of requirement for ongoing WNT secretion shown by IWP-2 not blocking differentiation (C44, C45), (3) unchanged SMAD2 dynamics with WNT priming (C47), and (4) stabilized mesendoderm transcription (C48). The requirement for ongoing SMAD2 signaling is shown by SB treatment experiments (C49, C50). The data are validated across multiple cell lines and replicates.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8"
+    ],
+    "result": "ACTIVIN alone does not induce differentiation in micropatterned colonies after 48 hours, despite detectable SMAD2/3 nuclear translocation at the colony border after 1 hour. SMAD2/3 signaling is necessary but not sufficient for mesendoderm induction in human gastruloids.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C8 are supported by immunofluorescence data from micropatterned colonies (Figure 1B-D). The lack of differentiation markers (C6) despite SMAD2/3 activation (C7) provides direct evidence that SMAD2/3 signaling alone is insufficient for differentiation (C8). This conclusion is consistent with the requirement for WNT priming demonstrated in later experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C9",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C65",
+      "C86",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "The manuscript reviews established knowledge about SMAD2/3 signaling in pluripotency and development, including its requirement for hESC pluripotency maintenance, its role as a morphogen in vertebrate development, and its necessity for gastruloid self-organization downstream of BMP4 and WNT3A.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C5, C9, C52-C57, C65, C86-C89 are background claims supported by appropriate citations to published literature. These establish the context for the current work and are not primary findings of this manuscript. The citations appear appropriate for the claims made.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C75",
+      "C76"
+    ],
+    "result": "Re-evaluation of prior literature reveals that in all experimental settings where ACTIVIN/NODAL morphogen activity was demonstrated, cells had been exposed to WNT signaling. In Xenopus animal caps, maternal WNT influence occurs before ACTIVIN presentation, and dorsal/ventral regions respond differently to ACTIVIN. In mouse embryos, WNT expression precedes NODAL signaling during primitive streak formation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C73, C75-C76 represent a re-interpretation of published literature in light of the current findings. The claims are supported by appropriate citations and draw on established knowledge about Xenopus and mouse development. The argument that prior WNT exposure may explain ACTIVIN morphogen activity in these systems is a reasonable inference, though it remains somewhat speculative as it reinterprets data not originally designed to test this hypothesis. The claims are appropriately presented as a re-evaluation rather than definitive proof.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C59",
+      "C61"
+    ],
+    "result": "A transient signaling response (SMAD2) is compatible with stable cell fate changes when cells are appropriately primed, as demonstrated by WNT priming enabling ACTIVIN-induced differentiation despite unchanged SMAD2 dynamics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59 and C61 summarize key findings supported by the combined data on SMAD2 dynamics and WNT priming effects. The conclusion is supported by direct experimental evidence (C47, C48) and is consistent with prior work in other systems (citation to Sorre et al., 2014).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C64",
+      "C68"
+    ],
+    "result": "The WNT memory mechanism may involve epigenetic modifications similar to \u03b2-catenin recruitment of PrMT2 in Xenopus, and may represent a broadly conserved aspect of animal development as suggested by similar phenomena in Drosophila.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C64 and C68 are explicitly speculative (\"tempting to speculate,\" \"may be\") and supported only by citations to work in other organisms. While the speculation is reasonable given the \u03b2-catenin requirement demonstrated in this study, no direct evidence for epigenetic mechanisms or evolutionary conservation is provided in the current work. These remain hypotheses for future investigation.",
+    "result_type": "MINOR"
+  }
+]

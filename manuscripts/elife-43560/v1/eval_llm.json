@@ -1,0 +1,209 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "Inferior olive neurons exhibit two distinct populations of spontaneous subthreshold events: fast events with high amplitude (average 7.5\u00b13.1 mV) and fast kinetics (rise time 1.4\u00b10.4 ms, duration 4.2\u00b11.3 ms), and slow events with low amplitude (average 1.17\u00b10.3 mV) and slow kinetics (rise time 2.5\u00b10.6 ms, duration 12.7\u00b13.9 ms). These two event types are unlikely to arise from different dendritic locations based on cable theory predictions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13-C21 provide comprehensive experimental characterization of two event populations from 63-253 neurons with consistent measurements across multiple parameters. The analysis using cable theory (C18) and population-level statistics (C19-C20) strongly support the existence of two distinct event types. The data are internally consistent and appropriately analyzed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "Fast and slow events respond differently to membrane potential manipulation: slow events are unaffected by DC current injection in shape, amplitude, duration, and frequency, while fast events show increased duration and frequency (up to 5-fold) with depolarization. Excitatory synaptic blockers (DNQX/APV) completely eliminate fast events, suggesting they represent intrinsic regenerative responses triggered by excitatory synaptic input.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C30 demonstrate differential voltage-dependence between event types through systematic DC current injection experiments (n=16 neurons) with appropriate statistical analysis. The pharmacological evidence (C29, n=5 cells) combined with voltage-independence of amplitude (C24, C28) provides strong support for the mechanistic interpretation. However, the sample size for pharmacology is relatively small.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "Slow events (spikelets) represent post-junctional responses to action potentials in electrically coupled neurons. Paired recordings (n=30) show that action potentials in one neuron produce depolarizing events in the coupled neuron with parameters matching spontaneous slow events (amplitude 0.61\u00b10.35 mV, rise time 2.61\u00b11.09 ms, duration 14.31\u00b16.72 ms). These events differ significantly from chemical synaptic potentials and are reduced in frequency but not shape by synaptic blockers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C38 provide strong evidence through paired recordings that slow events represent electrical coupling. The comparison with chemical synaptic potentials (C35, p<0.002, n=17 cells) and pharmacological dissection (C37) are well-controlled. The interpretation that synaptic blockers reduce spikelet frequency by reducing presynaptic spiking (rather than blocking spikelets directly) is logical and supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "Spikelets are correlated with subthreshold oscillations in inferior olive neurons. In oscillating neurons (~50% of cells), spikelets occur at oscillation peaks with inter-spikelet intervals matching the autocorrelation function of oscillations, while non-oscillating neurons show Poisson-like spikelet distributions. The coupling coefficient correlates significantly with spike coupling coefficient (R\u00b2=0.614, p<0.0001).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C44 demonstrate the relationship between oscillations and electrical coupling through multiple complementary analyses. The autocorrelation analysis (C42) provides quantitative support, and the contrast with non-oscillating neurons (C43, n=70) strengthens the conclusion. The correlation between coupling measures (C39) validates the electrical coupling interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "Common spikelets occurring simultaneously in paired recordings indicate shared electrical coupling to additional neurons. Analysis of 30 paired recordings shows 60% of pairs had common spikelets (0.02-1.1 Hz, representing 3.5-66% of total spikelets), enabling estimation that each neuron connects to 3-40 other neurons (average 19.2\u00b110.3).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C49 present a novel analytical approach to estimate network connectivity from common spikelets. The logic is sound: common spikelets represent action potentials in neurons coupled to both recorded cells. However, C49 appropriately acknowledges that slice preparation likely causes underestimation and variability. The wide range (3-40) reflects experimental limitations but the mean estimate appears robust.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C50"
+    ],
+    "result": "Computational modeling validates that the common spikelet approach provides a reliable estimate of the mean number of connected cells, with accuracy less sensitive to recording duration and firing rate variability than individual cell estimates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C50 is supported by computational simulations shown in Figures 5D-F. The modeling demonstrates that while individual estimates vary with firing rate variability and recording duration, the mean estimate is robust. This validation strengthens confidence in the experimental estimates, though the claim acknowledges limitations for individual cell estimates.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "The inferior olive network is organized into clusters rather than following simple distance-dependent connectivity. The distribution of common spikelet groups (0-7, with peak at 2-4 groups) is reproduced by clustered network models (p=0.13 for distribution, p=0.96 for distance-dependence) but not by distance-dependent models (p<0.002), indicating higher connection probability within clusters than between clusters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C54 use computational modeling to test network organization hypotheses against experimental data. The statistical comparisons (Fisher's Exact test, multiple model variants tested in Figure 7) are rigorous. The conclusion that simple distance-dependence is insufficient while clustered organization fits the data is well-supported. However, the exact cluster parameters cannot be determined from current data, as appropriately acknowledged.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "The study demonstrates that inferior olive neurons exhibit two types of unitary events (spikelets representing coupled neuron activity and fast events representing intrinsic responses), with each neuron connected to ~20 others in a clustered network organization where within-cluster connection probability exceeds between-cluster probability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C59 summarize the main findings, which are well-supported by the comprehensive experimental and computational evidence presented in earlier claim groups. These summary claims accurately reflect the supported conclusions from the detailed analyses. The integration of electrophysiology, pharmacology, paired recordings, and computational modeling provides strong converging evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "The study provides the first physiological evidence supporting clustered organization of the inferior olive, confirming that oscillations are a network phenomenon where synchronous oscillation of the entire network generates spikelets at oscillation peaks in recorded cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C62 place the findings in context of prior work. C60 is supported by citations to established literature. C61 is a logical inference from the correlation between oscillations and spikelets (supported by C40-C44). C62 appropriately claims novelty as the first physiological study supporting clustered organization, though acknowledging limitations in defining exact cluster parameters.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C63",
+      "C64"
+    ],
+    "result": "The spikelet analysis approach should be broadly applicable to other electrically coupled networks in the central nervous system, as spontaneous spikelets are commonly observed in paired recordings from such networks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C63-C64 propose broader applicability of the method but provide only general knowledge (C64) and speculation (C63) without experimental validation in other systems. While the logic is reasonable and examples from other systems are cited, actual demonstration of applicability would require additional experiments. This represents a reasonable hypothesis for future work rather than a demonstrated result.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12"
+    ],
+    "result": "Background claims establish that electrically coupled networks are widespread in the CNS, exhibit synchronized rhythmic activity correlated with higher brain functions, and that the inferior olive network specifically generates synchronous activity through subthreshold oscillations. Prior morphological and dye-coupling studies suggest clustered organization with ~10 coupled neurons per cell, while imaging studies suggest larger ensembles of hundreds of neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C12 are background claims supported by appropriate citations to prior literature. These establish the context and motivation for the current study. The apparent discrepancy between anatomical estimates (~10 connections, C11) and physiological estimates (hundreds, C12) motivates the current investigation. The citations appear appropriate and the claims accurately represent prior work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "Methods description including ethical approval, mouse strains, slice preparation, recording techniques, analysis procedures, neuron reconstruction, and computational modeling approaches.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C75 describe experimental and computational methods. These are standard methodological descriptions that appear appropriate and sufficiently detailed. Ethical approval is documented (C65), mouse strains are specified (C66), recording parameters are defined (C67-C71), and modeling approaches are described (C72-C75). The methods appear sound and reproducible.",
+    "result_type": "MINOR"
+  }
+]

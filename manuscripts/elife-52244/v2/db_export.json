@@ -1,0 +1,2173 @@
+{
+  "submission": {
+    "id": "2f4febbb-1f4d-4573-b3cc-2b0f22a8722f",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T14:29:19.788894Z",
+    "updated_at": "2025-12-02T14:29:19.788894Z"
+  },
+  "content": [
+    {
+      "id": "7a40cc6f-507d-4211-a2cd-9050a84c0275",
+      "submission_id": "2f4febbb-1f4d-4573-b3cc-2b0f22a8722f",
+      "content_type": "manuscript",
+      "content_text": "# State-dependent brainstem ensemble dynamics and their interactions with hippocampus across sleep states\n\n## Authors\n\n- Tomomi Tsunematsu<sup>1</sup>\n- Amisha A Patel<sup>1</sup>\n- Arno Onken<sup>5</sup> ([ORCID: 0000-0001-7387-5535](https://orcid.org/0000-0001-7387-5535))\n- Shuzo Sakata<sup>1</sup> ([ORCID: 0000-0001-6796-411X](https://orcid.org/0000-0001-6796-411X)) \u2020\n\n### Affiliations\n\n1. Strathclyde Institute of Pharmacy and Biomedical Sciences University of Strathclyde Glasgow United Kingdom\n2. Super-Network Brain Physiology, Graduate School of Life Sciences Tohoku University Sendai Japan\n3. Frontier Research Institute for Interdisciplinary Sciences Tohoku University Sendai Japan\n4. Precursory Research for Embryonic Science and Technology Japan Science and Technology Agency Kawaguchi Japan\n5. School of Informatics University of Edinburgh Edinburgh United Kingdom\n\n\u2020 Corresponding author\n\n## Abstract\n\nThe brainstem plays a crucial role in sleep-wake regulation. However, the ensemble dynamics underlying sleep regulation remain poorly understood. Here, we show slow, state-predictive brainstem ensemble dynamics and state-dependent interactions between the brainstem and the hippocampus in mice. On a timescale of seconds to minutes, brainstem populations can predict pupil dilation and vigilance states and exhibit longer prediction power than hippocampal CA1 neurons. On a timescale of sub-seconds, pontine waves (P-waves) are accompanied by synchronous firing of brainstem neurons during both rapid eye movement (REM) and non-REM (NREM) sleep. Crucially, P-waves functionally interact with CA1 activity in a state-dependent manner: during NREM sleep, hippocampal sharp wave-ripples (SWRs) precede P-waves. On the other hand, P-waves during REM sleep are phase-locked with ongoing theta oscillations and are followed by burst firing of CA1 neurons. This state-dependent global coordination between the brainstem and hippocampus implicates distinct functional roles of sleep.\n\n## Introduction\n\nThe sleep-wake cycle is a fundamental homeostatic process across animal species (Siegel, 2005; Anafi et al., 2019; Aulsebrook et al., 2016). In addition to the physiological functions of sleep (Boyce et al., 2017; Brown et al., 2012; Sara, 2017; Siegel, 2005; Stickgold et al., 2001; Imeri and Opp, 2009; Liu and Dan, 2019; Rasch and Born, 2013; Tononi and Cirelli, 2014), the abnormalities in the sleep-wake cycle are associated with various diseases and disorders (Mander et al., 2017; Musiek and Holtzman, 2016; Irwin, 2015; Brown et al., 2012).\n\nSleep states are typically classified into two major states, non-rapid eye movement (NREM) sleep and REM sleep. While numerous brain regions and cell-types have been identified as part of sleep-regulating circuits (Brown et al., 2012; H\u00e9ric\u00e9 et al., 2019; Jouvet, 1962; Moruzzi, 1963; Peever and Fuller, 2017; Scammell et al., 2017; Weber and Dan, 2016; Luppi et al., 2017; Adamantidis et al., 2007; Tsunematsu et al., 2014; Weber et al., 2015; Zhang et al., 2019), sleep-related neural firing and oscillations have also been described across cortical and subcortical regions (McCarley and Hobson, 1971; Hobson et al., 1975; Sakai, 1985; Steriade, 2006; Brown et al., 2012; Rasch and Born, 2013; Buzs\u00e1ki, 2015; Weber et al., 2015; Scammell et al., 2017; Weber et al., 2018; H\u00e9ric\u00e9 et al., 2019; Liu and Dan, 2019). For example, cortical slow oscillations, sleep spindles and hippocampal sharp wave-ripples (SWRs) are prominent neural events during NREM sleep, whereas theta oscillations and ponto-geniculo-occipital (PGO) or pontine (P) waves are seen during REM sleep (Steriade, 2006; Montgomery et al., 2008; Buzs\u00e1ki, 2015; Buzs\u00e1ki, 2002; Jouvet, 1969; Steriade et al., 1993b; Callaway et al., 1987; Datta, 1997; Rasch and Born, 2013; Bizzi and Brooks, 1963). Although neural ensemble dynamics underlying these sleep-related neural events in the thalamus and the cortex including the hippocampus have been well described (Steriade, 2006; Buzs\u00e1ki, 2015; Buzs\u00e1ki, 2002; Steriade et al., 1993a), little is known about population activity within the brainstem. To\u00a0achieve a better understanding of the\u00a0functional roles of sleep states, it is essential to characterize state-dependent changes in brainstem network activity and their functional interactions with cortical regions across sleep states.\n\nThe brainstem, including the midbrain, pons and medulla has long been implicated in the sleep-wake cycle (Jouvet, 1962; Saper et al., 2010; Brown et al., 2012; Rasch and Born, 2013; Weber et al., 2015; Weber and Dan, 2016; Luppi et al., 2017; Scammell et al., 2017; H\u00e9ric\u00e9 et al., 2019; Liu and Dan, 2019). It contains various nuclei, each of which consists of diverse cell-types and exhibits state-dependent firing (Brown et al., 2012; Rasch and Born, 2013; Weber et al., 2015; Weber and Dan, 2016; Luppi et al., 2017; Scammell et al., 2017; H\u00e9ric\u00e9 et al., 2019; Liu and Dan, 2019; Weber et al., 2018; Zhang et al., 2019). However, how brainstem populations act in concert is a question that remains poorly explored. For example, the\u00a0extent to\u00a0which\u00a0their activity exhibits anticipatory dynamics for ongoing vigilant states is still unclear. In addition, it is also unclear whether and how brainstem populations functionally interact with various neural oscillations or events in the cortex across sleep states. Characterizing these physiological properties is crucial to uncover the roles of brainstem populations in sleep regulation and ultimately in\u00a0the functions of sleep states.\n\nIn the present study, we adopt several in vivo electrophysiological approaches in mice to investigate state-dependent ensemble dynamics in the brainstem, mainly the pons. We show that, on a timescale of seconds to minutes, brainstem neurons show state-dependent firing with cell type-specificity. They also have a longer predictive power for vigilance states than\u00a0hippocampal\u00a0CA1\u00a0neurons. On a timescale of sub-seconds, we find state-dependent functional interactions between the brainstem and the hippocampus, with a focus on P-waves. During NREM sleep, the timing of P-waves is phase-locked with various cortical oscillations\u00a0and hippocampal SWRs precede P-waves. During REM sleep, P-waves co-occur with hippocampal theta oscillations and precede burst firing of hippocampal neurons. These results imply that brainstem populations not only play a regulatory role in the sleep-wake cycle, but also contribute to global state-dependent dynamics across brain regions.\n\n## Results\n\n### Brainstem population recording across sleep-wake cycles\n\nTo investigate the state-dependency of brainstem population activity, we inserted a silicon probe into the mouse brainstem in a head-fixed condition, and\u00a0performed simultaneous monitoring of cortical electroencephalograms (EEGs), electromyograms (EMGs) and pupil dilation (Figure 1). Recorded regions spanned across multiple nuclei, including the sublaterodorsal nucleus, pontine reticular nucleus, medial preoptic nucleus, parabrachial nucleus, pontine central gray, laterodorsal tegmental nucleus and other surrounding areas according to post-mortem histological analysis (Figure 1\u2014figure supplement 1). Although a majority of neurons were recorded from the pons, we refer to recorded populations as \u2018brainstem\u2019 neurons because some cells were located in the midbrain and medulla, but not the hypothalamus.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/52244/elife-52244-fig1-v2.jpg)\n\n**Figure 1.:** (A) A diagram of the experimental approach, showing the insertion of a silicon probe for extracellular recording in the brainstem and a screw for cortical EEG recording. Pupil dilation and EMGs were also monitored in a head-fixed condition. (B) An example of multiple electrophysiological readings across three behavioral states, including local field potentials (LFPs) in the brainstem (locally subtracted LFP signals), brainstem single unit activities (SUAs), cortical electroencephalograms (EEGs), electromyograms (EMGs) and normalized pupil diameter. REM, rapid eye movement sleep; NREM, non-REM sleep; AW, wakefulness. (C,\u00a0E) Power spectrum density of cortical EEGs (C) and brainstem LFPs (E) across three behavioral states. Spectra were computed during every 4 s window. Errors indicate SEM. (D,\u00a0F) Distribution of EMG signals (root mean square) (D) and normalized pupil diameter (F) across three behavioral states. Pupil diameter was normalized as z-score.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/52244/elife-52244-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) A sagittal section showing the track of a silicon probe. (B) The number of neurons recorded from brainstem nuclei in this study. MV, medial vestibular nucleus; SUV, superior vestibular nucleus; CUN, cuneiform nucleus; MRN, midbrain reticular nucleus; PAG, periaqueductal gray; PPN, pedunculopontine nucleus; RR, retrorubral area; LC, locus ceruleus; LDT, laterodorsal tegmental nucleus; PB, parabrachial nucleus; PCG, pontine central gray; PRNc, pontine reticular nucleus, caudal part; PRNr, pontine reticular nucleus, rostral part; SLD, sublaterodorsal nucleus; arb, arbor vitae; scp, superior cerebellar peduncles; VIIn, facial nerve; CENT2gr, lobule II, granular layer; CENT2mo,\u00a0lobule II, molecular layer.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/52244/elife-52244-fig1-figsupp2-v2.jpg)\n\n**Figure 1\u2014figure supplement 2.:** The\u00a0spectrum was computed in every 4 s window in each state.\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/52244/elife-52244-fig1-figsupp3-v2.jpg)\n\n**Figure 1\u2014figure supplement 3.:** (A) The total duration of recording was significantly different (t-test). (B) The fraction of NREM sleep and awake (AW) states were significantly different. (C) The average duration of NREM sleep and AW states were significantly different. (D) There was no significant difference in state transition probabilities. (E) EEG spectral power was not significantly different between conditions across states. (F) The root-mean-square (rms) of EMGs during\u00a0the AW state was significantly different.\n\nThe sleep-wake cycle was classified on the basis of cortical EEGs and EMGs in every 4-s\u00a0window. On the basis of the classified states, we observed clear state-dependency across measurements (Figure 1C\u2013F): wakefulness was characterized by high muscle tone (Figure 1D) and pupil dilation (Figure 1F), whereas NREM sleep was characterized by higher power of slow oscillations (Figure 1C) and a wider dynamic range of pupil diameter (Figure 1F). REM sleep was distinct from the other states, with respect to prominent theta oscillations (Figure 1C), low muscle tone (Figure 1D), higher brainstem LFPs power (Figure 1E) and fully constricted pupil (Figure 1F). The higher power of brainstem LFPs during REM sleep was preserved across all animals (seven animals, nine recordings) (Figure 1\u2014figure supplement 2). Although most of our recordings were performed under a head-fixed condition, the sleep architecture, cortical EEGs and EMGs were generally comparable with those in a tethered unfixed condition (Figure 1\u2014figure supplement 3).\n\nNeuronal spiking activity in the brainstem also demonstrated rich state-dependent properties (Figure 1B). For example, a subset of neurons fired exclusively during REM sleep, indicating state-dependent population firing on a timescale of second-to-minute. In addition, we also observed frequent burst firing across neurons on a sub-second timescale during REM sleep. In the following analysis, we investigate state-dependent brainstem neural ensembles on two distinct timescales: a long timescale of seconds to minutes (Figures 2\u20134) and a sub-second timescale (Figures 5\u20137).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/52244/elife-52244-fig2-v2.jpg)\n\n**Figure 2.:** (A) A diagram of the experimental approach, showing a silicon probe and a cortical EEG electrode. (B) Four examples of simultaneously recorded neurons. (C) Classification of functional classes. Firing rates across the three behavioral states were normalized as z-score for individual cells and hierarchical clustering was then applied. (D) A diagram of the experimental approach for fiber photometry-based Ca2+ imaging from pontine cholinergic neural populations in a freely behaving condition. (E) An example of fluorescent signals across sleep-wake cycles. Fluorescent signals (470 nm) were normalized by off-peak (405 nm) signals. Red, wakefulness; blue, NREM sleep; green, REM sleep. (F) Distributions of fluorescent signals across the three behavioral states. (G) Group statistics of average fluorescent signals from 12 recordings from four mice (F2,32 = 5.12, p=0.012, one-way ANOVA). *, p<0.05 with post-hoc Tukey\u2019s honest significant difference criterion.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/52244/elife-52244-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) A Nissl-stained sagittal section with DiI-labeled probe tracks (see also Figure 1\u2014figure supplement 1A). Right, an enlarged image with an\u00a0overlay\u00a0of an estimated probe track and channel positions. Average waveforms of a LDT neuron (based on randomly picked 1000 spikes) were also overlaid. LDT, laterodorsal tegmental nucleus. (B) State-dependent firing of the LDT neuron shown in (A). The histograms were smoothed with a 1 s Gaussian kernel. (C) A summary of all neurons recorded from PPT and LDT. Firing rates across three behavioral states were normalized as z-score. All neurons were classified as either REM-on, AW-on or REM/AW-on neurons. The LDT neuron in (A) and (B) is the top one in this plot.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/52244/elife-52244-fig3-v2.jpg)\n\n**Figure 3.:** (A) Mean normalized (z-scored) pupil diameter across the sleep-wake cycle (n\u00a0=\u00a018, F2, 53 = 220.33, p<0.0001. one-way ANOVA). ***, p<0.0001, with post-hoc Tukey\u2019s honest significant difference criterion. (B) Pupil dilation during sleep-wake state transitions (n\u00a0=\u00a018). (C) Linear regression analysis to predict pupil diameter with individual neuronal activity. (Top) Normalized (z-scored) cross-validated R2 values are color-coded across neurons. (Bottom) The average of normalized cross-validated R2 values. Error, SEM. (D) Multiple linear regression analysis to predict pupil diameter according\u00a0to simultaneously recorded neuronal activity. The average of normalized (z-scored) root mean square errors across datasets (n\u00a0=\u00a06). Error, SEM.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/52244/elife-52244-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) Normalized (z-scored) pupil diameter across state transitions. The duration of each state episode was normalized. Pupil diameter gradually decreased before REM sleep and stayed fully constricted during REM sleep. (B) The average of eye movement across states. The effect of states on eye movement was significant (F2,53 = 8.93, p<0.001, one-way ANOVA with post-hoc Tukey\u2019s honest significant difference criterion). **, p<0.01; ***p<0.001.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/52244/elife-52244-fig4-v2.jpg)\n\n**Figure 4.:** (A) Simultaneously recorded brainstem neurons across states and modules extracted with non-negative matrix factorization (NMF). (Top) Firing profiles of brainstem neurons. Firing rate was normalized by the maximum firing rate and the normalized values were color-coded. Dotted lines indicate state transitions. (Bottom) Average population activity (gray) and activation coefficients for each module derived by NMF. Background colors indicate behavioral states (red, AW; blue, NREM; green, REM). (B) Weights across neurons for each module. (C) Decoding of behavioral states from population activity. (Top) Decoding performance of brainstem and hippocampal CA1 neural populations for behavioral states as a function of time-shift. Error, SEM. (Bottom) Effect size as a function of time-shift.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/52244/elife-52244-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** Neurons that\u00a0have\u00a0similar state-dependent firing patterns tend to have similar weights in each module. For example, cell#4 and cell#5 fire more during REM sleep and had higher weights in module 1.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/52244/elife-52244-fig4-figsupp2-v2.jpg)\n\n**Figure 4\u2014figure supplement 2.:** The track of a silicon probe was confirmed in the CA1 region of the dorsal hippocampus.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/52244/elife-52244-fig5-v2.jpg)\n\n**Figure 5.:** (A) A diagram of the experimental approach, showing a bipolar electrode in the pons and a cortical EEG electrode. (B) Examples of P-waves during NREM (left) and REM sleep (right), showing cortical EEG and EMG traces. (C) Frequency of P-waves during NREM and REM sleep (n\u00a0=\u00a016). ***, p<0.0001, two-tailed t-test. (D) Temporal evolution of P-wave frequency. The\u00a0duration of each state episode was normalized to one. Error, SEM. (E) A diagram of the experimental approach, showing a multi-shank silicon probe in the brainstem and a\u00a0cortical EEG electrode. (F) An example of a P-wave, showing subtracted LFPs from a probe shank, and multiple single unit activity. (G,\u00a0H) Pooled peri-event time histograms of brainstem single units relative to P-wave timing during NREM (G) and REM sleep (H). Time zero is the timing of P-waves (trough time). Each peri-event time histogram is color-coded by normalizing the maximum firing rate for each cell. The order of single units was sorted by the peak timing in each state.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/52244/elife-52244-fig6-v2.jpg)\n\n**Figure 6.:** (A) A diagram of an experimental approach showing a bipolar electrode in the pons and a\u00a0cortical EEG electrode. (B) Examples of averaged event-triggered cortical EEGs and scalograms during NREM (left) and REM sleep (right). Time zero is the timing of P-waves (trough time). (C) Examples of phase-histograms. Cortical EEGs were filtered at certain frequency bands and the proportion of P-waves elicited in each phase bin was calculated. *, p<0. 01, Rayleigh test. (D) Phase modulations across frequency bands of cortical EEGs. Resultant vector length represents the mean measurement of circular spread of the phase relationship between cortical oscillations and P-waves. The effect of sleep states on resultant vector length was significant (F1,179 = 4.90, p<0.05, two-way ANOVA). *, p<0.05 (post-hoc Tukey\u2019s hones significant difference test). Error, SEM. (E) Effect size of states across frequency bands.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/52244/elife-52244-fig7-v2.jpg)\n\n**Figure 7.:** (A) A diagram of the experimental approach showing a multi-shank silicon probe in the hippocampus CA1, a bipolar electrode in the pons and a cortical EEG electrode. (B) Phase modulations across frequency bands of hippocampal LFPs (top) and effect size of states (bottom). The effect of sleep states on resultant vector length was significant (F1,79 = 4.00, p<0.05, two-way ANOVA). Error, SEM. (C) Pooled peri-event time histograms of CA1 single units relative to P-wave timing in NREM (top) and REM sleep (bottom). Time zero is the timing of P-waves (trough time). Each peri-event time histogram is color-coded by normalizing the maximum firing rate for each cell. The order of single units was sorted by the peak timing in each state. (D) Frequency of hippocampal sharp wave-ripples\u00a0(SWRs) relative to P-wave timing in NREM sleep. Time zero is the timing of P-waves (trough time). After binning at 1 ms resolution, the histogram was smoothed with a 50 ms Gaussian kernel. Inset, asymmetry index provides the normalized difference in the number of SWRs before and after P-waves in a 100 ms window. Larger positive values mean that more SWRs occurred before the\u00a0P-waves. *, p<0.05 (t-test, n\u00a0=\u00a04).\n\n### Diversity and specificity of state-dependent neural activity in the brainstem\n\nTo assess the\u00a0state-dependent firing of individual neurons in the brainstem on a timescale of seconds to minutes, we performed in vivo silicon\u00a0probe recording (Figure 2A) from seven head-fixed mice (nine recording sessions) and examined how individual neurons change their firing across behavioral states. Figure 2B shows representative examples of state-dependent firing from four simultaneously recorded neurons. Even within a particular state in the same animal, brainstem neurons show highly diverse and dynamic firing.\n\nTo classify neurons according to their state-dependent firing, we computed mean firing rate in each state across neurons (n\u00a0=\u00a076) and applied a hierarchical clustering algorithm (Figure 2C). We identified four functional classes: awake (AW)-on neurons (23.7%) were more active during wakefulness than\u00a0during sleep states;\u00a0REM-off neurons (17.1%) reduced their firing during REM sleep;\u00a0REM/AW-on neurons (6.6%) were quiet during NREM sleep;\u00a0and\u00a0the largest class (52.6%) was REM-on neurons, which showed the highest firing rate during REM sleep. Thus, we confirmed highly diverse state-dependent firing in the brainstem.\n\nBecause the recorded neurons were distributed across various nuclei in the brainstem, it was difficult to determine their state-dependency in each nucleus. However, a subset of neurons was probably recorded from the cholinergic system, namely the pedunculopontine tegmental nucleus and the laterodorsal tegmental nucleus, which showed AW-on or REM-on activity (Figure 2\u2014figure supplement 1). To verify this, we performed in vivo fiber photometry of Ca2+ signals from pontine cholinergic neurons by expressing GCaMP6s in freely behaving mice (four animals, 12 recording sessions) (Figure 2D). Consistent with the data from in vivo electrophysiology, cholinergic populations showed larger activity during REM sleep and wakefulness\u00a0than\u00a0during NREM sleep (F2,32 = 5.12, p=0.012, one-way ANOVA) (Figure 2E\u2013G). Therefore, although the\u00a0state-dependency of individual neuronal firing in the brainstem is diverse, we also confirmed state-dependent and cell-type-specific firing.\n\n### Behavioral correlates of the sleep-wake cycle and underlying neural activity in the brainstem\n\nPupil diameter is an excellent biomarker of global brain state or arousal level (Aston-Jones and Cohen, 2005; Y\u00fczge\u00e7 et al., 2018; Larsen and Waters, 2018; McGinley et al., 2015) and activity in brainstem neurons, especially in\u00a0locus coeruleus norepinephrine neurons, correlates with pupil diameter (Aston-Jones and Cohen, 2005). However, it is still unclear how pupil dilation changes around the transition of sleep-wake states and to what extent the activities of brainstem neurons as a population can predict pupil dilation quantitatively. To address these issues, we analyzed datasets from head-fixed mice either with\u00a0silicon probe recordings from the brainstem (six animals, six recording sessions) or the hippocampus (two animals, three recording sessions), or with\u00a0field potential recording from the brainstem with a bipolar electrode (six animals, nine recording sessions).\n\nAs previously reported (Y\u00fczge\u00e7 et al., 2018), head-fixed mice kept their eyes open, allowing us to monitor pupil dilation across states along with cortical EEG and EMG. The effects of behavioral states on pupil diameter was statistically significant (Figure 3A, F2, 53\u00a0=\u00a0220.33, p<0.0001, one-way ANOVA), with pupil diameter being\u00a0constricted during REM sleep and dilated during wakefulness.\n\nWith respect to pupil dilation dynamics across states (Figure 3B and Figure 3\u2014figure supplement 1), pupil diameter dynamically fluctuated during wakefulness and gradually constricted during NREM sleep. Typically, 10\u201320 s before REM sleep, the pupil diameter would further decrease and was fully constricted during REM sleep (Figure 3\u2014figure supplement 1).\n\nTaking advantage of the simultaneous recording\u00a0of\u00a0neural population\u00a0activity and pupil monitoring, we examined how brainstem neurons can predict pupil dilation. First, we predicted pupil dilation on the basis of the activity of individual neurons (Figure 3C) by applying a linear regression analysis. Because it was expected that the preceding neural activity can better predict pupil dilation, we systematically shifted the temporal relationship between spike trains and pupil diameter (see 'Materials\u00a0and\u00a0methods'). As expected, most of the neurons showed asymmetric profiles of R2 values (Figure 3C). Although individual profiles were diverse, the average profile showed brainstem neuron\u00a0activities that were predictive of pupil diameter around 10 s in advance. We also predicted pupil diameter on the basis of simultaneously recorded brainstem neurons (Figure 3D) by applying a multiple linear regression analysis. As with individual neurons, we observed an asymmetric profile of predictability. Thus, changes in brainstem neural activity preceded those in pupil diameter. Thereby, brainstem populations have predictive power for pupil diameter.\n\n### Longer predictability of brainstem ensembles for vigilance states\n\nNext, we examined whether and to what extent brainstem neurons can predict sleep-wake states. To address this, first, we extracted the\u00a0features of neural population activity by applying non-negative matrix factorization (NMF), a technique that finds compact and easily interpretable representations of neural population activity in the form of parts-based activity patterns (Lee and Seung, 1999; Onken et al., 2016) (Figure 4A and B) (see 'Materials\u00a0and\u00a0methods'). Overall firing rate reflected state changes (Figure 4A), whereas\u00a0NMF was\u00a0able\u00a0to extract several modules that captured state-dependent firing patterns across neurons in an unsupervised fashion. For example, module 1\u00a0represented REM-on activity, whereas module 2 was activated at the end of NREM sleep and module 3 was most active during wakefulness. Indeed, the weights in each module were consistent with the\u00a0state-dependency of individual neural firing (Figure 4\u2014figure supplement 1).\n\nBesides modules capturing firing patterns across neurons, NMF also yielded the\u00a0activation coefficients of these modules. We noticed that the\u00a0dynamics of these activation coefficients show predictive activity: in the case of Figure 4A, the activation coefficients of modules 1 and 2 gradually built up during REM and NREM sleep, respectively. Therefore, we hypothesized that brainstem population activity exhibits not just state-dependency, but also predictive power for behavioral states (i.e., wakefulness, NREM sleep and REM sleep). To test this, we took the activation coefficient profiles from the\u00a0three modules and classified behavioral states by training a linear classifier, with systematic time shifting (Figure 4C). Brainstem populations showed predictive activity tens of seconds before transitions into all three behavioral states.\n\nDoes this predictive activity last longer\u00a0in brainstem populations\u00a0than\u00a0in other brain regions? Of many brain regions, hippocampal neurons are well known to exhibit state-dependent firing (Buzs\u00e1ki, 2002; Buzs\u00e1ki, 2015; Mizuseki and Miyawaki, 2017), but they are\u00a0less likely to\u00a0contribute to the regulation of the sleep-wake cycle directly. Hence, hippocampal neurons could serve as a reference to assess the ability of brainstem populations to predict behavioral states. To examine whether brainstem populations exhibit predictive activity\u00a0over\u00a0a longer period\u00a0than do\u00a0hippocampal populations, we performed the same analysis for neural activity in the hippocampal CA1 (Figure 4C). Although CA1 neurons also had predictive power for several tens of seconds, the profile was relatively short-lasting compared to that of brainstem neurons. Thus, brainstem neurons have longer-lasting predictive power for behavioral states than hippocampal CA1 neurons.\n\n### Brainstem population activity underlying P-waves during NREM and REM sleep\n\nOn a timescale of seconds to minutes, brainstem neurons show diverse but specific state-dependent firing and have predictive power for pupil dilation and behavioral states. To investigate brainstem neural firing on a sub-second timescale, we focused on P-waves (Callaway et al., 1987; Datta, 1997). Although these sub-second neural events in the brainstem have long been recognized, the underlying neural ensembles and relations to other sleep-related oscillations are not fully understood.\n\nTaking advantage of our dataset, we first examined whether the mouse brainstem exhibits P-waves like those observed in other mammalian species. We implanted a bipolar electrode in the pons (n\u00a0=\u00a016 recordings) (Figure 5A) and monitored LFPs by subtracting signals. During REM sleep, we observed large-amplitude irregular neural events, which often appeared bursts (Figure 5B right). We also observed similar, but isolated, neural events during NREM sleep (Figure 5B left). These neural events appeared more often during REM sleep (p<0.0001, two-tailed t-test) (Figure 5C). Intriguingly, the frequency of these events gradually increased during NREM to REM sleep transitions and decreased during REM sleep to wakefulness transitions (Figure 5D). Because these characteristics generally resemble those in other species (Callaway et al., 1987; Datta, 1997), we concluded that these neural events are P-waves in mice.\n\nP-waves can also be seen in silicon probe recordings (Figure 5E). Similar large-amplitude, irregular neural events were observed in subtracted and filtered LFPs (Figure 5F). Many of the simultaneously recorded brainstem neurons fired during P-waves. To assess this tendency, we pooled the peri-event firing profiles of all recorded brainstem neurons around P-waves (Figure 5G,H). The firing profiles were aligned at the trough timing of P-waves. A subset of neurons showed peak firing at the falling phase of P-waves. This tendency was consistent between NREM and REM sleep\u00a0with respect to neural firing within the brainstem, suggesting that P-waves during NREM sleep (P-wavesNREM) are equivalent to P-waves during REM sleep (P-wavesREM).\n\n### State-dependent functional interactions between P-waves and cortical activity\n\nThe co-firing of a subset of brainstem neurons underlies P-waves during both NREM and REM sleep. What are the impacts of such neural events on other brain regions? Are P-waves associated with any other sleep-related neural events? Addressing these questions would provide insight into\u00a0the functions of P-waves. To this end, first, we investigated the relationship between P-waves and cortical EEGs (Figure 6). During NREM sleep, P-waves were associated with multiple oscillatory components. Averaged P-wave-triggered cortical EEGs exhibited multiple phasic components (Figure 6B), which consisted of delta (1\u20134 Hz), theta (~7 Hz) and beta (15\u00a0~\u00a030 Hz) frequencies. To examine this trend further, we assessed the phase relationship between P-wave timing and cortical oscillations (Figure 6C). We found significant phase preferences of P-wave timing (p<0.01, Rayleigh test). We further assessed this phase-locking activity by computing resultant vector length (Figure 6D), which is a descriptive circular statistic and represents the length of the mean resultant vector (Berens, 2009): the closer this value is to one, the more concentrated is the phase coupling. We found larger phase modulation at delta and beta ranges.\n\nOn the other hand, P-wavesREM exhibited distinct associations with cortical oscillations (Figure 6B\u2013D). We observed significant phase modulation at theta range (p<0.01) (Figure 6C), indicating that two prominent neural markers in REM sleep, that is, theta oscillations and P-waves, are temporally organized. We found that the effect of sleep states on these phase-locking activities was statistically significant (F1,179 = 4.90, p<0.05, two-way ANOVA). We also computed effect size (Figure 6E). The effect was larger at the delta range during NREM sleep. Hence, the temporal coupling between P-waves and cortical oscillations was modified by sleep states.\n\nNext, we investigated the relationship between P-waves and hippocampal CA1 activity (Figure 7). We started by assessing the phase relationship between hippocampal LFPs and P-waves across frequency bands (Figure 7B). We found that the effect of sleep states on the resultant vector length was significant (F1,79 = 4.00, p<0.05, two-way ANOVA).\u00a0The timing of P-waves was strongly phase-locked at the theta range (~7 Hz) in both sleep states and there was no significant difference in the resultant vector length across frequencies, but\u00a0we observed stronger phase modulations in high frequency (\u226530 Hz) components during REM sleep based on the effect size. We further examined underlying spiking activity in the hippocampus CA1 (Figure 7C). Intriguingly, although a subset of CA1 neurons fired most strongly around the timing of P-waves during both NREM and REM sleep, the temporal order between CA1 neural firing and P-waves was state-dependent (Figure 7C): during NREM sleep, co-firing of hippocampal neurons was followed by P-waves, whereas P-waves were followed by burst firing in a\u00a0subset of CA1 neurons during REM sleep. To test the hypothesis that co-firing of CA1 neurons during NREM sleep may reflect SWRs, we detected high-frequency ripple events based on hippocampal LFPs to assess the temporal relationship between ripples and P-wavesNREM (Figure 7D). We found that ripple events preceded P-waves during NREM sleep across all of four recordings (Figure 7D inset) (p<0.05, t-test). Thus, P-waves are strongly associated with hippocampal activity in both sleep states. However, these associations are state-dependent.\n\n## Discussion\n\nAlthough state-dependent neural ensembles have been intensively characterized in the cortex including the hippocampus, little is known about state-dependent\u00a0brainstem\u00a0ensembles. Here, we investigated neural population activity in the brainstem, primarily the pons, on two distinct timescales. On a timescale of seconds to minutes, brainstem neurons show diverse state-dependent firing, with cell-type-specificity in pontine cholinergic neurons. Brainstem activity can collectively predict pupil dilation as well as behavioral states. The ability to predict behavioral states is longer lasting than\u00a0that\u00a0of hippocampal neurons. These relatively slow dynamics may be related to observations from optogenetic experiments in\u00a0which the effect of optogenetic stimulation on state transitions often emerges tens of seconds after stimulus onset (Adamantidis et al., 2007; Van Dort et al., 2015; Zhang et al., 2019; Tsunematsu et al., 2013; Tsunematsu et al., 2014).\n\nOn a timescale of sub-seconds, we characterized P-waves in the mouse, with respect to underlying neural firing as well as associated neocortical and hippocampal activities. P-waves typically appear during REM sleep and less often\u00a0during NREM sleep. P-waves in both sleep states are accompanied by synchronous firing of brainstem neurons, suggesting that underlying local activity during P-waves is similar between sleep states. However, the relationship of\u00a0P-waves\u00a0to cortical neural events is state-dependent: the timing of P-wavesNREM are phase-locked to various cortical oscillations and hippocampal SWRs precede P-wavesNREM, suggesting that P-wavesNREM are part of the brain-wide neural events triggered by SWRs. During REM sleep, P-waves are phase-locked most strongly at theta frequency in both the neocortex and hippocampus. Crucially, P-waves precede firing in a subset of hippocampal CA1 neurons, suggesting that P-wavesREM may trigger brain-wide neural events. Thus, P-waves are part of the state-dependent coordinated activity across the brain.\n\n### Technical considerations\n\nState-dependent activity in the brainstem has been described over the past several decades by using various methods (Pace-Schott and Hobson, 2002; Datta and Maclean, 2007; Steriade and McCarley, 1990). The present study utilized a silicon probe to monitor activity from multiple neurons simultaneously with high temporal resolution. This approach allowed us (1) to quantify the\u00a0state dependency of brainstem neural ensemble dynamics on a timescale of seconds to minutes, (2) to decode vigilance states on the basis of population activity, and (3) to characterize neural population activity underlying P-waves for the first time. However, because silicon\u00a0probe recording alone has a limitation in identifying cell types, additional approaches, such as Ca2+ imaging (Figure 2) or electrophysiology with optogenetic tagging (Weber et al., 2015; Yague et al., 2017; Zhang et al., 2019), can complement this approach\u00a0in\u00a0order to determine how specific types of neurons contribute to state-dependent neural ensembles in the brainstem.\n\n### Slow dynamics of brainstem ensemble dynamics\n\nOur results in Figures 3 and 4 are consistent with the notion that brainstem populations play a regulatory role in pupil dilation\u00a0and\u00a0constriction (Aston-Jones and Cohen, 2005; Larsen and Waters, 2018), as well as in\u00a0global brain states (Brown et al., 2012; H\u00e9ric\u00e9 et al., 2019; Luppi et al., 2012; Steriade et al., 1984; Weber and Dan, 2016). Crucially, the asymmetric profile of the predictability of pupil diameter suggests that the modulation of brainstem activity precedes pupil dilation, rather than being\u00a0simply correlated\u00a0to\u00a0it.\n\nThe long-lasting predictability of brainstem populations for behavioral states is not trivial. Intriguingly, the slow (30\u201360 s) timescale recalls us the timescale observed in some of optogenetic experiments: although optogenetic stimulation can modulate neural firing at a millisecond resolution, the effect of optical stimulation on state transitions typically emerges tens of seconds after stimulus onset (Adamantidis et al., 2007; Van Dort et al., 2015; Zhang et al., 2019). The exact mechanism is still unknown, but we hypothesize that the modulation of neural activity in the brainstem occurs tens of seconds before global brain state transitions from one state to another. In other words, each state emerges from complex interactions across various regions of the brain.\n\n### P-waves in mice\n\nAlthough PGO or P-waves have been studied since the 1960s in several mammalian species (Callaway et al., 1987; Datta, 1997; Bizzi and Brooks, 1963), to the best of our knowledge, we are the first to characterize P-waves in mice. Given the growing importance of mice as an animal model for sleep research (H\u00e9ric\u00e9 et al., 2019), the confirmation of P-waves in mice is important for further interrogation with respect to the generation mechanism and function of P-waves.\n\nWe have noticed several similarities and differences in P-waves between mice and other species. First, the waveform of P-waves in mice is generally consistent with those in other species, such as cats (Callaway et al., 1987; Jeannerod et al., 1965) and rats (Datta, 1997; Farber et al., 1980), suggesting that underlying neural ensembles may be similar across species. Indeed, the phasic firing just before (<25 ms\u00a0before) the trough of P-waves (Figure 5) resembles the observations in cats (McCarley et al., 1978; Steriade et al., 1990; Sakai and Jouvet, 1980; Nelson et al., 1983). In the near future, it would be interesting to extend our approach further to explore how activity propagates across brainstem neurons during P-waves by identifying cell-types. Second, the frequency of P-waves during REM sleep is generally consistent across species (Datta, 1997). However, we have also noticed that the frequency of detected P-waves varied across our experiments. This may be explained by variation in either the\u00a0REM sleep quality or the\u00a0electrode positions. Further analysis of P-waves across brainstem nuclei will provide insights into their relationship with sleep homeostasis and the mechanism of P-wave genesis in mice. Datta and his colleagues performed a series of pioneering studies and reported species differences in the site of P-wave genesis between cats and rats (Datta et al., 1998; Datta and Hobson, 1995; Datta et al., 1992): the caudolateral peribrachial area was identified as the induction site of P-waves (PGO waves) in cats (Datta and Hobson, 1995; Datta et al., 1992), whereas the subcoeruleus nucleus was identified in rats (Datta et al., 1998). It will be important to revisit this issue in mice by adopting modern technologies. Third, the temporal evolution of P-wave frequency is\u00a0generally similar in mice and cats: the frequency of PGO-waves gradually increases before the transition of NREM to REM sleep in cats (Steriade et al., 1989). Although it was weak, a similar tendency was observed in our recordings (Figure 5D). Rather, the frequency of P-waves increases during REM sleep. This subtle difference may be explained by anatomical differences between species (Datta, 2012). These species differences may also imply differences in the function of P-waves between species. Finally, although P-waves appear more frequently during REM sleep, it is important to note that similar neural events also occur during NREM sleep. Given state-dependent interactions between P-waves and cortical oscillations (Figures 6 and 7), the mechanisms of P-wave genesis are probably distinct.\n\n### State-dependent global coordination of neural ensembles\n\nThe temporal correlation between P-waves and hippocampal theta rhythms during REM sleep is consistent with previous studies in cats and rats (Karashima et al., 2002; Karashima et al., 2004; Karashima et al., 2005; Sakai et al., 1973). The phase-locked activity with fast gamma (80\u2013110 Hz) in the hippocampus may relate to the recent observation that demonstrated the close association between local hippocampal theta and fast gamma events and brain-wide hyperemic events (Bergel et al., 2018). Because a number of hippocampal CA1 neurons fire immediately after P-waves (Figure 7C), P-waves may play a role in the regulation of hippocampal ensemble dynamics as well as in brain-wide events during REM sleep.\n\nOn the other hand, the picture during NREM sleep seems to be distinct. Because SWRs precede P-waves (Figure 7D), and\u00a0because SWRs are known to be generated within hippocampal circuits (Buzs\u00e1ki, 2015), SWRs play a leading role in brain-wide sub-second neural events, including P-waves. These state-dependent brain-wide neural ensembles imply that\u00a0different\u00a0sleep states\u00a0have\u00a0distinct functional roles.\n\n## Materials and methods\n\n### Animals\n\nA total of 21 mice were used in this study (Supplementary file 1) and were housed individually with a 12 hr:12 hr light/dark cycle (light on hours: 7:00\u201319:00). Mice had ad libitum access to food and water. All experiments were performed during the light period. Their genotypes consisted of wild-type, ChAT-IRES-Cre (JAX006410), or ChAT-IRES-Cre::Ai32 (JAX012569) on a\u00a0C57BL/6 background. ChAT-IRES-Cre::Ai32 mice were used to identify pontine cholinergic neurons in\u00a0post-hoc histological analysis. For brainstem silicon\u00a0probe recordings, six animals were used (nine recordings). For hippocampal silicon probe recordings, two animals were used (four recordings). For P-wave recordings, ten\u00a0animals were used, but four were excluded because\u00a0of electrode mispositioning or lack of histological data. 16 datasets were used for further analysis. For pupil monitoring, 14 animals were used, but one animal was excluded because it closed its eyes during recording. 18 datasets were used for further analysis. For fiber photometry, four animals were used (12 recordings). The detailed information of genotypes, age, sex, body weight and the number of recordings is provided in Supplementary file 1.\n\n### Surgical procedures\n\nFor all in vivo electrophysiological experiments, mice were anesthetized with isoflurane (5% for induction, 1\u20132% for maintenance) and placed in a stereotaxic apparatus (SR-5M-HT, Narishige). Body temperature was maintained at 37\u00b0C with a feedback temperature controller (40\u201390\u20138C, FHC). Lidocaine (2%, 0.1\u20130.3 mg) was administered subcutaneously at the site of incision. Two bone screws were implanted onto the skull as electrodes for cortical EEGs, and twisted wires were inserted into the neck muscle as electrodes for EMG. Another bone screw was implanted onto the cerebellum as a ground/reference.\n\nFor pontine EEG recording, bipolar electrodes were bilaterally implanted in the medial parabrachial nucleus of the pons (5.1 mm posterior, 1.2 mm lateral from bregma, 3.2 mm depth from brain surface). The bipolar electrodes consisted of 75 or 100 \u00b5m diameter stainless wires (FE631309, Advent Research Materials and FE205850, Goodfellow, respectively). The tip of two glued wires were separated by 0.5\u20131.0 mm vertically to differentiate EEG signals. All electrodes were connected to connectors (SS-132-T-2-N, Semtec) and securely attached onto the skull with dental cement. A pair of nuts was also attached onto the skull with dental cement as a head-post. After the surgery, Carprofen (Rimadyl, 5 mg/kg) was administered intraperitoneously.\n\nFor brainstem or hippocampal silicon probe recording, in addition to bone screws for cortical EEGs and a ground/reference, a pair of nuts was attached onto the skull with dental cement as a head-post. After the head-post surgery, the animals were left to recover for at least 5 days. During the habituation period, the animals were placed in a head-fixed apparatus, by securing them by the head-post and placing the animal into an acrylic tube. This procedure was continued for at least 5 days, during which the duration of head-fixing was gradually extended from 10 to 120 min. A day after the habituation period, the animals were anesthetized with isoflurane and a craniotomy to insert\u00a0the silicon probe into\u00a0the brainstem and hippocampus was performed. Two craniotomies were performed, one on the left hemisphere (4.0 mm to 5.5 mm posterior, 1.0 to 1.3 mm lateral from bregma) for the brainstem recording and a second also on the left hemisphere (2.0 mm posterior, 1.5 mm lateral from bregma) for the hippocampus recording. To protect and prevent the brain from drying, the surface was covered with biocompatible sealants (Kwik-Sil and Kwik-Cast, WPI). The following day, the animals were placed in the head-fixed apparatus for electrophysiological recording as described below.\n\nFor fiber photometry experiments, cortical EEG and EMG electrodes were implanted as described above and connected to a 2-by-3 piece connector (SLD-112-T-12, Semtec). Two additional anchor screws were implanted bilaterally over the parietal bone to provide stability and a small portion of a drinking straw was placed horizontally between the anchor screws and the connector. The viral vector (AAV5-CAG-flex-GCaMP6s-WPRE-SV40, Penn Vector Core; titer 8.3 \u00d7 1012 GC/ml) was microinjected (500 nl at 30 ml/min) (Nanoliter2010, WPI) to target the PPT/LDT area (\u22124.5 mm posterior, 1 mm lateral from bregma and 3.25 mm depth from brain surface). The micropipette was left in the brain for an additional 10 min and then slowly raised up. An optic fiber cannula (CFM14L05, Thorlabs) was then implanted 3 mm deep from the surface of the brain and all components were secured to each other and\u00a0to the skull with dental cement.\n\n### In vivo electrophysiological experiments in a head-fixed condition\n\nExperimental procedures were as described previously (Lyngholm and Sakata, 2019; Yague et al., 2017). Briefly, all electrophysiological recordings were performed in a single-walled acoustic chamber (MAC-3, IAC Acoustics) with the interior covered with 3 inches (~\u00a07.5\u00a0cm)\u00a0of acoustic absorption foam. The animals were placed in the same head-fixed apparatus, by securing them by the head-post and placing the animal into an acrylic tube. During the entire recording, the animals were not required to do anything actively. For pontine EEG recording, cortical EEG, EMG and pontine EEG signals were amplified (HST/32 V-G20 and PBX3, Plexon), filtered (0.1 Hz low cut), digitized at a sampling rate of 1 kHz and recorded using LabVIEW software (National Instruments). Recording was performed for 5 hr from 9:00 to 14:00. For brainstem or hippocampal silicon probe recording, a 32-channel four shank silicon probe (A4 \u00d7 8\u20135 mm-100-400-177 for brainstem recording or Buzsaki32 for hippocampus recording) was inserted slowly with a manual micromanipulator (SM-25A, Narishige) into the brainstem (3.75 mm \u2013 4.3 mm from the brain surface) or the hippocampus (1.55 mm \u2013 1.85 mm from the\u00a0brain surface). Probes were inserted perpendicularly with respect to the brain surface. Broadband signals were amplified (HST/32 V-G20 and PBX3, Plexon) relative to the\u00a0screw on the cerebellum, filtered (0.1 Hz low cut), digitized at 20 kHz and recorded using LabVIEW software (National Instruments). The recording session was initiated\u00a0>1 hr after the probe was inserted to its target depth, to stabilize neural signals. Recording preparation started from 8:00 and terminated by 15:00. For verification of silicon probe tracks, the rear of the probes was painted with DiI (\u223c10% in ethanol, D282, Invitrogen) before insertion.\n\n### Pupil monitoring\n\nIn a subset of in vivo electrophysiological experiments under a head-fixed condition, pupils were also monitored with an off-axis infrared (IR) light source (860 nm IR LED, RS Components). A camera (acA1920-25\u00b5m, Basler Ace) with a zoom lens (M0814-MP2, Computar) and an IR filter (FGL780, Thorlabs) was placed ~10 cm from the animal\u2019s left eye. Images were collected at 25 Hz using a custom-written LabVIEW program and a National Instruments image grabber (PCIe-8242).\n\n### In vivo fiber photometry experiments in a freely behaving condition\n\nThe fiber photometry system consisted of two excitation channels. A 470 nm LED (M470L3, Thorlabs) was used to extract a Ca2+-dependent signal and a 405 nm LED (M405L3, Thorlabs) was used to obtain a Ca2+-independent isosbestic signal. Light from the LEDs was directed through excitation filters (FB470-10, FB405-10, Thorlabs) and a dichroic mirror to the fiber launch (DMLP425R and KT110/M, respectively). The fiber launch was connected to a multimode patch cable (M82L01, Thorlabs), which attached to an implantable optic fiber on the mouse via a ceramic mating sleeve (CFM14L05 and ADAF1, respectively). Light emissions from GCaMP6s expressing neurons were then collected back through the optic fiber and directed through a detection path, passing a dichroic mirror (MD498) to reach a photodetector (NewFocus 2151, Newport). A National Instruments DAQ (NI USB-6211) and custom-written LabVIEW software were used to control the LEDs and\u00a0to acquire fluorescence data at 1 kHz. LEDs were alternately turned on and off at 40 Hz in a square pulse pattern. Electrophysiology signals were recorded at 1 KHz using an interface board (RHD2000, Intan Technologies) and connected to the mouse via an amplifier (RHD2132, Intan Technologies). Mice were habituated to being handled and tethered to the freely behaving system over several consecutive days. Mice were scruffed and the straw on the headcap slotted into a custom-made clamp, to keep the head still and to\u00a0absorb any vertical forces when connecting the electrophysiology and fiber photometry tethers to the headcap. Once connected, mice were placed in an open top Perspex box (21.5 cm x 47 cm x 20 cm depth) lined with absorbent paper, bedding and some baby food. Recordings lasted 4\u20135 hr to allow for multiple sleep\u2013wake transitions.\n\n### Histological analysis\n\nAfter electrophysiological experiments, animals were deeply anesthetized with a\u00a0mixture of pentobarbital and lidocaine, and perfused transcardially with 20 mL saline followed by 20 mL 4% paraformaldehyde/0.1 M phosphate buffer, pH 7.4. The brains were removed and immersed in the above fixative solution overnight at 4\u00b0C and then immersed in a 30% sucrose in phosphate buffer saline (PBS) for at least 2 days. The brains were quickly frozen and were cut into coronal or sagittal sections with a sliding microtome (SM2010R, Leica) or with a cryostat (CM3050, Leica),\u00a0each with a thickness of 50 or 100 \u00b5m. The brain sections were incubated with a NeuroTrace 500/525 Green-Fluorescence (1/350, Invitrogen) or NeuroTrace 435/455 Blue-Fluorescence (1/100, Invitrogen) in PBS for 20 min at room temperature (RT), followed by incubation with a blocking solution (10% normal goat serum, NGS, in 0.3% Triton X in PBS, PBST) for 1 hr at RT. For ChAT-IRES-Cre::Ai32 mice, to confirm the position of ChAT-expressing neurons, we performed GFP and ChAT double staining. These brain sections were incubated with mouse anti-GFP antiserum (1/2000, ABCAM) and goat anti-ChAT antiserum (1/1000, Millipore) in 3% NGS in PBST\u00a0overnight at 4\u00b0C. After washing, sections were incubated with DyLight 488-labeled donkey anti-mouse IgG (1/500, Invitrogen) and Alexa 568-labeled donkey anti-goat IgG (1/500, Invitrogen) for 2 hr at RT. After staining, sections were mounted on gelatin-coated or MAS-coated slides and cover-slipped with 50% glycerol in PBS. The sections were examined with a fluorescence microscope (BZ-9000, Keyence).\n\n### Data analysis\n\n#### Sleep scoring\n\nVigilance states were visually scored offline according to standard criteria (Radulovacki et al., 1984; Tobler et al., 1997). Wakefulness, NREM sleep, or REM sleep state\u00a0was determined in every 4-s\u00a0window on the basis of cortical EEG and EMG signals using custom-made MATLAB GUI. For electrophysiological or fiber photometry experiments, the same individual scored all recordings for consistency.\n\n#### Pupil analysis\n\nVideo files were processed using DeepLabCut (Mathis et al., 2018). Each video file consisted of a 5 min segment of the recording, meaning that each experiment yields tens of video files. For training, a single file containing all states (AW, NREM sleep and REM sleep) was chosen on the basis of the sleep score. This initial step was critical to reflect the dynamic range of pupil dilation\u00a0or\u00a0constriction in each experiment. After choosing the file, 20 frames were randomly selected to mark the left and right edges of the\u00a0pupil\u00a0manually. ImageJ was used for this manual marking. Using these labeled frames, the deep convolutional neural network was then trained, and all of\u00a0the\u00a0video files were processed to detect the left and right edges of pupil. After processing, visual inspection was performed by generating a down-sampled (50\u2013100 times) video clip. The same procedure was applied across all recordings. To compute pupil diameter, the distance between the left and right edges of the pupil was calculated across frames. The profile was filtered (low-pass filter at 0.5 Hz) and z-scored. To compute eye movement, the middle point of pupil was determined and the distance of the middle points between two continuous frames was calculated. The profile was then normalized by the maximal value of the profile. From 20 pupil recordings (14 animals), two recordings from a single animal were excluded because\u00a0of eye closure during most of recording period (Supplementary file 1).\n\n#### Fiber photometry signal processing\n\nCustom-written MATLAB scripts were used to compute dF/F signals. To extract 405 and 470 nm signals, illumination periods were determined by detecting synchronization pulses. For each illumination epoch, the median fluorescent signal was calculated. Because each illumination epoch consisted of pulses at 40 Hz, the fluorescent signals originally sampled at 1 kHz were effectively down-sampled to 40 Hz. Photobleaching was estimated by a single exponential curve and the difference between the fluorescent signal trace and the estimate was further low-pass filtered at 4 Hz. To estimate moving artifacts, the filtered 405 nm signals were linearly scaled based on the filtered 470 nm signals using a linear regression. To estimate dF/F signals, then the 470 nm signals were subtracted from the scaled 405 nm signals. In this study, the first 10 min segment was excluded for further analysis because\u00a0of poor estimation of the photobleaching profile.\n\n#### Spike train and LFP/EEG analysis\n\nFor spike sorting, Kilosort (Pachitariu et al., 2016) was used for automatic processing, followed by manual curation using phy (https://github.com/cortex-lab/phy). Clusters with\u00a0\u226520 isolation distance were recognized as single units. The position of single units was estimated on the basis of the channel that\u00a0provided the largest spike amplitude. All subsequent analysis was performed using custom-written codes (MATLAB, Mathworks).\n\nTo categorize functional classes of single units, average firing rate for each behavioral state was calculated and a hierarchical clustering approach with the Ward\u2019s method was applied.\u00a0To predict the pupil diameter from single unit activity, spike trains were filtered (band-pass filter between 0.5 and 25 Hz) and then a linear regression analysis was performed. To evaluate the goodness-of-fit of the linear model, the\u00a0R-squared value was calculated. The same process was repeated by shifting the time relationship between spike trains and pupil diameter to determine an optimal time window to predict pupil diameter from spike train. Then the sequence of R-squared values was normalized by computing Z-scores.\n\nTo predict the pupil diameter from simultaneously monitored multiple single unit activities, spike trains were filtered (band-pass filter between 0.5 and 25 Hz) and a linear regression model was trained by using a regularized support-vector machine algorithm with 10-hold cross-validation. Then, cross-validated mean squared error (MSE) was computed. The same process was repeated by shifting the time relationship between spike trains and pupil diameter. The sequence of MSEs were normalized.\n\nTo find interpretable patterns in the population activity, we adopted non-negative matrix factorization (NMF) (Lee and Seung, 1999; Onken et al., 2016). NMF takes a non-negative data matrix and factorizes this matrix into two non-negative matrices. One of these matrices, the module matrix contains patterns, whereas the other matrix, the activation coefficient matrix, indicates how these patterns need to be weighted in order to reconstruct the original data matrix. Owing to the non-negativity constraints, NMF yields a parts-based representation: one pattern cannot be canceled by another pattern. For a data matrix representing images of faces, the method yields face patterns, such as eyes, eyebrows and noses in the module matrix and non-negative weights of these patterns in the activation coefficient matrix (Lee and Seung, 1999). For neural population activity, NMF can decompose spike counts into \u2018space\u2019 (neurons) modules and the\u00a0activation coefficients of these modules (Onken et al., 2016). For this purpose, spike trains were discretized by binning them into 4 s intervals, which were equivalent to the time window for sleep scoring (see above). Let r(t) denote the resulting vector of population spike counts in bin t. We represented all population spike count vectors in a matrix R = [r(1) r(2). .. r(T)] of size N by T, where N denotes the number of neurons and T denotes the number of time bins. We then decomposed the matrix R into two non-negative matrices W of size N by m and H of size m by T as follows: R\u00a0=\u00a0WH, where m is the number of modules. To this end, we applied multiplicative update rules (Lee and Seung, 2001):\n\n$$\nH_{ij}\u2190H_{ij}\\frac{\\sum_{k}W_{ki}R_{kj}/(WH)_{kj}}{\\sum_{l}W_{li}} W_{ij}\u2190W_{ij}\\frac{\\sum_{k}H_{jk}R_{ik}/(WH)_{ik}}{\\sum_{l}H_{jl}}\n$$\n\nThese update rules minimize the Kullback\u2013Leibler divergence, corresponding to a Poisson noise assumption for the spike counts (F\u00e9votte and Cemgil, 2009). In each run, we randomly initialized W and H and applied the update rules up to 100 times or until convergence. For each decomposition, we performed 10 runs and selected the run with the lowest Kullback\u2013Leibler divergence. The m columns of W then represented the m space modules and the m corresponding rows of H represented their activation coefficients for each time bin.\n\nTo select the number of space modules m, we evaluated how many modules were needed, so that additional modules did not significantly improve the decomposition. Our procedure was similar to that used in De Marchis et al. (2013). We generated surrogate data by shuffling all of\u00a0the\u00a0elements of the matrix R and then decomposed the shuffled matrix in the same way as we previously decomposed the original R. We quantified the quality of a decomposition using the variance accounted for (VAF) (Clark et al., 2010). Starting with one module, we incremented the number of modules until the VAF of the unshuffled data decomposition did not exceed 3/4 of the average VAF of the decompositions of 100 shuffles.\n\nTo classify three behavioral states on the basis of the activation coefficients, a linear classifier was trained by fitting a multivariate normal density to each state with 10-fold cross validation. Then classification performance was calculated. This procedure was repeated by shifting the time relationship between the activation coefficients and sleep scores.\n\nTo detect P-waves, two EEG or LFP signals in the brainstem were subtracted and filtered (5\u201330 Hz band-pass filter). If the signals cross a threshold, the event was recognized as P-waves. To determine the detection threshold, a 1 min segment of the subtracted signals was extracted from the longest NREM sleep episode for a reliable estimation of stable noise level. The noise level was estimated by computing root-mean-square (RMS) values in every 10-ms time window. The threshold was defined as mean + 5 x standard deviation of the RMS values. The timing of P-waves was defined as the timing of the negative peak.\n\nThe phase analysis was essentially the same as that described previously (Yague et al., 2017). Cortical EEG or hippocampal LFP signals were used for this analysis. For hippocampal LFPs, signals from two separate channels were subtracted to minimize volume conduction. To derive band-limited signals in different frequency bands, a Kaiser finite impulse response filter was used with sharp transition bandwidth of 1 Hz, pass-band ripple of 0.01 dB and stop-band attenuation of 50 dB. For filtering, the\u00a0MATLAB \u2018filtfilt\u2019 function was used. In the present study, the following bands were assessed: [2\u20134], [4\u20137], [7\u201310], [10\u201315], [15\u201320], [20\u201330], [30\u201350], [50\u201380], [80\u2013110], and [110\u2013150] Hz. The instantaneous phase of each band was estimated from the Hilbert transform and the phase of P-wave occurrence was computed. To quantify the relationship between P-waves and EEG/LFP phase, the percentage of P-waves elicited in each phase bin was calculated. The resultant vector length was computed as an absolute value of mean resultant vector $r-$ by using\u00a0the circ_r\u00a0function of the\u00a0CircStats Toolbox (Berens, 2009). Rayleigh\u2019s test for non-uniformity of circular data was performed to assess the statistical significance (p < 0.01) of the non-uniformity of the P-wave vs EEG/LFP phase distribution.\n\nTo detect ripples in the hippocampus, LFP signals from the channel that detected spiking activity were used. Band-limited signals at 140\u2013250 Hz were computed by using a Kaiser finite impulse response filter (see above). Two sequences of RMS values were calculated with two different time window: 2 s (long RMS) and 8 ms (short RMS). If the short RMS exceeds four times larger long RMS for 8 ms, then signals were recognized as a ripple event. To quantify the asymmetry of the cross-correlogram between SWRs and P-waves (Figure 7D), the asymmetry index was defined as: (Npre \u2013 Npost)/(Npre + Npost), where Npre and Npost are the number of SWRs 100 ms before and after P-waves, respectively.\n\n### Statistical analysis\n\nData were presented as mean\u00a0\u00b1\u00a0SEM unless otherwise stated. Statistical analyses were performed with MATLAB. In Figures 2G and 3A, one-way ANOVA with post-hoc Tukey\u2019s Honest Significant Difference (HSD) criterion was performed. In Figure 4C, repeated measures ANOVA was performed. In Figure 5C, a\u00a0two-tailed t-test was performed. In Figure 6C, Rayleigh test for non-uniformity was performed. In Figures 6B and 7B, two-way ANOVA with post-hoc HSD criterion was performed. In Figure 7D, a\u00a0two-tailed t-test was performed. To estimate effect size, Hedges\u2019 g was computed using the\u00a0Measures of Effect Size Toolbox (Hentschke and St\u00fcttgen, 2011).\n\n### Code availability\n\nThe code is available on GitHub (https://github.com/Sakata-Lab; copies archived at https://github.com/elifesciences-publications).\n",
+      "created_at": "2025-12-02T14:29:19.788894Z"
+    },
+    {
+      "id": "bae401a8-24bc-4dc4-971b-68b146be71a0",
+      "submission_id": "2f4febbb-1f4d-4573-b3cc-2b0f22a8722f",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Laura L Colgin, University of Texas at Austin United States\n\nReviewers:\n- Subimal Datta\n\n## Review text\n\nDOI: [10.7554/eLife.52244.sa1](https://doi.org/10.7554/eLife.52244.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nAcceptance summary:\n\nThe results of this manuscript, for the first time, provide experimental evidence to shed light on a long-standing question of how pontine-wave (P-wave) activity interacts with hippocampal network activity patterns during non-REM and REM sleep. Over the last 2 decades, groups of investigators working on hippocampal physiology have argued that SWRs are the primary physiological mechanism underlying sleep-associated memory consolidation. Yet, another group of researchers have argued that the P-wave is the primary physiological activity for sleep-associated memory consolidation. This electrophysiological study correlates pontine neuronal ensemble dynamics during P-waves with hippocampal SWRs during non-REM sleep. Thus, the results of the present study reveal an important link between P-waves and SWRs. This study also shows, for the first time, that the P-waves are present in mice. The characterization of P-waves in mice is expected to pave the way for future studies of specific P-wave mechanisms of generation as well as impacting a broad range of studies that address state-specific brain stem influences on neuronal ensemble dynamics in higher brain regions.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"State-dependent pontine ensemble dynamics and interactions with cortex across sleep states\" for consideration by eLife. Your article has been reviewed by three peer reviewers, and the evaluation has been overseen by Laura Colgin as the Senior Editor. The following individuals involved in review of your submission have agreed to reveal their identity: Subimal Datta (Reviewer #3).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nEssential revisions:\n\n1) The current title of the manuscript is 'State-dependent pontine ensembles dynamics.\u2026', and the Abstract and main text refer to \"pontine populations\" and \"pontine neurons\". However, for the majority of analysis, a mixture of brainstem neurons including neurons in the midbrain and medulla were used. If the authors would like to uncover effects that are specific to pons, they should use only neurons recorded from pons. In that case, detailed histological verification would be required for each animal. A histological analysis appears in Figure 1\u2014figure supplement 1, but it is only provided for one animal and with low resolution; therefore, it is impossible to determine from this image from which brain stem structure the neurons were recorded. Relatedly, Figure 1\u2014figure supplement 1 refers to \"Neurons recorded from pontine cholinergic nuclei\", yet histological analyses verifying that these neurons were recorded from pontine cholinergic nuclei are missing.\n\n2) The relationship of the present work to previous work requires further elaboration. Specific points related to this point are listed below:\n\na) In the cat, PGO-waves have been recorded in the lateral geniculate nucleus and in many other parts of the forebrain. The pons has been suspected to be the origin of the first component of the PGO waves in the forebrain and occipital cortex. However, in the rat, the PGO-wave is absent in the lateral geniculate and other forebrain areas. Therefore, the functions of P-waves in the rats and mice may not be similar as the functions of PGO waves in the cat. This possibility should be acknowledged in this manuscript. The P-wave generator in the rat (1998) and P-wave/PGO-wave in generator in the cat (1992) were shown to be in two different areas in the pons. This study, for the first time, shows that the P-waves are present in mice and will likely encourage future investigations to uncover mechanisms of P-wave generation in mice, which may be different than cats and rats.\n\nb) The anticipatory relationship between neuronal activity in the pons and state changes has been shown previously by Steriade, McCarley, Hobson, Datta and colleagues (reviewed in the classic book, \"Brain control of wakefulness and sleep\" and other review articles by these authors. See also Steriade, Sakai and Jouvet 1984). Karashima and colleagues have described the relationship between pontine activity and hippocampal theta in cats (Brain Res 2002 958: 347-358, not cited) and rats (Brain Res 2005 1051: 50-6, not cited).\n\nc) Relevant studies involving single-unit recordings that described PGO burst neurons (e.g. McCarley, Nelson and Hobson, 1978) should be discussed.\n\n3) The authors recorded neuronal activity during sleep from head-fixed mice, whose eyes were open during sleep session. A point was raised that mice naturally sleep with their eyes closed. Also, the structure and properties of sleep are likely different between freely moving (non-fixed) and head-fixed animals. Free-moving mice show NREM-REM-NREM cycles in addition to the NREM-REM-AWAKE sequence. The authors only showed the NREM-REM-AWAKE transition and not a NREM-REM-NREM transition. The latter transition may not occur because sleep in head-fixed animals differs from that of free-moving animals. Therefore, the authors should compare and contrast the properties (e.g., duration, EMG, LFP of REM and non-REM, cycles and structure of NREM-REM-NREM) of sleep in head-fixed animals with those properties that have been reported in freely moving animals.\n\n4) It is unclear whether the differences between REM and NREM in Figure 6D, E and Figure 7B are statistically significant.\n\n5) It is unclear from which area (CA1, CA3, DG) of the (dorsal or ventral) hippocampus recordings were obtained.\n\n6) The authors should clarify what the animals were doing during the awake state.\n",
+      "created_at": "2025-12-02T14:29:19.788894Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T14:29:19.788894Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T14:29:19.788894Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "33ef9d86-0902-4f2c-859a-ba328c8fd7c1",
+      "content_id": "7a40cc6f-507d-4211-a2cd-9050a84c0275",
+      "claim_id": "C1",
+      "claim": "The brainstem plays a crucial role in sleep-wake regulation.",
+      "claim_type": "EXPLICIT",
+      "source": "The brainstem plays a crucial role in sleep-wake regulation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement supported by the manuscript's focus and cited literature on brainstem involvement in sleep-wake cycles.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:29:19.788894Z"
+    },
+    {
+      "id": "6133fce6-6f02-4f12-99a3-60e135608503",
+      "content_id": "7a40cc6f-507d-4211-a2cd-9050a84c0275",
+      "claim_id": "C2",
+      "claim": "Brainstem populations can predict pupil dilation and vigilance states on a timescale of seconds to minutes.",
+      "claim_type": "EXPLICIT",
+      "source": "On a timescale of seconds to minutes, brainstem populations can predict pupil dilation and vigilance states and exhibit longer prediction power than hippocampal CA1 neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the experimental data presented in Figures 3 and 4, showing predictive relationships between brainstem neural activity and pupil diameter/behavioral states.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:29:19.788894Z"
+    },
+    {
+      "id": "ade6938b-8082-4e95-a4e1-9930c1185e17",
+      "content_id": "7a40cc6f-507d-4211-a2cd-9050a84c0275",
+      "claim_id": "C3",
+      "claim": "Brainstem populations exhibit longer prediction power for vigilance states than hippocampal CA1 neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "On a timescale of seconds to minutes, brainstem populations can predict pupil dilation and vigilance states and exhibit longer prediction power than hippocampal CA1 neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is directly supported by comparative analysis shown in Figure 4C, where brainstem and hippocampal CA1 decoding performances are compared.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:29:19.788894Z"
+    },
+    {
+      "id": "aa1abf61-f0fa-43cd-8b7d-4a6cd1f19f44",
+      "content_id": "7a40cc6f-507d-4211-a2cd-9050a84c0275",
+      "claim_id": "C4",
+      "claim": "Pontine waves (P-waves) are accompanied by synchronous firing of brainstem neurons during both REM and NREM sleep.",
+      "claim_type": "EXPLICIT",
+      "source": "On a timescale of sub-seconds, pontine waves (P-waves) are accompanied by synchronous firing of brainstem neurons during both rapid eye movement (REM) and non-REM (NREM) sleep.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the peri-event time histograms in Figures 5G and 5H showing coordinated firing of brainstem neurons around P-wave timing.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:29:19.788894Z"
+    },
+    {
+      "id": "fcb406d9-7ebb-45d7-9ea6-45d36dd4c592",
+      "content_id": "7a40cc6f-507d-4211-a2cd-9050a84c0275",
+      "claim_id": "C5",
+      "claim": "During NREM sleep, hippocampal sharp wave-ripples (SWRs) precede P-waves.",
+      "claim_type": "EXPLICIT",
+      "source": "Crucially, P-waves functionally interact with CA1 activity in a state-dependent manner: during NREM sleep, hippocampal sharp wave-ripples (SWRs) precede P-waves.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by the temporal analysis in Figure 7D showing that SWRs occur before P-waves during NREM sleep.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:29:19.788894Z"
+    },
+    {
+      "id": "3559ccd5-d557-441b-92b1-c19454094192",
+      "content_id": "7a40cc6f-507d-4211-a2cd-9050a84c0275",
+      "claim_id": "C6",
+      "claim": "P-waves during REM sleep are phase-locked with ongoing theta oscillations.",
+      "claim_type": "EXPLICIT",
+      "source": "On the other hand, P-waves during REM sleep are phase-locked with ongoing theta oscillations and are followed by burst firing of CA1 neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by phase analysis shown in Figures 6 and 7, demonstrating significant phase-locking between P-waves and theta oscillations during REM sleep.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:29:19.788894Z"
+    },
+    {
+      "id": "4f8f8eda-8e0e-41c2-b3db-3544efe9bfe1",
+      "content_id": "7a40cc6f-507d-4211-a2cd-9050a84c0275",
+      "claim_id": "C7",
+      "claim": "P-waves during REM sleep are followed by burst firing of CA1 neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "On the other hand, P-waves during REM sleep are phase-locked with ongoing theta oscillations and are followed by burst firing of CA1 neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is shown in Figure 7C, where peri-event time histograms demonstrate CA1 neural firing following P-waves during REM sleep.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:29:19.788894Z"
+    },
+    {
+      "id": "5c05d429-1259-4048-adcd-bd1ec329e04e",
+      "content_id": "7a40cc6f-507d-4211-a2cd-9050a84c0275",
+      "claim_id": "C8",
+      "claim": "Sleep states are typically classified into two major states: non-rapid eye movement (NREM) sleep and REM sleep.",
+      "claim_type": "EXPLICIT",
+      "source": "Sleep states are typically classified into two major states, non-rapid eye movement (NREM) sleep and REM sleep.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established scientific knowledge about sleep classification.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:29:19.788894Z"
+    },
+    {
+      "id": "7d95071f-8d86-4a8f-9f1b-b134e9b55c89",
+      "content_id": "7a40cc6f-507d-4211-a2cd-9050a84c0275",
+      "claim_id": "C9",
+      "claim": "Numerous brain regions and cell-types have been identified as part of sleep-regulating circuits.",
+      "claim_type": "EXPLICIT",
+      "source": "While numerous brain regions and cell-types have been identified as part of sleep-regulating circuits (Brown et al., 2012; H\u00e9ric\u00e9 et al., 2019; Jouvet, 1962; Moruzzi, 1963; Peever and Fuller, 2017; Scammell et al., 2017; Weber and Dan, 2016; Luppi et al., 2017; Adamantidis et al., 2007; Tsunematsu et al., 2014; Weber et al., 2015; Zhang et al., 2019), sleep-related neural firing and oscillations have also been described across cortical and subcortical regions (McCarley and Hobson, 1971; Hobson et al., 1975; Sakai, 1985; Steriade, 2006; Brown et al., 2012; Rasch and Born, 2013; Buzs\u00e1ki, 2015; Weber et al., 2015; Scammell et al., 2017; Weber et al., 2018; H\u00e9ric\u00e9 et al., 2019; Liu and Dan, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by extensive citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:29:19.788894Z"
+    },
+    {
+      "id": "de68c883-9ce2-4f0d-837d-7ed310a51be8",
+      "content_id": "7a40cc6f-507d-4211-a2cd-9050a84c0275",
+      "claim_id": "C10",
+      "claim": "Cortical slow oscillations, sleep spindles and hippocampal sharp wave-ripples (SWRs) are prominent neural events during NREM sleep.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, cortical slow oscillations, sleep spindles and hippocampal sharp wave-ripples (SWRs) are prominent neural events during NREM sleep, whereas theta oscillations and ponto-geniculo-occipital (PGO) or pontine (P) waves are seen during REM sleep (Steriade, 2006; Montgomery et al., 2008; Buzs\u00e1ki, 2015; Buzs\u00e1ki, 2002; Jouvet, 1969; Steriade et al., 1993b; Callaway et al., 1987; Datta, 1997; Rasch and Born, 2013; Bizzi and Brooks, 1963).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to established literature on sleep-related neural oscillations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:29:19.788894Z"
+    },
+    {
+      "id": "28857d80-0b9a-42db-8a94-6fcfa282fd00",
+      "content_id": "7a40cc6f-507d-4211-a2cd-9050a84c0275",
+      "claim_id": "C11",
+      "claim": "Theta oscillations and ponto-geniculo-occipital (PGO) or pontine (P) waves are seen during REM sleep.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, cortical slow oscillations, sleep spindles and hippocampal sharp wave-ripples (SWRs) are prominent neural events during NREM sleep, whereas theta oscillations and ponto-geniculo-occipital (PGO) or pontine (P) waves are seen during REM sleep (Steriade, 2006; Montgomery et al., 2008; Buzs\u00e1ki, 2015; Buzs\u00e1ki, 2002; Jouvet, 1969; Steriade et al., 1993b; Callaway et al., 1987; Datta, 1997; Rasch and Born, 2013; Bizzi and Brooks, 1963).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to established literature on REM sleep neural events.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:29:19.788894Z"
+    },
+    {
+      "id": "666d8563-1b1f-4f7d-b6e7-d766119ccc66",
+      "content_id": "7a40cc6f-507d-4211-a2cd-9050a84c0275",
+      "claim_id": "C12",
+      "claim": "Little is known about population activity within the brainstem.",
+      "claim_type": "EXPLICIT",
+      "source": "Although neural ensemble dynamics underlying these sleep-related neural events in the thalamus and the cortex including the hippocampus have been well described (Steriade, 2006; Buzs\u00e1ki, 2015; Buzs\u00e1ki, 2002; Steriade et al., 1993a), little is known about population activity within the brainstem.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement identifies a knowledge gap that motivates the current study.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:29:19.788894Z"
+    },
+    {
+      "id": "43d2c38c-e06b-4fc4-b391-e43920930a16",
+      "content_id": "7a40cc6f-507d-4211-a2cd-9050a84c0275",
+      "claim_id": "C13",
+      "claim": "The brainstem, including the midbrain, pons and medulla has long been implicated in the sleep-wake cycle.",
+      "claim_type": "EXPLICIT",
+      "source": "The brainstem, including the midbrain, pons and medulla has long been implicated in the sleep-wake cycle (Jouvet, 1962; Saper et al., 2010; Brown et al., 2012; Rasch and Born, 2013; Weber et al., 2015; Weber and Dan, 2016; Luppi et al., 2017; Scammell et al., 2017; H\u00e9ric\u00e9 et al., 2019; Liu and Dan, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by extensive citations to prior research on brainstem involvement in sleep-wake regulation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:29:19.788894Z"
+    },
+    {
+      "id": "e675ed22-bd3d-4696-9e02-6d0e89762595",
+      "content_id": "7a40cc6f-507d-4211-a2cd-9050a84c0275",
+      "claim_id": "C14",
+      "claim": "The brainstem contains various nuclei, each of which consists of diverse cell-types and exhibits state-dependent firing.",
+      "claim_type": "EXPLICIT",
+      "source": "It contains various nuclei, each of which consists of diverse cell-types and exhibits state-dependent firing (Brown et al., 2012; Rasch and Born, 2013; Weber et al., 2015; Weber and Dan, 2016; Luppi et al., 2017; Scammell et al., 2017; H\u00e9ric\u00e9 et al., 2019; Liu and Dan, 2019; Weber et al., 2018; Zhang et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior literature on brainstem anatomy and function.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:29:19.788894Z"
+    },
+    {
+      "id": "496a9169-9753-4ae7-abcf-e4bdbdb227bb",
+      "content_id": "7a40cc6f-507d-4211-a2cd-9050a84c0275",
+      "claim_id": "C15",
+      "claim": "Recorded regions spanned across multiple nuclei, including the sublaterodorsal nucleus, pontine reticular nucleus, medial preoptic nucleus, parabrachial nucleus, pontine central gray, laterodorsal tegmental nucleus and other surrounding areas.",
+      "claim_type": "EXPLICIT",
+      "source": "Recorded regions spanned across multiple nuclei, including the sublaterodorsal nucleus, pontine reticular nucleus, medial preoptic nucleus, parabrachial nucleus, pontine central gray, laterodorsal tegmental nucleus and other surrounding areas according to post-mortem histological analysis (Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on histological verification of recording sites shown in Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:29:19.788894Z"
+    },
+    {
+      "id": "26073cb1-7d9e-4a0c-b100-6c506c9f82ba",
+      "content_id": "7a40cc6f-507d-4211-a2cd-9050a84c0275",
+      "claim_id": "C16",
+      "claim": "Wakefulness was characterized by high muscle tone and pupil dilation.",
+      "claim_type": "EXPLICIT",
+      "source": "wakefulness was characterized by high muscle tone (Figure 1D) and pupil dilation (Figure 1F)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by the data shown in Figures 1D and 1F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:29:19.788894Z"
+    },
+    {
+      "id": "f92867fc-5f92-4f4b-99ce-d86cf4ec31fe",
+      "content_id": "7a40cc6f-507d-4211-a2cd-9050a84c0275",
+      "claim_id": "C17",
+      "claim": "NREM sleep was characterized by higher power of slow oscillations and a wider dynamic range of pupil diameter.",
+      "claim_type": "EXPLICIT",
+      "source": "whereas NREM sleep was characterized by higher power of slow oscillations (Figure 1C) and a wider dynamic range of pupil diameter (Figure 1F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by the data shown in Figures 1C and 1F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:29:19.788894Z"
+    },
+    {
+      "id": "83e11594-0d0e-4806-b242-7b2447ce91c5",
+      "content_id": "7a40cc6f-507d-4211-a2cd-9050a84c0275",
+      "claim_id": "C18",
+      "claim": "REM sleep was distinct from the other states, with respect to prominent theta oscillations, low muscle tone, higher brainstem LFPs power and fully constricted pupil.",
+      "claim_type": "EXPLICIT",
+      "source": "REM sleep was distinct from the other states, with respect to prominent theta oscillations (Figure 1C), low muscle tone (Figure 1D), higher brainstem LFPs power (Figure 1E) and fully constricted pupil (Figure 1F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by the data shown in Figures 1C-F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:29:19.788894Z"
+    },
+    {
+      "id": "bc72aa75-a9a6-4e30-8d6a-b61aa9cb07b2",
+      "content_id": "7a40cc6f-507d-4211-a2cd-9050a84c0275",
+      "claim_id": "C19",
+      "claim": "The higher power of brainstem LFPs during REM sleep was preserved across all animals (seven animals, nine recordings).",
+      "claim_type": "EXPLICIT",
+      "source": "The higher power of brainstem LFPs during REM sleep was preserved across all animals (seven animals, nine recordings) (Figure 1\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by the data shown in Figure 1\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:29:19.788894Z"
+    },
+    {
+      "id": "0cd39bcf-008d-4655-8643-93a2c05fb670",
+      "content_id": "7a40cc6f-507d-4211-a2cd-9050a84c0275",
+      "claim_id": "C20",
+      "claim": "The sleep architecture, cortical EEGs and EMGs were generally comparable between head-fixed and tethered unfixed conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "Although most of our recordings were performed under a head-fixed condition, the sleep architecture, cortical EEGs and EMGs were generally comparable with those in a tethered unfixed condition (Figure 1\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by the comparison shown in Figure 1\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:29:19.788894Z"
+    },
+    {
+      "id": "10341da8-ff5d-46fc-8f50-4b08e197a4df",
+      "content_id": "7a40cc6f-507d-4211-a2cd-9050a84c0275",
+      "claim_id": "C21",
+      "claim": "Four functional classes of brainstem neurons were identified: awake (AW)-on neurons (23.7%), REM-off neurons (17.1%), REM/AW-on neurons (6.6%), and REM-on neurons (52.6%).",
+      "claim_type": "EXPLICIT",
+      "source": "We identified four functional classes: awake (AW)-on neurons (23.7%) were more active during wakefulness than during sleep states; REM-off neurons (17.1%) reduced their firing during REM sleep; REM/AW-on neurons (6.6%) were quiet during NREM sleep; and the largest class (52.6%) was REM-on neurons, which showed the highest firing rate during REM sleep.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on hierarchical clustering analysis of state-dependent firing rates shown in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:29:19.788894Z"
+    },
+    {
+      "id": "ddc6f6f9-c561-49f9-9614-bb5991ccaa55",
+      "content_id": "7a40cc6f-507d-4211-a2cd-9050a84c0275",
+      "claim_id": "C22",
+      "claim": "Cholinergic populations showed larger activity during REM sleep and wakefulness than during NREM sleep (F2,32 = 5.12, p=0.012, one-way ANOVA).",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with the data from in vivo electrophysiology, cholinergic populations showed larger activity during REM sleep and wakefulness than during NREM sleep (F2,32 = 5.12, p=0.012, one-way ANOVA) (Figure 2E\u2013G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by fiber photometry data shown in Figures 2E-G with statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:29:19.788894Z"
+    },
+    {
+      "id": "2ca535cf-3ecd-423b-b574-0f06a83ebbe4",
+      "content_id": "7a40cc6f-507d-4211-a2cd-9050a84c0275",
+      "claim_id": "C23",
+      "claim": "Pupil diameter is an excellent biomarker of global brain state or arousal level.",
+      "claim_type": "EXPLICIT",
+      "source": "Pupil diameter is an excellent biomarker of global brain state or arousal level (Aston-Jones and Cohen, 2005; Y\u00fczge\u00e7 et al., 2018; Larsen and Waters, 2018; McGinley et al., 2015)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior literature on pupil diameter as a biomarker.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:29:19.788894Z"
+    },
+    {
+      "id": "8160b90d-7727-4153-9258-31183607a0ee",
+      "content_id": "7a40cc6f-507d-4211-a2cd-9050a84c0275",
+      "claim_id": "C24",
+      "claim": "Activity in brainstem neurons, especially in locus coeruleus norepinephrine neurons, correlates with pupil diameter.",
+      "claim_type": "EXPLICIT",
+      "source": "and activity in brainstem neurons, especially in locus coeruleus norepinephrine neurons, correlates with pupil diameter (Aston-Jones and Cohen, 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:29:19.788894Z"
+    },
+    {
+      "id": "6c4079ef-e1dc-49c4-b7e5-07d4f8c27d05",
+      "content_id": "7a40cc6f-507d-4211-a2cd-9050a84c0275",
+      "claim_id": "C25",
+      "claim": "The effects of behavioral states on pupil diameter was statistically significant (F2, 53 = 220.33, p<0.0001, one-way ANOVA).",
+      "claim_type": "EXPLICIT",
+      "source": "The effects of behavioral states on pupil diameter was statistically significant (Figure 3A, F2, 53 = 220.33, p<0.0001, one-way ANOVA), with pupil diameter being constricted during REM sleep and dilated during wakefulness.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by statistical analysis of pupil diameter data shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:29:19.788894Z"
+    },
+    {
+      "id": "9111eeac-8fdd-4918-b83e-f0f147f4d02d",
+      "content_id": "7a40cc6f-507d-4211-a2cd-9050a84c0275",
+      "claim_id": "C26",
+      "claim": "Pupil diameter was constricted during REM sleep and dilated during wakefulness.",
+      "claim_type": "EXPLICIT",
+      "source": "The effects of behavioral states on pupil diameter was statistically significant (Figure 3A, F2, 53 = 220.33, p<0.0001, one-way ANOVA), with pupil diameter being constricted during REM sleep and dilated during wakefulness.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by the data shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:29:19.788894Z"
+    },
+    {
+      "id": "1f2e2c17-c60c-4fbf-8ab7-9d879c56f49b",
+      "content_id": "7a40cc6f-507d-4211-a2cd-9050a84c0275",
+      "claim_id": "C27",
+      "claim": "Pupil diameter dynamically fluctuated during wakefulness and gradually constricted during NREM sleep.",
+      "claim_type": "EXPLICIT",
+      "source": "With respect to pupil dilation dynamics across states (Figure 3B and Figure 3\u2014figure supplement 1), pupil diameter dynamically fluctuated during wakefulness and gradually constricted during NREM sleep.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by the data shown in Figure 3B and Figure 3\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:29:19.788894Z"
+    },
+    {
+      "id": "0621d1a5-68c6-4483-9c7c-fb5d4b3f7cf0",
+      "content_id": "7a40cc6f-507d-4211-a2cd-9050a84c0275",
+      "claim_id": "C28",
+      "claim": "10\u201320 s before REM sleep, the pupil diameter would further decrease and was fully constricted during REM sleep.",
+      "claim_type": "EXPLICIT",
+      "source": "Typically, 10\u201320 s before REM sleep, the pupil diameter would further decrease and was fully constricted during REM sleep (Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by the data shown in Figure 3\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:29:19.788894Z"
+    },
+    {
+      "id": "00eb4df1-fe41-42c3-b92e-d916c90a7f97",
+      "content_id": "7a40cc6f-507d-4211-a2cd-9050a84c0275",
+      "claim_id": "C29",
+      "claim": "Most of the neurons showed asymmetric profiles of R2 values when predicting pupil dilation.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, most of the neurons showed asymmetric profiles of R2 values (Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by the linear regression analysis shown in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:29:19.788894Z"
+    },
+    {
+      "id": "cc590281-3ce5-482c-9d88-64dfc6904fe9",
+      "content_id": "7a40cc6f-507d-4211-a2cd-9050a84c0275",
+      "claim_id": "C30",
+      "claim": "The average profile showed brainstem neuron activities that were predictive of pupil diameter around 10 s in advance.",
+      "claim_type": "EXPLICIT",
+      "source": "Although individual profiles were diverse, the average profile showed brainstem neuron activities that were predictive of pupil diameter around 10 s in advance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the analysis of R2 values shown in Figure 3C.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:29:19.788894Z"
+    },
+    {
+      "id": "d04b9d1a-e4ba-45e5-94c8-ae892a268e6a",
+      "content_id": "7a40cc6f-507d-4211-a2cd-9050a84c0275",
+      "claim_id": "C31",
+      "claim": "Changes in brainstem neural activity preceded those in pupil diameter.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, changes in brainstem neural activity preceded those in pupil diameter.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the asymmetric predictability profiles shown in Figures 3C and 3D.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:29:19.788894Z"
+    },
+    {
+      "id": "b08b1f1c-08f9-4907-aeda-b665c9a2bc3b",
+      "content_id": "7a40cc6f-507d-4211-a2cd-9050a84c0275",
+      "claim_id": "C32",
+      "claim": "Brainstem populations have predictive power for pupil diameter.",
+      "claim_type": "EXPLICIT",
+      "source": "Thereby, brainstem populations have predictive power for pupil diameter.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is concluded from the multiple linear regression analysis shown in Figure 3D.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:29:19.788894Z"
+    },
+    {
+      "id": "a6bc3cb3-5fa6-47a1-afe0-55ac830ca0b0",
+      "content_id": "7a40cc6f-507d-4211-a2cd-9050a84c0275",
+      "claim_id": "C33",
+      "claim": "Non-negative matrix factorization (NMF) is a technique that finds compact and easily interpretable representations of neural population activity in the form of parts-based activity patterns.",
+      "claim_type": "EXPLICIT",
+      "source": "To address this, first, we extracted the features of neural population activity by applying non-negative matrix factorization (NMF), a technique that finds compact and easily interpretable representations of neural population activity in the form of parts-based activity patterns (Lee and Seung, 1999; Onken et al., 2016) (Figure 4A and B) (see 'Materials and methods').",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior literature on NMF methodology.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:29:19.788894Z"
+    },
+    {
+      "id": "283b277b-912d-4b3c-a786-4b0f161db93f",
+      "content_id": "7a40cc6f-507d-4211-a2cd-9050a84c0275",
+      "claim_id": "C34",
+      "claim": "NMF was able to extract several modules that captured state-dependent firing patterns across neurons in an unsupervised fashion.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall firing rate reflected state changes (Figure 4A), whereas NMF was able to extract several modules that captured state-dependent firing patterns across neurons in an unsupervised fashion.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by the NMF analysis shown in Figure 4A and B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:29:19.788894Z"
+    },
+    {
+      "id": "54a80e97-2cad-4bf0-bf81-28bf23c15e33",
+      "content_id": "7a40cc6f-507d-4211-a2cd-9050a84c0275",
+      "claim_id": "C35",
+      "claim": "Module 1 represented REM-on activity, whereas module 2 was activated at the end of NREM sleep and module 3 was most active during wakefulness.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, module 1 represented REM-on activity, whereas module 2 was activated at the end of NREM sleep and module 3 was most active during wakefulness.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the NMF analysis shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:29:19.788894Z"
+    },
+    {
+      "id": "8a10c85b-3169-4068-bc65-df0c18586864",
+      "content_id": "7a40cc6f-507d-4211-a2cd-9050a84c0275",
+      "claim_id": "C36",
+      "claim": "The weights in each module were consistent with the state-dependency of individual neural firing.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, the weights in each module were consistent with the state-dependency of individual neural firing (Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by the analysis shown in Figure 4\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:29:19.788894Z"
+    },
+    {
+      "id": "9e9b51e2-3174-42f7-b7da-3eb1a1abf4c6",
+      "content_id": "7a40cc6f-507d-4211-a2cd-9050a84c0275",
+      "claim_id": "C37",
+      "claim": "Brainstem populations showed predictive activity tens of seconds before transitions into all three behavioral states.",
+      "claim_type": "EXPLICIT",
+      "source": "Brainstem populations showed predictive activity tens of seconds before transitions into all three behavioral states.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by the decoding analysis shown in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:29:19.788894Z"
+    },
+    {
+      "id": "637c1877-e05e-4d11-b436-e410c9205522",
+      "content_id": "7a40cc6f-507d-4211-a2cd-9050a84c0275",
+      "claim_id": "C38",
+      "claim": "Hippocampal neurons are well known to exhibit state-dependent firing.",
+      "claim_type": "EXPLICIT",
+      "source": "Of many brain regions, hippocampal neurons are well known to exhibit state-dependent firing (Buzs\u00e1ki, 2002; Buzs\u00e1ki, 2015; Mizuseki and Miyawaki, 2017)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior literature on hippocampal neural activity.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:29:19.788894Z"
+    },
+    {
+      "id": "ffc3a626-e149-4cd4-a6e1-eb65a95baad2",
+      "content_id": "7a40cc6f-507d-4211-a2cd-9050a84c0275",
+      "claim_id": "C39",
+      "claim": "CA1 neurons also had predictive power for several tens of seconds, but the profile was relatively short-lasting compared to that of brainstem neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Although CA1 neurons also had predictive power for several tens of seconds, the profile was relatively short-lasting compared to that of brainstem neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by the comparative analysis shown in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:29:19.788894Z"
+    },
+    {
+      "id": "39377785-2124-4f61-9b56-2915c138f1f4",
+      "content_id": "7a40cc6f-507d-4211-a2cd-9050a84c0275",
+      "claim_id": "C40",
+      "claim": "Brainstem neurons have longer-lasting predictive power for behavioral states than hippocampal CA1 neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, brainstem neurons have longer-lasting predictive power for behavioral states than hippocampal CA1 neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is concluded from the comparative analysis shown in Figure 4C.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:29:19.788894Z"
+    },
+    {
+      "id": "ac1df25d-8ee2-42c1-9e2d-5d1655c0910b",
+      "content_id": "7a40cc6f-507d-4211-a2cd-9050a84c0275",
+      "claim_id": "C41",
+      "claim": "P-waves appeared more often during REM sleep (p<0.0001, two-tailed t-test).",
+      "claim_type": "EXPLICIT",
+      "source": "These neural events appeared more often during REM sleep (p<0.0001, two-tailed t-test) (Figure 5C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by the statistical analysis shown in Figure 5C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:29:19.788894Z"
+    },
+    {
+      "id": "65ca4a5b-1e40-4446-9537-dc77bc1f1998",
+      "content_id": "7a40cc6f-507d-4211-a2cd-9050a84c0275",
+      "claim_id": "C42",
+      "claim": "The frequency of P-waves gradually increased during NREM to REM sleep transitions and decreased during REM sleep to wakefulness transitions.",
+      "claim_type": "EXPLICIT",
+      "source": "Intriguingly, the frequency of these events gradually increased during NREM to REM sleep transitions and decreased during REM sleep to wakefulness transitions (Figure 5D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by the temporal evolution analysis shown in Figure 5D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:29:19.788894Z"
+    },
+    {
+      "id": "42eacb35-47ee-45c5-8332-410ea2236192",
+      "content_id": "7a40cc6f-507d-4211-a2cd-9050a84c0275",
+      "claim_id": "C43",
+      "claim": "These neural events are P-waves in mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Because these characteristics generally resemble those in other species (Callaway et al., 1987; Datta, 1997), we concluded that these neural events are P-waves in mice.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This conclusion is based on comparison with characteristics of P-waves in other species, supported by citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:29:19.788894Z"
+    },
+    {
+      "id": "1a6df61e-8ed6-41c6-b8ae-f66d748bf20d",
+      "content_id": "7a40cc6f-507d-4211-a2cd-9050a84c0275",
+      "claim_id": "C44",
+      "claim": "Many of the simultaneously recorded brainstem neurons fired during P-waves.",
+      "claim_type": "EXPLICIT",
+      "source": "Many of the simultaneously recorded brainstem neurons fired during P-waves.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by the example shown in Figure 5F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:29:19.788894Z"
+    },
+    {
+      "id": "fd57e9a4-0517-4664-b209-3c95cbb101eb",
+      "content_id": "7a40cc6f-507d-4211-a2cd-9050a84c0275",
+      "claim_id": "C45",
+      "claim": "A subset of neurons showed peak firing at the falling phase of P-waves.",
+      "claim_type": "EXPLICIT",
+      "source": "A subset of neurons showed peak firing at the falling phase of P-waves.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by the peri-event time histograms shown in Figures 5G and 5H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:29:19.788894Z"
+    },
+    {
+      "id": "abd0cfb9-2a3c-41b2-a33f-26d07e191827",
+      "content_id": "7a40cc6f-507d-4211-a2cd-9050a84c0275",
+      "claim_id": "C46",
+      "claim": "This tendency was consistent between NREM and REM sleep with respect to neural firing within the brainstem, suggesting that P-waves during NREM sleep (P-wavesNREM) are equivalent to P-waves during REM sleep (P-wavesREM).",
+      "claim_type": "EXPLICIT",
+      "source": "This tendency was consistent between NREM and REM sleep with respect to neural firing within the brainstem, suggesting that P-waves during NREM sleep (P-wavesNREM) are equivalent to P-waves during REM sleep (P-wavesREM).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the similarity in neural firing patterns shown in Figures 5G and 5H.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:29:19.788894Z"
+    },
+    {
+      "id": "b2260e03-8a5c-463e-8ba0-e406496a51f8",
+      "content_id": "7a40cc6f-507d-4211-a2cd-9050a84c0275",
+      "claim_id": "C47",
+      "claim": "During NREM sleep, P-waves were associated with multiple oscillatory components.",
+      "claim_type": "EXPLICIT",
+      "source": "During NREM sleep, P-waves were associated with multiple oscillatory components.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by the averaged P-wave-triggered cortical EEGs shown in Figure 6B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:29:19.788894Z"
+    },
+    {
+      "id": "290723b3-7b3f-4b21-83d4-7a9891344504",
+      "content_id": "7a40cc6f-507d-4211-a2cd-9050a84c0275",
+      "claim_id": "C48",
+      "claim": "Averaged P-wave-triggered cortical EEGs exhibited multiple phasic components, which consisted of delta (1\u20134 Hz), theta (~7 Hz) and beta (15 ~ 30 Hz) frequencies.",
+      "claim_type": "EXPLICIT",
+      "source": "Averaged P-wave-triggered cortical EEGs exhibited multiple phasic components (Figure 6B), which consisted of delta (1\u20134 Hz), theta (~7 Hz) and beta (15 ~ 30 Hz) frequencies.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by the spectral analysis shown in Figure 6B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:29:19.788894Z"
+    },
+    {
+      "id": "727335b4-5974-476e-ae2f-debc8864d6e7",
+      "content_id": "7a40cc6f-507d-4211-a2cd-9050a84c0275",
+      "claim_id": "C49",
+      "claim": "Significant phase preferences of P-wave timing were found (p<0.01, Rayleigh test).",
+      "claim_type": "EXPLICIT",
+      "source": "We found significant phase preferences of P-wave timing (p<0.01, Rayleigh test).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by the phase analysis shown in Figure 6C with statistical testing.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:29:19.788894Z"
+    },
+    {
+      "id": "13cf1315-2aef-4a33-a94d-6c79682bf2cd",
+      "content_id": "7a40cc6f-507d-4211-a2cd-9050a84c0275",
+      "claim_id": "C50",
+      "claim": "Larger phase modulation was found at delta and beta ranges during NREM sleep.",
+      "claim_type": "EXPLICIT",
+      "source": "We found larger phase modulation at delta and beta ranges.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by the resultant vector length analysis shown in Figure 6D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:29:19.788894Z"
+    },
+    {
+      "id": "a7d93321-60cc-441c-89e2-fab73147f5f7",
+      "content_id": "7a40cc6f-507d-4211-a2cd-9050a84c0275",
+      "claim_id": "C51",
+      "claim": "P-wavesREM exhibited significant phase modulation at theta range (p<0.01).",
+      "claim_type": "EXPLICIT",
+      "source": "We observed significant phase modulation at theta range (p<0.01) (Figure 6C), indicating that two prominent neural markers in REM sleep, that is, theta oscillations and P-waves, are temporally organized.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by the phase analysis shown in Figure 6C with statistical testing.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:29:19.788894Z"
+    },
+    {
+      "id": "1cc013f1-9471-4c61-9c95-7a144021dc5d",
+      "content_id": "7a40cc6f-507d-4211-a2cd-9050a84c0275",
+      "claim_id": "C52",
+      "claim": "Two prominent neural markers in REM sleep, that is, theta oscillations and P-waves, are temporally organized.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed significant phase modulation at theta range (p<0.01) (Figure 6C), indicating that two prominent neural markers in REM sleep, that is, theta oscillations and P-waves, are temporally organized.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the significant phase modulation shown in Figure 6C.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:29:19.788894Z"
+    },
+    {
+      "id": "6d4dd264-07cc-4394-bbc8-582bcc585d5f",
+      "content_id": "7a40cc6f-507d-4211-a2cd-9050a84c0275",
+      "claim_id": "C53",
+      "claim": "The effect of sleep states on these phase-locking activities was statistically significant (F1,179 = 4.90, p<0.05, two-way ANOVA).",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the effect of sleep states on these phase-locking activities was statistically significant (F1,179 = 4.90, p<0.05, two-way ANOVA).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by statistical analysis of phase-locking data shown in Figure 6D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:29:19.788894Z"
+    },
+    {
+      "id": "9a25d264-b6ec-424c-8ea3-79c8ba3641e5",
+      "content_id": "7a40cc6f-507d-4211-a2cd-9050a84c0275",
+      "claim_id": "C54",
+      "claim": "The temporal coupling between P-waves and cortical oscillations was modified by sleep states.",
+      "claim_type": "EXPLICIT",
+      "source": "Hence, the temporal coupling between P-waves and cortical oscillations was modified by sleep states.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is concluded from the state-dependent differences in phase-locking shown in Figures 6D and 6E.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:29:19.788894Z"
+    },
+    {
+      "id": "3a3c4c03-b782-4b98-8db4-e1a63330e3b6",
+      "content_id": "7a40cc6f-507d-4211-a2cd-9050a84c0275",
+      "claim_id": "C55",
+      "claim": "The effect of sleep states on the resultant vector length was significant (F1,79 = 4.00, p<0.05, two-way ANOVA) for hippocampal LFPs.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the effect of sleep states on the resultant vector length was significant (F1,79 = 4.00, p<0.05, two-way ANOVA).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by statistical analysis of hippocampal LFP phase-locking shown in Figure 7B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:29:19.788894Z"
+    },
+    {
+      "id": "9413907c-1427-4edc-ad6b-4fa06f52b758",
+      "content_id": "7a40cc6f-507d-4211-a2cd-9050a84c0275",
+      "claim_id": "C56",
+      "claim": "The timing of P-waves was strongly phase-locked at the theta range (~7 Hz) in both sleep states.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the effect of sleep states on the resultant vector length was significant (F1,79 = 4.00, p<0.05, two-way ANOVA). The timing of P-waves was strongly phase-locked at the theta range (~7 Hz) in both sleep states and there was no significant difference in the resultant vector length across frequencies, but we observed stronger phase modulations in high frequency (\u226530 Hz) components during REM sleep based on the effect size.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by the phase analysis shown in Figure 7B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:29:19.788894Z"
+    },
+    {
+      "id": "919f3480-f014-4a32-8e86-2fd4f30e4458",
+      "content_id": "7a40cc6f-507d-4211-a2cd-9050a84c0275",
+      "claim_id": "C57",
+      "claim": "Stronger phase modulations in high frequency (\u226530 Hz) components were observed during REM sleep based on the effect size.",
+      "claim_type": "EXPLICIT",
+      "source": "we observed stronger phase modulations in high frequency (\u226530 Hz) components during REM sleep based on the effect size.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by the effect size analysis shown in Figure 7B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:29:19.788894Z"
+    },
+    {
+      "id": "844e4edb-b3c9-4955-bd26-bfac17b5f9ff",
+      "content_id": "7a40cc6f-507d-4211-a2cd-9050a84c0275",
+      "claim_id": "C58",
+      "claim": "A subset of CA1 neurons fired most strongly around the timing of P-waves during both NREM and REM sleep.",
+      "claim_type": "EXPLICIT",
+      "source": "Intriguingly, although a subset of CA1 neurons fired most strongly around the timing of P-waves during both NREM and REM sleep, the temporal order between CA1 neural firing and P-waves was state-dependent (Figure 7C)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by the peri-event time histograms shown in Figure 7C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:29:19.788894Z"
+    },
+    {
+      "id": "35d20e4f-5de5-40a7-bcd3-f780c97e994e",
+      "content_id": "7a40cc6f-507d-4211-a2cd-9050a84c0275",
+      "claim_id": "C59",
+      "claim": "The temporal order between CA1 neural firing and P-waves was state-dependent.",
+      "claim_type": "EXPLICIT",
+      "source": "Intriguingly, although a subset of CA1 neurons fired most strongly around the timing of P-waves during both NREM and REM sleep, the temporal order between CA1 neural firing and P-waves was state-dependent (Figure 7C)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by the peri-event time histograms shown in Figure 7C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:29:19.788894Z"
+    },
+    {
+      "id": "cacd7e3b-1e6d-41bd-a42a-b67b87ed215d",
+      "content_id": "7a40cc6f-507d-4211-a2cd-9050a84c0275",
+      "claim_id": "C60",
+      "claim": "During NREM sleep, co-firing of hippocampal neurons was followed by P-waves.",
+      "claim_type": "EXPLICIT",
+      "source": "during NREM sleep, co-firing of hippocampal neurons was followed by P-waves, whereas P-waves were followed by burst firing in a subset of CA1 neurons during REM sleep.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by the peri-event time histograms shown in Figure 7C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:29:19.788894Z"
+    },
+    {
+      "id": "5d5c89a4-9a99-4ea3-9e00-4a0404a81b4e",
+      "content_id": "7a40cc6f-507d-4211-a2cd-9050a84c0275",
+      "claim_id": "C61",
+      "claim": "P-waves were followed by burst firing in a subset of CA1 neurons during REM sleep.",
+      "claim_type": "EXPLICIT",
+      "source": "during NREM sleep, co-firing of hippocampal neurons was followed by P-waves, whereas P-waves were followed by burst firing in a subset of CA1 neurons during REM sleep.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by the peri-event time histograms shown in Figure 7C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:29:19.788894Z"
+    },
+    {
+      "id": "a45163dd-c323-402f-aa13-75a10a6e3869",
+      "content_id": "7a40cc6f-507d-4211-a2cd-9050a84c0275",
+      "claim_id": "C62",
+      "claim": "Ripple events preceded P-waves during NREM sleep across all of four recordings (p<0.05, t-test).",
+      "claim_type": "EXPLICIT",
+      "source": "We found that ripple events preceded P-waves during NREM sleep across all of four recordings (Figure 7D inset) (p<0.05, t-test).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by the temporal analysis shown in Figure 7D with statistical testing.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:29:19.788894Z"
+    },
+    {
+      "id": "97c14b54-b303-4cf8-bdba-1833558ca491",
+      "content_id": "7a40cc6f-507d-4211-a2cd-9050a84c0275",
+      "claim_id": "C63",
+      "claim": "P-waves are strongly associated with hippocampal activity in both sleep states.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, P-waves are strongly associated with hippocampal activity in both sleep states.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is concluded from the analyses shown in Figure 7.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:29:19.788894Z"
+    },
+    {
+      "id": "5371ce16-c06a-4ec2-9b37-5607989ea590",
+      "content_id": "7a40cc6f-507d-4211-a2cd-9050a84c0275",
+      "claim_id": "C64",
+      "claim": "These associations are state-dependent.",
+      "claim_type": "EXPLICIT",
+      "source": "However, these associations are state-dependent.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is concluded from the state-dependent differences in temporal relationships shown in Figure 7.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:29:19.788894Z"
+    },
+    {
+      "id": "06c61834-8238-486a-a451-a48a4fd8cb1a",
+      "content_id": "7a40cc6f-507d-4211-a2cd-9050a84c0275",
+      "claim_id": "C65",
+      "claim": "Brainstem neurons show diverse state-dependent firing, with cell-type-specificity in pontine cholinergic neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "On a timescale of seconds to minutes, brainstem neurons show diverse state-dependent firing, with cell-type-specificity in pontine cholinergic neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by the electrophysiology and fiber photometry data shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:29:19.788894Z"
+    },
+    {
+      "id": "b791f699-04ce-46f5-ac17-f7172dec785a",
+      "content_id": "7a40cc6f-507d-4211-a2cd-9050a84c0275",
+      "claim_id": "C66",
+      "claim": "Brainstem activity can collectively predict pupil dilation as well as behavioral states.",
+      "claim_type": "EXPLICIT",
+      "source": "Brainstem activity can collectively predict pupil dilation as well as behavioral states.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by the analyses shown in Figures 3 and 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:29:19.788894Z"
+    },
+    {
+      "id": "80871512-ad8b-45d6-8289-990c9f95c169",
+      "content_id": "7a40cc6f-507d-4211-a2cd-9050a84c0275",
+      "claim_id": "C67",
+      "claim": "The ability to predict behavioral states is longer lasting than that of hippocampal neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "The ability to predict behavioral states is longer lasting than that of hippocampal neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by the comparative analysis shown in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:29:19.788894Z"
+    },
+    {
+      "id": "f2c847b9-f130-4653-8857-5467e840dfab",
+      "content_id": "7a40cc6f-507d-4211-a2cd-9050a84c0275",
+      "claim_id": "C68",
+      "claim": "These relatively slow dynamics may be related to observations from optogenetic experiments in which the effect of optogenetic stimulation on state transitions often emerges tens of seconds after stimulus onset.",
+      "claim_type": "EXPLICIT",
+      "source": "These relatively slow dynamics may be related to observations from optogenetic experiments in which the effect of optogenetic stimulation on state transitions often emerges tens of seconds after stimulus onset (Adamantidis et al., 2007; Van Dort et al., 2015; Zhang et al., 2019; Tsunematsu et al., 2013; Tsunematsu et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative connection to prior optogenetic studies, supported by citations.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:29:19.788894Z"
+    },
+    {
+      "id": "5d61d01a-59a8-423a-8554-34c779f14b9c",
+      "content_id": "7a40cc6f-507d-4211-a2cd-9050a84c0275",
+      "claim_id": "C69",
+      "claim": "P-waves typically appear during REM sleep and less often during NREM sleep.",
+      "claim_type": "EXPLICIT",
+      "source": "P-waves typically appear during REM sleep and less often during NREM sleep.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by the frequency analysis shown in Figure 5C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:29:19.788894Z"
+    },
+    {
+      "id": "455b9603-3fce-42ad-9003-a6f34bca70f2",
+      "content_id": "7a40cc6f-507d-4211-a2cd-9050a84c0275",
+      "claim_id": "C70",
+      "claim": "P-waves in both sleep states are accompanied by synchronous firing of brainstem neurons, suggesting that underlying local activity during P-waves is similar between sleep states.",
+      "claim_type": "EXPLICIT",
+      "source": "P-waves in both sleep states are accompanied by synchronous firing of brainstem neurons, suggesting that underlying local activity during P-waves is similar between sleep states.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the similar firing patterns shown in Figures 5G and 5H.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:29:19.788894Z"
+    },
+    {
+      "id": "6746693a-6e76-4905-be08-4bad5c248a1d",
+      "content_id": "7a40cc6f-507d-4211-a2cd-9050a84c0275",
+      "claim_id": "C71",
+      "claim": "The relationship of P-waves to cortical neural events is state-dependent.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the relationship of P-waves to cortical neural events is state-dependent",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by the state-dependent differences shown in Figures 6 and 7.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:29:19.788894Z"
+    },
+    {
+      "id": "74718363-7822-404f-95e3-1ff995a126cb",
+      "content_id": "7a40cc6f-507d-4211-a2cd-9050a84c0275",
+      "claim_id": "C72",
+      "claim": "The timing of P-wavesNREM are phase-locked to various cortical oscillations.",
+      "claim_type": "EXPLICIT",
+      "source": "the timing of P-wavesNREM are phase-locked to various cortical oscillations",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by the phase analysis shown in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:29:19.788894Z"
+    },
+    {
+      "id": "a0a60e30-fb6f-4c9e-ab07-15025b11a0f9",
+      "content_id": "7a40cc6f-507d-4211-a2cd-9050a84c0275",
+      "claim_id": "C73",
+      "claim": "P-wavesNREM are part of the brain-wide neural events triggered by SWRs.",
+      "claim_type": "EXPLICIT",
+      "source": "hippocampal SWRs precede P-wavesNREM, suggesting that P-wavesNREM are part of the brain-wide neural events triggered by SWRs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the temporal relationship shown in Figure 7D.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:29:19.788894Z"
+    },
+    {
+      "id": "dd56726d-779c-405f-a5a4-9a052a0b28e9",
+      "content_id": "7a40cc6f-507d-4211-a2cd-9050a84c0275",
+      "claim_id": "C74",
+      "claim": "P-waves are phase-locked most strongly at theta frequency in both the neocortex and hippocampus during REM sleep.",
+      "claim_type": "EXPLICIT",
+      "source": "During REM sleep, P-waves are phase-locked most strongly at theta frequency in both the neocortex and hippocampus.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by the phase analysis shown in Figures 6 and 7.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:29:19.788894Z"
+    },
+    {
+      "id": "2a2fa8d7-0a6e-493f-a616-257896bb9aa8",
+      "content_id": "7a40cc6f-507d-4211-a2cd-9050a84c0275",
+      "claim_id": "C75",
+      "claim": "P-waves precede firing in a subset of hippocampal CA1 neurons during REM sleep.",
+      "claim_type": "EXPLICIT",
+      "source": "Crucially, P-waves precede firing in a subset of hippocampal CA1 neurons, suggesting that P-wavesREM may trigger brain-wide neural events.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by the peri-event time histograms shown in Figure 7C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:29:19.788894Z"
+    },
+    {
+      "id": "ff9827eb-4188-4220-9aca-735c2c6d7c6b",
+      "content_id": "7a40cc6f-507d-4211-a2cd-9050a84c0275",
+      "claim_id": "C76",
+      "claim": "P-wavesREM may trigger brain-wide neural events.",
+      "claim_type": "EXPLICIT",
+      "source": "Crucially, P-waves precede firing in a subset of hippocampal CA1 neurons, suggesting that P-wavesREM may trigger brain-wide neural events.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative inference based on the temporal relationship shown in Figure 7C.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:29:19.788894Z"
+    },
+    {
+      "id": "66a06f98-a9dc-4236-8e4a-a05ee83ad1f2",
+      "content_id": "7a40cc6f-507d-4211-a2cd-9050a84c0275",
+      "claim_id": "C77",
+      "claim": "P-waves are part of the state-dependent coordinated activity across the brain.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, P-waves are part of the state-dependent coordinated activity across the brain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is concluded from the state-dependent interactions shown in Figures 6 and 7.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:29:19.788894Z"
+    },
+    {
+      "id": "a2d8492d-77c4-4e19-836f-6fdcff2de448",
+      "content_id": "7a40cc6f-507d-4211-a2cd-9050a84c0275",
+      "claim_id": "C78",
+      "claim": "Silicon probe recording allowed quantification of the state dependency of brainstem neural ensemble dynamics on a timescale of seconds to minutes.",
+      "claim_type": "EXPLICIT",
+      "source": "This approach allowed us (1) to quantify the state dependency of brainstem neural ensemble dynamics on a timescale of seconds to minutes",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological claim about what the silicon probe approach enabled.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:29:19.788894Z"
+    },
+    {
+      "id": "b6bd8d72-a9aa-4a7f-8afb-dbc134ffcf54",
+      "content_id": "7a40cc6f-507d-4211-a2cd-9050a84c0275",
+      "claim_id": "C79",
+      "claim": "Silicon probe recording allowed decoding of vigilance states on the basis of population activity.",
+      "claim_type": "EXPLICIT",
+      "source": "(2) to decode vigilance states on the basis of population activity",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological claim about what the silicon probe approach enabled.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:29:19.788894Z"
+    },
+    {
+      "id": "3e20d52f-f49a-40a9-ae4b-952b890cd394",
+      "content_id": "7a40cc6f-507d-4211-a2cd-9050a84c0275",
+      "claim_id": "C80",
+      "claim": "Silicon probe recording allowed characterization of neural population activity underlying P-waves for the first time.",
+      "claim_type": "EXPLICIT",
+      "source": "and (3) to characterize neural population activity underlying P-waves for the first time.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological claim about what the silicon probe approach enabled.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:29:19.788894Z"
+    },
+    {
+      "id": "c1921fd3-9065-4bea-929d-283d59822614",
+      "content_id": "7a40cc6f-507d-4211-a2cd-9050a84c0275",
+      "claim_id": "C81",
+      "claim": "The asymmetric profile of the predictability of pupil diameter suggests that the modulation of brainstem activity precedes pupil dilation, rather than being simply correlated to it.",
+      "claim_type": "EXPLICIT",
+      "source": "Crucially, the asymmetric profile of the predictability of pupil diameter suggests that the modulation of brainstem activity precedes pupil dilation, rather than being simply correlated to it.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the asymmetric predictability profiles shown in Figures 3C and 3D.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:29:19.788894Z"
+    },
+    {
+      "id": "4541717a-4555-4814-a1d3-003aa85535e2",
+      "content_id": "7a40cc6f-507d-4211-a2cd-9050a84c0275",
+      "claim_id": "C82",
+      "claim": "The long-lasting predictability of brainstem populations for behavioral states is not trivial.",
+      "claim_type": "EXPLICIT",
+      "source": "The long-lasting predictability of brainstem populations for behavioral states is not trivial.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement emphasizing the significance of the finding.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:29:19.788894Z"
+    },
+    {
+      "id": "a2436e8d-dc5b-4443-a5ba-9fa239108cd7",
+      "content_id": "7a40cc6f-507d-4211-a2cd-9050a84c0275",
+      "claim_id": "C83",
+      "claim": "The slow (30\u201360 s) timescale recalls the timescale observed in some optogenetic experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "Intriguingly, the slow (30\u201360 s) timescale recalls us the timescale observed in some of optogenetic experiments",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison to prior optogenetic studies.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:29:19.788894Z"
+    },
+    {
+      "id": "6e45e24c-e3ae-4e7d-a6ff-924ba630765a",
+      "content_id": "7a40cc6f-507d-4211-a2cd-9050a84c0275",
+      "claim_id": "C84",
+      "claim": "Although optogenetic stimulation can modulate neural firing at a millisecond resolution, the effect of optical stimulation on state transitions typically emerges tens of seconds after stimulus onset.",
+      "claim_type": "EXPLICIT",
+      "source": "although optogenetic stimulation can modulate neural firing at a millisecond resolution, the effect of optical stimulation on state transitions typically emerges tens of seconds after stimulus onset (Adamantidis et al., 2007; Van Dort et al., 2015; Zhang et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior optogenetic studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:29:19.788894Z"
+    },
+    {
+      "id": "2410ead1-3e35-4b5f-9bc5-64c85e9dc5c8",
+      "content_id": "7a40cc6f-507d-4211-a2cd-9050a84c0275",
+      "claim_id": "C85",
+      "claim": "The modulation of neural activity in the brainstem occurs tens of seconds before global brain state transitions from one state to another.",
+      "claim_type": "EXPLICIT",
+      "source": "The exact mechanism is still unknown, but we hypothesize that the modulation of neural activity in the brainstem occurs tens of seconds before global brain state transitions from one state to another.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis proposed by the authors based on their findings.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:29:19.788894Z"
+    },
+    {
+      "id": "2e6471ff-fb07-4209-90ea-a099f04c7f72",
+      "content_id": "7a40cc6f-507d-4211-a2cd-9050a84c0275",
+      "claim_id": "C86",
+      "claim": "Each state emerges from complex interactions across various regions of the brain.",
+      "claim_type": "EXPLICIT",
+      "source": "In other words, each state emerges from complex interactions across various regions of the brain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about the nature of brain state transitions.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:29:19.788894Z"
+    },
+    {
+      "id": "e3f79e7e-f08f-4426-839f-bb656c8bf539",
+      "content_id": "7a40cc6f-507d-4211-a2cd-9050a84c0275",
+      "claim_id": "C87",
+      "claim": "The confirmation of P-waves in mice is important for further interrogation with respect to the generation mechanism and function of P-waves.",
+      "claim_type": "EXPLICIT",
+      "source": "Given the growing importance of mice as an animal model for sleep research (H\u00e9ric\u00e9 et al., 2019), the confirmation of P-waves in mice is important for further interrogation with respect to the generation mechanism and function of P-waves.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the significance of confirming P-waves in mice.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:29:19.788894Z"
+    },
+    {
+      "id": "c744b734-75cb-45dd-8124-6a508c8a84ba",
+      "content_id": "7a40cc6f-507d-4211-a2cd-9050a84c0275",
+      "claim_id": "C88",
+      "claim": "The waveform of P-waves in mice is generally consistent with those in other species, such as cats and rats.",
+      "claim_type": "EXPLICIT",
+      "source": "First, the waveform of P-waves in mice is generally consistent with those in other species, such as cats (Callaway et al., 1987; Jeannerod et al., 1965) and rats (Datta, 1997; Farber et al., 1980), suggesting that underlying neural ensembles may be similar across species.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on comparison with prior studies in other species, supported by citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:29:19.788894Z"
+    },
+    {
+      "id": "cd794c3d-4b0d-4b54-b80c-b4e78a6c0877",
+      "content_id": "7a40cc6f-507d-4211-a2cd-9050a84c0275",
+      "claim_id": "C89",
+      "claim": "Underlying neural ensembles may be similar across species.",
+      "claim_type": "EXPLICIT",
+      "source": "First, the waveform of P-waves in mice is generally consistent with those in other species, such as cats (Callaway et al., 1987; Jeannerod et al., 1965) and rats (Datta, 1997; Farber et al., 1980), suggesting that underlying neural ensembles may be similar across species.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative inference based on the similarity of P-wave waveforms across species.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:29:19.788894Z"
+    },
+    {
+      "id": "1362d422-22e1-4fed-a496-5f826bb1c097",
+      "content_id": "7a40cc6f-507d-4211-a2cd-9050a84c0275",
+      "claim_id": "C90",
+      "claim": "The phasic firing just before (<25 ms before) the trough of P-waves resembles the observations in cats.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, the phasic firing just before (<25 ms before) the trough of P-waves (Figure 5) resembles the observations in cats (McCarley et al., 1978; Steriade et al., 1990; Sakai and Jouvet, 1980; Nelson et al., 1983).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on comparison with prior studies in cats, supported by citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:29:19.788894Z"
+    },
+    {
+      "id": "6fcc15cd-4acd-4570-933f-e9904dbb70d8",
+      "content_id": "7a40cc6f-507d-4211-a2cd-9050a84c0275",
+      "claim_id": "C91",
+      "claim": "The frequency of P-waves during REM sleep is generally consistent across species.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, the frequency of P-waves during REM sleep is generally consistent across species (Datta, 1997).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:29:19.788894Z"
+    },
+    {
+      "id": "4ffaa02c-ba34-4f5b-b7f0-195b94f1083e",
+      "content_id": "7a40cc6f-507d-4211-a2cd-9050a84c0275",
+      "claim_id": "C92",
+      "claim": "The frequency of detected P-waves varied across experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "However, we have also noticed that the frequency of detected P-waves varied across our experiments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the current study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:29:19.788894Z"
+    },
+    {
+      "id": "6ea6a59e-149c-4e96-ab82-0881f1c32801",
+      "content_id": "7a40cc6f-507d-4211-a2cd-9050a84c0275",
+      "claim_id": "C93",
+      "claim": "Variation in P-wave frequency may be explained by variation in either the REM sleep quality or the electrode positions.",
+      "claim_type": "EXPLICIT",
+      "source": "This may be explained by variation in either the REM sleep quality or the electrode positions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative explanation for the observed variation.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:29:19.788894Z"
+    },
+    {
+      "id": "e44fa827-11ef-476c-94ef-db4f2857561c",
+      "content_id": "7a40cc6f-507d-4211-a2cd-9050a84c0275",
+      "claim_id": "C94",
+      "claim": "The temporal evolution of P-wave frequency is generally similar in mice and cats.",
+      "claim_type": "EXPLICIT",
+      "source": "Third, the temporal evolution of P-wave frequency is generally similar in mice and cats: the frequency of PGO-waves gradually increases before the transition of NREM to REM sleep in cats (Steriade et al., 1989).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on comparison with prior studies in cats, supported by citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:29:19.788894Z"
+    },
+    {
+      "id": "3ae72e76-18fd-4c8c-9b99-50d250216cf7",
+      "content_id": "7a40cc6f-507d-4211-a2cd-9050a84c0275",
+      "claim_id": "C95",
+      "claim": "The frequency of PGO-waves gradually increases before the transition of NREM to REM sleep in cats.",
+      "claim_type": "EXPLICIT",
+      "source": "Third, the temporal evolution of P-wave frequency is generally similar in mice and cats: the frequency of PGO-waves gradually increases before the transition of NREM to REM sleep in cats (Steriade et al., 1989).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior research in cats.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:29:19.788894Z"
+    },
+    {
+      "id": "2e78dcd1-800a-455f-8d3c-4035b2474108",
+      "content_id": "7a40cc6f-507d-4211-a2cd-9050a84c0275",
+      "claim_id": "C96",
+      "claim": "A similar tendency was observed in mouse recordings, though it was weak.",
+      "claim_type": "EXPLICIT",
+      "source": "Although it was weak, a similar tendency was observed in our recordings (Figure 5D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on the data shown in Figure 5D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:29:19.788894Z"
+    },
+    {
+      "id": "d21167e6-6d28-43df-ac85-b19115108174",
+      "content_id": "7a40cc6f-507d-4211-a2cd-9050a84c0275",
+      "claim_id": "C97",
+      "claim": "The frequency of P-waves increases during REM sleep.",
+      "claim_type": "EXPLICIT",
+      "source": "Rather, the frequency of P-waves increases during REM sleep.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the data shown in Figure 5D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:29:19.788894Z"
+    },
+    {
+      "id": "a52a1a5a-dd55-40ac-877f-16b25dbcf12b",
+      "content_id": "7a40cc6f-507d-4211-a2cd-9050a84c0275",
+      "claim_id": "C98",
+      "claim": "This subtle difference may be explained by anatomical differences between species.",
+      "claim_type": "EXPLICIT",
+      "source": "This subtle difference may be explained by anatomical differences between species (Datta, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative explanation supported by citation.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:29:19.788894Z"
+    },
+    {
+      "id": "189cdc7a-93b9-4d9a-9f78-b4d62720ca64",
+      "content_id": "7a40cc6f-507d-4211-a2cd-9050a84c0275",
+      "claim_id": "C99",
+      "claim": "These species differences may also imply differences in the function of P-waves between species.",
+      "claim_type": "EXPLICIT",
+      "source": "These species differences may also imply differences in the function of P-waves between species.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative inference about functional implications.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:29:19.788894Z"
+    },
+    {
+      "id": "d7ea69cb-e1e3-4220-ab29-05ffc5c0d5de",
+      "content_id": "7a40cc6f-507d-4211-a2cd-9050a84c0275",
+      "claim_id": "C100",
+      "claim": "Similar neural events also occur during NREM sleep.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, although P-waves appear more frequently during REM sleep, it is important to note that similar neural events also occur during NREM sleep.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the data shown in Figures 5B and 5C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:29:19.788894Z"
+    },
+    {
+      "id": "26a9f462-7ed9-4007-9f8e-6d28d92a46da",
+      "content_id": "7a40cc6f-507d-4211-a2cd-9050a84c0275",
+      "claim_id": "C101",
+      "claim": "The mechanisms of P-wave genesis are probably distinct between sleep states.",
+      "claim_type": "EXPLICIT",
+      "source": "Given state-dependent interactions between P-waves and cortical oscillations (Figures 6 and 7), the mechanisms of P-wave genesis are probably distinct.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from the state-dependent differences shown in Figures 6 and 7.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:29:19.788894Z"
+    },
+    {
+      "id": "89321c6a-33c5-4843-a84a-4b3baf1983af",
+      "content_id": "7a40cc6f-507d-4211-a2cd-9050a84c0275",
+      "claim_id": "C102",
+      "claim": "The temporal correlation between P-waves and hippocampal theta rhythms during REM sleep is consistent with previous studies in cats and rats.",
+      "claim_type": "EXPLICIT",
+      "source": "The temporal correlation between P-waves and hippocampal theta rhythms during REM sleep is consistent with previous studies in cats and rats (Karashima et al., 2002; Karashima et al., 2004; Karashima et al., 2005; Sakai et al., 1973).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior studies in other species.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:29:19.788894Z"
+    },
+    {
+      "id": "9f2f1d10-95d8-4f14-9002-7cdde53a47b1",
+      "content_id": "7a40cc6f-507d-4211-a2cd-9050a84c0275",
+      "claim_id": "C103",
+      "claim": "The phase-locked activity with fast gamma (80\u2013110 Hz) in the hippocampus may relate to the close association between local hippocampal theta and fast gamma events and brain-wide hyperemic events.",
+      "claim_type": "EXPLICIT",
+      "source": "The phase-locked activity with fast gamma (80\u2013110 Hz) in the hippocampus may relate to the recent observation that demonstrated the close association between local hippocampal theta and fast gamma events and brain-wide hyperemic events (Bergel et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative connection to a prior study, supported by citation.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:29:19.788894Z"
+    },
+    {
+      "id": "c6a0777b-62b3-4fed-af3c-e65832892ce4",
+      "content_id": "7a40cc6f-507d-4211-a2cd-9050a84c0275",
+      "claim_id": "C104",
+      "claim": "P-waves may play a role in the regulation of hippocampal ensemble dynamics as well as in brain-wide events during REM sleep.",
+      "claim_type": "EXPLICIT",
+      "source": "Because a number of hippocampal CA1 neurons fire immediately after P-waves (Figure 7C), P-waves may play a role in the regulation of hippocampal ensemble dynamics as well as in brain-wide events during REM sleep.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a speculative inference based on the temporal relationship shown in Figure 7C.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:29:19.788894Z"
+    },
+    {
+      "id": "745264f0-1dfe-43b8-b675-22029ec9a7e2",
+      "content_id": "7a40cc6f-507d-4211-a2cd-9050a84c0275",
+      "claim_id": "C105",
+      "claim": "SWRs are known to be generated within hippocampal circuits.",
+      "claim_type": "EXPLICIT",
+      "source": "Because SWRs precede P-waves (Figure 7D), and because SWRs are known to be generated within hippocampal circuits (Buzs\u00e1ki, 2015)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior knowledge about SWR generation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:29:19.788894Z"
+    },
+    {
+      "id": "c2f4a2b3-18ac-478c-ba98-a93313433f1a",
+      "content_id": "7a40cc6f-507d-4211-a2cd-9050a84c0275",
+      "claim_id": "C106",
+      "claim": "SWRs play a leading role in brain-wide sub-second neural events, including P-waves during NREM sleep.",
+      "claim_type": "EXPLICIT",
+      "source": "Because SWRs precede P-waves (Figure 7D), and because SWRs are known to be generated within hippocampal circuits (Buzs\u00e1ki, 2015), SWRs play a leading role in brain-wide sub-second neural events, including P-waves.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from the temporal relationship shown in Figure 7D and prior knowledge about SWR generation.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:29:19.788894Z"
+    },
+    {
+      "id": "bf20c4d2-12fd-4676-bbde-0413fc4bbef8",
+      "content_id": "7a40cc6f-507d-4211-a2cd-9050a84c0275",
+      "claim_id": "C107",
+      "claim": "These state-dependent brain-wide neural ensembles imply that different sleep states have distinct functional roles.",
+      "claim_type": "EXPLICIT",
+      "source": "These state-dependent brain-wide neural ensembles imply that different sleep states have distinct functional roles.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative inference based on the state-dependent differences observed in the study.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:29:19.788894Z"
+    },
+    {
+      "id": "7858f10f-1d7a-4c46-8b7c-a24074348d83",
+      "content_id": "7a40cc6f-507d-4211-a2cd-9050a84c0275",
+      "claim_id": "C108",
+      "claim": "A total of 21 mice were used in this study.",
+      "claim_type": "EXPLICIT",
+      "source": "A total of 21 mice were used in this study (Supplementary file 1)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological detail about the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:29:19.788894Z"
+    },
+    {
+      "id": "2791c377-e4bb-463b-901b-aa3564341b56",
+      "content_id": "7a40cc6f-507d-4211-a2cd-9050a84c0275",
+      "claim_id": "C110",
+      "claim": "All experiments were performed during the light period.",
+      "claim_type": "EXPLICIT",
+      "source": "All experiments were performed during the light period.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological detail about experimental timing.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:29:19.788894Z"
+    },
+    {
+      "id": "6dd5b392-8b52-41db-863d-dacd54ba3362",
+      "content_id": "7a40cc6f-507d-4211-a2cd-9050a84c0275",
+      "claim_id": "C111",
+      "claim": "For brainstem silicon probe recordings, six animals were used (nine recordings).",
+      "claim_type": "EXPLICIT",
+      "source": "For brainstem silicon probe recordings, six animals were used (nine recordings).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological detail about sample size.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:29:19.788894Z"
+    },
+    {
+      "id": "d766e94b-8de1-434a-bb81-e5ec60d46862",
+      "content_id": "7a40cc6f-507d-4211-a2cd-9050a84c0275",
+      "claim_id": "C112",
+      "claim": "For hippocampal silicon probe recordings, two animals were used (four recordings).",
+      "claim_type": "EXPLICIT",
+      "source": "For hippocampal silicon probe recordings, two animals were used (four recordings).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological detail about sample size.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:29:19.788894Z"
+    },
+    {
+      "id": "4900c28b-2bb2-42c2-8434-4bb07b397022",
+      "content_id": "7a40cc6f-507d-4211-a2cd-9050a84c0275",
+      "claim_id": "C113",
+      "claim": "For P-wave recordings, ten animals were used, but four were excluded because of electrode mispositioning or lack of histological data.",
+      "claim_type": "EXPLICIT",
+      "source": "For P-wave recordings, ten animals were used, but four were excluded because of electrode mispositioning or lack of histological data.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological detail about sample size and exclusion criteria.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:29:19.788894Z"
+    },
+    {
+      "id": "b239f92b-5939-40cc-b6f1-9d7a36fc9ba3",
+      "content_id": "7a40cc6f-507d-4211-a2cd-9050a84c0275",
+      "claim_id": "C114",
+      "claim": "16 datasets were used for P-wave analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "16 datasets were used for further analysis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological detail about the final sample size for P-wave analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:29:19.788894Z"
+    },
+    {
+      "id": "50f34db4-8097-4597-b619-809246e02524",
+      "content_id": "7a40cc6f-507d-4211-a2cd-9050a84c0275",
+      "claim_id": "C116",
+      "claim": "18 datasets were used for pupil analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "18 datasets were used for further analysis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological detail about the final sample size for pupil analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:29:19.788894Z"
+    },
+    {
+      "id": "62320b9e-09a4-45ef-a60c-daca439cc06d",
+      "content_id": "7a40cc6f-507d-4211-a2cd-9050a84c0275",
+      "claim_id": "C117",
+      "claim": "For fiber photometry, four animals were used (12 recordings).",
+      "claim_type": "EXPLICIT",
+      "source": "For fiber photometry, four animals were used (12 recordings).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological detail about sample size.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:29:19.788894Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "d6d7b430-868b-4d4d-9e92-8ad4ea322d2b",
+      "content_id": "7a40cc6f-507d-4211-a2cd-9050a84c0275",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The study successfully recorded brainstem neural activity across sleep-wake states in head-fixed mice, with recordings spanning multiple brainstem nuclei. State-dependent physiological markers (EEG, EMG, pupil diameter, brainstem LFP power) were characterized and found to be generally comparable between head-fixed and tethered conditions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C15-C20 provide converging evidence from histological verification, electrophysiological recordings, and behavioral monitoring that establish the experimental system. The data in Figures 1 and supplements demonstrate clear state-dependent differences in multiple physiological measures with appropriate statistical analysis and cross-condition validation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:29:19.788894Z"
+    },
+    {
+      "id": "a0a79b5f-b9f6-46b4-9953-f4f7f763b9f4",
+      "content_id": "7a40cc6f-507d-4211-a2cd-9050a84c0275",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Brainstem neurons exhibit diverse state-dependent firing patterns, with four functional classes identified (AW-on, REM-off, REM/AW-on, and REM-on neurons). Pontine cholinergic neurons specifically showed higher activity during REM sleep and wakefulness compared to NREM sleep.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C21-C22 and C65 are supported by hierarchical clustering analysis of 76 neurons (Figure 2C) and fiber photometry data from cholinergic populations (Figures 2E-G) with significant statistical results (F2,32=5.12, p=0.012). The combination of electrophysiology and calcium imaging provides complementary evidence for state-dependent and cell-type-specific firing.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:29:19.788894Z"
+    },
+    {
+      "id": "bec6e2dc-ff5d-4e42-b238-0b44c330a53b",
+      "content_id": "7a40cc6f-507d-4211-a2cd-9050a84c0275",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Brainstem neural activity predicts pupil diameter changes with approximately 10 seconds lead time. The asymmetric predictability profile indicates that brainstem activity precedes rather than simply correlates with pupil dilation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C25-C32 are supported by linear and multiple linear regression analyses (Figures 3C-D) showing asymmetric R\u00b2 profiles with peak predictability ~10s before pupil changes. The statistical significance (F2,53=220.33, p<0.0001) and consistent asymmetry across neurons support the predictive rather than correlative relationship. However, the sample size for simultaneous recordings (n=6 animals) is modest.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:29:19.788894Z"
+    },
+    {
+      "id": "ac57fbd1-49d9-432f-9df5-11c4fee11afe",
+      "content_id": "7a40cc6f-507d-4211-a2cd-9050a84c0275",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Brainstem populations exhibit longer-lasting predictive power for behavioral state transitions (tens of seconds in advance) compared to hippocampal CA1 neurons, as demonstrated by NMF-based decoding analysis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C33-C40 are supported by NMF decomposition and linear classifier analysis (Figure 4). The comparative analysis with hippocampal CA1 shows brainstem populations maintain predictive power for longer time windows. However, the hippocampal comparison is limited by small sample size (n=2 animals, 4 recordings for CA1) and the statistical test used (repeated measures ANOVA) is not fully described.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:29:19.788894Z"
+    },
+    {
+      "id": "2876eec6-7f99-41c9-87c2-345ea9db3652",
+      "content_id": "7a40cc6f-507d-4211-a2cd-9050a84c0275",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "P-waves in mice occur more frequently during REM sleep than NREM sleep, are accompanied by synchronous brainstem neuron firing in both states, and share characteristics with P-waves described in other species (cats, rats).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C41-C46 and C69-C70 are supported by bipolar electrode recordings and silicon probe data (Figure 5). Statistical analysis confirms higher frequency during REM (p<0.0001, t-test), and peri-event histograms show consistent firing patterns across states. The comparison to other species is supported by citations, though direct quantitative comparison is limited. Sample size is adequate (n=16 datasets).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:29:19.788894Z"
+    },
+    {
+      "id": "9f2404e6-dde1-4170-bad3-d940a7944b56",
+      "content_id": "7a40cc6f-507d-4211-a2cd-9050a84c0275",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "P-waves during NREM sleep are phase-locked to multiple cortical oscillations (delta, theta, beta), with stronger modulation at delta and beta ranges. The temporal coupling between P-waves and cortical oscillations is state-dependent.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C47-C54 are supported by phase analysis and resultant vector length calculations (Figure 6). Rayleigh tests confirm significant phase preferences (p<0.01), and two-way ANOVA shows significant state effects (F1,179=4.90, p<0.05). The spectral analysis and phase histograms provide converging evidence for state-dependent phase-locking.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:29:19.788894Z"
+    },
+    {
+      "id": "4baac685-b50b-4696-a10e-dd66428b3b63",
+      "content_id": "7a40cc6f-507d-4211-a2cd-9050a84c0275",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "P-waves during REM sleep are strongly phase-locked to theta oscillations (~7 Hz) in both cortical EEG and hippocampal LFP, with stronger phase modulation in high-frequency components (\u226530 Hz) in the hippocampus.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6, C51-C52, C55-C57, and C74 are supported by phase analysis (Figures 6-7) with significant statistical results (F1,79=4.00, p<0.05 for hippocampal LFPs). The theta phase-locking is consistent across cortical and hippocampal recordings, and effect size analysis supports stronger high-frequency modulation during REM.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:29:19.788894Z"
+    },
+    {
+      "id": "bae74256-bd9e-4176-a7c1-4cecc26656d3",
+      "content_id": "7a40cc6f-507d-4211-a2cd-9050a84c0275",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "During NREM sleep, hippocampal sharp wave-ripples (SWRs) precede P-waves, suggesting P-waves are part of brain-wide neural events triggered by SWRs. The temporal order between CA1 firing and P-waves is state-dependent.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5, C58-C60, C62, C73, and C106 are supported by temporal analysis (Figure 7C-D) showing SWRs precede P-waves during NREM (p<0.05, t-test, n=4 recordings). The peri-event histograms demonstrate state-dependent temporal relationships. However, the small sample size (n=4 recordings from 2 animals) limits generalizability, and the causal inference about SWRs 'triggering' P-waves requires additional experimental validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:29:19.788894Z"
+    },
+    {
+      "id": "cd9b18ff-6349-475a-964c-7a553fb55c3f",
+      "content_id": "7a40cc6f-507d-4211-a2cd-9050a84c0275",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "During REM sleep, P-waves precede burst firing in a subset of hippocampal CA1 neurons, suggesting P-waves may trigger brain-wide neural events during REM sleep.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C7, C61, C75, C76, and C104 are based on peri-event time histograms (Figure 7C) showing CA1 firing after P-waves during REM. While the temporal relationship is demonstrated, the causal interpretation (P-waves 'triggering' events) is speculative and acknowledged as such (C76, C104 marked as speculation). The small sample size (n=4 recordings) and lack of perturbation experiments limit confidence in the causal claim.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:29:19.788894Z"
+    },
+    {
+      "id": "5d7f8cb1-b985-4c14-9ac7-84296da1e96c",
+      "content_id": "7a40cc6f-507d-4211-a2cd-9050a84c0275",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The slow timescale (30-60s) of brainstem predictive dynamics may relate to observations from optogenetic experiments where state transitions emerge tens of seconds after stimulation onset, potentially reflecting complex brain-wide interactions underlying state transitions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C68, C83-C86 are largely speculative connections to prior optogenetic studies. While the temporal correspondence is noted and supported by citations (C84), the mechanistic link (C85-C86) is explicitly presented as a hypothesis without direct experimental support. This represents an interesting interpretation but requires additional experimental validation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:29:19.788894Z"
+    },
+    {
+      "id": "660ce12d-6e54-46cb-9a66-16a70841e51f",
+      "content_id": "7a40cc6f-507d-4211-a2cd-9050a84c0275",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "P-waves in mice share similarities with P-waves in other species (cats, rats) in waveform, frequency during REM sleep, and temporal evolution, though subtle differences exist in the timing of frequency increases during state transitions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C88-C97 are supported by comparison with cited literature and data in Figure 5. The waveform consistency (C88, C90) and frequency comparisons (C91) are well-documented. The temporal evolution differences (C96-C97) are acknowledged as weak but present in the data. The cross-species comparison provides important validation, though direct quantitative comparisons are limited.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:29:19.788894Z"
+    },
+    {
+      "id": "89858c9a-f356-4f9e-904e-87a4336c6e25",
+      "content_id": "7a40cc6f-507d-4211-a2cd-9050a84c0275",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "P-wave frequency varied across experiments, potentially due to differences in REM sleep quality, electrode positioning, or anatomical differences between species, which may imply functional differences.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C92-C93 and C98-C99 acknowledge experimental variability (C92) but provide only speculative explanations (C93, C98, C99). While the observation of variability is valid, the proposed explanations lack direct experimental support. This represents an honest acknowledgment of limitations but does not constitute a well-supported result.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:29:19.788894Z"
+    },
+    {
+      "id": "a780533d-f608-47d8-9036-36a565915e8a",
+      "content_id": "7a40cc6f-507d-4211-a2cd-9050a84c0275",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "P-waves exhibit state-dependent functional interactions with hippocampal and cortical activity, with distinct patterns during NREM versus REM sleep, implying different functional roles for these sleep states.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C63-C64, C71, C77, C101, and C107 synthesize findings from Figures 6-7 showing state-dependent phase-locking and temporal relationships. The statistical evidence (two-way ANOVAs) supports state-dependent differences. However, the functional interpretation (C107) is somewhat speculative, as the study demonstrates associations but not direct functional consequences.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:29:19.788894Z"
+    },
+    {
+      "id": "c17d98f1-d952-4fd9-b4a1-36e2d90b6538",
+      "content_id": "7a40cc6f-507d-4211-a2cd-9050a84c0275",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Silicon probe recording enabled quantification of state-dependent brainstem ensemble dynamics, decoding of vigilance states from population activity, and characterization of neural population activity underlying P-waves for the first time in mice.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C78-C80 accurately describe the methodological contributions of the study. The silicon probe approach is well-established, and the application to brainstem P-wave population dynamics appears novel based on the literature review. This represents a valid technical advance, though the claims are primarily methodological rather than mechanistic.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:29:19.788894Z"
+    },
+    {
+      "id": "904b8e4a-2938-42ac-91c2-f58d22477f03",
+      "content_id": "7a40cc6f-507d-4211-a2cd-9050a84c0275",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The temporal correlation between P-waves and hippocampal theta rhythms during REM sleep is consistent with previous studies in cats and rats. Phase-locked activity with fast gamma may relate to brain-wide hyperemic events.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C102 is supported by citations to prior work showing similar correlations in other species. However, claim C103 is speculative, connecting the observed gamma phase-locking to a single prior study on hyperemic events without direct experimental validation. The cross-species consistency is valuable but the functional interpretation requires further support.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:29:19.788894Z"
+    },
+    {
+      "id": "8223e81a-2a17-4680-b097-cea59fbf5767",
+      "content_id": "7a40cc6f-507d-4211-a2cd-9050a84c0275",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "The study used appropriate sample sizes across different experimental approaches: 21 mice total, with 6 animals for brainstem recordings, 2 for hippocampal recordings, 16 datasets for P-wave analysis, 18 for pupil analysis, and 4 for fiber photometry.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C108-C117 accurately report sample sizes with appropriate documentation of exclusions (C113). However, the hippocampal recordings (C112: n=2 animals) represent a notably small sample for the comparative claims about predictive power. The other sample sizes are more adequate, though still modest for some analyses. Transparency in reporting is commendable.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:29:19.788894Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "496a9169-9753-4ae7-abcf-e4bdbdb227bb",
+      "result_id": "d6d7b430-868b-4d4d-9e92-8ad4ea322d2b"
+    },
+    {
+      "claim_id": "26073cb1-7d9e-4a0c-b100-6c506c9f82ba",
+      "result_id": "d6d7b430-868b-4d4d-9e92-8ad4ea322d2b"
+    },
+    {
+      "claim_id": "f92867fc-5f92-4f4b-99ce-d86cf4ec31fe",
+      "result_id": "d6d7b430-868b-4d4d-9e92-8ad4ea322d2b"
+    },
+    {
+      "claim_id": "83e11594-0d0e-4806-b242-7b2447ce91c5",
+      "result_id": "d6d7b430-868b-4d4d-9e92-8ad4ea322d2b"
+    },
+    {
+      "claim_id": "bc72aa75-a9a6-4e30-8d6a-b61aa9cb07b2",
+      "result_id": "d6d7b430-868b-4d4d-9e92-8ad4ea322d2b"
+    },
+    {
+      "claim_id": "0cd39bcf-008d-4655-8643-93a2c05fb670",
+      "result_id": "d6d7b430-868b-4d4d-9e92-8ad4ea322d2b"
+    },
+    {
+      "claim_id": "10341da8-ff5d-46fc-8f50-4b08e197a4df",
+      "result_id": "a0a79b5f-b9f6-46b4-9953-f4f7f763b9f4"
+    },
+    {
+      "claim_id": "ddc6f6f9-c561-49f9-9614-bb5991ccaa55",
+      "result_id": "a0a79b5f-b9f6-46b4-9953-f4f7f763b9f4"
+    },
+    {
+      "claim_id": "06c61834-8238-486a-a451-a48a4fd8cb1a",
+      "result_id": "a0a79b5f-b9f6-46b4-9953-f4f7f763b9f4"
+    },
+    {
+      "claim_id": "6c4079ef-e1dc-49c4-b7e5-07d4f8c27d05",
+      "result_id": "bec6e2dc-ff5d-4e42-b238-0b44c330a53b"
+    },
+    {
+      "claim_id": "9111eeac-8fdd-4918-b83e-f0f147f4d02d",
+      "result_id": "bec6e2dc-ff5d-4e42-b238-0b44c330a53b"
+    },
+    {
+      "claim_id": "1f2e2c17-c60c-4fbf-8ab7-9d879c56f49b",
+      "result_id": "bec6e2dc-ff5d-4e42-b238-0b44c330a53b"
+    },
+    {
+      "claim_id": "0621d1a5-68c6-4483-9c7c-fb5d4b3f7cf0",
+      "result_id": "bec6e2dc-ff5d-4e42-b238-0b44c330a53b"
+    },
+    {
+      "claim_id": "00eb4df1-fe41-42c3-b92e-d916c90a7f97",
+      "result_id": "bec6e2dc-ff5d-4e42-b238-0b44c330a53b"
+    },
+    {
+      "claim_id": "cc590281-3ce5-482c-9d88-64dfc6904fe9",
+      "result_id": "bec6e2dc-ff5d-4e42-b238-0b44c330a53b"
+    },
+    {
+      "claim_id": "d04b9d1a-e4ba-45e5-94c8-ae892a268e6a",
+      "result_id": "bec6e2dc-ff5d-4e42-b238-0b44c330a53b"
+    },
+    {
+      "claim_id": "b08b1f1c-08f9-4907-aeda-b665c9a2bc3b",
+      "result_id": "bec6e2dc-ff5d-4e42-b238-0b44c330a53b"
+    },
+    {
+      "claim_id": "6133fce6-6f02-4f12-99a3-60e135608503",
+      "result_id": "bec6e2dc-ff5d-4e42-b238-0b44c330a53b"
+    },
+    {
+      "claim_id": "b791f699-04ce-46f5-ac17-f7172dec785a",
+      "result_id": "bec6e2dc-ff5d-4e42-b238-0b44c330a53b"
+    },
+    {
+      "claim_id": "c1921fd3-9065-4bea-929d-283d59822614",
+      "result_id": "bec6e2dc-ff5d-4e42-b238-0b44c330a53b"
+    },
+    {
+      "claim_id": "a6bc3cb3-5fa6-47a1-afe0-55ac830ca0b0",
+      "result_id": "ac57fbd1-49d9-432f-9df5-11c4fee11afe"
+    },
+    {
+      "claim_id": "283b277b-912d-4b3c-a786-4b0f161db93f",
+      "result_id": "ac57fbd1-49d9-432f-9df5-11c4fee11afe"
+    },
+    {
+      "claim_id": "54a80e97-2cad-4bf0-bf81-28bf23c15e33",
+      "result_id": "ac57fbd1-49d9-432f-9df5-11c4fee11afe"
+    },
+    {
+      "claim_id": "8a10c85b-3169-4068-bc65-df0c18586864",
+      "result_id": "ac57fbd1-49d9-432f-9df5-11c4fee11afe"
+    },
+    {
+      "claim_id": "9e9b51e2-3174-42f7-b7da-3eb1a1abf4c6",
+      "result_id": "ac57fbd1-49d9-432f-9df5-11c4fee11afe"
+    },
+    {
+      "claim_id": "ade6938b-8082-4e95-a4e1-9930c1185e17",
+      "result_id": "ac57fbd1-49d9-432f-9df5-11c4fee11afe"
+    },
+    {
+      "claim_id": "ffc3a626-e149-4cd4-a6e1-eb65a95baad2",
+      "result_id": "ac57fbd1-49d9-432f-9df5-11c4fee11afe"
+    },
+    {
+      "claim_id": "39377785-2124-4f61-9b56-2915c138f1f4",
+      "result_id": "ac57fbd1-49d9-432f-9df5-11c4fee11afe"
+    },
+    {
+      "claim_id": "80871512-ad8b-45d6-8289-990c9f95c169",
+      "result_id": "ac57fbd1-49d9-432f-9df5-11c4fee11afe"
+    },
+    {
+      "claim_id": "ac1df25d-8ee2-42c1-9e2d-5d1655c0910b",
+      "result_id": "2876eec6-7f99-41c9-87c2-345ea9db3652"
+    },
+    {
+      "claim_id": "65ca4a5b-1e40-4446-9537-dc77bc1f1998",
+      "result_id": "2876eec6-7f99-41c9-87c2-345ea9db3652"
+    },
+    {
+      "claim_id": "42eacb35-47ee-45c5-8332-410ea2236192",
+      "result_id": "2876eec6-7f99-41c9-87c2-345ea9db3652"
+    },
+    {
+      "claim_id": "1a6df61e-8ed6-41c6-b8ae-f66d748bf20d",
+      "result_id": "2876eec6-7f99-41c9-87c2-345ea9db3652"
+    },
+    {
+      "claim_id": "fd57e9a4-0517-4664-b209-3c95cbb101eb",
+      "result_id": "2876eec6-7f99-41c9-87c2-345ea9db3652"
+    },
+    {
+      "claim_id": "abd0cfb9-2a3c-41b2-a33f-26d07e191827",
+      "result_id": "2876eec6-7f99-41c9-87c2-345ea9db3652"
+    },
+    {
+      "claim_id": "5d61d01a-59a8-423a-8554-34c779f14b9c",
+      "result_id": "2876eec6-7f99-41c9-87c2-345ea9db3652"
+    },
+    {
+      "claim_id": "455b9603-3fce-42ad-9003-a6f34bca70f2",
+      "result_id": "2876eec6-7f99-41c9-87c2-345ea9db3652"
+    },
+    {
+      "claim_id": "b2260e03-8a5c-463e-8ba0-e406496a51f8",
+      "result_id": "9f2404e6-dde1-4170-bad3-d940a7944b56"
+    },
+    {
+      "claim_id": "290723b3-7b3f-4b21-83d4-7a9891344504",
+      "result_id": "9f2404e6-dde1-4170-bad3-d940a7944b56"
+    },
+    {
+      "claim_id": "727335b4-5974-476e-ae2f-debc8864d6e7",
+      "result_id": "9f2404e6-dde1-4170-bad3-d940a7944b56"
+    },
+    {
+      "claim_id": "13cf1315-2aef-4a33-a94d-6c79682bf2cd",
+      "result_id": "9f2404e6-dde1-4170-bad3-d940a7944b56"
+    },
+    {
+      "claim_id": "a7d93321-60cc-441c-89e2-fab73147f5f7",
+      "result_id": "9f2404e6-dde1-4170-bad3-d940a7944b56"
+    },
+    {
+      "claim_id": "1cc013f1-9471-4c61-9c95-7a144021dc5d",
+      "result_id": "9f2404e6-dde1-4170-bad3-d940a7944b56"
+    },
+    {
+      "claim_id": "6d4dd264-07cc-4394-bbc8-582bcc585d5f",
+      "result_id": "9f2404e6-dde1-4170-bad3-d940a7944b56"
+    },
+    {
+      "claim_id": "9a25d264-b6ec-424c-8ea3-79c8ba3641e5",
+      "result_id": "9f2404e6-dde1-4170-bad3-d940a7944b56"
+    },
+    {
+      "claim_id": "74718363-7822-404f-95e3-1ff995a126cb",
+      "result_id": "9f2404e6-dde1-4170-bad3-d940a7944b56"
+    },
+    {
+      "claim_id": "3559ccd5-d557-441b-92b1-c19454094192",
+      "result_id": "4baac685-b50b-4696-a10e-dd66428b3b63"
+    },
+    {
+      "claim_id": "a7d93321-60cc-441c-89e2-fab73147f5f7",
+      "result_id": "4baac685-b50b-4696-a10e-dd66428b3b63"
+    },
+    {
+      "claim_id": "1cc013f1-9471-4c61-9c95-7a144021dc5d",
+      "result_id": "4baac685-b50b-4696-a10e-dd66428b3b63"
+    },
+    {
+      "claim_id": "3a3c4c03-b782-4b98-8db4-e1a63330e3b6",
+      "result_id": "4baac685-b50b-4696-a10e-dd66428b3b63"
+    },
+    {
+      "claim_id": "9413907c-1427-4edc-ad6b-4fa06f52b758",
+      "result_id": "4baac685-b50b-4696-a10e-dd66428b3b63"
+    },
+    {
+      "claim_id": "919f3480-f014-4a32-8e86-2fd4f30e4458",
+      "result_id": "4baac685-b50b-4696-a10e-dd66428b3b63"
+    },
+    {
+      "claim_id": "dd56726d-779c-405f-a5a4-9a052a0b28e9",
+      "result_id": "4baac685-b50b-4696-a10e-dd66428b3b63"
+    },
+    {
+      "claim_id": "fcb406d9-7ebb-45d7-9ea6-45d36dd4c592",
+      "result_id": "bae74256-bd9e-4176-a7c1-4cecc26656d3"
+    },
+    {
+      "claim_id": "844e4edb-b3c9-4955-bd26-bfac17b5f9ff",
+      "result_id": "bae74256-bd9e-4176-a7c1-4cecc26656d3"
+    },
+    {
+      "claim_id": "35d20e4f-5de5-40a7-bcd3-f780c97e994e",
+      "result_id": "bae74256-bd9e-4176-a7c1-4cecc26656d3"
+    },
+    {
+      "claim_id": "cacd7e3b-1e6d-41bd-a42a-b67b87ed215d",
+      "result_id": "bae74256-bd9e-4176-a7c1-4cecc26656d3"
+    },
+    {
+      "claim_id": "a45163dd-c323-402f-aa13-75a10a6e3869",
+      "result_id": "bae74256-bd9e-4176-a7c1-4cecc26656d3"
+    },
+    {
+      "claim_id": "a0a60e30-fb6f-4c9e-ab07-15025b11a0f9",
+      "result_id": "bae74256-bd9e-4176-a7c1-4cecc26656d3"
+    },
+    {
+      "claim_id": "c2f4a2b3-18ac-478c-ba98-a93313433f1a",
+      "result_id": "bae74256-bd9e-4176-a7c1-4cecc26656d3"
+    },
+    {
+      "claim_id": "4f8f8eda-8e0e-41c2-b3db-3544efe9bfe1",
+      "result_id": "cd9b18ff-6349-475a-964c-7a553fb55c3f"
+    },
+    {
+      "claim_id": "5d5c89a4-9a99-4ea3-9e00-4a0404a81b4e",
+      "result_id": "cd9b18ff-6349-475a-964c-7a553fb55c3f"
+    },
+    {
+      "claim_id": "2a2fa8d7-0a6e-493f-a616-257896bb9aa8",
+      "result_id": "cd9b18ff-6349-475a-964c-7a553fb55c3f"
+    },
+    {
+      "claim_id": "ff9827eb-4188-4220-9aca-735c2c6d7c6b",
+      "result_id": "cd9b18ff-6349-475a-964c-7a553fb55c3f"
+    },
+    {
+      "claim_id": "c6a0777b-62b3-4fed-af3c-e65832892ce4",
+      "result_id": "cd9b18ff-6349-475a-964c-7a553fb55c3f"
+    },
+    {
+      "claim_id": "f2c847b9-f130-4653-8857-5467e840dfab",
+      "result_id": "5d7f8cb1-b985-4c14-9ac7-84296da1e96c"
+    },
+    {
+      "claim_id": "a2436e8d-dc5b-4443-a5ba-9fa239108cd7",
+      "result_id": "5d7f8cb1-b985-4c14-9ac7-84296da1e96c"
+    },
+    {
+      "claim_id": "6e45e24c-e3ae-4e7d-a6ff-924ba630765a",
+      "result_id": "5d7f8cb1-b985-4c14-9ac7-84296da1e96c"
+    },
+    {
+      "claim_id": "2410ead1-3e35-4b5f-9bc5-64c85e9dc5c8",
+      "result_id": "5d7f8cb1-b985-4c14-9ac7-84296da1e96c"
+    },
+    {
+      "claim_id": "2e6471ff-fb07-4209-90ea-a099f04c7f72",
+      "result_id": "5d7f8cb1-b985-4c14-9ac7-84296da1e96c"
+    },
+    {
+      "claim_id": "c744b734-75cb-45dd-8124-6a508c8a84ba",
+      "result_id": "660ce12d-6e54-46cb-9a66-16a70841e51f"
+    },
+    {
+      "claim_id": "cd794c3d-4b0d-4b54-b80c-b4e78a6c0877",
+      "result_id": "660ce12d-6e54-46cb-9a66-16a70841e51f"
+    },
+    {
+      "claim_id": "1362d422-22e1-4fed-a496-5f826bb1c097",
+      "result_id": "660ce12d-6e54-46cb-9a66-16a70841e51f"
+    },
+    {
+      "claim_id": "6fcc15cd-4acd-4570-933f-e9904dbb70d8",
+      "result_id": "660ce12d-6e54-46cb-9a66-16a70841e51f"
+    },
+    {
+      "claim_id": "e44fa827-11ef-476c-94ef-db4f2857561c",
+      "result_id": "660ce12d-6e54-46cb-9a66-16a70841e51f"
+    },
+    {
+      "claim_id": "3ae72e76-18fd-4c8c-9b99-50d250216cf7",
+      "result_id": "660ce12d-6e54-46cb-9a66-16a70841e51f"
+    },
+    {
+      "claim_id": "2e78dcd1-800a-455f-8d3c-4035b2474108",
+      "result_id": "660ce12d-6e54-46cb-9a66-16a70841e51f"
+    },
+    {
+      "claim_id": "d21167e6-6d28-43df-ac85-b19115108174",
+      "result_id": "660ce12d-6e54-46cb-9a66-16a70841e51f"
+    },
+    {
+      "claim_id": "4ffaa02c-ba34-4f5b-b7f0-195b94f1083e",
+      "result_id": "89858c9a-f356-4f9e-904e-87a4336c6e25"
+    },
+    {
+      "claim_id": "6ea6a59e-149c-4e96-ab82-0881f1c32801",
+      "result_id": "89858c9a-f356-4f9e-904e-87a4336c6e25"
+    },
+    {
+      "claim_id": "a52a1a5a-dd55-40ac-877f-16b25dbcf12b",
+      "result_id": "89858c9a-f356-4f9e-904e-87a4336c6e25"
+    },
+    {
+      "claim_id": "189cdc7a-93b9-4d9a-9f78-b4d62720ca64",
+      "result_id": "89858c9a-f356-4f9e-904e-87a4336c6e25"
+    },
+    {
+      "claim_id": "97c14b54-b303-4cf8-bdba-1833558ca491",
+      "result_id": "a780533d-f608-47d8-9036-36a565915e8a"
+    },
+    {
+      "claim_id": "5371ce16-c06a-4ec2-9b37-5607989ea590",
+      "result_id": "a780533d-f608-47d8-9036-36a565915e8a"
+    },
+    {
+      "claim_id": "6746693a-6e76-4905-be08-4bad5c248a1d",
+      "result_id": "a780533d-f608-47d8-9036-36a565915e8a"
+    },
+    {
+      "claim_id": "66a06f98-a9dc-4236-8e4a-a05ee83ad1f2",
+      "result_id": "a780533d-f608-47d8-9036-36a565915e8a"
+    },
+    {
+      "claim_id": "26a9f462-7ed9-4007-9f8e-6d28d92a46da",
+      "result_id": "a780533d-f608-47d8-9036-36a565915e8a"
+    },
+    {
+      "claim_id": "bf20c4d2-12fd-4676-bbde-0413fc4bbef8",
+      "result_id": "a780533d-f608-47d8-9036-36a565915e8a"
+    },
+    {
+      "claim_id": "a2d8492d-77c4-4e19-836f-6fdcff2de448",
+      "result_id": "c17d98f1-d952-4fd9-b4a1-36e2d90b6538"
+    },
+    {
+      "claim_id": "b6bd8d72-a9aa-4a7f-8afb-dbc134ffcf54",
+      "result_id": "c17d98f1-d952-4fd9-b4a1-36e2d90b6538"
+    },
+    {
+      "claim_id": "3e20d52f-f49a-40a9-ae4b-952b890cd394",
+      "result_id": "c17d98f1-d952-4fd9-b4a1-36e2d90b6538"
+    },
+    {
+      "claim_id": "89321c6a-33c5-4843-a84a-4b3baf1983af",
+      "result_id": "904b8e4a-2938-42ac-91c2-f58d22477f03"
+    },
+    {
+      "claim_id": "9f2f1d10-95d8-4f14-9002-7cdde53a47b1",
+      "result_id": "904b8e4a-2938-42ac-91c2-f58d22477f03"
+    },
+    {
+      "claim_id": "7858f10f-1d7a-4c46-8b7c-a24074348d83",
+      "result_id": "8223e81a-2a17-4680-b097-cea59fbf5767"
+    },
+    {
+      "claim_id": "2791c377-e4bb-463b-901b-aa3564341b56",
+      "result_id": "8223e81a-2a17-4680-b097-cea59fbf5767"
+    },
+    {
+      "claim_id": "6dd5b392-8b52-41db-863d-dacd54ba3362",
+      "result_id": "8223e81a-2a17-4680-b097-cea59fbf5767"
+    },
+    {
+      "claim_id": "d766e94b-8de1-434a-bb81-e5ec60d46862",
+      "result_id": "8223e81a-2a17-4680-b097-cea59fbf5767"
+    },
+    {
+      "claim_id": "4900c28b-2bb2-42c2-8434-4bb07b397022",
+      "result_id": "8223e81a-2a17-4680-b097-cea59fbf5767"
+    },
+    {
+      "claim_id": "b239f92b-5939-40cc-b6f1-9d7a36fc9ba3",
+      "result_id": "8223e81a-2a17-4680-b097-cea59fbf5767"
+    },
+    {
+      "claim_id": "50f34db4-8097-4597-b619-809246e02524",
+      "result_id": "8223e81a-2a17-4680-b097-cea59fbf5767"
+    },
+    {
+      "claim_id": "62320b9e-09a4-45ef-a60c-daca439cc06d",
+      "result_id": "8223e81a-2a17-4680-b097-cea59fbf5767"
+    }
+  ],
+  "comparisons": []
+}

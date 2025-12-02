@@ -1,0 +1,316 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "Aging yeast cells experience genome-level missegregation (GLM) events where chromatin is aberrantly segregated to daughter cells, resulting in cell cycle arrest. These events increase dramatically with age, are usually corrected by retrograde transport, but become increasingly predictive of mortality. About 75% of cells experience GLMs during their lifespan, with ~90% being corrected, extending lifespan by ~30%.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C44, C52-C62 provide comprehensive experimental evidence from single-cell imaging showing GLM frequency, age-dependence, correction rates, and mortality associations. The data includes quantitative measurements (Figure 1F-H), duration analysis (Figure 1G), and statistical correlations with remaining lifespan (Figure 1\u2014figure supplement 4). Multiple independent observations with different fluorescent markers confirm the phenomenon is not an artifact.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C81",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "GLM events are caused by activation of the DNA damage checkpoint (DDC). Deletion of RAD9 essentially abolishes terminal GLMs and dramatically reduces age-associated GLM rates. Chemical induction of DNA damage with zeocin in young cells causes a dramatic increase in GLMs, demonstrating the causal link between DDC activation and GLMs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C81, C83-C85 are strongly supported by genetic (rad9\u0394) and chemical (zeocin) perturbation experiments shown in Figures 3G-I and Figure 3\u2014figure supplement 1. The rad9\u0394 data provides loss-of-function evidence while zeocin provides gain-of-function evidence, together establishing causality. The inference that age-related increases result from genomic instability is logical given the experimental evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C5",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C6",
+      "C7"
+    ],
+    "result": "Histone degradation following DDC activation contributes to GLMs. Deletion of TOM1 or IES4 (genes involved in histone degradation) significantly reduces GLM rates, decreases terminal missegregations, and increases replicative lifespan without affecting GLM correction rates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C7, C94-C99 are well-supported by genetic experiments with tom1\u0394 and ies4\u0394 mutants (Figure 5A-E). The data show consistent effects on GLM frequency, terminal events, and lifespan. The mechanistic link to histone degradation is supported by prior literature (C93) and the specific functions of TOM1 and IES4 in histone maintenance. The lack of effect on correction rates (C5C) helps distinguish the mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C103",
+      "C104",
+      "C106",
+      "C107",
+      "C108"
+    ],
+    "result": "Altering histone transcription dynamics modulates GLM frequency bidirectionally. Deletion of HPC2 (increasing histone transcription) reduces GLMs and terminal events, while deletion of SPT21 (reducing histone transcription) increases both GLM frequency and terminal events.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C103-C108 are supported by experiments with hpc2\u0394 and spt21\u0394 mutants (Figure 6A-D). The bidirectional effects provide strong evidence that histone levels directly influence GLM frequency. The prior literature (C100-C102, C105) establishes the roles of these genes in histone regulation. The conclusion C108 is well-justified by the opposing phenotypes of the two mutants.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C8",
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136"
+    ],
+    "result": "The DNA damage response exhibits antagonistic pleiotropy: histone degradation is beneficial for rapid DNA repair in young cells but becomes detrimental during aging, leading to increased GLMs and reduced lifespan. Preventing histone degradation in aged cells (tom1\u0394, ies4\u0394, hpc2\u0394) increases lifespan, while compromising DDC sensing (rad9\u0394) reduces GLMs but decreases lifespan.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C129-C136 present a coherent model supported by the integration of multiple genetic experiments. The antagonistic pleiotropy framework (C129, supported by Williams 1957) explains the opposing effects of DDC-mediated histone degradation in young vs. old cells. The model is supported by: (1) literature showing benefits in young cells (C117, C130), (2) experimental data showing detriments in aging (C4-C7, C94-C99), and (3) differential lifespan effects of rad9\u0394 vs. tom1\u0394/ies4\u0394/hpc2\u0394 (C134-C136).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "Homologous recombination suppresses GLMs. Deletion of RAD52 results in constant high GLM probability throughout life rather than age-related increase, significantly longer GLM duration, but does not affect the proportion of GLMs that can be corrected.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C91 are supported by rad52\u0394 experiments (Figure 4A-D). The data show altered GLM dynamics (constant high rate vs. age-dependent increase), increased duration, but maintained correction efficiency. The interpretation that homologous recombination reduces GLM frequency and duration (C90-C91) is well-justified. The connection to age-related loss of HR proteins (C39) provides mechanistic context.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "During GLMs, chromosome XII (containing rDNA) remains in the mother cell while other chromosomes enter the daughter. Deletion of FOB1 reduces GLM rates but does not eliminate the age-related trend or reduce terminal missegregation fraction, suggesting rDNA instability is not the dominant cause of GLMs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C70 are supported by direct chromosome imaging (Figure 2A-D, Video 6) and fob1\u0394 experiments (Figure 2E-F, Figure 2\u2014figure supplement 1). The chromosome-specific behavior is clearly demonstrated. The fob1\u0394 data show partial rescue of GLM rates but no effect on terminal events, supporting the inference (C70) that rDNA instability contributes to but does not dominate GLM causation. The logic is sound given the experimental evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "GLMs represent a metaphase arrest prior to anaphase initiation. Spindle poles remain separated at 2-5 \u03bcm during GLMs, similar to mid-anaphase arrest. Cdc14 remains localized to the nucleolus during GLMs but is released immediately before correction, indicating delayed FEAR network activation and anaphase entry.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C80 are supported by spindle pole separation measurements (Figure 3A-B) and Cdc14 localization dynamics (Figure 3C-F, Video 7). The comparison to prior work (C74, Yang et al. 1997, Yeh et al. 1995) provides context. The Cdc14 data clearly show nucleolar retention during GLMs and release before correction. The inference about FEAR network timing (C79) is well-justified by the Cdc14 dynamics and prior knowledge (C75-C76).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C109",
+      "C110",
+      "C111",
+      "C112"
+    ],
+    "result": "The spindle positioning checkpoint is critical for GLM resolution. Deletion of BFA1 does not affect GLM frequency but significantly increases the fraction of uncorrected terminal GLMs. Neither spindle assembly nor spindle positioning checkpoint activation causes GLMs, but the spindle positioning checkpoint is required for healthy resolution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C109-C112 are supported by bfa1\u0394 experiments (Figure 7A-C) and mad3\u0394 experiments (Figure 2\u2014figure supplement 2, C71-C72). The bfa1\u0394 data show maintained GLM frequency but increased terminal events, clearly demonstrating a role in resolution rather than initiation. The conclusion C111-C112 is well-justified by the differential effects of mad3\u0394 (no effect on GLMs) and bfa1\u0394 (impaired resolution).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118"
+    ],
+    "result": "Age-related genomic instability likely arises from cascading failures during aging. Loss of vacuolar pH leads to mitochondrial dysfunction, which causes genomic instability through altered iron-sulfur cluster production and DNA replication stress. This activates the DDC, causing histone degradation that was previously observed during aging, ultimately leading to GLMs and senescence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C113-C118 integrate the current findings with prior literature to propose a mechanistic cascade. The individual links are supported by citations (C114-C115, C117) and the current data on DDC-mediated histone degradation causing GLMs (C4-C7, C94-C99). The synthesis (C116, C118) is a reasonable inference connecting previously observed histone decline (Feser et al. 2010) to the GLM mechanism. However, the cascade is largely inferential and would benefit from direct experimental validation of the proposed pathway.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "During normal cell divisions in young cells, Htb2 levels increase during S-phase as histones are transcribed, then drop during mitosis as chromosomes are segregated. The vast majority of young cell divisions follow this pattern.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C43 describe the baseline histone dynamics observed experimentally (Figure 1A). This is straightforward observational data establishing the normal pattern against which GLMs are compared. The evidence is direct and well-documented in the figures.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C124"
+    ],
+    "result": "At the single cell level, no connection was found between G1 duration and the occurrence of GLMs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C124 is supported by experimental data using WHI5:GFP to measure G1 duration (Figure 1\u2014figure supplement 5). This negative result is important for ruling out G1 elongation as a mechanism for GLMs, despite prior literature linking G1 duration to aging (C119-C123). The finding is clearly stated and supported by data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C71",
+      "C72"
+    ],
+    "result": "Deletion of MAD3 (spindle assembly checkpoint component) does not alter the age-related increase in GLMs, and older mad3\u0394 cells have the same GLM rate as wild-type.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C72 are supported by mad3\u0394 experiments (Figure 2\u2014figure supplement 2). This negative result helps rule out the spindle assembly checkpoint as a cause of GLMs, distinguishing it from the spindle positioning checkpoint (BFA1). The data are clear and the conclusion is straightforward.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C142",
+      "C143",
+      "C144"
+    ],
+    "result": "Approximately 25% of wild-type cells never experience a GLM during their lifespan. The heterogeneity in GLM occurrence and resolution is under genetic control, as demonstrated by mutations that modulate both frequency and correction efficiency.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C142-C144 describe population heterogeneity observed in the data (C142 from experimental counts) and interpret it as genetically controlled based on the various mutant phenotypes (C143-C144). The genetic control is well-demonstrated by the multiple mutants tested (fob1\u0394, rad9\u0394, rad52\u0394, tom1\u0394, ies4\u0394, hpc2\u0394, spt21\u0394, bfa1\u0394, mad3\u0394). The inference is reasonable and supported.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C92",
+      "C93",
+      "C100",
+      "C101",
+      "C102",
+      "C105",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C137",
+      "C138",
+      "C139",
+      "C140",
+      "C141",
+      "C145",
+      "C146",
+      "C147",
+      "C148",
+      "C149",
+      "C150",
+      "C151",
+      "C152"
+    ],
+    "result": "Background knowledge and literature context establishing the importance of genome instability in aging, DNA damage responses, yeast aging mechanisms, histone regulation, cell cycle checkpoints, and evolutionary conservation of these processes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2, C9-C40, C92-C93, C100-C102, C105, C119-C128, C137-C141, C145-C152 provide essential background from prior literature. Each claim is supported by appropriate citations. These establish the scientific context for the current work but do not represent new findings from this study. The citations appear appropriate and the knowledge claims are consistent with the field.",
+    "result_type": "MINOR"
+  }
+]

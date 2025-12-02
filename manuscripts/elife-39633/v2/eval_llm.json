@@ -1,0 +1,229 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C4",
+      "C23",
+      "C24"
+    ],
+    "result": "Yeast lacking all three tail module triad subunits (med2\u0394 med3\u0394 med15\u0394) are viable and exhibit modest growth defects similar to med3\u0394 med15\u0394 yeast.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C23, and C24 provide converging experimental evidence from tetrad dissection and growth assays (Figure 1A) demonstrating viability and modest growth defects of the triple deletion mutant. The consistency between independent segregants strengthens this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "med2\u0394 med3\u0394 med15\u0394 yeast show reproducible transcriptional changes with enrichment for SAGA-dominated genes among down-regulated genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "RNA-seq data from two independent segregants (C25) with statistical analysis (Fisher's z-score = 37, p<10\u207b\u00b9\u2070) and enrichment analysis (C26: p<10\u207b\u00b3\u2074; C27: p=0.04) provide strong support. The consistency between segregants and agreement with prior work (C27) validate these findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C5",
+      "C22",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "Mediator and Pol II are recruited to promoters genome-wide in med2\u0394 med3\u0394 med15\u0394 yeast at reduced but substantial levels, with greater reduction at SAGA-dominated genes than TFIID-dominated genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Multiple ChIP-seq experiments (C28-C34) using spike-in normalization (C32) demonstrate reduced but detectable Mediator (Med17) and Pol II occupancy across the genome. The differential effects at SAGA vs. TFIID genes (C30) and ~4-fold reduction in Pol II (C32) are well-documented. This supports the conclusion that the tail module triad contributes broadly but is not absolutely required (C35).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C21",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "Mediator association at UAS regions does not decrease upon depletion of PIC components (TBP, Rpb3, Taf1), and actually increases for tail module subunits upon TBP or Rpb3 depletion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "ChIP-seq data (C36-C39, C42) consistently show maintained or increased Mediator occupancy at UAS regions after PIC component depletion. The identification of hundreds of genes with increased Mediator at UAS regions upon TBP depletion (C43-C45), including enrichment for ribosomal protein genes (C44), provides strong support. The differential behavior of Med15 vs. Med18 is noted but does not undermine the main conclusion (C46-C47).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C57",
+      "C58",
+      "C59",
+      "C68",
+      "C73",
+      "C82"
+    ],
+    "result": "TBP is critical for transit of Mediator from UAS to promoter regions, as evidenced by upstream shift of Mediator occupancy upon TBP depletion under conditions of Kin28 inactivation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Multiple lines of ChIP-seq evidence (C52, C54, C55, C57) demonstrate upstream shift of Mediator subunits upon TBP depletion, particularly at SAGA-dominated genes. The observation that TBP depletion abolishes Pol II recruitment (C58) while causing Mediator to accumulate upstream (C59) supports the inference that TBP is necessary for Mediator transit (C59, C68). The consistency across multiple Mediator subunits and gene classes strengthens this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C8",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C56",
+      "C62",
+      "C64",
+      "C67",
+      "C69",
+      "C72",
+      "C81"
+    ],
+    "result": "Pol II (Rpb3) and Taf1 stabilize Mediator association at proximal promoters, with stronger effects at TFIID-dominated genes than SAGA-dominated genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "ChIP-seq experiments after depletion of Taf1 or Rpb3 together with Kin28 (C48-C51, C56) show decreased Mediator occupancy at promoters, with differential effects at TFIID vs. SAGA genes. The modest effects on TBP and Taf1 upon Rpb3 depletion (C62) and the inference that Taf1 alone is insufficient (C64) are supported by the data. The conclusion that partially formed PICs allow transit but lead to unstable association (C69) is a reasonable interpretation of the combined results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C60",
+      "C61",
+      "C63",
+      "C65",
+      "C66"
+    ],
+    "result": "Depletion experiments reveal cooperative interactions among PIC components: TBP depletion eliminates Pol II, Pol II depletion moderately reduces TBP, and Taf1 depletion reduces Pol II but is not sufficient for Mediator transit or retention.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "ChIP-seq data (C40, C41, C60, C62) document the effects of depleting individual PIC components on others. The inferences about Taf1 insufficiency (C61, C64, C66) are logically drawn from the experimental observations. Citation to prior work (C63) supports the Taf1 depletion effects on Pol II. The conclusions about cooperative PIC assembly are well-supported.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C75",
+      "C76",
+      "C77",
+      "C79",
+      "C80"
+    ],
+    "result": "Two pathways for Mediator recruitment exist: a dominant tail-module-dependent pathway via UAS-bound activators, and an alternative tail-module-independent pathway involving direct interactions with PIC components.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This model (C75-C77) is well-supported by the combined experimental findings: viability and continued Mediator recruitment in med2\u0394 med3\u0394 med15\u0394 yeast (C70-C71), the observation that PIC components are not required for UAS recruitment (C80), but are important for transit and promoter association (C79). The two-pathway model provides a coherent explanation for all the experimental observations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C78",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "Direct recruitment of Mediator via PIC components may be favored at TFIID-dominated genes relative to SAGA-dominated genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While the differential effects at TFIID vs. SAGA genes are documented (C90), the speculation about favored direct recruitment at TFIID genes (C78) is not definitively proven. The supporting citations (C91-C92) provide context but the mechanism remains incompletely resolved. Additional experiments would be needed to definitively establish this preference.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "The greater UAS-TSS distance at TATA-containing promoters may cause greater dependency on Mediator for activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "This is primarily a speculation (C96) based on prior knowledge about promoter architecture (C93-C95). While the cited studies support the relationship between distance and activation, the current study does not directly test this hypothesis. The claim remains plausible but unproven by the presented data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "Background on Mediator structure, function, and prior findings on tail module dispensability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C1-C20) represent established knowledge and prior findings supported by extensive citations. They provide essential context for the current study but are not novel findings. The claims accurately represent the state of knowledge and are well-supported by the cited literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "Prior in vitro and in vivo studies have demonstrated cooperative interactions among Mediator, TFIID, and Pol II, and documented specific protein-protein interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C83-C89) accurately summarize prior work through appropriate citations. They provide important context for interpreting the current findings but represent established knowledge rather than new discoveries. The citations appear appropriate and the summaries accurate.",
+    "result_type": "MINOR"
+  }
+]

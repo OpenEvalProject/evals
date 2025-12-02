@@ -1,0 +1,315 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "A 50-year-old female patient with AL amyloidosis presented with severe disease involving multiple organs (heart, kidney, lung, soft tissue), elevated free \u03bb light chains (7572 mg/l), high bone marrow plasma cell infiltration (80%), advanced cardiac staging (IV or IIIb), and died 4 weeks after chemotherapy initiation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C27 provide comprehensive clinical characterization of the patient case. The data are internally consistent and represent standard clinical measurements for AL amyloidosis diagnosis and staging. The poor prognosis indicated by staging systems is consistent with the fatal outcome.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C20",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "The patient-derived LC (Pat-1) contains 11 point mutations in the VL domain compared to the germline sequence (WT-1), with 5 mutations in framework regions and 6 in CDRs. Nine of the 11 mutated residues in Pat-1 are less abundant than corresponding WT-1 residues according to Kabat database analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C33 describe sequence analysis using standard bioinformatics approaches (IgBLAST, abYsis, Kabat database). The methodology is appropriate and the sequence data are presented with supporting figures. The frequency analysis provides context for evaluating mutation effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C89",
+      "C90"
+    ],
+    "result": "Proteolytic cleavage of Pat-1 LC to produce the isolated VL domain is essential for fibril formation. Patient tissue analysis revealed predominantly VL domain deposition, and in vitro assays showed that only Pat-1 VL (not full-length Pat-1 LC, WT-1 LC, or WT-1 VL) forms fibrils.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C38, C89-C90 are supported by multiple complementary techniques: patient tissue extraction with SDS-PAGE/MALDI/MS analysis (C34), ThT fluorescence assays (C35-C36), and TEM imaging (C38). The conclusion that proteolytic cleavage is essential (C90) is well-supported by the differential fibril formation between full-length LC and VL domains.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "Crystal structures of Pat-1 (2.5 \u00c5) and WT-1 (1.55 \u00c5) VL domains reveal highly similar overall structures with typical Ig fold topology. The 11 mutations are distributed across CDRs (6 mutations) and framework regions (5 mutations), with three mutations (P15L, L81V, Q82L) located near the C-terminus opposite the antigen-binding site.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C45 are supported by X-ray crystallography data with appropriate resolution. The structural similarity despite different space groups is documented. However, the claim that mutation positions don't obviously explain fibril formation differences (implicit in C45) highlights the need for additional analyses beyond static structures.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "Both Pat-1 and WT-1 VL domains are monomers in solution. Pat-1 is significantly less stable than WT-1, with thermal melting temperature 8.1\u00b0C lower (48.9\u00b0C vs 57.0\u00b0C) and chemical stability decreased by 0.46 M GdmCl.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C49 are supported by appropriate biophysical techniques: analytical ultracentrifugation for oligomeric state (C46), far-UV CD for thermal stability (C47), and tryptophan fluorescence for chemical stability (C48). The measurements are quantitative and the differences are substantial, supporting the conclusion of decreased stability (C49).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "Systematic mutagenesis of all 11 Pat-1 mutations revealed that only the V81L back-mutation substantially restores stability (TM=54.6\u00b0C, cM=1.36 M) and prevents fibril formation. All other single point mutants formed fibrils, identifying valine at position 81 as the primary cause of Pat-1 pathogenicity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C54 represent a rigorous systematic mutagenesis approach with both stability measurements and fibril formation assays. The identification of V81L as uniquely protective is compelling. However, the claim that V81 is \"the main cause\" (C53) should be tempered by the fact that other mutations may have permissive or modulating effects, as suggested by combination mutant data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "The protective effect of V81L is highly specific to leucine. The V81I mutant does not increase thermal stability and readily forms fibrils, unlike V81L.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C57 are supported by comparative analysis of V81L and V81I mutants. This specificity test strengthens the mechanistic interpretation. However, additional hydrophobic residues (e.g., methionine, phenylalanine) were not tested, so \"highly specific to leucine\" (C57) may be overstated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "Introduction of the L81V mutation into WT-1 decreases thermal stability by 5.5\u00b0C and chemical stability by 0.42 M GdmCl, and induces fibril formation, demonstrating that a single amino acid change can reconstitute the pathogenic properties of the patient mutant.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C62 provide strong reciprocal evidence through gain-of-function experiments. The WT-1 L81V mutant recapitulates key features of Pat-1 (decreased stability and fibril formation), supporting the causal role of position 81. This bidirectional approach (loss and gain of function) is scientifically rigorous.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "Residues L15, V81, and L82 form a hydrophobic surface patch in Pat-1 absent in WT-1. Combined mutations at positions 81 and 82 (V81L L82Q) enhance stability and prevent fibril formation, while L15P combinations decrease stability and promote fibril formation, indicating the hydrophobic surface patch plays a key role in pathogenesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C69 are supported by surface analysis and systematic combination mutagenesis. The data show complex epistatic interactions between positions 15, 81, and 82. However, the conclusion that the \"hydrophobic surface spot plays a key role\" (C69) is somewhat circular given that V81L alone is sufficient to prevent fibril formation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "H/DX-MS analysis reveals that Pat-1 exhibits higher overall conformational dynamics than WT-1, with the C-terminal framework region 4 (residues 101-113) and the region around position 15 (residues 11-20) showing the most increased deuterium uptake.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C73 are supported by H/DX-MS data with complete sequence coverage. The increased dynamics in Pat-1, particularly in the C-terminal region, provide mechanistic insight linking mutations to structural consequences. The experiment was performed twice, though additional replicates and statistical analysis would strengthen confidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "Structural analysis reveals that mutations at positions 15, 81, and 82 alter the hydrophobic interaction network. In Pat-1, L15 and V81 form fewer interactions with the C-terminal region compared to WT-1 (P15 and L81), while L82 forms hydrophobic interactions that are replaced by hydrophilic interactions in WT-1 (Q82). These changes result in a highly dynamic C-terminal region in Pat-1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C83 are supported by computational analysis of crystal structures using BIOVIA Discovery Studio. The detailed interaction mapping provides molecular-level explanation for the H/DX-MS observations. However, the analysis relies on static structures and computational predictions of interaction strengths, which have inherent limitations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "Molecular dynamics umbrella sampling simulations show that WT-1 and Pat-1 V81L have similar, higher dissociation free energies (~1 kcal/mol higher) for the C-terminal segment compared to Pat-1 and Pat-1 V81L L15P. The V81L stabilization is attributed to filling a cavity present with V81, while L15P destabilizes by altering backbone structure and local packing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C88 are supported by MD simulations with appropriate methodology (umbrella sampling). The free energy differences (~1 kcal/mol) are modest but consistent with experimental observations. However, the simulations lack error estimates, and the interpretation of structural mechanisms (C86, C88) is somewhat speculative. The RMSD data (Figure 7\u2014supplement 1) shows stable simulations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "Recent cryo-EM structures show diffuse density for C-terminal VL residues in AL fibrils, suggesting the exact truncation site is not crucial. NMR studies indicate different fibril topologies may exist.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C93 are supported by appropriate citations to recent structural studies. These claims provide context from prior work but do not represent new findings from this manuscript. The interpretation that truncation site is not crucial (C92) is reasonable but represents an inference from cited work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "SDS at concentrations used (0.5 mM) accelerates fibril formation without affecting native secondary structure. Abdominal fat tissue deposits are identical to organ-specific fibrils. Fibril load correlates with disease severity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94-C97 provide methodological justification and context. C94 and C96 are supported by citations. C95 is supported by CD spectroscopy data (Figure 1\u2014supplement 2). C97 is stated as established knowledge. These are appropriate supporting claims for the experimental design.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C98",
+      "C99"
+    ],
+    "result": "The current view holds that VL destabilization is a major indicator of fibril formation propensity, though VL domains with wildtype-like stability can also form fibrils.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98-C99 accurately represent the state of the field based on appropriate citations. These claims provide important context showing that stability alone is insufficient to explain fibril formation, motivating the detailed mechanistic studies in this work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C100",
+      "C101"
+    ],
+    "result": "Surface-exposed hydrophobic areas are energetically unfavorable. The single L82Q substitution did not affect Pat-1 stability and the mutant still formed fibrils.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C100 is supported by citations to protein energetics literature. Claim C101 is supported by experimental data showing L82Q alone is insufficient to prevent fibril formation, contrasting with expectations and highlighting the dominant role of position 81.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "Oligomers on the pathway to amyloid structures are considered toxic. Amyloid deposits contain not only the disease-causing LC but also glycosaminoglycans, lipids, apolipoprotein E, and other proteins that influence fibril formation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C102-C104 are supported by appropriate citations and represent established knowledge in the amyloid field. These claims provide important context for interpreting the in vitro fibril formation studies and acknowledging the complexity of in vivo amyloidogenesis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19"
+    ],
+    "result": "AL amyloidosis results from monoclonal plasma cell proliferation leading to overproduction and secretion of free immunoglobulin light chains. Somatic mutations in the VL domain, generated through V(D)J recombination and hypermutation, often destabilize patient LCs and are linked to fibril formation propensity. Patient biopsies predominantly show VL domains from proteolytic cleavage as the main fibril constituent, though stability changes alone cannot fully explain fibril formation differences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C19 provide comprehensive background on AL amyloidosis pathophysiology, immunoglobulin structure and diversity, and current understanding of disease mechanisms. All claims are supported by appropriate citations to established literature or represent well-accepted knowledge in the field. This background appropriately motivates the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5"
+    ],
+    "result": "Proteolytic cleavage of patient LC to isolated VL domain is essential for fibril formation. Out of 11 mutations, only the leucine to valine mutation at position 81 is responsible for fibril formation by disrupting a hydrophobic network, rendering the C-terminal segment more dynamic and decreasing domain stability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C5 represent the main conclusions of the study, synthesizing results from multiple experimental approaches. C3 is strongly supported by tissue analysis and differential fibril formation assays. C4 is supported by systematic mutagenesis. C5 is supported by H/DX-MS, structural analysis, and MD simulations. These claims represent the key mechanistic insights of the work.",
+    "result_type": "MAJOR"
+  }
+]

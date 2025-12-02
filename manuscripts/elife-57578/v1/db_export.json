@@ -1,0 +1,1626 @@
+{
+  "submission": {
+    "id": "b5849615-b6de-49fa-ba43-cdaa4b95f681",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T17:21:05.780479Z",
+    "updated_at": "2025-12-02T17:21:05.780479Z"
+  },
+  "content": [
+    {
+      "id": "ff3e36cb-19ae-46bb-be95-78c2ab661a88",
+      "submission_id": "b5849615-b6de-49fa-ba43-cdaa4b95f681",
+      "content_type": "manuscript",
+      "content_text": "# A molecular filter for the cnidarian stinging response\n\n## Authors\n\n- Keiko Weir<sup>1</sup> ([ORCID: 0000-0002-2501-9352](https://orcid.org/0000-0002-2501-9352))\n- Christophe Dupre<sup>1</sup> ([ORCID: 0000-0002-5929-8492](https://orcid.org/0000-0002-5929-8492))\n- Lena van Giesen<sup>1</sup>\n- Amy S-Y Lee<sup>2</sup> ([ORCID: 0000-0002-4121-0720](https://orcid.org/0000-0002-4121-0720))\n- Nicholas W Bellono<sup>1</sup> ([ORCID: 0000-0002-0829-9436](https://orcid.org/0000-0002-0829-9436)) \u2020\n\n### Affiliations\n\n1. Department of Molecular and Cellular Biology, Harvard University Cambridge United States\n2. Department of Biology, Brandeis University Waltham United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nAll animals detect and integrate diverse environmental signals to mediate behavior. Cnidarians, including jellyfish and sea anemones, both detect and capture prey using stinging cells called nematocytes which fire a venom-covered barb via an unknown triggering mechanism. Here, we show that nematocytes from Nematostella vectensis use a specialized voltage-gated calcium channel (nCaV) to distinguish salient sensory cues and control the explosive discharge response. Adaptations in nCaV confer unusually sensitive, voltage-dependent inactivation to inhibit responses to non-prey signals, such as mechanical water turbulence. Prey-derived chemosensory signals are synaptically transmitted to acutely relieve nCaV inactivation, enabling mechanosensitive-triggered predatory attack. These findings reveal a molecular basis for the cnidarian stinging response and highlight general principles by which single proteins integrate diverse signals to elicit discrete animal behaviors.\n\n## Introduction\n\nJellyfish, sea anemones, and hydrozoans of the Cnidarian phylum use specialized cells called cnidocytes to facilitate both sensation and secretion required for prey capture and defense (Watson and Mire-Thibodeaux, 1994b). Two major types of cnidocytes contribute to prey capture by the tentacles of the starlet sea anemone (Nematostella vectensis, Figure 1A): (1) spirocytes, anthozoan-specific cells that extrude a thread-like organelle to ensnare prey, and (2) nematocytes, pan-cnidarian cells which eject a single-use venom-covered barb to mediate stinging (Babonis and Martindale, 2017). Sensory cues from prey act on nematocytes to trigger the explosive discharge of a specialized organelle (nematocyst) at an acceleration of up to 5.41 \u00d7 106 g, among the fastest of any biological process (Holstein and Tardent, 1984; N\u00fcchter et al., 2006;\u00a0Figure 1B). The nematocyst can only be discharged once and therefore stinging represents an energetically expensive process that is likely tightly regulated (Watson and Mire-Thibodeaux, 1994b, Babonis and Martindale, 2014). Indeed, simultaneously presented chemical and mechanical (chemo-tactile) cues are required to elicit nematocyte discharge (Pantin, 1942a; Watson and Hessinger, 1989; Watson and Hessinger, 1992; Anderson and Bouchard, 2009). Electrical stimulation of nematocytes increases the probability of discharge in a calcium (Ca2+)-dependent manner (Anderson and Mckay, 1987; McKay and Anderson, 1988; Santoro and Salleo, 1991; Gitter et al., 1994; Watson and Hessinger, 1994a; Anderson and Bouchard, 2009), but direct recordings from nematocytes are limited and thus mechanisms by which environmental signals control discharge are not well studied.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/57578/elife-57578-fig1-v1.jpg)\n\n**Figure 1.:** (A) Starlet sea anemone (Nematostella vectensis). Scale bar\u00a0=\u00a03 mm. (B) Intact (yellow) and discharged nematocyte (blue). Scale bar\u00a0=\u00a020 \u03bcm. (C) Left: Representative patch clamp experiments from a nematocyte and tentacle neuron. Scale bar\u00a0=\u00a010 \u03bcm. Right: Nematocyte or neuron voltage-gated currents elicited by a maximally activating voltage pulse following 1 s pre-pulses to \u2212110 mV (max current), \u221290 mV (colored), or 0 mV (inactivated, no current). (D) Nematocyte voltage-gated currents inactivated at very negative voltages compared with neurons. Nematocyte inactivation occurred at voltages more negative than could be measured compared with a sigmoidal inactivation relationship in neurons: nematocyte estimated Vi1/2 = -100.2 \u00b1 0.4mV, n\u00a0=\u00a013 and neuron Vi1/2 = -70.8 \u00b1 1.0mV, n\u00a0=\u00a09. Apparent activation thresholds were similar (Figure 1\u2014figure supplement 1A). (E) Nematocyte voltage-gated currents elicited by \u221240 mV and 0 mV pulses were abolished in absence of external Ca2+ and blocked by cadmium (Cd2+). Representative of n\u00a0=\u00a04 for 0 Ca2+ and three for Cd2+, p<0.001 paired two-tailed student\u2019s t-test. (F) Nematocyte voltage-gated currents were Ca2+-sensitive. Substitution of extracellular Ca2+, but not Na+ for NMDG+, affected the reversal potential. n\u00a0=\u00a03\u20134, p<0.001 for 5 mM Ca2+ versus other conditions, one-way ANOVA with post-hoc Tukey test. (G) Nematocyte discharge was minimal or absent in response to mechanical stimulation alone (n\u00a0=\u00a011, 3.3 mM Ca2+). In the presence of prey extract, mechanically\u00a0evoked discharge was similar in standard and higher concentration of extracellular Ca2+ (n\u00a0=\u00a08 for 3.3 mM Ca2+, n\u00a0=\u00a05 for 10 mM) and blocked by Cd2+ (n\u00a0=\u00a08) or the removal of extracellular Ca2+ (n\u00a0=\u00a015). Discharged nematocysts embedded in presented gelatin-coated coverslips were quantified. p<0.001 for + prey with 3.3 or 10 mM Ca2+ versus other conditions, one-way ANOVA with post-hoc Bonferroni test. Data represented as mean\u00a0\u00b1\u00a0sem.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/57578/elife-57578-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) Voltage-gated currents from a nematocyte and tentacle neuron elicited by \u221240 mV or 0 mV pulses. Conductance-voltage curves: nematocyte Va1/2 = -24.0 \u00b1 0.5mV, n\u00a0=\u00a010 and neuron Va1/2 = -38.6 \u00b1 0.6mV, n\u00a0=\u00a07. (B) Peak current density elicited by 0 mV pulse in nematocytes (n\u00a0=\u00a05), neurons (n\u00a0=\u00a06), and non-neuronal cells (n\u00a0=\u00a03). (C) Inward currents activated and inactivated more slowly in nematocytes compared with neurons. n\u00a0=\u00a010 nematocytes, 11 neurons. p<0.0001 two-tailed student\u2019s t-test. (D) Nematocyte inward currents inactivated more quickly with repetitive stimulation compared with neurons. Protocol: 3.33 Hz stimulation with 20 ms pulses to \u221210 mV from \u221290 mV. n\u00a0=\u00a04 of each cell type, multiple row two-tailed student\u2019s t-test with significance of p<0.05 by sweep five and p<0.0001 by 120. (E) Inactivation of inward currents does not vary with external Ca2+. 0.5 mM Ca2+ estimated Vi1/2 = -100.2 \u00b1 0.4mV, n\u00a0=\u00a013, from Figure 1. 5 mM Ca2+ estimated Vi1/2 = -99.8 \u00b1 0.9mV, n\u00a0=\u00a03. Data represented as mean\u00a0\u00b1sem.\n\nHere, we demonstrate that nematocytes from Nematostella vectensis use a specialized Cav2.1 voltage-gated calcium channel orthologue (nCaV) to integrate dynamic voltage signals produced by distinct sensory stimuli. We show nematocytes are intrinsically mechanosensitive but nCaV exhibits unique voltage-dependent inactivation that basally inhibits cellular activity, thereby preventing responses to extraneous mechanical stimuli, such as background water turbulence. We further show that sensory neurons make synaptic contact with nematocytes, and the neurotransmitter acetylcholine (ACh) elicits a hyperpolarizing response that relieves nCaV inactivation to allow for subsequent cellular stimulation and chemo-tactile-elicited discharge. Thus, we propose that the specialized voltage dependence of nCaV acts as a molecular filter for sensory discrimination.\n\n## Results\n\n### Nematocyte CaV channels\n\nWe first obtained whole-cell patch clamp recordings from acutely dissociated nematocytes to investigate nematocyte signal transduction. Using intracellular cesium (Cs+) to block potassium (K+) currents revealed a voltage-gated inward current that was activated by positive or depolarized membrane voltages (ICaV, Figure 1C). In response to sustained positive voltage, voltage-activated ion channels enter a non-conducting, inactivated state and cannot be activated until returned to a resting state by negative membrane voltage. This property generally serves to limit responses to repetitive or prolonged stimulation, similar to receptor desensitization. Remarkably, ICaV began to inactivate at voltages more negative than we could technically measure, thus demonstrating an unusual voltage sensitivity of this conductance (Figure 1C,D). To determine whether these properties were specific to nematocytes, we used a transgenic sea anemone with fluorescently\u00a0labeled neurons to facilitate direct comparison between these excitable cell types (Nakanishi et al., 2012;\u00a0Figure 1C). Neuronal voltage-gated currents had a lower threshold for activation and exhibited much weaker voltage-dependent inactivation (Figure 1C,D, Figure 1\u2014figure supplement 1A\u2013D), similar to currents found in neurons of other animals (Hille, 2001), indicating that nematocytes exhibit unusual voltage-dependent properties. Ion substitution and pore blocker experiments confirmed ICaV is a Ca2+-sensitive current (Figure 1E,F), consistent with the contribution of extracellular Ca2+ to chemo-tactile-induced discharge (Watson and Hessinger, 1994a; Gitter et al., 1994;\u00a0Figure 1G). Increased concentrations of extracellular Ca2+ did not affect inactivation of ICaV (Figure 1\u2014figure supplement 1E), suggesting the enhanced voltage-dependent inactivation is intrinsic to the channel complex. This observation is important because it suggests ICaV renders nematocytes completely inactivated at typical resting membrane voltages and thus cells could not be stimulated from resting state.\n\nTo identify the ion channel mediating ICaV, we generated a tentacle-specific transcriptome and aligned reads from nematocyte-enriched cells (Sunagar et al., 2018). This strategy allowed us to search for differentially expressed transcripts that might encode CaV channel subunits (pore-forming \u03b1 and auxiliary \u03b2 and \u03b12\u03b4 subunits). The orthologue of cacnb2, a \u03b2 subunit of CaV channels, was the highest expressed CaV transcript in nematocyte-enriched cells, with levels 14-fold higher than other cells in the sea anemone (Figure 2A). \u03b2 subunits can modulate voltage-dependence and trafficking in diverse ways depending on their splice isoform, interacting subunits, and cellular context (Buraei and Yang, 2010). Importantly, \u03b2 subunits only interact with \u03b1 subunits of high voltage-activated (HVA) calcium channels (Perez-Reyes, 2003). In agreement with robust \u03b2 subunit expression, we found significant enrichment for cacna1a, the pore-forming subunit of HVA CaV2.1, and high expression of cacna2d1 (Figure 2\u2014figure supplement 1A,B). These observations are consistent with a previous report demonstrating specific expression of cacna1a in nematocytes of sea anemone tentacles and expression of \u03b2 subunits in nematocytes from jellyfish (Bouchard et al., 2006; Moran and Zakon, 2014; Bouchard and Anderson, 2014). Expression of cacna1h, which does not interact with auxiliary subunits (Buraei and Yang, 2010), was also observed, albeit at lower levels and across all cells (Figure 2\u2014figure supplement 1A). Thus, it remains possible that voltage-gated currents in nematocytes are not carried exclusively by one CaV subtype.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/57578/elife-57578-fig2-v1.jpg)\n\n**Figure 2.:** (A) CaV channel complex with \u03b1, \u03b2, and \u03b12\u03b4 subunits. mRNA expression (transcripts per million, TPM) of voltage-gated calcium (CaV) channel \u03b2 subunits in nematocyte-enriched cells (blue) and non-enriched cells (grey). n\u00a0=\u00a06, p<0.0001 for cacnb2.1 in nematocytes versus other cells, two-way ANOVA with post-hoc Bonferroni test. (B) Heterologously-expressed nCav channels (Nematostella cacna1a, cacnb2, cacna2d1) inactivated at very negative voltages (estimated Vi1/2 = -101.5 \u00b1 1.6mV, n\u00a0=\u00a05) versus mammalian orthologues (mCaV, Vi1/2 = -20.9 \u00b1 3.4mV, n\u00a0=\u00a010). Apparent activation thresholds were the same: nCaV Va1/2 = -9.8 \u00b1 0.3mV, n\u00a0=\u00a05, mCaV Va1/2 = -10.4 \u00b1 0.5mV, n\u00a0=\u00a09. Inactivation was measured in response to 1 s pre-pulses from \u2212110 mV to 10 mV with an inter-sweep holding potential of \u221290 mV. (C) nCaV exhibited slow inactivation with \u221270 mV holding potential (0.2 Hz stimulation, 5 s inter-pulse interval) that was best fit by two exponential functions with time constants of 10.0 and 369.5 s. n\u00a0=\u00a06, multiple row two-tailed student\u2019s t-test with significance of p<0.05 by 15 s and p<0.0001 by 500 s. (D) nCav inactivated at \u221240 mV and quickly recovered at negative holding potentials. n\u00a0=\u00a07 for nCaV, n\u00a0=\u00a06 for mCaV. (E) Voltage-gated currents recorded from nCaV or mCaV following a \u2212110 mV pre-pulse, \u221250 mV pre-pulse (colored), and 20 mV pre-pulse. CaV \u03b2 subunits were substituted as indicated (mammalian \u03b2 in red and Nematostella \u03b2 in blue). Scale bars\u00a0=\u00a0100 pA, 25 ms. (F) Mammalian \u03b2 shifts nCaV voltage-dependent inactivation to positive voltages. nCaV Vi1/2 = -73.2 \u00b1 1.2mV, n\u00a0=\u00a06. nCaV + m\u03b2=\u221216.9\u00a0\u00b1\u00a01.9 mV, n\u00a0=\u00a06. (G) Half maximal inactivation voltage (Vi1/2) for CaV chimeras. p<0.0001 for nCaV versus nCaV + m\u03b2, mCaV versus mCaV + n\u03b2, one-way ANOVA with post-hoc Tukey test. Inactivation was measured in response to pre-pulses from \u2212100 mV to 10 mV with an inter-sweep holding potential of \u2212110 mV to reduce slow inactivation. Data represented as mean\u00a0\u00b1sem.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/57578/elife-57578-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) mRNA expression (transcripts per million, TPM) of voltage-gated calcium (CaV) channel \u03b1 and \u03b12\u03b4 subunits in nematocyte-enriched cells (blue) versus non-enriched cells (grey). n\u00a0=\u00a06, p<0.01 for cacna1a in nematocytes versus other cells, two-way ANOVA with post-hoc Bonferroni test. Expression of other subunits was not significantly different. (B) Sequence alignment of Nematostella and Mus musculus \u03b1 subunits at the \u03b1 interaction domain (AID). Red letters indicate important regions for beta subunit interaction, underlined letters are critical for interaction. (C) Representative voltage-activated currents from HEK-293 cells expressing wild-type or chimeric CaV channels with specific combinations of mammalian and Nematostella subunits. Currents were elicited by 0 mV pulses from \u2212110 mV. (D) Half maximal activation voltage (Va1/2) was similar for CaV chimeras. n\u00a0=\u00a06 nCaV, 6 nCaV + m\u03b2, 10 mCaV, 10 mCaV + n\u03b2, 6 mCaV + n\u03b1, 6 mCaV + n\u03b12\u03b4. (E) Left: Rise time of voltage-activated inward current. Right: Relative fraction of inward current remaining after a 200 ms step to 0 mV (R200). n\u00a0=\u00a06 nCaV, 6 nCaV + m\u03b2, 10 mCaV, 14 mCaV + n\u03b2, 6 mCaV + n\u03b1, 7 mCaV + n\u03b12\u03b4. (F) nCaV inactivated more quickly than mCaV. Protocol: 3.33 Hz stimulation with 20 ms pulses to \u221210 mV from \u221290 mV. n\u00a0=\u00a05 nCaV, 6 mCaV, multiple row two-tailed student\u2019s t-test with significance of p<0.05 by sweep two and p<0.0001 by 120. (G) Inactivation curves of mCaV + n\u03b2 were similar when external Ca2+ (Vi1/2 = -54.4 \u00b1 1.8mV, n\u00a0=\u00a010) was replaced with Ba2+ (Vi1/2 = -57.0 \u00b1 0.9mV, n\u00a0=\u00a06). (H) nCaV exhibited relatively little slow inactivation from \u2212110 mV compared with \u221270 mV holding potential (Figure 2, 0.2 Hz stimulation, 5 s inter-pulse interval). Data represented as mean\u00a0\u00b1sem.\n\nHeterologous expression of Nematostella CaV (nCaV: cacna1a, cacnb2, and cacna2d1) produced voltage-gated currents with an apparent activation threshold nearly identical to the CaV complex made from respective mammalian orthologues (mCaV, Figure 2B, Figure 2\u2014figure supplement 1C,D). Both channels had similar activation kinetics, but fast inactivation was significantly pronounced in nCaV, resembling native ICaV (Figure 2E, Figure 2\u2014figure supplement 1E). Importantly, nCaV voltage-dependent inactivation was greatly enhanced compared with mCaV, regardless of the charge carrier (Figure 2B, Figure 2\u2014figure supplement 1F,G). Similar to ICaV, nCaV exhibited unusually-sensitive voltage-dependence and began to inactivate at voltages more negative than we could measure with an estimated midpoint inactivation voltage (Vi1/2)~80 mV more negative than mCaV (Figure 2B). Even with a holding potential of \u221270 mV, nCaV exhibited slow inactivation resulting in a drastic decrease in responses to depolarizing stimuli over time (Figure 2C). This slow inactivation was largely prevented by adjusting the holding potential to \u2212110 mV, suggesting inactivation occurs when channels are in a closed-state at potentials near or more negative than typical resting membrane potential (Figure 2\u2014figure supplement 1H). Importantly, nCaV rapidly recovered from inactivation, demonstrating that channels could be reset for subsequent activation following brief exposure to negative voltage (Figure 2D). These distinctive features closely match the unique properties of native ICaV, suggesting nCaV forms the predominant CaV channel in nematocytes.\n\nTo determine the molecular basis for nCaV inactivation, we analyzed chimeric CaV complexes containing specific \u03b1, \u03b2, and \u03b12\u03b41 subunits from nCaV or mCaV orthologues. Using a holding potential of \u2212110 mV to compare voltage-dependent inactivation, we found that only transfer of the \u03b2 subunit significantly affected voltage-dependent inactivation, while \u03b1 or \u03b12\u03b41 subunits produced minimal effects on voltage-dependent activation, inactivation, or kinetics (Figure 2E, Figure 2\u2014figure supplement 1C\u2013E). Indeed, other \u03b2 subunits can induce significant hyperpolarized shifts in inactivation of HVA CaV channels (Yasuda et al., 2004). In this case, the mCaV \u03b2 subunit drastically shifted nCaV inactivation by\u00a0~56 mV in the positive direction, prevented complete inactivation, and produced slower fast inactivation (Figure 2E\u2013G, Figure 2\u2014figure supplement 1E). Furthermore, nCaV \u03b2 was sufficient to confer greatly enhanced voltage-dependent inactivation to mCaV (Figure 2E,G). From these results, we conclude that nCaV \u03b2, the most enriched CaV subunit in nematocytes, confers nCaV\u2019s uniquely-sensitive voltage-dependent inactivation.\n\n### Nematocyte excitability\n\nBecause electrical stimulation has been implicated in nematocyte discharge and some nematocytes can produce action potentials (Anderson and Mckay, 1987; McKay and Anderson, 1988; Anderson and Bouchard, 2009), we used current-clamp to record the electrical responses of nematocytes to depolarizing stimuli. Under our conditions, nematocytes had a resting potential of \u221264.8\u00a0\u00b1\u00a08.9 mV and did not produce a voltage spike when injected with current from rest (Figure 3A). We further considered that the strong voltage-dependent inactivation of ICaV could prevent excitability. Consistent with this idea, when nematocytes were first hyperpolarized to \u221290 mV and subsequently stimulated by current injection, we observed a singular long voltage spike (Figure 3B,C). In contrast, tentacle neurons produced multiple narrow spikes when injected with equivalent current amplitudes from a similar resting voltage, consistent with other neural systems (Figure 3A\u2013C). Differences in spike width and frequency appear suited to mediate distinctive cellular functions: dynamic information processing in neurons and a single robust discharge event in nematocytes. Furthermore, these results indicate strong voltage-dependent inactivation prevents nematocyte activation from rest.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/57578/elife-57578-fig3-v1.jpg)\n\n**Figure 3.:** (A) Depolarizing current injection only elicited spikes from nematocytes first hyperpolarized to relieve inactivation. Nematocyte spike amplitude: 0 mV at rest, 41.5\u00a0\u00b1\u00a02.2 mV from ~\u221290 mV. n\u00a0=\u00a08, p<0.0001 two-tailed paired student\u2019s t-test. In contrast, tentacle neurons spiked from rest (31.5\u00a0\u00b1\u00a01.7 mV, n\u00a0=\u00a04). (B) Current injection elicited long singular spikes from nematocytes and numerous narrow spikes from neurons. (C) Nematocytes and neurons had similar resting membrane potentials but distinct spike width. n\u00a0=\u00a08 nematocytes, n=4\u00a0neurons, p<0.01, two-tailed student\u2019s t-test. Nematocytes produced only one spike, regardless of injection amplitude (n\u00a0=\u00a08), whereas neurons produced varying spike frequency depending on injection amplitude (n\u00a0=\u00a04). p<0.0001 two-way ANOVA with post-hoc Bonferroni test. Data represented as mean\u00a0\u00b1sem.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/57578/elife-57578-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) In the presence of intracellular K+, voltage-activated outward currents were elicited from nematocytes and tentacle neurons. (B) Current-voltage relationships of peak transient and sustained (end of 200 ms voltage pulse) currents in nematocytes and neurons. n\u00a0=\u00a07. (C) Nematocytes exhibited a lower ratio of sustained/transient outward current, indicating faster inactivation of outward current. n\u00a0=\u00a07, p<0.01 two-tailed student\u2019s t-test. (D) Nematocyte transient outward currents exhibited strong voltage-dependent inactivation compared with weak voltage-dependent inactivation of outward currents in neurons. n\u00a0=\u00a05, p<0.0001 for voltages at \u2212100 mV or above, two-way ANOVA with post-hoc Bonferroni test. (E) Transient K+ currents in nematocytes were assessed using voltage protocols to enhance the outward current sensitive to voltage-dependent inactivation. These currents were abolished by the K+ channel blocker TEA+ (n\u00a0=\u00a04), the intracellular Ca2+ chelator BAPTA (n\u00a0=\u00a04), or in the absence of external Ca2+ (replaced with NMDG+ + EGTA, n\u00a0=\u00a03). p<0.0001 for currents measured following pre-pulses to \u2212110 or \u2212100 mV, two-way ANOVA with post-hoc Bonferroni test. Smaller sustained outward currents measured following more positive pre-pulses were significantly affected by TEA+ but not other treatments. (F) mRNA expression (transcripts per million, TPM) of Ca2+-activated K+ channels in nematocyte-enriched cells. n\u00a0=\u00a06. (G) Nematocyte spike width and resting membrane potential were affected by the presence of intracellular Cs+. Cells were first hyperpolarized to elicit spikes with subsequent current injection. Spike width: n\u00a0=\u00a08 K+ (from Figure 3) and 3 Cs+, p<0.05 two-tailed student\u2019s t-test. Resting membrane voltage: n\u00a0=\u00a012 K+ (from Figure 3) and 3 Cs+, p<0.01 two-tailed student\u2019s t-test. Data represented as mean\u00a0\u00b1sem.\n\nK+ channels contribute to resting membrane voltage (estimated reversal potential for nematocyte K+ is ~\u2212100 mV) and often modulate repolarization following voltage spikes. Thus, we compared K+ currents in nematocytes and tentacle neurons to understand how spike width might be differentially regulated. Nematocytes exhibited transient outward K+ currents that quickly inactivated, while neurons had large sustained K+ currents, perhaps important for repolarization and repetitive spiking (Figure 3\u2014figure supplement 1A\u2013C). The transient component of the nematocyte K+ current was highly sensitive to voltage-dependent inactivation, similar to ICaV (Figure 3\u2014figure supplement 1D). This K+ current was abolished by the rapid intracellular Ca2+ chelator BAPTA or by removing external Ca2+, similar to the effect of the K+ channel blocker TEA+ (Figure 3\u2014figure supplement 1E). Consistent with this observation, nematocyte-enriched cells expressed numerous Ca2+-activated K+ channels (Figure 3\u2014figure supplement 1F). Furthermore, using intracellular Cs+ to block K+ currents resulted in prolonged voltage spikes and greatly increased resting membrane voltage, substantiating a role for K+ channels in modulating membrane voltage (Figure 3\u2014figure supplement 1G). We propose that these distinct K+ channel properties could contribute to the singular wide spikes of nematocytes versus the numerous narrow spikes of neurons.\n\n### Nematocyte sensory transduction\n\nIf nematocytes are basally inhibited due to the unique voltage-dependent inactivation of ICaV, how do they respond to sensory signals to elicit discharge? Nematocyte discharge requires simultaneous detection of chemo- and mechanosensory cues (Pantin, 1942b; Watson and Hessinger, 1992), even though mechanical stimulation of the nematocyte\u2019s cilium (cnidocil) within intact tentacles can by itself induce cellular depolarization (Brinkmann et al., 1996; Anderson and Bouchard, 2009). Indeed, we found the deflection of isolated nematocyte cnidocils elicited a mechanically\u00a0gated inward current with rapid activation and inactivation kinetics. This current was abolished by gadolinium (Gd3+), which blocks mechanoreceptor and other cation channels, and was not observed in neurons (Figure 4A\u2013C). Furthermore, nematocyte-enriched cells differentially expressed transcripts encoding NompC (no mechanoreceptor potential C, Figure 4\u2014figure supplement 1A), a widely conserved mechanoreceptor previously found to localize to the cnidocil of nematocytes from Hydra (Sch\u00fcler et al., 2015). Heterologous expression of Nematostella NompC (nNompC) resulted in a mechanically-gated current with similar properties to native nematocytes, including rapid kinetics and Gd3+ sensitivity (Figure 4A\u2013C). Comparison with the Drosophila orthologue (dNompC) demonstrated nNompC had similar rapid kinetics, Gd3+ sensitivity, pressure-response relationships, and nonselective cation conductance, all consistent with the conservation of protein regions important for mechanosensitivity and ion selectivity (Jin et al., 2017;\u00a0Figure 4A\u2013C, Figure 4\u2014figure supplement 1B\u2013D). Thus, we conclude nematocytes are intrinsically mechanosensitive and suggest nNompC contributes to nematocyte mechanosensitivity. Importantly, this mechanically-evoked current is of sufficient amplitude to evoke a spike from very negative membrane voltages, but not from resting voltage at which ICaV is inactivated.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/57578/elife-57578-fig4-v1.jpg)\n\n**Figure 4.:** (A) Mechanical stimulation of nematocytes evoked Gd3+-sensitive, transient inward currents with similar properties to heterologously expressed Nematostella (n) and Drosophila (d) NompC channels. Stimulation thresholds (pipette displacement): nematocyte = 1.7 \u00b1 0.3 \u03bcm (n = 6), nNompC = 4.2 \u00b1 0.6 \u03bcm (n = 4), dNompC = 4.2 \u00b1 0.5 \u03bcm (n = 4). Untransfected cells did not respond to similar stimuli (n = 6). (B) Mechanically evoked currents from nematocytes (n = 6), nNompC (n = 4), and dNompC (n = 4) were blocked by Gd3+, while tentacle neurons lacked mechanically evoked currents (n = 8). p<0.01 two-tailed student\u2019s t-test. (C) Mechanically evoked current activation and desensitization kinetics were similar in nematocytes (n = 6), nNompC (n = 4), and dNompC (n = 4). (D) Chemosensory stimuli did not directly affect nematocytes but the neurotransmitter acetylcholine (ACh, n = 5) elicited a large outward current. n = 4 for prey extract, NANA, Glutamate, GABA, Glycine, p<0.001 for ACh versus other conditions, one-way ANOVA with post-hoc Tukey test. (E) Representative current-voltage relationship of ACh-elicited response in nematocytes. (F) ACh-evoked currents (n = 9) were blocked by nicotinic ACh receptor antagonists (tubocurarine = 4, mecamylamine = 4) and a similar current was elicited by nicotine (n = 4). ACh-evoked outward currents were inhibited by a K+ channel blocker (TEA+, n = 4) and an intracellular Ca2+ chelator (BAPTA, n = 4), but not the G-protein signaling blocker GDP\u03b2S (n = 4). p<0.001 for vehicle versus antagonists, one-way ANOVA with post-hoc Tukey test. (G) Acetylcholinesterase staining in tentacles with and without substrate solution (representative of n = 3 animals). Scale bar = 200 \u03bcm. Data represented as mean \u00b1sem.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/57578/elife-57578-fig4-figsupp1-v1.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A) Left: mRNA expression (transcripts per million, TPM) of NompC (no mechanoreceptor potential) ion channels in nematocyte-enriched cells (blue) vs. non-enriched cells (grey). n\u00a0=\u00a06, p<0.05, two-tailed student\u2019s t-test. Right: Numerous reads mapped across the entire NompC sequence. The transcript architecture is shown below the mapping. CDS, coding sequence; UTR, untranslated regions. The maximum read counts was set as the same value between samples. (B) A representative single Nematostella NompC (nNompC) channel expressed in an excised membrane patch was sensitive to increasing pressure applied via the patch pipette. Vm = \u221280 mV. (C) nNompC and Drosophila NompC (dNompC) exhibited similar pressure-open probability (NPO) relationships and slope conductance. nNompC was blocked by Gd3+. 95% confidence interval for pressure required to induce half maximal PO: nNompC\u00a0=\u00a051.9\u201359.4 mmHg, dNompC\u00a0=\u00a047.4\u201359.7 mmHg. n\u00a0=\u00a05. Slope conductance: nNompC\u00a0=\u00a0168\u00a0\u00b1\u00a04 pS, dNompC\u00a0=\u00a0175\u00a0\u00b1\u00a04 pS. n\u00a0=\u00a04. Patches from untransfected cells did not respond to similar stimuli (n\u00a0=\u00a06). (D) Alignment of Drosophila (dNompC) and Nematostella (nNompC) protein sequences revealed high conservation with overall sequence identity of 44.3% (62.7% similarity). Yellow indicates residues important for mechanosensitivity. (E) Application of filtered prey extract, but not vehicle, elicited a feeding response (contraction of tentacles) in a representative Nematostella. (F) Representative nematocyte response to acetylcholine (ACh) shows an outwardly-rectifying current, which was blocked by mecamylamine (Mec). K+ was the major intracellular cation. (G) Representative current-voltage relationship shows that the ACh-evoked current was inhibited by the K+ channel blocker TEA+. (H) In the presence of intracellular Cs+ to block K+ currents, ACh mediated a mecamylamine-sensitive, inward current that was enhanced by extracellular Ca2+. (I) mRNA expression (transcripts per million, TPM) of nicotinic acetylcholine-like receptors (nAChRs) in nematocyte-enriched cells (blue) vs. non-enriched cells (grey). n\u00a0=\u00a06, p<0.05 for nACHRa7.1, two-way ANOVA with post-hoc Bonferroni test. (J) Alignment of Nematostella nAChRs and mouse nAChRa7 protein sequences revealed conserved residues that facilitate Ca2+ permeability. Data represented as mean\u00a0\u00b1sem.\n\nBecause nematocyte discharge is mediated by combined chemical and mechanical cues (Pantin, 1942b; Watson and Hessinger, 1992), we wondered if chemosensory signals could modulate nematocyte membrane voltage to allow for ICaV activation and cellular responses. While prey-derived chemicals (<3 kDa extract from brine shrimp) evoked robust behavioral responses, similar treatments did not elicit electrical responses from isolated nematocytes (Figure 4D, Figure 4\u2014figure supplement 1E). Considering in vivo cellular and discharge activity requires the presence of prey-derived chemicals with simultaneous mechanical stimulation, chemoreception may occur indirectly through functionally\u00a0coupled cells (Price and Anderson, 2006). Previous studies suggest the presence of synaptic connections between nematocytes and other unknown cell types (Westfall et al., 1998; Oliver et al., 2008). To test this possibility, we screened isolated nematocytes for responses to well-conserved neurotransmitters and found only acetylcholine (ACh) elicited a significant response (Figure 4D,E). ACh-evoked outward currents were abolished by nicotinic acetylcholine receptor (nAChR) antagonists and recapitulated by nicotine (Figure 4F, Figure 4\u2014figure supplement 1F). The K+ channel blocker TEA+ and the intracellular Ca2+ chelator BAPTA inhibited responses, suggesting ACh elicits K+ channel activity downstream of increased intracellular Ca2+. While the G-protein signaling inhibitor GDP\u03b2S did not affect outward currents, blockade of K+ currents with intracellular Cs+ revealed an ACh-elicited inward current that was enhanced by increased extracellular Ca2+ and blocked by the nAChR antagonist mecamylamine (Figure 4F, Figure 4\u2014figure supplement 1G,H). These results suggest ACh evokes a Ca2+-permeable nAChR-like signaling pathway to engage Ca2+-activated K+ channels, consistent with the absence of muscarinic ACh receptors in Nematostella (Faltine-Gonzalez and Layden, 2019). In agreement with this observation, nematocyte-enriched cells expressed numerous nAChR-like transcripts which had well-conserved domains involved in Ca2+ permeability (Fucile, 2004;\u00a0Figure 4\u2014figure supplement 1I,J). Finally, we found robust acetylcholinesterase activity in tentacles, further suggesting a role for ACh signaling in nematocyte function (Figure 4G). These results demonstrate that nematocytes use cholinergic signaling to regulate K+ currents, similar to how efferent cholinergic innervation of vertebrate hair cells modulates nAChR-K+ channel signaling to inhibit auditory responses (Elgoyhen and Katz, 2012).\n\nTo identify the origin of cellular connections to nematocytes, we used serial electron microscopy reconstruction to visualize nematocytes and neighboring cells. We analyzed similar tentacle tissues from which we carried out physiological experiments and readily observed neurons and nematocytes in close proximity (Figure 5\u2014figure supplement 1A,B). In resulting micrographs, nematocytes were clearly identified by their distinct nematocyst and cnidocil (Figure 5\u2014figure supplement 1C). Interestingly, each nematocyte exhibited a long process, of presently unknown function, that extended into the ectoderm (Figure 5\u2014figure supplement 1D). We also observed numerous spirocytes, indicated by the presence of a large intracellular thread-like structure (Figure 5A, Figure 5\u2014figure supplement 1C). Putative sensory neurons were identified based on their synaptic contacts and extracellular projections (Figure 5A, Figure 5\u2014figure supplement 1E,F). Importantly, dense core vesicles were localized to electron-dense regions at the junction between each nematocyte and one other cell type, either sensory neurons or spirocytes (Figure 5A, Figure 5\u2014figure supplement 2A\u2013E). Thus, nematocytes receive synaptic input from both neurons and spirocytes and likely serve as a site for integrating multiple signals (Figure 5\u2014figure supplement 2F,G). This observation is consistent with the ability of cnidarians to simultaneously discharge multiple cnidocyte types to most efficiently capture prey (Pantin, 1942a).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/57578/elife-57578-fig5-v1.jpg)\n\n**Figure 5.:** (A) Left: Electron micrograph demonstrating dense-core vesicles in the vicinity of an electron-dense zone localized at the junction between a spirocyte and nematocyte. Middle: 3D reconstruction of the nematocyte and spirocyte shown in the left panel. The box indicates the position of the synapse. Right: 3D reconstruction of a different nematocyte making a synapse with a putative sensory neuron. The box indicates the position of the synapse shown in Figure 5\u2014figure supplement 2C and E. (B) ACh induced hyperpolarization of nematocytes. n\u00a0=\u00a06, p<0.01 paired two-tailed student\u2019s t-test. (C) Depolarizing current injection did not induce active properties from rest, but did elicit a voltage spike from most nematocytes hyperpolarized by ACh. n\u00a0=\u00a06, p<0.01 paired two-tailed student\u2019s t-test. (D) Chemo-tactile-induced nematocyte discharge (touch + prey extract, n\u00a0=\u00a08) was inhibited by the mechanoreceptor current blocker Gd3+ (n\u00a0=\u00a07) and nAChR antagonist mecamylamine (n\u00a0=\u00a014). In the absence of chemical stimulation (touch - prey extract, n\u00a0=\u00a05), touch + ACh (n\u00a0=\u00a014) was sufficient to induce discharge, which was inhibited by mecamylamine (n\u00a0=\u00a012). p<0.0001 for controls versus respective treatments, one-way ANOVA with post-hoc Bonferroni test. Data represented as mean\u00a0\u00b1sem.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/57578/elife-57578-fig5-figsupp1-v1.jpg)\n\n**Figure 5\u2014figure supplement 1.:** (A) Tentacle from elav::mOrange Nematostella stained with dsRed (red) indicated neural processes beneath ectodermal nematocytes and putative sensory neurons located within the ectoderm. DAPI (blue) stains nuclei and nematocysts. White arrow indicates putative sensory projection. Scale bar\u00a0=\u00a010 \u03bcm. (B) Electron micrograph of Nematostella tentacle section (50 nm thickness). Arrow indicates regions containing nematocytes, spirocytes and sensory neurons which were imaged at higher magnification as illustrated in Figure 5 and Figure 5\u2014figure supplement 2. (C) Cnidocil of a nematocyte (blue) and ciliae of a spirocyte (orange). Left: 3D reconstruction. Right: Electron micrograph of one section of the nematocyte (top) and one section of the spirocyte (bottom). (D) Nematocyte process. Left: 3D reconstruction of the nematocyte. Right: Electron micrograph of one section across the nematocyte process, indicated by the region boxed on the left panel. (E) Synapses made between the neuron and other cells than a nematocyte. Two examples are shown (middle and right panels). (F) Sensory terminal of the neuron shown in Figure 5A with multiple filopodia extending in the outside environment. Left: Electron micrograph of one section of the sensory neuron. Right: 3D reconstruction of the sensory neuron.\n\n![Figure 5\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/57578/elife-57578-fig5-figsupp2-v1.jpg)\n\n**Figure 5\u2014figure supplement 2.:** (A) Putative synapse between a nematocyte (N, blue) and a spirocyte (yellow). Higher magnification is shown in Figure 5A. (B) Putative synapse between a nematocyte (N, blue) and a spirocyte (orange). (C) Putative synapse between a nematocyte (N, blue) and a sensory neuron (red). (D) Higher magnification of the regions boxed in B. (E) Higher magnification of the regions boxed in C. (F) Reconstruction of the synapse between a nematocyte (N, blue) and a spirocyte (S, yellow). Box indicates site of synaptic contact shown in panel A and Figure 5A. (G) 3D reconstruction of the sensory neuron and the two nematocytes shown in Figure 5A (blue).\n\n![Figure 5\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/57578/elife-57578-fig5-figsupp3-v1.jpg)\n\n**Figure 5\u2014figure supplement 3.:** (A) For nematocytes with a resting membrane voltage (VRest) more positive than \u221260 mV, ACh was insufficient to hyperpolarize cells enough to mediate a spike following depolarizing current injection. Representative of n\u00a0=\u00a02. (B) For nematocytes with VRest more negative than \u221260 mV, all ACh-hyperpolarized cells produced voltage spikes following depolarizing current injection. n\u00a0=\u00a04, p<0.001 two-tailed student\u2019s t-test. (C) Controls (related to Figures 1G and 5D) for nematocyte discharge. Control\u00a0=\u00a08, Gd3+wash\u00a0=\u00a07, Mec wash\u00a0=\u00a014, Cd2+wash\u00a0=\u00a08. (D\u2013F). mRNA expression (transcripts per million, TPM) of calcium-binding proteins (D), calcium exchangers (E), and calcium ATPases (F) in nematocyte-enriched cells.\n\n### Voltage-dependence mediates signal integration\n\nHow do distinct mechanosensory and chemosensory signals converge to elicit discharge? In agreement with our observation that nAChR activation increases K+ channel activity, ACh hyperpolarized nematocytes to negative voltages from which they were capable of producing robust voltage spikes (Figure 5B,C). A select number of cells with a more positive resting voltage still failed to produce spikes, and therefore additional regulation could exist through the modulation of resting membrane voltage (Figure 5\u2014figure supplement 3A,B). These results suggest that the voltage-dependence for ICaV prevents basal activation to depolarizing signals, such as mechanical stimulation, but activation of nAChR hyperpolarizes the cell to relieve ICaV inactivation, thereby amplifying depolarizing signals to mediate cellular responses.\n\nConsistent with a requirement for both mechano- and chemosensory input, we found the mechanoreceptor current blocker Gd3+ inhibited chemo-tactile stimulation of discharge. Additionally, the nAChR antagonist mecamylamine greatly reduced chemo-tactile-induced discharge (Figure 5D). Washout of both treatments recovered the ability of nematocytes to discharge (Figure 5\u2014figure supplement 3C). Moreover, the requirement for prey-derived chemicals was completely recapitulated by ACh (Figure 5D). These results are consistent with a role for ACh signaling downstream of chemosensory stimulation. Thus, we propose that the unique ICaV voltage-dependent inactivation provides a mechanism by which nematocytes filter extraneous depolarizing mechanical signals, but can integrate chemosensory-induced hyperpolarization together with a depolarizing stimulus to elicit robust signal amplification and discharge responses (Figure 6).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/57578/elife-57578-fig6-v1.jpg)\n\n**Figure 6.:** (A) Model for nematocyte signal integration. (B) Nematocyte CaV is inactivated at rest and thus does not amplify extraneous NompC-mediated mechanical signals. Chemosensory stimuli hyperpolarize nematocytes through ACh signaling to relieve inactivation of CaV channels, which can then amplify mechanical stimuli to engage discharge.\n\n## Discussion\n\nHere, we demonstrate that nematocytes use the specialized properties of nCaV to filter salient chemo-tactile signals from environmental noise. The involvement of Ca2+ signaling in this process is consistent with a well-established role for Ca2+ influx in mediating discharge across multiple cnidarian species (McKay and Anderson, 1988; Santoro and Salleo, 1991; Watson and Hessinger, 1994a). However, the exact mechanism by which Ca2+ influx mediates discharge is unclear. It has been proposed that Ca2+ influx alters the permeability of the nematocyst capsule and/or initiates the rapid dissociation of ions within the cyst to induce osmotic changes within the organelle (Lubbock and Amos, 1981; Lubbock et al., 1981; Weber, 1990; Tardent, 1995). Our transcriptomic analyses demonstrate that nematocytes express multiple Ca2+ handling proteins (Figure 5\u2014figure supplement 3D\u2013F), which could control Ca2+ signaling domains in response to spatially\u00a0restricted sensory transduction cascades. This organization would be consistent with the necessity for ICaV-mediated amplification of receptor-mediated nonselective cation conductances. Indeed, CaV currents could mediate an increase of\u00a0>500 \u00b5M Ca2+ considering a uniform distribution across the small cytoplasmic volume (5%) not occupied by the nematocyst. Future studies will provide insight into the coupling between sensory transduction and organellar physiology.\n\nOur results suggest one mechanism by which nematocytes integrate combined mechanical and chemical cues to filter salient environmental information and appropriately engage nematocyte discharge. However, cnidarians occupy distinct ecological niches and may have evolved different biophysical features to account for increased turbulence, specific behaviors, or particular prey and predatory targets. Numerous sea anemones occupy turbulent tidal pools, whereas others, like Nematostella vectensis, live in calmer regions. Similarly, cnidarians can undergo developmental transitions between immobile and free-floating medusa phases while maintaining the use of nematocytes for prey capture (Martin and Archer, 1997). Although forces generated from swimming prey are likely negligible in comparison with physical contact of the cnidocil, strong tidal waves may be sufficient to elicit mechanoreceptive responses which could interfere with pertinent chemo-tactile sensation and subsequent stinging responses. These ecological differences might require distinct filtering mechanisms for distinguishing salient prey or predator signals. For example, anatomical organization and pharmacological dependence for cellular and discharge activity in anthozoan nematocytes differs from hydrozoans (Anderson and Mckay, 1987; Kass-Simon and Scappaticci, Jr., 2002; Oliver et al., 2008). Indeed, nematocysts vary extensively in morphology, differing in the length of the extruded thread, the presence of spines, and the composition of toxins (Kass-Simon and Scappaticci, Jr., 2002), likely reflecting the diversity of organismal needs.\n\nThe modularity provided by synaptic connections could increase the diversity of signals which regulate nematocyte discharge. For instance, distinct chemoreceptor cells could form synaptic connections with specific nematocyte populations to mediate discrete behavioral responses. In addition to chemical mixtures, such as prey extract, numerous amino acids, lipids, and N-acetylated sugars can individually modulate nematocyte discharge (Watson and Hessinger, 1992). While these are broadly-distributed molecules, it is possible distinct prey- or predator-derived compounds regulate specific chemosensory cells to engage predatory or defensive nematocytes, respectively (Brace, 1990). Indeed, we observed that both spirocytes and neurons make synaptic contacts with nematocytes, thus either could release ACh in response to specific stimuli. Future identification and characterization of chemosensory cells and the ecologically\u00a0relevant compounds which activate them will provide insight regarding chemical coding and mechanisms of synaptic signaling. Discharge can also\u00a0be regulated by organismal nutritional state (Sandberg et al., 1971), suggesting nematocytes could receive input from digestive cells or hormones. Additionally, various cnidocyte types are found across the cnidarian phylum and regulated by stimuli relevant to their behavioral purpose. For example, the freshwater cnidarian, Hydra vulgaris, uses a specific cnidocyte to grasp surfaces for phototaxis, suggesting that these cells could be regulated downstream of a photoreceptor (Plachetzki et al., 2012). Within anthozoans, nematocytes and spirocytes may use similar or distinct mechanisms to control discharge. Functional comparisons will reveal whether specific proteins, domains, or signaling mechanisms are conserved or give rise to the evolutionary novelties across these incredibly specialized cell types (Babonis and Martindale, 2014).\n\nThe ability to distinguish behaviorally-relevant stimuli, such as prey, from background noise is especially critical because nematocytes are single-use cells that must be replaced following discharge. Multiple species have taken advantage of these specialized conditions by adapting to evade and exploit nematocyte discharge for their own defensive purposes. For example, clownfish can live among the tentacles of sea anemones without harmful effects, although the exact mechanism by which this occurs is unclear (Lubbock, 1980). Certain species of nudibranchs and ctenophores acquire undischarged nematocysts from prey and store them for later defense, indicating that these organisms are able to initially prevent discharge responses (Greenwood, 2009). Understanding such regulation could reveal additional mechanisms by which cells process diverse stimuli and provide insight into the evolution of these interspecies relationships.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Strain, strain background (Nematostella vectensis, adult, male and female)</td>\n      <td>Nematostella vectensis</td>\n      <td>Woods Hole MarineBiological Laboratory</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (Nematostella vectensis, stable transgenic line, adult, male and female)</td>\n      <td>NvElav1::mOrange</td>\n      <td>(Nakanishi et al., 2012)</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Cell line (Homo-sapiens)</td>\n      <td>HEK293T</td>\n      <td>ATCC</td>\n      <td></td>\n      <td>CRL-3216</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti- DsRed (Rabbit Polyclonal)</td>\n      <td>TaKaRa</td>\n      <td>Cat#632496</td>\n      <td>1:500</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>nCaV: cacna1a (plasmid)</td>\n      <td>Plasmid fromour lab (see Materials\u00a0and\u00a0methods)</td>\n      <td></td>\n      <td>Nematostella nCaV \u03b1</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>nCaV: cacna2d1(plasmid)</td>\n      <td>Plasmid from our lab (see Materials\u00a0and\u00a0methods)</td>\n      <td></td>\n      <td>Nematostella nCaV \u03b12\u03b4</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>nCaV: cacnb2 (plasmid)</td>\n      <td>Plasmid from our lab (see Materials\u00a0and\u00a0methods)</td>\n      <td></td>\n      <td>Nematostella nCaV \u03b2</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>nNompC (plasmid)</td>\n      <td>Plasmid from our lab (see Materials\u00a0and\u00a0methods)</td>\n      <td></td>\n      <td>Nematostella nNompC</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>Rat cacna2d1</td>\n      <td>(Lin et al., 2004)</td>\n      <td>Addgene Plasmid #26575</td>\n      <td>Rat mCaV \u03b12\u03b4</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>Mouse cacna1a</td>\n      <td>(Richards et al., 2007)</td>\n      <td>Addgene Plasmid #26578</td>\n      <td>Mouse mCaV \u03b1</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>Rat cacnb2a</td>\n      <td>(Wyatt et al., 1998)</td>\n      <td>Addgene Plasmid #107424</td>\n      <td>Rat mCaV \u03b2</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>dNompC-GFP</td>\n      <td>YN Jan (UCSF)</td>\n      <td>N/A</td>\n      <td>Drosophila nNompC</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>RACE Primer</td>\n      <td>Primer generated in our lab (see Materials\u00a0and\u00a0methods)</td>\n      <td>PCR primer</td>\n      <td>GATTACGCCAAGCTTTATGCGTCCAATCGTACTTGTCGGC</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>RACE Primer</td>\n      <td>Primer generated in our lab (see Materials\u00a0and\u00a0methods)</td>\n      <td>PCR primer</td>\n      <td>GATTACGCCAAGCTTGCCGACAAGTACGATTGGACGCATA</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>Cacnb primer F</td>\n      <td>Primer generated in our lab (see Materials\u00a0and\u00a0methods)</td>\n      <td>PCR primer</td>\n      <td>CAGAGCCAGGCCTGAGCGAG</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>Cacnb primer R</td>\n      <td>Primer generated in our lab (see Materials\u00a0and\u00a0methods)</td>\n      <td>PCR primer</td>\n      <td>GCCCCGTTAAAAGTCGAGAG</td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>SMARTer RACE 5\u2019/3\u2019 Kit</td>\n      <td>TaKaRa</td>\n      <td>Cat# 634858</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>N-Acetylneuraminic acid (NANA)</td>\n      <td>Sigma</td>\n      <td>Cat#857459</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Glycine</td>\n      <td>Sigma</td>\n      <td>Cat#410225</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Acetylcholine chloride</td>\n      <td>Sigma</td>\n      <td>Cat#A6625</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>GdCl3</td>\n      <td>Sigma</td>\n      <td>Cat#7532</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>TEA</td>\n      <td>Sigma</td>\n      <td>Cat#86614</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>GDP\u03b2S</td>\n      <td>Sigma</td>\n      <td>Cat#G7637</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>CdCl2</td>\n      <td>Sigma</td>\n      <td>Cat#202908</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Mecamylamine</td>\n      <td>Tocris</td>\n      <td>Cat#2843</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Glutamate</td>\n      <td>Tocris</td>\n      <td>Cat#0218</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>\u03b3-Aminobutyric acid (GABA)</td>\n      <td>Tocris</td>\n      <td>Cat#0344</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Nicotine ditartrate</td>\n      <td>Tocris</td>\n      <td>Cat#3546</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Tubocurarine</td>\n      <td>Tocris</td>\n      <td>Cat#2820</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>BAPTA</td>\n      <td>Molecular Probes</td>\n      <td>Cat#B-1204</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Cutadapt</td>\n      <td>(Martin, 2011)</td>\n      <td></td>\n      <td>https://github.com/marcelm/cutadapt/</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Trinity</td>\n      <td>(Grabherr et al., 2011)</td>\n      <td></td>\n      <td>https://github.com/trinityrnaseq</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>InterProScan</td>\n      <td>(Jones et al., 2014)</td>\n      <td></td>\n      <td>https://github.com/ebi-pf-team/interproscan/</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>HMMER</td>\n      <td>(Eddy, 2009)</td>\n      <td></td>\n      <td>http://hmmer.org/</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Pfam</td>\n      <td>(El-Gebali et al., 2019)</td>\n      <td></td>\n      <td>https://pfam.xfam.org/</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>DIAMOND</td>\n      <td>(Buchfink et al., 2015)</td>\n      <td></td>\n      <td>https://github.com/bbuchfink/diamond</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Clustal Omega</td>\n      <td>(Sievers et al., 2011)</td>\n      <td></td>\n      <td>https://www.ebi.ac.uk/Tools/msa/clustalo/</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Fiji: Linear Stack Alignment with SIFT</td>\n      <td>(Schindelin et al., 2012)</td>\n      <td></td>\n      <td>https://fiji.sc/</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Matlab custom script</td>\n      <td>Matlab code provided in source data for Figure 1</td>\n      <td></td>\n      <td>See supplemental table for script</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>VAST</td>\n      <td>(Berger et al., 2018)</td>\n      <td></td>\n      <td>https://software.rc.fas.harvard.edu/lichtman/vast/</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>3D Studio Max 2019</td>\n      <td>(Autodesk, 2019)</td>\n      <td></td>\n      <td>https://www.autodesk.com</td>\n    </tr>\n  </tbody>\n</table>\n\n### Animals and cells\n\nStarlet sea anemones (Nematostella vectensis) were provided by the Marine Biological Laboratory (Woods Hole, Massachusetts), Nv-Elav1::mOrange transgenic animals were a gift from F. Rentzsch. We used adult animals of both sexes, which were fed freshly-hatched brine shrimp (Artemia) twice a week and kept on a 12 hr light/dark cycle in 1/3 natural sea water (NSW). Nematocytes and neurons were isolated from tentacle tissue, which was harvested by anesthetizing animals in high-magnesium solution containing (mM): 140 NaCl, 3.3 Glucose, 3.3 KCl, 3.3 HEPES, 40 MgCl2. Cells were isolated from tentacles immediately prior to electrophysiology experiments by treatment with 0.05% Trypsin at 32\u00b0C for 30 min and mechanical dissociation in divalent free recording solution (mM): 140 NaCl, 3.3 Glucose, 3.3 KCl, 3.3 HEPES, pH 7.6. Basitrichous isorhiza nematocytes were isolated from tentacles and identified by a thick-walled capsule containing a barbed thread, with a characteristic high refractive index, oblong shape and presence of a cnidocil. Spirocytes were identified by a thin-walled capsule containing a thin, unarmed thread, used for ensnaring prey. Neurons were identified by mOrange expression.\n\nHEK293T cells (ATCC, Cat# CRL-3216, RRID:CVCL_0063, authenticated and validated as negative for mycoplasma by vendor) were grown in DMEM, 10% fetal calf serum, and 1% penicillin/streptomycin at 37\u00b0C, 5% CO2. Cells were transfected using lipofectamine 2000 (Invitrogen/Life Technologies) according to the manufacturer\u2019s protocol. 1 \u00b5g of Nematostella cacna1a, cacnb2.1, cacna2d1. M. musculus (mouse) cacna1a, R. norvegicus (rat) cacnb2a, or rat cacna2d1 was coexpressed with 0.5 \u00b5g GFP. Mechanosensitive proteins were assayed using HEK293T cells transfected with 1 \u00b5g of either Drosophila NompC or Nematostella NompC. To enhance channel expression, cells were transfected for 6\u20138 hr, plated on coverslips, and then incubated at 28\u00b0C for 2\u20136 days before experiments. Drosophila NompC-GFP was a gift from YN Jan. Rat cacna2d1 (RRID:Addgene_26575) and cacna1a (RRID:Addgene_26578) were gifts from D. Lipscombe and cacnb2a (RRID:Addgene_107424) was a gift from A. Dolphin.\n\n### Molecular biology\n\nRNA was prepared from tentacles of adult Nematostella using published methods (Stefanik et al., 2013). Briefly, 50 mg of tentacle tissue were homogenized and RNA was extracted using TRIzol. RNA was isolated and DNase treated (Zymo Research), then used for cDNA library synthesis (NEB E6560). Full-length sequence for a Nematostella calcium channel beta subunit was obtained with a RACE strategy using specific primers (GATTACGCCAAGCTTTATGCGTCCAATCGTACTTGTCGGC and GATTACGCCAAGCTTGCCGACAAGTACGATTGGACGCATA) on the amplified tentacle-tissue library. The final sequence was confirmed using primers corresponding to the end of the derived sequence (CAGAGCCAGGCCTGAGCGAG and GCCCCGTTAAAAGTCGAGAG) to amplify a full-length cDNA from tentacle mRNA, which was sequenced to confirm identity. nCav\u00a0subunits:\u00a0cacna1a, cacna2d1, cacnb2, and nNompC-GFP were synthesized by Genscript (Piscataway, NJ). Sequence alignments were carried out using Clustal Omega.\n\n### Transcriptomics\n\nTentacle tissue was ground to a fine powder in the presence of liquid nitrogen in lysis buffer (50 mM Tris-HCl pH 7.5, 250 mM KCl, 35 mM MgCl2, 25 mM EGTA-KOH pH 8, 5 mM DTT, murine RNase inhibitor (NEB), 1% (w/v) NP-40, 5% (w/v) sucrose, 100 \u03bcg ml\u22121 cycloheximide (Sigma), 500 \u03bcg ml\u22121 heparin (Sigma)). Lysate was incubated on ice for 5 min, triturated five times with an 18 g needle, and insoluble material was removed by centrifugation at 16,000 g for 5 min at 4\u00b0C. Polyadenylated RNA was used to make sequencing libraries and sequenced on an Illumina HiSeq 4000 (Novogene). Quality filtering and adapter trimming was performed using Cutadapt (Martin, 2011), and a de novo transcriptome was assembled using Trinity (Grabherr et al., 2011). Annotation was performed using InterProScan (Jones et al., 2014) with Panther member database analysis, HMMER (Eddy, 2009) with the Pfam (El-Gebali et al., 2019) database, and DIAMOND (Buchfink et al., 2015) with the UniProt/TrEMBL database.\n\nReads from sorted cnidocytes (Bioproject PRJNA391807 Sunagar et al., 2018), enriched for nematocytes, were quality and adapter trimmed as described above, and transcript abundance (TPM) was quantified using Kallisto (Bray et al., 2016) and the tentacle transcriptome. For read mapping visualization, mapping was performed with Bowtie2 (Langmead and Salzberg, 2012), output files were converted to indexed bam files using Samtools (Li et al., 2009), and visualization was performed with the Integrated Genomics Viewer (Robinson et al., 2011).\n\n### Electrophysiology\n\nRecordings were carried out at room temperature using a MultiClamp 700B amplifier (Axon Instruments) and digitized using a Digidata 1550B (Axon Instruments) interface and pClamp software (Axon Instruments). Whole-cell recording data were filtered at 1 kHz and sampled at 10 kHz. For single-channel recordings, data were filtered at 2 kHz and sampled at 20 kHz. Data were leak-subtracted online using a p/4 protocol, and membrane potentials were corrected for liquid junction potentials. For whole-cell nematocyte and neuron recordings, borosilicate glass pipettes were polished to 8\u201310 M\u2126. The standard Nematostella medium was used as the extracellular solution and contained (in mM): 140 NaCl, 3.3 glucose, 3.3 KCl, 3.3 HEPES, 0.5 CaCl2, 0.5 MgCl2, pH 7.6. Two intracellular solutions were used for recording. For isolating inward currents (mM): 133.3 cesium methanesulfonate, 1.33 MgCl2, 3.33 EGTA, 3.33 HEPES, 10 sucrose, 10 CsEGTA, pH 7.6. For outward currents (mM) 166.67 potassium gluconate, 3.33 HEPES, 10 sucrose, 1.33 MgCl2, 10 KEGTA, pH 7.6. In some experiments, BAPTA was substituted for EGTA. For whole-cell recordings in HEK293 cells, pipettes were 3\u20134 M\u2126. The standard extracellular solution contained (in mM): 140 NaCl, 5 KCl, 10 HEPES, 2 CaCl2, 1 MgCl2, pH 7.4. The intracellular solution contained (mM): 140 cesium methanesulfonate, 1 MgCl2, 3.33 EGTA, 3.33 HEPES, 10 sucrose, pH 7.2. In ion substitution experiments, equimolar Ba2+ was substituted for Ca2+. Single-channel recording extracellular solution contained (mM): 140 NaCl, 10 HEPES, 1 NaEGTA, pH 7.4. The intracellular solution used (mM): 140 CsCl, 10 HEPES, 1 CsEGTA, pH 7.4.\n\nThe following pharmacological agents were used: N-Acetylneuraminic acid (NANA, 100 \u00b5M, Sigma), glycine (100 \u00b5M, Sigma), acetylcholine (1 mM), mecamylamine (100 \u00b5M, 500 \u00b5M for behavioral experiments, Tocris), GdCl3 (100 \u00b5M, Sigma), glutamate (1 mM), GABA (1 mM), nicotine (100 \u00b5M, Tocris), tubocurarine (10 \u00b5M, Tocris), TEA+ (10 mM, Sigma), BAPTA (10 mM, Tocris), GDP\u03b2S (1 mM, Sigma), and Cd2+ (500 \u00b5M, 250 \u00b5M for behavioral experiments). All were dissolved in water. Prey extract was isolated from freshly-hatched Artemia. Artemia were flash-frozen, ground with mortar and pestle, filtered with\u00a00.22 \u00b5M pores or 3 kDa ultracentrifugal filters (Amicon UFC500324). Pharmacological effects were quantified as differences in normalized peak current from the same cell following bath application of the drug (Itreatment/Icontrol). Whole-cell recordings were used to assess mechanical sensation together with a piezoelectric-driven (Physik Instrumente) fire-polished glass pipette (tip diameter 1 \u03bcm). Mechanical steps in 0.5 \u03bcm increment were applied every 5 s while cells were voltage-clamped at \u221290 mV. Single mechanosensitive channels were studied using excised outside-out patches exposed to pressure applied via a High-Speed Pressure Clamp system (HSPC, ALA-scientific). Pressure-response relationships were established using pressure steps in 10 mmHg increments. Voltage-dependence of currents was measured from \u2212100 mV to 100 mV in 20 mV increments while applying repetitive 60 mmHg pressure pulses.\n\nUnless stated otherwise, voltage-gated currents were measured in response to a 200 ms voltage pulse in 10 mV increments from a \u2212110 mV holding potential. G-V relationships were derived from I-V curves by calculating G: G\u00a0=\u00a0ICaV/(Vm-Erev) and fit with a Boltzman equation. Voltage-dependent inactivation was measured during \u221210 mV (Ca2+ currents in native cells), 0 mV (Ca2+ currents in heterologously expressed channels), 60 mV (K+ currents in native cells) voltage pulses following a series of 1 s pre-pulses ranging from \u2212110 mV to 60 mV. Voltage-dependent inactivation was quantified as I/Imax, with Imax occurring at the voltage pulse following a \u2212110 mV prepulse. In some instances, inactivation curves could not be fit with a Boltzman equation and were instead fitted with an exponential. The time course of voltage-dependent inactivation was measured by using a holding voltage of \u2212110 mV or \u221270 mV and applying a 0 mV test pulse every 5 s. Recovery from inactivation was quantified by normalizing inactivated and recovered currents to those elicited from the same cell in which a 0 mV voltage pulse was applied from \u2212110 mV. Test pulses from a holding voltage of \u221240 mV were used to assess inactivation, followed by pulses from \u2212110 mV where currents quickly recovered to maximal amplitude. Repetitive stimulation using 20 ms pulses to \u221210 mV or 0 mV from a holding voltage of \u221290 mV was also used to measure inactivation in response to repetitive stimulation. Current inactivation kinetics were quantified by the portion of current remaining at the end of a\u00a0200 ms pulse (R200) or fit with a single exponential. Activation was quantified as the time from current activation until peak amplitude. 200 ms voltage ramps from \u2212120 to 100 mV were used to measure ACh-elicited currents. Stimulus-evoked currents were normalized to basal currents measured at the same voltage of 80 mV.\n\nSingle channel currents were measured from the middle of the noise band between closed and open states or derived from all-points amplitude histograms fit with Gaussian relationships at closed and open peaks for each excised patch record. Conductance was calculated from the linear slope of I\u2013V relationships. N(PO) was calculated during pressure steps while voltage was held at \u221280 mV. In current clamp recordings, effects of ACh or intracellular ions on resting membrane potential was measured without current injection (I\u00a0=\u00a00). 1 s depolarizing current steps of various amplitudes were injected to measure spikes which were quantified by frequency (spikes/second) or width (duration of spike). To test whether resting membrane potential affects the ability to generate spikes, hyperpolarizing current was injected to bring cells to negative voltages (<-90mV) or ACh was locally perfused before depolarizing current injection.\n\nThe change in Ca2+ concentration from a nematocyte voltage spike was estimated based on the integral of Ca2+-selective nematocyte currents elicited by a 0 mV step, the same amplitude and slightly shorter duration than a voltage spike. Nematocyte volume was estimated from serial electron microscopy reconstruction with a non-nematocyst volume of approximately 5% of the total volume of the cell. We did not consider the volume occupied by other organelles, making for a conservative estimate. Furthermore, calculations were made with extracellular recording solution containing 0.5 mM Ca2+, which is approximately six-fold less than physiological concentrations. Thus, the large increase we calculated likely underestimates the total Ca2+ influx.\n\n### Immunohistochemistry\n\n#### Neural staining\n\nAdult Nv-Elav1::mOrange Nematostella were paralyzed in anesthetic solution, then placed in a 4% solution of PFA overnight. Animals were cryoprotected using a gradient of increasing sucrose concentrations (10% to 50%) in PBS over two days. Cryostat sections (20 \u00b5m thick) were permeabilized with 0.2% Triton-X and 4% normal goat serum (NGS) at room temperature for 1 hr, followed by incubation with DsRed Polyclonal Antibody (Takara Bio Cat# 632496, RRID:AB_10013483) overnight in PBST (0.2%) and NGS (4%)\u00a0at 4\u00b0C. Tissue was rinsed three times with PBST before secondary was applied (Goat anti-rabbit 647, Abcam\u00a0in\u00a0PBST\u00a0+\u00a0NGS) for 2 hr at room temperature. Tissue was rinsed with PBS and mounted with Vectashield containing DAPI (Novus Biologicals).\n\n#### Acetylcholinesterase staining\n\nTentacles were stained for the presence of acetylcholinesterase as described\u00a0(Paul et al., 2010) using 40 \u00b5m thick cryosections mounted on glass slides. Slides were incubated in acetylthiocholine and copper-buffered solution at 40\u00b0C until tentacles appeared white. The stain was developed with a silver solution so that stained areas appear brown. Slides were incubated in the presence of the silver staining solution (+substrate) or saline (-substrate), rinsed according to protocol, and mounted in Fluoromount-G (SouthernBiotech) and imaged using a scanning, transmitted light microscope.\n\n### Behavior\n\nDischarge of nematocysts was assessed based on well-established assays (Watson and Hessinger, 1994a; Gitter et al., 1994). Adult Nematostella were placed in petri dishes containing a modified Nematostella medium, containing 16.6 mM MgCl2. Animals were given appropriate time to acclimate before presented with stimuli. For assaying discharge, 5 mm round coverslips were coated with a solution of 25% gelatin (w/v) dissolved in medium, and allowed to cure overnight prior to use. Coverslips were presented to the animal\u2019s tentacles for 5 s and then immediately imaged at 20X magnification using a transmitted light source. To assay behavioral response to prey-derived chemicals, freshly hatched brine shrimp were flash frozen and pulverized, then filtered through a 0.22 \u00b5m filter. Coverslips were dipped in the prey extract and immediately presented to the animal. All pharmacological agents were bath applied, except for acetylcholine (1 mM), which was delivered as a bolus immediately prior to coverslip presentation. Acetylcholine exposure did not produce movement or contraction of tentacles. Experiments carried out in the absence of extracellular Ca2+ were nominally Ca2+ free and did not use extracellular chelators. The highest density of discharged nematocytes on the coverslip was imaged at 20X. Nematocyte discharge involves everting the barbed thread, causing them to embed in the gelatin-coated coverslips. Therefore, if nematocytes do not discharge, they are not captured by the gelatin-coated coverslip or visualized for quantification. Images were blindly analyzed using a custom Matlab routine (available in supplemental material) in which images were thresholded and the fraction of pixels corresponding to nematocytes was compared across experiments.\n\n### Electron microscopy\n\nTentacles from an individual Nematostella vectensis were placed between two sapphire coverslips separated by a 100 \u03bcm spacer ring (Leica) and frozen in a high-pressure freezer (EM ICE, Leica). This was followed by freeze-substitution (EM AFS2, Leica) in dry acetone containing 1% ddH2O, 1% OsO4 and 1% glutaraldehyde at \u221290\u00b0C for 48 hr. The temperature was then increased at 5\u00b0C/h up to 20\u00b0C and samples were washed at room temperature in pure acetone 3 \u00d7 10 min RT and propylene oxide 1 \u00d7 10 min. Samples were infiltrated with 1:1 Epon:propylene oxide overnight at 4\u00b0C. The samples were subsequently embedded in TAAB Epon (Marivac Canada Inc) and polymerized at 60\u00b0C for 48 hr. Ultrathin sections (about 50 nm) were cut on an ultramicrotome (Leica EM UC6) and collected with an automated tape collector (ATUM\u00a0Kasthuri et al., 2015). The sections were then post-stained with uranyl acetate and lead citrate prior to imaging with a scanning electron microscope (Zeiss SIGMA) using a back-scattered electron detector and a pixel size of 4 nm.\n\nOnce all the sections were scanned, images were aligned into a stack using the algorithm \u2018Linear Stack Alignment with SIFT\u2019 available in Fiji (Schindelin et al., 2012). After alignment, images were imported into VAST (Berger et al., 2018) so that every cell could be manually traced. By examining sections and following cellular processes contacts between cells of interest (e.g. neurons and nematocytes) were identified and assessed for the presence of dense-core vesicles in the vicinity (~500 nm). Such instances were labeled as putative synapses. Cells were then rendered in three dimensions using 3D Studio Max 2019 (Autodesk, San Rafael, CA).\n\nNematocytes were readily identified because resin does not infiltrate the nematocyst capsule, making for an \u2018empty\u2019 appearance (large white area). Spirocytes were also readily identified based on their capsule containing a long, coiled filament. Sensory neurons were identified according to the higher number of dense core vesicles, higher number of synapses and the presence of sensory processes extending into the external environment.\n\n### Statistical analysis\n\nData were analyzed with Clampfit (Axon Instruments) or Prism (Graphpad) and are represented as mean\u00a0\u00b1\u00a0s.e.m. n represents independent experiments for the number of cells/patches or behavioral trials. Data were considered significant if p<0.05 using paired or unpaired two-tailed Student\u2019s t-tests or one- or two-way ANOVAs. All significance tests were justified considering the experimental design and we assumed normal distribution and variance, as is common for similar experiments. Sample sizes were chosen based on the number of independent experiments required for statistical significance and technical feasibility.\n",
+      "created_at": "2025-12-02T17:21:05.780479Z"
+    },
+    {
+      "id": "69e8a5c9-aec3-460f-8bc9-101c43bfb445",
+      "submission_id": "b5849615-b6de-49fa-ba43-cdaa4b95f681",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Ronald L Calabrese, Emory University United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.57578.sa1](https://doi.org/10.7554/eLife.57578.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nAcceptance summary:\n\nThis is an elegant study of an interesting biological system, nematocysts that harbor the stinging, venom-infused harpoons used by jellyfish and anemones. The study is comprehensive with cell biology, ion channel biophysics, transcriptomics, and ultrastructural analysis embedded in a neuroethological context. Especially intriguing are the interactions of mechanosensory and chemical input to trigger the discharge and the role of an unusual calcium channel inactivation and the relief of this inactivation by synaptic input to the nematocyst that triggers a long duration action potential and ejection of the nematocyst's harpoon.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"A molecular filter for the cnidarian stinging response\" for consideration by eLife. Your article has been reviewed by three peer reviewers, and the evaluation has been overseen by Ronald Calabrese as the Senior and Reviewing Editor. The following individuals involved in review of your submission have agreed to reveal their identity: Harold H Zakon (Reviewer #1); Sviatoslav N Bagriantsev (Reviewer #2).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nWe would like to draw your attention to changes in our revision policy that we have made in response to COVID-19 (https://elifesciences.org/articles/57162). Specifically, we are asking editors to accept without delay manuscripts, like yours, that they judge can stand as eLife papers without additional data, even if they feel that they would make the manuscript stronger. Thus the revisions requested below only address clarity and presentation.\n\nSummary:\n\nThis is an elegant study of an interesting biological system. While most people know that jellyfish sting their prey (or unwary swimmers), most do not know about the complex cells called nematocysts that harbor the stinging, venom-infused harpoons used by jellyfish and anemones. This study takes a soup to nuts approach with cell biology, ion channel biophysics, transcriptomics, and ultrastructural analysis embedded in a neuroethological context. Further, the ion channel biophysics ranges from calcium and calcium-activated K channels to mechanoreceptors to neurotransmitter receptors, calling on a variety of usually distinct topics blended in a comprehensive narrative. Especially intriguing are the interactions of mechanosensory and chemical input to trigger the discharge and the role of an unusual calcium channel inactivation and the relief of this inactivation by synaptic input to the nematocyst that triggers a long duration action potential and ejection of the nematocyst's harpoon.\n\nEssential revisions:\n\nThis paper was praised by the reviewers for its thoroughness and creativity. There are suggested revisions that will make this strong paper stronger contained in the reviewer's comments. Revisions will be handled by the Reviewing Editor and further review is not necessary. Reviewer #3 indicates some further experiments; these need not be pursued but if already completed could be included. Discussion should acknowledge that these experiments would further support the conclusions. Further amplifying the text as suggested by reviewer #2 could broaden the paper's appeal to the general reader.\n\nReviewer #1:\n\nI had only one question. The nCaV channels are inactivated in the range of normal resting potentials (for these cells, -64 mV). Figure 1D shows that nCav need membrane potentials below ~ -80 mV to recover. In the voltage clamp analysis membrane potentials were held at -110 mV for complete recovery from inactivation. I note that nematocysts will spike with membrane potential moved to -90 mV, presumably when moved there by a calcium-dependent K+ current. Perhaps I missed this but what is the reversal potential for the K+ current? Unless it reverses at ~ -80 or more negative, will there be enough hyperpolarization to remove the nCav inactivation?\n\nReviewer #2:\n\nMy main textual criticism is that the manuscript is written very densely. Given that the eLife format is not size-limiting, I'd suggest to expand on experimental details in the text whenever possible. Otherwise, the manuscript is going to be largely accessible to electrophysiologists, even though its scope and interest goes well beyond the biophysics community.\n\nFigure 1F \u2013 If I'm not mistaken, here authors recorded either in their standard solutions (Na), or substituted extracellular Na with NMDG. But is not at all clear from the text/legend. Please clarify.\n\nFigure 1G and Figure 5D \u2013 I'm struggling to understand why the images with non-discharged nematocytes look like they don't have anything at all, whereas I expect to see intact nematocytes as in Figure 1B. At the same time, the discharged images look like they have intact nematocytes. Please add some visual guides/explanation.\n\nSubsection \u201cNematocyte CaV channels\u201d, and elsewhere \u2013 \"activation threshold\". I'd suggest to use \"apparent activation threshold\" throughout.\n\nFigure 2C, D. Please indicate that the lines above the plots refer to 5-s holding voltages between test pulses at 0mV. As presented, it is very unclear what was done without reading the Materials and methods section.\n\nReviewer #3:\n\n1) Are there homologs of Piezo1/2 in these animals? If so, there are activators and inhibitors the authors could test. (The authors should not call Gd3+ \"a mechanosensitive receptor blocker\". This implies specificity, but it blocks many divalent permeant ion channels).\n\n2) The authors do not specify what they mean by 'chemical signals' from prey, or 'prey-derived extract'. They should describe more clearly what these might be, and describe in the text and Materials and methods section how they isolated it and what was tested.\n\n3) It is unclear if ACh is secreted from spirocytes or neurons, and whether the EM showed vesicle-containing junctions with either. If the source of ACh release could be determined, it would add an important new point to the paper.\n",
+      "created_at": "2025-12-02T17:21:05.780479Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T17:21:05.780479Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T17:21:05.780479Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "92a19b59-2cb8-4811-80b9-351c102f6c19",
+      "content_id": "ff3e36cb-19ae-46bb-be95-78c2ab661a88",
+      "claim_id": "C1",
+      "claim": "Nematostella vectensis uses nematocytes to detect and capture prey using stinging cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Jellyfish, sea anemones, and hydrozoans of the Cnidarian phylum use specialized cells called cnidocytes to facilitate both sensation and secretion required for prey capture and defense (Watson and Mire-Thibodeaux, 1994b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from Watson and Mire-Thibodeaux, 1994b",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:21:05.780479Z"
+    },
+    {
+      "id": "50d47421-856c-4507-9514-1a4c16623e52",
+      "content_id": "ff3e36cb-19ae-46bb-be95-78c2ab661a88",
+      "claim_id": "C2",
+      "claim": "Two major types of cnidocytes contribute to prey capture by the tentacles of Nematostella vectensis: spirocytes and nematocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "Two major types of cnidocytes contribute to prey capture by the tentacles of the starlet sea anemone (Nematostella vectensis, Figure 1A): (1) spirocytes, anthozoan-specific cells that extrude a thread-like organelle to ensnare prey, and (2) nematocytes, pan-cnidarian cells which eject a single-use venom-covered barb to mediate stinging (Babonis and Martindale, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from Babonis and Martindale, 2017",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:21:05.780479Z"
+    },
+    {
+      "id": "9730e142-714c-46c3-baa2-5533b8c170fa",
+      "content_id": "ff3e36cb-19ae-46bb-be95-78c2ab661a88",
+      "claim_id": "C3",
+      "claim": "Spirocytes are anthozoan-specific cells that extrude a thread-like organelle to ensnare prey.",
+      "claim_type": "EXPLICIT",
+      "source": "Two major types of cnidocytes contribute to prey capture by the tentacles of the starlet sea anemone (Nematostella vectensis, Figure 1A): (1) spirocytes, anthozoan-specific cells that extrude a thread-like organelle to ensnare prey, and (2) nematocytes, pan-cnidarian cells which eject a single-use venom-covered barb to mediate stinging (Babonis and Martindale, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from Babonis and Martindale, 2017",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:21:05.780479Z"
+    },
+    {
+      "id": "0b3b1978-dd33-4ac7-8a54-d8eed5cc1596",
+      "content_id": "ff3e36cb-19ae-46bb-be95-78c2ab661a88",
+      "claim_id": "C4",
+      "claim": "Nematocytes are pan-cnidarian cells which eject a single-use venom-covered barb to mediate stinging.",
+      "claim_type": "EXPLICIT",
+      "source": "Two major types of cnidocytes contribute to prey capture by the tentacles of the starlet sea anemone (Nematostella vectensis, Figure 1A): (1) spirocytes, anthozoan-specific cells that extrude a thread-like organelle to ensnare prey, and (2) nematocytes, pan-cnidarian cells which eject a single-use venom-covered barb to mediate stinging (Babonis and Martindale, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from Babonis and Martindale, 2017",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:21:05.780479Z"
+    },
+    {
+      "id": "fb81b4eb-1cf1-47dd-8238-d8113af19760",
+      "content_id": "ff3e36cb-19ae-46bb-be95-78c2ab661a88",
+      "claim_id": "C5",
+      "claim": "Nematocyst discharge occurs at an acceleration of up to 5.41 \u00d7 10^6 g, among the fastest of any biological process.",
+      "claim_type": "EXPLICIT",
+      "source": "Sensory cues from prey act on nematocytes to trigger the explosive discharge of a specialized organelle (nematocyst) at an acceleration of up to 5.41 \u00d7 106 g, among the fastest of any biological process (Holstein and Tardent, 1984; N\u00fcchter et al., 2006; Figure 1B).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from Holstein and Tardent, 1984; N\u00fcchter et al., 2006",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:21:05.780479Z"
+    },
+    {
+      "id": "795f5560-8d4a-4ec5-a4bd-1e3db91a4156",
+      "content_id": "ff3e36cb-19ae-46bb-be95-78c2ab661a88",
+      "claim_id": "C6",
+      "claim": "The nematocyst can only be discharged once.",
+      "claim_type": "EXPLICIT",
+      "source": "The nematocyst can only be discharged once and therefore stinging represents an energetically expensive process that is likely tightly regulated (Watson and Mire-Thibodeaux, 1994b, Babonis and Martindale, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from Watson and Mire-Thibodeaux, 1994b, Babonis and Martindale, 2014",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:21:05.780479Z"
+    },
+    {
+      "id": "301d4e1b-28f2-4ddd-8bbe-5836c1beb05f",
+      "content_id": "ff3e36cb-19ae-46bb-be95-78c2ab661a88",
+      "claim_id": "C7",
+      "claim": "Simultaneously presented chemical and mechanical (chemo-tactile) cues are required to elicit nematocyte discharge.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, simultaneously presented chemical and mechanical (chemo-tactile) cues are required to elicit nematocyte discharge (Pantin, 1942a; Watson and Hessinger, 1989; Watson and Hessinger, 1992; Anderson and Bouchard, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from Pantin, 1942a; Watson and Hessinger, 1989; Watson and Hessinger, 1992; Anderson and Bouchard, 2009",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:21:05.780479Z"
+    },
+    {
+      "id": "16c718d4-e6ca-4ddb-89ef-6b378172366b",
+      "content_id": "ff3e36cb-19ae-46bb-be95-78c2ab661a88",
+      "claim_id": "C8",
+      "claim": "Electrical stimulation of nematocytes increases the probability of discharge in a calcium (Ca2+)-dependent manner.",
+      "claim_type": "EXPLICIT",
+      "source": "Electrical stimulation of nematocytes increases the probability of discharge in a calcium (Ca2+)-dependent manner (Anderson and Mckay, 1987; McKay and Anderson, 1988; Santoro and Salleo, 1991; Gitter et al., 1994; Watson and Hessinger, 1994a; Anderson and Bouchard, 2009), but direct recordings from nematocytes are limited and thus mechanisms by which environmental signals control discharge are not well studied.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from Anderson and Mckay, 1987; McKay and Anderson, 1988; Santoro and Salleo, 1991; Gitter et al., 1994; Watson and Hessinger, 1994a; Anderson and Bouchard, 2009",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:21:05.780479Z"
+    },
+    {
+      "id": "e3addec4-be38-4099-a7f0-514d84fa08c2",
+      "content_id": "ff3e36cb-19ae-46bb-be95-78c2ab661a88",
+      "claim_id": "C9",
+      "claim": "Nematocytes exhibit voltage-gated inward currents that are activated by positive or depolarized membrane voltages.",
+      "claim_type": "EXPLICIT",
+      "source": "Using intracellular cesium (Cs+) to block potassium (K+) currents revealed a voltage-gated inward current that was activated by positive or depolarized membrane voltages (ICaV, Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Experimental data from patch clamp recordings shown in Figure 1C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:21:05.780479Z"
+    },
+    {
+      "id": "51da5f75-1af8-405c-9bb3-33f90f19de4c",
+      "content_id": "ff3e36cb-19ae-46bb-be95-78c2ab661a88",
+      "claim_id": "C10",
+      "claim": "Nematocyte voltage-gated currents (ICaV) begin to inactivate at voltages more negative than could be technically measured.",
+      "claim_type": "EXPLICIT",
+      "source": "Remarkably, ICaV began to inactivate at voltages more negative than we could technically measure, thus demonstrating an unusual voltage sensitivity of this conductance (Figure 1C,D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Experimental data shown in Figure 1C,D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:21:05.780479Z"
+    },
+    {
+      "id": "c3fa8b86-4220-42eb-ab55-1b96124ac135",
+      "content_id": "ff3e36cb-19ae-46bb-be95-78c2ab661a88",
+      "claim_id": "C11",
+      "claim": "Neuronal voltage-gated currents had a lower threshold for activation and exhibited much weaker voltage-dependent inactivation compared to nematocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "Neuronal voltage-gated currents had a lower threshold for activation and exhibited much weaker voltage-dependent inactivation (Figure 1C,D, Figure 1\u2014figure supplement 1A\u2013D), similar to currents found in neurons of other animals (Hille, 2001), indicating that nematocytes exhibit unusual voltage-dependent properties.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Experimental data shown in Figure 1C,D and Figure 1\u2014figure supplement 1A\u2013D, and cited from Hille, 2001",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:21:05.780479Z"
+    },
+    {
+      "id": "cb0e9aac-5c23-49b0-949d-aead25d08848",
+      "content_id": "ff3e36cb-19ae-46bb-be95-78c2ab661a88",
+      "claim_id": "C12",
+      "claim": "ICaV is a Ca2+-sensitive current.",
+      "claim_type": "EXPLICIT",
+      "source": "Ion substitution and pore blocker experiments confirmed ICaV is a Ca2+-sensitive current (Figure 1E,F), consistent with the contribution of extracellular Ca2+ to chemo-tactile-induced discharge (Watson and Hessinger, 1994a; Gitter et al., 1994; Figure 1G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Experimental data shown in Figure 1E,F,G and cited from Watson and Hessinger, 1994a; Gitter et al., 1994",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:21:05.780479Z"
+    },
+    {
+      "id": "af641b0a-cc66-4d84-87ef-ae075e161f09",
+      "content_id": "ff3e36cb-19ae-46bb-be95-78c2ab661a88",
+      "claim_id": "C13",
+      "claim": "Increased concentrations of extracellular Ca2+ did not affect inactivation of ICaV.",
+      "claim_type": "EXPLICIT",
+      "source": "Increased concentrations of extracellular Ca2+ did not affect inactivation of ICaV (Figure 1\u2014figure supplement 1E), suggesting the enhanced voltage-dependent inactivation is intrinsic to the channel complex.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Experimental data shown in Figure 1\u2014figure supplement 1E",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:21:05.780479Z"
+    },
+    {
+      "id": "d008fd7a-a09a-461e-b94c-63876673cd00",
+      "content_id": "ff3e36cb-19ae-46bb-be95-78c2ab661a88",
+      "claim_id": "C14",
+      "claim": "The enhanced voltage-dependent inactivation of ICaV is intrinsic to the channel complex.",
+      "claim_type": "EXPLICIT",
+      "source": "Increased concentrations of extracellular Ca2+ did not affect inactivation of ICaV (Figure 1\u2014figure supplement 1E), suggesting the enhanced voltage-dependent inactivation is intrinsic to the channel complex.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Inferred from experimental data showing Ca2+ concentration does not affect inactivation",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:21:05.780479Z"
+    },
+    {
+      "id": "b3f20fff-19c6-40e0-9847-0a7500601e1c",
+      "content_id": "ff3e36cb-19ae-46bb-be95-78c2ab661a88",
+      "claim_id": "C15",
+      "claim": "ICaV renders nematocytes completely inactivated at typical resting membrane voltages.",
+      "claim_type": "EXPLICIT",
+      "source": "This observation is important because it suggests ICaV renders nematocytes completely inactivated at typical resting membrane voltages and thus cells could not be stimulated from resting state.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from voltage-dependent inactivation data",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:21:05.780479Z"
+    },
+    {
+      "id": "9809410a-cedc-4705-91b6-5dcdf53d4f60",
+      "content_id": "ff3e36cb-19ae-46bb-be95-78c2ab661a88",
+      "claim_id": "C16",
+      "claim": "The orthologue of cacnb2, a \u03b2 subunit of CaV channels, was the highest expressed CaV transcript in nematocyte-enriched cells, with levels 14-fold higher than other cells in the sea anemone.",
+      "claim_type": "EXPLICIT",
+      "source": "The orthologue of cacnb2, a \u03b2 subunit of CaV channels, was the highest expressed CaV transcript in nematocyte-enriched cells, with levels 14-fold higher than other cells in the sea anemone (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Transcriptomic data shown in Figure 2A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:21:05.780479Z"
+    },
+    {
+      "id": "0b68235e-b324-4e2e-a012-bcba84a74494",
+      "content_id": "ff3e36cb-19ae-46bb-be95-78c2ab661a88",
+      "claim_id": "C17",
+      "claim": "\u03b2 subunits only interact with \u03b1 subunits of high voltage-activated (HVA) calcium channels.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, \u03b2 subunits only interact with \u03b1 subunits of high voltage-activated (HVA) calcium channels (Perez-Reyes, 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from Perez-Reyes, 2003",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:21:05.780479Z"
+    },
+    {
+      "id": "c31f7d22-d502-4d8f-b070-dd034d2bfcbc",
+      "content_id": "ff3e36cb-19ae-46bb-be95-78c2ab661a88",
+      "claim_id": "C18",
+      "claim": "There is significant enrichment for cacna1a, the pore-forming subunit of HVA CaV2.1, and high expression of cacna2d1 in nematocyte-enriched cells.",
+      "claim_type": "EXPLICIT",
+      "source": "In agreement with robust \u03b2 subunit expression, we found significant enrichment for cacna1a, the pore-forming subunit of HVA CaV2.1, and high expression of cacna2d1 (Figure 2\u2014figure supplement 1A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Transcriptomic data shown in Figure 2\u2014figure supplement 1A,B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:21:05.780479Z"
+    },
+    {
+      "id": "89dd243f-e735-443e-8d95-b7ba62cfd098",
+      "content_id": "ff3e36cb-19ae-46bb-be95-78c2ab661a88",
+      "claim_id": "C19",
+      "claim": "Specific expression of cacna1a in nematocytes of sea anemone tentacles has been previously reported.",
+      "claim_type": "EXPLICIT",
+      "source": "These observations are consistent with a previous report demonstrating specific expression of cacna1a in nematocytes of sea anemone tentacles and expression of \u03b2 subunits in nematocytes from jellyfish (Bouchard et al., 2006; Moran and Zakon, 2014; Bouchard and Anderson, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from Bouchard et al., 2006; Moran and Zakon, 2014; Bouchard and Anderson, 2014",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:21:05.780479Z"
+    },
+    {
+      "id": "7cc5d575-4aa2-474c-9899-258efcbece72",
+      "content_id": "ff3e36cb-19ae-46bb-be95-78c2ab661a88",
+      "claim_id": "C20",
+      "claim": "Expression of cacna1h was observed at lower levels and across all cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Expression of cacna1h, which does not interact with auxiliary subunits (Buraei and Yang, 2010), was also observed, albeit at lower levels and across all cells (Figure 2\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Transcriptomic data shown in Figure 2\u2014figure supplement 1A and cited from Buraei and Yang, 2010",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:21:05.780479Z"
+    },
+    {
+      "id": "f3b5702e-3604-4b66-a4f4-3d72b8e52280",
+      "content_id": "ff3e36cb-19ae-46bb-be95-78c2ab661a88",
+      "claim_id": "C21",
+      "claim": "Heterologously-expressed nCaV channels inactivated at very negative voltages with an estimated Vi1/2 = -101.5 \u00b1 1.6mV.",
+      "claim_type": "EXPLICIT",
+      "source": "Heterologously-expressed nCav channels (Nematostella cacna1a, cacnb2, cacna2d1) inactivated at very negative voltages (estimated Vi1/2 = -101.5 \u00b1 1.6mV, n = 5) versus mammalian orthologues (mCaV, Vi1/2 = -20.9 \u00b1 3.4mV, n = 10).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Experimental data shown in Figure 2B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:21:05.780479Z"
+    },
+    {
+      "id": "aacda254-c00d-4d17-870b-a9129fae84e3",
+      "content_id": "ff3e36cb-19ae-46bb-be95-78c2ab661a88",
+      "claim_id": "C22",
+      "claim": "Mammalian CaV orthologues (mCaV) have a Vi1/2 = -20.9 \u00b1 3.4mV.",
+      "claim_type": "EXPLICIT",
+      "source": "Heterologously-expressed nCav channels (Nematostella cacna1a, cacnb2, cacna2d1) inactivated at very negative voltages (estimated Vi1/2 = -101.5 \u00b1 1.6mV, n = 5) versus mammalian orthologues (mCaV, Vi1/2 = -20.9 \u00b1 3.4mV, n = 10).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Experimental data shown in Figure 2B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:21:05.780479Z"
+    },
+    {
+      "id": "642e5c55-5f96-4b8a-9939-8ea0ac8db810",
+      "content_id": "ff3e36cb-19ae-46bb-be95-78c2ab661a88",
+      "claim_id": "C23",
+      "claim": "Apparent activation thresholds were the same for nCaV and mCaV: nCaV Va1/2 = -9.8 \u00b1 0.3mV, mCaV Va1/2 = -10.4 \u00b1 0.5mV.",
+      "claim_type": "EXPLICIT",
+      "source": "Apparent activation thresholds were the same: nCaV Va1/2 = -9.8 \u00b1 0.3mV, n = 5, mCaV Va1/2 = -10.4 \u00b1 0.5mV, n = 9.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Experimental data shown in Figure 2B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:21:05.780479Z"
+    },
+    {
+      "id": "26e9a50c-14d6-4fe9-a4aa-848b5c6db5a6",
+      "content_id": "ff3e36cb-19ae-46bb-be95-78c2ab661a88",
+      "claim_id": "C24",
+      "claim": "nCaV exhibited slow inactivation with \u221270 mV holding potential that was best fit by two exponential functions with time constants of 10.0 and 369.5 s.",
+      "claim_type": "EXPLICIT",
+      "source": "nCaV exhibited slow inactivation with \u221270 mV holding potential (0.2 Hz stimulation, 5 s inter-pulse interval) that was best fit by two exponential functions with time constants of 10.0 and 369.5 s. n = 6, multiple row two-tailed student's t-test with significance of p<0.05 by 15 s and p<0.0001 by 500 s.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Experimental data shown in Figure 2C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:21:05.780479Z"
+    },
+    {
+      "id": "77293834-44a3-4588-b626-f6d8483304b9",
+      "content_id": "ff3e36cb-19ae-46bb-be95-78c2ab661a88",
+      "claim_id": "C25",
+      "claim": "nCaV inactivated at \u221240 mV and quickly recovered at negative holding potentials.",
+      "claim_type": "EXPLICIT",
+      "source": "nCav inactivated at \u221240 mV and quickly recovered at negative holding potentials. n = 7 for nCaV, n = 6 for mCaV.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Experimental data shown in Figure 2D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:21:05.780479Z"
+    },
+    {
+      "id": "f6c28b1c-381d-448d-b2b7-d629e1069367",
+      "content_id": "ff3e36cb-19ae-46bb-be95-78c2ab661a88",
+      "claim_id": "C26",
+      "claim": "The mCaV \u03b2 subunit drastically shifted nCaV inactivation by ~56 mV in the positive direction.",
+      "claim_type": "EXPLICIT",
+      "source": "In this case, the mCaV \u03b2 subunit drastically shifted nCaV inactivation by ~56 mV in the positive direction, prevented complete inactivation, and produced slower fast inactivation (Figure 2E\u2013G, Figure 2\u2014figure supplement 1E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Experimental data shown in Figure 2E\u2013G and Figure 2\u2014figure supplement 1E",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:21:05.780479Z"
+    },
+    {
+      "id": "cddf8754-aa68-43bb-931c-a53b234bfe66",
+      "content_id": "ff3e36cb-19ae-46bb-be95-78c2ab661a88",
+      "claim_id": "C27",
+      "claim": "nCaV \u03b2 was sufficient to confer greatly enhanced voltage-dependent inactivation to mCaV.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, nCaV \u03b2 was sufficient to confer greatly enhanced voltage-dependent inactivation to mCaV (Figure 2E,G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Experimental data shown in Figure 2E,G",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:21:05.780479Z"
+    },
+    {
+      "id": "4b1ae776-bb63-4251-a590-994dd95f1e54",
+      "content_id": "ff3e36cb-19ae-46bb-be95-78c2ab661a88",
+      "claim_id": "C28",
+      "claim": "nCaV \u03b2, the most enriched CaV subunit in nematocytes, confers nCaV's uniquely-sensitive voltage-dependent inactivation.",
+      "claim_type": "EXPLICIT",
+      "source": "From these results, we conclude that nCaV \u03b2, the most enriched CaV subunit in nematocytes, confers nCaV's uniquely-sensitive voltage-dependent inactivation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from chimeric channel experiments",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:21:05.780479Z"
+    },
+    {
+      "id": "74091481-d611-40b5-b4d4-e278701e7470",
+      "content_id": "ff3e36cb-19ae-46bb-be95-78c2ab661a88",
+      "claim_id": "C29",
+      "claim": "Nematocytes had a resting potential of \u221264.8 \u00b1 8.9 mV.",
+      "claim_type": "EXPLICIT",
+      "source": "Under our conditions, nematocytes had a resting potential of \u221264.8 \u00b1 8.9 mV and did not produce a voltage spike when injected with current from rest (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Experimental data shown in Figure 3A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:21:05.780479Z"
+    },
+    {
+      "id": "799ae04e-8674-4c33-a0a2-270ae536dd05",
+      "content_id": "ff3e36cb-19ae-46bb-be95-78c2ab661a88",
+      "claim_id": "C30",
+      "claim": "Nematocytes did not produce a voltage spike when injected with current from rest.",
+      "claim_type": "EXPLICIT",
+      "source": "Under our conditions, nematocytes had a resting potential of \u221264.8 \u00b1 8.9 mV and did not produce a voltage spike when injected with current from rest (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Experimental data shown in Figure 3A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:21:05.780479Z"
+    },
+    {
+      "id": "d816ffbf-aa25-4563-ab6a-0d071aa58340",
+      "content_id": "ff3e36cb-19ae-46bb-be95-78c2ab661a88",
+      "claim_id": "C31",
+      "claim": "When nematocytes were first hyperpolarized to \u221290 mV and subsequently stimulated by current injection, they produced a singular long voltage spike.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with this idea, when nematocytes were first hyperpolarized to \u221290 mV and subsequently stimulated by current injection, we observed a singular long voltage spike (Figure 3B,C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Experimental data shown in Figure 3B,C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:21:05.780479Z"
+    },
+    {
+      "id": "15f8bf7b-91c7-4fb8-b403-9e0c4d42e051",
+      "content_id": "ff3e36cb-19ae-46bb-be95-78c2ab661a88",
+      "claim_id": "C32",
+      "claim": "Tentacle neurons produced multiple narrow spikes when injected with equivalent current amplitudes from a similar resting voltage.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, tentacle neurons produced multiple narrow spikes when injected with equivalent current amplitudes from a similar resting voltage, consistent with other neural systems (Figure 3A\u2013C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Experimental data shown in Figure 3A\u2013C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:21:05.780479Z"
+    },
+    {
+      "id": "d31437c5-18a5-4f93-8532-c2f6e987811e",
+      "content_id": "ff3e36cb-19ae-46bb-be95-78c2ab661a88",
+      "claim_id": "C33",
+      "claim": "Strong voltage-dependent inactivation prevents nematocyte activation from rest.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, these results indicate strong voltage-dependent inactivation prevents nematocyte activation from rest.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from current clamp experiments",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:21:05.780479Z"
+    },
+    {
+      "id": "b3439bf8-457a-4922-b6da-c9aaf78c42ab",
+      "content_id": "ff3e36cb-19ae-46bb-be95-78c2ab661a88",
+      "claim_id": "C34",
+      "claim": "Nematocytes exhibited transient outward K+ currents that quickly inactivated.",
+      "claim_type": "EXPLICIT",
+      "source": "Nematocytes exhibited transient outward K+ currents that quickly inactivated, while neurons had large sustained K+ currents, perhaps important for repolarization and repetitive spiking (Figure 3\u2014figure supplement 1A\u2013C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Experimental data shown in Figure 3\u2014figure supplement 1A\u2013C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:21:05.780479Z"
+    },
+    {
+      "id": "73f1fb23-129a-41e0-a91b-bf9dcc1b6c7c",
+      "content_id": "ff3e36cb-19ae-46bb-be95-78c2ab661a88",
+      "claim_id": "C35",
+      "claim": "Neurons had large sustained K+ currents, perhaps important for repolarization and repetitive spiking.",
+      "claim_type": "EXPLICIT",
+      "source": "Nematocytes exhibited transient outward K+ currents that quickly inactivated, while neurons had large sustained K+ currents, perhaps important for repolarization and repetitive spiking (Figure 3\u2014figure supplement 1A\u2013C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Experimental data shown in Figure 3\u2014figure supplement 1A\u2013C and speculation about function",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:21:05.780479Z"
+    },
+    {
+      "id": "79b03c2d-08bc-4871-a09c-2bec969356f2",
+      "content_id": "ff3e36cb-19ae-46bb-be95-78c2ab661a88",
+      "claim_id": "C36",
+      "claim": "The transient component of the nematocyte K+ current was highly sensitive to voltage-dependent inactivation, similar to ICaV.",
+      "claim_type": "EXPLICIT",
+      "source": "The transient component of the nematocyte K+ current was highly sensitive to voltage-dependent inactivation, similar to ICaV (Figure 3\u2014figure supplement 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Experimental data shown in Figure 3\u2014figure supplement 1D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:21:05.780479Z"
+    },
+    {
+      "id": "306ab6ed-e343-472d-937a-1b2a1e069de8",
+      "content_id": "ff3e36cb-19ae-46bb-be95-78c2ab661a88",
+      "claim_id": "C37",
+      "claim": "The transient K+ current in nematocytes was abolished by the rapid intracellular Ca2+ chelator BAPTA or by removing external Ca2+.",
+      "claim_type": "EXPLICIT",
+      "source": "This K+ current was abolished by the rapid intracellular Ca2+ chelator BAPTA or by removing external Ca2+, similar to the effect of the K+ channel blocker TEA+ (Figure 3\u2014figure supplement 1E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Experimental data shown in Figure 3\u2014figure supplement 1E",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:21:05.780479Z"
+    },
+    {
+      "id": "9543df6f-5e2d-4a7c-93df-89dee694304f",
+      "content_id": "ff3e36cb-19ae-46bb-be95-78c2ab661a88",
+      "claim_id": "C38",
+      "claim": "Nematocyte-enriched cells expressed numerous Ca2+-activated K+ channels.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with this observation, nematocyte-enriched cells expressed numerous Ca2+-activated K+ channels (Figure 3\u2014figure supplement 1F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Transcriptomic data shown in Figure 3\u2014figure supplement 1F",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:21:05.780479Z"
+    },
+    {
+      "id": "c7a20de6-0afc-49e6-bf04-9e7d1f8a4ac5",
+      "content_id": "ff3e36cb-19ae-46bb-be95-78c2ab661a88",
+      "claim_id": "C39",
+      "claim": "Using intracellular Cs+ to block K+ currents resulted in prolonged voltage spikes and greatly increased resting membrane voltage.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, using intracellular Cs+ to block K+ currents resulted in prolonged voltage spikes and greatly increased resting membrane voltage, substantiating a role for K+ channels in modulating membrane voltage (Figure 3\u2014figure supplement 1G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Experimental data shown in Figure 3\u2014figure supplement 1G",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:21:05.780479Z"
+    },
+    {
+      "id": "433a2665-426b-4920-b301-5c48761ce03e",
+      "content_id": "ff3e36cb-19ae-46bb-be95-78c2ab661a88",
+      "claim_id": "C40",
+      "claim": "The deflection of isolated nematocyte cnidocils elicited a mechanically gated inward current with rapid activation and inactivation kinetics.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, we found the deflection of isolated nematocyte cnidocils elicited a mechanically gated inward current with rapid activation and inactivation kinetics.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Experimental data from mechanical stimulation experiments",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:21:05.780479Z"
+    },
+    {
+      "id": "49ff8a55-d9b0-4269-b81c-15a71b938e15",
+      "content_id": "ff3e36cb-19ae-46bb-be95-78c2ab661a88",
+      "claim_id": "C41",
+      "claim": "The mechanically gated inward current in nematocytes was abolished by gadolinium (Gd3+).",
+      "claim_type": "EXPLICIT",
+      "source": "This current was abolished by gadolinium (Gd3+), which blocks mechanoreceptor and other cation channels, and was not observed in neurons (Figure 4A\u2013C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Experimental data shown in Figure 4A\u2013C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:21:05.780479Z"
+    },
+    {
+      "id": "2d7c6d9d-14fb-47ad-9d30-9eeabcb6c9d8",
+      "content_id": "ff3e36cb-19ae-46bb-be95-78c2ab661a88",
+      "claim_id": "C42",
+      "claim": "Nematocyte-enriched cells differentially expressed transcripts encoding NompC (no mechanoreceptor potential C).",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, nematocyte-enriched cells differentially expressed transcripts encoding NompC (no mechanoreceptor potential C, Figure 4\u2014figure supplement 1A), a widely conserved mechanoreceptor previously found to localize to the cnidocil of nematocytes from Hydra (Sch\u00fcler et al., 2015).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Transcriptomic data shown in Figure 4\u2014figure supplement 1A and cited from Sch\u00fcler et al., 2015",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:21:05.780479Z"
+    },
+    {
+      "id": "f45c55cc-8f56-4180-805e-fe673cf44f90",
+      "content_id": "ff3e36cb-19ae-46bb-be95-78c2ab661a88",
+      "claim_id": "C43",
+      "claim": "Heterologous expression of Nematostella NompC (nNompC) resulted in a mechanically-gated current with similar properties to native nematocytes, including rapid kinetics and Gd3+ sensitivity.",
+      "claim_type": "EXPLICIT",
+      "source": "Heterologous expression of Nematostella NompC (nNompC) resulted in a mechanically-gated current with similar properties to native nematocytes, including rapid kinetics and Gd3+ sensitivity (Figure 4A\u2013C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Experimental data shown in Figure 4A\u2013C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:21:05.780479Z"
+    },
+    {
+      "id": "6748a63e-760a-4070-ac41-9d8f8a3db494",
+      "content_id": "ff3e36cb-19ae-46bb-be95-78c2ab661a88",
+      "claim_id": "C44",
+      "claim": "nNompC had similar rapid kinetics, Gd3+ sensitivity, pressure-response relationships, and nonselective cation conductance compared to Drosophila orthologue (dNompC).",
+      "claim_type": "EXPLICIT",
+      "source": "Comparison with the Drosophila orthologue (dNompC) demonstrated nNompC had similar rapid kinetics, Gd3+ sensitivity, pressure-response relationships, and nonselective cation conductance, all consistent with the conservation of protein regions important for mechanosensitivity and ion selectivity (Jin et al., 2017; Figure 4A\u2013C, Figure 4\u2014figure supplement 1B\u2013D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Experimental data shown in Figure 4A\u2013C and Figure 4\u2014figure supplement 1B\u2013D, and cited from Jin et al., 2017",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:21:05.780479Z"
+    },
+    {
+      "id": "0ff6cacf-0432-4bb0-840f-a3545170df32",
+      "content_id": "ff3e36cb-19ae-46bb-be95-78c2ab661a88",
+      "claim_id": "C45",
+      "claim": "Nematocytes are intrinsically mechanosensitive.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, we conclude nematocytes are intrinsically mechanosensitive and suggest nNompC contributes to nematocyte mechanosensitivity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from mechanosensitivity experiments",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:21:05.780479Z"
+    },
+    {
+      "id": "be4cd458-ee00-4837-9453-2342741e2ae3",
+      "content_id": "ff3e36cb-19ae-46bb-be95-78c2ab661a88",
+      "claim_id": "C46",
+      "claim": "nNompC contributes to nematocyte mechanosensitivity.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, we conclude nematocytes are intrinsically mechanosensitive and suggest nNompC contributes to nematocyte mechanosensitivity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from expression and functional data",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:21:05.780479Z"
+    },
+    {
+      "id": "fc949b36-1195-4531-afdc-29a5168d74b5",
+      "content_id": "ff3e36cb-19ae-46bb-be95-78c2ab661a88",
+      "claim_id": "C47",
+      "claim": "Prey-derived chemicals did not elicit electrical responses from isolated nematocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "While prey-derived chemicals (<3 kDa extract from brine shrimp) evoked robust behavioral responses, similar treatments did not elicit electrical responses from isolated nematocytes (Figure 4D, Figure 4\u2014figure supplement 1E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Experimental data shown in Figure 4D and Figure 4\u2014figure supplement 1E",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:21:05.780479Z"
+    },
+    {
+      "id": "d4cf84f4-9e5c-44fd-9a1d-e81cb0e1aa60",
+      "content_id": "ff3e36cb-19ae-46bb-be95-78c2ab661a88",
+      "claim_id": "C48",
+      "claim": "Only acetylcholine (ACh) elicited a significant response from isolated nematocytes among well-conserved neurotransmitters screened.",
+      "claim_type": "EXPLICIT",
+      "source": "To test this possibility, we screened isolated nematocytes for responses to well-conserved neurotransmitters and found only acetylcholine (ACh) elicited a significant response (Figure 4D,E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Experimental data shown in Figure 4D,E",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:21:05.780479Z"
+    },
+    {
+      "id": "98e68fc0-5638-49e3-8b24-878bc69d2662",
+      "content_id": "ff3e36cb-19ae-46bb-be95-78c2ab661a88",
+      "claim_id": "C49",
+      "claim": "ACh-evoked outward currents in nematocytes were abolished by nicotinic acetylcholine receptor (nAChR) antagonists and recapitulated by nicotine.",
+      "claim_type": "EXPLICIT",
+      "source": "ACh-evoked outward currents were abolished by nicotinic acetylcholine receptor (nAChR) antagonists and recapitulated by nicotine (Figure 4F, Figure 4\u2014figure supplement 1F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Experimental data shown in Figure 4F and Figure 4\u2014figure supplement 1F",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:21:05.780479Z"
+    },
+    {
+      "id": "c9ab20d2-4cb2-4317-92d4-b8611cb6d87d",
+      "content_id": "ff3e36cb-19ae-46bb-be95-78c2ab661a88",
+      "claim_id": "C50",
+      "claim": "The K+ channel blocker TEA+ and the intracellular Ca2+ chelator BAPTA inhibited ACh-evoked responses in nematocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "The K+ channel blocker TEA+ and the intracellular Ca2+ chelator BAPTA inhibited responses, suggesting ACh elicits K+ channel activity downstream of increased intracellular Ca2+.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Experimental data from pharmacological experiments",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:21:05.780479Z"
+    },
+    {
+      "id": "7b13277e-2e37-41ca-a955-82d5fd2b1812",
+      "content_id": "ff3e36cb-19ae-46bb-be95-78c2ab661a88",
+      "claim_id": "C51",
+      "claim": "ACh elicits K+ channel activity downstream of increased intracellular Ca2+ in nematocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "The K+ channel blocker TEA+ and the intracellular Ca2+ chelator BAPTA inhibited responses, suggesting ACh elicits K+ channel activity downstream of increased intracellular Ca2+.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from pharmacological experiments",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:21:05.780479Z"
+    },
+    {
+      "id": "2ad93cbf-2830-4e2d-8de4-342b08d639ff",
+      "content_id": "ff3e36cb-19ae-46bb-be95-78c2ab661a88",
+      "claim_id": "C52",
+      "claim": "Blockade of K+ currents with intracellular Cs+ revealed an ACh-elicited inward current that was enhanced by increased extracellular Ca2+ and blocked by the nAChR antagonist mecamylamine.",
+      "claim_type": "EXPLICIT",
+      "source": "While the G-protein signaling inhibitor GDP\u03b2S did not affect outward currents, blockade of K+ currents with intracellular Cs+ revealed an ACh-elicited inward current that was enhanced by increased extracellular Ca2+ and blocked by the nAChR antagonist mecamylamine (Figure 4F, Figure 4\u2014figure supplement 1G,H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Experimental data shown in Figure 4F and Figure 4\u2014figure supplement 1G,H",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:21:05.780479Z"
+    },
+    {
+      "id": "93fd1afa-8b08-4b7c-8837-212324c5c9b5",
+      "content_id": "ff3e36cb-19ae-46bb-be95-78c2ab661a88",
+      "claim_id": "C53",
+      "claim": "ACh evokes a Ca2+-permeable nAChR-like signaling pathway to engage Ca2+-activated K+ channels in nematocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "These results suggest ACh evokes a Ca2+-permeable nAChR-like signaling pathway to engage Ca2+-activated K+ channels, consistent with the absence of muscarinic ACh receptors in Nematostella (Faltine-Gonzalez and Layden, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from experimental data and cited from Faltine-Gonzalez and Layden, 2019",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:21:05.780479Z"
+    },
+    {
+      "id": "75002450-6b43-4c34-a5f2-8a50af7a17e1",
+      "content_id": "ff3e36cb-19ae-46bb-be95-78c2ab661a88",
+      "claim_id": "C54",
+      "claim": "Nematocyte-enriched cells expressed numerous nAChR-like transcripts which had well-conserved domains involved in Ca2+ permeability.",
+      "claim_type": "EXPLICIT",
+      "source": "In agreement with this observation, nematocyte-enriched cells expressed numerous nAChR-like transcripts which had well-conserved domains involved in Ca2+ permeability (Fucile, 2004; Figure 4\u2014figure supplement 1I,J).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Transcriptomic data shown in Figure 4\u2014figure supplement 1I,J and cited from Fucile, 2004",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:21:05.780479Z"
+    },
+    {
+      "id": "2d2176b3-f761-478c-b102-06e119bef1a4",
+      "content_id": "ff3e36cb-19ae-46bb-be95-78c2ab661a88",
+      "claim_id": "C55",
+      "claim": "There is robust acetylcholinesterase activity in tentacles.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, we found robust acetylcholinesterase activity in tentacles, further suggesting a role for ACh signaling in nematocyte function (Figure 4G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Experimental data shown in Figure 4G",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:21:05.780479Z"
+    },
+    {
+      "id": "d8a05352-8c31-41f6-865d-eb0208df1904",
+      "content_id": "ff3e36cb-19ae-46bb-be95-78c2ab661a88",
+      "claim_id": "C56",
+      "claim": "Nematocytes use cholinergic signaling to regulate K+ currents, similar to how efferent cholinergic innervation of vertebrate hair cells modulates nAChR-K+ channel signaling to inhibit auditory responses.",
+      "claim_type": "EXPLICIT",
+      "source": "These results demonstrate that nematocytes use cholinergic signaling to regulate K+ currents, similar to how efferent cholinergic innervation of vertebrate hair cells modulates nAChR-K+ channel signaling to inhibit auditory responses (Elgoyhen and Katz, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from experimental data and cited from Elgoyhen and Katz, 2012",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:21:05.780479Z"
+    },
+    {
+      "id": "08f42430-3461-40a6-9c42-729d33404ce6",
+      "content_id": "ff3e36cb-19ae-46bb-be95-78c2ab661a88",
+      "claim_id": "C57",
+      "claim": "Each nematocyte exhibited a long process that extended into the ectoderm.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, each nematocyte exhibited a long process, of presently unknown function, that extended into the ectoderm (Figure 5\u2014figure supplement 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Electron microscopy data shown in Figure 5\u2014figure supplement 1D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:21:05.780479Z"
+    },
+    {
+      "id": "8f1db523-c5bc-47f0-9c7c-2e05a2c61b20",
+      "content_id": "ff3e36cb-19ae-46bb-be95-78c2ab661a88",
+      "claim_id": "C58",
+      "claim": "Dense core vesicles were localized to electron-dense regions at the junction between each nematocyte and one other cell type, either sensory neurons or spirocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, dense core vesicles were localized to electron-dense regions at the junction between each nematocyte and one other cell type, either sensory neurons or spirocytes (Figure 5A, Figure 5\u2014figure supplement 2A\u2013E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Electron microscopy data shown in Figure 5A and Figure 5\u2014figure supplement 2A\u2013E",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:21:05.780479Z"
+    },
+    {
+      "id": "d644edb3-47db-4750-a8a5-4df26a04d9f5",
+      "content_id": "ff3e36cb-19ae-46bb-be95-78c2ab661a88",
+      "claim_id": "C59",
+      "claim": "Nematocytes receive synaptic input from both neurons and spirocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, nematocytes receive synaptic input from both neurons and spirocytes and likely serve as a site for integrating multiple signals (Figure 5\u2014figure supplement 2F,G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Inferred from electron microscopy data shown in Figure 5\u2014figure supplement 2F,G",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:21:05.780479Z"
+    },
+    {
+      "id": "08e24694-1d1f-4d92-9cb1-b187c9a79b26",
+      "content_id": "ff3e36cb-19ae-46bb-be95-78c2ab661a88",
+      "claim_id": "C60",
+      "claim": "Nematocytes likely serve as a site for integrating multiple signals.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, nematocytes receive synaptic input from both neurons and spirocytes and likely serve as a site for integrating multiple signals (Figure 5\u2014figure supplement 2F,G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Inferred from synaptic connectivity data",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:21:05.780479Z"
+    },
+    {
+      "id": "fc3f1e27-a289-4981-b98c-f4b4298f8b88",
+      "content_id": "ff3e36cb-19ae-46bb-be95-78c2ab661a88",
+      "claim_id": "C61",
+      "claim": "Cnidarians can simultaneously discharge multiple cnidocyte types to most efficiently capture prey.",
+      "claim_type": "EXPLICIT",
+      "source": "This observation is consistent with the ability of cnidarians to simultaneously discharge multiple cnidocyte types to most efficiently capture prey (Pantin, 1942a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from Pantin, 1942a",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:21:05.780479Z"
+    },
+    {
+      "id": "d09d22ee-bb26-4fb8-8c03-0949ee2d9478",
+      "content_id": "ff3e36cb-19ae-46bb-be95-78c2ab661a88",
+      "claim_id": "C62",
+      "claim": "ACh induced hyperpolarization of nematocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "ACh induced hyperpolarization of nematocytes. n = 6, p<0.01 paired two-tailed student's t-test.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Experimental data shown in Figure 5B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:21:05.780479Z"
+    },
+    {
+      "id": "fba84e31-a958-4ea4-bc44-a600b1c11915",
+      "content_id": "ff3e36cb-19ae-46bb-be95-78c2ab661a88",
+      "claim_id": "C63",
+      "claim": "Depolarizing current injection did not induce active properties from rest, but did elicit a voltage spike from most nematocytes hyperpolarized by ACh.",
+      "claim_type": "EXPLICIT",
+      "source": "Depolarizing current injection did not induce active properties from rest, but did elicit a voltage spike from most nematocytes hyperpolarized by ACh. n = 6, p<0.01 paired two-tailed student's t-test.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Experimental data shown in Figure 5C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:21:05.780479Z"
+    },
+    {
+      "id": "ddabd081-26d5-4507-bbbf-ca30524eeec9",
+      "content_id": "ff3e36cb-19ae-46bb-be95-78c2ab661a88",
+      "claim_id": "C64",
+      "claim": "Chemo-tactile-induced nematocyte discharge was inhibited by the mechanoreceptor current blocker Gd3+.",
+      "claim_type": "EXPLICIT",
+      "source": "Chemo-tactile-induced nematocyte discharge (touch + prey extract, n = 8) was inhibited by the mechanoreceptor current blocker Gd3+ (n = 7) and nAChR antagonist mecamylamine (n = 14).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Experimental data shown in Figure 5D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:21:05.780479Z"
+    },
+    {
+      "id": "a9caeaf3-9909-4d52-8b42-0d04b2c03d76",
+      "content_id": "ff3e36cb-19ae-46bb-be95-78c2ab661a88",
+      "claim_id": "C65",
+      "claim": "Chemo-tactile-induced nematocyte discharge was inhibited by the nAChR antagonist mecamylamine.",
+      "claim_type": "EXPLICIT",
+      "source": "Chemo-tactile-induced nematocyte discharge (touch + prey extract, n = 8) was inhibited by the mechanoreceptor current blocker Gd3+ (n = 7) and nAChR antagonist mecamylamine (n = 14).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Experimental data shown in Figure 5D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:21:05.780479Z"
+    },
+    {
+      "id": "e873800f-c430-4d61-b481-8376ebbd2382",
+      "content_id": "ff3e36cb-19ae-46bb-be95-78c2ab661a88",
+      "claim_id": "C66",
+      "claim": "Touch + ACh was sufficient to induce nematocyte discharge in the absence of chemical stimulation.",
+      "claim_type": "EXPLICIT",
+      "source": "In the absence of chemical stimulation (touch - prey extract, n = 5), touch + ACh (n = 14) was sufficient to induce discharge, which was inhibited by mecamylamine (n = 12).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Experimental data shown in Figure 5D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:21:05.780479Z"
+    },
+    {
+      "id": "aeaeb51a-5634-473b-a862-f86022ed7b96",
+      "content_id": "ff3e36cb-19ae-46bb-be95-78c2ab661a88",
+      "claim_id": "C67",
+      "claim": "The requirement for prey-derived chemicals was completely recapitulated by ACh.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, the requirement for prey-derived chemicals was completely recapitulated by ACh (Figure 5D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Experimental data shown in Figure 5D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:21:05.780479Z"
+    },
+    {
+      "id": "f8c12f31-368e-4536-95ba-9bd9cdc2bac1",
+      "content_id": "ff3e36cb-19ae-46bb-be95-78c2ab661a88",
+      "claim_id": "C68",
+      "claim": "The unique ICaV voltage-dependent inactivation provides a mechanism by which nematocytes filter extraneous depolarizing mechanical signals.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, we propose that the unique ICaV voltage-dependent inactivation provides a mechanism by which nematocytes filter extraneous depolarizing mechanical signals, but can integrate chemosensory-induced hyperpolarization together with a depolarizing stimulus to elicit robust signal amplification and discharge responses (Figure 6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Inferred from experimental data and proposed model shown in Figure 6",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:21:05.780479Z"
+    },
+    {
+      "id": "709542e8-92a1-4333-af1a-df5c19d7c80f",
+      "content_id": "ff3e36cb-19ae-46bb-be95-78c2ab661a88",
+      "claim_id": "C69",
+      "claim": "Nematocytes can integrate chemosensory-induced hyperpolarization together with a depolarizing stimulus to elicit robust signal amplification and discharge responses.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, we propose that the unique ICaV voltage-dependent inactivation provides a mechanism by which nematocytes filter extraneous depolarizing mechanical signals, but can integrate chemosensory-induced hyperpolarization together with a depolarizing stimulus to elicit robust signal amplification and discharge responses (Figure 6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Inferred from experimental data and proposed model shown in Figure 6",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:21:05.780479Z"
+    },
+    {
+      "id": "12c3e3dd-8ced-45c5-88db-f5ac2ec8766c",
+      "content_id": "ff3e36cb-19ae-46bb-be95-78c2ab661a88",
+      "claim_id": "C70",
+      "claim": "Nematocytes use the specialized properties of nCaV to filter salient chemo-tactile signals from environmental noise.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we demonstrate that nematocytes use the specialized properties of nCaV to filter salient chemo-tactile signals from environmental noise.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary of experimental findings",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:21:05.780479Z"
+    },
+    {
+      "id": "382095ba-8e0b-441d-a866-a6270e77f05e",
+      "content_id": "ff3e36cb-19ae-46bb-be95-78c2ab661a88",
+      "claim_id": "C71",
+      "claim": "The involvement of Ca2+ signaling in nematocyte discharge is consistent with a well-established role for Ca2+ influx in mediating discharge across multiple cnidarian species.",
+      "claim_type": "EXPLICIT",
+      "source": "The involvement of Ca2+ signaling in this process is consistent with a well-established role for Ca2+ influx in mediating discharge across multiple cnidarian species (McKay and Anderson, 1988; Santoro and Salleo, 1991; Watson and Hessinger, 1994a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from McKay and Anderson, 1988; Santoro and Salleo, 1991; Watson and Hessinger, 1994a",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:21:05.780479Z"
+    },
+    {
+      "id": "29f1e9a6-2ab6-43bd-a6f1-4384fd934c80",
+      "content_id": "ff3e36cb-19ae-46bb-be95-78c2ab661a88",
+      "claim_id": "C72",
+      "claim": "It has been proposed that Ca2+ influx alters the permeability of the nematocyst capsule and/or initiates the rapid dissociation of ions within the cyst to induce osmotic changes within the organelle.",
+      "claim_type": "EXPLICIT",
+      "source": "It has been proposed that Ca2+ influx alters the permeability of the nematocyst capsule and/or initiates the rapid dissociation of ions within the cyst to induce osmotic changes within the organelle (Lubbock and Amos, 1981; Lubbock et al., 1981; Weber, 1990; Tardent, 1995).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from Lubbock and Amos, 1981; Lubbock et al., 1981; Weber, 1990; Tardent, 1995",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:21:05.780479Z"
+    },
+    {
+      "id": "8361b452-2893-4963-b93f-dee6dee2971e",
+      "content_id": "ff3e36cb-19ae-46bb-be95-78c2ab661a88",
+      "claim_id": "C73",
+      "claim": "Nematocytes express multiple Ca2+ handling proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "Our transcriptomic analyses demonstrate that nematocytes express multiple Ca2+ handling proteins (Figure 5\u2014figure supplement 3D\u2013F), which could control Ca2+ signaling domains in response to spatially restricted sensory transduction cascades.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Transcriptomic data shown in Figure 5\u2014figure supplement 3D\u2013F",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:21:05.780479Z"
+    },
+    {
+      "id": "b481be97-059d-45e3-8c4e-d76366d2d62f",
+      "content_id": "ff3e36cb-19ae-46bb-be95-78c2ab661a88",
+      "claim_id": "C74",
+      "claim": "Ca2+ handling proteins in nematocytes could control Ca2+ signaling domains in response to spatially restricted sensory transduction cascades.",
+      "claim_type": "EXPLICIT",
+      "source": "Our transcriptomic analyses demonstrate that nematocytes express multiple Ca2+ handling proteins (Figure 5\u2014figure supplement 3D\u2013F), which could control Ca2+ signaling domains in response to spatially restricted sensory transduction cascades.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Speculation based on transcriptomic data",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:21:05.780479Z"
+    },
+    {
+      "id": "b14a2643-cddf-4bdd-a6d2-8fd05b2ec7b5",
+      "content_id": "ff3e36cb-19ae-46bb-be95-78c2ab661a88",
+      "claim_id": "C75",
+      "claim": "CaV currents could mediate an increase of >500 \u00b5M Ca2+ considering a uniform distribution across the small cytoplasmic volume (5%) not occupied by the nematocyst.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, CaV currents could mediate an increase of >500 \u00b5M Ca2+ considering a uniform distribution across the small cytoplasmic volume (5%) not occupied by the nematocyst.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Calculated from experimental data",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:21:05.780479Z"
+    },
+    {
+      "id": "8f489678-7842-419d-b187-20226405f9de",
+      "content_id": "ff3e36cb-19ae-46bb-be95-78c2ab661a88",
+      "claim_id": "C76",
+      "claim": "Anatomical organization and pharmacological dependence for cellular and discharge activity in anthozoan nematocytes differs from hydrozoans.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, anatomical organization and pharmacological dependence for cellular and discharge activity in anthozoan nematocytes differs from hydrozoans (Anderson and Mckay, 1987; Kass-Simon and Scappaticci, Jr., 2002; Oliver et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from Anderson and Mckay, 1987; Kass-Simon and Scappaticci, Jr., 2002; Oliver et al., 2008",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:21:05.780479Z"
+    },
+    {
+      "id": "2981acd4-ba31-41d8-ba25-5cc2a9e1d98a",
+      "content_id": "ff3e36cb-19ae-46bb-be95-78c2ab661a88",
+      "claim_id": "C77",
+      "claim": "Nematocysts vary extensively in morphology, differing in the length of the extruded thread, the presence of spines, and the composition of toxins.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, nematocysts vary extensively in morphology, differing in the length of the extruded thread, the presence of spines, and the composition of toxins (Kass-Simon and Scappaticci, Jr., 2002), likely reflecting the diversity of organismal needs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from Kass-Simon and Scappaticci, Jr., 2002",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:21:05.780479Z"
+    },
+    {
+      "id": "c6ba54fd-1894-44a2-a2da-d64be1f12daa",
+      "content_id": "ff3e36cb-19ae-46bb-be95-78c2ab661a88",
+      "claim_id": "C78",
+      "claim": "Numerous amino acids, lipids, and N-acetylated sugars can individually modulate nematocyte discharge.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to chemical mixtures, such as prey extract, numerous amino acids, lipids, and N-acetylated sugars can individually modulate nematocyte discharge (Watson and Hessinger, 1992).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from Watson and Hessinger, 1992",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:21:05.780479Z"
+    },
+    {
+      "id": "145d4d31-a820-4e15-a0b9-5a034759afae",
+      "content_id": "ff3e36cb-19ae-46bb-be95-78c2ab661a88",
+      "claim_id": "C79",
+      "claim": "Discharge can be regulated by organismal nutritional state.",
+      "claim_type": "EXPLICIT",
+      "source": "Discharge can also be regulated by organismal nutritional state (Sandberg et al., 1971), suggesting nematocytes could receive input from digestive cells or hormones.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from Sandberg et al., 1971 and speculation about mechanism",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:21:05.780479Z"
+    },
+    {
+      "id": "d760a2c4-f80f-44c6-a0de-fe61832d67d5",
+      "content_id": "ff3e36cb-19ae-46bb-be95-78c2ab661a88",
+      "claim_id": "C80",
+      "claim": "The freshwater cnidarian, Hydra vulgaris, uses a specific cnidocyte to grasp surfaces for phototaxis.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, the freshwater cnidarian, Hydra vulgaris, uses a specific cnidocyte to grasp surfaces for phototaxis, suggesting that these cells could be regulated downstream of a photoreceptor (Plachetzki et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from Plachetzki et al., 2012",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:21:05.780479Z"
+    },
+    {
+      "id": "71ac7935-7586-4655-9bcf-10f4fa5695ca",
+      "content_id": "ff3e36cb-19ae-46bb-be95-78c2ab661a88",
+      "claim_id": "C81",
+      "claim": "Clownfish can live among the tentacles of sea anemones without harmful effects.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, clownfish can live among the tentacles of sea anemones without harmful effects, although the exact mechanism by which this occurs is unclear (Lubbock, 1980).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from Lubbock, 1980",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:21:05.780479Z"
+    },
+    {
+      "id": "add0ea71-0841-4147-a75c-1e3b0f8dd6fe",
+      "content_id": "ff3e36cb-19ae-46bb-be95-78c2ab661a88",
+      "claim_id": "C82",
+      "claim": "Certain species of nudibranchs and ctenophores acquire undischarged nematocysts from prey and store them for later defense.",
+      "claim_type": "EXPLICIT",
+      "source": "Certain species of nudibranchs and ctenophores acquire undischarged nematocysts from prey and store them for later defense, indicating that these organisms are able to initially prevent discharge responses (Greenwood, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from Greenwood, 2009",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:21:05.780479Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "7a2c2ea0-2183-4410-af07-079a1360db6f",
+      "content_id": "ff3e36cb-19ae-46bb-be95-78c2ab661a88",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Nematocytes exhibit voltage-gated Ca2+ currents (ICaV) with unusually sensitive voltage-dependent inactivation that begins at very negative voltages, rendering cells inactivated at typical resting membrane potentials. This inactivation is intrinsic to the channel complex and differs markedly from neuronal voltage-gated currents.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C9-C15 provide converging experimental evidence from patch-clamp recordings (C9-C11), ion substitution experiments (C12), and pharmacological manipulations (C13) demonstrating the unique voltage-dependent properties of nematocyte ICaV. The inference that inactivation is intrinsic (C14) and prevents activation from rest (C15) logically follows from the experimental data showing Ca2+-independent inactivation at very negative voltages.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:21:05.780479Z"
+    },
+    {
+      "id": "432d773b-940a-4acf-a1c7-9bfae16e437a",
+      "content_id": "ff3e36cb-19ae-46bb-be95-78c2ab661a88",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Transcriptomic analysis reveals that nematocyte-enriched cells highly express cacnb2 (\u03b2 subunit), cacna1a (\u03b1 subunit of CaV2.1), and cacna2d1, consistent with expression of high voltage-activated (HVA) calcium channel complexes. This expression pattern is consistent with prior reports in cnidarian nematocytes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C16-C20 present transcriptomic data (C16, C18) supported by appropriate citations (C17, C19, C20) demonstrating enrichment of CaV channel subunits in nematocytes. The data are internally consistent with the known biology of \u03b2 subunit interactions with HVA channels and align with previous literature.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:21:05.780479Z"
+    },
+    {
+      "id": "dcd53bf5-19b3-4d66-af9d-260ac47d6dc4",
+      "content_id": "ff3e36cb-19ae-46bb-be95-78c2ab661a88",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Heterologously expressed nCaV channels (Nematostella cacna1a, cacnb2, cacna2d1) recapitulate the unusual voltage-dependent inactivation observed in native nematocytes, with Vi1/2 approximately 80 mV more negative than mammalian orthologues. Chimeric channel experiments demonstrate that the nCaV \u03b2 subunit is both necessary and sufficient to confer this uniquely sensitive voltage-dependent inactivation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C21-C28 provide systematic experimental evidence from heterologous expression (C21-C25) and domain-swapping experiments (C26-C27) that identify the \u03b2 subunit as the molecular determinant of enhanced voltage-dependent inactivation. The conclusion (C28) is well-supported by the chimeric channel data showing bidirectional effects of \u03b2 subunit substitution.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:21:05.780479Z"
+    },
+    {
+      "id": "5edc5661-a6a7-4130-8689-a22e175560f8",
+      "content_id": "ff3e36cb-19ae-46bb-be95-78c2ab661a88",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Current-clamp recordings reveal that nematocytes have a resting potential of approximately -65 mV and do not produce voltage spikes when stimulated from rest. However, when first hyperpolarized to -90 mV, nematocytes produce singular long voltage spikes, contrasting with the multiple narrow spikes produced by neurons. This demonstrates that strong voltage-dependent inactivation prevents nematocyte activation from rest.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C29-C33 present current-clamp data showing the functional consequences of voltage-dependent inactivation on nematocyte excitability. The experimental observations (C29-C32) directly support the inference (C33) that voltage-dependent inactivation prevents activation from rest. The comparison with neurons provides appropriate controls.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:21:05.780479Z"
+    },
+    {
+      "id": "2ecc5596-b9e6-41e9-9dfc-5c12901f2209",
+      "content_id": "ff3e36cb-19ae-46bb-be95-78c2ab661a88",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Nematocytes exhibit transient Ca2+-activated K+ currents that are highly sensitive to voltage-dependent inactivation, contrasting with the sustained K+ currents in neurons. These K+ currents are abolished by BAPTA or removal of external Ca2+, and nematocyte-enriched cells express numerous Ca2+-activated K+ channel transcripts. Blocking K+ currents with Cs+ prolongs voltage spikes and increases resting membrane voltage.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C34-C39 provide comprehensive characterization of nematocyte K+ currents through electrophysiological recordings (C34-C37, C39) and transcriptomic analysis (C38). The pharmacological experiments with BAPTA, Ca2+ removal, and Cs+ provide converging evidence for Ca2+-activated K+ channels. The functional role in modulating membrane voltage is experimentally demonstrated.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:21:05.780479Z"
+    },
+    {
+      "id": "c0957823-5400-4ad9-b855-6fc4dbcb27b6",
+      "content_id": "ff3e36cb-19ae-46bb-be95-78c2ab661a88",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Nematocytes are intrinsically mechanosensitive, with cnidocil deflection eliciting Gd3+-sensitive mechanically gated inward currents. Nematocyte-enriched cells express NompC, and heterologous expression of Nematostella NompC produces mechanically-gated currents with properties similar to native nematocytes and Drosophila NompC, suggesting NompC contributes to nematocyte mechanosensitivity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C40-C46 combine electrophysiological characterization (C40-C41), transcriptomic evidence (C42), heterologous expression (C43-C44), and comparative analysis to demonstrate nematocyte mechanosensitivity. The conclusion that NompC contributes to mechanosensitivity (C46) is appropriately stated as a suggestion rather than definitive proof, as genetic loss-of-function experiments were not performed.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:21:05.780479Z"
+    },
+    {
+      "id": "4e2fda59-6aca-4ea6-a582-217cc449d7ef",
+      "content_id": "ff3e36cb-19ae-46bb-be95-78c2ab661a88",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Isolated nematocytes do not respond to prey-derived chemicals but respond specifically to acetylcholine (ACh) through a Ca2+-permeable nicotinic acetylcholine receptor (nAChR)-like pathway that activates Ca2+-activated K+ channels. Nematocyte-enriched cells express nAChR-like transcripts with conserved Ca2+ permeability domains, and tentacles show robust acetylcholinesterase activity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C47-C56 provide systematic characterization of nematocyte chemosensory responses through neurotransmitter screening (C47-C48), pharmacological dissection (C49-C52), transcriptomic analysis (C54), and enzymatic assays (C55). The proposed signaling pathway (C53) is well-supported by converging pharmacological evidence. The comparison to vertebrate hair cells (C56) provides useful context but is not essential to the main conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:21:05.780479Z"
+    },
+    {
+      "id": "1132e0c5-4233-453e-8bbc-d8ebb12409a6",
+      "content_id": "ff3e36cb-19ae-46bb-be95-78c2ab661a88",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Serial electron microscopy reconstruction reveals that nematocytes receive synaptic input from both sensory neurons and spirocytes, with dense core vesicles localized at electron-dense junctions. This anatomical organization suggests nematocytes serve as integration sites for multiple signals, consistent with the ability of cnidarians to simultaneously discharge multiple cnidocyte types.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C57-C61 present electron microscopy data demonstrating synaptic connectivity between nematocytes and other cell types. The anatomical observations (C57-C58) support the inference that nematocytes integrate multiple signals (C59-C60). The citation to prior work (C61) provides appropriate context for the functional significance of this connectivity.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:21:05.780479Z"
+    },
+    {
+      "id": "12d2e523-9bec-4007-b42e-90cfb8881147",
+      "content_id": "ff3e36cb-19ae-46bb-be95-78c2ab661a88",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "ACh hyperpolarizes nematocytes and enables voltage spike generation in response to depolarizing current injection. Chemo-tactile-induced nematocyte discharge requires both mechanoreceptor (NompC) and nAChR signaling, and ACh can completely substitute for prey-derived chemicals in triggering discharge when combined with mechanical stimulation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C62-C67 integrate electrophysiological (C62-C63) and behavioral (C64-C67) experiments to demonstrate the functional role of ACh in nematocyte discharge. The pharmacological experiments with Gd3+ and mecamylamine provide strong evidence for the requirement of both mechanosensory and cholinergic signaling. The demonstration that ACh substitutes for prey extract (C67) is a key finding supporting the proposed mechanism.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:21:05.780479Z"
+    },
+    {
+      "id": "2a78ee7e-3ca9-4a51-a426-0452c56584a7",
+      "content_id": "ff3e36cb-19ae-46bb-be95-78c2ab661a88",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The authors propose that nCaV's unique voltage-dependent inactivation acts as a molecular filter, preventing nematocyte responses to extraneous mechanical signals while allowing integration of chemosensory-induced hyperpolarization with mechanical stimulation to elicit discharge. This mechanism enables nematocytes to filter salient chemo-tactile signals from environmental noise.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C68-C70 present the central mechanistic model integrating all experimental findings. The model is well-supported by the convergence of voltage-clamp data showing unusual inactivation, current-clamp data showing hyperpolarization-dependent excitability, and behavioral data showing requirement for both chemical and mechanical cues. The proposed filtering mechanism logically explains how the biophysical properties of nCaV enable sensory discrimination.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:21:05.780479Z"
+    },
+    {
+      "id": "ccdf12d3-d229-4845-bd35-f63f09385955",
+      "content_id": "ff3e36cb-19ae-46bb-be95-78c2ab661a88",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Background claims establishing that cnidarians use specialized cnidocytes (spirocytes and nematocytes) for prey capture, that nematocyst discharge is extremely fast and energetically expensive, and that simultaneous chemical and mechanical cues are required for discharge in a Ca2+-dependent manner.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C8 are all supported by appropriate citations to prior literature and provide essential background context for the study. These are well-established facts in the field rather than novel findings from this manuscript.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:21:05.780479Z"
+    },
+    {
+      "id": "930235d8-121a-40a7-8782-8937274f96d2",
+      "content_id": "ff3e36cb-19ae-46bb-be95-78c2ab661a88",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The involvement of Ca2+ signaling in nematocyte discharge is consistent with prior work across cnidarian species. Nematocytes express multiple Ca2+ handling proteins that could control Ca2+ signaling domains, and CaV currents could mediate substantial Ca2+ increases (>500 \u00b5M) in the small cytoplasmic volume.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C71-C75 discuss the role of Ca2+ in discharge, combining citations to prior work (C71-C72), transcriptomic data (C73), speculation about function (C74), and calculations (C75). The transcriptomic data (C73) and calculations (C75) are supported, though the functional speculation (C74) remains to be tested. The calculation in C75 makes reasonable assumptions about cytoplasmic volume.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:21:05.780479Z"
+    },
+    {
+      "id": "ae94686b-f029-4ce6-8f2b-03a938fe6abd",
+      "content_id": "ff3e36cb-19ae-46bb-be95-78c2ab661a88",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Discussion of diversity in cnidarian nematocyte biology, including differences between anthozoans and hydrozoans, morphological variation in nematocysts, diverse chemical modulators of discharge, regulation by nutritional state, and examples of organisms that evade or exploit nematocyte discharge.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C76-C82 are all supported by appropriate citations and provide important context for understanding the diversity of cnidarian biology and the broader implications of the findings. These are discussion points rather than novel experimental results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:21:05.780479Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "e3addec4-be38-4099-a7f0-514d84fa08c2",
+      "result_id": "7a2c2ea0-2183-4410-af07-079a1360db6f"
+    },
+    {
+      "claim_id": "51da5f75-1af8-405c-9bb3-33f90f19de4c",
+      "result_id": "7a2c2ea0-2183-4410-af07-079a1360db6f"
+    },
+    {
+      "claim_id": "c3fa8b86-4220-42eb-ab55-1b96124ac135",
+      "result_id": "7a2c2ea0-2183-4410-af07-079a1360db6f"
+    },
+    {
+      "claim_id": "cb0e9aac-5c23-49b0-949d-aead25d08848",
+      "result_id": "7a2c2ea0-2183-4410-af07-079a1360db6f"
+    },
+    {
+      "claim_id": "af641b0a-cc66-4d84-87ef-ae075e161f09",
+      "result_id": "7a2c2ea0-2183-4410-af07-079a1360db6f"
+    },
+    {
+      "claim_id": "d008fd7a-a09a-461e-b94c-63876673cd00",
+      "result_id": "7a2c2ea0-2183-4410-af07-079a1360db6f"
+    },
+    {
+      "claim_id": "b3f20fff-19c6-40e0-9847-0a7500601e1c",
+      "result_id": "7a2c2ea0-2183-4410-af07-079a1360db6f"
+    },
+    {
+      "claim_id": "9809410a-cedc-4705-91b6-5dcdf53d4f60",
+      "result_id": "432d773b-940a-4acf-a1c7-9bfae16e437a"
+    },
+    {
+      "claim_id": "0b68235e-b324-4e2e-a012-bcba84a74494",
+      "result_id": "432d773b-940a-4acf-a1c7-9bfae16e437a"
+    },
+    {
+      "claim_id": "c31f7d22-d502-4d8f-b070-dd034d2bfcbc",
+      "result_id": "432d773b-940a-4acf-a1c7-9bfae16e437a"
+    },
+    {
+      "claim_id": "89dd243f-e735-443e-8d95-b7ba62cfd098",
+      "result_id": "432d773b-940a-4acf-a1c7-9bfae16e437a"
+    },
+    {
+      "claim_id": "7cc5d575-4aa2-474c-9899-258efcbece72",
+      "result_id": "432d773b-940a-4acf-a1c7-9bfae16e437a"
+    },
+    {
+      "claim_id": "f3b5702e-3604-4b66-a4f4-3d72b8e52280",
+      "result_id": "dcd53bf5-19b3-4d66-af9d-260ac47d6dc4"
+    },
+    {
+      "claim_id": "aacda254-c00d-4d17-870b-a9129fae84e3",
+      "result_id": "dcd53bf5-19b3-4d66-af9d-260ac47d6dc4"
+    },
+    {
+      "claim_id": "642e5c55-5f96-4b8a-9939-8ea0ac8db810",
+      "result_id": "dcd53bf5-19b3-4d66-af9d-260ac47d6dc4"
+    },
+    {
+      "claim_id": "26e9a50c-14d6-4fe9-a4aa-848b5c6db5a6",
+      "result_id": "dcd53bf5-19b3-4d66-af9d-260ac47d6dc4"
+    },
+    {
+      "claim_id": "77293834-44a3-4588-b626-f6d8483304b9",
+      "result_id": "dcd53bf5-19b3-4d66-af9d-260ac47d6dc4"
+    },
+    {
+      "claim_id": "f6c28b1c-381d-448d-b2b7-d629e1069367",
+      "result_id": "dcd53bf5-19b3-4d66-af9d-260ac47d6dc4"
+    },
+    {
+      "claim_id": "cddf8754-aa68-43bb-931c-a53b234bfe66",
+      "result_id": "dcd53bf5-19b3-4d66-af9d-260ac47d6dc4"
+    },
+    {
+      "claim_id": "4b1ae776-bb63-4251-a590-994dd95f1e54",
+      "result_id": "dcd53bf5-19b3-4d66-af9d-260ac47d6dc4"
+    },
+    {
+      "claim_id": "74091481-d611-40b5-b4d4-e278701e7470",
+      "result_id": "5edc5661-a6a7-4130-8689-a22e175560f8"
+    },
+    {
+      "claim_id": "799ae04e-8674-4c33-a0a2-270ae536dd05",
+      "result_id": "5edc5661-a6a7-4130-8689-a22e175560f8"
+    },
+    {
+      "claim_id": "d816ffbf-aa25-4563-ab6a-0d071aa58340",
+      "result_id": "5edc5661-a6a7-4130-8689-a22e175560f8"
+    },
+    {
+      "claim_id": "15f8bf7b-91c7-4fb8-b403-9e0c4d42e051",
+      "result_id": "5edc5661-a6a7-4130-8689-a22e175560f8"
+    },
+    {
+      "claim_id": "d31437c5-18a5-4f93-8532-c2f6e987811e",
+      "result_id": "5edc5661-a6a7-4130-8689-a22e175560f8"
+    },
+    {
+      "claim_id": "b3439bf8-457a-4922-b6da-c9aaf78c42ab",
+      "result_id": "2ecc5596-b9e6-41e9-9dfc-5c12901f2209"
+    },
+    {
+      "claim_id": "73f1fb23-129a-41e0-a91b-bf9dcc1b6c7c",
+      "result_id": "2ecc5596-b9e6-41e9-9dfc-5c12901f2209"
+    },
+    {
+      "claim_id": "79b03c2d-08bc-4871-a09c-2bec969356f2",
+      "result_id": "2ecc5596-b9e6-41e9-9dfc-5c12901f2209"
+    },
+    {
+      "claim_id": "306ab6ed-e343-472d-937a-1b2a1e069de8",
+      "result_id": "2ecc5596-b9e6-41e9-9dfc-5c12901f2209"
+    },
+    {
+      "claim_id": "9543df6f-5e2d-4a7c-93df-89dee694304f",
+      "result_id": "2ecc5596-b9e6-41e9-9dfc-5c12901f2209"
+    },
+    {
+      "claim_id": "c7a20de6-0afc-49e6-bf04-9e7d1f8a4ac5",
+      "result_id": "2ecc5596-b9e6-41e9-9dfc-5c12901f2209"
+    },
+    {
+      "claim_id": "433a2665-426b-4920-b301-5c48761ce03e",
+      "result_id": "c0957823-5400-4ad9-b855-6fc4dbcb27b6"
+    },
+    {
+      "claim_id": "49ff8a55-d9b0-4269-b81c-15a71b938e15",
+      "result_id": "c0957823-5400-4ad9-b855-6fc4dbcb27b6"
+    },
+    {
+      "claim_id": "2d7c6d9d-14fb-47ad-9d30-9eeabcb6c9d8",
+      "result_id": "c0957823-5400-4ad9-b855-6fc4dbcb27b6"
+    },
+    {
+      "claim_id": "f45c55cc-8f56-4180-805e-fe673cf44f90",
+      "result_id": "c0957823-5400-4ad9-b855-6fc4dbcb27b6"
+    },
+    {
+      "claim_id": "6748a63e-760a-4070-ac41-9d8f8a3db494",
+      "result_id": "c0957823-5400-4ad9-b855-6fc4dbcb27b6"
+    },
+    {
+      "claim_id": "0ff6cacf-0432-4bb0-840f-a3545170df32",
+      "result_id": "c0957823-5400-4ad9-b855-6fc4dbcb27b6"
+    },
+    {
+      "claim_id": "be4cd458-ee00-4837-9453-2342741e2ae3",
+      "result_id": "c0957823-5400-4ad9-b855-6fc4dbcb27b6"
+    },
+    {
+      "claim_id": "fc949b36-1195-4531-afdc-29a5168d74b5",
+      "result_id": "4e2fda59-6aca-4ea6-a582-217cc449d7ef"
+    },
+    {
+      "claim_id": "d4cf84f4-9e5c-44fd-9a1d-e81cb0e1aa60",
+      "result_id": "4e2fda59-6aca-4ea6-a582-217cc449d7ef"
+    },
+    {
+      "claim_id": "98e68fc0-5638-49e3-8b24-878bc69d2662",
+      "result_id": "4e2fda59-6aca-4ea6-a582-217cc449d7ef"
+    },
+    {
+      "claim_id": "c9ab20d2-4cb2-4317-92d4-b8611cb6d87d",
+      "result_id": "4e2fda59-6aca-4ea6-a582-217cc449d7ef"
+    },
+    {
+      "claim_id": "7b13277e-2e37-41ca-a955-82d5fd2b1812",
+      "result_id": "4e2fda59-6aca-4ea6-a582-217cc449d7ef"
+    },
+    {
+      "claim_id": "2ad93cbf-2830-4e2d-8de4-342b08d639ff",
+      "result_id": "4e2fda59-6aca-4ea6-a582-217cc449d7ef"
+    },
+    {
+      "claim_id": "93fd1afa-8b08-4b7c-8837-212324c5c9b5",
+      "result_id": "4e2fda59-6aca-4ea6-a582-217cc449d7ef"
+    },
+    {
+      "claim_id": "75002450-6b43-4c34-a5f2-8a50af7a17e1",
+      "result_id": "4e2fda59-6aca-4ea6-a582-217cc449d7ef"
+    },
+    {
+      "claim_id": "2d2176b3-f761-478c-b102-06e119bef1a4",
+      "result_id": "4e2fda59-6aca-4ea6-a582-217cc449d7ef"
+    },
+    {
+      "claim_id": "d8a05352-8c31-41f6-865d-eb0208df1904",
+      "result_id": "4e2fda59-6aca-4ea6-a582-217cc449d7ef"
+    },
+    {
+      "claim_id": "08f42430-3461-40a6-9c42-729d33404ce6",
+      "result_id": "1132e0c5-4233-453e-8bbc-d8ebb12409a6"
+    },
+    {
+      "claim_id": "8f1db523-c5bc-47f0-9c7c-2e05a2c61b20",
+      "result_id": "1132e0c5-4233-453e-8bbc-d8ebb12409a6"
+    },
+    {
+      "claim_id": "d644edb3-47db-4750-a8a5-4df26a04d9f5",
+      "result_id": "1132e0c5-4233-453e-8bbc-d8ebb12409a6"
+    },
+    {
+      "claim_id": "08e24694-1d1f-4d92-9cb1-b187c9a79b26",
+      "result_id": "1132e0c5-4233-453e-8bbc-d8ebb12409a6"
+    },
+    {
+      "claim_id": "fc3f1e27-a289-4981-b98c-f4b4298f8b88",
+      "result_id": "1132e0c5-4233-453e-8bbc-d8ebb12409a6"
+    },
+    {
+      "claim_id": "d09d22ee-bb26-4fb8-8c03-0949ee2d9478",
+      "result_id": "12d2e523-9bec-4007-b42e-90cfb8881147"
+    },
+    {
+      "claim_id": "fba84e31-a958-4ea4-bc44-a600b1c11915",
+      "result_id": "12d2e523-9bec-4007-b42e-90cfb8881147"
+    },
+    {
+      "claim_id": "ddabd081-26d5-4507-bbbf-ca30524eeec9",
+      "result_id": "12d2e523-9bec-4007-b42e-90cfb8881147"
+    },
+    {
+      "claim_id": "a9caeaf3-9909-4d52-8b42-0d04b2c03d76",
+      "result_id": "12d2e523-9bec-4007-b42e-90cfb8881147"
+    },
+    {
+      "claim_id": "e873800f-c430-4d61-b481-8376ebbd2382",
+      "result_id": "12d2e523-9bec-4007-b42e-90cfb8881147"
+    },
+    {
+      "claim_id": "aeaeb51a-5634-473b-a862-f86022ed7b96",
+      "result_id": "12d2e523-9bec-4007-b42e-90cfb8881147"
+    },
+    {
+      "claim_id": "f8c12f31-368e-4536-95ba-9bd9cdc2bac1",
+      "result_id": "2a78ee7e-3ca9-4a51-a426-0452c56584a7"
+    },
+    {
+      "claim_id": "709542e8-92a1-4333-af1a-df5c19d7c80f",
+      "result_id": "2a78ee7e-3ca9-4a51-a426-0452c56584a7"
+    },
+    {
+      "claim_id": "12c3e3dd-8ced-45c5-88db-f5ac2ec8766c",
+      "result_id": "2a78ee7e-3ca9-4a51-a426-0452c56584a7"
+    },
+    {
+      "claim_id": "92a19b59-2cb8-4811-80b9-351c102f6c19",
+      "result_id": "ccdf12d3-d229-4845-bd35-f63f09385955"
+    },
+    {
+      "claim_id": "50d47421-856c-4507-9514-1a4c16623e52",
+      "result_id": "ccdf12d3-d229-4845-bd35-f63f09385955"
+    },
+    {
+      "claim_id": "9730e142-714c-46c3-baa2-5533b8c170fa",
+      "result_id": "ccdf12d3-d229-4845-bd35-f63f09385955"
+    },
+    {
+      "claim_id": "0b3b1978-dd33-4ac7-8a54-d8eed5cc1596",
+      "result_id": "ccdf12d3-d229-4845-bd35-f63f09385955"
+    },
+    {
+      "claim_id": "fb81b4eb-1cf1-47dd-8238-d8113af19760",
+      "result_id": "ccdf12d3-d229-4845-bd35-f63f09385955"
+    },
+    {
+      "claim_id": "795f5560-8d4a-4ec5-a4bd-1e3db91a4156",
+      "result_id": "ccdf12d3-d229-4845-bd35-f63f09385955"
+    },
+    {
+      "claim_id": "301d4e1b-28f2-4ddd-8bbe-5836c1beb05f",
+      "result_id": "ccdf12d3-d229-4845-bd35-f63f09385955"
+    },
+    {
+      "claim_id": "16c718d4-e6ca-4ddb-89ef-6b378172366b",
+      "result_id": "ccdf12d3-d229-4845-bd35-f63f09385955"
+    },
+    {
+      "claim_id": "382095ba-8e0b-441d-a866-a6270e77f05e",
+      "result_id": "930235d8-121a-40a7-8782-8937274f96d2"
+    },
+    {
+      "claim_id": "29f1e9a6-2ab6-43bd-a6f1-4384fd934c80",
+      "result_id": "930235d8-121a-40a7-8782-8937274f96d2"
+    },
+    {
+      "claim_id": "8361b452-2893-4963-b93f-dee6dee2971e",
+      "result_id": "930235d8-121a-40a7-8782-8937274f96d2"
+    },
+    {
+      "claim_id": "b481be97-059d-45e3-8c4e-d76366d2d62f",
+      "result_id": "930235d8-121a-40a7-8782-8937274f96d2"
+    },
+    {
+      "claim_id": "b14a2643-cddf-4bdd-a6d2-8fd05b2ec7b5",
+      "result_id": "930235d8-121a-40a7-8782-8937274f96d2"
+    },
+    {
+      "claim_id": "8f489678-7842-419d-b187-20226405f9de",
+      "result_id": "ae94686b-f029-4ce6-8f2b-03a938fe6abd"
+    },
+    {
+      "claim_id": "2981acd4-ba31-41d8-ba25-5cc2a9e1d98a",
+      "result_id": "ae94686b-f029-4ce6-8f2b-03a938fe6abd"
+    },
+    {
+      "claim_id": "c6ba54fd-1894-44a2-a2da-d64be1f12daa",
+      "result_id": "ae94686b-f029-4ce6-8f2b-03a938fe6abd"
+    },
+    {
+      "claim_id": "145d4d31-a820-4e15-a0b9-5a034759afae",
+      "result_id": "ae94686b-f029-4ce6-8f2b-03a938fe6abd"
+    },
+    {
+      "claim_id": "d760a2c4-f80f-44c6-a0de-fe61832d67d5",
+      "result_id": "ae94686b-f029-4ce6-8f2b-03a938fe6abd"
+    },
+    {
+      "claim_id": "71ac7935-7586-4655-9bcf-10f4fa5695ca",
+      "result_id": "ae94686b-f029-4ce6-8f2b-03a938fe6abd"
+    },
+    {
+      "claim_id": "add0ea71-0841-4147-a75c-1e3b0f8dd6fe",
+      "result_id": "ae94686b-f029-4ce6-8f2b-03a938fe6abd"
+    }
+  ],
+  "comparisons": []
+}

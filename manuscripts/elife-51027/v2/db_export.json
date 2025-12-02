@@ -1,0 +1,2057 @@
+{
+  "submission": {
+    "id": "c7df4e91-6f8d-4df6-a493-8d641fb8f415",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T17:19:20.270580Z",
+    "updated_at": "2025-12-02T17:19:20.270580Z"
+  },
+  "content": [
+    {
+      "id": "7241860f-3a67-4be3-a249-0f087f9e5205",
+      "submission_id": "c7df4e91-6f8d-4df6-a493-8d641fb8f415",
+      "content_type": "manuscript",
+      "content_text": "# Estimates of the global burden of Japanese encephalitis and the impact of vaccination from 2000-2015\n\n## Authors\n\n- Tran Minh Quan<sup>1</sup> ([ORCID: 0000-0003-3337-161X](https://orcid.org/0000-0003-3337-161X))\n- Tran Thi Nhu Thao<sup>1</sup>\n- Nguyen Manh Duy<sup>1</sup>\n- Tran Minh Nhat<sup>1</sup> ([ORCID: 0000-0002-9500-8341](https://orcid.org/0000-0002-9500-8341))\n- Hannah Clapham<sup>1</sup> ([ORCID: 0000-0002-2531-161X](https://orcid.org/0000-0002-2531-161X)) \u2020\n\n### Affiliations\n\n1. Oxford University Clinical Research Unit, Wellcome Trust Asia Program Ho Chi Minh City Viet Nam\n2. Biological Science Department, University of Notre Dame Notre Dame United States\n3. Virology Department, Institute of Virology and Immunology, University of Bern Bern Switzerland\n4. Centre for Tropical Medicine and Global Health, Nuffield Department of Medicine, University of Oxford Oxford United Kingdom\n5. Saw Swee Hock School of Public Health, National University of Singapore Singapore Singapore\n\n\u2020 Corresponding author\n\n## Abstract\n\nJapanese encephalitis (JE) is a mosquito-borne disease, known for its high mortality and disability rate among symptomatic cases. Many effective vaccines are available for JE, and the use of a recently developed and inexpensive vaccine, SA 14-14-2, has been increasing over the recent years particularly with Gavi support. Estimates of the local burden and the past impact of vaccination are therefore increasingly needed, but difficult due to the limitations of JE surveillance. In this study, we implemented a mathematical modelling method (catalytic model) combined with age-stratifed case data from our systematic review which can overcome some of these limitations. We estimate in 2015 JEV infections caused 100,308 JE cases (95% CI: 61,720\u2013157,522) and 25,125 deaths (95% CI: 14,550\u201346,031) globally, and that between 2000 and 2015 307,774 JE cases (95% CI: 167,442\u2013509,583) were averted due to vaccination globally. Our results highlight areas that could have the greatest benefit from starting vaccination or from scaling up existing programs and will be of use to support local and international policymakers in making vaccine allocation decisions.\n\n## Introduction\n\nJapanese encephalitis (JE) is caused by Japanese encephalitis virus (JEV) \u2013 an arbovirus that belongs to the flavivirus genus, family flaviviridae. The main vectors are mosquitoes of the Culex genus, especially Culex tritaeniorhynchus. These mosquitoes thrive in rice-paddy fields (Buescher and Scherer, 1959; Self et al., 1973). JEV has a wide range of vertebrate hosts, noticeably the amplifying hosts are thought to be pigs and wading birds (SAGE Working Group on Japanese encephalitis vaccines, 2014). Humans are dead-end hosts as viremia is not believed to reach levels that are infectious to mosquitoes (SAGE Working Group on Japanese encephalitis vaccines, 2014). Only 1 in 25 to 1 in 1000 infections result in symptoms (Vaughn and Hoke, 1992; SAGE Working Group on Japanese encephalitis vaccines, 2014). However, the mortality rate of symptomatic cases is high - around 20\u201330% (Fischer et al., 2008), and around 30\u201350% of survivors experience significant neurological and psychiatric sequelae (Fischer et al., 2008).\n\nThe \ufb01rst JE case was documented in Japan in 1871 (WHO, 2015). In 1924, a first JE outbreak in Japan caused more than 6, 000 cases and 3, 000 deaths in 6 weeks (Solomon, 2006). Several outbreaks occurred subsequently in Asia (Hullinghorst, 1951; Erlanger et al., 2009; Barzaga, 1990). More recently, in 2005 large outbreaks occurred in northern India and Nepal, with 5000 cases and 1300 deaths (Solomon, 2006). Currently, 24 Asia-Paci\ufb01c countries are thought to be endemic for JE, with 3 billion individuals at risk of infection (WHO, 2015).\n\nThe first vaccine was an inactivated mouse brain vaccine produced in Japan, used worldwide for 50 years. Although vaccine production halted in 2006, similar inactivated mouse brain vaccines are still produced locally in South Korea, Taiwan, Thailand and Vietnam (Yun and Lee, 2014). The use of the next vaccine, an inactivated a Vero cell vaccine (SAGE Working Group on Japanese encephalitis vaccines, 2014), has been gradually replaced (since 1988) by a live attenuated vaccine (SA 14-14-2) produced in China, with PATH support. SA 14-14-2 is now widely used in Asia and funded by Gavi which has led to a great increase in vaccination. This vaccine requires only a single dose, is cheap to produce, and is safer than the mouse brain vaccine (SAGE Working Group on Japanese encephalitis vaccines, 2014). In addition, a live attenuated chimeric vaccine was first licensed in Australia in 2012 (SAGE Working Group on Japanese encephalitis vaccines, 2014).\n\nWHO recommends two JE surveillance systems that are important for monitoring burdens of JE and changes over time (WHO, 2019), (i) a subnational system with sentinel hospitals, or (ii) case-based nationwide surveillance. Each country implements one of these systems depending on available resources (Hills et al., 2009). WHO recommends diagnosis using JEV-speci\ufb01c IgM antibody-capture enzyme-linked immunosorbent assay (MAC-ELISA) in CSF at two time points (Donadeu et al., 2009; Burke and Leake, 1988). Serum samples can be used, but false positives may result from cross-reactivity with other flaviviruses or vaccination (Solomon et al., 1998; Hills et al., 2009). Other tests that can confirm JE are plaque reduction neutralizing (PRNT), haemagglutination inhibition (HI), immunohistochemistry or immunofluorescence assay, reverse transcription polymerase chain reaction (RT-PCR) or virus isolation (Hills et al., 2009), though these are not often used.\n\nThe previous estimate of annual global JE cases was 67,900 with 13,600\u201320,400 deaths (Campbell et al., 2011). For this estimate a systematic review in 2011 collated case incidence data from endemic JE countries. Countries were then stratified into 10 incidence groups (Group A, B, C1-2 and D-I) based on geographic, ecological and vaccine program similarities. The systematic review resulted in 12 key studies, which were then used to infer the incidence rate (IR) of the 10 incidence groups. However the estimation had some limitations; the surveillance quality of the 12 key studies varied, and as the case incidence rate combines both the infection rate and vaccination, (e.g. a low risk of infection with no vaccination could have a similar incidence as a high risk of infection but with high vaccination coverage), it is not possible to estimate the impact of vaccination.\n\nThe use of age-stratified case data to infer the FOI has been of use recently for dengue (Imai et al., 2016; Cattarino et al., 2020; Rodriguez-Barraquer et al., 2019). The advantage of this method is that the age distribution will be insensitive to differential reporting or tests used in different places, and the important information from the age distribution remains; the higher the rate of infection, the earlier in life individuals will acquire infection. By\u00a0fitting models of the infection process (including acquisition of immunity) to this age-stratified data we can quantify this rate of acquiring infection,\u00a0known\u00a0as the force of infection (FOI) (Hens et al., 2010).\n\nPoor clinical outcomes and lack of specific treatment makes JE prevention a priority. Vaccination is the most effective method of prevention, however it is difficult to decide where vaccination should be implemented or to estimate the quantitative impact of vaccination (Fischer et al., 2008). In Nepal, one study estimated 3,011 JE cases were prevented in vaccinated districts from 2006 to 2012 (Upreti et al., 2017). Another study in Sarawak Malaysia estimated a 61% reduction in JE cases after the vaccination program, where climate effects were not taken into account, and 45% when the effects of climate were included (Impoinvil et al., 2013). The methods used in both these papers require good surveillance data before and after vaccination, which, though data are improving, are currently not widely available. Hence, new approaches are needed to estimate burden and vaccine impact.\n\nIn this study, we provide updated global JE burden and vaccination impact estimates using a modelling method which helps overcome some of the limitations of sparse and variable surveillance data. In addition, by simulating the model with and without the undertaken vaccination programs we are able to estimate the impact of vaccination on the number of global JE cases to date and identify areas that would benefit most from future vaccination.\n\n## Results\n\nThere are two main stages to our analysis, summarized in flowcharts in Figure 1. In the fstage\u00a0I, we conducted a systematic review to collate age-stratified case data and a literature review to obtain vaccination information. We then fit a model to this data to estimate the transmission intensity or force of infection (FOI) for each study. In stage\u00a0II, we extrapolated the FOI from our previous estimates\u00a0to all endemic areas. Using the processed population and vaccination data in all endemic areas, we used the model to generate burden quantities (cases) in two scenarios, with or without the JE vaccination programs that have been implemented.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/51027/elife-51027-fig1-v2.jpg)\n\n**Figure 1.:** In Stage I we estimate FOI (force of infection) of all studies\u2019 catchment area. In Stage II we then used the FOI estimates to generate global burden. Abbreviation: WPP: World Population Prospects.\n\n### Systematic review\n\nA systematic review on October 11th\u00a02017 yielded 2337 initial results (Figure 2). 407 relevant studies were obtained after eliminating 1931 irrelevant titles and abstracts that were about molecular biology, policy, entomology, hosts other than humans, or were review papers. The obtained studies mainly comprised of reports of JE surveillance or epidemiological studies in one specific location. We also included modelling, economic evaluation or vaccine program assessment studies for possible eligible data sources in the references. We retrieved and read 261 full-text papers. Most of the papers that we could not access were either old or not in English. In the systematic review process, a further four eligible studies were retrieved from references. 202 papers were then excluded as they did not contain age-stratified case data, and another 14 papers were also excluded because they had limited samples (less than 15 cases) or the study\u2019s catchment area was not clear. Another four datasets from JE national reports were collated from Taiwan, Japan, and Sri Lanka. Finally, we had 53 studies that contained age-stratified case data (Figure 2). 42 of the 53 studies (79%) contained data from after 2000 only, 7 from before 2000 only and three from both time periods (Figure 2\u2014source data 1). 34 studies (64%) had data from 1 to 4 year time periods, six studies had data for\u00a0periods\u00a0of between 5 and 9 years, and 11 studies had data for more than 10 years. The majority of the studies used the WHO JE case definition: JE IgM antibody in CSF or serum as confirmed by MAC-ELISA on patients with acute encephalitis syndrome. In the majority of studies patients were recruited from a sentinel hospital surveillance system, though these ranged in size from one to several hospitals. For studies with a consistent catchment area but for which data was collected in multiple years, we aggregated the age-stratified case data across years. Further details of the selected studies and data, including about catchment areas, sample collection methods, and vaccination programs are in Figure 2\u2014source data 1.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/51027/elife-51027-fig2-v2.jpg)\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/51027/elife-51027-fig2-figsupp1-v2.jpg)\n\nWe obtained the vaccination information from three main sources: literature review, WHO, and Gavi (Figure 3\u2014source data 1). Campaign vaccination information was mainly from Gavi and routine vaccination was from WHO, while the literature contains both. When there were disagreements between the different vaccination information sources, we chose to use the information from the literature review. The total vaccinated population in each country from 2000 to 2015 using information obtained from this data is shown in Figure 3 and Figure 3\u2014source data 1. This information was included as a prior in the model fitting (see Figure 4\u2014source data 3).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/51027/elife-51027-fig3-v2.jpg)\n\n**Figure 3.:** If the country is not listed there is no vaccination reported. Abbreviations: AUS: Australia, CHN: China, IND: India, JPN: Japan, KHM: Cambodia, KOR: South Korea, LAO: Laos, LKA: Sri Lanka, MYS: Malaysia, NPL: Nepal, PRK: People\u2019s Republic of Korea, THA: Thailand, TLS: Timor-Leste, TWN: Taiwan, VNM: Vietnam. The supplementary file: Figure 3\u2014source data 1 lists the vaccination data and the sources for each country.\n\n### Force of infection (FOI) estimation from collated age-stratified data\n\nFrom 53 studies, we made FOI estimates using the catalytic model from 53 unique catchment areas in 15 countries (Figure 4). Force of infection (FOI) is the per capita rate at which susceptible individuals are infected by an infectious disease and a catalytic model estimates the FOI from age- stratified case data (Hens et al., 2010). All the catalytic models converged well (see convergence plots in Figure 4\u2014source data 4) and fit well to data in all but one study (Figure 4\u2014source data 2\u00a0- 95% CIS of model output and case data shown). Our FOI estimates varied from 0.001 (95% CI: 0.000 - 0.002) in Japan to 0.507 (95% CI 0.419 - 0.582) in Guigang in China. Besides those extreme values, FOI were generally between 0.05 and 0.2, with a median of 0.09 (Figure 4). In this model-fitting the reporting rate is the proportion of all infections that are reported. The reporting rate includes both the proportion that are symptomatic and the proportion of those cases that present at each hospital or be counted in each surveillance system, so it is the proportion of infections reported. We therefore observed a wide variation in estimated reporting rates $\u03c1$ between studies (Figure 4\u2014figure supplement 1). This number is not used in the estimates of cases in the next section. For China, India, Japan, and Nepal, the posterior estimates of the proportion of the population in study $k$ and age group $i$ that remained susceptible after vaccination $s_{k,i}$, for some age groups was slightly different to the prior population vaccination that was included in the model fitting (Figure 4\u2014source data 3). When the posterior and prior did not agree, for most datasets this suggested missing vaccination data with the prior saying higher susceptibility than the posterior, however for some areas in India the reverse was estimated.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/51027/elife-51027-fig4-v2.jpg)\n\n**Figure 4.:** The colors are coded after the endemic areas as in the legend.\u00a0Abbreviation: AUS: Australia, BGD: Bangladesh, CHN: China, IDN: Indonesia, IND: India, JPN: Japan, KHM: Cambodia, KOR: South Korea, LAO: Laos, LKA: Sri Lanka, MYS: Malaysia, NPL: Nepal, PHL: Philippines, RUS: Russia, SGP: Singapore, THA: Thailand, TWN: Taiwan, VNM: Vietnam. Countries have low, medium or high following the classification in Campbell et al., 2011.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/51027/elife-51027-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** For each study, the dots with vertical lines are the mean reporting rate estimated from the model with 95% credible interval. The colors represent the endemic areas as seen in the legend.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/51027/elife-51027-fig4-figsupp2-v2.jpg)\n\n### Inference of force of infection for all endemic areas\n\nBased on the rules in the methods, we are able to infer FOI from available data for 24 endemic areas (Figure 4\u2014source data 1, and Figure 4) from across the Campbell et al. groupings. In the Campbell et al. grouping, FOI is assumed to be homogeneous across each country, except Indonesia, China and Nepal with low and high groups, and India with a low, medium and high transmission groups. We kept this grouping for our work except for Indonesia, as the collated data for Indonesia was combined across various provinces across both the low and high incidence areas, we assumed the FOI to be the same in both areas. There were no studies from countries in the Campbell et al., 2011 group B (Australia, Pakistan, North Korea, Russia, Singapore and the low incidence region in India). Since this group contains extremely low incidence areas, the FOI was assumed to have a lognormal distribution $ln(X)\u223cN(0.01,1)$ (see Figure 4).\n\n### Burden and vaccine impact estimation\n\nWe estimate the burden from 2000 as the majority of studies used to estimate FOI were from after this time period. We estimate that from 2000 to 2015, there were 1,976,238 (95% CIs: 1,722,533\u20132,725,647) JE cases globally. By including known annual vaccination information in the catalytic model we estimate that in the same period had there been no vaccination there would have been 2,284,012 (95% CIs: 1,495,964\u20133,102,542) JE cases. Therefore we estimate that vaccination programs have prevented 307,774 JE cases globally (95% CI: 167,442\u2013509,583) from 2000 to 2015 and vaccination programs similarly prevented 74,769 deaths from JE (95% CIs: 37,837\u2013129,028). We estimate the greatest impact of vaccination from 2005 to 2010 due to large increase in vaccination in China in this time, and the impact of vaccination became more obvious over time (Figure 5). In 2015, we estimate vaccination reduced the number of cases globally by around 45,000 (from 145,542 (95% CI: 96,667\u2013195,639) to 100,308 (95% CI: 61,720\u2013157,522) (Figure 5).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/51027/elife-51027-fig5-v2.jpg)\n\n**Figure 5.:** The two scenarios, with or without vaccination, are also shown in blue and red respectively. In all areas, the boxplots represent the estimated cases with 95% credible intervals (also shown 1 st quartile, 3rd quartile) with the solid lines showing the mean value of each interval.\u00a0Abbreviation: AUS: Australia, BGD: Bangladesh, BRN: Brunei, BTN: Bhutan, CHN: China, IDN: Indonesia, IND: India, JPN: Japan, KHM: Cambodia, KOR: South Korea, LAO: Laos, LKA: Sri Lanka, MMR: Myanmar, MYS: Malaysia, NPL: Nepal, PAK: Pakistan, PHL: Philippines, PNG: Papua New Guinea, PRK: North Korea, RUS: Russia, SGP: Singapore, THA: Thailand, TLS: Timor-Leste, TWN: Taiwan, VNM: Vietnam.\n\nWe estimated the highest number of cases in the high endemic area of China (around 40,000 annual cases in the no vaccination scenario and around 20,000 annual cases in vaccination scenario), and medium or high endemic areas in India (around 20,000 annual cases in no vaccination scenario and 15,000 annual cases in vaccination scenario for each area in recent years). On the contrary, areas like Australia, Brunei, Bhutan and Russia were estimated to have less than 100 annual cases with or without vaccination (Figure 5, Figure 6). All visualized burden estimates for every years and areas can be found in our interactive map (Duy, 2018).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/51027/elife-51027-fig6-v2.jpg)\n\n**Figure 6.:** Each endemic area is shaded in proportion to the area\u2019s estimated cases in thousand as seen in the legend, with yellow shade is the lowest value and red shade is the highest value. The map on the left is the estimates from no vaccination scenario, and the right is from the vaccination scenario. The maps were made by leaflet package in R (Joe et al., 2017).\n\nVaccination impact can be observed in 19 areas where vaccination has been used (Figure 5). In areas like the low and high endemic area in China, medium and high endemic area in India, Cambodia, Laos, Nepal, North Korea, and Timor-Leste though vaccination started recently, we estimate that the programs have achieved significant cases averted. Indeed, in the high endemic area in China, the routine vaccination programs only started in 2008 but contributed the most to the global cases reduction, with around 20,000 cases averted in China in 2015. We also observed a clear difference in cases between vaccination and no vaccination scenario in areas with intensive vaccination programs such as South Korea, Sri Lanka, Thailand, Taiwan, and Vietnam. For Japan, Australia, and Malaysia, though vaccination began a long time ago, we estimated there has been minimal vaccine impact. From the data we collated, no vaccine programs had occurred in in Bangladesh, Brunei, Bhutan, the low and high endemic areas in Indonesia, Myanmar, Pakistan, Philippines, Papua New Guinea, Russia, or Singapore so we\u00a0estimated\u00a0of course\u00a0vaccination has had no impact.\n\n### Sensitivity analysis\n\nTo assess the impact of uncertainties in our data and assumptions we performed extensive sensitivity analyses. Sensitivity analyses were conducted for endemic areas with uncertain vaccination coverage data, where both national and subnational data were available (China, India and Nepal), or where we did not have any studies. The majority of the results showed minimal changes compared to our original estimates (Figure 5\u2014source data 1). Cases estimated from Taiwan subnational data were higher by about 200 to 400 cases before 2004 (Figure 5\u2014source data 1). In some areas, we observed significant differences in the estimated cases when the vaccination coverage was changed: when the vaccination coverage reduced by 10% and 30% in Sri Lanka or by 30% in Thailand and Taiwan, the mean values of estimated cases increase by around 40, 100, 300, and 220 respectively (Figure 5\u2014source data 1). However these changes account for a small fraction of our original global estimates. Sensitivity analysis varying the assumed 100% vaccine effectiveness to 90% and 70% showed global case estimates changed minimally with this assumption (Figure 5\u2014source data 1). In addition due to concerns about possible changes in FOI over times, we also tested our assumption of constant FOI by fitting multiple-year data to a time-dependent catalytic model. Overall, the annual FOI estimates are comparable with the constant FOI (Figure 5\u2014source data 1).\n\n## Discussion\n\nIn this paper, we updated the JE burden estimates with a mathematical modelling method using data we collated from a systematic review. We estimated that in 2015 there were around 100,000 JE cases globally. In addition, we estimate that vaccination programs averted around 45,000 JE cases in 2015.\n\nFor JE, since humans are dead-end hosts and therefore vaccination does not lead to herd immunity, the FOI we estimate represents the constant spread of the disease from the animal reservoirs to humans. This spread depends on epidemiological factors related to JE transmission such as climate, rural-urban, mosquito distribution (especially Culex tritaeniorhynchus), and pig and rice field distributions (Le Flohic et al., 2013). This explains why our estimated FOI varies widely. Looking crudely at the pig density (Nicolas and Gilbert, 2010) and a Culex tritaeniorhynchus probability maps of Miller et al., 2012 and Longbottom et al., 2017 there appears to be a broad correlation of these factors with our estimates. The high FOI estimated in the south of China, Vietnam, and Philippines is consistent with the high pig density and high probability of Culex in these areas (for Vietnam and Philippines with Miller et al., 2012 only). We also estimated high FOI in India and Indonesia; however these countries only have high probability of Culex (in Miller et al., 2012 but not Longbottom et al.) but low pig density\u00a0in\u00a0Longbottom et al., 2017. This suggests that other potential animal reservoirs may contribute to the transmission in these countries, likely the wading bird or even poultry, although current evidence is limited (Lord et al., 2015). In Taiwan and South Korea the current estimated FOI is lower compared to other areas, respectively 0.061 (95% CI 0.013\u20130.093), and 0.041 (95% CI 0.026\u20130.057) despite these areas having high probability of Culex mosquito and high pig density. These countries have had high JE burdens in the last 40 years, but we do not estimate so for 2000\u20132015. This could be due to lack of recent data, or perhaps suggests urbanization, which reduces the proximity of humans to pig farms and rice fields (where the mosquitoes thrive), may play an important role in lowering transmission. This could also be due to uncertainties in the long term vaccination information in these areas. Further work will use environmental covariates to gain estimates of FOI on a smaller spatial scale and over time. In addition, changes in these covariates into the future should be considered in estimates of the future vaccine impact.\n\nA strength of our Bayesian approach was the possibility to include prior information on vaccination, but also assess whether this was consistent with the ages distribution of observed cases. For China and Japan we estimated lower susceptible proportions after vaccination in certain age groups compared to calculated proportions from the available data. This suggests that there are a large number of immunized people in certain age groups due to past vaccination, for which we did not have information. In Nepal and India, we also observed differences between the data and estimated susceptible proportion after vaccination, though the vaccination information for these countries was more readily available. There was still an impact of vaccination- but expected impact on the age distribution in the model fitting was not as extreme as the data we collated would have suggested. For India, this artefact as picked up by the model is consistent with data on vaccine efficacy and vaccination coverage data from India. From 2006 to 2011, SA 14-14-2 vaccine was used in India for campaigns. Though the vaccine reported nearly 100% efficacy in vaccine trials and case-control studies (Kumar et al., 2009; Bista et al., 2001), the efficacy in India was reported to be as low as 30% to 40% (Vashishtha and Ramachandran, 2015; Tandale et al., 2018) and lower seroconversion has also been reported in India (Singh et al., 2015). A previous evaluation of vaccination coverage also showed that the vaccination coverage data in India was lower than reported (Murhekar et al., 2017). Further studies are needed to explore whether there are different vaccine efficacies in different places, particularly India, and to explore possible explanations for this. One possible explanation could be cross-reactive immunity to other flaviviruses, or differences in circulating JE genotypes.\n\nUsing the FOI from 30 endemic areas, we projected the regional and global JE burdens as well as the vaccine impact. By region, our burdens estimates are highest in China and India, which aligns with previous literature (Heffelfinger et al., 2017). Our global estimate of around 100,000 cases annually is about 1.5 times higher than the previous estimate of around 70,000 cases (Campbell et al., 2011). Similar patterns are seen for the comparison area by area, in which our case number estimates are either higher than or comparable to the previous estimates (Table 1). It is not surprising that our estimates are higher, since our method more robustly takes into account under-reporting and different surveillance quality. In addition, the numbers we reported here are time-dependent and not static because our estimates include population changes and the progression of vaccination programs over time.\n\n**Table 1.**\n Comparing annual case estimates from Campbell et al. to our estimates for the year 2015 (as this was the year of estimation of the previous estimates).Group A: Taiwan, Japan, South Korea; Group B: Australia, low endemic area in India, Pakistan, Russia, Singapore; Group C1: high endemic area in China; Group C2: low endemic area in China; Group D: Cambodia, high endemic area in Indonesia, Laos, Sabah and Labuan in Malaysia, Myanmar, Philippines, Timor-Leste; Group E: low endemic area in Indonesia, Peninsular Malaysia, Papua New Guinea; Group F: high endemic area in India, high endemic area in Nepal; Group G: Bangladesh, Bhutan, Brunei, low endemic area in Nepal; Group H: Medium endemic area in India, Sarawak in Malaysia, Sri Lanka, Thailand, Vietnam; Group I: North Korea.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Incidence Group</th>\n      <th>Case numbers: Previous estimates</th>\n      <th>Case numbers: Our no vaccination scenario Mean estimates (and 95% Cis)</th>\n      <th>Case numbers: Our vaccination scenario Mean estimates (and 95% Cis)</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>A</td>\n      <td>6</td>\n      <td>2,307 (1,175\u20133,497)</td>\n      <td>863 (453\u20131,469)</td>\n    </tr>\n    <tr>\n      <td>B</td>\n      <td>2</td>\n      <td>2595 (388-6,243)</td>\n      <td>2540 (381-6,071)</td>\n    </tr>\n    <tr>\n      <td>C1</td>\n      <td>33,849</td>\n      <td>38,789 (26,128\u201351,482)*</td>\n      <td>22,013 (3,778\u201342,375)*</td>\n    </tr>\n    <tr>\n      <td>C2</td>\n      <td>28</td>\n      <td>10,752 (7,297\u201314,152)</td>\n      <td>7,094 (4,230\u201310,579)</td>\n    </tr>\n    <tr>\n      <td>D</td>\n      <td>7917</td>\n      <td>13,710 (9,333\u201318,135)</td>\n      <td>13,700 (9,325\u201318,125)</td>\n    </tr>\n    <tr>\n      <td>E</td>\n      <td>3645</td>\n      <td>12,932 (8,804\u201317,059)</td>\n      <td>12,932 (8,804\u201317,059)</td>\n    </tr>\n    <tr>\n      <td>F</td>\n      <td>12,350</td>\n      <td>22,514 (1,503\u201336,423)*</td>\n      <td>17,304 (846-27,930)*</td>\n    </tr>\n    <tr>\n      <td>G</td>\n      <td>1358</td>\n      <td>9,538 (6,322\u201312,881)</td>\n      <td>9,277 (6,133\u201312,548)</td>\n    </tr>\n    <tr>\n      <td>H</td>\n      <td>8072</td>\n      <td>29,942 (17,431\u201340,933)</td>\n      <td>23,201 (13,647\u201331,542)</td>\n    </tr>\n    <tr>\n      <td>I</td>\n      <td>670</td>\n      <td>465 (77\u20131,022)*</td>\n      <td>433 (74\u2013912)*</td>\n    </tr>\n    <tr>\n      <td>Total</td>\n      <td>67,897</td>\n      <td>143,545 (94,469 \u2013 194,940)</td>\n      <td>109,358 (65,968\u2013156,669)</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n  </tbody>\n</table>\n\n_*Our estimates are comparable to the previous estimates._\n\nThough our methods are more robust, collating 53 studies (an additional 41 from the studies used in the previous burden estimate) (Campbell et al., 2011), and using age-stratified data to circumvent issues with reporting variation, there are still some limitations. As in the previous estimates of JE burden (Campbell et al., 2011), we made inferences for the whole country based on data from a few studies. However in our method we sampled from the FOI estimates from all studies to account for some of this uncertainty and variation. In addition, as in previous studies, a limitation is that we inferred the incidence metric (in our case, FOI) for areas without data, from FOI from other areas, based on previous classification of transmission in these countries. However, our sensitivity analysis shows that this does not alter the global burden estimates greatly, though it may affect the country-specific burden estimates. (Campbell et al., 2011). Our future work incorporating the epidemiological factors into machine learning algorithms to extrapolate the FOI on smaller spatial scales will help in refining these estimates in the future. Similarly, we assume transmission is constant over time. Further work fitting models with time varying forces of infection as well as looking at covariates of infection that are changing over time, will be necessary for future refinements of these estimates. An additional limitation of our analysis is the uncertainty in the proportion of infections that lead to disease, we sample from this range, and this uncertainty is included in our uncertainty analysis. Further studies, for example in cohorts may enable better estimates of this proportion. In addition, we assumed the FOI is constant across age, only susceptibility changes due to acquistion of immunity, further assessment of seroprevalence studies may be able to assess this further. In addition, though our method accounts for reporting rates within these studies, future work should assess the impact of cross-reactivity and further issues with diagnosis on the estimates, such as including AES data in the fitting. In addition, we did not include papers not in English in our literature review. The papers we could not include were all from China and so further work including these papers should enable better estimation of the FOI in China.\n\nWe estimated only the impact of vaccination on cases from 2000 to 2015. Because the impact of vaccination will continue into the future as vaccinated individuals remain protected, our estimate will be an underestimate of the total impact of vaccination. In addition, our estimates will be an under-estimate of total vaccine impact as in some places vaccination programs have been running before 2000, and so vaccination had a large impact before 2000. However there is limited information in order to estimate transmission intensity before this time, so we focused our work on 2000\u20132015. In this paper, we focused on cases (and to some extent deaths) from JE. However because a large number of cases have long-term sequelae after JE infection, focus just on case numbers does not describe fully the total burden of JE. Future work will refine the estimates of the proportion of individuals that die and that experience different long-term sequelae, to generate update our model to estimate JE Disability-Adjusted Life Year (DALY), particularly relevant for use in cost-effectiveness analyses for introduction of vaccination into new locations.\n\nSince JE vaccination does not produce herd immunity, the transmission intensity can only be reduced by influencing the animal transmission cycle. Previous attempts to break the transmission cycle have been vector control and vaccination in pigs and wading birds, and this has been considered in modelling work (Khan et al., 2014). However they were either ineffective or up to now have been deemed economically and logistically intensive (Fischer et al., 2008). Further work considering pig vaccination in the context of these updated estimates of the burden of JE should be considered. We estimate that despite not interrupting transmission, human vaccination can be an effective strategy to reduce JE case numbers. This can be seen from the estimate that the majority of the reduction in global burden is due to the routine vaccination program in China from 2008. We estimate that India, Timor-Leste, and Vietnam also have high transmission intensity, and residual cases despite vaccination, and therefore could further benefit from scaling-up the existing vaccination program (Figure 3\u2014source data 1). We estimated high transmission intensity in Indonesia, Papua New Guinea, and Philippines where there are no current vaccination programs, suggesting that vaccination in these areas should be a future priority. Future smaller scale estimates will support decisions on where within these countries could be best targeted for vaccination. For areas with a long history of JE vaccination (see Figure 3\u2014source data 1). such as South Korea, Sri Lanka, Thailand and Taiwan, (Figure 4), we estimate a substantial vaccine impact (Figure 5), though with cases still occurring. In other countries with a long vaccination history however, we estimate a minimal impact of vaccination (Figures 4 and 5), due to low estimated transmission intensity in Japan, low vaccination coverage in Malaysia, or both in Australia (though age-stratified data were not available in Australia). Our estimate of transmission intensity for Japan also has great uncertainty, as half the studies included data pre-2000 and we were able to find limited information on the long-running vaccination program there. In addition, there are limitations to how well our method will work, given the high rate of vaccination there. This may mean we are under-estimating the impact of vaccination in Japan. Further work with serological data both from humans and animals and further exploration of the drivers of JE transmission will help refine this estimate.\n\nAssessing JE disease burden and vaccination program performance is important though difficult due of the lack solid surveillance programs worldwide. In our paper, we are able to estimate the disease burden and vaccine impact using a modelling method that is able to overcome some of the limitations of current surveillance. We estimate annually there are still 100,000 cases of JE in Asia, making a 2/3 of all cases of this severe but vaccine preventable still not being averted. The majority of remaining cases are focussed in countries with still developing healthcare systems. Given there is a cheap vaccination now available, our results will help with the rational assessment of JE vaccination cost and benefit for each country and will help guide Gavi and other international and national public health agencies in making decision on their future investment into JE vaccination.\n\n## Materials and methods\n\n### Systematic review\n\nWe performed a systematic review to find all available age-stratified case data for Japanese encephalitis in PubMed. We used the search terms \u2018epidemiology\u2019 or \u2018incidence\u2019 or \u2018prevalence\u2019 or \u2018public health\u2019 or \u2018surveillance\u2019 or \u2018distribution\u2019 in all fields with \u2018Japanese encephalitis\u2019 in the title or abstract. All titles and abstracts were screened and we selected those in which the study contained age-stratified case data. We retrieved the full-texts for these selected abstracts and the abstracts were read by two independent reviewers to extract the age-stratified case data. From each study we also collected other information about the catchment areas, sample collection methods, diagnosis tests, and regional vaccination programs from the papers. A final consensus was reached for the final list of eligible full-texts. If abstracts were not available, the two independent individuals also tried to access and examine the full-texts. We also searched online for age-stratified case data from national JE surveillance reports.\n\nWe obtained vaccination information either from the study itself or from the literature review. Based on the review of JE vaccination programs reported from the World Health Organization (WHO) (Heffelfinger et al., 2017), we found that previous vaccination programs had occurred in 13 countries. We then undertook a literature search to find all vaccination information (target age group, vaccination coverage, types of vaccine used, years of vaccination) for these countries. We also collated historical routine vaccination program from country reported administrative doses data time series (from 2000 to 2015) compiled from WHO-UNICEF Joint Reporting (World Heath Organization, 2018) and additional data from Gavi.\n\n### Force of infection estimation\n\nForce of infection (FOI) is the per capita rate at which susceptible individuals are infected by an infectious disease. In this study, we used a basic Muench\u2019s catalytic model (Muench, 1958) to estimate the constant age and time independent FOI using the case data we extracted during the systematic review process. A similar approach has been used to estimate the global dengue transmission intensity (Imai et al., 2016; Rodriguez-Barraquer et al., 2019). As humans are dead-end hosts for JE, the FOI represents the FOI from the animal reservoir, and therefore is not impacted by human vaccination. This means vaccination can be included in the model simply as a removal of susceptible individuals by vaccination (or a reduction in risk of infection in this vaccinated group depending on vaccine efficacy) and will not alter the FOI. Therefore in this model, individuals can become immune to infection either by natural infection (depending on the force of infection) or vaccination.\n\nTo estimate the FOI (notated as $\\lambda_{k}$), for each study $k$, taking into account vaccination and reporting rate for each study $k$, the modelled number of cases in a specific age group $i$ is:\n\n$E_{k,i}=P_{k,i}pop_{k,i}s_{k,i}\u03c1_{k}$,\u00a0where\n\n$$\nP_{k,i}=(e||\u2212\\lambda_{k}a_{k,i}^{l}\u2212e^{\u2212\\lambda_{k}(a_{k,i}^{u}+1)})\n$$\n\nWhere $P_{k,i}$\u00a0estimates the incident rate of infection in each age group $i$ (with lower and upper $a_{k,i}^{l}$ and $a_{k,i}^{u}$ respectively), accounting for force of infection and susceptibility in that age group due to natural infection before this age.\u00a0$pop_{k,i}$ is the population size in each age group $i$ of each study $k$, calculated from World Population Prospects 2017 data (United Nations-Department of Economic and Social Affairs-Population Division, 2017). $s_{k,i}$ is the estimated susceptible proportion in each age group $i$ after vaccination for population in study k. The prior distribution of $\\lambda_{k}$ was an uninformative non-negative, normal distribution, $\\lambda_{k}\u223cNormal(0,1000)$. To include the uncertainty in the vaccination information, we used an informative prior: $s_{k,i}Beta(\u03a6(1\u2212s_{k,i}^{\u2032}),\u03a6s_{k,i}^{\u2032})$, with $s_{k,i}^{'}$ is the proportion of the population that remain susceptible after vaccination in age group $i$ of study $k$, calculated from the vaccination information and the population demographics in the study\u2019s catchment area. $\u03a6$ represents the uncertainty of the vaccination information (we set $\u03a6=5$ to account for the possibility that this information was incomplete or did not reflect the actual vaccinations delivered. The chosen uncertainty value represents moderate trust in the vaccination information. The value of 7 or 10 gave a very strong belief, hence not chosen here (these analyses are not shown)) (see Figure 4\u2014source data 2 for priors). $\u03c1_{k}$ is the reporting rate for each study, which is comprised of symptomatic rate and the reporting rate of the surveillance system and accounts for the different surveillance qualities of the different studies. Since $\u03c1_{k}$ contains the symptomatic rate which reported to be less than 1% (SAGE Working Group on Japanese encephalitis vaccines, 2014; Vaughn and Hoke, 1992), we used an informative prior: $\u03c1_{k}\u223cBeta(0.1,9.9)$.\n\nThe log-likelihood function for each study $k$ is the sum of the multinomial log-likelihood and Poisson log-likelihood of total cases across all age groups.\n\n$$\nL_{k}^{MN+P}=log(t_{k}!)\u2212\\sumilog(C||k,i!)+\\sumiC_{k,i}log(\\frac{E_{k,i}}{\\sumiE_{k,i}})+t_{k}log(\\sumiE_{k,i})\u2212\\sumiE_{k,i}\u2212log(t_{k}!)\n$$\n\nWhere $t_{k}$ is the total number of cases and $C_{k,i}$\u00a0is the number of age-stratified cases in age group $i$ in each study $k$. $E_{k,i}$\u00a0is the modelled number of cases in a specific age group\u00a0$i$.\n\nFor each dataset, we fit the model in a Bayesian framework in RStan (Stan Development Team, 2016), estimating parameters $\\lambda_{k},\u03c1_{k},s_{k,i}$. RStan uses a No-U-Turn sampler (NUTS) (Hoffman and Gelman, 2014), a variant of Hamiltonian Monte Carlo to obtain posterior simulation (Stan Development Team, 2016). The parameters $s_{k,i},\u03c1_{k}$\u00a0were all estimated on a logit scale. We started 4 random chains, each with 16000 iterations and 50% burn-in period. Smaller step size of the Hamiltonian transition was manually set by increasing the adapt delta parameter in RStan to be 0.99. Model convergence was assessed visually.\n\nWe assumed that the JE vaccine has 100% effectiveness, which is reasonable given the reported high effectiveness of the vaccine (World Health Organization, 2012a; WHO, 2014; World Health Organization, 2012b) and that the protection acquired from natural infection or vaccination was life-long.\n\nFor our estimate, the endemic areas were defined to be the same as in the previous JE burden estimate (Campbell et al., 2011). For China, India, Nepal and Indonesia, where transmission intensity is diverse these countries were broken down to low, medium, or high endemic areas. In total, there are 30 endemic areas, spanning 24 countries. We inferred the FOI for each endemic area based on the FOI estimated from collated studies. The inference was based on two rules: (1) For each area, the FOI was obtained by sampling from the estimated FOI of all the studies that had catchment areas within that endemic area (if any). (2) For endemic areas in which no studies were conducted, the FOI was inferred to be equal to the FOI of the area in the same incidence group defined by Campbell et al., 2011.\n\n### Burden and vaccine impact estimation\n\nOnce the distributions of inferred FOIs for each endemic area were obtained, we generated the distributions of the estimates of the number of cases in each year $t$ (from 2000 to 2015) in endemic area $d$ for each age group $a$ from 0 to 99 years old\u00a0and scenario $m$ (described below) using the function (similar to the model used to estimate FOI (Equation 1)):\n\n$$\ncases_{m,d}(a,t)=(1\u2212e^{\u2212\\lambda_{d}})e^{\u2212\\lambda_{d}a}\u03c1_{sym}pop_{m,d}(a,t)\n$$\n\n$\\lambda_{d}$ is the FOI of that area (assumed constant over time and age independent) which is sampled from the posterior estimates from the previous model fitting. The term $e^{-\\lambda_{d}a}$ is the decrease in proportion of susceptible population due to natural infection. $\u03c1_{sym}$ is symptomatic rate, sampled from $Uniform(\\frac{1}{500},\\frac{1}{250})$\u00a0(SAGE Working Group on Japanese encephalitis vaccines, 2014). The symptomatic rate is the proportion of infections that are estimated to show symptoms, this is different to the reporting rate in the FOI estimation section, which includes differential reporting and testing by study. $pop_{m,d}(a,t)$ is the susceptible population of age $a$ in endemic area $d$ in year $t$\u00a0under scenarios $m$ and was interpolated from World Population Prospects 2017 data (United Nations-Department of Economic and Social Affairs-Population Division, 2017). To assess the impact of previous vaccination programs, the population $pop_{m,d}(a,t)$ was different for each vaccination scenario $m$: with or without vaccination. The vaccination scenario used the collated information about past vaccination programs and assumed that the number of vaccinations given each year to each age meant that this number of the relevant age groups in the population were not susceptible to infection from this year onwards. This takes into account aging of the vaccinated population and any changes in the vaccination programs over time.\n\nAlthough the mortality rate of JE varies, the reported ranges are from 20-30% (Fischer et al., 2008). We sampled the mortality rate from $Uniform(0.2,0.3)$ and multiplied it by the estimated number of $cases_{m,d}(a,t)$ to generate age-specific JE-induced deaths.\n\nAll code and data are available at: https://github.com/tranquanc123/JE_burden_estimates\u00a0(Quan, 2020; copy archived at https://github.com/elifesciences-publications/JE_burden_estimates).\n",
+      "created_at": "2025-12-02T17:19:20.270580Z"
+    },
+    {
+      "id": "a649ea61-2fb1-43fd-adcc-645b4e18de9a",
+      "submission_id": "c7df4e91-6f8d-4df6-a493-8d641fb8f415",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Eduardo Franco, McGill University Canada\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.51027.sa1](https://doi.org/10.7554/eLife.51027.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nAcceptance summary:\n\nSignificance statement: Because of its high morbidity and mortality, Japanese Encephalitis (JE) is an important public health concern in Asia. Vaccination is a realistic preventive strategy but requires reliable epidemiologic surveillance across endemic countries. To overcome this problem, the authors used age-stratified data combined with mathematical modelling to estimate the global transmission intensity and burden of JE, as well as the impact of vaccination, thus expanding on earlier work. The annual number of cases is about 50% higher than originally estimated, correcting for under-reporting and variations in countries' surveillance systems.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Estimates of the global burden of Japanese Encephalitis and the impact of vaccination from 2000-2015\" for consideration by eLife. Your article has been reviewed by three peer reviewers, and the evaluation has been overseen by Mark Jit as Reviewing Editor and Eduardo Franco as the Senior Editor. The reviewers have opted to remain anonymous.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nThis review and modelling study updates global estimates of the burden of disease due to Japanese Encephalitis (JE). Based on a systematic review of the current literature, the paper makes revised models of the disease burden of JE and of the effects of vaccination. The revised estimate of the global burden of JE is 100,000 cases per year. This is an entirely plausible number, and, importantly, the paper estimates that only about 1/3 of cases are prevented by vaccination.\n\nThis is an important paper in the field, and should be published, with some modifications. The estimates are important given the lack of robust surveillance systems. The goal of this study \u2013 to improve understanding of the global burden of JE and the impact of existing vaccination efforts \u2013 is critical for informing future public health strategies. The manuscript is clear and well-written.\n\nGeneral comments\n\n1) Could you add more detail about the Bayesian model used to estimate the force of infection and other key parameters as currently there is not sufficient information to review it? It would be useful to see both prior and posterior (including joint posterior) distributions for all the parameters, as well as trace plots, autocorrelation plots and any other diagnostic plots that you think are relevant. We may ask a Bayesian statistician to review this once we have received it.\n\n2) How were asymptomatic infection incorporated in the estimations? Were individuals with asymptomatic infection considered susceptible or immune after infection? Particularly since the rate of asymptomatic to symptomatic JE is wide ranging (25:1 to 1000:1), this may have implications on estimations.\n\n3) The model makes a number of assumptions which may have modified the accuracy of their conclusions. These assumptions include (i) vaccine efficacy is 100%, (ii) force of infection remains constant over time, (iii) the relative incidence of JE across different countries has remained the same since the Campbell et all review, (iv) population distribution is homogenous and (v) the force of infection is the same for all age groups.\n\nAssumptions (i) and (ii) have been directly addressed by sensitivity analyses, and do not seem to affect the model outcomes that much, despite the fact that neither is true. The argument made that the force of infection need not vary over time to make the model valid is a little difficult to follow from Figure 5\u2014figure supplement 1M for the non-modeller reader. See below for more on vaccine efficacy in India. Assumption (iii) appears not to make very much difference as most of the areas for which there are little data are areas of low incidence. However it is worth noting that the assumption itself otherwise may be incorrect \u2013 future workers would be wrong to take this as a precedent. Assumptions (iv) and (v) have not been addressed by the authors. They too may not affect the conclusions that much but they should at least be discussed.\n\nSpecific comments\n\n1) Results section. Reliability of JE case data. While MAC-ELISA is the WHO recommended procedure for JEV diagnosis, concerns have been raised regarding the sensitivity (50-70%) and specificity of this test (E.g., Robinson et al., 2010 Am J Trop Med Hyg, Dubot-Peres et al., 2015, Lancet Infect Dis). Further to this, parallel testing for dengue-specific antibodies is often not done. It is not clear from Figure 2\u2014figure supplement 1 whether they reported testing samples against other endemic antigenically related flaviviruses (e.g. dengue). Given that the diagnostic test employed by most studies included in your analysis has a low confirmatory level for JEV infection, could this uncertainty somehow be incorporated in your study (also the possibility that diagnostic trends have changed over the study time period)? Additionally, could any adjustments be made where diagnostic methods less confirmatory than MAC-ELISA were used? At the very least you should acknowledge this issue and discuss how it may have impacted their results and conclusions.\n\n2) Subsection \u201cForce of infection estimation from collated age-stratified data\u201d: FOI estimates are very low for Japan. Could this just be because there's successful vaccination making the data uncertain due to low numbers? E.g. there are some papers that suggest the FOI in parts of Japan can be much higher, e.g. 10%, or 100 fold higher. What would the effect of this be on the model? See for example Konishi et al. Vaccine 2002; 21:98-107 and Vaccine 2006; 24:3054-6.\n\n3) \u201cWe estimated that the proportion of the population in study \ud835\udc58 and age group \ud835\udc56 that remained susceptible after vaccination \ud835\udc60\ud835\udc58,\ud835\udc56 , was different to the prior collated vaccination information in areas such as China, India, Japan, and Nepal (Figure 2\u2014figure supplement 4).\u201d -This sentence is hard to understand without the figure \u2013 what/where is Figure 2\u2014figure supplement 4?\n\n4) Subsection \u201cInference of force of infection for all endemic areas\u201d \u2013 Presumably incidence group B refers to the same incidence group as per Campbell et al., 2011? This isn't actually explained until several pages later \u2013 it would be much easier for a reader who is not so well versed in the JE literature to understand if this were to be defined earlier.\n\n5) Subsection \u201cBurden and Vaccine Impact estimation\u201d \u2013 only approx. 15% of JE cases have been prevented! This figure is worthy of more discussion, as although it has approximately doubled in recent years, still only about 1/3 of cases are prevented. Clearly there is still much to do.\n\n6) Subsection \u201cBurden and Vaccine Impact estimation\u201d/Figure 5 \u2013 Are you suggesting that there has been no effect of JE vaccination in India? See also Discussion paragraph three.\n\n7) Discussion paragraph three \u2013 Efficacy was high in case control studies too, not only in trials. See for example Ohrr et al. Lancet 2005; 366: 1375-78 and Kumar et al.,2009.\n\n8) This efficacy estimate is now formally published and would make a better reference (Tandale et al., 2018). Vaccine efficacy does appear to be lower in India, for reasons which are not entirely clear. A lower rate of sero-conversion to the SA14-14-2 vaccine has also been described in India (Singh et al., 2015). Have you provided further support for these observations? Can you suggest why the efficacy of SA14-14-2 vaccine should be lower in India?\n\n9) Table 1 \u2013 State more clearly that these are case numbers, and what the numbers in brackets are.\n\n10) Discussion paragraph six \u2013 The paper acknowledges that its estimates will be underestimates for various reasons. However one important reason has been left out \u2013 that is that JE can be difficult to diagnose and there is a miss rate whereby even genuine cases will test negative because the test has been done too early in the illness (it takes a week for CSF IgM to be positive in close to 100% of cases and lumbar punctures are often not repeated this late). The authors should they acknowledge that these reported figures will be minimum estimates. Eg see Susan Hills' work in Nepal showing all AES went down after JE vaccination, not only JE (Upreti et al. Am. J. Trop. Med. Hyg., 88(3), 2013, pp. 464-468).\n\n11) Could there be a table of countries with JE vaccination programs?\n\n12) Subsection \u201cForce of infection estimation\u201d: Limited JE surveillance systems could lead to inaccurate reporting of disease. The authors took this into consideration in their estimation of number of cases in a specific age group by including pk (reporting rate) into consideration. It's not clear how the reporting rate accounts for different surveillance qualities. For example, in countries where JE virus IgM antibody was not confirmed with CSF, how was surveillance quality (or potential heterogeneity) addressed?\n\n13) The paper notes that convergence was assessed visually. Were you also able to assess statistical measures of goodness of fit, such as R2 or residual plots to confirm the visual assessments?\n\n14) Figure 3 plots the \"estimated number of vaccinated individuals by region\". Please make it clear in the figure caption that these are not model-based estimates, but calculated from vaccination data. Even referring to these values as \"Reported number of individuals vaccinated in each region, summed [?] from multiple data sources\". If any adjustments were made in making these calculations, please specify.\n\n15) Figure 3 \u2013 Please provide further information on the data from Gavi and WHO. Does the Gavi data represent the number of doses delivered or health records of vaccinated individuals or follow-up survey data? Is the WHO joint reporting data publicly available? If so, please include the link. What uncertainties exist in these various different data sources and why are these not incorporated in Figure 3? The point estimates imply a high level of confidence in these values. Please consider acknowledging uncertainty in Figure 3.\n\n16) Figure 3 \u2013 The paper later acknowledges uncertainty in these values and include it in their analysis through the selection of priors. Why are many of the priors so constrained for some countries e.g. Laos, Bangladesh, Philippines (Figure 4\u2014figure supplement 3)? Does this not suggest a high level of confidence? How much data at each location informed the posterior?\n\n[Editors' note: further revisions were suggested prior to acceptance, as described below.]\n\nThank you for resubmitting your work entitled \"Estimates of the global burden of Japanese Encephalitis and the impact of vaccination from 2000-2015\" for further consideration by eLife. Your revised article has been evaluated by Eduardo Franco as Senior Editor and Mark Jit as Reviewing Editor.\n\nA second review round for your submission is complete. Four reviewers spent a considerable amount of time examining your work. We are happy to see the effort you made at amending the paper to accommodate the concerns and suggestions from the reviewers of the original version. Once again, we are unable to accept it in its present form for publication. However, we are willing to consider a new revised version if you can address the additional items in the reviewers' critiques. These comments were edited to eliminate redundancy and to help you focus on the revisions. In general, the required revisions have to do with clarity of the presentation and making the model reproducible, which requires providing the data and code in a user-friendly format.\n\n1) Clarity of presentation:\n\nPlease revise Figure 3 to use integers, not scientific numbers for ease of interpretation.\n\nSubsection \u201cForce of infection (FOI) estimation from collated age-stratified data\u201d: The authors indicate that the reporting rate = total rate of symptomatic JE (I assume that means with or without presentation to facility/surveillance system), plus % of people presenting to a facility or surveillance system. As written, it seems like this would lead to double counting and result in overinflated estimates? Please explain or clarify the text.\n\nWhat was the magnitude of variation between prior and posterior estimates of susceptible post vaccination?\n\nTable 1: What is the time frame for these estimates? (annual or for the 2000-2015 timeframe?)\n\nSubsection \u201cForce of infection estimation\u201d: Can you give brief rationale for why you set your uncertainty of vaccination information to 5? The text references Figure 4\u2014figure supplement 3 but this graph is difficult to read and does not include sources for selection of prior distributions.\n\nSupplemental Appendix: In general, this information is important but I find the figures in Figure 4\u2014figure supplement 3 to be a bit impenetrable. I think this could be addressed fairly simply by renaming the graphs (for example, from s_prop[2]), legends, and adding footnotes.\n\nThere are a few formatting issues \u2013 in particular some versions of some of the figures in the PDF file are of very poor resolution.\n\nThis may be a function of the publisher's format for review, but I found the figures, legends and nomenclature very hard to follow. I don't fully understand the hierarchy of \"Figure X- Supp Y\" etc. As long as the authors proofread the typeset manuscript very carefully this will be fine and it is not a reason for re-review \u2013 rather a word of caution that in the current form it's difficult to read and this needs to be improved on publication. Labelling each figure on the page on which it is presented would help a lot. My reading of the current figures is that they are appropriate and in some cases improved from the first version. eg Figure 3\u2014source data \u2013 I am not sure what/where this is? What/where is S2 Fig?)\n\nFigure 4\u2014figure supplement 4-6 \u2013 I agree these should remain supplementary as they are indeed confusing for the non-statistician reader.\n\nFor those not familiar with FOI rates, it might help to have an explanation of what the number actually means \u2013 eg does FOI 0.05 mean 5% of the population infected per year? This would make it more accessible.\n\nI agree with the authors choice of wording concerning the efficacy in India \u2013 I do not have any better explanation than this \u2013 except possibly a nutritional effect \u2013 but this is speculative and it is not clear why this should be different to other countries.\n\n2) Issues related to the Bayesian model:\n\nA) The overall model written in stan seems good. It is a shame that the data were not provided alongside the R code, and it would seem easy to remedy this (I would recommend packaging them together as an RMarkdown file along with the curated dataset). eLife is committed to reproducible research and having easy to re-run code and data is quite important for a study whose conclusions are entirely dependent on the underlying statistical model and available data. Asking people to extract data from a Word document is prone to errors etc.\n\nB) I couldn't work out whether or not there was propagation of uncertainty from model 1 (the FOI model) to model 2 (the burden and vaccine impact model). i.e. is the model 2 using a point estimate from model 1, or is it integrating over the full posterior? If there is no propagation of uncertainty I would recommend this is changed (otherwise it will underestimate the uncertainty in the final output); if there is propagation of uncertainty, then please make it clearer.\n\nC) The notation confused me in parts. Is \u03bbd the FOI or is it FOI(\u03bbd)? If so what is the function \"FOI\"? This is probably obvious to people used to dealing with these catalytic models, but as I've never seen one before I had trouble understanding.\n\nD) A prior of N(0,1000) is probably not the best choice. If \u03bbd is the FOI, then Figure 4 shows that all the values are between 0 and ~0.65. So values of 2000 are completely implausible. Your chains will get better mixing if you use weakly informative priors. See https://github.com/stan-dev/stan/wiki/Prior-Choice-Recommendations for a nice overview of recommendations from the stan team (your choice is under the \"not usually recommended\" category!). A guess of a better prior might be an exponential distribution (values are always positive), with mean value close to what you expect in most cases.\n\nPlease provide an easy to use (e.g. RMarkdown) implementation, this would have the data as a csv file, for example, included.\n",
+      "created_at": "2025-12-02T17:19:20.270580Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T17:19:20.270580Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T17:19:20.270580Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "f0e76268-ef7d-491c-9b84-7ee8828b8de3",
+      "content_id": "7241860f-3a67-4be3-a249-0f087f9e5205",
+      "claim_id": "C1",
+      "claim": "Japanese encephalitis (JE) is a mosquito-borne disease known for its high mortality and disability rate among symptomatic cases.",
+      "claim_type": "EXPLICIT",
+      "source": "Japanese encephalitis (JE) is a mosquito-borne disease, known for its high mortality and disability rate among symptomatic cases.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract as a general characterization of JE disease.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:19:20.270580Z"
+    },
+    {
+      "id": "34ed3af1-7c4e-4537-b1ea-7de7ab7f63e5",
+      "content_id": "7241860f-3a67-4be3-a249-0f087f9e5205",
+      "claim_id": "C2",
+      "claim": "The SA 14-14-2 vaccine is recently developed and inexpensive.",
+      "claim_type": "EXPLICIT",
+      "source": "Many effective vaccines are available for JE, and the use of a recently developed and inexpensive vaccine, SA 14-14-2, has been increasing over the recent years particularly with Gavi support.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract describing the SA 14-14-2 vaccine characteristics.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:19:20.270580Z"
+    },
+    {
+      "id": "fc621340-574e-4813-a671-ecda99e83bf3",
+      "content_id": "7241860f-3a67-4be3-a249-0f087f9e5205",
+      "claim_id": "C3",
+      "claim": "In 2015, JEV infections caused 100,308 JE cases (95% CI: 61,720\u2013157,522) globally.",
+      "claim_type": "EXPLICIT",
+      "source": "We estimate in 2015 JEV infections caused 100,308 JE cases (95% CI: 61,720\u2013157,522) and 25,125 deaths (95% CI: 14,550\u201346,031) globally",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding from the study's mathematical modeling approach using age-stratified case data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:19:20.270580Z"
+    },
+    {
+      "id": "1c5750a8-604d-4bad-8ed4-389f5686b45b",
+      "content_id": "7241860f-3a67-4be3-a249-0f087f9e5205",
+      "claim_id": "C4",
+      "claim": "In 2015, JEV infections caused 25,125 deaths (95% CI: 14,550\u201346,031) globally.",
+      "claim_type": "EXPLICIT",
+      "source": "We estimate in 2015 JEV infections caused 100,308 JE cases (95% CI: 61,720\u2013157,522) and 25,125 deaths (95% CI: 14,550\u201346,031) globally",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding from the study's mathematical modeling approach.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:19:20.270580Z"
+    },
+    {
+      "id": "110b312f-d8f4-49f5-ab9c-22e5ada8679c",
+      "content_id": "7241860f-3a67-4be3-a249-0f087f9e5205",
+      "claim_id": "C5",
+      "claim": "Between 2000 and 2015, 307,774 JE cases (95% CI: 167,442\u2013509,583) were averted due to vaccination globally.",
+      "claim_type": "EXPLICIT",
+      "source": "between 2000 and 2015 307,774 JE cases (95% CI: 167,442\u2013509,583) were averted due to vaccination globally",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding from comparing model scenarios with and without vaccination.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:19:20.270580Z"
+    },
+    {
+      "id": "262212a0-6e7b-427f-86c4-23fd7e8c98dc",
+      "content_id": "7241860f-3a67-4be3-a249-0f087f9e5205",
+      "claim_id": "C6",
+      "claim": "Japanese encephalitis virus (JEV) is an arbovirus that belongs to the flavivirus genus, family flaviviridae.",
+      "claim_type": "EXPLICIT",
+      "source": "Japanese encephalitis (JE) is caused by Japanese encephalitis virus (JEV) \u2013 an arbovirus that belongs to the flavivirus genus, family flaviviridae.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established taxonomic classification of JEV.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:19:20.270580Z"
+    },
+    {
+      "id": "5e6222ad-99be-4ec6-90b0-1e666a79c770",
+      "content_id": "7241860f-3a67-4be3-a249-0f087f9e5205",
+      "claim_id": "C7",
+      "claim": "The main vectors of JEV are mosquitoes of the Culex genus, especially Culex tritaeniorhynchus.",
+      "claim_type": "EXPLICIT",
+      "source": "The main vectors are mosquitoes of the Culex genus, especially Culex tritaeniorhynchus.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by cited references about JE transmission.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:19:20.270580Z"
+    },
+    {
+      "id": "f52b0a13-3896-454f-9a69-3d128f94faa0",
+      "content_id": "7241860f-3a67-4be3-a249-0f087f9e5205",
+      "claim_id": "C8",
+      "claim": "Culex tritaeniorhynchus mosquitoes thrive in rice-paddy fields.",
+      "claim_type": "EXPLICIT",
+      "source": "These mosquitoes thrive in rice-paddy fields (Buescher and Scherer, 1959; Self et al., 1973).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the cited references from Buescher and Scherer, 1959 and Self et al., 1973.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:19:20.270580Z"
+    },
+    {
+      "id": "47160360-525b-4735-8fe1-97a424a499fe",
+      "content_id": "7241860f-3a67-4be3-a249-0f087f9e5205",
+      "claim_id": "C9",
+      "claim": "The amplifying hosts of JEV are thought to be pigs and wading birds.",
+      "claim_type": "EXPLICIT",
+      "source": "JEV has a wide range of vertebrate hosts, noticeably the amplifying hosts are thought to be pigs and wading birds (SAGE Working Group on Japanese encephalitis vaccines, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the cited SAGE Working Group reference.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:19:20.270580Z"
+    },
+    {
+      "id": "87a76cf9-0121-4c99-b2cd-431003ec3173",
+      "content_id": "7241860f-3a67-4be3-a249-0f087f9e5205",
+      "claim_id": "C10",
+      "claim": "Humans are dead-end hosts for JEV as viremia is not believed to reach levels that are infectious to mosquitoes.",
+      "claim_type": "EXPLICIT",
+      "source": "Humans are dead-end hosts as viremia is not believed to reach levels that are infectious to mosquitoes (SAGE Working Group on Japanese encephalitis vaccines, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the cited SAGE Working Group reference.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:19:20.270580Z"
+    },
+    {
+      "id": "62212887-e6b0-4bed-be5c-68c6dcbccb77",
+      "content_id": "7241860f-3a67-4be3-a249-0f087f9e5205",
+      "claim_id": "C11",
+      "claim": "Only 1 in 25 to 1 in 1000 JEV infections result in symptoms.",
+      "claim_type": "EXPLICIT",
+      "source": "Only 1 in 25 to 1 in 1000 infections result in symptoms (Vaughn and Hoke, 1992; SAGE Working Group on Japanese encephalitis vaccines, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the cited references from Vaughn and Hoke, 1992 and SAGE Working Group, 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:19:20.270580Z"
+    },
+    {
+      "id": "d95be28c-799b-49ef-84c8-483773f66c25",
+      "content_id": "7241860f-3a67-4be3-a249-0f087f9e5205",
+      "claim_id": "C12",
+      "claim": "The mortality rate of symptomatic JE cases is around 20\u201330%.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the mortality rate of symptomatic cases is high - around 20\u201330% (Fischer et al., 2008)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the cited reference from Fischer et al., 2008.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:19:20.270580Z"
+    },
+    {
+      "id": "b235ee4f-7c2c-441a-8cee-5f337120358e",
+      "content_id": "7241860f-3a67-4be3-a249-0f087f9e5205",
+      "claim_id": "C13",
+      "claim": "Around 30\u201350% of JE survivors experience significant neurological and psychiatric sequelae.",
+      "claim_type": "EXPLICIT",
+      "source": "around 30\u201350% of survivors experience significant neurological and psychiatric sequelae (Fischer et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the cited reference from Fischer et al., 2008.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:19:20.270580Z"
+    },
+    {
+      "id": "0105cf42-8c02-4dfb-85b4-9369c261a7b9",
+      "content_id": "7241860f-3a67-4be3-a249-0f087f9e5205",
+      "claim_id": "C14",
+      "claim": "The first JE case was documented in Japan in 1871.",
+      "claim_type": "EXPLICIT",
+      "source": "The \ufb01rst JE case was documented in Japan in 1871 (WHO, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the cited WHO reference from 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:19:20.270580Z"
+    },
+    {
+      "id": "b30dd5df-a130-4d19-98f2-e3a8ab09c5c7",
+      "content_id": "7241860f-3a67-4be3-a249-0f087f9e5205",
+      "claim_id": "C15",
+      "claim": "In 1924, a first JE outbreak in Japan caused more than 6,000 cases and 3,000 deaths in 6 weeks.",
+      "claim_type": "EXPLICIT",
+      "source": "In 1924, a first JE outbreak in Japan caused more than 6, 000 cases and 3, 000 deaths in 6 weeks (Solomon, 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the cited reference from Solomon, 2006.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:19:20.270580Z"
+    },
+    {
+      "id": "d929b64d-10b3-4c8b-86f3-45694596c831",
+      "content_id": "7241860f-3a67-4be3-a249-0f087f9e5205",
+      "claim_id": "C16",
+      "claim": "In 2005, large JE outbreaks occurred in northern India and Nepal, with 5000 cases and 1300 deaths.",
+      "claim_type": "EXPLICIT",
+      "source": "More recently, in 2005 large outbreaks occurred in northern India and Nepal, with 5000 cases and 1300 deaths (Solomon, 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the cited reference from Solomon, 2006.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:19:20.270580Z"
+    },
+    {
+      "id": "60ca6a08-0be9-481b-903e-411abdaf4ac3",
+      "content_id": "7241860f-3a67-4be3-a249-0f087f9e5205",
+      "claim_id": "C17",
+      "claim": "Currently, 24 Asia-Pacific countries are thought to be endemic for JE.",
+      "claim_type": "EXPLICIT",
+      "source": "Currently, 24 Asia-Paci\ufb01c countries are thought to be endemic for JE, with 3 billion individuals at risk of infection (WHO, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the cited WHO reference from 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:19:20.270580Z"
+    },
+    {
+      "id": "c9783b65-a314-4b90-b2ce-039fe5084992",
+      "content_id": "7241860f-3a67-4be3-a249-0f087f9e5205",
+      "claim_id": "C18",
+      "claim": "3 billion individuals are at risk of JE infection.",
+      "claim_type": "EXPLICIT",
+      "source": "Currently, 24 Asia-Paci\ufb01c countries are thought to be endemic for JE, with 3 billion individuals at risk of infection (WHO, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the cited WHO reference from 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:19:20.270580Z"
+    },
+    {
+      "id": "e5d9a5d9-798a-4d0d-b4cb-6f7c90999567",
+      "content_id": "7241860f-3a67-4be3-a249-0f087f9e5205",
+      "claim_id": "C19",
+      "claim": "The first JE vaccine was an inactivated mouse brain vaccine produced in Japan and used worldwide for 50 years.",
+      "claim_type": "EXPLICIT",
+      "source": "The first vaccine was an inactivated mouse brain vaccine produced in Japan, used worldwide for 50 years.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a historical fact about JE vaccine development.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:19:20.270580Z"
+    },
+    {
+      "id": "14d5c03d-2c26-490d-bf6d-31f05f6e5e7c",
+      "content_id": "7241860f-3a67-4be3-a249-0f087f9e5205",
+      "claim_id": "C20",
+      "claim": "Production of the first inactivated mouse brain vaccine halted in 2006.",
+      "claim_type": "EXPLICIT",
+      "source": "Although vaccine production halted in 2006, similar inactivated mouse brain vaccines are still produced locally in South Korea, Taiwan, Thailand and Vietnam (Yun and Lee, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the cited reference from Yun and Lee, 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:19:20.270580Z"
+    },
+    {
+      "id": "5e2f2113-8eaf-4f9a-aee6-1b18714dd277",
+      "content_id": "7241860f-3a67-4be3-a249-0f087f9e5205",
+      "claim_id": "C21",
+      "claim": "Similar inactivated mouse brain vaccines are still produced locally in South Korea, Taiwan, Thailand and Vietnam.",
+      "claim_type": "EXPLICIT",
+      "source": "Although vaccine production halted in 2006, similar inactivated mouse brain vaccines are still produced locally in South Korea, Taiwan, Thailand and Vietnam (Yun and Lee, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the cited reference from Yun and Lee, 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:19:20.270580Z"
+    },
+    {
+      "id": "b1ada56a-7733-4439-a1bf-5ac6cc665b60",
+      "content_id": "7241860f-3a67-4be3-a249-0f087f9e5205",
+      "claim_id": "C22",
+      "claim": "The live attenuated vaccine SA 14-14-2 has been gradually replacing the inactivated Vero cell vaccine since 1988.",
+      "claim_type": "EXPLICIT",
+      "source": "The use of the next vaccine, an inactivated a Vero cell vaccine (SAGE Working Group on Japanese encephalitis vaccines, 2014), has been gradually replaced (since 1988) by a live attenuated vaccine (SA 14-14-2) produced in China, with PATH support.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the cited SAGE Working Group reference.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:19:20.270580Z"
+    },
+    {
+      "id": "e106dbbf-4fcb-4091-9558-7baf5e07fadd",
+      "content_id": "7241860f-3a67-4be3-a249-0f087f9e5205",
+      "claim_id": "C23",
+      "claim": "SA 14-14-2 vaccine is produced in China with PATH support.",
+      "claim_type": "EXPLICIT",
+      "source": "The use of the next vaccine, an inactivated a Vero cell vaccine (SAGE Working Group on Japanese encephalitis vaccines, 2014), has been gradually replaced (since 1988) by a live attenuated vaccine (SA 14-14-2) produced in China, with PATH support.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the text describing the SA 14-14-2 vaccine.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:19:20.270580Z"
+    },
+    {
+      "id": "489a348f-c0f2-4cce-b4cb-23181a21988a",
+      "content_id": "7241860f-3a67-4be3-a249-0f087f9e5205",
+      "claim_id": "C24",
+      "claim": "SA 14-14-2 vaccine is now widely used in Asia and funded by Gavi.",
+      "claim_type": "EXPLICIT",
+      "source": "SA 14-14-2 is now widely used in Asia and funded by Gavi which has led to a great increase in vaccination.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the text describing current vaccine use.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:19:20.270580Z"
+    },
+    {
+      "id": "7449447b-9ac6-4c02-9c0f-9a1cea0ad5ec",
+      "content_id": "7241860f-3a67-4be3-a249-0f087f9e5205",
+      "claim_id": "C25",
+      "claim": "SA 14-14-2 vaccine requires only a single dose.",
+      "claim_type": "EXPLICIT",
+      "source": "This vaccine requires only a single dose, is cheap to produce, and is safer than the mouse brain vaccine (SAGE Working Group on Japanese encephalitis vaccines, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the cited SAGE Working Group reference.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:19:20.270580Z"
+    },
+    {
+      "id": "bdd82bc5-bba3-4c24-a2d0-7059a0d29094",
+      "content_id": "7241860f-3a67-4be3-a249-0f087f9e5205",
+      "claim_id": "C26",
+      "claim": "SA 14-14-2 vaccine is cheap to produce.",
+      "claim_type": "EXPLICIT",
+      "source": "This vaccine requires only a single dose, is cheap to produce, and is safer than the mouse brain vaccine (SAGE Working Group on Japanese encephalitis vaccines, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the cited SAGE Working Group reference.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:19:20.270580Z"
+    },
+    {
+      "id": "19ea67c1-4e2d-44d9-82be-5004d7fd47c1",
+      "content_id": "7241860f-3a67-4be3-a249-0f087f9e5205",
+      "claim_id": "C27",
+      "claim": "SA 14-14-2 vaccine is safer than the mouse brain vaccine.",
+      "claim_type": "EXPLICIT",
+      "source": "This vaccine requires only a single dose, is cheap to produce, and is safer than the mouse brain vaccine (SAGE Working Group on Japanese encephalitis vaccines, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the cited SAGE Working Group reference.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:19:20.270580Z"
+    },
+    {
+      "id": "19d4dd58-66c0-494d-9399-74224c7ba97f",
+      "content_id": "7241860f-3a67-4be3-a249-0f087f9e5205",
+      "claim_id": "C28",
+      "claim": "A live attenuated chimeric vaccine was first licensed in Australia in 2012.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, a live attenuated chimeric vaccine was first licensed in Australia in 2012 (SAGE Working Group on Japanese encephalitis vaccines, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the cited SAGE Working Group reference.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:19:20.270580Z"
+    },
+    {
+      "id": "afdb574a-aa51-4fc9-9bb3-721a19bc4744",
+      "content_id": "7241860f-3a67-4be3-a249-0f087f9e5205",
+      "claim_id": "C29",
+      "claim": "WHO recommends diagnosis of JE using JEV-specific IgM antibody-capture enzyme-linked immunosorbent assay (MAC-ELISA) in CSF at two time points.",
+      "claim_type": "EXPLICIT",
+      "source": "WHO recommends diagnosis using JEV-speci\ufb01c IgM antibody-capture enzyme-linked immunosorbent assay (MAC-ELISA) in CSF at two time points (Donadeu et al., 2009; Burke and Leake, 1988).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the cited references from Donadeu et al., 2009 and Burke and Leake, 1988.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:19:20.270580Z"
+    },
+    {
+      "id": "135e9c2f-abb9-4c41-93eb-c0c2b5b0d892",
+      "content_id": "7241860f-3a67-4be3-a249-0f087f9e5205",
+      "claim_id": "C30",
+      "claim": "Serum samples can be used for JE diagnosis, but false positives may result from cross-reactivity with other flaviviruses or vaccination.",
+      "claim_type": "EXPLICIT",
+      "source": "Serum samples can be used, but false positives may result from cross-reactivity with other flaviviruses or vaccination (Solomon et al., 1998; Hills et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the cited references from Solomon et al., 1998 and Hills et al., 2009.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:19:20.270580Z"
+    },
+    {
+      "id": "09900315-2b3e-416f-9643-3d9884e5f2bd",
+      "content_id": "7241860f-3a67-4be3-a249-0f087f9e5205",
+      "claim_id": "C31",
+      "claim": "The previous estimate of annual global JE cases was 67,900 with 13,600\u201320,400 deaths.",
+      "claim_type": "EXPLICIT",
+      "source": "The previous estimate of annual global JE cases was 67,900 with 13,600\u201320,400 deaths (Campbell et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the cited reference from Campbell et al., 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:19:20.270580Z"
+    },
+    {
+      "id": "03160399-1cae-42e1-ada1-778f32f96881",
+      "content_id": "7241860f-3a67-4be3-a249-0f087f9e5205",
+      "claim_id": "C32",
+      "claim": "A systematic review on October 11th 2017 yielded 2337 initial results.",
+      "claim_type": "EXPLICIT",
+      "source": "A systematic review on October 11th 2017 yielded 2337 initial results (Figure 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a methodological finding from the systematic review process, also shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:19:20.270580Z"
+    },
+    {
+      "id": "c512db12-251f-4bf4-ba06-4a32582bdd15",
+      "content_id": "7241860f-3a67-4be3-a249-0f087f9e5205",
+      "claim_id": "C33",
+      "claim": "407 relevant studies were obtained after eliminating 1931 irrelevant titles and abstracts.",
+      "claim_type": "EXPLICIT",
+      "source": "407 relevant studies were obtained after eliminating 1931 irrelevant titles and abstracts that were about molecular biology, policy, entomology, hosts other than humans, or were review papers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological finding from the systematic review process.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:19:20.270580Z"
+    },
+    {
+      "id": "b3987698-e2f2-4953-8ed6-615062a9478c",
+      "content_id": "7241860f-3a67-4be3-a249-0f087f9e5205",
+      "claim_id": "C34",
+      "claim": "261 full-text papers were retrieved and read.",
+      "claim_type": "EXPLICIT",
+      "source": "We retrieved and read 261 full-text papers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological finding from the systematic review process.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:19:20.270580Z"
+    },
+    {
+      "id": "c443ffa8-2d71-4f9a-bcae-2ca6efae46be",
+      "content_id": "7241860f-3a67-4be3-a249-0f087f9e5205",
+      "claim_id": "C35",
+      "claim": "53 studies contained age-stratified case data.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, we had 53 studies that contained age-stratified case data (Figure 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a methodological finding from the systematic review process, also shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:19:20.270580Z"
+    },
+    {
+      "id": "7848eccf-051f-45ce-90d4-5f3f2f68d5cf",
+      "content_id": "7241860f-3a67-4be3-a249-0f087f9e5205",
+      "claim_id": "C36",
+      "claim": "42 of the 53 studies (79%) contained data from after 2000 only.",
+      "claim_type": "EXPLICIT",
+      "source": "42 of the 53 studies (79%) contained data from after 2000 only, 7 from before 2000 only and three from both time periods (Figure 2\u2014source data 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a descriptive finding about the temporal distribution of the studies included.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:19:20.270580Z"
+    },
+    {
+      "id": "e01c7c80-afae-4333-a6b7-3ef8877d3c3a",
+      "content_id": "7241860f-3a67-4be3-a249-0f087f9e5205",
+      "claim_id": "C37",
+      "claim": "34 studies (64%) had data from 1 to 4 year time periods.",
+      "claim_type": "EXPLICIT",
+      "source": "34 studies (64%) had data from 1 to 4 year time periods, six studies had data for periods of between 5 and 9 years, and 11 studies had data for more than 10 years.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a descriptive finding about the temporal coverage of the studies included.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:19:20.270580Z"
+    },
+    {
+      "id": "6b51ab92-3fca-4acc-9fdb-8a9afa96e57f",
+      "content_id": "7241860f-3a67-4be3-a249-0f087f9e5205",
+      "claim_id": "C38",
+      "claim": "FOI estimates varied from 0.001 (95% CI: 0.000 - 0.002) in Japan to 0.507 (95% CI 0.419 - 0.582) in Guigang in China.",
+      "claim_type": "EXPLICIT",
+      "source": "Our FOI estimates varied from 0.001 (95% CI: 0.000 - 0.002) in Japan to 0.507 (95% CI 0.419 - 0.582) in Guigang in China.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding from the catalytic model fitting to age-stratified case data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:19:20.270580Z"
+    },
+    {
+      "id": "0a05e3a2-da1e-410e-8325-2054f2a1d0b3",
+      "content_id": "7241860f-3a67-4be3-a249-0f087f9e5205",
+      "claim_id": "C39",
+      "claim": "FOI were generally between 0.05 and 0.2, with a median of 0.09.",
+      "claim_type": "EXPLICIT",
+      "source": "Besides those extreme values, FOI were generally between 0.05 and 0.2, with a median of 0.09 (Figure 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a summary finding from the FOI estimates, also shown in Figure 4.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:19:20.270580Z"
+    },
+    {
+      "id": "bd607adc-8d55-40fa-b78a-1f39b4fb66be",
+      "content_id": "7241860f-3a67-4be3-a249-0f087f9e5205",
+      "claim_id": "C40",
+      "claim": "From 2000 to 2015, there were 1,976,238 (95% CIs: 1,722,533\u20132,725,647) JE cases globally.",
+      "claim_type": "EXPLICIT",
+      "source": "We estimate that from 2000 to 2015, there were 1,976,238 (95% CIs: 1,722,533\u20132,725,647) JE cases globally.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding from the burden estimation model.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:19:20.270580Z"
+    },
+    {
+      "id": "4f9e4634-d388-4863-af9a-d8fd08b75b16",
+      "content_id": "7241860f-3a67-4be3-a249-0f087f9e5205",
+      "claim_id": "C41",
+      "claim": "Had there been no vaccination from 2000 to 2015, there would have been 2,284,012 (95% CIs: 1,495,964\u20133,102,542) JE cases.",
+      "claim_type": "EXPLICIT",
+      "source": "By including known annual vaccination information in the catalytic model we estimate that in the same period had there been no vaccination there would have been 2,284,012 (95% CIs: 1,495,964\u20133,102,542) JE cases.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a counterfactual estimate from the burden estimation model comparing scenarios with and without vaccination.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:19:20.270580Z"
+    },
+    {
+      "id": "efdd9f0f-014f-4c22-8327-b89e7a7b6a80",
+      "content_id": "7241860f-3a67-4be3-a249-0f087f9e5205",
+      "claim_id": "C42",
+      "claim": "Vaccination programs prevented 74,769 deaths from JE (95% CIs: 37,837\u2013129,028) from 2000 to 2015.",
+      "claim_type": "EXPLICIT",
+      "source": "vaccination programs similarly prevented 74,769 deaths from JE (95% CIs: 37,837\u2013129,028).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding from comparing model scenarios with and without vaccination.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:19:20.270580Z"
+    },
+    {
+      "id": "f5d2bef9-432b-4fb1-b9f8-15a3df1cf4d2",
+      "content_id": "7241860f-3a67-4be3-a249-0f087f9e5205",
+      "claim_id": "C43",
+      "claim": "The greatest impact of vaccination was from 2005 to 2010 due to large increase in vaccination in China in this time.",
+      "claim_type": "EXPLICIT",
+      "source": "We estimate the greatest impact of vaccination from 2005 to 2010 due to large increase in vaccination in China in this time, and the impact of vaccination became more obvious over time (Figure 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference from the burden estimation model results, also shown in Figure 5.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:19:20.270580Z"
+    },
+    {
+      "id": "a344e822-d09c-42eb-b495-5eda758d230f",
+      "content_id": "7241860f-3a67-4be3-a249-0f087f9e5205",
+      "claim_id": "C44",
+      "claim": "In 2015, vaccination reduced the number of cases globally by around 45,000 (from 145,542 (95% CI: 96,667\u2013195,639) to 100,308 (95% CI: 61,720\u2013157,522)).",
+      "claim_type": "EXPLICIT",
+      "source": "In 2015, we estimate vaccination reduced the number of cases globally by around 45,000 (from 145,542 (95% CI: 96,667\u2013195,639) to 100,308 (95% CI: 61,720\u2013157,522) (Figure 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding from comparing model scenarios with and without vaccination, also shown in Figure 5.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:19:20.270580Z"
+    },
+    {
+      "id": "20286b04-8dda-46ed-aa62-5683b3c2c576",
+      "content_id": "7241860f-3a67-4be3-a249-0f087f9e5205",
+      "claim_id": "C45",
+      "claim": "The highest number of cases was estimated in the high endemic area of China (around 40,000 annual cases in the no vaccination scenario and around 20,000 annual cases in vaccination scenario).",
+      "claim_type": "EXPLICIT",
+      "source": "We estimated the highest number of cases in the high endemic area of China (around 40,000 annual cases in the no vaccination scenario and around 20,000 annual cases in vaccination scenario)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the burden estimation model for specific regions.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:19:20.270580Z"
+    },
+    {
+      "id": "c4848169-c8ab-4503-8327-c475ef0b1f9f",
+      "content_id": "7241860f-3a67-4be3-a249-0f087f9e5205",
+      "claim_id": "C46",
+      "claim": "Medium or high endemic areas in India had around 20,000 annual cases in no vaccination scenario and 15,000 annual cases in vaccination scenario for each area in recent years.",
+      "claim_type": "EXPLICIT",
+      "source": "and medium or high endemic areas in India (around 20,000 annual cases in no vaccination scenario and 15,000 annual cases in vaccination scenario for each area in recent years).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the burden estimation model for specific regions.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:19:20.270580Z"
+    },
+    {
+      "id": "7cea6374-d9e1-47e4-8273-9340ac72c24d",
+      "content_id": "7241860f-3a67-4be3-a249-0f087f9e5205",
+      "claim_id": "C47",
+      "claim": "Areas like Australia, Brunei, Bhutan and Russia were estimated to have less than 100 annual cases with or without vaccination.",
+      "claim_type": "EXPLICIT",
+      "source": "On the contrary, areas like Australia, Brunei, Bhutan and Russia were estimated to have less than 100 annual cases with or without vaccination (Figure 5, Figure 6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the burden estimation model for specific regions, also shown in Figures 5 and 6.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:19:20.270580Z"
+    },
+    {
+      "id": "0b041449-b8ad-47ad-a293-9ddff654cf3b",
+      "content_id": "7241860f-3a67-4be3-a249-0f087f9e5205",
+      "claim_id": "C48",
+      "claim": "In the high endemic area in China, routine vaccination programs only started in 2008 but contributed the most to the global cases reduction, with around 20,000 cases averted in China in 2015.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, in the high endemic area in China, the routine vaccination programs only started in 2008 but contributed the most to the global cases reduction, with around 20,000 cases averted in China in 2015.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the burden estimation model comparing scenarios with and without vaccination.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:19:20.270580Z"
+    },
+    {
+      "id": "bc747219-d6f2-4495-9022-5fe92b806695",
+      "content_id": "7241860f-3a67-4be3-a249-0f087f9e5205",
+      "claim_id": "C49",
+      "claim": "A clear difference in cases between vaccination and no vaccination scenario was observed in areas with intensive vaccination programs such as South Korea, Sri Lanka, Thailand, Taiwan, and Vietnam.",
+      "claim_type": "EXPLICIT",
+      "source": "We also observed a clear difference in cases between vaccination and no vaccination scenario in areas with intensive vaccination programs such as South Korea, Sri Lanka, Thailand, Taiwan, and Vietnam.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the burden estimation model comparing scenarios with and without vaccination.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:19:20.270580Z"
+    },
+    {
+      "id": "75998428-ac2d-4a23-8be7-ded3323b7e4e",
+      "content_id": "7241860f-3a67-4be3-a249-0f087f9e5205",
+      "claim_id": "C50",
+      "claim": "For Japan, Australia, and Malaysia, though vaccination began a long time ago, minimal vaccine impact was estimated.",
+      "claim_type": "EXPLICIT",
+      "source": "For Japan, Australia, and Malaysia, though vaccination began a long time ago, we estimated there has been minimal vaccine impact.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the burden estimation model comparing scenarios with and without vaccination.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:19:20.270580Z"
+    },
+    {
+      "id": "fea84997-35a5-49cf-a718-ea24907dce1d",
+      "content_id": "7241860f-3a67-4be3-a249-0f087f9e5205",
+      "claim_id": "C51",
+      "claim": "No vaccine programs had occurred in Bangladesh, Brunei, Bhutan, the low and high endemic areas in Indonesia, Myanmar, Pakistan, Philippines, Papua New Guinea, Russia, or Singapore.",
+      "claim_type": "EXPLICIT",
+      "source": "From the data we collated, no vaccine programs had occurred in in Bangladesh, Brunei, Bhutan, the low and high endemic areas in Indonesia, Myanmar, Pakistan, Philippines, Papua New Guinea, Russia, or Singapore so we estimated of course vaccination has had no impact.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the vaccination data collated from literature review, WHO, and Gavi.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:19:20.270580Z"
+    },
+    {
+      "id": "806180de-20eb-4f7c-8a49-da318fa1e727",
+      "content_id": "7241860f-3a67-4be3-a249-0f087f9e5205",
+      "claim_id": "C52",
+      "claim": "The global estimate of around 100,000 cases annually is about 1.5 times higher than the previous estimate of around 70,000 cases.",
+      "claim_type": "EXPLICIT",
+      "source": "Our global estimate of around 100,000 cases annually is about 1.5 times higher than the previous estimate of around 70,000 cases (Campbell et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison of the current study's findings with previous estimates from Campbell et al., 2011.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:19:20.270580Z"
+    },
+    {
+      "id": "072b6d8f-c79b-47ac-8136-5a95562aaac2",
+      "content_id": "7241860f-3a67-4be3-a249-0f087f9e5205",
+      "claim_id": "C53",
+      "claim": "The high FOI estimated in the south of China, Vietnam, and Philippines is consistent with the high pig density and high probability of Culex in these areas.",
+      "claim_type": "EXPLICIT",
+      "source": "The high FOI estimated in the south of China, Vietnam, and Philippines is consistent with the high pig density and high probability of Culex in these areas (for Vietnam and Philippines with Miller et al., 2012 only).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on comparing FOI estimates with environmental covariates from cited references.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:19:20.270580Z"
+    },
+    {
+      "id": "40ed0743-7b86-4a35-bf8d-0172c30dd937",
+      "content_id": "7241860f-3a67-4be3-a249-0f087f9e5205",
+      "claim_id": "C54",
+      "claim": "High FOI was estimated in India and Indonesia; however these countries only have high probability of Culex but low pig density.",
+      "claim_type": "EXPLICIT",
+      "source": "We also estimated high FOI in India and Indonesia; however these countries only have high probability of Culex (in Miller et al., 2012 but not Longbottom et al.) but low pig density in Longbottom et al., 2017.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on comparing FOI estimates with environmental covariates from cited references.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:19:20.270580Z"
+    },
+    {
+      "id": "21ab5deb-257d-49d7-8a6c-1f1964ba84c1",
+      "content_id": "7241860f-3a67-4be3-a249-0f087f9e5205",
+      "claim_id": "C55",
+      "claim": "Other potential animal reservoirs may contribute to JE transmission in India and Indonesia, likely the wading bird or even poultry.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that other potential animal reservoirs may contribute to the transmission in these countries, likely the wading bird or even poultry, although current evidence is limited (Lord et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative inference based on the discrepancy between FOI estimates and known environmental factors, with limited evidence cited.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:19:20.270580Z"
+    },
+    {
+      "id": "c3d56b50-c0cf-4dfd-877c-31c4d1e70fb6",
+      "content_id": "7241860f-3a67-4be3-a249-0f087f9e5205",
+      "claim_id": "C56",
+      "claim": "In Taiwan and South Korea the current estimated FOI is lower compared to other areas, respectively 0.061 (95% CI 0.013\u20130.093), and 0.041 (95% CI 0.026\u20130.057).",
+      "claim_type": "EXPLICIT",
+      "source": "In Taiwan and South Korea the current estimated FOI is lower compared to other areas, respectively 0.061 (95% CI 0.013\u20130.093), and 0.041 (95% CI 0.026\u20130.057)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the FOI estimation model.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:19:20.270580Z"
+    },
+    {
+      "id": "5053faa7-4412-4888-91ce-de10624b5f69",
+      "content_id": "7241860f-3a67-4be3-a249-0f087f9e5205",
+      "claim_id": "C57",
+      "claim": "Urbanization, which reduces the proximity of humans to pig farms and rice fields, may play an important role in lowering JE transmission.",
+      "claim_type": "EXPLICIT",
+      "source": "This could be due to lack of recent data, or perhaps suggests urbanization, which reduces the proximity of humans to pig farms and rice fields (where the mosquitoes thrive), may play an important role in lowering transmission.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative inference to explain the lower FOI in Taiwan and South Korea.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:19:20.270580Z"
+    },
+    {
+      "id": "494c95a5-ce1e-47bc-acee-cea029a185fd",
+      "content_id": "7241860f-3a67-4be3-a249-0f087f9e5205",
+      "claim_id": "C58",
+      "claim": "For China and Japan, lower susceptible proportions after vaccination in certain age groups were estimated compared to calculated proportions from the available data.",
+      "claim_type": "EXPLICIT",
+      "source": "For China and Japan we estimated lower susceptible proportions after vaccination in certain age groups compared to calculated proportions from the available data.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the Bayesian model fitting comparing posterior estimates with prior vaccination data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:19:20.270580Z"
+    },
+    {
+      "id": "90e74d7b-2043-422f-84f7-3798e175f56a",
+      "content_id": "7241860f-3a67-4be3-a249-0f087f9e5205",
+      "claim_id": "C59",
+      "claim": "The lower susceptible proportions in China and Japan suggest that there are a large number of immunized people in certain age groups due to past vaccination, for which information was not available.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that there are a large number of immunized people in certain age groups due to past vaccination, for which we did not have information.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the discrepancy between model estimates and available vaccination data.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:19:20.270580Z"
+    },
+    {
+      "id": "a4762900-1ac8-49f6-ad08-ecff7234dc43",
+      "content_id": "7241860f-3a67-4be3-a249-0f087f9e5205",
+      "claim_id": "C60",
+      "claim": "From 2006 to 2011, SA 14-14-2 vaccine was used in India for campaigns.",
+      "claim_type": "EXPLICIT",
+      "source": "From 2006 to 2011, SA 14-14-2 vaccine was used in India for campaigns.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a fact about vaccination programs in India.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:19:20.270580Z"
+    },
+    {
+      "id": "9d372a4c-4530-429a-a3e3-de9cc6201d7d",
+      "content_id": "7241860f-3a67-4be3-a249-0f087f9e5205",
+      "claim_id": "C61",
+      "claim": "SA 14-14-2 vaccine reported nearly 100% efficacy in vaccine trials and case-control studies.",
+      "claim_type": "EXPLICIT",
+      "source": "Though the vaccine reported nearly 100% efficacy in vaccine trials and case-control studies (Kumar et al., 2009; Bista et al., 2001)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the cited references from Kumar et al., 2009 and Bista et al., 2001.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:19:20.270580Z"
+    },
+    {
+      "id": "3d299a50-1046-4af2-bba5-533c96533e3e",
+      "content_id": "7241860f-3a67-4be3-a249-0f087f9e5205",
+      "claim_id": "C62",
+      "claim": "The efficacy of SA 14-14-2 vaccine in India was reported to be as low as 30% to 40%.",
+      "claim_type": "EXPLICIT",
+      "source": "the efficacy in India was reported to be as low as 30% to 40% (Vashishtha and Ramachandran, 2015; Tandale et al., 2018)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the cited references from Vashishtha and Ramachandran, 2015 and Tandale et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:19:20.270580Z"
+    },
+    {
+      "id": "29da33fb-1098-403b-a4e5-780d243dabd5",
+      "content_id": "7241860f-3a67-4be3-a249-0f087f9e5205",
+      "claim_id": "C63",
+      "claim": "Lower seroconversion has been reported in India for SA 14-14-2 vaccine.",
+      "claim_type": "EXPLICIT",
+      "source": "and lower seroconversion has also been reported in India (Singh et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the cited reference from Singh et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:19:20.270580Z"
+    },
+    {
+      "id": "dbe4a362-fc93-4f4e-aa87-9b6407b23bed",
+      "content_id": "7241860f-3a67-4be3-a249-0f087f9e5205",
+      "claim_id": "C64",
+      "claim": "A previous evaluation showed that the vaccination coverage data in India was lower than reported.",
+      "claim_type": "EXPLICIT",
+      "source": "A previous evaluation of vaccination coverage also showed that the vaccination coverage data in India was lower than reported (Murhekar et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the cited reference from Murhekar et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:19:20.270580Z"
+    },
+    {
+      "id": "252336cc-8e10-4a9e-a37b-e1a67910a46b",
+      "content_id": "7241860f-3a67-4be3-a249-0f087f9e5205",
+      "claim_id": "C65",
+      "claim": "Cross-reactive immunity to other flaviviruses could be a possible explanation for different vaccine efficacies in different places.",
+      "claim_type": "EXPLICIT",
+      "source": "One possible explanation could be cross-reactive immunity to other flaviviruses, or differences in circulating JE genotypes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative explanation for observed differences in vaccine efficacy.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:19:20.270580Z"
+    },
+    {
+      "id": "ea3a9585-09cd-4646-839d-2628ede20600",
+      "content_id": "7241860f-3a67-4be3-a249-0f087f9e5205",
+      "claim_id": "C66",
+      "claim": "Differences in circulating JE genotypes could be a possible explanation for different vaccine efficacies in different places.",
+      "claim_type": "EXPLICIT",
+      "source": "One possible explanation could be cross-reactive immunity to other flaviviruses, or differences in circulating JE genotypes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative explanation for observed differences in vaccine efficacy.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:19:20.270580Z"
+    },
+    {
+      "id": "2d92601a-05b0-4ec7-b9bc-c328beb7a3bd",
+      "content_id": "7241860f-3a67-4be3-a249-0f087f9e5205",
+      "claim_id": "C67",
+      "claim": "The burden estimates are highest in China and India by region.",
+      "claim_type": "EXPLICIT",
+      "source": "By region, our burdens estimates are highest in China and India, which aligns with previous literature (Heffelfinger et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the burden estimation model, consistent with previous literature.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:19:20.270580Z"
+    },
+    {
+      "id": "f3580ac4-ebf8-4666-9156-df6d0eb560fe",
+      "content_id": "7241860f-3a67-4be3-a249-0f087f9e5205",
+      "claim_id": "C68",
+      "claim": "The method more robustly takes into account under-reporting and different surveillance quality compared to previous estimates.",
+      "claim_type": "EXPLICIT",
+      "source": "It is not surprising that our estimates are higher, since our method more robustly takes into account under-reporting and different surveillance quality.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an explanation for why the current estimates are higher than previous estimates, based on methodological improvements.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:19:20.270580Z"
+    },
+    {
+      "id": "33617318-9a41-45ee-aa43-39b5109b9a56",
+      "content_id": "7241860f-3a67-4be3-a249-0f087f9e5205",
+      "claim_id": "C69",
+      "claim": "The estimates include population changes and the progression of vaccination programs over time.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, the numbers we reported here are time-dependent and not static because our estimates include population changes and the progression of vaccination programs over time.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the methodological approach used in the study.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:19:20.270580Z"
+    },
+    {
+      "id": "b41fc649-47d4-4ecb-a4fb-958498646830",
+      "content_id": "7241860f-3a67-4be3-a249-0f087f9e5205",
+      "claim_id": "C70",
+      "claim": "The estimate of vaccination impact will be an underestimate of the total impact because the impact of vaccination will continue into the future as vaccinated individuals remain protected.",
+      "claim_type": "EXPLICIT",
+      "source": "Because the impact of vaccination will continue into the future as vaccinated individuals remain protected, our estimate will be an underestimate of the total impact of vaccination.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an acknowledgment of a limitation in the scope of the vaccination impact estimates.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:19:20.270580Z"
+    },
+    {
+      "id": "bdeb76ba-e4cc-4167-8cfe-4e8640a8d333",
+      "content_id": "7241860f-3a67-4be3-a249-0f087f9e5205",
+      "claim_id": "C71",
+      "claim": "The estimates will be an under-estimate of total vaccine impact as in some places vaccination programs have been running before 2000.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, our estimates will be an under-estimate of total vaccine impact as in some places vaccination programs have been running before 2000, and so vaccination had a large impact before 2000.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an acknowledgment of a limitation in the temporal scope of the vaccination impact estimates.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:19:20.270580Z"
+    },
+    {
+      "id": "425e866a-df4b-4cc4-b13a-ce7744125b20",
+      "content_id": "7241860f-3a67-4be3-a249-0f087f9e5205",
+      "claim_id": "C72",
+      "claim": "A large number of JE cases have long-term sequelae after infection.",
+      "claim_type": "EXPLICIT",
+      "source": "However because a large number of cases have long-term sequelae after JE infection, focus just on case numbers does not describe fully the total burden of JE.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on established knowledge about JE disease outcomes.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:19:20.270580Z"
+    },
+    {
+      "id": "3f433ec7-079e-4d08-9bb7-46653e78a7c4",
+      "content_id": "7241860f-3a67-4be3-a249-0f087f9e5205",
+      "claim_id": "C73",
+      "claim": "JE vaccination does not produce herd immunity.",
+      "claim_type": "EXPLICIT",
+      "source": "Since JE vaccination does not produce herd immunity, the transmission intensity can only be reduced by influencing the animal transmission cycle.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the understanding that humans are dead-end hosts for JEV.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:19:20.270580Z"
+    },
+    {
+      "id": "4638182a-188e-4748-8898-aa7fd3f74944",
+      "content_id": "7241860f-3a67-4be3-a249-0f087f9e5205",
+      "claim_id": "C74",
+      "claim": "Previous attempts to break the JE transmission cycle have been vector control and vaccination in pigs and wading birds.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous attempts to break the transmission cycle have been vector control and vaccination in pigs and wading birds, and this has been considered in modelling work (Khan et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the cited reference from Khan et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:19:20.270580Z"
+    },
+    {
+      "id": "81338e97-2ec7-49de-b39c-837b4dff5e27",
+      "content_id": "7241860f-3a67-4be3-a249-0f087f9e5205",
+      "claim_id": "C75",
+      "claim": "Previous attempts to break the JE transmission cycle were either ineffective or have been deemed economically and logistically intensive.",
+      "claim_type": "EXPLICIT",
+      "source": "However they were either ineffective or up to now have been deemed economically and logistically intensive (Fischer et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the cited reference from Fischer et al., 2008.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:19:20.270580Z"
+    },
+    {
+      "id": "757a21c8-e2b0-4693-a43f-d93fe316fc4a",
+      "content_id": "7241860f-3a67-4be3-a249-0f087f9e5205",
+      "claim_id": "C76",
+      "claim": "Human vaccination can be an effective strategy to reduce JE case numbers despite not interrupting transmission.",
+      "claim_type": "EXPLICIT",
+      "source": "We estimate that despite not interrupting transmission, human vaccination can be an effective strategy to reduce JE case numbers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the vaccination impact estimates.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:19:20.270580Z"
+    },
+    {
+      "id": "7e67b208-52c3-40dc-a655-ca5537894512",
+      "content_id": "7241860f-3a67-4be3-a249-0f087f9e5205",
+      "claim_id": "C77",
+      "claim": "The majority of the reduction in global burden is due to the routine vaccination program in China from 2008.",
+      "claim_type": "EXPLICIT",
+      "source": "This can be seen from the estimate that the majority of the reduction in global burden is due to the routine vaccination program in China from 2008.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the burden estimation model comparing scenarios with and without vaccination.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:19:20.270580Z"
+    },
+    {
+      "id": "2b9cee40-6a37-4891-80e3-c7ccd39cb8ba",
+      "content_id": "7241860f-3a67-4be3-a249-0f087f9e5205",
+      "claim_id": "C78",
+      "claim": "India, Timor-Leste, and Vietnam have high transmission intensity and residual cases despite vaccination, and could further benefit from scaling-up the existing vaccination program.",
+      "claim_type": "EXPLICIT",
+      "source": "We estimate that India, Timor-Leste, and Vietnam also have high transmission intensity, and residual cases despite vaccination, and therefore could further benefit from scaling-up the existing vaccination program (Figure 3\u2014source data 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a recommendation based on the FOI estimates and burden estimates from the model.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:19:20.270580Z"
+    },
+    {
+      "id": "cacc07ec-f79c-4ec7-991b-edc00b131152",
+      "content_id": "7241860f-3a67-4be3-a249-0f087f9e5205",
+      "claim_id": "C79",
+      "claim": "High transmission intensity was estimated in Indonesia, Papua New Guinea, and Philippines where there are no current vaccination programs, suggesting that vaccination in these areas should be a future priority.",
+      "claim_type": "EXPLICIT",
+      "source": "We estimated high transmission intensity in Indonesia, Papua New Guinea, and Philippines where there are no current vaccination programs, suggesting that vaccination in these areas should be a future priority.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a recommendation based on the FOI estimates and absence of vaccination programs.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:19:20.270580Z"
+    },
+    {
+      "id": "7a783535-2297-457c-bfdf-991c50ebea5d",
+      "content_id": "7241860f-3a67-4be3-a249-0f087f9e5205",
+      "claim_id": "C80",
+      "claim": "A substantial vaccine impact was estimated in South Korea, Sri Lanka, Thailand and Taiwan with a long history of JE vaccination.",
+      "claim_type": "EXPLICIT",
+      "source": "For areas with a long history of JE vaccination (see Figure 3\u2014source data 1). such as South Korea, Sri Lanka, Thailand and Taiwan, (Figure 4), we estimate a substantial vaccine impact (Figure 5), though with cases still occurring.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the burden estimation model comparing scenarios with and without vaccination.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:19:20.270580Z"
+    },
+    {
+      "id": "5a1d655d-81ce-4118-bd11-8d669db33873",
+      "content_id": "7241860f-3a67-4be3-a249-0f087f9e5205",
+      "claim_id": "C81",
+      "claim": "Minimal impact of vaccination was estimated in Japan, Malaysia, and Australia despite long vaccination history.",
+      "claim_type": "EXPLICIT",
+      "source": "In other countries with a long vaccination history however, we estimate a minimal impact of vaccination (Figures 4 and 5), due to low estimated transmission intensity in Japan, low vaccination coverage in Malaysia, or both in Australia",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the burden estimation model with explanations for the minimal impact.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:19:20.270580Z"
+    },
+    {
+      "id": "1f865428-bad0-4a83-94bb-180cf583a222",
+      "content_id": "7241860f-3a67-4be3-a249-0f087f9e5205",
+      "claim_id": "C82",
+      "claim": "There are limitations to how well the method will work in Japan given the high rate of vaccination there.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, there are limitations to how well our method will work, given the high rate of vaccination there.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an acknowledgment of a methodological limitation for areas with high vaccination coverage.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:19:20.270580Z"
+    },
+    {
+      "id": "e92568f7-3925-49d8-854d-f359d63d0438",
+      "content_id": "7241860f-3a67-4be3-a249-0f087f9e5205",
+      "claim_id": "C83",
+      "claim": "The study may be under-estimating the impact of vaccination in Japan.",
+      "claim_type": "EXPLICIT",
+      "source": "This may mean we are under-estimating the impact of vaccination in Japan.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about a potential limitation in the estimates for Japan.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:19:20.270580Z"
+    },
+    {
+      "id": "52aec008-14ad-41d8-b2a3-a86661ebbc38",
+      "content_id": "7241860f-3a67-4be3-a249-0f087f9e5205",
+      "claim_id": "C84",
+      "claim": "Annually there are still 100,000 cases of JE in Asia.",
+      "claim_type": "EXPLICIT",
+      "source": "We estimate annually there are still 100,000 cases of JE in Asia",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding from the burden estimation model for 2015.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:19:20.270580Z"
+    },
+    {
+      "id": "33092ec0-ee0f-4ece-a7bb-c0ce61db9c9a",
+      "content_id": "7241860f-3a67-4be3-a249-0f087f9e5205",
+      "claim_id": "C85",
+      "claim": "2/3 of all JE cases are still not being averted despite vaccination being available.",
+      "claim_type": "EXPLICIT",
+      "source": "making a 2/3 of all cases of this severe but vaccine preventable still not being averted.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on comparing the number of cases with and without vaccination scenarios.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:19:20.270580Z"
+    },
+    {
+      "id": "0e993d71-4b66-476b-bc33-d1fd7d546dbb",
+      "content_id": "7241860f-3a67-4be3-a249-0f087f9e5205",
+      "claim_id": "C86",
+      "claim": "The majority of remaining JE cases are focused in countries with still developing healthcare systems.",
+      "claim_type": "EXPLICIT",
+      "source": "The majority of remaining cases are focussed in countries with still developing healthcare systems.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the geographic distribution of estimated cases.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:19:20.270580Z"
+    },
+    {
+      "id": "990c325e-dd28-4eb0-8dd1-0e170797cc63",
+      "content_id": "7241860f-3a67-4be3-a249-0f087f9e5205",
+      "claim_id": "C87",
+      "claim": "The systematic review used search terms 'epidemiology' or 'incidence' or 'prevalence' or 'public health' or 'surveillance' or 'distribution' in all fields with 'Japanese encephalitis' in the title or abstract.",
+      "claim_type": "EXPLICIT",
+      "source": "We used the search terms 'epidemiology' or 'incidence' or 'prevalence' or 'public health' or 'surveillance' or 'distribution' in all fields with 'Japanese encephalitis' in the title or abstract.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the systematic review methodology.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:19:20.270580Z"
+    },
+    {
+      "id": "38125f50-7b77-42db-bc18-1b6fe4a89e20",
+      "content_id": "7241860f-3a67-4be3-a249-0f087f9e5205",
+      "claim_id": "C88",
+      "claim": "Vaccination information was obtained from three main sources: literature review, WHO, and Gavi.",
+      "claim_type": "EXPLICIT",
+      "source": "We obtained the vaccination information from three main sources: literature review, WHO, and Gavi (Figure 3\u2014source data 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the data sources for vaccination information.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:19:20.270580Z"
+    },
+    {
+      "id": "bb4d354d-67e7-4725-ad95-264bbfa62770",
+      "content_id": "7241860f-3a67-4be3-a249-0f087f9e5205",
+      "claim_id": "C89",
+      "claim": "Campaign vaccination information was mainly from Gavi and routine vaccination was from WHO.",
+      "claim_type": "EXPLICIT",
+      "source": "Campaign vaccination information was mainly from Gavi and routine vaccination was from WHO, while the literature contains both.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the data sources for different types of vaccination information.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:19:20.270580Z"
+    },
+    {
+      "id": "abc8a982-edd1-46d1-9dd4-d81581ef2b4c",
+      "content_id": "7241860f-3a67-4be3-a249-0f087f9e5205",
+      "claim_id": "C90",
+      "claim": "When there were disagreements between different vaccination information sources, information from the literature review was used.",
+      "claim_type": "EXPLICIT",
+      "source": "When there were disagreements between the different vaccination information sources, we chose to use the information from the literature review.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the decision rule for handling conflicting vaccination data.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:19:20.270580Z"
+    },
+    {
+      "id": "67dea14f-9c83-4e9a-ac14-03a4109acbc9",
+      "content_id": "7241860f-3a67-4be3-a249-0f087f9e5205",
+      "claim_id": "C91",
+      "claim": "The study assumed that the JE vaccine has 100% effectiveness.",
+      "claim_type": "EXPLICIT",
+      "source": "We assumed that the JE vaccine has 100% effectiveness, which is reasonable given the reported high effectiveness of the vaccine (World Health Organization, 2012a; WHO, 2014; World Health Organization, 2012b)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological assumption supported by cited references about vaccine effectiveness.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:19:20.270580Z"
+    },
+    {
+      "id": "c8423bd5-98b2-43e1-8112-96e5918d65c1",
+      "content_id": "7241860f-3a67-4be3-a249-0f087f9e5205",
+      "claim_id": "C92",
+      "claim": "The study assumed that protection acquired from natural infection or vaccination was life-long.",
+      "claim_type": "EXPLICIT",
+      "source": "and that the protection acquired from natural infection or vaccination was life-long.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological assumption about immunity duration.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:19:20.270580Z"
+    },
+    {
+      "id": "1d8314e0-4a00-42bc-b68b-ac9e9cadd383",
+      "content_id": "7241860f-3a67-4be3-a249-0f087f9e5205",
+      "claim_id": "C93",
+      "claim": "The endemic areas were defined to be the same as in the previous JE burden estimate by Campbell et al., 2011.",
+      "claim_type": "EXPLICIT",
+      "source": "For our estimate, the endemic areas were defined to be the same as in the previous JE burden estimate (Campbell et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological decision to use the same geographic classification as previous work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:19:20.270580Z"
+    },
+    {
+      "id": "30a86d82-05b7-4167-885a-56a536a30488",
+      "content_id": "7241860f-3a67-4be3-a249-0f087f9e5205",
+      "claim_id": "C94",
+      "claim": "For China, India, Nepal and Indonesia, where transmission intensity is diverse, these countries were broken down to low, medium, or high endemic areas.",
+      "claim_type": "EXPLICIT",
+      "source": "For China, India, Nepal and Indonesia, where transmission intensity is diverse these countries were broken down to low, medium, or high endemic areas.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological decision about geographic stratification.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:19:20.270580Z"
+    },
+    {
+      "id": "a98e615a-a48c-4c04-af82-fd22f64e5b47",
+      "content_id": "7241860f-3a67-4be3-a249-0f087f9e5205",
+      "claim_id": "C95",
+      "claim": "In total, there are 30 endemic areas, spanning 24 countries.",
+      "claim_type": "EXPLICIT",
+      "source": "In total, there are 30 endemic areas, spanning 24 countries.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the geographic scope of the study.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:19:20.270580Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "6b3550f3-8102-4be2-b663-afb8ede5f90b",
+      "content_id": "7241860f-3a67-4be3-a249-0f087f9e5205",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "A systematic review identified 53 studies with age-stratified JE case data from 2337 initial search results. The majority of studies (79%) contained data from after 2000, with most covering 1-4 year periods.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C32-C37 describe the systematic review process with clear numbers at each stage (2337 initial results \u2192 407 relevant \u2192 261 full-text \u2192 53 final studies). The temporal distribution of studies is well-documented. This is a straightforward methodological result with transparent reporting.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:19:20.270580Z"
+    },
+    {
+      "id": "9811e025-9b80-425c-9367-f5c472600438",
+      "content_id": "7241860f-3a67-4be3-a249-0f087f9e5205",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Vaccination information was obtained from three sources (literature review, WHO, and Gavi), with campaign data mainly from Gavi and routine vaccination from WHO. When sources disagreed, literature review data was prioritized.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C88-C90 clearly describe the data sources and decision rules for handling conflicting vaccination information. This methodological approach is transparent and reasonable, though the quality of the underlying vaccination data may vary by source.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:19:20.270580Z"
+    },
+    {
+      "id": "68d142cf-d225-401e-bf65-bb9d8c79f268",
+      "content_id": "7241860f-3a67-4be3-a249-0f087f9e5205",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Force of infection (FOI) estimates from the catalytic model ranged from 0.001 in Japan to 0.507 in Guigang, China, with most estimates between 0.05-0.2 (median 0.09).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C38-C39 present FOI estimates with credible intervals from model fitting to age-stratified data. The wide range reflects genuine geographic variation in transmission intensity. The authors note good model convergence and fit (referenced in supplementary materials).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:19:20.270580Z"
+    },
+    {
+      "id": "d0d8f308-f5ae-44eb-8cec-c6875930bc0d",
+      "content_id": "7241860f-3a67-4be3-a249-0f087f9e5205",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "High FOI in southern China, Vietnam, and Philippines correlates with high pig density and Culex probability, while high FOI in India and Indonesia despite low pig density suggests other animal reservoirs (wading birds or poultry) may contribute to transmission.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C53-C54 present correlations between FOI and environmental factors, but C55 acknowledges this is speculative with limited evidence. The inference about alternative reservoirs is reasonable but not directly tested. This represents hypothesis generation rather than definitive findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:19:20.270580Z"
+    },
+    {
+      "id": "d9d91bef-0c93-421a-ab4a-d8aeb85dd0c4",
+      "content_id": "7241860f-3a67-4be3-a249-0f087f9e5205",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Lower FOI in Taiwan (0.061) and South Korea (0.041) may be explained by urbanization reducing proximity to pig farms and rice fields, though data limitations and vaccination history uncertainties exist.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C56 provides FOI estimates, but C57 acknowledges this is speculative. The urbanization hypothesis is plausible but not tested. The authors also note potential confounding from incomplete vaccination data and lack of recent studies, making this interpretation uncertain.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:19:20.270580Z"
+    },
+    {
+      "id": "3a4da1d5-0644-4d3a-9880-1ea8b6ac7929",
+      "content_id": "7241860f-3a67-4be3-a249-0f087f9e5205",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Bayesian model estimates of susceptible proportions after vaccination in China and Japan were lower than expected from available vaccination data, suggesting missing historical vaccination information.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C58-C59 describe a strength of the Bayesian approach\u2014detecting inconsistencies between prior vaccination data and observed age distributions. This finding is internally consistent with the model structure and highlights data gaps, though it doesn't definitively prove missing vaccinations.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:19:20.270580Z"
+    },
+    {
+      "id": "5ad8db15-c360-4cb6-b88d-85801deee501",
+      "content_id": "7241860f-3a67-4be3-a249-0f087f9e5205",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "SA 14-14-2 vaccine showed nearly 100% efficacy in trials but only 30-40% efficacy in India, with lower seroconversion and vaccination coverage than reported.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C60-C64 cite multiple independent sources documenting discrepancies in vaccine performance and coverage in India. The contrast between trial efficacy (C61) and field effectiveness (C62-C64) is well-documented through citations, though the underlying reasons remain unclear.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:19:20.270580Z"
+    },
+    {
+      "id": "5b75d90c-8a54-45f0-b00e-6ff1fd1010db",
+      "content_id": "7241860f-3a67-4be3-a249-0f087f9e5205",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Cross-reactive immunity to other flaviviruses or differences in circulating JE genotypes could explain variable vaccine efficacy across locations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C65-C66 present speculative explanations for observed vaccine efficacy differences. While these are plausible hypotheses, the authors explicitly state these are possible explanations without providing direct evidence. This represents hypothesis generation requiring future investigation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:19:20.270580Z"
+    },
+    {
+      "id": "0378ade3-add1-4386-a38c-47132850e01a",
+      "content_id": "7241860f-3a67-4be3-a249-0f087f9e5205",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "In 2015, JEV infections caused approximately 100,000 JE cases (95% CI: 61,720-157,522) and 25,125 deaths (95% CI: 14,550-46,031) globally.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C4, and C84 present the primary burden estimates with credible intervals from the catalytic model. The estimates are based on FOI extrapolation, population data, and symptomatic rates. While model assumptions affect precision, the methodology is sound and uncertainty is quantified.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:19:20.270580Z"
+    },
+    {
+      "id": "e658697a-4794-4e7d-b714-4cb31625e7b6",
+      "content_id": "7241860f-3a67-4be3-a249-0f087f9e5205",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "From 2000-2015, there were 1,976,238 JE cases with vaccination versus 2,284,012 cases in a counterfactual no-vaccination scenario.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C40-C41 present burden estimates under two scenarios using the same model framework. The counterfactual approach is methodologically sound for estimating vaccine impact, though it relies on assumptions about vaccine effectiveness (100%) and immunity duration (lifelong).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:19:20.270580Z"
+    },
+    {
+      "id": "fe2c8942-8c36-44e8-b96a-ee30b0cc7c30",
+      "content_id": "7241860f-3a67-4be3-a249-0f087f9e5205",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Vaccination prevented 307,774 JE cases (95% CI: 167,442-509,583) and 74,769 deaths (95% CI: 37,837-129,028) from 2000-2015, with approximately 45,000 cases averted in 2015 alone.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5, C42, and C44 quantify vaccination impact by comparing scenarios. The estimates are internally consistent and include uncertainty intervals. However, the 100% vaccine effectiveness assumption (C91) may overestimate impact, particularly given India data (C62).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:19:20.270580Z"
+    },
+    {
+      "id": "700a8edd-927d-4373-a64f-93595881d33d",
+      "content_id": "7241860f-3a67-4be3-a249-0f087f9e5205",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The greatest vaccination impact occurred 2005-2010, primarily due to China's routine vaccination program starting in 2008, which averted approximately 20,000 cases in 2015 and contributed most to global burden reduction.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C43, C48, and C77 identify China's program as the major driver of global impact. This is supported by the large population, high transmission intensity, and timing of vaccination scale-up. The finding is consistent across the model outputs shown in Figure 5.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:19:20.270580Z"
+    },
+    {
+      "id": "38bd99bd-253d-43d4-8b29-6a3af280e4ca",
+      "content_id": "7241860f-3a67-4be3-a249-0f087f9e5205",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The highest case burdens were estimated in high-endemic China (~40,000 annual cases without vaccination, ~20,000 with) and medium/high-endemic India (~20,000 and ~15,000 respectively), while Australia, Brunei, Bhutan, and Russia had <100 annual cases.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C45-C47 and C67 present regional burden estimates consistent with population sizes, transmission intensity, and vaccination coverage. The geographic distribution aligns with previous literature (cited) and is visualized in Figures 5-6. The wide range reflects genuine heterogeneity.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:19:20.270580Z"
+    },
+    {
+      "id": "7d56e49f-927e-4f9f-a5d2-840014b06667",
+      "content_id": "7241860f-3a67-4be3-a249-0f087f9e5205",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Substantial vaccine impact was observed in countries with intensive vaccination programs including South Korea, Sri Lanka, Thailand, Taiwan, and Vietnam.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C49 and C80 identify countries with clear differences between vaccination scenarios. This is supported by Figure 5 showing divergence between scenarios in these countries. The finding is consistent with documented long-term vaccination programs (Figure 3).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:19:20.270580Z"
+    },
+    {
+      "id": "4c30f055-3072-48dd-8f2a-48c065c24d76",
+      "content_id": "7241860f-3a67-4be3-a249-0f087f9e5205",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Minimal vaccination impact was estimated in Japan, Malaysia, and Australia despite long vaccination histories, due to low transmission intensity (Japan), low coverage (Malaysia), or both (Australia), though methodological limitations may underestimate Japan's impact.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C50-C51 present findings, but C82-C83 acknowledge significant methodological limitations for high-vaccination settings like Japan. The catalytic model may not perform well when most of the population is vaccinated, making these estimates uncertain. The explanations are plausible but not definitive.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:19:20.270580Z"
+    },
+    {
+      "id": "d2cda985-684b-46e3-89e4-eff39f433f26",
+      "content_id": "7241860f-3a67-4be3-a249-0f087f9e5205",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "No vaccination programs were documented in Bangladesh, Brunei, Bhutan, Indonesia, Myanmar, Pakistan, Philippines, Papua New Guinea, Russia, or Singapore based on collated data.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C51 reports absence of vaccination programs based on systematic data collection from multiple sources (WHO, Gavi, literature). While absence of evidence is not evidence of absence, the comprehensive search makes this finding reliable for the study period.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:19:20.270580Z"
+    },
+    {
+      "id": "f54efdc7-fcd6-4d60-b8fc-c0eaaad0de25",
+      "content_id": "7241860f-3a67-4be3-a249-0f087f9e5205",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "India, Timor-Leste, and Vietnam could benefit from scaling up existing programs, while Indonesia, Papua New Guinea, and Philippines (with high transmission but no programs) should be vaccination priorities.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C78-C79 present policy recommendations based on FOI estimates and vaccination status. These are logical conclusions from the data showing high transmission intensity and either inadequate coverage or no programs. However, implementation feasibility is not assessed.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:19:20.270580Z"
+    },
+    {
+      "id": "b9450d86-485d-45d0-904e-67612c1f4f98",
+      "content_id": "7241860f-3a67-4be3-a249-0f087f9e5205",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "The current estimate of ~100,000 annual cases is 1.5 times higher than the previous Campbell et al. (2011) estimate of ~70,000 cases, due to more robust accounting for under-reporting and surveillance quality.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C52, C31, and C68 compare current and previous estimates with explanation for differences. The methodological improvements (age-stratified data, catalytic modeling) do address limitations of previous approaches. Table 1 shows area-by-area comparisons supporting this conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:19:20.270580Z"
+    },
+    {
+      "id": "3179ef91-30bf-4d27-8209-a6f6285088b1",
+      "content_id": "7241860f-3a67-4be3-a249-0f087f9e5205",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "Two-thirds of JE cases remain unaverted despite vaccine availability, with most cases concentrated in countries with developing healthcare systems.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C85-C86 synthesize the vaccination impact findings (45,000 averted of ~145,000 total = ~31% averted, or ~69% not averted). The geographic concentration in developing countries is evident from Figures 5-6. This represents a valid high-level summary of the results.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:19:20.270580Z"
+    },
+    {
+      "id": "1ce4e785-2edb-4041-af30-a670edea8d4e",
+      "content_id": "7241860f-3a67-4be3-a249-0f087f9e5205",
+      "result_id": "R20",
+      "result_category": "llm",
+      "result": "The vaccination impact estimates are underestimates because they don't account for future protection of vaccinated individuals or pre-2000 vaccination programs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C70-C71 acknowledge temporal limitations of the analysis. This is a valid limitation\u2014the 2000-2015 window excludes both future benefits and historical impacts. The authors appropriately frame their estimates as conservative, though quantifying the underestimation is not possible.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:19:20.270580Z"
+    },
+    {
+      "id": "04b0ca36-dff0-4bc3-88b3-54ede102b98a",
+      "content_id": "7241860f-3a67-4be3-a249-0f087f9e5205",
+      "result_id": "R21",
+      "result_category": "llm",
+      "result": "The model assumed 100% vaccine effectiveness and lifelong protection from natural infection or vaccination.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNSUPPORTED",
+      "evaluation": "Claim C91 assumes 100% effectiveness despite documented evidence of 30-40% effectiveness in India (C62). While cited references support high effectiveness generally, this assumption is contradicted by the study's own findings about India. Claim C92's lifelong immunity assumption is also strong and not validated. These assumptions likely bias vaccination impact estimates upward.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:19:20.270580Z"
+    },
+    {
+      "id": "1aa261b4-4785-4557-8e38-fbdbf6c874e1",
+      "content_id": "7241860f-3a67-4be3-a249-0f087f9e5205",
+      "result_id": "R22",
+      "result_category": "llm",
+      "result": "The study used time-dependent estimates incorporating population changes and vaccination progression, with endemic areas defined as in Campbell et al. (2011): 30 areas spanning 24 countries, with China, India, Nepal, and Indonesia stratified by transmission intensity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C69, C93-C95 describe methodological decisions about geographic classification and temporal dynamics. Using the Campbell classification enables comparison with previous work. The time-dependent approach is appropriate for capturing vaccination program evolution, though FOI is assumed constant over time.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:19:20.270580Z"
+    },
+    {
+      "id": "fd761f48-a321-41d8-9b82-01dbbf74a544",
+      "content_id": "7241860f-3a67-4be3-a249-0f087f9e5205",
+      "result_id": "R23",
+      "result_category": "llm",
+      "result": "JE vaccination does not produce herd immunity since humans are dead-end hosts. While previous attempts at vector control and animal vaccination were ineffective or impractical, human vaccination can effectively reduce case numbers despite not interrupting transmission.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C73-C76 correctly describe JE epidemiology (dead-end hosts, no herd immunity) with appropriate citations. The conclusion that human vaccination is effective despite not interrupting transmission is supported by the modeling results showing substantial case reductions. This represents sound interpretation of the disease biology and results.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:19:20.270580Z"
+    },
+    {
+      "id": "96adabb9-b0fa-408e-9f80-a18e2b0d22e6",
+      "content_id": "7241860f-3a67-4be3-a249-0f087f9e5205",
+      "result_id": "R24",
+      "result_category": "llm",
+      "result": "Background information on JE disease characteristics, transmission, historical outbreaks, and current endemic status is presented, including that JE is mosquito-borne with high mortality (20-30%) and disability rates among symptomatic cases, though only 1 in 25-1000 infections are symptomatic.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C6-C18 present established background knowledge about JE with appropriate citations. These are well-documented facts from the literature and WHO sources. This background appropriately contextualizes the study but does not represent novel findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:19:20.270580Z"
+    },
+    {
+      "id": "617a8bb6-1641-466c-b866-67b4a8d61167",
+      "content_id": "7241860f-3a67-4be3-a249-0f087f9e5205",
+      "result_id": "R25",
+      "result_category": "llm",
+      "result": "Background on JE vaccines is provided, including the evolution from mouse brain vaccines to SA 14-14-2 (inexpensive, single-dose, safer) now widely used with Gavi support, and other vaccine types.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2, C19-C28 present established information about JE vaccine history and characteristics with appropriate citations. The description of SA 14-14-2 as recently developed, inexpensive, and increasingly used is accurate. This provides necessary context but is not a novel finding.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:19:20.270580Z"
+    },
+    {
+      "id": "9ec1bd55-0724-4e74-8680-df94089907c1",
+      "content_id": "7241860f-3a67-4be3-a249-0f087f9e5205",
+      "result_id": "R26",
+      "result_category": "llm",
+      "result": "WHO recommends MAC-ELISA testing of CSF for JE diagnosis, though serum can be used with risk of false positives from cross-reactivity with other flaviviruses or vaccination.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C29-C30 accurately describe WHO diagnostic recommendations with appropriate citations. This background information is relevant for understanding surveillance limitations and case ascertainment issues that affect burden estimates, but is not a novel finding.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:19:20.270580Z"
+    },
+    {
+      "id": "8d260dc9-4908-46ef-8ee7-a468a36306dc",
+      "content_id": "7241860f-3a67-4be3-a249-0f087f9e5205",
+      "result_id": "R27",
+      "result_category": "llm",
+      "result": "Focus on case numbers alone does not fully capture JE burden because many cases have long-term neurological and psychiatric sequelae.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C72 appropriately acknowledges a limitation of the case-focused analysis. This is consistent with earlier background (C13) about 30-50% of survivors having sequelae. The authors note future work should estimate DALYs to capture full burden.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:19:20.270580Z"
+    },
+    {
+      "id": "e43e127d-a694-4a82-8df0-634d7509ff05",
+      "content_id": "7241860f-3a67-4be3-a249-0f087f9e5205",
+      "result_id": "R28",
+      "result_category": "llm",
+      "result": "The systematic review used specific search terms combining epidemiological keywords with 'Japanese encephalitis' in PubMed.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C87 describes the search strategy clearly. However, the authors acknowledge not including non-English papers (all from China), which is a limitation for estimating FOI in China. The search strategy is transparent and reproducible.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:19:20.270580Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "03160399-1cae-42e1-ada1-778f32f96881",
+      "result_id": "6b3550f3-8102-4be2-b663-afb8ede5f90b"
+    },
+    {
+      "claim_id": "c512db12-251f-4bf4-ba06-4a32582bdd15",
+      "result_id": "6b3550f3-8102-4be2-b663-afb8ede5f90b"
+    },
+    {
+      "claim_id": "b3987698-e2f2-4953-8ed6-615062a9478c",
+      "result_id": "6b3550f3-8102-4be2-b663-afb8ede5f90b"
+    },
+    {
+      "claim_id": "c443ffa8-2d71-4f9a-bcae-2ca6efae46be",
+      "result_id": "6b3550f3-8102-4be2-b663-afb8ede5f90b"
+    },
+    {
+      "claim_id": "7848eccf-051f-45ce-90d4-5f3f2f68d5cf",
+      "result_id": "6b3550f3-8102-4be2-b663-afb8ede5f90b"
+    },
+    {
+      "claim_id": "e01c7c80-afae-4333-a6b7-3ef8877d3c3a",
+      "result_id": "6b3550f3-8102-4be2-b663-afb8ede5f90b"
+    },
+    {
+      "claim_id": "38125f50-7b77-42db-bc18-1b6fe4a89e20",
+      "result_id": "9811e025-9b80-425c-9367-f5c472600438"
+    },
+    {
+      "claim_id": "bb4d354d-67e7-4725-ad95-264bbfa62770",
+      "result_id": "9811e025-9b80-425c-9367-f5c472600438"
+    },
+    {
+      "claim_id": "abc8a982-edd1-46d1-9dd4-d81581ef2b4c",
+      "result_id": "9811e025-9b80-425c-9367-f5c472600438"
+    },
+    {
+      "claim_id": "6b51ab92-3fca-4acc-9fdb-8a9afa96e57f",
+      "result_id": "68d142cf-d225-401e-bf65-bb9d8c79f268"
+    },
+    {
+      "claim_id": "0a05e3a2-da1e-410e-8325-2054f2a1d0b3",
+      "result_id": "68d142cf-d225-401e-bf65-bb9d8c79f268"
+    },
+    {
+      "claim_id": "072b6d8f-c79b-47ac-8136-5a95562aaac2",
+      "result_id": "d0d8f308-f5ae-44eb-8cec-c6875930bc0d"
+    },
+    {
+      "claim_id": "40ed0743-7b86-4a35-bf8d-0172c30dd937",
+      "result_id": "d0d8f308-f5ae-44eb-8cec-c6875930bc0d"
+    },
+    {
+      "claim_id": "21ab5deb-257d-49d7-8a6c-1f1964ba84c1",
+      "result_id": "d0d8f308-f5ae-44eb-8cec-c6875930bc0d"
+    },
+    {
+      "claim_id": "c3d56b50-c0cf-4dfd-877c-31c4d1e70fb6",
+      "result_id": "d9d91bef-0c93-421a-ab4a-d8aeb85dd0c4"
+    },
+    {
+      "claim_id": "5053faa7-4412-4888-91ce-de10624b5f69",
+      "result_id": "d9d91bef-0c93-421a-ab4a-d8aeb85dd0c4"
+    },
+    {
+      "claim_id": "494c95a5-ce1e-47bc-acee-cea029a185fd",
+      "result_id": "3a4da1d5-0644-4d3a-9880-1ea8b6ac7929"
+    },
+    {
+      "claim_id": "90e74d7b-2043-422f-84f7-3798e175f56a",
+      "result_id": "3a4da1d5-0644-4d3a-9880-1ea8b6ac7929"
+    },
+    {
+      "claim_id": "a4762900-1ac8-49f6-ad08-ecff7234dc43",
+      "result_id": "5ad8db15-c360-4cb6-b88d-85801deee501"
+    },
+    {
+      "claim_id": "9d372a4c-4530-429a-a3e3-de9cc6201d7d",
+      "result_id": "5ad8db15-c360-4cb6-b88d-85801deee501"
+    },
+    {
+      "claim_id": "3d299a50-1046-4af2-bba5-533c96533e3e",
+      "result_id": "5ad8db15-c360-4cb6-b88d-85801deee501"
+    },
+    {
+      "claim_id": "29da33fb-1098-403b-a4e5-780d243dabd5",
+      "result_id": "5ad8db15-c360-4cb6-b88d-85801deee501"
+    },
+    {
+      "claim_id": "dbe4a362-fc93-4f4e-aa87-9b6407b23bed",
+      "result_id": "5ad8db15-c360-4cb6-b88d-85801deee501"
+    },
+    {
+      "claim_id": "252336cc-8e10-4a9e-a37b-e1a67910a46b",
+      "result_id": "5b75d90c-8a54-45f0-b00e-6ff1fd1010db"
+    },
+    {
+      "claim_id": "ea3a9585-09cd-4646-839d-2628ede20600",
+      "result_id": "5b75d90c-8a54-45f0-b00e-6ff1fd1010db"
+    },
+    {
+      "claim_id": "fc621340-574e-4813-a671-ecda99e83bf3",
+      "result_id": "0378ade3-add1-4386-a38c-47132850e01a"
+    },
+    {
+      "claim_id": "1c5750a8-604d-4bad-8ed4-389f5686b45b",
+      "result_id": "0378ade3-add1-4386-a38c-47132850e01a"
+    },
+    {
+      "claim_id": "52aec008-14ad-41d8-b2a3-a86661ebbc38",
+      "result_id": "0378ade3-add1-4386-a38c-47132850e01a"
+    },
+    {
+      "claim_id": "bd607adc-8d55-40fa-b78a-1f39b4fb66be",
+      "result_id": "e658697a-4794-4e7d-b714-4cb31625e7b6"
+    },
+    {
+      "claim_id": "4f9e4634-d388-4863-af9a-d8fd08b75b16",
+      "result_id": "e658697a-4794-4e7d-b714-4cb31625e7b6"
+    },
+    {
+      "claim_id": "110b312f-d8f4-49f5-ab9c-22e5ada8679c",
+      "result_id": "fe2c8942-8c36-44e8-b96a-ee30b0cc7c30"
+    },
+    {
+      "claim_id": "efdd9f0f-014f-4c22-8327-b89e7a7b6a80",
+      "result_id": "fe2c8942-8c36-44e8-b96a-ee30b0cc7c30"
+    },
+    {
+      "claim_id": "a344e822-d09c-42eb-b495-5eda758d230f",
+      "result_id": "fe2c8942-8c36-44e8-b96a-ee30b0cc7c30"
+    },
+    {
+      "claim_id": "f5d2bef9-432b-4fb1-b9f8-15a3df1cf4d2",
+      "result_id": "700a8edd-927d-4373-a64f-93595881d33d"
+    },
+    {
+      "claim_id": "0b041449-b8ad-47ad-a293-9ddff654cf3b",
+      "result_id": "700a8edd-927d-4373-a64f-93595881d33d"
+    },
+    {
+      "claim_id": "7e67b208-52c3-40dc-a655-ca5537894512",
+      "result_id": "700a8edd-927d-4373-a64f-93595881d33d"
+    },
+    {
+      "claim_id": "20286b04-8dda-46ed-aa62-5683b3c2c576",
+      "result_id": "38bd99bd-253d-43d4-8b29-6a3af280e4ca"
+    },
+    {
+      "claim_id": "c4848169-c8ab-4503-8327-c475ef0b1f9f",
+      "result_id": "38bd99bd-253d-43d4-8b29-6a3af280e4ca"
+    },
+    {
+      "claim_id": "7cea6374-d9e1-47e4-8273-9340ac72c24d",
+      "result_id": "38bd99bd-253d-43d4-8b29-6a3af280e4ca"
+    },
+    {
+      "claim_id": "2d92601a-05b0-4ec7-b9bc-c328beb7a3bd",
+      "result_id": "38bd99bd-253d-43d4-8b29-6a3af280e4ca"
+    },
+    {
+      "claim_id": "bc747219-d6f2-4495-9022-5fe92b806695",
+      "result_id": "7d56e49f-927e-4f9f-a5d2-840014b06667"
+    },
+    {
+      "claim_id": "7a783535-2297-457c-bfdf-991c50ebea5d",
+      "result_id": "7d56e49f-927e-4f9f-a5d2-840014b06667"
+    },
+    {
+      "claim_id": "75998428-ac2d-4a23-8be7-ded3323b7e4e",
+      "result_id": "4c30f055-3072-48dd-8f2a-48c065c24d76"
+    },
+    {
+      "claim_id": "5a1d655d-81ce-4118-bd11-8d669db33873",
+      "result_id": "4c30f055-3072-48dd-8f2a-48c065c24d76"
+    },
+    {
+      "claim_id": "1f865428-bad0-4a83-94bb-180cf583a222",
+      "result_id": "4c30f055-3072-48dd-8f2a-48c065c24d76"
+    },
+    {
+      "claim_id": "e92568f7-3925-49d8-854d-f359d63d0438",
+      "result_id": "4c30f055-3072-48dd-8f2a-48c065c24d76"
+    },
+    {
+      "claim_id": "fea84997-35a5-49cf-a718-ea24907dce1d",
+      "result_id": "d2cda985-684b-46e3-89e4-eff39f433f26"
+    },
+    {
+      "claim_id": "2b9cee40-6a37-4891-80e3-c7ccd39cb8ba",
+      "result_id": "f54efdc7-fcd6-4d60-b8fc-c0eaaad0de25"
+    },
+    {
+      "claim_id": "cacc07ec-f79c-4ec7-991b-edc00b131152",
+      "result_id": "f54efdc7-fcd6-4d60-b8fc-c0eaaad0de25"
+    },
+    {
+      "claim_id": "806180de-20eb-4f7c-8a49-da318fa1e727",
+      "result_id": "b9450d86-485d-45d0-904e-67612c1f4f98"
+    },
+    {
+      "claim_id": "09900315-2b3e-416f-9643-3d9884e5f2bd",
+      "result_id": "b9450d86-485d-45d0-904e-67612c1f4f98"
+    },
+    {
+      "claim_id": "f3580ac4-ebf8-4666-9156-df6d0eb560fe",
+      "result_id": "b9450d86-485d-45d0-904e-67612c1f4f98"
+    },
+    {
+      "claim_id": "33092ec0-ee0f-4ece-a7bb-c0ce61db9c9a",
+      "result_id": "3179ef91-30bf-4d27-8209-a6f6285088b1"
+    },
+    {
+      "claim_id": "0e993d71-4b66-476b-bc33-d1fd7d546dbb",
+      "result_id": "3179ef91-30bf-4d27-8209-a6f6285088b1"
+    },
+    {
+      "claim_id": "b41fc649-47d4-4ecb-a4fb-958498646830",
+      "result_id": "1ce4e785-2edb-4041-af30-a670edea8d4e"
+    },
+    {
+      "claim_id": "bdeb76ba-e4cc-4167-8cfe-4e8640a8d333",
+      "result_id": "1ce4e785-2edb-4041-af30-a670edea8d4e"
+    },
+    {
+      "claim_id": "67dea14f-9c83-4e9a-ac14-03a4109acbc9",
+      "result_id": "04b0ca36-dff0-4bc3-88b3-54ede102b98a"
+    },
+    {
+      "claim_id": "c8423bd5-98b2-43e1-8112-96e5918d65c1",
+      "result_id": "04b0ca36-dff0-4bc3-88b3-54ede102b98a"
+    },
+    {
+      "claim_id": "33617318-9a41-45ee-aa43-39b5109b9a56",
+      "result_id": "1aa261b4-4785-4557-8e38-fbdbf6c874e1"
+    },
+    {
+      "claim_id": "1d8314e0-4a00-42bc-b68b-ac9e9cadd383",
+      "result_id": "1aa261b4-4785-4557-8e38-fbdbf6c874e1"
+    },
+    {
+      "claim_id": "30a86d82-05b7-4167-885a-56a536a30488",
+      "result_id": "1aa261b4-4785-4557-8e38-fbdbf6c874e1"
+    },
+    {
+      "claim_id": "a98e615a-a48c-4c04-af82-fd22f64e5b47",
+      "result_id": "1aa261b4-4785-4557-8e38-fbdbf6c874e1"
+    },
+    {
+      "claim_id": "3f433ec7-079e-4d08-9bb7-46653e78a7c4",
+      "result_id": "fd761f48-a321-41d8-9b82-01dbbf74a544"
+    },
+    {
+      "claim_id": "4638182a-188e-4748-8898-aa7fd3f74944",
+      "result_id": "fd761f48-a321-41d8-9b82-01dbbf74a544"
+    },
+    {
+      "claim_id": "81338e97-2ec7-49de-b39c-837b4dff5e27",
+      "result_id": "fd761f48-a321-41d8-9b82-01dbbf74a544"
+    },
+    {
+      "claim_id": "757a21c8-e2b0-4693-a43f-d93fe316fc4a",
+      "result_id": "fd761f48-a321-41d8-9b82-01dbbf74a544"
+    },
+    {
+      "claim_id": "f0e76268-ef7d-491c-9b84-7ee8828b8de3",
+      "result_id": "96adabb9-b0fa-408e-9f80-a18e2b0d22e6"
+    },
+    {
+      "claim_id": "262212a0-6e7b-427f-86c4-23fd7e8c98dc",
+      "result_id": "96adabb9-b0fa-408e-9f80-a18e2b0d22e6"
+    },
+    {
+      "claim_id": "5e6222ad-99be-4ec6-90b0-1e666a79c770",
+      "result_id": "96adabb9-b0fa-408e-9f80-a18e2b0d22e6"
+    },
+    {
+      "claim_id": "f52b0a13-3896-454f-9a69-3d128f94faa0",
+      "result_id": "96adabb9-b0fa-408e-9f80-a18e2b0d22e6"
+    },
+    {
+      "claim_id": "47160360-525b-4735-8fe1-97a424a499fe",
+      "result_id": "96adabb9-b0fa-408e-9f80-a18e2b0d22e6"
+    },
+    {
+      "claim_id": "87a76cf9-0121-4c99-b2cd-431003ec3173",
+      "result_id": "96adabb9-b0fa-408e-9f80-a18e2b0d22e6"
+    },
+    {
+      "claim_id": "62212887-e6b0-4bed-be5c-68c6dcbccb77",
+      "result_id": "96adabb9-b0fa-408e-9f80-a18e2b0d22e6"
+    },
+    {
+      "claim_id": "d95be28c-799b-49ef-84c8-483773f66c25",
+      "result_id": "96adabb9-b0fa-408e-9f80-a18e2b0d22e6"
+    },
+    {
+      "claim_id": "b235ee4f-7c2c-441a-8cee-5f337120358e",
+      "result_id": "96adabb9-b0fa-408e-9f80-a18e2b0d22e6"
+    },
+    {
+      "claim_id": "0105cf42-8c02-4dfb-85b4-9369c261a7b9",
+      "result_id": "96adabb9-b0fa-408e-9f80-a18e2b0d22e6"
+    },
+    {
+      "claim_id": "b30dd5df-a130-4d19-98f2-e3a8ab09c5c7",
+      "result_id": "96adabb9-b0fa-408e-9f80-a18e2b0d22e6"
+    },
+    {
+      "claim_id": "d929b64d-10b3-4c8b-86f3-45694596c831",
+      "result_id": "96adabb9-b0fa-408e-9f80-a18e2b0d22e6"
+    },
+    {
+      "claim_id": "60ca6a08-0be9-481b-903e-411abdaf4ac3",
+      "result_id": "96adabb9-b0fa-408e-9f80-a18e2b0d22e6"
+    },
+    {
+      "claim_id": "c9783b65-a314-4b90-b2ce-039fe5084992",
+      "result_id": "96adabb9-b0fa-408e-9f80-a18e2b0d22e6"
+    },
+    {
+      "claim_id": "34ed3af1-7c4e-4537-b1ea-7de7ab7f63e5",
+      "result_id": "617a8bb6-1641-466c-b866-67b4a8d61167"
+    },
+    {
+      "claim_id": "e5d9a5d9-798a-4d0d-b4cb-6f7c90999567",
+      "result_id": "617a8bb6-1641-466c-b866-67b4a8d61167"
+    },
+    {
+      "claim_id": "14d5c03d-2c26-490d-bf6d-31f05f6e5e7c",
+      "result_id": "617a8bb6-1641-466c-b866-67b4a8d61167"
+    },
+    {
+      "claim_id": "5e2f2113-8eaf-4f9a-aee6-1b18714dd277",
+      "result_id": "617a8bb6-1641-466c-b866-67b4a8d61167"
+    },
+    {
+      "claim_id": "b1ada56a-7733-4439-a1bf-5ac6cc665b60",
+      "result_id": "617a8bb6-1641-466c-b866-67b4a8d61167"
+    },
+    {
+      "claim_id": "e106dbbf-4fcb-4091-9558-7baf5e07fadd",
+      "result_id": "617a8bb6-1641-466c-b866-67b4a8d61167"
+    },
+    {
+      "claim_id": "489a348f-c0f2-4cce-b4cb-23181a21988a",
+      "result_id": "617a8bb6-1641-466c-b866-67b4a8d61167"
+    },
+    {
+      "claim_id": "7449447b-9ac6-4c02-9c0f-9a1cea0ad5ec",
+      "result_id": "617a8bb6-1641-466c-b866-67b4a8d61167"
+    },
+    {
+      "claim_id": "bdd82bc5-bba3-4c24-a2d0-7059a0d29094",
+      "result_id": "617a8bb6-1641-466c-b866-67b4a8d61167"
+    },
+    {
+      "claim_id": "19ea67c1-4e2d-44d9-82be-5004d7fd47c1",
+      "result_id": "617a8bb6-1641-466c-b866-67b4a8d61167"
+    },
+    {
+      "claim_id": "19d4dd58-66c0-494d-9399-74224c7ba97f",
+      "result_id": "617a8bb6-1641-466c-b866-67b4a8d61167"
+    },
+    {
+      "claim_id": "afdb574a-aa51-4fc9-9bb3-721a19bc4744",
+      "result_id": "9ec1bd55-0724-4e74-8680-df94089907c1"
+    },
+    {
+      "claim_id": "135e9c2f-abb9-4c41-93eb-c0c2b5b0d892",
+      "result_id": "9ec1bd55-0724-4e74-8680-df94089907c1"
+    },
+    {
+      "claim_id": "425e866a-df4b-4cc4-b13a-ce7744125b20",
+      "result_id": "8d260dc9-4908-46ef-8ee7-a468a36306dc"
+    },
+    {
+      "claim_id": "990c325e-dd28-4eb0-8dd1-0e170797cc63",
+      "result_id": "e43e127d-a694-4a82-8df0-634d7509ff05"
+    }
+  ],
+  "comparisons": []
+}

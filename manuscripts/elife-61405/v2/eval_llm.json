@@ -1,0 +1,333 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8"
+    ],
+    "result": "The authors generated isogenic MCF10A cell lines with cohesin gene deletions using CRISPR-Cas9. RAD21+/- and SMC3+/- clones were heterozygous deletions, while STAG2-/- was a homozygous deletion confirmed by absence of mRNA and protein.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C8 describe the generation and genotyping of cohesin-deficient cell lines. The methodology is clearly described with sgRNA design targeting UTR regions (C3), single cell isolation and genotyping (C4), and specific genotype characterization for each clone (C5-C8). Figure 1 provides supporting evidence for the deletions and protein loss.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "Cohesin-deficient MCF10A clones showed essentially normal cell cycle progression with minor phenotypic differences. RAD21+/- and SMC3+/- proliferated more slowly, STAG2-/- exhibited chromosome cohesion defects, SMC3+/- had larger nuclei, and RAD21+/-/SMC3+/- showed occasional lagging chromosomes and micronuclei.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C16 are well-supported by Figure 2 data showing proliferation curves, cell cycle analysis, chromosome spreads, nuclear morphology, and micronuclei quantification. The phenotypic characterization is comprehensive with appropriate quantification and statistical analysis. Claim C13 is speculative but appropriately qualified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C28"
+    ],
+    "result": "Cohesin-deficient cells exhibited abnormal nucleolar morphology and differential sensitivity to DNA damage. RAD21+/- and SMC3+/- showed increased \u03b3-H2AX and TP53 upon Actinomycin D treatment, indicating compromised DNA damage repair, while STAG2-/- was more resistant. Mild to moderate sensitivity to PARP inhibitor Olaparib was confirmed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C28 are supported by Figure 3 and supplementary figures showing nucleolar morphology (fibrillarin/nucleolin staining), DNA damage markers (\u03b3-H2AX, TP53), and Olaparib sensitivity. The differential response between RAD21+/-/SMC3+/- versus STAG2-/- is well-documented and consistent with known roles of these cohesin subunits in DNA repair.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "A high-throughput screen of 3009 compounds identified 206 synthetic lethal candidates, with 18 compounds inhibiting all three cohesin-deficient cell lines \u226530% more than parental cells. Notable sensitive pathways included DNA damage repair, PI3K/AKT/mTOR, epigenetic control, and Wnt signaling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C33 describe the screening methodology and results, supported by Figure 4 and associated data tables. The screen design is appropriate with 5-point dose response, proper controls (DMSO, Camptothecin), and GR metrics to account for varying growth rates. The identification of 206 hits with 18 common to all three lines is clearly documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "The screen results align with known cohesin vulnerabilities. DNA damage repair inhibitor sensitivity agrees with prior PARP inhibitor studies. PI3K/AKT/mTOR inhibitor sensitivity is consistent with observed nucleolar deficiencies, as this pathway stimulates ribosome biogenesis and rDNA transcription in nucleoli.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C38 connect screen results to established biology. C34 is supported by citation and screen data. C35-C38 provide mechanistic reasoning linking PI3K/AKT/mTOR pathway to nucleolar phenotypes, with C36-C37 being established knowledge and C38 being reasonable inference from the data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "The BET inhibitor I-BET-762 and GSK3 inhibitor LY2090314 (Wnt agonist) inhibited growth of cohesin-deficient MCF10A cells. LY2090314 also inhibited K562 STAG2 R614* mutant leukemia cells and additional RAD21+/-/SMC3+/- clones.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C43 are supported by Figure 4F-G and supplementary figures showing dose-response curves. The validation across multiple cell lines (MCF10A clones, K562, additional clones) strengthens the findings. However, the therapeutic inference in C40 requires additional validation beyond cell culture.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "\u03b2-catenin is stabilized in cohesin-deficient cells. GSK3 levels were unchanged, but membrane-associated phospho-Ser33/37/Thr41-\u03b2-catenin (degradation-targeted form) was increased in cohesin-deficient clones and disappeared upon LY2090314 treatment. Active phospho-Ser675-\u03b2-catenin increased in cytoplasm following LY2090314 treatment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C55 are supported by Figure 5 showing Western blots of membrane and cytoplasmic fractions. The data demonstrate that inactive \u03b2-catenin is stabilized in cohesin-deficient cells and can be converted to active form upon GSK3 inhibition. The inference in C55 is reasonable based on the biochemical data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "\u03b2-catenin stabilization upon Wnt stimulation is conserved in HCT116 cells expressing SMC1A mutations (c.2027A>G and c.2479C>T). Increased basal phospho-Ser675-\u03b2-catenin was observed, and LY2090314 treatment markedly increased total \u03b2-catenin in SMC1A mutants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C58 are supported by Figure 5\u2014figure supplement 2 showing Western blots of HCT116 cells with SMC1A mutations. This extends the \u03b2-catenin stabilization finding to a fourth cohesin subunit, though the limitation is that these cells express mutant SMC1A rather than having complete deficiency.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "Active phospho-Ser675-\u03b2-catenin localized to cytoplasmic puncta in LY2090314-treated cohesin-deficient cells but not in DMSO-treated cells. Similar puncta were observed with WNT3A treatment, indicating Wnt stimulation rather than secondary LY2090314 effects causes \u03b2-catenin accumulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C62 are supported by Figure 5D and Figure 5\u2014figure supplement 3 showing immunofluorescence of \u03b2-catenin localization. The comparison between LY2090314, DMSO, and WNT3A treatments provides strong evidence that Wnt pathway activation drives \u03b2-catenin accumulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "CMK-STAG2-/- leukemia cells showed dramatically enhanced Wnt sensitivity. \u03b2-catenin increased 20% in nuclei upon WNT3A stimulation. 76% more genes were upregulated (616 vs 350), with 402 genes becoming newly Wnt-responsive. Upregulated genes were enriched for LEF1/TCF7 binding sites and pathways including Wnt signaling, cell cycle, and metabolism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C82 are supported by Figure 6 and supplementary figures showing immunofluorescence quantification, RNA-seq data, and pathway analyses. The dramatic increase in Wnt-responsive genes (402 newly responsive) is striking. The enrichment for LEF1/TCF7 binding sites supports direct \u03b2-catenin regulation. Statistical thresholds (FDR \u22640.05) are appropriate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "Wnt sensitivity is conserved in zebrafish cohesin mutants. Untreated stag2b mutant embryos showed higher basal Wnt reporter activity than wild-type, indicating intrinsically more active Wnt pathway, but LiCl treatment did not increase fluorescence further. rad21 mutants showed normal baseline but dramatically increased Wnt reporter expression upon LiCl treatment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C91 are supported by Figure 7 showing Wnt reporter (mCherry) expression in zebrafish embryos. The differential responses between stag2b (high baseline, no LiCl response) and rad21 (normal baseline, strong LiCl response) are interesting and suggest different mechanisms. The conservation across species strengthens the findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C93",
+      "C94"
+    ],
+    "result": "Hyperactivation of Wnt signaling is a conserved feature of cohesin-deficient cells, and enhanced sensitivity to Wnt is at least in part due to stabilization of \u03b2-catenin.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93-C94 represent the major conclusions integrating data from MCF10A, CMK, HCT116, and zebrafish models. The conservation across species and cell types is compelling. The \u03b2-catenin stabilization mechanism is supported by biochemical data (Figure 5), though the phrase 'at least in part' appropriately acknowledges that other mechanisms may contribute.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C155",
+      "C156",
+      "C157",
+      "C158",
+      "C159",
+      "C160"
+    ],
+    "result": "The screen identified novel sensitivity of cohesin-deficient cells to GSK3 inhibitor (Wnt agonist). Sensitivity is likely due to \u03b2-catenin stabilization. Wnt-responsive gene expression is highly sensitized in STAG2-mutant CMK cells and Wnt activity is enhanced in zebrafish cohesin mutants. Results suggest cohesin mutations could progress oncogenesis by enhancing Wnt signaling and that targeting Wnt pathway may represent a therapeutic strategy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C155-C160 represent the central thesis. While C155-C158 are well-supported by experimental data, C159-C160 involve significant speculation about oncogenesis and therapeutic potential. The mechanistic link between \u03b2-catenin stabilization and Wnt sensitivity is demonstrated, but whether this contributes to oncogenesis or represents a therapeutic vulnerability requires additional validation including in vivo tumor models and clinical data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C96",
+      "C97"
+    ],
+    "result": "Differences between RAD21/SMC3 heterozygotes versus STAG2 homozygotes could be explained by RAD21/SMC3 being obligate cohesin ring members while STAG2 can be compensated by STAG1. Screen sensitivities mostly related to known cohesin-mutant phenotypes and vulnerabilities.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C97 provide reasonable interpretations of the phenotypic differences observed. C96 is consistent with established cohesin biology regarding STAG1/STAG2 redundancy. C97 appropriately summarizes that screen hits align with known cohesin functions (DNA repair, nucleolar function, etc.).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "Cohesin-deficient cells are sensitive to Wnt agonism because they have \u03b2-catenin stabilization. Dose-dependent cohesin reduction causes HSC expansion with differentiation block, which could be partly due to enhanced Wnt signaling given Wnt's role in HSC self-renewal.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C104 is a reasonable inference from the data. C105 is supported by citations to prior work. However, C106 is speculative\u2014while plausible given the data, the connection between Wnt sensitivity in cohesin-deficient cells and HSC phenotypes requires direct experimental validation in hematopoietic systems.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "STAG2-CMK cells showed dramatically enhanced immediate early transcriptional response to WNT3A including hundreds of normally non-responsive genes. This could be due to altered chromatin structure sensitizing genes to Wnt, though increased nuclear \u03b2-catenin localization suggests stabilized \u03b2-catenin accounts at least in part for amplified gene expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C108-C110 are supported by RNA-seq data (Figure 6) and immunofluorescence (Figure 6A,B). C108 is well-documented. C109 is appropriately speculative. C110 provides a more parsimonious explanation based on the \u03b2-catenin localization data, though chromatin changes could also contribute.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C63",
+      "C64"
+    ],
+    "result": "In MCF10A cells, gene expression changes strongly tracked with cohesin gene identity, but Wnt signaling pathway component transcripts did not cluster differently in cohesin-deficient versus parental cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C64 are supported by Figure 6\u2014figure supplement 1 showing RNA-seq clustering. This negative result in unstimulated MCF10A cells contrasts with the dramatic Wnt sensitivity observed upon stimulation in CMK cells, suggesting that Wnt sensitivity may require active signaling to manifest transcriptionally.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C113",
+      "C114"
+    ],
+    "result": "Enhanced Wnt reporter response to Wnt activation was observed in rad21- and stag2b-mutant zebrafish, demonstrating that Wnt sensitivity upon cohesin mutation is a conserved phenomenon.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C113-C114 are supported by Figure 7 zebrafish data. The conservation across vertebrate species (human cells and zebrafish) strengthens the biological significance of the findings. C114 is a reasonable inference from the cross-species data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C120",
+      "C121",
+      "C122"
+    ],
+    "result": "In TCGA STAG2 mutant cancers, Wnt pathway ranks 8th for enrichment in upregulated genes. However, if \u03b2-catenin is stabilized, upstream effectors might be downregulated due to negative feedback, and true Wnt sensitivity might be missed in steady-state transcription analysis without active Wnt stimulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C120 is supported by Supplementary file 2 data. However, C121-C122 acknowledge significant limitations in interpreting TCGA data for Wnt pathway status. The authors appropriately recognize that steady-state RNA-seq may not capture dynamic Wnt responsiveness, which is the key phenotype demonstrated in their stimulation experiments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C123",
+      "C124",
+      "C125"
+    ],
+    "result": "In developing embryos, glycolysis raises intracellular pH causing \u03b2-catenin stabilization (Warburg effect). Metabolic and oxidative stress disturbances in cohesin-mutant cells might similarly influence \u03b2-catenin stability and Wnt sensitivity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C123-C124 are supported by citations describing pH-dependent \u03b2-catenin stabilization in embryos. However, C125 is speculative\u2014while metabolic disturbances are observed in cohesin-mutant cells (supported by citations), the direct connection to \u03b2-catenin stabilization via pH or metabolic changes is not experimentally demonstrated in this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C126",
+      "C127",
+      "C128"
+    ],
+    "result": "Further research is needed to determine how \u03b2-catenin is stabilized in cohesin-deficient cells, whether this is part of malignant transformation, and if Wnt sensitivity represents a therapeutic opportunity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C126-C128 appropriately acknowledge the limitations and future directions. The mechanism of \u03b2-catenin stabilization is not fully elucidated, the role in oncogenesis is inferred but not proven, and therapeutic potential requires validation. These are honest assessments of what remains to be determined.",
+    "result_type": "MINOR"
+  }
+]

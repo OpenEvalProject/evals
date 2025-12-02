@@ -1,0 +1,303 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C42",
+      "C56",
+      "C77",
+      "C78"
+    ],
+    "result": "Serotonergic input from the DRN has separable suppressive effects on ongoing (spontaneous) and evoked visual activity in V1, mediated by distinct 5-HT receptor subtypes. 5-HT1A receptors promote divisive suppression of spontaneous activity, while 5-HT2A receptors act divisively on visual response gain.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3, C42, C56, C77-C78 collectively establish the main finding through converging evidence from optogenetic stimulation (C20-C29), pharmacological blocking experiments (C43-C56), and both Ca2+ imaging and MUA recordings (C39-C40). The divisive nature is demonstrated through linear regression analysis (C30, C41). The receptor-specific contributions are well-supported by selective antagonist experiments showing MDL blocks evoked component suppression (C43-C50) while WAY blocks spontaneous activity suppression (C48-C55).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C26",
+      "C27",
+      "C29",
+      "C30"
+    ],
+    "result": "DRN photostimulation suppresses both spontaneous and evoked activity in V1 in a divisive manner. Suppression of spontaneous activity is significant 680 ms after photostimulation onset and is sustained throughout stimulation, as confirmed by both Ca2+ imaging and MUA recordings.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C30 are well-supported by experimental data from both Ca2+ imaging (Figures 2-3) and MUA recordings (Figure 3b, Figure 5\u2014figure supplement 1). Statistical significance is demonstrated (C24: p=0.04; C26: 750\u00b1184 ms), and the divisive nature is confirmed through linear regression analysis (C30, Figure 4). The convergence of two independent recording methods strengthens the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "DRN photostimulation suppresses visually evoked responses in V1, with both amplitude and baseline reduced. The suppression in response magnitude is separable from suppression of spontaneous activity, as demonstrated by the evoked component (Vph-Sph) analysis, and is divisive in nature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C41 are supported by systematic analysis of evoked responses using both Ca2+ imaging (Figure 5) and MUA recordings (Figure 5\u2014figure supplement 1). The key methodological approach of subtracting spontaneous activity (C33) to isolate the evoked component is sound. Statistical significance is demonstrated (C34, C36: p<0.05), and the independence of magnitude suppression from baseline is confirmed (C37: p>0.21). The divisive nature is established through linear regression (C41, Figure 5\u2014figure supplement 2).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C50",
+      "C52"
+    ],
+    "result": "Blocking 5-HT2A receptors with MDL abolishes suppression of the evoked component while preserving suppression of spontaneous activity, demonstrating that 5-HT2A receptors dominantly control the gain of evoked responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C47, C50, C52 are well-supported by pharmacological experiments (Figure 6a-b, Figure 7a). The data show that MDL treatment eliminates evoked component suppression (C44: no significant difference except stimulus #2) while baseline suppression persists (C45). Statistical analysis confirms significant reduction in magnitude suppression with MDL (C50: p<0.01, n=6 animals). The reduction in RCaMP signal rise during MDL (C46: p=0.04) provides additional mechanistic insight.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C51",
+      "C53",
+      "C55"
+    ],
+    "result": "Blocking 5-HT1A receptors with WAY abolishes suppression of spontaneous activity while preserving suppression of the evoked component, demonstrating that 5-HT1A receptors dominantly control spontaneous activity gain.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C49, C51, C53, C55 are well-supported by pharmacological experiments (Figure 6c-d, Figure 7b). WAY treatment eliminates spontaneous activity suppression (C53: 0.02\u00b10.02, p>0.5, n=4 animals) while evoked component suppression remains significant (C49, C51: p<0.001). This complementary result to the MDL experiments establishes the separable receptor-specific contributions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "In anesthetized mice, 5-HT-induced normalization of visual responses across different contrasts is achieved by linear combination of suppression of spontaneous and evoked components. At low contrasts, suppression is mainly due to the spontaneous component.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C64 are supported by systematic contrast tuning experiments (Figure 8). The Naka-Rushton fits show good agreement (R\u00b2=0.92-0.93). The key finding that spontaneous component contributes additively at low contrasts is demonstrated by comparing magnitude suppression of evoked responses versus evoked component (C61, Figure 8bi). The close match of normalized tuning curves (C63, Figure 8di gray stippled vs. black) confirms normalization. MUA recordings replicate these findings (Figure 8dii, Figure 8\u2014figure supplement 2).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "In awake mice, normalization is largely controlled by the gain of the evoked component without significant contribution from spontaneous activity, contrasting with the anesthetized state. The 5-HT-induced gain is smaller in awake than anesthetized mice.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C76 are supported by contrast tuning experiments in awake mice (Figure 9) with statistical comparisons to anesthetized state. Key evidence includes: (1) no difference between evoked activity and evoked component magnitude suppression in awake state (C69: p>0.31), (2) similar Naka-Rushton fits for both (C70: R\u00b2=0.98 and 0.95), (3) smaller gain in awake state (C72: 0.78\u00b10.1 vs 0.52\u00b10.2, p<0.001), and (4) mathematical analysis showing lower baseline component weight in awake state (C73, Figure 9\u2014figure supplement 2). The within-animal comparison (same 5 animals tested in both states) strengthens the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C25",
+      "C28",
+      "C46",
+      "C47",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "The late increase in RCaMP signal during photostimulation likely represents intracellular Ca2+ accumulation rather than increased spiking, as MUA recordings show sustained suppression without elevation. This Ca2+ accumulation is partially reduced by blocking 5-HT2A receptors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25, C28, C46-C47, C88-C92 address an important methodological consideration. The interpretation is well-supported by: (1) divergence between RCaMP and MUA data (C27: MUA shows no elevation while RCaMP does), (2) sustained MUA suppression throughout photostimulation (C27: -0.43\u00b10.08, p<0.001), (3) reduction of RCaMP rise with MDL (C46: p=0.04), and (4) multiple lines of evidence ruling out autoreceptor-mediated DRN suppression (C90). The proposed mechanism involving Gq/11 pathway is supported by citations (C25, C91).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19",
+      "C4"
+    ],
+    "result": "The study employed ePet-Cre mice for Cre-dependent ChR2 expression in 5-HT neurons, combined with wide-field RCaMP imaging to record population activity across V1, complemented by extracellular MUA recordings and pharmacological manipulations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C17-C19 describe the methodological approach. These are well-documented in Materials and methods and supported by validation data (Figure 1, Figure 1\u2014figure supplement 1). The choice of RCaMP to minimize blue light interference (C19) is appropriately justified. The convergence of multiple methods (imaging, MUA, pharmacology) strengthens the overall study design.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C59",
+      "C103",
+      "C104"
+    ],
+    "result": "DRN photostimulation causes systematic increase in response latency and significant decrease in response duration across contrasts, potentially indicating involvement of shunting inhibition in gain control.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59, C103-C104 are supported by temporal analysis of responses (Figure 8\u2014figure supplement 1). The systematic changes in latency and duration are statistically significant (C59, Figure 8\u2014figure supplement 1bi-bii). However, the mechanistic interpretation regarding shunting inhibition (C104) is speculative, though reasonably supported by the temporal dynamics and cited literature (C102).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C13",
+      "C14",
+      "C15",
+      "C107"
+    ],
+    "result": "Previous studies showed mixed results regarding 5-HT effects on visual cortex, with some showing bi-directional modulation at single-cell level but consistent suppressive effects at population level, particularly through 5-HT2A receptors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13-C15, C79-C80, C107 accurately summarize prior literature with appropriate citations. The authors acknowledge discrepancies with some prior work (particularly C13 from Seillier et al., 2017 showing no spontaneous activity effect) and provide reasonable explanations for differences (C80: methodological limitations of iontophoresis). The consistency with recent 5-HT2A-specific studies (C107, C14) supports the current findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "While ePet is expressed in some non-serotonergic neurons (mainly in median raphe), pharmacological blocking of 5-HT receptors largely abolished the observed effects, indicating negligible contribution from other modulatory systems.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C83 address an important potential confound. The authors appropriately acknowledge the limitation (C81-C82, supported by citations) but provide strong evidence that effects are 5-HT-mediated through pharmacological validation (C83). The fact that 5-HT receptor antagonists largely eliminate the effects is compelling evidence that the observed phenomena are primarily serotonergic.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "The 16-second photostimulation protocol used is physiologically relevant, as DRN receives direct retinal input, shows natural slow periodic changes, and similar stimulation parameters in other studies produced sustained DRN activation and behavioral effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C87 justify the experimental design choice. The evidence from Grandjean et al., 2019 (C86) using similar parameters and showing sustained DRN activation for 20s is particularly relevant. The behavioral relevance from Dugu\u00e9 et al., 2014 (C87) and natural physiological context (C84-C85) provide additional support. This addresses a potential criticism about the prolonged stimulation duration.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C5",
+      "C113",
+      "C114",
+      "C115",
+      "C116"
+    ],
+    "result": "Imbalanced 5-HT1A/2A receptor activation may lead to overemphasis of internal expectations versus sensory input, potentially contributing to psychiatric disorders, and this study may inform new diagnostic and therapeutic approaches.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C5, C113-C116 represent speculative extensions of the findings to clinical implications. While the basic logic follows from the demonstrated separable receptor effects, the leap to psychiatric disorders (C115) and therapeutic applications (C116) is not directly supported by the current data. These are reasonable hypotheses for future work but lack direct experimental validation in the current study. The citations provided (C115) support the general concept but not the specific mechanism proposed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C105",
+      "C106"
+    ],
+    "result": "The mechanisms underlying the observed effects likely involve hyperpolarization of pyramidal neurons via 5-HT1A receptors and activation of parvalbumin interneurons or shunting inhibition via 5-HT2A receptors, plugging into canonical divisive normalization machinery.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C95-C102, C105-C106 propose mechanistic explanations supported by literature (C96, C98, C100, C102) but not directly tested in the current study. The authors appropriately present these as possibilities (C95: \"may reflect\", C99: \"may mediate\", C101: \"may cause\") rather than established facts. The proposal that 5-HT plugs into canonical normalization machinery (C106) is a reasonable synthesis but requires cell-type-specific experiments for validation. The authors acknowledge this limitation, noting that their population-level recordings cannot identify cell-type-specific contributions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12"
+    ],
+    "result": "Background knowledge establishing that cortical states modulate ongoing and evoked activity, neuromodulators can alter their balance, and serotonin is a key neuromodulator with widespread cortical projections and diverse receptor types.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C12 establish the background and rationale for the study. These are well-supported by extensive citations to established literature. The claims accurately represent prior knowledge and appropriately motivate the current investigation. No issues with accuracy of prior work representation are evident.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C94",
+      "C110",
+      "C111",
+      "C112"
+    ],
+    "result": "The degree of 5-HT-controlled integration of sensory input and ongoing activity depends on cortical state and initial 5-HT levels, with awake state showing less dependence on ongoing activity and possibly less influence from internal cortical broadcasts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C66, C94, C110-C112 synthesize the awake versus anesthetized comparison. The conclusion is well-supported by the experimental data (Figures 8-9) and mathematical analysis (Figure 9\u2014figure supplement 2). The interpretation regarding internal broadcasts (C111-C112) is reasonable given the established association of ongoing activity with top-down expectations (C112, supported by general neuroscience knowledge), though this specific functional interpretation extends beyond the direct data.",
+    "result_type": "MAJOR"
+  }
+]

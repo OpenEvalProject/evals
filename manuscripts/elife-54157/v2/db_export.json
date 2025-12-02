@@ -1,0 +1,2320 @@
+{
+  "submission": {
+    "id": "99561ed5-7ec9-4100-af19-04748cb26c4b",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T15:38:41.241381Z",
+    "updated_at": "2025-12-02T15:38:41.241381Z"
+  },
+  "content": [
+    {
+      "id": "8c4844fa-821b-4953-b6f1-9ca1873578cb",
+      "submission_id": "99561ed5-7ec9-4100-af19-04748cb26c4b",
+      "content_type": "manuscript",
+      "content_text": "# Contextual and cross-modality modulation of auditory cortical processing through pulvinar mediated suppression\n\n## Authors\n\n- Xiao-lin Chou<sup>1</sup>\n- Qi Fang<sup>1</sup>\n- Linqing Yan<sup>1</sup>\n- Wen Zhong<sup>1</sup>\n- Bo Peng<sup>1</sup>\n- Haifu Li<sup>1</sup>\n- Jinxing Wei<sup>1</sup>\n- Huizhong W Tao<sup>1</sup> ([ORCID: 0000-0002-3660-0513](https://orcid.org/0000-0002-3660-0513)) \u2020\n- Li I Zhang<sup>1</sup> ([ORCID: 0000-0003-0275-8651](https://orcid.org/0000-0003-0275-8651)) \u2020\n\n### Affiliations\n\n1. Zilkha Neurogenetic Institute, University of Southern California Los Angeles United States\n2. Graduate Program in Neuroscience, University of Southern California Los Angeles United States\n3. Department of Physiology and Neuroscience, Keck School of Medicine, University of Southern California Los Angeles United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nLateral posterior nucleus (LP) of thalamus, the rodent homologue of primate pulvinar, projects extensively to sensory cortices. However, its functional role in sensory cortical processing remains largely unclear. Here, bidirectional activity modulations of LP or its projection to the primary auditory cortex (A1) in awake mice reveal that LP improves auditory processing in A1 supragranular-layer neurons by sharpening their receptive fields and frequency tuning, as well as increasing the signal-to-noise ratio (SNR). This is achieved through a subtractive-suppression mechanism, mediated largely by LP-to-A1 axons preferentially innervating specific inhibitory neurons in layer 1 and superficial layers. LP is strongly activated by specific sensory signals relayed from the superior colliculus (SC), contributing to the maintenance and enhancement of A1 processing in the presence of auditory background noise and threatening visual looming stimuli respectively. Thus, a multisensory bottom-up SC-pulvinar-A1 pathway plays a role in contextual and cross-modality modulation of auditory cortical processing.\n\n## Introduction\n\nThalamus is generally considered as a gate to the cerebral cortex. First-order thalamic nuclei, such as the dorsal lateral geniculate nucleus (dLGN) and ventral medial geniculate body (MGBv), relay bottom-up sensory information to primary sensory cortices, visual and auditory, respectively (Kremkow and Alonso, 2018; Winer et al., 2005). They serve as the major driver of sensory responses in the cortex for each respective sensory modality (Guillery and Sherman, 2002; Halassa and Sherman, 2019). Compared to first-order thalamic nuclei, the functional roles of higher-order thalamic nuclei in sensory processing are much less well understood, although many of them are known to have broad connections with both primary and secondary cortices.\n\nThe lateral posterior nucleus (LP) of the thalamus is the rodent homologue of the primate pulvinar nucleus (Harting et al., 1972; Harting et al., 1973). The latter is considered the largest thalamic complex (Harting et al., 1973). Previous studies on LP/pulvinar have mostly been focused on its involvement in visual-related functions, such as visual attention, visually guided behaviors and eye movements (Dominguez-Vargas et al., 2017; Saalmann et al., 2012; Soares et al., 2017; Stitt et al., 2018; Zhou et al., 2016), largely due to its extensive reciprocal connections with visual cortical areas (Beltramo and Scanziani, 2019; Bennett et al., 2019; Juavinett et al., 2020; Kaas and Lyon, 2007; Nakamura et al., 2015; Oh et al., 2014; Roth et al., 2016; Shipp, 2001; Stitt et al., 2018; Wong et al., 2009; Zhou et al., 2018). Besides visual cortices, LP/pulvinar also has connections with other sensory cortices including primary and secondary auditory cortices (Cappe et al., 2009; Hackett et al., 1998; Nakamura et al., 2015; Oh et al., 2014; Shipp, 2007) and contains auditory responsive neurons which exhibit short-latency responses (Chalupa and Fish, 1978; Gattass et al., 1978; Magari\u00f1os-Ascone et al., 1988; Woody et al., 1991; Yirmiya and Hocherman, 1987). However, the influence of LP on auditory cortical responses has rarely been examined. The impact of LP activity on the primary auditory cortex (A1) is of particular interest. It is known that the axonal projections from LP to primary sensory cortices mainly terminate in layer 1 (L1), whereas those to secondary sensory cortices mainly terminate in L4 (Fang et al., 2020; Roth et al., 2016; Zhou et al., 2018). As L1 contains predominantly inhibitory neurons (Jiang et al., 2013; Mesik et al., 2019; Schuman et al., 2019), it is likely that the LP input to the primary sensory cortex plays some modulatory roles.\n\nIn the present study, we investigated the effect of LP activity on auditory responses of neurons in superficial layers of A1 using bidirectional optogenetic manipulation approaches. We found that LP activity improved auditory processing functions in A1 in that it helped to sharpen frequency tuning of A1 L2/3 pyramidal neurons and to enhance the signal-to-noise ratio (SNR) of their auditory responses, through subtractive suppression of their responses in analogous to a thresholding effect. In addition, we found that such effect could play a role in modulating A1 responses under noise background. Furthermore, we found that LP, by receiving salient input from SC, could also mediate the cross-modality modulation of A1 responses by visual looming stimuli.\n\n## Results\n\n### Bidirectional modulation of frequency tuning and SNR in A1 L2/3 by LP activity\n\nTo study whether LP could influence auditory cortical processing, we applied optogenetic approaches to manipulate LP activity and examined changes in functional response properties of A1 neurons using single-cell loose-patch recordings in awake mice (see Materials and methods). For reversible and temporal silencing of neuronal spikes, we injected adeno-associated virus (AAV) encoding ArchT into LP and implanted an optic fiber over LP to deliver green LED light (Figure 1A). Recordings were made in the ipsilateral A1. To investigate auditory information processing functions, we presented a set of tone pips of varying frequencies and intensities (50 ms duration, 2\u201345 kHz, 10\u201370 dB sound pressure level or SPL) and recorded tone-evoked spike responses from L2/3 pyramidal neurons (see Materials and methods). A typical L2/3 pyramidal neuron exhibited a V-shaped tonal receptive field (TRF) with a distinct characteristic frequency (CF) (Figure 1B, left). We interleaved LED-on and LED-off trials so that TRFs without and with LP silencing could be compared in the same neuron. When LP was silenced, we observed an overall increase in response level and TRF size as compared to the LED-off condition (Figure 1B, right; Figure 1\u2014figure supplement 1A\u2013B). Nevertheless, the overall shape of frequency tuning (Figure 1C) and the CF of TRF (Figure 1\u2014figure supplement 2A) were largely preserved. Analyzing all the recorded L2/3 neurons, we found significant increases in the spontaneous firing rate (FR), evoked FR and bandwidth of frequency tuning (as measured at an intensity level of 60 dB SPL and at 20 dB above the intensity threshold) when silencing LP (Figure 1D\u2013F; Figure 1\u2014figure supplement 3A). More importantly, the signal-to-noise ratio (SNR), as measured by the ratio of evoked to spontaneous FR, was reduced (Figure 1G). These results indicated that when LP activity was suppressed auditory information processing in A1 might be compromised due to broadening of frequency tuning and a reduction in SNR.\n\nNext, we optogenetically activated LP by injecting AAV encoding channelrhodopsin2 (ChR2) into LP and delivering blue LED light pulses (Figure 1H). As shown by an example L2/3 pyramidal neuron, activation of LP decreased the amplitude of tone-evoked responses and shrank the TRF (Figure 1I\u2013J; Figure 1\u2014figure supplement 1C\u2013D), without changing the CF (Figure 1\u2014figure supplement 2B). Opposite to the effects of silencing LP, activation of LP reduced the spontaneous and evoked FR, and narrowed the frequency tuning bandwidth, while enhancing the SNR (Figure 1K\u2013N; Figure 1\u2014figure supplement 3B). Therefore, the frequency tuning and SNR of A1 L2/3 pyramidal neurons could be bidirectionally modulated by manipulating LP activity: increasing LP activity enhances frequency selectivity and SNR of auditory responses and thus generally improves auditory cortical processing, and vice versa for decreasing LP activity. As a control, we performed similar experiments in GFP-expressing animals and did not observe any significant changes in auditory response level by either green or blue LED light delivery (Figure 1\u2014figure supplement 1B and D). In L4, we did not observe any changes of either spontaneous or evoked FR induced by optogenetic manipulations of LP (Figure 1\u2014figure supplement 4). Therefore, the LP\u2019s modulatory effect may be specific to superficial layers.\n\n### LP exerts a thresholding effect on A1 L2/3 responses\n\nComparing frequency tuning curves without and with LP manipulation (Figure 1C and J), it appears that LP activity just shifted the A1 frequency tuning curve up or down, without changing the tuning preference (i.e. the best frequency). To further elucidate the nature of LP modulation, we plotted firing rates evoked by effective tones (see Materials and methods) with versus without LP manipulation and then performed a linear regression analysis. As shown by the two example A1 neurons (the same as shown in Figure 1B and I), data points were distributed along a line which had a positive y-intercept for LP silencing (Figure 1O) but a negative y-intercept for LP activation (Figure 1P), supporting the notion that all the tone responses were elevated or reduced by a certain amount when LP activity was manipulated. We did a similar analysis for all the recorded neurons and found that the linearity was generally high (R2 close to 1) (Figure 1Q). The slope of the best fit line was close to 1 for both LP silencing and activation (Figure 1R), suggesting that there was no change in the response gain (i.e. no evidence for a multiplicative effect). The y-intercept was all positive for LP silencing but negative for LP activation (Figure 1S). These results strongly suggest a subtractive-suppression-like modulation of A1 responses by LP activity, similar to a thresholding effect produced by increasing the level of background noise (Liang et al., 2014). Therefore, LP can bidirectionally modulate auditory responses in superficial layers of A1 through a thresholding mechanism, that\u00a0is, by shifting A1 frequency tuning up or down.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/54157/elife-54157-fig1-v2.jpg)\n\n**Figure 1.:** (A) Left, schematic experimental condition. AAV-ArchT was injected into LP and green LED was applied via an implanted optic fiber to silence LP neurons. Loose-patch recordings were made from A1 neurons on the same side. Right, confocal image showing the expression of ArchT within LP (marked by white dashed curve). Scale bar, 500 \u03bcm. (B) Reconstructed tonal receptive field (TRF) of an example A1 L2/3 pyramidal neuron without (left) and with (right) optogenetic silencing of LP. Color scale indicates evoked firing rate. Red curve marks the TRF boundary. Red double arrows depict the frequency tuning bandwidth at 60 dB SPL. Red arrowhead marks the characteristic frequency (CF). (C) Normalized frequency tuning curves (at 60 dB SPL) without (black) and with (green) LP silencing. Arrows mark the best frequency. (D\u2013G) Normalized spontaneous firing rate (D, p=0.0078, Wilcoxon signed-rank test), evoked firing rate (E, p=0.0079, paired t-test), tuning bandwidth at 60 dB SPL (F, p=0.0069, paired t-test) and signal-to-noise ratio (G, p=0.022, paired t-test) of recorded A1 L2/3 neurons without (OFF) and with (ON) LP silencing. **p<0.01, *p<0.05, n\u00a0=\u00a08 cells in 4 animals. Data points for the same cell are connected with a line. (H) Left, experimental condition. AAV-ChR2 was injected into LP and blue LED was delivered to activate LP neurons. Right, example image showing the expression of ChR2 within LP. Scale bar, 500 \u03bcm. (I) TRF of an example A1 L2/3 pyramidal neuron without (left) and with (right) optogenetic activation of LP neurons. (J) Normalized frequency tuning curves without (black) and with (blue) LP activation. (K\u2013N) Normalized spontaneous firing rate (K, ***p<0.001, paired t-test), evoked firing rate (L, p<0.001, paired t-test), tuning bandwidth at 60 dB SPL (M, p<0.001, paired t-test), and SNR (N, p=0.0059, paired t-test) of A1 L2/3 neurons without and with LP activation (n\u00a0=\u00a013 cells in 5 animals). (O\u2013P) Plot of normalized firing rates evoked by effective tones (at 60 dB SPL) with vs. without LP silencing (O) or LP activation (P) for the example cells shown above. Green and blue lines are the best fit linear regression line. Gray dashed line is the identity line. (Q\u2013S) Summary of parameters of linear fitting for all neurons in LP silencing (ArchT) and activation (ChR2) groups, respectively. R2 (Q): 0.84\u00a0\u00b1\u00a00.09 (mean\u00a0\u00b1\u00a0SD, n\u00a0=\u00a08 cells) vs. 0.88\u00a0\u00b1\u00a00.08 (n\u00a0=\u00a013 cells); slope (R): 1.05\u00a0\u00b1\u00a00.17 (not significantly different from 1, p=0.41, Z-test) vs. 0.94\u00a0\u00b1\u00a00.17 (not significantly different from 1, p=0.26, Z-test); y-intercept (S): 0.23\u00a0\u00b1\u00a00.11 (significantly\u00a0>0, p<0.001, Z-test) vs. \u22120.19\u00a0\u00b1\u00a00.12 (significantly\u00a0<0, p<0.001, Z-test); Bar\u00a0=\u00a0SEM.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/54157/elife-54157-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) PSTH for responses of an example A1 L2/3 neuron to tone (best frequency) stimulation without (top) and with (bottom) optical silencing of LP. Black and green horizontal lines mark the duration of tone and LED stimulation, respectively. (B) Cumulative distribution of percentage changes in tone-evoked responses in optogenetic inactivation and GFP-control (n\u00a0=\u00a012 cells) groups. The difference is significant: p<0.001, two-sample Kolmogorov\u2013Smirnov test. (C) PSTH for responses of an example A1 L2/3 neuron without (top) and with (bottom) optical activation of LP (marked by blue line). (D) Cumulative distribution of percentage changes in tone-evoked responses in optogenetic activation and GFP-control (n\u00a0=\u00a013 cells) groups. The difference is significant: p<0.001, two-sample Kolmogorov\u2013Smirnov test.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/54157/elife-54157-fig1-figsupp2-v2.jpg)\n\n**Figure 1\u2014figure supplement 2.:** (A\u2013B) Summary of the CF values of A1 L2/3 neurons without (OFF) and with (ON) optical LP silencing (A, p=1.0, paired t-test, n\u00a0=\u00a08 cells) or activation (B, p=1.0, paired t-test, n\u00a0=\u00a013 cells). N.S., not significant.\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/54157/elife-54157-fig1-figsupp3-v2.jpg)\n\n**Figure 1\u2014figure supplement 3.:** (A\u2013B) Normalized bandwidth of frequency tuning curves 20 dB above the intensity threshold (BW20) without and with LP silencing (A, p=0.0012, paired t-test, n\u00a0=\u00a08 cells) or activation (B, p<0.001, paired t-test, n\u00a0=\u00a013 cells). ***p<0.001, **p<0.01.\n\n![Figure 1\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/54157/elife-54157-fig1-figsupp4-v2.jpg)\n\n**Figure 1\u2014figure supplement 4.:** (A\u2013B) Normalized spontaneous (A, p=1.0, Wilcoxon signed-rank test, n\u00a0=\u00a05 cells) and evoked firing rates (B, p=0.62, Wilcoxon signed-rank test, n\u00a0=\u00a05 cells) in A1 L4 neurons without (OFF) and with (ON) LP silencing. (C\u2013D) Normalized spontaneous (C, p=0.23, paired t-test, n\u00a0=\u00a012 cells) and evoked firing rates (D, p=0.70, paired t-test, n\u00a0=\u00a012 cells) in A1 L4 neurons without and with LP activation.\n\n### LP modulation of A1 is mainly mediated by the LP-A1 projection\n\nLP may modulate A1 responses through the direct LP to A1 projection, or indirectly through the LP projections to secondary cortices (Arend et al., 2008; Cappe et al., 2009; Hackett et al., 1998; De La Mothe et al., 2006; Nakamura et al., 2015; Oh et al., 2014). We wondered whether the direct LP-A1 projection contributed mainly to the observed modulatory effect of LP. By injecting a retrograde dye, CTB-488, in A1, we examined the distribution of LP neurons projecting to A1 (Figure 2A). Numerous retrogradely labeled neurons were found in LP (Figure 2A, right), with a bias towards its caudal part (Figure 2\u2014figure supplement 1). Furthermore, injection of AAV-GFP into LP revealed densely labeled axon terminals in L1 as well as deep layers of A1 (Figure 2B), confirming the direct projection from LP to A1 (De La Mothe et al., 2006; Nakamura et al., 2015). We also observed dense LP projections to L4 of secondary auditory cortices (data not shown). To test whether the LP-A1 projection could account for the LP modulatory effect in A1, we optogenetically silenced the LP-A1 axon terminals by injecting AAV-eNpHR3.0 in LP and placing an optic fiber on the exposed A1 surface (Figure 2C). We observed effects on A1 L2/3 neurons similar to silencing LP neurons per se: the spontaneous and evoked FR was increased, the frequency tuning bandwidth was broadened, and the SNR was reduced (Figure 2D\u2013G; Figure 2\u2014figure supplement 2A). Conversely, we optogenetically activated the LP-A1 axon terminals by injecting AAV-ChR2 in LP and shining blue light on the exposed A1 surface (Figure 2H). In line with the effects caused by LP activation, the activation of LP-A1 axon terminals reduced the spontaneous and evoked FR, sharpened frequency tuning, and enhanced the SNR in A1 L2/3 pyramidal neurons (Figure 2I\u2013L; Figure 2\u2014figure supplement 2B).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/54157/elife-54157-fig2-v2.jpg)\n\n**Figure 2.:** (A) Left, injection of CTB-488 into A1. Middle, image showing fluorescence at the injection site. Scale bar, 500 \u03bcm. Right, retrogradely labeled neurons in LP. Scale bars, 200 \u03bcm. (B) Left, injection of AAV-GFP into LP. Middle, expression of GFP at the injection site. Scale bar, 500 \u03bcm. Right, GFP-labeled LP axons in A1 and average normalized fluorescence intensity across cortical depths (n\u00a0=\u00a06 brain sections, black line and green shade represent mean\u00a0\u00b1\u00a0SD respectively). Scale bar, 100 \u03bcm. Cortical layers are marked. (C) Injection of AAV-eNpHR3.0 into LP and optical silencing of LP-A1 axon terminals by placing the optic fiber over A1. (D\u2013G) Normalized spontaneous firing rate (D, p=0.013, paired t-test, n\u00a0=\u00a09 cells in 4 animals), evoked firing rate (E, p=0.012, paired t-test), tuning bandwidth (F, p=0.0078, Wilcoxon signed-rank test), and SNR (G, p=0.015, paired t-test) of A1 L2/3 neurons without and with LP-A1 axon terminal silencing. **p<0.01, *p<0.05. (H) Injection of AAV-ChR2 into LP and optical activation of LP-A1 axon terminals. (I\u2013L) Normalized spontaneous firing rate (I, p=0.0038, paired t-test, n\u00a0=\u00a010 cells in 4 animals), evoked firing rate (J, p=0.013, paired t-test), tuning bandwidth (K, p=0.009, paired t-test), and SNR (L, p=0.0081, paired t-test) of A1 L2/3 neurons without and with LP-A1 axons terminal activation. (M\u2013N) Plot of normalized firing rates evoked by effective tones (at 60 dB SPL) with vs. without LP-A1 axon terminal silencing (M) or activation (N) for two example cells. (O\u2013Q) Summary of parameters of linear fitting in terminal silencing (eNpHR3.0) and activation (ChR2) groups, respectively. R2 (O): 0.87\u00a0\u00b1\u00a00.098 (n\u00a0=\u00a09 cells) vs. 0.84\u00a0\u00b1\u00a00.091 (n\u00a0=\u00a010 cells); slope (P): 1.05\u00a0\u00b1\u00a00.22 (not significantly different from 1, p=0.48, Z-test) vs. 0.95\u00a0\u00b1\u00a00.18 (not significantly different from 1, p=0.42, Z-test); y-intercept (Q): 0.19\u00a0\u00b1\u00a00.077 (significantly\u00a0>0, p<0.001, Z-test) vs. \u22120.19\u00a0\u00b1\u00a00.083 (significantly\u00a0<0, p<0.001, Z-test). Bar\u00a0=\u00a0SEM.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/54157/elife-54157-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** Images showing distribution of retrogradely labeled A1-prejecting LP neurons across rostral-caudal axis. Scale bar, 200 \u03bcm.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/54157/elife-54157-fig2-figsupp2-v2.jpg)\n\n**Figure 2\u2014figure supplement 2.:** (A\u2013B) TRFs of two example A1 L2/3 neurons without (left) and with (right) LP-A1 terminal silencing (A) or activation (B).\n\nWe performed similar linear fitting on tone-evoked responses with versus without terminal manipulations (Figure 2M and N). We observed a thresholding effect similar to manipulating LP neurons per se: the linearity was high (Figure 2O), the slope of the best fit line was close to 1 (Figure 2P), and the y-intercept was a positive value for the terminal silencing while a negative value for the terminal activation (Figure 2Q). These data suggest that the LP to A1 projection largely mediates the LP modulatory effect on A1 responses.\n\n### LP axons produce a disynaptic inhibitory effect on A1 L2/3 neurons\n\nAs the LP projection to the cortex per se is excitatory (Evangelio et al., 2018; Roth et al., 2016; Zhou et al., 2018), an immediate question is how LP activity exerts a net inhibitory effect on A1 L2/3 pyramidal neurons. Since LP axons project to L1 (Figure 2B), which contains predominantly inhibitory neurons (Jiang et al., 2013; Schuman et al., 2019), it is possible that LP axons can indirectly suppress L2/3 pyramidal neurons via L1 inhibitory neurons (Ibrahim et al., 2016; Jiang et al., 2013; Zhou et al., 2014). To test this idea, we injected AAV-ChR2 into LP and made whole-cell voltage-clamp recordings from A1 neurons in slice preparations (Figure 3A). Cuts were made in the tissue along boundaries between A1 and secondary auditory cortices to prevent potential feedback input to A1 (see Materials and methods). TTX and 4AP were present in the bath solution to ensure that only monosynaptic responses were recorded (Petreanu et al., 2009). We performed whole-cell recordings from several types of neurons in A1: L1 inhibitory neurons labeled by crossing GAD2-Cre with the Ai14 (Cre-dependent tdTomato) reporter, pyramidal neurons identified as tdTomato-negative cells in GAD2-Cre::Ai14 animals, parvalbumin (PV) and somatostatin (SOM) positive inhibitory neurons labeled by crossing PV-Cre or SOM-Cre with Ai14, respectively. As shown by two example cells, blue light activation of LP-A1 axons resulted in a robust excitatory postsynaptic current (EPSC) in the L1 inhibitory neuron, whereas no EPSC was observed in the pyramidal (PYR) cell (Figure 3B). Overall, none of the PYR neurons we recorded across L2-4 received direct input from LP, whereas more than 50% of L1 inhibitory neurons received direct LP input (Figure 3C and E). A similar fraction of PV neurons in L2/3 received direct input from LP, whereas none of the recorded SOM neurons did so (Figure 3D and E). A much smaller fraction of PV neurons in L4 also received LP input (Figure 3E). Together, these results indicate that LP-A1 axons preferentially innervate L1 inhibitory neurons and superficial-layer PV inhibitory neurons, which may then provide disynaptic inhibition to L2/3 pyramidal neurons.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/54157/elife-54157-fig3-v2.jpg)\n\n**Figure 3.:** (A) Slice recording paradigm. AAV-ChR2 was injected into LP. Blue LED light was applied to A1 to active LP-A1 axon terminals. Whole-cell recordings were made from A1 neurons. (B) Light-evoked monosynaptic EPSC (average trace) recorded (at \u221270 mV) in an example L2/3 pyramidal (PYR, top) and L1 inhibitory neuron (bottom). TTX and 4AP were present in the bath solution. Blue arrow marks the onset of 5 ms light pulse. Scale: 200 ms and 20 pA. (C) Plot of average amplitude of light-evoked monosynaptic EPSCs against the cell\u2019s cortical depth for all the recorded L1 inhibitory neurons (red, GAD2+) and pyramidal cells (black). Dashed line marks the boundary between L1 and L2/3. (D) Plot of average amplitude of light-evoked monosynaptic EPSCs against the cell\u2019s cortical depth for the recorded PV (magenta) and SOM (blue) neurons. (E) Summary of connection probability between LP-A1 axons and L1 GAD2+ neurons, as well as pyramidal, PV and SOM neurons in different layers. L1 vs. L2/3 PV, p=0.12; L1 vs. L4 PV, ***p<0.001; L2/3 PV vs. L4 PV, ***p<0.001, Fisher\u2019s exact test. N.S., not significant.\n\n### LP plays a role in noise-related contextual modulation of A1 responses\n\nPreviously, it has been proposed that LP can provide contextual information to visual cortex (Fang et al., 2020; Roth et al., 2016). Whether LP could play a similar role in auditory processing has been unknown. In an acoustic environment, one common contextual factor is the background noise. It has been shown that elevating the background noise level results in narrowing of frequency tuning of A1 neurons through a thresholding effect without changing the tuning preference (Liang et al., 2014). Since LP manipulations also produce a thresholding effect, we wondered whether LP could contribute to the noise-related contextual modulation. We noticed that LP neurons responded robustly to white-noise sound, with the response amplitude increasing with increasing noise levels (Figure 4A). Previous anatomical and electrophysiological studies have shown that the superior colliculus (SC) in the midbrain innervates LP (Beltramo and Scanziani, 2019; Bennett et al., 2019; Fang et al., 2020; Gale and Murphy, 2014; Stepniewska et al., 2000; Wei et al., 2015; Zingg et al., 2017). We thus wondered whether these noise responses in LP could be driven by SC input. Comparing the onset latency of noise responses in SC, LP, and A1 L4, we found that it was the shortest in SC, while similar between LP and A1 L4 (Figure 4B). This suggests that the responses in LP (at least the early part) are unlikely due to feedback inputs from auditory cortices. Furthermore, silencing SC greatly reduced the amplitude of noise responses in LP (Figure 4C). Our results thus indicate that the noise responses in LP are primarily driven by bottom-up input likely from SC.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/54157/elife-54157-fig4-v2.jpg)\n\n**Figure 4.:** (A) Left, PSTH for responses of an example neuron in the caudal LP to white noise sound (marked by black line). Right, mean noise-evoked firing rate plotted against noise intensity (n\u00a0=\u00a010 LP neurons). Bar\u00a0=\u00a0SD. (B) Left, onset latency of noise (at 60 dB SPL) evoked responses in SC (n\u00a0=\u00a017 cells), LP (n\u00a0=\u00a017) and A1 L4 (n\u00a0=\u00a08) neurons. ***p<0.001, One-way ANOVA with Bonferroni's multiple comparisons test. N.S., not significant. (C) Normalized noise-evoked firing rate of LP neurons before (Ctrl) and after silencing SC (\u0394SC). ***p<0.001, paired t-test, n\u00a0=\u00a012 cells in 2 animals. (D) Left, spectrogram of the stimulus: a 50 ms CF tone (at 60 dB SPL) embedded in low-level noise (at 0 dB SPL, 250 ms duration). Right, PSTHs for responses of an example A1 L2/3 neuron to the tone embedded in noise before (black) and after (red) silencing LP with bupivacaine. Black line marks the tone duration. (E) Response of the same cell to the same tone (60 dB SPL) embedded in higher-level noise (45 dB SPL) before and after silencing LP. (F) Upper, summary of evoked firing rates of A1 neurons at different noise levels before (black) and after (red) silencing LP. Lower, change in evoked firing rate by LP silencing at different noise levels. ***p<0.001, **p<0.01, *p<0.05, paired t-test, compared to the values under 0 dB noise condition, n\u00a0=\u00a09 cells from 4 animals. Bar\u00a0=\u00a0SD. (G) Summary of spontaneous firing rates before and after silencing LP. (H) Summary of SNR before and after silencing LP. (I) Summary of tuning bandwidths before and after silencing LP.\n\nTo test whether the noise-driven LP activity affects A1 frequency processing, we applied tones (of varying frequencies) embedded in broadband noise of different levels (Figure 4D and E). Frequency tuning of A1 neurons was compared before and after silencing LP with bupivacaine (Fang et al., 2020; Lee et al., 2008; Moraga-Amaro et al., 2014). As shown by an example A1 L2/3 neuron (Figure 4D and E, gray), increasing the noise level reduced the amplitude of the response evoked by the best-frequency tone. Silencing LP resulted in a general increase in the tone-evoked response, regardless of the noise level, but to different degrees (Figure 4D and E, red). Summarizing all the recorded L2/3 neurons, we found that silencing LP universally enhanced tone-evoked responses in A1 across different noise levels (Figure 4F, upper panel). Notably, the enhancement was larger at higher noise levels (Figure 4F, lower panel). This is consistent with the notion that LP neuron responses increase with increasing noise levels (Figure 4A) and therefore exert a larger suppressive effect in A1 under a higher noise background. Silencing LP also elevated the spontaneous FR in a noise-level dependent manner so that the elevation was larger at higher noise levels (Figure 4G). The SNR slightly decreased with increasing noise levels in the control condition (Figure 4H, upper panel, black), indicating that high-level noise has a detrimental effect on SNR, thus deteriorating auditory processing. Silencing LP not only reduced SNR, but also accelerated the detrimental effect of background noise (Figure 4H, upper panel, red). Again, the modulatory effect on SNR was larger at higher noise levels (Figure 4H, lower panel). Finally, the frequency tuning bandwidth was reduced with increasing noise levels (Figure 4I, upper panel), consistent with previous studies (Ehret and Schreiner, 2000; Liang et al., 2014). Silencing LP not only broadened the tuning bandwidth, but also slowed down the modulation of tuning bandwidth by increasing the noise level (Figure 4I). Together, these results suggest that LP plays a role in contextual modulation of A1 frequency processing by noise background.\n\n### SC can drive the LP-mediated modulation of A1 responses\n\nSince SC innervates LP (Beltramo and Scanziani, 2019; Bennett et al., 2019; Gale and Murphy, 2014; Stepniewska et al., 2000; Wei et al., 2015; Zingg et al., 2017) but does not project to auditory cortices (Basso and May, 2017; Cang et al., 2018; Ito and Feldheim, 2018), we wondered whether SC could provide direct input to drive the LP-mediated modulation of A1 responses. To confirm the connectivity from SC to LP, we injected AAV-GFP into intermediate and deep layers, the auditory related part of SC (Bedn\u00e1rov\u00e1 et al., 2018; Drager and Hubel, 1975; King and Palmer, 1985; Meredith and Stein, 1986; Wise and Irvine, 1983; Zingg et al., 2017). We found abundant GFP-labeled axons in LP (Figure 5A), with a strong bias towards its caudal part (Figure 5\u2014figure supplement 1). Expressing ChR2 in intermediate and deep layers of SC and then performing whole-cell slice recording from caudal LP neurons in the presence of TTX and 4AP further confirmed direct innervations of LP neurons by SC axons (Figure 5B and C).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/54157/elife-54157-fig5-v2.jpg)\n\n**Figure 5.:** (A) Injection of AAV-GFP into intermediate and deep layers of SC. Left, expression of GFP in SC. Boundaries between superficial, intermediate and deep layers are marked by dashed curves. Right, GFP labeled SC axons within LP. Scale bar, 500 \u03bcm. (B) Left, slice recording paradigm: expressing ChR2 in SC and whole-cell recording from LP neurons. Right, light-evoked monosynaptic EPSC (average trace) in an example LP neuron before and after perfusing in CNQX. Scale: 100 pA and 50 ms. (C) Average amplitudes of light-evoked monosynaptic EPSCs in LP neurons. Neurons not showing a light-evoked EPSC were excluded. (D) Left, illustration of optic activation of SC and recording in A1. Right, expression of ChR2 in SC. Scale bar, 500 \u03bcm. (E\u2013G) Normalized spontaneous FR (E), evoked FR (F), and SNR (G) of A1 neurons without and with optical SC activation. ***p<0.001, **p=0.0065, paired t-test, n\u00a0=\u00a09 cells in 4 animals. (H) Transsynaptic labeling of SC-recipient LP neurons by first injection of AAV-Cre into intermediate and deep layers of SC and second injection of Cre-dependent ChR2 virus in LP. Right, expression of ChR2-EYFP in LP. Scale bar, 500 \u03bcm. (I\u2013K) Normalized spontaneous FR (I), evoked FR (J), and SNR (K) of A1 L2/3 neurons without and with optical activation of SC-recipient LP neurons. ***p<0.001, **p=0.0022, paired t-test, n\u00a0=\u00a09 cells in 5 animals. (L) Experimental paradigm: silencing SC by infusing bupivacaine and recording in A1. (M\u2013P) Normalized spontaneous FR (M), evoked FR (N), tuning bandwidth at 60 dB SPL (O) and SNR (P) of A1 L2/3 neurons before and after SC silencing. ***p<0.001, **p=0.0030, *p=0.017, paired t-test, n\u00a0=\u00a010 cells in 7 animals.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/54157/elife-54157-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** Images showing anterogradely labeled SC axons in LP across rostral-caudal axis. Scale bar, 500 \u03bcm.\n\nWe next expressed ChR2 in intermediate and deep layers of SC (Figure 5D). Optogenetic activation of these SC neurons induced effects on A1 L2/3 pyramidal neurons similar to activation of LP: spontaneous and evoked firing rates were decreased, and SNR was increased (Figure 5E\u2013G). We also expressed ChR2 in SC-recipient LP neurons (Zingg et al., 2017) by first injection of AAV-Cre in SC and second injection of AAV encoding Cre-dependent ChR2 in the caudal LP (Figure 5H). In A1, optogenetic activation of SC-recipient LP neurons produced similar effects to the activation of the general LP population: spontaneous and evoked firing rates were reduced, and SNR was increased (Figure 5I\u2013K). Conversely, we silenced SC by infusing bupivacaine (Figure 5L). This resulted in increases of spontaneous and evoked firing rates, broadening of frequency tuning and a reduction of SNR in A1 L2/3 pyramidal neurons (Figure 5M\u2013P), similar to silencing LP per se. Together, these results provide supporting evidence that SC can provide input to drive LP-mediated modulation of A1 responses.\n\n### LP mediates looming visual stimuli induced modulation of auditory responses in A1\n\nBoth SC and LP process visual information and have been implicated in visual looming stimuli induced defensive behaviors such as freezing (Wei et al., 2015; Yilmaz and Meister, 2013; Zingg et al., 2017). Directly stimulating superficial-layer SC neurons, which receive visual input (Zhao et al., 2014; Zhou et al., 2017), can\u00a0elicit freezing responses in mice (Zingg et al., 2017). Notably, LP neurons responded more strongly to visual looming stimuli compared to more commonly used grating and noise-pattern stimuli (Figure 6\u2014figure supplement 1). These results imply that visual looming stimuli might be able to modulate A1 auditory responses via the SC-LP pathway. To test this idea, we paired sound stimulus with visual looming stimulus (Figure 6A), which was an expanding dark disk presented from the upper visual field (see Materials and methods), and compared auditory responses of A1 L2/3 pyramidal neurons with and without coupling the visual stimuli. In the presence of visual looming stimuli, spontaneous and evoked firing rates were reduced (Figure 6B and C), while the SNR was increased (Figure 6D). These results indicate that visual looming stimuli can indeed modulate A1 responses. After silencing LP with muscimol (Figure 6E), the effects on A1 responses by visual looming stimuli disappeared (Figure 6F\u2013H), suggesting that LP primarily mediates the visual looming stimuli induced modulation of auditory responses in A1.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/54157/elife-54157-fig6-v2.jpg)\n\n**Figure 6.:** (A) Pairing of visual looming (V) and sound (S) stimulation. (B\u2013D) Normalized spontaneous FR (B), evoked FR (C), and SNR (D) of A1 L2/3 neurons under sound only (S) and sound plus visual looming (S+V) condition. ***p<0.001, paired t-test, n\u00a0=\u00a012 cells from 2 animals. (E) Testing the effect of visual looming on A1 responses under condition of silencing LP with muscimol. (F\u2013H) Normalized spontaneous FR (E, p=0.25, paired t-test, n\u00a0=\u00a012 cells from 2 animals), evoked FR (F, p=0.42, paired t-test, n\u00a0=\u00a012 cells), and SNR (G, p=0.79, paired t-test, n\u00a0=\u00a012 cells) of A1 neurons when LP was silenced. N.S., not significant.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/54157/elife-54157-fig6-figsupp1-v2.jpg)\n\n**Figure 6\u2014figure supplement 1.:** (A) PSTH for responses of an example LP neuron to visual looming stimuli. (B) Evoked firing rates of LP neurons to visual moving gratings, flash white-noise patterns and looming stimuli, assayed by single-unit recording (n\u00a0=\u00a014, 20, and 13 cells from 2 animals, respectively). *p=0.049, **p=0.0090, ***p<0.001, unpaired t-test with Bonferroni\u2019s correction. Bar represents mean\u00a0\u00b1\u00a0SEM.\n\n## Discussion\n\nLP is considered a higher-order thalamic nucleus. In general, the influence of higher-order thalamus on auditory cortical processing has remained obscure. In the present study, our results demonstrate that LP activity can modulate auditory processing in superficial layers of A1. The overall outcome of increasing LP activity is to improve auditory processing by sharpening frequency tuning and enhancing SNR of auditory evoked responses. This is achieved by subtractive suppression of auditory evoked responses together with suppression of spontaneous firing activity. We also demonstrate that such modulatory effect is largely mediated by the direct projection of LP to A1, where LP axons preferentially innervate L1 inhibitory neurons and superficial-layer PV inhibitory neurons, leading to a net disynaptic inhibitory effect on L2/3 pyramidal neurons. The suppression of A1 L2/3 responses is consistent with our recent study showing a similar suppressive effect in L2/3 of the primary visual cortex (V1), which results in an enhancement of visual feature selectivity (Fang et al., 2020).\n\nThe subtractive effect on L2/3 responses suggests that L1 inhibitory neurons (and PV neurons in superficial layers as well) may be broadly tuned for frequency. The frequency tuning property of L1 inhibitory neurons in the auditory cortex has not been studied yet, but a previous study in the visual cortex does suggest that L1 inhibitory neurons are broadly tuned for visual features such as orientation and direction (Mesik et al., 2019), and PV neurons in superficial layers of A1 have been shown to be broadly tuned for tone frequency (Cohen and Mizrahi, 2015; Li et al., 2015; Liang et al., 2019; Maor et al., 2016). As for the local circuit involved, we suggest that both L1 inhibitory neurons and L2/3 PV neurons, which receive direct LP input, can directly inhibit L2/3 pyramidal cells (Jiang et al., 2013), generating an overall suppressive effect. For L1 inhibitory neurons, their molecular identities have been reported to be diverse: 70% are NDNF+, 20% are nAchR+, and 10% are VIP+ (Schuman et al., 2019). It will be of great interest to investigate which of these cell types contributes to the LP-mediated modulation of A1 responses by using cell-type specific mouse lines. In addition, whether VIP+ neurons in L2/3 can also be involved in the suppressive effect remains to be tested.\n\nThe LP-mediated modulatory effect on A1 processing may be particularly pronounced and beneficial when there is a high noise background. A previous study has demonstrated that increasing background noise is equivalent to lowering the intensity of test (e.g. tone) stimuli, that\u00a0is, shifting up the TRF by a certain \u0394threshold value (Liang et al., 2014). In the current study, we demonstrate that LP activity also exerts a similar thresholding effect on A1 frequency tuning. Our results suggest that the noise effect on A1 frequency tuning may be achieved, at least partially, through LP. The contribution of LP to noise-related contextual modulation of A1 frequency processing is in a positive manner, in that it helps not only to prevent SNR of auditory responses from being deteriorated quickly by high-level noise background (Figure 4H) but also to accelerate the sharpening of frequency tuning with increasing noise levels (Figure 4I), which may compensate somewhat for the detrimental effect on SNR. Because LP activity is modulated by the noise level in that high-intensity noise activates LP neurons more than low-intensity noise (Figure 4A), LP neurons have a stronger protective effect on A1 processing under high-intensity than low-intensity noise conditions.\n\nIt is known that LP/pulvinar has extensive reciprocal connectivity with cortical areas including visual and auditory cortices (Hackett et al., 1998; De La Mothe et al., 2006; Nakamura et al., 2015; Oh et al., 2014; Tohmi et al., 2014; Zhou et al., 2018; Bennett et al., 2019). Previously, it has been suggested that LP/pulvinar serves in a cortico-thalamo-cortical (\u2018transthalamic\u2019) indirect route for information transfer from one cortical area to another (Guillery and Sherman, 2002; Sherman, 2016). Besides cortical inputs, LP also receive strong inputs from SC (Beltramo and Scanziani, 2019; Bennett et al., 2019; Fang et al., 2020; Gale and Murphy, 2014; Stepniewska et al., 2000; Wei et al., 2015; Zingg et al., 2017). In this study, we demonstrate that LP (mainly the caudal part) receives direct input from the auditory related part of SC and projects to A1, and that silencing SC produces changes in A1 functional response properties similar to silencing LP. These results together suggest that SC can relay bottom-up input to LP to drive its modulation of A1 processing.\n\nIn addition, SC is a multisensory structure (Drager and Hubel, 1975; King and Palmer, 1985; Meredith and Stein, 1986). The visual only part of SC, that\u00a0is the superficial layer of SC, also projects strongly to the caudal LP (Beltramo and Scanziani, 2019; Bennett et al., 2019; Fang et al., 2020). Thus, visual input may be able to modulate A1 responses as well via LP. Here, we demonstrate that visual looming stimuli modulate A1 L2/3 responses in a similar manner as increasing LP activity and that silencing LP blocks this modulation. This highlights a cross-modality feature of LP modulation. We should note however that the experiment with pharmacological silencing of LP (Figure 6E\u2013H) does not exclude possible involvements of LP-mediated pathways other than the bottom-up SC-LP pathway. For example, visual looming signals may reach LP through feedback pathways from visual and associative cortices and then modulate responses in A1. We postulate that the multisensory nature of SC and its strong projections to LP potentially endow LP with an ability to modulate A1 activity given any salient sensory stimuli.\n\nIn summary, our results suggest that a previously unrecognized pathway, the SC-LP-A1 pathway, can provide contextual and cross-modality modulation of A1 responses and auditory processing to enhance the salience of acoustic information. How this pathway may interact with the canonical colliculo-thalamo-cortical auditory pathway remains to be investigated in the future.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Strain, strain background (Mus musculus)</td>\n      <td>C57BL/6J</td>\n      <td>Jachson Laboratory</td>\n      <td>RRID:IMSR_JAX:000664</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (Mus musculus)</td>\n      <td>Ai14</td>\n      <td>Jachson Laboratory</td>\n      <td>RRID:IMSR_JAX:007914</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (Mus musculus)</td>\n      <td>GAD2-IRES-Cre</td>\n      <td>Jachson Laboratory</td>\n      <td>RRID:IMSR_JAX:010802</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (Mus musculus)</td>\n      <td>PV-IRES-Cre</td>\n      <td>Jachson Laboratory</td>\n      <td>RRID:IMSR_JAX:008069</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (Mus musculus)</td>\n      <td>SOM-IRES-Cre</td>\n      <td>Jachson Laboratory</td>\n      <td>RRID:IMSR_JAX:013044</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>AAV1-CAMKII-hChR2-eYFP</td>\n      <td>UPenn Vector Core</td>\n      <td>Addgene #26969</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>AAV1-CAG-ArchT-GFP</td>\n      <td>UPenn Vector Core</td>\n      <td>Addgene #29777</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>AAV1-hSyn-eNpHR3.0-mCherry</td>\n      <td>UPenn Vector Core</td>\n      <td>Addgene #26972</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>AAV2/1-CB7-Cl-eGFP-WPRE-rBG</td>\n      <td>UPenn Vector Core</td>\n      <td>Addgene #105542</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>AAV2/1-hSyn-Cre-WPRE-hGH</td>\n      <td>UPenn Vector Core</td>\n      <td>Addgene #105553</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>AAV2/1-EF1a-DIO-hChR2-eYFP</td>\n      <td>UPenn Vector Core</td>\n      <td>Addgene #105553</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Cholera Toxin Subunit B (Recombinant), Alexa Fluor 488 Conjugate</td>\n      <td>ThermoFisher</td>\n      <td>C22841</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>NeuroTrace 640/660 Deep-Red Fluorescent Nissl Stain</td>\n      <td>ThermoFisher</td>\n      <td>N21483</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Muscimol</td>\n      <td>ThermoFisher</td>\n      <td>M23400</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Bupivacaine</td>\n      <td>Sigma-Aldrich</td>\n      <td>B1160000</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Tetrodotoxin (TTX)</td>\n      <td>Torcris</td>\n      <td>Cat. No. 1078</td>\n      <td>1 \u00b5M</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>4-Aminopyridine (4-AP)</td>\n      <td>Torcris</td>\n      <td>Cat. No. 0940</td>\n      <td>1 mM</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Cyanquixaline (CNQX)</td>\n      <td>Sigma-Aldrich</td>\n      <td>C239</td>\n      <td>20 \u00b5M</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Offline Sorter</td>\n      <td>Plexon</td>\n      <td>https://plexon.com</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>MATLAB</td>\n      <td>Mathworks</td>\n      <td>https://www.mathworks.com/; RRID:SCR_001622</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Prism</td>\n      <td>GraphPad</td>\n      <td>https://www.graphpad.com/scientific-software/prism/; RRID:SCR_00279</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Fiji</td>\n      <td>NIH</td>\n      <td>https://fiji.sc/; RRID:SCR_002285</td>\n      <td></td>\n    </tr>\n  </tbody>\n</table>\n\n### Experimental animals\n\nAll experimental procedures used in the present study were approved by the Animal Care and Use Committee at the University of Southern California. Male and female wild-type (C57BL/6J) and transgenic (GAD2-Cre, PV-Cre, SOM-Cre, and Ai14) mice were obtained from the Jackson Laboratory. Animals aged 8\u201312 weeks and weighed 18\u201328 g were used in the experiments. Animal sample sizes were determined by the estimated variances of the experiments and previous experience from similar experiments and were sufficient for all the statistical testes. Mice were housed under a 12 hr light/dark cycle. Food and water were provided ad libitum. Randomization methods were used to allocate experimental groups.\n\n### Viral and neural tracer injection\n\nViral injections were performed as previously described Fang et al. (2020); Zingg et al. (2017). In brief, stereotaxic coordinates were selected based on the Allen Mouse Brain Atlas (www.brain-map.org). Mice were placed on a heating pad with homoeothermic control and anesthetized with 1.5% isoflurane throughout all surgical procedures. A small cut was made on the skin after shaving to expose the skull. A craniotomy of 0.2 mm in diameter was made to expose the underlying cortex. After removing the dura mater, a pulled glass pipette with a beveled tip of\u00a0~20 \u00b5m in diameter was inserted to the target region. The viral solution or tracers were delivered by pressure injection. For optogenetic silencing and activating LP and its terminals, AAV1-CAMKII-hChR2-eYFP (UPenn Vector Core, 1.7\u00a0\u00d7\u00a01013 GC/ml), AAV1-CAG-ArchT-GFP (UPenn Vector Core, 1.7\u00a0\u00d7\u00a01013 GC/ml), and AAV1-hSyn-eNpHR3.0-mCherry (UPenn Vector Core, 1.7\u00a0\u00d7\u00a01013 GC/ml) was injected into LP (50 nl total volume, AP \u22122.4 mm, ML +1.6 mm, DV \u22122.4 mm) of wild-type animals, respectively. For anterograde tracing of LP projections, AAV2/1-CB7-Cl-eGFP-WPRE-rBG (UPenn Vector Core, 1.7\u00a0\u00d7\u00a01013 GC/ml) was injected into LP. For retrograde tracing of LP afferents, we injected CTB488 into A1 (AP \u22122.6 mm, ML +4.4 mm, DV +0.6 mm). For optogenetically activating SC axonal terminals in LP for slice recording, AAV1-CAMKII-hChR2-eYFP (UPenn Vector Core, 1.7\u00a0\u00d7\u00a01013 GC/ml) was injected into SC (AP \u22123.75 mm, ML +0.6 mm, DV \u22121.45 mm). For transsynaptic labeling from SC to LP, AAV2/1-hSyn-Cre-WPRE-hGH (UPenn Vector Core, 2.5\u00a0\u00d7\u00a01013 GC/mL) was injected into SC, and AAV2/1-EF1a-DIO-hChR2-eYFP (UPenn Vector Core, 1.6\u00a0\u00d7\u00a01013 GC/mL) was injected into LP. Animals were allowed to recover for at least 3 weeks following the injections of viruses.\n\n### Histology and imaging\n\nAfter experiments, animals were deeply anesthetized and transcardially perfused with phosphate buffered saline (PBS) followed by 4% paraformaldehyde (PFA). The brain tissue was collected and fixed in 4% PFA at 4 \u00b0C overnight and then sliced into 150 \u03bcm sections with a vibratome (Leica, VT1000s). Nissl staining was used to visualize the cyto-architecture. Brain slices were first rinsed with PBS for 10 min, and then incubated in PBS containing Neurotrace 620 (ThermoFisher, N21483) and 0.1% Triton X-100 (Sigma-Aldrich) for 2 hr. Images were taken with a confocal microscope (Olympus FluoView FV1000). To identify and verify the injection site and spread of virus expression and drug infusion, images were taken under a 4\u00a0\u00d7\u00a0objective. Regions with axonal labeling were further imaged under a 10\u00a0\u00d7\u00a0objective for clearer visualization of innervation patterns.\n\n### Optogenetic and pharmacological manipulation\n\nOne week before recording sessions, the animals were prepared as previously described Chou et al.\u00a0(2018); Fang et al., 2020. In brief, mice were placed on the stereotaxic apparatus and anesthetized with 1.5% isoflurane during the implantation. Optic fiber implantation was made at least three weeks after injecting ChR2 or ArchT virus. For implantation, small holes of 500 \u00b5m in diameter were drilled to allow the insertion of microinjection tubes (300 \u00b5m ID, RWD) or the fiber optic cannula (200 \u00b5m ID, Thorlabs). The holes were drilled directly above LP (AP \u22122.5 mm, ML +1.6 mm), or A1 (AP \u22122.6 mm, ML +4.4 mm). The injection tube or cannula were lowered to the desired depth and fixed in place using dental cement. In the meantime, a screw for head fixation was mounted on top of the skull with dental cement as well. For drug infusion during recording, an injector (100 \u00b5m ID, RWD) was inserted into the microinjection tube, and 200 nl 0.5% bupivacaine mixed with DiI (2 mg/ml) or fluorescent muscimol (1.5 mM, Life Technologies) were slowly injected into SC (AP \u22123.75 mm, ML +0.6 mm, DV \u22121.45 mm) or LP (AP \u22122.5 mm, ML +1.6 mm, DV \u22122.4 mm) through a micro-syringe. Since bupivacaine\u2019s silencing effect lasts for only 30\u201340 min (Fang et al., 2020), it was possible for us to sequentially record from multiple A1 neurons in the same animal and examine effects on them by silencing LP/SC. Optogenetic manipulations were performed following our previous studies (Chou et al., 2018; Fang et al., 2020; Ibrahim et al., 2016). To optogenetically activate LP, light from a blue LED source (470 nm, 10 mW, Thorlabs) was delivered at a rate of 20 Hz (20 ms pulse duration) via the implanted cannulas using a patch cord (\u00d8200 \u00b5m, 0.22 NA SMA 905, Thorlabs) for ChR2 animals. The plastic sleeve (Thorlabs) securing the patch cord and cannula was wrapped with black tape to prevent light leakage. Similarly, for silencing LP, light from a green LED source (530 nm, 10 mW, Thorlabs) was delivered continuously for stimulating ArchT-expressing neurons. For manipulation of terminals from LP to A1, optic cannula connected with a blue and an amber LED (589 nm, 10 mW, Thorlabs) source was placed on the surface of A1 to stimulate ChR2- and eNpHR3.0-expressing LP axons, respectively. The optogenetic stimulation preceded sound stimulation by 50 ms. Animals were allowed to recover for one week before recording session. During the recovery period, they were habituated to the head fixation on the flat running plate. The head screw was tightly fit into a metal post while the animal could run freely on the plate. Following recording sessions, animals were euthanized, and the brain was imaged to verify the specificity of virus expression and locations of implantations. Mice with mistargeted injections or misplacements of drug infusion tubes or optic fibers were excluded from data analysis.\n\n### Slice preparation and recording\n\nThree weeks following the injections, animals were decapitated following urethane anesthesia and the brain was rapidly removed and immersed in an ice-cold dissection buffer (composition: 60 mM NaCl, 3 mM KCl, 1.25 mM NaH2PO4, 25 mM NaHCO3, 115 mM sucrose, 10 mM glucose, 7 mM MgCl2, 0.5 mM CaCl2; saturated with 95% O2 and 5% CO2; pH\u00a0=\u00a07.4). Coronal slices at 350 \u00b5m thickness were sectioned by a vibrating microtome (Leica VT1000s), and recovered for 30 min in a submersion chamber filled with warmed (35\u00b0C) ACSF (composition:119 mM NaCl, 26.2 mM NaHCO3, 11 mM glucose, 2.5 mM KCl, 2 mM CaCl2, 2 mM MgCl2, and 1.2 mM NaH2PO4, 2 mM Sodium Pyruvate, 0.5 mM Vitamin C). A1 or LP neurons were visualized under a fluorescence microscope (Olympus BX51 WI). Patch pipettes (~4\u20135 M\u03a9 resistance) filled with a cesium-based internal solution (composition: 125 mM cesium gluconate, 5 mM TEA-Cl, 2 mM NaCl, 2 mM CsCl, 10 mM HEPES, 10 mM EGTA, 4 mM ATP, 0.3 mM GTP, and 10 mM phosphocreatine; pH\u00a0=\u00a07.25; 290 mOsm) were used for whole-cell recordings. Signals were recorded with an Axopatch 700B amplifier (Molecular Devices) under voltage clamp mode at a holding voltage of \u201370 mV for excitatory currents or 0 mV for inhibitory currents, filtered at 2 kHz and sampled at 10 kHz. Tetrodotoxin (TTX, 1 \u03bcM) and 4-aminopyridine (4-AP, 1 mM) were added to the external solution to isolate monosynaptic responses. Blue light stimulation (10 ms pulse, 3 mW power, 10\u201330 trials) was delivered via a mercury Arc lamp gated with an electronic shutter. PV+, SOM+ or L1 GAD2+ neuronal types were determined by the tdTomato expression. Laminar location of the recorded cell was determined by its depth from the pial surface. CNQX (10 \u00b5M) was added to verify glutamatergic transmission.\n\n### Sound and visual stimulation\n\nWhite noise (50 ms, 70 dB sound pressure level or SPL) or tone pips (50 ms duration, 3 ms ramp) of various frequencies (2\u201345.25 kHz, 0.1 octave interval) and intensities (10\u201370 dB SPL, at 10 dB interval) were generated by custom-made software in LabView (National Instruments) through a 16-bit National Instruments interface, and delivered through a calibrated speaker (Tucker-Davis Technologies) to the contralateral ear. The 322 testing stimuli were presented in a pseudorandom sequence. The inter-stimulus interval between noise stimulation or tone pips was 1 s. For auditory stimuli embedded in noise of different levels, 50 ms tone pips at different intensities and frequencies as described above were embedded in white noise of different intensity levels (0, 15, 30, 45 dB SPL). The white noise was 250 ms in duration and preceded the tone pip by 100 ms.\n\nVisual stimuli were generated in Matlab (MATLAB) with the Psychophysics Toolbox Version 2 (Brainard, 1997) and were presented on a ViewSonic VA705b monitor (1920\u00a0\u00d7\u00a01440 pixels, 33.9 cm wide, 27.2 cm high, 60 Hz refresh rate, mean luminance 41 cd/m2) mounted on a flexible arm. For visual noise stimulation, a set of dense white-noise patterns were presented. Each frame of the stimuli consisted of a grid of 20\u00a0\u00d7\u00a020 squares (each square 4\u00b0\u00d73\u00b0), intensities of which were determined by a m-sequence. Each pattern was presented for 200 ms and 30\u201350 patterns were presented according to the response level and fidelity. For grating stimulation, drifting sinusoidal gratings (12 directions, 0\u00b0\u2212330\u00b0, 30\u00b0 per step, 6 orientations) were presented in a pseudorandom order for 5\u20138 repetitions. The spatial frequency of the gratings was chosen to be 0.04 cycles per second (cpd) and temporal frequency to be 2 cycles per second (Hz). Each grating drifted for 1.5 s and another grating appeared, which remained to be static for 3 s before drifting. The looming stimulus was an expanding black disk presented from the upper visual field. It changed from 2\u00b0 to 20\u00b0 size (in diameter) within 250 ms. The largest black disk after the expansion stayed for another 250 ms, and the interstimulus interval was 250 ms. The auditory stimulus (tone pips as described above) was paired with each cycle of the looming stimulation with an onset delay of 200 ms. We usually only presented 30 cycles of looming stimulation to avoid a potential adaptation effect.\n\n### In vivo electrophysiology\n\nOne week after the preparation, animals were head-fixed on the running plate, and electrophysiology recording with either optogenetic or pharmacological manipulation was carried out in a sound-attenuation booth. Loose-patch recordings were performed as previously described\u00a0(Fang et al., 2020; Ibrahim et al., 2016; Liang et al., 2019; Zhou et al., 2014), with a patch pipette filled with an artificial cerebral spinal fluid (ACSF; 126 mM NaCl, 2.5 mM KCl, 1.25 mM Na2PO4, 26 mM NaHCO3, 1 mM MgCl2, 2 mM CaCl2 and 10 mM glucose). A loose seal (0.1\u20130.5 G\u03a9) was made on the cell body, allowing spikes only from the patched cell to be recorded. Signals were recorded with an Axopatch 200B amplifier (Molecular Devices) under voltage-clamp mode, with a command voltage applied to adjust the baseline current to near zero. Loose-patch recording signals were filtered with a 100\u20135,000 Hz band-pass filter. The depths of the recorded neurons were determined based on the micromanipulator reading. Spikes could be detected without ambiguity because their amplitudes were normally higher than 100 pA, while the baseline fluctuation was\u00a0<5 pA. Multichannel recordings were carried out by lowering a 64-channel silicone probe (NeuroNexus) into the target region. Signals were recorded by an Open-Ephys system. Multi-unit signals during sound stimulation were recorded and saved for offline analysis.\n\n### Data analysis\n\nNoise-driven and tone-driven spike rates were analyzed within a 10\u201360 ms time window after the onset of sounds. For quantifying evoked firing rates, average baseline firing rate calculated within a 50 ms time window preceding the onset of sounds was subtracted. For quantifying changes in spontaneous firing rate, spontaneous firing rates calculated within a 50 ms time window before sound onsets were compared between LED-on and LED-off conditions. TRFs were reconstructed according to the array sequence. The frequency\u2013intensity space was up-sampled 5 times along the frequency and intensity dimensions only for visualization purposes. The measurements of TRF parameters (e.g. bandwidth) were made from the raw data. Boundaries of the spike TRF were determined following previous studies (Liang et al., 2014; Schumacher et al., 2011; Sutter and Schreiner, 1991; Xiong et al., 2013). A threshold at the value equal to the spontaneous spike rate plus 20% of the peak evoked firing rate was then used to define significant evoked responses. Responses to frequency\u2013intensity combinations that met this criterion were considered to fall within the TRF of the neuron, which generated the contour of the TRF (Xiong et al., 2013). Characteristic frequency (CF) was defined as the frequency (in Hz) at which the lowest sound pressure level was necessary to evoke a significant excitatory response. Bandwidth of TRF was determined as the total frequency range for effective tones at 60 dB SPL or at 20 dB SPL above the intensity threshold (i.e. BW20). SNR of auditory responses was calculated as the evoked firing rate divided by the spontaneous firing rate. To quantify changes in evoked firing rate, average tone-evoked firing rates across the TRF (under the control condition) were compared between control and activity manipulation conditions. Onset latency of spike responses was determined based on the generated peristimulus spike-time histogram (PSTH) as the interval between the stimulus onset and the time point where spike rate exceeded the average baseline by 2 standard deviations of baseline fluctuations.\n\nTo plot frequency tuning curve using the Envelope function (Sun et al., 2010), the tone-evoked responses at 60 dB SPL with and without activity manipulation were normalized to the highest evoked firing rate in the control condition. Linear regression fitting for the normalized evoked firing rates with and without activity manipulation was performed for individual neurons in each group, and R2, slope, and intercepts of the best fit line were determined.\n\nFor spike sorting of data obtained from multichannel recording, spike signals were filtered with a 300\u20133,000 Hz band-pass filter. The nearby four channels of the silicon probe were grouped as tetrodes and semi-automatic spike sorting was performed using the offline sorter of Plexon (Dallas, Texas) following our previous study (Zhang et al., 2018). Clusters with isolation distance\u00a0>20 were considered as separate clusters. Spike clusters were classified as single units only if the waveform SNR (signal-to-noise ratio) exceeded 4 (12 dB) and the inter-spike interval was longer than1.2 ms for\u00a0>99.5% of the spikes.\n\n### Statistics\n\nShapiro\u2013Wilk test was first applied to examine whether samples had a normal distribution, and a p value\u00a0<\u00a00.05 indicated non-normality. In the case of a normal distribution, Z-test or two-sided paired t-test was applied. Otherwise, the Wilcoxon signed-rank test was applied as a non-parametric test. Two-sample Kolmogorov-Smirnov test was used to test whether data from two groups were from the same distribution. Statistical analysis was conducted with Matlab. Data were reported as mean\u00a0\u00b1\u00a0SD unless otherwise mentioned.\n",
+      "created_at": "2025-12-02T15:38:41.241381Z"
+    },
+    {
+      "id": "3d2f911a-1fc0-4a61-8af2-4d2310be274d",
+      "submission_id": "99561ed5-7ec9-4100-af19-04748cb26c4b",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Brice Bathellier, CNRS France\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.54157.sa1](https://doi.org/10.7554/eLife.54157.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nAcceptance summary:\n\nThis article demonstrates for the first time the role of the lateral posterior nucleus of the thalamus (LP), a part of the pulvinar, in controlling auditory cortex activity according to auditory but also visual context. Particularly interesting are the demonstrations that LP is critical for maintaining good signal-to-noise ratio for tone responses in the presence of background noise, and that it also improves auditory coding during visual threat, thanks to inputs received from the superior colliculus. This indicates non-trivial influences of secondary thalamic nuclei on auditory processing.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Contextual and Cross-Modality Modulation of Auditory Cortical Processing through Pulvinar Thalamus Mediated Thresholding\" for consideration by eLife. Your article has been reviewed by three peer reviewers, including Brice Bathellier as the Reviewing Editor and Reviewer #1, and the evaluation has been overseen by Andrew King as the Senior Editor. The following individual involved in review of your submission has agreed to reveal their identity: Alfonso junior Apicella (Reviewer #3).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nThe authors show that the analog of pulvinar in rodent, LP, projects to auditory cortex. Moreover its activation modulates spontaneous activity and auditory responses, putatively by driving GABAergic interneurons (in L1 but also PV cells in L2/3). This results in a decreased signal-to-noise ratio and sharper frequency tuning curves. Also, LP seems to be driven by superior colliculus and mediates inhibition of AC (but increases SNRs for sound response) during dark looming visual stimuli. Finally another interesting result is that LP activation improves SNRs in acoustic noise.\n\nThis is a really nice paper that studies the projection from LP to A1 in awake mice using a barrage of different circuit-specific tools. The authors elegantly demonstrate that the lateral posterior nucleus (LP) of the thalamus, the rodent homologue of the primate pulvinar thalamus, contributes to the maintenance and enhancement of primary auditory cortex processing in the presence of auditory background noise and threating visual looming stimuli, respectively. The study design is uncomplicated, and the experiments were carried out very carefully. The results are presented clearly and are overall convincing. Together, this makes an interesting study about a potentially ecologically relevant modulation of auditory cortex, in a multisensory context.\n\nNevertheless the reviewers pointed to a number of essential revisions to make in order to clarify particular points of the manuscript.\n\nEssential revisions:\n\n1) The authors claim throughout the paper that LP modulates auditory responses but that this modulation is purely additive and occurs both in spontaneous and evoked response. This seems to be more a global offset than a modulation. Unfortunately, we could not find in the text or Materials and methods section whether evoked firing rates are calculated after subtraction of baseline or not, but it seems it is done without baseline subtraction.\n\nIf this is correct, then baseline-subtracted evoked response would likely show no effect of LP (in)activation.\n\nThe authors should clarify that and mitigate their claim about a modulation while their main results rather describe an input bias acting both on evoked and spontaneous firing rates with the same strength.\n\nNote that this 'input bias description' explains very well the SNR increase: SNR = (signal + LP_offset)/(baseline + LP_offset) as signal > baseline, LP_offset has a stronger impact on the denominator, and SNR increases for a negative offset.\n\nIf this is correct, it would be clearer to say that LP activity removes some of the background activity to sharpen the actual signal, but without modulating the signal itself. In any case, baseline subtracted responses should be added to the manuscript and it should be discussed if the observed modulation is a simple offset or more than that.\n\nThat said, the very interesting results in acoustic noise conditions show that LP can also have an effect on responses to acoustic noise, which does not seem to be purely additive, as in that case LP silencing has much more impact for loud than quiet white noise. In this specific case, one observes a real down-modulation of the noise response by LP. So this should also be mentioned and it should be discussed why LP effects are not additive anymore in this case.\n\nAlso the authors could discuss potential operative models explaining how interneuron activations lead to the observed modulations. For example, are the authors able to say anything about the L1 inhibitory tuning properties? i.e. what is the local circuit mechanism that is leading to the L2/3 changes? Do you know anything about the identity of the L1 neurons contributing to the circuit (are they primarily VIP+)?\n\n2) It seems from the figures and the Materials and methods that the receptive fields were upsampled. Were the bandwidths (and anything else extracted from the receptive fields) taken from the upsampled data? If so, this renders the result dependent on the technique used for upsampling. In this case measurements such as bandwidth should be extracted from raw data.\n\n3) Why was 60dB used for your bandwidth measurement. It seems a little arbitrary given that the standard in the auditory field is to use \"BW10\" or \"BW20\" (i.e. bandwidths either 10 or 20 dB above threshold). Please, use these measurements as well. In looking at Figure 1B one cannot help but think that 60 dB was chosen because lower intensities did not exhibit a significant result \u2013 is that the case?\n\n4) Could the authors elaborate a little of their choice of light power for activation/inactivation experiments? From the Materials and methods, it seems like 10mW was used. Was the same power used for both activation/inactivation experiments (and is this valid, given the differences between ChR2 and Arch)? Did they titrate power at all, i.e. if the power was kept the same for all experiments, then day-to-day experimental variability (differences in viral uptake, variation in fiber placement) become an additional confound.\n\n5) The statistics used in the paper are insufficiently documented, and could be improved. In the Materials and methods section, it is stated that Shapiro-Wilk was used as a normality test prior to a paired t-test, if appropriate. However the results are never shown and the paired t-test seems to have been used for the majority of tests between on and off conditions throughout the paper. Please justify systematically the normality of the data or even better, use a non-parametric test (e.g. Signed test), which should just work as well.\n\n6) Things become a little bit more circuit unspecific later in the paper. For example, the visual looming experiment is only carried out with a mass pharmacological silencing of LP. The results are certainly suggestive, given the rest of the paper, but alternate circuits and mechanisms should be thoroughly discussed and acknowledged.\n",
+      "created_at": "2025-12-02T15:38:41.241381Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T15:38:41.241381Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T15:38:41.241381Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "5d2af224-4d93-4778-8bfe-b087c941e8bc",
+      "content_id": "8c4844fa-821b-4953-b6f1-9ca1873578cb",
+      "claim_id": "C1",
+      "claim": "LP is the rodent homologue of primate pulvinar.",
+      "claim_type": "EXPLICIT",
+      "source": "Lateral posterior nucleus (LP) of thalamus, the rodent homologue of primate pulvinar, projects extensively to sensory cortices.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to previous literature establishing this homology.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:38:41.241381Z"
+    },
+    {
+      "id": "ca09a217-5eaf-49f2-95c2-c4656c1da04f",
+      "content_id": "8c4844fa-821b-4953-b6f1-9ca1873578cb",
+      "claim_id": "C2",
+      "claim": "LP projects extensively to sensory cortices.",
+      "claim_type": "EXPLICIT",
+      "source": "Lateral posterior nucleus (LP) of thalamus, the rodent homologue of primate pulvinar, projects extensively to sensory cortices.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated in the abstract and supported by anatomical tracing data shown in figures.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:38:41.241381Z"
+    },
+    {
+      "id": "e7b1e258-d9d7-4572-98cb-72752b9e97ed",
+      "content_id": "8c4844fa-821b-4953-b6f1-9ca1873578cb",
+      "claim_id": "C3",
+      "claim": "LP improves auditory processing in A1 supragranular-layer neurons by sharpening their receptive fields and frequency tuning.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, bidirectional activity modulations of LP or its projection to the primary auditory cortex (A1) in awake mice reveal that LP improves auditory processing in A1 supragranular-layer neurons by sharpening their receptive fields and frequency tuning, as well as increasing the signal-to-noise ratio (SNR).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data from optogenetic manipulations showing changes in frequency tuning bandwidth and SNR.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:38:41.241381Z"
+    },
+    {
+      "id": "cb727b2d-2dcd-4560-b684-406e8048dc73",
+      "content_id": "8c4844fa-821b-4953-b6f1-9ca1873578cb",
+      "claim_id": "C4",
+      "claim": "LP increases the signal-to-noise ratio (SNR) of A1 supragranular-layer neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, bidirectional activity modulations of LP or its projection to the primary auditory cortex (A1) in awake mice reveal that LP improves auditory processing in A1 supragranular-layer neurons by sharpening their receptive fields and frequency tuning, as well as increasing the signal-to-noise ratio (SNR).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data showing SNR changes with LP manipulation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:38:41.241381Z"
+    },
+    {
+      "id": "cb43f213-44fd-4f2e-b12d-b531fc70b2fd",
+      "content_id": "8c4844fa-821b-4953-b6f1-9ca1873578cb",
+      "claim_id": "C5",
+      "claim": "LP modulation is achieved through a subtractive-suppression mechanism.",
+      "claim_type": "EXPLICIT",
+      "source": "This is achieved through a subtractive-suppression mechanism, mediated largely by LP-to-A1 axons preferentially innervating specific inhibitory neurons in layer 1 and superficial layers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by linear regression analysis showing positive/negative y-intercepts with slope near 1, and by circuit mapping data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:38:41.241381Z"
+    },
+    {
+      "id": "1c3e51bb-b124-4eb5-b445-f5d6093526e2",
+      "content_id": "8c4844fa-821b-4953-b6f1-9ca1873578cb",
+      "claim_id": "C6",
+      "claim": "LP-to-A1 axons preferentially innervate specific inhibitory neurons in layer 1 and superficial layers.",
+      "claim_type": "EXPLICIT",
+      "source": "This is achieved through a subtractive-suppression mechanism, mediated largely by LP-to-A1 axons preferentially innervating specific inhibitory neurons in layer 1 and superficial layers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by slice recording data showing monosynaptic connections to L1 inhibitory neurons and PV neurons.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:38:41.241381Z"
+    },
+    {
+      "id": "302e0d33-839b-4d12-96f8-f8a9d4a9f640",
+      "content_id": "8c4844fa-821b-4953-b6f1-9ca1873578cb",
+      "claim_id": "C7",
+      "claim": "LP is strongly activated by specific sensory signals relayed from the superior colliculus (SC).",
+      "claim_type": "EXPLICIT",
+      "source": "LP is strongly activated by specific sensory signals relayed from the superior colliculus (SC), contributing to the maintenance and enhancement of A1 processing in the presence of auditory background noise and threatening visual looming stimuli respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by recording data showing LP responses to noise and visual stimuli, and by SC silencing experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:38:41.241381Z"
+    },
+    {
+      "id": "0570792d-0c13-4bd2-a05d-2412760cf532",
+      "content_id": "8c4844fa-821b-4953-b6f1-9ca1873578cb",
+      "claim_id": "C8",
+      "claim": "LP contributes to the maintenance and enhancement of A1 processing in the presence of auditory background noise.",
+      "claim_type": "EXPLICIT",
+      "source": "LP is strongly activated by specific sensory signals relayed from the superior colliculus (SC), contributing to the maintenance and enhancement of A1 processing in the presence of auditory background noise and threatening visual looming stimuli respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experiments showing LP silencing effects on A1 responses under different noise conditions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:38:41.241381Z"
+    },
+    {
+      "id": "55e47dbd-337e-4f63-96db-dff1a362be67",
+      "content_id": "8c4844fa-821b-4953-b6f1-9ca1873578cb",
+      "claim_id": "C9",
+      "claim": "LP contributes to the enhancement of A1 processing in the presence of threatening visual looming stimuli.",
+      "claim_type": "EXPLICIT",
+      "source": "LP is strongly activated by specific sensory signals relayed from the superior colliculus (SC), contributing to the maintenance and enhancement of A1 processing in the presence of auditory background noise and threatening visual looming stimuli respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experiments showing visual looming effects on A1 responses are blocked by LP silencing.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:38:41.241381Z"
+    },
+    {
+      "id": "611707dc-2165-4d27-8a56-6bbef7fd84b9",
+      "content_id": "8c4844fa-821b-4953-b6f1-9ca1873578cb",
+      "claim_id": "C10",
+      "claim": "A multisensory bottom-up SC-pulvinar-A1 pathway plays a role in contextual and cross-modality modulation of auditory cortical processing.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, a multisensory bottom-up SC-pulvinar-A1 pathway plays a role in contextual and cross-modality modulation of auditory cortical processing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion drawn from multiple experiments showing SC input to LP and LP modulation of A1 under different sensory contexts.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:38:41.241381Z"
+    },
+    {
+      "id": "20185380-8111-4a0a-b98f-c7e808e50178",
+      "content_id": "8c4844fa-821b-4953-b6f1-9ca1873578cb",
+      "claim_id": "C11",
+      "claim": "First-order thalamic nuclei serve as the major driver of sensory responses in the cortex for each respective sensory modality.",
+      "claim_type": "EXPLICIT",
+      "source": "They serve as the major driver of sensory responses in the cortex for each respective sensory modality (Guillery and Sherman, 2002; Halassa and Sherman, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to established literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:38:41.241381Z"
+    },
+    {
+      "id": "7971312e-179c-48d3-a391-83218200057c",
+      "content_id": "8c4844fa-821b-4953-b6f1-9ca1873578cb",
+      "claim_id": "C12",
+      "claim": "The functional roles of higher-order thalamic nuclei in sensory processing are much less well understood compared to first-order thalamic nuclei.",
+      "claim_type": "EXPLICIT",
+      "source": "Compared to first-order thalamic nuclei, the functional roles of higher-order thalamic nuclei in sensory processing are much less well understood, although many of them are known to have broad connections with both primary and secondary cortices.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about the state of knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:38:41.241381Z"
+    },
+    {
+      "id": "e5b620e3-3a2c-440c-ad82-179f564bcf9d",
+      "content_id": "8c4844fa-821b-4953-b6f1-9ca1873578cb",
+      "claim_id": "C13",
+      "claim": "LP/pulvinar is considered the largest thalamic complex.",
+      "claim_type": "EXPLICIT",
+      "source": "The latter is considered the largest thalamic complex (Harting et al., 1973).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:38:41.241381Z"
+    },
+    {
+      "id": "ee9b7e84-aded-4c2f-bb78-0fad0883e956",
+      "content_id": "8c4844fa-821b-4953-b6f1-9ca1873578cb",
+      "claim_id": "C14",
+      "claim": "Previous studies on LP/pulvinar have mostly been focused on its involvement in visual-related functions.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous studies on LP/pulvinar have mostly been focused on its involvement in visual-related functions, such as visual attention, visually guided behaviors and eye movements (Dominguez-Vargas et al., 2017; Saalmann et al., 2012; Soares et al., 2017; Stitt et al., 2018; Zhou et al., 2016), largely due to its extensive reciprocal connections with visual cortical areas (Beltramo and Scanziani, 2019; Bennett et al., 2019; Juavinett et al., 2020; Kaas and Lyon, 2007; Nakamura et al., 2015; Oh et al., 2014; Roth et al., 2016; Shipp, 2001; Stitt et al., 2018; Wong et al., 2009; Zhou et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by multiple citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:38:41.241381Z"
+    },
+    {
+      "id": "f852ddb1-79fc-460b-98f8-704a03002a56",
+      "content_id": "8c4844fa-821b-4953-b6f1-9ca1873578cb",
+      "claim_id": "C15",
+      "claim": "LP/pulvinar has connections with primary and secondary auditory cortices.",
+      "claim_type": "EXPLICIT",
+      "source": "Besides visual cortices, LP/pulvinar also has connections with other sensory cortices including primary and secondary auditory cortices (Cappe et al., 2009; Hackett et al., 1998; Nakamura et al., 2015; Oh et al., 2014; Shipp, 2007)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to anatomical studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:38:41.241381Z"
+    },
+    {
+      "id": "7b276075-3aca-4fa9-91af-59ada7a6e31d",
+      "content_id": "8c4844fa-821b-4953-b6f1-9ca1873578cb",
+      "claim_id": "C16",
+      "claim": "LP contains auditory responsive neurons which exhibit short-latency responses.",
+      "claim_type": "EXPLICIT",
+      "source": "and contains auditory responsive neurons which exhibit short-latency responses (Chalupa and Fish, 1978; Gattass et al., 1978; Magari\u00f1os-Ascone et al., 1988; Woody et al., 1991; Yirmiya and Hocherman, 1987).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to previous electrophysiological studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:38:41.241381Z"
+    },
+    {
+      "id": "738e89e0-8760-4728-83d7-5b11af781086",
+      "content_id": "8c4844fa-821b-4953-b6f1-9ca1873578cb",
+      "claim_id": "C17",
+      "claim": "The influence of LP on auditory cortical responses has rarely been examined.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the influence of LP on auditory cortical responses has rarely been examined.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about the state of the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:38:41.241381Z"
+    },
+    {
+      "id": "5c84166c-395b-43f3-ad7f-3253ffd45812",
+      "content_id": "8c4844fa-821b-4953-b6f1-9ca1873578cb",
+      "claim_id": "C18",
+      "claim": "Axonal projections from LP to primary sensory cortices mainly terminate in layer 1.",
+      "claim_type": "EXPLICIT",
+      "source": "It is known that the axonal projections from LP to primary sensory cortices mainly terminate in layer 1 (L1), whereas those to secondary sensory cortices mainly terminate in L4 (Fang et al., 2020; Roth et al., 2016; Zhou et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to anatomical studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:38:41.241381Z"
+    },
+    {
+      "id": "bad2e2a8-da03-442d-aba3-b735d1fbac03",
+      "content_id": "8c4844fa-821b-4953-b6f1-9ca1873578cb",
+      "claim_id": "C19",
+      "claim": "Axonal projections from LP to secondary sensory cortices mainly terminate in L4.",
+      "claim_type": "EXPLICIT",
+      "source": "It is known that the axonal projections from LP to primary sensory cortices mainly terminate in layer 1 (L1), whereas those to secondary sensory cortices mainly terminate in L4 (Fang et al., 2020; Roth et al., 2016; Zhou et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to anatomical studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:38:41.241381Z"
+    },
+    {
+      "id": "c25c22cb-e99c-4aa5-84f9-5ee9f12bd7eb",
+      "content_id": "8c4844fa-821b-4953-b6f1-9ca1873578cb",
+      "claim_id": "C20",
+      "claim": "L1 contains predominantly inhibitory neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "As L1 contains predominantly inhibitory neurons (Jiang et al., 2013; Mesik et al., 2019; Schuman et al., 2019), it is likely that the LP input to the primary sensory cortex plays some modulatory roles.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to previous studies on L1 composition.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:38:41.241381Z"
+    },
+    {
+      "id": "5359cf6f-a08c-4662-b37a-ec41682ab741",
+      "content_id": "8c4844fa-821b-4953-b6f1-9ca1873578cb",
+      "claim_id": "C21",
+      "claim": "LP input to the primary sensory cortex likely plays some modulatory roles.",
+      "claim_type": "EXPLICIT",
+      "source": "As L1 contains predominantly inhibitory neurons (Jiang et al., 2013; Mesik et al., 2019; Schuman et al., 2019), it is likely that the LP input to the primary sensory cortex plays some modulatory roles.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference based on anatomical knowledge about L1 and LP projection patterns.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:38:41.241381Z"
+    },
+    {
+      "id": "4dacf84e-81bd-4d8d-bb78-0c439806d6f2",
+      "content_id": "8c4844fa-821b-4953-b6f1-9ca1873578cb",
+      "claim_id": "C22",
+      "claim": "Silencing LP increased the spontaneous firing rate of A1 L2/3 pyramidal neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Analyzing all the recorded L2/3 neurons, we found significant increases in the spontaneous firing rate (FR), evoked FR and bandwidth of frequency tuning (as measured at an intensity level of 60 dB SPL and at 20 dB above the intensity threshold) when silencing LP (Figure 1D\u2013F; Figure 1\u2014figure supplement 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:38:41.241381Z"
+    },
+    {
+      "id": "99356b5b-e061-4301-87b7-d12df2752377",
+      "content_id": "8c4844fa-821b-4953-b6f1-9ca1873578cb",
+      "claim_id": "C23",
+      "claim": "Silencing LP increased the evoked firing rate of A1 L2/3 pyramidal neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Analyzing all the recorded L2/3 neurons, we found significant increases in the spontaneous firing rate (FR), evoked FR and bandwidth of frequency tuning (as measured at an intensity level of 60 dB SPL and at 20 dB above the intensity threshold) when silencing LP (Figure 1D\u2013F; Figure 1\u2014figure supplement 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 1E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:38:41.241381Z"
+    },
+    {
+      "id": "13898527-616b-4d94-a504-b4a3ae7cfefa",
+      "content_id": "8c4844fa-821b-4953-b6f1-9ca1873578cb",
+      "claim_id": "C24",
+      "claim": "Silencing LP increased the bandwidth of frequency tuning of A1 L2/3 pyramidal neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Analyzing all the recorded L2/3 neurons, we found significant increases in the spontaneous firing rate (FR), evoked FR and bandwidth of frequency tuning (as measured at an intensity level of 60 dB SPL and at 20 dB above the intensity threshold) when silencing LP (Figure 1D\u2013F; Figure 1\u2014figure supplement 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 1F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:38:41.241381Z"
+    },
+    {
+      "id": "9152b686-05ba-423d-a880-e0164cfb2c7f",
+      "content_id": "8c4844fa-821b-4953-b6f1-9ca1873578cb",
+      "claim_id": "C25",
+      "claim": "Silencing LP reduced the signal-to-noise ratio of A1 L2/3 pyramidal neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "More importantly, the signal-to-noise ratio (SNR), as measured by the ratio of evoked to spontaneous FR, was reduced (Figure 1G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 1G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:38:41.241381Z"
+    },
+    {
+      "id": "16859a04-4d7c-4f4c-9a0d-00b0d5d0d4a5",
+      "content_id": "8c4844fa-821b-4953-b6f1-9ca1873578cb",
+      "claim_id": "C26",
+      "claim": "Silencing LP did not change the characteristic frequency of A1 L2/3 pyramidal neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Nevertheless, the overall shape of frequency tuning (Figure 1C) and the CF of TRF (Figure 1\u2014figure supplement 2A) were largely preserved.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 1\u2014figure supplement 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:38:41.241381Z"
+    },
+    {
+      "id": "f1dd9f4d-cbf7-4476-b980-d4a834f05e66",
+      "content_id": "8c4844fa-821b-4953-b6f1-9ca1873578cb",
+      "claim_id": "C27",
+      "claim": "Activation of LP reduced the spontaneous firing rate of A1 L2/3 pyramidal neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Opposite to the effects of silencing LP, activation of LP reduced the spontaneous and evoked FR, and narrowed the frequency tuning bandwidth, while enhancing the SNR (Figure 1K\u2013N; Figure 1\u2014figure supplement 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 1K.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:38:41.241381Z"
+    },
+    {
+      "id": "e1fd8703-2ca7-4ccf-8aa3-786162528b30",
+      "content_id": "8c4844fa-821b-4953-b6f1-9ca1873578cb",
+      "claim_id": "C28",
+      "claim": "Activation of LP reduced the evoked firing rate of A1 L2/3 pyramidal neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Opposite to the effects of silencing LP, activation of LP reduced the spontaneous and evoked FR, and narrowed the frequency tuning bandwidth, while enhancing the SNR (Figure 1K\u2013N; Figure 1\u2014figure supplement 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 1L.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:38:41.241381Z"
+    },
+    {
+      "id": "119f814b-4692-437c-b056-011c6279ae63",
+      "content_id": "8c4844fa-821b-4953-b6f1-9ca1873578cb",
+      "claim_id": "C29",
+      "claim": "Activation of LP narrowed the frequency tuning bandwidth of A1 L2/3 pyramidal neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Opposite to the effects of silencing LP, activation of LP reduced the spontaneous and evoked FR, and narrowed the frequency tuning bandwidth, while enhancing the SNR (Figure 1K\u2013N; Figure 1\u2014figure supplement 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 1M.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:38:41.241381Z"
+    },
+    {
+      "id": "edebb6c5-15e8-4f97-81e1-b8927257d6eb",
+      "content_id": "8c4844fa-821b-4953-b6f1-9ca1873578cb",
+      "claim_id": "C30",
+      "claim": "Activation of LP enhanced the signal-to-noise ratio of A1 L2/3 pyramidal neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Opposite to the effects of silencing LP, activation of LP reduced the spontaneous and evoked FR, and narrowed the frequency tuning bandwidth, while enhancing the SNR (Figure 1K\u2013N; Figure 1\u2014figure supplement 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 1N.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:38:41.241381Z"
+    },
+    {
+      "id": "b107715c-7de8-46be-a782-c51a92580640",
+      "content_id": "8c4844fa-821b-4953-b6f1-9ca1873578cb",
+      "claim_id": "C31",
+      "claim": "Activation of LP did not change the characteristic frequency of A1 L2/3 pyramidal neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "without changing the CF (Figure 1\u2014figure supplement 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 1\u2014figure supplement 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:38:41.241381Z"
+    },
+    {
+      "id": "2bc4dca8-3cbe-4357-b878-fd3d067d760f",
+      "content_id": "8c4844fa-821b-4953-b6f1-9ca1873578cb",
+      "claim_id": "C32",
+      "claim": "LP did not have modulatory effects on A1 L4 neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "In L4, we did not observe any changes of either spontaneous or evoked FR induced by optogenetic manipulations of LP (Figure 1\u2014figure supplement 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 1\u2014figure supplement 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:38:41.241381Z"
+    },
+    {
+      "id": "14dd7135-b65a-43a9-b372-f3b6148ac353",
+      "content_id": "8c4844fa-821b-4953-b6f1-9ca1873578cb",
+      "claim_id": "C33",
+      "claim": "The LP's modulatory effect may be specific to superficial layers.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, the LP's modulatory effect may be specific to superficial layers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference based on the observation that L4 neurons were not affected by LP manipulation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:38:41.241381Z"
+    },
+    {
+      "id": "b687335a-b106-4441-bd09-56bb948bbabe",
+      "content_id": "8c4844fa-821b-4953-b6f1-9ca1873578cb",
+      "claim_id": "C34",
+      "claim": "LP modulation exhibits a subtractive-suppression-like effect with a slope close to 1 in linear regression analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "The slope of the best fit line was close to 1 for both LP silencing and activation (Figure 1R), suggesting that there was no change in the response gain (i.e. no evidence for a multiplicative effect).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by linear regression analysis shown in Figure 1R.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:38:41.241381Z"
+    },
+    {
+      "id": "dc8003d3-f3e6-48fc-8a6b-42ae323a5144",
+      "content_id": "8c4844fa-821b-4953-b6f1-9ca1873578cb",
+      "claim_id": "C35",
+      "claim": "LP silencing produced a positive y-intercept in linear regression analysis of tone responses.",
+      "claim_type": "EXPLICIT",
+      "source": "The y-intercept was all positive for LP silencing but negative for LP activation (Figure 1S).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by linear regression analysis shown in Figure 1S.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:38:41.241381Z"
+    },
+    {
+      "id": "bdf07a59-ed24-4fc0-857c-e710c5b80455",
+      "content_id": "8c4844fa-821b-4953-b6f1-9ca1873578cb",
+      "claim_id": "C36",
+      "claim": "LP activation produced a negative y-intercept in linear regression analysis of tone responses.",
+      "claim_type": "EXPLICIT",
+      "source": "The y-intercept was all positive for LP silencing but negative for LP activation (Figure 1S).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by linear regression analysis shown in Figure 1S.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:38:41.241381Z"
+    },
+    {
+      "id": "313eda32-68a4-4954-87aa-2e76a79289ea",
+      "content_id": "8c4844fa-821b-4953-b6f1-9ca1873578cb",
+      "claim_id": "C37",
+      "claim": "LP modulation is similar to a thresholding effect produced by increasing the level of background noise.",
+      "claim_type": "EXPLICIT",
+      "source": "These results strongly suggest a subtractive-suppression-like modulation of A1 responses by LP activity, similar to a thresholding effect produced by increasing the level of background noise (Liang et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference based on the pattern of results and comparison to previous literature.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:38:41.241381Z"
+    },
+    {
+      "id": "3b98ec98-645b-46cb-a5d3-c87f2cbca20d",
+      "content_id": "8c4844fa-821b-4953-b6f1-9ca1873578cb",
+      "claim_id": "C38",
+      "claim": "Numerous LP neurons project to A1.",
+      "claim_type": "EXPLICIT",
+      "source": "Numerous retrogradely labeled neurons were found in LP (Figure 2A, right), with a bias towards its caudal part (Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by retrograde tracing data shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:38:41.241381Z"
+    },
+    {
+      "id": "313f27d2-6b47-4f18-8d75-782427f35c0d",
+      "content_id": "8c4844fa-821b-4953-b6f1-9ca1873578cb",
+      "claim_id": "C39",
+      "claim": "LP neurons projecting to A1 are biased towards the caudal part of LP.",
+      "claim_type": "EXPLICIT",
+      "source": "Numerous retrogradely labeled neurons were found in LP (Figure 2A, right), with a bias towards its caudal part (Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by retrograde tracing data shown in Figure 2\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:38:41.241381Z"
+    },
+    {
+      "id": "d17cd595-5bb6-4d10-9b37-48f0d5f8968e",
+      "content_id": "8c4844fa-821b-4953-b6f1-9ca1873578cb",
+      "claim_id": "C40",
+      "claim": "LP axons densely innervate L1 and deep layers of A1.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, injection of AAV-GFP into LP revealed densely labeled axon terminals in L1 as well as deep layers of A1 (Figure 2B), confirming the direct projection from LP to A1 (De La Mothe et al., 2006; Nakamura et al., 2015).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by anterograde tracing data shown in Figure 2B.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:38:41.241381Z"
+    },
+    {
+      "id": "fb6ae328-038a-4fe6-9882-bc65f9b52c4a",
+      "content_id": "8c4844fa-821b-4953-b6f1-9ca1873578cb",
+      "claim_id": "C41",
+      "claim": "Silencing LP-A1 axon terminals increased the spontaneous firing rate of A1 L2/3 pyramidal neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed effects on A1 L2/3 neurons similar to silencing LP neurons per se: the spontaneous and evoked FR was increased, the frequency tuning bandwidth was broadened, and the SNR was reduced (Figure 2D\u2013G; Figure 2\u2014figure supplement 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:38:41.241381Z"
+    },
+    {
+      "id": "50c9be6b-ef24-4015-940f-046c3ab88e33",
+      "content_id": "8c4844fa-821b-4953-b6f1-9ca1873578cb",
+      "claim_id": "C42",
+      "claim": "Silencing LP-A1 axon terminals increased the evoked firing rate of A1 L2/3 pyramidal neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed effects on A1 L2/3 neurons similar to silencing LP neurons per se: the spontaneous and evoked FR was increased, the frequency tuning bandwidth was broadened, and the SNR was reduced (Figure 2D\u2013G; Figure 2\u2014figure supplement 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 2E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:38:41.241381Z"
+    },
+    {
+      "id": "1a88cdc2-77a7-45eb-a561-7f66e6463231",
+      "content_id": "8c4844fa-821b-4953-b6f1-9ca1873578cb",
+      "claim_id": "C43",
+      "claim": "Silencing LP-A1 axon terminals broadened the frequency tuning bandwidth of A1 L2/3 pyramidal neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed effects on A1 L2/3 neurons similar to silencing LP neurons per se: the spontaneous and evoked FR was increased, the frequency tuning bandwidth was broadened, and the SNR was reduced (Figure 2D\u2013G; Figure 2\u2014figure supplement 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 2F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:38:41.241381Z"
+    },
+    {
+      "id": "7fd18289-80f7-4094-99b5-035e8032fbb0",
+      "content_id": "8c4844fa-821b-4953-b6f1-9ca1873578cb",
+      "claim_id": "C44",
+      "claim": "Silencing LP-A1 axon terminals reduced the signal-to-noise ratio of A1 L2/3 pyramidal neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed effects on A1 L2/3 neurons similar to silencing LP neurons per se: the spontaneous and evoked FR was increased, the frequency tuning bandwidth was broadened, and the SNR was reduced (Figure 2D\u2013G; Figure 2\u2014figure supplement 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 2G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:38:41.241381Z"
+    },
+    {
+      "id": "71a0779a-533e-4480-af44-522f1975c201",
+      "content_id": "8c4844fa-821b-4953-b6f1-9ca1873578cb",
+      "claim_id": "C45",
+      "claim": "Activating LP-A1 axon terminals reduced the spontaneous firing rate of A1 L2/3 pyramidal neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "In line with the effects caused by LP activation, the activation of LP-A1 axon terminals reduced the spontaneous and evoked FR, sharpened frequency tuning, and enhanced the SNR in A1 L2/3 pyramidal neurons (Figure 2I\u2013L; Figure 2\u2014figure supplement 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 2I.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:38:41.241381Z"
+    },
+    {
+      "id": "1ef90e2b-18d6-41c2-9cf6-1c586d1d896f",
+      "content_id": "8c4844fa-821b-4953-b6f1-9ca1873578cb",
+      "claim_id": "C46",
+      "claim": "Activating LP-A1 axon terminals reduced the evoked firing rate of A1 L2/3 pyramidal neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "In line with the effects caused by LP activation, the activation of LP-A1 axon terminals reduced the spontaneous and evoked FR, sharpened frequency tuning, and enhanced the SNR in A1 L2/3 pyramidal neurons (Figure 2I\u2013L; Figure 2\u2014figure supplement 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 2J.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:38:41.241381Z"
+    },
+    {
+      "id": "e9de29b3-bc78-4bcb-af5b-92f5df75722e",
+      "content_id": "8c4844fa-821b-4953-b6f1-9ca1873578cb",
+      "claim_id": "C47",
+      "claim": "Activating LP-A1 axon terminals sharpened frequency tuning of A1 L2/3 pyramidal neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "In line with the effects caused by LP activation, the activation of LP-A1 axon terminals reduced the spontaneous and evoked FR, sharpened frequency tuning, and enhanced the SNR in A1 L2/3 pyramidal neurons (Figure 2I\u2013L; Figure 2\u2014figure supplement 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 2K.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:38:41.241381Z"
+    },
+    {
+      "id": "260b542a-6915-4880-9f3e-fd1494142a36",
+      "content_id": "8c4844fa-821b-4953-b6f1-9ca1873578cb",
+      "claim_id": "C48",
+      "claim": "Activating LP-A1 axon terminals enhanced the signal-to-noise ratio of A1 L2/3 pyramidal neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "In line with the effects caused by LP activation, the activation of LP-A1 axon terminals reduced the spontaneous and evoked FR, sharpened frequency tuning, and enhanced the SNR in A1 L2/3 pyramidal neurons (Figure 2I\u2013L; Figure 2\u2014figure supplement 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 2L.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:38:41.241381Z"
+    },
+    {
+      "id": "e344f397-e42f-4a4a-9686-3cf6ad9b6bc8",
+      "content_id": "8c4844fa-821b-4953-b6f1-9ca1873578cb",
+      "claim_id": "C49",
+      "claim": "The LP to A1 projection largely mediates the LP modulatory effect on A1 responses.",
+      "claim_type": "EXPLICIT",
+      "source": "These data suggest that the LP to A1 projection largely mediates the LP modulatory effect on A1 responses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference based on the similarity of effects between LP soma and LP terminal manipulations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:38:41.241381Z"
+    },
+    {
+      "id": "299c0c51-d885-4346-ae7e-873519c10308",
+      "content_id": "8c4844fa-821b-4953-b6f1-9ca1873578cb",
+      "claim_id": "C50",
+      "claim": "The LP projection to the cortex per se is excitatory.",
+      "claim_type": "EXPLICIT",
+      "source": "As the LP projection to the cortex per se is excitatory (Evangelio et al., 2018; Roth et al., 2016; Zhou et al., 2018), an immediate question is how LP activity exerts a net inhibitory effect on A1 L2/3 pyramidal neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:38:41.241381Z"
+    },
+    {
+      "id": "32ea7ba4-a506-4426-aa9d-e64a7ffd4be2",
+      "content_id": "8c4844fa-821b-4953-b6f1-9ca1873578cb",
+      "claim_id": "C51",
+      "claim": "None of the recorded pyramidal neurons across L2-4 received direct input from LP.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, none of the PYR neurons we recorded across L2-4 received direct input from LP, whereas more than 50% of L1 inhibitory neurons received direct LP input (Figure 3C and E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by slice recording data shown in Figure 3C and E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:38:41.241381Z"
+    },
+    {
+      "id": "16df77c3-2de7-4547-a5b3-8df181600b61",
+      "content_id": "8c4844fa-821b-4953-b6f1-9ca1873578cb",
+      "claim_id": "C52",
+      "claim": "More than 50% of L1 inhibitory neurons received direct LP input.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, none of the PYR neurons we recorded across L2-4 received direct input from LP, whereas more than 50% of L1 inhibitory neurons received direct LP input (Figure 3C and E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by slice recording data shown in Figure 3E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:38:41.241381Z"
+    },
+    {
+      "id": "05518005-22b8-4169-a55f-242a7f4cc2ca",
+      "content_id": "8c4844fa-821b-4953-b6f1-9ca1873578cb",
+      "claim_id": "C53",
+      "claim": "A similar fraction of PV neurons in L2/3 received direct input from LP as L1 inhibitory neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "A similar fraction of PV neurons in L2/3 received direct input from LP, whereas none of the recorded SOM neurons did so (Figure 3D and E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by slice recording data shown in Figure 3E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:38:41.241381Z"
+    },
+    {
+      "id": "8ebabcc9-8c08-415a-85eb-b9a92c7bdca6",
+      "content_id": "8c4844fa-821b-4953-b6f1-9ca1873578cb",
+      "claim_id": "C54",
+      "claim": "None of the recorded SOM neurons received direct input from LP.",
+      "claim_type": "EXPLICIT",
+      "source": "A similar fraction of PV neurons in L2/3 received direct input from LP, whereas none of the recorded SOM neurons did so (Figure 3D and E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by slice recording data shown in Figure 3E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:38:41.241381Z"
+    },
+    {
+      "id": "590491c6-4fd6-42cc-8a46-e26508c665a0",
+      "content_id": "8c4844fa-821b-4953-b6f1-9ca1873578cb",
+      "claim_id": "C55",
+      "claim": "A much smaller fraction of PV neurons in L4 received LP input compared to L2/3 PV neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "A much smaller fraction of PV neurons in L4 also received LP input (Figure 3E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by slice recording data shown in Figure 3E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:38:41.241381Z"
+    },
+    {
+      "id": "1062ca37-e6df-4543-9d64-2f4a0ac28fe2",
+      "content_id": "8c4844fa-821b-4953-b6f1-9ca1873578cb",
+      "claim_id": "C56",
+      "claim": "LP-A1 axons preferentially innervate L1 inhibitory neurons and superficial-layer PV inhibitory neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, these results indicate that LP-A1 axons preferentially innervate L1 inhibitory neurons and superficial-layer PV inhibitory neurons, which may then provide disynaptic inhibition to L2/3 pyramidal neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion drawn from slice recording data showing connection patterns.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:38:41.241381Z"
+    },
+    {
+      "id": "11fe9d11-995c-488a-aea4-b437d09cf376",
+      "content_id": "8c4844fa-821b-4953-b6f1-9ca1873578cb",
+      "claim_id": "C57",
+      "claim": "L1 inhibitory neurons and superficial-layer PV inhibitory neurons may provide disynaptic inhibition to L2/3 pyramidal neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, these results indicate that LP-A1 axons preferentially innervate L1 inhibitory neurons and superficial-layer PV inhibitory neurons, which may then provide disynaptic inhibition to L2/3 pyramidal neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference based on connectivity patterns and known circuit properties.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:38:41.241381Z"
+    },
+    {
+      "id": "c2b46753-b155-4a7c-903b-da32365d8729",
+      "content_id": "8c4844fa-821b-4953-b6f1-9ca1873578cb",
+      "claim_id": "C58",
+      "claim": "LP neurons responded robustly to white-noise sound.",
+      "claim_type": "EXPLICIT",
+      "source": "We noticed that LP neurons responded robustly to white-noise sound, with the response amplitude increasing with increasing noise levels (Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by recording data shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:38:41.241381Z"
+    },
+    {
+      "id": "cbff278b-7e4d-4a23-971d-e9d7f42cef96",
+      "content_id": "8c4844fa-821b-4953-b6f1-9ca1873578cb",
+      "claim_id": "C59",
+      "claim": "LP neuron response amplitude to white noise increases with increasing noise levels.",
+      "claim_type": "EXPLICIT",
+      "source": "We noticed that LP neurons responded robustly to white-noise sound, with the response amplitude increasing with increasing noise levels (Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by recording data shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:38:41.241381Z"
+    },
+    {
+      "id": "73057e38-2c89-4a3e-87a6-e2deebb1b2f7",
+      "content_id": "8c4844fa-821b-4953-b6f1-9ca1873578cb",
+      "claim_id": "C60",
+      "claim": "The superior colliculus (SC) innervates LP.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous anatomical and electrophysiological studies have shown that the superior colliculus (SC) in the midbrain innervates LP (Beltramo and Scanziani, 2019; Bennett et al., 2019; Fang et al., 2020; Gale and Murphy, 2014; Stepniewska et al., 2000; Wei et al., 2015; Zingg et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:38:41.241381Z"
+    },
+    {
+      "id": "9975154b-7a18-41ce-bdc1-5c39a253e83c",
+      "content_id": "8c4844fa-821b-4953-b6f1-9ca1873578cb",
+      "claim_id": "C61",
+      "claim": "The onset latency of noise responses was shortest in SC compared to LP and A1 L4.",
+      "claim_type": "EXPLICIT",
+      "source": "Comparing the onset latency of noise responses in SC, LP, and A1 L4, we found that it was the shortest in SC, while similar between LP and A1 L4 (Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by recording data shown in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:38:41.241381Z"
+    },
+    {
+      "id": "0ada92d1-671d-4e58-a4fd-bdd1aaca5ed6",
+      "content_id": "8c4844fa-821b-4953-b6f1-9ca1873578cb",
+      "claim_id": "C62",
+      "claim": "The onset latency of noise responses was similar between LP and A1 L4.",
+      "claim_type": "EXPLICIT",
+      "source": "Comparing the onset latency of noise responses in SC, LP, and A1 L4, we found that it was the shortest in SC, while similar between LP and A1 L4 (Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by recording data shown in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:38:41.241381Z"
+    },
+    {
+      "id": "6d080395-3109-4fc9-85a8-c1c97ea0dd24",
+      "content_id": "8c4844fa-821b-4953-b6f1-9ca1873578cb",
+      "claim_id": "C63",
+      "claim": "The responses in LP are unlikely due to feedback inputs from auditory cortices.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that the responses in LP (at least the early part) are unlikely due to feedback inputs from auditory cortices.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference based on latency comparison data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:38:41.241381Z"
+    },
+    {
+      "id": "56bb4391-06c8-4306-9f6a-743a1c3f56a4",
+      "content_id": "8c4844fa-821b-4953-b6f1-9ca1873578cb",
+      "claim_id": "C64",
+      "claim": "Silencing SC greatly reduced the amplitude of noise responses in LP.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, silencing SC greatly reduced the amplitude of noise responses in LP (Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:38:41.241381Z"
+    },
+    {
+      "id": "85e58d42-aeb5-4e4f-83c2-22d2657007b8",
+      "content_id": "8c4844fa-821b-4953-b6f1-9ca1873578cb",
+      "claim_id": "C65",
+      "claim": "The noise responses in LP are primarily driven by bottom-up input likely from SC.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results thus indicate that the noise responses in LP are primarily driven by bottom-up input likely from SC.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion drawn from latency and SC silencing experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:38:41.241381Z"
+    },
+    {
+      "id": "706957a2-d076-48f9-b0b0-93bcce96113b",
+      "content_id": "8c4844fa-821b-4953-b6f1-9ca1873578cb",
+      "claim_id": "C66",
+      "claim": "Increasing the noise level reduced the amplitude of the response evoked by the best-frequency tone in A1 L2/3 neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "As shown by an example A1 L2/3 neuron (Figure 4D and E, gray), increasing the noise level reduced the amplitude of the response evoked by the best-frequency tone.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 4D and E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:38:41.241381Z"
+    },
+    {
+      "id": "5585e822-6577-460d-92be-7a3313ce9750",
+      "content_id": "8c4844fa-821b-4953-b6f1-9ca1873578cb",
+      "claim_id": "C67",
+      "claim": "Silencing LP universally enhanced tone-evoked responses in A1 across different noise levels.",
+      "claim_type": "EXPLICIT",
+      "source": "Summarizing all the recorded L2/3 neurons, we found that silencing LP universally enhanced tone-evoked responses in A1 across different noise levels (Figure 4F, upper panel).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 4F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:38:41.241381Z"
+    },
+    {
+      "id": "215de06d-ca84-4a3c-9e44-3b39288f6550",
+      "content_id": "8c4844fa-821b-4953-b6f1-9ca1873578cb",
+      "claim_id": "C68",
+      "claim": "The enhancement of tone-evoked responses by LP silencing was larger at higher noise levels.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, the enhancement was larger at higher noise levels (Figure 4F, lower panel).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 4F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:38:41.241381Z"
+    },
+    {
+      "id": "ddb34167-4e94-463f-b572-4785d3143be5",
+      "content_id": "8c4844fa-821b-4953-b6f1-9ca1873578cb",
+      "claim_id": "C69",
+      "claim": "Silencing LP elevated the spontaneous firing rate in a noise-level dependent manner.",
+      "claim_type": "EXPLICIT",
+      "source": "Silencing LP also elevated the spontaneous FR in a noise-level dependent manner so that the elevation was larger at higher noise levels (Figure 4G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 4G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:38:41.241381Z"
+    },
+    {
+      "id": "f2e11e29-d784-490d-a0d1-c76aa1ce5b92",
+      "content_id": "8c4844fa-821b-4953-b6f1-9ca1873578cb",
+      "claim_id": "C70",
+      "claim": "High-level noise has a detrimental effect on SNR in A1 neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "The SNR slightly decreased with increasing noise levels in the control condition (Figure 4H, upper panel, black), indicating that high-level noise has a detrimental effect on SNR, thus deteriorating auditory processing.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 4H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:38:41.241381Z"
+    },
+    {
+      "id": "22183824-0869-4f89-95ac-c6ec7657ca5c",
+      "content_id": "8c4844fa-821b-4953-b6f1-9ca1873578cb",
+      "claim_id": "C71",
+      "claim": "Silencing LP not only reduced SNR, but also accelerated the detrimental effect of background noise.",
+      "claim_type": "EXPLICIT",
+      "source": "Silencing LP not only reduced SNR, but also accelerated the detrimental effect of background noise (Figure 4H, upper panel, red).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 4H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:38:41.241381Z"
+    },
+    {
+      "id": "da2d4d06-3dc2-4b27-b143-a0a3b05fa2c4",
+      "content_id": "8c4844fa-821b-4953-b6f1-9ca1873578cb",
+      "claim_id": "C72",
+      "claim": "The frequency tuning bandwidth was reduced with increasing noise levels.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, the frequency tuning bandwidth was reduced with increasing noise levels (Figure 4I, upper panel), consistent with previous studies (Ehret and Schreiner, 2000; Liang et al., 2014).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 4I and citations to previous studies.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:38:41.241381Z"
+    },
+    {
+      "id": "d9d5985a-f9a6-4499-bd92-1dcfa7d31ff5",
+      "content_id": "8c4844fa-821b-4953-b6f1-9ca1873578cb",
+      "claim_id": "C73",
+      "claim": "Silencing LP broadened the tuning bandwidth.",
+      "claim_type": "EXPLICIT",
+      "source": "Silencing LP not only broadened the tuning bandwidth, but also slowed down the modulation of tuning bandwidth by increasing the noise level (Figure 4I).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 4I.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:38:41.241381Z"
+    },
+    {
+      "id": "d502d4ef-b2f4-4901-8d92-214ff845def2",
+      "content_id": "8c4844fa-821b-4953-b6f1-9ca1873578cb",
+      "claim_id": "C74",
+      "claim": "Silencing LP slowed down the modulation of tuning bandwidth by increasing the noise level.",
+      "claim_type": "EXPLICIT",
+      "source": "Silencing LP not only broadened the tuning bandwidth, but also slowed down the modulation of tuning bandwidth by increasing the noise level (Figure 4I).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 4I.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:38:41.241381Z"
+    },
+    {
+      "id": "0e186c49-94c4-4ca6-a0b4-f539c536bdf6",
+      "content_id": "8c4844fa-821b-4953-b6f1-9ca1873578cb",
+      "claim_id": "C75",
+      "claim": "LP plays a role in contextual modulation of A1 frequency processing by noise background.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, these results suggest that LP plays a role in contextual modulation of A1 frequency processing by noise background.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion drawn from experiments showing LP effects under different noise conditions.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:38:41.241381Z"
+    },
+    {
+      "id": "b631e9ee-386e-48d9-8dfd-ff16c7d1b270",
+      "content_id": "8c4844fa-821b-4953-b6f1-9ca1873578cb",
+      "claim_id": "C76",
+      "claim": "SC does not project to auditory cortices.",
+      "claim_type": "EXPLICIT",
+      "source": "Since SC innervates LP (Beltramo and Scanziani, 2019; Bennett et al., 2019; Gale and Murphy, 2014; Stepniewska et al., 2000; Wei et al., 2015; Zingg et al., 2017) but does not project to auditory cortices (Basso and May, 2017; Cang et al., 2018; Ito and Feldheim, 2018), we wondered whether SC could provide direct input to drive the LP-mediated modulation of A1 responses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:38:41.241381Z"
+    },
+    {
+      "id": "3f0c2226-8bbe-4db1-9699-a558b9d3f31c",
+      "content_id": "8c4844fa-821b-4953-b6f1-9ca1873578cb",
+      "claim_id": "C77",
+      "claim": "Abundant GFP-labeled axons from SC were found in LP.",
+      "claim_type": "EXPLICIT",
+      "source": "We found abundant GFP-labeled axons in LP (Figure 5A), with a strong bias towards its caudal part (Figure 5\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by anterograde tracing data shown in Figure 5A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:38:41.241381Z"
+    },
+    {
+      "id": "1f7cc97a-55fc-4aa6-b1c3-9ca2413b9460",
+      "content_id": "8c4844fa-821b-4953-b6f1-9ca1873578cb",
+      "claim_id": "C78",
+      "claim": "SC axons in LP have a strong bias towards the caudal part of LP.",
+      "claim_type": "EXPLICIT",
+      "source": "We found abundant GFP-labeled axons in LP (Figure 5A), with a strong bias towards its caudal part (Figure 5\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by anterograde tracing data shown in Figure 5\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:38:41.241381Z"
+    },
+    {
+      "id": "88de53eb-6288-41a4-8a35-58a5f97f075f",
+      "content_id": "8c4844fa-821b-4953-b6f1-9ca1873578cb",
+      "claim_id": "C79",
+      "claim": "SC axons directly innervate LP neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Expressing ChR2 in intermediate and deep layers of SC and then performing whole-cell slice recording from caudal LP neurons in the presence of TTX and 4AP further confirmed direct innervations of LP neurons by SC axons (Figure 5B and C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by slice recording data showing monosynaptic connections in Figure 5B and C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:38:41.241381Z"
+    },
+    {
+      "id": "7982fe05-e447-4554-a70e-4c5971f212d5",
+      "content_id": "8c4844fa-821b-4953-b6f1-9ca1873578cb",
+      "claim_id": "C80",
+      "claim": "Optogenetic activation of SC neurons decreased spontaneous firing rates in A1 L2/3 pyramidal neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Optogenetic activation of these SC neurons induced effects on A1 L2/3 pyramidal neurons similar to activation of LP: spontaneous and evoked firing rates were decreased, and SNR was increased (Figure 5E\u2013G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 5E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:38:41.241381Z"
+    },
+    {
+      "id": "768ab063-4095-403e-9c41-fb3880a19113",
+      "content_id": "8c4844fa-821b-4953-b6f1-9ca1873578cb",
+      "claim_id": "C81",
+      "claim": "Optogenetic activation of SC neurons decreased evoked firing rates in A1 L2/3 pyramidal neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Optogenetic activation of these SC neurons induced effects on A1 L2/3 pyramidal neurons similar to activation of LP: spontaneous and evoked firing rates were decreased, and SNR was increased (Figure 5E\u2013G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 5F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:38:41.241381Z"
+    },
+    {
+      "id": "da53fb2b-bdbc-47f3-b13c-84874681b9eb",
+      "content_id": "8c4844fa-821b-4953-b6f1-9ca1873578cb",
+      "claim_id": "C82",
+      "claim": "Optogenetic activation of SC neurons increased SNR in A1 L2/3 pyramidal neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Optogenetic activation of these SC neurons induced effects on A1 L2/3 pyramidal neurons similar to activation of LP: spontaneous and evoked firing rates were decreased, and SNR was increased (Figure 5E\u2013G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 5G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:38:41.241381Z"
+    },
+    {
+      "id": "ee9bb9fe-dfb8-46c0-ad3c-eeeb0d99fa6e",
+      "content_id": "8c4844fa-821b-4953-b6f1-9ca1873578cb",
+      "claim_id": "C83",
+      "claim": "Optogenetic activation of SC-recipient LP neurons reduced spontaneous firing rates in A1 L2/3 neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "In A1, optogenetic activation of SC-recipient LP neurons produced similar effects to the activation of the general LP population: spontaneous and evoked firing rates were reduced, and SNR was increased (Figure 5I\u2013K).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 5I.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:38:41.241381Z"
+    },
+    {
+      "id": "3456932a-c442-4d66-98a6-59c0216e2beb",
+      "content_id": "8c4844fa-821b-4953-b6f1-9ca1873578cb",
+      "claim_id": "C84",
+      "claim": "Optogenetic activation of SC-recipient LP neurons reduced evoked firing rates in A1 L2/3 neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "In A1, optogenetic activation of SC-recipient LP neurons produced similar effects to the activation of the general LP population: spontaneous and evoked firing rates were reduced, and SNR was increased (Figure 5I\u2013K).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 5J.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:38:41.241381Z"
+    },
+    {
+      "id": "bac3538d-5861-44cd-b49b-efec42457d76",
+      "content_id": "8c4844fa-821b-4953-b6f1-9ca1873578cb",
+      "claim_id": "C85",
+      "claim": "Optogenetic activation of SC-recipient LP neurons increased SNR in A1 L2/3 neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "In A1, optogenetic activation of SC-recipient LP neurons produced similar effects to the activation of the general LP population: spontaneous and evoked firing rates were reduced, and SNR was increased (Figure 5I\u2013K).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 5K.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:38:41.241381Z"
+    },
+    {
+      "id": "b92ba441-7e3d-4bc2-99ba-ef23d33ebb64",
+      "content_id": "8c4844fa-821b-4953-b6f1-9ca1873578cb",
+      "claim_id": "C86",
+      "claim": "Silencing SC resulted in increases of spontaneous firing rates in A1 L2/3 pyramidal neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "This resulted in increases of spontaneous and evoked firing rates, broadening of frequency tuning and a reduction of SNR in A1 L2/3 pyramidal neurons (Figure 5M\u2013P), similar to silencing LP per se.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 5M.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:38:41.241381Z"
+    },
+    {
+      "id": "9dbab0ef-4ef8-4962-ab8b-8aaf5b1983c9",
+      "content_id": "8c4844fa-821b-4953-b6f1-9ca1873578cb",
+      "claim_id": "C87",
+      "claim": "Silencing SC resulted in increases of evoked firing rates in A1 L2/3 pyramidal neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "This resulted in increases of spontaneous and evoked firing rates, broadening of frequency tuning and a reduction of SNR in A1 L2/3 pyramidal neurons (Figure 5M\u2013P), similar to silencing LP per se.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 5N.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:38:41.241381Z"
+    },
+    {
+      "id": "06ba0092-7e96-41b3-a4e5-8786208efbc3",
+      "content_id": "8c4844fa-821b-4953-b6f1-9ca1873578cb",
+      "claim_id": "C88",
+      "claim": "Silencing SC resulted in broadening of frequency tuning in A1 L2/3 pyramidal neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "This resulted in increases of spontaneous and evoked firing rates, broadening of frequency tuning and a reduction of SNR in A1 L2/3 pyramidal neurons (Figure 5M\u2013P), similar to silencing LP per se.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 5O.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:38:41.241381Z"
+    },
+    {
+      "id": "02b290a2-4f07-42ab-b1bc-8ad315179c03",
+      "content_id": "8c4844fa-821b-4953-b6f1-9ca1873578cb",
+      "claim_id": "C89",
+      "claim": "Silencing SC resulted in a reduction of SNR in A1 L2/3 pyramidal neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "This resulted in increases of spontaneous and evoked firing rates, broadening of frequency tuning and a reduction of SNR in A1 L2/3 pyramidal neurons (Figure 5M\u2013P), similar to silencing LP per se.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 5P.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:38:41.241381Z"
+    },
+    {
+      "id": "d77f9eaf-c78e-4864-b693-77e89781817c",
+      "content_id": "8c4844fa-821b-4953-b6f1-9ca1873578cb",
+      "claim_id": "C90",
+      "claim": "SC can provide input to drive LP-mediated modulation of A1 responses.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, these results provide supporting evidence that SC can provide input to drive LP-mediated modulation of A1 responses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion drawn from multiple experiments showing SC effects on A1 via LP.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:38:41.241381Z"
+    },
+    {
+      "id": "c5e95e48-38d4-45fe-be84-ecfe2da018b2",
+      "content_id": "8c4844fa-821b-4953-b6f1-9ca1873578cb",
+      "claim_id": "C91",
+      "claim": "Both SC and LP process visual information.",
+      "claim_type": "EXPLICIT",
+      "source": "Both SC and LP process visual information and have been implicated in visual looming stimuli induced defensive behaviors such as freezing (Wei et al., 2015; Yilmaz and Meister, 2013; Zingg et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:38:41.241381Z"
+    },
+    {
+      "id": "38c76933-fb98-45b2-9805-212d53aed3ac",
+      "content_id": "8c4844fa-821b-4953-b6f1-9ca1873578cb",
+      "claim_id": "C92",
+      "claim": "SC and LP have been implicated in visual looming stimuli induced defensive behaviors such as freezing.",
+      "claim_type": "EXPLICIT",
+      "source": "Both SC and LP process visual information and have been implicated in visual looming stimuli induced defensive behaviors such as freezing (Wei et al., 2015; Yilmaz and Meister, 2013; Zingg et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:38:41.241381Z"
+    },
+    {
+      "id": "cb1bfa6f-ce08-4823-b31e-79d034baacd8",
+      "content_id": "8c4844fa-821b-4953-b6f1-9ca1873578cb",
+      "claim_id": "C93",
+      "claim": "Directly stimulating superficial-layer SC neurons can elicit freezing responses in mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Directly stimulating superficial-layer SC neurons, which receive visual input (Zhao et al., 2014; Zhou et al., 2017), can elicit freezing responses in mice (Zingg et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:38:41.241381Z"
+    },
+    {
+      "id": "ec07ae13-db1e-4ae2-8166-88f5c73edae8",
+      "content_id": "8c4844fa-821b-4953-b6f1-9ca1873578cb",
+      "claim_id": "C94",
+      "claim": "LP neurons responded more strongly to visual looming stimuli compared to grating and noise-pattern stimuli.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, LP neurons responded more strongly to visual looming stimuli compared to more commonly used grating and noise-pattern stimuli (Figure 6\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 6\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:38:41.241381Z"
+    },
+    {
+      "id": "aaa47c26-b02c-4c02-9555-cf03494ce08d",
+      "content_id": "8c4844fa-821b-4953-b6f1-9ca1873578cb",
+      "claim_id": "C95",
+      "claim": "Visual looming stimuli reduced spontaneous firing rates in A1 L2/3 pyramidal neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "In the presence of visual looming stimuli, spontaneous and evoked firing rates were reduced (Figure 6B and C), while the SNR was increased (Figure 6D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 6B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:38:41.241381Z"
+    },
+    {
+      "id": "f2d7efe9-5e99-49c5-8e15-d48e7fb1685b",
+      "content_id": "8c4844fa-821b-4953-b6f1-9ca1873578cb",
+      "claim_id": "C96",
+      "claim": "Visual looming stimuli reduced evoked firing rates in A1 L2/3 pyramidal neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "In the presence of visual looming stimuli, spontaneous and evoked firing rates were reduced (Figure 6B and C), while the SNR was increased (Figure 6D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 6C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:38:41.241381Z"
+    },
+    {
+      "id": "8ce0bd5f-9fff-44f7-82d1-18024f520b7a",
+      "content_id": "8c4844fa-821b-4953-b6f1-9ca1873578cb",
+      "claim_id": "C97",
+      "claim": "Visual looming stimuli increased SNR in A1 L2/3 pyramidal neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "In the presence of visual looming stimuli, spontaneous and evoked firing rates were reduced (Figure 6B and C), while the SNR was increased (Figure 6D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 6D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:38:41.241381Z"
+    },
+    {
+      "id": "90a60461-5dc4-4f76-8ed7-3f36280e2baf",
+      "content_id": "8c4844fa-821b-4953-b6f1-9ca1873578cb",
+      "claim_id": "C98",
+      "claim": "Visual looming stimuli can modulate A1 responses.",
+      "claim_type": "EXPLICIT",
+      "source": "These results indicate that visual looming stimuli can indeed modulate A1 responses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion drawn from experimental data showing changes in A1 responses with visual looming.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:38:41.241381Z"
+    },
+    {
+      "id": "9ddba659-cf92-431f-94ee-cc641110b20b",
+      "content_id": "8c4844fa-821b-4953-b6f1-9ca1873578cb",
+      "claim_id": "C99",
+      "claim": "Silencing LP blocked the effects on A1 responses by visual looming stimuli.",
+      "claim_type": "EXPLICIT",
+      "source": "After silencing LP with muscimol (Figure 6E), the effects on A1 responses by visual looming stimuli disappeared (Figure 6F\u2013H), suggesting that LP primarily mediates the visual looming stimuli induced modulation of auditory responses in A1.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 6F-H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:38:41.241381Z"
+    },
+    {
+      "id": "f6ea1306-bf3b-42cd-ab88-f788265346c8",
+      "content_id": "8c4844fa-821b-4953-b6f1-9ca1873578cb",
+      "claim_id": "C100",
+      "claim": "LP primarily mediates the visual looming stimuli induced modulation of auditory responses in A1.",
+      "claim_type": "EXPLICIT",
+      "source": "After silencing LP with muscimol (Figure 6E), the effects on A1 responses by visual looming stimuli disappeared (Figure 6F\u2013H), suggesting that LP primarily mediates the visual looming stimuli induced modulation of auditory responses in A1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion drawn from experiments showing LP silencing blocks visual looming effects.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:38:41.241381Z"
+    },
+    {
+      "id": "80d7d92a-25e2-4d58-8b85-1a6716cbb30a",
+      "content_id": "8c4844fa-821b-4953-b6f1-9ca1873578cb",
+      "claim_id": "C101",
+      "claim": "The overall outcome of increasing LP activity is to improve auditory processing by sharpening frequency tuning and enhancing SNR of auditory evoked responses.",
+      "claim_type": "EXPLICIT",
+      "source": "In the present study, our results demonstrate that LP activity can modulate auditory processing in superficial layers of A1. The overall outcome of increasing LP activity is to improve auditory processing by sharpening frequency tuning and enhancing SNR of auditory evoked responses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary statement supported by multiple experimental results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:38:41.241381Z"
+    },
+    {
+      "id": "799ea5ae-4842-4cc2-937a-686d2960a902",
+      "content_id": "8c4844fa-821b-4953-b6f1-9ca1873578cb",
+      "claim_id": "C102",
+      "claim": "LP modulation is achieved by subtractive suppression of auditory evoked responses together with suppression of spontaneous firing activity.",
+      "claim_type": "EXPLICIT",
+      "source": "This is achieved by subtractive suppression of auditory evoked responses together with suppression of spontaneous firing activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion drawn from linear regression analysis and experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:38:41.241381Z"
+    },
+    {
+      "id": "0c9461cd-8c84-437b-a817-619f22d207a9",
+      "content_id": "8c4844fa-821b-4953-b6f1-9ca1873578cb",
+      "claim_id": "C103",
+      "claim": "The suppression of A1 L2/3 responses by LP is consistent with a similar suppressive effect in L2/3 of the primary visual cortex (V1).",
+      "claim_type": "EXPLICIT",
+      "source": "The suppression of A1 L2/3 responses is consistent with our recent study showing a similar suppressive effect in L2/3 of the primary visual cortex (V1), which results in an enhancement of visual feature selectivity (Fang et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Comparison to previous study by the same authors.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:38:41.241381Z"
+    },
+    {
+      "id": "21458321-bedb-4b59-8a28-5213275bd8a4",
+      "content_id": "8c4844fa-821b-4953-b6f1-9ca1873578cb",
+      "claim_id": "C104",
+      "claim": "L1 inhibitory neurons may be broadly tuned for frequency.",
+      "claim_type": "EXPLICIT",
+      "source": "The subtractive effect on L2/3 responses suggests that L1 inhibitory neurons (and PV neurons in superficial layers as well) may be broadly tuned for frequency.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference based on the subtractive effect observed in the data.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:38:41.241381Z"
+    },
+    {
+      "id": "ac70682a-66c3-4271-81a1-4335bdbb0ca4",
+      "content_id": "8c4844fa-821b-4953-b6f1-9ca1873578cb",
+      "claim_id": "C105",
+      "claim": "L1 inhibitory neurons in the visual cortex are broadly tuned for visual features such as orientation and direction.",
+      "claim_type": "EXPLICIT",
+      "source": "The frequency tuning property of L1 inhibitory neurons in the auditory cortex has not been studied yet, but a previous study in the visual cortex does suggest that L1 inhibitory neurons are broadly tuned for visual features such as orientation and direction (Mesik et al., 2019)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to previous study in visual cortex.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:38:41.241381Z"
+    },
+    {
+      "id": "9be693af-4d42-4edb-a315-70c05055dcf5",
+      "content_id": "8c4844fa-821b-4953-b6f1-9ca1873578cb",
+      "claim_id": "C106",
+      "claim": "PV neurons in superficial layers of A1 have been shown to be broadly tuned for tone frequency.",
+      "claim_type": "EXPLICIT",
+      "source": "and PV neurons in superficial layers of A1 have been shown to be broadly tuned for tone frequency (Cohen and Mizrahi, 2015; Li et al., 2015; Liang et al., 2019; Maor et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:38:41.241381Z"
+    },
+    {
+      "id": "04ae3771-6f82-4172-ad86-943c602e301a",
+      "content_id": "8c4844fa-821b-4953-b6f1-9ca1873578cb",
+      "claim_id": "C107",
+      "claim": "Both L1 inhibitory neurons and L2/3 PV neurons can directly inhibit L2/3 pyramidal cells.",
+      "claim_type": "EXPLICIT",
+      "source": "As for the local circuit involved, we suggest that both L1 inhibitory neurons and L2/3 PV neurons, which receive direct LP input, can directly inhibit L2/3 pyramidal cells (Jiang et al., 2013), generating an overall suppressive effect.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference based on connectivity data and citation to previous study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:38:41.241381Z"
+    },
+    {
+      "id": "182acaac-24ce-4f76-a41e-e0728e6d5a83",
+      "content_id": "8c4844fa-821b-4953-b6f1-9ca1873578cb",
+      "claim_id": "C108",
+      "claim": "70% of L1 inhibitory neurons are NDNF+.",
+      "claim_type": "EXPLICIT",
+      "source": "For L1 inhibitory neurons, their molecular identities have been reported to be diverse: 70% are NDNF+, 20% are nAchR+, and 10% are VIP+ (Schuman et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:38:41.241381Z"
+    },
+    {
+      "id": "8171f6b9-c7e1-497d-bfcd-8222e6ecd3b2",
+      "content_id": "8c4844fa-821b-4953-b6f1-9ca1873578cb",
+      "claim_id": "C109",
+      "claim": "20% of L1 inhibitory neurons are nAchR+.",
+      "claim_type": "EXPLICIT",
+      "source": "For L1 inhibitory neurons, their molecular identities have been reported to be diverse: 70% are NDNF+, 20% are nAchR+, and 10% are VIP+ (Schuman et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:38:41.241381Z"
+    },
+    {
+      "id": "bb765c64-2717-4f6a-a3d1-4be797bd4e85",
+      "content_id": "8c4844fa-821b-4953-b6f1-9ca1873578cb",
+      "claim_id": "C110",
+      "claim": "10% of L1 inhibitory neurons are VIP+.",
+      "claim_type": "EXPLICIT",
+      "source": "For L1 inhibitory neurons, their molecular identities have been reported to be diverse: 70% are NDNF+, 20% are nAchR+, and 10% are VIP+ (Schuman et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:38:41.241381Z"
+    },
+    {
+      "id": "9ad67508-87a4-4e0e-b9fc-2a5c761a0c11",
+      "content_id": "8c4844fa-821b-4953-b6f1-9ca1873578cb",
+      "claim_id": "C111",
+      "claim": "The LP-mediated modulatory effect on A1 processing may be particularly pronounced and beneficial when there is a high noise background.",
+      "claim_type": "EXPLICIT",
+      "source": "The LP-mediated modulatory effect on A1 processing may be particularly pronounced and beneficial when there is a high noise background.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference based on experimental results showing noise-level dependent effects.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:38:41.241381Z"
+    },
+    {
+      "id": "8b69829d-c86b-4012-9b75-16e7f19cfd2b",
+      "content_id": "8c4844fa-821b-4953-b6f1-9ca1873578cb",
+      "claim_id": "C112",
+      "claim": "Increasing background noise is equivalent to lowering the intensity of test stimuli.",
+      "claim_type": "EXPLICIT",
+      "source": "A previous study has demonstrated that increasing background noise is equivalent to lowering the intensity of test (e.g. tone) stimuli, that is, shifting up the TRF by a certain \u0394threshold value (Liang et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:38:41.241381Z"
+    },
+    {
+      "id": "55a510b2-b88f-4492-8347-47c990e80dba",
+      "content_id": "8c4844fa-821b-4953-b6f1-9ca1873578cb",
+      "claim_id": "C113",
+      "claim": "The noise effect on A1 frequency tuning may be achieved, at least partially, through LP.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results suggest that the noise effect on A1 frequency tuning may be achieved, at least partially, through LP.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference based on experimental results showing LP effects under noise conditions.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:38:41.241381Z"
+    },
+    {
+      "id": "a4a8a398-fd92-469c-b8af-7117002ea314",
+      "content_id": "8c4844fa-821b-4953-b6f1-9ca1873578cb",
+      "claim_id": "C114",
+      "claim": "LP/pulvinar has extensive reciprocal connectivity with cortical areas including visual and auditory cortices.",
+      "claim_type": "EXPLICIT",
+      "source": "It is known that LP/pulvinar has extensive reciprocal connectivity with cortical areas including visual and auditory cortices (Hackett et al., 1998; De La Mothe et al., 2006; Nakamura et al., 2015; Oh et al., 2014; Tohmi et al., 2014; Zhou et al., 2018; Bennett et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:38:41.241381Z"
+    },
+    {
+      "id": "4a7934bd-e07c-41b5-bf3b-9dc98a29a239",
+      "content_id": "8c4844fa-821b-4953-b6f1-9ca1873578cb",
+      "claim_id": "C115",
+      "claim": "LP/pulvinar serves in a cortico-thalamo-cortical ('transthalamic') indirect route for information transfer from one cortical area to another.",
+      "claim_type": "EXPLICIT",
+      "source": "Previously, it has been suggested that LP/pulvinar serves in a cortico-thalamo-cortical ('transthalamic') indirect route for information transfer from one cortical area to another (Guillery and Sherman, 2002; Sherman, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to previous theoretical work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:38:41.241381Z"
+    },
+    {
+      "id": "bd802171-d20f-4c29-8004-4851d362504b",
+      "content_id": "8c4844fa-821b-4953-b6f1-9ca1873578cb",
+      "claim_id": "C116",
+      "claim": "LP receives strong inputs from SC.",
+      "claim_type": "EXPLICIT",
+      "source": "Besides cortical inputs, LP also receive strong inputs from SC (Beltramo and Scanziani, 2019; Bennett et al., 2019; Fang et al., 2020; Gale and Murphy, 2014; Stepniewska et al., 2000; Wei et al., 2015; Zingg et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:38:41.241381Z"
+    },
+    {
+      "id": "dff6c5fa-5907-4797-b67f-2aa078aeece9",
+      "content_id": "8c4844fa-821b-4953-b6f1-9ca1873578cb",
+      "claim_id": "C117",
+      "claim": "LP (mainly the caudal part) receives direct input from the auditory related part of SC.",
+      "claim_type": "EXPLICIT",
+      "source": "In this study, we demonstrate that LP (mainly the caudal part) receives direct input from the auditory related part of SC and projects to A1, and that silencing SC produces changes in A1 functional response properties similar to silencing LP.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by anatomical tracing and functional experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:38:41.241381Z"
+    },
+    {
+      "id": "3250d61c-69ef-4feb-b5b4-195d729a91ef",
+      "content_id": "8c4844fa-821b-4953-b6f1-9ca1873578cb",
+      "claim_id": "C118",
+      "claim": "SC can relay bottom-up input to LP to drive its modulation of A1 processing.",
+      "claim_type": "EXPLICIT",
+      "source": "These results together suggest that SC can relay bottom-up input to LP to drive its modulation of A1 processing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion drawn from multiple experiments showing SC-LP-A1 pathway.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:38:41.241381Z"
+    },
+    {
+      "id": "0e197ca7-5276-4e9d-a995-9c39b8f3d045",
+      "content_id": "8c4844fa-821b-4953-b6f1-9ca1873578cb",
+      "claim_id": "C119",
+      "claim": "SC is a multisensory structure.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, SC is a multisensory structure (Drager and Hubel, 1975; King and Palmer, 1985; Meredith and Stein, 1986).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:38:41.241381Z"
+    },
+    {
+      "id": "a0a2481d-4a3d-4242-9f2a-7f7d33ffba7f",
+      "content_id": "8c4844fa-821b-4953-b6f1-9ca1873578cb",
+      "claim_id": "C120",
+      "claim": "The superficial layer of SC projects strongly to the caudal LP.",
+      "claim_type": "EXPLICIT",
+      "source": "The visual only part of SC, that is the superficial layer of SC, also projects strongly to the caudal LP (Beltramo and Scanziani, 2019; Bennett et al., 2019; Fang et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:38:41.241381Z"
+    },
+    {
+      "id": "e793736a-e7b2-4670-a4ba-1828ca3553a2",
+      "content_id": "8c4844fa-821b-4953-b6f1-9ca1873578cb",
+      "claim_id": "C121",
+      "claim": "The multisensory nature of SC and its strong projections to LP potentially endow LP with an ability to modulate A1 activity given any salient sensory stimuli.",
+      "claim_type": "EXPLICIT",
+      "source": "We postulate that the multisensory nature of SC and its strong projections to LP potentially endow LP with an ability to modulate A1 activity given any salient sensory stimuli.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculation based on the experimental findings and known properties of SC.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:38:41.241381Z"
+    },
+    {
+      "id": "4b924393-84ec-452b-8965-d24bf1b68167",
+      "content_id": "8c4844fa-821b-4953-b6f1-9ca1873578cb",
+      "claim_id": "C122",
+      "claim": "A previously unrecognized pathway, the SC-LP-A1 pathway, can provide contextual and cross-modality modulation of A1 responses and auditory processing to enhance the salience of acoustic information.",
+      "claim_type": "EXPLICIT",
+      "source": "In summary, our results suggest that a previously unrecognized pathway, the SC-LP-A1 pathway, can provide contextual and cross-modality modulation of A1 responses and auditory processing to enhance the salience of acoustic information.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary conclusion drawn from all experimental results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:38:41.241381Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "04edc77d-411d-455c-8c8c-ed583ab8476d",
+      "content_id": "8c4844fa-821b-4953-b6f1-9ca1873578cb",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The manuscript establishes LP as the rodent homologue of primate pulvinar and reviews prior knowledge about LP/pulvinar connectivity and function, noting that while LP projects to auditory cortices and contains auditory-responsive neurons, its influence on auditory cortical responses has rarely been examined.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C17 are well-supported by extensive citations to established literature. These claims provide essential background context and accurately represent the state of knowledge in the field. The authors correctly identify a gap in understanding LP's role in auditory processing.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:38:41.241381Z"
+    },
+    {
+      "id": "75611caf-846c-4f20-a5f9-56c6b528b6a1",
+      "content_id": "8c4844fa-821b-4953-b6f1-9ca1873578cb",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Optogenetic silencing of LP increases spontaneous and evoked firing rates, broadens frequency tuning bandwidth, and reduces SNR in A1 L2/3 pyramidal neurons without changing their characteristic frequency.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C22-C26 are supported by experimental data with appropriate statistical tests (Figure 1D-G, Figure 1\u2014figure supplement 2A). The bidirectional manipulation approach strengthens the conclusions. Sample sizes (n=8 cells from 4 animals) are modest but adequate for paired comparisons. GFP controls appropriately rule out light artifacts.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:38:41.241381Z"
+    },
+    {
+      "id": "3ffb595f-c080-4452-9f2b-d00a6b923adc",
+      "content_id": "8c4844fa-821b-4953-b6f1-9ca1873578cb",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Optogenetic activation of LP produces opposite effects to silencing: it reduces spontaneous and evoked firing rates, narrows frequency tuning bandwidth, and enhances SNR in A1 L2/3 pyramidal neurons without changing characteristic frequency.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C27-C31 are well-supported by experimental data (Figure 1K-N, Figure 1\u2014figure supplement 2B) with appropriate statistical tests. The bidirectional nature of the manipulation (activation vs. silencing producing opposite effects) provides strong evidence for a causal role of LP activity. Sample size (n=13 cells from 5 animals) is adequate.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:38:41.241381Z"
+    },
+    {
+      "id": "88431e5c-82e3-40ab-80ad-44c35d18e559",
+      "content_id": "8c4844fa-821b-4953-b6f1-9ca1873578cb",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "LP modulation does not affect A1 L4 neurons, suggesting the modulatory effect is specific to superficial layers.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C32-C33 are supported by negative results in L4 (Figure 1\u2014figure supplement 4). The layer-specific effect is consistent with the anatomical projection pattern of LP to L1. However, the sample size for L4 recordings is small (n=5 for silencing, n=12 for activation), and the inference about layer specificity (C33) could benefit from additional layers being tested.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:38:41.241381Z"
+    },
+    {
+      "id": "389f0106-69f5-4252-b3ae-8cbfcbecc4e0",
+      "content_id": "8c4844fa-821b-4953-b6f1-9ca1873578cb",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "LP modulation operates through a subtractive-suppression mechanism characterized by linear regression slopes near 1, positive y-intercepts for silencing, and negative y-intercepts for activation, similar to a thresholding effect produced by background noise.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C34-C37, C5, and C102 are supported by rigorous linear regression analysis (Figure 1O-S). The high R\u00b2 values (~0.84-0.88) and slopes not significantly different from 1 provide strong evidence for subtractive rather than multiplicative modulation. The comparison to noise-induced thresholding (C37) is supported by citation to previous work (Liang et al., 2014) and is conceptually sound.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:38:41.241381Z"
+    },
+    {
+      "id": "b0552dbf-c11c-4371-b0fc-77e75ba05218",
+      "content_id": "8c4844fa-821b-4953-b6f1-9ca1873578cb",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Anatomical tracing reveals that numerous LP neurons project to A1 with a bias toward caudal LP, and LP axons densely innervate L1 and deep layers of A1, consistent with known projection patterns where LP projects to L1 in primary sensory cortices.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C38-C40, C18-C19 are supported by retrograde and anterograde tracing data (Figure 2A-B, Figure 2\u2014figure supplement 1). The anatomical findings are consistent with cited literature and provide the structural basis for functional effects. The layer-specific termination pattern is well-documented.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:38:41.241381Z"
+    },
+    {
+      "id": "4d377d2c-bcdc-4908-8570-bc01f5055265",
+      "content_id": "8c4844fa-821b-4953-b6f1-9ca1873578cb",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Optogenetic manipulation of LP-A1 axon terminals produces effects on A1 L2/3 neurons similar to manipulating LP soma, indicating that the direct LP-to-A1 projection largely mediates the modulatory effect.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C41-C49 are well-supported by terminal-specific optogenetic experiments (Figure 2C-L). The similarity of effects between soma and terminal manipulations provides strong evidence that the direct projection mediates the observed modulation. Sample sizes are adequate (n=9-10 cells from 4 animals). The inference in C49 is reasonable but doesn't completely exclude contributions from indirect pathways through secondary cortices.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:38:41.241381Z"
+    },
+    {
+      "id": "7cd0854f-9f57-4d38-a976-678210895e06",
+      "content_id": "8c4844fa-821b-4953-b6f1-9ca1873578cb",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Despite LP projections being excitatory, LP-A1 axons preferentially innervate L1 inhibitory neurons (>50% connectivity) and L2/3 PV neurons, but not pyramidal neurons or SOM neurons, suggesting a disynaptic inhibitory mechanism onto L2/3 pyramidal neurons.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C50-C57, C6, C20-C21 are supported by systematic slice recording experiments with TTX/4AP to isolate monosynaptic connections (Figure 3). The cell-type specific connectivity pattern is clearly demonstrated. However, the inference about disynaptic inhibition (C57) is reasonable but not directly demonstrated\u2014it would require paired recordings or other approaches to confirm functional inhibition of pyramidal cells by these interneurons.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:38:41.241381Z"
+    },
+    {
+      "id": "b90a0c6a-fec3-42bd-8829-c5e78bc71de7",
+      "content_id": "8c4844fa-821b-4953-b6f1-9ca1873578cb",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "LP neurons respond robustly to white noise with amplitude increasing with noise level, these responses have similar latency to A1 L4 but longer than SC, and silencing SC greatly reduces LP noise responses, indicating LP is driven by bottom-up input from SC rather than cortical feedback.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C58-C65 and C7 are supported by recording data and SC silencing experiments (Figure 4A-C). The latency comparison provides strong evidence against cortical feedback as the primary driver. However, the conclusion that responses are 'primarily' driven by SC (C65) may be overstated\u2014the SC silencing reduces but doesn't eliminate LP responses, suggesting multiple inputs contribute.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:38:41.241381Z"
+    },
+    {
+      "id": "62858530-51ae-4499-95d2-cb91a28a2b95",
+      "content_id": "8c4844fa-821b-4953-b6f1-9ca1873578cb",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "LP plays a role in contextual modulation of A1 frequency processing under noise backgrounds: silencing LP enhances tone-evoked responses more at higher noise levels, elevates spontaneous firing in a noise-dependent manner, accelerates SNR deterioration, and slows bandwidth narrowing with increasing noise.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C66-C75, C8, C111-C113 are supported by systematic experiments across noise levels (Figure 4D-I). The noise-level dependent effects provide strong evidence for contextual modulation. Sample size is adequate (n=9 cells from 4 animals). The use of bupivacaine for LP silencing is appropriate for these longer experiments. The interpretation that LP helps maintain auditory processing under noise is well-supported.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:38:41.241381Z"
+    },
+    {
+      "id": "d0424e82-2b64-4a1a-84ff-12375de3429c",
+      "content_id": "8c4844fa-821b-4953-b6f1-9ca1873578cb",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "SC provides direct input to LP (particularly caudal LP) and can drive LP-mediated modulation of A1 responses, as demonstrated by anatomical tracing, monosynaptic connectivity in slices, and functional effects of SC manipulation on A1 that mirror LP manipulation effects.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C76-C90, C116-C118 are supported by converging anatomical and functional evidence (Figure 5). The combination of anterograde tracing, slice physiology with TTX/4AP, and in vivo manipulation provides strong support. The transsynaptic labeling approach (C83-C85) elegantly demonstrates the SC\u2192LP\u2192A1 pathway. Sample sizes are adequate throughout. The conclusion that SC 'can' drive LP modulation is appropriately cautious.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:38:41.241381Z"
+    },
+    {
+      "id": "06e00d38-bfc1-4789-a0ee-3558be6a7179",
+      "content_id": "8c4844fa-821b-4953-b6f1-9ca1873578cb",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Visual looming stimuli modulate A1 responses by reducing spontaneous and evoked firing rates while increasing SNR, and this modulation is blocked by LP silencing, indicating LP mediates cross-modal modulation of auditory processing by threatening visual stimuli.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C91-C100, C9, C119-C121 are supported by visual-auditory pairing experiments and LP silencing with muscimol (Figure 6, Figure 6\u2014figure supplement 1). The cross-modal effect is clearly demonstrated. However, the pharmacological silencing approach (C99-C100) doesn't definitively exclude other LP-mediated pathways beyond the SC\u2192LP route. The speculation in C121 about LP's general ability to modulate A1 given 'any salient sensory stimuli' is reasonable but extends beyond the data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:38:41.241381Z"
+    },
+    {
+      "id": "43648748-9b65-4b2a-bcd5-f9a428dba205",
+      "content_id": "8c4844fa-821b-4953-b6f1-9ca1873578cb",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The SC-LP-A1 pathway provides contextual and cross-modality modulation of auditory cortical processing, with LP improving auditory processing in A1 supragranular neurons by sharpening receptive fields, enhancing frequency tuning, and increasing SNR to enhance the salience of acoustic information.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3-C4, C101, C10, and C122 represent the main conclusions synthesized from all experimental results. These are well-supported by the comprehensive set of experiments demonstrating bidirectional LP effects, anatomical connectivity, circuit mechanisms, and contextual/cross-modal modulation. The characterization as a 'previously unrecognized pathway' (C122) is justified given the limited prior work on LP's role in auditory processing.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:38:41.241381Z"
+    },
+    {
+      "id": "24e5a0b6-5719-42c5-8204-0e8463c2a93b",
+      "content_id": "8c4844fa-821b-4953-b6f1-9ca1873578cb",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The manuscript discusses the broader context of thalamic function, compares LP's suppressive effect in A1 to similar effects in V1, and proposes circuit mechanisms involving broadly-tuned L1 inhibitory neurons and PV neurons based on literature from visual and auditory cortex.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C11-C12, C103-C110, C114-C115 are appropriately supported by citations to relevant literature. The comparison to V1 (C103) is from the authors' own recent work and strengthens the generality of findings. The inference about broad tuning of L1 neurons (C104) is reasonable but not directly tested in this study. The discussion of L1 interneuron subtypes (C108-C110) appropriately cites recent literature.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:38:41.241381Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "5d2af224-4d93-4778-8bfe-b087c941e8bc",
+      "result_id": "04edc77d-411d-455c-8c8c-ed583ab8476d"
+    },
+    {
+      "claim_id": "ca09a217-5eaf-49f2-95c2-c4656c1da04f",
+      "result_id": "04edc77d-411d-455c-8c8c-ed583ab8476d"
+    },
+    {
+      "claim_id": "e5b620e3-3a2c-440c-ad82-179f564bcf9d",
+      "result_id": "04edc77d-411d-455c-8c8c-ed583ab8476d"
+    },
+    {
+      "claim_id": "ee9b7e84-aded-4c2f-bb78-0fad0883e956",
+      "result_id": "04edc77d-411d-455c-8c8c-ed583ab8476d"
+    },
+    {
+      "claim_id": "f852ddb1-79fc-460b-98f8-704a03002a56",
+      "result_id": "04edc77d-411d-455c-8c8c-ed583ab8476d"
+    },
+    {
+      "claim_id": "7b276075-3aca-4fa9-91af-59ada7a6e31d",
+      "result_id": "04edc77d-411d-455c-8c8c-ed583ab8476d"
+    },
+    {
+      "claim_id": "738e89e0-8760-4728-83d7-5b11af781086",
+      "result_id": "04edc77d-411d-455c-8c8c-ed583ab8476d"
+    },
+    {
+      "claim_id": "4dacf84e-81bd-4d8d-bb78-0c439806d6f2",
+      "result_id": "75611caf-846c-4f20-a5f9-56c6b528b6a1"
+    },
+    {
+      "claim_id": "99356b5b-e061-4301-87b7-d12df2752377",
+      "result_id": "75611caf-846c-4f20-a5f9-56c6b528b6a1"
+    },
+    {
+      "claim_id": "13898527-616b-4d94-a504-b4a3ae7cfefa",
+      "result_id": "75611caf-846c-4f20-a5f9-56c6b528b6a1"
+    },
+    {
+      "claim_id": "9152b686-05ba-423d-a880-e0164cfb2c7f",
+      "result_id": "75611caf-846c-4f20-a5f9-56c6b528b6a1"
+    },
+    {
+      "claim_id": "16859a04-4d7c-4f4c-9a0d-00b0d5d0d4a5",
+      "result_id": "75611caf-846c-4f20-a5f9-56c6b528b6a1"
+    },
+    {
+      "claim_id": "f1dd9f4d-cbf7-4476-b980-d4a834f05e66",
+      "result_id": "3ffb595f-c080-4452-9f2b-d00a6b923adc"
+    },
+    {
+      "claim_id": "e1fd8703-2ca7-4ccf-8aa3-786162528b30",
+      "result_id": "3ffb595f-c080-4452-9f2b-d00a6b923adc"
+    },
+    {
+      "claim_id": "119f814b-4692-437c-b056-011c6279ae63",
+      "result_id": "3ffb595f-c080-4452-9f2b-d00a6b923adc"
+    },
+    {
+      "claim_id": "edebb6c5-15e8-4f97-81e1-b8927257d6eb",
+      "result_id": "3ffb595f-c080-4452-9f2b-d00a6b923adc"
+    },
+    {
+      "claim_id": "b107715c-7de8-46be-a782-c51a92580640",
+      "result_id": "3ffb595f-c080-4452-9f2b-d00a6b923adc"
+    },
+    {
+      "claim_id": "2bc4dca8-3cbe-4357-b878-fd3d067d760f",
+      "result_id": "88431e5c-82e3-40ab-80ad-44c35d18e559"
+    },
+    {
+      "claim_id": "14dd7135-b65a-43a9-b372-f3b6148ac353",
+      "result_id": "88431e5c-82e3-40ab-80ad-44c35d18e559"
+    },
+    {
+      "claim_id": "b687335a-b106-4441-bd09-56bb948bbabe",
+      "result_id": "389f0106-69f5-4252-b3ae-8cbfcbecc4e0"
+    },
+    {
+      "claim_id": "dc8003d3-f3e6-48fc-8a6b-42ae323a5144",
+      "result_id": "389f0106-69f5-4252-b3ae-8cbfcbecc4e0"
+    },
+    {
+      "claim_id": "bdf07a59-ed24-4fc0-857c-e710c5b80455",
+      "result_id": "389f0106-69f5-4252-b3ae-8cbfcbecc4e0"
+    },
+    {
+      "claim_id": "313eda32-68a4-4954-87aa-2e76a79289ea",
+      "result_id": "389f0106-69f5-4252-b3ae-8cbfcbecc4e0"
+    },
+    {
+      "claim_id": "cb43f213-44fd-4f2e-b12d-b531fc70b2fd",
+      "result_id": "389f0106-69f5-4252-b3ae-8cbfcbecc4e0"
+    },
+    {
+      "claim_id": "799ea5ae-4842-4cc2-937a-686d2960a902",
+      "result_id": "389f0106-69f5-4252-b3ae-8cbfcbecc4e0"
+    },
+    {
+      "claim_id": "3b98ec98-645b-46cb-a5d3-c87f2cbca20d",
+      "result_id": "b0552dbf-c11c-4371-b0fc-77e75ba05218"
+    },
+    {
+      "claim_id": "313f27d2-6b47-4f18-8d75-782427f35c0d",
+      "result_id": "b0552dbf-c11c-4371-b0fc-77e75ba05218"
+    },
+    {
+      "claim_id": "d17cd595-5bb6-4d10-9b37-48f0d5f8968e",
+      "result_id": "b0552dbf-c11c-4371-b0fc-77e75ba05218"
+    },
+    {
+      "claim_id": "5c84166c-395b-43f3-ad7f-3253ffd45812",
+      "result_id": "b0552dbf-c11c-4371-b0fc-77e75ba05218"
+    },
+    {
+      "claim_id": "bad2e2a8-da03-442d-aba3-b735d1fbac03",
+      "result_id": "b0552dbf-c11c-4371-b0fc-77e75ba05218"
+    },
+    {
+      "claim_id": "fb6ae328-038a-4fe6-9882-bc65f9b52c4a",
+      "result_id": "4d377d2c-bcdc-4908-8570-bc01f5055265"
+    },
+    {
+      "claim_id": "50c9be6b-ef24-4015-940f-046c3ab88e33",
+      "result_id": "4d377d2c-bcdc-4908-8570-bc01f5055265"
+    },
+    {
+      "claim_id": "1a88cdc2-77a7-45eb-a561-7f66e6463231",
+      "result_id": "4d377d2c-bcdc-4908-8570-bc01f5055265"
+    },
+    {
+      "claim_id": "7fd18289-80f7-4094-99b5-035e8032fbb0",
+      "result_id": "4d377d2c-bcdc-4908-8570-bc01f5055265"
+    },
+    {
+      "claim_id": "71a0779a-533e-4480-af44-522f1975c201",
+      "result_id": "4d377d2c-bcdc-4908-8570-bc01f5055265"
+    },
+    {
+      "claim_id": "1ef90e2b-18d6-41c2-9cf6-1c586d1d896f",
+      "result_id": "4d377d2c-bcdc-4908-8570-bc01f5055265"
+    },
+    {
+      "claim_id": "e9de29b3-bc78-4bcb-af5b-92f5df75722e",
+      "result_id": "4d377d2c-bcdc-4908-8570-bc01f5055265"
+    },
+    {
+      "claim_id": "260b542a-6915-4880-9f3e-fd1494142a36",
+      "result_id": "4d377d2c-bcdc-4908-8570-bc01f5055265"
+    },
+    {
+      "claim_id": "e344f397-e42f-4a4a-9686-3cf6ad9b6bc8",
+      "result_id": "4d377d2c-bcdc-4908-8570-bc01f5055265"
+    },
+    {
+      "claim_id": "299c0c51-d885-4346-ae7e-873519c10308",
+      "result_id": "7cd0854f-9f57-4d38-a976-678210895e06"
+    },
+    {
+      "claim_id": "32ea7ba4-a506-4426-aa9d-e64a7ffd4be2",
+      "result_id": "7cd0854f-9f57-4d38-a976-678210895e06"
+    },
+    {
+      "claim_id": "16df77c3-2de7-4547-a5b3-8df181600b61",
+      "result_id": "7cd0854f-9f57-4d38-a976-678210895e06"
+    },
+    {
+      "claim_id": "05518005-22b8-4169-a55f-242a7f4cc2ca",
+      "result_id": "7cd0854f-9f57-4d38-a976-678210895e06"
+    },
+    {
+      "claim_id": "8ebabcc9-8c08-415a-85eb-b9a92c7bdca6",
+      "result_id": "7cd0854f-9f57-4d38-a976-678210895e06"
+    },
+    {
+      "claim_id": "590491c6-4fd6-42cc-8a46-e26508c665a0",
+      "result_id": "7cd0854f-9f57-4d38-a976-678210895e06"
+    },
+    {
+      "claim_id": "1062ca37-e6df-4543-9d64-2f4a0ac28fe2",
+      "result_id": "7cd0854f-9f57-4d38-a976-678210895e06"
+    },
+    {
+      "claim_id": "11fe9d11-995c-488a-aea4-b437d09cf376",
+      "result_id": "7cd0854f-9f57-4d38-a976-678210895e06"
+    },
+    {
+      "claim_id": "1c3e51bb-b124-4eb5-b445-f5d6093526e2",
+      "result_id": "7cd0854f-9f57-4d38-a976-678210895e06"
+    },
+    {
+      "claim_id": "c25c22cb-e99c-4aa5-84f9-5ee9f12bd7eb",
+      "result_id": "7cd0854f-9f57-4d38-a976-678210895e06"
+    },
+    {
+      "claim_id": "5359cf6f-a08c-4662-b37a-ec41682ab741",
+      "result_id": "7cd0854f-9f57-4d38-a976-678210895e06"
+    },
+    {
+      "claim_id": "c2b46753-b155-4a7c-903b-da32365d8729",
+      "result_id": "b90a0c6a-fec3-42bd-8829-c5e78bc71de7"
+    },
+    {
+      "claim_id": "cbff278b-7e4d-4a23-971d-e9d7f42cef96",
+      "result_id": "b90a0c6a-fec3-42bd-8829-c5e78bc71de7"
+    },
+    {
+      "claim_id": "73057e38-2c89-4a3e-87a6-e2deebb1b2f7",
+      "result_id": "b90a0c6a-fec3-42bd-8829-c5e78bc71de7"
+    },
+    {
+      "claim_id": "9975154b-7a18-41ce-bdc1-5c39a253e83c",
+      "result_id": "b90a0c6a-fec3-42bd-8829-c5e78bc71de7"
+    },
+    {
+      "claim_id": "0ada92d1-671d-4e58-a4fd-bdd1aaca5ed6",
+      "result_id": "b90a0c6a-fec3-42bd-8829-c5e78bc71de7"
+    },
+    {
+      "claim_id": "6d080395-3109-4fc9-85a8-c1c97ea0dd24",
+      "result_id": "b90a0c6a-fec3-42bd-8829-c5e78bc71de7"
+    },
+    {
+      "claim_id": "56bb4391-06c8-4306-9f6a-743a1c3f56a4",
+      "result_id": "b90a0c6a-fec3-42bd-8829-c5e78bc71de7"
+    },
+    {
+      "claim_id": "85e58d42-aeb5-4e4f-83c2-22d2657007b8",
+      "result_id": "b90a0c6a-fec3-42bd-8829-c5e78bc71de7"
+    },
+    {
+      "claim_id": "302e0d33-839b-4d12-96f8-f8a9d4a9f640",
+      "result_id": "b90a0c6a-fec3-42bd-8829-c5e78bc71de7"
+    },
+    {
+      "claim_id": "706957a2-d076-48f9-b0b0-93bcce96113b",
+      "result_id": "62858530-51ae-4499-95d2-cb91a28a2b95"
+    },
+    {
+      "claim_id": "5585e822-6577-460d-92be-7a3313ce9750",
+      "result_id": "62858530-51ae-4499-95d2-cb91a28a2b95"
+    },
+    {
+      "claim_id": "215de06d-ca84-4a3c-9e44-3b39288f6550",
+      "result_id": "62858530-51ae-4499-95d2-cb91a28a2b95"
+    },
+    {
+      "claim_id": "ddb34167-4e94-463f-b572-4785d3143be5",
+      "result_id": "62858530-51ae-4499-95d2-cb91a28a2b95"
+    },
+    {
+      "claim_id": "f2e11e29-d784-490d-a0d1-c76aa1ce5b92",
+      "result_id": "62858530-51ae-4499-95d2-cb91a28a2b95"
+    },
+    {
+      "claim_id": "22183824-0869-4f89-95ac-c6ec7657ca5c",
+      "result_id": "62858530-51ae-4499-95d2-cb91a28a2b95"
+    },
+    {
+      "claim_id": "da2d4d06-3dc2-4b27-b143-a0a3b05fa2c4",
+      "result_id": "62858530-51ae-4499-95d2-cb91a28a2b95"
+    },
+    {
+      "claim_id": "d9d5985a-f9a6-4499-bd92-1dcfa7d31ff5",
+      "result_id": "62858530-51ae-4499-95d2-cb91a28a2b95"
+    },
+    {
+      "claim_id": "d502d4ef-b2f4-4901-8d92-214ff845def2",
+      "result_id": "62858530-51ae-4499-95d2-cb91a28a2b95"
+    },
+    {
+      "claim_id": "0e186c49-94c4-4ca6-a0b4-f539c536bdf6",
+      "result_id": "62858530-51ae-4499-95d2-cb91a28a2b95"
+    },
+    {
+      "claim_id": "0570792d-0c13-4bd2-a05d-2412760cf532",
+      "result_id": "62858530-51ae-4499-95d2-cb91a28a2b95"
+    },
+    {
+      "claim_id": "9ad67508-87a4-4e0e-b9fc-2a5c761a0c11",
+      "result_id": "62858530-51ae-4499-95d2-cb91a28a2b95"
+    },
+    {
+      "claim_id": "8b69829d-c86b-4012-9b75-16e7f19cfd2b",
+      "result_id": "62858530-51ae-4499-95d2-cb91a28a2b95"
+    },
+    {
+      "claim_id": "55a510b2-b88f-4492-8347-47c990e80dba",
+      "result_id": "62858530-51ae-4499-95d2-cb91a28a2b95"
+    },
+    {
+      "claim_id": "b631e9ee-386e-48d9-8dfd-ff16c7d1b270",
+      "result_id": "d0424e82-2b64-4a1a-84ff-12375de3429c"
+    },
+    {
+      "claim_id": "3f0c2226-8bbe-4db1-9699-a558b9d3f31c",
+      "result_id": "d0424e82-2b64-4a1a-84ff-12375de3429c"
+    },
+    {
+      "claim_id": "1f7cc97a-55fc-4aa6-b1c3-9ca2413b9460",
+      "result_id": "d0424e82-2b64-4a1a-84ff-12375de3429c"
+    },
+    {
+      "claim_id": "88de53eb-6288-41a4-8a35-58a5f97f075f",
+      "result_id": "d0424e82-2b64-4a1a-84ff-12375de3429c"
+    },
+    {
+      "claim_id": "7982fe05-e447-4554-a70e-4c5971f212d5",
+      "result_id": "d0424e82-2b64-4a1a-84ff-12375de3429c"
+    },
+    {
+      "claim_id": "768ab063-4095-403e-9c41-fb3880a19113",
+      "result_id": "d0424e82-2b64-4a1a-84ff-12375de3429c"
+    },
+    {
+      "claim_id": "da53fb2b-bdbc-47f3-b13c-84874681b9eb",
+      "result_id": "d0424e82-2b64-4a1a-84ff-12375de3429c"
+    },
+    {
+      "claim_id": "ee9bb9fe-dfb8-46c0-ad3c-eeeb0d99fa6e",
+      "result_id": "d0424e82-2b64-4a1a-84ff-12375de3429c"
+    },
+    {
+      "claim_id": "3456932a-c442-4d66-98a6-59c0216e2beb",
+      "result_id": "d0424e82-2b64-4a1a-84ff-12375de3429c"
+    },
+    {
+      "claim_id": "bac3538d-5861-44cd-b49b-efec42457d76",
+      "result_id": "d0424e82-2b64-4a1a-84ff-12375de3429c"
+    },
+    {
+      "claim_id": "b92ba441-7e3d-4bc2-99ba-ef23d33ebb64",
+      "result_id": "d0424e82-2b64-4a1a-84ff-12375de3429c"
+    },
+    {
+      "claim_id": "9dbab0ef-4ef8-4962-ab8b-8aaf5b1983c9",
+      "result_id": "d0424e82-2b64-4a1a-84ff-12375de3429c"
+    },
+    {
+      "claim_id": "06ba0092-7e96-41b3-a4e5-8786208efbc3",
+      "result_id": "d0424e82-2b64-4a1a-84ff-12375de3429c"
+    },
+    {
+      "claim_id": "02b290a2-4f07-42ab-b1bc-8ad315179c03",
+      "result_id": "d0424e82-2b64-4a1a-84ff-12375de3429c"
+    },
+    {
+      "claim_id": "d77f9eaf-c78e-4864-b693-77e89781817c",
+      "result_id": "d0424e82-2b64-4a1a-84ff-12375de3429c"
+    },
+    {
+      "claim_id": "bd802171-d20f-4c29-8004-4851d362504b",
+      "result_id": "d0424e82-2b64-4a1a-84ff-12375de3429c"
+    },
+    {
+      "claim_id": "dff6c5fa-5907-4797-b67f-2aa078aeece9",
+      "result_id": "d0424e82-2b64-4a1a-84ff-12375de3429c"
+    },
+    {
+      "claim_id": "3250d61c-69ef-4feb-b5b4-195d729a91ef",
+      "result_id": "d0424e82-2b64-4a1a-84ff-12375de3429c"
+    },
+    {
+      "claim_id": "c5e95e48-38d4-45fe-be84-ecfe2da018b2",
+      "result_id": "06e00d38-bfc1-4789-a0ee-3558be6a7179"
+    },
+    {
+      "claim_id": "38c76933-fb98-45b2-9805-212d53aed3ac",
+      "result_id": "06e00d38-bfc1-4789-a0ee-3558be6a7179"
+    },
+    {
+      "claim_id": "cb1bfa6f-ce08-4823-b31e-79d034baacd8",
+      "result_id": "06e00d38-bfc1-4789-a0ee-3558be6a7179"
+    },
+    {
+      "claim_id": "ec07ae13-db1e-4ae2-8166-88f5c73edae8",
+      "result_id": "06e00d38-bfc1-4789-a0ee-3558be6a7179"
+    },
+    {
+      "claim_id": "aaa47c26-b02c-4c02-9555-cf03494ce08d",
+      "result_id": "06e00d38-bfc1-4789-a0ee-3558be6a7179"
+    },
+    {
+      "claim_id": "f2d7efe9-5e99-49c5-8e15-d48e7fb1685b",
+      "result_id": "06e00d38-bfc1-4789-a0ee-3558be6a7179"
+    },
+    {
+      "claim_id": "8ce0bd5f-9fff-44f7-82d1-18024f520b7a",
+      "result_id": "06e00d38-bfc1-4789-a0ee-3558be6a7179"
+    },
+    {
+      "claim_id": "90a60461-5dc4-4f76-8ed7-3f36280e2baf",
+      "result_id": "06e00d38-bfc1-4789-a0ee-3558be6a7179"
+    },
+    {
+      "claim_id": "9ddba659-cf92-431f-94ee-cc641110b20b",
+      "result_id": "06e00d38-bfc1-4789-a0ee-3558be6a7179"
+    },
+    {
+      "claim_id": "f6ea1306-bf3b-42cd-ab88-f788265346c8",
+      "result_id": "06e00d38-bfc1-4789-a0ee-3558be6a7179"
+    },
+    {
+      "claim_id": "55e47dbd-337e-4f63-96db-dff1a362be67",
+      "result_id": "06e00d38-bfc1-4789-a0ee-3558be6a7179"
+    },
+    {
+      "claim_id": "0e197ca7-5276-4e9d-a995-9c39b8f3d045",
+      "result_id": "06e00d38-bfc1-4789-a0ee-3558be6a7179"
+    },
+    {
+      "claim_id": "a0a2481d-4a3d-4242-9f2a-7f7d33ffba7f",
+      "result_id": "06e00d38-bfc1-4789-a0ee-3558be6a7179"
+    },
+    {
+      "claim_id": "e793736a-e7b2-4670-a4ba-1828ca3553a2",
+      "result_id": "06e00d38-bfc1-4789-a0ee-3558be6a7179"
+    },
+    {
+      "claim_id": "e7b1e258-d9d7-4572-98cb-72752b9e97ed",
+      "result_id": "43648748-9b65-4b2a-bcd5-f9a428dba205"
+    },
+    {
+      "claim_id": "cb727b2d-2dcd-4560-b684-406e8048dc73",
+      "result_id": "43648748-9b65-4b2a-bcd5-f9a428dba205"
+    },
+    {
+      "claim_id": "80d7d92a-25e2-4d58-8b85-1a6716cbb30a",
+      "result_id": "43648748-9b65-4b2a-bcd5-f9a428dba205"
+    },
+    {
+      "claim_id": "611707dc-2165-4d27-8a56-6bbef7fd84b9",
+      "result_id": "43648748-9b65-4b2a-bcd5-f9a428dba205"
+    },
+    {
+      "claim_id": "4b924393-84ec-452b-8965-d24bf1b68167",
+      "result_id": "43648748-9b65-4b2a-bcd5-f9a428dba205"
+    },
+    {
+      "claim_id": "20185380-8111-4a0a-b98f-c7e808e50178",
+      "result_id": "24e5a0b6-5719-42c5-8204-0e8463c2a93b"
+    },
+    {
+      "claim_id": "7971312e-179c-48d3-a391-83218200057c",
+      "result_id": "24e5a0b6-5719-42c5-8204-0e8463c2a93b"
+    },
+    {
+      "claim_id": "0c9461cd-8c84-437b-a817-619f22d207a9",
+      "result_id": "24e5a0b6-5719-42c5-8204-0e8463c2a93b"
+    },
+    {
+      "claim_id": "21458321-bedb-4b59-8a28-5213275bd8a4",
+      "result_id": "24e5a0b6-5719-42c5-8204-0e8463c2a93b"
+    },
+    {
+      "claim_id": "ac70682a-66c3-4271-81a1-4335bdbb0ca4",
+      "result_id": "24e5a0b6-5719-42c5-8204-0e8463c2a93b"
+    },
+    {
+      "claim_id": "9be693af-4d42-4edb-a315-70c05055dcf5",
+      "result_id": "24e5a0b6-5719-42c5-8204-0e8463c2a93b"
+    },
+    {
+      "claim_id": "04ae3771-6f82-4172-ad86-943c602e301a",
+      "result_id": "24e5a0b6-5719-42c5-8204-0e8463c2a93b"
+    },
+    {
+      "claim_id": "182acaac-24ce-4f76-a41e-e0728e6d5a83",
+      "result_id": "24e5a0b6-5719-42c5-8204-0e8463c2a93b"
+    },
+    {
+      "claim_id": "8171f6b9-c7e1-497d-bfcd-8222e6ecd3b2",
+      "result_id": "24e5a0b6-5719-42c5-8204-0e8463c2a93b"
+    },
+    {
+      "claim_id": "bb765c64-2717-4f6a-a3d1-4be797bd4e85",
+      "result_id": "24e5a0b6-5719-42c5-8204-0e8463c2a93b"
+    },
+    {
+      "claim_id": "a4a8a398-fd92-469c-b8af-7117002ea314",
+      "result_id": "24e5a0b6-5719-42c5-8204-0e8463c2a93b"
+    },
+    {
+      "claim_id": "4a7934bd-e07c-41b5-bf3b-9dc98a29a239",
+      "result_id": "24e5a0b6-5719-42c5-8204-0e8463c2a93b"
+    }
+  ],
+  "comparisons": []
+}

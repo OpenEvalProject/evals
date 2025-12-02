@@ -1,0 +1,269 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C4",
+      "C39",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C63",
+      "C66",
+      "C67",
+      "C68",
+      "C70",
+      "C71"
+    ],
+    "result": "Mouse visual, somatosensory, and motor cortices operate as inhibition-stabilized networks (ISNs) during spontaneous activity without sensory stimulation. Inhibitory neurons show paradoxical suppression when optogenetically stimulated, with a brief initial transient increase followed by sustained suppression, and transition to non-paradoxical responses at high stimulation intensities.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Multiple converging lines of evidence support ISN operation: (1) pharmacologically-classified inhibitory neurons show paradoxical suppression (C48-C50), (2) the temporal dynamics match ISN predictions with initial transient increases before suppression (C56-C59), (3) the transition from paradoxical to non-paradoxical responses at high laser intensities matches ISN theory (C63), and (4) effects persist across multiple classification methods and stringency thresholds (C66-C68). The experimental design with pharmacological classification provides strong evidence against alternative explanations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C5",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C78",
+      "C81"
+    ],
+    "result": "A simple two-population rate model with rectified-linear transfer function accurately describes the experimental data and reveals moderately strong recurrent coupling (W_EE median 4.7) with large balanced excitatory and inhibitory currents (medians 10.9 and -8.63 times threshold) that sum to a small net input.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The model fitting is well-constrained with more data degrees of freedom (15) than model parameters (11), and successfully describes responses across three pharmacological conditions (C5, C74). The inferred parameters are quantitatively reported with bootstrap confidence intervals (C75-C76), and the model makes verified predictions about response transitions and stability (C81). The consistency between linear and nonlinear transfer functions (C73) strengthens confidence in the results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C105",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112"
+    ],
+    "result": "ISN operation persists without sensory stimulation and during light anesthesia (0.25-0.5% isoflurane), with paradoxical inhibitory suppression maintained despite reduced spontaneous firing rates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The experimental data clearly demonstrate paradoxical effects in the absence of sensory stimuli (C6, C52-C53) and under light anesthesia (C105, C110). The preservation of paradoxical suppression despite reduced firing rates (C111) and the absence of up/down state oscillations at 0.25% isoflurane (C109) provide strong evidence that the network remains in the ISN regime across these conditions. Statistical tests confirm significant suppression in both awake and anesthetized states.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C100"
+    ],
+    "result": "Viral expression of opsin in PV neurons produces no average paradoxical effect, while transgenic expression does, consistent with ISN theory predicting that stimulating only a subset (~60%) of inhibitory neurons reduces paradoxical suppression. Histological data confirm viral expression yields approximately half as many opsin-expressing cells as transgenic expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The experimental comparison between viral and transgenic expression methods is well-controlled (same Cre line, C96-C97), with quantitative histological measurements showing ~2-fold difference in expressing cell numbers (C97, p<0.05). The modeling prediction that stimulating 60% of inhibitory neurons reduces paradoxical effects (C93) matches both the histological measurements (C98) and the observed differences in paradoxical responses (C91-C92, C94-C95). This provides strong support for the ISN interpretation and explains prior conflicting results in the literature.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "Somatosensory and motor/premotor cortices show paradoxical inhibitory suppression with statistically significant negative mean and median initial slopes, and transition to non-paradoxical responses at high laser intensities.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The experimental data from both cortical areas show clear paradoxical effects with statistical significance (C86-C87, p-values reported in figure legends). The observation of transitions to non-paradoxical responses at high intensities (C85) matches ISN predictions and parallels the V1 results, strengthening the conclusion that ISN operation is widespread across cortical areas. The consistency of results across sensory and non-sensory areas is notable.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C101",
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "Deep cortical layers (\u2265500 \u03bcm depth) in V1, motor, and somatosensory areas show initial paradoxical suppression of inhibitory neurons, though with weaker maximal suppression than superficial layers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The experimental data demonstrate paradoxical effects in deep layers across multiple areas (C101, C103), with appropriate acknowledgment that effects are weaker than in superficial layers (C102), likely due to light attenuation. The authors appropriately note this does not constitute definitive proof of ISN operation in deep layers but does argue against alternative feedforward inhibition models (C104). The classification by waveform width is validated by comparison to pharmacological methods in superficial layers.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "Pharmacological classification with E and I synaptic blockers successfully separates excitatory and inhibitory neurons based on their responses to optogenetic stimulation, with inhibitory cells showing elevated firing and excitatory cells remaining silent. Classified cell types show expected differences in waveform width and spontaneous firing rates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The pharmacological classification method is well-designed and produces clear separation between cell types (C42-C43). The validation through waveform and firing rate differences (C45-C46) provides convergent evidence, though the authors appropriately note these features alone are insufficient for classification. The broad distribution of inhibitory waveform widths (C47) is consistent with known heterogeneity of inhibitory cell types and is supported by prior literature citations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C64",
+      "C65"
+    ],
+    "result": "Analytical modeling demonstrates that paradoxical responses imply inhibitory stabilization even when short-term synaptic plasticity is included in the network model.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The analytical work in Appendix 1 (referenced in C64) provides theoretical support that the paradoxical effect interpretation remains valid even with synaptic plasticity. This addresses a potential alternative explanation and strengthens the ISN interpretation. However, the manuscript would benefit from more explicit presentation of these analytical results in the main text rather than relegating them entirely to an appendix.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C10",
+      "C99"
+    ],
+    "result": "Strong coupling and inhibition stabilization are common features across multiple cortical areas including visual, somatosensory, and motor cortex.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This summary conclusion (C10, C99) is well-supported by the convergent evidence from multiple cortical areas showing paradoxical effects, model fits, and consistency with ISN predictions. The claim appropriately synthesizes the major findings across the different experimental conditions and brain regions. The evidence spans multiple independent measurements and theoretical analyses.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "ISN theory predicts that at high laser intensities, inhibitory cells should increase firing rates as the network transitions from ISN to non-ISN regime when excitatory cells are sufficiently suppressed to be stable without reactive inhibition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims describe theoretical predictions from ISN models (C60-C62) that are subsequently verified in the experimental data (C63, C85). The mechanistic explanation is clear and the predictions are specific and testable. The observation of this predicted transition in the data provides strong support for the ISN interpretation over alternative models.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "Even in an ISN, stimulation of single inhibitory subclasses need not produce paradoxical suppression. PV basket cells are the most numerous inhibitory cell class, make strong perisomatic synapses, and effectively suppress network firing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims establish important theoretical context (C88, supported by citations and analytical work) and background on PV cell properties (C89-C90, supported by literature citations). This context is essential for interpreting the viral vs. transgenic expression results. The claims are well-supported by prior literature and theoretical work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C1",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "Background on cortical network models, recurrent connectivity, ISN theory, and prior experimental evidence establishes the theoretical framework and identifies key open questions about whether cortical networks operate as ISNs during spontaneous activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims provide essential background and context, all supported by appropriate citations to prior work (C11-C16, C20-C21, C23-C28). The claims accurately represent prior theoretical and experimental work and clearly identify the gap in knowledge (C22, C26) that motivates the current study. This is standard introductory material that is well-documented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "Paradoxical inhibitory suppression\u2014a counterintuitive decrease in inhibitory firing when inhibitory cells receive direct input\u2014is a strong prediction of ISN models, arising from withdrawal of recurrent excitation exceeding the added direct stimulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims describe the key theoretical prediction that forms the basis for the experimental approach (C29, C32). The mechanistic explanation (C30-C31) is clearly articulated and supported by citations to prior theoretical work. This prediction is central to the experimental design and is subsequently verified in multiple cortical areas.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "Prior optogenetic studies in mouse cortex have produced mixed results regarding paradoxical effects and ISN operation, with some studies finding paradoxical effects and others finding non-paradoxical effects or non-ISN mechanisms. Possible explanations include differences in experimental conditions, measurement methods, or numbers of stimulated cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims accurately summarize prior conflicting experimental results (C33-C35, C37) with appropriate citations. The proposed explanations for discrepancies (C36) are reasonable and supported by both citations and the current study's results. The identification of unresolved questions (C38) appropriately motivates the current work. This represents a fair assessment of the prior literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C40",
+      "C41"
+    ],
+    "result": "Approximately 80% of cortical neurons are excitatory, and extracellular recordings can show biases in sampling cortical neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These are well-established facts about cortical composition and recording methods, appropriately cited to prior literature (C40-C41). These claims provide important context for interpreting the observation that 87% of recorded units were suppressed, explaining why this percentage alone cannot determine whether paradoxical effects are present.",
+    "result_type": "MINOR"
+  }
+]

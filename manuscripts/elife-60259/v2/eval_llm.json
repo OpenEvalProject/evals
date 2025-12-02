@@ -1,0 +1,351 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C40",
+      "C41",
+      "C42",
+      "C80",
+      "C93",
+      "C102"
+    ],
+    "result": "The manuscript establishes the biochemical context of vitamin B12 function in C. elegans, describing its role as a cofactor in two metabolic pathways: the canonical propionate breakdown pathway and the Met/SAM cycle. The authors provide established knowledge about enzyme functions, gene orthology, and metabolic pathway components.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C1, C11-C16, C33-C37, C40-C42, C80, C93, C102) represent well-established biochemical and genetic knowledge supported by appropriate citations and illustrated in Figure 1A. The orthology relationships and enzyme functions are standard knowledge in the field and provide necessary background context for the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C111",
+      "C112"
+    ],
+    "result": "The authors describe B12-mechanism-I, a previously characterized propionate-dependent transcriptional response that requires nhr-10 and nhr-68 functioning as a persistence detector. This mechanism activates a propionate shunt pathway in response to sustained propionate accumulation when the canonical propionate breakdown pathway is perturbed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C3, C19-C26, C111, C112 are well-supported by citations to previous work (Watson et al., 2016; Bulcha et al., 2019) and by data shown in Figure 1B demonstrating GFP expression patterns in response to vitamin B12 and propionate supplementation. This represents established prior work that provides context for the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "The authors discover residual GFP expression in the posterior intestine of Pacdh-1::GFP;\u0394nhr-10 animals that is completely repressed by vitamin B12 supplementation, indicating the existence of a propionate-independent mechanism of vitamin B12-dependent gene regulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C29 are directly supported by fluorescence microscopy images in Figure 1B and RNA-seq data in Figure 1C showing residual acdh-1 expression in \u0394nhr-10 animals that is eliminated by vitamin B12. This observation is the key finding that led to the discovery of B12-mechanism-II.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C38",
+      "C39"
+    ],
+    "result": "Through forward genetic screening (~8000 genomes) and RNAi screening (>1400 genes), the authors identify mutations in Met/SAM cycle genes (metr-1, mtrr-1, sams-1, mthf-1, mel-32) and the vitamin B12 transporter pmp-5 that activate GFP expression in Pacdh-1::GFP;\u0394nhr-10 animals in the presence of vitamin B12.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C32, C38-C39 are supported by the described screening procedures and results shown in Figure 2B and 2D. The convergence of results from two independent screening approaches (forward genetics and RNAi) provides strong validation. Whole genome sequencing confirmed the mutations, and the genes identified are functionally related to the Met/SAM cycle.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "RNA-seq analysis reveals that 110 genes are upregulated and 11 genes are downregulated in all four Met/SAM cycle mutants. Notably, most Met/SAM cycle genes themselves are significantly upregulated in these mutants and are repressed by vitamin B12, but are not induced by propionate supplementation or affected in nhr-10/nhr-68 mutants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C50 are supported by RNA-seq data presented in Figures 3A-D and Supplementary files 1-2. The statistical analysis appears appropriate with fold change cutoffs (>1.5) and adjusted p-values (<0.01). The finding that Met/SAM cycle genes are not responsive to propionate or nhr-10/nhr-68 mutations distinguishes B12-mechanism-II from B12-mechanism-I.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "The authors identify nhr-114 as the transcription factor mediating B12-mechanism-II through RNAi screening. nhr-114 RNAi specifically represses GFP expression in \u0394nhr-10 animals and Met/SAM cycle mutants, produces a synthetic sick phenotype when combined with Met/SAM cycle perturbations, and is absolutely required for Met/SAM cycle gene induction (32 of 110 upregulated genes require nhr-114).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C53, C63-C66 are supported by RNAi experiments (Figures 4A, 4D-E) and RNA-seq data (Supplementary file 3). The synthetic sick phenotype (C52-C53) is observed in brightfield images, and the absolute dependence on nhr-114 for Met/SAM cycle gene induction (C63) is demonstrated by RNA-seq showing loss of induction with nhr-114 RNAi. The specificity of nhr-114 to B12-mechanism-II is supported by the observation that basal expression is unaffected by nhr-114 RNAi in the presence of vitamin B12 (C65).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "The authors demonstrate that \u0394nhr-114 mutants exhibit slow development and sterility on E. coli OP50 (low B12) but not on E. coli HT115 (high B12), and these phenotypes can be rescued by supplementation with vitamin B12, methionine, or choline. This supports the conclusion that the primary biological function of the Met/SAM cycle in C. elegans is to produce methyl donors for phosphatidylcholine synthesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C61 are supported by phenotypic observations (Figures 4B-C, Figure 4\u2014figure supplement 4) and citations to prior work (Gracida and Eckmann, 2013; Li et al., 2011; Ding et al., 2015; Walker et al., 2011). The rescue experiments with vitamin B12, methionine, and choline provide functional validation of nhr-114's role in Met/SAM cycle metabolism. However, the conclusion about the 'primary' biological function (C60) is somewhat inferential, though well-supported by the rescue data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C76",
+      "C77"
+    ],
+    "result": "GC-MS metabolomics demonstrates that vitamin B12 supplementation increases methionine levels and decreases homocysteine and 3-hydroxypropionate levels in wild type animals. Methionine levels are greatly increased in sams-1 mutants but reduced in metr-1, mtrr-1, and mthf-1 mutants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C69, C76-C77 are supported by GC-MS data shown in Figures 5A and 5E. The metabolite measurements are consistent with the expected effects of vitamin B12 on Met/SAM cycle activity and the known functions of the mutated enzymes. Statistical significance is reported (p < 0.01 or p < 0.05), though sample sizes are not explicitly stated in the text.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C70",
+      "C71"
+    ],
+    "result": "RNAi of cbs-1 (which causes homocysteine accumulation) represses rather than activates GFP expression in Pacdh-1::GFP;\u0394nhr-10 animals, indicating that homocysteine accumulation is not the metabolic mechanism that activates B12-mechanism-II.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C71 are supported by RNAi experiments shown in Figure 5B and supplementary figures. The logic is sound: if homocysteine accumulation activated B12-mechanism-II, cbs-1 RNAi should increase GFP expression, but the opposite is observed. This effectively rules out homocysteine as the activating signal.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C78",
+      "C79",
+      "C86",
+      "C87"
+    ],
+    "result": "Methionine or choline supplementation dramatically represses GFP expression in Pacdh-1::GFP;\u0394nhr-10 animals and in metr-1 or mthf-1 mutants, but only choline (not methionine) represses GFP in sams-1 mutants. Combined with pmt-2 RNAi results showing GFP repression rather than activation, the authors conclude that low SAM (not low methionine or low phosphatidylcholine) is the direct activator of B12-mechanism-II.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C75, C78-C79, C86-C87 are supported by fluorescence microscopy data (Figures 5C-D, 5G) and logical inference from the metabolic pathway. The key observation is that methionine supplementation cannot suppress GFP in sams-1 mutants despite elevated methionine levels (C75-C76), ruling out low methionine as the direct signal (C78). The pmt-2 RNAi result (C85) showing GFP repression rules out low phosphatidylcholine (C86), leaving low SAM as the most likely signal (C87). The logic is sound, though the conclusion is somewhat indirect since SAM levels were not directly measured.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C88"
+    ],
+    "result": "The authors propose that pmt-2 RNAi represses the Pacdh-1::GFP transgene because SAM levels increase when the methylation reaction converting phosphatidylethanolamine into phosphatidylcholine is blocked.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C88 is a mechanistic explanation for the pmt-2 RNAi result, supported by citation to Ye et al., 2017 and metabolic reasoning. However, this is inferential since SAM levels were not directly measured in pmt-2 RNAi animals. The explanation is plausible but would benefit from direct SAM measurement to be fully supported.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "RNA-seq demonstrates that Met/SAM cycle genes are repressed by methionine supplementation in wild type animals but not in \u0394nhr-114 mutants, confirming that low SAM levels activate B12-mechanism-II in an nhr-114-dependent manner.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C91 are supported by RNA-seq data shown in Figure 5H, Figure 5\u2014figure supplement 7, and Supplementary file 4. This experiment directly tests the requirement for nhr-114 in the response to methionine (which supports SAM synthesis) and provides strong evidence for the proposed mechanism. The conclusion (C91) is well-supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C92",
+      "C95",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "msra-1 and pmp-5 are among the most strongly vitamin B12-repressed genes, are induced in Met/SAM cycle mutants, and are repressed by methionine supplementation in an nhr-114-dependent manner. pmp-5 is also upregulated by propionate supplementation and regulated by nhr-10 and nhr-68, indicating involvement in both B12 mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92, C95-C98 are supported by RNA-seq data shown in Figures 6A-B and Supplementary files 1, 2, and 4. The dual regulation of pmp-5 by both B12 mechanisms (C97-C98) is particularly interesting and well-documented. The data consistently show the expected expression patterns across multiple experimental conditions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C94"
+    ],
+    "result": "The authors propose that msra-1 provides an entry point into the Met/SAM cycle by increasing levels of methionine through reduction of methionine sulfoxide.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C94 is a functional interpretation based on the known enzymatic activity of msra-1 (C93) and its regulation pattern. While the interpretation is logical and consistent with the enzyme's function, direct experimental evidence showing that msra-1 activity increases methionine levels in this context is not provided. The claim is reasonable but somewhat inferential.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101",
+      "C103"
+    ],
+    "result": "cbs-1 expression shows opposite regulation to msra-1 and pmp-5: it is activated by vitamin B12, repressed in Met/SAM cycle mutants, and activated by methionine in an nhr-114-dependent manner. The authors propose that reduced cbs-1 expression prevents carbon efflux from the Met/SAM cycle.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C99-C101, C103 are supported by RNA-seq data shown in Figure 6C, Figure 6\u2014figure supplement 1, and Supplementary files 1, 2, and 4. The opposite regulation pattern compared to msra-1 and pmp-5 is clearly demonstrated. The interpretation about preventing carbon efflux (C103) is logical given cbs-1's function in converting homocysteine to cystathionine, though direct flux measurements are not provided.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "nhr-114 expression is repressed by vitamin B12 and methionine, activated by Met/SAM cycle perturbations, and appears to activate its own expression (auto-activation). nhr-114 is not controlled by B12-mechanism-I (no response to propionate or nhr-10 deletion), but is mildly repressed in \u0394nhr-68 mutants, suggesting some crosstalk between the two B12 mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C104-C109 are supported by RNA-seq data shown in Figure 6D and Supplementary files 1, 2, and 4. The auto-activation hypothesis (C106) is inferred by analogy to nhr-68 (Bulcha et al., 2019) and is consistent with the expression pattern, though direct evidence of nhr-114 binding to its own promoter is not provided. The mild repression in \u0394nhr-68 mutants (C108) suggesting crosstalk (C109) is an interesting observation but is not extensively explored.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C110",
+      "C113",
+      "C114",
+      "C115"
+    ],
+    "result": "The authors establish B12-mechanism-II as a distinct propionate-independent mechanism by which vitamin B12 regulates Met/SAM cycle gene expression. This mechanism is activated by low Met/SAM cycle activity (due to genetic perturbations or low dietary vitamin B12), requires nhr-114, and coordinately regulates Met/SAM cycle gene expression, influx (via msra-1 and pmp-5), and efflux (via cbs-1) to maintain the cycle in a tight metabolic regime.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C10, C110, C113-C115 represent the main conclusions of the study and are well-supported by the collective data from genetic screens, RNA-seq experiments, metabolite measurements, and rescue experiments. The evidence consistently demonstrates that B12-mechanism-II is distinct from B12-mechanism-I, requires nhr-114, responds to low SAM levels, and coordinately regulates multiple aspects of Met/SAM cycle metabolism. The conclusion that the cycle is maintained in a 'tight metabolic regime' (C10, C115) is supported by the coordinated regulation of gene expression, influx, and efflux.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C116"
+    ],
+    "result": "The authors propose that too little Met/SAM cycle activity hampers phosphatidylcholine synthesis, causing sterility and developmental delay.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C116 is supported by the observation that nhr-114 mutants show sterility and developmental delay that can be rescued by choline or methionine supplementation (C57, C61). The inference is logical given the known role of the Met/SAM cycle in phosphatidylcholine synthesis, though direct measurements of phosphatidylcholine levels in nhr-114 mutants are not provided.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C117",
+      "C118",
+      "C119"
+    ],
+    "result": "The authors speculate about potential reasons why excessive Met/SAM cycle activity could be deleterious, including depletion of folate (affecting nucleotide and NADPH pools) and excessive histone methylation (affecting gene expression).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C117-C119 are speculative explanations supported by citations to prior work (Hasan et al., 2019; Locasale, 2013; Towbin et al., 2012; Mentch et al., 2015) but not directly tested in this study. These are reasonable hypotheses for why tight regulation of the Met/SAM cycle might be important, but they remain speculative without experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C120",
+      "C121",
+      "C122",
+      "C123"
+    ],
+    "result": "The authors discuss the role of sbp-1 in regulating both B12 mechanisms, noting that it functions at a high level in the intestinal gene regulatory network and activates both nhr-68 (B12-mechanism-I) and nhr-114 (B12-mechanism-II).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C120-C123 are supported by citations to prior work (Walker et al., 2011; MacNeil et al., 2015; Bulcha et al., 2019) and data from this study. The discussion appropriately places sbp-1 as a higher-level regulator that responds to multiple metabolic imbalances and activates the appropriate specific mechanisms.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C124",
+      "C125",
+      "C126"
+    ],
+    "result": "The authors note that while the reason for activating acdh-1 by B12-mechanism-I is clear (supporting propionate breakdown), the reason for inducing acdh-1 in response to Met/SAM cycle perturbations remains unclear.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C124-C126 acknowledge an unresolved question in the study. The observation that acdh-1 is activated by both mechanisms is well-documented (C45), but the functional significance of acdh-1 activation by B12-mechanism-II is not explained. This is an honest acknowledgment of a limitation and suggests directions for future work.",
+    "result_type": "MINOR"
+  }
+]

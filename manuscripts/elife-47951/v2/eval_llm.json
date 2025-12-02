@@ -1,0 +1,240 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "The authors developed a microfluidic device ('yeast machine') with 800 \u00b5m long, 50 \u00b5m wide, and 4.5 \u00b5m high dead-end chambers optimized to induce nutrient gradients and facilitate single-cell imaging of yeast monolayers. The device was fabricated using soft lithography and cells were loaded by centrifugation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C25 and C75-C78 provide detailed specifications and design rationale for the microfluidic device, supported by figures and methodological descriptions. The device dimensions and fabrication methods are clearly documented with appropriate technical detail.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C35"
+    ],
+    "result": "Yeast cells formed growing monolayers of ~2500 cells that progressed toward the nutrient source. Under standard conditions (2% glucose, 5\u00d7 CSM), front velocity reached steady-state at ~100 \u00b5m/h, and the glucose penetration distance was ~400 \u00b5m.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C30 and C35 describe fundamental observations of colony growth dynamics with quantitative measurements supported by figures and video. The measurements are consistent and reproducible across replicates.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C36"
+    ],
+    "result": "Increasing external glucose concentration (0.01% to 8% w/vol) led to higher terminal front velocities and higher local velocities deeper in the colony, but front velocity plateaued at very high glucose concentrations (>4% w/vol).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31, C32, and C36 describe dose-response relationships between glucose concentration and colony expansion rates, supported by multiple figures showing systematic trends across concentration ranges.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C33",
+      "C34"
+    ],
+    "result": "Using standard amino acid concentrations resulted in significantly lower terminal front velocities at high glucose concentrations, suggesting amino acid availability can limit cellular growth when glucose is abundant.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C34 demonstrate that amino acids can be growth-limiting at high glucose concentrations, supported by supplementary figure data comparing 1\u00d7 and 5\u00d7 CSM conditions. This is an important control showing glucose is not the only limiting nutrient.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "Stable glucose gradients emerged in yeast monolayers, observed using fluorescently labeled hexose transporters HXT1 and HXT7. HXT1 (low-affinity, high-glucose transporter) and HXT7 (high-affinity, low-glucose transporter) displayed inversely correlated expression landscapes, with HXT7 showing membrane localization at peak expression and vacuolar localization deeper in the colony.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C3, and C37-C43 describe the primary method for detecting glucose gradients using endogenous fluorescent reporters. The inverse correlation between HXT1 and HXT7 is well-documented with figures showing spatial patterns and subcellular localization consistent with known transporter biology.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "The peak of HXT7 expression corresponded to ~0.016% w/vol glucose at ~500 \u00b5m from the front at 2% external glucose. At different external glucose concentrations, HXT7 peak position shifted: at 0.1% glucose the peak was at ~20 \u00b5m, moving deeper with increasing glucose, and disappearing at 8% glucose. HXT1 expression increased with external glucose concentration, being expressed throughout the chamber at 8% glucose.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C53 describe systematic changes in transporter expression patterns across glucose concentrations. The assumption that HXT7 peak corresponds to 0.016% glucose (C44) is reasonable based on batch culture calibration, though this introduces some uncertainty. The spatial patterns are well-documented across multiple concentrations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "Assuming local HXT7 expression is set only by local glucose concentration, the authors reconstructed glucose gradients for different initial concentrations using batch culture calibration. Similar results were obtained using HXT1. Glucose concentrations decayed quickly from the chamber opening then exhibited a long tail deeper in the colony.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C54-C57 describe glucose gradient reconstruction based on a critical assumption (C54) that local expression depends only on local glucose concentration. This assumption may not fully account for cellular history, adaptation kinetics, or other microenvironmental factors. While the approach is reasonable and results from HXT1 and HXT7 are consistent, the reconstruction method has inherent limitations that are not fully validated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "MIG1, a transcription factor that localizes to the nucleus in the presence of glucose, showed nuclear localization up to ~400 \u00b5m at 2% glucose, with a very sharp spatial transition occurring over just a few cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C60 provide independent validation of glucose gradients using MIG1 localization. The ~400 \u00b5m distance agrees well with HXT7 data, and the sharp transition is clearly documented. This strengthens the glucose gradient inference.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "HXT5 was expressed only in regions with very low or no glucose where cells did not divide, appearing to be a good marker of growth arrest. HXK1 and HXK2 (hexokinases) showed expression landscapes consistent with batch measurements, with maximal expression at ~0.016% glucose, and peaks at ~300 \u00b5m (1% external glucose) and ~500 \u00b5m (2% external glucose).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C65 describe additional gene expression patterns that validate the glucose gradient model. The consistency between microfluidic and batch culture measurements, and agreement with HXT7 peak positions, provides strong supporting evidence.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "PDC1 (overexpressed in fermenting cells) and SDH2 (overexpressed in respiring cells) showed inversely correlated expression landscapes, indicating a transition from fermentative metabolism at the nutrient front to respiratory metabolism toward the dead end where glucose is scarce.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C68 demonstrate metabolic zonation within colonies using established markers of fermentation and respiration. The inverse correlation is well-documented with figures and consistent with the glucose gradient model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "All gene expression landscapes showed high spatial correlation and fell into two major types: peaking (e.g., HXT7) and switching (e.g., HXT1, MIG1). The typical lengths of landscapes for different reporter genes were remarkably close despite examining different cellular components. Colonies were structured into two regions: an actively growing region with fermentation and a quiescent area with respiratory metabolism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C5, and C69-C72 synthesize the major findings showing coordinated gene expression patterns across multiple reporters. The spatial correlation and two-region structure are well-documented with comprehensive figure panels showing multiple genes and conditions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C6",
+      "C73"
+    ],
+    "result": "Regulatory genetic networks governing cellular physiological adaptation are key to internal structuration of cellular assemblies. Genetic programs enable multicellular assemblies to spatially self-organize through long-range metabolic interactions governed by physical rules of diffusion and uptake.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6 and C73 present the main conceptual conclusion of the work. This is well-supported by the comprehensive gene expression landscape data showing coordinated adaptation to self-generated gradients. The conclusion appropriately synthesizes the experimental findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C74",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "The study used S. cerevisiae BY4741 strains with appropriate experimental protocols including batch culture calibration, flow cytometry, and image analysis using ImageJ and TrackMate. Glucose concentrations remained stable during batch culture growth phase.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74 and C79-C84 describe standard methods and controls. The glucose stability measurement (C82) is an important control validating that batch culture measurements reflect the intended glucose concentrations. Methods are adequately described.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C1",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "The introduction establishes that cells in multicellular assemblies experience heterogeneous microenvironments due to spatial gradients, leading to position-dependent cellular physiology. Previous studies have shown physiological variations in various systems, but most research has focused on homogeneous environments. Prior microfluidic and imaging approaches had limitations in studying extended colonies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1 and C7-C20 provide background context supported by appropriate citations. These claims establish the motivation and gap in existing approaches that the current work addresses. The characterization of prior work appears accurate based on the citations provided.",
+    "result_type": "MINOR"
+  }
+]

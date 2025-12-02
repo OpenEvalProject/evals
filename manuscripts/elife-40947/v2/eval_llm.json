@@ -1,0 +1,558 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5"
+    ],
+    "result": "Human genes were classified into three major evolutionary age groups using phylostratigraphy: 6,719 unicellular (UC) genes, 7,939 early metazoan (EM) genes, and 2,660 mammal-specific (MM) genes, based on data from 10,256 patients for CNAs and 9,926 patients for point mutations across 30 tumor types from TCGA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The data collection and gene classification methodology are clearly described with specific numbers. The phylostratigraphy approach is appropriately cited (C2) and the sample sizes are explicitly stated (C1). The classification into three age groups with specific gene counts (C3-C5) provides a clear foundation for subsequent analyses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C19"
+    ],
+    "result": "Early metazoan (EM) genes show the strongest enrichment for both amplifications and deletions across tumor types, with 14/30 tumor types showing at least 3 EM phylostrata in the top five for amplifications and 27/30 for deletions, and significant decreasing trends along phylostrata (20/30 for amplifications, 27/30 for deletions, p<0.05).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The enrichment of EM genes for CNAs is well-supported by specific quantitative data (C6-C8) and statistical testing with appropriate corrections (C9-C10). The Jonckheere-Terpstra test is appropriate for testing ordered trends across phylostrata. The conclusion (C19) follows logically from the data presented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "Point mutations show peak enrichment in early metazoan genes, particularly phylostratum 4, with at least 3 of the top 5 enriched phylostrata being EM in 15/23 tumor types for missense and 11/14 for LoF mutations, while MM genes are consistently depleted (significant trends in 18/23 for missense, 12/14 for LoF, p<0.05).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The enrichment pattern for point mutations in EM genes is supported by specific counts across tumor types (C20-C22) and appropriate statistical testing (C24-C25). The depletion in MM genes (C23) provides important contrast. The statistical approach using Jonckheere-Terpstra tests with Benjamini-Hochberg correction is appropriate for multiple testing.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "Well-known cancer genes exemplify the EM enrichment pattern: EGFR (phylostratum 6) is amplified in >10% of patients in 19/30 tumor types, and TP53 (phylostratum 5) is deleted in an average of 12.73% of patients. Non-recurrent CNAs show opposite patterns, being enriched in MM genes, with TNFRSF17 as a notable MM exception.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The specific examples of EGFR and TP53 (C11-C14) provide concrete validation of the enrichment patterns with quantitative data. The phylostratigraphic assignments are stated as data/knowledge claims. The contrasting pattern for non-recurrent CNAs (C15) and the TNFRSF17 exception (C16-C18) with appropriate citations strengthen the overall finding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C27",
+      "C28"
+    ],
+    "result": "UC and EM genes are preferentially located in focally copy-number altered regions suggesting stronger localized selection, while MM genes are in regions of broad copy-number changes suggesting passenger events.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The chromosomal location analysis (C27-C28) provides mechanistic insight into the selection patterns. The distinction between focal and broad alterations is a standard approach in cancer genomics for distinguishing driver from passenger events. The inference about selection strength is reasonable given the data, though the causal interpretation should be stated more cautiously.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C29",
+      "C30"
+    ],
+    "result": "Disruption of EM genes by genetic changes likely provides selective advantage in tumor development across multiple tumor types, while mutations in MM genes are unlikely to play a significant role in cancer development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These summary claims (C29-C30) are well-supported by the cumulative evidence from enrichment analyses for both CNAs and point mutations. However, the inference of selective advantage is based on recurrence patterns rather than direct functional evidence. The conclusion about MM genes is appropriately cautious ('unlikely') given the depletion data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "In the gene regulatory network (GRN), EM genes are enriched as regulators (56.42% of all regulators, p=6.48\u00d710\u207b\u2076) and particularly as master regulators with high out-degree (65.12% of regulators with out-degree \u226510), indicating key regulatory roles with large pleiotropic effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The GRN analysis provides strong quantitative evidence (C31-C37) with appropriate statistical testing (C34). The definition of master regulators using out-degree \u226510 (upper quantile) is reasonable. The inference about pleiotropic effects (C38) follows logically from the network topology data. The use of PathwayCommons as the GRN source is appropriate and cited.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C39",
+      "C40"
+    ],
+    "result": "The GRN structure differs substantially from general protein-protein interaction networks where UC genes are most connected, suggesting specific evolutionary processes shaped the GRN to give EM genes key regulatory roles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The comparison to PPI networks (C39) with appropriate citations provides important context showing the GRN pattern is not simply due to gene age effects on connectivity. The inference about evolutionary processes (C40) is reasonable but somewhat speculative. The comparison strengthens the claim that the EM enrichment in the GRN is a specific feature of regulatory networks.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "EM genes are the most highly regulated genes in the GRN with an average of 8.76 incoming edges compared to 6.59 for UC and 4.54 for MM genes (p<2.2\u00d710\u207b\u00b9\u2076), indicating that gene regulation in humans is predominantly under control of EM genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The in-degree analysis (C41-C43) with strong statistical significance supports the claim that EM genes are highly regulated. The conclusion about EM control of gene regulation (C45) is supported by both the regulator enrichment (previous result) and high regulation of EM targets. However, 'predominantly' may overstate the case given UC genes also comprise 37.88% of regulators.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "Point mutations preferentially affect regulators (mean fraction 0.20 vs 0.12 for CNAs, p=2.95\u00d710\u207b\u2075), with 54% of top 5% most mutated regulators having point mutations vs 13% CNAs. Conversely, CNAs preferentially affect target genes (87% of top targets with CNAs vs 46% with point mutations).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The differential effects of mutation types on network components (C46-C51) are well-supported by quantitative data and statistical testing. The four-fold difference for regulators and the contrasting pattern for targets provide strong evidence. The summary conclusions (C52-C53) follow logically. The analysis appropriately focuses on recurrent mutations with <25% chromosome coverage to improve resolution.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "EM genes with point mutations have stronger regulatory roles (median out-degree/in-degree ratio 0.83) than UC (0.51) or MM (0.31) genes, while EM genes with CNAs are skewed toward being highly regulated targets (ratio 0.38). Point mutations in EM hub genes create large GRN disruptions, while CNAs in target genes have localized effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The out-degree/in-degree ratio analysis (C54-C57) provides quantitative support for differential roles. The extension to dual-role genes (C58) strengthens the finding. The mechanistic interpretations about disruption scale (C60-C63) are reasonable inferences from network topology, though direct functional validation would strengthen these claims. The complementary mechanisms conclusion (C59) is well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "Regulators were classified by target age: UC-t regulators (mostly UC genes, 50.81%, p=0.021), EM-t regulators (mostly EM genes, 56.68%, p=0.0011), and UC/EM-i regulators at the interface (mostly EM genes, 61.73%, p=0.00022).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The regulator classification scheme (C64-C66) is clearly defined and statistically validated. The enrichment of EM genes in UC/EM-i regulators is particularly notable and statistically significant. This classification provides a framework for understanding how mutations affect different network regions. The methodology is sound and the statistical testing appropriate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "85.71% of regulators with recurrent point mutations are UC/EM-i regulators, compared to only 32.81% for CNA-affected regulators and 32.33% for non-mutated regulators, indicating overrepresentation of point mutations at the UC/EM interface.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The striking enrichment of point mutations in UC/EM-i regulators (C67-C69) with nearly 3-fold difference compared to other categories provides strong evidence for preferential targeting. The interpretation (C70) is well-supported. The analysis appropriately focuses on the top 5% most recurrent mutations to identify consistent patterns across tumor types.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "High-impact mutations (>5% differentially expressed targets) preferentially occur in UC/EM-i regulators (75% vs 43.13% for low-impact, p=0.026), with EM genes representing 67% of high-impact vs 50% of low-impact UC/EM-i regulators. Point-mutated EM regulators are 2\u00d7 more likely to have high impact.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The functional impact analysis (C71-C76) provides important validation that the enrichment patterns have biological consequences. The 5% threshold for high vs low impact is reasonable. The statistical significance (C73) and the 2-fold enrichment (C76) support the conclusion (C77) that mutations in EM regulators at the UC/EM interface have the most substantial effects on gene expression.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "Point mutations in EM regulators are tied to transcriptional disturbances between UC and EM genes, making them potential drivers. Known cancer genes (RB1, PIK3CA, SMAD4, NF1, TP53, TERT, MDM4) are among UC/EM-i regulators, which are involved in signaling pathways (RTK, MAPK, PI3K-Akt) and other processes (mitochondrial biogenesis, lipid metabolism).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The mechanistic interpretation (C78) is supported by the cumulative evidence from enrichment and impact analyses. The identification of known cancer genes (C79) validates the approach. The functional enrichment analysis (C80-C81) provides biological context. However, the causal claim about 'tied with' transcriptional disturbances is an inference rather than directly demonstrated causation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "Point mutations in well-studied UC/EM-i regulators affect pathway expression: p53 affects MAPK, p53 signaling, WNT, apoptosis, cell cycle across 18 tumor types; PTEN affects p53 signaling in 6 types; PIK3CA affects ERBB, MTOR, JAK-STAT, VEGF across 10 types; SMAD4 affects WNT in colon cancer; EP300 affects cell cycle and JAK-STAT in bladder, endometrial, cervical cancers; PIK3R1 affects ERBB, MTOR, JAK-STAT.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The pathway analysis (C82-C87) provides specific examples of functional effects with quantitative data on tumor type prevalence. These examples validate that mutations in UC/EM-i regulators have broad downstream effects. However, the manuscript does not provide details on the statistical methods or thresholds used for pathway enrichment, which limits full evaluation of these claims.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C88",
+      "C89"
+    ],
+    "result": "KEAP1, HNF1A, NFE2L2, and LRRK2 are EM UC/EM-i regulators with mutational frequencies and downstream target effects similar to known cancer genes, though they have implied but not mechanistically established roles in cancer.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The identification of understudied genes (C88) with characteristics similar to known cancer genes is a valuable contribution. The acknowledgment that these genes lack strong mechanistic links (C89) is appropriately cautious. This represents a testable prediction from the evolutionary network framework. However, without specific quantitative comparisons to known cancer genes, the 'similar' claim is somewhat vague.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "CNAs preferentially affect target genes of UC-t (median 0.25) and EM-t (median 0.33) regulators rather than UC/EM-i regulators (median 0.11, p=3.91\u00d710\u207b\u2078 and p=8.42\u00d710\u207b\u00b2\u2077), indicating CNAs do not directly disrupt regulatory links at the UC/EM interface.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The analysis of CNA targets by regulator class (C90-C92) with strong statistical significance supports the conclusion (C93) that CNAs affect different network regions than point mutations. The restriction to samples where regulators are copy-number normal is an appropriate control. This provides strong evidence for complementary mechanisms of network disruption.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "CNAs more strongly influence target gene expression than regulator expression (all tumor types for amplifications, 64.64% for deletions). UC targets show largest expression changes (7.80% up after amp, 7.48% down after del), followed by EM (4.45%, 4.79%) and MM (2.46%, 1.62%), indicating UC and EM targets are more susceptible to CNA effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The differential expression analysis (C94-C99) provides functional validation that CNAs affect targets more than regulators. The gradient by gene age (C97-C99) is interesting and statistically supported. The conclusion (C100) is well-supported. However, the manuscript notes limited overlap between samples with both expression and CNA data, which may affect power for some tumor types.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "Targets of UC-t regulators are more likely to be differentially expressed after CNAs than UC/EM-i targets. EM-t regulator targets respond more to deletions than amplifications (p=0.043), suggesting CNA selection in EM-t targets could directly downregulate EM network regions as an alternative to regulator mutation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The differential response patterns (C101-C102) are supported by statistical testing. The mechanistic interpretation (C103) is a reasonable inference but represents a hypothesis rather than directly demonstrated mechanism. The asymmetry between deletions and amplifications for EM-t targets is interesting and suggests specific selective pressures.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C104",
+      "C105"
+    ],
+    "result": "CNAs of UC/EM-i regulator targets change expression much less often regardless of amplification or deletion (p=0.95), suggesting CNAs play a less prominent role in dysregulating UC/EM interface regions than point mutations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The lack of differential expression in UC/EM-i regulator targets after CNAs (C104) with non-significant p-value supports the conclusion (C105) that CNAs and point mutations affect different network regions. This provides strong evidence for the complementary mechanisms model. The contrast with the strong effects on UC-t and EM-t targets strengthens this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C106",
+      "C107",
+      "C108"
+    ],
+    "result": "Target CNA fraction is higher when regulators are copy-number normal (CNN) than when CNA (p=4.10\u00d710\u207b\u00b2\u2079), but only for UC-t and EM-t regulators (p=1.36\u00d710\u207b\u2077 and p=1.11\u00d710\u207b\u2074\u00b2), not UC/EM-i regulators (p=0.79), indicating preferential alteration of targets vs regulators is a mechanism for independent modulation of UC and EM network regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The mutual exclusivity analysis (C106-C107) with strong statistical significance provides evidence for alternative mechanisms of network disruption. The differential pattern by regulator class strengthens the conclusion (C108). This is sophisticated analysis showing that CNAs in regulators and their targets are not independent, suggesting functional redundancy.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "Over two-thirds of UC-t (71.70%) and EM-t (71.30%) regulators have higher target CNA fractions when CNN than when CNA, but only 28.72% of UC/EM-i regulators show this pattern.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The regulator-level analysis (C109-C111) provides additional support for the mutual exclusivity pattern. The high percentages for UC-t and EM-t regulators vs low for UC/EM-i regulators clearly demonstrate differential mechanisms. This result is consistent with and extends the previous mutual exclusivity finding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C112",
+      "C113"
+    ],
+    "result": "CNAs are a widespread mechanism of dysregulation directly modulating expression of UC-t and EM-t regulator targets. The effect of CNAs on the GRN is distinct from point mutation disruption of regulatory links between UC and EM genes, but CNAs are also important drivers of transcriptional disturbances.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This summary conclusion (C112-C113) is well-supported by the cumulative evidence from multiple analyses showing: (1) CNAs preferentially affect targets of UC-t and EM-t regulators, (2) CNAs directly affect target expression, (3) mutual exclusivity with regulator CNAs, and (4) contrast with point mutation effects on UC/EM-i regulators. The complementary mechanisms model is strongly supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C114",
+      "C115",
+      "C116",
+      "C117"
+    ],
+    "result": "Known cancer drivers are enriched in EM genes (57.36%, p=0.0015), with 36.71% being regulators enriched in UC/EM-i regulators (46.88%, p=0.0043), supporting that modulation of regulation between UC and EM genes is a common effect of cancer drivers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The analysis of known cancer genes (C114-C116) provides important validation of the evolutionary network framework. The enrichment in UC/EM-i regulators with statistical significance supports the conclusion (C117). However, the Cancer Census database may have ascertainment bias toward well-studied genes, which could affect this validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C118",
+      "C119",
+      "C120"
+    ],
+    "result": "Multi-region sequencing data shows 90.91% of lung cancer and 70.83% of breast cancer patients have at least one UC/EM-i regulator as a clonally mutated driver, supporting a fundamental role in cancer development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The analysis of clonal drivers from multi-region sequencing (C118-C119) provides strong validation that UC/EM-i regulators are early, trunk mutations rather than late subclonal events. The high prevalence across patients supports the conclusion (C120) about fundamental roles. The use of independent datasets strengthens the findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C121",
+      "C122",
+      "C123",
+      "C124"
+    ],
+    "result": "Cancer cell lines show high dependency on UC-t regulators (96.98% with OR>1) and UC/EM-i regulators (92.86% with OR>1), indicating these are indispensable for proliferation. In contrast, only 0.55% show dependency on EM-t regulators, suggesting EM dysregulation contributes to but is not sufficient for tumorigenesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The CRISPR-Cas9 essentiality screen analysis (C121-C124) provides functional validation that UC/EM-i regulators are critical for cancer cell survival. The high dependency percentages and the contrast with EM-t regulators support the conclusions. However, the interpretation that EM dysregulation is 'not sufficient' (C124) may be overstated - low dependency could also reflect redundancy or context-specificity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129"
+    ],
+    "result": "40 regulators show mutation-associated cell line dependency, with 55% being UC/EM-i regulators. Cell lines are more dependent on regulators when point mutated (80%) or amplified (66.67%), suggesting these mutations are key to proliferation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The mutation-dependency association analysis (C125-C128) identifies specific regulators where mutation status affects essentiality. The enrichment of UC/EM-i regulators (C126) is consistent with the overall framework. The interpretation (C129) is reasonable but should be cautious about causality - increased dependency could reflect adaptation to mutation rather than the mutation being 'key' to proliferation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R29",
+    "claim_ids": [
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134"
+    ],
+    "result": "Drug sensitivity analysis identified 11 significant associations with UC/EM-i regulators, 38 with UC-t, and 23 with EM-t regulators (correlation <-0.25, adj. p<0.05). Expected correlations were found for IGF1R with its inhibitors (Linsitinib, BMS-536924, BMS-754807) and MAPK1 with (5Z)-7-Oxozeaenol, validating the approach.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The drug sensitivity analysis (C130-C132) with appropriate correlation thresholds and statistical correction identifies potential therapeutic vulnerabilities. The validation with expected correlations (C133-C134) strengthens confidence in the approach. However, the relatively small number of UC/EM-i associations compared to UC-t may reflect the smaller number of UC/EM-i regulators or other factors.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R30",
+    "claim_ids": [
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C139",
+      "C140"
+    ],
+    "result": "Unexpected strong correlations were found between ILK dependency and XAV939 (Wnt/\u03b2-catenin inhibitor, -0.30), and between PPRC1 dependency and multiple drugs: temsirolimus (mTOR inhibitor), dactolisib (dual PI3K/mTOR inhibitor), YK-4-279, and docetaxel.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The identification of unexpected drug-regulator associations (C135-C140) represents potentially novel therapeutic insights. The ILK-XAV939 correlation (C135-C136) is supported by biological rationale. The PPRC1 associations (C137-C140) are particularly interesting given PPRC1's role in mitochondrial biogenesis. However, these are correlational findings that would require experimental validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R31",
+    "claim_ids": [
+      "C141",
+      "C142",
+      "C143",
+      "C144",
+      "C145",
+      "C146"
+    ],
+    "result": "PPRC1 is an activator of mitochondrial biogenesis, a process regulated by mTOR. PPRC1 dependency correlations with drug sensitivity were particularly strong (<-0.25) in specific tissue types: liver, lung, stomach for temsirolimus; lung, stomach for docetaxel and dactolisib; breast for YK-4-279.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The biological context for PPRC1 (C141-C142) with appropriate citations supports the mechanistic rationale for the drug associations. The tissue-specific patterns (C143-C146) suggest context-dependent vulnerabilities. However, the manuscript should be more cautious about inferring causality from correlations - experimental validation would be needed to confirm these as therapeutic opportunities.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R32",
+    "claim_ids": [
+      "C147",
+      "C148"
+    ],
+    "result": "Point mutations and CNAs play complementary roles in transcriptional dysregulation by affecting distinct GRN regions, supporting loss of communication between core biological processes from unicellular life and regulatory controls from metazoan evolution. Genes central to the GRN that arose in early metazoans were most often recurrently affected across tumor types.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This overarching conclusion (C147-C148) is well-supported by the cumulative evidence from multiple complementary analyses: enrichment patterns, network topology, functional impacts, mutual exclusivity, and functional validation. The complementary mechanisms model elegantly explains how diverse genetic alterations converge on common transcriptional states. This represents a major conceptual advance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R33",
+    "claim_ids": [
+      "C149",
+      "C150",
+      "C151",
+      "C152"
+    ],
+    "result": "Gatekeeper cancer drivers (regulating cell cooperation and tissue integrity) emerged at similar evolutionary time to early metazoans, while caretaker genes (ensuring genome stability) emerged at onset of unicellular life. Recurrent mutations mostly affect gatekeeper genes regulating multicellularity, with limited disruption of caretaker activities.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The contextualization with gatekeeper vs caretaker genes (C149-C150) appropriately cites prior work. The interpretation (C151-C152) is consistent with the enrichment of mutations in EM genes. However, this represents an inference based on gene age patterns rather than direct functional classification of the mutated genes as gatekeepers vs caretakers.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R34",
+    "claim_ids": [
+      "C153",
+      "C154"
+    ],
+    "result": "The key positioning of early metazoan regulator genes at the interface of unicellular and multicellular network regions makes cells susceptible to widespread dysregulation upon their disruption, as alteration would uncouple regulatory controls required for multicellularity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This mechanistic interpretation (C153-C154) is supported by the network topology data and functional impact analyses. The citation to Greaves 2015 provides theoretical context. However, this represents a model/hypothesis about mechanism rather than directly demonstrated causality. The 'susceptible' and 'would uncouple' language appropriately indicates this is an inference.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R35",
+    "claim_ids": [
+      "C155",
+      "C156",
+      "C157",
+      "C158"
+    ],
+    "result": "LRRK2 encodes dardarin protein central to Parkinson's disease, with inhibitors DNL201 and DNL151 in clinical trials for neurodegenerative diseases. YK-4-279, a binding inhibitor of oncogenic fusion proteins in Ewing's sarcoma with encouraging pre-clinical efficacy, could be broadly effective for tumors with aberrant mitochondrial activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The discussion of LRRK2 (C155-C156) and YK-4-279 (C157-C158) with appropriate citations illustrates potential for drug repurposing. The inference about broader efficacy of YK-4-279 (C158) is based on the PPRC1 dependency correlations and is appropriately stated as a possibility ('could be'). These represent testable hypotheses for future work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R36",
+    "claim_ids": [
+      "C159",
+      "C160",
+      "C161"
+    ],
+    "result": "The frequency and types of mutations in cancer genes are strongly influenced by evolutionary age and regulatory functions. This explains how limited genetic alterations promote rapid tumor development through loss of multicellular features and provides a framework for identifying driver mutations and prioritizing targeted therapies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These concluding claims (C159-C161) appropriately summarize the major findings and their implications. The comprehensive evidence from multiple analyses supports the influence of evolutionary age and regulatory function. The framework's utility is demonstrated through identification of understudied genes and drug associations. The claims appropriately acknowledge this is a framework that will become more informative with additional data.",
+    "result_type": "MAJOR"
+  }
+]

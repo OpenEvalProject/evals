@@ -1,0 +1,1036 @@
+{
+  "submission": {
+    "id": "ab675d11-f3e4-4e46-b027-a0e67992cdaa",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T08:03:27.449278Z",
+    "updated_at": "2025-12-02T08:03:27.449278Z"
+  },
+  "content": [
+    {
+      "id": "782be8bc-1e4b-42e6-8cfc-c0130faef6a5",
+      "submission_id": "ab675d11-f3e4-4e46-b027-a0e67992cdaa",
+      "content_type": "manuscript",
+      "content_text": "# Discovering and deciphering relationships across disparate data modalities\n\n## Authors\n\n- Joshua T Vogelstein<sup>1</sup> ([ORCID: 0000-0003-2487-6237](https://orcid.org/0000-0003-2487-6237)) \u2020\n- Eric W Bridgeford<sup>1</sup>\n- Qing Wang<sup>1</sup>\n- Carey E Priebe<sup>1</sup>\n- Mauro Maggioni<sup>1</sup>\n- Cencheng Shen<sup>3</sup> ([ORCID: 0000-0003-1030-1432](https://orcid.org/0000-0003-1030-1432))\n\n### Affiliations\n\n1. Johns Hopkins University Baltimore United States\n2. Child Mind Institute New York United States\n3. University of Delaware Delaware United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nUnderstanding the relationships between different properties of data, such as whether a genome or connectome has information about disease status, is increasingly important. While existing approaches can test whether two properties are related, they may require unfeasibly large sample sizes and often are not interpretable. Our approach, \u2018Multiscale Graph Correlation\u2019 (MGC), is a dependence test that juxtaposes disparate data science techniques, including k-nearest neighbors, kernel methods, and multiscale analysis. Other methods may require double or triple the number of samples to achieve the same statistical power as MGC in a benchmark suite including high-dimensional and nonlinear relationships, with dimensionality ranging from 1 to 1000. Moreover, MGC uniquely characterizes the latent geometry underlying the relationship, while maintaining computational efficiency. In real data, including brain imaging and cancer genetics, MGC detects the presence of a dependency and provides guidance for the next experiments to conduct.\n\n## Introduction\n\nIdentifying the existence of a relationship between a pair of properties or modalities is the critical initial step in data science investigations. Only if there is a statistically significant relationship does it make sense to try to decipher the nature of the relationship. Discovering and deciphering relationships is fundamental, for example, in high-throughput screening (Zhang et al., 1999), precision medicine (Prescott, 2013), machine learning (Hastie et al., 2001), and causal analyses (Pearl, 2000). One of the first approaches for determining whether two properties are related to\u2014or statistically dependent on\u2014each other is Pearson\u2019s Product-Moment Correlation (published in 1895; Pearson, 1895). This seminal paper prompted the development of entirely new ways of thinking about and quantifying relationships (see Reimherr and Nicolae, 2013\u00a0and Josse and Holmes, 2013 for recent reviews and discussion). Modern datasets, however, present challenges for dependence-testing that were not addressed in Pearson\u2019s era. First, we now desire methods that can correctly detect any kind of dependence between all kinds of data, including high-dimensional data (such as \u2019omics), structured data (such as images or networks), with nonlinear relationships (such as oscillators), even with very small sample sizes as is common in modern biomedical science. Second, we desire methods that are interpretable by providing insight into how or why they discovered the presence of a statistically significant relationship. Such insight can be a crucial component of designing the next computational or physical experiment.\n\nWhile many statistical and machine learning approaches have been developed over the last 120 years to combat aspects of the first issue\u2014detecting dependencies\u2014no approach satisfactorily addressed the challenges across all data types, relationships, and dimensionalities.\u00a0Hoeffding and Renyi proposed non-parametric tests to address nonlinear but univariate relationships (Hoeffding, 1948; R\u00e9nyi, 1959). In the 1970s and 1980s, nearest neighbor style approaches were popularized (Friedman and Rafsky, 1983; Schilling, 1986), but they were sensitive to algorithm parameters resulting in poor empirical performance. \u2018Energy statistics\u2019, and in particular the distance correlation test (Dcorr), was recently shown to be able to detect any dependency with sufficient observations, at arbitrary dimensions, and structured data under a proper distance metric (Sz\u00e9kely et al., 2007; Sz\u00e9kely and Rizzo, 2009; Szekely and Rizzo, 2013; Lyons, 2013). Another set of methods, referred to a \u2018kernel mean embedding\u2019 approaches, including the Hilbert Schmidt Independence Criterion (Hsic) (Gretton and Gyorfi, 2010; Muandet et al., 2017), have the same theoretical guarantees, which is shown to be a kernel version of the energy statistics (Sejdinovic et al., 2013; Shen and Vogelstein, 2018). The energy statistics can perform very well with a relatively small sample size on high-dimensional linear data, whereas the kernel methods and another test (Heller, Heller, and Gorfine\u2019s test, Hhg) (Heller et al., 2013) perform well on low-dimensional nonlinear data. But no test performs particularly well on high-dimensional nonlinear data with typical sample sizes, which characterizes a large fraction of real data challenges in the current big data era.\n\nMoreover, to our knowledge, existing dependency tests do not attempt to further characterize the dependency structure. On the other hand, much effort has been devoted to characterizing \u2018point cloud data\u2019, that is, summarizing certain global properties in unsupervised settings (for example, having genomics data, but no disease data). Classic examples of such approaches include Fourier (Bracewell and Bracewell, 1986) and wavelet analysis (Daubechies, 1992). More recently, topological and geometric data analysis compute properties of graphs, or even higher order simplices (Edelsbrunner and Harer, 2009). Such methods build multiscale characterization of the samples, much like recent developments in harmonic analysis (Coifman and Maggioni, 2006; Allard et al., 2012). However, these tools typically lack statistical guarantees under noisy observations and are often computationally burdensome.\n\nWe surmised that both (i) empirical performance in all dependency structures, in particular high-dimensional, nonlinear, low-sample size settings, and (ii) providing insight into the discovery process, can be addressed via extending existing dependence tests to be adaptive to the data (Zhang et al., 2012). Existing tests rely on a fixed a\u00a0priori selection of an algorithmic parameter, such as the kernel bandwidth (Gretton et al., 2006), intrinsic dimension (Allard et al., 2012), and/or local scale (Friedman and Rafsky, 1983; Schilling, 1986). Indeed, the Achilles Heel of manifold learning has been the requirement to manually choose these parameters (Levina and Bickel, 2004). Post-hoc cross-validation is often used to make these methods effectively adaptive, but doing so adds an undesirable computational burden and may weaken or destroy any statistical guarantees. There is therefore a need for statistically valid and computationally efficient adaptive methods.\n\nTo illustrate the importance of adapting to different kinds of relationships, consider a simple illustrative example: investigate the relationship between cloud density and grass wetness. If this relationship were approximately linear, the data might look like those in Figure 1A (top). On the other hand, if the relationship were nonlinear\u2014such as a spiral\u2014it might look like those in Figure 1A (bottom). Although the relationship between clouds and grass is unlikely to be spiral, spiral relationships are prevalent in nature and mathematics (for example, shells, hurricanes, and galaxies), and are canonical in evaluations of manifold learning techniques (Lee and Verleysen, 2007), thereby motivating its use here.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/41690/elife-41690-fig1-v2.jpg)\n\n**Figure 1.:** Illustration of Multiscale Graph Correlation (Mgc) on simulated cloud density ($x_{i}$) and grass wetness ($y_{i}$).We present two different relationships: linear (top) and nonlinear spiral (bottom; see Materials and methods for simulation details). (A) Scatterplots of the raw data using $50$ pairs of samples for each scenario. Samples $1$, $2$, and $3$ (black) are highlighted; arrows show $x$ distances between these pairs of points while their $y$ distances are almost 0. (B) Scatterplots of all pairs of distances comparing $x$ and $y$ distances. Distances are linearly correlated in the linear relationship, whereas they are not in the spiral relationship. Dcorr uses all distances (gray dots) to compute its test statistic and p-value, whereas Mgc chooses the local scale and then uses only the local distances (green dots). (C) Heatmaps characterizing the strength of the generalized correlation at all possible scales (ranging from $2$ to $n$ for both $x$ and $y$). For the linear relationship, the global scale is optimal, which is the scale that Mgc selects and results in a p-value identical to Dcorr. For the nonlinear relationship, the optimal scale is local in both $x$ and $y$, so Mgc achieves a far larger test statistic, and a correspondingly smaller and significant p-value. Thus, Mgc uniquely detects dependence and characterizes the geometry in both relationships.\n\nUnder the linear relationship (top panels), when a pair of observations are close to each other in cloud density, they also tend to be close to each other in grass wetness (for example, observations 1 and 2 highlighted in black in Figure 1A, and distances between them in Figure 1B). Similarly, when a pair of observations are far from each other in cloud density, they also tend to be far from each other in grass wetness (see for example, distances between observations 2 and 3). On the other hand, consider the nonlinear (spiral) relationship (bottom panels). Here, when a pair of observations are close to each other in cloud density, they also tend to be close to each other in grass wetness (see points 1 and 2 again). However, the same is not true for large distances (see points 2 and 3).\u00a0Thus, in the linear relationship, the distance between every pair of points is informative with respect to the relationship, while under the nonlinear relationship, only a subset of the distances are.\n\nFor this reason, we juxtapose nearest neighbor mechanism with distance methods. Specifically, for each point, we find its $k$-nearest neighbors for one property (e.g. cloud density), and its $l$-nearest neighbors for the other property (e.g. grass wetness); we call the pair $(k,l)$ the \u2018scale\u2019. A priori, however, we do not know which scales will be most informative. We compute all distance pairs, then efficiently compute the distance correlations for all scales. The local correlations (Figure 1C, described in detail below) illustrate which scales are relatively informative about the relationship. The key, therefore, to successfully discover and decipher relationships between disparate data modalities is to adaptively determine which scales are the most informative, and the geometric implication for the most informative scales. Doing so not only provides an estimate of whether the modalities are related, but also provides insight into how the determination was made. This is especially important in high-dimensional data, where simple visualizations do not reveal relationships to the unaided human eye.\n\nOur method, \u2018Multiscale Graph Correlation\u2019 (Mgc, pronounced \u2018magic\u2019), generalized and extends previously proposed pairwise comparison-based approaches by adaptively estimating the informative scales for any relationship \u2014 linear or nonlinear, low-dimensional or high-dimensional, unstructured or structured\u2014in a computationally efficient and statistically valid and consistent fashion. This adaptive nature of Mgc effectively guarantees an improved statistical performance. Moreover, the dependency strength across all scales is informative about the structure of a statistical relationship, therefore providing further guidance for subsequent experimental or analytical steps. Mgc is thus a hypothesis-testing and insight-providing approach that builds on recent developments in manifold and kernel learning, with complementary developments in nearest-neighbor search, and multiscale analyses.\n\n### The multiscale graph correlation procedure\n\nMgc is a multi-step procedure to discover and decipher dependencies across disparate data modalities or properties. Given $n$ samples of two different properties, proceed as follows (see Materials and methods and (Shen et al., 2018) for details):\n\nComputing all local correlations, the test statistic, and the p-value requires $O(n^{2}log\u2061n)$ time, which is about the same running time complexity as other methods (Shen et al., 2018).\n\n## Results\n\n### Mgc typically requires substantially fewer samples to achieve the same power across all dependencies and dimensions\n\nWhen, and to what extent, does Mgc outperform other approaches, and when does it not? To address this question, we formally pose the following hypothesis test (see Materials and methods for details):\n\n$$\nH_{0}:XandYare\u00a0independentH_{A}:XandYare not independent.\n$$\n\nThe standard criterion for evaluating statistical tests is the testing power, which equals the probability that a test correctly rejects the null hypothesis at a given type one error level, that\u00a0is power\u00a0=\u00a0Prob($H_{0}$ is rejected $|H_{0}$ is false). The higher the testing power, the better the test procedure. A consistent test has power converging to $1$ under dependence, and a valid test controls the type one error level under independence. In a complementary manuscript (Shen et al., 2018), we established the theoretical properties of Mgc, proving its validity and universal consistency for dependence testing against all distributions of finite second moments.\n\nHere, we address the empirical performance of Mgc as compared with multiple popular tests: (i) Dcorr, a popular approach from the statistics community (Sz\u00e9kely et al., 2007; Sz\u00e9kely and Rizzo, 2009), (ii) Mcorr, a modified version of Dcorr designed to be unbiased for sample data (Szekely and Rizzo, 2013), (iii) Hhg, a distance-based test that is very powerful for detecting low-dimensional nonlinear relationships (Heller et al., 2013). (iv) Hsic, a kernel dependency measure (Gretton and Gyorfi, 2010) formulated in the same way as Dcorr except operating on kernels, (v) Mantel, which is historically widely used in biology and ecology (Mantel, 1967). (vi) RV coefficient (Pearson, 1895; Josse and Holmes, 2013), which is a multivariate generalization of Pearson\u2019s product moment correlation whose test statistic is the sum of the trace-norm of the cross-covariance matrix, and (vii) the Cca method, which is the largest (in magnitude) singular value of the cross-covariance matrix, and can be viewed as a different generalization of Pearson in high-dimensions that is more appropriate for sparse settings (Hotelling, 1936; Witten et al., 2009; Witten and Tibshirani, 2011). Note that while we focus on high-dimensional settings, Appendix\u00a01 shows further results in one-dimensional settings, also comparing to a number of tests that are limited to one dimension, including: (viii) Pearson\u2019s product moment correlation, (ix) Spearman\u2019s rank correlation (Spearman, 1904), (x) Kendall\u2019s tau correlation (Kendall, 1970), and (xi) Mic (Reshef et al., 2011).\u00a0Under the regularity condition that the data distribution has finite second moment, the first four tests are universally consistent, whereas the other tests are not.\n\nWe generate an extensive benchmark suite of 20 relationships, including different polynomial (linear, quadratic, cubic), trigonometric (sinusoidal, circular, ellipsoidal, spiral), geometric (square, diamond, W-shape), and other functions. This suite includes and extends the simulated settings from previous dependence testing work (Sz\u00e9kely et al., 2007; Simon and Tibshirani, 2012; Gorfine et al., 2012; Heller et al., 2013; Szekely and Rizzo, 2013). For many of them, we introduce high-dimensional variants, to more extensively evaluate the methods; function details are in Materials and methods. The visualization of one-dimensional noise-free (black) and noisy (gray) samples is shown in Figure 2\u2014figure supplement 1. For each relationship, we compute the power of each method relative to Mgc for ~20 different dimensionalities, ranging from 1 up to 10, 20, 40, 100, or 1000. The high-dimensional relationships are more challenging because (1) they cannot be easily visualized and (2) each dimension is designed to have less and less signal, so there are many noisy dimensions. Figure 2 shows that Mgc achieves the highest (or close to the highest) power given 100 samples for each relationship and dimensionality. Figure 2\u2014figure supplement 2 shows the same advantage in one-dimension with increasing sample size.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/41690/elife-41690-fig2-v2.jpg)\n\n**Figure 2.:** Each panel shows the testing power of other methods relative to the power of Mgc (e.g. power of Mcorr minus the power of Mgc) at significance level $\\alpha=0.05$ versus dimensionality for $n=100$. Any line below zero at any point indicates that that method\u2019s power is less than Mgc\u2019s power for the specified setting and dimensionality. Mgc achieves empirically better (or similar) power than all other methods in almost all relationships and all dimensions. For the independent relationship (#20), all methods yield power $0.05$ as they should. Note that Mgc is always plotted \u2018on top\u2019 of the other methods, therefore, some lines are obscured.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/41690/elife-41690-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** Visualization of the $20$ dependencies at $p=q=1$.For each, $n=100$ points are sampled with noise ($\u03ba=1$) to show the actual sample data used for one-dimensional relationships (gray dots). For comparison purposes, $n=1000$ points are sampled without noise ($\u03ba=0$) to highlight each underlying dependency (black dots). Note that only black points are plotted for type 19 and 20, as they do not have the noise parameter $\u03ba$.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/41690/elife-41690-fig2-figsupp2-v2.jpg)\n\n**Figure 2\u2014figure supplement 2.:** Mgc empirically achieves similar or better power than the previous state-of-the-art approaches on most problems. Note that Mic is included in 1D case; RV and Cca both equal Pearson in 1D; Kendall and Spearman are too similar to Pearson in power and thus omitted in plotting.\n\n![Figure 2\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/41690/elife-41690-fig2-figsupp3-v2.jpg)\n\n**Figure 2\u2014figure supplement 3.:** The default Mgc builds upon Mcorr throughout the paper, and we further consider Mgc on Mantel to illustrate the generalization. The magenta line shows the power difference between Mcorr and Mgc , and the cyan line shows the power difference between Mantel and the Mgc version of Mantel. Indeed, Mgc is able to improve the global counterpart in testing power under nonlinear dependencies, and maintains similar power under linear and independent dependencies.\n\n![Figure 2\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/41690/elife-41690-fig2-figsupp4-v2.jpg)\n\nMoreover, for each relationship and each method we compute the required sample size to achieve power 85% at error level 0.05, and summarize the median size for monotone relationships (type 1\u20135) and non-monotone relationships (type 6\u201319) in Table 1. Other methods typically require double or triple the number of samples as Mgc to achieve the same power. More specifically, traditional correlation methods (Pearson, RV, Cca, Spearman, Kendall) always perform the best in monotonic simulations, distance-based methods including Mcorr, Dcorr, Mgc, Hhg and Hsic are slightly worse, while Mic and Mantel are the worst. Mgc\u2019s performance is equal to linear methods on monotonic relationships. For non-monotonic relationships, traditional correlations fail to detect the existence of dependencies, Dcorr, Mcorr, and Mic, do reasonably well, but Hhg and Mgc require the fewest samples. In the high-dimensional non-monotonic relationships that motivated this work, and are common in biomedicine, Mgc significantly outperforms other methods.\u00a0The second best test that is universally consistent (Hhg) requires nearly double as many samples as Mgc, demonstrating that Mgc could half the time and cost of experiments designed to discover relationships at a given effect size.\n\nMgc extends previously proposed global methods, such as Mantel and Dcorr . The above experiments extended Mcorr , because Mcorr is universally consistent and an unbiased version of Dcorr (Szekely and Rizzo, 2013). Figure 2\u2014figure supplement 3 directly compares multiscale generalizations of Mantel and Mcorr as dimension increases, demonstrating that empirically, Mgc nearly dominates its global variant for essen- tially all dimensions and simulation settings considered here. Figure 2\u2014figure supplement 4 shows a similar result for one-dimensional settings while varying sample size. Thus, not only does Mgc empirically nearly dominate existing tests, it is a framework that one can apply to future tests to further improve their performance.\n\n**Table 1.**\n The median sample size for each method to achieve power 85% at type one error level 0.05, grouped into monotone (type 1\u20135) and non-monotone relationships (type 6\u201319) for both one- and ten-dimensional settings, normalized by the number of samples required by Mgc.In other words, a 2.0 indicates that the method requires double the sample size to achieve 85% power relative to Mgc. Pearson, Rv, and Cca all achieve the same performance, as do Spearman and Kendall. Mgc requires the fewest number of samples in all settings, and for high-dimensional non-monotonic relationships, all other methods require about double or triple the number of samples Mgc requires.Table 1\u2014source data 1.Testing power sample size data in one dimension.Table 1\u2014source data 2.Testing power sample size data in high-dimensions.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Dimensionality</th>\n      <th colspan=\"3\">One-Dimensional</th>\n      <th colspan=\"3\">Ten-Dimensional</th>\n    </tr>\n    <tr>\n      <th>Dependency type</th>\n      <th>Monotone</th>\n      <th>Non-Mono</th>\n      <th>Average</th>\n      <th>Monotone</th>\n      <th>Non-Mono</th>\n      <th>Average</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>1</td>\n      <td>1</td>\n      <td>1</td>\n      <td>1</td>\n      <td>1</td>\n      <td>1</td>\n      <td>Mgc</td>\n    </tr>\n    <tr>\n      <td>1</td>\n      <td>2.6</td>\n      <td>2.2</td>\n      <td>1</td>\n      <td>3.2</td>\n      <td>2.6</td>\n      <td>Dcorr</td>\n    </tr>\n    <tr>\n      <td>1</td>\n      <td>2.8</td>\n      <td>2.4</td>\n      <td>1</td>\n      <td>3.1</td>\n      <td>2.6</td>\n      <td>Mcorr</td>\n    </tr>\n    <tr>\n      <td>1.4</td>\n      <td>1</td>\n      <td>1.1</td>\n      <td>1.7</td>\n      <td>1.9</td>\n      <td>1.8</td>\n      <td>Hhg</td>\n    </tr>\n    <tr>\n      <td>1.4</td>\n      <td>1.1</td>\n      <td>1.2</td>\n      <td>1.7</td>\n      <td>2.4</td>\n      <td>2.2</td>\n      <td>Hsic</td>\n    </tr>\n    <tr>\n      <td>1.4</td>\n      <td>1.8</td>\n      <td>1.7</td>\n      <td>3</td>\n      <td>1.6</td>\n      <td>1.9</td>\n      <td>Mantel</td>\n    </tr>\n    <tr>\n      <td>1</td>\n      <td>&gt;10</td>\n      <td>&gt;10</td>\n      <td>0.8</td>\n      <td>&gt;10</td>\n      <td>&gt;10</td>\n      <td>Pearson / Rv / Cca</td>\n    </tr>\n    <tr>\n      <td>1</td>\n      <td>&gt;10</td>\n      <td>&gt;10</td>\n      <td>n/a</td>\n      <td>n/a</td>\n      <td>n/a</td>\n      <td>Spearman / Kendall</td>\n    </tr>\n    <tr>\n      <td>2.4</td>\n      <td>2</td>\n      <td>2.1</td>\n      <td>n/a</td>\n      <td>n/a</td>\n      <td>n/a</td>\n      <td>Mic</td>\n    </tr>\n  </tbody>\n</table>\n\n### Mgc deciphers latent dependence structure\n\nBeyond simply testing the existence of a relationship, the next goal is often to decipher the nature or structure of the relationship, thereby providing insight and guiding future experiments. A single scalar quantity (such as effect size) is inadequate given the vastness and complexities of possible relationships. Existing methods would require a secondary procedure to characterize the relationship, which introduces complicated \u2018post selection\u2019 statistical quandaries that remain mostly unresolved (Berk et al., 2013). Instead, Mgc provides a simple, intuitive, and nonparametric (and therefore infinitely flexible) 'map\u2019 of how it discovered the relationship. As described below, this map not only provides interpretability for how Mgc detected a dependence, it also partially characterize the geometry of the investigated relationship.\n\nThe Mgc-Map shows local correlation as a function of the scales of the two properties. More concretely, it is the matrix of $c^{kl}$\u2019s, as defined above. Thus, the Mgc-Map is an n-by-n matrix which encodes the strength of dependence for each possible scale.\u00a0Figure 3 provides the Mgc-Map for all 20 different one-dimensional relationships; the optimal scale to achieve $t^_{*}$ is marked with a green dot. For the monotonic dependencies (1-5), the optimal scale is always the largest scale, that is the global one. For all non-monotonic dependencies (6-19), Mgc chooses smaller scales. Thus, a global optimal scale implies a close-to-linear dependency, otherwise the dependency is strongly nonlinear. In fact, this empirical observation led to the following theorem (which is proved in Materials and methods):\n\nTheorem 1. When $(X,Y)$ are linearly related (meaning that $Y$ can be constructed from $X$ by rotation, scaling, translation, and/or reflection), the optimal scale of Mgc equals the global scale. Conversely, a local optimal scale implies a nonlinear relationship.\n\nThus, the Mgc-Map explains how Mgc discovers relationships, specifically, which scale has the most informative pairwise comparisons, and how that relates to the geometry of the relationship.\u00a0Note that Mgc provides the geometric characterization \u2018for free\u2019, meaning that no separate procedure is required; therefore, Mgc provides both a valid test and information about the geometric relationship.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/41690/elife-41690-fig3-v2.jpg)\n\n**Figure 3.:** For each of the 20 panels, the abscissa and ordinate denote the number of neighbors for $X$ and $Y$, respectively, and the color denotes the magnitude of each local correlation. For each simulation, the sample size is 60, and both $X$ and $Y$ are one-dimensional. Each dependency has a different Mgc-Map characterizing the geometry of dependence, and the optimal scale is shown in green. In linear or close-to-linear relationships (first row), the optimal scale is global, that is the green dot is in the top right corner. Otherwise the optimal scale is non-global, which holds for the remaining dependencies. Moreover, similar dependencies often share similar Mgc-Maps and similar optimal scales, such as (10) logarithmic and (11) fourth root, the trigonometric functions in (12) and (13 , 16) circle and (17) ellipse, and (14) square and (18) diamond. The Mgc-Maps for high-dimensional simulations are provided in Figure 3\u2014figure supplement 1.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/41690/elife-41690-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** For each simulation, the sample size is 100, and the dimension is selected as the dimension such that Mgc has a testing power above 0.5. It has similar behavior and interpretation as the one-dimensional power maps in Figure 3, that is\u00a0the linear relationships optimal scales are global, and similar dependencies share similar Mgc-Maps.\n\nMoreover, similar dependencies have similar Mgc-Maps and often similar optimal scales. For example, logarithmic (10) and fourth root (11), although very different functions analytically, are geometrically similar, and yield very similar Mgc-Maps. Similarly, (12) and (13) are trigonometric functions, and they share a narrow range of significant local scales. Both circle (16) and ellipse (17), as well as square (14) and diamond (18), are closely related geometrically and also have similar Mgc-Maps. This indicates that the Mgc-Map partially characterizes the geometry of these relationships, differentiating different dependence structures and assisting subsequent analysis steps. Moreover, in Shen and Vogelstein, 2018, we proved that the sample Mgc-Map (which Mgc estimates) converges to the true Mgc-Map provided by the underlying joint distribution of the data.\u00a0In other words, each relationship has a specific map that characterizes it based on its joint distribution, and Mgc is able to accurately estimate it via sample observations. The existence of a population level characterization of the joint distribution strongly differentiates Mgc from previously proposed multi-scale geometric or topological characterizations of data, such as persistence diagrams (Edelsbrunner and Harer, 2009).\n\n#### Mgc is computationally efficient\n\nMgc does not incur large computational costs and has a similar complexity as existing methods. Though a na\u00efve implementation of Mgc requires $\ud835\udcaa(n^{4})$ operations, we devised a nested implementation that requires only $\ud835\udcaa(n^{2}log\u2061n)$ operations. Moreover, obtaining the Mgc-Map costs no additional computation, whereas other methods would require running a secondary computational step to decipher geometric properties of the relationship. Mgc can also trivially be parallelized, reducing computation to $\ud835\udcaa(n^{2}log\u2061n/T)$, where $T$ is the number of cores (see Algorithm C1 for details). Since $T$ is often larger than $log\u2061n$, in practice, Mgc can be $\ud835\udcaa(n^{2})$, meaning only a constant factor slower than Dcorr and Hsic, which is illustrated in Figure 6 of Shen and Vogelstein, 2018. For example, at sample size $n=5000$ and dimension $p=1$, on a typical laptop computer, Dcorr requires around 0.5 s to compute the test statistic, whereas Mgc requires no more than $5$ s. But the cost and time to obtain 2.5\u00d7 more data (so Dcorr has same average power as Mgc) typically far exceeds a few seconds. In comparison, the cost to compute a persistence diagram is typically $\ud835\udcaa(n^{3})$, which is orders of magnitude slower when $n>10$. The running time of each method on the real data experiments are reported in Materials and methods.\n\n### Mgc uniquely reveals relationships in real data\n\nGeometric intuition, numerical simulations, and theory all provide evidence that Mgc will be useful for real data discoveries. Nonetheless, real data applications provide another necessary ingredient to justify its use in practice. Below, we describe several real data applications where we have used Mgc to understand relationships in data that other methods were unable to provide.\n\n#### Mgc discovers the relationships between brain and mental properties\n\nThe human psyche is of course dependent on brain activity and structure. Previous work has studied two particular aspects of our psyche: personality and creativity, developing quantitative metrics for evaluating them using structured interviews (Costa and McCrae, 1992; Jung et al., 2009). However, the relationship between brain activity and structure, and these aspects of our psyche, remains unclear (DeYoung et al., 2010; Xu and Potenza, 2012; Bj\u00f8rnebekk et al., 2013; Sampaio et al., 2014). For example, prior work did not evaluate the relationship between entire brain connectivity and all five factors of the standard personality model (Costa and McCrae, 1992). We therefore utilized Mgc to investigate published open access data (see Materials and methods for details).\n\nFirst, we analyzed the relationship between resting-state functional magnetic resonance (rs-fMRI) activity and personality (Adelstein et al., 2011). The first row of Table 2 compares the p-value of different methods, and Figure 4A shows the Mgc-Map for the sample data. Mgc is able to yield a significant p-value (<\u00a00.05), whereas all previously proposed global dependence tests under consideration (Mantel, Dcorr, Mcorr, or Hhg) fail to detect dependence at a significance level of 0.05. Moreover, the Mgc-Map provides a characterization of the dependence, for which the optimal scale indicates that the dependency is strongly nonlinear. Interestingly, the Mgc-Map does not look like any of the 20 images from the simulated data, suggesting that the nonlinearity characterizing this dependency is more complex or otherwise different from those we have considered so far.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/41690/elife-41690-fig4-v2.jpg)\n\n**Figure 4.:** (A) The Mgc-Map for brain activity versus personality. Mgc has a large test statistic and a significant p-value at the optimal scale (13,\u00a04), while the global counterpart is non-significant. That the optimal scale is non-global implies a strongly nonlinear relationship. (B) The Mgc-Map for brain connectivity versus creativity. The image is similar to that of a linear relationship, and the optimal scale equals the global scale, thus both Mgc and Mcorr are significant in this case. (C) For each peptide, the x-axis shows the p-value for testing dependence between pancreatic and healthy subjects by Mgc, and the y-axis shows the p-value for testing dependence between pancreatic and all other subjects by Mgc. At critical level $0.05$, Mgc identifies a unique protein after multiple testing adjustment. (D) The true and false positive counts using a k-nearest neighbor (choosing the best $k\\in[1,10]$) leave-one-out classification using only the significant peptides identified by each testing method. The peptide identified by Mgc achieves the best true and false positive rates, as compared to the peptides identified by Hsic or Hhg.\n\n**Table 2.**\n The p-values for brain imaging vs mental properties.Mgc always uncovers the existence of significant relationships and discovers the underlying optimal scales. Bold indicates significant p-value per dataset.Table 2\u2014source data 1.p-value data for activity vs personality.Table 2\u2014source data 2.p-value data for connetivity vs creativity.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Testing Pairs/Methods</th>\n      <th>Mgc</th>\n      <th>Dcorr</th>\n      <th>Mcorr</th>\n      <th>Hhg</th>\n      <th>Hsic</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Activity vs Personality</td>\n      <td>0.043</td>\n      <td>0.667</td>\n      <td>0.441</td>\n      <td>0.059</td>\n      <td>0.124</td>\n    </tr>\n    <tr>\n      <td>Connectivity vs Creativity</td>\n      <td>0.011</td>\n      <td>0.010</td>\n      <td>0.011</td>\n      <td>0.031</td>\n      <td>0.092</td>\n    </tr>\n  </tbody>\n</table>\n\nSecond, we investigated the relationship between diffusion MRI derived connectivity and creativity (Jung et al., 2009). The second row of Table 2 shows that Mgc is able to ascertain a dependency between the whole brain network and the subject\u2019s creativity. The Mgc-Map in Figure 4B closely resembles a linear relationship where the optimal scale is global. The close-to-linear relationship is also supported from the p-value table as all methods except Hsic are able to detect significant dependency, which suggests that there is relatively little to gain by pursuing nonlinear regression techniques, potentially saving valuable research time by avoiding tackling an unnecessary problem. The test statistic for both Mgc and Mcorr equal 0.04, which is quite close to zero despite a significant p-value, implying a relatively weak and noisy relationship. A prediction of creativity via linear regression turns out to be non-significant, which implies that the sample size is too low to obtain useful predictive accuracy (not shown), indicating that more data are required for single subject predictions. If one had first directly estimated the regression function, obtaining a null result, it would remain unclear whether a relationship existed. This experiment demonstrates that for high-dimensional and potentially structured data, Mgc is able to reveal dependency with relatively small sample size while parametric techniques and directly estimating regression functions can often be ineffective.\n\nThe performance in the real data closely matches the simulations results: the first dataset exhibits a strongly nonlinear relationship, for which Mgc has the lowest p-value, followed by Hhg and Hsic and then all other methods; the second dataset exhibits a close-to-linear relationship, for which global methods perform the best while Hhg and Hsic are trailing. Moreover, Mgc detected a complex nonlinear relationship for brain activity versus personality, and a nearly linear but noisy relationship for brain network versus creativity, the only method able to make either of those claims. In a separate experiment, we assessed the frequency with which Mgc obtained false positive results using brain activity data, based on experiments from Eklund et al. (2012); Eklund et al. (2016). Appendix 1\u2014figure 1 shows that Mgc achieves a false positive rate of 5% when using a significance level of 0.05, implying that it correctly controls for false positives, unlike typical parametric methods on these data.\n\n#### Mgc identifies potential cancer proteomics biomarkers\n\nMgc can also be useful for a completely complementary set of scientific questions: screening proteomics data for biomarkers, often involving the analysis of tens of thousands of proteins, peptides, or transcripts in multiple samples representing a variety of disease types. Determining whether there is a relationship between one or more of these markers and a particular disease state can be challenging but is a necessary first step (Frantzi et al., 2014). We sought to discover new useful protein biomarkers from a quantitative proteomics technique that measures protein and peptide abundance called Selected Reaction Monitoring (SRM) (Wang et al., 2011). Specifically, we were interested in finding biomarkers that were unique to pancreatic cancer, because it is lethal and no clinically useful biomarkers are currently available (Bhat et al., 2012).\n\nThe data consist of proteolytic peptides derived from the blood samples of 95 individuals harboring pancreatic ($n=10$), ovarian ($n=24$), colorectal cancer ($n=28$), and healthy controls ($n=33$). The processed data included 318 peptides derived from 121 proteins. Previously, we used these data and other techniques to find ovarian cancer biomarkers (a much easier task because the dataset has twice as many ovarian patients) and validated them with subsequent experiments (Wang et al., 2017). Therefore, our first step was to check whether Mgc could correctly identify ovarian biomarkers. Indeed, the peptides that have been validated previously are also identified by Mgc. Emboldened, using the same dataset, we applied Mgc to screen for biomarkers unique to pancreatic cancer. To do so, we first screened for a difference between pancreatic cancer and healthy controls, identifying several potential biomarkers. Then, we screened for a difference between pancreatic cancer and all other conditions, to find peptides that differentiate pancreatic cancer from other cancers. Figure 4C shows the p-value of each peptide assigned by Mgc, which reveals one particular protein, neurogranin, that exhibits a strong dependency specifically with pancreatic cancer. Subsequent literature searches reveal that neurogranin is a potentially valuable biomarker for pancreatic cancer because it is exclusively expressed in brain tissue among normal tissues and has not been linked with any other cancer type (Yang et al., 2015; Willemse et al., 2018). In comparison, Hsic identified neurogranin as well, but it also identified another peptide; Hhg identified the same two by Hsic, and a third peptide. A literature evaluation of these additional peptides shows that they are upregulated in other cancers as well and are unlikely to be useful as a pancreatic biomarker (Helfman et al., 2018; Lam et al., 2012). The rest of the global methods did not identify any markers at significance level $0.05$, see Materials and methods for more details and Appendix 1\u2014table 2 for identified peptide information using each method.\n\nSince there is no ground truth yet in this experiment, we further carried out a classification task using the biomarkers identified by the various algorithms, using a k-nearest-neighbor classifier to predict pancreatic cancer, and a leave-one-subject-out validation. Figure 4D shows that the peptide selected by Mgc (neurogranin) works better than any other subset of the peptides selected by Hsic or Hhg, in terms of both fewer false positives and negatives.\u00a0This analysis suggests Mgc can effectively be used for screening and subsequent classification.\n\n## Discussion\n\nThere are a number of connections between Mgc and other prominent statistical procedures that may be worth further exploration. First, Mgc can be thought of as a regularized or sparsified variant of distance or kernel methods. Regularization is central to high-dimensional and ill-posed problems, where dimensionality is larger than sample size.\u00a0Second, Mgc can also be thought of as learning a metric because it chooses the optimal scale amongst a set of $n^{2}$ truncated distances, motivating studying the relationship between Mgc and recent advances in metric learning (Xing et al., 2003). In particular, deep learning can be thought of as metric learning (Giryes et al., 2015), and generative adversarial networks (Goodfellow et al., 2014) are implicitly testing for equality, which is closely related to dependence (Sutherland et al., 2016). While Mgc searches over a two-dimensional parameter space to optimize the metric, deep learning searches over a much larger parameter space, sometimes including millions of dimensions. Probably neither is optimal, and somewhere between the two would be useful in many tasks. Third, energy statistics provide state of the art approaches to other problems, including goodness-of-fit (Sz\u00e9kely and Rizzo, 2005), analysis of variance (Rizzo and Sz\u00e9kely, 2010), conditional dependence (Sz\u00e9kely and Rizzo, 2014; Wang et al., 2015), and feature selection (Li et al., 2012; Zhong and Zhu, 2015), so Mgc can be adapted for them as well. Indeed, Mgc can also implement a two-sample (or generally the K-sample) test (Szekely and Rizzo, 2004; Heller et al., 2016; Shen and Vogelstein, 2018). Specifically, for more than two modalities, one may use summation of pairwise Mgc test statistics, similar to how energy statistic is generalized to K-sample testing from two-sample testing (Rizzo and Sz\u00e9kely, 2010; Rizzo and Sz\u00e9kely, 2016; Shen and Vogelstein, 2018), or how canonical correlation analysis is generalized into more than two modalities (Kettenring, 1971; Tenenhaus and Tenenhaus, 2011; Shen et al., 2014).\u00a0Finally, although energy statistics have not yet been explicitly used for classification, regression, or dimensionality reduction, Mgc opens the door to these applications by providing guidance as to how to proceed. Specifically, it is well documented in machine learning literature that the choice of kernel, metric, or scale often has a strong effect on the performance of different machine learning algorithms (Levina and Bickel, 2004). Mgc provides a mechanism to estimate scale that is both theoretically justified and computationally efficient, by optimizing a metric for a task wherein the previous methods lacked a notion of optimization. Nonlinear dimensionality reduction procedures, such as Isomap (Tenenbaum et al., 2000) and local linear embedding (Roweis and Saul, 2000) for example, must also choose a scale, but have no principled criteria for doing so. Mgc could be used to provide insight into multimodal dimensionality reduction as well.\n\nThe default metric choice of Mgc in this paper is always the Euclidean distance, but other metric choices may be more appropriate in different fields, and using the strong negative type metric as specified in Lyons (2013) guarantees consistency. However, if multiple metric choices are experimented to yield multiple Mgc p-values, then the optimal p-value should be properly corrected for multiple testing. Alternatively, one may use the maximum Mgc statistic among multiple metric choices, apply the same procedure in each permutation (i.e. in each permutation, use the same number of metric choices and take the maximum Mgc as the permuted statistic), then derive a single p-value. Such a testing procedure properly controls the type one error level without the need for additional correction.\n\nMgc also addresses a particularly vexing statistical problem that arises from the fact that methods methods for discovering dependencies are typically dissociated from methods for deciphering them. This dissociation creates a problem because the statistical assumptions underlying the \u2018deciphering\u2019 methods become compromised in the process of \u2018discoverying\u2019; this is called the \u2018post-selection inference\u2019 problem (Berk et al., 2013). The most straightforward way to address this issue is to collect new data, which is costly and time-consuming. Therefore, researchers often ignore this fact and make statistically invalid claims. Mgc circumvents this dilemma by carefully constructing its permutation test to estimate the scale in the process of estimating a p-value, rather than after. To our knowledge, Mgc is the first dependence test to take a step towards valid post-selection inference.\n\nAs a separate next theoretical extension, we could reduce the computational space and time required by Mgc. Mgc currently requires space and time that are quadratic with respect to the number of samples, which can be costly for very large data. Recent advances in related work demonstrated that one could reduce computational time of distance-based tests to close to linear via faster implementation, subsampling, random projection, and null distribution approximation (Huo and Sz\u00e9kely, 2016; Huang and Huo, 2017; Zhang et al., 2018; Chaudhuri and Hu, 2018), making it feasible for large amount of data. Alternately, semi-external memory implementations would allow running Mgc even as the interpoint comparison matrix exceeds the size of main memory (Da Zheng et al., 2015; Da Zheng et al., 2016a; Da Zheng et al., 2016b; Da Zheng et al., 2016c).\n\nFinally, Mgc is easy to use. Source code is available in MATLAB, R, and Python from https://mgc.neurodata.io/ (Bridgeford et al., 2018;\u00a0experiments archived at https://github.com/elifesciences-publications/MGC-paper). Code for reproducing all the figures in this manuscript is also available from the above websites. We showed Mgc\u2019s value in diverse applications spanning neuroscience (which motivated this work) and an \u2019omics example. Applications in other domains facing similar questions of dependence, such as finance, pharmaceuticals, commerce, and security, could likewise benefit from Mgc.\n\n## Materials and methods\n\n### Mathematical details\n\nThis section contains essential mathematical details on independence testing, the notion of the generalized correlation coefficient and the distance-based correlation measure, how to compute the local correlations, and the smoothing technique. A statistical treatment on MGC is in Shen and Vogelstein, 2018, which introduces the population version of Mgc and various theoretical properties.\n\n#### Testing independence\n\nGiven pairs of observations $(x_{i},y_{i})\\inR^{p}\\timesR^{q}$ for $i=1,\u2026,n$, assume they are independently identically distributed as $(X,Y)\u223ciidF_{XY}$. If the two random variables $X$ and $Y$ are independent, the joint distribution equals the product of the marginals, that is\u00a0$F_{XY}=F_{X}F_{Y}$. The statistical hypotheses for testing independence is as follows:\n\n$$\nH_{0}:F_{XY}=F_{X}F_{Y},\n$$\n\n\n\n$$\nH_{A}:F_{XY}\\neqF_{X}F_{Y}.\n$$\n\nGiven a test statistic, the testing power equals the probability of rejecting the independence hypothesis (i.e. the null hypothesis) when it is false. A test statistic is consistent if and only if the testing power increases to $1$ as sample size increases to infinity. We would like a test to be universally consistent, that is\u00a0consistent against all joint distributions. Dcorr, Mcorr, Hsic, and Hhg are all consistent against any joint distribution of finite second moments and finite dimension.\n\nNote that $p$ is the dimension for $x$\u2019s, $q$ is the dimension for $y$\u2019s. For Mgc and all benchmark methods, there is no restriction on the dimensions, that is\u00a0the dimensions can be arbitrarily large, and $p$ is not required to equal $q$. The ability to handle data of arbitrary dimension is crucial for modern big data. There also exist some special methods that only operate on one-dimensional data, such as (Reshef et al., 2011; Heller et al., 2016; Huo and Sz\u00e9kely, 2016), which are not directly applicable to multidimensional data.\n\n#### Correlation measures\n\nTo achieve consistent testing, most state-of-the-art dependence measures operate on pairwise comparisons, either similarities (such as kernels) or dissimilarities (such as distances).\n\nLet $\ud835\udcb3_{n}={x_{1},\u22ef,x_{n}}\\inR^{p\\timesn}$ and $\ud835\udcb4_{n}={y_{1},\u22ef,y_{n}}\\inR^{q\\timesn}$ denote the matrices of sample observations, and $d_{x}$ be the distance function for $x$\u2019s and $d_{y}$ for $y$\u2019s. One can then compute two $n\\timesn$ distance matrices $A~={a~_{ij}}$ and $B~={b~_{ij}}$, where $a~_{ij}=\\delta_{x}(x_{i},x_{j})$ and $b~_{ij}=\\delta_{y}(y_{i},y_{j})$. A common example of the distance function is the Euclidean metric ($L^{2}$ norm), which serves as the starting point for all methods in this manuscript.\n\nLet $A$ and $B$ be the transformed (e.g., centered) versions of the distance matrices $A~$ and $B~$, respectively. Any \u2018generalized correlation coefficient\u2019 (Spearman, 1904; Kendall, 1970) can be written as:\n\n$$\nc(\ud835\udcb3_{n},\ud835\udcb4_{n})=\\frac{1}{z}\\sumi=1n\\sumj=1na_{ij}b_{ij},\n$$\n\nwhere $z$ is proportional to the standard deviations of $A$ and $B$, that is $z=n^{2}\\sigma_{a}\\sigma_{b}$. In words, $c$ is the global sample correlation across pairwise comparison matrices\u00a0$A$ and $B$, and is normalized into the range $[-1,1]$, which usually has expectation 0 under independence and implies a stronger dependency when the correlation is further away from 0.\n\nTraditional correlations such as the Pearson\u2019s correlation and the rank correlation can be written via the above correlation formulation, by using $A$ and $B$ directly from sample observations rather than distances. Distance-based methods like Dcorr and Mantel operate on the Euclidean distance by default, or other metric choices on the basis of domain knowledge; then transform the resulting distance matrices $A~$ and $B~$ by certain centering schemes into $A$ and $B$. Hsic chooses the Gaussian kernel and computes two kernel matrices, then transform the kernel matrices $A~$ and $B~$ by the same centering scheme as Dcorr. For Mgc, $A$ and $B$ are always distance matrices (or can be transformed to distances from kernels by Sejdinovic et al. (2013)), and we shall apply a slightly different centering scheme that turns out to equal Dcorr.\n\nTo carry out the hypothesis testing on sample data via a nonparametric test statistic, for\u00a0example a generalized correlation, the permutation test is often an effective choice (Good, 2005), because a p-value can be computed by comparing the correlation of the sample data to the correlation of the permuted sample data. The independence hypothesis is rejected if the p-value is lower than a pre-determined type $1$ error level, say 0.05. Then the power of the test statistic equals the probability of a correct rejection at a specific type $1$ error level. Note that Hhg is the only exception that cannot be cast as a generalized correlation coefficient, but the permutation testing is similarly effective for the Hhg test statistic; also note that the iid assumption is critical for permutation test to be valid, which may not be applicable in special cases like auto-correlated time series (Guillot and Rousset, 2013).\n\n#### Distance correlation\u00a0(Dcorr) and the Unbiased Version (Mcorr)\n\nDefine the row and column means of $A~$ by $a\u00af_{\u22c5j}=\\frac{1}{n}\\sumi=1na~_{ij}$ and $a\u00af_{i\u22c5}=\\frac{1}{n}\\sumj=1na~_{ij}$. Dcorr defines\n\n$$\na_{ij}={a~_{ij}\u2212a\u00af_{i\u22c5}\u2212a\u00af_{\u22c5j}+a\u00af,\u00a0if\u00a0i\\neqj,0,\u00a0if\u00a0i=j,\n$$\n\nand similarly for $b_{ij}$. For distance correlation, the numerator of Equation 1 is named the distance covariance (Dcov), while $s_{a}$ and $s_{b}$ in the denominator are the square root of each distance variance. The centering scheme is important to guarantee the universal consistency of Dcorr, whereas Mantel uses a simple centering scheme and thus not universally consistent.\n\nLet $c(X,Y)$ be the population distance correlation, that is, the distance correlation between the underlying random variables $X$ and $Y$. Sz\u00e9kely et al. (2007) define the population distance correlation via the characteristic functions of $F_{X}$ and $F_{Y}$, and show that the population distance correlation equals zero if and only if $X$ and $Y$ are independent, for any joint distribution $F_{XY}$ of finite second moments and finite dimensionality. They also show that as $n\u2192\u221e$, the sample distance correlation converges to the population distance correlation, that is, $c(\ud835\udcb3_{n},\ud835\udcb4_{n})\u2192c(X,Y)$. Thus the sample distance correlation is consistent against any dependency of finite second moments and dimensionality. Of note, the distance covariance, distance variance, and distance correlation are always non-negative. Moreover, the consistency result holds for a much larger family of metrics, those of strong negative type (Lyons, 2013).\n\nIt turns out that the sample distance correlation has a finite-sample bias, especially as the dimension $p$ or $q$ increases (Szekely and Rizzo, 2013). For example, for independent Gaussian distributions, the sample distance correlation converges to $1$ as $p,q\u2192\u221e$.\u00a0By excluding the diagonal entries and slightly modifies the off-diagonal entries of $\ud835\udc9c$ and $B$, Szekely and Rizzo (Szekely and Rizzo, 2013; Sz\u00e9kely and Rizzo, 2014) show that Mcorr is an unbiased estimator of the population distance correlation $c(x,y)$ for all $p,q,n$, which is approximately normal even if $p,q\u2192\u221e$. Thus it enjoys the same theoretical consistency as Dcorr and always has zero mean under independence.\n\n#### Local correlations\n\nGiven any matrices $A$ and $B$, we can define a set of local correlations as follows. Let $R(A_{\u22c5j},i)$ be the \u2018rank\u2019 of $x_{i}$ relative to $x_{j}$, that is, $R(A_{\u22c5j},i)=k$ if $x_{i}$ is the $k^{th}$ closest point (or \u2018neighbor\u2019) to $x_{j}$, as determined by ranking the $n-1$ distances to $x_{j}$. Define $R(B_{i\u22c5},j)$ equivalently for the $Y$\u2019s, but ranking relative to the rows rather than the columns (see below for explanation). For any neighborhood size $k$ around each $x_{i}$ and any neighborhood size $l$ around each $y_{j}$, we define the local pairwise comparisons:\n\n$$\na~_{ij}^{k}={a_{ij},if\u00a0R(A_{\u22c5j},i)\\leqk,0,otherwise;b~_{ij}^{l}={b_{ij},if\u00a0R(B_{i\u22c5},j)\\leql,0,otherwise;\n$$\n\nand then let $a_{ij}^{k}=a~_{ij}^{k}\u2212a\u00af^{k}$, where $a\u00af^{k}$ is the mean of ${a~_{ij}^{k}}$, and similarly for $b_{ij}^{l}$.\n\nThe local correlation coefficient at a given scale is defined to effectively exclude large distances:\n\n$$\nc^{kl}(\ud835\udcb3_{n},\ud835\udcb4_{n})=\\frac{1}{z_{kl}}\\sumi,j=1na_{ij}^{k}b_{ij}^{l},\n$$\n\nwhere $z_{kl}=n^{2}\\sigma_{a}^{k}\\sigma_{b}^{l}$, with $s_{a}^{k}$ and $s_{b}^{l}$ is the standard deviations for the truncated pairwise comparisons. The Mgc-Map can be constructed by computing all local correlations, which allows the discovery of the optimal correlation. For any aforementioned correlation (Dcorr, Mcorr, Hsic, Mantel, Pearson), one can define its local correlations by using Equation 3 and plugging in the respective $a_{ij}$ and $b_{ij}$ from Equation 1.\n\nAs most nonlinear relationships intrinsically exhibit a local linear structure, considering the nearest-neighbors is able to amplify the dependency signal over the global correlation. There could be two other scenarios: when the small distances in one modality mostly correspond to large distances in another modality, or when the large distances in one modality correspond to large distance in another modality. For the first scenario, the small distances become negative terms after centering while the large distances become positive terms after centering, so adding their product to $c^{kl}$ will cause the test statistic to be smaller \u2014 in fact, as distance correlation is shown to be >\u00a00 under dependence (Sz\u00e9kely et al., 2007), the first scenario cannot happen for all distances pairs. For the second scenario, one can experiment using the large distances (or the furthest neighbors) only by reversing the ranking scheme in local correlation to descending order. However, whenever the large distances are highly correlated, the small distances must also be highly correlated after centering by the mean distances, so global correlation coefficient like Dcorr already handles this scenario. Therefore considering the nearest-neighbor may significantly improve the performance over global correlation, while considering the other scenarios does not.\n\n#### Mgc as the optimal local correlation\n\nWe define the multiscale graph correlation statistic as the optimal local correlation, for which the family of local correlation is computed based on Euclidean distance and Mcorr transformation.\n\nInstead of taking a direct maximum, Mgc takes a smoothed maximum, that is\u00a0the maximum local correlation of the largest connected component $R$ such that all local correlations within $R$ are significant. If no such region exists, Mgc defaults the test statistic to the global correlation (details in Algorithm C2). Thus, we can write:\n\n$$\nc^{\u2217}(\ud835\udcb3_{n},\ud835\udcb4_{n})=max(k,l)\\inRc^{kl}(\ud835\udcb3_{n},\ud835\udcb4_{n})\n$$\n\n\n\n$$\nR=Largest Connected Component of\u00a0{(k,l)\u00a0such thatc^{kl}>max(\\tau,c^{nn})}.\n$$\n\nThen the optimal scale equals all scales within $R$ whose local correlations are as large as $c^{\u2217}$. The choice of $\\tau$ is made explicit in the pseudo-code, with further discussion and justification offered in Shen and Vogelstein, 2018.\n\n#### Proof for theorem 1\n\nTheorem 1.\u00a0When $(X,Y)$ are linearly related (rotation, scaling, translation, reflection), the optimal scale of Mgc equals the global scale. Conversely, that. the optimal scale is local implies a nonlinear relationship.\n\nProof.\u00a0It suffices to prove the first statement, then the second statement follows by contrapositive. When $(X,Y)$ are linearly related, $Y=WX+b$ for a unitary matrix $W$ and a constant $b$ up-to possible scaling, in which case the distances are preserved, that is\u00a0$\u2016y_{i}\u2212y_{j}\u2016=\u2016Wx_{i}\u2212Wx_{j}\u2016=\u2016x_{i}\u2212x_{j}\u2016$. It follows that $Mcorr(\ud835\udcb3_{n},\ud835\udcb4_{n})=1$, so the global scale achieves the maximum possible correlation, and the largest connected region $R$ is empty. Thus the optimal scale is global and $Mgc(\ud835\udcb3_{n},\ud835\udcb4_{n})=Mcorr(\ud835\udcb3_{n},\ud835\udcb4_{n})=1$.\n\n#### Computational complexity of each step\n\nThe distance computation takes $\ud835\udcaa(n^{2}max{p,q})$, and the ranking process takes $\ud835\udcaa(n^{2}log\u2061n)$. Once the distance and ranking are completed, computing one local generalized correlation requires $\ud835\udcaa(n^{2})$ (see Algorithm C4). Thus, a naive approach to compute all local generalized correlations requires at least $\ud835\udcaa(n^{2}max{n^{2},p,q})$ by going through all possible scales, meaning possibly $\ud835\udcaa(n^{4})$ which would be computationally prohibitive. However, given the distance and ranking information, we devised an algorithm that iteratively computes all local correlations in $\ud835\udcaa(n^{2})$ by re-using adjacent smaller local generalized correlations (see Algorithm C5). Therefore, when including the distance computation and ranking overheads, the MGC statistic is computed in $\ud835\udcaa(n^{2}max{log\u2061n,p,q})$), which has the same running time as the Hhg statistic, and the same running time up to a factor of $log\u2061n$ as global correlations like Dcorr and Mcorr, which require $\ud835\udcaa(n^{2}max{p,q})$ time. By utilizing a multi-core architecture, Mgc can be computed in $\ud835\udcaa(n^{2}max{log\u2061n,p,q}/T)$ instead. As $T=log\u2061(n)$ is often a small number, for example $T$ is no more than $30$ at $1$ billion samples, thus Mgc can be effectively computed in the same complexity as Dcorr. Note that the permutation test adds another $r$ random permutations to the $n^{2}$ term, so computing the p-value requires $\ud835\udcaa(n^{2}max{log\u2061n,p,q,r}/T)$.\n\n### Mgc algorithms and testing procedures\n\nSix algorithms are presented in order:\n\nFor ease of presentation, we assume there are no repeating observations of $X$ or $Y$, and note that Mcorr is the global correlation choice that Mgc builds on.\n\n<table>\n  <tbody>\n    <tr>\n      <td colspan=\"3\">Pseudocode C1 Multiscale Graph Correlation (Mgc); requires \ud835\udcaa(n2max(log\u2061n,p,q,r)/T) time, where r is the number of permutations and T is the number of cores available for parallelization.</td>\n    </tr>\n    <tr>\n      <td colspan=\"3\">Input: n samples of (xi,yi) pairs, an integer r for the number of random permutations.</td>\n    </tr>\n    <tr>\n      <td colspan=\"3\">Output: (i) MGC statistic c*, (ii) the optimal scale (k,l), (iii) the p-value p(c\u2217),</td>\n    </tr>\n    <tr>\n      <td colspan=\"2\">function MG((xi,yi), for i\u2208[n])</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td colspan=\"2\">(1) Calculate all pairwise distances:</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td colspan=\"2\">for i,j:=1,\u2026,n\u00a0do</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td colspan=\"2\">aij=\u03b4x(xi,xj)</td>\n      <td>dx is the distance between pairs of x samples</td>\n    </tr>\n    <tr>\n      <td colspan=\"2\">bij=\u03b4y(yi,yj)</td>\n      <td>dy is the distance between pairs of y samples</td>\n    </tr>\n    <tr>\n      <td colspan=\"2\">end for</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td colspan=\"2\">Let A={aij} and B={bij}.</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td colspan=\"2\">(2) Calculate Multiscale Correlation Map \ud835\udc9e &amp; Mgc Test Statistic:</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td colspan=\"2\">[c\u2217,\ud835\udc9e,k,l]=MGCSAMPLESTAT(A,B)</td>\n      <td>Algorithm C2</td>\n    </tr>\n    <tr>\n      <td colspan=\"2\">(3) Calculate the p-value</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td colspan=\"2\">pval(c\u2217)=PERMUTATIONTEST(A,B,r,c\u2217)</td>\n      <td>Algorithm C3</td>\n    </tr>\n    <tr>\n      <td colspan=\"2\">end Function</td>\n      <td></td>\n    </tr>\n  </tbody>\n</table>\n\n<table>\n  <tbody>\n    <tr>\n      <td colspan=\"3\">Pseudocode C2 Mgc test statistic. This algorithm computes all local correlations, take the smoothed maximum, and reports the (k,l) pair that achieves it. For the smoothing step, it: (i) finds the largest connected region in the correlation map, such that each correlation is significant, that is\u00a0larger than a certain threshold to avoid correlation inflation by sample noise, (ii) take the largest correlation in the region, (iii) if the region area is too small, or the smoothed maximum is no larger than the global correlation, the global correlation is used instead. The running time is \ud835\udcaa(n2).</td>\n    </tr>\n    <tr>\n      <td colspan=\"3\">Input: A pair of distance matrices (A,B)\u2208Rn\u00d7n\u00d7Rn\u00d7n.</td>\n    </tr>\n    <tr>\n      <td colspan=\"3\">Output: The Mgc statistic c\u2217\u2208R, all local statistics \ud835\udc9e\u2208Rn\u00d7n, and the corresponding local scale (k,l)\u2208N\u00d7N.</td>\n    </tr>\n    <tr>\n      <td>1:</td>\n      <td>function MGCSampleStat(A,B)</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>2:</td>\n      <td>\ud835\udc9e=MGCALLLOCAL(A,B)</td>\n      <td>All local correlations</td>\n    </tr>\n    <tr>\n      <td>3:</td>\n      <td>\u03c4=THRESHOLDING(\ud835\udc9e)</td>\n      <td>find a threshold to determine large local correlations</td>\n    </tr>\n    <tr>\n      <td>4:</td>\n      <td>for i,j:=1,\u2026,ndo rij\u2190I(cij&gt;\u03c4)end for</td>\n      <td>identify all scales with large correlation</td>\n    </tr>\n    <tr>\n      <td>5:</td>\n      <td>\u211b\u2190{rij:i,j=1,\u2026,n}</td>\n      <td>binary map encoding scales with large correlation</td>\n    </tr>\n    <tr>\n      <td>6:</td>\n      <td>\u211b=CONNECTED(\u211b)</td>\n      <td>largest connected component of the binary matrix</td>\n    </tr>\n    <tr>\n      <td>7:</td>\n      <td>c\u2217\u2190\ud835\udc9e(n,n)</td>\n      <td>use the global correlation by default</td>\n    </tr>\n    <tr>\n      <td>8:</td>\n      <td>k\u2190n,l\u2190n</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>9:</td>\n      <td>if (\u2211i,jrij)\u22652n\u00a0then</td>\n      <td>proceed when the significant region is sufficiently large</td>\n    </tr>\n    <tr>\n      <td>10:</td>\n      <td>[c\u2217,k,l]\u2190max(\ud835\udc9e\u2218\u211b)</td>\n      <td>find the smoothed maximum and the respective scale</td>\n    </tr>\n    <tr>\n      <td>11:</td>\n      <td>end if</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>12:</td>\n      <td>end Function</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td colspan=\"3\">Input: \ud835\udc9e\u2208Rn\u00d7n.</td>\n    </tr>\n    <tr>\n      <td colspan=\"3\">Output: A threshold t to identify large correlations.</td>\n    </tr>\n    <tr>\n      <td>13:</td>\n      <td>function Thresholding\u00a0\ud835\udc9e</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>14:</td>\n      <td>\u03c4\u2190\u2211cij&lt;0(cij)2/\u2211cij&lt;01</td>\n      <td>variance of all negative local generalized correlations</td>\n    </tr>\n    <tr>\n      <td>15:</td>\n      <td>\u03c4\u2190max{0.01,\u03c4}\u00d73.5</td>\n      <td>threshold based on negative correlations</td>\n    </tr>\n    <tr>\n      <td>16:</td>\n      <td>\u03c4\u2190max{\u03c4,2/n,cnn}</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>17:</td>\n      <td>end Function</td>\n      <td></td>\n    </tr>\n  </tbody>\n</table>\n\n<table>\n  <tbody>\n    <tr>\n      <td colspan=\"3\">Pseudocode C3 Permutation Test. This algorithm uses the random permutation test with r random permutations for the p-value, requiring \ud835\udcaa(rn2log\u2061n) for Mgc. In the real-data experiment, we always set r=10,000. Note that the p-value computation for any other global generalized correlation coefficient follows from the same algorithm by replacing Mgc with the respective test statistic.</td>\n    </tr>\n    <tr>\n      <td colspan=\"3\">Input: A pair of distance matrices (A,B)\u2208Rn\u00d7n\u00d7Rn\u00d7n, the number of permutations r, and Mgc statistic c* for the observed data.</td>\n    </tr>\n    <tr>\n      <td colspan=\"3\">Output: The p-value pval\u2208[0,1].</td>\n    </tr>\n    <tr>\n      <td>1:</td>\n      <td>function PermutationTest(A, B, r, c*)</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>2:</td>\n      <td>for t:=1,\u2026,r\u00a0do</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>3:</td>\n      <td>\u03c0=RANDPERM(n)</td>\n      <td>generate a random permutation of size n</td>\n    </tr>\n    <tr>\n      <td>4:</td>\n      <td>c0\u2217[t]=MGCSAMPLESTAT(A,B(\u03c0,\u03c0))</td>\n      <td>calculate the permuted Mgc statistic</td>\n    </tr>\n    <tr>\n      <td>5:</td>\n      <td>end for</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>6:</td>\n      <td>pval(c\u2217)\u21901t\u2211t=1rI(c\u2217\u2264c0\u2217[t])</td>\n      <td>compute p-value of Mgc</td>\n    </tr>\n    <tr>\n      <td>7:</td>\n      <td>end function</td>\n      <td></td>\n    </tr>\n  </tbody>\n</table>\n\n<table>\n  <tbody>\n    <tr>\n      <td colspan=\"3\">Pseudocode C4 Compute local test statistic at a given scale. This algorithm runs in \ud835\udcaa(n2) once the rank information is provided, which is suitable for Mgc computation if an optimal scale is already estimated. But it would take \ud835\udcaa(n4) if used to compute all local generalized correlations. Note that for the default Mgc implementation uses single centering, the centering function centers A by column and B by row, and the sorting function sorts A within column and B within row. By utilizing T=log\u2061(n) cores, the sorting function can be easily parallelized to take \ud835\udcaa(n2log\u2061(n)/T)=\ud835\udcaa(n2).</td>\n    </tr>\n    <tr>\n      <td colspan=\"3\">Input: A pair of distance matrices (A,B)\u2208Rn\u00d7n\u00d7Rn\u00d7n, and a local scale (k,l)\u2208N\u00d7N.</td>\n    </tr>\n    <tr>\n      <td colspan=\"3\">Output: The local generalized correlation coefficient ckl\u2208[\u22121,1].</td>\n    </tr>\n    <tr>\n      <td>1:</td>\n      <td>function LocalGenCorr(A, B, k, l)</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>2:</td>\n      <td>for Z:=A,B\u00a0do \u2130Z=SORT(Z)\u00a0end for</td>\n      <td>parallelized sorting</td>\n    </tr>\n    <tr>\n      <td>3:</td>\n      <td>for Z:=A,B\u00a0do Z=CENTER(Z)\u00a0end for</td>\n      <td>center distance matrices</td>\n    </tr>\n    <tr>\n      <td>4:</td>\n      <td>c~kl\u2190tr((A\u2218\u2130A)T\u00d7(B\u2218(\u2130B)T))</td>\n      <td>un-normalized local distance covariance</td>\n    </tr>\n    <tr>\n      <td>5:</td>\n      <td>vA\u2190tr((A\u2218\u2130A)T\u00d7(A\u2218(\u2130A)T))</td>\n      <td>local distance variances</td>\n    </tr>\n    <tr>\n      <td>6:</td>\n      <td>vB\u2190tr((B\u2218\u2130B)T\u00d7(B\u2218(\u2130B)T))</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>7:</td>\n      <td>eA\u2190\u2211i,j=1n(A\u2218\u2130A)ij</td>\n      <td>sample means</td>\n    </tr>\n    <tr>\n      <td>8:</td>\n      <td>eB\u2190\u2211i,j=1n(B\u2218\u2130B)ij</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>9:</td>\n      <td>ckl\u2190(c~kl\u2212eAeB/n2)/(vA\u2212(eA/n)2)(vB\u2212(eB/n)2)</td>\n      <td>center and normalize</td>\n    </tr>\n    <tr>\n      <td>10:</td>\n      <td>end function</td>\n      <td></td>\n    </tr>\n  </tbody>\n</table>\n\n<table>\n  <tbody>\n    <tr>\n      <td colspan=\"3\">Pseudocode C5 Compute the multiscale correlation map (i.e., all local generalized correlations) in \ud835\udcaa(n2log\u2061n/T). Once the distances are sorted, the remaining algorithm runs in \ud835\udcaa(n2). An important observation is that each product aijbij is included in ckl if and only if (k,l) satisfies k\u2264R(A\u22c5j,i) and l\u2264R(B\u22c5j,i), so it suffices to iterate through aijbij for i,j:=1,\u2026,n, and add the product simultaneously to all ckl whose scales are no more than (R(A\u22c5j,i),R(B\u22c5j,i)). To achieve the above, we iterate through each product, add it to ckl at (kl)=(R(A\u22c5j,i),R(B\u22c5j,i)) only (so only one local scale is accessed for each operation); then add up adjacent ckl for k,l=1,\u2026,n. The same applies to all local covariances, variances, and expectations.</td>\n    </tr>\n    <tr>\n      <td colspan=\"3\">Input: A pair of distance matrices (A,B)\u2208Rn\u00d7n\u00d7Rn\u00d7n.</td>\n    </tr>\n    <tr>\n      <td colspan=\"3\">Output: The multiscale correlation map \ud835\udc9e\u2208[\u22121,1]n\u00d7nfor k,l=1,\u2026,n.</td>\n    </tr>\n    <tr>\n      <td>1:</td>\n      <td>function MGCAllLocal(A, B)</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>2:</td>\n      <td>for Z:=A,B\u00a0do \u2130Z=SORT(Z)\u00a0end for</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>3:</td>\n      <td>for Z:=A,B\u00a0do\u00a0Z=CENTER(Z)end for</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>4:</td>\n      <td>for i,j:=1,\u2026,n\u00a0do</td>\n      <td>iterate through all local scales to calculate each term</td>\n    </tr>\n    <tr>\n      <td>5:</td>\n      <td>k\u2190\u2130ijZ</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>6:</td>\n      <td>l\u2190\u2130ijZ</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>7:</td>\n      <td>c~kl\u2190c~kl+aijbij</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>8:</td>\n      <td>vkA\u2190vkA+aij2</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>9:</td>\n      <td>vlB\u2190vlB+bij2</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>10:</td>\n      <td>ekA\u2190ekA+aij</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>11:</td>\n      <td>elB\u2190elB+bij</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>12:</td>\n      <td>end for</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>13:</td>\n      <td>for k:=1,\u2026,n-1 do</td>\n      <td>iterate through each scale again and add up adjacent terms</td>\n    </tr>\n    <tr>\n      <td>14:</td>\n      <td>c~1,k+1\u2190c~1,k+c~1,k+1</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>15:</td>\n      <td>c~k+1,1\u2190c~k+1,1+c~k+1,1</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>16:</td>\n      <td>for Z:=A,B\u00a0do vk+1Z\u2190vkZ+vk+1Z\u00a0end for</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>17:</td>\n      <td>for Z:=A,B\u00a0do ek+1Z\u2190ekZ+ek+1Z\u00a0end for</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>18:</td>\n      <td>end for</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>19:</td>\n      <td>for k,l:=1,\u2026,n-1\u00a0do</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>20:</td>\n      <td>c~k+1,l+1\u2190c~k+1,l+c~k,l+1+c~k+1,l+1\u2212c~k,l</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>21:</td>\n      <td>end for</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>22:</td>\n      <td>for k,l:=1,\u2026,n\u00a0do</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>23:</td>\n      <td>ckl\u2190(c~kl\u2212ekAelB/n2)/(vkA\u2212ekA2/n2)(vlB\u2212elB2/n2)</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>24:</td>\n      <td>end for</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>25:</td>\n      <td>end function</td>\n      <td></td>\n    </tr>\n  </tbody>\n</table>\n\n<table>\n  <tbody>\n    <tr>\n      <td colspan=\"3\">Pseudocode C6 Power computation of Mgc against a given distribution.\u00a0By repeatedly sampling from the joint distribution FXY, sample data of size n under the null and the alternative are generated for r Monte-Carlo replicates. The power of Mgc follows by computing the test statistic under the null and the alternative using Algorithm C2.\u00a0In the simulations we use r=10,000 MC replicates.\u00a0Note that power computation for other benchmarks follows from the same algorithm by plugging in the respective test statistic.</td>\n    </tr>\n    <tr>\n      <td colspan=\"3\">Input: A joint distribution FXY, the sample size n, the number of MC replicates r, and the type 1 error level a.</td>\n    </tr>\n    <tr>\n      <td colspan=\"3\">Output: The power \u00df of Mgc.</td>\n    </tr>\n    <tr>\n      <td>1:</td>\n      <td>function MGCPower(FXY, n, r, a)</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>2:</td>\n      <td>for t:=1,\u2026,r\u00a0do</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>3:</td>\n      <td>for i:=[n]\u00a0do</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>4:</td>\n      <td>xi0\u223ciidFX,yi0\u223ciidFY</td>\n      <td>sample from null</td>\n    </tr>\n    <tr>\n      <td>5:</td>\n      <td>(xi1,yi1)\u223ciidFXY,</td>\n      <td>sample from alternative</td>\n    </tr>\n    <tr>\n      <td>6:</td>\n      <td>end for</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>7:</td>\n      <td>for i,j:=1,\u2026,n\u00a0do</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>8:</td>\n      <td>aij0=\u03b4x(xi0,xj0), bij0=\u03b4y(yi0,yj0)</td>\n      <td>pairwise distances under the null</td>\n    </tr>\n    <tr>\n      <td>9:</td>\n      <td>aij1=\u03b4x(xi1,xj1), bij1=\u03b4y(yi1,yj1)</td>\n      <td>pairwise distances under the alternative</td>\n    </tr>\n    <tr>\n      <td>10:</td>\n      <td>end for</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>11:</td>\n      <td>c0\u2217[t]=MGCSAMPLESTAT(A0,B0)</td>\n      <td>Mgc statistic under the null</td>\n    </tr>\n    <tr>\n      <td>12:</td>\n      <td>c1\u2217[t]=MGCSAMPLESTAT(A1,B1)</td>\n      <td>Mgc statistic under the alternative</td>\n    </tr>\n    <tr>\n      <td>13:</td>\n      <td>end for</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>14:</td>\n      <td>\u03c9\u03b1\u2190CDF1\u2212\u03b1(c0\u2217[t],t\u2208[r])</td>\n      <td>the critical value of Mgc under the null</td>\n    </tr>\n    <tr>\n      <td>15:</td>\n      <td>\u03b2\u2190\u2211t=1r(c1\u2217[t]&gt;\u03c9\u03b1)/r</td>\n      <td>compute power by the alternative distribution</td>\n    </tr>\n    <tr>\n      <td>16:</td>\n      <td>end function</td>\n      <td></td>\n    </tr>\n  </tbody>\n</table>\n\n### Simulation dependence functions\n\nThis section provides the 20 different dependency functions used in the simulations. We used essentially the exact same relationships as previous publications to ensure a fair comparison (Sz\u00e9kely et al., 2007; Simon and Tibshirani, 2012; Gorfine et al., 2012). We only made changes to add white noise and a weight vector for higher dimensions, thereby making them more difficult, to better compare all methods throughout different dimensions and sample sizes. A few additional relationships are also included.\n\nFor each sample $x\\inR^{p}$, we denote $x_{[d]},d=1,\u2026,p$ as the $d^{th}$ dimension of the vector $x$. For the purpose of high-dimensional simulations, $w\\inR^{p}$ is a decaying vector with $w_{[d]}=1/d$ for each $d$, such that $w^{T}x$ is a weighted summation of all dimensions of $x$. Furthermore, $\ud835\udcb0(a,b)$ denotes the uniform distribution on the interval $(a,b)$, $\u212c(p)$ denotes the Bernoulli distribution with probability $p$, $\ud835\udca9(\\mu,\u03a3)$ denotes the normal distribution with mean $\u00b5$ and covariance $S$, $U$ and $V$ represent some auxiliary random variables, $\u03ba$ is a scalar constant to control the noise level (which equals $1$ for one-dimensional simulations and 0 otherwise), and $\u03f5$ is a white noise from independent standard normal distribution unless mentioned otherwise.\n\nFor all the below equations, $(X,Y)\u223ciidF_{XY}=F_{Y|X}F_{X}$. For each relationship, we provide the space of $(X,Y)$, and define $F_{Y|X}$ and $F_{X}$, as well as any additional auxiliary distributions.\n\n1.\u00a0Linear $(X,Y)\\inR^{p}\\timesR$,\n\n$$\nX\u223c\ud835\udcb0(\u22121,1)^{p},Y=w^{T}X+\u03ba\u03f5.\n$$\n\n2.\u00a0Exponential\u00a0$(X,Y)\\inR^{p}\\timesR$:\n\n$$\nX\u223c\ud835\udcb0(0,3)^{p},Y=exp(w^{T}X)+10\u03ba\u03f5.\n$$\n\n3.\u00a0Cubic $(X,Y)\\inR^{p}\\timesR$:\n\n$$\nX\u223c\ud835\udcb0(\u22121,1)^{p},Y=128(w^{T}X\u2212\\frac{1}{3})^{3}+48(w^{T}X\u2212\\frac{1}{3})^{2}\u221212(w^{T}X\u2212\\frac{1}{3})+80\u03ba\u03f5.\n$$\n\n4.\u00a0Joint normal $(X,Y)\\inR^{p}\\timesR^{p}$: Let $\u03c1=1/2p$, $I_{p}$ be the identity matrix of size $p\\timesp$, $J_{p}$ be the matrix of ones of size $p\\timesp$, and $\u03a3=[I_{p}\u03c1J_{p}\u03c1J_{p}(1+0.5\u03ba)I_{p}]$. Then\n\n$$\n(X,Y)\u223c\ud835\udca9(0,\u03a3).\n$$\n\n5.\u00a0Step Function $(X,Y)\\inR^{p}\\timesR$\n\n$$\nX\u223c\ud835\udcb0(\u22121,1)^{p},Y=I(w^{T}X>0)+\u03f5,\n$$\n\nwhere $I$ is the indicator function, that is $I(z)$ is unity whenever $z$ true, and zero otherwise.\n\n6.\u00a0Quadratic $(X,Y)\\inR^{p}\\timesR$:\n\n$$\nX\u223c\ud835\udcb0(\u22121,1)^{p},Y=(w^{T}X)^{2}+0.5\u03ba\u03f5.\n$$\n\n7.\u00a0W Shape $(X,Y)\\inR^{p}\\timesR:U\u223c\ud835\udcb0(\u22121,1)^{p}$,\n\n$$\nX\u223c\ud835\udcb0(\u22121,1)^{p},Y=4[((w^{T}X)^{2}\u2212\\frac{1}{2})^{2}+w^{T}U/500]+0.5\u03ba\u03f5.\n$$\n\n8.\u00a0Spiral $(X,Y)\\inR^{p}\\timesR:U\u223c\ud835\udcb0(0,5)$, $\u03f5\u223c\ud835\udca9(0,1)$\n\n$$\nX_{[d]}=Usin\u2061(\\piU)cos^{d}\u2061(\\piU)ford=1,\u2026,p\u22121,X_{[d]}=Ucos^{p}\u2061(\\piU),Y=Usin\u2061(\\piU)+0.4p\u03f5.\n$$\n\n9.\u00a0Uncorrelated Bernoulli $(X,Y)\\inR^{p}\\timesR:U\u223c\u212c(0.5)\u03f5_{1}\u223c\ud835\udca9(0,I_{p}),\u03f5_{2}\u223c\ud835\udca9(0,1),$\n\n$$\nX\u223c\u212c(0.5)^{p}+0.5\u03f5_{1},Y=(2U\u22121)w^{T}X+0.5\u03f5_{2}.\n$$\n\n10.\u00a0Logarithmic $(X,Y)\\inR^{p}\\timesR^{p}:\u03f5\u223c\ud835\udca9(0,I_{p})$\n\n$$\nX\u223c\ud835\udca9(0,I_{p}),Y_{[d]}=2log_{2}\u2061(|X_{[d]}|)+3\u03ba\u03f5_{[d]}ford=1,\u2026,p.\n$$\n\n11.\u00a0Fourth Root $(X,Y)\\inR^{p}\\timesR^{p}:$\n\n$$\nX\u223c\ud835\udcb0(\u22121,1)^{p},Y=|w^{T}X|^{\\frac{1}{4}}+\\frac{\u03ba}{4}\u03f5.\n$$\n\n12.\u00a0Sine Period $4\\pi(X,Y)\\inR^{p}\\timesR^{p}:U\u223c\ud835\udcb0(\u22121,1),V\u223c\ud835\udca9(0,1)^{p},\\theta=4\\pi$,\n\n$$\nX_{[d]}=U+0.02pV_{[d]}ford=1,\u2026,p,Y=sin\u2061(\\thetaX)+\u03ba\u03f5.\n$$\n\n13. Sine Period $16\\pi(X,Y)\\inR^{p}\\timesR^{p}$: Same as above except $\\theta=16\\pi$ and the noise on $Y$ is changed to $0.5\u03ba\u03f5$.\n\n14.\u00a0Square $(X,Y)\\inR^{p}\\timesR^{p}$: Let $U\u223c\ud835\udcb0(\u22121,1),V\u223c\ud835\udcb0(\u22121,1),\u03f5\u223c\ud835\udca9(0,1)^{p},\\theta=\u2212\\frac{\\pi}{8}$. Then\n\n$$\nX_{[d]}=Ucos\u2061\\theta+Vsin\u2061\\theta+0.05p\u03f5_{[d]},Y_{[d]}=\u2212Usin\u2061\\theta+Vcos\u2061\\theta,\n$$\n\nfor $d=1,\u2026,p.$\n\n15. Two Parabolas $(X,Y)\\inR^{p}\\timesR$: $\u03f5\u223c\ud835\udcb0(0,1),U\u223c\u212c(0.5)$,\n\n$$\nX\u223c\ud835\udcb0(\u22121,1)^{p},Y=((w^{T}X)^{2}+2\u03ba\u03f5)\u22c5(U\u2212\\frac{1}{2}).\n$$\n\n16. Circle $(X,Y)\\inR^{p}\\timesR:U\u223c\ud835\udcb0(\u22121,1)^{p},\u03f5\u223c\ud835\udca9(0,I_{p}),r=1,$\n\n$$\nX_{[d]}=r(sin\u2061(\\piU_{[d+1]})\\prodj=1dcos\u2061(\\piU_{[j]})+0.4\u03f5_{[d]})ford=1,\u2026,p\u22121,X_{[p]}=r(\\prodj=1pcos\u2061(\\piU_{[j]})+0.4\u03f5_{[p]}),Y=sin\u2061(\\piU_{[1]}).\n$$\n\n17. Ellipse $(X,Y)\\inR^{p}\\timesR$: Same as above except $r=5$.\n\n18. Diamond $(X,Y)\\inR^{p}\\timesR^{p}$: Same as 'Square' except $\\theta=\u2212\\frac{\\pi}{4}$.\n\n19. Multiplicative Noise $(x,y)\\inR^{p}\\timesR^{p}:u\u223c\ud835\udca9(0,I_{p}),$\n\n$$\nx\u223c\ud835\udca9(0,I_{p}),y_{[d]}=u_{[d]}x_{[d]}ford=1,\u2026,p.\n$$\n\n20. Multimodal Independence $(X,Y)\\inR^{p}\\timesR^{p}:LetU\u223c\ud835\udca9(0,I_{p}),V\u223c\ud835\udca9(0,I_{p}),$$U^{\u2032}\u223c\u212c(0.5)^{p},V^{\u2032}\u223c\u212c(0.5)^{p}$. Then\n\n$$\nX=U/3+2U^{\u2032}\u22121,Y=V/3+2V^{\u2032}\u22121.\n$$\n\nFor each distribution, $X$ and $Y$ are dependent except (20); for some relationships (8,14,16-18) they are independent upon conditioning on the respective auxiliary variables, while for others they are 'directly' dependent. A visualization of each dependency with $D=D_{y}=1$ is shown in Figure 2\u2014figure supplement 1.\n\nFor the increasing dimension simulation in the main paper, we always set $\u03ba=0$ and $n=100$, with $p$ increasing. Note that $q=p$ for types 4, 10, 12, 13, 14, 18, 19, 20,, otherwise $q=1$. The decaying vector $w$ is utilized for $p>1$ to make the high-dimensional relationships more difficult (otherwise, additional dimensions only add more signal). For the one-dimensional simulations, we always set $p=q=1$, $\u03ba=1$ and $n=100$.\n",
+      "created_at": "2025-12-02T08:03:27.449278Z"
+    },
+    {
+      "id": "64dbc457-8af1-45c8-b394-b27a7f99d2ed",
+      "submission_id": "ab675d11-f3e4-4e46-b027-a0e67992cdaa",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Dane Taylor, University of Buffalo United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.41690.029](https://doi.org/10.7554/eLife.41690.029)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Discovering and Deciphering Relationships Across Disparate Data Modalities\" for consideration by eLife. Your article has been reviewed by two peer reviewers, and the evaluation has been overseen by a Reviewing Editor, Dane Taylor, and a Senior Editor, Joshua Gold. The following individual involved in the review of your submission has agreed to reveal their identity: James D Wilson (Reviewer #2).\n\nThe Reviewers and Reviewing Editor have discussed the reviews with one another and generally found the paper to be well written, clearly organized, and an important advancement to the data-analytics community. While we do not accept the article for publication in its current form, we invite you to resubmit the manuscript after taking the following issues into consideration.\n\nSummary:\n\nIn this work, the authors Vogelstein et al. introduce a new technique called Multiscale Graph Correlation (MGC) to discover (i.e., statistically infer using locally biased, distance-based hypothesis testing) and decipher (e.g., study the geometry of) pairwise relationships between different modalities of a dataset. Their approach is straightforward, principled, and computationally reasonable. It improves upon widely used relationship-inference techniques including test statistics for detecting linear relationships (e.g., Pearson's correlation coefficient) and nonlinear relationships (e.g., distance-correlation-based analyses including kNN-based methods, kernel-based methods and Mantel's test). Specifically, it provides an improved null-hypothesis relationship-test statistic that requires fewer samples and can be implemented at a marginal increase in computational cost [the algorithm scales as O(n2log n) for n data points. The authors study the MGC approach using a synthetic dataset comprised on 20 models, finding MGC to typically outperform competing approaches. In addition to identifying pairwise relationships between datasets, the MGC approach is a multiscale analysis and identifies the spatial scale at which the relationship's inference is most powerful. In doing so, the approach yields an MGC-map that provides rich insight into the nature of the relationship (particularly its geometry). To conclude, the authors apply the MGC test statistic to explore relationships for three biological datasets: brain activity and personality, brain connectivity and creativity, and proteomic biomarkers and cancers.\n\nEssential revisions:\n\n1) The experimental section is lacking sufficient discussion and citation to the literature on related scientific studies. For example, there are several statements in paragraph 2 of subsection \u201cMGC Identifies Potential Cancer Proteomics Biomarkers\u201d that need citation. (Discussion and citations for the brain study also appear to be missing.)\n\n2) The authors should provide more detail about how this method scales up to larger datasets. It should be noted that the provided examples are restricted to small datasets, n\\le1000. What are the practical limitations on how you might adapt your algorithm to larger data? It would be helpful to provide further results on computational time, similar to Table 4 in the Appendix. In particular, can the authors provide numerical support for their O(n2log n) scaling result.\n\n3) The proteomics study and discussion is lacking exploration. For example: Were any biomarkers besides neurogranin identified as significant and biologically relevant? What are some of the top hits in Panc vs All and Panc VS norm individually? Also, what are some of the top hits for both of these comparisons? Do these top hits also make sense biologically? Also, you mention that \"the rest of the global methods did not identify any markers.\" Even if no markers were identified to be statistically significant with other methods, could you still consider their relative ranking? In particular, does neurogranin appear in other methods as one of the more important biomarkers? What are the other additional top hits identified by other methods? Where do those hits appear on the scatter plot in Figure 4C?\n\n4) Step 3 of the MGC algorithm (see subsection \u201cThe Multiscale Graph Correlation Procedure\u201d) could use further discussion/motivation. First, the local generalized correlation is normalized in the Appendix but not in the subsection \u201cThe Multiscale Graph Correlation Procedure\u201d, which is confusing. Second, the local generalized distance correlations are computed using the intersection of the two graphs (the k-nn and the l-nn graphs). That is, the product of terms A(i,j) Gk(i,j) B(i,j) Hl(i,j) is nonzero if (i,j) are in the \"closest\" neighborhood for both the graph associated with adjacency matrix Gk as well as that associated with Hl. Could this be too stringent? That is, couldn't there be a significant correlation between two data sets where only one of the data modality coordinates is in the nearest neighbors? In particular, an entry\n\nA(i,j) Gk(i,j) B(i,j) Hl(i,j)\n\nis treated as the same in the following 3 situations:\n\na) Gk(i,j) = Hl(i,j) = 0\n\nb) Gk(i,j) = 0, Hl(i,j) = 1\n\nc) Gk(i,j) = 1, Hl(i,j) = 0\n\nShouldn't case (a) be treated differently than cases (b) and (c)? It may be useful for the authors to discuss this and explain their choice.\n\n5) For the original choice of k-nearest neighbors, in practice, how does one choose the distance metric (of course Euclidean is often selected by default)? I know it is context dependent, but is there any general data driven advice for this? The reason why I state this is that one could, if they wanted, basically p-value hunt by choosing the right metric to give a small p-value.\n",
+      "created_at": "2025-12-02T08:03:27.449278Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T08:03:27.449278Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T08:03:27.449278Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "f8405461-da87-4442-9999-8761740691c7",
+      "content_id": "782be8bc-1e4b-42e6-8cfc-c0130faef6a5",
+      "claim_id": "C1",
+      "claim": "Multiscale Graph Correlation (MGC) is a dependence test that juxtaposes disparate data science techniques, including k-nearest neighbors, kernel methods, and multiscale analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "Our approach, 'Multiscale Graph Correlation' (MGC), is a dependence test that juxtaposes disparate data science techniques, including k-nearest neighbors, kernel methods, and multiscale analysis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the abstract as a description of the method.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:03:27.449278Z"
+    },
+    {
+      "id": "8dc6983a-df43-4d42-acf9-ce7dd4b62325",
+      "content_id": "782be8bc-1e4b-42e6-8cfc-c0130faef6a5",
+      "claim_id": "C2",
+      "claim": "Other methods may require double or triple the number of samples to achieve the same statistical power as MGC in a benchmark suite including high-dimensional and nonlinear relationships, with dimensionality ranging from 1 to 1000.",
+      "claim_type": "EXPLICIT",
+      "source": "Other methods may require double or triple the number of samples to achieve the same statistical power as MGC in a benchmark suite including high-dimensional and nonlinear relationships, with dimensionality ranging from 1 to 1000.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by simulation results presented in the manuscript, including Table 1 and Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:03:27.449278Z"
+    },
+    {
+      "id": "26c8e24a-297f-47f9-8b11-2a03d1e1416e",
+      "content_id": "782be8bc-1e4b-42e6-8cfc-c0130faef6a5",
+      "claim_id": "C3",
+      "claim": "MGC uniquely characterizes the latent geometry underlying the relationship, while maintaining computational efficiency.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, MGC uniquely characterizes the latent geometry underlying the relationship, while maintaining computational efficiency.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the MGC-Map analysis shown in Figure 3 and the computational complexity analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:03:27.449278Z"
+    },
+    {
+      "id": "d9784994-3b46-42f8-8e15-265c9c7cfbd6",
+      "content_id": "782be8bc-1e4b-42e6-8cfc-c0130faef6a5",
+      "claim_id": "C4",
+      "claim": "In real data, including brain imaging and cancer genetics, MGC detects the presence of a dependency and provides guidance for the next experiments to conduct.",
+      "claim_type": "EXPLICIT",
+      "source": "In real data, including brain imaging and cancer genetics, MGC detects the presence of a dependency and provides guidance for the next experiments to conduct.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated through the brain imaging experiments (Table 2, Figure 4A-B) and cancer proteomics experiments (Figure 4C-D).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:03:27.449278Z"
+    },
+    {
+      "id": "69291267-1225-4976-a694-32ff79b82ca2",
+      "content_id": "782be8bc-1e4b-42e6-8cfc-c0130faef6a5",
+      "claim_id": "C5",
+      "claim": "Pearson's Product-Moment Correlation was published in 1895.",
+      "claim_type": "EXPLICIT",
+      "source": "One of the first approaches for determining whether two properties are related to\u2014or statistically dependent on\u2014each other is Pearson's Product-Moment Correlation (published in 1895; Pearson, 1895).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a historical fact supported by citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:03:27.449278Z"
+    },
+    {
+      "id": "f28f82da-f2f4-42a8-9eae-27e9d616e8a1",
+      "content_id": "782be8bc-1e4b-42e6-8cfc-c0130faef6a5",
+      "claim_id": "C6",
+      "claim": "Distance correlation test (Dcorr) was shown to be able to detect any dependency with sufficient observations, at arbitrary dimensions, and structured data under a proper distance metric.",
+      "claim_type": "EXPLICIT",
+      "source": "'Energy statistics', and in particular the distance correlation test (Dcorr), was recently shown to be able to detect any dependency with sufficient observations, at arbitrary dimensions, and structured data under a proper distance metric (Sz\u00e9kely et al., 2007; Sz\u00e9kely and Rizzo, 2009; Szekely and Rizzo, 2013; Lyons, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:03:27.449278Z"
+    },
+    {
+      "id": "33fb5270-2100-4a44-a967-3f1f6676076f",
+      "content_id": "782be8bc-1e4b-42e6-8cfc-c0130faef6a5",
+      "claim_id": "C7",
+      "claim": "The Hilbert Schmidt Independence Criterion (Hsic) has the same theoretical guarantees as distance correlation and is shown to be a kernel version of the energy statistics.",
+      "claim_type": "EXPLICIT",
+      "source": "Another set of methods, referred to a 'kernel mean embedding' approaches, including the Hilbert Schmidt Independence Criterion (Hsic) (Gretton and Gyorfi, 2010; Muandet et al., 2017), have the same theoretical guarantees, which is shown to be a kernel version of the energy statistics (Sejdinovic et al., 2013; Shen and Vogelstein, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior theoretical work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:03:27.449278Z"
+    },
+    {
+      "id": "5776dbad-8109-404f-b8bb-0604aff3506c",
+      "content_id": "782be8bc-1e4b-42e6-8cfc-c0130faef6a5",
+      "claim_id": "C8",
+      "claim": "No test performs particularly well on high-dimensional nonlinear data with typical sample sizes.",
+      "claim_type": "EXPLICIT",
+      "source": "But no test performs particularly well on high-dimensional nonlinear data with typical sample sizes, which characterizes a large fraction of real data challenges in the current big data era.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the review of existing methods and motivates the development of MGC.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:03:27.449278Z"
+    },
+    {
+      "id": "2d296784-996e-4037-adff-62c558c78af0",
+      "content_id": "782be8bc-1e4b-42e6-8cfc-c0130faef6a5",
+      "claim_id": "C9",
+      "claim": "Existing dependency tests do not attempt to further characterize the dependency structure.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, to our knowledge, existing dependency tests do not attempt to further characterize the dependency structure.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a gap in existing methods based on the authors' knowledge of the field.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:03:27.449278Z"
+    },
+    {
+      "id": "7b5cecc9-4743-4b9a-b574-703ea623bfa0",
+      "content_id": "782be8bc-1e4b-42e6-8cfc-c0130faef6a5",
+      "claim_id": "C11",
+      "claim": "MGC is valid and universally consistent for dependence testing against all distributions of finite second moments.",
+      "claim_type": "EXPLICIT",
+      "source": "In a complementary manuscript (Shen et al., 2018), we established the theoretical properties of Mgc, proving its validity and universal consistency for dependence testing against all distributions of finite second moments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a theoretical result proven in a companion paper.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:03:27.449278Z"
+    },
+    {
+      "id": "577021eb-54f6-45e6-ace4-13776f39c07b",
+      "content_id": "782be8bc-1e4b-42e6-8cfc-c0130faef6a5",
+      "claim_id": "C12",
+      "claim": "MGC achieves the highest (or close to the highest) power given 100 samples for each relationship and dimensionality in the benchmark suite.",
+      "claim_type": "EXPLICIT",
+      "source": "Figure 2 shows that Mgc achieves the highest (or close to the highest) power given 100 samples for each relationship and dimensionality.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by the simulation results shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:03:27.449278Z"
+    },
+    {
+      "id": "00262e99-f196-4916-aa70-67661d9d3e93",
+      "content_id": "782be8bc-1e4b-42e6-8cfc-c0130faef6a5",
+      "claim_id": "C13",
+      "claim": "For monotone relationships (type 1\u20135), traditional correlation methods (Pearson, RV, Cca, Spearman, Kendall) always perform the best.",
+      "claim_type": "EXPLICIT",
+      "source": "More specifically, traditional correlation methods (Pearson, RV, Cca, Spearman, Kendall) always perform the best in monotonic simulations, distance-based methods including Mcorr, Dcorr, Mgc, Hhg and Hsic are slightly worse, while Mic and Mantel are the worst.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the sample size analysis presented in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:03:27.449278Z"
+    },
+    {
+      "id": "bebf7df5-440e-4b8c-b081-f8997f46a6f0",
+      "content_id": "782be8bc-1e4b-42e6-8cfc-c0130faef6a5",
+      "claim_id": "C14",
+      "claim": "For non-monotonic relationships, Hhg and MGC require the fewest samples.",
+      "claim_type": "EXPLICIT",
+      "source": "For non-monotonic relationships, traditional correlations fail to detect the existence of dependencies, Dcorr, Mcorr, and Mic, do reasonably well, but Hhg and Mgc require the fewest samples.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the sample size analysis presented in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:03:27.449278Z"
+    },
+    {
+      "id": "e55830c1-0f4e-4108-a112-97849012cc90",
+      "content_id": "782be8bc-1e4b-42e6-8cfc-c0130faef6a5",
+      "claim_id": "C15",
+      "claim": "In high-dimensional non-monotonic relationships, the second best universally consistent test (Hhg) requires nearly double as many samples as MGC.",
+      "claim_type": "EXPLICIT",
+      "source": "In the high-dimensional non-monotonic relationships that motivated this work, and are common in biomedicine, Mgc significantly outperforms other methods. The second best test that is universally consistent (Hhg) requires nearly double as many samples as Mgc, demonstrating that Mgc could half the time and cost of experiments designed to discover relationships at a given effect size.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the sample size analysis presented in Table 1.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:03:27.449278Z"
+    },
+    {
+      "id": "1dc6cfd3-d0fd-4791-9f0b-4719a959a943",
+      "content_id": "782be8bc-1e4b-42e6-8cfc-c0130faef6a5",
+      "claim_id": "C18",
+      "claim": "For the monotonic dependencies (1-5), the optimal scale is always the largest scale, that is the global one.",
+      "claim_type": "EXPLICIT",
+      "source": "For the monotonic dependencies (1-5), the optimal scale is always the largest scale, that is the global one.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is observed from the MGC-Maps shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:03:27.449278Z"
+    },
+    {
+      "id": "960e06b8-2be2-49b7-bc29-b42ea1f04058",
+      "content_id": "782be8bc-1e4b-42e6-8cfc-c0130faef6a5",
+      "claim_id": "C19",
+      "claim": "For all non-monotonic dependencies (6-19), MGC chooses smaller scales.",
+      "claim_type": "EXPLICIT",
+      "source": "For all non-monotonic dependencies (6-19), Mgc chooses smaller scales.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is observed from the MGC-Maps shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:03:27.449278Z"
+    },
+    {
+      "id": "8db9dd44-5436-4d70-a2ad-0458ae31741e",
+      "content_id": "782be8bc-1e4b-42e6-8cfc-c0130faef6a5",
+      "claim_id": "C20",
+      "claim": "Similar dependencies have similar MGC-Maps and often similar optimal scales.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, similar dependencies have similar Mgc-Maps and often similar optimal scales.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by examples in Figure 3, such as logarithmic and fourth root functions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:03:27.449278Z"
+    },
+    {
+      "id": "aea4780e-8758-4b85-93a8-a500e9841dc3",
+      "content_id": "782be8bc-1e4b-42e6-8cfc-c0130faef6a5",
+      "claim_id": "C21",
+      "claim": "The sample MGC-Map converges to the true MGC-Map provided by the underlying joint distribution of the data.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, in Shen and Vogelstein, 2018, we proved that the sample Mgc-Map (which Mgc estimates) converges to the true Mgc-Map provided by the underlying joint distribution of the data.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a theoretical result proven in a companion paper.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:03:27.449278Z"
+    },
+    {
+      "id": "be6d13a6-e06a-46ef-9844-54924597eda0",
+      "content_id": "782be8bc-1e4b-42e6-8cfc-c0130faef6a5",
+      "claim_id": "C22",
+      "claim": "MGC does not incur large computational costs and has a similar complexity as existing methods.",
+      "claim_type": "EXPLICIT",
+      "source": "Mgc does not incur large computational costs and has a similar complexity as existing methods.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the computational complexity analysis showing O(n\u00b2log n) time.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:03:27.449278Z"
+    },
+    {
+      "id": "ae350c40-a4ac-4d4d-9769-9682634d8f91",
+      "content_id": "782be8bc-1e4b-42e6-8cfc-c0130faef6a5",
+      "claim_id": "C26",
+      "claim": "MGC is able to yield a significant p-value (< 0.05) for the relationship between resting-state functional magnetic resonance (rs-fMRI) activity and personality, whereas all previously proposed global dependence tests under consideration (Mantel, Dcorr, Mcorr, or Hhg) fail to detect dependence at a significance level of 0.05.",
+      "claim_type": "EXPLICIT",
+      "source": "Mgc is able to yield a significant p-value (< 0.05), whereas all previously proposed global dependence tests under consideration (Mantel, Dcorr, Mcorr, or Hhg) fail to detect dependence at a significance level of 0.05.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by the p-values shown in Table 2 for the Activity vs Personality experiment.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:03:27.449278Z"
+    },
+    {
+      "id": "1b1a5f4c-7f02-460c-a378-9f5ab2c89519",
+      "content_id": "782be8bc-1e4b-42e6-8cfc-c0130faef6a5",
+      "claim_id": "C27",
+      "claim": "For brain activity versus personality, the optimal scale indicates that the dependency is strongly nonlinear.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, the Mgc-Map provides a characterization of the dependence, for which the optimal scale indicates that the dependency is strongly nonlinear.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the MGC-Map shown in Figure 4A.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:03:27.449278Z"
+    },
+    {
+      "id": "968c63be-4e59-4a62-ab30-6ef892015eb0",
+      "content_id": "782be8bc-1e4b-42e6-8cfc-c0130faef6a5",
+      "claim_id": "C28",
+      "claim": "MGC is able to ascertain a dependency between the whole brain network and the subject's creativity.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, we investigated the relationship between diffusion MRI derived connectivity and creativity (Jung et al., 2009). The second row of Table 2 shows that Mgc is able to ascertain a dependency between the whole brain network and the subject's creativity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by the p-values shown in Table 2 for the Connectivity vs Creativity experiment.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:03:27.449278Z"
+    },
+    {
+      "id": "0edfbea6-43b0-48e0-93cb-bc353594e5b3",
+      "content_id": "782be8bc-1e4b-42e6-8cfc-c0130faef6a5",
+      "claim_id": "C29",
+      "claim": "For brain connectivity versus creativity, the MGC-Map closely resembles a linear relationship where the optimal scale is global.",
+      "claim_type": "EXPLICIT",
+      "source": "The Mgc-Map in Figure 4B closely resembles a linear relationship where the optimal scale is global.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is observed from the MGC-Map shown in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:03:27.449278Z"
+    },
+    {
+      "id": "cdf8ed78-d0f9-41b3-abb6-671c85bd0118",
+      "content_id": "782be8bc-1e4b-42e6-8cfc-c0130faef6a5",
+      "claim_id": "C30",
+      "claim": "MGC achieves a false positive rate of 5% when using a significance level of 0.05 on brain activity data.",
+      "claim_type": "EXPLICIT",
+      "source": "In a separate experiment, we assessed the frequency with which Mgc obtained false positive results using brain activity data, based on experiments from Eklund et al. (2012); Eklund et al. (2016). Appendix 1\u2014figure 1 shows that Mgc achieves a false positive rate of 5% when using a significance level of 0.05, implying that it correctly controls for false positives, unlike typical parametric methods on these data.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by the false positive rate analysis referenced in the text.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:03:27.449278Z"
+    },
+    {
+      "id": "cc9628cd-e354-4db6-b08d-fbde5f2cc1b3",
+      "content_id": "782be8bc-1e4b-42e6-8cfc-c0130faef6a5",
+      "claim_id": "C31",
+      "claim": "MGC identified neurogranin as a protein that exhibits a strong dependency specifically with pancreatic cancer.",
+      "claim_type": "EXPLICIT",
+      "source": "Figure 4C shows the p-value of each peptide assigned by Mgc, which reveals one particular protein, neurogranin, that exhibits a strong dependency specifically with pancreatic cancer.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by the p-value analysis shown in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:03:27.449278Z"
+    },
+    {
+      "id": "5d773a88-22b9-442e-92dc-1cac5f73a786",
+      "content_id": "782be8bc-1e4b-42e6-8cfc-c0130faef6a5",
+      "claim_id": "C32",
+      "claim": "Neurogranin is a potentially valuable biomarker for pancreatic cancer because it is exclusively expressed in brain tissue among normal tissues and has not been linked with any other cancer type.",
+      "claim_type": "EXPLICIT",
+      "source": "Subsequent literature searches reveal that neurogranin is a potentially valuable biomarker for pancreatic cancer because it is exclusively expressed in brain tissue among normal tissues and has not been linked with any other cancer type (Yang et al., 2015; Willemse et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:03:27.449278Z"
+    },
+    {
+      "id": "37acf535-a8db-4aa6-86a3-46597067bde3",
+      "content_id": "782be8bc-1e4b-42e6-8cfc-c0130faef6a5",
+      "claim_id": "C33",
+      "claim": "The peptide selected by MGC (neurogranin) works better than any other subset of the peptides selected by Hsic or Hhg in k-nearest-neighbor classification, in terms of both fewer false positives and negatives.",
+      "claim_type": "EXPLICIT",
+      "source": "Figure 4D shows that the peptide selected by Mgc (neurogranin) works better than any other subset of the peptides selected by Hsic or Hhg, in terms of both fewer false positives and negatives.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by the classification results shown in Figure 4D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:03:27.449278Z"
+    },
+    {
+      "id": "0989d95c-776d-446e-95a2-9d1db70c8f3e",
+      "content_id": "782be8bc-1e4b-42e6-8cfc-c0130faef6a5",
+      "claim_id": "C34",
+      "claim": "Dcorr, Mcorr, Hsic, and Hhg are all consistent against any joint distribution of finite second moments and finite dimension.",
+      "claim_type": "EXPLICIT",
+      "source": "Under the regularity condition that the data distribution has finite second moment, the first four tests are universally consistent, whereas the other tests are not.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated based on theoretical properties of these tests.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:03:27.449278Z"
+    },
+    {
+      "id": "f30ebd82-fe91-42cd-b4ba-446c55f418a4",
+      "content_id": "782be8bc-1e4b-42e6-8cfc-c0130faef6a5",
+      "claim_id": "C35",
+      "claim": "The benchmark suite includes 20 relationships, including different polynomial (linear, quadratic, cubic), trigonometric (sinusoidal, circular, ellipsoidal, spiral), geometric (square, diamond, W-shape), and other functions.",
+      "claim_type": "EXPLICIT",
+      "source": "We generate an extensive benchmark suite of 20 relationships, including different polynomial (linear, quadratic, cubic), trigonometric (sinusoidal, circular, ellipsoidal, spiral), geometric (square, diamond, W-shape), and other functions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the simulation setup used for evaluation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:03:27.449278Z"
+    },
+    {
+      "id": "d4a9984a-5cbb-4af2-a003-3fb44b8c102a",
+      "content_id": "782be8bc-1e4b-42e6-8cfc-c0130faef6a5",
+      "claim_id": "C36",
+      "claim": "The benchmark suite includes and extends the simulated settings from previous dependence testing work.",
+      "claim_type": "EXPLICIT",
+      "source": "This suite includes and extends the simulated settings from previous dependence testing work (Sz\u00e9kely et al., 2007; Simon and Tibshirani, 2012; Gorfine et al., 2012; Heller et al., 2013; Szekely and Rizzo, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:03:27.449278Z"
+    },
+    {
+      "id": "869169e6-5335-4b9a-b38c-5c5dc69a1d8c",
+      "content_id": "782be8bc-1e4b-42e6-8cfc-c0130faef6a5",
+      "claim_id": "C37",
+      "claim": "MGC can be thought of as a regularized or sparsified variant of distance or kernel methods.",
+      "claim_type": "EXPLICIT",
+      "source": "First, Mgc can be thought of as a regularized or sparsified variant of distance or kernel methods.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the method provided by the authors.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:03:27.449278Z"
+    },
+    {
+      "id": "cb4c1362-f323-40a9-8a87-7c29bb296024",
+      "content_id": "782be8bc-1e4b-42e6-8cfc-c0130faef6a5",
+      "claim_id": "C39",
+      "claim": "Deep learning can be thought of as metric learning.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, deep learning can be thought of as metric learning (Giryes et al., 2015), and generative adversarial networks (Goodfellow et al., 2014) are implicitly testing for equality, which is closely related to dependence (Sutherland et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citations to prior work.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:03:27.449278Z"
+    },
+    {
+      "id": "ecbe9760-6f70-47aa-8c04-408bd3c21f0c",
+      "content_id": "782be8bc-1e4b-42e6-8cfc-c0130faef6a5",
+      "claim_id": "C40",
+      "claim": "MGC can be adapted for goodness-of-fit, analysis of variance, conditional dependence, and feature selection.",
+      "claim_type": "EXPLICIT",
+      "source": "Third, energy statistics provide state of the art approaches to other problems, including goodness-of-fit (Sz\u00e9kely and Rizzo, 2005), analysis of variance (Rizzo and Sz\u00e9kely, 2010), conditional dependence (Sz\u00e9kely and Rizzo, 2014; Wang et al., 2015), and feature selection (Li et al., 2012; Zhong and Zhu, 2015), so Mgc can be adapted for them as well.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citations to prior work on energy statistics.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:03:27.449278Z"
+    },
+    {
+      "id": "ac2e71b0-fec0-4328-a946-347062345e74",
+      "content_id": "782be8bc-1e4b-42e6-8cfc-c0130faef6a5",
+      "claim_id": "C41",
+      "claim": "MGC can implement a two-sample (or generally the K-sample) test.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, Mgc can also implement a two-sample (or generally the K-sample) test (Szekely and Rizzo, 2004; Heller et al., 2016; Shen and Vogelstein, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:03:27.449278Z"
+    },
+    {
+      "id": "19a1648d-9c70-4ac8-bc77-7e51cee2e45b",
+      "content_id": "782be8bc-1e4b-42e6-8cfc-c0130faef6a5",
+      "claim_id": "C42",
+      "claim": "The default metric choice of MGC is always the Euclidean distance.",
+      "claim_type": "EXPLICIT",
+      "source": "The default metric choice of Mgc in this paper is always the Euclidean distance, but other metric choices may be more appropriate in different fields, and using the strong negative type metric as specified in Lyons (2013) guarantees consistency.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the default implementation choice.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:03:27.449278Z"
+    },
+    {
+      "id": "6aa8ad9f-bc70-40eb-b013-eb85725e2278",
+      "content_id": "782be8bc-1e4b-42e6-8cfc-c0130faef6a5",
+      "claim_id": "C43",
+      "claim": "Using the strong negative type metric guarantees consistency for MGC.",
+      "claim_type": "EXPLICIT",
+      "source": "The default metric choice of Mgc in this paper is always the Euclidean distance, but other metric choices may be more appropriate in different fields, and using the strong negative type metric as specified in Lyons (2013) guarantees consistency.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citation to theoretical work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:03:27.449278Z"
+    },
+    {
+      "id": "fb40c948-e3c6-4cfb-bf38-0e67ae16d11d",
+      "content_id": "782be8bc-1e4b-42e6-8cfc-c0130faef6a5",
+      "claim_id": "C44",
+      "claim": "MGC is the first dependence test to take a step towards valid post-selection inference.",
+      "claim_type": "EXPLICIT",
+      "source": "To our knowledge, Mgc is the first dependence test to take a step towards valid post-selection inference.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a claim about the novelty of the method.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:03:27.449278Z"
+    },
+    {
+      "id": "65541757-ff04-4dfb-8d10-81406f34a953",
+      "content_id": "782be8bc-1e4b-42e6-8cfc-c0130faef6a5",
+      "claim_id": "C45",
+      "claim": "MGC currently requires space and time that are quadratic with respect to the number of samples.",
+      "claim_type": "EXPLICIT",
+      "source": "Mgc currently requires space and time that are quadratic with respect to the number of samples, which can be costly for very large data.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a limitation of the current implementation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:03:27.449278Z"
+    },
+    {
+      "id": "71172c3e-3a80-43a4-b711-20dda7da6235",
+      "content_id": "782be8bc-1e4b-42e6-8cfc-c0130faef6a5",
+      "claim_id": "C46",
+      "claim": "Source code for MGC is available in MATLAB, R, and Python from https://mgc.neurodata.io/.",
+      "claim_type": "EXPLICIT",
+      "source": "Source code is available in MATLAB, R, and Python from https://mgc.neurodata.io/ (Bridgeford et al., 2018; experiments archived at https://github.com/elifesciences-publications/MGC-paper).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This provides information about code availability.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:03:27.449278Z"
+    },
+    {
+      "id": "3e062bc8-cb5e-456e-9e07-cfb3343b20f8",
+      "content_id": "782be8bc-1e4b-42e6-8cfc-c0130faef6a5",
+      "claim_id": "C54",
+      "claim": "Mcorr always has zero mean under independence.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus it enjoys the same theoretical consistency as Dcorr and always has zero mean under independence.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a property of Mcorr.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:03:27.449278Z"
+    },
+    {
+      "id": "a19e6839-16ab-438a-add6-1a2f51a6fdb4",
+      "content_id": "782be8bc-1e4b-42e6-8cfc-c0130faef6a5",
+      "claim_id": "C55",
+      "claim": "In the linear relationship between cloud density and grass wetness, when a pair of observations are close to each other in cloud density, they also tend to be close to each other in grass wetness.",
+      "claim_type": "EXPLICIT",
+      "source": "Under the linear relationship (top panels), when a pair of observations are close to each other in cloud density, they also tend to be close to each other in grass wetness (for example, observations 1 and 2 highlighted in black in Figure 1A, and distances between them in Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is illustrated in Figure 1 and described in the text.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:03:27.449278Z"
+    },
+    {
+      "id": "8e638d0c-a035-4229-82ac-7adf81c2b37d",
+      "content_id": "782be8bc-1e4b-42e6-8cfc-c0130faef6a5",
+      "claim_id": "C56",
+      "claim": "In the linear relationship between cloud density and grass wetness, when a pair of observations are far from each other in cloud density, they also tend to be far from each other in grass wetness.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, when a pair of observations are far from each other in cloud density, they also tend to be far from each other in grass wetness (see for example, distances between observations 2 and 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is illustrated in Figure 1 and described in the text.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:03:27.449278Z"
+    },
+    {
+      "id": "f038a20f-cd2e-45e9-9f23-57be223bce82",
+      "content_id": "782be8bc-1e4b-42e6-8cfc-c0130faef6a5",
+      "claim_id": "C57",
+      "claim": "In the nonlinear (spiral) relationship between cloud density and grass wetness, when a pair of observations are close to each other in cloud density, they also tend to be close to each other in grass wetness.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, when a pair of observations are close to each other in cloud density, they also tend to be close to each other in grass wetness (see points 1 and 2 again).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is illustrated in Figure 1 and described in the text.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:03:27.449278Z"
+    },
+    {
+      "id": "c9c61d38-fe7a-4ae3-8694-b883636eff2d",
+      "content_id": "782be8bc-1e4b-42e6-8cfc-c0130faef6a5",
+      "claim_id": "C58",
+      "claim": "In the nonlinear (spiral) relationship between cloud density and grass wetness, the same is not true for large distances.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the same is not true for large distances (see points 2 and 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is illustrated in Figure 1 and described in the text.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:03:27.449278Z"
+    },
+    {
+      "id": "16c5a784-516d-40e0-b333-2e00632d12aa",
+      "content_id": "782be8bc-1e4b-42e6-8cfc-c0130faef6a5",
+      "claim_id": "C59",
+      "claim": "In the linear relationship, the distance between every pair of points is informative with respect to the relationship.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, in the linear relationship, the distance between every pair of points is informative with respect to the relationship, while under the nonlinear relationship, only a subset of the distances are.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the analysis of the linear and spiral relationships in Figure 1.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:03:27.449278Z"
+    },
+    {
+      "id": "871ad404-5836-46a1-8bbc-4048cc2aa12b",
+      "content_id": "782be8bc-1e4b-42e6-8cfc-c0130faef6a5",
+      "claim_id": "C60",
+      "claim": "Under the nonlinear relationship, only a subset of the distances are informative.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, in the linear relationship, the distance between every pair of points is informative with respect to the relationship, while under the nonlinear relationship, only a subset of the distances are.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the analysis of the linear and spiral relationships in Figure 1.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:03:27.449278Z"
+    },
+    {
+      "id": "f9e5e2cf-a4ce-44d7-b3ce-e8916d518495",
+      "content_id": "782be8bc-1e4b-42e6-8cfc-c0130faef6a5",
+      "claim_id": "C61",
+      "claim": "For the linear relationship, the global scale is optimal, which is the scale that MGC selects and results in a p-value identical to Dcorr.",
+      "claim_type": "EXPLICIT",
+      "source": "For the linear relationship, the global scale is optimal, which is the scale that Mgc selects and results in a p-value identical to Dcorr.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated in Figure 1C for the linear relationship.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:03:27.449278Z"
+    },
+    {
+      "id": "0ad4423f-71af-4b90-ba7b-4e3d5ce6853a",
+      "content_id": "782be8bc-1e4b-42e6-8cfc-c0130faef6a5",
+      "claim_id": "C63",
+      "claim": "MGC uniquely detects dependence and characterizes the geometry in both linear and nonlinear relationships.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, Mgc uniquely detects dependence and characterizes the geometry in both relationships.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is concluded from the analysis of Figure 1.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:03:27.449278Z"
+    },
+    {
+      "id": "e4949dee-3f52-4013-ae81-78fb4bc9fb17",
+      "content_id": "782be8bc-1e4b-42e6-8cfc-c0130faef6a5",
+      "claim_id": "C64",
+      "claim": "Spiral relationships are prevalent in nature and mathematics (for example, shells, hurricanes, and galaxies).",
+      "claim_type": "EXPLICIT",
+      "source": "Although the relationship between clouds and grass is unlikely to be spiral, spiral relationships are prevalent in nature and mathematics (for example, shells, hurricanes, and galaxies), and are canonical in evaluations of manifold learning techniques (Lee and Verleysen, 2007), thereby motivating its use here.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as general knowledge with citation.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:03:27.449278Z"
+    },
+    {
+      "id": "a613c9e2-d2da-444b-9a00-b9ab4c351713",
+      "content_id": "782be8bc-1e4b-42e6-8cfc-c0130faef6a5",
+      "claim_id": "C65",
+      "claim": "Spiral relationships are canonical in evaluations of manifold learning techniques.",
+      "claim_type": "EXPLICIT",
+      "source": "Although the relationship between clouds and grass is unlikely to be spiral, spiral relationships are prevalent in nature and mathematics (for example, shells, hurricanes, and galaxies), and are canonical in evaluations of manifold learning techniques (Lee and Verleysen, 2007), thereby motivating its use here.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:03:27.449278Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "34c76fe8-3049-4330-bcc8-9d41c22eb26f",
+      "content_id": "782be8bc-1e4b-42e6-8cfc-c0130faef6a5",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "MGC is a dependence test that combines k-nearest neighbors, kernel methods, and multiscale analysis. The method is theoretically valid and universally consistent for distributions with finite second moments, with computational complexity O(n\u00b2log n), similar to existing methods.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C11, C21 establish the theoretical foundation through citation to a companion paper (Shen et al., 2018) proving validity and consistency. C22 provides computational complexity analysis. C43 and C54 describe specific theoretical properties. The theoretical results are appropriately delegated to a separate mathematical manuscript, which is standard practice.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T08:03:27.449278Z"
+    },
+    {
+      "id": "8b087499-53cf-43c8-a10a-d2394a208f6f",
+      "content_id": "782be8bc-1e4b-42e6-8cfc-c0130faef6a5",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "In a benchmark suite of 20 relationships across dimensions 1-1000, MGC achieves the highest or near-highest power with 100 samples. For high-dimensional non-monotonic relationships, other universally consistent methods require approximately double the sample size to achieve equivalent power.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims are supported by extensive simulation results (Figure 2, Table 1). The benchmark includes 20 diverse relationships (C35, C36) extending prior work. C12-C15 provide specific performance comparisons. However, the claim of 'double or triple' samples (C2, C15) appears to be based on median values across specific relationship types, which may not generalize uniformly. The simulations use fixed parameters (n=100, specific noise levels) that may not reflect all practical scenarios.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T08:03:27.449278Z"
+    },
+    {
+      "id": "2c7a8241-a755-4f64-bd7e-58e7aa74e847",
+      "content_id": "782be8bc-1e4b-42e6-8cfc-c0130faef6a5",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "MGC uniquely characterizes the latent geometry of relationships through the MGC-Map. For monotonic dependencies, the optimal scale is global; for non-monotonic dependencies, MGC selects smaller local scales. Similar dependencies produce similar MGC-Maps.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C18-C20 are supported by Figure 3 showing MGC-Maps for all 20 simulated relationships. C21 establishes theoretical convergence. Theorem 1 (referenced in text) proves that linear relationships yield global optimal scales. However, the interpretation of 'geometric characterization' (C3, C63) is somewhat subjective - the MGC-Map provides scale information but the connection to underlying geometry requires inference and may not be unique.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T08:03:27.449278Z"
+    },
+    {
+      "id": "8a7abdfe-c3bb-4fad-942a-093f4594bf31",
+      "content_id": "782be8bc-1e4b-42e6-8cfc-c0130faef6a5",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "In brain imaging data, MGC detects significant relationships between rs-fMRI activity and personality (p=0.043) where global methods fail, and between brain connectivity and creativity (p=0.011). MGC correctly controls false positive rates at 5% when \u03b1=0.05.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims are supported by Table 2 and Figure 4A-B. C26 shows MGC achieves p<0.05 while Dcorr, Mcorr, Hhg fail at this threshold. C28-C29 show detection of connectivity-creativity relationship with global optimal scale. C30 demonstrates proper false positive control. However, the activity-personality result (p=0.043) is marginally significant and close to the threshold. The sample sizes are not clearly stated in the claims, limiting assessment of statistical power. The interpretation of MGC-Maps as 'strongly nonlinear' (C27) vs 'linear' (C29) is qualitative.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T08:03:27.449278Z"
+    },
+    {
+      "id": "0b4563fb-668d-4bf8-9b78-01e0ce2687ab",
+      "content_id": "782be8bc-1e4b-42e6-8cfc-c0130faef6a5",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "MGC identified neurogranin as a protein with strong dependency specifically with pancreatic cancer. Literature searches suggest neurogranin is a potentially valuable biomarker. In k-NN classification, neurogranin selected by MGC achieves better true/false positive rates than peptides selected by Hsic or Hhg.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "C31 is supported by Figure 4C showing neurogranin with low p-value. C32 cites literature supporting biological plausibility. However, C33's classification validation is limited - it uses leave-one-out cross-validation on the same dataset used for discovery, which is circular and prone to overfitting. No independent validation cohort is provided. The claim that neurogranin 'has not been linked with any other cancer type' (C32) is a negative claim that's difficult to verify comprehensively. Multiple testing correction details are not provided in the claims.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T08:03:27.449278Z"
+    },
+    {
+      "id": "c324a104-1ab8-44e2-8617-3af587926267",
+      "content_id": "782be8bc-1e4b-42e6-8cfc-c0130faef6a5",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "In illustrative linear and spiral relationships between cloud density and grass wetness, MGC demonstrates that all pairwise distances are informative for linear relationships (selecting global scale), while only local distances are informative for nonlinear relationships (selecting local scale).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C55-C61 describe the pedagogical example in Figure 1, which effectively illustrates MGC's adaptive scale selection. The linear relationship shows global correlation (C55-C56, C59, C61) while the spiral shows local structure (C57-C58, C60). This is a constructed example designed to demonstrate the method's behavior, not an empirical validation. The example successfully motivates the approach but doesn't constitute evidence of real-world performance.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T08:03:27.449278Z"
+    },
+    {
+      "id": "84796a88-5197-461f-a654-8363e45d183c",
+      "content_id": "782be8bc-1e4b-42e6-8cfc-c0130faef6a5",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Prior dependence tests include Pearson (1895), Dcorr (universally consistent for finite second moments), and Hsic (kernel version of energy statistics). No existing test performs well on high-dimensional nonlinear data with typical sample sizes, and existing tests don't characterize dependency structure.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5-C7 and C34 accurately cite prior work on dependence testing methods and their theoretical properties. C8 and C9 represent the authors' assessment of gaps in existing methods, which motivates MGC development. These claims are appropriately supported by citations. However, C8's claim that 'no test performs particularly well' is somewhat subjective and depends on what constitutes 'typical sample sizes' and 'particularly well.' C9's claim about characterization is accurate to the authors' knowledge but represents a literature gap claim.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T08:03:27.449278Z"
+    },
+    {
+      "id": "4d4959fa-00fc-42fa-8fe8-c999664f276f",
+      "content_id": "782be8bc-1e4b-42e6-8cfc-c0130faef6a5",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "MGC's default implementation uses Euclidean distance, requires O(n\u00b2) space and time, and is available in MATLAB, R, and Python at https://mgc.neurodata.io/.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "C42 states the default metric choice with citation to consistency guarantees. C45 acknowledges computational limitations for very large datasets. C46 provides code availability information. These are straightforward implementation details that are verifiable and appropriately documented.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T08:03:27.449278Z"
+    },
+    {
+      "id": "34c27a09-1feb-41a5-a9d6-193eece47846",
+      "content_id": "782be8bc-1e4b-42e6-8cfc-c0130faef6a5",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "MGC can be interpreted as regularized distance/kernel methods and adapted for goodness-of-fit, ANOVA, conditional dependence, feature selection, and K-sample testing. MGC is the first dependence test addressing valid post-selection inference.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C37, C39, C40, C41 describe potential extensions and connections to other methods, supported by citations. However, these are largely speculative - the actual adaptations are not demonstrated in this work. C44's claim about 'first' for post-selection inference is a priority claim that's difficult to verify and may be overstated, as the permutation procedure doesn't fully solve post-selection inference problems (the scale selection still occurs on the same data used for testing). These represent discussion points rather than validated results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T08:03:27.449278Z"
+    },
+    {
+      "id": "0ca7de39-251c-4951-bdbb-1aeb5b6a6756",
+      "content_id": "782be8bc-1e4b-42e6-8cfc-c0130faef6a5",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Spiral relationships are prevalent in nature (shells, hurricanes, galaxies) and canonical in manifold learning evaluations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These claims (C64, C65) provide general scientific context with appropriate citation (Lee and Verleysen, 2007) to justify using spiral relationships in simulations. This is background knowledge appropriately cited.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T08:03:27.449278Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "f8405461-da87-4442-9999-8761740691c7",
+      "result_id": "34c76fe8-3049-4330-bcc8-9d41c22eb26f"
+    },
+    {
+      "claim_id": "7b5cecc9-4743-4b9a-b574-703ea623bfa0",
+      "result_id": "34c76fe8-3049-4330-bcc8-9d41c22eb26f"
+    },
+    {
+      "claim_id": "aea4780e-8758-4b85-93a8-a500e9841dc3",
+      "result_id": "34c76fe8-3049-4330-bcc8-9d41c22eb26f"
+    },
+    {
+      "claim_id": "be6d13a6-e06a-46ef-9844-54924597eda0",
+      "result_id": "34c76fe8-3049-4330-bcc8-9d41c22eb26f"
+    },
+    {
+      "claim_id": "6aa8ad9f-bc70-40eb-b013-eb85725e2278",
+      "result_id": "34c76fe8-3049-4330-bcc8-9d41c22eb26f"
+    },
+    {
+      "claim_id": "3e062bc8-cb5e-456e-9e07-cfb3343b20f8",
+      "result_id": "34c76fe8-3049-4330-bcc8-9d41c22eb26f"
+    },
+    {
+      "claim_id": "8dc6983a-df43-4d42-acf9-ce7dd4b62325",
+      "result_id": "8b087499-53cf-43c8-a10a-d2394a208f6f"
+    },
+    {
+      "claim_id": "577021eb-54f6-45e6-ace4-13776f39c07b",
+      "result_id": "8b087499-53cf-43c8-a10a-d2394a208f6f"
+    },
+    {
+      "claim_id": "00262e99-f196-4916-aa70-67661d9d3e93",
+      "result_id": "8b087499-53cf-43c8-a10a-d2394a208f6f"
+    },
+    {
+      "claim_id": "bebf7df5-440e-4b8c-b081-f8997f46a6f0",
+      "result_id": "8b087499-53cf-43c8-a10a-d2394a208f6f"
+    },
+    {
+      "claim_id": "e55830c1-0f4e-4108-a112-97849012cc90",
+      "result_id": "8b087499-53cf-43c8-a10a-d2394a208f6f"
+    },
+    {
+      "claim_id": "f30ebd82-fe91-42cd-b4ba-446c55f418a4",
+      "result_id": "8b087499-53cf-43c8-a10a-d2394a208f6f"
+    },
+    {
+      "claim_id": "d4a9984a-5cbb-4af2-a003-3fb44b8c102a",
+      "result_id": "8b087499-53cf-43c8-a10a-d2394a208f6f"
+    },
+    {
+      "claim_id": "26c8e24a-297f-47f9-8b11-2a03d1e1416e",
+      "result_id": "2c7a8241-a755-4f64-bd7e-58e7aa74e847"
+    },
+    {
+      "claim_id": "1dc6cfd3-d0fd-4791-9f0b-4719a959a943",
+      "result_id": "2c7a8241-a755-4f64-bd7e-58e7aa74e847"
+    },
+    {
+      "claim_id": "960e06b8-2be2-49b7-bc29-b42ea1f04058",
+      "result_id": "2c7a8241-a755-4f64-bd7e-58e7aa74e847"
+    },
+    {
+      "claim_id": "8db9dd44-5436-4d70-a2ad-0458ae31741e",
+      "result_id": "2c7a8241-a755-4f64-bd7e-58e7aa74e847"
+    },
+    {
+      "claim_id": "0ad4423f-71af-4b90-ba7b-4e3d5ce6853a",
+      "result_id": "2c7a8241-a755-4f64-bd7e-58e7aa74e847"
+    },
+    {
+      "claim_id": "ae350c40-a4ac-4d4d-9769-9682634d8f91",
+      "result_id": "8a7abdfe-c3bb-4fad-942a-093f4594bf31"
+    },
+    {
+      "claim_id": "1b1a5f4c-7f02-460c-a378-9f5ab2c89519",
+      "result_id": "8a7abdfe-c3bb-4fad-942a-093f4594bf31"
+    },
+    {
+      "claim_id": "968c63be-4e59-4a62-ab30-6ef892015eb0",
+      "result_id": "8a7abdfe-c3bb-4fad-942a-093f4594bf31"
+    },
+    {
+      "claim_id": "0edfbea6-43b0-48e0-93cb-bc353594e5b3",
+      "result_id": "8a7abdfe-c3bb-4fad-942a-093f4594bf31"
+    },
+    {
+      "claim_id": "cdf8ed78-d0f9-41b3-abb6-671c85bd0118",
+      "result_id": "8a7abdfe-c3bb-4fad-942a-093f4594bf31"
+    },
+    {
+      "claim_id": "cc9628cd-e354-4db6-b08d-fbde5f2cc1b3",
+      "result_id": "0b4563fb-668d-4bf8-9b78-01e0ce2687ab"
+    },
+    {
+      "claim_id": "5d773a88-22b9-442e-92dc-1cac5f73a786",
+      "result_id": "0b4563fb-668d-4bf8-9b78-01e0ce2687ab"
+    },
+    {
+      "claim_id": "37acf535-a8db-4aa6-86a3-46597067bde3",
+      "result_id": "0b4563fb-668d-4bf8-9b78-01e0ce2687ab"
+    },
+    {
+      "claim_id": "a19e6839-16ab-438a-add6-1a2f51a6fdb4",
+      "result_id": "c324a104-1ab8-44e2-8617-3af587926267"
+    },
+    {
+      "claim_id": "8e638d0c-a035-4229-82ac-7adf81c2b37d",
+      "result_id": "c324a104-1ab8-44e2-8617-3af587926267"
+    },
+    {
+      "claim_id": "f038a20f-cd2e-45e9-9f23-57be223bce82",
+      "result_id": "c324a104-1ab8-44e2-8617-3af587926267"
+    },
+    {
+      "claim_id": "c9c61d38-fe7a-4ae3-8694-b883636eff2d",
+      "result_id": "c324a104-1ab8-44e2-8617-3af587926267"
+    },
+    {
+      "claim_id": "16c5a784-516d-40e0-b333-2e00632d12aa",
+      "result_id": "c324a104-1ab8-44e2-8617-3af587926267"
+    },
+    {
+      "claim_id": "871ad404-5836-46a1-8bbc-4048cc2aa12b",
+      "result_id": "c324a104-1ab8-44e2-8617-3af587926267"
+    },
+    {
+      "claim_id": "f9e5e2cf-a4ce-44d7-b3ce-e8916d518495",
+      "result_id": "c324a104-1ab8-44e2-8617-3af587926267"
+    },
+    {
+      "claim_id": "69291267-1225-4976-a694-32ff79b82ca2",
+      "result_id": "84796a88-5197-461f-a654-8363e45d183c"
+    },
+    {
+      "claim_id": "f28f82da-f2f4-42a8-9eae-27e9d616e8a1",
+      "result_id": "84796a88-5197-461f-a654-8363e45d183c"
+    },
+    {
+      "claim_id": "33fb5270-2100-4a44-a967-3f1f6676076f",
+      "result_id": "84796a88-5197-461f-a654-8363e45d183c"
+    },
+    {
+      "claim_id": "5776dbad-8109-404f-b8bb-0604aff3506c",
+      "result_id": "84796a88-5197-461f-a654-8363e45d183c"
+    },
+    {
+      "claim_id": "2d296784-996e-4037-adff-62c558c78af0",
+      "result_id": "84796a88-5197-461f-a654-8363e45d183c"
+    },
+    {
+      "claim_id": "0989d95c-776d-446e-95a2-9d1db70c8f3e",
+      "result_id": "84796a88-5197-461f-a654-8363e45d183c"
+    },
+    {
+      "claim_id": "19a1648d-9c70-4ac8-bc77-7e51cee2e45b",
+      "result_id": "4d4959fa-00fc-42fa-8fe8-c999664f276f"
+    },
+    {
+      "claim_id": "65541757-ff04-4dfb-8d10-81406f34a953",
+      "result_id": "4d4959fa-00fc-42fa-8fe8-c999664f276f"
+    },
+    {
+      "claim_id": "71172c3e-3a80-43a4-b711-20dda7da6235",
+      "result_id": "4d4959fa-00fc-42fa-8fe8-c999664f276f"
+    },
+    {
+      "claim_id": "869169e6-5335-4b9a-b38c-5c5dc69a1d8c",
+      "result_id": "34c27a09-1feb-41a5-a9d6-193eece47846"
+    },
+    {
+      "claim_id": "cb4c1362-f323-40a9-8a87-7c29bb296024",
+      "result_id": "34c27a09-1feb-41a5-a9d6-193eece47846"
+    },
+    {
+      "claim_id": "ecbe9760-6f70-47aa-8c04-408bd3c21f0c",
+      "result_id": "34c27a09-1feb-41a5-a9d6-193eece47846"
+    },
+    {
+      "claim_id": "ac2e71b0-fec0-4328-a946-347062345e74",
+      "result_id": "34c27a09-1feb-41a5-a9d6-193eece47846"
+    },
+    {
+      "claim_id": "fb40c948-e3c6-4cfb-bf38-0e67ae16d11d",
+      "result_id": "34c27a09-1feb-41a5-a9d6-193eece47846"
+    },
+    {
+      "claim_id": "e4949dee-3f52-4013-ae81-78fb4bc9fb17",
+      "result_id": "0ca7de39-251c-4951-bdbb-1aeb5b6a6756"
+    },
+    {
+      "claim_id": "a613c9e2-d2da-444b-9a00-b9ab4c351713",
+      "result_id": "0ca7de39-251c-4951-bdbb-1aeb5b6a6756"
+    }
+  ],
+  "comparisons": []
+}

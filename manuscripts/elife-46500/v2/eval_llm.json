@@ -1,0 +1,248 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C44",
+      "C48"
+    ],
+    "result": "The D861A variant of SpyCas9 retains DNA cleavage activity similar to wild-type in both cell-based and in vitro assays, demonstrating that D861 is not critical for HNH domain-catalyzed tDNA cleavage. The variant shows a slightly slower reaction rate but achieves comparable final activity levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C10, C44, and C48 are well-supported by experimental data from multiple assay types (cell-based gene editing, plasmid cleavage, and oligo DNA cleavage) shown in Figures 1e, 1f, and supplementary figures. The convergent evidence from different experimental approaches strongly supports that D861 is not essential for catalysis, contradicting prior structural predictions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "The N863A variant of SpyCas9 loses virtually all gene-editing capability in cell-based assays and tDNA cleavage activity in vitro, producing only nicked products. This demonstrates that N863, not D861, is the functional catalytic residue in the HNH domain.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C20 and C45-C47 are strongly supported by experimental data from cell-based assays (Figures 1f and supplements) and in vitro assays (plasmid and oligo DNA cleavage). The complete loss of tDNA cleavage activity while retaining ntDNA cleavage (nicked products) provides compelling evidence for N863's catalytic role.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C3",
+      "C15",
+      "C16",
+      "C17",
+      "C22"
+    ],
+    "result": "Computational modeling and MD simulations reveal that the HNH domain employs a catalytic triad of D839-H840-N863 for tDNA cleavage, with the active configuration resembling the T4 Endonuclease VII structure. The Mg2+ ion coordinates with D839, N863, the scissile phosphate, and water molecules in the active state.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C15-C17, and C22 are supported by convergent evidence from MD simulations (Figures 2d-e), structural comparison to T4 Endo VII (Figure 2c), QM/MM validation (Figure 2\u2014figure supplement 6), and experimental mutagenesis data. The computational models are validated by experimental results showing D839A and N863A variants lose activity while D861A retains activity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C21"
+    ],
+    "result": "The D839A mutation substantially compromises the gene-editing activity of Cas9, supporting the functional importance of D839 in the catalytic triad.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C21 is supported by experimental data in Figure 1f showing reduced gene-editing activity for the D839A variant, consistent with prior simulation studies. This provides direct experimental validation of D839's catalytic role.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C11"
+    ],
+    "result": "Previously reported crystal structures, MD simulations, and cryo-EM structures show D861 pointing toward the catalytic center, leading to the belief that D861 participates in catalysis. However, these structures likely represent a cleavage-incompetent 'pseudoactive' conformation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C5 and C11 are supported by extensive citations to prior structural work and the authors' experimental findings that D861A retains activity. The reinterpretation of prior structures as 'pseudoactive' is a logical inference from the experimental data, though the term itself is a new conceptual framework introduced by the authors.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C14"
+    ],
+    "result": "Analysis of the apo-Cas9 crystal structure reveals a unique conformation where N863 points toward the catalytic center, with the \u03b1-helical segment showing disorder. MD simulations of the completed structure show Mg2+ forming octahedral coordination with D839, N863, and water molecules.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C14 are supported by structural analysis of the apo-Cas9 crystal structure (Figure 1\u2014figure supplement 4) and MD simulation results. The coordination pattern resembles that in AnaCas9, providing additional validation. However, the disorder in the original structure required modeling to complete, introducing some uncertainty.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C6",
+      "C7"
+    ],
+    "result": "In homologous DNA/RNA nucleases from other species, residues spatially equivalent to D861 are conserved as asparagine. The N62D substitution in T4 Endonuclease VII abolishes DNA cleavage activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C7 are supported by citations to structural studies of homologous nucleases and experimental work on T4 Endo VII. This comparative analysis provides important evolutionary context supporting the functional importance of asparagine (not aspartate) at this position.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C23",
+      "C24"
+    ],
+    "result": "MD simulations exclude D837 and N854 as catalytic residues directly coordinating the Mg2+ ion, with N854's side chain positioned ~10 \u00c5 from the tDNA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C24 are supported by MD simulation data showing the distance of N854 from the tDNA. This contradicts prior hypotheses about these residues' direct catalytic roles, though the simulations alone cannot definitively rule out all possible indirect contributions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C25"
+    ],
+    "result": "N854 may play an auxiliary role in catalysis by stabilizing the activated HNH domain conformation through intra-molecular hydrogen bonds within the \u03b2\u03b2\u03b1-Me motif.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C25 is supported by prior experimental data showing partial activity loss in N854A variants and structural analysis from MD models and solved structures. The proposed mechanism of stabilization through hydrogen bonding is reasonable based on the structural data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C26",
+      "C27"
+    ],
+    "result": "The D837A variant shows moderate loss of gene-editing activity, and D837 may contribute to the structural integrity of the \u03b2\u03b2\u03b1-Me motif.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C27 are supported by experimental data in Figure 1f and structural analysis. The moderate (not complete) loss of activity suggests a supporting rather than essential catalytic role, consistent with the proposed structural function.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "In the pseudoactive conformation, R864 stabilizes the catalytic core through ionic and hydrogen-bonding interactions, while in the active state, K866 assumes this role. A basic residue (Lys/Arg) appears required at the catalytic core across the \u03b2\u03b2\u03b1-Me superfamily.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C30 are supported by structural analysis (Figures 2a-e) and comparison to other Cas9 orthologs (AnaCas9, SauCas9). The sequence conservation analysis across the \u03b2\u03b2\u03b1-Me superfamily provides additional support for the requirement of a basic residue.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C31"
+    ],
+    "result": "Removal of the interfacial Mg2+ ion destabilizes both pseudoactive and active conformations by ~600 kcal/mol, supporting the indispensable role of Mg2+ for Cas9 conformational activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C31 is supported by computational free energy calculations (Supplementary file 1) and is consistent with prior experimental demonstrations of Mg2+ requirement. The large destabilization energy provides strong computational evidence for Mg2+'s structural role.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "The pseudoactive N863-OUT conformation appears unique to SpyCas9 and is thermodynamically more stable than the active N863-IN form. Long-timescale MD simulations show N863-IN tends to transition to N863-OUT but not vice versa.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C34 are supported by structural comparisons across \u03b2\u03b2\u03b1-Me nucleases, free energy calculations, and extensive MD simulations (~50 \u03bcs total, Figure 2\u2014figure supplement 5). The convergent computational evidence strongly supports the relative stability of the two conformations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C35"
+    ],
+    "result": "QM/MM simulations using DFTB3 validated the MD-derived active site configurations, showing very limited differences between QM/MM and MD results.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C35 is supported by QM/MM simulation results (Figure 2\u2014figure supplement 6) and is consistent with prior benchmark studies showing good performance of the Mg2+ model used. This validation strengthens confidence in the MD-derived structures.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "A working model proposes that DNA binding induces HNH domain interconversion between checkpoint intermediate and pre-cleavage states, with Mg2+ facilitating transition to pseudoactive (N863-OUT) or active (N863-IN) states that exist in equilibrium before cleavage, with the lower-energy pseudoactive state having larger population.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C36-C39 represent a proposed mechanistic model integrating findings from this study with prior work. While the model is consistent with the data presented (free energy calculations, MD simulations, experimental mutagenesis), it remains speculative regarding the dynamic transitions and equilibrium populations. Direct experimental validation of the conformational dynamics and equilibrium is lacking.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C40",
+      "C41"
+    ],
+    "result": "The coexistence of multiple Cas9 conformational states may explain the biphasic kinetics of DNA cleavage, with the fast phase representing direct transition to the active state and the slow phase reflecting transition from pseudoactive to active state.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C40-C41 are speculative interpretations connecting the proposed conformational model to prior kinetic observations by Raper et al. (2018). While the hypothesis is plausible and consistent with the conformational data, it lacks direct experimental validation linking specific conformational states to the observed kinetic phases.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C42",
+      "C43"
+    ],
+    "result": "Multiple crystal structures show the HNH domain remaining in N863-OUT conformation even with up to eight Mg2+ ions present, suggesting that metal ions alone are insufficient for conformational activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C43 are supported by analysis of multiple crystal structures and MD simulation attempts to induce N863-IN conformation with Mg2+ ions. The convergent structural evidence supports the conclusion, though crystallization conditions may not fully represent physiological activation conditions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C49",
+      "C50"
+    ],
+    "result": "D861 might stabilize the catalytic \u03b2\u03b2\u03b1-Me motif through intra-molecular salt bridges or aid in initial metal ion recruitment around the active center.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C49-C50 are speculative proposals based on inspection of MD simulation trajectories. While these hypotheses could explain D861's auxiliary role (slower kinetics in D861A), they lack direct experimental validation and remain mechanistic speculation requiring further investigation.",
+    "result_type": "MINOR"
+  }
+]

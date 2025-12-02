@@ -1,0 +1,2341 @@
+{
+  "submission": {
+    "id": "cce99b2d-dd7f-40f6-81e8-773da8ceb8c5",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T11:02:12.689356Z",
+    "updated_at": "2025-12-02T11:02:12.689356Z"
+  },
+  "content": [
+    {
+      "id": "154c57a0-3ebb-433d-a894-01cfaa9b054c",
+      "submission_id": "cce99b2d-dd7f-40f6-81e8-773da8ceb8c5",
+      "content_type": "manuscript",
+      "content_text": "# Insulin-like peptides and the mTOR-TFEB pathway protect Caenorhabditis elegans hermaphrodites from mating-induced death\n\n## Authors\n\n- Cheng Shi<sup>1</sup> ([ORCID: 0000-0003-0365-8273](https://orcid.org/0000-0003-0365-8273))\n- Lauren N Booth<sup>3</sup> ([ORCID: 0000-0003-3072-6235](https://orcid.org/0000-0003-3072-6235))\n- Coleen T Murphy<sup>1</sup> ([ORCID: 0000-0002-8257-984X](https://orcid.org/0000-0002-8257-984X)) \u2020\n\n### Affiliations\n\n1. Department of Molecular Biology Princeton University Princeton United States\n2. LSI Genomics Princeton University Princeton United States\n3. Department of Genetics Stanford University Stanford United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nLifespan is shortened by mating, but these deleterious effects must be delayed long enough for successful reproduction. Susceptibility to brief mating-induced death is caused by the loss of protection upon self-sperm depletion. Self-sperm maintains the expression of a DAF-2 insulin-like antagonist, INS-37, which promotes the nuclear localization of intestinal HLH-30/TFEB, a key pro-longevity regulator. Mating induces the agonist INS-8, promoting HLH-30 nuclear exit and subsequent death. In opposition to the protective role of HLH-30 and DAF-16/FOXO, TOR/LET-363 and the IIS-regulated Zn-finger transcription factor PQM-1 promote seminal-fluid-induced killing. Self-sperm maintenance of nuclear HLH-30/TFEB allows hermaphrodites to resist mating-induced death until self-sperm are exhausted, increasing the chances that mothers will survive through reproduction. Mothers combat males\u2019 hijacking of their IIS pathway by expressing an insulin antagonist that keeps her healthy through the activity of pro-longevity factors, as long as she has her own sperm to utilize.\n\n## Introduction\n\nThe battle between the sexes is played out across the animal kingdom: males compete with one another to pass on their own genomes, often at the expense of female health, and females, in turn, must devise strategies to reduce the deleterious effects of mating in order to successfully complete reproduction. Sexual antagonism is evident in Caenorhabditis elegans, where signals from males kill hermaphrodites through three distinct mechanisms: germline activation (Shi and Murphy, 2014), seminal fluid transfer (Shi and Murphy, 2014), and, at high doses, male pheromone toxicity (Maures et al., 2014; Shi et al., 2017). Caenorhabditis elegans are hermaphrodites and thus do not require males to reproduce; in fact, males are normally rare in nature (~1/1000). Brief bursts of mating with males can be beneficial for the species due to increased outcrossing (Kimble, 1988), but males are quickly eliminated by dispersal (Wegewitz et al., 2008; Anderson et al., 2010) and by their own pheromones (Shi et al., 2017).\n\nWhile germline activation is necessary for reproduction and the resulting lifespan decrease is shared both across sexes and species, seminal fluid (SF) killing appears to be used specifically for the purpose of \u2018sperm competition\u2019 (that is, competition between males) within the species: seminal fluid transfer induces death of mothers just after they have produced all of that male\u2019s progeny, eliminating the possibility of the mother re-mating with a different male (Shi and Murphy, 2014). We noted previously that mating-induced death occurs only after C. elegans hermaphrodites produce all their progeny (Shi and Murphy, 2014); this delay is necessary for successful reproduction, but the underlying mechanism allowing this balance was previously unknown. In an accompanying manuscript, Booth et al. report that self-sperm are protective against short-term mating-induced death specifically in hermaphroditic mothers\u00a0(Booth et al., 2019). Here, we describe the molecular mechanism that hermaphrodites use to prevent early SF-induced death until self-sperm are depleted. This pathway utilizes competing insulin-like peptide agonists and antagonists of the DAF-2/Insulin receptor as well as mTOR signaling to regulate a set of protective (DAF-16/FOXO and HLH-30/TFEB) and detrimental (PQM-1) transcription factors, which in turn determine susceptibility to seminal-fluid-induced death.\n\n## Results\n\n### Self-sperm protects young hermaphrodites from male seminal-fluid-induced death\n\nThe presence of self-sperm in young hermaphrodites protects them from brief mating-induced death (Booth et al., 2019; Figure 1A,B). Unlike older hermaphrodites, young hermaphrodites that mate during a brief interaction with males are protected from this mating-induced death (Booth et al., 2019; Figure 1A,B). By contrast, young feminized (i.e. lacking self-sperm; fog-2(q71), fem-1(hc17)) worms exhibit significant acceleration of death after brief mating with males (Booth et al., 2019; Figure 1C, Figure 1\u2014figure supplement 1A), suggesting that self-sperm are protective.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/46413/elife-46413-fig1-v2.jpg)\n\n**Figure 1.:** (A) Schematic and representative survival curves illustrating survival after a brief (2 hr) mating; C.\u00a0elegans hermaphrodite lifespan is dependent on the presence of self-sperm. (B) Wild-type N2 hermaphrodites have reduced lifespan after 2 hr mating on day 7 of adulthood, but have normal lifespan when such brief mating occurs on day 3. Day 3 N2 unmated: 14.1\u00a0\u00b1\u00a00.7 days; mated: 13.9\u00a0\u00b1\u00a00.6 days, p=0.8481; Day 7 N2 unmated: 13.8\u00a0\u00b1\u00a00.5 days; mated: 10.0\u00a0\u00b1\u00a00.4 days, p<0.0001. In this study, we define day 0 as the beginning of the adulthood for all lifespans. Kaplan-Meier analysis with log-rank (Mantel-Cox) method was performed to compare the lifespans of different groups in this study. See Supplementary file 1 for all lifespan data summary. (C) Self-spermless fog-2(q71) are susceptible to 2 hr mating on both day 3 and day 7 of adulthood. Day three fog-2 unmated: 19.7\u00a0\u00b1\u00a00.7 days; mated: 15.4\u00a0\u00b1\u00a00.7 days, p<0.0001; Day seven fog-2 unmated: 21.0\u00a0\u00b1\u00a00.6 days; mated: 14.8\u00a0\u00b1\u00a00.5 days, p<0.0001. (D\u2013E) Mating with fog-2 males (which are functionally wild type) or with fer-6 males (which lack sperm) leads to a similar magnitude of lifespan decrease in fog-2 self-spermless hermaphrodites. Day 3 fog-2 unmated: 18.2\u00a0\u00b1\u00a00.8 days; mated with fog-2 males: 12.6\u00a0\u00b1\u00a00.7 days, p<0.0001; mated with fer-6 males: 14.1\u00a0\u00b1\u00a00.7 days, p=0.0002 (compared to unmated). Day 7 fog-2 unmated: 20.3\u00a0\u00b1\u00a01.0 days; mated with fog-2 males: 14.6\u00a0\u00b1\u00a00.9 days, p<0.0001; mated with fer-6 males: 15.6\u00a0\u00b1\u00a01.0 days, p=0.0016 (compared to unmated). (F\u2013G) N2 hermaphrodites are not short-lived after 2 hr exposure to male pheromone-conditioned plates (conditioned by 30 wild-type males for 2 days) either on day 3 or day 7 of adulthood. Only old day 7 N2 hermaphrodites have a shorter lifespan after 2 hr mating with daf-22 male pheromone production defective males (F). Day 3 N2 unmated: 11.9\u00a0\u00b1\u00a00.6 days; mated with daf-22 males: 11.1\u00a0\u00b1\u00a00.4 days, p=0.3058; unmated on male-conditioned plates (MCP; pre-conditioned with 30 males, see Materials\u00a0and\u00a0methods for details): 11.7\u00a0\u00b1\u00a00.5 days, p=0.9696 (compared to unmated). Day 7 N2 unmated: 14.3\u00a0\u00b1\u00a00.7 days; mated with daf-22 males: 11.4\u00a0\u00b1\u00a00.4 days, p=0.0001; unmated on male-conditioned plates (MCP): 13.7\u00b10.7 days, p=0.5984 (compared to unmated). (H\u2013I) Like N2 hermaphrodites, the lifespans of fog-2 hermaphrodites are not affected by 2 hr male pheromone exposure. However, both young (G) and old (H) fog-2 hermaphrodites live significantly shorter after brief mating with daf-22 males. Day 3 fog-2 unmated: 15.3\u00a0\u00b1\u00a00.8 days; mated with daf-22 males: 10.4\u00a0\u00b1\u00a00.6 days, p<0.0001; unmated on male-conditioned plates (MCP): 16.5\u00a0\u00b1\u00a00.8 days, p=0.3459 (compared to unmated). Day 7 fog-2 unmated: 15.5\u00b10.6 days; mated with daf-22 males: 13.1\u00a0\u00b1\u00a00.4 days, p=0.0017; unmated on male-conditioned plates (MCP): 14.7\u00b10.6 days, p=0.4493 (compared to unmated).\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/46413/elife-46413-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) Both self-spermless fog-2(q71) and fem-1(hc17) hermaphrodites are susceptible to 2 hr mating on day 3 of adulthood. fog-2 unmated: 16.3\u00a0\u00b1\u00a00.7 days; mated: 13.4\u00a0\u00b1\u00a00.5 days, p=0.0010. fem-1 unmated: 14.2\u00a0\u00b1\u00a00.4 days; mated: 11.7\u00a0\u00b1\u00a00.3 days, p<0.0001. (B) Young N2 hermaphrodites\u2019 resistance to brief mating-induced death is not due to low mating efficiency. Total male progeny from 2 hr mated N2 were counted (we only counted male progeny because we did\u00a0not want to include progeny from self-fertilization. 2x male progeny from mated N2 hermaphrodites is a good estimate of the total number of cross-progeny) as well as total progeny (fog-2 does not have self sperm, so all the progeny produced after mating are cross-progeny) from 2 hr mated fog-2 hermaphrodites (All hermaphrodites were mated on Day 3 of adulthood). Mated N2 hermaphrodites produce at least two-fold more male progeny than total progeny produced by mated fog-2. Therefore, potentially more male sperm and seminal fluid were transferred to N2 hermaphrodites. Still, young N2 are resistant to brief mating-induced death, suggesting that young N2 hermaphrodites\u2019 resistance to brief mating-induced death is not due to lower mating efficiency or the transfer of less male sperm or seminal fluid.\n\nPreviously we found that mating induces hermaphrodite shrinking through male sperm activation of the hermaphrodite\u2019s germline, and that separately, transfer of male seminal fluid (SF) causes DAF-16/FOXO cytoplasmic localization and inactivation, subsequently leading to death of the mother (Shi and Murphy, 2014). To determine whether brief mating acts through the male sperm/germline pathway or through the seminal fluid pathway, we mated fer-6 males, which are spermless but still contain seminal fluid (Figure 1D,E; Argon and Ward, 1980; Gems and Riddle, 1996), or fog-2 males, which contain male sperm and thus essentially are like wild type (Schedl and Kimble, 1988), with fog-2 (self-spermless) females; both sperm-containing and spermless males induce death in young and old fog-2 mothers at equal rates, suggesting that the death-inducing factor is not sperm. The dispensability of male sperm suggests that brief mating-induced death acts through the seminal fluid pathway.\n\nBecause high doses of male pheromones can also kill hermaphrodites (Maures et al., 2014; Shi et al., 2017), we tested whether pheromone-less daf-22 (Ludewig and Schroeder, 2013) males can also induce killing after brief mating. However, daf-22 males induce the same brief mating lifespan effect as wild-type males. Similarly, 2 hr treatment on high-dose male pheromone-conditioned plates (\u2018MCP\u2019; plates pre-treated with 30 males, then removed prior to experiment) does not shorten the lifespan of either wild-type or fog-2 females (Figure 1F\u2013I). Together, these data suggest that self-sperm protects against brief mating-induced death in a manner that is independent of both male sperm and pheromone effects, and acts through the seminal fluid/IIS pathway.\n\n### Brief mating-induced death acts through the IIS/FOXO seminal fluid pathway\n\nWe previously showed that Insulin-IGF-1 signaling (IIS) mediates seminal fluid-induced killing by inducing DAF-16/FOXO nuclear exit (Shi and Murphy, 2014). We find that daf-16 mutants are also susceptible to brief mating, even when young (Figure 2A), suggesting that DAF-16 activity is critical for resistance to brief mating. Long-lived daf-2/Insulin receptor mutants, although susceptible to long-term mating, are better protected than wild-type worms on Day 8 of adulthood (Figure 2B), exhibiting the opposite phenotype as daf-16 mutants. Furthermore, DAF-16::GFP in fog-2 (self-spermless) mutants moves out of the nucleus upon brief mating (Figure 2C\u2013D).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/46413/elife-46413-fig2-v2.jpg)\n\n**Figure 2.:** (A) daf-16(mu86) mutants lived shorter after 2hr mating on Day 3 of adulthood.\u00a0Unmated: 12.2\u00b10.5 days; mated: 9.5\u00b10.5 days, p=0.0003. (B) daf-2(e1370) mutants are resistant to 2 hr mating in the absence of self-sperm on Day 8 of adulthood. Unmated: 33.2\u00b12.6 days; mated: 32.7\u00b12.9 days, p=0.7519. (C\u2013D) Nuclear DAF-16::GFP in self-spermless fog-2 hermaphrodites becomes diffuse after mating. (C) Representative images of DAF-16::GFP in unmated and mated fog-2 hermaphrodites (Day 3). (D) Quantitation of DAF-16::GFP, p=0.0006. Each worm was assigned a category based on DAF-16::GFP localization. Chi-square test was used to determine the significance.\n\n### Self-sperm modulate expression of ins-37\n\nWe reasoned that the factor that provides self-sperm protection against seminal fluid-induced killing should already be present in hermaphrodites prior to mating; therefore, we compared the expression profiles of fog-2 (self-spermless) and wild-type hermaphrodites at L4, a stage after all self-sperm have been made. Not surprisingly, wild-type worms express more major sperm proteins and other sperm-associated genes than do self-spermless fog-2 mutants (Figure 3\u2014figure supplement 1; Supplementary file 2). However, of the remaining differences, the conserved insulin-like peptide ins-37 is strikingly upregulated in wild-type compared to fog-2 L4 hermaphrodites (Figure 3A,B), suggesting that this germline-expressed (Ebbing et al., 2018) signaling molecule is only highly expressed when self-sperm are present. The identification of an insulin-like peptide is also consistent with our finding that brief mating utilizes the seminal fluid/IIS pathway (Figure 1D\u2013E).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/46413/elife-46413-fig3-v2.jpg)\n\n**Figure 3.:** (A) Heatmap of all the insulin genes from microarray-based transcriptome comparison between N2 and fog-2 L4 hermaphrodites.\u00a0(Four biological replicates) (B) qRT-PCR reveals over 25 fold up-regulation of ins-37 in N2 L4 hermaphrodites compared to fog-2 L4 hermaphrodites, p=0.0043. Reference gene pmp-3 was used for normalization. RNA was extracted from three additional biological replicates (different from the sample used for microarray in Figure 3A). (C) Knocking down ins-37 in N2 hermaphrodites makes them susceptible to 2 hr mating on day 3 of adulthood. (see Figure 3\u2014figure supplement 2B for results of N2 on control RNAi vector) N2 ins-37 RNAi unmated: 13.6\u00a0\u00b1\u00a00.4 days; N2 ins-37 RNAi mated: 12.0\u00a0\u00b1\u00a00.4 days, p=0.0040.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/46413/elife-46413-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** L4 hermaphrodites of each genotype were collected for RNA extraction and microarray-based transcriptome analysis. One-class SAM was used to determine genes with significant changes in expression between each comparison. The gene lists from SAM (FDR\u00a0=\u00a01%) were then imported to g:Profiler for GO terms and TF binding motifs analysis.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/46413/elife-46413-fig3-figsupp2-v2.jpg)\n\n**Figure 3\u2014figure supplement 2.:** (A) qRT-PCR of ins-37.\u00a0Ins-37 has an over 25-fold increase in N2 L4 hermaphrodites compared to fog-2 L4 hermaphrodites (same figure shown in Figure 3B). Mating has very little impact on ins-37 expression compared to the presence of self-sperm. Expression level of ins-37 increased about twofold in Day 2 mated fog-2 compared to unmated fog-2 (p=0.0137). (B) Control of Figure 3C,N2 hermaphrodites do not live shorter after 2 hr mating on day 3 of adulthood. N2 vector RNAi unmated: 12.1\u00a0\u00b1\u00a00.5 days; N2 vector RNAi mated: 11.6\u00a0\u00b1\u00a00.5 days, p=0.6335.\u00a0.\n\nElimination of a factor that confers protection from seminal-fluid-induced killing should render young, sperm-containing worms susceptible. Indeed, RNAi of ins-37 in wild-type (N2) worms shortens their lifespan after brief mating (Figure 3C, Figure 3\u2014figure supplement 2B), despite the presence of self-sperm, suggesting that ins-37 is key for self-sperm-mediated protection from mating.\n\nINS-37 may act as a self-sperm-induced antagonist of the insulin receptor, DAF-2, consistent with a recent report that INS-37 acts a DAF-2 antagonist during development (Zheng et al., 2018). Together, our data suggest that self-sperm protect hermaphrodites from brief mating-induced death through their expression of the INS-37 antagonist, which prevents DAF-2/Insulin receptor activation and the subsequent loss of expression of protective genes by the DAF-16/FOXO transcription factor (Murphy et al., 2003; Tepper et al., 2013).\n\n### TFEB/HLH-30 and TOR signaling mediate self-sperm protection from seminal fluid-induced killing\n\nOur transcriptional data revealed that spermless females differ\u00a0not only in expression of sperm proteins and ins-37 but also in genes whose promoters contain the predicted binding motif for the HLH-30/TFEB transcription factor (Reimand et al., 2007; Grove et al., 2009; Figure 3\u2014figure supplement 1), which has been previously implicated in longevity regulation through its control of lipid metabolism and lysosomal autophagy. Mutants that produce an excess of self-sperm (fem-3(q20)) (Rosenquist and Kimble, 1988) are protected from brief mating-induced death for a longer period of their lifespan than wild-type hermaphrodites (Booth et al., 2019), and we found that the HLH-30 binding motif is also enriched in promoters of genes that are up-regulated in (fem-3(q20)) hermaphrodites compared to animals with normal levels of sperm (Figure 3\u2014figure supplement 1; Supplementary file 3).\n\nTFEB/HLH-30 acts downstream of several longevity pathways, notably the TOR pathway (Lapierre et al., 2013; Nakamura et al., 2016), and DAF-16 and HLH-30 were also recently shown to cooperate under many conditions (Lin et al., 2018). To determine whether HLH-30 is required for self-sperm protection, we briefly mated hlh-30 mutants on Day 3 of adulthood; similar to loss of ins-37 and daf-16, hlh-30 mutants are susceptible to brief mating even when young, suggesting that self-sperm protection requires HLH-30 activity (Figure 4A, Figure 4\u2014figure supplement 1L).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/46413/elife-46413-fig4-v2.jpg)\n\n**Figure 4.:** (A) hlh-30(tm1978) mutants live shorter after brief mating on day 3, unlike wild type (N2) hermaphrodites, which are resistant to 2 hr mating on day 3 of adulthood (Figure 4\u2014figure supplement 1L). hlh-30 unmated: 11.7\u00a0\u00b1\u00a00.3 days; mated: 9.8\u00a0\u00b1\u00a00.3 days, p=0.0002. (B) Nuclearly localized HLH-30::GFP becomes diffuse with age. Representative images of HLH-30::GFP (BC11288) in unmated hermaphrodites at various ages. Worms were imaged under free moving conditions; no anesthetic was used, to prevent possible artificial perturbation of HLH-30 localization. (C\u2013D) Quantitation of HLH-30::GFP in B). In C), each worm was assigned a category based on HLH-30::GFP localization. Chi-square test was used to determine the significance. In D), number of nuclei with nuclearly localized HLH-30::GFP was counted for each worm. The average of each group was compared to L4 using the unpaired t-test. (E\u2013F) The amount of self-sperm is positively correlated with the number of worms having strongly nuclearly localized HLH-30::GFP. (Three biological replicates per condition; average was compared by t-test). In F), fem-3 worms were grown at 25C to induce excess self-sperm phenotype, control fem-3 were grown at 20 C. (G\u2013I) Knockdown of ins-37 reduces nuclearly localized HLH-30::GFP in unmated hermaphrodites. (G) Representative images of day 3 HLH-30::GFP hermaphrodites on control RNAi (left) and ins-37(RNAi) (right). (H\u2013I) Quantitation of HLH-30::GFP in G), same method used in C-D. (J\u2013K) HLH-30::GFP strain is more resistant to longer mating, compared to wild-type (N2) hermaphrodites. Wild-type are already susceptible to 12 hr mating (J), whereas HLH-30::GFP worms are resistant (K). 24 hr mating reduces lifespan of both strains. N2 unmated: 13.2\u00a0\u00b1\u00a00.5 days; 12 hr mated: 11.0\u00a0\u00b1\u00a00.3 days, p=0.0005; 24 hr mated: 9.0\u00a0\u00b1\u00a00.4 days, p<0.0001 (compared to unmated). HLH-30::GFP unmated: 11.9\u00a0\u00b1\u00a00.4 days; 12 hr mated: 11.6\u00a0\u00b1\u00a00.4 days, p=0.4471; 24 hr mated: 9.7\u00a0\u00b1\u00a00.4 days, p=0.0001 (compared to unmated). (L) Summary of nuclear HLH-30::GFP quantitation of worms with age and after mating for various time on day 3. (See Figure 4\u2014figure supplement 1A\u2013K for more detailed information).\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/46413/elife-46413-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A\u2013K) HLH-30::GFP becomes more diffuse with age, even if the hermaphrodites have not been mated; however, mating accelerates this process. All worms were mated on Day 3 of adulthood. (B, C; E\u2013K) 2 hr and 8 hr mating seem to have no impact on HLH-30::GFP localization (same as unmated control). However, starting from 16 hr mating, HLH-30::GFP become less nuclearly localized. (L) Control of Figure 4A,N2 hermaphrodites do not live shorter after 2 hr mating on day 3 of adulthood. N2 unmated: 13.4\u00a0\u00b1\u00a00.5 days; N2 mated: 12.7\u00a0\u00b1\u00a00.4 days, p=0.2263.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/46413/elife-46413-fig4-figsupp2-v2.jpg)\n\n**Figure 4\u2014figure supplement 2.:** Left: representative images of HLH-30::GFP in unmated and mated fog-2 hermaphrodites (Day 4). Quantitation of HLH-30::GFP in fog-2. (p=0.0328) Each worm was assigned a category based on HLH-30::GFP localization. Chi-square test was used to determine the significance.\n\nTo further test the model that TFEB/HLH-30 confers protection, we monitored the localization of HLH-30::GFP (Craig et al., 2013) in young, old, and young self-spermless (fog-2) animals. We found that HLH-30::GFP is nuclearly localized in the intestine of young animals that have self-sperm, becoming diffuse with age as self-sperm is depleted (Figure 4B\u2013D). Fewer self-spermless animals display nuclearly localized HLH-30::GFP, while more animals with excess self-sperm exhibit nuclearly localized HLH-30::GFP (Figure 4E\u2013F; note scale). Moreover, loss of ins-37 reduces nuclear HLH-30::GFP (Figure 4G\u2013I), suggesting that INS-37 acts upstream of HLH-30. Our data suggest that DAF-16 and HLH-30 are similarly affected by SF-induced insulin signaling.\n\nThe HLH-30::GFP strain overexpresses functional HLH-30 protein, so we wondered whether these animals are better protected from brief mating-induced death; indeed, no lifespan reduction was observed in the HLH-30::GFP strain after mating for 12 hr, a length of mating that shortens WT lifespan (Figure 4J\u2013K), suggesting that the additional HLH-30 provides a protective effect. However, longer mating reduces both nuclear HLH-30::GFP localization and lifespan (Figure 4L, Figure 4\u2014figure supplement 1A\u2013K), suggesting that prolonged mating can eventually overwhelm the protection conferred by HLH-30.\n\n### TOR promotes seminal-fluid-induced killing\n\nTOR signaling has been implicated in longevity regulation from yeast through humans, including C. elegans (Kapahi and Hansen, 2010; Kaeberlein and Shamieh, 2010). TOR negatively regulates TFEB/HLH-30\u2019s nuclear localization and activity (Nakamura et al., 2016). Through genome-wide transcriptional comparisons, we observed that most positive regulators of TOR signaling were modestly downregulated in conditions in which worms are protected from brief mating (Figure 5A,B). Therefore, we wondered whether TOR signaling is also involved in longevity regulation in response to mating. Indeed, we found that reduction of the worm TOR homolog, let-363, prevented the lifespan decrease caused by brief mating in young spermless (fog-2) females (Figure 5C\u2013D; Figure 5\u2014figure supplement 1A\u2013B). Similarly, RNAi reduction of other TOR pathway components, including rict-1, daf-15, and raga-1, also prevented brief mating-induced death in Day 3 fog-2 females, and Day 7 (sperm-exhausted) raga-1 mutant hermaphrodites were also immune to brief mating. Together, these results suggest that downregulation of the TOR pathway is protective (Figure 5E\u2013F; Figure 5\u2014figure supplement 1C\u2013F).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/46413/elife-46413-fig5-v2.jpg)\n\n**Figure 5.:** (A) Most positive regulators of TOR signaling (e.g., Rictor/rict-1) were modestly downregulated in conditions in which worms have self-sperm and are protected from brief mating-induced death (left block, blue), but rise in mated or short-lived conditions (right block). (B) Independent RNA-seq confirmed the modest downregulation of TOR signaling components in worms that are protected from brief mating-induced death. Note the first two rows are conditions in which the hermaphrodites have self-sperm protection against brief mating. (C) Knockdown of tor/let-363 in self-spermless fog-2 protects the hermaphrodites from SF killing. fog-2;TOR/let-363(RNAi) unmated: 13.3\u00a0\u00b1\u00a00.3 days; mated: 13.2\u00a0\u00b1\u00a00.4 days, p=0.7368. (D) Control of Figure 5C: fog-2 on vector control RNAi unmated: 13.7\u00a0\u00b1\u00a00.6 days; mated: 10.1\u00a0\u00b1\u00a00.4 days, p<0.0001. (E) fog-2;raga-1(RNAi) unmated: 15.3\u00a0\u00b1\u00a00.5 days; mated: 14.3\u00a0\u00b1\u00a00.6 days, p=0.2378. (F) Day 7 self-sperm depleted raga-1(ok701) are also resistant to brief 2 hr mating. Unmated: 18.5\u00a0\u00b1\u00a00.7 days; mated: 18.1\u00a0\u00b1\u00a00.7 days, p=0.5833. (G) TOR/let-363 knockdown in hlh-30(tm1978) mutants fails to protect the hermaphrodites from brief mating-induced death. hlh-30;TOR/let-363(RNAi) unmated: 13.8\u00a0\u00b1\u00a00.3 days; mated: 10.5\u00a0\u00b1\u00a00.4 days, p<0.0001. (H) Quantitation of nuclear HLH-30::GFP in mated hermaphrodites treated with let-363 RNAi.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/46413/elife-46413-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** (A\u2013B) Knockdown of let-363 has no impact on lifespan of N2 upon brief mating. (A) N2 on vector control RNAi unmated: 14.9\u00a0\u00b1\u00a00.3 days; mated: 14.9\u00a0\u00b1\u00a00.4 days, p=0.7888. (B) N2 on TOR/let-363 RNAi unmated: 12.3\u00a0\u00b1\u00a00.5 days; mated: 12.1\u00a0\u00b1\u00a00.6 days, p=0.8791. (C\u2013F) Individual TOR components knockdown prevents SF killing in spermless females. (D) fog-2;rict-1(RNAi) unmated: 15.2\u00a0\u00b1\u00a00.6 days; mated: 14.9\u00a0\u00b1\u00a00.6 days, p=0.8375. (E) fog-2;daf-15(RNAi) unmated: 15.9\u00a0\u00b1\u00a00.6 days; mated: 15.2\u00a0\u00b1\u00a00.6 days, p=0.6903. (C) fog-2; control (RNAi) unmated: 17.4\u00a0\u00b1\u00a00.8 days; mated: 11.7\u00a0\u00b1\u00a00.6 days, p<0.0001. (F) Knockdown of let-363 in self-spermless fog-2 protects the hermaphrodites from SF killing. fog-2 on TOR/let-363 RNAi unmated: 16.0\u00a0\u00b1\u00a00.5 days; mated with fer-6 males: 16.0\u00a0\u00b1\u00a00.6 days, p=0.8488. (G\u2013H) Lifespan control for Figure 5G. (G) fog-2 on TOR/let-363 RNAi unmated: 13.0\u00a0\u00b1\u00a00.4 days; mated: 12.9\u00a0\u00b1\u00a00.4 days, p=0.8275. (H) hlh-30 on vector control RNAi unmated: 10.4\u00a0\u00b1\u00a00.2 days; mated: 9.2\u00a0\u00b1\u00a00.2 days, p<0.0001.\n\n![Figure 5\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/46413/elife-46413-fig5-figsupp2-v2.jpg)\n\n**Figure 5\u2014figure supplement 2.:** (A\u2013B) Knocking down pqm-1, insulins, and Tor/let-363 does not affect HLH-30::GFP localization in unmated worms; (C) By contrast, knocking down pqm-1, ins-7, ins-8, or let-363 largely prevent HLH-30::GFP from localizing to the cytoplasm.\u00a0(D) Mating-induced DAF-16::GFP localization movement was inhibited in fog-2 after knocking down let-363. (in contrast to Figure 2B\u2013C)\u00a0.\n\nTo test whether TOR\u2019s effects are mediated by HLH-30, we subjected hlh-30(tm1978);let-363(RNAi) animals to brief mating, and found that these animals died faster (Figure 5G, Figure 5\u2014figure supplement 1G\u2013H), suggesting that HLH-30 acts downstream of TOR signaling to regulate brief mating-induced death. Furthermore, reduction of TOR/let-363 prevents cytoplasmic localization of HLH-30 upon mating (Figure 5H; Figure 5\u2014figure supplement 2A\u2013C), consistent with its prevention of brief mating-induced killing (Figure 5C). Together, these results suggest that TOR promotes SF-mediated killing through its inhibition of TFEB/HLH-30 nuclear localization and activation.\n\n### PQM-1 is required for seminal-fluid-induced killing\n\nPreviously, we found that the Zn-finger transcription factor PQM-1 acts downstream of IIS and antagonistically to DAF-16/FOXO nuclear localization under normal conditions (Tepper et al., 2013). pqm-1 mutant males are immune to both mating-induced and male pheromone-induced death (Shi et al., 2017), but PQM-1\u2019s role in hermaphroditic death was unknown. Unlike daf-16 mutants, which are susceptible to brief mating even as young adults (Figure 2A), pqm-1 mutants are impervious to brief mating (Figure 6A); in fact, they are even resistant to long-term (24 hr) mating (Figure 6B, Figure 6\u2014figure supplement 1A\u2013B). While DAF-16 leaves the nucleus upon mating (Shi and Murphy, 2014)\u00a0(Figure 2C\u2013D), PQM-1 translocates into the nucleus (Figure 6C\u2013E). These results suggest that PQM-1 activity is key for seminal fluid-induced killing, acting in an opposite manner to DAF-16/FOXO.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/46413/elife-46413-fig6-v2.jpg)\n\n**Figure 6.:** (A\u2013B) pqm-1(ok485) mutant hermaphrodites are resistant to short term (2 hr) mating-induced death (A), as well as long term (24 hr) mating (B) 2 hr pqm-1 unmated: 10.5\u00a0\u00b1\u00a00.3 days; mated: 11.1\u00a0\u00b1\u00a00.4 days, p=0.2070. 24 hr pqm-1 unmated: 12.5\u00a0\u00b1\u00a00.5 days; mated: 12.5\u00a0\u00b1\u00a00.5 days, p=0.8407. (See Figure 6\u2014figure supplement 1A\u2013B for more controls) (C) Representative images of PQM-1::GFP hermaphrodites. Left: unmated pqm-1 control, Right: mated pqm-1 (mated on day 1 of adulthood for 24 hr). Images are taken on day 6 of adulthood. White arrows indicate nuclearly localized PQM-1::GFP. (D\u2013E) Quantitation of PQM-1::GFP localization. (D) Non-parametric comparison; E) nuclear and cytoplasmic GFP intensity was measured in the most anterior nuclei (easily recognizable) of the intestine for worms in each group. Averages were compared using a t-test. (F) Knocking down pqm-1 restores nuclearly localized HLH-30 in mated hermaphrodites. Quantitation of nuclear HLH-30::GFP in mated hermaphrodites treated with pqm-1 RNAi (same as Figure 5H). (G) Knocking down pqm-1 blocks the lifespan decrease normally induced by 2 hr mating in hlh-30(tm1978) mutants. pqm-1 on vector control RNAi: unmated:13.2\u00a0\u00b1\u00a00.4 days, mated: 13.1\u00a0\u00b1\u00a00.5 days, p=0.4169. pqm-1;hlh-30(RNAi): unmated:13.2\u00a0\u00b1\u00a00.3 days, mated: 13.1\u00a0\u00b1\u00a00.3 days, p=0.9161.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/46413/elife-46413-fig6-figsupp1-v2.jpg)\n\n**Figure 6\u2014figure supplement 1.:** (A\u2013B) pqm-1 mutants are resistant to both long-term (24 hr; B) and brief (2 hr) mating (C). (C) Knocking down hlh-30 in pqm-1 mutants does not make them susceptible to brief mating-induced death. hlh-30 on vector control RNAi: unmated:13.1\u00a0\u00b1\u00a00.4 days, mated: 11.6\u00a0\u00b1\u00a00.3 days, p=0.0015. hlh-30 on pqm-1 RNAi:unmated:11.7\u00a0\u00b1\u00a00.2 days, mated: 12.0\u00a0\u00b1\u00a00.2 days, p=0.3601.\n\n### PQM-1 antagonizes HLH-30 upon mating\n\nWe hypothesized that PQM-1 might interact with HLH-30 to regulate SF-mediated killing. pqm-1(RNAi) appears to have no effect on the localization of HLH-30::GFP in unmated day 3 adult worms (Figure 5\u2014figure supplement 2A\u2013B). By contrast, under mated conditions (where HLH-30 normally traffics out of the nucleus, \u2018control mated\u2019 in Figure 6F), reduction of pqm-1 prevented this translocation (Figure 6F). Consistent with a role in the regulation of HLH-30 localization after mating, reduction of pqm-1 also prevented the mating-induced lifespan decrease exhibited by hlh-30 reduction (Figure 6G, Figure 6\u2014figure supplement 1C). Together, these results suggest that PQM-1 normally acts downstream of the seminal fluid/IIS pathway and antagonistically to HLH-30, and that PQM-1 activity is deleterious to the mother when induced upon the transfer of seminal fluid upon mating.\n\n### Insulin-like peptide agonists mediate SF killing\n\nBecause self-sperm-mediated protection from SF-induced death correlated with the expression of an antagonist of DAF-2, ins-37, we reasoned that a competing, agonist insulin signal might induce the IIS pathway upon Seminal Fluid transfer. Indeed, upon mating, fog-2 hermaphrodites (which are killed by brief mating) express strikingly higher levels of ins-8 than do pqm-1 hermaphrodites, which are not affected by brief mating (Figure 7A; Supplementary file 4). We confirmed the transcriptome analysis using a transcriptional reporter: mating significantly increased the expression level of ins-8p::gfp, particularly in the anterior part of the intestine (Figure 7B). INS-7, which has been previously shown to act as a DAF-2 agonist that shortens lifespan (Murphy et al., 2003; Murphy et al., 2007), and functions in a feed-forward loop to reduce DAF-2 activity (Murphy et al., 2007), is also consistently induced but to a lesser degree. We hypothesized that INS-8 might act as a DAF-2 agonist under mating conditions, and thus might induce seminal-fluid-mediated death; if true, reduction of ins-8 should prevent SF-induced death, even in self-spermless animals. Indeed, while brief mating of Day three fog-2 females with wild-type males shortens lifespan (Figure 7E), knockdown of ins-8 (Figure 7C) or ins-7 (Figure 7D) blocked this effect. Similar to loss of pqm-1 and TOR/let-363, reduction of ins-7 and ins-8 prevented HLH-30 cytoplasmic localization after mating (Figure 7F, Figure 5\u2014figure supplement 2C). Thus, INS-8 and INS-7 activity promote seminal fluid-induced killing and, like PQM-1 and TOR, act upstream of HLH-30.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/46413/elife-46413-fig7-v2.jpg)\n\n**Figure 7.:** (A) Heatmap of insulin gene expression comparisons between fog-2 mated worms (short-lived after mating) and pqm-1 mated worms (no lifespan decrease after mating). (B) Both mean and maximum Pins-8::gfp expression increased in mated worms (right), correlating with gene expression data (A). (C, D) Knockdown of ins-8 (C) or ins-7 (D) protects hermaphrodites from seminal fluid killing. (C) fog-2;ins-8(RNAi) unmated: 18.4\u00a0\u00b1\u00a00.7 days; mated with fog-2 males: 17.2\u00a0\u00b1\u00a00.9 days, p=0.2879; mated with fer-6 males: 17.3\u00a0\u00b1\u00a00.7 days, p=0.2582 (compared to unmated). (D) fog-2;ins-7(RNAi) unmated: 18.2\u00a0\u00b1\u00a00.6 days; mated with fog-2 males: 17.7\u00a0\u00b1\u00a01.1 days, p=0.9380; mated with fer-6 males: 17.2\u00a0\u00b1\u00a00.7 days, p=0.3994 (compared to unmated). (E) Controls for Figure 7C\u2013D. fog-2 on vector control RNAi unmated: 18.4\u00a0\u00b1\u00a00.9 days; mated with fog-2 males: 13.3\u00a0\u00b1\u00a00.7 days, p<0.0001; mated with fer-6 males: 15.4\u00a0\u00b1\u00a00.6 days, p=0.0032 (compared to unmated). (F) Knocking down ins-7 and ins-8 also restores nuclearly localized HLH-30 in mated hermaphrodites.\n\n## Discussion\n\n### A model of self-sperm protection from Seminal Fluid-induced killing\n\nThe presence of self-sperm in hermaphroditic mothers slows the deleterious effects of mating with males, whose seminal fluid pathway \u2018hijacks\u2019 the mother\u2019s longevity and stress protection system by altering the activity of three important transcription factors, DAF-16 (Shi and Murphy, 2014), and as we show here, PQM-1 and HLH-30. The presence of self-sperm staves off mating effects by inducing the expression of the insulin receptor antagonist, INS-37, which in turn prevents DAF-2/insulin signaling and retains DAF-16 and HLH-30 in the nucleus, and PQM-1 in the cytoplasm. These key transcription factors are regulated by the DAF-2/insulin signaling pathway via a specific insulin-like peptide agonist (INS-8) and antagonist (INS-37) (Figure 8), and in HLH-30\u2019s case, also by the nutrient sensor TOR/LET-363. INS-8 and INS-7 expression is upregulated in mated mothers and inducing seminal-fluid-mediated killing through activation of DAF-2 and subsequent inhibition of DAF-16 (Shi and Murphy, 2014; Lin et al., 2001) and HLH-30 nuclear localization and activation. INS-7 induction in the intestine and its feed-forward effect on DAF-2 coordinates the IIS pathway across the entire animal (Murphy et al., 2007), which causes rapid deceleration of stress responsive pathways. PQM-1 appears to drive HLH-30 out of the nucleus in an antagonistic manner, as PQM-1 does with DAF-16/FOXO (Tepper et al., 2013). Like HLH-30, PQM-1 is negatively regulated by TOR signaling (Dowen et al., 2016), but since PQM-1\u2019s role is detrimental, the loss of each of these factors prevents mating-induced death (Figure 8). Together, this network of signaling pathways and transcription factors coordinates both the resistance and susceptibility to mating-induced death.\n\n![Figure 8.](https://cdn.elifesciences.org/articles/46413/elife-46413-fig8-v2.jpg)\n\n**Figure 8.:** INS-37 antagonizes DAF-2 activity and promotes DAF-16 and HLH-30 maintenance in the nucleus.\u00a0Self-sperm also inhibits TOR signaling, which regulates HLH-30 nuclear localization. Seminal fluid transfer upon mating increases expression of ins-8 and ins-7; these agonists activate DAF-2, promoting PQM-1 nuclear localization and DAF-16 and HLH-30 nuclear exit, resulting in premature death. INS-7 acts in a feed-forward loop (Murphy et al., 2007), further accelerating DAF-2 activation.\n\nThe ability of hermaphroditic mothers to slow mating-induced decline as long as she has her own self-sperm suggests that hermaphrodites have developed strategies to combat the deleterious effects of mating with males, staving off early death until mating becomes beneficial to the mother. While early mating is detrimental to the mothers, late mating (i.e., after all self-sperm are utilized) is beneficial, as it allows the mother to use her remaining oocytes. Moreover, the involvement of TOR suggests that nutritional status may also influence mating-induced death. Thus, a dynamic system that is responsive to changing sperm levels and nutrient signals may allow such a shift. The expression of a DAF-2 antagonist, INS-37, allows hermaphrodites to resist and delay C. elegans\u2019 main mechanism of competition with other males, seminal fluid-induced killing, until self-sperm are exhausted, increasing the chances that the mother will survive through the end of her reproductive period. Such strategies, coupled with the increased attraction of males that accompany the depletion of self-sperm (Morsci et al., 2011), enable hermaphrodites to delay both the odds of mating,\u00a0through behavioral changes (Morsci et al., 2011) and the detrimental effects of mating (through molecular signaling), before the full utilization of their own sperm. This increases the chance that they will propagate their own genome preferentially before succumbing to mating. The balance shifts in the male\u2019s favor as the hermaphrodite\u2019s sperm are depleted, causing her death shortly after producing his progeny, and preventing further mating by other males. This insulin peptide-based arms race regulates a transition from preventing to promoting the activation of the insulin signaling pathway, resulting first in protection from death during early reproduction, and then accelerated death of the mother immediately after reproduction. Together, these signals tune and optimize reproduction for the hermaphroditic mother, even when confronted with deleterious effects from males.\n\n## Materials and methods\n\n### Strains\n\n<table>\n  <thead>\n    <tr>\n      <th>Strains</th>\n      <th>Source</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>N2</td>\n      <td>CGC</td>\n    </tr>\n    <tr>\n      <td>CF1038: daf\u221216(mu86) I</td>\n      <td>CGC</td>\n    </tr>\n    <tr>\n      <td>BA6: fer\u22126(hc6) I</td>\n      <td>CGC</td>\n    </tr>\n    <tr>\n      <td>CB4108: fog\u22122(q71) V</td>\n      <td>CGC</td>\n    </tr>\n    <tr>\n      <td>BA17: fem\u22121(hc17) IV</td>\n      <td>CGC</td>\n    </tr>\n    <tr>\n      <td>JK816: fem\u22123(q20) IV</td>\n      <td>CGC</td>\n    </tr>\n    <tr>\n      <td>DR476: daf\u221222(m130) II</td>\n      <td>CGC</td>\n    </tr>\n    <tr>\n      <td>RB711: pqm\u22121(ok485) II</td>\n      <td>CGC</td>\n    </tr>\n    <tr>\n      <td>JIN1375: hlh\u221230(tm1978) IV</td>\n      <td>CGC</td>\n    </tr>\n    <tr>\n      <td>BC11288: dpy\u22125(e907) I; sEx11288[rCes W02C12.3b::GFP\u00a0+\u00a0pCeh361]</td>\n      <td>CGC</td>\n    </tr>\n    <tr>\n      <td>OP201: unc\u2212119(tm4063) III; wgIs201[pqm\u22121::TY1::EGFP::3xFLAG(92C12)+unc\u2212119(+)]</td>\n      <td>CGC</td>\n    </tr>\n    <tr>\n      <td>HT1704: unc\u2212119(ed3) III; wwEx67[ins\u22128 p::GFP\u00a0+\u00a0unc\u2212119(+)]</td>\n      <td>CGC</td>\n    </tr>\n    <tr>\n      <td>TJ356: zls356[daf-16p::daf-16a/b::GFP\u00a0+\u00a0rol-6(su1006)]</td>\n      <td>CGC</td>\n    </tr>\n    <tr>\n      <td>CQ777: fog-2(q71); zls356[daf-16p::daf-16a/b::GFP\u00a0+\u00a0rol-6(su1006)] (TJ356 crossed into CB4108)</td>\n      <td>This study</td>\n    </tr>\n  </tbody>\n</table>\n\n### Experimental methods\n\n#### Mating setup\n\n60 mm NGM plates were used to set up group mating. Each 60 mm NGM plate was seeded with OP50 to make a\u00a0~\u00a03 cm diameter bacterial lawn 2 days before mating. About 50 hermaphrodites and 150 young (day 1 \u2212 day 2 of adulthood) males were transferred onto the plate. Two hours later (for all the brief mating lifespan assays) or 12/24 hr later (for long term mating assays), the hermaphrodites were transferred onto newly seeded 60 mm NGM plates in the absence of males for lifespan assays.\n\n#### Lifespan assay\n\nLifespan assays were performed at 20C. No FUdR was added to the plates. About 25 synchronized Day 1 hermaphrodites were transferred onto each plate. The hermaphrodites were transferred daily onto new seeded plates in the first week of the lifespan assay. Afterwards, they were transferred once every 2 days. Group mating was set up at the beginning of Day 3 of adulthood (or as noted in text) for brief mating lifespan assays. When RNAi was used in lifespan assay, RNAi treatment always started from eggs for all the experiments in this study. Worms were moved onto standard mating plates (NGM seeded with OP50, no RNAi is included) for 2 hr mating to eliminate any potential influence on male mating efficiency caused by RNAi. Then, worms were moved back onto RNAi plates for the remaining of lifespan assays. Kaplan\u2212Meier analysis with log\u2212rank (Mantel\u2212Cox) method was performed to compare the lifespans of different groups. \u2018Bagged\u2019 worms were censored on day of the event.\n\n#### Male-conditioned plates (MCP) setup\n\nMale\u2212conditioned plates for lifespan assays were prepared similar to the previous description (Maures et al., 2014). Briefly, 60 \u03bcl of OP50 was dropped onto each 35 mm NGM plate to make a bacterial lawn of\u00a0~25 mm diameter. 30 young Day 1 wild\u2212type males (fog\u2212two males) were transferred onto each plate. Two days later, they were removed and 25 hermaphrodites for lifespan assays were immediately transferred onto these male-conditioned plates (MCP). These MCPs were prepared throughout the course of the lifespan assays to ensure fresh MCP plates ere available.\n\n### GFP fluorescent worm imaging and quantitation\n\n#### HLH\u221230::GFP (BC11288)\n\nMultiple HLH\u221230::GFP strains are available at CGC. Since we need to mate the worms and monitor their post\u2212mating lifespans, strains with roller markers are not ideal for our purpose, because roller phenotype could potentially affect the mating efficiency especially in the brief mating set up. Therefore, we chose BC11288, in which gfp was inserted after the start codon of the longest hlh\u221230 transcript. Another advantage of BC11288 is that its fluorescence is very strong, allowing us to directly image the freely moving worms under the scope, which could reveal HLH\u221230 localization more accurately, since mounting\u2212induced stress could make HLH\u221230 more nuclear (Lapierre et al., 2013). 1\u20132 min of videos were taken using iphone connected directly with Leika M205\u00a0FA. Worms in focus and with proper exposure were scored in two ways: i) each worm was assigned a category based on HLH\u221230::GFP localization (strongly nuclear, weakly nuclear, and diffuse);\u00a0a\u00a0Chi\u2212square test was used to determine the significance between different groups; ii) how many recognizable intestinal nucleus can be counted. The average number of intestinal nuclei with nuclearly localized HLH\u221230::GFP was compared with each other using the unpaired t\u2212test. When HLH-30::GFP was assayed in the mutant background, the following cross strategy was used: HLH-30::GFP hermaphrodites were crossed with mutant males (i.e. fog-2), F1 males with positive GFP signal were crossed with mutant fog-2 hermaphrodites again, hermaphrodites from F2 generation were directly used in the assay. Half of the were fog-2 homozygous mutant, half of them only have one copy of - mutant allele, thus have functional self-sperm.\n\n#### PQM\u22121::GFP (OP201)\n\nWorms were mated on day 3 of adulthood for 24 hr. 20\u201330 worms of each group were imaged by Nikon Eclipse 90i on day 6 of adulthood. PQM\u22121::GFP localization was quantified in two ways. i) each worm was assigned a category based on PQM\u22121::GFP localization (nuclear, cytoplasmic, and diffuse(both nuclear and cytoplasmic)). Chi\u2212square test was used to determine the significance between different groups. ii) the mean gfp intensity of the most anterior intestinal nuclei and the nearby cytoplasmic region was measured by image J (DIC picture of the same worm was used to determine the position and the size of the nuclei, then switch to GFP picture to measure gfp intensity. The same outline of the nucleus was used and moved to the cytoplasmic region next to the nucleus, and the gfp intensity of this cytoplasmic region was measured.) The Nuc/Cyto ratio was calculated using the two values. T\u2212test analysis was performed to compare the Nuc/Cyto PQM\u22121::GFP intensity of mated and unmated worms.\n\n#### DAF-16::GFP (TJ356)\n\nWorms were mated on day 1 of adulthood for 24 hr. 20\u201330 worms of each group were imaged by Nikon Eclipse 90i next day. DAF\u221216::GFP localization (nuclear, cytoplasmic, and diffuse(both nuclear and cytoplasmic)). Chi\u2212square test was used to determine the significance between different groups. RNAi treatment started from eggs.\n\n#### Pins\u22128::GFP (HT1704)\n\nWorms were mated on day 3 of adulthood for 24 hr. 20\u201330 worms of each group were imaged by Nikon Eclipse 90i on day 5 of adulthood. Image J was used to measure the mean and the maximum GFP intensity of the whole body area. T\u2212test analysis was performed to compare the GFP intensity of different group of worms.\n\n### Microarrays\n\nAbout 200 L4 hermaphrodites were collected for each condition and replicate (Figure 3A and Figure 3\u2014figure supplement 1). For microarrays comparing mated hermaphrodites (Figures 5A and 7A), hermaprhodites were mated on day 1 of adulthood for 24 hr. 100\u2013200 hermaphrodites were collected on day 3 of adulthood.\n\nFour biological replicates were performed. RNA was extracted by the heat\u2212vortexing method. Two-color Agilent microarrays were used for expression analysis. Significant differentially\u00a0expressed gene sets were identified using SAM (Tusher et al., 2001). g:Profiler was used for GO term analysis and enriched TF motifs prediction (Reimand et al., 2016).\n\nLinks to the original microarray data:\n\nL4 N2 vs fog-2(q71) hermaphrodites: https://puma.princeton.edu/cgi-bin/exptsets/review.pl?exptset_no=7332\n\nL4 fem-3(q20) vs N2 hermaphrodites: https://puma.princeton.edu/cgi-bin/exptsets/review.pl?exptset_no=7333\n\nDay three mated fog-2(q71) vs mated pqm-1(ok485) hermaphrodites: https://puma.princeton.edu/cgi-bin/exptsets/review.pl?exptset_no=7334\n\n### ins-37 qRT-PCR measurements\n\nAbout 200 L4 hermaphrodites were collected for each genotype and condition. RNA was extracted by the heat\u2212vortexing method. SuperScript III First-Strand Synthesis (ThermoFisher Scientific) was used to convert extracted RNA to cDNA. qRT-PCR was performed in ViiA seven system (Applied Biosystems) using SYBR Green (Sigma-Aldrich) method. Ins-37 expression in fog-2 unmated L4 was normalized to 1. pmp-3 was used as a reference gene.\n\nIns-37 primers:\n\n\u2018ins-37-qRT-f' 5\u2032-CATCCCGAACCGGATAGACG-3\u2032\n\n\u2018ins-37-qRT-r' 5\u2032-GGGACCGGGTGAATTGGATT-3\u2032\n\nReference gene primers: pmp-3\n\nForward: 5\u2032-AGTTCCGGTTGGATTGGTCC-3\u2032\n\nReverse: 5\u2032-CCAGCACGATAGAAGGCGAT-3\u2019\n",
+      "created_at": "2025-12-02T11:02:12.689356Z"
+    },
+    {
+      "id": "10e4fc20-48d3-481d-927b-16f549919615",
+      "submission_id": "cce99b2d-dd7f-40f6-81e8-773da8ceb8c5",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Matt Kaeberlein, University of Washington United States\n\nReviewers:\n- George Sutphin, University of Arizona United States\n\n## Review text\n\nDOI: [10.7554/eLife.46413.030](https://doi.org/10.7554/eLife.46413.030)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Insulin-like peptides and the mTOR-TFEB pathway protect C. elegans hermaphrodites from Mating-induced Death\" for consideration by eLife. Your article has been reviewed by three peer reviewers, one of whom is a member of our Board of Reviewing Editors, and the evaluation has been overseen by Patricia Wittkopp as the Senior Editor. The following individual involved in review of your submission has agreed to reveal his identity: George Sutphin (Reviewer #2).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nAll of the reviewers are in agreement that the work described here provides important insights into the mechanisms that control how mating influences health and longevity in worms and that it will be of general interest. However, some concerns were raised regarding experimental design, replication and statistics, and interpretation that the authors are encouraged to address prior to resubmission. In addition, the authors are encouraged to consider a more general readership who may not be experts in the prior literature or C. elegans genetic pathways when revising the text.\n\nEssential revisions:\n\n1) Statistics and replication: Few experiments were validated in triplicate in this work and many only included a single biological replicate. At an absolute minimum, all experiments should be performed with duplicate biological replicates and preferably the authors would meet the field standard of triplicate replication.\n\n2) The authors include in their model a strong conclusion that DAF-2 and DAF-16 are mediating the insulin side of the self-sperm protection from mating induced lifespan shortening. No interaction with DAF-2 is explicitly tested in any aspect of this work, and the only experiment examining DAF-16 simply demonstrates that worms lacking daf-16 are sensitive to brief mating-induced death early in life, while wild-type animals are not. With this single exception, the involvement of DAF-2 and DAF-16 is inferred solely on evidence from interactions with the major genetic players in this story (INS-7, INS-8, INS-37, PMQ-1, HLH-30) in other phenotypic contexts (development, long-term mating, etc). To be clear, the basis for this model is sound, but the interactions have not been confirmed in the context of brief mating-induced death, while involvement of DAF-2 and DAF-16 in this process is strongly stated in the conclusions and final model. One of the compelling reasons for this work and that of Booth et al. is the demonstration that the cost of early-life mating is distinct from late-life or continuous mating (mechanistically because of the presence of self-sperm). Given that some genetic backgrounds appear to have different effects on early-life mating than late-life or continuous mating, inferring relationships between these paradigms is potentially problematic. While experimentally confirming the role of DAF-2 and DAF-16 (e.g. in a manner similar to that presented for HLH-30) would solidify this part of the model, all of these experiments are not absolutely necessary for publication. The reviewers do feel that, at a minimum, the lifespans of daf-16(-) mutants should be repeated and a test should be performed for DAF-16::GFP localization. A clearer statement that the role of DAF-2 and DAF-16 are inferred based on previous work on other phenotypes and not directly examined in this work (and similar softening of the final model in Figure 4E) should also be included in the text.\n\n3) Why did the authors focus on ins-37 in the first place? In subsection \u201cSelf-sperm modulate expression of ins-37\u201d they discount sperm specific protein, and then decide to look at gene that they state is germline specific and only expressed when self-sperm is present. The most direct conclusion would be that INS-37 is also a sperm specific gene (sperm is part of the germline after all) and to group it in with the others that were already discounted. Figure 2\u2014figure supplement 2A is referenced and seems to have something to do with expression patterns of INS-37, but the authors only provide a reference to another paper and no description of what the acronyms and markers in the figure are supposed to be showing, it is not possible to tell what information is supposed to be conveyed. It is possible that a clear explanation of this figure will clarify the situation, but a better explanation of the selection of INS-37 for follow up is needed.\n\n4) Moreover, ins-37 gene regulation should be validated either by RTPCR and/or transcriptional reporter (as is the case for ins-8 later in the manuscript). Furthermore, the authors do not show that a brief mating leads to the nuclear exit of DAF-16 as a prolonged mating does. The images showing PQM-1 nuclear translocation are unclear, and rather show an increase in fluorescence expression than an increase in nuclear translocation.\n\n5) The authors show that the transcription factor hlh-30 is required for protection against mating induced demise. While these data are compelling, the data showing HLH-30 nuclear translocation is not. From the pictures, a decrease of HLH-30 nuclear localization cannot be discerned (Figure 2D, I), and the data on complete nuclear localization of HLH-30 at a young age (Figure 2E) is in contrast to published data (which for the HLH-30::GFP strain from the Irazoqui lab does not indicate nuclear localization is animals at steady state/normal room temperature). Since nuclear localization cannot be evaluated from the images (higher magnification is needed), it is not possible to draw conclusions on the activity of HLH-30 after mating; thus, this data set needs to be revisited. Importantly, what happens to HLH-30 nuclear localization in fog-2 mutants following mating?\n\n6) The authors find in their RNASeq that components of the mTOR complex are downregulated in animals that are protected against mating-induced demise. These gene expression data should be validated.\n\n7) There is an important control missing from the set of experiments presented in Figure 3C, Figure 3\u2014figure supplement 1B-D. The authors claim that HLH-30 is necessary for LET-363 knockdown to be protective against brief mating on day 3. While they include the hlh-30 mutant control, the let-363(RNAi) control is not shown. In fact, the effect of let-363 knockdown on mating induced lifespan shortening is only assessed in the fog-2 background, where the authors also report altered let-363 expression. It is overall a bit difficult to understand this expected result \u2013 if the idea is that mTOR RNAi does not extend lifespan in fog-2 animals because they have low mTOR pathway activity, how come fog-2 animals are not long lived (as reported by Kenyon lab)? More rigor and discussion are needed here, and if the authors want to make claims about the functional involvement of the mTOR pathway, the authors should analyze at least one more mTOR pathway mutant, e.g., raga-1.\n",
+      "created_at": "2025-12-02T11:02:12.689356Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T11:02:12.689356Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T11:02:12.689356Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "37db8a79-29a3-4c0f-8719-b2eff7450b57",
+      "content_id": "154c57a0-3ebb-433d-a894-01cfaa9b054c",
+      "claim_id": "C1",
+      "claim": "Lifespan is shortened by mating in C. elegans hermaphrodites.",
+      "claim_type": "EXPLICIT",
+      "source": "Lifespan is shortened by mating, but these deleterious effects must be delayed long enough for successful reproduction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement in the abstract supported by the experimental data presented throughout the manuscript.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:02:12.689356Z"
+    },
+    {
+      "id": "1ba5cacb-2230-4728-98f0-7e4580b55ae7",
+      "content_id": "154c57a0-3ebb-433d-a894-01cfaa9b054c",
+      "claim_id": "C2",
+      "claim": "Susceptibility to brief mating-induced death is caused by the loss of protection upon self-sperm depletion.",
+      "claim_type": "EXPLICIT",
+      "source": "Susceptibility to brief mating-induced death is caused by the loss of protection upon self-sperm depletion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data showing young hermaphrodites with self-sperm are protected while old hermaphrodites without self-sperm are susceptible.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:02:12.689356Z"
+    },
+    {
+      "id": "04784048-ba69-476a-927b-9aad66b21262",
+      "content_id": "154c57a0-3ebb-433d-a894-01cfaa9b054c",
+      "claim_id": "C3",
+      "claim": "Self-sperm maintains the expression of a DAF-2 insulin-like antagonist, INS-37.",
+      "claim_type": "EXPLICIT",
+      "source": "Self-sperm maintains the expression of a DAF-2 insulin-like antagonist, INS-37, which promotes the nuclear localization of intestinal HLH-30/TFEB, a key pro-longevity regulator.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by microarray and qRT-PCR data showing ins-37 is upregulated in wild-type compared to fog-2 hermaphrodites.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:02:12.689356Z"
+    },
+    {
+      "id": "2403f8f2-e3b2-4bf5-9ba0-98878653135f",
+      "content_id": "154c57a0-3ebb-433d-a894-01cfaa9b054c",
+      "claim_id": "C4",
+      "claim": "INS-37 promotes the nuclear localization of intestinal HLH-30/TFEB.",
+      "claim_type": "EXPLICIT",
+      "source": "Self-sperm maintains the expression of a DAF-2 insulin-like antagonist, INS-37, which promotes the nuclear localization of intestinal HLH-30/TFEB, a key pro-longevity regulator.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by data showing loss of ins-37 reduces nuclear HLH-30::GFP.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:02:12.689356Z"
+    },
+    {
+      "id": "2c518e62-875a-4bd7-b7aa-1b2d9bfbd34d",
+      "content_id": "154c57a0-3ebb-433d-a894-01cfaa9b054c",
+      "claim_id": "C5",
+      "claim": "Mating induces the agonist INS-8.",
+      "claim_type": "EXPLICIT",
+      "source": "Mating induces the agonist INS-8, promoting HLH-30 nuclear exit and subsequent death.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by transcriptome analysis and ins-8p::gfp reporter data showing increased ins-8 expression after mating.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:02:12.689356Z"
+    },
+    {
+      "id": "1116af8e-e072-4da5-83cf-2a6699c4a8b6",
+      "content_id": "154c57a0-3ebb-433d-a894-01cfaa9b054c",
+      "claim_id": "C6",
+      "claim": "INS-8 promotes HLH-30 nuclear exit and subsequent death.",
+      "claim_type": "EXPLICIT",
+      "source": "Mating induces the agonist INS-8, promoting HLH-30 nuclear exit and subsequent death.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by data showing knockdown of ins-8 prevents HLH-30 cytoplasmic localization and protects from mating-induced death.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:02:12.689356Z"
+    },
+    {
+      "id": "d25cb6d7-6b40-4e66-bdbb-91f4db8a9fdd",
+      "content_id": "154c57a0-3ebb-433d-a894-01cfaa9b054c",
+      "claim_id": "C7",
+      "claim": "HLH-30/TFEB plays a protective role against mating-induced death.",
+      "claim_type": "EXPLICIT",
+      "source": "In opposition to the protective role of HLH-30 and DAF-16/FOXO, TOR/LET-363 and the IIS-regulated Zn-finger transcription factor PQM-1 promote seminal-fluid-induced killing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by data showing hlh-30 mutants are susceptible to brief mating and HLH-30::GFP overexpression provides protection.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:02:12.689356Z"
+    },
+    {
+      "id": "2653c6d4-19a1-4f30-9efa-f64c052a52c2",
+      "content_id": "154c57a0-3ebb-433d-a894-01cfaa9b054c",
+      "claim_id": "C8",
+      "claim": "DAF-16/FOXO plays a protective role against mating-induced death.",
+      "claim_type": "EXPLICIT",
+      "source": "In opposition to the protective role of HLH-30 and DAF-16/FOXO, TOR/LET-363 and the IIS-regulated Zn-finger transcription factor PQM-1 promote seminal-fluid-induced killing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by data showing daf-16 mutants are susceptible to brief mating even when young.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:02:12.689356Z"
+    },
+    {
+      "id": "f85877ed-b7e2-4a51-9ed5-3faaed47d536",
+      "content_id": "154c57a0-3ebb-433d-a894-01cfaa9b054c",
+      "claim_id": "C9",
+      "claim": "TOR/LET-363 promotes seminal-fluid-induced killing.",
+      "claim_type": "EXPLICIT",
+      "source": "In opposition to the protective role of HLH-30 and DAF-16/FOXO, TOR/LET-363 and the IIS-regulated Zn-finger transcription factor PQM-1 promote seminal-fluid-induced killing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by data showing reduction of let-363 prevents brief mating-induced death in fog-2 females.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:02:12.689356Z"
+    },
+    {
+      "id": "16758770-1870-49cb-871e-81886837aa10",
+      "content_id": "154c57a0-3ebb-433d-a894-01cfaa9b054c",
+      "claim_id": "C10",
+      "claim": "PQM-1 promotes seminal-fluid-induced killing.",
+      "claim_type": "EXPLICIT",
+      "source": "In opposition to the protective role of HLH-30 and DAF-16/FOXO, TOR/LET-363 and the IIS-regulated Zn-finger transcription factor PQM-1 promote seminal-fluid-induced killing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by data showing pqm-1 mutants are resistant to both brief and long-term mating.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:02:12.689356Z"
+    },
+    {
+      "id": "877ed673-3a94-4b22-94cf-1697945b6c4a",
+      "content_id": "154c57a0-3ebb-433d-a894-01cfaa9b054c",
+      "claim_id": "C11",
+      "claim": "Males compete with one another to pass on their own genomes, often at the expense of female health.",
+      "claim_type": "EXPLICIT",
+      "source": "The battle between the sexes is played out across the animal kingdom: males compete with one another to pass on their own genomes, often at the expense of female health, and females, in turn, must devise strategies to reduce the deleterious effects of mating in order to successfully complete reproduction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement about sexual antagonism supported by established knowledge in evolutionary biology.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:02:12.689356Z"
+    },
+    {
+      "id": "98b4f5b2-b934-4c57-99ec-119d11d08fbb",
+      "content_id": "154c57a0-3ebb-433d-a894-01cfaa9b054c",
+      "claim_id": "C12",
+      "claim": "Signals from males kill hermaphrodites through germline activation.",
+      "claim_type": "EXPLICIT",
+      "source": "Sexual antagonism is evident in Caenorhabditis elegans, where signals from males kill hermaphrodites through three distinct mechanisms: germline activation (Shi and Murphy, 2014), seminal fluid transfer (Shi and Murphy, 2014), and, at high doses, male pheromone toxicity (Maures et al., 2014; Shi et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:02:12.689356Z"
+    },
+    {
+      "id": "f46796e4-8d4f-4320-91c3-c819a2f87f66",
+      "content_id": "154c57a0-3ebb-433d-a894-01cfaa9b054c",
+      "claim_id": "C13",
+      "claim": "Signals from males kill hermaphrodites through seminal fluid transfer.",
+      "claim_type": "EXPLICIT",
+      "source": "Sexual antagonism is evident in Caenorhabditis elegans, where signals from males kill hermaphrodites through three distinct mechanisms: germline activation (Shi and Murphy, 2014), seminal fluid transfer (Shi and Murphy, 2014), and, at high doses, male pheromone toxicity (Maures et al., 2014; Shi et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:02:12.689356Z"
+    },
+    {
+      "id": "9fea5780-0d64-4817-b560-c01d8efc5a50",
+      "content_id": "154c57a0-3ebb-433d-a894-01cfaa9b054c",
+      "claim_id": "C14",
+      "claim": "Signals from males kill hermaphrodites through male pheromone toxicity at high doses.",
+      "claim_type": "EXPLICIT",
+      "source": "Sexual antagonism is evident in Caenorhabditis elegans, where signals from males kill hermaphrodites through three distinct mechanisms: germline activation (Shi and Murphy, 2014), seminal fluid transfer (Shi and Murphy, 2014), and, at high doses, male pheromone toxicity (Maures et al., 2014; Shi et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:02:12.689356Z"
+    },
+    {
+      "id": "82d17060-54ae-4dd3-a733-5766cdde130c",
+      "content_id": "154c57a0-3ebb-433d-a894-01cfaa9b054c",
+      "claim_id": "C15",
+      "claim": "C. elegans are hermaphrodites and do not require males to reproduce.",
+      "claim_type": "EXPLICIT",
+      "source": "Caenorhabditis elegans are hermaphrodites and thus do not require males to reproduce; in fact, males are normally rare in nature (~1/1000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about C. elegans biology.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:02:12.689356Z"
+    },
+    {
+      "id": "8a7b8d02-18b1-4d13-b48e-dbdf2adf515c",
+      "content_id": "154c57a0-3ebb-433d-a894-01cfaa9b054c",
+      "claim_id": "C16",
+      "claim": "Males are normally rare in nature (~1/1000) in C. elegans populations.",
+      "claim_type": "EXPLICIT",
+      "source": "Caenorhabditis elegans are hermaphrodites and thus do not require males to reproduce; in fact, males are normally rare in nature (~1/1000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about C. elegans populations.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:02:12.689356Z"
+    },
+    {
+      "id": "3cb38dde-794a-4ac8-b2cd-d10506d71cc7",
+      "content_id": "154c57a0-3ebb-433d-a894-01cfaa9b054c",
+      "claim_id": "C17",
+      "claim": "Brief bursts of mating with males can be beneficial for the species due to increased outcrossing.",
+      "claim_type": "EXPLICIT",
+      "source": "Brief bursts of mating with males can be beneficial for the species due to increased outcrossing (Kimble, 1988), but males are quickly eliminated by dispersal (Wegewitz et al., 2008; Anderson et al., 2010) and by their own pheromones (Shi et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:02:12.689356Z"
+    },
+    {
+      "id": "af147437-d0e9-40e0-ab70-1f7ed08dea84",
+      "content_id": "154c57a0-3ebb-433d-a894-01cfaa9b054c",
+      "claim_id": "C18",
+      "claim": "Males are quickly eliminated by dispersal.",
+      "claim_type": "EXPLICIT",
+      "source": "Brief bursts of mating with males can be beneficial for the species due to increased outcrossing (Kimble, 1988), but males are quickly eliminated by dispersal (Wegewitz et al., 2008; Anderson et al., 2010) and by their own pheromones (Shi et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:02:12.689356Z"
+    },
+    {
+      "id": "9022fc04-eeaa-44c5-9c77-3793bed842d4",
+      "content_id": "154c57a0-3ebb-433d-a894-01cfaa9b054c",
+      "claim_id": "C19",
+      "claim": "Males are quickly eliminated by their own pheromones.",
+      "claim_type": "EXPLICIT",
+      "source": "Brief bursts of mating with males can be beneficial for the species due to increased outcrossing (Kimble, 1988), but males are quickly eliminated by dispersal (Wegewitz et al., 2008; Anderson et al., 2010) and by their own pheromones (Shi et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:02:12.689356Z"
+    },
+    {
+      "id": "03171c70-9a44-4e94-8756-d68c16b07507",
+      "content_id": "154c57a0-3ebb-433d-a894-01cfaa9b054c",
+      "claim_id": "C20",
+      "claim": "Seminal fluid transfer induces death of mothers just after they have produced all of that male's progeny.",
+      "claim_type": "EXPLICIT",
+      "source": "While germline activation is necessary for reproduction and the resulting lifespan decrease is shared both across sexes and species, seminal fluid (SF) killing appears to be used specifically for the purpose of 'sperm competition' (that is, competition between males) within the species: seminal fluid transfer induces death of mothers just after they have produced all of that male's progeny, eliminating the possibility of the mother re-mating with a different male (Shi and Murphy, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:02:12.689356Z"
+    },
+    {
+      "id": "207e2f06-fcc8-463b-bd0a-5d68fc9682e0",
+      "content_id": "154c57a0-3ebb-433d-a894-01cfaa9b054c",
+      "claim_id": "C21",
+      "claim": "Seminal fluid killing eliminates the possibility of the mother re-mating with a different male.",
+      "claim_type": "EXPLICIT",
+      "source": "While germline activation is necessary for reproduction and the resulting lifespan decrease is shared both across sexes and species, seminal fluid (SF) killing appears to be used specifically for the purpose of 'sperm competition' (that is, competition between males) within the species: seminal fluid transfer induces death of mothers just after they have produced all of that male's progeny, eliminating the possibility of the mother re-mating with a different male (Shi and Murphy, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the timing of death and the concept of sperm competition.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:02:12.689356Z"
+    },
+    {
+      "id": "eb75328a-635b-4b3b-93d7-6dec30642dcc",
+      "content_id": "154c57a0-3ebb-433d-a894-01cfaa9b054c",
+      "claim_id": "C22",
+      "claim": "Mating-induced death occurs only after C. elegans hermaphrodites produce all their progeny.",
+      "claim_type": "EXPLICIT",
+      "source": "We noted previously that mating-induced death occurs only after C. elegans hermaphrodites produce all their progeny (Shi and Murphy, 2014); this delay is necessary for successful reproduction, but the underlying mechanism allowing this balance was previously unknown.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:02:12.689356Z"
+    },
+    {
+      "id": "7519d619-2765-4b5e-b853-333321683a50",
+      "content_id": "154c57a0-3ebb-433d-a894-01cfaa9b054c",
+      "claim_id": "C23",
+      "claim": "Self-sperm are protective against short-term mating-induced death specifically in hermaphroditic mothers.",
+      "claim_type": "EXPLICIT",
+      "source": "In an accompanying manuscript, Booth et al. report that self-sperm are protective against short-term mating-induced death specifically in hermaphroditic mothers (Booth et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to accompanying manuscript.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:02:12.689356Z"
+    },
+    {
+      "id": "83359a93-924f-4e12-bab8-309662c43a16",
+      "content_id": "154c57a0-3ebb-433d-a894-01cfaa9b054c",
+      "claim_id": "C24",
+      "claim": "Young hermaphrodites that mate during a brief interaction with males are protected from mating-induced death.",
+      "claim_type": "EXPLICIT",
+      "source": "Unlike older hermaphrodites, young hermaphrodites that mate during a brief interaction with males are protected from this mating-induced death (Booth et al., 2019; Figure 1A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by citation and Figure 1A,B showing survival curves.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:02:12.689356Z"
+    },
+    {
+      "id": "88334271-c23d-4cd8-b61b-163300be05d1",
+      "content_id": "154c57a0-3ebb-433d-a894-01cfaa9b054c",
+      "claim_id": "C25",
+      "claim": "Young feminized (fog-2(q71), fem-1(hc17)) worms lacking self-sperm exhibit significant acceleration of death after brief mating with males.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, young feminized (i.e. lacking self-sperm; fog-2(q71), fem-1(hc17)) worms exhibit significant acceleration of death after brief mating with males (Booth et al., 2019; Figure 1C, Figure 1\u2014figure supplement 1A), suggesting that self-sperm are protective.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by citation and Figure 1C and Figure 1\u2014figure supplement 1A showing survival curves.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:02:12.689356Z"
+    },
+    {
+      "id": "a5ced0b5-734b-4c26-87ac-e204ce2a229a",
+      "content_id": "154c57a0-3ebb-433d-a894-01cfaa9b054c",
+      "claim_id": "C26",
+      "claim": "Wild-type N2 hermaphrodites have reduced lifespan after 2 hr mating on day 7 of adulthood.",
+      "claim_type": "EXPLICIT",
+      "source": "Day 7 N2 unmated: 13.8 \u00b1 0.5 days; mated: 10.0 \u00b1 0.4 days, p<0.0001.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by lifespan data with statistical significance.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:02:12.689356Z"
+    },
+    {
+      "id": "3b19c62c-9bce-485d-b3c8-36d6754dcfec",
+      "content_id": "154c57a0-3ebb-433d-a894-01cfaa9b054c",
+      "claim_id": "C27",
+      "claim": "Wild-type N2 hermaphrodites have normal lifespan when brief mating occurs on day 3.",
+      "claim_type": "EXPLICIT",
+      "source": "Day 3 N2 unmated: 14.1 \u00b1 0.7 days; mated: 13.9 \u00b1 0.6 days, p=0.8481",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by lifespan data showing no significant difference.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:02:12.689356Z"
+    },
+    {
+      "id": "addea5c2-a2cc-4702-824b-3f7f0de40054",
+      "content_id": "154c57a0-3ebb-433d-a894-01cfaa9b054c",
+      "claim_id": "C28",
+      "claim": "Self-spermless fog-2(q71) are susceptible to 2 hr mating on both day 3 and day 7 of adulthood.",
+      "claim_type": "EXPLICIT",
+      "source": "Day three fog-2 unmated: 19.7 \u00b1 0.7 days; mated: 15.4 \u00b1 0.7 days, p<0.0001; Day seven fog-2 unmated: 21.0 \u00b1 0.6 days; mated: 14.8 \u00b1 0.5 days, p<0.0001.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by lifespan data with statistical significance.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:02:12.689356Z"
+    },
+    {
+      "id": "9adef908-7f5b-49e7-894d-e88f759daf39",
+      "content_id": "154c57a0-3ebb-433d-a894-01cfaa9b054c",
+      "claim_id": "C29",
+      "claim": "Mating with fog-2 males (which are functionally wild type) leads to lifespan decrease in fog-2 self-spermless hermaphrodites.",
+      "claim_type": "EXPLICIT",
+      "source": "Day 3 fog-2 unmated: 18.2 \u00b1 0.8 days; mated with fog-2 males: 12.6 \u00b1 0.7 days, p<0.0001",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by lifespan data with statistical significance.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:02:12.689356Z"
+    },
+    {
+      "id": "2222134f-81e6-4e73-ba08-f9948befe8fc",
+      "content_id": "154c57a0-3ebb-433d-a894-01cfaa9b054c",
+      "claim_id": "C31",
+      "claim": "Both sperm-containing and spermless males induce death in young and old fog-2 mothers at equal rates.",
+      "claim_type": "EXPLICIT",
+      "source": "To determine whether brief mating acts through the male sperm/germline pathway or through the seminal fluid pathway, we mated fer-6 males, which are spermless but still contain seminal fluid (Figure 1D,E; Argon and Ward, 1980; Gems and Riddle, 1996), or fog-2 males, which contain male sperm and thus essentially are like wild type (Schedl and Kimble, 1988), with fog-2 (self-spermless) females; both sperm-containing and spermless males induce death in young and old fog-2 mothers at equal rates, suggesting that the death-inducing factor is not sperm.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by lifespan data in Figure 1D,E and citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:02:12.689356Z"
+    },
+    {
+      "id": "e6d50be2-6516-4fc3-af5e-2cc9ccd6ee3d",
+      "content_id": "154c57a0-3ebb-433d-a894-01cfaa9b054c",
+      "claim_id": "C32",
+      "claim": "The death-inducing factor in brief mating is not male sperm.",
+      "claim_type": "EXPLICIT",
+      "source": "both sperm-containing and spermless males induce death in young and old fog-2 mothers at equal rates, suggesting that the death-inducing factor is not sperm.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the data showing equal effects of sperm-containing and spermless males.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:02:12.689356Z"
+    },
+    {
+      "id": "19b31f3a-226b-4542-9dde-b26ad9acdb11",
+      "content_id": "154c57a0-3ebb-433d-a894-01cfaa9b054c",
+      "claim_id": "C33",
+      "claim": "Brief mating-induced death acts through the seminal fluid pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "The dispensability of male sperm suggests that brief mating-induced death acts through the seminal fluid pathway.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the data showing male sperm is not required for the effect.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:02:12.689356Z"
+    },
+    {
+      "id": "935d9a55-4483-477f-94c3-e306fbd06104",
+      "content_id": "154c57a0-3ebb-433d-a894-01cfaa9b054c",
+      "claim_id": "C34",
+      "claim": "daf-22 males induce the same brief mating lifespan effect as wild-type males.",
+      "claim_type": "EXPLICIT",
+      "source": "However, daf-22 males induce the same brief mating lifespan effect as wild-type males.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by lifespan data in Figure 1F-I.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:02:12.689356Z"
+    },
+    {
+      "id": "4eb93135-4abb-4742-bac1-67e82baf7541",
+      "content_id": "154c57a0-3ebb-433d-a894-01cfaa9b054c",
+      "claim_id": "C35",
+      "claim": "2 hr treatment on high-dose male pheromone-conditioned plates does not shorten the lifespan of either wild-type or fog-2 females.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, 2 hr treatment on high-dose male pheromone-conditioned plates ('MCP'; plates pre-treated with 30 males, then removed prior to experiment) does not shorten the lifespan of either wild-type or fog-2 females (Figure 1F\u2013I).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by lifespan data in Figure 1F-I.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:02:12.689356Z"
+    },
+    {
+      "id": "598e522d-cfc2-425e-b6fe-28c84b37b187",
+      "content_id": "154c57a0-3ebb-433d-a894-01cfaa9b054c",
+      "claim_id": "C36",
+      "claim": "Self-sperm protects against brief mating-induced death in a manner that is independent of both male sperm and pheromone effects.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, these data suggest that self-sperm protects against brief mating-induced death in a manner that is independent of both male sperm and pheromone effects, and acts through the seminal fluid/IIS pathway.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the experimental data showing male sperm and pheromones are not required.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:02:12.689356Z"
+    },
+    {
+      "id": "2b18fd2d-b188-4c79-b241-dfb0295bcab2",
+      "content_id": "154c57a0-3ebb-433d-a894-01cfaa9b054c",
+      "claim_id": "C37",
+      "claim": "Insulin-IGF-1 signaling (IIS) mediates seminal fluid-induced killing by inducing DAF-16/FOXO nuclear exit.",
+      "claim_type": "EXPLICIT",
+      "source": "We previously showed that Insulin-IGF-1 signaling (IIS) mediates seminal fluid-induced killing by inducing DAF-16/FOXO nuclear exit (Shi and Murphy, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:02:12.689356Z"
+    },
+    {
+      "id": "1b00eea3-19d1-4a22-885a-7b2cce23c748",
+      "content_id": "154c57a0-3ebb-433d-a894-01cfaa9b054c",
+      "claim_id": "C38",
+      "claim": "daf-16 mutants are susceptible to brief mating, even when young.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that daf-16 mutants are also susceptible to brief mating, even when young (Figure 2A), suggesting that DAF-16 activity is critical for resistance to brief mating.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by lifespan data in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:02:12.689356Z"
+    },
+    {
+      "id": "19c2620c-e2fe-48ee-ab65-9f1f741bf5d9",
+      "content_id": "154c57a0-3ebb-433d-a894-01cfaa9b054c",
+      "claim_id": "C39",
+      "claim": "DAF-16 activity is critical for resistance to brief mating.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that daf-16 mutants are also susceptible to brief mating, even when young (Figure 2A), suggesting that DAF-16 activity is critical for resistance to brief mating.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the daf-16 mutant phenotype.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:02:12.689356Z"
+    },
+    {
+      "id": "31ac84b2-6a4e-4129-af22-fa995d015576",
+      "content_id": "154c57a0-3ebb-433d-a894-01cfaa9b054c",
+      "claim_id": "C40",
+      "claim": "Long-lived daf-2/Insulin receptor mutants are better protected than wild-type worms on Day 8 of adulthood.",
+      "claim_type": "EXPLICIT",
+      "source": "Long-lived daf-2/Insulin receptor mutants, although susceptible to long-term mating, are better protected than wild-type worms on Day 8 of adulthood (Figure 2B), exhibiting the opposite phenotype as daf-16 mutants.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by lifespan data in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:02:12.689356Z"
+    },
+    {
+      "id": "8f50513c-89a3-450c-90d2-4800e25347bd",
+      "content_id": "154c57a0-3ebb-433d-a894-01cfaa9b054c",
+      "claim_id": "C41",
+      "claim": "DAF-16::GFP in fog-2 (self-spermless) mutants moves out of the nucleus upon brief mating.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, DAF-16::GFP in fog-2 (self-spermless) mutants moves out of the nucleus upon brief mating (Figure 2C\u2013D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by imaging data in Figure 2C-D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:02:12.689356Z"
+    },
+    {
+      "id": "05d0117b-60e4-4844-922d-ba0a5067824f",
+      "content_id": "154c57a0-3ebb-433d-a894-01cfaa9b054c",
+      "claim_id": "C42",
+      "claim": "ins-37 is strikingly upregulated in wild-type compared to fog-2 L4 hermaphrodites.",
+      "claim_type": "EXPLICIT",
+      "source": "However, of the remaining differences, the conserved insulin-like peptide ins-37 is strikingly upregulated in wild-type compared to fog-2 L4 hermaphrodites (Figure 3A,B), suggesting that this germline-expressed (Ebbing et al., 2018) signaling molecule is only highly expressed when self-sperm are present.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by microarray and qRT-PCR data in Figure 3A,B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:02:12.689356Z"
+    },
+    {
+      "id": "e5b85839-669e-4ea9-a086-403b1518fdbe",
+      "content_id": "154c57a0-3ebb-433d-a894-01cfaa9b054c",
+      "claim_id": "C43",
+      "claim": "ins-37 is a germline-expressed signaling molecule.",
+      "claim_type": "EXPLICIT",
+      "source": "However, of the remaining differences, the conserved insulin-like peptide ins-37 is strikingly upregulated in wild-type compared to fog-2 L4 hermaphrodites (Figure 3A,B), suggesting that this germline-expressed (Ebbing et al., 2018) signaling molecule is only highly expressed when self-sperm are present.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:02:12.689356Z"
+    },
+    {
+      "id": "6135a699-3401-4c5f-8abd-f6fdda6025c7",
+      "content_id": "154c57a0-3ebb-433d-a894-01cfaa9b054c",
+      "claim_id": "C44",
+      "claim": "ins-37 is only highly expressed when self-sperm are present.",
+      "claim_type": "EXPLICIT",
+      "source": "However, of the remaining differences, the conserved insulin-like peptide ins-37 is strikingly upregulated in wild-type compared to fog-2 L4 hermaphrodites (Figure 3A,B), suggesting that this germline-expressed (Ebbing et al., 2018) signaling molecule is only highly expressed when self-sperm are present.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the comparison of wild-type and fog-2 expression data.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:02:12.689356Z"
+    },
+    {
+      "id": "c0dbc9d7-ac57-478a-836e-17f67c96b097",
+      "content_id": "154c57a0-3ebb-433d-a894-01cfaa9b054c",
+      "claim_id": "C45",
+      "claim": "RNAi of ins-37 in wild-type (N2) worms shortens their lifespan after brief mating.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, RNAi of ins-37 in wild-type (N2) worms shortens their lifespan after brief mating (Figure 3C, Figure 3\u2014figure supplement 2B), despite the presence of self-sperm, suggesting that ins-37 is key for self-sperm-mediated protection from mating.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by lifespan data in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:02:12.689356Z"
+    },
+    {
+      "id": "9b8a4c1b-611c-4346-8d69-6bef8198c5ca",
+      "content_id": "154c57a0-3ebb-433d-a894-01cfaa9b054c",
+      "claim_id": "C46",
+      "claim": "ins-37 is key for self-sperm-mediated protection from mating.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, RNAi of ins-37 in wild-type (N2) worms shortens their lifespan after brief mating (Figure 3C, Figure 3\u2014figure supplement 2B), despite the presence of self-sperm, suggesting that ins-37 is key for self-sperm-mediated protection from mating.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the ins-37 RNAi phenotype.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:02:12.689356Z"
+    },
+    {
+      "id": "eb6d3502-4edf-4e5c-a7d4-7094853ce631",
+      "content_id": "154c57a0-3ebb-433d-a894-01cfaa9b054c",
+      "claim_id": "C47",
+      "claim": "INS-37 acts as a DAF-2 antagonist during development.",
+      "claim_type": "EXPLICIT",
+      "source": "INS-37 may act as a self-sperm-induced antagonist of the insulin receptor, DAF-2, consistent with a recent report that INS-37 acts a DAF-2 antagonist during development (Zheng et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:02:12.689356Z"
+    },
+    {
+      "id": "cbaf4524-eee8-4b88-a30d-88c461c59c96",
+      "content_id": "154c57a0-3ebb-433d-a894-01cfaa9b054c",
+      "claim_id": "C48",
+      "claim": "INS-37 may act as a self-sperm-induced antagonist of the insulin receptor, DAF-2.",
+      "claim_type": "EXPLICIT",
+      "source": "INS-37 may act as a self-sperm-induced antagonist of the insulin receptor, DAF-2, consistent with a recent report that INS-37 acts a DAF-2 antagonist during development (Zheng et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation based on the data and previous reports.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:02:12.689356Z"
+    },
+    {
+      "id": "57c04b3a-f1d1-4c0c-94bf-559f9576b4f2",
+      "content_id": "154c57a0-3ebb-433d-a894-01cfaa9b054c",
+      "claim_id": "C49",
+      "claim": "Spermless females differ in genes whose promoters contain the predicted binding motif for the HLH-30/TFEB transcription factor.",
+      "claim_type": "EXPLICIT",
+      "source": "Our transcriptional data revealed that spermless females differ not only in expression of sperm proteins and ins-37 but also in genes whose promoters contain the predicted binding motif for the HLH-30/TFEB transcription factor (Reimand et al., 2007; Grove et al., 2009; Figure 3\u2014figure supplement 1), which has been previously implicated in longevity regulation through its control of lipid metabolism and lysosomal autophagy.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by transcriptional data and motif analysis in Figure 3\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:02:12.689356Z"
+    },
+    {
+      "id": "f8c5cb61-3101-4cf8-b03b-e59362617881",
+      "content_id": "154c57a0-3ebb-433d-a894-01cfaa9b054c",
+      "claim_id": "C50",
+      "claim": "HLH-30/TFEB has been previously implicated in longevity regulation through its control of lipid metabolism and lysosomal autophagy.",
+      "claim_type": "EXPLICIT",
+      "source": "Our transcriptional data revealed that spermless females differ not only in expression of sperm proteins and ins-37 but also in genes whose promoters contain the predicted binding motif for the HLH-30/TFEB transcription factor (Reimand et al., 2007; Grove et al., 2009; Figure 3\u2014figure supplement 1), which has been previously implicated in longevity regulation through its control of lipid metabolism and lysosomal autophagy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about HLH-30/TFEB function.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:02:12.689356Z"
+    },
+    {
+      "id": "44518fae-a2bd-424f-99f5-ca0fb006f8c2",
+      "content_id": "154c57a0-3ebb-433d-a894-01cfaa9b054c",
+      "claim_id": "C51",
+      "claim": "Mutants that produce an excess of self-sperm (fem-3(q20)) are protected from brief mating-induced death for a longer period of their lifespan than wild-type hermaphrodites.",
+      "claim_type": "EXPLICIT",
+      "source": "Mutants that produce an excess of self-sperm (fem-3(q20)) (Rosenquist and Kimble, 1988) are protected from brief mating-induced death for a longer period of their lifespan than wild-type hermaphrodites (Booth et al., 2019), and we found that the HLH-30 binding motif is also enriched in promoters of genes that are up-regulated in (fem-3(q20)) hermaphrodites compared to animals with normal levels of sperm (Figure 3\u2014figure supplement 1; Supplementary file 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by citation and transcriptional data in Figure 3\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:02:12.689356Z"
+    },
+    {
+      "id": "e30727ca-fcb1-46f8-9246-56ffec12ac4f",
+      "content_id": "154c57a0-3ebb-433d-a894-01cfaa9b054c",
+      "claim_id": "C52",
+      "claim": "The HLH-30 binding motif is enriched in promoters of genes that are up-regulated in fem-3(q20) hermaphrodites compared to animals with normal levels of sperm.",
+      "claim_type": "EXPLICIT",
+      "source": "Mutants that produce an excess of self-sperm (fem-3(q20)) (Rosenquist and Kimble, 1988) are protected from brief mating-induced death for a longer period of their lifespan than wild-type hermaphrodites (Booth et al., 2019), and we found that the HLH-30 binding motif is also enriched in promoters of genes that are up-regulated in (fem-3(q20)) hermaphrodites compared to animals with normal levels of sperm (Figure 3\u2014figure supplement 1; Supplementary file 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by transcriptional data and motif analysis in Figure 3\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:02:12.689356Z"
+    },
+    {
+      "id": "aef21248-3b61-4bd5-9bf4-f4bfab8ae624",
+      "content_id": "154c57a0-3ebb-433d-a894-01cfaa9b054c",
+      "claim_id": "C53",
+      "claim": "TFEB/HLH-30 acts downstream of the TOR pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "TFEB/HLH-30 acts downstream of several longevity pathways, notably the TOR pathway (Lapierre et al., 2013; Nakamura et al., 2016), and DAF-16 and HLH-30 were also recently shown to cooperate under many conditions (Lin et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:02:12.689356Z"
+    },
+    {
+      "id": "1f8e16c6-c06d-4cd9-b047-7f5cc484fd14",
+      "content_id": "154c57a0-3ebb-433d-a894-01cfaa9b054c",
+      "claim_id": "C54",
+      "claim": "DAF-16 and HLH-30 cooperate under many conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "TFEB/HLH-30 acts downstream of several longevity pathways, notably the TOR pathway (Lapierre et al., 2013; Nakamura et al., 2016), and DAF-16 and HLH-30 were also recently shown to cooperate under many conditions (Lin et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:02:12.689356Z"
+    },
+    {
+      "id": "949e089b-4f6e-410e-908a-6441da40f029",
+      "content_id": "154c57a0-3ebb-433d-a894-01cfaa9b054c",
+      "claim_id": "C55",
+      "claim": "hlh-30 mutants are susceptible to brief mating even when young.",
+      "claim_type": "EXPLICIT",
+      "source": "To determine whether HLH-30 is required for self-sperm protection, we briefly mated hlh-30 mutants on Day 3 of adulthood; similar to loss of ins-37 and daf-16, hlh-30 mutants are susceptible to brief mating even when young, suggesting that self-sperm protection requires HLH-30 activity (Figure 4A, Figure 4\u2014figure supplement 1L).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by lifespan data in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:02:12.689356Z"
+    },
+    {
+      "id": "e3174d02-d430-4633-bd82-9104158208e8",
+      "content_id": "154c57a0-3ebb-433d-a894-01cfaa9b054c",
+      "claim_id": "C56",
+      "claim": "Self-sperm protection requires HLH-30 activity.",
+      "claim_type": "EXPLICIT",
+      "source": "To determine whether HLH-30 is required for self-sperm protection, we briefly mated hlh-30 mutants on Day 3 of adulthood; similar to loss of ins-37 and daf-16, hlh-30 mutants are susceptible to brief mating even when young, suggesting that self-sperm protection requires HLH-30 activity (Figure 4A, Figure 4\u2014figure supplement 1L).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the hlh-30 mutant phenotype.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:02:12.689356Z"
+    },
+    {
+      "id": "0c7802b7-d8eb-46de-8a38-0181099a0430",
+      "content_id": "154c57a0-3ebb-433d-a894-01cfaa9b054c",
+      "claim_id": "C57",
+      "claim": "HLH-30::GFP is nuclearly localized in the intestine of young animals that have self-sperm.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that HLH-30::GFP is nuclearly localized in the intestine of young animals that have self-sperm, becoming diffuse with age as self-sperm is depleted (Figure 4B\u2013D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by imaging data in Figure 4B-D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:02:12.689356Z"
+    },
+    {
+      "id": "61368546-3377-44b6-96c8-9923e09b509c",
+      "content_id": "154c57a0-3ebb-433d-a894-01cfaa9b054c",
+      "claim_id": "C58",
+      "claim": "HLH-30::GFP becomes diffuse with age as self-sperm is depleted.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that HLH-30::GFP is nuclearly localized in the intestine of young animals that have self-sperm, becoming diffuse with age as self-sperm is depleted (Figure 4B\u2013D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by imaging data in Figure 4B-D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:02:12.689356Z"
+    },
+    {
+      "id": "217c847c-61c6-42d5-bf32-470a076bae22",
+      "content_id": "154c57a0-3ebb-433d-a894-01cfaa9b054c",
+      "claim_id": "C59",
+      "claim": "Fewer self-spermless animals display nuclearly localized HLH-30::GFP.",
+      "claim_type": "EXPLICIT",
+      "source": "Fewer self-spermless animals display nuclearly localized HLH-30::GFP, while more animals with excess self-sperm exhibit nuclearly localized HLH-30::GFP (Figure 4E\u2013F; note scale).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by imaging data in Figure 4E-F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:02:12.689356Z"
+    },
+    {
+      "id": "62d9d179-38d1-4fed-be29-39d290fb39a1",
+      "content_id": "154c57a0-3ebb-433d-a894-01cfaa9b054c",
+      "claim_id": "C60",
+      "claim": "More animals with excess self-sperm exhibit nuclearly localized HLH-30::GFP.",
+      "claim_type": "EXPLICIT",
+      "source": "Fewer self-spermless animals display nuclearly localized HLH-30::GFP, while more animals with excess self-sperm exhibit nuclearly localized HLH-30::GFP (Figure 4E\u2013F; note scale).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by imaging data in Figure 4E-F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:02:12.689356Z"
+    },
+    {
+      "id": "9109db5b-9c2a-4ab1-93b1-e5b56c710ff9",
+      "content_id": "154c57a0-3ebb-433d-a894-01cfaa9b054c",
+      "claim_id": "C61",
+      "claim": "Loss of ins-37 reduces nuclear HLH-30::GFP.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, loss of ins-37 reduces nuclear HLH-30::GFP (Figure 4G\u2013I), suggesting that INS-37 acts upstream of HLH-30.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by imaging data in Figure 4G-I.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:02:12.689356Z"
+    },
+    {
+      "id": "9dbc1397-149e-485b-8849-c434d5aa6f89",
+      "content_id": "154c57a0-3ebb-433d-a894-01cfaa9b054c",
+      "claim_id": "C62",
+      "claim": "INS-37 acts upstream of HLH-30.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, loss of ins-37 reduces nuclear HLH-30::GFP (Figure 4G\u2013I), suggesting that INS-37 acts upstream of HLH-30.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the effect of ins-37 loss on HLH-30 localization.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:02:12.689356Z"
+    },
+    {
+      "id": "42decb80-47b7-4b13-8950-daec59c0dacb",
+      "content_id": "154c57a0-3ebb-433d-a894-01cfaa9b054c",
+      "claim_id": "C63",
+      "claim": "The HLH-30::GFP strain overexpresses functional HLH-30 protein.",
+      "claim_type": "EXPLICIT",
+      "source": "The HLH-30::GFP strain overexpresses functional HLH-30 protein, so we wondered whether these animals are better protected from brief mating-induced death; indeed, no lifespan reduction was observed in the HLH-30::GFP strain after mating for 12 hr, a length of mating that shortens WT lifespan (Figure 4J\u2013K), suggesting that the additional HLH-30 provides a protective effect.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by lifespan data in Figure 4J-K.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:02:12.689356Z"
+    },
+    {
+      "id": "086223e8-f965-4526-b7a1-e334623ee407",
+      "content_id": "154c57a0-3ebb-433d-a894-01cfaa9b054c",
+      "claim_id": "C64",
+      "claim": "No lifespan reduction was observed in the HLH-30::GFP strain after mating for 12 hr.",
+      "claim_type": "EXPLICIT",
+      "source": "The HLH-30::GFP strain overexpresses functional HLH-30 protein, so we wondered whether these animals are better protected from brief mating-induced death; indeed, no lifespan reduction was observed in the HLH-30::GFP strain after mating for 12 hr, a length of mating that shortens WT lifespan (Figure 4J\u2013K), suggesting that the additional HLH-30 provides a protective effect.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by lifespan data in Figure 4J-K.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:02:12.689356Z"
+    },
+    {
+      "id": "e09e98ab-8219-4bcb-b3b7-5c72f65b3e6f",
+      "content_id": "154c57a0-3ebb-433d-a894-01cfaa9b054c",
+      "claim_id": "C65",
+      "claim": "Additional HLH-30 provides a protective effect against mating-induced death.",
+      "claim_type": "EXPLICIT",
+      "source": "The HLH-30::GFP strain overexpresses functional HLH-30 protein, so we wondered whether these animals are better protected from brief mating-induced death; indeed, no lifespan reduction was observed in the HLH-30::GFP strain after mating for 12 hr, a length of mating that shortens WT lifespan (Figure 4J\u2013K), suggesting that the additional HLH-30 provides a protective effect.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the HLH-30::GFP overexpression phenotype.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:02:12.689356Z"
+    },
+    {
+      "id": "1fe1f232-319d-41da-ba62-3772d674aed5",
+      "content_id": "154c57a0-3ebb-433d-a894-01cfaa9b054c",
+      "claim_id": "C66",
+      "claim": "Longer mating reduces both nuclear HLH-30::GFP localization and lifespan.",
+      "claim_type": "EXPLICIT",
+      "source": "However, longer mating reduces both nuclear HLH-30::GFP localization and lifespan (Figure 4L, Figure 4\u2014figure supplement 1A\u2013K), suggesting that prolonged mating can eventually overwhelm the protection conferred by HLH-30.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by imaging and lifespan data in Figure 4L and Figure 4\u2014figure supplement 1A-K.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:02:12.689356Z"
+    },
+    {
+      "id": "5fbce7bf-c53f-4cd1-b6f9-8c94bfe3723a",
+      "content_id": "154c57a0-3ebb-433d-a894-01cfaa9b054c",
+      "claim_id": "C67",
+      "claim": "Prolonged mating can eventually overwhelm the protection conferred by HLH-30.",
+      "claim_type": "EXPLICIT",
+      "source": "However, longer mating reduces both nuclear HLH-30::GFP localization and lifespan (Figure 4L, Figure 4\u2014figure supplement 1A\u2013K), suggesting that prolonged mating can eventually overwhelm the protection conferred by HLH-30.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the effects of prolonged mating on HLH-30 localization and lifespan.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:02:12.689356Z"
+    },
+    {
+      "id": "9ae97509-3e5c-45a1-a62a-715be0311122",
+      "content_id": "154c57a0-3ebb-433d-a894-01cfaa9b054c",
+      "claim_id": "C68",
+      "claim": "TOR signaling has been implicated in longevity regulation from yeast through humans, including C. elegans.",
+      "claim_type": "EXPLICIT",
+      "source": "TOR signaling has been implicated in longevity regulation from yeast through humans, including C. elegans (Kapahi and Hansen, 2010; Kaeberlein and Shamieh, 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:02:12.689356Z"
+    },
+    {
+      "id": "2f5008e3-362f-474b-aafe-9ec96a5fea8d",
+      "content_id": "154c57a0-3ebb-433d-a894-01cfaa9b054c",
+      "claim_id": "C69",
+      "claim": "TOR negatively regulates TFEB/HLH-30's nuclear localization and activity.",
+      "claim_type": "EXPLICIT",
+      "source": "TOR negatively regulates TFEB/HLH-30's nuclear localization and activity (Nakamura et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:02:12.689356Z"
+    },
+    {
+      "id": "1a253db2-c372-446c-8f60-7e360b944db0",
+      "content_id": "154c57a0-3ebb-433d-a894-01cfaa9b054c",
+      "claim_id": "C70",
+      "claim": "Most positive regulators of TOR signaling were modestly downregulated in conditions in which worms are protected from brief mating.",
+      "claim_type": "EXPLICIT",
+      "source": "Through genome-wide transcriptional comparisons, we observed that most positive regulators of TOR signaling were modestly downregulated in conditions in which worms are protected from brief mating (Figure 5A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by transcriptional data in Figure 5A,B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:02:12.689356Z"
+    },
+    {
+      "id": "ba0d7576-b456-446f-8b0c-20b726ddc685",
+      "content_id": "154c57a0-3ebb-433d-a894-01cfaa9b054c",
+      "claim_id": "C71",
+      "claim": "Reduction of the worm TOR homolog, let-363, prevented the lifespan decrease caused by brief mating in young spermless (fog-2) females.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, we found that reduction of the worm TOR homolog, let-363, prevented the lifespan decrease caused by brief mating in young spermless (fog-2) females (Figure 5C\u2013D; Figure 5\u2014figure supplement 1A\u2013B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by lifespan data in Figure 5C-D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:02:12.689356Z"
+    },
+    {
+      "id": "95d803f5-681d-4588-9ff4-38c09a3ebaf1",
+      "content_id": "154c57a0-3ebb-433d-a894-01cfaa9b054c",
+      "claim_id": "C72",
+      "claim": "RNAi reduction of rict-1, daf-15, and raga-1 prevented brief mating-induced death in Day 3 fog-2 females.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, RNAi reduction of other TOR pathway components, including rict-1, daf-15, and raga-1, also prevented brief mating-induced death in Day 3 fog-2 females, and Day 7 (sperm-exhausted) raga-1 mutant hermaphrodites were also immune to brief mating.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by lifespan data in Figure 5E-F and Figure 5\u2014figure supplement 1C-F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:02:12.689356Z"
+    },
+    {
+      "id": "5266c0b7-3828-4020-be0e-759553416499",
+      "content_id": "154c57a0-3ebb-433d-a894-01cfaa9b054c",
+      "claim_id": "C73",
+      "claim": "Day 7 (sperm-exhausted) raga-1 mutant hermaphrodites were immune to brief mating.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, RNAi reduction of other TOR pathway components, including rict-1, daf-15, and raga-1, also prevented brief mating-induced death in Day 3 fog-2 females, and Day 7 (sperm-exhausted) raga-1 mutant hermaphrodites were also immune to brief mating.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by lifespan data in Figure 5F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:02:12.689356Z"
+    },
+    {
+      "id": "b4721912-9e8f-4662-b71c-f896cec1fc59",
+      "content_id": "154c57a0-3ebb-433d-a894-01cfaa9b054c",
+      "claim_id": "C74",
+      "claim": "Downregulation of the TOR pathway is protective against mating-induced death.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, these results suggest that downregulation of the TOR pathway is protective (Figure 5E\u2013F; Figure 5\u2014figure supplement 1C\u2013F).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the effects of TOR pathway component reduction.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:02:12.689356Z"
+    },
+    {
+      "id": "570bde2d-1686-4f2e-9efc-bf060072087d",
+      "content_id": "154c57a0-3ebb-433d-a894-01cfaa9b054c",
+      "claim_id": "C75",
+      "claim": "hlh-30(tm1978);let-363(RNAi) animals died faster after brief mating.",
+      "claim_type": "EXPLICIT",
+      "source": "To test whether TOR's effects are mediated by HLH-30, we subjected hlh-30(tm1978);let-363(RNAi) animals to brief mating, and found that these animals died faster (Figure 5G, Figure 5\u2014figure supplement 1G\u2013H), suggesting that HLH-30 acts downstream of TOR signaling to regulate brief mating-induced death.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by lifespan data in Figure 5G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:02:12.689356Z"
+    },
+    {
+      "id": "e2959fab-cc3b-4563-a8b3-d6ba33b27430",
+      "content_id": "154c57a0-3ebb-433d-a894-01cfaa9b054c",
+      "claim_id": "C76",
+      "claim": "HLH-30 acts downstream of TOR signaling to regulate brief mating-induced death.",
+      "claim_type": "EXPLICIT",
+      "source": "To test whether TOR's effects are mediated by HLH-30, we subjected hlh-30(tm1978);let-363(RNAi) animals to brief mating, and found that these animals died faster (Figure 5G, Figure 5\u2014figure supplement 1G\u2013H), suggesting that HLH-30 acts downstream of TOR signaling to regulate brief mating-induced death.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the genetic epistasis experiment.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:02:12.689356Z"
+    },
+    {
+      "id": "3307bc4b-2b22-425d-89d2-6b712e1b8c5f",
+      "content_id": "154c57a0-3ebb-433d-a894-01cfaa9b054c",
+      "claim_id": "C77",
+      "claim": "Reduction of TOR/let-363 prevents cytoplasmic localization of HLH-30 upon mating.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, reduction of TOR/let-363 prevents cytoplasmic localization of HLH-30 upon mating (Figure 5H; Figure 5\u2014figure supplement 2A\u2013C), consistent with its prevention of brief mating-induced killing (Figure 5C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by imaging data in Figure 5H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:02:12.689356Z"
+    },
+    {
+      "id": "2cb22dea-e761-4ac8-9a07-29487ef9ec95",
+      "content_id": "154c57a0-3ebb-433d-a894-01cfaa9b054c",
+      "claim_id": "C78",
+      "claim": "TOR promotes SF-mediated killing through its inhibition of TFEB/HLH-30 nuclear localization and activation.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, these results suggest that TOR promotes SF-mediated killing through its inhibition of TFEB/HLH-30 nuclear localization and activation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the TOR pathway experiments and HLH-30 localization data.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:02:12.689356Z"
+    },
+    {
+      "id": "12a54391-2745-49b7-aadf-652b8091a1c3",
+      "content_id": "154c57a0-3ebb-433d-a894-01cfaa9b054c",
+      "claim_id": "C79",
+      "claim": "PQM-1 acts downstream of IIS and antagonistically to DAF-16/FOXO nuclear localization under normal conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "Previously, we found that the Zn-finger transcription factor PQM-1 acts downstream of IIS and antagonistically to DAF-16/FOXO nuclear localization under normal conditions (Tepper et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:02:12.689356Z"
+    },
+    {
+      "id": "a19e0e73-20e3-4f91-b975-d4ff4c831836",
+      "content_id": "154c57a0-3ebb-433d-a894-01cfaa9b054c",
+      "claim_id": "C80",
+      "claim": "pqm-1 mutant males are immune to both mating-induced and male pheromone-induced death.",
+      "claim_type": "EXPLICIT",
+      "source": "pqm-1 mutant males are immune to both mating-induced and male pheromone-induced death (Shi et al., 2017), but PQM-1's role in hermaphroditic death was unknown.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:02:12.689356Z"
+    },
+    {
+      "id": "e3d4f1e5-0202-48cf-ba2b-63f5b5d5265f",
+      "content_id": "154c57a0-3ebb-433d-a894-01cfaa9b054c",
+      "claim_id": "C81",
+      "claim": "pqm-1 mutants are impervious to brief mating.",
+      "claim_type": "EXPLICIT",
+      "source": "Unlike daf-16 mutants, which are susceptible to brief mating even as young adults (Figure 2A), pqm-1 mutants are impervious to brief mating (Figure 6A); in fact, they are even resistant to long-term (24 hr) mating (Figure 6B, Figure 6\u2014figure supplement 1A\u2013B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by lifespan data in Figure 6A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:02:12.689356Z"
+    },
+    {
+      "id": "b06ca30c-f6cd-4986-b54f-cb2482943d77",
+      "content_id": "154c57a0-3ebb-433d-a894-01cfaa9b054c",
+      "claim_id": "C82",
+      "claim": "pqm-1 mutants are resistant to long-term (24 hr) mating.",
+      "claim_type": "EXPLICIT",
+      "source": "Unlike daf-16 mutants, which are susceptible to brief mating even as young adults (Figure 2A), pqm-1 mutants are impervious to brief mating (Figure 6A); in fact, they are even resistant to long-term (24 hr) mating (Figure 6B, Figure 6\u2014figure supplement 1A\u2013B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by lifespan data in Figure 6B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:02:12.689356Z"
+    },
+    {
+      "id": "78e45da7-40ec-406e-b8e1-d1e7a4c8783c",
+      "content_id": "154c57a0-3ebb-433d-a894-01cfaa9b054c",
+      "claim_id": "C83",
+      "claim": "PQM-1 translocates into the nucleus upon mating.",
+      "claim_type": "EXPLICIT",
+      "source": "While DAF-16 leaves the nucleus upon mating (Shi and Murphy, 2014) (Figure 2C\u2013D), PQM-1 translocates into the nucleus (Figure 6C\u2013E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by imaging data in Figure 6C-E.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:02:12.689356Z"
+    },
+    {
+      "id": "cba20e8d-b48f-4bd6-aa87-0a0a9b48655c",
+      "content_id": "154c57a0-3ebb-433d-a894-01cfaa9b054c",
+      "claim_id": "C84",
+      "claim": "PQM-1 activity is key for seminal fluid-induced killing.",
+      "claim_type": "EXPLICIT",
+      "source": "These results suggest that PQM-1 activity is key for seminal fluid-induced killing, acting in an opposite manner to DAF-16/FOXO.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the pqm-1 mutant phenotype and localization data.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:02:12.689356Z"
+    },
+    {
+      "id": "72e45a4e-5a49-49f6-9b11-65611ab0c661",
+      "content_id": "154c57a0-3ebb-433d-a894-01cfaa9b054c",
+      "claim_id": "C85",
+      "claim": "PQM-1 acts in an opposite manner to DAF-16/FOXO.",
+      "claim_type": "EXPLICIT",
+      "source": "These results suggest that PQM-1 activity is key for seminal fluid-induced killing, acting in an opposite manner to DAF-16/FOXO.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the contrasting phenotypes and localization patterns of pqm-1 and daf-16 mutants.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:02:12.689356Z"
+    },
+    {
+      "id": "a27a63df-7d2a-4efe-9afe-a4600694831e",
+      "content_id": "154c57a0-3ebb-433d-a894-01cfaa9b054c",
+      "claim_id": "C86",
+      "claim": "pqm-1(RNAi) has no effect on the localization of HLH-30::GFP in unmated day 3 adult worms.",
+      "claim_type": "EXPLICIT",
+      "source": "pqm-1(RNAi) appears to have no effect on the localization of HLH-30::GFP in unmated day 3 adult worms (Figure 5\u2014figure supplement 2A\u2013B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by imaging data in Figure 5\u2014figure supplement 2A-B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:02:12.689356Z"
+    },
+    {
+      "id": "3a93394e-6d1f-4564-8e28-bc0f817d119b",
+      "content_id": "154c57a0-3ebb-433d-a894-01cfaa9b054c",
+      "claim_id": "C87",
+      "claim": "Reduction of pqm-1 prevented HLH-30 translocation out of the nucleus under mated conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, under mated conditions (where HLH-30 normally traffics out of the nucleus, 'control mated' in Figure 6F), reduction of pqm-1 prevented this translocation (Figure 6F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by imaging data in Figure 6F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:02:12.689356Z"
+    },
+    {
+      "id": "f50ce315-6a99-47af-b0d4-bcf0a74f6362",
+      "content_id": "154c57a0-3ebb-433d-a894-01cfaa9b054c",
+      "claim_id": "C88",
+      "claim": "Reduction of pqm-1 prevented the mating-induced lifespan decrease exhibited by hlh-30 reduction.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with a role in the regulation of HLH-30 localization after mating, reduction of pqm-1 also prevented the mating-induced lifespan decrease exhibited by hlh-30 reduction (Figure 6G, Figure 6\u2014figure supplement 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by lifespan data in Figure 6G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:02:12.689356Z"
+    },
+    {
+      "id": "2d5697b5-5569-466f-8b68-bc4d81a83857",
+      "content_id": "154c57a0-3ebb-433d-a894-01cfaa9b054c",
+      "claim_id": "C89",
+      "claim": "PQM-1 normally acts downstream of the seminal fluid/IIS pathway and antagonistically to HLH-30.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, these results suggest that PQM-1 normally acts downstream of the seminal fluid/IIS pathway and antagonistically to HLH-30, and that PQM-1 activity is deleterious to the mother when induced upon the transfer of seminal fluid upon mating.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the genetic and localization experiments.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:02:12.689356Z"
+    },
+    {
+      "id": "51ca1e9b-fac9-40fe-a240-4224c3dd3fc3",
+      "content_id": "154c57a0-3ebb-433d-a894-01cfaa9b054c",
+      "claim_id": "C90",
+      "claim": "PQM-1 activity is deleterious to the mother when induced upon the transfer of seminal fluid upon mating.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, these results suggest that PQM-1 normally acts downstream of the seminal fluid/IIS pathway and antagonistically to HLH-30, and that PQM-1 activity is deleterious to the mother when induced upon the transfer of seminal fluid upon mating.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the pqm-1 mutant resistance to mating-induced death.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:02:12.689356Z"
+    },
+    {
+      "id": "5cc9ebe3-2140-49ea-ba2e-2909e7b5ea1a",
+      "content_id": "154c57a0-3ebb-433d-a894-01cfaa9b054c",
+      "claim_id": "C91",
+      "claim": "Upon mating, fog-2 hermaphrodites express strikingly higher levels of ins-8 than do pqm-1 hermaphrodites.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, upon mating, fog-2 hermaphrodites (which are killed by brief mating) express strikingly higher levels of ins-8 than do pqm-1 hermaphrodites, which are not affected by brief mating (Figure 7A; Supplementary file 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by transcriptome data in Figure 7A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:02:12.689356Z"
+    },
+    {
+      "id": "17cdf2ba-eb05-44c9-9286-0f1feb656209",
+      "content_id": "154c57a0-3ebb-433d-a894-01cfaa9b054c",
+      "claim_id": "C92",
+      "claim": "Mating significantly increased the expression level of ins-8p::gfp, particularly in the anterior part of the intestine.",
+      "claim_type": "EXPLICIT",
+      "source": "We confirmed the transcriptome analysis using a transcriptional reporter: mating significantly increased the expression level of ins-8p::gfp, particularly in the anterior part of the intestine (Figure 7B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by reporter imaging data in Figure 7B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:02:12.689356Z"
+    },
+    {
+      "id": "c456351d-dffd-4cbc-b911-5d4d156ac40d",
+      "content_id": "154c57a0-3ebb-433d-a894-01cfaa9b054c",
+      "claim_id": "C93",
+      "claim": "INS-7 has been previously shown to act as a DAF-2 agonist that shortens lifespan.",
+      "claim_type": "EXPLICIT",
+      "source": "INS-7, which has been previously shown to act as a DAF-2 agonist that shortens lifespan (Murphy et al., 2003; Murphy et al., 2007), and functions in a feed-forward loop to reduce DAF-2 activity (Murphy et al., 2007), is also consistently induced but to a lesser degree.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:02:12.689356Z"
+    },
+    {
+      "id": "846f74f9-33e0-401a-8cba-6b32d0fc44a6",
+      "content_id": "154c57a0-3ebb-433d-a894-01cfaa9b054c",
+      "claim_id": "C94",
+      "claim": "INS-7 functions in a feed-forward loop to reduce DAF-2 activity.",
+      "claim_type": "EXPLICIT",
+      "source": "INS-7, which has been previously shown to act as a DAF-2 agonist that shortens lifespan (Murphy et al., 2003; Murphy et al., 2007), and functions in a feed-forward loop to reduce DAF-2 activity (Murphy et al., 2007), is also consistently induced but to a lesser degree.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:02:12.689356Z"
+    },
+    {
+      "id": "d02f896b-7762-4f67-a37c-05b0049e22c1",
+      "content_id": "154c57a0-3ebb-433d-a894-01cfaa9b054c",
+      "claim_id": "C95",
+      "claim": "Knockdown of ins-8 blocked the lifespan-shortening effect of brief mating in fog-2 females.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, while brief mating of Day three fog-2 females with wild-type males shortens lifespan (Figure 7E), knockdown of ins-8 (Figure 7C) or ins-7 (Figure 7D) blocked this effect.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by lifespan data in Figure 7C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:02:12.689356Z"
+    },
+    {
+      "id": "092b6909-6973-4e8c-b783-55de4721601a",
+      "content_id": "154c57a0-3ebb-433d-a894-01cfaa9b054c",
+      "claim_id": "C96",
+      "claim": "Knockdown of ins-7 blocked the lifespan-shortening effect of brief mating in fog-2 females.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, while brief mating of Day three fog-2 females with wild-type males shortens lifespan (Figure 7E), knockdown of ins-8 (Figure 7C) or ins-7 (Figure 7D) blocked this effect.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by lifespan data in Figure 7D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:02:12.689356Z"
+    },
+    {
+      "id": "15a39faf-30a5-46ff-af26-55d24aada9f3",
+      "content_id": "154c57a0-3ebb-433d-a894-01cfaa9b054c",
+      "claim_id": "C97",
+      "claim": "Reduction of ins-7 and ins-8 prevented HLH-30 cytoplasmic localization after mating.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar to loss of pqm-1 and TOR/let-363, reduction of ins-7 and ins-8 prevented HLH-30 cytoplasmic localization after mating (Figure 7F, Figure 5\u2014figure supplement 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by imaging data in Figure 7F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:02:12.689356Z"
+    },
+    {
+      "id": "21ae91e9-165b-4d74-b1bf-ae34a0108b91",
+      "content_id": "154c57a0-3ebb-433d-a894-01cfaa9b054c",
+      "claim_id": "C98",
+      "claim": "INS-8 and INS-7 activity promote seminal fluid-induced killing.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, INS-8 and INS-7 activity promote seminal fluid-induced killing and, like PQM-1 and TOR, act upstream of HLH-30.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the ins-7 and ins-8 knockdown phenotypes.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:02:12.689356Z"
+    },
+    {
+      "id": "79d49f3a-1833-4d0e-9686-9e41788e7e34",
+      "content_id": "154c57a0-3ebb-433d-a894-01cfaa9b054c",
+      "claim_id": "C99",
+      "claim": "INS-8 and INS-7 act upstream of HLH-30.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, INS-8 and INS-7 activity promote seminal fluid-induced killing and, like PQM-1 and TOR, act upstream of HLH-30.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the effects of ins-7 and ins-8 knockdown on HLH-30 localization.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:02:12.689356Z"
+    },
+    {
+      "id": "5b4db7ba-e5ad-4834-b03d-7b5be87de415",
+      "content_id": "154c57a0-3ebb-433d-a894-01cfaa9b054c",
+      "claim_id": "C100",
+      "claim": "The presence of self-sperm in hermaphroditic mothers slows the deleterious effects of mating with males.",
+      "claim_type": "EXPLICIT",
+      "source": "The presence of self-sperm in hermaphroditic mothers slows the deleterious effects of mating with males, whose seminal fluid pathway 'hijacks' the mother's longevity and stress protection system by altering the activity of three important transcription factors, DAF-16 (Shi and Murphy, 2014), and as we show here, PQM-1 and HLH-30.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary statement supported by the experimental data presented in the manuscript.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:02:12.689356Z"
+    },
+    {
+      "id": "6f800d7e-05d4-4c2e-9b18-b74036cd0964",
+      "content_id": "154c57a0-3ebb-433d-a894-01cfaa9b054c",
+      "claim_id": "C101",
+      "claim": "Male seminal fluid pathway 'hijacks' the mother's longevity and stress protection system by altering the activity of DAF-16, PQM-1 and HLH-30.",
+      "claim_type": "EXPLICIT",
+      "source": "The presence of self-sperm in hermaphroditic mothers slows the deleterious effects of mating with males, whose seminal fluid pathway 'hijacks' the mother's longevity and stress protection system by altering the activity of three important transcription factors, DAF-16 (Shi and Murphy, 2014), and as we show here, PQM-1 and HLH-30.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary statement supported by the experimental data presented in the manuscript.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:02:12.689356Z"
+    },
+    {
+      "id": "028fde6f-a33b-4a1f-9303-2d9470be7ddf",
+      "content_id": "154c57a0-3ebb-433d-a894-01cfaa9b054c",
+      "claim_id": "C102",
+      "claim": "The presence of self-sperm staves off mating effects by inducing the expression of the insulin receptor antagonist, INS-37.",
+      "claim_type": "EXPLICIT",
+      "source": "The presence of self-sperm staves off mating effects by inducing the expression of the insulin receptor antagonist, INS-37, which in turn prevents DAF-2/insulin signaling and retains DAF-16 and HLH-30 in the nucleus, and PQM-1 in the cytoplasm.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary statement supported by the experimental data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:02:12.689356Z"
+    },
+    {
+      "id": "6301375e-d8df-43d5-b6d3-53feb0b708d3",
+      "content_id": "154c57a0-3ebb-433d-a894-01cfaa9b054c",
+      "claim_id": "C103",
+      "claim": "INS-37 prevents DAF-2/insulin signaling and retains DAF-16 and HLH-30 in the nucleus, and PQM-1 in the cytoplasm.",
+      "claim_type": "EXPLICIT",
+      "source": "The presence of self-sperm staves off mating effects by inducing the expression of the insulin receptor antagonist, INS-37, which in turn prevents DAF-2/insulin signaling and retains DAF-16 and HLH-30 in the nucleus, and PQM-1 in the cytoplasm.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary statement supported by the experimental data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:02:12.689356Z"
+    },
+    {
+      "id": "5d969dad-3617-4dc3-890e-e079bbc25557",
+      "content_id": "154c57a0-3ebb-433d-a894-01cfaa9b054c",
+      "claim_id": "C104",
+      "claim": "INS-8 and INS-7 expression is upregulated in mated mothers.",
+      "claim_type": "EXPLICIT",
+      "source": "INS-8 and INS-7 expression is upregulated in mated mothers and inducing seminal-fluid-mediated killing through activation of DAF-2 and subsequent inhibition of DAF-16 (Shi and Murphy, 2014; Lin et al., 2001) and HLH-30 nuclear localization and activation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by transcriptome and reporter data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:02:12.689356Z"
+    },
+    {
+      "id": "6d86ccc1-ed54-4af5-aad2-6847da955527",
+      "content_id": "154c57a0-3ebb-433d-a894-01cfaa9b054c",
+      "claim_id": "C105",
+      "claim": "INS-8 and INS-7 induce seminal-fluid-mediated killing through activation of DAF-2 and subsequent inhibition of DAF-16 and HLH-30 nuclear localization and activation.",
+      "claim_type": "EXPLICIT",
+      "source": "INS-8 and INS-7 expression is upregulated in mated mothers and inducing seminal-fluid-mediated killing through activation of DAF-2 and subsequent inhibition of DAF-16 (Shi and Murphy, 2014; Lin et al., 2001) and HLH-30 nuclear localization and activation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary statement supported by the experimental data and citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:02:12.689356Z"
+    },
+    {
+      "id": "b07f49ec-d0a2-44f0-bcbc-2e84ffa2f4e3",
+      "content_id": "154c57a0-3ebb-433d-a894-01cfaa9b054c",
+      "claim_id": "C106",
+      "claim": "INS-7 induction in the intestine and its feed-forward effect on DAF-2 coordinates the IIS pathway across the entire animal.",
+      "claim_type": "EXPLICIT",
+      "source": "INS-7 induction in the intestine and its feed-forward effect on DAF-2 coordinates the IIS pathway across the entire animal (Murphy et al., 2007), which causes rapid deceleration of stress responsive pathways.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:02:12.689356Z"
+    },
+    {
+      "id": "829b68c9-be88-4070-9f76-d90cdaf5ab18",
+      "content_id": "154c57a0-3ebb-433d-a894-01cfaa9b054c",
+      "claim_id": "C107",
+      "claim": "INS-7's feed-forward effect causes rapid deceleration of stress responsive pathways.",
+      "claim_type": "EXPLICIT",
+      "source": "INS-7 induction in the intestine and its feed-forward effect on DAF-2 coordinates the IIS pathway across the entire animal (Murphy et al., 2007), which causes rapid deceleration of stress responsive pathways.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the known function of INS-7 and the observed effects.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:02:12.689356Z"
+    },
+    {
+      "id": "2d93bbed-2af2-4d01-9387-207ec93c25f8",
+      "content_id": "154c57a0-3ebb-433d-a894-01cfaa9b054c",
+      "claim_id": "C108",
+      "claim": "PQM-1 drives HLH-30 out of the nucleus in an antagonistic manner, as PQM-1 does with DAF-16/FOXO.",
+      "claim_type": "EXPLICIT",
+      "source": "PQM-1 appears to drive HLH-30 out of the nucleus in an antagonistic manner, as PQM-1 does with DAF-16/FOXO (Tepper et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the experimental data and citation to previous work.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:02:12.689356Z"
+    },
+    {
+      "id": "454b14ae-3a74-4fd0-a4d3-e6cd7b19ed2a",
+      "content_id": "154c57a0-3ebb-433d-a894-01cfaa9b054c",
+      "claim_id": "C109",
+      "claim": "PQM-1 is negatively regulated by TOR signaling.",
+      "claim_type": "EXPLICIT",
+      "source": "Like HLH-30, PQM-1 is negatively regulated by TOR signaling (Dowen et al., 2016), but since PQM-1's role is detrimental, the loss of each of these factors prevents mating-induced death (Figure 8).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:02:12.689356Z"
+    },
+    {
+      "id": "029e9f99-d4b0-4e88-9eee-c9991fe78e32",
+      "content_id": "154c57a0-3ebb-433d-a894-01cfaa9b054c",
+      "claim_id": "C110",
+      "claim": "The loss of PQM-1 prevents mating-induced death.",
+      "claim_type": "EXPLICIT",
+      "source": "Like HLH-30, PQM-1 is negatively regulated by TOR signaling (Dowen et al., 2016), but since PQM-1's role is detrimental, the loss of each of these factors prevents mating-induced death (Figure 8).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by lifespan data showing pqm-1 mutants are resistant to mating-induced death.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:02:12.689356Z"
+    },
+    {
+      "id": "90690f2b-4519-4ecc-9574-3215a0f60e9f",
+      "content_id": "154c57a0-3ebb-433d-a894-01cfaa9b054c",
+      "claim_id": "C111",
+      "claim": "The expression of a DAF-2 antagonist, INS-37, allows hermaphrodites to resist and delay seminal fluid-induced killing until self-sperm are exhausted.",
+      "claim_type": "EXPLICIT",
+      "source": "The expression of a DAF-2 antagonist, INS-37, allows hermaphrodites to resist and delay C. elegans' main mechanism of competition with other males, seminal fluid-induced killing, until self-sperm are exhausted, increasing the chances that the mother will survive through the end of her reproductive period.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary statement supported by the experimental data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:02:12.689356Z"
+    },
+    {
+      "id": "b8955f9f-1571-43f0-a688-cba2f01078a7",
+      "content_id": "154c57a0-3ebb-433d-a894-01cfaa9b054c",
+      "claim_id": "C112",
+      "claim": "INS-37 increases the chances that the mother will survive through the end of her reproductive period.",
+      "claim_type": "EXPLICIT",
+      "source": "The expression of a DAF-2 antagonist, INS-37, allows hermaphrodites to resist and delay C. elegans' main mechanism of competition with other males, seminal fluid-induced killing, until self-sperm are exhausted, increasing the chances that the mother will survive through the end of her reproductive period.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the protective role of INS-37 and self-sperm.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:02:12.689356Z"
+    },
+    {
+      "id": "017a170e-f1a1-4b63-bfc5-99b5a7088f12",
+      "content_id": "154c57a0-3ebb-433d-a894-01cfaa9b054c",
+      "claim_id": "C113",
+      "claim": "Increased attraction of males accompanies the depletion of self-sperm.",
+      "claim_type": "EXPLICIT",
+      "source": "Such strategies, coupled with the increased attraction of males that accompany the depletion of self-sperm (Morsci et al., 2011), enable hermaphrodites to delay both the odds of mating, through behavioral changes (Morsci et al., 2011) and the detrimental effects of mating (through molecular signaling), before the full utilization of their own sperm.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:02:12.689356Z"
+    },
+    {
+      "id": "798b756e-348a-4a3f-9e46-a44909507891",
+      "content_id": "154c57a0-3ebb-433d-a894-01cfaa9b054c",
+      "claim_id": "C114",
+      "claim": "Hermaphrodites delay both the odds of mating through behavioral changes and the detrimental effects of mating through molecular signaling before the full utilization of their own sperm.",
+      "claim_type": "EXPLICIT",
+      "source": "Such strategies, coupled with the increased attraction of males that accompany the depletion of self-sperm (Morsci et al., 2011), enable hermaphrodites to delay both the odds of mating, through behavioral changes (Morsci et al., 2011) and the detrimental effects of mating (through molecular signaling), before the full utilization of their own sperm.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary statement supported by the experimental data and citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:02:12.689356Z"
+    },
+    {
+      "id": "75de2b40-c2a7-4aae-bb4a-6b37daa511c3",
+      "content_id": "154c57a0-3ebb-433d-a894-01cfaa9b054c",
+      "claim_id": "C115",
+      "claim": "This insulin peptide-based arms race regulates a transition from preventing to promoting the activation of the insulin signaling pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "This insulin peptide-based arms race regulates a transition from preventing to promoting the activation of the insulin signaling pathway, resulting first in protection from death during early reproduction, and then accelerated death of the mother immediately after reproduction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary statement supported by the experimental data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:02:12.689356Z"
+    },
+    {
+      "id": "325aed2e-b3ab-4bb7-b3ef-1eb0cb30f5cd",
+      "content_id": "154c57a0-3ebb-433d-a894-01cfaa9b054c",
+      "claim_id": "C116",
+      "claim": "The insulin peptide-based arms race results first in protection from death during early reproduction, and then accelerated death of the mother immediately after reproduction.",
+      "claim_type": "EXPLICIT",
+      "source": "This insulin peptide-based arms race regulates a transition from preventing to promoting the activation of the insulin signaling pathway, resulting first in protection from death during early reproduction, and then accelerated death of the mother immediately after reproduction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary statement supported by the experimental data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:02:12.689356Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "32bed383-08fb-40d6-8f2e-aa66da78700e",
+      "content_id": "154c57a0-3ebb-433d-a894-01cfaa9b054c",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Self-sperm protects young hermaphrodites from brief mating-induced death. Young wild-type hermaphrodites with self-sperm are resistant to 2-hour mating on day 3 but susceptible on day 7 after self-sperm depletion, while self-spermless fog-2 mutants are susceptible at both time points.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C24-C28 provide consistent lifespan data with statistical significance showing that self-sperm presence correlates with protection from brief mating-induced death. The age-dependent susceptibility in wild-type (C26, C27) and constitutive susceptibility in fog-2 mutants (C28) strongly support the protective role of self-sperm (C2).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:02:12.689356Z"
+    },
+    {
+      "id": "311896fe-9146-4dd1-a62c-e9a80ee28b99",
+      "content_id": "154c57a0-3ebb-433d-a894-01cfaa9b054c",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Brief mating-induced death acts through the seminal fluid pathway, independent of male sperm and pheromones. Both sperm-containing and spermless males induce death equally, and pheromone-deficient males or pheromone exposure alone do not affect lifespan.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C31, C34, and C35 provide direct experimental evidence with lifespan data showing that male sperm (C31) and pheromones (C34, C35) are dispensable for brief mating-induced death. The inferences drawn (C32, C33, C36) are logically sound based on the experimental results.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:02:12.689356Z"
+    },
+    {
+      "id": "ed46aa38-fae0-4a30-9b78-16b5ae88a653",
+      "content_id": "154c57a0-3ebb-433d-a894-01cfaa9b054c",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Self-sperm maintains expression of the insulin-like antagonist INS-37, which is critical for protection from mating-induced death. INS-37 is upregulated over 25-fold in wild-type compared to fog-2 hermaphrodites, and RNAi knockdown of ins-37 renders young hermaphrodites susceptible to brief mating.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C42 and C45 provide strong experimental evidence from microarray, qRT-PCR, and lifespan assays with statistical significance. The inference that ins-37 is key for self-sperm-mediated protection (C46) is well-supported by the loss-of-function phenotype. However, the claim that self-sperm 'maintains' expression (C3) is somewhat indirect, as the data show correlation rather than direct mechanistic proof.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:02:12.689356Z"
+    },
+    {
+      "id": "227086ba-993c-43c6-8bed-be4e99848196",
+      "content_id": "154c57a0-3ebb-433d-a894-01cfaa9b054c",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "INS-37 acts upstream of HLH-30/TFEB to promote its nuclear localization. Loss of ins-37 reduces nuclear HLH-30::GFP localization.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C61 provides imaging data showing that ins-37 loss reduces nuclear HLH-30::GFP. The epistatic relationship (C62) is a reasonable inference from this observation. This supports the model that INS-37 promotes HLH-30 nuclear localization (C4).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:02:12.689356Z"
+    },
+    {
+      "id": "885b493b-ff1d-4676-815a-8880669bea1d",
+      "content_id": "154c57a0-3ebb-433d-a894-01cfaa9b054c",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "HLH-30/TFEB plays a protective role against mating-induced death through its nuclear localization, which is maintained by self-sperm. HLH-30::GFP is nuclear in young animals with self-sperm but becomes diffuse with age and sperm depletion. Overexpression of HLH-30 provides enhanced protection, while prolonged mating can overwhelm this protection.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C55, C57-C60, C64, and C66 provide extensive imaging and lifespan data showing the correlation between HLH-30 nuclear localization and protection from mating-induced death. The hlh-30 mutant phenotype (C55) and overexpression results (C63-C65) provide strong genetic evidence. The inferences about HLH-30's protective role (C56, C65, C67) are well-supported by the data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:02:12.689356Z"
+    },
+    {
+      "id": "123c49a4-ada0-48f2-a771-67e041ffd0e7",
+      "content_id": "154c57a0-3ebb-433d-a894-01cfaa9b054c",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "DAF-16/FOXO plays a protective role against mating-induced death. daf-16 mutants are susceptible to brief mating even when young, while daf-2 mutants show enhanced protection. DAF-16::GFP exits the nucleus upon mating in fog-2 mutants.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C38, C40, and C41 provide genetic and imaging evidence for DAF-16's protective role. The daf-16 mutant phenotype (C38) and daf-2 mutant resistance (C40) are consistent with DAF-16 acting downstream of insulin signaling to protect against mating-induced death. The inference (C39) is well-supported.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:02:12.689356Z"
+    },
+    {
+      "id": "02b8d639-6d2a-49a3-a562-11e1a7afb971",
+      "content_id": "154c57a0-3ebb-433d-a894-01cfaa9b054c",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "TOR signaling promotes seminal-fluid-induced killing by inhibiting HLH-30 nuclear localization. Reduction of TOR pathway components (let-363, rict-1, daf-15, raga-1) prevents brief mating-induced death in fog-2 females. HLH-30 acts downstream of TOR in this pathway.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C71-C73 provide extensive lifespan data showing that reduction of multiple TOR pathway components protects against mating-induced death. The genetic epistasis experiment (C75) and imaging data (C77) support that HLH-30 acts downstream of TOR (C76, C78). The transcriptional data (C70) provides additional support.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:02:12.689356Z"
+    },
+    {
+      "id": "0f1f392b-fda5-4c30-85c9-231bf1d39fa1",
+      "content_id": "154c57a0-3ebb-433d-a894-01cfaa9b054c",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "PQM-1 promotes seminal-fluid-induced killing by antagonizing HLH-30 and acting opposite to DAF-16. pqm-1 mutants are resistant to both brief and long-term mating. PQM-1 translocates into the nucleus upon mating, and its reduction prevents HLH-30 nuclear exit and mating-induced death.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C81-C83 provide strong lifespan and imaging data showing pqm-1 mutants are resistant to mating-induced death and that PQM-1 nuclear localization increases upon mating. Claims C87-C88 show that pqm-1 reduction prevents HLH-30 nuclear exit and protects from mating-induced death. The inferences about PQM-1's role (C84, C85, C89, C90) are well-supported by the genetic and imaging data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:02:12.689356Z"
+    },
+    {
+      "id": "a80d93f6-c63a-410b-a796-15c12ebb7cff",
+      "content_id": "154c57a0-3ebb-433d-a894-01cfaa9b054c",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Mating induces expression of insulin agonists INS-8 and INS-7, which promote HLH-30 nuclear exit and subsequent death. Knockdown of ins-8 or ins-7 blocks the lifespan-shortening effect of brief mating and prevents HLH-30 cytoplasmic localization.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C91-C92 provide transcriptome and reporter data showing ins-8 upregulation upon mating. Claims C95-C97 show that knockdown of ins-8 or ins-7 prevents both mating-induced death and HLH-30 nuclear exit. The inferences that these insulins promote death (C6, C98) and act upstream of HLH-30 (C99) are well-supported by the loss-of-function phenotypes.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:02:12.689356Z"
+    },
+    {
+      "id": "67396968-6efc-456d-b926-fb6d83788c24",
+      "content_id": "154c57a0-3ebb-433d-a894-01cfaa9b054c",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The presence of self-sperm protects hermaphrodites from mating-induced death through an insulin peptide-based signaling network. Self-sperm induces INS-37 expression, which antagonizes DAF-2 and maintains protective transcription factors (DAF-16, HLH-30) in the nucleus. Upon mating, seminal fluid induces INS-8 and INS-7, which activate DAF-2 and cause death after reproduction is complete.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These summary claims (C100-C105, C111-C116) integrate the major findings of the manuscript. They are well-supported by the collective experimental evidence from the individual results above, including lifespan assays, imaging data, transcriptional profiling, and genetic epistasis experiments. The model represents a coherent synthesis of the data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:02:12.689356Z"
+    },
+    {
+      "id": "5338ed94-ab3b-475d-bb6b-4f08d04fe7b7",
+      "content_id": "154c57a0-3ebb-433d-a894-01cfaa9b054c",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Insulin-IGF-1 signaling (IIS) mediates seminal fluid-induced killing by inducing DAF-16/FOXO nuclear exit, as previously reported.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C37 is supported by citation to previous work (Shi and Murphy, 2014) and is consistent with the current manuscript's findings showing DAF-16 nuclear exit upon mating (C41).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:02:12.689356Z"
+    },
+    {
+      "id": "c8d0d664-fb1e-4927-b7ed-291515135877",
+      "content_id": "154c57a0-3ebb-433d-a894-01cfaa9b054c",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "INS-37 may act as a DAF-2 antagonist, consistent with a previous report showing INS-37 acts as a DAF-2 antagonist during development.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C47 is supported by citation to previous work (Zheng et al., 2018). Claim C48 is explicitly stated as speculation but is consistent with the current data showing ins-37 expression correlates with protection and acts upstream of DAF-16 and HLH-30. The speculation is reasonable but not definitively proven in this manuscript.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:02:12.689356Z"
+    },
+    {
+      "id": "ccd0cce8-bac3-4839-99ea-c3a0e1a9eac4",
+      "content_id": "154c57a0-3ebb-433d-a894-01cfaa9b054c",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Genes differentially expressed between spermless and sperm-containing hermaphrodites are enriched for HLH-30/TFEB binding motifs in their promoters.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C49 and C52 are supported by transcriptional profiling and motif analysis data shown in Figure 3\u2014figure supplement 1. This provides computational evidence linking self-sperm status to HLH-30-regulated gene expression.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:02:12.689356Z"
+    },
+    {
+      "id": "9d227e87-aa5f-4ed4-b545-c3a4fca49000",
+      "content_id": "154c57a0-3ebb-433d-a894-01cfaa9b054c",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Mutants with excess self-sperm (fem-3(q20)) are protected from brief mating-induced death for a longer period than wild-type hermaphrodites.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C51 is supported by citation to the accompanying manuscript (Booth et al., 2019) and is consistent with the model that self-sperm levels correlate with protection duration.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:02:12.689356Z"
+    },
+    {
+      "id": "d293457a-ddb5-4410-af1f-a42e4135c78f",
+      "content_id": "154c57a0-3ebb-433d-a894-01cfaa9b054c",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "TOR and HLH-30/TFEB are components of conserved longevity pathways. TOR negatively regulates HLH-30 nuclear localization, and DAF-16 and HLH-30 cooperate under many conditions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C53, C54, C68, and C69 are supported by citations to previous work and represent established knowledge in the field. These provide important context for the current findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:02:12.689356Z"
+    },
+    {
+      "id": "5eda8f0d-a507-49f3-8b1c-23841214024a",
+      "content_id": "154c57a0-3ebb-433d-a894-01cfaa9b054c",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "PQM-1 acts downstream of IIS and antagonistically to DAF-16/FOXO under normal conditions, and pqm-1 mutant males are immune to mating-induced and pheromone-induced death.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C79 and C80 are supported by citations to previous work (Tepper et al., 2013; Shi et al., 2017) and provide important background for understanding PQM-1's role in the current study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:02:12.689356Z"
+    },
+    {
+      "id": "c32764ff-f419-4940-8879-8d2ec93166a6",
+      "content_id": "154c57a0-3ebb-433d-a894-01cfaa9b054c",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "INS-7 acts as a DAF-2 agonist that shortens lifespan and functions in a feed-forward loop to coordinate IIS across the animal, causing rapid deceleration of stress-responsive pathways.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C93, C94, and C106 are supported by citations to previous work (Murphy et al., 2003, 2007). Claim C107 is an inference based on known INS-7 function and the observed effects in this study. These provide important mechanistic context.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:02:12.689356Z"
+    },
+    {
+      "id": "ef71352a-9c73-47e0-ba87-4c2a06d3be35",
+      "content_id": "154c57a0-3ebb-433d-a894-01cfaa9b054c",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "PQM-1 drives HLH-30 out of the nucleus in an antagonistic manner, similar to how PQM-1 antagonizes DAF-16/FOXO.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C108 is an inference based on the experimental data showing pqm-1 reduction prevents HLH-30 nuclear exit (C87) and the known antagonistic relationship between PQM-1 and DAF-16 (C79). The inference is reasonable but represents a mechanistic interpretation rather than direct demonstration.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:02:12.689356Z"
+    },
+    {
+      "id": "8ef8ec39-ecf5-407c-afc0-f7bb9653076d",
+      "content_id": "154c57a0-3ebb-433d-a894-01cfaa9b054c",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "PQM-1 is negatively regulated by TOR signaling, and loss of PQM-1 prevents mating-induced death.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C109 is supported by citation to previous work (Dowen et al., 2016). Claim C110 is supported by the lifespan data showing pqm-1 mutants are resistant to mating-induced death (C81, C82).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:02:12.689356Z"
+    },
+    {
+      "id": "9ac9d70a-b7e6-4bf4-9630-b021dbf45448",
+      "content_id": "154c57a0-3ebb-433d-a894-01cfaa9b054c",
+      "result_id": "R20",
+      "result_category": "llm",
+      "result": "Increased attraction of males accompanies the depletion of self-sperm in hermaphrodites.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C113 is supported by citation to previous work (Morsci et al., 2011) and provides behavioral context for the molecular mechanisms described in this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:02:12.689356Z"
+    },
+    {
+      "id": "f2e7dba7-e893-47d9-b59e-3c0bbffde0d3",
+      "content_id": "154c57a0-3ebb-433d-a894-01cfaa9b054c",
+      "result_id": "R21",
+      "result_category": "llm",
+      "result": "Background on sexual antagonism in C. elegans and the role of males in hermaphrodite populations. Males kill hermaphrodites through germline activation, seminal fluid transfer, and pheromone toxicity. Self-sperm are protective against mating-induced death.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C11-C23 provide background information supported by citations to previous work and established knowledge. These set the context for the current study but do not represent new findings from this manuscript.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:02:12.689356Z"
+    },
+    {
+      "id": "ac81e5f6-7c0e-4221-9a4b-80c2e4e3fc49",
+      "content_id": "154c57a0-3ebb-433d-a894-01cfaa9b054c",
+      "result_id": "R22",
+      "result_category": "llm",
+      "result": "Lifespan is shortened by mating in C. elegans hermaphrodites.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C1 is a general statement supported by the extensive lifespan data presented throughout the manuscript and citations to previous work. This is an established phenomenon that the manuscript investigates mechanistically.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:02:12.689356Z"
+    },
+    {
+      "id": "81a1509c-779a-460a-a961-2108011fb85c",
+      "content_id": "154c57a0-3ebb-433d-a894-01cfaa9b054c",
+      "result_id": "R23",
+      "result_category": "llm",
+      "result": "ins-37 is a germline-expressed signaling molecule, and HLH-30/TFEB has been implicated in longevity regulation through control of lipid metabolism and autophagy.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C43 is supported by citation to previous work (Ebbing et al., 2018). Claim C50 represents established knowledge about HLH-30/TFEB function. These provide important biological context.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:02:12.689356Z"
+    },
+    {
+      "id": "a7b06fae-8024-464e-8ffa-1861c76b6a63",
+      "content_id": "154c57a0-3ebb-433d-a894-01cfaa9b054c",
+      "result_id": "R24",
+      "result_category": "llm",
+      "result": "Mating with fog-2 males (functionally wild-type) leads to lifespan decrease in fog-2 self-spermless hermaphrodites.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C29 is supported by lifespan data with statistical significance. This control experiment confirms that the fog-2 mutation in males does not affect their ability to induce death in fog-2 hermaphrodites.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:02:12.689356Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "1ba5cacb-2230-4728-98f0-7e4580b55ae7",
+      "result_id": "32bed383-08fb-40d6-8f2e-aa66da78700e"
+    },
+    {
+      "claim_id": "83359a93-924f-4e12-bab8-309662c43a16",
+      "result_id": "32bed383-08fb-40d6-8f2e-aa66da78700e"
+    },
+    {
+      "claim_id": "88334271-c23d-4cd8-b61b-163300be05d1",
+      "result_id": "32bed383-08fb-40d6-8f2e-aa66da78700e"
+    },
+    {
+      "claim_id": "a5ced0b5-734b-4c26-87ac-e204ce2a229a",
+      "result_id": "32bed383-08fb-40d6-8f2e-aa66da78700e"
+    },
+    {
+      "claim_id": "3b19c62c-9bce-485d-b3c8-36d6754dcfec",
+      "result_id": "32bed383-08fb-40d6-8f2e-aa66da78700e"
+    },
+    {
+      "claim_id": "addea5c2-a2cc-4702-824b-3f7f0de40054",
+      "result_id": "32bed383-08fb-40d6-8f2e-aa66da78700e"
+    },
+    {
+      "claim_id": "2222134f-81e6-4e73-ba08-f9948befe8fc",
+      "result_id": "311896fe-9146-4dd1-a62c-e9a80ee28b99"
+    },
+    {
+      "claim_id": "e6d50be2-6516-4fc3-af5e-2cc9ccd6ee3d",
+      "result_id": "311896fe-9146-4dd1-a62c-e9a80ee28b99"
+    },
+    {
+      "claim_id": "19b31f3a-226b-4542-9dde-b26ad9acdb11",
+      "result_id": "311896fe-9146-4dd1-a62c-e9a80ee28b99"
+    },
+    {
+      "claim_id": "935d9a55-4483-477f-94c3-e306fbd06104",
+      "result_id": "311896fe-9146-4dd1-a62c-e9a80ee28b99"
+    },
+    {
+      "claim_id": "4eb93135-4abb-4742-bac1-67e82baf7541",
+      "result_id": "311896fe-9146-4dd1-a62c-e9a80ee28b99"
+    },
+    {
+      "claim_id": "598e522d-cfc2-425e-b6fe-28c84b37b187",
+      "result_id": "311896fe-9146-4dd1-a62c-e9a80ee28b99"
+    },
+    {
+      "claim_id": "04784048-ba69-476a-927b-9aad66b21262",
+      "result_id": "ed46aa38-fae0-4a30-9b78-16b5ae88a653"
+    },
+    {
+      "claim_id": "05d0117b-60e4-4844-922d-ba0a5067824f",
+      "result_id": "ed46aa38-fae0-4a30-9b78-16b5ae88a653"
+    },
+    {
+      "claim_id": "6135a699-3401-4c5f-8abd-f6fdda6025c7",
+      "result_id": "ed46aa38-fae0-4a30-9b78-16b5ae88a653"
+    },
+    {
+      "claim_id": "c0dbc9d7-ac57-478a-836e-17f67c96b097",
+      "result_id": "ed46aa38-fae0-4a30-9b78-16b5ae88a653"
+    },
+    {
+      "claim_id": "9b8a4c1b-611c-4346-8d69-6bef8198c5ca",
+      "result_id": "ed46aa38-fae0-4a30-9b78-16b5ae88a653"
+    },
+    {
+      "claim_id": "2403f8f2-e3b2-4bf5-9ba0-98878653135f",
+      "result_id": "227086ba-993c-43c6-8bed-be4e99848196"
+    },
+    {
+      "claim_id": "9109db5b-9c2a-4ab1-93b1-e5b56c710ff9",
+      "result_id": "227086ba-993c-43c6-8bed-be4e99848196"
+    },
+    {
+      "claim_id": "9dbc1397-149e-485b-8849-c434d5aa6f89",
+      "result_id": "227086ba-993c-43c6-8bed-be4e99848196"
+    },
+    {
+      "claim_id": "d25cb6d7-6b40-4e66-bdbb-91f4db8a9fdd",
+      "result_id": "885b493b-ff1d-4676-815a-8880669bea1d"
+    },
+    {
+      "claim_id": "949e089b-4f6e-410e-908a-6441da40f029",
+      "result_id": "885b493b-ff1d-4676-815a-8880669bea1d"
+    },
+    {
+      "claim_id": "e3174d02-d430-4633-bd82-9104158208e8",
+      "result_id": "885b493b-ff1d-4676-815a-8880669bea1d"
+    },
+    {
+      "claim_id": "0c7802b7-d8eb-46de-8a38-0181099a0430",
+      "result_id": "885b493b-ff1d-4676-815a-8880669bea1d"
+    },
+    {
+      "claim_id": "61368546-3377-44b6-96c8-9923e09b509c",
+      "result_id": "885b493b-ff1d-4676-815a-8880669bea1d"
+    },
+    {
+      "claim_id": "217c847c-61c6-42d5-bf32-470a076bae22",
+      "result_id": "885b493b-ff1d-4676-815a-8880669bea1d"
+    },
+    {
+      "claim_id": "62d9d179-38d1-4fed-be29-39d290fb39a1",
+      "result_id": "885b493b-ff1d-4676-815a-8880669bea1d"
+    },
+    {
+      "claim_id": "42decb80-47b7-4b13-8950-daec59c0dacb",
+      "result_id": "885b493b-ff1d-4676-815a-8880669bea1d"
+    },
+    {
+      "claim_id": "086223e8-f965-4526-b7a1-e334623ee407",
+      "result_id": "885b493b-ff1d-4676-815a-8880669bea1d"
+    },
+    {
+      "claim_id": "e09e98ab-8219-4bcb-b3b7-5c72f65b3e6f",
+      "result_id": "885b493b-ff1d-4676-815a-8880669bea1d"
+    },
+    {
+      "claim_id": "1fe1f232-319d-41da-ba62-3772d674aed5",
+      "result_id": "885b493b-ff1d-4676-815a-8880669bea1d"
+    },
+    {
+      "claim_id": "5fbce7bf-c53f-4cd1-b6f9-8c94bfe3723a",
+      "result_id": "885b493b-ff1d-4676-815a-8880669bea1d"
+    },
+    {
+      "claim_id": "2653c6d4-19a1-4f30-9efa-f64c052a52c2",
+      "result_id": "123c49a4-ada0-48f2-a771-67e041ffd0e7"
+    },
+    {
+      "claim_id": "1b00eea3-19d1-4a22-885a-7b2cce23c748",
+      "result_id": "123c49a4-ada0-48f2-a771-67e041ffd0e7"
+    },
+    {
+      "claim_id": "19c2620c-e2fe-48ee-ab65-9f1f741bf5d9",
+      "result_id": "123c49a4-ada0-48f2-a771-67e041ffd0e7"
+    },
+    {
+      "claim_id": "31ac84b2-6a4e-4129-af22-fa995d015576",
+      "result_id": "123c49a4-ada0-48f2-a771-67e041ffd0e7"
+    },
+    {
+      "claim_id": "8f50513c-89a3-450c-90d2-4800e25347bd",
+      "result_id": "123c49a4-ada0-48f2-a771-67e041ffd0e7"
+    },
+    {
+      "claim_id": "f85877ed-b7e2-4a51-9ed5-3faaed47d536",
+      "result_id": "02b8d639-6d2a-49a3-a562-11e1a7afb971"
+    },
+    {
+      "claim_id": "1a253db2-c372-446c-8f60-7e360b944db0",
+      "result_id": "02b8d639-6d2a-49a3-a562-11e1a7afb971"
+    },
+    {
+      "claim_id": "ba0d7576-b456-446f-8b0c-20b726ddc685",
+      "result_id": "02b8d639-6d2a-49a3-a562-11e1a7afb971"
+    },
+    {
+      "claim_id": "95d803f5-681d-4588-9ff4-38c09a3ebaf1",
+      "result_id": "02b8d639-6d2a-49a3-a562-11e1a7afb971"
+    },
+    {
+      "claim_id": "5266c0b7-3828-4020-be0e-759553416499",
+      "result_id": "02b8d639-6d2a-49a3-a562-11e1a7afb971"
+    },
+    {
+      "claim_id": "b4721912-9e8f-4662-b71c-f896cec1fc59",
+      "result_id": "02b8d639-6d2a-49a3-a562-11e1a7afb971"
+    },
+    {
+      "claim_id": "570bde2d-1686-4f2e-9efc-bf060072087d",
+      "result_id": "02b8d639-6d2a-49a3-a562-11e1a7afb971"
+    },
+    {
+      "claim_id": "e2959fab-cc3b-4563-a8b3-d6ba33b27430",
+      "result_id": "02b8d639-6d2a-49a3-a562-11e1a7afb971"
+    },
+    {
+      "claim_id": "3307bc4b-2b22-425d-89d2-6b712e1b8c5f",
+      "result_id": "02b8d639-6d2a-49a3-a562-11e1a7afb971"
+    },
+    {
+      "claim_id": "2cb22dea-e761-4ac8-9a07-29487ef9ec95",
+      "result_id": "02b8d639-6d2a-49a3-a562-11e1a7afb971"
+    },
+    {
+      "claim_id": "16758770-1870-49cb-871e-81886837aa10",
+      "result_id": "0f1f392b-fda5-4c30-85c9-231bf1d39fa1"
+    },
+    {
+      "claim_id": "e3d4f1e5-0202-48cf-ba2b-63f5b5d5265f",
+      "result_id": "0f1f392b-fda5-4c30-85c9-231bf1d39fa1"
+    },
+    {
+      "claim_id": "b06ca30c-f6cd-4986-b54f-cb2482943d77",
+      "result_id": "0f1f392b-fda5-4c30-85c9-231bf1d39fa1"
+    },
+    {
+      "claim_id": "78e45da7-40ec-406e-b8e1-d1e7a4c8783c",
+      "result_id": "0f1f392b-fda5-4c30-85c9-231bf1d39fa1"
+    },
+    {
+      "claim_id": "cba20e8d-b48f-4bd6-aa87-0a0a9b48655c",
+      "result_id": "0f1f392b-fda5-4c30-85c9-231bf1d39fa1"
+    },
+    {
+      "claim_id": "72e45a4e-5a49-49f6-9b11-65611ab0c661",
+      "result_id": "0f1f392b-fda5-4c30-85c9-231bf1d39fa1"
+    },
+    {
+      "claim_id": "a27a63df-7d2a-4efe-9afe-a4600694831e",
+      "result_id": "0f1f392b-fda5-4c30-85c9-231bf1d39fa1"
+    },
+    {
+      "claim_id": "3a93394e-6d1f-4564-8e28-bc0f817d119b",
+      "result_id": "0f1f392b-fda5-4c30-85c9-231bf1d39fa1"
+    },
+    {
+      "claim_id": "f50ce315-6a99-47af-b0d4-bcf0a74f6362",
+      "result_id": "0f1f392b-fda5-4c30-85c9-231bf1d39fa1"
+    },
+    {
+      "claim_id": "2d5697b5-5569-466f-8b68-bc4d81a83857",
+      "result_id": "0f1f392b-fda5-4c30-85c9-231bf1d39fa1"
+    },
+    {
+      "claim_id": "51ca1e9b-fac9-40fe-a240-4224c3dd3fc3",
+      "result_id": "0f1f392b-fda5-4c30-85c9-231bf1d39fa1"
+    },
+    {
+      "claim_id": "2c518e62-875a-4bd7-b7aa-1b2d9bfbd34d",
+      "result_id": "a80d93f6-c63a-410b-a796-15c12ebb7cff"
+    },
+    {
+      "claim_id": "1116af8e-e072-4da5-83cf-2a6699c4a8b6",
+      "result_id": "a80d93f6-c63a-410b-a796-15c12ebb7cff"
+    },
+    {
+      "claim_id": "5cc9ebe3-2140-49ea-ba2e-2909e7b5ea1a",
+      "result_id": "a80d93f6-c63a-410b-a796-15c12ebb7cff"
+    },
+    {
+      "claim_id": "17cdf2ba-eb05-44c9-9286-0f1feb656209",
+      "result_id": "a80d93f6-c63a-410b-a796-15c12ebb7cff"
+    },
+    {
+      "claim_id": "d02f896b-7762-4f67-a37c-05b0049e22c1",
+      "result_id": "a80d93f6-c63a-410b-a796-15c12ebb7cff"
+    },
+    {
+      "claim_id": "092b6909-6973-4e8c-b783-55de4721601a",
+      "result_id": "a80d93f6-c63a-410b-a796-15c12ebb7cff"
+    },
+    {
+      "claim_id": "15a39faf-30a5-46ff-af26-55d24aada9f3",
+      "result_id": "a80d93f6-c63a-410b-a796-15c12ebb7cff"
+    },
+    {
+      "claim_id": "21ae91e9-165b-4d74-b1bf-ae34a0108b91",
+      "result_id": "a80d93f6-c63a-410b-a796-15c12ebb7cff"
+    },
+    {
+      "claim_id": "79d49f3a-1833-4d0e-9686-9e41788e7e34",
+      "result_id": "a80d93f6-c63a-410b-a796-15c12ebb7cff"
+    },
+    {
+      "claim_id": "5b4db7ba-e5ad-4834-b03d-7b5be87de415",
+      "result_id": "67396968-6efc-456d-b926-fb6d83788c24"
+    },
+    {
+      "claim_id": "6f800d7e-05d4-4c2e-9b18-b74036cd0964",
+      "result_id": "67396968-6efc-456d-b926-fb6d83788c24"
+    },
+    {
+      "claim_id": "028fde6f-a33b-4a1f-9303-2d9470be7ddf",
+      "result_id": "67396968-6efc-456d-b926-fb6d83788c24"
+    },
+    {
+      "claim_id": "6301375e-d8df-43d5-b6d3-53feb0b708d3",
+      "result_id": "67396968-6efc-456d-b926-fb6d83788c24"
+    },
+    {
+      "claim_id": "5d969dad-3617-4dc3-890e-e079bbc25557",
+      "result_id": "67396968-6efc-456d-b926-fb6d83788c24"
+    },
+    {
+      "claim_id": "6d86ccc1-ed54-4af5-aad2-6847da955527",
+      "result_id": "67396968-6efc-456d-b926-fb6d83788c24"
+    },
+    {
+      "claim_id": "90690f2b-4519-4ecc-9574-3215a0f60e9f",
+      "result_id": "67396968-6efc-456d-b926-fb6d83788c24"
+    },
+    {
+      "claim_id": "b8955f9f-1571-43f0-a688-cba2f01078a7",
+      "result_id": "67396968-6efc-456d-b926-fb6d83788c24"
+    },
+    {
+      "claim_id": "798b756e-348a-4a3f-9e46-a44909507891",
+      "result_id": "67396968-6efc-456d-b926-fb6d83788c24"
+    },
+    {
+      "claim_id": "75de2b40-c2a7-4aae-bb4a-6b37daa511c3",
+      "result_id": "67396968-6efc-456d-b926-fb6d83788c24"
+    },
+    {
+      "claim_id": "325aed2e-b3ab-4bb7-b3ef-1eb0cb30f5cd",
+      "result_id": "67396968-6efc-456d-b926-fb6d83788c24"
+    },
+    {
+      "claim_id": "2b18fd2d-b188-4c79-b241-dfb0295bcab2",
+      "result_id": "5338ed94-ab3b-475d-bb6b-4f08d04fe7b7"
+    },
+    {
+      "claim_id": "eb6d3502-4edf-4e5c-a7d4-7094853ce631",
+      "result_id": "c8d0d664-fb1e-4927-b7ed-291515135877"
+    },
+    {
+      "claim_id": "cbaf4524-eee8-4b88-a30d-88c461c59c96",
+      "result_id": "c8d0d664-fb1e-4927-b7ed-291515135877"
+    },
+    {
+      "claim_id": "57c04b3a-f1d1-4c0c-94bf-559f9576b4f2",
+      "result_id": "ccd0cce8-bac3-4839-99ea-c3a0e1a9eac4"
+    },
+    {
+      "claim_id": "e30727ca-fcb1-46f8-9246-56ffec12ac4f",
+      "result_id": "ccd0cce8-bac3-4839-99ea-c3a0e1a9eac4"
+    },
+    {
+      "claim_id": "44518fae-a2bd-424f-99f5-ca0fb006f8c2",
+      "result_id": "9d227e87-aa5f-4ed4-b545-c3a4fca49000"
+    },
+    {
+      "claim_id": "aef21248-3b61-4bd5-9bf4-f4bfab8ae624",
+      "result_id": "d293457a-ddb5-4410-af1f-a42e4135c78f"
+    },
+    {
+      "claim_id": "1f8e16c6-c06d-4cd9-b047-7f5cc484fd14",
+      "result_id": "d293457a-ddb5-4410-af1f-a42e4135c78f"
+    },
+    {
+      "claim_id": "9ae97509-3e5c-45a1-a62a-715be0311122",
+      "result_id": "d293457a-ddb5-4410-af1f-a42e4135c78f"
+    },
+    {
+      "claim_id": "2f5008e3-362f-474b-aafe-9ec96a5fea8d",
+      "result_id": "d293457a-ddb5-4410-af1f-a42e4135c78f"
+    },
+    {
+      "claim_id": "12a54391-2745-49b7-aadf-652b8091a1c3",
+      "result_id": "5eda8f0d-a507-49f3-8b1c-23841214024a"
+    },
+    {
+      "claim_id": "a19e0e73-20e3-4f91-b975-d4ff4c831836",
+      "result_id": "5eda8f0d-a507-49f3-8b1c-23841214024a"
+    },
+    {
+      "claim_id": "c456351d-dffd-4cbc-b911-5d4d156ac40d",
+      "result_id": "c32764ff-f419-4940-8879-8d2ec93166a6"
+    },
+    {
+      "claim_id": "846f74f9-33e0-401a-8cba-6b32d0fc44a6",
+      "result_id": "c32764ff-f419-4940-8879-8d2ec93166a6"
+    },
+    {
+      "claim_id": "b07f49ec-d0a2-44f0-bcbc-2e84ffa2f4e3",
+      "result_id": "c32764ff-f419-4940-8879-8d2ec93166a6"
+    },
+    {
+      "claim_id": "829b68c9-be88-4070-9f76-d90cdaf5ab18",
+      "result_id": "c32764ff-f419-4940-8879-8d2ec93166a6"
+    },
+    {
+      "claim_id": "2d93bbed-2af2-4d01-9387-207ec93c25f8",
+      "result_id": "ef71352a-9c73-47e0-ba87-4c2a06d3be35"
+    },
+    {
+      "claim_id": "454b14ae-3a74-4fd0-a4d3-e6cd7b19ed2a",
+      "result_id": "8ef8ec39-ecf5-407c-afc0-f7bb9653076d"
+    },
+    {
+      "claim_id": "029e9f99-d4b0-4e88-9eee-c9991fe78e32",
+      "result_id": "8ef8ec39-ecf5-407c-afc0-f7bb9653076d"
+    },
+    {
+      "claim_id": "017a170e-f1a1-4b63-bfc5-99b5a7088f12",
+      "result_id": "9ac9d70a-b7e6-4bf4-9630-b021dbf45448"
+    },
+    {
+      "claim_id": "877ed673-3a94-4b22-94cf-1697945b6c4a",
+      "result_id": "f2e7dba7-e893-47d9-b59e-3c0bbffde0d3"
+    },
+    {
+      "claim_id": "98b4f5b2-b934-4c57-99ec-119d11d08fbb",
+      "result_id": "f2e7dba7-e893-47d9-b59e-3c0bbffde0d3"
+    },
+    {
+      "claim_id": "f46796e4-8d4f-4320-91c3-c819a2f87f66",
+      "result_id": "f2e7dba7-e893-47d9-b59e-3c0bbffde0d3"
+    },
+    {
+      "claim_id": "9fea5780-0d64-4817-b560-c01d8efc5a50",
+      "result_id": "f2e7dba7-e893-47d9-b59e-3c0bbffde0d3"
+    },
+    {
+      "claim_id": "82d17060-54ae-4dd3-a733-5766cdde130c",
+      "result_id": "f2e7dba7-e893-47d9-b59e-3c0bbffde0d3"
+    },
+    {
+      "claim_id": "8a7b8d02-18b1-4d13-b48e-dbdf2adf515c",
+      "result_id": "f2e7dba7-e893-47d9-b59e-3c0bbffde0d3"
+    },
+    {
+      "claim_id": "3cb38dde-794a-4ac8-b2cd-d10506d71cc7",
+      "result_id": "f2e7dba7-e893-47d9-b59e-3c0bbffde0d3"
+    },
+    {
+      "claim_id": "af147437-d0e9-40e0-ab70-1f7ed08dea84",
+      "result_id": "f2e7dba7-e893-47d9-b59e-3c0bbffde0d3"
+    },
+    {
+      "claim_id": "9022fc04-eeaa-44c5-9c77-3793bed842d4",
+      "result_id": "f2e7dba7-e893-47d9-b59e-3c0bbffde0d3"
+    },
+    {
+      "claim_id": "03171c70-9a44-4e94-8756-d68c16b07507",
+      "result_id": "f2e7dba7-e893-47d9-b59e-3c0bbffde0d3"
+    },
+    {
+      "claim_id": "207e2f06-fcc8-463b-bd0a-5d68fc9682e0",
+      "result_id": "f2e7dba7-e893-47d9-b59e-3c0bbffde0d3"
+    },
+    {
+      "claim_id": "eb75328a-635b-4b3b-93d7-6dec30642dcc",
+      "result_id": "f2e7dba7-e893-47d9-b59e-3c0bbffde0d3"
+    },
+    {
+      "claim_id": "7519d619-2765-4b5e-b853-333321683a50",
+      "result_id": "f2e7dba7-e893-47d9-b59e-3c0bbffde0d3"
+    },
+    {
+      "claim_id": "37db8a79-29a3-4c0f-8719-b2eff7450b57",
+      "result_id": "ac81e5f6-7c0e-4221-9a4b-80c2e4e3fc49"
+    },
+    {
+      "claim_id": "e5b85839-669e-4ea9-a086-403b1518fdbe",
+      "result_id": "81a1509c-779a-460a-a961-2108011fb85c"
+    },
+    {
+      "claim_id": "f8c5cb61-3101-4cf8-b03b-e59362617881",
+      "result_id": "81a1509c-779a-460a-a961-2108011fb85c"
+    },
+    {
+      "claim_id": "9adef908-7f5b-49e7-894d-e88f759daf39",
+      "result_id": "a7b06fae-8024-464e-8ffa-1861c76b6a63"
+    }
+  ],
+  "comparisons": []
+}

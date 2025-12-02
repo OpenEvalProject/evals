@@ -1,0 +1,329 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C64",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C65",
+      "C124"
+    ],
+    "result": "The N-terminal domain of Sfr1 (Sfr1N, residues 1-176) is intrinsically disordered and flexible. This was demonstrated through multiple biophysical techniques including CD spectroscopy showing lack of secondary structure, NMR spectroscopy revealing narrow chemical shift ranges characteristic of disordered proteins, secondary chemical shift analysis indicating predominantly random coil structures, TALOS+ predictions of disorder, and NOE measurements showing fast pico-to-nanosecond timescale motions throughout the protein.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C64 provide converging evidence from multiple independent biophysical methods (CD, NMR HSQC, secondary chemical shift analysis, TALOS+, NOE) all consistently demonstrating that Sfr1N is intrinsically disordered. The data in Figure 2 directly supports these claims. The methods are appropriate and the conclusions are well-justified by the experimental observations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C70",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "Two distinct sites within Sfr1N interact with Rad51: Site 1 (S84-T114) and Site 2 (T152-S168). NMR interaction analysis showed that 19 residues experienced >80% signal intensity reduction upon Rad51 addition, with these residues clustered in Sites 1 and 2. Site 1 is highly basic and hydrophobic, while Site 2 is basic but not especially hydrophobic, suggesting both electrostatic and hydrophobic interactions. Site-specific crosslinking experiments confirmed robust crosslinking of Site 1 residues to Rad51, while Site 2 showed weaker crosslinking.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C79 are well-supported by NMR titration data (Figure 3) showing dose-dependent signal attenuation in specific regions and site-specific crosslinking experiments (Figure 4) confirming physical proximity. The two independent methods converge on identifying the same two sites. The differential crosslinking between Sites 1 and 2 is appropriately interpreted as potentially reflecting different binding kinetics or affinities.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C80",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "Sites 1 and 2 cooperatively facilitate binding of Swi5-Sfr1 to Rad51. Sequence alignment revealed conserved positively charged residues in both sites. Mutation of Site 1 (3A mutant) or Site 2 (4A mutant) reduced but did not eliminate Rad51 binding, while mutation of both sites (7A mutant) nearly abolished binding in pull-down and co-IP assays, demonstrating cooperative binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C88 are supported by systematic mutagenesis combined with binding assays (Figure 5B and Figure 5\u2014supplement 1C). The experimental design appropriately tests cooperativity by comparing single-site mutants (3A, 4A) with the double mutant (7A). The observation that the 7A mutant shows near-complete loss of binding while single mutants retain partial binding directly demonstrates cooperativity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "Interactions between Rad51 and both Sites 1 and 2 are important for efficient stimulation of strand exchange. The 7A mutant failed to efficiently stimulate Rad51-driven strand exchange at substoichiometric concentrations, with more pronounced defects in NC formation (~15-fold reduction) than JM formation (~5-fold reduction). The 3A and 4A mutants promoted efficient JM and NC formation at substoichiometric concentrations, but showed attenuated loss of stimulation at higher concentrations compared to wild-type.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C96 are supported by three-strand exchange assays (Figure 5C-F) showing dose-dependent effects of the mutants. The differential effects on JM versus NC formation for the 7A mutant provide mechanistic insight. The observation that single-site mutants retain activity while the double mutant is severely impaired is consistent with the cooperative binding model. The data support the conclusion that both sites are important for efficient function.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "Sites 1 and 2 within Sfr1N interact cooperatively with Rad51 to facilitate filament stabilization. Wild-type Swi5-Sfr1 substantially reduced the dissociation rate constant (koff) of Rad51-ssDNA complexes in fluorescence anisotropy assays. The 7A mutant showed no obvious filament stabilization, while 3A and 4A mutants showed intermediate stabilization effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98-C102 are supported by fluorescence anisotropy measurements (Figure 6B-F) that directly monitor Rad51 filament stability. The quantitative koff measurements provide rigorous support for the conclusions. The graded effects (WT > 3A/4A > 7A) are consistent with cooperative binding and demonstrate that both sites contribute to filament stabilization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C107",
+      "C108"
+    ],
+    "result": "Interaction of either Site 1 or Site 2 with Rad51 is sufficient to promote efficient stimulation of ATP hydrolysis. Wild-type Swi5-Sfr1 enhanced ATP hydrolysis by Rad51 1.85-fold at substoichiometric concentrations. The 7A mutant only enhanced ATPase activity 1.28-fold (similar to Swi5-Sfr1C at 1.27-fold), while 3A and 4A mutants stimulated ATP hydrolysis like wild-type.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C105-C108 are supported by ATPase assays (Figure 6G) showing quantitative differences between mutants. The key observation that single-site mutants (3A, 4A) retain wild-type activity while the double mutant (7A) is defective demonstrates that either site alone is sufficient for this function. This contrasts with filament stabilization where both sites contribute additively, revealing functional specificity of the two sites.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C4",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C123"
+    ],
+    "result": "The N-terminal domain of Sfr1 (Sfr1N) is essential for the function of Swi5-Sfr1 in promoting Rad51-dependent DNA repair in vivo, despite not being essential for stimulation of Rad51 in vitro. Deletion strains (sfr1N and sfr1C) showed the same DNA damage sensitivity as sfr1\u0394, and combining these deletions with rad55\u0394 resulted in complete loss of Rad51-dependent DNA repair. Protein levels were comparable to wild-type, and the phenotype was not due to mislocalization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C44-C52, and C123 are supported by in vitro strand exchange assays (Figure 1B,C) and in vivo DNA damage sensitivity assays (Figure 1D and supplements). The controls for protein expression and localization (Figure 1\u2014supplement 1B,C) appropriately rule out trivial explanations. The apparent paradox between in vitro and in vivo requirements is a key observation that motivates subsequent experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C126"
+    ],
+    "result": "The Sfr1-Rad51 interaction mutants (sfr1-7A, sfr1-3A, sfr1-4A) showed no obvious DNA damage sensitivity in wild-type background, but displayed severe sensitivity in the rad55\u0394 background. The sfr1-7A mutant showed the same sensitivity as sfr1\u0394 in the rad55\u0394 background, while sfr1-3A and sfr1-4A showed intermediate sensitivity. This suggests that DNA repair defects of Sfr1 amino acid-substitution mutants are suppressed by a Rad55-Rad57-dependent mechanism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C109-C115 and C126 are supported by systematic genetic analysis (Figure 7A-D and supplements) comparing mutant phenotypes in wild-type versus rad55\u0394/rad57\u0394 backgrounds. The statistical analysis in Figure 7B appropriately shows that the marginal sensitivity of sfr1-7A alone is not significant. The genetic epistasis analysis is well-designed and the conclusions are justified. This is a key result that reveals unexpected functional redundancy.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C127"
+    ],
+    "result": "Swi5-Sfr1 and Rad55-Rad57 form a Rad51-independent complex. Co-immunoprecipitation experiments showed that both wild-type Swi5-Sfr1 and Swi5-Sfr1-7A co-IP with Rad57, while Rad51 was completely undetectable in these immunoprecipitates, suggesting direct interaction between the two auxiliary factor complexes independent of Rad51.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C119-C122 and C127 are supported by co-IP experiments (Figure 7E,F) with appropriate controls. The critical observation that Rad51 is undetectable in the Rad57 IPs containing Swi5-Sfr1 strongly supports the conclusion of direct interaction. The fact that the 7A mutant (defective in Rad51 binding) still co-IPs with Rad57 further supports Rad51-independent interaction. This is a novel finding that challenges the previous model of independent pathways.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C11",
+      "C12"
+    ],
+    "result": "Swi5-Sfr1 and Rad55-Rad57 can collaboratively stimulate Rad51 in S. pombe. This conclusion is inferred from the combination of biochemical data showing complex formation and genetic data showing functional interdependence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C12 represent the major conclusion synthesizing multiple lines of evidence: (1) physical interaction between Swi5-Sfr1 and Rad55-Rad57 (C119-C122), (2) genetic suppression of sfr1 mutant phenotypes by Rad55-Rad57 (C109-C115), and (3) the observation that both complexes can bind Rad51. While the claim is stated as an inference, it is well-supported by the convergence of biochemical and genetic evidence presented in Figure 7.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C75"
+    ],
+    "result": "S. pombe Rad51 exists as a multimer in solution with a size corresponding to ~160 kDa, as determined by size-exclusion chromatography.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C75 is supported by size-exclusion chromatography data (Figure 3\u2014supplement 2). The observation is consistent with known properties of RecA-family recombinases. This is a technical observation relevant for interpreting the NMR interaction data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C65"
+    ],
+    "result": "The disordered state of Sfr1N may have been conserved throughout evolution, based on DISOPRED3 predictions for Sfr1 orthologs from multiple species.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C65 is based on computational predictions (Figure 2\u2014supplement 2) rather than experimental data for the orthologs. While the predictions are suggestive, disorder prediction algorithms have limited accuracy, and the claim is appropriately stated as speculative ('may have been conserved'). Experimental validation in other species would be needed to definitively support this claim.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "Background information on DNA double-strand break repair, homologous recombination, and the role of Rad51 and auxiliary factors. These claims establish the scientific context for the study.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2 and C13-C29 represent established knowledge in the field, supported by appropriate citations. These are background claims that provide context but are not novel findings of this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "Prior work on Swi5-Sfr1 established its role in HR, biochemical activities, and domain structure. Sfr1 was discovered as a Rad51 interactor, Swi5-Sfr1 stimulates strand exchange and ATPase activity, and the protein can be divided into N-terminal (Sfr1N) and C-terminal (Swi5-Sfr1C) regions with different properties.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C43 summarize prior work from the same research group and others, appropriately cited. These establish the foundation for the current study but are not novel findings. The citations appear accurate based on the descriptions provided.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C97",
+      "C103",
+      "C104"
+    ],
+    "result": "Prior work established that Swi5-Sfr1 stabilizes Rad51 presynaptic filaments and stimulates ATPase activity, while Swi5-Sfr1C alone is less efficient at these activities.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97, C103, and C104 cite prior work (Kurokawa et al., 2008; Haruta et al., 2006; Kuwabara et al., 2012) establishing baseline knowledge used to design and interpret the current experiments. These are appropriately cited background claims.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C10",
+      "C31",
+      "C47",
+      "C116",
+      "C117"
+    ],
+    "result": "Prior genetic studies suggested that Swi5-Sfr1 and Rad55-Rad57 function in independent, parallel HR sub-pathways in S. pombe.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10, C31, C47, C116, and C117 accurately represent the prevailing model from prior genetic studies (Akamatsu et al., 2003; 2007; Tsutsui et al., 2001). The current study challenges this model, making these claims important for establishing the novelty of the findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C118"
+    ],
+    "result": "Partially purified Rad55-Rad57 contains both proteins in seemingly stoichiometric amounts, consistent with previous reports in budding yeast.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C118 is supported by gel analysis (Figure 7\u2014supplement 1D) and citations to prior work in budding yeast. This is a quality control observation for the biochemical experiments but not a major finding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C125"
+    ],
+    "result": "Summary claims from the abstract stating that deletion of Sfr1N rendered cells sensitive to DNA damage, amino acid-substitution mutants had comparable biochemical defects but could promote DNA repair, suggesting Sfr1N has another role beyond Rad51 binding, and that this repair was dependent on Rad55-Rad57.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C9 and C125 are high-level summary statements from the abstract that are supported by the detailed experimental results described in other claim groups. These represent accurate summaries of the major findings but are redundant with more detailed claims already evaluated.",
+    "result_type": "MAJOR"
+  }
+]

@@ -1,0 +1,381 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C122",
+      "C123",
+      "C124"
+    ],
+    "result": "cNMF accurately infers identity and activity gene expression programs in simulated data. The method outperforms other matrix factorization approaches (ICA, LDA, NMF, PCA) and clustering methods in identifying both program types, achieving 61% sensitivity at 5% FDR for activity programs. The consensus approach increases robustness and accuracy compared to individual factorization runs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C43-46, C54-65, C122-124 provide comprehensive simulation evidence demonstrating cNMF's superior performance. The simulation design (C52-53) is appropriate with 15,000 cells, 13 cell types, one activity program, and 6% doublets. Quantitative metrics (sensitivity, FDR, correlation coefficients) support the accuracy claims. The consensus approach demonstrably improves upon individual runs (C44-45).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "cNMF identifies cell cycle and hypoxia activity programs in brain organoid data. The method identified 31 programs including G1/S and G2/M cell cycle programs and an unexpected hypoxia program. The hypoxia program was enriched for ER protein localization and nonsense-mediated decay genes, expressed in 11% of cells, despite not being detected by HIF1A staining in the original study.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-91 provide strong evidence from real data analysis. The identification of expected cell cycle programs (C75-77, C85-86) serves as positive controls. The hypoxia program discovery (C78, C80, C91) is well-supported by gene enrichment analysis (p=3\u00d710\u207b\u00b3\u2077, p=5\u00d710\u207b\u00b3\u00b9) and consistent with known organoid biology (C79). The finding that HIF1A was not strongly associated (C84) explains why the original study missed this program (C83).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C5",
+      "C50",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C129",
+      "C130"
+    ],
+    "result": "cNMF refines cell type identification by disentangling activity and identity programs. The method detected a rare 'stem-like' population with high proliferation rates (>38% expressing cell cycle programs) and revealed that the 'proliferative precursors' cluster actually contains multiple cell types including immature muscle and dopaminergic neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C50, C87-90, C129-130 demonstrate how cNMF improves upon original clustering by separating cell cycle activity from cell identity. The stem-like population identification (C87-88) is supported by pluripotency marker expression and quantitative proliferation rates. The reinterpretation of 'proliferative precursors' (C89-90) is supported by PAX7 expression data and muscle stem cell markers from prior literature.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "cNMF identifies three distinct skeletal muscle programs in brain organoids representing immature, fast-twitch, and slow-twitch muscle. Cells previously annotated as mesodermal predominantly expressed these programs, which were significantly enriched for 'Muscle Contraction' GO terms (p<1\u00d710\u207b\u00b9\u2070).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-74 are well-supported by gene set enrichment analysis and inspection of characteristic genes (MYOG, TNNT2, NES for immature; TNNT3, TNNC2, MYOZ1 for fast-twitch; TNNT1, TNNC1, TPM3 for slow-twitch). The interpretation that these represent distinct muscle cell populations (C74) is a reasonable inference from the gene expression patterns, though functional validation would strengthen this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "cNMF identifies depolarization-induced activity programs in visual cortex neurons without knowledge of experimental design. The method identified an early response program (ERP) at 1h and two late response programs (LRPs) at 4h, with one LRP more induced in superficial layers and the other in deeper layers. These programs overlapped significantly with differentially expressed genes from the original study (p=8\u00d710\u207b\u00b3\u2074 for ERP, p=4\u00d710\u207b\u00b2\u00b2 and p=4\u00d710\u207b\u00b9\u2074 for LRPs).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-102 demonstrate cNMF's ability to discover stimulus-induced programs in an unsupervised manner. The identification of temporal dynamics (C96-97) and spatial patterns (C99) provides biological insight beyond the original analysis. The statistical overlap with published results (C98) validates the findings. The fact that cNMF identified these programs despite the original study finding only 64 and 53 differentially expressed genes (C101) highlights the method's sensitivity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C103",
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "cNMF identifies depolarization-induced programs in unstimulated visual cortex neurons. A program matching the superficial LRP was found in the Tasic et al. (2016) dataset (OR=127, p=1\u00d710\u207b\u00b9\u00b9\u2078, R=0.645), with >40% of excitatory layer 2 neurons expressing it, despite these cells not being experimentally manipulated.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C103-106 provide strong validation through independent dataset analysis. The high statistical significance (p=1\u00d710\u207b\u00b9\u00b9\u2078) and correlation (R=0.645) support genuine program discovery. The spatial pattern (C104) matches expectations from the primary dataset. This demonstrates cNMF can detect activity programs reflecting endogenous biological variation, not just experimental perturbations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C47",
+      "C48",
+      "C49",
+      "C127"
+    ],
+    "result": "cNMF identifies both expected and unexpected activity programs across multiple real datasets. Expected programs include cell cycle (brain organoids) and depolarization-induced programs (visual cortex). Unexpected programs include hypoxia in brain organoids and depolarization programs in unstimulated neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-7, C47-49, C127 summarize the main findings from real data applications. The identification of expected programs serves as positive controls validating the method. The discovery of unexpected programs (hypoxia, depolarization in unstimulated cells) demonstrates the value of unsupervised analysis. All claims are supported by the detailed analyses in other result groups.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C128"
+    ],
+    "result": "cNMF identifies novel activity programs in visual cortex that may represent neurosecretory and synaptogenesis phenotypes. The neurosecretory program is characterized by neuropeptides (Vgf, Adcyap1, Scg2, Cck, Scg3, Dkk3) and secretion machinery genes, and was reproduced in the Tasic et al. dataset (OR=53.8, p=8\u00d710\u207b\u00b2\u00b9, R=0.356).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C8-9, C107-113, C128 identify intriguing programs but interpretations remain speculative (C8, C9, C111, C128 explicitly noted as speculation). The neurosecretory program is better supported with specific gene lists (C108-109), known biology (C110), and replication (C112-113). However, functional validation is needed to confirm these programs represent the proposed biological processes. The synaptogenesis interpretation lacks the same level of supporting evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C114",
+      "C115"
+    ],
+    "result": "A synaptogenesis activity program in visual cortex is characterized by genes crucial for synapse formation (Mef2c, Ncam1, Cadm1, Syt1, Syt4, Actb, Ywhaz, Bicd1) and enriched for relevant GO terms including postsynapse, glutamatergic synapse, and dendrite morphogenesis (p\u22643.25\u00d710\u207b\u2076).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C114-115 provide gene-level and GO enrichment evidence for a synaptogenesis program. The genes listed have established roles in synapse biology (supported by citations in C114). However, the interpretation remains speculative without functional validation or replication in independent datasets. The program could represent synapse formation, maintenance, or regulation\u2014distinguishing these requires additional experiments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C116"
+    ],
+    "result": "A third novel activity program in visual cortex is characterized by high expression of the lncRNA Meg3 and genes associated with cerebral ischemic injury (Glg1, Rtn1).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C116 identifies a program but provides limited characterization. The association with ischemic injury genes is intriguing but speculative. Without GO enrichment analysis, replication in other datasets, or functional validation, the biological significance remains unclear. This may represent a stress response but requires further investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C131",
+      "C132",
+      "C133"
+    ],
+    "result": "Joint analysis of identity and activity programs enables quantification of activity prevalence across cell types. In visual cortex, one depolarization-induced LRP was predominantly expressed in superficial cortical layers while the other was mainly expressed in deeper layers, suggesting anatomical or developmental factors underlie response variability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C131-133 demonstrate a key advantage of the cNMF approach. The quantification of layer-specific LRP expression (C132) is supported by the data. The inference about anatomical/developmental factors (C133) is reasonable speculation based on the observed pattern, though it remains to be experimentally validated. This type of analysis would be difficult with clustering-based approaches.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C30",
+      "C57",
+      "C134"
+    ],
+    "result": "Clustering approaches fail to accurately infer activity programs because they inappropriately assign activity genes to identity programs. Matrix factorization overcomes this limitation by allowing cells to express multiple programs simultaneously.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-23, C30, C57, C134 are supported by simulation results showing clustering approaches have elevated FDR for identity programs when activity programs are present (C57). The logical argument (C22-23) is sound: averaging expression in clusters works for identity but fails for activity programs that vary within cell types. The simulation data (C57) and real data examples (C89-90, C130) provide empirical support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C64",
+      "C65",
+      "C117",
+      "C121"
+    ],
+    "result": "Matrix factorization models cells as linear combinations of gene expression programs, allowing representation of multiple programs per cell and correct modeling of doublets. cNMF correctly modeled doublets as combinations of identity programs and could accurately infer programs even with 50% doublets.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-26, C64-65, C117, C121 describe the mathematical framework and its advantages. The doublet modeling capability is well-demonstrated in simulations (C64-65), including an extreme 50% doublet scenario. This is a significant practical advantage since doublets are a common technical artifact in scRNA-seq. The linear mixture assumption (C121) is reasonable for most biological scenarios, though the authors acknowledge limitations (C118-120).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "Different matrix factorization methods have been used for scRNA-seq analysis but have limitations. PCA components are orthogonal, ICA components are independent, NMF/LDA are non-negative (cannot model repression), and only LDA accounts for count distributions. Components may not align with biologically meaningful programs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-42 accurately describe properties of different factorization methods based on established mathematical knowledge (C38-42) and prior literature (C34-36). The observation that components may not align with biological programs (C37) motivates the benchmarking study. These are accurate characterizations of method limitations, though the practical impact varies\u2014the simulation results show NMF, ICA, and LDA can still recover programs despite simplifying assumptions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C58",
+      "C59",
+      "C60",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126"
+    ],
+    "result": "The consensus approach increases accuracy and robustness of matrix factorization. ICA, LDA, and NMF (but not PCA) can discover programs despite simplifying assumptions, but individual runs show high variability. cNMF (consensus NMF) performed best in simulations, was fastest, and yielded interpretable results in TPM units.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-46, C58-60, C122-126 are well-supported by simulation data. The variability of individual runs (C44, C123) is demonstrated in Figure 2\u2014figure supplement 1. The consensus approach's improvement (C45, C124) is shown quantitatively. The speed comparison (C59) is documented in Figure 2\u2014figure supplement 6. The interpretability advantages of NMF (C60, C125-126) are logical consequences of non-negativity. The choice of cNMF is well-justified by multiple criteria.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C137",
+      "C138"
+    ],
+    "result": "The choice of K (number of components) should reflect desired resolution, guided by stability vs. error trade-off and PCA variance explained. cNMF is relatively robust to K choice within a reasonable range, with consecutive K values primarily affecting individual components at the margin.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C137-138 provide practical guidance for method application. The robustness to K choice (C138) is demonstrated in Figure 5 showing that core programs are recovered across a range of K values. The decision aids (C137) are reasonable heuristics, though the authors acknowledge this remains somewhat subjective. The supplementary figures show these diagnostics for each dataset analyzed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C13",
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "Single-cell RNA-seq can quantify transcripts in individual cells but faces challenges. Each cell's expression profile may be a mixture of identity and activity programs that are difficult to disentangle. The data is noisy, high-dimensional, and subject to technical artifacts like doublets.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-2, C13-16 accurately describe established knowledge about scRNA-seq technology and its challenges. These are well-accepted facts in the field that motivate the study. The characterization of the disentanglement problem (C2, C16) correctly frames the computational challenge addressed by the manuscript.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C27",
+      "C28",
+      "C29",
+      "C31",
+      "C32"
+    ],
+    "result": "Gene expression programs coordinate cellular functions through transcriptional co-regulation. Identity programs are cell-type specific while activity programs vary dynamically across cell types. Most scRNA-seq studies focus on identity programs; less progress has been made on activity programs. Cell cycle programs are known to confound cell type inference.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-12, C17-21, C27-29, C31-32 provide accurate background knowledge supported by appropriate citations. The definitions of identity vs. activity programs (C18-19) establish the conceptual framework. The observation about the field's focus (C20-21) and the novelty claim (C27) are reasonable characterizations. The cell cycle confounding issue (C31-32) is well-established and motivates the work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C118",
+      "C119",
+      "C120",
+      "C121"
+    ],
+    "result": "Some biological programs do not fit neatly into identity or activity categories. Examples include oncogenic transformation, morphological gradients, and stochastic transcription factor fluctuations. Matrix factorization should be appropriate for any gene expression states that can be approximated as linear mixtures of programs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C118-121 acknowledge important limitations of the identity/activity framework. The examples (C119-120) are reasonable cases where the distinction blurs. The statement about linear mixture applicability (C121) is appropriately cautious. This demonstrates scientific rigor in recognizing the method's scope and limitations. The authors correctly note that the framework may not be universally appropriate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C135",
+      "C136"
+    ],
+    "result": "All cNMF code is deposited on Github and all analysis scripts are available on Code Ocean for easy exploration and re-execution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C135-136 state data and code availability. These are verifiable statements about resource deposition. The provision of both code (Github) and analysis scripts (Code Ocean) supports reproducibility, which is a strength of the work.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,291 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5"
+    ],
+    "result": "The authors established a high-throughput microscopy platform to image approximately 50 embryos per line across 182 recombinant inbred advanced intercross lines (RIAILs) derived from C. elegans strains N2 and CB4856, generating approximately 12 million microscopy images from 9,641 embryos.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C5 describe the experimental design and dataset generation. The RIAIL panel construction is supported by appropriate citations (C1, C2), genotyping is documented (C3), and the imaging scale is clearly stated (C4, C5). This represents a well-documented methodological foundation for the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C9"
+    ],
+    "result": "Despite phenotypic similarity in spindle characteristics between founding strains N2 and CB4856, extensive quantitative variation with statistically significant heritability was observed across the RIAIL panel, indicating different genetic bases for similar phenotypes in the founders.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C9 establish the key observation that phenotypic similarity masks genetic diversity. The heritability analysis (C8) provides statistical support, and the inference about different genetic bases (C9) is logically sound given the observed variation across RIAILs despite founder similarity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12"
+    ],
+    "result": "The Timer model, which predicts independent regulation of initial spindle length and elongation duration, does not explain final spindle length in C. elegans, as evidenced by negligible correlation between initial and final spindle length (p = 0.17).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C12 use correlation analysis to test and reject the Timer model. The statistical test (p = 0.17) appropriately supports the lack of correlation, and the inference that this contradicts the Timer model is logically valid. The extension to metaphase positioning models (C12) is appropriately cautious.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "While final spindle length correlates with cell area (p = 2.97E-36), partial correlation analysis conditioning on cell length reveals no independent association between cell area and final spindle length (p = 0.13), ruling out the simplest Limiting Component model based on cell volume.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13-C16 demonstrate sophisticated use of partial correlation to disentangle confounded variables. The statistical approach is sound, and the conclusion that cell volume per se does not determine spindle length (C16) is appropriately supported by the negligible partial correlation (C15).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "Cell length is highly correlated with final spindle length (p = 7.96E-55), but the simplest Boundary model is rejected because final spindle length positively correlates with centrosome distance (p = 6.81E-14) rather than negatively as predicted, with this inconsistency arising from correlation between centrosome distance and cell length (p = 5.25E-31).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C21 systematically test the Boundary model using correlation patterns. The statistical evidence is strong, and the logic for rejecting the simplest Boundary model is sound\u2014the positive rather than negative correlation between spindle length and centrosome distance contradicts model predictions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "Conditional QTL mapping identified two QTLs on chromosome III (QTL1 and QTL2) that influence final spindle length independent of cell length, explaining 21% and 10% of variation respectively, with N2 alleles having opposite effects (QTL1 shortens, QTL2 lengthens spindles), consistent with phenotypic similarity of founders despite different genetic bases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C29 describe QTL mapping results with appropriate conditional analysis. The identification of QTLs with opposite effects (C26-C28) elegantly explains the phenotypic similarity of founders (C29). The variance explained is quantified (C24-C25), though the causative variants remain to be definitively identified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "QTL1 overlaps with gpr-1 (containing two missense variants) and QTL2 overlaps with par-2 (containing three missense and two synonymous variants), with RNAi knockdowns showing both genes affect final spindle length (gpr-1/2: 17.4\u00b10.2 \u03bcm, p = 3.82E-30; par-2: 19.8\u00b10.2 \u03bcm, p = 1.03E-22), and QTL2 associates with PAR-2 transcript abundance (p = 6.08E-17) but QTL1 does not associate with GPR-1 transcript levels (p = 0.22).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C38 link QTLs to candidate genes through genomic overlap, functional validation via RNAi, and transcript analysis. The RNAi experiments provide strong functional support, though they don't definitively prove these are the causative variants. The transcript association for QTL2 but not QTL1 suggests different mechanisms of action.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "The RIAIL analysis establishes cell length as a primary determinant of final spindle length and identifies two QTLs (likely in gpr-1 and par-2) that influence spindle length independently of cell length, suggesting spindle elongation continues until pulling forces and other forces on centrosomes reach balance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C42 synthesize the genetic findings. The conclusion about cell length (C39) and the two QTLs (C40) are well-supported. The suggestion about causative variants (C41) is appropriately tentative. The force balance hypothesis (C42) is a reasonable inference but requires further experimental validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "Laser ablation leaving only microtubules parallel to the spindle axis caused centrosomes to move toward the cell periphery at 14.5\u00b12.8 \u03bcm/min over 3.9\u00b10.2 \u03bcm, indicating net pulling forces rather than balanced pushing and pulling forces on these microtubules.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C45 report laser ablation results that directly test force balance hypotheses. The rapid centrosome motion after ablation (C43-C44) provides strong evidence against a pushing-pulling balance, and the inference of net pulling forces (C45) is well-supported by the observed behavior.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "Plane-cut ablation through the spindle caused minimal centrosome displacement (1.6\u00b11.0 \u03bcm/min, 0.7\u00b10.1 \u03bcm), and spd-1 (RNAi) embryos lacking central spindles showed nearly identical final spindle length to controls (24.5\u00b10.1 vs 23.8\u00b10.2 \u03bcm, p = 2.2E-3), demonstrating that spindle elasticity and central spindle forces have minimal impact on final centrosome positioning.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C52 use complementary approaches (laser ablation and genetic perturbation) to test the role of spindle forces. The minimal displacement after plane-cut (C46-C47) and the near-identical spindle length in spd-1 (RNAi) (C50) provide converging evidence that spindle forces are not major determinants of final position.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "Perpendicular cup-cut ablation leaving only microtubules perpendicular to the spindle axis caused centrosomes to move toward the periphery at 22.3\u00b14.3 \u03bcm/min over 6.6\u00b10.3 \u03bcm, demonstrating that pulling forces exist in multiple directions even when the spindle has reached final length, consistent with a balance of pulling forces determining final spindle length.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C56 complete the laser ablation analysis by showing pulling forces in multiple orientations. The perpendicular ablation results (C53-C54) combined with parallel ablation results support the hypothesis that final spindle length results from balanced pulling forces in different directions (C56).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "The Stoichiometric Model, in which each cortical force generator (CFG) can bind only one microtubule at a time with detachment rate \u03ba, allows cortical pulling forces to stably position centrosomes even when CFGs outnumber microtubules, whereas non-stoichiometric interactions lead to unstable positioning with centrosomes migrating to the cell periphery.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C63 describe the key theoretical innovation. The stoichiometric constraint (C57-C58) is biologically motivated, and simulations demonstrate stable positioning (C59-C60) versus instability without stoichiometry (C61). The conclusion that stoichiometry prevents destabilizing feedback (C62) is well-supported by the model analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "Both simulations and experiments show that removing one centrosome causes the remaining centrosome to move to the cell center, with experimental validation in 13 embryos confirming the model prediction that centrosomes compete for cortical force generators through stoichiometric interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C66 provide critical experimental validation of a key model prediction. The agreement between simulation (C64) and experiment (C65) across multiple embryos strongly supports the stoichiometric competition mechanism (C66). This is a powerful test of the model's core assumptions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "Simulations incorporating asymmetric CFG distribution (~50% more posterior than anterior) accurately reproduce spindle elongation dynamics and positioning, and simulations with symmetric CFG distribution (modeling par-6 RNAi) correctly predict symmetric spindle positioning with unchanged final length.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C70 demonstrate that the model accounts for both asymmetric (wild-type) and symmetric (par-6 RNAi) conditions. The asymmetry parameter (C67) is based on prior work, and the model's ability to reproduce both conditions (C68-C70) provides strong validation of its explanatory power.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "The Stoichiometric Model quantitatively reproduces the scaling of final spindle length with cell length across RIAILs (0.52\u00b10.02 vs 0.47\u00b10.02, p = 0.08), natural isolates (0.46\u00b10.05, p = 0.27), and nematode species (0.57\u00b10.10, p = 0.62), as well as scaling of centrosome distance, spindle center position, and elongation rate with cell length.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C77 demonstrate remarkable quantitative agreement between model and data across evolutionary timescales. The regression coefficients are statistically indistinguishable (p > 0.05 for all comparisons), and the model reproduces multiple traits (C74-C76), providing strong evidence for the model's validity and generality.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "The Stoichiometric Model explains spindle elongation and positioning through cortical pulling forces with stoichiometric microtubule-CFG interactions, with laser ablation and genetic experiments ruling out significant contributions from spindle elasticity and pushing forces, and asymmetric CFG distribution quantitatively explaining spindle asymmetry.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C81 synthesize the main mechanistic conclusions. The experimental evidence against alternative mechanisms (C79) is strong, the stoichiometric mechanism (C80) is well-validated, and the explanation of asymmetry (C81) is quantitatively supported. This represents a comprehensive mechanistic understanding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "The Stoichiometric Model provides a mechanistic explanation for spindle evolution in nematodes by quantitatively reproducing correlations between spindle traits and cell length that are conserved across RIAILs, natural isolates, and species spanning 100 million years, with cell length subject to stabilizing selection driving correlated evolution of spindle traits.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C87 connect the mechanistic model to evolutionary patterns. The conservation of correlations across evolutionary timescales (C84) and the model's ability to reproduce them (C85) provide a mechanistic basis for understanding spindle evolution (C86-C87). This represents a significant contribution to understanding phenotypic evolution.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "Background context establishes that C. elegans undergoes asymmetric first cell division with PAR protein-mediated cortical asymmetry driving spindle elongation and positioning through pulling forces on astral microtubules, and that spindle size scales with cell size across multiple organisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C92 provide established background knowledge supported by appropriate citations. These claims set the context for the study but do not represent novel findings. They are accurately stated and properly attributed to prior work.",
+    "result_type": "MINOR"
+  }
+]

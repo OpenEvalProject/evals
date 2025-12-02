@@ -1,0 +1,392 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "The manuscript describes the established mechanism of the budding yeast UPR, where Ire1 excises an intron from HAC1u mRNA producing 2',3'-cyclic phosphate and 5'-OH termini, followed by Trl1-mediated ligation involving 5'-phosphorylation, adenylylation, and 2',3'-cyclic phosphate resolution, ultimately producing HAC1s mRNA that is translated into the Hac1 transcription factor.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C18 describe well-established background knowledge about the yeast UPR mechanism, supported by multiple citations to prior literature (Gonzalez et al., 1999; Sidrauski et al., 1996; Culver et al., 1997; Li et al., 2018; Ron and Walter, 2007; Ogawa and Mori, 2004). These claims provide essential context for the novel findings but are not original contributions of this manuscript.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "The authors demonstrate that trl1\u0394 cells cannot grow on tunicamycin and fail to produce HAC1s, while tpt1\u0394 cells can activate the UPR despite showing reduced HAC1s and intron levels. Both mutants accumulate cleaved 3'-exon, indicating defects in RNA processing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C30 are well-supported by growth assays (Figure 1B) and northern blot data (Figures 1C-D) showing distinct phenotypes for trl1\u0394 and tpt1\u0394 mutants. The data clearly demonstrate differential effects on HAC1 processing and UPR activation, with appropriate controls and consistent results across multiple experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C40",
+      "C46",
+      "C50"
+    ],
+    "result": "The authors show that xrn1\u0394 cells promiscuously splice HAC1s under normal growth conditions, and that Xrn1 requires Trl1 5'-kinase activity for 3'-exon degradation. This establishes that kinase-mediated decay of the 3'-exon competes with ligation and suppresses inappropriate UPR activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C50 are strongly supported by northern blot data (Figures 1C, 2A-D) showing HAC1s accumulation in xrn1\u0394 cells without stress, similar 3'-exon levels in trl1\u0394 and trl1\u0394 xrn1\u0394 double mutants, and rescue experiments with kinase-inactive Trl1 mutants (Figure 2B). The competition model between ligation and decay is well-justified by the genetic and biochemical evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "The authors demonstrate that Trl1 5'-kinase activity is required for Xrn1-mediated degradation of HAC1 3'-exon, while the ligase activity also contributes to 3'-exon processing. Dxo1 does not significantly affect 3'-exon abundance, confirming Xrn1 as the primary 5'\u21923' exonuclease.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C45 are supported by experiments with catalytic mutants of Trl1 (Figures 2B-C) and dxo1\u0394 strains (Figure 2D). The kinase-inactive Trl1-D425N fails to restore decay, while ligase-defective Trl1-K114A shows intermediate accumulation. The dxo1\u0394 data convincingly demonstrate Xrn1's primary role, with appropriate double mutant controls.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "The authors show that trl1\u0394 cells expressing E. coli RtcB ligase promiscuously splice HAC1s under normal conditions and accumulate circularized intron. This demonstrates that RtcB's 5'-OH-dependent ligation bypasses the need for Trl1 kinase activity, preventing Xrn1-mediated decay and revealing low-level background Ire1 activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C69 are well-supported by northern blots (Figures 2E-F, 3F-G) and RNase R resistance assays (Figure 3G) demonstrating circular intron formation. The promiscuous splicing in RtcB-expressing cells provides strong evidence for the competition model and reveals constitutive low-level Ire1 activity. The mechanistic explanation based on RtcB's substrate specificity is sound.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "The authors demonstrate that multiple RNA repair and decay mutants can produce HAC1s but fail to grow on tunicamycin and show significantly reduced KAR2 expression, indicating that HAC1s production alone is insufficient for UPR activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C54 are supported by growth assays (Figure 3A) and RT-qPCR data (Figure 3B) showing reduced KAR2 expression in all mutants despite HAC1s production. The statistical analysis (p<0.01, n=3) is appropriate, and the conclusion of an additional regulatory layer downstream of HAC1s production is well-justified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C61",
+      "C70",
+      "C71",
+      "C72",
+      "C77"
+    ],
+    "result": "The authors show that excised HAC1 intron undergoes kinase-mediated decay requiring Trl1 5'-kinase activity, and that this decay is essential for HAC1s translation by relieving the inhibitory base-pairing interaction between the intron and 5'-UTR. This resolves the previously mysterious 'second function' of Trl1 in UPR activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C77 are strongly supported by northern blots showing distinct intron decay patterns in xrn1\u0394 versus trl1\u0394 cells (Figure 3C-D), dependence on Trl1 kinase activity (Figure 3D), and correlation between intron accumulation and growth defects (Figure 3A). The model connecting intron decay to HAC1s translation is well-reasoned and resolves prior observations from Mori et al., 2010.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C75",
+      "C76"
+    ],
+    "result": "The authors show that while Dxo1 and the cytoplasmic exosome can partially degrade HAC1 intron when it accumulates in xrn1\u0394 cells, these pathways do not significantly regulate the UPR. The severity of growth defects correlates with intron stability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C76 are supported by northern blots showing subtle differences in decay products in dxo1\u0394 xrn1\u0394 cells (Figure 3E) and intron stabilization in ski2\u0394 cells (Figure 3H), combined with normal growth of ski2\u0394 cells on tunicamycin (Figure 1B). The conclusion that these pathways are not major UPR regulators is well-justified.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "The authors identify a novel secondary cleavage event in tpt1\u0394 cells that produces a shortened 5'-exon (~50 nt shorter) and an elongated 3'-exon containing 5'-exon sequence. This cleavage requires Tpt1 catalytic activity to prevent and occurs upstream of the 2'-phosphorylated ligation junction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C86 are well-supported by northern blots with multiple probes (Figures 4A-E) showing the appearance of novel fragments in tpt1\u0394 cells, rescue experiments with catalytically inactive Tpt1-R138A (Figure 4B), and probe hybridization patterns demonstrating linkage of 5'-exon sequence to 3'-exon. The data convincingly establish a secondary cleavage event.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C168"
+    ],
+    "result": "The authors demonstrate that expression of pre-spliced HAC1s does not recapitulate the secondary cleavage observed in tpt1\u0394 cells, establishing that HAC1u must be cleaved and ligated to produce the 2'-phosphorylated substrate required for secondary cleavage.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C92 and C168 are supported by plasmid expression experiments (Figures 4F-G) showing that pre-spliced HAC1s produces only full-length product in both trl1\u0394 and tpt1\u0394 backgrounds, while HAC1u expression in tpt1\u0394 cells produces the secondary cleavage fragments. This convincingly demonstrates the requirement for the 2'-phosphate modification.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "The authors use primer extension and in vitro Xrn1 degradation assays to characterize the 5'-ends of 3'-exon cleavage products, demonstrating that the elongated 3'-exon in tpt1\u0394 cells is partially degraded by Xrn1 to produce a fragment with both 5'- and 2'-phosphates that resists further degradation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93-C107 are strongly supported by primer extension data (Figure 5A) showing distinct products in different mutants and in vitro Xrn1 degradation assays (Figure 5C) demonstrating differential susceptibility based on 5'-end chemistry. The model of partial degradation stopping at the 2'-phosphate is well-supported by the biochemical data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115"
+    ],
+    "result": "The authors perform time-course experiments showing that secondary cleavage products accumulate coincident with HAC1s production in tpt1\u0394 cells, and that tpt1\u0394 cells accumulate more free 3'-exon than HAC1s (opposite to wild-type), indicating that 3'-exon accumulation results from partial decay of 5'- and 2'-phosphorylated HAC1s.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C108-C115 are supported by time-course northern blots (Figure 6A-E) showing temporal correlation between HAC1s and cleavage product accumulation, and increased HAC1s in tpt1\u0394 xrn1\u0394 and tpt1\u0394 ski2\u0394 double mutants. The inverted ratio of 3'-exon to HAC1s compared to wild-type provides strong evidence for the partial decay model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C122",
+      "C123",
+      "C124"
+    ],
+    "result": "The authors propose a comprehensive model where decay of HAC1 splicing intermediates regulates both UPR activation and suppression through competition between Trl1-mediated ligation and Xrn1-mediated decay at the 5'-phosphorylated 3'-exon intermediate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C116-C124 synthesize the experimental findings into a coherent model (Figure 7) that explains the opposing effects of decay on UPR regulation. The model is well-supported by the genetic, biochemical, and temporal data presented throughout the manuscript, though some mechanistic details remain to be fully elucidated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C154",
+      "C155",
+      "C156",
+      "C157",
+      "C159",
+      "C160",
+      "C161"
+    ],
+    "result": "The authors identify a novel decay intermediate from incompletely processed, 2'-phosphorylated HAC1s that is resistant to complete exonucleolytic degradation due to the internal 2'-phosphate, suggesting a regulatory role for Tpt1 in HAC1s fate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C154-C161 are supported by the collective data on secondary cleavage and partial degradation (Figures 4-6), and are consistent with prior work showing 2'-phosphate protection from E. coli PNPase (Munir et al., 2018). The identification of this novel intermediate and its properties is well-documented, though the full regulatory implications remain to be determined.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C165",
+      "C166",
+      "C167",
+      "C169",
+      "C170",
+      "C171",
+      "C172",
+      "C173"
+    ],
+    "result": "The authors propose that Ire1 catalyzes the secondary cleavage of ligated, 2'-phosphorylated HAC1s upstream of the ligation junction, potentially as a mechanism to inactivate HAC1s and attenuate the UPR after prolonged stimulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C165-C173 are largely speculative proposals based on indirect evidence. While Ire1 is the only known endoribonuclease for HAC1 (C166), direct evidence for Ire1 catalyzing secondary cleavage is lacking. The model involving 2'-phosphate inhibition of the chemical step (C171) and oligomeric Ire1 cleaving at a second site (C172) is plausible but requires experimental validation. The ire1\u0394 mutant cannot be tested directly (C167), limiting the ability to confirm this hypothesis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C162",
+      "C163",
+      "C164"
+    ],
+    "result": "The authors infer that tpt1\u0394 cells likely produce some Hac1 protein from 2'-phosphorylated HAC1s mRNA based on their ability to grow on tunicamycin and activate KAR2 expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C162-C164 are reasonably inferred from growth data (Figure 1B) and KAR2 expression (Figure 3B), though direct measurement of Hac1 protein levels would strengthen this conclusion. The inference is logical given that some UPR activation occurs despite the 2'-phosphate modification.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C125",
+      "C126",
+      "C127",
+      "C129",
+      "C130",
+      "C131"
+    ],
+    "result": "The authors connect their findings to prior observations of spurious HAC1 splicing in cells expressing plant tRNA ligase and propose that kinase-mediated decay of excised intron relieves translational repression, adding a failsafe mechanism against unintentional UPR activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C125-C131 appropriately contextualize the current findings with prior literature (Mori et al., 2010; Chapman and Walter, 1997; Di Santo et al., 2016) and provide a mechanistic explanation for previously unexplained observations. The model connecting intron decay to HAC1s translation is well-supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136"
+    ],
+    "result": "The authors place their findings in the broader context of kinase-mediated decay, noting that this mechanism has been observed in bacterial mRNAs, tRNA introns, rRNA processing intermediates, and no-go decay products, suggesting it may be widespread.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C132-C136 appropriately cite prior literature (Durand et al., 2012; Wu and Hopper, 2014; Gasse et al., 2015; Navickas et al., 2018) demonstrating kinase-mediated decay in diverse contexts. The inference that this mechanism may be widespread is reasonable given the multiple examples.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C137",
+      "C138",
+      "C139",
+      "C140",
+      "C141",
+      "C142",
+      "C143",
+      "C144",
+      "C145",
+      "C146",
+      "C147",
+      "C148",
+      "C149"
+    ],
+    "result": "The authors discuss implications for metazoan UPR regulation, noting that Xbp-1 splicing uses RtcB ligase and proposing that RNA 5'-kinases like Clp1 may regulate the metazoan UPR through kinase-mediated decay, potentially explaining neurodevelopmental defects associated with Clp1 mutations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C137-C149 are largely speculative extensions to metazoan systems, appropriately citing relevant literature (Kosmaczewski et al., 2014; Lu et al., 2014; Chakravarty et al., 2012; Unlu et al., 2018; Hanada et al., 2013; Karaca et al., 2014; Schaffer et al., 2014; Clayton and Popko, 2016). While the proposals are plausible based on the yeast findings, they require experimental validation in metazoan systems. The connection to Clp1-associated disease is interesting but speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C150",
+      "C151",
+      "C152",
+      "C153"
+    ],
+    "result": "The authors show that while the cytoplasmic exosome can degrade HAC1 intron and 5'-exon, 3'\u21925' decay does not substantially contribute to intron-mediated HAC1s repression, as ski2\u0394 cells grow normally on tunicamycin.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C150-C153 are supported by northern blot data (Figures 3H, 4) and growth assays (Figure 1B) showing intron stabilization in ski2\u0394 cells without affecting tunicamycin resistance. The conclusion that 3'\u21925' decay is not a major UPR regulator is well-justified by the genetic evidence.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C158",
+      "C159"
+    ],
+    "result": "The authors note that their findings are consistent with recent work showing that internal 2'-phosphates protect RNA from exonucleolytic degradation in vitro, supporting the general principle that site-specific 2'-phosphorylation is an effective protection strategy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C158-C159 appropriately connect the current findings to prior work (Munir et al., 2018) demonstrating 2'-phosphate-mediated protection from E. coli PNPase. The generalization about 2'-phosphate as a protection strategy is well-supported by the combined evidence.",
+    "result_type": "MINOR"
+  }
+]

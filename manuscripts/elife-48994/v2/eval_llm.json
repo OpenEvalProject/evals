@@ -1,0 +1,284 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C4",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "SAM is an iterative soft feature selection algorithm that prioritizes genes variable across neighborhoods rather than individual cells, rescales all genes by spatial dispersion weights to avoid arbitrary thresholding, and converges to stable gene weights and graph topology through iteration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C19-C22, C97-C102 collectively describe SAM's algorithmic approach with clear methodological details. The iterative process, spatial dispersion calculation, soft weighting scheme, and convergence properties are well-documented in the methods and demonstrated empirically across datasets.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C70",
+      "C71",
+      "C103",
+      "C104"
+    ],
+    "result": "SAM converges to stable solutions independent of initial conditions on real datasets but not on randomly shuffled data, iteratively improving graph metrics (NACC, modularity, spatial dispersion) that quantify structure and gene expression organization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C43, C70-C71, C103-C104 are supported by convergence analyses shown in Figures 1b-d and 3b. The control experiment with shuffled data (C43, C71) demonstrates SAM does not artificially create structure, strengthening the validity of the convergence claims.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C5",
+      "C27",
+      "C33",
+      "C34",
+      "C35",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C94",
+      "C105"
+    ],
+    "result": "SAM identified novel and previously characterized stem cell populations in Schistosoma mansoni that other methods (PCA, Seurat, SIMLR) failed to distinguish, revealing three main populations including \u03b4\u2032-cells, \u03b5-cells, and a novel \u03bc population comprising ~30% of cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C27, C33-C49, C94, C105 are supported by comparative analysis in Figure 2a showing SAM's superior performance and by identification of known markers (C47-C48). The discovery of the novel \u03bc population (C49) represents a major finding, though full functional validation is acknowledged as needed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "The novel \u03bc-cells express stem cell markers and are spatially localized near the parasite surface beneath post-mitotic cabp+ cells that coexpress muscle markers (tropomyosin, myosin, troponin, collagen), suggesting \u03bc-cells are muscle progenitors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C54 are supported by FISH experiments (Figures 2c-d) showing spatial localization and marker coexpression. The inference that \u03bc-cells are muscle progenitors (C54) is reasonable based on the data, though the authors appropriately note functional validation is required.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "SAM identified two \u03b5-cell subpopulations (\u03b5\u03b1 expressing astf, \u03b5\u03b2 expressing bhlh) that are spatially proximate but do not coexpress markers, with \u03b5\u03b1-cells comprising a dynamic population that decreases from 21% at 2.5 weeks to 7% at 3.5 weeks post-infection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C59 are supported by FISH validation (Figure 2e) and temporal analysis of combined datasets (Figure 2f). The developmental dynamics of \u03b5\u03b1-cells are demonstrated through quantitative comparison across time points with batch effect correction.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "SAM's gene selection differs fundamentally from other methods by prioritizing genes variable across neighborhoods rather than individual cells, with many highly variable genes (HVGs) receiving low SAM weights, while SC3 failed to identify populations and showed instability with parameter changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C64 are supported by comparative analysis in Figures 2g-h. The negative correlation between HVG dispersion and SAM weights (C61) demonstrates the methodological difference, and SC3's failure and instability (C62-C64) are empirically shown.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C7",
+      "C26",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C95",
+      "C110"
+    ],
+    "result": "SAM was benchmarked on 56 datasets and consistently outperforms other methods, achieving highest ARI on 5/9 annotated datasets and equal performance to Seurat on 4 Baron datasets, while SC3 and SIMLR struggle with abundant cell types and Seurat requires parameter optimization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C26, C65-C69, C95, C110 are supported by extensive benchmarking shown in Figure 3a and Supplementary file 3. The comparative performance is quantified using ARI scores, and limitations of competing methods are documented. The scope of 56 datasets provides strong evidence for generalizability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C72",
+      "C73"
+    ],
+    "result": "SAM's scalability is similar to Seurat, capable of analyzing hundreds of thousands of cells in minutes, while SIMLR and SC3 are orders of magnitude slower.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C73 are supported by runtime analysis in Figure 3c showing computational performance across varying dataset sizes. The scalability comparison is quantitative and demonstrates SAM's practical applicability to large datasets.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "A network sensitivity metric was introduced to identify datasets with subtle signals by quantifying changes in cell-cell distances with feature perturbation, revealing that standard benchmarking datasets have low sensitivity while the schistosome dataset has highest sensitivity, and that high sensitivity correlates with fewer highly weighted genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C24, C74-C78 describe a novel methodological contribution supported by Figure 4a-b. The metric is clearly defined, applied systematically, and reveals meaningful patterns. The negative correlation between sensitivity and fraction of highly weighted genes (C78) provides biological insight.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C79",
+      "C96"
+    ],
+    "result": "SAM's advantages over Seurat in improving clustering, modularity, and spatial organization increase with dataset sensitivity, with benefits especially apparent on datasets where cell types are distinguishable only through subtle expression differences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79 and C96 are supported by analysis across all 56 datasets shown in Figure 4c, demonstrating linear correlations (r\u00b2=0.71-0.84) between sensitivity and SAM's performance improvement. This establishes SAM's particular utility for challenging datasets.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C25",
+      "C80",
+      "C81"
+    ],
+    "result": "In simulated datasets with increasing corruption/noise, SAM's performance (ARI, NACC, modularity, dispersion) degrades only marginally below ~50% corruption while Seurat rapidly deteriorates, and passing SAM-selected genes to Seurat rescues its performance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25, C80-C81 are supported by corruption analysis in Figure 5a-b across 9 datasets. The rescue experiment (C81) provides strong evidence that SAM's feature selection is robust and superior to Seurat's HVG approach. The AUC analysis quantifies performance across corruption levels.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C108"
+    ],
+    "result": "In macrophage analysis, SAM initially identified cell cycle-dominated clustering, then after cell cycle removal revealed two clusters properly ordered by time since LPS induction with immune signaling genes highly weighted, demonstrating that SAM weights can be used with GSEA to infer biological pathways driving clustering.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C85, C108 are supported by GSEA analysis and visualization in Figure 6a. The sequential analysis (before/after cell cycle removal) demonstrates SAM's ability to identify dominant biological processes, and integration with GSEA provides biological interpretation of gene weights.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C106"
+    ],
+    "result": "SAM grouped macrophages by activated signaling pathways (MT cluster via both Myd88 and TRIF, M cluster via Myd88 only), with the TNF\u03b1-enriched MT cluster containing most cells with prolonged NF-\u03baB response, consistent with known biology that TNF\u03b1 signaling prolongs NF-\u03baB activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C91, C106 are supported by gene expression analysis (Figure 6b, d) and validation with live-cell imaging data (Figure 6e-f). The biological interpretation (C90) is an inference but is well-supported by known pathway biology (C87-C89) and empirical validation showing MT cluster enrichment for prolonged NF-\u03baB response (C91).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C92"
+    ],
+    "result": "Seurat and SIMLR failed to order macrophage cells by time since LPS induction or group cells by activation dynamics after cell cycle removal.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C92 is supported by comparative visualizations in Figure 6g and supplementary figures showing lack of temporal ordering and pathway-based clustering in Seurat and SIMLR outputs.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C6",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "Current scRNA-seq analysis faces challenges including arbitrary feature selection thresholds, difficulty distinguishing biological variation from noise in datasets with subtle differences, and benchmarking primarily on easily-analyzed datasets with clearly distinguishable cell types.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3, C6, C8-C18 establish the scientific context and motivation. These are supported by citations to prior work (C8-C9, C11, C13, C16) and represent established understanding in the field. The problem statement is well-grounded in literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C93",
+      "C107",
+      "C109",
+      "C111"
+    ],
+    "result": "SAM's outputs (gene weights and manifolds) can be integrated with downstream analyses including GSEA and pseudotemporal ordering algorithms, and the network sensitivity metric should help characterize future method performance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C93, C107, C109, C111 are largely speculative about future applications (C107, C109, C111) or summary statements (C93). While C108 demonstrates GSEA integration, broader claims about downstream utility and future impact are not fully validated in the manuscript.",
+    "result_type": "MINOR"
+  }
+]

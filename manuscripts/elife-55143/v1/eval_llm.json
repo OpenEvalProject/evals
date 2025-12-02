@@ -1,0 +1,193 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "The manuscript establishes background knowledge about Cas12a and Cas9 CRISPR systems, including their mechanisms of R-loop formation, DNA cleavage, and structural features. Cas12a uses a single RuvC active site to make staggered cuts distant from the PAM, while Cas9 employs two active sites. The two systems have opposing crRNA architectures and R-loop directionality.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims represent well-established background knowledge from prior literature, appropriately cited throughout (C7-C17). The structural information (C52-C56) is clearly documented with proper attribution to crystal structures and prior work. This foundational information is necessary context for the novel findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "Using permanganate footprinting, the authors demonstrate that DNA flanking the RNA-3\u2032 side of Cas12a-generated R-loops exhibits intrinsic instability. Permanganate reactivity was observed in the PAM-distal flank extending seven base pairs past the crRNA end, with reactivity decreasing with distance from the R-loop edge, suggesting the R-loop flank populates highly distorted and probably unpaired conformations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The permanganate reactivity data (C21-C24, Figure 2) provide direct experimental evidence for DNA distortion in the 3\u2032 R-loop flank. The methodology is well-established and appropriately applied. The interpretation that distortion decreases with distance from the R-loop edge is consistent with the quantitative data shown. The conclusion (C25) appropriately acknowledges the limitations of the technique while drawing reasonable inferences from the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "The location of DNA distortion in the R-loop flank controls the distribution of target-strand cleavage sites. When the R-loop was truncated, the distorted region migrated with the R-loop edge, and the target-strand cut-site distribution shifted accordingly. Compensatory mutations restored the original distribution, while non-target-strand cleavage remained unchanged.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The experimental design systematically tests the prediction (C26) through R-loop truncation experiments (C27-C29, Figure 3A-B). The compensatory mutation controls (C29) strengthen the conclusion by demonstrating sequence-independence. The observation that non-target-strand cleavage is unaffected (C30) provides important specificity. The conclusion (C31) is well-supported by converging lines of evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "The sequence composition of the R-loop flank affects target-strand cleavage patterns. GC-rich substrates were cleaved most PAM-proximally, while eliminating base pairing at positions 21-23 led to fast and PAM-distally shifted cleavage, suggesting DNA distortion in the R-loop flank enables Cas12a-catalyzed target-strand cleavage.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The sequence variation experiments (C32-C33, Figure 3C) provide strong support for the mechanistic model by showing that base-pairing stability affects cleavage position in predictable ways. The data are consistent with the hypothesis that weaker base pairing facilitates DNA bending and cleavage. The conclusion (C34) appropriately integrates these findings with the earlier results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C35",
+      "C36"
+    ],
+    "result": "Protein-free R-loop mimics show that distortion of the R-loop flank is intrinsic to the R-loop boundary itself. The A/T tract in protein-free mimics was slightly more reactive to permanganate than in Cas12a-generated R-loops, indicating the protein only needs to hold the R-loop open to promote flexibility in adjacent DNA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The protein-free R-loop mimic experiments (C35, Figure 4A) provide critical evidence that the observed DNA distortion is not protein-induced but rather an intrinsic property of the nucleic acid structure. The comparison between protein-bound and protein-free conditions is well-controlled. The conclusion (C36) is appropriately cautious and supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C4",
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "DNA flanking the RNA-5\u2032 side of R-loops (as in Cas9) is not intrinsically unstable. The PAM-distal flank of Cas9 R-loops showed nearly background permanganate oxidation levels in both protein-bound and protein-free conditions. This asymmetry between 3\u2032 and 5\u2032 R-loop flanks is intrinsic to strand polarity and represents a fundamental energetic difference in conformational landscapes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The comparison between Cas12a and Cas9 R-loop flanks (C37, Figure 4A) is well-controlled and demonstrates a striking asymmetry. The robustness of this difference across multiple sequence contexts and conditions (C40, Figure 4 supplements 3-6) strengthens the conclusion. The interpretation (C38-C39) is supported by converging evidence from permanganate reactivity and 2-aminopurine fluorescence experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "Biophysical measurements support the asymmetry in R-loop flank stability. The RNA-5\u2032 dumbbell had a melting temperature 9\u00b0C higher than the RNA-3\u2032 dumbbell. Molecular dynamics simulations showed that 3\u2032 R-loop junctions frequently unstacked while 5\u2032 junctions remained stable, suggesting the instability arises from frequent unstacking events in the DNA bending pathway.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The melting temperature measurements (C41, Figure 5A) provide orthogonal thermodynamic evidence for the asymmetry. The molecular dynamics simulations (C42, Figure 5B) offer atomic-level insight into the structural basis. The interpretation (C43) appropriately acknowledges the limitations of short simulations while drawing reasonable mechanistic inferences. The convergence of multiple biophysical approaches strengthens these conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C5",
+      "C44"
+    ],
+    "result": "Cas12a exploits the intrinsic instability of 3\u2032 R-loop flanks to enable target-strand cleavage. The ability of the RuvC active site to capture the target strand relies on its proximity to the uniquely malleable 3\u2032 R-loop flank, which depends on the topology of the Cas12a R-loop.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This mechanistic conclusion (C5, C44) integrates multiple lines of evidence: permanganate reactivity showing DNA distortion, cleavage site distribution experiments linking distortion to cutting, protein-free mimics demonstrating intrinsic instability, and the asymmetry between 3\u2032 and 5\u2032 flanks. The model is well-supported by the experimental data and provides a coherent explanation for how Cas12a achieves double-strand breaks with a single active site.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C6",
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "The universal 3\u2032 R-loop topology in type V CRISPR-Cas systems may result from biophysically imposed selective pressures. All known DNA-targeting Cas12 enzymes form R-loops that allow target-strand cleavage within a PAM-distal 3\u2032 R-loop flank. The authors hypothesize that ancestral enzymes with this topology outperformed inverted variants under evolutionary pressure for efficient double-strand breaks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While the observation that all Cas12 enzymes share this topology (C45) is well-documented with citations, the evolutionary explanation (C46-C47) is explicitly speculative. The hypothesis is reasonable and consistent with the biophysical findings, but lacks direct experimental support. The claim about independent evolutionary origins (C48) is appropriately cited but the proposed convergent evolution remains a hypothesis rather than a demonstrated result.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "The findings have implications for CRISPR engineering. Engineering type V nickases will likely require modifications that shield the RuvC active site from the intrinsically labile 3\u2032 R-loop flank. Placing a DNase domain near a 3\u2032 R-loop flank would encourage fast target-strand cleavage, while placement near a 5\u2032 flank would inhibit it.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These engineering predictions (C49-C51) are logical extensions of the experimental findings. The conclusion that protein-free R-loop mimics show intrinsic instability (demonstrated in C35-C36) directly supports the prediction that protein modifications alone may be insufficient for nickase engineering (C49). The design principles (C50-C51) follow naturally from the demonstrated asymmetry in flank stability.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "Crystal structures show the target-strand cleavage site is located within an ordered DNA duplex approximately 25 \u00c5 from the RuvC active site, motivating the hypothesis that DNA substrates must access a bent conformation for cleavage. Permanganate footprinting was used to probe DNA structure, as it selectively oxidizes thymines in non-B-form DNA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The structural observations from prior work (C18) are appropriately cited and provide clear motivation for the study. The hypothesis (C19) is reasonable given the geometric constraints. The permanganate method (C20) is well-established and appropriately applied with proper citations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "Binding affinity measurements show dAsCas12a/crRNA binds cognate DNA targets with KD values of approximately 8 nM for standard substrates, 54 nM for protospacer 2 (intact), and 2.8 nM for protospacer 2 (pre-gapped).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The binding affinity measurements (C57-C59, Figure 2 supplement 2) are well-controlled using two independent methods (EMSA and filter-binding). The data include appropriate replicates and error estimates. These measurements are important controls demonstrating that the observed effects are not due to differential binding.",
+    "result_type": "MINOR"
+  }
+]

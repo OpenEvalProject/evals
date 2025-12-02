@@ -1,0 +1,249 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C21"
+    ],
+    "result": "The authors identify a knowledge gap in studying cell non-autonomous effects on deleterious genotypes, particularly in the CNS, due to technical limitations and the complexity of combining genetic manipulations. No existing genetic tool was suited for efficient large-scale screening of non-autonomous effects on developmentally deleterious genotypes like neural tumors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3, C9-C14, and C21 collectively establish the motivation and knowledge gap addressed by the study. These are primarily background claims supported by citations and established knowledge in the field, providing appropriate context for the work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6",
+      "C23",
+      "C24",
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "The authors developed the FOFO (Flp-Out-mFlp5-Out) genetic tool that permits efficient multiplexed gain- and loss-of-function genetic perturbations with separable spatial and temporal control. The tool uses two stringent STOP cassettes flanked by FRT and mFRT71 sites, is independent of the GAL4/UAS system, and can be built into a single strain.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C6, C23-C24, and C32-C35 describe the core design of the FOFO system, which is demonstrated experimentally throughout Figures 1-6. The design principles are clearly validated by the experimental data showing spatiotemporal control of gene expression.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "The authors tested FOFO1.0 with two STOP cassettes (hsp70Bb and SV40 terminators) and found that while it successfully induced EGFP expression and tumors after heat-shock, ectopic NSCs were sometimes observed outside the EGFP domain, indicating Pol II readthrough. This made FOFO1.0 unsuitable for maintaining a stable stock with locked deleterious perturbations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C58 describe the testing and limitations of FOFO1.0, supported by experimental data in Figure 2b. The observation of ectopic NSCs outside EGFP domains (C55-C56) and the conclusion about Pol II readthrough (C57) are directly demonstrated in the figures and appropriately interpreted.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "The authors developed FOFO2.0 with stronger STOP cassettes (Flybow lamin cds cassette and four SV40 terminators), which successfully blocked miR transcription in the absence of either Flippase and unblocked it in the presence of both, with perfect correspondence to EGFP reporter expression. Supernumerary NSCs were never observed outside the EGFP domain with FOFO2.0.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C67 describe the improved FOFO2.0 design and its validation, supported by experimental data in Figures 2c and Figure 2\u2014figure supplement 1. The key improvement\u2014elimination of ectopic NSCs outside EGFP domains (C66)\u2014is clearly demonstrated and represents a critical advancement over FOFO1.0.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C68",
+      "C90"
+    ],
+    "result": "The authors included miRs targeting GAL4 (two miRs) along with tumor suppressor miRs in the FOFO design to ensure GAL4 would be silenced within tumor domains if expression overlapped. This was validated by observing RFP-negative patches in perfect overlap with EGFP-labeled clones, demonstrating efficient GAL4 knock-down and the ability to study strictly non-autonomous effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C45, C68, and C90 describe the GAL4 knockdown strategy and its validation, demonstrated in Figure 3. The experimental evidence clearly shows successful elimination of GAL4 expression in FOFO-expressing domains, validating the tool for independent genetic manipulations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C112",
+      "C113",
+      "C114",
+      "C115"
+    ],
+    "result": "The authors tested and refined the FOFO tools by recapitulating two established Drosophila neural tumor models: downregulation of Prospero (which causes tumorigenesis in all ~100 neural lineages per central brain lobe) and downregulation of Brain tumor (which causes tumorigenesis specifically in the eight type II lineages per brain lobe).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C29 and C112-C115 describe the validation strategy using established tumor models. The experimental demonstrations in Figures 2, 5, and 6, along with Figure 1\u2014figure supplement 1, support these claims. The anatomical details are appropriately cited and illustrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "The authors generated new enhancer-FLP(D) lines using selected enhancers (including R19H09 and stg14 for type II lineages) and the more efficient FLP(D) variant. Expression controlled by the hsp70 promoter was less widespread than that controlled by the DSCP, and lines were functionally screened for expression in neural progenitors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C74 describe the generation and characterization of new enhancer-FLP lines, supported by data in Figure 4 and Figure 4\u2014figure supplement 1. The comparison between promoters (C74) is clearly demonstrated, and the functional screening approach is appropriately described.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C94",
+      "C95"
+    ],
+    "result": "The authors discovered that FLP(D) can cross-react with non-cognate mFRT71 sites at very low frequency (~0.04%), which was not previously described. This cross-reactivity was never detected with hs-FLP alone, suggesting it is due to the FLP(D) structural variation, enhanced efficiency, and/or constitutive expression by enhancers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C79, C94-C95 describe the discovery of FLP(D) cross-reactivity with mFRT71 sites. The quantitative data (C75-C76) support the calculated frequency (C77), and the control experiments (C78) strengthen the interpretation. This is presented as a novel finding (C95) with appropriate caveats about the mechanism (C79).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C96",
+      "C97"
+    ],
+    "result": "The authors successfully generated spatiotemporally controlled lineage-restricted labeled CNS tumors in single stocks independent of GAL4/UAS. Tumor reproducibility was optimized using double heat-shock pulses and increased recombinase loading, with tumor size and symmetry depending on recombinase dosage and enhancer expression dynamics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C87 and C96-C97 describe the successful generation and optimization of tumor reproducibility, supported by extensive data in Figures 5 and 6. The quantitative analyses of tumor volume and asymmetry (C85-C86) provide strong evidence for the optimization strategies. The conclusions about enhancer dynamics (C96) are appropriately supported by comparative data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C88",
+      "C89"
+    ],
+    "result": "The study validates the FOFO tool for independent genetic manipulations in strictly non-overlapping domains, which is transformative for studying cell non-autonomous effects and opens up the ability to perform efficient genome-wide screening for non-autonomous effects on deleterious genotypes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C89 represent the main conclusions of the study. C88 is well-supported by the experimental demonstrations throughout the manuscript, particularly the GAL4 knockdown experiments (Figure 3) and tumor generation in single stocks. C89 is a prospective claim about future applications that is reasonable given the demonstrated capabilities, though it remains to be fully validated by actual genome-wide screens.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C7",
+      "C30",
+      "C31",
+      "C91",
+      "C92",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "The authors propose numerous prospective applications of the FOFO system, including genome-wide screens, multiplexing beyond two recombinases, applications to other tissues and organisms (zebrafish and mouse), sparse cell labeling, and using developmental delay or adult sub-lethality as screening proxies for tumor size.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C7, C30-C31, C91-C92, and C98-C111 are primarily prospective or speculative claims about future applications. While these are reasonable extrapolations based on the demonstrated capabilities of the system and cited prior work, they have not been experimentally validated in this study. Some claims (C98-C99) are based on unpublished observations. These represent promising directions but require future work for validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C8",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C22",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C46",
+      "C47",
+      "C93"
+    ],
+    "result": "The authors provide background on existing genetic tools in Drosophila and describe design principles used in constructing the FOFO system, including the use of binary systems, artificial miRs, T2A peptides, intron placement, gypsy insulators, and PhiC31-mediated transgenesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C15-C22, C36-C42, C46-C47, and C93 provide background knowledge and describe established methodologies used in the study. These are appropriately cited and represent standard practices in the field. The design principles are validated by the successful function of the FOFO system.",
+    "result_type": "MINOR"
+  }
+]

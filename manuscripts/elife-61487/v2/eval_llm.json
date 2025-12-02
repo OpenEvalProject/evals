@@ -1,0 +1,509 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C35",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "Wild-type p53 DBD binds zinc with exceptionally high affinity (KZn = 1.6 \u00d7 10\u207b\u00b9\u2075 M for isolated DBD and 0.4 \u00d7 10\u207b\u00b9\u2075 M for full-length p53), representing one of the highest zinc affinities reported for eukaryotic proteins. The monomers bind zinc independently (Hill coefficient n \u2248 1), and the isolated DBD accurately represents the full-length protein.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C35, C42-C46 are well-supported by direct experimental measurements using tyrosine fluorescence assays (Figure 2A) and comparison to literature values. The Hill coefficient near 1.0 validates independent binding, and the similar KZn values between isolated DBD and full-length p53 support the representativeness of the isolated domain.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C34",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C53",
+      "C54",
+      "C55",
+      "C63",
+      "C170",
+      "C171"
+    ],
+    "result": "Wild-type apoDBD (zinc-free) exhibits extreme thermodynamic instability at physiological temperature (\u0394Gapo = +6.9 kcal/mol at 37\u00b0C) but is stable at 10\u00b0C (\u0394Gapo = -6.3 kcal/mol). This unusual temperature dependence arises from an anomalously large heat capacity change (\u0394Cp = 7.0 kcal mol\u207b\u00b9 K\u207b\u00b9). The unfolded protein binds zinc ~10\u2077-fold more weakly than the folded protein (KZn,U = 42 nM vs KZn = 1.6 fM), and these binding sites are distinct.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C34, C47-C50, C53-C55, C63, C170-C171 are supported by temperature-dependent urea denaturation experiments (Figure 2D) and FluoZin-3 competition assays (Figure 2B). The extrapolation to 37\u00b0C using the Gibbs-Helmholtz equation is validated by agreement with previous work by Fersht and colleagues (C60-C61). However, the \u0394Cp value is substantially higher than predicted from surface area calculations (C62), which the authors acknowledge but do not fully explain.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C154",
+      "C155",
+      "C172",
+      "C192"
+    ],
+    "result": "At physiological conditions (37\u00b0C, 10\u207b\u00b9\u2070 M free zinc), wild-type p53 exists in a near-equilibrium state between folded and unfolded conformations (Fholo = 0.43), with available zinc concentration being a major determinant of folding status. This prediction is supported by immunoprecipitation experiments showing comparable PAB240 (unfolded-specific) and PAB1620 (native-specific) antibody binding in wild-type p53 cell lines.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C37, C56-C59, C154-C155, C172, C192 are supported by the thermodynamic model (Figure 3A) and validated by conformation-specific antibody experiments (Figure 10). The model's prediction that small changes in zinc concentration dramatically affect folding is consistent with the measured thermodynamic parameters. However, the cellular experiments (C155, C192) do not account for potential effects of chaperones, binding partners, or differential antibody affinities, which the authors acknowledge.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C4",
+      "C40",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C156",
+      "C176"
+    ],
+    "result": "Of the 22 most common tumorigenic p53 mutations characterized, 17 (77%) impair thermodynamic stability, zinc-binding affinity, or both. Mutations classify into distinct categories: pure zinc-binding (e.g., R175H, C176S, C242S, H179R), pure stability (e.g., Y234A, V272M, E285K), mixed phenotype (e.g., A138V, V267F, R158H, M237I), and DNA-contact (R248Q, R273H, R280K). Several zinc-binding mutations (P152L, L194F, R282Q) were identified far from the metal-binding pocket, suggesting long-range structural communication.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C40, C64-C76, C156, C176 are well-supported by comprehensive biophysical characterization (Figure 3C, Figure 3\u2014source data 1) including urea denaturation at various zinc concentrations and direct zinc-binding measurements. The classification scheme is validated by control experiments (e.g., urea-destabilized WT falls on the stability axis as predicted). DNA-binding assays (Figure 4) confirm functional consequences. The discovery of distal zinc-binding mutations (C67) is particularly significant.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "DNA-binding analysis reveals that stability and mixed mutants generally maintain similar affinity for different p53 recognition elements, while DNA-contact and most zinc-binding mutants lose measurable affinity for all tested sequences. Remetallation experiments restored DNA-binding to zinc-binding mutants (P152L, R175H, H179R, L194F), suggesting zinc misligation contributes to their loss of function. Some mutants show sequence-specific effects (e.g., P152L maintains affinity for some but not all p53REs).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C89 are supported by fluorescence anisotropy measurements with 10 different p53 recognition elements (Figure 4). The remetallation experiment (Figure 4\u2014figure supplement 1B) provides strong evidence for zinc misligation as a mechanism of dysfunction. However, the speculation about E285K's enhanced DNA binding (C89) lacks direct structural evidence. The observation of mutation-specific effects on different p53REs is well-documented but not fully explained by the thermodynamic model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C5",
+      "C41",
+      "C102",
+      "C107",
+      "C108",
+      "C111",
+      "C116",
+      "C124",
+      "C131",
+      "C135",
+      "C142",
+      "C143",
+      "C144",
+      "C165"
+    ],
+    "result": "ZMC1 treatment successfully reactivates both zinc-binding class mutants (R175H, C176S, L194F) and stability-class mutants (Y234A, V272M) in cell-based assays, as demonstrated by enhanced cell killing (EC50 = 2-10 nM), PAB240-monitored refolding, and restoration of PUMA/NOXA transcription. Notably, the stability mutant V272M shows the lowest EC50 (2 nM), demonstrating that mutations causing only thermodynamic destabilization can be rescued by increasing intracellular zinc.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C41, C102, C107-C108, C111, C116, C124, C131, C135, C142-C144, C165 are strongly supported by multiple complementary assays: cell viability (Figure 5, Table 1), immunofluorescence (Figure 6A), immunoprecipitation (Figure 6B), and RT-PCR (Figure 6C). The reactivation of stability-class mutants is a key validation of the thermodynamic model and represents a novel finding. The consistency across different assay types strengthens the conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C6",
+      "C151",
+      "C153"
+    ],
+    "result": "ZMC1 treatment inhibits tumor growth in mouse xenograft models bearing the stability-class mutant V272M but not the more severely destabilized E285K mutant, providing in vivo validation that zinc metallochaperones can reactivate certain stability-class p53 mutations in addition to zinc-binding mutations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C151, C153 are supported by xenograft experiments (Figure 9, Figure 9\u2014figure supplement 1) showing differential tumor growth inhibition. The in vivo validation of V272M reactivation is significant, though the sample sizes and statistical analysis details are not fully specified in the claims. The failure to inhibit E285K tumors is consistent with the severity of its destabilization and provides an important negative control.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C103",
+      "C109",
+      "C110",
+      "C118",
+      "C125",
+      "C132",
+      "C145",
+      "C146",
+      "C166"
+    ],
+    "result": "Several mutants fail to respond to ZMC1 treatment despite being classified as zinc-binding or stability class: P152L and R282Q (zinc-binding class) show no enhanced sensitivity, while Y234C and E285K (stability class) fail to refold or regain function. The failure of Y234C is consistent with zinc misligation to the introduced cysteine residue, while E285K's extreme instability (\u0394\u0394Gapo = -4.6 kcal/mol) prevents refolding at the zinc concentrations achieved by ZMC1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C103, C109-C110, C118, C125, C132, C145-C146, C166 are supported by cell viability assays (Table 1, Figure 5), immunofluorescence (Figure 6A), and immunoprecipitation (Figure 6B). The biophysical explanation for Y234C failure (C110) is well-supported by KZn,U measurements (C94). The E285K result highlights limitations of the approach and is consistent with the thermodynamic model. These negative results are important for defining the scope of ZMC therapy.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C167"
+    ],
+    "result": "Tyr\u2192Cys mutants (Y163C, Y205C, Y220C, Y234C) represent exceptions to the thermodynamic model: they are destabilized but their folding free energy does not increase with zinc concentration. Y234C binds zinc with near-wild-type affinity in the folded state (KZn = 1.9 fM) but the unfolded state binds zinc twice as tightly as wild-type (KZn,U = 20 nM vs 42 nM), consistent with zinc misligation to the extra cysteine. The Y234A mutant restores the predicted zinc-dependent stabilization, confirming that the cysteine causes the anomaly.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90-C97, C167 are well-supported by multiple lines of evidence: zinc-dependent stability measurements (Figure 3\u2014figure supplement 1), direct KZn measurements (C91), KZn,U measurements in urea (C94), and the Y234A rescue experiment (C95, Figure 3\u2014figure supplement 2). The mechanistic explanation of zinc misligation is compelling and consistent with all observations. This represents an important caveat to the general model and has implications for which mutants are treatable.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130"
+    ],
+    "result": "The mixed stability/zinc-binding mutant M237I shows the greatest decrease in PAB240 staining after ZMC1 treatment, indicating successful refolding, yet cells expressing M237I are insensitive to ZMC1 and the mutant fails to activate transcription of p53 target genes. This disconnect between refolding and function suggests M237I compromises p53 through an additional mechanism beyond thermodynamic instability and zinc binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C126-C130 are supported by immunofluorescence (Figure 6A), immunoprecipitation (Figure 6B), cell viability assays (Table 1), and luciferase reporter assays (Figure 6\u2014figure supplement 1). The observation is reproduced in human cancer cell lines (C128, Figure 7\u2014figure supplement 1B, 1E). This result highlights an important limitation of the thermodynamic model: structural integrity of the folded state matters beyond just achieving the folded conformation. The speculation about additional mechanisms (C129) is reasonable but not directly tested.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C147",
+      "C148",
+      "C149",
+      "C150"
+    ],
+    "result": "Lowering temperature to 22\u00b0C for 4 hours synergizes with ZMC1 to enable refolding and functional rescue of the severely destabilized E285K mutant (3.8-fold decrease in EC50), which is refractory to ZMC1 at 37\u00b0C. Similar temperature-dependent enhancement is observed for R175H (2.4-fold decrease in H1299 cells), demonstrating that temperature acts synergistically with zinc for both stability-class and zinc-binding-class mutants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C147-C150 are supported by cell viability assays at different temperatures (Figure 7A-B) and immunofluorescence (Figure 7C). The temperature-dependent rescue is consistent with the thermodynamic model's prediction that both temperature and zinc concentration determine folding. However, the clinical applicability of this approach is questionable, as the authors do not discuss feasibility of systemic hypothermia. The result is scientifically valid but of uncertain therapeutic relevance.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C157",
+      "C158",
+      "C159",
+      "C160",
+      "C161"
+    ],
+    "result": "The thermodynamic model predicts that both stability-class and zinc-binding-class mutants lose function through a common unfolding mechanism and should be similarly rescuable by increasing zinc concentration. Five of eight zinc-binding class mutants and three stability-class mutants were successfully reactivated by ZMC1 in cells. However, discrepancies between biophysical predictions and biological outcomes exist, as the energetic modeling does not account for structural effects, mislocalization, or other cellular factors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C39, C157-C161 represent the integration of biophysical and cellular data. The core prediction (C38-C39) is validated by the successful reactivation of multiple mutants from both classes. The authors appropriately acknowledge limitations (C158-C161): some mutants predicted to be rescuable are not (e.g., P152L, R282Q), likely due to structural perturbations or cellular factors not captured by the thermodynamic model. The correlation between biophysical and biological data is good but imperfect, which is honestly reported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C7",
+      "C194"
+    ],
+    "result": "Based on the frequency of rescuable mutations (R175, C176, H179, C242, G245, V272) and U.S. cancer incidence data, zinc metallochaperones have the potential to treat more than 120,000 patients annually in the United States.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C7 and C194 extrapolate from mutation frequencies and cancer incidence statistics to estimate treatable patient numbers. While the calculation is based on cited cancer incidence data (Siegel et al., 2020) and the demonstrated efficacy for specific mutants, this represents a theoretical maximum that does not account for: (1) tumor heterogeneity, (2) additional genetic alterations that might affect response, (3) pharmacokinetic/pharmacodynamic limitations of ZMC1, (4) potential resistance mechanisms mentioned in C121, or (5) the fact that some mutants in these positions may not respond (e.g., R249M vs R249S). The estimate requires clinical validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "The thermodynamic model's extrapolation to 37\u00b0C is validated by comparison with previous work by Fersht and colleagues: at 10\u00b0C, \u0394Gholo,theory (-12.3 kcal/mol) agrees well with \u0394Gholo (-10.6 kcal/mol), and at 37\u00b0C the values are nearly identical (-2.9 vs -3.0 kcal/mol). However, the measured \u0394Cp (7.0 kcal mol\u207b\u00b9 K\u207b\u00b9) is substantially higher than predicted from surface area calculations (3.8 kcal mol\u207b\u00b9 K\u207b\u00b9).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C62 provide important validation of the temperature extrapolation method. The agreement with Fersht's data at both temperatures (C60-C61) strongly supports the accuracy of the Gibbs-Helmholtz extrapolation. The discrepancy in \u0394Cp (C62) is acknowledged but not fully explained\u2014the authors tested different buffers and denaturants to rule out artifacts and found no trend in m-values suggesting non-two-state behavior. The high \u0394Cp may reflect genuine unusual properties of apoDBD, but this remains somewhat uncertain.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C134",
+      "C137",
+      "C138"
+    ],
+    "result": "Mutants P152L, E285K, M237I, and R273H show no increase in PUMA or NOXA transcription after ZMC1 treatment, consistent with their lack of functional reactivation. However, Y234C and R282Q show elevated mRNA levels for at least one target gene despite failing to show enhanced cell killing or refolding, suggesting the transcriptional increase is insufficient to induce apoptosis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C134, C137-C138 are based on RT-PCR data (Figure 6C). The correlation between transcriptional activation and cell killing is generally good, but the exceptions (Y234C, R282Q) are interesting. The interpretation that increased transcription is insufficient for apoptosis (C138) is reasonable but somewhat speculative\u2014alternative explanations include off-target effects of ZMC1 or partial reactivation insufficient for full function. The data are solid but the mechanistic interpretation has some uncertainty.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C139",
+      "C140",
+      "C141"
+    ],
+    "result": "Energy landscape modeling predicts that raising intracellular free zinc from 100 pM to 100 nM increases folded R175H from 0.0028% to 2.8%. V272M, destabilized by 2.0 kcal/mol, is predicted to achieve 2.8% refolding at only 10-20 nM free zinc (the concentration buffered by ZMC1), explaining its high sensitivity to the drug.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C139-C141 are based on calculations from the energy landscape model (Figure 3A-B). The predictions are mathematically sound given the measured thermodynamic parameters. The prediction for V272M (C141) assumes the mutation doesn't change the enthalpy of unfolding, which is reasonable for a relatively conservative substitution but not directly verified. The model's prediction is validated by V272M's exceptional ZMC1 sensitivity (EC50 = 2 nM, the lowest observed), providing strong support for the quantitative accuracy of the approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C1",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "Background claims establish that p53 is a critical tumor suppressor with unusual properties: missense mutations in the DNA-binding domain contribute to half of new cancer cases annually, the DBD has low thermodynamic stability (Tm = 32-45\u00b0C) and unfolds with a half-time of 9 minutes at 37\u00b0C, and the protein contains a zinc-binding site (C176, H179, C238, C242) whose disruption causes loss of function. R175H, the most common p53 mutation, dramatically weakens zinc binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C8-C29 represent established knowledge from the literature, supported by appropriate citations. These provide essential context for the study. The structural information (C17-C19) is based on crystal structure PDB 1TSR. The functional consequences of zinc removal (C20-C24) and the properties of R175H (C26-C28) are well-documented in previous work. These background claims are appropriately supported and provide necessary foundation for the novel findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C98",
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "Zinc metallochaperones (ZMCs) are defined as compounds that shuttle zinc from extracellular sources into cells to remetallate mutant p53. ZMC1 forms a 2:1 complex with zinc, acts as an ionophore, and buffers intracellular free zinc to 10-20 nM. Previous work showed ZMC1 is effective for zinc-binding mutants in cell culture and mouse models, but there was disagreement in the literature about which mutants are treatable, motivating the current comprehensive thermodynamic analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C33, C98-C101 provide background on ZMCs and motivation for the study. The definition of ZMCs (C30) is the authors' working definition. The properties of ZMC1 (C98-C99) and its previous efficacy (C31, C100-C101) are supported by citations to prior work. The critique of previous thermodynamic studies (C32) and disagreement in the literature (C33) appropriately motivates the need for the comprehensive approach taken in this manuscript.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "Several zinc-binding or mixed mutations (L194F, R282Q, V157F, R158H, P152L) are located far from the canonical zinc-binding pocket, suggesting long-range structural communication. Adjacent mutations can produce markedly different effects: R248Q is a DNA-contact mutant while R249S is a zinc-binding mutant, demonstrating the difficulty of inferring mechanisms from structure alone.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C79 highlight important structural insights from the biophysical characterization. The identification of distal zinc-binding mutations (C77) is supported by the classification in Figure 3C and structural analysis in Figure 1. The R248Q/R249S comparison (C78-C79) is a striking example of how adjacent residues can have completely different mechanisms of dysfunction. These observations emphasize the value of comprehensive biophysical characterization over structure-based predictions alone.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C106",
+      "C122",
+      "C123"
+    ],
+    "result": "DNA-contact mutants R273H and R280K show no increased sensitivity to ZMC1, as expected since their DNA-binding defects cannot be ameliorated by zinc. However, R280K cells appear dark (folded) by PAB240 staining while R273H stains brightly, suggesting R273H induces misfolding or aggregation in addition to loss of DNA-binding by direct contact.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C106, C122-C123 are supported by cell viability data (Table 1) and immunofluorescence (Figure 6A). The lack of ZMC1 sensitivity for DNA-contact mutants (C106) serves as an important negative control. The differential PAB240 staining between R280K and R273H (C122-C123) is an interesting observation suggesting mechanistic heterogeneity even within the DNA-contact class. The interpretation that R273H causes misfolding (C123) is reasonable but somewhat speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C112",
+      "C113",
+      "C114"
+    ],
+    "result": "Human cancer cell lines expressing p53M237I show variable responses to ZMC1: T98G cells are insensitive, SUM149PT shows partial response (viability plateaus at ~40% at 10 \u03bcM ZMC1), and BXPC3 cells expressing p53Y220C are also insensitive. This variability may reflect differences in cellular context, zinc homeostasis, or additional genetic alterations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C112-C114 are based on cell viability assays with human cancer cell lines (Figure 7\u2014figure supplement 1B). The variable response of M237I-expressing lines is consistent with the disconnect between refolding and function observed in transfected cells. The insensitivity of Y220C (C114) is consistent with it being a Tyr\u2192Cys mutant prone to zinc misligation. However, the authors do not fully investigate the basis for the cell line-specific differences, which could reflect genetic background, zinc homeostasis differences, or other factors.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C117",
+      "C136"
+    ],
+    "result": "The human cancer cell line T47D bearing endogenous p53L194F mutation shows refolding after ZMC1 treatment (reduced PAB240 and increased PAB1620 staining) and induction of p53 target genes CDKN1A and PUMA, demonstrating that ZMC1 can reactivate mutant p53 in a native tumor cell context.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C117 and C136 provide important validation in an endogenous tumor cell line context (Figure 7\u2014figure supplement 1C, 1E). The refolding and transcriptional activation in T47D cells supports the therapeutic relevance of the findings beyond transfected cell systems. However, the authors do not show tumor growth inhibition or apoptosis induction in this cell line, which would strengthen the translational implications.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C133"
+    ],
+    "result": "The temperature-sensitive mutant A138V, used as a positive control, shows a 2-fold decrease in PAB240 pull-down after ZMC1 treatment, confirming that the immunoprecipitation assay can detect ZMC1-induced refolding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C133 is supported by immunoprecipitation data (Figure 6\u2014figure supplement 2). A138V is an appropriate positive control as it is a well-characterized temperature-sensitive mutant. The 2-fold decrease validates the IP assay's ability to detect refolding, though the magnitude is modest compared to some other mutants. This control strengthens confidence in the IP results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C162",
+      "C163",
+      "C164"
+    ],
+    "result": "Comparison to alternative therapeutic approaches: PhiKan and similar compounds bind to the Y220C cavity with weak affinity (Kd = 1-100 \u03bcM) and are specific to a single mutant, offering bio-orthogonality but limited scope. In contrast, zinc-induced stabilization leverages p53's existing high-affinity zinc site (KZn ~ 10\u207b\u00b9\u2075 M) and can in principle refold any stability-class mutant, but lacks bio-orthogonality.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C162-C164 provide context by comparing ZMC therapy to small-molecule stabilizers like PhiKan. The characterization of PhiKan's properties (C162-C163) is based on cited literature. The comparison (C164) accurately captures the trade-offs: ZMCs have broader applicability but may affect other zinc-dependent processes, while cavity-binding drugs are more specific but limited to particular mutants. This is a fair assessment of the relative advantages and limitations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C173",
+      "C174",
+      "C175",
+      "C177"
+    ],
+    "result": "The near-zero folding free energy of wild-type p53 at physiological conditions may explain why missense mutations at nearly every codon position in DBD are associated with cancer: most amino acid substitutions decrease folding free energy, and p53's marginal stability makes it particularly vulnerable to destabilization. DNA-contact mutants can be reliably identified from crystal structure inspection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C173-C175, C177 provide evolutionary and mechanistic context for p53's unusual mutational spectrum. The explanation (C173) is a reasonable inference from the thermodynamic data, though it remains somewhat speculative. The general principle that substitutions usually decrease stability (C174-C175) is well-established and supported by citation. The observation that DNA-contact mutants are structurally obvious (C177) is validated by the data in Figure 1 and Figure 3C.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C178",
+      "C179",
+      "C180",
+      "C181",
+      "C182",
+      "C183",
+      "C184",
+      "C191",
+      "C193"
+    ],
+    "result": "Speculation on biological significance: p53's unusual combination of high instability and zinc affinity may constitute a built-in failsafe mechanism or enable conformational regulation through zinc levels. Previous work showed that fresh medium, metal chelators, and oxidative agents can induce conformational changes in p53, and oxidative stress increases free zinc by oxidizing metallothioneins. The authors speculate that physiologic zinc fluctuations could modulate p53 function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C178-C179, C180-C184, C191, C193 are largely speculative about the evolutionary rationale and regulatory implications of p53's zinc-dependent folding. The prior observations (C180-C183) are well-documented and cited. However, the speculation that this represents a regulatory mechanism (C179, C184, C191, C193) lacks direct experimental support. The authors appropriately present these as hypotheses rather than conclusions, but they remain untested. The ideas are plausible and interesting but require future work to validate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C185",
+      "C186",
+      "C187",
+      "C188",
+      "C189",
+      "C190"
+    ],
+    "result": "Context on zinc biology: ~10% of human proteins bind zinc, cytosolic free zinc is in the picomolar range while total cellular zinc is in the hundreds of micromolar, and many proteins are functionally regulated by zinc. Although p53's measured KZn is extremely low (1.6 fM), the effective KZn at 37\u00b0C (KZn,eff \u2248 KZn \u00d7 Kapo) is orders of magnitude higher due to apoDBD instability, bringing it into a range where physiologic zinc fluctuations could modulate binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C185-C190 provide important context on zinc biology and explain how p53's effective zinc affinity at physiological temperature differs from the measured value at 10\u00b0C. The background information (C185-C188) is well-established and appropriately cited. The concept of effective KZn (C189-C190) is a useful insight that reconciles p53's femtomolar measured affinity with the possibility of physiological regulation. The calculation is sound and helps explain how p53 could be zinc-regulated despite its extremely high affinity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C104",
+      "C105",
+      "C119",
+      "C120",
+      "C121"
+    ],
+    "result": "Several zinc-binding mutants fail to respond to ZMC1 despite impaired zinc affinity: Hs700T cells (p53R249M) were not sensitive to ZMC1 and the mutant did not refold. Possible explanations include structural distortion of the DNA-binding groove (for R249 mutants adjacent to DNA-contact residue R248), misfolding/aggregation to conformations not amenable to zinc binding, or resistance mechanisms such as overexpression of metallothioneins or zinc exporters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C104-C105, C119-C121 address failures of zinc-binding mutants to respond to ZMC1. The observations (C104, C119) are supported by cited previous work. However, the explanations (C105, C120-C121) are speculative and not directly tested. The structural explanation for R249 mutants (C105) is plausible given proximity to R248, but no structural data are provided. The speculation about misfolding/aggregation (C120) and resistance mechanisms (C121) are reasonable hypotheses but lack experimental support. These represent important limitations that require future investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R29",
+    "claim_ids": [
+      "C169"
+    ],
+    "result": "The authors conclude that the discovery that ZMCs can reactivate mutants beyond the zinc-deficient class is a significant finding, expanding the potential therapeutic scope of zinc metallochaperone therapy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C169 is the authors' assessment of their work's significance. This evaluation is well-supported by the data showing successful reactivation of stability-class mutants (V272M, Y234A) in cells and in vivo (V272M). The expansion from zinc-binding mutants alone to include stability mutants significantly increases the number of potentially treatable patients, as reflected in the patient number estimates (C7, C194). This represents a genuine advance in understanding which p53 mutants might be therapeutically targetable.",
+    "result_type": "MINOR"
+  }
+]

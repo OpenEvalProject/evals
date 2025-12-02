@@ -1,0 +1,1334 @@
+{
+  "submission": {
+    "id": "65f22f33-0276-45e9-a9ec-81bee997fb6e",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T20:21:12.285681Z",
+    "updated_at": "2025-12-02T20:21:12.285681Z"
+  },
+  "content": [
+    {
+      "id": "8e697034-124f-400c-ab2f-f50ae4f79846",
+      "submission_id": "65f22f33-0276-45e9-a9ec-81bee997fb6e",
+      "content_type": "manuscript",
+      "content_text": "# Patient-specific genomics and cross-species functional analysis implicate LRP2 in hypoplastic left heart syndrome\n\n## Authors\n\n- Jeanne L Theis<sup>1</sup>\n- Georg Vogler<sup>2</sup> ([ORCID: 0000-0002-8303-3531](https://orcid.org/0000-0002-8303-3531))\n- Maria A Missinato<sup>2</sup> ([ORCID: 0000-0001-9055-758X](https://orcid.org/0000-0001-9055-758X))\n- Xing Li<sup>3</sup>\n- Tanja Nielsen<sup>2</sup>\n- Xin-Xin I Zeng<sup>2</sup> ([ORCID: 0000-0002-2707-7759](https://orcid.org/0000-0002-2707-7759))\n- Almudena Martinez-Fernandez<sup>5</sup>\n- Stanley M Walls<sup>2</sup>\n- Ana\u00efs Kervadec<sup>2</sup>\n- James N Kezos<sup>2</sup>\n- Katja Birker<sup>2</sup>\n- Jared M Evans<sup>3</sup>\n- Megan M O'Byrne<sup>3</sup>\n- Zachary C Fogarty<sup>3</sup> ([ORCID: 0000-0001-5588-3216](https://orcid.org/0000-0001-5588-3216))\n- Andr\u00e9 Terzic<sup>5</sup>\n- Paul Grossfeld<sup>9</sup>\n- Karen Ocorr<sup>2</sup>\n- Timothy J Nelson<sup>6</sup> \u2020\n- Timothy M Olson<sup>5</sup> \u2020\n- Alexandre R Colas<sup>2</sup>\n- Rolf Bodmer<sup>2</sup> ([ORCID: 0000-0001-9087-1210](https://orcid.org/0000-0001-9087-1210)) \u2020\n\n### Affiliations\n\n1. Cardiovascular Genetics Research Laboratory Rochester United States\n2. Development, Aging and Regeneration, Sanford Burnham Prebys Medical Discovery Institute La Jolla United States\n3. Division of Biomedical Statistics and Informatics, Mayo Clinic Rochester United States\n4. Doctoral Degrees and Habilitations, Department of Biology, Chemistry, and Pharmacy, Freie Universit\u00e4t Berlin Berlin Germany\n5. Department of Cardiovascular Medicine, Mayo Clinic Rochester United States\n6. Department of Molecular and Pharmacology and Experimental Therapeutics, Mayo Clinic La Jolla United States\n7. Center for Regenerative Medicine, Mayo Clinic Rochester United States\n8. Division of Pediatric Cardiology, Department of Pediatric and Adolescent Medicine, Mayo Clinic Rochester United States\n9. University of California San Diego, Rady\u2019s Hospital San Diego United States\n10. Division of General Internal Medicine, Mayo Clinic Rochester United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nCongenital heart diseases (CHDs), including hypoplastic left heart syndrome (HLHS), are genetically complex and poorly understood. Here, a multidisciplinary platform was established to functionally evaluate novel CHD gene candidates, based on whole-genome and iPSC RNA sequencing of a HLHS family-trio. Filtering for rare variants and altered expression in proband iPSCs prioritized 10 candidates. siRNA/RNAi-mediated knockdown in healthy human iPSC-derived cardiomyocytes (hiPSC-CM) and in developing Drosophila and zebrafish hearts revealed that LDL receptor-related protein LRP2 is required for cardiomyocyte proliferation and differentiation. Consistent with hypoplastic heart defects, compared to parents the proband\u2019s iPSC-CMs exhibited reduced proliferation. Interestingly, rare, predicted-damaging LRP2 variants were enriched in a HLHS cohort; however, understanding their contribution to HLHS requires further investigation. Collectively, we have established a multi-species high-throughput platform to rapidly evaluate candidate genes and their interactions during heart development, which are crucial first steps toward deciphering oligogenic underpinnings of CHDs, including hypoplastic left hearts.\n\n## Introduction\n\nHypoplastic left heart syndrome (HLHS) is a congenital heart disease (CHD) characterized by underdevelopment of the left ventricle, mitral and aortic valves, and aortic arch. Variable phenotypic manifestations and familial inheritance patterns, together with the numerous studies linking it to a diverse array of genes, suggest that HLHS is genetically heterogeneous and may have significant environmental contributors (Elliott et al., 2003; Iascone et al., 2012; Theis et al., 2015a; Theis et al., 2015b). In this scenario, synergistic combinations of filtering and validating approaches are necessary to prioritize candidate genes and gene variants that may affect cardiogenic pathways throughout the dynamic process of human heart development.\n\nAlthough the cellular mechanisms for HLHS remain poorly characterized, a recent study reported generation of the first animal model of HLHS. Based on a digenic mechanism, mice deficient for HDAC-associated protein-encoding Sap130 and protocadherin-coding Pcdha9 exhibited left ventricular (LV) hypoplasia that was likely due \u2013 at least in part \u2013 to defective cardiomyocyte proliferation and differentiation, and increased cell death (Liu et al., 2017). Similarly in humans, Gaber et al., 2013 provide evidence that HLHS-LV samples have more DNA damage and senescence with cell cycle arrest, and fewer cardiac progenitors and myocytes than controls. These observations suggest that impaired cardiomyocyte proliferation could be a mechanism contributing to HLHS pathogenesis, although pathogenic genes controlling this process in humans remain to be identified and validated. Therefore, new synergistic experimental approaches are needed to functionally evaluate gene candidates potentially involved in defective cardiogenesis to serve as a platform for probing the postulated oligogenic basis of CHDs, such as HLHS (Hinton et al., 2007; McBride et al., 2005).\n\nOver the last decade, induced pluripotent stem cells (iPSCs) have provided a revolutionary experimental tool to reveal aspects of the cellular manifestations associated with disease pathogenesis (Matsa et al., 2016; Mercola et al., 2013; Moretti et al., 2013). Progress in next-generation sequencing technology allows rapid whole-genome DNA and RNA sequencing, thereby providing access to high-resolution and personalized genetic information. However, the interpretation of patient-specific sequence variants is often challenged by uncertainty in establishing a pathogenic link between biologically relevant variant(s) and a complex disease (Cooper and Shendure, 2011).\n\nTesting numerous potential human disease-susceptibility genes in a mammalian in vivo model has been challenging because of high costs and low throughput. Drosophila with its genetic tools has emerged as the low cost, high-throughput model of choice for human candidate disease gene testing, including neurological and cardiac diseases\u00a0(Fink et al., 2009; Ocorr et al., 2014; \u015eent\u00fcrk and Bellen, 2018; Schroeder et al., 2019; Vissers et al., 2020; van der Harst et al., 2016). Drosophila has been established as an efficient model system to identify key genes and mechanisms critical for heart development and function that served as prototypes for vertebrate/mammalian studies, including in zebrafish and mice, due to high degree of conservation of genetic pathways and reduced genetic complexity (Bodmer and Frasch, 2010), e.g. the first cardiogenic transcription factor Nkx2-5/tinman, discovered in Drosophila (Azpiazu and Frasch, 1993; Bodmer, 1993), marked the beginning of a molecular-genetic understanding of cardiac specification (Bodmer, 1995; Cripps and Olson, 2002; Benson et al., 1999; Cordes and Srivastava, 2009; Qian and Srivastava, 2013; Kathiriya et al., 2015; Fahed et al., 2013).\n\nFor this study, we combined whole-genome sequencing (WGS), iPSC technology and model system validation with a family-based approach to identify and characterize novel HLHS-associated candidate genes and postulate potential mechanisms involved. This approach led us to identify LRP2 as a major regulator of cardiac cardiomyocyte proliferation of hiPSCs and heart development and maturation in both Drosophila and zebrafish. Consistent with our model system findings, burden analysis revealed that rare and predicted deleterious missense LRP2 variants were enriched in HLHS patients as compared to healthy controls. Finally, we found evidence consistent with LRP2 regulating cardiac proliferation and differentiation by potentially modulating growth-associated WNT, SHH, and TP53 pathways. Importantly, our integrated multidisciplinary high-throughput approach establishes a scalable and synergistic gene discovery platform to investigate potential oligogenic participants in genetically complex forms of human heart diseases.\n\n## Results\n\n### Transcriptome and cell cycle activity are altered in HLHS patient-derived iPSCs and CMs\n\nThis study analyzed a family comprised of unrelated parents and their three offspring (\u20185H\u2019 family; Figure 1A). The male proband (II.3) was diagnosed with non-syndromic HLHS by physical examination and echocardiography, which demonstrated aortic and mitral valve atresia, virtual absence of the left ventricular cavity, and severe aortic arch hypoplasia. He was born prematurely at 29 weeks gestation and underwent staged surgical palliation at 2 and 11 months of age. Conversion to a fenestrated Fontan circulation at 3 years of age failed owing to systolic and diastolic heart failure, necessitating early take-down. The patient subsequently died of multi-organ system failure. Echocardiography revealed structurally and functionally normal hearts in the proband\u2019s mother (I.2), father (I.1) and siblings (II.1 and II.2). Maternal history is notable for four miscarriages.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/59554/elife-59554-fig1-v3.jpg)\n\n**Figure 1.:** (A) Pedigree of family 5H: proband with HLHS (black symbol), relatives without CHD (white symbols), miscarriages (gray diamonds). (B) Schematic for family-based iPSC production and characterization. (C) Whole-genome RNA sequencing identified 1401 concordantly DETs between proband and parents. (D) KEGG pathway analysis shows enrichment of DETs in TP53 pathway. (E) Heatmap of p53 signaling pathway-associated genes in probands vs parents. (F) Schematic describing EdU-incorporation assay in hiPSC-CMs. 5000 cells/well were plated in 384 well plates. After 48 hr EdU was added to the media and left incorporate for 24 hr. Cells were then fixed and stained (G) Graph representing quantification of EdU+ cardiomyocytes in HLHS 5H family-derived iPSC-CMs. ***p<0.001 one-way ANOVA. (H) Representative images of iPSC-CMs derived from mother (Top) and proband (Bottom), stained for EdU, ACTN1 and DAPI. Scale bar: 50 \u00b5m. (I) Quantification of EdU-incorporation assay in 5H proband iPSC-CM upon KD of TP53 or CDKN1A. ****p<0.0001, one-way ANOVA. (J) Representative images of 5H proband iPSC-CM stained for EdU and ACTN1 upon KD of TP53 or CDKN1A at day 28. Scale bar: 50 \u00b5m.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/59554/elife-59554-fig1-figsupp1-v3.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) Heatmap of negative regulation of cell proliferation-associated genes from RNA-seq experiments in proband vs parents. (B) Heatmap of cell cycle arrest-associated genes. (C) Heatmap of positive regulation of apoptosis-associated genes.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/59554/elife-59554-fig1-figsupp2-v3.jpg)\n\n**Figure 1\u2014figure supplement 2.:** (A) Quantification of percentage of EdU+ cells in 75H and 151H iPSCs. Proband iPSCs show reduced EdU incorporation compared to the parents. **p<0.01, ****p<0.0001 in 75H family. ##p<0.01 in the151H family. One-way ANOVA. (B) Representative images of 75H family iPSCs labeled for EdU and DAPI. Of note, the yield of patient-derived iPSC was relatively low. Scale bar: 50 \u00b5m.\n\nPatient-derived iPSCs are a valuable tool to investigate heart defects, such as those observed in HLHS (Theis et al., 2015a; Hrstka et al., 2017). In this study, iPSCs from the mother (I.2), father (I.1) and HLHS proband (II.3) were generated (Takahashi and Yamanaka, 2006) to investigate differences in transcriptional profiles potentially associated with HLHS. Cells from the proband-parent trio were differentiated to day 25 (d25), using a cardiogenic differentiation protocol and processed for subsequent RNA sequencing (Figure 1B). In this in vitro cellular context, bioinformatic analysis revealed 5104 differentially expressed transcripts (DETs) in d25 differentiated samples between proband vs. mother/father (Supplementary file 1, Benjamini-corrected p<0.001). We found that 1,401 DETs were concordantly differentially expressed between proband and both parents (Figure 1C, Figure 1\u2014figure supplement 1, Supplementary files 1, 2). Consistent with previous observations in HLHS fetuses (Gaber et al., 2013), KEGG analysis revealed TP53 pathway enrichment (Figure 1D), including cell cycle inhibition (Figure 1E and Figure 1\u2014figure supplement 1), consistent with cell proliferation being affected in proband cells.\n\nTo begin exploring this hypothesis, we measured cell cycle activity in proband and parent hiPSC-derived cardiomyocytes (hiPSC-CMs) using an EdU-incorporation assay (Figure 1F). Indeed, proband hiPSC-CMs exhibited reduced percentage of EdU-positive cells as compared to parents (Figure 1G,H). To further evaluate whether a potentially reduced proliferative activity is a more general phenotypic hallmark of HLHS cells, we evaluated the proliferative status of two additional HLHS family trios that were available to us from the HLHS cohort at Mayo Clinic (\u201875H\u2019, \u2018151H\u2019). Consistent with our findings with 5H family-trio cells (Figure 1G,H), the proband cells of families 75H and 151H also exhibited significant reduction of proliferative activity as compared to the parents using the EdU-incorporation assay (Figure 1\u2014figure supplement 2). Given the upregulation of potent cell cycle inhibitors TP53 or CDKN1A in 5H proband cells (Figure 1E), we tested whether impaired proliferation could involve the observed elevated TP53 and/or CDKN1A mRNA levels. Indeed, siRNA-mediated knockdown (KD) of TP53 and CDKN1A in proband hiPSC-CMs significantly increased EdU incorporation as compared to siControl (Figure 1I,J). These findings are consistent with a CM proliferation defect observed in both HLHS fetuses (Gaber et al., 2013) and a HLHS mouse model (Liu et al., 2017).\n\n### Family-based WGS, variant filtering, and transcriptional profiling identified 10 candidates\n\nArray comparative genome hybridization ruled out a chromosomal deletion or duplication in the proband. WGS was carried out on genomic DNA samples from all five family members, based on 101 base paired-end reads that passed quality control standards; 92% of the reads mapped to the genome. After marking and filtering out duplicate reads, over 99% of the hg19 human reference genome had coverage. The average depth across the genome was 36X and an average of 91% of the gene body regions (exons, introns, and 5\u2019 and 3\u2019 untranslated regions) demonstrated a minimal read depth of 20 reads. WGS was performed to identify potentially pathogenic coding or regulatory single nucleotide variants (SNVs) or insertion/deletions (INDELs). First, we ruled out pathogenic variants within 42 genes comprising a CHD genetic testing panel (Invitae, San Francisco, CA). To identify novel HLHS candidate genes, WGS of the family quintet was filtered for rare de novo, recessive and loss-of-function variants with predicted impact on protein structure or expression, yielding 114 variants in 61 genes (Figure 2, Figure 2\u2014figure supplement 1,, Supplementary file 3). We next prioritized genes most likely to drive downstream pathways of dysregulated cardiogenesis in the HLHS proband by cross-referencing these candidate genes with 3,816 DETs identified in undifferentiated iPSC at d0 (Supplementary file 4) and 5,104 DETs identified at d25 differentiated cell lineages (Supplementary file 1). Ten genes harboring compound heterozygous (7), hemizygous (2), or homozygous (1) recessive variants (Table 1), absent in the unaffected siblings, were found to be differentially expressed within the HLHS proband\u2019s iPSCs at d0 and d25: HSPG2, APOB, LRP2, PRTG, SLC9A1, SDHD, JPT1, ELF4, HS6ST2, and SIK1 (Figure 2A). qPCR confirmed reduced expression of these genes in proband in d25 iPSC-CM, compared to the parental cells (Figure 2\u2014figure supplement 2). In order to explore if and how these genes could affect cardiac differentiation and/or function, alone or in combination, we employed an integrated gene discovery platform using multiple genetic model systems (see below). We consider this approach an efficient first pass evaluation of the potential roles of these genes in the heart; roles that need to be further substantiated by validation of patient-specific variants, also in a combinatorial fashion, based on the oligogenic hypothesis of CHDs.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/59554/elife-59554-fig2-v3.jpg)\n\n**Figure 2.:** (A) An iterative, family-based variant filtering approach based on rarity, functional impact, and mode of inheritance and RNA sequencing data were used to filter for transcriptional differences yielding 10 candidate genes. Candidate genes were further tested in hiPSC-CM and in vivo model. (B) Human candidate genes and corresponding Drosophila ortholog as determined by DIOPT score (*confidence score: number of databases reporting orthology). Listed are heart phenotypes upon gene candidate KD. (C,D) Example of fly hearts heterozygous for LRP2/mgl show increased end-diastolic diameters (EDD, measured at green line in D). Wilcoxon rank sum test: ***p<0.001. (E) Graph representing EdU-incorporation assay results of candidate gene KD in hiPSC-CM. KD of APOB (red bar) or LRP2 (green bar) reduced EdU incorporation. **p<0.01 one-way ANOVA. (F) Representative images of hiPSC-CMs stained for EdU, ACTN1 and DAPI. Scale bar: 50 \u00b5m. (G) qPCR results of TP53 and CDKN1A in hiPSC-CM upon KD of APOB or LRP2. *p<0.05 one-way ANOVA.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/59554/elife-59554-fig2-figsupp1-v3.jpg)\n\n**Figure 2\u2014figure supplement 1.:** An iterative, family-based variant filtering approach based on rarity, functional impact, and mode of inheritance yielded 61 candidate genes. RNA sequencing data from d0 iPSC and d25 differentiated iPSC were used to filter for transcriptional differences yielding ten candidate genes.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/59554/elife-59554-fig2-figsupp2-v3.jpg)\n\n**Figure 2\u2014figure supplement 2.:** qPCR of the 10 candidate genes in the \u20185H-family\u2019 iPSC-CMs at day 25 of differentiation. Proband cells show downregulation of all 10 candidate genes compared to the mother\u2019s cells (*) and 7/10 compared to the father\u2019s cells (#). Data are normalized to the cells derived from the mother. ***p<0.001; ****p<0.0001; ##p<0.01; ####p<0.0001; n.s.: not significant. One-way ANOVA.\n\n![Figure 2\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/59554/elife-59554-fig2-figsupp3-v3.jpg)\n\n**Figure 2\u2014figure supplement 3.:** (A) Schematic of the Drosophila adult heart assay. (B) Human candidate genes and corresponding Drosophila ortholog as determined by DIOPT score (*confidence score: number of databases reporting orthology). Listed are heart phenotypes upon knockdown (KD) in wild-type or NKX2-5/tin+/-heterozygous background. (C\u2013E) RNAi-induced arrhythmicity and M-modes observed with LRP2/mgl and APOB/apolpp KD. (F\u2013H) Heart size (EDD: end-diastolic diameter) alterations upon RNAi-KD of JPT1, HSPG2 and SDHD (also in NKX2-5/tin heterozygous background). Wilcoxon rank sum test: *p<0.05, **p<0.01, **p<0.001.\n\n![Figure 2\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/59554/elife-59554-fig2-figsupp4-v3.jpg)\n\n**Figure 2\u2014figure supplement 4.:** (A) qPCR showing KD efficiency for the 10 candidate genes in day 28 hiPSC-CM. For all the 10 genes tested, siRNAs KD efficiency is about 50%. *p<0.05, **p<0.01, ***p<0.001, ****p<0.0001, Student\u2019s t-test. (B) Quantification of total nuclei in day 28 hiPSC-CMs transfected with siRNAs directed to ten candidate HLHS genes. LRP2 and APOB KD reduce total cells number. (C) qPCR of tumor suppressors/cell cycle inhibitor genes in day 28 hiPSC-CMs upon KD of LRP2 or APOB. Tumor suppressors/cell cycle inhibitors are upregulated upon LRP2/APOB KD compared to control. *p<0.05, Student\u2019s t-test. (D) qPCR of cell cycle genes in day 28 hiPSC-CMs upon KD of APOB or LRP2. Cell cycle genes are downregulated upon LRP2/APOB KD. *p<0.05, Student\u2019s t-test.\n\n**Table 1.**\n Recessive Variants Identified in 10 Candidate Genes.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Gene</th>\n      <th>Mode of inheritance</th>\n      <th>Functional impact</th>\n      <th>Transcript variant</th>\n      <th>Protein variant</th>\n      <th>Inheritance</th>\n      <th>Genotype in brother (II.1)</th>\n      <th>Genotype in sister (II.2)</th>\n      <th>gnomAD* MAF (%)</th>\n      <th>dbSNP ID</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td rowspan=\"3\">HSPG2</td>\n      <td rowspan=\"3\">Cmpd Het</td>\n      <td>missense</td>\n      <td>c.2074G\u00a0&gt;\u00a0A; c.2077G\u00a0&gt;\u00a0A</td>\n      <td>p.V692M; p.V693M</td>\n      <td>Maternal</td>\n      <td>WT</td>\n      <td>WT</td>\n      <td>0.288</td>\n      <td>143669458</td>\n    </tr>\n    <tr>\n      <td>missense</td>\n      <td>c.326G\u00a0&gt;\u00a0A</td>\n      <td>p.R109Q</td>\n      <td>Paternal</td>\n      <td>Het</td>\n      <td>Het</td>\n      <td>0</td>\n      <td>773796176</td>\n    </tr>\n    <tr>\n      <td>promoter</td>\n      <td>c.-227C\u00a0&gt;\u00a0A</td>\n      <td></td>\n      <td>Paternal</td>\n      <td>WT</td>\n      <td>WT</td>\n      <td>1.392</td>\n      <td>566166086</td>\n    </tr>\n    <tr>\n      <td rowspan=\"5\">SLC9A1</td>\n      <td rowspan=\"5\">Cmpd Het</td>\n      <td>promoter</td>\n      <td>c.-906T\u00a0&gt;\u00a0C</td>\n      <td></td>\n      <td>Paternal</td>\n      <td>Het</td>\n      <td>Het</td>\n      <td>1.227</td>\n      <td>114101904</td>\n    </tr>\n    <tr>\n      <td>promoter</td>\n      <td>c.-947T\u00a0&gt;\u00a0G</td>\n      <td></td>\n      <td>Maternal</td>\n      <td>WT</td>\n      <td>WT</td>\n      <td>27.175</td>\n      <td>11588974</td>\n    </tr>\n    <tr>\n      <td>promoter</td>\n      <td>c.-1085A\u00a0&gt;\u00a0G</td>\n      <td></td>\n      <td>Paternal</td>\n      <td>Het</td>\n      <td>Het</td>\n      <td>0.841</td>\n      <td>116299278</td>\n    </tr>\n    <tr>\n      <td>ENCODE TFBS</td>\n      <td>c.-1138C\u00a0&gt;\u00a0T</td>\n      <td></td>\n      <td>Paternal</td>\n      <td>Het</td>\n      <td>Het</td>\n      <td>0.93</td>\n      <td>75089536</td>\n    </tr>\n    <tr>\n      <td>promoter</td>\n      <td>c.-1311G\u00a0&gt;\u00a0A</td>\n      <td></td>\n      <td>Paternal</td>\n      <td>Het</td>\n      <td>Het</td>\n      <td>0.93</td>\n      <td>77414471</td>\n    </tr>\n    <tr>\n      <td rowspan=\"2\">APOB</td>\n      <td rowspan=\"2\">Cmpd Het</td>\n      <td>missense</td>\n      <td>c.13441G\u00a0&gt;\u00a0A</td>\n      <td>p.A4481T</td>\n      <td>Maternal</td>\n      <td>WT</td>\n      <td>Het</td>\n      <td>2.475</td>\n      <td>1801695</td>\n    </tr>\n    <tr>\n      <td>missense</td>\n      <td>c.751G\u00a0&gt;\u00a0A</td>\n      <td>p.A251T</td>\n      <td>Paternal</td>\n      <td>Het</td>\n      <td>WT</td>\n      <td>0.071</td>\n      <td>61741625</td>\n    </tr>\n    <tr>\n      <td rowspan=\"2\">LRP2</td>\n      <td rowspan=\"2\">Cmpd Het</td>\n      <td>missense</td>\n      <td>c.9613A\u00a0&gt;\u00a0G</td>\n      <td>p.N3205D</td>\n      <td>Maternal</td>\n      <td>WT</td>\n      <td>WT</td>\n      <td>0.407</td>\n      <td>35734447</td>\n    </tr>\n    <tr>\n      <td>missense</td>\n      <td>c.170C\u00a0&gt;\u00a0T</td>\n      <td>p.A57V</td>\n      <td>Paternal</td>\n      <td>WT</td>\n      <td>WT</td>\n      <td>0.032</td>\n      <td>115350461</td>\n    </tr>\n    <tr>\n      <td rowspan=\"3\">SDHD</td>\n      <td rowspan=\"3\">Cmpd Het</td>\n      <td>promoter</td>\n      <td>c.-815G\u00a0&gt;\u00a0C; c.129+547C\u00a0&gt;\u00a0G</td>\n      <td></td>\n      <td>Maternal</td>\n      <td>Het</td>\n      <td>WT</td>\n      <td>0.573</td>\n      <td>117661257</td>\n    </tr>\n    <tr>\n      <td>ENCODE TFBS</td>\n      <td>c.-205G\u00a0&gt;\u00a0A; c.66C\u00a0&gt;\u00a0T</td>\n      <td>p.A22A</td>\n      <td>Paternal</td>\n      <td>WT</td>\n      <td>WT</td>\n      <td>0.241</td>\n      <td>61734353</td>\n    </tr>\n    <tr>\n      <td>missense</td>\n      <td>c.34G\u00a0&gt;\u00a0A; c.-173C\u00a0&gt;\u00a0T</td>\n      <td>p.G12S</td>\n      <td>Maternal</td>\n      <td>Het</td>\n      <td>WT</td>\n      <td>0.729</td>\n      <td>34677591</td>\n    </tr>\n    <tr>\n      <td rowspan=\"2\">PRTG</td>\n      <td rowspan=\"2\">Cmpd Het</td>\n      <td>microRNA Binding Site</td>\n      <td>c.*3501T\u00a0&gt;\u00a0G</td>\n      <td></td>\n      <td>Paternal</td>\n      <td>Het</td>\n      <td>WT</td>\n      <td>0.739</td>\n      <td>77181316</td>\n    </tr>\n    <tr>\n      <td>microRNA Binding Site</td>\n      <td>c.*2678A\u00a0&gt;\u00a0G</td>\n      <td></td>\n      <td>Maternal</td>\n      <td>WT</td>\n      <td>Het</td>\n      <td>0.019</td>\n      <td>756136447</td>\n    </tr>\n    <tr>\n      <td rowspan=\"2\">HN1</td>\n      <td rowspan=\"2\">Cmpd Het</td>\n      <td>ENCODE TFBS</td>\n      <td>c.56+617C\u00a0&gt;\u00a0T; c.-903C\u00a0&gt;\u00a0T; c.-178+617C\u00a0&gt;\u00a0T; c.-590C\u00a0&gt;\u00a0T</td>\n      <td></td>\n      <td>Maternal</td>\n      <td>Het</td>\n      <td>WT</td>\n      <td>3.764</td>\n      <td>117213586</td>\n    </tr>\n    <tr>\n      <td>promoter</td>\n      <td>c.-1748A\u00a0&gt;\u00a0C; c.-719A\u00a0&gt;\u00a0C; c.-486A\u00a0&gt;\u00a0C</td>\n      <td></td>\n      <td>Paternal</td>\n      <td>WT</td>\n      <td>Het</td>\n      <td>0.816</td>\n      <td>73995795</td>\n    </tr>\n    <tr>\n      <td>SIK1</td>\n      <td>Hom Rec</td>\n      <td>missense</td>\n      <td>c.2087C\u00a0&gt;\u00a0T</td>\n      <td>p.P696L</td>\n      <td>Maternal and Paternal</td>\n      <td>WT</td>\n      <td>Het</td>\n      <td></td>\n      <td>1256991707</td>\n    </tr>\n    <tr>\n      <td>ELF4</td>\n      <td>X-Linked</td>\n      <td>missense</td>\n      <td>c.1144G\u00a0&gt;\u00a0A</td>\n      <td>p.V382I</td>\n      <td>Maternal</td>\n      <td>WT</td>\n      <td>Het</td>\n      <td>0.025</td>\n      <td>148953158</td>\n    </tr>\n    <tr>\n      <td>HS6ST2</td>\n      <td>X-Linked</td>\n      <td>missense</td>\n      <td>c.948\u201340041G\u00a0&gt;\u00a0A; c.1046G\u00a0&gt;\u00a0A</td>\n      <td>p.R349Q</td>\n      <td>Maternal</td>\n      <td>WT</td>\n      <td>Het</td>\n      <td>0.146</td>\n      <td>201239951</td>\n    </tr>\n  </tbody>\n</table>\n\n_Cmpd Het, compound heterozygous; Het, heterozygous; Hom Rec, homozygous recessive; MAF, minor allele frequency; WT, wild- type.*At study initiation the ESP database was used to set the 3% allele frequency filter. Updated frequencies are shown based on the newer gnomAD database curation which would now eliminate SLC9A1 and HN1 as candidate genes._\n\n### Knockdown of candidate gene orthologs in Drosophila heart\n\nIn order to determine whether these variants occurred within genes that could be important for cardiac differentiation in vivo, we took advantage of our established Drosophila heart development model and functional analysis tools (Figure 2\u2014figure supplement 3; Ocorr et al., 2014). We hypothesized that genes critical for the Drosophila heart have conserved roles, also in humans, as previously observed (Bodmer, 1995; Cripps and Olson, 2002; Qian et al., 2011). Predicted by DIOPT database (Hu et al., 2011) to have orthologs in Drosophila (Figure 2B), we analyzed nine genes using heart-specific RNAi-KD. By in vivo heart structure and function analysis (Fink et al., 2009; Ocorr et al., 2014), we found that KD of LRP2 (mgl) and JPT1 (CG1943) caused dilated heart phenotypes, while KD of APOB (apolpp), a circulating lipoprotein ligand, and again LRP2 (mgl), resulted in arrhythmias (Figure 2B\u2013D, Figure 2\u2014figure supplement 3; Videos 1\u20133), suggesting developmental defects of cardiac structure and function.\n\n![Video 1.](https://cdn.elifesciences.org/articles/59554/elife-59554-video1.mp4.jpg)\n\n**Video 1.:** Representative heart movies of dissected adult females showing arrhythmic beating pattern in APOB-RNAi (Video 2) and LRP2-RNAi (Video 3) compared to control hearts (Video 1).\u00a0All movies are imaged at 140 frames/sec.\n\n![Video 2.](https://cdn.elifesciences.org/articles/59554/elife-59554-video2.mp4.jpg)\n\n![Video 3.](https://cdn.elifesciences.org/articles/59554/elife-59554-video3.mp4.jpg)\n\nSince HLHS is likely oligogenic (Blue et al., 2017; Gelb and Chung, 2014), functional requirements for some genes involved in HLHS might only become apparent in combination with variants in other cardiac-relevant genes. To test this, we examined the nine candidates in the heterozygous background for tinman/NKX2-5, which in humans is well-known to contribute to a variety of CHD/HLHS manifestations (Elliott et al., 2003; Hrstka et al., 2017; Benson, 2010; Kobayashi et al., 2014). In this in vivo context, heart-specific KD of two out of nine genes, HSPG2/Perlecan (trol), involved in extracellular matrix assembly (Sasse et al., 2008), and Succinate dehydrogenase subunit D SDHD (SdhD) exhibited a constricted phenotype (Figure 2\u2014figure supplement 3G,H). These findings demonstrate that our bioinformatic candidate gene prioritization identified several conserved candidates as cardiac relevant, but further validation is necessary to begin to link them in a causal fashion to HLHS.\n\n### LRP2 and APOB regulate proliferation in human iPSC-derived cardiomyocytes\n\nDecreased proliferation of left ventricular cardiomyocytes is emerging as a phenotypic hallmark of HLHS (Liu et al., 2017; Gaber et al., 2013) (see also Figure 1G,H and Figure 1\u2014figure supplement 2), suggesting that cell cycle impairment may be an important contributing factor. Thus, we asked whether siRNA-mediated KD of the prioritized 10 candidate genes from the 5H family trio (Figure 2A) affects proliferation of healthy,\u00a0normal\u00a0hiPSC-CM (Cunningham et al., 2017). Remarkably, two of the genes causing cardiac abnormalities when knocked down in Drosophila (Figure 2B\u2013D), LRP2 and APOB, also caused a marked reduction of EdU+ hiPSC-CMs (ACTN1+) and overall hiPSC cell numbers (Figure 2E,F and Figure 2\u2014figure supplement 4A,B). Notably, we also observed an upregulation of cell cycle inhibitors and apoptosis genes (Figure 2\u2014figure supplement 4C), including TP53 and CDKN1A (Figure 2G), as well as a downregulation of cell cycle genes (Figure 2\u2014figure supplement 4B,C). Collectively, these data identify LRP2 and APOB as modulators of cell cycle and apoptosis in hiPSC-CMs, however, further validation is necessary to link them to contributing to the developmental cardiac impairment in HLHS patients.\n\n### Rare variant analysis in HLHS cohort reveals enrichment in LRP2\n\nIn order to explore disease relevance of candidate genes functionally validated in both systems, we asked whether the frequency of rare and predicted-damaging variants in LRP2 and APOB would be higher in a cohort of 130 HLHS cases compared to 861 control individuals. Remarkably, HLHS patients had a\u00a0~\u00a03 fold increase in the frequency of rare, predicted-damaging LRP2 missense variants compared to healthy controls (10% versus 3.4%; p=0.0008)\u00a0(Figure 3A; Supplementary file 6). Among the 13 patients who carried a LRP2 variant (Figure 3A,B), three shared the same predicted-damaging variant (N3205D) with the 5H proband (Figure 3B, Supplementary file 7). Of note, 13 of the 130 HLHS cases (including the index family proband) possessed\u00a0<80% of ancestral Caucasian alleles, while all controls possessed\u00a0\u226580%. Four of the 13 cases had rare, predicted-damaging missense variants in LRP2. However, all assessed variants were required to be rare in all racial populations. To eliminate the potentially confounding variable of race a Caucasian-only sub-analysis was performed, resulting in a less significant p-value for rare, predicted-damaging missense variants (7.7% versus 3.4%; p=0.05). However, removal of the predicted-damaging (CADD) restriction on rare LRP2 variants among Caucasians revealed significant enrichment in cases (p=0.0035), most notably in missense and intronic variants (p=0.0178 and 0.0082, respectively, Supplementary file 8). Population-based allele frequencies, CADD scores, and location of variants within functional protein binding domains, active histone marks, or transcription factor binding sites was not different between cases and controls.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/59554/elife-59554-fig3-v3.jpg)\n\n**Figure 3.:** (A) Cohort-wide analysis of LRP2 variants shows significant enrichment for SNVs in HLHS patients compared to control populations. Variants (blue/magenta) are found throughout LRP2 protein. (B) Table listing the HLHS families carrying LRP2 variants. (C,D) qPCR of LRP2 in 5H family (C) and in 49H family (D) showing LRP2 downregulation in carrier parent and proband compared to the non-carrier parent. ****p<0.0001 one-way ANOVA #p<0.05 one-way ANOVA. (E) Cardiomyocyte count in zebrafish morphants at 72 hpf were significantly reduced in the ventricle. (F) Atrial cardiomyocyte number was also reduced in morphants but to a lesser extent than in ventricles. *p<0.05; ****p<0.0001 unpaired two-tail Student t-test. (G, top panel) embryonic fish hearts were visualized by EGFP expression in the myl7:EGFP transgenic background (green) at 72 hpf. lrp2a morphant hearts were dysmorphic and much smaller (arrow) compared to controls. (G, lower panel) myl7:H2A-mCherry transgenic background identifies cardiomyocyte nuclei used for quantifying cardiomyocytes during development in E and F. Dotted traces outline the ventricles in G. Scale bars: 30 \u03bcm.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/59554/elife-59554-fig3-figsupp1-v3.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) Uninjected zebrafish larva, (B) lrp2a morpholinos (MO) (1 pl of 2 ng/\u00b5l) injected larva and (C) lrp2a CRISPR genome edited F0 larva all exhibit relatively normal body morphology at 72 hpf, note the pericardial edema evident in morphant and F0 mutant (arrows). Scale bar: 200 \u00b5m. (D) End-diastolic surface area and (E) End Systolic surface area in atria and ventricles determined from high-speed movies of beating hearts at 72 hpf. (F) Contractility, measured as fractional area change, was significantly reduced in ventricles from both morphants and mutants. (G) Heart period was significantly lengthened in morphants and mutant larvae. (D\u2013G) Two doses of lrp2a MO were injected (1 pl of 1 ng/\u00b5l or 2 ng/\u00b5l). For CRISPR/Cas9 and guide RNA concentration, please see detailed information in the Materials and Methods section. One-way ANOVA, Dunnett\u2019s multiple comparisons post hoc test.\n\nIn a next step, we sought to determine whether LRP2 levels might be affected in probands with rare, predicted-damaging variants in LRP2 coding sequence. We profiled LRP2 transcripts levels in patient-derived iPSCs of the 5H family as well as another family, 49H, both harboring heterozygous variants with a CADD score above 24 (Figure 3B), inherited from one of the parents. Interestingly, qPCR results showed that LRP2 mRNA levels were lower in the probands of both families, as well as in the parent carrying the variant (CP), compared to non-variant carrying parent (NCP) (Figure 3C,D). We do not know why the protein coding variants (see Table 1) are associated with reduced RNA levels in patient-derived iPSC-CMs, which we speculate may be due to\u00a0reduced stability of the variant LRP2 mRNA, or altered LRP2 function could feed back to reduce expression. This corroborates the idea that these LRP2 variants (N3205D and A3344T) may be causing a genetic loss-of-LRP2-function in the 5H and 49H families. However, there are likely other contributing factors besides the presence of the LRP2 variants, since echocardiography excluded CHD in carrier parents.\n\n### Zebrafish LRP2 loss-of-function results in a hypoplastic ventricular phenotype\n\nIn order to evaluate the role of LRP2 during heart development in a vertebrate model, we injected a morpholino as well as sgRNA/CRISPR directed against LRP2 (lrp2a) in zebrafish embryos and evaluated the effect on heart morphology and function at 72 hpf. Overall body morphology was similar for morphant and F0 CRISPR edited larva at 72 hpf, compared to controls (Figure 3\u2014figure supplement 1A\u2013C). Hearts from larvae with reduced lrp2a function displayed a hypoplastic phenotype with decreased CM number (Figure 3E\u2013G) and dose-dependent reductions in ventricular chamber dimensions in morphants (Figure 3\u2014figure supplement 1D,E). Loss-of-lrp2a-function also compromised ventricular contractility and caused bradycardia in both morphants and CRISPR-edited larvae (Figure 3\u2014figure supplement 1F,G). Collectively, our data suggest that LRP2 plays a crucial role during heart development by regulating cardiomyocyte generation most prominently in the ventricular chamber.\n\n### Potential regulatory network of validated gene candidates\n\nIn order to delineate how the candidate genes testing positive in our validation systems, APOB, HS6ST2, HSPG2, JPT1, LRP2, might affect signaling homeostasis, we assembled a gene network containing these five genes and their first neighbors (as genetic and protein-protein interactions, BioGRID) (Figure 4A; Supplementary file 5). Strikingly, in addition to TP53 pathway misregulation (Figure 1D\u2013E, Figure 2G and Figure 2\u2014figure supplement 4), all five genes were connected to WNT and SHH signaling cascades, both key regulators of cardiac differentiation and proliferation (Briggs et al., 2016; Gessert and K\u00fchl, 2010; Figure 4A). Interestingly, RNA-seq analysis of the proband cells is consistent with this network prediction: the negative regulator of SHH pathway, PTCH1, was upregulated, while agonists of WNT signaling pathway, WNT1/3a/8a/10b and FZD10 (Dawson et al., 2013), were downregulated, compared to parental cells. However, genetic interaction studies in our model systems are required in order to substantiate a link between these two pathways and LRP2 (and APOB) in CM proliferation.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/59554/elife-59554-fig4-v3.jpg)\n\n**Figure 4.:** (A) A gene network integrating family-centric HLHS candidate genes with heart development. ORANGE \u2013 genes with cardiac phenotypes in iPSC/Drosophila assays. YELLOW \u2013 other candidate genes with Drosophila phenotypes. RED \u2013 Genes up-regulated in proband iPSC-CMs vs. parents. BLUE \u2013 Genes downregulated downregulated in proband iPSCs vs. parents. (B,C) qPCR for FZD10, a WNT-pathway-associated gene, (B) and for PTCH1, a SHH pathway-associated gene (C) upon LRP2 KD in hiPSC-CM. **p<0.01, *p<0.05 Student\u2019s t-test. (D) Quantification of EdU- incorporation assay in hiPSC-CM upon LRP2 KD in combination with BIO, a WNT inhibitor. ***or\u00a0###p<0.001, ****p<0.0001, one-way ANOVA. (E) Representative images of hiPSC-CM stained for EdU and ACTN1. Scale bars: 50 \u00b5m. (F) Quantification of EdU-incorporation assay in hiPSC-CM upon LRP2 KD in combination with PTCH1 KD, a SHH-associated gene. ***p<0.001, ****p<0.0001, one-way ANOVA. (G) Representative images of hiPSC-CM stained for EdU and ACTN1. Scale bars: 50 \u00b5m.\n\nAs a first approach, we examined whether LRP2 could regulate WNT- and/or SHH-associated genes, using healthy\u00a0control\u00a0hiPSC-CM. Indeed, KD of LRP2 led to reduced FZD10 and increased PTCH1 RNA levels (Figure 4B,C), although WNT1/3a/8/10a were not affected. Next, we used the WNT agonist BIO (Tseng et al., 2006) and siRNA against PTCH1 (Kawagishi et al., 2018) in the presence of LRP2 siRNA. We found that LRP2 KD significantly reduced both BIO- and siPTCH1-induced proliferation in hiPSC-CMs (Figure 4D\u2013G), suggesting that LRP2 is required for both WNT- and SHH-regulated CM proliferation. Further experiments are required to substantiate a link between LRP2 and SHH/WNT signaling in heart growth and differentiation.\n\n## Discussion\n\n### Integrated multidisciplinary disease gene discovery platform\n\nUnraveling the patient-specific\u00a0molecular-genetic etiology of HLHS pathogenesis will improve our ability (1) to provide individual diagnostics to families and (2) to develop novel approaches to treat or (3) prevent the disease. As an important first step toward these goals, our integrated multidisciplinary approach is able to identify variants and gene functions, emanating from WGS of family trios, that are relevant for cardiac development and differentiation. Variants in these genes are proposed candidates to potentially contribute to disease etiology. As an example of our heart disease gene discovery platform, we identified LRP2 as a novel candidate CHD gene with rare variants that are enriched in HLHS patients, thus generating hypotheses for further studies.\n\nIn this study, we used the powerful combination of high-throughput DNA/RNA patient sequencing coupled with high-throughput functional screening in model systems enabling to probe gene function (alone or in combination) on a wide array of cellular processes that are deployed during heart formation. For validation in model systems, we have established an integrated multi-site and multidisciplinary pipeline that systematically evaluates the functional role of genes presenting rare and deleterious variants in HLHS patients in hiPSC, Drosophila and zebrafish heart models. As a main objective \u2013 identify and functionally evaluate genes potentially associated with CHD/HLHS \u2013 our study highlights rare, predicted-damaging LRP2 missense variants as 3-fold enriched in 130 HLHS patients compared to 861 controls. Validation of this gene in hiPSCs, Drosophila and zebrafish heart models demonstrated a requirement in cardiac proliferation and differentiation, and notably, systemic KD in zebrafish resulted in ventricular cardiac but not obvious skeletal muscle defects (see also Figure 3\u2014figure supplement 1). Mutations in LRP2 have been previously associated with left ventricular non-compaction (LVNC) as well as other congenital heart defects in mouse (Baardman et al., 2016) and in Donnai-Barrow Syndrome in humans (Baardman et al., 2016; Kantarci et al., 2008). In fact, LVNC is often accompanied by other CHDs (St\u00e4hli et al., 2013). However, LRP2 has not previously been linked to HLHS within curated bioinformatic networks. As many top CHD gene candidates, such as Nkx2-5 and Notch, LRP2 could also be involved in the etiology of relatively different CHDs, such as LVNC and HLHS. This may again be due to the fact that CHDs in general and HLHS in particular are likely oligogenic and share many common factors.\n\nOne pre-requisite to reduce the knowledge gap between patient genomes and clinical phenotypes is to establish reliable/quantifiable phenotypic links between CHD/HLHS candidate genes and their role during normal cardiac development. Given that large-scale genomic studies to identify CHD-associated genes can each generate hundreds of candidates, we have demonstrated here that our cardiac phenotypical platform is able to perform high-throughput functional screening to accommodate rapid testing of a large number of genes. Although overall heart structure in flies differs from that in vertebrates, the fundamental mechanisms of heart development and function are remarkably conserved, including a common transcriptional regulatory network (Bodmer, 1995; Cripps and Olson, 2002), a shared protein composition (Cammarato et al., 2011), as well as electrical and metabolic properties (Ocorr et al., 2014; Ocorr et al., 2007; Diop and Bodmer, 2015). This \u2018convergent biology\u2019 approach identified LRP2 as a novel HLHS candidate gene in both the in vitro and in vivo cardiac model systems, although a definite link must await further study. Importantly, variants in LRP2 were not only found to be enriched in a cohort of 130 HLHS family trios, but also produced a ventricular hypoplastic phenotype in zebrafish embryos upon loss-of-lrp2a-function. Therefore, for further mechanistic understanding of complex CHD characterized by oligogenic etiologies this triple model system testing approach enables assessment of gene function combinatorically and in sensitized genetic backgrounds (e.g. tinman/NKX2-5; see Figure 2\u2014figure supplement 3). Furthermore, the various LRP2 coding variants can now be tested in hiPSC-CM, fish and fly models using CRISPR/Cas technologies, and evaluate whether the specific variant mimics the KD phenotype. Patient-derived proliferation-impaired hiPSC-CM harboring LRP2 variants could be \u2018corrected\u2019 to rescue the defect in a variant/patient-specific manner. Our platform could serve as a general strategy for a first evaluation of candidate genes prioritized from genomic and bioinformatic analysis, before more effort- and time-consuming follow-up studies are undertaken (e.g.\u00a0Vissers et al., 2020).\n\n### A hypothetical pathogenic role for SHH, WNT, p53 and cell proliferation in HLHS\n\nOur current understanding of the molecular-genetic causes of HLHS is very limited, despite clear genetic origins of disease (Yagi et al., 2018). Past research on HLHS has yielded very few high-confidence gene candidates that may contribute to HLHS, for example, NOTCH1, NKX2-5 and MYH6 have been implicated with HLHS (Elliott et al., 2003; Theis et al., 2015a; Theis et al., 2015b), but they are also associated with other CHDs.\n\nHeart development is a complex process that involves the interaction of many pathways and tissues, and a large number of genes have been implicated in various types of CHDs (Pierpont et al., 2018). The postulated oligogenic nature of HLHS is likely the result of an unfavorable combination of disease genes, and such a combination of alleles, in turn, could affect several, successive steps of heart development. This makes it extremely difficult to model the disease by single gene mutations. Current hypotheses of the etiology of HLHS include changes in cell cycle progression of myocytes, as well as altered blood flow (\u2018no flow \u2013 no grow\u2019) as a consequence of defects of valves or the outflow tract (Grossfeld et al., 2019; Saraf et al., 2019).\n\nInterestingly, the only mouse HLHS model to date, a digenic mutant for Sap130 and pcdha9 (Liu et al., 2017), has a penetrance of less than 30%, indicating a profound role for subtle differences between genetic backgrounds. This mouse model suggests a separate mechanism with pcdha9 affecting aortic growth, whereas Sap130 can exert a more severe HLHS-like phenotype, which might reflect a modular etiology of HLHS that separates valve and ventricular defects.\n\nThe gene network analysis that we have conducted points to the possibility that several of the prioritized candidate genes identified in the index 5H patient may have a modulatory impact on proliferation and differentiation, potentially via WNT/SHH-associated pathways (Briggs et al., 2016). There is evidence that the three of the candidates with fly heart phenotypes\u00a0\u2013 Trol/HSPG2, Mgl/LRP2 and Apolpp/APOB \u2013 can alter WNT and SHH signaling (Christ et al., 2015; Datta et al., 2006), but future studies \u2013 for example genetic interaction experiments in our model systems \u2013 are needed to support their involvement. We hypothesize that a collective of likely hypomorphic genetic variants affects heart development leading to HLHS. Impaired ventricular growth could in addition be caused by changes in the p53 pathway, and our analysis of iPSC-derived cardiomyocytes suggests that p53 indeed depends on LRP2 levels. Such a multi-hit model of HLHS caused by sub-threshold hypomorphic alleles represents an attractive explanation of many CHDs.\n\nIn summary, this integrated multidisciplinary strategy of functional genomics using patient-specific iPSC combined with in vivo and human cellular model systems of functional validation has much promise in generating hypotheses, such as novel genetic pathways and potential polygenic interactions underlying CHD/HLHS. Evaluating patient-specific, complex polygenic risk factors potentially underlying HLHS will likely establish the groundwork for definitive mechanistic studies of interacting risk factors that contribute to defective cardiac development and adverse outcomes. This scalable approach promises more efficient discovery of novel CHD/HLHS gene candidates and multiple HLHS families can now be multiplexed in future diagnostic and therapeutic studies.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Genetic reagent (D. melanogaster)</td>\n      <td>Hand4.2-Gal4</td>\n      <td>NA</td>\n      <td>PMID:16467358</td>\n      <td>NA</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (D. melanogaster)</td>\n      <td>UAS-trolRNAi</td>\n      <td>Vienna Drosophila Resource Center (VDRC)</td>\n      <td>FBst0454629</td>\n      <td>v22642</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (D. melanogaster)</td>\n      <td>UAS-CG1943RNAi</td>\n      <td>Vienna Drosophila Resource Center (VDRC)</td>\n      <td>FBst0453803</td>\n      <td>v20758</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (D. melanogaster)</td>\n      <td>UAS-apolppRNAi</td>\n      <td>Vienna Drosophila Resource Center (VDRC)</td>\n      <td>FBst0470481</td>\n      <td>v6878</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (D. melanogaster)</td>\n      <td>UAS-Hs6stRNAi</td>\n      <td>Vienna Drosophila Resource Center (VDRC)</td>\n      <td>FBst0464695</td>\n      <td>v42658</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (D. melanogaster)</td>\n      <td>UAS-mglRNAi</td>\n      <td>Vienna Drosophila Resource Center (VDRC)</td>\n      <td>FBst0461660</td>\n      <td>v36389</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (D. melanogaster)</td>\n      <td>UAS-SdhdRNAi</td>\n      <td>Vienna Drosophila Resource Center (VDRC)</td>\n      <td>FBst0456581</td>\n      <td>v26776</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (D. melanogaster)</td>\n      <td>UAS-Nhe2RNAi</td>\n      <td>Vienna Drosophila Resource Center (VDRC)</td>\n      <td>FBst0477879</td>\n      <td>v106053</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (D. melanogaster)</td>\n      <td>UAS-JupiterRNAi</td>\n      <td>Vienna Drosophila Resource Center (VDRC)</td>\n      <td>FBst0455704</td>\n      <td>v25044</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (D. melanogaster)</td>\n      <td>UAS-Eip74EFRNAi</td>\n      <td>Vienna Drosophila Resource Center (VDRC)</td>\n      <td>FBst0477129</td>\n      <td>v105301</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (D. melanogaster)</td>\n      <td>UAS-Sik2RNAi</td>\n      <td>Vienna Drosophila Resource Center (VDRC)</td>\n      <td>FBst0456442</td>\n      <td>v26496</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (D. melanogaster)</td>\n      <td>mglMI14318</td>\n      <td>Bloomington Drosophila Stock Center (BDSC)</td>\n      <td>FBal0302551</td>\n      <td>BL-59689</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (D. melanogaster)</td>\n      <td>tin346</td>\n      <td>NA</td>\n      <td>FBal0035787</td>\n      <td>NA</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (D. rerio)</td>\n      <td>Oregon AB wild-type</td>\n      <td></td>\n      <td></td>\n      <td>A commonly used wild-type strain</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (D. rerio)</td>\n      <td>Tg(myl7:EGFP)twu277</td>\n      <td>Tsai Lab, National Taiwan University</td>\n      <td>PMID:12950077</td>\n      <td>A transgenic line of zebrafish labeled with heart-specific EGFP fluorescence.</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (D. rerio)</td>\n      <td>Tg(myl7:H2A-mCherry)sd12</td>\n      <td>Yelon Lab, University of California, San Diego</td>\n      <td>PMID:24075907</td>\n      <td>A transgenic line of zebrafish specifically expressing mCherry in cardiomyocyte nuclei</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>mouse monoclonal anti-ACTN1</td>\n      <td>Sigma</td>\n      <td>A7811</td>\n      <td>1:800</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>donkey polyclonal anti-mouse Alexa fluor 568</td>\n      <td>Invitrogen</td>\n      <td>A10037</td>\n      <td>1:1000</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>chicken polyclonal anti-GFP</td>\n      <td>Aves Labs</td>\n      <td>GFP-1020</td>\n      <td>1:300</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>rabbit polyclonal abit-mCherry</td>\n      <td>Rockland</td>\n      <td>600\u2013401 P16S</td>\n      <td>1:200</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>donkey polyclonal anti-chicken AlexaFluor 488</td>\n      <td>Jackson ImmunoResearch</td>\n      <td>703-545-155</td>\n      <td>1:200</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>donkey polyclonal anti-rabbit AlexaFluor 568</td>\n      <td>Invitrogen</td>\n      <td>A10042</td>\n      <td>1:200</td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>DAPI (iPSC) 500 mg/mL</td>\n      <td>Sigma</td>\n      <td>D9542</td>\n      <td>1:1000</td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>DAPI (Zebrafish) 500 mg/mL</td>\n      <td>Invitrogen</td>\n      <td>D1306</td>\n      <td>1:200</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>LRP2 siRNA</td>\n      <td>Entrez Gene ID: 4036</td>\n      <td>Dharmacon</td>\n      <td>On-Target plus, SmartPool</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>APOB siRNA</td>\n      <td>Entrez Gene ID: 338</td>\n      <td>Dharmacon</td>\n      <td>On-Target plus, SmartPool</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>PTCH1 siRNA</td>\n      <td>Entrez Gene ID: 5727</td>\n      <td>Dharmacon</td>\n      <td>On-Target plus, SmartPool</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>TP53 siRNA</td>\n      <td>Entrez Gene ID: 7157</td>\n      <td>Dharmacon</td>\n      <td>On-Target plus, SmartPool</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>CDKN1A siRNA</td>\n      <td>Entrez Gene ID: 1026</td>\n      <td>Dharmacon</td>\n      <td>On-Target plus, SmartPool</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>ELF4 siRNA</td>\n      <td>Entrez Gene ID: 2000</td>\n      <td>Dharmacon</td>\n      <td>On-Target plus, SmartPool</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>JPT1 siRNA</td>\n      <td>Entrez Gene ID: 51155</td>\n      <td>Dharmacon</td>\n      <td>On-Target plus, SmartPool</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>HS6ST2 siRNA</td>\n      <td>Entrez Gene ID: 90161</td>\n      <td>Dharmacon</td>\n      <td>On-Target plus, SmartPool</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>HSPG2 siRNA</td>\n      <td>Entrez Gene ID: 3339</td>\n      <td>Dharmacon</td>\n      <td>On-Target plus, SmartPool</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>PRTG siRNA</td>\n      <td>Entrez Gene ID: 283659</td>\n      <td>Dharmacon</td>\n      <td>On-Target plus, SmartPool</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>SDHD siRNA</td>\n      <td>Entrez Gene ID: 6392</td>\n      <td>Dharmacon</td>\n      <td>On-Target plus, SmartPool</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>SIK1 siRNA</td>\n      <td>Entrez Gene ID: 150094</td>\n      <td>Dharmacon</td>\n      <td>On-Target plus, SmartPool</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>SLC9A1 siRNA</td>\n      <td>Entrez Gene ID: 6548</td>\n      <td>Dharmacon</td>\n      <td>On-Target plus, SmartPool</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>CDH</td>\n      <td>Hs00170423_m1</td>\n      <td>IDT Integrated DNA technologies, Coralville, IA</td>\n      <td>characterization of the pluripotent state</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>DNMT3</td>\n      <td>Hs01003405_m1</td>\n      <td>IDT Integrated DNA technologies, Coralville, IA</td>\n      <td>characterization of the pluripotent state</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>DPPA2</td>\n      <td>Hs00414521_g1</td>\n      <td>IDT Integrated DNA technologies, Coralville, IA</td>\n      <td>characterization of the pluripotent state</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>DPPA5</td>\n      <td>Hs00988349_g1</td>\n      <td>IDT Integrated DNA technologies, Coralville, IA</td>\n      <td>characterization of the pluripotent state</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>ERAS</td>\n      <td>Hs.PT.45.4849266.g</td>\n      <td>IDT Integrated DNA technologies, Coralville, IA</td>\n      <td>characterization of the pluripotent state</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>GDF3</td>\n      <td>Hs00220998_m1</td>\n      <td>IDT Integrated DNA technologies, Coralville, IA</td>\n      <td>characterization of the pluripotent state</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>OCT-4</td>\n      <td>Hs.PT.45.14904310.g</td>\n      <td>IDT Integrated DNA technologies, Coralville, IA</td>\n      <td>characterization of the pluripotent state</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>REXO1</td>\n      <td>Hs.PT.45.923095.g</td>\n      <td>IDT Integrated DNA technologies, Coralville, IA</td>\n      <td>characterization of the pluripotent state</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>SALL4</td>\n      <td>Hs00360675_m1</td>\n      <td>IDT Integrated DNA technologies, Coralville, IA</td>\n      <td>characterization of the pluripotent state</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>TDG1</td>\n      <td>Hs02339499_g1</td>\n      <td>IDT Integrated DNA technologies, Coralville, IA</td>\n      <td>characterization of the pluripotent state</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>TERT</td>\n      <td>Hs99999022_m1</td>\n      <td>IDT Integrated DNA technologies, Coralville, IA</td>\n      <td>characterization of the pluripotent state</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>APOB</td>\n      <td>Hs.PT.56a.1973344</td>\n      <td>IDT Integrated DNA technologies, Coralville, IA</td>\n      <td>characterization of the pluripotent state</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>DHCR24</td>\n      <td>Hs.PT.56a.4561516</td>\n      <td>IDT Integrated DNA technologies, Coralville, IA</td>\n      <td>expression during guided cardiac differentiation</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>ELF4</td>\n      <td>Hs.PT.56a.25941471</td>\n      <td>IDT Integrated DNA technologies, Coralville, IA</td>\n      <td>expression during guided cardiac differentiation</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>HN1</td>\n      <td>Hs.PT.58.40922463.g</td>\n      <td>IDT Integrated DNA technologies, Coralville, IA</td>\n      <td>expression during guided cardiac differentiation</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>HSPG2</td>\n      <td>Hs.PT.56a.18698732</td>\n      <td>IDT Integrated DNA technologies, Coralville, IA</td>\n      <td>expression during guided cardiac differentiation</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>HS6ST2</td>\n      <td>Hs.PT.56a.1354985</td>\n      <td>IDT Integrated DNA technologies, Coralville, IA</td>\n      <td>expression during guided cardiac differentiation</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>LRP2</td>\n      <td>Hs.PT.56a.1584067</td>\n      <td>IDT Integrated DNA technologies, Coralville, IA</td>\n      <td>expression during guided cardiac differentiation</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>MYLK</td>\n      <td>Hs.PT.56a.39795491</td>\n      <td>IDT Integrated DNA technologies, Coralville, IA</td>\n      <td>expression during guided cardiac differentiation</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>PCDH11X</td>\n      <td>Hs.PT.56a.26531358</td>\n      <td>IDT Integrated DNA technologies, Coralville, IA</td>\n      <td>expression during guided cardiac differentiation</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>PRTG</td>\n      <td>custom design</td>\n      <td>IDT Integrated DNA technologies, Coralville, IA</td>\n      <td>expression during guided cardiac differentiation</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>SIK1</td>\n      <td>Hs.PT.58.2995158</td>\n      <td>IDT Integrated DNA technologies, Coralville, IA</td>\n      <td>expression during guided cardiac differentiation</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>SLC9A1</td>\n      <td>Hs.PT.58.15072523</td>\n      <td>IDT Integrated DNA technologies, Coralville, IA</td>\n      <td>expression during guided cardiac differentiation</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>SDHD</td>\n      <td>Hs.PT.58.40267655.g</td>\n      <td>IDT Integrated DNA technologies, Coralville, IA</td>\n      <td>expression during guided cardiac differentiation</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>GAPDH</td>\n      <td>Hs.PT.45.8326</td>\n      <td>IDT Integrated DNA technologies, Coralville, IA</td>\n      <td>expression during guided cardiac differentiation</td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>EdU</td>\n      <td>Click-it Plus EdU Imaging Kit</td>\n      <td>Life Technologies</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>BIO (GSK-3 Inhibitor)</td>\n      <td></td>\n      <td>Sigma</td>\n      <td>B1686</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Prism v7 and v8</td>\n      <td></td>\n      <td>GraphPad Software</td>\n      <td></td>\n    </tr>\n  </tbody>\n</table>\n\n### Study subjects\n\nWritten informed consent was obtained for the index family and an HLHS cohort, under a research protocol approved by the Mayo Clinic Institutional Review Board. Cardiac anatomy was assessed by echocardiography. Candidate genes were identified and prioritized by WGS of genomic DNA and RNA sequencing of patient-specific iPSC and cardiomyocytes. For variant burden analysis, controls were obtained from the Mayo Clinic Center for Individualized Medicine\u2019s Biobank. Methods for genomic analyses, RNA Sequencing, iPSC technology, bioinformatics and statistics are described in the Online Appendix. Data are available in NCBI SRA database (see below for SRA Accession IDs).\n\n### Comparative genomic hybridization\n\nTo detect aneuploidy, array comparative genomic hybridization was performed using a custom 180K oligonucleotide microarray (Agilent, Santa Clara, CA), with a genome-wide functional resolution of approximately 100 kilobases. Deletions larger than 200 kilobases and duplications larger than 500 kilobases were considered clinically relevant.\n\n### Whole-genome sequencing (WGS) and bioinformatics analyses of index family\n\nGenomic DNA was isolated from peripheral white blood cells or saliva. WGS and variant call annotation were performed utilizing the Mayo Clinic Medical Genome Facility and Bioinformatics Core. Paired-end libraries were prepared using the TruSeq DNA v1 sample prep kit following the manufacturer\u2019s protocol (Illumina, San Diego, CA). Each whole-genome library was loaded into four lanes of a flow cell and 101 base pair paired-end sequencing was carried out on Illumina\u2019s HiSeq 2000 platform using TruSeq SBS sequencing kit version three and HiSeq data collection version 1.4.8 software. Reads were aligned to the hg19 reference genome using Novoalign version 2.08 (http://novocraft.com) and duplicate reads were marked using Picard (http://picard.sourceforge.net). Local realignment of INDELs and base quality score recalibration were then performed using the Genome Analysis Toolkit version 1.6\u20139 (GATK)\u00a0(McKenna et al., 2010). SNVs and INDELs were called across all samples simultaneously using GATK\u2019s Unified Genotype with variant quality score recalibration (VQSR)\u00a0(DePristo et al., 2011).\n\nVariant call format (VCF) files with SNV and INDEL calls from each family member were uploaded and analyzed using Ingenuity Variant Analysis software (QIAGEN, Redwood City, CA) where variants were functionally annotated and filtered by an iterative process. First, rare, high quality heterozygous variants were selected that (a) had a read depth of at least 10 (b) were not adjacent to a homopolymer exceeding five base pairs (c) were present in\u00a0<5 whole exome sequencing (WES) datasets collected from 147 individuals not affected with HLHS and (d) were present at a frequency\u00a0<1% (de novo, loss-of-function, CHD panel genes) or\u00a0<3% (compound heterozygous, hemizygous or homozygous recessive) in the Exome Variant Server (WES data from 6503 individuals, URL: http://evs.gs.washington.edu/EVS) 1000 Genomes (WGS data from 1092 individuals)\u00a0(Abecasis et al., 2012), and/or Complete Genomics Genome (WGS data from 69 individuals)\u00a0(Drmanac et al., 2010). Second, functional variants were selected, defined as those that impacted a protein sequence, canonical splice site, microRNA coding sequence/binding site, enhancer region, or transcription factor binding site within a promoter validated by ENCODE chromatin immunoprecipitation experiments\u00a0(Raney et al., 2014). Third, using parental and sibling WGS data, rare, functional variants in the proband were then filtered for those that arose de novo or fit homozygous recessive, compound heterozygous, or X-linked recessive modes of inheritance. In addition, any inherited frameshift and start/stop codon variants were retained if they occurred in a gene intolerant to loss-of-function (pLI score\u00a0>\u00a00.75).\n\n### WGS of an HLHS cohort and unaffected controls\n\nWGS of 130 unrelated individuals with left ventricular hypoplasia (HLH) (80% HLHS, 20%CHD with HLH) was performed utilizing the Mayo Clinic Medical Genome Facility. For the control population, 861 individuals from the Mayo Clinic Center for Individualized Medicine\u2019s Biobank repository\u00a0(Olson et al., 2013) were selected based upon absence of personal or family history of CHD and underwent WGS at HudsonAlpha Institute for Biotechnology. Variant call annotation for all 991 individuals was performed by the Mayo Clinic Bioinformatics Core. Whole- genome libraries were prepared for 130 individuals with HLHS and 101 bp or 150 bp paired-end sequencing was performed on either the Illumina HiSeq 2000 (n\u00a0=\u00a056) or HiSeq 4000 (n\u00a0=\u00a074), respectively. For the 861 Biobank individuals, whole-genome libraries were prepared, and 150 base pair paired-end sequencing was carried out on the HiSeqX Ten platform. Reads from all 991 individuals were aligned to the hg38 reference genome using BWA-MEM and duplicate reads were marked using Picard. Local realignment of insertion/deletions (INDELs) and base quality score recalibration were then performed using the Genome Analysis Toolkit version 3.4 (GATK) followed by SNV/INDEL calling with Haplotype Caller and Genotype GVCFs. VerifyBAMID (Jun et al., 2012) was used to estimate sample contamination. Samples with low coverage (<90% of genome covered at 10X) or a high contamination estimate (FREEMIX\u00a0>\u00a00.03) were excluded. A single VCF file with SNV and INDEL calls from all 991 individuals was created for subsequent statistical analysis.\n\n### Rare variant burden analysis of LRP2 and APOB\n\nWGS data from cases and controls was compared for rare variant burden of the candidate genes that have been functionally validated in both systems (LRP2, APOB) (Supplementary file 6). Genotypes with genotype quality (GQ)\u00a0<20 were excluded, and the resulting data was used to calculate variant call rates and Hardy-Weinberg Equilibrium (HWE) p-values. Variants with call rate\u00a0<\u00a00.95 or HWE p-value<1e-8 were excluded. In addition, variants were required to pass VQSR (McKenna et al., 2010; DePristo et al., 2011; Van der Auwera et al., 2013). Variants were only included in the analysis if they had a strong predicted functional impact based on annotation information from Clinical Annotation of Variants (CAVA) (M\u00fcnz et al., 2015). Specifically, we included frameshift, nonsynonymous, stop-gain, and stop-loss variants, as well as variants that alter an essential splice site. We further restricted the nonsynonymous variants to include only those with Combined Annotation Dependent Depletion (CADD) scores\u00a0>\u00a024 (Kircher et al., 2014). Rare variants (MAF\u00a0<0.01 across all races) were identified based on allele frequencies in ExAC, gnomAD, and ESP (WES data from 6503 individuals, URL: http://evs.gs.washington.edu/EVS) (Lek et al., 2016). The gene-level, case-control association analysis was conducted using SKAT-O\u00a0(Lee et al., 2012). Variants were weighted using the beta(1, 25) density function of the observed MAF (the default option in SKAT) and were mapped to genes using HG38 gene coordinates from Ensembl (Frankish et al., 2017). Correcting for multiple testing, the threshold for statistical significance was set at p<0.025 (0.05/2 genes).\n\nAfter enrichment of rare, predicted-damaging missense variants in LRP2 was established, we accounted for the potential influence of race and also relaxed functional constraints. Subsequent analyses were confined to 117 individuals with HLHS possessing\u00a0>\u00a080% of ancestral Caucasian alleles. All variants residing in the gene body of LRP2 were included, in addition to 1000 base pairs upstream of the transcription start site. Variants were isolated and annotated in CAVA utilizing the canonical transcript of LRP2 (ENST00000263816). In addition to analyzing the total number of variants spanning the gene body, SKAT-O analysis was performed separately for each type of variant in the following categories: missense, intronic, splice site region, splice region (in-frame, missense, synonymous), synonymous, 3\u2019 untranslated region, 5\u2019 untranslated region and 1000 base pairs upstream of the transcription start site. Independent of CAVA annotation, SKAT-O analysis was also performed on regulatory regions as determined by ChIP-Seq data from two different sources. The first analysis included variants within regions of LRP2 impacted by histone modification and CTCF binding from publicly available ENCODE datasets\u00a0(Narayanan et al., 2017). Twenty-one human cardiovascular tissues were assessed prior to confining the analysis to fetal human heart tissue (n\u00a0=\u00a03) (Supplementary file 9). The second analysis was confined to ENCODE ChIP-Seq data for 161 transcription factors in 91 cell types (wgEncodeRegTfbsClusteredV3 table in UCSC) (http://genome.ucsc.edu/).\n\n### iPSC production and spontaneous differentiation of proband/parent cells\n\nFibroblasts were extracted from tissue by migration onto culture plates in fibroblast medium (DMEM, 10% Fetal bovine serum (FBS), penicillin/streptomycin (P/S), all from Thermo Fisher, Waltham, MA). For the reprogramming process, 5 \u00d7 104 fibroblasts were plated and incubated overnight to allow attachment as previously described (Folmes et al., 2013). On the infection day, medium was supplemented with lentivirus encoding reprogramming genes SOX2, OCT4, KLF4, and c-MYC and incubated for 12 hr. Cells were grown in fibroblast medium for 3 days prior to being passaged onto a matrigel coated plate. Once cells were attached, fibroblast medium was substituted by pluripotency-sustaining medium supplemented with 10 \u00b5M of ROCK inhibitor (TOCRIS, Bio-Techne, Minneapolis, MN) and refreshed daily until colonies appeared (3\u20136 weeks). Individual colonies were manually picked and expanded on matrigel coated plates in mTeSR1 medium (STEMCELL Technologies, Vancouver, CA). Approximately every 5\u20136 days cells were mechanically passaged onto fresh matrigel coated plates.\n\nFor spontaneous differentiation cells were treated with collagenase IV (Invitrogen, ThermoFisher) for 20 min, gently dislodged from the plate and transferred into suspension culture in ultra-low attachment 6-well plates in differentiation medium (DMEM/F12, 20% FBS, 1% glutamax, 1% non-essential amino acids, and 0.1% 2-mercaptoethanol). On day 5, floating aggregates were transferred to gelatin-coated tissue culture plates where medium was refreshed every 2 to 3 days. Cells were harvested for RNA extraction on day 25.\n\n### iPSC characterization of proband/parent cells\n\nFor pluripotency characterization, cells were fixed in 4% paraformaldehyde for 10 min, permeabilized with 0.1% triton-X, blocked using Superblock and stained for membrane antigens TRA-1\u201360 (monoclonal mouse IgM 1:100), SSEA3 (rat 1:100) and transcription factor Nanog (rabbit 1:100) (all from Stemgent, Cambridge, MA). Characterization of sarcomeric proteins included staining for MLC2a (monoclonal mouse IgG 1:200, Synaptic Systems, G\u00f6ttingen, Germany) and MLC2v (rabbit 1:200, Proteintech, Rosemont, IL). Secondary staining consisted of Alexa fluor 568 anti-mouse IgM or IgG, Alexa fluor 488 anti-rat and Alexa fluor 633 or 488 anti-rabbit, all used at 1:250 dilution (Molecular Probes, Thermo Fisher)\u00a0(Folmes et al., 2013). Nuclei were stained with 4',6-diamidino-2-phenylindole (DAPI). Confocal images were acquired with a Zeiss LSM 510.\n\nPluripotency properties were determined in vivo using a teratoma assay. All studies including animals were approved by the Institutional Animal Care and Use Committee at Mayo Clinic. Half a million cells in 50 \u00b5l of a 1:1 solution of differentiation medium and matrigel were injected subcutaneously in each flank of an immunodeficient mouse. Tumor growth was monitored for up to 10 weeks with growing masses harvested as they reached a 1 cm3 volume. Tissue was flash frozen, cryosectioned and stained using hematoxylin/eosin (Folmes et al., 2013).\n\nElectron microscopy images were acquired with a JEOL 1200 EXII transmission electron microscope. Cells were processed through fixation with 1% glutaraldehyde and 4% formaldehyde in 0.1 M phosphate buffered saline (pH 7.2), staining with lead citrate and ultramicrotome sectioning prior to imaging (Martinez-Fernandez et al., 2010).\n\n### Transcriptome profiling with RNA sequencing (RNA-seq) and bioinformatics analysis\n\nRNA was extracted from iPSCs and differentiated cells at days 0 and 25 using a combination of Trizol and QIAGEN RNeasy mini kit columns. Sequencing library was prepared using TruSeq RNA Library Preparation Kit v2. All samples were sequenced on Illumina Hiseq 2000 at Mayo Clinic Medical Genome Facility. The following RNA-seq data analysis was performed on Dell Precision T7500 workstation which has 96 GB RAM and 20 Intel Xeon X5680 processors (3.33 GHz) and runs 64-bit Red Hat Enterprise Linux 6.3 (Kernel Linux 2.6.32\u2013279.14.1.el6.x86_64). The alignment of short reads (50 bp) from FASTQ files was performed using Bowtie2 and Tophat2 software. All mapped reads were assembled to transcripts using Cufflinks and merged together using Cuffmerge. Differential analyses were performed between proband and parents at each time point (day 0 and day 25: d0, d25). The results from Cuffdiff were imported into a SQL database using R package CummeRbund for extracting significantly differential genes and other data manipulation. Differential genes were selected based on the default setting in Cuffdiff with adjusted p-values at 0.05 after FDR control for correcting multiple hypothesis tests and a minimum fold change of\u00a0\u00b1\u00a0fold or greater relative to control lines. Bioinformatics analysis of gene expression changes was performed using available online tools to describe differential patterns between proband, mother and father. Gene functional annotation and classification was generated using the Database for Annotation, Visualization and Integrated Discovery bioinformatics module (http://david.abcc.ncifcrf.gov). Additionally, mapping was performed using the Kyoto Encyclopedia of Genes and Genomes array tool (http://www.kegg.jp/kegg/download/kegtools.html). Heat maps were generated from sorted Database for Annotation, Visualization and Integrated Discovery and Kyoto Encyclopedia of Genes and Genomes gene subsets using TIGR\u2019s open source MeV software (http://tm4.org/mev). In each sample, for each mapped gene, sample data points were normalized to the mean expression across proband, father and mother and subsequently log2 transformed. Significant function groups were ranked based on statistical significance (p) from hypergeometric distribution.\n\n### Guided cardiac differentiation\n\nGuided differentiation was achieved using a modified version of a previously published protocol\u00a0(Lian et al., 2013). In brief, iPSCs cells were cultured as monolayer for two passages prior to induction. Next, they were treated with 8\u201312 \u00b5M Wnt activator CHIR99021 (Stemcell technologies) for 20 hr followed by 24 hr wash out period in DMEM:F12 with B27 supplement (Gibco, ThermoFisher). Medium was then refreshed and supplemented with 5 \u00b5M Wnt inhibitor IWP2 for 48 hr. Cells were maintained in DMEM:F12 plus B27 for an extra 48 hr and in DMEM:F12 plus B27 (minus insulin) thereafter. Cultures were sampled for RNA extraction before induction as well as at days 1, 3, 5, 7, 14, and 37. Beating could be observed after 7\u201310 days of differentiation.\n\nhiPSCs, hiPSC-CMs, siRNA transfection, EdU assay, Immunostaining and qRT-PCR hiPSCs derived from HLHS families were plated in 384 wells coated with matrigel at 5000 cell/well density using mTeSR-1 (Stem Cell). After 3 days, EdU was added to the media and was incubated for 1 hr. Cells were fixed in 4% PFA and stained for EdU and DAPI (Invitrogen). EdU was detected using Click-it Plus EdU Imaging Kit (Life Technologies) following manufacturing directions. iPSC-CMs from 5H, 75H and 151H families and healthy hiPSC-CMs\u00a0(Burridge et al., 2014) at day 25 of differentiation were plated in 384 wells coated with matrigel at 5000 cells/well density in Maintenance Media (MM) (RPMI, 2% KOSR, 1% B27, 1% P/S). siRNA transfection was performed using Opti-Mem (Gibco) and Lipofectamine RNAiMAX (Gibco). siRNAs were purchased at Dharmacon and used at a final concentration of 25 nM. siRNA transfection efficiency was tested with qRT-PCR (Figure 2\u2014figure supplement 4A). siRNA scramble was used as control (siCTR). To test WNT-pathway interaction, cells were treated with 1 uM BIO (GSK-3 inhibitor) (Sigma B1686) for three days. Two days after transfection, 50% of media was removed and replaced with 20 \u00b5M EdU in MM media. 24 hr after, cells were fixed in 4% paraformaldehyde (PFA) and blocked in blocking buffer (10% Horse Serum, 10% Gelatin, 0.5% Triton X-100). Cells were stained with mouse monoclonal anti-\u03b1-Actinin (ACTN1) (Sigma, A7811 1:800), secondary antibody Alexa fluor 568 anti-mouse (Invitrogen, 1:1000) and DAPI (1:1000) in blocking buffer and imaged using ImageXPress microscope, (Molecular Devices) and analyzed with MetaXpress Analysis software (Molecular Devices). To obtain a cardiomyocyte proliferation index, the total number of cells positive for EdU, \u03b1-Actinin and DAPI was divided by the total number of DAPI cells and expressed as percentage. For qRT-PCR experiments, total RNA was extracted using TRIzol and chloroform. 1 ug of RNA was converted in cDNA using QuantiTect Reverse Transcription kit (QIAGEN). qRT-PCR was performed using Syber green (Biorad). Human primers sequences for qRT-PCR were obtained from Harvard Primer Bank. TP53 (Primer Bank ID: 371502118 c1), CDKN1A (Primer Bank ID: 310832423 c1), LRP2 (Primer Bank ID: 126012572 c1), FZD10 (Primer Bank ID: 314122154 c3), PTCH1 (Primer Bank ID: 134254431 c3), CCNE1 (Primer Bank ID: 339275820 c3) PCNA (Primer Bank ID: 33239449 c1), CCNB1 (Primer Bank ID: 356582356 c1), CCNB2 (Primer Bank ID: 332205979 c1), CDK1 (Primer Bank ID: 281427275 c1), CRADD (Primer Bank ID: 51988883 c1), CASP6 (Primer Bank ID: 73622127 c1), CDKN2C (Primer Bank ID: 17981697 c1), CDKN1C (Primer Bank ID: 169790898 c1), APOB (Primer Bank ID: 105990531 c1), ELF4 (Primer Bank ID: 187608766 c1), HN1(JPT1) (Primer Bank ID: 7705877a1), HS6ST2 (Primer Bank ID: 116295253 c2), HSPG2 (Primer Bank ID: 140972288 c1), PRTG (Primer Bank ID: 224500891 c2), SDHD (Primer Bank ID: 222352156 c3), SIK1 (Primer Bank ID: 116256470 c1), SLC9A1 (Primer Bank ID: 381214343 c3). GAPDH (Primer Bank ID: 378404907 c1) was used as housekeeping gene and used to normalize the data. At least three independent biological replicates were performed for each experiment.\n\nQuantitative Real Time PCR (qRT-PCR) in iPSC qRT-PCR for pluripotency and disease-associated markers was performed in iPSC samples. RNA was extracted using a combination of Trizol and QIAGEN RNeasy mini kit columns. cDNA for pluripotency assessment was synthesized using reverse transcriptase supermix reagents (Invitrogen, Thermo Fisher). In the case of expression levels during a time course of differentiation, a Biorad (Hercules, CA) iScript synthesis kit was used. qRT-PCR was performed using pre-designed primers (see key resources table). All values were normalized to GAPDH.\n\n### Drosophila and zebrafish heart function studies\n\nDrosophila orthologs were determined using the DIOPT database (Hu et al., 2011), and RNAi lines were obtained from the Vienna Drosophila Resource Center (VDRC) stock center and crossed to the heart-specific Hand4.2-Gal4 driver alone or in combination with one copy of the tinman loss-of-function allele tin346 (Azpiazu and Frasch, 1993). Fly hearts were filmed and analyzed according to standard protocol (Fink et al., 2009). In zebrafish, gene expression was manipulated using standard microinjection of morpholino (MO) antisense oligonucleotides (Westerfield, 1993). In addition, we performed targeted mutagenesis using CRISPR/Cas9 genome editing (Talbot and Amacher, 2014; Gagnon et al., 2014; Irion et al., 2014), to create insertion/deletion (INDEL) mutations in the lrp2a gene (F0). Zebrafish were raised to 72 hr post fertilization (hpf), immobilized in low melt agarose and the hearts were filmed and analyzed, as for Drosophila (Fink et al., 2009).\n\n### Zebrafish husbandry\n\nAll zebrafish experiments were performed in accordance to protocols approved by IACUC. Zebrafish were maintained under standard laboratory conditions at 28.5\u00b0C. In addition to Oregon AB wild-type, the following transgenic lines were used: Tg(myl7:EGFP)twu277 (Huang et al., 2003) and Tg(myl7:H2A-mCherry)sd12 (Schumacher et al., 2013).\n\n### Zebrafish semi-automated optical heartbeat analysis\u00a0(SOHA)\n\nLarval zebrafish (72 hpf) were immobilized in a small amount of low melt agarose (1.5%) and submerged in conditioned water. Beating hearts were imaged with direct immersion optics and a digital high-speed camera (up to 200 frame/s, Hamamatsu Orca Flash) to record 30 s movies; images were captured using HC Image (Hamamatsu Corp.). Cardiac function was analyzed from these high-speed movies using semi-automatic optical heartbeat analysis software (Fink et al., 2009; Ocorr et al., 2009), which for zebrafish quantifies heart period (R-R interval), cardiac rhythmicity, as well as chamber size and fractional area change. All hearts were imaged at room temperature (20\u201321\u00b0C). Statistical analyses were performed using Prism software (Graphpad). Significance was determined using two-tailed, unpaired Student t-test or one-way ANOVA and Dunnett\u2019s multiple comparisons post hoc test as appropriate.\n\n### Zebrafish cardiomyocyte cell counts and cardiac immunofluorescent imaging\n\nTo count cardiomyocytes, we used the expression of H2AmCherry in the nuclei (Tg(myl7:H2A-mCherry)) (Schumacher et al., 2013) to qualify as an individual cell, performed the \u2018Spot\u2019 function in Imaris to distinguish individual cells in reconstructions of confocal z-stacks (Zeng and Yelon, 2014; Pradhan et al., 2017). To compare data sets, we used Prism software (GraphPad) to perform Student's t-test with two-tail distribution. Graphs display mean and standard deviation for each data set.\n\nWhole-mount immunofluorescence was performed as previously described (Zeng and Yelon, 2014; Pradhan et al., 2017; Alexander et al., 1998) (see key resources table). Confocal imaging was performed on an LSM 710 confocal microscope (Zeiss, Germany) with a 40x water objective. Exported z-stacks were processed with Imaris software (Bitplane), Zeiss Zen, and Adobe Creative Suite software (Photoshop and Illustrator 2020). All confocal images shown are projection views of partial reconstructions from multiple z-stack slices, except where noted that images are views of a single slice.\n\n### Zebrafish CRISPR/Cas9 experiments\n\nDetailed steps for lrp2a were previously described (Hoshijima et al., 2019) and we followed IDT manufacture instruction for Complexes preparation.\n\n#### crRNA:tracrRNA Duplex Preparation\n\nTarget-specific Alt-R crRNA (Dr.Cas9.LRP2A.1.AC,/AltR1/rCrC rCrUrC rGrCrU rUrArU rArUrU rCrUrC rCrArA rGrUrU rUrUrA rGrArG rCrUrA rUrGrC rU/AltR2/) and common Alt-R tracrRNA were synthesized by IDT and each RNA was dissolved in duplex buffer (IDT) as 100 \u03bcM stock solution. Stock solutions were stored at \u221220\u00b0C. To prepare the crRNA:tracrRNA duplex, equal volumes of 100 \u03bcM Alt-R crRNA and 100 \u03bcM Alt-R tracrRNA stock solutions were mixed together and annealed by heating followed by gradual cooling to room temperature by manufacture instruction: 95\u00b0C, 5 min on PCR machine; cool to 25\u00b0C; cool to 4\u00b0C rapidly on ice. The 50 \u03bcM crRNA:tracrRNA duplex stock solution was stored at \u221220\u00b0C.\n\n#### Preparation of crRNA:tracrRNA:Cas9 RNP Complexes\n\nCas9 protein (Alt-R S.p. Cas9 nuclease, v.3, IDT) was adjusted to 25 \u03bcM stock solution in 20 mM HEPES-NaOH (pH 7.5), 350 mM KCl, 20% glycerol, dispensed as 8 ul aliquots, and stored at \u221280\u00b0C. 25 \u03bcM crRNA:tracrRNA duplex was produced by mixing equal volumes of 50 \u03bcM crRNA:tracrRNA duplex stock and duplex buffer (IDT). We used 5 \u03bcM RNP complex. To generate 5 \u03bcM crRNA:tracrRNA:Cas9 RNP complexes: 1 \u03bcl 25 \u03bcM crRNA:tracrRNA duplex was mixed with 1 \u03bcl 25 \u03bcM Cas9 stock, 2 \u03bcl H2O, and 1 \u03bcl 0.25% phenol red solution. Prior to microinjection, the RNP complex solution was incubated at 37\u00b0C, 5 min and then placed at room temperature. Approximately, one nanoliter of 5 \u03bcM RNP complex was injected into the cytoplasm of one-cell stage embryos to generate F0 larva.\n\n### Statistical analysis\n\nThe qPCR time course gene expression data were analyzed using Generalized Linear Model (GLM) to assess the statistical significance. EdU-incorporation experiments and pTP53 staining were analyzed with GraphPad Prism 8. For both, p<0.05 was considered significant. All statistical analysis for iPSC-derived cardiomyocytes were performed using GraphPad Prism version 8.0 (GraphPad Software, San Diego CA, USA). Statistical significance was analyzed by unpaired Student\u2019s t-test, and one-way ANOVA and shown as mean\u00a0\u00b1\u00a0SEM. P-values were considered significant when p<0.05.\n\n### Study limitations\n\nHLHS candidate gene selection was based on in silico predictive algorithms to filter for functional coding and regulatory variants. Our WGS filtering strategy, designed to identify major-effect de novo, recessive and loss-of-function variants, did not include consideration of inherited, incompletely penetrant, autosomal dominant variants in other genes. The potential race-specific differences in LRP2 variants require further study. Differential gene expression, which was functionally validated as a powerful filter for candidate variant prioritization, excluded functional variants that do not alter gene expression. The validating KD modeling systems are justified insofar as all 10 prioritized candidate genes harbored recessive alleles inherited from the proband\u2019s unaffected parents, implicating a loss-of-function mechanism is likely in most cases. Not all human genes are conserved in Drosophila, but\u00a0~\u00a080% of disease-causing human genes have fly orthologs. While structural differences exist between hiPSC-CM, Drosophila and zebrafish hearts and human newborn cardiomyocytes, our combinatorial approach allows to uncover testable gene networks and interactions that is not feasible in mammalian model systems.\n",
+      "created_at": "2025-12-02T20:21:12.285681Z"
+    },
+    {
+      "id": "0b214da9-4093-40f3-bd0b-625cebf533e6",
+      "submission_id": "65f22f33-0276-45e9-a9ec-81bee997fb6e",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Antje Ebert, Department of Cardiology and Pneumology, University Medical Center G\u00f6ttingen Germany\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.59554.sa1](https://doi.org/10.7554/eLife.59554.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nAcceptance summary:\n\nThis paper describes a new method platform to facilitate understanding of the molecular basis of complex heart diseases. Employing a combined analysis of human, zebrafish, and Drosophila model systems, this study identifies and characterizes an exemplary genetic variant relevant to the development of Hypoplastic Left Heart Syndrome (HLHS). Use of this technological tool could facilitate future basic as well as translational research on the development of heart diseases.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Patient-specific functional genomics and disease modeling suggest a role for LRP2 in hypoplastic left heart syndrome\" for consideration by eLife. Your article has been reviewed by three peer reviewers, one of whom is a member of our Board of Reviewing Editors, and the evaluation has been overseen by Didier Stainier as the Senior Editor. The reviewers have discussed the reviews with one another, and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nWe would like to draw your attention to changes in our revision policy that we have made in response to COVID-19 (https://elifesciences.org/articles/57162). Specifically, when editors judge that a submitted work as a whole belongs in eLife but that some conclusions require a modest amount of additional new data, as they do with your paper, we are asking that the manuscript be revised to either limit claims to those supported by data in hand, or to explicitly state that the relevant conclusions require additional supporting data.\n\nOur expectation is that the authors will eventually carry out the additional experiments and report on how they affect the relevant conclusions either in a preprint on bioRxiv or medRxiv, or if appropriate, as a Research Advance in eLife, either of which would be linked to the original paper.\n\nSummary:\n\nHypoplastic Left Heart Syndrom (HLHS) is a severe congenital heart disease which remains genetically incompletely understood. The authors use a cross-functional genetic approach and a combination of Drosophila, zebrafish, and human iPSC model systems to identify novel genetic elements that underlie HLHS. The authors selected a variant in LDL receptor related protein 2 (LRP2) identified from a sporadic HLHS proband-parent trio to examine contribution of this gene defect to HLHS disease phenotypes. WGS data were filtered for rare de-novo, recessive and loss-of-function variants in candidate genes prior to functional evaluation. Three different model systems were utilized to evaluate dysregulations in the presence of the selected LRP2 variant in context of HLHS. This integrated analysis is powerful and could indeed help in identifying and assessing genetic determinants of human disorders.\n\nThe authors suggest a model in which Wnt and Shh-mediated signaling impairs cardiomyocyte proliferation in HLHS. New evidence provided to support this model is scarce; the mechanisms of FZD10/PTCH1-dependent effects on LRP2 are not sufficiently substantiated. Also, there are concerns regarding assessment of the cardiomyocyte proliferation defect.\n\nOverall, this manuscript addresses a topic of interest with state of the art methodology and represents a valuable tool and resource. As a resource platform, this tool could be of broader use to researchers in the field. We have the following suggestions to improve the manuscript.\n\nEssential revisions:\n\n1) To lock in mechanistic evidence for the proposed model would require substantial new experimental data. On the other hand, the integrated approach employed in this manuscript contributes merit as a resource platform. To be considered as a tool and resource, conclusions should be adapted to reflect that the novel contribution of this paper is a technological platform which may identify novel variant mutations in genetic disorders such as HLHS. Claims on the presented network model as a mechanistic basis, as well as on causality of the LRP2 variant should be removed or reduced. The authors should especially re-consider the context of the existing LRP2 mutant mouse model (Baardman et al., 2016) which displays a left-ventricular non-compaction phenotype. Moreover, the authors should discuss how their experimental pipeline could be extended to better assess causality of the LRP2 variant.\n\n2) Experiments addressing the function of LRP2 as an HLHS candidate gene using adult Drosophila hearts are not convincing, as postmitotic cardiac cells will limit an assessment of proliferation defects. The effect of LRP2 on cardiac cell proliferation should be better documented. For example, testing candidate gene function on cardioblast formation during heart development in Drosophila embryos or, alternatively, zebrafish embryos could be more informative.\n\n3) The title should indicate this work to cover a cross-species genomics method platform rather than disease modeling.\n\nRevisions expected in follow-up work:\n\n1) A causal link that the LRP2 variant mutation critically contributes to HLHS disease phenotypes should be provided, using an LRP2 variant Drosophila or zebrafish line, or mutation-correction in patient-specific iPSCs.\n\n2) Experiments should be performed to demonstrate how LRP2 regulates cell cycle and cardiomyocyte proliferation via Wnt/Shh-dependent signaling. Can a direct LRP2-dependent regulation of FZD10/PTCH1 be confirmed e.g. in interaction studies? To support modulation by Wnt agonists/Shh antagonists in presence of the LRP2 variant, additional regulators of these pathways should be as assessed. The zebrafish model (CRISPR lrp2a mutants) or an LRP2 variant Drosophila line could be used for this together with siRNAs or CRISPR for knock-down/ knockout, targeting LRP2.\n",
+      "created_at": "2025-12-02T20:21:12.285681Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T20:21:12.285681Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T20:21:12.285681Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "6b3aabec-d6fe-422e-b251-996b64eaa74e",
+      "content_id": "8e697034-124f-400c-ab2f-f50ae4f79846",
+      "claim_id": "C1",
+      "claim": "Hypoplastic left heart syndrome (HLHS) is a congenital heart disease characterized by underdevelopment of the left ventricle, mitral and aortic valves, and aortic arch.",
+      "claim_type": "EXPLICIT",
+      "source": "Hypoplastic left heart syndrome (HLHS) is a congenital heart disease (CHD) characterized by underdevelopment of the left ventricle, mitral and aortic valves, and aortic arch.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a definitional statement from the introduction that establishes the clinical characteristics of HLHS.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:21:12.285681Z"
+    },
+    {
+      "id": "2faed730-ee16-4b89-969d-5746a8c8e941",
+      "content_id": "8e697034-124f-400c-ab2f-f50ae4f79846",
+      "claim_id": "C2",
+      "claim": "Variable phenotypic manifestations and familial inheritance patterns suggest that HLHS is genetically heterogeneous and may have significant environmental contributors.",
+      "claim_type": "EXPLICIT",
+      "source": "Variable phenotypic manifestations and familial inheritance patterns, together with the numerous studies linking it to a diverse array of genes, suggest that HLHS is genetically heterogeneous and may have significant environmental contributors (Elliott et al., 2003; Iascone et al., 2012; Theis et al., 2015a; Theis et al., 2015b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior research and is based on observed patterns in HLHS cases.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:21:12.285681Z"
+    },
+    {
+      "id": "a249c850-bd97-410a-9dda-2655c6fbf597",
+      "content_id": "8e697034-124f-400c-ab2f-f50ae4f79846",
+      "claim_id": "C3",
+      "claim": "Mice deficient for Sap130 and Pcdha9 exhibited left ventricular hypoplasia likely due to defective cardiomyocyte proliferation and differentiation, and increased cell death.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on a digenic mechanism, mice deficient for HDAC-associated protein-encoding Sap130 and protocadherin-coding Pcdha9 exhibited left ventricular (LV) hypoplasia that was likely due \u2013 at least in part \u2013 to defective cardiomyocyte proliferation and differentiation, and increased cell death (Liu et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to a published study (Liu et al., 2017) describing an animal model.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:21:12.285681Z"
+    },
+    {
+      "id": "6dbac6a6-1be5-4665-aeb6-4e80d82d8fc3",
+      "content_id": "8e697034-124f-400c-ab2f-f50ae4f79846",
+      "claim_id": "C4",
+      "claim": "HLHS-LV samples have more DNA damage and senescence with cell cycle arrest, and fewer cardiac progenitors and myocytes than controls.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly in humans, Gaber et al., 2013 provide evidence that HLHS-LV samples have more DNA damage and senescence with cell cycle arrest, and fewer cardiac progenitors and myocytes than controls.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to a published study (Gaber et al., 2013) on human HLHS samples.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:21:12.285681Z"
+    },
+    {
+      "id": "0e60eaec-c6cc-4dc7-9e59-db71bbf3bc9a",
+      "content_id": "8e697034-124f-400c-ab2f-f50ae4f79846",
+      "claim_id": "C5",
+      "claim": "Impaired cardiomyocyte proliferation could be a mechanism contributing to HLHS pathogenesis.",
+      "claim_type": "EXPLICIT",
+      "source": "These observations suggest that impaired cardiomyocyte proliferation could be a mechanism contributing to HLHS pathogenesis, although pathogenic genes controlling this process in humans remain to be identified and validated.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the observations cited in the previous studies.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:21:12.285681Z"
+    },
+    {
+      "id": "83135a7f-e292-413b-bb0f-6efe0522f63c",
+      "content_id": "8e697034-124f-400c-ab2f-f50ae4f79846",
+      "claim_id": "C6",
+      "claim": "The male proband (II.3) was diagnosed with non-syndromic HLHS by physical examination and echocardiography.",
+      "claim_type": "EXPLICIT",
+      "source": "The male proband (II.3) was diagnosed with non-syndromic HLHS by physical examination and echocardiography, which demonstrated aortic and mitral valve atresia, virtual absence of the left ventricular cavity, and severe aortic arch hypoplasia.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a clinical observation from the study's patient cohort.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:21:12.285681Z"
+    },
+    {
+      "id": "353306c8-08bd-4871-87af-77e9c37b7bf0",
+      "content_id": "8e697034-124f-400c-ab2f-f50ae4f79846",
+      "claim_id": "C7",
+      "claim": "The proband was born prematurely at 29 weeks gestation.",
+      "claim_type": "EXPLICIT",
+      "source": "He was born prematurely at 29 weeks gestation and underwent staged surgical palliation at 2 and 11 months of age.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is clinical data from the patient's medical history.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:21:12.285681Z"
+    },
+    {
+      "id": "6dcc6b5a-4751-41be-aafc-47a84620804a",
+      "content_id": "8e697034-124f-400c-ab2f-f50ae4f79846",
+      "claim_id": "C8",
+      "claim": "The proband underwent staged surgical palliation at 2 and 11 months of age.",
+      "claim_type": "EXPLICIT",
+      "source": "He was born prematurely at 29 weeks gestation and underwent staged surgical palliation at 2 and 11 months of age.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is clinical data from the patient's medical history.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:21:12.285681Z"
+    },
+    {
+      "id": "b5bdce08-79c5-4f5a-a2e5-fbe81ebaae0a",
+      "content_id": "8e697034-124f-400c-ab2f-f50ae4f79846",
+      "claim_id": "C9",
+      "claim": "Conversion to a fenestrated Fontan circulation at 3 years of age failed owing to systolic and diastolic heart failure.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversion to a fenestrated Fontan circulation at 3 years of age failed owing to systolic and diastolic heart failure, necessitating early take-down.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is clinical data from the patient's medical history.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:21:12.285681Z"
+    },
+    {
+      "id": "ac1591e9-92ad-4c9a-ae1d-ca5c67b61170",
+      "content_id": "8e697034-124f-400c-ab2f-f50ae4f79846",
+      "claim_id": "C10",
+      "claim": "The patient subsequently died of multi-organ system failure.",
+      "claim_type": "EXPLICIT",
+      "source": "The patient subsequently died of multi-organ system failure.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is clinical data from the patient's medical history.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:21:12.285681Z"
+    },
+    {
+      "id": "9b698dd0-8081-4ef1-90de-509d80858ae2",
+      "content_id": "8e697034-124f-400c-ab2f-f50ae4f79846",
+      "claim_id": "C11",
+      "claim": "Echocardiography revealed structurally and functionally normal hearts in the proband's mother, father and siblings.",
+      "claim_type": "EXPLICIT",
+      "source": "Echocardiography revealed structurally and functionally normal hearts in the proband's mother (I.2), father (I.1) and siblings (II.1 and II.2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is clinical data from echocardiographic examination of family members.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:21:12.285681Z"
+    },
+    {
+      "id": "09e9fe60-676d-403c-930c-46e2348ee769",
+      "content_id": "8e697034-124f-400c-ab2f-f50ae4f79846",
+      "claim_id": "C12",
+      "claim": "Maternal history is notable for four miscarriages.",
+      "claim_type": "EXPLICIT",
+      "source": "Maternal history is notable for four miscarriages.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is clinical data from the maternal medical history.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:21:12.285681Z"
+    },
+    {
+      "id": "28550b94-1b0c-4c20-917d-45dd85720a63",
+      "content_id": "8e697034-124f-400c-ab2f-f50ae4f79846",
+      "claim_id": "C13",
+      "claim": "Bioinformatic analysis revealed 5104 differentially expressed transcripts in d25 differentiated samples between proband vs. mother/father.",
+      "claim_type": "EXPLICIT",
+      "source": "In this in vitro cellular context, bioinformatic analysis revealed 5104 differentially expressed transcripts (DETs) in d25 differentiated samples between proband vs. mother/father (Supplementary file 1, Benjamini-corrected p<0.001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is data from RNA sequencing analysis of patient-derived iPSCs.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:21:12.285681Z"
+    },
+    {
+      "id": "0813c18f-b7c7-4f8a-a125-0fdff38fec12",
+      "content_id": "8e697034-124f-400c-ab2f-f50ae4f79846",
+      "claim_id": "C14",
+      "claim": "1,401 differentially expressed transcripts were concordantly differentially expressed between proband and both parents.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that 1,401 DETs were concordantly differentially expressed between proband and both parents (Figure 1C, Figure 1\u2014figure supplement 1, Supplementary files 1, 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is data from RNA sequencing analysis shown in Figure 1C and supplementary files.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:21:12.285681Z"
+    },
+    {
+      "id": "56d28910-4566-4bb4-b178-b1af5ba710f3",
+      "content_id": "8e697034-124f-400c-ab2f-f50ae4f79846",
+      "claim_id": "C15",
+      "claim": "KEGG analysis revealed TP53 pathway enrichment in proband cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with previous observations in HLHS fetuses (Gaber et al., 2013), KEGG analysis revealed TP53 pathway enrichment (Figure 1D), including cell cycle inhibition (Figure 1E and Figure 1\u2014figure supplement 1), consistent with cell proliferation being affected in proband cells.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is data from KEGG pathway analysis shown in Figure 1D and 1E.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:21:12.285681Z"
+    },
+    {
+      "id": "b119fce9-c19d-4c49-b58e-d99f4fcf2d96",
+      "content_id": "8e697034-124f-400c-ab2f-f50ae4f79846",
+      "claim_id": "C16",
+      "claim": "Proband hiPSC-CMs exhibited reduced percentage of EdU-positive cells as compared to parents.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, proband hiPSC-CMs exhibited reduced percentage of EdU-positive cells as compared to parents (Figure 1G,H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is experimental data from EdU-incorporation assays shown in Figure 1G and 1H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:21:12.285681Z"
+    },
+    {
+      "id": "ce20333b-1742-439f-b116-c483a60f3266",
+      "content_id": "8e697034-124f-400c-ab2f-f50ae4f79846",
+      "claim_id": "C17",
+      "claim": "The proband cells of families 75H and 151H exhibited significant reduction of proliferative activity as compared to the parents.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with our findings with 5H family-trio cells (Figure 1G,H), the proband cells of families 75H and 151H also exhibited significant reduction of proliferative activity as compared to the parents using the EdU-incorporation assay (Figure 1\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is experimental data from EdU-incorporation assays shown in Figure 1\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:21:12.285681Z"
+    },
+    {
+      "id": "534652de-28e5-4a7f-89e0-626b432e48cd",
+      "content_id": "8e697034-124f-400c-ab2f-f50ae4f79846",
+      "claim_id": "C18",
+      "claim": "siRNA-mediated knockdown of TP53 and CDKN1A in proband hiPSC-CMs significantly increased EdU incorporation as compared to siControl.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, siRNA-mediated knockdown (KD) of TP53 and CDKN1A in proband hiPSC-CMs significantly increased EdU incorporation as compared to siControl (Figure 1I,J).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is experimental data from siRNA knockdown experiments shown in Figure 1I and 1J.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:21:12.285681Z"
+    },
+    {
+      "id": "641446cc-b258-4169-9889-d9c03c4d0f9c",
+      "content_id": "8e697034-124f-400c-ab2f-f50ae4f79846",
+      "claim_id": "C19",
+      "claim": "Array comparative genome hybridization ruled out a chromosomal deletion or duplication in the proband.",
+      "claim_type": "EXPLICIT",
+      "source": "Array comparative genome hybridization ruled out a chromosomal deletion or duplication in the proband.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is data from comparative genome hybridization analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:21:12.285681Z"
+    },
+    {
+      "id": "04eaa231-1879-4fd2-ad3f-62781336dd84",
+      "content_id": "8e697034-124f-400c-ab2f-f50ae4f79846",
+      "claim_id": "C20",
+      "claim": "WGS was performed on genomic DNA samples from all five family members, based on 101 base paired-end reads that passed quality control standards.",
+      "claim_type": "EXPLICIT",
+      "source": "WGS was carried out on genomic DNA samples from all five family members, based on 101 base paired-end reads that passed quality control standards; 92% of the reads mapped to the genome.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is methodological data from whole-genome sequencing.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:21:12.285681Z"
+    },
+    {
+      "id": "eb546d3f-1be0-4780-a3b2-c69878ce1b03",
+      "content_id": "8e697034-124f-400c-ab2f-f50ae4f79846",
+      "claim_id": "C21",
+      "claim": "92% of the reads mapped to the genome.",
+      "claim_type": "EXPLICIT",
+      "source": "WGS was carried out on genomic DNA samples from all five family members, based on 101 base paired-end reads that passed quality control standards; 92% of the reads mapped to the genome.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is data from whole-genome sequencing analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:21:12.285681Z"
+    },
+    {
+      "id": "808144e0-6075-4adb-ba0e-90b682472698",
+      "content_id": "8e697034-124f-400c-ab2f-f50ae4f79846",
+      "claim_id": "C22",
+      "claim": "Over 99% of the hg19 human reference genome had coverage.",
+      "claim_type": "EXPLICIT",
+      "source": "After marking and filtering out duplicate reads, over 99% of the hg19 human reference genome had coverage.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is data from whole-genome sequencing analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:21:12.285681Z"
+    },
+    {
+      "id": "a950c3f6-be6b-4811-89a7-6071b77527c9",
+      "content_id": "8e697034-124f-400c-ab2f-f50ae4f79846",
+      "claim_id": "C23",
+      "claim": "The average depth across the genome was 36X.",
+      "claim_type": "EXPLICIT",
+      "source": "The average depth across the genome was 36X and an average of 91% of the gene body regions (exons, introns, and 5' and 3' untranslated regions) demonstrated a minimal read depth of 20 reads.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is data from whole-genome sequencing analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:21:12.285681Z"
+    },
+    {
+      "id": "7dd25485-c8d4-4621-8e1c-e2c1db37a6c4",
+      "content_id": "8e697034-124f-400c-ab2f-f50ae4f79846",
+      "claim_id": "C24",
+      "claim": "An average of 91% of the gene body regions demonstrated a minimal read depth of 20 reads.",
+      "claim_type": "EXPLICIT",
+      "source": "The average depth across the genome was 36X and an average of 91% of the gene body regions (exons, introns, and 5' and 3' untranslated regions) demonstrated a minimal read depth of 20 reads.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is data from whole-genome sequencing analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:21:12.285681Z"
+    },
+    {
+      "id": "e222db20-e178-4c31-8fd8-514ea24547ce",
+      "content_id": "8e697034-124f-400c-ab2f-f50ae4f79846",
+      "claim_id": "C25",
+      "claim": "WGS of the family quintet was filtered for rare de novo, recessive and loss-of-function variants with predicted impact on protein structure or expression, yielding 114 variants in 61 genes.",
+      "claim_type": "EXPLICIT",
+      "source": "To identify novel HLHS candidate genes, WGS of the family quintet was filtered for rare de novo, recessive and loss-of-function variants with predicted impact on protein structure or expression, yielding 114 variants in 61 genes (Figure 2, Figure 2\u2014figure supplement 1,, Supplementary file 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is data from bioinformatic filtering of WGS data shown in Figure 2 and supplementary files.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:21:12.285681Z"
+    },
+    {
+      "id": "d6c5049c-814b-4c94-b302-f1f77a93b5ff",
+      "content_id": "8e697034-124f-400c-ab2f-f50ae4f79846",
+      "claim_id": "C26",
+      "claim": "Ten genes harboring compound heterozygous, hemizygous, or homozygous recessive variants were found to be differentially expressed within the HLHS proband's iPSCs at d0 and d25: HSPG2, APOB, LRP2, PRTG, SLC9A1, SDHD, JPT1, ELF4, HS6ST2, and SIK1.",
+      "claim_type": "EXPLICIT",
+      "source": "Ten genes harboring compound heterozygous (7), hemizygous (2), or homozygous (1) recessive variants (Table 1), absent in the unaffected siblings, were found to be differentially expressed within the HLHS proband's iPSCs at d0 and d25: HSPG2, APOB, LRP2, PRTG, SLC9A1, SDHD, JPT1, ELF4, HS6ST2, and SIK1 (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is data from integrated WGS and RNA-seq analysis shown in Figure 2A and Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:21:12.285681Z"
+    },
+    {
+      "id": "e0ec911d-ac94-49de-a411-d21058350650",
+      "content_id": "8e697034-124f-400c-ab2f-f50ae4f79846",
+      "claim_id": "C27",
+      "claim": "qPCR confirmed reduced expression of these genes in proband in d25 iPSC-CM, compared to the parental cells.",
+      "claim_type": "EXPLICIT",
+      "source": "qPCR confirmed reduced expression of these genes in proband in d25 iPSC-CM, compared to the parental cells (Figure 2\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is experimental data from qPCR validation shown in Figure 2\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:21:12.285681Z"
+    },
+    {
+      "id": "47c62ca8-5c7c-4aee-b21e-b149e45e2063",
+      "content_id": "8e697034-124f-400c-ab2f-f50ae4f79846",
+      "claim_id": "C28",
+      "claim": "Fly hearts heterozygous for LRP2/mgl show increased end-diastolic diameters.",
+      "claim_type": "EXPLICIT",
+      "source": "Example of fly hearts heterozygous for LRP2/mgl show increased end-diastolic diameters (EDD, measured at green line in D). Wilcoxon rank sum test: ***p<0.001.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is experimental data from Drosophila heart analysis shown in Figure 2C and 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:21:12.285681Z"
+    },
+    {
+      "id": "4bc22961-0398-47cb-b5a2-cbdae4872f8b",
+      "content_id": "8e697034-124f-400c-ab2f-f50ae4f79846",
+      "claim_id": "C29",
+      "claim": "KD of APOB or LRP2 reduced EdU incorporation in hiPSC-CM.",
+      "claim_type": "EXPLICIT",
+      "source": "KD of APOB (red bar) or LRP2 (green bar) reduced EdU incorporation. **p<0.01 one-way ANOVA.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is experimental data from EdU-incorporation assays shown in Figure 2E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:21:12.285681Z"
+    },
+    {
+      "id": "26025bc5-0dd1-43be-88ad-43f4b108ac14",
+      "content_id": "8e697034-124f-400c-ab2f-f50ae4f79846",
+      "claim_id": "C30",
+      "claim": "TP53 and CDKN1A are upregulated in hiPSC-CM upon KD of APOB or LRP2.",
+      "claim_type": "EXPLICIT",
+      "source": "qPCR results of TP53 and CDKN1A in hiPSC-CM upon KD of APOB or LRP2. *p<0.05 one-way ANOVA.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is experimental data from qPCR analysis shown in Figure 2G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:21:12.285681Z"
+    },
+    {
+      "id": "b33ab089-a3a0-45f8-9ca3-4d2afd5116d6",
+      "content_id": "8e697034-124f-400c-ab2f-f50ae4f79846",
+      "claim_id": "C31",
+      "claim": "Heart-specific KD of LRP2 (mgl) and JPT1 (CG1943) caused dilated heart phenotypes in Drosophila.",
+      "claim_type": "EXPLICIT",
+      "source": "By in vivo heart structure and function analysis (Fink et al., 2009; Ocorr et al., 2014), we found that KD of LRP2 (mgl) and JPT1 (CG1943) caused dilated heart phenotypes, while KD of APOB (apolpp), a circulating lipoprotein ligand, and again LRP2 (mgl), resulted in arrhythmias (Figure 2B\u2013D, Figure 2\u2014figure supplement 3; Videos 1\u20133), suggesting developmental defects of cardiac structure and function.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is experimental data from Drosophila heart analysis shown in Figure 2B-D and supplementary figures.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:21:12.285681Z"
+    },
+    {
+      "id": "322c75eb-6820-4620-b58f-1182ea18e831",
+      "content_id": "8e697034-124f-400c-ab2f-f50ae4f79846",
+      "claim_id": "C32",
+      "claim": "KD of APOB (apolpp) and LRP2 (mgl) resulted in arrhythmias in Drosophila.",
+      "claim_type": "EXPLICIT",
+      "source": "By in vivo heart structure and function analysis (Fink et al., 2009; Ocorr et al., 2014), we found that KD of LRP2 (mgl) and JPT1 (CG1943) caused dilated heart phenotypes, while KD of APOB (apolpp), a circulating lipoprotein ligand, and again LRP2 (mgl), resulted in arrhythmias (Figure 2B\u2013D, Figure 2\u2014figure supplement 3; Videos 1\u20133), suggesting developmental defects of cardiac structure and function.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is experimental data from Drosophila heart analysis shown in Figure 2B-D and supplementary figures.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:21:12.285681Z"
+    },
+    {
+      "id": "e140d132-0854-4eaf-a2d4-a59ae269aafa",
+      "content_id": "8e697034-124f-400c-ab2f-f50ae4f79846",
+      "claim_id": "C33",
+      "claim": "Heart-specific KD of HSPG2/Perlecan (trol) and SDHD (SdhD) exhibited a constricted phenotype in the heterozygous background for tinman/NKX2-5.",
+      "claim_type": "EXPLICIT",
+      "source": "In this in vivo context, heart-specific KD of two out of nine genes, HSPG2/Perlecan (trol), involved in extracellular matrix assembly (Sasse et al., 2008), and Succinate dehydrogenase subunit D SDHD (SdhD) exhibited a constricted phenotype (Figure 2\u2014figure supplement 3G,H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is experimental data from Drosophila heart analysis in a sensitized genetic background shown in Figure 2\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:21:12.285681Z"
+    },
+    {
+      "id": "2f62b914-e4d2-4839-8868-2b8871a15fc9",
+      "content_id": "8e697034-124f-400c-ab2f-f50ae4f79846",
+      "claim_id": "C34",
+      "claim": "LRP2 and APOB caused a marked reduction of EdU+ hiPSC-CMs (ACTN1+) and overall hiPSC cell numbers.",
+      "claim_type": "EXPLICIT",
+      "source": "Remarkably, two of the genes causing cardiac abnormalities when knocked down in Drosophila (Figure 2B\u2013D), LRP2 and APOB, also caused a marked reduction of EdU+ hiPSC-CMs (ACTN1+) and overall hiPSC cell numbers (Figure 2E,F and Figure 2\u2014figure supplement 4A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is experimental data from EdU-incorporation assays shown in Figure 2E, 2F and supplementary figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:21:12.285681Z"
+    },
+    {
+      "id": "196ca536-9a8a-4965-acf1-775957a4c5c9",
+      "content_id": "8e697034-124f-400c-ab2f-f50ae4f79846",
+      "claim_id": "C35",
+      "claim": "An upregulation of cell cycle inhibitors and apoptosis genes was observed upon LRP2 and APOB knockdown.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, we also observed an upregulation of cell cycle inhibitors and apoptosis genes (Figure 2\u2014figure supplement 4C), including TP53 and CDKN1A (Figure 2G), as well as a downregulation of cell cycle genes (Figure 2\u2014figure supplement 4B,C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is experimental data from gene expression analysis shown in Figure 2G and supplementary figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:21:12.285681Z"
+    },
+    {
+      "id": "c1f2d863-37d6-42fb-b89d-0b19a557d721",
+      "content_id": "8e697034-124f-400c-ab2f-f50ae4f79846",
+      "claim_id": "C36",
+      "claim": "HLHS patients had a ~3 fold increase in the frequency of rare, predicted-damaging LRP2 missense variants compared to healthy controls (10% versus 3.4%; p=0.0008).",
+      "claim_type": "EXPLICIT",
+      "source": "Remarkably, HLHS patients had a ~ 3 fold increase in the frequency of rare, predicted-damaging LRP2 missense variants compared to healthy controls (10% versus 3.4%; p=0.0008) (Figure 3A; Supplementary file 6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is data from rare variant burden analysis shown in Figure 3A and supplementary files.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:21:12.285681Z"
+    },
+    {
+      "id": "7f1b984e-03cd-4a94-8cfd-fcae00ba50f6",
+      "content_id": "8e697034-124f-400c-ab2f-f50ae4f79846",
+      "claim_id": "C37",
+      "claim": "Among the 13 patients who carried a LRP2 variant, three shared the same predicted-damaging variant (N3205D) with the 5H proband.",
+      "claim_type": "EXPLICIT",
+      "source": "Among the 13 patients who carried a LRP2 variant (Figure 3A,B), three shared the same predicted-damaging variant (N3205D) with the 5H proband (Figure 3B, Supplementary file 7).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is data from variant analysis shown in Figure 3A, 3B and supplementary files.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:21:12.285681Z"
+    },
+    {
+      "id": "c4936d50-8013-4833-8f5a-ae2aa8c6bff5",
+      "content_id": "8e697034-124f-400c-ab2f-f50ae4f79846",
+      "claim_id": "C38",
+      "claim": "LRP2 mRNA levels were lower in the probands of both 5H and 49H families, as well as in the parent carrying the variant, compared to non-variant carrying parent.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, qPCR results showed that LRP2 mRNA levels were lower in the probands of both families, as well as in the parent carrying the variant (CP), compared to non-variant carrying parent (NCP) (Figure 3C,D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is experimental data from qPCR analysis shown in Figure 3C and 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:21:12.285681Z"
+    },
+    {
+      "id": "890487fc-93e0-4985-8b55-bf43cd34a9ff",
+      "content_id": "8e697034-124f-400c-ab2f-f50ae4f79846",
+      "claim_id": "C39",
+      "claim": "Hearts from zebrafish larvae with reduced lrp2a function displayed a hypoplastic phenotype with decreased CM number.",
+      "claim_type": "EXPLICIT",
+      "source": "Hearts from larvae with reduced lrp2a function displayed a hypoplastic phenotype with decreased CM number (Figure 3E\u2013G) and dose-dependent reductions in ventricular chamber dimensions in morphants (Figure 3\u2014figure supplement 1D,E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is experimental data from zebrafish heart analysis shown in Figure 3E-G and supplementary figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:21:12.285681Z"
+    },
+    {
+      "id": "dbeced3a-18b9-4276-b6bc-07ee101fb083",
+      "content_id": "8e697034-124f-400c-ab2f-f50ae4f79846",
+      "claim_id": "C40",
+      "claim": "Loss-of-lrp2a-function compromised ventricular contractility and caused bradycardia in both morphants and CRISPR-edited larvae.",
+      "claim_type": "EXPLICIT",
+      "source": "Loss-of-lrp2a-function also compromised ventricular contractility and caused bradycardia in both morphants and CRISPR-edited larvae (Figure 3\u2014figure supplement 1F,G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is experimental data from zebrafish heart analysis shown in Figure 3\u2014figure supplement 1F and 1G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:21:12.285681Z"
+    },
+    {
+      "id": "fa4c500a-e2a0-46c1-88da-71ba0770a822",
+      "content_id": "8e697034-124f-400c-ab2f-f50ae4f79846",
+      "claim_id": "C41",
+      "claim": "All five validated candidate genes (APOB, HS6ST2, HSPG2, JPT1, LRP2) were connected to WNT and SHH signaling cascades.",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, in addition to TP53 pathway misregulation (Figure 1D\u2013E, Figure 2G and Figure 2\u2014figure supplement 4), all five genes were connected to WNT and SHH signaling cascades, both key regulators of cardiac differentiation and proliferation (Briggs et al., 2016; Gessert and K\u00fchl, 2010; Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is data from gene network analysis shown in Figure 4A, supported by citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:21:12.285681Z"
+    },
+    {
+      "id": "56fae703-ee53-46ea-a4ec-d976f6751f69",
+      "content_id": "8e697034-124f-400c-ab2f-f50ae4f79846",
+      "claim_id": "C42",
+      "claim": "The negative regulator of SHH pathway, PTCH1, was upregulated in proband cells compared to parental cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, RNA-seq analysis of the proband cells is consistent with this network prediction: the negative regulator of SHH pathway, PTCH1, was upregulated, while agonists of WNT signaling pathway, WNT1/3a/8a/10b and FZD10 (Dawson et al., 2013), were downregulated, compared to parental cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is data from RNA-seq analysis of proband cells.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:21:12.285681Z"
+    },
+    {
+      "id": "7040340d-c18f-4b1c-ad9a-28c0b17f253a",
+      "content_id": "8e697034-124f-400c-ab2f-f50ae4f79846",
+      "claim_id": "C43",
+      "claim": "Agonists of WNT signaling pathway, WNT1/3a/8a/10b and FZD10, were downregulated in proband cells compared to parental cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, RNA-seq analysis of the proband cells is consistent with this network prediction: the negative regulator of SHH pathway, PTCH1, was upregulated, while agonists of WNT signaling pathway, WNT1/3a/8a/10b and FZD10 (Dawson et al., 2013), were downregulated, compared to parental cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is data from RNA-seq analysis of proband cells.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:21:12.285681Z"
+    },
+    {
+      "id": "8d47222b-4162-468c-acbe-3307562c1951",
+      "content_id": "8e697034-124f-400c-ab2f-f50ae4f79846",
+      "claim_id": "C44",
+      "claim": "KD of LRP2 led to reduced FZD10 and increased PTCH1 RNA levels in healthy control hiPSC-CM.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, KD of LRP2 led to reduced FZD10 and increased PTCH1 RNA levels (Figure 4B,C), although WNT1/3a/8/10a were not affected.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is experimental data from qPCR analysis shown in Figure 4B and 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:21:12.285681Z"
+    },
+    {
+      "id": "8213a53b-d0c4-4e47-b423-8deb2c56faef",
+      "content_id": "8e697034-124f-400c-ab2f-f50ae4f79846",
+      "claim_id": "C45",
+      "claim": "LRP2 KD significantly reduced both BIO- and siPTCH1-induced proliferation in hiPSC-CMs.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that LRP2 KD significantly reduced both BIO- and siPTCH1-induced proliferation in hiPSC-CMs (Figure 4D\u2013G), suggesting that LRP2 is required for both WNT- and SHH-regulated CM proliferation.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is experimental data from EdU-incorporation assays shown in Figure 4D-G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:21:12.285681Z"
+    },
+    {
+      "id": "91a90dce-9dd1-404a-b121-99d5e851ebd2",
+      "content_id": "8e697034-124f-400c-ab2f-f50ae4f79846",
+      "claim_id": "C46",
+      "claim": "LRP2 is required for both WNT- and SHH-regulated CM proliferation.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that LRP2 KD significantly reduced both BIO- and siPTCH1-induced proliferation in hiPSC-CMs (Figure 4D\u2013G), suggesting that LRP2 is required for both WNT- and SHH-regulated CM proliferation.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference drawn from experimental data shown in Figure 4D-G.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:21:12.285681Z"
+    },
+    {
+      "id": "3a47419f-38a6-4fd7-a793-ccb5aaac7d6f",
+      "content_id": "8e697034-124f-400c-ab2f-f50ae4f79846",
+      "claim_id": "C47",
+      "claim": "Mutations in LRP2 have been previously associated with left ventricular non-compaction (LVNC) as well as other congenital heart defects in mouse.",
+      "claim_type": "EXPLICIT",
+      "source": "Mutations in LRP2 have been previously associated with left ventricular non-compaction (LVNC) as well as other congenital heart defects in mouse (Baardman et al., 2016) and in Donnai-Barrow Syndrome in humans (Baardman et al., 2016; Kantarci et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:21:12.285681Z"
+    },
+    {
+      "id": "beb37469-0be1-4f49-b39b-0b60b895aece",
+      "content_id": "8e697034-124f-400c-ab2f-f50ae4f79846",
+      "claim_id": "C48",
+      "claim": "Mutations in LRP2 have been associated with Donnai-Barrow Syndrome in humans.",
+      "claim_type": "EXPLICIT",
+      "source": "Mutations in LRP2 have been previously associated with left ventricular non-compaction (LVNC) as well as other congenital heart defects in mouse (Baardman et al., 2016) and in Donnai-Barrow Syndrome in humans (Baardman et al., 2016; Kantarci et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:21:12.285681Z"
+    },
+    {
+      "id": "1d8f43e6-9471-44d6-94f3-25ff060ef891",
+      "content_id": "8e697034-124f-400c-ab2f-f50ae4f79846",
+      "claim_id": "C49",
+      "claim": "LRP2 has not previously been linked to HLHS within curated bioinformatic networks.",
+      "claim_type": "EXPLICIT",
+      "source": "However, LRP2 has not previously been linked to HLHS within curated bioinformatic networks.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the absence of prior evidence in bioinformatic databases.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:21:12.285681Z"
+    },
+    {
+      "id": "cc86bc26-ead5-4fc4-80b2-37a2af8bf5e9",
+      "content_id": "8e697034-124f-400c-ab2f-f50ae4f79846",
+      "claim_id": "C50",
+      "claim": "The fundamental mechanisms of heart development and function are remarkably conserved between Drosophila and vertebrates, including a common transcriptional regulatory network.",
+      "claim_type": "EXPLICIT",
+      "source": "Although overall heart structure in flies differs from that in vertebrates, the fundamental mechanisms of heart development and function are remarkably conserved, including a common transcriptional regulatory network (Bodmer, 1995; Cripps and Olson, 2002), a shared protein composition (Cammarato et al., 2011), as well as electrical and metabolic properties (Ocorr et al., 2014; Ocorr et al., 2007; Diop and Bodmer, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to prior research.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:21:12.285681Z"
+    },
+    {
+      "id": "6dce1353-136a-42cc-ab5f-81dcb590e9b4",
+      "content_id": "8e697034-124f-400c-ab2f-f50ae4f79846",
+      "claim_id": "C51",
+      "claim": "Rare, predicted-damaging LRP2 variants were enriched in a HLHS cohort.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, rare, predicted-damaging LRP2 variants were enriched in a HLHS cohort; however, understanding their contribution to HLHS requires further investigation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is data from rare variant burden analysis in the HLHS cohort.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:21:12.285681Z"
+    },
+    {
+      "id": "7f2cb3f5-e6cb-4879-a68a-c1a568d300c1",
+      "content_id": "8e697034-124f-400c-ab2f-f50ae4f79846",
+      "claim_id": "C52",
+      "claim": "Compared to parents, the proband's iPSC-CMs exhibited reduced proliferation.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with hypoplastic heart defects, compared to parents the proband's iPSC-CMs exhibited reduced proliferation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is experimental data from EdU-incorporation assays.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:21:12.285681Z"
+    },
+    {
+      "id": "db1b6ed6-98ce-4245-a667-506dc20b7286",
+      "content_id": "8e697034-124f-400c-ab2f-f50ae4f79846",
+      "claim_id": "C53",
+      "claim": "LRP2 is required for cardiomyocyte proliferation and differentiation.",
+      "claim_type": "EXPLICIT",
+      "source": "siRNA/RNAi-mediated knockdown in healthy human iPSC-derived cardiomyocytes (hiPSC-CM) and in developing Drosophila and zebrafish hearts revealed that LDL receptor-related protein LRP2 is required for cardiomyocyte proliferation and differentiation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from experimental data across multiple model systems.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:21:12.285681Z"
+    },
+    {
+      "id": "47f47338-192d-4974-84bb-57371d74c7ba",
+      "content_id": "8e697034-124f-400c-ab2f-f50ae4f79846",
+      "claim_id": "C54",
+      "claim": "Drosophila has been established as an efficient model system to identify key genes and mechanisms critical for heart development and function that served as prototypes for vertebrate/mammalian studies.",
+      "claim_type": "EXPLICIT",
+      "source": "Drosophila has been established as an efficient model system to identify key genes and mechanisms critical for heart development and function that served as prototypes for vertebrate/mammalian studies, including in zebrafish and mice, due to high degree of conservation of genetic pathways and reduced genetic complexity (Bodmer and Frasch, 2010), e.g. the first cardiogenic transcription factor Nkx2-5/tinman, discovered in Drosophila (Azpiazu and Frasch, 1993; Bodmer, 1993), marked the beginning of a molecular-genetic understanding of cardiac specification (Bodmer, 1995; Cripps and Olson, 2002; Benson et al., 1999; Cordes and Srivastava, 2009; Qian and Srivastava, 2013; Kathiriya et al., 2015; Fahed et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to prior research.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:21:12.285681Z"
+    },
+    {
+      "id": "ee2fee9f-f709-49e7-b3db-ef4e4698b94e",
+      "content_id": "8e697034-124f-400c-ab2f-f50ae4f79846",
+      "claim_id": "C55",
+      "claim": "The first cardiogenic transcription factor Nkx2-5/tinman was discovered in Drosophila.",
+      "claim_type": "EXPLICIT",
+      "source": "Drosophila has been established as an efficient model system to identify key genes and mechanisms critical for heart development and function that served as prototypes for vertebrate/mammalian studies, including in zebrafish and mice, due to high degree of conservation of genetic pathways and reduced genetic complexity (Bodmer and Frasch, 2010), e.g. the first cardiogenic transcription factor Nkx2-5/tinman, discovered in Drosophila (Azpiazu and Frasch, 1993; Bodmer, 1993), marked the beginning of a molecular-genetic understanding of cardiac specification (Bodmer, 1995; Cripps and Olson, 2002; Benson et al., 1999; Cordes and Srivastava, 2009; Qian and Srivastava, 2013; Kathiriya et al., 2015; Fahed et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:21:12.285681Z"
+    },
+    {
+      "id": "495b3243-5093-43df-8742-00d52fbdf75e",
+      "content_id": "8e697034-124f-400c-ab2f-f50ae4f79846",
+      "claim_id": "C56",
+      "claim": "The discovery of Nkx2-5/tinman marked the beginning of a molecular-genetic understanding of cardiac specification.",
+      "claim_type": "EXPLICIT",
+      "source": "Drosophila has been established as an efficient model system to identify key genes and mechanisms critical for heart development and function that served as prototypes for vertebrate/mammalian studies, including in zebrafish and mice, due to high degree of conservation of genetic pathways and reduced genetic complexity (Bodmer and Frasch, 2010), e.g. the first cardiogenic transcription factor Nkx2-5/tinman, discovered in Drosophila (Azpiazu and Frasch, 1993; Bodmer, 1993), marked the beginning of a molecular-genetic understanding of cardiac specification (Bodmer, 1995; Cripps and Olson, 2002; Benson et al., 1999; Cordes and Srivastava, 2009; Qian and Srivastava, 2013; Kathiriya et al., 2015; Fahed et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to prior research.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:21:12.285681Z"
+    },
+    {
+      "id": "981cf59a-d592-42a8-b781-b18e31103fa0",
+      "content_id": "8e697034-124f-400c-ab2f-f50ae4f79846",
+      "claim_id": "C57",
+      "claim": "The digenic mouse HLHS model for Sap130 and pcdha9 has a penetrance of less than 30%.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, the only mouse HLHS model to date, a digenic mutant for Sap130 and pcdha9 (Liu et al., 2017), has a penetrance of less than 30%, indicating a profound role for subtle differences between genetic backgrounds.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior research (Liu et al., 2017).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:21:12.285681Z"
+    },
+    {
+      "id": "5e3412e0-d8f5-4812-8efb-1785792e7af0",
+      "content_id": "8e697034-124f-400c-ab2f-f50ae4f79846",
+      "claim_id": "C58",
+      "claim": "The low penetrance of the Sap130/pcdha9 mouse model indicates a profound role for subtle differences between genetic backgrounds.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, the only mouse HLHS model to date, a digenic mutant for Sap130 and pcdha9 (Liu et al., 2017), has a penetrance of less than 30%, indicating a profound role for subtle differences between genetic backgrounds.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the observation of low penetrance in the mouse model.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:21:12.285681Z"
+    },
+    {
+      "id": "10088201-1d61-4722-99c3-7d2ad7f306d2",
+      "content_id": "8e697034-124f-400c-ab2f-f50ae4f79846",
+      "claim_id": "C59",
+      "claim": "WNT and SHH signaling cascades are key regulators of cardiac differentiation and proliferation.",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, in addition to TP53 pathway misregulation (Figure 1D\u2013E, Figure 2G and Figure 2\u2014figure supplement 4), all five genes were connected to WNT and SHH signaling cascades, both key regulators of cardiac differentiation and proliferation (Briggs et al., 2016; Gessert and K\u00fchl, 2010; Figure 4A).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:21:12.285681Z"
+    },
+    {
+      "id": "4f94eb99-95a9-4735-b256-1de6e0d8e978",
+      "content_id": "8e697034-124f-400c-ab2f-f50ae4f79846",
+      "claim_id": "C60",
+      "claim": "LVNC is often accompanied by other CHDs.",
+      "claim_type": "EXPLICIT",
+      "source": "In fact, LVNC is often accompanied by other CHDs (St\u00e4hli et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:21:12.285681Z"
+    },
+    {
+      "id": "158b28a2-678e-42d6-acf3-949fcac24633",
+      "content_id": "8e697034-124f-400c-ab2f-f50ae4f79846",
+      "claim_id": "C61",
+      "claim": "CHDs in general and HLHS in particular are likely oligogenic and share many common factors.",
+      "claim_type": "EXPLICIT",
+      "source": "This may again be due to the fact that CHDs in general and HLHS in particular are likely oligogenic and share many common factors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement based on the observed patterns in CHD genetics.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:21:12.285681Z"
+    },
+    {
+      "id": "11d71cf8-04b1-49f2-9cdc-4d70683d57e8",
+      "content_id": "8e697034-124f-400c-ab2f-f50ae4f79846",
+      "claim_id": "C62",
+      "claim": "Approximately 80% of disease-causing human genes have fly orthologs.",
+      "claim_type": "EXPLICIT",
+      "source": "Not all human genes are conserved in Drosophila, but ~ 80% of disease-causing human genes have fly orthologs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement of established knowledge about gene conservation.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:21:12.285681Z"
+    },
+    {
+      "id": "bb4bcf96-7bd0-432d-afd4-2332d2b73340",
+      "content_id": "8e697034-124f-400c-ab2f-f50ae4f79846",
+      "claim_id": "C63",
+      "claim": "Impaired ventricular growth could be caused by changes in the p53 pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "Impaired ventricular growth could in addition be caused by changes in the p53 pathway, and our analysis of iPSC-derived cardiomyocytes suggests that p53 indeed depends on LRP2 levels.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis supported by experimental data from iPSC-derived cardiomyocytes.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:21:12.285681Z"
+    },
+    {
+      "id": "6b022ef7-7865-4d26-997f-112d3692c44c",
+      "content_id": "8e697034-124f-400c-ab2f-f50ae4f79846",
+      "claim_id": "C64",
+      "claim": "A multi-hit model of HLHS caused by sub-threshold hypomorphic alleles represents an attractive explanation of many CHDs.",
+      "claim_type": "EXPLICIT",
+      "source": "Such a multi-hit model of HLHS caused by sub-threshold hypomorphic alleles represents an attractive explanation of many CHDs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative hypothesis about the genetic architecture of HLHS.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:21:12.285681Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "3442ca47-cb84-47b6-9b53-b8a2186c2906",
+      "content_id": "8e697034-124f-400c-ab2f-f50ae4f79846",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "HLHS is a genetically heterogeneous congenital heart disease characterized by left ventricular underdevelopment. Prior studies in mice and human HLHS samples suggest impaired cardiomyocyte proliferation may contribute to HLHS pathogenesis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C5 establish the clinical definition of HLHS (C1), its genetic heterogeneity (C2), and cite prior evidence from mouse models (C3) and human samples (C4) linking impaired cardiomyocyte proliferation to HLHS. The inference in C5 is appropriately qualified as a hypothesis requiring further validation. These claims provide well-supported background context.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:21:12.285681Z"
+    },
+    {
+      "id": "7129b710-7c39-455c-a81b-5c42416baaeb",
+      "content_id": "8e697034-124f-400c-ab2f-f50ae4f79846",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The study characterized a family quintet (5H) with a male proband diagnosed with severe HLHS who died following failed surgical interventions, while parents and siblings had normal cardiac anatomy. Maternal history included four miscarriages.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6-C12 provide clinical characterization of the index family. These are straightforward clinical observations documented through physical examination and echocardiography. The data establish the family structure and phenotypes essential for the genetic analysis.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:21:12.285681Z"
+    },
+    {
+      "id": "0a129401-4526-4ebd-b34f-99c8389158c5",
+      "content_id": "8e697034-124f-400c-ab2f-f50ae4f79846",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "RNA-seq analysis of proband-derived iPSCs revealed 1,401 concordantly differentially expressed transcripts compared to both parents, with enrichment in TP53 pathway genes including cell cycle inhibitors. Proband hiPSC-CMs from three HLHS families (5H, 75H, 151H) exhibited reduced proliferation compared to parents, which was rescued by knockdown of TP53 or CDKN1A.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C13-C18 present RNA-seq data (C13-C15) and functional validation through EdU incorporation assays (C16-C18). The transcriptomic findings are supported by appropriate statistical correction (Benjamini p<0.001), and the proliferation defect is replicated across three independent families. The rescue experiments with TP53/CDKN1A knockdown provide mechanistic support. Statistical tests (one-way ANOVA) are appropriately applied.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:21:12.285681Z"
+    },
+    {
+      "id": "e567b5cf-96e9-470a-a544-19e744fe1650",
+      "content_id": "8e697034-124f-400c-ab2f-f50ae4f79846",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Whole-genome sequencing of the 5H family quintet achieved high coverage (36X average depth, >99% genome coverage) and identified 114 rare variants in 61 genes. Integration with RNA-seq data prioritized 10 candidate genes (HSPG2, APOB, LRP2, PRTG, SLC9A1, SDHD, JPT1, ELF4, HS6ST2, SIK1) harboring recessive variants and showing differential expression in proband iPSCs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C19-C27 describe the WGS methodology and variant filtering strategy. The sequencing quality metrics (C20-C24) are appropriate, and the filtering approach (C25) is clearly described. The integration of genomic and transcriptomic data (C26) to prioritize candidates is methodologically sound, with qPCR validation (C27) providing orthogonal confirmation. The approach is well-justified for hypothesis generation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:21:12.285681Z"
+    },
+    {
+      "id": "dc87a25d-1e16-4dac-a641-f0b835651cf9",
+      "content_id": "8e697034-124f-400c-ab2f-f50ae4f79846",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Heart-specific knockdown of candidate gene orthologs in Drosophila revealed cardiac phenotypes: LRP2/mgl and JPT1 caused dilated hearts, APOB/apolpp and LRP2/mgl caused arrhythmias, and HSPG2/trol and SDHD showed constricted phenotypes in a sensitized NKX2-5/tinman heterozygous background.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C28, C31-C33 present functional validation in Drosophila using established heart analysis methods (cited: Fink et al., 2009; Ocorr et al., 2014). Statistical analysis (Wilcoxon rank sum test, p<0.001) supports the phenotypic observations. The use of a sensitized genetic background (NKX2-5/tin+/-) for some genes is appropriate for detecting subtle phenotypes. The conservation-based approach is well-justified (see C50, C54).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:21:12.285681Z"
+    },
+    {
+      "id": "4ab5bc38-c597-4895-be46-877dd5ffc53e",
+      "content_id": "8e697034-124f-400c-ab2f-f50ae4f79846",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Knockdown of LRP2 or APOB in healthy hiPSC-CMs reduced EdU incorporation and total cell numbers, with upregulation of cell cycle inhibitors (TP53, CDKN1A) and apoptosis genes, and downregulation of cell cycle genes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C29-C30, C34-C35 demonstrate that LRP2 and APOB knockdown recapitulates key aspects of the proband phenotype in healthy cells. The EdU incorporation assays (C29, C34) are appropriately quantified with statistical testing (one-way ANOVA, p<0.01). Gene expression changes (C30, C35) provide mechanistic insight. The convergence of phenotypes across Drosophila and human cells strengthens the findings.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:21:12.285681Z"
+    },
+    {
+      "id": "33bafefc-f1dd-4daf-a03a-53370e031682",
+      "content_id": "8e697034-124f-400c-ab2f-f50ae4f79846",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Rare variant burden analysis revealed ~3-fold enrichment of predicted-damaging LRP2 missense variants in 130 HLHS patients compared to 861 controls (10% vs 3.4%, p=0.0008). Three patients shared the N3205D variant with the 5H proband. LRP2 mRNA levels were reduced in probands and variant-carrying parents in two families (5H, 49H).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C36-C38 present cohort-level genetic evidence. While the initial p-value (p=0.0008, C36) appears significant, the authors acknowledge in the manuscript that Caucasian-only sub-analysis yields p=0.05, and race-specific differences require further study. The shared N3205D variant (C37) is interesting but present in only 3/130 cases. The reduced LRP2 mRNA in variant carriers (C38) is intriguing but the mechanism linking coding variants to reduced expression is unclear and speculative. The enrichment provides suggestive but not definitive evidence for LRP2's role in HLHS.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:21:12.285681Z"
+    },
+    {
+      "id": "37421a95-60bd-45fb-a81c-85b5919f2f9b",
+      "content_id": "8e697034-124f-400c-ab2f-f50ae4f79846",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Loss of lrp2a function in zebrafish (via morpholino and CRISPR) resulted in hypoplastic hearts with decreased cardiomyocyte numbers, reduced ventricular chamber dimensions, compromised contractility, and bradycardia.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C39-C40 provide vertebrate in vivo validation using two independent methods (morpholino and CRISPR/Cas9). The phenotypes are quantified using established methods (SOHA analysis) with appropriate statistics (Student's t-test, one-way ANOVA). The hypoplastic ventricular phenotype is particularly relevant to HLHS. The use of two independent genetic perturbation methods strengthens confidence in the findings.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:21:12.285681Z"
+    },
+    {
+      "id": "9e109909-54f3-438b-bcb2-21511b61f3f5",
+      "content_id": "8e697034-124f-400c-ab2f-f50ae4f79846",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Gene network analysis connected the five validated candidates (APOB, HS6ST2, HSPG2, JPT1, LRP2) to WNT and SHH signaling pathways. RNA-seq showed PTCH1 (SHH inhibitor) upregulation and WNT agonists (WNT1/3a/8a/10b, FZD10) downregulation in proband cells. LRP2 knockdown reduced FZD10 and increased PTCH1 levels, and blocked BIO- and siPTCH1-induced proliferation in hiPSC-CMs, suggesting LRP2 is required for WNT- and SHH-regulated cardiomyocyte proliferation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C41-C46 propose a mechanistic model linking LRP2 to WNT/SHH signaling. The network analysis (C41) and RNA-seq observations (C42-C43) are descriptive. The functional experiments (C44-C45) show LRP2 knockdown affects pathway markers and blocks pathway-induced proliferation, but these are correlative observations. The inference that LRP2 is 'required' for WNT/SHH-regulated proliferation (C46) is reasonable but requires more direct mechanistic validation (e.g., rescue experiments, pathway activity reporters). The authors appropriately note that 'genetic interaction studies in our model systems are required' to substantiate the link.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:21:12.285681Z"
+    },
+    {
+      "id": "20174d9a-facb-4661-97c3-2069c05c0043",
+      "content_id": "8e697034-124f-400c-ab2f-f50ae4f79846",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "LRP2 mutations have been previously associated with left ventricular non-compaction (LVNC) and other congenital heart defects in mice, and with Donnai-Barrow Syndrome in humans, but LRP2 has not been previously linked to HLHS in curated bioinformatic networks.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C47-C49 accurately cite prior literature (Baardman et al., 2016; Kantarci et al., 2008) establishing LRP2's role in other cardiac conditions while noting its novelty in HLHS context. This contextualizes the current findings appropriately.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:21:12.285681Z"
+    },
+    {
+      "id": "187656c6-d62b-4afb-8579-9a6c961ed4f7",
+      "content_id": "8e697034-124f-400c-ab2f-f50ae4f79846",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Drosophila is an established model for identifying cardiac genes conserved in vertebrates, with ~80% of disease-causing human genes having fly orthologs. The discovery of Nkx2-5/tinman in Drosophila marked the beginning of molecular-genetic understanding of cardiac specification.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C50, C54-C56, C62 provide well-supported background on the utility of Drosophila as a cardiac model system, citing extensive prior literature. These claims justify the use of fly genetics in the study and are appropriately supported by citations.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:21:12.285681Z"
+    },
+    {
+      "id": "0310e163-d277-4a60-8fef-5e73964ee124",
+      "content_id": "8e697034-124f-400c-ab2f-f50ae4f79846",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The study established a multi-species platform demonstrating that LRP2 is required for cardiomyocyte proliferation and differentiation, with rare LRP2 variants enriched in HLHS patients and reduced proliferation observed in proband iPSC-CMs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C51-C53 summarize the main findings. The multi-species validation (C53) is well-supported by the experimental data across hiPSC, Drosophila, and zebrafish systems. The enrichment of LRP2 variants (C51) is supported but with caveats noted in the race-stratified analysis. The reduced proliferation in proband cells (C52) is consistently demonstrated. These summary claims accurately reflect the study's contributions while acknowledging limitations.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:21:12.285681Z"
+    },
+    {
+      "id": "661ec753-e42c-4d9f-bb83-45c3db96e004",
+      "content_id": "8e697034-124f-400c-ab2f-f50ae4f79846",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The only existing mouse HLHS model (Sap130/Pcdha9 double mutant) has <30% penetrance, indicating a profound role for genetic background differences in HLHS manifestation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C57-C58 accurately cite prior work (Liu et al., 2017) and draw a reasonable inference about the importance of genetic background. This contextualizes the oligogenic hypothesis of HLHS.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:21:12.285681Z"
+    },
+    {
+      "id": "7f594f08-b891-4186-944c-8c68b24dcf05",
+      "content_id": "8e697034-124f-400c-ab2f-f50ae4f79846",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The authors propose that HLHS may result from a multi-hit model involving sub-threshold hypomorphic alleles affecting WNT/SHH signaling and p53 pathways, with CHDs in general being oligogenic and sharing common factors.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C59-C61, C63-C64 present speculative hypotheses about HLHS etiology. While C59 is supported by citations, claims C61, C63, and C64 are explicitly speculative ('likely oligogenic', 'could be caused', 'represents an attractive explanation'). These are reasonable hypotheses generated from the data but lack direct experimental validation. The authors appropriately qualify these as speculative throughout the manuscript.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:21:12.285681Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "6b3aabec-d6fe-422e-b251-996b64eaa74e",
+      "result_id": "3442ca47-cb84-47b6-9b53-b8a2186c2906"
+    },
+    {
+      "claim_id": "2faed730-ee16-4b89-969d-5746a8c8e941",
+      "result_id": "3442ca47-cb84-47b6-9b53-b8a2186c2906"
+    },
+    {
+      "claim_id": "a249c850-bd97-410a-9dda-2655c6fbf597",
+      "result_id": "3442ca47-cb84-47b6-9b53-b8a2186c2906"
+    },
+    {
+      "claim_id": "6dbac6a6-1be5-4665-aeb6-4e80d82d8fc3",
+      "result_id": "3442ca47-cb84-47b6-9b53-b8a2186c2906"
+    },
+    {
+      "claim_id": "0e60eaec-c6cc-4dc7-9e59-db71bbf3bc9a",
+      "result_id": "3442ca47-cb84-47b6-9b53-b8a2186c2906"
+    },
+    {
+      "claim_id": "83135a7f-e292-413b-bb0f-6efe0522f63c",
+      "result_id": "7129b710-7c39-455c-a81b-5c42416baaeb"
+    },
+    {
+      "claim_id": "353306c8-08bd-4871-87af-77e9c37b7bf0",
+      "result_id": "7129b710-7c39-455c-a81b-5c42416baaeb"
+    },
+    {
+      "claim_id": "6dcc6b5a-4751-41be-aafc-47a84620804a",
+      "result_id": "7129b710-7c39-455c-a81b-5c42416baaeb"
+    },
+    {
+      "claim_id": "b5bdce08-79c5-4f5a-a2e5-fbe81ebaae0a",
+      "result_id": "7129b710-7c39-455c-a81b-5c42416baaeb"
+    },
+    {
+      "claim_id": "ac1591e9-92ad-4c9a-ae1d-ca5c67b61170",
+      "result_id": "7129b710-7c39-455c-a81b-5c42416baaeb"
+    },
+    {
+      "claim_id": "9b698dd0-8081-4ef1-90de-509d80858ae2",
+      "result_id": "7129b710-7c39-455c-a81b-5c42416baaeb"
+    },
+    {
+      "claim_id": "09e9fe60-676d-403c-930c-46e2348ee769",
+      "result_id": "7129b710-7c39-455c-a81b-5c42416baaeb"
+    },
+    {
+      "claim_id": "28550b94-1b0c-4c20-917d-45dd85720a63",
+      "result_id": "0a129401-4526-4ebd-b34f-99c8389158c5"
+    },
+    {
+      "claim_id": "0813c18f-b7c7-4f8a-a125-0fdff38fec12",
+      "result_id": "0a129401-4526-4ebd-b34f-99c8389158c5"
+    },
+    {
+      "claim_id": "56d28910-4566-4bb4-b178-b1af5ba710f3",
+      "result_id": "0a129401-4526-4ebd-b34f-99c8389158c5"
+    },
+    {
+      "claim_id": "b119fce9-c19d-4c49-b58e-d99f4fcf2d96",
+      "result_id": "0a129401-4526-4ebd-b34f-99c8389158c5"
+    },
+    {
+      "claim_id": "ce20333b-1742-439f-b116-c483a60f3266",
+      "result_id": "0a129401-4526-4ebd-b34f-99c8389158c5"
+    },
+    {
+      "claim_id": "534652de-28e5-4a7f-89e0-626b432e48cd",
+      "result_id": "0a129401-4526-4ebd-b34f-99c8389158c5"
+    },
+    {
+      "claim_id": "641446cc-b258-4169-9889-d9c03c4d0f9c",
+      "result_id": "e567b5cf-96e9-470a-a544-19e744fe1650"
+    },
+    {
+      "claim_id": "04eaa231-1879-4fd2-ad3f-62781336dd84",
+      "result_id": "e567b5cf-96e9-470a-a544-19e744fe1650"
+    },
+    {
+      "claim_id": "eb546d3f-1be0-4780-a3b2-c69878ce1b03",
+      "result_id": "e567b5cf-96e9-470a-a544-19e744fe1650"
+    },
+    {
+      "claim_id": "808144e0-6075-4adb-ba0e-90b682472698",
+      "result_id": "e567b5cf-96e9-470a-a544-19e744fe1650"
+    },
+    {
+      "claim_id": "a950c3f6-be6b-4811-89a7-6071b77527c9",
+      "result_id": "e567b5cf-96e9-470a-a544-19e744fe1650"
+    },
+    {
+      "claim_id": "7dd25485-c8d4-4621-8e1c-e2c1db37a6c4",
+      "result_id": "e567b5cf-96e9-470a-a544-19e744fe1650"
+    },
+    {
+      "claim_id": "e222db20-e178-4c31-8fd8-514ea24547ce",
+      "result_id": "e567b5cf-96e9-470a-a544-19e744fe1650"
+    },
+    {
+      "claim_id": "d6c5049c-814b-4c94-b302-f1f77a93b5ff",
+      "result_id": "e567b5cf-96e9-470a-a544-19e744fe1650"
+    },
+    {
+      "claim_id": "e0ec911d-ac94-49de-a411-d21058350650",
+      "result_id": "e567b5cf-96e9-470a-a544-19e744fe1650"
+    },
+    {
+      "claim_id": "47c62ca8-5c7c-4aee-b21e-b149e45e2063",
+      "result_id": "dc87a25d-1e16-4dac-a641-f0b835651cf9"
+    },
+    {
+      "claim_id": "b33ab089-a3a0-45f8-9ca3-4d2afd5116d6",
+      "result_id": "dc87a25d-1e16-4dac-a641-f0b835651cf9"
+    },
+    {
+      "claim_id": "322c75eb-6820-4620-b58f-1182ea18e831",
+      "result_id": "dc87a25d-1e16-4dac-a641-f0b835651cf9"
+    },
+    {
+      "claim_id": "e140d132-0854-4eaf-a2d4-a59ae269aafa",
+      "result_id": "dc87a25d-1e16-4dac-a641-f0b835651cf9"
+    },
+    {
+      "claim_id": "4bc22961-0398-47cb-b5a2-cbdae4872f8b",
+      "result_id": "4ab5bc38-c597-4895-be46-877dd5ffc53e"
+    },
+    {
+      "claim_id": "26025bc5-0dd1-43be-88ad-43f4b108ac14",
+      "result_id": "4ab5bc38-c597-4895-be46-877dd5ffc53e"
+    },
+    {
+      "claim_id": "2f62b914-e4d2-4839-8868-2b8871a15fc9",
+      "result_id": "4ab5bc38-c597-4895-be46-877dd5ffc53e"
+    },
+    {
+      "claim_id": "196ca536-9a8a-4965-acf1-775957a4c5c9",
+      "result_id": "4ab5bc38-c597-4895-be46-877dd5ffc53e"
+    },
+    {
+      "claim_id": "c1f2d863-37d6-42fb-b89d-0b19a557d721",
+      "result_id": "33bafefc-f1dd-4daf-a03a-53370e031682"
+    },
+    {
+      "claim_id": "7f1b984e-03cd-4a94-8cfd-fcae00ba50f6",
+      "result_id": "33bafefc-f1dd-4daf-a03a-53370e031682"
+    },
+    {
+      "claim_id": "c4936d50-8013-4833-8f5a-ae2aa8c6bff5",
+      "result_id": "33bafefc-f1dd-4daf-a03a-53370e031682"
+    },
+    {
+      "claim_id": "890487fc-93e0-4985-8b55-bf43cd34a9ff",
+      "result_id": "37421a95-60bd-45fb-a81c-85b5919f2f9b"
+    },
+    {
+      "claim_id": "dbeced3a-18b9-4276-b6bc-07ee101fb083",
+      "result_id": "37421a95-60bd-45fb-a81c-85b5919f2f9b"
+    },
+    {
+      "claim_id": "fa4c500a-e2a0-46c1-88da-71ba0770a822",
+      "result_id": "9e109909-54f3-438b-bcb2-21511b61f3f5"
+    },
+    {
+      "claim_id": "56fae703-ee53-46ea-a4ec-d976f6751f69",
+      "result_id": "9e109909-54f3-438b-bcb2-21511b61f3f5"
+    },
+    {
+      "claim_id": "7040340d-c18f-4b1c-ad9a-28c0b17f253a",
+      "result_id": "9e109909-54f3-438b-bcb2-21511b61f3f5"
+    },
+    {
+      "claim_id": "8d47222b-4162-468c-acbe-3307562c1951",
+      "result_id": "9e109909-54f3-438b-bcb2-21511b61f3f5"
+    },
+    {
+      "claim_id": "8213a53b-d0c4-4e47-b423-8deb2c56faef",
+      "result_id": "9e109909-54f3-438b-bcb2-21511b61f3f5"
+    },
+    {
+      "claim_id": "91a90dce-9dd1-404a-b121-99d5e851ebd2",
+      "result_id": "9e109909-54f3-438b-bcb2-21511b61f3f5"
+    },
+    {
+      "claim_id": "3a47419f-38a6-4fd7-a793-ccb5aaac7d6f",
+      "result_id": "20174d9a-facb-4661-97c3-2069c05c0043"
+    },
+    {
+      "claim_id": "beb37469-0be1-4f49-b39b-0b60b895aece",
+      "result_id": "20174d9a-facb-4661-97c3-2069c05c0043"
+    },
+    {
+      "claim_id": "1d8f43e6-9471-44d6-94f3-25ff060ef891",
+      "result_id": "20174d9a-facb-4661-97c3-2069c05c0043"
+    },
+    {
+      "claim_id": "cc86bc26-ead5-4fc4-80b2-37a2af8bf5e9",
+      "result_id": "187656c6-d62b-4afb-8579-9a6c961ed4f7"
+    },
+    {
+      "claim_id": "47f47338-192d-4974-84bb-57371d74c7ba",
+      "result_id": "187656c6-d62b-4afb-8579-9a6c961ed4f7"
+    },
+    {
+      "claim_id": "ee2fee9f-f709-49e7-b3db-ef4e4698b94e",
+      "result_id": "187656c6-d62b-4afb-8579-9a6c961ed4f7"
+    },
+    {
+      "claim_id": "495b3243-5093-43df-8742-00d52fbdf75e",
+      "result_id": "187656c6-d62b-4afb-8579-9a6c961ed4f7"
+    },
+    {
+      "claim_id": "11d71cf8-04b1-49f2-9cdc-4d70683d57e8",
+      "result_id": "187656c6-d62b-4afb-8579-9a6c961ed4f7"
+    },
+    {
+      "claim_id": "6dce1353-136a-42cc-ab5f-81dcb590e9b4",
+      "result_id": "0310e163-d277-4a60-8fef-5e73964ee124"
+    },
+    {
+      "claim_id": "7f2cb3f5-e6cb-4879-a68a-c1a568d300c1",
+      "result_id": "0310e163-d277-4a60-8fef-5e73964ee124"
+    },
+    {
+      "claim_id": "db1b6ed6-98ce-4245-a667-506dc20b7286",
+      "result_id": "0310e163-d277-4a60-8fef-5e73964ee124"
+    },
+    {
+      "claim_id": "981cf59a-d592-42a8-b781-b18e31103fa0",
+      "result_id": "661ec753-e42c-4d9f-bb83-45c3db96e004"
+    },
+    {
+      "claim_id": "5e3412e0-d8f5-4812-8efb-1785792e7af0",
+      "result_id": "661ec753-e42c-4d9f-bb83-45c3db96e004"
+    },
+    {
+      "claim_id": "10088201-1d61-4722-99c3-7d2ad7f306d2",
+      "result_id": "7f594f08-b891-4186-944c-8c68b24dcf05"
+    },
+    {
+      "claim_id": "4f94eb99-95a9-4735-b256-1de6e0d8e978",
+      "result_id": "7f594f08-b891-4186-944c-8c68b24dcf05"
+    },
+    {
+      "claim_id": "158b28a2-678e-42d6-acf3-949fcac24633",
+      "result_id": "7f594f08-b891-4186-944c-8c68b24dcf05"
+    },
+    {
+      "claim_id": "bb4bcf96-7bd0-432d-afd4-2332d2b73340",
+      "result_id": "7f594f08-b891-4186-944c-8c68b24dcf05"
+    },
+    {
+      "claim_id": "6b022ef7-7865-4d26-997f-112d3692c44c",
+      "result_id": "7f594f08-b891-4186-944c-8c68b24dcf05"
+    }
+  ],
+  "comparisons": []
+}

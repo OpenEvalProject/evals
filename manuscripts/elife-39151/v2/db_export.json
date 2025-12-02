@@ -1,0 +1,2382 @@
+{
+  "submission": {
+    "id": "fb3505a2-b3cf-474d-9047-9bad05109395",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T06:38:12.330057Z",
+    "updated_at": "2025-12-02T06:38:12.330057Z"
+  },
+  "content": [
+    {
+      "id": "302d2366-be33-48df-8045-e34a6bfe79ac",
+      "submission_id": "fb3505a2-b3cf-474d-9047-9bad05109395",
+      "content_type": "manuscript",
+      "content_text": "# The fate of hippocampal synapses depends on the sequence of plasticity-inducing events\n\n## Authors\n\n- J Simon Wiegert<sup>1</sup> ([ORCID: 0000-0003-0893-9349](https://orcid.org/0000-0003-0893-9349))\n- Mauro Pulin<sup>1</sup> ([ORCID: 0000-0001-6255-0276](https://orcid.org/0000-0001-6255-0276))\n- Christine Elizabeth Gee<sup>1</sup> ([ORCID: 0000-0003-0345-3665](https://orcid.org/0000-0003-0345-3665))\n- Thomas G Oertner<sup>1</sup> ([ORCID: 0000-0002-2312-7528](https://orcid.org/0000-0002-2312-7528)) \u2020\n\n### Affiliations\n\n1. Institute for Synaptic Physiology, Center for Molecular Neurobiology Hamburg University Medical Center Hamburg-Eppendorf Hamburg Germany\n2. Research Group Synaptic Wiring and Information Processing, Center for Molecular Neurobiology Hamburg University Medical Center Hamburg-Eppendorf Hamburg Germany\n\n\u2020 Corresponding author\n\n## Abstract\n\nSynapses change their strength in response to specific activity patterns. This functional plasticity is assumed to be the brain\u2019s primary mechanism for information storage. We used optogenetic stimulation of rat hippocampal slice cultures to induce long-term potentiation (LTP), long-term depression (LTD), or both forms of plasticity in sequence. Two-photon imaging of spine calcium signals allowed us to identify stimulated synapses and to follow their fate for the next 7 days. We found that plasticity-inducing protocols affected the synapse\u2019s chance for survival: LTP increased synaptic stability, LTD destabilized synapses, and the effect of the last stimulation protocol was dominant over earlier stimulations. Interestingly, most potentiated synapses were resistant to depression-inducing protocols delivered 24 hr later. Our findings suggest that activity-dependent changes in the transmission strength of individual synapses are transient, but have long-lasting consequences for synaptic lifetime.\n\n## Introduction\n\nGraded changes in synaptic strength, driven by specific activity patterns, are a candidate mechanism for information storage in the brain (Chaudhuri and Fiete, 2016). When entire pathways are potentiated by high frequency stimulation, the increase in synaptic coupling can indeed be recorded for several days (Bliss and Lomo, 1973). Increases in the size of synapses, the number of postsynaptic transmitter receptors and release of transmitter, have been shown to underlie increases in synaptic strength. A prevailing theory is that graded changes in synaptic strength persist as a memory trace of former activity. At the level of individual synapses, however, dramatic fluctuations in spine volume over time scales of hours to days cast doubt on whether information can be stored for long periods in the analog strength of synapses (Holtmaat and Caroni, 2016; Berry and Nedivi, 2017). An alternative hypothesis is that over longer time periods, information is stored not in the strength but in the number of connections, which, at the level of individual synapses, would manifest as a change in synaptic lifetime. Supporting evidence comes from the findings that long term depression (LTD) decreases synaptic lifetime (N\u00e4gerl et al., 2004; Bastrikova et al., 2008; Wiegert and Oertner, 2013) and that spine structure becomes stabilized and growth persists up to 3 days after induction of long term potentiation (LTP) (De Roo et al., 2008; Hill and Zito, 2013).\n\nAn important consideration is that new information, manifest as changing patterns of activity, constantly arrives at synapses. For example, LTP can be reversed by low-frequency stimulation (LFS), but such depotentiation may only occur 1\u20132 hr after LTP induction (Fujii et al., 1991; O'Dell and Kandel, 1994; Abraham and Huggett, 1997; Zhou et al., 2004). How a once potentiated synapse responds to LFS one day later is therefore difficult to predict. Our goals were to monitor the fate of individual spine synapses after induction of LTP and to explore how sequential plasticity-inducing events affect synaptic lifetime. Using organotypic hippocampal slice cultures and optical stimulation of channelrhodopsin-expressing CA3 pyramidal neurons, we found that Schaffer collateral synapses were potentiated by 5 Hz stimulation if complex spike bursts were induced in the postsynaptic CA1 neuron (Thomas et al., 1998). We based our assessment of synaptic strength changes on the amplitude and probability of spine calcium transients (EPSCaTs). During successful synaptic transmission, Ca2+ ions enter the spine through voltage-gated calcium cannels and NMDA receptors which both have a steep dependence on membrane depolarization. Thus, EPSCaTs depend on AMPA receptor activity (Holbro et al., 2010) and can be used to detect changes in synaptic strength (Emptage et al., 2003). Compared to glutamate uncaging experiments, which only report changes in postsynaptic strength (potency), optogenetic interrogation is also sensitive to presynaptic changes (release probability), providing a more complete picture of synaptic transmission. We then followed the fate of stimulated spine synapses and their neighbors over 7 days.\n\nAs suggested by previous studies, LTD and LTP differentially affected synaptic lifetime. However, sequentially inducing LTD and LTP did not return spines to their basal state, but resulted in reduced elimination rates similar to synapses which only underwent LTP. Once LTP was induced, it became almost impossible to induce subsequent LTD. In the few experiments were LTD could be induced 24 hr after LTP, synaptic lifetime was similar to that of spines that only underwent LTD. Thus, multiple weight adjustments are not summed in a linear fashion, but the most recent plasticity event determines the lifetime of a Schaffer collateral synapse.\n\n## Results\n\n### Optical theta frequency stimulation induced LTP at Schaffer collateral synapses\n\nCA3 neurons expressing the light-sensitive channel ChR2(E123T/T159C) (Berndt et al., 2011) together with the presynaptic vesicle marker synaptophysin-tdimer2 were stimulated with short pulses of blue light (2 ms long, 40 ms interval, \u03bb\u00a0=\u00a0470 nm). Paired pulses were used to reduce the number of trials necessary to detect responding spines and to be consistent with our previous study (Wiegert and Oertner, 2013). On CA1 pyramidal cells expressing GCaMP6s and mCerulean, active spines were identified by imaging stimulation-induced excitatory postsynaptic calcium transients (EPSCaTs). After an active spine was identified we switched to line scanning mode, defining a scan curve that intersected the responding spine and a small number of neighboring spines at high speed (500 Hz, Figure 1A). Calcium transients were restricted to the responding spine and were not detected in the dendrite. To provide an additional read-out of synaptic strength on the population level, a neighboring CA1 cell (\u2018reporter neuron\u2019) was patch-clamped to record excitatory postsynaptic synaptic currents (EPSCs) before, during, and after plasticity induction. Light stimulation evoked EPSCs with a magnitude of 1330\u00a0\u00b1\u00a0220 pA, consistent with our previous study (Wiegert and Oertner, 2013). To induce LTP, we stimulated CA3 pyramidal cells with 150 light pulses at 5 Hz, a theta-frequency stimulation (TFS) paradigm, which potentiates CA3-CA1 but not CA3-CA3 synapses in an NMDAR-dependent fashion (Moody et al., 1998; Thomas et al., 1998). TFS-induced LTP requires transient (30 s) stimulation of enough CA3 cells to drive postsynaptic CA1 cells to fire complex spike bursts (CSBs, Figure 1\u2014figure supplement 1) (Thomas et al., 1998). To facilitate LTP induction, ACSF with reduced divalent ion concentration (2 mM CaCl2, 1 mM MgCl2) was used to increase excitability. We adjusted the stimulation light intensity to recruit more and more CA3 neurons until the synaptic drive was just below the action potential threshold in the CA1 reporter neuron. During optogenetic theta-frequency stimulation (oTFS), the reporter neuron responses changed from mostly subthreshold EPSPs with occasional single action potentials to CSBs (Figure 1C, Figure 1\u2014figure supplement 1) (Losonczy and Magee, 2006). CSBs in the reporter neuron were time-locked with large calcium transients in the stretch of dendrite adjacent to the postsynaptic spine (Figure 1B, middle column), suggesting that synchronized CSBs were occurring in neighboring neurons. EPSCaTs were strongly potentiated 30 min after oTFS, generating calcium transients that frequently spread into the dendrite (Figure 1B, Figure 2B). Likewise, the amplitude of EPSCs in the reporter neuron increased after oTFS, indicating successful induction of LTP (Figure 1B, Figure 2A). Both CSBs and LTP induction were blocked in the presence of the NMDA receptor antagonist APV (Figure 2A and B). Thus, oTFS induced plasticity via NMDAR activation as previously demonstrated (Thomas et al., 1998). In some experiments, CSBs and large dendritic calcium transients did not occur during oTFS, likely due to insufficient numbers of virus-transfected CA3 pyramidal neurons. When no large dendritic calcium transients were triggered during oTFS, spine calcium signals were not consistently potentiated 30 min after oTFS (Figure 2B, Figure 2\u2014figure supplement 1A and B). To estimate changes in EPSCaT and EPSC amplitude, 10\u201320 successive traces before and after stimulation were analyzed and averaged (Figure 1\u2014figure supplement 2). EPSCs, integrating the activity of many synapses, showed considerably lower trial-to-trial variability (no failures) compared to EPSCaTs.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/39151/elife-39151-fig1-v2.jpg)\n\n**Figure 1.:** (A) Left: A fiber-coupled LED (\u03bb\u00a0=\u00a0470 nm) was used to locally stimulate ChR2-expressing CA3 neurons. Spines on GCaMP6s/mCerulean-expressing CA1 pyramidal cells were imaged with two-photon microscopy. For parallel electrical recordings, a second CA1 neuron was patch-clamped (reporter neuron). Middle: oblique dendrite branching off the apical trunk filled with mCerulean. Detection of active spines was done with GCaMP6s during presynaptic optogenetic stimulation. Stimulation-induced fluorescence changes (\u0394F) of GCaMP6s were analyzed in fast frame scans (squares) of oblique dendrites until a responsive spine was detected (red square). Right: Magnified view of GCaMP6s fluorescence in the dendritic section harboring an activated spine. The laser was scanned in a user-defined trajectory across multiple spines and the parental dendrite during Ca2+ imaging (red curve). (B) Fluorescence signal across time from arbitrary line scan on dendrite shown in A during ChR2-stimulation before (\u2018pre oTFS\u2019), immediately (\u2018post oTFS\u2019) and 30 min (\u201830 min post oTFS\u2019) after optical theta-frequency stimulation (oTFS). Temporally matched traces from multiple trials and electrophysiological recording from a reporter neuron are shown below. During oTFS the Ca2+ response was recorded in frame scan mode (\u2018during oTFS\u2019). The GCaMP6s-signal (\u0394F) is shown for three selected time points during oTFS. GCaMP6s-traces from the same spines and dendrite imaged in line scans are shown below together with the corresponding electrophysiological recording in voltage clamp mode from the reporter neuron.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/39151/elife-39151-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) Experiment where no dendritic calcium spikes were observed in the GCaMP6s-expressing CA1 pyramidal cell (colored traces, top) and no complex spike bursts (CSBs) were triggered in the neighboring \u2018reporter\u2019 neuron (black traces). (B) Experiment with dendritic calcium spikes and synchronous CSBs in the reporter neuron.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/39151/elife-39151-fig1-figsupp2-v2.jpg)\n\n**Figure 1\u2014figure supplement 2.:** (A) EPSCaT amplitude of spine one is plotted for all trials shown in Figure 1B. Open circles show failures, filled circles show successes. Baseline responses (\u2018pre oTFS\u2019) and responses immediately (\u2018post oTFS\u2019) and 30 min after oTFS (\u201830 min post oTFS\u2019) are averaged and plotted below. (B) EPSC amplitude is plotted for the recording from the reporter neuron shown in Figure 1B. Average responses plotted below were normalized to the baseline (\u2018pre oTFS\u2019).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/39151/elife-39151-fig2-v2.jpg)\n\n**Figure 2.:** (A) Changes in excitatory postsynaptic current (EPSC) amplitude in reporter neurons immediately after and 30 min after oTFS in the absence (left) or presence (right) of the NMDA receptor antagonist APV during oTFS. EPSCs were significantly increased after 30 min (p=0.012, n\u00a0=\u00a020 slice cultures). The increase was blocked by APV (p=0.69, n\u00a0=\u00a06 slice cultures). (B) Relative change of average excitatory Ca2+ transients (EPCaTs) in individual spines 30 min after the oTFS protocol plotted against the average spine Ca2+ during oTFS. In experiments indicated by filled red circles, APV was present during oTFS. (C) EPSCaT amplitude (p=0.0008, n\u00a0=\u00a020 slice cultures) and EPSCaT potency (successes only, p=0.0025) but not EPSCaT probability (PCa, p>0.05) were increased 30 min after oTFS in experiments where complex spike bursts (CSBs) were induced during oTFS. (D) Maximum intensity projections of mCerulean fluorescence in dendritic segment harboring a responding spine that was successfully potentiated (blue arrowhead). Volume of oTFS spines (p=0.002, n\u00a0=\u00a026 spines) and nearest (p=0.0001, n\u00a0=\u00a045 spines) but not distant neighbors (p=0.83, n\u00a0=\u00a058 spines) was increased 30 min after oTFS in experiments where CSBs were induced during oTFS. (E) Spine volume was not increased when NMDA receptors were blocked with APV during oTFS (p>0.05, n\u00a0=\u00a07 spines).\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/39151/elife-39151-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) The null hypothesis, no change in average EPSCaT amplitude after oTFS, could not be rejected (p>0.05, n\u00a0=\u00a017). (B) The null hypothesis, no change in EPSCaT potency after oTFS, could not be rejected (p>0.05, n\u00a0=\u00a017). (C) The probability of EPSCaTs was significantly reduced after oTFS (p=0.0098, n\u00a0=\u00a017). (A) \u2013 (C): nonparametric Friedman test followed by Dunn\u2019s multiple comparison test. (D) The null hypothesis, no change in spine head volume after oTFS, could not be rejected (p>0.05, n\u00a0=\u00a011, Wilcoxon matched-pairs signed rank test).\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/39151/elife-39151-fig2-figsupp2-v2.jpg)\n\n**Figure 2\u2014figure supplement 2.:** (A) The null hypothesis, no change in average EPSCaT amplitude over time, could not be rejected (p>0.05, n\u00a0=\u00a016). (B) The null hypothesis, no change in EPSCaT potency over time, could not be rejected (p>0.05, n\u00a0=\u00a016). (C) The null hypothesis, no change in EPSCaT probability (PCa) over time, could not be rejected (p>0.05, n\u00a0=\u00a016). (A) \u2013 (C): nonparametric Friedman test followed by Dunn\u2019s multiple comparison test. (D) The null hypothesis, no change in spine head volume after oTFS, could not be rejected (p>0.05, n\u00a0=\u00a016, RM one-way ANOVA).\n\nTaking into consideration only those experiments in which CSBs and dendritic calcium transients were evoked during oTFS, we observed that neither the amplitude nor the potency (amplitude of successes) of EPSCaTs changed immediately after oTFS. Thirty minutes later, however, both were significantly increased (Figure 2C), whereas spines that did not experience oTFS showed no change in EPSCaTs over time (Figure 2\u2014figure supplement 2). The slowly developing potentiation was also reflected in the EPSCs recorded in the reporter neuron (Figure 2A), consistent with previous reports (Moody et al., 1998; Thomas et al., 1998). LTP had no significant effect on the probability of EPSCaT occurrence (PCa, Figure 2C), suggesting that the potentiation was mainly due to postsynaptic changes. Interestingly, while EPSCaT potency was not affected in experiments where no CSBs were elicited during oTFS, PCa was significantly reduced (Figure 2\u2014figure supplement 1C). Thus, in experiments where the synaptic drive was not strong enough to trigger postsynaptic spikes, presynaptic activity in the theta frequency range appeared to elicit a weak form of presynaptic depression. No such reduction in PCa was seen when no oTFS was applied (Figure 2\u2014figure supplement 2).\n\nOptogenetic TFS-induced synaptic potentiation was accompanied by slow changes in spine structure (mCerulean, Figure 2D). The head volume of spines that experienced CSBs was unchanged immediately after oTFS, but increased by 21 \u00b1 6% during the next 30 min. The nearest neighboring spines also showed a small but significant increase in volume (15 \u00b1 3%), whereas no consistent change was detected at more distant spines (2 \u00b1 3%). When no oTFS was applied, the volume of responding spines (5 \u00b1 4%) and neighbors (\u22124 \u00b1 3%) remained stable (Figure 2\u2014figure supplement 2). In oTFS experiments that failed to elicit CSBs or when NMDA receptors were blocked during oTFS, stimulated spines did not exhibit significant volume changes (Figure 2E; Figure 2\u2014figure supplement 1D), suggesting similar requirements for the successful induction of functional and structural plasticity. As our functional assessment was limited to the few spines that were synaptically connected to ChR2-expressing CA3 neurons, we could not test whether neighboring enlarged spines were also functionally potentiated.\n\n### Synaptic properties 24 hr after LTP\n\nWe next asked whether synaptic potentiation was maintained during the 24 hr following oTFS. Consistent with our first data set, spine head volume and EPSCaT potency were significantly increased 30 min after oTFS (Figure 3A and B). Twenty-four hours after LTP induction, however, both measures had returned to baseline. We detected no significant change in EPSCaT probability either 30 min or 24 hr after oTFS (Figure 3C). Thus, beyond the acute effects on the day of potentiation, we did not observe permanent changes in synaptic strength after oTFS-induced LTP.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/39151/elife-39151-fig3-v2.jpg)\n\n**Figure 3.:** (A) Analysis of volume changes of oTFS spines 30 min and 24 hr after oTFS. The volume increase 30 min after oTFS (p=0.03, n\u00a0=\u00a015 slice cultures) was not maintained 24 hr later (p=0.42). (B) Analysis of EPSCaT potency before, 30 min and 24 hr after oTFS. The increased potency 30 min after oTFS (p=0.015, n\u00a0=\u00a014 slice cultures) has significantly decreased again 24 hr later (p=0.005) and was similar to the condition before oTFS (p=0.55). (C) EPSCaT probability (PCa) did not change 30 min and 24 hr after oTFS (p=0.32, n\u00a0=\u00a014 slice cultures). For details on the statistical tests, please refer to the Materials and Methods section. (D) Long-term survival analysis after LTP. Spines were imaged at d0, d1 and d7. Maximum intensity projections of mCerulean fluorescence in dendritic segment harboring a responding spine that was successfully potentiated (green arrowhead). (E) Spine survival 7 days after successful LTP induction on day 0. Surviving fractions are shown for responding spines, nearest and distant neighbors. (F) Spine survival 7 days after oTFS in experiments where no complex spike bursts were induced. Directly stimulated spines and their neighbors were analyzed separately. (G) Spine survival over 7 days under baseline conditions without any optical stimulation (black) and in spines responsive to optical test pulses (resp. spines, white) which were not exposed to plasticity-inducing protocols.\n\n### Effect of long-term potentiation on synaptic lifetime\n\nNext, we determined whether oTFS-induced LTP affected synaptic lifetime. Previous work showed that potentiated spines are not characterized by permanently enlarged heads, but are less likely to be eliminated during the next 3 days (De Roo et al., 2008). We therefore assessed the stability of potentiated spines and their neighbors during the following week. Under control conditions without external stimulation, 27% of all spines disappeared between days 1 and 7. This turnover rate is in agreement with previous measurements in hippocampal slice cultures (Wiegert and Oertner, 2013) and mouse hippocampus in vivo (Attardo et al., 2015). LTP induced by oTFS appeared to increase synaptic lifetime. In a dataset of 14 spines, 11 spines experienced CSBs and were potentiated. During the following 7 days, only one of these 11 potentiated spines disappeared (Figure 3D and E). The stability of spines next to the potentiated spine was also affected, mirroring the transient head volume increase on day 0 (Figures 2D and 3A). Compared to controls, nearest-neighbor spines disappeared less often between days 1 and 7 whereas more distant spines (>5 \u00b5m) were eliminated more often (Figure 3E). These findings are consistent with the concept of biochemical signaling molecules activated inside stimulated spines during oTFS and diffusing into neighboring, non-stimulated spines (Nishiyama and Yasuda, 2015), affecting acutely their size and on longer timer scales, their survival. As a control, we also analyzed oTFS experiments in which no CSBs were elicited in CA1 neurons. In these experiments, stimulated spines as well as their neighbors had reduced survival rates (Figure 3F). This destabilizing effect was contingent on 5 Hz presynaptic activation, as spines that were not stimulated at all or only stimulated by test pulses (responsive spines) had higher survival rates (Figure 3G).\n\n### Effects of sequential plasticity-inducing protocols on synaptic lifetime\n\nAs we established previously (Wiegert and Oertner, 2013), optogenetic low frequency stimulation (oLFS, 900 APs at 1 Hz) induced long-term depression (LTD) at Schaffer collateral synapses, frequently abolishing EPSCaTs in the stimulated spine altogether (Figure 4A). In agreement with our previous results, 45% of spines that received oLFS disappeared between days 1 and 7. We speculated that if we induced LTP 24 hr after LTD, the doomed spines could perhaps be stabilized (Figure 4B). LTD on day 0 was considered successful when the average spine Ca2+ response dropped to less than 90% of the baseline response 30 min after oLFS, which was the case in 70% (28/40) of the experiments (Figure 4\u2014figure supplement 1). Twenty-four hours later, we recorded a new baseline, since EPSCaT amplitudes frequently changed from one day to the other. We then applied oTFS to the spines that were depressed on the previous day. LTP induction was considered successful when the average spine Ca2+ response increased to more than 110% of the day one baseline response after oTFS, which was the case in 64% (18/28) of all experiments on day 1 (Figure 4C). We also considered spines that did not experience CSBs to assess whether the oTFS protocol itself would affect synapse lifetime independently of successful LTP induction. Thus, we compared two groups: synapses that underwent LTD followed by LTP (45% of all tested synapses) and synapses that also experienced LTD and oTFS, but did not show any potentiation in response to oTFS (25% of all tested synapses). Synapses that did not display LTD after oLFS on day 0 (30% of all tested synapses) were not considered further. When LTP was induced after LTD, only 12% of spines disappeared between days 1 and 7, indicating stabilization of doomed synapses. Of the spines that received oTFS after LTD but did not get potentiated, 43% disappeared between days 1 and 7, similar to the 45% disappearance rate seen after oLFS only. These results confirmed that successful LTP induction was necessary to rescue synapses from elimination. Without LTP, the oTFS stimulation protocol by itself had no measurable effect on the survival of previously depressed synapses.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/39151/elife-39151-fig4-v2.jpg)\n\n**Figure 4.:** (A) Long-term survival analysis after LTD. Spines were imaged at d0, d1 and d7. Below: Maximum intensity projections of mCerulean fluorescence in dendritic segment harboring a responding spine that was successfully depressed (red arrowhead). Open arrowhead on day seven indicates position of eliminated spine. Corresponding EPSCaT traces from indicated time points are shown in red. Pie chart shows quantification of spine survival after 7 days. (B) LTP 24 hr after LTD. Below: Dendritic segment harboring a responding spine that was successfully depressed on day 0 and potentiated on day 1 (yellow arrowhead). (C) Assessment of synaptic weight changes induced by oLFS on day 0 and oTFS on day 1. Dashed box in left graph indicates all experiments where LTD was successfully induced on day 0. Only these spines were considered in the LTP experiment on day 1 (middle). Yellow shaded box indicates all experiments where LTP was successfully induced on day 1 (after LTD on day 0; LTD \u25ba LTP). Red shaded box indicates experiments where oTFS did not lead to LTP (only LTD). Pie charts show quantification of spine survival after 7 days for these two conditions.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/39151/elife-39151-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A) Outcome of all experiments where optogenetic low-frequency stimulation (oLFS) on day 0 was followed by optogenetic theta-frequency stimulation (oTFS) on day 1 (n\u00a0=\u00a030). (B) Outcome of selected experiments (subset of A, n\u00a0=\u00a018) where oLFS induced LTD (on day 0) and oTFS induced LTP of spine calcium signals (on day 1). Survival rate of this group (88%) is shown in Figure 4c.\n\nWe next tested whether the LTP-induced stabilization of spines would persist even if LTD was subsequently induced (Figure 5A). LTP on day 0 was induced in 72% (18/25) of spines after oTFS (Figure 5B, Figure 5\u2014figure supplement 1), similar to the set of oTFS experiments 1 day after oLFS (64%, p=0.85) and the first set of oTFS experiments (Figure 2B, 62%, 26/42, p=0.41). Again, we considered only spines where LTP was successfully induced. When oLFS was applied 24 hr later, we observed that LTD was induced in only 33% (6/18) of previously potentiated synapses on the next day (Figure 5B), a much lower success rate than the 70% when oLFS was applied with no prior plasticity. Since we were concerned that the 1 Hz induction protocol could have become supra-threshold 24 hr after LTP, we counted the number of spikes generated in the reporter neuron during oLFS. The median number of APs in reporter neurons during the 900 pulses of the oLFS protocol was 1.5 in naive cultures (n\u00a0=\u00a032) and 5.0 one day after LTP (n\u00a0=\u00a013, p=0.4, Mann-Whitney), corresponding to a postsynaptic spike probability below 1% in both cases. Thus, strong postsynaptic spiking during the oLFS protocol is not a likely explanation for the difficulty to depress previously potentiated synapses. We also considered the possibility that some synapses were already in a depressed state and could therefore not be depressed further. However, the initial EPSCaT amplitude (before oLFS) was not a predictor of successful LTD induction (Figure 5\u2014figure supplement 1C). These results point to a synapse-specific memory of past potentiation events that cannot be detected as increased spine volume, increased release probability or increased EPSCaT potency (see Figure 3).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/39151/elife-39151-fig5-v2.jpg)\n\n**Figure 5.:** (A) Long-term survival analysis of experiments where LTD was induced 24 hr after LTP. Maximum intensity projections of mCerulean fluorescence in dendritic segment harboring a responding spine that was successfully potentiated on day 0 and depressed on day 1 (yellow arrowhead). (B) Assessment of synaptic weight changes induced by oTFS on day 0 and oLFS on day 1. Dashed box in left graph indicates all experiments where LTP was successfully induced on day 0. Only these spines were considered in the LTD experiment on day 1 (middle). Yellow shaded box indicates all experiments where LTD was successfully induced on day 1 (after LTP on day 0, LTP \u25ba LTD). Note the low probability of depression after potentiation. Green shaded box encompasses experiments where oLFS did not lead to LTD or even led to LTP (only LTP). Pie charts show quantification of spine survival after 7 days for these two conditions. (C) Comparison of spine survival 7 days after various plasticity paradigms. Stimulated spines are shown as open circles; non-stimulated neighbors within 10 \u00b5m are shown as filled circles. Values for \u2018control\u2019 and \u2018LTD\u2019 are from Wiegert and Oertner, 2013. (D) LTP stabilizes the spine carrying the potentiated synapse, but reduces the average lifetime of more distant (>5 \u00b5m) spines on the same dendrite.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/39151/elife-39151-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** (A) Outcome of all experiments where oTFS on day 0 was followed by oLFS on day 1 (n\u00a0=\u00a020). (B) Outcome of selected experiments where oTFS induced LTP (on day 0) and oLFS induced LTD of spine calcium signals (on day 1, n\u00a0=\u00a06). Survival rate of this group (50%) is shown in Figure 5b. (C) Initial EPSCaT amplitude on day one did not predict success of LTD induction (p>0.05, n\u00a0=\u00a020). (D) Initial EPSCaT amplitude on day 0 (before oTFS) did not predict 7 day survival (p>0.05, n\u00a0=\u00a020). (E) EPSCaT amplitude on day1 (before oLFS) did not predict 7 day survival (p>0.05, n\u00a0=\u00a020).\n\nIn the few experiments where LTD was successfully induced 24 hr after LTP, 50% of spines disappeared by day 7 (Figure 5B). In the more typical case where oLFS failed to induce LTD, only 8% of spines disappeared by day 7. One explanation for the different survival rates could be that the absolute strength of the synapse before the oLFS protocol determined whether it survived, irrespective of the sign of plasticity on day 1 (i.e. the synapse has a memory of its strength and not of its plastic change). However, the strength of the synapse on day 0 or on day one did not predict its survival (Figure 5\u2014figure supplement 1D and E), leaving successful induction of depression as the only risk factor we could identify. In summary, the stabilizing effect of LTP on spines can be overwritten by subsequent LTD (Figure 5C), but this sequence of plasticity events is not very likely to happen.\n\n## Discussion\n\nIn vitro studies of synaptic plasticity are most relevant if stimulation protocols resemble in vivo activity patterns. Theta burst stimulation (TBS, 100 Hz bursts repeated at 5 Hz) is a commonly used experimental protocol to induce LTP in vitro (Abraham and Huggett, 1997), but individual CA3 pyramidal cells do not spike at 100 Hz in vivo (Mizuseki and Buzs\u00e1ki, 2013). During exploratory behavior, CA3 pyramidal cells fire single action potentials which are synchronized across the population by the activity of local interneurons. Here we show that LTP and spine-specific stabilization can be induced at 5 Hz, the typical carrier frequency of rodent hippocampus, if a sufficient number of inputs are activated synchronously (Moody et al., 1998; Thomas et al., 1998). We consider theta-frequency stimulation (TFS) the physiological equivalent of spike-timing-dependent potentiation (STDP) protocols, replacing the artificial current injection into the postsynaptic neuron by highly synchronized excitatory synaptic input. Synchronized synaptic input can trigger dendritic calcium spikes, local regenerative events caused by the opening of voltage-dependent channels (NMDARs and VDCCs). These events can be electrophysiogically identified as complex spike bursts, consisting of several fast sodium spikes on top of a broader depolarization mediated by dendritic calcium currents (Magee and Johnston, 1997; Golding et al., 2002; Losonczy and Magee, 2006; Grienberger et al., 2014). In our experiments, the occurrence of dendritic calcium spikes during the induction protocol was highly predictive of successful LTP induction at individual synapses (Figure 2B). Recent studies in head-fixed mice running on a treadmill suggest that theta-frequency-modulated synaptic input to CA1 pyramidal cells triggers dendritic calcium spikes which are required for synaptic potentiation and place cell formation (Bittner et al., 2015; Sheffield et al., 2017). Thus, dendritic calcium spikes during complex spike bursts, evoked by synchronized input from entorhinal cortex and CA3 pyramidal cells, are part of the physiological mechanism for the selective potentiation of active Schaffer collateral synapses during behavior (Hasselmo et al., 2002).\n\nSpine calcium imaging allowed us to detect synaptic plasticity at single synapses without electrodes. Newly inserted AMPA receptors lead to stronger depolarization of the spine head during the EPSP, more efficient unblocking of NMDA receptors and EPSCaT potentiation. It is important to note, however, that EPSCaT amplitudes are not linearly related to somatic EPSCs. The ratio between AMPA and NMDA receptors is not constant between spines, and peak calcium concentrations depend on spine head volume and spine neck resistance (Grunditz et al., 2008). High EPSCaT amplitudes can even lead to SK channel activation and dampening of the EPSP (Bloodgood and Sabatini, 2007). These confounds, which make EPSCaT amplitude comparisons between spines difficult, are less of a problem when the same spine is compared before and after plasticity induction to differentiate between LTP and LTD.\n\nCounting the number of EPSCaTs in a set of stimulated trials can be used as a proxy for presynaptic release probability, as postsynaptic failures (successful glutamate release without postsynaptic calcium influx) are thought to be rare at Schaffer collateral synapses (Nimchinsky et al., 2004). In contrast to LTD, where the reduction in average EPSCaT amplitude was mainly due to decreased release probability (Wiegert and Oertner, 2013), oTFS-induced LTP strongly enhanced EPSCaT potency, but did not seem to affect release probability. This confirms that postsynaptic mechanisms such as AMPA receptor insertion account for this form of potentiation (Shi et al., 1999; Lu et al., 2001; Matsuzaki et al., 2004). Analyzing spine volume changes supported the notion of pre- vs postsynaptic plasticity mechanisms: While LTD induction did not affect spine volume (Wiegert and Oertner, 2013), LTP triggered significant growth of the postsynaptic compartment (Figure 2D). Going beyond the first hours after plasticity induction, we asked how these different forms of plasticity would influence the tenacity of synapses that actively contributed to postsynaptic spiking in comparison to inactive synapses on the same dendrite.\n\nTwenty-four hours after induction of LTP, synapses were back to their baseline state with respect to the amplitude and probability of spine calcium transients as well as the volume of the spine head. Yet, a long-lasting, synapse-specific memory of the potentiation event was maintained, since these once-potentiated spines were more likely to persist during the following week compared to other spines on the same dendritic branch, or non-stimulated controls. Similarly, the effects of LTD may outlast the actual depression: CA1 spines did not show any lasting reduction in volume, but their life expectancy was significantly reduced after LTD (Wiegert and Oertner, 2013). A similar sequence of transient LTD followed by delayed spine elimination was found at the parallel fiber synapse on Purkinje cells in the cerebellum (Aziz et al., 2014). These findings support the theoretical concept that information could be robustly stored in the topology of the network rather than in the analog strength of individual synapses. The mechanism linking LTP to synaptic stabilization, and LTD to destabilization, is likely to involve several processes. Synaptic tenacity is known to be affected by trans-synaptic proteins such as Neuroligin-1 and SynCAM-1 (Zeidan and Ziv, 2012; K\u00f6rber and Stein, 2016), PSD-95 (De Roo et al., 2008; Cane et al., 2014), ubiquitin protein ligase E3A (Kim et al., 2016), ensheathment of the synapse by astrocyte processes (Bernardinelli et al., 2014) and many other local factors. It may be a combination of local physical changes and distributed network effects, such as the recurrent reactivation of a specific circuit (Wei and Koulakov, 2014; Novitskaya et al., 2016), which makes once potentiated synapses robust against depression (Figure 5B) and pruning (Figure 3E). New tools for chronic activity modulation may allow dissecting use-dependent synapse stabilization in future experiments (Lopez et al., 2016; Beck et al., 2018). The link between LTP and long-term structural stability we show on the single-synapse level could explain why learning-induced spines in motor cortex are more stable than their pre-existing neighbors and persist for months after training (Xu et al., 2009; Yang et al., 2009). LTP-induced tenacity might be a general principle to connect different time scales of cortical circuit plasticity.\n\nFailure to evoke postsynaptic CSBs upon oTFS led to presynaptic depression in our experiments, which was followed by increased spine elimination (Figure 3F). This effect has been shown to be mediated by autocrine glutamate signaling at the presynaptic terminal and may not involve postsynaptic signaling (Padamsey et al., 2017). If, on the other hand, the postsynaptic neuron is driven to spike, retrograde signaling via NO (nitric oxide) leads to an increase in release probability, which explains why we did not see presynaptic depression in synapses that experienced CSBs (Figure 2C). Thus, the classical Hebbian rule of rewarding only synapses that causally contribute to postsynaptic AP firing also seems to apply to long-term stability. However, our results suggest that changes are not perfectly confined to the directly driven synapse: Optogenetic TFS not only affected strength, volume and long-term stability of the stimulated spines, but also increased volume and stability of its immediate neighbors (Figure 2D, Figure 3E). This is consistent with short-range diffusion of \u2018potentiating factors\u2019 such as activated RhoA and Cdc42 out of the directly stimulated spine (Murakoshi et al., 2011; Yasuda, 2017). In contrast, more distant spines on the same dendrite (5\u201310 \u00b5m) showed no increase in volume and a decrease in lifetime (Figure 2D, Figure 3E), confirming an earlier 3 day study (De Roo et al., 2008). Since we increased the optogenetic drive to CA3 during oTFS, we could not map the position of all spines that were active during plasticity induction. Therefore, we were not able to study the spatial extent of spine destabilization, for\u00a0example by selecting a \u2018control\u2019 branch that received no input during oTFS. Nevertheless, our 7 day follow-up points to a center-surround function that stabilizes the immediate neighbors (<5 \u00b5m) of potentiated synapses, although they were most likely not active during the induction protocol (Figure 5D). As we have previously shown, LTD-induced destabilization has an even larger (>10 \u00b5m) lateral spread (Wiegert and Oertner, 2013). Apparently, the local environment is as important for the long-term survival of a synaptic connection as its own activity history. This could put a limit to the uniformity of synaptic inputs in dendritic sections, as it might be impossible to prune a synapse next to a strongly potentiated spine.\n\nBy inducing two rounds of plasticity, we demonstrated that synaptic pruning is not a random process, but determined by the last plasticity-inducing activity pattern. In the organotypic culture system, the latency between LTD induction and spine loss was several days. This period could be considerably shorter in vivo, given the highly rhythmic activity of the hippocampal circuit and in consequence, intense synaptic competition. Our approach allows imposing any kind of spike pattern to a select group of synapses over several days. It complements in vivo studies of structural plasticity, which provide information about spine turnover, but not about the activity patterns in pre- and postsynaptic neurons (Attardo et al., 2015). Once the conditions for synaptic maintenance are understood, the protracted process of circuit refinement by constant removal of irrelevant synapses could be simulated. Networks with self-organized connectivity might generate activity patterns that are different from the randomly connected networks underlying current large-scale simulations (Markram et al., 2015). Together with realistic simulations of synaptic network dynamics and long-term investigations of synapse remodeling in vivo, long-term analysis of the structure-function relationship of individual synapses may help understanding how the brain stores and retrieves memories.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Strain, strain background (Rattus norvegicus, male)</td>\n      <td>Wistar</td>\n      <td>Charles River</td>\n      <td>Crl:WI</td>\n      <td>bred in the animal facility, UKE Hamburg</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (R. norvegicus, male)</td>\n      <td>Wistar</td>\n      <td>Janvier</td>\n      <td>RjHAN:WI</td>\n      <td>bred in the animal facility, UKE Hamburg</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (Clamydomonas reinhardtii)</td>\n      <td>ChR2(ET/TC)</td>\n      <td>doi: 10.1073/pnas.1017210108</td>\n      <td></td>\n      <td>channelr hodopsin</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (Aequorea victoria)</td>\n      <td>GCaMP6s</td>\n      <td>doi: 10.1038/nature12354</td>\n      <td></td>\n      <td>calcium indicator</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (A. victoria)</td>\n      <td>mCerulean</td>\n      <td>doi: 10.1038/nbt945</td>\n      <td></td>\n      <td>fluorescent protein</td>\n    </tr>\n    <tr>\n      <td>Transfected construct (R. norvegicus)</td>\n      <td>ChR2(ET/TC)\u22122A- synaptophysin- tdimer2</td>\n      <td>doi: 10.1073/pnas.1315926110</td>\n      <td></td>\n      <td>transfection of CA3 neurons</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>rAAV2/7</td>\n      <td>Vector Facility UKE Hamburg</td>\n      <td></td>\n      <td>viral vector</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>APV</td>\n      <td>Tocris Bioscience</td>\n      <td>CAS Number 79055-68-8</td>\n      <td>NMDA receptor blocker</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>ScanImage3.8</td>\n      <td>DOI: 10.1186/1475-925X-2\u201313</td>\n      <td></td>\n      <td>modified for arbitrary line scans</td>\n    </tr>\n  </tbody>\n</table>\n\n### Slice culture preparation and transfection\n\nHippocampal slice cultures from male Wistar rats were prepared at postnatal day 4\u20135 as described (Gee et al., 2017). Animal procedures were in accordance with the guidelines of local authorities and Directive 2010/63/EU. At DIV 3, we pressure-injected rAAV2/7 encoding ChR2(ET/TC)\u22122A-synaptophysin-tdimer2 into CA3. At DIV 18, single-cell electroporation was used to transfect CA1 pyramidal neurons in rAAV-infected slices with GCaMP6s and mCerulean (ratio 1:1) as described (Wiegert et al., 2017).\n\n### Electrophysiology\n\nExperiments were performed between DIV 21 and 25. Whole-cell recordings from CA1 pyramidal cells were made at 25\u00b0C with a Multiclamp 700B amplifier (Molecular Devices). Patch pipettes with a tip resistance of 3\u20134 M\u03a9 were filled with (in mM) 135 K-gluconate, 4 MgCl2, 4 Na2-ATP, 0.4 Na-GTP, 10 Na2-phosphocreatine, three ascorbate, and 10 HEPES (pH 7.2). LTD experiments were conducted in ACSF containing (in mM) 135 NaCl, 2.5 KCl, 4 CaCl2, 4 MgCl2, 10 Na-HEPES, 12.5 D-glucose, 1.25 NaH2PO4, 0.03 D-Serine (pH 7.4, sterile filtered). During LTP induction, ACSF with lower divalent ion concentration (2 CaCl2, 1 MgCl2) was used to increase excitability. Access resistance was monitored continuously and recordings with a drift of\u00a0>20% were discarded.\n\n### Two-Photon microscopy\n\nThe custom-built two-photon imaging setup was based on an Olympus BX51WI microscope equipped with a LUMPLFLN 60 \u00d7 1.0 NA objective, controlled by the open-source software package ScanImage (Pologruto et al., 2003) which was modified to allow user-defined arbitrary line scans at 500 Hz. Two Ti:Sapphire lasers (MaiTai DeepSee, Spectra-Physics) controlled by electro-optic modulators (350\u201380, Conoptics) were used to excite cerulean (810 nm) and GCaMP6s (980 nm). To activate ChR2(ET/TC)-expressing cells outside the field of view of the objective, we used a fiber-coupled LED (200 \u00b5m fiber, NA 0.37, Mightex Systems) to deliver light pulses to CA3. During the blue light pulses, sub-stage PMTs (H7422P-40SEL, Hamamatsu) were protected by a shutter (NS45B, Uniblitz).\n\n### Measuring excitatory postsynaptic calcium transients (EPSCaTs)\n\nFrame scans (10\u00a0\u00d7\u00a010 \u00b5m) of oblique dendrites were acquired to detect spines responding to optogenetic stimulation of CA3 neurons. Two brief (2 ms) light pulses with an inter-pulse interval of 40 ms were applied to increase release probability and thus the chance of detecting responding spines. In each trial, 14 frames (64\u00a0\u00d7\u00a064 pixel) were acquired at 7.8 Hz. At least five trials were recorded from each dendritic segment. The relative change in GCaMP6s fluorescence (\u0394F/F0) was calculated on-line. If the spine signal exceeded two times the standard deviation (SD) of its resting fluorescence, this spine was considered as \u2018potentially responding\u2019. To measure Ca2+ transients with better signal-to-noise ratio, line scans were acquired across potentially responding spine heads and their parent dendrites (500 Hz, 20 trials/spine). To measure the amplitude of Ca2+ transients and to distinguish successful synaptic transmission events (EPSCaTs) from failures, we used a template-based fitting algorithm. The characteristic fluorescence time constant was extracted for every spine by fitting a double exponential function (\u03c4rise, \u03c4decay) to the average GCaMP6s signal. To estimate the Ca2+ transient amplitude for every trial, we fit the spine-specific template to every response, amplitude being the only free parameter. Response amplitude was defined as the value of the fit function at its maximum. A trace was classified as \u2018success\u2019 when its amplitude exceeded two standard deviations (2\u03c3) of baseline noise.\n\n### Long-term imaging of spine morphology\n\nThe use of HEPES-buffered sterile-filtered ACSF allowed us to optically stimulate and image slice cultures under near-sterile conditions, using no perfusion system. The custom recording chamber (1 mm quartz glass bottom) and 60\u00a0\u00d7\u00a0water immersion objective were sterilized with 70% ethanol and filled with 1.5 ml sterile ACSF. A small patch of membrane (5\u00a0\u00d7\u00a06 mm) supporting the hippocampal culture was cut out of the cell culture insert (Millipore PICM0RG50), placed in the recording chamber and weighted down with a u-shaped gold wire. During imaging, the temperature of the slice culture was maintained at 25\u00b0C via a permanently heated oil-immersion condenser (NA\u00a0=\u00a01.4, Olympus). After each imaging session, the membrane patch was placed on a fresh sterile membrane insert and returned to the incubator. In the first imaging session, a spine displaying stimulation-induced EPSCaTs was centered and a three-dimensional image stack (XY: 10\u00a0\u00d7\u00a010 \u00b5m, Z: 5\u201315 \u00b5m) of the mCerulean signal was acquired. Additional image stacks were acquired at low magnification to ensure identity of the dendritic segment. For post-hoc analysis of spine turnover, the three-dimensional image stacks were aligned based on a rigid-body algorithm (ImageJ). All spines identified in the three-dimensional image stack acquired before the plasticity induction protocol were analyzed in the subsequent stacks, with the following exception: Spines that appeared shifted from their original position on the dendrite by more than 1 \u00b5m in any direction between two consecutive imaging sessions were not included in the analysis, as it was not clear whether the original spine was replaced by a new one. If the imaged neuron showed any sign of compromised health at day 7 (bright GCaMP6 fluorescence at rest, dendritic swelling or beading), the experiment was excluded from the analysis. Maximum intensity projections are shown for illustrative purposes only and were not used for analysis. To estimate spine volume, we integrated the fluorescence intensity of the spine head (mCerulean) taken from a single optical section through the center of the spine. For each spine the point-spread-function (PSF) of the microscope was immersed in the apical trunk of the dendrite to obtain the maximum intensity. In case of different depth of spine and calibration measurement, we corrected for laser attenuation in the tissue. The volume of the PSF was determined with PSFj (Theer et al., 2014) using 170 nm fluorescent beads (Invitrogen). Knowing the volume of the PSF and the brightness of a given cell\u2019s cytoplasm allowed us to convert spine intensity into absolute spine volume (Svoboda et al., 1996).\n\n### Statistics\n\nAll statistical analysis was performed using GraphPad Prism 6.0. Data were tested for Gaussian distribution by D\u2019Agostino and Pearson omnibus normality test. Normally distributed data were tested for significant differences with a two-tailed t-test (Figure 3A) or one-way repeated-measures analysis of variance (ANOVA) followed by Sidak\u2019s multiple comparisons test (Figure 3B,C). Data with non-normal distribution data were tested with the following nonparametric tests: Two-tailed Wilcoxon matched-pairs signed rank test (Figures 2A,D and 3A), Friedman test followed by Dunn\u2019s multiple comparison test (Figure 2C; Figure 2\u2014figure supplementary 1A-C). Investigators were not blinded to the group allocation during the experiments. Data analysis was automated as much as possible to preclude investigator biases. All experiments were done with interleaved controls; pharmacological treatments were mixed with untreated cultures.\n",
+      "created_at": "2025-12-02T06:38:12.330057Z"
+    },
+    {
+      "id": "21d0eea3-ebea-4f17-9eba-87f98ff59158",
+      "submission_id": "fb3505a2-b3cf-474d-9047-9bad05109395",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Julie A Kauer, Brown University United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.39151.019](https://doi.org/10.7554/eLife.39151.019)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"The fate of hippocampal synapses depends on the sequence of plasticity-inducing events\" for consideration by eLife. Your article has been reviewed by three peer reviewers, one of whom is a member of our Board of Reviewing Editors, and the evaluation has been overseen by Gary Westbrook as the Senior Editor. The reviewers have opted to remain anonymous.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nThis paper presents information that uses a technical advance, and in this way is able to address issues not previously tested. The authors examined the influence of synaptic plasticity-inducing protocols on the long-term stability of dendritic spines of hippocampal CA1 neurons in organotypic slice culture and provide new data regarding the consequences of repeated plasticity-inducing protocols on long-term stability of excitatory synapses in the hippocampus. The question addressed is significant, as the mechanisms that regulate the strength and stability of synapses may be critically important for learning and memory. Several labs have reported previously the LTP-induced stabilization and LTD-induced destabilization of spine synapses, yet only a few have provided limited information regarding the consequences of repeated plasticity induction.\n\nHowever, the reviewers have several significant concerns and consider that further information is required before the paper is acceptable for publication. The main points for suggested revision are outlined below.\n\nEssential revisions:\n\n1) LTP and LTD experiments need a baseline. A single point of data before induction (or worse, no pre-induction measure at all) is not acceptable. Synaptic strength tends to drift stronger or weaker even without manipulation, due to extraneous factors, and therefore demonstration of a baseline, stable over time, is absolutely required for such plasticity experiments. Without a convincing baseline, one never knows if the strength of the synapses at time of later measurement would have ended up where it did, even without an attempt to induce plasticity.\n\n2) In order to better understand the mechanistic basis of their results, data on the response characteristics and fate of synapses on unstimulated dendritic branches is an essential control for their experiments \u2013 the authors have reported this data previously, it should also be included here. Furthermore, raw data is missing from Figure 1 for the time point immediately after oTFS and for the neighbors at all time points (pre, during, immediately post and 30 min post). Summarized data is missing from Figure 2 for both near and distant neighbors. This would be very useful data in interpreting the possible mechanisms that drive the differential stability of nearest versus distant neighbors.\n\n3) The conclusion as to whether it is more difficult to induce LTD 24 hrs after LTP is not well-controlled. Could it also be more difficult to induce LTD on inactive dendrites at 24 hrs? Does the difficulty to induce LTD have anything to do with prior LTP or would prior 0.1 Hz stimulus also interfere with LTD induction? These controls are very important to make that conclusion, and may help the authors provide some mechanistic insight for their findings.\n\n4) A deeper analysis of the survival rate of spines that saw CSBs during induction, but failed to reach the author's criterion for LTP would be an important addition to the paper. They have shown an effect of activity in other experiments. Thus here they should see if they can rule out that the induction stimulus is without effect, even when it does not induce plasticity.\n\n5) It is curious that spines that are depressed, but not below the pre-LTP value, do not change their survival. Are they suggesting that the survival depends not on the plasticity per se, but rather the absolute value of the EPSC, or alternately, that the spine has a memory of what its previous baseline is?\n",
+      "created_at": "2025-12-02T06:38:12.330057Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T06:38:12.330057Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T06:38:12.330057Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "faa028a9-759d-4ac8-9382-ff1257def6ea",
+      "content_id": "302d2366-be33-48df-8045-e34a6bfe79ac",
+      "claim_id": "C1",
+      "claim": "Optogenetic theta frequency stimulation (oTFS) induced LTP at Schaffer collateral synapses in rat hippocampal slice cultures.",
+      "claim_type": "EXPLICIT",
+      "source": "Optical theta frequency stimulation induced LTP at Schaffer collateral synapses",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript presents experimental data showing that oTFS induced LTP, including measurements of EPSCaTs and EPSCs before and after stimulation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:38:12.330057Z"
+    },
+    {
+      "id": "c9664525-3f89-4bd2-8f9e-a0fcf4d7fa34",
+      "content_id": "302d2366-be33-48df-8045-e34a6bfe79ac",
+      "claim_id": "C2",
+      "claim": "CA3 neurons expressing ChR2(E123T/T159C) together with synaptophysin-tdimer2 were stimulated with short pulses of blue light (2 ms long, 40 ms interval, \u03bb = 470 nm).",
+      "claim_type": "EXPLICIT",
+      "source": "CA3 neurons expressing the light-sensitive channel ChR2(E123T/T159C) (Berndt et al., 2011) together with the presynaptic vesicle marker synaptophysin-tdimer2 were stimulated with short pulses of blue light (2 ms long, 40 ms interval, \u03bb = 470 nm).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct description of the experimental methods used, citing the source of the ChR2 variant.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:38:12.330057Z"
+    },
+    {
+      "id": "44bb2beb-72de-4217-b20c-91e139f165ba",
+      "content_id": "302d2366-be33-48df-8045-e34a6bfe79ac",
+      "claim_id": "C3",
+      "claim": "Light stimulation evoked EPSCs with a magnitude of 1330 \u00b1 220 pA.",
+      "claim_type": "EXPLICIT",
+      "source": "Light stimulation evoked EPSCs with a magnitude of 1330 \u00b1 220 pA, consistent with our previous study (Wiegert and Oertner, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative measurement from the experiments, with reference to consistency with prior work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:38:12.330057Z"
+    },
+    {
+      "id": "8b4c9087-adaf-4a68-a349-efbffcafe10f",
+      "content_id": "302d2366-be33-48df-8045-e34a6bfe79ac",
+      "claim_id": "C4",
+      "claim": "TFS-induced LTP requires transient (30 s) stimulation of enough CA3 cells to drive postsynaptic CA1 cells to fire complex spike bursts (CSBs).",
+      "claim_type": "EXPLICIT",
+      "source": "TFS-induced LTP requires transient (30 s) stimulation of enough CA3 cells to drive postsynaptic CA1 cells to fire complex spike bursts (CSBs, Figure 1\u2014figure supplement 1) (Thomas et al., 1998).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by both the experimental observations in the manuscript and citation to prior work by Thomas et al., 1998.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:38:12.330057Z"
+    },
+    {
+      "id": "66dcf5d0-2e4f-40af-b105-88e4aea04a33",
+      "content_id": "302d2366-be33-48df-8045-e34a6bfe79ac",
+      "claim_id": "C5",
+      "claim": "EPSCaTs were strongly potentiated 30 min after oTFS.",
+      "claim_type": "EXPLICIT",
+      "source": "EPSCaTs were strongly potentiated 30 min after oTFS, generating calcium transients that frequently spread into the dendrite (Figure 1B, Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly observed in the experimental data shown in the figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:38:12.330057Z"
+    },
+    {
+      "id": "290f7d18-474f-4acb-a227-62d3df6c8f0e",
+      "content_id": "302d2366-be33-48df-8045-e34a6bfe79ac",
+      "claim_id": "C6",
+      "claim": "The amplitude of EPSCs in the reporter neuron increased after oTFS, indicating successful induction of LTP.",
+      "claim_type": "EXPLICIT",
+      "source": "Likewise, the amplitude of EPSCs in the reporter neuron increased after oTFS, indicating successful induction of LTP (Figure 1B, Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a direct observation from the electrophysiological recordings shown in the figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:38:12.330057Z"
+    },
+    {
+      "id": "8cda4088-4248-45bc-86a0-6797fe77bd96",
+      "content_id": "302d2366-be33-48df-8045-e34a6bfe79ac",
+      "claim_id": "C7",
+      "claim": "Both CSBs and LTP induction were blocked in the presence of the NMDA receptor antagonist APV.",
+      "claim_type": "EXPLICIT",
+      "source": "Both CSBs and LTP induction were blocked in the presence of the NMDA receptor antagonist APV (Figure 2A and B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by pharmacological manipulation experiments shown in the figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:38:12.330057Z"
+    },
+    {
+      "id": "6334f04f-023b-4b83-bcf8-9e30bd9127e2",
+      "content_id": "302d2366-be33-48df-8045-e34a6bfe79ac",
+      "claim_id": "C8",
+      "claim": "oTFS induced plasticity via NMDAR activation as previously demonstrated.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, oTFS induced plasticity via NMDAR activation as previously demonstrated (Thomas et al., 1998).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This conclusion is based on the APV blocking experiments and is consistent with prior literature.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:38:12.330057Z"
+    },
+    {
+      "id": "ef85589b-9fa8-4c89-9f08-94efe4c34e6a",
+      "content_id": "302d2366-be33-48df-8045-e34a6bfe79ac",
+      "claim_id": "C9",
+      "claim": "When no large dendritic calcium transients were triggered during oTFS, spine calcium signals were not consistently potentiated 30 min after oTFS.",
+      "claim_type": "EXPLICIT",
+      "source": "When no large dendritic calcium transients were triggered during oTFS, spine calcium signals were not consistently potentiated 30 min after oTFS (Figure 2B, Figure 2\u2014figure supplement 1A and B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from the experimental data comparing conditions with and without dendritic calcium spikes.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:38:12.330057Z"
+    },
+    {
+      "id": "de410c33-f074-4c24-b085-c2b344d54a2d",
+      "content_id": "302d2366-be33-48df-8045-e34a6bfe79ac",
+      "claim_id": "C10",
+      "claim": "EPSCs showed considerably lower trial-to-trial variability (no failures) compared to EPSCaTs.",
+      "claim_type": "EXPLICIT",
+      "source": "EPSCs, integrating the activity of many synapses, showed considerably lower trial-to-trial variability (no failures) compared to EPSCaTs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from comparing the two types of measurements in the experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:38:12.330057Z"
+    },
+    {
+      "id": "cd755d2b-6c86-42fe-8650-673e3ce2dde3",
+      "content_id": "302d2366-be33-48df-8045-e34a6bfe79ac",
+      "claim_id": "C11",
+      "claim": "EPSCaT amplitude and EPSCaT potency were significantly increased 30 min after oTFS in experiments where complex spike bursts (CSBs) were induced during oTFS.",
+      "claim_type": "EXPLICIT",
+      "source": "EPSCaT amplitude (p=0.0008, n = 20 slice cultures) and EPSCaT potency (successes only, p=0.0025) but not EPSCaT probability (PCa, p>0.05) were increased 30 min after oTFS in experiments where complex spike bursts (CSBs) were induced during oTFS.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a statistical analysis of the experimental data with specific p-values and sample sizes provided.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:38:12.330057Z"
+    },
+    {
+      "id": "cbedb5d2-c30a-432b-8cce-b5eb109db5c3",
+      "content_id": "302d2366-be33-48df-8045-e34a6bfe79ac",
+      "claim_id": "C12",
+      "claim": "LTP had no significant effect on the probability of EPSCaT occurrence (PCa).",
+      "claim_type": "EXPLICIT",
+      "source": "LTP had no significant effect on the probability of EPSCaT occurrence (PCa, Figure 2C), suggesting that the potentiation was mainly due to postsynaptic changes.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on statistical analysis of the data, with an inference about the mechanism.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:38:12.330057Z"
+    },
+    {
+      "id": "578bf06f-1257-4da8-8387-d9e06459d8be",
+      "content_id": "302d2366-be33-48df-8045-e34a6bfe79ac",
+      "claim_id": "C13",
+      "claim": "The potentiation was mainly due to postsynaptic changes.",
+      "claim_type": "EXPLICIT",
+      "source": "LTP had no significant effect on the probability of EPSCaT occurrence (PCa, Figure 2C), suggesting that the potentiation was mainly due to postsynaptic changes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the lack of change in release probability (PCa).",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:38:12.330057Z"
+    },
+    {
+      "id": "d3836df2-3f52-4849-bdf9-7d8282c5653f",
+      "content_id": "302d2366-be33-48df-8045-e34a6bfe79ac",
+      "claim_id": "C14",
+      "claim": "In experiments where no CSBs were elicited during oTFS, PCa was significantly reduced.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, while EPSCaT potency was not affected in experiments where no CSBs were elicited during oTFS, PCa was significantly reduced (Figure 2\u2014figure supplement 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a statistical observation from the experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:38:12.330057Z"
+    },
+    {
+      "id": "e9467e01-b00e-42ab-b31a-b41a0e50f048",
+      "content_id": "302d2366-be33-48df-8045-e34a6bfe79ac",
+      "claim_id": "C15",
+      "claim": "In experiments where the synaptic drive was not strong enough to trigger postsynaptic spikes, presynaptic activity in the theta frequency range appeared to elicit a weak form of presynaptic depression.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, in experiments where the synaptic drive was not strong enough to trigger postsynaptic spikes, presynaptic activity in the theta frequency range appeared to elicit a weak form of presynaptic depression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the reduction in PCa when CSBs were not elicited.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:38:12.330057Z"
+    },
+    {
+      "id": "60c47bf3-81a6-4d1b-9ce1-fbefb18208c3",
+      "content_id": "302d2366-be33-48df-8045-e34a6bfe79ac",
+      "claim_id": "C16",
+      "claim": "The head volume of spines that experienced CSBs increased by 21 \u00b1 6% during the 30 min after oTFS.",
+      "claim_type": "EXPLICIT",
+      "source": "The head volume of spines that experienced CSBs was unchanged immediately after oTFS, but increased by 21 \u00b1 6% during the next 30 min.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative measurement from the imaging data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:38:12.330057Z"
+    },
+    {
+      "id": "32325e49-5ac1-43be-aea2-a976c753fd72",
+      "content_id": "302d2366-be33-48df-8045-e34a6bfe79ac",
+      "claim_id": "C17",
+      "claim": "The nearest neighboring spines showed a small but significant increase in volume (15 \u00b1 3%) after oTFS.",
+      "claim_type": "EXPLICIT",
+      "source": "The nearest neighboring spines also showed a small but significant increase in volume (15 \u00b1 3%), whereas no consistent change was detected at more distant spines (2 \u00b1 3%).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative measurement from the imaging data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:38:12.330057Z"
+    },
+    {
+      "id": "a297ca53-51ff-487a-a29a-5baad053420e",
+      "content_id": "302d2366-be33-48df-8045-e34a6bfe79ac",
+      "claim_id": "C18",
+      "claim": "No consistent change in volume was detected at more distant spines (2 \u00b1 3%) after oTFS.",
+      "claim_type": "EXPLICIT",
+      "source": "The nearest neighboring spines also showed a small but significant increase in volume (15 \u00b1 3%), whereas no consistent change was detected at more distant spines (2 \u00b1 3%).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative measurement from the imaging data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:38:12.330057Z"
+    },
+    {
+      "id": "2dfdedc6-2ddb-460f-8c23-3c2ad1a70011",
+      "content_id": "302d2366-be33-48df-8045-e34a6bfe79ac",
+      "claim_id": "C19",
+      "claim": "When no oTFS was applied, the volume of responding spines (5 \u00b1 4%) and neighbors (\u22124 \u00b1 3%) remained stable.",
+      "claim_type": "EXPLICIT",
+      "source": "When no oTFS was applied, the volume of responding spines (5 \u00b1 4%) and neighbors (\u22124 \u00b1 3%) remained stable (Figure 2\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a control measurement from the imaging data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:38:12.330057Z"
+    },
+    {
+      "id": "e239689a-54cf-4a8f-ba32-13213c315e5d",
+      "content_id": "302d2366-be33-48df-8045-e34a6bfe79ac",
+      "claim_id": "C20",
+      "claim": "In oTFS experiments that failed to elicit CSBs or when NMDA receptors were blocked during oTFS, stimulated spines did not exhibit significant volume changes.",
+      "claim_type": "EXPLICIT",
+      "source": "In oTFS experiments that failed to elicit CSBs or when NMDA receptors were blocked during oTFS, stimulated spines did not exhibit significant volume changes (Figure 2E; Figure 2\u2014figure supplement 1D), suggesting similar requirements for the successful induction of functional and structural plasticity.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from the experimental data with an inference about the mechanism.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:38:12.330057Z"
+    },
+    {
+      "id": "c95401d0-4455-4ff6-a89d-3d148c3560eb",
+      "content_id": "302d2366-be33-48df-8045-e34a6bfe79ac",
+      "claim_id": "C21",
+      "claim": "Spine head volume and EPSCaT potency were significantly increased 30 min after oTFS.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with our first data set, spine head volume and EPSCaT potency were significantly increased 30 min after oTFS (Figure 3A and B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a replication of the earlier findings in a new dataset.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:38:12.330057Z"
+    },
+    {
+      "id": "20fc483d-31ea-46f1-88e0-ef15f1ce4645",
+      "content_id": "302d2366-be33-48df-8045-e34a6bfe79ac",
+      "claim_id": "C22",
+      "claim": "Twenty-four hours after LTP induction, both spine head volume and EPSCaT potency had returned to baseline.",
+      "claim_type": "EXPLICIT",
+      "source": "Twenty-four hours after LTP induction, however, both measures had returned to baseline.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the longitudinal imaging and functional measurements.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:38:12.330057Z"
+    },
+    {
+      "id": "a9e866fe-bf14-49ee-8a0e-ff5d074a8293",
+      "content_id": "302d2366-be33-48df-8045-e34a6bfe79ac",
+      "claim_id": "C23",
+      "claim": "No significant change in EPSCaT probability was detected either 30 min or 24 hr after oTFS.",
+      "claim_type": "EXPLICIT",
+      "source": "We detected no significant change in EPSCaT probability either 30 min or 24 hr after oTFS (Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a statistical analysis of the experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:38:12.330057Z"
+    },
+    {
+      "id": "05a6ab95-b051-453f-8cb2-7149c4f8df5a",
+      "content_id": "302d2366-be33-48df-8045-e34a6bfe79ac",
+      "claim_id": "C24",
+      "claim": "Beyond the acute effects on the day of potentiation, no permanent changes in synaptic strength were observed after oTFS-induced LTP.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, beyond the acute effects on the day of potentiation, we did not observe permanent changes in synaptic strength after oTFS-induced LTP.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the 24-hour follow-up data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:38:12.330057Z"
+    },
+    {
+      "id": "79a7bbab-08b2-40c9-9449-5b3557a4cbe8",
+      "content_id": "302d2366-be33-48df-8045-e34a6bfe79ac",
+      "claim_id": "C25",
+      "claim": "Under control conditions without external stimulation, 27% of all spines disappeared between days 1 and 7.",
+      "claim_type": "EXPLICIT",
+      "source": "Under control conditions without external stimulation, 27% of all spines disappeared between days 1 and 7.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative measurement from the longitudinal imaging data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:38:12.330057Z"
+    },
+    {
+      "id": "12b13a31-6e7d-4afc-a02e-0f19f0d7d51c",
+      "content_id": "302d2366-be33-48df-8045-e34a6bfe79ac",
+      "claim_id": "C26",
+      "claim": "The 27% spine turnover rate is in agreement with previous measurements in hippocampal slice cultures and mouse hippocampus in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "This turnover rate is in agreement with previous measurements in hippocampal slice cultures (Wiegert and Oertner, 2013) and mouse hippocampus in vivo (Attardo et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison with published literature.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:38:12.330057Z"
+    },
+    {
+      "id": "3e1e5e22-3f92-490c-bb95-74269062348d",
+      "content_id": "302d2366-be33-48df-8045-e34a6bfe79ac",
+      "claim_id": "C27",
+      "claim": "During the 7 days following LTP induction, only one of 11 potentiated spines disappeared.",
+      "claim_type": "EXPLICIT",
+      "source": "In a dataset of 14 spines, 11 spines experienced CSBs and were potentiated. During the following 7 days, only one of these 11 potentiated spines disappeared (Figure 3D and E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative observation from the longitudinal imaging data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:38:12.330057Z"
+    },
+    {
+      "id": "ef06b810-5d76-473e-bf6b-e76b203caf75",
+      "content_id": "302d2366-be33-48df-8045-e34a6bfe79ac",
+      "claim_id": "C28",
+      "claim": "Nearest-neighbor spines disappeared less often between days 1 and 7 compared to controls after LTP.",
+      "claim_type": "EXPLICIT",
+      "source": "Compared to controls, nearest-neighbor spines disappeared less often between days 1 and 7 whereas more distant spines (>5 \u00b5m) were eliminated more often (Figure 3E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative comparison from the longitudinal imaging data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:38:12.330057Z"
+    },
+    {
+      "id": "1350d86d-c9ed-4bd1-ab9b-be121b07ec22",
+      "content_id": "302d2366-be33-48df-8045-e34a6bfe79ac",
+      "claim_id": "C29",
+      "claim": "More distant spines (>5 \u00b5m) were eliminated more often between days 1 and 7 compared to controls after LTP.",
+      "claim_type": "EXPLICIT",
+      "source": "Compared to controls, nearest-neighbor spines disappeared less often between days 1 and 7 whereas more distant spines (>5 \u00b5m) were eliminated more often (Figure 3E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative comparison from the longitudinal imaging data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:38:12.330057Z"
+    },
+    {
+      "id": "32b7c5df-4882-485b-b1d2-9e7d6b665941",
+      "content_id": "302d2366-be33-48df-8045-e34a6bfe79ac",
+      "claim_id": "C30",
+      "claim": "Biochemical signaling molecules activated inside stimulated spines during oTFS diffuse into neighboring, non-stimulated spines, affecting acutely their size and on longer time scales, their survival.",
+      "claim_type": "EXPLICIT",
+      "source": "These findings are consistent with the concept of biochemical signaling molecules activated inside stimulated spines during oTFS and diffusing into neighboring, non-stimulated spines (Nishiyama and Yasuda, 2015), affecting acutely their size and on longer timer scales, their survival.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the data based on established concepts from the literature.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:38:12.330057Z"
+    },
+    {
+      "id": "d48c0665-405f-4624-bca8-bee3b748dd7a",
+      "content_id": "302d2366-be33-48df-8045-e34a6bfe79ac",
+      "claim_id": "C31",
+      "claim": "In oTFS experiments where no CSBs were elicited in CA1 neurons, stimulated spines as well as their neighbors had reduced survival rates.",
+      "claim_type": "EXPLICIT",
+      "source": "In these experiments, stimulated spines as well as their neighbors had reduced survival rates (Figure 3F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative observation from the longitudinal imaging data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:38:12.330057Z"
+    },
+    {
+      "id": "944dde79-2266-4fb7-9a9e-5d024c4d817f",
+      "content_id": "302d2366-be33-48df-8045-e34a6bfe79ac",
+      "claim_id": "C32",
+      "claim": "The destabilizing effect of oTFS without CSBs was contingent on 5 Hz presynaptic activation.",
+      "claim_type": "EXPLICIT",
+      "source": "This destabilizing effect was contingent on 5 Hz presynaptic activation, as spines that were not stimulated at all or only stimulated by test pulses (responsive spines) had higher survival rates (Figure 3G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a comparison of different experimental conditions showing the specificity of the effect.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:38:12.330057Z"
+    },
+    {
+      "id": "e2541465-3b09-454f-87ed-98f4c8181fc2",
+      "content_id": "302d2366-be33-48df-8045-e34a6bfe79ac",
+      "claim_id": "C33",
+      "claim": "Optogenetic low frequency stimulation (oLFS, 900 APs at 1 Hz) induced long-term depression (LTD) at Schaffer collateral synapses.",
+      "claim_type": "EXPLICIT",
+      "source": "As we established previously (Wiegert and Oertner, 2013), optogenetic low frequency stimulation (oLFS, 900 APs at 1 Hz) induced long-term depression (LTD) at Schaffer collateral synapses, frequently abolishing EPSCaTs in the stimulated spine altogether (Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a replication of previous findings with reference to prior work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:38:12.330057Z"
+    },
+    {
+      "id": "e7e837fb-a86c-4e89-ae86-93b35e6cc315",
+      "content_id": "302d2366-be33-48df-8045-e34a6bfe79ac",
+      "claim_id": "C34",
+      "claim": "45% of spines that received oLFS disappeared between days 1 and 7.",
+      "claim_type": "EXPLICIT",
+      "source": "In agreement with our previous results, 45% of spines that received oLFS disappeared between days 1 and 7.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative observation from the longitudinal imaging data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:38:12.330057Z"
+    },
+    {
+      "id": "f719b8f9-41d4-42e6-95d5-b0835cb1bbed",
+      "content_id": "302d2366-be33-48df-8045-e34a6bfe79ac",
+      "claim_id": "C35",
+      "claim": "LTD on day 0 was considered successful when the average spine Ca2+ response dropped to less than 90% of the baseline response 30 min after oLFS, which was the case in 70% (28/40) of the experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "LTD on day 0 was considered successful when the average spine Ca2+ response dropped to less than 90% of the baseline response 30 min after oLFS, which was the case in 70% (28/40) of the experiments (Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a definition of success criteria and the quantitative outcome of the experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:38:12.330057Z"
+    },
+    {
+      "id": "d9b577d8-02db-4a28-a100-37d51c3a7354",
+      "content_id": "302d2366-be33-48df-8045-e34a6bfe79ac",
+      "claim_id": "C36",
+      "claim": "LTP induction was considered successful when the average spine Ca2+ response increased to more than 110% of the day one baseline response after oTFS, which was the case in 64% (18/28) of all experiments on day 1.",
+      "claim_type": "EXPLICIT",
+      "source": "LTP induction was considered successful when the average spine Ca2+ response increased to more than 110% of the day one baseline response after oTFS, which was the case in 64% (18/28) of all experiments on day 1 (Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a definition of success criteria and the quantitative outcome of the experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:38:12.330057Z"
+    },
+    {
+      "id": "9140b46a-75b9-4db4-b15a-bf8fdfec5e59",
+      "content_id": "302d2366-be33-48df-8045-e34a6bfe79ac",
+      "claim_id": "C37",
+      "claim": "When LTP was induced after LTD, only 12% of spines disappeared between days 1 and 7, indicating stabilization of doomed synapses.",
+      "claim_type": "EXPLICIT",
+      "source": "When LTP was induced after LTD, only 12% of spines disappeared between days 1 and 7, indicating stabilization of doomed synapses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative observation from the longitudinal imaging data with an interpretation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:38:12.330057Z"
+    },
+    {
+      "id": "daea1373-1383-45b6-a581-9ebb037b2186",
+      "content_id": "302d2366-be33-48df-8045-e34a6bfe79ac",
+      "claim_id": "C38",
+      "claim": "Of the spines that received oTFS after LTD but did not get potentiated, 43% disappeared between days 1 and 7, similar to the 45% disappearance rate seen after oLFS only.",
+      "claim_type": "EXPLICIT",
+      "source": "Of the spines that received oTFS after LTD but did not get potentiated, 43% disappeared between days 1 and 7, similar to the 45% disappearance rate seen after oLFS only.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative comparison from the longitudinal imaging data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:38:12.330057Z"
+    },
+    {
+      "id": "e2a03979-aaa9-486a-8b1d-37e609abf5d2",
+      "content_id": "302d2366-be33-48df-8045-e34a6bfe79ac",
+      "claim_id": "C39",
+      "claim": "Successful LTP induction was necessary to rescue synapses from elimination after LTD.",
+      "claim_type": "EXPLICIT",
+      "source": "These results confirmed that successful LTP induction was necessary to rescue synapses from elimination.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from comparing the survival rates of spines with and without successful LTP after LTD.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:38:12.330057Z"
+    },
+    {
+      "id": "9963fa5d-88db-4280-8f73-99c000a98a18",
+      "content_id": "302d2366-be33-48df-8045-e34a6bfe79ac",
+      "claim_id": "C40",
+      "claim": "Without LTP, the oTFS stimulation protocol by itself had no measurable effect on the survival of previously depressed synapses.",
+      "claim_type": "EXPLICIT",
+      "source": "Without LTP, the oTFS stimulation protocol by itself had no measurable effect on the survival of previously depressed synapses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from comparing the survival rates of spines that received oTFS but did not show LTP versus those that only received LTD.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:38:12.330057Z"
+    },
+    {
+      "id": "b6364ada-fe7f-4f68-861b-384fe3af641c",
+      "content_id": "302d2366-be33-48df-8045-e34a6bfe79ac",
+      "claim_id": "C41",
+      "claim": "LTP on day 0 was induced in 72% (18/25) of spines after oTFS.",
+      "claim_type": "EXPLICIT",
+      "source": "LTP on day 0 was induced in 72% (18/25) of spines after oTFS (Figure 5B, Figure 5\u2014figure supplement 1), similar to the set of oTFS experiments 1 day after oLFS (64%, p=0.85) and the first set of oTFS experiments (Figure 2B, 62%, 26/42, p=0.41).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative observation with statistical comparison to other datasets.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:38:12.330057Z"
+    },
+    {
+      "id": "bea4ac72-fa41-42be-9603-773d75af2c00",
+      "content_id": "302d2366-be33-48df-8045-e34a6bfe79ac",
+      "claim_id": "C42",
+      "claim": "When oLFS was applied 24 hr after LTP, LTD was induced in only 33% (6/18) of previously potentiated synapses.",
+      "claim_type": "EXPLICIT",
+      "source": "When oLFS was applied 24 hr later, we observed that LTD was induced in only 33% (6/18) of previously potentiated synapses on the next day (Figure 5B), a much lower success rate than the 70% when oLFS was applied with no prior plasticity.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative observation comparing LTD induction rates with and without prior LTP.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:38:12.330057Z"
+    },
+    {
+      "id": "48905ae4-59e9-4a81-828f-6fd8b5f26584",
+      "content_id": "302d2366-be33-48df-8045-e34a6bfe79ac",
+      "claim_id": "C43",
+      "claim": "The median number of APs in reporter neurons during the 900 pulses of the oLFS protocol was 1.5 in naive cultures (n = 32) and 5.0 one day after LTP (n = 13, p=0.4, Mann-Whitney).",
+      "claim_type": "EXPLICIT",
+      "source": "The median number of APs in reporter neurons during the 900 pulses of the oLFS protocol was 1.5 in naive cultures (n = 32) and 5.0 one day after LTP (n = 13, p=0.4, Mann-Whitney), corresponding to a postsynaptic spike probability below 1% in both cases.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative measurement with statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:38:12.330057Z"
+    },
+    {
+      "id": "723b2543-dec9-40eb-ab48-aa28592d696d",
+      "content_id": "302d2366-be33-48df-8045-e34a6bfe79ac",
+      "claim_id": "C44",
+      "claim": "Strong postsynaptic spiking during the oLFS protocol is not a likely explanation for the difficulty to depress previously potentiated synapses.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, strong postsynaptic spiking during the oLFS protocol is not a likely explanation for the difficulty to depress previously potentiated synapses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the analysis of action potential counts during oLFS.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:38:12.330057Z"
+    },
+    {
+      "id": "b72cad12-a695-49b8-ad75-f947c16b3303",
+      "content_id": "302d2366-be33-48df-8045-e34a6bfe79ac",
+      "claim_id": "C45",
+      "claim": "The initial EPSCaT amplitude (before oLFS) was not a predictor of successful LTD induction.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the initial EPSCaT amplitude (before oLFS) was not a predictor of successful LTD induction (Figure 5\u2014figure supplement 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a statistical analysis of the relationship between initial amplitude and LTD success.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:38:12.330057Z"
+    },
+    {
+      "id": "ac0bb54d-0d34-4e94-bc47-f58560927e11",
+      "content_id": "302d2366-be33-48df-8045-e34a6bfe79ac",
+      "claim_id": "C46",
+      "claim": "There is a synapse-specific memory of past potentiation events that cannot be detected as increased spine volume, increased release probability or increased EPSCaT potency.",
+      "claim_type": "EXPLICIT",
+      "source": "These results point to a synapse-specific memory of past potentiation events that cannot be detected as increased spine volume, increased release probability or increased EPSCaT potency (see Figure 3).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the observation that previously potentiated synapses resist depression despite having returned to baseline in measurable parameters.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:38:12.330057Z"
+    },
+    {
+      "id": "c46855ce-c409-4e18-8dc8-0ba785f272f2",
+      "content_id": "302d2366-be33-48df-8045-e34a6bfe79ac",
+      "claim_id": "C47",
+      "claim": "In the few experiments where LTD was successfully induced 24 hr after LTP, 50% of spines disappeared by day 7.",
+      "claim_type": "EXPLICIT",
+      "source": "In the few experiments where LTD was successfully induced 24 hr after LTP, 50% of spines disappeared by day 7 (Figure 5B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative observation from the longitudinal imaging data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:38:12.330057Z"
+    },
+    {
+      "id": "1e888fa0-616e-45f3-ac10-901cd9b67b4e",
+      "content_id": "302d2366-be33-48df-8045-e34a6bfe79ac",
+      "claim_id": "C48",
+      "claim": "In the more typical case where oLFS failed to induce LTD after LTP, only 8% of spines disappeared by day 7.",
+      "claim_type": "EXPLICIT",
+      "source": "In the more typical case where oLFS failed to induce LTD, only 8% of spines disappeared by day 7.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative observation from the longitudinal imaging data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:38:12.330057Z"
+    },
+    {
+      "id": "a1a3c757-ebcc-4753-b99b-6540d0c927ac",
+      "content_id": "302d2366-be33-48df-8045-e34a6bfe79ac",
+      "claim_id": "C49",
+      "claim": "The strength of the synapse on day 0 or on day one did not predict its survival.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the strength of the synapse on day 0 or on day one did not predict its survival (Figure 5\u2014figure supplement 1D and E), leaving successful induction of depression as the only risk factor we could identify.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a statistical analysis of the relationship between synaptic strength and survival.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:38:12.330057Z"
+    },
+    {
+      "id": "ed0dd1dc-254a-460e-9c3b-d5db74e778d7",
+      "content_id": "302d2366-be33-48df-8045-e34a6bfe79ac",
+      "claim_id": "C50",
+      "claim": "The stabilizing effect of LTP on spines can be overwritten by subsequent LTD.",
+      "claim_type": "EXPLICIT",
+      "source": "In summary, the stabilizing effect of LTP on spines can be overwritten by subsequent LTD (Figure 5C), but this sequence of plasticity events is not very likely to happen.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a conclusion drawn from the sequential plasticity experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:38:12.330057Z"
+    },
+    {
+      "id": "a799b917-f953-4582-873b-e4544717f13a",
+      "content_id": "302d2366-be33-48df-8045-e34a6bfe79ac",
+      "claim_id": "C51",
+      "claim": "LTP and spine-specific stabilization can be induced at 5 Hz if a sufficient number of inputs are activated synchronously.",
+      "claim_type": "EXPLICIT",
+      "source": "Here we show that LTP and spine-specific stabilization can be induced at 5 Hz, the typical carrier frequency of rodent hippocampus, if a sufficient number of inputs are activated synchronously (Moody et al., 1998; Thomas et al., 1998).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the main findings with reference to prior work on synchronous activation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:38:12.330057Z"
+    },
+    {
+      "id": "a5df2e27-557c-4e9e-be46-40720a02d1e6",
+      "content_id": "302d2366-be33-48df-8045-e34a6bfe79ac",
+      "claim_id": "C52",
+      "claim": "Theta-frequency stimulation (TFS) is the physiological equivalent of spike-timing-dependent potentiation (STDP) protocols.",
+      "claim_type": "EXPLICIT",
+      "source": "We consider theta-frequency stimulation (TFS) the physiological equivalent of spike-timing-dependent potentiation (STDP) protocols, replacing the artificial current injection into the postsynaptic neuron by highly synchronized excitatory synaptic input.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the experimental approach in the context of known plasticity mechanisms.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:38:12.330057Z"
+    },
+    {
+      "id": "8d46645f-fd72-4467-a086-7aed78e8f372",
+      "content_id": "302d2366-be33-48df-8045-e34a6bfe79ac",
+      "claim_id": "C53",
+      "claim": "Synchronized synaptic input can trigger dendritic calcium spikes, local regenerative events caused by the opening of voltage-dependent channels (NMDARs and VDCCs).",
+      "claim_type": "EXPLICIT",
+      "source": "Synchronized synaptic input can trigger dendritic calcium spikes, local regenerative events caused by the opening of voltage-dependent channels (NMDARs and VDCCs).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on established knowledge of dendritic physiology.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:38:12.330057Z"
+    },
+    {
+      "id": "5f2c0b27-a083-4057-aad4-064b2ea6f64e",
+      "content_id": "302d2366-be33-48df-8045-e34a6bfe79ac",
+      "claim_id": "C54",
+      "claim": "Dendritic calcium spikes can be electrophysiologically identified as complex spike bursts, consisting of several fast sodium spikes on top of a broader depolarization mediated by dendritic calcium currents.",
+      "claim_type": "EXPLICIT",
+      "source": "These events can be electrophysiogically identified as complex spike bursts, consisting of several fast sodium spikes on top of a broader depolarization mediated by dendritic calcium currents (Magee and Johnston, 1997; Golding et al., 2002; Losonczy and Magee, 2006; Grienberger et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on established knowledge from multiple cited studies.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:38:12.330057Z"
+    },
+    {
+      "id": "d38375a8-ea99-4a42-89a1-d8c7b0b1a7f5",
+      "content_id": "302d2366-be33-48df-8045-e34a6bfe79ac",
+      "claim_id": "C55",
+      "claim": "The occurrence of dendritic calcium spikes during the induction protocol was highly predictive of successful LTP induction at individual synapses.",
+      "claim_type": "EXPLICIT",
+      "source": "In our experiments, the occurrence of dendritic calcium spikes during the induction protocol was highly predictive of successful LTP induction at individual synapses (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from the experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:38:12.330057Z"
+    },
+    {
+      "id": "640a5681-08f6-4d2f-a31f-0ffdb850f341",
+      "content_id": "302d2366-be33-48df-8045-e34a6bfe79ac",
+      "claim_id": "C56",
+      "claim": "Theta-frequency-modulated synaptic input to CA1 pyramidal cells triggers dendritic calcium spikes which are required for synaptic potentiation and place cell formation in head-fixed mice running on a treadmill.",
+      "claim_type": "EXPLICIT",
+      "source": "Recent studies in head-fixed mice running on a treadmill suggest that theta-frequency-modulated synaptic input to CA1 pyramidal cells triggers dendritic calcium spikes which are required for synaptic potentiation and place cell formation (Bittner et al., 2015; Sheffield et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of findings from cited recent studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:38:12.330057Z"
+    },
+    {
+      "id": "bcd20d04-b620-432f-8b5c-f1bdd65db566",
+      "content_id": "302d2366-be33-48df-8045-e34a6bfe79ac",
+      "claim_id": "C57",
+      "claim": "Dendritic calcium spikes during complex spike bursts, evoked by synchronized input from entorhinal cortex and CA3 pyramidal cells, are part of the physiological mechanism for the selective potentiation of active Schaffer collateral synapses during behavior.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, dendritic calcium spikes during complex spike bursts, evoked by synchronized input from entorhinal cortex and CA3 pyramidal cells, are part of the physiological mechanism for the selective potentiation of active Schaffer collateral synapses during behavior (Hasselmo et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the findings in the context of in vivo physiology, with citation.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:38:12.330057Z"
+    },
+    {
+      "id": "ed7380a0-aae4-4c4f-a39f-a63ff8b60051",
+      "content_id": "302d2366-be33-48df-8045-e34a6bfe79ac",
+      "claim_id": "C58",
+      "claim": "Newly inserted AMPA receptors lead to stronger depolarization of the spine head during the EPSP, more efficient unblocking of NMDA receptors and EPSCaT potentiation.",
+      "claim_type": "EXPLICIT",
+      "source": "Newly inserted AMPA receptors lead to stronger depolarization of the spine head during the EPSP, more efficient unblocking of NMDA receptors and EPSCaT potentiation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an explanation of the mechanism underlying EPSCaT potentiation based on established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:38:12.330057Z"
+    },
+    {
+      "id": "12401266-5075-4f27-be66-513f6a27e237",
+      "content_id": "302d2366-be33-48df-8045-e34a6bfe79ac",
+      "claim_id": "C59",
+      "claim": "EPSCaT amplitudes are not linearly related to somatic EPSCs.",
+      "claim_type": "EXPLICIT",
+      "source": "It is important to note, however, that EPSCaT amplitudes are not linearly related to somatic EPSCs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the limitations of the measurement technique based on known biophysics.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:38:12.330057Z"
+    },
+    {
+      "id": "71951e8a-38e5-4106-8666-175ccfed7585",
+      "content_id": "302d2366-be33-48df-8045-e34a6bfe79ac",
+      "claim_id": "C60",
+      "claim": "The ratio between AMPA and NMDA receptors is not constant between spines.",
+      "claim_type": "EXPLICIT",
+      "source": "The ratio between AMPA and NMDA receptors is not constant between spines, and peak calcium concentrations depend on spine head volume and spine neck resistance (Grunditz et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on established knowledge from cited work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:38:12.330057Z"
+    },
+    {
+      "id": "d8e9c517-621e-4830-9005-8e22094bbc0b",
+      "content_id": "302d2366-be33-48df-8045-e34a6bfe79ac",
+      "claim_id": "C61",
+      "claim": "High EPSCaT amplitudes can lead to SK channel activation and dampening of the EPSP.",
+      "claim_type": "EXPLICIT",
+      "source": "High EPSCaT amplitudes can even lead to SK channel activation and dampening of the EPSP (Bloodgood and Sabatini, 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on established knowledge from cited work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:38:12.330057Z"
+    },
+    {
+      "id": "f9bcd6c7-9c17-49df-8de5-b213091ffaa2",
+      "content_id": "302d2366-be33-48df-8045-e34a6bfe79ac",
+      "claim_id": "C62",
+      "claim": "Postsynaptic failures (successful glutamate release without postsynaptic calcium influx) are thought to be rare at Schaffer collateral synapses.",
+      "claim_type": "EXPLICIT",
+      "source": "Counting the number of EPSCaTs in a set of stimulated trials can be used as a proxy for presynaptic release probability, as postsynaptic failures (successful glutamate release without postsynaptic calcium influx) are thought to be rare at Schaffer collateral synapses (Nimchinsky et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on established knowledge from cited work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:38:12.330057Z"
+    },
+    {
+      "id": "05b4613c-1be9-49ee-98da-7c554bfe7fa0",
+      "content_id": "302d2366-be33-48df-8045-e34a6bfe79ac",
+      "claim_id": "C63",
+      "claim": "In LTD, the reduction in average EPSCaT amplitude was mainly due to decreased release probability.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast to LTD, where the reduction in average EPSCaT amplitude was mainly due to decreased release probability (Wiegert and Oertner, 2013), oTFS-induced LTP strongly enhanced EPSCaT potency, but did not seem to affect release probability.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison with previous findings from cited work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:38:12.330057Z"
+    },
+    {
+      "id": "354f695c-4c69-4210-a561-439814bd3cf3",
+      "content_id": "302d2366-be33-48df-8045-e34a6bfe79ac",
+      "claim_id": "C64",
+      "claim": "Postsynaptic mechanisms such as AMPA receptor insertion account for oTFS-induced LTP.",
+      "claim_type": "EXPLICIT",
+      "source": "This confirms that postsynaptic mechanisms such as AMPA receptor insertion account for this form of potentiation (Shi et al., 1999; Lu et al., 2001; Matsuzaki et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the findings in the context of established mechanisms from cited work.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:38:12.330057Z"
+    },
+    {
+      "id": "90946f1d-945f-48c9-bb47-8abdffa51184",
+      "content_id": "302d2366-be33-48df-8045-e34a6bfe79ac",
+      "claim_id": "C65",
+      "claim": "LTD induction did not affect spine volume.",
+      "claim_type": "EXPLICIT",
+      "source": "While LTD induction did not affect spine volume (Wiegert and Oertner, 2013), LTP triggered significant growth of the postsynaptic compartment (Figure 2D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a comparison with previous findings from cited work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:38:12.330057Z"
+    },
+    {
+      "id": "27132538-0365-4f49-818e-5662e19adbdc",
+      "content_id": "302d2366-be33-48df-8045-e34a6bfe79ac",
+      "claim_id": "C66",
+      "claim": "Twenty-four hours after induction of LTP, synapses were back to their baseline state with respect to the amplitude and probability of spine calcium transients as well as the volume of the spine head.",
+      "claim_type": "EXPLICIT",
+      "source": "Twenty-four hours after induction of LTP, synapses were back to their baseline state with respect to the amplitude and probability of spine calcium transients as well as the volume of the spine head.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the 24-hour follow-up data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:38:12.330057Z"
+    },
+    {
+      "id": "09c942b3-1ee9-4e12-8685-b7fa63686976",
+      "content_id": "302d2366-be33-48df-8045-e34a6bfe79ac",
+      "claim_id": "C67",
+      "claim": "A long-lasting, synapse-specific memory of the potentiation event was maintained 24 hours after LTP, since once-potentiated spines were more likely to persist during the following week compared to other spines on the same dendritic branch, or non-stimulated controls.",
+      "claim_type": "EXPLICIT",
+      "source": "Yet, a long-lasting, synapse-specific memory of the potentiation event was maintained, since these once-potentiated spines were more likely to persist during the following week compared to other spines on the same dendritic branch, or non-stimulated controls.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the longitudinal survival data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:38:12.330057Z"
+    },
+    {
+      "id": "8fb45344-fd04-4494-a16f-75efed3265ff",
+      "content_id": "302d2366-be33-48df-8045-e34a6bfe79ac",
+      "claim_id": "C68",
+      "claim": "The effects of LTD may outlast the actual depression: CA1 spines did not show any lasting reduction in volume, but their life expectancy was significantly reduced after LTD.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, the effects of LTD may outlast the actual depression: CA1 spines did not show any lasting reduction in volume, but their life expectancy was significantly reduced after LTD (Wiegert and Oertner, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of previous findings from cited work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:38:12.330057Z"
+    },
+    {
+      "id": "aee811eb-c617-4408-aa17-689c2601e795",
+      "content_id": "302d2366-be33-48df-8045-e34a6bfe79ac",
+      "claim_id": "C69",
+      "claim": "A similar sequence of transient LTD followed by delayed spine elimination was found at the parallel fiber synapse on Purkinje cells in the cerebellum.",
+      "claim_type": "EXPLICIT",
+      "source": "A similar sequence of transient LTD followed by delayed spine elimination was found at the parallel fiber synapse on Purkinje cells in the cerebellum (Aziz et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison with findings from cited work in a different brain region.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:38:12.330057Z"
+    },
+    {
+      "id": "83ef6351-8f74-4721-b5cc-334976e5dfbd",
+      "content_id": "302d2366-be33-48df-8045-e34a6bfe79ac",
+      "claim_id": "C70",
+      "claim": "Information could be robustly stored in the topology of the network rather than in the analog strength of individual synapses.",
+      "claim_type": "EXPLICIT",
+      "source": "These findings support the theoretical concept that information could be robustly stored in the topology of the network rather than in the analog strength of individual synapses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the findings in the context of theoretical concepts.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:38:12.330057Z"
+    },
+    {
+      "id": "26f080dc-37fb-489e-96c1-bf0b72bebf6b",
+      "content_id": "302d2366-be33-48df-8045-e34a6bfe79ac",
+      "claim_id": "C71",
+      "claim": "Synaptic tenacity is known to be affected by trans-synaptic proteins such as Neuroligin-1 and SynCAM-1.",
+      "claim_type": "EXPLICIT",
+      "source": "Synaptic tenacity is known to be affected by trans-synaptic proteins such as Neuroligin-1 and SynCAM-1 (Zeidan and Ziv, 2012; K\u00f6rber and Stein, 2016), PSD-95 (De Roo et al., 2008; Cane et al., 2014), ubiquitin protein ligase E3A (Kim et al., 2016), ensheathment of the synapse by astrocyte processes (Bernardinelli et al., 2014) and many other local factors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of established knowledge from multiple cited studies.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:38:12.330057Z"
+    },
+    {
+      "id": "43989934-7b66-4686-91b5-07fbda5a4d74",
+      "content_id": "302d2366-be33-48df-8045-e34a6bfe79ac",
+      "claim_id": "C72",
+      "claim": "It may be a combination of local physical changes and distributed network effects, such as the recurrent reactivation of a specific circuit, which makes once potentiated synapses robust against depression and pruning.",
+      "claim_type": "EXPLICIT",
+      "source": "It may be a combination of local physical changes and distributed network effects, such as the recurrent reactivation of a specific circuit (Wei and Koulakov, 2014; Novitskaya et al., 2016), which makes once potentiated synapses robust against depression (Figure 5B) and pruning (Figure 3E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a speculative interpretation of the mechanisms underlying the observed phenomena, with citations.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:38:12.330057Z"
+    },
+    {
+      "id": "db68a131-f4b9-435a-bed8-673e1c33498d",
+      "content_id": "302d2366-be33-48df-8045-e34a6bfe79ac",
+      "claim_id": "C73",
+      "claim": "The link between LTP and long-term structural stability on the single-synapse level could explain why learning-induced spines in motor cortex are more stable than their pre-existing neighbors and persist for months after training.",
+      "claim_type": "EXPLICIT",
+      "source": "The link between LTP and long-term structural stability we show on the single-synapse level could explain why learning-induced spines in motor cortex are more stable than their pre-existing neighbors and persist for months after training (Xu et al., 2009; Yang et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the findings in the context of in vivo learning studies, with citations.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:38:12.330057Z"
+    },
+    {
+      "id": "095de24c-4ce1-4d8a-bf44-9c696da8b0ac",
+      "content_id": "302d2366-be33-48df-8045-e34a6bfe79ac",
+      "claim_id": "C74",
+      "claim": "LTP-induced tenacity might be a general principle to connect different time scales of cortical circuit plasticity.",
+      "claim_type": "EXPLICIT",
+      "source": "LTP-induced tenacity might be a general principle to connect different time scales of cortical circuit plasticity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative generalization of the findings.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:38:12.330057Z"
+    },
+    {
+      "id": "aa243a5c-b052-48b0-bd52-2886a6cd1c20",
+      "content_id": "302d2366-be33-48df-8045-e34a6bfe79ac",
+      "claim_id": "C75",
+      "claim": "Failure to evoke postsynaptic CSBs upon oTFS led to presynaptic depression, which was followed by increased spine elimination.",
+      "claim_type": "EXPLICIT",
+      "source": "Failure to evoke postsynaptic CSBs upon oTFS led to presynaptic depression in our experiments, which was followed by increased spine elimination (Figure 3F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from the experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:38:12.330057Z"
+    },
+    {
+      "id": "7f80be7f-31b3-4868-b747-169e4877c248",
+      "content_id": "302d2366-be33-48df-8045-e34a6bfe79ac",
+      "claim_id": "C76",
+      "claim": "Presynaptic depression following oTFS without CSBs is mediated by autocrine glutamate signaling at the presynaptic terminal and may not involve postsynaptic signaling.",
+      "claim_type": "EXPLICIT",
+      "source": "This effect has been shown to be mediated by autocrine glutamate signaling at the presynaptic terminal and may not involve postsynaptic signaling (Padamsey et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an explanation of the mechanism based on cited work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:38:12.330057Z"
+    },
+    {
+      "id": "ff7e651f-8cbb-4d9a-acf8-4737165822ad",
+      "content_id": "302d2366-be33-48df-8045-e34a6bfe79ac",
+      "claim_id": "C77",
+      "claim": "If the postsynaptic neuron is driven to spike, retrograde signaling via NO (nitric oxide) leads to an increase in release probability.",
+      "claim_type": "EXPLICIT",
+      "source": "If, on the other hand, the postsynaptic neuron is driven to spike, retrograde signaling via NO (nitric oxide) leads to an increase in release probability, which explains why we did not see presynaptic depression in synapses that experienced CSBs (Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an explanation of the mechanism based on established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:38:12.330057Z"
+    },
+    {
+      "id": "34f76f01-164b-42ef-b51e-b302c6aa89b5",
+      "content_id": "302d2366-be33-48df-8045-e34a6bfe79ac",
+      "claim_id": "C78",
+      "claim": "The classical Hebbian rule of rewarding only synapses that causally contribute to postsynaptic AP firing also seems to apply to long-term stability.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the classical Hebbian rule of rewarding only synapses that causally contribute to postsynaptic AP firing also seems to apply to long-term stability.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the findings in the context of Hebbian learning theory.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:38:12.330057Z"
+    },
+    {
+      "id": "d77097c6-2e06-4535-83cf-b6fe1fadc24b",
+      "content_id": "302d2366-be33-48df-8045-e34a6bfe79ac",
+      "claim_id": "C79",
+      "claim": "Changes in spine properties are not perfectly confined to the directly driven synapse: oTFS not only affected strength, volume and long-term stability of the stimulated spines, but also increased volume and stability of its immediate neighbors.",
+      "claim_type": "EXPLICIT",
+      "source": "However, our results suggest that changes are not perfectly confined to the directly driven synapse: Optogenetic TFS not only affected strength, volume and long-term stability of the stimulated spines, but also increased volume and stability of its immediate neighbors (Figure 2D, Figure 3E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from the experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:38:12.330057Z"
+    },
+    {
+      "id": "c3818189-7313-4b0f-93c4-020351bb5a35",
+      "content_id": "302d2366-be33-48df-8045-e34a6bfe79ac",
+      "claim_id": "C80",
+      "claim": "The spread of plasticity effects to neighboring spines is consistent with short-range diffusion of 'potentiating factors' such as activated RhoA and Cdc42 out of the directly stimulated spine.",
+      "claim_type": "EXPLICIT",
+      "source": "This is consistent with short-range diffusion of 'potentiating factors' such as activated RhoA and Cdc42 out of the directly stimulated spine (Murakoshi et al., 2011; Yasuda, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the findings in the context of known molecular mechanisms, with citations.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:38:12.330057Z"
+    },
+    {
+      "id": "c86c3e2f-7464-4529-998a-862a1b0ac34c",
+      "content_id": "302d2366-be33-48df-8045-e34a6bfe79ac",
+      "claim_id": "C81",
+      "claim": "More distant spines on the same dendrite (5\u201310 \u00b5m) showed no increase in volume and a decrease in lifetime after LTP.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, more distant spines on the same dendrite (5\u201310 \u00b5m) showed no increase in volume and a decrease in lifetime (Figure 2D, Figure 3E), confirming an earlier 3 day study (De Roo et al., 2008).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from the experimental data, with reference to a prior study.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:38:12.330057Z"
+    },
+    {
+      "id": "dc0e4363-d688-4201-a69f-2fe6808d936a",
+      "content_id": "302d2366-be33-48df-8045-e34a6bfe79ac",
+      "claim_id": "C82",
+      "claim": "The 7 day follow-up points to a center-surround function that stabilizes the immediate neighbors (<5 \u00b5m) of potentiated synapses, although they were most likely not active during the induction protocol.",
+      "claim_type": "EXPLICIT",
+      "source": "Nevertheless, our 7 day follow-up points to a center-surround function that stabilizes the immediate neighbors (<5 \u00b5m) of potentiated synapses, although they were most likely not active during the induction protocol (Figure 5D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an interpretation of the spatial pattern of spine survival data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:38:12.330057Z"
+    },
+    {
+      "id": "aa9d41cf-3e77-41d2-bc97-d60b07f62a4f",
+      "content_id": "302d2366-be33-48df-8045-e34a6bfe79ac",
+      "claim_id": "C83",
+      "claim": "LTD-induced destabilization has a larger (>10 \u00b5m) lateral spread than LTP-induced stabilization.",
+      "claim_type": "EXPLICIT",
+      "source": "As we have previously shown, LTD-induced destabilization has an even larger (>10 \u00b5m) lateral spread (Wiegert and Oertner, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a reference to previous findings from cited work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:38:12.330057Z"
+    },
+    {
+      "id": "cedaab8f-8a2a-404c-966f-23fa5dfa6a11",
+      "content_id": "302d2366-be33-48df-8045-e34a6bfe79ac",
+      "claim_id": "C84",
+      "claim": "The local environment is as important for the long-term survival of a synaptic connection as its own activity history.",
+      "claim_type": "EXPLICIT",
+      "source": "Apparently, the local environment is as important for the long-term survival of a synaptic connection as its own activity history.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the observations of lateral spread of plasticity effects.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:38:12.330057Z"
+    },
+    {
+      "id": "5ef1308d-a02c-484a-b3dc-aebd943ae014",
+      "content_id": "302d2366-be33-48df-8045-e34a6bfe79ac",
+      "claim_id": "C85",
+      "claim": "It might be impossible to prune a synapse next to a strongly potentiated spine.",
+      "claim_type": "EXPLICIT",
+      "source": "This could put a limit to the uniformity of synaptic inputs in dendritic sections, as it might be impossible to prune a synapse next to a strongly potentiated spine.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative interpretation of the implications of the findings.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:38:12.330057Z"
+    },
+    {
+      "id": "cfa0dfee-bc5a-450f-9084-044aaf046195",
+      "content_id": "302d2366-be33-48df-8045-e34a6bfe79ac",
+      "claim_id": "C86",
+      "claim": "Synaptic pruning is not a random process, but determined by the last plasticity-inducing activity pattern.",
+      "claim_type": "EXPLICIT",
+      "source": "By inducing two rounds of plasticity, we demonstrated that synaptic pruning is not a random process, but determined by the last plasticity-inducing activity pattern.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the sequential plasticity experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:38:12.330057Z"
+    },
+    {
+      "id": "1370a508-babd-4257-90c4-609eabd821ff",
+      "content_id": "302d2366-be33-48df-8045-e34a6bfe79ac",
+      "claim_id": "C87",
+      "claim": "In the organotypic culture system, the latency between LTD induction and spine loss was several days.",
+      "claim_type": "EXPLICIT",
+      "source": "In the organotypic culture system, the latency between LTD induction and spine loss was several days.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the longitudinal imaging data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:38:12.330057Z"
+    },
+    {
+      "id": "17282d1e-19f7-46a9-acac-d82e5c88db42",
+      "content_id": "302d2366-be33-48df-8045-e34a6bfe79ac",
+      "claim_id": "C88",
+      "claim": "The latency between LTD induction and spine loss could be considerably shorter in vivo, given the highly rhythmic activity of the hippocampal circuit and in consequence, intense synaptic competition.",
+      "claim_type": "EXPLICIT",
+      "source": "This period could be considerably shorter in vivo, given the highly rhythmic activity of the hippocampal circuit and in consequence, intense synaptic competition.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative extrapolation from the in vitro findings to the in vivo situation.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:38:12.330057Z"
+    },
+    {
+      "id": "f514f49d-11b3-4370-ad6e-405369d26016",
+      "content_id": "302d2366-be33-48df-8045-e34a6bfe79ac",
+      "claim_id": "C89",
+      "claim": "The experimental approach complements in vivo studies of structural plasticity, which provide information about spine turnover, but not about the activity patterns in pre- and postsynaptic neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Our approach allows imposing any kind of spike pattern to a select group of synapses over several days. It complements in vivo studies of structural plasticity, which provide information about spine turnover, but not about the activity patterns in pre- and postsynaptic neurons (Attardo et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the advantages of the experimental approach, with citation.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:38:12.330057Z"
+    },
+    {
+      "id": "fc7d89ea-833d-4740-ad72-13b629131d97",
+      "content_id": "302d2366-be33-48df-8045-e34a6bfe79ac",
+      "claim_id": "C90",
+      "claim": "Networks with self-organized connectivity might generate activity patterns that are different from the randomly connected networks underlying current large-scale simulations.",
+      "claim_type": "EXPLICIT",
+      "source": "Networks with self-organized connectivity might generate activity patterns that are different from the randomly connected networks underlying current large-scale simulations (Markram et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about the implications for network modeling, with citation.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:38:12.330057Z"
+    },
+    {
+      "id": "0a517f80-d1d8-4314-b513-1a1ce2060a03",
+      "content_id": "302d2366-be33-48df-8045-e34a6bfe79ac",
+      "claim_id": "C91",
+      "claim": "Long-term analysis of the structure-function relationship of individual synapses may help understanding how the brain stores and retrieves memories.",
+      "claim_type": "EXPLICIT",
+      "source": "Together with realistic simulations of synaptic network dynamics and long-term investigations of synapse remodeling in vivo, long-term analysis of the structure-function relationship of individual synapses may help understanding how the brain stores and retrieves memories.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the potential impact of this type of research.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:38:12.330057Z"
+    },
+    {
+      "id": "a8cf8ee4-cec6-4fe1-a16d-2f856a86a11f",
+      "content_id": "302d2366-be33-48df-8045-e34a6bfe79ac",
+      "claim_id": "C92",
+      "claim": "Graded changes in synaptic strength, driven by specific activity patterns, are a candidate mechanism for information storage in the brain.",
+      "claim_type": "EXPLICIT",
+      "source": "Graded changes in synaptic strength, driven by specific activity patterns, are a candidate mechanism for information storage in the brain (Chaudhuri and Fiete, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement of a theoretical concept from the literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:38:12.330057Z"
+    },
+    {
+      "id": "b0bdf9d5-3527-4f4e-b058-c16c3acdff0b",
+      "content_id": "302d2366-be33-48df-8045-e34a6bfe79ac",
+      "claim_id": "C93",
+      "claim": "When entire pathways are potentiated by high frequency stimulation, the increase in synaptic coupling can be recorded for several days.",
+      "claim_type": "EXPLICIT",
+      "source": "When entire pathways are potentiated by high frequency stimulation, the increase in synaptic coupling can indeed be recorded for several days (Bliss and Lomo, 1973).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a reference to classic findings in the field.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:38:12.330057Z"
+    },
+    {
+      "id": "8f78bb2c-57ee-4efa-b130-69c439c634cd",
+      "content_id": "302d2366-be33-48df-8045-e34a6bfe79ac",
+      "claim_id": "C94",
+      "claim": "Increases in the size of synapses, the number of postsynaptic transmitter receptors and release of transmitter have been shown to underlie increases in synaptic strength.",
+      "claim_type": "EXPLICIT",
+      "source": "Increases in the size of synapses, the number of postsynaptic transmitter receptors and release of transmitter, have been shown to underlie increases in synaptic strength.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of established knowledge about the mechanisms of synaptic strengthening.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:38:12.330057Z"
+    },
+    {
+      "id": "83a64b5b-2b7f-436b-8627-6dff5189c157",
+      "content_id": "302d2366-be33-48df-8045-e34a6bfe79ac",
+      "claim_id": "C95",
+      "claim": "A prevailing theory is that graded changes in synaptic strength persist as a memory trace of former activity.",
+      "claim_type": "EXPLICIT",
+      "source": "A prevailing theory is that graded changes in synaptic strength persist as a memory trace of former activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement of a prevailing theoretical view in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:38:12.330057Z"
+    },
+    {
+      "id": "14f00237-62eb-445b-83d9-70852f25691f",
+      "content_id": "302d2366-be33-48df-8045-e34a6bfe79ac",
+      "claim_id": "C96",
+      "claim": "Dramatic fluctuations in spine volume over time scales of hours to days cast doubt on whether information can be stored for long periods in the analog strength of synapses.",
+      "claim_type": "EXPLICIT",
+      "source": "At the level of individual synapses, however, dramatic fluctuations in spine volume over time scales of hours to days cast doubt on whether information can be stored for long periods in the analog strength of synapses (Holtmaat and Caroni, 2016; Berry and Nedivi, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement of a challenge to the prevailing theory, with citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:38:12.330057Z"
+    },
+    {
+      "id": "a733087c-4cf3-446a-ae9a-668bf8e9dee9",
+      "content_id": "302d2366-be33-48df-8045-e34a6bfe79ac",
+      "claim_id": "C97",
+      "claim": "An alternative hypothesis is that over longer time periods, information is stored not in the strength but in the number of connections, which, at the level of individual synapses, would manifest as a change in synaptic lifetime.",
+      "claim_type": "EXPLICIT",
+      "source": "An alternative hypothesis is that over longer time periods, information is stored not in the strength but in the number of connections, which, at the level of individual synapses, would manifest as a change in synaptic lifetime.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement of an alternative theoretical hypothesis.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:38:12.330057Z"
+    },
+    {
+      "id": "3c59c550-dc12-421f-b7e1-ee9944f30fc4",
+      "content_id": "302d2366-be33-48df-8045-e34a6bfe79ac",
+      "claim_id": "C98",
+      "claim": "Long term depression (LTD) decreases synaptic lifetime.",
+      "claim_type": "EXPLICIT",
+      "source": "Supporting evidence comes from the findings that long term depression (LTD) decreases synaptic lifetime (N\u00e4gerl et al., 2004; Bastrikova et al., 2008; Wiegert and Oertner, 2013) and that spine structure becomes stabilized and growth persists up to 3 days after induction of long term potentiation (LTP) (De Roo et al., 2008; Hill and Zito, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of findings from multiple cited studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:38:12.330057Z"
+    },
+    {
+      "id": "6ca42ff7-df79-4a13-949f-fba4329ebba0",
+      "content_id": "302d2366-be33-48df-8045-e34a6bfe79ac",
+      "claim_id": "C99",
+      "claim": "Spine structure becomes stabilized and growth persists up to 3 days after induction of long term potentiation (LTP).",
+      "claim_type": "EXPLICIT",
+      "source": "Supporting evidence comes from the findings that long term depression (LTD) decreases synaptic lifetime (N\u00e4gerl et al., 2004; Bastrikova et al., 2008; Wiegert and Oertner, 2013) and that spine structure becomes stabilized and growth persists up to 3 days after induction of long term potentiation (LTP) (De Roo et al., 2008; Hill and Zito, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of findings from cited studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:38:12.330057Z"
+    },
+    {
+      "id": "157191ed-da5f-4de7-8c91-921a4b3b246c",
+      "content_id": "302d2366-be33-48df-8045-e34a6bfe79ac",
+      "claim_id": "C100",
+      "claim": "LTP can be reversed by low-frequency stimulation (depotentiation), but such depotentiation may only occur 1\u20132 hr after LTP induction.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, LTP can be reversed by low-frequency stimulation (LFS), but such depotentiation may only occur 1\u20132 hr after LTP induction (Fujii et al., 1991; O'Dell and Kandel, 1994; Abraham and Huggett, 1997; Zhou et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of findings from multiple cited studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:38:12.330057Z"
+    },
+    {
+      "id": "7126173c-14e5-4592-9e6b-d06b29c8008e",
+      "content_id": "302d2366-be33-48df-8045-e34a6bfe79ac",
+      "claim_id": "C101",
+      "claim": "How a once potentiated synapse responds to LFS one day later is difficult to predict.",
+      "claim_type": "EXPLICIT",
+      "source": "How a once potentiated synapse responds to LFS one day later is therefore difficult to predict.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement of the knowledge gap that motivated the study.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:38:12.330057Z"
+    },
+    {
+      "id": "e17294fb-9189-449c-80a2-c916a71e0983",
+      "content_id": "302d2366-be33-48df-8045-e34a6bfe79ac",
+      "claim_id": "C102",
+      "claim": "Schaffer collateral synapses were potentiated by 5 Hz stimulation if complex spike bursts were induced in the postsynaptic CA1 neuron.",
+      "claim_type": "EXPLICIT",
+      "source": "Using organotypic hippocampal slice cultures and optical stimulation of channelrhodopsin-expressing CA3 pyramidal neurons, we found that Schaffer collateral synapses were potentiated by 5 Hz stimulation if complex spike bursts were induced in the postsynaptic CA1 neuron (Thomas et al., 1998).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the main experimental finding, with citation to prior work on the requirement for CSBs.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:38:12.330057Z"
+    },
+    {
+      "id": "f67cd503-8566-4b8a-9eb8-7a751b888b5a",
+      "content_id": "302d2366-be33-48df-8045-e34a6bfe79ac",
+      "claim_id": "C103",
+      "claim": "During successful synaptic transmission, Ca2+ ions enter the spine through voltage-gated calcium channels and NMDA receptors which both have a steep dependence on membrane depolarization.",
+      "claim_type": "EXPLICIT",
+      "source": "During successful synaptic transmission, Ca2+ ions enter the spine through voltage-gated calcium cannels and NMDA receptors which both have a steep dependence on membrane depolarization.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement of established knowledge about spine calcium dynamics.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:38:12.330057Z"
+    },
+    {
+      "id": "633d6013-ee48-486a-ad2a-bca4a398ca94",
+      "content_id": "302d2366-be33-48df-8045-e34a6bfe79ac",
+      "claim_id": "C104",
+      "claim": "EPSCaTs depend on AMPA receptor activity and can be used to detect changes in synaptic strength.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, EPSCaTs depend on AMPA receptor activity (Holbro et al., 2010) and can be used to detect changes in synaptic strength (Emptage et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the measurement technique, with citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:38:12.330057Z"
+    },
+    {
+      "id": "e1b760b8-212a-4459-a8dd-c8de77b003d6",
+      "content_id": "302d2366-be33-48df-8045-e34a6bfe79ac",
+      "claim_id": "C105",
+      "claim": "Compared to glutamate uncaging experiments, which only report changes in postsynaptic strength (potency), optogenetic interrogation is also sensitive to presynaptic changes (release probability), providing a more complete picture of synaptic transmission.",
+      "claim_type": "EXPLICIT",
+      "source": "Compared to glutamate uncaging experiments, which only report changes in postsynaptic strength (potency), optogenetic interrogation is also sensitive to presynaptic changes (release probability), providing a more complete picture of synaptic transmission.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the advantages of the experimental approach.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:38:12.330057Z"
+    },
+    {
+      "id": "2b9f9d7c-faae-4442-8459-41dff886e93b",
+      "content_id": "302d2366-be33-48df-8045-e34a6bfe79ac",
+      "claim_id": "C106",
+      "claim": "LTD and LTP differentially affected synaptic lifetime.",
+      "claim_type": "EXPLICIT",
+      "source": "As suggested by previous studies, LTD and LTP differentially affected synaptic lifetime.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the main finding, with reference to prior studies.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:38:12.330057Z"
+    },
+    {
+      "id": "efe8d7a6-4700-4cdf-9e49-99f25c93044c",
+      "content_id": "302d2366-be33-48df-8045-e34a6bfe79ac",
+      "claim_id": "C107",
+      "claim": "Sequentially inducing LTD and LTP did not return spines to their basal state, but resulted in reduced elimination rates similar to synapses which only underwent LTP.",
+      "claim_type": "EXPLICIT",
+      "source": "However, sequentially inducing LTD and LTP did not return spines to their basal state, but resulted in reduced elimination rates similar to synapses which only underwent LTP.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the main finding from the sequential plasticity experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:38:12.330057Z"
+    },
+    {
+      "id": "c77f92bd-13a8-401c-873e-900996a6a60d",
+      "content_id": "302d2366-be33-48df-8045-e34a6bfe79ac",
+      "claim_id": "C108",
+      "claim": "Once LTP was induced, it became almost impossible to induce subsequent LTD.",
+      "claim_type": "EXPLICIT",
+      "source": "Once LTP was induced, it became almost impossible to induce subsequent LTD.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the main finding from the sequential plasticity experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:38:12.330057Z"
+    },
+    {
+      "id": "b9449db3-e130-4f17-b52d-88797a88cf97",
+      "content_id": "302d2366-be33-48df-8045-e34a6bfe79ac",
+      "claim_id": "C109",
+      "claim": "In the few experiments where LTD could be induced 24 hr after LTP, synaptic lifetime was similar to that of spines that only underwent LTD.",
+      "claim_type": "EXPLICIT",
+      "source": "In the few experiments were LTD could be induced 24 hr after LTP, synaptic lifetime was similar to that of spines that only underwent LTD.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the main finding from the sequential plasticity experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:38:12.330057Z"
+    },
+    {
+      "id": "a46ce85e-53f7-4c6a-831e-4f30a657d9a5",
+      "content_id": "302d2366-be33-48df-8045-e34a6bfe79ac",
+      "claim_id": "C110",
+      "claim": "Multiple weight adjustments are not summed in a linear fashion, but the most recent plasticity event determines the lifetime of a Schaffer collateral synapse.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, multiple weight adjustments are not summed in a linear fashion, but the most recent plasticity event determines the lifetime of a Schaffer collateral synapse.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main conclusion drawn from the sequential plasticity experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:38:12.330057Z"
+    },
+    {
+      "id": "6f2d0021-f0b5-42f1-9f04-ca7217826137",
+      "content_id": "302d2366-be33-48df-8045-e34a6bfe79ac",
+      "claim_id": "C111",
+      "claim": "Hippocampal slice cultures from male Wistar rats were prepared at postnatal day 4\u20135.",
+      "claim_type": "EXPLICIT",
+      "source": "Hippocampal slice cultures from male Wistar rats were prepared at postnatal day 4\u20135 as described (Gee et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the experimental methods.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:38:12.330057Z"
+    },
+    {
+      "id": "26a28440-3d14-495c-bc2e-06864b0462af",
+      "content_id": "302d2366-be33-48df-8045-e34a6bfe79ac",
+      "claim_id": "C112",
+      "claim": "At DIV 3, rAAV2/7 encoding ChR2(ET/TC)\u22122A-synaptophysin-tdimer2 was pressure-injected into CA3.",
+      "claim_type": "EXPLICIT",
+      "source": "At DIV 3, we pressure-injected rAAV2/7 encoding ChR2(ET/TC)\u22122A-synaptophysin-tdimer2 into CA3.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the experimental methods.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:38:12.330057Z"
+    },
+    {
+      "id": "df9f3239-9c51-4529-a90c-3706edb76a17",
+      "content_id": "302d2366-be33-48df-8045-e34a6bfe79ac",
+      "claim_id": "C113",
+      "claim": "At DIV 18, single-cell electroporation was used to transfect CA1 pyramidal neurons with GCaMP6s and mCerulean (ratio 1:1).",
+      "claim_type": "EXPLICIT",
+      "source": "At DIV 18, single-cell electroporation was used to transfect CA1 pyramidal neurons in rAAV-infected slices with GCaMP6s and mCerulean (ratio 1:1) as described (Wiegert et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the experimental methods.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:38:12.330057Z"
+    },
+    {
+      "id": "5e1378de-e631-400d-b00e-e1b159a94ffc",
+      "content_id": "302d2366-be33-48df-8045-e34a6bfe79ac",
+      "claim_id": "C114",
+      "claim": "Experiments were performed between DIV 21 and 25.",
+      "claim_type": "EXPLICIT",
+      "source": "Experiments were performed between DIV 21 and 25.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the experimental methods.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:38:12.330057Z"
+    },
+    {
+      "id": "4f1d9cba-dff8-4f04-8eda-7cfe8df7a4a4",
+      "content_id": "302d2366-be33-48df-8045-e34a6bfe79ac",
+      "claim_id": "C115",
+      "claim": "Whole-cell recordings from CA1 pyramidal cells were made at 25\u00b0C with a Multiclamp 700B amplifier.",
+      "claim_type": "EXPLICIT",
+      "source": "Whole-cell recordings from CA1 pyramidal cells were made at 25\u00b0C with a Multiclamp 700B amplifier (Molecular Devices).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the experimental methods.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:38:12.330057Z"
+    },
+    {
+      "id": "d9556cff-467d-46e3-aca7-a24cfb1969e1",
+      "content_id": "302d2366-be33-48df-8045-e34a6bfe79ac",
+      "claim_id": "C116",
+      "claim": "LTD experiments were conducted in ACSF containing (in mM) 135 NaCl, 2.5 KCl, 4 CaCl2, 4 MgCl2, 10 Na-HEPES, 12.5 D-glucose, 1.25 NaH2PO4, 0.03 D-Serine (pH 7.4, sterile filtered).",
+      "claim_type": "EXPLICIT",
+      "source": "LTD experiments were conducted in ACSF containing (in mM) 135 NaCl, 2.5 KCl, 4 CaCl2, 4 MgCl2, 10 Na-HEPES, 12.5 D-glucose, 1.25 NaH2PO4, 0.03 D-Serine (pH 7.4, sterile filtered).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the experimental methods.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:38:12.330057Z"
+    },
+    {
+      "id": "05da554d-6358-4e2c-9f5a-c8e12bdd83c8",
+      "content_id": "302d2366-be33-48df-8045-e34a6bfe79ac",
+      "claim_id": "C117",
+      "claim": "During LTP induction, ACSF with lower divalent ion concentration (2 CaCl2, 1 MgCl2) was used to increase excitability.",
+      "claim_type": "EXPLICIT",
+      "source": "During LTP induction, ACSF with lower divalent ion concentration (2 CaCl2, 1 MgCl2) was used to increase excitability.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the experimental methods.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:38:12.330057Z"
+    },
+    {
+      "id": "bc85bd95-0889-4da2-b0ba-a72ad3da8f95",
+      "content_id": "302d2366-be33-48df-8045-e34a6bfe79ac",
+      "claim_id": "C118",
+      "claim": "Recordings with a drift of >20% in access resistance were discarded.",
+      "claim_type": "EXPLICIT",
+      "source": "Access resistance was monitored continuously and recordings with a drift of >20% were discarded.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the quality control criteria for the experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:38:12.330057Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "7c6d9eea-f298-4eed-a677-2e722477ebee",
+      "content_id": "302d2366-be33-48df-8045-e34a6bfe79ac",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Optogenetic theta frequency stimulation (oTFS) at 5 Hz induces NMDAR-dependent LTP at Schaffer collateral synapses when complex spike bursts (CSBs) are triggered in postsynaptic CA1 neurons. EPSCaT amplitude and potency, as well as EPSC amplitude in reporter neurons, were significantly increased 30 min after oTFS (p=0.0008 and p=0.0025 for EPSCaT measures; p=0.012 for EPSCs, n=20). Both LTP induction and CSBs were blocked by the NMDAR antagonist APV.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The claims provide converging evidence from multiple measurements (spine calcium imaging, electrophysiology) with appropriate statistical analysis and sample sizes. The requirement for CSBs is demonstrated, and the NMDAR-dependence is confirmed pharmacologically. The experimental design includes proper controls (APV blockade, experiments without CSBs).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T06:38:12.330057Z"
+    },
+    {
+      "id": "84d7a7c2-008b-473d-967d-58bc7040ff0c",
+      "content_id": "302d2366-be33-48df-8045-e34a6bfe79ac",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "When oTFS failed to elicit CSBs in CA1 neurons, a weak form of presynaptic depression occurred, characterized by significantly reduced release probability (PCa). This destabilizing effect was contingent on 5 Hz presynaptic activation and was followed by increased spine elimination.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The claims demonstrate a clear distinction between successful and unsuccessful LTP induction based on CSB occurrence. Statistical evidence shows reduced PCa when CSBs were absent, and control experiments (no stimulation, test pulses only) confirm the specificity of the 5 Hz stimulation effect. The link to spine elimination is supported by longitudinal imaging data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T06:38:12.330057Z"
+    },
+    {
+      "id": "ac2095cc-66d7-47b0-83a1-787d6200a59b",
+      "content_id": "302d2366-be33-48df-8045-e34a6bfe79ac",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "oTFS-induced LTP is primarily mediated by postsynaptic mechanisms, as evidenced by increased EPSCaT potency without significant changes in release probability (PCa). This contrasts with LTD, which primarily affects presynaptic release probability.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The lack of change in PCa during LTP, combined with increased potency, provides strong evidence for postsynaptic mechanisms. The comparison with LTD (from prior work) strengthens the interpretation. However, the inference about AMPA receptor insertion is based on established mechanisms rather than direct measurement in this study.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T06:38:12.330057Z"
+    },
+    {
+      "id": "6dc0f01f-d4e5-47b2-8b45-c3180f68bb54",
+      "content_id": "302d2366-be33-48df-8045-e34a6bfe79ac",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "LTP induction triggered structural plasticity: spine head volume of potentiated spines increased by 21\u00b16% over 30 min, with nearest neighbors showing a smaller increase (15\u00b13%). No volume changes occurred in more distant spines (2\u00b13%), in control conditions without oTFS, or when NMDAR was blocked.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The structural measurements are quantitative with error estimates and appropriate controls (no stimulation, APV blockade, failed LTP induction). The spatial gradient of volume changes (stimulated > neighbors > distant) is well-documented. The time course (no immediate change, increase over 30 min) is clearly demonstrated.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T06:38:12.330057Z"
+    },
+    {
+      "id": "d68bfd11-bcd0-4679-9dd6-87032d3c50e5",
+      "content_id": "302d2366-be33-48df-8045-e34a6bfe79ac",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Twenty-four hours after LTP induction, both spine head volume and EPSCaT potency returned to baseline levels, with no significant changes in EPSCaT probability. Thus, no permanent changes in measurable synaptic strength persisted beyond the acute effects on day 0.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The 24-hour follow-up measurements clearly demonstrate return to baseline for both structural (volume) and functional (EPSCaT potency) measures. Statistical analysis confirms no significant differences from baseline. This is a key finding that motivates the investigation of synaptic lifetime as an alternative memory mechanism.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T06:38:12.330057Z"
+    },
+    {
+      "id": "c5746c5b-f0cf-416c-893c-518d5c5e9f48",
+      "content_id": "302d2366-be33-48df-8045-e34a6bfe79ac",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Despite returning to baseline strength by 24 hours, LTP-induced spines showed dramatically increased survival over 7 days (only 9% lost vs 27% control). Nearest neighbors also showed increased survival (15% lost), while more distant spines (>5 \u00b5m) showed decreased survival (40% lost), suggesting a center-surround pattern of stability modulation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The longitudinal imaging data over 7 days provides strong evidence for LTP-induced stabilization. The spatial pattern (stabilization of stimulated and near neighbors, destabilization of distant spines) is clearly demonstrated. The control turnover rate (27%) is consistent with prior literature. Sample sizes are adequate (11 potentiated spines from 14 total).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T06:38:12.330057Z"
+    },
+    {
+      "id": "4874a20c-0372-47cb-9763-475f5f386498",
+      "content_id": "302d2366-be33-48df-8045-e34a6bfe79ac",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The spread of plasticity effects to neighboring spines is consistent with diffusion of biochemical signaling molecules (e.g., activated RhoA and Cdc42) from stimulated spines. This creates a center-surround function stabilizing immediate neighbors (<5 \u00b5m) while destabilizing more distant spines.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The spatial pattern of effects (volume changes and survival) on neighboring spines is well-documented. The interpretation invoking diffusible factors is reasonable and supported by cited literature, though the specific molecules are not directly measured in this study. The center-surround pattern is clearly demonstrated in the 7-day survival data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T06:38:12.330057Z"
+    },
+    {
+      "id": "3404100e-2e8e-42c6-a2b5-d370b79c7853",
+      "content_id": "302d2366-be33-48df-8045-e34a6bfe79ac",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Optogenetic low-frequency stimulation (oLFS, 900 APs at 1 Hz) induced LTD at Schaffer collateral synapses, with 70% of experiments showing successful depression (>10% reduction in EPSCaT amplitude). Forty-five percent of LTD spines disappeared between days 1 and 7.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The LTD induction protocol and success criteria are clearly defined. The 45% elimination rate is consistent with prior work from the same group. The 70% success rate provides adequate sample size for subsequent experiments. This establishes the baseline for sequential plasticity experiments.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T06:38:12.330057Z"
+    },
+    {
+      "id": "8bc4dc18-7624-4d1d-ba5a-4a293b7f9061",
+      "content_id": "302d2366-be33-48df-8045-e34a6bfe79ac",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "When LTP was successfully induced 24 hours after LTD (64% success rate), only 12% of spines disappeared over the next 7 days, indicating rescue from elimination. Without successful LTP (43% disappeared), the oTFS protocol itself had no effect on survival of previously depressed synapses.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The sequential plasticity experiment (LTD\u2192LTP) clearly demonstrates that successful LTP induction is necessary and sufficient to rescue doomed synapses. The control group (oTFS without LTP) shows no rescue effect, confirming specificity. Sample sizes are adequate (18/28 successful LTP after LTD).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T06:38:12.330057Z"
+    },
+    {
+      "id": "bcdacb52-2189-44b0-8e5e-27b5c140db0b",
+      "content_id": "302d2366-be33-48df-8045-e34a6bfe79ac",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "When oLFS was applied 24 hours after LTP, only 33% of previously potentiated synapses showed LTD (vs 70% in naive cultures). This resistance to depression was not explained by increased postsynaptic spiking during oLFS or by elevated initial synaptic strength, pointing to a synapse-specific memory of past potentiation that cannot be detected by standard measures.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The dramatic reduction in LTD success rate after prior LTP (33% vs 70%) is well-documented. Alternative explanations (postsynaptic spiking, initial strength) are systematically ruled out with appropriate statistical tests. The inference of a hidden memory trace is reasonable given the data, though the molecular mechanism remains unidentified.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T06:38:12.330057Z"
+    },
+    {
+      "id": "b145e728-ad1d-43db-a540-53f46d793a2f",
+      "content_id": "302d2366-be33-48df-8045-e34a6bfe79ac",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "In the rare cases where LTD was successfully induced after LTP (33% of attempts), 50% of spines disappeared by day 7, similar to LTD-only conditions. When LTD induction failed (more typical), only 8% disappeared. Synaptic strength on day 0 or day 1 did not predict survival, indicating that the most recent plasticity event determines synaptic lifetime.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The sequential plasticity data (LTP\u2192LTD) demonstrates that successful LTD can override prior LTP stabilization. The statistical analysis ruling out initial strength as a predictor is appropriate. The conclusion that the last plasticity event dominates is well-supported, though sample sizes for successful LTP\u2192LTD are small (n=6).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T06:38:12.330057Z"
+    },
+    {
+      "id": "ac9b931b-f804-47d3-b22b-f53e0709e0a7",
+      "content_id": "302d2366-be33-48df-8045-e34a6bfe79ac",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "LTP and spine stabilization can be induced at 5 Hz (theta frequency) with synchronized input, making this a physiologically relevant protocol. This is considered the equivalent of STDP protocols but using synchronized synaptic input rather than artificial current injection, consistent with in vivo observations of dendritic calcium spikes during place cell formation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The 5 Hz stimulation frequency is physiologically relevant for rodent hippocampus. The comparison to STDP is reasonable, and the connection to in vivo place cell formation is supported by cited recent studies. However, the direct equivalence to STDP is an interpretation rather than a demonstrated fact.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T06:38:12.330057Z"
+    },
+    {
+      "id": "cb9b6f35-9aac-4ab6-ac31-fbd45a5f1ea9",
+      "content_id": "302d2366-be33-48df-8045-e34a6bfe79ac",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Synchronized synaptic input triggers dendritic calcium spikes (complex spike bursts), which are highly predictive of successful LTP induction at individual synapses. These events involve voltage-dependent NMDARs and VDCCs and can be identified electrophysiologically as bursts of sodium spikes on a broader calcium-mediated depolarization.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The correlation between CSB occurrence and LTP success is clearly demonstrated in the data. The biophysical description of CSBs is based on well-established literature. The predictive value of CSBs for LTP is a key finding that links cellular mechanisms to synaptic outcomes.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T06:38:12.330057Z"
+    },
+    {
+      "id": "ba322efa-b6c6-4596-8ed3-6d969620c0e7",
+      "content_id": "302d2366-be33-48df-8045-e34a6bfe79ac",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "EPSCaTs provide a measure of synaptic strength that depends on AMPA receptor activity and is sensitive to both presynaptic (release probability) and postsynaptic (potency) changes. However, EPSCaT amplitudes are not linearly related to somatic EPSCs due to variable AMPA/NMDA ratios, spine geometry, and potential SK channel activation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The methodological claims about EPSCaTs are well-supported by cited literature and the authors' own data. The limitations and caveats are appropriately acknowledged. The advantage over glutamate uncaging (sensitivity to presynaptic changes) is a valid point. This establishes the validity of the measurement approach.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T06:38:12.330057Z"
+    },
+    {
+      "id": "93a48452-5137-4ab5-a95b-58e9bb7d1431",
+      "content_id": "302d2366-be33-48df-8045-e34a6bfe79ac",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The findings support the theoretical concept that information could be stored in network topology (synaptic connectivity) rather than analog synaptic strength. Synaptic pruning is not random but determined by the last plasticity-inducing activity pattern, with the local environment being as important as individual synapse history.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The data on transient strength changes coupled with long-lasting survival effects strongly support the topology-based memory hypothesis. The demonstration that the last plasticity event dominates is clear. However, this remains a theoretical interpretation of the data rather than a direct demonstration of information storage. The connection to in vivo learning is speculative but reasonable.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T06:38:12.330057Z"
+    },
+    {
+      "id": "ac5946dd-888f-4cda-9112-79d5a017db75",
+      "content_id": "302d2366-be33-48df-8045-e34a6bfe79ac",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "The differential effects of oTFS with and without CSBs can be explained by distinct signaling mechanisms: autocrine glutamate signaling causes presynaptic depression without postsynaptic spikes, while retrograde NO signaling increases release probability when postsynaptic neurons spike. This implements a Hebbian rule at the level of long-term stability.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The mechanistic interpretation is based on cited literature (Padamsey et al., 2017) and is consistent with the observed data (presynaptic depression without CSBs, no depression with CSBs). However, the specific signaling molecules (glutamate, NO) are not directly measured in this study. The Hebbian interpretation is reasonable but somewhat speculative.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T06:38:12.330057Z"
+    },
+    {
+      "id": "f98b962c-edc4-4fa9-ad1d-04e209b6edcb",
+      "content_id": "302d2366-be33-48df-8045-e34a6bfe79ac",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "More distant spines (5-10 \u00b5m) showed no volume increase and decreased lifetime after LTP, confirming prior 3-day studies. LTD-induced destabilization has an even larger lateral spread (>10 \u00b5m) than LTP-induced stabilization.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The spatial extent of destabilization for distant spines is clearly demonstrated. The comparison with prior work (De Roo et al., 2008) provides validation. The reference to LTD spread is from the authors' prior work. This establishes the spatial specificity of plasticity effects.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T06:38:12.330057Z"
+    },
+    {
+      "id": "7c16f5ab-3534-4944-b1a1-b14780783f11",
+      "content_id": "302d2366-be33-48df-8045-e34a6bfe79ac",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "In organotypic cultures, the latency between LTD induction and spine loss was several days, though this could be shorter in vivo given more intense synaptic competition. The experimental approach complements in vivo studies by allowing controlled activity patterns at identified synapses.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The observed latency is clearly documented in the data. The speculation about shorter latency in vivo is reasonable but unproven. The methodological advantage over in vivo studies (controlled activity patterns) is valid. This contextualizes the findings within the broader field.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T06:38:12.330057Z"
+    },
+    {
+      "id": "714da0b1-df28-46cd-97ad-d3541c78fc71",
+      "content_id": "302d2366-be33-48df-8045-e34a6bfe79ac",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "The mechanisms underlying LTP-induced tenacity likely involve multiple factors including trans-synaptic proteins (Neuroligin-1, SynCAM-1, PSD-95), astrocyte ensheathment, and potentially distributed network effects like recurrent reactivation. This may limit the uniformity of synaptic inputs in dendritic sections and affect network dynamics in ways not captured by randomly connected network simulations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "The molecular mechanisms are largely speculative, based on literature about factors known to affect synaptic stability rather than direct measurements in this study. The implications for network dynamics are interesting but highly speculative. The claim about impossibility of pruning near potentiated spines is not directly tested. More experimental work would be needed to support these mechanistic claims.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T06:38:12.330057Z"
+    },
+    {
+      "id": "3d4ee000-8ef2-4cad-aac4-3e4999eec231",
+      "content_id": "302d2366-be33-48df-8045-e34a6bfe79ac",
+      "result_id": "R20",
+      "result_category": "llm",
+      "result": "The experimental methods involved hippocampal slice cultures from P4-5 male Wistar rats, with rAAV2/7-mediated ChR2 expression in CA3 at DIV 3, single-cell electroporation of CA1 neurons with GCaMP6s/mCerulean at DIV 18, and experiments at DIV 21-25. Recordings were performed at 25\u00b0C with defined ACSF compositions and quality control criteria.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The methods are clearly described with appropriate detail. The use of male rats only is a limitation not discussed. The age of cultures (DIV 21-25) is appropriate for synaptic maturation. Quality control criteria (access resistance drift <20%) are reasonable. The methods appear reproducible based on the description.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T06:38:12.330057Z"
+    },
+    {
+      "id": "6a18948c-ac0b-4ba9-b92d-2563a3057675",
+      "content_id": "302d2366-be33-48df-8045-e34a6bfe79ac",
+      "result_id": "R21",
+      "result_category": "llm",
+      "result": "The study addresses a fundamental question in neuroscience: whether information is stored in graded synaptic strength (prevailing theory) or in synaptic connectivity. Prior work showed that pathway-level LTP persists for days, but individual spine volume fluctuates dramatically, casting doubt on analog strength storage. The response of once-potentiated synapses to subsequent LFS was previously unpredictable.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These claims accurately represent the state of the field and the motivation for the study. The tension between pathway-level stability and spine-level fluctuations is well-documented in cited literature. The knowledge gap regarding sequential plasticity is clearly identified. This provides appropriate context for the experimental work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T06:38:12.330057Z"
+    },
+    {
+      "id": "06383d83-2737-489b-a51b-7279544b205f",
+      "content_id": "302d2366-be33-48df-8045-e34a6bfe79ac",
+      "result_id": "R22",
+      "result_category": "llm",
+      "result": "Prior work showed that LTD effects outlast the actual depression: spines show no lasting volume reduction but have reduced life expectancy. Similar sequences (transient LTD followed by delayed elimination) occur at cerebellar parallel fiber synapses. LTD and LTP differentially affect synaptic lifetime.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These claims accurately summarize prior work from the authors and others. The comparison across brain regions (hippocampus and cerebellum) strengthens the generality of the findings. This provides important context for interpreting the current results on sequential plasticity.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T06:38:12.330057Z"
+    },
+    {
+      "id": "e6101cf0-c2c5-4963-a5aa-042b45168c4e",
+      "content_id": "302d2366-be33-48df-8045-e34a6bfe79ac",
+      "result_id": "R23",
+      "result_category": "llm",
+      "result": "EPSCs showed considerably lower trial-to-trial variability (no failures) compared to EPSCaTs, as EPSCs integrate activity from many synapses.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "This is a straightforward observation about the difference between single-synapse and population measurements. The explanation (integration over many synapses) is correct. This justifies the use of both measurement types in the study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T06:38:12.330057Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "faa028a9-759d-4ac8-9382-ff1257def6ea",
+      "result_id": "7c6d9eea-f298-4eed-a677-2e722477ebee"
+    },
+    {
+      "claim_id": "c9664525-3f89-4bd2-8f9e-a0fcf4d7fa34",
+      "result_id": "7c6d9eea-f298-4eed-a677-2e722477ebee"
+    },
+    {
+      "claim_id": "44bb2beb-72de-4217-b20c-91e139f165ba",
+      "result_id": "7c6d9eea-f298-4eed-a677-2e722477ebee"
+    },
+    {
+      "claim_id": "8b4c9087-adaf-4a68-a349-efbffcafe10f",
+      "result_id": "7c6d9eea-f298-4eed-a677-2e722477ebee"
+    },
+    {
+      "claim_id": "66dcf5d0-2e4f-40af-b105-88e4aea04a33",
+      "result_id": "7c6d9eea-f298-4eed-a677-2e722477ebee"
+    },
+    {
+      "claim_id": "290f7d18-474f-4acb-a227-62d3df6c8f0e",
+      "result_id": "7c6d9eea-f298-4eed-a677-2e722477ebee"
+    },
+    {
+      "claim_id": "8cda4088-4248-45bc-86a0-6797fe77bd96",
+      "result_id": "7c6d9eea-f298-4eed-a677-2e722477ebee"
+    },
+    {
+      "claim_id": "6334f04f-023b-4b83-bcf8-9e30bd9127e2",
+      "result_id": "7c6d9eea-f298-4eed-a677-2e722477ebee"
+    },
+    {
+      "claim_id": "cd755d2b-6c86-42fe-8650-673e3ce2dde3",
+      "result_id": "7c6d9eea-f298-4eed-a677-2e722477ebee"
+    },
+    {
+      "claim_id": "d38375a8-ea99-4a42-89a1-d8c7b0b1a7f5",
+      "result_id": "7c6d9eea-f298-4eed-a677-2e722477ebee"
+    },
+    {
+      "claim_id": "e17294fb-9189-449c-80a2-c916a71e0983",
+      "result_id": "7c6d9eea-f298-4eed-a677-2e722477ebee"
+    },
+    {
+      "claim_id": "ef85589b-9fa8-4c89-9f08-94efe4c34e6a",
+      "result_id": "84d7a7c2-008b-473d-967d-58bc7040ff0c"
+    },
+    {
+      "claim_id": "d3836df2-3f52-4849-bdf9-7d8282c5653f",
+      "result_id": "84d7a7c2-008b-473d-967d-58bc7040ff0c"
+    },
+    {
+      "claim_id": "e9467e01-b00e-42ab-b31a-b41a0e50f048",
+      "result_id": "84d7a7c2-008b-473d-967d-58bc7040ff0c"
+    },
+    {
+      "claim_id": "d48c0665-405f-4624-bca8-bee3b748dd7a",
+      "result_id": "84d7a7c2-008b-473d-967d-58bc7040ff0c"
+    },
+    {
+      "claim_id": "944dde79-2266-4fb7-9a9e-5d024c4d817f",
+      "result_id": "84d7a7c2-008b-473d-967d-58bc7040ff0c"
+    },
+    {
+      "claim_id": "aa243a5c-b052-48b0-bd52-2886a6cd1c20",
+      "result_id": "84d7a7c2-008b-473d-967d-58bc7040ff0c"
+    },
+    {
+      "claim_id": "cbedb5d2-c30a-432b-8cce-b5eb109db5c3",
+      "result_id": "ac2095cc-66d7-47b0-83a1-787d6200a59b"
+    },
+    {
+      "claim_id": "578bf06f-1257-4da8-8387-d9e06459d8be",
+      "result_id": "ac2095cc-66d7-47b0-83a1-787d6200a59b"
+    },
+    {
+      "claim_id": "05b4613c-1be9-49ee-98da-7c554bfe7fa0",
+      "result_id": "ac2095cc-66d7-47b0-83a1-787d6200a59b"
+    },
+    {
+      "claim_id": "354f695c-4c69-4210-a561-439814bd3cf3",
+      "result_id": "ac2095cc-66d7-47b0-83a1-787d6200a59b"
+    },
+    {
+      "claim_id": "60c47bf3-81a6-4d1b-9ce1-fbefb18208c3",
+      "result_id": "6dc0f01f-d4e5-47b2-8b45-c3180f68bb54"
+    },
+    {
+      "claim_id": "32325e49-5ac1-43be-aea2-a976c753fd72",
+      "result_id": "6dc0f01f-d4e5-47b2-8b45-c3180f68bb54"
+    },
+    {
+      "claim_id": "a297ca53-51ff-487a-a29a-5baad053420e",
+      "result_id": "6dc0f01f-d4e5-47b2-8b45-c3180f68bb54"
+    },
+    {
+      "claim_id": "2dfdedc6-2ddb-460f-8c23-3c2ad1a70011",
+      "result_id": "6dc0f01f-d4e5-47b2-8b45-c3180f68bb54"
+    },
+    {
+      "claim_id": "e239689a-54cf-4a8f-ba32-13213c315e5d",
+      "result_id": "6dc0f01f-d4e5-47b2-8b45-c3180f68bb54"
+    },
+    {
+      "claim_id": "c95401d0-4455-4ff6-a89d-3d148c3560eb",
+      "result_id": "6dc0f01f-d4e5-47b2-8b45-c3180f68bb54"
+    },
+    {
+      "claim_id": "90946f1d-945f-48c9-bb47-8abdffa51184",
+      "result_id": "6dc0f01f-d4e5-47b2-8b45-c3180f68bb54"
+    },
+    {
+      "claim_id": "20fc483d-31ea-46f1-88e0-ef15f1ce4645",
+      "result_id": "d68bfd11-bcd0-4679-9dd6-87032d3c50e5"
+    },
+    {
+      "claim_id": "a9e866fe-bf14-49ee-8a0e-ff5d074a8293",
+      "result_id": "d68bfd11-bcd0-4679-9dd6-87032d3c50e5"
+    },
+    {
+      "claim_id": "05a6ab95-b051-453f-8cb2-7149c4f8df5a",
+      "result_id": "d68bfd11-bcd0-4679-9dd6-87032d3c50e5"
+    },
+    {
+      "claim_id": "27132538-0365-4f49-818e-5662e19adbdc",
+      "result_id": "d68bfd11-bcd0-4679-9dd6-87032d3c50e5"
+    },
+    {
+      "claim_id": "79a7bbab-08b2-40c9-9449-5b3557a4cbe8",
+      "result_id": "c5746c5b-f0cf-416c-893c-518d5c5e9f48"
+    },
+    {
+      "claim_id": "12b13a31-6e7d-4afc-a02e-0f19f0d7d51c",
+      "result_id": "c5746c5b-f0cf-416c-893c-518d5c5e9f48"
+    },
+    {
+      "claim_id": "3e1e5e22-3f92-490c-bb95-74269062348d",
+      "result_id": "c5746c5b-f0cf-416c-893c-518d5c5e9f48"
+    },
+    {
+      "claim_id": "ef06b810-5d76-473e-bf6b-e76b203caf75",
+      "result_id": "c5746c5b-f0cf-416c-893c-518d5c5e9f48"
+    },
+    {
+      "claim_id": "1350d86d-c9ed-4bd1-ab9b-be121b07ec22",
+      "result_id": "c5746c5b-f0cf-416c-893c-518d5c5e9f48"
+    },
+    {
+      "claim_id": "09c942b3-1ee9-4e12-8685-b7fa63686976",
+      "result_id": "c5746c5b-f0cf-416c-893c-518d5c5e9f48"
+    },
+    {
+      "claim_id": "32b7c5df-4882-485b-b1d2-9e7d6b665941",
+      "result_id": "4874a20c-0372-47cb-9763-475f5f386498"
+    },
+    {
+      "claim_id": "d77097c6-2e06-4535-83cf-b6fe1fadc24b",
+      "result_id": "4874a20c-0372-47cb-9763-475f5f386498"
+    },
+    {
+      "claim_id": "c3818189-7313-4b0f-93c4-020351bb5a35",
+      "result_id": "4874a20c-0372-47cb-9763-475f5f386498"
+    },
+    {
+      "claim_id": "dc0e4363-d688-4201-a69f-2fe6808d936a",
+      "result_id": "4874a20c-0372-47cb-9763-475f5f386498"
+    },
+    {
+      "claim_id": "e2541465-3b09-454f-87ed-98f4c8181fc2",
+      "result_id": "3404100e-2e8e-42c6-a2b5-d370b79c7853"
+    },
+    {
+      "claim_id": "e7e837fb-a86c-4e89-ae86-93b35e6cc315",
+      "result_id": "3404100e-2e8e-42c6-a2b5-d370b79c7853"
+    },
+    {
+      "claim_id": "f719b8f9-41d4-42e6-95d5-b0835cb1bbed",
+      "result_id": "3404100e-2e8e-42c6-a2b5-d370b79c7853"
+    },
+    {
+      "claim_id": "3c59c550-dc12-421f-b7e1-ee9944f30fc4",
+      "result_id": "3404100e-2e8e-42c6-a2b5-d370b79c7853"
+    },
+    {
+      "claim_id": "d9b577d8-02db-4a28-a100-37d51c3a7354",
+      "result_id": "8bc4dc18-7624-4d1d-ba5a-4a293b7f9061"
+    },
+    {
+      "claim_id": "9140b46a-75b9-4db4-b15a-bf8fdfec5e59",
+      "result_id": "8bc4dc18-7624-4d1d-ba5a-4a293b7f9061"
+    },
+    {
+      "claim_id": "daea1373-1383-45b6-a581-9ebb037b2186",
+      "result_id": "8bc4dc18-7624-4d1d-ba5a-4a293b7f9061"
+    },
+    {
+      "claim_id": "e2a03979-aaa9-486a-8b1d-37e609abf5d2",
+      "result_id": "8bc4dc18-7624-4d1d-ba5a-4a293b7f9061"
+    },
+    {
+      "claim_id": "9963fa5d-88db-4280-8f73-99c000a98a18",
+      "result_id": "8bc4dc18-7624-4d1d-ba5a-4a293b7f9061"
+    },
+    {
+      "claim_id": "efe8d7a6-4700-4cdf-9e49-99f25c93044c",
+      "result_id": "8bc4dc18-7624-4d1d-ba5a-4a293b7f9061"
+    },
+    {
+      "claim_id": "b6364ada-fe7f-4f68-861b-384fe3af641c",
+      "result_id": "bcdacb52-2189-44b0-8e5e-27b5c140db0b"
+    },
+    {
+      "claim_id": "bea4ac72-fa41-42be-9603-773d75af2c00",
+      "result_id": "bcdacb52-2189-44b0-8e5e-27b5c140db0b"
+    },
+    {
+      "claim_id": "48905ae4-59e9-4a81-828f-6fd8b5f26584",
+      "result_id": "bcdacb52-2189-44b0-8e5e-27b5c140db0b"
+    },
+    {
+      "claim_id": "723b2543-dec9-40eb-ab48-aa28592d696d",
+      "result_id": "bcdacb52-2189-44b0-8e5e-27b5c140db0b"
+    },
+    {
+      "claim_id": "b72cad12-a695-49b8-ad75-f947c16b3303",
+      "result_id": "bcdacb52-2189-44b0-8e5e-27b5c140db0b"
+    },
+    {
+      "claim_id": "ac0bb54d-0d34-4e94-bc47-f58560927e11",
+      "result_id": "bcdacb52-2189-44b0-8e5e-27b5c140db0b"
+    },
+    {
+      "claim_id": "c77f92bd-13a8-401c-873e-900996a6a60d",
+      "result_id": "bcdacb52-2189-44b0-8e5e-27b5c140db0b"
+    },
+    {
+      "claim_id": "c46855ce-c409-4e18-8dc8-0ba785f272f2",
+      "result_id": "b145e728-ad1d-43db-a540-53f46d793a2f"
+    },
+    {
+      "claim_id": "1e888fa0-616e-45f3-ac10-901cd9b67b4e",
+      "result_id": "b145e728-ad1d-43db-a540-53f46d793a2f"
+    },
+    {
+      "claim_id": "a1a3c757-ebcc-4753-b99b-6540d0c927ac",
+      "result_id": "b145e728-ad1d-43db-a540-53f46d793a2f"
+    },
+    {
+      "claim_id": "ed0dd1dc-254a-460e-9c3b-d5db74e778d7",
+      "result_id": "b145e728-ad1d-43db-a540-53f46d793a2f"
+    },
+    {
+      "claim_id": "b9449db3-e130-4f17-b52d-88797a88cf97",
+      "result_id": "b145e728-ad1d-43db-a540-53f46d793a2f"
+    },
+    {
+      "claim_id": "a46ce85e-53f7-4c6a-831e-4f30a657d9a5",
+      "result_id": "b145e728-ad1d-43db-a540-53f46d793a2f"
+    },
+    {
+      "claim_id": "a799b917-f953-4582-873b-e4544717f13a",
+      "result_id": "ac9b931b-f804-47d3-b22b-f53e0709e0a7"
+    },
+    {
+      "claim_id": "a5df2e27-557c-4e9e-be46-40720a02d1e6",
+      "result_id": "ac9b931b-f804-47d3-b22b-f53e0709e0a7"
+    },
+    {
+      "claim_id": "640a5681-08f6-4d2f-a31f-0ffdb850f341",
+      "result_id": "ac9b931b-f804-47d3-b22b-f53e0709e0a7"
+    },
+    {
+      "claim_id": "bcd20d04-b620-432f-8b5c-f1bdd65db566",
+      "result_id": "ac9b931b-f804-47d3-b22b-f53e0709e0a7"
+    },
+    {
+      "claim_id": "8d46645f-fd72-4467-a086-7aed78e8f372",
+      "result_id": "cb9b6f35-9aac-4ab6-ac31-fbd45a5f1ea9"
+    },
+    {
+      "claim_id": "5f2c0b27-a083-4057-aad4-064b2ea6f64e",
+      "result_id": "cb9b6f35-9aac-4ab6-ac31-fbd45a5f1ea9"
+    },
+    {
+      "claim_id": "d38375a8-ea99-4a42-89a1-d8c7b0b1a7f5",
+      "result_id": "cb9b6f35-9aac-4ab6-ac31-fbd45a5f1ea9"
+    },
+    {
+      "claim_id": "ed7380a0-aae4-4c4f-a39f-a63ff8b60051",
+      "result_id": "ba322efa-b6c6-4596-8ed3-6d969620c0e7"
+    },
+    {
+      "claim_id": "12401266-5075-4f27-be66-513f6a27e237",
+      "result_id": "ba322efa-b6c6-4596-8ed3-6d969620c0e7"
+    },
+    {
+      "claim_id": "71951e8a-38e5-4106-8666-175ccfed7585",
+      "result_id": "ba322efa-b6c6-4596-8ed3-6d969620c0e7"
+    },
+    {
+      "claim_id": "d8e9c517-621e-4830-9005-8e22094bbc0b",
+      "result_id": "ba322efa-b6c6-4596-8ed3-6d969620c0e7"
+    },
+    {
+      "claim_id": "f9bcd6c7-9c17-49df-8de5-b213091ffaa2",
+      "result_id": "ba322efa-b6c6-4596-8ed3-6d969620c0e7"
+    },
+    {
+      "claim_id": "f67cd503-8566-4b8a-9eb8-7a751b888b5a",
+      "result_id": "ba322efa-b6c6-4596-8ed3-6d969620c0e7"
+    },
+    {
+      "claim_id": "633d6013-ee48-486a-ad2a-bca4a398ca94",
+      "result_id": "ba322efa-b6c6-4596-8ed3-6d969620c0e7"
+    },
+    {
+      "claim_id": "e1b760b8-212a-4459-a8dd-c8de77b003d6",
+      "result_id": "ba322efa-b6c6-4596-8ed3-6d969620c0e7"
+    },
+    {
+      "claim_id": "83ef6351-8f74-4721-b5cc-334976e5dfbd",
+      "result_id": "93a48452-5137-4ab5-a95b-58e9bb7d1431"
+    },
+    {
+      "claim_id": "db68a131-f4b9-435a-bed8-673e1c33498d",
+      "result_id": "93a48452-5137-4ab5-a95b-58e9bb7d1431"
+    },
+    {
+      "claim_id": "095de24c-4ce1-4d8a-bf44-9c696da8b0ac",
+      "result_id": "93a48452-5137-4ab5-a95b-58e9bb7d1431"
+    },
+    {
+      "claim_id": "cedaab8f-8a2a-404c-966f-23fa5dfa6a11",
+      "result_id": "93a48452-5137-4ab5-a95b-58e9bb7d1431"
+    },
+    {
+      "claim_id": "cfa0dfee-bc5a-450f-9084-044aaf046195",
+      "result_id": "93a48452-5137-4ab5-a95b-58e9bb7d1431"
+    },
+    {
+      "claim_id": "a733087c-4cf3-446a-ae9a-668bf8e9dee9",
+      "result_id": "93a48452-5137-4ab5-a95b-58e9bb7d1431"
+    },
+    {
+      "claim_id": "7f80be7f-31b3-4868-b747-169e4877c248",
+      "result_id": "ac5946dd-888f-4cda-9112-79d5a017db75"
+    },
+    {
+      "claim_id": "ff7e651f-8cbb-4d9a-acf8-4737165822ad",
+      "result_id": "ac5946dd-888f-4cda-9112-79d5a017db75"
+    },
+    {
+      "claim_id": "34f76f01-164b-42ef-b51e-b302c6aa89b5",
+      "result_id": "ac5946dd-888f-4cda-9112-79d5a017db75"
+    },
+    {
+      "claim_id": "c86c3e2f-7464-4529-998a-862a1b0ac34c",
+      "result_id": "f98b962c-edc4-4fa9-ad1d-04e209b6edcb"
+    },
+    {
+      "claim_id": "aa9d41cf-3e77-41d2-bc97-d60b07f62a4f",
+      "result_id": "f98b962c-edc4-4fa9-ad1d-04e209b6edcb"
+    },
+    {
+      "claim_id": "1370a508-babd-4257-90c4-609eabd821ff",
+      "result_id": "7c16f5ab-3534-4944-b1a1-b14780783f11"
+    },
+    {
+      "claim_id": "17282d1e-19f7-46a9-acac-d82e5c88db42",
+      "result_id": "7c16f5ab-3534-4944-b1a1-b14780783f11"
+    },
+    {
+      "claim_id": "f514f49d-11b3-4370-ad6e-405369d26016",
+      "result_id": "7c16f5ab-3534-4944-b1a1-b14780783f11"
+    },
+    {
+      "claim_id": "26f080dc-37fb-489e-96c1-bf0b72bebf6b",
+      "result_id": "714da0b1-df28-46cd-97ad-d3541c78fc71"
+    },
+    {
+      "claim_id": "43989934-7b66-4686-91b5-07fbda5a4d74",
+      "result_id": "714da0b1-df28-46cd-97ad-d3541c78fc71"
+    },
+    {
+      "claim_id": "5ef1308d-a02c-484a-b3dc-aebd943ae014",
+      "result_id": "714da0b1-df28-46cd-97ad-d3541c78fc71"
+    },
+    {
+      "claim_id": "fc7d89ea-833d-4740-ad72-13b629131d97",
+      "result_id": "714da0b1-df28-46cd-97ad-d3541c78fc71"
+    },
+    {
+      "claim_id": "0a517f80-d1d8-4314-b513-1a1ce2060a03",
+      "result_id": "714da0b1-df28-46cd-97ad-d3541c78fc71"
+    },
+    {
+      "claim_id": "6f2d0021-f0b5-42f1-9f04-ca7217826137",
+      "result_id": "3d4ee000-8ef2-4cad-aac4-3e4999eec231"
+    },
+    {
+      "claim_id": "26a28440-3d14-495c-bc2e-06864b0462af",
+      "result_id": "3d4ee000-8ef2-4cad-aac4-3e4999eec231"
+    },
+    {
+      "claim_id": "df9f3239-9c51-4529-a90c-3706edb76a17",
+      "result_id": "3d4ee000-8ef2-4cad-aac4-3e4999eec231"
+    },
+    {
+      "claim_id": "5e1378de-e631-400d-b00e-e1b159a94ffc",
+      "result_id": "3d4ee000-8ef2-4cad-aac4-3e4999eec231"
+    },
+    {
+      "claim_id": "4f1d9cba-dff8-4f04-8eda-7cfe8df7a4a4",
+      "result_id": "3d4ee000-8ef2-4cad-aac4-3e4999eec231"
+    },
+    {
+      "claim_id": "d9556cff-467d-46e3-aca7-a24cfb1969e1",
+      "result_id": "3d4ee000-8ef2-4cad-aac4-3e4999eec231"
+    },
+    {
+      "claim_id": "05da554d-6358-4e2c-9f5a-c8e12bdd83c8",
+      "result_id": "3d4ee000-8ef2-4cad-aac4-3e4999eec231"
+    },
+    {
+      "claim_id": "bc85bd95-0889-4da2-b0ba-a72ad3da8f95",
+      "result_id": "3d4ee000-8ef2-4cad-aac4-3e4999eec231"
+    },
+    {
+      "claim_id": "a8cf8ee4-cec6-4fe1-a16d-2f856a86a11f",
+      "result_id": "6a18948c-ac0b-4ba9-b92d-2563a3057675"
+    },
+    {
+      "claim_id": "b0bdf9d5-3527-4f4e-b058-c16c3acdff0b",
+      "result_id": "6a18948c-ac0b-4ba9-b92d-2563a3057675"
+    },
+    {
+      "claim_id": "8f78bb2c-57ee-4efa-b130-69c439c634cd",
+      "result_id": "6a18948c-ac0b-4ba9-b92d-2563a3057675"
+    },
+    {
+      "claim_id": "83a64b5b-2b7f-436b-8627-6dff5189c157",
+      "result_id": "6a18948c-ac0b-4ba9-b92d-2563a3057675"
+    },
+    {
+      "claim_id": "14f00237-62eb-445b-83d9-70852f25691f",
+      "result_id": "6a18948c-ac0b-4ba9-b92d-2563a3057675"
+    },
+    {
+      "claim_id": "6ca42ff7-df79-4a13-949f-fba4329ebba0",
+      "result_id": "6a18948c-ac0b-4ba9-b92d-2563a3057675"
+    },
+    {
+      "claim_id": "157191ed-da5f-4de7-8c91-921a4b3b246c",
+      "result_id": "6a18948c-ac0b-4ba9-b92d-2563a3057675"
+    },
+    {
+      "claim_id": "7126173c-14e5-4592-9e6b-d06b29c8008e",
+      "result_id": "6a18948c-ac0b-4ba9-b92d-2563a3057675"
+    },
+    {
+      "claim_id": "8fb45344-fd04-4494-a16f-75efed3265ff",
+      "result_id": "06383d83-2737-489b-a51b-7279544b205f"
+    },
+    {
+      "claim_id": "aee811eb-c617-4408-aa17-689c2601e795",
+      "result_id": "06383d83-2737-489b-a51b-7279544b205f"
+    },
+    {
+      "claim_id": "2b9f9d7c-faae-4442-8459-41dff886e93b",
+      "result_id": "06383d83-2737-489b-a51b-7279544b205f"
+    },
+    {
+      "claim_id": "de410c33-f074-4c24-b085-c2b344d54a2d",
+      "result_id": "e6101cf0-c2c5-4963-a5aa-042b45168c4e"
+    }
+  ],
+  "comparisons": []
+}

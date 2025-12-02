@@ -1,0 +1,268 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C30",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C71",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "The most recent common ancestor of bony fishes had a thin retina (~194 \u00b5m) approximately 425 million years ago and lacked additional retinal oxygen supply mechanisms (choroid rete mirabile, intra-retinal capillaries, and likely pre-retinal capillaries), relying solely on the choriocapillaris for oxygen delivery. This ancestral state is consistent with fossil evidence showing small eyes in early bony fishes and is similar to extant basal species like the coelacanth and lungfishes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C30, C37-C40, C71, C73-C75 collectively provide strong support through phylogenetic reconstruction using maximum likelihood ancestral state reconstruction and stochastic character mapping on measured data from 34 ray-finned fish species, three lungfishes, and two mammals. The reconstruction shows very low Bayesian posterior probabilities for the presence of additional oxygen supply mechanisms (0.1% for choroid rete mirabile, 0.4% for intra-retinal capillaries, 32.4% for pre-retinal capillaries) in the common ancestor. The finding is further supported by comparison with extant basal species and consistency with fossil evidence of small eyes in early bony fishes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "Three different types of retinal capillaries (choroid rete mirabile, intra-retinal capillaries, and pre-retinal capillaries) were gained and lost independently multiple times during vertebrate evolution, with these gains and losses invariably associated with parallel changes in retinal thickness. In ray-finned fishes, retinal thickness doubled independently six times and halved three times. The choroid rete mirabile originated at least twice and was lost 23 times in ray-finned fishes. Intra-retinal capillaries originated independently in ray-finned fishes and mammals, with at least three independent origins of holangiotic capillarization in mammals and five secondary losses in eutherian mammals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C4, C31-C34, C41-C50 are well-supported by phylogenetic comparative analysis using stochastic character mapping and maximum likelihood ancestral state reconstruction on measured data. The analysis reveals multiple independent origins and losses of each capillary type across the vertebrate phylogeny, with statistical associations between these changes and retinal thickness changes. The methods are appropriate for the data type, and the findings are consistent across multiple lines of evidence including measured retinal thickness, stereological analysis of capillary networks, and phylogenetic reconstruction.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C35",
+      "C36"
+    ],
+    "result": "Body mass-corrected eye mass residuals are strongly associated with increases in retinal thickness (PGLS, t = 21.6, p<0.001, n = 36), suggesting that species investing in large eyes relative to body size also invest in increased retinal thickness.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C36 are supported by appropriate phylogenetic general least squares (PGLS) regression analysis controlling for phylogenetic non-independence. The statistical test shows a highly significant positive correlation (p<0.001) with adequate sample size (n=36). The inference that species with relatively large eyes also have thicker retinas is a reasonable interpretation of the positive correlation, though causality cannot be definitively established from correlation alone.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "The presence of a choroid rete mirabile is associated with significantly elevated Root effect magnitude (pAOV, F = 122, p<0.001, n = 68), while there is a negative correlation between pre-retinal capillarization and Root effect magnitude (PGLS, t = -4.62, p<0.001, n = 19). Evolutionary trajectories show that when the Root effect increased above 40% around 200 MYA, the choroid rete mirabile evolved, allowing decreased pre-retinal capillarization. Secondary losses of oxygen secretion coincided with increases in intra-retinal or pre-retinal capillarization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C57 are supported by appropriate phylogenetic statistical tests (pAOV and PGLS) with highly significant p-values and adequate sample sizes. The evolutionary trajectory reconstructions provide temporal evidence for the proposed relationships. The negative correlation between pre-retinal capillarization and Root effect supports the trade-off hypothesis between oxygen secretion and light scattering. The inference that pre-retinal capillaries cause light scattering (C54) is reasonable but relies on cited literature rather than direct measurement in this study.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "Retinal thickness in ray-finned fishes is strongly associated with the presence of a choroid rete mirabile (pAOV, p=0.00264), with a 30% increase in retinal thickness coinciding with the evolution of the choroid rete mirabile ~200 MYA. Secondary losses of the choroid rete mirabile were associated with substantial decreases in retinal thickness, except in species that evolved intra- or pre-retinal capillaries. Similarly, mammals show a strong relationship between retinal thickness and presence of intra-retinal capillarization (pAOV, p = 0.00168).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C62 are supported by phylogenetic ANOVA tests with significant p-values and reconstructed evolutionary trajectories showing temporal correlations. The exception noted in C61 (species with alternative capillary mechanisms maintaining retinal thickness despite loss of oxygen secretion) is supported by PGLS analysis (p=0.005). The parallel finding in mammals (C62) provides independent support for the general relationship between oxygen supply mechanisms and retinal thickness. The statistical tests are appropriate for the phylogenetic data structure.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C68",
+      "C69"
+    ],
+    "result": "Antarctic icefishes that lost haemoglobin show remarkably similar retinal thickness to close relatives that retained haemoglobin, but those that lost haemoglobin and oxygen secretion show extensive pre-retinal capillarization allowing maintenance of retinal thickness. This 'natural knock-out' example demonstrates that where one type of oxygen delivery mechanism is diminished, it is replaced by other types of oxygen delivery, supporting the positive relationship between retinal thickness and oxygen supply capacity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C64, C68-C69 are supported by phylogenetic reconstruction and measured data on retinal thickness and pre-retinal capillarization in notothenioid fishes. The finding that icefishes without haemoglobin maintain retinal thickness through compensatory pre-retinal capillarization provides strong support for the functional relationship between oxygen supply and retinal morphology. The citation to Wujcik et al., 2007 for the pre-retinal capillarization observation adds credibility. This natural experiment provides independent support for the main hypothesis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C83"
+    ],
+    "result": "Cave-dwelling ecotypes of Mexican tetra (Astyanax mexicanus) with greater eye regression showed lower Root effect magnitudes and diminished choroid rete mirabile size. The Micos ecotype with intermediate eye regression had almost halved retinal thickness compared to the surface ecotype. The positive correlation between retinal thickness and Root effect magnitude in these ecotypes provides further support for an intrinsic link between retinal morphology and oxygen flux mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C67, C83 are supported by measured data on Root effect magnitude, choroid rete mirabile size, and retinal thickness across multiple ecotypes of A. mexicanus. The one-way ANOVA shows significant differences in Root effect between ecotypes (F3,32 = 4.617, p=0.009). This natural experiment with varying degrees of eye regression provides independent support for the relationship between oxygen supply mechanisms and retinal morphology under relaxed selection for vision. The sample sizes are adequate (n = 9, 11, 11, and 5 for different ecotypes).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C70",
+      "C76",
+      "C77",
+      "C98",
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "The origin of additional oxygen supply mechanisms was associated with evolutionary increases in retinal thickness, supported by statistical correlations, temporal overlap in macroevolutionary reconstructions, and natural knock-out examples. The origin of the choroid rete mirabile ~200 MYA coincided with significantly increased retinal thickness, suggesting oxygen secretion conferred adaptive advantage by improving retinal oxygenation and permitting morphological evolution of the retina. The authors propose that retinal oxygen diffusion constrained the evolution of improved vision in ancestral vertebrates, a constraint repeatedly relaxed by various combinations of vascular and haemoglobin adaptations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70, C76-C77, C98-C101 represent the main conclusions of the study and are supported by multiple independent lines of evidence: (1) statistical correlations between oxygen supply mechanisms and retinal thickness (phylogenetic ANOVA and PGLS), (2) temporal correlations in reconstructed evolutionary trajectories, and (3) natural experiments in Antarctic icefishes and cave-dwelling A. mexicanus. The convergent evolution of improved retinal morphology associated with oxygen supply mechanisms across multiple vertebrate lineages provides strong support for the constraint hypothesis. However, the causal claim that oxygen diffusion 'constrained' evolution is an inference from correlation and temporal association rather than direct experimental manipulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C5",
+      "C14",
+      "C15",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "Retinal thickness confers multiple advantages to vision, including increased density of photoreceptors and ganglion cells, stacking of rods and cones for increased light sensitivity, improved spatial resolution, parallel processing of visual information, and enhanced photon catch in low-light environments. These advantages are supported by multiple cited studies and examples from deep-sea fishes and nocturnal birds.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C14-C15, C89-C96 are well-supported by extensive citations to prior literature (Walls, 1937; Querubin et al., 2009; Potier et al., 2017; Rodieck, 1998; Land and Nilsson, 2012; Cronin, 2014; Warrant and Locket, 2004; Locket, 1977; Martin et al., 2004; Jeffery and Williams, 1994). These claims represent established knowledge in visual neuroscience rather than novel findings of this study. The authors appropriately cite the relevant literature to support these background claims about the functional significance of retinal thickness.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "The recurrent secondary losses of oxygen secretion across teleosts may have resulted from relaxed selection on vision, as demonstrated by reduced Root effect and regressed choroid rete mirabile in cave-dwelling Mexican tetras. The rapid loss of Root effect may indicate costs associated with enhanced Root effect haemoglobins, including exaggerated CO2-O2 coupling, increased oxidative damage, and reduced oxygen-carrying capacity under blood acidification. However, species using rete mirabile for swim bladder buoyancy retain reduced Root effect after losing choroid rete mirabile.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C79-C82 involve speculative inferences about the causes of Root effect loss. While C79 is supported by the A. mexicanus data showing correlation between eye regression and reduced oxygen secretion, the causal claim that relaxed selection 'resulted in' losses is an inference. C80 is explicitly speculative ('may be an indication'). C81 is supported by citations to prior literature on costs of Root effect haemoglobins, but these costs have not been directly measured in the context of the observed losses. C82 is supported by citation to Berenbrink et al., 2005. The overall evaluation is uncertain because the mechanistic explanations for Root effect loss remain speculative despite supporting correlational evidence.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "Multiple independent increases in pre-retinal capillarization occurred downstream of secondary losses of oxygen secretion in ray-finned fishes. Pre-retinal capillarization also originated in lobe-finned fishes that never evolved oxygen secretion. Intra-retinal capillaries originated independently in teleosts coinciding with losses of oxygen secretion but maintenance of retinal thickness. In mammals, holangiotic capillarization origins coincided with the origin of endothermy and shift to diurnal activity, while five secondary losses occurred in species with non-visual primary senses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C88 are supported by phylogenetic reconstruction showing temporal correlations between losses of one oxygen supply mechanism and gains of alternative mechanisms. The findings are consistent with the hypothesis that alternative oxygen supply mechanisms can compensate for loss of oxygen secretion. C85 is supported by citations to prior literature. C87 involves an interesting temporal correlation with endothermy but relies on a single citation (Gerkema et al., 2013) and represents a more speculative inference about causation. C88 is supported by phylogenetic reconstruction and comparison of retinal thickness data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C1",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C97"
+    ],
+    "result": "Background claims establishing the physiological context: the retina has high oxygen demand but lacks internal blood supply in most vertebrates, requiring oxygen diffusion from adjacent vascular structures. Retinal thickness is constrained by diffusion distance from the choriocapillaris. Additional oxygen supply can be achieved through retinal capillaries or oxygen secretion via the Root effect and choroid rete mirabile. A thicker retina introduces a trade-off between visual performance and oxygen delivery. Previous studies examined Root effect evolution but not its relationship to retinal thickness.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C8-C13, C16-C29, C97 represent background knowledge and literature review supported by extensive citations to prior work (Country, 2017; Yu et al., 2009; Buttery et al., 1991; Chase, 1982; Root, 1931; Wittenberg and Wittenberg, 1962, 1974b; Wittenberg and Haedrich, 1974a; Berenbrink et al., 2005; Verde et al., 2008; Meyer, 1977; Walls, 1937; Yu and Cringle, 2001). These claims establish the physiological and evolutionary context for the study and identify the knowledge gap (C24-C25) that the study addresses. The claims are appropriately supported by citations to relevant literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C6",
+      "C7"
+    ],
+    "result": "The authors propose that insufficient retinal oxygen supply constrained the functional evolution of the eye in early vertebrates, and that recurrent origins of additional retinal oxygen supply mechanisms facilitated the phenotypic evolution of improved functional eye morphology.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C7 represent the main hypothesis and conclusion of the study. These claims are supported by the convergent evidence from phylogenetic reconstructions showing multiple independent origins of oxygen supply mechanisms associated with increased retinal thickness, the temporal correlations in evolutionary trajectories, and the natural experiments in Antarctic icefishes and cave-dwelling A. mexicanus. However, the causal language ('constrained' and 'facilitated') represents an inference from correlational and temporal data rather than direct experimental manipulation. The constraint hypothesis is well-supported by the pattern of correlated evolution across multiple lineages, but alternative explanations for the correlations cannot be completely ruled out.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C72"
+    ],
+    "result": "The finding that the last common ancestor of bony fishes only supplied the retina with oxygen from the choriocapillaris contrasts with previous investigations suggesting an earlier origin of the choroid rete mirabile in a shared ancestor of bony fishes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C72 appropriately identifies a discrepancy between the current study's findings and prior work (Bailes et al., 2006; Yu et al., 2009). The current study's reconstruction showing a later origin of the choroid rete mirabile is based on more extensive phylogenetic sampling and stochastic character mapping analysis. The contrast with prior work is clearly stated and supported by the data. However, the reasons for the discrepancy (e.g., differences in taxon sampling, methods, or character coding) are not fully explored.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C78"
+    ],
+    "result": "Oxygen secretion conferred an additional advantage to fish vision by reducing the adverse effects of light scattering from red blood cells in the visual field, as supported by the negative correlation between Root effect magnitude and pre-retinal capillarization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C78 is supported by the observed negative correlation between Root effect and pre-retinal capillarization (C53) and is consistent with prior literature on light scattering effects (Country, 2017; Yu and Cringle, 2001). The inference that oxygen secretion reduces the need for pre-retinal capillaries and thus reduces light scattering is reasonable, though the light scattering effects are not directly measured in this study. The claim relies on the assumption that pre-retinal capillaries cause light scattering, which is supported by cited literature.",
+    "result_type": "MINOR"
+  }
+]

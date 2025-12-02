@@ -1,0 +1,2087 @@
+{
+  "submission": {
+    "id": "8aad99e7-8899-45b7-9d55-9434047c61e4",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T14:16:38.828348Z",
+    "updated_at": "2025-12-02T14:16:38.828348Z"
+  },
+  "content": [
+    {
+      "id": "9c5ddecb-53cb-4829-8068-54310388f1b1",
+      "submission_id": "8aad99e7-8899-45b7-9d55-9434047c61e4",
+      "content_type": "manuscript",
+      "content_text": "# Architecture of the chromatin remodeler RSC and insights into its nucleosome engagement\n\n## Authors\n\n- Avinash B Patel<sup>1</sup> ([ORCID: 0000-0001-9140-8375](https://orcid.org/0000-0001-9140-8375)) \u2020\n- Camille M Moore<sup>3</sup>\n- Basil J Greber<sup>2</sup> ([ORCID: 0000-0001-9379-7159](https://orcid.org/0000-0001-9379-7159))\n- Jie Luo<sup>5</sup>\n- Stefan A Zukin<sup>6</sup>\n- Jeff Ranish<sup>5</sup>\n- Eva Nogales<sup>2</sup> ([ORCID: 0000-0001-9816-3681](https://orcid.org/0000-0001-9816-3681)) \u2020\n\n### Affiliations\n\n1. Biophysics Graduate Group University of California, Berkeley Berkeley United States\n2. Molecular Biophysics and Integrative Bio-Imaging Division Lawrence Berkeley National Laboratory Berkeley United States\n3. Molecular and Cell Biology Department University of California, Berkeley Berkeley United States\n4. California Institute for Quantitative Biology (QB3) University of California, Berkeley Berkeley United States\n5. The Institute for Systems Biology Seattle United States\n6. Chemistry Department University of California, Berkeley Berkeley United States\n7. Howard Hughes Medical Institute, University of California, Berkeley Berkeley United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nEukaryotic DNA is packaged into nucleosome arrays, which are repositioned by chromatin remodeling complexes to control DNA accessibility. The Saccharomyces cerevisiae RSC (Remodeling the Structure of Chromatin) complex, a member of the SWI/SNF chromatin remodeler family, plays critical roles in genome maintenance, transcription, and DNA repair. Here, we report cryo-electron microscopy (cryo-EM) and crosslinking mass spectrometry (CLMS) studies of yeast RSC complex and show that RSC is composed of a rigid tripartite core and two flexible lobes. The core structure is scaffolded by an asymmetric Rsc8 dimer and built with the evolutionarily conserved subunits Sfh1, Rsc6, Rsc9 and Sth1. The flexible ATPase lobe, composed of helicase subunit Sth1, Arp7, Arp9 and Rtt102, is anchored to this core by the N-terminus of Sth1. Our cryo-EM analysis of RSC bound to a nucleosome core particle shows that in addition to the expected nucleosome-Sth1 interactions, RSC engages histones and nucleosomal DNA through one arm of the core structure, composed of the Rsc8 SWIRM domains, Sfh1 and Npl6. Our findings provide structural insights into the conserved assembly process for all members of the SWI/SNF family of remodelers, and illustrate how RSC selects, engages, and remodels nucleosomes.\n\n## Introduction\n\nEukaryotes have four major families of chromatin remodelers: SWI/SNF, ISWI, CHD, and INO80 (Clapier and Cairns, 2009). Each of these remodelers plays distinct roles based on how they select and affect target nucleosomes. Together, these remodelers give rise to the distinct chromatin landscapes observed in eukaryotic cells and determine how genetic information is organized, replicated, transcribed, and repaired (Yen et al., 2012). In S. cerevisiae there are two members of the SWI/SNF family of chromatin remodelers: RSC and SWI/SNF (C\u00f4t\u00e9 et al., 1994; Cairns et al., 1996). SWI/SNF chromatin remodelers reposition nucleosomes by translocating DNA around the histone octamer, and in vitro assays have shown that they move nucleosomes to the ends of linear DNA fragments before evicting the histones from the DNA (Clapier et al., 2016). RSC is essential for yeast viability and is ten times more abundant than SWI/SNF (Cairns et al., 1996). In the context of transcription, RSC is responsible for maintaining nucleosome free regions (NFR), while SWI/SNF plays a role in remodeling nucleosomes during transcription initiation (Nagai et al., 2017; Krietenstein et al., 2016; Klein-Brill et al., 2019). Additionally, RSC is also involved in many transcription-independent processes, such as mitotic division, double stranded break repair, and telomere maintenance (Krietenstein et al., 2016; Erkina et al., 2010; Kuryan et al., 2012; Campsteijn et al., 2007; Shim et al., 2007; Ungar et al., 2009; Ng et al., 2002).\n\nRSC has a molecular weight of\u00a0~1.1 MDa and is composed of 17 proteins, with two copies of Rsc8 and one copy of either Rsc1 or Rsc2 (Cairns et al., 1996; Cairns et al., 1999). Seven of the proteins (Arp7, Arp9, Rsc6, Rsc8, Sfh1, Sth1 and Rsc9) are conserved in all eukaryotic SWI/SNF chromatin remodeling complexes, with Sth1 containing the ATPase domain that is responsible for the remodeling activity (Cairns et al., 1996; Saha et al., 2002). Two additional subunits are conserved in yeast (Npl6 and Rtt102), and the rest are complex specific (Htl1, Ldb7, Rsc1/2, Rsc3, Rsc30, Rsc4 and Rsc58). Three subunits, Arp7, Arp9 and Rtt102, are shared between RSC and SWI/SNF, and the two Arps have been found to be important for efficient remodeling activity of RSC (Clapier et al., 2016). The SWI/SNF paralog of Rsc8, Swi3, has been shown to be important for complex assembly and to likely play a scaffolding role (Yang et al., 2007), while the paralog of Sfh1, Snf5, has been found to be important for remodeling activity (Sen et al., 2017). RSC contains six bromodomains (BrDs), two in RSC1/2 and Rsc4, and one in Rsc58 and Sth1. Additionally, Rsc1/2 also contain a BAH domain. The BrD and BAH domains of RSC have all been shown to interact with histones H3 (Chambers et al., 2013), with the BrDs favoring acetylated H3 tails (Zhang et al., 2010), and in vitro binding assays have shown that the affinity of RSC for acetylated H3 nucleosomes is indeed greater than for unmodified nucleosomes (Chatterjee et al., 2011). In vivo deletions or mutations in these domains have been shown to decrease cell survival (Cairns et al., 1999; Kasten et al., 2004). The fungal-specific subunits Npl6, Htl1, Ldb7, Rsc3 and Rsc30, have been proposed to form a structural module (Wilson et al., 2006), with Npl6 and Htl1 interacting with Rsc8, and Ldb7 with Sth1 and Arp9. Rsc3 and Rsc30, which dimerize with each other, share a very similar architecture (Angus-Hill et al., 2001), with an N-terminal Zinc cluster that has been shown to bind to the DNA sequence CGCG that preferentially occurs at gene promoters (Badis et al., 2008). Deletion of Rsc3 has been shown to weaken the ability of RSC to maintain NFR in vivo (Badis et al., 2008).\n\nHigh-resolution structural studies of the SWI/SNF family of remodelers had until recently been limited to fragments, such as the Arp module (Arp7, Arp9 and some combination of Rtt102 and HSA helix of Snf2 [paralog to Sth1]) (Schubert et al., 2013), the SwiB domain of the human SMARCD (homolog of Rsc6), the WH domain of SMARCB (homolog of Sfh1) (Allen et al., 2015), the SWIRM domain of Swi3 (paralog of Rsc8) (Da et al., 2006), the RPT domain of SMARCB (homolog of Sfh1) (Sammak et al., 2018), the SWIRM-RPT complex of SMARCC-SMARCB (homologs of Rsc8 and Sfh1) (Yan et al., 2017), the SANT domain of SMARCC (homolog of Rsc8), and the ATPase of Snf2 (homolog of Sth1) on its own (D\u00fcrr et al., 2005; Xia et al., 2016) and in complex with a nucleosome with different ATP analogs (Liu et al., 2017; Li et al., 2019). Early structural studies of full SWI/SNF remodeling complexes by negative stain electron microscopy (EM) were limited by low resolution and/or reconstruction artifacts (Chaban et al., 2008; Dechassa et al., 2008; Asturias et al., 2002; Leschziner et al., 2007; Leschziner et al., 2005; Skiniotis et al., 2007; Smith et al., 2003), with only one study able to map the location of some subunits within the complex (for the yeast SWI/SNF complex using subunit deletion) (Zhang et al., 2018).\n\nHere, we have used cryo-EM to determine the structure RSC. The core of the complex was resolved to 3 \u00c5, which allowed us the de novo building of this entire region. The complex is scaffolded around a central Rsc8 dimer from which other evolutionarily conserved subunits assemble, leading to a model for the biogenesis of the complex that agrees with that previously proposed for human SWI-SNF complexes based on biochemical data (Mashtalir et al., 2018). We were also able to determine the structure of RSC bound to a nucleosome at 19 \u00c5 resolution, which, together with our structure of the core of RSC, and previous ones for the Arp module and nucleosome, allowed us to reveal how RSC engages nucleosomes.\n\n## Results\n\n### Structure of RSC and RSC-NCP\n\nWe have used cryo-EM to determine the structure of the chromatin remodeler RSC from S. cerevisiae purified using the TAP-tag (on Sth1) method (Figure 1\u2014figure supplement 1). We found that RSC is composed of five main lobes, three that form a relatively rigid core (head, body and arm) and two that are flexibly attached (leg and tail) (Figure 1A; Figure 1\u2014figure supplement 2). Our negative stain analysis of the yeast SWI/SNF complex shows that, like RSC, it has a rigid core sharing some similar features, and a flexible leg that occupies similar overall positions (Figure 1\u2014figure supplement 2). However, SWI/SNF lacks a tail lobe, indicating that while RSC and SWI/SNF share a conserved core architecture, RSC features additional regulatory domains (Figure 1\u2014figure supplement 2). Our assignment of most of the tail region to the RSC-specific subunits Rsc3 and Rsc30 (see below) is in further agreement with this observation.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/54449/elife-54449-fig1-v2.jpg)\n\n**Figure 1.:** (A) On the left, cartoon representation of RSC showing its five main lobes. The head, body and arm lobes form the core of the complex, while the tail and leg lobes are flexible. On the right are two cryo-EM reconstructions of RSC with the tail (green) and leg (red) lobes in two different conformations with respect to the core (purple). (B) Cryo-EM reconstruction of the RSC core with individually subunits colored. (C) Model of the RSC core with individual subunits colored and labelled. (D) On the left, cartoon representation of the RSC-NCP complex showing the five main lobes of RSC colored as in A, and with DNA in teal and histones in orange. The tail and leg lobes are flexible. On the right are two cryo-EM reconstructions of RSC-NCP showing the tail lobe in two different conformations with respect to the core. (E) Cryo-EM reconstruction of RSC-NCP in transparent with the core of RSC, the NCP (PDB: 6IY2) (Li et al., 2019) and the ARP module (PDB: 4I6M) (Schubert et al., 2013) structures docked in. The ATPase domain (not visible in our density) is modeled according to the structure of nucleosome-bound Snf2 (PDB: 6IY2) (Li et al., 2019). The points of contact between RSC and the NCP are labeled. (F) Domain maps for RSC subunits. Regions modeled within the RSC core are marked by black lines above the schematic of each protein. The ARP module that was docked into the RSC-NCP map is marked by the dark grey lines and the ATPase domain as shown in the model is marked by light grey lines.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/54449/elife-54449-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) SDS-PAGE (BioRad 4\u201320%) of purified S. cerevisiae RSC, stained with Flamingo stain. (B) Mass spectrometry analysis showing the presence of all RSC subunits in our sample. (C) Representative cryo-EM micrograph of RSC using open hole grids. (D) Exemplar 2D class averages of apo RSC.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/54449/elife-54449-fig1-figsupp2-v2.jpg)\n\n**Figure 1\u2014figure supplement 2.:** Negative stain micrograph of RSC (A) and SWI/SNF (B) with 2D class averages and lobe assignment cartoon on the right. The colored cartoons highlight the relative positions of the main lobes (color code at the bottom). Negative stain 3D reconstruction of RSC (C) and SWI/SNF (D), showing that both have a similar looking core and a flexible Arp module.\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/54449/elife-54449-fig1-figsupp3-v2.jpg)\n\n**Figure 1\u2014figure supplement 3.:** Particles from class averages outlined in purple and 3D classes colored purple were selected for further processing. Particles that went into grey classes were eliminated from further processing. The final global refinement yielded a map with an overall resolution of 3.07 \u00c5 for the core. 3D classification without a mask using particles from the 3.07 \u00c5 refinement is shown in Figure 3C (tail containing classes are shown in Figure 1A). To improve map quality at the periphery of the core, multibody refinement was performed for the head, arm, and body lobes, followed by 3D classification of the partially signal-subtracted particles. For the arm lobe, a single good class was identified, which was refined to a resolution of 3.16 \u00c5. For the head and body lobes, two distinct good classes were found, with one containing several extra helices. The classes containing the extra density were selected and refined. The head lobe refined to 3.07 \u00c5, and the body refined to 3.48 \u00c5. During the 3D classification steps classes in purple were used for further processing while grey classes were removed. For 3D refinement steps with three maps the results shown are: (left) refinement without a mask, (center) refinement continued with a mask (mask is shown as an outline around map at its highest threshold), and (right) postprocessed map. For 3D refinement steps with two maps the results shown are: (left) refinement with a mask (mask is shown as an outline around map at its highest threshold) and (right) postprocessed map.\n\n![Figure 1\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/54449/elife-54449-fig1-figsupp4-v2.jpg)\n\n**Figure 1\u2014figure supplement 4.:** Regions modeled within our structure are denoted by a black line above the protein schematic.\u00a0Conservation scores ranging from high to low (pink to blue) were generated using the Consurf server (Ashkenazy et al., 2010; Ashkenazy et al., 2016). PFAM-predicted domains are labeled in bold (some regions were added and modified based on structural observations).\u00a0Predicted secondary structure based on PSIPRED and DISOPRED3 results\u00a0(purple for helix, green for stand, orange for coil and white for disordered) (El-Gebali et al., 2019; Jones, 1999; Buchan et al., 2013; Buchan and Jones, 2019; Jones and Cozzetto, 2015).\n\n![Figure 1\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/54449/elife-54449-fig1-figsupp5-v2.jpg)\n\n**Figure 1\u2014figure supplement 5.:** Transparent maps of regions within the RSC core, segmented based on identified chain segments with the built atomic models shown.\n\n![Figure 1\u2014figure supplement 6.](https://cdn.elifesciences.org/articles/54449/elife-54449-fig1-figsupp6-v2.jpg)\n\n**Figure 1\u2014figure supplement 6.:** (A) Region of the density map assigned to Rsc1/2, with an atomic model showing identical residues between Rsc1 and Rsc2 in green, strongly similar residues in teal, weakly similar residues in blue and dissimilar residues in grey. (B) Model of Rsc1 into the Rsc1/2 density. (C) Model of Rsc2 into the Rsc1/2 density. (D) Sequence alignment of Rsc1 and Rsc2 using Clustal Omega (Sievers et al., 2011), residues are colored according to sequence similarity.\n\n![Figure 1\u2014figure supplement 7.](https://cdn.elifesciences.org/articles/54449/elife-54449-fig1-figsupp7-v2.jpg)\n\n**Figure 1\u2014figure supplement 7.:** (A) Euler angle distribution (left) for particle images used in the reconstruction of the core of RSC (right). Major orientation peaks are marked with corresponding 2D class averages. (B) 3DFSC plot (Tan et al., 2017) showing isotropic resolution for the core of RSC. (C) Maps for the masked refinement and multibody refinement of the RSC core colored in a rainbow spectrum to represent the local resolution (local resolution calculated using Relion) (Zivanov et al., 2018). (D) Model of the core of RSC colored according to B-Factor. (E) C\u03b1 displacement vectors show the motion of the first three principal components of the multibody refinement. The consensus RSC model was flexibly fit into the first and last volumes of the eigenvalue binned structure and C\u03b1 displacement vectors were measured from those resulting structures (Lop\u00e9z-Blanco and Chac\u00f3n, 2013). (F) FSC plots for the reconstruction in Figure 1\u2014figure supplement 3. Resolutions are estimated according to the FSC\u00a0=\u00a00.143 criterion (fully independent reconstructions, gold standard). (G) Model versus map FSC curves for the refined RSC core coordinate model against the summed multibody reconstructions. The FSC\u00a0=\u00a00.5 criterion indicates a resolution of 3.2 \u00c5 for the core of RSC. (H) Refinement table summarizing data collection settings, reconstruction parameters, and model refinement and validation statistics.\n\n![Figure 1\u2014figure supplement 8.](https://cdn.elifesciences.org/articles/54449/elife-54449-fig1-figsupp8-v2.jpg)\n\n**Figure 1\u2014figure supplement 8.:** (A) Protein-protein crosslinks for the RSC complex, plotted on the domain architecture diagram. Only crosslinks with two or more independent crosslinked peptides within 30 amino acids are shown to simplify the display. Crosslinks are colored based on the lobe that they are within. (B) Probability distribution for the observed and theoretical unique distance restraints (UDRs) for the core of RSC. The observed probability distribution is colored blue (\u226438A, possible based on the linker length on BS3) and red (>38A, not possible based on the linker length on BS3). Of the 168 crosslinks that could be mapped onto the structure, 151 (90%) were within 38 \u00c5. (C) Same as (B) but for the RSC core with the Arp module (Arp7, Arp9, Rtt102, and Sth1-HSA). Of the 233 crosslinks that could be mapped onto the structure, 206 (88%) were within 38 \u00c5.\n\n![Figure 1\u2014figure supplement 9.](https://cdn.elifesciences.org/articles/54449/elife-54449-fig1-figsupp9-v2.jpg)\n\n**Figure 1\u2014figure supplement 9.:** Data processing workflow. Particles from class averages outlined in purple and 3D classes colored purple were selected for further processing. Particles that went into grey classes were eliminated from further processing. The final global refinement yielded a map with an overall resolution of 19 \u00c5 for RSC bound to a NCP. Further classification showed that the tail region shifts towards the NCP in a subset of particles.\n\nWe determined the structure of the core to\u00a0~3.0 \u00c5 and mapped 14 proteins within this region: Rsc1/2, Rsc3, Rsc4, Rsc6, Rsc8 (two copies), Rsc9, Rsc30, Rsc58, Ldb7, Npl6, Htl1, Sfh1, and Sth1 (Figure 1B,C,F; Figure 1\u2014figure supplements 3, 4, 5, 6 and 7). It was not possible to distinguish, based on our cryo-EM data, whether the structure contained Rsc1 or Rsc2. A region in our map could be mapped either to Rsc1 (776\u2013809 and 892\u2013924) or Rsc2 (787\u2013820 and 849\u2013881). These regions are highly similar between the two proteins (43% identical plus 22% similar) and the density we observe likely correspond to an average of these two proteins (Figure 1\u2014figure supplement 6).\n\nWe confirm our model by mass spectrometry analysis of RSC chemically crosslinked using bis(sulfosuccinimidyl)suberate (BS3) (Figure 1\u2014figure supplement 8). We identified 780 unique inter-molecular links between different subunits and 617 unique intra-molecular links within the same subunits. About 90% (151/168) of mappable crosslinks in our model of the RSC core structure are within 38 \u00c5 distance.\n\nIn order to shed light on the interaction of RSC with its substrate, we also obtained a 19 \u00c5 resolution map of RSC bound to a nucleosome core particle (NCP) modified with H3K4me3 and H3K(9/14/18)ac (Figure 1D,E,F; Figure 1\u2014figure supplement 9). We used an acetylated nucleosome due to the higher affinity of RSC for nucleosomes containing acetylated H3 (Chatterjee et al., 2011). We were able to unambiguously fit our structure of the RSC core within this map, along with previously published models of the Arp module (Arp7, Arp9, Rtt102 and Sth1-HSA) and the NCP (Figure 1E) (Schubert et al., 2013; Li et al., 2019). We do not observe any density for the ATPase domain of Sth1; however, based on the structure of the Sth1 homolog Snf2 bound to the NCP, we expect the catalytic subunit to bind super-helical location-2 (SHL2) (Li et al., 2019).\n\nOur data show two distinct modes of NCP binding by RSC, one where the whole tail is swiveled towards the nucleosome (termed swiveled), and one where only a small region emanating from the tail reaches towards the NCP (termed locked) (Figure 1D). Altogether, the core of RSC appears to bind the nucleosome in a well-defined orientation that in our docking-based model places the catalytic domain of Sth1 in a position that would allow it to interact with the SHL2. The fact that we observe nucleosome-bound RSC, even without a stable binding of the catalytic domain of Sth1 to the NCP, indicates that the contacts through the RSC core are sufficient for nucleosome engagement. It also makes our structure a likely intermediate in a pathway to full engagement of a nucleosome by RSC. We propose that the contacts made by the RSC core with the NCP contribute to the processivity of the nucleosome remodeling function of the catalytic domain of Sth1 (see below).\n\n### Structural organization of RSC\n\nThe RSC core is critically defined by subunits Rsc8, Rsc6, Rsc9, Rsc58, Sth1, and Sfh1. Five of these proteins (Rsc8, Rsc6, Rsc9, Sth1, and Sfh1) are evolutionarily conserved throughout the eukaryotic SWI/SNF family, and comprise 72% of the mass of the core density (Figure 2A; Figure 2\u2014source data 1) (Wang et al., 1996; Kadoch and Crabtree, 2015). An asymmetric Rsc8 dimer defines the backbone for the complex, scaffolding the three core lobes and contacting all core proteins except Rsc3 and Rsc30 (Figure 2A,B). Rsc8 has four conserved domains, which are, from N to C terminus: SWIRM, ZZ, SANT, and coiled coil (CC) (Figure 2B). The SWIRM domains are in the arm, the ZZ and SANT domains in the head and the CC domains in the body. Previous work has shown that Rsc8 homologs are critical for the integrity of their respective SWI/SNF chromatin remodelers, supporting the idea that Rsc8 and its homologs are the structural backbone for all SWI/SNF family of remodelers (Mashtalir et al., 2018).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/54449/elife-54449-fig2-v2.jpg)\n\n**Figure 2.:** (A) Structure of the RSC core, highlighting in color the evolutionarily conserved subunits. Non-conserved subunits are shown in transparent grey. Subunit labels are shown with colors corresponding to those in the structure. (B) Top, domain map of Rsc8, with the four different domains colored blue to red from N to C terminus. Middle, structure of the RSC core with only the Rsc8 dimer colored. Bottom, individual domains of the two copies of Rsc8, aligned and tiled. (C) RSC subunits that span multiple lobes (except for Rsc8) are colored, with the regions spanning them labeled. (D) Model of the RSC-NCP complex with domains of Sth1 highlighted blue to red from N to C terminus. Scaffolding domains I (blue) and II (green) interact with the core region of RSC, while the HSA helix (yellow) interacts with the Arp module to form the leg lobe. The ATPase (red; not visible in our density) is modeled according to the structure of nucleosome-bound Snf2 (ref. Li et al., 2019).\n\nApart from Rsc8, the only other subunits to span multiple lobes in our model of the core are Rsc6, Rsc9, Rsc58 and Sth1 (Figure 2C). Most of the structured regions of Rsc6 are in the body, except for a small region at the very C-terminus of the protein (residues 445\u2013483), which occupies the space in between the three lobes. Rsc9 also primarily located in the body, but for a small region at the very N-terminus terminus (residues 28\u201380) interacts with the surface of the arm and head lobes. The N-terminal BrD and C-terminal Scaffold II domain of Rsc58 are in the head lobe, while the central Scaffold I domain is in the body lobe. Sth1 spans three lobes, the head, body and leg. The Scaffold I domain is in the head while the Scaffold II domain goes between the body to the head and back to the body. From the RSC-NCP model, we observe that Sth1 then continues from the Scaffold II domain to the HSA helix that, along with Arp7, Arp9 and Rtt102, form the leg lobe (Figure 2D). From the HSA helix, Sth1 continues into the ATPase domain that would putatively bind the nucleosome at position SHL2 (Figure 2D). This model of RSC would have the N- and C- termini of adjacent Sth1 domains at the right distance to connect through the short linkers between them (Figure 2D).\n\n### Architecture of the body lobe\n\nThe body lobe of RSC contains a helical bundle backbone, an \u03b1-solenoid belly and a \u03b2-sandwich hook (Figure 3A). The helical bundle is made up of the two CC domains of Rsc8, along with the CC domains of Rsc6 and Htl1. This helical bundle interacts with the \u03b1-solenoid belly made up of the armadillo repeats of Rsc9 and the SwiB domain of Rsc6. Finally, the hook region off the belly contains \u03b2-strands from Rsc9 and Rsc6 that come to together to form a b-sandwich. Given the position of the Rsc9 sequences model in our structure, it is likely that the RFX-type WH of Rsc9 is part of the tail. In addition to these major structural regions there are some smaller elements that contribute to the body lobe. These include a segment of Rsc58 that binds between the belly and the backbone, a small segment of Sth1 that binds to the surface of the helical bundle, and a small segment of Sth1 that binds the surface of the armadillo repeat (Figure 3A). The last two components of the body are the Rsc3 and Rsc30 dimer that binds the surface of the Rsc9 armadillo repeat on top of Sth1 (Figure 3A). The Rsc3 and Rsc30 dimer appears to be absent in 75% of the RSC particles that were used in the high-resolution analysis (Figure 3B), in agreement with previous findings showing that some RSC complexes lack Rsc3 and Rsc30 (Angus-Hill et al., 2001). During our image analysis, we found that the presence or absence of the Rsc3 and Rsc30 dimer correlates well with the presence or absence of most of the tail lobe, making the Rsc3 and Rsc30 subunits the most likely constituents of this very flexible lobe (Figure 3C). The fact that there are no equivalent subunits in the yeast SWI-SNF complex, for which the tail domain is missing, further supports this assignment (Figure 1\u2014figure supplement 2).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/54449/elife-54449-fig3-v2.jpg)\n\n**Figure 3.:** (A) Structure of the RSC body lobe, with protein domains and segments labeled. (B) Two maps generated from 3D classification of the body region. Shown is the presence or absence of RSC3/30 density with the body lobe. Maps were generated using partial signal subtraction and 3D classification. (C) Four classes generated from 3D classification using the final high-resolution set of particles, without mask and with a reference that was low pass filtered to 20 \u00c5 at every iteration. These classes reveal the flexibility of the tail and leg lobes of RSC and correlate the presence of the tail lobe with the Rsc3/Rsc30 occupancy in the core.\n\n### The arm lobe engages the NCP\n\nFour proteins contribute to most of the arm lobe, which is made of the two SWIRM domains of Rsc8 held together by the Scaffold domain of Npl6 and the RPT1 and RPT2 domains of Sfh1 (Figure 4A). Within our RSC-NCP structure, the arm lobe makes major interactions with the nucleosome, contacting both the acidic patch and nucleosomal DNA (Figure 4B). The region of the arm that contacts the acidic patch appears to emanate from the C-terminal end of the RPT2 domain of Sfh1 (Figure 4B). This region of Sfh1 is highly conserved and contains nine lysine and arginine residues that are predicted to form a helix (Figure 4C). The involvement of this region in nucleosome binding is supported by the fact that deletion of Snf5 (SWI/SNF homolog of Sfh1) in yeast results in less efficient chromatin remodeling activity of the SWI/SNF complex (Sen et al., 2017).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/54449/elife-54449-fig4-v2.jpg)\n\n**Figure 4.:** (A) The structure of the RSC arm lobe with protein domains and segments labeled. (B) The density of the NCP and arm region from the RSC-NCP reconstruction showing the connections that occur between the two. (C) Domain organization, sequence conservation and secondary structure prediction for Sfh1. Below is a zoomed in view of the C-terminus showing the sequence at a residue level. The domain map coloring is the same as in (Figure 1\u2014figure supplement 4).\n\nThe region of the arm lobe contacting the nucleosomal DNA appears to emanate from either the C-terminus of the SWIRM domain of Rsc8, which is predicted to be disordered, or the N-terminus of the Scaffold domain of Npl6 (Figure 4B), which includes a CRC domain which shares homology to the WH domain of SMARCB (Allen et al., 2015; S\u00f6ding et al., 2005). The WH domain of SMARCB has been shown to bind DNA and would be small enough to be accommodated within the extra density observed in our RSC-NCP structure, making the CRC domain of Npl6 the likely candidate for binding the nucleosomal DNA (Figure 4B) (Allen et al., 2015).\n\n### The head lobe contains chromatin interacting subunits\n\nSix RSC subunits contribute majorly to the head lobe of RSC, which is made of the ZZ and SANT domains of the two copies of Rsc8, the BrD and Scaffold II domain of Rsc58, the Scaffold I and part of Scaffold II domain of Sth1, the \u03b2-barrel domain of Rsc4 and the anchor domain of Rsc1/2 (Figure 5A). Of these proteins, only Rsc8 and Sth1 are evolutionarily conserved, suggesting that this region probably contributes to specific functions of the RSC complex. Rsc58, Rsc4 and Rsc1/2 are notable for containing histone reader domains: BrD and BAH domains. Only one other protein within RSC, Sth1, has a histone reader domain (a BrD). These domains have been shown to interact with acetylated lysines on histone tails, particularly H3 (Chambers et al., 2013; Chatterjee et al., 2011; Duan and Smerdon, 2014). We could only model the BrD of Rsc58, while the remaining BrDs and the BAH domain extend from flexible linkers and are not visible in our structure (Figure 5A,B). Based on the position of the head relative to the arm lobe, the BrD-containing subunits in our RSC-nucleosome model are positioned so that these domains could reach the H3 tails of the engaged nucleosome (Figure 5B). Alternatively, it is possible that the BrDs of one RSC complex could interact with different, adjacent nucleosomes. Microarray data have shown that different bromodomains within RSC can recognize different acetylation sites, which could allow the complex to be targeted to a wide variety of genomic loci (Zhang et al., 2010; Filippakopoulos et al., 2012). The yeast SWI/SNF and its human homolog BAF have just one BrD \u2013 on the ATPase subunit \u2013 while human PBAF has eight, indicating that these domains may contribute to functional specificity of different classes within the SWI/SNF family.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/54449/elife-54449-fig5-v2.jpg)\n\n**Figure 5.:** (A) Structure of the RSC head lobe with protein domains and segments labeled. (B) On the left the RSC-NCP model showing the head lobe situated over the top of the nucleosome. On the right in the full RSC-NCP model with cartoon connections for the chromatin interacting domains (BrDs and BAH) shown. Only the RSC subunits that contain chromatin interacting domains are colored. The nucleosome is colored teal for DNA, orange for histones H2A, H2B and H4, and pink for H3.\n\n## Discussion\n\n### Mechanistic model for nucleosome engagement by RSC\n\nBased on our structure and existing biochemical data, we propose a 4-step mechanism of RSC-nucleosome engagement (Figure 6). Initial recruitment of RSC to a nucleosome likely occurs through interaction with H3 acetylation marks, given that RSC has an increased affinity for these nucleosomes (Kasten et al., 2004) and that most of them as flexible, facilitating an initial encounter. RSC could then engage the nucleosome through its arm region and place the SHL2 site of the nucleosome in position to bind the flexibly tethered catalytic domain of Sth1. The ATPase domain would then be able to translocate the DNA around the histone octamer, while the core of RSC holds onto the histone core through its direct interactions with histones. This process is very likely to apply to all SWI/SNF chromatin remodelers, as they share the same architecture and contain the conserved subunits/domains involved in the steps just proposed. Specifically, all complexes have bromodomains to bind acetylated histones (minimally in the C-terminus of their catalytic subunit), a Sfh1 homolog to bind the acidic patch of the nucleosome, and a catalytic DNA translocase domain to remodel nucleosomes (Figure 2\u2014source data 1) (Clapier and Cairns, 2009).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/54449/elife-54449-fig6-v2.jpg)\n\n**Figure 6.:** Mechanistic model of RSC engaging a nucleosome. The apo RSC is shown with its moving tail and leg lobes, and its flexibly attached histone-tail binding domains. The BrDs bind and select target nucleosomes with acetylated tails. The selected nucleosome engages RSC, first through the arm lobe of the core, which then positions the ATPase domain at the end of the leg to be able to bind SHL2. During nucleosome remodeling, the ATPase translocates the DNA while the RSC core holds onto the histone core.\n\n### Model of RSC core assembly\n\nOur structure of the RSC core allows us to visually represent the architecture of assembly intermediates of human SWI/SNF complexes that were previously identified based by biochemical and mass-spectrometry experiments (Figure 7) (Mashtalir et al., 2018) and to rationalize the assembly pathway based on the molecular contacts observed in our structure. According to this analysis, dimerization of the Rsc8 CC domains is most likely the first step in RSC complex assembly, followed by the binding of Rsc6 to this CC dimer. The RPT1 and RPT2 motifs within Sfh1 would then bring the two SWIRM domains of Rsc8 together. This initial order of assembly is based on the assembly intermediates identified for the mammalian SWI/SNF complexes BAF and PBAF (Mashtalir et al., 2018) where initial dimerization of SMARCC (the mammalian Rsc8 homolog) is followed by the sequential binding of SMARCD (the mammalian Rsc6 homolog), SMARCB (the mammalian Sfh1 homolog), and SMARCE (no known RSC/yeast homolog) to form the BAF core.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/54449/elife-54449-fig7-v2.jpg)\n\n**Figure 7.:** Proposed assembly process of RSC highlighting the individual, initial stages, which involve only evolutionarily conserved subunits.\n\nSubsequent steps of RSC assembly likely involve binding of Rsc9 and Sth1. The armadillo repeat domain of Rsc9 binds the Rsc8 CC and Rsc6 to form most of the body lobe, while the scaffolding domains (I and II) of Sth1 contribute to both the head and body regions and exit towards the flexible leg lobe. The integration of Sth1 into the complex would also lead to recruitment of the components of the ARP module (Arp7, Arp9 and Rtt102). This order of events is derived from the corresponding phase in the assembly of mammalian SWI/SNF complexes (Mashtalir et al., 2018), which involves association of either ARID1 or ARID2 with the BAF core. ARID1 and ARID2 are paralogs, and both are orthologs to Rsc9, while the rest of the BAF complex-specific factors have no clear yeast orthologs. The incorporation of the ARID subunits is followed by the addition of the ATPase module, which includes the conserved SMARCA, ACTB, and ACTL6A subunits, which are the homologs of yeast Sth1, Arp7, and Arp9, respectively.\n\nIt is important to note that this initial assembly process primarily involves evolutionarily conserved subunits and domains and is thus likely conserved for all SWI/SNF chromatin remodelers (Kadoch and Crabtree, 2015). This model is supported by the structural similarities we observe between the yeast SWI/SNF and RSC complexes (and in agreement with a recently reported structure of yeast SWI/SNF bound to a nucleosome by Han et al., 2019). In the case of RSC, assembly would then continue with the addition of the yeast specific factor Npl6, which completes the arm lobe, and RSC-specific subunits Htl1, Rsc58, Rsc1/2, Rsc4, and Ldb7. These subunits either contribute to the scaffold of the complex (Htl1 and Ldb7), serve to anchor bromodomains to the core (Rsc1/2 and Rsc4), or both (Rsc58). The last two subunits to be recruited to the complex are likely the RSC-specific subunits Rsc3 and Rsc30, which form the tail module.\n\n### Conclusions\n\nOur studies provide the detailed structure for the conserved core of SWI/SNF complexes and lead to a model of assembly for this family of remodelers that agrees with previous biochemical data on mammalian complexes. Our work also provides a model of how RSC stably contacts the core histones in a nucleosome via its body module, while engaging nucleosomal DNA via the Sth1 ATPase. Both the structural integrity of the core and the interaction with nucleosomes rely on evolutionarily conserved subunits, while the non-conserved proteins in RSC are likely to play a role in recruitment and regulation of the complex. Future studies will be needed to understand the mechanisms by which individual members of the SWI/SNF family of chromatin remodelers are brought to different genome loci and are distinctly regulated.\n\n## Materials and methods\n\n### Protein purification\n\nSWI/SNF was purified from Saccharomyces cerivisiae using a modified TAP purification as described in Nagai et al. (2017); Puig et al. (2001). A strain modified with a TAP tag on the C terminus of SNF2 was obtained from GE Dharmacon and grown at 30\u00b0C in YPD. 20 L of cells were harvested at OD six and lysed using a cryo-mill. The ground cells were resuspended in a lysis buffer (50 mM HEPES pH 7.9, 25 mM ammonium sulfate, 0.5 mM EDTA, 100 \u03bcM zinc sulfate, 5% glycerol, 5 mM DTT, 10 \u03bcM leupeptin, protease inhibitor,. 01% NP-40) and dounced to ensure homogenization. The lysate was spun at 11,000 g for 20 min. The supernatant was removed and brought to 200 mM ammonium sulfate, followed by an addition of polyethyleneimine (0.2% final concentration) to precipitate DNA. The sample was spun again at 17,000 g for 40 min. Supernatant was removed and brought up to 2.2 M ammonium sulfate, then spun again at 17,000 g for 40 min. The protein pellet was resuspended in buffer (lysis buffer with 0 M ammonium sulfate and 2 mM DTT) and the ammonium sulfate concentration was brought up to 400 mM. IgG resin (1 ml packed) was equilibrated and incubated for 4 hr. Resin was washed with 500 mM ammonium sulfate buffer, then 1x with 100 mM ammonium sulfate buffer. Protein was released via TEV cleavage by overnight incubation with 20 \u03bcg TEV (MacroLab) in AS-100. Following cleavage, samples were spun to collect supernatant. The CaCl2 concentration of the supernatant was brought up to 2 mM and loaded onto a 100 \u03bcl equilibrated CBP resin. After 4 hr of incubation, supernatant was removed and the resin was washed 4x (20 mM HEPES pH 7.9, 2 mM MgCl2, 10% glycerol, 250 mM KCl, 50 \u03bcM ZnCl2, 2 mM CaCl2, 10 \u03bcM leupeptin, 1 mM TCEP, 0.01% NP-40). The sample was eluted with one volume elution buffer (20 mM HEPES pH 7.9, 2 mM MgCl2, 10% glycerol, 250 mM KCl, 50 \u03bcM ZnCl2, 2 mM EGTA, 10 \u03bcM leupeptin, 1 mM TCEP, 0.01% NP-40) for 30 min, then 15 min for each subsequent elution. Samples were aliquoted, frozen in liquid nitrogen and stored at \u221280\u00b0C.\n\nRSC was purified from Saccharomyces cerivisiae using a TAP-tag method as described (Puig et al., 2001; Dutta et al., 2017). A strain modified with a TAP tag at the C terminus of STH1 was obtained from GE Dharmacon and grown at 30\u00b0C in YPD. 10 L of cells were harvested at OD seven and lysed using a cryo-mill. The ground cells were resuspended in a lysis buffer (50 mM HEPES pH 7.9, 250 mM KCl, 0.5 mM EDTA, 100 \u03bcM ZnSO4, 10% glycerol, 2 mM DTT, 10 \u03bcM leupeptin, protease inhibitor, 0.05% NP-40) and dounced to ensure homogenization, followed by an addition of 18 \u03bcL of benzonase (Sigma) while spinning on ice. After 10 min, another 18 \u03bcL of benzonase were added. Heparin (Sigma) was then added slowly to a final concentration of 0.5 mg/mL and incubated for 10 min. The lysate was then spun for 90 min at 17,000 g. Supernatant was collected and clarified through a column frit, then bound to 2.5 mL packed IgG resin and incubated for 4 hr at 4\u00b0C. After incubation, the supernatant was removed. TCEP was added to the lysis buffer for a final concentration of 0.5 mM and washed 5x over the resin. The sample was released via overnight incubation with 25 \u03bcg TEV protease in one volume buffer. Following cleavage, samples were spun to collect supernatant. The CaCl2 concentration of the supernatant was brought up to 2 mM and loaded onto 100 \u03bcL CBP resin equilibrated five times with wash buffer (20 mM HEPES pH 7.9, 10% glycerol, 150 mM KCl, 50 \u03bcM ZnCl2, 2 mM CaCl2, 10 \u03bcM leupeptin, 1 mM TCEP, 0.01% NP-40). After 4 hr of incubation, the supernatant was removed and the resin was washed 2x with wash buffer with 750 mM KCl, then 3x with wash buffer with 250 mM KCl buffer, then 1x with wash buffer without CaCl2. The sample was eluted with one volume (20 mM HEPES pH 7.9, 2 mM MgCl2, 10% glycerol, 150 mM KCl, 50 \u03bcM ZnCl, 2 mM EGTA, 10 \u03bcM leupeptin, 1 mM TCEP, 0.01% NP-40) for 30 min, then 15 min for each subsequent elution. Samples were aliquoted, frozen in liquid nitrogen and stored at \u221280\u00b0C.\n\n### Chemical crosslinking mass spectrometry\n\nWe used the\u00a0~250 \u03bcg RSC2 TAP-tag purified RSC complex and crosslinked by 4 mM bis(sulfosuccinimidyl)suberate (BS3) at RT for 2 hr. Sample processing and mass spectrometry data analyses were done as described before (Mashtalir et al., 2018). After plink2 and Nexus database searches against the RSC subunit sequences, about 6.6% of interlinked spectra and 3.1% intralinked spectra were removed after manually spectrum checking. All the crosslinked spectra can be viewed at https://www.yeastrc.org/proxl_public/viewProject.do?project_id=234.\n\n### Negative stain sample preparation and data processing\n\nFor negative stain, the samples were cross-linked at room temperature for 5 min using 1 mM final concentration of BS3. After cross-linking, 4 \u03bcL were applied to a glow discharged continuous carbon grid for 5 min, then stained with uranyl formate. A tilted negative stain data set was collected on a Tecnai F20 microscope (FEI) operated at 120 keV and equipped with an Ultrascan 4000 camera (Gatan). Data were collected using Leginon data acquisition software (Suloway et al., 2005). The CTF parameters were estimated using Gctf (version 1.16) and particles were picked using Gautomatch (version 0.50, from K Zhang, MRC-LMB, Cambridge) using gaussian blob templates (Zhang, 2016). Data processing was done using Relion (version 3.0) (Zivanov et al., 2018). The negative stain structure (EMD-6834) from Zhang et al. (2018) was used as an initial model. Extracted particles were subjected to 2D classification and 3D classification to obtain a homogenous population. Particles that went into the best classes were then refined.\n\n### Cryo-EM sample preparation\n\nFor cryo-EM sample preparation we used a Vitrobot Mark IV (FEI). RSC was crosslinked on ice using 1 mM BS3 (Thermo Fisher Scientific) for 15 min before 4 \u03bcL of sample was applied to either a 2/2 holey carbon or 1.2/1.3 UltrAuFoil grids (Quantifoil) at 4\u00b0C under 100% humidity. Grids were cleaned using Toguro plasma cleaner, using the 3 nm carbon setting run twice. The sample was immediately blotted away using Whatman #1 for 2\u20133 s at 0 N force and then immediately plunge frozen in liquid ethane cooled by liquid nitrogen. For the RSC-nucleosome complex sample preparation, 4 \u03bcL of RSC (2 pmol) and 1 \u03bcL of nucleosome (H3K4me3 and H3K(9/14/18)ac) (1 pmol) (Epicypher) were incubated for 10 min at 30 \u00b0C followed by the addition of 0.5 \u03bcL of AMPPNP (0.5 nmol) and an additional incubation for 10 min at 30\u00b0C. The samples were then placed on ice and crosslinked with 1 mM BS3 for 15 min. RSC-nucleosome samples were prepared in the same way as RSC.\n\n### Cryo-EM data collection\n\nFor the RSC sample, frozen grids were clipped and transferred to the autoloader of a Titan Krios electron microscope (Thermo Fischer Scientific) operating at 300 keV (PNCC). Images were recorded with a K3 direct electron detector (Gatan) operating in super-resolution mode at a calibrated magnification of 46,339 (1.079 \u00c5/pixel) and a mean defocus of \u22121.04 \u03bcm with a 0.24 \u03bcm standard deviation, using the SerialEM data collection software (Schorb et al., 2019). 50-frame exposures were taken at 0.06 s per frame, using a dose rate of 11.455 e-/pixel/s (0.6 e- \u00c5\u22122 per frame), corresponding to a total dose of 40 e-\u00c5\u22122 per micrograph (Figure 1\u2014figure supplement 3). A total of 8122 movies were collected from a total of 3 grids.\n\nFor the RSC-nucleosome sample, frozen grids were clipped and transferred to the autoloader of a Talos Arctica electron microscope (Thermo Fischer Scientific) operating at 200 keV acceleration voltage (UCB). Images were recorded with a K3 direct electron detector (Gatan) operating in super-resolution mode at a calibrated magnification of 43,859 (1.14 \u00c5/pixel) and a mean defocus of \u22121.66 \u03bcm with a 0.41 \u03bcm standard deviation, using the SerialEM data collection software (Schorb et al., 2019). 50-frame exposures were taken at 0.065 s per frame, using a dose rate of 11.838 e-/pixel/s (1 e- \u00c5 (Yen et al., 2012) per frame), corresponding to a total dose of 50 e-\u00c5\u22122 per micrograph (Figure 1\u2014figure supplement 9). A total of 9190 movie were collected from a single grid.\n\n### Cryo-EM data processing\n\nAll data processing was performed using Relion3 (version 3.0) (Zivanov et al., 2018). For the RSC dataset, whole movie frames were aligned and binned by 2 (1.079 \u00c5/pixel) with MotionCor2 to correct for specimen motion The CTF parameters were estimated using Gctf (Zhang, 2016; Zheng et al., 2017). 1,245,498 particles were picked with LoG picker. Particles were extracted binned by 4 (4.316 \u00c5/pixel) and subjected to two- and three-dimensional classification to remove ice and empty picks, which resulted in 1,074,750 particles. The negative stain reconstruction was used as an initial model for 3D classification. The particles were then centered and reextracted bin 1.33 (1.4386 \u00c5/pixel) and refined. The refinement was performed without a mask and resulted in a reconstruction were only the core of the complex was well resolved. The refinement was then continued with a mask around the core. The masked refinement resulted in a 3.8 \u00c5-resolution map of the core. Masked local search 3D classification was performed to select for the best particles. The best class, containing 252,918 particles, was selected and refined, resulting in a 3.4 \u00c5 map. Three iterations of CTF refinement, particle polishing and 3D refinement were performed, which resulted in reconstructions at 3.26, 3.21 and 3.18 \u00c5 (Zivanov et al., 2019). Local search 3D classification was performed to select the best particles. The best class, containing 192,066 particle images, was selected and further refined, resulting in a 3.14 \u00c5-resolution map. One last iteration of CTF refinement, particle polishing and refinement was performed and led to a reconstructions at 3.07 \u00c5 resolution. The core was then subjected to multibody refinement by masking each of the three lobes separately (Nakane et al., 2018). The arm, head and body refined to 3.23, 3.14, and 2.96 \u00c5 respectively. 3D classification of the partially signal subtracted particles was then performed. For the arm lobe a single good class was identified, which when refined resulted in a 3.16 \u00c5 map. For the head and body lobes two good classes were found, with one containing several extra helices. The classes containing the extra density were selected and refined. The head lobe refined to 3.07 \u00c5, and the body refined to 3.48 \u00c5. To characterize the two flexible lobes of the complex 3D classification was performed for the 192,066 subset of particles. The classification with four classes resulted in a continuum of states for the leg lobe. The complete tail lobe was only present in two of the four classes, with the tail in two different conformations.\n\nFor the RSC dataset, whole movie frames were aligned and binned by 2 (1.14 \u00c5/pixel) with MotionCor2 to correct for specimen motion The CTF parameters were estimated using Gctf (Zhang, 2016; Zheng et al., 2017). 2,327,957 particles were picked with LoG picker. Particles were extracted binned by 4 (4.56 \u00c5/pixel) and subjected to two- and three-dimensional classification to remove ice, empty picks, free nucleosomes which resulted in 48,222 particles. The cryo-EM reconstruction of RSC alone was used as an initial model for 3D classification. The particles were refined to 19 \u00c5 and was subjected to another round to 3D classification. Further refinement from 3D classification did not improve reconstruction quality (not shown).\n\nSome of the software packages mentioned above were configured by SBgrid (Morin et al., 2013).\n\n### Model building and refinement\n\nThe model for the RSC core was generated by manually building a poly-alanine trace through the final global refinement and multibody maps in COOT (Emsley et al., 2010). Each of the chains was then identified with the help of blobMapper.py (Zukin, 2020; copy archived at https://github.com/elifesciences-publications/blobMapper) and secondary structure predication (Figure 1\u2014figure supplement 4) (Jones, 1999; Buchan et al., 2013; Jones and Cozzetto, 2015). The resulting coordinate model was iteratively refined using the real space refinement algorithm implemented in PHENIX (Afonine, 2018a). Ramachandran, secondary structure, C\u03b2, and rotamer restraints, as well as bond length and bond angle restraints for the Zn2+ ion in the Rsc8 ZZ domain, were used throughout to ensure good model geometry. The final round of refinement comprised 5 rounds of global minimization as well as b-factor refinement and used a resolution limit of 3.1 \u00c5, according to the average resolution of cryo-EM maps used (Figure 1\u2014figure supplement 7F) in order to avoid overfitting of the model. The refinement weight was automatically determined by PHENIX, which monitors the bond length and bond angle deviations to maintain good model geometry and avoids over-fitting of the model to the map (Afonine et al., 2018b). The model was validated using MTRIAGE and MOLPROBITY within PHENIX (Afonine et al., 2018b). The refinement statistics are given in (Figure 1\u2014figure supplement 7H) and show values typical for structures in this resolution range (MOLPROBITY score\u00a0=\u00a02.1) (Duan and Smerdon, 2014). The FSC curve between the model and the map shows good correlation up to 3.2 \u00c5 resolution according to the FSC\u00a0=\u00a00.5 criterion (Figure 1\u2014figure supplement 7G) (Afonine et al., 2018b).\n\nThe model of the RSC-NCP complex used for visualization was generated by docking our model of the RSC core, the crystal structure of the Arp module (PDB 4I6M: Arp7, Arp9, Rtt102 and Snf2-HSA) (Schubert et al., 2013) and cryo-EM structure of Snf2-MMTV nucleosome complex bound at the SHL2 with ADP (PDB 6IY2: Snf2, nucleosome) (Li et al., 2019). The sequence for the Snf2-HSA helix in 4I6M and Snf2 helicase domain in 6IY2 were aligned to the Sth1 sequence and mutated in COOT (Emsley et al., 2010). For deposition of the coordinate model to the PDB, we replaced the model of the Snf2-MMTV nucleosome complex with the structure of a human nucleosome (PDB 2CV5) (Tsunaka et al., 2005), without bound ATPase domains, because the ATPase domain of Sth1 was not resolved in our cryo-EM map.\n\nSome of the software packages mentioned above were configured by SBgrid (Morin et al., 2013).\n\n### Creation of figures and movies\n\nDepiction of molecular models were generated using PyMOL (The PyMOL Molecular Graphics System, version 1.8, Schr\u00f6dinger), the UCSF Chimera package from the Computer Graphics Laboratory, University of California, San Francisco (supported by National Institutes of Health P41 RR-01081) and UCSF ChimeraX developed by the Resource for Biocomputing, Visualization, and Informatics at the University of California, San Francisco, with support from National Institutes of Health R01-GM129325 and the Office of Cyber Infrastructure and Computational Biology, National Institute of Allergy and Infectious Diseases (Pettersen et al., 2004; Goddard et al., 2018). Protein domains graphs (Figure 1\u2014figure supplement 4; Figure 4) were generated using domainsGraph.py (Patel, 2020; copy archived at https://github.com/elifesciences-publications/domainsGraph).\n\nSome of the software packages mentioned above were configured by SBgrid (Morin et al., 2013).\n",
+      "created_at": "2025-12-02T14:16:38.828348Z"
+    },
+    {
+      "id": "ab0495c6-8c03-4e43-b2cf-6e477ee0e551",
+      "submission_id": "8aad99e7-8899-45b7-9d55-9434047c61e4",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Cynthia Wolberger, Johns Hopkins University School of Medicine United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.54449.sa1](https://doi.org/10.7554/eLife.54449.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nAcceptance summary:\n\nThe RSC complex is nucleosome remodeler that maintains nucleosome-free regions in yeast and is the most abundant member of the SWI/SNF family of enzymes. This paper reports the cryo EM structure of the RSC complex core, containing 14 of the 17 RSC subunits. The structure reveals the architecture of the complex, and the similarities and differences as compared to other SWI/SNF remodelers. A low-resolution structure of RSC bound to a nucleosome core particle suggest a model for how RSC engages its substrate. Taken together, this work is an important advance in the chromatin and transcription fields, and provides a structural basis for interpreting previous biochemical studies in order to derive a possible model for RSC assembly and function.\n",
+      "created_at": "2025-12-02T14:16:38.828348Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T14:16:38.828348Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T14:16:38.828348Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "c22ab5cf-86d6-4aaf-8993-4cb180185847",
+      "content_id": "9c5ddecb-53cb-4829-8068-54310388f1b1",
+      "claim_id": "C1",
+      "claim": "RSC is composed of a rigid tripartite core and two flexible lobes.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we report cryo-electron microscopy (cryo-EM) and crosslinking mass spectrometry (CLMS) studies of yeast RSC complex and show that RSC is composed of a rigid tripartite core and two flexible lobes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated in the abstract and supported by cryo-EM structural data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:16:38.828348Z"
+    },
+    {
+      "id": "e543e90e-be66-46ad-a3da-370ba5bda50d",
+      "content_id": "9c5ddecb-53cb-4829-8068-54310388f1b1",
+      "claim_id": "C2",
+      "claim": "The core structure of RSC is scaffolded by an asymmetric Rsc8 dimer.",
+      "claim_type": "EXPLICIT",
+      "source": "The core structure is scaffolded by an asymmetric Rsc8 dimer and built with the evolutionarily conserved subunits Sfh1, Rsc6, Rsc9 and Sth1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated in the abstract and supported by structural data showing Rsc8 dimer organization.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:16:38.828348Z"
+    },
+    {
+      "id": "b68b1b35-0708-4785-9075-9700cbac2bf1",
+      "content_id": "9c5ddecb-53cb-4829-8068-54310388f1b1",
+      "claim_id": "C3",
+      "claim": "The flexible ATPase lobe is composed of helicase subunit Sth1, Arp7, Arp9 and Rtt102.",
+      "claim_type": "EXPLICIT",
+      "source": "The flexible ATPase lobe, composed of helicase subunit Sth1, Arp7, Arp9 and Rtt102, is anchored to this core by the N-terminus of Sth1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated in the abstract and supported by structural analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:16:38.828348Z"
+    },
+    {
+      "id": "36e68058-2570-4b53-928a-f0504a223ae7",
+      "content_id": "9c5ddecb-53cb-4829-8068-54310388f1b1",
+      "claim_id": "C4",
+      "claim": "RSC engages histones and nucleosomal DNA through one arm of the core structure, composed of the Rsc8 SWIRM domains, Sfh1 and Npl6.",
+      "claim_type": "EXPLICIT",
+      "source": "Our cryo-EM analysis of RSC bound to a nucleosome core particle shows that in addition to the expected nucleosome-Sth1 interactions, RSC engages histones and nucleosomal DNA through one arm of the core structure, composed of the Rsc8 SWIRM domains, Sfh1 and Npl6.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated in the abstract and supported by cryo-EM data of RSC-NCP complex.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:16:38.828348Z"
+    },
+    {
+      "id": "6554205b-548d-47ec-b5ba-ee55f0ec2683",
+      "content_id": "9c5ddecb-53cb-4829-8068-54310388f1b1",
+      "claim_id": "C5",
+      "claim": "Eukaryotes have four major families of chromatin remodelers: SWI/SNF, ISWI, CHD, and INO80.",
+      "claim_type": "EXPLICIT",
+      "source": "Eukaryotes have four major families of chromatin remodelers: SWI/SNF, ISWI, CHD, and INO80 (Clapier and Cairns, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated and supported by a citation to previous literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:16:38.828348Z"
+    },
+    {
+      "id": "3ad32069-3b7d-4e3a-8364-54a2554ef226",
+      "content_id": "9c5ddecb-53cb-4829-8068-54310388f1b1",
+      "claim_id": "C6",
+      "claim": "In S. cerevisiae there are two members of the SWI/SNF family of chromatin remodelers: RSC and SWI/SNF.",
+      "claim_type": "EXPLICIT",
+      "source": "In S. cerevisiae there are two members of the SWI/SNF family of chromatin remodelers: RSC and SWI/SNF (C\u00f4t\u00e9 et al., 1994; Cairns et al., 1996).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated and supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:16:38.828348Z"
+    },
+    {
+      "id": "d7427444-a7dc-4f71-bfcd-0b87b6ef1cca",
+      "content_id": "9c5ddecb-53cb-4829-8068-54310388f1b1",
+      "claim_id": "C7",
+      "claim": "SWI/SNF chromatin remodelers reposition nucleosomes by translocating DNA around the histone octamer.",
+      "claim_type": "EXPLICIT",
+      "source": "SWI/SNF chromatin remodelers reposition nucleosomes by translocating DNA around the histone octamer, and in vitro assays have shown that they move nucleosomes to the ends of linear DNA fragments before evicting the histones from the DNA (Clapier et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated and supported by a citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:16:38.828348Z"
+    },
+    {
+      "id": "02123dda-e027-49ff-ad5b-618014e5050d",
+      "content_id": "9c5ddecb-53cb-4829-8068-54310388f1b1",
+      "claim_id": "C8",
+      "claim": "RSC is essential for yeast viability.",
+      "claim_type": "EXPLICIT",
+      "source": "RSC is essential for yeast viability and is ten times more abundant than SWI/SNF (Cairns et al., 1996).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated and supported by a citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:16:38.828348Z"
+    },
+    {
+      "id": "68b53696-0cb3-4831-ab7f-37667124799d",
+      "content_id": "9c5ddecb-53cb-4829-8068-54310388f1b1",
+      "claim_id": "C9",
+      "claim": "RSC is ten times more abundant than SWI/SNF.",
+      "claim_type": "EXPLICIT",
+      "source": "RSC is essential for yeast viability and is ten times more abundant than SWI/SNF (Cairns et al., 1996).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated and supported by a citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:16:38.828348Z"
+    },
+    {
+      "id": "43e59d80-3374-4679-be7c-1f084de7c998",
+      "content_id": "9c5ddecb-53cb-4829-8068-54310388f1b1",
+      "claim_id": "C10",
+      "claim": "RSC is responsible for maintaining nucleosome free regions (NFR).",
+      "claim_type": "EXPLICIT",
+      "source": "In the context of transcription, RSC is responsible for maintaining nucleosome free regions (NFR), while SWI/SNF plays a role in remodeling nucleosomes during transcription initiation (Nagai et al., 2017; Krietenstein et al., 2016; Klein-Brill et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated and supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:16:38.828348Z"
+    },
+    {
+      "id": "761aed8f-47e8-4336-af2b-666d050753b1",
+      "content_id": "9c5ddecb-53cb-4829-8068-54310388f1b1",
+      "claim_id": "C11",
+      "claim": "SWI/SNF plays a role in remodeling nucleosomes during transcription initiation.",
+      "claim_type": "EXPLICIT",
+      "source": "In the context of transcription, RSC is responsible for maintaining nucleosome free regions (NFR), while SWI/SNF plays a role in remodeling nucleosomes during transcription initiation (Nagai et al., 2017; Krietenstein et al., 2016; Klein-Brill et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated and supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:16:38.828348Z"
+    },
+    {
+      "id": "14b3a469-e68b-48e3-b3c0-2649791ce855",
+      "content_id": "9c5ddecb-53cb-4829-8068-54310388f1b1",
+      "claim_id": "C12",
+      "claim": "RSC is involved in mitotic division, double stranded break repair, and telomere maintenance.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, RSC is also involved in many transcription-independent processes, such as mitotic division, double stranded break repair, and telomere maintenance (Krietenstein et al., 2016; Erkina et al., 2010; Kuryan et al., 2012; Campsteijn et al., 2007; Shim et al., 2007; Ungar et al., 2009; Ng et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated and supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:16:38.828348Z"
+    },
+    {
+      "id": "00edcb83-bdd8-41c1-95a6-dfa7206de2c8",
+      "content_id": "9c5ddecb-53cb-4829-8068-54310388f1b1",
+      "claim_id": "C13",
+      "claim": "RSC has a molecular weight of ~1.1 MDa.",
+      "claim_type": "EXPLICIT",
+      "source": "RSC has a molecular weight of ~1.1 MDa and is composed of 17 proteins, with two copies of Rsc8 and one copy of either Rsc1 or Rsc2 (Cairns et al., 1996; Cairns et al., 1999).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated and supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:16:38.828348Z"
+    },
+    {
+      "id": "56185478-b93d-4995-b6c9-dfb92fca8bc0",
+      "content_id": "9c5ddecb-53cb-4829-8068-54310388f1b1",
+      "claim_id": "C14",
+      "claim": "RSC is composed of 17 proteins, with two copies of Rsc8 and one copy of either Rsc1 or Rsc2.",
+      "claim_type": "EXPLICIT",
+      "source": "RSC has a molecular weight of ~1.1 MDa and is composed of 17 proteins, with two copies of Rsc8 and one copy of either Rsc1 or Rsc2 (Cairns et al., 1996; Cairns et al., 1999).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated and supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:16:38.828348Z"
+    },
+    {
+      "id": "25065b2a-4c8e-4ab2-ad20-3a7aaeefef07",
+      "content_id": "9c5ddecb-53cb-4829-8068-54310388f1b1",
+      "claim_id": "C15",
+      "claim": "Seven proteins (Arp7, Arp9, Rsc6, Rsc8, Sfh1, Sth1 and Rsc9) are conserved in all eukaryotic SWI/SNF chromatin remodeling complexes.",
+      "claim_type": "EXPLICIT",
+      "source": "Seven of the proteins (Arp7, Arp9, Rsc6, Rsc8, Sfh1, Sth1 and Rsc9) are conserved in all eukaryotic SWI/SNF chromatin remodeling complexes, with Sth1 containing the ATPase domain that is responsible for the remodeling activity (Cairns et al., 1996; Saha et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated and supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:16:38.828348Z"
+    },
+    {
+      "id": "93a17150-db47-42aa-aa64-fb52eef91a42",
+      "content_id": "9c5ddecb-53cb-4829-8068-54310388f1b1",
+      "claim_id": "C16",
+      "claim": "Sth1 contains the ATPase domain that is responsible for the remodeling activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Seven of the proteins (Arp7, Arp9, Rsc6, Rsc8, Sfh1, Sth1 and Rsc9) are conserved in all eukaryotic SWI/SNF chromatin remodeling complexes, with Sth1 containing the ATPase domain that is responsible for the remodeling activity (Cairns et al., 1996; Saha et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated and supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:16:38.828348Z"
+    },
+    {
+      "id": "40b963f1-1a08-4a25-9c6b-5fd3e0e6f46e",
+      "content_id": "9c5ddecb-53cb-4829-8068-54310388f1b1",
+      "claim_id": "C17",
+      "claim": "Arp7, Arp9 and Rtt102 are shared between RSC and SWI/SNF.",
+      "claim_type": "EXPLICIT",
+      "source": "Three subunits, Arp7, Arp9 and Rtt102, are shared between RSC and SWI/SNF, and the two Arps have been found to be important for efficient remodeling activity of RSC (Clapier et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated and supported by a citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:16:38.828348Z"
+    },
+    {
+      "id": "e58a33ba-78e2-4402-9ce7-f601c9fb14d5",
+      "content_id": "9c5ddecb-53cb-4829-8068-54310388f1b1",
+      "claim_id": "C18",
+      "claim": "Arp7 and Arp9 have been found to be important for efficient remodeling activity of RSC.",
+      "claim_type": "EXPLICIT",
+      "source": "Three subunits, Arp7, Arp9 and Rtt102, are shared between RSC and SWI/SNF, and the two Arps have been found to be important for efficient remodeling activity of RSC (Clapier et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated and supported by a citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:16:38.828348Z"
+    },
+    {
+      "id": "9b0a6d02-79ec-474a-9067-4af95431b602",
+      "content_id": "9c5ddecb-53cb-4829-8068-54310388f1b1",
+      "claim_id": "C19",
+      "claim": "Swi3 (the SWI/SNF paralog of Rsc8) has been shown to be important for complex assembly and to likely play a scaffolding role.",
+      "claim_type": "EXPLICIT",
+      "source": "The SWI/SNF paralog of Rsc8, Swi3, has been shown to be important for complex assembly and to likely play a scaffolding role (Yang et al., 2007), while the paralog of Sfh1, Snf5, has been found to be important for remodeling activity (Sen et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated and supported by a citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:16:38.828348Z"
+    },
+    {
+      "id": "99f001fd-a1bf-4cb5-b747-840888dd7b37",
+      "content_id": "9c5ddecb-53cb-4829-8068-54310388f1b1",
+      "claim_id": "C20",
+      "claim": "Snf5 (the paralog of Sfh1) has been found to be important for remodeling activity.",
+      "claim_type": "EXPLICIT",
+      "source": "The SWI/SNF paralog of Rsc8, Swi3, has been shown to be important for complex assembly and to likely play a scaffolding role (Yang et al., 2007), while the paralog of Sfh1, Snf5, has been found to be important for remodeling activity (Sen et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated and supported by a citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:16:38.828348Z"
+    },
+    {
+      "id": "e08b8f2f-ae3a-4ff9-b445-7f56356bedcd",
+      "content_id": "9c5ddecb-53cb-4829-8068-54310388f1b1",
+      "claim_id": "C21",
+      "claim": "RSC contains six bromodomains (BrDs), two in RSC1/2 and Rsc4, and one in Rsc58 and Sth1.",
+      "claim_type": "EXPLICIT",
+      "source": "RSC contains six bromodomains (BrDs), two in RSC1/2 and Rsc4, and one in Rsc58 and Sth1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated in the text.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:16:38.828348Z"
+    },
+    {
+      "id": "71506bac-3bd7-4ac6-9a46-34f6b62aeeed",
+      "content_id": "9c5ddecb-53cb-4829-8068-54310388f1b1",
+      "claim_id": "C22",
+      "claim": "Rsc1/2 contain a BAH domain.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, Rsc1/2 also contain a BAH domain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated in the text.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:16:38.828348Z"
+    },
+    {
+      "id": "22ebb03d-1e75-4185-bfd6-228389dc3a62",
+      "content_id": "9c5ddecb-53cb-4829-8068-54310388f1b1",
+      "claim_id": "C23",
+      "claim": "The BrD and BAH domains of RSC have all been shown to interact with histones H3.",
+      "claim_type": "EXPLICIT",
+      "source": "The BrD and BAH domains of RSC have all been shown to interact with histones H3 (Chambers et al., 2013), with the BrDs favoring acetylated H3 tails (Zhang et al., 2010), and in vitro binding assays have shown that the affinity of RSC for acetylated H3 nucleosomes is indeed greater than for unmodified nucleosomes (Chatterjee et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated and supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:16:38.828348Z"
+    },
+    {
+      "id": "05f99453-f197-4d94-93b2-e8fad904f6b0",
+      "content_id": "9c5ddecb-53cb-4829-8068-54310388f1b1",
+      "claim_id": "C24",
+      "claim": "The BrDs of RSC favor acetylated H3 tails.",
+      "claim_type": "EXPLICIT",
+      "source": "The BrD and BAH domains of RSC have all been shown to interact with histones H3 (Chambers et al., 2013), with the BrDs favoring acetylated H3 tails (Zhang et al., 2010), and in vitro binding assays have shown that the affinity of RSC for acetylated H3 nucleosomes is indeed greater than for unmodified nucleosomes (Chatterjee et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated and supported by a citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:16:38.828348Z"
+    },
+    {
+      "id": "cd8b2448-1615-4c18-a1a8-5644030d069a",
+      "content_id": "9c5ddecb-53cb-4829-8068-54310388f1b1",
+      "claim_id": "C25",
+      "claim": "The affinity of RSC for acetylated H3 nucleosomes is greater than for unmodified nucleosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "The BrD and BAH domains of RSC have all been shown to interact with histones H3 (Chambers et al., 2013), with the BrDs favoring acetylated H3 tails (Zhang et al., 2010), and in vitro binding assays have shown that the affinity of RSC for acetylated H3 nucleosomes is indeed greater than for unmodified nucleosomes (Chatterjee et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated and supported by a citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:16:38.828348Z"
+    },
+    {
+      "id": "8dda7aac-0337-4507-a0dc-29df45d3718f",
+      "content_id": "9c5ddecb-53cb-4829-8068-54310388f1b1",
+      "claim_id": "C26",
+      "claim": "In vivo deletions or mutations in BrD and BAH domains have been shown to decrease cell survival.",
+      "claim_type": "EXPLICIT",
+      "source": "In vivo deletions or mutations in these domains have been shown to decrease cell survival (Cairns et al., 1999; Kasten et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated and supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:16:38.828348Z"
+    },
+    {
+      "id": "5c87273b-06e7-4aec-abbd-c0e064ba30e1",
+      "content_id": "9c5ddecb-53cb-4829-8068-54310388f1b1",
+      "claim_id": "C27",
+      "claim": "The fungal-specific subunits Npl6, Htl1, Ldb7, Rsc3 and Rsc30 have been proposed to form a structural module.",
+      "claim_type": "EXPLICIT",
+      "source": "The fungal-specific subunits Npl6, Htl1, Ldb7, Rsc3 and Rsc30, have been proposed to form a structural module (Wilson et al., 2006), with Npl6 and Htl1 interacting with Rsc8, and Ldb7 with Sth1 and Arp9.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated and supported by a citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:16:38.828348Z"
+    },
+    {
+      "id": "8df4f351-cc9f-42d5-b7df-95b2ba93f4dd",
+      "content_id": "9c5ddecb-53cb-4829-8068-54310388f1b1",
+      "claim_id": "C28",
+      "claim": "Npl6 and Htl1 interact with Rsc8.",
+      "claim_type": "EXPLICIT",
+      "source": "The fungal-specific subunits Npl6, Htl1, Ldb7, Rsc3 and Rsc30, have been proposed to form a structural module (Wilson et al., 2006), with Npl6 and Htl1 interacting with Rsc8, and Ldb7 with Sth1 and Arp9.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated and supported by a citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:16:38.828348Z"
+    },
+    {
+      "id": "22c197e9-f883-41d5-81ba-cbb01666739b",
+      "content_id": "9c5ddecb-53cb-4829-8068-54310388f1b1",
+      "claim_id": "C29",
+      "claim": "Ldb7 interacts with Sth1 and Arp9.",
+      "claim_type": "EXPLICIT",
+      "source": "The fungal-specific subunits Npl6, Htl1, Ldb7, Rsc3 and Rsc30, have been proposed to form a structural module (Wilson et al., 2006), with Npl6 and Htl1 interacting with Rsc8, and Ldb7 with Sth1 and Arp9.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated and supported by a citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:16:38.828348Z"
+    },
+    {
+      "id": "9344fbb2-1dd5-4209-a205-fc086afaff6c",
+      "content_id": "9c5ddecb-53cb-4829-8068-54310388f1b1",
+      "claim_id": "C30",
+      "claim": "Rsc3 and Rsc30 dimerize with each other and share a very similar architecture.",
+      "claim_type": "EXPLICIT",
+      "source": "Rsc3 and Rsc30, which dimerize with each other, share a very similar architecture (Angus-Hill et al., 2001), with an N-terminal Zinc cluster that has been shown to bind to the DNA sequence CGCG that preferentially occurs at gene promoters (Badis et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated and supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:16:38.828348Z"
+    },
+    {
+      "id": "fc3e0355-29c1-46c8-bbff-aaa63a5ad846",
+      "content_id": "9c5ddecb-53cb-4829-8068-54310388f1b1",
+      "claim_id": "C31",
+      "claim": "Rsc3 and Rsc30 have an N-terminal Zinc cluster that binds to the DNA sequence CGCG that preferentially occurs at gene promoters.",
+      "claim_type": "EXPLICIT",
+      "source": "Rsc3 and Rsc30, which dimerize with each other, share a very similar architecture (Angus-Hill et al., 2001), with an N-terminal Zinc cluster that has been shown to bind to the DNA sequence CGCG that preferentially occurs at gene promoters (Badis et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated and supported by a citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:16:38.828348Z"
+    },
+    {
+      "id": "9ef8055a-1ec3-4dd1-a70a-e88a2f873c7f",
+      "content_id": "9c5ddecb-53cb-4829-8068-54310388f1b1",
+      "claim_id": "C32",
+      "claim": "Deletion of Rsc3 has been shown to weaken the ability of RSC to maintain NFR in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "Deletion of Rsc3 has been shown to weaken the ability of RSC to maintain NFR in vivo (Badis et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated and supported by a citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:16:38.828348Z"
+    },
+    {
+      "id": "2c2b209b-69f3-4d37-8400-875cdfdbceb8",
+      "content_id": "9c5ddecb-53cb-4829-8068-54310388f1b1",
+      "claim_id": "C33",
+      "claim": "The structure of the core of RSC was determined to ~3.0 \u00c5 resolution.",
+      "claim_type": "EXPLICIT",
+      "source": "We determined the structure of the core to ~3.0 \u00c5 and mapped 14 proteins within this region: Rsc1/2, Rsc3, Rsc4, Rsc6, Rsc8 (two copies), Rsc9, Rsc30, Rsc58, Ldb7, Npl6, Htl1, Sfh1, and Sth1 (Figure 1B,C,F; Figure 1\u2014figure supplements 3, 4, 5, 6 and 7).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated and supported by cryo-EM data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:16:38.828348Z"
+    },
+    {
+      "id": "db9af855-d538-4290-aaa5-b6f52f1bf766",
+      "content_id": "9c5ddecb-53cb-4829-8068-54310388f1b1",
+      "claim_id": "C34",
+      "claim": "14 proteins were mapped within the core region of RSC: Rsc1/2, Rsc3, Rsc4, Rsc6, Rsc8 (two copies), Rsc9, Rsc30, Rsc58, Ldb7, Npl6, Htl1, Sfh1, and Sth1.",
+      "claim_type": "EXPLICIT",
+      "source": "We determined the structure of the core to ~3.0 \u00c5 and mapped 14 proteins within this region: Rsc1/2, Rsc3, Rsc4, Rsc6, Rsc8 (two copies), Rsc9, Rsc30, Rsc58, Ldb7, Npl6, Htl1, Sfh1, and Sth1 (Figure 1B,C,F; Figure 1\u2014figure supplements 3, 4, 5, 6 and 7).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated and supported by cryo-EM data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:16:38.828348Z"
+    },
+    {
+      "id": "080a8c04-0488-4462-a938-076ff1fcfecc",
+      "content_id": "9c5ddecb-53cb-4829-8068-54310388f1b1",
+      "claim_id": "C35",
+      "claim": "About 90% (151/168) of mappable crosslinks in the RSC core structure are within 38 \u00c5 distance.",
+      "claim_type": "EXPLICIT",
+      "source": "About 90% (151/168) of mappable crosslinks in our model of the RSC core structure are within 38 \u00c5 distance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated and supported by crosslinking mass spectrometry data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:16:38.828348Z"
+    },
+    {
+      "id": "c6616446-36f8-4702-bef7-a7685e307649",
+      "content_id": "9c5ddecb-53cb-4829-8068-54310388f1b1",
+      "claim_id": "C36",
+      "claim": "A 19 \u00c5 resolution map of RSC bound to a nucleosome core particle (NCP) modified with H3K4me3 and H3K(9/14/18)ac was obtained.",
+      "claim_type": "EXPLICIT",
+      "source": "In order to shed light on the interaction of RSC with its substrate, we also obtained a 19 \u00c5 resolution map of RSC bound to a nucleosome core particle (NCP) modified with H3K4me3 and H3K(9/14/18)ac (Figure 1D,E,F; Figure 1\u2014figure supplement 9).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated and supported by cryo-EM data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:16:38.828348Z"
+    },
+    {
+      "id": "0eecbd05-2907-4c8f-b982-d7e9314b49d6",
+      "content_id": "9c5ddecb-53cb-4829-8068-54310388f1b1",
+      "claim_id": "C37",
+      "claim": "No density for the ATPase domain of Sth1 was observed in the RSC-NCP structure.",
+      "claim_type": "EXPLICIT",
+      "source": "We do not observe any density for the ATPase domain of Sth1; however, based on the structure of the Sth1 homolog Snf2 bound to the NCP, we expect the catalytic subunit to bind super-helical location-2 (SHL2) (Li et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated and supported by cryo-EM data and inference from homologous structures.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:16:38.828348Z"
+    },
+    {
+      "id": "c2760ca9-c845-4ce6-bc7f-a32cee4f624b",
+      "content_id": "9c5ddecb-53cb-4829-8068-54310388f1b1",
+      "claim_id": "C38",
+      "claim": "Two distinct modes of NCP binding by RSC were observed: one where the whole tail is swiveled towards the nucleosome (termed swiveled), and one where only a small region emanating from the tail reaches towards the NCP (termed locked).",
+      "claim_type": "EXPLICIT",
+      "source": "Our data show two distinct modes of NCP binding by RSC, one where the whole tail is swiveled towards the nucleosome (termed swiveled), and one where only a small region emanating from the tail reaches towards the NCP (termed locked) (Figure 1D).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated and supported by cryo-EM data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:16:38.828348Z"
+    },
+    {
+      "id": "353a5c37-9438-4441-b815-c3f64a12aa16",
+      "content_id": "9c5ddecb-53cb-4829-8068-54310388f1b1",
+      "claim_id": "C39",
+      "claim": "The contacts made by the RSC core with the NCP are sufficient for nucleosome engagement.",
+      "claim_type": "EXPLICIT",
+      "source": "The fact that we observe nucleosome-bound RSC, even without a stable binding of the catalytic domain of Sth1 to the NCP, indicates that the contacts through the RSC core are sufficient for nucleosome engagement.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated and supported by inference from cryo-EM data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:16:38.828348Z"
+    },
+    {
+      "id": "84198fec-aa0f-40c5-8634-0463822b5d69",
+      "content_id": "9c5ddecb-53cb-4829-8068-54310388f1b1",
+      "claim_id": "C40",
+      "claim": "The contacts made by the RSC core with the NCP contribute to the processivity of the nucleosome remodeling function of the catalytic domain of Sth1.",
+      "claim_type": "EXPLICIT",
+      "source": "We propose that the contacts made by the RSC core with the NCP contribute to the processivity of the nucleosome remodeling function of the catalytic domain of Sth1 (see below).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated as a proposal based on structural observations.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:16:38.828348Z"
+    },
+    {
+      "id": "12f751e5-2e41-42af-875d-6c07056c71a7",
+      "content_id": "9c5ddecb-53cb-4829-8068-54310388f1b1",
+      "claim_id": "C41",
+      "claim": "An asymmetric Rsc8 dimer defines the backbone for the RSC complex, scaffolding the three core lobes and contacting all core proteins except Rsc3 and Rsc30.",
+      "claim_type": "EXPLICIT",
+      "source": "An asymmetric Rsc8 dimer defines the backbone for the complex, scaffolding the three core lobes and contacting all core proteins except Rsc3 and Rsc30 (Figure 2A,B).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated and supported by structural data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:16:38.828348Z"
+    },
+    {
+      "id": "1bd75724-bebe-49f8-ac76-0d92b5c64c90",
+      "content_id": "9c5ddecb-53cb-4829-8068-54310388f1b1",
+      "claim_id": "C42",
+      "claim": "Rsc8 has four conserved domains: SWIRM, ZZ, SANT, and coiled coil (CC).",
+      "claim_type": "EXPLICIT",
+      "source": "Rsc8 has four conserved domains, which are, from N to C terminus: SWIRM, ZZ, SANT, and coiled coil (CC) (Figure 2B).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated and supported by structural data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:16:38.828348Z"
+    },
+    {
+      "id": "f3a3b619-bba0-4a84-b621-42a623fb5472",
+      "content_id": "9c5ddecb-53cb-4829-8068-54310388f1b1",
+      "claim_id": "C43",
+      "claim": "Rsc8 homologs are critical for the integrity of their respective SWI/SNF chromatin remodelers.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous work has shown that Rsc8 homologs are critical for the integrity of their respective SWI/SNF chromatin remodelers, supporting the idea that Rsc8 and its homologs are the structural backbone for all SWI/SNF family of remodelers (Mashtalir et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated and supported by a citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:16:38.828348Z"
+    },
+    {
+      "id": "66d79f43-4970-4acc-b8cf-8521f7127721",
+      "content_id": "9c5ddecb-53cb-4829-8068-54310388f1b1",
+      "claim_id": "C44",
+      "claim": "The body lobe of RSC contains a helical bundle backbone, an \u03b1-solenoid belly and a \u03b2-sandwich hook.",
+      "claim_type": "EXPLICIT",
+      "source": "The body lobe of RSC contains a helical bundle backbone, an \u03b1-solenoid belly and a \u03b2-sandwich hook (Figure 3A).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated and supported by structural data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:16:38.828348Z"
+    },
+    {
+      "id": "f47c6f0b-6f8d-4dc4-8c8e-03718a4eec44",
+      "content_id": "9c5ddecb-53cb-4829-8068-54310388f1b1",
+      "claim_id": "C45",
+      "claim": "The helical bundle in the body lobe is made up of the two CC domains of Rsc8, along with the CC domains of Rsc6 and Htl1.",
+      "claim_type": "EXPLICIT",
+      "source": "The helical bundle is made up of the two CC domains of Rsc8, along with the CC domains of Rsc6 and Htl1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated and supported by structural data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:16:38.828348Z"
+    },
+    {
+      "id": "112f2660-744b-4b2e-8b93-75f88244a8c6",
+      "content_id": "9c5ddecb-53cb-4829-8068-54310388f1b1",
+      "claim_id": "C46",
+      "claim": "The \u03b1-solenoid belly is made up of the armadillo repeats of Rsc9 and the SwiB domain of Rsc6.",
+      "claim_type": "EXPLICIT",
+      "source": "This helical bundle interacts with the \u03b1-solenoid belly made up of the armadillo repeats of Rsc9 and the SwiB domain of Rsc6.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated and supported by structural data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:16:38.828348Z"
+    },
+    {
+      "id": "af5ae7c1-8263-4dbc-af9c-b1c96852cdf2",
+      "content_id": "9c5ddecb-53cb-4829-8068-54310388f1b1",
+      "claim_id": "C47",
+      "claim": "The Rsc3 and Rsc30 dimer appears to be absent in 75% of the RSC particles that were used in the high-resolution analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "The Rsc3 and Rsc30 dimer appears to be absent in 75% of the RSC particles that were used in the high-resolution analysis (Figure 3B), in agreement with previous findings showing that some RSC complexes lack Rsc3 and Rsc30 (Angus-Hill et al., 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated and supported by cryo-EM data and citation to previous literature.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:16:38.828348Z"
+    },
+    {
+      "id": "a93121d3-a7ad-4e16-89f6-49bfd70caed3",
+      "content_id": "9c5ddecb-53cb-4829-8068-54310388f1b1",
+      "claim_id": "C48",
+      "claim": "The presence or absence of the Rsc3 and Rsc30 dimer correlates with the presence or absence of most of the tail lobe.",
+      "claim_type": "EXPLICIT",
+      "source": "During our image analysis, we found that the presence or absence of the Rsc3 and Rsc30 dimer correlates well with the presence or absence of most of the tail lobe, making the Rsc3 and Rsc30 subunits the most likely constituents of this very flexible lobe (Figure 3C).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated and supported by cryo-EM data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:16:38.828348Z"
+    },
+    {
+      "id": "ecfd4095-6c66-4c99-b20c-53b154636cee",
+      "content_id": "9c5ddecb-53cb-4829-8068-54310388f1b1",
+      "claim_id": "C49",
+      "claim": "The arm lobe is made of the two SWIRM domains of Rsc8 held together by the Scaffold domain of Npl6 and the RPT1 and RPT2 domains of Sfh1.",
+      "claim_type": "EXPLICIT",
+      "source": "Four proteins contribute to most of the arm lobe, which is made of the two SWIRM domains of Rsc8 held together by the Scaffold domain of Npl6 and the RPT1 and RPT2 domains of Sfh1 (Figure 4A).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated and supported by structural data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:16:38.828348Z"
+    },
+    {
+      "id": "e9bfe5a1-9691-4e16-bfc6-127f4e5bcf35",
+      "content_id": "9c5ddecb-53cb-4829-8068-54310388f1b1",
+      "claim_id": "C50",
+      "claim": "The arm lobe makes major interactions with the nucleosome, contacting both the acidic patch and nucleosomal DNA.",
+      "claim_type": "EXPLICIT",
+      "source": "Within our RSC-NCP structure, the arm lobe makes major interactions with the nucleosome, contacting both the acidic patch and nucleosomal DNA (Figure 4B).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated and supported by cryo-EM data of RSC-NCP complex.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:16:38.828348Z"
+    },
+    {
+      "id": "a0d6bafa-988f-435a-8d3c-cbc079758b1f",
+      "content_id": "9c5ddecb-53cb-4829-8068-54310388f1b1",
+      "claim_id": "C51",
+      "claim": "The region of the arm that contacts the acidic patch appears to emanate from the C-terminal end of the RPT2 domain of Sfh1.",
+      "claim_type": "EXPLICIT",
+      "source": "The region of the arm that contacts the acidic patch appears to emanate from the C-terminal end of the RPT2 domain of Sfh1 (Figure 4B).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated and supported by cryo-EM data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:16:38.828348Z"
+    },
+    {
+      "id": "6083acd3-496f-48fa-a8cc-9d06b140f0a1",
+      "content_id": "9c5ddecb-53cb-4829-8068-54310388f1b1",
+      "claim_id": "C52",
+      "claim": "The C-terminal region of Sfh1 is highly conserved and contains nine lysine and arginine residues that are predicted to form a helix.",
+      "claim_type": "EXPLICIT",
+      "source": "This region of Sfh1 is highly conserved and contains nine lysine and arginine residues that are predicted to form a helix (Figure 4C).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated and supported by sequence analysis and prediction.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:16:38.828348Z"
+    },
+    {
+      "id": "738d7b40-faa0-466f-9723-a4d225dcfdeb",
+      "content_id": "9c5ddecb-53cb-4829-8068-54310388f1b1",
+      "claim_id": "C53",
+      "claim": "Deletion of Snf5 (SWI/SNF homolog of Sfh1) in yeast results in less efficient chromatin remodeling activity of the SWI/SNF complex.",
+      "claim_type": "EXPLICIT",
+      "source": "The involvement of this region in nucleosome binding is supported by the fact that deletion of Snf5 (SWI/SNF homolog of Sfh1) in yeast results in less efficient chromatin remodeling activity of the SWI/SNF complex (Sen et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated and supported by a citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:16:38.828348Z"
+    },
+    {
+      "id": "459e6c79-7856-44f4-a6ed-5333eb8e8683",
+      "content_id": "9c5ddecb-53cb-4829-8068-54310388f1b1",
+      "claim_id": "C54",
+      "claim": "The CRC domain of Npl6 is the likely candidate for binding the nucleosomal DNA.",
+      "claim_type": "EXPLICIT",
+      "source": "The WH domain of SMARCB has been shown to bind DNA and would be small enough to be accommodated within the extra density observed in our RSC-NCP structure, making the CRC domain of Npl6 the likely candidate for binding the nucleosomal DNA (Figure 4B) (Allen et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated and supported by inference from structural data and citation to previous literature.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:16:38.828348Z"
+    },
+    {
+      "id": "464601c7-9603-4f16-b2f2-be6f395ed153",
+      "content_id": "9c5ddecb-53cb-4829-8068-54310388f1b1",
+      "claim_id": "C55",
+      "claim": "Six RSC subunits contribute majorly to the head lobe: Rsc8, Rsc58, Sth1, Rsc4, and Rsc1/2.",
+      "claim_type": "EXPLICIT",
+      "source": "Six RSC subunits contribute majorly to the head lobe of RSC, which is made of the ZZ and SANT domains of the two copies of Rsc8, the BrD and Scaffold II domain of Rsc58, the Scaffold I and part of Scaffold II domain of Sth1, the \u03b2-barrel domain of Rsc4 and the anchor domain of Rsc1/2 (Figure 5A).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated and supported by structural data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:16:38.828348Z"
+    },
+    {
+      "id": "7c2feac7-3b3c-4192-95d9-5a829d59879b",
+      "content_id": "9c5ddecb-53cb-4829-8068-54310388f1b1",
+      "claim_id": "C56",
+      "claim": "Only Rsc8 and Sth1 are evolutionarily conserved among the subunits contributing to the head lobe.",
+      "claim_type": "EXPLICIT",
+      "source": "Of these proteins, only Rsc8 and Sth1 are evolutionarily conserved, suggesting that this region probably contributes to specific functions of the RSC complex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated and supported by evolutionary analysis.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:16:38.828348Z"
+    },
+    {
+      "id": "481bba72-e751-4d90-aece-799f293acfe1",
+      "content_id": "9c5ddecb-53cb-4829-8068-54310388f1b1",
+      "claim_id": "C57",
+      "claim": "Rsc58, Rsc4 and Rsc1/2 contain histone reader domains: BrD and BAH domains.",
+      "claim_type": "EXPLICIT",
+      "source": "Rsc58, Rsc4 and Rsc1/2 are notable for containing histone reader domains: BrD and BAH domains.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated and supported by domain analysis.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:16:38.828348Z"
+    },
+    {
+      "id": "bccca4ba-887f-4aa9-be63-8c3ef884d136",
+      "content_id": "9c5ddecb-53cb-4829-8068-54310388f1b1",
+      "claim_id": "C58",
+      "claim": "BrD and BAH domains have been shown to interact with acetylated lysines on histone tails, particularly H3.",
+      "claim_type": "EXPLICIT",
+      "source": "These domains have been shown to interact with acetylated lysines on histone tails, particularly H3 (Chambers et al., 2013; Chatterjee et al., 2011; Duan and Smerdon, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated and supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:16:38.828348Z"
+    },
+    {
+      "id": "0719c922-250a-447e-ba4b-c201d95d2d8e",
+      "content_id": "9c5ddecb-53cb-4829-8068-54310388f1b1",
+      "claim_id": "C59",
+      "claim": "Only the BrD of Rsc58 could be modeled in the structure.",
+      "claim_type": "EXPLICIT",
+      "source": "We could only model the BrD of Rsc58, while the remaining BrDs and the BAH domain extend from flexible linkers and are not visible in our structure (Figure 5A,B).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated and supported by structural data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:16:38.828348Z"
+    },
+    {
+      "id": "e29a04b8-4368-4eb2-bdcd-4a1cc0571cfa",
+      "content_id": "9c5ddecb-53cb-4829-8068-54310388f1b1",
+      "claim_id": "C60",
+      "claim": "The BrD-containing subunits in the RSC-nucleosome model are positioned so that these domains could reach the H3 tails of the engaged nucleosome.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on the position of the head relative to the arm lobe, the BrD-containing subunits in our RSC-nucleosome model are positioned so that these domains could reach the H3 tails of the engaged nucleosome (Figure 5B).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated and supported by structural modeling.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:16:38.828348Z"
+    },
+    {
+      "id": "09601e1e-ba3a-47ef-8c66-5b4447d818f5",
+      "content_id": "9c5ddecb-53cb-4829-8068-54310388f1b1",
+      "claim_id": "C61",
+      "claim": "Different bromodomains within RSC can recognize different acetylation sites.",
+      "claim_type": "EXPLICIT",
+      "source": "Microarray data have shown that different bromodomains within RSC can recognize different acetylation sites, which could allow the complex to be targeted to a wide variety of genomic loci (Zhang et al., 2010; Filippakopoulos et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated and supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:16:38.828348Z"
+    },
+    {
+      "id": "2e71d685-f246-489d-9190-7a7da5c2c24e",
+      "content_id": "9c5ddecb-53cb-4829-8068-54310388f1b1",
+      "claim_id": "C62",
+      "claim": "The yeast SWI/SNF and its human homolog BAF have just one BrD \u2013 on the ATPase subunit.",
+      "claim_type": "EXPLICIT",
+      "source": "The yeast SWI/SNF and its human homolog BAF have just one BrD \u2013 on the ATPase subunit \u2013 while human PBAF has eight, indicating that these domains may contribute to functional specificity of different classes within the SWI/SNF family.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated and supported by knowledge of complex composition.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:16:38.828348Z"
+    },
+    {
+      "id": "16dcd991-4197-4a56-ae8e-a60617b8b06f",
+      "content_id": "9c5ddecb-53cb-4829-8068-54310388f1b1",
+      "claim_id": "C63",
+      "claim": "Human PBAF has eight BrDs.",
+      "claim_type": "EXPLICIT",
+      "source": "The yeast SWI/SNF and its human homolog BAF have just one BrD \u2013 on the ATPase subunit \u2013 while human PBAF has eight, indicating that these domains may contribute to functional specificity of different classes within the SWI/SNF family.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated and supported by knowledge of complex composition.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:16:38.828348Z"
+    },
+    {
+      "id": "e23cd858-ba37-46b8-89b6-8629db19097c",
+      "content_id": "9c5ddecb-53cb-4829-8068-54310388f1b1",
+      "claim_id": "C64",
+      "claim": "Initial recruitment of RSC to a nucleosome likely occurs through interaction with H3 acetylation marks.",
+      "claim_type": "EXPLICIT",
+      "source": "Initial recruitment of RSC to a nucleosome likely occurs through interaction with H3 acetylation marks, given that RSC has an increased affinity for these nucleosomes (Kasten et al., 2004) and that most of them as flexible, facilitating an initial encounter.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated as a proposal based on structural observations and citation to previous literature.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:16:38.828348Z"
+    },
+    {
+      "id": "79d7579f-22f6-421e-a56a-4e98a2e4a6a1",
+      "content_id": "9c5ddecb-53cb-4829-8068-54310388f1b1",
+      "claim_id": "C65",
+      "claim": "RSC can engage the nucleosome through its arm region and place the SHL2 site of the nucleosome in position to bind the flexibly tethered catalytic domain of Sth1.",
+      "claim_type": "EXPLICIT",
+      "source": "RSC could then engage the nucleosome through its arm region and place the SHL2 site of the nucleosome in position to bind the flexibly tethered catalytic domain of Sth1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated as a proposal based on structural observations.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:16:38.828348Z"
+    },
+    {
+      "id": "20936959-38ea-40f9-b76b-60831d296468",
+      "content_id": "9c5ddecb-53cb-4829-8068-54310388f1b1",
+      "claim_id": "C66",
+      "claim": "The ATPase domain of Sth1 translocates the DNA around the histone octamer while the core of RSC holds onto the histone core through its direct interactions with histones.",
+      "claim_type": "EXPLICIT",
+      "source": "The ATPase domain would then be able to translocate the DNA around the histone octamer, while the core of RSC holds onto the histone core through its direct interactions with histones.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated as a proposal based on structural observations.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:16:38.828348Z"
+    },
+    {
+      "id": "ecdfce77-1230-4ca7-9a03-619728639a35",
+      "content_id": "9c5ddecb-53cb-4829-8068-54310388f1b1",
+      "claim_id": "C67",
+      "claim": "All SWI/SNF complexes have bromodomains to bind acetylated histones.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, all complexes have bromodomains to bind acetylated histones (minimally in the C-terminus of their catalytic subunit), a Sfh1 homolog to bind the acidic patch of the nucleosome, and a catalytic DNA translocase domain to remodel nucleosomes (Figure 2\u2014source data 1) (Clapier and Cairns, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated and supported by knowledge and citation.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:16:38.828348Z"
+    },
+    {
+      "id": "8a52be46-21b5-4340-8b3d-b11ec2d5feb5",
+      "content_id": "9c5ddecb-53cb-4829-8068-54310388f1b1",
+      "claim_id": "C68",
+      "claim": "All SWI/SNF complexes have a Sfh1 homolog to bind the acidic patch of the nucleosome.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, all complexes have bromodomains to bind acetylated histones (minimally in the C-terminus of their catalytic subunit), a Sfh1 homolog to bind the acidic patch of the nucleosome, and a catalytic DNA translocase domain to remodel nucleosomes (Figure 2\u2014source data 1) (Clapier and Cairns, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated and supported by knowledge and citation.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:16:38.828348Z"
+    },
+    {
+      "id": "6c3673e7-c1f5-4637-9ce3-5c24bad39d1e",
+      "content_id": "9c5ddecb-53cb-4829-8068-54310388f1b1",
+      "claim_id": "C69",
+      "claim": "All SWI/SNF complexes have a catalytic DNA translocase domain to remodel nucleosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, all complexes have bromodomains to bind acetylated histones (minimally in the C-terminus of their catalytic subunit), a Sfh1 homolog to bind the acidic patch of the nucleosome, and a catalytic DNA translocase domain to remodel nucleosomes (Figure 2\u2014source data 1) (Clapier and Cairns, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated and supported by knowledge and citation.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:16:38.828348Z"
+    },
+    {
+      "id": "cc6ad6d3-4f60-468c-a9e3-b4ba5d0febd7",
+      "content_id": "9c5ddecb-53cb-4829-8068-54310388f1b1",
+      "claim_id": "C70",
+      "claim": "Dimerization of the Rsc8 CC domains is most likely the first step in RSC complex assembly.",
+      "claim_type": "EXPLICIT",
+      "source": "According to this analysis, dimerization of the Rsc8 CC domains is most likely the first step in RSC complex assembly, followed by the binding of Rsc6 to this CC dimer.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated as an inference based on structural analysis and comparison to mammalian complexes.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:16:38.828348Z"
+    },
+    {
+      "id": "52bdebdf-c7eb-4b4c-9bfc-189f7d4050db",
+      "content_id": "9c5ddecb-53cb-4829-8068-54310388f1b1",
+      "claim_id": "C71",
+      "claim": "The binding of Rsc6 to the Rsc8 CC dimer follows the dimerization of Rsc8 CC domains in RSC assembly.",
+      "claim_type": "EXPLICIT",
+      "source": "According to this analysis, dimerization of the Rsc8 CC domains is most likely the first step in RSC complex assembly, followed by the binding of Rsc6 to this CC dimer.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated as an inference based on structural analysis.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:16:38.828348Z"
+    },
+    {
+      "id": "5ef76314-c6d8-4e1e-9f70-47723da3126b",
+      "content_id": "9c5ddecb-53cb-4829-8068-54310388f1b1",
+      "claim_id": "C72",
+      "claim": "The RPT1 and RPT2 motifs within Sfh1 bring the two SWIRM domains of Rsc8 together.",
+      "claim_type": "EXPLICIT",
+      "source": "The RPT1 and RPT2 motifs within Sfh1 would then bring the two SWIRM domains of Rsc8 together.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated as an inference based on structural analysis.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:16:38.828348Z"
+    },
+    {
+      "id": "3be9bec7-f72c-4b0d-989b-ac7a4637a6a0",
+      "content_id": "9c5ddecb-53cb-4829-8068-54310388f1b1",
+      "claim_id": "C73",
+      "claim": "Initial dimerization of SMARCC (the mammalian Rsc8 homolog) is followed by the sequential binding of SMARCD, SMARCB, and SMARCE to form the BAF core.",
+      "claim_type": "EXPLICIT",
+      "source": "This initial order of assembly is based on the assembly intermediates identified for the mammalian SWI/SNF complexes BAF and PBAF (Mashtalir et al., 2018) where initial dimerization of SMARCC (the mammalian Rsc8 homolog) is followed by the sequential binding of SMARCD (the mammalian Rsc6 homolog), SMARCB (the mammalian Sfh1 homolog), and SMARCE (no known RSC/yeast homolog) to form the BAF core.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated and supported by a citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:16:38.828348Z"
+    },
+    {
+      "id": "8fe5b292-7da1-42f5-8da8-a805d155def3",
+      "content_id": "9c5ddecb-53cb-4829-8068-54310388f1b1",
+      "claim_id": "C74",
+      "claim": "The armadillo repeat domain of Rsc9 binds the Rsc8 CC and Rsc6 to form most of the body lobe.",
+      "claim_type": "EXPLICIT",
+      "source": "The armadillo repeat domain of Rsc9 binds the Rsc8 CC and Rsc6 to form most of the body lobe, while the scaffolding domains (I and II) of Sth1 contribute to both the head and body regions and exit towards the flexible leg lobe.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated and supported by structural data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:16:38.828348Z"
+    },
+    {
+      "id": "04692e8c-c9c3-4623-9215-5e301ef3275d",
+      "content_id": "9c5ddecb-53cb-4829-8068-54310388f1b1",
+      "claim_id": "C75",
+      "claim": "The scaffolding domains (I and II) of Sth1 contribute to both the head and body regions and exit towards the flexible leg lobe.",
+      "claim_type": "EXPLICIT",
+      "source": "The armadillo repeat domain of Rsc9 binds the Rsc8 CC and Rsc6 to form most of the body lobe, while the scaffolding domains (I and II) of Sth1 contribute to both the head and body regions and exit towards the flexible leg lobe.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated and supported by structural data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:16:38.828348Z"
+    },
+    {
+      "id": "0cb15c8c-a4a3-4598-a399-bcccfcd53777",
+      "content_id": "9c5ddecb-53cb-4829-8068-54310388f1b1",
+      "claim_id": "C76",
+      "claim": "The integration of Sth1 into the complex leads to recruitment of the components of the ARP module (Arp7, Arp9 and Rtt102).",
+      "claim_type": "EXPLICIT",
+      "source": "The integration of Sth1 into the complex would also lead to recruitment of the components of the ARP module (Arp7, Arp9 and Rtt102).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated as an inference based on structural analysis.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:16:38.828348Z"
+    },
+    {
+      "id": "19b171b4-2503-4db5-a292-35eed5282139",
+      "content_id": "9c5ddecb-53cb-4829-8068-54310388f1b1",
+      "claim_id": "C77",
+      "claim": "The initial assembly process of RSC primarily involves evolutionarily conserved subunits and domains and is thus likely conserved for all SWI/SNF chromatin remodelers.",
+      "claim_type": "EXPLICIT",
+      "source": "It is important to note that this initial assembly process primarily involves evolutionarily conserved subunits and domains and is thus likely conserved for all SWI/SNF chromatin remodelers (Kadoch and Crabtree, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated and supported by inference and citation.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:16:38.828348Z"
+    },
+    {
+      "id": "1e6cd395-8365-4090-b2a1-f75aff95c619",
+      "content_id": "9c5ddecb-53cb-4829-8068-54310388f1b1",
+      "claim_id": "C78",
+      "claim": "The structural similarities between yeast SWI/SNF and RSC complexes support the proposed assembly model.",
+      "claim_type": "EXPLICIT",
+      "source": "This model is supported by the structural similarities we observe between the yeast SWI/SNF and RSC complexes (and in agreement with a recently reported structure of yeast SWI/SNF bound to a nucleosome by Han et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated and supported by structural comparison and citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:16:38.828348Z"
+    },
+    {
+      "id": "296e9f5d-9a92-4a95-a53c-aa94b301cbee",
+      "content_id": "9c5ddecb-53cb-4829-8068-54310388f1b1",
+      "claim_id": "C79",
+      "claim": "RSC assembly continues with the addition of the yeast specific factor Npl6, which completes the arm lobe.",
+      "claim_type": "EXPLICIT",
+      "source": "In the case of RSC, assembly would then continue with the addition of the yeast specific factor Npl6, which completes the arm lobe, and RSC-specific subunits Htl1, Rsc58, Rsc1/2, Rsc4, and Ldb7.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated as an inference based on structural analysis.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:16:38.828348Z"
+    },
+    {
+      "id": "fd41d539-d1c9-4fc8-a4e2-8dd84c2f072a",
+      "content_id": "9c5ddecb-53cb-4829-8068-54310388f1b1",
+      "claim_id": "C80",
+      "claim": "The last two subunits to be recruited to the RSC complex are likely the RSC-specific subunits Rsc3 and Rsc30, which form the tail module.",
+      "claim_type": "EXPLICIT",
+      "source": "The last two subunits to be recruited to the complex are likely the RSC-specific subunits Rsc3 and Rsc30, which form the tail module.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated as an inference based on structural analysis.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:16:38.828348Z"
+    },
+    {
+      "id": "c521b640-eb7e-4c6c-93ba-ab1b3b787583",
+      "content_id": "9c5ddecb-53cb-4829-8068-54310388f1b1",
+      "claim_id": "C81",
+      "claim": "RSC is composed of five main lobes: three that form a relatively rigid core (head, body and arm) and two that are flexibly attached (leg and tail).",
+      "claim_type": "EXPLICIT",
+      "source": "We found that RSC is composed of five main lobes, three that form a relatively rigid core (head, body and arm) and two that are flexibly attached (leg and tail) (Figure 1A; Figure 1\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is directly stated and supported by cryo-EM data shown in Figure 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:16:38.828348Z"
+    },
+    {
+      "id": "97497ede-5875-4d30-8c64-d498a0823dd7",
+      "content_id": "9c5ddecb-53cb-4829-8068-54310388f1b1",
+      "claim_id": "C82",
+      "claim": "Yeast SWI/SNF has a rigid core sharing some similar features with RSC and a flexible leg that occupies similar overall positions.",
+      "claim_type": "EXPLICIT",
+      "source": "Our negative stain analysis of the yeast SWI/SNF complex shows that, like RSC, it has a rigid core sharing some similar features, and a flexible leg that occupies similar overall positions (Figure 1\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is directly stated and supported by negative stain EM data shown in Figure 1\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:16:38.828348Z"
+    },
+    {
+      "id": "3b8a5065-60be-467e-89b4-1c5d8d15b838",
+      "content_id": "9c5ddecb-53cb-4829-8068-54310388f1b1",
+      "claim_id": "C83",
+      "claim": "SWI/SNF lacks a tail lobe, indicating that while RSC and SWI/SNF share a conserved core architecture, RSC features additional regulatory domains.",
+      "claim_type": "EXPLICIT",
+      "source": "However, SWI/SNF lacks a tail lobe, indicating that while RSC and SWI/SNF share a conserved core architecture, RSC features additional regulatory domains (Figure 1\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is directly stated and supported by comparison of structures shown in Figure 1\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:16:38.828348Z"
+    },
+    {
+      "id": "687f3835-b1f7-42f5-ae97-b41ab556e1ca",
+      "content_id": "9c5ddecb-53cb-4829-8068-54310388f1b1",
+      "claim_id": "C84",
+      "claim": "780 unique inter-molecular links between different subunits and 617 unique intra-molecular links within the same subunits were identified by crosslinking mass spectrometry.",
+      "claim_type": "EXPLICIT",
+      "source": "We identified 780 unique inter-molecular links between different subunits and 617 unique intra-molecular links within the same subunits.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated and supported by crosslinking mass spectrometry data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:16:38.828348Z"
+    },
+    {
+      "id": "fa84af21-6d78-4bbb-8147-95a8cdac53c7",
+      "content_id": "9c5ddecb-53cb-4829-8068-54310388f1b1",
+      "claim_id": "C85",
+      "claim": "The core of RSC binds the nucleosome in a well-defined orientation that places the catalytic domain of Sth1 in a position that would allow it to interact with the SHL2.",
+      "claim_type": "EXPLICIT",
+      "source": "Altogether, the core of RSC appears to bind the nucleosome in a well-defined orientation that in our docking-based model places the catalytic domain of Sth1 in a position that would allow it to interact with the SHL2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated and supported by structural modeling.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:16:38.828348Z"
+    },
+    {
+      "id": "7d36dae4-45e0-4a21-b600-c551c2fb0abd",
+      "content_id": "9c5ddecb-53cb-4829-8068-54310388f1b1",
+      "claim_id": "C86",
+      "claim": "The RSC-NCP structure is a likely intermediate in a pathway to full engagement of a nucleosome by RSC.",
+      "claim_type": "EXPLICIT",
+      "source": "It also makes our structure a likely intermediate in a pathway to full engagement of a nucleosome by RSC.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated as an inference based on structural observations.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:16:38.828348Z"
+    },
+    {
+      "id": "5fa0a80e-6864-4ff4-b1c9-a5423bb1a40c",
+      "content_id": "9c5ddecb-53cb-4829-8068-54310388f1b1",
+      "claim_id": "C87",
+      "claim": "Five of the proteins defining the RSC core (Rsc8, Rsc6, Rsc9, Sth1, and Sfh1) are evolutionarily conserved throughout the eukaryotic SWI/SNF family and comprise 72% of the mass of the core density.",
+      "claim_type": "EXPLICIT",
+      "source": "Five of these proteins (Rsc8, Rsc6, Rsc9, Sth1, and Sfh1) are evolutionarily conserved throughout the eukaryotic SWI/SNF family, and comprise 72% of the mass of the core density (Figure 2A; Figure 2\u2014source data 1) (Wang et al., 1996; Kadoch and Crabtree, 2015).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is directly stated and supported by structural data and citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:16:38.828348Z"
+    },
+    {
+      "id": "ddab5ebb-c265-4d74-96fb-253ce459d4f6",
+      "content_id": "9c5ddecb-53cb-4829-8068-54310388f1b1",
+      "claim_id": "C88",
+      "claim": "The SWIRM domains of Rsc8 are in the arm lobe.",
+      "claim_type": "EXPLICIT",
+      "source": "The SWIRM domains are in the arm, the ZZ and SANT domains in the head and the CC domains in the body.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated and supported by structural data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:16:38.828348Z"
+    },
+    {
+      "id": "18faba6a-9f90-4e1e-8418-d7829f734633",
+      "content_id": "9c5ddecb-53cb-4829-8068-54310388f1b1",
+      "claim_id": "C89",
+      "claim": "The ZZ and SANT domains of Rsc8 are in the head lobe.",
+      "claim_type": "EXPLICIT",
+      "source": "The SWIRM domains are in the arm, the ZZ and SANT domains in the head and the CC domains in the body.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated and supported by structural data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:16:38.828348Z"
+    },
+    {
+      "id": "04085f2d-1c70-413d-882f-ada6eeef207a",
+      "content_id": "9c5ddecb-53cb-4829-8068-54310388f1b1",
+      "claim_id": "C90",
+      "claim": "The CC domains of Rsc8 are in the body lobe.",
+      "claim_type": "EXPLICIT",
+      "source": "The SWIRM domains are in the arm, the ZZ and SANT domains in the head and the CC domains in the body.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated and supported by structural data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:16:38.828348Z"
+    },
+    {
+      "id": "d3428f56-802d-40d3-9207-df423970052d",
+      "content_id": "9c5ddecb-53cb-4829-8068-54310388f1b1",
+      "claim_id": "C91",
+      "claim": "Most of the structured regions of Rsc6 are in the body lobe, except for a small region at the very C-terminus (residues 445\u2013483).",
+      "claim_type": "EXPLICIT",
+      "source": "Most of the structured regions of Rsc6 are in the body, except for a small region at the very C-terminus of the protein (residues 445\u2013483), which occupies the space in between the three lobes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated and supported by structural data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:16:38.828348Z"
+    },
+    {
+      "id": "3c47cc90-2918-40f0-b39f-2c21651c9b9b",
+      "content_id": "9c5ddecb-53cb-4829-8068-54310388f1b1",
+      "claim_id": "C92",
+      "claim": "Rsc9 is primarily located in the body lobe, but a small region at the very N-terminus (residues 28\u201380) interacts with the surface of the arm and head lobes.",
+      "claim_type": "EXPLICIT",
+      "source": "Rsc9 also primarily located in the body, but for a small region at the very N-terminus terminus (residues 28\u201380) interacts with the surface of the arm and head lobes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated and supported by structural data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:16:38.828348Z"
+    },
+    {
+      "id": "7e53a821-dc52-49f0-a11e-98fd2af57bdf",
+      "content_id": "9c5ddecb-53cb-4829-8068-54310388f1b1",
+      "claim_id": "C93",
+      "claim": "The N-terminal BrD and C-terminal Scaffold II domain of Rsc58 are in the head lobe, while the central Scaffold I domain is in the body lobe.",
+      "claim_type": "EXPLICIT",
+      "source": "The N-terminal BrD and C-terminal Scaffold II domain of Rsc58 are in the head lobe, while the central Scaffold I domain is in the body lobe.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated and supported by structural data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:16:38.828348Z"
+    },
+    {
+      "id": "a81acae2-41eb-44a5-a029-cd5d882a3ff2",
+      "content_id": "9c5ddecb-53cb-4829-8068-54310388f1b1",
+      "claim_id": "C94",
+      "claim": "Sth1 spans three lobes: the head, body and leg.",
+      "claim_type": "EXPLICIT",
+      "source": "Sth1 spans three lobes, the head, body and leg.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated and supported by structural data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:16:38.828348Z"
+    },
+    {
+      "id": "44e75bdf-4739-4ee7-b1b4-510c73b5ffd8",
+      "content_id": "9c5ddecb-53cb-4829-8068-54310388f1b1",
+      "claim_id": "C95",
+      "claim": "The Scaffold I domain of Sth1 is in the head lobe.",
+      "claim_type": "EXPLICIT",
+      "source": "The Scaffold I domain is in the head while the Scaffold II domain goes between the body to the head and back to the body.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated and supported by structural data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:16:38.828348Z"
+    },
+    {
+      "id": "e863c7b0-6623-4f42-9c63-1ecbe925bcef",
+      "content_id": "9c5ddecb-53cb-4829-8068-54310388f1b1",
+      "claim_id": "C96",
+      "claim": "The Scaffold II domain of Sth1 goes between the body to the head and back to the body.",
+      "claim_type": "EXPLICIT",
+      "source": "The Scaffold I domain is in the head while the Scaffold II domain goes between the body to the head and back to the body.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated and supported by structural data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:16:38.828348Z"
+    },
+    {
+      "id": "3eb49fb3-cf11-48ba-a3d5-23900b483411",
+      "content_id": "9c5ddecb-53cb-4829-8068-54310388f1b1",
+      "claim_id": "C97",
+      "claim": "Sth1 continues from the Scaffold II domain to the HSA helix that, along with Arp7, Arp9 and Rtt102, form the leg lobe.",
+      "claim_type": "EXPLICIT",
+      "source": "From the RSC-NCP model, we observe that Sth1 then continues from the Scaffold II domain to the HSA helix that, along with Arp7, Arp9 and Rtt102, form the leg lobe (Figure 2D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is directly stated and supported by structural modeling shown in Figure 2D.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:16:38.828348Z"
+    },
+    {
+      "id": "756073e5-66c6-4cf7-bf36-87bd5c21e6fd",
+      "content_id": "9c5ddecb-53cb-4829-8068-54310388f1b1",
+      "claim_id": "C98",
+      "claim": "From the HSA helix, Sth1 continues into the ATPase domain that would putatively bind the nucleosome at position SHL2.",
+      "claim_type": "EXPLICIT",
+      "source": "From the HSA helix, Sth1 continues into the ATPase domain that would putatively bind the nucleosome at position SHL2 (Figure 2D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is directly stated and supported by structural modeling shown in Figure 2D.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:16:38.828348Z"
+    },
+    {
+      "id": "50323322-e82f-4a92-ac6c-e41dfb5d2e5d",
+      "content_id": "9c5ddecb-53cb-4829-8068-54310388f1b1",
+      "claim_id": "C99",
+      "claim": "The hook region off the belly of the body lobe contains \u03b2-strands from Rsc9 and Rsc6 that come together to form a \u03b2-sandwich.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, the hook region off the belly contains \u03b2-strands from Rsc9 and Rsc6 that come to together to form a b-sandwich.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated and supported by structural data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:16:38.828348Z"
+    },
+    {
+      "id": "cc4a6f1b-3434-42e9-9c3f-b9c64a0b2b3f",
+      "content_id": "9c5ddecb-53cb-4829-8068-54310388f1b1",
+      "claim_id": "C100",
+      "claim": "The RFX-type WH of Rsc9 is likely part of the tail.",
+      "claim_type": "EXPLICIT",
+      "source": "Given the position of the Rsc9 sequences model in our structure, it is likely that the RFX-type WH of Rsc9 is part of the tail.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated as an inference based on structural data.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:16:38.828348Z"
+    },
+    {
+      "id": "a1151109-9ada-4e97-9419-5be205cea15a",
+      "content_id": "9c5ddecb-53cb-4829-8068-54310388f1b1",
+      "claim_id": "C101",
+      "claim": "A segment of Rsc58 binds between the belly and the backbone of the body lobe.",
+      "claim_type": "EXPLICIT",
+      "source": "These include a segment of Rsc58 that binds between the belly and the backbone, a small segment of Sth1 that binds to the surface of the helical bundle, and a small segment of Sth1 that binds the surface of the armadillo repeat (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is directly stated and supported by structural data shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:16:38.828348Z"
+    },
+    {
+      "id": "335306a6-519a-4d91-8a42-ec704d69574b",
+      "content_id": "9c5ddecb-53cb-4829-8068-54310388f1b1",
+      "claim_id": "C102",
+      "claim": "The Rsc3 and Rsc30 dimer binds the surface of the Rsc9 armadillo repeat on top of Sth1.",
+      "claim_type": "EXPLICIT",
+      "source": "The last two components of the body are the Rsc3 and Rsc30 dimer that binds the surface of the Rsc9 armadillo repeat on top of Sth1 (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is directly stated and supported by structural data shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:16:38.828348Z"
+    },
+    {
+      "id": "135d533a-9367-4682-8605-ac19d79b5564",
+      "content_id": "9c5ddecb-53cb-4829-8068-54310388f1b1",
+      "claim_id": "C103",
+      "claim": "Some RSC complexes lack Rsc3 and Rsc30.",
+      "claim_type": "EXPLICIT",
+      "source": "The Rsc3 and Rsc30 dimer appears to be absent in 75% of the RSC particles that were used in the high-resolution analysis (Figure 3B), in agreement with previous findings showing that some RSC complexes lack Rsc3 and Rsc30 (Angus-Hill et al., 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated and supported by citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:16:38.828348Z"
+    },
+    {
+      "id": "c7dce50d-3266-4e04-bc93-240937bd769a",
+      "content_id": "9c5ddecb-53cb-4829-8068-54310388f1b1",
+      "claim_id": "C104",
+      "claim": "Rsc3 and Rsc30 subunits are the most likely constituents of the very flexible tail lobe.",
+      "claim_type": "EXPLICIT",
+      "source": "During our image analysis, we found that the presence or absence of the Rsc3 and Rsc30 dimer correlates well with the presence or absence of most of the tail lobe, making the Rsc3 and Rsc30 subunits the most likely constituents of this very flexible lobe (Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is directly stated and supported by cryo-EM data analysis shown in Figure 3C.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:16:38.828348Z"
+    },
+    {
+      "id": "f8bb5878-8181-4672-bb76-deefba79e474",
+      "content_id": "9c5ddecb-53cb-4829-8068-54310388f1b1",
+      "claim_id": "C105",
+      "claim": "There are no equivalent subunits to Rsc3 and Rsc30 in the yeast SWI-SNF complex.",
+      "claim_type": "EXPLICIT",
+      "source": "The fact that there are no equivalent subunits in the yeast SWI-SNF complex, for which the tail domain is missing, further supports this assignment (Figure 1\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is directly stated and supported by comparison shown in Figure 1\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:16:38.828348Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "ec42523a-99ea-4770-b620-44d4fdf0cf91",
+      "content_id": "9c5ddecb-53cb-4829-8068-54310388f1b1",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "RSC has a tripartite rigid core (head, body, arm) scaffolded by an asymmetric Rsc8 dimer, with two flexible lobes (leg and tail). The core was resolved to ~3.0 \u00c5 and contains 14 mapped proteins, with five evolutionarily conserved subunits comprising 72% of the core mass.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C2, C33, C34, C81, and C87 are directly supported by high-resolution cryo-EM structural data (3.0 \u00c5 resolution) with detailed protein mapping and validation through crosslinking mass spectrometry (C35: 90% of crosslinks within expected distance). The structural organization is well-documented with appropriate resolution and validation metrics.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:16:38.828348Z"
+    },
+    {
+      "id": "538f8be8-0806-4b18-978a-1a2fa26cc6a8",
+      "content_id": "9c5ddecb-53cb-4829-8068-54310388f1b1",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The flexible ATPase lobe (leg) is composed of Sth1 (including HSA helix), Arp7, Arp9, and Rtt102, with Sth1 spanning multiple lobes through its Scaffold I and II domains.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C94-C97 are supported by structural data from the RSC-NCP model showing the organization of the leg lobe and Sth1 domain architecture. The flexibility of this lobe is documented through 3D classification showing multiple conformations (C38, Figure 3C).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:16:38.828348Z"
+    },
+    {
+      "id": "74ea93e5-06a6-4126-a20c-bbea43e6f378",
+      "content_id": "9c5ddecb-53cb-4829-8068-54310388f1b1",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "RSC engages nucleosomes through its arm lobe (Rsc8 SWIRM domains, Sfh1, Npl6), contacting both the acidic patch via Sfh1 C-terminus and nucleosomal DNA likely via Npl6 CRC domain. Two distinct binding modes (swiveled and locked) were observed at 19 \u00c5 resolution.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C4, C36, C38-C39, C49-C51, C54 describe nucleosome engagement supported by 19 \u00c5 resolution cryo-EM data. However, the resolution is insufficient to definitively assign specific residues or domains to nucleosome contacts. The assignment of Npl6 CRC domain to DNA binding (C54) is based on inference and homology rather than direct observation. The ATPase domain of Sth1 was not resolved (C37), limiting mechanistic interpretation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:16:38.828348Z"
+    },
+    {
+      "id": "82a2c2a2-1446-47d7-bfc6-527fff614db0",
+      "content_id": "9c5ddecb-53cb-4829-8068-54310388f1b1",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Crosslinking mass spectrometry validation identified 780 inter-molecular and 617 intra-molecular unique links, with 90% of mappable crosslinks within the expected 38 \u00c5 distance in the RSC core structure.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C35 and C84 are supported by crosslinking mass spectrometry data with appropriate validation showing good agreement between observed crosslinks and the structural model. The 90% agreement rate is reasonable given experimental constraints and provides strong orthogonal validation of the cryo-EM structure.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:16:38.828348Z"
+    },
+    {
+      "id": "e7a19012-2774-40a6-b061-b7d5d426458c",
+      "content_id": "9c5ddecb-53cb-4829-8068-54310388f1b1",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "An asymmetric Rsc8 dimer with four conserved domains (SWIRM, ZZ, SANT, CC) serves as the structural backbone, scaffolding the three core lobes and contacting all core proteins except Rsc3 and Rsc30.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C41-C43, C88-C90 are well-supported by high-resolution structural data showing Rsc8 domain organization and interactions. The scaffolding role is consistent with previous biochemical studies (C43, Mashtalir et al., 2018) and directly visualized in the structure.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:16:38.828348Z"
+    },
+    {
+      "id": "a129bf50-217c-4349-923d-d4488c9f88c6",
+      "content_id": "9c5ddecb-53cb-4829-8068-54310388f1b1",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The body lobe contains a helical bundle backbone (Rsc8 CC, Rsc6 CC, Htl1 CC), an \u03b1-solenoid belly (Rsc9 armadillo repeats, Rsc6 SwiB), and a \u03b2-sandwich hook (Rsc9 and Rsc6 \u03b2-strands), with additional contributions from Rsc58 and Sth1 segments.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C44-C46, C99, C101-C102 are supported by high-resolution structural data (body lobe refined to 2.96-3.48 \u00c5) with clear visualization of secondary structure elements and domain organization. The assignments are consistent with sequence predictions and domain annotations.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:16:38.828348Z"
+    },
+    {
+      "id": "dfad4af2-ae8d-4823-9b2c-b700ffaa93f7",
+      "content_id": "9c5ddecb-53cb-4829-8068-54310388f1b1",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Rsc3 and Rsc30 dimer is absent in 75% of RSC particles and constitutes the flexible tail lobe. The presence/absence of this dimer correlates with tail lobe occupancy, and these subunits have no equivalents in yeast SWI/SNF.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C47-C48, C103-C105 are supported by 3D classification data showing heterogeneity in Rsc3/Rsc30 occupancy and correlation with tail lobe density. The assignment is further supported by comparison with SWI/SNF structure (C82-C83, C105) and previous biochemical data (C103, Angus-Hill et al., 2001).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:16:38.828348Z"
+    },
+    {
+      "id": "72e9ddd1-144e-4b58-8431-d5c2d4e4dafd",
+      "content_id": "9c5ddecb-53cb-4829-8068-54310388f1b1",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The C-terminal region of Sfh1 is highly conserved, contains nine lysine and arginine residues predicted to form a helix, and is implicated in nucleosome binding based on deletion studies of its SWI/SNF homolog Snf5.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C52-C53 are supported by sequence conservation analysis, secondary structure prediction, and functional data from deletion studies (Sen et al., 2017). The structural context from the RSC-NCP model (C51) provides additional support for the proposed nucleosome-binding role.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:16:38.828348Z"
+    },
+    {
+      "id": "e6cb8c54-79aa-4b1d-8321-197c0c17a649",
+      "content_id": "9c5ddecb-53cb-4829-8068-54310388f1b1",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The head lobe contains six subunits (Rsc8, Rsc58, Sth1, Rsc4, Rsc1/2) with multiple histone reader domains (BrDs and BAH). Only Rsc8 and Sth1 are evolutionarily conserved. The BrD-containing subunits are positioned to potentially reach H3 tails of engaged nucleosomes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C55-C61 are supported by structural data (head lobe refined to 3.07-3.14 \u00c5) showing domain organization and positioning. Only one BrD (Rsc58) was resolved (C59), with others extending from flexible linkers. The positioning analysis (C60) is based on modeling and is reasonable but not directly observed. Previous biochemical data (C58, C61) support the functional roles of these domains.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:16:38.828348Z"
+    },
+    {
+      "id": "d03ad278-7006-4987-be2e-8c3a5cc5d61b",
+      "content_id": "9c5ddecb-53cb-4829-8068-54310388f1b1",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "A mechanistic model proposes that RSC recruitment occurs via H3 acetylation mark recognition, followed by arm lobe engagement positioning the SHL2 site for Sth1 ATPase binding, with the core maintaining histone contacts during DNA translocation. The observed RSC-NCP structure represents an intermediate in the engagement pathway.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C64-C66, C40, C86 present a mechanistic model based on structural observations and previous biochemical data. However, these are explicitly stated as proposals and inferences (evidence_type includes SPECULATION, INFERENCE). The model is reasonable but lacks direct experimental validation of the proposed sequential steps. The absence of resolved ATPase domain (C37) limits mechanistic conclusions. Additional functional studies would be needed to validate this pathway.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:16:38.828348Z"
+    },
+    {
+      "id": "fc1162c1-7b21-49e0-9917-781b9f2c81da",
+      "content_id": "9c5ddecb-53cb-4829-8068-54310388f1b1",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "A conserved assembly pathway is proposed where Rsc8 CC dimerization is followed by sequential binding of Rsc6, Sfh1, Rsc9, and Sth1 (with ARP module), then yeast-specific factors (Npl6, Htl1, Rsc58, Rsc1/2, Rsc4, Ldb7), and finally Rsc3/Rsc30. This pathway is conserved across SWI/SNF family members.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C70-C80 propose an assembly model based on structural analysis and comparison with mammalian SWI/SNF assembly intermediates (C73, Mashtalir et al., 2018). The model is well-supported by the observed protein-protein contacts in the structure and structural similarities between RSC and SWI/SNF (C78, C82-C83). However, the sequential order is inferred rather than directly demonstrated for RSC. The conservation argument (C77) is reasonable given the structural conservation of core subunits (C87).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:16:38.828348Z"
+    },
+    {
+      "id": "32f3d0ff-64c1-4910-ac2b-3253cf65ff4e",
+      "content_id": "9c5ddecb-53cb-4829-8068-54310388f1b1",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "All SWI/SNF complexes share conserved features: bromodomains for acetylated histone binding, Sfh1 homolog for acidic patch binding, and catalytic DNA translocase domain for nucleosome remodeling.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C67-C69 are supported by knowledge of SWI/SNF family conservation and citation to previous literature (Clapier and Cairns, 2009). The structural data from RSC and comparison with SWI/SNF (C82-C83) provide additional support for this conservation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:16:38.828348Z"
+    },
+    {
+      "id": "9840e608-191f-4f0a-9846-3498255fb116",
+      "content_id": "9c5ddecb-53cb-4829-8068-54310388f1b1",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Yeast SWI/SNF has a rigid core sharing features with RSC and a flexible leg in similar positions, but lacks a tail lobe, indicating RSC has additional regulatory domains.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C82-C83 are supported by negative stain EM analysis comparing RSC and SWI/SNF structures. The absence of tail lobe in SWI/SNF is consistent with the lack of Rsc3/Rsc30 equivalents (C105) and supports the assignment of these subunits to the tail module.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:16:38.828348Z"
+    },
+    {
+      "id": "2e1f258f-c12a-4b7d-8b67-4d0716f253c1",
+      "content_id": "9c5ddecb-53cb-4829-8068-54310388f1b1",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Background information on chromatin remodeler families, RSC composition, function, and subunit properties based on previous literature.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5-C32 provide background information from the introduction, all supported by appropriate citations to previous literature. These establish the context for the current structural study but do not represent new findings from this work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:16:38.828348Z"
+    },
+    {
+      "id": "067bada8-729f-4bb8-a338-3cbd18e87b52",
+      "content_id": "9c5ddecb-53cb-4829-8068-54310388f1b1",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Yeast SWI/SNF and human BAF have one bromodomain (on ATPase subunit), while human PBAF has eight, suggesting bromodomains contribute to functional specificity within the SWI/SNF family.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C62-C63 are supported by knowledge of complex composition across species. The inference about functional specificity is reasonable given the differential distribution of bromodomains, though direct functional evidence is not provided in this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:16:38.828348Z"
+    },
+    {
+      "id": "dfffb026-191e-4b1b-ab5b-d568b8b34394",
+      "content_id": "9c5ddecb-53cb-4829-8068-54310388f1b1",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "The RSC core binds nucleosomes in a defined orientation that would position the Sth1 catalytic domain at SHL2, though the ATPase domain itself was not resolved in the structure.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C85, C37, C98 describe the positioning of the ATPase domain based on modeling using the Snf2-NCP structure. The core positioning is supported by 19 \u00c5 resolution data, but the ATPase domain placement is inferred rather than directly observed. The model is reasonable but represents a hypothesis requiring validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:16:38.828348Z"
+    },
+    {
+      "id": "b85f440a-d801-4cea-ae64-47f075ef6d25",
+      "content_id": "9c5ddecb-53cb-4829-8068-54310388f1b1",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Detailed localization of Rsc6, Rsc9, and Rsc58 domains across multiple lobes of the RSC structure.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C91-C93 describe specific domain localizations supported by high-resolution structural data with clear density for these regions. The assignments are consistent with domain predictions and crosslinking data.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:16:38.828348Z"
+    },
+    {
+      "id": "02a0efed-e097-4107-a83a-d51c49016ff3",
+      "content_id": "9c5ddecb-53cb-4829-8068-54310388f1b1",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "The RFX-type WH domain of Rsc9 is likely part of the tail lobe based on the position of modeled Rsc9 sequences.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C100 is an inference based on the position of modeled Rsc9 sequences. The RFX-type WH domain was not directly resolved in the structure, making this assignment tentative. The correlation between Rsc3/Rsc30 and tail lobe presence (C48) provides indirect support.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:16:38.828348Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "c22ab5cf-86d6-4aaf-8993-4cb180185847",
+      "result_id": "ec42523a-99ea-4770-b620-44d4fdf0cf91"
+    },
+    {
+      "claim_id": "e543e90e-be66-46ad-a3da-370ba5bda50d",
+      "result_id": "ec42523a-99ea-4770-b620-44d4fdf0cf91"
+    },
+    {
+      "claim_id": "2c2b209b-69f3-4d37-8400-875cdfdbceb8",
+      "result_id": "ec42523a-99ea-4770-b620-44d4fdf0cf91"
+    },
+    {
+      "claim_id": "db9af855-d538-4290-aaa5-b6f52f1bf766",
+      "result_id": "ec42523a-99ea-4770-b620-44d4fdf0cf91"
+    },
+    {
+      "claim_id": "c521b640-eb7e-4c6c-93ba-ab1b3b787583",
+      "result_id": "ec42523a-99ea-4770-b620-44d4fdf0cf91"
+    },
+    {
+      "claim_id": "5fa0a80e-6864-4ff4-b1c9-a5423bb1a40c",
+      "result_id": "ec42523a-99ea-4770-b620-44d4fdf0cf91"
+    },
+    {
+      "claim_id": "b68b1b35-0708-4785-9075-9700cbac2bf1",
+      "result_id": "538f8be8-0806-4b18-978a-1a2fa26cc6a8"
+    },
+    {
+      "claim_id": "3eb49fb3-cf11-48ba-a3d5-23900b483411",
+      "result_id": "538f8be8-0806-4b18-978a-1a2fa26cc6a8"
+    },
+    {
+      "claim_id": "a81acae2-41eb-44a5-a029-cd5d882a3ff2",
+      "result_id": "538f8be8-0806-4b18-978a-1a2fa26cc6a8"
+    },
+    {
+      "claim_id": "44e75bdf-4739-4ee7-b1b4-510c73b5ffd8",
+      "result_id": "538f8be8-0806-4b18-978a-1a2fa26cc6a8"
+    },
+    {
+      "claim_id": "e863c7b0-6623-4f42-9c63-1ecbe925bcef",
+      "result_id": "538f8be8-0806-4b18-978a-1a2fa26cc6a8"
+    },
+    {
+      "claim_id": "36e68058-2570-4b53-928a-f0504a223ae7",
+      "result_id": "74ea93e5-06a6-4126-a20c-bbea43e6f378"
+    },
+    {
+      "claim_id": "c6616446-36f8-4702-bef7-a7685e307649",
+      "result_id": "74ea93e5-06a6-4126-a20c-bbea43e6f378"
+    },
+    {
+      "claim_id": "c2760ca9-c845-4ce6-bc7f-a32cee4f624b",
+      "result_id": "74ea93e5-06a6-4126-a20c-bbea43e6f378"
+    },
+    {
+      "claim_id": "353a5c37-9438-4441-b815-c3f64a12aa16",
+      "result_id": "74ea93e5-06a6-4126-a20c-bbea43e6f378"
+    },
+    {
+      "claim_id": "ecfd4095-6c66-4c99-b20c-53b154636cee",
+      "result_id": "74ea93e5-06a6-4126-a20c-bbea43e6f378"
+    },
+    {
+      "claim_id": "e9bfe5a1-9691-4e16-bfc6-127f4e5bcf35",
+      "result_id": "74ea93e5-06a6-4126-a20c-bbea43e6f378"
+    },
+    {
+      "claim_id": "a0d6bafa-988f-435a-8d3c-cbc079758b1f",
+      "result_id": "74ea93e5-06a6-4126-a20c-bbea43e6f378"
+    },
+    {
+      "claim_id": "459e6c79-7856-44f4-a6ed-5333eb8e8683",
+      "result_id": "74ea93e5-06a6-4126-a20c-bbea43e6f378"
+    },
+    {
+      "claim_id": "080a8c04-0488-4462-a938-076ff1fcfecc",
+      "result_id": "82a2c2a2-1446-47d7-bfc6-527fff614db0"
+    },
+    {
+      "claim_id": "687f3835-b1f7-42f5-ae97-b41ab556e1ca",
+      "result_id": "82a2c2a2-1446-47d7-bfc6-527fff614db0"
+    },
+    {
+      "claim_id": "12f751e5-2e41-42af-875d-6c07056c71a7",
+      "result_id": "e7a19012-2774-40a6-b061-b7d5d426458c"
+    },
+    {
+      "claim_id": "1bd75724-bebe-49f8-ac76-0d92b5c64c90",
+      "result_id": "e7a19012-2774-40a6-b061-b7d5d426458c"
+    },
+    {
+      "claim_id": "f3a3b619-bba0-4a84-b621-42a623fb5472",
+      "result_id": "e7a19012-2774-40a6-b061-b7d5d426458c"
+    },
+    {
+      "claim_id": "ddab5ebb-c265-4d74-96fb-253ce459d4f6",
+      "result_id": "e7a19012-2774-40a6-b061-b7d5d426458c"
+    },
+    {
+      "claim_id": "18faba6a-9f90-4e1e-8418-d7829f734633",
+      "result_id": "e7a19012-2774-40a6-b061-b7d5d426458c"
+    },
+    {
+      "claim_id": "04085f2d-1c70-413d-882f-ada6eeef207a",
+      "result_id": "e7a19012-2774-40a6-b061-b7d5d426458c"
+    },
+    {
+      "claim_id": "66d79f43-4970-4acc-b8cf-8521f7127721",
+      "result_id": "a129bf50-217c-4349-923d-d4488c9f88c6"
+    },
+    {
+      "claim_id": "f47c6f0b-6f8d-4dc4-8c8e-03718a4eec44",
+      "result_id": "a129bf50-217c-4349-923d-d4488c9f88c6"
+    },
+    {
+      "claim_id": "112f2660-744b-4b2e-8b93-75f88244a8c6",
+      "result_id": "a129bf50-217c-4349-923d-d4488c9f88c6"
+    },
+    {
+      "claim_id": "50323322-e82f-4a92-ac6c-e41dfb5d2e5d",
+      "result_id": "a129bf50-217c-4349-923d-d4488c9f88c6"
+    },
+    {
+      "claim_id": "a1151109-9ada-4e97-9419-5be205cea15a",
+      "result_id": "a129bf50-217c-4349-923d-d4488c9f88c6"
+    },
+    {
+      "claim_id": "335306a6-519a-4d91-8a42-ec704d69574b",
+      "result_id": "a129bf50-217c-4349-923d-d4488c9f88c6"
+    },
+    {
+      "claim_id": "af5ae7c1-8263-4dbc-af9c-b1c96852cdf2",
+      "result_id": "dfad4af2-ae8d-4823-9b2c-b700ffaa93f7"
+    },
+    {
+      "claim_id": "a93121d3-a7ad-4e16-89f6-49bfd70caed3",
+      "result_id": "dfad4af2-ae8d-4823-9b2c-b700ffaa93f7"
+    },
+    {
+      "claim_id": "135d533a-9367-4682-8605-ac19d79b5564",
+      "result_id": "dfad4af2-ae8d-4823-9b2c-b700ffaa93f7"
+    },
+    {
+      "claim_id": "c7dce50d-3266-4e04-bc93-240937bd769a",
+      "result_id": "dfad4af2-ae8d-4823-9b2c-b700ffaa93f7"
+    },
+    {
+      "claim_id": "f8bb5878-8181-4672-bb76-deefba79e474",
+      "result_id": "dfad4af2-ae8d-4823-9b2c-b700ffaa93f7"
+    },
+    {
+      "claim_id": "6083acd3-496f-48fa-a8cc-9d06b140f0a1",
+      "result_id": "72e9ddd1-144e-4b58-8431-d5c2d4e4dafd"
+    },
+    {
+      "claim_id": "738d7b40-faa0-466f-9723-a4d225dcfdeb",
+      "result_id": "72e9ddd1-144e-4b58-8431-d5c2d4e4dafd"
+    },
+    {
+      "claim_id": "464601c7-9603-4f16-b2f2-be6f395ed153",
+      "result_id": "e6cb8c54-79aa-4b1d-8321-197c0c17a649"
+    },
+    {
+      "claim_id": "7c2feac7-3b3c-4192-95d9-5a829d59879b",
+      "result_id": "e6cb8c54-79aa-4b1d-8321-197c0c17a649"
+    },
+    {
+      "claim_id": "481bba72-e751-4d90-aece-799f293acfe1",
+      "result_id": "e6cb8c54-79aa-4b1d-8321-197c0c17a649"
+    },
+    {
+      "claim_id": "bccca4ba-887f-4aa9-be63-8c3ef884d136",
+      "result_id": "e6cb8c54-79aa-4b1d-8321-197c0c17a649"
+    },
+    {
+      "claim_id": "0719c922-250a-447e-ba4b-c201d95d2d8e",
+      "result_id": "e6cb8c54-79aa-4b1d-8321-197c0c17a649"
+    },
+    {
+      "claim_id": "e29a04b8-4368-4eb2-bdcd-4a1cc0571cfa",
+      "result_id": "e6cb8c54-79aa-4b1d-8321-197c0c17a649"
+    },
+    {
+      "claim_id": "09601e1e-ba3a-47ef-8c66-5b4447d818f5",
+      "result_id": "e6cb8c54-79aa-4b1d-8321-197c0c17a649"
+    },
+    {
+      "claim_id": "e23cd858-ba37-46b8-89b6-8629db19097c",
+      "result_id": "d03ad278-7006-4987-be2e-8c3a5cc5d61b"
+    },
+    {
+      "claim_id": "79d7579f-22f6-421e-a56a-4e98a2e4a6a1",
+      "result_id": "d03ad278-7006-4987-be2e-8c3a5cc5d61b"
+    },
+    {
+      "claim_id": "20936959-38ea-40f9-b76b-60831d296468",
+      "result_id": "d03ad278-7006-4987-be2e-8c3a5cc5d61b"
+    },
+    {
+      "claim_id": "84198fec-aa0f-40c5-8634-0463822b5d69",
+      "result_id": "d03ad278-7006-4987-be2e-8c3a5cc5d61b"
+    },
+    {
+      "claim_id": "7d36dae4-45e0-4a21-b600-c551c2fb0abd",
+      "result_id": "d03ad278-7006-4987-be2e-8c3a5cc5d61b"
+    },
+    {
+      "claim_id": "cc6ad6d3-4f60-468c-a9e3-b4ba5d0febd7",
+      "result_id": "fc1162c1-7b21-49e0-9917-781b9f2c81da"
+    },
+    {
+      "claim_id": "52bdebdf-c7eb-4b4c-9bfc-189f7d4050db",
+      "result_id": "fc1162c1-7b21-49e0-9917-781b9f2c81da"
+    },
+    {
+      "claim_id": "5ef76314-c6d8-4e1e-9f70-47723da3126b",
+      "result_id": "fc1162c1-7b21-49e0-9917-781b9f2c81da"
+    },
+    {
+      "claim_id": "3be9bec7-f72c-4b0d-989b-ac7a4637a6a0",
+      "result_id": "fc1162c1-7b21-49e0-9917-781b9f2c81da"
+    },
+    {
+      "claim_id": "8fe5b292-7da1-42f5-8da8-a805d155def3",
+      "result_id": "fc1162c1-7b21-49e0-9917-781b9f2c81da"
+    },
+    {
+      "claim_id": "04692e8c-c9c3-4623-9215-5e301ef3275d",
+      "result_id": "fc1162c1-7b21-49e0-9917-781b9f2c81da"
+    },
+    {
+      "claim_id": "0cb15c8c-a4a3-4598-a399-bcccfcd53777",
+      "result_id": "fc1162c1-7b21-49e0-9917-781b9f2c81da"
+    },
+    {
+      "claim_id": "19b171b4-2503-4db5-a292-35eed5282139",
+      "result_id": "fc1162c1-7b21-49e0-9917-781b9f2c81da"
+    },
+    {
+      "claim_id": "1e6cd395-8365-4090-b2a1-f75aff95c619",
+      "result_id": "fc1162c1-7b21-49e0-9917-781b9f2c81da"
+    },
+    {
+      "claim_id": "296e9f5d-9a92-4a95-a53c-aa94b301cbee",
+      "result_id": "fc1162c1-7b21-49e0-9917-781b9f2c81da"
+    },
+    {
+      "claim_id": "fd41d539-d1c9-4fc8-a4e2-8dd84c2f072a",
+      "result_id": "fc1162c1-7b21-49e0-9917-781b9f2c81da"
+    },
+    {
+      "claim_id": "ecdfce77-1230-4ca7-9a03-619728639a35",
+      "result_id": "32f3d0ff-64c1-4910-ac2b-3253cf65ff4e"
+    },
+    {
+      "claim_id": "8a52be46-21b5-4340-8b3d-b11ec2d5feb5",
+      "result_id": "32f3d0ff-64c1-4910-ac2b-3253cf65ff4e"
+    },
+    {
+      "claim_id": "6c3673e7-c1f5-4637-9ce3-5c24bad39d1e",
+      "result_id": "32f3d0ff-64c1-4910-ac2b-3253cf65ff4e"
+    },
+    {
+      "claim_id": "97497ede-5875-4d30-8c64-d498a0823dd7",
+      "result_id": "9840e608-191f-4f0a-9846-3498255fb116"
+    },
+    {
+      "claim_id": "3b8a5065-60be-467e-89b4-1c5d8d15b838",
+      "result_id": "9840e608-191f-4f0a-9846-3498255fb116"
+    },
+    {
+      "claim_id": "6554205b-548d-47ec-b5ba-ee55f0ec2683",
+      "result_id": "2e1f258f-c12a-4b7d-8b67-4d0716f253c1"
+    },
+    {
+      "claim_id": "3ad32069-3b7d-4e3a-8364-54a2554ef226",
+      "result_id": "2e1f258f-c12a-4b7d-8b67-4d0716f253c1"
+    },
+    {
+      "claim_id": "d7427444-a7dc-4f71-bfcd-0b87b6ef1cca",
+      "result_id": "2e1f258f-c12a-4b7d-8b67-4d0716f253c1"
+    },
+    {
+      "claim_id": "02123dda-e027-49ff-ad5b-618014e5050d",
+      "result_id": "2e1f258f-c12a-4b7d-8b67-4d0716f253c1"
+    },
+    {
+      "claim_id": "68b53696-0cb3-4831-ab7f-37667124799d",
+      "result_id": "2e1f258f-c12a-4b7d-8b67-4d0716f253c1"
+    },
+    {
+      "claim_id": "43e59d80-3374-4679-be7c-1f084de7c998",
+      "result_id": "2e1f258f-c12a-4b7d-8b67-4d0716f253c1"
+    },
+    {
+      "claim_id": "761aed8f-47e8-4336-af2b-666d050753b1",
+      "result_id": "2e1f258f-c12a-4b7d-8b67-4d0716f253c1"
+    },
+    {
+      "claim_id": "14b3a469-e68b-48e3-b3c0-2649791ce855",
+      "result_id": "2e1f258f-c12a-4b7d-8b67-4d0716f253c1"
+    },
+    {
+      "claim_id": "00edcb83-bdd8-41c1-95a6-dfa7206de2c8",
+      "result_id": "2e1f258f-c12a-4b7d-8b67-4d0716f253c1"
+    },
+    {
+      "claim_id": "56185478-b93d-4995-b6c9-dfb92fca8bc0",
+      "result_id": "2e1f258f-c12a-4b7d-8b67-4d0716f253c1"
+    },
+    {
+      "claim_id": "25065b2a-4c8e-4ab2-ad20-3a7aaeefef07",
+      "result_id": "2e1f258f-c12a-4b7d-8b67-4d0716f253c1"
+    },
+    {
+      "claim_id": "93a17150-db47-42aa-aa64-fb52eef91a42",
+      "result_id": "2e1f258f-c12a-4b7d-8b67-4d0716f253c1"
+    },
+    {
+      "claim_id": "40b963f1-1a08-4a25-9c6b-5fd3e0e6f46e",
+      "result_id": "2e1f258f-c12a-4b7d-8b67-4d0716f253c1"
+    },
+    {
+      "claim_id": "e58a33ba-78e2-4402-9ce7-f601c9fb14d5",
+      "result_id": "2e1f258f-c12a-4b7d-8b67-4d0716f253c1"
+    },
+    {
+      "claim_id": "9b0a6d02-79ec-474a-9067-4af95431b602",
+      "result_id": "2e1f258f-c12a-4b7d-8b67-4d0716f253c1"
+    },
+    {
+      "claim_id": "99f001fd-a1bf-4cb5-b747-840888dd7b37",
+      "result_id": "2e1f258f-c12a-4b7d-8b67-4d0716f253c1"
+    },
+    {
+      "claim_id": "e08b8f2f-ae3a-4ff9-b445-7f56356bedcd",
+      "result_id": "2e1f258f-c12a-4b7d-8b67-4d0716f253c1"
+    },
+    {
+      "claim_id": "71506bac-3bd7-4ac6-9a46-34f6b62aeeed",
+      "result_id": "2e1f258f-c12a-4b7d-8b67-4d0716f253c1"
+    },
+    {
+      "claim_id": "22ebb03d-1e75-4185-bfd6-228389dc3a62",
+      "result_id": "2e1f258f-c12a-4b7d-8b67-4d0716f253c1"
+    },
+    {
+      "claim_id": "05f99453-f197-4d94-93b2-e8fad904f6b0",
+      "result_id": "2e1f258f-c12a-4b7d-8b67-4d0716f253c1"
+    },
+    {
+      "claim_id": "cd8b2448-1615-4c18-a1a8-5644030d069a",
+      "result_id": "2e1f258f-c12a-4b7d-8b67-4d0716f253c1"
+    },
+    {
+      "claim_id": "8dda7aac-0337-4507-a0dc-29df45d3718f",
+      "result_id": "2e1f258f-c12a-4b7d-8b67-4d0716f253c1"
+    },
+    {
+      "claim_id": "5c87273b-06e7-4aec-abbd-c0e064ba30e1",
+      "result_id": "2e1f258f-c12a-4b7d-8b67-4d0716f253c1"
+    },
+    {
+      "claim_id": "8df4f351-cc9f-42d5-b7df-95b2ba93f4dd",
+      "result_id": "2e1f258f-c12a-4b7d-8b67-4d0716f253c1"
+    },
+    {
+      "claim_id": "22c197e9-f883-41d5-81ba-cbb01666739b",
+      "result_id": "2e1f258f-c12a-4b7d-8b67-4d0716f253c1"
+    },
+    {
+      "claim_id": "9344fbb2-1dd5-4209-a205-fc086afaff6c",
+      "result_id": "2e1f258f-c12a-4b7d-8b67-4d0716f253c1"
+    },
+    {
+      "claim_id": "fc3e0355-29c1-46c8-bbff-aaa63a5ad846",
+      "result_id": "2e1f258f-c12a-4b7d-8b67-4d0716f253c1"
+    },
+    {
+      "claim_id": "9ef8055a-1ec3-4dd1-a70a-e88a2f873c7f",
+      "result_id": "2e1f258f-c12a-4b7d-8b67-4d0716f253c1"
+    },
+    {
+      "claim_id": "2e71d685-f246-489d-9190-7a7da5c2c24e",
+      "result_id": "067bada8-729f-4bb8-a338-3cbd18e87b52"
+    },
+    {
+      "claim_id": "16dcd991-4197-4a56-ae8e-a60617b8b06f",
+      "result_id": "067bada8-729f-4bb8-a338-3cbd18e87b52"
+    },
+    {
+      "claim_id": "fa84af21-6d78-4bbb-8147-95a8cdac53c7",
+      "result_id": "dfffb026-191e-4b1b-ab5b-d568b8b34394"
+    },
+    {
+      "claim_id": "0eecbd05-2907-4c8f-b982-d7e9314b49d6",
+      "result_id": "dfffb026-191e-4b1b-ab5b-d568b8b34394"
+    },
+    {
+      "claim_id": "756073e5-66c6-4cf7-bf36-87bd5c21e6fd",
+      "result_id": "dfffb026-191e-4b1b-ab5b-d568b8b34394"
+    },
+    {
+      "claim_id": "d3428f56-802d-40d3-9207-df423970052d",
+      "result_id": "b85f440a-d801-4cea-ae64-47f075ef6d25"
+    },
+    {
+      "claim_id": "3c47cc90-2918-40f0-b39f-2c21651c9b9b",
+      "result_id": "b85f440a-d801-4cea-ae64-47f075ef6d25"
+    },
+    {
+      "claim_id": "7e53a821-dc52-49f0-a11e-98fd2af57bdf",
+      "result_id": "b85f440a-d801-4cea-ae64-47f075ef6d25"
+    },
+    {
+      "claim_id": "cc4a6f1b-3434-42e9-9c3f-b9c64a0b2b3f",
+      "result_id": "02a0efed-e097-4107-a83a-d51c49016ff3"
+    }
+  ],
+  "comparisons": []
+}

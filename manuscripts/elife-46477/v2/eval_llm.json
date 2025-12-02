@@ -1,0 +1,457 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "Diabetes mellitus (DM) is associated with increased risk for tuberculosis (TB) infection, progression to active disease, and adverse treatment outcomes including delayed sputum conversion, treatment failure, death, and recurrent TB.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C1, C2, C11-C16) are all supported by citation to Critchley et al., 2017, representing established prior knowledge from the literature. The claims are appropriately attributed to prior work and serve as background context for the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "Prior studies have established that TBDM comorbidity is associated with systemic hyperinflammation and higher levels of immune pathology at baseline, but the mechanisms are incompletely understood and longitudinal data during treatment are lacking.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C3, C17-C24) accurately summarize prior literature with appropriate citations (Martinez and Kornfeld 2014; Restrepo et al. 2008; Kumar et al. 2013a/b; Prada-Medina et al. 2017) and identify the knowledge gap that motivates the current study. The characterization of prior work appears accurate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "The India cohort showed significant demographic and clinical differences between TBDM and TB groups, with TBDM participants having higher age, higher BMI, and poor glycemic control (median HbA1c 10.0%), while the TB group had BMI below the undernutrition threshold. Both groups had vitamin D insufficiency and no differences in radiographic severity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C38 are directly supported by data presented in Tables 1 and 2 with appropriate statistical tests (Mann-Whitney U, chi-squared). The statistical comparisons are clearly reported with p-values. However, the high prevalence of undernutrition in the TB group (C28, C124) is a potential confounder that the authors acknowledge may affect interpretation of radiographic findings (C125).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "The Brazil cohort differed from the India cohort in several respects, with no age difference between TBDM and TB groups, equal sex distribution, no BMI difference, and generally higher BMI above the undernutrition threshold. Brazilian TBDM participants had lower median HbA1c than Indian counterparts but still showed poor glycemic control.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C46 are supported by data in Table 3 with appropriate statistical tests. The characterization of cohort differences is important for interpreting the generalizability of findings across populations. The claim about 'nearly all' participants having BMI above 18.5 kg/m2 (C44) is reasonably inferred from the median and IQR data shown.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C122",
+      "C123"
+    ],
+    "result": "Comparison between India and Brazil cohorts revealed statistically significant differences in sex distribution (more females in Brazil) and BMI (higher in Brazil), but no differences in alcohol consumption or smoking. The Brazil cohort had more cavitary TB despite no overall difference in radiographic severity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C50, C122-C123 are supported by data in Tables 4 and 5 with appropriate statistical comparisons. These cohort differences are important for contextualizing the cytokine findings and the authors appropriately discuss these as potential explanations for some observed differences (C120-C121).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "Sputum acid-fast bacilli smear grades were significantly higher in TBDM than TB participants in the India cohort (p=0.0411), with a similar non-significant trend in Brazil (p=0.0618). When both cohorts were combined, the difference was highly significant (p=0.006).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C53 are supported by data in Figure 1 with chi-squared tests. This finding suggests higher bacterial burden in TBDM, which is relevant to the authors' mechanistic hypotheses. The statistical approach of combining cohorts to increase power is reasonable, though the individual cohort results show the effect is stronger in India.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "Hierarchical cluster analysis and PCA revealed nearly complete separation of TBDM from TB groups at baseline in both India and Brazil cohorts, with TBDM showing higher levels of nearly all cytokines. This separation persisted through months 2 and 6 but was largely lost by month 18 in the India cohort.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C61 are supported by the hierarchical clustering and PCA analyses shown in Figure 2. The methods are appropriate (Ward's method with bootstrap, log2-transformation, z-score normalization). The visual separation in the PCA plots is clear at baseline and the convergence at month 18 is evident, though some TBDM outliers remain. This is a key finding demonstrating persistent but eventually resolving hyperinflammation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6"
+    ],
+    "result": "Principal component analysis revealed virtually complete separation of TBDM from TB individuals in both cohorts at baseline, with hyper-inflammation in TBDM that continued through treatment completion at six months. By one year after treatment completion, there was substantial convergence of mediator levels between groups in the India cohort.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C6 (from the abstract) are supported by the detailed PCA and clustering analyses (C54-C61) and the underlying cytokine data. These represent the core findings of the study. The claim of 'virtually complete separation' is well-supported by Figure 2, and the temporal dynamics through month 18 are clearly demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "Longitudinal analysis showed that TBDM groups in both India and Brazil exhibited declining levels of most pro-inflammatory cytokines during and after treatment, with rising levels of IL-5, IL-10, IL-13, and TGF-\u03b2. The normoglycemic TB groups showed consistent trends that differed most notably in declining IL-10 levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C67 are supported by one-way ANOVA with linear trend analysis shown in Figures 3a and 4a. The statistical approach is appropriate for assessing temporal trends. The identification of different IL-10 dynamics between TBDM and TB groups is a key mechanistic finding. The FDR correction (1%) for multiple testing is appropriately applied.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "In the India cohort, 14 of 17 cytokines differed significantly between TBDM and TB at baseline, with only IL-10 lower in TBDM (showing the largest fold-difference). IL-10 reversed from lower to higher in TBDM by month 2, while IL-13 reversed from higher to lower. By month 18, only 6 cytokines remained significantly different with reduced fold-differences. No differences were found between newly diagnosed and known DM within the TBDM group.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C74 are supported by fold-difference analysis in Figure 3b and Figure 3\u2014figure supplement 1. The temporal dynamics of IL-10 are particularly striking and mechanistically important. The lack of difference between newly diagnosed and known DM (C74) strengthens the interpretation that the findings relate to hyperglycemia rather than DM duration. Statistical testing with FDR correction is appropriate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "In the Brazil cohort, only 5 of 17 cytokines differed significantly at baseline between TBDM and TB, including lower IL-10 in TBDM (consistent with India) and higher IFN-\u03b3, IL-17F, GCSF, and TGF-\u03b2. IL-10 reversed to higher in TBDM by month 2. At month 6, 8 cytokines differed significantly, with 7 higher in TBDM and only IL-1\u03b2 lower.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C80 are supported by fold-difference analysis in Figure 4b. The Brazil cohort shows fewer baseline differences than India, which the authors appropriately discuss in relation to cohort differences (C120-C121). The consistent finding of low baseline IL-10 in TBDM across both cohorts strengthens this as a key mechanistic feature. The reversal of IL-10 dynamics is consistent across cohorts.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C81",
+      "C98",
+      "C126"
+    ],
+    "result": "TBDM individuals had higher levels of circulating pro-inflammatory mediators at baseline, and this systemic hyper-inflammatory state persisted through the course of TB treatment (months 2 and 6) with a temporal shift in relative IL-10 levels, despite clinically efficacious antimicrobial chemotherapy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81, C98, C126 represent summary statements of the main findings, supported by the comprehensive longitudinal cytokine data (C63-C80) and multivariate analyses (C54-C61). The persistence of hyperinflammation through treatment completion is a novel and important finding. The caveat about 'clinically efficacious' treatment is appropriate given that all participants completed standard therapy.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "Decision tree analysis identified IL-10 as the strongest discriminator between TBDM and TB at baseline in both cohorts. In India, the key discriminators shifted to IL-13/IL-12p70 at month 2 and IL-4/GM-CSF at month 6. In Brazil, IL-10 remained the strongest discriminator at all timepoints. ROC analysis showed high accuracy (AUC \u22650.9577, p<0.0001) for single or combined cytokines at all timepoints.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C88 are supported by decision tree analysis and ROC curves in Figure 5. The machine learning approach (J48 algorithm with 10-fold cross-validation) is appropriate for identifying minimal biomarker sets. The high AUC values indicate excellent discrimination. The consistent identification of IL-10 as a key discriminator across cohorts and timepoints strengthens its mechanistic importance. The divergence in discriminators between cohorts at later timepoints may reflect the cohort differences discussed elsewhere.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "Radiographic severity scores showed no significant differences between TBDM and TB groups at any timepoint despite considerable individual variation. Spearman correlation analysis revealed strong associations between baseline HbA1c and multiple cytokines at baseline (particularly TNF-\u03b1, IL-2, IL-17F, IL-1\u03b2 positively; IL-5, IL-10 negatively), with the number of significant correlations declining from 16 at baseline to 10 at month 6 to only 1 (IL-7) at month 18.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C94 are supported by data in Figure 6. The lack of radiographic differences (C91) is notable and the authors appropriately discuss potential explanations including undernutrition in the TB group (C124-C125). The correlation analysis appropriately uses Spearman's test for non-parametric data. The declining correlations with HbA1c over time parallel the convergence of cytokine profiles. However, the correlation analysis is exploratory and many correlations are weak to moderate despite statistical significance.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C62"
+    ],
+    "result": "The unique pattern of systemic hyperinflammation associated with concurrent TB and DM was present in Indian and Brazilian populations, despite considerable differences in host genetic, demographic, and behavioral characteristics, and in local prevalent M. tuberculosis strains.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C62 is an important inference supported by the consistent findings across both cohorts (C54-C61, C63-C80) despite documented differences in demographics (C47-C50) and M. tuberculosis strains (cited references). This cross-population validation strengthens the generalizability of the findings. The inference is reasonable though the study was not designed to formally test strain or genetic effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C99",
+      "C107",
+      "C108"
+    ],
+    "result": "The observed pattern is consistent with prolonged inflammation and delayed relative rise in pro-resolving cytokines (IL-10, IL-4, IL-13) in TBDM, with eventual resolution of TB-related inflammation in the majority of TBDM participants by one year after treatment completion. DM comorbidity is associated with hyperinflammation that resolves more slowly than in normoglycemic TB but is not sustained indefinitely.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C90, C99, C107-C108 represent reasonable interpretations of the longitudinal data, appropriately citing relevant literature on pro-resolving mediators (Ortega-G\u00f3mez et al. 2013; Sugimoto et al. 2016). The inference about eventual resolution is supported by the month 18 data showing convergence, though some TBDM outliers remain. The interpretation is appropriately cautious about mechanisms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "IL-10 is a key anti-inflammatory mediator that inhibits pro-inflammatory cytokine generation. Hyperglycemia is associated with elevated pro-inflammatory to IL-10 ratios and hyporesponsiveness to IL-10 signaling. The study observed a striking switch from lower to higher IL-10 levels in TBDM following ATT initiation. While low IL-10 is associated with TB susceptibility, poorly controlled inflammation may support rather than limit Mtb replication.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C100-C105 appropriately cite relevant literature (Robb et al. 1985; Butkowski and Jelinek 2017; Barry et al. 2016; Redford et al. 2011; Mishra et al. 2017, 2013) to contextualize the IL-10 findings. The observed IL-10 dynamics (C103) are well-supported by the data (C71, C78). The discussion appropriately notes that causality cannot be established from the observational data. The mechanistic interpretation is reasonable but speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C106"
+    ],
+    "result": "IL-4, IL-5, IL-10, IL-13, and TGF-\u03b2 participate in the resolution of infection-related pulmonary inflammation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C106 is supported by appropriate citations (Barbosa et al. 2006; Bosurgi et al. 2017; Schett and Neurath 2018) and represents established knowledge used to interpret the observed rising levels of these cytokines during treatment.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C109",
+      "C110"
+    ],
+    "result": "Plasma cytokine elevation in DM is restricted to the setting of active TB disease, as CD4+ T cells from individuals with DM and latent TB infection show lower intracellular cytokine expression compared to latently infected normoglycemic individuals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C109-C110 are supported by citation to Kumar et al. 2016. This inference helps explain why the hyperinflammation is specific to active TB rather than a general feature of DM. However, the inference (C109) goes slightly beyond what the cited study directly shows, as it compares latent infection rather than DM without TB.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C25",
+      "C111"
+    ],
+    "result": "The authors hypothesize that the hyperinflammatory phenotype of TBDM comorbidity is driven by higher lung bacterial burden and/or impaired counter-regulatory mechanisms that maintain inflammatory foci despite sterilizing antimicrobial treatment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25 and C111 represent the authors' stated hypotheses and speculation, appropriately labeled as such. These are reasonable mechanistic hypotheses given the data, though the study design does not directly test them. The authors appropriately note these mechanisms are not mutually exclusive.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116"
+    ],
+    "result": "Animal studies consistently show higher Mtb bacterial burden, more pulmonary immune pathology, and elevated pro-inflammatory cytokines in TBDM compared to normoglycemic TB. Clinical studies have variously reported higher sputum smear/culture scores and greater radiographic severity in TBDM, though these are crude surrogates for bacterial burden and immune pathology.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C112-C116 appropriately cite relevant literature (Martens et al. 2007; Podell et al. 2014; Alavi et al. 2014; Jim\u00e9nez-Corona et al. 2013; Moreno-Mart\u00ednez et al. 2015; Yoon et al. 2017) to support the bacterial burden hypothesis. The characterization of clinical measures as 'crude surrogates' is appropriately cautious. The current study's finding of higher sputum smear grades in TBDM (C51-C53) is consistent with this literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C117",
+      "C118",
+      "C119"
+    ],
+    "result": "Na\u00efve T cells from chronically hyperglycemic mice show increased proliferation and cytokine production following antigen-receptor activation, attributed to basal chromatin decondensation. Impaired wound healing in diabetes is partly due to impaired resolution of inflammation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C117-C119 appropriately cite relevant literature (Martinez et al. 2014; Baltzis et al. 2014) to support the hypothesis of intrinsic hyperinflammatory propensity in DM. These provide mechanistic context for interpreting the observed persistent inflammation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C120",
+      "C121",
+      "C125"
+    ],
+    "result": "Higher BMI and female representation in the Brazil cohort could partly account for lower cytokine levels compared to India. High prevalence of undernutrition in the normoglycemic TB group might account for the lack of radiographic severity differences between TBDM and TB in the India cohort.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C120-C121, C125 are appropriately labeled as speculation by the authors. While the cohort differences are real (C47-C48, C124), the causal links to cytokine levels and radiographic findings are not directly tested. These represent reasonable alternative explanations for unexpected findings, but remain speculative. The authors appropriately acknowledge these as study limitations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C124"
+    ],
+    "result": "The normoglycemic TB arm of the EDOTS study featured high prevalence of undernutrition, which is an independent risk factor for adverse TB outcomes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C124 is supported by the BMI data (C28) and appropriate citation (Sinha et al. 2019). This is an important limitation that may confound comparisons between TBDM and TB groups, as the authors acknowledge.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C95"
+    ],
+    "result": "IL-7 is known to maintain strong cellular immune responses for months, in contrast to more short-lived responses to IL-2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C95 is supported by citation to Lynch and Miller 1994 and provides context for the finding that IL-7 was the only cytokine correlating with HbA1c at month 18 (C94).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C96",
+      "C97"
+    ],
+    "result": "Increased circulating levels of numerous cytokines and growth factors typify TBDM comorbidity at TB diagnosis. Results from baseline samples were consistent with the previously reported hyper-inflammatory state of TBDM prior to ATT initiation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C97 appropriately cite prior literature (Kumar et al. 2013a; Prada-Medina et al. 2017; Restrepo et al. 2008) and confirm that the current study's baseline findings replicate prior work, providing validation before examining the novel longitudinal data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C10"
+    ],
+    "result": "Non-resolving systemic inflammation in TBDM comorbidity could reflect delayed lesion sterilization or non-resolving sterile inflammation. Either mechanism portends unfavorable long-term outcomes including risk for recurrent TB and damaging immune pathology.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C7-C10 represent speculative interpretations of the persistent inflammation findings. While the speculation is reasonable given the data and cited literature, the study does not directly test these mechanisms or measure the predicted long-term outcomes. The claims are appropriately framed as possibilities ('could reflect', 'portends') but remain unproven hypotheses requiring future investigation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C127",
+      "C128",
+      "C129"
+    ],
+    "result": "Morbidity and mortality in pulmonary TB largely reflects immune-mediated lung damage. The authors predict that pulmonary impairment after TB will be greater in patients with concurrent DM, and speculate that sustained inflammation contributes to increased TB-related mortality associated with DM.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C127 is supported by citation (Ravimohan et al. 2018), but claims C128-C129 are predictions and speculation not tested in this study. While these are logical inferences from the persistent inflammation findings, they require prospective validation with long-term outcome data. The speculation is appropriately labeled but represents future work rather than demonstrated results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R29",
+    "claim_ids": [
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136"
+    ],
+    "result": "Matrix metalloproteinases (MMPs) are implicated in TB lung damage. Metformin shows anti-inflammatory effects including reduced MMP expression in animal models and is associated with reduced cavitary TB and mortality in TBDM patients by mechanisms independent of glycemic control. TBDM is associated with higher plasma MMPs, and metformin use correlates with lower MMPs. Anti-inflammatory host-directed therapies, including metformin, may be particularly beneficial in TB patients with concurrent DM.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C130-C135 appropriately cite relevant literature (Ong et al. 2014; Degner et al. 2018; Singhal et al. 2014; Kumar et al. 2018). Claim C136 is a reasonable inference from the persistent inflammation findings combined with the cited metformin literature, though it represents a suggestion for future investigation rather than a tested hypothesis. The connection to the current study's findings is logical but indirect.",
+    "result_type": "MINOR"
+  }
+]

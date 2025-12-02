@@ -1,0 +1,1571 @@
+{
+  "submission": {
+    "id": "7713dfbc-047d-46a7-80da-dff98c1519a2",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T10:06:34.634882Z",
+    "updated_at": "2025-12-02T10:06:34.634882Z"
+  },
+  "content": [
+    {
+      "id": "4a7d9e09-9b14-4643-8b10-bb2daae23b73",
+      "submission_id": "7713dfbc-047d-46a7-80da-dff98c1519a2",
+      "content_type": "manuscript",
+      "content_text": "# Dynamic relocalization of replication origins by Fkh1 requires execution of DDK function and Cdc45 loading at origins\n\n## Authors\n\n- Haiyang Zhang<sup>1</sup>\n- Meghan V Petrie<sup>1</sup>\n- Yiwei He<sup>1</sup>\n- Jared M Peace<sup>1</sup>\n- Irene E Chiolo<sup>1</sup> ([ORCID: 0000-0002-3080-550X](https://orcid.org/0000-0002-3080-550X))\n- Oscar M Aparicio<sup>1</sup> ([ORCID: 0000-0002-5591-0277](https://orcid.org/0000-0002-5591-0277)) \u2020\n\n### Affiliations\n\n1. Molecular and Computational Biology Section, Department of Biological Sciences University of Southern California Los Angeles United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nChromosomal DNA elements are organized into spatial domains within the eukaryotic nucleus. Sites undergoing DNA replication, high-level transcription, and repair of double-strand breaks coalesce into foci, although the significance and mechanisms giving rise to these dynamic structures are poorly understood. In S. cerevisiae, replication origins occupy characteristic subnuclear localizations that anticipate their initiation timing during S phase. Here, we link localization of replication origins in G1 phase with Fkh1 activity, which is required for their early replication timing. Using a Fkh1-dependent origin relocalization assay, we determine that execution of Dbf4-dependent kinase function, including Cdc45 loading, results in dynamic relocalization of a replication origin from the nuclear periphery to the interior in G1 phase. Origin mobility increases substantially with Fkh1-driven relocalization. These findings provide novel molecular insight into the mechanisms that govern dynamics and spatial organization of DNA replication origins and possibly other functional DNA elements.\n\n## Introduction\n\nThe spatial organization of chromosomal DNA elements within the nucleus is thought to derive from and contribute to the regulation of their activity (reviewed in Shachar and Misteli, 2017). For example, euchromatin and heterochromatin represent distinct forms of chromatin that are distinguished by their levels of transcriptional activity, replication timing, and subnuclear localization (reviewed in Caridi et al., 2017). Chromosomes partition into subdomains ranging from hundreds to thousands of kilobases in length that preferentially self-associate and are consequently referred to as topologically associated domains (TADs) (reviewed in Zhao et al., 2017). TAD boundaries correlate closely with replication timing domains, suggesting that replication timing is determined or influenced by this domain structure and/or vice-versa.\n\nIn budding and fission yeast, specific mechanisms defining replication timing are linked with chromosomal domain organization (reviewed in Aparicio, 2013; Yamazaki et al., 2013). Rif1, which is highly enriched at telomeres, is globally responsible for delayed replication timing of subtelomeric domains as well as internal late-replicating domains (Hafner et al., 2018; Hayano et al., 2012; Peace et al., 2014; Tazumi et al., 2012). Rif1 acts by directly antagonizing replication initiation triggered by Dbf4-dependent kinase (DDK) phosphorylation of MCM helicase proteins (Dav\u00e9 et al., 2014; Hiraga et al., 2014; Mattarocci et al., 2014). Against this inhibitory backdrop, specific origins are selected for early activation by mechanisms involving recruitment of Dbf4 (Dfp1 in fission yeast), which is one of several initiation proteins present in limited abundance and thus rate-limiting for origin firing (Mantiero et al., 2011; Patel et al., 2008; Tanaka et al., 2011; Wu and Nurse, 2009). In S. pombe, Dfp1 is recruited to kinetochores through heterochromatin protein Swi6 (Hayashi et al., 2009), and in S. cerevisiae, kinetochore protein Ctf19 recruits Dbf4 to stimulate firing of origins within\u00a0~25 kb of the centromere (Natsume et al., 2013), thus ensuring early centromere replication by distinct mechanisms regulating DDK activity. In S. cerevisiae, Fkh1 and/or Fkh2 (Fkh1/2) recruits Dbf4 to many origins distributed throughout chromosome arms, thereby ensuring earlier replication of many centromere-distal regions (Fang et al., 2017; Knott et al., 2012; L\u00f5oke et al., 2013; Ostrow et al., 2014).\n\nChromosome conformation capture experiments suggest that early-firing origins cluster spatially in G1-phase prior to initiation and this clustering is dependent on Fkh1/2 (Duan et al., 2010; Knott et al., 2012). These studies also indicated that early origins generally occupy a distinct space than late origins. Further studies suggest that Fkh1/2 are enriched at TAD boundaries and control contacts among origins within TADs (Eser et al., 2017). The distinct spatial distributions suggested by these recent studies are in accord with earlier studies that examined the subnuclear distribution of individual origins by fluorescence microscopy. These seminal studies from Heun and Gasser showed that late-firing origins typically associate with the nuclear periphery during G1 phase whereas early-firing origins typically are found in the nuclear interior during G1 (Heun et al., 2001a; Heun et al., 2001b). Despite the observed correlations between origin localization in G1 and firing time in S, the main origin timing determinants mentioned above had not been elucidated and have not been examined for their impact on subnuclear localization of replication origin. In this study, we examined how origin stimulation by Fkh1 determines subnuclear origin localization. Our results suggest that origin relocalize from the nuclear periphery upon execution of the DDK-dependent step of replication initiation, which is stimulated by Fkh1. This may represent the initial stages in the coalescence of replication origins into clusters that will become replication factories.\n\n## Results\n\n### Fkh1-induced origin activation re-positions a subtelomeric origin in G1 phase\n\nThe association between replication timing and subnuclear localization of replication origins and the requirement of Fkh1/2 for the clustering of early-firing replication origins according to chromosome conformation capture studies led us to examine whether Fkh1 has any role in establishing the spatial positioning of origins within the nucleus. We adapted a system that we recently engineered that restores origin timing by induction of FKH1 expression in G1-arrested FKH1/2 mutant cells (Peace et al., 2016). This system has Fkh-activated origin ARS305 moved into a well characterized, late-replicating, subtelomeric region of chromosome V-R, replacing the endogenous, late-firing ARS501 (Figure 1A). In this context, we showed previously that ARS305V-R fails to replicate early in fkh1\u2206 fkh2\u2206 cells. However, induction of FKH1 expression in these cells in G1-phase results in early-firing of ARS305V-R in the ensuing S-phase. In the current study, we used fkh1\u2206 fkh2-dsm instead of fkh1\u2206 fkh2\u2206 cells; fkh1\u2206 fkh2-dsm cells are essentially null for replication timing control, but exhibit more normal growth and particularly, more normal cell and nuclear morphologies favorable for cytological analysis (Ostrow et al., 2017). To locate ARS305V-R (or ARS501) in vivo, we introduced tandem repeats of tetO binding sites adjacent to the origin and expressed TetR-Tomato protein (Figure 1A); we also expressed Nup49-GFP (Nup49 is a nuclear pore protein) to illuminate the nuclear envelope (Belgareh and Doye, 1997).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/45512/elife-45512-fig1-v2.jpg)\n\n**Figure 1.:** (A) Schematic of chromosome V-R showing tetO repeats inserted adjacent to the ARS501 locus, which has been replaced with ARS305 (designated ARS305V-R); TetR-Tomato binds to and illuminates the locus as a single focus. (B) Images of cells from an unsynchronized culture of strain HYy132 (fkh1\u2206 fkh2-dsm ARS305V-R-Tomato NUP49-GFP GAL-FKH1) are shown sorted according to cell morphology; all images are at the same magnification: scale bar\u00a0=\u00a00.5 \u03bcm. (C) FKH1 induction scheme: HYy132 cells grown at 25\u00b0C in raffinose medium were arrested in G1 phase with 1x \u03b1-factor 2.5 hr, incubated an additional 2 hr in raffinose (Non-induction) or galactose (Fkh1-induction) with 1.7x \u03b1-factor, and images of live cells captured, examples of which are shown; scale bar\u00a0=\u00a00.5 \u03bcm. (D) The shortest distance from the ARS305V-R-Tomato focus to the nuclear periphery (Nup49-GFP) in each cell was measured and plotted as quartile boxplots (median shown as thick black segment) for non-induction and FKH1-induction; the result of a z-test comparing the two distributions is given as P. (E) Cells of fkh1\u2206 fkh2-dsm GAL-FKH1 NUP49-GFP strains HYy119 (ars305-\u2206ACSV-R-Tomato) and HYy120 (ars305-\u22062BSV-R-Tomato) were treated and analyzed as above.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/45512/elife-45512-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) HYy80 (fkh1\u2206 fkh2-dsm ARS305V-R-Tomato NUP49-GFP) cells were treated and analyzed as in Figure 1C and D legends. (B) HYy132 (fkh1\u2206 fkh2-dsm GAL-FKH1 ARS305V-R-Tomato NUP49-GFP) cells were treated as in Figure 1C legend, except that dextrose was substituted for galactose, and analyzed as in Figure 1D legend. The galactose data are the same as in Figure 1D.\n\nMicroscopic examination of cells showed a single Tomato focus per undivided nucleus (Figure 1B). Images of cells from an unsynchronized population were sorted according to budding morphology, which is reflective of cell cycle progression. The localization of the ARS305V-R-Tomato focus correlates with cell cycle stage, showing primarily peripheral localization in unbudded and small-budded cells and interior localization in larger-budded cells (Figure 1B). This is consistent with previous studies showing peripheral localization of subtelomeric/late-firing origins in G1 followed by relocalization to the interior during S phase (Heun et al., 2001a). Because origin timing is normally established in G1, we focused further analysis on origins in G1 phase cells.\n\nIn G1-arrested fkh1\u2206 fkh2-dsm cells, almost all cells exhibited peripheral localization of ARS305V-R (Figure 1C, left panel). Induction of FKH1, however, resulted in an increase in the proportion of cells with non-peripheral positioning of ARS305V-R (Figure 1C, right panel), suggesting that origin relocalization is associated with initiation timing re-programming by FKH1. We confirmed that relocalization is a direct result of FKH1 induction by demonstrating that neither the induction scheme (raffinose -\u00a0>\u00a0galactose) with a strain lacking inducible FKH1 nor a non-inducing change to a more favorable carbon source (raffinose -\u00a0>\u00a0dextrose) resulted in origin relocalization (Figure 1\u2014figure supplement 1). To confirm the change in origin localization resulting from FKH1 induction, we created three-dimensional image reconstructions from confocal z-stacks and measured the shortest distance in three dimensions from the ARS305V-R focus to Nup49-GFP signal in the nuclear envelope amongst populations of cells. Statistical analysis of these measurements shows a significant increase in the distances associated with FKH1-induction versus non-induction (Figure 1D).\n\nWe tested whether the function of ARS305 is required for relocalization by introducing into the V-R locus ARS305 bearing a mutation of the ARS consensus sequence (ACS) (ars305-\u2206ACS), which is essential for ORC binding and origin function. Disruption of ARS305 function not only eliminated its relocalization in response to FKH1 induction but also resulted in an even more peripheral distribution, suggesting that a functional origin is required for relocalization away from the periphery (Figure 1E). We also tested ARS305 with mutations of two proximal Fkh1/2 binding sites (ars305-\u22062BS), which retains origin function but is delayed in activation at its normal locus (Knott et al., 2012); ars305-\u22062BSV-R did not relocalize upon FKH1 induction, confirming that Fkh1 acts through direct binding in cis to ARS305V-R (Figure 1E).\n\nIn the experiments above, relocalization of ARS305V-R involved induction of FKH1 from the GAL1/10 promoter, which results in higher than normal levels of Fkh1 protein (Peace et al., 2016). To determine whether this overabundance of Fkh1 was required for the origin relocalization, we compared localization of ARS305V-R with ARS501 in cells with native FKH1 (and FKH2) expression (Figure 2A). The analysis showed that ARS305V-R was significantly more distant from the nuclear periphery than ARS501 (Figure 2B). We also analyzed origin timing of ARS305V-R in FKH1 (fkh2-dsm) versus fkh1\u2206 (fkh2-dsm) cells by quantitative BrdU immunoprecipitation (QBU) of cells released from G1 phase into hydroxyurea (HU), in which early but not late origins fire efficiently. We found that ARS305V-R fired efficiently in HU in FKH1 but not fkh1\u2206 cells (Figure 2C and Figure 2\u2014figure supplement 1). Thus, normal Fkh1 levels are able to overcome the effect that subtelomeric location has on subnuclear localization and initiation timing of ARS305V-R.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/45512/elife-45512-fig2-v2.jpg)\n\n**Figure 2.:** (A) HYy160 (ARS501-Tomato NUP49-GFP) and HYy157 (ARS305V-R-Tomato NUP49-GFP) cells were arrested in G1 phase at 25\u00b0C with 1x \u03b1-factor 2 hr and images were collected; scale bar\u00a0=\u00a00.5 \u03bcm. (B) Distances from origin foci to nuclear periphery were determined, plotted as quartile boxplots, and analyzed by a z-test. (C) Quantitative BrdU-IP-Seq (QBU) analysis was performed with ARS305V-R-bearing strains HYy113 (fkh2-dsm) and HYy38 (fkh1\u2206 fkh2-dsm) after G1 block-and-release into hydroxyurea in the presence of BrdU; averaged data from three experimental replicates was plotted for the V-R region with the positions of several replication origins indicated; ARS305V-R resides at the ARS522 (aka: ARS501) locus.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/45512/elife-45512-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) QBU analysis was performed as described in Figure 3C legend and presented as a scatter plot showing average of three replicates. The results show expected global effects on Fkh-activated origins while highlighting ARS305V-R. (B) Scatter plots show comparison of individual experimental replicates for the above experiment.\n\n### Fkh1 globally regulates subnuclear positioning of early origins in G1 phase\n\nWe tested whether the Fkh1-dependent localization of ARS305V-R is also responsible for ARS305 localization when residing at its native locus more distal from the telomere. We inserted a lacO array near ARS305 and expressed LacI-GFP and Nup49-GFP; imaging showed that the LacI-GFP focus is clearly distinguishable from the more diffuse Nup49-GFP signal (Figure 3A). Consistent with previous analysis, ARS305 was non-peripheral in most G1-arrested WT cells (Figure 3A) (Heun et al., 2001a), however, deletion of FKH1 significantly increased the proportion of cells in which ARS305 was closer to the periphery (Figure 3A). Consistent with this requirement for FKH1, elimination of the Fkh1/2 binding sites in ARS305 also resulted in peripheral localization (Figure 3\u2014figure supplement 1A). Moreover, ars305-\u2206ACS, which lacks origin function (and Fkh1/2 binding) exhibits an even more peripheral distribution (Figure 3\u2014figure supplement 1A), suggesting that origin function is required for interior localization in G1 and that Fkh1/2 stimulates this localization. Previous analysis showed that ARS305 initiation timing was significantly delayed in the absence of FKH1 or Fkh1/2 binding sites (Knott et al., 2012), so once again we observe a FKH1-dependent relationship between subnuclear localization in G1 phase with replication initiation timing in S phase.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/45512/elife-45512-fig3-v2.jpg)\n\n**Figure 3.:** Diagrams of chromosomes with replication origins labeled with lacO/LacI-GFP (green-filled segment) or tetO/TetR-Tomato (red-filled segment) are shown above the corresponding images. Distances between origins (black-filled spheres) and telomeres, and in some cases centromeres (ovals), are indicated and include\u00a0~14 kb or 16 kb added by lacO or tetO repeats, respectively; elements are not drawn to scale. Cells of WT and fkh1\u2206 strains with ARS305-GFP (HYy151, HYy147) in (A), ARS1303-Tomato (HYy166, HYy173) and ARS1103-Tomato (HYy165, HYy172) in (B), ARS710-GFP (MPy6, MPy10), ARS718-GFP (MPy20, MPy21), and ARS1018-GFP (MPy19, MPy22) in (C), all expressing NUP49-GFP, were arrested in G1 phase at 25\u00b0C with 1x \u03b1-factor 2 hr and live images were captured; scale bar\u00a0=\u00a00.5 \u03bcm. Distances from origin foci to nuclear periphery were determined, plotted as quartile boxplots, and analyzed by a z-test.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/45512/elife-45512-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) Cells with ARS305-GFP (HYy151), ARS305-\u22062BS-GFP (MPy46), and ars305-\u2206ACS-GFP (MPy43) all expressing NUP49-GFP, were treated and analyzed as in Figure 3 legend; scale bar\u00a0=\u00a00.5 \u03bcm. (B) Cycling cultures of WT and fkh1\u2206 strains with ARS305-GFP (HYy151, HYy147) and ARS710-GFP (MPy6, MPy10) were imaged and G1 phase (unbudded) cells were analyzed as described in Figure 3 legend. (C) Cells of WT and fkh1\u2206 strains with ARS501-Tom (HYy198, HYy201) were arrested in G1 phase and analyzed as described in Figure 3 legend.\n\nTo determine whether other Fkh-activated origins\u2019 localizations are also determined by FKH1, we performed similar tests by inserting a tetO array adjacent to a few additional Fkh-activated origins, expressing TetR-Tomato and Nup49-GFP, and deleting FKH1. Like ARS305, ARS1303 and ARS1103 were located closer to the periphery in G1-arrested fkh1\u2206 versus WT cells (Figure 3B). ARS305, ARS1303 and ARS1103 are relatively telomere proximal, residing 39, 32, and 56 kb from the nearest telomere respectively (the lacO or tetO arrays add\u00a0~14 or 16 kb, respectively to these distances), which might constrain the extent to which FKH1 influences their positioning. To address this possibility, we tested localization of several additional Fkh-activated origins that are more distal from telomeres, including: ARS710, ARS718, and ARS1018, residing at 204, 421, and 205 kb from the nearest telomere. All of these origins show significant reduction in distance from the nuclear periphery upon deletion of FKH1 (Figure 3C). We also observed similar results with ARS305 and ARS710 in G1 cells from an unsynchronized population (Figure 3\u2014figure supplement 1B). In contrast, the peripheral localization in G1 of late origin ARS501, which is not Fkh-activated, was not altered by deletion of FKH1 (Figure 3\u2014figure supplement 1C). These results suggest that FKH1 plays an expansive role in relocalizing replication origins from the nuclear periphery to the nuclear interior in G1 phase.\n\n### DDK- but not CDK-dependent step of replication initiation drives origin relocalization\n\nBecause our previous study indicated that Fkh1/2 was required for origin recruitment of Cdc45 in G1 phase (Knott et al., 2012), we tested the requirement for CDC7, which encodes the catalytic subunit of DBF4-dependent kinase (DDK), and is required for Cdc45 origin-loading (reviewed in Tanaka and Araki, 2013). We introduced the cdc7-as3 allele, the kinase activity of which is inhibited by ATP analog PP1 (Wan et al., 2006), and tested whether FKH1-induced origin relocalization occurs with inhibition of CDC7 function. Remarkably, ARS305V-R relocalization was eliminated by inhibition of Cdc7-as3 kinase with PP1 (Figure 4A, compare with non-induction in Figure 1D). These results suggest that DDK activity is required for origin relocalization in G1-arrested cells.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/45512/elife-45512-fig4-v2.jpg)\n\n**Figure 4.:** (A) HYy186 (fkh1\u2206 fkh2-dsm GAL-FKH1 ARS305V-R-Tomato NUP49-GFP cdc7-as3) cells were subjected to FKH1-induction scheme as described in Figure 1C legend except that PP1 or DMSO (vehicle) was included with \u03b1-factor, and images were captured. (B) Cells of ARS305-GFP NUP49-GFP strains HYy151 (WT) and HYy191 (cdc7-4) were arrested in G1 with 1x \u03b1-factor 2 hr at 25\u00b0C followed by 1 hr incubation at 37\u00b0C with 2x \u03b1-factor, and images were captured. (C) HYy181 (ARS305-GFP NUP49-GFP dbf4\u2206C) cells were arrested in G1 phase with 1x \u03b1-factor 2 hr at 25\u00b0C and live images were captured. The control experiment with WT cells (HYy151) is shown in Figure 3A. (A\u2013C) Scale bar\u00a0=\u00a00.5 \u03bcm. Distances from origin foci to nuclear periphery were determined, plotted as quartile boxplots, and analyzed by a z-test.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/45512/elife-45512-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** FKH1-FLAG-tagged strains OAy1102 (WT) and HYy123 (cdc7-as3) were arrested in G1 at 23\u00b0C and treated with PP1 or DMSO (vehicle), and subjected to ChIP-seq analysis. (A) Averaged data from duplicate experiments is plotted for the ARS305 chromosomal region. (B) Data for Fkh-activated origins are plotted. The upper panels present averaged data from the individual replicates presented in the middle and lower panels.\n\nA role for DDK in G1 phase was unexpected as DDK activity has been reported to be low in \u03b1-factor-arrested G1 cells due to instability of Dbf4 (Nougar\u00e8de et al., 2000; Oshiro et al., 1999). To provide further evidence for DDK\u2019s role, we tested a native origin without FKH1 overexpression, and to inactivate CDC7, we chose the temperature-sensitive cdc7-4 allele (Hereford and Hartwell, 1974). For this experiment, G1-arrested WT and cdc7-4 cells bearing a lacO array inserted near ARS305 and expressing LacI-GFP were shifted to the non-permissive temperature and ARS305 location was determined. Compared to WT cells, cdc7-4 cells at the non-permissive temperature showed a significant increase in the proportion of cells with ARS305 near the nuclear periphery (Figure 4B). This result supports the conclusion that DDK activity is required for origin re-positioning in G1 phase cells.\n\nFkh1-origin binding is cell cycle-regulated, occurring in G1 and S phases (Ostrow et al., 2014), suggesting that the requirement for DDK activity in Fkh1-stimulated origin relocalization might be due to dependence of Fkh1 origin-binding on DDK. We tested this possibility by performing chromatin immunoprecipitation analysis of Fkh1 comparing WT and cdc7-as3 cells. The results showed that binding of Fkh1 to ARS305 and other Fkh-activated origins was largely unaffected by Cdc7 inhibition (Figure 4\u2014figure supplement 1). Thus, Fkh1 origin binding appears to be independent of DDK activity, and, by inference, of the subcellular change in localization resulting from DDK inhibition. Alternatively, the requirement for DDK activity in Fkh1-stimulated origin relocalization may reflect Fkh1 acting upstream of DDK, which would comport with a recent report that a critical role of Fkh1 in origin stimulation is DDK recruitment through direct physical interaction with Dbf4 (Fang et al., 2017). We tested whether the same mechanism is responsible for Fkh1-induced origin re-positioning by testing the effect on ARS305 positioning in cells expressing Dbf4 lacking its C-terminus (dbf4\u2206C), which is required for interaction with Fkh1 (Fang et al., 2017). Deletion of DBF4\u2019s C-terminus had a similar effect on origin localization as FKH1 deletion, with greater enrichment of ARS305 near the nuclear periphery (Figure 4C, compare with Figure 3A), consistent with Fkh1 and Dbf4 acting in the same pathway.\n\nThe essential function of DDK in origin firing is phosphorylation of MCM helicase subunits, particularly Mcm4, resulting in removal of auto-inhibition and enabling recruitment of helicase accessory protein Cdc45 through its loading factor Sld3 (reviewed in Tanaka and Araki, 2013). To test whether the requirement for Cdc7 kinase activity in origin relocalization reflects its function in Mcm4 helicase phosphorylation, we introduced into the cdc7-as3 strain an allele of MCM4, MCM4-DD/E(7)+DSP/Q(7) abbreviated herein as MCM4-14D, which contains 14 S/T->D substitutions that mimic critical DDK-phosphorylated residues in Mcm4, and suppresses reduced Cdc7 kinase activity (Randell et al., 2010). The presence of MCM4-14D restores ARS305V-R relocalization upon FKH1 induction in the cdc7-as3 strain inhibited by PP1 (Figure 5A). This supports the conclusion that the function of Cdc7 kinase required for origin relocalization is phosphorylation of Mcm4.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/45512/elife-45512-fig5-v2.jpg)\n\n**Figure 5.:** (A) Fkh1-induction scheme with PP1 as described in Figure 4A legend was carried out with fkh1\u2206 fkh2-dsm GAL-FKH1 ARS305V-R-Tomato NUP49-GFP strains HYy186 (cdc7-as3) and HYy177 (cdc7-as3 MCM4-14D), and images captured. (B) ARS305-GFP NUP49-GFP strains HYy151 (WT) and HYy184 (cdc45-1) were arrested in G1 with 1x \u03b1-factor 1 hr at 30\u00b0C followed by 2 hr incubation at 16\u00b0C with 1x \u03b1-factor, and images were captured. (C) Cells of strain HYy177 harboring no plasmid or high-copy plasmid expressing CDC45 were arrested in G1 with 1x \u03b1-factor 2 hr at 25\u00b0C and images captured. (D) ARS305-GFP NUP49-GFP strain HYy197 (cdc28-as1) cells were arrested in G1 phase with 0.5x \u03b1-factor 2 hr at 25\u00b0C, PP1 or DMSO was added and incubated one additional hour with 0.5x \u03b1-factor, and images were captured. (A\u2013D) Scale bar\u00a0=\u00a00.5 \u03bcm. Distances from origin foci to nuclear periphery were determined, plotted as quartile boxplots, and analyzed by a z-test.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/45512/elife-45512-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** (A) Cells treated as described in Figure 5D legend were released from \u03b1-factor block with PP1 or DMSO and budding morphology was quantified and plotted. (B) ARS305-GFP cdc28-as1 cells (HYy197) were treated with PP1 or DMSO for two hours at 25\u00b0C and origin localization was analyzed in G1 phase (unbudded) cells as described in Figure 5 legend. (C) Cells treated as in (B) were subjected to DNA content analysis; the brackets estimate the proportion of cells in S phase based on DNA content between 1C and 2C.\n\nWe tested whether completion of the DDK-dependent step, that is Sld3 and Cdc45 loading, is required for origin relocalization by testing the effect of inactivation of CDC45 function. The cold-sensitive cdc45-1 allele exhibits interdependence with heat-sensitive alleles cdc7-4 and dbf4-1 in reciprocal temperature-shift experiments, tightly inhibits replication initiation, and reduces Sld3-origin association in G1 phase (Aparicio et al., 1999; Kamimura et al., 2001; Owens et al., 1997). We synchronized WT and cdc45-1 cells in G1 phase at the permissive temperature and shifted the cultures to semi-permissive temperature while maintaining the G1 arrest. Analysis showed that ARS305 was more peripherally localized in cdc45-1 cells at the semi-permissive temperature in G1 phase (Figure 5B). As origin binding of Cdc45 and Sld3 is interdependent and Cdc45-1 inactivation reduces Sld3-origin binding (Kamimura et al., 2001), these results suggest that assembly of Sld3-Cdc45 onto origins is required for origin relocalization.\n\nCdc45 is incorporated into replisomes as a component of the active helicase complex together with MCM and GINS. However, Cdc45 is present in low abundance and is likely limiting for the total number of active replisomes that may be simultaneously active (Mantiero et al., 2011; Tanaka et al., 2011). We noticed that the presence of Mcm4-14D was not sufficient to relocalize ARS305V-R in fkh1\u2206 fkh2-dsm cells in the absence of Fkh1 induction (Figure 5C), which might be contrary to expectations if the only function of Fkh1 is to physically recruit DDK, which has been rendered dispensable by Mcm4-14D. We note, however, that MCM4-14D does not suppress a deletion of CDC7 (S.P. Bell, personal communication) suggesting that residual DDK activity is required for sufficient origin firing, and hence, Fkh1 may act to target this residual activity to specific origins. Absent this targeting, we postulated that the limited abundance of Cdc45 would be further diluted amongst all licensed origins due to potentiation by Mcm4-14D. To test this idea, we introduced a high-copy plasmid expressing Cdc45 from its native promoter into the fkh1\u2206 fkh2-dsm MCM4-14D strain, and examined origin location. Consistent with the notion that Cdc45 is limiting for execution of the DDK-dependent step, expression of high copy Cdc45 significantly increased the frequency of ARS305 more distal from the periphery (Figure 5C). This finding supports the conclusion that full execution of the DDK-dependent step in the form of Cdc45 loading, as opposed to Mcm4 phosphorylation itself or phosphorylation of other targets is required for origin relocalization.\n\nAs the interior localization of early origins occurs in \u03b1-factor-arrested, G1 phase cells, cyclin-dependent kinase (CDK) activity would appear to be dispensable because G1 phase cells have very low levels of S/G2/M-CDK activities, and G1-CDKs, which are required for passage through Start, are inhibited by \u03b1-factor (reviewed in Mendenhall and Hodge, 1998). Nevertheless, low levels of S/G2/M-CDK activities in G1 phase cannot be ruled out, and indeed, it appears that low levels of DDK are involved. Thus, to address the possibility that CDK activity might be contributing to G1 phase origin dynamics, we tested the requirement for CDC28, the Cdk1 kinase, using analog-sensitive cdc28-as1 cells (Bishop et al., 2000). In G1-arrested cells, inhibition of Cdc28-as1 activity with PP1 did not alter localization of ARS305 (Figure 5D), although budding was inhibited upon release from \u03b1-factor arrest indicating effective inhibition of Cdc28-as1 (Figure 5\u2014figure supplement 1A). Similarly, PP1 treatment of cycling cdc28-as1 cells did not alter distribution of ARS305 in G1 phase cells (Figure 5\u2014figure supplement 1B), while DNA content analysis showed delayed entry of cells into S phase indicating effective inhibition of Cdc28-as1 (Figure 5\u2014figure supplement 1C). Thus, CDK activity appears to be dispensable for normal, Fkh1-dependent positioning of ARS305. Overall, our findings indicate that DDK but not CDK activity stimulates origin relocalization in G1 phase.\n\n### Origin mobility increases with origin relocalization\n\nFkh1 might facilitate origin relocalization by promoting origin mobilization (release from the periphery or movement per se), or by increasing the stability of origin-origin interaction after relocalization. In addition to changes in location, replication origins exhibit decreased rate of mobility during progression into S phase (Heun et al., 2001b). We directly investigated how Fkh1 affects origin mobility by tracking the locations of ARS305 and ARS718 in individual WT and fkh1\u2206 cells over time, and applying mean square displacement (MSD) analyses (Marshall et al., 1997). The analysis shows significantly lower plateau of MSD curves in fkh1\u2206 cells (Figure 6A), consistent with less nuclear space explored. Calculation of the radius of constraint (Rc) and the corresponding volume of space explored reveals that ARS305 explores about 2.5-fold more volume and ARS718 explores about 3.8-fold more volume in WT than fkh1\u2206 cells. Tracings of the paths of origin foci show confinement proximal to the nuclear periphery in fkh1\u2206 cells (Figure 6B). Together, these data show that Fkh1 stimulates origin mobilization.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/45512/elife-45512-fig6-v2.jpg)\n\n**Figure 6.:** (A) Mean-squared-displacement (MSD) analysis of tracking data for ARS305-GFP strains HYy151 (WT) and HYy147 (fkh1\u2206) and ARS718-GFP strains MPy20 (WT) and MPy21 (fkh1\u2206). Radius of constraint (Rc) and volume searched (V) are given, and statistical significance comparing WT and fkh1\u2206 was estimated by two-tailed Mann-Whitney test. (B) Images (left) and 3D reconstructions with Imaris (right) showing examples of tracks of origin focus over time (color corresponding to time progression); scale bar\u00a0=\u00a00.4 \u03bcm. Movies of the individual ARS305 time-courses are available as Figure 6\u2014video 1 and Figure 6\u2014video 2.\n\n## Discussion\n\nThis study reveals new links between key molecular interactions in replication initiation and the localization and mobility of replication origins within the nucleus. In particular, we show that early origin specification in G1 phase by Fkh1 induces a change from peripheral to interior nuclear localization of Fkh1-activated origins. Quite remarkably, we find that origin relocalization requires execution of the DDK-dependent step of origin firing that loads Cdc45. That the DDK requirement reflects the key, recognized function of DDK in replication initiation, that is, phosphorylation of MCM proteins leading to Sld3-Cdc45 origin-loading, is demonstrated by the bypass of CDC7 requirement by phospho-mimetic mutations in MCM4-14D as well as the dependence on CDC45 function. This early execution of the DDK step was unexpected because DDK levels have been reported to be very low in \u03b1-factor-arrested G1 cells due to Dbf4 instability (Nougar\u00e8de et al., 2000; Oshiro et al., 1999). Our findings provide direct evidence that DDK is active in G1 phase and has already established origin timing by late G1 phase in \u03b1-factor arrest. This finding explains previous observations that Sld3 and Cdc45 associate with early replication origins in G1 phase (Aparicio et al., 1999; Kamimura et al., 2001). Our findings are also consistent with a more recent study showing that Sld3- and Cdc45-origin association in G1 phase is DDK-dependent and CDK-independent, as well as the conclusion that DDK acts prior to and independently of S-CDK (Heller et al., 2011; Yeeles et al., 2015), the latter of which is dispensable for the observed origin relocalization.\n\nThe finding that Fkh1 and DDK are required for origin relocalization fits well with the recent finding that Fkh1 acts to stimulate origin firing by directly recruiting Dbf4 through physical interaction (Fang et al., 2017), and extends our understanding of the significance of this interaction to replication initiation via nuclear positioning of replication sites. As predicted by this interaction model, inactivation of DDK activity should phenocopy deletion of FKH1, as we have herein demonstrated with depletion of CDC7 function. Moreover, specific deletion of Dbf4\u2019s C-terminus, which is required for interaction with Fkh1, also phenocopies deletion of FKH1. Furthermore, the absence of FKH1 and FKH2 function is bypassed by the MCM4-14D allele in the presence of increased levels of Cdc45. Together, these results support a mechanism involving Fkh1 recruitment of DDK activity to load Cdc45 at a subset of origins in G1, corresponding with a change in subnuclear positioning of these origins, and early firing in the subsequent S phase.\n\nChromosome conformation capture (Hi-C) experiments have indicated that early firing replication origins preferentially interact with each other, or \u2018cluster\u2019 in G1 phase (Duan et al., 2010). Related studies have shown that Fkh1/2 is required for these spatial interactions amongst early origins (Eser et al., 2017; Knott et al., 2012; Ostrow et al., 2017). We propose that the origin clustering interactions revealed by Hi-C experiments directly reflect origin localization to distinct nuclear territories as observed microscopically. Thus, localization to the nuclear interior might increase the likelihood for physical interaction amongst this subset of origins. Such interactions may be driven by cooperative interactions between Fkh1-bound origins recruiting limiting initiation factors such as Dbf4, Sld3 and Cdc45. This aggregation of origins selected for early/efficient activation has the inevitable consequence that replication initiation transforms these origin clusters into replication foci, which have been observed as concentrations of DNA synthesis and replication factors (Berezney et al., 2000; Frouin et al., 2003; Hoz\u00e1k et al., 1994; Kitamura et al., 2006; Nakamura et al., 1986; Newport and Yan, 1996). These assemblages may contribute to efficient chromosomal replication initiation and elongation in multiple ways, such as accretion of activities and co-factors directly required for DNA synthesis (e.g.: dNTP production), and scaffolding to co-localize and coordinate replication with related activities like chromatin assembly, cohesion establishment, topological resolution, and DNA repair.\n\nIt remains to be determined exactly what maintains either the peripheral or interior localization of origins or what drives relocalization between different subnuclear zones. While telomere tethering to the nuclear envelope has been assumed to cause the peripheral localization of telomere-proximal origins, we find that early origins distal from telomeres that are normally enriched in the nuclear interior, are closer to the nuclear periphery in cells lacking Fkh1, suggesting that perinuclear localization represents a default state for most origins irrespective of telomere tethering (Figure 7A). It is unclear what promotes this origin localization. Complete elimination of origin function results in even more peripheral distribution of the locus suggesting that peripheral localization is independent of an origin tethering mechanism, and that interior localization is linked to activation of origin function, which may occur, with less efficiency, in the absence of Fkh1/2. There may be passive exclusion from the interior where other activities like transcription may predominate in early G1, or there may be a dedicated tethering mechanism, though origin association with the periphery does not appear to be as stringently localized or as stable as that of telomeres (Hediger et al., 2002; Heun et al., 2001a; Heun et al., 2001b).\n\n![Figure 7.](https://cdn.elifesciences.org/articles/45512/elife-45512-fig7-v2.jpg)\n\n**Figure 7.:** (A) Absent Fkh1, most replication origins are enriched at nuclear periphery, however, Fkh1 binding to a subset of origins allows execution of the DDK-dependent step of initiation, resulting in release from the nuclear periphery and/or capture in the nuclear interior to form early origin clusters. (B) Hypothetical mechanism for origin tethering to the nuclear periphery regulated by Rif1-PP1 versus Fkh1-DDK-Cdc45 activities. Rif1 associates with inner nuclear membrane and with licensed replication origins, while associated PP1 antagonizes execution of the DDK-dependent step. Fkh1-dependent recruitment of DDK results in phosphorylation of MCM, Cdc45 loading and local release from Rif1 and PP1. See text for further discussion.\n\nIn addition to subtelomeric origins, Rif1 regulates and associates with origins distal from telomeres and with the nuclear envelope, and therefore could potentially tether origins to the periphery (Figure 7A) (Hafner et al., 2018; Park et al., 2011; Peace et al., 2014). Rif1 interacts with Dbf4 and with the counteracting PP1 phosphatase, suggesting that the Rif1-origin interaction may be down-regulated by DDK-dependent phosphorylation of MCM proteins and/or Rif1 (Dav\u00e9 et al., 2014; Hiraga et al., 2014; Mattarocci et al., 2014). Thus, Fkh1-mediated, origin-specific recruitment of DDK may overwhelm Rif1-mediated PP1 inhibition locally and thereby release the origin from peripheral tethering (Figure 7B). Consequent Cdc45 loading might effectively prevent reversal of MCM phosphorylation and fully disrupt interaction with Rif1-PP1. Alternatively, MCM phosphorylation and/or Cdc45 loading might change the licensed origin\u2019s biophysical properties, thereby forcing the origin to occupy and search different space and/or capture scaffolding factors, which may themselves be localized to the interior and thus stabilize interior localization. Future studies aimed at more detailed examination of how individual factors affect origin mobility should provide further insights.\n\nPrevious studies have concluded that peripheral localization of origins is neither necessary nor sufficient to regulate initiation timing. In one study, subtelomeric origin ARS501 remained late firing following excision (in \u03b1-factor-arrested G1 cells) from the chromosome, which allowed its diffusion away from the nuclear periphery, leading the authors to suggest that peripheral localization might promote a chromatin mark that maintains late timing (Heun et al., 2001a). However, we have shown that induction of Fkh1 (in \u03b1-factor-arrested cells) can reprogram timing of a Fkh-activated origin inserted into the ARS501 locus (Peace et al., 2016). We propose that the relevant chromatin mark is MCM phosphorylation, removal of which is promoted by peripheral localization and addition by DDK recruitment. Thus, excised ARS501 remains late despite its mobilization because DDK is limiting and already recruited by Ctf19 and Fkh1/2 to other origins. Other studies have shown that tethering of early origins to the nuclear periphery does not delay their activation (Ebrahimi et al., 2010; Zappulla et al., 2002). However, both origins in these previous studies, ARS305 and ARS607, are Fkh-activated origins that we have shown can overcome the replication initiation delay associated with peripheral localization. Overall, these previous findings fit neatly into our model, which suggests that interior origin localization is a consequence rather than a cause of early timing.\n\n## Materials and methods\n\n### Plasmid constructions\n\nPlasmids are listed in Supplementary file 1. Plasmids were constructed using Gibson Assembly kit (SGI cat#GA1200) unless otherwise indicated. Restriction enzymes, T4 DNA ligase, and Klenow were from New England Biolabs and used according to their protocols. Mutagenesis was carried out using QuikChange Lightning Multi kit (Agilent cat#210515); sequence changes were confirmed by DNA sequencing (Retrogen Inc). STBLII cells were used for maintenance of plasmids containing tandem repeats (Invitrogen cat#10268019). Primer sequences for plasmid constructions are given in Supplementary file 2. NUP49-GFP was PCR-amplified from pUN100-GFP*-Nup49 (from V Doye) using primers Nup49-GFP-F and Nup49-GFP-R and subcloned into XhoI+SacI digested vectors pRS403 and pRS404 (Sikorski and Hieter, 1989) to yield p403-Nup49-GFP and p404-Nup49-GFP, respectively. Primers ADE2-up-F and ADE2-int-R and separately ADE2-farup-F and ADE2-up-R were used to amplify sequences of ADE2 for targeting and as a selectable marked; these were inserted into pbluescriptKS+\u00a0to create pblueKS-ADE2target. TetR-Tomato was PCR-amplified from plasmid p402-TetR-Tomato (from S Sabatinos) using primers TetR-Tom-F and TetR-Tom-R and inserted into PacI-digested pblueKS-ADE2target to generate pTetR-Tom-ADE2. 2.1kbp KpnI-SacI fragment containing LacI-GFP was subcloned from pAFS135 (from J Bachant) into pRS404 digested with same enzymes to create p404-LacI-GFP. Plasmids containing tetO (pGS004 from J Bachant) or lacO (pJBN164 from J Bachant) arrays were modified by introduction of genomic sequences to target integration near different origins. The following primer pairs were used to generate sequences adjacent to the indicated origins (with the corresponding chromosomal coordinates given in parentheses): primers ARS501-tetO-F and ARS501-tetO-R for ARS501 (V:547812\u2013548329), primers ARS1103-tetO-F and ARS1103-tetO-R for ARS1103 (XI:54673\u201354996) and primers ARS1303-tetO-F and ARS1303-tetO-R for ARS1303 (XIII:31983\u201332247), and these were inserted into KpnI+ClaI digested pGS004 yielding pARS501-tetO, pARS1103-tetO, and pARS1303-tetO, respectively. Likewise, the following primer pairs were used to generate sequences adjacent to the indicated origins: primers ARS710-lacO-F and ARS710-lacO-R for ARS710 (VII:204305\u2013204831), primers ARS718-lacO-F and ARS718-lacO-R for ARS718 (VII:422375\u2013423281), and primers ARS1018-lacO-F and ARS1018-lacO-R for ARS1018 (X:539662\u2013540395), and these were inserted into XhoI+KpnI digested pJBN164 yielding pARS710-lacO, pARS718-lacO, and pARS1018-lacO, respectively. Two adjacent regions near ARS305 were PCR-amplified using primer pair NotI-ARS305-5\u2019 and XhoI-ARS305-5\u2019 (III:37283\u201337778) and primer pair NotI-ARS305-3\u2019 and KpnI-ARS305-3\u2019 (III:37779\u201338282) and digested with NotI and XhoI and NotI and KpnI, respectively; these fragments were ligated into pRS404 digested with XhoI and KpnI. The XhoI-KpnI fragment was subcloned by digestion and ligation into pJBN164 digested with same enzymes to yield pARS305-lacO. Plasmids p501\u0394-ARS305-\u0394ACS and p501\u0394-ARS305-\u22062BS were created by mutagenesis of p501\u0394-ARS305 (Peace et al., 2016) with primers ARS305-\u2206ACS-mut1, ARS305-\u2206ACS-mut2 and ARS305-\u22062BS-mut1, and ARS305-\u22062BS-mut2, respectively. Plasmid p404-ars305\u2206-BInc was constructed as described for p306-ars305\u2206-BrdU-Inc (Zhong et al., 2013) except that p404-BrdU-Inc (Viggiani and Aparicio, 2006) was used instead of p306-BrdU-Inc. p404-ars305\u2206-BInc was digested with PmlI and KpnI, blunted-ended with Klenow, and ligated with T4 DNA ligase to remove the TRP1 selectable marker, yielding p400-ars305\u2206-BInc. The 1.5 kb SalI-SpeI fragment containing the KanMx cassette from pFA6-KanMx (Longtine et al., 1998) was ligated into SalI-SpeI-digested p400-ars305\u2206-BInc, creating pKanMx-ars305\u2206-BInc. The cdc45-1 allele was PCR-amplified from strain YB298 (from B Stillman) with primers Cdc45-F and Cdc45-R and inserted into SacI+KpnI digested pRS406 (Sikorski and Hieter, 1989) to create p406-cdc45-1.\n\n### Yeast strain constructions\n\nAll strains are congenic with SSy161, derived from W303-1a (RAD5) (Viggiani and Aparicio, 2006); complete genotypes are given in Supplementary file 3. Strain constructions were carried out by genetic crosses or lithium acetate transformations with linearized plasmids or PCR products generated with hybrid oligonucleotide primers having homology to target loci (Ito et al., 2001; Longtine et al., 1998); primer sequences for strain constructions are given in Supplementary file 2. Genomic alterations were confirmed by PCR analysis or DNA sequence analysis as appropriate.\n\nFKH1 was deleted using primers Fkh1-up and Fkh1-down to amplify KanMx selectable marker from pFA6-KanMx (Longtine et al., 1998). FKH2 was replaced by fkh2-dsm in two steps: first, FKH2 was entirely replaced with URA3 (C. albicans) using pAG61 (Addgene), and the resulting strain was transformed with fkh2-dsm DNA from p405-fkh2-dsm (Ostrow et al., 2017) followed by selection on 5-FOA. GAL-FKH1 was introduced using p405-GAL-FKH1 and FKH1 was FLAG-tagged as described previously (Peace et al., 2016). ARS501 was replaced by ARS305 or mutant versions of ARS305 by transformation with p501\u2206-ARS305, p501\u2206-ARS305-\u2206ACS, or p501\u2206-ARS305-\u22062BS as described previously (Peace et al., 2016). BrdU incorporation cassette was introduced, replacing ARS305, by transformation with BglII-digested p404-ARS305-BrdUInc. The cdc28-as1 allele was introduced by pop-in/pop-out of plasmid pJUcdc28-as1 digested with HindIII. The cdc7-as3 allele was introduced as described previously (Zhong et al., 2013); cdc7-4 was back-crossed from H7C4A1 (from L Hartwell) into the W303 background four times, with the final cross to HYy151. MCM4-DD/E+DSP/Q (referred to in text as MCM4-14D) was introduced by transformation with PacI-digested pJR179 (from SP Bell). The cdc45-1 allele was introduced by crossing with strain YB298 (from B Stillman) or by pop-in/pop-out with BglII-digested p406-cdc45-1. The dbf4\u2206C allele was constructed by insertion of a non-sense codon with the KanMx cassette from pFA6-KanMx (Longtine et al., 1998) using primers Dbf4-up and Dbf4-down. TetR-Tomato was introduced by transformation with PacI-digested pTetR-Tom-ADE2. LacI-GFP was introduced by transformation with HindIII-digested p404-LacI-GFP. The tetO or lacO arrays were introduced by transformation with pARS501-tetO, pARS1103-tetO, pARS1303-tetO, pARS305-lacO, pARS710-lacO, pARS718-lacO and pARS1018-lacO digested with PacI, PshAI, BlpI, NotI, PshAI, SnaBI, and BlpI, respectively.\n\n### Cell growth and synchronization\n\nCells were grown at 25\u00b0C unless otherwise indicated. For microscopy, cells were grown in complete synthetic medium supplemented with 15 \u03bcg/mL adenine (CSM+ade)\u00a0+2% dextrose, unless otherwise indicated (raffinose or galactose); for QBU and ChIP-seq, cells were grown in YEP\u00a0+2% dextrose, unless otherwise indicated (raffinose or galactose). G1 arrest was achieved by incubation with 2.5 nM (1x) \u03b1\u2013factor (Sigma T6901); for most extended arrests, a fresh or additional dose of \u03b1\u2013factor was added at time of induction/non-induction or at time of temperature shift as indicated in figure legend. PP1 (Tocris Biosciences) was added to 25 \u03bcM at the time of initial \u03b1\u2013factor incubation. Reagents are listed in Supplementary file 4.\n\n### Live-cell fluorescence microscopy and image analysis\n\n~5\u00d7106 cells were harvested by centrifugation and spread on agarose pads made of CSM+ade\u00a0+4% dextrose. A DeltaVision wide-field deconvolution microscope was used to capture 28 Z-stacks in 0.25 \u03bcm increments for each image. SoftWorX software (Applied Precision/GE Healthcare) was used for deconvolution and three-dimensional reconstruction of nuclei, and for measuring the distance between replication origins and nuclear periphery. For experiments with mutant strains having irregularly shaped nuclei (e.g.: fkh1\u2206 fkh2-dsm), measurements were made in three-dimensions; otherwise, measurements were made in two dimensions using a few middle sections as previously described (Ryu et al., 2015). A z-test was applied to compare the distribution of measured distances. Images are max intensity projections of two to four middle Z-stacks.\n\n### Quantitative BrdU Immunoprecipitation (QBU)\n\nQBU and analysis of sequencing reads was performed as described previously using KAPA Hyper Prep Kit (KK8504) (Haye-Bertolozzi and Aparicio, 2018). Data analysis was performed using 352 replication origins classified as Fkh-activated, Fkh-repressed, or Fkh-unregulated (Knott et al., 2012); the latter two classes are grouped together as \u2018other origins\u2019 in Figure 2\u2014figure supplement 1. Reagents are listed in Supplementary file 4.\n\n### Chromatin immunoprecipitation analyzed by sequencing (ChIP-seq)\n\nChIP-seq and analysis of sequencing reads was performed as described previously using KAPA Hyper Prep Kit (KK8504) (Ostrow et al., 2015). Data analysis was performed using 95 replication origins classified as Fkh-activated (Knott et al., 2012). Reagents are listed in Supplementary file 4.\n\n### Time-lapse video and MSD analysis\n\nA DeltaVision wide-field deconvolution microscope was used to capture 20 Z-stacks in 0.30 \u03bcm increments for each time point. GFP signals were imaged every 12 s for 5 min, with 0.1 s exposure for each Z-stack and 32% of transmitted light using an LED source. All time-lapse movies were deconvolved using SoftWoRx. At least 20 individual cells with nearly stationary nuclei were used to track the trajectory of origin focus for each strain using Imaris (Bitplane), and MSD curves, Rc, and volumes were derived as previously described (Caridi et al., 2018); the error bars represent standard error.\n\n### Supplemental data files\n\nRaw data, images, and analysis files are available and organized into folders corresponding to main and supplementary figures. Data is available at Dryad (https://dx.doi.org/10.5061/dryad.7bm444s).\n",
+      "created_at": "2025-12-02T10:06:34.634882Z"
+    },
+    {
+      "id": "91e4060c-226f-4fa6-b54c-566320ae4c42",
+      "submission_id": "7713dfbc-047d-46a7-80da-dff98c1519a2",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Bruce Stillman, Cold Spring Harbor Laboratory United States\n\nReviewers:\n- Bruce Stillman, Cold Spring Harbor Laboratory United States\n- Philippe Pasero\n\n## Review text\n\nDOI: [10.7554/eLife.45512.024](https://doi.org/10.7554/eLife.45512.024)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Dynamic relocalization of replication origins by Fkh1 requires execution of DDK function and Cdc45 loading at origins\" for consideration by eLife. Your article has been reviewed by three peer reviewers, including Bruce Stillman as the Reviewing Editor and Reviewer #1, and the evaluation has been overseen by Jessica Tyler as the Senior Editor. The following individual involved in review of your submission has agreed to reveal their identity: Philippe Pasero (Reviewer #2).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nThe paper by Zhang et al. addresses a mechanism for the activation of a select subset of origins of DNA replication in the yeast S. cerevisiae that are dependent on the Fkh1/2 proteins for the normal timing of their activation during S phase. The authors show that in the absence of Fkh1/2, an origin of DNA replication associates with the nuclear periphery and upon expression of Fkh1, the origin re-localizes to the nuclear interior. The later movement is dependent upon DDK (Cdc7-Dbf4) kinase and Cdc45 activities, but not CDK. They present a plausible model in which Fkh1/2 recruits the rate limiting Dbf4 DDK subunit to the nuclear periphery by biding to Fkh1/2, countering the Rif1-PP1 dephosphorylation of Mcm4 and releasing the origin to the interior of the nucleus where Cdc45 binding prevents its re-localization to the nuclear periphery.\n\nThe paper generally is well presented and for the most part the data supports the conclusions, however, the reviewers have raised some points that could be addressed. These are listed below. Thus we ask that a revised paper be submitted for publication in eLife.\n\nEssential revisions:\n\n1) The correlation between release from the nuclear periphery and early replication timing leads to the reasonable speculation that sub-nuclear localization mechanistically regulates replication timing. Previous work has concluded that peripheral localization is neither necessary (Heun et al., 2001 https://www.ncbi.nlm.nih.gov/pubmed/11266454) nor sufficient (Zappulla et al, 2002 https://www.ncbi.nlm.nih.gov/pubmed/12062049) to regulate replication timing. Furthermore, earlier work from the Gasser and Brewer & Fangman labs suggested that an epigenetic mark is established at late origins in G1 through their interaction with the nuclear periphery and is maintained later on to determine their timing of initiation, regardless of their subnuclear organization. This model is not mutually exclusive with the one proposed by the authors and should be discussed. This should be addressed in the paper.\n\n2) The view that the re-localization of Fkh1 origins does not depend on residual CDK activity in G1 is not fully supported by the experiment performed with clb5 clb6 mutants. Indeed, S-phase onset is only delayed by 30 minutes in this mutant. In principle, Clb3 and Clb4 could also support a residual CDK activity in alpha-factor arrested cells. It would have been more convincing to use a conditional cdc28 mutant.\n\n3) A question that the authors do not address is why, in Figure 4\u2014figure supplement 1 does Fkh1 bind non-Fkh1-activated origins? Or, put another way, why does Fkh1 not activate all the origins to which it binds? The manuscript focuses on Fkh1-regulated origins, but it would be important to show that the localization of late origins and Fkh1-independent origins does not depend on Fkh1 and/or DDK activity in G1.\n\n4) The authors' model is difficult to integrate into a more comprehensive model of sub-nuclear localization. In fkh1\u2206 fkh2\u2206, are all origins at the nuclear periphery? If so, is there any DNA in the nuclear interior? Why is ARS305V-R-\u2206ACS confined to the nuclear periphery? In authors' model is that origins bind to the periphery unless released by DDK, but in the case of ARS305V-R-\u2206ACS, it seems that the origin is required to drive the locus away from the periphery. Why would a non-origin locus bind to periphery? Do all non-origin loci bind to the periphery? These questions should be addressed by testing if the ARS305 ACS is required for FKH1-dependent localization at its endogenous locus.\n",
+      "created_at": "2025-12-02T10:06:34.634882Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T10:06:34.634882Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T10:06:34.634882Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "36b39e3a-af4e-4a7e-af0b-655e4a4481eb",
+      "content_id": "4a7d9e09-9b14-4643-8b10-bb2daae23b73",
+      "claim_id": "C1",
+      "claim": "Replication origins occupy characteristic subnuclear localizations that anticipate their initiation timing during S phase in S. cerevisiae.",
+      "claim_type": "EXPLICIT",
+      "source": "In S. cerevisiae, replication origins occupy characteristic subnuclear localizations that anticipate their initiation timing during S phase.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract as a known observation that provides context for the study.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:06:34.634882Z"
+    },
+    {
+      "id": "9f0428b9-eb15-4fc0-81e8-368039a11e3f",
+      "content_id": "4a7d9e09-9b14-4643-8b10-bb2daae23b73",
+      "claim_id": "C2",
+      "claim": "Localization of replication origins in G1 phase is linked with Fkh1 activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we link localization of replication origins in G1 phase with Fkh1 activity, which is required for their early replication timing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding stated in the abstract and supported by experimental data throughout the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:06:34.634882Z"
+    },
+    {
+      "id": "28e68057-eef4-4b06-bb6d-a0e9bc396b45",
+      "content_id": "4a7d9e09-9b14-4643-8b10-bb2daae23b73",
+      "claim_id": "C3",
+      "claim": "Execution of Dbf4-dependent kinase function results in dynamic relocalization of a replication origin from the nuclear periphery to the interior in G1 phase.",
+      "claim_type": "EXPLICIT",
+      "source": "Using a Fkh1-dependent origin relocalization assay, we determine that execution of Dbf4-dependent kinase function, including Cdc45 loading, results in dynamic relocalization of a replication origin from the nuclear periphery to the interior in G1 phase.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding stated in the abstract and supported by experimental data in Figures 4 and 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:06:34.634882Z"
+    },
+    {
+      "id": "d5714817-18ab-4d3d-a292-e4a780927c2f",
+      "content_id": "4a7d9e09-9b14-4643-8b10-bb2daae23b73",
+      "claim_id": "C4",
+      "claim": "Cdc45 loading is required for dynamic relocalization of a replication origin from the nuclear periphery to the interior in G1 phase.",
+      "claim_type": "EXPLICIT",
+      "source": "Using a Fkh1-dependent origin relocalization assay, we determine that execution of Dbf4-dependent kinase function, including Cdc45 loading, results in dynamic relocalization of a replication origin from the nuclear periphery to the interior in G1 phase.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding stated in the abstract and supported by experimental data in Figure 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:06:34.634882Z"
+    },
+    {
+      "id": "5b8b1160-4316-491f-896c-9eff3006ec9d",
+      "content_id": "4a7d9e09-9b14-4643-8b10-bb2daae23b73",
+      "claim_id": "C5",
+      "claim": "Origin mobility increases substantially with Fkh1-driven relocalization.",
+      "claim_type": "EXPLICIT",
+      "source": "Origin mobility increases substantially with Fkh1-driven relocalization.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding stated in the abstract and supported by experimental data in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:06:34.634882Z"
+    },
+    {
+      "id": "8927a901-c6e8-49ff-a9be-07e72453429d",
+      "content_id": "4a7d9e09-9b14-4643-8b10-bb2daae23b73",
+      "claim_id": "C6",
+      "claim": "Euchromatin and heterochromatin are distinguished by their levels of transcriptional activity, replication timing, and subnuclear localization.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, euchromatin and heterochromatin represent distinct forms of chromatin that are distinguished by their levels of transcriptional activity, replication timing, and subnuclear localization (reviewed in Caridi et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to a review article.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:06:34.634882Z"
+    },
+    {
+      "id": "92316ed4-d53c-447c-a728-6d8f31b11674",
+      "content_id": "4a7d9e09-9b14-4643-8b10-bb2daae23b73",
+      "claim_id": "C7",
+      "claim": "TAD boundaries correlate closely with replication timing domains.",
+      "claim_type": "EXPLICIT",
+      "source": "TAD boundaries correlate closely with replication timing domains, suggesting that replication timing is determined or influenced by this domain structure and/or vice-versa.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an observation from the literature that provides context.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:06:34.634882Z"
+    },
+    {
+      "id": "e2dd24f3-da63-4282-8c93-bb49351ed9a8",
+      "content_id": "4a7d9e09-9b14-4643-8b10-bb2daae23b73",
+      "claim_id": "C8",
+      "claim": "Rif1 is globally responsible for delayed replication timing of subtelomeric domains as well as internal late-replicating domains.",
+      "claim_type": "EXPLICIT",
+      "source": "Rif1, which is highly enriched at telomeres, is globally responsible for delayed replication timing of subtelomeric domains as well as internal late-replicating domains (Hafner et al., 2018; Hayano et al., 2012; Peace et al., 2014; Tazumi et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to published studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:06:34.634882Z"
+    },
+    {
+      "id": "0296d91d-084b-42a9-92cf-96add406f8da",
+      "content_id": "4a7d9e09-9b14-4643-8b10-bb2daae23b73",
+      "claim_id": "C9",
+      "claim": "Rif1 acts by directly antagonizing replication initiation triggered by Dbf4-dependent kinase (DDK) phosphorylation of MCM helicase proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "Rif1 acts by directly antagonizing replication initiation triggered by Dbf4-dependent kinase (DDK) phosphorylation of MCM helicase proteins (Dav\u00e9 et al., 2014; Hiraga et al., 2014; Mattarocci et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to published studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:06:34.634882Z"
+    },
+    {
+      "id": "2398d7ce-e07e-4b85-aa71-9ee0b7947a14",
+      "content_id": "4a7d9e09-9b14-4643-8b10-bb2daae23b73",
+      "claim_id": "C10",
+      "claim": "Dbf4 is present in limited abundance and is rate-limiting for origin firing.",
+      "claim_type": "EXPLICIT",
+      "source": "Against this inhibitory backdrop, specific origins are selected for early activation by mechanisms involving recruitment of Dbf4 (Dfp1 in fission yeast), which is one of several initiation proteins present in limited abundance and thus rate-limiting for origin firing (Mantiero et al., 2011; Patel et al., 2008; Tanaka et al., 2011; Wu and Nurse, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to published studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:06:34.634882Z"
+    },
+    {
+      "id": "ab10aaad-8f99-4e47-9ff1-960716572753",
+      "content_id": "4a7d9e09-9b14-4643-8b10-bb2daae23b73",
+      "claim_id": "C11",
+      "claim": "Fkh1 and/or Fkh2 recruits Dbf4 to many origins distributed throughout chromosome arms, thereby ensuring earlier replication of many centromere-distal regions.",
+      "claim_type": "EXPLICIT",
+      "source": "In S. cerevisiae, Fkh1 and/or Fkh2 (Fkh1/2) recruits Dbf4 to many origins distributed throughout chromosome arms, thereby ensuring earlier replication of many centromere-distal regions (Fang et al., 2017; Knott et al., 2012; L\u00f5oke et al., 2013; Ostrow et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to published studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:06:34.634882Z"
+    },
+    {
+      "id": "aa80e064-c458-4b40-97c2-4b7f44119716",
+      "content_id": "4a7d9e09-9b14-4643-8b10-bb2daae23b73",
+      "claim_id": "C12",
+      "claim": "Early-firing origins cluster spatially in G1-phase prior to initiation and this clustering is dependent on Fkh1/2.",
+      "claim_type": "EXPLICIT",
+      "source": "Chromosome conformation capture experiments suggest that early-firing origins cluster spatially in G1-phase prior to initiation and this clustering is dependent on Fkh1/2 (Duan et al., 2010; Knott et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to published studies using chromosome conformation capture.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:06:34.634882Z"
+    },
+    {
+      "id": "e58f14c6-388a-45bc-b9c1-a8ef35fad9a6",
+      "content_id": "4a7d9e09-9b14-4643-8b10-bb2daae23b73",
+      "claim_id": "C13",
+      "claim": "Early origins generally occupy a distinct space than late origins.",
+      "claim_type": "EXPLICIT",
+      "source": "These studies also indicated that early origins generally occupy a distinct space than late origins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a finding from chromosome conformation capture studies mentioned in the previous sentence.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:06:34.634882Z"
+    },
+    {
+      "id": "fec4fc22-b13f-4ada-8f49-dabfca05f8dc",
+      "content_id": "4a7d9e09-9b14-4643-8b10-bb2daae23b73",
+      "claim_id": "C14",
+      "claim": "Fkh1/2 are enriched at TAD boundaries and control contacts among origins within TADs.",
+      "claim_type": "EXPLICIT",
+      "source": "Further studies suggest that Fkh1/2 are enriched at TAD boundaries and control contacts among origins within TADs (Eser et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to a published study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:06:34.634882Z"
+    },
+    {
+      "id": "27e8e83c-75a1-40ed-bd94-e4f6e7fcb931",
+      "content_id": "4a7d9e09-9b14-4643-8b10-bb2daae23b73",
+      "claim_id": "C15",
+      "claim": "Late-firing origins typically associate with the nuclear periphery during G1 phase.",
+      "claim_type": "EXPLICIT",
+      "source": "These seminal studies from Heun and Gasser showed that late-firing origins typically associate with the nuclear periphery during G1 phase whereas early-firing origins typically are found in the nuclear interior during G1 (Heun et al., 2001a; Heun et al., 2001b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to published studies by Heun and Gasser.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:06:34.634882Z"
+    },
+    {
+      "id": "73335dd9-4ffa-4ccf-8f9d-7294e0f5a2cd",
+      "content_id": "4a7d9e09-9b14-4643-8b10-bb2daae23b73",
+      "claim_id": "C16",
+      "claim": "Early-firing origins typically are found in the nuclear interior during G1.",
+      "claim_type": "EXPLICIT",
+      "source": "These seminal studies from Heun and Gasser showed that late-firing origins typically associate with the nuclear periphery during G1 phase whereas early-firing origins typically are found in the nuclear interior during G1 (Heun et al., 2001a; Heun et al., 2001b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to published studies by Heun and Gasser.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:06:34.634882Z"
+    },
+    {
+      "id": "1982dd06-111f-49d5-aeeb-9bc98df482b9",
+      "content_id": "4a7d9e09-9b14-4643-8b10-bb2daae23b73",
+      "claim_id": "C17",
+      "claim": "Origins relocalize from the nuclear periphery upon execution of the DDK-dependent step of replication initiation, which is stimulated by Fkh1.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results suggest that origin relocalize from the nuclear periphery upon execution of the DDK-dependent step of replication initiation, which is stimulated by Fkh1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary conclusion stated in the introduction and supported by experimental data throughout the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:06:34.634882Z"
+    },
+    {
+      "id": "03894a6c-6e4e-4333-94ce-f2706f585f37",
+      "content_id": "4a7d9e09-9b14-4643-8b10-bb2daae23b73",
+      "claim_id": "C18",
+      "claim": "Origin relocalization may represent the initial stages in the coalescence of replication origins into clusters that will become replication factories.",
+      "claim_type": "EXPLICIT",
+      "source": "This may represent the initial stages in the coalescence of replication origins into clusters that will become replication factories.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is presented as a speculative interpretation of the findings.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:06:34.634882Z"
+    },
+    {
+      "id": "0336dd33-1026-4dac-afbf-ef875577d882",
+      "content_id": "4a7d9e09-9b14-4643-8b10-bb2daae23b73",
+      "claim_id": "C19",
+      "claim": "Induction of FKH1 expression in fkh1\u2206 fkh2\u2206 cells in G1-phase results in early-firing of ARS305V-R in the ensuing S-phase.",
+      "claim_type": "EXPLICIT",
+      "source": "However, induction of FKH1 expression in these cells in G1-phase results in early-firing of ARS305V-R in the ensuing S-phase.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a finding from a previous study by the authors.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:06:34.634882Z"
+    },
+    {
+      "id": "99d4e54d-1e25-4da0-94de-a2154dcbadb1",
+      "content_id": "4a7d9e09-9b14-4643-8b10-bb2daae23b73",
+      "claim_id": "C20",
+      "claim": "fkh1\u2206 fkh2-dsm cells are essentially null for replication timing control.",
+      "claim_type": "EXPLICIT",
+      "source": "In the current study, we used fkh1\u2206 fkh2-dsm instead of fkh1\u2206 fkh2\u2206 cells; fkh1\u2206 fkh2-dsm cells are essentially null for replication timing control, but exhibit more normal growth and particularly, more normal cell and nuclear morphologies favorable for cytological analysis (Ostrow et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to a published study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:06:34.634882Z"
+    },
+    {
+      "id": "2fb61482-9e98-4bb0-a615-d2a716daee65",
+      "content_id": "4a7d9e09-9b14-4643-8b10-bb2daae23b73",
+      "claim_id": "C21",
+      "claim": "The localization of the ARS305V-R-Tomato focus correlates with cell cycle stage, showing primarily peripheral localization in unbudded and small-budded cells and interior localization in larger-budded cells.",
+      "claim_type": "EXPLICIT",
+      "source": "The localization of the ARS305V-R-Tomato focus correlates with cell cycle stage, showing primarily peripheral localization in unbudded and small-budded cells and interior localization in larger-budded cells (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by microscopy data shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:06:34.634882Z"
+    },
+    {
+      "id": "b0709022-2fce-4ab0-866f-b779ac651229",
+      "content_id": "4a7d9e09-9b14-4643-8b10-bb2daae23b73",
+      "claim_id": "C22",
+      "claim": "In G1-arrested fkh1\u2206 fkh2-dsm cells, almost all cells exhibited peripheral localization of ARS305V-R.",
+      "claim_type": "EXPLICIT",
+      "source": "In G1-arrested fkh1\u2206 fkh2-dsm cells, almost all cells exhibited peripheral localization of ARS305V-R (Figure 1C, left panel).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by microscopy data shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:06:34.634882Z"
+    },
+    {
+      "id": "457bdd79-038d-4b57-a668-a2201c62786c",
+      "content_id": "4a7d9e09-9b14-4643-8b10-bb2daae23b73",
+      "claim_id": "C23",
+      "claim": "Induction of FKH1 resulted in an increase in the proportion of cells with non-peripheral positioning of ARS305V-R.",
+      "claim_type": "EXPLICIT",
+      "source": "Induction of FKH1, however, resulted in an increase in the proportion of cells with non-peripheral positioning of ARS305V-R (Figure 1C, right panel), suggesting that origin relocalization is associated with initiation timing re-programming by FKH1.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by microscopy data shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:06:34.634882Z"
+    },
+    {
+      "id": "a46125c5-f44c-4aef-a3c1-79a92658dd4d",
+      "content_id": "4a7d9e09-9b14-4643-8b10-bb2daae23b73",
+      "claim_id": "C24",
+      "claim": "Origin relocalization is associated with initiation timing re-programming by FKH1.",
+      "claim_type": "EXPLICIT",
+      "source": "Induction of FKH1, however, resulted in an increase in the proportion of cells with non-peripheral positioning of ARS305V-R (Figure 1C, right panel), suggesting that origin relocalization is associated with initiation timing re-programming by FKH1.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference drawn from the observation that FKH1 induction causes both relocalization and timing changes.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:06:34.634882Z"
+    },
+    {
+      "id": "96dc388f-b7f0-4636-b1a4-2b028dfe1ed8",
+      "content_id": "4a7d9e09-9b14-4643-8b10-bb2daae23b73",
+      "claim_id": "C25",
+      "claim": "FKH1 induction results in a significant increase in the distances from ARS305V-R to the nuclear envelope.",
+      "claim_type": "EXPLICIT",
+      "source": "Statistical analysis of these measurements shows a significant increase in the distances associated with FKH1-induction versus non-induction (Figure 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by quantitative analysis of microscopy data shown in Figure 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:06:34.634882Z"
+    },
+    {
+      "id": "7b6dae60-3246-4fcd-9af9-d98edce5afa2",
+      "content_id": "4a7d9e09-9b14-4643-8b10-bb2daae23b73",
+      "claim_id": "C26",
+      "claim": "Disruption of ARS305 function resulted in an even more peripheral distribution.",
+      "claim_type": "EXPLICIT",
+      "source": "Disruption of ARS305 function not only eliminated its relocalization in response to FKH1 induction but also resulted in an even more peripheral distribution, suggesting that a functional origin is required for relocalization away from the periphery (Figure 1E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by microscopy data shown in Figure 1E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:06:34.634882Z"
+    },
+    {
+      "id": "972e31ef-b948-4d53-907e-e5d21db4be35",
+      "content_id": "4a7d9e09-9b14-4643-8b10-bb2daae23b73",
+      "claim_id": "C27",
+      "claim": "A functional origin is required for relocalization away from the periphery.",
+      "claim_type": "EXPLICIT",
+      "source": "Disruption of ARS305 function not only eliminated its relocalization in response to FKH1 induction but also resulted in an even more peripheral distribution, suggesting that a functional origin is required for relocalization away from the periphery (Figure 1E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference drawn from the observation that disrupting origin function increases peripheral localization.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:06:34.634882Z"
+    },
+    {
+      "id": "66a0ea75-b5ce-443f-b076-8fc34c360e53",
+      "content_id": "4a7d9e09-9b14-4643-8b10-bb2daae23b73",
+      "claim_id": "C28",
+      "claim": "ars305-\u22062BSV-R did not relocalize upon FKH1 induction.",
+      "claim_type": "EXPLICIT",
+      "source": "We also tested ARS305 with mutations of two proximal Fkh1/2 binding sites (ars305-\u22062BS), which retains origin function but is delayed in activation at its normal locus (Knott et al., 2012); ars305-\u22062BSV-R did not relocalize upon FKH1 induction, confirming that Fkh1 acts through direct binding in cis to ARS305V-R (Figure 1E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by microscopy data shown in Figure 1E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:06:34.634882Z"
+    },
+    {
+      "id": "6e519405-6d5e-4cf9-b932-b782cb4d8368",
+      "content_id": "4a7d9e09-9b14-4643-8b10-bb2daae23b73",
+      "claim_id": "C29",
+      "claim": "Fkh1 acts through direct binding in cis to ARS305V-R.",
+      "claim_type": "EXPLICIT",
+      "source": "We also tested ARS305 with mutations of two proximal Fkh1/2 binding sites (ars305-\u22062BS), which retains origin function but is delayed in activation at its normal locus (Knott et al., 2012); ars305-\u22062BSV-R did not relocalize upon FKH1 induction, confirming that Fkh1 acts through direct binding in cis to ARS305V-R (Figure 1E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference drawn from the observation that mutations in Fkh1 binding sites prevent relocalization.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:06:34.634882Z"
+    },
+    {
+      "id": "ea2a8f59-1226-400a-8be5-46a6229eb680",
+      "content_id": "4a7d9e09-9b14-4643-8b10-bb2daae23b73",
+      "claim_id": "C30",
+      "claim": "ARS305V-R was significantly more distant from the nuclear periphery than ARS501 in cells with native FKH1 expression.",
+      "claim_type": "EXPLICIT",
+      "source": "The analysis showed that ARS305V-R was significantly more distant from the nuclear periphery than ARS501 (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by quantitative analysis of microscopy data shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:06:34.634882Z"
+    },
+    {
+      "id": "6564c015-fa73-4bd8-8c9d-ff78ede042d9",
+      "content_id": "4a7d9e09-9b14-4643-8b10-bb2daae23b73",
+      "claim_id": "C31",
+      "claim": "ARS305V-R fired efficiently in HU in FKH1 but not fkh1\u2206 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that ARS305V-R fired efficiently in HU in FKH1 but not fkh1\u2206 cells (Figure 2C and Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by QBU data shown in Figure 2C and Figure 2\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:06:34.634882Z"
+    },
+    {
+      "id": "47488c79-def5-494b-987d-8a5ad40a5053",
+      "content_id": "4a7d9e09-9b14-4643-8b10-bb2daae23b73",
+      "claim_id": "C32",
+      "claim": "Normal Fkh1 levels are able to overcome the effect that subtelomeric location has on subnuclear localization and initiation timing of ARS305V-R.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, normal Fkh1 levels are able to overcome the effect that subtelomeric location has on subnuclear localization and initiation timing of ARS305V-R.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the observations that ARS305V-R is more interior and fires early with normal FKH1 levels.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:06:34.634882Z"
+    },
+    {
+      "id": "0983cd33-7325-474f-818e-3cf07408c069",
+      "content_id": "4a7d9e09-9b14-4643-8b10-bb2daae23b73",
+      "claim_id": "C33",
+      "claim": "Deletion of FKH1 significantly increased the proportion of cells in which ARS305 was closer to the periphery.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with previous analysis, ARS305 was non-peripheral in most G1-arrested WT cells (Figure 3A) (Heun et al., 2001a), however, deletion of FKH1 significantly increased the proportion of cells in which ARS305 was closer to the periphery (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by microscopy data shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:06:34.634882Z"
+    },
+    {
+      "id": "63761baa-aa82-4285-82cd-7f459cab70b5",
+      "content_id": "4a7d9e09-9b14-4643-8b10-bb2daae23b73",
+      "claim_id": "C34",
+      "claim": "Elimination of the Fkh1/2 binding sites in ARS305 resulted in peripheral localization.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with this requirement for FKH1, elimination of the Fkh1/2 binding sites in ARS305 also resulted in peripheral localization (Figure 3\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by microscopy data shown in Figure 3\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:06:34.634882Z"
+    },
+    {
+      "id": "9d0eaa65-8471-4b2d-a48b-2f25b715d7c1",
+      "content_id": "4a7d9e09-9b14-4643-8b10-bb2daae23b73",
+      "claim_id": "C35",
+      "claim": "ars305-\u2206ACS exhibits an even more peripheral distribution.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, ars305-\u2206ACS, which lacks origin function (and Fkh1/2 binding) exhibits an even more peripheral distribution (Figure 3\u2014figure supplement 1A), suggesting that origin function is required for interior localization in G1 and that Fkh1/2 stimulates this localization.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by microscopy data shown in Figure 3\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:06:34.634882Z"
+    },
+    {
+      "id": "acf63055-3589-4ab0-b628-2f7279369d79",
+      "content_id": "4a7d9e09-9b14-4643-8b10-bb2daae23b73",
+      "claim_id": "C36",
+      "claim": "Origin function is required for interior localization in G1 and Fkh1/2 stimulates this localization.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, ars305-\u2206ACS, which lacks origin function (and Fkh1/2 binding) exhibits an even more peripheral distribution (Figure 3\u2014figure supplement 1A), suggesting that origin function is required for interior localization in G1 and that Fkh1/2 stimulates this localization.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference drawn from the observation that loss of origin function increases peripheral localization.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:06:34.634882Z"
+    },
+    {
+      "id": "20b8ec5b-a8bc-4d16-89e7-9db3cc15fdc3",
+      "content_id": "4a7d9e09-9b14-4643-8b10-bb2daae23b73",
+      "claim_id": "C37",
+      "claim": "ARS1303 and ARS1103 were located closer to the periphery in G1-arrested fkh1\u2206 versus WT cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Like ARS305, ARS1303 and ARS1103 were located closer to the periphery in G1-arrested fkh1\u2206 versus WT cells (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by microscopy data shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:06:34.634882Z"
+    },
+    {
+      "id": "967ab007-1aa3-4ba5-ae7b-e9df692eda20",
+      "content_id": "4a7d9e09-9b14-4643-8b10-bb2daae23b73",
+      "claim_id": "C38",
+      "claim": "ARS710, ARS718, and ARS1018 show significant reduction in distance from the nuclear periphery upon deletion of FKH1.",
+      "claim_type": "EXPLICIT",
+      "source": "All of these origins show significant reduction in distance from the nuclear periphery upon deletion of FKH1 (Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by microscopy data shown in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:06:34.634882Z"
+    },
+    {
+      "id": "9c2bb41e-4fe7-46c9-83fc-e8d4c5453b9c",
+      "content_id": "4a7d9e09-9b14-4643-8b10-bb2daae23b73",
+      "claim_id": "C39",
+      "claim": "The peripheral localization in G1 of late origin ARS501 was not altered by deletion of FKH1.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the peripheral localization in G1 of late origin ARS501, which is not Fkh-activated, was not altered by deletion of FKH1 (Figure 3\u2014figure supplement 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by microscopy data shown in Figure 3\u2014figure supplement 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:06:34.634882Z"
+    },
+    {
+      "id": "f1fc4883-8fbe-4845-8602-cf5b08ac0e01",
+      "content_id": "4a7d9e09-9b14-4643-8b10-bb2daae23b73",
+      "claim_id": "C40",
+      "claim": "FKH1 plays an expansive role in relocalizing replication origins from the nuclear periphery to the nuclear interior in G1 phase.",
+      "claim_type": "EXPLICIT",
+      "source": "These results suggest that FKH1 plays an expansive role in relocalizing replication origins from the nuclear periphery to the nuclear interior in G1 phase.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the observation that multiple Fkh-activated origins show FKH1-dependent relocalization.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:06:34.634882Z"
+    },
+    {
+      "id": "1fd70c70-89f7-430e-9d22-b4ee41ff852b",
+      "content_id": "4a7d9e09-9b14-4643-8b10-bb2daae23b73",
+      "claim_id": "C41",
+      "claim": "ARS305V-R relocalization was eliminated by inhibition of Cdc7-as3 kinase with PP1.",
+      "claim_type": "EXPLICIT",
+      "source": "Remarkably, ARS305V-R relocalization was eliminated by inhibition of Cdc7-as3 kinase with PP1 (Figure 4A, compare with non-induction in Figure 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by microscopy data shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:06:34.634882Z"
+    },
+    {
+      "id": "e6f9ecbd-6d81-4f19-bbc3-a06451926dd1",
+      "content_id": "4a7d9e09-9b14-4643-8b10-bb2daae23b73",
+      "claim_id": "C42",
+      "claim": "DDK activity is required for origin relocalization in G1-arrested cells.",
+      "claim_type": "EXPLICIT",
+      "source": "These results suggest that DDK activity is required for origin relocalization in G1-arrested cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the observation that inhibiting DDK prevents relocalization.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:06:34.634882Z"
+    },
+    {
+      "id": "8f5da483-60fd-4b4e-9f47-845df99542a4",
+      "content_id": "4a7d9e09-9b14-4643-8b10-bb2daae23b73",
+      "claim_id": "C43",
+      "claim": "cdc7-4 cells at the non-permissive temperature showed a significant increase in the proportion of cells with ARS305 near the nuclear periphery.",
+      "claim_type": "EXPLICIT",
+      "source": "Compared to WT cells, cdc7-4 cells at the non-permissive temperature showed a significant increase in the proportion of cells with ARS305 near the nuclear periphery (Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by microscopy data shown in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:06:34.634882Z"
+    },
+    {
+      "id": "d6e86aca-be5b-432c-bc0e-93116999fbd7",
+      "content_id": "4a7d9e09-9b14-4643-8b10-bb2daae23b73",
+      "claim_id": "C44",
+      "claim": "DDK activity is required for origin re-positioning in G1 phase cells.",
+      "claim_type": "EXPLICIT",
+      "source": "This result supports the conclusion that DDK activity is required for origin re-positioning in G1 phase cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the observation that inactivating CDC7 prevents relocalization.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:06:34.634882Z"
+    },
+    {
+      "id": "4eebbda1-27e8-47c5-a0a8-5293bc0fc72f",
+      "content_id": "4a7d9e09-9b14-4643-8b10-bb2daae23b73",
+      "claim_id": "C45",
+      "claim": "Binding of Fkh1 to ARS305 and other Fkh-activated origins was largely unaffected by Cdc7 inhibition.",
+      "claim_type": "EXPLICIT",
+      "source": "The results showed that binding of Fkh1 to ARS305 and other Fkh-activated origins was largely unaffected by Cdc7 inhibition (Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by ChIP-seq data shown in Figure 4\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:06:34.634882Z"
+    },
+    {
+      "id": "fd76a653-7265-4836-a5a8-7318471f7823",
+      "content_id": "4a7d9e09-9b14-4643-8b10-bb2daae23b73",
+      "claim_id": "C46",
+      "claim": "Fkh1 origin binding appears to be independent of DDK activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, Fkh1 origin binding appears to be independent of DDK activity, and, by inference, of the subcellular change in localization resulting from DDK inhibition.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the observation that Fkh1 binding is unaffected by DDK inhibition.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:06:34.634882Z"
+    },
+    {
+      "id": "ac94d18e-ae52-4ba5-bffb-4168080437b1",
+      "content_id": "4a7d9e09-9b14-4643-8b10-bb2daae23b73",
+      "claim_id": "C47",
+      "claim": "Deletion of DBF4's C-terminus had a similar effect on origin localization as FKH1 deletion, with greater enrichment of ARS305 near the nuclear periphery.",
+      "claim_type": "EXPLICIT",
+      "source": "Deletion of DBF4's C-terminus had a similar effect on origin localization as FKH1 deletion, with greater enrichment of ARS305 near the nuclear periphery (Figure 4C, compare with Figure 3A), consistent with Fkh1 and Dbf4 acting in the same pathway.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by microscopy data shown in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:06:34.634882Z"
+    },
+    {
+      "id": "8e62a8ff-93e2-4451-afa4-780d43e4154b",
+      "content_id": "4a7d9e09-9b14-4643-8b10-bb2daae23b73",
+      "claim_id": "C48",
+      "claim": "Fkh1 and Dbf4 act in the same pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "Deletion of DBF4's C-terminus had a similar effect on origin localization as FKH1 deletion, with greater enrichment of ARS305 near the nuclear periphery (Figure 4C, compare with Figure 3A), consistent with Fkh1 and Dbf4 acting in the same pathway.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference drawn from the observation that deleting the Fkh1-interacting domain of Dbf4 phenocopies FKH1 deletion.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:06:34.634882Z"
+    },
+    {
+      "id": "d34f41bb-a21d-4264-8aa9-ae1e68968c58",
+      "content_id": "4a7d9e09-9b14-4643-8b10-bb2daae23b73",
+      "claim_id": "C49",
+      "claim": "The presence of MCM4-14D restores ARS305V-R relocalization upon FKH1 induction in the cdc7-as3 strain inhibited by PP1.",
+      "claim_type": "EXPLICIT",
+      "source": "The presence of MCM4-14D restores ARS305V-R relocalization upon FKH1 induction in the cdc7-as3 strain inhibited by PP1 (Figure 5A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by microscopy data shown in Figure 5A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:06:34.634882Z"
+    },
+    {
+      "id": "7b8161fb-9fb6-44a6-857c-825d239a39ad",
+      "content_id": "4a7d9e09-9b14-4643-8b10-bb2daae23b73",
+      "claim_id": "C50",
+      "claim": "The function of Cdc7 kinase required for origin relocalization is phosphorylation of Mcm4.",
+      "claim_type": "EXPLICIT",
+      "source": "This supports the conclusion that the function of Cdc7 kinase required for origin relocalization is phosphorylation of Mcm4.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the observation that phospho-mimetic mutations in Mcm4 bypass the requirement for Cdc7.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:06:34.634882Z"
+    },
+    {
+      "id": "da9aa9a4-b8ad-4ba0-8952-63eb1be5de1a",
+      "content_id": "4a7d9e09-9b14-4643-8b10-bb2daae23b73",
+      "claim_id": "C51",
+      "claim": "ARS305 was more peripherally localized in cdc45-1 cells at the semi-permissive temperature in G1 phase.",
+      "claim_type": "EXPLICIT",
+      "source": "Analysis showed that ARS305 was more peripherally localized in cdc45-1 cells at the semi-permissive temperature in G1 phase (Figure 5B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by microscopy data shown in Figure 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:06:34.634882Z"
+    },
+    {
+      "id": "2e5d5552-8537-4ac2-93e2-9b3ad379edba",
+      "content_id": "4a7d9e09-9b14-4643-8b10-bb2daae23b73",
+      "claim_id": "C52",
+      "claim": "Assembly of Sld3-Cdc45 onto origins is required for origin relocalization.",
+      "claim_type": "EXPLICIT",
+      "source": "As origin binding of Cdc45 and Sld3 is interdependent and Cdc45-1 inactivation reduces Sld3-origin binding (Kamimura et al., 2001), these results suggest that assembly of Sld3-Cdc45 onto origins is required for origin relocalization.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the observation that inactivating Cdc45 prevents relocalization and the known interdependence of Cdc45 and Sld3.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:06:34.634882Z"
+    },
+    {
+      "id": "d3e73809-7eed-4a28-a649-b7110f42c33b",
+      "content_id": "4a7d9e09-9b14-4643-8b10-bb2daae23b73",
+      "claim_id": "C53",
+      "claim": "Expression of high copy Cdc45 significantly increased the frequency of ARS305 more distal from the periphery in fkh1\u2206 fkh2-dsm MCM4-14D cells.",
+      "claim_type": "EXPLICIT",
+      "source": "To test this idea, we introduced a high-copy plasmid expressing Cdc45 from its native promoter into the fkh1\u2206 fkh2-dsm MCM4-14D strain, and examined origin location. Consistent with the notion that Cdc45 is limiting for execution of the DDK-dependent step, expression of high copy Cdc45 significantly increased the frequency of ARS305 more distal from the periphery (Figure 5C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by microscopy data shown in Figure 5C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:06:34.634882Z"
+    },
+    {
+      "id": "86aedfc5-0163-432b-902c-f4c73edf724b",
+      "content_id": "4a7d9e09-9b14-4643-8b10-bb2daae23b73",
+      "claim_id": "C54",
+      "claim": "Cdc45 is limiting for execution of the DDK-dependent step.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with the notion that Cdc45 is limiting for execution of the DDK-dependent step, expression of high copy Cdc45 significantly increased the frequency of ARS305 more distal from the periphery (Figure 5C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference drawn from the observation that overexpressing Cdc45 promotes relocalization in the absence of Fkh1.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:06:34.634882Z"
+    },
+    {
+      "id": "427f15c5-77ca-427f-9b4a-b48351786858",
+      "content_id": "4a7d9e09-9b14-4643-8b10-bb2daae23b73",
+      "claim_id": "C55",
+      "claim": "Full execution of the DDK-dependent step in the form of Cdc45 loading, as opposed to Mcm4 phosphorylation itself or phosphorylation of other targets is required for origin relocalization.",
+      "claim_type": "EXPLICIT",
+      "source": "This finding supports the conclusion that full execution of the DDK-dependent step in the form of Cdc45 loading, as opposed to Mcm4 phosphorylation itself or phosphorylation of other targets is required for origin relocalization.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the observation that Cdc45 overexpression is required for relocalization even with phospho-mimetic Mcm4.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:06:34.634882Z"
+    },
+    {
+      "id": "c5b4d2f1-20cc-43e4-ab05-45f4a42c4fd0",
+      "content_id": "4a7d9e09-9b14-4643-8b10-bb2daae23b73",
+      "claim_id": "C56",
+      "claim": "Inhibition of Cdc28-as1 activity with PP1 did not alter localization of ARS305 in G1-arrested cells.",
+      "claim_type": "EXPLICIT",
+      "source": "In G1-arrested cells, inhibition of Cdc28-as1 activity with PP1 did not alter localization of ARS305 (Figure 5D), although budding was inhibited upon release from \u03b1-factor arrest indicating effective inhibition of Cdc28-as1 (Figure 5\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by microscopy data shown in Figure 5D and budding data in Figure 5\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:06:34.634882Z"
+    },
+    {
+      "id": "0a5679e9-0882-4462-a5f8-b8a923e35d31",
+      "content_id": "4a7d9e09-9b14-4643-8b10-bb2daae23b73",
+      "claim_id": "C57",
+      "claim": "CDK activity appears to be dispensable for normal, Fkh1-dependent positioning of ARS305.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, CDK activity appears to be dispensable for normal, Fkh1-dependent positioning of ARS305.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the observation that inhibiting CDK does not affect ARS305 localization.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:06:34.634882Z"
+    },
+    {
+      "id": "d00f0366-9c70-4d7b-9049-7e36fc2fe924",
+      "content_id": "4a7d9e09-9b14-4643-8b10-bb2daae23b73",
+      "claim_id": "C58",
+      "claim": "DDK but not CDK activity stimulates origin relocalization in G1 phase.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, our findings indicate that DDK but not CDK activity stimulates origin relocalization in G1 phase.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the combined observations that DDK inhibition prevents relocalization while CDK inhibition does not.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:06:34.634882Z"
+    },
+    {
+      "id": "1fae8748-631b-4109-b16e-ded5d8975913",
+      "content_id": "4a7d9e09-9b14-4643-8b10-bb2daae23b73",
+      "claim_id": "C59",
+      "claim": "ARS305 explores about 2.5-fold more volume in WT than fkh1\u2206 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Calculation of the radius of constraint (Rc) and the corresponding volume of space explored reveals that ARS305 explores about 2.5-fold more volume and ARS718 explores about 3.8-fold more volume in WT than fkh1\u2206 cells.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by MSD analysis data shown in Figure 6A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:06:34.634882Z"
+    },
+    {
+      "id": "eef5bbac-b8de-48d6-94c9-63cda1cfd678",
+      "content_id": "4a7d9e09-9b14-4643-8b10-bb2daae23b73",
+      "claim_id": "C60",
+      "claim": "ARS718 explores about 3.8-fold more volume in WT than fkh1\u2206 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Calculation of the radius of constraint (Rc) and the corresponding volume of space explored reveals that ARS305 explores about 2.5-fold more volume and ARS718 explores about 3.8-fold more volume in WT than fkh1\u2206 cells.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by MSD analysis data shown in Figure 6A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:06:34.634882Z"
+    },
+    {
+      "id": "55b42e04-81ce-4650-8f76-2355181272a9",
+      "content_id": "4a7d9e09-9b14-4643-8b10-bb2daae23b73",
+      "claim_id": "C61",
+      "claim": "Fkh1 stimulates origin mobilization.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, these data show that Fkh1 stimulates origin mobilization.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the observation that origins explore more space in WT than fkh1\u2206 cells.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:06:34.634882Z"
+    },
+    {
+      "id": "c455af3b-0efe-49a5-9257-a57c76313e25",
+      "content_id": "4a7d9e09-9b14-4643-8b10-bb2daae23b73",
+      "claim_id": "C62",
+      "claim": "Origin relocalization requires execution of the DDK-dependent step of origin firing that loads Cdc45.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, we show that early origin specification in G1 phase by Fkh1 induces a change from peripheral to interior nuclear localization of Fkh1-activated origins. Quite remarkably, we find that origin relocalization requires execution of the DDK-dependent step of origin firing that loads Cdc45.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary conclusion stated in the discussion and supported by experimental data in Figures 4 and 5.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:06:34.634882Z"
+    },
+    {
+      "id": "6f5a02d7-9b5d-4290-96f3-c2795cf609ab",
+      "content_id": "4a7d9e09-9b14-4643-8b10-bb2daae23b73",
+      "claim_id": "C63",
+      "claim": "The DDK requirement reflects the key, recognized function of DDK in replication initiation, that is, phosphorylation of MCM proteins leading to Sld3-Cdc45 origin-loading.",
+      "claim_type": "EXPLICIT",
+      "source": "That the DDK requirement reflects the key, recognized function of DDK in replication initiation, that is, phosphorylation of MCM proteins leading to Sld3-Cdc45 origin-loading, is demonstrated by the bypass of CDC7 requirement by phospho-mimetic mutations in MCM4-14D as well as the dependence on CDC45 function.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the observations that MCM4-14D bypasses CDC7 requirement and CDC45 is required for relocalization.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:06:34.634882Z"
+    },
+    {
+      "id": "cc185d05-5715-484b-8498-07f071a78490",
+      "content_id": "4a7d9e09-9b14-4643-8b10-bb2daae23b73",
+      "claim_id": "C64",
+      "claim": "DDK is active in G1 phase and has already established origin timing by late G1 phase in \u03b1-factor arrest.",
+      "claim_type": "EXPLICIT",
+      "source": "Our findings provide direct evidence that DDK is active in G1 phase and has already established origin timing by late G1 phase in \u03b1-factor arrest.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the observation that DDK-dependent relocalization occurs in G1-arrested cells.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:06:34.634882Z"
+    },
+    {
+      "id": "fe4f20fe-5e9e-4dc2-aee0-2ea6b0ef3a38",
+      "content_id": "4a7d9e09-9b14-4643-8b10-bb2daae23b73",
+      "claim_id": "C65",
+      "claim": "Sld3 and Cdc45 associate with early replication origins in G1 phase.",
+      "claim_type": "EXPLICIT",
+      "source": "This finding explains previous observations that Sld3 and Cdc45 associate with early replication origins in G1 phase (Aparicio et al., 1999; Kamimura et al., 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to published studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:06:34.634882Z"
+    },
+    {
+      "id": "e050ff91-9400-4bab-abdd-7aea96ebecca",
+      "content_id": "4a7d9e09-9b14-4643-8b10-bb2daae23b73",
+      "claim_id": "C66",
+      "claim": "Sld3- and Cdc45-origin association in G1 phase is DDK-dependent and CDK-independent.",
+      "claim_type": "EXPLICIT",
+      "source": "Our findings are also consistent with a more recent study showing that Sld3- and Cdc45-origin association in G1 phase is DDK-dependent and CDK-independent, as well as the conclusion that DDK acts prior to and independently of S-CDK (Heller et al., 2011; Yeeles et al., 2015), the latter of which is dispensable for the observed origin relocalization.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to published studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:06:34.634882Z"
+    },
+    {
+      "id": "ae63b533-f3cf-4185-aea2-ac4c288f8400",
+      "content_id": "4a7d9e09-9b14-4643-8b10-bb2daae23b73",
+      "claim_id": "C67",
+      "claim": "DDK acts prior to and independently of S-CDK.",
+      "claim_type": "EXPLICIT",
+      "source": "Our findings are also consistent with a more recent study showing that Sld3- and Cdc45-origin association in G1 phase is DDK-dependent and CDK-independent, as well as the conclusion that DDK acts prior to and independently of S-CDK (Heller et al., 2011; Yeeles et al., 2015), the latter of which is dispensable for the observed origin relocalization.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to published studies and the observation that CDK is dispensable for relocalization.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:06:34.634882Z"
+    },
+    {
+      "id": "27723eda-00bc-4de5-99b8-fd82e921e704",
+      "content_id": "4a7d9e09-9b14-4643-8b10-bb2daae23b73",
+      "claim_id": "C68",
+      "claim": "Fkh1 acts to stimulate origin firing by directly recruiting Dbf4 through physical interaction.",
+      "claim_type": "EXPLICIT",
+      "source": "The finding that Fkh1 and DDK are required for origin relocalization fits well with the recent finding that Fkh1 acts to stimulate origin firing by directly recruiting Dbf4 through physical interaction (Fang et al., 2017), and extends our understanding of the significance of this interaction to replication initiation via nuclear positioning of replication sites.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to a published study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:06:34.634882Z"
+    },
+    {
+      "id": "9e310497-cbe3-49fc-9a91-7d2f12c97273",
+      "content_id": "4a7d9e09-9b14-4643-8b10-bb2daae23b73",
+      "claim_id": "C69",
+      "claim": "Origin clustering interactions revealed by Hi-C experiments directly reflect origin localization to distinct nuclear territories as observed microscopically.",
+      "claim_type": "EXPLICIT",
+      "source": "We propose that the origin clustering interactions revealed by Hi-C experiments directly reflect origin localization to distinct nuclear territories as observed microscopically.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative proposal connecting Hi-C data with microscopy observations.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:06:34.634882Z"
+    },
+    {
+      "id": "b8a1b45f-b1f2-44a2-b067-770d115b382e",
+      "content_id": "4a7d9e09-9b14-4643-8b10-bb2daae23b73",
+      "claim_id": "C70",
+      "claim": "Localization to the nuclear interior might increase the likelihood for physical interaction amongst this subset of origins.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, localization to the nuclear interior might increase the likelihood for physical interaction amongst this subset of origins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative inference about the functional consequence of interior localization.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:06:34.634882Z"
+    },
+    {
+      "id": "abf55d82-8d3d-4fd2-9709-274a9e21c6dc",
+      "content_id": "4a7d9e09-9b14-4643-8b10-bb2daae23b73",
+      "claim_id": "C71",
+      "claim": "Aggregation of origins selected for early/efficient activation has the inevitable consequence that replication initiation transforms these origin clusters into replication foci.",
+      "claim_type": "EXPLICIT",
+      "source": "This aggregation of origins selected for early/efficient activation has the inevitable consequence that replication initiation transforms these origin clusters into replication foci, which have been observed as concentrations of DNA synthesis and replication factors (Berezney et al., 2000; Frouin et al., 2003; Hoz\u00e1k et al., 1994; Kitamura et al., 2006; Nakamura et al., 1986; Newport and Yan, 1996).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative inference supported by citations to studies observing replication foci.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:06:34.634882Z"
+    },
+    {
+      "id": "2ca55e1e-89de-4960-8803-dd63353c8df4",
+      "content_id": "4a7d9e09-9b14-4643-8b10-bb2daae23b73",
+      "claim_id": "C72",
+      "claim": "Perinuclear localization represents a default state for most origins irrespective of telomere tethering.",
+      "claim_type": "EXPLICIT",
+      "source": "While telomere tethering to the nuclear envelope has been assumed to cause the peripheral localization of telomere-proximal origins, we find that early origins distal from telomeres that are normally enriched in the nuclear interior, are closer to the nuclear periphery in cells lacking Fkh1, suggesting that perinuclear localization represents a default state for most origins irrespective of telomere tethering (Figure 7A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference drawn from the observation that telomere-distal origins also localize to the periphery in fkh1\u2206 cells.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:06:34.634882Z"
+    },
+    {
+      "id": "0e68f35c-afed-41bf-bafc-6346cc1bf949",
+      "content_id": "4a7d9e09-9b14-4643-8b10-bb2daae23b73",
+      "claim_id": "C73",
+      "claim": "Interior localization is linked to activation of origin function.",
+      "claim_type": "EXPLICIT",
+      "source": "Complete elimination of origin function results in even more peripheral distribution of the locus suggesting that peripheral localization is independent of an origin tethering mechanism, and that interior localization is linked to activation of origin function, which may occur, with less efficiency, in the absence of Fkh1/2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the observation that loss of origin function increases peripheral localization.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:06:34.634882Z"
+    },
+    {
+      "id": "d1638d0c-4422-4a7f-9754-362d91cd6ee2",
+      "content_id": "4a7d9e09-9b14-4643-8b10-bb2daae23b73",
+      "claim_id": "C74",
+      "claim": "Rif1 could potentially tether origins to the periphery.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to subtelomeric origins, Rif1 regulates and associates with origins distal from telomeres and with the nuclear envelope, and therefore could potentially tether origins to the periphery (Figure 7A) (Hafner et al., 2018; Park et al., 2011; Peace et al., 2014).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a speculative proposal based on known properties of Rif1 and supported by citations.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:06:34.634882Z"
+    },
+    {
+      "id": "167cc87a-5ff9-4780-84a8-bb208ffdcbff",
+      "content_id": "4a7d9e09-9b14-4643-8b10-bb2daae23b73",
+      "claim_id": "C75",
+      "claim": "Fkh1-mediated, origin-specific recruitment of DDK may overwhelm Rif1-mediated PP1 inhibition locally and thereby release the origin from peripheral tethering.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, Fkh1-mediated, origin-specific recruitment of DDK may overwhelm Rif1-mediated PP1 inhibition locally and thereby release the origin from peripheral tethering (Figure 7B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a speculative mechanistic proposal based on known interactions between DDK, Rif1, and PP1.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:06:34.634882Z"
+    },
+    {
+      "id": "e7cfd085-1ef8-44f0-9997-ad710eca568f",
+      "content_id": "4a7d9e09-9b14-4643-8b10-bb2daae23b73",
+      "claim_id": "C76",
+      "claim": "Cdc45 loading might effectively prevent reversal of MCM phosphorylation and fully disrupt interaction with Rif1-PP1.",
+      "claim_type": "EXPLICIT",
+      "source": "Consequent Cdc45 loading might effectively prevent reversal of MCM phosphorylation and fully disrupt interaction with Rif1-PP1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative mechanistic proposal about the role of Cdc45 loading.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:06:34.634882Z"
+    },
+    {
+      "id": "6515cc90-1482-4633-8be3-8fec1ff94c84",
+      "content_id": "4a7d9e09-9b14-4643-8b10-bb2daae23b73",
+      "claim_id": "C77",
+      "claim": "MCM phosphorylation and/or Cdc45 loading might change the licensed origin's biophysical properties, thereby forcing the origin to occupy and search different space and/or capture scaffolding factors.",
+      "claim_type": "EXPLICIT",
+      "source": "Alternatively, MCM phosphorylation and/or Cdc45 loading might change the licensed origin's biophysical properties, thereby forcing the origin to occupy and search different space and/or capture scaffolding factors, which may themselves be localized to the interior and thus stabilize interior localization.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative mechanistic proposal about how DDK-dependent changes might affect origin localization.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:06:34.634882Z"
+    },
+    {
+      "id": "52fcdfbf-9420-424c-a782-0bf16026ef00",
+      "content_id": "4a7d9e09-9b14-4643-8b10-bb2daae23b73",
+      "claim_id": "C78",
+      "claim": "The relevant chromatin mark is MCM phosphorylation, removal of which is promoted by peripheral localization and addition by DDK recruitment.",
+      "claim_type": "EXPLICIT",
+      "source": "However, we have shown that induction of Fkh1 (in \u03b1-factor-arrested cells) can reprogram timing of a Fkh-activated origin inserted into the ARS501 locus (Peace et al., 2016). We propose that the relevant chromatin mark is MCM phosphorylation, removal of which is promoted by peripheral localization and addition by DDK recruitment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative proposal about the nature of the chromatin mark that determines timing, based on the authors' findings.",
+      "evidence_type": "[\"SPECULATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:06:34.634882Z"
+    },
+    {
+      "id": "b5a12331-836f-430c-bbce-007a0e8d8187",
+      "content_id": "4a7d9e09-9b14-4643-8b10-bb2daae23b73",
+      "claim_id": "C79",
+      "claim": "Excised ARS501 remains late despite its mobilization because DDK is limiting and already recruited by Ctf19 and Fkh1/2 to other origins.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, excised ARS501 remains late despite its mobilization because DDK is limiting and already recruited by Ctf19 and Fkh1/2 to other origins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative explanation for a previous observation, based on the authors' model.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:06:34.634882Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "28a9e7aa-0548-4dc1-99c7-1742cf58ff0b",
+      "content_id": "4a7d9e09-9b14-4643-8b10-bb2daae23b73",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Fkh1 induction causes relocalization of ARS305V-R from the nuclear periphery to the interior in G1-arrested fkh1\u0394 fkh2-dsm cells. This relocalization is dependent on direct Fkh1 binding in cis to the origin, as demonstrated by mutations in Fkh1/2 binding sites preventing relocalization.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C23, C25 provide quantitative microscopy data (Figure 1C, 1D) showing significant increase in distance from nuclear periphery upon FKH1 induction. Claim C29 demonstrates cis-requirement through binding site mutations (Figure 1E). The experimental design includes appropriate controls and statistical analysis.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:06:34.634882Z"
+    },
+    {
+      "id": "10af2ad5-dd0f-4295-b284-e8721b38dabf",
+      "content_id": "4a7d9e09-9b14-4643-8b10-bb2daae23b73",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "At native FKH1 expression levels, ARS305V-R is significantly more distant from the nuclear periphery than ARS501 and fires early in hydroxyurea, demonstrating that normal Fkh1 levels overcome the effects of subtelomeric location on both subnuclear localization and replication timing.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C30 and C31 are supported by microscopy (Figure 2B) and QBU data (Figure 2C), respectively, showing both localization and timing differences. The inference in C32 is reasonable given the combined observations, though the mechanism remains to be fully elucidated.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:06:34.634882Z"
+    },
+    {
+      "id": "6f26a945-92db-4f71-ab8b-a37d9d18b092",
+      "content_id": "4a7d9e09-9b14-4643-8b10-bb2daae23b73",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "FKH1 plays a global role in relocalizing multiple Fkh-activated replication origins from the nuclear periphery to the interior in G1 phase. This effect requires both origin function and Fkh1/2 binding sites, as demonstrated across multiple origins at varying distances from telomeres.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C33, C37, C38 provide microscopy data for multiple origins (ARS305, ARS1303, ARS1103, ARS710, ARS718, ARS1018) showing FKH1-dependent relocalization (Figures 3A-C). Claims C34-C36 demonstrate requirements for Fkh binding sites and origin function. The breadth of origins tested supports the global conclusion in C40.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:06:34.634882Z"
+    },
+    {
+      "id": "bf33c314-d388-4d97-b269-0acf1ebcc7cd",
+      "content_id": "4a7d9e09-9b14-4643-8b10-bb2daae23b73",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The late-firing origin ARS501, which is not Fkh-activated, shows peripheral localization in G1 that is not altered by FKH1 deletion.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C39 is supported by microscopy data (Figure 3\u2014figure supplement 1C) showing no significant difference in ARS501 localization between WT and fkh1\u0394 cells. This serves as an important negative control demonstrating specificity of Fkh1 effect to Fkh-activated origins.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:06:34.634882Z"
+    },
+    {
+      "id": "7e9ec121-1c4b-424f-9d2b-83cd7ba7e174",
+      "content_id": "4a7d9e09-9b14-4643-8b10-bb2daae23b73",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "DDK activity is required for origin relocalization in G1 phase, as demonstrated by inhibition of Cdc7-as3 kinase with PP1 and temperature-sensitive cdc7-4 mutant analysis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C41 and C43 provide microscopy data using two independent methods to inactivate CDC7 (chemical inhibition and temperature-sensitive allele) both showing prevention of relocalization (Figures 4A, 4B). The convergent evidence from multiple approaches strongly supports the requirement for DDK activity.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:06:34.634882Z"
+    },
+    {
+      "id": "01adad67-aaf3-4259-a92b-a568c1753324",
+      "content_id": "4a7d9e09-9b14-4643-8b10-bb2daae23b73",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Fkh1 binding to origins is independent of DDK activity, as Cdc7 inhibition does not affect Fkh1 origin binding.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C45 is supported by ChIP-seq data (Figure 4\u2014figure supplement 1) showing maintained Fkh1 binding at origins upon Cdc7 inhibition. This demonstrates that DDK acts downstream of Fkh1 binding in the relocalization pathway.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:06:34.634882Z"
+    },
+    {
+      "id": "1b6594fe-e639-49df-a37a-4f7cd78c1028",
+      "content_id": "4a7d9e09-9b14-4643-8b10-bb2daae23b73",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Deletion of DBF4's C-terminus, which is required for Fkh1 interaction, phenocopies FKH1 deletion in causing peripheral localization of ARS305, indicating Fkh1 and Dbf4 act in the same pathway.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C47 is supported by microscopy data (Figure 4C) showing similar peripheral enrichment in dbf4\u0394C as in fkh1\u0394 cells. This genetic epistasis analysis supports the pathway relationship inferred in C48, consistent with known physical interaction between Fkh1 and Dbf4.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:06:34.634882Z"
+    },
+    {
+      "id": "96ad0f52-390e-4fe8-bc67-e22bd4ec5ad0",
+      "content_id": "4a7d9e09-9b14-4643-8b10-bb2daae23b73",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The function of Cdc7 kinase required for origin relocalization is phosphorylation of Mcm4, as demonstrated by phospho-mimetic MCM4-14D mutations bypassing the requirement for Cdc7 activity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C49 is supported by microscopy data (Figure 5A) showing restoration of relocalization in cdc7-as3 + PP1 cells when MCM4-14D is present. This genetic suppression experiment provides strong evidence that Mcm4 phosphorylation is the critical DDK function for relocalization.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:06:34.634882Z"
+    },
+    {
+      "id": "d3246f9c-95e3-440a-98f7-0d2cb04903d2",
+      "content_id": "4a7d9e09-9b14-4643-8b10-bb2daae23b73",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Assembly of Sld3-Cdc45 onto origins is required for origin relocalization, as demonstrated by increased peripheral localization in cdc45-1 mutant cells at semi-permissive temperature.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C51 is supported by microscopy data (Figure 5B) showing more peripheral ARS305 localization in cdc45-1 cells. The inference in C52 is reasonable given the known interdependence of Cdc45 and Sld3 binding, though direct Sld3 localization data would strengthen this conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:06:34.634882Z"
+    },
+    {
+      "id": "0ec8d220-1832-40f4-9873-c09ad68491d5",
+      "content_id": "4a7d9e09-9b14-4643-8b10-bb2daae23b73",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Cdc45 is limiting for execution of the DDK-dependent step, and full execution including Cdc45 loading (not just Mcm4 phosphorylation) is required for origin relocalization, as demonstrated by high-copy CDC45 promoting relocalization in fkh1\u0394 fkh2-dsm MCM4-14D cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C53 is supported by microscopy data (Figure 5C) showing increased interior localization with high-copy CDC45. This experiment elegantly demonstrates that Cdc45 loading, beyond Mcm4 phosphorylation, is required for relocalization, supporting the mechanistic conclusions in C54-C55.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:06:34.634882Z"
+    },
+    {
+      "id": "5e0768a5-854f-4daa-bbb2-4b2d160cc3b3",
+      "content_id": "4a7d9e09-9b14-4643-8b10-bb2daae23b73",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "CDK activity is dispensable for Fkh1-dependent origin positioning in G1 phase, as inhibition of Cdc28-as1 with PP1 does not alter ARS305 localization in G1-arrested cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C56 is supported by microscopy data (Figure 5D) and control experiments showing effective CDK inhibition (Figure 5\u2014figure supplement 1A). This negative result is important for establishing that DDK, not CDK, drives G1 relocalization, supporting the conclusion in C58.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:06:34.634882Z"
+    },
+    {
+      "id": "3c76c79e-a132-4cee-ab89-d351a8f3a30d",
+      "content_id": "4a7d9e09-9b14-4643-8b10-bb2daae23b73",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Fkh1 stimulates origin mobilization, as ARS305 and ARS718 explore 2.5-fold and 3.8-fold more volume, respectively, in WT compared to fkh1\u0394 cells based on mean square displacement analysis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C59-C60 are supported by quantitative MSD analysis (Figure 6A) with appropriate statistical testing. The tracking data and volume calculations provide direct evidence for increased mobility with Fkh1, supporting the conclusion in C61. Sample sizes appear adequate for this type of analysis.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:06:34.634882Z"
+    },
+    {
+      "id": "c49244ab-9449-41c2-a494-7a8aa3eb6118",
+      "content_id": "4a7d9e09-9b14-4643-8b10-bb2daae23b73",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Origin relocalization requires execution of the DDK-dependent step of origin firing that loads Cdc45, and this requirement reflects DDK's key function in phosphorylating MCM proteins leading to Sld3-Cdc45 origin-loading.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These summary claims integrate findings from multiple experiments (Figures 4-5) including DDK inhibition, MCM4-14D bypass, and CDC45 requirement. The convergent evidence from genetic, chemical, and molecular approaches strongly supports this mechanistic conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:06:34.634882Z"
+    },
+    {
+      "id": "21fea84b-4e3a-4d69-8511-2bbeadd8a706",
+      "content_id": "4a7d9e09-9b14-4643-8b10-bb2daae23b73",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "DDK is active in G1 phase and has already established origin timing by late G1 phase in \u03b1-factor arrest.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "This inference is supported by the observation that DDK-dependent relocalization occurs in G1-arrested cells (multiple figures). This challenges previous assumptions about DDK activity timing and is consistent with prior observations of Sld3/Cdc45 at origins in G1.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:06:34.634882Z"
+    },
+    {
+      "id": "cc0ded31-214e-4d46-b1fa-c7e2187e1d61",
+      "content_id": "4a7d9e09-9b14-4643-8b10-bb2daae23b73",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Perinuclear localization represents a default state for most origins irrespective of telomere tethering, and interior localization is linked to activation of origin function.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C72 is supported by observations that telomere-distal early origins also localize peripherally in fkh1\u0394 cells (Figure 3). Claim C73 is supported by data showing that loss of origin function increases peripheral localization (Figures 1E, 3\u2014figure supplement 1A). These findings challenge previous models of telomere-dependent peripheral localization.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:06:34.634882Z"
+    },
+    {
+      "id": "c1e3738f-832f-46be-892e-90438b56b85a",
+      "content_id": "4a7d9e09-9b14-4643-8b10-bb2daae23b73",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "ARS305V-R localization correlates with cell cycle stage, showing peripheral localization in G1-arrested fkh1\u0394 fkh2-dsm cells. A functional origin is required for relocalization away from the periphery, as disruption of origin function results in even more peripheral distribution.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C21-C22 are supported by microscopy data (Figures 1B, 1C). Claims C26-C28 demonstrate origin function requirement through ACS deletion and binding site mutations (Figure 1E). The experimental design appropriately tests both origin function and Fkh1 binding requirements.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:06:34.634882Z"
+    },
+    {
+      "id": "bd70fb35-39e4-4752-9f13-a9550fc08301",
+      "content_id": "4a7d9e09-9b14-4643-8b10-bb2daae23b73",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Origin relocalization may represent initial stages in coalescence of origins into clusters that become replication factories, with interior localization increasing likelihood of physical interactions among early origins.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "These claims (C18, C69-C71) are explicitly speculative proposals connecting microscopy observations with Hi-C data and replication foci. While the speculation is reasonable and supported by citations to relevant literature, no direct experimental evidence for factory formation or origin clustering is provided in this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:06:34.634882Z"
+    },
+    {
+      "id": "d87a5c61-1d0d-4a80-b6d6-74d9745503f9",
+      "content_id": "4a7d9e09-9b14-4643-8b10-bb2daae23b73",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "Rif1 could potentially tether origins to the periphery, and Fkh1-mediated DDK recruitment may overwhelm Rif1-PP1 inhibition locally, with Cdc45 loading preventing reversal of MCM phosphorylation. Alternatively, MCM phosphorylation/Cdc45 loading might change origin biophysical properties.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "These mechanistic proposals (C74-C77) are speculative models based on known Rif1 properties and interactions. While consistent with the data and supported by relevant citations, no direct experimental evidence for Rif1 involvement in the observed relocalization is provided. These represent testable hypotheses for future work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:06:34.634882Z"
+    },
+    {
+      "id": "fa833a5e-e0f7-4392-97b5-c938b73f2a7c",
+      "content_id": "4a7d9e09-9b14-4643-8b10-bb2daae23b73",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "The relevant chromatin mark determining timing is MCM phosphorylation, with removal promoted by peripheral localization and addition by DDK recruitment. Excised ARS501 remains late despite mobilization because DDK is limiting and already recruited to other origins.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "These claims (C78-C79) are speculative proposals attempting to reconcile previous observations with the current model. While consistent with the authors' findings, they represent interpretations of prior work rather than direct experimental evidence from this study. Additional experiments would be needed to test these specific mechanistic proposals.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:06:34.634882Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "9f0428b9-eb15-4fc0-81e8-368039a11e3f",
+      "result_id": "28a9e7aa-0548-4dc1-99c7-1742cf58ff0b"
+    },
+    {
+      "claim_id": "457bdd79-038d-4b57-a668-a2201c62786c",
+      "result_id": "28a9e7aa-0548-4dc1-99c7-1742cf58ff0b"
+    },
+    {
+      "claim_id": "a46125c5-f44c-4aef-a3c1-79a92658dd4d",
+      "result_id": "28a9e7aa-0548-4dc1-99c7-1742cf58ff0b"
+    },
+    {
+      "claim_id": "96dc388f-b7f0-4636-b1a4-2b028dfe1ed8",
+      "result_id": "28a9e7aa-0548-4dc1-99c7-1742cf58ff0b"
+    },
+    {
+      "claim_id": "6e519405-6d5e-4cf9-b932-b782cb4d8368",
+      "result_id": "28a9e7aa-0548-4dc1-99c7-1742cf58ff0b"
+    },
+    {
+      "claim_id": "ea2a8f59-1226-400a-8be5-46a6229eb680",
+      "result_id": "10af2ad5-dd0f-4295-b284-e8721b38dabf"
+    },
+    {
+      "claim_id": "6564c015-fa73-4bd8-8c9d-ff78ede042d9",
+      "result_id": "10af2ad5-dd0f-4295-b284-e8721b38dabf"
+    },
+    {
+      "claim_id": "47488c79-def5-494b-987d-8a5ad40a5053",
+      "result_id": "10af2ad5-dd0f-4295-b284-e8721b38dabf"
+    },
+    {
+      "claim_id": "0983cd33-7325-474f-818e-3cf07408c069",
+      "result_id": "6f26a945-92db-4f71-ab8b-a37d9d18b092"
+    },
+    {
+      "claim_id": "63761baa-aa82-4285-82cd-7f459cab70b5",
+      "result_id": "6f26a945-92db-4f71-ab8b-a37d9d18b092"
+    },
+    {
+      "claim_id": "9d0eaa65-8471-4b2d-a48b-2f25b715d7c1",
+      "result_id": "6f26a945-92db-4f71-ab8b-a37d9d18b092"
+    },
+    {
+      "claim_id": "acf63055-3589-4ab0-b628-2f7279369d79",
+      "result_id": "6f26a945-92db-4f71-ab8b-a37d9d18b092"
+    },
+    {
+      "claim_id": "20b8ec5b-a8bc-4d16-89e7-9db3cc15fdc3",
+      "result_id": "6f26a945-92db-4f71-ab8b-a37d9d18b092"
+    },
+    {
+      "claim_id": "967ab007-1aa3-4ba5-ae7b-e9df692eda20",
+      "result_id": "6f26a945-92db-4f71-ab8b-a37d9d18b092"
+    },
+    {
+      "claim_id": "f1fc4883-8fbe-4845-8602-cf5b08ac0e01",
+      "result_id": "6f26a945-92db-4f71-ab8b-a37d9d18b092"
+    },
+    {
+      "claim_id": "9c2bb41e-4fe7-46c9-83fc-e8d4c5453b9c",
+      "result_id": "bf33c314-d388-4d97-b269-0acf1ebcc7cd"
+    },
+    {
+      "claim_id": "1fd70c70-89f7-430e-9d22-b4ee41ff852b",
+      "result_id": "7e9ec121-1c4b-424f-9d2b-83cd7ba7e174"
+    },
+    {
+      "claim_id": "e6f9ecbd-6d81-4f19-bbc3-a06451926dd1",
+      "result_id": "7e9ec121-1c4b-424f-9d2b-83cd7ba7e174"
+    },
+    {
+      "claim_id": "8f5da483-60fd-4b4e-9f47-845df99542a4",
+      "result_id": "7e9ec121-1c4b-424f-9d2b-83cd7ba7e174"
+    },
+    {
+      "claim_id": "d6e86aca-be5b-432c-bc0e-93116999fbd7",
+      "result_id": "7e9ec121-1c4b-424f-9d2b-83cd7ba7e174"
+    },
+    {
+      "claim_id": "4eebbda1-27e8-47c5-a0a8-5293bc0fc72f",
+      "result_id": "01adad67-aaf3-4259-a92b-a568c1753324"
+    },
+    {
+      "claim_id": "fd76a653-7265-4836-a5a8-7318471f7823",
+      "result_id": "01adad67-aaf3-4259-a92b-a568c1753324"
+    },
+    {
+      "claim_id": "ac94d18e-ae52-4ba5-bffb-4168080437b1",
+      "result_id": "1b6594fe-e639-49df-a37a-4f7cd78c1028"
+    },
+    {
+      "claim_id": "8e62a8ff-93e2-4451-afa4-780d43e4154b",
+      "result_id": "1b6594fe-e639-49df-a37a-4f7cd78c1028"
+    },
+    {
+      "claim_id": "d34f41bb-a21d-4264-8aa9-ae1e68968c58",
+      "result_id": "96ad0f52-390e-4fe8-bc67-e22bd4ec5ad0"
+    },
+    {
+      "claim_id": "7b8161fb-9fb6-44a6-857c-825d239a39ad",
+      "result_id": "96ad0f52-390e-4fe8-bc67-e22bd4ec5ad0"
+    },
+    {
+      "claim_id": "da9aa9a4-b8ad-4ba0-8952-63eb1be5de1a",
+      "result_id": "d3246f9c-95e3-440a-98f7-0d2cb04903d2"
+    },
+    {
+      "claim_id": "2e5d5552-8537-4ac2-93e2-9b3ad379edba",
+      "result_id": "d3246f9c-95e3-440a-98f7-0d2cb04903d2"
+    },
+    {
+      "claim_id": "d3e73809-7eed-4a28-a649-b7110f42c33b",
+      "result_id": "0ec8d220-1832-40f4-9873-c09ad68491d5"
+    },
+    {
+      "claim_id": "86aedfc5-0163-432b-902c-f4c73edf724b",
+      "result_id": "0ec8d220-1832-40f4-9873-c09ad68491d5"
+    },
+    {
+      "claim_id": "427f15c5-77ca-427f-9b4a-b48351786858",
+      "result_id": "0ec8d220-1832-40f4-9873-c09ad68491d5"
+    },
+    {
+      "claim_id": "c5b4d2f1-20cc-43e4-ab05-45f4a42c4fd0",
+      "result_id": "5e0768a5-854f-4daa-bbb2-4b2d160cc3b3"
+    },
+    {
+      "claim_id": "0a5679e9-0882-4462-a5f8-b8a923e35d31",
+      "result_id": "5e0768a5-854f-4daa-bbb2-4b2d160cc3b3"
+    },
+    {
+      "claim_id": "d00f0366-9c70-4d7b-9049-7e36fc2fe924",
+      "result_id": "5e0768a5-854f-4daa-bbb2-4b2d160cc3b3"
+    },
+    {
+      "claim_id": "1fae8748-631b-4109-b16e-ded5d8975913",
+      "result_id": "3c76c79e-a132-4cee-ab89-d351a8f3a30d"
+    },
+    {
+      "claim_id": "eef5bbac-b8de-48d6-94c9-63cda1cfd678",
+      "result_id": "3c76c79e-a132-4cee-ab89-d351a8f3a30d"
+    },
+    {
+      "claim_id": "55b42e04-81ce-4650-8f76-2355181272a9",
+      "result_id": "3c76c79e-a132-4cee-ab89-d351a8f3a30d"
+    },
+    {
+      "claim_id": "c455af3b-0efe-49a5-9257-a57c76313e25",
+      "result_id": "c49244ab-9449-41c2-a494-7a8aa3eb6118"
+    },
+    {
+      "claim_id": "6f5a02d7-9b5d-4290-96f3-c2795cf609ab",
+      "result_id": "c49244ab-9449-41c2-a494-7a8aa3eb6118"
+    },
+    {
+      "claim_id": "cc185d05-5715-484b-8498-07f071a78490",
+      "result_id": "21fea84b-4e3a-4d69-8511-2bbeadd8a706"
+    },
+    {
+      "claim_id": "2ca55e1e-89de-4960-8803-dd63353c8df4",
+      "result_id": "cc0ded31-214e-4d46-b1fa-c7e2187e1d61"
+    },
+    {
+      "claim_id": "0e68f35c-afed-41bf-bafc-6346cc1bf949",
+      "result_id": "cc0ded31-214e-4d46-b1fa-c7e2187e1d61"
+    },
+    {
+      "claim_id": "2fb61482-9e98-4bb0-a615-d2a716daee65",
+      "result_id": "c1e3738f-832f-46be-892e-90438b56b85a"
+    },
+    {
+      "claim_id": "b0709022-2fce-4ab0-866f-b779ac651229",
+      "result_id": "c1e3738f-832f-46be-892e-90438b56b85a"
+    },
+    {
+      "claim_id": "7b6dae60-3246-4fcd-9af9-d98edce5afa2",
+      "result_id": "c1e3738f-832f-46be-892e-90438b56b85a"
+    },
+    {
+      "claim_id": "972e31ef-b948-4d53-907e-e5d21db4be35",
+      "result_id": "c1e3738f-832f-46be-892e-90438b56b85a"
+    },
+    {
+      "claim_id": "66a0ea75-b5ce-443f-b076-8fc34c360e53",
+      "result_id": "c1e3738f-832f-46be-892e-90438b56b85a"
+    },
+    {
+      "claim_id": "03894a6c-6e4e-4333-94ce-f2706f585f37",
+      "result_id": "bd70fb35-39e4-4752-9f13-a9550fc08301"
+    },
+    {
+      "claim_id": "9e310497-cbe3-49fc-9a91-7d2f12c97273",
+      "result_id": "bd70fb35-39e4-4752-9f13-a9550fc08301"
+    },
+    {
+      "claim_id": "b8a1b45f-b1f2-44a2-b067-770d115b382e",
+      "result_id": "bd70fb35-39e4-4752-9f13-a9550fc08301"
+    },
+    {
+      "claim_id": "abf55d82-8d3d-4fd2-9709-274a9e21c6dc",
+      "result_id": "bd70fb35-39e4-4752-9f13-a9550fc08301"
+    },
+    {
+      "claim_id": "d1638d0c-4422-4a7f-9754-362d91cd6ee2",
+      "result_id": "d87a5c61-1d0d-4a80-b6d6-74d9745503f9"
+    },
+    {
+      "claim_id": "167cc87a-5ff9-4780-84a8-bb208ffdcbff",
+      "result_id": "d87a5c61-1d0d-4a80-b6d6-74d9745503f9"
+    },
+    {
+      "claim_id": "e7cfd085-1ef8-44f0-9997-ad710eca568f",
+      "result_id": "d87a5c61-1d0d-4a80-b6d6-74d9745503f9"
+    },
+    {
+      "claim_id": "6515cc90-1482-4633-8be3-8fec1ff94c84",
+      "result_id": "d87a5c61-1d0d-4a80-b6d6-74d9745503f9"
+    },
+    {
+      "claim_id": "52fcdfbf-9420-424c-a782-0bf16026ef00",
+      "result_id": "fa833a5e-e0f7-4392-97b5-c938b73f2a7c"
+    },
+    {
+      "claim_id": "b5a12331-836f-430c-bbce-007a0e8d8187",
+      "result_id": "fa833a5e-e0f7-4392-97b5-c938b73f2a7c"
+    }
+  ],
+  "comparisons": []
+}

@@ -1,0 +1,1844 @@
+{
+  "submission": {
+    "id": "60817046-3124-460d-9924-ceff932c2d6a",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T16:20:06.620978Z",
+    "updated_at": "2025-12-02T16:20:06.620978Z"
+  },
+  "content": [
+    {
+      "id": "ef7a9906-5adc-450d-b50d-fee8a0d1f214",
+      "submission_id": "60817046-3124-460d-9924-ceff932c2d6a",
+      "content_type": "manuscript",
+      "content_text": "# Direct ETTIN-auxin interaction controls chromatin states in gynoecium development\n\n## Authors\n\n- Andr\u00e9 Kuhn<sup>1</sup> ([ORCID: 0000-0003-2144-8413](https://orcid.org/0000-0003-2144-8413))\n- Sigurd Ramans Harborough<sup>2</sup> ([ORCID: 0000-0002-0361-5647](https://orcid.org/0000-0002-0361-5647))\n- Heather M McLaughlin<sup>1</sup> ([ORCID: 0000-0002-3020-7964](https://orcid.org/0000-0002-3020-7964))\n- Bhavani Natarajan<sup>1</sup> ([ORCID: 0000-0001-6852-7130](https://orcid.org/0000-0001-6852-7130))\n- Inge Verstraeten<sup>3</sup> ([ORCID: 0000-0001-7241-2328](https://orcid.org/0000-0001-7241-2328))\n- Ji\u0159\u00ed Friml<sup>3</sup> ([ORCID: 0000-0002-8302-7596](https://orcid.org/0000-0002-8302-7596))\n- Stefan Kepinski<sup>2</sup> ([ORCID: 0000-0001-9819-5034](https://orcid.org/0000-0001-9819-5034))\n- Lars \u00d8stergaard<sup>1</sup> ([ORCID: 0000-0002-8497-7657](https://orcid.org/0000-0002-8497-7657)) \u2020\n\n### Affiliations\n\n1. Department of Crop Genetics, John Innes Centre, Norwich Research Park Norwich United Kingdom\n2. Centre for Plant Sciences, Faculty of Biological Sciences, University of Leeds Leeds United Kingdom\n3. Institute of Science and Technology Klosterneuburg Austria\n\n\u2020 Corresponding author\n\n## Abstract\n\nHormonal signalling in animals often involves direct transcription factor-hormone interactions that modulate gene expression. In contrast, plant hormone signalling is most commonly based on de-repression via the degradation of transcriptional repressors. Recently, we uncovered a non-canonical signalling mechanism for the plant hormone auxin whereby auxin directly affects the activity of the atypical auxin response factor (ARF), ETTIN towards target genes without the requirement for protein degradation. Here we show that ETTIN directly binds auxin, leading to dissociation from co-repressor proteins of the TOPLESS/TOPLESS-RELATED family followed by histone acetylation and induction of gene expression. This mechanism is reminiscent of animal hormone signalling as it affects the activity towards regulation of target genes and provides the first example of a DNA-bound hormone receptor in plants. Whilst auxin affects canonical ARFs indirectly by facilitating degradation of Aux/IAA repressors, direct ETTIN-auxin interactions allow switching between repressive and de-repressive chromatin states in an instantly-reversible manner.\n\n## Introduction\n\nDevelopmental programmes within multicellular organisms originate from a single cell (i.e. a fertilised oocyte) that proliferates into numerous cells ultimately differentiating to make up specialised tissues and organs. Tight temporal and spatial regulation of the genes involved in these processes is essential for proper development of the organism. Changes in gene expression are often controlled by mobile signals that translate positional information into cell type-specific transcriptional outputs (Hironaka and Morishita, 2012). In plants, this coordination can be facilitated by phytohormones such as auxin, which controls processes throughout plant development (Vanneste and Friml, 2009). In canonical auxin signalling, auxin-responsive genes are repressed when auxin levels are low by Aux/IAA transcriptional repressors that interact with DNA-bound Auxin Response Factors (ARFs). As auxin levels increase, the auxin molecule binds to members of the TIR1/AFB family of auxin co-receptors (Kepinski and Leyser, 2005; Dharmasiri et al., 2005). The main role of this auxin perception mechanism, besides non-transcriptionally inhibiting growth (Fendrych et al., 2018; Gallei et al., 2019), is transcriptional reprogramming. This is realised by interaction with Aux/IAA repressors, leading to their ubiquitination and subsequent degradation by the 26S proteasome, ultimately relieving the repression of ARF-targeted loci (Kelley and Estelle, 2012;\u00a0Leyser, 2018; Weijers and Wagner, 2016).\n\nWe recently identified an alternative auxin-signalling mechanism whereby auxin directly affects the activity of a transcription factor (TF) complex towards its downstream targets\u00a0(Simonini et al., 2016; Simonini et al., 2017). This mechanism mediates precise polarity switches during organ initiation and patterning and includes the ARF, ETTIN (ETT/ARF3) as a pivotal component. However, ETT is an unusual ARF lacking the Aux/IAA-interacting Phox/Bem1 (PB1) domain (Simonini et al., 2016; Sessions et al., 1997) and is therefore unlikely to mediate auxin signalling via the canonical pathway. Here, we demonstrate that ETT binds auxin directly and that this interaction determines expression of ETT target genes. In conditions of low auxin levels, ETT interacts with co-repressors of the TOPLESS/TOPLESS-RELATED (TPL/TPR) family to keep chromatin at ETT target loci in a repressed state through HDA19-mediated histone deacetylation. Under high auxin conditions, ETT binds auxin leading to dissociation of TPL/TPR-HDA19 and de-repression of ETT targets.\n\n## Results\n\nETT can interact with a diverse set of TFs and these interactions are sensitive to the naturally occurring auxin, indole 3-acetic acid (IAA) (Simonini et al., 2016). To test if this effect is mediated through a direct interaction between ETT and auxin, we took advantage of the drug affinity-responsive target stability (DARTS) assay (Lomenick et al., 2011) and followed the effect of IAA on proteolytic degradation of a FLAG-fused ETT segment conditionally expressed in Arabidopsis (Figure 1a). The concentrations of IAA applied (0.1 \u00b5M, 1 \u00b5M, 10 \u00b5M) were selected to saturate the protein with ligand and to ensure maximal protection from proteolysis. As a negative control, benzoic acid (BA) was applied at the same dose as IAA (10 \u00b5M and 100 \u00b5M) because of its similar size and pKa as IAA. Treatments with IAA but not BA protected ETT-FLAG from pronase-induced degradation consistent with direct, specific interaction between IAA and ETT in planta.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/51787/elife-51787-fig1-v2.jpg)\n\n**Figure 1.:** (a) DARTS assay suggests that ETT binds IAA. Seedlings from an inducible two-component ETT-FLAG line were used for the protein isolation. Samples were treated with DMSO (mock), IAA and BA and digested by different concentrations of Pronase. Samples were further analysed by western blot with an anti-FLAG antibody. (b) HSQC-NMR performed with ES388-594 protein either alone (black), with indole-3-acetic acid (IAA, green) or benzoic acid (BA, pink). ES388-594: ligand, 1:10, 50 \u00b5M:500 \u00b5M. (c) Zoom-in of the indicated rectangular region in a. (d) Zoom-in of the specific shifts (labelled I-V) in the indicated dotted rectangles in b and c. Changes in chemical shifts are indicated by arrows from control to IAA treatment. (e\u2013g) ITC spectre showing heat exchange between ES388-594 protein and IAA (e), but not in controls (f,\u00a0g). See Figure 1\u2014figure supplement 1 for parameters used in the HSQC-NMR experiment.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/51787/elife-51787-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** The red boxes indicate the regions used in Figure 1a.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/51787/elife-51787-fig1-figsupp2-v2.jpg)\n\nThe region responsible for IAA-sensitivity is situated within the C-terminal part of ETT, known as the ETT-Specific (ES) domain. A protein fragment containing 207 amino acids of the ES domain, ES388-594, sufficient for mediating IAA-sensitivity in ETT-protein interactions, was produced recombinantly and shown to be intrinsically disordered (Simonini et al., 2018). The sensitivity of ETT-TF interactions to IAA suggests a direct effect of the IAA molecule on the ETT protein. Therefore, to test whether ETT binds IAA, we carried out heteronuclear single quantum coherence (HSQC) nuclear magnetic resonance (NMR) experiments using 15N-labelled ES388-594 protein. The HSQC spectrum, recorded at 5 \u00b0C, shows a prominent signal-dense region consistent with the ES domain being largely intrinsically disordered. Interestingly, the spectrum also shows dispersed peaks flanking the signal-dense region indicating that there is nevertheless some propensity to form secondary structure, particularly with a helical character (Figure 1b). In addition to this overview of ETT structure, the HSQC NMR probes chemical shifts of protein amide-NH bonds in response to the presence of ligand (Meyer and Peters, 2003). We found that a number of residues shifted their position in the spectrum in response to the addition of IAA, whereas addition of BA had no effect (Figure 1b\u2013d). These shifts show that certain residues are experiencing a changed chemical environment as a consequence of IAA-binding and this may include the conformational change of a structural motif within the ETT protein. The HSQC experiment therefore demonstrates that ETT binds IAA directly. This experiment has not allowed us to assign signals to specific amino acids and hence there is some uncertainty associated with tracking the chemical shifts of some residues. However, a particularly large change is observed for the tryptophan NH cross peak when IAA is added to the ETT fragment (~10 ppm, rectangle I in Figure 1b,d). Since there is only one tryptophan in the ETT fragment used here (W505), this shift can be assigned to this residue and suggests that W505 has a prominent role in the interaction with IAA.\n\nWe also used the recombinant ETT fragment in an Isothermal Titration Calorimetry (ITC) assay, which characterises binding of ligands to proteins by determining thermodynamic parameters of the interaction as heat exchange. This experiment revealed interaction between ETT and IAA, while control experiments titrating IAA into buffer without protein and titrating buffer without IAA into the ETT fragment showed no heat exchange (Figure 1e\u2013g). We were unable to obtain a Kd value for the interaction, which may be due to the interaction being weak as well as potential protein aggregation. This could reflect that the ETT-auxin interaction is stabilised by interacting protein partners in planta that are not present in this in vitro experiment.\n\nTogether, these three independent biochemical methods demonstrate that ETT binds IAA directly thus revealing a key molecular aspect of the non-canonical auxin-signalling pathway.\n\nPreviously, PINOID (PID) (Benjamins et al., 2001) and HECATE1 (HEC1) (Gremski et al., 2007) were identified as ETT target genes (Simonini et al., 2016; Simonini et al., 2017) and both genes are upregulated in gynoecium tissue from the ett-3 mutant compared to wild type (Figure 2\u2014figure supplement 1). We also observed that expression of both genes is induced by IAA, but did not observe any additional induction beyond the constitutive upregulation in the ett-3 mutant background (Figure 2\u2014figure supplement 1). This ETT-dependent regulation does not require a functional TIR1/AFB machinery, since IAA-induction of PID and HEC1 is still observed in tir1/afb mutant combinations, whereas the known TIR1/AFB-mediated auxin induction of the IAA19 gene is completely abolished in these mutants (Figure 2a\u2013c).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/51787/elife-51787-fig2-v2.jpg)\n\n**Figure 2.:** Expression of the canonical auxin responsive IAA19 gene (a) and the ETT-target genes HEC1 (b) and PID (c) in control-treated (dark grey) or 100 \u00b5M IAA-treated (light grey) gynoecia assayed using qRT-PCR. (a) IAA19 expression is up-regulated in response to auxin in wild-type gynoecia (Col-0) but not in tir1/afb double and triple mutants. The ETT-target genes HEC1 and PID are up-regulated in response to auxin in both wild-type and auxin receptor mutants (b c). This suggests a TIR1/AFB independent regulation of these genes. (d) Expression of IAA19, HEC1 and PID in response to treatment with 100 \u00b5M IAA and 100 \u00b5M cvxIAA in wild-type (Col-0) and pTIR1:ccvTIR1 gynoecia in the tir1 afb2 double mutant (ccvTIR1). The data confirm TIR1/AFB independent regulation of HEC1 and PID in the gynoecium. ***p<0.0001; Shown are mean\u00a0\u00b1\u00a0standard deviation of three biological replicates. See Figure 2\u2014source data 2 for statistical analyses.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/51787/elife-51787-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** In wild-type gynoecia HEC1 and PID are up-regulated upon auxin treatment while both genes are constitutively up-regulated in ett-3. Treatment with 100 \u00b5M IAA does not affect HEC1 and PID expression in the ett-3 mutant suggesting that ETT acts as a transcriptional repressor. Asterisks indicate significant change upon auxin treatment compared to untreated Col-0 (*** indicating p<0.0001). Shown are mean\u00a0\u00b1\u00a0standard deviation of three biological replicates. See Figure 2\u2014source data 2 for statistical analyses.\n\nTo further assess the TIR1/AFB independence of the ETT-mediated auxin signalling pathway, we exploited a recently-developed synthetic auxin-TIR1 pair (Uchida et al., 2018). In this system, the auxin-binding pocket of TIR1 has been engineered (ccvTIR1) to accommodate an IAA derivative bearing a bulky side chain (cvxIAA). By expressing the ccvTIR1 in a tir1 afb2 mutant background, the canonical pathway will only respond to the addition of cvxIAA and not IAA (Uchida et al., 2018). We performed an expression analysis on ccvTIR1 gynoecia treated\u00a0\u00b1cvxIAA and\u00a0\u00b1IAA as well as control plants with the same treatments. In this experiment, IAA19 served as a control gene whose expression is regulated in a TIR1/AFB-dependent manner (Benjamins et al., 2001). Indeed, IAA19 was strongly upregulated by cvxIAA in the ccvTIR1 line, but not by IAA (Figure 2d). In contrast, PID and HEC1 expression was not significantly affected by cvxIAA, whilst still responding to IAA in the ccvTIR1 background (Figure 2d). These data demonstrate that ETT-mediated auxin signalling can occur independently of the canonical TIR1/AFB signalling pathway.\n\nIn a phylogenetic analysis of ETT protein sequences across the angiosperm phylum, we identified a number of regions that are highly conserved (Figure 3\u2014figure supplement 1). Unsurprisingly, the DNA-binding domain characteristic to B3-type TFs such as ARF proteins was conserved across all ETT proteins. Towards the C terminus of the ES domain we identified an EAR-like motif with a particularly high level of conservation (Figure 3a, Figure 3\u2014figure supplement 1a). Ethylene-responsive element binding factor-associated Amphiphilic Repression (EAR) motifs are also found in Aux/IAA proteins. Interactions between Aux/IAA and members of the TOPLESS and TOPLESS-RELATED (TPL/TPR) family of co-repressors occur via this motif (Szemenyei et al., 2008). TPL/TPRs mediate their repressive effect by attracting histone deacetylases (HDACs) to promote chromatin condensation (Krogan et al., 2012). It was recently shown that ETT is required to keep Histone H3 at a deacetylated state at the gene locus of the meristem identity gene SHOOT MERISTEMLESS (STM) thereby repressing STM expression (Chung et al., 2019). Since ETT functions independently of the canonical auxin pathway, it is possible that its role in chromatin remodelling occurs via direct interaction with TPL/TPRs through the EAR-like motif. To test this, we carried out Yeast 2-Hybrid (Y2H) assays in which ETT was found to interact with TPL, TPR2 and TPR4 (Figure 3b, Figure 3\u2014figure supplement 1b). Moreover, mutating residues in the EAR-like motif abolished the interactions demonstrating its requirement for the ETT-TPL/TPR interaction (Figure 3b).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/51787/elife-51787-fig3-v2.jpg)\n\n**Figure 3.:** (a) Schematic representation of full-length ETT protein highlighting an EAR-like motif and tryptophan in position 505 (W) in the C-terminal ETT-specific domain. DBD, DNA-binding domain. (b) Y2H showing that ETT interacts with TPL, TPR2 and TPR4. These interactions depend on the identified C-terminal RLFGF motif and are auxin-sensitive. DBD, DNA-binding domain. (c) Co-IP revealing that ETT interacts with TPL in an auxin-sensitive manner with increasing IAA concentrations weakening the interaction. (d) Co-IP showing that mutating the tryptophan in position 505 of ETT (ETTW505A) leads to loss of auxin sensitivity in the interaction between ETT and TPL.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/51787/elife-51787-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (a) Alignment of ETT protein sequences of 22 species identified a conserved repressive motif (RLFGF) at its C-terminal domain. A logo of the sequence surrounding the conserved W505 is also shown. (b) ETT interacts with several members of the TPL/TPR co-repressor family in Y2H. Additionally, controls for Figure 2 are shown.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/51787/elife-51787-fig3-figsupp2-v2.jpg)\n\n**Figure 3\u2014figure supplement 2.:** (a) In Y2H increasing concentrations of IAA lead to reduction of yeast growth abolishing the interaction between ETT and its partners. The interactions are, therefore, auxin-sensitive. (b) Y2H to test specificity of auxin-sensitivity using benzoic acid (BA), NAA, and 2,4D in a yeast growth assay. The data suggest that the auxin-sensitivity observed in (a) is IAA-specific. (c) Y2H-based ONPG assay quantifying \u03b2-galactosidase activity as a measure of interaction strength.( d) Co-IP experiments show that the interaction between ETT and TPL cannot be disrupted by the synthetic auxin, NAA. The data support that the ETT TPL/TPR interactions are sensitive to IAA but not to NAA. ***p<0.0001; Shown are mean\u00a0\u00b1\u00a0standard deviation of three biological replicates. See Figure 3\u2014source data 1 for statistical analyses.\n\n![Figure 3\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/51787/elife-51787-fig3-figsupp3-v2.jpg)\n\n**Figure 3\u2014figure supplement 3.:** The red boxes indicate the regions used in Figure 3c,d and Figure 3\u2014figure supplement 2d.\n\nGiven that several ETT-protein interactions are affected by IAA and that part of the ETT transcriptome changes in response to IAA (Simonini et al., 2016; Simonini et al., 2017), we tested the IAA sensitivity of ETT-TPL/TPR interactions. In both Y2H and in co-immunoprecipitation (Co-IP) experiments, we observed that the interactions were reduced with increasing IAA concentrations (Figure 3b,c and Figure 3\u2014figure supplement 2). Moreover, as described previously for other ETT-protein interactions, the sensitivity was specific to IAA as other auxinic compounds tested did not show this effect (Figure 3\u2014figure supplement 2). Henceforth, \u2018auxin\u2019 will refer to IAA unless stated otherwise. These data suggest that in conditions with low auxin levels, ETT can interact with TPL/TPR proteins to repress the expression of target genes. An increase in cellular auxin causes ETT to bind auxin thereby undergoing a conformational change that abolishes interaction with TPL/TPR co-repressors.\n\nThe HSQC-NMR experiment described above indicate that the tryptophan in position 505 (W505) affects the direct interaction between the ETT protein and auxin. To test the role of W505 in the auxin-sensitive interaction with TPL/TPRs, we constructed a mutated version of ETT (W505A) and assessed the effect in protein interaction assays. Both Y2H and Co-IP experiments revealed that W505 is required for the ETT-TPL/TPR interaction to be sensitive to auxin (Figure 3c,d). The key importance of W505 is furthermore supported by a phylogenetic analysis of ETT protein sequences revealing that this residue is highly conserved in ETT proteins across angiosperms (Figure 3\u2014figure supplement 1a).\n\nTPL was originally identified as a key factor involved in setting up the apical-basal growth axis during embryo development (Long et al., 2006; Smith and Long, 2010). Large-scale interaction studies suggest that the five Arabidopsis TPL/TPRs have roles throughout plant development (Krogan et al., 2012; Causier et al., 2012). Whilst ETT has been implicated in a wide array of developmental processes (Garcia et al., 2006; Marin et al., 2010; Kelley et al., 2012; Pekker et al., 2005), the most dramatic phenotypes of ett loss-of-function mutants are observed during gynoecium development (Sessions et al., 1997; Sessions and Zambryski, 1995; Nemhauser et al., 2000). In accordance with this, ETT is highly expressed in the gynoecium (Figure 4a; Simonini et al., 2016). We produced reporter lines of TPL, TPR2 and TPR4 promoters fused to the GUS gene to test if they overlap with ETT expression in the gynoecium. Both pTPL:GUS and pTPR2:GUS exhibited strong expression in the apical part of the gynoecium where ETT is also expressed, while no pTPR4:GUS expression was observed (Figure 4a\u2013d). Single loss-of-function mutants in TPL and TPR2 do not show any abnormal phenotypes during gynoecium development. However, the tpl tpr2 double mutant has defects in the development of the apical gynoecium similar to ett mutants (Figure 4e\u2013g) demonstrating that TPL and TPR2 function redundantly in gynoecium development. Together with the protein interaction data and the overlapping expression patterns, these results suggest that ETT and TPL/TPR2 cooperate to regulate gynoecium development.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/51787/elife-51787-fig4-v2.jpg)\n\n**Figure 4.:** (a\u2013d) Promoter GUS expression analysis of pETT:GUS (a), pTPL:GUS (b), pTPR2:GUS (c) and pTPR4:GUS (d) revealed that ETT, TPL and TPR2 but not TPR4 are co-expressed in the Arabidopsis style. Scale bar\u00a0=\u00a0300 \u03bcm. (e\u2013h) Gynoecium phenotypes of wild-type (e), ett-3 (f) tpl tpr2ge (g) and hda19-4 (h). Scale bar\u00a0=\u00a0100 \u03bcm. (i j,) HEC1 (i) and PID (j) are constitutively mis-regulated in ett-3, tpl tpr2ge and hda19-4 gynoecia. This misregulation is unaffected by treatment with 100 \u00b5M IAA. ***p-values<0.0001; Shown are mean\u00a0\u00b1\u00a0standard deviation of three biological replicates. Differences between untreated and IAA-treated mutants are not significant. See Figure 4\u2014source data 1 for statistical analyses.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/51787/elife-51787-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** Expression analysis using qRT-PCR in wild-type gynoecia showed that TPL and TPR2 are more strongly expressed than TPR1,3 and 4. Likewise, HDA19 exhibits higher expression compared to HDA6. ***p-values<0.0001; Shown are mean\u00a0\u00b1\u00a0standard deviation of three biological replicates. See Figure 4\u2014source data 1 for statistical analyses.\n\nTPL was shown previously to recruit histone deacetylase, HDA19, during early Arabidopsis flower development to keep chromatin in a repressed state (Krogan et al., 2012). Moreover, HDA19 was also recently shown to participate in the repression of STM (Chung et al., 2019). In that study, ETT was shown to recruit HDA19 to the STM promoter, although not via direct protein interaction. Here, our analysis of gynoecia from the hda19-4 mutant demonstrate that HDA19 is also required for gynoecium development as the hda19-4 mutant has strong style defects (Figure 4h). In agreement with this, the HDA19 gene was highly expressed in gynoecium tissue, whereas another member of the HDA gene family, HDA6, was not (Figure 4\u2014figure supplement 1). Moreover, HDA19 recruitment likely involves ETT, since expression of the ETT target genes, PID and HEC1, is increased in the tpl tpr2 and hda19-4 mutants compared to wild type. Similar to the ett mutant, auxin treatments failed to further induce expression in these mutants (Figure 4i,j). These observations suggest that ETT, TPL/TPR2 and HDA19 function in conjunction to control gene expression during gynoecium development.\n\nTo test the direct interaction of ETT, TPL and HDA19 on chromatin, we performed Chromatin-Immunoprecipitation (ChIP) using reporter lines expressing GFP fusion protein. Although only ETT is expected to bind DNA, ChIP followed by qPCR revealed that all three proteins associate with DNA elements in the same regions of the promoters of PID and HEC1 (Figure 5a\u2013c). Moreover, while ETT association with these promoter regions was largely unaffected in the presence of IAA, TPL and HDA19 interactions are reduced upon auxin treatment (Figure 5a\u2013c). This supports a model in which ETT recruits TPL/TPR2 and HDA19 to ETT target loci to keep chromatin in a condensed state through histone deacetylation. When auxin levels increase, the ETT-TPL/TPR2 interaction is broken and TPL/TPR2 and HDA19 dissociate from the loci, presumably preventing HDA19 from deacetylating histones. To test this, we assayed for H3K27 acetylation, which is a substrate for HDA19. H3K27 acetylation increased in the absence of ETT and upon treatment with auxin. This occurred in the same regions of the PID and HEC1 promoters where the proteins were found to associate (Figure 5d,e). In agreement with ETT mediating the association of TPL/TPR and HDA19 with these regions, there was no further increase of acetylation in the ett-3 mutant upon treatment with auxin (Figure 5d,e).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/51787/elife-51787-fig5-v2.jpg)\n\n**Figure 5.:** (a\u2013c) Chromatin immunoprecipitation (ChIP) shows ETT (a), TPL (b) and HDA19 (c) binding to conserved regions of HEC1 and PID loci in the absence of IAA (dark grey columns). In the presence of IAA (light grey columns), ETT association is unchanged, while both TPL and HDA19 interactions are reduced. A WUS gene fragment served as negative control (NC). (d e,) H3K27ac accumulation (from ChIP analysis) along the HEC1 (d) and PID (e) loci in wild-type (Col-0) and ett-3 plants\u00a0\u00b1\u00a0treatment with 100 \u00b5M IAA. Numbers on the x axes are distances to the Transcription Start Site (TSS). The schematic of the loci is shown below each panel. Dashed boxes represent ETT binding regions. (f) Qualitative schematic illustration of alternative TIR1/AFB independent auxin signaling. Under low auxin conditions an ETT-TPL-HDA19 complex binds to ETT-target genes keeping their chromatin environments repressed, through de-acetylation. High nuclear auxin concentrations abolish the ETT-TPL-HDA19 complex through direct ETT-auxin interaction. This leads to an accumulation of histone acetylation and up-regulation of ETT-target genes. Values in a\u2013e) are means\u00a0\u00b1\u00a0standard deviation of three biological replicates. See Figure 5\u2014source data 1 for statistical analyses.\n\n## Discussion\n\nThe data presented in this paper provide molecular insight into how auxin levels are translated into changes in gene expression of ETT target genes. Our data lead to a model in which low levels of auxin maintain ETT associations with TPL/TPR2 to repress gene expression via H3K27 deacetylation. As auxin levels increase, TPL/TPR2 (and hence HDA19) disassociate from ETT, promoting H3K27 acetylation (Figure 5f). This model molecularly underpins the published association between auxin dynamics and PID expression at the gynoecium apex where PID is repressed at early stages of development to allow symmetry transition, but subsequently de-repressed as auxin levels rise to facilitate polar auxin transport (Simonini et al., 2016; Moubayidin and Ostergaard, 2014). Whilst this model explains the data on ETT-mediated auxin signalling during gynoecium development, it is possible that the effect of auxin on ETT varies depending on the developmental context. Moreover, the concentrations of auxin required to mediate its effect on ETT is likely to differ between diverse ETT-containing complexes.\n\nThe direct binding of auxin allows ETT to switch the chromatin locally between repressive and de-repressive states. The recent report of ETT negatively regulating STM expression (Chung et al., 2019) provides molecular evidence that ETT can function as a repressor. Whether ETT also has a role in recruiting activating components is yet to be clarified. Indeed, different modes of actions are possible that could depend on other interacting partners or auxin levels and even be target-gene specific. Nevertheless, the effect of auxin on ETT-mediated regulation of the genes studied here is instantly reversible, making it possible to switch between states, immediately responding to changes in auxin levels. This feature, which is reminiscent of animal hormonal signalling pathways such as the Thyroid Hormone and Wnt/\u00df-catenin pathways (Tsai and O'Malley, 1994; Gammons and Bienz, 2018), may be particularly important in controlling changes in tissue polarity during plant organogenesis as observed in the Arabidopsis gynoecium (Moubayidin and Ostergaard, 2014).\n\nThe identification of a direct auxin-ETT interaction to control gene expression adds an additional layer of complexity to auxin action, which contributes towards explaining how auxin imparts its effect on highly diverse processes throughout plant development. In a broader context, this work also opens for the exciting possibility that direct transcription factor-ligand interactions is a general feature in the control of gene expression in plants as found in animals.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th colspan=\"2\">Designation</th>\n      <th colspan=\"2\">Source or reference</th>\n      <th colspan=\"2\">Identifiers</th>\n      <th colspan=\"2\">Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Gene (Arabidopsis thaliana)</td>\n      <td colspan=\"2\">ETTIN (ETT)</td>\n      <td colspan=\"2\">The Arabidopsis Information Resource</td>\n      <td colspan=\"2\">AT2G33860</td>\n      <td colspan=\"2\"></td>\n    </tr>\n    <tr>\n      <td>Gene (Arabidopsis thaliana)</td>\n      <td colspan=\"2\">TOPLESS (TPL)</td>\n      <td colspan=\"2\">The Arabidopsis Information Resource</td>\n      <td colspan=\"2\">AT1G15750</td>\n      <td colspan=\"2\"></td>\n    </tr>\n    <tr>\n      <td>Gene (Arabidopsis thaliana)</td>\n      <td colspan=\"2\">TOPLESS- RELATED 1 (TPR1)</td>\n      <td colspan=\"2\">The Arabidopsis Information Resource</td>\n      <td colspan=\"2\">AT1G80490</td>\n      <td colspan=\"2\"></td>\n    </tr>\n    <tr>\n      <td>Gene (Arabidopsis thaliana)</td>\n      <td colspan=\"2\">TOPLESS-RELATED 2 (TPR2)</td>\n      <td colspan=\"2\">The Arabidopsis Information Resource</td>\n      <td colspan=\"2\">AT3G16830</td>\n      <td colspan=\"2\"></td>\n    </tr>\n    <tr>\n      <td>Gene (Arabidopsis thaliana)</td>\n      <td colspan=\"2\">TOPLESS-RELATED 3 (TPR3)</td>\n      <td colspan=\"2\">The Arabidopsis Information Resource</td>\n      <td colspan=\"2\">AT5G27030</td>\n      <td colspan=\"2\"></td>\n    </tr>\n    <tr>\n      <td>Gene (Arabidopsis thaliana)</td>\n      <td colspan=\"2\">TOPLESS-RELATED 4 (TPR4)</td>\n      <td colspan=\"2\">The Arabidopsis Information Resource</td>\n      <td colspan=\"2\">AT3G15880</td>\n      <td colspan=\"2\"></td>\n    </tr>\n    <tr>\n      <td>Gene (Arabidopsis thaliana)</td>\n      <td colspan=\"2\">HISTONE DEACETYLASE 6 (HDA6)</td>\n      <td colspan=\"2\">The Arabidopsis Information Resource</td>\n      <td colspan=\"2\">AT5G63110</td>\n      <td colspan=\"2\"></td>\n    </tr>\n    <tr>\n      <td>Gene (Arabidopsis thaliana)</td>\n      <td colspan=\"2\">HISTONE DEACETYLASE 19 (HDA19)</td>\n      <td colspan=\"2\">The Arabidopsis Information Resource</td>\n      <td colspan=\"2\">AT4G38130</td>\n      <td colspan=\"2\"></td>\n    </tr>\n    <tr>\n      <td>Gene (Arabidopsis thaliana)</td>\n      <td colspan=\"2\">HECATE 1 (HEC1)</td>\n      <td colspan=\"2\">The Arabidopsis Information Resource</td>\n      <td colspan=\"2\">AT5G67060</td>\n      <td colspan=\"2\"></td>\n    </tr>\n    <tr>\n      <td>Gene (Arabidopsis thaliana)</td>\n      <td colspan=\"2\">PINOID (PID)</td>\n      <td colspan=\"2\">The Arabidopsis Information Resource</td>\n      <td colspan=\"2\">AT2G34650</td>\n      <td colspan=\"2\"></td>\n    </tr>\n    <tr>\n      <td>Genetic reagent Arabidopsis thaliana</td>\n      <td colspan=\"2\">Col-0</td>\n      <td colspan=\"2\">widely distributed</td>\n      <td colspan=\"2\"></td>\n      <td colspan=\"2\"></td>\n    </tr>\n    <tr>\n      <td>Genetic reagent Arabidopsis thaliana</td>\n      <td colspan=\"2\">hda19-4</td>\n      <td colspan=\"2\">Kim et al., 2008</td>\n      <td colspan=\"2\">SALK_13944</td>\n      <td colspan=\"2\"></td>\n    </tr>\n    <tr>\n      <td>Genetic reagent Arabidopsis thaliana</td>\n      <td colspan=\"2\">tir1-1 afb2-3 afb3-4</td>\n      <td colspan=\"2\">Parry et al., 2009</td>\n      <td colspan=\"2\"></td>\n      <td colspan=\"2\"></td>\n    </tr>\n    <tr>\n      <td>Genetic reagent Arabidopsis thaliana</td>\n      <td colspan=\"2\">tpl</td>\n      <td colspan=\"2\">European Arabidopsis Stock Centre</td>\n      <td colspan=\"2\">SALK_034518C</td>\n      <td colspan=\"2\"></td>\n    </tr>\n    <tr>\n      <td>Genetic reagent Arabidopsis thaliana</td>\n      <td colspan=\"2\">ett-3</td>\n      <td colspan=\"2\">Simonini et al., 2017;\u00a0Sessions et al., 1997</td>\n      <td colspan=\"2\">AT2G33860</td>\n      <td colspan=\"2\"></td>\n    </tr>\n    <tr>\n      <td>Genetic reagent Arabidopsis thaliana</td>\n      <td colspan=\"2\">pETT:GUS</td>\n      <td colspan=\"2\">Ng et al., 2009</td>\n      <td colspan=\"2\">AT2G33860</td>\n      <td colspan=\"2\"></td>\n    </tr>\n    <tr>\n      <td>Genetic reagent Arabidopsis thaliana</td>\n      <td colspan=\"2\">pETT:ETT-GFP</td>\n      <td colspan=\"2\">Simonini et al., 2016</td>\n      <td colspan=\"2\">AT2G33860</td>\n      <td colspan=\"2\"></td>\n    </tr>\n    <tr>\n      <td>Genetic reagent Arabidopsis thaliana</td>\n      <td colspan=\"2\">pTPL:TPL-GFP</td>\n      <td colspan=\"2\">Pi et al., 2015</td>\n      <td colspan=\"2\">AT1G15750</td>\n      <td colspan=\"2\"></td>\n    </tr>\n    <tr>\n      <td>Genetic reagent Arabidopsis thaliana</td>\n      <td colspan=\"2\">p35S:HDA19-GFP</td>\n      <td colspan=\"2\">Pi et al., 2015</td>\n      <td colspan=\"2\">AT4G38130</td>\n      <td colspan=\"2\"></td>\n    </tr>\n    <tr>\n      <td>Genetic reagent Arabidopsis thaliana</td>\n      <td colspan=\"2\">pTIR1:ccvTIR1</td>\n      <td colspan=\"2\">Szemenyei et al., 2008</td>\n      <td colspan=\"2\"></td>\n      <td colspan=\"2\"></td>\n    </tr>\n    <tr>\n      <td>Genetic reagent Arabidopsis thaliana</td>\n      <td colspan=\"2\">tpl tpr2ge</td>\n      <td colspan=\"2\">this paper</td>\n      <td colspan=\"2\">AT1G15750, AT3G16830</td>\n      <td colspan=\"2\">Further details in the Materials and methods section</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent Arabidopsis thaliana</td>\n      <td colspan=\"2\">pTPL:GUS</td>\n      <td colspan=\"2\">this paper</td>\n      <td colspan=\"2\">AT1G15750</td>\n      <td colspan=\"2\">Further details in the Materials and methods section</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent Arabidopsis thaliana</td>\n      <td colspan=\"2\">pTPR2:GUS</td>\n      <td colspan=\"2\">this paper</td>\n      <td colspan=\"2\">AT3G16830</td>\n      <td colspan=\"2\">Further details in the Materials and methods section</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent Arabidopsis thaliana</td>\n      <td colspan=\"2\">pTPR4:GUS</td>\n      <td colspan=\"2\">this paper</td>\n      <td colspan=\"2\">AT3G15880</td>\n      <td colspan=\"2\">Further details in the Materials and methods section</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent Arabidopsis thaliana</td>\n      <td colspan=\"2\">p35S:CDGVG p6xGAL4UAS:ETT-FLAG</td>\n      <td colspan=\"2\">this paper</td>\n      <td colspan=\"2\"></td>\n      <td colspan=\"2\">Further details in the Materials and methods section</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td colspan=\"2\">Mouse anti-FLAG</td>\n      <td colspan=\"2\">Abcam</td>\n      <td colspan=\"2\">ab49763</td>\n      <td colspan=\"2\">monoclonal, conjugated with HRP</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td colspan=\"2\">Mouse anti-HA</td>\n      <td colspan=\"2\">Abcam</td>\n      <td colspan=\"2\">ab173826</td>\n      <td colspan=\"2\">monoclonal, conjugated with HRP</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td colspan=\"2\">Mouse anti-GFP</td>\n      <td colspan=\"2\">Roche</td>\n      <td colspan=\"2\">11814460001</td>\n      <td colspan=\"2\">monoclonal</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td colspan=\"2\">Rabbit anti-H3K27ac</td>\n      <td colspan=\"2\">Abcam</td>\n      <td colspan=\"2\">ab4729</td>\n      <td colspan=\"2\">polyclonal</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td colspan=\"2\">Rabbit anti-H3</td>\n      <td colspan=\"2\">Abcam</td>\n      <td colspan=\"2\">ab1791</td>\n      <td colspan=\"2\">polyclonal</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td colspan=\"2\">pGWB14; p35s:HA-TPL</td>\n      <td colspan=\"2\">Espinosa-Ruiz et al., 2017</td>\n      <td colspan=\"2\"></td>\n      <td colspan=\"2\"></td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td colspan=\"2\">pICH47732; p35s:ETT-3xFLAG</td>\n      <td colspan=\"2\">this paper</td>\n      <td colspan=\"2\"></td>\n      <td colspan=\"2\">Backbone Addgene #48000</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td colspan=\"2\">pICH47732; p35s: ETTW505A-3xFLAG</td>\n      <td colspan=\"2\">this paper</td>\n      <td colspan=\"2\"></td>\n      <td colspan=\"2\">Backbone Addgene #48000</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td colspan=\"2\">pGADT7; ETT</td>\n      <td colspan=\"2\">this paper</td>\n      <td colspan=\"2\"></td>\n      <td colspan=\"2\">Further details in the Materials and methods section</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td colspan=\"2\">pGADT7; ETTW505A</td>\n      <td colspan=\"2\">this paper</td>\n      <td colspan=\"2\"></td>\n      <td colspan=\"2\">Further details in the Materials and methods section</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td colspan=\"2\">pGADT7; ETTL552S; F553S</td>\n      <td colspan=\"2\">this paper</td>\n      <td colspan=\"2\"></td>\n      <td colspan=\"2\">Further details in the Materials and methods section</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td colspan=\"2\">pGBKT7; TPL</td>\n      <td colspan=\"2\">Causier et al., 2012</td>\n      <td colspan=\"2\"></td>\n      <td colspan=\"2\"></td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td colspan=\"2\">pGBKT7; TPR1</td>\n      <td colspan=\"2\">Causier et al., 2012</td>\n      <td colspan=\"2\"></td>\n      <td colspan=\"2\"></td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td colspan=\"2\">pGBKT7; TPR2</td>\n      <td colspan=\"2\">Causier et al., 2012</td>\n      <td colspan=\"2\"></td>\n      <td colspan=\"2\"></td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td colspan=\"2\">pGBKT7; TPR3</td>\n      <td colspan=\"2\">Causier et al., 2012</td>\n      <td colspan=\"2\"></td>\n      <td colspan=\"2\"></td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td colspan=\"2\">pGBKT7; TPR4</td>\n      <td colspan=\"2\">Causier et al., 2012</td>\n      <td colspan=\"2\"></td>\n      <td colspan=\"2\"></td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td colspan=\"2\">pESPRIT; ES388-594</td>\n      <td colspan=\"2\">Simonini et al., 2018</td>\n      <td colspan=\"2\"></td>\n      <td colspan=\"2\"></td>\n    </tr>\n  </tbody>\n</table>\n\n### Plant materials and treatments\n\nPlants were grown in soil at 22\u00b0C in long day conditions (16 hrs day/8 hr dark). All mutations were in the Col-0 background. Mutant alleles described before include ett-3\u00a0(Sessions et al., 1997; Simonini et al., 2016), hda19-4 (SALK_139443) (Kim et al., 2008), pETT:GUS (Ng et al., 2009), pETT:ETT-GFP in ett-3 (Simonini et al., 2016), pTPL:TPL:GFP (Pi et al., 2015), p35S:HDA19:GFP (Pi et al., 2015), pTIR1:ccvTIR1 in tir1-1 afb2-3 (Szemenyei et al., 2008) and tir1-1 afb2-3 afb3-4(Parry et al., 2009).\u00a0The tpl mutant (SALK_034518C) was obtained from the European Arabidopsis Stock Centre.\n\nFor both expression and ChIP analysis, auxin treatments were applied by spraying bolting Col-0 and ett-3 inflorescences with a solution containing 100 \u00b5M IAA (Sigma) or cvxIAA and 0.015% Silwet L-77 (De Sangosse Ltd.). Treated samples were returned to the growth room and incubated for two hours.\n\n### Expression analysis\n\nQuantitative Real time PCR (qRT-PCR) was used for expression analysis. RNA was extracted from floral buds using the RNeasy mini kit (Qiagen). Using the SuperScript IV First-Strand Synthesis kit (ThermoFisher), cDNA was synthesised from 1 \u00b5g of total RNA. Subsequently, qRT-PCR was carried out using SYBR Green JumpStart Taq ReadyMix (Sigma) using the appropriate primers (Figure 2\u2014source data 1). Relative expression values were determined using the 2-\u0394\u0394Ct method (Livak and Schmittgen, 2001). Data were normalised to POLYUBIQUITIN 10 (UBQ10/AT4G05320) expression.\n\n### ETT protein analysis by alignment\n\nPublished ETT sequences of 22 Angiosperm species were retrieved from Phytozome version 12 (Goodstein et al., 2012). Nucleotide sequences were translated and aligned using MUSCLE in Geneious version 6.1.8 (Kearse et al., 2012). The EAR-like\u00a0motif was extracted as a sequence logo (Figure 3a; Figure 3\u2014figure supplement 1).\n\n### Generation of the tpl tpr2 CRISPR mutant\n\nThe tpl tpr2ge mutant was generated using CRISPR/Cas9 technology by a method previously described (Castel et al., 2019). Briefly, for the construction of the RNA-guided genome-editing plasmid, DNA sequences encoding the gRNA adjacent to the PAM sequences were designed to target two specific sites in TPR2 (AT3G16830). DNA-oligonucleotides (Figure 2\u2014source data 1) containing the specific gRNA sequence were synthesised and used to amplify the full gRNA from a template plasmid (AddGene #46966). Using Golden Gate cloning (Engler et al., 2014) each gRNA was then recombined in a L1 vector downstream of U6 promoter (Goodstein et al., 2012). Finally, the resulting gRNA plasmids were then recombined with a L1 construct containing pYAO:Cas9_3:E9t (Castel et al., 2019) (kindly provided by Jonathan Jones) and a L1 construct containing Fast-Red selection marker (AddGene #117499) into a L2 binary vector (AddGene #112207).\n\nThe construct was transformed into Agrobacterium tumefaciens strain GV3101 by electroporation, followed by plant transformation by floral dip into the tpl single mutant (Clough and Bent, 1998). Transgenic T1 seeds appear red under UV light and were selected under a Leica M205FA stereo microscope. T1 plants were genotyped using PCR and the TPR2 locus sequenced (Oligonucleotides in Figure 2\u2014source data 1). Genome-edited plants were selected and the next generation grown (T2). Seeds of this generation were segregating in a 3:1 ratio for the transgene. Transgene negative plants were selected and grown on soil. To identify homozygous mutations T2 plants were genotyped. The T3 generation was again checked for the absence of the transgene.\n\n### Protein interaction\n\nFor Yeast-two-Hybrid (Y2H) assays coding sequences were cloned into pDONR207 and recombined into the pGDAT7 and pGBKT7 (Clontech). Using the co-transformation techniques (Engler et al., 2014) these constructs were transformed into the AH109 strain (Clontech). Transformations were selected on Yeast Selection Medium (YSD) lacking Tryptophan (W) and Leucine (L) at 28\u00b0C for 3\u20134 days. Transformed yeast cells were serially diluted (100, 10-1, 10-2 and 10-3) and dotted on YSD medium lacking Tryptophan (W), Leucin (L), adenine (A) and Histidine (H) to test for interaction. To examine interaction strength 3-amino-1,2,4-triazole (3-AT) was supplemented to the YSD (-W-L-A-H) medium with different concentrations (0, 5, 10 mM). To determine the effect of auxinic compounds on the protein-protein interactions benzoic acid (BA), IAA, NAA and 2,4D (all Sigma) were dissolved in ethanol and added directly to the medium at the desired concentrations. Pictures were taken after 3 days of growth at 28\u00b0C.\n\nFor the \u03b2-Galactosidase assay, transgenic yeast was grown in liquid YSD (-W-L) medium supplemented with\u00a0/-out 100 \u00b5M IAA or NAA, to an OD600 of 0.5. The cells were then harvested and lysed using 150 \u00b5L Buffer Z with \u03b2-mercaptoethanol (100 mM Phosphate buffer pH 7, 10 mM KCl, 1 mM Mg2SO4, \u03b2-mercaptoethanol 50 mM), 50 \u00b5L chloroform and 20 \u00b5L of 0.1% SDS. After lysis, the sample was incubated with 700 \u00b5L pre-warmed ONPG solution (1 mg/mL ONPG (o-Nitrophenyl-\u03b2-D-Galactopyranoside, Sigma) prepared in Buffer Z without \u03b2-mercaptoethanol at 37\u00b0C until a yellow colour developed in the samples without auxin treatment. After stopping all reactions (using 500 \u00b5L Na2CO3) the supernatant was collected and OD405 determined. The \u03b2-Galactosidase activity was calculated as follows: (A405*1000)/(A600*min*mL).\n\nFor co-immunoprecipitation, ETT-FLAG was generated using Golden Gate cloning (Kearse et al., 2012) by recombining a previously described L0 clone for ETT (Simonini et al., 2016) with a 35S promoter (AddGene #50266), a C-terminal 3xFLAG epitope (AddGene #50308) and a Nos-terminator (AddGene #50266) into a L1 vector (AddGene #48000). The pGWB14 TPL-HA construct was provided by Salom\u00e9 Prat and has been used in previous studies (Espinosa-Ruiz et al., 2017). The epitope-tagged proteins were transiently expressed in four-week-old N. benthamiana leaves for two days. Co-immunoprecipitation was performed as described previously (Egea-Cortines et al., 1999). After harvest, 1 g of fresh leaf tissue was ground in liquid nitrogen. The powder was homogenised for 30 min in two volumes of extraction buffer (10% glycerol, 25 mM Tris-HCl pH 7.5, 1 mM EDTA, 150 mM NaCl, 0.15% NP-40, 1 mM PMSF, 10 mM DTT, 2% Polyvinylporrolidone, 1x cOmplete Mini tablets EDTA-free Protease Inhibitor Cocktail (Roche). The homogenised samples were cleared by centrifugation at 14,000 x g for 10 min and cleared lysates were incubated for 2 hr with 20 \u00b5l anti-FLAG M2 magnetic beads (SIGMA-ALDRICH, M8823; lot: SLB2419). The beads were washed five times with IP buffer (10% glycerol, 25 mM Tris-HCl pH 7.5, 1 mM EDTA, 150 mM NaCl, 0.15% NP-40, 1 mM PMSF, 1 mM DTT, 1x cOmplete Mini tablets EDTA-free Protease Inhibitor Cocktail (Roche)) and proteins were eluted by adding 80 \u00b5l 2x SDS loading buffer followed by an incubation at 95\u00b0C for 10 min. To examine auxin sensitivity, 4 g of fresh leaf tissue was collected, ground in liquid nitrogen and protein was extracted. The lysate was then divided according to the number of treatments. The desired concentration of IAA or NAA was added to each of the cleared lysates before the anti-FLAG M2 magnetic beads were added. IAA or NAA at the desired concentration was also supplemented to the IP buffer during the washes. The eluates were analysed by western blot using an anti-FLAG antibody (M2, Abcam, ab49763, Lot: GR3207401-3) or an anti-HA antibody (Abcam, ab173826, Lot: GR3255539-1). Both antibodies were used as 1:10000 dilutions. The antibodies were validated by the manufacturer.\n\n### Scanning electron microscopy\n\nWhole inflorescences of Col-0, ett-3, tpl tpr2ge and hda19-4 were fixed overnight in FAA (3.7% formaldehyde, 5% glacial acetic acid, 50% ethanol) and dehydrated through an ethanol series (70% to 100%) as described previously (Moubayidin and Ostergaard, 2014). The samples were then critical point-dried, gynoecia dissected and mounted. After gold coating, samples were examined with a Zeiss Supra 55VP Field Emission Scanning electron microscope using an acceleration voltage of 3 kV.\n\n### TPL, TPR2 and TPR4 reporter lines\n\nFor the construction of the promoter:GUS reporter plasmids of TPL, TPR2 and TPR4, 2.5 kb of promoter sequences were isolated from genomic DNA and inserted upstream of the \u00df-glucoronidase gene of pCambia1301 vectors using the In-Fusion Cloning Recombinase kit (Clontech). The constructs were transformed into Agrobacterium tumefaciens strain GV3101 by electroporation, followed by plant transformation by floral dip into Col-0 (Clough and Bent, 1998).\n\nThe GUS histochemical assay was performed in at least three individual lines per construct. Inflorescences of each GUS line were pre-treated with ice cold acetone for 1 hr at \u221220\u00b0C and washed two times for 5 min with 100 mM sodium phosphate buffer followed by one wash with sodium phosphate buffer containing 1 mM K3Fe(CN)6 and 1 mM K4Fe(CN)6 (both Sigma) at room temperature. Subsequently, samples were vacuum infiltrated for 5 min with X-Gluc solution (100 mM sodium phosphate buffer, 10 mM EDTA, 0.5 mM K3Fe(CN)6, 3 mM K4Fe(CN)6, 0.1% Triton X100) containing 1 mg/ml of \u00df-glucoronidase substrate X-gluc (5-bromo-4-chloro-3-indolylglucuronide, Melford) and incubated at 37\u00b0C. pTPL:GUS samples were incubated for 20 min and pTPR2:GUS lines for 45 min to prevent overstaining. pTPR4:GUS lines were incubated for 16 hr. After staining, the samples were washed in 70% ethanol until chlorophyll was completely removed. Gynoecia were dissected and mounted in chloral hydrate (Sigma). Samples were analysed using a Leica DM6000 light microscope.\n\n### Chromatin immunoprecipitation\n\nTranscription factor ChIP was performed in biological triplicates using the pETT:ETT:GFP, pTPL:TPL:GFP and p35S:HDA19-GFP lines and data analysed as described previously (Chung et al., 2019). Additionally, a WUS gene fragment (WUSp4 amplicon) was used as a negative control for ETT binding (Liu et al., 2014). IP was conducted using the anti-GFP antibody (Roche, 11814460001, Lot: 19958500) and Pierce Protein G magnetic beads (ThermoFisher, 88847, Lot: SI253639) were used for IP.\n\nHistone acetylation ChIP was carried out and data were analysed as described previously (Q\u00fcesta et al., 2016). The experiment was carried out in triplicate using 3 g auxin-treated or untreated Col-0 or ett-3 inflorescent tissue. The antibodies used for IP were anti-H3K27ac antibodies (Abcam, ab4729, Lot: GR3231937-1) and anti-H3 (Abcam, ab1791, Lot: GR310541-1). All antibodies were validated by the manufacturers.\n\nIn all ChIP experiments, DNA enrichment was quantified using quantitative PCR (qPCR) with the appropriate primers (Figure 2\u2014source data 1). In case of H3K27ac, H3 was used as an internal control and the data represented as ratio of (H3K27ac at HEC1 or PID divided by H3 at HEC1\u00a0or PID).\n\n### Statistical analyses and replication\n\nIn all graphs error bars represent the standard deviation of the mean for all numerical values. QRT-PCR and ChIP experiments have been carried out at least in triplicate. The data presented here show an average of three replicates. For qRT-PCR data were analysed using one-way ANOVA with post-hoc Tukey multiple comparison test. ChIPqPCR data were analysed using two-way ANOVA with post hoc Bonferroni multiple comparison test. All output of statistical tests can be found in the source data files. All statistical tests were carried out using GraphPad Prism Version 5.04 (La Jolla California USA, www.graphpad.com).\n\n### Drug Affinity Responsive Target Stability (DARTS) assay\n\nThe DARTS assay to evaluate the stability of ETTIN-FLAG in the presence of IAA was performed as described previously (Lomenick et al., 2011; Kania et al., 2018; Tan et al., 2020) with plant material of a two-component inducible ETTIN-FLAG line. This ETT-FLAG line was generated using Golden Gate cloning (Engler et al., 2014) by recombining a previously described L0 clone for ETT (Simonini et al., 2016) with a 6xGAL4UAS promoter, a C-terminal 3xFLAG epitope (AddGene #50308) and a Nos-terminator (AddGene #50266) into an L1 vector (AddGene #48000). This inducible ETTIN-FLAG cassette was combined with a dexamethasone inducer cassette (containing CD-GVG under a 35S promoter) and a phosphinothricin-resistance cassette in an L2 binary vector (AddGene #48015). The construct was transformed into Agrobacterium tumefaciens strain GV3101 by electroporation, followed by floral dip-mediated plant transformation into Arabidopsis Col-0. For the DARTS assay, seeds were surface sterilised using chlorine gas and germinated in 25 mL liquid \u00bd MS medium containing 1% sucrose in 100 mL Erlenmeyer flasks under gently shaking. ETTIN-FLAG expression was induced 7 days post germination by adding 10 \u00b5M dexamethasone to the growth medium and seedlings were harvested 48 hr post induction. Total plant material was ground in liquid nitrogen and resuspended in protein extraction buffer (25 mM Tris-HCl, pH 7.5; 150 mM NaCl; 0.1% IGEPAL CA-630 and Roche cOmplete protease inhibitor cocktail, EDTA-free) in a 1:1 (w/v) ratio, followed by a centrifuging step to discard the plant debris. Protein concentration was determined with Quick Start Bradford 1x reagent (Bio-Rad) and adjusted to 5 mg/mL by adding extraction buffer. The lysate was then split into different reaction tubes and incubated with the respective chemical (DMSO mock, IAA or BA) at the indicated concentrations for 30 min at room temperature with slow mixing. The treated aliquots were further aliquoted and mixed with different dilutions of Pronase (Roche), prepared in Pronase buffer (25 mM Tris-HCl, pH 7.5 and 150 mM NaCl) to achieve the aimed for ratio of total enzyme to total protein. After incubation for 30 min at room temperature, the proteolytic digestion was terminated by adding protease inhibitor cocktail (cOmplete, Roche) and the samples were kept on ice for 10 min. The protein samples were then mixed with 4x NuPAGE LDS sample buffer (Invitrogen) and heated at 80\u00b0C for 10 min. The protein samples were analysed by Western blot (TGX gels Bio-Rad, TurboTransfer Bio-Rad PVDF membranes), visualized using an anti-FLAG-HRP antibody (1:1000 \u2013 Sigma A8592). HRP activity was detected using the Supersignal Western Detection Reagents (Thermo Scientific) and imaged with a GE Healthcare Amersham 600 RGB system.\n\n### Protein production\n\nThe ES domain, ES388-594, protein was isotopically labelled in preparation for NMR analysis. The ES domain was expressed for as a fusion protein with a 6x Histidine tag in minimal media with 15N ammonium chloride. The 15N isotope labelling of the expressed protein involved a 125-fold dilution of cell culture in enriched growth media into minimal media with 15N ammonium chloride and grown for 16 hr (37 \u00b0C / 200 rpm); followed by a further 40-fold dilution into minimal media for the final period of cell growth and protein expression (induced with L-arabinose 0.2 % w/v / 18 \u00b0C / 200 rpm and grown for a further 12 hr). The fusion protein was isolated from soluble cell lysate by Co-NTA affinity chromatography with two His-Trap 1 mL TALON Crude columns (GE Healthcare Life Sciences, 28953766). Chromatography buffers contained sodium phosphate 20 mM pH 8.0, NaCl 500 mM and either no-imidazole or 500 mM imidazole for wash and elution buffers respectively. The majority of the non-specifically bound protein was removed by passing 20 mL of the wash buffer through the columns. The protein eluted on a gradient of increasing imidazole concentration of up to 30% elution buffer over 20 mL.\n\nFor ITC, the ES388-594 protein was grown in LB medium, cells harvested and lysed as described above. After centrifugation of the sonicated cell suspension, the pellet was resuspended and washed in Wash Buffer (50 mM Tris-HCl, pH 8.0; 0.1 mM EDTA; 5% (v/v) Glycerol; 0.1 mM DTT; 50 mM NaCl; 2% (w/v) NaDOC) for 1 hour at 4\u00b0C followed by centrifugation (11,000 g for 20 min at 4 \u00b0C). The resulting pellet was again washed in Wash Buffer and centrifuged as described previously. The pellet was resuspended in 20mL of Solubilisation Buffer (50 mM Tris-HCl, pH 8.0; 0.1 mM EDTA; 5% (v/v) Glycerol; 0.1 mM DTT; 50 mM NaCl; 0.25% Sarkosyl (N-Lauroyl sarcosine) and stirred at 4\u00b0C for 1h. Subsequently the resuspension was dialysed overnight in 2L Dialysis Buffer (50 mM Tris-HCl, pH 8.0; 0.1 mM EDTA; 5% (v/v) Glycerol; 0.1 mM DTT; 50 mM NaCl). The Dialysis Buffer was exchanged for fresh Dialysis Buffer after at least 2 hours of dialysis. After dialysis the lysate was centrifuged (11,000 g for 20 min at 4 \u00b0C). The resulting supernatant contained the required protein which was concentrated to 2 mL using Amicon Ultra-15 centrifugal filters with a 10kDa cut-off (Millipore (UK) Ltd.) and further purified using size exclusion chromatography. The protein was eluted in Chromatography Buffer and concentrated to 2 mL as previously described. Protein concentration was determined with Quick Start Bradford 1x reagent (Bio-Rad) and adjusted using Chromatography Buffer.\n\n### HSQC\u00a0NMR\n\nThe ES domain, ES388-594, protein was analysed by NMR at 5\u00b0C under reducing conditions (DTT 10 mM), buffered at pH 8.0 (Tris 20 mM). 1H-15N HSQC was performed at 950 MHz, TCI probe, Bruker following the parameters described in Figure 1\u2014figure supplement 1. Concentrations used were 50 \u00b5M ES388-594 and 500 \u00b5M IAA ligand (i.e. 1:10).\n\n### Isothermal titration calorimetry (ITC)\n\nITC was carried out on a MicroCal PEAQ-ITC (Malvern) at 25\u00b0C in a Buffer A (sodium phosphate 20 mM, pH 8.0; NaCl 500 mM). Ligand (2 mM IAA) was injected (19\u00a0\u00d7\u00a04.0 \u03bcl) at 150 s intervals into the stirred (500 rpm) calorimeter cell (volume 270 \u03bcl) containing 50 \u00b5M ES388-594 protein. Titration of Buffer A into 50 \u00b5M ES388-594 protein and IAA (2 mM) into Buffer A served as negative controls. Measurements of the binding affinity of all the titration data were analysed using the MicroCal Software (Malvern).\n\n### Accessions\n\nETT, AT2G33860; TPL, AT1G15750; TPR1, AT1G80490, TPR2, AT3G16830; TPR3, AT5G27030; TPR4, AT3G15880; HDA6, AT5G63110; HDA19, AT4G38130; HEC1, AT5G67060; PID, AT2G34650; WUS, AT2G17950.\n",
+      "created_at": "2025-12-02T16:20:06.620978Z"
+    },
+    {
+      "id": "06cf04d1-9157-4c59-ba2e-ddee64d7cb27",
+      "submission_id": "60817046-3124-460d-9924-ceff932c2d6a",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- J\u00fcrgen Kleine-Vehn, University of Natural Resources and Life Sciences Austria\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.51787.sa1](https://doi.org/10.7554/eLife.51787.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nAcceptance summary:\n\nThis is an outstanding study that deepens our mechanistic understanding of a non-canonical auxin perception mechanism and we are very pleased that eLife can provide a forum for this exciting set of data.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Direct ETTIN-auxin interaction controls chromatin state in gynoecium development\" for consideration by eLife. Your article has been reviewed by two peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Christian Hardtke as the Senior Editor. The reviewers have opted to remain anonymous.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nWhile both reviewers highlighted the suitability of your work for eLife in principle, they also see certain shortcomings, which prevents publication in its present form.\n\nEssential revisions include:\n\n1) The reviewers see a big gap between the in vitro ETT/TPL interaction and the H3K27ac changes in vivo that needs to be bridged. TPL is not the only co-repressor complex that may recruit HDA19 to ETT and ETT interacts with other transcription factors that in turn can also recruit co-repressors. It is currently unclear whether auxin-mediated disruption of the ETT/TPL interaction directly induces changes in HDA19 interaction or chromatin recruitment. This should be tested directly in the presence of auxin in transient interaction assays and by ETT/TPL/HDA19 ChIP +/- IAA at target loci (see further comments to this aspect by reviewer #1).\n\n2) The reviewers also request additional experiments, consolidating the auxin binding to ETT. They encourage the authors to carry out additional MST analyses with ideally using full length ETTIN vs ettin mutant protein (W505). Please quantify binding ETT binding to auxin (see further comments to this aspect by reviewer #2).\n\nPlease, see also additional comments by the reviewers below, which may guide you to further strengthen your manuscript.\n\nReviewer #1:\n\nThis study picks up where Simonini et al., 2016 had left off, which had showed that multiple TFs including IND interact with ETT in an auxin -dependent manner. ETT-IND were found to repress PID expression based on in situ hybridization in mutant gynoecia. Mutations in IND that disrupted interaction with ETT led to reduced accumulation of PID, which was interpreted as a role in transcriptional activation of PID by IND and ETT in the absence of auxin.\n\nAs I am not an expert on HSQC-NMR or ITC, I will let other reviewers comment on these data. The authors show that nicely TIR1 is neither necessary nor sufficient for HEC1 and PID are induction, suggesting that Aux/IAA degradation is not required for this processes. Critiques that should be addressed are in the numbered/lettered paragraphs below.\n\n1) They next test physical interaction between ETT and TPL/TPRs in Y2H and show it is abolished by addition of IAA. They also test interaction by co-IP in 35S:OE lines after transient transfection into N. benthamiana. In plants, the IAA treatment seems to lead to a both strong reduction in TPL accumulation as well as interaction. This needs to be addressed. It is moreover critical to assess the HDA19 interaction with ETT in N. benthamiana. Using ETT and HDA19 co-transfection into plant cells, ETT was recently shown to interact with HDA19 via endogenous co-repressors (such as TPL or SEU) by co-IP and by BiFC (Chung et al., 2019). In addition, the ETT interaction partner FIL also interacts with HDA19 (likely via different co-repressors). So it is critical to assess whether auxin disrupts ETT complex formation with HDA19 to show that the auxin disrupted ETT/TPL interaction is important for HDA19 association with ETT. As an aside, it should be mentioned in the text that ETT/FIL were shown to recruit HDA19 to STM in the above-mentioned study (Chung et al., 2019).\n\nIn ett or tpl /tpr mutant gynoecioa, auxin was not able to induce HEC1 and PID, this was true to a lesser degree for HEC1 in the hda19 mutant. In addition, HEC1 and PID expression is elevated in ett, tpl and hda19 mutants relative to wt. Although not based on inducible mutants, these data suggest that in the wild type ETT and TPL/R repress HEC1 and IND.\n\n2) Figure 5 attempts to show a possible mechanisms for the observed effects by using chromatin immunoprecipitation of ETT, HEC1 and HDA19. There are several issues with the data provided.\n\na) First, from a technical perspective, the authors should show the factor binding as% input (to give the reader an idea of the occupancy compared to other TFs or chromatin regulators). More importantly, H3K27ac should be presented as fraction of H3. The latter is critical as a change in histone modification is only informative if we know that the nucleosome occupancy has not changed.\n\nb) Second, there was no test for a possible change in TFL or HDA19 occupancy upon auxin treatment at PID or HEC1, although this is a key tenet of their model. ETT occupancy at PID and HEC1 should also be assayed plus minus auxin.\n\nThird, the authors reported lower H3K27ac in the non auxin-treated wild type. This fits with the reduced gene expression, yet cause and consequence are not clear \u2013 especially in the absence of test of disruption of ETT- HDA19 interaction by auxin or HDA19 occupancy at the loci being tested. This is important, because changes in gene expression lead to changes in histone modifications and vice -versa.\n\n3) Finally, the title and main conclusion are misleading and oversell the findings.\n\na) According to the author's data and with some additional support as specified above, the manuscript could show that ETT serves to recruit TPL and HDA19 in the absence of IAA. In the presence of IAA this complex may fall apart. This does not show that ETT toggles between activation and repression. It would show that ETT 's ability to recruit co-repressors is abrogated by auxin.\n\nb) I know the authors suggested this activator/repressor model in the Simonini paper based on dominant mutant proteins, which are tricky to interpret. Besides there being no evidence for such a dual role of ETT in the current paper, I think it is important to remember that the ett loss of function mutant has elevated PID and HEC1. This suggest ETT acts as a repressor. Likewise, for genes bound by MP where loss of MP function results in loss-of-expression, MP is an activator, even though MP does associate with different types of chromatin regulators in the absence or presence of auxin at these loci.\n\nReviewer #2:\n\nThe authors deal with the idea that ETT is a particular ARF protein, that engages directly not only other transcriptional regulators, but the family of TPL co-repressors, and more importantly binds directly auxin. Two previous manuscripts from the same research group (Simonini et al., 2016 and Simonini et al., 2017) had brought up the very intriguing hypothesis that ETT-binds auxin by a non-canonical mechanism, independently of TIR1/AFB-AUX/IAA auxin perception. The hypothesis is fascinating, and the authors previously used genetics, plant physiology and developmental genetics to validate their claim.\n\nIn Kuhn et al., the authors seek to: show biochemically direct auxin binding by ETT; connect the ETT \"auxin binding role\" to specific non-canonical gene expression; bring evidence of ETT directly binding TPL and TPRs for auxin-triggered responses in the gynoecium; show that ETT interactions with TPL and histone deacetylases are sensitive to auxin levels, regulating thereby HEC1 and PID expression. Kuhn et al. work is good and straightforward, in the sense that their hypotheses were addressed by few, but robust experiments. The manuscript would tremendously profit from additional biochemical or biophysical experiments though, using preferably the full length of ETT, to evidence auxin binding. Is that feasible?\n\nSince the authors identified W505 as important putative auxin binding site, why was not an ETT W505 mutant version, and other mutations, tested in iTC or MST, for instance? This reviewer is concerned that since the interaction between ETT and auxin is weak, one could almost account for random peptide interaction, via charges or the similar, for the poor ITC data. Can the authors please quantify binding?\n\n\u2013 Along the same lines and about Figure 1 and interactions experiments: Why did the authors not estimate the binding affinity or Kd of ETT-IAA? could the weak (not saturable) ETT-IAA signal be the result of transient peptide interactions?\n\n\u2013 When the authors implemented the synthetic auxin-TIR1 tool developed in Keiko Torii's lab, they showed that ETT interaction is highly specific for IAA, but not cvxIAA even though the interaction occurs in an IDR. Can the authors please explain the findings?\n\n\u2013 Have the authors evaluated whether there is any sequence conservation for IAA binding around ETT W505?\n\n\u2013 Can the authors make the binding comparison of ETT-IAA vs. ETT-BA, or vs. ETT-other auxins, or ETT-tryptophan via iTC in order to make a more robust claim about auxin binding?\n\n\u2013 Regarding Model Figure 5D. Do the authors have any hypothesis about what happens with ETT upon auxin binding?\n\nSpecific comments:\n\n\u2013 The Abstract includes references, is that not a bit unusual?\n\n\u2013 Abstract fifth sentence: Sentence too long. Split and/or rephrase\n\n\u2013 Abstract final sentence: Giving the outcome of the paper, I recommend to state \"ETT might be able to switch chromatin locally\u2026\u201d\n\n\u2013 Introduction first paragraph: The word \"ubiquitinylation\" is incorrect, as it does not refer to ubiquitin conjugation of proteins. Please use \"ubiquitination\" or \"ubiquitylation\" instead\n\n\u2013 Please rephrase the statement about ES domain being disordered, as it is disconnected, and the reason for bringing it up on that section of the Introduction is not clear.\n\n\u2013 The authors used the word \"sensitivity\", which is a broad claim, given they used a single IAA concentration of 100 \u00b5M in their yeast-two hybrid assay.\n\n\u2013 HSQC is not the typical experimental approach to proof an X ligand binds to a putative receptor. If this approach is implemented because of the solely disordered nature of ETT, please say it so or rephrase.\n\n\u2013 \"Helical character\" indicated by what? It would be nice to have a visualization help for non-NMR experts.\n\n\u2013 \u201c\u2026found that a number of residues shifted\u2026\". Please elaborate.\n\n\u2013 Why did the authors use benzoic acid (BA) as a control ligand in their experiments? Why not to use tryptophan as the obvious non-active auxin precursor?\n\n\u2013 \"The HSQC experiment demonstrates that ETT binds IAA directly\". I recommend the authors to be cautious here with this statement. While high-field NMR is a powerful tool for investigating transiently forming protein-ligand complexes and for the identification of protein binding partners, there are a number of strategies that the authors must implement first that will specifically enable the physicochemical characterization of ETT-IAA interactions.\n\n\u2013 iTC experiments are unfortunately weak e.g. no saturation reached, extremely low signal to noise ratio. Therefore, the authors again should be careful about their statements on direct biochemically relevant ETT-IAA binding.\n\n\u2013 Please specify if the ccvTIR1 can accommodate the native IAA.\n\n\u2013 Please use here \"\u2026independently of the canonical TIR1/AFB1-5 signalling pathway.\"\n\n\u2013 Why IAA = auxin? This is unnecessary and not accurate, stick to \"IAA\" please.\n\n\u2013 Could the authors elaborate on a hypothesis for the role of TPR4? Could its action and interaction with ETT or an ETT-like protein in a different tissue be also auxin sensitive?\n\n\u2013 \"low levels of auxin\" do not maintain per se ETT-TPL/TPR2 associations. Please rephrase.\n\n\u2013 The authors have referred twice about the \"instantly reversible\" event. What do they mean by this? There is no data on timing! \"Instantly\" as when a [IAA] threshold has been reached?\n\n\u2013 The inclusion of an auxin insensitive ett mutant might have shed light on the true nature of the ETT-IAA responsive genes.\n\nComments on Figures:\n\n\u2013 Figure 1. Which IAA concentration was used for these experiments? Please include relevant info in the Figure legend.\n\n\u2013 Figure 1. The color of NMR data is hard to distinguish, particularly the blues and the blacks.\n\nFigure 1D-F. Are the control panels E and F necessary as extra figure? Cannot they be included in the D?\n\n\u2013 Figure 2. Colors in panel d are difficult to be distinguished. Please recolor.\n\n\u2013 Figure 3A. Please improve, resize and label residues. Mark and depict W505.\n\n\u2013 Figure 3B. What is WTL? Give info in Legend, please.\n\n[Editors' note: further revisions were suggested prior to acceptance, as described below.]\n\nThank you for submitting your article \"Direct ETTIN-auxin interaction controls chromatin states in gynoecium development\" for consideration by eLife. Your article has been reviewed by one peer reviewers, and the evaluation has been overseen by Reviewing Editor J\u00fcrgen Kleine-Vehn and Christian Hardtke as the Senior Editor The reviewers have opted to remain anonymous.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nWe would like to draw your attention to changes in our policy on revisions we have made in response to COVID-19 (https://elifesciences.org/articles/57162). Specifically, we are asking editors to accept without delay manuscripts, like yours, that they judge can stand as eLife papers without additional data, even if they feel that they would make the manuscript stronger. Thus the revisions requested below only address clarity and presentation.\n\nBoth reviewers agreed that you convincingly revised your manuscript and that your manuscript is in principle ready for publication. Reviewer #1 asks you to modify some of your statements and your overall model depiction (see point 2 below).\n\nReviewer #1:\n\nThe authors have addressed the majority of my concerns. I do not recommend additional experiments, but provide a clarification based on the author response. In addition, I ask for changes in the text and model to address my comments in point 2 below.\n\nPrevious review\n\n1) It is moreover critical to assess the HDA19 interaction with ETT in N. benthamiana. Using ETT and HDA19 co-transfection into plant cells, ETT was recently shown to interact with HDA19 via endogenous co-repressors (such as TPL or SEU) by co-IP and by BiFC (Chung et al., 2019). In addition, the ETT interaction partner FIL also interacts with HDA19 (likely via different co-repressors). So it is critical to assess whether auxin disrupts ETT complex formation with HDA19 to show that the auxin disrupted ETT/TPL interaction is important for HDA19 association with ETT.\n\nAuthors: We are confused about the first sentence of this section that HDA19 interaction with ETT in N. benthamiana must be assessed. As mentioned, this experiment was recently published in Chung et al., 2019, and showed that HDA19 and ETT do not interact directly, but via other proteins. Unless we have misunderstood the reviewer's comment, we do not see the need to carry this out again.\n\nReviewer: N. benthamiana assays also probe indirect interactions between proteins via host proteins. Perusal of the pulldowns in Chung et al. does indeed reveal a weak HDA19 pulldown by ETT (and a very strong ARF4 pulldown by HDA19). BiFC using Arabidopsis protoplasts showed strong (indirect) interactions between ETT and HDA19. The current study suggests that these indirect interactions should be impaired in the presence of high levels of auxin.\n\nCurrent review\n\n2) The authors should reconcile their data with the previously published data that implicates ETT/ARF4/FIL in recruitment of HDA19 containing co-repressor complexes to repress KNOX genes in regions of local auxin maxima at the inflorescence shoot apex. In looking at the literature and the current manuscript, a difference in effective auxin levels became apparent. The authors used a rather high auxin concentration to disrupt the ETT \u2013 HDA19 co-repressor complex in planta: 100 \u00b5M IAA for Figure 4 and Figure 5. By contrast 10 \u00b5M IAA is commonly used in inflorescences. Gynoecia may indeed have higher auxin levels.\n\nThis suggests a different model and a different conclusion from that currently proposed by the authors are needed. At intermediate auxin levels, for example those of the inflorescence shoot apex, ETT (together with other TFs) is able to recruit HDA19-containing co-repressors, while at higher auxin levels, those present in the gynoecium, this interaction is blocked. The authors should revise the Discussion and their model accordingly.\n",
+      "created_at": "2025-12-02T16:20:06.620978Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T16:20:06.620978Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T16:20:06.620978Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "57c5657c-8bdc-4df7-af59-ceb9ebc71aef",
+      "content_id": "ef7a9906-5adc-450d-b50d-fee8a0d1f214",
+      "claim_id": "C1",
+      "claim": "ETTIN (ETT/ARF3) is an atypical auxin response factor lacking the Aux/IAA-interacting Phox/Bem1 (PB1) domain.",
+      "claim_type": "EXPLICIT",
+      "source": "However, ETT is an unusual ARF lacking the Aux/IAA-interacting Phox/Bem1 (PB1) domain (Simonini et al., 2016; Sessions et al., 1997) and is therefore unlikely to mediate auxin signalling via the canonical pathway.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to previous work (Simonini et al., 2016; Sessions et al., 1997) that characterized ETT structure.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:20:06.620978Z"
+    },
+    {
+      "id": "afec42f2-0d3a-49c4-961e-c8b113069f62",
+      "content_id": "ef7a9906-5adc-450d-b50d-fee8a0d1f214",
+      "claim_id": "C2",
+      "claim": "ETT binds auxin directly as demonstrated by DARTS assay.",
+      "claim_type": "EXPLICIT",
+      "source": "Treatments with IAA but not BA protected ETT-FLAG from pronase-induced degradation consistent with direct, specific interaction between IAA and ETT in planta.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Experimental data from DARTS assay shown in Figure 1a demonstrating differential proteolytic protection with IAA vs BA treatment.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:20:06.620978Z"
+    },
+    {
+      "id": "7856b19c-d731-4e83-9ab7-7e1b2ed8e27c",
+      "content_id": "ef7a9906-5adc-450d-b50d-fee8a0d1f214",
+      "claim_id": "C3",
+      "claim": "The ES domain of ETT (ES388-594) is largely intrinsically disordered but shows some propensity to form secondary structure with helical character.",
+      "claim_type": "EXPLICIT",
+      "source": "The HSQC spectrum, recorded at 5 \u00b0C, shows a prominent signal-dense region consistent with the ES domain being largely intrinsically disordered. Interestingly, the spectrum also shows dispersed peaks flanking the signal-dense region indicating that there is nevertheless some propensity to form secondary structure, particularly with a helical character (Figure 1b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "NMR spectroscopy data showing signal distribution patterns characteristic of intrinsically disordered proteins with some structured regions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:20:06.620978Z"
+    },
+    {
+      "id": "2efc093d-0245-43d3-87e1-408f7586ebc1",
+      "content_id": "ef7a9906-5adc-450d-b50d-fee8a0d1f214",
+      "claim_id": "C4",
+      "claim": "Specific residues in the ETT protein experience a changed chemical environment in response to IAA binding but not benzoic acid.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that a number of residues shifted their position in the spectrum in response to the addition of IAA, whereas addition of BA had no effect (Figure 1b\u2013d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "HSQC-NMR experimental data showing chemical shifts upon IAA addition but not BA addition.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:20:06.620978Z"
+    },
+    {
+      "id": "5e861f4f-c187-40b4-972a-57afb1593ad5",
+      "content_id": "ef7a9906-5adc-450d-b50d-fee8a0d1f214",
+      "claim_id": "C5",
+      "claim": "Tryptophan W505 in ETT has a prominent role in the interaction with IAA.",
+      "claim_type": "EXPLICIT",
+      "source": "However, a particularly large change is observed for the tryptophan NH cross peak when IAA is added to the ETT fragment (~10 ppm, rectangle I in Figure 1b,d). Since there is only one tryptophan in the ETT fragment used here (W505), this shift can be assigned to this residue and suggests that W505 has a prominent role in the interaction with IAA.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "NMR data showing large chemical shift for the single tryptophan residue upon IAA addition.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:20:06.620978Z"
+    },
+    {
+      "id": "c5be12b2-ec10-44d2-907d-456024e5feaa",
+      "content_id": "ef7a9906-5adc-450d-b50d-fee8a0d1f214",
+      "claim_id": "C6",
+      "claim": "ETT binds IAA as demonstrated by isothermal titration calorimetry showing heat exchange between ETT and IAA.",
+      "claim_type": "EXPLICIT",
+      "source": "This experiment revealed interaction between ETT and IAA, while control experiments titrating IAA into buffer without protein and titrating buffer without IAA into the ETT fragment showed no heat exchange (Figure 1e\u2013g).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "ITC experimental data showing heat exchange specifically when ETT and IAA are combined, but not in control conditions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:20:06.620978Z"
+    },
+    {
+      "id": "c16ddddf-2bdd-491e-a3f0-ffa2b07f5589",
+      "content_id": "ef7a9906-5adc-450d-b50d-fee8a0d1f214",
+      "claim_id": "C7",
+      "claim": "PINOID (PID) and HECATE1 (HEC1) are ETT target genes that are upregulated in ett-3 mutant gynoecium tissue compared to wild type.",
+      "claim_type": "EXPLICIT",
+      "source": "Previously, PINOID (PID) (Benjamins et al., 2001) and HECATE1 (HEC1) (Gremski et al., 2007) were identified as ETT target genes (Simonini et al., 2016; Simonini et al., 2017) and both genes are upregulated in gynoecium tissue from the ett-3 mutant compared to wild type (Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Expression data from qRT-PCR comparing wild type and ett-3 mutant, supported by previous citations identifying these as ETT targets.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:20:06.620978Z"
+    },
+    {
+      "id": "7e4b5dbd-7dbb-476c-bbb5-09b787305cd3",
+      "content_id": "ef7a9906-5adc-450d-b50d-fee8a0d1f214",
+      "claim_id": "C8",
+      "claim": "PID and HEC1 expression is induced by IAA but shows no additional induction beyond constitutive upregulation in the ett-3 mutant background.",
+      "claim_type": "EXPLICIT",
+      "source": "We also observed that expression of both genes is induced by IAA, but did not observe any additional induction beyond the constitutive upregulation in the ett-3 mutant background (Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "qRT-PCR expression data comparing IAA-treated and untreated samples in wild type and ett-3 mutant.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:20:06.620978Z"
+    },
+    {
+      "id": "6890c4e2-1357-427c-8d56-17b8f0c79341",
+      "content_id": "ef7a9906-5adc-450d-b50d-fee8a0d1f214",
+      "claim_id": "C9",
+      "claim": "ETT-dependent regulation of PID and HEC1 does not require a functional TIR1/AFB machinery.",
+      "claim_type": "EXPLICIT",
+      "source": "This ETT-dependent regulation does not require a functional TIR1/AFB machinery, since IAA-induction of PID and HEC1 is still observed in tir1/afb mutant combinations, whereas the known TIR1/AFB-mediated auxin induction of the IAA19 gene is completely abolished in these mutants (Figure 2a\u2013c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Expression analysis in tir1/afb mutants showing differential response of IAA19 vs PID/HEC1 to auxin treatment.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:20:06.620978Z"
+    },
+    {
+      "id": "b445a1ea-1a61-4ec0-aec6-4fd4ec9d9852",
+      "content_id": "ef7a9906-5adc-450d-b50d-fee8a0d1f214",
+      "claim_id": "C10",
+      "claim": "IAA19 expression is upregulated in response to auxin in wild-type gynoecia but not in tir1/afb double and triple mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "IAA19 expression is up-regulated in response to auxin in wild-type gynoecia (Col-0) but not in tir1/afb double and triple mutants.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "qRT-PCR data shown in Figure 2a demonstrating differential IAA19 response in wild type vs tir1/afb mutants.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:20:06.620978Z"
+    },
+    {
+      "id": "8786406f-5e1a-483a-8c98-ee782674d852",
+      "content_id": "ef7a9906-5adc-450d-b50d-fee8a0d1f214",
+      "claim_id": "C11",
+      "claim": "HEC1 and PID are upregulated in response to auxin in both wild-type and auxin receptor mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "The ETT-target genes HEC1 and PID are up-regulated in response to auxin in both wild-type and auxin receptor mutants (b c). This suggests a TIR1/AFB independent regulation of these genes.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "qRT-PCR data in Figure 2b,c showing auxin response in both wild type and tir1/afb mutants.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:20:06.620978Z"
+    },
+    {
+      "id": "7d42b2eb-750f-4fef-8855-2644e442aee1",
+      "content_id": "ef7a9906-5adc-450d-b50d-fee8a0d1f214",
+      "claim_id": "C12",
+      "claim": "PID and HEC1 expression is not significantly affected by cvxIAA in the ccvTIR1 background, but still responds to IAA.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, PID and HEC1 expression was not significantly affected by cvxIAA, whilst still responding to IAA in the ccvTIR1 background (Figure 2d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Expression analysis using synthetic auxin-TIR1 pair showing differential response to cvxIAA vs IAA.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:20:06.620978Z"
+    },
+    {
+      "id": "a27cb127-d39e-4eef-8172-3be76e55d0c0",
+      "content_id": "ef7a9906-5adc-450d-b50d-fee8a0d1f214",
+      "claim_id": "C13",
+      "claim": "IAA19 is strongly upregulated by cvxIAA in the ccvTIR1 line, but not by IAA.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, IAA19 was strongly upregulated by cvxIAA in the ccvTIR1 line, but not by IAA (Figure 2d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "qRT-PCR data demonstrating specific response of IAA19 to cvxIAA in engineered TIR1 system.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:20:06.620978Z"
+    },
+    {
+      "id": "114f59d1-2ac6-489d-904f-ff2615e1e979",
+      "content_id": "ef7a9906-5adc-450d-b50d-fee8a0d1f214",
+      "claim_id": "C14",
+      "claim": "ETT-mediated auxin signalling can occur independently of the canonical TIR1/AFB signalling pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "These data demonstrate that ETT-mediated auxin signalling can occur independently of the canonical TIR1/AFB signalling pathway.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion drawn from synthetic auxin-TIR1 pair experiments showing differential regulation of ETT targets vs canonical auxin-responsive genes.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:20:06.620978Z"
+    },
+    {
+      "id": "f424963d-33e8-460d-8277-8fc60e5b6eb9",
+      "content_id": "ef7a9906-5adc-450d-b50d-fee8a0d1f214",
+      "claim_id": "C15",
+      "claim": "The DNA-binding domain characteristic to B3-type transcription factors such as ARF proteins is conserved across all ETT proteins in angiosperms.",
+      "claim_type": "EXPLICIT",
+      "source": "Unsurprisingly, the DNA-binding domain characteristic to B3-type TFs such as ARF proteins was conserved across all ETT proteins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Phylogenetic analysis of ETT protein sequences across 22 angiosperm species.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:20:06.620978Z"
+    },
+    {
+      "id": "45a20211-cf9c-4b84-aa2b-6ac188e1ad76",
+      "content_id": "ef7a9906-5adc-450d-b50d-fee8a0d1f214",
+      "claim_id": "C16",
+      "claim": "An EAR-like motif with particularly high conservation is located towards the C terminus of the ES domain in ETT.",
+      "claim_type": "EXPLICIT",
+      "source": "Towards the C terminus of the ES domain we identified an EAR-like motif with a particularly high level of conservation (Figure 3a, Figure 3\u2014figure supplement 1a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Phylogenetic analysis and sequence alignment showing conserved motif across species.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:20:06.620978Z"
+    },
+    {
+      "id": "e3f9c2f5-b9b2-4322-9725-92db8f56331d",
+      "content_id": "ef7a9906-5adc-450d-b50d-fee8a0d1f214",
+      "claim_id": "C17",
+      "claim": "ETT interacts with TPL, TPR2 and TPR4 in yeast two-hybrid assays.",
+      "claim_type": "EXPLICIT",
+      "source": "To test this, we carried out Yeast 2-Hybrid (Y2H) assays in which ETT was found to interact with TPL, TPR2 and TPR4 (Figure 3b, Figure 3\u2014figure supplement 1b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Y2H experimental data showing protein-protein interactions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:20:06.620978Z"
+    },
+    {
+      "id": "a8935a56-0c2b-4468-a9d3-b4d99213e542",
+      "content_id": "ef7a9906-5adc-450d-b50d-fee8a0d1f214",
+      "claim_id": "C18",
+      "claim": "Mutating residues in the EAR-like motif abolishes ETT interactions with TPL/TPR proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, mutating residues in the EAR-like motif abolished the interactions demonstrating its requirement for the ETT-TPL/TPR interaction (Figure 3b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Y2H data comparing wild-type ETT and EAR-like motif mutant interactions with TPL/TPR proteins.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:20:06.620978Z"
+    },
+    {
+      "id": "d508de1c-4e71-4dff-9886-c3508643d435",
+      "content_id": "ef7a9906-5adc-450d-b50d-fee8a0d1f214",
+      "claim_id": "C19",
+      "claim": "ETT-TPL/TPR interactions are reduced with increasing IAA concentrations in both Y2H and co-immunoprecipitation experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "In both Y2H and in co-immunoprecipitation (Co-IP) experiments, we observed that the interactions were reduced with increasing IAA concentrations (Figure 3b,c and Figure 3\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Y2H and Co-IP experimental data showing dose-dependent reduction of interaction with IAA treatment.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:20:06.620978Z"
+    },
+    {
+      "id": "29606fde-3c1d-4017-8e71-a2600d90c9f8",
+      "content_id": "ef7a9906-5adc-450d-b50d-fee8a0d1f214",
+      "claim_id": "C20",
+      "claim": "The auxin sensitivity of ETT-TPL/TPR interactions is specific to IAA as other auxinic compounds tested did not show this effect.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, as described previously for other ETT-protein interactions, the sensitivity was specific to IAA as other auxinic compounds tested did not show this effect (Figure 3\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Experimental data testing multiple auxinic compounds (BA, NAA, 2,4D) showing specificity to IAA.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:20:06.620978Z"
+    },
+    {
+      "id": "cea4d17d-21c3-43cc-8069-ff298e6ace04",
+      "content_id": "ef7a9906-5adc-450d-b50d-fee8a0d1f214",
+      "claim_id": "C21",
+      "claim": "W505 is required for the ETT-TPL/TPR interaction to be sensitive to auxin.",
+      "claim_type": "EXPLICIT",
+      "source": "Both Y2H and Co-IP experiments revealed that W505 is required for the ETT-TPL/TPR interaction to be sensitive to auxin (Figure 3c,d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Y2H and Co-IP data comparing wild-type ETT and W505A mutant responses to auxin.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:20:06.620978Z"
+    },
+    {
+      "id": "c59d8173-8721-485b-8e22-11ad0a07436d",
+      "content_id": "ef7a9906-5adc-450d-b50d-fee8a0d1f214",
+      "claim_id": "C22",
+      "claim": "W505 is highly conserved in ETT proteins across angiosperms.",
+      "claim_type": "EXPLICIT",
+      "source": "The key importance of W505 is furthermore supported by a phylogenetic analysis of ETT protein sequences revealing that this residue is highly conserved in ETT proteins across angiosperms (Figure 3\u2014figure supplement 1a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Phylogenetic analysis showing conservation of W505 across species.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:20:06.620978Z"
+    },
+    {
+      "id": "31f81d03-1dd5-4a88-b733-9a8123ebc0f0",
+      "content_id": "ef7a9906-5adc-450d-b50d-fee8a0d1f214",
+      "claim_id": "C23",
+      "claim": "TPL and TPR2 exhibit strong expression in the apical part of the gynoecium where ETT is also expressed.",
+      "claim_type": "EXPLICIT",
+      "source": "Both pTPL:GUS and pTPR2:GUS exhibited strong expression in the apical part of the gynoecium where ETT is also expressed, while no pTPR4:GUS expression was observed (Figure 4a\u2013d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "GUS reporter expression data showing overlapping expression patterns.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:20:06.620978Z"
+    },
+    {
+      "id": "2923e746-3c1d-4b78-ac9b-041ebb698801",
+      "content_id": "ef7a9906-5adc-450d-b50d-fee8a0d1f214",
+      "claim_id": "C24",
+      "claim": "The tpl tpr2 double mutant has defects in the development of the apical gynoecium similar to ett mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the tpl tpr2 double mutant has defects in the development of the apical gynoecium similar to ett mutants (Figure 4e\u2013g) demonstrating that TPL and TPR2 function redundantly in gynoecium development.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Phenotypic analysis using scanning electron microscopy showing similar developmental defects.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:20:06.620978Z"
+    },
+    {
+      "id": "54614d77-07a0-4090-b48c-4e56c854d628",
+      "content_id": "ef7a9906-5adc-450d-b50d-fee8a0d1f214",
+      "claim_id": "C25",
+      "claim": "HDA19 is required for gynoecium development as the hda19-4 mutant has strong style defects.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, our analysis of gynoecia from the hda19-4 mutant demonstrate that HDA19 is also required for gynoecium development as the hda19-4 mutant has strong style defects (Figure 4h).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Phenotypic analysis of hda19-4 mutant showing developmental defects.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:20:06.620978Z"
+    },
+    {
+      "id": "a3d98f2d-2119-4538-8fe1-78c48abe988a",
+      "content_id": "ef7a9906-5adc-450d-b50d-fee8a0d1f214",
+      "claim_id": "C26",
+      "claim": "HDA19 gene is highly expressed in gynoecium tissue, whereas HDA6 is not.",
+      "claim_type": "EXPLICIT",
+      "source": "In agreement with this, the HDA19 gene was highly expressed in gynoecium tissue, whereas another member of the HDA gene family, HDA6, was not (Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "qRT-PCR expression data comparing HDA19 and HDA6 expression levels in gynoecium.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:20:06.620978Z"
+    },
+    {
+      "id": "a46dbf2a-7362-40fb-b531-d9e4806c9efb",
+      "content_id": "ef7a9906-5adc-450d-b50d-fee8a0d1f214",
+      "claim_id": "C27",
+      "claim": "Expression of the ETT target genes PID and HEC1 is increased in the tpl tpr2 and hda19-4 mutants compared to wild type.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, HDA19 recruitment likely involves ETT, since expression of the ETT target genes, PID and HEC1, is increased in the tpl tpr2 and hda19-4 mutants compared to wild type.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "qRT-PCR expression data comparing mutants to wild type.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:20:06.620978Z"
+    },
+    {
+      "id": "472b5b78-b284-4ee8-ab29-028d92931345",
+      "content_id": "ef7a9906-5adc-450d-b50d-fee8a0d1f214",
+      "claim_id": "C28",
+      "claim": "Auxin treatments fail to further induce PID and HEC1 expression in tpl tpr2 and hda19-4 mutants, similar to the ett mutant.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar to the ett mutant, auxin treatments failed to further induce expression in these mutants (Figure 4i,j).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "qRT-PCR data showing lack of auxin response in mutant backgrounds.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:20:06.620978Z"
+    },
+    {
+      "id": "33330437-9a89-462c-b7b5-88493b65eae0",
+      "content_id": "ef7a9906-5adc-450d-b50d-fee8a0d1f214",
+      "claim_id": "C29",
+      "claim": "ETT, TPL and HDA19 all associate with DNA elements in the same regions of the promoters of PID and HEC1.",
+      "claim_type": "EXPLICIT",
+      "source": "Although only ETT is expected to bind DNA, ChIP followed by qPCR revealed that all three proteins associate with DNA elements in the same regions of the promoters of PID and HEC1 (Figure 5a\u2013c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "ChIP-qPCR data showing co-localization of all three proteins at target gene promoters.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:20:06.620978Z"
+    },
+    {
+      "id": "62b8a4cf-62f9-4e03-b651-f5d16ce0a7a5",
+      "content_id": "ef7a9906-5adc-450d-b50d-fee8a0d1f214",
+      "claim_id": "C30",
+      "claim": "ETT association with PID and HEC1 promoter regions is largely unaffected by IAA treatment, while TPL and HDA19 interactions are reduced upon auxin treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, while ETT association with these promoter regions was largely unaffected in the presence of IAA, TPL and HDA19 interactions are reduced upon auxin treatment (Figure 5a\u2013c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "ChIP-qPCR data comparing protein-DNA associations with and without IAA treatment.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:20:06.620978Z"
+    },
+    {
+      "id": "493ab094-eae9-451c-8158-f381a4b881bf",
+      "content_id": "ef7a9906-5adc-450d-b50d-fee8a0d1f214",
+      "claim_id": "C31",
+      "claim": "H3K27 acetylation increases in the absence of ETT and upon treatment with auxin at PID and HEC1 promoters.",
+      "claim_type": "EXPLICIT",
+      "source": "H3K27 acetylation increased in the absence of ETT and upon treatment with auxin. This occurred in the same regions of the PID and HEC1 promoters where the proteins were found to associate (Figure 5d,e).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "ChIP data measuring H3K27 acetylation levels in different genetic backgrounds and treatment conditions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:20:06.620978Z"
+    },
+    {
+      "id": "6fdc2bb6-5f1f-4e2e-bcd2-e16a0fb6e9f4",
+      "content_id": "ef7a9906-5adc-450d-b50d-fee8a0d1f214",
+      "claim_id": "C32",
+      "claim": "There is no further increase of H3K27 acetylation in the ett-3 mutant upon treatment with auxin.",
+      "claim_type": "EXPLICIT",
+      "source": "In agreement with ETT mediating the association of TPL/TPR and HDA19 with these regions, there was no further increase of acetylation in the ett-3 mutant upon treatment with auxin (Figure 5d,e).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "ChIP data showing acetylation levels in ett-3 mutant with and without auxin treatment.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:20:06.620978Z"
+    },
+    {
+      "id": "eaf5721e-daf3-4952-9688-d76a7af20fea",
+      "content_id": "ef7a9906-5adc-450d-b50d-fee8a0d1f214",
+      "claim_id": "C33",
+      "claim": "Under low auxin conditions, an ETT-TPL-HDA19 complex binds to ETT-target genes keeping their chromatin environments repressed through deacetylation.",
+      "claim_type": "EXPLICIT",
+      "source": "Under low auxin conditions an ETT-TPL-HDA19 complex binds to ETT-target genes keeping their chromatin environments repressed, through de-acetylation.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Model synthesized from ChIP, expression, and protein interaction data showing complex formation and chromatin state.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:20:06.620978Z"
+    },
+    {
+      "id": "098afb4e-6bfc-4245-94b1-0ba6ea6222d9",
+      "content_id": "ef7a9906-5adc-450d-b50d-fee8a0d1f214",
+      "claim_id": "C34",
+      "claim": "High nuclear auxin concentrations abolish the ETT-TPL-HDA19 complex through direct ETT-auxin interaction, leading to accumulation of histone acetylation and up-regulation of ETT-target genes.",
+      "claim_type": "EXPLICIT",
+      "source": "High nuclear auxin concentrations abolish the ETT-TPL-HDA19 complex through direct ETT-auxin interaction. This leads to an accumulation of histone acetylation and up-regulation of ETT-target genes.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Model synthesized from multiple experimental approaches showing auxin-dependent dissociation and gene activation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:20:06.620978Z"
+    },
+    {
+      "id": "e50819a3-05f6-42c8-96ea-a584d97531d9",
+      "content_id": "ef7a9906-5adc-450d-b50d-fee8a0d1f214",
+      "claim_id": "C35",
+      "claim": "The direct binding of auxin allows ETT to switch the chromatin locally between repressive and de-repressive states in an instantly reversible manner.",
+      "claim_type": "EXPLICIT",
+      "source": "The direct binding of auxin allows ETT to switch the chromatin locally between repressive and de-repressive states. The recent report of ETT negatively regulating STM expression (Chung et al., 2019) provides molecular evidence that ETT can function as a repressor. Whether ETT also has a role in recruiting activating components is yet to be clarified. Indeed, different modes of actions are possible that could depend on other interacting partners or auxin levels and even be target-gene specific. Nevertheless, the effect of auxin on ETT-mediated regulation of the genes studied here is instantly reversible, making it possible to switch between states, immediately responding to changes in auxin levels.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from experimental data showing rapid, reversible changes in chromatin state and gene expression in response to auxin.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:20:06.620978Z"
+    },
+    {
+      "id": "1b2e49d2-5336-4536-97f1-920e5e25a6de",
+      "content_id": "ef7a9906-5adc-450d-b50d-fee8a0d1f214",
+      "claim_id": "C36",
+      "claim": "The ETT-mediated auxin signaling mechanism is reminiscent of animal hormonal signaling pathways such as the Thyroid Hormone and Wnt/\u03b2-catenin pathways.",
+      "claim_type": "EXPLICIT",
+      "source": "This feature, which is reminiscent of animal hormonal signalling pathways such as the Thyroid Hormone and Wnt/\u00df-catenin pathways (Tsai and O'Malley, 1994; Gammons and Bienz, 2018), may be particularly important in controlling changes in tissue polarity during plant organogenesis as observed in the Arabidopsis gynoecium (Moubayidin and Ostergaard, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Comparison to known animal hormone signaling mechanisms supported by citations.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:20:06.620978Z"
+    },
+    {
+      "id": "85c929de-044e-4963-98f9-f1d6326a15a3",
+      "content_id": "ef7a9906-5adc-450d-b50d-fee8a0d1f214",
+      "claim_id": "C37",
+      "claim": "ETT was shown to recruit HDA19 to the STM promoter, although not via direct protein interaction.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, HDA19 was also recently shown to participate in the repression of STM (Chung et al., 2019). In that study, ETT was shown to recruit HDA19 to the STM promoter, although not via direct protein interaction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Citation to previous work (Chung et al., 2019) describing ETT-HDA19 relationship at STM locus.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:20:06.620978Z"
+    },
+    {
+      "id": "51a5eaf9-ad64-48c5-be89-309dc0fd273a",
+      "content_id": "ef7a9906-5adc-450d-b50d-fee8a0d1f214",
+      "claim_id": "C38",
+      "claim": "TPL was originally identified as a key factor involved in setting up the apical-basal growth axis during embryo development.",
+      "claim_type": "EXPLICIT",
+      "source": "TPL was originally identified as a key factor involved in setting up the apical-basal growth axis during embryo development (Long et al., 2006; Smith and Long, 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Citation to previous work identifying TPL function in embryo development.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:20:06.620978Z"
+    },
+    {
+      "id": "06e5d7d0-c4e2-4eee-9be9-fb07d6b5ed7c",
+      "content_id": "ef7a9906-5adc-450d-b50d-fee8a0d1f214",
+      "claim_id": "C39",
+      "claim": "Large-scale interaction studies suggest that the five Arabidopsis TPL/TPRs have roles throughout plant development.",
+      "claim_type": "EXPLICIT",
+      "source": "Large-scale interaction studies suggest that the five Arabidopsis TPL/TPRs have roles throughout plant development (Krogan et al., 2012; Causier et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Citation to large-scale studies characterizing TPL/TPR functions.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:20:06.620978Z"
+    },
+    {
+      "id": "9c1d61c3-aa76-40f5-a10b-a62b7c3f1143",
+      "content_id": "ef7a9906-5adc-450d-b50d-fee8a0d1f214",
+      "claim_id": "C40",
+      "claim": "The most dramatic phenotypes of ett loss-of-function mutants are observed during gynoecium development.",
+      "claim_type": "EXPLICIT",
+      "source": "Whilst ETT has been implicated in a wide array of developmental processes (Garcia et al., 2006; Marin et al., 2010; Kelley et al., 2012; Pekker et al., 2005), the most dramatic phenotypes of ett loss-of-function mutants are observed during gynoecium development (Sessions et al., 1997; Sessions and Zambryski, 1995; Nemhauser et al., 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Citations to multiple studies characterizing ett mutant phenotypes.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:20:06.620978Z"
+    },
+    {
+      "id": "69d9d436-fc40-4ccd-8bf8-7519de7f9e0f",
+      "content_id": "ef7a9906-5adc-450d-b50d-fee8a0d1f214",
+      "claim_id": "C41",
+      "claim": "ETT is highly expressed in the gynoecium.",
+      "claim_type": "EXPLICIT",
+      "source": "In accordance with this, ETT is highly expressed in the gynoecium (Figure 4a; Simonini et al., 2016).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "GUS reporter expression data and citation to previous expression analysis.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:20:06.620978Z"
+    },
+    {
+      "id": "54795b73-13be-4c02-98ac-26e6ebf5a8a6",
+      "content_id": "ef7a9906-5adc-450d-b50d-fee8a0d1f214",
+      "claim_id": "C42",
+      "claim": "In canonical auxin signalling, auxin-responsive genes are repressed when auxin levels are low by Aux/IAA transcriptional repressors that interact with DNA-bound Auxin Response Factors (ARFs).",
+      "claim_type": "EXPLICIT",
+      "source": "In canonical auxin signalling, auxin-responsive genes are repressed when auxin levels are low by Aux/IAA transcriptional repressors that interact with DNA-bound Auxin Response Factors (ARFs).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of established canonical auxin signaling mechanism.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:20:06.620978Z"
+    },
+    {
+      "id": "845de52d-82d8-413b-bccc-cd8c239b6f31",
+      "content_id": "ef7a9906-5adc-450d-b50d-fee8a0d1f214",
+      "claim_id": "C43",
+      "claim": "As auxin levels increase, the auxin molecule binds to members of the TIR1/AFB family of auxin co-receptors.",
+      "claim_type": "EXPLICIT",
+      "source": "As auxin levels increase, the auxin molecule binds to members of the TIR1/AFB family of auxin co-receptors (Kepinski and Leyser, 2005; Dharmasiri et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of canonical auxin perception mechanism supported by citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:20:06.620978Z"
+    },
+    {
+      "id": "9af7ed49-22f4-493d-8a6c-cff796344ef1",
+      "content_id": "ef7a9906-5adc-450d-b50d-fee8a0d1f214",
+      "claim_id": "C44",
+      "claim": "The main role of TIR1/AFB auxin perception mechanism is transcriptional reprogramming realized by interaction with Aux/IAA repressors, leading to their ubiquitination and subsequent degradation by the 26S proteasome.",
+      "claim_type": "EXPLICIT",
+      "source": "The main role of this auxin perception mechanism, besides non-transcriptionally inhibiting growth (Fendrych et al., 2018; Gallei et al., 2019), is transcriptional reprogramming. This is realised by interaction with Aux/IAA repressors, leading to their ubiquitination and subsequent degradation by the 26S proteasome, ultimately relieving the repression of ARF-targeted loci (Kelley and Estelle, 2012; Leyser, 2018; Weijers and Wagner, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of canonical auxin signaling mechanism supported by multiple citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:20:06.620978Z"
+    },
+    {
+      "id": "46453b9e-a78f-4789-8e35-00eb81ffa714",
+      "content_id": "ef7a9906-5adc-450d-b50d-fee8a0d1f214",
+      "claim_id": "C45",
+      "claim": "An alternative auxin-signalling mechanism was recently identified whereby auxin directly affects the activity of a transcription factor complex towards its downstream targets.",
+      "claim_type": "EXPLICIT",
+      "source": "We recently identified an alternative auxin-signalling mechanism whereby auxin directly affects the activity of a transcription factor (TF) complex towards its downstream targets (Simonini et al., 2016; Simonini et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Citation to previous work by the authors identifying non-canonical auxin signaling.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:20:06.620978Z"
+    },
+    {
+      "id": "a30f027c-8db4-4d0b-9f5b-8b9e1272875d",
+      "content_id": "ef7a9906-5adc-450d-b50d-fee8a0d1f214",
+      "claim_id": "C46",
+      "claim": "The alternative auxin-signalling mechanism mediates precise polarity switches during organ initiation and patterning and includes ETTIN (ETT/ARF3) as a pivotal component.",
+      "claim_type": "EXPLICIT",
+      "source": "This mechanism mediates precise polarity switches during organ initiation and patterning and includes the ARF, ETTIN (ETT/ARF3) as a pivotal component.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of previously identified mechanism from cited work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:20:06.620978Z"
+    },
+    {
+      "id": "6564f22e-0102-47cc-a067-a98344f4cd82",
+      "content_id": "ef7a9906-5adc-450d-b50d-fee8a0d1f214",
+      "claim_id": "C47",
+      "claim": "EAR motifs are found in Aux/IAA proteins and mediate interactions between Aux/IAA and members of the TOPLESS and TOPLESS-RELATED (TPL/TPR) family of co-repressors.",
+      "claim_type": "EXPLICIT",
+      "source": "Ethylene-responsive element binding factor-associated Amphiphilic Repression (EAR) motifs are also found in Aux/IAA proteins. Interactions between Aux/IAA and members of the TOPLESS and TOPLESS-RELATED (TPL/TPR) family of co-repressors occur via this motif (Szemenyei et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of known protein interaction mechanism supported by citation.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:20:06.620978Z"
+    },
+    {
+      "id": "1c09e2f1-b339-43df-9da9-7a58f4f1fa5b",
+      "content_id": "ef7a9906-5adc-450d-b50d-fee8a0d1f214",
+      "claim_id": "C48",
+      "claim": "TPL/TPRs mediate their repressive effect by attracting histone deacetylases (HDACs) to promote chromatin condensation.",
+      "claim_type": "EXPLICIT",
+      "source": "TPL/TPRs mediate their repressive effect by attracting histone deacetylases (HDACs) to promote chromatin condensation (Krogan et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of known mechanism of TPL/TPR function supported by citation.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:20:06.620978Z"
+    },
+    {
+      "id": "80e6ff3b-248c-4fb7-9f79-9e888a53016b",
+      "content_id": "ef7a9906-5adc-450d-b50d-fee8a0d1f214",
+      "claim_id": "C49",
+      "claim": "ETT is required to keep Histone H3 at a deacetylated state at the gene locus of SHOOT MERISTEMLESS (STM) thereby repressing STM expression.",
+      "claim_type": "EXPLICIT",
+      "source": "It was recently shown that ETT is required to keep Histone H3 at a deacetylated state at the gene locus of the meristem identity gene SHOOT MERISTEMLESS (STM) thereby repressing STM expression (Chung et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Citation to recent work characterizing ETT function at STM locus.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:20:06.620978Z"
+    },
+    {
+      "id": "349c63fa-e57a-4023-8019-8fe8d0815f91",
+      "content_id": "ef7a9906-5adc-450d-b50d-fee8a0d1f214",
+      "claim_id": "C50",
+      "claim": "TPL was shown previously to recruit histone deacetylase HDA19 during early Arabidopsis flower development to keep chromatin in a repressed state.",
+      "claim_type": "EXPLICIT",
+      "source": "TPL was shown previously to recruit histone deacetylase, HDA19, during early Arabidopsis flower development to keep chromatin in a repressed state (Krogan et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Citation to previous work characterizing TPL-HDA19 interaction.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:20:06.620978Z"
+    },
+    {
+      "id": "23a2add1-e567-4a75-bcdc-78f24565e92c",
+      "content_id": "ef7a9906-5adc-450d-b50d-fee8a0d1f214",
+      "claim_id": "C51",
+      "claim": "The identification of a direct auxin-ETT interaction to control gene expression adds an additional layer of complexity to auxin action.",
+      "claim_type": "EXPLICIT",
+      "source": "The identification of a direct auxin-ETT interaction to control gene expression adds an additional layer of complexity to auxin action, which contributes towards explaining how auxin imparts its effect on highly diverse processes throughout plant development.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Interpretation of the significance of the findings presented in the manuscript.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:20:06.620978Z"
+    },
+    {
+      "id": "1d820d48-2b0f-4843-9c2e-b420b0b239e3",
+      "content_id": "ef7a9906-5adc-450d-b50d-fee8a0d1f214",
+      "claim_id": "C52",
+      "claim": "This work opens the possibility that direct transcription factor-ligand interactions is a general feature in the control of gene expression in plants as found in animals.",
+      "claim_type": "EXPLICIT",
+      "source": "In a broader context, this work also opens for the exciting possibility that direct transcription factor-ligand interactions is a general feature in the control of gene expression in plants as found in animals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculation about broader implications of the findings.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:20:06.620978Z"
+    },
+    {
+      "id": "cdc31e40-8e8c-4607-b448-9452be0982d0",
+      "content_id": "ef7a9906-5adc-450d-b50d-fee8a0d1f214",
+      "claim_id": "C53",
+      "claim": "The concentrations of IAA applied in the DARTS assay (0.1 \u00b5M, 1 \u00b5M, 10 \u00b5M) were selected to saturate the protein with ligand and to ensure maximal protection from proteolysis.",
+      "claim_type": "EXPLICIT",
+      "source": "The concentrations of IAA applied (0.1 \u00b5M, 1 \u00b5M, 10 \u00b5M) were selected to saturate the protein with ligand and to ensure maximal protection from proteolysis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Explanation of experimental design rationale.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:20:06.620978Z"
+    },
+    {
+      "id": "49e8b09a-825b-4274-8469-39d846fe6735",
+      "content_id": "ef7a9906-5adc-450d-b50d-fee8a0d1f214",
+      "claim_id": "C54",
+      "claim": "Benzoic acid (BA) was applied as a negative control in the DARTS assay because of its similar size and pKa as IAA.",
+      "claim_type": "EXPLICIT",
+      "source": "As a negative control, benzoic acid (BA) was applied at the same dose as IAA (10 \u00b5M and 100 \u00b5M) because of its similar size and pKa as IAA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Explanation of control selection rationale based on chemical properties.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:20:06.620978Z"
+    },
+    {
+      "id": "f8cf7eb5-3e26-4074-ae83-5561e1e358f6",
+      "content_id": "ef7a9906-5adc-450d-b50d-fee8a0d1f214",
+      "claim_id": "C55",
+      "claim": "The region responsible for IAA-sensitivity is situated within the C-terminal part of ETT, known as the ETT-Specific (ES) domain.",
+      "claim_type": "EXPLICIT",
+      "source": "The region responsible for IAA-sensitivity is situated within the C-terminal part of ETT, known as the ETT-Specific (ES) domain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description based on previous characterization of ETT protein structure and function.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:20:06.620978Z"
+    },
+    {
+      "id": "63bafa17-8f35-4873-8be8-ff31feeaf55b",
+      "content_id": "ef7a9906-5adc-450d-b50d-fee8a0d1f214",
+      "claim_id": "C56",
+      "claim": "A protein fragment containing 207 amino acids of the ES domain, ES388-594, is sufficient for mediating IAA-sensitivity in ETT-protein interactions.",
+      "claim_type": "EXPLICIT",
+      "source": "A protein fragment containing 207 amino acids of the ES domain, ES388-594, sufficient for mediating IAA-sensitivity in ETT-protein interactions, was produced recombinantly and shown to be intrinsically disordered (Simonini et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Citation to previous work characterizing the ES domain fragment.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:20:06.620978Z"
+    },
+    {
+      "id": "ff0f7211-bf71-4b35-a4cf-c132850f84c8",
+      "content_id": "ef7a9906-5adc-450d-b50d-fee8a0d1f214",
+      "claim_id": "C57",
+      "claim": "The ES388-594 protein fragment was shown to be intrinsically disordered.",
+      "claim_type": "EXPLICIT",
+      "source": "A protein fragment containing 207 amino acids of the ES domain, ES388-594, sufficient for mediating IAA-sensitivity in ETT-protein interactions, was produced recombinantly and shown to be intrinsically disordered (Simonini et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Citation to previous work characterizing the ES domain fragment structure.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:20:06.620978Z"
+    },
+    {
+      "id": "1fdc4331-3508-42d5-aa5e-3f4f57754501",
+      "content_id": "ef7a9906-5adc-450d-b50d-fee8a0d1f214",
+      "claim_id": "C58",
+      "claim": "The inability to obtain a Kd value for the ETT-IAA interaction may be due to the interaction being weak as well as potential protein aggregation.",
+      "claim_type": "EXPLICIT",
+      "source": "We were unable to obtain a Kd value for the interaction, which may be due to the interaction being weak as well as potential protein aggregation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculation about technical limitations of the ITC experiment.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:20:06.620978Z"
+    },
+    {
+      "id": "c2039f5e-ea0d-4c8b-a456-e04373dd42d8",
+      "content_id": "ef7a9906-5adc-450d-b50d-fee8a0d1f214",
+      "claim_id": "C59",
+      "claim": "The ETT-auxin interaction may be stabilized by interacting protein partners in planta that are not present in the in vitro ITC experiment.",
+      "claim_type": "EXPLICIT",
+      "source": "This could reflect that the ETT-auxin interaction is stabilised by interacting protein partners in planta that are not present in this in vitro experiment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculation about potential reasons for weak in vitro binding.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:20:06.620978Z"
+    },
+    {
+      "id": "1ecb23fb-1a67-4e3f-8022-e1d864523666",
+      "content_id": "ef7a9906-5adc-450d-b50d-fee8a0d1f214",
+      "claim_id": "C60",
+      "claim": "Single loss-of-function mutants in TPL and TPR2 do not show any abnormal phenotypes during gynoecium development.",
+      "claim_type": "EXPLICIT",
+      "source": "Single loss-of-function mutants in TPL and TPR2 do not show any abnormal phenotypes during gynoecium development.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Phenotypic observation from mutant analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:20:06.620978Z"
+    },
+    {
+      "id": "808d7949-8c71-4c3c-9d02-7fe44f59d553",
+      "content_id": "ef7a9906-5adc-450d-b50d-fee8a0d1f214",
+      "claim_id": "C61",
+      "claim": "ETT, TPL and TPR2 cooperate to regulate gynoecium development.",
+      "claim_type": "EXPLICIT",
+      "source": "Together with the protein interaction data and the overlapping expression patterns, these results suggest that ETT and TPL/TPR2 cooperate to regulate gynoecium development.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from combined expression, interaction, and phenotypic data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:20:06.620978Z"
+    },
+    {
+      "id": "f3428037-d63f-4c80-900c-5e7b45f3931c",
+      "content_id": "ef7a9906-5adc-450d-b50d-fee8a0d1f214",
+      "claim_id": "C62",
+      "claim": "Low levels of auxin maintain ETT associations with TPL/TPR2 to repress gene expression via H3K27 deacetylation.",
+      "claim_type": "EXPLICIT",
+      "source": "Our data lead to a model in which low levels of auxin maintain ETT associations with TPL/TPR2 to repress gene expression via H3K27 deacetylation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Model synthesized from multiple experimental results including ChIP, expression, and interaction data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:20:06.620978Z"
+    },
+    {
+      "id": "108e307e-b46e-45e6-81b2-c9ee566413a5",
+      "content_id": "ef7a9906-5adc-450d-b50d-fee8a0d1f214",
+      "claim_id": "C63",
+      "claim": "As auxin levels increase, TPL/TPR2 (and hence HDA19) disassociate from ETT, promoting H3K27 acetylation.",
+      "claim_type": "EXPLICIT",
+      "source": "As auxin levels increase, TPL/TPR2 (and hence HDA19) disassociate from ETT, promoting H3K27 acetylation (Figure 5f).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Model synthesized from ChIP and protein interaction data showing auxin-dependent changes.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:20:06.620978Z"
+    },
+    {
+      "id": "c4e45f17-b475-4773-894d-f644f14f4ffc",
+      "content_id": "ef7a9906-5adc-450d-b50d-fee8a0d1f214",
+      "claim_id": "C64",
+      "claim": "The model molecularly underpins the published association between auxin dynamics and PID expression at the gynoecium apex.",
+      "claim_type": "EXPLICIT",
+      "source": "This model molecularly underpins the published association between auxin dynamics and PID expression at the gynoecium apex where PID is repressed at early stages of development to allow symmetry transition, but subsequently de-repressed as auxin levels rise to facilitate polar auxin transport (Simonini et al., 2016; Moubayidin and Ostergaard, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Connection of current findings to previously published developmental observations supported by citations.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:20:06.620978Z"
+    },
+    {
+      "id": "5cec0ec3-57b7-4ac6-8fc2-9338cd2779d0",
+      "content_id": "ef7a9906-5adc-450d-b50d-fee8a0d1f214",
+      "claim_id": "C65",
+      "claim": "It is possible that the effect of auxin on ETT varies depending on the developmental context.",
+      "claim_type": "EXPLICIT",
+      "source": "Whilst this model explains the data on ETT-mediated auxin signalling during gynoecium development, it is possible that the effect of auxin on ETT varies depending on the developmental context.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculation about potential context-dependent variation in mechanism.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:20:06.620978Z"
+    },
+    {
+      "id": "6911c2df-529d-4553-bda3-2ab2d28f3d63",
+      "content_id": "ef7a9906-5adc-450d-b50d-fee8a0d1f214",
+      "claim_id": "C66",
+      "claim": "The concentrations of auxin required to mediate its effect on ETT is likely to differ between diverse ETT-containing complexes.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, the concentrations of auxin required to mediate its effect on ETT is likely to differ between diverse ETT-containing complexes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculation about potential variation in auxin sensitivity across different contexts.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:20:06.620978Z"
+    },
+    {
+      "id": "9d8d3c95-2fe5-4b75-a6b2-6155d15de222",
+      "content_id": "ef7a9906-5adc-450d-b50d-fee8a0d1f214",
+      "claim_id": "C67",
+      "claim": "ETT can function as a repressor, as evidenced by its negative regulation of STM expression.",
+      "claim_type": "EXPLICIT",
+      "source": "The recent report of ETT negatively regulating STM expression (Chung et al., 2019) provides molecular evidence that ETT can function as a repressor.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Citation to recent work demonstrating ETT repressor function.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:20:06.620978Z"
+    },
+    {
+      "id": "fc493a8a-bbd1-496f-84a1-7ed9d83ace86",
+      "content_id": "ef7a9906-5adc-450d-b50d-fee8a0d1f214",
+      "claim_id": "C68",
+      "claim": "Whether ETT also has a role in recruiting activating components is yet to be clarified.",
+      "claim_type": "EXPLICIT",
+      "source": "Whether ETT also has a role in recruiting activating components is yet to be clarified.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Acknowledgment of unknown aspects of ETT function.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:20:06.620978Z"
+    },
+    {
+      "id": "a3f2907e-7c75-4115-bc32-2febefdefb53",
+      "content_id": "ef7a9906-5adc-450d-b50d-fee8a0d1f214",
+      "claim_id": "C69",
+      "claim": "Different modes of ETT action are possible that could depend on other interacting partners or auxin levels and even be target-gene specific.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, different modes of actions are possible that could depend on other interacting partners or auxin levels and even be target-gene specific.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculation about potential mechanistic diversity.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:20:06.620978Z"
+    },
+    {
+      "id": "ba89ae2f-fe64-4a8e-b818-11c082bd32ea",
+      "content_id": "ef7a9906-5adc-450d-b50d-fee8a0d1f214",
+      "claim_id": "C70",
+      "claim": "The instantly reversible nature of ETT-mediated gene regulation may be particularly important in controlling changes in tissue polarity during plant organogenesis.",
+      "claim_type": "EXPLICIT",
+      "source": "This feature, which is reminiscent of animal hormonal signalling pathways such as the Thyroid Hormone and Wnt/\u00df-catenin pathways (Tsai and O'Malley, 1994; Gammons and Bienz, 2018), may be particularly important in controlling changes in tissue polarity during plant organogenesis as observed in the Arabidopsis gynoecium (Moubayidin and Ostergaard, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference about functional significance based on mechanism and previous observations of polarity changes.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:20:06.620978Z"
+    },
+    {
+      "id": "02b3e1c4-9bb7-4753-8827-4d9e14332b45",
+      "content_id": "ef7a9906-5adc-450d-b50d-fee8a0d1f214",
+      "claim_id": "C71",
+      "claim": "Hormonal signalling in animals often involves direct transcription factor-hormone interactions that modulate gene expression.",
+      "claim_type": "EXPLICIT",
+      "source": "Hormonal signalling in animals often involves direct transcription factor-hormone interactions that modulate gene expression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement of established knowledge about animal hormone signaling.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:20:06.620978Z"
+    },
+    {
+      "id": "16bc5975-8efd-4acf-8d22-9b354a014f55",
+      "content_id": "ef7a9906-5adc-450d-b50d-fee8a0d1f214",
+      "claim_id": "C72",
+      "claim": "Plant hormone signalling is most commonly based on de-repression via the degradation of transcriptional repressors.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, plant hormone signalling is most commonly based on de-repression via the degradation of transcriptional repressors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement of established knowledge about plant hormone signaling.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:20:06.620978Z"
+    },
+    {
+      "id": "8d60ef20-b8f4-4dd6-9254-dd9667106800",
+      "content_id": "ef7a9906-5adc-450d-b50d-fee8a0d1f214",
+      "claim_id": "C73",
+      "claim": "ETTIN directly binds auxin, leading to dissociation from co-repressor proteins of the TOPLESS/TOPLESS-RELATED family followed by histone acetylation and induction of gene expression.",
+      "claim_type": "EXPLICIT",
+      "source": "Here we show that ETTIN directly binds auxin, leading to dissociation from co-repressor proteins of the TOPLESS/TOPLESS-RELATED family followed by histone acetylation and induction of gene expression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary of main findings from multiple experimental approaches presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:20:06.620978Z"
+    },
+    {
+      "id": "734ba7a0-7c51-433d-8d4d-e54edd9fc0ed",
+      "content_id": "ef7a9906-5adc-450d-b50d-fee8a0d1f214",
+      "claim_id": "C74",
+      "claim": "The ETT-auxin signaling mechanism is reminiscent of animal hormone signalling as it affects the activity towards regulation of target genes.",
+      "claim_type": "EXPLICIT",
+      "source": "This mechanism is reminiscent of animal hormone signalling as it affects the activity towards regulation of target genes and provides the first example of a DNA-bound hormone receptor in plants.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Comparison and interpretation of the significance of the findings.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:20:06.620978Z"
+    },
+    {
+      "id": "fc442511-14d4-4cd4-b0b6-271a7fe5c86f",
+      "content_id": "ef7a9906-5adc-450d-b50d-fee8a0d1f214",
+      "claim_id": "C75",
+      "claim": "ETT provides the first example of a DNA-bound hormone receptor in plants.",
+      "claim_type": "EXPLICIT",
+      "source": "This mechanism is reminiscent of animal hormone signalling as it affects the activity towards regulation of target genes and provides the first example of a DNA-bound hormone receptor in plants.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Claim about the novelty of the findings in the context of plant biology.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:20:06.620978Z"
+    },
+    {
+      "id": "07f30be7-8e4f-4aec-bc32-06d1a81c0960",
+      "content_id": "ef7a9906-5adc-450d-b50d-fee8a0d1f214",
+      "claim_id": "C76",
+      "claim": "Whilst auxin affects canonical ARFs indirectly by facilitating degradation of Aux/IAA repressors, direct ETTIN-auxin interactions allow switching between repressive and de-repressive chromatin states in an instantly-reversible manner.",
+      "claim_type": "EXPLICIT",
+      "source": "Whilst auxin affects canonical ARFs indirectly by facilitating degradation of Aux/IAA repressors, direct ETTIN-auxin interactions allow switching between repressive and de-repressive chromatin states in an instantly-reversible manner.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Comparison of canonical and non-canonical auxin signaling mechanisms based on experimental findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:20:06.620978Z"
+    },
+    {
+      "id": "32839b3c-84ca-4014-ae32-de58c6911739",
+      "content_id": "ef7a9906-5adc-450d-b50d-fee8a0d1f214",
+      "claim_id": "C77",
+      "claim": "Developmental programmes within multicellular organisms originate from a single cell that proliferates into numerous cells ultimately differentiating to make up specialised tissues and organs.",
+      "claim_type": "EXPLICIT",
+      "source": "Developmental programmes within multicellular organisms originate from a single cell (i.e. a fertilised oocyte) that proliferates into numerous cells ultimately differentiating to make up specialised tissues and organs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement of general biological knowledge about development.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:20:06.620978Z"
+    },
+    {
+      "id": "bec6319c-5371-4b1c-be95-e8414aa60e1a",
+      "content_id": "ef7a9906-5adc-450d-b50d-fee8a0d1f214",
+      "claim_id": "C78",
+      "claim": "Tight temporal and spatial regulation of genes involved in developmental processes is essential for proper development of the organism.",
+      "claim_type": "EXPLICIT",
+      "source": "Tight temporal and spatial regulation of the genes involved in these processes is essential for proper development of the organism.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement of general biological principle.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:20:06.620978Z"
+    },
+    {
+      "id": "8282585d-dd1d-4a2f-819d-4dd49e77963c",
+      "content_id": "ef7a9906-5adc-450d-b50d-fee8a0d1f214",
+      "claim_id": "C79",
+      "claim": "Changes in gene expression are often controlled by mobile signals that translate positional information into cell type-specific transcriptional outputs.",
+      "claim_type": "EXPLICIT",
+      "source": "Changes in gene expression are often controlled by mobile signals that translate positional information into cell type-specific transcriptional outputs (Hironaka and Morishita, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement of general biological principle supported by citation.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:20:06.620978Z"
+    },
+    {
+      "id": "dff123b9-bc17-415a-901a-9243016bab5e",
+      "content_id": "ef7a9906-5adc-450d-b50d-fee8a0d1f214",
+      "claim_id": "C80",
+      "claim": "In plants, coordination of gene expression can be facilitated by phytohormones such as auxin, which controls processes throughout plant development.",
+      "claim_type": "EXPLICIT",
+      "source": "In plants, this coordination can be facilitated by phytohormones such as auxin, which controls processes throughout plant development (Vanneste and Friml, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement of established knowledge about auxin function supported by citation.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:20:06.620978Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "f68b4ffb-f70f-484d-9d06-4527d3b1effe",
+      "content_id": "ef7a9906-5adc-450d-b50d-fee8a0d1f214",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "ETT directly binds auxin (IAA) as demonstrated by three independent biochemical methods: DARTS assay showing proteolytic protection, HSQC-NMR showing chemical shifts of specific residues including W505, and ITC showing heat exchange between ETT and IAA.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2, C4, C5, and C6 provide converging evidence from three orthogonal biochemical approaches (DARTS, NMR, ITC) demonstrating direct ETT-auxin binding. The use of appropriate controls (BA for DARTS/NMR, buffer-only for ITC) and specificity for IAA over BA strengthen the conclusion. The identification of W505 as important for binding is supported by NMR data showing large chemical shift changes.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:20:06.620978Z"
+    },
+    {
+      "id": "d17f3c05-74e4-44df-a25d-7268c2aa6276",
+      "content_id": "ef7a9906-5adc-450d-b50d-fee8a0d1f214",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The ES domain of ETT (ES388-594) is largely intrinsically disordered but shows some propensity to form secondary structure with helical character.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C3 is supported by HSQC-NMR spectroscopy data showing characteristic signal distribution patterns. The signal-dense region indicates intrinsic disorder while dispersed peaks indicate some structured regions. This is consistent with prior characterization (C57) and appropriate for the experimental approach used.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:20:06.620978Z"
+    },
+    {
+      "id": "0cfc562e-a4b8-49b8-97a5-b2a6589b5873",
+      "content_id": "ef7a9906-5adc-450d-b50d-fee8a0d1f214",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "ETT-mediated regulation of target genes PID and HEC1 occurs independently of the canonical TIR1/AFB auxin signaling pathway, as demonstrated by maintained auxin responsiveness in tir1/afb mutants and differential response to synthetic auxin-TIR1 pairs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7-C14 provide strong evidence through multiple genetic approaches: expression analysis in tir1/afb mutants showing PID/HEC1 retain auxin response while IAA19 does not (C9-C11), and synthetic auxin-TIR1 pair experiments showing differential regulation (C12-C13). The use of IAA19 as a positive control for canonical signaling and multiple mutant combinations strengthen the conclusion of TIR1/AFB independence.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:20:06.620978Z"
+    },
+    {
+      "id": "97c67738-3164-4259-a5d5-4fb54e21af5e",
+      "content_id": "ef7a9906-5adc-450d-b50d-fee8a0d1f214",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "ETT contains a conserved EAR-like motif that mediates interactions with TPL/TPR co-repressor proteins, as demonstrated by phylogenetic conservation analysis and Y2H experiments showing abolished interaction when the motif is mutated.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C16-C18 are well-supported by phylogenetic analysis showing conservation across angiosperms (C16) and Y2H data demonstrating functional requirement of the EAR-like motif for TPL/TPR interactions (C17-C18). The combination of evolutionary conservation and functional validation provides strong evidence.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:20:06.620978Z"
+    },
+    {
+      "id": "47916936-0365-43e6-8b45-573cb228ef65",
+      "content_id": "ef7a9906-5adc-450d-b50d-fee8a0d1f214",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "ETT-TPL/TPR interactions are auxin-sensitive, specifically responding to IAA but not other auxinic compounds, and this sensitivity requires W505 in the ETT protein.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C19-C21 are supported by both Y2H and Co-IP data showing dose-dependent reduction of ETT-TPL/TPR interactions with IAA (C19), specificity for IAA over other auxins (C20), and loss of auxin sensitivity in W505A mutant (C21). The use of multiple protein interaction assays and testing of auxin specificity strengthen the conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:20:06.620978Z"
+    },
+    {
+      "id": "7f21384e-e693-4d7a-9379-d0ed9d385707",
+      "content_id": "ef7a9906-5adc-450d-b50d-fee8a0d1f214",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "W505 is highly conserved in ETT proteins across angiosperms.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C22 is supported by phylogenetic analysis of ETT sequences from 22 angiosperm species. This evolutionary conservation supports the functional importance of W505 identified in biochemical experiments.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:20:06.620978Z"
+    },
+    {
+      "id": "518d4f82-5f54-43c3-864c-1acd4978a246",
+      "content_id": "ef7a9906-5adc-450d-b50d-fee8a0d1f214",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "TPL and TPR2 are co-expressed with ETT in the gynoecium and function redundantly with ETT in gynoecium development, as demonstrated by overlapping expression patterns and similar developmental defects in tpl tpr2 double mutants compared to ett mutants.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C23, C24, C60, and C61 provide converging evidence from expression analysis (GUS reporters showing co-expression), genetic analysis (tpl tpr2 double mutant phenotype similar to ett), and the observation that single mutants show no phenotype (C60). The combination of expression, genetic, and phenotypic data supports the conclusion of functional cooperation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:20:06.620978Z"
+    },
+    {
+      "id": "7155d9fa-f9f3-4276-92c3-aceb97259c4d",
+      "content_id": "ef7a9906-5adc-450d-b50d-fee8a0d1f214",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "HDA19 is required for gynoecium development and is highly expressed in gynoecium tissue.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C25 and C26 are supported by phenotypic analysis of hda19-4 mutant showing developmental defects and qRT-PCR data showing high HDA19 expression in gynoecium. The comparison with HDA6 (low expression) provides appropriate specificity.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:20:06.620978Z"
+    },
+    {
+      "id": "8af5bb0e-dd2c-4db4-a34a-b00d89e44389",
+      "content_id": "ef7a9906-5adc-450d-b50d-fee8a0d1f214",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "PID and HEC1 expression is constitutively upregulated in tpl tpr2 and hda19-4 mutants and fails to respond to auxin treatment, similar to ett mutants.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C27 and C28 are supported by qRT-PCR data comparing expression in mutants versus wild type with and without auxin treatment. The similar behavior across ett, tpl tpr2, and hda19-4 mutants supports the model of these proteins functioning together in a complex.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:20:06.620978Z"
+    },
+    {
+      "id": "6ee5bbb0-d323-4919-902b-8a33018746ff",
+      "content_id": "ef7a9906-5adc-450d-b50d-fee8a0d1f214",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "ETT, TPL, and HDA19 co-localize at PID and HEC1 promoters, with ETT binding maintained but TPL and HDA19 binding reduced upon auxin treatment.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C29 and C30 are supported by ChIP-qPCR data showing all three proteins associate with the same promoter regions and differential auxin sensitivity. The observation that only ETT is expected to bind DNA directly while TPL and HDA19 are recruited is consistent with the proposed mechanism. However, the manuscript does not provide direct evidence that TPL/HDA19 binding is mediated through ETT rather than other DNA-binding proteins.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:20:06.620978Z"
+    },
+    {
+      "id": "9f261607-ccbb-4607-9d21-3a5819f66255",
+      "content_id": "ef7a9906-5adc-450d-b50d-fee8a0d1f214",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "H3K27 acetylation increases at PID and HEC1 promoters in the absence of ETT and upon auxin treatment, with no further increase in ett-3 mutant upon auxin treatment.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C31 and C32 are supported by ChIP data measuring H3K27 acetylation levels across different genetic backgrounds and treatment conditions. The observation that auxin treatment does not further increase acetylation in ett-3 mutant (C32) supports ETT's role in mediating auxin-dependent changes in chromatin state.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:20:06.620978Z"
+    },
+    {
+      "id": "43eb52e2-d3f4-4d0c-9b28-300f481b15b5",
+      "content_id": "ef7a9906-5adc-450d-b50d-fee8a0d1f214",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "A mechanistic model where low auxin maintains ETT-TPL-HDA19 complex formation to repress target genes through H3K27 deacetylation, while high auxin causes complex dissociation through direct ETT-auxin binding, leading to histone acetylation and gene activation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C33, C34, C62, and C63 synthesize multiple lines of evidence into a coherent model: direct ETT-auxin binding (C2-C6), auxin-sensitive ETT-TPL/TPR interactions (C19-C21), co-localization at target promoters (C29-C30), and auxin-dependent changes in histone acetylation (C31-C32). The model is well-supported by the experimental data, though some mechanistic details remain to be tested.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:20:06.620978Z"
+    },
+    {
+      "id": "7fb79e64-0f91-4ac6-8262-8de1c4b4b4a2",
+      "content_id": "ef7a9906-5adc-450d-b50d-fee8a0d1f214",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Direct ETT-auxin binding allows instantly reversible switching between repressive and de-repressive chromatin states, distinguishing this mechanism from canonical auxin signaling that relies on protein degradation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C35 and C76 make assertions about the 'instantly reversible' nature of the mechanism, but the manuscript does not provide direct experimental evidence demonstrating the kinetics of reversibility or comparing timescales with canonical signaling. While the model is consistent with the data showing auxin-dependent changes in protein interactions and chromatin state, the claim of instant reversibility requires time-course experiments that are not presented.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:20:06.620978Z"
+    },
+    {
+      "id": "f7f31e3c-46f9-403c-bdd9-685ac94c5507",
+      "content_id": "ef7a9906-5adc-450d-b50d-fee8a0d1f214",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The DNA-binding domain characteristic of B3-type transcription factors is conserved across all ETT proteins in angiosperms.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C15 is supported by phylogenetic analysis of ETT sequences from 22 angiosperm species. This is an expected finding given the functional importance of DNA binding for transcription factors.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:20:06.620978Z"
+    },
+    {
+      "id": "b83a14ec-4064-4538-bfcd-d99aaba3a71b",
+      "content_id": "ef7a9906-5adc-450d-b50d-fee8a0d1f214",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The inability to obtain a Kd value for ETT-IAA interaction may be due to weak binding and/or protein aggregation, potentially reflecting stabilization by protein partners in planta.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C58 and C59 are speculative explanations for technical limitations of the ITC experiment. While the explanations are plausible, they are not directly tested. The weak binding affinity could also reflect that the ES domain fragment lacks structural context or binding partners that would stabilize the interaction in vivo.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:20:06.620978Z"
+    },
+    {
+      "id": "a1a1fe56-6c92-43bc-bdaa-d2a24836b329",
+      "content_id": "ef7a9906-5adc-450d-b50d-fee8a0d1f214",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "The ETT-auxin signaling mechanism is reminiscent of animal hormone signaling pathways and provides the first example of a DNA-bound hormone receptor in plants, with potential importance for controlling tissue polarity during organogenesis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C36, C70, C74, and C75 draw comparisons to animal hormone signaling and assert novelty in plant biology. The comparison to animal systems is supported by citations and is conceptually valid given the direct transcription factor-hormone interaction. The claim of being the 'first example' of a DNA-bound hormone receptor in plants (C75) is a strong assertion that depends on the definition of 'hormone receptor' and comprehensive knowledge of the literature, but appears justified based on the novel mechanism demonstrated.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:20:06.620978Z"
+    },
+    {
+      "id": "d3e1f39b-fa9c-4949-ab77-4d32a3ab27f1",
+      "content_id": "ef7a9906-5adc-450d-b50d-fee8a0d1f214",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "ETTIN (ETT/ARF3) is an atypical auxin response factor lacking the Aux/IAA-interacting PB1 domain.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C1 is supported by citations to previous structural characterization of ETT. This is established prior knowledge that provides context for the current work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:20:06.620978Z"
+    },
+    {
+      "id": "69bb72b4-bc54-4962-8e88-8b670d99e1f7",
+      "content_id": "ef7a9906-5adc-450d-b50d-fee8a0d1f214",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "The DARTS assay experimental design used appropriate IAA concentrations to saturate the protein and benzoic acid as a negative control based on similar chemical properties.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C53 and C54 describe methodological rationale for the DARTS assay. The concentration range (0.1-10 \u00b5M IAA) is appropriate for testing protein-ligand interactions, and the choice of BA as a control based on similar size and pKa is reasonable, though the manuscript does not provide direct evidence that these concentrations achieve saturation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:20:06.620978Z"
+    },
+    {
+      "id": "64fb01d8-8577-480a-bcba-895ec64dafba",
+      "content_id": "ef7a9906-5adc-450d-b50d-fee8a0d1f214",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "The ES domain (ES388-594) of ETT is responsible for IAA-sensitivity and is sufficient for mediating auxin-sensitive protein interactions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C55, C56, and C57 are supported by citations to previous work characterizing the ES domain. This prior characterization provides the foundation for using the ES388-594 fragment in the current biochemical experiments.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:20:06.620978Z"
+    },
+    {
+      "id": "0d293033-2a15-47fa-a9dc-d5f1a6ff4a8a",
+      "content_id": "ef7a9906-5adc-450d-b50d-fee8a0d1f214",
+      "result_id": "R20",
+      "result_category": "llm",
+      "result": "The mechanistic model molecularly explains the published association between auxin dynamics and PID expression during gynoecium development.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C64 connects the current molecular findings to previously published developmental observations. The model provides a molecular mechanism for the observed correlation between auxin levels and PID expression, though direct testing of this connection in the developmental context would strengthen the claim.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:20:06.620978Z"
+    },
+    {
+      "id": "ef060db3-2c9b-4fd1-93dd-db06ce54944a",
+      "content_id": "ef7a9906-5adc-450d-b50d-fee8a0d1f214",
+      "result_id": "R21",
+      "result_category": "llm",
+      "result": "The effect of auxin on ETT may vary depending on developmental context, interacting partners, and target genes, with different auxin concentration thresholds possible across different ETT-containing complexes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C65, C66, C68, and C69 are speculative statements about potential context-dependent variation in the mechanism. While these are reasonable hypotheses based on the complexity of transcriptional regulation, they are not directly tested in the manuscript and represent future directions rather than supported conclusions.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:20:06.620978Z"
+    },
+    {
+      "id": "7c3e948d-4691-47e6-b733-ca26a2f05561",
+      "content_id": "ef7a9906-5adc-450d-b50d-fee8a0d1f214",
+      "result_id": "R22",
+      "result_category": "llm",
+      "result": "ETT can function as a repressor, as evidenced by its negative regulation of STM expression.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C67 is supported by citation to recent work demonstrating ETT's repressor function at the STM locus. This prior work provides additional context for interpreting ETT's role in the current study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:20:06.620978Z"
+    },
+    {
+      "id": "a7e752ce-8422-4606-b5fd-929d42f71f28",
+      "content_id": "ef7a9906-5adc-450d-b50d-fee8a0d1f214",
+      "result_id": "R23",
+      "result_category": "llm",
+      "result": "Prior work has established roles for ETT, TPL, and HDA19 in chromatin regulation, including ETT recruitment of HDA19 to the STM promoter and TPL recruitment of HDA19 during flower development.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C37, C49, and C50 cite prior work establishing relevant background for the current study. These citations provide appropriate context for the proposed ETT-TPL-HDA19 complex mechanism.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:20:06.620978Z"
+    },
+    {
+      "id": "2b8b9a6b-8820-4427-ae45-c422909433a6",
+      "content_id": "ef7a9906-5adc-450d-b50d-fee8a0d1f214",
+      "result_id": "R24",
+      "result_category": "llm",
+      "result": "Prior work has established that TPL/TPRs and ETT have important developmental roles, with ETT showing particularly dramatic phenotypes during gynoecium development where it is highly expressed.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C38-C41 cite prior work and present expression data establishing the developmental context for the current study. The GUS reporter data (C41) confirms ETT expression in gynoecium, consistent with prior reports.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:20:06.620978Z"
+    },
+    {
+      "id": "be15afa1-dc8e-4e25-accf-3f0a04d4f330",
+      "content_id": "ef7a9906-5adc-450d-b50d-fee8a0d1f214",
+      "result_id": "R25",
+      "result_category": "llm",
+      "result": "Canonical auxin signaling involves auxin binding to TIR1/AFB receptors, leading to Aux/IAA degradation and de-repression of ARF-targeted genes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C42-C44 describe established knowledge about canonical auxin signaling, supported by appropriate citations. This provides necessary background for understanding the novelty of the non-canonical ETT-mediated pathway.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:20:06.620978Z"
+    },
+    {
+      "id": "571057b7-b190-465e-9a38-b5803f240cb1",
+      "content_id": "ef7a9906-5adc-450d-b50d-fee8a0d1f214",
+      "result_id": "R26",
+      "result_category": "llm",
+      "result": "An alternative auxin-signaling mechanism involving ETT was previously identified by the authors, mediating polarity switches during development.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C45 and C46 cite the authors' prior work identifying the non-canonical auxin signaling pathway. The current manuscript builds on this prior work by elucidating the molecular mechanism.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:20:06.620978Z"
+    },
+    {
+      "id": "e7e579e5-0637-4afd-9644-70f954348b82",
+      "content_id": "ef7a9906-5adc-450d-b50d-fee8a0d1f214",
+      "result_id": "R27",
+      "result_category": "llm",
+      "result": "EAR motifs mediate Aux/IAA interactions with TPL/TPR co-repressors, which recruit HDACs to promote chromatin condensation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C47 and C48 describe established mechanisms of transcriptional repression in plants, supported by appropriate citations. This background is relevant for understanding the proposed ETT-TPL/TPR interaction mechanism.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:20:06.620978Z"
+    },
+    {
+      "id": "9bc7ab21-60a3-4596-8c34-0c00f4c18af4",
+      "content_id": "ef7a9906-5adc-450d-b50d-fee8a0d1f214",
+      "result_id": "R28",
+      "result_category": "llm",
+      "result": "The identification of direct auxin-ETT interaction adds complexity to auxin action and suggests direct transcription factor-ligand interactions may be a general feature in plant gene regulation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C51 is a reasonable interpretation of the significance of the findings. Claim C52 is speculative about broader implications, suggesting this mechanism may be general in plants. While this is an interesting hypothesis, it requires identification of additional examples beyond ETT to be supported.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:20:06.620978Z"
+    },
+    {
+      "id": "dc5f39bd-db5a-4559-bc7a-22d680345905",
+      "content_id": "ef7a9906-5adc-450d-b50d-fee8a0d1f214",
+      "result_id": "R29",
+      "result_category": "llm",
+      "result": "Animal hormone signaling often involves direct transcription factor-hormone interactions, while plant hormone signaling typically relies on de-repression via degradation of repressors.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C71 and C72 state general knowledge about hormone signaling mechanisms in animals versus plants. These statements provide context for the novelty of the ETT mechanism, though they are somewhat oversimplified generalizations.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:20:06.620978Z"
+    },
+    {
+      "id": "a587dc25-a12a-40bc-bc39-ced1f3276972",
+      "content_id": "ef7a9906-5adc-450d-b50d-fee8a0d1f214",
+      "result_id": "R30",
+      "result_category": "llm",
+      "result": "ETTIN directly binds auxin, leading to dissociation from TPL/TPR co-repressors, histone acetylation, and gene induction.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C73 is a summary statement of the main findings, integrating results from multiple experimental approaches. This is well-supported by the collective evidence from biochemical, genetic, and chromatin analyses presented in the manuscript.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:20:06.620978Z"
+    },
+    {
+      "id": "5d4778e8-316e-461f-8fb7-e818af4df79d",
+      "content_id": "ef7a9906-5adc-450d-b50d-fee8a0d1f214",
+      "result_id": "R31",
+      "result_category": "llm",
+      "result": "General principles of development: multicellular organisms develop from single cells through regulated gene expression controlled by mobile signals such as auxin in plants.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C77-C80 state general biological principles supported by citations. These provide broad context for the study but are not novel findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:20:06.620978Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "afec42f2-0d3a-49c4-961e-c8b113069f62",
+      "result_id": "f68b4ffb-f70f-484d-9d06-4527d3b1effe"
+    },
+    {
+      "claim_id": "2efc093d-0245-43d3-87e1-408f7586ebc1",
+      "result_id": "f68b4ffb-f70f-484d-9d06-4527d3b1effe"
+    },
+    {
+      "claim_id": "5e861f4f-c187-40b4-972a-57afb1593ad5",
+      "result_id": "f68b4ffb-f70f-484d-9d06-4527d3b1effe"
+    },
+    {
+      "claim_id": "c5be12b2-ec10-44d2-907d-456024e5feaa",
+      "result_id": "f68b4ffb-f70f-484d-9d06-4527d3b1effe"
+    },
+    {
+      "claim_id": "7856b19c-d731-4e83-9ab7-7e1b2ed8e27c",
+      "result_id": "d17f3c05-74e4-44df-a25d-7268c2aa6276"
+    },
+    {
+      "claim_id": "c16ddddf-2bdd-491e-a3f0-ffa2b07f5589",
+      "result_id": "0cfc562e-a4b8-49b8-97a5-b2a6589b5873"
+    },
+    {
+      "claim_id": "7e4b5dbd-7dbb-476c-bbb5-09b787305cd3",
+      "result_id": "0cfc562e-a4b8-49b8-97a5-b2a6589b5873"
+    },
+    {
+      "claim_id": "6890c4e2-1357-427c-8d56-17b8f0c79341",
+      "result_id": "0cfc562e-a4b8-49b8-97a5-b2a6589b5873"
+    },
+    {
+      "claim_id": "b445a1ea-1a61-4ec0-aec6-4fd4ec9d9852",
+      "result_id": "0cfc562e-a4b8-49b8-97a5-b2a6589b5873"
+    },
+    {
+      "claim_id": "8786406f-5e1a-483a-8c98-ee782674d852",
+      "result_id": "0cfc562e-a4b8-49b8-97a5-b2a6589b5873"
+    },
+    {
+      "claim_id": "7d42b2eb-750f-4fef-8855-2644e442aee1",
+      "result_id": "0cfc562e-a4b8-49b8-97a5-b2a6589b5873"
+    },
+    {
+      "claim_id": "a27cb127-d39e-4eef-8172-3be76e55d0c0",
+      "result_id": "0cfc562e-a4b8-49b8-97a5-b2a6589b5873"
+    },
+    {
+      "claim_id": "114f59d1-2ac6-489d-904f-ff2615e1e979",
+      "result_id": "0cfc562e-a4b8-49b8-97a5-b2a6589b5873"
+    },
+    {
+      "claim_id": "45a20211-cf9c-4b84-aa2b-6ac188e1ad76",
+      "result_id": "97c67738-3164-4259-a5d5-4fb54e21af5e"
+    },
+    {
+      "claim_id": "e3f9c2f5-b9b2-4322-9725-92db8f56331d",
+      "result_id": "97c67738-3164-4259-a5d5-4fb54e21af5e"
+    },
+    {
+      "claim_id": "a8935a56-0c2b-4468-a9d3-b4d99213e542",
+      "result_id": "97c67738-3164-4259-a5d5-4fb54e21af5e"
+    },
+    {
+      "claim_id": "d508de1c-4e71-4dff-9886-c3508643d435",
+      "result_id": "47916936-0365-43e6-8b45-573cb228ef65"
+    },
+    {
+      "claim_id": "29606fde-3c1d-4017-8e71-a2600d90c9f8",
+      "result_id": "47916936-0365-43e6-8b45-573cb228ef65"
+    },
+    {
+      "claim_id": "cea4d17d-21c3-43cc-8069-ff298e6ace04",
+      "result_id": "47916936-0365-43e6-8b45-573cb228ef65"
+    },
+    {
+      "claim_id": "c59d8173-8721-485b-8e22-11ad0a07436d",
+      "result_id": "7f21384e-e693-4d7a-9379-d0ed9d385707"
+    },
+    {
+      "claim_id": "31f81d03-1dd5-4a88-b733-9a8123ebc0f0",
+      "result_id": "518d4f82-5f54-43c3-864c-1acd4978a246"
+    },
+    {
+      "claim_id": "2923e746-3c1d-4b78-ac9b-041ebb698801",
+      "result_id": "518d4f82-5f54-43c3-864c-1acd4978a246"
+    },
+    {
+      "claim_id": "1ecb23fb-1a67-4e3f-8022-e1d864523666",
+      "result_id": "518d4f82-5f54-43c3-864c-1acd4978a246"
+    },
+    {
+      "claim_id": "808d7949-8c71-4c3c-9d02-7fe44f59d553",
+      "result_id": "518d4f82-5f54-43c3-864c-1acd4978a246"
+    },
+    {
+      "claim_id": "54614d77-07a0-4090-b48c-4e56c854d628",
+      "result_id": "7155d9fa-f9f3-4276-92c3-aceb97259c4d"
+    },
+    {
+      "claim_id": "a3d98f2d-2119-4538-8fe1-78c48abe988a",
+      "result_id": "7155d9fa-f9f3-4276-92c3-aceb97259c4d"
+    },
+    {
+      "claim_id": "a46dbf2a-7362-40fb-b531-d9e4806c9efb",
+      "result_id": "8af5bb0e-dd2c-4db4-a34a-b00d89e44389"
+    },
+    {
+      "claim_id": "472b5b78-b284-4ee8-ab29-028d92931345",
+      "result_id": "8af5bb0e-dd2c-4db4-a34a-b00d89e44389"
+    },
+    {
+      "claim_id": "33330437-9a89-462c-b7b5-88493b65eae0",
+      "result_id": "6ee5bbb0-d323-4919-902b-8a33018746ff"
+    },
+    {
+      "claim_id": "62b8a4cf-62f9-4e03-b651-f5d16ce0a7a5",
+      "result_id": "6ee5bbb0-d323-4919-902b-8a33018746ff"
+    },
+    {
+      "claim_id": "493ab094-eae9-451c-8158-f381a4b881bf",
+      "result_id": "9f261607-ccbb-4607-9d21-3a5819f66255"
+    },
+    {
+      "claim_id": "6fdc2bb6-5f1f-4e2e-bcd2-e16a0fb6e9f4",
+      "result_id": "9f261607-ccbb-4607-9d21-3a5819f66255"
+    },
+    {
+      "claim_id": "eaf5721e-daf3-4952-9688-d76a7af20fea",
+      "result_id": "43eb52e2-d3f4-4d0c-9b28-300f481b15b5"
+    },
+    {
+      "claim_id": "098afb4e-6bfc-4245-94b1-0ba6ea6222d9",
+      "result_id": "43eb52e2-d3f4-4d0c-9b28-300f481b15b5"
+    },
+    {
+      "claim_id": "f3428037-d63f-4c80-900c-5e7b45f3931c",
+      "result_id": "43eb52e2-d3f4-4d0c-9b28-300f481b15b5"
+    },
+    {
+      "claim_id": "108e307e-b46e-45e6-81b2-c9ee566413a5",
+      "result_id": "43eb52e2-d3f4-4d0c-9b28-300f481b15b5"
+    },
+    {
+      "claim_id": "e50819a3-05f6-42c8-96ea-a584d97531d9",
+      "result_id": "7fb79e64-0f91-4ac6-8262-8de1c4b4b4a2"
+    },
+    {
+      "claim_id": "07f30be7-8e4f-4aec-bc32-06d1a81c0960",
+      "result_id": "7fb79e64-0f91-4ac6-8262-8de1c4b4b4a2"
+    },
+    {
+      "claim_id": "f424963d-33e8-460d-8277-8fc60e5b6eb9",
+      "result_id": "f7f31e3c-46f9-403c-bdd9-685ac94c5507"
+    },
+    {
+      "claim_id": "1fdc4331-3508-42d5-aa5e-3f4f57754501",
+      "result_id": "b83a14ec-4064-4538-bfcd-d99aaba3a71b"
+    },
+    {
+      "claim_id": "c2039f5e-ea0d-4c8b-a456-e04373dd42d8",
+      "result_id": "b83a14ec-4064-4538-bfcd-d99aaba3a71b"
+    },
+    {
+      "claim_id": "1b2e49d2-5336-4536-97f1-920e5e25a6de",
+      "result_id": "a1a1fe56-6c92-43bc-bdaa-d2a24836b329"
+    },
+    {
+      "claim_id": "ba89ae2f-fe64-4a8e-b818-11c082bd32ea",
+      "result_id": "a1a1fe56-6c92-43bc-bdaa-d2a24836b329"
+    },
+    {
+      "claim_id": "734ba7a0-7c51-433d-8d4d-e54edd9fc0ed",
+      "result_id": "a1a1fe56-6c92-43bc-bdaa-d2a24836b329"
+    },
+    {
+      "claim_id": "fc442511-14d4-4cd4-b0b6-271a7fe5c86f",
+      "result_id": "a1a1fe56-6c92-43bc-bdaa-d2a24836b329"
+    },
+    {
+      "claim_id": "57c5657c-8bdc-4df7-af59-ceb9ebc71aef",
+      "result_id": "d3e1f39b-fa9c-4949-ab77-4d32a3ab27f1"
+    },
+    {
+      "claim_id": "cdc31e40-8e8c-4607-b448-9452be0982d0",
+      "result_id": "69bb72b4-bc54-4962-8e88-8b670d99e1f7"
+    },
+    {
+      "claim_id": "49e8b09a-825b-4274-8469-39d846fe6735",
+      "result_id": "69bb72b4-bc54-4962-8e88-8b670d99e1f7"
+    },
+    {
+      "claim_id": "f8cf7eb5-3e26-4074-ae83-5561e1e358f6",
+      "result_id": "64fb01d8-8577-480a-bcba-895ec64dafba"
+    },
+    {
+      "claim_id": "63bafa17-8f35-4873-8be8-ff31feeaf55b",
+      "result_id": "64fb01d8-8577-480a-bcba-895ec64dafba"
+    },
+    {
+      "claim_id": "ff0f7211-bf71-4b35-a4cf-c132850f84c8",
+      "result_id": "64fb01d8-8577-480a-bcba-895ec64dafba"
+    },
+    {
+      "claim_id": "c4e45f17-b475-4773-894d-f644f14f4ffc",
+      "result_id": "0d293033-2a15-47fa-a9dc-d5f1a6ff4a8a"
+    },
+    {
+      "claim_id": "5cec0ec3-57b7-4ac6-8fc2-9338cd2779d0",
+      "result_id": "ef060db3-2c9b-4fd1-93dd-db06ce54944a"
+    },
+    {
+      "claim_id": "6911c2df-529d-4553-bda3-2ab2d28f3d63",
+      "result_id": "ef060db3-2c9b-4fd1-93dd-db06ce54944a"
+    },
+    {
+      "claim_id": "fc493a8a-bbd1-496f-84a1-7ed9d83ace86",
+      "result_id": "ef060db3-2c9b-4fd1-93dd-db06ce54944a"
+    },
+    {
+      "claim_id": "a3f2907e-7c75-4115-bc32-2febefdefb53",
+      "result_id": "ef060db3-2c9b-4fd1-93dd-db06ce54944a"
+    },
+    {
+      "claim_id": "9d8d3c95-2fe5-4b75-a6b2-6155d15de222",
+      "result_id": "7c3e948d-4691-47e6-b733-ca26a2f05561"
+    },
+    {
+      "claim_id": "85c929de-044e-4963-98f9-f1d6326a15a3",
+      "result_id": "a7e752ce-8422-4606-b5fd-929d42f71f28"
+    },
+    {
+      "claim_id": "80e6ff3b-248c-4fb7-9f79-9e888a53016b",
+      "result_id": "a7e752ce-8422-4606-b5fd-929d42f71f28"
+    },
+    {
+      "claim_id": "349c63fa-e57a-4023-8019-8fe8d0815f91",
+      "result_id": "a7e752ce-8422-4606-b5fd-929d42f71f28"
+    },
+    {
+      "claim_id": "51a5eaf9-ad64-48c5-be89-309dc0fd273a",
+      "result_id": "2b8b9a6b-8820-4427-ae45-c422909433a6"
+    },
+    {
+      "claim_id": "06e5d7d0-c4e2-4eee-9be9-fb07d6b5ed7c",
+      "result_id": "2b8b9a6b-8820-4427-ae45-c422909433a6"
+    },
+    {
+      "claim_id": "9c1d61c3-aa76-40f5-a10b-a62b7c3f1143",
+      "result_id": "2b8b9a6b-8820-4427-ae45-c422909433a6"
+    },
+    {
+      "claim_id": "69d9d436-fc40-4ccd-8bf8-7519de7f9e0f",
+      "result_id": "2b8b9a6b-8820-4427-ae45-c422909433a6"
+    },
+    {
+      "claim_id": "54795b73-13be-4c02-98ac-26e6ebf5a8a6",
+      "result_id": "be15afa1-dc8e-4e25-accf-3f0a04d4f330"
+    },
+    {
+      "claim_id": "845de52d-82d8-413b-bccc-cd8c239b6f31",
+      "result_id": "be15afa1-dc8e-4e25-accf-3f0a04d4f330"
+    },
+    {
+      "claim_id": "9af7ed49-22f4-493d-8a6c-cff796344ef1",
+      "result_id": "be15afa1-dc8e-4e25-accf-3f0a04d4f330"
+    },
+    {
+      "claim_id": "46453b9e-a78f-4789-8e35-00eb81ffa714",
+      "result_id": "571057b7-b190-465e-9a38-b5803f240cb1"
+    },
+    {
+      "claim_id": "a30f027c-8db4-4d0b-9f5b-8b9e1272875d",
+      "result_id": "571057b7-b190-465e-9a38-b5803f240cb1"
+    },
+    {
+      "claim_id": "6564f22e-0102-47cc-a067-a98344f4cd82",
+      "result_id": "e7e579e5-0637-4afd-9644-70f954348b82"
+    },
+    {
+      "claim_id": "1c09e2f1-b339-43df-9da9-7a58f4f1fa5b",
+      "result_id": "e7e579e5-0637-4afd-9644-70f954348b82"
+    },
+    {
+      "claim_id": "23a2add1-e567-4a75-bcdc-78f24565e92c",
+      "result_id": "9bc7ab21-60a3-4596-8c34-0c00f4c18af4"
+    },
+    {
+      "claim_id": "1d820d48-2b0f-4843-9c2e-b420b0b239e3",
+      "result_id": "9bc7ab21-60a3-4596-8c34-0c00f4c18af4"
+    },
+    {
+      "claim_id": "02b3e1c4-9bb7-4753-8827-4d9e14332b45",
+      "result_id": "dc5f39bd-db5a-4559-bc7a-22d680345905"
+    },
+    {
+      "claim_id": "16bc5975-8efd-4acf-8d22-9b354a014f55",
+      "result_id": "dc5f39bd-db5a-4559-bc7a-22d680345905"
+    },
+    {
+      "claim_id": "8d60ef20-b8f4-4dd6-9254-dd9667106800",
+      "result_id": "a587dc25-a12a-40bc-bc39-ced1f3276972"
+    },
+    {
+      "claim_id": "32839b3c-84ca-4014-ae32-de58c6911739",
+      "result_id": "5d4778e8-316e-461f-8fb7-e818af4df79d"
+    },
+    {
+      "claim_id": "bec6319c-5371-4b1c-be95-e8414aa60e1a",
+      "result_id": "5d4778e8-316e-461f-8fb7-e818af4df79d"
+    },
+    {
+      "claim_id": "8282585d-dd1d-4a2f-819d-4dd49e77963c",
+      "result_id": "5d4778e8-316e-461f-8fb7-e818af4df79d"
+    },
+    {
+      "claim_id": "dff123b9-bc17-415a-901a-9243016bab5e",
+      "result_id": "5d4778e8-316e-461f-8fb7-e818af4df79d"
+    }
+  ],
+  "comparisons": []
+}

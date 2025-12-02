@@ -1,0 +1,355 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "The authors developed a live imaging platform that allows the Drosophila midgut to be imaged for 12-16 hours while maintaining physiological function and high cell viability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2-C25 collectively demonstrate that the imaging platform successfully maintains midgut integrity and function during extended imaging. The platform achieves 12-16 hr imaging sessions (C3, C23, C24) with 72% animal survival (C23) and 93-98% cell viability (C25). Physiological functions including feeding, peristalsis, and defecation are preserved (C19-C22), supported by video evidence. These converging lines of evidence strongly support the platform's viability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "Temperature-controlled gene expression systems are not compatible with the imaging platform due to midgut rupture at elevated temperatures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C27 report direct observations that elevated temperatures (\u226529\u00b0C) cause midgut rupture, making GAL80ts and heat-shock systems impracticable. C28 suggests progesterone-induced GeneSwitch as an alternative, which is appropriately framed as speculation. The limitation is clearly documented with proposed alternatives.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "Image registration algorithms can correct motion artifacts in approximately 70% of blurred movies, rendering them suitable for analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C31 quantify the prevalence of motion artifacts (~90% of movies) and the success rate of computational correction (~70% of blurred movies). The effectiveness is demonstrated through before-and-after images (Figure 1D-F, Video 6). The quantitative assessment and visual validation support the utility of the registration pipeline.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "A fate sensor genetic line enables live identification of four major midgut cell types based on combinatorial fluorescent markers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C41 describe the genetic design and validation of the fate sensor line. The combinatorial marker system (CFP, GFP, RFP) distinguishes stem cells, enteroblasts, enterocytes, and enteroendocrine cells based on established knowledge of cell type characteristics. The approach is demonstrated in Figure 2 and Video 7, showing clear cell type identification.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "Enterocyte extrusions occur apically through closure of six-sided basal junctional rings marked by E-cadherin and myosin, requiring 4-6 hours for completion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C51 provide quantitative characterization of extrusion events from live imaging data. The observations include cell counts (C42-C43), temporal distribution (C44), directionality (C45), and detailed morphometric analysis of ring structure and dynamics (C46-C51). The data are supported by time-lapse imaging (Videos 8-10) and quantitative measurements (Figure 3).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "Enterocyte extrusion proceeds via ratcheted ring closure, characterized by 6-12 alternating pulses of constriction and relaxation, a mechanism not previously described for cell extrusion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C60 describe the novel finding of ratcheted ring closure during extrusion. Morphometric analysis of three extrusions demonstrates alternating pulses (C54), with rates of constriction exceeding relaxation to drive net closure (C56). The comparison to embryonic ratcheting (C57-C60) appropriately contextualizes the finding. The quantitative data (Figure 3C, Figure 3\u2014figure supplement 1) strongly support this discovery.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "During enterocyte extrusion, the junctional ring and nucleus exhibit distinct kinetics of apical travel, suggesting different mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C64 compare the dynamics of ring versus nuclear movement during extrusion. The ring advances slowly over 5 hours with stuttering movements (C61), while the nucleus ejects rapidly in 15 minutes (C62) before recoiling (C63). The inference of different mechanisms (C64) is reasonable given the dramatic kinetic differences documented in Figure 3D-E and Video 9.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "The mitotic index during live imaging (0.28%) is lower than in fixed tissues (1-2%), but division rates do not decline over time within individual movies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C71 quantify mitotic activity from 39 divisions across 122 hours of imaging. The calculated mitotic index (C67) is compared to published values (C68), revealing a reduction. The absence of temporal trends (C70) supports the inference that reduced division rates are not due to cumulative imaging stress (C71). The analysis is appropriately cautious about interpretation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "Mitotic stem cells exhibit horizontal-vertical orientations biased toward horizontal, but individual cells frequently re-orient dynamically during mitosis, with 8 of 10 cells re-orienting by \u226515\u00b0.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C82 characterize division orientation dynamics. Population-level bias toward horizontal orientations (C75-C78) is consistent with prior fixed-tissue studies (C77). However, single-cell tracking reveals frequent re-orientations (C79-C81) that would be invisible in fixed samples. The lack of correlation with peristalsis (C82) rules out mechanical artifacts. The data (Figure 4B-E, Videos 12-13) support both population trends and individual dynamics.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C83",
+      "C84"
+    ],
+    "result": "Longitudinal-circumferential division orientations are unbiased, with near-equal numbers of divisions oriented longitudinally versus circumferentially.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C84 report measurements of 38 divisions showing 20 cells \u226445\u00b0 and 18 cells >45\u00b0, supporting the conclusion of no bias. The quantitative data (Figure 4F-H) directly support this finding. However, the authors appropriately note that boundary-localized divisions could not be assessed due to lack of boundary markers.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "When flanked by two enteroblasts, dividing stem cells orient nearly parallel to the enteroblast-enteroblast axis, suggesting physical contact provides spatial cues for spindle orientation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C91 describe a novel local orientation mechanism. Divisions between two enteroblasts show constrained orientations (4 of 18 divisions, C88), while those with one enteroblast show broad orientations (C89). The observation of daughter cells colliding with enteroblast nuclei (C90, Video 14) provides direct evidence of physical interaction. The inference of contact-mediated orientation (C91) is reasonable given the data (Figure 4I-K).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "A normalized GFP:RFP ratio of 0.17 marks a threshold level of Notch activation that quantitatively distinguishes stem cells from enteroblasts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C100 establish and validate a quantitative Notch activity threshold. The bimodal distribution of GFP:RFP values (C97) is validated using benchmark stem cells identified by mitotic behavior, with 99.61% below the 0.17 threshold (C98). The 4:3 ratio of left to right peaks matches published stem:enteroblast ratios (C100). The multi-pronged validation (Figure 5A-C) strongly supports this quantitative threshold.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C103",
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "Enteroblast transitions occur over 2.4-6.9 hours, slower than developmental Notch activation (minutes) but faster than the upper limit inferred from clonal analysis (2 days).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C103-C106 quantify the kinetics of enteroblast transitions from live imaging. Five transitions were identified from 95 cells (C103), with durations of 2.4-6.9 hours (C104). The comparison to other systems (C105) appropriately contextualizes the findings. The lack of correlation between initial GFP:RFP and transition time (C106) is an important negative result. The data (Figure 5D-E, Video 15) support these measurements.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "Some cells show decreasing GFP:RFP from above to below the enteroblast threshold, suggesting potential reversion to a stem-like state.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C107-C109 describe observations of decreasing Notch activity (C107) and speculate about reversion (C108) and the relationship between specification and commitment (C109). While the observations are documented, the interpretation is explicitly speculative. The biological significance and frequency of these events are unclear, and alternative explanations (e.g., measurement artifacts, cell death) are not fully excluded.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118"
+    ],
+    "result": "Sibling cell pairs exhibit diverse and dynamic contact behaviors, with 8 of 18 pairs separating for at least one hour, behaviors that cannot be deduced from static images.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C110-C118 characterize sibling contact dynamics. The correlation between inter-nuclear distance and contact status (C110-C112) is established from independent data (Figure 6\u2014figure supplement 1). Analysis of 18 sibling pairs reveals diverse behaviors (C113-C116), with quantitative documentation of separation events. The inference that fixed-tissue assays may miss separated siblings (C118) is reasonable given the observed dynamics (Figure 6A).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C119",
+      "C120",
+      "C121"
+    ],
+    "result": "Sibling contact does not correlate with rapid, asymmetric Notch activation, as only 1 of 18 sibling pairs showed persistent Notch activation regardless of contact status.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C119-C121 report that both high- and low-contact siblings maintain low GFP:RFP (C119), with only 1 of 36 siblings showing persistent activation (C120). This contradicts a simple model of contact-dependent rapid activation (C121). The data (Figure 6B-D, Videos 16-18) support this negative result, though the authors appropriately note that longer imaging might reveal additional transitions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129"
+    ],
+    "result": "Notch activation is delayed for several hours after cell birth, which may explain the lower frequency of asymmetric fates observed in live imaging (1 of 18 pairs) compared to fixed clonal studies (20-30%).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C122-C129 document delayed Notch activation (C122-C124) and propose this explains differences between live and fixed observations (C126-C129). While the delay is clearly documented (Figure 5D-E, Figure 6D), the explanation for the discrepancy is speculative (C128-C129). The authors appropriately note uncertainty about whether the delay is physiological or an artifact of the imaging protocol. Additional validation in unperturbed animals would be needed to fully support this interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C130",
+      "C131",
+      "C132"
+    ],
+    "result": "The multi-hour delay in Notch activation is unlikely to be due to GFP maturation kinetics and may enable cells to integrate multiple signals before fate commitment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C130-C132 address the mechanism and significance of the observed delay. The exclusion of GFP maturation as an explanation (C130) is reasonable based on cited kinetics. However, the proposed functional significance (C131-C132) is explicitly speculative. While the hypothesis is plausible, it lacks direct experimental support and represents an interpretation rather than a demonstrated result.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13"
+    ],
+    "result": "Prior midgut studies have elucidated conserved stem cell processes, but investigation has been constrained by limitations of fixed tissue and short ex vivo imaging windows.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C13 provide context for the current work by summarizing prior contributions (C7-C8) and limitations (C9-C13). These claims are well-supported by citations to published literature and represent accurate characterization of the field. The logical limitations of fixed tissue (C10) and ex vivo culture (C11-C13) provide clear motivation for the current platform.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C1"
+    ],
+    "result": "The Drosophila adult midgut is a premier genetic model for stem-cell-based organs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C1 states an established characteristic of the Drosophila midgut model system, supported by the extensive literature cited throughout the manuscript (C7-C8). This represents accepted knowledge in the field rather than a novel finding of the current work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6"
+    ],
+    "result": "Live imaging reveals three novel cell behaviors: dynamic mitotic re-orientation, slow Notch activation kinetics, and ratcheted enterocyte extrusion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C6 summarize the three major discoveries of the manuscript. Each is supported by detailed analyses in separate result groups (C79-C82 for re-orientation, C104-C105 for Notch kinetics, C52-C56 for ratcheting). These represent the primary novel contributions enabled by the imaging platform.",
+    "result_type": "MAJOR"
+  }
+]

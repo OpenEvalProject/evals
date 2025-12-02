@@ -1,0 +1,449 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10"
+    ],
+    "result": "The manuscript reviews established knowledge about dopamine neuron function, noting that while DA manipulation affects movement, physiological recordings historically showed few motor correlates. Instead, classic studies reported DA neurons encode reward prediction error (RPE) for learning, with DA influencing movement indirectly through learning and motivation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C10 accurately summarize well-established prior work on dopamine function, supported by appropriate citations to classic literature (Schultz et al., 1997; Wise, 2004; etc.). These background claims provide necessary context for the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "Recent studies, including the authors' previous work, have reported that subpopulations of DA neurons may directly encode movement, with DMS-projecting DA neurons showing selectivity for contralateral choices and other DA neurons showing phasic changes at movement onset.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C16 accurately cite recent literature including the authors' prior work (Parker et al., 2016) and other studies reporting movement-related DA signals. These claims establish the motivation for the current investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "The manuscript introduces the theoretical framework that computational models like actor-critic learn separate predictions about overall value and action-specific value, potentially localized to ventral vs dorsal striatum. A choice-specific RPE could explain choice-related correlates before reward through anticipatory temporal difference signals, and such signals could masquerade as choice signals because animals preferentially choose high-value actions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C26 accurately describe established computational theory (temporal difference learning, actor-critic models) with appropriate citations. The logical reasoning about how value signals could appear as choice signals is sound and well-supported by decision theory.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125"
+    ],
+    "result": "Mice were trained on a probabilistic reversal learning task where levers had high (70%) or low (10%) reward probability that reversed on a pseudorandom schedule. Mice gradually learned to prefer the higher-value lever after transitions. Behavior was fit with a Q-learning model. Recordings were obtained from 17 ThIRES-Cre mice using fiber photometry of GCaMP6f in either VTA/SN::DMS terminals (n=12 sites) or cell bodies (n=7 sites).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C125 describe the experimental methods in detail. The task design is clearly specified with appropriate parameters. Sample sizes are reported (17 mice, 12 terminal sites, 7 cell body sites). Methods are consistent with prior work (Parker et al., 2016) and standard for fiber photometry studies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133"
+    ],
+    "result": "Fiber photometry recordings at 15 Hz from VTA/SN::DMS neurons replicated previous findings of elevated activity during contralateral choice trials. Data consisted of 10,108 trials across 12 terminal recording sites and 4,938 trials across 7 cell body sites, with 2-6 sessions per site. Signals were processed with high-pass filtering, dF/F calculation, and z-scoring.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C133 describe data collection and preprocessing methods. Sample sizes are adequate (>1000 trials per mouse on average). Signal processing methods are standard for fiber photometry. Replication of prior contralateral selectivity (C40) validates the experimental approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C135",
+      "C136",
+      "C137",
+      "C138"
+    ],
+    "result": "A hierarchical Q-learning model with three free parameters (learning rate, inverse temperature, stay bias) was fit to behavioral data using Hamiltonian Monte Carlo in Stan. Convergence was verified with Rhat < 0.003 for all parameters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C135-C138 describe appropriate Bayesian modeling methods. Use of hierarchical models for multi-subject data is standard practice. Convergence diagnostics (Rhat) indicate successful model fitting. Software versions are specified (Stan 2.17.1.0).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "The manuscript develops two competing hypotheses for how value signals might relate to movement selectivity: (1) contralateral value modulation, where signals track the value of contralateral vs ipsilateral actions regardless of which is chosen, or (2) chosen value modulation, where signals track chosen vs unchosen value. Under contralateral value modulation, value effects would reverse for ipsilateral vs contralateral choices. Under chosen value modulation, value effects would be similar for both choice types and could not alone explain contralateral selectivity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C50 present clear theoretical predictions that distinguish the two hypotheses. The logic is sound: contralateral value should show an interaction between choice direction and value, while chosen value should not. These predictions are testable and form the basis for subsequent analyses.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "Using previous trial reward as a proxy for value, VTA/SN::DMS terminals showed value-related signals that reflected chosen value (responding more when the previous choice was rewarded, whether contralateral or ipsilateral) rather than contralateral value. This indicated that DMS-projecting DA neurons represent both chosen value and movement direction. The effect was visible in both terminals and cell bodies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C55 report the first key empirical finding. The analysis using previous trial outcome as a value proxy is straightforward and theory-neutral. The data in Figure 3a clearly show similar value modulation for both choice directions, supporting chosen rather than contralateral value encoding. Consistency across terminals and cell bodies strengthens the finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "Binning trials by model-derived Q-values (chosen minus unchosen) revealed both a movement effect and value gradient. Trials with higher Q-values had larger GCaMP6f signals regardless of which side was chosen, suggesting VTA/SN::DMS terminals were modulated by the expected value of the chosen (not contralateral) action, in addition to being modulated by contralateral movement.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C58 extend the previous trial analysis using model-derived Q-values, which provide trial-by-trial value estimates. Figure 3b shows clear value gradients that are similar for contralateral and ipsilateral choices, consistent with chosen value encoding. This converging evidence using a different value measure strengthens the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C62",
+      "C63",
+      "C139",
+      "C140",
+      "C141",
+      "C142",
+      "C143"
+    ],
+    "result": "Linear mixed effects regression verified significant effects for both movement direction and action value, with the value effect not explaining away the movement effect. During the period 0.25-1 seconds after lever presentation, there was a significant value effect but no significant interaction, supporting the chosen value model. When re-estimated with contralateral value, a sustained significant interaction emerged, providing formal statistical support for the chosen value model over the contralateral value model.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C143 describe rigorous statistical analysis using mixed effects models with appropriate corrections for multiple comparisons (Benjamini-Hochberg). The key finding is the absence of a sustained interaction for chosen value but presence of interaction for contralateral value, which formally distinguishes the two models. Methods are clearly described with software specified (Julia MixedModels package).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C64"
+    ],
+    "result": "Very similar modulation by both chosen value and contralateral movement was found in both VTA/SN::DMS cell bodies and terminals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C64 reports consistency across recording locations (cell bodies vs terminals), shown in Figure 3d-f. This rules out the possibility that movement selectivity is introduced at the terminal level through local inputs. The consistency strengthens confidence in the findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C144",
+      "C145",
+      "C146",
+      "C147"
+    ],
+    "result": "Multiple control analyses verified robustness of the findings: (1) time-locking to nose poke showed the same pattern with effects clearest near lever presentation latency, (2) a multiple-event kernel regression simultaneously modeling nose poke, lever presentation, and lever press produced results consistent with single-event regression, using least squares with cluster-robust covariance correction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C147 describe important control analyses that address potential confounds related to event timing. The kernel regression approach (Figure 3\u2014figure supplement 5) is sophisticated and appropriately accounts for overlapping event-related signals. Statistical methods are appropriate (cluster-robust covariance). These analyses strengthen confidence that results are not artifacts of event alignment choices.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C68",
+      "C69"
+    ],
+    "result": "In three animals with bilateral recordings, side-specific effects reversed within animal when comparing signals across hemispheres, speaking against the possibility that they reflect animal-specific idiosyncrasies such as side biases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C69 report within-animal reversal of lateralized effects (Figure 3\u2014figure supplement 6), which is a strong control against confounds like side biases or animal-specific quirks. This within-subject design provides compelling evidence that effects are truly related to contralateral movement.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C70",
+      "C93"
+    ],
+    "result": "Lever-press latency was not a strong predictor for GCaMP6f signals in both VTA/SN::DMS terminals and cell-bodies, and the effect of the original predictors largely remained the same when latency was included as a covariate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70 and C93 address whether movement vigor (proxied by lever-press latency) could explain the contralateral signals. Figure 3\u2014figure supplement 7 shows that including latency as a covariate does not substantially change the main effects, ruling out this alternative explanation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C79",
+      "C80"
+    ],
+    "result": "When signals were time-locked to lever press, there was a reversal of signal selectivity between contralateral and ipsilateral trials shortly after the lever press, coinciding with a reversal in the animal's physical movement direction (from moving toward the lever to moving back to the reward port). In contrast, there was no reversal in value modulation at the time of lever press. This dissociation indicates that movement direction, not value, explains the choice selectivity in DMS-projecting DA neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C80 report a striking dissociation: side selectivity reverses at lever press while value modulation does not (Figure 4). This temporal dissociation provides strong evidence that the lateralized signal tracks movement direction rather than value. The inference that this reflects movement reversal (toward lever, then back to reward port) is reasonable given the task structure, though the authors appropriately note that body tracking would provide more direct evidence (C113).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "Multiple lines of evidence clearly indicated that DMS-projecting DA neurons contain distinct movement- and value-related signals tied to different frames of reference. Value-related signals consistent with anticipatory RPE were observed, but because these were modulated by chosen action value (not contralateral value), they cannot explain the side-specific movement selectivity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C78 synthesize the main findings. The conclusion that movement and value signals are distinct is well-supported by: (1) value modulation being similar for both choice directions, (2) formal statistical tests showing no interaction for chosen value, (3) temporal dissociation at lever press. The evidence converges from multiple complementary analyses.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C4",
+      "C5"
+    ],
+    "result": "DMS-projecting DA neurons' signals are modulated by value (RPE), but this modulation reflects the value of the chosen action rather than the contralateral one. The value aspects of the signals (which were not lateralized) could not explain the contralateral choice selectivity, implying that choice-dependent modulation reflects modulation by contralateral movements and not value. DA signals are modulated by contralateral choice in a manner distinct from RPE, with choice encoding better explained by movement direction than by RPE.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C5 and C27-C30 state the paper's central conclusion. This is strongly supported by converging evidence: (1) value modulation is similar for both choice directions (Figures 3a,b), (2) no sustained interaction between choice and chosen value (Figure 3c), (3) temporal dissociation at lever press (Figure 4), (4) consistency across recording sites and analysis approaches. The conclusion directly addresses the paper's main question and is well-justified by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C81",
+      "C82"
+    ],
+    "result": "The authors suggest that NAcc may also have parallel movement-specific and chosen value signals based on reinterpretation of data from Syed et al. (2016), though this is noted as speculative and based on limited evidence (one timepoint).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C81-C82 involve speculative reinterpretation of another study's data. The authors appropriately acknowledge this is tentative (\"at least a hint\") and based on limited evidence. This represents hypothesis generation rather than a tested result from the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "The present analyses clearly show that side-specific signals in DMS resist explanation in terms of an extended RPE account and may instead simply reflect planned or ongoing movements. The results are consistent with the longstanding suggestion that DA signals may be important for directly initiating movement, though the correlational nature of the data cannot rule out other functions like planning or monitoring.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C87 interpret the findings in the context of DA function. The conclusion that side-specific signals resist RPE explanation is well-supported by the data. The suggestion that signals may reflect movement is reasonable but appropriately qualified as correlational (C91). The interpretation is balanced and acknowledges limitations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "Movement-related DA signals may elicit or execute contralateral movements via differentially modulating striatal pathways. This interpretation is supported by classic lesion studies showing that unilateral 6-OHDA lesions increase ipsilateral rotations and recent optogenetic studies showing that unilateral DA excitation produces contralateral rotations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C90 discuss mechanistic implications supported by appropriate citations to causal manipulation studies. While the current study is correlational, the cited literature provides relevant causal evidence. The reasoning is appropriately speculative (\"may\") given that the current data are correlational.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C91",
+      "C92"
+    ],
+    "result": "The results are correlational and cannot rule out the possibility that the activity could be related to functions other than movement execution, such as planning or monitoring. However, the main result is to rule out the possibility that neural activity is better accounted for by the motivational variable of predicted value.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C92 appropriately acknowledge the correlational nature of the study and its limitations. The statement accurately reflects what the study does and does not demonstrate. This is an important and honest assessment of the work's scope.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "The findings raise questions about how recipient synapses would distinguish RPE components from movement-related components of the DA signal. Possible explanations include that dorsal striatum plasticity may follow different rules requiring action rather than prediction error signals, or that some instrumental learning is correlational rather than error-driven. The results point to the need for an extended computational account incorporating both movement direction and RPE signals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94-C98 discuss theoretical implications and open questions raised by the findings. The questions are legitimate and the suggested possibilities are appropriately speculative, supported by relevant citations. This represents thoughtful consideration of how the findings challenge existing frameworks.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "Lateralized movement selectivity tracks choices contralateral versus ipsilateral of the recorded hemisphere (appropriate for motor control), but the value component relates to the reward expected for the chosen versus unchosen action. This chosen value modulation is suitable for a classic RPE for learning state values and is consistent with human neuroimaging showing value-related responding organized on chosen-vs-unchosen lines.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C99-C102 summarize the key finding about distinct reference frames for movement and value signals. This is well-supported by the data and appropriately contextualized with human neuroimaging literature. The interpretation that chosen value is suitable for state-value learning is reasonable and supported by citations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "While the current study finds no evidence for laterally decomposed RPEs in DMS, distinct action-specific error signals would be useful for learning about different actions, and there is evidence from human neuroimaging for contralateral error and value signals. The decomposition of error signals remains an important possibility for future work aimed at understanding heterogeneity of DA signals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C103-C105 discuss alternative theoretical frameworks and future directions. The acknowledgment that action-specific RPEs were not found in DMS but might exist elsewhere is appropriate. The suggestion for future work is reasonable and supported by relevant citations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C106",
+      "C107"
+    ],
+    "result": "Recent studies have shown that midbrain DA neurons may encode a range of behavioral variables beyond RPE and movement. The modeling framework provides a way to understand how DA signals might be interpreted in different reference frames and encode RPEs with respect to different behavioral variables.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C106-C107 place the findings in the broader context of DA heterogeneity. The citations to recent work are appropriate. The statement about the modeling framework is a reasonable interpretation of the study's contribution.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C108",
+      "C109"
+    ],
+    "result": "Results were consistent across both recording sites (cell bodies and terminals), indicating that movement selectivity is not introduced at the terminal level, for example via striatal cholinergic interneurons or glutamatergic inputs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C108-C109 draw an important mechanistic inference from the consistency across recording sites. The logic is sound: if terminals and cell bodies show the same pattern, the signal is not introduced locally at terminals. This is supported by the data in Figures 3d-f and 4b.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C110",
+      "C111",
+      "C112"
+    ],
+    "result": "An important limitation is the use of fiber photometry, which assesses bulk GCaMP6f signals rather than resolving individual neurons. Thus it remains possible that individual neurons do not multiplex the two signals observed, and that they are instead segregated between distinct populations. Future work should use higher resolution methods to examine these questions at the level of individual DA neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C110-C112 appropriately acknowledge a key methodological limitation. Fiber photometry cannot distinguish whether individual neurons multiplex both signals or whether populations are segregated. This is an honest and important caveat that does not undermine the main findings but identifies a clear direction for future work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C113",
+      "C114"
+    ],
+    "result": "A related limitation is the relatively coarse behavioral monitoring. The reversal in selectivity at lever press is inferred to reflect a change in movement direction, but head tracking would be required to verify this more directly. Future work with finer instrumentation could usefully dissect signal components related to finer-grained movements and examine how these are related to or dissociated from value signals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C113-C114 acknowledge another important limitation: the inference about movement direction reversal is based on task structure rather than direct measurement. This is an honest assessment that identifies a clear improvement for future studies. The inference is reasonable but appropriately qualified.",
+    "result_type": "MINOR"
+  }
+]

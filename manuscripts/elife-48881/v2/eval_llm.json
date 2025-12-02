@@ -1,0 +1,281 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C25",
+      "C31",
+      "C32",
+      "C33",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114"
+    ],
+    "result": "The study recorded 333 units and local field potentials simultaneously from the limbic thalamus (primarily reuniens and ventromedial nuclei), mPFC, and CA1 in 8 male Long-Evans rats during sleep and, in some sessions, spatial exploration. Recordings were performed using multielectrode arrays with up to 21 nichrome wire tetrodes, with sessions lasting at least 3 hours. In six sessions from three rats, animals explored a radial maze after sleep recording, with at least 30 minutes of sleep recorded before and after behavior.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The methodological claims are well-documented with specific details about animal subjects (C103), recording equipment (C105), electrode placement (C3, C25, C33), sample sizes (C31), and experimental protocols (C32, C106-C114). The methods are described with sufficient detail for reproducibility, including ethical approval (C104), recording parameters (C108-C109), and behavioral protocols (C110-C114).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "Non-REM sleep periods were characterized by large transient deflections in the mPFC LFP (K-complexes), with SWRs preferentially occurring following and preceding KCs. SWRs were phase-locked to the peaks of the delta-filtered LFP (circular mean = -0.04 \u00b1 0.43 rad) and to the troughs and ascending phase of spindle cycles (circular mean = -1.72 \u00b1 0.93 rad) across 23 sessions from six rats.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims describe the temporal and phase relationships between sleep oscillations with quantitative phase-locking data (C36, C37). The findings are consistent with prior literature (C17) and are supported by peri-event histogram analyses and phase-locking calculations. The statistical measures and sample sizes are clearly reported.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "Thalamic units showed reduced average firing rate during sleep compared to wakefulness (10.10 \u00b1 4.26 spikes/s during wakefulness to 7.73 \u00b1 3.09 spikes/s during sleep, p=1.31\u00d710\u207b\u2076, n=40 units). The percentage of spikes in bursts increased significantly during sleep (4.60 \u00b1 7.97% during wakefulness to 18.65 \u00b1 15.3% during sleep, p=1.8\u00d710\u207b\u2077), with the increase more pronounced around the time of CA1 SWRs (25.52 \u00b1 17.29% of spikes in bursts).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The claims are supported by quantitative data with appropriate statistical tests (Wilcoxon signed rank, Kruskal-Wallis) and clear sample sizes (C39, C42, C43). The burst detection criterion is based on established physiological properties of T-type calcium channels (C40, C41), providing mechanistic support for the interpretation of increased bursting as indicative of thalamic hyperpolarization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "55.32% of thalamic units showed a reduction in firing of more than two standard deviations in a 200 ms window around SWRs, while 90.18% of CA1 units increased their firing by 19.85 \u00b1 18.65 sd. Generalized linear models showed that firing in CA1 varied inversely with the firing of most thalamic units (61.7%, p<0.001), predicting an average increase of 20.74% in the rate of SWRs for every one spike/s drop in thalamic firing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The claims are supported by both peri-event histogram analyses (C44, C45) and complementary GLM analyses (C46, C47). The use of two independent analytical approaches strengthens the conclusion of anti-correlated activity between thalamus and CA1. Statistical significance is clearly reported with appropriate tests and sample sizes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "Thalamic units fired asymmetrically with respect to K-complexes, with stronger firing in the few hundred milliseconds after mPFC KCs compared to before (2.48 sd at 274.76 \u00b1 135.33 ms after vs. 1.28 sd at 263.31 \u00b1 145.31 ms before, n=31 units). 38.71% of thalamic cells increased their activity above two sd following KCs (down-to-up state transition), compared to only 9.68% with a significant peak preceding KCs. The asymmetry index was biased to positive values for thalamic units (0.24 \u00b1 0.22) but uniformly distributed for mPFC (-0.004 \u00b1 0.47) and CA1 (-0.06 \u00b1 0.5) units.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The claims demonstrate a specific temporal pattern of thalamic activation following the down-state of the slow oscillation, supported by quantitative peri-KC histogram analyses (C48, C49) and a novel asymmetry index metric (C50). The differential response of thalamic units compared to mPFC and CA1 units strengthens the interpretation of a specific thalamic role in the down-to-up state transition.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "84.62% of CA1 tetrodes showed increased spike activity in the \u00b1100 ms window of peri-spindle-trough histograms, compared to 53.3% in mPFC and 36% in thalamus. Autocorrelations of thalamic units did not show strong peaks at spindle frequency intervals (50-150 ms), with the peak of MUA autocorrelation occurring at 119.30 \u00b1 78 ms versus 223.60 \u00b1 113.30 ms for individual units (p<0.001). 33% of thalamic unit pairs showed peaks above three standard deviations in their cross-correlograms (average peak z-score 2.40 \u00b1 1.21 sd, n=39 pairs).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The claims demonstrate sparse firing of individual thalamic units during spindles despite population-level modulation, supported by autocorrelation analyses (C52, C53) and cross-correlogram analyses (C54). The finding that MUA shows spindle-frequency rhythmicity while individual units do not is a key observation supporting the sparse synchronicity hypothesis. The statistical comparisons are appropriate and sample sizes are clearly reported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C80"
+    ],
+    "result": "The majority of thalamic units (67.74% of n=31 units) showed preferential firing at the descending phases of the spindle-filtered mPFC LFP (circular mean 0.77 \u00b1 1.15 rad, p<0.05, Rayleigh test). Thalamic units were also phase-locked to the mPFC delta band, closer to the positive peak of the oscillation (64.52%, p<0.05, circular mean 0.30 \u00b1 1.04 rad). Pairs of thalamic cells were consistently phase-locked to the mPFC LFP within the period of spindle oscillations, suggesting that individual spindle cycles organize the activation of different thalamocortical ensembles at consistent phase lags.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The phase-locking claims are supported by appropriate circular statistics (Rayleigh test) with clear reporting of mean phase directions and concentration parameters (C55, C56). The finding of consistent phase relationships between thalamic unit pairs (C80) is supported by cross-correlogram and phase-lag analyses. The use of two complementary methods for phase estimation (Hilbert transform and peak-trough interpolation) strengthens the reliability of the findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C57",
+      "C58"
+    ],
+    "result": "Spindle cycles with ripple power above the median were slightly shorter in duration (102.17 \u00b1 2.01 ms vs. 103.22 \u00b1 2.35 ms, p<0.05 in 65% of sessions) and larger in amplitude (229.21 \u00b1 102.14 \u00b5V vs. 219.47 \u00b1 94.32 \u00b5V, p<0.05 in 85% of sessions). 64.52% of thalamic units (n=31) showed increased modulation index in spindle cycles with ripple power above the median.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While the claims report differences in spindle cycle properties and thalamic modulation with ripple power, the statistical significance is inconsistent. The duration and amplitude differences were significant in individual sessions but not across sessions (p=0.11 and p=0.54 respectively, C57). The modulation index increase in thalamic units (C58) is reported as a percentage but lacks a statistical test for significance. The biological significance of these small differences is unclear.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "All sessions showed an increase in SWR amplitude and rate during sleep after maze exploration, as well as an increase in KC amplitude (p=0.03). There was a significant increase in CA1 SWR power within spindle cycles after behavior (p=0.03). CA1 units active during maze exploration were more likely to be active within spindle cycles with high ripple power (p=0.009 for mean number of spikes, p=0.039 for percent of spindle cycles) and showed significantly higher peaks in peri-SWR histograms (5.09 \u00b1 4.23 spikes/s vs. 2.34 \u00b1 2.09 spikes/s, p<10\u207b\u00b2). Spikes from units active during run that occurred in SWRs nested in spindles showed preferential phases of the spindle oscillation (circular mean = -1.48 \u00b1 1.33, concentration = 0.63 \u00b1 0.32, mean p=0.027 \u00b1 0.05, n=27 units).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The claims demonstrate experience-dependent changes in sleep oscillations and selective engagement of task-relevant CA1 cells, supported by appropriate statistical tests (Wilcoxon signed rank, Mann-Whitney U-test, Rayleigh test) with clear sample sizes (C59-C63). The finding that units active during behavior show enhanced participation in SWR-spindle events with phase-locking to spindles provides strong evidence for experience-dependent memory consolidation processes. The use of control sessions without maze exploration strengthens the interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C64",
+      "C65"
+    ],
+    "result": "Thalamic units did not show significant changes induced by maze exploration (n=9). On average, 60% of CA1 units fired more spikes in high-ripple power spindle cycles after exploration compared to before (p=0.12), with a trend for increased CA1 unit involvement in spindles after maze exploration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The lack of significant changes in thalamic units (C64) is based on a small sample size (n=9), which may be underpowered to detect effects. The trend for increased CA1 involvement (C65) does not reach statistical significance (p=0.12), making it uncertain whether this represents a true effect or sampling variability. The authors acknowledge the possibility that tasks with stronger memory demands might reveal thalamic modulation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C29",
+      "C30"
+    ],
+    "result": "The cycles of neocortical spindles coordinate CA1 SWRs with sparse but consistent activation of thalamic units. Thalamic units were phase-locked to delta and spindles in mPFC and fired at consistent lags with other thalamic units within spindles, while CA1 units active during spatial exploration were engaged in SWR-coupled spindles after behavior. The study provides evidence for a dual role of the thalamus: an increase in thalamic firing at the down-to-up state transition, and sparse but consistent firing of thalamic cells within individual spindles suggesting interleaved activation of thalamocortical synapses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These are the primary findings of the study, synthesizing multiple lines of evidence from phase-locking analyses (C5), cross-correlogram analyses (C6), behavioral modulation (C7), and peri-event histograms (C29). The claims are supported by convergent evidence from multiple analytical approaches and are consistent with the detailed results presented in other claim groups. The interpretation of sparse but consistent firing (C30) is supported by the autocorrelation and cross-correlogram data showing that individual units fire sparsely but pairs of units show consistent temporal relationships.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C8",
+      "C66",
+      "C67",
+      "C68",
+      "C71",
+      "C72",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C87"
+    ],
+    "result": "The authors propose that sparse thalamic firing could promote incremental integration of recently acquired memory traces into neocortical schemas through interleaved activation of thalamocortical cells. They hypothesize that the decrease in thalamic firing with SWRs could facilitate information transfer between hippocampus and neocortex by reducing interference, that spindles provide protected functional windows for memory consolidation computations, and that sparse activation could prevent plasticity saturation while facilitating continuous learning.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "These claims represent speculative interpretations and hypotheses based on the observed data (C8, C66-C68, C71-C72, C75-C78, C81-C84, C87). While the hypotheses are plausible and consistent with the data, they are not directly tested in this study. The proposed mechanisms for how sparse thalamic firing promotes memory consolidation, prevents plasticity saturation, and facilitates generalization are theoretical frameworks that would require additional experiments to validate. The authors appropriately present these as hypotheses rather than established findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "The study is motivated by established knowledge about sleep oscillations and memory consolidation, including the role of hippocampal-neocortical interactions during non-REM sleep, the generation of spindles in the thalamus, and the coupling between non-REM oscillations and memory consolidation. However, the role of the thalamus in memory consolidation during non-REM sleep, particularly the role of spindles in gating and coordinating communication between hippocampus and neocortex, remains poorly understood at the cellular and systems level.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims establish the scientific context and rationale for the study, drawing on well-established findings from prior literature (C1, C9-C18, C20-C24, C26-C28) and identifying gaps in current knowledge (C2, C19). The claims are appropriately supported by citations to relevant prior work. The identification of the knowledge gap regarding thalamic involvement in hippocampal-neocortical communication during sleep provides clear justification for the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C73",
+      "C74",
+      "C79",
+      "C85",
+      "C86",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C96",
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "The discussion contextualizes the findings within broader literature on thalamic function, memory consolidation, synaptic plasticity, and neuropsychiatric disorders. This includes the role of thalamic bursting in stimulus detection and learning, the temporal similarity between SWR and spindle durations and their relationship to spike-timing-dependent plasticity, the role of specific thalamic nuclei (RE, MD) in memory, and the disruption of thalamocortical oscillations in neuropsychiatric disorders.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims provide important context for interpreting the study's findings by connecting them to established literature on thalamic physiology (C69-C70), synaptic plasticity (C73-C74), sparse coding in neural networks (C79, C85), memory systems (C86, C88-C94), and clinical relevance (C96-C99). All claims are appropriately supported by citations to relevant prior work. This contextual information helps frame the significance of the current findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C95",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "The authors propose that dynamic engagement in spindle oscillations could control which cell populations undergo synaptic strength changes, that a careful balance in excitatory and inhibitory thalamic networks is required for appropriate synchronicity, that rebound activation of thalamic cells following down-states could facilitate up-state dynamics, and that enhancement of spindle-CA1 activity relative to spindle-thalamic activity following spatial experience could bias transmission in CA1-mPFC compared to thalamo-mPFC pathways.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "These claims represent additional speculative interpretations about mechanisms and functional consequences of the observed patterns (C95, C101, C102). While they are plausible hypotheses consistent with the data, they are not directly tested. The statement about the need for balance in thalamic networks (C100) is a general principle but lacks specific evidence from this study. These hypotheses would require targeted experimental manipulations to validate.",
+    "result_type": "MINOR"
+  }
+]

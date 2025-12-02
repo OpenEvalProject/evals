@@ -1,0 +1,1948 @@
+{
+  "submission": {
+    "id": "f57c8411-3645-4374-8a0a-4b9a8952fc51",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T12:39:48.634319Z",
+    "updated_at": "2025-12-02T12:39:48.634319Z"
+  },
+  "content": [
+    {
+      "id": "0633dde9-c26f-40ba-90a7-3873a6d2f63d",
+      "submission_id": "f57c8411-3645-4374-8a0a-4b9a8952fc51",
+      "content_type": "manuscript",
+      "content_text": "# Mitochondrial fusion is required for spermatogonial differentiation and meiosis\n\n## Authors\n\n- Grigor Varuzhanyan<sup>1</sup> ([ORCID: 0000-0001-6165-0857](https://orcid.org/0000-0001-6165-0857))\n- Rebecca Rojansky<sup>1</sup>\n- Michael J Sweredoski<sup>2</sup> ([ORCID: 0000-0003-0878-3831](https://orcid.org/0000-0003-0878-3831))\n- Robert LJ Graham<sup>2</sup>\n- Sonja Hess<sup>2</sup>\n- Mark S Ladinsky<sup>1</sup>\n- David C Chan<sup>1</sup> ([ORCID: 0000-0002-0191-2154](https://orcid.org/0000-0002-0191-2154)) \u2020\n\n### Affiliations\n\n1. Division of Biology and Biological Engineering California Institute of Technology Pasadena United States\n2. Proteome Exploration Laboratory of the Beckman Institute California Institute of Technology Pasadena United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nDifferentiating cells tailor their metabolism to fulfill their specialized functions. We examined whether mitochondrial fusion is important for metabolic tailoring during spermatogenesis. Acutely after depletion of mitofusins Mfn1 and Mfn2, spermatogenesis arrests due to failure to accomplish a metabolic shift during meiosis. This metabolic shift includes increased mitochondrial content, mitochondrial elongation, and upregulation of oxidative phosphorylation (OXPHOS). With long-term mitofusin loss, all differentiating germ cell types are depleted, but proliferation of stem-like undifferentiated spermatogonia remains unaffected. Thus, compared with undifferentiated spermatogonia, differentiating spermatogonia and meiotic spermatocytes have cell physiologies that require high levels of mitochondrial fusion. Proteomics in fibroblasts reveals that mitofusin-null cells downregulate respiratory chain complexes and mitochondrial ribosomal subunits. Similarly, mitofusin depletion in immortalized spermatocytes or germ cells in vivo results in reduced OXPHOS subunits and activity. We reveal that by promoting OXPHOS, mitofusins enable spermatogonial differentiation and a metabolic shift during meiosis.\n\n## Introduction\n\nThe first mitochondrial fusion gene, fuzzy onions (fzo), was discovered in 1997 in a Drosophila melanogaster mutant exhibiting male sterility (Hales and Fuller, 1997). During early spermatid development in flies, mitochondria aggregate and fuse to become two giant organelles that wrap around each other to form the Nebenkern (Fuller, 1993). Mutations in fzo abolish mitochondrial fusion in spermatids, resulting in a morphologically aberrant Nebenkern and sterility. The reason for this stage-specific fusion event and how mitochondrial fusion promotes male fertility in Drosophila are unknown.\n\nFzo is the founding member of an evolutionarily conserved family of mitochondrial fusion proteins known as the mitofusins (Mfns). In humans, there are two homologs known as MFN1 and MFN2 (Santel and Fuller, 2001). Fusion acts as a major quality control mechanism for mitochondria by enabling mixing of matrix components and promoting their homogenization (Chan, 2012). In the absence of fusion, mitochondria diverge, become functionally heterogenous, and mitochondrial DNA (mtDNA) and oxidative phosphorylation (OXPHOS) are diminished (Chen et al., 2005; Chen et al., 2003; Chen et al., 2007; Chen et al., 2010; Weaver et al., 2014). Mitochondrial fusion also affects mitochondrial transport and degradation (Chen et al., 2003; Gomes et al., 2011; Kandul et al., 2016; Misko et al., 2010; Rambold et al., 2011).\n\nIn mammals, spermatogenesis is a cyclical process that involves differentiation of spermatogonia into spermatocytes, which undergo meiosis to form haploid spermatids and ultimately spermatozoa (Griswold, 2016). Throughout this process, germ cells differentiate in intimate association with nursing Sertoli cells. In addition to providing differentiation cues and metabolites for the developing germ cells, Sertoli cells form the blood-testis barrier (BTB) that separates the seminiferous epithelium into the basal (towards the periphery) and apical (towards the lumen) compartments (Stanton, 2016). Spermatogonia reside within the basal compartment and are comprised of both undifferentiated and differentiating cells. Undifferentiated spermatogonia constitute a dynamic and heterogeneous population that includes the self-renewing stem cell pool (de Rooij, 2017; Lord and Oatley, 2017). Differentiating spermatogonia give rise to spermatocytes that cross the BTB and complete meiosis. After two meiotic divisions, each spermatocyte produces four haploid spermatids that transform into the specialized sperm cells capable of fertilization.\n\nSeveral observations in humans and mice illustrate the importance of mitochondrial function during spermatogenesis. Some patients with mtDNA disease have sperm defects (Demain et al., 2017; Folger\u00f8 et al., 1993), and sperm from some infertile males harbor mtDNA mutations (Baklouti-Gargouri et al., 2014; Carra et al., 2004; Kao et al., 1995; Lestienne et al., 1997). Mouse models with a pathogenic mtDNA deletion exhibit spermatogenic arrest during the zygotene stage of Meiotic Prophase I (MPI) (Nakada et al., 2006). Furthermore, a mouse model that is unable to utilize mitochondrial ATP exhibits spermatogenic arrest during the leptotene stage of MPI (Brower et al., 2009). Finally, mouse models that accumulate mtDNA mutations exhibit male infertility (Jiang et al., 2017; Kujoth et al., 2005; Trifunovic et al., 2004). Much less is known about the role of mitochondrial dynamics in male fertility. The Drosophila homolog of mitofusin (dMfn) was recently shown to regulate lipid homeostasis and maintenance of germline stem cells in the testis (S\u00eanos Demarco et al., 2019), A clinical study found that low Mfn2 expression in sperm is associated with asthenozoospermia (reduced sperm motility) and reduced sperm mitochondrial membrane potential (Fang et al., 2018). Finally, Mfn1 is required for spermatogenesis in the mouse (Zhang et al., 2016), but the precise stage of the defect as well as the role of Mfn2 remain unknown. To clarify the role of mitochondrial fusion during male germ cell development, we deleted Mfn1, Mfn2, and both Mfn1 and Mfn2 from the male germline and examined all stages of spermatogenesis. Our results show that mitochondrial fusion is required for spermatogonial differentiation and a metabolic shift during meiosis.\n\n## Results\n\n### Mitofusins are essential for mouse spermatogenesis\n\nTo investigate the role of mitofusins during male germ cell development, we removed Mfn1, Mfn2, or both Mfn1 and Mfn2 from the male germline by combining the previously described conditional alleles of Mfn1 and Mfn2 with the male germline-specific Stra8-Cre driver (Chen et al., 2003; Chen et al., 2007; Sadate-Ngatchou et al., 2008). We designate these mice as S8::Mfn1, S8::Mfn2, and S8::Dm (double mutant), respectively, and compared them with age-matched, wild-type (WT) littermates. Our mating scheme also incorporated the conditional Rosa26PhAM allele, which encodes a mitochondrially-targeted, photo-activatable fluorescent protein, mito-Dendra2 (Pham et al., 2012). mito-Dendra2 served as a Cre reporter to label the mitochondrial matrix selectively in germ cells. With histological analysis of testis sections, we verified that mito-Dendra2 is restricted to the male germline and absent from the intimately associated Sertoli and interstitial cells (Figure 1\u2014figure supplement 1). Stra8-Cre expression is reported to begin at post-natal day 3 (P3) in undifferentiated spermatogonia (Sadate-Ngatchou et al., 2008), including the majority of early stem-like GFR\u03b11-positive spermatogonia (Hobbs et al., 2015). Consistent with this, our examination of the mito-Dendra2 Cre reporter clearly demonstrated excision in all germ cell types, including the vast majority of GFR\u03b11-expressing spermatogonia (Figure 1\u2014figure supplement 2).\n\nAll three mitofusin-deficient mouse lines were healthy and showed no changes in weight (Figure 1\u2014figure supplement 3). However, they had obviously smaller testes compared with controls (Figure 1A and B), suggesting an essential role for mitochondrial fusion during spermatogenesis. Indeed, there is significant reduction of spermatozoa in the epididymides of S8::Mfn1 and S8::Mfn2 mice, with the defect more severe with loss of Mfn1 (Figure 1C and D). The residual spermatozoa in both mutant lines often display mitochondrial fragmentation and reduced mitochondrial content (Figure 1E and F). Mutant spermatozoa also exhibit morphological defects, particularly kinking near or in the midpiece (Figure 1E and G), and almost a complete loss of motility (Figure 1H; Videos 1\u20133). S8::Dm mice have the smallest testes (Figure 1A and B) and strikingly, a complete absence of epididymal spermatozoa (Figure 1C and D). These results indicate an essential role for mitofusins in mammalian spermatogenesis.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/51601/elife-51601-fig1-v4.jpg)\n\n**Figure 1.:** (A) Comparison of testicular size in mice of the indicated genotype. Tissues have been fixed with Bouin\u2019s solution, which gives them the yellow appearance. Scale bar, 0.5 cm. (B) Testes weight measurements from adult P56 mice. Both organs were used. N\u00a0\u2265\u00a07. (C) Epididymal sperm count. Note that S8::Dm mice do not produce any sperm. N\u00a0\u2265\u00a06. (D) Histological analysis of sperm in cauda epididymis sections. Mature sperm are identified by the rod-like mito-Dendra2 (Dn) signal (green) in the midpiece. Nuclei are labeled with DAPI (blue). Scale bars, 50 \u00b5m. (E) Morphological comparison of isolated caudal spermatozoa. Mitochondria are labeled with mito-Dendra2. Note that mutant sperm have patchy, fragmented mitochondria and sharp kinking near or in the midpiece. Scale bar, 5 \u00b5m. (F\u2013H) Quantification of mitochondrial morphology (F), sperm morphology (G), and motility (H). N\u00a0\u2265\u00a03. For more information on motility, see Videos 1\u20133. All data are from adult P56 mice. Data are represented as mean\u00a0\u00b1\u00a0SEM. ****p\u22640.0001; ***p\u22640.001; **p\u22640.01; *p\u22640.05. For statistical tests used, see Material and Methods section.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/51601/elife-51601-fig1-figsupp1-v4.jpg)\n\n**Figure 1\u2014figure supplement 1.:** Note that the classical Sertoli cell projections contain Tom20 (a marker of the mitochondrial outer membrane), but not the germ cell-specific mito-Dendra2. Some of these projections are underlined in yellow. Scale bar, 20 \u00b5m.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/51601/elife-51601-fig1-figsupp2-v4.jpg)\n\n**Figure 1\u2014figure supplement 2.:** (A) Cre activity in undifferentiated spermatogonia.Mitochondria are labeled with mito-Dendra2 (Dn) (green); total undifferentiated spermatogonia are labeled with an antibody against PLZF (white); stem-like spermatogonia are labeled with an antibody against GFR\u03b11 (red); and nuclei are labeled with DAPI (blue). The mito-Dendra2 allele requires Stra8-Cre-mediated excision for expression. Scale bar, 20 \u00b5m. (B) Quantitation of Stra8-Cre/Dn expression in GFR\u03b11 stem-like spermatogonia from testis sections. N\u00a0=\u00a03. A total of 150 cells were counted. Data are represented as mean\u00a0\u00b1\u00a0SEM. For statistical tests used, see the Materials and methods section.\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/51601/elife-51601-fig1-figsupp3-v4.jpg)\n\n**Figure 1\u2014figure supplement 3.:** N\u00a0\u2265\u00a07. All data are from P56 mice. Data are represented as mean\u00a0\u00b1\u00a0SEM. For statistical tests used, see the Materials and methods section.\n\n![Video 1.](https://cdn.elifesciences.org/articles/51601/elife-51601-video1.mp4.jpg)\n\n![Video 2.](https://cdn.elifesciences.org/articles/51601/elife-51601-video2.mp4.jpg)\n\n![Video 3.](https://cdn.elifesciences.org/articles/51601/elife-51601-video3.mp4.jpg)\n\n### Mitofusins are essential for meiosis\n\nTo identify the specific stage(s) of the spermatogenic defect in mitofusin-deficient mice, we first analyzed juvenile mice at P24, before the completion of the first round of spermatogenesis. Even at this early time point, mutant mice have substantially smaller testes compared with control (Figure 2A). We performed Periodic Acid-Schiff (PAS) staining in testis sections and found that mutant seminiferous tubules are narrower in diameter, sparsely populated, and contain numerous Sertoli cell vacuolizations (Figure 2B). Whereas most control seminiferous tubules are packed with round spermatids, S8::Dm tubules have almost a complete absence of post-meiotic spermatids, indicative of an inability to complete meiosis.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/51601/elife-51601-fig2-v4.jpg)\n\n**Figure 2.:** (A) Testes weight measurements from juvenile P24 mice. N\u00a0\u2265\u00a03. (B) Periodic Acid-Schiff (PAS) histology testis sections. Note the absence of post-meiotic spermatids in S8::Dm tubules. Scale bars, 50 \u00b5m. On the right are stylized depictions of the 100X panels. SG, spermatogonium; SC, spermatocyte; ST, spermatid, Lum, lumen; Ser, Sertoli cell cytoplasm. (C) Analysis of the major germ cell types in WT and mutant testis sections. For clarity, the borders of mutant seminiferous tubules are outlined by dashed lines. The markers used are indicated. Scale bar, 20 \u00b5m. Dn, mito-Dendra2. (D) Doughnut graphs tabulating the most differentiated cell type found in seminiferous tubule cross sections. For p-values, see Figure 2\u2014figure supplement 1, which shows the same data displayed as bar charts. N\u00a0=\u00a04. (E) Quantification of germ cells in seminiferous tubule cross sections. Mutant values are plotted relative to control, which is set at 100% and indicated by the gray bar. There is an upward trend from differentiated spermatogonia to the leptotene/zygotene stage, but this difference was not statistically significant. N\u00a0=\u00a04. (F) Representative images of chromosomal spreads from WT spermatocytes in meiotic prophase I (MPI). Mutant meiotic spreads had no obvious chromosomal abnormalities. Scale bar, 20 \u00b5m. (G) Quantification of MPI substages from chromosomal spreads. In the mutant, note the bottleneck at the zygotene-to-pachytene transition. N\u00a0=\u00a04. (H) Schematic of normal spermatogenesis (left), and the meiotic defect in mutants (right). ST, spermatid; MPI, Meiotic Prophase I; SC, spermatocyte; P/D, pachytene/diplotene; L/Z, leptotene/zygotene; SG, spermatogonium. All data are from P24 juvenile mice. Data are represented as mean\u00a0\u00b1\u00a0SEM. ****p\u22640.0001; ***p\u22640.001; **p\u22640.01; *p\u22640.05. For statistical tests used, see the Materials and methods section.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/51601/elife-51601-fig2-figsupp1-v4.jpg)\n\n**Figure 2\u2014figure supplement 1.:** statistical significance.ST, spermatid; P/D, pachytene/diplotene; L/Z, leptotene/zygotene; SG, spermatogonium. N\u00a0=\u00a04. Data are represented as mean\u00a0\u00b1\u00a0SEM. ****p\u22640.0001; ***p\u22640.001; *p\u22640.05. For statistical tests used, see the Materials and methods section.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/51601/elife-51601-fig2-figsupp2-v4.jpg)\n\n**Figure 2\u2014figure supplement 2.:** (A) PAS-stained testis sections from the indicated genotypes.\u00a0Note the absence of spermatids in S8::Mfn1 tubules. Scale bar, 50 \u00b5m. (B) Chromosome spread analysis in the indicated genotypes. Note the meiotic block in S8::Mfn1 but not S8::Mfn2 mice. N\u00a0=\u00a06. Data are represented as mean\u00a0\u00b1\u00a0SEM. **p\u22640.01; *p\u22640.05. For statistical tests used, see the Materials and methods section.\n\nTo confirm this meiotic defect, we categorized all germ cell types using molecular markers in PFA-fixed, frozen sections (Figure 2C\u20132E and Figure 2\u2014figure supplement 1). Haploid spermatids were identified with an antibody against SP-10 (Osuru et al., 2014), which marks the spermatid acrosome (Figure 2C). Spermatocytes in Meiotic Prophase I (MPI) were identified using an antibody against histone \u03b3H2AX (Hamer et al., 2003), which distinctively labels the various substages of MPI. Differentiated and undifferentiated spermatogonia were labeled using antibodies against c-Kit (Rossi, 2013) and PLZF (Buaas et al., 2004; Costoya et al., 2004), respectively. First, we scored seminiferous tubules based on the most differentiated cell type they contained (Figure 2D and S2A). As expected for the P24 time point, the majority of control seminiferous tubules (87 \u00b1 6%) contained germ cells differentiated up to the spermatid stage, and the remaining tubules (13 \u00b1 6%) contained cells differentiated up to pachytene/diplotene. In contrast, the majority of seminiferous tubules from P24 S8::Dm mice contained cells differentiated only up to the leptotene/zygotene stage (55 \u00b1 2%), indicating a meiotic defect during early MPI. While some mutant seminiferous tubules contained cells differentiated up to the pachytene (22 \u00b1 3%) and spermatid (14 \u00b1 14%) stages (Figure 2D), these cell types were depleted to less than 20% compared with control (Figure 2E).\n\nTo better characterize the meiotic defect, we performed chromosomal spreading of isolated germ cells and scored with \u03b3H2AX and SCP3, which mark double stranded breaks (DSBs) and the synaptonemal complex that forms between homologous chromosomes, respectively. Using this assay, we could visualize individual chromosomes and thus distinguish between all substages of MPI: leptotene, zygotene, pachytene, and diplotene (Figure 2F). Consistent with data from testis sections, we found that S8::Dm mice have a reduction of pachytene and diplotene spermatocytes and an abundance of both leptotene and zygotene cells, pinpointing the meiotic defect to the zygotene-to-pachytene transition (Figure 2G). There were no obvious chromosomal abnormalities in S8::Dm mice. To check whether loss of either mitofusin alone was sufficient to block meiosis, we performed histology and chromosomal spreading in S8::Mfn1 and S8::Mfn2 mice (Figure 2\u2014figure supplement 2). We found that loss of Mfn1 alone was sufficient to cause a similar defect in meiosis, resulting in accumulation of spermatocytes in the leptotene and zygotene stages, and reduced production of spermatids. In contrast, S8::Mfn2 mice had normal progression through MPI at P24. Because Stra8-Cre-mediated excision occurs in all germ cell types, including spermatogonia that give rise to meiotic spermatocytes, our results demonstrate that MPI is the most sensitive stage of spermatogenesis to disruption of mitochondrial fusion (Figure 2H).\n\n### Mitofusins are required for a metabolic shift during meiosis\n\nGiven the MPI abnormality in fusion-deficient mice, we wondered whether mitochondria show any special features during this stage of spermatogenesis. We quantified mitochondrial content in meiotic spermatocytes by measuring mito-Dendra2 fluorescence in immunolabeled testis sections. In P24 WT mice, we found that pachytene/diplotene cells contained over three times more mitochondrial signal compared with leptotene/zygotene spermatocytes (Figure 3A and B). Pachytene/diplotene spermatocytes are much sparser in S8::Dm mutant animals, but when present, these cells have less than half the mitochondrial content found in WT animals (Figure 3B). To better visualize mitochondrial morphology during MPI, we performed meiotic spreading and immunostained against the outer mitochondrial membrane marker Tom20. We found that WT pachytene/diplotene spermatocytes, compared with leptotene/zygotene spermatocytes, contain elongated and highly clustered mitochondria (Figure 3C and D). Thus, spermatocytes in P24 S8::Dm mice arrest in spermatogenesis just before the increased mitochondrial biogenesis, elongation, and clustering that occurs in pachytene/diplotene. Furthermore, S8::Dm spermatocytes that do make it to the pachytene/diplotene stage have less mitochondrial content and their mitochondria are more fragmented (Figure 3C and D).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/51601/elife-51601-fig3-v4.jpg)\n\n**Figure 3.:** (A) Analysis of mitochondrial content in MPI spermatocytes from testis sections. Mitochondria were visualized by mito-Dendra2 (Dn). \u03b3H2AX staining was used to distinguish pachytene/diplotene spermatocytes from leptotene/zygotene spermatocytes, as in Figure 2C. For clarity, the border of the mutant seminiferous tubule is outlined by a dashed line. Scale bar, 20 \u00b5m. (B) Quantification of mito-Dendra2 fluorescence in spermatocytes in testis sections. N\u00a0=\u00a04. (C) Analysis of mitochondrial morphology from meiotic spreads in WT spermatocytes. Mitochondria were visualized with the outer mitochondrial membrane marker, Tom20, and the stages of meiosis were distinguished by \u03b3H2AX staining. Note the clustering and elongation in Pachytene/Diplotene spermatocytes. Scale bar, 10 \u00b5m. (D) Analysis of mitochondrial morphology in S8::Dm spermatocytes. Note the fragmented mitochondrial morphology in Pachytene/Diplotene. Scale bar, 10 \u00b5m. (E) Selective expression of the mitochondrial pyruvate carrier, MPC1, in WT spermatocytes. The basement membrane at the tubule periphery is indicated by the yellow dashed line. The fluorescence of mitochondria within the boxed region were analyzed by line scanning (right). Arbitrary units, au. Scale bar, 10 \u00b5m. (F) Comparison of oxygen consumption rates (OCR) from diploid versus tetraploid germ cells from WT adult testes (2\u20133 months). Germ cells were isolated by FACS and oxygen consumption analyzed with a Seahorse extracellular flux analyzer. 2N, diploid; 4N, tetraploid; Oligo, Oligomycin; CCCP, Carbonyl cyanide m-chlorophenyl hydrazine; Ant A, Antimycin A. The average values from three separate experiments are plotted. SC, spermatocyte; P/D, pachytene/diplotene; L/Z, leptotene/zygotene; SG, spermatogonium. All data are from P24 mice unless otherwise noted. All data are from P24 mice. Data are represented as mean\u00a0\u00b1\u00a0SEM. ***p\u22640.001; *p\u22640.05. For statistical tests used, see Material and methods section.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/51601/elife-51601-fig3-figsupp1-v4.jpg)\n\n**Figure 3\u2014figure supplement 1.:** Scale bars, 20 \u00b5m.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/51601/elife-51601-fig3-figsupp2-v4.jpg)\n\n**Figure 3\u2014figure supplement 2.:** The average values from three independent experiments are plotted. Data are represented as mean\u00a0\u00b1\u00a0SEM. *p\u22640.05. For statistical tests used, see the Materials and methods section.\n\nAs spermatocytes initiate meiosis, they cross the blood-testis-barrier (BTB) and become dependent on lactate secreted by Sertoli cells for energy production (Boussouar and Benahmed, 2004). Lactate is oxidized to pyruvate and transported into mitochondria to fuel OXPHOS (Vanderperre et al., 2016). We therefore examined whether meiotic spermatocytes, relative to spermatogonia, have higher expression of the mitochondrial pyruvate carrier, MPC1. Indeed, we find that while pachytene/diplotene spermatocytes have strong expression of MPC1, spermatogonia have little to no MPC1 protein (Figure 3E).\n\nThe increased mitochondrial mass and upregulation of MPC1 in pachytene/diplotene spermatocytes suggest that spermatocytes have high OXPHOS utilization compared with pre-meiotic spermatogonia. To test this directly, we used established flow cytometry methods (Bastos et al., 2005) to isolate diploid spermatogonia and tetraploid MPI spermatocytes from WT dissociated seminiferous tubules, confirmed their identities by immunostaining (Figure 3\u2014figure supplement 1), and measured their OXPHOS activities using a Seahorse extracellular flux analyzer (Figure 3F). Indeed, compared with diploid spermatogonia, tetraploid spermatocytes have substantially greater maximal respiration and spare respiratory capacity, and a modest increase in basal respiration and ATP production (Figure 3F and Figure 3\u2014figure supplement 2). Taken together, our findings indicate that mitochondrial fusion is required for a metabolic shift during meiosis.\n\n### Long-term mitofusin loss results in depletion of all differentiated germ cell types\n\nTo examine the long-term effects of mitofusin loss, we analyzed adult mice at P56. By this time, the testes have undergone repeated rounds of spermatogenesis and should have more complete depletion of mitofusins. PAS-stained testis sections from P56 S8::Dm mice showed greater germ cell depletion and more widespread Sertoli cell vacuolization (Figure 4A) compared with P24 mutants. This severe depletion of germ cells was confirmed by flow cytometry, which showed an 80% loss of mito-Dendra2-positive cells from dissociated S8::Dm testes compared with control (Figure 4B and C). To identify the stage of the arrest in P56 mice, we quantified all germ cell types using molecular markers and found a depletion of all differentiating germ cell types in S8::Dm mice (Figure 4D\u2013F and Figure 4\u2014figure supplement 1). Whereas WT seminiferous tubules invariably contain spermatids at this age, nearly half of the P56 mutant tubules (48 \u00b1 7%) contain only spermatogonia (Figure 4D and E, and Figure 4\u2014figure supplement 1). This histological phenotype is quite distinct from P24 mutants, which contain many tubules arrested in meiosis (Figure 2B\u2013E). Consistent with the flow cytometry data, quantification using molecular markers showed that S8::Dm tubules, compared with WT, had greater than 80% depletion of all differentiating germ cell types (Figure 4F).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/51601/elife-51601-fig4-v4.jpg)\n\n**Figure 4.:** (A) PAS histology in P56 testis sections. Scale bar, 50 \u00b5m. On the right are stylized depictions of the 100X panels. SG, spermatogonium; SC, spermatocyte; ST, spermatid, Lum, lumen; Ser, Sertoli cell cytoplasm. (B) FACS analysis of germ cells in WT and mutant testes. Testes were dissociated and FACS was used to quantify the number of mito-Dendra2-positive germ cells. Dendra fluorescence (x-axis) is shown in arbitrary units (au). The histograms were normalized by plotting the same number of somatic (mito-Dendra2-negative) cells between S8::Control and S8::Dm samples. (C) Quantification of the results from (B). N\u00a0=\u00a05. (D) Immunolabeling of the major germ cell types in WT and mutant animals. Scale bar, 20 \u00b5m. (E) Doughnut graphs indicating germ cell types in seminiferous tubule cross sections. Each seminiferous tubule cross section was scored for its most advanced germ cell type. Note that in WT tubules, all seminiferous tubules contain spermatids. For p-values, see Figure 4\u2014figure supplement 1. N\u00a0=\u00a04. (F) Quantification of germ cell types per tubule cross section. Mutant values are plotted relative to control, which is set to 100% and indicated by the gray bar. N\u00a0=\u00a04. (G) Immunolabeling of stem-like spermatogonia. PLZF marks all undifferentiated spermatogonia and GFR\u03b11 marks stem-like spermatogonia. Note that all GFR\u03b11 spermatogonia express PLZF, but not vice versa. Scale bar, 20 \u00b5m. (H) Immunolabeling of the proliferation marker Ki-67 in GFR\u03b11-expressing spermatogonia in testis section. Scale bar, 20 \u00b5m. (I) Percent of GFR\u03b11-expressing spermatogonia that are positive for the proliferation marker Ki67. N\u00a0=\u00a04. (J) Schematic of normal spermatogenesis (left) and the defect in P56 S8::Dm mice (right). SPZ, spermatozoon; ST, spermatid; MPI; Meiotic Prophase I; SC, spermatocyte; P/D, pachytene/diplotene; L/Z, leptotene/zygotene; SG, spermatogonium. Ac, acrosome, XY, sex body; PM, plasma membrane; Nuc, nucleus. N\u00a0\u2265\u00a04, unless otherwise indicated. Data are represented as mean\u00a0\u00b1\u00a0SEM. ****p\u22640.0001; ***p\u22640.001. For statistical tests used, see the Materials and methods section.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/51601/elife-51601-fig4-figsupp1-v4.jpg)\n\n**Figure 4\u2014figure supplement 1.:** Same data as in Figure 4E but displayed as bar charts to indicate statistical significance. N\u00a0=\u00a04. Data are represented as mean\u00a0\u00b1\u00a0SEM. ****p\u22640.0001; **p\u22640.01; *p\u22640.05. For statistical tests used, see the Materials and methods section.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/51601/elife-51601-fig4-figsupp2-v4.jpg)\n\n**Figure 4\u2014figure supplement 2.:** N\u00a0=\u00a03. 150 cells were counted from each genotype. For statistical tests used, see the Materials and methods section.\n\n![Figure 4\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/51601/elife-51601-fig4-figsupp3-v4.jpg)\n\n**Figure 4\u2014figure supplement 3.:** Scale bar, 20 \u00b5m.\n\n![Figure 4\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/51601/elife-51601-fig4-figsupp4-v4.jpg)\n\n**Figure 4\u2014figure supplement 4.:** (A) PAS-stained testis histology of the indicated genotypes.\u00a0Note the loss of germ cells from the center of the tubules in both S8::Mfn1 and S8::Mfn2 mice. Scale bars, 50 \u00b5m. (B) Quantification of c-Kit expressing spermatogonia in the indicated genotypes. N\u00a0=\u00a04. Data are represented as mean\u00a0\u00b1\u00a0SEM. ***p\u22640.001. For statistical tests used, see the Materials and methods section.\n\nDespite this severe depletion of germ cells, mutant seminiferous tubules retained an outer rim of mito-Dendra2-positive germ cells that stained with PLZF, a marker of undifferentiated spermatogonia (Figure 4A and D rightmost panel, and 4F). Because undifferentiated spermatogonia are a heterogeneous population that include stem and progenitor spermatogonia (de Rooij, 2017; Lord and Oatley, 2017), we sought to better define the identity of spermatogonia retained at the tubule periphery of S8::Dm mice. To this end, we co-labeled testis sections with the pan-undifferentiated spermatogonial marker, PLZF, and the well-established stem-like spermatogonial marker, GFR\u03b11 (Hara et al., 2014) (Figure 4F and G). Not only were GFR\u03b11-positive spermatogonia present in S8::Dm mice, their numbers were increased over 50%. Because endogenous Stra8 is expressed in late undifferentiated spermatogonia (Endo et al., 2017; Hara et al., 2014; Teletin et al., 2019), we characterized expression of the Stra8-Cre driver, which utilizes a 1.4 Kb Stra8 promoter fragment (Oulad-Abdelghani et al., 1996; Zhou et al., 2008) (Figure 1\u2014figure supplements 1 and 2). Quantification from testis sections in WT and S8::Dm mice shows that the vast majority of GFR\u03b11-positive spermatogonia express Stra8-Cre/Dn (Figure 4G and Figure 4\u2014figure supplement 2). Furthermore, over 40% of these GFR\u03b11-expressing spermatogonia are positive for the proliferation marker Ki-67, similar to that in WT animals (Figure 4H and I). Thus, mitochondrial fusion is required for maintenance of all differentiated germ cell types but dispensable for self-renewal of stem-like undifferentiated spermatogonia (Figure 4J).\n\nTo examine whether undifferentiated spermatogonia deplete with age, we examined mice at 4 months of age (P116). Even in these older mice, mutant seminiferous tubules retain an outer rim of undifferentiated spermatogonia that stain with Ki-67 (Figure 4\u2014figure supplement 3). To determine whether removal of either mitofusin alone is sufficient to cause depletion of differentiating spermatogonia, we performed histology in S8::Mfn1 and S8::Mfn2 mice (Figure 4\u2014figure supplement 4). As in S8::Dm mice, loss of either Mfn1 or Mfn2 alone causes severe depletion of germ cells. Quantification of c-Kit-expressing spermatogonia showed that both mutants have severe depletion of differentiating spermatogonia, close to the level observed in S8::Dm mice. Thus, both Mfn1 and Mfn2 are required for maintenance of differentiating spermatogonia. Taken together, our data indicate that long-term mitofusin loss impairs maintenance of all differentiated germ cell types, but not self-renewal of stem-like spermatogonia.\n\n### Mitofusin-deficient germ cells have aberrant cristae ultrastructure and increased apoptosis\n\nWe next visualized mitochondrial ultrastructure in testis sections via 3D EM tomography (Figure 5A\u2013D, and Figure 5\u2014figure supplement 1). Mutant mitochondria had aberrant cristae morphology characterized by a fourfold reduction in the number of linear cristae elements and a fourfold increase in swollen, vesiculated cristae (Figure 5A and B). Despite their isolated appearance, all vesiculated cristae in S8::Dm mitochondria could be traced back to the inner mitochondrial membrane using 3D EM tomography (Video 4). Furthermore, many cristae junctions (CJs) in mutant mitochondria are significantly widened in diameter (Figure 5C and D, and Figure 5\u2014figure supplement 1). While most of the CJs in control spermatocytes are narrower than 22.5 nm (64%), the majority in S8::Dm are wider (78%) (Figure 5\u2014figure supplement 1). In fact, 50% of mutant CJs, compared to 13% in WT, are wider than 27.5 nm. The aberrant cristae morphology and increased CJ diameter are suggestive of increased mitochondrial apoptosis in S8::Dm mice. To verify this, we performed terminal deoxynucleotidyl transferase dUTP nick end labeling (TUNEL) in testis sections. Indeed, S8::Dm sections show increased TUNEL-positive cells, indicative of cell death by apoptosis (Figure 5E and F).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/51601/elife-51601-fig5-v4.jpg)\n\n**Figure 5.:** (A) EM tomograms from adult P56 testis sections highlighting mitochondrial cristae morphology. The following pseudocolors are used: mitochondrial matrix, blue; cristae lumen, pink; nucleus, green. Nuc, nucleus. (B) Quantification of mitochondrial cristae morphology from EM tomograms. At least 70 cristae junctions were quantified from at least four different EM tomograms from a single mouse from each genotype. (C) EM tomograms from testis sections highlighting cristae junctions. Mitochondrial matrices are colored blue, and mitochondrial intermembrane spaces and cristae are colored pink. (D) Quantification of cristae junction diameters from EM tomograms. (E) TUNEL staining of PFA-fixed testis sections. Cells were labeled for TUNEL, mito-Dendra2 (Dn), and nuclei (DAPI). Scale bars, 20 \u00b5m. (F) Quantification showing the percentage of seminiferous tubule cross-sections containing TUNEL-positive cells. N\u00a0=\u00a03. Data are represented as mean\u00a0\u00b1\u00a0SEM. ****p\u22640.0001; ***p\u22640.001; **p\u22640.01; *p\u22640.05. For statistical tests used, see the Materials and methods section.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/51601/elife-51601-fig5-figsupp1-v4.jpg)\n\n**Figure 5\u2014figure supplement 1.:** 99 CJs were measured from control and 118 from mutant.\n\n![Video 4.](https://cdn.elifesciences.org/articles/51601/elife-51601-video4.mp4.jpg)\n\n**Video 4.:** Scale bar 200 nm.\n\n### Mitofusin-deficient MEFs have reduced OXPHOS subunits and mitochondrial ribosomes\n\nTo understand the cellular mechanism for the spermatogenic and mitochondrial defects, we sought for clues in mitofusin-null mouse embryonic fibroblasts (MEFs), where we could readily obtain sufficient material to do proteomic analysis. We used stable isotope labeling of amino acids in cell culture (SILAC) to quantitatively compare the mitochondrial proteome of Mfn1/Mfn2-null MEFs with WT controls (Figure 6 and Figure 6\u2014figure supplement 1). Gene Ontology (GO) analysis revealed two general categories of proteins that are significantly reduced in mitochondria from Mfn1/Mfn2-null MEFs: the mitochondrial respiratory chain and the mitochondrial ribosome (Figure 6A and Supplementary file 1). Indeed, 31 out of 34 (91%) identified complex I subunits, all 12 (100%) complex IV subunits, and 74 out of 80 (93%) mitochondrial ribosomal subunits were reduced in Mfn1/Mfn2-null MEFs (Supplementary file 2). Of the proteins that reached statistical significance (p<0.05), all 14 complex I subunits, all four complex IV subunits, and all 18 mitochondrial ribosomal subunits were reduced (Figure 6B). Consistent with reduced OXPHOS activity, Mfn1/Mfn2-null MEFs had significantly lower levels of the mitochondrial pyruvate carrier, MPC2 (Bricker et al., 2012; Vanderperre et al., 2016). Additionally, TFAM, a mitochondrial transcriptional activator and mtDNA packaging protein, was significantly reduced. Intriguingly, 14 out of 18 (78%) complex I and IV assembly factors were increased in Mfn1/Mfn2-null MEFs and of the seven that reached statistical significance, all were increased (Figure 6B). Our GO analysis also revealed an upregulation of mitochondrial import proteins in Mfn1/Mfn2-null MEFs (Figure 6A). 17 out of 21 (81%) detected mitochondrial import proteins were increased, and of the 10 that reached statistical significance, all were increased in Mfn1/Mfn2-null MEFs (Figure 6B). Taken together, these data suggest that the reduced OXPHOS activity in Mfn1/Mfn2-null MEFs (Chen et al., 2005) is caused by downregulation of OXPHOS components and mitochondrial ribosomal subunits.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/51601/elife-51601-fig6-v4.jpg)\n\n**Figure 6.:** (A) Volcano plot showing enriched Gene Ontology terms from SILAC experiments in MEFs. SILAC was performed on isolated mitochondria from WT and Mfn1/Mfn2-null MEFs. See also Supplementary file 1. (B) Comparison of individual mitochondrial proteins from SILAC analysis of MEFs. Bar charts show the protein ratios in Mfn1/Mfn2-null versus WT. Only proteins with ratios that reached statistical significance (p\u22640.05) are plotted. For a complete list of proteins, see Supplementary file 1. The black dashed line indicates a mutant to WT ratio of 1:1. Magenta bars indicate proteins that are reduced and green bars indicate proteins that are increased. See also Supplementary file 2. Two biological replicates were used. Assembly factor, AF. For statistical tests used, see the Materials and methods section.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/51601/elife-51601-fig6-figsupp1-v4.jpg)\n\n### Mitofusin knockdown in immortalized spermatocytes causes reduced OXPHOS subunits and activity\n\nWith the proteomic insights from MEFs, we examined whether OXPHOS deficiency also occurs in germ cells upon loss of mitofusins. To this end, we utilized the widely used spermatocyte cell line, GC-2spd(ts), referred to herein as GC (Figure 7 and Figure 7\u2014figure supplements 1\u20133) (Hofmann et al., 1994; Hofmann et al., 1995; Rahman and Huhtaniemi, 2004). To block mitochondrial fusion in GCs, we constructed an shRNA vector for dual Mfn1 and Mfn2 knockdown (shMfn1;Mfn2). Effective mitofusin knockdown was verified by western blotting (Figure 7\u2014figure supplement 1) and by quantifying mitochondrial morphology (Figure 7A and B). Strikingly, mitofusin knockdown in GCs causes widespread mitochondrial fragmentation and reduction in all OXPHOS subunits tested by western blotting: complex I subunit (NdufB8), complex II subunit SDHB, complex III subunit UQRC2, complex IV subunit MTCOI, and complex V subunit ATP5A (Figure 7C and D). To measure OXPHOS activity directly, we measured oxygen consumption in GCs using a Seahorse extracellular flux analyzer. Mitofusin knockdown caused a severe reduction in basal and maximal respiration, ATP production, and spare capacity (Figure 7E and F), but not glycolysis (Figure 7G). Interestingly, mitofusin knockdown in MEFs caused mitochondrial fragmentation (Figure 7\u2014figure supplement 2), but not OXPHOS deficiency (Figure 7\u2014figure supplement 3). Our knockdown procedure, while effective, was not efficient enough to reproduce the OXPHOS deficiency that characterizes mitofusin-null MEFs (Chen et al., 2005). Taken together, these data indicate that GCs are particularly sensitive to loss of mitofusins.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/51601/elife-51601-fig7-v4.jpg)\n\n**Figure 7.:** (A) Immunostaining against the mitochondrial outer membrane marker, Tom20 in an immortalized spermatocyte cell line, GC-2Spd(ts) (GC). Note the mitochondrial fragmentation in shMfn1;Mfn2 treated cells compared to the non-targeting control. Scale bar, 20 \u00b5m. (B) Quantification of mitochondrial morphology in GCs. Mean values from three replicates are plotted. (C) Western blots showing various respiratory chain complexes in GCs. NT, non-targeting. (D) Densitometry analysis of western blots. Mean values from four replicates are plotted. (E) Oxygen Consumption Rate (OCR) measurements in GCs. (F) Quantification from E. (G) Extracellular Acidification Rate (ECAR) measurements in GCs. Oligo, oligomycin; CCCP, carbonyl cyanide m-chlorophenyl hydrazine; Ant A, antimycin A. Data are represented as mean\u00a0\u00b1\u00a0SEM. ****p\u22640.0001; ***p\u22640.001; **p\u22640.01. For statistical tests used, see the Materials and methods section.\n\n![Figure 7\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/51601/elife-51601-fig7-figsupp1-v4.jpg)\n\n**Figure 7\u2014figure supplement 1.:** (A)\u00a0Western blots showing Mfn1 and Mfn2 levels in the GC-2spd(ts) cell line after knockdown. NT, non-targeting.\u00a0(B) Densitometry analysis of western blots, plotted relative to control, which was set at 100%. Tubulin was used a loading control. Mean values from four replicates are plotted. Data are represented as mean\u00a0\u00b1\u00a0SEM. ****p\u22640.0001. For statistical tests used, see the Materials and methods section.\n\n![Figure 7\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/51601/elife-51601-fig7-figsupp2-v4.jpg)\n\n**Figure 7\u2014figure supplement 2.:** Mean values from three replicates are plotted. Data are represented as mean\u00a0\u00b1\u00a0SEM. **p\u22640.01. For statistical tests used, see the Materials and methods section.\n\n![Figure 7\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/51601/elife-51601-fig7-figsupp3-v4.jpg)\n\n**Figure 7\u2014figure supplement 3.:** (OCR) measurements in MEFs.\u00a0Oligo, Oligomycin; CCCP, Carbonyl cyanide m-chlorophenyl hydrazine; Ant A, Antimycin A. Data are represented as mean\u00a0\u00b1\u00a0SEM. For statistical tests used, see the Materials and methods section.\n\n### Mitofusin-deficient spermatocytes have reduced OXPHOS components and activity in vivo\n\nTo test these findings in germ cells in vivo, we performed immunofluorescence against various OXPHOS components in spermatocytes in testis sections (Figure 8A and B). In WT mice, spermatocytes have strong and homogeneous expression of OXPHOS components that uniformly overlaps with mito-Dendra2-labeled mitochondria. In contrast, most spermatocytes in S8::Dm mice show a heterogeneous staining pattern in which a substantial subset of mito-Dendra2-positive mitochondria clearly lack OXPHOS components. Consistent with the proteomics in cultured cells, S8::Dm spermatocytes have reduced and heterogeneous expression of the complex I subunit NdufB6, the complex IV subunit MTCOI, and the mitochondrial pyruvate carrier MPC1 (an obligate binding partner of MPC2). We noted that the mtDNA-encoded MTCOI has the most heterogeneous expression. Similarly, many shMfn1;Mfn2 GCs display reduced or heterogeneous MTCOI expression, with a substantial subset of mitochondria lacking MTCOI (Figure 8\u2014figure supplement 1).\n\n![Figure 8.](https://cdn.elifesciences.org/articles/51601/elife-51601-fig8-v4.jpg)\n\n**Figure 8.:** (A) Immunolabeling of NDUFB6, MTCOI, and MPC1 in spermatocytes in testis sections. Line scans are shown as arbitrary units (au) to the right. Scale bars, 20 \u00b5m. (B) Quantification showing the percentage of spermatocytes with reduced or heterogeneous staining. L/Z, leptotene/zygotene; P/D, pachytene/diplotene. N\u00a0=\u00a04. (C) COX/SDH enzyme histochemistry in adult testis sections. Note that mutant sections have much reduced OXPHOS activity. Scale bars, 50 \u00b5m. ST, spermatid; SC, spermatocyte; SG, spermatogonium. Data are represented as mean\u00a0\u00b1\u00a0SEM. ****p\u22640.0001; ***p\u22640.001; **p\u22640.01. For statistical tests used, see the Materials and methods section.\n\n![Figure 8\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/51601/elife-51601-fig8-figsupp1-v4.jpg)\n\n**Figure 8\u2014figure supplement 1.:** Mitochondria are labeled with the outer mitochondrial membrane marker Tom20 (red). Scale bar, 20 \u00b5m.\n\n![Figure 8\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/51601/elife-51601-fig8-figsupp2-v4.jpg)\n\n**Figure 8\u2014figure supplement 2.:** (A) Analysis of mitochondrial heterogeneity in differentiated and undifferentiated spermatogonia.\u00a0MTCOXI protein was examined in c-Kit-positive cells (differentiated spermatogonia) and PLZF-positive cells (undifferentiated spermatogonia). Line scans are shown as arbitrary units (au) to the right. SG, spermatogonia. Scale bar, 20 \u00b5m. (B) Quantification showing the percentage of differentiated and undifferentiated spermatogonia with heterogeneous MTCOXI protein. N\u00a0=\u00a04. Data are represented as mean\u00a0\u00b1\u00a0SEM. *p\u22640.05. For statistical tests used, see the Materials and methods section.\n\n![Figure 8\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/51601/elife-51601-fig8-figsupp3-v4.jpg)\n\n**Figure 8\u2014figure supplement 3.:** (A) COX/SDH enzyme histochemistry in isolated spermatozoa from S8::Mfn1 and S8::Mfn2 mice.\u00a0S8::Dm mice do not produce any sperm. Scale bars, 10 \u00b5m. (B) Quantification of COX and SDH pixel intensity from midpieces of isolated spermatozoa. N\u00a0=\u00a03. Data are represented as mean\u00a0\u00b1\u00a0SEM. ***p\u22640.001; **p\u22640.01. For statistical tests used, see the Materials and methods section.\n\nIn agreement with the progressive loss of differentiated spermatogonia in S8::Dm mice, there is also mitochondrial heterogeneity in this cell type (Figure 8\u2014figure supplement 2). Surprisingly, we also find mitochondrial heterogeneity in undifferentiated spermatogonia, which are not depleted in S8::Dm mice. Thus, loss of mitofusins leads to heterogeneous mitochondria in all germ cell types. However, the undifferentiated spermatogonia can apparently tolerate this defect, suggesting that these cells are physiologically different.\n\nTo test for functional changes in mitochondrial activity, we performed COX/SDH enzyme histochemistry on spermatozoa isolated from S8::Mfn1 and S8::Mfn2 mice and found reduction of both COX and SDH activities (Figure 8\u2014figure supplement 3). Because S8::Dm mice do not produce any sperm, we performed COX/SDH enzyme histochemistry in fresh-frozen testis sections and found a severe reduction of COX and SDH activities in S8::Dm germ cells (Figure 8C). Thus, consistent with data in MEFs and immortalized spermatocytes, mitofusin depletion in germ cells in vivo causes ultrastructural defects, heterogeneity in OXPHOS expression, and reduced OXPHOS subunits and activity (Figure 9).\n\n![Figure 9.](https://cdn.elifesciences.org/articles/51601/elife-51601-fig9-v4.jpg)\n\n**Figure 9.:** Top panel. Two key transitions during normal spermatogenesis are indicated: spermatogonial differentiation and the metabolic shift during meiosis. The metabolic shift includes increased mitochondrial biogenesis, fusion, and OXPHOS. Bottom panel. In juvenile mitochondrial fusion-deficient mice, spermatocytes have functionally heterogeneous mitochondria that are unable to accomplish this metabolic shift, resulting in meiotic arrest. Adult mutant mice have an earlier defect, wherein all differentiating germ cell types are lost but self-renewal of stem-like undifferentiated spermatogonia remains intact.\n\n## Discussion\n\nMfn1 is known to be required in spermatocytes in the mouse (Zhang et al., 2016), but it was unclear whether this requirement simply reflected the need for basal mitochondrial dynamics as a housekeeping function. Our study reveals that spermatocytes require mitochondrial fusion as they undergo an acute upregulation of OXPHOS during MPI (Figure 9). Analysis of the single mutant mice showed that Mfn1 but not Mfn2 is essential for this transition. We show that this transition coincides with increased mitochondrial density, mitochondrial elongation, and upregulation of OXPHOS activity, which are all blocked in fusion-deficient spermatocytes. The increased OXPHOS in pachytene spermatocytes is likely required to fuel ATP-consuming biochemical reactions involved in homologous recombination and DSB repair. Consistent with this idea, the metabolic environment of spermatocytes changes as they initiate MPI and traverse the blood-testis barrier. In this isolated compartment, spermatocytes are segregated from the vasculature and interstitial fluid and thus rely on metabolites secreted by the nursing Sertoli cells (Boussouar and Benahmed, 2004; Stanton, 2016). As a result, spermatocytes switch their energy dependence from glucose to lactate and pyruvate, which are preferred substrates for OXPHOS (Bajpai et al., 1998; Grootegoed et al., 1984; Nakamura et al., 1984; Rato et al., 2012). In agreement with upregulation of OXPHOS during pachytene, others and we have found high expression of the mtDNA-encoded COXI protein (Figure 8A, middle panel) (Jiang et al., 2017) and mRNA (Saunders et al., 1993) in pachytene spermatocytes. Furthermore, we find that spermatocytes, compared with pre-meiotic spermatogonia, switch on expression of the mitochondrial pyruvate carrier, MPC1, presumably to accommodate the greater flux of pyruvate into the OXPHOS pathway. Changes in pyruvate metabolism, driven by MPC expression, have been shown to regulate differentiation of stem cells in other systems (Flores et al., 2017; Schell et al., 2017).\n\nOur findings are in agreement with previous indications that mitochondrial morphology, cristae structure, and OXPHOS activity change during MPI. Round spherical mitochondria with orthodox cristae in early MPI convert in pachytene to more elongated mitochondria with condensed cristae (De Martino et al., 1979; Meinhardt, 1999; Seitz et al., 1995), an ultrastructure associated with active OXPHOS (Hackenbrock, 1966; Mannella, 2006). Furthermore, mitochondrial function has been shown to be important for this particular developmental stage. Arrest in early MPI occurs in mouse models with a pathogenic mtDNA deletion (Nakada et al., 2006) or inability to utilize mitochondrial ATP (Brower et al., 2009). In addition, mouse models that accumulate mtDNA mutations exhibit male infertility (Jiang et al., 2017; Kujoth et al., 2005; Trifunovic et al., 2004).\n\nIn contrast to the Mfn1 study (Zhang et al., 2016), we show that mitofusins are required not only in spermatocytes, but also in differentiating spermatogonia (Figure 9). S8::Mfn1, S8::Mfn2, and S8::Dm mice exhibit a progressive loss of all differentiated germ cell types, including the differentiating spermatogonia that give rise to spermatocytes. The age-dependent loss is likely caused by the progressive depletion of mitofusin gene products due to the iterative nature of spermatogenesis. At P24, during the first round of spermatogenesis, germ cells may contain residual levels of mitofusin activity sufficient to mitigate effects on spermatogonia. As a result, the major defect is found during MPI, which is more sensitive to ATP depletion because of the metabolic shift described above. With long-term mitofusin loss in adult mice, even the less sensitive differentiating spermatogonia are affected. Mitochondrial fusion, however, is dispensable for self-renewal of undifferentiated spermatogonia, even though these cells display mitochondrial heterogeneity with loss of mitofusins. Undifferentiated spermatogonia, differentiating spermatogonia, and spermatocytes therefore show progressively increasing requirements for mitochondrial fusion. These results are consistent with a paradigm in various (but not all) stem cell systems, wherein stem cells compared with differentiated cells are less dependent on mitochondrial OXPHOS (Chen and Chan, 2017).\n\nThe two major phenotypes of S8::Dm mice\u2014meiotic failure and spermatogonial differentiation\u2014are also observed with loss of Mfn1 alone. This observation suggests that these defects should be attributed to loss of mitochondrial fusion, rather than non-fusion functions, like ER-mitochondria tethering, that have been attributed to Mfn2 (de Brito and Scorrano, 2008). To further test that our spermatogenesis defects are due to loss of mitochondrial fusion, it will be helpful to analyze mice lacking other mitochondrial dynamics factors, particularly Opa1.\n\nTo elucidate the cellular mechanism for the spermatogenic arrest we performed proteomics in MEFs and found downregulation of respiratory chain complex I and IV subunits, mitochondrial translation proteins, and the mitochondrial pyruvate carrier, MPC2. A previous proteomic study found that Mfn2-null MEFs have a defect in the coenzyme Q pathway, but no change in the levels of respiratory chain complexes (Mourier et al., 2015). In our study, full inhibition of mitochondrial fusion by deletion of both mitofusins uncovers their role in maintaining the respiratory chain and mitochondrial translation. Finally, we find an increase in the respiratory chain complex I and IV assembly factors as well as mitochondrial import proteins in Mfn1/Mfn2-null MEFs. These increases may be indicative of a compensatory stress response to the cellular dysfunction caused by mitochondrial fusion deficiency. Importantly, the metabolic derangements revealed by proteomics in MEFs extend to a spermatocyte cell line and to spermatocytes in vivo. Thus, our findings provide a rationale for how mitochondrial fusion safeguards mitochondrial function and male fertility.\n\n## Materials and methods\n\n### Generation of S8::Dm mice and characterization of Stra8-Cre expression\n\nAll mouse experiments were approved by the California Institute of Technology (Caltech) Institutional Animal Care and Use Committee. S8::Control (Stra8-Cre+/tg; Mfn1+/loxP; Mfn2+/loxP; Rosa26PhAM(+/loxP)), S8::Mfn1 (Stra8-Cre+/tg; Mfn1\u0394/loxP; Mfn2+/lox; Rosa26PhAM(+/loxP)), S8::Mfn2 (Stra8-Cre+/tg; Mfn1+/loxP; Mfn\u0394/loxP; Rosa26PhAM(+/loxP)), and S8::Dm (Stra8-Cre+/tg; Mfn1\u0394/loxP; Mfn2\u0394/loxP; Rosa26PhAM(+/loxP)) mice were generated by crossing Stra8-Cre; Mfn1+/\u0394; Mfn2+/\u0394 mice to Mfn1loxP/loxP; Mfn2loxP/loxP; Rosa26PhAM(loxP/loxP) mice. The null alleles Mfn1\u0394 and Mfn2\u0394 (Chen et al., 2003), the conditional alleles Mfn1loxP and Mfn2loxP (Chen et al., 2007), the Stra8-Cre driver (Jackson Laboratory #017490) (Sadate-Ngatchou et al., 2008), and the Rosa26PhAM allele containing mito-Dendra2 (Pham et al., 2012) were all described previously. All mice were maintained on a C57B6 background except for Mfn1loxP/loxP; Mfn2loxP/loxP; Rosa26PhAM(loxP/loxP) mice, which were maintained on a C57B6/129S mixed genetic background.\n\n### Epididymal sperm counting and analysis of morphology and motility\n\nMice were euthanized at P56, and epididymides were dissected and thoroughly minced in 1.7 ml microcentrifuge tubes containing 1 ml PBS. Samples were incubated at 37\u00b0C for 20 min to allow sperm to swim out. 900 \u00b5l of the supernatant was transferred into a fresh microcentrifuge tube. For sperm counting and morphology analysis, samples were allowed to settle for several hours for sperm to stop swimming before counting on a hemocytometer. Sperm counts were normalized to the weight of the epididymides of each mouse. For motility quantification, freshly isolated sperm were transferred to a hemocytometer, and the proportion of motile sperm was quantified. For motility movies, freshly isolated sperm were transferred to glass-bottom FluoroDish Cell Culture Plates (FD35-100) and imaged at one frame per second for 10 s using a confocal microscope as described below.\n\n### Periodic acid-Schiff staining\n\nAfter dissection, testes were fixed in Bouin\u2019s fixative overnight at 4\u00b0C, dehydrated in a 30\u201390% ethanol gradient, cleared in Xylenes, and embedded in paraffin. Tissue blocks were sectioned at 7 \u00b5m, deparaffinized, and rehydrated before staining. Briefly, slides were incubated with 1% periodic acid (Electron Microscopy Sciences (EMS); 19324\u201310) for 30 min at RT, washed in running water for 5 min, then rinsed in deionized water. Slides were incubated with Schiff\u2019s reagent (EMS; 260582\u201305) for 30 min at RT and washed as described above before counterstaining with Hematoxylin Gill 2 for 30 s at RT. Slides were washed in running water for 1 min, dehydrated with ethanol, cleared with xylene, then mounted using Cytoseal XYL mounting media (Thermo Fisher Scientific; 22-050-262).\n\n### Immunofluorescence\n\nFor immunostaining of tissue sections, testes were cut at the poles, fixed in 4% PFA for 4 hr at 4\u00b0C, incubated with 30% sucrose in PBS overnight at 4\u00b0C (or until tissues sank), incubated in a 1:1 solution of 30% sucrose in PBS and optimal cutting temperature (OCT) embedding medium (Thermo Fisher Scientific; NC9636948) for 15\u201330 min, then embedded in OCT medium and frozen in dry ice. Tissue blocks were sectioned at 10 \u00b5m onto glass slides, dried overnight, and stored at \u221280\u00b0C until ready for immunostaining. Frozen slides were briefly thawed at room temperature, rehydrated in PBS, permeabilized with 0.15% TX-100 for 15 min, and blocked for 1 hr using Blocking Buffer (10% FBS, 3% BSA, 0.05% TX-100 in PBS). Slides were incubated with primary antibodies in a humidified chamber overnight at 4\u00b0C, washed three times in PBS for 15 min each, then incubated with secondary antibodies in a humidified chamber for 2.5 hr at RT. Slides were counterstained with DAPI, washed as described above, mounted with Fluorogel (EMS; 17985\u201310), covered with a coverglass, sealed with nail polish, and stored at 4\u00b0C before imaging.\n\nFor immunostaining of FACS sorted germ cells, cells were plated onto 8-chamber glass slides (VWR, 62407\u2013296) pre-coated with Cell-Tak (Corning; 354240). After cell adhesion, cells were washed with PBS, fixed in 10% Neutral Buffered Formalin (Sigma Aldrich, HT501128-), and immunostained as described above.\n\n### Western blotting\n\nCells were grown to confluency in 6-well plates and lysed in 200 ul of Lysis Buffer (20 mM Tris-Cl, 150 mM NaCl, 2 mM EDTA, 1% Triton X-100, pH 7.5 with Halt Protease Inhibitor added to 1X). Proteins (5 \u00b5g) were separated by SDS-PAGE and transferred to Polyvinylidene difluoride membranes using semi-dry electrophoresis. Membranes were blocked with 5% non-fat dry milk for 1 hr at RT, followed by primary antibody incubation overnight at 4\u00b0C. HRP-conjugated secondary antibodies were applied for 2 hr at RT. Immobilon Western chemiluminescent HRP substrate (Millipore 90720) was added according to the manufacturer\u2019s instructions and the protein bands were visualized on X-ray film (Amersham Hyperfilm MP). For analysis, densitometry was performed in ImageJ and protein levels were normalized to that of tubulin.\n\n### Antibodies\n\nThe following antibodies were used for immunofluorescence. rabbit anti- \u03b3H2AX (ab11174, Abcam); mouse anti-\u03b3H2AX (ab26350, Abcam); rabbit anti-c-Kit (3074S, Cell Signaling Technology); rabbit anti-GFR\u03b11; (AF560-SP, R and D Systems); rabbit anti-Ki67 (ab15580, Abcam); rabbit anti-MPC1 (HPA045119, Millipore Sigma); mouse anti-MTCOI (ab14705, Abcam); mouse anti-Ndufb6 (ab110244, Abcam); rabbit anti-PLZF (SC-22831, Santa Cruz Biotech); mouse anti-PLZF (SC-28319, Santa Cruz Biotech); rabbit anti-SCP3; (ab15093, Abcam); mouse anti-SCP3 (ab97672, Abcam); mouse anti-SDHA (ab14715, Abcam); guinea pig anti-SP-10 (Gift from Prabhakara P. Reddi); rabbit anti-Tom20 (SC-11415, Santa Cruz, Biotech); mouse anti-Total OXPHOS (ab110413, Abcam). The following antibodies were used for western blotting. Chicken anti-Mfn1 (Chen et al., 2003); rabbit anti-Mfn2 (D2D10S #9482, Cell Signaling Technology); mouse anti-tubulin (T6199, Sigma).\n\n### Chromosome spreading of meiotic spermatocytes\n\nChromosome spreading was performed as described previously (Gaysinskaya et al., 2014;\u00a0Peters et al., 1997). Briefly, testes were decapsulated and placed into 10 cm petri dishes containing 3 ml MEM-\u03b1. Seminiferous tubules were loosened under a dissecting microscope with forceps, and the interstitial cells were washed away. The seminiferous tubules were transferred to a fresh 10 cm petri dish containing 300 \u00b5l MEM-\u03b1 and the tubules were torn between two fine forceps for 3\u20135 min. A cell suspension was made with an additional 1 ml MEM-\u03b1 using a P1000 pipette and the large tubular remnants were removed by centrifugation at 500 rpm (27 RCF) for 1 min. The cells were concentrated by centrifugation for 7 min at 1000 rpm (106 RCF), and 500 \u00b5l of the supernatant was discarded. Upon re-suspending cells, 600 \u00b5l of Hypotonic Buffer was added to 600 \u00b5l of the cell suspension and incubated for 7 min at RT. The suspension was spun at 1000 rpm (106 RCF) for 7 min and 1100 \u00b5l of the supernatant was discarded. The cells were re-suspended in residual hypotonic buffer (this is an essential step to prevent cell clumping) before adding 1 ml of 100 mM working sucrose solution. 100\u2013200 \u00b5l of cell suspension was added to glass slides pre-coated with Fixation Buffer (1% PFA, 0.15% TX-100) and incubated for 1\u20131.5 hr at RT in a humidified chamber. Slides were stored at \u221280\u00b0C until they were ready for immunostaining. Slides were immunostained as described above. For immunostaining mitochondria, TX-100 was omitted from the Fixation Buffer.\n\n### Electron microscopy and dual-axis tomography\n\nMouse testes were dissected and immediately fixed with cold 3% glutaraldehyde, 1% paraformaldehyde, 5% sucrose in 0.1 M sodium cacodylate trihydrate. Pre-fixed pieces of tissue were rinsed with fresh cacodylate buffer and placed into brass planchettes (Type A; Ted Pella, Inc, Redding, CA) prefilled with 10% Ficoll in cacodylate buffer. Samples were covered with the flat side of a Type-B brass planchette and rapidly frozen with a HPM-010 high-pressure freezing machine (Leica Microsystems, Vienna Austria). The frozen samples were transferred under liquid nitrogen to cryotubes (Nunc) containing a frozen solution of 2.5% osmium tetroxide, 0.05% uranyl acetate in acetone. Tubes were loaded into an AFS-2 freeze-substitution machine (Leica Microsystems) and processed at \u221290\u00b0C for 72 hr, warmed over 12 hr to \u221220\u00b0C, held at that temperature for 8 hr, then warmed to 4\u00b0C for 2 hr. The fixative was removed, and the samples were rinsed 4x with cold acetone, and then were infiltrated with Epon-Araldite resin (Electron Microscopy Sciences, Port Washington PA) over 48 hr. Samples were flat-embedded between two Teflon-coated glass microscope slides, and the resin polymerized at 60\u00b0C for 24\u201348 hr.\n\nFlat-embedded testis samples were observed with a stereo dissecting microscope, and appropriate regions were extracted with a microsurgical scalpel and glued to the tips of plastic sectioning stubs. Semi-thick (400 nm) serial sections were cut with a UC6 ultramicrotome (Leica Microsystems) using a diamond knife (Diatome, Ltd. Switzerland). Sections were placed on Formvar-coated copper-rhodium slot grids (Electron Microscopy Sciences) and stained with 3% uranyl acetate and lead citrate. Gold beads (10 nm) were placed on both surfaces of the grid to serve as fiducial markers for subsequent image alignment. Grids were placed in a dual-axis tomography holder (Model 2040, E.A. Fischione Instruments, Export PA) and imaged with a Tecnai TF30ST-FEG transmission electron microscope (300 KeV) equipped with a 2k \u00d7 2 k CCD camera (XP1000; Gatan, Inc Pleasanton CA). Tomographic tilt-series and large-area montaged overviews were acquired automatically using the SerialEM software package (Mastronarde, 2005). For tomography, samples were tilted +\u00a0/-\u00a064\u00b0 and images collected at 1\u00b0 intervals. The grid was then rotated 90\u00b0 and a similar series taken about the orthogonal axis. Tomographic data was calculated, analyzed and modeled using the IMOD software package (Kremer et al., 1996; Mastronarde, 2008) on MacPro computers (Apple, Inc, Cupertino, CA).\n\n### Apoptotic cell labeling\n\nTo label apoptotic nuclei, the TUNEL assay was performed in PFA-fixed, OCT-embedded testis sections using the ApopTag Red In Situ Apoptosis Detection Kit (Millipore; S7165) according to the manufacturer's protocol. Nuclei were counterstained with DAPI.\n\n### Imaging and image processing\n\nConfocal fluorescence images and videos were acquired using an inverted Zeiss LSM 710 confocal microscope with a 60X Plan-Apochromat objective. Epifluorescence and bright-field images were acquired using an upright Nikon Eclipse Ni-E fluorescence microscope equipped with a Ds-Ri2 camera and CFI Plan Apochromat Lambda objectives. For PAS histology images, Z stacks were acquired and all-in-focus images were created using the NIS Elements Extended Depth of Focus plugin. All images were processed using ImageJ. All image modifications were performed on entire images (no masking was used) and were performed identically between genotypes.\n\n### Germ cell quantification from testis sections\n\nGerm cells were counted from 10 \u00b5m testis sections using the germ cell markers described in the main text. Quantification was restricted to germ cells within round transverse sections of seminiferous tubules and is reported as either the mean number of germ cells per seminiferous tubule cross section or the most differentiated cell type per seminiferous tubule cross section. Only germ cells expressing Dendra2 were included in the quantification to exclude cells without Stra8-Cre expression. For each genotype, at least 50 transverse sectioned seminiferous tubules were quantified from at least four mice.\n\n### COX/SDH enzyme histochemistry\n\nCOX/SDH double-labeling was performed as described previously (Ross, 2011) with minor modifications. Briefly, testes were embedded in OCT medium, frozen in liquid nitrogen and cryosectioned at 10 \u00b5m. Slides were stained with COX buffer for 25 min at RT in the dark. Slides were washed twice with dH20 for 5 min then stained with SDH buffer at 37C for 45 min in the dark. Slides were washed twice with dH20 and destained using a 30%\u201390\u201330% acetone gradient. After two additional washes in dH20, slides were counterstained with DAPI and mounted using Fluorogel. For COX/SDH double labeling of sperm, cells were isolated as described above. 20\u201350 \u00b5l of isolated sperm were smeared onto glass slides and allowed to air dry for 1 hr at RT prior to performing the enzymatic assay as described above.\n\n### Fluorescence-activated cell sorting (FACS)\n\nCells were sorted at Caltech\u2019s Flow Cytometry Facility using a Sony SY3200 analyzer. Testes were dissociated from adult males (2\u20133 months old) as described previously (Gaysinskaya and Bortvin, 2015; Gaysinskaya et al., 2014). The cell suspension was passed through a 100 \u00b5m nylon cell strainer, pelleted at 150 g for 5 min, and stained for 1 hr with 5 \u00b5g/ml Hoechst 33342 in Flow Cytometry Buffer (HBSS with 2.5 mg/ml fraction V BSA, 10 Mm HEPES buffer, 6.6 mM sodium pyruvate, 0.05% sodium lactate, DNase and 1 mM MgCl2, pH 7.2). The nuclear dye was washed away with Flow Cytometry Buffer, and the cells were filtered through a 40 \u00b5m mesh. 7-AAD was added for exclusion of dead cells. Diploid, tetraploid, and haploid cells were isolated as described before (Bastos et al., 2005), and verified using germ cell-specific markers\u00a0Figure 3\u2014figure supplement 1.\n\n### Respiration measurements\n\nFor respiration measurements in dissociated germ cells, testicular cells were sorted using FACS as described above into germ cell collection media (DMEM 11995 supplemented with 10% FBS, 1% Pen/Strep, 6.6 mM sodium pyruvate, 0.05% sodium lactate). The cells were pelleted at 150 g for 5 min and incubated in Seahorse media (Sigma-Aldrich; #D5030 supplemented with 5% FBS, 1% Pen/Strep, 2 mM glutamine, 6.6 mM sodium pyruvate, 3 mM sodium lactate, and 10 mM glucose) before plating onto 96-well plates pre-coated with Cell-Tak (Corning; 354240) per manufacturer\u2019s instructions. The plated cells were spun for 1000 rpm for 5 min to promote cell-adhesion. The Mitochondrial Stress Test was performed using a Seahorse Biosciences Extracellular Flux Analyzer (model XF96). 5 \u00b5M oligomycin was added to inhibit complex V; 10 \u00b5M CCCP was added to uncouple the proton gradient; and 5 \u00b5M Antimycin A was added to inhibit complex III. For respiration measurements in immortalized spermatocytes (GC2spd(ts)), a non-targeting cell line and two separate shMfn1;Mfn2 cell lines were used: shMfn1;Mfn2 (A) and shMfn1;Mfn2 (B). 20,000 cells were plated onto 96-well plates 16 hr before the Seahorse experiment in complete media (DMEM 11995 supplemented with 10% FBS, 1% Pen/Strep). One hour before the experiment, cells were washed into Seahorse media (Sigma-Aldrich; #D5030 supplemented with glutamine, sodium pyruvate, Pen/Strep, and 25 mM glucose). The Mitochondrial Stress Test was performed as described above. Values were normalized to the total number of cells remaining per well after the Seahorse experiment. For counting, cells were trypsinized, resuspended in complete medium, and counted using a tally counter. Normalization was performed using Agilent\u2019s Seahorse Wave Desktop Software. shRNA knockdown in immortalized spermatocytes.\n\nGC-2spd(ts) immortalized spermatocytes (CRL-2196) were purchased from ATCC. For dual Mfn1 and Mfn2 knockdown in immortalize spermatocytes, shRNAs against and Mfn1 and Mfn2 were cloned into the FUChW-H1H1 vector containing dual H1 promoters (Rojansky et al., 2016) and transferred to pRetroX. The shRNA target sequences are below.\n\nNon Targeting: CGTTAATCGCGTATAATACGC\n\nMfn1: CGGTATCTCCACTGAAGCA\n\nMfn2-1: GGATTGGTCATACCACCAATT\n\nMfn2-2: GCCTGGATGCTGATGTGTTTG\n\nRetroviral vectors were cotransfected into 293 T cells with pCL-Eco (Adgene #12371) using calcium phosphate precipitation. Virus was collected, filtered, and added to GC-2spd(ts) immortalized spermatocytes in the presence of Polybrene. Cells were spun at 2,400 rpm for 30 min and incubated for 8 hr before replacing with complete medium (DMEM 11995, 10% fetal bovine serum, 1% Pen/Strep). To achieve efficient Mfn2 KD, spermatocytes were first dually knocked down for Mfn1 and Mfn2 using shMfn1;Mfn2-1, followed by Mfn2 knockdown using shMfn2-2).\n\n### Stable isotope labeling of amino acids in cell culture (SILAC)\n\nDMEM lacking arginine and lysine was used, along with 10% dialyzed fetal bovine serum. For heavy labeling, Arg6 (U-13C6) and Lys8 (U-13C6, U-15N2) (Cambridge Isotopes) were supplemented at the same concentration as in the standard DMEM formulation. For light labeling, regular DMEM was used.\n\n### Isolation of mitochondria\n\nMitochondria were isolated from a 1:1 mixture of heavy and light SILAC-labeled, WT and Mfn1/Mfn2-null MEFs. Cells were lysed using a nitrogen bomb (Parr) at 200 psi for 10 min. Lysates were centrifuged at 600 g for 5 min to remove nuclei and intact cells. The supernatant was resuspended in 15 ml Isolation Buffer (IB) (220 mM Mannitol, 70 mM sucrose, 10 mM HEPES-KOH pH 7.4, 1 mM EGTA, and protease inhibitors) and homogenized with a glass\u2013glass Dounce homogenizer. Lysates were centrifuged for 600 g for 5 min and the supernatants containing the crude mitochondrial fraction were centrifuged at 10,000 g for 10 min. Crude mitochondria were further purified by a discontinuous Percoll gradient consisting of 80, 52% and 21% Percoll. Following centrifugation at 23,200 rpm for 90 min, mitochondria were collected at the 21%/52% interface, washed with IB, and pelleted by centrifugation at 13,000 rpm for 10 min.\n\n### Mass spectrometry\n\nSamples were analyzed on a hybrid LTQ-Orbitrap mass spectrometer with a nanoelectrospray ion source (Thermo Scientific) coupled to an EASY-nLC HPLC (Proxeon Biosystems, Waltham, MA). Peptides were separated online using a 75 \u03bcm ID by 15 cm silica analytical column packed in-house with reversed phase ReproSil-Pur C18AQ 3 \u03bcm resin (Dr. Maisch GmbH, Ammerbuch-Entringen, Germany). The analytical gradient was 2\u201330% solvent B in 150 min at 350 nl/min where solvent B was acetonitrile in 0.2% formic acid. The mass spectrometer collected spectra in data-dependent mode, with a survey spectrum collected from 300 to 1700 m/z at 60 k resolution followed by 10 MS/MS spectra from the most intense precursors. Precursors were fragmented using CID with 35% normalized collision energy and activation Q of 0.25. Only precursors with charge states 2+ and 3+ were selected for fragmentation and dynamic exclusion was enabled with duration of 90 s and an exclusion window of 10 ppm.\n\n### Bioinformatical analysis\n\nThermo raw files were searched using MaxQuant (v. 1.6.1.0) (Cox and Mann, 2008; Cox et al., 2011) against the UniProt mouse database (61,681 entries) and a contaminant database (245 entries). Arg6 and Lys8 SILAC labels were specified with re-quantify and match between runs enabled. Trypsin was specified as the digestion enzyme with up to two missed cleavages allowed. Oxidation of methionine and protein N-terminal acetylation were specified as variable modifications and carbamidomethylation of cysteine was specified as a fixed modification. Precursor mass tolerance was 4.5 ppm after recalibration and fragment ion mass tolerance was 0.5 Da.\n\nFollowing the database search, proteins not annotated in MitoCarta (Calvo et al., 2016) were removed. Protein replicate ratios were averaged together and these ratios were then normalized so that the global mean ratio was 1:1. Limma was used to assess individual protein fold change significance and confidence intervals (Ritchie et al., 2015; Smyth, 2004). One-sample t-tests were used to identify GO terms with annotated protein mean ratios statistically different from 1:1. All p-values were adjusted using the Benjamini and Hochberg method (Benjamini and Hochberg, 1995).\n\n### Replicates and statistical reporting\n\nPairwise comparisons were made using the Student\u2019s t-test. When multiple pairwise comparisons were made from the same dataset, p-values were adjusted using the Bonferroni correction. For comparisons of more than two means, one-way ANOVA was used, followed by Tukey\u2019s post hoc test. Number of mice and replicates are indicated in figure legends. All outliers were included in the analysis. All data are represented as mean\u00a0\u00b1\u00a0SEM. **** indicates p\u22640.0001; *** indicates p\u22640.001; ** indicates p\u22640.01; * indicates p\u22640.05.\n",
+      "created_at": "2025-12-02T12:39:48.634319Z"
+    },
+    {
+      "id": "9e647710-a1a3-4dee-907f-58b9be359440",
+      "submission_id": "f57c8411-3645-4374-8a0a-4b9a8952fc51",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Serge Przedborski, Columbia University Medical Center United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.51601.sa1](https://doi.org/10.7554/eLife.51601.sa1)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\n[Editors\u2019 note: a previous version of this study was rejected after peer review, but the authors submitted for reconsideration. The first decision letter after peer review is shown below.]\n\nThank you for submitting your work entitled \"Mitochondrial fusion is required for multiple stages of mouse spermatogenesis\" for consideration by eLife. Your article has been reviewed by three peer reviewers, one of whom is a member of our Board of Reviewing Editors, and the evaluation has been overseen by a Senior Editor. The following individuals involved in review of your submission have agreed to reveal their identity: Martin Picard (Reviewer #2); Tsutomu Endo (Reviewer #3).\n\nOur decision has been reached after consultation between the reviewers. Based on these discussions and the individual reviews below, we regret to inform you that your work will not be considered further for publication in eLife.\n\nThe reviewers have made so many suggestions for making the manuscript more complete, that we do not see any way all these comments can be addressed in the time frame of a major revision. Of course, if you wish to make all suggested changes and resubmit, the same reviewers could look through the manuscript again. However, such a resubmission will be treated as new and we could not guarantee that other new questions will not arise during review.\n\nAs you can see from the appended reviews, it was the reviewers' opinion that:\n\n1) The presented data nicely documents the spermatogenesis problem related to the absence of mitofusins, but that the data are essentially phenomenological in that they do not show how and why exactly mitofusin deletion causes spermatogenesis defect at the molecular level.\n\n2) Given the fact that mitofusins, especially mitofusin 2, is believed to be implicated in functions other than mitodynamics (e.g. MAM), it is crucial that you document and compare the spermatogenesis phenotype(s) for the single knockout lines that you already have.\n\n3) It is not clear whether the reported problem in spermatogenesis is due to a generic mitodynamic alteration or specifically linked to some intrinsic property of mitofusins. It would thus be critical that you show if deletion of OPA (may be difficult given the multiple isoforms) or overexpression of DRP1 can phenocopy the effects of mitofusin deletion on spermatogenesis.\n\n4) While the idea to run a proteomic experiment to gain insights into the molecular underpinning of the observed defect is exciting, neither the results nor the selection of the cell type (i.e. MEFs) are particularly compelling. Indeed, the reported proteomic changes are quite generic and MEFs do not respect the cell-specific context of spermatocytes.\n\n5) Several comments also focused on the quality of the EM and the data generated with these images in terms of apoptosis and mitochondria cristae, which will need to be corrected.\n\nReviewer #1:\n\nIn this new manuscript the authors seek to determine the role of mitofusins in spermatogenesis. This work is prompted by the observation that low Mfn2 expression is associated with reduced sperm motility and Mnf1 defects are associated with alerted spermatogenesis. However, at this time, very little is known about the link of mitofusins with spermatogenesis. Using conditional knockout mouse line deficient in either or both Mfn, the authors found that mutant mice exhibited small testis with reduced spermatozoa in the epididymides with the following severity arcos the different null lines: Mfn2 < Mfn1 < Mfn1/2. In light of this finding the authors then demonstrated in absence of Mfn the tubules of the double knockout mice were almost devoid of post-meiotic spermatids, which they demonstrate to be due to a blockage at the zygotene to pachytene transition. The authors demonstrate that at the pachytene stage, mitochondria are more clustered, their content is higher and their length is greater in spermatocytes, than at the zygotene stage. In keeping with these differences, spermatocytes in the double knockout mice have less mitochondria and they are more fragmented. Moreover, compared to the mitochondria in the wild-type mice spermatocytes, in the knockout mice many mitochondria lack MPC1 which is necessary to import the Sertoli cell-derived lactate used by spermatocytes to fuel OXPHOS. Together with functional OXPHOS measurements, the authors concluded that the above findings indicate that during the zygotene to pachytene transition, mitochondria undergo a metabolic shift, which requires a presence of Mfns. The authors also demonstrated that if the defect of Mfn is chronic, they observed a major depletion in germ cells, which likely die by activation the molecular program of apoptosis. Lastly, the authors utilize SILAC in MEFs isolated mitochondria from the double knockout mice. This proteomic approach revealed that the lack of Mfns is associated with a downregulation of several mitochondrial respiratory chain and mitochondrial ribosomal proteins, as well as TFAM. Conversely several protein import factors were upregulated in these mutant cells. In light of these results the authors conclude that they elucidate how Mfns promote fertility.\n\nOverall this study is well conducted and the results clear and, for the most part convincing. The methods are appropriate although the statistical treatment of the data may require some clarification (see below). The enthusiasm for this work is however reduced, as for this reviewer, as the author's strong conclusion is not supported by the data, and this is discussed below.\n\n1) While the rationale for this work is somewhat tenuous (relying on limited number of observations), the set of investigations presented herein provide a strong case for the hypothesized role of Mfns in spermatogenesis. Yet, the data are essentially phenomenological and do not, in this reviewer's opinion, \"\u2026elucidate how Mfns promote fertility\" nor provide clear molecular data to explain how Mfns interfere with spermatogenesis. What the authors show is that in absence of Mfns, there is a block in the spermatogenesis if Mnfs are deficient but why that is, unless overlooked, is not demonstrated.\n\n2) It is also unclear whether the deficit in Mfn1 or Mfn2 alone cause the same problem, even if the first set of experiments suggest so.\n\n3) If we focus on Mfns role in mitochondrial dynamics, one may wonder if the effect of Mfns deficit reported here are specific of these proteins or if altering any other mitochondrial dynamic factors would cause the same set of mitochondrial and spermatogenesis problems.\n\n4) If one accepts that Mfn, especially Mfn2, is also involved in other mitochondrial functions than dynamics (e.g. tethering of the mitochondrial-associated membrane), it would be important to at least discuss these other possibilities.\n\n5) The illustration of apoptosis even in EM are to this reviewer not convincing. Would it be possible to select more convincing images or perform additional experiments using functional markers of apoptosis such as activated caspases or cleaved fragments from substrate of activate caspase?\n\n6) Most bar graphs show several groups (and several variables, e.g. time and genotype) suggesting that several t-tests were run per data set. Would it not be then necessary for the others to correct the null-hypothesis rejection threshold by applying, for example, a Bonferroni correction? Even better, in light of the data, would it not be better to use a 1 or 2-way ANOVA followed by a post-hoc test? Indeed, in the case of two factors are include in the investigations (e.g. time and genotype) it might have been ideal to run a 2-way ANOVA to be able to assess the interaction between the two factors.\n\n7) This reviewer is confused by the fact that the authors state in the subsection \u201cReplicates and Statistical Reporting\u201d, \"at least four biological replicates\" and then \"at least three technical replicates\" and then \"N\u2026 always \u226510.\" Please clarify.\n\nReviewer #2:\n\nThe rationale for the study and for spermatogenesis defects in mitochondrial disorders is well-developed and is an important problem that remains unresolved.\n\nFor the EM analysis in Figure 6C-E, it may be valuable to quantify the proportion of cristae with and without cristae junctions. Vesicular cristae or compartments have been shown to exist in greater abundance in disease conditions caused by both defects in MICOS complex proteins, and primary respiratory chain defects.\n\nThe presentation of cristae junction diameter as frequency distribution is very useful. Is Figure 5C EM tomography, or transmission EM?\n\nDetails for the isolation of mitochondria (centrifugation speeds and duration, etc.) should be provided. This could influence which population of mitochondria are isolated and their purity.\n\nAlthough I have not seen the previous reviews, the author's arguments regarding the cell autonomous/non-autonomous nature of the process are sound.\n\nReviewer #3:\n\nThis manuscript describes the importance of mitochondria fusion during spermatogenesis. By using a mouse model, the authors show that germ cell-specific depletion of mitofusins (Mfn1, Mfn2, or both Mfn1 and 2) results in defect in meiotic spermatocytes. Moreover, the authors show that long-term depletion of mitofusins causes depletion of mitotic spermatogonia, suggesting the function of mitochondria fusion in spermatogonia. In general, mitochondria function is important in male germ cells after they complete spermatogenesis, as sperm; sperm middle piece contains mitochondria and play a role in energy production for their progressive motility. The emerged concept that mitochondria function is required for early spermatogenesis, especially in spermatogonia and spermatocytes, is novel and exciting. The work represents significant contribution to the better understanding of spermatogenesis, meiosis, and cell biology. The experiments are well conducted. However, the manuscript writing can be improved to convince readers that the authors' logic, flow, and their conclusions are correct.\n\n1) The authors show that Stra8-Cre/Mfn1 and Mfn2 double mutant (S8::Dm) mice have a reduction of pachytene/diplotene spermatocytes and an abundance of leptotene/zygotene spermatocytes (Figure 2), and conclude that mitofusins are required for zygotene-to-pachytene transition. However, abnormal meiotic spermatocytes are usually arrested at middle pachytene stage: this checkpoint mechanism is known as \"mid-pachytene arrest\" or \"(seminiferous) stage IV arrest.\" Thus, mitofusins might be required for meiotic progression but not for zygotene-to-pachytene transition. The term \"zygotene-to-pachytene transition\" should be rephrased into \"meiotic progression.\" Otherwise, the authors should show the data that reduction of pachytene spermatocytes occurs at early pachytene stage, but not at middle/late pachytene stages.\n\n2) The authors use Stra8-Cre reporter mice for the germ cell-specific depletion of Mfn1 and/or Mfn2. However, endogenous Stra8 is expressed in late, but not in early stage of undifferentiated spermatogonia including stem cells (Endo et al., 2015, DOI:10.1073/pnas.1505683112; Teletin et al., 2019). Once late undifferentiated spermatogonia express Stra8, the cells are irreversibly destined for differentiation and cannot contribute to the population of undifferentiated spermatogonia or stem cells. Thus, the authors cannot exclude the possibility that mitofusins have major function in undifferentiated spermatogonia. The authors should revise the manuscript, where function of mitofusins in undifferentiated spermatogonia is shown or discussed. Otherwise, the authors should show the evidence that Stra8-Cre is expressed in stem cells, and mitofusins are depleted in these cells, by co-immunostaining with any one of stem cell markers (ID4 or GFR\u03b11).\n\n3) The authors use flow cytometry to isolate \"diploid spermatogonia\" and \"tetraploid MPI spermatocytes\" for the measurement of oxidative phosphorylation (OXPHOS) activity (Figures 3F and Supplementary Figure 3B and Figure 3\u2014figure supplement 2). When germ cells are isolated by DNA content (2C, 4C, or 1C), it is unclear if the mitotic spermatogonia underwent DNA replication (4C) is included in the fraction of \"diploid spermatogonia\" or \"tetraploid MPI spermatocyte.\"\n\n4) In S8::Dm mice, the number of seminiferous tubules contained differentiating spermatogonia is about 30% of control (Supplementary Figure 2B), and the number of seminiferous tubules contained leptotene/zygotene spermatocytes is about 55% of control (Figure 2E). It seems that the reduced number of differentiating spermatogonia is recovered at leptotene/zygotene stage. Interpretation of the data should be incorporated in the manuscript.\n\n5) Figures 2F-G: It is unclear if the spermatocytes of S8::Dm mice at each stage of MPI (leptotene, zygotene, pachytene, and diplotene) are normal or not. The authors should clarify this point. Chromosome spread images in S8::Dm mice can be shown if needed.\n",
+      "created_at": "2025-12-02T12:39:48.634319Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T12:39:48.634319Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T12:39:48.634319Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "a6766d14-158d-41a8-a0a9-bfd911a88e7a",
+      "content_id": "0633dde9-c26f-40ba-90a7-3873a6d2f63d",
+      "claim_id": "C1",
+      "claim": "The first mitochondrial fusion gene, fuzzy onions (fzo), was discovered in 1997 in a Drosophila melanogaster mutant exhibiting male sterility.",
+      "claim_type": "EXPLICIT",
+      "source": "The first mitochondrial fusion gene, fuzzy onions (fzo), was discovered in 1997 in a Drosophila melanogaster mutant exhibiting male sterility (Hales and Fuller, 1997).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Hales and Fuller, 1997",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:39:48.634319Z"
+    },
+    {
+      "id": "f2d62636-5a61-455f-86e0-955a8982e14f",
+      "content_id": "0633dde9-c26f-40ba-90a7-3873a6d2f63d",
+      "claim_id": "C2",
+      "claim": "During early spermatid development in flies, mitochondria aggregate and fuse to become two giant organelles that wrap around each other to form the Nebenkern.",
+      "claim_type": "EXPLICIT",
+      "source": "During early spermatid development in flies, mitochondria aggregate and fuse to become two giant organelles that wrap around each other to form the Nebenkern (Fuller, 1993).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Fuller, 1993",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:39:48.634319Z"
+    },
+    {
+      "id": "92b94cfd-95bd-4de4-909e-3751b4701dc2",
+      "content_id": "0633dde9-c26f-40ba-90a7-3873a6d2f63d",
+      "claim_id": "C3",
+      "claim": "Mutations in fzo abolish mitochondrial fusion in spermatids, resulting in a morphologically aberrant Nebenkern and sterility.",
+      "claim_type": "EXPLICIT",
+      "source": "Mutations in fzo abolish mitochondrial fusion in spermatids, resulting in a morphologically aberrant Nebenkern and sterility.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Follows from the description of fzo discovery and its role in mitochondrial fusion",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:39:48.634319Z"
+    },
+    {
+      "id": "630fc496-447e-47c1-a723-14bb6b502303",
+      "content_id": "0633dde9-c26f-40ba-90a7-3873a6d2f63d",
+      "claim_id": "C4",
+      "claim": "In humans, there are two mitofusin homologs known as MFN1 and MFN2.",
+      "claim_type": "EXPLICIT",
+      "source": "In humans, there are two homologs known as MFN1 and MFN2 (Santel and Fuller, 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Santel and Fuller, 2001",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:39:48.634319Z"
+    },
+    {
+      "id": "ff9c06f5-1073-4ce3-90ad-3a0d64a02574",
+      "content_id": "0633dde9-c26f-40ba-90a7-3873a6d2f63d",
+      "claim_id": "C5",
+      "claim": "Fusion acts as a major quality control mechanism for mitochondria by enabling mixing of matrix components and promoting their homogenization.",
+      "claim_type": "EXPLICIT",
+      "source": "Fusion acts as a major quality control mechanism for mitochondria by enabling mixing of matrix components and promoting their homogenization (Chan, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Chan, 2012",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:39:48.634319Z"
+    },
+    {
+      "id": "21ccb2df-e0dd-48c6-9881-9a3584cfdb53",
+      "content_id": "0633dde9-c26f-40ba-90a7-3873a6d2f63d",
+      "claim_id": "C6",
+      "claim": "In the absence of fusion, mitochondria diverge, become functionally heterogenous, and mitochondrial DNA (mtDNA) and oxidative phosphorylation (OXPHOS) are diminished.",
+      "claim_type": "EXPLICIT",
+      "source": "In the absence of fusion, mitochondria diverge, become functionally heterogenous, and mitochondrial DNA (mtDNA) and oxidative phosphorylation (OXPHOS) are diminished (Chen et al., 2005; Chen et al., 2003; Chen et al., 2007; Chen et al., 2010; Weaver et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by multiple citations to Chen et al. and Weaver et al.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:39:48.634319Z"
+    },
+    {
+      "id": "9f8879e6-4e6d-4768-83c1-b9a616c6afdf",
+      "content_id": "0633dde9-c26f-40ba-90a7-3873a6d2f63d",
+      "claim_id": "C7",
+      "claim": "Mitochondrial fusion affects mitochondrial transport and degradation.",
+      "claim_type": "EXPLICIT",
+      "source": "Mitochondrial fusion also affects mitochondrial transport and degradation (Chen et al., 2003; Gomes et al., 2011; Kandul et al., 2016; Misko et al., 2010; Rambold et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by multiple citations",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:39:48.634319Z"
+    },
+    {
+      "id": "dec583ee-c33f-45ce-a6f4-b58e78186f9b",
+      "content_id": "0633dde9-c26f-40ba-90a7-3873a6d2f63d",
+      "claim_id": "C8",
+      "claim": "Spermatogenesis is a cyclical process that involves differentiation of spermatogonia into spermatocytes, which undergo meiosis to form haploid spermatids and ultimately spermatozoa.",
+      "claim_type": "EXPLICIT",
+      "source": "In mammals, spermatogenesis is a cyclical process that involves differentiation of spermatogonia into spermatocytes, which undergo meiosis to form haploid spermatids and ultimately spermatozoa (Griswold, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Griswold, 2016",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:39:48.634319Z"
+    },
+    {
+      "id": "c2970eb9-fed6-402c-8804-8b7449f20e37",
+      "content_id": "0633dde9-c26f-40ba-90a7-3873a6d2f63d",
+      "claim_id": "C9",
+      "claim": "Sertoli cells form the blood-testis barrier (BTB) that separates the seminiferous epithelium into the basal and apical compartments.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to providing differentiation cues and metabolites for the developing germ cells, Sertoli cells form the blood-testis barrier (BTB) that separates the seminiferous epithelium into the basal (towards the periphery) and apical (towards the lumen) compartments (Stanton, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Stanton, 2016",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:39:48.634319Z"
+    },
+    {
+      "id": "b68b0d12-a11f-46d2-a639-7a2dbd758bef",
+      "content_id": "0633dde9-c26f-40ba-90a7-3873a6d2f63d",
+      "claim_id": "C10",
+      "claim": "Some patients with mtDNA disease have sperm defects.",
+      "claim_type": "EXPLICIT",
+      "source": "Some patients with mtDNA disease have sperm defects (Demain et al., 2017; Folger\u00f8 et al., 1993), and sperm from some infertile males harbor mtDNA mutations (Baklouti-Gargouri et al., 2014; Carra et al., 2004; Kao et al., 1995; Lestienne et al., 1997).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by multiple citations",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:39:48.634319Z"
+    },
+    {
+      "id": "0ec2ed63-dcb8-4a3f-98c8-1289f6c48f0c",
+      "content_id": "0633dde9-c26f-40ba-90a7-3873a6d2f63d",
+      "claim_id": "C11",
+      "claim": "Mouse models with a pathogenic mtDNA deletion exhibit spermatogenic arrest during the zygotene stage of Meiotic Prophase I (MPI).",
+      "claim_type": "EXPLICIT",
+      "source": "Mouse models with a pathogenic mtDNA deletion exhibit spermatogenic arrest during the zygotene stage of Meiotic Prophase I (MPI) (Nakada et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Nakada et al., 2006",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:39:48.634319Z"
+    },
+    {
+      "id": "1d6c6987-fc8d-446e-9354-dd182cb4c5d1",
+      "content_id": "0633dde9-c26f-40ba-90a7-3873a6d2f63d",
+      "claim_id": "C12",
+      "claim": "A mouse model that is unable to utilize mitochondrial ATP exhibits spermatogenic arrest during the leptotene stage of MPI.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, a mouse model that is unable to utilize mitochondrial ATP exhibits spermatogenic arrest during the leptotene stage of MPI (Brower et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Brower et al., 2009",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:39:48.634319Z"
+    },
+    {
+      "id": "a2ab3a8b-9d71-4748-9de0-00d7277e1593",
+      "content_id": "0633dde9-c26f-40ba-90a7-3873a6d2f63d",
+      "claim_id": "C13",
+      "claim": "Mouse models that accumulate mtDNA mutations exhibit male infertility.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, mouse models that accumulate mtDNA mutations exhibit male infertility (Jiang et al., 2017; Kujoth et al., 2005; Trifunovic et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by multiple citations",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:39:48.634319Z"
+    },
+    {
+      "id": "67234f81-87b4-4a00-a5a0-6358a9184af1",
+      "content_id": "0633dde9-c26f-40ba-90a7-3873a6d2f63d",
+      "claim_id": "C14",
+      "claim": "The Drosophila homolog of mitofusin (dMfn) regulates lipid homeostasis and maintenance of germline stem cells in the testis.",
+      "claim_type": "EXPLICIT",
+      "source": "The Drosophila homolog of mitofusin (dMfn) was recently shown to regulate lipid homeostasis and maintenance of germline stem cells in the testis (S\u00eanos Demarco et al., 2019),",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to S\u00eanos Demarco et al., 2019",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:39:48.634319Z"
+    },
+    {
+      "id": "5a3740df-6994-4e86-b511-98271289f1ce",
+      "content_id": "0633dde9-c26f-40ba-90a7-3873a6d2f63d",
+      "claim_id": "C15",
+      "claim": "Low Mfn2 expression in sperm is associated with asthenozoospermia (reduced sperm motility) and reduced sperm mitochondrial membrane potential.",
+      "claim_type": "EXPLICIT",
+      "source": "A clinical study found that low Mfn2 expression in sperm is associated with asthenozoospermia (reduced sperm motility) and reduced sperm mitochondrial membrane potential (Fang et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Fang et al., 2018",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:39:48.634319Z"
+    },
+    {
+      "id": "e980abcd-edc4-44ed-b3e5-62f601dd4231",
+      "content_id": "0633dde9-c26f-40ba-90a7-3873a6d2f63d",
+      "claim_id": "C16",
+      "claim": "Mfn1 is required for spermatogenesis in the mouse.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, Mfn1 is required for spermatogenesis in the mouse (Zhang et al., 2016), but the precise stage of the defect as well as the role of Mfn2 remain unknown.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Zhang et al., 2016",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:39:48.634319Z"
+    },
+    {
+      "id": "64e8e828-1d23-43b0-9293-7fa3d2d67470",
+      "content_id": "0633dde9-c26f-40ba-90a7-3873a6d2f63d",
+      "claim_id": "C17",
+      "claim": "Stra8-Cre expression begins at post-natal day 3 (P3) in undifferentiated spermatogonia.",
+      "claim_type": "EXPLICIT",
+      "source": "Stra8-Cre expression is reported to begin at post-natal day 3 (P3) in undifferentiated spermatogonia (Sadate-Ngatchou et al., 2008), including the majority of early stem-like GFR\u03b11-positive spermatogonia (Hobbs et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Sadate-Ngatchou et al., 2008 and Hobbs et al., 2015",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:39:48.634319Z"
+    },
+    {
+      "id": "009cd5cc-b716-4191-884f-955c3c4fdf86",
+      "content_id": "0633dde9-c26f-40ba-90a7-3873a6d2f63d",
+      "claim_id": "C18",
+      "claim": "All three mitofusin-deficient mouse lines (S8::Mfn1, S8::Mfn2, and S8::Dm) were healthy and showed no changes in weight.",
+      "claim_type": "EXPLICIT",
+      "source": "All three mitofusin-deficient mouse lines were healthy and showed no changes in weight (Figure 1\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by reference to Figure 1\u2014figure supplement 3",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:39:48.634319Z"
+    },
+    {
+      "id": "9e93b5a4-93ee-4da6-a0a0-173dfbef93f3",
+      "content_id": "0633dde9-c26f-40ba-90a7-3873a6d2f63d",
+      "claim_id": "C19",
+      "claim": "Mitofusin-deficient mice had obviously smaller testes compared with controls.",
+      "claim_type": "EXPLICIT",
+      "source": "However, they had obviously smaller testes compared with controls (Figure 1A and B), suggesting an essential role for mitochondrial fusion during spermatogenesis.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by data shown in Figure 1A and B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:39:48.634319Z"
+    },
+    {
+      "id": "f6b72ee8-580a-4a75-8988-4bfc7c4e516c",
+      "content_id": "0633dde9-c26f-40ba-90a7-3873a6d2f63d",
+      "claim_id": "C20",
+      "claim": "There is significant reduction of spermatozoa in the epididymides of S8::Mfn1 and S8::Mfn2 mice, with the defect more severe with loss of Mfn1.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, there is significant reduction of spermatozoa in the epididymides of S8::Mfn1 and S8::Mfn2 mice, with the defect more severe with loss of Mfn1 (Figure 1C and D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by data shown in Figure 1C and D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:39:48.634319Z"
+    },
+    {
+      "id": "e5ecbd08-1404-4e3c-915a-58e932c27abc",
+      "content_id": "0633dde9-c26f-40ba-90a7-3873a6d2f63d",
+      "claim_id": "C21",
+      "claim": "Residual spermatozoa in S8::Mfn1 and S8::Mfn2 mutants often display mitochondrial fragmentation and reduced mitochondrial content.",
+      "claim_type": "EXPLICIT",
+      "source": "The residual spermatozoa in both mutant lines often display mitochondrial fragmentation and reduced mitochondrial content (Figure 1E and F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by data shown in Figure 1E and F",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:39:48.634319Z"
+    },
+    {
+      "id": "44e67304-b7a9-4a60-a9d2-fdde61330488",
+      "content_id": "0633dde9-c26f-40ba-90a7-3873a6d2f63d",
+      "claim_id": "C22",
+      "claim": "Mutant spermatozoa exhibit morphological defects, particularly kinking near or in the midpiece.",
+      "claim_type": "EXPLICIT",
+      "source": "Mutant spermatozoa also exhibit morphological defects, particularly kinking near or in the midpiece (Figure 1E and G), and almost a complete loss of motility (Figure 1H; Videos 1\u20133).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by data shown in Figure 1E, G, H and Videos 1-3",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:39:48.634319Z"
+    },
+    {
+      "id": "aa0c3c86-36f6-410d-852d-a8ce98f7f997",
+      "content_id": "0633dde9-c26f-40ba-90a7-3873a6d2f63d",
+      "claim_id": "C23",
+      "claim": "S8::Dm mice have a complete absence of epididymal spermatozoa.",
+      "claim_type": "EXPLICIT",
+      "source": "S8::Dm mice have the smallest testes (Figure 1A and B) and strikingly, a complete absence of epididymal spermatozoa (Figure 1C and D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by data shown in Figure 1A, B, C, and D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:39:48.634319Z"
+    },
+    {
+      "id": "2a2d2d20-c2c3-4ef3-9306-31329757251f",
+      "content_id": "0633dde9-c26f-40ba-90a7-3873a6d2f63d",
+      "claim_id": "C24",
+      "claim": "At P24, mutant mice have substantially smaller testes compared with control.",
+      "claim_type": "EXPLICIT",
+      "source": "Even at this early time point, mutant mice have substantially smaller testes compared with control (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by data shown in Figure 2A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:39:48.634319Z"
+    },
+    {
+      "id": "da5253fd-b846-4dd9-bf2b-9efdf5b785bf",
+      "content_id": "0633dde9-c26f-40ba-90a7-3873a6d2f63d",
+      "claim_id": "C25",
+      "claim": "Mutant seminiferous tubules are narrower in diameter, sparsely populated, and contain numerous Sertoli cell vacuolizations.",
+      "claim_type": "EXPLICIT",
+      "source": "We performed Periodic Acid-Schiff (PAS) staining in testis sections and found that mutant seminiferous tubules are narrower in diameter, sparsely populated, and contain numerous Sertoli cell vacuolizations (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by data shown in Figure 2B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:39:48.634319Z"
+    },
+    {
+      "id": "341a6d56-bc1e-4069-9646-de5d92178601",
+      "content_id": "0633dde9-c26f-40ba-90a7-3873a6d2f63d",
+      "claim_id": "C26",
+      "claim": "S8::Dm tubules have almost a complete absence of post-meiotic spermatids, indicative of an inability to complete meiosis.",
+      "claim_type": "EXPLICIT",
+      "source": "Whereas most control seminiferous tubules are packed with round spermatids, S8::Dm tubules have almost a complete absence of post-meiotic spermatids, indicative of an inability to complete meiosis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on histological analysis described in the text",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:39:48.634319Z"
+    },
+    {
+      "id": "e4da6d8c-9a2f-4d41-a292-6a97760395ed",
+      "content_id": "0633dde9-c26f-40ba-90a7-3873a6d2f63d",
+      "claim_id": "C27",
+      "claim": "The majority of control seminiferous tubules (87 \u00b1 6%) at P24 contained germ cells differentiated up to the spermatid stage.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected for the P24 time point, the majority of control seminiferous tubules (87 \u00b1 6%) contained germ cells differentiated up to the spermatid stage, and the remaining tubules (13 \u00b1 6%) contained cells differentiated up to pachytene/diplotene.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Quantitative data from analysis of testis sections",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:39:48.634319Z"
+    },
+    {
+      "id": "910395e1-ed5e-4321-9ecb-ee9559fb6d15",
+      "content_id": "0633dde9-c26f-40ba-90a7-3873a6d2f63d",
+      "claim_id": "C28",
+      "claim": "The majority of seminiferous tubules from P24 S8::Dm mice contained cells differentiated only up to the leptotene/zygotene stage (55 \u00b1 2%), indicating a meiotic defect during early MPI.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the majority of seminiferous tubules from P24 S8::Dm mice contained cells differentiated only up to the leptotene/zygotene stage (55 \u00b1 2%), indicating a meiotic defect during early MPI.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Quantitative data from analysis of testis sections",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:39:48.634319Z"
+    },
+    {
+      "id": "d080a8f0-89c1-493f-bad6-1eabdf4ffd8c",
+      "content_id": "0633dde9-c26f-40ba-90a7-3873a6d2f63d",
+      "claim_id": "C29",
+      "claim": "S8::Dm mice have a reduction of pachytene and diplotene spermatocytes and an abundance of both leptotene and zygotene cells, pinpointing the meiotic defect to the zygotene-to-pachytene transition.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with data from testis sections, we found that S8::Dm mice have a reduction of pachytene and diplotene spermatocytes and an abundance of both leptotene and zygotene cells, pinpointing the meiotic defect to the zygotene-to-pachytene transition (Figure 2G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by data shown in Figure 2G from chromosomal spreading analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:39:48.634319Z"
+    },
+    {
+      "id": "039f894a-03d2-45bf-8d82-dc1c3ce131fe",
+      "content_id": "0633dde9-c26f-40ba-90a7-3873a6d2f63d",
+      "claim_id": "C30",
+      "claim": "Loss of Mfn1 alone was sufficient to cause a similar defect in meiosis, resulting in accumulation of spermatocytes in the leptotene and zygotene stages, and reduced production of spermatids.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that loss of Mfn1 alone was sufficient to cause a similar defect in meiosis, resulting in accumulation of spermatocytes in the leptotene and zygotene stages, and reduced production of spermatids.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on histology and chromosomal spreading in S8::Mfn1 mice",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:39:48.634319Z"
+    },
+    {
+      "id": "805611a9-2e91-4ee8-beb4-28e1b11de4c6",
+      "content_id": "0633dde9-c26f-40ba-90a7-3873a6d2f63d",
+      "claim_id": "C31",
+      "claim": "S8::Mfn2 mice had normal progression through MPI at P24.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, S8::Mfn2 mice had normal progression through MPI at P24.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on histology and chromosomal spreading in S8::Mfn2 mice",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:39:48.634319Z"
+    },
+    {
+      "id": "0979dc64-b5b6-4fea-ba28-c3e2fbb81067",
+      "content_id": "0633dde9-c26f-40ba-90a7-3873a6d2f63d",
+      "claim_id": "C32",
+      "claim": "MPI is the most sensitive stage of spermatogenesis to disruption of mitochondrial fusion.",
+      "claim_type": "EXPLICIT",
+      "source": "Because Stra8-Cre-mediated excision occurs in all germ cell types, including spermatogonia that give rise to meiotic spermatocytes, our results demonstrate that MPI is the most sensitive stage of spermatogenesis to disruption of mitochondrial fusion (Figure 2H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on inference from experimental data and shown in Figure 2H",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:39:48.634319Z"
+    },
+    {
+      "id": "40d085d2-803d-458d-aca4-eb1e31923d01",
+      "content_id": "0633dde9-c26f-40ba-90a7-3873a6d2f63d",
+      "claim_id": "C33",
+      "claim": "In P24 WT mice, pachytene/diplotene cells contained over three times more mitochondrial signal compared with leptotene/zygotene spermatocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "In P24 WT mice, we found that pachytene/diplotene cells contained over three times more mitochondrial signal compared with leptotene/zygotene spermatocytes (Figure 3A and B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by quantitative data shown in Figure 3A and B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:39:48.634319Z"
+    },
+    {
+      "id": "1440abb4-4544-4b52-aa11-5cb9c93ff191",
+      "content_id": "0633dde9-c26f-40ba-90a7-3873a6d2f63d",
+      "claim_id": "C34",
+      "claim": "Pachytene/diplotene spermatocytes in S8::Dm mutant animals have less than half the mitochondrial content found in WT animals.",
+      "claim_type": "EXPLICIT",
+      "source": "Pachytene/diplotene spermatocytes are much sparser in S8::Dm mutant animals, but when present, these cells have less than half the mitochondrial content found in WT animals (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by quantitative data shown in Figure 3B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:39:48.634319Z"
+    },
+    {
+      "id": "a3ce7c67-bf3a-49be-a3d1-aba34a410dfe",
+      "content_id": "0633dde9-c26f-40ba-90a7-3873a6d2f63d",
+      "claim_id": "C35",
+      "claim": "WT pachytene/diplotene spermatocytes, compared with leptotene/zygotene spermatocytes, contain elongated and highly clustered mitochondria.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that WT pachytene/diplotene spermatocytes, compared with leptotene/zygotene spermatocytes, contain elongated and highly clustered mitochondria (Figure 3C and D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by data shown in Figure 3C and D from meiotic spreading",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:39:48.634319Z"
+    },
+    {
+      "id": "62c5db1e-385b-4343-8516-85cdac5b2a7c",
+      "content_id": "0633dde9-c26f-40ba-90a7-3873a6d2f63d",
+      "claim_id": "C36",
+      "claim": "S8::Dm spermatocytes that reach the pachytene/diplotene stage have less mitochondrial content and their mitochondria are more fragmented.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, S8::Dm spermatocytes that do make it to the pachytene/diplotene stage have less mitochondrial content and their mitochondria are more fragmented (Figure 3C and D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by data shown in Figure 3C and D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:39:48.634319Z"
+    },
+    {
+      "id": "b0075ea0-53c6-437e-ab31-3bff6f91c7da",
+      "content_id": "0633dde9-c26f-40ba-90a7-3873a6d2f63d",
+      "claim_id": "C37",
+      "claim": "Pachytene/diplotene spermatocytes have strong expression of MPC1, while spermatogonia have little to no MPC1 protein.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, we find that while pachytene/diplotene spermatocytes have strong expression of MPC1, spermatogonia have little to no MPC1 protein (Figure 3E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by immunofluorescence data shown in Figure 3E",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:39:48.634319Z"
+    },
+    {
+      "id": "400bed63-78ae-49bb-99ce-1dd98d591fe1",
+      "content_id": "0633dde9-c26f-40ba-90a7-3873a6d2f63d",
+      "claim_id": "C38",
+      "claim": "Compared with diploid spermatogonia, tetraploid spermatocytes have substantially greater maximal respiration and spare respiratory capacity, and a modest increase in basal respiration and ATP production.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, compared with diploid spermatogonia, tetraploid spermatocytes have substantially greater maximal respiration and spare respiratory capacity, and a modest increase in basal respiration and ATP production (Figure 3F and Figure 3\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by Seahorse data shown in Figure 3F and Figure 3\u2014figure supplement 2",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:39:48.634319Z"
+    },
+    {
+      "id": "c45e617e-8186-4cae-bf69-5c992c1018e8",
+      "content_id": "0633dde9-c26f-40ba-90a7-3873a6d2f63d",
+      "claim_id": "C39",
+      "claim": "By P56, the testes of S8::Dm mice have undergone repeated rounds of spermatogenesis and show greater germ cell depletion and more widespread Sertoli cell vacuolization compared with P24 mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "By this time, the testes have undergone repeated rounds of spermatogenesis and should have more complete depletion of mitofusins. PAS-stained testis sections from P56 S8::Dm mice showed greater germ cell depletion and more widespread Sertoli cell vacuolization (Figure 4A) compared with P24 mutants.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by histological data shown in Figure 4A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:39:48.634319Z"
+    },
+    {
+      "id": "f1adbcdd-ef7e-4bd3-9a3e-9793f6d36982",
+      "content_id": "0633dde9-c26f-40ba-90a7-3873a6d2f63d",
+      "claim_id": "C40",
+      "claim": "Flow cytometry showed an 80% loss of mito-Dendra2-positive cells from dissociated S8::Dm testes compared with control at P56.",
+      "claim_type": "EXPLICIT",
+      "source": "This severe depletion of germ cells was confirmed by flow cytometry, which showed an 80% loss of mito-Dendra2-positive cells from dissociated S8::Dm testes compared with control (Figure 4B and C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by FACS data shown in Figure 4B and C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:39:48.634319Z"
+    },
+    {
+      "id": "f09f20f4-1775-4d10-b341-dcebd1572d64",
+      "content_id": "0633dde9-c26f-40ba-90a7-3873a6d2f63d",
+      "claim_id": "C41",
+      "claim": "Nearly half of the P56 mutant tubules (48 \u00b1 7%) contain only spermatogonia.",
+      "claim_type": "EXPLICIT",
+      "source": "Whereas WT seminiferous tubules invariably contain spermatids at this age, nearly half of the P56 mutant tubules (48 \u00b1 7%) contain only spermatogonia (Figure 4D and E, and Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by quantitative data shown in Figure 4D, E, and Figure 4\u2014figure supplement 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:39:48.634319Z"
+    },
+    {
+      "id": "a160573d-3f21-442f-a3c0-2e009f5527ba",
+      "content_id": "0633dde9-c26f-40ba-90a7-3873a6d2f63d",
+      "claim_id": "C42",
+      "claim": "S8::Dm tubules, compared with WT, had greater than 80% depletion of all differentiating germ cell types at P56.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with the flow cytometry data, quantification using molecular markers showed that S8::Dm tubules, compared with WT, had greater than 80% depletion of all differentiating germ cell types (Figure 4F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by quantitative data shown in Figure 4F",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:39:48.634319Z"
+    },
+    {
+      "id": "51261164-e128-4345-9cc3-966df13e9911",
+      "content_id": "0633dde9-c26f-40ba-90a7-3873a6d2f63d",
+      "claim_id": "C43",
+      "claim": "Mutant seminiferous tubules retained an outer rim of mito-Dendra2-positive germ cells that stained with PLZF, a marker of undifferentiated spermatogonia.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite this severe depletion of germ cells, mutant seminiferous tubules retained an outer rim of mito-Dendra2-positive germ cells that stained with PLZF, a marker of undifferentiated spermatogonia (Figure 4A and D rightmost panel, and 4F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by immunofluorescence data shown in Figure 4A, D, and F",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:39:48.634319Z"
+    },
+    {
+      "id": "3be7d5f4-1ce6-44aa-b61b-266245e61fef",
+      "content_id": "0633dde9-c26f-40ba-90a7-3873a6d2f63d",
+      "claim_id": "C44",
+      "claim": "GFR\u03b11-positive spermatogonia were present in S8::Dm mice, and their numbers were increased over 50%.",
+      "claim_type": "EXPLICIT",
+      "source": "Not only were GFR\u03b11-positive spermatogonia present in S8::Dm mice, their numbers were increased over 50%.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on quantification from testis sections",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:39:48.634319Z"
+    },
+    {
+      "id": "af694e4e-118c-4845-a4cd-695446d9e660",
+      "content_id": "0633dde9-c26f-40ba-90a7-3873a6d2f63d",
+      "claim_id": "C45",
+      "claim": "The vast majority of GFR\u03b11-positive spermatogonia express Stra8-Cre/Dn in WT and S8::Dm mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Quantification from testis sections in WT and S8::Dm mice shows that the vast majority of GFR\u03b11-positive spermatogonia express Stra8-Cre/Dn (Figure 4G and Figure 4\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by quantitative data shown in Figure 4G and Figure 4\u2014figure supplement 2",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:39:48.634319Z"
+    },
+    {
+      "id": "70ab7e46-2346-4c4a-ae52-79173ecdc582",
+      "content_id": "0633dde9-c26f-40ba-90a7-3873a6d2f63d",
+      "claim_id": "C46",
+      "claim": "Over 40% of GFR\u03b11-expressing spermatogonia are positive for the proliferation marker Ki-67, similar to that in WT animals.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, over 40% of these GFR\u03b11-expressing spermatogonia are positive for the proliferation marker Ki-67, similar to that in WT animals (Figure 4H and I).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by quantitative data shown in Figure 4H and I",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:39:48.634319Z"
+    },
+    {
+      "id": "7a4a5300-e765-47b7-9aa4-9cdbb6ab6e9b",
+      "content_id": "0633dde9-c26f-40ba-90a7-3873a6d2f63d",
+      "claim_id": "C48",
+      "claim": "Even in P116 mice, mutant seminiferous tubules retain an outer rim of undifferentiated spermatogonia that stain with Ki-67.",
+      "claim_type": "EXPLICIT",
+      "source": "Even in these older mice, mutant seminiferous tubules retain an outer rim of undifferentiated spermatogonia that stain with Ki-67 (Figure 4\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by data shown in Figure 4\u2014figure supplement 3",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:39:48.634319Z"
+    },
+    {
+      "id": "77a00b0e-9572-4b61-b82d-ab0ce7edc5cb",
+      "content_id": "0633dde9-c26f-40ba-90a7-3873a6d2f63d",
+      "claim_id": "C49",
+      "claim": "Loss of either Mfn1 or Mfn2 alone causes severe depletion of germ cells.",
+      "claim_type": "EXPLICIT",
+      "source": "As in S8::Dm mice, loss of either Mfn1 or Mfn2 alone causes severe depletion of germ cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on histology in S8::Mfn1 and S8::Mfn2 mice",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:39:48.634319Z"
+    },
+    {
+      "id": "5eed7bbd-06b4-4644-9bec-b116d1e4b57d",
+      "content_id": "0633dde9-c26f-40ba-90a7-3873a6d2f63d",
+      "claim_id": "C50",
+      "claim": "Both Mfn1 and Mfn2 are required for maintenance of differentiating spermatogonia.",
+      "claim_type": "EXPLICIT",
+      "source": "Quantification of c-Kit-expressing spermatogonia showed that both mutants have severe depletion of differentiating spermatogonia, close to the level observed in S8::Dm mice. Thus, both Mfn1 and Mfn2 are required for maintenance of differentiating spermatogonia.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on quantification data from S8::Mfn1 and S8::Mfn2 mice",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:39:48.634319Z"
+    },
+    {
+      "id": "dd766a72-7dbe-44b0-8260-892c52eded30",
+      "content_id": "0633dde9-c26f-40ba-90a7-3873a6d2f63d",
+      "claim_id": "C51",
+      "claim": "Mutant mitochondria had aberrant cristae morphology characterized by a fourfold reduction in the number of linear cristae elements and a fourfold increase in swollen, vesiculated cristae.",
+      "claim_type": "EXPLICIT",
+      "source": "Mutant mitochondria had aberrant cristae morphology characterized by a fourfold reduction in the number of linear cristae elements and a fourfold increase in swollen, vesiculated cristae (Figure 5A and B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by 3D EM tomography data shown in Figure 5A and B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:39:48.634319Z"
+    },
+    {
+      "id": "00b6f96d-1745-4111-90d9-569766b409b4",
+      "content_id": "0633dde9-c26f-40ba-90a7-3873a6d2f63d",
+      "claim_id": "C52",
+      "claim": "All vesiculated cristae in S8::Dm mitochondria could be traced back to the inner mitochondrial membrane using 3D EM tomography.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite their isolated appearance, all vesiculated cristae in S8::Dm mitochondria could be traced back to the inner mitochondrial membrane using 3D EM tomography (Video 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by 3D EM tomography shown in Video 4",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:39:48.634319Z"
+    },
+    {
+      "id": "bff5b9f6-f63f-4752-a2bb-a637ccbea9f8",
+      "content_id": "0633dde9-c26f-40ba-90a7-3873a6d2f63d",
+      "claim_id": "C53",
+      "claim": "Many cristae junctions (CJs) in mutant mitochondria are significantly widened in diameter.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, many cristae junctions (CJs) in mutant mitochondria are significantly widened in diameter (Figure 5C and D, and Figure 5\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by quantitative data shown in Figure 5C, D, and Figure 5\u2014figure supplement 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:39:48.634319Z"
+    },
+    {
+      "id": "f29c93b2-4969-401e-8e51-fce735869ec0",
+      "content_id": "0633dde9-c26f-40ba-90a7-3873a6d2f63d",
+      "claim_id": "C54",
+      "claim": "While most of the CJs in control spermatocytes are narrower than 22.5 nm (64%), the majority in S8::Dm are wider (78%).",
+      "claim_type": "EXPLICIT",
+      "source": "While most of the CJs in control spermatocytes are narrower than 22.5 nm (64%), the majority in S8::Dm are wider (78%) (Figure 5\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by quantitative data shown in Figure 5\u2014figure supplement 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:39:48.634319Z"
+    },
+    {
+      "id": "763100fe-3265-48a9-b91b-4e5faa6f8eed",
+      "content_id": "0633dde9-c26f-40ba-90a7-3873a6d2f63d",
+      "claim_id": "C55",
+      "claim": "S8::Dm sections show increased TUNEL-positive cells, indicative of cell death by apoptosis.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, S8::Dm sections show increased TUNEL-positive cells, indicative of cell death by apoptosis (Figure 5E and F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by TUNEL assay data shown in Figure 5E and F",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:39:48.634319Z"
+    },
+    {
+      "id": "2a5061f3-81b6-4eb0-b595-6d01b5e7a09d",
+      "content_id": "0633dde9-c26f-40ba-90a7-3873a6d2f63d",
+      "claim_id": "C56",
+      "claim": "Gene Ontology (GO) analysis revealed two general categories of proteins that are significantly reduced in mitochondria from Mfn1/Mfn2-null MEFs: the mitochondrial respiratory chain and the mitochondrial ribosome.",
+      "claim_type": "EXPLICIT",
+      "source": "Gene Ontology (GO) analysis revealed two general categories of proteins that are significantly reduced in mitochondria from Mfn1/Mfn2-null MEFs: the mitochondrial respiratory chain and the mitochondrial ribosome (Figure 6A and Supplementary file 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by SILAC proteomics data shown in Figure 6A and Supplementary file 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:39:48.634319Z"
+    },
+    {
+      "id": "c968022c-67ce-4eec-be00-b1e9e25d961f",
+      "content_id": "0633dde9-c26f-40ba-90a7-3873a6d2f63d",
+      "claim_id": "C57",
+      "claim": "31 out of 34 (91%) identified complex I subunits were reduced in Mfn1/Mfn2-null MEFs.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, 31 out of 34 (91%) identified complex I subunits, all 12 (100%) complex IV subunits, and 74 out of 80 (93%) mitochondrial ribosomal subunits were reduced in Mfn1/Mfn2-null MEFs (Supplementary file 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by SILAC proteomics data in Supplementary file 2",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:39:48.634319Z"
+    },
+    {
+      "id": "ef5491b0-4a00-4542-96f8-9c691fe341db",
+      "content_id": "0633dde9-c26f-40ba-90a7-3873a6d2f63d",
+      "claim_id": "C58",
+      "claim": "All 12 (100%) complex IV subunits were reduced in Mfn1/Mfn2-null MEFs.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, 31 out of 34 (91%) identified complex I subunits, all 12 (100%) complex IV subunits, and 74 out of 80 (93%) mitochondrial ribosomal subunits were reduced in Mfn1/Mfn2-null MEFs (Supplementary file 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by SILAC proteomics data in Supplementary file 2",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:39:48.634319Z"
+    },
+    {
+      "id": "d156e37e-f359-4556-b1a0-321b28692bb3",
+      "content_id": "0633dde9-c26f-40ba-90a7-3873a6d2f63d",
+      "claim_id": "C59",
+      "claim": "74 out of 80 (93%) mitochondrial ribosomal subunits were reduced in Mfn1/Mfn2-null MEFs.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, 31 out of 34 (91%) identified complex I subunits, all 12 (100%) complex IV subunits, and 74 out of 80 (93%) mitochondrial ribosomal subunits were reduced in Mfn1/Mfn2-null MEFs (Supplementary file 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by SILAC proteomics data in Supplementary file 2",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:39:48.634319Z"
+    },
+    {
+      "id": "6b389ab0-3baf-4eba-aec5-9151e011f8a2",
+      "content_id": "0633dde9-c26f-40ba-90a7-3873a6d2f63d",
+      "claim_id": "C60",
+      "claim": "Mfn1/Mfn2-null MEFs had significantly lower levels of the mitochondrial pyruvate carrier, MPC2.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with reduced OXPHOS activity, Mfn1/Mfn2-null MEFs had significantly lower levels of the mitochondrial pyruvate carrier, MPC2 (Bricker et al., 2012; Vanderperre et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by SILAC proteomics data with citations to Bricker et al., 2012 and Vanderperre et al., 2016",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:39:48.634319Z"
+    },
+    {
+      "id": "1a3790e8-0725-46ee-983d-1eb22b6c39d3",
+      "content_id": "0633dde9-c26f-40ba-90a7-3873a6d2f63d",
+      "claim_id": "C61",
+      "claim": "TFAM, a mitochondrial transcriptional activator and mtDNA packaging protein, was significantly reduced in Mfn1/Mfn2-null MEFs.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, TFAM, a mitochondrial transcriptional activator and mtDNA packaging protein, was significantly reduced.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by SILAC proteomics data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:39:48.634319Z"
+    },
+    {
+      "id": "112f7a88-5041-4150-8807-34aab9cbf09c",
+      "content_id": "0633dde9-c26f-40ba-90a7-3873a6d2f63d",
+      "claim_id": "C62",
+      "claim": "14 out of 18 (78%) complex I and IV assembly factors were increased in Mfn1/Mfn2-null MEFs.",
+      "claim_type": "EXPLICIT",
+      "source": "Intriguingly, 14 out of 18 (78%) complex I and IV assembly factors were increased in Mfn1/Mfn2-null MEFs and of the seven that reached statistical significance, all were increased (Figure 6B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by SILAC proteomics data shown in Figure 6B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:39:48.634319Z"
+    },
+    {
+      "id": "e206ef6b-7a4c-4fc0-b44f-4df3238625c4",
+      "content_id": "0633dde9-c26f-40ba-90a7-3873a6d2f63d",
+      "claim_id": "C63",
+      "claim": "17 out of 21 (81%) detected mitochondrial import proteins were increased in Mfn1/Mfn2-null MEFs.",
+      "claim_type": "EXPLICIT",
+      "source": "17 out of 21 (81%) detected mitochondrial import proteins were increased, and of the 10 that reached statistical significance, all were increased in Mfn1/Mfn2-null MEFs (Figure 6B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by SILAC proteomics data shown in Figure 6B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:39:48.634319Z"
+    },
+    {
+      "id": "34b8b161-87ce-46ba-a9cc-c019104c20e5",
+      "content_id": "0633dde9-c26f-40ba-90a7-3873a6d2f63d",
+      "claim_id": "C64",
+      "claim": "Mitofusin knockdown in GC-2spd(ts) cells causes widespread mitochondrial fragmentation.",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, mitofusin knockdown in GCs causes widespread mitochondrial fragmentation and reduction in all OXPHOS subunits tested by western blotting: complex I subunit (NdufB8), complex II subunit SDHB, complex III subunit UQRC2, complex IV subunit MTCOI, and complex V subunit ATP5A (Figure 7C and D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by immunofluorescence data shown in Figure 7A and B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:39:48.634319Z"
+    },
+    {
+      "id": "085cbe01-0d82-45a9-9512-312c2770738e",
+      "content_id": "0633dde9-c26f-40ba-90a7-3873a6d2f63d",
+      "claim_id": "C65",
+      "claim": "Mitofusin knockdown in GC-2spd(ts) cells causes reduction in all OXPHOS subunits tested by western blotting.",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, mitofusin knockdown in GCs causes widespread mitochondrial fragmentation and reduction in all OXPHOS subunits tested by western blotting: complex I subunit (NdufB8), complex II subunit SDHB, complex III subunit UQRC2, complex IV subunit MTCOI, and complex V subunit ATP5A (Figure 7C and D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by western blot data shown in Figure 7C and D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:39:48.634319Z"
+    },
+    {
+      "id": "df6a2497-1498-4651-a0b6-7518943a15d7",
+      "content_id": "0633dde9-c26f-40ba-90a7-3873a6d2f63d",
+      "claim_id": "C66",
+      "claim": "Mitofusin knockdown in GC-2spd(ts) cells caused a severe reduction in basal and maximal respiration, ATP production, and spare capacity.",
+      "claim_type": "EXPLICIT",
+      "source": "Mitofusin knockdown caused a severe reduction in basal and maximal respiration, ATP production, and spare capacity (Figure 7E and F), but not glycolysis (Figure 7G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by Seahorse data shown in Figure 7E, F, and G",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:39:48.634319Z"
+    },
+    {
+      "id": "7417b606-fb38-487d-887b-837dbcc63960",
+      "content_id": "0633dde9-c26f-40ba-90a7-3873a6d2f63d",
+      "claim_id": "C67",
+      "claim": "Mitofusin knockdown in GC-2spd(ts) cells did not affect glycolysis.",
+      "claim_type": "EXPLICIT",
+      "source": "Mitofusin knockdown caused a severe reduction in basal and maximal respiration, ATP production, and spare capacity (Figure 7E and F), but not glycolysis (Figure 7G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by Seahorse data shown in Figure 7G",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:39:48.634319Z"
+    },
+    {
+      "id": "a3368cd8-f866-4501-baa8-ea1894ef579b",
+      "content_id": "0633dde9-c26f-40ba-90a7-3873a6d2f63d",
+      "claim_id": "C68",
+      "claim": "Mitofusin knockdown in MEFs caused mitochondrial fragmentation but not OXPHOS deficiency.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, mitofusin knockdown in MEFs caused mitochondrial fragmentation (Figure 7\u2014figure supplement 2), but not OXPHOS deficiency (Figure 7\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by data shown in Figure 7\u2014figure supplement 2 and 3",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:39:48.634319Z"
+    },
+    {
+      "id": "8de23da7-ae4a-4c0c-bb8f-bf5b47cf5ddf",
+      "content_id": "0633dde9-c26f-40ba-90a7-3873a6d2f63d",
+      "claim_id": "C69",
+      "claim": "GC-2spd(ts) cells are particularly sensitive to loss of mitofusins.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, these data indicate that GCs are particularly sensitive to loss of mitofusins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion drawn from comparison of GC and MEF responses to mitofusin knockdown",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:39:48.634319Z"
+    },
+    {
+      "id": "d1e79ba7-bf18-443d-a41b-572a2b03c7f5",
+      "content_id": "0633dde9-c26f-40ba-90a7-3873a6d2f63d",
+      "claim_id": "C70",
+      "claim": "Most spermatocytes in S8::Dm mice show a heterogeneous staining pattern in which a substantial subset of mito-Dendra2-positive mitochondria clearly lack OXPHOS components.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, most spermatocytes in S8::Dm mice show a heterogeneous staining pattern in which a substantial subset of mito-Dendra2-positive mitochondria clearly lack OXPHOS components.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on immunofluorescence analysis described in the text",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:39:48.634319Z"
+    },
+    {
+      "id": "61d9e009-07ea-45dd-adc2-c4533afd0e9c",
+      "content_id": "0633dde9-c26f-40ba-90a7-3873a6d2f63d",
+      "claim_id": "C71",
+      "claim": "S8::Dm spermatocytes have reduced and heterogeneous expression of the complex I subunit NdufB6, the complex IV subunit MTCOI, and the mitochondrial pyruvate carrier MPC1.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with the proteomics in cultured cells, S8::Dm spermatocytes have reduced and heterogeneous expression of the complex I subunit NdufB6, the complex IV subunit MTCOI, and the mitochondrial pyruvate carrier MPC1 (an obligate binding partner of MPC2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on immunofluorescence analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:39:48.634319Z"
+    },
+    {
+      "id": "54b9deba-0bc0-46dd-9e7a-ca2000026005",
+      "content_id": "0633dde9-c26f-40ba-90a7-3873a6d2f63d",
+      "claim_id": "C72",
+      "claim": "The mtDNA-encoded MTCOI has the most heterogeneous expression in S8::Dm spermatocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "We noted that the mtDNA-encoded MTCOI has the most heterogeneous expression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on immunofluorescence analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:39:48.634319Z"
+    },
+    {
+      "id": "fc602d5d-bac3-4c2e-adb1-e3a35cc38273",
+      "content_id": "0633dde9-c26f-40ba-90a7-3873a6d2f63d",
+      "claim_id": "C73",
+      "claim": "Many shMfn1;Mfn2 GC-2spd(ts) cells display reduced or heterogeneous MTCOI expression, with a substantial subset of mitochondria lacking MTCOI.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, many shMfn1;Mfn2 GCs display reduced or heterogeneous MTCOI expression, with a substantial subset of mitochondria lacking MTCOI (Figure 8\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by immunofluorescence data shown in Figure 8\u2014figure supplement 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:39:48.634319Z"
+    },
+    {
+      "id": "4e6721da-b8ae-44fc-9499-dc941c833fc9",
+      "content_id": "0633dde9-c26f-40ba-90a7-3873a6d2f63d",
+      "claim_id": "C74",
+      "claim": "There is mitochondrial heterogeneity in differentiated spermatogonia in S8::Dm mice.",
+      "claim_type": "EXPLICIT",
+      "source": "In agreement with the progressive loss of differentiated spermatogonia in S8::Dm mice, there is also mitochondrial heterogeneity in this cell type (Figure 8\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by immunofluorescence data shown in Figure 8\u2014figure supplement 2",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:39:48.634319Z"
+    },
+    {
+      "id": "47aa6cfb-5291-4bb0-8961-9a6a663a891a",
+      "content_id": "0633dde9-c26f-40ba-90a7-3873a6d2f63d",
+      "claim_id": "C75",
+      "claim": "There is mitochondrial heterogeneity in undifferentiated spermatogonia in S8::Dm mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Surprisingly, we also find mitochondrial heterogeneity in undifferentiated spermatogonia, which are not depleted in S8::Dm mice.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on immunofluorescence analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:39:48.634319Z"
+    },
+    {
+      "id": "556a7983-10ee-452b-a9a0-a67f527282e4",
+      "content_id": "0633dde9-c26f-40ba-90a7-3873a6d2f63d",
+      "claim_id": "C76",
+      "claim": "Undifferentiated spermatogonia can tolerate mitochondrial heterogeneity, suggesting that these cells are physiologically different.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the undifferentiated spermatogonia can apparently tolerate this defect, suggesting that these cells are physiologically different.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference drawn from the observation that undifferentiated spermatogonia are not depleted despite mitochondrial heterogeneity",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:39:48.634319Z"
+    },
+    {
+      "id": "68ebd0e9-3ce3-4352-b4fc-f15bbc0e3c76",
+      "content_id": "0633dde9-c26f-40ba-90a7-3873a6d2f63d",
+      "claim_id": "C77",
+      "claim": "Spermatozoa isolated from S8::Mfn1 and S8::Mfn2 mice show reduction of both COX and SDH activities.",
+      "claim_type": "EXPLICIT",
+      "source": "To test for functional changes in mitochondrial activity, we performed COX/SDH enzyme histochemistry on spermatozoa isolated from S8::Mfn1 and S8::Mfn2 mice and found reduction of both COX and SDH activities (Figure 8\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by COX/SDH enzyme histochemistry data shown in Figure 8\u2014figure supplement 3",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:39:48.634319Z"
+    },
+    {
+      "id": "85d1d761-851c-4fa7-9834-beb9d6a0d228",
+      "content_id": "0633dde9-c26f-40ba-90a7-3873a6d2f63d",
+      "claim_id": "C78",
+      "claim": "Fresh-frozen testis sections from S8::Dm mice show a severe reduction of COX and SDH activities in germ cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Because S8::Dm mice do not produce any sperm, we performed COX/SDH enzyme histochemistry in fresh-frozen testis sections and found a severe reduction of COX and SDH activities in S8::Dm germ cells (Figure 8C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by COX/SDH enzyme histochemistry data shown in Figure 8C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:39:48.634319Z"
+    },
+    {
+      "id": "3c30d963-6c4f-4416-a661-4ebe53f05e13",
+      "content_id": "0633dde9-c26f-40ba-90a7-3873a6d2f63d",
+      "claim_id": "C79",
+      "claim": "Mitofusin depletion in germ cells in vivo causes ultrastructural defects, heterogeneity in OXPHOS expression, and reduced OXPHOS subunits and activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, consistent with data in MEFs and immortalized spermatocytes, mitofusin depletion in germ cells in vivo causes ultrastructural defects, heterogeneity in OXPHOS expression, and reduced OXPHOS subunits and activity (Figure 9).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Summary conclusion supported by multiple lines of experimental data shown in Figure 9",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:39:48.634319Z"
+    },
+    {
+      "id": "c693f43e-c97a-4797-ac80-e0625a9f9ec4",
+      "content_id": "0633dde9-c26f-40ba-90a7-3873a6d2f63d",
+      "claim_id": "C80",
+      "claim": "Spermatocytes require mitochondrial fusion as they undergo an acute upregulation of OXPHOS during MPI.",
+      "claim_type": "EXPLICIT",
+      "source": "Our study reveals that spermatocytes require mitochondrial fusion as they undergo an acute upregulation of OXPHOS during MPI (Figure 9).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Conclusion drawn from experimental data shown in Figure 9",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:39:48.634319Z"
+    },
+    {
+      "id": "88d95a73-6970-442b-9170-0d82e43910a6",
+      "content_id": "0633dde9-c26f-40ba-90a7-3873a6d2f63d",
+      "claim_id": "C81",
+      "claim": "Mfn1 but not Mfn2 is essential for the metabolic transition during MPI.",
+      "claim_type": "EXPLICIT",
+      "source": "Analysis of the single mutant mice showed that Mfn1 but not Mfn2 is essential for this transition.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on comparison of S8::Mfn1 and S8::Mfn2 phenotypes",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:39:48.634319Z"
+    },
+    {
+      "id": "fc4dd234-fc37-4817-b8fa-82256c8a1645",
+      "content_id": "0633dde9-c26f-40ba-90a7-3873a6d2f63d",
+      "claim_id": "C82",
+      "claim": "The metabolic transition during MPI coincides with increased mitochondrial density, mitochondrial elongation, and upregulation of OXPHOS activity.",
+      "claim_type": "EXPLICIT",
+      "source": "We show that this transition coincides with increased mitochondrial density, mitochondrial elongation, and upregulation of OXPHOS activity, which are all blocked in fusion-deficient spermatocytes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on experimental observations of mitochondrial changes during MPI",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:39:48.634319Z"
+    },
+    {
+      "id": "b2cf821e-ab0b-4a8f-a243-83e6d14ad483",
+      "content_id": "0633dde9-c26f-40ba-90a7-3873a6d2f63d",
+      "claim_id": "C83",
+      "claim": "The increased OXPHOS in pachytene spermatocytes is likely required to fuel ATP-consuming biochemical reactions involved in homologous recombination and DSB repair.",
+      "claim_type": "EXPLICIT",
+      "source": "The increased OXPHOS in pachytene spermatocytes is likely required to fuel ATP-consuming biochemical reactions involved in homologous recombination and DSB repair.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculation based on the metabolic requirements of meiotic processes",
+      "evidence_type": "[\"SPECULATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:39:48.634319Z"
+    },
+    {
+      "id": "41c714e1-c6c7-42a5-836c-da47e2b0bc7b",
+      "content_id": "0633dde9-c26f-40ba-90a7-3873a6d2f63d",
+      "claim_id": "C84",
+      "claim": "Spermatocytes switch their energy dependence from glucose to lactate and pyruvate as they traverse the blood-testis barrier.",
+      "claim_type": "EXPLICIT",
+      "source": "As a result, spermatocytes switch their energy dependence from glucose to lactate and pyruvate, which are preferred substrates for OXPHOS (Bajpai et al., 1998; Grootegoed et al., 1984; Nakamura et al., 1984; Rato et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by multiple citations",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:39:48.634319Z"
+    },
+    {
+      "id": "a67d4232-32de-4b0d-b855-2e5436aeb075",
+      "content_id": "0633dde9-c26f-40ba-90a7-3873a6d2f63d",
+      "claim_id": "C85",
+      "claim": "Round spherical mitochondria with orthodox cristae in early MPI convert in pachytene to more elongated mitochondria with condensed cristae.",
+      "claim_type": "EXPLICIT",
+      "source": "Round spherical mitochondria with orthodox cristae in early MPI convert in pachytene to more elongated mitochondria with condensed cristae (De Martino et al., 1979; Meinhardt, 1999; Seitz et al., 1995), an ultrastructure associated with active OXPHOS (Hackenbrock, 1966; Mannella, 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by multiple citations",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:39:48.634319Z"
+    },
+    {
+      "id": "ee757ece-1a3a-4902-aa63-ce830d6fc5ab",
+      "content_id": "0633dde9-c26f-40ba-90a7-3873a6d2f63d",
+      "claim_id": "C86",
+      "claim": "Mitofusins are required not only in spermatocytes, but also in differentiating spermatogonia.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast to the Mfn1 study (Zhang et al., 2016), we show that mitofusins are required not only in spermatocytes, but also in differentiating spermatogonia (Figure 9).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on experimental data showing depletion of differentiating spermatogonia, shown in Figure 9",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:39:48.634319Z"
+    },
+    {
+      "id": "33111cde-5896-48e3-8837-09aeb02a84ca",
+      "content_id": "0633dde9-c26f-40ba-90a7-3873a6d2f63d",
+      "claim_id": "C87",
+      "claim": "S8::Mfn1, S8::Mfn2, and S8::Dm mice exhibit a progressive loss of all differentiated germ cell types, including the differentiating spermatogonia that give rise to spermatocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "S8::Mfn1, S8::Mfn2, and S8::Dm mice exhibit a progressive loss of all differentiated germ cell types, including the differentiating spermatogonia that give rise to spermatocytes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on experimental observations in adult mice",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:39:48.634319Z"
+    },
+    {
+      "id": "95c14200-7b79-4c2a-8641-6b732e8bacf4",
+      "content_id": "0633dde9-c26f-40ba-90a7-3873a6d2f63d",
+      "claim_id": "C88",
+      "claim": "The age-dependent loss of germ cells is likely caused by the progressive depletion of mitofusin gene products due to the iterative nature of spermatogenesis.",
+      "claim_type": "EXPLICIT",
+      "source": "The age-dependent loss is likely caused by the progressive depletion of mitofusin gene products due to the iterative nature of spermatogenesis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference drawn from the observation of progressive phenotype worsening with age",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:39:48.634319Z"
+    },
+    {
+      "id": "7264fd05-d823-4674-877e-5e73b4134c16",
+      "content_id": "0633dde9-c26f-40ba-90a7-3873a6d2f63d",
+      "claim_id": "C89",
+      "claim": "At P24, during the first round of spermatogenesis, germ cells may contain residual levels of mitofusin activity sufficient to mitigate effects on spermatogonia.",
+      "claim_type": "EXPLICIT",
+      "source": "At P24, during the first round of spermatogenesis, germ cells may contain residual levels of mitofusin activity sufficient to mitigate effects on spermatogonia.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculation to explain the difference between P24 and P56 phenotypes",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:39:48.634319Z"
+    },
+    {
+      "id": "44f75203-c10e-4863-afb8-6727d34721ee",
+      "content_id": "0633dde9-c26f-40ba-90a7-3873a6d2f63d",
+      "claim_id": "C90",
+      "claim": "Undifferentiated spermatogonia, differentiating spermatogonia, and spermatocytes show progressively increasing requirements for mitochondrial fusion.",
+      "claim_type": "EXPLICIT",
+      "source": "Undifferentiated spermatogonia, differentiating spermatogonia, and spermatocytes therefore show progressively increasing requirements for mitochondrial fusion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion drawn from the differential sensitivity of germ cell types to mitofusin loss",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:39:48.634319Z"
+    },
+    {
+      "id": "d332b630-985b-401f-bb54-09c77b9c4f67",
+      "content_id": "0633dde9-c26f-40ba-90a7-3873a6d2f63d",
+      "claim_id": "C91",
+      "claim": "These results are consistent with a paradigm in various stem cell systems, wherein stem cells compared with differentiated cells are less dependent on mitochondrial OXPHOS.",
+      "claim_type": "EXPLICIT",
+      "source": "These results are consistent with a paradigm in various (but not all) stem cell systems, wherein stem cells compared with differentiated cells are less dependent on mitochondrial OXPHOS (Chen and Chan, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Chen and Chan, 2017",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:39:48.634319Z"
+    },
+    {
+      "id": "dee67726-7747-4825-8348-6ee10ecd192e",
+      "content_id": "0633dde9-c26f-40ba-90a7-3873a6d2f63d",
+      "claim_id": "C92",
+      "claim": "The two major phenotypes of S8::Dm mice\u2014meiotic failure and spermatogonial differentiation\u2014are also observed with loss of Mfn1 alone.",
+      "claim_type": "EXPLICIT",
+      "source": "The two major phenotypes of S8::Dm mice\u2014meiotic failure and spermatogonial differentiation\u2014are also observed with loss of Mfn1 alone.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on experimental observations in S8::Mfn1 mice",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:39:48.634319Z"
+    },
+    {
+      "id": "a0263ad6-585a-4b05-96d6-7170f4c44486",
+      "content_id": "0633dde9-c26f-40ba-90a7-3873a6d2f63d",
+      "claim_id": "C93",
+      "claim": "The spermatogenesis defects should be attributed to loss of mitochondrial fusion, rather than non-fusion functions like ER-mitochondria tethering that have been attributed to Mfn2.",
+      "claim_type": "EXPLICIT",
+      "source": "This observation suggests that these defects should be attributed to loss of mitochondrial fusion, rather than non-fusion functions, like ER-mitochondria tethering, that have been attributed to Mfn2 (de Brito and Scorrano, 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference drawn from the observation that Mfn1 loss alone recapitulates the phenotype, with citation to de Brito and Scorrano, 2008",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:39:48.634319Z"
+    },
+    {
+      "id": "936e41b1-be29-40fb-8f95-5fb04d21ec89",
+      "content_id": "0633dde9-c26f-40ba-90a7-3873a6d2f63d",
+      "claim_id": "C94",
+      "claim": "Full inhibition of mitochondrial fusion by deletion of both mitofusins uncovers their role in maintaining the respiratory chain and mitochondrial translation.",
+      "claim_type": "EXPLICIT",
+      "source": "In our study, full inhibition of mitochondrial fusion by deletion of both mitofusins uncovers their role in maintaining the respiratory chain and mitochondrial translation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion drawn from SILAC proteomics data",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:39:48.634319Z"
+    },
+    {
+      "id": "073353ac-74c6-4e6e-b63f-a464a981b531",
+      "content_id": "0633dde9-c26f-40ba-90a7-3873a6d2f63d",
+      "claim_id": "C95",
+      "claim": "The increase in respiratory chain complex I and IV assembly factors and mitochondrial import proteins in Mfn1/Mfn2-null MEFs may be indicative of a compensatory stress response to the cellular dysfunction caused by mitochondrial fusion deficiency.",
+      "claim_type": "EXPLICIT",
+      "source": "These increases may be indicative of a compensatory stress response to the cellular dysfunction caused by mitochondrial fusion deficiency.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculation to explain the observed increase in assembly factors and import proteins",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:39:48.634319Z"
+    },
+    {
+      "id": "708294ca-5070-4f5e-9b5f-addd8ac9a0d3",
+      "content_id": "0633dde9-c26f-40ba-90a7-3873a6d2f63d",
+      "claim_id": "C96",
+      "claim": "The metabolic derangements revealed by proteomics in MEFs extend to a spermatocyte cell line and to spermatocytes in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, the metabolic derangements revealed by proteomics in MEFs extend to a spermatocyte cell line and to spermatocytes in vivo.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion drawn from comparison of MEF, GC, and in vivo data",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:39:48.634319Z"
+    },
+    {
+      "id": "e58d0fa5-b093-49c8-baea-d239d6d04b29",
+      "content_id": "0633dde9-c26f-40ba-90a7-3873a6d2f63d",
+      "claim_id": "C97",
+      "claim": "Mitochondrial fusion safeguards mitochondrial function and male fertility.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, our findings provide a rationale for how mitochondrial fusion safeguards mitochondrial function and male fertility.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Overall conclusion drawn from all experimental findings",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:39:48.634319Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "757d3dd6-f2c0-4c02-ae12-92f6a0f2f7a7",
+      "content_id": "0633dde9-c26f-40ba-90a7-3873a6d2f63d",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Mitofusin-deficient mice (S8::Mfn1, S8::Mfn2, and S8::Dm) are healthy with normal body weight but exhibit smaller testes, reduced sperm counts, and sperm defects including mitochondrial fragmentation, morphological abnormalities, and loss of motility. S8::Dm mice completely lack epididymal spermatozoa.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C18-C23 provide converging evidence from multiple measurements (testis weight, sperm counts, morphology, motility) with appropriate controls and quantification (Figures 1A-H). The phenotypic progression from partial defects in single mutants to complete absence of sperm in double mutants is internally consistent and well-documented.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:39:48.634319Z"
+    },
+    {
+      "id": "421e4c2f-5faf-46ce-aa24-0f46465513c6",
+      "content_id": "0633dde9-c26f-40ba-90a7-3873a6d2f63d",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "At P24, S8::Dm mice exhibit a meiotic arrest at the zygotene-to-pachytene transition during Meiotic Prophase I (MPI), with 55% of tubules containing cells differentiated only to leptotene/zygotene. Loss of Mfn1 alone is sufficient to cause this meiotic defect, while S8::Mfn2 mice show normal MPI progression.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C24-C32 are supported by multiple complementary approaches: histology (C24-C28), chromosomal spreading with stage-specific markers (C29), and comparison of single mutants (C30-C31). The quantitative data showing accumulation at specific meiotic stages and the differential requirement for Mfn1 vs Mfn2 are well-documented with appropriate statistical analysis.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:39:48.634319Z"
+    },
+    {
+      "id": "271bf975-44b6-4f8f-8be4-d00b1f6bb1da",
+      "content_id": "0633dde9-c26f-40ba-90a7-3873a6d2f63d",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "During MPI, pachytene/diplotene spermatocytes undergo a metabolic shift characterized by >3-fold increase in mitochondrial content, mitochondrial elongation and clustering, upregulation of MPC1 expression, and substantially increased OXPHOS capacity compared to diploid spermatogonia. This metabolic shift is impaired in S8::Dm spermatocytes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C33-C38 demonstrate the metabolic shift through multiple independent measurements: fluorescence quantification of mitochondrial content (C33-C34), morphological analysis (C35-C36), immunofluorescence of metabolic markers (C37), and direct functional measurements via Seahorse analysis (C38). The convergence of structural, molecular, and functional data strongly supports this result.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:39:48.634319Z"
+    },
+    {
+      "id": "9f54965e-ca9c-43c7-81eb-429c8a138fc8",
+      "content_id": "0633dde9-c26f-40ba-90a7-3873a6d2f63d",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "By P56, S8::Dm mice show progressive depletion of all differentiated germ cell types (>80% loss) but retain proliferative undifferentiated spermatogonia including GFR\u03b11-positive stem-like cells. Both Mfn1 and Mfn2 are required for maintenance of differentiating spermatogonia.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C39-C50 document the age-dependent phenotype through multiple approaches: histology (C39, C41), flow cytometry (C40), cell-type specific quantification (C42-C46), and analysis of single mutants (C49-C50). The preservation of undifferentiated spermatogonia despite loss of differentiated cells is well-documented with proliferation markers (C46, C48), establishing differential sensitivity to mitofusin loss.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:39:48.634319Z"
+    },
+    {
+      "id": "43639263-d0d1-4ad1-9bc2-e66c6112cde1",
+      "content_id": "0633dde9-c26f-40ba-90a7-3873a6d2f63d",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Mitofusin-deficient germ cells exhibit severe mitochondrial ultrastructural defects including 4-fold reduction in linear cristae, 4-fold increase in vesiculated cristae, widened cristae junctions (78% >22.5 nm vs 36% in controls), and increased apoptosis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C51-C55 are supported by rigorous 3D EM tomography with quantitative analysis of cristae morphology (C51-C54) and functional validation via TUNEL assay (C55). The ultrastructural analysis provides direct evidence of mitochondrial dysfunction, though the causal relationship between cristae defects and the spermatogenic phenotype remains correlative.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:39:48.634319Z"
+    },
+    {
+      "id": "bcb04b8f-ab97-463c-9bbd-c6bca7ad4e16",
+      "content_id": "0633dde9-c26f-40ba-90a7-3873a6d2f63d",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "SILAC proteomics in Mfn1/Mfn2-null MEFs reveals significant reduction in respiratory chain complexes (91% of complex I, 100% of complex IV subunits) and mitochondrial ribosomes (93% of subunits), along with decreased MPC2 and TFAM. Conversely, complex I/IV assembly factors (78%) and mitochondrial import proteins (81%) are increased.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C56-C63 are based on comprehensive SILAC proteomics with appropriate statistical analysis and GO term enrichment. The bidirectional changes (decreased OXPHOS/ribosomes vs increased assembly factors/import machinery) suggest a compensatory response. However, only two biological replicates were used, which is at the lower limit for proteomics studies, and validation of key targets by orthogonal methods in MEFs is not shown.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:39:48.634319Z"
+    },
+    {
+      "id": "1c587364-af98-4f76-aef9-1c15462fcf24",
+      "content_id": "0633dde9-c26f-40ba-90a7-3873a6d2f63d",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Mitofusin knockdown in GC-2spd(ts) spermatocyte cells causes mitochondrial fragmentation, reduction in all tested OXPHOS subunits, and severe impairment of respiration and ATP production without affecting glycolysis. GC cells are more sensitive to mitofusin loss than MEFs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C64-C69 demonstrate cell-type specific sensitivity through parallel experiments in GC cells and MEFs. The GC cell phenotype is well-documented with morphological (C64), biochemical (C65), and functional (C66-C67) measurements. However, the knockdown efficiency in MEFs (C68) may not be sufficient to recapitulate the null phenotype observed in the proteomics, limiting the strength of the cell-type comparison.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:39:48.634319Z"
+    },
+    {
+      "id": "922f3289-b6ef-4ba8-8138-5d7b88754f1c",
+      "content_id": "0633dde9-c26f-40ba-90a7-3873a6d2f63d",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "In vivo, mitofusin-deficient spermatocytes show heterogeneous and reduced expression of OXPHOS components (NDUFB6, MTCOI, MPC1) with mitochondria lacking OXPHOS proteins, and severely reduced COX/SDH enzyme activities. Mitochondrial heterogeneity occurs in all germ cell types but is tolerated by undifferentiated spermatogonia.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C70-C79 extend the MEF and GC cell findings to the in vivo context through immunofluorescence (C70-C76) and enzyme histochemistry (C77-C78). The observation of mitochondrial heterogeneity across germ cell types with differential tolerance (C75-C76) is particularly important. The convergence of data from MEFs, GC cells, and in vivo models (C79) strengthens the overall conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:39:48.634319Z"
+    },
+    {
+      "id": "10d147bf-1454-4e6b-bf07-78f330e32539",
+      "content_id": "0633dde9-c26f-40ba-90a7-3873a6d2f63d",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Spermatocytes require mitochondrial fusion for an acute upregulation of OXPHOS during MPI, which coincides with increased mitochondrial density, elongation, and OXPHOS activity. Mfn1 but not Mfn2 is essential for this metabolic transition.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C80-C82 synthesize findings from multiple result groups into a coherent model. The differential requirement for Mfn1 vs Mfn2 (C81) is supported by the single mutant analyses (C30-C31). The temporal correlation between the metabolic shift and mitochondrial changes (C82) is well-documented, though the mechanistic basis for Mfn1 specificity is not established.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:39:48.634319Z"
+    },
+    {
+      "id": "06450ac4-4ed9-426e-82da-793b29d43e82",
+      "content_id": "0633dde9-c26f-40ba-90a7-3873a6d2f63d",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Mitofusins are required in both spermatocytes and differentiating spermatogonia, with progressive age-dependent loss of differentiated germ cell types. Undifferentiated spermatogonia, differentiating spermatogonia, and spermatocytes show progressively increasing requirements for mitochondrial fusion.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C86-C90 establish the broader requirement for mitofusins beyond spermatocytes and propose a model for the age-dependent phenotype. The progressive depletion model (C88-C89) is reasonable but remains speculative as it is based on inference rather than direct measurement of mitofusin levels over time. The hierarchy of sensitivity (C90) is well-supported by the differential depletion data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:39:48.634319Z"
+    },
+    {
+      "id": "b9b27cdb-45eb-4727-8889-38bbb31f0e36",
+      "content_id": "0633dde9-c26f-40ba-90a7-3873a6d2f63d",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The spermatogenesis defects (meiotic failure and spermatogonial differentiation) are attributable to loss of mitochondrial fusion rather than non-fusion functions of Mfn2, as loss of Mfn1 alone recapitulates both major phenotypes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C92-C93 provide important mechanistic insight by demonstrating that Mfn1 loss alone is sufficient for the major phenotypes. This argues against Mfn2-specific functions (e.g., ER-mitochondria tethering) as the primary cause. However, the conclusion would be strengthened by analysis of Opa1 mutants or other fusion machinery components to definitively establish fusion as the critical function.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:39:48.634319Z"
+    },
+    {
+      "id": "22b57e02-134d-41b7-941a-7843e0efd24d",
+      "content_id": "0633dde9-c26f-40ba-90a7-3873a6d2f63d",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Complete inhibition of mitochondrial fusion by deletion of both mitofusins reveals their role in maintaining the respiratory chain and mitochondrial translation. The metabolic derangements observed in MEFs extend to spermatocyte cell lines and spermatocytes in vivo.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C94-C96 synthesize the proteomics and functional data across model systems. The extension from MEFs to GC cells to in vivo (C96) is well-documented. However, C95 regarding compensatory stress responses is speculative and not directly tested. The mechanistic link between loss of fusion and downregulation of OXPHOS components remains unclear.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:39:48.634319Z"
+    },
+    {
+      "id": "20f2587d-06f5-4a6d-8604-a071997a33b4",
+      "content_id": "0633dde9-c26f-40ba-90a7-3873a6d2f63d",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The increased OXPHOS in pachytene spermatocytes is likely required to fuel ATP-consuming biochemical reactions involved in homologous recombination and DSB repair.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C83 is a reasonable hypothesis based on the known energy requirements of meiotic processes, but it is explicitly speculative and not directly tested. No experiments measure ATP levels, energy charge, or directly link OXPHOS capacity to recombination/repair efficiency. This remains an inference that requires experimental validation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:39:48.634319Z"
+    },
+    {
+      "id": "037f8f6f-fc64-4ac7-a6ed-86e5a75d37d3",
+      "content_id": "0633dde9-c26f-40ba-90a7-3873a6d2f63d",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Spermatocytes switch energy dependence from glucose to lactate/pyruvate as they cross the blood-testis barrier, and mitochondrial morphology changes from round with orthodox cristae to elongated with condensed cristae during pachytene.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C84-C85 are supported by appropriate citations to prior literature. These are established findings that provide important context for the current study but do not represent new experimental results from this manuscript.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:39:48.634319Z"
+    },
+    {
+      "id": "b2320a74-be3a-42bb-926e-2831867f0f06",
+      "content_id": "0633dde9-c26f-40ba-90a7-3873a6d2f63d",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The differential sensitivity of stem vs differentiated germ cells to mitofusin loss is consistent with a paradigm in stem cell systems where stem cells are less dependent on mitochondrial OXPHOS than differentiated cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C91 places the findings in a broader context with appropriate citation. This is a valid comparison that strengthens the interpretation, though it represents contextualization rather than a novel finding. The caveat that this paradigm does not apply to all stem cell systems is appropriately noted.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:39:48.634319Z"
+    },
+    {
+      "id": "9d9ce4db-49bd-4d95-bd09-b73d46df8d13",
+      "content_id": "0633dde9-c26f-40ba-90a7-3873a6d2f63d",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Mitochondrial fusion safeguards mitochondrial function and male fertility.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C97 is the overarching conclusion supported by the totality of the experimental evidence. This represents an appropriate synthesis of the major findings demonstrating the essential role of mitochondrial fusion in spermatogenesis.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:39:48.634319Z"
+    },
+    {
+      "id": "5f6ac7c9-3cce-426a-9885-3897884a0171",
+      "content_id": "0633dde9-c26f-40ba-90a7-3873a6d2f63d",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Background on mitochondrial fusion: The fzo gene was discovered in Drosophila male sterility mutants, mitofusins (MFN1/MFN2) are conserved homologs, and fusion serves as a quality control mechanism affecting mitochondrial function, transport, and degradation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C7 provide established background information supported by appropriate citations. These are not new findings but necessary context for the study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:39:48.634319Z"
+    },
+    {
+      "id": "ae0ae2a0-ab7e-431d-962b-ba43aef8d5a2",
+      "content_id": "0633dde9-c26f-40ba-90a7-3873a6d2f63d",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "Background on spermatogenesis and mitochondrial function: Spermatogenesis involves differentiation through multiple stages, mitochondrial dysfunction is linked to male infertility in humans and mice, and prior studies showed Mfn1 is required for spermatogenesis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8-C16 provide essential background on spermatogenesis and prior work linking mitochondrial function to male fertility. These are appropriately cited and establish the rationale for the current study but do not represent new findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:39:48.634319Z"
+    },
+    {
+      "id": "8b29b33f-72a0-4056-8775-38ec8a0e675e",
+      "content_id": "0633dde9-c26f-40ba-90a7-3873a6d2f63d",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "Stra8-Cre expression begins at P3 in undifferentiated spermatogonia including the majority of GFR\u03b11-positive cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C17 is supported by appropriate citations and confirmed by the authors' own Cre reporter analysis (Figure 1\u2014figure supplement 2). This characterization of the genetic tool is important for interpreting the results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:39:48.634319Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "009cd5cc-b716-4191-884f-955c3c4fdf86",
+      "result_id": "757d3dd6-f2c0-4c02-ae12-92f6a0f2f7a7"
+    },
+    {
+      "claim_id": "9e93b5a4-93ee-4da6-a0a0-173dfbef93f3",
+      "result_id": "757d3dd6-f2c0-4c02-ae12-92f6a0f2f7a7"
+    },
+    {
+      "claim_id": "f6b72ee8-580a-4a75-8988-4bfc7c4e516c",
+      "result_id": "757d3dd6-f2c0-4c02-ae12-92f6a0f2f7a7"
+    },
+    {
+      "claim_id": "e5ecbd08-1404-4e3c-915a-58e932c27abc",
+      "result_id": "757d3dd6-f2c0-4c02-ae12-92f6a0f2f7a7"
+    },
+    {
+      "claim_id": "44e67304-b7a9-4a60-a9d2-fdde61330488",
+      "result_id": "757d3dd6-f2c0-4c02-ae12-92f6a0f2f7a7"
+    },
+    {
+      "claim_id": "aa0c3c86-36f6-410d-852d-a8ce98f7f997",
+      "result_id": "757d3dd6-f2c0-4c02-ae12-92f6a0f2f7a7"
+    },
+    {
+      "claim_id": "2a2d2d20-c2c3-4ef3-9306-31329757251f",
+      "result_id": "421e4c2f-5faf-46ce-aa24-0f46465513c6"
+    },
+    {
+      "claim_id": "da5253fd-b846-4dd9-bf2b-9efdf5b785bf",
+      "result_id": "421e4c2f-5faf-46ce-aa24-0f46465513c6"
+    },
+    {
+      "claim_id": "341a6d56-bc1e-4069-9646-de5d92178601",
+      "result_id": "421e4c2f-5faf-46ce-aa24-0f46465513c6"
+    },
+    {
+      "claim_id": "e4da6d8c-9a2f-4d41-a292-6a97760395ed",
+      "result_id": "421e4c2f-5faf-46ce-aa24-0f46465513c6"
+    },
+    {
+      "claim_id": "910395e1-ed5e-4321-9ecb-ee9559fb6d15",
+      "result_id": "421e4c2f-5faf-46ce-aa24-0f46465513c6"
+    },
+    {
+      "claim_id": "d080a8f0-89c1-493f-bad6-1eabdf4ffd8c",
+      "result_id": "421e4c2f-5faf-46ce-aa24-0f46465513c6"
+    },
+    {
+      "claim_id": "039f894a-03d2-45bf-8d82-dc1c3ce131fe",
+      "result_id": "421e4c2f-5faf-46ce-aa24-0f46465513c6"
+    },
+    {
+      "claim_id": "805611a9-2e91-4ee8-beb4-28e1b11de4c6",
+      "result_id": "421e4c2f-5faf-46ce-aa24-0f46465513c6"
+    },
+    {
+      "claim_id": "0979dc64-b5b6-4fea-ba28-c3e2fbb81067",
+      "result_id": "421e4c2f-5faf-46ce-aa24-0f46465513c6"
+    },
+    {
+      "claim_id": "40d085d2-803d-458d-aca4-eb1e31923d01",
+      "result_id": "271bf975-44b6-4f8f-8be4-d00b1f6bb1da"
+    },
+    {
+      "claim_id": "1440abb4-4544-4b52-aa11-5cb9c93ff191",
+      "result_id": "271bf975-44b6-4f8f-8be4-d00b1f6bb1da"
+    },
+    {
+      "claim_id": "a3ce7c67-bf3a-49be-a3d1-aba34a410dfe",
+      "result_id": "271bf975-44b6-4f8f-8be4-d00b1f6bb1da"
+    },
+    {
+      "claim_id": "62c5db1e-385b-4343-8516-85cdac5b2a7c",
+      "result_id": "271bf975-44b6-4f8f-8be4-d00b1f6bb1da"
+    },
+    {
+      "claim_id": "b0075ea0-53c6-437e-ab31-3bff6f91c7da",
+      "result_id": "271bf975-44b6-4f8f-8be4-d00b1f6bb1da"
+    },
+    {
+      "claim_id": "400bed63-78ae-49bb-99ce-1dd98d591fe1",
+      "result_id": "271bf975-44b6-4f8f-8be4-d00b1f6bb1da"
+    },
+    {
+      "claim_id": "c45e617e-8186-4cae-bf69-5c992c1018e8",
+      "result_id": "9f54965e-ca9c-43c7-81eb-429c8a138fc8"
+    },
+    {
+      "claim_id": "f1adbcdd-ef7e-4bd3-9a3e-9793f6d36982",
+      "result_id": "9f54965e-ca9c-43c7-81eb-429c8a138fc8"
+    },
+    {
+      "claim_id": "f09f20f4-1775-4d10-b341-dcebd1572d64",
+      "result_id": "9f54965e-ca9c-43c7-81eb-429c8a138fc8"
+    },
+    {
+      "claim_id": "a160573d-3f21-442f-a3c0-2e009f5527ba",
+      "result_id": "9f54965e-ca9c-43c7-81eb-429c8a138fc8"
+    },
+    {
+      "claim_id": "51261164-e128-4345-9cc3-966df13e9911",
+      "result_id": "9f54965e-ca9c-43c7-81eb-429c8a138fc8"
+    },
+    {
+      "claim_id": "3be7d5f4-1ce6-44aa-b61b-266245e61fef",
+      "result_id": "9f54965e-ca9c-43c7-81eb-429c8a138fc8"
+    },
+    {
+      "claim_id": "af694e4e-118c-4845-a4cd-695446d9e660",
+      "result_id": "9f54965e-ca9c-43c7-81eb-429c8a138fc8"
+    },
+    {
+      "claim_id": "70ab7e46-2346-4c4a-ae52-79173ecdc582",
+      "result_id": "9f54965e-ca9c-43c7-81eb-429c8a138fc8"
+    },
+    {
+      "claim_id": "7a4a5300-e765-47b7-9aa4-9cdbb6ab6e9b",
+      "result_id": "9f54965e-ca9c-43c7-81eb-429c8a138fc8"
+    },
+    {
+      "claim_id": "77a00b0e-9572-4b61-b82d-ab0ce7edc5cb",
+      "result_id": "9f54965e-ca9c-43c7-81eb-429c8a138fc8"
+    },
+    {
+      "claim_id": "5eed7bbd-06b4-4644-9bec-b116d1e4b57d",
+      "result_id": "9f54965e-ca9c-43c7-81eb-429c8a138fc8"
+    },
+    {
+      "claim_id": "dd766a72-7dbe-44b0-8260-892c52eded30",
+      "result_id": "43639263-d0d1-4ad1-9bc2-e66c6112cde1"
+    },
+    {
+      "claim_id": "00b6f96d-1745-4111-90d9-569766b409b4",
+      "result_id": "43639263-d0d1-4ad1-9bc2-e66c6112cde1"
+    },
+    {
+      "claim_id": "bff5b9f6-f63f-4752-a2bb-a637ccbea9f8",
+      "result_id": "43639263-d0d1-4ad1-9bc2-e66c6112cde1"
+    },
+    {
+      "claim_id": "f29c93b2-4969-401e-8e51-fce735869ec0",
+      "result_id": "43639263-d0d1-4ad1-9bc2-e66c6112cde1"
+    },
+    {
+      "claim_id": "763100fe-3265-48a9-b91b-4e5faa6f8eed",
+      "result_id": "43639263-d0d1-4ad1-9bc2-e66c6112cde1"
+    },
+    {
+      "claim_id": "2a5061f3-81b6-4eb0-b595-6d01b5e7a09d",
+      "result_id": "bcb04b8f-ab97-463c-9bbd-c6bca7ad4e16"
+    },
+    {
+      "claim_id": "c968022c-67ce-4eec-be00-b1e9e25d961f",
+      "result_id": "bcb04b8f-ab97-463c-9bbd-c6bca7ad4e16"
+    },
+    {
+      "claim_id": "ef5491b0-4a00-4542-96f8-9c691fe341db",
+      "result_id": "bcb04b8f-ab97-463c-9bbd-c6bca7ad4e16"
+    },
+    {
+      "claim_id": "d156e37e-f359-4556-b1a0-321b28692bb3",
+      "result_id": "bcb04b8f-ab97-463c-9bbd-c6bca7ad4e16"
+    },
+    {
+      "claim_id": "6b389ab0-3baf-4eba-aec5-9151e011f8a2",
+      "result_id": "bcb04b8f-ab97-463c-9bbd-c6bca7ad4e16"
+    },
+    {
+      "claim_id": "1a3790e8-0725-46ee-983d-1eb22b6c39d3",
+      "result_id": "bcb04b8f-ab97-463c-9bbd-c6bca7ad4e16"
+    },
+    {
+      "claim_id": "112f7a88-5041-4150-8807-34aab9cbf09c",
+      "result_id": "bcb04b8f-ab97-463c-9bbd-c6bca7ad4e16"
+    },
+    {
+      "claim_id": "e206ef6b-7a4c-4fc0-b44f-4df3238625c4",
+      "result_id": "bcb04b8f-ab97-463c-9bbd-c6bca7ad4e16"
+    },
+    {
+      "claim_id": "34b8b161-87ce-46ba-a9cc-c019104c20e5",
+      "result_id": "1c587364-af98-4f76-aef9-1c15462fcf24"
+    },
+    {
+      "claim_id": "085cbe01-0d82-45a9-9512-312c2770738e",
+      "result_id": "1c587364-af98-4f76-aef9-1c15462fcf24"
+    },
+    {
+      "claim_id": "df6a2497-1498-4651-a0b6-7518943a15d7",
+      "result_id": "1c587364-af98-4f76-aef9-1c15462fcf24"
+    },
+    {
+      "claim_id": "7417b606-fb38-487d-887b-837dbcc63960",
+      "result_id": "1c587364-af98-4f76-aef9-1c15462fcf24"
+    },
+    {
+      "claim_id": "a3368cd8-f866-4501-baa8-ea1894ef579b",
+      "result_id": "1c587364-af98-4f76-aef9-1c15462fcf24"
+    },
+    {
+      "claim_id": "8de23da7-ae4a-4c0c-bb8f-bf5b47cf5ddf",
+      "result_id": "1c587364-af98-4f76-aef9-1c15462fcf24"
+    },
+    {
+      "claim_id": "d1e79ba7-bf18-443d-a41b-572a2b03c7f5",
+      "result_id": "922f3289-b6ef-4ba8-8138-5d7b88754f1c"
+    },
+    {
+      "claim_id": "61d9e009-07ea-45dd-adc2-c4533afd0e9c",
+      "result_id": "922f3289-b6ef-4ba8-8138-5d7b88754f1c"
+    },
+    {
+      "claim_id": "54b9deba-0bc0-46dd-9e7a-ca2000026005",
+      "result_id": "922f3289-b6ef-4ba8-8138-5d7b88754f1c"
+    },
+    {
+      "claim_id": "fc602d5d-bac3-4c2e-adb1-e3a35cc38273",
+      "result_id": "922f3289-b6ef-4ba8-8138-5d7b88754f1c"
+    },
+    {
+      "claim_id": "4e6721da-b8ae-44fc-9499-dc941c833fc9",
+      "result_id": "922f3289-b6ef-4ba8-8138-5d7b88754f1c"
+    },
+    {
+      "claim_id": "47aa6cfb-5291-4bb0-8961-9a6a663a891a",
+      "result_id": "922f3289-b6ef-4ba8-8138-5d7b88754f1c"
+    },
+    {
+      "claim_id": "556a7983-10ee-452b-a9a0-a67f527282e4",
+      "result_id": "922f3289-b6ef-4ba8-8138-5d7b88754f1c"
+    },
+    {
+      "claim_id": "68ebd0e9-3ce3-4352-b4fc-f15bbc0e3c76",
+      "result_id": "922f3289-b6ef-4ba8-8138-5d7b88754f1c"
+    },
+    {
+      "claim_id": "85d1d761-851c-4fa7-9834-beb9d6a0d228",
+      "result_id": "922f3289-b6ef-4ba8-8138-5d7b88754f1c"
+    },
+    {
+      "claim_id": "3c30d963-6c4f-4416-a661-4ebe53f05e13",
+      "result_id": "922f3289-b6ef-4ba8-8138-5d7b88754f1c"
+    },
+    {
+      "claim_id": "c693f43e-c97a-4797-ac80-e0625a9f9ec4",
+      "result_id": "10d147bf-1454-4e6b-bf07-78f330e32539"
+    },
+    {
+      "claim_id": "88d95a73-6970-442b-9170-0d82e43910a6",
+      "result_id": "10d147bf-1454-4e6b-bf07-78f330e32539"
+    },
+    {
+      "claim_id": "fc4dd234-fc37-4817-b8fa-82256c8a1645",
+      "result_id": "10d147bf-1454-4e6b-bf07-78f330e32539"
+    },
+    {
+      "claim_id": "ee757ece-1a3a-4902-aa63-ce830d6fc5ab",
+      "result_id": "06450ac4-4ed9-426e-82da-793b29d43e82"
+    },
+    {
+      "claim_id": "33111cde-5896-48e3-8837-09aeb02a84ca",
+      "result_id": "06450ac4-4ed9-426e-82da-793b29d43e82"
+    },
+    {
+      "claim_id": "95c14200-7b79-4c2a-8641-6b732e8bacf4",
+      "result_id": "06450ac4-4ed9-426e-82da-793b29d43e82"
+    },
+    {
+      "claim_id": "7264fd05-d823-4674-877e-5e73b4134c16",
+      "result_id": "06450ac4-4ed9-426e-82da-793b29d43e82"
+    },
+    {
+      "claim_id": "44f75203-c10e-4863-afb8-6727d34721ee",
+      "result_id": "06450ac4-4ed9-426e-82da-793b29d43e82"
+    },
+    {
+      "claim_id": "dee67726-7747-4825-8348-6ee10ecd192e",
+      "result_id": "b9b27cdb-45eb-4727-8889-38bbb31f0e36"
+    },
+    {
+      "claim_id": "a0263ad6-585a-4b05-96d6-7170f4c44486",
+      "result_id": "b9b27cdb-45eb-4727-8889-38bbb31f0e36"
+    },
+    {
+      "claim_id": "936e41b1-be29-40fb-8f95-5fb04d21ec89",
+      "result_id": "22b57e02-134d-41b7-941a-7843e0efd24d"
+    },
+    {
+      "claim_id": "073353ac-74c6-4e6e-b63f-a464a981b531",
+      "result_id": "22b57e02-134d-41b7-941a-7843e0efd24d"
+    },
+    {
+      "claim_id": "708294ca-5070-4f5e-9b5f-addd8ac9a0d3",
+      "result_id": "22b57e02-134d-41b7-941a-7843e0efd24d"
+    },
+    {
+      "claim_id": "b2cf821e-ab0b-4a8f-a243-83e6d14ad483",
+      "result_id": "20f2587d-06f5-4a6d-8604-a071997a33b4"
+    },
+    {
+      "claim_id": "41c714e1-c6c7-42a5-836c-da47e2b0bc7b",
+      "result_id": "037f8f6f-fc64-4ac7-a6ed-86e5a75d37d3"
+    },
+    {
+      "claim_id": "a67d4232-32de-4b0d-b855-2e5436aeb075",
+      "result_id": "037f8f6f-fc64-4ac7-a6ed-86e5a75d37d3"
+    },
+    {
+      "claim_id": "d332b630-985b-401f-bb54-09c77b9c4f67",
+      "result_id": "b2320a74-be3a-42bb-926e-2831867f0f06"
+    },
+    {
+      "claim_id": "e58d0fa5-b093-49c8-baea-d239d6d04b29",
+      "result_id": "9d9ce4db-49bd-4d95-bd09-b73d46df8d13"
+    },
+    {
+      "claim_id": "a6766d14-158d-41a8-a0a9-bfd911a88e7a",
+      "result_id": "5f6ac7c9-3cce-426a-9885-3897884a0171"
+    },
+    {
+      "claim_id": "f2d62636-5a61-455f-86e0-955a8982e14f",
+      "result_id": "5f6ac7c9-3cce-426a-9885-3897884a0171"
+    },
+    {
+      "claim_id": "92b94cfd-95bd-4de4-909e-3751b4701dc2",
+      "result_id": "5f6ac7c9-3cce-426a-9885-3897884a0171"
+    },
+    {
+      "claim_id": "630fc496-447e-47c1-a723-14bb6b502303",
+      "result_id": "5f6ac7c9-3cce-426a-9885-3897884a0171"
+    },
+    {
+      "claim_id": "ff9c06f5-1073-4ce3-90ad-3a0d64a02574",
+      "result_id": "5f6ac7c9-3cce-426a-9885-3897884a0171"
+    },
+    {
+      "claim_id": "21ccb2df-e0dd-48c6-9881-9a3584cfdb53",
+      "result_id": "5f6ac7c9-3cce-426a-9885-3897884a0171"
+    },
+    {
+      "claim_id": "9f8879e6-4e6d-4768-83c1-b9a616c6afdf",
+      "result_id": "5f6ac7c9-3cce-426a-9885-3897884a0171"
+    },
+    {
+      "claim_id": "dec583ee-c33f-45ce-a6f4-b58e78186f9b",
+      "result_id": "ae0ae2a0-ab7e-431d-962b-ba43aef8d5a2"
+    },
+    {
+      "claim_id": "c2970eb9-fed6-402c-8804-8b7449f20e37",
+      "result_id": "ae0ae2a0-ab7e-431d-962b-ba43aef8d5a2"
+    },
+    {
+      "claim_id": "b68b0d12-a11f-46d2-a639-7a2dbd758bef",
+      "result_id": "ae0ae2a0-ab7e-431d-962b-ba43aef8d5a2"
+    },
+    {
+      "claim_id": "0ec2ed63-dcb8-4a3f-98c8-1289f6c48f0c",
+      "result_id": "ae0ae2a0-ab7e-431d-962b-ba43aef8d5a2"
+    },
+    {
+      "claim_id": "1d6c6987-fc8d-446e-9354-dd182cb4c5d1",
+      "result_id": "ae0ae2a0-ab7e-431d-962b-ba43aef8d5a2"
+    },
+    {
+      "claim_id": "a2ab3a8b-9d71-4748-9de0-00d7277e1593",
+      "result_id": "ae0ae2a0-ab7e-431d-962b-ba43aef8d5a2"
+    },
+    {
+      "claim_id": "67234f81-87b4-4a00-a5a0-6358a9184af1",
+      "result_id": "ae0ae2a0-ab7e-431d-962b-ba43aef8d5a2"
+    },
+    {
+      "claim_id": "5a3740df-6994-4e86-b511-98271289f1ce",
+      "result_id": "ae0ae2a0-ab7e-431d-962b-ba43aef8d5a2"
+    },
+    {
+      "claim_id": "e980abcd-edc4-44ed-b3e5-62f601dd4231",
+      "result_id": "ae0ae2a0-ab7e-431d-962b-ba43aef8d5a2"
+    },
+    {
+      "claim_id": "64e8e828-1d23-43b0-9293-7fa3d2d67470",
+      "result_id": "8b29b33f-72a0-4056-8775-38ec8a0e675e"
+    }
+  ],
+  "comparisons": []
+}

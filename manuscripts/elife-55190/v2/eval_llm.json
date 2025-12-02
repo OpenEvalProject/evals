@@ -1,0 +1,251 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "Zebrafish blastoderm explants prepared at 256-cell stage, lacking extraembryonic yolk and YSL, undergo morphological changes including extension formation and cavity development, while specifying all three germ layers with seemingly complete mesendoderm patterning. The explants express markers for ectoderm, neuroectoderm, and various mesendoderm subtypes in spatially organized domains, though mesendoderm progenitors form an 'exogastrula'-like extension rather than internalizing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C22 are well-supported by extensive in situ hybridization data (Figure 1D-G, supplements), immunofluorescence showing EVL differentiation (C16), and absence of YSL markers/syncytium (C20-C21). The morphological characterization is thorough with time-lapse imaging (Videos 1-3) and quantification (Figure 1B-C). The exogastrula comparison (C19) is appropriately qualified as 'reminiscent' with proper citations. Cell division completion (C8) and ZGA timing (C9) are validated with appropriate controls.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "Nodal signaling is activated in blastoderm explants near the wounding site (former blastoderm margin), as evidenced by nuclear pSMAD2/3 accumulation and expression of Nodal ligands sqt and cyc. The temporal dynamics differ from intact embryos, with explants showing initially fewer pSMAD2/3-positive nuclei that continue increasing until shield stage, while embryos peak at 50% epiboly. Cells near the wounding site display limited dispersal, and BMP signaling gradients are also detectable.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C30 are strongly supported by quantitative immunofluorescence data (Figure 2A-D, supplements) with appropriate statistical analysis comparing embryos and explants across developmental stages. The custom MATLAB analysis for pSMAD2/3 quantification is documented (Source code 1). Cell dispersal analysis (C29) uses time-lapse imaging with proper controls. The BMP gradient detection (C30) is appropriately qualified as 'suggesting' a potential role.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "Nodal signaling is critical for mesendoderm induction and explant extension, with MZoep mutant explants failing to extend. Temporal inhibitor experiments demonstrate that blocking Nodal signaling from 256-cell to shield stage abolishes mesendoderm induction and extension, while blocking after shield stage has minimal impact, mirroring the temporal requirements in intact embryos.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C35 are well-supported by genetic (MZoep mutants, Figure 2E-G) and pharmacological (SB-505124 inhibitor, Figure 2E-H, supplement 3) evidence with appropriate quantification of morphology and sebox::EGFP expression. The temporal window experiments are properly controlled with DMSO treatments and stage-matched comparisons. The conclusion about similar function in embryos and explants (C35) is appropriately supported by citations to prior embryo studies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "Explant extension depends on non-canonical Wnt/PCP signaling, as MZwnt11, MZwnt5b, and MZfz7a/b mutant explants show reduced or absent extension. During maturation, extension length increases while width of the non-extended portion decreases, and this process is largely independent of cell proliferation, suggesting convergence and extension-like movements.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C40 are supported by analysis of multiple Wnt/PCP mutants (Figure 3A-D) with quantification of extension and circularity. The cell proliferation independence (C39) is demonstrated using HUA treatment (Figure 3 supplement 1D-F) with appropriate controls. The morphometric analysis over time (C38, Figure 3 supplement 1A-C) supports the convergence-extension interpretation, though C40 is appropriately qualified as a 'possibility' requiring further investigation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "Nuclear \u03b2-catenin accumulates near the wounding site shortly after explant preparation, and maternal dorsal determinants are required for proper Nodal signaling activation and mesendoderm induction in explants. DD-removed and animal pole explants show strongly reduced nuclear \u03b2-catenin, pSMAD2/3 accumulation, mesendoderm marker expression, and extension formation. The effect is not due to ventralization, as CA-Alk8-overexpressing explants maintain Nodal signaling domains.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C50 are well-supported by immunofluorescence data for \u03b2-catenin (Figure 4A-C) and pSMAD2/3 (Figure 4D-E, Video 4), with quantitative analysis of nuclear localization and angular distribution. The DD-removal experiments (C43-C47) include proper characterization of embryo ventralization phenotypes (Figure 4 supplement 1A-B) and correlation analysis between mesendoderm induction and extension (C46). The CA-Alk8 control (C48) appropriately addresses the ventralization confound. Animal pole experiments (C49) provide additional support for the maternal pre-patterning requirement.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "Blastomere reaggregates, which lack spatial organization of maternal factors, undergo compaction and remain viable (cells continue dividing) but fail to form recognizable extensions or undergo coordinated mesoderm specification. Expression of the mesodermal marker ntl is restricted to sparse or randomly scattered cells, and this phenotype is not rescued by increasing cell number or changing culture media.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C56 are supported by time-lapse imaging showing compaction and cell divisions (Figure 4 supplement 3B), quantification of cell diameter reduction (C52, Figure 4 supplement 3C), and in situ hybridization for ntl (Figure 4 supplement 3F-H). The experiments test multiple conditions (cell density, media composition) to rule out technical artifacts (C55). The conclusion about maternal pre-patterning requirement (C56) logically follows from the contrast with intact explants, though the mechanism remains to be fully elucidated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "YSL-specific injection of high amounts of sqt/cyc morpholinos impairs induction of endoderm and head mesoderm (requiring peak Nodal signaling) while leaving notochord, paraxial, and ventrolateral mesoderm induction largely normal. This results in severe cyclopia by 32 hpf. YSL-derived Nodal signals enhance Nodal signaling in the overlying blastoderm, as evidenced by reduced pSMAD2/3 intensity and number in morphant embryos.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C61 are well-supported by in situ hybridization data for multiple markers (Figure 5A, supplement 1A-B), phenotypic analysis at 32 hpf (Figure 5B), and quantitative immunofluorescence for pSMAD2/3 (Figure 5C-G, supplement 1C). The experiments include appropriate controls (control MO injections) and are consistent with prior studies (Fan et al., 2007). The spatial analysis of pSMAD2/3 distribution (Figure 5F-G) provides mechanistic insight into how YSL signals enhance blastoderm Nodal signaling.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "Lower doses of YSL-injected sqt/cyc morpholinos produce dose-dependent reductions in head mesoderm (hgg expression and ppl size) and endoderm (sox32) induction, with corresponding gradations in cyclopia severity at 32 hpf. Nodal signaling levels, measured by pSMAD2/3, are proportionally reduced with lower morpholino doses, demonstrating that robust induction of these structures critically depends on the dosage of extraembryonic Nodal ligands.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C66 are strongly supported by dose-response experiments with quantification of hgg expression domains (Figure 6A-C), phenotypic scoring (Figure 6 supplement 1A), sox32 expression (Figure 6 supplement 1B-C), and pSMAD2/3 levels (Figure 6D-G, supplement 1D). The dose-dependent effects are clearly demonstrated across multiple readouts, and appropriate statistical comparisons are made between conditions. The conclusion about dosage-dependence (C66) is well-justified by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "In explants, induction of head mesoderm and endoderm is highly variable, with strongly reduced ppl size and sox32-positive endoderm cell numbers compared to intact embryos. This variability is consistent with the observation that YSL-derived Nodal signals are needed for robust induction of these structures in intact embryos.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C69 are supported by in situ hybridization data showing variable hgg and sox32 expression in explants (Figure 1D, supplement 1G-J) and quantification of ppl area comparing explants to embryos and morpholino-treated embryos (Figure 6C). The comparison to YSL morpholino experiments (C69) is logical and well-supported by the parallel phenotypes. However, the variability in explants could benefit from more quantitative characterization (e.g., coefficient of variation).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "Maternal factors deposited at the vegetal pole activate \u03b2-catenin at the future dorsal side to initiate Nodal signaling, and this maternal activation is required for proper mesoderm induction in explants. Removing dorsal and marginal pre-patterning (AP explants) or disrupting spatial distribution (reaggregates) suppresses coordinated mesoderm induction and morphogenesis, demonstrating that maternal pre-patterning is indispensable for explant organization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C73 synthesize results from multiple experiments (DD-removal, AP explants, reaggregates) presented in Figure 4 and supplements. C70 appropriately cites prior work establishing the maternal factor framework. The conclusion that maternal pre-patterning is 'indispensable' (C73) is strongly supported by the convergent evidence from three different experimental approaches that disrupt pre-patterning. The logic connecting these observations is sound.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C4",
+      "C74",
+      "C75",
+      "C76",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "Zebrafish explants undergo 'genetically encoded self-assembly' rather than bona fide self-organization, where maternal pre-patterning and intrinsic genetic programs control the emergence of order. This differs from ES cell colonies, possibly due to reduced stemness in blastoderm cells and/or the absence of extrinsic growth factors in the culture medium. Both maternal factors and extraembryonic signals may be required not only for robustness but also to drive embryo organization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C74-C76, C86-C88 represent the main conceptual conclusions of the manuscript, synthesizing results from all experiments. The conclusion about genetically encoded self-assembly (C4, C86) is well-supported by the demonstrated requirement for maternal pre-patterning (Figure 4) and the failure of reaggregates to self-organize (Figure 4 supplement 3). The comparison to ES cells (C74, C76) is appropriately speculative, citing relevant literature. C87 appropriately interprets the implications, and C88 identifies important future directions. These are interpretive claims appropriately qualified with uncertainty where warranted.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C77",
+      "C78"
+    ],
+    "result": "Mesendoderm patterning defects in embryos with reduced YSL-derived Nodal signals are generally more pronounced than in explants, suggesting the YSL is more important for robust induction in intact embryos. This embryo-specific requirement may be to induce sufficiently high Nodal signaling along the entire blastoderm margin, less critical in explants where the margin collapses into a single region around the wounding site.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C78 compare phenotypes between YSL morpholino-injected embryos (Figure 5-6) and explants (Figure 1, 6C). The observation that embryo defects are more pronounced (C77) is supported by the data, though a more systematic quantitative comparison would strengthen this claim. The proposed explanation (C78) is reasonable speculation based on the geometric differences between embryos and explants, but remains to be directly tested.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "Mesendoderm progenitors do not internalize in explants but form an exogastrula-like extension that depends on Wnt/PCP signaling, similar to body axis elongation in embryos. The cellular rearrangements underlying extension may be conserved between explants and embryos, with cell proliferation playing a minor role in both processes. Whether volumetric growth functions in later explant maturation remains to be determined.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C85 discuss the morphogenetic differences between explants and embryos. The lack of internalization (C79) is documented by Video 3 and comparison to exogastrula phenotypes. The Wnt/PCP dependence (C82) is demonstrated by mutant analysis (Figure 3A-D). The cell proliferation independence (C84) is shown by HUA treatment (Figure 3 supplement 1D-F) and supported by citations. The proposed explanations for lack of internalization (C80-C81) are appropriately speculative. C85 appropriately identifies an open question for future work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "Background claims establishing the developmental context: amphibians rely on maternal factors, mammals on embryonic-extraembryonic interactions, and zebrafish combine both features. Nodal/TGF\u03b2 ligands are expressed under maternal control and secreted by the YSL. ES cell colonies can self-organize in vitro through boundary sensing and activator-inhibitor interactions, but classical studies have established the importance of maternal factors and extraembryonic tissues for embryonic development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C97 are introductory/background claims that appropriately cite extensive prior literature to establish the scientific context. These are not novel findings but rather synthesis of established knowledge used to frame the current study. The citations appear appropriate and the characterizations of prior work are reasonable, though detailed verification of each cited claim is beyond the scope of this review.",
+    "result_type": "MINOR"
+  }
+]

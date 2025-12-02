@@ -1,0 +1,469 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "Single-cell RNA-sequencing of the total non-cardiomyocyte (TIP) fraction from murine hearts at days 3 and 7 post-sham or MI surgery identified 13,331 cells after quality control, representing 24 populations across nine distinct cell lineages including fibroblasts/myofibroblasts, endothelial cells, mural cells, monocytes/macrophages, dendritic-like cells, glial cells, B-cells, T-cells, and natural killer cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C21, C22, and C23 collectively describe the experimental approach and primary findings from the TIP dataset. The methodology is clearly described (C2), the number of cells analyzed is specified (C21), and the identification of 24 populations across 9 lineages with specific marker genes (C22, C23) is supported by Figure 1 and supplementary data. The clustering analysis appears robust with appropriate quality control filtering.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5"
+    ],
+    "result": "Clustering analysis identified a previously undescribed fibroblast lineage trajectory present in both sham and MI hearts that leads to a uniquely activated cell state characterized by a strong anti-WNT transcriptome signature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C4, and C5 describe a major novel finding of the study. The identification of >30 populations (C3) and the novel F-WntX fibroblast trajectory (C4) with anti-WNT signature (C5) is supported by multiple lines of evidence including clustering analysis (Figure 4), gene expression data (Figures 5, 6), trajectory analysis (Figure 7), and immunofluorescence validation (Figure 6). The anti-WNT signature is well-documented with specific genes identified (C103, C106).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C6",
+      "C173",
+      "C174",
+      "C175",
+      "C176",
+      "C177"
+    ],
+    "result": "Novel myofibroblast subtypes were identified at MI-day 7, with MYO-2 and MYO-3 expressing pro-fibrotic signatures (including Tgfb1, Scx, Thbs4) and MYO-1 expressing anti-fibrotic signatures (including Wisp2, Sfrp2, Sfrp1, Htra1, Htra3), as validated by correlation with TGF-\u03b2 treatment data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C173-C177 describe the identification and characterization of myofibroblast subtypes. The subdivision of MYO into three clusters (C173) is supported by re-clustering analysis (Figure 8B,F). The pro-fibrotic signature of MYO-2/MYO-3 (C174, C175) and anti-fibrotic signature of MYO-1 (C176, C177) are supported by differential gene expression, GO analysis, and significant correlation with external TGF-\u03b2 treatment data (Spearman's correlation, p<1e-10). This represents a well-validated novel finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C7",
+      "C36",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "The data reveal non-linear dynamics in cell populations after cardiac injury, with significant flux identified in 12 populations including expansion of monocyte/macrophage populations at MI-day 3, myofibroblasts and M2 macrophages at MI-day 7, and sharp decreases in F-SL and F-SH fibroblast populations at MI-day 3.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C36-C39 describe temporal dynamics of cell populations. The observation of major cellular responses (C36) and the statistical identification of 12 populations with significant flux (C37, p<0.01) using the novel DPA method is supported by Figure 1E and Supplementary file 2. Specific examples of population changes (C38, C39) are well-documented. The DPA method itself was validated through simulation studies (Figure 1\u2014figure supplement 3), strengthening these conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C51",
+      "C53",
+      "C56",
+      "C63",
+      "C64"
+    ],
+    "result": "Monocyte/macrophage populations were characterized including tissue-resident macrophages (MAC-TR), M1 monocytes and macrophages at MI-day 3, and M2 macrophages at MI-day 7, with Diffusion Map analysis revealing a continuum of states from M1Mo through M1M\u03a6 to M2M\u03a6 and convergence of M2M\u03a6 with tissue-resident macrophages.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C64 describe the identification and characterization of monocyte/macrophage populations. The marker signatures for each population (C47, C51, C53, C56) are well-defined and supported by Figure 2 and multiple citations to prior literature. The trajectory analysis (C63, C64) using Diffusion Maps is supported by Figure 2\u2014figure supplement 1C and is consistent with both recent scRNA-seq studies (Dick et al., 2019) and the current model of monocyte differentiation. The identification of the TIMD4+LYVE1+ subset (C48, C49) aligns with recent literature.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "Analysis of 16,787 Pdgfra-GFP+ cells identified 11 sub-populations including two major fibroblast populations F-SH and F-SL, with F-SH enriched in SCA1+PDGFR\u03b1+ cells (~60% by iRF classifier, p=8.13e-11), expressing THY1/CD90 (p=4.48e-176), and showing ~6-fold enrichment in cardiac colony-forming units compared to CD90.2low cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C96 describe the GFP+ fibroblast analysis and characterization of F-SH. The clustering of 16,787 cells into 11 populations (C88) is supported by Figure 4. The enrichment of S+P+ cells in F-SH (C92, C93) is validated using an iRF classifier with high accuracy (Figure 4\u2014figure supplement 2A,B). The THY1 expression (C94) and functional validation through colony formation assays (C95) provide orthogonal support. The statistical significance is clearly stated with appropriate tests. This represents a well-validated characterization of fibroblast heterogeneity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C101",
+      "C102",
+      "C103",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "Two novel GFP+ fibroblast populations F-WntX and F-Trans were identified in both sham and MI hearts, with F-WntX uniquely expressing Wif1 and multiple WNT pathway antagonists (WNT5a, WNT16, DKK3, SFRP2, FRZB, AXIN2, Fmod), suggesting an anti-WNT, anti-CTGF, and anti-TGF-\u03b2 signaling milieu, and expressing activation markers (Postn, Acta2, Tagln, Scx) even in the absence of injury.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C101-C109 describe the novel F-WntX population. The identification of F-WntX and F-Trans (C101, C102) is supported by clustering analysis (Figure 4). The unique expression of Wif1 (C103, C105) and comprehensive WNT pathway gene signature (C106, C107) is well-documented in Figures 4E, 5A, and Figure 4\u2014figure supplement 3. The interpretation of an anti-WNT/CTGF/TGF-\u03b2 milieu (C108) is reasonable given the gene expression data and supported by citations. The expression of activation markers in sham conditions (C109) is a notable finding supported by Figure 5B.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126"
+    ],
+    "result": "WIF1 protein was detected only in the infarct border zone at MI-day 3 (not in sham or MI-days 1 or 7) in ~4% of total nuclei, with perinuclear/golgi localization, found in ~5% GFP+ fibroblasts, ~17% Ki67+ proliferating cells, and ~15% CD45+ immune cells, with frequent proximity to CD31+ endothelial cells, suggesting post-transcriptional regulation and injury-dependent expression during the transition between inflammatory and fibrotic phases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C118-C126 describe the immunofluorescence validation of WIF1 expression. The temporal specificity (C118) is clearly demonstrated in Figure 6A-C and Figure 6\u2014figure supplement 2. The subcellular localization (C119) and quantification of WIF1+ cells (C120-C123) are supported by Figure 6 with appropriate image analysis (n=4, >2600 cells quantified). The spatial relationship with endothelial cells (C124) aligns with the ligand-receptor network predictions (Figure 3A). The interpretation of post-transcriptional regulation (C125, C126) is reasonable given the discrepancy between mRNA and protein expression patterns, though additional mechanistic studies would strengthen this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136"
+    ],
+    "result": "Myofibroblasts (MYO) appeared at MI-day 7 representing 52% of GFP+ cells, expressing high levels of collagen genes, Postn (99.5%), and Acta2 (61%), with specific marker Cthrc1, while activated fibroblasts (F-Act) appeared earlier at MI-day 3 (48% of GFP+ cells, diminishing to 12% at MI-day 7), expressing Postn (80%) and lower Acta2 (28-35%), with top marker Cilp encoding a TGF-\u03b21 signaling inhibitor.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C127-C136 describe the characterization of myofibroblasts and activated fibroblasts. The proportions and temporal dynamics (C127, C131, C132) are clearly documented in Figure 4A-D. The gene expression signatures (C128, C129, C133, C134) are supported by Figure 4E and Figure 4\u2014figure supplement 3 with specific percentages provided. The hierarchical clustering showing F-Act closer to fibroblasts than MYO (C135) is supported by Figure 4C. The identification of Cilp as a TGF-\u03b21 inhibitor (C136) provides functional insight. The data comprehensively characterize these populations with appropriate markers and quantification.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C139",
+      "C140",
+      "C141",
+      "C142",
+      "C143",
+      "C144",
+      "C145",
+      "C146"
+    ],
+    "result": "A distinct cycling fibroblast population (F-Cyc) was identified comprising 15% of GFP+ cells at MI-day 3 and 3% at MI-day 7, expressing cell cycle genes (Ccnb2, Cdk1, Mki67) and activation markers (Postn 88%, Acta2 76%), with Diffusion Map analysis revealing three trajectories (MYO, F-WntX, F-Cyc) rooted in F-SH/F-SL, with F-Act as an intermediary for both F-Cyc and MYO branches, suggesting F-Act expands by proliferation up to MI-day 3 and differentiates to MYO between MI-day 3 and 7.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C139-C146 describe the cycling fibroblast population and trajectory analysis. The identification and quantification of F-Cyc (C139) is supported by Figure 4D with temporal dynamics consistent with known fibroblast proliferation kinetics (citations provided). The gene expression signature (C140, C141) is documented in Figure 4E. The Diffusion Map trajectory analysis (C142-C144) is supported by Figure 7A and represents a sophisticated computational approach to infer differentiation relationships. The temporal distribution (C145) and interpretation of F-Act expansion and differentiation (C146) are reasonable inferences from the data, though direct lineage tracing would provide stronger evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C163",
+      "C164",
+      "C165",
+      "C166",
+      "C167",
+      "C168",
+      "C169",
+      "C170",
+      "C172"
+    ],
+    "result": "Re-clustering of GFP+ day 3 data revealed F-Cyc subdivides into two populations, with an intermediary population F-CI showing upregulation of activation markers (Postn, Cthrc1, Acta2) and protein translation genes but lacking cell cycle markers; after removing cell cycle genes, 88% of F-Cyc cells merged with F-CI at MI-day 3, supporting F-CI as a pre-proliferative precursor of F-Cyc that is closely related to F-Act rather than MYO.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C163-C172 describe the identification of the F-CI population through refined analysis. The subdivision of F-Cyc (C163) and characterization of F-CI (C164, C165) are supported by Figure 8E and Figure 8\u2014figure supplement 1A. The transient nature of F-CI (C166) is demonstrated using iRF classifier predictions (Figure 8\u2014figure supplement 1C,D). The trajectory analysis (C167) and re-clustering after removing cell cycle genes (C168, C169) provide strong computational evidence for F-CI as a pre-proliferative state. The conclusion that F-CI is closer to F-Act than MYO (C170, C172) is well-supported by multiple analytical approaches. This represents a sophisticated dissection of fibroblast activation states.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "Cell-cell communication network analysis identified 91 significant ligand-receptor relationships (Padj<0.01), with myofibroblasts and macrophage populations showing the largest number of outbound connections, endothelial cells showing the largest inbound connections, fibroblast populations communicating exclusively with vascular and glial cells (validated by immunofluorescence showing Pdgfra-GFP+ fibroblasts in close proximity to CD31+ endothelial cells), and myofibroblast interactions driven by ECM-associated ligands (COL1a1, COL1a2, Fibronectin 1, etc.).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C72 describe the cell-cell communication analysis. The identification of 91 significant relationships (C67) using permutation testing is methodologically sound and supported by Figure 3A-B. The characterization of outbound/inbound connections (C68, C69) is clearly visualized in Figure 3B. The exclusive communication of fibroblasts with vascular/glial cells (C70) is a notable finding that is validated by immunofluorescence (C71, Figure 3\u2014figure supplement 1A-B), providing orthogonal support. The identification of ECM ligands driving myofibroblast interactions (C72) is supported by Figure 3C. The computational approach is well-described in Materials and methods.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C73",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "Novel lineage markers were identified including Vtn (Vitronectin) specifically expressed in mural cells and Kcna1 (potassium voltage-gated channel) highly specific to glial cells, with glial cells expressing canonical markers (Plp1, Prnp, Gfra3), communicating with endothelial and mural cell populations, and expressing eight highly specific ligands including Dhh (Desert Hedgehog) and Semaphorin genes (Sema3b, Sema4f) involved in neural and angiogenic development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24, C25, C73, C75-C77 describe novel markers and characterization of minor populations. The identification of Vtn and Kcna1 as specific markers (C24, C25) is supported by Figure 1D and Figure 1\u2014figure supplement 1D. The characterization of glial cells (C73) with canonical markers is well-documented. The communication with vascular cells (C75) is supported by the ligand-receptor network analysis (Figure 3A). The identification of eight specific ligands (C76) including Dhh and Semaphorins (C77) is supported by Figure 3D with appropriate citation to their developmental roles (Gamboa et al., 2017). These represent useful additions to the cardiac cell atlas.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "Three major endothelial cell sub-populations were identified (EC1, EC2, EC3) comprising vascular and lymphatic lineages, with EC1 likely representing microvascular ECs (Ly6a+, Sox17+), EC2 expressing arterial markers (Bmx, Sema3g, Efnb2, Sox17, Hey1), and EC3 expressing venous markers (Nr2f2, Vwf) with a minority (~3%) expressing lymphatic markers (Prox1, Lyve1), broadly consistent with recently published single-cell data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C32 describe the characterization of endothelial cell populations. The identification of three EC populations (C26) is supported by Figure 1D and Figure 1\u2014figure supplement 2B. The marker-based identification of microvascular (C27), arterial (C28, C29), and venous/lymphatic (C30, C31) ECs is well-documented with appropriate markers. The comparison to published data (C32, Zhao et al., 2018) provides external validation. The characterization is thorough with appropriate markers for each EC subtype, though the interpretation of EC1 as microvascular is somewhat inferential.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "Lymphocyte populations were characterized including a single B-cell population (Cd79a+, Ms4a1+, Ly6d+), T-cell sub-populations TC1-Cd8 (Cd8a+) and TC2-Cd4 (Cd4+, Lef1+) likely representing cytotoxic and helper T-cells, and natural killer cells (Klrk1+, Lck+, Ccl5+, Ctsw+).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C35 describe the characterization of lymphocyte populations. The identification of B-cells (C33) is supported by Figure 1D and Figure 1\u2014figure supplement 2D with appropriate markers. The interpretation of T-cell subtypes (C34) as cytotoxic and helper T-cells is reasonable based on the marker genes (Cd8a, Cd4, Lef1). The characterization of NK cells (C35) is supported by Figure 1\u2014figure supplement 2D. While these are standard markers for these cell types, the characterization is appropriate and adds to the comprehensive cardiac cell atlas.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "F-SH was characterized by over-representation of cell adhesion genes (including Ackr3, Thy1, Axl, Cd34) while F-SL was characterized by signaling and signal transduction genes, with protein localization prediction indicating an over-represented majority (19/28) of secreted proteins (Fisher's exact test, p=0.03) including 10 ligands (APOE, BMP4, ADM), suggesting F-SL has a unique secretory phenotype distinct from F-SH.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97-C100 describe the functional characterization of F-SH and F-SL through GO analysis. The over-representation of cell adhesion genes in F-SH (C97) and signaling genes in F-SL (C98) is supported by GO analysis (Supplementary file 6). The protein localization prediction (C99) using LocTree3 with statistical testing (Fisher's exact test, p=0.03) provides quantitative support for the secretory phenotype. The conclusion of distinct functional properties (C100) is reasonable given the GO analysis and functional assay data (colony formation). This represents a meaningful functional distinction between the two major fibroblast populations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117"
+    ],
+    "result": "F-WntX showed regulation of cell proliferation as the top GO BP term but did not express cell cycle markers, with over-representation of signaling receptor binding and growth factor binding in molecular function terms, including cytokine/chemokine genes (Pdgfa, Tgfb3, Ptn, Ccl19, Cxcl12) whose receptors were down-regulated in F-WntX, and ligand-receptor analysis indicating F-WntX communicates most significantly with endothelial cells through ligands including Ptn, Myoc, and Timp3.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C112-C117 describe the functional characterization of F-WntX through GO and ligand-receptor analysis. The GO BP term for cell proliferation (C112) despite lack of cell cycle markers is an interesting observation supported by Figure 5C. The MF terms (C113) and overlap analysis (Figure 5\u2014figure supplement 1B-D) provide statistical support. The identification of cytokine/chemokine genes with down-regulated receptors (C114) supports a paracrine function interpretation (Figure 5\u2014figure supplement 1E). The ligand-receptor analysis (C115-C117) is supported by Figures 3A and 5D-E. This represents a comprehensive functional characterization suggesting paracrine signaling to endothelial cells.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C148",
+      "C149",
+      "C150",
+      "C151"
+    ],
+    "result": "Differential expression analysis revealed F-Act genes were over-represented in collagen fibril organization and wound healing terms, while MYO showed an additional large gene signature with GO BP terms for collagen fibril organization, cell adhesion (including Col3a1, Col5a1, Col11a1, Col14a1, Thbs1, Fbn1), angiogenesis, heart development, and negative regulation of canonical Wnt signaling pathway.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C148-C151 describe the differential gene expression and GO analysis comparing F-Act and MYO. The over-representation of collagen and wound healing terms in F-Act (C148) is supported by GO analysis. The identification of an additional gene signature in MYO (C149) is supported by Figure 7D. The specific GO terms and genes for MYO (C150, C151) are well-documented. The inclusion of negative regulation of Wnt signaling in MYO (C151) is interesting and suggests some overlap with F-WntX functions. This represents a thorough characterization of the transcriptional differences between activated fibroblasts and myofibroblasts.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C52",
+      "C55",
+      "C57",
+      "C65"
+    ],
+    "result": "Gene Ontology analysis of monocyte/macrophage populations revealed M1Mo showed over-representation of cell migration, inflammation and T cell activation; M1M\u03a6 showed leukocyte migration and responses to interleukin-1; M2M\u03a6 showed antigen presentation via MHC class II; and MAC-IFNIC showed strong upregulation of interferon-induced genes (Ifit3, Ifit1, Cxcl10) consistent with responses to IFN \u03b1, \u03b2, and \u03b3.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52, C55, C57, C65 describe the GO analysis results for monocyte/macrophage populations. The GO terms for M1Mo (C52), M1M\u03a6 (C55), and M2M\u03a6 (C57) are supported by Figure 2D and align with known functions of these cell types. The characterization of MAC-IFNIC (C65) with interferon-induced genes is supported by Figure 2C and Figure 2D. These GO analyses provide functional context for the identified populations and are consistent with the known biology of monocyte/macrophage subsets during inflammation and repair.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "Both MAC-TR and M2M\u03a6 expressed Cx3cr1 (often used to define tissue-resident macrophages) and upregulated pro-regenerative genes Igf1 and Pdgfb/c, with the majority of M2M\u03a6 being Ccr2high but a minor sub-population being Ccr2low that expressed the highest levels of Igf1 and lower levels of MHC-II.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C62 describe shared and distinct features of MAC-TR and M2M\u03a6. The expression of Cx3cr1 (C60) and pro-regenerative genes (C61) is supported by Figure 2B and Figure 2\u2014figure supplement 1A. The identification of a Ccr2low sub-population within M2M\u03a6 (C62) with high Igf1 and low MHC-II is supported by Figure 2B and Figure 2\u2014figure supplement 1B. This heterogeneity within M2M\u03a6 is interesting and suggests potential functional differences, though the biological significance of this sub-population would benefit from further investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "Five minor hybrid populations expressing markers of two lineages were detected (F-EC, M2M\u03a6-EC, EC-L1, EC-L2, BC-TC), with F-EC co-expressing fibroblast and endothelial markers and flow cytometry detecting 2.4\u00b10.28% GFP+CD31+ cells in sham hearts and 1.51\u00b10.26% in MI-day 7 hearts (not responsive to injury), and M2M\u03a6-EC co-expressing endothelial and M2M\u03a6 markers with CD31+CD45+ cells increasing from 0.56\u00b10.02% in sham to 4.04\u00b11.03% in MI-day 7 hearts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C78-C84 describe hybrid populations that could represent either biological phenomena (transdifferentiation) or technical artifacts (doublets). The identification of hybrid populations (C78, C79, C82) is supported by Figure 1\u2014figure supplement 4. The flow cytometry validation (C80, C83, C84) provides orthogonal evidence that double-positive cells exist, though the authors appropriately note that doublets cannot be excluded despite stringent gating strategies (Figure 1\u2014figure supplement 5). The lack of injury response in F-EC (C81) argues against a biological role in MI. While the data document these populations, the biological significance remains uncertain and requires additional validation such as spatial transcriptomics or lineage tracing.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C152",
+      "C153",
+      "C154",
+      "C155"
+    ],
+    "result": "Minor GFP+ populations included epicardial cells (EPI) observed only at MI-day 7, expressing Wt1 and transcriptionally related to dissected adult mouse epicardium (Spearman's correlation test, p=0.014, r=0.26), likely representing epicardial-derived fibroblasts arising as the epicardium reactivates its developmental program; epicardial cells were not detected in TIP data, suggesting under-sampling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C152-C155 describe the identification of epicardial cells. The detection only at MI-day 7 (C152) is documented in the text. The expression of Wt1 and transcriptional correlation with epicardium (C153) provides evidence for epicardial identity, though the correlation coefficient (r=0.26) is modest. The interpretation as epicardial-derived fibroblasts (C154) is reasonable given the Pdgfra expression and is supported by citation (Zhou et al., 2011). The acknowledgment of under-sampling (C155) with comparison to other studies is appropriate. This represents a minor but interesting population that warrants further investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C156",
+      "C157"
+    ],
+    "result": "The minor population F-IFNS (Fibroblast: Interferon stimulated) was found in all conditions, was negative for Cd45, expressed high levels of Col1a1 and other fibroblast markers demonstrating a fibroblast identity, and expressed interferon-responsive genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C156 and C157 describe the F-IFNS population. The characterization with fibroblast markers (C156) is supported by Figure 4E and Figure 4\u2014figure supplement 3. The expression of interferon-responsive genes (C157) is supported by Figure 4F and Supplementary file 4 with appropriate citation (Zhou et al., 2013). This represents a minor but well-characterized population that may be relevant to understanding fibroblast responses to inflammatory signals.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C158",
+      "C159",
+      "C160",
+      "C161",
+      "C162"
+    ],
+    "result": "Transcription factor expression analysis revealed Scleraxis in F-WntX and MYO; Tcf21 (accepted fibroblast marker) in most GFP+ populations except F-WntX; Tbx20 across all GFP+ cells and upregulated in F-WntX; Meox1 (part of cardiac fetal gene signature) upregulated in activated populations (F-Act, F-WntX, F-Cyc, MYO); and Prrx1 (expressed in bone marrow mesenchymal cells with CFU-F potential) across all GFP+ populations in all conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C158-C162 describe transcription factor expression patterns across GFP+ populations. The expression patterns are supported by Figure 4\u2014figure supplement 4 and appropriate citations are provided for the known functions of these transcription factors (Tallquist and Molkentin, 2017; Lu et al., 2018; Kfoury and Scadden, 2015). The observation that Tcf21 is not expressed in F-WntX (C159) is interesting given its status as a fibroblast marker. The expression of Prrx1 across all populations (C162) is notable given its association with mesenchymal progenitor cells. These observations provide insights into potential regulators of fibroblast states.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C1",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "Background knowledge claims about cardiac biology including the composition of cardiac cell types, pathophysiology of myocardial infarction, poor regenerative capacity of the mammalian heart, experimental evidence for cardiac regeneration, cardiac fibroblast distribution and functions, and the roles of inflammation and fibrosis in heart repair.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C8-C20 represent background knowledge and context for the study. These claims are supported by appropriate citations to established literature and represent accurate summaries of the current understanding in the field. The citations provided (Patterson et al., 2017; D'Uva et al., 2015; Mohamed et al., 2018; Srivastava and DeWitt, 2016; Wang et al., 2018; Pinto et al., 2016; Shinde and Frangogiannis, 2014; Tallquist and Molkentin, 2017; Gourdie et al., 2016; Mescher, 2017; Lai et al., 2017; Williams et al., 2018) are appropriate and support the claims made.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C48",
+      "C50",
+      "C66",
+      "C85",
+      "C86"
+    ],
+    "result": "Background knowledge claims about monocyte/macrophage biology including their developmental origins, roles in cardiac development and regeneration, self-renewal capacity, replacement by blood-derived monocytes, biphasic inflammatory response after MI, and fibroblast differentiation markers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C46, C48, C50, C66, C85, C86 represent background knowledge about monocyte/macrophage and fibroblast biology. These claims are supported by appropriate citations to established literature (Ensan et al., 2016; Lavine et al., 2014; Hulsmans et al., 2017; Epelman et al., 2014; Bajpai et al., 2018; Heidt et al., 2014; Molawi et al., 2014; Dick et al., 2019; Swirski and Nahrendorf, 2018; Epelman et al., 2015; Kanisicak et al., 2016; Asli et al., 2017; Chong et al., 2011; Noseda et al., 2015; Fu et al., 2018) and represent accurate summaries of current understanding in the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C29",
+      "C74",
+      "C77",
+      "C87",
+      "C104"
+    ],
+    "result": "Knowledge claims about specific molecular pathways and functions including Hey1 acting downstream of NOTCH for arterial EC fate, glial cells supporting cardiac sympathetic nerves essential for neonatal cardiac regeneration, Dhh and Semaphorins involved in neural and angiogenic development, use of Pdgfra-GFP as a lineage tracing tool, and WIF1 antagonizing CTGF signaling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29, C74, C77, C87, C104 represent specific molecular knowledge supported by appropriate citations (Mahmoud et al., 2015; Gamboa et al., 2017; Asli et al., 2017; Surmann-Schmitt et al., 2012; Travers et al., 2016). These claims accurately represent the cited literature and provide appropriate context for interpreting the current findings.",
+    "result_type": "MINOR"
+  }
+]

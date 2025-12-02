@@ -1,0 +1,2016 @@
+{
+  "submission": {
+    "id": "16b8ca68-88e9-44d5-ba7a-bb451cc3f749",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T19:00:34.434995Z",
+    "updated_at": "2025-12-02T19:00:34.434995Z"
+  },
+  "content": [
+    {
+      "id": "14460b1a-bb05-4edf-9768-311be103028a",
+      "submission_id": "16b8ca68-88e9-44d5-ba7a-bb451cc3f749",
+      "content_type": "manuscript",
+      "content_text": "# Harmful DNA:RNA hybrids are formed in cis and in a Rad51-independent manner\n\n## Authors\n\n- Juan Lafuente-Barquero<sup>1</sup>\n- Maria Luisa Garc\u00eda-Rubio<sup>1</sup>\n- Marta San Martin-Alonso<sup>1</sup>\n- Bel\u00e9n G\u00f3mez-Gonz\u00e1lez<sup>1</sup> ([ORCID: 0000-0003-1655-8407](https://orcid.org/0000-0003-1655-8407)) \u2020\n- Andr\u00e9s Aguilera<sup>1</sup> ([ORCID: 0000-0003-4782-1714](https://orcid.org/0000-0003-4782-1714)) \u2020\n\n### Affiliations\n\n1. Centro Andaluz de Biolog\u00eda Molecular y Medicina Regenerativa-CABIMER, Universidad de Sevilla-CSIC-Universidad Pablo de Olavide Seville Spain\n\n\u2020 Corresponding author\n\n## Abstract\n\nDNA:RNA hybrids constitute a well-known source of recombinogenic DNA damage. The current literature is in agreement with DNA:RNA hybrids being produced co-transcriptionally by the invasion of the nascent RNA molecule produced in cis with its DNA template. However, it has also been suggested that recombinogenic DNA:RNA hybrids could be facilitated by the invasion of RNA molecules produced in trans in a Rad51-mediated reaction. Here, we tested the possibility that such DNA:RNA hybrids constitute a source of recombinogenic DNA damage taking advantage of Rad51-independent single-strand annealing (SSA) assays in the yeast Saccharomyces cerevisiae. For this, we used new constructs designed to induce expression of mRNA transcripts in trans with respect to the SSA system. We show that unscheduled and recombinogenic DNA:RNA hybrids that trigger the SSA event are formed in cis during transcription and in a Rad51-independent manner. We found no evidence that such hybrids form in trans and in a Rad51-dependent manner.\n\n## Introduction\n\nR loops are structures formed by a DNA:RNA hybrid and the complementary displaced single stranded DNA (ssDNA). They were observed naturally as programmed events in specific genomic sites such as the S regions of Immunoglobulin genes in mammals or mitochondrial DNA (Chang et al., 1985; Garc\u00eda-Muse and Aguilera, 2019; Yu et al., 2003), where they play specific functions by promoting class switch recombination or DNA replication, respectively; but also as unscheduled non-programmed structures upon dysfunction of RNA binding proteins involved in the assembly or processing and export of the protein-mRNA particle (mRNP) such as the THO complex or the SRSF1 splicing factor (Huertas and Aguilera, 2003; Li and Manley, 2005). Also, they have been inferred in the rDNA regions of the bacterial chromosome upon Topo I inactivation (Drolet et al., 1995). Accumulated evidence indicates that R loops are detected from yeast to humans in many transcribed regions of the eukaryotic genome in wild-type cells, in cells defective in several metabolic processes covering from RNA processing to DNA replication and repair and in cells deficient in specific chromatin factors (Bhatia et al., 2014; Garc\u00eda-Muse and Aguilera, 2019; Garc\u00eda-Rubio et al., 2015; Herrera-Moyano et al., 2014; Mischo et al., 2011; Paulsen et al., 2009; Schwab et al., 2015). The biological consequences of such R loop structures are diverse and include replication stress, DNA breaks and genome instability that can be detected as hyperrecombination, plasmid loss or gross chromosomal rearrangements (Garc\u00eda-Muse and Aguilera, 2019). Indeed, DNA:RNA hybrids have been inferred by their potential to induce DNA damage and recombination, but they can also be directly detected via different methodologies. These include electrophoresis detection after nuclease treatment, bisulfite mutagenesis or either in situ immunofluorescence or DNA:RNA Immuno-Precipitation (DRIP) using the S9.6 anti-DNA:RNA monoclonal antibody (Garc\u00eda-Muse and Aguilera, 2019).\n\nThe increasing number of reports showing R loop accumulation in different organisms from bacteria to human cells, and the relevance of their functional consequences, whether on genome integrity, chromatin structure and gene expression suggest that most DNA:RNA hybrids are compatible with a co-transcriptional formation (Garc\u00eda-Muse and Aguilera, 2019). This is consistent with the idea that it is the RNA produced in cis the one that invades the duplex DNA, a reaction that can be facilitated by DNA sequence and supercoiling (Stolz et al., 2019) as well as by nicking of the DNA template (Roy et al., 2010). The evidence of DNA:RNA hybrid formation at breaks has matured in the last years (Cohen et al., 2018; D'Alessandro et al., 2018; Li et al., 2016; Ohle et al., 2016; Teng et al., 2018; Yasuhara et al., 2018) although the source and role of such hybrids remains still controversial (Aguilera and G\u00f3mez-Gonz\u00e1lez, 2017; Puget et al., 2019). Of note, genome-wide mapping results have been interpreted in diverse manners by different labs. Whereas some claim that DNA:RNA hybrids detected around DNA breaks mostly accumulate at transcribing sites (Cohen et al., 2018), in agreement with their co-transcriptional formation, others suggest that there is no preference for DNA:RNA hybrids to form at transcribed loci in human cells (D'Alessandro et al., 2018), implying a scenario in which DNA:RNA hybrids at break sites would form either de novo or with RNAs produced at different loci (in trans). Moreover, it has been shown in yeast that short RNAs can be used as templates for the recombinational repair of DSBs in a reaction catalyzed by Rad52 (Keskin et al., 2014).\n\nDNA:RNA hybrids can also form in vitro with the aid of the bacterial DNA strand exchange protein RecA (Kasahara et al., 2000; Zaitsev and Kowalczykowski, 2000). In vivo, DNA:RNA hybrids are formed with RNAs produced in trans as intermediates in the course of ribonucleoprotein-mediated reactions such as telomerase and CRISPR-Cas9 ribonucleoprotein involved in specific reactions (Collins, 2000; Jinek et al., 2012). They have also been reported to have regulatory roles in gene expression when formed by long non-coding RNAs (lncRNAs) at in trans loci such as the cases of the GAL lncRNA in yeast (Cloutier et al., 2016) or the APOLO lncRNA in plants (Ariel et al., 2020). In summary, despite the accumulating evidence that in vivo DNA:RNA hybrids formed in cis constitute a threat for genome stability, an open question is whether DNA:RNA hybrids also form in trans as a potential source of recombinogenic DNA damage. To our knowledge, this has only been addressed in the yeast Saccharomyces cerevisiae (Wahba et al., 2013). By S9.6 immunofluorescence (IF) and a yeast artificial chromosome-based genetic assay that measures gross chromosomal rearrangements, it was inferred that DNA:RNA hybrids could be formed with RNAs produced in trans by a reaction catalyzed by the eukaryotic DNA strand exchange protein Rad51 (Wahba et al., 2013). Nevertheless, the fact that the detected gross chromosomal rearrangements could depend on Rad51 and that the S9.6 antibody can also recognize dsRNAs (Hartono et al., 2018; K\u00f6nig et al., 2017; Silva et al., 2018), prompted us to address this question using a different approach. Using Rad51-independent recombination assays in which the initiation region could be unambiguously delimited, we do not find evidence for recombinogenic DNA:RNA hybrids forming in trans. Instead, we provide genetic evidence that DNA:RNA hybrids compromising genome integrity are formed in cis and in a Rad51-independent manner.\n\n## Results\n\n### A new genetic assay to detect recombinogenic DNA:RNA hybrids with RNA produced in trans\n\nWe developed a new genetic assay to infer the formation of recombinogenic DNA:RNA hybrids with RNAs produced in trans. It is based on two plasmids, one containing the recombination system and the LacZ gene in cis (GL-LacZ recombination system), and another one providing the in trans LacZ transcripts (tetp:LacZ) (Figure 1). The bacterial LacZ gene consists of a 3 Kb sequence with high G+C content previously reported to be hyper-recombinant and difficult to transcribe in DNA:RNA hybrid-accumulating strains, such as tho mutants (Ch\u00e1vez et al., 2001).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/56674/elife-56674-fig1-v2.jpg)\n\n**Figure 1.:** (A) DSBs induced in between direct repeats by DNA:RNA hybrids putatively formed with RNA produced in trans would be repaired by Rad51-independent Single-Strand Annealing (SSA) causing the deletion of one of the repeats. A DSB is depicted for simplicity, but other recombinogenic lesions such as nicks or ssDNA gaps cannot be ruled out. (B) Schematic representation of the recombination assay to study the recombinogenic potential RNA produced by transcription (Trx) in cis or in trans. Four combinations were studied: i) no transcription, with GL-LacZ construct turned transcriptionally off (2% glucose) and an empty plasmid; ii) transcription in trans, with GL-LacZ construct turned transcriptionally off (2% glucose) and the tetp:LacZ construct; iii) transcription in cis, with GL-LacZ construct turned transcriptionally on (2% galactose) and an empty plasmid; and iv) transcription in cis and in trans, with GL-LacZ construct turned transcriptionally on (2% galactose) and the tetp:LacZ construct.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/56674/elife-56674-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** Relative RNA levels at the LacZ gene from GL-LacZ and tetp:LacZ constructs when transcription was turned either off (Trx -) or on (Trx +) in WT (W303), hpr1\u0394 (U678.4C) and rnh1\u0394 rnh201\u0394 (HRN2.10C) strains transformed with either pRS314-GL-LacZ or pCM179.\u00a0Transcription at the GL-LacZ construct was turned on or off by growth in media with 2% galactose or 2% glucose, respectively. Transcription at the tetp:LacZ construct was turned on or off by growth in media without or with 5 \u03bcg/mL doxycycline, respectively. Average and SEM of three independent experiments are shown.\n\nThe GL-LacZ recombination system is a leu2 direct-repeat construct carrying the LacZ gene in between and under the GAL1 inducible promoter so that this construct is transcribed as a single RNA unit driven from the GAL1 promoter (Piruat and Aguilera, 1998). Single-Strand Annealing (SSA) events cause the deletion of the LacZ sequence and one of the leu2 repeats leading to Leu+ recombinants in a Rad51-independent manner (Figure 1A). To provide LacZ transcripts in trans, we used a fusion construct containing the complete bacterial LacZ gene sequence under the doxycycline-inducible tet promoter (tetp:LacZ). As a control of no expression in trans, we used transformants with an empty plasmid to avoid any possible effect from leaky transcription from the tet promoter in the presence of doxycycline.\n\nYeast strains carrying both GL-LacZ recombination system and the tetp:LacZ construct were used to assay SSA events in the four different possible conditions: i) no transcription, with GL-LacZ construct turned transcriptionally off (2% glucose) and an empty plasmid; ii) transcription in trans, with GL-LacZ construct turned transcriptionally off (2% glucose) and the tetp:LacZ construct; iii) transcription in cis, with GL-LacZ construct turned transcriptionally on (2% galactose) and an empty plasmid; and iv) transcription in cis and in trans, with GL-LacZ construct turned transcriptionally on (2% galactose) and the tetp:LacZ construct (Figure 1B).\n\n### RNAs produced in trans are not a spontaneous source of recombinogenic DNA damage\n\nThe analysis of recombination in wild-type cells revealed that whereas the stimulation of transcription in cis elevated the frequency of recombination threefold, the stimulation of transcription in trans driven from the tetp:LacZ construct had no effect on recombination (Figure 2A). These results already suggest that homologous transcripts coming from a different locus do not represent a detectable source of genetic instability in wild-type conditions and thus argue against the hypothesis that spontaneous DNA:RNA hybrids could be formed with mRNAs generated in trans. However, it is known that mRNA coating protects DNA from co-transcriptional RNA hybridization. Thus, we wondered if transcripts produced in trans could induce recombination in mRNP-defective mutants such as those of the THO complex. Hence, we performed our experiments in mft1\u2206 and hpr1\u2206 mutant strains. mft1\u2206 and hpr1\u2206 enhanced recombination slightly when transcription in cis was switched off\u00a0(Figure 2A), likely as a consequence of leaky transcription form the GAL1 promoter in glucose (Figure 1\u2014figure supplement 1). More significantly and in agreement with previous reports (Ch\u00e1vez et al., 2000), recombination frequencies rocketed when transcription was stimulated in cis. However, transcription activation in trans did not enhance recombination, as it would be expected if additional DNA:RNA hybrids could form with RNA produced in trans.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/56674/elife-56674-fig2-v2.jpg)\n\n**Figure 2.:** (A) Recombination analysis in WT (W303), rnh1\u0394 rnh201\u0394 (HRN2.10C), mft1\u0394 (WMK.1A) and hpr1\u0394 (U678.4C) strains carrying GL-LacZ plasmid system (pRS314-GL-LacZ) plus either the pCM190 empty vector or the same vector carrying the LacZ gene (pCM179). (B) Recombination analysis in WT (W303), mft1\u0394 (WMK.1A) and hpr1\u0394 (U678.4C) strains carrying GL-LacZi\u00a0plasmid\u00a0plus either the pCM190 empty vector or the same vector carrying the sequence of the LacZ gene (pCM179). (C) Recombination analysis in WT (W303), rnh1\u0394 rnh201\u0394 (HRN2.10C) and mft1\u0394 (WMK.1A) strains carrying GL-LacZ plasmid system (pRS314-GL-LacZ) plus either the pCM190 empty vector or the same vector carrying the last 400 bp from the 3\u2019 end of the LacZ gene (pCM190:LacZ400). In all panels, average and SEM of at least three independent experiments consisting in the median value of six independent colonies each are shown. *, p\u22640.05; **, p\u22640.01; ***, p\u22640.001; ****, p\u22640.0001 (unpaired Student\u2019s t-test).\n\nInstead, under conditions of high transcription of the recombination system (transcription in cis), RNA driven from an ectopic locus (transcription in trans) led to a partial suppression of the hyper-recombination. The reason for such suppression might involve the potential ability of the remotely produced RNAs to interfere with transcription occurring at the GL-LacZ construct. Given that a DNA:RNA hybrid produced in the template DNA strand can impair transcription elongation (Tous and Aguilera, 2007), one possibility would be that this interference is mediated by DNA:RNA hybrids formed between the RNA produced in trans and the transcribed DNA strand of the GL-LacZ construct. To rule out this possibility, we used an alternative recombination system (GL-LacZi), in which the LacZ sequence was inverted so that the LacZ transcript produced in trans would not be able to anneal with the transcribed DNA strand of the GL-LacZi system (Figure 2B). We detected a strong hyper-recombination in hpr1\u2206 cells when the LacZ sequence was transcribed in agreement with previous reports and with the fact that it has been shown that it is the length (and the GC content) but not the orientation of the lacZ sequence what impairs transcription and triggers hyper-recombination (Ch\u00e1vez and Aguilera, 1997; Ch\u00e1vez et al., 2001). Surprisingly, the production of RNAs in trans from the tet::LacZ construct also led to a reduction of the hyper-recombination in this system. Furthermore, in this case, the suppression was stronger and was also observed in glucose, when transcription in cis was off. This could be explained because, in this scenario, the RNA produced in trans is complementary to the mRNA produced in cis. Consequently, they can hybridize together forming a dsRNA that would preclude the possibility to form DNA:RNA hybrids at the GL-LacZi construct.\n\nSince transcription from the long LacZ gene is inefficient and leads to unstable RNA products, particularly in tho mutants (Ch\u00e1vez et al., 2001), we made a new construct with only the last 400 bp of LacZ (tetp:LacZ400) (Figure 2C). Strikingly, in this case, we observed no suppression of the tho-induced hyper-recombination by the production of RNA in trans. More importantly and again, recombination frequencies were not significantly enhanced by transcription in trans in any of the strains or conditions tested, further arguing against mRNA produced in trans as a possible source of recombinogenic DNA:RNA hybrids.\n\nThe THO complex is thought to prevent R-loops mainly by promoting a proper mRNA-protein assembly (Luna et al., 2019), whereas the two RNase H enzymes efficiently degrade the RNA moiety of DNA:RNA hybrids once formed (Cerritelli and Crouch, 2009). Thus, to favor DNA:RNA hybrid accumulation, we used cells lacking both RNases H1 and H2 and we determined the impact on SSA. Figure 2A and C show that rnh1\u2206 rnh201\u2206 cells elevated the recombination frequency when transcription was stimulated in cis, as expected. Importantly, the recombination frequencies were not altered by producing transcripts in trans, arguing again against the recombinogenic potential of putative DNA:RNA hybrids formed with RNAs produced in trans.\n\nIn order to confirm DNA:RNA hybrid formation in these different sequence contexts, we performed DRIP experiments at the LacZ sequence (Figure 3) and we observed that DNA:RNA hybrids accumulate in both, hpr1\u2206 and rnh1\u2206 rnh201\u2206 mutants, and in all GL-LacZ, tet:LacZ and GL:lacZi sequences as expected, despite the technical difficulty of detecting increases in hybrid accumulation in plasmids, since they cause plasmid loss.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/56674/elife-56674-fig3-v2.jpg)\n\n**Figure 3.:** DNA:RNA Immuno-Precipitation (DRIP) with the S9.6 antibody in WT (W303), hpr1\u0394 (U678.4C) and rnh1\u0394 rnh201\u0394 (HRN2.10C) strains in asynchronous cultures treated or not in vitro with RNase H in the GL-LacZ, tetp:LacZ and GL-LacZi constructs turned transcriptionally off (2% glucose or 5 \u03bcg/mL doxycycline) or on (2% galactose and in the absence of doxycycline). Average and SEM of three independent experiments are shown *, p\u22640.05; **, p\u22640.01; ***, p\u22640.001 (unpaired Student\u2019s t-test).\n\nGiven that the levels of transcription from the GAL1 and tet promoters used for the constructs are very different (Figure 1\u2014figure supplement 1), we decided to perform recombination tests with similar constructs in which the promoters were interchanged. Thus, we studied recombination in the TL-LacZ recombination system (Santos-Pereira et al., 2013) and used a GAL:LacZ construct to produce the LacZ transcripts from a remote locus. Figure 4 shows that, whereas transcription at the TL-LacZ recombination system enhanced recombination as previously published (Santos-Pereira et al., 2013), again no significant stimulation of recombination was detected when RNAs were produced in trans in either wild-type, hpr1\u2206 or rnh1\u2206 rnh201\u2206 cells even when the RNA was generated from the strong GAL1 promoter.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/56674/elife-56674-fig4-v2.jpg)\n\n**Figure 4.:** Recombination analysis in WT (W303), hpr1\u0394 (U678.4C) and rnh1\u0394 rnh201\u0394 (HRN2.10C) carrying TL-LacZ plasmid system (pCM184-TL-LacZ) plus either the pRS416 empty vector or the same vector carrying the LacZ gene (pRS416-GALLacZ). In this case, the four combinations studied were: i) no transcription, with TL-LacZ construct turned transcriptionally off (5 \u03bcg/mL doxycycline) and an empty plasmid; ii) transcription in trans, with TL-LacZ construct turned transcriptionally off (5 \u03bcg/mL doxycycline) and the GAL-LacZ construct switched on (2% galactose); iii) transcription in cis, with TL-LacZ construct turned transcriptionally on and an empty plasmid; and iv) transcription in cis and in trans, with TL-LacZ construct turned transcriptionally on and the GAL-LacZ construct switched on (2% galactose). Average and SEM of at least three independent experiments consisting in the median value of six independent colonies each are shown. *, p\u22640.05; **, p\u22640.01; ***, p\u22640.001; ****, p\u22640.0001 (unpaired Student\u2019s t-test).\n\nFinally, since all experiments were performed in plasmid-born systems in the original W303 background bearing the rad5-G535R mutation (Fan et al., 1996), we integrated the GL-LacZ system in the chromosome of a RAD5 wild-type strain to ascertain that the rad5-G535R mutation did not affect the results as well as to confirm that the results were the same in a chromosome locus. As it can be seen in Figure 5, transcription of the chromosomal recombination system promoted a 30-fold increase in recombination levels in the tho mutant hpr1\u2206 with respect to the WT, in agreement with all previous data showing that co-transcriptional DNA:RNA hybrids are a potent source of recombination. By contrast, mRNA produced at a different locus had no effect on recombination, neither in wild-type cells nor in the tho mutant hpr1\u2206. Hence, altogether, these results argue that, in contrast to mRNA produced in cis, RNA produced at a particular locus does not lead to recombinogenic DNA damage at regions located in trans.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/56674/elife-56674-fig5-v2.jpg)\n\n**Figure 5.:** Recombination analysis in WT (WGLZN), hpr1\u0394 (HGLZN) strains carrying the GL-LacZ recombination system integrated in chromosome III. Strains were transformed with empty vector pCM190 or the same vector carrying the LacZ gene (pCM179). Average and SEM of at least three independent experiments are shown consisting in the median value of six independent colonies each. **, p\u22640.01; ****, p\u22640.0001 (unpaired Student\u2019s t-test).\n\n### Rad51 is not required for DNA:RNA hybridization\n\nWe next wondered about the possible role of the recombination protein Rad51 in DNA:RNA hybridization. To examine this, we analyzed in hpr1\u2206 cells the effect of transcribing the ectopic tet:LacZ construct on recombination in our direct-repeat systems when these were not transcribed (Figure 6). It is important to remark that the recombination events detected in our assays are deletions occurring by SSA between direct repeats, which do not require Rad51 (Pardo et al., 2009). Indeed, in agreement with SSA annealing being Rad51-independent, RAD51 deletion caused no significant changes in the recombination frequencies in our assay. Thus, any conclusion about Rad51-dependency or independency of the hybridization inferred from our assay is not contaminated by a possible direct role of Rad51 in the event we are studying. Importantly, we observed no differences when RAD51 was deleted in hpr1\u2206 cells even when the LacZ sequence was expressed from the plasmid containing the tet::LacZ construct. This result argues against Rad51 facilitating or impeding the formation of DNA:RNA hybrids with RNAs produced in trans.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/56674/elife-56674-fig6-v2.jpg)\n\n**Figure 6.:** Recombination analysis in WT (W303), hpr1\u0394 (U678.1C), rad51\u0394 (WSR51.4A) and hpr1\u0394 rad51\u0394 (HPR51.15A) strains carrying GL-LacZ plasmid system (pRS314-GL-LacZ) plus either the pCM190 empty vector or the same vector carrying the LacZ gene (pCM179). Average and SEM of at least three independent experiments consisting in the median value of six independent colonies each are shown. *, p\u22640.05; **, p\u22640.01, ***, p\u22640.001 (unpaired Student\u2019s t-test).\n\nWe then wondered whether the formation of known recombinogenic DNA:RNA hybrids formed in cis, such as those reported in the hpr1\u2206 mutant, requires Rad51. For this purpose, we studied the effect in the strong hyper-recombination phenotype of hpr1\u2206 when transcription was induced in cis. As shown in Figure 6, the absence of Rad51 had no effect on the hyper-recombination observed, as hpr1\u2206 rad51\u2206 cells elevated the recombination frequency more than 70-fold with respect to rad51\u2206, similarly to Rad51+ cells. This result clearly indicates that the in cis DNA:RNA hybrid-mediated hyper-recombination phenotype is actually independent on Rad51.\n\nIn parallel, we studied the formation of Rad52 foci, a marker of recombinogenic DNA breaks (Lisby et al., 2001), in which case we used AID overexpression to enhance the recombinogenic potential of R loops (G\u00f3mez-Gonz\u00e1lez and Aguilera, 2007) and RNase H overexpression to remove DNA:RNA hybrids (Figure 7A). In agreement with the role of the THO complex in R loop prevention, hpr1\u2206 caused an increase in Rad52 foci that was enhanced by AID overexpression and suppressed by RNase H overexpression, as previously reported (Alvaro et al., 2007; Garc\u00eda-Pichardo et al., 2017; Wellinger et al., 2006). By contrast, the accumulation of Rad52 foci observed in rad51\u2206 cells was not affected by either AID or RNase H overexpression. This result argues that R loops are not the cause for the genetic instability observed in the absence of Rad51. The accumulation of Rad52 foci in rad51\u2206 cells is rather likely due to the accumulation of unrepaired recombination intermediates, as previously suggested (Alvaro et al., 2007). Importantly, hpr1\u2206 rad51\u2206 cells showed a similar result, further supporting that the accumulation of recombinogenic damage in hpr1\u2206 cells is independent on Rad51. Consequently, we next directly measured DNA:RNA hybrid accumulation by immunodetection with the S9.6 antibody on metaphase spreads. Figure 7B illustrates that the number of cells with S9.6 positive signal was similar in hpr1\u2206 and in hpr1\u2206 rad51\u2206 cells. Altogether, these results demonstrate that the Rad51 protein is not required for the DNA:RNA hybrid formation previously reported in THO mutants.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/56674/elife-56674-fig7-v2.jpg)\n\n**Figure 7.:** (A) Spontaneous Rad52-YFP foci formation in WT (W303), hpr1\u0394 (U678.1C), rad51\u0394 (WSR51.4A) and hpr1\u0394 rad51\u0394 (HPR51.15A) strains carrying the empty vectors pCM184 and pCM189, or a combination of both carrying the RNH1 or AID genes as indicated in the legend. (B) Representative images and value of the percent of the total nuclei scored that stained positively for DNA:RNA hybrids in chromatin spreads stained with the S9.6 antibody in WT (W303), hpr1\u0394 (U678.1C), rad51\u0394 (WSR51.4A), hpr1\u0394 rad51\u0394 (HPR51.15A) and RNH-R (rnh1\u0394 rnh201\u0394) strains. In both panels, average and SEM of at least three independent experiments performed with more than 100 cells are shown. *, p\u22640.05; **, p\u22640.01, ***, p\u22640.001 (unpaired Student\u2019s t-test).\n\n## Discussion\n\nWe have devised a new genetic assay to infer whether the source of DNA:RNA hybrids compromising genome integrity could potentially come from RNAs produced in trans. To reach this conclusion, we used an SSA assay. It is well established that SSA events are Rad51-independent; they do not require DNA strand exchange, but just annealing between resected single-stranded DNA (ssDNA) for which the action of Rad52 is sufficient (Figure 1A; Pardo et al., 2009). Our constructs show that, in contrast to the RNA produced at the site where SSA occurs, an RNA produced in a remote locus does not induce an increase in homology-directed repair. Importantly, recombination is not induced by in trans RNA production even when the major DNA:RNA removal machinery is absent (rnh1\u2206 rnh201\u2206 mutant) or when the RNA coating functions preventing DNA:RNA hybrid formation are impaired (tho mutants), arguing against the idea that harmful DNA:RNA hybrids could spontaneously form in trans and constitute a menace for genome integrity. Co-transcriptional R-loops are responsible for the hyper-recombination of hpr1\u2206 as reported previously (Huertas and Aguilera, 2003). Putative DNA:RNA hybrids formed in trans would be expected to further increase recombination levels. Instead, the simultaneous induction of transcription in cis and in trans (Figure 2A) reduced the strong hyper-recombinogenic effect of tho mutants. The fact that this suppressor effect was augmented when one of the LacZ sequences was inverted (Figure 2B) and prevented by a shorter LacZ construct (Figure 2C), which was reported to be more stable in tho mutant backgrounds (Ch\u00e1vez et al., 2001), suggests that the free RNA itself, and not in the form of DNA:RNA hybrids formed at the template DNA strand, plays some role in preventing the hyper-recombination, likely because stable RNAs can interfere with transcription at a homologous locus. However, no suppressor effect was observed when the recombination system was placed in a chromosome (Figure 5) or when the ectopic RNA was transcribed from the GAL1 promoter (Figures 2 and 4).\n\nDNA:RNA hybrids formed with an RNA produced in trans were previously suggested to threaten genome integrity (Wahba et al., 2013). This conclusion was based on experiments performed with a yeast artificial chromosome after the induction of transcription of a homologous region placed at chromosome III. Recombination involving multiple substrates was first reported in S. cerevisiae, in which an induced-DSB triggered recombination between two other homologous fragments at different chromosomes (Ray et al., 1989). Tri-parental recombination assays have been successfully used since then to define specific features of the HR reaction as well as for studies of Break-Induced Recombination (BIR) or translocations and chromosomal rearrangements occurring between ectopic regions (Pardo and Aguilera, 2012; Piazza et al., 2017; Ruiz et al., 2009). However, such events are not the most adequate to infer recombination initiation unless this has been artificially induced (as is the case of an HO-induced DSB). Hence, the assay used to infer the potential of DNA:RNA hybrids formed with RNAs produced in trans to induce genetic instability (Wahba et al., 2013) relied on an RNA fragment produced at a (first) DNA region that could form a DNA:RNA hybrid with a (second) ectopic homologous DNA region that would promote its deletion or loss, leading to a genetically detectable phenotype. Thus, this assay does not exclude the possibility that the RNA forms the hybrid in cis inducing subsequently a DSB that would stimulate the recombination events studied (Figure 6). Indeed, this event would demand the action of Rad51 for DNA strand invasion, consistent with the results obtained (Wahba et al., 2013). Therefore, the increased genetic instability observed could be explained by the invasion of the 3\u2019 end of a DNA break induced by the DNA:RNA hybrid formed at the first site (Figure 8) rather than implying that Rad51 is required for the RNA to invade the second DNA sequence.\n\n![Figure 8.](https://cdn.elifesciences.org/articles/56674/elife-56674-fig8-v2.jpg)\n\n**Figure 8.:** DNA:RNA hybrid produced in cis can induce a DSB in the same sequence. The 3\u2019 end of such a DSB could invade an ectopic homologous sequence and destabilize it. This DNA strand invasion event would require Rad51. In this model, genetic instability caused by hybrids in trans would be Rad51-dependent without the need of invoking a Rad51-mediated DNA:RNA hybrid formation in trans. A DSB is depicted for simplicity, but other recombinogenic lesions such as nicks or ssDNA gaps cannot be ruled out.\n\nIn our case, however, we show that the hyper-recombinogenic potential of DNA:RNA hybrids is Rad51-independent (Figure 4). Our assays involve two leu2 homologous repeats that recombine by Rad51-independent SSA. Indeed, as expected, RAD51 deletion caused no decrease in the observed recombination frequencies in our assay (Figure 5). Recombination between the leu2 repeats could be originated by either a DNA:RNA hybrid in cis or by a DSB occurring in between the repeats, or as suggested previously for tho mutants, by a bypass mechanism involving template switching (G\u00f3mez-Gonz\u00e1lez et al., 2009). It is worth noting that although we are depicting the SSA reactions as being initiated by a DSB (Figures 1 and 8), we cannot discard that the initial lesion triggered by a hybrid is a nick or ssDNA gap, as previously proposed for tho mutants (G\u00f3mez-Gonz\u00e1lez et al., 2009).\n\nSimilarly, a DSB occurring at the locus where the RNA in trans was generated could give rise to Leu+ recombinants in our assay. However, such recombination events would be Rad51-dependent, as they will require a Rad51-dependent invasion into the GL-LacZ construct (Figure 8). Hence, the Leu+ recombinants obtained in rad51\u2206 mutant cells (Figure 5) can only be explained by Rad51-independent events occurring in cis, at the GL-LacZ construct. Strikingly, the fact that we detected no significant increase in Leu+ recombinants by inducing transcription in trans, either in RAD51 or rad51\u2206 backgrounds rules out the possibility that recombinogenic DNA:RNA hybrids form in trans in our assay. It was previously shown that S9.6 signal detected by IF was reduced by rad51\u2206 in metaphase spreads (Wahba et al., 2013). By contrast, we detected S9.6 signal in metaphase spreads of the hpr1\u2206 mutant of the THO complex in both RAD51 and rad51\u2206 backgrounds (Figure 7B). The uncertainty about the identity of the structures detected by IF using the S9.6 antibody, which also recognizes dsRNA (Hartono et al., 2018; K\u00f6nig et al., 2017; Silva et al., 2018), and the possibility that chromosomal spreads could preferentially visualize the rDNA regions, in which high levels of dsRNA structures formed by the rRNAs, makes difficult to make conclusions on S9.6 IFs in this case.\n\nThus, we have found no evidence for a Rad51-facilitated strand invasion from RNAs produced in trans. Further arguing against any major role of this recombinase in R loop metabolism or function, none of the so far reported DNA:RNA hybrid interactomes has identified RAD51 (Cristini et al., 2018; Nadel et al., 2015; Wang et al., 2018). The fact that, in vitro, RecA can catalyze an inverse DNA strand exchange reaction with DNA or RNA thus promoting the assimilation of a transcript into duplex DNA (Kasahara et al., 2000; Zaitsev and Kowalczykowski, 2000) does not argue that this is the case for unscheduled recombinogenic R loops in vivo. More likely, the biological significance of this process relies on its use for replication initiation of prokaryotic cells as originally proposed (Zaitsev and Kowalczykowski, 2000), for replication-dependent recombination to restart stalled forks (Pomerantz and O'Donnell, 2008) or even for transcription-induced origin-independent replication (Stuckey et al., 2015). Hence, DNA:RNA hybridization could occur in trans under regulated conditions but not spontaneously as unscheduled and harmful structures that would put genome integrity into risk. Thus, the assimilation of a transcript into a duplex DNA in trans would be tightly regulated and limited to specific reactions such as the case of telomerase or CRISPR and possibly other proteins yet to be discovered. For other cases, such as that of the GADP45 factor that binds to promoters harboring hybrids formed by lncRNAs (Arab et al., 2019), it is unclear whether such hybrids are formed in trans and in a GADP45-dependent manner.\n\nAltogether, our results suggest that RNAs do not form hybrids in trans, so that the previously reported induction of Rad51-dependent ectopic genetic instability would be explained by R loop-mediated DNA breaks in cis.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Genetic reagent Saccharomyces cerevisiae</td>\n      <td>W303 background strains with different gene deletions</td>\n      <td>various</td>\n      <td></td>\n      <td>(See Materials and methods section)</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>Yeast expression plasmids and recombination systems</td>\n      <td>various</td>\n      <td></td>\n      <td>(See Materials and methods section)</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>Primers for DRIP and RT-PCR</td>\n      <td>Condalab</td>\n      <td></td>\n      <td>(See Materials and methods section)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Cy3 conjugated anti-mouse (goat monoclonal)</td>\n      <td>Jackson laboratories</td>\n      <td>Cat# 115-165-003, RRID:AB_2338680</td>\n      <td>IF (1:1000)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>S9.6 anti DNA:RNA hybrids (mouse monoclonal)</td>\n      <td>ATCC Hybridoma cell line</td>\n      <td>Cat# HB-8730, RRID:CVCL_G144</td>\n      <td>DRIP (1 mg/ml) and IF (1:1000)</td>\n    </tr>\n    <tr>\n      <td>Commercial assay, kit</td>\n      <td>Macherey-Nagel DNA purification</td>\n      <td>Macherey- Nagel</td>\n      <td>Cat# 740588.250</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay, kit</td>\n      <td>Qiagen\u2019s RNeasy</td>\n      <td>Quiagen</td>\n      <td>Cat# 75162</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay, kit</td>\n      <td>Reverse Transcription kit</td>\n      <td>Qiagen</td>\n      <td>Cat # 205311</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Peptide, recombinant protein</td>\n      <td>Zymolyase 20T</td>\n      <td>US Biological</td>\n      <td>Z1001</td>\n      <td>(50 mg/ml)</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Doxycyclin hyclate</td>\n      <td>Sigma-Aldrich</td>\n      <td>D9891</td>\n      <td>(5 mg/ml)</td>\n    </tr>\n    <tr>\n      <td>Peptide, recombinant protein</td>\n      <td>Proteinase K (PCR grade)</td>\n      <td>Roche</td>\n      <td>Cat # 03508811103</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Peptide, recombinant protein</td>\n      <td>Rnase A</td>\n      <td>Roche</td>\n      <td>Cat # 10154105103</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>GraphPad Prism V8.4.2</td>\n      <td>GraphPad Software, La Jolla, CA, USA</td>\n      <td>RRID:SCR_002798</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>iTaq Universal SYBR Green</td>\n      <td>Bio-RAD</td>\n      <td>Cat # 1725120</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>DAPI stain</td>\n      <td>Invitrogen</td>\n      <td>D1306</td>\n      <td>1 \u00b5g/mL</td>\n    </tr>\n  </tbody>\n</table>\n\n### Yeast strains and Plasmids\n\nStrains used were the wild-type W303-1A (MATa ade2-1 can1- 100 his3-11,15 leu2-3,112 trp1-1 ura3-1 rad5-G535R) and its isogenic hpr1\u2206::HIS3 mutant U678-1C (MATa) and U678-4C (MAT\u03b1), mft1\u2206::KANMX mutant (WMK.1A) (Ch\u00e1vez and Aguilera, 1997), rnh1\u0394::KANMX rnh201\u0394::KANMX (RNH-R), rad51\u2206::KANMX (WSR51.4A) (Gonz\u00e1lez-Barrera et al., 2002), and hpr1\u2206::HIS3MX rad51\u2206::KANMX (HPR51.15A) from this study. rnh1\u0394::KAN rnh201\u0394::KAN (HRN2.8A) and the wild-type HRN2.8A were from Huertas and Aguilera, 2003. Wild-type (WGLZN) and hpr1\u2206HIS3 mutant were made in this study by insertion of the GL-LacZ::NATMX at the LEU2 locus in Chromosome III of a W303-1A strain corrected for RAD5 (Moriel-Carretero and Aguilera, 2010).\n\nYeast plasmids pCM179, pCM184, pCM189 and pCM190 were previously published (Gar\u00ed et al., 1997). pRS314-GL-LacZ (Piruat and Aguilera, 1998) and pRS314-GL-LacZi plasmids with recombination systems were built as follows. The BamHI fragment containing the LacZ sequence from pPZ (Straka and H\u00f6rz, 1991), was inserted in both sense and antisense orientations with respect to the promoter, respectively, into the BglII site of pRS314GLB (Piruat and Aguilera, 1998). pCM184TL-lacZ (Santos-Pereira et al., 2013) pRS416 and pRS416-GALlacZ were described previously (Prado et al., 1997). pCM184:AID was built by inserting the AID ORF from pCM189:AID (Santos-Pereira et al., 2013) into the NotI site of pCM190. pCM190-tet::LacZ400 was built by cloning the KpnI-BamHI 400 bp fragment of the 3' from the LacZ gene into KpnI-BamHI digested pCM190. Plasmids pCM189:AID, pCM184:RNH1 (Santos-Pereira et al., 2013), and pWJ1344 (Lisby et al., 2001) were also previously published.\n\n### Yeast transformation\n\nYeast transformation was performed using the lithium acetate method as previously described (Gietz et al., 1995).\n\n### Recombination assays\n\nCells transformed were grown in selective media containing 2% glucose and 5 \u03bcg/mL of doxycycline (kept in the dark) to repress transcription from the GAL1 and tet promoter, respectively. Recombination frequencies were calculated as previously described as means of at least three median frequencies obtained each from six independent colonies isolated in the appropriate medium for the selection of the required plasmids (G\u00f3mez-Gonz\u00e1lez et al., 2011). Briefly, transformants were cultured for at 3\u20134 days (until acquiring similar colony size) in the appropriate selective media containing either 2% glucose or 2% galactose and recombinants were obtained by plating appropriate dilutions in selective medium. To calculate total number of cells, plates with the same requirements as for the original transformation were used. All plates were grown for 3\u20134 days at 30\u00b0C. The average and SEM of at least three independent transformants was plotted for each figure but the numerical data can be seen in Figure 2\u2014source data 1, Figure 4\u2014source data 1, Figure 5\u2014source data 1 and Figure 6\u2014source data 1.\n\n### Transcription analysis\n\nMid-log cultures were grown with either glucose or galactose and with or without 5 \u03bcg/ml doxycycline (kept in the dark). Total RNA was obtained using Qiagen\u2019s RNeasy kit and used for cDNA synthesis with the QuantiTect Reverse Transcription kit with random primers (Qiagen) according to instruction. Real-time quantitative PCR was performed using iTaq universal SYBR Green (Biorad) with a 7500 Real-Time PCR machine (Applied Biosystems). Primers sequences used for this analysis were LacZT1-Fw (GCGCCGTGGCCTGAT), LacZT1-Rv (GTGCAGCGCGATCGTAATC), Intergenic-Fw (TGTTCCTTTAAGAGGTGATGGTGAT) and Intergenic-Rv (GTGCGCAGTACTTGTGAAAACC). The exact values obtained are shown in Figure 1\u2014figure supplement 1\u2014source data 1.\n\n### DRIP assays\n\nDNA:RNA hybrids were measured in cultures with either glucose or galactose and either with or without 5 \u03bcg/ml doxycycline (kept in the dark). Cultures were collected, washed with chilled water, resuspended in 1.4 mL spheroplasting buffer (1 M sorbitol, 10 mM EDTA pH 8, 0.1% \u03b2-mercaptoethanol, 2 mg/ml Zymoliase 20T) and incubated at 30\u00b0C for 30 min. The spheroplasts were pelleted (5 min at 7000 rpm) rinsed with water and homogeneously resuspended in 1.65 mL of buffer G2 (800 mM Guanidine HCl, 30 mM Tris-Cl pH 8, 30 mM EDTA pH 8, 5% Tween-20, 0.5% Triton X-100). Samples were treated with 40 \u03bcl 10 mg/ml RNase A for 30 min at 37\u00b0C and 75 \u03bcl of 20 mg/ml proteinase K (Roche) for 1 hr at 50\u00b0C. DRIP was performed mainly as described (Ginno et al., 2012) with few differences. DNA was extracted gently with chloroform:isoamyl alcohol 24:1. Precipitated DNA, washed twice with 70% EtOH, resuspended gently in TE and digested overnight with 50 U of HindIII, EcoRI, BsrGI, XbaI and SspI, 2 mM spermidine and 2.5 \u03bcl BSA 10 mg/ml. Half of the DNA was treated with 8 \u03bcL RNase H (New England BioLabs) overnight 37\u00b0C as RNase H control. RNA-DNA hybrids were immunoprecipitated using S9.6 monoclonal antibody (hybridoma cell line HB-8730) coupled to Dynabeads Protein A (Invitrogen) for 2 hr at 4\u00b0C and washed 3 times with 1x binding buffer. DNA was eluted in 100 \u03bcL elution buffer (50 mM Tris pH 8.0, 10 mM EDTA, 0.5% SDS) treated 45 min with 7 \u03bcL proteinase K 20 mg/ml at 55\u00b0C and purified with Macherey-Nagel DNA purification kit. Primers sequences used for this analysis were LacZT1-Fw (GCGCCGTGGCCTGAT) and LacZT1-Rv (GTGCAGCGCGATCGTAATC). The average and SEM of at least three independent transformants was plotted but the numerical data can be seen in Figure 3\u2014source data 1.\n\n### Detection of Rad52-YFP foci\n\nSpontaneous Rad52-YFP foci from mid-log growing cells carrying plasmid pWJ1344 were visualized and counted by fluorescence microscopy in a Leica DC 350F microscope, as previously described (Lisby et al., 2001). More than 200 S/G2 cells where inspected for each experimental replica. The average and SEM of at least three independent transformants was plotted but the numerical data can be seen in Figure 7\u2014source data 1.\n\n### S9.6 immunofluorescence of yeast chromosome spreads\n\nThe procedure performed is similar to Chan et al., 2014 with some modifications. Briefly, mid-log cultures (OD600\u00a0=\u00a00.5\u20130.8) were grown at 30\u00b0C; 10 ml of them were collected, washed in cold spheroplasting buffer (1.2 M sorbitol, 0.1 M potassium phosphate and 0.5 MgCl2 at pH 7) and then digested by adding 10 mM DTT and 150 mg/ml of Zymolyase 20T to the same buffer. The digestion was performed for 10 min (37\u00b0C) and stopped by mixing the samples with the solution 2 (0.1 M MES, 1M sorbitol, 1 mM EDTA, 0.5 mM MgCl2, pH 6.4). Later, spheroplasts were centrifuged carefully 8 min at 800 rpm, lysed with 1% vol/vol Lipsol and fixed on slides using Fixative solution (4% paraformaldehyde/3.4% sucrose). The spreading was carried out using a glass rod and the slides were dried from 2 hr to overnight in the extraction hood.\n\nFor the immuno-staining, the slides were first washed in PBS 1X in coplin jars and then blocked in blocking buffer (5% BSA, 0.2% milk in PBS 1X) over 10 min in humid chambers. Afterwards, slides were incubated with the primary monoclonal antibody S9.6 (1 mg/ml) in a humid chamber 1 hr at 23\u00b0C. After washing the slides with PBS 1X for 10 min, the slides were incubated 1 hr at 23\u00b0C in the dark with the secondary antibody Cy3 conjugated goat anti-mouse (Jackson laboratories, #115-165-003) diluted 1:1000 in blocking buffer. Finally, the slides were mounted with 50 \u03bcl of Vectashield (Vector laboratories, CA) with 1X DAPI and sealed with nail polish. For each experiment, more than 100 nuclei were visualized and counted to obtain the fraction of nuclei with DNA:RNA hybrids. The average and SEM of at least three independent transformants was plotted but the numerical data can be seen in Figure 7\u2014source data 1.\n",
+      "created_at": "2025-12-02T19:00:34.434995Z"
+    },
+    {
+      "id": "1e3d9af0-b953-4e38-b54a-acd872236f78",
+      "submission_id": "16b8ca68-88e9-44d5-ba7a-bb451cc3f749",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Wolf-Dietrich Heyer, University of California, Davis United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.56674.sa1](https://doi.org/10.7554/eLife.56674.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nAcceptance summary:\n\nUsing a clever genetic system in the budding yeast Saccharomyces cerevisiae the authors test whether R-loops can form in trans, meaning that a transcript from locus A could lead to R-loop formation in locus B. Moreover, they test whether R-loop formation is dependent on Rad51, the eukaryotic RecA family recombinase. Using their genetic system and the S9.6 antibody to detect R-loops in wild type and strains with mutations known to affect R-loop, conclusive data are shown that R-loops only form in cis and that R-loops in this genetic system are independent of Rad51. Overall, this work significantly enriches the discussion in the R-loop field and provides an alternative view point of an earlier publication that suggested R-loop formation in trans being catalyzed by Rad51.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Harmful DNA:RNA hybrids are formed in cis and in a Rad51-independent manner\" for consideration by eLife. Your article has been reviewed by three peer reviewers, including Wolf-Dietrich Heyer as the Reviewing Editor and Reviewer #1, and the evaluation has been overseen by Jessica Tyler as the Senior Editor. The following individual involved in review of your submission has agreed to reveal their identity: Catherine H Freudenreich (Reviewer #2).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nAs the editors have judged that your manuscript is of interest, but as described below that additional experiments are required before it is published, we would like to draw your attention to changes in our revision policy that we have made in response to COVID-19 (https://elifesciences.org/articles/57162). First, because many researchers have temporarily lost access to the labs, we will give authors as much time as they need to submit revised manuscripts. We are also offering, if you choose, to post the manuscript to bioRxiv (if it is not already there) along with this decision letter and a formal designation that the manuscript is 'in revision at eLife'. Please let us know if you would like to pursue this option. (If your work is more suitable for medRxiv, you will need to post the preprint yourself, as the mechanisms for us to do so are still in development.)\n\nSummary:\n\nUsing a clever genetic system in the budding yeast Saccharomyces cerevisiae the authors test whether R-loop can form in trans, meaning that a transcript from locus A could lead to R-loop formation in locus B. Moreover, they test whether R-loop formation is dependent on Rad51, the eukaryotic RecA family recombinase. Using their genetic system and cytological analysis of Rad52 foci and the S9.6 antibody to detect R-loops in wild type and strains with mutations known to affect R-loop, conclusive data are shown that R-loops only form in cis and that R-loops in this genetic system are independent of Rad51. Overall, this work significantly enriches the discussion in the R-loop field and provides an alternative view point of an earlier publication that suggested R-loop formation in trans being catalyzed by Rad51.\n\nEssential revisions:\n\n1) The pGal promoter induces very high transcription in the presence of galactose (often 500X or more induction). The level is likely very different (much less) for the tet promoter, which is generally only induced 2-3X upon addition of doxycycline. This could significantly affect the results \u2013 e.g. the cis vs. trans effects could really be a matter of different transcription levels. Transcription levels from each promoter really need to be determined- this is a very important control. The exact induction conditions used, including concentrations and induction times, need to be spelled out in the Materials and methods and should be consistent with those used during the RT-PCR experiment to test transcript levels. In the absence of being able to do the experiment on the constructs used (which would be optimal), at least it could be cited if this lab has used the same promoters and induction conditions in the past, and a caveat inserted if transcription levels are different. It would also be good to switch the promoters and make sure the result holds, as there could be issues of differences in timing of transcription as well.\n\n2) In Figure 2 the authors relate recombination frequencies in their assays to RNA:DNA hybrid formation without measuring hybrids directly. This is a major weakness that significantly limits data interpretation. For instance, I am very surprised that the \"cis\" recombination frequency of the inverted LacZ reporter is essentially as high as the regular lacZ construct. This result implies that hybrid formation is insensitive to the orientation of the reporter when in many reported cases, R-loop formation is strongly orientation-dependent. Of course, another hypothesis is that (stalled) transcription itself triggers recombination, not R-loops. Without data on R-loop formation, one cannot disentangle transcription from co-transcriptional R-loop formation. The authors must use DRIP-based assay to quantify R-loop levels in the various sequence contexts and under the various genetic backgrounds to establish that their assay is reflective of R-loop levels. Using bisulfite-based readouts to measure R-loop distributions and lengths across the LacZ region would be even better. Without this data, the claim that this new genetic assay can \"infer the formation of recombinogenic DNA:RNA hybrids\" is unsubstantiated.\n\n3) Source data:\n\nThe source data file should be labeled better. Missing are:\n\n-what the numbers in the table are (rates of Leu+ x 10^-4?)\n\n-which data goes with which figure panel\n\n-average and SEM numbers should be shown in the data table\n\nThe exact p values not reported and could be added to source data file.\n\nN values can be discerned from the source data file but it would be nice for them to be stated in the figure legends.\n",
+      "created_at": "2025-12-02T19:00:34.434995Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T19:00:34.434995Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T19:00:34.434995Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "f83145d4-940d-428d-a640-d800cf0f97b9",
+      "content_id": "14460b1a-bb05-4edf-9768-311be103028a",
+      "claim_id": "C1",
+      "claim": "DNA:RNA hybrids constitute a well-known source of recombinogenic DNA damage.",
+      "claim_type": "EXPLICIT",
+      "source": "DNA:RNA hybrids constitute a well-known source of recombinogenic DNA damage.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge in the abstract without specific data in this manuscript.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:00:34.434995Z"
+    },
+    {
+      "id": "92abb130-c327-4221-ba86-08957edf5de5",
+      "content_id": "14460b1a-bb05-4edf-9768-311be103028a",
+      "claim_id": "C2",
+      "claim": "The current literature is in agreement with DNA:RNA hybrids being produced co-transcriptionally by the invasion of the nascent RNA molecule produced in cis with its DNA template.",
+      "claim_type": "EXPLICIT",
+      "source": "The current literature is in agreement with DNA:RNA hybrids being produced co-transcriptionally by the invasion of the nascent RNA molecule produced in cis with its DNA template.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim references the consensus view in existing literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:00:34.434995Z"
+    },
+    {
+      "id": "18173d42-1a92-4ddc-a302-1991b9f50b41",
+      "content_id": "14460b1a-bb05-4edf-9768-311be103028a",
+      "claim_id": "C3",
+      "claim": "It has been suggested that recombinogenic DNA:RNA hybrids could be facilitated by the invasion of RNA molecules produced in trans in a Rad51-mediated reaction.",
+      "claim_type": "EXPLICIT",
+      "source": "However, it has also been suggested that recombinogenic DNA:RNA hybrids could be facilitated by the invasion of RNA molecules produced in trans in a Rad51-mediated reaction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This references a hypothesis from prior literature that the authors are testing.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:00:34.434995Z"
+    },
+    {
+      "id": "8d5564a5-40d4-4688-a863-5c9e33366798",
+      "content_id": "14460b1a-bb05-4edf-9768-311be103028a",
+      "claim_id": "C4",
+      "claim": "Unscheduled and recombinogenic DNA:RNA hybrids that trigger the SSA event are formed in cis during transcription and in a Rad51-independent manner.",
+      "claim_type": "EXPLICIT",
+      "source": "We show that unscheduled and recombinogenic DNA:RNA hybrids that trigger the SSA event are formed in cis during transcription and in a Rad51-independent manner.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main finding of the study, supported by the recombination assays and genetic experiments presented in the results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:00:34.434995Z"
+    },
+    {
+      "id": "cb2f2ad5-27c7-4ae7-b8d6-201fd5d12514",
+      "content_id": "14460b1a-bb05-4edf-9768-311be103028a",
+      "claim_id": "C5",
+      "claim": "No evidence was found that DNA:RNA hybrids form in trans and in a Rad51-dependent manner.",
+      "claim_type": "EXPLICIT",
+      "source": "We found no evidence that such hybrids form in trans and in a Rad51-dependent manner.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a negative finding supported by the lack of recombination enhancement when RNA is produced in trans.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:00:34.434995Z"
+    },
+    {
+      "id": "8d3f7b29-0f6a-4249-a03d-9215516521a6",
+      "content_id": "14460b1a-bb05-4edf-9768-311be103028a",
+      "claim_id": "C6",
+      "claim": "R loops are structures formed by a DNA:RNA hybrid and the complementary displaced single stranded DNA (ssDNA).",
+      "claim_type": "EXPLICIT",
+      "source": "R loops are structures formed by a DNA:RNA hybrid and the complementary displaced single stranded DNA (ssDNA).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a definitional statement based on established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:00:34.434995Z"
+    },
+    {
+      "id": "55cc81d6-4bd1-471c-84ad-e63597cbd251",
+      "content_id": "14460b1a-bb05-4edf-9768-311be103028a",
+      "claim_id": "C7",
+      "claim": "R loops were observed naturally as programmed events in specific genomic sites such as the S regions of Immunoglobulin genes in mammals or mitochondrial DNA.",
+      "claim_type": "EXPLICIT",
+      "source": "They were observed naturally as programmed events in specific genomic sites such as the S regions of Immunoglobulin genes in mammals or mitochondrial DNA (Chang et al., 1985; Garc\u00eda-Muse and Aguilera, 2019; Yu et al., 2003), where they play specific functions by promoting class switch recombination or DNA replication, respectively",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:00:34.434995Z"
+    },
+    {
+      "id": "eb11a89e-0bbd-4b00-bfa1-b0ed1900653b",
+      "content_id": "14460b1a-bb05-4edf-9768-311be103028a",
+      "claim_id": "C8",
+      "claim": "R loops play specific functions by promoting class switch recombination or DNA replication in Immunoglobulin genes and mitochondrial DNA respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "They were observed naturally as programmed events in specific genomic sites such as the S regions of Immunoglobulin genes in mammals or mitochondrial DNA (Chang et al., 1985; Garc\u00eda-Muse and Aguilera, 2019; Yu et al., 2003), where they play specific functions by promoting class switch recombination or DNA replication, respectively",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This functional role is supported by cited literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:00:34.434995Z"
+    },
+    {
+      "id": "1a3f752d-0bb3-4353-b1ad-3afb518ed380",
+      "content_id": "14460b1a-bb05-4edf-9768-311be103028a",
+      "claim_id": "C9",
+      "claim": "Unscheduled non-programmed R loop structures form upon dysfunction of RNA binding proteins involved in the assembly or processing and export of the protein-mRNA particle (mRNP) such as the THO complex or the SRSF1 splicing factor.",
+      "claim_type": "EXPLICIT",
+      "source": "but also as unscheduled non-programmed structures upon dysfunction of RNA binding proteins involved in the assembly or processing and export of the protein-mRNA particle (mRNP) such as the THO complex or the SRSF1 splicing factor (Huertas and Aguilera, 2003; Li and Manley, 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:00:34.434995Z"
+    },
+    {
+      "id": "beef6311-aa98-4de2-938b-39a4755bc419",
+      "content_id": "14460b1a-bb05-4edf-9768-311be103028a",
+      "claim_id": "C10",
+      "claim": "R loops have been inferred in the rDNA regions of the bacterial chromosome upon Topo I inactivation.",
+      "claim_type": "EXPLICIT",
+      "source": "Also, they have been inferred in the rDNA regions of the bacterial chromosome upon Topo I inactivation (Drolet et al., 1995).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:00:34.434995Z"
+    },
+    {
+      "id": "01d485ed-82f6-497d-9118-f4a15e1e998a",
+      "content_id": "14460b1a-bb05-4edf-9768-311be103028a",
+      "claim_id": "C11",
+      "claim": "R loops are detected from yeast to humans in many transcribed regions of the eukaryotic genome in wild-type cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Accumulated evidence indicates that R loops are detected from yeast to humans in many transcribed regions of the eukaryotic genome in wild-type cells, in cells defective in several metabolic processes covering from RNA processing to DNA replication and repair and in cells deficient in specific chromatin factors (Bhatia et al., 2014; Garc\u00eda-Muse and Aguilera, 2019; Garc\u00eda-Rubio et al., 2015; Herrera-Moyano et al., 2014; Mischo et al., 2011; Paulsen et al., 2009; Schwab et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to prior studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:00:34.434995Z"
+    },
+    {
+      "id": "e396abbf-bfb7-4127-90c9-e80ffef0b303",
+      "content_id": "14460b1a-bb05-4edf-9768-311be103028a",
+      "claim_id": "C12",
+      "claim": "R loops are detected in cells defective in several metabolic processes covering from RNA processing to DNA replication and repair.",
+      "claim_type": "EXPLICIT",
+      "source": "Accumulated evidence indicates that R loops are detected from yeast to humans in many transcribed regions of the eukaryotic genome in wild-type cells, in cells defective in several metabolic processes covering from RNA processing to DNA replication and repair and in cells deficient in specific chromatin factors (Bhatia et al., 2014; Garc\u00eda-Muse and Aguilera, 2019; Garc\u00eda-Rubio et al., 2015; Herrera-Moyano et al., 2014; Mischo et al., 2011; Paulsen et al., 2009; Schwab et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to prior studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:00:34.434995Z"
+    },
+    {
+      "id": "b491bf4b-5266-4030-b375-dadcc197daab",
+      "content_id": "14460b1a-bb05-4edf-9768-311be103028a",
+      "claim_id": "C13",
+      "claim": "R loops are detected in cells deficient in specific chromatin factors.",
+      "claim_type": "EXPLICIT",
+      "source": "Accumulated evidence indicates that R loops are detected from yeast to humans in many transcribed regions of the eukaryotic genome in wild-type cells, in cells defective in several metabolic processes covering from RNA processing to DNA replication and repair and in cells deficient in specific chromatin factors (Bhatia et al., 2014; Garc\u00eda-Muse and Aguilera, 2019; Garc\u00eda-Rubio et al., 2015; Herrera-Moyano et al., 2014; Mischo et al., 2011; Paulsen et al., 2009; Schwab et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to prior studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:00:34.434995Z"
+    },
+    {
+      "id": "ec336c99-c400-4bc3-bf26-169d63f7a302",
+      "content_id": "14460b1a-bb05-4edf-9768-311be103028a",
+      "claim_id": "C14",
+      "claim": "The biological consequences of R loop structures include replication stress, DNA breaks and genome instability that can be detected as hyperrecombination, plasmid loss or gross chromosomal rearrangements.",
+      "claim_type": "EXPLICIT",
+      "source": "The biological consequences of such R loop structures are diverse and include replication stress, DNA breaks and genome instability that can be detected as hyperrecombination, plasmid loss or gross chromosomal rearrangements (Garc\u00eda-Muse and Aguilera, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:00:34.434995Z"
+    },
+    {
+      "id": "2ad4b64d-a2a9-457f-8df4-bcf93ed37585",
+      "content_id": "14460b1a-bb05-4edf-9768-311be103028a",
+      "claim_id": "C15",
+      "claim": "DNA:RNA hybrids have been inferred by their potential to induce DNA damage and recombination.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, DNA:RNA hybrids have been inferred by their potential to induce DNA damage and recombination, but they can also be directly detected via different methodologies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge about detection methods.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:00:34.434995Z"
+    },
+    {
+      "id": "71258dd4-126c-48e7-a3a4-93a2ca240e92",
+      "content_id": "14460b1a-bb05-4edf-9768-311be103028a",
+      "claim_id": "C16",
+      "claim": "DNA:RNA hybrids can be directly detected via electrophoresis detection after nuclease treatment, bisulfite mutagenesis or either in situ immunofluorescence or DNA:RNA Immuno-Precipitation (DRIP) using the S9.6 anti-DNA:RNA monoclonal antibody.",
+      "claim_type": "EXPLICIT",
+      "source": "These include electrophoresis detection after nuclease treatment, bisulfite mutagenesis or either in situ immunofluorescence or DNA:RNA Immuno-Precipitation (DRIP) using the S9.6 anti-DNA:RNA monoclonal antibody (Garc\u00eda-Muse and Aguilera, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes established methodologies cited from prior work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:00:34.434995Z"
+    },
+    {
+      "id": "a098ff4a-3373-49a8-8558-1ae4fb63ecb0",
+      "content_id": "14460b1a-bb05-4edf-9768-311be103028a",
+      "claim_id": "C17",
+      "claim": "Most DNA:RNA hybrids are compatible with a co-transcriptional formation.",
+      "claim_type": "EXPLICIT",
+      "source": "The increasing number of reports showing R loop accumulation in different organisms from bacteria to human cells, and the relevance of their functional consequences, whether on genome integrity, chromatin structure and gene expression suggest that most DNA:RNA hybrids are compatible with a co-transcriptional formation (Garc\u00eda-Muse and Aguilera, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from accumulated evidence in the literature.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:00:34.434995Z"
+    },
+    {
+      "id": "ddcb6466-2171-416d-8d56-2287066b51bc",
+      "content_id": "14460b1a-bb05-4edf-9768-311be103028a",
+      "claim_id": "C18",
+      "claim": "It is the RNA produced in cis that invades the duplex DNA, a reaction that can be facilitated by DNA sequence and supercoiling.",
+      "claim_type": "EXPLICIT",
+      "source": "This is consistent with the idea that it is the RNA produced in cis the one that invades the duplex DNA, a reaction that can be facilitated by DNA sequence and supercoiling (Stolz et al., 2019) as well as by nicking of the DNA template (Roy et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:00:34.434995Z"
+    },
+    {
+      "id": "3a1391d5-73f7-45f9-a876-309493c5868b",
+      "content_id": "14460b1a-bb05-4edf-9768-311be103028a",
+      "claim_id": "C19",
+      "claim": "DNA:RNA hybrid formation can be facilitated by nicking of the DNA template.",
+      "claim_type": "EXPLICIT",
+      "source": "This is consistent with the idea that it is the RNA produced in cis the one that invades the duplex DNA, a reaction that can be facilitated by DNA sequence and supercoiling (Stolz et al., 2019) as well as by nicking of the DNA template (Roy et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:00:34.434995Z"
+    },
+    {
+      "id": "095322c4-b00c-4547-8881-359d756f1341",
+      "content_id": "14460b1a-bb05-4edf-9768-311be103028a",
+      "claim_id": "C20",
+      "claim": "The evidence of DNA:RNA hybrid formation at breaks has matured in the last years.",
+      "claim_type": "EXPLICIT",
+      "source": "The evidence of DNA:RNA hybrid formation at breaks has matured in the last years (Cohen et al., 2018; D'Alessandro et al., 2018; Li et al., 2016; Ohle et al., 2016; Teng et al., 2018; Yasuhara et al., 2018)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to recent studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:00:34.434995Z"
+    },
+    {
+      "id": "57038510-dfaf-428e-9746-a613c3552359",
+      "content_id": "14460b1a-bb05-4edf-9768-311be103028a",
+      "claim_id": "C21",
+      "claim": "The source and role of DNA:RNA hybrids at breaks remains controversial.",
+      "claim_type": "EXPLICIT",
+      "source": "although the source and role of such hybrids remains still controversial (Aguilera and G\u00f3mez-Gonz\u00e1lez, 2017; Puget et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations indicating ongoing debate in the literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:00:34.434995Z"
+    },
+    {
+      "id": "9a84a507-9646-4014-ac61-e8071cac9d30",
+      "content_id": "14460b1a-bb05-4edf-9768-311be103028a",
+      "claim_id": "C22",
+      "claim": "Some researchers claim that DNA:RNA hybrids detected around DNA breaks mostly accumulate at transcribing sites, in agreement with their co-transcriptional formation.",
+      "claim_type": "EXPLICIT",
+      "source": "Whereas some claim that DNA:RNA hybrids detected around DNA breaks mostly accumulate at transcribing sites (Cohen et al., 2018), in agreement with their co-transcriptional formation",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to a specific study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:00:34.434995Z"
+    },
+    {
+      "id": "4f8e332f-e8a2-4853-b263-b49b52cce7eb",
+      "content_id": "14460b1a-bb05-4edf-9768-311be103028a",
+      "claim_id": "C23",
+      "claim": "Some researchers suggest that there is no preference for DNA:RNA hybrids to form at transcribed loci in human cells.",
+      "claim_type": "EXPLICIT",
+      "source": "others suggest that there is no preference for DNA:RNA hybrids to form at transcribed loci in human cells (D'Alessandro et al., 2018), implying a scenario in which DNA:RNA hybrids at break sites would form either de novo or with RNAs produced at different loci (in trans).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to a specific study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:00:34.434995Z"
+    },
+    {
+      "id": "eab1c0b7-9c31-4f4d-bce7-28484eddc36b",
+      "content_id": "14460b1a-bb05-4edf-9768-311be103028a",
+      "claim_id": "C24",
+      "claim": "Short RNAs can be used as templates for the recombinational repair of DSBs in a reaction catalyzed by Rad52 in yeast.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, it has been shown in yeast that short RNAs can be used as templates for the recombinational repair of DSBs in a reaction catalyzed by Rad52 (Keskin et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:00:34.434995Z"
+    },
+    {
+      "id": "40453718-d716-47b0-bba7-5f22368b91ce",
+      "content_id": "14460b1a-bb05-4edf-9768-311be103028a",
+      "claim_id": "C25",
+      "claim": "DNA:RNA hybrids can form in vitro with the aid of the bacterial DNA strand exchange protein RecA.",
+      "claim_type": "EXPLICIT",
+      "source": "DNA:RNA hybrids can also form in vitro with the aid of the bacterial DNA strand exchange protein RecA (Kasahara et al., 2000; Zaitsev and Kowalczykowski, 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior in vitro studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:00:34.434995Z"
+    },
+    {
+      "id": "563ed60a-9593-45bc-80d3-aad9e59fb851",
+      "content_id": "14460b1a-bb05-4edf-9768-311be103028a",
+      "claim_id": "C26",
+      "claim": "DNA:RNA hybrids are formed with RNAs produced in trans as intermediates in the course of ribonucleoprotein-mediated reactions such as telomerase and CRISPR-Cas9 ribonucleoprotein involved in specific reactions.",
+      "claim_type": "EXPLICIT",
+      "source": "In vivo, DNA:RNA hybrids are formed with RNAs produced in trans as intermediates in the course of ribonucleoprotein-mediated reactions such as telomerase and CRISPR-Cas9 ribonucleoprotein involved in specific reactions (Collins, 2000; Jinek et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:00:34.434995Z"
+    },
+    {
+      "id": "9c20ac1b-8d31-4b8f-8220-9b3a2d206d6d",
+      "content_id": "14460b1a-bb05-4edf-9768-311be103028a",
+      "claim_id": "C27",
+      "claim": "DNA:RNA hybrids have been reported to have regulatory roles in gene expression when formed by long non-coding RNAs (lncRNAs) at in trans loci such as the cases of the GAL lncRNA in yeast or the APOLO lncRNA in plants.",
+      "claim_type": "EXPLICIT",
+      "source": "They have also been reported to have regulatory roles in gene expression when formed by long non-coding RNAs (lncRNAs) at in trans loci such as the cases of the GAL lncRNA in yeast (Cloutier et al., 2016) or the APOLO lncRNA in plants (Ariel et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:00:34.434995Z"
+    },
+    {
+      "id": "00845ac7-404c-4081-8e69-328689480c8d",
+      "content_id": "14460b1a-bb05-4edf-9768-311be103028a",
+      "claim_id": "C28",
+      "claim": "It was inferred that DNA:RNA hybrids could be formed with RNAs produced in trans by a reaction catalyzed by the eukaryotic DNA strand exchange protein Rad51 in S. cerevisiae.",
+      "claim_type": "EXPLICIT",
+      "source": "By S9.6 immunofluorescence (IF) and a yeast artificial chromosome-based genetic assay that measures gross chromosomal rearrangements, it was inferred that DNA:RNA hybrids could be formed with RNAs produced in trans by a reaction catalyzed by the eukaryotic DNA strand exchange protein Rad51 (Wahba et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a claim from prior work that the authors are testing.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:00:34.434995Z"
+    },
+    {
+      "id": "9930d86c-bed1-4d29-9059-d00ddad03421",
+      "content_id": "14460b1a-bb05-4edf-9768-311be103028a",
+      "claim_id": "C29",
+      "claim": "The S9.6 antibody can also recognize dsRNAs.",
+      "claim_type": "EXPLICIT",
+      "source": "Nevertheless, the fact that the detected gross chromosomal rearrangements could depend on Rad51 and that the S9.6 antibody can also recognize dsRNAs (Hartono et al., 2018; K\u00f6nig et al., 2017; Silva et al., 2018)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:00:34.434995Z"
+    },
+    {
+      "id": "19839590-27ee-4967-a9f7-f56a9a9bfd16",
+      "content_id": "14460b1a-bb05-4edf-9768-311be103028a",
+      "claim_id": "C30",
+      "claim": "The bacterial LacZ gene consists of a 3 Kb sequence with high G+C content previously reported to be hyper-recombinant and difficult to transcribe in DNA:RNA hybrid-accumulating strains, such as tho mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "The bacterial LacZ gene consists of a 3 Kb sequence with high G+C content previously reported to be hyper-recombinant and difficult to transcribe in DNA:RNA hybrid-accumulating strains, such as tho mutants (Ch\u00e1vez et al., 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:00:34.434995Z"
+    },
+    {
+      "id": "ae51f92e-fad2-4621-bf61-0a39323829aa",
+      "content_id": "14460b1a-bb05-4edf-9768-311be103028a",
+      "claim_id": "C31",
+      "claim": "The GL-LacZ recombination system is a leu2 direct-repeat construct carrying the LacZ gene in between and under the GAL1 inducible promoter so that this construct is transcribed as a single RNA unit driven from the GAL1 promoter.",
+      "claim_type": "EXPLICIT",
+      "source": "The GL-LacZ recombination system is a leu2 direct-repeat construct carrying the LacZ gene in between and under the GAL1 inducible promoter so that this construct is transcribed as a single RNA unit driven from the GAL1 promoter (Piruat and Aguilera, 1998).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental system used, with citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:00:34.434995Z"
+    },
+    {
+      "id": "0fb35509-0c24-4be8-a3b4-2ef8a236541b",
+      "content_id": "14460b1a-bb05-4edf-9768-311be103028a",
+      "claim_id": "C32",
+      "claim": "Single-Strand Annealing (SSA) events cause the deletion of the LacZ sequence and one of the leu2 repeats leading to Leu+ recombinants in a Rad51-independent manner.",
+      "claim_type": "EXPLICIT",
+      "source": "Single-Strand Annealing (SSA) events cause the deletion of the LacZ sequence and one of the leu2 repeats leading to Leu+ recombinants in a Rad51-independent manner (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the mechanism of the assay, referencing Figure 1A and citing prior knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:00:34.434995Z"
+    },
+    {
+      "id": "2bdcace4-d07e-41f4-95d7-0a2c507c7c2d",
+      "content_id": "14460b1a-bb05-4edf-9768-311be103028a",
+      "claim_id": "C33",
+      "claim": "The stimulation of transcription in cis elevated the frequency of recombination threefold in wild-type cells.",
+      "claim_type": "EXPLICIT",
+      "source": "The analysis of recombination in wild-type cells revealed that whereas the stimulation of transcription in cis elevated the frequency of recombination threefold",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative result from the recombination assays shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:00:34.434995Z"
+    },
+    {
+      "id": "97db19d3-26e4-4228-ab14-4b5ccb04a323",
+      "content_id": "14460b1a-bb05-4edf-9768-311be103028a",
+      "claim_id": "C34",
+      "claim": "The stimulation of transcription in trans driven from the tetp:LacZ construct had no effect on recombination in wild-type cells.",
+      "claim_type": "EXPLICIT",
+      "source": "the stimulation of transcription in trans driven from the tetp:LacZ construct had no effect on recombination (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from the recombination assays shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:00:34.434995Z"
+    },
+    {
+      "id": "29a45125-4972-490d-a843-2a0510bd4eeb",
+      "content_id": "14460b1a-bb05-4edf-9768-311be103028a",
+      "claim_id": "C35",
+      "claim": "Homologous transcripts coming from a different locus do not represent a detectable source of genetic instability in wild-type conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "These results already suggest that homologous transcripts coming from a different locus do not represent a detectable source of genetic instability in wild-type conditions",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the recombination data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:00:34.434995Z"
+    },
+    {
+      "id": "adb624f8-1f12-45e4-9a7c-6f3a783db0f8",
+      "content_id": "14460b1a-bb05-4edf-9768-311be103028a",
+      "claim_id": "C36",
+      "claim": "mRNA coating protects DNA from co-transcriptional RNA hybridization.",
+      "claim_type": "EXPLICIT",
+      "source": "However, it is known that mRNA coating protects DNA from co-transcriptional RNA hybridization.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:00:34.434995Z"
+    },
+    {
+      "id": "ae5f00cb-06e6-4d98-9aff-d12f11ca87ca",
+      "content_id": "14460b1a-bb05-4edf-9768-311be103028a",
+      "claim_id": "C37",
+      "claim": "mft1\u2206 and hpr1\u2206 enhanced recombination slightly when transcription in cis was switched off, likely as a consequence of leaky transcription from the GAL1 promoter in glucose.",
+      "claim_type": "EXPLICIT",
+      "source": "mft1\u2206 and hpr1\u2206 enhanced recombination slightly when transcription in cis was switched off (Figure 2A), likely as a consequence of leaky transcription form the GAL1 promoter in glucose (Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from the recombination assays with an interpretation based on transcription data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:00:34.434995Z"
+    },
+    {
+      "id": "50954dbd-db83-481f-bb00-02cea27967e8",
+      "content_id": "14460b1a-bb05-4edf-9768-311be103028a",
+      "claim_id": "C38",
+      "claim": "Recombination frequencies rocketed when transcription was stimulated in cis in mft1\u2206 and hpr1\u2206 mutants, in agreement with previous reports.",
+      "claim_type": "EXPLICIT",
+      "source": "More significantly and in agreement with previous reports (Ch\u00e1vez et al., 2000), recombination frequencies rocketed when transcription was stimulated in cis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from the recombination assays, supported by citation to prior work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:00:34.434995Z"
+    },
+    {
+      "id": "4f79a054-5832-49dd-8b9c-b45e67280a43",
+      "content_id": "14460b1a-bb05-4edf-9768-311be103028a",
+      "claim_id": "C39",
+      "claim": "Transcription activation in trans did not enhance recombination in mft1\u2206 and hpr1\u2206 mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "However, transcription activation in trans did not enhance recombination, as it would be expected if additional DNA:RNA hybrids could form with RNA produced in trans.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from the recombination assays shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:00:34.434995Z"
+    },
+    {
+      "id": "a8fc04d9-8645-4d36-8d47-9ee8754721c9",
+      "content_id": "14460b1a-bb05-4edf-9768-311be103028a",
+      "claim_id": "C40",
+      "claim": "Under conditions of high transcription of the recombination system (transcription in cis), RNA driven from an ectopic locus (transcription in trans) led to a partial suppression of the hyper-recombination.",
+      "claim_type": "EXPLICIT",
+      "source": "Instead, under conditions of high transcription of the recombination system (transcription in cis), RNA driven from an ectopic locus (transcription in trans) led to a partial suppression of the hyper-recombination.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from the recombination assays shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:00:34.434995Z"
+    },
+    {
+      "id": "abce86ee-9c88-465f-a330-e2a199d8ba7e",
+      "content_id": "14460b1a-bb05-4edf-9768-311be103028a",
+      "claim_id": "C41",
+      "claim": "A DNA:RNA hybrid produced in the template DNA strand can impair transcription elongation.",
+      "claim_type": "EXPLICIT",
+      "source": "Given that a DNA:RNA hybrid produced in the template DNA strand can impair transcription elongation (Tous and Aguilera, 2007)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:00:34.434995Z"
+    },
+    {
+      "id": "75240852-392e-4a90-a9af-b464ec82d8db",
+      "content_id": "14460b1a-bb05-4edf-9768-311be103028a",
+      "claim_id": "C42",
+      "claim": "The production of RNAs in trans from the tet::LacZ construct led to a reduction of the hyper-recombination in the GL-LacZi system.",
+      "claim_type": "EXPLICIT",
+      "source": "Surprisingly, the production of RNAs in trans from the tet::LacZ construct also led to a reduction of the hyper-recombination in this system.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from the recombination assays shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:00:34.434995Z"
+    },
+    {
+      "id": "9c2c1303-df91-4c3d-a62f-9d71f43c001d",
+      "content_id": "14460b1a-bb05-4edf-9768-311be103028a",
+      "claim_id": "C43",
+      "claim": "In the GL-LacZi system, the suppression of hyper-recombination by trans RNA was stronger and was also observed in glucose, when transcription in cis was off.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, in this case, the suppression was stronger and was also observed in glucose, when transcription in cis was off.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from the recombination assays shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:00:34.434995Z"
+    },
+    {
+      "id": "06f3c429-e61a-4538-8cff-f9864f3b8d0f",
+      "content_id": "14460b1a-bb05-4edf-9768-311be103028a",
+      "claim_id": "C44",
+      "claim": "In the GL-LacZi scenario, the RNA produced in trans is complementary to the mRNA produced in cis, so they can hybridize together forming a dsRNA that would preclude the possibility to form DNA:RNA hybrids at the GL-LacZi construct.",
+      "claim_type": "EXPLICIT",
+      "source": "This could be explained because, in this scenario, the RNA produced in trans is complementary to the mRNA produced in cis. Consequently, they can hybridize together forming a dsRNA that would preclude the possibility to form DNA:RNA hybrids at the GL-LacZi construct.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a mechanistic interpretation of the data.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:00:34.434995Z"
+    },
+    {
+      "id": "0c34c17b-9eab-4261-bf77-be0a2fdcc44d",
+      "content_id": "14460b1a-bb05-4edf-9768-311be103028a",
+      "claim_id": "C45",
+      "claim": "Transcription from the long LacZ gene is inefficient and leads to unstable RNA products, particularly in tho mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "Since transcription from the long LacZ gene is inefficient and leads to unstable RNA products, particularly in tho mutants (Ch\u00e1vez et al., 2001)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:00:34.434995Z"
+    },
+    {
+      "id": "602e4bd4-58b8-4df2-aa28-1e3922422c2b",
+      "content_id": "14460b1a-bb05-4edf-9768-311be103028a",
+      "claim_id": "C46",
+      "claim": "With the tetp:LacZ400 construct, no suppression of the tho-induced hyper-recombination by the production of RNA in trans was observed.",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, in this case, we observed no suppression of the tho-induced hyper-recombination by the production of RNA in trans.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from the recombination assays shown in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:00:34.434995Z"
+    },
+    {
+      "id": "8d31f5cf-2ea1-4735-8674-5031078ad17b",
+      "content_id": "14460b1a-bb05-4edf-9768-311be103028a",
+      "claim_id": "C47",
+      "claim": "Recombination frequencies were not significantly enhanced by transcription in trans in any of the strains or conditions tested with the tetp:LacZ400 construct.",
+      "claim_type": "EXPLICIT",
+      "source": "More importantly and again, recombination frequencies were not significantly enhanced by transcription in trans in any of the strains or conditions tested, further arguing against mRNA produced in trans as a possible source of recombinogenic DNA:RNA hybrids.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from the recombination assays shown in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:00:34.434995Z"
+    },
+    {
+      "id": "138aa05b-5819-4f12-b45b-18988774271b",
+      "content_id": "14460b1a-bb05-4edf-9768-311be103028a",
+      "claim_id": "C48",
+      "claim": "The THO complex is thought to prevent R-loops mainly by promoting a proper mRNA-protein assembly.",
+      "claim_type": "EXPLICIT",
+      "source": "The THO complex is thought to prevent R-loops mainly by promoting a proper mRNA-protein assembly (Luna et al., 2019)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:00:34.434995Z"
+    },
+    {
+      "id": "baf1d1ae-0bf9-44b9-9b15-07d595134ac7",
+      "content_id": "14460b1a-bb05-4edf-9768-311be103028a",
+      "claim_id": "C49",
+      "claim": "The two RNase H enzymes efficiently degrade the RNA moiety of DNA:RNA hybrids once formed.",
+      "claim_type": "EXPLICIT",
+      "source": "whereas the two RNase H enzymes efficiently degrade the RNA moiety of DNA:RNA hybrids once formed (Cerritelli and Crouch, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:00:34.434995Z"
+    },
+    {
+      "id": "6e934e61-f748-4ccf-b162-f024f46123ed",
+      "content_id": "14460b1a-bb05-4edf-9768-311be103028a",
+      "claim_id": "C50",
+      "claim": "rnh1\u2206 rnh201\u2206 cells elevated the recombination frequency when transcription was stimulated in cis.",
+      "claim_type": "EXPLICIT",
+      "source": "Figure 2A and C show that rnh1\u2206 rnh201\u2206 cells elevated the recombination frequency when transcription was stimulated in cis, as expected.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from the recombination assays shown in Figures 2A and 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:00:34.434995Z"
+    },
+    {
+      "id": "774e5745-3bcf-439c-9ab6-f7bd3b17fcef",
+      "content_id": "14460b1a-bb05-4edf-9768-311be103028a",
+      "claim_id": "C51",
+      "claim": "The recombination frequencies in rnh1\u2206 rnh201\u2206 cells were not altered by producing transcripts in trans.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, the recombination frequencies were not altered by producing transcripts in trans, arguing again against the recombinogenic potential of putative DNA:RNA hybrids formed with RNAs produced in trans.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from the recombination assays shown in Figures 2A and 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:00:34.434995Z"
+    },
+    {
+      "id": "3d576e58-eb83-4c08-9008-43211829d274",
+      "content_id": "14460b1a-bb05-4edf-9768-311be103028a",
+      "claim_id": "C52",
+      "claim": "DNA:RNA hybrids accumulate in both hpr1\u2206 and rnh1\u2206 rnh201\u2206 mutants in all GL-LacZ, tet:LacZ and GL:lacZi sequences.",
+      "claim_type": "EXPLICIT",
+      "source": "In order to confirm DNA:RNA hybrid formation in these different sequence contexts, we performed DRIP experiments at the LacZ sequence (Figure 3) and we observed that DNA:RNA hybrids accumulate in both, hpr1\u2206 and rnh1\u2206 rnh201\u2206 mutants, and in all GL-LacZ, tet:LacZ and GL:lacZi sequences as expected",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from DRIP experiments shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:00:34.434995Z"
+    },
+    {
+      "id": "0facf609-b051-4ace-910d-ee06d362b72e",
+      "content_id": "14460b1a-bb05-4edf-9768-311be103028a",
+      "claim_id": "C53",
+      "claim": "Transcription at the TL-LacZ recombination system enhanced recombination as previously published.",
+      "claim_type": "EXPLICIT",
+      "source": "Figure 4 shows that, whereas transcription at the TL-LacZ recombination system enhanced recombination as previously published (Santos-Pereira et al., 2013)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from the recombination assays shown in Figure 4, with citation to prior work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:00:34.434995Z"
+    },
+    {
+      "id": "bcb26d3f-109d-4ba0-95f1-e68b32df4906",
+      "content_id": "14460b1a-bb05-4edf-9768-311be103028a",
+      "claim_id": "C54",
+      "claim": "No significant stimulation of recombination was detected when RNAs were produced in trans in either wild-type, hpr1\u2206 or rnh1\u2206 rnh201\u2206 cells even when the RNA was generated from the strong GAL1 promoter in the TL-LacZ system.",
+      "claim_type": "EXPLICIT",
+      "source": "again no significant stimulation of recombination was detected when RNAs were produced in trans in either wild-type, hpr1\u2206 or rnh1\u2206 rnh201\u2206 cells even when the RNA was generated from the strong GAL1 promoter.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from the recombination assays shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:00:34.434995Z"
+    },
+    {
+      "id": "dd7d6a00-fa5d-456d-bcbc-16d50538cd7e",
+      "content_id": "14460b1a-bb05-4edf-9768-311be103028a",
+      "claim_id": "C55",
+      "claim": "Transcription of the chromosomal recombination system promoted a 30-fold increase in recombination levels in the tho mutant hpr1\u2206 with respect to the WT.",
+      "claim_type": "EXPLICIT",
+      "source": "As it can be seen in Figure 5, transcription of the chromosomal recombination system promoted a 30-fold increase in recombination levels in the tho mutant hpr1\u2206 with respect to the WT, in agreement with all previous data showing that co-transcriptional DNA:RNA hybrids are a potent source of recombination.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from the recombination assays shown in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:00:34.434995Z"
+    },
+    {
+      "id": "55209512-d768-44b5-b531-52832acc19b4",
+      "content_id": "14460b1a-bb05-4edf-9768-311be103028a",
+      "claim_id": "C56",
+      "claim": "mRNA produced at a different locus had no effect on recombination, neither in wild-type cells nor in the tho mutant hpr1\u2206 in the chromosomal GL-LacZ system.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, mRNA produced at a different locus had no effect on recombination, neither in wild-type cells nor in the tho mutant hpr1\u2206.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from the recombination assays shown in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:00:34.434995Z"
+    },
+    {
+      "id": "816be432-b843-4d9c-a1a0-d4aa618f3d89",
+      "content_id": "14460b1a-bb05-4edf-9768-311be103028a",
+      "claim_id": "C57",
+      "claim": "RNA produced at a particular locus does not lead to recombinogenic DNA damage at regions located in trans.",
+      "claim_type": "EXPLICIT",
+      "source": "Hence, altogether, these results argue that, in contrast to mRNA produced in cis, RNA produced at a particular locus does not lead to recombinogenic DNA damage at regions located in trans.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the recombination data across multiple experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:00:34.434995Z"
+    },
+    {
+      "id": "3cccb872-0d2c-4828-9fed-8ac4da26a430",
+      "content_id": "14460b1a-bb05-4edf-9768-311be103028a",
+      "claim_id": "C58",
+      "claim": "The recombination events detected in the direct-repeat systems are deletions occurring by SSA between direct repeats, which do not require Rad51.",
+      "claim_type": "EXPLICIT",
+      "source": "It is important to remark that the recombination events detected in our assays are deletions occurring by SSA between direct repeats, which do not require Rad51 (Pardo et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:00:34.434995Z"
+    },
+    {
+      "id": "d9189f31-93da-4d71-94f3-13394b9b0010",
+      "content_id": "14460b1a-bb05-4edf-9768-311be103028a",
+      "claim_id": "C59",
+      "claim": "RAD51 deletion caused no significant changes in the recombination frequencies in the SSA assay.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, in agreement with SSA annealing being Rad51-independent, RAD51 deletion caused no significant changes in the recombination frequencies in our assay.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from the recombination assays shown in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:00:34.434995Z"
+    },
+    {
+      "id": "72efbc07-1b42-42c3-9b27-515d2307bf96",
+      "content_id": "14460b1a-bb05-4edf-9768-311be103028a",
+      "claim_id": "C60",
+      "claim": "No differences in recombination were observed when RAD51 was deleted in hpr1\u2206 cells even when the LacZ sequence was expressed from the plasmid containing the tet::LacZ construct.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, we observed no differences when RAD51 was deleted in hpr1\u2206 cells even when the LacZ sequence was expressed from the plasmid containing the tet::LacZ construct.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from the recombination assays shown in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:00:34.434995Z"
+    },
+    {
+      "id": "a8a17c34-515d-4f82-8b3c-4f5f5ef5c91e",
+      "content_id": "14460b1a-bb05-4edf-9768-311be103028a",
+      "claim_id": "C61",
+      "claim": "The result argues against Rad51 facilitating or impeding the formation of DNA:RNA hybrids with RNAs produced in trans.",
+      "claim_type": "EXPLICIT",
+      "source": "This result argues against Rad51 facilitating or impeding the formation of DNA:RNA hybrids with RNAs produced in trans.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the recombination data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:00:34.434995Z"
+    },
+    {
+      "id": "cb4b8085-242e-4a73-85b9-97c1ab3de37d",
+      "content_id": "14460b1a-bb05-4edf-9768-311be103028a",
+      "claim_id": "C62",
+      "claim": "The absence of Rad51 had no effect on the hyper-recombination observed in hpr1\u2206 cells when transcription was induced in cis.",
+      "claim_type": "EXPLICIT",
+      "source": "As shown in Figure 6, the absence of Rad51 had no effect on the hyper-recombination observed, as hpr1\u2206 rad51\u2206 cells elevated the recombination frequency more than 70-fold with respect to rad51\u2206, similarly to Rad51+ cells.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from the recombination assays shown in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:00:34.434995Z"
+    },
+    {
+      "id": "7e06467c-6a30-45eb-9757-b347b2ad0354",
+      "content_id": "14460b1a-bb05-4edf-9768-311be103028a",
+      "claim_id": "C63",
+      "claim": "The in cis DNA:RNA hybrid-mediated hyper-recombination phenotype is independent of Rad51.",
+      "claim_type": "EXPLICIT",
+      "source": "This result clearly indicates that the in cis DNA:RNA hybrid-mediated hyper-recombination phenotype is actually independent on Rad51.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the recombination data in Figure 6.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:00:34.434995Z"
+    },
+    {
+      "id": "3c3fc355-ed31-457a-bf71-df5509907af3",
+      "content_id": "14460b1a-bb05-4edf-9768-311be103028a",
+      "claim_id": "C64",
+      "claim": "hpr1\u2206 caused an increase in Rad52 foci that was enhanced by AID overexpression and suppressed by RNase H overexpression.",
+      "claim_type": "EXPLICIT",
+      "source": "In agreement with the role of the THO complex in R loop prevention, hpr1\u2206 caused an increase in Rad52 foci that was enhanced by AID overexpression and suppressed by RNase H overexpression, as previously reported (Alvaro et al., 2007; Garc\u00eda-Pichardo et al., 2017; Wellinger et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from the Rad52-YFP foci analysis shown in Figure 7A, with citations to prior work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:00:34.434995Z"
+    },
+    {
+      "id": "47213867-2fd0-4d57-87ba-22e1777dd699",
+      "content_id": "14460b1a-bb05-4edf-9768-311be103028a",
+      "claim_id": "C65",
+      "claim": "The accumulation of Rad52 foci observed in rad51\u2206 cells was not affected by either AID or RNase H overexpression.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, the accumulation of Rad52 foci observed in rad51\u2206 cells was not affected by either AID or RNase H overexpression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from the Rad52-YFP foci analysis shown in Figure 7A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:00:34.434995Z"
+    },
+    {
+      "id": "9f43ef64-a501-4c3a-adeb-b0b611afeaa1",
+      "content_id": "14460b1a-bb05-4edf-9768-311be103028a",
+      "claim_id": "C66",
+      "claim": "R loops are not the cause for the genetic instability observed in the absence of Rad51.",
+      "claim_type": "EXPLICIT",
+      "source": "This result argues that R loops are not the cause for the genetic instability observed in the absence of Rad51.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the Rad52 foci data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:00:34.434995Z"
+    },
+    {
+      "id": "9de273df-0197-4c3c-aab9-c2b448ff0821",
+      "content_id": "14460b1a-bb05-4edf-9768-311be103028a",
+      "claim_id": "C67",
+      "claim": "The accumulation of Rad52 foci in rad51\u2206 cells is likely due to the accumulation of unrepaired recombination intermediates.",
+      "claim_type": "EXPLICIT",
+      "source": "The accumulation of Rad52 foci in rad51\u2206 cells is rather likely due to the accumulation of unrepaired recombination intermediates, as previously suggested (Alvaro et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation supported by a citation to prior work.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:00:34.434995Z"
+    },
+    {
+      "id": "2fc45621-ac22-400d-9106-e11faa05260b",
+      "content_id": "14460b1a-bb05-4edf-9768-311be103028a",
+      "claim_id": "C68",
+      "claim": "hpr1\u2206 rad51\u2206 cells showed a similar result to rad51\u2206 cells in Rad52 foci accumulation, supporting that the accumulation of recombinogenic damage in hpr1\u2206 cells is independent of Rad51.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, hpr1\u2206 rad51\u2206 cells showed a similar result, further supporting that the accumulation of recombinogenic damage in hpr1\u2206 cells is independent on Rad51.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from the Rad52-YFP foci analysis shown in Figure 7A.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:00:34.434995Z"
+    },
+    {
+      "id": "4369f1b9-7157-460b-b384-c4d192cf009e",
+      "content_id": "14460b1a-bb05-4edf-9768-311be103028a",
+      "claim_id": "C69",
+      "claim": "The number of cells with S9.6 positive signal was similar in hpr1\u2206 and in hpr1\u2206 rad51\u2206 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Figure 7B illustrates that the number of cells with S9.6 positive signal was similar in hpr1\u2206 and in hpr1\u2206 rad51\u2206 cells.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from the S9.6 immunofluorescence on metaphase spreads shown in Figure 7B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:00:34.434995Z"
+    },
+    {
+      "id": "c0af9e3f-c549-45d8-8a2d-7c33f26477b4",
+      "content_id": "14460b1a-bb05-4edf-9768-311be103028a",
+      "claim_id": "C70",
+      "claim": "The Rad51 protein is not required for the DNA:RNA hybrid formation previously reported in THO mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "Altogether, these results demonstrate that the Rad51 protein is not required for the DNA:RNA hybrid formation previously reported in THO mutants.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the Rad52 foci and S9.6 immunofluorescence data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:00:34.434995Z"
+    },
+    {
+      "id": "9fe5ab42-9887-4489-9bd2-9aa6a8e1f949",
+      "content_id": "14460b1a-bb05-4edf-9768-311be103028a",
+      "claim_id": "C71",
+      "claim": "SSA events are Rad51-independent and do not require DNA strand exchange, but just annealing between resected single-stranded DNA (ssDNA) for which the action of Rad52 is sufficient.",
+      "claim_type": "EXPLICIT",
+      "source": "It is well established that SSA events are Rad51-independent; they do not require DNA strand exchange, but just annealing between resected single-stranded DNA (ssDNA) for which the action of Rad52 is sufficient (Figure 1A; Pardo et al., 2009).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated as established knowledge with citation to prior work.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:00:34.434995Z"
+    },
+    {
+      "id": "cec1e1b7-02fe-422a-842f-55565f60fd54",
+      "content_id": "14460b1a-bb05-4edf-9768-311be103028a",
+      "claim_id": "C72",
+      "claim": "In contrast to the RNA produced at the site where SSA occurs, an RNA produced in a remote locus does not induce an increase in homology-directed repair.",
+      "claim_type": "EXPLICIT",
+      "source": "Our constructs show that, in contrast to the RNA produced at the site where SSA occurs, an RNA produced in a remote locus does not induce an increase in homology-directed repair.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the recombination data across multiple experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:00:34.434995Z"
+    },
+    {
+      "id": "34994450-4c46-49bf-8484-2531abe4e81b",
+      "content_id": "14460b1a-bb05-4edf-9768-311be103028a",
+      "claim_id": "C73",
+      "claim": "Recombination is not induced by in trans RNA production even when the major DNA:RNA removal machinery is absent (rnh1\u2206 rnh201\u2206 mutant) or when the RNA coating functions preventing DNA:RNA hybrid formation are impaired (tho mutants).",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, recombination is not induced by in trans RNA production even when the major DNA:RNA removal machinery is absent (rnh1\u2206 rnh201\u2206 mutant) or when the RNA coating functions preventing DNA:RNA hybrid formation are impaired (tho mutants), arguing against the idea that harmful DNA:RNA hybrids could spontaneously form in trans and constitute a menace for genome integrity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the recombination data across multiple experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:00:34.434995Z"
+    },
+    {
+      "id": "296c9427-3a3b-480a-93d8-49b327bff4a3",
+      "content_id": "14460b1a-bb05-4edf-9768-311be103028a",
+      "claim_id": "C74",
+      "claim": "Co-transcriptional R-loops are responsible for the hyper-recombination of hpr1\u2206.",
+      "claim_type": "EXPLICIT",
+      "source": "Co-transcriptional R-loops are responsible for the hyper-recombination of hpr1\u2206 as reported previously (Huertas and Aguilera, 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:00:34.434995Z"
+    },
+    {
+      "id": "4fece1fc-c375-47dd-8463-28f201ba96a6",
+      "content_id": "14460b1a-bb05-4edf-9768-311be103028a",
+      "claim_id": "C75",
+      "claim": "The free RNA itself, and not in the form of DNA:RNA hybrids formed at the template DNA strand, plays some role in preventing the hyper-recombination.",
+      "claim_type": "EXPLICIT",
+      "source": "The fact that this suppressor effect was augmented when one of the LacZ sequences was inverted (Figure 2B) and prevented by a shorter LacZ construct (Figure 2C), which was reported to be more stable in tho mutant backgrounds (Ch\u00e1vez et al., 2001), suggests that the free RNA itself, and not in the form of DNA:RNA hybrids formed at the template DNA strand, plays some role in preventing the hyper-recombination, likely because stable RNAs can interfere with transcription at a homologous locus.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an interpretation of the recombination data from Figures 2B and 2C.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:00:34.434995Z"
+    },
+    {
+      "id": "a01fd92c-94f4-4cb2-ac7d-ca235638171c",
+      "content_id": "14460b1a-bb05-4edf-9768-311be103028a",
+      "claim_id": "C76",
+      "claim": "No suppressor effect was observed when the recombination system was placed in a chromosome or when the ectopic RNA was transcribed from the GAL1 promoter.",
+      "claim_type": "EXPLICIT",
+      "source": "However, no suppressor effect was observed when the recombination system was placed in a chromosome (Figure 5) or when the ectopic RNA was transcribed from the GAL1 promoter (Figures 2 and 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from the recombination assays shown in Figures 2, 4, and 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:00:34.434995Z"
+    },
+    {
+      "id": "1ed66613-578c-40a4-bc3a-f760bf20011a",
+      "content_id": "14460b1a-bb05-4edf-9768-311be103028a",
+      "claim_id": "C77",
+      "claim": "DNA:RNA hybrids formed with an RNA produced in trans were previously suggested to threaten genome integrity.",
+      "claim_type": "EXPLICIT",
+      "source": "DNA:RNA hybrids formed with an RNA produced in trans were previously suggested to threaten genome integrity (Wahba et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a claim from prior work that the authors are discussing.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:00:34.434995Z"
+    },
+    {
+      "id": "d99caaad-3b3b-4fbb-8054-f2e1f3f30322",
+      "content_id": "14460b1a-bb05-4edf-9768-311be103028a",
+      "claim_id": "C78",
+      "claim": "Recombination involving multiple substrates was first reported in S. cerevisiae, in which an induced-DSB triggered recombination between two other homologous fragments at different chromosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "Recombination involving multiple substrates was first reported in S. cerevisiae, in which an induced-DSB triggered recombination between two other homologous fragments at different chromosomes (Ray et al., 1989).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:00:34.434995Z"
+    },
+    {
+      "id": "dcb4462d-126a-4548-8bb8-46c7e612f72f",
+      "content_id": "14460b1a-bb05-4edf-9768-311be103028a",
+      "claim_id": "C79",
+      "claim": "Tri-parental recombination assays have been successfully used to define specific features of the HR reaction as well as for studies of Break-Induced Recombination (BIR) or translocations and chromosomal rearrangements occurring between ectopic regions.",
+      "claim_type": "EXPLICIT",
+      "source": "Tri-parental recombination assays have been successfully used since then to define specific features of the HR reaction as well as for studies of Break-Induced Recombination (BIR) or translocations and chromosomal rearrangements occurring between ectopic regions (Pardo and Aguilera, 2012; Piazza et al., 2017; Ruiz et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:00:34.434995Z"
+    },
+    {
+      "id": "62f3a914-9e10-43c0-9c2d-bd2f7078de5b",
+      "content_id": "14460b1a-bb05-4edf-9768-311be103028a",
+      "claim_id": "C80",
+      "claim": "The assay used to infer the potential of DNA:RNA hybrids formed with RNAs produced in trans to induce genetic instability does not exclude the possibility that the RNA forms the hybrid in cis inducing subsequently a DSB that would stimulate the recombination events studied.",
+      "claim_type": "EXPLICIT",
+      "source": "Hence, the assay used to infer the potential of DNA:RNA hybrids formed with RNAs produced in trans to induce genetic instability (Wahba et al., 2013) relied on an RNA fragment produced at a (first) DNA region that could form a DNA:RNA hybrid with a (second) ectopic homologous DNA region that would promote its deletion or loss, leading to a genetically detectable phenotype. Thus, this assay does not exclude the possibility that the RNA forms the hybrid in cis inducing subsequently a DSB that would stimulate the recombination events studied (Figure 6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a critical interpretation of prior work.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:00:34.434995Z"
+    },
+    {
+      "id": "4e570ad2-18e1-4826-984c-43fb73333368",
+      "content_id": "14460b1a-bb05-4edf-9768-311be103028a",
+      "claim_id": "C81",
+      "claim": "The increased genetic instability observed in the Wahba et al. study could be explained by the invasion of the 3' end of a DNA break induced by the DNA:RNA hybrid formed at the first site rather than implying that Rad51 is required for the RNA to invade the second DNA sequence.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, this event would demand the action of Rad51 for DNA strand invasion, consistent with the results obtained (Wahba et al., 2013). Therefore, the increased genetic instability observed could be explained by the invasion of the 3' end of a DNA break induced by the DNA:RNA hybrid formed at the first site (Figure 8) rather than implying that Rad51 is required for the RNA to invade the second DNA sequence.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an alternative interpretation of prior work, illustrated in Figure 8.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:00:34.434995Z"
+    },
+    {
+      "id": "9e43c898-2dc7-408f-aab7-371cce06140f",
+      "content_id": "14460b1a-bb05-4edf-9768-311be103028a",
+      "claim_id": "C82",
+      "claim": "The hyper-recombinogenic potential of DNA:RNA hybrids is Rad51-independent.",
+      "claim_type": "EXPLICIT",
+      "source": "In our case, however, we show that the hyper-recombinogenic potential of DNA:RNA hybrids is Rad51-independent (Figure 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a conclusion drawn from the recombination data shown in Figure 6 (note: the text says Figure 4 but likely refers to Figure 6 based on context).",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:00:34.434995Z"
+    },
+    {
+      "id": "2965029f-c687-4bb2-8cc1-a437849eeeaf",
+      "content_id": "14460b1a-bb05-4edf-9768-311be103028a",
+      "claim_id": "C83",
+      "claim": "Recombination between the leu2 repeats could be originated by either a DNA:RNA hybrid in cis or by a DSB occurring in between the repeats, or by a bypass mechanism involving template switching.",
+      "claim_type": "EXPLICIT",
+      "source": "Recombination between the leu2 repeats could be originated by either a DNA:RNA hybrid in cis or by a DSB occurring in between the repeats, or as suggested previously for tho mutants, by a bypass mechanism involving template switching (G\u00f3mez-Gonz\u00e1lez et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a discussion of possible mechanisms, with citation to prior work.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:00:34.434995Z"
+    },
+    {
+      "id": "12c6428b-7b86-465b-9824-a511f5ee4715",
+      "content_id": "14460b1a-bb05-4edf-9768-311be103028a",
+      "claim_id": "C84",
+      "claim": "The initial lesion triggered by a hybrid could be a nick or ssDNA gap, as previously proposed for tho mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "It is worth noting that although we are depicting the SSA reactions as being initiated by a DSB (Figures 1 and 8), we cannot discard that the initial lesion triggered by a hybrid is a nick or ssDNA gap, as previously proposed for tho mutants (G\u00f3mez-Gonz\u00e1lez et al., 2009).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a caveat about the interpretation, with citation to prior work.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:00:34.434995Z"
+    },
+    {
+      "id": "eea98555-3ac4-4c2a-bfbb-aee5f121321b",
+      "content_id": "14460b1a-bb05-4edf-9768-311be103028a",
+      "claim_id": "C85",
+      "claim": "A DSB occurring at the locus where the RNA in trans was generated could give rise to Leu+ recombinants in the assay, but such recombination events would be Rad51-dependent.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, a DSB occurring at the locus where the RNA in trans was generated could give rise to Leu+ recombinants in our assay. However, such recombination events would be Rad51-dependent, as they will require a Rad51-dependent invasion into the GL-LacZ construct (Figure 8).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a logical inference about the mechanism, illustrated in Figure 8.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:00:34.434995Z"
+    },
+    {
+      "id": "f7f6099c-5da4-429c-9c0b-e44e9eb06298",
+      "content_id": "14460b1a-bb05-4edf-9768-311be103028a",
+      "claim_id": "C86",
+      "claim": "The Leu+ recombinants obtained in rad51\u2206 mutant cells can only be explained by Rad51-independent events occurring in cis, at the GL-LacZ construct.",
+      "claim_type": "EXPLICIT",
+      "source": "Hence, the Leu+ recombinants obtained in rad51\u2206 mutant cells (Figure 5) can only be explained by Rad51-independent events occurring in cis, at the GL-LacZ construct.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a logical inference from the recombination data in Figure 6 (note: text says Figure 5 but likely refers to Figure 6).",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:00:34.434995Z"
+    },
+    {
+      "id": "23adef14-dcb6-4aad-8df1-d512f7a8044d",
+      "content_id": "14460b1a-bb05-4edf-9768-311be103028a",
+      "claim_id": "C87",
+      "claim": "The fact that no significant increase in Leu+ recombinants was detected by inducing transcription in trans, either in RAD51 or rad51\u2206 backgrounds, rules out the possibility that recombinogenic DNA:RNA hybrids form in trans in the assay.",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, the fact that we detected no significant increase in Leu+ recombinants by inducing transcription in trans, either in RAD51 or rad51\u2206 backgrounds rules out the possibility that recombinogenic DNA:RNA hybrids form in trans in our assay.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the recombination data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:00:34.434995Z"
+    },
+    {
+      "id": "d8402fca-f94b-4c19-b56e-d7cb9ad1e203",
+      "content_id": "14460b1a-bb05-4edf-9768-311be103028a",
+      "claim_id": "C88",
+      "claim": "S9.6 signal detected by IF was reduced by rad51\u2206 in metaphase spreads in a previous study.",
+      "claim_type": "EXPLICIT",
+      "source": "It was previously shown that S9.6 signal detected by IF was reduced by rad51\u2206 in metaphase spreads (Wahba et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a claim from prior work that the authors are contrasting with their results.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:00:34.434995Z"
+    },
+    {
+      "id": "5ae35f09-2f7c-4659-a5b8-2ba19517a1e9",
+      "content_id": "14460b1a-bb05-4edf-9768-311be103028a",
+      "claim_id": "C89",
+      "claim": "S9.6 signal was detected in metaphase spreads of the hpr1\u2206 mutant of the THO complex in both RAD51 and rad51\u2206 backgrounds in this study.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, we detected S9.6 signal in metaphase spreads of the hpr1\u2206 mutant of the THO complex in both RAD51 and rad51\u2206 backgrounds (Figure 7B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from the S9.6 immunofluorescence shown in Figure 7B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:00:34.434995Z"
+    },
+    {
+      "id": "b0260d03-ddce-4efa-afca-e50960946d49",
+      "content_id": "14460b1a-bb05-4edf-9768-311be103028a",
+      "claim_id": "C90",
+      "claim": "The S9.6 antibody also recognizes dsRNA.",
+      "claim_type": "EXPLICIT",
+      "source": "The uncertainty about the identity of the structures detected by IF using the S9.6 antibody, which also recognizes dsRNA (Hartono et al., 2018; K\u00f6nig et al., 2017; Silva et al., 2018)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:00:34.434995Z"
+    },
+    {
+      "id": "51b22864-d00a-48af-96a4-e736b4626160",
+      "content_id": "14460b1a-bb05-4edf-9768-311be103028a",
+      "claim_id": "C91",
+      "claim": "Chromosomal spreads could preferentially visualize the rDNA regions, in which high levels of dsRNA structures formed by the rRNAs exist.",
+      "claim_type": "EXPLICIT",
+      "source": "and the possibility that chromosomal spreads could preferentially visualize the rDNA regions, in which high levels of dsRNA structures formed by the rRNAs, makes difficult to make conclusions on S9.6 IFs in this case.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation about technical limitations.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:00:34.434995Z"
+    },
+    {
+      "id": "84875755-1bf2-4458-a576-5dfe504de343",
+      "content_id": "14460b1a-bb05-4edf-9768-311be103028a",
+      "claim_id": "C92",
+      "claim": "No evidence was found for a Rad51-facilitated strand invasion from RNAs produced in trans.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, we have found no evidence for a Rad51-facilitated strand invasion from RNAs produced in trans.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:00:34.434995Z"
+    },
+    {
+      "id": "381716de-d979-418c-bc43-03d265dcb881",
+      "content_id": "14460b1a-bb05-4edf-9768-311be103028a",
+      "claim_id": "C93",
+      "claim": "None of the so far reported DNA:RNA hybrid interactomes has identified RAD51.",
+      "claim_type": "EXPLICIT",
+      "source": "Further arguing against any major role of this recombinase in R loop metabolism or function, none of the so far reported DNA:RNA hybrid interactomes has identified RAD51 (Cristini et al., 2018; Nadel et al., 2015; Wang et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior interactome studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:00:34.434995Z"
+    },
+    {
+      "id": "855d48cd-95cb-452f-bdec-746989c577a2",
+      "content_id": "14460b1a-bb05-4edf-9768-311be103028a",
+      "claim_id": "C94",
+      "claim": "RecA can catalyze an inverse DNA strand exchange reaction with DNA or RNA thus promoting the assimilation of a transcript into duplex DNA in vitro.",
+      "claim_type": "EXPLICIT",
+      "source": "The fact that, in vitro, RecA can catalyze an inverse DNA strand exchange reaction with DNA or RNA thus promoting the assimilation of a transcript into duplex DNA (Kasahara et al., 2000; Zaitsev and Kowalczykowski, 2000) does not argue that this is the case for unscheduled recombinogenic R loops in vivo.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior in vitro studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:00:34.434995Z"
+    },
+    {
+      "id": "6c92cfbc-252d-4368-9d89-8dc3f794310c",
+      "content_id": "14460b1a-bb05-4edf-9768-311be103028a",
+      "claim_id": "C95",
+      "claim": "The biological significance of RecA-mediated DNA:RNA hybridization likely relies on its use for replication initiation of prokaryotic cells.",
+      "claim_type": "EXPLICIT",
+      "source": "More likely, the biological significance of this process relies on its use for replication initiation of prokaryotic cells as originally proposed (Zaitsev and Kowalczykowski, 2000)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation supported by a citation to prior work.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:00:34.434995Z"
+    },
+    {
+      "id": "d32e1c50-ddf5-422e-a94d-03580290e760",
+      "content_id": "14460b1a-bb05-4edf-9768-311be103028a",
+      "claim_id": "C96",
+      "claim": "RecA-mediated DNA:RNA hybridization may be used for replication-dependent recombination to restart stalled forks.",
+      "claim_type": "EXPLICIT",
+      "source": "for replication-dependent recombination to restart stalled forks (Pomerantz and O'Donnell, 2008)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation supported by a citation to prior work.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:00:34.434995Z"
+    },
+    {
+      "id": "3b68303c-cc05-49b1-9c9d-15ed2c3e940d",
+      "content_id": "14460b1a-bb05-4edf-9768-311be103028a",
+      "claim_id": "C97",
+      "claim": "RecA-mediated DNA:RNA hybridization may be used for transcription-induced origin-independent replication.",
+      "claim_type": "EXPLICIT",
+      "source": "or even for transcription-induced origin-independent replication (Stuckey et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation supported by a citation to prior work.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:00:34.434995Z"
+    },
+    {
+      "id": "54b88e13-77e3-434e-a2b0-a86402df268a",
+      "content_id": "14460b1a-bb05-4edf-9768-311be103028a",
+      "claim_id": "C98",
+      "claim": "DNA:RNA hybridization could occur in trans under regulated conditions but not spontaneously as unscheduled and harmful structures that would put genome integrity into risk.",
+      "claim_type": "EXPLICIT",
+      "source": "Hence, DNA:RNA hybridization could occur in trans under regulated conditions but not spontaneously as unscheduled and harmful structures that would put genome integrity into risk.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental data and literature review.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:00:34.434995Z"
+    },
+    {
+      "id": "5eb3d3f0-b7ac-4ca2-b155-b72589e8af0d",
+      "content_id": "14460b1a-bb05-4edf-9768-311be103028a",
+      "claim_id": "C99",
+      "claim": "The assimilation of a transcript into a duplex DNA in trans would be tightly regulated and limited to specific reactions such as the case of telomerase or CRISPR and possibly other proteins yet to be discovered.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the assimilation of a transcript into a duplex DNA in trans would be tightly regulated and limited to specific reactions such as the case of telomerase or CRISPR and possibly other proteins yet to be discovered.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation based on known examples.",
+      "evidence_type": "[\"SPECULATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:00:34.434995Z"
+    },
+    {
+      "id": "aba45f25-8c52-49c7-81fa-633aa6315d68",
+      "content_id": "14460b1a-bb05-4edf-9768-311be103028a",
+      "claim_id": "C100",
+      "claim": "For the case of the GADP45 factor that binds to promoters harboring hybrids formed by lncRNAs, it is unclear whether such hybrids are formed in trans and in a GADP45-dependent manner.",
+      "claim_type": "EXPLICIT",
+      "source": "For other cases, such as that of the GADP45 factor that binds to promoters harboring hybrids formed by lncRNAs (Arab et al., 2019), it is unclear whether such hybrids are formed in trans and in a GADP45-dependent manner.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement of uncertainty about a specific case, with citation.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:00:34.434995Z"
+    },
+    {
+      "id": "7562ed6a-3883-4599-96cc-f295371f01a0",
+      "content_id": "14460b1a-bb05-4edf-9768-311be103028a",
+      "claim_id": "C101",
+      "claim": "RNAs do not form hybrids in trans, so that the previously reported induction of Rad51-dependent ectopic genetic instability would be explained by R loop-mediated DNA breaks in cis.",
+      "claim_type": "EXPLICIT",
+      "source": "Altogether, our results suggest that RNAs do not form hybrids in trans, so that the previously reported induction of Rad51-dependent ectopic genetic instability would be explained by R loop-mediated DNA breaks in cis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main conclusion of the study, integrating all experimental results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:00:34.434995Z"
+    },
+    {
+      "id": "8efb18e3-f4f6-484d-9783-ea554a01ee76",
+      "content_id": "14460b1a-bb05-4edf-9768-311be103028a",
+      "claim_id": "C102",
+      "claim": "DSBs induced in between direct repeats by DNA:RNA hybrids putatively formed with RNA produced in trans would be repaired by Rad51-independent Single-Strand Annealing (SSA) causing the deletion of one of the repeats.",
+      "claim_type": "EXPLICIT",
+      "source": "DSBs induced in between direct repeats by DNA:RNA hybrids putatively formed with RNA produced in trans would be repaired by Rad51-independent Single-Strand Annealing (SSA) causing the deletion of one of the repeats.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the hypothesis being tested, illustrated in Figure 1A.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:00:34.434995Z"
+    },
+    {
+      "id": "2e41a27a-ebbb-4ece-b03d-b541b9da93b3",
+      "content_id": "14460b1a-bb05-4edf-9768-311be103028a",
+      "claim_id": "C103",
+      "claim": "Other recombinogenic lesions such as nicks or ssDNA gaps cannot be ruled out as initiating events in the SSA assay.",
+      "claim_type": "EXPLICIT",
+      "source": "A DSB is depicted for simplicity, but other recombinogenic lesions such as nicks or ssDNA gaps cannot be ruled out.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a caveat stated in the figure legend of Figure 1.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:00:34.434995Z"
+    },
+    {
+      "id": "0e4523e4-1a7a-4299-aeb5-369818e3f89b",
+      "content_id": "14460b1a-bb05-4edf-9768-311be103028a",
+      "claim_id": "C104",
+      "claim": "It has been shown that it is the length (and the GC content) but not the orientation of the lacZ sequence what impairs transcription and triggers hyper-recombination.",
+      "claim_type": "EXPLICIT",
+      "source": "We detected a strong hyper-recombination in hpr1\u2206 cells when the LacZ sequence was transcribed in agreement with previous reports and with the fact that it has been shown that it is the length (and the GC content) but not the orientation of the lacZ sequence what impairs transcription and triggers hyper-recombination (Ch\u00e1vez and Aguilera, 1997; Ch\u00e1vez et al., 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:00:34.434995Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "e358df34-826a-4ffc-a5e3-c80e07f9cd36",
+      "content_id": "14460b1a-bb05-4edf-9768-311be103028a",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "RNA produced in trans does not induce recombinogenic DNA:RNA hybrids or increase recombination. Multiple recombination assays (GL-LacZ, GL-LacZi, TL-LacZ, chromosomal GL-LacZ) in wild-type, tho mutants (hpr1\u0394, mft1\u0394), and RNase H-deficient (rnh1\u0394 rnh201\u0394) cells consistently showed no significant increase in recombination when RNA was produced from an ectopic locus, even under conditions that favor DNA:RNA hybrid accumulation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C33-C101 collectively demonstrate through multiple independent experimental systems that trans RNA does not induce recombination. The consistency across different genetic backgrounds (WT, tho mutants, RNase H mutants), different recombination systems (plasmid and chromosomal), and different promoters (GAL1, tet) provides strong converging evidence. The negative results are particularly compelling because they were obtained even in mutants where DNA:RNA hybrids readily accumulate (C52), ruling out technical limitations.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:00:34.434995Z"
+    },
+    {
+      "id": "626fd7a4-536d-4bf6-8195-f628e085fa93",
+      "content_id": "14460b1a-bb05-4edf-9768-311be103028a",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Transcription in cis dramatically increases recombination in DNA:RNA hybrid-accumulating mutants. In hpr1\u0394 and mft1\u0394 (tho mutants) and rnh1\u0394 rnh201\u0394 (RNase H mutants), activating transcription of the recombination construct in cis caused recombination frequencies to increase by 30-70 fold compared to wild-type.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C38, C50, C55, and C74 are well-supported by quantitative recombination data shown in Figures 2, 5, and 6. The magnitude of the effect (30-70 fold increases) and consistency across multiple mutant backgrounds and experimental systems provides strong evidence. This result serves as a positive control demonstrating that the assay can detect recombinogenic DNA:RNA hybrids when they form in cis.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:00:34.434995Z"
+    },
+    {
+      "id": "41858faa-5c4c-4418-9bb4-3edc4a745cb4",
+      "content_id": "14460b1a-bb05-4edf-9768-311be103028a",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "DNA:RNA hybrid-mediated recombination in the SSA assay is Rad51-independent. RAD51 deletion had no significant effect on recombination frequencies in wild-type or hpr1\u0394 cells, whether transcription was induced in cis or in trans. The hyper-recombination phenotype of hpr1\u0394 was maintained in hpr1\u0394 rad51\u0394 double mutants.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C59-C86 are supported by recombination data in Figure 6 showing that rad51\u0394 does not alter recombination frequencies in the SSA assay. This is consistent with the known mechanism of SSA (C32, C58, C71) which requires only Rad52-mediated annealing, not Rad51-dependent strand invasion. The result directly addresses whether Rad51 is required for DNA:RNA hybrid formation or recombinogenicity.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:00:34.434995Z"
+    },
+    {
+      "id": "eb27e800-4c06-4c33-aa5f-baeaf4567d43",
+      "content_id": "14460b1a-bb05-4edf-9768-311be103028a",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Rad51 is not required for DNA:RNA hybrid formation in THO mutants. Rad52-YFP foci in hpr1\u0394 cells were enhanced by AID overexpression and suppressed by RNase H overexpression, indicating R-loop-dependent DNA damage. However, rad51\u0394 cells showed Rad52 foci accumulation that was insensitive to AID or RNase H, suggesting these foci reflect unrepaired recombination intermediates rather than R-loops. The hpr1\u0394 rad51\u0394 double mutant behaved like rad51\u0394 alone.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C64-C70 are supported by Rad52-YFP foci data in Figure 7A. The differential response to AID and RNase H overexpression between hpr1\u0394 and rad51\u0394 cells provides strong evidence that Rad51 is not involved in R-loop formation or R-loop-mediated damage. The interpretation that rad51\u0394 foci represent unrepaired intermediates (C67) is reasonable and supported by prior literature (Alvaro et al., 2007).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:00:34.434995Z"
+    },
+    {
+      "id": "cfd30ec9-aea7-4643-a9c0-f384c56caf81",
+      "content_id": "14460b1a-bb05-4edf-9768-311be103028a",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "S9.6 immunofluorescence signal on metaphase spreads was similar in hpr1\u0394 and hpr1\u0394 rad51\u0394 cells, indicating that Rad51 is not required for DNA:RNA hybrid accumulation in THO mutants.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C69 and C89 are supported by S9.6 IF data in Figure 7B showing comparable signal in hpr1\u0394 and hpr1\u0394 rad51\u0394 cells. This complements the Rad52 foci data and provides direct evidence that Rad51 is not required for DNA:RNA hybrid formation. However, the authors acknowledge technical limitations of S9.6 IF (C90, C91), including potential dsRNA cross-reactivity and preferential visualization of rDNA regions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:00:34.434995Z"
+    },
+    {
+      "id": "4d5f90ad-e4d2-4a45-81fb-36c5fefbc5a8",
+      "content_id": "14460b1a-bb05-4edf-9768-311be103028a",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "DNA:RNA hybrids accumulate in hpr1\u0394 and rnh1\u0394 rnh201\u0394 mutants at GL-LacZ, tet:LacZ, and GL-LacZi sequences as measured by DRIP.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C52 is supported by DRIP data in Figure 3 showing increased S9.6 signal in mutants that is sensitive to RNase H treatment. This confirms that DNA:RNA hybrids form at the LacZ sequences in the experimental systems, validating the premise of the study. The authors note technical difficulty detecting hybrids in plasmids due to plasmid loss, but the data still show clear accumulation in mutants.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:00:34.434995Z"
+    },
+    {
+      "id": "ddd47925-0401-4dc2-be9c-873e43d7dce1",
+      "content_id": "14460b1a-bb05-4edf-9768-311be103028a",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "RNA produced in trans can suppress hyper-recombination in tho mutants under specific conditions. In the GL-LacZ system with simultaneous cis and trans transcription, trans RNA partially suppressed hyper-recombination in hpr1\u0394 and mft1\u0394 cells. This suppression was stronger in the GL-LacZi system (inverted LacZ) and was not observed with the shorter LacZ400 construct or in chromosomal systems.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C40-C76 are supported by recombination data in Figures 2A-C and Figure 5. The suppression effect is context-dependent and the authors provide a reasonable mechanistic interpretation (C44, C75): free RNA interferes with transcription at the homologous locus, possibly through RNA-RNA hybridization in the GL-LacZi system. The absence of suppression with stable shorter transcripts (C46) and in chromosomal systems (C76) supports this interpretation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:00:34.434995Z"
+    },
+    {
+      "id": "6b63aa05-04bf-49b3-a195-6d6028775884",
+      "content_id": "14460b1a-bb05-4edf-9768-311be103028a",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The authors provide an alternative interpretation of prior work (Wahba et al., 2013) suggesting that the Rad51-dependent genetic instability observed could result from DNA:RNA hybrids forming in cis and inducing DSBs, followed by Rad51-dependent invasion into ectopic sequences, rather than Rad51-mediated RNA invasion in trans.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C80-C81 present a logical reinterpretation of prior work based on the current findings. The alternative model (illustrated in Figure 8) is consistent with known mechanisms of homologous recombination and explains why the prior assay showed Rad51-dependence without requiring Rad51-mediated RNA-DNA hybrid formation. This is a reasonable critique supported by the authors' data showing Rad51-independent DNA:RNA hybrid formation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:00:34.434995Z"
+    },
+    {
+      "id": "9427712c-b2ae-4182-ad9c-7216f897c476",
+      "content_id": "14460b1a-bb05-4edf-9768-311be103028a",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Background knowledge and literature review establishing the context for DNA:RNA hybrids, R-loops, their detection methods, biological consequences, and prior work suggesting trans hybrid formation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C104 represent established knowledge and prior literature that is appropriately cited. These claims provide necessary context for the study but do not constitute new findings. The citations appear appropriate and the characterization of prior work is generally accurate, though the authors do critically evaluate some prior interpretations (e.g., C28, C29).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:00:34.434995Z"
+    },
+    {
+      "id": "16b07f9f-839a-480d-ba2b-e0dd6bcbe49c",
+      "content_id": "14460b1a-bb05-4edf-9768-311be103028a",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Description of the GL-LacZ recombination system and SSA mechanism used in the study.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C31-C103 accurately describe the experimental system. The GL-LacZ construct is a leu2 direct-repeat system where SSA events delete the LacZ sequence and one repeat, producing Leu+ recombinants in a Rad51-independent manner. The caveat (C103) that nicks or ssDNA gaps rather than DSBs could initiate SSA is appropriately noted.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:00:34.434995Z"
+    },
+    {
+      "id": "887ff7fb-3251-4f69-9158-1f563258b057",
+      "content_id": "14460b1a-bb05-4edf-9768-311be103028a",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The study tests the hypothesis that recombinogenic DNA:RNA hybrids could form in trans via Rad51-mediated reactions and finds no evidence supporting this hypothesis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3 and C5 frame the central hypothesis being tested. C3 describes the prior suggestion from literature, and C5 states the negative finding. This is well-supported by the comprehensive experimental data showing no trans-induced recombination across multiple systems and genetic backgrounds.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:00:34.434995Z"
+    },
+    {
+      "id": "5a7215cd-5d9c-437c-904c-6bc914c0ed0f",
+      "content_id": "14460b1a-bb05-4edf-9768-311be103028a",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The main conclusion that unscheduled recombinogenic DNA:RNA hybrids triggering SSA are formed in cis during transcription in a Rad51-independent manner.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C4 represents the primary conclusion of the study, which is strongly supported by the convergence of multiple lines of evidence: (1) cis transcription dramatically increases recombination in hybrid-accumulating mutants, (2) trans transcription does not increase recombination, (3) the effect is Rad51-independent, and (4) DNA:RNA hybrids are detected by DRIP in the relevant sequences.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:00:34.434995Z"
+    },
+    {
+      "id": "3ed561be-86c0-4b60-be43-a786f227709d",
+      "content_id": "14460b1a-bb05-4edf-9768-311be103028a",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Speculative discussion of alternative mechanisms, technical limitations, and biological significance of the findings.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C83-C100 represent speculations and caveats about mechanisms (template switching, nicks vs. DSBs), technical limitations (S9.6 specificity, rDNA visualization), and biological implications (regulated trans hybridization in specific contexts). These are appropriately presented as speculative or uncertain, and while reasonable, they are not directly tested in the study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:00:34.434995Z"
+    },
+    {
+      "id": "7d2b86a7-b0e9-454f-a27c-1dfa329712df",
+      "content_id": "14460b1a-bb05-4edf-9768-311be103028a",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "mft1\u0394 and hpr1\u0394 mutants show slightly elevated recombination when transcription in cis is switched off, likely due to leaky transcription from the GAL1 promoter in glucose.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C37 is supported by recombination data in Figure 2A and transcription data in Figure 1\u2014figure supplement 1 showing detectable LacZ transcription in glucose. The interpretation of leaky transcription is reasonable and consistent with known properties of the GAL1 promoter.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:00:34.434995Z"
+    },
+    {
+      "id": "f09e23c4-8d30-4861-b919-b96cc238d7fd",
+      "content_id": "14460b1a-bb05-4edf-9768-311be103028a",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "In wild-type cells, stimulation of transcription in cis elevated recombination frequency threefold.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C33 is supported by quantitative data in Figure 2A. This modest increase in wild-type cells contrasts with the dramatic increases in mutants (C38, C50, C55), demonstrating that the assay can detect transcription-associated recombination even in cells with normal DNA:RNA hybrid metabolism.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:00:34.434995Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "2bdcace4-d07e-41f4-95d7-0a2c507c7c2d",
+      "result_id": "e358df34-826a-4ffc-a5e3-c80e07f9cd36"
+    },
+    {
+      "claim_id": "97db19d3-26e4-4228-ab14-4b5ccb04a323",
+      "result_id": "e358df34-826a-4ffc-a5e3-c80e07f9cd36"
+    },
+    {
+      "claim_id": "29a45125-4972-490d-a843-2a0510bd4eeb",
+      "result_id": "e358df34-826a-4ffc-a5e3-c80e07f9cd36"
+    },
+    {
+      "claim_id": "4f79a054-5832-49dd-8b9c-b45e67280a43",
+      "result_id": "e358df34-826a-4ffc-a5e3-c80e07f9cd36"
+    },
+    {
+      "claim_id": "8d31f5cf-2ea1-4735-8674-5031078ad17b",
+      "result_id": "e358df34-826a-4ffc-a5e3-c80e07f9cd36"
+    },
+    {
+      "claim_id": "774e5745-3bcf-439c-9ab6-f7bd3b17fcef",
+      "result_id": "e358df34-826a-4ffc-a5e3-c80e07f9cd36"
+    },
+    {
+      "claim_id": "bcb26d3f-109d-4ba0-95f1-e68b32df4906",
+      "result_id": "e358df34-826a-4ffc-a5e3-c80e07f9cd36"
+    },
+    {
+      "claim_id": "55209512-d768-44b5-b531-52832acc19b4",
+      "result_id": "e358df34-826a-4ffc-a5e3-c80e07f9cd36"
+    },
+    {
+      "claim_id": "816be432-b843-4d9c-a1a0-d4aa618f3d89",
+      "result_id": "e358df34-826a-4ffc-a5e3-c80e07f9cd36"
+    },
+    {
+      "claim_id": "cec1e1b7-02fe-422a-842f-55565f60fd54",
+      "result_id": "e358df34-826a-4ffc-a5e3-c80e07f9cd36"
+    },
+    {
+      "claim_id": "34994450-4c46-49bf-8484-2531abe4e81b",
+      "result_id": "e358df34-826a-4ffc-a5e3-c80e07f9cd36"
+    },
+    {
+      "claim_id": "23adef14-dcb6-4aad-8df1-d512f7a8044d",
+      "result_id": "e358df34-826a-4ffc-a5e3-c80e07f9cd36"
+    },
+    {
+      "claim_id": "84875755-1bf2-4458-a576-5dfe504de343",
+      "result_id": "e358df34-826a-4ffc-a5e3-c80e07f9cd36"
+    },
+    {
+      "claim_id": "7562ed6a-3883-4599-96cc-f295371f01a0",
+      "result_id": "e358df34-826a-4ffc-a5e3-c80e07f9cd36"
+    },
+    {
+      "claim_id": "50954dbd-db83-481f-bb00-02cea27967e8",
+      "result_id": "626fd7a4-536d-4bf6-8195-f628e085fa93"
+    },
+    {
+      "claim_id": "6e934e61-f748-4ccf-b162-f024f46123ed",
+      "result_id": "626fd7a4-536d-4bf6-8195-f628e085fa93"
+    },
+    {
+      "claim_id": "dd7d6a00-fa5d-456d-bcbc-16d50538cd7e",
+      "result_id": "626fd7a4-536d-4bf6-8195-f628e085fa93"
+    },
+    {
+      "claim_id": "296c9427-3a3b-480a-93d8-49b327bff4a3",
+      "result_id": "626fd7a4-536d-4bf6-8195-f628e085fa93"
+    },
+    {
+      "claim_id": "d9189f31-93da-4d71-94f3-13394b9b0010",
+      "result_id": "41858faa-5c4c-4418-9bb4-3edc4a745cb4"
+    },
+    {
+      "claim_id": "72efbc07-1b42-42c3-9b27-515d2307bf96",
+      "result_id": "41858faa-5c4c-4418-9bb4-3edc4a745cb4"
+    },
+    {
+      "claim_id": "cb4b8085-242e-4a73-85b9-97c1ab3de37d",
+      "result_id": "41858faa-5c4c-4418-9bb4-3edc4a745cb4"
+    },
+    {
+      "claim_id": "7e06467c-6a30-45eb-9757-b347b2ad0354",
+      "result_id": "41858faa-5c4c-4418-9bb4-3edc4a745cb4"
+    },
+    {
+      "claim_id": "9e43c898-2dc7-408f-aab7-371cce06140f",
+      "result_id": "41858faa-5c4c-4418-9bb4-3edc4a745cb4"
+    },
+    {
+      "claim_id": "f7f6099c-5da4-429c-9c0b-e44e9eb06298",
+      "result_id": "41858faa-5c4c-4418-9bb4-3edc4a745cb4"
+    },
+    {
+      "claim_id": "3c3fc355-ed31-457a-bf71-df5509907af3",
+      "result_id": "eb27e800-4c06-4c33-aa5f-baeaf4567d43"
+    },
+    {
+      "claim_id": "47213867-2fd0-4d57-87ba-22e1777dd699",
+      "result_id": "eb27e800-4c06-4c33-aa5f-baeaf4567d43"
+    },
+    {
+      "claim_id": "9f43ef64-a501-4c3a-adeb-b0b611afeaa1",
+      "result_id": "eb27e800-4c06-4c33-aa5f-baeaf4567d43"
+    },
+    {
+      "claim_id": "9de273df-0197-4c3c-aab9-c2b448ff0821",
+      "result_id": "eb27e800-4c06-4c33-aa5f-baeaf4567d43"
+    },
+    {
+      "claim_id": "2fc45621-ac22-400d-9106-e11faa05260b",
+      "result_id": "eb27e800-4c06-4c33-aa5f-baeaf4567d43"
+    },
+    {
+      "claim_id": "c0af9e3f-c549-45d8-8a2d-7c33f26477b4",
+      "result_id": "eb27e800-4c06-4c33-aa5f-baeaf4567d43"
+    },
+    {
+      "claim_id": "4369f1b9-7157-460b-b384-c4d192cf009e",
+      "result_id": "cfd30ec9-aea7-4643-a9c0-f384c56caf81"
+    },
+    {
+      "claim_id": "5ae35f09-2f7c-4659-a5b8-2ba19517a1e9",
+      "result_id": "cfd30ec9-aea7-4643-a9c0-f384c56caf81"
+    },
+    {
+      "claim_id": "3d576e58-eb83-4c08-9008-43211829d274",
+      "result_id": "4d5f90ad-e4d2-4a45-81fb-36c5fefbc5a8"
+    },
+    {
+      "claim_id": "a8fc04d9-8645-4d36-8d47-9ee8754721c9",
+      "result_id": "ddd47925-0401-4dc2-be9c-873e43d7dce1"
+    },
+    {
+      "claim_id": "75240852-392e-4a90-a9af-b464ec82d8db",
+      "result_id": "ddd47925-0401-4dc2-be9c-873e43d7dce1"
+    },
+    {
+      "claim_id": "9c2c1303-df91-4c3d-a62f-9d71f43c001d",
+      "result_id": "ddd47925-0401-4dc2-be9c-873e43d7dce1"
+    },
+    {
+      "claim_id": "602e4bd4-58b8-4df2-aa28-1e3922422c2b",
+      "result_id": "ddd47925-0401-4dc2-be9c-873e43d7dce1"
+    },
+    {
+      "claim_id": "4fece1fc-c375-47dd-8463-28f201ba96a6",
+      "result_id": "ddd47925-0401-4dc2-be9c-873e43d7dce1"
+    },
+    {
+      "claim_id": "a01fd92c-94f4-4cb2-ac7d-ca235638171c",
+      "result_id": "ddd47925-0401-4dc2-be9c-873e43d7dce1"
+    },
+    {
+      "claim_id": "62f3a914-9e10-43c0-9c2d-bd2f7078de5b",
+      "result_id": "6b63aa05-04bf-49b3-a195-6d6028775884"
+    },
+    {
+      "claim_id": "4e570ad2-18e1-4826-984c-43fb73333368",
+      "result_id": "6b63aa05-04bf-49b3-a195-6d6028775884"
+    },
+    {
+      "claim_id": "f83145d4-940d-428d-a640-d800cf0f97b9",
+      "result_id": "9427712c-b2ae-4182-ad9c-7216f897c476"
+    },
+    {
+      "claim_id": "92abb130-c327-4221-ba86-08957edf5de5",
+      "result_id": "9427712c-b2ae-4182-ad9c-7216f897c476"
+    },
+    {
+      "claim_id": "8d3f7b29-0f6a-4249-a03d-9215516521a6",
+      "result_id": "9427712c-b2ae-4182-ad9c-7216f897c476"
+    },
+    {
+      "claim_id": "55cc81d6-4bd1-471c-84ad-e63597cbd251",
+      "result_id": "9427712c-b2ae-4182-ad9c-7216f897c476"
+    },
+    {
+      "claim_id": "eb11a89e-0bbd-4b00-bfa1-b0ed1900653b",
+      "result_id": "9427712c-b2ae-4182-ad9c-7216f897c476"
+    },
+    {
+      "claim_id": "1a3f752d-0bb3-4353-b1ad-3afb518ed380",
+      "result_id": "9427712c-b2ae-4182-ad9c-7216f897c476"
+    },
+    {
+      "claim_id": "beef6311-aa98-4de2-938b-39a4755bc419",
+      "result_id": "9427712c-b2ae-4182-ad9c-7216f897c476"
+    },
+    {
+      "claim_id": "01d485ed-82f6-497d-9118-f4a15e1e998a",
+      "result_id": "9427712c-b2ae-4182-ad9c-7216f897c476"
+    },
+    {
+      "claim_id": "e396abbf-bfb7-4127-90c9-e80ffef0b303",
+      "result_id": "9427712c-b2ae-4182-ad9c-7216f897c476"
+    },
+    {
+      "claim_id": "b491bf4b-5266-4030-b375-dadcc197daab",
+      "result_id": "9427712c-b2ae-4182-ad9c-7216f897c476"
+    },
+    {
+      "claim_id": "ec336c99-c400-4bc3-bf26-169d63f7a302",
+      "result_id": "9427712c-b2ae-4182-ad9c-7216f897c476"
+    },
+    {
+      "claim_id": "2ad4b64d-a2a9-457f-8df4-bcf93ed37585",
+      "result_id": "9427712c-b2ae-4182-ad9c-7216f897c476"
+    },
+    {
+      "claim_id": "71258dd4-126c-48e7-a3a4-93a2ca240e92",
+      "result_id": "9427712c-b2ae-4182-ad9c-7216f897c476"
+    },
+    {
+      "claim_id": "a098ff4a-3373-49a8-8558-1ae4fb63ecb0",
+      "result_id": "9427712c-b2ae-4182-ad9c-7216f897c476"
+    },
+    {
+      "claim_id": "ddcb6466-2171-416d-8d56-2287066b51bc",
+      "result_id": "9427712c-b2ae-4182-ad9c-7216f897c476"
+    },
+    {
+      "claim_id": "3a1391d5-73f7-45f9-a876-309493c5868b",
+      "result_id": "9427712c-b2ae-4182-ad9c-7216f897c476"
+    },
+    {
+      "claim_id": "095322c4-b00c-4547-8881-359d756f1341",
+      "result_id": "9427712c-b2ae-4182-ad9c-7216f897c476"
+    },
+    {
+      "claim_id": "57038510-dfaf-428e-9746-a613c3552359",
+      "result_id": "9427712c-b2ae-4182-ad9c-7216f897c476"
+    },
+    {
+      "claim_id": "9a84a507-9646-4014-ac61-e8071cac9d30",
+      "result_id": "9427712c-b2ae-4182-ad9c-7216f897c476"
+    },
+    {
+      "claim_id": "4f8e332f-e8a2-4853-b263-b49b52cce7eb",
+      "result_id": "9427712c-b2ae-4182-ad9c-7216f897c476"
+    },
+    {
+      "claim_id": "eab1c0b7-9c31-4f4d-bce7-28484eddc36b",
+      "result_id": "9427712c-b2ae-4182-ad9c-7216f897c476"
+    },
+    {
+      "claim_id": "40453718-d716-47b0-bba7-5f22368b91ce",
+      "result_id": "9427712c-b2ae-4182-ad9c-7216f897c476"
+    },
+    {
+      "claim_id": "563ed60a-9593-45bc-80d3-aad9e59fb851",
+      "result_id": "9427712c-b2ae-4182-ad9c-7216f897c476"
+    },
+    {
+      "claim_id": "9c20ac1b-8d31-4b8f-8220-9b3a2d206d6d",
+      "result_id": "9427712c-b2ae-4182-ad9c-7216f897c476"
+    },
+    {
+      "claim_id": "00845ac7-404c-4081-8e69-328689480c8d",
+      "result_id": "9427712c-b2ae-4182-ad9c-7216f897c476"
+    },
+    {
+      "claim_id": "9930d86c-bed1-4d29-9059-d00ddad03421",
+      "result_id": "9427712c-b2ae-4182-ad9c-7216f897c476"
+    },
+    {
+      "claim_id": "19839590-27ee-4967-a9f7-f56a9a9bfd16",
+      "result_id": "9427712c-b2ae-4182-ad9c-7216f897c476"
+    },
+    {
+      "claim_id": "adb624f8-1f12-45e4-9a7c-6f3a783db0f8",
+      "result_id": "9427712c-b2ae-4182-ad9c-7216f897c476"
+    },
+    {
+      "claim_id": "abce86ee-9c88-465f-a330-e2a199d8ba7e",
+      "result_id": "9427712c-b2ae-4182-ad9c-7216f897c476"
+    },
+    {
+      "claim_id": "0c34c17b-9eab-4261-bf77-be0a2fdcc44d",
+      "result_id": "9427712c-b2ae-4182-ad9c-7216f897c476"
+    },
+    {
+      "claim_id": "138aa05b-5819-4f12-b45b-18988774271b",
+      "result_id": "9427712c-b2ae-4182-ad9c-7216f897c476"
+    },
+    {
+      "claim_id": "baf1d1ae-0bf9-44b9-9b15-07d595134ac7",
+      "result_id": "9427712c-b2ae-4182-ad9c-7216f897c476"
+    },
+    {
+      "claim_id": "3cccb872-0d2c-4828-9fed-8ac4da26a430",
+      "result_id": "9427712c-b2ae-4182-ad9c-7216f897c476"
+    },
+    {
+      "claim_id": "9fe5ab42-9887-4489-9bd2-9aa6a8e1f949",
+      "result_id": "9427712c-b2ae-4182-ad9c-7216f897c476"
+    },
+    {
+      "claim_id": "1ed66613-578c-40a4-bc3a-f760bf20011a",
+      "result_id": "9427712c-b2ae-4182-ad9c-7216f897c476"
+    },
+    {
+      "claim_id": "d99caaad-3b3b-4fbb-8054-f2e1f3f30322",
+      "result_id": "9427712c-b2ae-4182-ad9c-7216f897c476"
+    },
+    {
+      "claim_id": "dcb4462d-126a-4548-8bb8-46c7e612f72f",
+      "result_id": "9427712c-b2ae-4182-ad9c-7216f897c476"
+    },
+    {
+      "claim_id": "b0260d03-ddce-4efa-afca-e50960946d49",
+      "result_id": "9427712c-b2ae-4182-ad9c-7216f897c476"
+    },
+    {
+      "claim_id": "381716de-d979-418c-bc43-03d265dcb881",
+      "result_id": "9427712c-b2ae-4182-ad9c-7216f897c476"
+    },
+    {
+      "claim_id": "855d48cd-95cb-452f-bdec-746989c577a2",
+      "result_id": "9427712c-b2ae-4182-ad9c-7216f897c476"
+    },
+    {
+      "claim_id": "0e4523e4-1a7a-4299-aeb5-369818e3f89b",
+      "result_id": "9427712c-b2ae-4182-ad9c-7216f897c476"
+    },
+    {
+      "claim_id": "ae51f92e-fad2-4621-bf61-0a39323829aa",
+      "result_id": "16b07f9f-839a-480d-ba2b-e0dd6bcbe49c"
+    },
+    {
+      "claim_id": "0fb35509-0c24-4be8-a3b4-2ef8a236541b",
+      "result_id": "16b07f9f-839a-480d-ba2b-e0dd6bcbe49c"
+    },
+    {
+      "claim_id": "8efb18e3-f4f6-484d-9783-ea554a01ee76",
+      "result_id": "16b07f9f-839a-480d-ba2b-e0dd6bcbe49c"
+    },
+    {
+      "claim_id": "2e41a27a-ebbb-4ece-b03d-b541b9da93b3",
+      "result_id": "16b07f9f-839a-480d-ba2b-e0dd6bcbe49c"
+    },
+    {
+      "claim_id": "18173d42-1a92-4ddc-a302-1991b9f50b41",
+      "result_id": "887ff7fb-3251-4f69-9158-1f563258b057"
+    },
+    {
+      "claim_id": "cb2f2ad5-27c7-4ae7-b8d6-201fd5d12514",
+      "result_id": "887ff7fb-3251-4f69-9158-1f563258b057"
+    },
+    {
+      "claim_id": "8d5564a5-40d4-4688-a863-5c9e33366798",
+      "result_id": "5a7215cd-5d9c-437c-904c-6bc914c0ed0f"
+    },
+    {
+      "claim_id": "2965029f-c687-4bb2-8cc1-a437849eeeaf",
+      "result_id": "3ed561be-86c0-4b60-be43-a786f227709d"
+    },
+    {
+      "claim_id": "12c6428b-7b86-465b-9824-a511f5ee4715",
+      "result_id": "3ed561be-86c0-4b60-be43-a786f227709d"
+    },
+    {
+      "claim_id": "eea98555-3ac4-4c2a-bfbb-aee5f121321b",
+      "result_id": "3ed561be-86c0-4b60-be43-a786f227709d"
+    },
+    {
+      "claim_id": "51b22864-d00a-48af-96a4-e736b4626160",
+      "result_id": "3ed561be-86c0-4b60-be43-a786f227709d"
+    },
+    {
+      "claim_id": "6c92cfbc-252d-4368-9d89-8dc3f794310c",
+      "result_id": "3ed561be-86c0-4b60-be43-a786f227709d"
+    },
+    {
+      "claim_id": "d32e1c50-ddf5-422e-a94d-03580290e760",
+      "result_id": "3ed561be-86c0-4b60-be43-a786f227709d"
+    },
+    {
+      "claim_id": "3b68303c-cc05-49b1-9c9d-15ed2c3e940d",
+      "result_id": "3ed561be-86c0-4b60-be43-a786f227709d"
+    },
+    {
+      "claim_id": "54b88e13-77e3-434e-a2b0-a86402df268a",
+      "result_id": "3ed561be-86c0-4b60-be43-a786f227709d"
+    },
+    {
+      "claim_id": "5eb3d3f0-b7ac-4ca2-b155-b72589e8af0d",
+      "result_id": "3ed561be-86c0-4b60-be43-a786f227709d"
+    },
+    {
+      "claim_id": "aba45f25-8c52-49c7-81fa-633aa6315d68",
+      "result_id": "3ed561be-86c0-4b60-be43-a786f227709d"
+    },
+    {
+      "claim_id": "ae5f00cb-06e6-4d98-9aff-d12f11ca87ca",
+      "result_id": "7d2b86a7-b0e9-454f-a27c-1dfa329712df"
+    },
+    {
+      "claim_id": "2bdcace4-d07e-41f4-95d7-0a2c507c7c2d",
+      "result_id": "f09e23c4-8d30-4861-b919-b96cc238d7fd"
+    }
+  ],
+  "comparisons": []
+}

@@ -1,0 +1,1889 @@
+{
+  "submission": {
+    "id": "9632a218-d7c4-4a30-b909-d789d362c51d",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T19:06:43.645572Z",
+    "updated_at": "2025-12-02T19:06:43.645572Z"
+  },
+  "content": [
+    {
+      "id": "3dd7344d-2cfb-4748-a20e-5281f5a2bb9f",
+      "submission_id": "9632a218-d7c4-4a30-b909-d789d362c51d",
+      "content_type": "manuscript",
+      "content_text": "# Cryo-EM structure of VASH1-SVBP bound to microtubules\n\n## Authors\n\n- Faxiang Li<sup>1</sup> ([ORCID: 0000-0002-6442-9063](https://orcid.org/0000-0002-6442-9063))\n- Yang Li<sup>2</sup>\n- Xuecheng Ye<sup>2</sup>\n- Haishan Gao<sup>1</sup> ([ORCID: 0000-0002-4954-8793](https://orcid.org/0000-0002-4954-8793))\n- Zhubing Shi<sup>1</sup> ([ORCID: 0000-0002-9624-4960](https://orcid.org/0000-0002-9624-4960))\n- Xuelian Luo<sup>1</sup> ([ORCID: 0000-0002-5058-4695](https://orcid.org/0000-0002-5058-4695))\n- Luke M Rice<sup>2</sup> ([ORCID: 0000-0001-6551-3307](https://orcid.org/0000-0001-6551-3307)) \u2020\n- Hongtao Yu<sup>1</sup> ([ORCID: 0000-0002-8861-049X](https://orcid.org/0000-0002-8861-049X)) \u2020\n\n### Affiliations\n\n1. Department of Pharmacology, University of Texas Southwestern Medical Center Dallas United States\n2. Department of Biophysics, University of Texas Southwestern Medical Center Dallas United States\n3. Department of Biochemistry, University of Texas Southwestern Medical Center Dallas United States\n4. Zhejiang Provincial Laboratory of Life Sciences and Biomedicine, School of Life Sciences, Westlake University Hangzhou China\n5. Institute of Biology, Westlake Institute for Advanced Study Hangzhou China\n\n\u2020 Corresponding author\n\n## Abstract\n\nThe dynamic tyrosination-detyrosination cycle of \u03b1-tubulin regulates microtubule functions. Perturbation of this cycle impairs mitosis, neural physiology, and cardiomyocyte contraction. The carboxypeptidases vasohibins 1 and 2 (VASH1 and VASH2), in complex with the small vasohibin-binding protein (SVBP), mediate \u03b1-tubulin detyrosination. These enzymes detyrosinate microtubules more efficiently than soluble \u03b1\u03b2-tubulin heterodimers. The structural basis for this substrate preference is not understood. Using cryo-electron microscopy (cryo-EM), we have determined the structure of human VASH1-SVBP bound to microtubules. The acidic C-terminal tail of \u03b1-tubulin binds to a positively charged groove near the active site of VASH1. VASH1 forms multiple additional contacts with the globular domain of \u03b1-tubulin, including contacts with a second \u03b1-tubulin in an adjacent protofilament. Simultaneous engagement of two protofilaments by VASH1 can only occur within the microtubule lattice, but not with free \u03b1\u03b2 heterodimers. These lattice-specific interactions enable preferential detyrosination of microtubules by VASH1.\n\n## Introduction\n\nMicrotubules are dynamic cytoskeletal polymers that play pivotal roles in a wide variety of cellular processes in eukaryotes, including maintaining cell shape and polarity, facilitating cargo transport, and guiding chromosome segregation (Dogterom and Koenderink, 2019; Janke and Magiera, 2020). Microtubules are built from \u03b1\u03b2-tubulin heterodimers that stack head-to-tail to form protofilaments, which interact laterally to form hollow tubules (Brouhard and Rice, 2018). The human genome encodes multiple \u03b1- and \u03b2-tubulin isotypes (Gadadhar et al., 2017). Post-translational modifications (PTMs) on various \u03b1\u03b2-tubulin heterodimers, such as acetylation, palmitoylation, polyglycylation, polyglutamylation, and tyrosination-detyrosination, further diversify the functional properties of microtubules (Janke and Magiera, 2020; Magiera et al., 2018). The \u03b1- and \u03b2-tubulin isotypes combined with myriad PTMs constitute a \u2018tubulin code\u2019, which tunes the dynamics and partner binding of microtubules for diverse cellular functions (Janke and Magiera, 2020; Magiera et al., 2018).\n\nDetyrosination is one of the first identified PTMs of tubulin (Hallak et al., 1977). The newly translated proteins of all \u03b1-tubulin isoforms except TUBA4A contain a tyrosine or phenylalanine at the very C-terminus, which can be cleaved by the recently identified carboxypeptidases, vasohibins 1 and 2 in complex with SVBP (VASH1/2-SVBP) (Aillaud et al., 2017; Nieuwenhuis et al., 2017; Nieuwenhuis and Brummelkamp, 2019). The tubulin tyrosine ligase (TTL) can re-ligate a tyrosine to the detyrosinated \u03b1-tubulin (Ersfeld et al., 1993). Detyrosination of \u03b1-tubulin regulates the functions of microtubules by altering interactions with microtubule-associated proteins (MAPs) and motors (Badin-Lar\u00e7on et al., 2004; Barisic et al., 2015; McKenney et al., 2016; Peris et al., 2006; Peris et al., 2009; Sirajuddin et al., 2014). For example, proteins containing the cytoskeleton-associated protein glycine-rich (CAP-Gly) domain, including CLIP-170 and p150Glued, bind more efficiently to tyrosinated microtubules (Badin-Lar\u00e7on et al., 2004; Peris et al., 2006).\n\nThe detyrosination-tyrosination cycle of \u03b1-tubulin and its dysregulation have been linked to several cellular, physiological, and pathological processes. For example, detyrosination of \u03b1-tubulin inhibits microtubule disassembly by suppressing the activity of depolymerizing motors, including mitotic centromere associated kinesin (MCAK) and KIF2A (Peris et al., 2009; Webster et al., 1987). The plus-end-directed kinetochore motor CENP-E prefers to bind to detyrosinated spindle microtubules, and this preference helps to guide the congression of pole-proximal chromosomes toward the equator during mitosis (Barisic et al., 2015). Finally, proper levels of detyrosinated microtubules in cardiomyocytes provide the necessary mechanical resistance and stiffness for functional contractility (Chen et al., 2018; Robison et al., 2016). Abnormally high levels of detyrosinated microtubules impair the contractility of cardiomyocytes. Dysregulation of the detyrosination-tyrosination cycle can also contribute to cancer and neurodegenerative disorders (Magiera et al., 2018; Mialhe et al., 2001). Loss-of-function mutations of SVBP in humans have been associated with brain abnormalities, including microcephaly, ataxia, and intellectual disability (Iqbal et al., 2019; Pagnamenta et al., 2019).\n\nTubulin-modifying enzymes often exhibit substrate specificity for free \u03b1\u03b2-tubulin heterodimers or polymerized microtubules (Janke and Magiera, 2020). TTL exclusively modifies free \u03b1\u03b2-tubulin heterodimers, as its interaction surface on \u03b1\u03b2-tubulin is partially blocked in polymerized microtubules (Prota et al., 2013; Szyk et al., 2011). In contrast, VASH1/2-SVBP preferably detyrosinate polymerized microtubules (Li et al., 2019; Nieuwenhuis et al., 2017). The crystal structures of VASH1/2-SVBP have revealed how these enzymes recognize the C-terminal tyrosine (Adamopoulos et al., 2019; Li et al., 2019; Liao et al., 2019; Wang et al., 2019; Zhou et al., 2019), but the structural basis for their substrate specificity towards microtubules is not understood. In particular, it remains to be determined whether VASH1/2-SVBP make additional contacts with the microtubule lattice and whether they can distinguish the \u03b1-tubulin conformations in free \u03b1\u03b2-tubulin heterodimers and polymerized microtubules.\n\nUsing cryo-electron microscopy (cryo-EM), we have determined the structure of GMPCPP-stabilized 14-protofilament human microtubules decorated with catalytically inactive human VASH1-SVBP. The C-terminal tail of \u03b1-tubulin engages the catalytic site of VASH1, indicating that the structure represents a productive enzyme-substrate docking complex. Aside from binding the C-terminal tail, VASH1 makes multiple contacts with the globular domain of \u03b1-tubulin and a second \u03b1-tubulin in an adjacent protofilament. Disruption of these contacts selectively impairs VASH1-mediated detyrosination of microtubules, but not that of \u03b1\u03b2-tubulin or the C-terminal tail of \u03b1-tubulin. These additional contacts that are specific to the microtubule lattice thus underlie the substrate preference of VASH1/2-SVBP towards polymerized microtubules.\n\n## Results\n\n### Cryo-EM structure of VASH1-SVBP bound to GMPCPP-stabilized microtubules\n\nWe transfected HeLa cells with plasmids encoding Myc-tagged VASH1 and SVBP, and treated these cells for short durations with nocodazole or Taxol, which inhibited or promoted microtubule polymerization, respectively. The detyrosination levels of \u03b1-tubulin were greatly decreased by nocodazole but enhanced by Taxol (Figure 1A\u2013C). These data confirmed the substrate preference of VASH1-SVBP for polymerized microtubules.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/58157/elife-58157-fig1-v2.jpg)\n\n**Figure 1.:** (A,B) Tubulin detyrosination assays of VASH1-SVBP in human cells. HeLa Tet-On cells were co-transfected with VASH1 and SVBP plasmids, and treated with 5 \u00b5M nocodazole (A) or 100 nM Taxol (B) for indicated times at 24 hr post-transfection. The cell lysates were blotted with the indicated antibodies. deY-tubulin, detyrosinated \u03b1-tubulin. Experiments were repeated three times with similar results. (C) Quantification of the relative detyrosination levels of \u03b1-tubulin in (A) and (B) (mean \u00b1\u2009s.d., n =\u00a03 independent experiments). Significance calculated using two-tailed student\u2019s t-test; between control cells and cells treated with nocodazole or Taxol for the indicated time; *p\u2009<\u20090.05, **p\u2009<\u20090.01, ***p\u2009<\u20090.001, and ****p\u2009<\u20090.0001. (D) Microtubule pelleting assays showing the binding of VASH1-SVBP to recombinant human microtubules. S, supernatant; P, pellet. (E) Cryo-EM map of 14-protofilament, GMPCPP-stabilized microtubules decorated by the VASH152-310-SVBP complex. The catalytically inactive C169S mutant of VASH1 was used in the complex. The map is lowpass filtered to 4 \u00c5. The microtubule seam is indicated by a red dashed line. \u03b1-tubulin, \u03b2-tubulin, VASH1, and SVBP are colored in green, cyan, blue, and orange, respectively. The same color scheme is used for all figures. The inset shows a close-up view of the boxed region. (F) Close-up view of the cryo-EM map in (E), viewed from the lumen. The \u03b1- and \u03b2-tubulin molecules can be distinguished by the length of the S9-S10 loop (boxed with red dashed lines), with the loop in \u03b1-tubulin being longer.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/58157/elife-58157-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) A representative micrograph of VASH1-SVBP-decorated GMPCPP-microtubules. Scale bar, 50 nm. (B) Processing workflow for cryo-EM structure determination of VASH1-SVBP-decorated GMPCPP-microtubules. The 2D classes of poorly decorated microtubules (red outlines) were discarded whereas the classes belonging to efficiently decorated microtubules (green outlines) were selected for subsequent 3D classification. (C) Fourier shell correlation (FSC) curves of GMPCPP-microtubules decorated with VASH1-SVBP. The FSC curves of microtubules (top) and VASH1-SVBP (bottom) were calculated separately. The final resolution for the reconstruction was estimated by calculating the Fourier shell correlation (FSC) of a single tubulin heterodimer in a \u2018good\u2019 protofilament after pseudo-helical averaging, using the FSC\u00a0=\u00a00.143 criterion.\n\nTo elucidate the structural basis of this preference, we sought to determine the structure of VASH1-SVBP bound to microtubules using single-particle cryo-EM. Based on in vitro microtubule pelleting assays, the catalytically inactive C169S mutant of the protease domain of VASH1 (residues 52\u2013310) in complex with SVBP interacted with GMPCPP-stabilized human microtubules that were polymerized from recombinant human \u03b1\u03b2-tubulin heterodimers (Figure 1D). Raw cryo-EM images showed efficient decoration of microtubules by VASH1-SVBP C169S (Figure 1\u2014figure supplement 1A). During data processing, poorly decorated microtubule particles were removed by several rounds of 2D classification (Figure 1\u2014figure supplement 1B). Subsequent 3D classification revealed that, compared with 13-protofilament (PF) microtubules, 14-PF microtubules were the less populated but more ordered class. After seam search and 3D refinement, we determined the structure of 14-PF microtubules decorated with VASH1-SVBP to overall resolutions of 3.1 \u00c5 and 3.8 \u00c5 for microtubules and VASH1-SVBP, respectively (Figure 1\u2014figure supplement 1B).\n\nThe EM map shows that VASH1-SVBP decorates the surface of 14-PF microtubules (Figure 1E). The seam of microtubules can be easily identified. At the seam, \u03b1-tubulin in one protofilament packs against \u03b2-tubulin in the protofilament across the seam. The \u03b1-tubulin and \u03b2-tubulin molecules can be assigned based on the length of the S9-S10 loop: this loop in \u03b1-tubulin is much longer than that in \u03b2-tubulin (Figure 1F). VASH1 simultaneously contacts two \u03b1-tubulin molecules in adjacent protofilaments (Figure 1E). It has no contact with \u03b2-tubulin. SVBP does not appear to contribute directly to substrate recognition, because it has no contact with microtubules.\n\nTo build the structure of the microtubule-VASH1-SVBP complex, we docked the crystal structure of VASH1-SVBP and the cryo-EM structure of \u03b1\u03b2-tubulin heterodimers of GMPCPP-stabilized microtubules into the EM density map as rigid bodies, and then manually adjusted the structures to better fit the density. The resolution of VASH1-SVBP is heterogenous, with the microtubule-binding regions and the core exhibiting higher resolution than the rest of the molecule (Figure 2\u2014figure supplement 1A). With the current map, we could model all secondary structures of \u03b1\u03b2-tubulin heterodimers except the C-terminal tails, and most of the side chains of \u03b1\u03b2-tubulin and the bound nucleotides (Figure 2A and Figure 2\u2014figure supplement 1B,C). By contrast, due to the relatively lower and heterogeneous resolution of VASH1-SVBP, only the side chains of residues that contact microtubules could be modeled (Figure 2\u2014figure supplement 1C).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/58157/elife-58157-fig2-v2.jpg)\n\n**Figure 2.:** (A) Models of VASH1-SVBP (VASH1, blue; SVBP, orange) and tubulin (\u03b1-tubulin, green; \u03b2-tubulin, cyan) were docked into the cryo-EM density (lowpass-filtered to 4 \u00c5) and refined. (B) Cryo-EM density map of VASH1-SVBP lowpass-filtered to 6 \u00c5. (C) Ribbon diagram of the cryo-EM structure of VASH1-SVBP bound to microtubules. (D) Two views of the electron density map (generated by Phenix.auto_sharpen, with local B factor sharpening and resolution cutoff at 7 \u00c5) showing an unfitted, continuous density that belonged to the \u03b1-tubulin C-terminal tail (CT\u03b1).\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/58157/elife-58157-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) Density corresponding to the \u03b1\u03b2-tubulin heterodimer and the VASH1-SVBP complex colored by local resolution as determined in relion_postprocess. (B) Electron density map of nucleotides in the N-site (left) and E-site (right) of microtubules. (C) Representative regions of the cryo-EM map of \u03b1-tubulin, \u03b2-tubulin, and VASH1, highlighting the density of key residues at VASH1-microtubule interfaces.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/58157/elife-58157-fig2-figsupp2-v2.jpg)\n\n**Figure 2\u2014figure supplement 2.:** (A) Overlay of the ribbon diagrams of the cryo-EM structure of microtubule-bound VASH1-SVBP (colored blue and orange) and the crystal structure of VASH1-SVBP alone (PDB: 6OCG) (colored gray). (B) Surface drawing of the structure of VASH1-SVBP bound to two neighboring \u03b1\u03b2-tubulin heterodimers in two different views. The C-terminal tail of \u03b1-tubulin (CT\u03b1) is indicated by a dashed green line. (C) Solvent-accessible surface of the VASH1-SVBP complex (PDB: 6OCG) colored by electrostatic potential (blue, positive; red, negative).\n\nIn the 6 \u00c5 lowpass-filtered EM map, the density of VASH1-SVBP is continuous, with most of the \u03b1-helices distinguishable (Figure 2B). The N- and C-terminal regions of SVBP remain disordered. Compared with crystal structures of VASH1-SVBP alone or bound to inhibitors, there are no obvious conformational changes of VASH1-SVBP upon binding to microtubules (Figure 2\u2014figure supplement 2A). VASH1 simultaneously interacts with two \u03b1-tubulin molecules in adjacent protofilaments (Figure 2C). This binding mode can explain the substrate preference of VASH1 towards microtubules, because this collection of interactions is only possible within the microtubule lattice.\n\n### Recognition of the \u03b1-tubulin C-terminal tail by VASH1\n\nHow vasohibins recognize the C-terminal tail of \u03b1-tubulin (CT\u03b1) is unresolved. Based on crystal structures of VASH1/2 bound to substrate-mimicking covalent inhibitors and subsequent mutagenesis data, we and two other groups identified the positively charged groove near the active site as the CT\u03b1-binding site (Adamopoulos et al., 2019; Li et al., 2019; Wang et al., 2019). A later study challenged this model, however, and showed that the free CT\u03b1 peptide did not bind to the positively charged groove of VASH2, but instead bound to a site on the opposite side of the active site, with the backbone of CT\u03b1 orientated in the opposite direction (Zhou et al., 2019).\n\nOur 7 \u00c5 lowpass-filtered EM map shows an unaccounted, continuous density connecting the last modeled C-terminal residue of \u03b1-tubulin to the active site of VASH1 through the positively charged groove (Figure 2D). This weak density likely belongs to CT\u03b1, but the map quality of this region does not allow us to model the complete CT\u03b1. The recombinant human tubulin produced using the insect cell system contains human and insect \u03b1-tubulin molecules in roughly 70:30 proportion (Ye et al., 2020). Because the sequence of the C-terminal tail of the insect \u03b1-tubulin is different from that of human \u03b1-tubulin, it is possible that this heterogeneity contributes to the difficulty to resolve the \u03b1-tubulin tail.\n\nThe surface view of our microtubule-VASH1-SVBP structure reveals that the portion of the modeled CT\u03b1 is located at one end of the groove and pointing towards the active site (Figure 2\u2014figure supplement 2B). This binding mode is compatible for the detyrosination of \u03b1-tubulin. Thus, the structure captured in our study likely represents the catalysis-competent enzyme-substrate complex. We suspect that, because of its low sequence complexity (i.e. stretches of glutamates), the CT\u03b1 peptide in isolation (i.e. not anchored to the globular domain of \u03b1-tubulin) may interact with VASH1 in purely electrostatic, nonproductive ways. Our results are consistent with the positively charged groove of VASH1/2 being the binding site of CT\u03b1, as we had originally proposed (Li et al., 2019).\n\n### Interactions between VASH1 and microtubules\n\nVASH1 contacts microtubules through three major interfaces (Figure 3A). Interfaces 1 and 2 are between VASH1 and the globular domain of the \u03b1-tubulin molecule that VASH1 would be acting on. Interface 3 is between VASH1 and a second \u03b1-tubulin molecule in an adjacent protofilament.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/58157/elife-58157-fig3-v2.jpg)\n\n**Figure 3.:** (A) Schematic drawing of the VASH1-microtubule complex, with the three main interfaces indicated. (B\u2013D) Close-up views of the VASH1\u2013microtubule interfaces 1 (B), 2 (C), and 3 (D), with interacting residues shown as sticks. VASH1 residues are colored yellow and labeled with black letters while \u03b1-tubulin residues are colored green and labeled with red letters.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/58157/elife-58157-fig3-figsupp1-v2.jpg)\n\nAt interface 1, VASH1 residues on \u03b1D and the \u03b1C-\u03b1D loop form a hydrophilic interaction network with the C-terminal helix (\u03b112) of \u03b1-tubulin (Figure 3B). Interface 2 is primarily formed between the \u03b24-\u03b25 loop of VASH1 and \u03b111 of \u03b1-tubulin (Figure 3C). The \u03b24-\u03b25 loop of VASH1 is well-ordered, and has clear density in the EM map (Figure 2\u2014figure supplement 1C). Residues in this VASH1 loop form hydrophobic and favorable electrostatic interactions with \u03b1-tubulin (Figure 3C).\n\nInterface 3 lies between the last helix (\u03b1G) of VASH1 and a second \u03b1-tubulin molecule (termed \u03b1-tubulin\u2019) from the adjacent protofilament (Figure 3D). The total surface area buried between VASH1 and microtubules is 878 \u00c52, 39.8% of which is contributed by interface 3. Because the density of VASH1 \u03b1G is poor (Figure 2\u2014figure supplement 1C), we cannot definitively assign the precise orientation and conformation of the side chains in this helix. Nevertheless, R234, R296, R299, and L303 of VASH1 \u03b1G are located in close proximity to Y108, E155, R156, V159, E196, and E414 from \u03b1-tubulin\u2019. These residues are likely to develop favorable electrostatic and hydrophobic interactions. Interface 3 can only be established between VASH1 and microtubules, but cannot exist between VASH1 and free \u03b1\u03b2-tubulin heterodimers. Thus, the inter-protofilament interactions by VASH1 underlie the substrate preference of VASH1-SVBP towards microtubules.\n\n### Contributions of VASH1-microtubule interactions to tubulin detyrosination\n\nVASH1 residues that lie at the three VASH1-microtubule interfaces are conserved among VASH1 and VASH2 proteins from different species (Figure 3\u2014figure supplement 1A,B), suggesting that they might be functionally important. To test the functional relevance of these interfaces, we introduced mutations into VASH1 to disrupt them, co-transfected these VASH1 mutants with SVBP into HeLa cells (which had low endogenous levels of tubulin detyrosination) (Bulinski et al., 1988), and evaluated their detyrosination activities on \u03b1-tubulin.\n\nThe single mutation of VASH1 R148 at interface 1 (R148E) greatly decreased \u03b1-tubulin detyrosination, and the K145E/R148E double mutation further attenuated the detyrosination activity of VASH1 (Figure 4A and Figure 4\u2014figure supplement 1A). Interestingly, the VASH1 D155R mutant had higher detyrosination activity. D155 might develop unfavorable electrostatic interactions with E429 of \u03b1-tubulin (Figure 3B). Mutation of D155 to a positively charged residue, such as arginine, might have alleviated this clash, enhancing detyrosination. VASH1 mutations at interface\u00a01 thus produce results consistent with structure-based predictions, validating its functional importance.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/58157/elife-58157-fig4-v2.jpg)\n\n**Figure 4.:** (A,B) Tubulin detyrosination assays of VASH1-SVBP WT or mutants in human cells. HeLa Tet-On cells were co-transfected with Myc-VASH1 WT or mutants and Myc-SVBP WT plasmids. At 24 hr post-transfection, the cells were treated without (A) or with 5 \u00b5M Nocodazole (B) for 1 hr. The cell lysates were blotted with the indicated antibodies. Compared with VASH1 WT, VASH1 mutants with multiple glutamate substitutions had slightly slower mobilities. The mobility shift is likely caused by the introduction of multiple negative charges, akin to protein phosphorylation, which also sometimes retards gel mobility. deY-tubulin, detyrosinated \u03b1-tubulin. 3E, R234E/R299E/L303E. Experiments were repeated three times with similar results. (C\u2013E) In vitro detyrosination of GMPCPP-stabilized human microtubules (C), the C-terminal peptide of \u03b1-tubulin (CT\u03b1) fused to GST (D), or free \u03b1\u03b2-tubulin heterodimers (E) by the indicated recombinant VASH1\u2013SVBP WT or mutant complexes. Experiments were repeated at least three times with similar results. (F) Coomassie-stained gel of microtubule pelleting assays of VASH1-SVBP WT and mutant complexes. (G) Model of microtubule lattice binding, substrate recognition, and tubulin detyrosination by VASH1-SVBP. The \u2018+\u2019 signs indicate positive charges.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/58157/elife-58157-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A\u2013E) Quantification of the relative detyrosination levels of \u03b1-tubulin in Figure 4A (A), 4B (B), 4C (C), 4D (D), and 4E (E). Mean \u00b1\u2009s.d.; n =\u00a03 independent experiments. (F) Quantification of the percentage of VASH1-SVBP bound to microtubules in Figure 4F. Mean \u00b1\u2009s.d.; n =\u00a03 independent experiments. Significance calculated using two-tailed student\u2019s t-test; between WT and mutants; *p\u2009<\u20090.05, **p\u2009<\u20090.01 ***p\u2009<\u20090.001, and ****p\u2009<\u20090.0001.\n\nThe VASH1 H268E/V270E and R234E/R299E/L303E (3E) mutations that targeted residues at interfaces 2 and 3, respectively, also reduced the detyrosination activity of VASH1 (Figure 4A and Figure 4\u2014figure supplement 1A), consistent with the functional relevance of these interfaces as predicted from the structure. Because interface 3 only exists between VASH1 and microtubules, disrupting interface 3 via the VASH1 3E mutation should impair the detyrosination of microtubules, but not of free \u03b1\u03b2 tubulin. Consistent with this prediction, in cells treated with nocodazole, wherein microtubules are depolymerized, VASH1 WT and 3E had similar detyrosination activities, whereas mutations that targeted interfaces 1 and 2 still attenuated the detyrosination of free \u03b1\u03b2-tubulin as predicted (Figure 4B and Figure 4\u2014figure supplement 1B).\n\nTo further support the importance of the three contact sites, we expressed and purified recombinant VASH1 WT and mutants in complex with SVBP and tested their detyrosination activities on GMPCPP-stabilized human microtubules in vitro. Consistent with results in HeLa cells, mutations targeting interfaces 1\u20133 affected the detyrosination activity of VASH1 towards microtubules to varying degrees in vitro (Figure 4C and Figure 4\u2014figure supplement 1C). Furthermore, these mutations had little effect on the detyrosination activity of VASH1 towards GST-CT\u03b1 (Figure 4D and Figure 4\u2014figure supplement 1D), ruling out the possibility that these mutations unintentionally affected the folding and structural integrity of VASH1. The VASH1 3E mutation that targets interface 3 had no effect on the detyrosination of free \u03b1\u03b2-tubulin heterodimers in vitro (Figure 4E and Figure 4\u2014figure supplement 1E). Finally, microtubule pelleting assays confirmed that the VASH1 mutants, K145E/R148E, H268E/V270E, and 3E, all had decreased binding to microtubules (Figure 4F and Figure 4\u2014figure supplement 1F). Collectively, these results establish the functional importance of the three VASH1-microtubule interfaces in microtubule binding and detyrosination.\n\n## Discussion\n\nVASH1/2-SVBP have recently been identified as the carboxypeptidases responsible for the cleavage of the last tyrosine of \u03b1-tubulin (Aillaud et al., 2017; Nieuwenhuis et al., 2017). Subsequent studies have demonstrated the structural basis of the recognition of the C-terminal tyrosine by VASH1/2-SVBP (Li et al., 2019; Liao et al., 2019; Wang et al., 2019). VASH1/2-SVBP prefer polymerized microtubules as their substrate (Li et al., 2019; Nieuwenhuis et al., 2017), but the basis for this substrate preference has been unclear. Our study has now provided the structural basis for the substrate preference of VASH1/2-SVBP towards microtubules. VASH1-SVBP binds to the surface of polymerized microtubules and simultaneously engages two adjacent \u03b1-tubulin molecules in neighboring protofilaments through multiple interfaces (Figure 4G). We propose that these lattice-specific interactions guide the C-terminal tail of \u03b1-tubulin into the positively charged groove of VASH1 and position the C-terminal tyrosine into the active site for cleavage.\n\nBecause VASH1/2-SVBP prefer to detyrosinate microtubules and TTL prefers to act on \u03b1\u03b2-tubulin heterodimers, the long-lived, stable microtubules in cells contain more detyrosinated \u03b1-tubulins, whereas the newly formed, dynamic microtubules have more tyrosinated \u03b1-tubulins (Gundersen et al., 1987). Detyrosination of microtubules can alter the binding of MAPs, which indirectly affect microtubule dynamics. As microtubules assembled from tyrosinated and detyrosinated \u03b1\u03b2-tubulins have similar intrinsic dynamic properties (Janke and Magiera, 2020), detyrosination per se does not directly stabilize microtubule dynamics, but rather it is a consequence of stable microtubules. On the other hand, VASH1-SVBP decorates the microtubule lattice very efficiently, and it straddles two neighboring protofilaments. It will be interesting to test whether, aside from detyrosination, VASH1/2-SVBP might directly bind to and stabilize microtubules.\n\nIn addition to interacting with and modifying microtubules, VASH1/2-SVBP are known to perform other functions. Indeed, VASH1/2-SVBP had been initially identified as secreted proteins that regulate angiogenesis (Watanabe et al., 2004). Recently, VASH1 has been shown to bind directly to the internal ribosome binding site (IRES) of mRNAs of angiogenesis factors and regulate their IRES-mediated translation in cardiomyocytes under hypoxic conditions (Hantelys et al., 2019). Biallelic loss-of-function mutations of SVBP in humans have been linked to brain development defects and intellectual disability (Iqbal et al., 2019; Pagnamenta et al., 2019). Although these patient phenotypes are likely caused by defective tubulin detyrosination and elevated levels of tubulin tyrosination in brain tissues (Pagnamenta et al., 2019), it is also possible that the angiogenesis and RNA-binding functions of VASH1/2-SVBP contribute to the disease phenotypes. In this study, using structure-based mutagenesis, we have identified VASH1 mutants that specifically disrupt microtubule binding and detyrosination. These mutants may prove valuable in future experiments aimed at dissecting the pathophysiological functions of vasohibins.\n\n## Materials and methods\n\n### Protein expression and purification\n\nThe expression and purification of the wild-type and mutant catalytic domain of human VASH1 (residues 52\u2013310) bound to full-length SVBP and the C-terminal tail of human TUBA1A (residues 441\u2013452) fused to GST (GST-CT\u03b1) were performed as previously described\u00a0(Li et al., 2019). The recombinant human TUBA1B\u2013TUBB3 heterodimer protein was expressed and purified as previously described (Ti et al., 2016; Ye et al., 2020).\n\n### Preparation of cryo-EM grids\n\nThe TUBA1B\u2013TUBB3 protein was thawed on ice and filtered through a 0.1 \u00b5m centrifugal Filter (EMD Millipore, UFC30VV00) at 4 \u00b0C to remove protein aggregates. The filtered protein was diluted to a final concentration of 15 \u00b5M in RBR110 buffer (110 mM PIPES pH 6.9, 1 mM MgCl2, 1 mM EGTA) with 10 mM GMPCPP. The GMPCPP-stabilized microtubules were polymerized at 37 \u00b0C for 1 hr. The polymerized microtubules (4 \u00b5l) were applied to a glow discharged quantifoil holey carbon R1.2/1.3 copper grid (Electron Microscopy Sciences, Q350CR1.3) and allowed to adhere for 30 s in the chamber of a Vitrobot (ThermoFisher, Mark IV) set to 30 \u00b0C and 95% relative humidity. The VASH1-SVBP complex consisting of VASH1 C169S and full-length SVBP (2 \u03bcl of a 300 \u03bcM solution) was then added to the grid containing microtubules and incubated for 30 s. Then, 4 \u03bcl of the protein mixture was removed from the grid and another 2 \u03bcl of VASH1-SVBP was added. After another 30 s incubation, the grid was blotted for 4 s and plunged into ethane slush.\n\n### Cryo-EM data collection\n\nThe dataset of GMPCPP-microtubules decorated with VASH1-SVBP C169S was collected with SerialEM on a 300-keV Titan Krios (FEI) transmission electron microscope. Movies were collected in super-resolution mode on a K3 Summit direct electron detector (Gatan), with a physical pixel size of 0.83 \u00c5 (nominal magnification 105,000X). The frame rate was 0.03 s/frame and the total exposure time was 1.2 s, resulting in an accumulated total exposure of\u00a0~50 electron/\u00c52. A defocus range from \u22120.9 to \u22122.5 \u03bcm was used.\n\n### Image processing\n\nMotion correction for each movie stack was performed with the MotionCor2 program (Zheng et al., 2017). The contrast transfer function parameters were estimated from the motion-corrected micrographs with Gctf (Zhang, 2016). The microtubules were selected manually from the motion-corrected micrographs in Relion (Zivanov et al., 2018). The selected microtubule images were computationally cut into overlapping boxes, with a \u223c80 \u00c5 non-overlapping region along the microtubule axis between adjacent boxes. 2D classification was performed in Relion to remove bad segments. Two rounds of helical refinement were performed in Relion, with each round of refinement assuming that microtubules all belonged 13- or 14-protofilament, respectively. The two resulting volumes were then used as templates in 3D classification to separate segments that belonged to 13- and 14-protofilament microtubules. Segments belonged to 14-protofilament microtubules were selected for an additional round of helical refinement in Relion to generate a map that did not distinguish \u03b1- and \u03b2-tubulins. The output map was low-pass filtered and masked to identify the seam and to impose the 1:1 VASH1:\u03b1\u03b2-tubulin stoichiometry, and was used as the initial model for the following steps in Frealign (Grigorieff, 2007; Grigorieff, 2016). The segments were first aligned with global search, followed by local search with 14-fold pseudo-helical symmetry. After each iteration, a homemade script was used to crop out the best asymmetric unit and to rebuild the entire volume, which was used as the reference for the next iteration. The final resolution was estimated in Relion with the unfiltered half maps from the last iteration in Frealign.\n\n### Model building, refinement and validation\n\nThe crystal structure of human VASH1-SVBP complex (PDB: 6OCG) and the EM structure of GMPCPP-stabilized microtubules (PDB: 6DPU) were fitted as rigid bodies into the cryo-EM map using the \u2018Fit in Map\u2019 utility in Chimera (Pettersen et al., 2004). A new \u03b1\u03b2-tubulin model was generated in Coot (Emsley and Cowtan, 2004) by mutating residues of the GMPCPP-stabilized microtubules to match human TUBA1B and TUBB3 sequences and manually adjusted according to the density. For refinement, two copies of the \u03b1\u03b2-tubulin model were docked into the segmented density from the final 14-protofilament map to form two adjacent tubulin heterodimers. Several rounds of further refinement were then performed using \u2018Real_space_refinement\u2019 in Phenix (Adams et al., 2010). The statistics and geometries for the final model were generated with MolProbity (Williams et al., 2018) and summarized in Table 1. The figures were prepared with PyMol (https://pymol.org/) or Chimera.\n\n**Table 1.**\n Data collection and refinement statistics.\n\n\n<table>\n  <thead>\n    <tr>\n      <th></th>\n      <th>VASH1-SVBP-microtubule</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td colspan=\"2\">Data collection and processing</td>\n    </tr>\n    <tr>\n      <td>Magnification</td>\n      <td>105,000</td>\n    </tr>\n    <tr>\n      <td>Voltage (kV)</td>\n      <td>300</td>\n    </tr>\n    <tr>\n      <td>Electron exposure (e-\u00c5\u22122)</td>\n      <td>50</td>\n    </tr>\n    <tr>\n      <td>Defocus range (\u03bcm)</td>\n      <td>\u22120.9 to \u22122.5</td>\n    </tr>\n    <tr>\n      <td>Pixel size (\u00c5)</td>\n      <td>0.83</td>\n    </tr>\n    <tr>\n      <td>Symmetry imposed</td>\n      <td>Pseudo-Helical</td>\n    </tr>\n    <tr>\n      <td>Initial particle images (no.)</td>\n      <td>156,525</td>\n    </tr>\n    <tr>\n      <td>Final particle images (no.)</td>\n      <td>46,999</td>\n    </tr>\n    <tr>\n      <td>Map resolution (\u00c5)/FSC threshold</td>\n      <td>3.1/0.143</td>\n    </tr>\n    <tr>\n      <td>Map sharpening B factor (\u00c5\u22122)</td>\n      <td>\u221260</td>\n    </tr>\n    <tr>\n      <td colspan=\"2\">Refinement</td>\n    </tr>\n    <tr>\n      <td>Initial model used</td>\n      <td>PDB: 6OCG, 6DPU</td>\n    </tr>\n    <tr>\n      <td>Model resolution (\u00c5)/FSC threshold</td>\n      <td>3.9/0.5</td>\n    </tr>\n    <tr>\n      <td colspan=\"2\">Model composition</td>\n    </tr>\n    <tr>\n      <td>Nonhydrogen atoms</td>\n      <td>18,196</td>\n    </tr>\n    <tr>\n      <td>Protein residues</td>\n      <td>2296</td>\n    </tr>\n    <tr>\n      <td>Ligands</td>\n      <td>4</td>\n    </tr>\n    <tr>\n      <td colspan=\"2\">B factors (\u00c5\u22122)</td>\n    </tr>\n    <tr>\n      <td>Protein</td>\n      <td>143.68</td>\n    </tr>\n    <tr>\n      <td>Ligands</td>\n      <td>101.97</td>\n    </tr>\n    <tr>\n      <td colspan=\"2\">R.m.s. deviations</td>\n    </tr>\n    <tr>\n      <td>Bond lengths (\u00c5)</td>\n      <td>0.006</td>\n    </tr>\n    <tr>\n      <td>Bond angles (\u00b0)</td>\n      <td>0.931</td>\n    </tr>\n    <tr>\n      <td colspan=\"2\">Validation</td>\n    </tr>\n    <tr>\n      <td>MolProbity score</td>\n      <td>1.81</td>\n    </tr>\n    <tr>\n      <td>Clashscore</td>\n      <td>6.2</td>\n    </tr>\n    <tr>\n      <td>Poor rotamers (%)</td>\n      <td>0.36</td>\n    </tr>\n    <tr>\n      <td colspan=\"2\">Ramachandran plot</td>\n    </tr>\n    <tr>\n      <td>Favored (%)</td>\n      <td>92.56</td>\n    </tr>\n    <tr>\n      <td>Allowed (%)</td>\n      <td>7.35</td>\n    </tr>\n    <tr>\n      <td>Disallowed (%)</td>\n      <td>0.09</td>\n    </tr>\n  </tbody>\n</table>\n\n### Microtubule pelleting assays\n\nThe polymerized microtubules (with a monomer concentration of 15 \u00b5M) were prepared as described above for EM grid preparation. GMPCPP-stabilized microtubules and VASH1-SVBP wild type or mutants were mixed in pre-warmed RBR80 buffer with 5 mM GMPCPP, and incubated at 37 \u00b0C for 5 min. The final concentration of microtubules and VASH1-SVBP is 0.6 \u00b5M. The reaction mixtures were then centrifuged at 132,000 g for 30 min to pellet the microtubules. After three gentle washes with the warmed RBR80 buffer, the microtubule pellets were resuspended in the SDS sample buffer and analyzed by SDS-PAGE. The gels were stained by Coomassie brilliant blue and scanned with an Odyssey Infrared Imaging System (LI-COR).\n\n### In vitro detyrosination assays\n\nFor in vitro detyrosination assays with GST-CT\u03b1 (the C-terminal tail of \u03b1-tubulin) as the substrate, VASH152-310-SVBP wild type or mutants (100 nM) were incubated with 500 nM GST-CT\u03b1 in the buffer containing 25 mM Tris, pH 7.5, 100 mM NaCl, and 1 mM DTT. The reaction mixtures were incubated at room temperature for 10 min. For in vitro detyrosination assays of microtubules, the polymerized \u03b1\u03b2-tubulin proteins were diluted to 0.5 \u03bcM with warm BRB80 buffer. VASH152-310-SVBP wild type or mutant proteins (100 nM) were then incubated with 200 nM polymerized microtubules in the BRB80 buffer at room temperature for 5 min. The reactions were stopped by the addition of 2X SDS sample buffer, boiled, and subjected to SDS-PAGE followed by immunoblotting. The blots were scanned with an Odyssey Infrared Imaging System (LI-COR).\n\n### Cell culture, transfection, and immunoblotting\n\nHeLa Tet-On cells (Takara Bio USA, Inc) were used to analyze the detyrosination activities of VASH1-SVBP mutants because of the low endogenous detyrosination levels in these cells. The cell line has been validated to be of HeLa origin by short tandem repeat profiling. The cells are routinely checked for mycoplasma contamination with DAPI staining. The cells were grown in DMEM (Invitrogen) supplemented with 10% fetal bovine serum and 2 mM L-glutamine. All plasmids for mammalian cell expression used in this study were cloned into the modified pCS2 vector that encodes six copies of the Myc tag at the N-terminus. Plasmid transfection was performed using the Lipofectamine 2000 Transfection Reagent (Thermo Fisher Scientific, 11668019) per the manufacturer\u2019s protocols. Cells in each well of a 12-well plate were transfected with a total of 1 \u00b5g plasmids (0.5 \u00b5g VASH1 and 0.5 \u00b5g SVBP) when the cell density reached 70% confluency. The cells were washed once with 1 ml PBS at 24 h post-transfection and collected by directly re-suspending them in 150 \u00b5l 1X SDS sample buffer. The samples were boiled at 100 \u00b0C for 15 min and subjected to immunoblotting with appropriate antibodies. The primary antibodies were used at a final concentration of 1 \u03bcg ml\u22121 diluted in TBS containing 0.05% Tween 20% and 5% dry milk. Anti-mouse IgG (H+L) (Dylight 680 conjugates) and anti-rabbit IgG (H+L) (Dylight 800 conjugates) (Cell Signaling) were used as secondary antibodies. The blots were scanned with an Odyssey Infrared Imaging System (LI-COR).\n",
+      "created_at": "2025-12-02T19:06:43.645572Z"
+    },
+    {
+      "id": "8a714d10-a96c-4d92-aeb0-504979baa34c",
+      "submission_id": "9632a218-d7c4-4a30-b909-d789d362c51d",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Thomas Surrey, Centre for Genomic Regulation (CRG) Spain\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.58157.sa1](https://doi.org/10.7554/eLife.58157.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nAcceptance summary:\n\nThis manuscript presents a cryo-EM structure of the tubulin tyrosine carboxypeptidase VASH1-SVBP bound to a microtubule, providing an explanation for its substrate specificity (microtubule vs soluble tubulin). Structure-guided mutagenesis combined with activity assays performed both in vitro and in cells confirm predictions made by the structure. This study provides new insight into the mechanism of substrate recognition by an important microtubule modifying enzyme.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Cryo-EM structure of VASH1-SVBP bound to microtubules\" for consideration by eLife. Your article has been reviewed by three peer reviewers, one of whom is a member of our Board of Reviewing Editors, and the evaluation has been overseen by Vivek Malhotra as the Senior Editor. The reviewers have opted to remain anonymous.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nAs the editors have judged that your manuscript is of interest, but as described below that additional experiments are required before it is published, we would like to draw your attention to changes in our revision policy that we have made in response to COVID-19 (https://elifesciences.org/articles/57162). First, because many researchers have temporarily lost access to the labs, we will give authors as much time as they need to submit revised manuscripts. We are also offering, if you choose, to post the manuscript to bioRxiv (if it is not already there) along with this decision letter and a formal designation that the manuscript is \"in revision at eLife\". Please let us know if you would like to pursue this option. (If your work is more suitable for medRxiv, you will need to post the preprint yourself, as the mechanisms for us to do so are still in development.)\n\nSummary:\n\nThis manuscript presents a cryo-EM structure of VASH1-SVBP bound to 14-protofilament microtubule. The overall resolution is 3.1 A, but the resolution of VASH1-SVBP complex is lower. Nevertheless, the authors were able to dock in a previous crystal structure of VASH1-SVBP. Their structure revealed that VASH1-SVBP binds two adjacent \u03b1-tubulins in a microtubule, providing an explanation for its substrate specificity (microtubule vs soluble tubulin). The authors complement their structural observations with structure-guided mutagenesis combined with activity assays performed both in vitro and in cells. The study focuses on an important molecular player that is of interest to many in the microtubule field and addresses the important question of how the VASH1 enzyme recognizes its microtubule substrate. However, the quality of the study needs improvement, both technically as well as from a scholarship point of view. This will require additional evaluation/clarification of the EM data, a limited set of additional experiments and textual changes to be clearer about limitations, to cite references more appropriately, and to provide more detail for Materials and methods.\n\nEssential revisions:\n\n1) The majority of the figures showing interactions do not seem to match the structure that was included with the manuscript. The figures should all be redone with the final structure (or, conversely, the final structure should be submitted with the manuscript if the figures were generated later). As a consequence of this mismatch between the figures and the structure provided, some of the proposed contacts are too far away to be considered electrostatic interactions or hydrogen bonds. It is therefore not possible to evaluate the proposed interfaces without the appropriate structure.\n\na) List of interactions in question: K145 and E434 are 9A away in the structure. H268 and R390 are 6A apart. S269 and E386 are 4.4A apart, which is too far for a hydrogen bond as suggested. There's only 2 electrostatic interactions that are at 3A or less (R148 and E433; E271 and H309), while the rest are in a 4.5-5A range.\n\nb) Additionally, the manuscript mentions that V270 is in contact with H309, E386, and E433, but in reality, only E386 is within contact range.\n\n2) Given that the resolution of cryo-EM map is not uniform, the paper should include a local resolution plot/map, particularly given the lower resolution of the VASH1-SVBP density, which is the most important part of the structure (~6A vs 3.1A for the microtubule). Along the same lines, the current FSC calculation description was confusing and seemed to suggest that only the tubulin heterodimer was used for the calculation rather than also including the VASH1-SVBP. Was this the case? Clarity of this description should be improved.\n\n3) \"To build the structure of the microtubule-VASH1-SVBP complex, we docked the crystal structure of VASH1-SVBP and the cryo-EM structure of \u03b1\u03b2-tubulin heterodimers of GMPCPP-stabilized microtubules into the EM density map as rigid bodies.\" PDB IDs for the X-ray structures and citations need to be provided.\n\n4) Given that the major thrust of the manuscript is to provide a structural explanation for the substrate specificity of VASH1-SVBP, the proposed role of interface 3 should be strengthened by performing detyrosination assays with \u03b1/\u03b2 tubulin dimers. Showing that the 3E mutant has no effect on detyrosination of tubulin dimers would be far more convincing than the lack of effect on the C-terminal tail peptide.\n\n5) The section on the interaction between the C-term tail and VASH1-SVBP seems rather speculative given the low resolution of the map there and the data presented in the paper. This would be easier to judge if the authors included a locally-filtered map. Unless more convincing data/figures can be presented, it is recommend to move this section to the Discussion section. New figures with a clearer view of what is \"unaccounted\" density would be quite helpful in making this section less speculative. As the data is presented at the moment the reviewers conclude that the \u03b1 tail is not really visible in the structure.\n\n6) Figure 3C was considered unconvincing. Although the authors state in the text that \"\u2026. at interface 2, including R390 and H393, are not properly positioned for VASH1 binding\", the differences in the figure seem small enough that minor adjustments of the side chain rotamers may restore those interactions. If the map is not good enough to see side chains in this region, the authors should limit themselves to showing a sphere at the position where the C \u03b1 is. The conclusion drawn here should be either toned down/removed or more compelling evidence to support it should be provided, for example by testing whether mutating H393 and R390 on \u03b1-tubulin affects detyrosination of MTs but not of the dimer. That would provide more solid support for the idea proposed in Figure 3C.\n\n7) Quantification: Functional assays (Figure 4) need to be quantified. Data shown in Figure 1C and Figure 4\u2014figure supplement 1 should have statistical analysis.\n\n8) The tubulin purification protocol that the authors employed (Ti et al., 2016) describes tubulin purification with an affinity tag on only \u03b2-tubulin. Using this procedure, results in a mixture of human and insect \u03b1-tubulin \u2013 can the authors clarify here how pure their tubulin is (the SDS gel will not resolve this). They might want to discuss whether tubulin heterogeneity might have contributed to the lower resolution of the enzyme and the difficulties to resolve the \u03b1-tubulin tail.\n\n9) The microtubule reconstruction procedure should be described in more detail in the Materials and methods section.\n\n10) Scholarship: The authors should please make sure that they cite the relevant literature correctly. Some guidance:\n\na) The authors state \"The conformation of free \u03b1\u03b2-tubulin heterodimers is different from that of \u03b1\u03b2-tubulin in microtubules, with the latter being more compact and straight (Brouhard and Rice, 2018). There are also subtle differences between the conformations of \u03b1-tubulin in free \u03b1\u03b2-tubulin heterodimers and microtubules.\" The authors should cite original studies on the topic (including work of one of the authors).\n\nb) The authors state \"We superimposed the N-terminal domain (residues 1-140) of \u03b1-tubulin in the free \u03b1\u03b2-tubulin heterodimer onto the EM structure of the microtubule-VASH1-SVBP complex\". It appears appropriate to cite Weinert et al., 2017 here, as the authors used their X-ray structure for comparison.\n\nc) \"\u2026co-transfected theseVASH1 mutants with SVBP into HeLa cells (which had low endogenous levels of tubulin detyrosination)\". A citation showing low levels of detyrosination in this cell line should be provided.\n\nd) Figure 3C legend \"Superimposition of the structure of \u03b1-tubulin from free \u03b1\u03b2 tubulin heterodimers (PDB:5nqu)\" also lacks the citation.\n\ne) The authors tend to cite only very recent literature. Key original papers should also be cited. Some of the citations are placed inappropriately. For example, in the Introduction paragraph two when citing the discovery of detyrosination, the appropriate reference is Hallak et al., 1977 only. The same applies for the discovery of TTL. When discussing MAPs that respond to the detyrosination/tyrosination, original studies should be cited and not only reviews (one of the reviews cited hardly even covers this). In paragraph four when discussing what TTL recognizes, does the Alushin et al. study really belong here? Also, the authors should cite the original Frealign paper in their Materials and methods.\n",
+      "created_at": "2025-12-02T19:06:43.645572Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T19:06:43.645572Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T19:06:43.645572Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "405b93b2-c922-4fcf-8557-a0d836a4200d",
+      "content_id": "3dd7344d-2cfb-4748-a20e-5281f5a2bb9f",
+      "claim_id": "C1",
+      "claim": "The dynamic tyrosination-detyrosination cycle of \u03b1-tubulin regulates microtubule functions.",
+      "claim_type": "EXPLICIT",
+      "source": "The dynamic tyrosination-detyrosination cycle of \u03b1-tubulin regulates microtubule functions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement in the abstract that is supported by established scientific knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:06:43.645572Z"
+    },
+    {
+      "id": "b1fcdef6-284b-4288-bcca-49a85f5b0a3f",
+      "content_id": "3dd7344d-2cfb-4748-a20e-5281f5a2bb9f",
+      "claim_id": "C2",
+      "claim": "Perturbation of the tyrosination-detyrosination cycle impairs mitosis, neural physiology, and cardiomyocyte contraction.",
+      "claim_type": "EXPLICIT",
+      "source": "Perturbation of this cycle impairs mitosis, neural physiology, and cardiomyocyte contraction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by established scientific knowledge and likely citations in the field.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:06:43.645572Z"
+    },
+    {
+      "id": "04600f03-4650-4a83-af65-e74a7a0ac94b",
+      "content_id": "3dd7344d-2cfb-4748-a20e-5281f5a2bb9f",
+      "claim_id": "C3",
+      "claim": "The carboxypeptidases vasohibins 1 and 2 (VASH1 and VASH2), in complex with the small vasohibin-binding protein (SVBP), mediate \u03b1-tubulin detyrosination.",
+      "claim_type": "EXPLICIT",
+      "source": "The carboxypeptidases vasohibins 1 and 2 (VASH1 and VASH2), in complex with the small vasohibin-binding protein (SVBP), mediate \u03b1-tubulin detyrosination.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to prior work as indicated in the Introduction section.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:06:43.645572Z"
+    },
+    {
+      "id": "fe822630-95fe-47e8-b555-67b3cb8d46c1",
+      "content_id": "3dd7344d-2cfb-4748-a20e-5281f5a2bb9f",
+      "claim_id": "C4",
+      "claim": "VASH1/2-SVBP detyrosinate microtubules more efficiently than soluble \u03b1\u03b2-tubulin heterodimers.",
+      "claim_type": "EXPLICIT",
+      "source": "These enzymes detyrosinate microtubules more efficiently than soluble \u03b1\u03b2-tubulin heterodimers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1 and cited literature.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:06:43.645572Z"
+    },
+    {
+      "id": "bb904e93-cf32-41e7-8a1f-eaab0fdcdcf3",
+      "content_id": "3dd7344d-2cfb-4748-a20e-5281f5a2bb9f",
+      "claim_id": "C5",
+      "claim": "The structural basis for the substrate preference of VASH1/2-SVBP towards microtubules over free tubulin heterodimers is not understood.",
+      "claim_type": "EXPLICIT",
+      "source": "The structural basis for this substrate preference is not understood.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement of the knowledge gap that motivates the study.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:06:43.645572Z"
+    },
+    {
+      "id": "8f7d521c-453d-4874-9590-5c347b6324a9",
+      "content_id": "3dd7344d-2cfb-4748-a20e-5281f5a2bb9f",
+      "claim_id": "C6",
+      "claim": "The structure of human VASH1-SVBP bound to microtubules was determined using cryo-electron microscopy (cryo-EM).",
+      "claim_type": "EXPLICIT",
+      "source": "Using cryo-electron microscopy (cryo-EM), we have determined the structure of human VASH1-SVBP bound to microtubules.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is directly supported by the experimental data and methods described in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:06:43.645572Z"
+    },
+    {
+      "id": "cf5523da-4cfd-40a2-9616-7cc1898e762a",
+      "content_id": "3dd7344d-2cfb-4748-a20e-5281f5a2bb9f",
+      "claim_id": "C7",
+      "claim": "The acidic C-terminal tail of \u03b1-tubulin binds to a positively charged groove near the active site of VASH1.",
+      "claim_type": "EXPLICIT",
+      "source": "The acidic C-terminal tail of \u03b1-tubulin binds to a positively charged groove near the active site of VASH1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the cryo-EM structure and density map shown in Figure 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:06:43.645572Z"
+    },
+    {
+      "id": "975ac5bb-a190-44cc-b133-7035b6ea404b",
+      "content_id": "3dd7344d-2cfb-4748-a20e-5281f5a2bb9f",
+      "claim_id": "C8",
+      "claim": "VASH1 forms multiple additional contacts with the globular domain of \u03b1-tubulin.",
+      "claim_type": "EXPLICIT",
+      "source": "VASH1 forms multiple additional contacts with the globular domain of \u03b1-tubulin, including contacts with a second \u03b1-tubulin in an adjacent protofilament.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the structural data shown in Figures 2 and 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:06:43.645572Z"
+    },
+    {
+      "id": "2322ac26-eaa0-48b7-b080-0061c53ccbf8",
+      "content_id": "3dd7344d-2cfb-4748-a20e-5281f5a2bb9f",
+      "claim_id": "C9",
+      "claim": "VASH1 contacts a second \u03b1-tubulin in an adjacent protofilament.",
+      "claim_type": "EXPLICIT",
+      "source": "VASH1 forms multiple additional contacts with the globular domain of \u03b1-tubulin, including contacts with a second \u03b1-tubulin in an adjacent protofilament.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the structural data shown in Figures 1E, 2C, and 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:06:43.645572Z"
+    },
+    {
+      "id": "a10c6dbe-dfed-404c-8c1a-b0733ca00fa9",
+      "content_id": "3dd7344d-2cfb-4748-a20e-5281f5a2bb9f",
+      "claim_id": "C10",
+      "claim": "Simultaneous engagement of two protofilaments by VASH1 can only occur within the microtubule lattice, but not with free \u03b1\u03b2 heterodimers.",
+      "claim_type": "EXPLICIT",
+      "source": "Simultaneous engagement of two protofilaments by VASH1 can only occur within the microtubule lattice, but not with free \u03b1\u03b2 heterodimers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the structural data and the geometry of microtubule lattice versus free heterodimers.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:06:43.645572Z"
+    },
+    {
+      "id": "898499e9-c8d7-40d7-ae01-c37cfc753e62",
+      "content_id": "3dd7344d-2cfb-4748-a20e-5281f5a2bb9f",
+      "claim_id": "C11",
+      "claim": "Lattice-specific interactions enable preferential detyrosination of microtubules by VASH1.",
+      "claim_type": "EXPLICIT",
+      "source": "These lattice-specific interactions enable preferential detyrosination of microtubules by VASH1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the structural data and mutagenesis experiments shown in Figure 4.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:06:43.645572Z"
+    },
+    {
+      "id": "7acb6db2-aff9-476a-a4e2-cdbd2c5bc082",
+      "content_id": "3dd7344d-2cfb-4748-a20e-5281f5a2bb9f",
+      "claim_id": "C12",
+      "claim": "Microtubules are dynamic cytoskeletal polymers that play pivotal roles in maintaining cell shape and polarity, facilitating cargo transport, and guiding chromosome segregation.",
+      "claim_type": "EXPLICIT",
+      "source": "Microtubules are dynamic cytoskeletal polymers that play pivotal roles in a wide variety of cellular processes in eukaryotes, including maintaining cell shape and polarity, facilitating cargo transport, and guiding chromosome segregation (Dogterom and Koenderink, 2019; Janke and Magiera, 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to established literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:06:43.645572Z"
+    },
+    {
+      "id": "d9f6627c-9f9f-479b-a760-92fef1fc5e54",
+      "content_id": "3dd7344d-2cfb-4748-a20e-5281f5a2bb9f",
+      "claim_id": "C13",
+      "claim": "Microtubules are built from \u03b1\u03b2-tubulin heterodimers that stack head-to-tail to form protofilaments, which interact laterally to form hollow tubules.",
+      "claim_type": "EXPLICIT",
+      "source": "Microtubules are built from \u03b1\u03b2-tubulin heterodimers that stack head-to-tail to form protofilaments, which interact laterally to form hollow tubules (Brouhard and Rice, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to established literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:06:43.645572Z"
+    },
+    {
+      "id": "e7ed669d-8daa-43d2-a8d9-67d510897ca1",
+      "content_id": "3dd7344d-2cfb-4748-a20e-5281f5a2bb9f",
+      "claim_id": "C14",
+      "claim": "The human genome encodes multiple \u03b1- and \u03b2-tubulin isotypes.",
+      "claim_type": "EXPLICIT",
+      "source": "The human genome encodes multiple \u03b1- and \u03b2-tubulin isotypes (Gadadhar et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to established literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:06:43.645572Z"
+    },
+    {
+      "id": "76919d9f-922a-4bf5-a371-d60af0dc5955",
+      "content_id": "3dd7344d-2cfb-4748-a20e-5281f5a2bb9f",
+      "claim_id": "C15",
+      "claim": "Post-translational modifications (PTMs) on various \u03b1\u03b2-tubulin heterodimers, such as acetylation, palmitoylation, polyglycylation, polyglutamylation, and tyrosination-detyrosination, further diversify the functional properties of microtubules.",
+      "claim_type": "EXPLICIT",
+      "source": "Post-translational modifications (PTMs) on various \u03b1\u03b2-tubulin heterodimers, such as acetylation, palmitoylation, polyglycylation, polyglutamylation, and tyrosination-detyrosination, further diversify the functional properties of microtubules (Janke and Magiera, 2020; Magiera et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to established literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:06:43.645572Z"
+    },
+    {
+      "id": "b0e22408-7bd8-4bb8-a642-e3f8db5ad70d",
+      "content_id": "3dd7344d-2cfb-4748-a20e-5281f5a2bb9f",
+      "claim_id": "C16",
+      "claim": "The \u03b1- and \u03b2-tubulin isotypes combined with myriad PTMs constitute a 'tubulin code', which tunes the dynamics and partner binding of microtubules for diverse cellular functions.",
+      "claim_type": "EXPLICIT",
+      "source": "The \u03b1- and \u03b2-tubulin isotypes combined with myriad PTMs constitute a 'tubulin code', which tunes the dynamics and partner binding of microtubules for diverse cellular functions (Janke and Magiera, 2020; Magiera et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to established literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:06:43.645572Z"
+    },
+    {
+      "id": "437386e0-1b22-4f7c-b447-e4f25800cd3e",
+      "content_id": "3dd7344d-2cfb-4748-a20e-5281f5a2bb9f",
+      "claim_id": "C17",
+      "claim": "Detyrosination is one of the first identified PTMs of tubulin.",
+      "claim_type": "EXPLICIT",
+      "source": "Detyrosination is one of the first identified PTMs of tubulin (Hallak et al., 1977).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to historical literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:06:43.645572Z"
+    },
+    {
+      "id": "26f3996e-a175-47a4-8478-e43ced0442de",
+      "content_id": "3dd7344d-2cfb-4748-a20e-5281f5a2bb9f",
+      "claim_id": "C18",
+      "claim": "The newly translated proteins of all \u03b1-tubulin isoforms except TUBA4A contain a tyrosine or phenylalanine at the very C-terminus.",
+      "claim_type": "EXPLICIT",
+      "source": "The newly translated proteins of all \u03b1-tubulin isoforms except TUBA4A contain a tyrosine or phenylalanine at the very C-terminus, which can be cleaved by the recently identified carboxypeptidases, vasohibins 1 and 2 in complex with SVBP (VASH1/2-SVBP) (Aillaud et al., 2017; Nieuwenhuis et al., 2017; Nieuwenhuis and Brummelkamp, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to established literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:06:43.645572Z"
+    },
+    {
+      "id": "6ac79a0a-081b-4cad-a8e3-761c8be9b5e2",
+      "content_id": "3dd7344d-2cfb-4748-a20e-5281f5a2bb9f",
+      "claim_id": "C19",
+      "claim": "The tubulin tyrosine ligase (TTL) can re-ligate a tyrosine to the detyrosinated \u03b1-tubulin.",
+      "claim_type": "EXPLICIT",
+      "source": "The tubulin tyrosine ligase (TTL) can re-ligate a tyrosine to the detyrosinated \u03b1-tubulin (Ersfeld et al., 1993).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to established literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:06:43.645572Z"
+    },
+    {
+      "id": "18cc67ac-4318-44ad-8b82-7c253a49c3e6",
+      "content_id": "3dd7344d-2cfb-4748-a20e-5281f5a2bb9f",
+      "claim_id": "C20",
+      "claim": "Detyrosination of \u03b1-tubulin regulates the functions of microtubules by altering interactions with microtubule-associated proteins (MAPs) and motors.",
+      "claim_type": "EXPLICIT",
+      "source": "Detyrosination of \u03b1-tubulin regulates the functions of microtubules by altering interactions with microtubule-associated proteins (MAPs) and motors (Badin-Lar\u00e7on et al., 2004; Barisic et al., 2015; McKenney et al., 2016; Peris et al., 2006; Peris et al., 2009; Sirajuddin et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to established literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:06:43.645572Z"
+    },
+    {
+      "id": "0fedd1ab-814c-4571-9a58-450488be637b",
+      "content_id": "3dd7344d-2cfb-4748-a20e-5281f5a2bb9f",
+      "claim_id": "C21",
+      "claim": "Proteins containing the cytoskeleton-associated protein glycine-rich (CAP-Gly) domain, including CLIP-170 and p150Glued, bind more efficiently to tyrosinated microtubules.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, proteins containing the cytoskeleton-associated protein glycine-rich (CAP-Gly) domain, including CLIP-170 and p150Glued, bind more efficiently to tyrosinated microtubules (Badin-Lar\u00e7on et al., 2004; Peris et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to established literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:06:43.645572Z"
+    },
+    {
+      "id": "fdb45a17-e787-49e3-8723-d2a7936bbd8a",
+      "content_id": "3dd7344d-2cfb-4748-a20e-5281f5a2bb9f",
+      "claim_id": "C22",
+      "claim": "Detyrosination of \u03b1-tubulin inhibits microtubule disassembly by suppressing the activity of depolymerizing motors, including mitotic centromere associated kinesin (MCAK) and KIF2A.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, detyrosination of \u03b1-tubulin inhibits microtubule disassembly by suppressing the activity of depolymerizing motors, including mitotic centromere associated kinesin (MCAK) and KIF2A (Peris et al., 2009; Webster et al., 1987).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to established literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:06:43.645572Z"
+    },
+    {
+      "id": "968fd7cf-fd9d-4d3e-b959-4fe4174aa5b5",
+      "content_id": "3dd7344d-2cfb-4748-a20e-5281f5a2bb9f",
+      "claim_id": "C23",
+      "claim": "The plus-end-directed kinetochore motor CENP-E prefers to bind to detyrosinated spindle microtubules, and this preference helps to guide the congression of pole-proximal chromosomes toward the equator during mitosis.",
+      "claim_type": "EXPLICIT",
+      "source": "The plus-end-directed kinetochore motor CENP-E prefers to bind to detyrosinated spindle microtubules, and this preference helps to guide the congression of pole-proximal chromosomes toward the equator during mitosis (Barisic et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to established literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:06:43.645572Z"
+    },
+    {
+      "id": "660d79d6-a919-4e85-8b7d-41f18f1c0108",
+      "content_id": "3dd7344d-2cfb-4748-a20e-5281f5a2bb9f",
+      "claim_id": "C24",
+      "claim": "Proper levels of detyrosinated microtubules in cardiomyocytes provide the necessary mechanical resistance and stiffness for functional contractility.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, proper levels of detyrosinated microtubules in cardiomyocytes provide the necessary mechanical resistance and stiffness for functional contractility (Chen et al., 2018; Robison et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to established literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:06:43.645572Z"
+    },
+    {
+      "id": "fd1e0244-355a-4230-8ccd-d49c7698e71f",
+      "content_id": "3dd7344d-2cfb-4748-a20e-5281f5a2bb9f",
+      "claim_id": "C25",
+      "claim": "Abnormally high levels of detyrosinated microtubules impair the contractility of cardiomyocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "Abnormally high levels of detyrosinated microtubules impair the contractility of cardiomyocytes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by established knowledge and citations in the field.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:06:43.645572Z"
+    },
+    {
+      "id": "61845bd2-8314-4ac1-aeab-bbd089064d55",
+      "content_id": "3dd7344d-2cfb-4748-a20e-5281f5a2bb9f",
+      "claim_id": "C26",
+      "claim": "Dysregulation of the detyrosination-tyrosination cycle can contribute to cancer and neurodegenerative disorders.",
+      "claim_type": "EXPLICIT",
+      "source": "Dysregulation of the detyrosination-tyrosination cycle can also contribute to cancer and neurodegenerative disorders (Magiera et al., 2018; Mialhe et al., 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to established literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:06:43.645572Z"
+    },
+    {
+      "id": "00096abc-bdbf-42a2-9e9d-dc756aa38198",
+      "content_id": "3dd7344d-2cfb-4748-a20e-5281f5a2bb9f",
+      "claim_id": "C27",
+      "claim": "Loss-of-function mutations of SVBP in humans have been associated with brain abnormalities, including microcephaly, ataxia, and intellectual disability.",
+      "claim_type": "EXPLICIT",
+      "source": "Loss-of-function mutations of SVBP in humans have been associated with brain abnormalities, including microcephaly, ataxia, and intellectual disability (Iqbal et al., 2019; Pagnamenta et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to clinical literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:06:43.645572Z"
+    },
+    {
+      "id": "4770eee5-f18e-4e5f-9510-53a5502559d2",
+      "content_id": "3dd7344d-2cfb-4748-a20e-5281f5a2bb9f",
+      "claim_id": "C28",
+      "claim": "Tubulin-modifying enzymes often exhibit substrate specificity for free \u03b1\u03b2-tubulin heterodimers or polymerized microtubules.",
+      "claim_type": "EXPLICIT",
+      "source": "Tubulin-modifying enzymes often exhibit substrate specificity for free \u03b1\u03b2-tubulin heterodimers or polymerized microtubules (Janke and Magiera, 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to established literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:06:43.645572Z"
+    },
+    {
+      "id": "52cc5479-0cac-4435-99de-67a73e6165b1",
+      "content_id": "3dd7344d-2cfb-4748-a20e-5281f5a2bb9f",
+      "claim_id": "C29",
+      "claim": "TTL exclusively modifies free \u03b1\u03b2-tubulin heterodimers, as its interaction surface on \u03b1\u03b2-tubulin is partially blocked in polymerized microtubules.",
+      "claim_type": "EXPLICIT",
+      "source": "TTL exclusively modifies free \u03b1\u03b2-tubulin heterodimers, as its interaction surface on \u03b1\u03b2-tubulin is partially blocked in polymerized microtubules (Prota et al., 2013; Szyk et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to structural studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:06:43.645572Z"
+    },
+    {
+      "id": "7ac92595-55e3-414f-bca5-4f4cad1195ee",
+      "content_id": "3dd7344d-2cfb-4748-a20e-5281f5a2bb9f",
+      "claim_id": "C30",
+      "claim": "VASH1/2-SVBP preferably detyrosinate polymerized microtubules.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, VASH1/2-SVBP preferably detyrosinate polymerized microtubules (Li et al., 2019; Nieuwenhuis et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior work and experimental data in Figure 1.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:06:43.645572Z"
+    },
+    {
+      "id": "2c07c6d5-129a-436c-92bc-1679e3e5b23c",
+      "content_id": "3dd7344d-2cfb-4748-a20e-5281f5a2bb9f",
+      "claim_id": "C31",
+      "claim": "The crystal structures of VASH1/2-SVBP have revealed how these enzymes recognize the C-terminal tyrosine.",
+      "claim_type": "EXPLICIT",
+      "source": "The crystal structures of VASH1/2-SVBP have revealed how these enzymes recognize the C-terminal tyrosine (Adamopoulos et al., 2019; Li et al., 2019; Liao et al., 2019; Wang et al., 2019; Zhou et al., 2019), but the structural basis for their substrate specificity towards microtubules is not understood.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior structural studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:06:43.645572Z"
+    },
+    {
+      "id": "8dfa013c-e9f4-4843-af85-0eabe62e7c06",
+      "content_id": "3dd7344d-2cfb-4748-a20e-5281f5a2bb9f",
+      "claim_id": "C32",
+      "claim": "The detyrosination levels of \u03b1-tubulin were greatly decreased by nocodazole but enhanced by Taxol in HeLa cells transfected with VASH1 and SVBP.",
+      "claim_type": "EXPLICIT",
+      "source": "The detyrosination levels of \u03b1-tubulin were greatly decreased by nocodazole but enhanced by Taxol (Figure 1A\u2013C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly supported by the experimental data shown in Figure 1A-C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:06:43.645572Z"
+    },
+    {
+      "id": "cc256c2c-0a56-4cdb-806e-2c7aa28b793f",
+      "content_id": "3dd7344d-2cfb-4748-a20e-5281f5a2bb9f",
+      "claim_id": "C33",
+      "claim": "The catalytically inactive C169S mutant of the protease domain of VASH1 (residues 52\u2013310) in complex with SVBP interacted with GMPCPP-stabilized human microtubules.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on in vitro microtubule pelleting assays, the catalytically inactive C169S mutant of the protease domain of VASH1 (residues 52\u2013310) in complex with SVBP interacted with GMPCPP-stabilized human microtubules that were polymerized from recombinant human \u03b1\u03b2-tubulin heterodimers (Figure 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly supported by the experimental data shown in Figure 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:06:43.645572Z"
+    },
+    {
+      "id": "3831d2e3-b963-412c-a5ae-7282939f7ad8",
+      "content_id": "3dd7344d-2cfb-4748-a20e-5281f5a2bb9f",
+      "claim_id": "C34",
+      "claim": "The structure of 14-PF microtubules decorated with VASH1-SVBP was determined to overall resolutions of 3.1 \u00c5 and 3.8 \u00c5 for microtubules and VASH1-SVBP, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "After seam search and 3D refinement, we determined the structure of 14-PF microtubules decorated with VASH1-SVBP to overall resolutions of 3.1 \u00c5 and 3.8 \u00c5 for microtubules and VASH1-SVBP, respectively (Figure 1\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly supported by the cryo-EM data processing and resolution determination.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:06:43.645572Z"
+    },
+    {
+      "id": "8d7570cf-e1cb-406e-a975-89ef87218af8",
+      "content_id": "3dd7344d-2cfb-4748-a20e-5281f5a2bb9f",
+      "claim_id": "C35",
+      "claim": "VASH1-SVBP decorates the surface of 14-PF microtubules.",
+      "claim_type": "EXPLICIT",
+      "source": "The EM map shows that VASH1-SVBP decorates the surface of 14-PF microtubules (Figure 1E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly supported by the cryo-EM map shown in Figure 1E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:06:43.645572Z"
+    },
+    {
+      "id": "57ee52bf-2abd-4c77-bf9c-2743f2abdd60",
+      "content_id": "3dd7344d-2cfb-4748-a20e-5281f5a2bb9f",
+      "claim_id": "C36",
+      "claim": "At the seam of microtubules, \u03b1-tubulin in one protofilament packs against \u03b2-tubulin in the protofilament across the seam.",
+      "claim_type": "EXPLICIT",
+      "source": "At the seam, \u03b1-tubulin in one protofilament packs against \u03b2-tubulin in the protofilament across the seam.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the structural data and is consistent with known microtubule architecture.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:06:43.645572Z"
+    },
+    {
+      "id": "b392133a-6ba8-43ba-ad0f-73e0e37b0ed7",
+      "content_id": "3dd7344d-2cfb-4748-a20e-5281f5a2bb9f",
+      "claim_id": "C37",
+      "claim": "The \u03b1-tubulin and \u03b2-tubulin molecules can be assigned based on the length of the S9-S10 loop: this loop in \u03b1-tubulin is much longer than that in \u03b2-tubulin.",
+      "claim_type": "EXPLICIT",
+      "source": "The \u03b1-tubulin and \u03b2-tubulin molecules can be assigned based on the length of the S9-S10 loop: this loop in \u03b1-tubulin is much longer than that in \u03b2-tubulin (Figure 1F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the structural data shown in Figure 1F and established structural knowledge.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:06:43.645572Z"
+    },
+    {
+      "id": "62d6ee19-5b2b-4f82-9096-ddd145468301",
+      "content_id": "3dd7344d-2cfb-4748-a20e-5281f5a2bb9f",
+      "claim_id": "C38",
+      "claim": "VASH1 simultaneously contacts two \u03b1-tubulin molecules in adjacent protofilaments.",
+      "claim_type": "EXPLICIT",
+      "source": "VASH1 simultaneously contacts two \u03b1-tubulin molecules in adjacent protofilaments (Figure 1E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly supported by the cryo-EM structure shown in Figure 1E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:06:43.645572Z"
+    },
+    {
+      "id": "d4de4644-e8d3-4ce7-882d-bd4095f1eda7",
+      "content_id": "3dd7344d-2cfb-4748-a20e-5281f5a2bb9f",
+      "claim_id": "C39",
+      "claim": "VASH1 has no contact with \u03b2-tubulin.",
+      "claim_type": "EXPLICIT",
+      "source": "It has no contact with \u03b2-tubulin.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the structural data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:06:43.645572Z"
+    },
+    {
+      "id": "0c25377c-6c28-48d4-a455-252d4c6542ab",
+      "content_id": "3dd7344d-2cfb-4748-a20e-5281f5a2bb9f",
+      "claim_id": "C40",
+      "claim": "SVBP does not appear to contribute directly to substrate recognition, because it has no contact with microtubules.",
+      "claim_type": "EXPLICIT",
+      "source": "SVBP does not appear to contribute directly to substrate recognition, because it has no contact with microtubules.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the structural data showing no contacts between SVBP and microtubules.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:06:43.645572Z"
+    },
+    {
+      "id": "7ae0f2dd-d9ec-4794-8335-121894c440af",
+      "content_id": "3dd7344d-2cfb-4748-a20e-5281f5a2bb9f",
+      "claim_id": "C41",
+      "claim": "Compared with crystal structures of VASH1-SVBP alone or bound to inhibitors, there are no obvious conformational changes of VASH1-SVBP upon binding to microtubules.",
+      "claim_type": "EXPLICIT",
+      "source": "Compared with crystal structures of VASH1-SVBP alone or bound to inhibitors, there are no obvious conformational changes of VASH1-SVBP upon binding to microtubules (Figure 2\u2014figure supplement 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by structural comparison shown in Figure 2\u2014figure supplement 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:06:43.645572Z"
+    },
+    {
+      "id": "9ba940a4-823c-427b-9935-0581ae08edc2",
+      "content_id": "3dd7344d-2cfb-4748-a20e-5281f5a2bb9f",
+      "claim_id": "C42",
+      "claim": "The 7 \u00c5 lowpass-filtered EM map shows an unaccounted, continuous density connecting the last modeled C-terminal residue of \u03b1-tubulin to the active site of VASH1 through the positively charged groove.",
+      "claim_type": "EXPLICIT",
+      "source": "Our 7 \u00c5 lowpass-filtered EM map shows an unaccounted, continuous density connecting the last modeled C-terminal residue of \u03b1-tubulin to the active site of VASH1 through the positively charged groove (Figure 2D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly supported by the EM map shown in Figure 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:06:43.645572Z"
+    },
+    {
+      "id": "c40037aa-b486-4af0-ae5d-07790dc81c50",
+      "content_id": "3dd7344d-2cfb-4748-a20e-5281f5a2bb9f",
+      "claim_id": "C43",
+      "claim": "The weak density connecting \u03b1-tubulin to VASH1 active site likely belongs to the C-terminal tail of \u03b1-tubulin (CT\u03b1).",
+      "claim_type": "EXPLICIT",
+      "source": "This weak density likely belongs to CT\u03b1, but the map quality of this region does not allow us to model the complete CT\u03b1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the EM density and the expected location of CT\u03b1.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:06:43.645572Z"
+    },
+    {
+      "id": "d7082661-bff7-46ce-9abd-dae4b3e6ae5a",
+      "content_id": "3dd7344d-2cfb-4748-a20e-5281f5a2bb9f",
+      "claim_id": "C44",
+      "claim": "The recombinant human tubulin produced using the insect cell system contains human and insect \u03b1-tubulin molecules in roughly 70:30 proportion.",
+      "claim_type": "EXPLICIT",
+      "source": "The recombinant human tubulin produced using the insect cell system contains human and insect \u03b1-tubulin molecules in roughly 70:30 proportion (Ye et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:06:43.645572Z"
+    },
+    {
+      "id": "7b5552ee-e305-4268-b804-d8153f4e6f50",
+      "content_id": "3dd7344d-2cfb-4748-a20e-5281f5a2bb9f",
+      "claim_id": "C45",
+      "claim": "The heterogeneity in \u03b1-tubulin sequences (human vs insect) may contribute to the difficulty in resolving the \u03b1-tubulin tail in the structure.",
+      "claim_type": "EXPLICIT",
+      "source": "Because the sequence of the C-terminal tail of the insect \u03b1-tubulin is different from that of human \u03b1-tubulin, it is possible that this heterogeneity contributes to the difficulty to resolve the \u03b1-tubulin tail.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculative reasoning based on the known heterogeneity and structural resolution.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:06:43.645572Z"
+    },
+    {
+      "id": "2afa0a02-db9c-4d74-9698-a8a82f193842",
+      "content_id": "3dd7344d-2cfb-4748-a20e-5281f5a2bb9f",
+      "claim_id": "C46",
+      "claim": "The structure captured in the study likely represents the catalysis-competent enzyme-substrate complex.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the structure captured in our study likely represents the catalysis-competent enzyme-substrate complex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the structural data showing CT\u03b1 pointing towards the active site.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:06:43.645572Z"
+    },
+    {
+      "id": "290d2c53-1c10-4944-a689-a070587e2f7a",
+      "content_id": "3dd7344d-2cfb-4748-a20e-5281f5a2bb9f",
+      "claim_id": "C47",
+      "claim": "The positively charged groove of VASH1/2 is the binding site of the C-terminal tail of \u03b1-tubulin.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results are consistent with the positively charged groove of VASH1/2 being the binding site of CT\u03b1, as we had originally proposed (Li et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the structural data and prior work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:06:43.645572Z"
+    },
+    {
+      "id": "6f4a214c-604f-47b4-ae3d-6f4a506f52ad",
+      "content_id": "3dd7344d-2cfb-4748-a20e-5281f5a2bb9f",
+      "claim_id": "C48",
+      "claim": "VASH1 contacts microtubules through three major interfaces.",
+      "claim_type": "EXPLICIT",
+      "source": "VASH1 contacts microtubules through three major interfaces (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly supported by the structural data shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:06:43.645572Z"
+    },
+    {
+      "id": "1dde1819-3e1c-4a12-bd7f-089c895b36e1",
+      "content_id": "3dd7344d-2cfb-4748-a20e-5281f5a2bb9f",
+      "claim_id": "C49",
+      "claim": "Interface 1 is between VASH1 and the globular domain of the \u03b1-tubulin molecule that VASH1 would be acting on.",
+      "claim_type": "EXPLICIT",
+      "source": "Interfaces 1 and 2 are between VASH1 and the globular domain of the \u03b1-tubulin molecule that VASH1 would be acting on.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the structural data shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:06:43.645572Z"
+    },
+    {
+      "id": "5c864adf-f18a-48a6-b719-edc9fa3e657b",
+      "content_id": "3dd7344d-2cfb-4748-a20e-5281f5a2bb9f",
+      "claim_id": "C50",
+      "claim": "Interface 2 is between VASH1 and the globular domain of the \u03b1-tubulin molecule that VASH1 would be acting on.",
+      "claim_type": "EXPLICIT",
+      "source": "Interfaces 1 and 2 are between VASH1 and the globular domain of the \u03b1-tubulin molecule that VASH1 would be acting on.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the structural data shown in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:06:43.645572Z"
+    },
+    {
+      "id": "8294dba4-c4f1-4816-9a32-41f30d29733a",
+      "content_id": "3dd7344d-2cfb-4748-a20e-5281f5a2bb9f",
+      "claim_id": "C51",
+      "claim": "Interface 3 is between VASH1 and a second \u03b1-tubulin molecule in an adjacent protofilament.",
+      "claim_type": "EXPLICIT",
+      "source": "Interface 3 is between VASH1 and a second \u03b1-tubulin molecule in an adjacent protofilament.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the structural data shown in Figure 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:06:43.645572Z"
+    },
+    {
+      "id": "2f21fd44-3690-4fec-bf9c-32e43a38a604",
+      "content_id": "3dd7344d-2cfb-4748-a20e-5281f5a2bb9f",
+      "claim_id": "C52",
+      "claim": "At interface 1, VASH1 residues on \u03b1D and the \u03b1C-\u03b1D loop form a hydrophilic interaction network with the C-terminal helix (\u03b112) of \u03b1-tubulin.",
+      "claim_type": "EXPLICIT",
+      "source": "At interface 1, VASH1 residues on \u03b1D and the \u03b1C-\u03b1D loop form a hydrophilic interaction network with the C-terminal helix (\u03b112) of \u03b1-tubulin (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly supported by the structural data shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:06:43.645572Z"
+    },
+    {
+      "id": "64658c64-abff-4ddc-8bea-243e4c2dd8ad",
+      "content_id": "3dd7344d-2cfb-4748-a20e-5281f5a2bb9f",
+      "claim_id": "C53",
+      "claim": "Interface 2 is primarily formed between the \u03b24-\u03b25 loop of VASH1 and \u03b111 of \u03b1-tubulin.",
+      "claim_type": "EXPLICIT",
+      "source": "Interface 2 is primarily formed between the \u03b24-\u03b25 loop of VASH1 and \u03b111 of \u03b1-tubulin (Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly supported by the structural data shown in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:06:43.645572Z"
+    },
+    {
+      "id": "1289fa95-c0d9-47cf-9487-13366baaed5d",
+      "content_id": "3dd7344d-2cfb-4748-a20e-5281f5a2bb9f",
+      "claim_id": "C54",
+      "claim": "The total surface area buried between VASH1 and microtubules is 878 \u00c52, 39.8% of which is contributed by interface 3.",
+      "claim_type": "EXPLICIT",
+      "source": "The total surface area buried between VASH1 and microtubules is 878 \u00c52, 39.8% of which is contributed by interface 3.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is calculated from the structural data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:06:43.645572Z"
+    },
+    {
+      "id": "099c012e-05c4-4826-b9da-019e8c1bc265",
+      "content_id": "3dd7344d-2cfb-4748-a20e-5281f5a2bb9f",
+      "claim_id": "C55",
+      "claim": "Interface 3 can only be established between VASH1 and microtubules, but cannot exist between VASH1 and free \u03b1\u03b2-tubulin heterodimers.",
+      "claim_type": "EXPLICIT",
+      "source": "Interface 3 can only be established between VASH1 and microtubules, but cannot exist between VASH1 and free \u03b1\u03b2-tubulin heterodimers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the structural data and the geometry of microtubule lattice.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:06:43.645572Z"
+    },
+    {
+      "id": "91a44903-4310-4884-8b21-216ac8b982a9",
+      "content_id": "3dd7344d-2cfb-4748-a20e-5281f5a2bb9f",
+      "claim_id": "C56",
+      "claim": "The inter-protofilament interactions by VASH1 underlie the substrate preference of VASH1-SVBP towards microtubules.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the inter-protofilament interactions by VASH1 underlie the substrate preference of VASH1-SVBP towards microtubules.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the structural data and supported by mutagenesis experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:06:43.645572Z"
+    },
+    {
+      "id": "e7aff997-922a-4e30-8a92-f1490aaa3e2e",
+      "content_id": "3dd7344d-2cfb-4748-a20e-5281f5a2bb9f",
+      "claim_id": "C57",
+      "claim": "VASH1 residues that lie at the three VASH1-microtubule interfaces are conserved among VASH1 and VASH2 proteins from different species.",
+      "claim_type": "EXPLICIT",
+      "source": "VASH1 residues that lie at the three VASH1-microtubule interfaces are conserved among VASH1 and VASH2 proteins from different species (Figure 3\u2014figure supplement 1A,B), suggesting that they might be functionally important.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by sequence alignment data shown in Figure 3\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:06:43.645572Z"
+    },
+    {
+      "id": "d3fedd68-0564-444e-a830-cc21b36ef655",
+      "content_id": "3dd7344d-2cfb-4748-a20e-5281f5a2bb9f",
+      "claim_id": "C58",
+      "claim": "The single mutation of VASH1 R148 at interface 1 (R148E) greatly decreased \u03b1-tubulin detyrosination.",
+      "claim_type": "EXPLICIT",
+      "source": "The single mutation of VASH1 R148 at interface 1 (R148E) greatly decreased \u03b1-tubulin detyrosination, and the K145E/R148E double mutation further attenuated the detyrosination activity of VASH1 (Figure 4A and Figure 4\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly supported by the experimental data shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:06:43.645572Z"
+    },
+    {
+      "id": "3b7ede82-ae7b-4b76-82ee-e19baafd6e40",
+      "content_id": "3dd7344d-2cfb-4748-a20e-5281f5a2bb9f",
+      "claim_id": "C59",
+      "claim": "The K145E/R148E double mutation further attenuated the detyrosination activity of VASH1 compared to R148E alone.",
+      "claim_type": "EXPLICIT",
+      "source": "The single mutation of VASH1 R148 at interface 1 (R148E) greatly decreased \u03b1-tubulin detyrosination, and the K145E/R148E double mutation further attenuated the detyrosination activity of VASH1 (Figure 4A and Figure 4\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly supported by the experimental data shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:06:43.645572Z"
+    },
+    {
+      "id": "8bf20eaf-f2bc-49b0-898f-05900d843a00",
+      "content_id": "3dd7344d-2cfb-4748-a20e-5281f5a2bb9f",
+      "claim_id": "C60",
+      "claim": "The VASH1 D155R mutant had higher detyrosination activity than wild-type.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, the VASH1 D155R mutant had higher detyrosination activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the experimental data shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:06:43.645572Z"
+    },
+    {
+      "id": "1dcf8a96-cc6d-45b0-8d90-5c8da512eaca",
+      "content_id": "3dd7344d-2cfb-4748-a20e-5281f5a2bb9f",
+      "claim_id": "C61",
+      "claim": "D155 might develop unfavorable electrostatic interactions with E429 of \u03b1-tubulin.",
+      "claim_type": "EXPLICIT",
+      "source": "D155 might develop unfavorable electrostatic interactions with E429 of \u03b1-tubulin (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is speculative reasoning based on the structural data.",
+      "evidence_type": "[\"SPECULATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:06:43.645572Z"
+    },
+    {
+      "id": "fa627de1-f5e7-4644-8141-48f31264eb31",
+      "content_id": "3dd7344d-2cfb-4748-a20e-5281f5a2bb9f",
+      "claim_id": "C62",
+      "claim": "Mutation of D155 to arginine might have alleviated the electrostatic clash with E429, enhancing detyrosination.",
+      "claim_type": "EXPLICIT",
+      "source": "Mutation of D155 to a positively charged residue, such as arginine, might have alleviated this clash, enhancing detyrosination.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculative reasoning to explain the experimental observation.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:06:43.645572Z"
+    },
+    {
+      "id": "c4af7ab1-880b-4647-ad49-58d58fb16627",
+      "content_id": "3dd7344d-2cfb-4748-a20e-5281f5a2bb9f",
+      "claim_id": "C63",
+      "claim": "VASH1 H268E/V270E and R234E/R299E/L303E (3E) mutations that targeted residues at interfaces 2 and 3, respectively, reduced the detyrosination activity of VASH1.",
+      "claim_type": "EXPLICIT",
+      "source": "The VASH1 H268E/V270E and R234E/R299E/L303E (3E) mutations that targeted residues at interfaces 2 and 3, respectively, also reduced the detyrosination activity of VASH1 (Figure 4A and Figure 4\u2014figure supplement 1A), consistent with the functional relevance of these interfaces as predicted from the structure.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly supported by the experimental data shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:06:43.645572Z"
+    },
+    {
+      "id": "5a6a9b9d-5ab4-4845-9c62-b8261f288f23",
+      "content_id": "3dd7344d-2cfb-4748-a20e-5281f5a2bb9f",
+      "claim_id": "C64",
+      "claim": "In cells treated with nocodazole, wherein microtubules are depolymerized, VASH1 WT and 3E had similar detyrosination activities.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with this prediction, in cells treated with nocodazole, wherein microtubules are depolymerized, VASH1 WT and 3E had similar detyrosination activities, whereas mutations that targeted interfaces 1 and 2 still attenuated the detyrosination of free \u03b1\u03b2-tubulin as predicted (Figure 4B and Figure 4\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly supported by the experimental data shown in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:06:43.645572Z"
+    },
+    {
+      "id": "69aafe7b-5e4b-4140-8da4-cbd7a2cc9ef2",
+      "content_id": "3dd7344d-2cfb-4748-a20e-5281f5a2bb9f",
+      "claim_id": "C65",
+      "claim": "Mutations targeting interfaces 1 and 2 attenuated the detyrosination of free \u03b1\u03b2-tubulin in nocodazole-treated cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with this prediction, in cells treated with nocodazole, wherein microtubules are depolymerized, VASH1 WT and 3E had similar detyrosination activities, whereas mutations that targeted interfaces 1 and 2 still attenuated the detyrosination of free \u03b1\u03b2-tubulin as predicted (Figure 4B and Figure 4\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly supported by the experimental data shown in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:06:43.645572Z"
+    },
+    {
+      "id": "6374231b-e551-4326-b248-0927309980be",
+      "content_id": "3dd7344d-2cfb-4748-a20e-5281f5a2bb9f",
+      "claim_id": "C66",
+      "claim": "Mutations targeting interfaces 1\u20133 affected the detyrosination activity of VASH1 towards microtubules to varying degrees in vitro.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with results in HeLa cells, mutations targeting interfaces 1\u20133 affected the detyrosination activity of VASH1 towards microtubules to varying degrees in vitro (Figure 4C and Figure 4\u2014figure supplement 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly supported by the experimental data shown in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:06:43.645572Z"
+    },
+    {
+      "id": "f0a5b9c1-e1ff-4cad-9da3-ea62f597fe6a",
+      "content_id": "3dd7344d-2cfb-4748-a20e-5281f5a2bb9f",
+      "claim_id": "C67",
+      "claim": "Mutations targeting interfaces 1-3 had little effect on the detyrosination activity of VASH1 towards GST-CT\u03b1.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, these mutations had little effect on the detyrosination activity of VASH1 towards GST-CT\u03b1 (Figure 4D and Figure 4\u2014figure supplement 1D), ruling out the possibility that these mutations unintentionally affected the folding and structural integrity of VASH1.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly supported by the experimental data shown in Figure 4D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:06:43.645572Z"
+    },
+    {
+      "id": "e8ff920f-45bf-4963-a7ba-e982330dcfef",
+      "content_id": "3dd7344d-2cfb-4748-a20e-5281f5a2bb9f",
+      "claim_id": "C68",
+      "claim": "The VASH1 3E mutation that targets interface 3 had no effect on the detyrosination of free \u03b1\u03b2-tubulin heterodimers in vitro.",
+      "claim_type": "EXPLICIT",
+      "source": "The VASH1 3E mutation that targets interface 3 had no effect on the detyrosination of free \u03b1\u03b2-tubulin heterodimers in vitro (Figure 4E and Figure 4\u2014figure supplement 1E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly supported by the experimental data shown in Figure 4E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:06:43.645572Z"
+    },
+    {
+      "id": "279b1f41-8600-4a0d-aac1-9515b9a495ee",
+      "content_id": "3dd7344d-2cfb-4748-a20e-5281f5a2bb9f",
+      "claim_id": "C69",
+      "claim": "The VASH1 mutants K145E/R148E, H268E/V270E, and 3E all had decreased binding to microtubules.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, microtubule pelleting assays confirmed that the VASH1 mutants, K145E/R148E, H268E/V270E, and 3E, all had decreased binding to microtubules (Figure 4F and Figure 4\u2014figure supplement 1F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly supported by the experimental data shown in Figure 4F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:06:43.645572Z"
+    },
+    {
+      "id": "f5f29cf2-9928-4525-b3e6-0fd0be8ad416",
+      "content_id": "3dd7344d-2cfb-4748-a20e-5281f5a2bb9f",
+      "claim_id": "C70",
+      "claim": "The three VASH1-microtubule interfaces are functionally important for microtubule binding and detyrosination.",
+      "claim_type": "EXPLICIT",
+      "source": "Collectively, these results establish the functional importance of the three VASH1-microtubule interfaces in microtubule binding and detyrosination.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the mutagenesis and biochemical data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:06:43.645572Z"
+    },
+    {
+      "id": "f1b130eb-b6d5-4920-a43c-dbfca263b78d",
+      "content_id": "3dd7344d-2cfb-4748-a20e-5281f5a2bb9f",
+      "claim_id": "C71",
+      "claim": "VASH1/2-SVBP have recently been identified as the carboxypeptidases responsible for the cleavage of the last tyrosine of \u03b1-tubulin.",
+      "claim_type": "EXPLICIT",
+      "source": "VASH1/2-SVBP have recently been identified as the carboxypeptidases responsible for the cleavage of the last tyrosine of \u03b1-tubulin (Aillaud et al., 2017; Nieuwenhuis et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:06:43.645572Z"
+    },
+    {
+      "id": "ee4c1441-0c4e-4958-8e1b-2ea1f9e44716",
+      "content_id": "3dd7344d-2cfb-4748-a20e-5281f5a2bb9f",
+      "claim_id": "C72",
+      "claim": "Subsequent studies have demonstrated the structural basis of the recognition of the C-terminal tyrosine by VASH1/2-SVBP.",
+      "claim_type": "EXPLICIT",
+      "source": "Subsequent studies have demonstrated the structural basis of the recognition of the C-terminal tyrosine by VASH1/2-SVBP (Li et al., 2019; Liao et al., 2019; Wang et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior structural studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:06:43.645572Z"
+    },
+    {
+      "id": "f4bc23e0-10c7-42e1-9a11-025315f1c50c",
+      "content_id": "3dd7344d-2cfb-4748-a20e-5281f5a2bb9f",
+      "claim_id": "C73",
+      "claim": "VASH1-SVBP binds to the surface of polymerized microtubules and simultaneously engages two adjacent \u03b1-tubulin molecules in neighboring protofilaments through multiple interfaces.",
+      "claim_type": "EXPLICIT",
+      "source": "VASH1-SVBP binds to the surface of polymerized microtubules and simultaneously engages two adjacent \u03b1-tubulin molecules in neighboring protofilaments through multiple interfaces (Figure 4G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the structural data presented in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:06:43.645572Z"
+    },
+    {
+      "id": "bc64a211-4edc-416e-beb7-6b921d32e6f1",
+      "content_id": "3dd7344d-2cfb-4748-a20e-5281f5a2bb9f",
+      "claim_id": "C74",
+      "claim": "Lattice-specific interactions guide the C-terminal tail of \u03b1-tubulin into the positively charged groove of VASH1 and position the C-terminal tyrosine into the active site for cleavage.",
+      "claim_type": "EXPLICIT",
+      "source": "We propose that these lattice-specific interactions guide the C-terminal tail of \u03b1-tubulin into the positively charged groove of VASH1 and position the C-terminal tyrosine into the active site for cleavage.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a proposed mechanism based on the structural data.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:06:43.645572Z"
+    },
+    {
+      "id": "8e6eb04f-3412-42aa-ba8a-7a3493a937f4",
+      "content_id": "3dd7344d-2cfb-4748-a20e-5281f5a2bb9f",
+      "claim_id": "C75",
+      "claim": "Long-lived, stable microtubules in cells contain more detyrosinated \u03b1-tubulins, whereas newly formed, dynamic microtubules have more tyrosinated \u03b1-tubulins.",
+      "claim_type": "EXPLICIT",
+      "source": "Because VASH1/2-SVBP prefer to detyrosinate microtubules and TTL prefers to act on \u03b1\u03b2-tubulin heterodimers, the long-lived, stable microtubules in cells contain more detyrosinated \u03b1-tubulins, whereas the newly formed, dynamic microtubules have more tyrosinated \u03b1-tubulins (Gundersen et al., 1987).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to established literature and the substrate preferences of the enzymes.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:06:43.645572Z"
+    },
+    {
+      "id": "c5257df3-3f31-402e-8d1c-62a01e453308",
+      "content_id": "3dd7344d-2cfb-4748-a20e-5281f5a2bb9f",
+      "claim_id": "C76",
+      "claim": "Detyrosination of microtubules can alter the binding of MAPs, which indirectly affect microtubule dynamics.",
+      "claim_type": "EXPLICIT",
+      "source": "Detyrosination of microtubules can alter the binding of MAPs, which indirectly affect microtubule dynamics.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by established knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:06:43.645572Z"
+    },
+    {
+      "id": "61422240-608e-4a08-a562-52ab728ad40f",
+      "content_id": "3dd7344d-2cfb-4748-a20e-5281f5a2bb9f",
+      "claim_id": "C77",
+      "claim": "Microtubules assembled from tyrosinated and detyrosinated \u03b1\u03b2-tubulins have similar intrinsic dynamic properties.",
+      "claim_type": "EXPLICIT",
+      "source": "As microtubules assembled from tyrosinated and detyrosinated \u03b1\u03b2-tubulins have similar intrinsic dynamic properties (Janke and Magiera, 2020), detyrosination per se does not directly stabilize microtubule dynamics, but rather it is a consequence of stable microtubules.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to established literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:06:43.645572Z"
+    },
+    {
+      "id": "17279b32-cb50-48a0-bfec-74fee18a2e47",
+      "content_id": "3dd7344d-2cfb-4748-a20e-5281f5a2bb9f",
+      "claim_id": "C78",
+      "claim": "Detyrosination per se does not directly stabilize microtubule dynamics, but rather it is a consequence of stable microtubules.",
+      "claim_type": "EXPLICIT",
+      "source": "As microtubules assembled from tyrosinated and detyrosinated \u03b1\u03b2-tubulins have similar intrinsic dynamic properties (Janke and Magiera, 2020), detyrosination per se does not directly stabilize microtubule dynamics, but rather it is a consequence of stable microtubules.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on cited literature and known properties.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:06:43.645572Z"
+    },
+    {
+      "id": "186be8bf-4284-4f19-ac3e-6bcd64e5ef43",
+      "content_id": "3dd7344d-2cfb-4748-a20e-5281f5a2bb9f",
+      "claim_id": "C79",
+      "claim": "VASH1-SVBP decorates the microtubule lattice very efficiently, and it straddles two neighboring protofilaments.",
+      "claim_type": "EXPLICIT",
+      "source": "On the other hand, VASH1-SVBP decorates the microtubule lattice very efficiently, and it straddles two neighboring protofilaments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the structural data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:06:43.645572Z"
+    },
+    {
+      "id": "c2f520c0-962b-43cf-9284-d37ed23bad9b",
+      "content_id": "3dd7344d-2cfb-4748-a20e-5281f5a2bb9f",
+      "claim_id": "C80",
+      "claim": "It will be interesting to test whether, aside from detyrosination, VASH1/2-SVBP might directly bind to and stabilize microtubules.",
+      "claim_type": "EXPLICIT",
+      "source": "It will be interesting to test whether, aside from detyrosination, VASH1/2-SVBP might directly bind to and stabilize microtubules.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about future research directions.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:06:43.645572Z"
+    },
+    {
+      "id": "05bc0fbb-e1bf-486d-897c-47a9b3c2d2fa",
+      "content_id": "3dd7344d-2cfb-4748-a20e-5281f5a2bb9f",
+      "claim_id": "C81",
+      "claim": "VASH1/2-SVBP had been initially identified as secreted proteins that regulate angiogenesis.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, VASH1/2-SVBP had been initially identified as secreted proteins that regulate angiogenesis (Watanabe et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:06:43.645572Z"
+    },
+    {
+      "id": "b1c8cdfe-1f05-4a70-b332-c325034a479b",
+      "content_id": "3dd7344d-2cfb-4748-a20e-5281f5a2bb9f",
+      "claim_id": "C82",
+      "claim": "VASH1 has been shown to bind directly to the internal ribosome binding site (IRES) of mRNAs of angiogenesis factors and regulate their IRES-mediated translation in cardiomyocytes under hypoxic conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "Recently, VASH1 has been shown to bind directly to the internal ribosome binding site (IRES) of mRNAs of angiogenesis factors and regulate their IRES-mediated translation in cardiomyocytes under hypoxic conditions (Hantelys et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:06:43.645572Z"
+    },
+    {
+      "id": "e6400d78-c983-4a73-82aa-2f40e1fd5257",
+      "content_id": "3dd7344d-2cfb-4748-a20e-5281f5a2bb9f",
+      "claim_id": "C83",
+      "claim": "Patient phenotypes associated with SVBP mutations are likely caused by defective tubulin detyrosination and elevated levels of tubulin tyrosination in brain tissues.",
+      "claim_type": "EXPLICIT",
+      "source": "Although these patient phenotypes are likely caused by defective tubulin detyrosination and elevated levels of tubulin tyrosination in brain tissues (Pagnamenta et al., 2019), it is also possible that the angiogenesis and RNA-binding functions of VASH1/2-SVBP contribute to the disease phenotypes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation and represents a likely explanation.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:06:43.645572Z"
+    },
+    {
+      "id": "2dc19c05-9cc0-4f89-8b92-83c54cf120dc",
+      "content_id": "3dd7344d-2cfb-4748-a20e-5281f5a2bb9f",
+      "claim_id": "C84",
+      "claim": "It is possible that the angiogenesis and RNA-binding functions of VASH1/2-SVBP contribute to the disease phenotypes associated with SVBP mutations.",
+      "claim_type": "EXPLICIT",
+      "source": "Although these patient phenotypes are likely caused by defective tubulin detyrosination and elevated levels of tubulin tyrosination in brain tissues (Pagnamenta et al., 2019), it is also possible that the angiogenesis and RNA-binding functions of VASH1/2-SVBP contribute to the disease phenotypes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculative reasoning about alternative explanations.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:06:43.645572Z"
+    },
+    {
+      "id": "bc8e8128-39ff-460c-aea1-5b971775faa7",
+      "content_id": "3dd7344d-2cfb-4748-a20e-5281f5a2bb9f",
+      "claim_id": "C85",
+      "claim": "Structure-based mutagenesis has identified VASH1 mutants that specifically disrupt microtubule binding and detyrosination.",
+      "claim_type": "EXPLICIT",
+      "source": "In this study, using structure-based mutagenesis, we have identified VASH1 mutants that specifically disrupt microtubule binding and detyrosination.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the experimental data presented in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:06:43.645572Z"
+    },
+    {
+      "id": "a8335b5d-b144-44ec-bb26-cb27a5b4f032",
+      "content_id": "3dd7344d-2cfb-4748-a20e-5281f5a2bb9f",
+      "claim_id": "C86",
+      "claim": "VASH1 mutants that specifically disrupt microtubule binding may prove valuable in future experiments aimed at dissecting the pathophysiological functions of vasohibins.",
+      "claim_type": "EXPLICIT",
+      "source": "These mutants may prove valuable in future experiments aimed at dissecting the pathophysiological functions of vasohibins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculative reasoning about future applications.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:06:43.645572Z"
+    },
+    {
+      "id": "9282c004-aa10-48ac-b07a-81304e063654",
+      "content_id": "3dd7344d-2cfb-4748-a20e-5281f5a2bb9f",
+      "claim_id": "C87",
+      "claim": "14-protofilament microtubules were less populated but more ordered than 13-protofilament microtubules in the cryo-EM dataset.",
+      "claim_type": "EXPLICIT",
+      "source": "Subsequent 3D classification revealed that, compared with 13-protofilament (PF) microtubules, 14-PF microtubules were the less populated but more ordered class.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the data processing workflow described in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:06:43.645572Z"
+    },
+    {
+      "id": "4e3ed4fa-72d8-4209-9844-94af44296ce0",
+      "content_id": "3dd7344d-2cfb-4748-a20e-5281f5a2bb9f",
+      "claim_id": "C88",
+      "claim": "The resolution of VASH1-SVBP is heterogenous, with the microtubule-binding regions and the core exhibiting higher resolution than the rest of the molecule.",
+      "claim_type": "EXPLICIT",
+      "source": "The resolution of VASH1-SVBP is heterogenous, with the microtubule-binding regions and the core exhibiting higher resolution than the rest of the molecule (Figure 2\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the local resolution map shown in Figure 2\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:06:43.645572Z"
+    },
+    {
+      "id": "8c7baebe-2b1d-4e2c-a039-755a87995824",
+      "content_id": "3dd7344d-2cfb-4748-a20e-5281f5a2bb9f",
+      "claim_id": "C89",
+      "claim": "The N- and C-terminal regions of SVBP remain disordered in the cryo-EM structure.",
+      "claim_type": "EXPLICIT",
+      "source": "The N- and C-terminal regions of SVBP remain disordered.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the structural data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:06:43.645572Z"
+    },
+    {
+      "id": "9801bea3-0cbc-4ddc-a59c-f51b20be96bd",
+      "content_id": "3dd7344d-2cfb-4748-a20e-5281f5a2bb9f",
+      "claim_id": "C90",
+      "claim": "The \u03b24-\u03b25 loop of VASH1 is well-ordered and has clear density in the EM map.",
+      "claim_type": "EXPLICIT",
+      "source": "The \u03b24-\u03b25 loop of VASH1 is well-ordered, and has clear density in the EM map (Figure 2\u2014figure supplement 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly supported by the EM map shown in Figure 2\u2014figure supplement 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:06:43.645572Z"
+    },
+    {
+      "id": "2152e914-539f-44cf-82ed-284639728aec",
+      "content_id": "3dd7344d-2cfb-4748-a20e-5281f5a2bb9f",
+      "claim_id": "C91",
+      "claim": "The density of VASH1 \u03b1G helix is poor in the cryo-EM map.",
+      "claim_type": "EXPLICIT",
+      "source": "Because the density of VASH1 \u03b1G is poor (Figure 2\u2014figure supplement 1C), we cannot definitively assign the precise orientation and conformation of the side chains in this helix.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly supported by the EM map quality.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:06:43.645572Z"
+    },
+    {
+      "id": "8bd747af-18db-4cc0-a0e6-f689b83ca010",
+      "content_id": "3dd7344d-2cfb-4748-a20e-5281f5a2bb9f",
+      "claim_id": "C92",
+      "claim": "R234, R296, R299, and L303 of VASH1 \u03b1G are located in close proximity to Y108, E155, R156, V159, E196, and E414 from \u03b1-tubulin' and are likely to develop favorable electrostatic and hydrophobic interactions.",
+      "claim_type": "EXPLICIT",
+      "source": "Nevertheless, R234, R296, R299, and L303 of VASH1 \u03b1G are located in close proximity to Y108, E155, R156, V159, E196, and E414 from \u03b1-tubulin'. These residues are likely to develop favorable electrostatic and hydrophobic interactions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the structural data despite poor density.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:06:43.645572Z"
+    },
+    {
+      "id": "925d67f8-3b18-4a55-a081-4539d0c4c258",
+      "content_id": "3dd7344d-2cfb-4748-a20e-5281f5a2bb9f",
+      "claim_id": "C93",
+      "claim": "HeLa Tet-On cells have low endogenous levels of tubulin detyrosination.",
+      "claim_type": "EXPLICIT",
+      "source": "To test the functional relevance of these interfaces, we introduced mutations into VASH1 to disrupt them, co-transfected these VASH1 mutants with SVBP into HeLa cells (which had low endogenous levels of tubulin detyrosination) (Bulinski et al., 1988), and evaluated their detyrosination activities on \u03b1-tubulin.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:06:43.645572Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "dcb244d0-3b52-4800-8705-e8add3404733",
+      "content_id": "3dd7344d-2cfb-4748-a20e-5281f5a2bb9f",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "VASH1-SVBP preferentially detyrosinates polymerized microtubules over free tubulin heterodimers. Treatment with Taxol (which stabilizes microtubules) enhanced detyrosination, while nocodazole (which depolymerizes microtubules) decreased detyrosination in cells transfected with VASH1-SVBP (C32). This substrate preference is supported by prior work (C30) and experimental data (C4).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C32, C4, and C30 provide converging evidence from cell-based assays (Figure 1A-C), prior literature citations, and experimental validation. The nocodazole/Taxol experiments directly test the hypothesis and show clear differential activity based on microtubule polymerization state, with appropriate controls and quantification (Figure 1C).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:06:43.645572Z"
+    },
+    {
+      "id": "9e269308-888b-4609-b2bd-f7aabaeeed73",
+      "content_id": "3dd7344d-2cfb-4748-a20e-5281f5a2bb9f",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The cryo-EM structure of VASH1-SVBP bound to GMPCPP-stabilized 14-protofilament microtubules was determined at 3.1 \u00c5 resolution for microtubules and 3.8 \u00c5 for VASH1-SVBP. The catalytically inactive C169S mutant of VASH1 in complex with SVBP binds to and decorates the microtubule surface.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6, C33, C34, C35, and C87 describe the core structural determination. The resolution is appropriate for the analysis, data processing is described in detail (Figure 1\u2014figure supplement 1B), and the structure shows clear decoration of microtubules by VASH1-SVBP (Figure 1E). The use of a catalytically inactive mutant is appropriate for capturing the enzyme-substrate complex.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:06:43.645572Z"
+    },
+    {
+      "id": "c0026e8b-d401-4cc4-8355-2e5d7e0ce7fd",
+      "content_id": "3dd7344d-2cfb-4748-a20e-5281f5a2bb9f",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "VASH1 simultaneously contacts two \u03b1-tubulin molecules in adjacent protofilaments through three major interfaces. Interfaces 1 and 2 are with the \u03b1-tubulin substrate, while interface 3 is with a second \u03b1-tubulin in an adjacent protofilament.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C38, C9, C51, C48, C49, and C50 describe the structural basis of VASH1-microtubule interactions. The cryo-EM structure clearly shows VASH1 bridging two protofilaments (Figures 1E, 2C, 3), with detailed views of all three interfaces provided (Figure 3B-D). The structural data directly supports these observations.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:06:43.645572Z"
+    },
+    {
+      "id": "a54bc04d-ac75-4193-a87c-07cc09a8f8c9",
+      "content_id": "3dd7344d-2cfb-4748-a20e-5281f5a2bb9f",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The C-terminal tail of \u03b1-tubulin (CT\u03b1) binds to a positively charged groove near the active site of VASH1, representing a catalysis-competent enzyme-substrate complex. Although the density for CT\u03b1 is weak and not fully modeled, continuous density connects the last modeled C-terminal residue of \u03b1-tubulin to the VASH1 active site through the positively charged groove.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7, C42, C43, C46, and C47 describe CT\u03b1 binding. While the density is weak (acknowledged in C43), the 7 \u00c5 lowpass-filtered map shows continuous density connecting \u03b1-tubulin to the active site (Figure 2D). The orientation is consistent with a productive enzyme-substrate complex. The authors appropriately acknowledge limitations in modeling the complete tail due to heterogeneity (C44, C45).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:06:43.645572Z"
+    },
+    {
+      "id": "dbaa9427-47de-411d-8f70-797bd8dc98f4",
+      "content_id": "3dd7344d-2cfb-4748-a20e-5281f5a2bb9f",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Interface 3 between VASH1 and a second \u03b1-tubulin in an adjacent protofilament can only exist within the microtubule lattice, not with free \u03b1\u03b2-tubulin heterodimers. These lattice-specific interactions underlie the substrate preference of VASH1-SVBP for polymerized microtubules.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C10, C55, C56, and C11 propose the mechanistic basis for substrate specificity. The structural data clearly shows interface 3 requires the microtubule lattice geometry (Figure 3D), and this is validated by mutagenesis experiments showing that disrupting interface 3 selectively impairs microtubule detyrosination but not free tubulin detyrosination (C64, C68, Figure 4B, 4E).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:06:43.645572Z"
+    },
+    {
+      "id": "97a59525-ac91-4f8d-a543-dce5155a4409",
+      "content_id": "3dd7344d-2cfb-4748-a20e-5281f5a2bb9f",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Structure-guided mutagenesis of VASH1 residues at interfaces 1-3 validates their functional importance. Mutations at interface 1 (R148E, K145E/R148E) and interface 2 (H268E/V270E) reduce detyrosination of both microtubules and free tubulin. Mutations at interface 3 (3E: R234E/R299E/L303E) selectively impair microtubule detyrosination without affecting free tubulin detyrosination, confirming the lattice-specific nature of this interface.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C58-C70 describe comprehensive mutagenesis validation. The experiments test predictions from the structure in multiple contexts: HeLa cells with and without nocodazole (Figure 4A-B), in vitro with microtubules (Figure 4C), GST-CT\u03b1 (Figure 4D), and free tubulin (Figure 4E). The differential effects of interface 3 mutations in the presence vs. absence of microtubules (C64, C68) provide strong support for the lattice-specific interaction model. Microtubule pelleting assays confirm reduced binding (C69, Figure 4F).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:06:43.645572Z"
+    },
+    {
+      "id": "10750457-4f7b-4625-aade-e3e2c2297dc3",
+      "content_id": "3dd7344d-2cfb-4748-a20e-5281f5a2bb9f",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The molecular details of VASH1-microtubule interfaces are characterized. Interface 1 involves VASH1 \u03b1D helix and \u03b1C-\u03b1D loop forming hydrophilic interactions with \u03b1-tubulin \u03b112 helix. Interface 2 is formed between VASH1 \u03b24-\u03b25 loop and \u03b1-tubulin \u03b111. Interface 3 contributes 39.8% of the total buried surface area (878 \u00c5\u00b2).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C52, C53, and C54 provide detailed structural characterization. The interfaces are clearly visualized in the cryo-EM structure (Figure 3B-D) with specific residues identified. The buried surface area calculation (C54) is standard structural analysis. The \u03b24-\u03b25 loop has clear density (C90, Figure 2\u2014figure supplement 1C), supporting the interface 2 assignment.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:06:43.645572Z"
+    },
+    {
+      "id": "7da49f6a-f2ff-4f02-a753-6d37c89a456d",
+      "content_id": "3dd7344d-2cfb-4748-a20e-5281f5a2bb9f",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The VASH1 D155R mutant shows enhanced detyrosination activity compared to wild-type, potentially due to alleviating unfavorable electrostatic interactions between D155 and E429 of \u03b1-tubulin.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C60 reports an experimental observation (Figure 4A), but claims C61 and C62 are speculative explanations marked as such in the evidence. While the structural proximity of D155 and E429 is noted (Figure 3B), the enhanced activity could have alternative explanations. The speculation is reasonable but not definitively proven.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:06:43.645572Z"
+    },
+    {
+      "id": "863f62d0-4e79-426c-9a06-5a7697c6c48c",
+      "content_id": "3dd7344d-2cfb-4748-a20e-5281f5a2bb9f",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "VASH1 has no contact with \u03b2-tubulin, and SVBP does not contribute directly to substrate recognition as it has no contact with microtubules.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C39 and C40 are directly supported by the cryo-EM structure showing VASH1 contacts only \u03b1-tubulin and SVBP is positioned away from the microtubule surface (Figures 1E, 2C). This is consistent with the observed binding mode.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:06:43.645572Z"
+    },
+    {
+      "id": "f0f12c86-e6fb-4b86-8749-643c325b685b",
+      "content_id": "3dd7344d-2cfb-4748-a20e-5281f5a2bb9f",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Structural characterization of VASH1-SVBP reveals no major conformational changes upon microtubule binding compared to crystal structures. The resolution is heterogeneous, with microtubule-binding regions better resolved. The \u03b24-\u03b25 loop is well-ordered, but the \u03b1G helix has poor density. N- and C-terminal regions of SVBP remain disordered.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C41, C88, C89, C90, and C91 describe technical aspects of the structure. The lack of conformational change is shown by structural overlay (Figure 2\u2014figure supplement 2A). The heterogeneous resolution is documented (Figure 2\u2014figure supplement 1A), and density quality for specific regions is shown (Figure 2\u2014figure supplement 1C). These are appropriate characterizations of the structural data.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:06:43.645572Z"
+    },
+    {
+      "id": "10bcfb8d-5a01-403f-8720-163c49940c40",
+      "content_id": "3dd7344d-2cfb-4748-a20e-5281f5a2bb9f",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The recombinant human tubulin contains approximately 70% human and 30% insect \u03b1-tubulin, and this heterogeneity may contribute to difficulty resolving the \u03b1-tubulin tail in the structure.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C44 cites prior work (Ye et al., 2020) documenting the tubulin composition. Claim C45 is a reasonable speculation about why CT\u03b1 density is weak, given that insect and human \u03b1-tubulin have different C-terminal sequences. This is appropriately presented as a possible contributing factor rather than a definitive explanation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:06:43.645572Z"
+    },
+    {
+      "id": "9436a86a-5709-4ab8-867a-106bd170fa7f",
+      "content_id": "3dd7344d-2cfb-4748-a20e-5281f5a2bb9f",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "VASH1 residues at the three microtubule interfaces are conserved among VASH1 and VASH2 proteins from different species, suggesting functional importance.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C57 is supported by sequence alignment data (Figure 3\u2014figure supplement 1A,B). Conservation across species and between VASH1 and VASH2 provides evolutionary evidence for functional importance, which is then validated by mutagenesis experiments.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:06:43.645572Z"
+    },
+    {
+      "id": "a1df3a5d-dc6e-49a7-a676-4cc0dbd88ea4",
+      "content_id": "3dd7344d-2cfb-4748-a20e-5281f5a2bb9f",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "At the microtubule seam, \u03b1-tubulin in one protofilament packs against \u03b2-tubulin in the adjacent protofilament. \u03b1- and \u03b2-tubulin can be distinguished by the length of the S9-S10 loop, which is longer in \u03b1-tubulin.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C36 and C37 describe standard microtubule architecture features visible in the structure. The seam is identified in Figure 1E, and the S9-S10 loop difference is shown in Figure 1F. This is consistent with established knowledge (C37 evidence includes KNOWLEDGE) and directly observable in the data.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:06:43.645572Z"
+    },
+    {
+      "id": "396bc136-6a79-4333-8cc5-10ed783f97f2",
+      "content_id": "3dd7344d-2cfb-4748-a20e-5281f5a2bb9f",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Despite poor density for the VASH1 \u03b1G helix, specific residues (R234, R296, R299, L303) are positioned near \u03b1-tubulin' residues (Y108, E155, R156, V159, E196, E414) and likely form favorable interactions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C92 acknowledges poor density (C91) but infers likely interactions based on proximity. While the inference is reasonable and supported by mutagenesis data showing these residues are functionally important (C63), the poor density limits confidence in the precise side chain orientations and specific interaction assignments.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:06:43.645572Z"
+    },
+    {
+      "id": "8d954911-f5a3-4532-b6fa-347321dfcda6",
+      "content_id": "3dd7344d-2cfb-4748-a20e-5281f5a2bb9f",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "VASH1-SVBP binds to polymerized microtubules and simultaneously engages two adjacent \u03b1-tubulin molecules through multiple interfaces. The authors propose that lattice-specific interactions guide the C-terminal tail into the positively charged groove and position the tyrosine for cleavage.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C73 summarizes the structural findings supported by the cryo-EM data. Claim C74 is explicitly presented as a proposal/mechanism based on the structural data. While C74 is marked as INFERENCE/SPECULATION in evidence, it is a reasonable mechanistic interpretation supported by the structure showing CT\u03b1 density leading to the active site and validated by mutagenesis.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:06:43.645572Z"
+    },
+    {
+      "id": "8df0c59d-d4cd-43b9-b957-073e7712eea9",
+      "content_id": "3dd7344d-2cfb-4748-a20e-5281f5a2bb9f",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Background and context claims about microtubule biology, the tubulin code, detyrosination-tyrosination cycle, physiological roles, disease associations, and prior structural work on VASH1/2-SVBP.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These claims (C1-C3, C12-C29, C31, C71-C72, C75-C78, C81-C83, C93) provide established background knowledge supported by appropriate citations to prior literature. They contextualize the current work but do not represent new findings from this study. All are appropriately cited and represent accurate summaries of the field.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:06:43.645572Z"
+    },
+    {
+      "id": "bf4b9e05-4a22-4827-9599-9b1a03930fe9",
+      "content_id": "3dd7344d-2cfb-4748-a20e-5281f5a2bb9f",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "The structural basis for VASH1/2-SVBP substrate preference toward microtubules over free tubulin heterodimers was not understood prior to this study.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C5 accurately states the knowledge gap that motivated the study. This is a standard framing of the research question and is supported by the literature review showing that while substrate preference was known (C30), the structural basis was not.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:06:43.645572Z"
+    },
+    {
+      "id": "f72ed121-357e-4de8-94d1-d5ea6530c189",
+      "content_id": "3dd7344d-2cfb-4748-a20e-5281f5a2bb9f",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "Speculative statements about future research directions, including testing whether VASH1/2-SVBP directly stabilize microtubules, whether non-tubulin functions contribute to disease phenotypes, and potential applications of the identified mutants.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C80, C84, and C86 are explicitly speculative statements about future work, appropriately marked as SPECULATION in evidence. These represent reasonable hypotheses and potential applications but are not tested in the current study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:06:43.645572Z"
+    },
+    {
+      "id": "1d263745-0869-4ff5-80c0-f82f13e306c0",
+      "content_id": "3dd7344d-2cfb-4748-a20e-5281f5a2bb9f",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "Structure-based mutagenesis identified VASH1 mutants that specifically disrupt microtubule binding and detyrosination.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C85 is directly supported by the mutagenesis experiments in Figure 4, which show that specific mutations reduce microtubule binding (Figure 4F) and detyrosination activity (Figure 4A-C) based on structural predictions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:06:43.645572Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "8dfa013c-e9f4-4843-af85-0eabe62e7c06",
+      "result_id": "dcb244d0-3b52-4800-8705-e8add3404733"
+    },
+    {
+      "claim_id": "fe822630-95fe-47e8-b555-67b3cb8d46c1",
+      "result_id": "dcb244d0-3b52-4800-8705-e8add3404733"
+    },
+    {
+      "claim_id": "7ac92595-55e3-414f-bca5-4f4cad1195ee",
+      "result_id": "dcb244d0-3b52-4800-8705-e8add3404733"
+    },
+    {
+      "claim_id": "8f7d521c-453d-4874-9590-5c347b6324a9",
+      "result_id": "9e269308-888b-4609-b2bd-f7aabaeeed73"
+    },
+    {
+      "claim_id": "cc256c2c-0a56-4cdb-806e-2c7aa28b793f",
+      "result_id": "9e269308-888b-4609-b2bd-f7aabaeeed73"
+    },
+    {
+      "claim_id": "3831d2e3-b963-412c-a5ae-7282939f7ad8",
+      "result_id": "9e269308-888b-4609-b2bd-f7aabaeeed73"
+    },
+    {
+      "claim_id": "8d7570cf-e1cb-406e-a975-89ef87218af8",
+      "result_id": "9e269308-888b-4609-b2bd-f7aabaeeed73"
+    },
+    {
+      "claim_id": "9282c004-aa10-48ac-b07a-81304e063654",
+      "result_id": "9e269308-888b-4609-b2bd-f7aabaeeed73"
+    },
+    {
+      "claim_id": "62d6ee19-5b2b-4f82-9096-ddd145468301",
+      "result_id": "c0026e8b-d401-4cc4-8355-2e5d7e0ce7fd"
+    },
+    {
+      "claim_id": "2322ac26-eaa0-48b7-b080-0061c53ccbf8",
+      "result_id": "c0026e8b-d401-4cc4-8355-2e5d7e0ce7fd"
+    },
+    {
+      "claim_id": "8294dba4-c4f1-4816-9a32-41f30d29733a",
+      "result_id": "c0026e8b-d401-4cc4-8355-2e5d7e0ce7fd"
+    },
+    {
+      "claim_id": "6f4a214c-604f-47b4-ae3d-6f4a506f52ad",
+      "result_id": "c0026e8b-d401-4cc4-8355-2e5d7e0ce7fd"
+    },
+    {
+      "claim_id": "1dde1819-3e1c-4a12-bd7f-089c895b36e1",
+      "result_id": "c0026e8b-d401-4cc4-8355-2e5d7e0ce7fd"
+    },
+    {
+      "claim_id": "5c864adf-f18a-48a6-b719-edc9fa3e657b",
+      "result_id": "c0026e8b-d401-4cc4-8355-2e5d7e0ce7fd"
+    },
+    {
+      "claim_id": "cf5523da-4cfd-40a2-9616-7cc1898e762a",
+      "result_id": "a54bc04d-ac75-4193-a87c-07cc09a8f8c9"
+    },
+    {
+      "claim_id": "9ba940a4-823c-427b-9935-0581ae08edc2",
+      "result_id": "a54bc04d-ac75-4193-a87c-07cc09a8f8c9"
+    },
+    {
+      "claim_id": "c40037aa-b486-4af0-ae5d-07790dc81c50",
+      "result_id": "a54bc04d-ac75-4193-a87c-07cc09a8f8c9"
+    },
+    {
+      "claim_id": "2afa0a02-db9c-4d74-9698-a8a82f193842",
+      "result_id": "a54bc04d-ac75-4193-a87c-07cc09a8f8c9"
+    },
+    {
+      "claim_id": "290d2c53-1c10-4944-a689-a070587e2f7a",
+      "result_id": "a54bc04d-ac75-4193-a87c-07cc09a8f8c9"
+    },
+    {
+      "claim_id": "a10c6dbe-dfed-404c-8c1a-b0733ca00fa9",
+      "result_id": "dbaa9427-47de-411d-8f70-797bd8dc98f4"
+    },
+    {
+      "claim_id": "099c012e-05c4-4826-b9da-019e8c1bc265",
+      "result_id": "dbaa9427-47de-411d-8f70-797bd8dc98f4"
+    },
+    {
+      "claim_id": "91a44903-4310-4884-8b21-216ac8b982a9",
+      "result_id": "dbaa9427-47de-411d-8f70-797bd8dc98f4"
+    },
+    {
+      "claim_id": "898499e9-c8d7-40d7-ae01-c37cfc753e62",
+      "result_id": "dbaa9427-47de-411d-8f70-797bd8dc98f4"
+    },
+    {
+      "claim_id": "d3fedd68-0564-444e-a830-cc21b36ef655",
+      "result_id": "97a59525-ac91-4f8d-a543-dce5155a4409"
+    },
+    {
+      "claim_id": "3b7ede82-ae7b-4b76-82ee-e19baafd6e40",
+      "result_id": "97a59525-ac91-4f8d-a543-dce5155a4409"
+    },
+    {
+      "claim_id": "c4af7ab1-880b-4647-ad49-58d58fb16627",
+      "result_id": "97a59525-ac91-4f8d-a543-dce5155a4409"
+    },
+    {
+      "claim_id": "5a6a9b9d-5ab4-4845-9c62-b8261f288f23",
+      "result_id": "97a59525-ac91-4f8d-a543-dce5155a4409"
+    },
+    {
+      "claim_id": "69aafe7b-5e4b-4140-8da4-cbd7a2cc9ef2",
+      "result_id": "97a59525-ac91-4f8d-a543-dce5155a4409"
+    },
+    {
+      "claim_id": "6374231b-e551-4326-b248-0927309980be",
+      "result_id": "97a59525-ac91-4f8d-a543-dce5155a4409"
+    },
+    {
+      "claim_id": "f0a5b9c1-e1ff-4cad-9da3-ea62f597fe6a",
+      "result_id": "97a59525-ac91-4f8d-a543-dce5155a4409"
+    },
+    {
+      "claim_id": "e8ff920f-45bf-4963-a7ba-e982330dcfef",
+      "result_id": "97a59525-ac91-4f8d-a543-dce5155a4409"
+    },
+    {
+      "claim_id": "279b1f41-8600-4a0d-aac1-9515b9a495ee",
+      "result_id": "97a59525-ac91-4f8d-a543-dce5155a4409"
+    },
+    {
+      "claim_id": "f5f29cf2-9928-4525-b3e6-0fd0be8ad416",
+      "result_id": "97a59525-ac91-4f8d-a543-dce5155a4409"
+    },
+    {
+      "claim_id": "2f21fd44-3690-4fec-bf9c-32e43a38a604",
+      "result_id": "10750457-4f7b-4625-aade-e3e2c2297dc3"
+    },
+    {
+      "claim_id": "64658c64-abff-4ddc-8bea-243e4c2dd8ad",
+      "result_id": "10750457-4f7b-4625-aade-e3e2c2297dc3"
+    },
+    {
+      "claim_id": "1289fa95-c0d9-47cf-9487-13366baaed5d",
+      "result_id": "10750457-4f7b-4625-aade-e3e2c2297dc3"
+    },
+    {
+      "claim_id": "8bf20eaf-f2bc-49b0-898f-05900d843a00",
+      "result_id": "7da49f6a-f2ff-4f02-a753-6d37c89a456d"
+    },
+    {
+      "claim_id": "1dcf8a96-cc6d-45b0-8d90-5c8da512eaca",
+      "result_id": "7da49f6a-f2ff-4f02-a753-6d37c89a456d"
+    },
+    {
+      "claim_id": "fa627de1-f5e7-4644-8141-48f31264eb31",
+      "result_id": "7da49f6a-f2ff-4f02-a753-6d37c89a456d"
+    },
+    {
+      "claim_id": "d4de4644-e8d3-4ce7-882d-bd4095f1eda7",
+      "result_id": "863f62d0-4e79-426c-9a06-5a7697c6c48c"
+    },
+    {
+      "claim_id": "0c25377c-6c28-48d4-a455-252d4c6542ab",
+      "result_id": "863f62d0-4e79-426c-9a06-5a7697c6c48c"
+    },
+    {
+      "claim_id": "7ae0f2dd-d9ec-4794-8335-121894c440af",
+      "result_id": "f0f12c86-e6fb-4b86-8749-643c325b685b"
+    },
+    {
+      "claim_id": "4e3ed4fa-72d8-4209-9844-94af44296ce0",
+      "result_id": "f0f12c86-e6fb-4b86-8749-643c325b685b"
+    },
+    {
+      "claim_id": "8c7baebe-2b1d-4e2c-a039-755a87995824",
+      "result_id": "f0f12c86-e6fb-4b86-8749-643c325b685b"
+    },
+    {
+      "claim_id": "9801bea3-0cbc-4ddc-a59c-f51b20be96bd",
+      "result_id": "f0f12c86-e6fb-4b86-8749-643c325b685b"
+    },
+    {
+      "claim_id": "2152e914-539f-44cf-82ed-284639728aec",
+      "result_id": "f0f12c86-e6fb-4b86-8749-643c325b685b"
+    },
+    {
+      "claim_id": "d7082661-bff7-46ce-9abd-dae4b3e6ae5a",
+      "result_id": "10bcfb8d-5a01-403f-8720-163c49940c40"
+    },
+    {
+      "claim_id": "7b5552ee-e305-4268-b804-d8153f4e6f50",
+      "result_id": "10bcfb8d-5a01-403f-8720-163c49940c40"
+    },
+    {
+      "claim_id": "e7aff997-922a-4e30-8a92-f1490aaa3e2e",
+      "result_id": "9436a86a-5709-4ab8-867a-106bd170fa7f"
+    },
+    {
+      "claim_id": "57ee52bf-2abd-4c77-bf9c-2743f2abdd60",
+      "result_id": "a1df3a5d-dc6e-49a7-a676-4cc0dbd88ea4"
+    },
+    {
+      "claim_id": "b392133a-6ba8-43ba-ad0f-73e0e37b0ed7",
+      "result_id": "a1df3a5d-dc6e-49a7-a676-4cc0dbd88ea4"
+    },
+    {
+      "claim_id": "8bd747af-18db-4cc0-a0e6-f689b83ca010",
+      "result_id": "396bc136-6a79-4333-8cc5-10ed783f97f2"
+    },
+    {
+      "claim_id": "f4bc23e0-10c7-42e1-9a11-025315f1c50c",
+      "result_id": "8d954911-f5a3-4532-b6fa-347321dfcda6"
+    },
+    {
+      "claim_id": "bc64a211-4edc-416e-beb7-6b921d32e6f1",
+      "result_id": "8d954911-f5a3-4532-b6fa-347321dfcda6"
+    },
+    {
+      "claim_id": "405b93b2-c922-4fcf-8557-a0d836a4200d",
+      "result_id": "8df0c59d-d4cd-43b9-b957-073e7712eea9"
+    },
+    {
+      "claim_id": "b1fcdef6-284b-4288-bcca-49a85f5b0a3f",
+      "result_id": "8df0c59d-d4cd-43b9-b957-073e7712eea9"
+    },
+    {
+      "claim_id": "04600f03-4650-4a83-af65-e74a7a0ac94b",
+      "result_id": "8df0c59d-d4cd-43b9-b957-073e7712eea9"
+    },
+    {
+      "claim_id": "7acb6db2-aff9-476a-a4e2-cdbd2c5bc082",
+      "result_id": "8df0c59d-d4cd-43b9-b957-073e7712eea9"
+    },
+    {
+      "claim_id": "d9f6627c-9f9f-479b-a760-92fef1fc5e54",
+      "result_id": "8df0c59d-d4cd-43b9-b957-073e7712eea9"
+    },
+    {
+      "claim_id": "e7ed669d-8daa-43d2-a8d9-67d510897ca1",
+      "result_id": "8df0c59d-d4cd-43b9-b957-073e7712eea9"
+    },
+    {
+      "claim_id": "76919d9f-922a-4bf5-a371-d60af0dc5955",
+      "result_id": "8df0c59d-d4cd-43b9-b957-073e7712eea9"
+    },
+    {
+      "claim_id": "b0e22408-7bd8-4bb8-a642-e3f8db5ad70d",
+      "result_id": "8df0c59d-d4cd-43b9-b957-073e7712eea9"
+    },
+    {
+      "claim_id": "437386e0-1b22-4f7c-b447-e4f25800cd3e",
+      "result_id": "8df0c59d-d4cd-43b9-b957-073e7712eea9"
+    },
+    {
+      "claim_id": "26f3996e-a175-47a4-8478-e43ced0442de",
+      "result_id": "8df0c59d-d4cd-43b9-b957-073e7712eea9"
+    },
+    {
+      "claim_id": "6ac79a0a-081b-4cad-a8e3-761c8be9b5e2",
+      "result_id": "8df0c59d-d4cd-43b9-b957-073e7712eea9"
+    },
+    {
+      "claim_id": "18cc67ac-4318-44ad-8b82-7c253a49c3e6",
+      "result_id": "8df0c59d-d4cd-43b9-b957-073e7712eea9"
+    },
+    {
+      "claim_id": "0fedd1ab-814c-4571-9a58-450488be637b",
+      "result_id": "8df0c59d-d4cd-43b9-b957-073e7712eea9"
+    },
+    {
+      "claim_id": "fdb45a17-e787-49e3-8723-d2a7936bbd8a",
+      "result_id": "8df0c59d-d4cd-43b9-b957-073e7712eea9"
+    },
+    {
+      "claim_id": "968fd7cf-fd9d-4d3e-b959-4fe4174aa5b5",
+      "result_id": "8df0c59d-d4cd-43b9-b957-073e7712eea9"
+    },
+    {
+      "claim_id": "660d79d6-a919-4e85-8b7d-41f18f1c0108",
+      "result_id": "8df0c59d-d4cd-43b9-b957-073e7712eea9"
+    },
+    {
+      "claim_id": "fd1e0244-355a-4230-8ccd-d49c7698e71f",
+      "result_id": "8df0c59d-d4cd-43b9-b957-073e7712eea9"
+    },
+    {
+      "claim_id": "61845bd2-8314-4ac1-aeab-bbd089064d55",
+      "result_id": "8df0c59d-d4cd-43b9-b957-073e7712eea9"
+    },
+    {
+      "claim_id": "00096abc-bdbf-42a2-9e9d-dc756aa38198",
+      "result_id": "8df0c59d-d4cd-43b9-b957-073e7712eea9"
+    },
+    {
+      "claim_id": "4770eee5-f18e-4e5f-9510-53a5502559d2",
+      "result_id": "8df0c59d-d4cd-43b9-b957-073e7712eea9"
+    },
+    {
+      "claim_id": "52cc5479-0cac-4435-99de-67a73e6165b1",
+      "result_id": "8df0c59d-d4cd-43b9-b957-073e7712eea9"
+    },
+    {
+      "claim_id": "2c07c6d5-129a-436c-92bc-1679e3e5b23c",
+      "result_id": "8df0c59d-d4cd-43b9-b957-073e7712eea9"
+    },
+    {
+      "claim_id": "f1b130eb-b6d5-4920-a43c-dbfca263b78d",
+      "result_id": "8df0c59d-d4cd-43b9-b957-073e7712eea9"
+    },
+    {
+      "claim_id": "ee4c1441-0c4e-4958-8e1b-2ea1f9e44716",
+      "result_id": "8df0c59d-d4cd-43b9-b957-073e7712eea9"
+    },
+    {
+      "claim_id": "8e6eb04f-3412-42aa-ba8a-7a3493a937f4",
+      "result_id": "8df0c59d-d4cd-43b9-b957-073e7712eea9"
+    },
+    {
+      "claim_id": "c5257df3-3f31-402e-8d1c-62a01e453308",
+      "result_id": "8df0c59d-d4cd-43b9-b957-073e7712eea9"
+    },
+    {
+      "claim_id": "61422240-608e-4a08-a562-52ab728ad40f",
+      "result_id": "8df0c59d-d4cd-43b9-b957-073e7712eea9"
+    },
+    {
+      "claim_id": "17279b32-cb50-48a0-bfec-74fee18a2e47",
+      "result_id": "8df0c59d-d4cd-43b9-b957-073e7712eea9"
+    },
+    {
+      "claim_id": "05bc0fbb-e1bf-486d-897c-47a9b3c2d2fa",
+      "result_id": "8df0c59d-d4cd-43b9-b957-073e7712eea9"
+    },
+    {
+      "claim_id": "b1c8cdfe-1f05-4a70-b332-c325034a479b",
+      "result_id": "8df0c59d-d4cd-43b9-b957-073e7712eea9"
+    },
+    {
+      "claim_id": "e6400d78-c983-4a73-82aa-2f40e1fd5257",
+      "result_id": "8df0c59d-d4cd-43b9-b957-073e7712eea9"
+    },
+    {
+      "claim_id": "925d67f8-3b18-4a55-a081-4539d0c4c258",
+      "result_id": "8df0c59d-d4cd-43b9-b957-073e7712eea9"
+    },
+    {
+      "claim_id": "bb904e93-cf32-41e7-8a1f-eaab0fdcdcf3",
+      "result_id": "bf4b9e05-4a22-4827-9599-9b1a03930fe9"
+    },
+    {
+      "claim_id": "c2f520c0-962b-43cf-9284-d37ed23bad9b",
+      "result_id": "f72ed121-357e-4de8-94d1-d5ea6530c189"
+    },
+    {
+      "claim_id": "2dc19c05-9cc0-4f89-8b92-83c54cf120dc",
+      "result_id": "f72ed121-357e-4de8-94d1-d5ea6530c189"
+    },
+    {
+      "claim_id": "a8335b5d-b144-44ec-bb26-cb27a5b4f032",
+      "result_id": "f72ed121-357e-4de8-94d1-d5ea6530c189"
+    },
+    {
+      "claim_id": "bc8e8128-39ff-460c-aea1-5b971775faa7",
+      "result_id": "1d263745-0869-4ff5-80c0-f82f13e306c0"
+    }
+  ],
+  "comparisons": []
+}

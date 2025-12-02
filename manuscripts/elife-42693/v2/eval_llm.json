@@ -1,0 +1,303 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "The study analyzed 935 metagenomes from 470 individuals across five countries, profiling 310 species that account for 99% of classifiable microbial abundance. Species-level community composition analysis showed that oral and fecal microbiomes appear independent, with 44% of species predominantly fecal, 16% predominantly oral, and 40% prevalent in both sites but with different relative abundances.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C32 describe the dataset and basic compositional analysis. The dataset size, species profiling, and prevalence categorization are clearly stated with appropriate statistical tests (Bray-Curtis dissimilarities, Wilcoxon test). The independence of oral and fecal compositions at the species level is well-supported by the data and provides important context for the strain-level transmission findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "Oral-fecal transmission is common and extensive among healthy individuals. Of 125 species prevalent in both mouth and gut, 77% showed evidence of transmission: 74 species (59%) showed frequent transmission across all subjects, 22 species (18%) showed occasional transmission, and 29 species (23%) showed no transmission under strict thresholds. Core oral taxa including Streptococcus, Veillonella, Actinomyces, and Haemophilus showed frequent transmission, while all 21 Prevotella species showed occasional transmission.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C4 and C33-C38 present the core finding on transmission prevalence. The SNV-based transmission score methodology is appropriate for strain-level tracking, with proper statistical testing (Benjamini-Hochberg-corrected Wilcoxon tests, p<0.05). The categorization into frequent, occasional, and non-transmitters is well-defined and supported by the data shown in Figure 2B and supplementary figures.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "The observed fecal abundance of transmitted species exceeded physiologically predicted levels from passive translocation by several orders of magnitude, indicating active colonization rather than passive transit. Based on estimates of daily bacterial swallowing (1.5\u00d710^12), stomach reduction (5-6 orders of magnitude), and gut bacterial load (3.8\u00d710^13), passive transmission would account for only ~4\u00d710^-7 reduction in relative abundance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C44 provide crucial evidence distinguishing active colonization from passive transit. The physiological calculations are based on cited literature values and are mathematically sound. The comparison between observed and predicted abundances (Figure 1C, Figure 1\u2014figure supplement 1) clearly demonstrates that observed levels far exceed what passive translocation could explain, strongly supporting the active colonization conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C92"
+    ],
+    "result": "Longitudinal analysis of 46 individuals demonstrated that oral-fecal transmission is directional (mouth to gut, not vice versa) and continuous. Oral and fecal strain populations were stable over time, but oral SNVs at initial timepoints were significantly enriched among newly gained fecal SNVs over time. Oral-fecal transmission rates significantly exceeded background expectation for frequently transmitted taxa.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C56 and C92 present critical longitudinal evidence for directionality and continuity of transmission. The coupling analysis (Figure 2\u2014figure supplement 4) and transmission rate calculations (Figure 2C) provide orthogonal support for the transmission hypothesis. The asymmetric enrichment pattern (oral\u2192fecal but not fecal\u2192oral) is compelling evidence for directionality. The methodology is sound and the statistical testing appropriate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "Oral-fecal transmissibility showed phylogenetic signal (\u03bbPagel=0.76) but occurred across bacterial phyla. Transmitted species had smaller genomes (\u03c1Spearman=-0.6) and oxygen-tolerant species showed 7-fold higher transmission scores than anaerobes (p=10^-16). No association was found with sporulation or motility.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C63 characterize traits associated with transmissibility. The phylogenetic analysis is appropriate with proper signal quantification. The correlations with genome size and oxygen tolerance are statistically significant and biologically plausible. The lack of association with sporulation and motility is properly reported. These findings are well-supported by the data in Figure 2D-E and supplementary materials.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C93",
+      "C94"
+    ],
+    "result": "Quantification of transmitted abundance showed that potentially transmissible species accounted for 75% of classifiable oral microbes on average, with 35% representing realized transmission (traceable strains). In feces, 45% were potential transmitters but only 2% on average could be confidently ascribed to transmitted strains (ranging to >30% in some subjects).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C67 and C93-C94 quantify the extent of transmission. The distinction between 'potential' and 'realized' transmission is methodologically sound, accounting for detection limits and requiring both species presence and SNV overlap. The conservative estimates are appropriate given the technical limitations acknowledged. The wide range between subjects (2% to >30%) is an important finding showing inter-individual variation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "Transmitted microbial abundance was independent of sex, age, and BMI, but showed moderate cohort differences (p=0.002). Oral and fecal transmitted abundance correlated with each other (\u03c1Spearman=0.48) and with fecal species richness, while salivary transmitted abundance negatively correlated with oral species richness.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C72 examine factors associated with transmission levels. The ANOVA testing for subject covariates is appropriate and properly blocked by cohort. The correlations are statistically sound and the biological interpretation (core oral taxa being transmissible) is reasonable. The findings are supported by Figure 3B and supplementary data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "Machine learning models showed that gut species abundances were very strong predictors of transmission levels (AUC=0.951 for oral, 0.971 for gut), while salivary species were only mildly predictive (AUC=0.738 for oral, 0.642 for gut). The gut model signal was driven by transmitting species enrichment but remained robust even after removing detected transmitters (AUC=0.835). Fusobacterium nucleatum subspecies were enriched in high-transmission individuals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C76 present predictive modeling results. The LASSO logistic regression approach with cross-validation is appropriate. The high AUC values for gut models and robustness to transmitter removal suggest the true extent of transmission may exceed conservative estimates. The identification of F. nucleatum is consistent with literature on its role in facilitating oral bacterial colonization. The methodology is sound as described in Materials and Methods.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "Species associated with various disease states showed increased transmission scores: opportunistic pathogens (p=0.016), dental caries agents (p=10^-9), plaque-dwelling bacteria (p=0.002), periodontitis-associated species (p=0.002, though core drivers showed little transmission), and endocarditis-associated species (p=0.007 with phylogenetic regression).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C82 link transmission to disease-associated species traits. The ANOVA testing is appropriate and phylogenetic regression properly accounts for phylogenetic signal. The distinction between mildly periodontic species (showing transmission) and core periodontitis drivers (showing little transmission) is an important nuance. The findings are supported by Figure 4A and are biologically plausible.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C5",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C100"
+    ],
+    "result": "Treatment-na\u00efve colorectal cancer patients showed significantly increased oral-fecal transmission scores across all taxa (Cohen's d=0.27, p=10^-23) and for transmitted taxa only (d=0.23, p=10^-10). The effect was more pronounced for species previously reported as CRC-enriched (d=0.33, p=10^-4), including Fusobacterium nucleatum spp., Parvimonas micra, and Peptostreptococcus stomatis. These findings support the hypothesis that CRC-associated species are sourced from the oral cavity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C83-C86, and C100 present a major disease-related finding. The statistical analysis is robust with large effect sizes and highly significant p-values. The comparison to previously identified CRC-associated species provides validation. The conclusion that these species are sourced from the oral cavity (rather than environment) is well-supported by the strain-level SNV overlap data. This is shown in Figure 4B and Figure 4\u2014figure supplement 1.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C6",
+      "C87",
+      "C88"
+    ],
+    "result": "Treatment-na\u00efve rheumatoid arthritis patients showed mildly elevated transmission across all taxa (d=0.03, p=0.01) and transmissible taxa (d=0.07, p=0.08). Notably, species orally depleted in RA patients showed markedly increased transmission scores (d=0.61, p=10^-21).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C87-C88 present RA-related findings. While the overall transmission increase is modest, the strong effect for orally depleted species is striking and statistically robust. This suggests a more complex relationship between oral depletion and gut colonization in RA. The statistical testing is appropriate and the finding is novel, though the biological mechanism remains unclear.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C89"
+    ],
+    "result": "A trend towards decreased transmission in type-1 diabetes patients was not statistically significant.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C89 reports a negative finding for T1D. This is appropriately reported as non-significant, demonstrating that not all diseases show altered transmission patterns. The claim is straightforward and properly qualified.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "Transmission scores were independent of technical covariates (horizontal/vertical genome coverage). Across all taxa, transmission scores did not correlate with fecal prevalence (\u03c1Spearman=0.05), but did correlate when considering only transmitters (\u03c1=0.67). Oral prevalence was globally indicative of transmission scores (\u03c1=0.6).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C48 address technical validation and biological correlations. The independence from technical covariates (Figure 2\u2014figure supplement 2) is important for validating the transmission score methodology. The correlation patterns are consistent with the hypothesis that core oral taxa are transmitted. These are appropriate quality control and validation analyses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C90",
+      "C91",
+      "C95",
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "The study establishes the oral cavity as an endogenous reservoir for gut microbial strains, with oral-fecal transmission being an important process shaping the gastrointestinal microbiome in health and disease. The findings challenge models assuming independent oral and intestinal communities, showing instead that most strain populations are continuous along the GIT. Oral-fecal transmission is comparable in magnitude to other factors determining gut microbiome composition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C9, C90-C91, C95, and C102-C104 present the study's main conclusions. These are well-supported by the comprehensive evidence from SNV overlap, longitudinal coupling, abundance quantification, and disease associations. The comparison to other factors (C95, citing Schmidt et al. 2018) provides appropriate context. The challenge to existing models is justified by the extensive evidence presented. These represent the study's major conceptual contributions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "The study may underestimate transmission by using saliva and feces as readouts, as fecal composition may not fully represent mucosal colonization. Given strict thresholds and detection limits, true transmission levels are likely higher than reported, and virtually all oral species may translocate to the intestine under some circumstances.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C96-C98 are speculative statements about study limitations and potential underestimation. While the reasoning is sound (fecal samples may not capture mucosal colonization, conservative thresholds may miss true positives), these remain hypotheses requiring additional data. The speculation is appropriately qualified but cannot be evaluated as supported without mucosal sampling or less stringent validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "The introduction establishes prior knowledge about the GI microbiome, including that oral and gut host distinct communities in distinct microenvironments despite physical connection, that segregation is maintained by gastric acidity and bile acids, and that increased oral taxa in the intestine has been linked to various diseases including RA, CRC, and IBD. Previous work showed genera prevalent at both sites with weak predictive relationships and similar gene content but distinct strains.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2 and C10-C25 summarize established knowledge and prior work through citations. These provide appropriate context for the study's hypothesis. The citations appear appropriate for the claims made. This background establishes the prevailing view that the authors are challenging (C2) and sets up the study's rationale.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C49",
+      "C50"
+    ],
+    "result": "Prior work showed that infants are colonized by maternal strains from both oral cavity and gut during early life, and that maternal gut strains can persist into childhood.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C50 cite recent relevant work (Ferretti et al. 2018, Korpela et al. 2018) that provides context for understanding transmission patterns. These citations are appropriate and relevant to the study's findings on adult transmission.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C99",
+      "C101"
+    ],
+    "result": "Increased transmission was linked to some diseases, and the findings may extend to other diseases beyond those tested, with implications for disease prevention, diagnosis, and microbiome-based therapy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C99 is supported by the CRC and RA findings. Claim C101 is speculative but reasonable given the demonstrated associations. The speculation about broader implications is appropriately qualified and represents a logical extension of the findings, though it requires future validation.",
+    "result_type": "MINOR"
+  }
+]

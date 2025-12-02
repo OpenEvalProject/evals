@@ -1,0 +1,1566 @@
+{
+  "submission": {
+    "id": "496eef87-78cc-44ce-8097-e14c7252b727",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T12:01:57.467474Z",
+    "updated_at": "2025-12-02T12:01:57.467474Z"
+  },
+  "content": [
+    {
+      "id": "f13dba0f-5c05-453a-a5e0-e509f73e051b",
+      "submission_id": "496eef87-78cc-44ce-8097-e14c7252b727",
+      "content_type": "manuscript",
+      "content_text": "# Deep generative models for T cell receptor protein sequences\n\n## Authors\n\n- Kristian Davidsen<sup>1</sup> ([ORCID: 0000-0002-3821-6902](https://orcid.org/0000-0002-3821-6902)) \u2020\n- Branden J Olson<sup>1</sup> ([ORCID: 0000-0003-1951-8822](https://orcid.org/0000-0003-1951-8822))\n- William S DeWitt<sup>1</sup> ([ORCID: 0000-0002-6802-9139](https://orcid.org/0000-0002-6802-9139))\n- Jean Feng<sup>1</sup> ([ORCID: 0000-0003-2041-3104](https://orcid.org/0000-0003-2041-3104))\n- Elias Harkins<sup>1</sup>\n- Philip Bradley<sup>1</sup> ([ORCID: 0000-0002-0224-6464](https://orcid.org/0000-0002-0224-6464))\n- Frederick A Matsen<sup>1</sup> ([ORCID: 0000-0003-0607-6025](https://orcid.org/0000-0003-0607-6025)) \u2020\n\n### Affiliations\n\n1. University of Washington Seattle United States\n2. Fred Hutchinson Cancer Research Center Seattle United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nProbabilistic models of adaptive immune repertoire sequence distributions can be used to infer the expansion of immune cells in response to stimulus, differentiate genetic from environmental factors that determine repertoire sharing, and evaluate the suitability of various target immune sequences for stimulation via vaccination. Classically, these models are defined in terms of a probabilistic V(D)J recombination model which is sometimes combined with a selection model. In this paper we take a different approach, fitting variational autoencoder (VAE) models parameterized by deep neural networks to T cell receptor (TCR) repertoires. We show that simple VAE models can perform accurate cohort frequency estimation, learn the rules of VDJ recombination, and generalize well to unseen sequences. Further, we demonstrate that VAE-like models can distinguish between real sequences and sequences generated according to a recombination-selection model, and that many characteristics of VAE-generated sequences are similar to those of real sequences.\n\n## Introduction\n\nT cell receptors (TCRs) are composed of an $\\alpha$ and a $\\beta$ protein chain, both originating from a random V(D)J recombination process, followed by selective steps that ensure functionality and limit auto-reactivity. To generate diverse and functional TCRs, T cells combine a stochastic process for choosing from a pool of V, D and J genes with a process for selecting for expression and MHC recognition. The process first occurs for the $\\beta$ chain, where first a D and a J gene are recombined using random trimming and joining with random nucleotides, then this DJ segment is recombined with a V gene via an analogous process. After the $\\beta$ chain has been generated, a small cell expansion occurs followed by a similar $\\alpha$ chain recombination, although without a D gene. For detailed reviews of\u00a0V(D)J recombination see Bassing et al. (2002),\u00a0and Schatz and Ji (2011). The naive T cell population consists of T cells that have undergone V(D)J recombination and MHC selection but not yet encountered antigen. In a system known as the clonal selection mechanism of immune memory, T cells that bind antigen increase in frequency, thus increasing the frequency of their corresponding TCR sequences. The resulting ensemble of protein sequences thus summarizes each individual\u2019s previous immune exposures and largely determines their resistance to various infections. One can consider these protein sequences as a sample from a probability distribution, whether it is the distribution of receptors within an individual, or the distribution of receptors in a population. This article concerns fitting such probability distributions on TCR $\\beta$ protein sequences (which will be called \u2018TCR sequences\u2019 for the rest of the paper).\n\nProbability estimates from these models can be used to draw important biological conclusions. For example, observing sequences that are amplified in a repertoire indicates that they perform important functions like targeting yellow fewer or cytomegalovirus (Pogorelyy et al., 2018c; Pogorelyy et al., 2018d; Emerson et al., 2017). However, in order to properly define amplification, we must infer the frequency of such sequences appearing in the naive (i.e. post-selection but pre-amplification) repertoire so that we do not mistake an inherently probable recombination scenario with functional selection. As another application, (Elhanati et al., 2018) used probability calculations to predict the frequency of shared TCR sequences between individuals, showing that biases of the V(D)J recombination process significantly explain the degree of sharing.\n\nThe appearance of a given TCR sequence in the blood of an individual means that it was generated by V(D)J recombination and subsequently passed thymic selection, which removes TCRs with improper binding to MHC as well as self-reactive TCRs. This series of two steps constitutes a sophisticated random process for generating protein sequences. Previous work (Elhanati et al., 2014; Pogorelyy et al., 2018c) approached the problem of inferring this process by calculating the probability of a sequence\u2019s V(D)J recombination using a probabilistic graphical model, multiplying this probability by a thymic selection factor $Q$, and scaling accordingly. Although breaking the process into generation and selection steps parallels the biological process, we can instead fit a distribution to a mature TCR repertoire directly, and assess the advantages of either approach. Indeed, these considerations raise the question of how to model the distribution of TCR protein sequences from a given source in order to answer meaningful immunological questions.\n\nIn this paper we develop variants of Variational Autoencoder (VAE) models (Kingma et al., 2014b; Higgins et al., 2017) to fit the distribution of TCR protein sequences. Recent work on deep generative models of proteins inspired our approach (Sinai et al., 2017; Riesselman et al., 2018). We find that these models can predict cohort frequency with high accuracy, learn the rules of VDJ recombination, generalize to unseen sequences, and generate sequences with similar characteristics to observed TCR sequences.\n\n## Results\n\n### Methods overview\n\nWe briefly outline our methods in order to present results; further details can be found in the Materials\u00a0and\u00a0methods section. We model TCR sequences using simple variants of variational autoencoders (VAEs). Previous work using VAEs have found success when first, there is a vast amount of data available, and second, the data distribution is complicated, involving nonlinearities and interactions between covariates. There is indeed a vast amount of TCR repertoire data, and the TCR probability distributions are complex.\n\nVAE models can be described as consisting of an $n$-dimensional latent space, a prior $p_{\\theta}\u2062(\ud835\udc33)$ on that latent space, and probabilistic maps parameterized by two neural networks: an encoder $q_{\u03d5}\u2062(\ud835\udc33|\ud835\udc31)$ and a decoder $p_{\\theta}\u2062(\ud835\udc31^|\ud835\udc33)$\u00a0(Figure 1; Kingma et al., 2014b). For the models used in this paper the latent space is 20-dimensional, and we use the conventional choice of a standard multivariate normal prior for $p_{\\theta}\u2062(\ud835\udc33)$. The encoder $q_{\u03d5}\u2062(\ud835\udc33|\ud835\udc31)$ is a multivariate normal distribution with mean and diagonal covariance determined by a neural network with input $\ud835\udc31$ (see Materials\u00a0and\u00a0methods for how TCR protein sequences are transformed into appropriate input for a neural network). This choice of a normal distribution is primarily for mathematical convenience rather than being part of a specific modeling design; the normal \u2018noise\u2019 in the latent space gets processed by a neural network which introduces non-linearities that ensure that the result is not normal. However, VAE variants do use other distributions in place of normal (Dilokthanakul et al., 2016; Davidson et al., 2018). The decoder $p_{\\theta}\u2062(\ud835\udc31^|\ud835\udc33)$ is a per-site categorical distribution over amino acids and gaps parameterized by a neural network with input $\ud835\udc33$.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/46935/elife-46935-fig1-v1.jpg)\n\n**Figure 1.:** A VAE embeds objects of interest $\ud835\udc31$ (here TCR protein sequences) into an $n$-dimensional latent space, using a probabilistic encoder $q_{\u03d5}\u2062(\ud835\udc33|\ud835\udc31)$ and decoder $p_{\\theta}\u2062(\ud835\udc31^|\ud835\udc33)$ that are both parametrized by deep neural networks. The VAE objective is to encode and decode objects with high fidelity ($\ud835\udc31\u2248\ud835\udc31^$) while ensuring the encoder $q_{\u03d5}\u2062(\ud835\udc33|\ud835\udc31)$ distribution is close to a prior $p_{\\theta}\u2062(\ud835\udc33)$ on that latent space, typically taken to be a standard multivariate normal distribution.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/46935/elife-46935-fig1-figsupp1-v1.jpg)\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/46935/elife-46935-fig1-figsupp2-v1.jpg)\n\nOnce the VAE is trained, one can sample new sequences by \u2018decoding\u2019 samples from $p_{\\theta}\u2062(\ud835\udc33)$, that is, drawing from $p_{\\theta}\u2062(\ud835\udc33)$, feeding those points through the decoder network, and then sampling from the resulting probabilities. In the case of TCRs, this final sampling step goes from categorical distributions on the TCR components (i.e. on the V gene, J gene, and the amino acids at the various positions) to an actual TCR sequence. One trains a VAE with a collection of observed sequences $\ud835\udc31$ via the encoder $q_{\u03d5}\u2062(\ud835\udc33|\ud835\udc31)$. VAE training has two goals, which are represented by two terms of the objective function: first, to be able to (probabilistically) encode and decode the sequences through the latent space with high fidelity, and second, to ensure that that the $q_{\u03d5}\u2062(\ud835\udc33|\ud835\udc31)$ map is close to the prior $p_{\\theta}\u2062(\ud835\udc33)$ on average across $\ud835\udc31$. The second component of this objective encourages a structured mapping of input sequences to latent values, in hopes that the model learns meaningful sequence features rather than memorizing properties of the training data. The balance between these two components is important and is controlled by a parameter $\\beta$\u00a0(Higgins et al., 2017). Once the VAE is trained (i.e. parameters $\u03d5$ and $\\theta$ are optimized according to the objective with respect to a particular dataset), we can calculate the probability of generating a given sequence $\ud835\udc31$ via importance sampling.\n\nWe are interested in TCR $\\beta$ protein sequences, which due to the process of VDJ recombination are uniquely identified by triples consisting of V gene, J gene, and CDR3 protein sequence (Woodsworth et al., 2013). We developed two VAE models for such protein sequences: a simple one, denoted basic and a more complex model, denoted count_match. The basic model does not have any information about the\u00a0content\u00a0of germline genes built into the model and was trained according to a simple loss function (Figure 1\u2014figure supplement 1). The count_match model brings in information about the protein sequence of the germline genes and has a more complex loss function involving CDR3 length and the degree to which the protein sequences on the ends of the CDR3 match the corresponding germline gene sequences (Figure 1\u2014figure supplement 2).\n\nAs a baseline for comparison, we combined OLGA, a sophisticated recombination model (Sethna et al., 2018), with a simplified version of the selection model used in Elhanati et al. (2014), together which we will denote OLGA.Q. Our selection component $Q$ is parameterized by triples consisting of V gene identity, J gene identity, and CDR3 length, resulting in a model with about 14,000 parameters. This is a simpler model than the general Elhanati et al. (2014) model, which allows for selection based on CDR3 amino acid composition. However, it is a richer model than any models used by the same group since the publication of Elhanati et al. (2014), such as the one used to find condition-associated immune receptors in Pogorelyy et al. (2018b)\u00a0and Pogorelyy et al. (2018c). Sethna et al. (2018) suggest probabilistically evaluating vaccine targets using OLGA directly and no selection model at all. In any case, a\u00a0software implementation of the general Elhanati et al. (2014) model, for which training is highly involved, is not currently available.\n\n### VAE models predict cohort frequency\n\nWe wished to understand the ability of basic, count_match, and OLGA.Q to estimate the frequency with which a TCR appears in a given cohort, both when the TCR is contained in the training set (\u2018train\u2019) and when it is not (\u2018test\u2019). Here we define \u2018cohort count\u2019 for a collection of repertoires to be the number of times a given TCR amino acid sequence appeared in the output files from the ImmunoSEQ assay (Adaptive Biotechnologies, Seattle, WA, USA) for those repertoires (ignoring the template abundance column). Multiple nucleotide occurrences of a given TCR protein sequence contribute separately to this number. Define $c$ to be the cohort count vector for the data set of Emerson et al. (2017), indexed by the TCR protein sequences with values being these cohort counts.\n\nTo assess out-of-sample performance, we first partitioned $c$ into $c_{train}$ and $c_{test}$ with a 50/50 split irrespective of abundance. We emphasize that there is no overlap between these collections of TCRs. To obtain a training set, we drew 200,000 sequences from the multinomial distribution induced by $c_{train}$. We then trained basic and OLGA.Q using these sequences. The trained models yield per-sequence probability distributions: $P_{VAE}$ for the basic VAE and $P$OLGA.Q for OLGA.Q. We evaluated each of these probabilities as well as the cohort frequency for 10,000 sequences drawn multinomially from $c_{test}$ or $c_{train}$.\n\nWe performed this procedure for the entire cohort, but also restricting the cohort for training to a randomly-selected, smaller number of subjects while still comparing to frequency estimates using the whole cohort.\n\nWe found that VAE models can predict cohort frequency for out-of-sample TCR sequences (Figure 2). As the number of samples increases, the scatter of points decreases and the difference between training and testing samples also decreases. With 666 samples, this results in an $R^{2}$ value for the best-fit line on the log-log scale of 0.258 for $P$OLGA.Q and an $R^{2}$ value of 0.442 for $P_{VAE}$ on the test set (Figure 2\u2014figure supplement 1). When we increased the number of training sequences five-fold to 1 million, $R^{2}$s increased slightly to 0.268 for $P$OLGA.Q and 0.474 for $P_{VAE}$. Recall that these correlation measures include the full scale of frequencies, including very noisy frequency estimates on the lower end of the scale. Also, we make no efforts to account for sequencing error above the methods used in DeWitt et al. (2018). We note that higher correlations have been observed for an OLGA.Q-type model when calculating probability of CDR3 only, restricting to sequences found in an epitope database, and smoothing using a single amino acid mismatch (Pogorelyy et al., 2018a).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/46935/elife-46935-fig2-v1.jpg)\n\n**Figure 2.:** Plot shows the (natural) log frequency in the entire cohort, restricted to TCRs appearing in the subset of subjects, versus the probability according to $P$OLGA.Q and $P_{VAE}$ for the basic model. Results partitioned into when the TCR appeared in the training set (\u2018train\u2019) and when it did not (\u2018test\u2019). Probabilities for each estimator normalized to sum to one across the collection of sequences represented in the plots.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/46935/elife-46935-fig2-figsupp1-v1.jpg)\n\n### VAE models learn the rules of VDJ recombination\n\nTCR $\\beta$ chains are generated via VDJ recombination, a process in which germline-encoded genes are randomly chosen from a pool, trimmed a random amount, and then joined together with random nucleotide insertions in between. This recombination process leads to important structural characteristics in the generated sequences. Specifically, because the beginning of the CDR3 region is encoded by the V gene, and the end by the J gene, there is a strong correlation between the V and J gene identities and the CDR3 sequence.\n\nThe probabilistic models considered here differ in the extent to which they explicitly model this process. On one end of the spectrum, the OLGA.Q model is built on an explicit model of nucleotide VDJ recombination which emulates this process quite carefully, using our knowledge of the germline TCR nucleotide sequences and recombination mechanism (Murugan et al., 2012; Marcou et al., 2018; Sethna et al., 2018). The count_match model incorporates some of these aspects by making the germline V and J amino acid sequences for each input available to the decoder, and by scoring the degree to which the correct number of CDR3 amino acid positions of the reconstructed sequences match those of their corresponding V and J genes. The basic model predicts the germline genes and the CDR3 sequences as independent outputs of the VAE, and thus has no built-in prior information on the correlations between the germline genes and CDR3s.\n\nWe can understand the degree to which the models learn the VDJ recombination rules by evaluating them under the $P$OLGA.Q recombination-selection model. If the VAE models respect the rules of VDJ recombination, they will generate sequences with a $P$OLGA.Q comparable to that of real sequences, while if they do not respect these rules, they should get a low $P$OLGA.Q. This is a stringent criterion: a single amino acid change towards the $3^{\u2032}$ end of the CDR3 can cause $P$OLGA.Q to drop precipitously. For example, OLGA gives (TRBV5-1, TRBJ2-6, CASSFSGSGANVLTF) a relatively high probability, while the same TCR with a single T switched to Q (TRBV5-1, TRBJ2-6, CASSFSGSGANVLQF) is assigned probability zero.\n\nTo test the models\u2019 compliance with the rules of VDJ recombination, we used the data of De Neuter et al. (2019), which consists of TCR $\\beta$ sequences from 33 subjects, as follows. We randomly split the data so that the repertoires of 22 subjects were used for training, and the remaining 11 subjects\u2019 repertoires were used for testing (with one repertoire used for each subject). Each of the 22 training repertoires was randomly downsampled to 20,000 sequences to standardize the contribution of each repertoire to the training set; these samples were then pooled. 100,000 sequences from this pool were randomly selected to train the models, including the $Q$ factor of OLGA.Q. We then evaluated the distribution of $P$OLGA.Q on 10,000 sequences from each of the held-out test repertoires as well as 10,000 sequences generated from each of the three models.\n\nWe found evidence that the VAE models do indeed learn the rules of VDJ recombination (Figure 3). Although there is slight left skew in the $P$OLGA.Q distributions for VAE-generated sequences compared to the $P$OLGA.Q distributions of experimental repertoires, the behavior of the VAE-generated distributions reasonably matches the behavior of the experimental distributions. In fact, the $P$OLGA.Q distribution for OLGA.Q-generated sequences seems to exhibit more left skew than the $P$OLGA.Q distributions for VAE-generated sequences, although the three distributions are for the most part comparable. Perhaps surprisingly, the count_match model that encodes germline amino acid information resulted in a very small improvement in terms of recombination probability compared to the basic model, which does not explicitly encode any dependence between a TCR\u2019s germline gene usage and CDR3 sequence.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/46935/elife-46935-fig3-v1.jpg)\n\n**Figure 3.:** Here we show the distribution of log-probability of generation according to the OLGA.Q model for a panel of sequences from 11 test repertoires (gray) as well as simulated sequences from the basic, count_match, and OLGA.Q models.\n\n### VAE models generalize to unseen sequences and learn more than a simple OLGA.Q\n\nNext, we set out to determine whether the VAE models were simply memorizing and regurgitating training sequences. Such behavior is a persistent concern for deep generative models (Arora et al., 2017; Arora and Zhang, 2017). Although the close correspondence between test and train performance in the above frequency estimation suggests model generalization, it does not directly address this issue.\n\nTo evaluate out-of-sample probability estimation, we used the De Neuter et al. (2019) data as in the previous section to evaluate $P_{VAE}$ under the basic model rather than $P$OLGA.Q. If the VAE were regurgitating training sequences, it should consistently assign higher $P_{VAE}$ to sequences it generates compared to held-out test sequences. Instead, we found that the $P_{VAE}$ probabilities for VAE-generated sequences closely follow probabilities for test sequences (Figure 4), for both basic and count_match. We also observed that the OLGA.Q-generated sequences are consistently assigned a lower $P_{VAE}$ on average than either test sequences or VAE-generated sequences, indicating the VAE learns characteristics of real sequences not captured by the formulation of OLGA.Q used here.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/46935/elife-46935-fig4-v1.jpg)\n\n**Figure 4.:** Sequences generated by the VAE models show a similar distribution of $P_{VAE}$ compared to real sequences.Here we show the distribution of the log probability of generation according to the OLGA.Q model for a panel of sequences from 11 test repertoires (gray) as well as simulated sequences from the basic, count_match, and OLGA.Q models.\n\n### VAE models generate sequences with similar characteristics to real sequences\n\nWe next sought to quantify the similarity of model-generated sequences to real sequences, for each of the three models in consideration. To accomplish this task, we used the sumrep package (Olson et al., 2019)\u00a0(https://github.com/matsengrp/sumrep/), a collaborative effort of the AIRR (Breden et al., 2017; Rubelt et al., 2017) software working group. This package calculates many summary statistics on immune receptor sequence repertoires and provides functions for comparing these summaries. While these summaries are not of direct interest for this application, they comprise simple and relevant means of summarizing the abstract, high-dimensional distribution of TCRs. Collectively, these summary comparisons allow for robust model validation without appealing to the models themselves for assessment. We found agreement between simulated and test repertoires in some respects, with the performance of the model depending on the summary statistic (Figure 5).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/46935/elife-46935-fig5-v1.jpg)\n\n**Figure 5.:** Each colored point represents the divergence of a summary distribution computed on a simulated pool of sequences to the distribution of the same summary on a set of sequences drawn from one of 11 repertoires (Figure 5\u2014figure supplement 1). Each black '+' represents a similar divergence but with a random selection from the training data rather than a simulated pool of sequences. A lower divergence means more similarity with respect to the given summary. The following summary statistics, applied to the CDR3 amino acid sequence, use Jensen-Shannon divergence: acidity, aliphatic index, aromaticity, basicity, bulkiness, length (in amino acids), charge, GRAVY index, nearest neighbor Levenshtein distance, pairwise Levenshtein distance, and polarity. The following summary statistics use $\u2113_{1}$ divergence: CDR3 amino acid 2mer frequency, CDR3 amino acid frequency, J gene frequency, and V gene frequency.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/46935/elife-46935-fig5-figsupp1-v1.jpg)\n\n**Figure 5\u2014figure supplement 1.:** Nearest neighbor Levenshtein distance distributions for simulated sequences and test repertoire sequences. Each of the divergences in Figure 4 calculate a divergence between one of the colored lines (a simulated collection of sequences) and one of the gray lines (test repertoire sequences).\n\n![Figure 5\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/46935/elife-46935-fig5-figsupp2-v1.jpg)\n\n**Figure 5\u2014figure supplement 2.:** Analysis as in Figure 4 but instead on the multiple sclerosis samples from Emerson et al. (2013), combining CD4+ and CD8+ sorts. Training was performed on 16 repertoires, with nine repertoires for a held-out test set.\n\nAbove we showed how the VAE model learns the rules of VDJ recombination assessed by OLGA.Q likelihood distributions. Another assessment is to look directly at summary statistics like V/J gene usage, amino acid frequencies and CDR3 length. All models succeeded on J gene frequencies, with the VAE models performing worse in terms of V gene frequency, in particular the basic model. The models performed similarly in terms of CDR3 summaries, with OLGA.Q perhaps doing better in terms of CDR3 length, and the VAEs getting the correct distribution of nearest-neighbor distances (Figure 5\u2014figure supplement 1). The amino acid frequencies for the VAE models did not match those of the training data as closely as expected, although in some respects they appear better than OLGA.Q. Results were broadly consistent when analyzing a second data set (Figure 5\u2014figure supplement 2).\n\n### The latent space embedding\n\nWe wished to understand the factors that determine the position of TCRs within the latent embedding. To uncover these determinants, we performed standard principal components analysis (PCA) on De Neuter test data embedded in the VAE latent space. This reduces the 20-dimensional latent space embedding to the two dimensions which account for the largest variability in the data.\n\nWe found that this projection is structured according to V and J gene identity (Figure 6). In particular, the V gene determines one axis of the principal components projection, while the J gene determines another. In order to learn the next level of organization, we restricted the embedded TCR sequences to those using the most popular V and J genes \u2014 TCRBV30-01 and TCRBJ01-02 \u2014 and re-did the projection. This additional projection showed that CDR3 length was an important determinant of embedding location (Figure 6\u2014figure supplement 1).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/46935/elife-46935-fig6-v1.jpg)\n\n**Figure 6.:** Panel (a) is limited to the seven most popular V genes.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/46935/elife-46935-fig6-figsupp1-v1.jpg)\n\n**Figure 6\u2014figure supplement 1.:** PCA projection of embedded TCR sequences using the most popular V and J genes: TCRBV30-01 and TCRBJ01-02. When we do such a restriction, we see CDR3 length showing up as determining an axis in the latent space.\n\n## Discussion\n\nProbabilistic models of immune repertoires are powerful tools, with applications to finding disease-responsive TCRs (Pogorelyy et al., 2018c) and analyzing the forces dictating TCR sharing (Elhanati et al., 2018), among others. In this paper we applied deep learning to model TCR $\\beta$ repertoires, and used the resultant models to gain meaningful insights. Specifically, we use a semiparametric method that makes a single weak assumption: that there exists some small number of latent parameters that can be used to generate to the observed distribution. We make no assumptions about the function mapping from these parameters to the high-dimensional distribution space and learn it from the data. We have learned that this biology-agnostic approach can provide good results, even when compared to a previous approach that formalizes the considerable biological knowledge we have concerning the mechanism of VDJ recombination.\n\nWe find that these models have the following interesting features.\n\nFurthermore, our efforts to inject biological knowledge into the deep learning framework did not significantly improve performance.\n\nHowever, these models also have some important drawbacks. Most importantly, as is often the case for models parametrized by neural networks, these models are not directly interpretable. Although we have identified some structure in the latent space, further details may be difficult to ascertain. Besides the difficulty in interpreting the neural network weights, we did not engineer the model architectures with mechanism in mind. In addition, the models operate on amino acid sequences and thus cannot shed light on the VDJ recombination process, which operates at the nucleotide level. We also note that $P_{VAE}$, which relies on importance sampling, is more expensive to compute than $P$OLGA.Q.\n\nThe results presented here offer some interesting lessons concerning future development of deep probabilistic models for immune repertoires. Our model that had no a priori information about germline gene sequence performs very similarly, even when evaluated in terms of VDJ recombination likelihood, to one that deliberately attempts to recapitulate the amount of matching between germline gene and CDR3 amino acid sequences and includes germline CDR3 sequences in the untrained model. This may indicate that, given the volume of sequence data available, we should focus our efforts on the abstract problem of density estimation on the set of TCRs, rather than incorporating biological knowledge into our deep learning models.\n\nAlthough we performed a preliminary analysis of the latent embedding, this exclusively involved sequence characteristics directly available to the model. In future work, we hope to further unravel this embedding by comparing repertoires in the latent space, and by comparing sequences labeled with external characteristics. We also plan to deliver a pre-trained model that will enable biologists to evaluate the probability of seeing a naive B cell receptor (BCR) or TCR in a given population. Here we have restricted our attention to TCR $\\beta$ sequences, however, our methods apply with no modification to TCR $\\alpha$ chains. Contrasting the $\\alpha$ and $\\beta$ chains may yield interesting insights on the differences between the two generation processes. The most interesting insights will come from jointly modeling the two chains using large-scale $\\alpha\u2062\\beta$ paired TCR sequencing (Howie et al., 2015), which is a more complex process.\n\n## Materials and methods\n\n### Data\n\nOur goal was to model probability distributions on TCR $\\beta$ chain protein sequences. By the process of VDJ recombination, these sequences are uniquely determined by V and J gene identities and CDR3 amino acid sequence. Thus, for the purpose of this paper, we exclusively used triples of V gene, J gene, CDR3 amino acid sequence to represent TCR protein sequences.\n\nAll data was downloaded from https://clients.adaptivebiotech.com/immuneaccess.\u00a0We preprocessed the data to exclude sequences:\n\nWe also excluded any TCRs with TCRBJ02-05, which the internal Adaptive pipeline annotates incorrectly, and TCRBJ02-07, to which the default OLGA model assigns artifactually low probabilities. Model design and parameter tuning, including the sizes of hidden layers and the dimension of the latent space, was performed using the data of DeWitt et al. (2018). On this data we endeavored to decrease model size without incurring loss on held-out data within this data set. We found that the model was relatively robust to parameter perturbations as long as the number of parameters was not too small. Model evaluation was performed using the data sets described in the Results section.\n\n### Encoding TCR sequences\n\nThe CDR3 sequences were padded with gaps in the middle so that they are a fixed length of 30 amino acid/gap characters. Thus there is an equal number of amino acids on either end of the gaps for even length CDR3s, with one extra on the left side for odd length CDR3s. This resulting sequence is \u2018one-hot encoded,\u2019 meaning that each amino acid at each site is represented with 0/1 for absence/presence, with an additional dimension for \u2018gap\u2019 to make a 21-dimensional space (Figure 7). V and J genes are similarly encoded in 67- and 13-dimensional vectors, respectively, and all of these vectors are concatenated into a single large encoding vector. This vector is mapped to a latent embedding via a linear transformation that is learned during training (Biswas et al., 2018). In our case, there is one transformation for the V genes, one for the J genes, and one for amino acids. These transformations do not change dimension except for V gene identities, which are projected to a 30-dimensional space (Figure 7).\n\n![Figure 7.](https://cdn.elifesciences.org/articles/46935/elife-46935-fig7-v1.jpg)\n\n### Models\n\nHere we describe the basic and count_match models in detail. They are not exactly VAEs as originally defined in Kingma et al. (2014b) for two reasons. First, they are better categorized as $\\beta$-VAEs since they include a weight on the Kullback-Leibler divergence term of the training objective (Higgins et al., 2017). Namely, the loss is\n\n$$\n\u211b\u2062(\ud835\udc31,\ud835\udc33)+\\beta\u2062D_{KL}\u2062(q_{\u03d5}\u2062(\ud835\udc33|\ud835\udc31)\u2225p_{\\theta}\u2062(\ud835\udc33))\n$$\n\nwhere $\u211b$ is the reconstruction loss for $\ud835\udc31$ encoded as $\ud835\udc33$ (details below).\n\nSecond, they have multiple outputs that are scored by separate reconstruction loss functions. Our reconstruction loss is a linear combination of these loss functions. For example, the simplest \u2018basic\u2019 model produces three outputs: one for the V gene, one for the J gene, and one for the CDR3 sequence. It has two densely-connected layers for the encoder and two for the decoder (Figure 1\u2014figure supplement 1). The V and J gene identities are scored using categorical cross-entropy, while the CDR3 sequence is scored by the average categorical cross-entropy across sites.\n\nThe count_match model includes TCR germline information in the untrained model in such a way that it can count the number of V-germline-matching amino acids on the $5^{\u2032}$ end of the CDR3 and the number of J-germline-matching amino acids on the $3^{\u2032}$ end of the CDR3 (Figure 1\u2014figure supplement 2). Its loss function includes a component that scores these counts in terms of two-dimensional squared loss. This model also contains an explicit loss component for CDR3 length, which is also evaluated via squared loss.\n\nWe combine the multiple losses within each model into a weighted linear combination which yields a single overall reconstruction loss function for optimization. Weights were determined by multivariate linear regression, minimizing the squared difference between the log likelihood and this reconstruction loss on a validation set (see next section for definition of the validation set used in training). This resulted in a marginal improvement in performance on the (DeWitt et al., 2018) data and fitting was not done again. Due to these modifications, our loss function cannot be interpreted in terms of the variational evidence lower bound (ELBO).\n\n### Training\n\nFor the purposes of fitting, the training data was split into true-training and validation sets: the former was used for fitting, while the latter was used to assess error during training (which provided a stopping criterion). \u2018Test\u2019 data was completely held out from the training procedure.\n\nInspired by the work of S\u00f8nderby et al. (2016), we implemented a $\\beta$ schedule during training such that training begins with $\\beta=0$ and then linearly increases every training epoch until its final value. We extended this procedure by implementing a collection of pre-training phases that start with randomized weights and train for a fixed number of epochs using the $\\beta$ schedule. The optimal weights, according to the validation loss, were used as the starting weights for a full optimization, which terminates when validation loss does not improve for a fixed number of epochs or until a maximum number of epochs is reached. Training was done using the Adam optimizer Kingma and Ba (2014a) implemented in Keras (Chollet, 2015).\n\n### Picking \u03b2\n\nAs described above, our complete loss function is a sum of a reconstruction loss plus $\\beta$ times a Kullback-Leibler (KL) divergence term $D_{KL}\u2062(q_{\u03d5}\u2062(\ud835\udc33|\ud835\udc31)\u2225p_{\\theta}\u2062(\ud835\udc33))$ describing the divergence of the probabilistic encoder map $q$ to the prior $p$. This KL divergence term regularizes the optimization by encouraging a structured embedding of TCRs.\n\nWe tested the $\\beta$ parameter in an evenly distributed range with seven values from 0.625 to 1 on the DeWitt et al. (2018) data set. We found that $\\beta$ slightly impacted $P_{VAE}$ when evaluated on test sequences, with larger values of $\\beta$ being slightly preferred (Figure 8). On the other hand, $\\beta$ strongly impacted the agreement of summary statistics of generated sequences with observed sequences in test repertoires (Figure 9). To balance these evaluative and generative objectives, we fixed $\\beta$ to be 0.75. This choice was confirmed by running the same analysis on the data of Emerson et al. (2013) (Figure 9\u2014figure supplement 1) and De Neuter et al. (2019) (Figure 9\u2014figure supplement 2), both of which yielded similar results.\n\n![Figure 8.](https://cdn.elifesciences.org/articles/46935/elife-46935-fig8-v1.jpg)\n\n**Figure 8.:** The effect of $\\beta$ on $P_{VAE}$ evaluated on test sequences for the data of DeWitt et al. (2018), overall (a) and near the peak (b).\n\n![Figure 9.](https://cdn.elifesciences.org/articles/46935/elife-46935-fig9-v1.jpg)\n\n**Figure 9.:** The effect of $\\beta$ on summary divergences between generated sequences and observed test sequences as in Figure 4, using the data of DeWitt et al. (2018).OLGA.Q is also run separately for each $\\beta$ value; because $\\beta$ has no influence on OLGA.Q, the observed variation is simply due to differences between random samples.\n\n![Figure 9\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/46935/elife-46935-fig9-figsupp1-v1.jpg)\n\n**Figure 9\u2014figure supplement 1.:** Summary statistic divergences by $\\beta$ on the data of Emerson et al. (2013).Analysis identical to that in Figure 7.\n\n![Figure 9\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/46935/elife-46935-fig9-figsupp2-v1.jpg)\n\n**Figure 9\u2014figure supplement 2.:** Analysis identical to that in Figure 7.\n\n### Importance sampling\n\n$P_{VAE}$ denotes the probability $p\u2062(\ud835\udc31)$ of the VAE generating $\ud835\udc31$ when decoding a sample from the prior in the latent space. In principle we could calculate this as the expectation of $p\u2062(\ud835\udc31|\ud835\udc33)$ where $\ud835\udc33$ is drawn from $p\u2062(\ud835\udc33)$, but this would be very inefficient.\n\nInstead, we use importance sampling, calculating\n\n$$\np\u2062(\ud835\udc31)=\ud835\udd3c_{\ud835\udc33\u223cq_{\u03d5}\u2062(\ud835\udc33|\ud835\udc31)}\u2062[p_{\\theta}\u2062(\ud835\udc31|\ud835\udc33)\u2062\\frac{p_{\\theta}\u2062(\ud835\udc33)}{q_{\u03d5}\u2062(\ud835\udc33|\ud835\udc31)}].\n$$\n\nHere\n\nWe found that 100 iterations of importance sampling yielded stable $P_{VAE}$ estimates for our data, but used 500 iterations in the results presented here to ensure convergence.\n\n### OLGA and selection model\n\nWe used OLGA (Sethna et al., 2018) with its default model parameters to evaluate recombination probabilities. We layered a selection model on top of this recombination model via a multiplicative factor $Q$, parameterized in terms of triples consisting of V gene identity, J gene identity, and CDR3 length. The roughly 14,000 parameters of this selection model $Q$ were estimated from the same training data used to train the VAE in each case. As derived in the supplementary material of Elhanati et al. (2014), the maximum likelihood estimate of $Q$ for a given triple is the ratio of the empirical frequency of the triple in the data to the probability of observing the triple based on the recombination model. We truncated this ratio at 100 for numerical stability. We then used rejection sampling to sample from the corresponding $P$OLGA.Q distribution. Code for estimating the OLGA.Q model parameters is included in our software package.\n\n### Implementation and pipeline\n\nWe implemented our models in a modular fashion with extensive comments so that others can understand, reproduce, and build upon our work. Code and pipelines are available at https://github.com/matsengrp/vampire/\u00a0(Matsen, 2019a; copy archived at https://github.com/elifesciences-publications/vampire), while scripts and Jupyter notebooks (Kluyver et al., 2016) specific to this paper are available at\u00a0https://github.com/matsengrp/vampire-analysis-1/\u00a0(Matsen, 2019b; copy archived at https://github.com/elifesciences-publications/vampire-analysis-1). All models were implemented in Python 3.6 using Keras 2.2.4 (Chollet, 2015) and the Tensorflow 1.11.0 backend (Abadi et al., 2015). Our pipeline is written with SCons (https://scons.org) and nestly (https://pythonhosted.org/nestly/; McCoy et al., 2013). The sumrep package depends heavily on the Immcantation framework (https://immcantation.readthedocs.io/; Gupta et al., 2015).\n\nThe following tools were also especially helpful:\n",
+      "created_at": "2025-12-02T12:01:57.467474Z"
+    },
+    {
+      "id": "7e9ebb73-6a2d-4122-96fe-e33d28bfab20",
+      "submission_id": "496eef87-78cc-44ce-8097-e14c7252b727",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Arup K Chakraborty, Massachusetts Institute of Technology United States\n\nReviewers:\n- Eric Huseby, University of Massachusetts\n- Curtis Callan, Princeton University United States\n\n## Review text\n\nDOI: [10.7554/eLife.46935.029](https://doi.org/10.7554/eLife.46935.029)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Deep generative models for T cell receptor protein sequences\" for consideration by eLife. Your article has been reviewed by two peer reviewers, and the evaluation has been overseen by Arup Chakraborty as the Senior and Reviewing Editor. The following individuals involved in review of your submission have agreed to reveal their identity: Eric Huseby (Reviewer #1); Curtis Callan (Reviewer #2).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nThe paper presents a method, based on a certain generic machine learning protocol, for using T cell receptor (TCR) sequence data to capture the probability distribution from which this sequence data is drawn. This is a nontrivial thing to do, since one can easily convince oneself that actual data is sparsely drawn from the underlying, very high-entropy, distribution on sequence space. To capture the true distribution from sparse data, one must make restrictive assumptions on the form of that distribution, and the heart of the machine learning protocol is the assumption that the distributions to be learned are Gaussian (or Bernoulli). This is a very restrictive assumption, but it apparently works very well in a number of contexts, such as computer vision. You ask whether this approach can capture the diversity of the immune system, and present evidence that the answer is \"yes\". Therefore, we think this is a valuable contribution to our developing quantitative understanding of the stochastic nature of the adaptive immune system. We have concerns about the readability of the presentation (for the non-experts in machine learning), some technical issues, and some aspects of the way in which you present the significance of their work. These are noted below.\n\nEssential revisions:\n\n1) It would be helpful (in the Introduction, or at the relevant places in the Results) to describe the current understanding of the primary events of VDJ recombination. On the same line of discussion, it would be helpful to describe what events have been learned, and articulate clearly to a broad audience why this particular package is better than previous attempts to model TCR repertoires.\n\n2) Few of the intended readers will be familiar with the Kingma and Welling (KW) approach and the conceptual context of that approach needs to be explained in much more concrete detail. To start with it has to be said explicitly that the encoder between data x and latent variables z is an explicit parametrized (Gaussian we think) probability distribution; similarly, it has to be said that the decoder from z to data variables x is also an explicit parametrized distribution (Bernoulli we think). It also has to be said that the prior on latent variables z is a very special distribution (isotropic unit variance on the z variable space, we think). Then it has to be said that the neural nets behind the encoder and decoder are actually maps from variables like x to the parameters of the various parametric distributions. As another specific clarity issue, the dimension of the latent space is not explicitly stated up front; one has to wait until somewhere deep in Materials and methods to realize that 20 is the chosen value (there is no discussion of why 20 as opposed to 200). More generally, There should be some discussion of why the KW method (statistics are Gaussian) has any reason to work in the context of understanding TCR statistics. An effort to rewrite the exposition so as to convey the conceptual heart of the method more clearly and explicitly would greatly enhance the utility of the paper to the quantitative biology readership.\n\n3) It is argued that the VAE models can predict cohort frequencies at an R2 value of ~0.45, whereas a previous OLGA model works at an R2 value of ~0.25. In absolute terms, the VAE model is better, however, neither works particularly well; both have R2 values less than a minimal cutoff of 0.5. Much more clarity is required in describing the comparison between the two methods.\n\nOLGA is a different way of capturing TCR sequence statistics, and it relies on the idea that there are biological hidden variables (associated with the VDJ recombination process) whose statistics can be inferred from sequence data and then these statistics used to compute probabilities of finding individual TCR sequences in new data. OLGA doesn't include selection effects that happen post-VDJ recombination and that shape the statistics of observed in-frame TCR sequences. This is where the Q in OLGA.Q comes in. You construct a version of a selection model which is too simplistic to do a good job of capturing selection effects. Comparing the results of their machine learning approach to OLGA.Q to say that former captures \"more\" aspects of TCR sequence statistics than the latter doesn't seem very appropriate. Are TRAV rearrangements considered? TRBV/TRBJ rearrangement and usage is largely ignorant of selection context. TCRb rearrangement occurs prior to TCRa rearrangement and its usage is largely ligand independent. TCRa rearrangement is later, and subject to strong selective pressures. In particular, if TCRa rearrangement produces a non-signaling TCR, TCRa rearrangement occurs again with more 3' gene segments. Control mechanisms and the \"rules\" that govern TCRa processes are much less well understood. These aspects are not accounted for, and should be stated.\n\n4) Because it assumes that Gaussian core distributions underlie the observed data, it is by no means obvious that the Kingma and Welling method is appropriate for TCR data. The most attractive feature of the KW approach is that it provides a method for computing the intrinsic probability of finding any specific TCR clone in a new data sample (what the authors call PVAE). The paper shows histograms of this quantity over various data sets, and these histograms have the striking feature that the probability values start small and range over more than ten orders of magnitude. Now the OLGA method, taking a totally different approach, can also calculate the one-shot probability (called Pgen) of any specific clone being created in a single VDJ recombination event and one can plot the same sort of histogram of generation probabilities. What is interesting is that the two approaches produce very similar generation probability histograms. The further modifications to OLGA predictions due to selection might change probabilities by modest factors, but we are talking about probabilities that range over more than ten orders of magnitude, so the approximate compatibility of the two methods is evidence that the KW approach is doing a good job of capturing the stochastic effects of selection. The relatively poor fit of both methods may also reflect TCR sequencing errors (PCR amplification and sample limited constraints) as well as the more significant problem alluded to in the end of the Discussion. That is, how to deal with the error associated with point estimates of low and very low frequency TCR rearrangements. This is illustrated in Figure 2 by the triangle shape of the log-log plots, where there is a greater level of divergence at low versus high frequency TCRs. Some discussion or accounting for these issues would be help to the reader.\n",
+      "created_at": "2025-12-02T12:01:57.467474Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T12:01:57.467474Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T12:01:57.467474Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "6c2024c5-fca2-4617-9823-9988bbad12c2",
+      "content_id": "f13dba0f-5c05-453a-a5e0-e509f73e051b",
+      "claim_id": "C1",
+      "claim": "T cell receptors (TCRs) are composed of an \u03b1 and a \u03b2 protein chain.",
+      "claim_type": "EXPLICIT",
+      "source": "T cell receptors (TCRs) are composed of an \u03b1 and a \u03b2 protein chain, both originating from a random V(D)J recombination process, followed by selective steps that ensure functionality and limit auto-reactivity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the introduction as a basic fact about TCR structure.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:01:57.467474Z"
+    },
+    {
+      "id": "1dbac97f-cffe-48ed-b11e-15ed872cc22d",
+      "content_id": "f13dba0f-5c05-453a-a5e0-e509f73e051b",
+      "claim_id": "C2",
+      "claim": "Both TCR \u03b1 and \u03b2 chains originate from a random V(D)J recombination process.",
+      "claim_type": "EXPLICIT",
+      "source": "T cell receptors (TCRs) are composed of an \u03b1 and a \u03b2 protein chain, both originating from a random V(D)J recombination process, followed by selective steps that ensure functionality and limit auto-reactivity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the introduction as established biological knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:01:57.467474Z"
+    },
+    {
+      "id": "daff016c-fb5e-4fbc-bad5-402c67aedec9",
+      "content_id": "f13dba0f-5c05-453a-a5e0-e509f73e051b",
+      "claim_id": "C3",
+      "claim": "TCR generation is followed by selective steps that ensure functionality and limit auto-reactivity.",
+      "claim_type": "EXPLICIT",
+      "source": "T cell receptors (TCRs) are composed of an \u03b1 and a \u03b2 protein chain, both originating from a random V(D)J recombination process, followed by selective steps that ensure functionality and limit auto-reactivity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the introduction as established biological knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:01:57.467474Z"
+    },
+    {
+      "id": "0fee38c5-12ce-413a-bf6f-d6cd4194a818",
+      "content_id": "f13dba0f-5c05-453a-a5e0-e509f73e051b",
+      "claim_id": "C4",
+      "claim": "The \u03b2 chain is generated first in TCR recombination, where a D and J gene are recombined using random trimming and joining with random nucleotides.",
+      "claim_type": "EXPLICIT",
+      "source": "The process first occurs for the \u03b2 chain, where first a D and a J gene are recombined using random trimming and joining with random nucleotides, then this DJ segment is recombined with a V gene via an analogous process.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the introduction as established biological knowledge about VDJ recombination.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:01:57.467474Z"
+    },
+    {
+      "id": "e73516a5-196a-4111-a6f7-88cc8157069d",
+      "content_id": "f13dba0f-5c05-453a-a5e0-e509f73e051b",
+      "claim_id": "C5",
+      "claim": "After D and J recombination in the \u03b2 chain, the DJ segment is recombined with a V gene via an analogous process.",
+      "claim_type": "EXPLICIT",
+      "source": "The process first occurs for the \u03b2 chain, where first a D and a J gene are recombined using random trimming and joining with random nucleotides, then this DJ segment is recombined with a V gene via an analogous process.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the introduction as established biological knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:01:57.467474Z"
+    },
+    {
+      "id": "fe3815d0-4755-462c-93f1-29e80bd1c050",
+      "content_id": "f13dba0f-5c05-453a-a5e0-e509f73e051b",
+      "claim_id": "C6",
+      "claim": "A small cell expansion occurs after the \u03b2 chain has been generated.",
+      "claim_type": "EXPLICIT",
+      "source": "After the \u03b2 chain has been generated, a small cell expansion occurs followed by a similar \u03b1 chain recombination, although without a D gene.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the introduction as established biological knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:01:57.467474Z"
+    },
+    {
+      "id": "bc0ae70f-fb6f-4b11-885d-7bff7d83379b",
+      "content_id": "f13dba0f-5c05-453a-a5e0-e509f73e051b",
+      "claim_id": "C7",
+      "claim": "\u03b1 chain recombination is similar to \u03b2 chain recombination but occurs without a D gene.",
+      "claim_type": "EXPLICIT",
+      "source": "After the \u03b2 chain has been generated, a small cell expansion occurs followed by a similar \u03b1 chain recombination, although without a D gene.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the introduction as established biological knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:01:57.467474Z"
+    },
+    {
+      "id": "cf9812b0-49ea-421a-9858-2a74e10f6391",
+      "content_id": "f13dba0f-5c05-453a-a5e0-e509f73e051b",
+      "claim_id": "C8",
+      "claim": "The naive T cell population consists of T cells that have undergone V(D)J recombination and MHC selection but not yet encountered antigen.",
+      "claim_type": "EXPLICIT",
+      "source": "The naive T cell population consists of T cells that have undergone V(D)J recombination and MHC selection but not yet encountered antigen.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the introduction as a definition.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:01:57.467474Z"
+    },
+    {
+      "id": "626296eb-a6f8-4f4e-88e1-a97132700d4c",
+      "content_id": "f13dba0f-5c05-453a-a5e0-e509f73e051b",
+      "claim_id": "C9",
+      "claim": "T cells that bind antigen increase in frequency through the clonal selection mechanism of immune memory.",
+      "claim_type": "EXPLICIT",
+      "source": "In a system known as the clonal selection mechanism of immune memory, T cells that bind antigen increase in frequency, thus increasing the frequency of their corresponding TCR sequences.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the introduction as established immunological knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:01:57.467474Z"
+    },
+    {
+      "id": "cb445f08-445d-4f43-a7fc-153083973c06",
+      "content_id": "f13dba0f-5c05-453a-a5e0-e509f73e051b",
+      "claim_id": "C10",
+      "claim": "Observing sequences that are amplified in a repertoire indicates that they perform important functions like targeting yellow fever or cytomegalovirus.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, observing sequences that are amplified in a repertoire indicates that they perform important functions like targeting yellow fewer or cytomegalovirus (Pogorelyy et al., 2018c; Pogorelyy et al., 2018d; Emerson et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:01:57.467474Z"
+    },
+    {
+      "id": "39d76284-d1ef-4589-8eb0-d1a9f84d9140",
+      "content_id": "f13dba0f-5c05-453a-a5e0-e509f73e051b",
+      "claim_id": "C11",
+      "claim": "Biases of the V(D)J recombination process significantly explain the degree of TCR sequence sharing between individuals.",
+      "claim_type": "EXPLICIT",
+      "source": "As another application, (Elhanati et al., 2018) used probability calculations to predict the frequency of shared TCR sequences between individuals, showing that biases of the V(D)J recombination process significantly explain the degree of sharing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Elhanati et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:01:57.467474Z"
+    },
+    {
+      "id": "d5468913-c9cb-481b-bf04-e4d529c24ae2",
+      "content_id": "f13dba0f-5c05-453a-a5e0-e509f73e051b",
+      "claim_id": "C12",
+      "claim": "The appearance of a given TCR sequence in the blood means it was generated by V(D)J recombination and subsequently passed thymic selection.",
+      "claim_type": "EXPLICIT",
+      "source": "The appearance of a given TCR sequence in the blood of an individual means that it was generated by V(D)J recombination and subsequently passed thymic selection, which removes TCRs with improper binding to MHC as well as self-reactive TCRs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the introduction as established biological knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:01:57.467474Z"
+    },
+    {
+      "id": "d3b3168b-3c8d-466e-83c9-5aad5334e5bc",
+      "content_id": "f13dba0f-5c05-453a-a5e0-e509f73e051b",
+      "claim_id": "C13",
+      "claim": "Thymic selection removes TCRs with improper binding to MHC as well as self-reactive TCRs.",
+      "claim_type": "EXPLICIT",
+      "source": "The appearance of a given TCR sequence in the blood of an individual means that it was generated by V(D)J recombination and subsequently passed thymic selection, which removes TCRs with improper binding to MHC as well as self-reactive TCRs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the introduction as established biological knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:01:57.467474Z"
+    },
+    {
+      "id": "e533f318-7486-4fc0-9aa7-703faf3e6e2c",
+      "content_id": "f13dba0f-5c05-453a-a5e0-e509f73e051b",
+      "claim_id": "C14",
+      "claim": "Previous work approached the problem of inferring TCR generation by calculating the probability of a sequence's V(D)J recombination using a probabilistic graphical model, multiplying this probability by a thymic selection factor Q, and scaling accordingly.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous work (Elhanati et al., 2014; Pogorelyy et al., 2018c) approached the problem of inferring this process by calculating the probability of a sequence's V(D)J recombination using a probabilistic graphical model, multiplying this probability by a thymic selection factor Q, and scaling accordingly.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:01:57.467474Z"
+    },
+    {
+      "id": "5af4472e-240e-478e-b075-820013677a31",
+      "content_id": "f13dba0f-5c05-453a-a5e0-e509f73e051b",
+      "claim_id": "C19",
+      "claim": "Two VAE models were developed: a basic model and a count_match model.",
+      "claim_type": "EXPLICIT",
+      "source": "We developed two VAE models for such protein sequences: a simple one, denoted basic and a more complex model, denoted count_match.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the methods overview section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:01:57.467474Z"
+    },
+    {
+      "id": "a9856bea-25ad-43e9-9cd3-6e5e3a663c65",
+      "content_id": "f13dba0f-5c05-453a-a5e0-e509f73e051b",
+      "claim_id": "C20",
+      "claim": "The basic model does not have any information about the content of germline genes built into the model.",
+      "claim_type": "EXPLICIT",
+      "source": "The basic model does not have any information about the content of germline genes built into the model and was trained according to a simple loss function (Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the methods overview section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:01:57.467474Z"
+    },
+    {
+      "id": "89f9925e-ae56-4a24-825e-161175797b30",
+      "content_id": "f13dba0f-5c05-453a-a5e0-e509f73e051b",
+      "claim_id": "C21",
+      "claim": "The count_match model brings in information about the protein sequence of the germline genes.",
+      "claim_type": "EXPLICIT",
+      "source": "The count_match model brings in information about the protein sequence of the germline genes and has a more complex loss function involving CDR3 length and the degree to which the protein sequences on the ends of the CDR3 match the corresponding germline gene sequences (Figure 1\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the methods overview section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:01:57.467474Z"
+    },
+    {
+      "id": "4fb398e9-7149-47af-ac36-6d1a3e14084e",
+      "content_id": "f13dba0f-5c05-453a-a5e0-e509f73e051b",
+      "claim_id": "C22",
+      "claim": "The count_match model has a more complex loss function involving CDR3 length and the degree to which the protein sequences on the ends of the CDR3 match the corresponding germline gene sequences.",
+      "claim_type": "EXPLICIT",
+      "source": "The count_match model brings in information about the protein sequence of the germline genes and has a more complex loss function involving CDR3 length and the degree to which the protein sequences on the ends of the CDR3 match the corresponding germline gene sequences (Figure 1\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the methods overview section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:01:57.467474Z"
+    },
+    {
+      "id": "30265d2e-19b2-4484-9681-2a8a50c188a6",
+      "content_id": "f13dba0f-5c05-453a-a5e0-e509f73e051b",
+      "claim_id": "C23",
+      "claim": "OLGA.Q is a combination of OLGA (a sophisticated recombination model) with a simplified version of the selection model used in Elhanati et al. (2014).",
+      "claim_type": "EXPLICIT",
+      "source": "As a baseline for comparison, we combined OLGA, a sophisticated recombination model (Sethna et al., 2018), with a simplified version of the selection model used in Elhanati et al. (2014), together which we will denote OLGA.Q.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the methods overview section.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:01:57.467474Z"
+    },
+    {
+      "id": "d72d91d8-4123-4eaf-a394-ffd01afc5be7",
+      "content_id": "f13dba0f-5c05-453a-a5e0-e509f73e051b",
+      "claim_id": "C24",
+      "claim": "The selection component Q is parameterized by triples consisting of V gene identity, J gene identity, and CDR3 length, resulting in a model with about 14,000 parameters.",
+      "claim_type": "EXPLICIT",
+      "source": "Our selection component Q is parameterized by triples consisting of V gene identity, J gene identity, and CDR3 length, resulting in a model with about 14,000 parameters.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the methods overview section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:01:57.467474Z"
+    },
+    {
+      "id": "78c0ef7e-f6ee-42bb-9299-326f4f6c0ffa",
+      "content_id": "f13dba0f-5c05-453a-a5e0-e509f73e051b",
+      "claim_id": "C27",
+      "claim": "TCR \u03b2 chains are generated via VDJ recombination, a process in which germline-encoded genes are randomly chosen from a pool, trimmed a random amount, and then joined together with random nucleotide insertions in between.",
+      "claim_type": "EXPLICIT",
+      "source": "TCR \u03b2 chains are generated via VDJ recombination, a process in which germline-encoded genes are randomly chosen from a pool, trimmed a random amount, and then joined together with random nucleotide insertions in between.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the results section as established biological knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:01:57.467474Z"
+    },
+    {
+      "id": "5cb445d7-615e-464b-8abe-5d9a7ca12141",
+      "content_id": "f13dba0f-5c05-453a-a5e0-e509f73e051b",
+      "claim_id": "C28",
+      "claim": "There is a strong correlation between the V and J gene identities and the CDR3 sequence because the beginning of the CDR3 region is encoded by the V gene and the end by the J gene.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, because the beginning of the CDR3 region is encoded by the V gene, and the end by the J gene, there is a strong correlation between the V and J gene identities and the CDR3 sequence.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the results section as established biological knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:01:57.467474Z"
+    },
+    {
+      "id": "67e49e97-066b-42d1-9116-90ba575be3e4",
+      "content_id": "f13dba0f-5c05-453a-a5e0-e509f73e051b",
+      "claim_id": "C29",
+      "claim": "The OLGA.Q model is built on an explicit model of nucleotide VDJ recombination which emulates this process quite carefully, using knowledge of the germline TCR nucleotide sequences and recombination mechanism.",
+      "claim_type": "EXPLICIT",
+      "source": "On one end of the spectrum, the OLGA.Q model is built on an explicit model of nucleotide VDJ recombination which emulates this process quite carefully, using our knowledge of the germline TCR nucleotide sequences and recombination mechanism (Murugan et al., 2012; Marcou et al., 2018; Sethna et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the results section and supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:01:57.467474Z"
+    },
+    {
+      "id": "4f463977-9ce9-446c-a12a-6fec0d4de4a8",
+      "content_id": "f13dba0f-5c05-453a-a5e0-e509f73e051b",
+      "claim_id": "C30",
+      "claim": "The count_match model incorporates germline V and J amino acid sequences for each input available to the decoder.",
+      "claim_type": "EXPLICIT",
+      "source": "The count_match model incorporates some of these aspects by making the germline V and J amino acid sequences for each input available to the decoder, and by scoring the degree to which the correct number of CDR3 amino acid positions of the reconstructed sequences match those of their corresponding V and J genes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the results section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:01:57.467474Z"
+    },
+    {
+      "id": "b8fb382a-b4de-418e-849c-e52440667474",
+      "content_id": "f13dba0f-5c05-453a-a5e0-e509f73e051b",
+      "claim_id": "C31",
+      "claim": "The basic model predicts the germline genes and the CDR3 sequences as independent outputs of the VAE.",
+      "claim_type": "EXPLICIT",
+      "source": "The basic model predicts the germline genes and the CDR3 sequences as independent outputs of the VAE, and thus has no built-in prior information on the correlations between the germline genes and CDR3s.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the results section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:01:57.467474Z"
+    },
+    {
+      "id": "64078aed-3d8e-41f7-aa85-a4ce0d4b4701",
+      "content_id": "f13dba0f-5c05-453a-a5e0-e509f73e051b",
+      "claim_id": "C32",
+      "claim": "A single amino acid change towards the 3\u2032 end of the CDR3 can cause POLGA.Q to drop precipitously.",
+      "claim_type": "EXPLICIT",
+      "source": "This is a stringent criterion: a single amino acid change towards the 3\u2032 end of the CDR3 can cause POLGA.Q to drop precipitously.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the results section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:01:57.467474Z"
+    },
+    {
+      "id": "61dd16a0-0264-48c5-ba39-15962bc584fa",
+      "content_id": "f13dba0f-5c05-453a-a5e0-e509f73e051b",
+      "claim_id": "C33",
+      "claim": "OLGA gives (TRBV5-1, TRBJ2-6, CASSFSGSGANVLTF) a relatively high probability, while the same TCR with a single T switched to Q (TRBV5-1, TRBJ2-6, CASSFSGSGANVLQF) is assigned probability zero.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, OLGA gives (TRBV5-1, TRBJ2-6, CASSFSGSGANVLTF) a relatively high probability, while the same TCR with a single T switched to Q (TRBV5-1, TRBJ2-6, CASSFSGSGANVLQF) is assigned probability zero.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the results section as an example.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:01:57.467474Z"
+    },
+    {
+      "id": "21d22816-2573-49ec-9bc8-50af82adeb7e",
+      "content_id": "f13dba0f-5c05-453a-a5e0-e509f73e051b",
+      "claim_id": "C34",
+      "claim": "The POLGA.Q distribution for OLGA.Q-generated sequences exhibits more left skew than the POLGA.Q distributions for VAE-generated sequences.",
+      "claim_type": "EXPLICIT",
+      "source": "In fact, the POLGA.Q distribution for OLGA.Q-generated sequences seems to exhibit more left skew than the POLGA.Q distributions for VAE-generated sequences, although the three distributions are for the most part comparable.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated directly in the results section and can be observed in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:01:57.467474Z"
+    },
+    {
+      "id": "45329da4-1bfb-42a4-b42a-3106d6e1b385",
+      "content_id": "f13dba0f-5c05-453a-a5e0-e509f73e051b",
+      "claim_id": "C35",
+      "claim": "The count_match model that encodes germline amino acid information resulted in a very small improvement in terms of recombination probability compared to the basic model.",
+      "claim_type": "EXPLICIT",
+      "source": "Perhaps surprisingly, the count_match model that encodes germline amino acid information resulted in a very small improvement in terms of recombination probability compared to the basic model, which does not explicitly encode any dependence between a TCR's germline gene usage and CDR3 sequence.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the results section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:01:57.467474Z"
+    },
+    {
+      "id": "226bd18b-aad4-4736-b2e2-ad4c37bb9f40",
+      "content_id": "f13dba0f-5c05-453a-a5e0-e509f73e051b",
+      "claim_id": "C36",
+      "claim": "The PVAE probabilities for VAE-generated sequences closely follow probabilities for test sequences.",
+      "claim_type": "EXPLICIT",
+      "source": "Instead, we found that the PVAE probabilities for VAE-generated sequences closely follow probabilities for test sequences (Figure 4), for both basic and count_match.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated directly in the results section and supported by Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:01:57.467474Z"
+    },
+    {
+      "id": "825d501b-d0e3-4ddc-9f77-2f9a61fdfcf8",
+      "content_id": "f13dba0f-5c05-453a-a5e0-e509f73e051b",
+      "claim_id": "C37",
+      "claim": "OLGA.Q-generated sequences are consistently assigned a lower PVAE on average than either test sequences or VAE-generated sequences.",
+      "claim_type": "EXPLICIT",
+      "source": "We also observed that the OLGA.Q-generated sequences are consistently assigned a lower PVAE on average than either test sequences or VAE-generated sequences, indicating the VAE learns characteristics of real sequences not captured by the formulation of OLGA.Q used here.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated directly in the results section and supported by Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:01:57.467474Z"
+    },
+    {
+      "id": "4b80ff03-a5a8-4f11-9bef-98e9a047e055",
+      "content_id": "f13dba0f-5c05-453a-a5e0-e509f73e051b",
+      "claim_id": "C38",
+      "claim": "The VAE learns characteristics of real sequences not captured by the formulation of OLGA.Q used here.",
+      "claim_type": "EXPLICIT",
+      "source": "We also observed that the OLGA.Q-generated sequences are consistently assigned a lower PVAE on average than either test sequences or VAE-generated sequences, indicating the VAE learns characteristics of real sequences not captured by the formulation of OLGA.Q used here.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the results section as an inference from the data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:01:57.467474Z"
+    },
+    {
+      "id": "39c2c44a-a9ee-4471-a7b3-35ab566d312b",
+      "content_id": "f13dba0f-5c05-453a-a5e0-e509f73e051b",
+      "claim_id": "C39",
+      "claim": "All models succeeded on J gene frequencies.",
+      "claim_type": "EXPLICIT",
+      "source": "All models succeeded on J gene frequencies, with the VAE models performing worse in terms of V gene frequency, in particular the basic model.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated directly in the results section and supported by Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:01:57.467474Z"
+    },
+    {
+      "id": "6413acca-c123-449f-954c-b895d1830426",
+      "content_id": "f13dba0f-5c05-453a-a5e0-e509f73e051b",
+      "claim_id": "C40",
+      "claim": "The VAE models performed worse in terms of V gene frequency, in particular the basic model.",
+      "claim_type": "EXPLICIT",
+      "source": "All models succeeded on J gene frequencies, with the VAE models performing worse in terms of V gene frequency, in particular the basic model.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated directly in the results section and supported by Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:01:57.467474Z"
+    },
+    {
+      "id": "be9e9c32-9dbe-47fa-aed3-49e5fbe87ac9",
+      "content_id": "f13dba0f-5c05-453a-a5e0-e509f73e051b",
+      "claim_id": "C41",
+      "claim": "OLGA.Q perhaps did better in terms of CDR3 length compared to VAE models.",
+      "claim_type": "EXPLICIT",
+      "source": "The models performed similarly in terms of CDR3 summaries, with OLGA.Q perhaps doing better in terms of CDR3 length, and the VAEs getting the correct distribution of nearest-neighbor distances (Figure 5\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated directly in the results section and supported by Figure 5\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:01:57.467474Z"
+    },
+    {
+      "id": "cabbe23b-280f-4e3b-b396-5713f2b6ae8c",
+      "content_id": "f13dba0f-5c05-453a-a5e0-e509f73e051b",
+      "claim_id": "C42",
+      "claim": "The VAEs got the correct distribution of nearest-neighbor distances.",
+      "claim_type": "EXPLICIT",
+      "source": "The models performed similarly in terms of CDR3 summaries, with OLGA.Q perhaps doing better in terms of CDR3 length, and the VAEs getting the correct distribution of nearest-neighbor distances (Figure 5\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated directly in the results section and supported by Figure 5\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:01:57.467474Z"
+    },
+    {
+      "id": "7d3aa15f-160c-43e3-8994-b9c9b42b4e25",
+      "content_id": "f13dba0f-5c05-453a-a5e0-e509f73e051b",
+      "claim_id": "C43",
+      "claim": "The V gene determines one axis of the principal components projection of the latent space embedding.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that this projection is structured according to V and J gene identity (Figure 6). In particular, the V gene determines one axis of the principal components projection, while the J gene determines another.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated directly in the results section and supported by Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:01:57.467474Z"
+    },
+    {
+      "id": "eed86a75-597d-4f6b-b78b-3e10deecdaee",
+      "content_id": "f13dba0f-5c05-453a-a5e0-e509f73e051b",
+      "claim_id": "C44",
+      "claim": "The J gene determines another axis of the principal components projection of the latent space embedding.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that this projection is structured according to V and J gene identity (Figure 6). In particular, the V gene determines one axis of the principal components projection, while the J gene determines another.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated directly in the results section and supported by Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:01:57.467474Z"
+    },
+    {
+      "id": "d858ff48-58e1-4e25-bdea-37ed35473b4b",
+      "content_id": "f13dba0f-5c05-453a-a5e0-e509f73e051b",
+      "claim_id": "C45",
+      "claim": "CDR3 length is an important determinant of embedding location when restricting to sequences using the most popular V and J genes.",
+      "claim_type": "EXPLICIT",
+      "source": "In order to learn the next level of organization, we restricted the embedded TCR sequences to those using the most popular V and J genes \u2014 TCRBV30-01 and TCRBJ01-02 \u2014 and re-did the projection. This additional projection showed that CDR3 length was an important determinant of embedding location (Figure 6\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated directly in the results section and supported by Figure 6\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:01:57.467474Z"
+    },
+    {
+      "id": "57b3ca57-d503-4b2e-a010-533c54d57034",
+      "content_id": "f13dba0f-5c05-453a-a5e0-e509f73e051b",
+      "claim_id": "C46",
+      "claim": "VAE models can perform accurate cohort frequency estimation.",
+      "claim_type": "EXPLICIT",
+      "source": "We show that simple VAE models can perform accurate cohort frequency estimation, learn the rules of VDJ recombination, and generalize well to unseen sequences.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the abstract as a main finding.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:01:57.467474Z"
+    },
+    {
+      "id": "c2a75b3c-af23-4e74-b762-bfec1af87cc8",
+      "content_id": "f13dba0f-5c05-453a-a5e0-e509f73e051b",
+      "claim_id": "C47",
+      "claim": "VAE models can learn the rules of VDJ recombination.",
+      "claim_type": "EXPLICIT",
+      "source": "We show that simple VAE models can perform accurate cohort frequency estimation, learn the rules of VDJ recombination, and generalize well to unseen sequences.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the abstract as a main finding.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:01:57.467474Z"
+    },
+    {
+      "id": "9f66499e-31a8-4f61-8c63-98eb460afb47",
+      "content_id": "f13dba0f-5c05-453a-a5e0-e509f73e051b",
+      "claim_id": "C48",
+      "claim": "VAE models generalize well to unseen sequences.",
+      "claim_type": "EXPLICIT",
+      "source": "We show that simple VAE models can perform accurate cohort frequency estimation, learn the rules of VDJ recombination, and generalize well to unseen sequences.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the abstract as a main finding.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:01:57.467474Z"
+    },
+    {
+      "id": "28a58052-b22c-4f3d-b099-f7f69ddfa312",
+      "content_id": "f13dba0f-5c05-453a-a5e0-e509f73e051b",
+      "claim_id": "C49",
+      "claim": "VAE-like models can distinguish between real sequences and sequences generated according to a recombination-selection model.",
+      "claim_type": "EXPLICIT",
+      "source": "Further, we demonstrate that VAE-like models can distinguish between real sequences and sequences generated according to a recombination-selection model, and that many characteristics of VAE-generated sequences are similar to those of real sequences.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the abstract as a main finding.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:01:57.467474Z"
+    },
+    {
+      "id": "b7220e3d-294d-4bbe-ab87-47d0f8479a3d",
+      "content_id": "f13dba0f-5c05-453a-a5e0-e509f73e051b",
+      "claim_id": "C50",
+      "claim": "Many characteristics of VAE-generated sequences are similar to those of real sequences.",
+      "claim_type": "EXPLICIT",
+      "source": "Further, we demonstrate that VAE-like models can distinguish between real sequences and sequences generated according to a recombination-selection model, and that many characteristics of VAE-generated sequences are similar to those of real sequences.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the abstract as a main finding.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:01:57.467474Z"
+    },
+    {
+      "id": "debccd40-bb78-4ccd-b76c-f477dd48cca2",
+      "content_id": "f13dba0f-5c05-453a-a5e0-e509f73e051b",
+      "claim_id": "C51",
+      "claim": "TCR \u03b2 protein sequences are uniquely identified by triples consisting of V gene, J gene, and CDR3 protein sequence.",
+      "claim_type": "EXPLICIT",
+      "source": "We are interested in TCR \u03b2 protein sequences, which due to the process of VDJ recombination are uniquely identified by triples consisting of V gene, J gene, and CDR3 protein sequence (Woodsworth et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the methods overview section and supported by citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:01:57.467474Z"
+    },
+    {
+      "id": "bc49826d-e54e-4ba8-a750-105ca7221ab1",
+      "content_id": "f13dba0f-5c05-453a-a5e0-e509f73e051b",
+      "claim_id": "C52",
+      "claim": "All data was downloaded from https://clients.adaptivebiotech.com/immuneaccess.",
+      "claim_type": "EXPLICIT",
+      "source": "All data was downloaded from https://clients.adaptivebiotech.com/immuneaccess.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the Materials and methods section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:01:57.467474Z"
+    },
+    {
+      "id": "70aa9f15-0e15-4521-a5f5-a84ed49758cd",
+      "content_id": "f13dba0f-5c05-453a-a5e0-e509f73e051b",
+      "claim_id": "C56",
+      "claim": "Any TCRs with TCRBJ02-05 were excluded because the internal Adaptive pipeline annotates it incorrectly.",
+      "claim_type": "EXPLICIT",
+      "source": "We also excluded any TCRs with TCRBJ02-05, which the internal Adaptive pipeline annotates incorrectly, and TCRBJ02-07, to which the default OLGA model assigns artifactually low probabilities.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the Materials and methods section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:01:57.467474Z"
+    },
+    {
+      "id": "bac334c8-a3fa-4c1f-8e6b-041724845308",
+      "content_id": "f13dba0f-5c05-453a-a5e0-e509f73e051b",
+      "claim_id": "C57",
+      "claim": "Any TCRs with TCRBJ02-07 were excluded because the default OLGA model assigns artifactually low probabilities to it.",
+      "claim_type": "EXPLICIT",
+      "source": "We also excluded any TCRs with TCRBJ02-05, which the internal Adaptive pipeline annotates incorrectly, and TCRBJ02-07, to which the default OLGA model assigns artifactually low probabilities.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the Materials and methods section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:01:57.467474Z"
+    },
+    {
+      "id": "8e705385-49d2-4e4a-bbe1-0019cfd36ddb",
+      "content_id": "f13dba0f-5c05-453a-a5e0-e509f73e051b",
+      "claim_id": "C58",
+      "claim": "Model design and parameter tuning was performed using the data of DeWitt et al. (2018).",
+      "claim_type": "EXPLICIT",
+      "source": "Model design and parameter tuning, including the sizes of hidden layers and the dimension of the latent space, was performed using the data of DeWitt et al. (2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the Materials and methods section.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:01:57.467474Z"
+    },
+    {
+      "id": "2dd2abab-97ae-4676-a523-ddd8074db569",
+      "content_id": "f13dba0f-5c05-453a-a5e0-e509f73e051b",
+      "claim_id": "C59",
+      "claim": "The model was relatively robust to parameter perturbations as long as the number of parameters was not too small.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the model was relatively robust to parameter perturbations as long as the number of parameters was not too small.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the Materials and methods section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:01:57.467474Z"
+    },
+    {
+      "id": "de240628-740c-4ad4-ba8e-3d4cdb84f2d4",
+      "content_id": "f13dba0f-5c05-453a-a5e0-e509f73e051b",
+      "claim_id": "C60",
+      "claim": "CDR3 sequences were padded with gaps in the middle so that they are a fixed length of 30 amino acid/gap characters.",
+      "claim_type": "EXPLICIT",
+      "source": "The CDR3 sequences were padded with gaps in the middle so that they are a fixed length of 30 amino acid/gap characters.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the Materials and methods section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:01:57.467474Z"
+    },
+    {
+      "id": "71c09832-cab9-41aa-a753-6bbe8969f35f",
+      "content_id": "f13dba0f-5c05-453a-a5e0-e509f73e051b",
+      "claim_id": "C61",
+      "claim": "Each amino acid at each site is one-hot encoded with 0/1 for absence/presence, with an additional dimension for 'gap' to make a 21-dimensional space.",
+      "claim_type": "EXPLICIT",
+      "source": "This resulting sequence is 'one-hot encoded,' meaning that each amino acid at each site is represented with 0/1 for absence/presence, with an additional dimension for 'gap' to make a 21-dimensional space (Figure 7).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated directly in the Materials and methods section and illustrated in Figure 7.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:01:57.467474Z"
+    },
+    {
+      "id": "0b1bcfb7-8501-4a63-aef1-1b97851c045c",
+      "content_id": "f13dba0f-5c05-453a-a5e0-e509f73e051b",
+      "claim_id": "C62",
+      "claim": "V genes are encoded in 67-dimensional vectors.",
+      "claim_type": "EXPLICIT",
+      "source": "V and J genes are similarly encoded in 67- and 13-dimensional vectors, respectively, and all of these vectors are concatenated into a single large encoding vector.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the Materials and methods section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:01:57.467474Z"
+    },
+    {
+      "id": "e670cb71-96a4-4b54-9b2b-f89eb594bc9c",
+      "content_id": "f13dba0f-5c05-453a-a5e0-e509f73e051b",
+      "claim_id": "C63",
+      "claim": "J genes are encoded in 13-dimensional vectors.",
+      "claim_type": "EXPLICIT",
+      "source": "V and J genes are similarly encoded in 67- and 13-dimensional vectors, respectively, and all of these vectors are concatenated into a single large encoding vector.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the Materials and methods section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:01:57.467474Z"
+    },
+    {
+      "id": "9c8377ea-8b21-41f8-9304-20e1a0442610",
+      "content_id": "f13dba0f-5c05-453a-a5e0-e509f73e051b",
+      "claim_id": "C64",
+      "claim": "V gene identities are projected to a 30-dimensional space.",
+      "claim_type": "EXPLICIT",
+      "source": "These transformations do not change dimension except for V gene identities, which are projected to a 30-dimensional space (Figure 7).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated directly in the Materials and methods section and illustrated in Figure 7.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:01:57.467474Z"
+    },
+    {
+      "id": "8056976f-56f2-4b8d-bc62-33d0df263c8e",
+      "content_id": "f13dba0f-5c05-453a-a5e0-e509f73e051b",
+      "claim_id": "C65",
+      "claim": "The basic model has two densely-connected layers for the encoder and two for the decoder.",
+      "claim_type": "EXPLICIT",
+      "source": "It has two densely-connected layers for the encoder and two for the decoder (Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated directly in the Materials and methods section and illustrated in Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:01:57.467474Z"
+    },
+    {
+      "id": "9baef4c4-5ca3-40e4-b6e1-4d06d7877dee",
+      "content_id": "f13dba0f-5c05-453a-a5e0-e509f73e051b",
+      "claim_id": "C66",
+      "claim": "In the basic model, V and J gene identities are scored using categorical cross-entropy.",
+      "claim_type": "EXPLICIT",
+      "source": "The V and J gene identities are scored using categorical cross-entropy, while the CDR3 sequence is scored by the average categorical cross-entropy across sites.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the Materials and methods section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:01:57.467474Z"
+    },
+    {
+      "id": "d41c30bf-9bdd-4eef-9a25-b12a7c06b7c1",
+      "content_id": "f13dba0f-5c05-453a-a5e0-e509f73e051b",
+      "claim_id": "C67",
+      "claim": "In the basic model, the CDR3 sequence is scored by the average categorical cross-entropy across sites.",
+      "claim_type": "EXPLICIT",
+      "source": "The V and J gene identities are scored using categorical cross-entropy, while the CDR3 sequence is scored by the average categorical cross-entropy across sites.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the Materials and methods section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:01:57.467474Z"
+    },
+    {
+      "id": "eac43da7-718f-46b6-ad46-2ffc729517dc",
+      "content_id": "f13dba0f-5c05-453a-a5e0-e509f73e051b",
+      "claim_id": "C68",
+      "claim": "The count_match model's loss function includes a component that scores the counts of V-germline-matching and J-germline-matching amino acids in terms of two-dimensional squared loss.",
+      "claim_type": "EXPLICIT",
+      "source": "Its loss function includes a component that scores these counts in terms of two-dimensional squared loss.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the Materials and methods section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:01:57.467474Z"
+    },
+    {
+      "id": "0841c18a-31f2-4903-84c0-3ca679be8a53",
+      "content_id": "f13dba0f-5c05-453a-a5e0-e509f73e051b",
+      "claim_id": "C69",
+      "claim": "The count_match model contains an explicit loss component for CDR3 length, which is evaluated via squared loss.",
+      "claim_type": "EXPLICIT",
+      "source": "This model also contains an explicit loss component for CDR3 length, which is also evaluated via squared loss.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the Materials and methods section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:01:57.467474Z"
+    },
+    {
+      "id": "6b0bce48-c44c-4aec-af4f-553998027885",
+      "content_id": "f13dba0f-5c05-453a-a5e0-e509f73e051b",
+      "claim_id": "C70",
+      "claim": "Weights for combining multiple losses were determined by multivariate linear regression, minimizing the squared difference between the log likelihood and reconstruction loss on a validation set.",
+      "claim_type": "EXPLICIT",
+      "source": "Weights were determined by multivariate linear regression, minimizing the squared difference between the log likelihood and this reconstruction loss on a validation set (see next section for definition of the validation set used in training).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the Materials and methods section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:01:57.467474Z"
+    },
+    {
+      "id": "7bb2f7fd-79d9-4d1c-8abf-4748b8619a2e",
+      "content_id": "f13dba0f-5c05-453a-a5e0-e509f73e051b",
+      "claim_id": "C71",
+      "claim": "The loss function cannot be interpreted in terms of the variational evidence lower bound (ELBO) due to modifications.",
+      "claim_type": "EXPLICIT",
+      "source": "Due to these modifications, our loss function cannot be interpreted in terms of the variational evidence lower bound (ELBO).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the Materials and methods section.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:01:57.467474Z"
+    },
+    {
+      "id": "24a9e42b-68ca-435e-a126-1817048d763b",
+      "content_id": "f13dba0f-5c05-453a-a5e0-e509f73e051b",
+      "claim_id": "C72",
+      "claim": "Training begins with \u03b2=0 and then linearly increases every training epoch until its final value.",
+      "claim_type": "EXPLICIT",
+      "source": "Inspired by the work of S\u00f8nderby et al. (2016), we implemented a \u03b2 schedule during training such that training begins with \u03b2=0 and then linearly increases every training epoch until its final value.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the Materials and methods section and supported by citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:01:57.467474Z"
+    },
+    {
+      "id": "a63a5ba2-7132-4974-9e4b-0acea38dc913",
+      "content_id": "f13dba0f-5c05-453a-a5e0-e509f73e051b",
+      "claim_id": "C73",
+      "claim": "Training was done using the Adam optimizer implemented in Keras.",
+      "claim_type": "EXPLICIT",
+      "source": "Training was done using the Adam optimizer Kingma and Ba (2014a) implemented in Keras (Chollet, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the Materials and methods section and supported by citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:01:57.467474Z"
+    },
+    {
+      "id": "a2d2e120-1332-42cb-a124-83f30230d03c",
+      "content_id": "f13dba0f-5c05-453a-a5e0-e509f73e051b",
+      "claim_id": "C74",
+      "claim": "\u03b2 was fixed to be 0.75 to balance evaluative and generative objectives.",
+      "claim_type": "EXPLICIT",
+      "source": "To balance these evaluative and generative objectives, we fixed \u03b2 to be 0.75.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the Materials and methods section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:01:57.467474Z"
+    },
+    {
+      "id": "dd387843-bd58-4ea5-8b11-7427c0deb3a8",
+      "content_id": "f13dba0f-5c05-453a-a5e0-e509f73e051b",
+      "claim_id": "C75",
+      "claim": "100 iterations of importance sampling yielded stable PVAE estimates for the data.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that 100 iterations of importance sampling yielded stable PVAE estimates for our data, but used 500 iterations in the results presented here to ensure convergence.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the Materials and methods section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:01:57.467474Z"
+    },
+    {
+      "id": "7ba90a6d-cf10-46ce-b821-043da27ade25",
+      "content_id": "f13dba0f-5c05-453a-a5e0-e509f73e051b",
+      "claim_id": "C76",
+      "claim": "500 iterations of importance sampling were used in the results to ensure convergence.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that 100 iterations of importance sampling yielded stable PVAE estimates for our data, but used 500 iterations in the results presented here to ensure convergence.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the Materials and methods section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:01:57.467474Z"
+    },
+    {
+      "id": "0576163e-c455-4651-8cff-892341c134e0",
+      "content_id": "f13dba0f-5c05-453a-a5e0-e509f73e051b",
+      "claim_id": "C77",
+      "claim": "OLGA was used with its default model parameters to evaluate recombination probabilities.",
+      "claim_type": "EXPLICIT",
+      "source": "We used OLGA (Sethna et al., 2018) with its default model parameters to evaluate recombination probabilities.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the Materials and methods section and supported by citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:01:57.467474Z"
+    },
+    {
+      "id": "b2bc502a-e038-4d97-bf05-a0dd4b7103c3",
+      "content_id": "f13dba0f-5c05-453a-a5e0-e509f73e051b",
+      "claim_id": "C78",
+      "claim": "The maximum likelihood estimate of Q for a given triple is the ratio of the empirical frequency of the triple in the data to the probability of observing the triple based on the recombination model.",
+      "claim_type": "EXPLICIT",
+      "source": "As derived in the supplementary material of Elhanati et al. (2014), the maximum likelihood estimate of Q for a given triple is the ratio of the empirical frequency of the triple in the data to the probability of observing the triple based on the recombination model.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the Materials and methods section and supported by citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:01:57.467474Z"
+    },
+    {
+      "id": "a9305750-cf2e-439e-b150-0b7a8b30bc44",
+      "content_id": "f13dba0f-5c05-453a-a5e0-e509f73e051b",
+      "claim_id": "C79",
+      "claim": "The Q ratio was truncated at 100 for numerical stability.",
+      "claim_type": "EXPLICIT",
+      "source": "We truncated this ratio at 100 for numerical stability.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the Materials and methods section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:01:57.467474Z"
+    },
+    {
+      "id": "1dcac97d-e69e-4b7c-86bd-4ac383de82a3",
+      "content_id": "f13dba0f-5c05-453a-a5e0-e509f73e051b",
+      "claim_id": "C80",
+      "claim": "Rejection sampling was used to sample from the POLGA.Q distribution.",
+      "claim_type": "EXPLICIT",
+      "source": "We then used rejection sampling to sample from the corresponding POLGA.Q distribution.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the Materials and methods section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:01:57.467474Z"
+    },
+    {
+      "id": "9003ff71-e558-4e69-8c0f-682b08752913",
+      "content_id": "f13dba0f-5c05-453a-a5e0-e509f73e051b",
+      "claim_id": "C81",
+      "claim": "The models are not directly interpretable, as is often the case for models parametrized by neural networks.",
+      "claim_type": "EXPLICIT",
+      "source": "Most importantly, as is often the case for models parametrized by neural networks, these models are not directly interpretable.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the Discussion section.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:01:57.467474Z"
+    },
+    {
+      "id": "61325925-b5b0-423f-b9f3-2c5f5c2831ae",
+      "content_id": "f13dba0f-5c05-453a-a5e0-e509f73e051b",
+      "claim_id": "C82",
+      "claim": "The model architectures were not engineered with mechanism in mind.",
+      "claim_type": "EXPLICIT",
+      "source": "Besides the difficulty in interpreting the neural network weights, we did not engineer the model architectures with mechanism in mind.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the Discussion section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:01:57.467474Z"
+    },
+    {
+      "id": "1a229d24-2977-40cf-995f-2c34786ae974",
+      "content_id": "f13dba0f-5c05-453a-a5e0-e509f73e051b",
+      "claim_id": "C83",
+      "claim": "The models operate on amino acid sequences and thus cannot shed light on the VDJ recombination process, which operates at the nucleotide level.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, the models operate on amino acid sequences and thus cannot shed light on the VDJ recombination process, which operates at the nucleotide level.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the Discussion section.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:01:57.467474Z"
+    },
+    {
+      "id": "074c6357-9166-4573-b444-09bec7a1a46c",
+      "content_id": "f13dba0f-5c05-453a-a5e0-e509f73e051b",
+      "claim_id": "C84",
+      "claim": "PVAE, which relies on importance sampling, is more expensive to compute than POLGA.Q.",
+      "claim_type": "EXPLICIT",
+      "source": "We also note that PVAE, which relies on importance sampling, is more expensive to compute than POLGA.Q.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the Discussion section.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:01:57.467474Z"
+    },
+    {
+      "id": "113fef41-547d-4871-be8e-4d535b4fe15e",
+      "content_id": "f13dba0f-5c05-453a-a5e0-e509f73e051b",
+      "claim_id": "C85",
+      "claim": "The model that had no a priori information about germline gene sequence performs very similarly to one that deliberately attempts to recapitulate the amount of matching between germline gene and CDR3 amino acid sequences.",
+      "claim_type": "EXPLICIT",
+      "source": "Our model that had no a priori information about germline gene sequence performs very similarly, even when evaluated in terms of VDJ recombination likelihood, to one that deliberately attempts to recapitulate the amount of matching between germline gene and CDR3 amino acid sequences and includes germline CDR3 sequences in the untrained model.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the Discussion section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:01:57.467474Z"
+    },
+    {
+      "id": "0fc7fce8-5c47-4f6b-be23-f261296f816a",
+      "content_id": "f13dba0f-5c05-453a-a5e0-e509f73e051b",
+      "claim_id": "C86",
+      "claim": "Given the volume of sequence data available, efforts should focus on the abstract problem of density estimation on the set of TCRs, rather than incorporating biological knowledge into deep learning models.",
+      "claim_type": "EXPLICIT",
+      "source": "This may indicate that, given the volume of sequence data available, we should focus our efforts on the abstract problem of density estimation on the set of TCRs, rather than incorporating biological knowledge into our deep learning models.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the Discussion section as a speculation based on the results.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:01:57.467474Z"
+    },
+    {
+      "id": "dbe77485-735f-4b43-ac2f-3d5995a4caa4",
+      "content_id": "f13dba0f-5c05-453a-a5e0-e509f73e051b",
+      "claim_id": "C87",
+      "claim": "The methods apply with no modification to TCR \u03b1 chains.",
+      "claim_type": "EXPLICIT",
+      "source": "Here we have restricted our attention to TCR \u03b2 sequences, however, our methods apply with no modification to TCR \u03b1 chains.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the Discussion section.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:01:57.467474Z"
+    },
+    {
+      "id": "531e5c88-bcfc-4857-9848-e72265fb5097",
+      "content_id": "f13dba0f-5c05-453a-a5e0-e509f73e051b",
+      "claim_id": "C88",
+      "claim": "Contrasting the \u03b1 and \u03b2 chains may yield interesting insights on the differences between the two generation processes.",
+      "claim_type": "EXPLICIT",
+      "source": "Contrasting the \u03b1 and \u03b2 chains may yield interesting insights on the differences between the two generation processes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the Discussion section as speculation.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:01:57.467474Z"
+    },
+    {
+      "id": "31d9d00d-a465-4752-adde-4af4e6b3f6fa",
+      "content_id": "f13dba0f-5c05-453a-a5e0-e509f73e051b",
+      "claim_id": "C89",
+      "claim": "The most interesting insights will come from jointly modeling the two chains using large-scale \u03b1\u03b2 paired TCR sequencing.",
+      "claim_type": "EXPLICIT",
+      "source": "The most interesting insights will come from jointly modeling the two chains using large-scale \u03b1\u03b2 paired TCR sequencing (Howie et al., 2015), which is a more complex process.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the Discussion section as speculation and supported by citation.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:01:57.467474Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "7e6990fe-7ac0-43b1-b1d8-8566081afa0c",
+      "content_id": "f13dba0f-5c05-453a-a5e0-e509f73e051b",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The manuscript provides background on TCR biology, including the structure of TCRs (\u03b1 and \u03b2 chains), the V(D)J recombination process, thymic selection, and the clonal selection mechanism of immune memory. These claims establish the biological context for the computational modeling work.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C13, C27-C28, and C51 are well-established facts about TCR biology that are appropriately cited or presented as general knowledge. These provide necessary background context and are not novel findings of this work. The claims are consistent with established immunology literature.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:01:57.467474Z"
+    },
+    {
+      "id": "7921f21d-8962-411b-aef4-e842a172d97a",
+      "content_id": "f13dba0f-5c05-453a-a5e0-e509f73e051b",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The manuscript cites prior work demonstrating that amplified TCR sequences indicate functional importance (e.g., targeting pathogens), that V(D)J recombination biases explain TCR sharing between individuals, and that previous approaches used probabilistic graphical models with selection factors.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C10, C11, and C14 appropriately cite prior work (Pogorelyy et al., Emerson et al., Elhanati et al.) to establish the scientific context and motivation for the current study. These are accurate representations of prior findings based on the citations provided.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:01:57.467474Z"
+    },
+    {
+      "id": "44aaa200-4319-46c6-b605-511541c1606a",
+      "content_id": "f13dba0f-5c05-453a-a5e0-e509f73e051b",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Two VAE models were developed: a 'basic' model without germline gene information and a 'count_match' model incorporating germline amino acid sequences and matching criteria. OLGA.Q was used as a baseline, combining OLGA recombination model with a simplified selection model parameterized by ~14,000 parameters.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C19-C24 describe the methodological approach clearly. The model architectures are documented in supplementary figures, and the OLGA.Q baseline is appropriately described with parameter counts. The methods are sufficiently detailed for the results presented.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:01:57.467474Z"
+    },
+    {
+      "id": "fa5ff8cd-475f-414c-8d7e-1c36547f8bef",
+      "content_id": "f13dba0f-5c05-453a-a5e0-e509f73e051b",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "VAE models can perform accurate cohort frequency estimation and generalize well to unseen sequences. PVAE probabilities for VAE-generated sequences closely follow test sequences, while OLGA.Q-generated sequences receive lower PVAE scores, indicating VAEs learn characteristics not captured by OLGA.Q.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C46, C36-C38 are supported by Figure 2 (frequency estimation with R\u00b2=0.442 for VAE vs 0.258 for OLGA.Q) and Figure 4 (showing PVAE distributions). The generalization claim is substantiated by similar performance on train and test sets. Statistical measures are provided to support the conclusions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:01:57.467474Z"
+    },
+    {
+      "id": "5310bcbd-7966-4b0a-ada4-e607f4819e7a",
+      "content_id": "f13dba0f-5c05-453a-a5e0-e509f73e051b",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "VAE models learn the rules of VDJ recombination, as evidenced by their ability to generate sequences with POLGA.Q distributions comparable to real sequences. Surprisingly, the count_match model showed only minimal improvement over the basic model despite encoding germline information.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C47, C32-C35 are supported by Figure 3, which shows that VAE-generated sequences have POLGA.Q distributions similar to test sequences. The surprising finding that count_match offers minimal improvement (C35) is clearly stated and supported by the data, though the lack of statistical testing of this difference is a limitation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:01:57.467474Z"
+    },
+    {
+      "id": "69241052-c780-42d6-803c-4d15dc3dbdbd",
+      "content_id": "f13dba0f-5c05-453a-a5e0-e509f73e051b",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "VAE models generalize well to unseen sequences and can distinguish between real sequences and OLGA.Q-generated sequences based on PVAE scores.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C48-C49 are supported by Figure 4, showing that VAE-generated and test sequences have similar PVAE distributions, while OLGA.Q sequences have consistently lower PVAE. This demonstrates both generalization (no memorization) and discriminative ability. The 50/50 train-test split methodology supports these conclusions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:01:57.467474Z"
+    },
+    {
+      "id": "207d814b-cc07-4766-81c9-f646680ed226",
+      "content_id": "f13dba0f-5c05-453a-a5e0-e509f73e051b",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "VAE-generated sequences have characteristics similar to real sequences across multiple summary statistics. All models succeeded on J gene frequencies, but VAE models (especially basic) performed worse on V gene frequencies. OLGA.Q performed better on CDR3 length while VAEs captured nearest-neighbor distance distributions correctly.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C39-C42, C50 are supported by Figure 5 and supplementary figures showing divergence metrics across multiple summary statistics. The mixed performance (success on some metrics, worse on others) is honestly reported. However, the lack of statistical significance testing and the qualitative nature of some comparisons ('perhaps doing better') introduce some uncertainty.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:01:57.467474Z"
+    },
+    {
+      "id": "4028e234-d0ba-4368-86dc-df7af67e050a",
+      "content_id": "f13dba0f-5c05-453a-a5e0-e509f73e051b",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The VAE latent space embedding is structured according to V and J gene identity, with each determining separate axes in PCA projection. When restricting to the most popular V and J genes, CDR3 length becomes an important determinant of embedding location.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C43-C45 are supported by Figure 6 and supplementary figures showing clear separation by V and J genes in PCA space, and by CDR3 length when restricted to specific V/J combinations. The visual evidence is compelling and the hierarchical structure of the embedding is clearly demonstrated.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:01:57.467474Z"
+    },
+    {
+      "id": "32233c6f-04f9-41c4-ad95-068913e20f94",
+      "content_id": "f13dba0f-5c05-453a-a5e0-e509f73e051b",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The manuscript provides detailed methodological information including data sources, preprocessing steps, sequence encoding schemes, model architectures, training procedures, hyperparameter selection (\u03b2=0.75), importance sampling parameters (500 iterations), and OLGA.Q implementation details.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C52-C80 provide comprehensive methodological details that are clearly stated and appropriately documented. The encoding schemes, model architectures, and training procedures are sufficiently detailed. The choice of \u03b2=0.75 is justified by empirical testing shown in Figures 8-9. These methodological claims are well-supported.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:01:57.467474Z"
+    },
+    {
+      "id": "451b5ef9-5dde-45df-a814-f7aab1da3a88",
+      "content_id": "f13dba0f-5c05-453a-a5e0-e509f73e051b",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The models have important limitations: they are not directly interpretable (as typical for neural networks), were not engineered with biological mechanism in mind, operate on amino acids rather than nucleotides (thus cannot directly model VDJ recombination), and PVAE is computationally more expensive than POLGA.Q.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C81-C84 honestly acknowledge important limitations of the approach. These are reasonable and accurate assessments. The limitation that amino acid models cannot directly shed light on nucleotide-level recombination (C83) is particularly important and appropriately noted.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:01:57.467474Z"
+    },
+    {
+      "id": "50ea0a4e-e359-47b2-aa53-92e57c1a7c90",
+      "content_id": "f13dba0f-5c05-453a-a5e0-e509f73e051b",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The basic model without germline information performs very similarly to count_match with germline information, even when evaluated by VDJ recombination likelihood. This suggests that with sufficient data, focus should be on density estimation rather than incorporating biological knowledge into deep learning models.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C85 is supported by the data showing minimal difference between basic and count_match models. However, C86 is speculative ('may indicate') and represents an inference that may be premature. The conclusion that biological knowledge is unnecessary is not definitively established\u2014alternative explanations include insufficient model capacity, suboptimal encoding of biological knowledge, or that the specific biological knowledge encoded was not the most relevant. Additional experiments would be needed to support this strong conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:01:57.467474Z"
+    },
+    {
+      "id": "12f4a957-d6d5-4d17-a5e7-53174fe73536",
+      "content_id": "f13dba0f-5c05-453a-a5e0-e509f73e051b",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The methods apply to TCR \u03b1 chains without modification. Contrasting \u03b1 and \u03b2 chains may yield insights, and the most interesting insights will come from jointly modeling paired \u03b1\u03b2 TCR sequences.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C87-C89 are reasonable forward-looking statements. C87 is a logical inference given that \u03b1 chains undergo similar (though not identical) recombination. C88-C89 are appropriately framed as speculation about future work rather than established findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:01:57.467474Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "6c2024c5-fca2-4617-9823-9988bbad12c2",
+      "result_id": "7e6990fe-7ac0-43b1-b1d8-8566081afa0c"
+    },
+    {
+      "claim_id": "1dbac97f-cffe-48ed-b11e-15ed872cc22d",
+      "result_id": "7e6990fe-7ac0-43b1-b1d8-8566081afa0c"
+    },
+    {
+      "claim_id": "daff016c-fb5e-4fbc-bad5-402c67aedec9",
+      "result_id": "7e6990fe-7ac0-43b1-b1d8-8566081afa0c"
+    },
+    {
+      "claim_id": "0fee38c5-12ce-413a-bf6f-d6cd4194a818",
+      "result_id": "7e6990fe-7ac0-43b1-b1d8-8566081afa0c"
+    },
+    {
+      "claim_id": "e73516a5-196a-4111-a6f7-88cc8157069d",
+      "result_id": "7e6990fe-7ac0-43b1-b1d8-8566081afa0c"
+    },
+    {
+      "claim_id": "fe3815d0-4755-462c-93f1-29e80bd1c050",
+      "result_id": "7e6990fe-7ac0-43b1-b1d8-8566081afa0c"
+    },
+    {
+      "claim_id": "bc0ae70f-fb6f-4b11-885d-7bff7d83379b",
+      "result_id": "7e6990fe-7ac0-43b1-b1d8-8566081afa0c"
+    },
+    {
+      "claim_id": "cf9812b0-49ea-421a-9858-2a74e10f6391",
+      "result_id": "7e6990fe-7ac0-43b1-b1d8-8566081afa0c"
+    },
+    {
+      "claim_id": "626296eb-a6f8-4f4e-88e1-a97132700d4c",
+      "result_id": "7e6990fe-7ac0-43b1-b1d8-8566081afa0c"
+    },
+    {
+      "claim_id": "d5468913-c9cb-481b-bf04-e4d529c24ae2",
+      "result_id": "7e6990fe-7ac0-43b1-b1d8-8566081afa0c"
+    },
+    {
+      "claim_id": "d3b3168b-3c8d-466e-83c9-5aad5334e5bc",
+      "result_id": "7e6990fe-7ac0-43b1-b1d8-8566081afa0c"
+    },
+    {
+      "claim_id": "78c0ef7e-f6ee-42bb-9299-326f4f6c0ffa",
+      "result_id": "7e6990fe-7ac0-43b1-b1d8-8566081afa0c"
+    },
+    {
+      "claim_id": "5cb445d7-615e-464b-8abe-5d9a7ca12141",
+      "result_id": "7e6990fe-7ac0-43b1-b1d8-8566081afa0c"
+    },
+    {
+      "claim_id": "debccd40-bb78-4ccd-b76c-f477dd48cca2",
+      "result_id": "7e6990fe-7ac0-43b1-b1d8-8566081afa0c"
+    },
+    {
+      "claim_id": "cb445f08-445d-4f43-a7fc-153083973c06",
+      "result_id": "7921f21d-8962-411b-aef4-e842a172d97a"
+    },
+    {
+      "claim_id": "39d76284-d1ef-4589-8eb0-d1a9f84d9140",
+      "result_id": "7921f21d-8962-411b-aef4-e842a172d97a"
+    },
+    {
+      "claim_id": "e533f318-7486-4fc0-9aa7-703faf3e6e2c",
+      "result_id": "7921f21d-8962-411b-aef4-e842a172d97a"
+    },
+    {
+      "claim_id": "5af4472e-240e-478e-b075-820013677a31",
+      "result_id": "44aaa200-4319-46c6-b605-511541c1606a"
+    },
+    {
+      "claim_id": "a9856bea-25ad-43e9-9cd3-6e5e3a663c65",
+      "result_id": "44aaa200-4319-46c6-b605-511541c1606a"
+    },
+    {
+      "claim_id": "89f9925e-ae56-4a24-825e-161175797b30",
+      "result_id": "44aaa200-4319-46c6-b605-511541c1606a"
+    },
+    {
+      "claim_id": "4fb398e9-7149-47af-ac36-6d1a3e14084e",
+      "result_id": "44aaa200-4319-46c6-b605-511541c1606a"
+    },
+    {
+      "claim_id": "30265d2e-19b2-4484-9681-2a8a50c188a6",
+      "result_id": "44aaa200-4319-46c6-b605-511541c1606a"
+    },
+    {
+      "claim_id": "d72d91d8-4123-4eaf-a394-ffd01afc5be7",
+      "result_id": "44aaa200-4319-46c6-b605-511541c1606a"
+    },
+    {
+      "claim_id": "57b3ca57-d503-4b2e-a010-533c54d57034",
+      "result_id": "fa5ff8cd-475f-414c-8d7e-1c36547f8bef"
+    },
+    {
+      "claim_id": "226bd18b-aad4-4736-b2e2-ad4c37bb9f40",
+      "result_id": "fa5ff8cd-475f-414c-8d7e-1c36547f8bef"
+    },
+    {
+      "claim_id": "825d501b-d0e3-4ddc-9f77-2f9a61fdfcf8",
+      "result_id": "fa5ff8cd-475f-414c-8d7e-1c36547f8bef"
+    },
+    {
+      "claim_id": "4b80ff03-a5a8-4f11-9bef-98e9a047e055",
+      "result_id": "fa5ff8cd-475f-414c-8d7e-1c36547f8bef"
+    },
+    {
+      "claim_id": "c2a75b3c-af23-4e74-b762-bfec1af87cc8",
+      "result_id": "5310bcbd-7966-4b0a-ada4-e607f4819e7a"
+    },
+    {
+      "claim_id": "64078aed-3d8e-41f7-aa85-a4ce0d4b4701",
+      "result_id": "5310bcbd-7966-4b0a-ada4-e607f4819e7a"
+    },
+    {
+      "claim_id": "61dd16a0-0264-48c5-ba39-15962bc584fa",
+      "result_id": "5310bcbd-7966-4b0a-ada4-e607f4819e7a"
+    },
+    {
+      "claim_id": "21d22816-2573-49ec-9bc8-50af82adeb7e",
+      "result_id": "5310bcbd-7966-4b0a-ada4-e607f4819e7a"
+    },
+    {
+      "claim_id": "45329da4-1bfb-42a4-b42a-3106d6e1b385",
+      "result_id": "5310bcbd-7966-4b0a-ada4-e607f4819e7a"
+    },
+    {
+      "claim_id": "9f66499e-31a8-4f61-8c63-98eb460afb47",
+      "result_id": "69241052-c780-42d6-803c-4d15dc3dbdbd"
+    },
+    {
+      "claim_id": "28a58052-b22c-4f3d-b099-f7f69ddfa312",
+      "result_id": "69241052-c780-42d6-803c-4d15dc3dbdbd"
+    },
+    {
+      "claim_id": "b7220e3d-294d-4bbe-ab87-47d0f8479a3d",
+      "result_id": "207d814b-cc07-4766-81c9-f646680ed226"
+    },
+    {
+      "claim_id": "39c2c44a-a9ee-4471-a7b3-35ab566d312b",
+      "result_id": "207d814b-cc07-4766-81c9-f646680ed226"
+    },
+    {
+      "claim_id": "6413acca-c123-449f-954c-b895d1830426",
+      "result_id": "207d814b-cc07-4766-81c9-f646680ed226"
+    },
+    {
+      "claim_id": "be9e9c32-9dbe-47fa-aed3-49e5fbe87ac9",
+      "result_id": "207d814b-cc07-4766-81c9-f646680ed226"
+    },
+    {
+      "claim_id": "cabbe23b-280f-4e3b-b396-5713f2b6ae8c",
+      "result_id": "207d814b-cc07-4766-81c9-f646680ed226"
+    },
+    {
+      "claim_id": "7d3aa15f-160c-43e3-8994-b9c9b42b4e25",
+      "result_id": "4028e234-d0ba-4368-86dc-df7af67e050a"
+    },
+    {
+      "claim_id": "eed86a75-597d-4f6b-b78b-3e10deecdaee",
+      "result_id": "4028e234-d0ba-4368-86dc-df7af67e050a"
+    },
+    {
+      "claim_id": "d858ff48-58e1-4e25-bdea-37ed35473b4b",
+      "result_id": "4028e234-d0ba-4368-86dc-df7af67e050a"
+    },
+    {
+      "claim_id": "bc49826d-e54e-4ba8-a750-105ca7221ab1",
+      "result_id": "32233c6f-04f9-41c4-ad95-068913e20f94"
+    },
+    {
+      "claim_id": "70aa9f15-0e15-4521-a5f5-a84ed49758cd",
+      "result_id": "32233c6f-04f9-41c4-ad95-068913e20f94"
+    },
+    {
+      "claim_id": "bac334c8-a3fa-4c1f-8e6b-041724845308",
+      "result_id": "32233c6f-04f9-41c4-ad95-068913e20f94"
+    },
+    {
+      "claim_id": "8e705385-49d2-4e4a-bbe1-0019cfd36ddb",
+      "result_id": "32233c6f-04f9-41c4-ad95-068913e20f94"
+    },
+    {
+      "claim_id": "2dd2abab-97ae-4676-a523-ddd8074db569",
+      "result_id": "32233c6f-04f9-41c4-ad95-068913e20f94"
+    },
+    {
+      "claim_id": "de240628-740c-4ad4-ba8e-3d4cdb84f2d4",
+      "result_id": "32233c6f-04f9-41c4-ad95-068913e20f94"
+    },
+    {
+      "claim_id": "71c09832-cab9-41aa-a753-6bbe8969f35f",
+      "result_id": "32233c6f-04f9-41c4-ad95-068913e20f94"
+    },
+    {
+      "claim_id": "0b1bcfb7-8501-4a63-aef1-1b97851c045c",
+      "result_id": "32233c6f-04f9-41c4-ad95-068913e20f94"
+    },
+    {
+      "claim_id": "e670cb71-96a4-4b54-9b2b-f89eb594bc9c",
+      "result_id": "32233c6f-04f9-41c4-ad95-068913e20f94"
+    },
+    {
+      "claim_id": "9c8377ea-8b21-41f8-9304-20e1a0442610",
+      "result_id": "32233c6f-04f9-41c4-ad95-068913e20f94"
+    },
+    {
+      "claim_id": "8056976f-56f2-4b8d-bc62-33d0df263c8e",
+      "result_id": "32233c6f-04f9-41c4-ad95-068913e20f94"
+    },
+    {
+      "claim_id": "9baef4c4-5ca3-40e4-b6e1-4d06d7877dee",
+      "result_id": "32233c6f-04f9-41c4-ad95-068913e20f94"
+    },
+    {
+      "claim_id": "d41c30bf-9bdd-4eef-9a25-b12a7c06b7c1",
+      "result_id": "32233c6f-04f9-41c4-ad95-068913e20f94"
+    },
+    {
+      "claim_id": "eac43da7-718f-46b6-ad46-2ffc729517dc",
+      "result_id": "32233c6f-04f9-41c4-ad95-068913e20f94"
+    },
+    {
+      "claim_id": "0841c18a-31f2-4903-84c0-3ca679be8a53",
+      "result_id": "32233c6f-04f9-41c4-ad95-068913e20f94"
+    },
+    {
+      "claim_id": "6b0bce48-c44c-4aec-af4f-553998027885",
+      "result_id": "32233c6f-04f9-41c4-ad95-068913e20f94"
+    },
+    {
+      "claim_id": "7bb2f7fd-79d9-4d1c-8abf-4748b8619a2e",
+      "result_id": "32233c6f-04f9-41c4-ad95-068913e20f94"
+    },
+    {
+      "claim_id": "24a9e42b-68ca-435e-a126-1817048d763b",
+      "result_id": "32233c6f-04f9-41c4-ad95-068913e20f94"
+    },
+    {
+      "claim_id": "a63a5ba2-7132-4974-9e4b-0acea38dc913",
+      "result_id": "32233c6f-04f9-41c4-ad95-068913e20f94"
+    },
+    {
+      "claim_id": "a2d2e120-1332-42cb-a124-83f30230d03c",
+      "result_id": "32233c6f-04f9-41c4-ad95-068913e20f94"
+    },
+    {
+      "claim_id": "dd387843-bd58-4ea5-8b11-7427c0deb3a8",
+      "result_id": "32233c6f-04f9-41c4-ad95-068913e20f94"
+    },
+    {
+      "claim_id": "7ba90a6d-cf10-46ce-b821-043da27ade25",
+      "result_id": "32233c6f-04f9-41c4-ad95-068913e20f94"
+    },
+    {
+      "claim_id": "0576163e-c455-4651-8cff-892341c134e0",
+      "result_id": "32233c6f-04f9-41c4-ad95-068913e20f94"
+    },
+    {
+      "claim_id": "b2bc502a-e038-4d97-bf05-a0dd4b7103c3",
+      "result_id": "32233c6f-04f9-41c4-ad95-068913e20f94"
+    },
+    {
+      "claim_id": "a9305750-cf2e-439e-b150-0b7a8b30bc44",
+      "result_id": "32233c6f-04f9-41c4-ad95-068913e20f94"
+    },
+    {
+      "claim_id": "1dcac97d-e69e-4b7c-86bd-4ac383de82a3",
+      "result_id": "32233c6f-04f9-41c4-ad95-068913e20f94"
+    },
+    {
+      "claim_id": "9003ff71-e558-4e69-8c0f-682b08752913",
+      "result_id": "451b5ef9-5dde-45df-a814-f7aab1da3a88"
+    },
+    {
+      "claim_id": "61325925-b5b0-423f-b9f3-2c5f5c2831ae",
+      "result_id": "451b5ef9-5dde-45df-a814-f7aab1da3a88"
+    },
+    {
+      "claim_id": "1a229d24-2977-40cf-995f-2c34786ae974",
+      "result_id": "451b5ef9-5dde-45df-a814-f7aab1da3a88"
+    },
+    {
+      "claim_id": "074c6357-9166-4573-b444-09bec7a1a46c",
+      "result_id": "451b5ef9-5dde-45df-a814-f7aab1da3a88"
+    },
+    {
+      "claim_id": "113fef41-547d-4871-be8e-4d535b4fe15e",
+      "result_id": "50ea0a4e-e359-47b2-aa53-92e57c1a7c90"
+    },
+    {
+      "claim_id": "0fc7fce8-5c47-4f6b-be23-f261296f816a",
+      "result_id": "50ea0a4e-e359-47b2-aa53-92e57c1a7c90"
+    },
+    {
+      "claim_id": "dbe77485-735f-4b43-ac2f-3d5995a4caa4",
+      "result_id": "12f4a957-d6d5-4d17-a5e7-53174fe73536"
+    },
+    {
+      "claim_id": "531e5c88-bcfc-4857-9848-e72265fb5097",
+      "result_id": "12f4a957-d6d5-4d17-a5e7-53174fe73536"
+    },
+    {
+      "claim_id": "31d9d00d-a465-4752-adde-4af4e6b3f6fa",
+      "result_id": "12f4a957-d6d5-4d17-a5e7-53174fe73536"
+    }
+  ],
+  "comparisons": []
+}

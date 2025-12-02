@@ -1,0 +1,1945 @@
+{
+  "submission": {
+    "id": "038b7a3d-e498-41a3-8e75-3f384b36ef8b",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T16:44:54.715017Z",
+    "updated_at": "2025-12-02T16:44:54.715017Z"
+  },
+  "content": [
+    {
+      "id": "46047a7c-dfda-4d8d-9d85-ed0dade8bd96",
+      "submission_id": "038b7a3d-e498-41a3-8e75-3f384b36ef8b",
+      "content_type": "manuscript",
+      "content_text": "# Divergent Cl- and H+ pathways underlie transport coupling and gating in CLC exchangers and channels\n\n## Authors\n\n- Lilia Leisle<sup>1</sup> ([ORCID: 0000-0003-3987-4269](https://orcid.org/0000-0003-3987-4269))\n- Yanyan Xu<sup>2</sup>\n- Eva Fortea<sup>4</sup> ([ORCID: 0000-0003-4328-8940](https://orcid.org/0000-0003-4328-8940))\n- Sangyun Lee<sup>1</sup>\n- Jason D Galpin<sup>5</sup>\n- Malvin Vien<sup>1</sup>\n- Christopher A Ahern<sup>5</sup> ([ORCID: 0000-0002-7975-2744](https://orcid.org/0000-0002-7975-2744))\n- Alessio Accardi<sup>1</sup> ([ORCID: 0000-0002-6584-0102](https://orcid.org/0000-0002-6584-0102)) \u2020\n- Simon Bern\u00e8che<sup>2</sup> ([ORCID: 0000-0002-6274-4094](https://orcid.org/0000-0002-6274-4094)) \u2020\n\n### Affiliations\n\n1. Department of Anesthesiology, Weill Cornell Medical College New York United States\n2. SIB Swiss Institute of Bioinformatics, University of Basel Basel Switzerland\n3. Biozentrum, University of Basel Basel Switzerland\n4. Department of Physiology and Biophysics, Weill Cornell Medical College New York United States\n5. Department of Molecular Physiology and Biophysics, University of Iowa Carver College of Medicine Iowa City United States\n6. Department of Biochemistry, Weill Cornell Medical College New York United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nThe CLC family comprises H+-coupled exchangers and Cl- channels, and mutations causing their dysfunction lead to genetic disorders. The CLC exchangers, unlike canonical 'ping-pong' antiporters, simultaneously bind and translocate substrates through partially congruent pathways. How ions of opposite charge bypass each other while moving through a shared pathway remains unknown. Here, we use MD simulations, biochemical and electrophysiological measurements to identify two conserved phenylalanine residues that form an aromatic pathway whose dynamic rearrangements enable H+ movement outside the Cl- pore. These residues are important for H+ transport and voltage-dependent gating in the CLC exchangers. The aromatic pathway residues are evolutionarily conserved in CLC channels where their electrostatic properties and conformational flexibility determine gating. We propose that Cl- and H+ move through physically distinct and evolutionarily conserved routes through the CLC channels and transporters and suggest a unifying mechanism that describes the gating mechanism of both CLC subtypes.\n\n## Introduction\n\nThe CLC (ChLoride Channel) family is comprised of Cl- channels and H+-coupled exchangers whose primary physiological task is to mediate anion transport across biological membranes (Accardi, 2015; Jentsch and Pusch, 2018). The human genome encodes nine CLC homologues, four (CLC-1,\u20132, -Ka, -Kb) are Cl- channels that reside in the plasma membrane and five (CLC-3 through \u22127) are 2 Cl-:1 H+ antiporters that localize to intracellular compartments along the endo-lysosomal pathway. Mutations in\u00a0at\u00a0least five of the human CLC genes lead to genetically inherited disorders of muscle (Thomsen and Becker type Myotonia congenita), kidney (Bartter Syndrome Type III and IV, Dent\u2019s disease), bone (Osteopetrosis) and central nervous system (neuronal ceroid lipofuscinosis, retinal degeneration, deafness, syndromic intellectual disability, seizure disorders), highlighting the fundamental roles of CLC channels and transporters in human physiology (Jentsch, 2008; Stauber et al., 2012; Hu et al., 2016; Jentsch and Pusch, 2018; Palmer et al., 2018). Several disease-causing mutations occurring in CLC channels and transporters impair the response to the physiological stimuli regulating their activity, such as voltage, pH and nucleotide concentration (Accardi, 2015; Alekov, 2015; Bignon et al., 2018; Jentsch and Pusch, 2018).\n\nHigh-resolution structural information on the CLC-ec1 and cmCLC exchangers (Dutzler et al., 2002; Feng et al., 2010) as well as CLC-K and CLC-1 channels (Park et al., 2017; Park and MacKinnon, 2018; Wang et al., 2019) revealed that both CLC subtypes share a common dimeric architecture, where each monomer forms physically distinct and functionally independent ion permeation pathways. This pathway is defined by three anionic binding sites (Dutzler et al., 2002; Dutzler et al., 2003; Accardi and Picollo, 2010; Feng et al., 2010; Park et al., 2017; Figure 1A). The external and central sites, Sext and Scen, are alternatively occupied by the permeant anions or by the negatively charged side chain of a conserved glutamic acid, Gluex (Figure 1A). The internal site, Sint, binds anions weakly and likely serves as a recruitment site of intracellular permeating ions (Lobet and Dutzler, 2006; Picollo et al., 2009). The presence of a fourth binding site, Sext*, in direct contact with the extracellular solution has been proposed based on electrostatic calculations and is supported by electrophysiological (Lin and Chen, 2000), structural (Park et al., 2019), and molecular dynamics simulation studies (Faraldo-G\u00f3mez and Roux, 2004; Mayes et al., 2018).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/51224/elife-51224-fig1-v2.jpg)\n\n**Figure 1.:** (A) Close up view of the Cl- permeation pathway in three configurations: left, Gluex bound to Sext (CLC-ec1 WT; PDBID: 1OTS); center, protonated Gluex (mimicked by E148Q mutation) reaching out of the ion pathway (PDBID: 1OTU); right, Gluex bound to Scen (cmCLC WT, PDBID: 3ORG). Selected residues are shown as sticks and Cl- ions as green spheres. (B) The partially congruent Cl- and H+ pathways are shown in CLC-ec1 WT structure (Gluex and Gluin are shown in yellow, Cl- ions as green spheres).\n\nThe CLC Cl- pore can adopt at least three conformations, differentiated by the position and protonation state of Gluex (Dutzler et al., 2002; Dutzler et al., 2003; Feng et al., 2010; Figure 1A). Extensive functional work suggests that cycling through these conformations underlies the Cl-/H+ exchange cycle in the CLC transporters and gating in the CLC channels (L\u00edsal and Maduke, 2008; Feng et al., 2010; Feng et al., 2012; Basilio et al., 2014; Khantwal et al., 2016; Vien et al., 2017). All proposals accounting for the CLC exchange cycle suggest that these transporters do not utilize a classical \u2018ping-pong\u2019 mechanism of antiport, where the transporter sequentially interacts with one substrate at a time (Picollo et al., 2012). Rather, the CLCs were proposed to simultaneously bind (Picollo et al., 2012) and translocate Cl- and H+ through partially congruent pathways (Accardi et al., 2005; Zdebik et al., 2008; Figure 1B). The H+ pathway is delimited by two glutamic acids that are conserved in the CLC transporters: Gluin serves as the intracellular proton acceptor and is distal from the Cl- permeation pathway, while Gluex is the extracellular intersection between the H+ and Cl- pores (Figure 1B; Accardi et al., 2005; Zdebik et al., 2008). Several models have been proposed for the exchange cycle of the CLCs (Miller and Nguitragool, 2009; Feng et al., 2010; Basilio et al., 2014; Khantwal et al., 2016). However, none provided a molecular mechanism describing how the Cl- and H+ ions bypass each other while moving in opposite directions through the permeation pathway. These proposals share the critical assumption that protonation of Gluex within the pathway destabilizes its binding to Scen and/or Sext, favoring its exit from the pathway. While this mechanism readily explains outward H+ transfer, it requires that during H+ influx a protonated and neutral Glu0ex\u00a0outcompetes the negatively charged Cl- ions bound to the anion-selective Sext and Scen sites. This is an energetically unfavorable transition, which should result in intrinsic rectification of transport. Indeed, free-energy calculations show that a protonated Gluex encounters a high energy barrier to enter the Cl- permeation pathway (Kuang et al., 2007). In contrast, the CLC exchangers function with comparable efficiency in the forward and reverse directions (Matulef and Maduke, 2005; Leisle et al., 2011; De Stefano et al., 2013), suggesting that the entry and exit of the protonated Gluex from the Cl- pathway are equally favorable. Another free-energy calculation study shows that the reaction rates of deprotonation of Glu0ex in both directions of the H+ pathway are comparable to each other, while both reactions are coupled to Cl- at Scen (Lee et al., 2016). Further, the mechanisms regulating the release of ions from Sext and Scen and their coupling to the movement of Gluex and of H+ through the protein are unknown. While biochemical evidence suggests that ion release is rate-limited by a conformational step (Picollo et al., 2009), no release mechanism has been identified. Therefore, two key mechanistic features at the heart of the H+:Cl- exchange mechanism of the CLCs, the pathways and the coupling mechanism of the substrates, remain unknown.\n\nHere we combined molecular dynamics simulations with biochemical and electrophysiological measurements, and atomic mutagenesis to investigate the mechanism of H+/Cl- exchange. We find that, contrary to previously proposed models, a protonated Gluex does not move through the Cl- pore. Rather, we identify two highly conserved phenylalanine residues that form an aromatic slide which allows the protonated (neutral) Gluex to move to and from Scen without directly competing with Cl- ions for passage through the anion-selective pathway. Further, we show that the rotational movement of the central phenylalanine residue, that enables the formation of the aromatic slide, is an important regulator of ion movement within the pathway, providing the molecular mechanism for the coupled exchange of H+ and Cl- by the CLC transporters. Mutating these residues in prokaryotic and mammalian CLC exchangers severely impairs transport indicating that the role of these aromatic side chains is evolutionarily conserved. Since these phenylalanine residues are highly conserved throughout the CLC family, we hypothesized the role of the aromatic slide might be evolutionary conserved also between CLC channels and exchangers. Indeed, we found that they play important roles in the gating of the prototypical CLC-0 channel. Using atomic-scale mutagenesis, we probed how the aromatic slide residues interact with Gluex in CLC-0, and found that the central phenylalanine interacts electrostatically with the gating glutamate, and that its conformational rotation is necessary for channel gating. We propose a novel mechanism for CLC mediated H+:Cl- exchange, where the Cl- and H+ pathways are distinct and intersect only near the central ion binding site.\n\n## Results\n\n### Molecular dynamic simulations suggest F357 controls entry and release of Cl- from Scen\n\nWe used molecular dynamics simulations to probe the energetic landscape of ion movement through the permeation pathway of CLC-ec1 to ask whether it is regulated by conformational rearrangements of the pore. The first state we considered is one with Gluex protonated and out of the pathway, an E148Q-like state (Dutzler et al., 2003; Figure 1A), so that all binding sites are accessible to ions. The first Cl- ion to reach the pore preferably binds to Scen or Sext, this remains true when another ion is bound to Sext* (Figure 2A, dashed line (i), 2B). When a Cl- occupies Sint, the second ion can occupy Scen or Sext, though binding to Scen is less favorable by 2 kCal mol\u22121 (Figure 2A, dashed line (ii), 2B). Unexpectedly, our calculations suggest that simultaneous binding of Cl- to Scen and Sext does not correspond to a local free energy minimum, i.e. to a (meta-)stable state. The doubly occupied state, identified by an asterisk on Figure 2A, is unfavorable by 4 to 6 kCal mol\u22121 in comparison to the binding of a single ion to Sext or to the doubly occupied configuration with ions in Sint and Sext.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/51224/elife-51224-fig2-v2.jpg)\n\n**Figure 2.:** (A) The PMF calculation describes the energetics of two Cl- along the permeation pathway, with the protonated Glu0ex positioned on the extracellular side of the pore (E148Q-like conformation). For both ions, the reaction coordinate consists in the position along the Z-axis (Z1, Z2). The position of the different binding sites along the Z-axis is indicated. The Z\u00a0=\u00a00 coordinate is an arbitrary point defined as the center of mass of backbone atoms around Scen. The asterisk indicates the position of the doubly occupied state Scen/Sext. Each color of the iso-contoured map represents a dG of 2 kCal mol\u22121, as indicated by the color scale. (B) The scheme illustrates the key ion occupancy states. Circles represent Cl- ions identified with numbers (1, 2) that correspond to the axis labels (Z1, Z2) of the PMF plots; the labels at the top (i, ii) refer to the transitions indicated in panel A. The doubly occupied state Scen/Sext (*) is essential for ion transport but is not observed as a stable state in the PMF calculation of panel A. (C\u2013D) The PMF calculation was repeated with a harmonic restraint applied to the side chain of residue F357 to maintain \u03c71 around \u221270\u00b0 ('down' conformer), (C) or \u2212160\u00b0 ('up' conformer), (D). Simultaneous Cl- binding to Sext and Scen becomes energetically favorable under the \u2018up\u2019 conformer. Color scale is equivalent to (A). (E) F357 side chain exists in an equilibrium between two rotameric states (\u2018up\u2019, \u03c71=-160\u00b0; \u2018down\u2019, \u03c71=-70\u00b0).\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/51224/elife-51224-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A, B) The conformational sampling underlying the PMF of Figure 2A reveals large fluctuations of F357 \u03c71 angle when a Cl- visits the Scen binding site. The Scen/Sext doubly occupied state correspond to the coordinate (Z1, Z2)=(0.0, 5.0). The distribution of F357 \u03c71 values is plotted for each simulation window along the axes Z1\u00a0=\u00a00.0 \u00c5 (A) and Z2\u00a0=\u00a05.0 \u00c5 (B). (C\u2013F) The PMF along F357 \u03c71 angle is shown for different occupancy states: in absence of ions (C), with a Cl- in Sext (D) or Scen (E), and with Cl- in both Scen and Sext (F). The PMF calculations were initiated with the F357 side chain in the up state (\u03c71=-160\u00b0, black) or the down state (\u03c71=-70\u00b0, red). (G\u2013I) Molecular representations of the coordination scheme for ions in Sext (G), Scen (H), and Scen/Sext (I). The structures correspond to the free energy minimum of the PMF in panel (D), (E) and (F), respectively. The backbone conformation of residues I356 and F357 responds to the ion occupancy state, impacting on the preferred conformer of the F357 side chain. The black arrow indicates the NH group of F357.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/51224/elife-51224-fig2-figsupp2-v2.jpg)\n\n**Figure 2\u2014figure supplement 2.:** (A) Molecular graphic shows the position of the engineered crosslink within a CLC-ec1 monomer with the A399C-A432C crosslink in magenta sticks, the Cl- coordinating residues (S107, E148 and Y445) in orange sticks, Phecen (F357) and Phex (F190) respectively as red and blue sticks, and Cl- ions as green spheres. For clarity, residues 250 to 285 are not shown. (B) The distribution of F357 \u03c71 angle is shown for simulations in absence and presence of the engineered crosslink. Two independent simulations are shown for each case. In presence of the crosslink, no transition is observed between the two rotameric states of F357. (C, D) The PMFs along F357 \u03c71 angle shown in Figure 2\u2014figure supplement 1E,F are repeated here in presence of the crosslink, with a Cl- in Scen (C) and Cl- in both Scen and Sext (D). The PMF calculations were initiated with the F357 side chain in the down state (\u03c71=-70\u00b0). The Cys bridge impedes the transition of F357 toward its up state (\u03c71=-160\u00b0).\n\nSince current models postulate a state with simultaneous occupancy of Scen and Sext, we set out to investigate what gives rise to this energetic barrier. Analyzing the conformational sampling underlying the PMF calculations, we noted that simultaneous occupancy of Scen and Sext correlated with fluctuations of the rotameric state of F357 (Figure 2\u2014figure supplement 1A,B). This residue forms part of the Cl- permeation pathway of the CLC channels and transporters by coordinating ions in Scen and Sext with its backbone amide (Park et al., 2017). In our simulations, we find that the F357 side chain exists in equilibrium between two rotameric states with \u03c71 angles of \u2212160\u00b0 (\u2018up\u2019), as seen in the crystal structures of WT and mutant CLC-ec1 (Dutzler et al., 2002; Dutzler et al., 2003), and of \u221270\u00b0 (\u2018down\u2019) (Figure 2E). To test whether this conformational rearrangement affects Cl- permeation, we restrained \u03c71 (F357) to the \u2018up\u2019 or \u2018down\u2019 rotamers and determined the energetic landscape of ion binding in these conformations (Figure 2C,D). We find that when F357 is in the \u2018down\u2019 state, a free energy barrier of\u00a0~12 kCal mol\u22121 opposes ion movement within the pore, and the Scen/Sext double occupancy state remains unstable (Figure 2C). In contrast, when F357 is constrained to the \u2018up\u2019 conformer, two Cl- ions can simultaneously bind to Scen and Sext, and the different stable states along the permeation pathways are separated by free energy barriers of\u00a0~2\u20134 kCal mol\u22121 (Figure 2D). Reciprocally, the ion occupancy state directly impacts the conformation of F357: the \u2018down\u2019 state is favored when no ions occupy the pathway or when only Sext is occupied (Figure 2\u2014figure supplement 1C,D), ion occupancy of Scen or of Scen and Sext simultaneously favors the \u2018up\u2019 state of F357 (Figure 2\u2014figure supplement 1E,F). This suggests that the F357 transition between the \u2018up\u2019 and \u2018down\u2019 rotamers is critical for allowing ion permeation. To test this hypothesis, we asked whether the dynamics of F357 are affected by the introduction of a crosslink between A399 and A432 (Figure 2\u2014figure supplement 2A), which inhibits transport of CLC-ec1 by preventing a conformational rearrangement involved in coupling between the intra- and extra-cellular gates (Basilio et al., 2014). We found that constraining the relative movements of A399 and A432 inhibits the transition of F357 between its rotamers by adding a free energy barrier of\u00a0~6 kCal mol\u22121 (Figure 2\u2014figure supplement 2), suggesting that this transition is part of the transport cycle. Taken together, these results suggest that the rearrangement of F357 is a critical determinant of the energy barrier height for ion movement within the CLC pore: the \u2018up\u2019 conformer of F357 is compatible with ion transport while its \u2018down\u2019 conformer disfavors ion transitions.\n\n### Rotation of F357 enables the formation of an aromatic slide\n\nWe next asked how Cl- and Gluex interact along the transport cycle. As in the previous section, we first considered states in which Gluex is protonated (Glu0ex) and outside the Cl- pathway in an E148Q-like conformation (Figure 3A). Analysis of the conformational sampling of the PMFs presented in Figure 2 reveals that, in this configuration, Glu0ex is stabilized by the carboxylate group of D54 via a water molecule (Figure 3A) or by a hydrogen bond with the backbone of A189 (Figure 3B). The simulations also reveal that the carboxylate group of Glu0ex rarely visits Sext and rather interacts with the aromatic ring of F190, even if Sext is free of Cl- (Figure 3C).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/51224/elife-51224-fig3-v2.jpg)\n\n**Figure 3.:** (A\u2013C) Conformations of the pore extracted from the PMF calculation presented in Figure 2A, in which Glu0ex is initially placed on the extracellular side of the pore. Glu0ex is part of a hydrogen bond network involving D54 (A) or A189 (B). Glu0ex can also interact with the side chain of F190 (C). (D\u2013F) Conformations of the pore extracted from a 1D PMF describing the binding of a Cl- to the pore when Glu0ex is initially bound to Scen (see Figure 3\u2014figure supplement 1). A proton wire is spontaneously formed between Gluex (E148) and Gluin (E203), which are bridged by two water molecules (D). Glu0ex can form a dipole-\u03c0 interaction with F357 aromatic side chain, leaving Scen empty (E). Cl- moves from Sext to Scen, while the side chain of Glu0ex is stabilized outside the ion pathway by its interaction with F357, and in proximity of F190 (F). The snapshots shown here appear spontaneously in PMF calculations in which the position of ions was restrained. The illustrated side chain and water wire conformations are observed in at least three sampling windows and remain stable for most of the 500 ps sampling time of a given window.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/51224/elife-51224-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) The molecular representation shows the initial state used for the PMF calculations. (B, C) The PMFs describe the entry of a Cl- into the pore when Gluex is charged (non-protonated) (B) or neutral (protonated) (C). The reaction coordinate is defined as in Figure 2. Scen and Sext binding sites are accessible only when Gluex is protonated, in agreement with the idea that Cl- and H+ binding happens simultaneously. The PMFs also show that Sint presents a lower binding affinity than Scen and Sext.\n\nWe then considered states in which Gluex occupies Scen. We calculated the PMF describing the binding of Cl- to Sext for both the charged and protonated forms of Gluex (Figure 3\u2014figure supplement 1). The PMFs show that the binding of Cl- to Sext requires the protonation of Gluex, in agreement with our previous work suggesting synergistic binding of Cl- and H+ (Picollo et al., 2012). Interestingly, in the case of the protonated Gluex, a free energy well is also observed at the level of Scen, initially occupied by the carboxylate group of Glu0ex. Inspection of the sampled structures reveals that, when Sext is occupied by a Cl-, the Glu0ex only partially occupies Scen. Its carboxylate group moves sideway toward F357 and away from the Cl- pathway. Two key conformations are observed. A first one in which a proton wire composed of two water molecules forms spontaneously between Glu0ex (E148) and Gluin (E203) (Figure 3D), potentially allowing the deprotonation of Glu0ex. In this conformation, the carboxylate group of Glu0ex also forms a hydrogen bond with Y445. A second conformation reveals the possibility for Glu0ex to form a \u03c0-dipole interaction with the aromatic ring of F357 (Figure 3E). The displacement of Glu0ex toward F357 allows the bound Cl- to reach Scen (Figure 3F). The upward movement of F357 would bring the carboxylate group of Glu0ex in the vicinity of F190. These calculations suggest that the conformational rearrangement of F357 enables the formation of an aromatic slide through which a protonated Glu0ex can move to and from Scen without having to compete with the bound ions in the ion pathway.\n\nIt is important to note that in these calculations do not capture the full complexity of the energetic landscape of the interactions between ions in the CLC-ec1 pathway and F357, a task that would at minimum require a multidimensional PMF calculation involving at least three reaction coordinates: the position of the two Cl- ions and \u03c71(F357) angle. Additional reaction coordinates would likely be required such as the conformation and protonation state of E148, which interacts with both the ions and aromatic ring of F357, or that of conformational rearrangements taking place in CLC-ec1 during transport (Chavan et al., 2019). Thus, our calculations focus on the two key degrees of freedom of the system: (1) how the conformation of F357 affects ion occupancy of the CLC-ec1 pathway (Figure 2), and (2) how ion occupancy influences the rotameric arrangement of F357 (Figure 2\u2014figure supplement 1). Importantly, while both conformers of F357 are accessible on the time scale of the simulation, \u03c71(F357) is a slow degree of freedom (Figure 2\u2014figure supplement 1A,B), so that that the transition along this degree of freedom is not fast enough to be thoroughly sampled in absence of a biasing potential, especially when ions enter or exit the Scen and Sext binding sites. Thus, special care must be taken in interpreting the sampling of the conformations of F357 (Figure 2\u2014figure supplement 1A,B).\n\nWhile our finding that an inhibitory crosslink (Basilio et al., 2014) prevents the rearrangement of F357 (Figure 2\u2014figure supplement 2), provides an initial validation of the mechanistic inferences of our MD simulations, the hypothesis that F190 and F357 play a critical role in determining Cl-/H+ coupling and control a rate-limiting barrier for ion transport in CLC-ec1 requires experimental probing.\n\n### The aromatic slide residues are essential for Cl-:H+ coupling and exchange in CLC-ec1\n\nTo test these hypotheses, we mutated them to alanine and determined the unitary transport rate and stoichiometry of the Cl-/H+ exchange cycle. Both mutations slow the turnover rate and degrade the exchange stoichiometry (Figure 4). The F190A mutant slows transport\u00a0~4 fold (Figure 4B,E,F; Figure 4\u2014figure supplement 1C), while it severely impairs the transport stoichiometry to\u00a0~8.6:1 (Figure 4D, Figure 4\u2014figure supplement 1C). The F357A mutant reduces the transport rate\u00a0~9 fold and alters the Cl-:H+ stoichiometry to\u00a0~4.3:1 (Figure 4C\u2013F, Figure 4\u2014figure supplement 1C). As the F357 backbone lines Scen and Sext (Dutzler et al., 2002), we tested whether an alanine substitution affects the integrity of the binding sites in two ways. First, we used isothermal titration calorimetry (ITC) to measure Cl- binding to the F357A mutant and found that it has a WT-like affinity of\u00a0~0.7 mM (Figure 4\u2014figure supplement 1A). Second, we introduced the F357L substitution, which preserves side chain hydrophobicity and volume but removes the aromatic ring. We found that F357L affects the turnover rate and exchange stoichiometry like F357A (Figure 4\u2014figure supplement 1B,C). Thus, the effects of the F357A mutant reflect the absence of the aromatic side chain rather than a structural disruption of the ion pathway. Taken together our functional results are consistent with the insights from our MD simulations and indicate that F190 and F357 play a key role in coupling and transport of CLC-ec1 by modulating the movement of Gluex in and out of the pathway. To test this conclusion, we reasoned that the F190A and F357A mutations should not impair transport when introduced on the background of the H+-uncoupled E148A mutant (Accardi and Miller, 2004). The E148A mutant alone reduces Cl- turnover\u00a0~3 fold compared to WT to\u00a0~974 ion s\u22121 (Walden et al., 2007; Figure 4F). The E148A/F357A mutant transports Cl- at a similar rate of the parent E148A construct,~582 ion s\u22121 (Figure 4F). Remarkably, the double E148A/F190A mutant \u2018rescues\u2019 the transport defect of the E148A parent single mutants and has a\u00a0WT-like transport rate of 3,494 ions s\u22121 (Figure 4F). The non-additivity of the effects of the F357A and F190A mutations with that of the E148A mutant qualitatively supports the idea that these Phe residues may interact with Gluex during transport. Notably, F190 and F357 are among the highest conserved residues throughout the CLC family, respectively at\u00a0~94% and~76% (Figure 4\u2014figure supplement 2), suggesting that their functional role might be evolutionarily conserved. In the remainder of this work we will refer to these residues across different CLC homologues as Pheex (F190 in CLC-ec1) and Phecen (F357 in CLC-ec1).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/51224/elife-51224-fig4-v2.jpg)\n\n**Figure 4.:** (A\u2013C) Representative time course of Cl- (black) and H+ (gray) transport recordings of purified CLC-ec1 WT (A), F190A (B) and F357A (C) reconstituted into liposomes. (D) Average transport stoichiometry of CLC-ec1 WT (black), F190A (blue) and F357A (red). (E) Representative time course of Cl- efflux from proteoliposomes reconstituted with CLC-ec1 WT (black), E148A (green), F190A (blue), F357A (red), E148A F190A (pink) and E148A F357A (orange). (F) Average Cl- transport rate of WT and mutant CLC-ec1. All values are shown as mean\u00a0\u00b1\u00a0S.E.M. and reported together with the number of repeats (N) in Figure 4\u2014figure supplement 1C. The raw data for the traces shown is available in Figure 4\u2014source data 1.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/51224/elife-51224-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A) Representative thermogram of Cl\u2212 binding to CLC-ec1 F357A. Top graphs show the heats released upon ion binding. Bottom graphs show the integrated heats (circles), and the solid line is the fit to a single-site isotherm with KD\u00a0=\u00a00.67\u00a0\u00b1\u00a00.02 mM; \u0394H\u00a0=\u00a0\u22125.1\u00a0\u00b1\u00a00.3 kcal Mol\u22121, T\u0394S\u00a0=\u00a0\u22120.8\u00a0\u00b1\u00a00.3 kcal Mol\u22121, and n\u00a0=\u00a01 binding site, N\u00a0=\u00a02 independent repeats. (B) Representative time course of Cl- (black) and H+ (gray) transport recordings of purified CLC-ec1 F357L reconstituted into liposomes. (C) Summary table of transport rate and coupling stoichiometry for WT and mutant CLC-ec1. Numbers (N) of independent repeats of the flux measurements from at least two independent protein purifications.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/51224/elife-51224-fig4-figsupp2-v2.jpg)\n\n**Figure 4\u2014figure supplement 2.:** Pheex (A) and Phecen (B) show a high degree of conservation across the CLC family: 94% and 76%, respectively, as calculated from an alignment of 2,200 CLC sequences. Logos were created using the Weblogo server (https://weblogo.berkeley.edu/logo.cgi). (C) Superposition of the extracellular region of the Cl- and H+ pathways of the CLC-ec1 exchanger (grey; PDBID: 1OTS), the CLC-1 channel (yellow; PDBID: 6COY) and of the CLC-k channel (green; PDBID: 5TQQ). Pheex, Phecen and Gluex are shown as sticks with the oxygen atoms in red; parts of the backbone are shown as ribbons. Note that in the CLC-k channel Gluex is replaced by a valine.\n\n### The role of Pheex and Phecen is conserved in mammalian transporters\n\nWe asked whether the role of Pheex and Phecen is conserved in the mammalian CLC exchangers CLC-7 and CLC-5. Alanine substitutions of CLC-7 Pheex (F301A) and Phecen (F514A) reduced the amplitude of outward currents; the current at +90 mV is reduced by\u00a0~25% for F301A and by\u00a0~50% for F514A compared to WT (Figure 5D). These effects could reflect either a reduction in turnover, as caused in CLC-ec1 by the corresponding mutations, or a reduced plasma membrane expression of the mutant transporters. Both mutations also left-shifted the voltage dependence of CLC-7 (Figure 5E); with the F301A mutant decreasing rectification so that measurable currents could be seen at negative potentials (Figure 5, Figure 5\u2014figure supplement 1). The F301A mutant currents respond to changes in extracellular Cl- and H+ concentrations (Figure 5\u2014figure supplement 1B). A 6-fold reduction of [Cl-]ex from\u00a0~103 mM to\u00a0~17 mM induced an\u00a0~20 mV right-shift in the reversal potential (Figure 5\u2014figure supplement 1B), consistent with the idea that these are Cl- currents. Conversely, a 10-fold decrease in [H+]ex (from pH 7.5 to pH 8.5) only mildly affected the reversal potential (< \u221210 mV; Figure 5\u2014figure supplement 1B), consistent with the degraded coupling stoichiometry seen in the corresponding F190A mutant in CLC-ec1 (Figure 4D). The inherent difficulties in controlling intracellular Cl- and H+ concentration in oocytes prevented us from determining the exchange stoichiometry for WT and mutant CLC-7. While CLC-7 WT currents do not reach steady-state even after a 2 s activation pulse (Figure 5A), activation of the F301A and F514A mutants is accelerated, enabling a more thorough characterization of their voltage dependence (Figure 5B,C; Figure 5\u2014figure supplement 1C,D). The slow activation kinetics of WT CLC-7 prevent a precise determination of its V0.5, an osteopetrosis-causing mutant with accelerated kinetics was used to estimate the V0.5 of CLC-7 to around +80 mV (Leisle et al., 2011). The F301A mutant shows a reduced voltage dependence, with an apparent Pmin\u00a0of\u00a0~0.8 (Figure 5F, Suppl. File 1). In contrast, the F514A shows a sigmoidal voltage dependent G-V which could be well fit with a Boltzmann function, with z\u00a0~1 and V0.5 ~+41 mV (Figure 5F, Suppl. File 1), consistent with the left-shift seen in the normalized I-V curves (Figure 5E). The corresponding mutations in the ClC-5 exchanger, F255A (Pheex) and F455A (Phecen), have qualitatively similar effects to those seen in CLC-7: the F255A mutant reduces voltage-dependent gating, resulting in measurable currents at negative voltages, and the activation threshold of the F455A mutant is left-shifted (Figure 5\u2014figure supplement 2). However, the fast gating kinetics and strong rectification of this homologue prevent a reliable determination of the G-V relationship and thus a quantification of the effects. Taken together, our results are consistent with the idea that Pheex and Phecen play a key role in regulating the movement of Cl- ions and Gluex in and out of the anion pathway. This hypothesis is also consistent with the finding that the voltage-dependence of mammalian CLC exchangers arises from the movement of permeating ions and of Gluex through the electric field of the transport pathway (Smith and Lippiat, 2010; Zifarelli et al., 2012).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/51224/elife-51224-fig5-v2.jpg)\n\n**Figure 5.:** (A\u2013C) Representative TEVC current recordings of CLC-7 WT (A), F301A (B) and F514A (C). For voltage clamp protocol see Methods section. (D) I-V relationships extracted from currents at the end of the test voltage for CLC-7 WT (black), F301A (blue) and F514A (red). Symbols represent the average of independent experiments (N(WT)=10; N(F301A)=18; N(F514A)=12 oocytes from 4 to 5 batches). Solid line holds no theoretical meaning. The mean current amplitudes at +90 mV are I(WT)=4.9\u00a0\u00b1\u00a00.9 \u03bcA; I(F301A)=3.2\u00a0\u00b1\u00a00.5 \u03bcA and I(F514)=2.5\u00a0\u00b1\u00a00.2 \u03bcA. (E) I-V relationships from (D) normalized to corresponding I at +90 mV present changes in voltage dependence of F301A and F514A compared to WT. (F) G-V relationships for mutant CLC-7 determined from the initial values of tail currents (see Methods). Symbols represent the average of 12\u201318 independent experiments (as in (D)). Solid line is a fit to a Boltzmann function with an offset. Values are reported as mean\u00a0\u00b1\u00a0S.E.M, error bars are not shown where they are smaller than the symbol size. Values for the fit parameters and number of repeats are reported in Supplementary file 1. The raw data for the traces shown is available in Figure 5\u2014source data 1.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/51224/elife-51224-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** (A) Normalized I-V relationships of CLC-7 WT showing dependence on extracellular [Cl-] (left; N\u00a0=\u00a02) and [H+] (right; N\u00a0=\u00a02). (B) Normalized I-V relationships of CLC-7 F301A showing dependence on extracellular [Cl-] (left; N\u00a0=\u00a05) and [H+] (right; N\u00a0=\u00a05). (C, D) The time courses of current activation of CLC-7 WT (N\u00a0=\u00a08), F301A (N\u00a0=\u00a08) and F514A (N\u00a0=\u00a08) at voltages between +20 and +90 mV were fit to a biexponential function (see Materials\u00a0and\u00a0methods, Equation 2). (C) The slow (\u03c41, left) and fast (\u03c42, right) time constants of CLC-7 WT (black circles), F301A (blue squares) and F514A (red triangles) are plotted as a function of voltage. F301A strongly diminishes voltage dependence of both activation time constants (\u03c41, \u03c42; at every tested voltage p<0.05). F514A accelerates the slow time component \u03c41 (at every tested voltage p<0.005). (D) The fractional amplitudes A0, A1 and A2 for CLC-7 WT (black circles), F301A (blue squares) and F514A (red triangles) are plotted as a function of voltage. F301A increases the time-independent fractional amplitude A0 and decreases the contribution of time-dependent fractional amplitude A1 (at every voltage tested p<0.005). F514A increases A0 and decreases A1 (at every voltage tested p<0.005). All values are reported as mean\u00a0\u00b1\u00a0S.E.M, error bars are not shown where they are smaller than the symbol size. The raw data for the traces shown is available in Figure 5\u2014figure supplement 1\u2014source data 1.\n\n![Figure 5\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/51224/elife-51224-fig5-figsupp2-v2.jpg)\n\n**Figure 5\u2014figure supplement 2.:** (A\u2013C) TEVC current recordings of CLC-5 WT (A), F255A (B) and F455A (C). For voltage clamp protocol see Methods section. (D) Normalized steady state I-V relationship for CLC-5 WT (black circles, N\u00a0=\u00a025), F255A (blue squares, N\u00a0=\u00a010) and F455A (red triangles, N\u00a0=\u00a022). Values are reported as mean\u00a0\u00b1\u00a0S.E.M, error bars are not shown where they are smaller than the symbol size. The raw data for the traces shown is available in Figure 5\u2014figure supplement 2\u2014source data 1.\n\n### Pheex and Phecen are important for CLC channel gating\n\nTo probe whether the aromatic slide also plays a similar role in determining the voltage dependent gating of the CLC channels, we mutated Pheex (F214) or Phecen (F418) to alanine in the prototypical CLC-0 channel. Opening of CLC-0 channels is regulated by two processes: individual pores open and close independently in a process called single-pore gating and cooperatively during common-pore gating (Accardi, 2015; Jentsch and Pusch, 2018). Single-pore gating is thought to entail rearrangements of Gluex similar to those underlying the exchange cycle of the transporters, while the mechanistic underpinnings of common-pore gating remain poorly understood (Accardi, 2015; Jentsch and Pusch, 2018). In the CLC-0 channel, single-pore gating is activated by depolarizing voltages (Figure 6A,D), while common-pore gating is hyperpolarization activated and occurs on much slower time scales (Figure 6E,H). In the F214A and F418A mutants, the single-pore gate exhibits nearly voltage-independent open probabilities over the voltage range tested (Figure 6B\u2013D), suggesting that these mutations favor the open conformation of Gluex (E166 in CLC-0). The voltage dependence of the common-pore gate is also affected in these mutants, as the minimal open probability increases, the gating charge decreases and V0.5 shifts to more positive values (Figure 6E\u2013H). These results suggest that Pheex and Phecen are shared determinants of the voltage dependence of the common- and single-pore gating processes of CLC-0. These findings are consistent with the results of the MD simulations on the CLC-ec1 exchanger that the carboxyl group of Glu0ex interacts with the aromatic-slide residues to enter the pathway (Figure 3). Lastly, we note that the qualitative effects of the Pheex mutants are conserved between CLC-7, CLC-5 and CLC-0, as in all three homologues the voltage dependence of the currents at negative voltages is drastically reduced (Figure 5B,E,F; Figure 5\u2014figure supplement 2B,D; Figure 6B,D). However, we cannot exclude that these observed effects are due to indirect effects of the alanine substitutions on the CLC proteins. Indeed, the interpretation of the effects of any mutation is often complicated by the multiple simultaneous changes in side-chain properties introduced by the substitution.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/51224/elife-51224-fig6-v2.jpg)\n\n**Figure 6.:** (A\u2013C, E\u2013G) Representative Two Electrode Voltage Clamp (TEVC) current recordings of CLC-0 WT (A, E), F214A (B, F) and F418A (C, G) evoked by single-pore (A-C) or common-pore (E-G) gating protocols (see Methods). (D, H) Normalized G-V relationships of the single- (D, filled symbols) and common-pore (H, empty symbols) gating processes of CLC-0 WT (black circles), F214A (blue squares) and F418A (red triangles). Solid lines represent fits to a Boltzmann function (Equation 1). Values are reported as mean\u00a0\u00b1\u00a0S.E.M, error bars are not shown where they are smaller than the symbol size. Values for fit parameters and number of repeats for all conditions are reported in Supplementary file 1. The raw data for the traces shown is available in Figure 6\u2014source data 1.\n\n### Atomic mutagenesis of the aromatic slide in CLC-0\n\nTo circumvent the limitations of alanine substitutions, we used non-canonical amino acid (ncAA) mutagenesis to selectively manipulate specific properties of the phenylalanines comprising the aromatic slide (Figure 7) using three derivatives: Cyclohexylalanine (Cha), 2,6diFluoro-Phenylalanine (2,6F2-Phe) and 2,6diMethyl-Phenylalanine (2,6diMeth-Phe; Figure 7A). In Cha, the benzene ring is replaced by the non-aromatic cyclohexane ring, rendering the side chain electroneutral, while minimally altering size and hydrophobicity (Mecozzi et al., 1996; Ahern et al., 2006; Figure 7A). In 2,6F2-Phe, the fluorine atoms at positions C2 and C6 withdraw \u03c0 electrons from the face of the benzene ring which makes the edges close to the backbone electronegative, the distal edges electropositive and neutralizes the negative face of the aromatic ring (Mecozzi et al., 1996; Ahern et al., 2006; Figure 7A). Importantly, the hydrophobicity of the residue is not affected as benzene and hexa-fluoro-benzene have similar logP values (Leo et al., 1971). Substitutions with these two non-canonical amino acids specifically alter the \u03c0-electron distribution of Phecen and Pheex, thus testing the role of their electrostatic interactions with Gluex. The methyl groups at positions C2 and C6 in 2,6diMeth-Phe (Figure 7A) restrict the rotameric conversion of the aromatic side chain around the \u03c71 angle (Harrison et al., 2003; Li et al., 2007), allowing us to explicitly test the role of the rotation of Phecen in CLC gating.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/51224/elife-51224-fig7-v2.jpg)\n\n**Figure 7.:** (A) Phenylalanine (Phe) and non-canonical Phe derivatives used in this study: Cha, Cyclohexylalanine; 2,6F2-Phe, 2,6Fluoro-Phenylalanine; 2,6diMeth-Phe, 2,6diMethyl-Phenylalanine. Right panel: stick representation of the amino acids, left panel: surface electrostatic potential of benzene and its derivatives with red and blue corresponding to \u221220 and +20 kCal mol\u22121, respectively (Mecozzi et al., 1996). The surface electrostatic potential of 2,6diMeth-Phe is assumed similar to Phe because methyl group substitutions do not withdraw electrons from the benzene ring. (B, C) Normalized G-V relationships of the single- (B, C) and common-pore (D, E) gating processes for CLC-0 with the following replacements at Pheex (B, D) and Phecen (C, E): Phe (black circles), Cha (green squares), 2,6F2-Phe (pink triangles) and 2,6diMeth-Phe (cyan diamonds). WT G-V curves (from Figure 6) are shown as gray dashed lines for reference. Solid lines represent fits to a Boltzmann function with an offset (see Materials\u00a0and\u00a0methods, Equation 1). Note that the G-V data for F418X+2,6diMeth-Phe was obtained on the background of the C212S mutant (2,6diMeth-Phe*) to isolate its effects on the single-pore gating process. The effects of F418X+2,6diMeth-Phe substitution on the WT background are shown in Figure 7\u2014figure supplement 2. Values are reported as mean\u00a0\u00b1\u00a0S.E.M, error bars are not shown where they are smaller than the symbol size. Values for the fit parameters and number of repeats are reported in Supplementary file 1. The raw data is available in Figure 7\u2014source data 1.\n\n![Figure 7\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/51224/elife-51224-fig7-figsupp1-v2.jpg)\n\n**Figure 7\u2014figure supplement 1.:** (A\u2013F) Representative TEVC currents evoked with single- (top) and common-pore (bottom) gating protocols of the following CLC-0 variants: Pheex (F214X) replacements with Phe (A), Cha (B) or 2,6F2-Phe (C); Phecen (F418X) substitutions with Phe (D), Cha (E) or 2,6F2-Phe (F).\n\n![Figure 7\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/51224/elife-51224-fig7-figsupp2-v2.jpg)\n\n**Figure 7\u2014figure supplement 2.:** (A\u2013B) Representative TEVC currents of F418X+2,6diMeth-Phe evoked with single- (A) and common-pore (B) gating protocols, respectively. (C) Representative TEVC currents of C212S F418X+2,6diMeth-Phe evoked with the single-pore gating protocol. (D) Normalized G-V relationships of the single-pore gating processes of F418X+Phe (black circles; from Figure 7), F418X+2,6diMeth-Phe (orange diamonds) and C212S F418X+2,6diMeth-Phe (cyan diamonds; from Figure 7). Solid lines represent fits to a Boltzmann function with an offset (see Materials\u00a0and\u00a0methods, Equation 1). WT G-V curves (from Figure 6) are shown as gray dashed line for reference and C212S F418X+Phe G-V as cyan dashed line. Values are reported as mean\u00a0\u00b1\u00a0S.E.M, error bars are not shown where they are smaller than the symbol size. Values for the fit parameters and number of repeats are reported in Supplementary file 1. The raw data for the traces shown is available in Figure 7\u2014figure supplement 2\u2014source data 1.\n\n![Figure 7\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/51224/elife-51224-fig7-figsupp3-v2.jpg)\n\n**Figure 7\u2014figure supplement 3.:** (left panel) Mean current I at +80 mV in Xenopus laevis oocytes for F214X, F418X and C212S F418X CLC-0 co-injected with empty tRNA (gray) or tRNA misacylated with Phe (black), Cha (green), 2,6F2-Phe (pink) and 2,6diMeth-Phe (cyan). Individual data points are shown as circles and the mean\u00a0\u00b1\u00a0S.E.M. is shown as a vertical bar with error bars. (right panel) For all constructs, IUAA/ItRNA was calculated from the means of IUAA and ItRNA at +80 mV as reported in the left panel. Errors were propagated. A threshold of IUAA/ItRNA\u00a0>5 is imposed for specific incorporation efficiency (dashed line). The raw data is available in Figure 7\u2014figure supplement 3\u2014source data 1.\n\nNeutralization of electrostatics at Phecen with Cha right-shifts the single-pore G-V by\u00a0~50 mV, while the redistribution of the electrons in 2,6F2-Phe left-shifts it by\u00a0~50 mV (Figure 7C, Supplementary file 1). These replacements have smaller effects at Pheex as both the F214Cha and the F214-2,6F2-Phe substitutions cause an\u00a0~20\u201325 mV right-shift in the G-V (Figure 7B, Supplementary file 1). Similarly, substitutions at Phecen also affect common-pore gating (Figure 7E, Supplementary file 1) while those at Pheex cause only minor alterations (Figure 7D, Supplementary file 1). Notably, the effect of F418Cha is comparable to that of F418A, suggesting that the electrostatics dominate the interactions of Phecen with Gluex during common-pore gating (Figures 6H and 7E, Supplementary file 1). These substitutions suggest that the \u03c0-electron distribution of Phecen plays a major role in channel gating, while the steric and hydrophobic nature of the phenylalanine side chain appears to play a bigger role at Pheex (Figure 7, Figure 7\u2014figure supplement 1).\n\nFinally, to test whether the interconversion between the \u2018up\u2019 and \u2018down\u2019 rotamers of Phecen plays a role in channel gating we used the rotationally restricted isostere 2,6diMeth-Phe (Figure 7A). The gating kinetics of the common-pore of F418-2,6diMeth-Phe are accelerated so that they become comparable to those of the single-pore gate (Figure 7\u2014figure supplement 2A,B). To separate the effects of this non-canonical substitution on the single- and common-pore gating processes we used the C212S mutant which locks the common gate open (Lin et al., 1999; Figure 7\u2014figure supplement 2C,D). The V0.5 of the single-pore gate of the double mutant C212S F418-2,6diMeth-Phe is shifted by ~+40 mV, while the V0.5 of the common-pore gate of the single mutant is shifted by ~\u221225 mV (Figure 7C,E, Suppl. File 1). Thus, restricting the conformational rearrangement of Phecen between the \u2018up\u2019 and \u2018down\u2019 conformers impairs gating of the CLC-0, consistent with the finding of our MD simulations on the CLC-ec1 transporter (Figure 3). Taken together, our results suggest that the aromatic slide formed by Phecen and Pheex forms an evolutionarily conserved structural motif that enables movement of Gluex in and out of the Cl- pore during the exchange cycle and gating of CLC exchangers and opening of CLC channels.\n\n## Discussion\n\nDespite extensive structural and functional investigations, the mechanisms underlying the exchange cycle of the CLC transporters and opening of the CLC channels remain poorly understood. These processes are evolutionarily and mechanistically related (Miller, 2006; Accardi, 2015; Jentsch and Pusch, 2018): in both channels and transporters Gluex moves in and out of the Cl- pathway in a protonation-dependent manner. However, the molecular steps that underlie these rearrangements are unclear. The CLCs exchangers do not follow the \u2018ping-pong\u2019 or sequential kinetics that characterize most conventional transporters. In contrast, CLCs simultaneously bind H+ and Cl- (Picollo et al., 2012), and substrate movement occurs along two partially congruent translocation pathways (Accardi et al., 2005; Zdebik et al., 2008). Yet, how the two substrates bypass each other in the protein remains unknown. The recent structures of the CLCF exchanger and of the CLC-1 Cl- channel suggested that Gluex might interact with Phecen (Last et al., 2018; Park and MacKinnon, 2018), but the functional implications of these interactions are not clear. Current transport mechanisms for CLC exchangers are not reversible, as they all postulate a step where a protonated and neutral Gluex displaces Cl- ions bound to Sext and Scen sites to transfer its proton to the internal solution (Accardi et al., 2005; Zdebik et al., 2008). This transition is energetically unfavorable (Kuang et al., 2007), and would result in highly asymmetric transport rates. However, the CLC exchangers function with comparable efficiency in both directions (Matulef and Maduke, 2005; Leisle et al., 2011; De Stefano et al., 2013), arguing against the existence of an asymmetric rate-limiting step. Here, a combination of MD simulations with biochemical and electrophysiological experiments suggest that Gluex takes different routes depending on its protonation state, allowing for full reversibility of the transport mechanism.\n\n### Formation of an aromatic slide is essential to Gluex movement\n\nOur data suggest that while the deprotonated and negatively charged Gluex moves through the Cl- pathway, the protonated and neutral Glu0ex interacts with two highly conserved phenylalanines, Phecen and Pheex. These residues can form an aromatic slide that enables movement of protons bound to Gluex in and out of the pathway, connecting the central binding site and the extracellular solution. In the available structures of CLC channels and exchangers (Dutzler et al., 2002; Dutzler et al., 2003; Accardi et al., 2005; Accardi et al., 2006; Lobet and Dutzler, 2006; Feng et al., 2010; Jayaram et al., 2011; Basilio et al., 2014; Park et al., 2017; Last et al., 2018; Park and MacKinnon, 2018; Wang et al., 2019), Phecen is in the \u2018up\u2019 rotamer suggesting this conformation is likely the most stable. However, our combined simulation and functional data suggest that Phecen can adopt two distinct rotamers around its \u03c71 angle (Figure 2), and that this rearrangement determines the energy barrier for Cl- movement within the pore (Figure 2, Figure 2\u2014figure supplement 2) and enables Glu0ex to reach or leave Scen via the aromatic slide pathway (Figure 3). Further, we show that the aromatic slide residues play an evolutionarily conserved key role in the CLC exchange cycle and in CLC channel gating. Our conventional mutagenesis underscores the conserved importance of Phecen and Pheex in transporter and channel gating: alanine substitutions at these positions impair the absolute transport rate, the voltage dependence and the exchange stoichiometry of the transporters (Figures 4 and 5, Figure 5\u2014figure supplement 2), and nearly abolish the voltage dependence of channel gating (Figure 6). We used atomic scale mutagenesis to test the prediction of our MD simulations that formation of the aromatic slide entails a rotation of the side chain of Phecen around its C\u03b1-C\u03b2 bond. When we replace Phecen with 2,6diMet-Phe, a Phe derivative that specifically constrains this rotational rearrangement, we find that opening of the single- and common-pore gates in the CLC-0 channel is impaired (Figure 7, Figure 7\u2014figure supplement 2). Thus, the aromatic slide forms an evolutionarily conserved structural motif that might enable movement of a protonated Glu0ex in and out of the pathway in both CLC channels and transporters, consistent with the finding that some CLC channels mediate some residual H+ transport (Picollo and Pusch, 2005; L\u00edsal and Maduke, 2008). The low functional expression of the CLC-5 and \u22127 transporters encoding the non-canonical amino acid prevented a similar test in these homologues. Moreover, for CLC-ec1, the technology for incorporation of these particular unnatural amino acids is currently not available for prokaryotic expression systems.\n\nOur results also suggest that Pheex and Phecen interact differently with Gluex. The aromatic ring of Pheex appears to play a structural role in helping position Gluex where it can interact with Phecen in the \u2018up\u2019 conformation (Figure 3). Indeed, removal of the aromatic ring of Pheex severely affects voltage dependent gating of CLC channels and transporters (Figures 5 and 6), while selective manipulations of its electrostatic properties have only minor effects on channel gating (Figure 7B,D), possibly because this residue lines a water-accessible extracellular vestibule in the CLCs. In contrast, the electrostatic properties of the aromatic ring of Phecen are essential determinants for Gluex movement in the CLC-0 channel: elimination of the \u03c0-electrons of Phecen favors the closed state of the single-pore gate (Figure 7C), while their re-localization to the proximal edge promotes opening (Figure 7C). These findings are consistent with the location of Phecen within the core of the protein where changes in electrostatics are likely to have more impact, and with our MD simulations suggesting that Gluex forms a \u03c0-dipole interaction with the aromatic ring of Phecen (Figure 3). Indeed, the interaction between the buried aromatic Phecen and Gluex could account for the observed shifts in the pKa of Gluex (Robinson et al., 2017) in CLC channels and transporters to keep Gluex protonated during its transition through the protein (Hanke and Miller, 1983; Niemeyer et al., 2009; Picollo et al., 2010; Picollo et al., 2012). Our results are in harmony with the recent proposal that Gluex can adopt a conformation where it directly interacts with Phecen in a fluoride selective CLC antiporter (Last et al., 2018), in a mutant mimicking a fully-protonated CLC-ec1 (Chavan et al., 2019) and in the CLC-1 channel (Park and MacKinnon, 2018; Figure 4\u2014figure supplement 2C).\n\n### A mechanism for Cl-/H+ exchange\n\nOur finding that two Phe residues form an evolutionarily conserved secondary pathway that enables movement of the protonated Gluex in and out of the ion transport pathway allows us to propose a 7-state mechanism for the CLC transporters that explains the stoichiometry of 2 Cl-:1 H+, is fully reversible, and accounts for previous results. Our findings provide structural and mechanistic grounds to explain how Gluex and Cl- ions can swap places in the CLC permeation pathway (Jentsch and Pusch, 2018). For simplicity of representation, we consider that an ion in the Sext* site is out of the pathway and as such, in our scheme we do not show ions bound to this site. As a starting configuration, we consider a state where Gluex and Gluin are de-protonated, Gluex occupies Scen, Phecen is in the \u2018up\u2019 position and no Cl- ions are bound to the pathway (Figure 8, I). After a Cl- ion binds to Sint (Figure 8, II), opening of the intracellular gate, formed by Sercen and Tyrcen (Basilio et al., 2014), allows the ion to move into Scen, displacing Gluex to Sext (Figure 8, III). Binding of a second ion to Sext favors protonation of Gluex, and is accompanied by the displacement of Glu0ex out of the pathway and closure of the internal gate (Figure 8, IV). The protonated Glu0ex diffuses toward the aromatic slide and interacts with Pheex (Figure 8, V). Movement of Glu0ex along the aromatic slide allows the interdependent rearrangement of Phecen to the \u2018down\u2019 state and release of a Cl- ion, i.e. release from Sext to the extracellular milieu and the transfer of the second ion from Scen to Sext (Figure 8, VI). This conformation, where Glu0ex interacts with Phecen on the side of the Cl- pathway and Sext is occupied, favors the formation of a water wire (Figure 8, VI), which enables proton transfer from Glu0ex to Gluin (Figure 8, VII). Deprotonation of Gluex allows it to move into Scen, favoring the release of the second Cl- from Sext to the outside, and of the proton from Glu0in to the intracellular solution, returning to the starting configuration (Figure 8, I). We note that the Cl- binding affinity to Sint is low as there is no free energy barrier preventing the release of the ion (Accardi et al., 2006; Lobet and Dutzler, 2006; Picollo et al., 2009). Thus, when the transporter is in states IV through VII it is likely that Cl- ions will bind to and unbind from Sint. However, as long as the intracellular gate remains closed these events would not participate in the permeation process. Thus, for simplicity we have omitted them from the gating scheme. In sum, we propose that the Cl- and H+ ions bypass each other while moving in opposite directions through a CLC transporter by taking physically distinct routes: the Cl- ions move through the anion selective pore while the H+ moves along a pathway comprised of a water-wire and the aromatic slide (Figure 8B). The distinct routes for Cl- and H+ allow for a complete reversibility of the cycle.\n\n![Figure 8.](https://cdn.elifesciences.org/articles/51224/elife-51224-fig8-v2.jpg)\n\n**Figure 8.:** (A) Schematic representation of the 2 Cl-: 1 H+ CLC exchange cycle. The Cl- ions are shown as green circles and H+ as blue circles. The Cl- and H+ pathways are shown in pale green and cyan respectively. For clarity, the residues that undergo conformational rearrangements in each step are highlighted in red. The H+ pathway is shown as discontinuous when it is in a non-conductive conformation. (I) Apo- and occluded-state of the transporter with Gluex in Scen and Phecen in the up rotamer. (II) An intracellular Cl- ion binds to Sint. (III) The inner gate opens, a second intracellular Cl- binds so that both Sint and Scen are occupied and Gluex moves to Sext. (IV) The Cl- ions move to Scen and Sext, the inner gate closes, Gluex moves out of the pathway and becomes protonated. (V) Glu0ex interacts with Pheex. (VI) Glu0ex interacts with Phecen which rotates to the down conformation enabling the formation of a water wire connecting Glu0ex and Gluin; one Cl- ion is released from Sext and the other one moves from Scen to Sext. (VII) The H+ is transferred to Gluin favoring movement of Gluex into Scen and the Cl- ion in Sext is released to the extracellular solution, returning to the initial state (I). (B) Physically distinct Cl- and H+ pathways are indicated in CLC-ec1 WT structure (Gluex and Gluin are shown in yellow, Pheex in blue, Phecen in red, Cl- ions as green spheres). Both pathways converge at Gluex.\n\nRemarkably, our findings show that the role of the aromatic slide residues Phecen and Pheex is evolutionarily conserved between CLC exchangers and channels. We propose that the aromatic slide in CLC-0 could provide a conserved pathway that enables the residual H+ transport associated with the common-pore gating process of the CLC-0 channel to occur (L\u00edsal and Maduke, 2008). Indeed, the role of Phecen in CLC function is also supported by the finding that mutations at this position severely affect CLC-1 channel gating and conductance (Est\u00e9vez et al., 2003) and cause dominant myotonia (Imbrici et al., 2015). Thus, our proposed exchange mechanism for the CLC transporters also captures the key rearrangements that underlie gating of the CLC channels. In this framework, rapid ion conduction would be enabled by the disruption of the intracellular gate, a hypothesis justified by the widened intracellular vestibule seen in the recent structures of the bCLC-K and hCLC-1 channels (Park et al., 2017; Park and MacKinnon, 2018; Wang et al., 2019).\n\n## Materials and methods\n\n### Molecular system\n\nThe molecular systems, based on the CLC-ec1 crystal structure (PDB: 1OTS) (Dutzler et al., 2003), were assembled using the CHARMM-GUI web service (Jo et al., 2008). As it was shown that the monomeric form of CLC-ec1 is functional (Robertson et al., 2010), a single subunit was used. The x-ray structure includes residues 18 to 458. Residues 18 to 31 are normally interacting with the opposite subunit and were removed here to prevent any unexpected interaction with the pore. All residues are in their natural protonation state at pH seven except Glu148, which is tested in both its unprotonated and protonated forms. The orthorhombic periodic simulation cell contains a ClC-ec1 monomer inserted in a bilayer composed of 262 dimystoylphosphatidylcholine (DMPC) lipids, about 13 600 TIP3P water molecules, and potassium/chloride ions to neutralize the systems at a concentration of about 150 mM KCl.\n\n### Potential function and simulations\n\nAll simulations were run using the CHARMM simulation software version c36 (Brooks et al., 2009) using the CHARMM36 force field (Best et al., 2012). Simulations were performed in an isothermal\u2212isobaric ensemble with a pressure of 1 atm and a temperature of 323 K. Particle-mesh Ewald method (Essmann et al., 1995) was applied for the calculation of electrostatic interactions with a grid spacing of 1 \u00c5. The cutoff distance for van der Waals interactions was taken at 12 \u00c5 with a switching function starting at 10 \u00c5. Time step for the integration of the motion was set to two fs. The membrane systems were equilibrated following a standard protocol offered by CHARMM-GUI (Wu et al., 2014). After equilibration, a simulation of 100 ns was run for each molecular system prior to the free energy calculations. All MD simulations were performed at 0 mV.\n\nUsing the CHARMM36 force field, we compared the strength of a \u03c0-dipole interaction and that of a typical H-bond. We calculated that the interaction between a protonated glutamate side chain and the aromatic ring of a phenylalanine is \u22125.0 kCal mol\u22121 (for an optimized conformation in vacuum). For comparison, the interaction between a protonated glutamate and a serine side chain is \u22125.8 and \u22127.2 kCal mol\u22121, depending if the unprotonated or the protonated oxygen of the carboxylate group is involved. These number are in line with ab initio calculations that reported interactions on the order of \u22122.4 to \u22127.1 kCal mol\u22121 (Du et al., 2013).\n\n### Potential of mean force calculations\n\nThe potential of mean forces (PMF) were calculated using the self-learning adaptive umbrella sampling method (Wojtas-Niziurski et al., 2013). In the case of PMFs describing the displacement of one or two ions, the reaction coordinate is the position of a given ion in the pore, as projected on the normal to the membrane (Z axis). The reference point is the center of mass of the backbone of residues 107, 356, 357, and 445. Independent simulations of 500 ps were performed every 0.5 \u00c5 along the reaction coordinate using a biasing harmonic potential of 20 kCal/mol\u2022\u00c52. For the 2D PMFs of Figure 2, the ions were initially placed in Scen and Sext. For the 1D PMF of Figure 3\u2014figure supplement 1, the ion was placed in Sext. In the case of PMFs describing the rotation of the F357 side chain, the reaction coordinate is the \u03c71 angle. Simulations were performed every 10 degrees using a biasing harmonic potential of 20 kCal/mol\u2022rad2. In all cases the first 50 ps of every independent window simulation was considered as equilibration and thus excluded from the analysis. The independent simulations were combined and unbiased using the weighted histogram analysis method (WHAM) (Kumar et al., 1992). The conformations shown in Figure 3 are observed in at least three sampling windows and remain stable for most of the sampling time of a given window.\n\n### Protein purification and liposome reconstitution\n\nExpression and purification of wild-type and mutant CLC-ec1 were performed according to published protocols (Accardi and Miller, 2004; Accardi et al., 2006; Picollo et al., 2009; Picollo et al., 2012; Basilio et al., 2014). Purified proteins were reconstituted into liposomes as described (Basilio et al., 2014).\n\n### Cl- and H+ flux recordings for CLC-ec1 and variants\n\nCl- and H+ fluxes of CLC-ec1 wild-type and mutant proteins reconstituted into proteoliposomes were recorded simultaneously and the coupling stoichiometry was determined as described (Basilio et al., 2014).\n\n### Isothermal titration calorimetry (ITC)\n\nCl- binding affinity was determined for purified CLC-ec1 F357A as described (Picollo et al., 2009; Basilio et al., 2014) using a nanoITC instrument (TA Instruments). For these experiments, the final purification step of the protein was purified over a gel filtration column pre-equilibrated in 100 mM Na-K-Tartrate, 20 mM Hepes, 50 \u03bcM DMNG, pH 7.5 (Buffer B0) and concentrated to 50\u2013195 \u03bcM. The injection syringe was filled with buffer B0 with 50 mM KCl added, to achieve final Molar Ratios of 70\u2013100. Each experiment consisted of 30\u201348 injections of 1 \u03bcl of the ligand solution at 3\u20134 min intervals into the experimental chamber kept under constant stirring at 350 rpm and at 25.0 \u00b1 0.1\u00b0C. All solutions were filtered and degassed prior to use. The ITC data was fit to a single site Wiseman isotherm using the NanoAnalyze program from TA instruments.\n\n### In vitro cRNA transcription\n\nRNAs for all CLC-0, hCLC-7, hCLC-5 and mOstm1 wild-type and mutant constructs were transcribed from a pTLN vector using the mMessage mMachine SP6 Kit (Thermo Fisher Scientific, Grand Island, NY) (Pusch et al., 1995; Steinmeyer et al., 1995; Leisle et al., 2011). For all experiments in this paper a plasma-membrane localized version of hCLC-7 has been used as \u2018wild-type\u2019 which has been published earlier termed as CLC-7PM (Leisle et al., 2011). For final purification of cRNA the RNeasy Mini Kit (Quiagen, Hilden, Germany) was employed. RNA concentrations were determined by absorbance measurements at 260 nm and quality was confirmed on a 1% agarose gel.\n\n### tRNA misacylation\n\nFor nonsense suppression of CLC-0 TAG mutants (F214X and F418X) in Xenopus laevis oocytes, THG73 and PylT tRNAs have been employed. THG73 was transcribed, folded and misacylated as previously described (Leisle et al., 2016). PylT was synthetized by Integrated DNA Technologies, Inc (Coralville, IA, USA), folded and misacylated as previously described (Infield et al., 2018). Phe-, Cha-, 2,6F2-Phe- and 2,6diMethPhe-pdCpA substrates were synthesized according to published procedures (Infield et al., 2018). L-Cha was purchased from ChemImpex (Wood Dale, IL, USA; catalogue number: 11696) and BACHEM (USA; catalogue number: F-2500.0001), L-2,6-difluoro Phe from ChemImpex (catalogue number: 24171) and L-2,6-dimethyl Phe from Enamine (Monmouth Junction, NJ, USA; catalogue number: EN300-393063).\n\n### Protein expression in Xenopus laevis oocytes and two electrode voltage clamp (TEVC) recordings\n\nXenopus laevis oocytes were purchased from Ecocyte Bio Science (Austin, TX, USA) and Xenoocyte (Dexter, Michigan, USA) or kindly provided by Dr. Pablo Artigas (Texas Tech University, USA, protocol # 11024). For conventional CLC expression, following injection and expression conditions have been used: for CLC-7 (WT, F301A or F514A) and Ostm1, 25\u201375 ng of each cRNA were injected per oocytes and currents were recorded after\u00a0~60\u201380 hr; for CLC-5 (WT, F255A or F445A), 50 ng cRNA were injected per oocyte and currents were recorded\u00a0~48\u201372 hr; for CLC-0 (WT, F214A or F418A), 0.1\u20135 ng cRNA were injected and currents were measured\u00a0~6\u201324 hr after injection. For nonsense suppression of CLC-0 constructs (F214X, F418X, C212S F418X), cRNA and misacylated tRNA were coinjected (up to 25 ng of cRNA and up to 250 ng of tRNA per oocyte) and currents were recorded 6\u201324 hr after injection.\n\nTEVC was performed as described (Picollo et al., 2009). In brief, voltage-clamped chloride currents were recorded in ND96 solution (in mM: 96 NaCl, 2 KCl, 1.8 CaCl2, 1 MgCl2, 5 HEPES, pH 7.5) using an OC-725C voltage clamp amplifier (Warner Instruments, Hamden, CT). The data was acquired with Patchmaster (HEKA Elektronik, Lambrecht, Germany) at 5 kHz (CLC-0) and 20 kHz (CLC-5, CLC-7) and filtered with Frequency Devices 8-pole Bessel filter at a corner frequency of 2 kHz. Analysis was performed using Ana (M. Pusch, Istituto di Biofisica, Genova) and Prism (GraphPad, San Diego, CA, USA). Standard voltage-clamp protocols have been applied for the three CLC proteins, the holding potential was constant at \u221230 mV. For CLC-0 two different recording protocols have been used to distinguish single-pore from common-pore gating. During the single-pore gating protocol the voltage was stepped to +80 mV for 50 ms and then a variable voltage from \u2212160 mV to +80 mV increasing in 20 mV steps was applied for 200 ms, followed by a 50 ms pulse at \u2212120 mV for tail current analysis. For CLC-0 common-pore gating, 7 s voltage steps from +20 mV to \u2212140 mV have been applied in \u221220 mV increments followed by a 2.5 s +60 mV post pulse for tail current analysis. For CLC-5, a simple voltage step protocol was applied: 400 ms steps from \u221280 to + 80 mV in 20 mV increments. For CLC-7/Ostm1, voltage was clamped at variable values from \u221280 to +90 mV in 10 mV steps for 2 s, followed by a 0.5 s post pulse at \u221280 mV for tail current analysis.\n\nTo estimate the voltage dependence of CLC-0 and CLC-7/Ostm1 mutants gating, tail current analysis was performed and data was fit to a Boltzmann function of the form:\n\n$$\nP_{o}=P_{min}+\\frac{(1\u2212P_{min})}{1+exp\u2061[(V_{0.5}\u2212V)/k]}\n$$\n\nwhere Po is the open probability as a function of voltage and is assumed to reach a value of unity at full activation. Pmin is the residual open probability independent of voltage. V0.5 is the voltage at which 50% activation occurs, and k=RT/zF is the slope factor, R is the universal gas constant, T is temperature in K, F is the Faraday constant, and z is the gating charge.\n\nFor analysis of the activation kinetics of CLC-7/Ostm1 and its variants, activating voltage pulses (from +20 to +90 mV) were fit to a bi-exponential function of the following form:\n\n$$\nI=A_{0}+A_{1}e^{\u2212t/\\tau_{1}}+A_{2}e^{\u2212t/\\tau_{2}}\n$$\n\nwhere I is the current as a function of time; A1, A2 and A0 are fractional amplitudes obtained by normalizing to the total current. While A1 and A2 are time-dependent components, A0 is time-independent. \u03c41 and \u03c42 are the corresponding time constants.\n\n### Statistical analysis\n\nAll values are presented as mean\u00a0\u00b1\u00a0s.e.m. To determine statistical significance Student\u2019s t-test (two-tailed distribution; two-sample equal variance) was performed. The threshold for significance was set to p=0.05.\n",
+      "created_at": "2025-12-02T16:44:54.715017Z"
+    },
+    {
+      "id": "3bd2aa42-af28-45eb-8a35-b7cf4ad2d4e6",
+      "submission_id": "038b7a3d-e498-41a3-8e75-3f384b36ef8b",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Leon D Islas, Universidad Nacional Aut\u00f3noma de M\u00e9xico Mexico\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.51224.sa1](https://doi.org/10.7554/eLife.51224.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nAcceptance summary:\n\nChloride-hydrogen exchangers of the CLC family are important targets for known human disorders. Unraveling their molecular mechanisms is important for understanding their role in physiology. In this manuscript the authors show a novel mechanism for the simultaneous occupancy of chloride and protons in the transport pathway. These results should open new avenues of research to understand CLC transporters and channels.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Divergent Cl- and H+ pathways underlie transport coupling and gating in CLC exchangers and channels\" for consideration by eLife. Your article has been reviewed by three peer reviewers, including Leon D Islas as the Reviewing Editor and Reviewer #1, and the evaluation has been overseen by a Reviewing Editor and Richard Aldrich as the Senior Editor. The following individuals involved in review of your submission have agreed to reveal their identity: Michael Pusch (Reviewer #2); Merritt Maduke (Reviewer #3).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission. A fourth expert on MD simulations was also consulted.\n\nSummary:\n\nThis manuscript by the Accardi group proposes a new molecular mechanism to explain chloride and proton transport in CLC-class transporters and channels.\n\nUsing a combination of molecular dynamics, electrophysiology and non-canonical aminoacid substitutions, the authors find two phenylalanine residues that facilitate the movement of a protonated external glutamate involved both in gating and chloride permeation. This conformational change is different from the previously proposed one where the external glutamate occupies a chloride binding site and competes with the ion. This is an original and exciting paper and it constitutes an important contribution to understanding CLC channels/transporters.\n\nEssential revisions:\n\n1) In Figure 2\u2014figure supplement 1F, the authors report PMF calculations that show that the preferred state of Phe357 for the Scen-Sext configuration is the 'up' rotamer. This is the rotamer observed in multiple crystal structures, e.g. ion-bound WT, E148Q, E148A EcCLC, WT apo EcCLC and WT CmCLC. Accordingly, one can see in Figure 2\u2014figure supplement 1AB that the umbrella-sampling simulations that underlie the PMF in Figure 2A probe this 'up' rotamer when Z1 ~ 0 and Z2 ~ 5 A, i.e. the Scen-Sext configuration.\n\nThe reason why the Scen-Sext configuration is not a metastable state in the PMF in Figure 2A cannot be, therefore, that Phe357 is in the 'wrong' rotamer; to the contrary, the PMF in Figure 2A samples the 'correct' rotamer for Scen-Sext, according to the data provided in Figure 2\u2014figure supplement 1AB. The reason must be instead that other configurations, and in particular those with Z1 < 0 and Phe357 'down', are more favored energetically when examined in simulation. Consistent with this, when Phe357 is artificially fixed in place in the 'up' rotamer (Figure 2D), the states with Z1 < 0 are strongly penalized.\n\nIt would seem that the central and clear prediction from this simulation data is that Scen-Sext with Phe357 up is an energy barrier for the mechanism of ion motion through EcClC, at 4-6 kcal/mol, and is strongly disfavored relative to e.g. Sint-Sext with Phe357 down (Figure 2-figure supplement 1B). Yet, the latter state is not included in the mechanistic diagram shown in Figure 8, which instead depicts the former as an intermediate (states V and VI), despite the PMF in Figure 2A. This is not internally consistent. More importantly, isn't this result/prediction counter to the E148Q structure (Phe357 up) and the analysis of relative ion occupancies therein (as well as in WT and E148A) by Lobet and Dutzler 2005? Also, isn't it at odds with the interpretation of the ITC experiments in Picollo et al., 2012 (\"Our data suggest that protonation of Glu148 is unfavorable with no ions in the transport pathway, that protonation of the gating glutamate is favored by binding of a Cl\u2212 ion to Scen and is greatly stabilized by a second Cl\u2212 in Sex\"). The authors should clarify if Scen-Sext with Phe357 up is a true free-energy minimum. The PMF in Figure 2A shows that Sint-Scen is not a metastable state either. Like Scen-Sext, it falls in the 4-6 kcal range, and is in a downhill gradient in free energy, which seems to suggest the ion in Sint isn't stable. This could be explained by the lower affinity of this site, but at 150 mM KCl, the simulation is well above saturating conditions.\n\nA PMF calculation analogous to Figure 2A for E148Q with ions occupying Sext and Scen would help to alleviate these concerns \u2013 assuming it shows that the experimentally determined structure is a stable configuration.\n\n2) The authors should provide an explanation of what factors cause Phe357 to favor a different rotamer when the ion configuration changes from Scen-Sext to Sint-Sext (Figure 2\u2014figure supplement 1B) and from Scen-Sext to Sext only (Figure 2\u2014figure supplement 1D), but somehow not from Scen-Sext to Scen only (Figure 2\u2014figure supplement 1E). It is difficult to envisage how the sidechain of Phe357, which projects away from the chloride pathway and does not directly interact with the ions, nevertheless responds to the occupancy of the binding sites. Is this due to changes in the conformation of the structure?\n\n3) What ion configuration was equilibrated for 100 ns before the PMF in Figure 2A was calculated? Were other starting conditions tested? How were the PMF calculations shown in Figure 2\u2014figure supplement 1C-F initiated?\n\n4) In regard to the proposed dipole-pi interaction between protonated Glu148 and the aromatic rings of Phe190 and Phe357: what is the magnitude of this interaction, as represented by the simulation forcefield, compared with e.g. a hydrogen-bond, all other factors being equal? Are the snapshots in Figure 3 anecdotal observations, or do they reflect statistically representative states? If the latter, how were they selected?\n\n5) Mutants of Fext in CLC-5 (F255A) and CLC-7 (F301A) show rather voltage-independent currents, including steady state inward currents. There is a suspicion that they may be contaminated significantly by endogenous leak currents. Therefore, the authors have to provide positive evidence that these (inward) currents are real. Otherwise these data should be removed.\n\n6) The fact that Gluex in CLC-1 structures seems to be in a position out of the Cl permeation pathway could be due to radiation damage in cryoEM data acquisition, to which glutamate residues are particularly sensitive. This should be discussed.\n\n7) In a paper from 2003 (in which one of the lead authors of this manuscript is a co-author as well), Fcen of CLC-1 has been quite extensively characterized. For example, in addition to dramatic effects on gating, the F484A mutant showed a reduced single channel conductance. Also, in more recent papers from the Desaphy group, mutants of Fcen that cause myotonia have been characterized. This work should be discussed.\n\n8) In the same 2003 paper (Estevez et al., 2003), Fcen was proposed to be part of an inhibitor binding site. This, together with recent structural data on the CLC-1 channel, should be discussed (e.g. could binding of these inhibitors impede the movement of Gluex?).\n\n9) The outward movement of the protonated Gluex without interference somehow reminds me of a kinetic mechanism proposed for CLC antiporters (Jentsch and Pusch, 2018), in which a hypothetical \"swap\" between protonated Gluex and a Cl ion was proposed. This might be discussed.\n\n10) Regarding the Sext Cl site, the recent paper from Park et al., from the Lim group should be discussed.\n\n11) The experimental tests of the role of F190 and F357 in the CLC mechanism are not convincing. In CLC-ec1, the authors show that mutations at these positions decrease turnover rates and increase Cl-/H+ coupling stoichiometry. While this result can be called \"consistent\" with the MD simulations, it would also be consistent with any number of other mechanisms. Moreover, it is likely that mutating any other similarly conserved residue (for example F199) would cause similar changes in function. So, it is not clear that these results validate predictions of the MD simulations. Similarly, mutations on CLC-7 and CLC-0 could have many different interpretations. Unfortunately, it is not obvious what experimental tests could be done to specifically test predictions of the MD simulations. One experiment that would help would be to put F190 and F357 mutations into the CLC transporters in an uncoupled (E148A in CLC-ec1) background. Since the Phe residues are predicted to predominantly affect the H+-transport branch of the mechanism, they should have little or no effect (on Cl- transport) in such a background. Ideally, it would be best if the authors could think of additional specific tests of predictions. If that is not feasible, it is important to remove a lot of overstatements that have been made with respect to interpretations of the experimental results. For example, most of the effects of the mutants are not \"drastic\" or \"extreme\" but are actually rather modest effects on function and much smaller than effects of other known CLC mutations. Also, the concluding sentence (\u2026\"our results show that the aromatic slide forms an evolutionarily conserved structural motif that is\u2026\") would need to be toned down.\n\n12) The reduced current levels for the F301A and F514A mutants cannot be distinctly ascribed to the reduced transport rate observed in CLC-ec1. The effect of the mutant could also be a reduced expression level. The voltage-clamp experiments do not distinguish between these possibilities. The authors should provide evidence for similar expression levels or tone down this assertion.\n\n13) The effects of the alanine substitutions in both external and central phenylalanines seem to be an enhancement of gating (current measurable at every voltage), without too drastic changes in voltage-dependence (z for WT and F514A is the same). Alternatively, could the inward current in the mutants be carried by protons? This would be a similar behavior to omega currents in the voltage sensor domain proteins. This distinction is important because the effects of atomic mutagenesis are divergent with those of alanine substitution. Substitutions of the central phenylalanine make gating more difficult, while alanine substitutions seem to enhance gating.\n\n14) It would have been nice if non- canonical aminoacid incorporation experiments were carried out in the CLC-ec1 transporter, for which the MD simulations were performed. Is there a reason for this? Although it seems that the effects are conserved, it seems also that gating and permeation effects of mutagenesis are mixed in the CLC channels, while transport could be better characterized in CLC-ec1.\n",
+      "created_at": "2025-12-02T16:44:54.715017Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T16:44:54.715017Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T16:44:54.715017Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "1365a63a-cf2c-48c2-af3b-6688df64af35",
+      "content_id": "46047a7c-dfda-4d8d-9d85-ed0dade8bd96",
+      "claim_id": "C1",
+      "claim": "The CLC family comprises H+-coupled exchangers and Cl- channels.",
+      "claim_type": "EXPLICIT",
+      "source": "The CLC family comprises H+-coupled exchangers and Cl- channels, and mutations causing their dysfunction lead to genetic disorders.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement in the abstract describing the composition of the CLC family.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:44:54.715017Z"
+    },
+    {
+      "id": "7b6116f7-068a-4a21-a922-1950498592f3",
+      "content_id": "46047a7c-dfda-4d8d-9d85-ed0dade8bd96",
+      "claim_id": "C2",
+      "claim": "Mutations causing CLC dysfunction lead to genetic disorders.",
+      "claim_type": "EXPLICIT",
+      "source": "The CLC family comprises H+-coupled exchangers and Cl- channels, and mutations causing their dysfunction lead to genetic disorders.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and elaborated in the introduction with specific examples.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:44:54.715017Z"
+    },
+    {
+      "id": "03072192-199e-4322-886d-de045375d1dd",
+      "content_id": "46047a7c-dfda-4d8d-9d85-ed0dade8bd96",
+      "claim_id": "C3",
+      "claim": "CLC exchangers simultaneously bind and translocate substrates through partially congruent pathways.",
+      "claim_type": "EXPLICIT",
+      "source": "The CLC exchangers, unlike canonical 'ping-pong' antiporters, simultaneously bind and translocate substrates through partially congruent pathways.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract as a distinguishing feature of CLC exchangers.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:44:54.715017Z"
+    },
+    {
+      "id": "5ac24d61-a576-41db-81ff-90cfee8b0bf5",
+      "content_id": "46047a7c-dfda-4d8d-9d85-ed0dade8bd96",
+      "claim_id": "C4",
+      "claim": "Two conserved phenylalanine residues form an aromatic pathway that enables H+ movement outside the Cl- pore.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we use MD simulations, biochemical and electrophysiological measurements to identify two conserved phenylalanine residues that form an aromatic pathway whose dynamic rearrangements enable H+ movement outside the Cl- pore.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding stated in the abstract and supported by MD simulations and experimental data throughout the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:44:54.715017Z"
+    },
+    {
+      "id": "e202b497-6f25-4f7c-986a-34c6c73691d1",
+      "content_id": "46047a7c-dfda-4d8d-9d85-ed0dade8bd96",
+      "claim_id": "C5",
+      "claim": "The aromatic pathway residues are important for H+ transport in CLC exchangers.",
+      "claim_type": "EXPLICIT",
+      "source": "These residues are important for H+ transport and voltage-dependent gating in the CLC exchangers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and supported by functional measurements showing altered transport rates and stoichiometry in mutants.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:44:54.715017Z"
+    },
+    {
+      "id": "e65db8b6-9ac9-4588-be40-928a1da0e4df",
+      "content_id": "46047a7c-dfda-4d8d-9d85-ed0dade8bd96",
+      "claim_id": "C6",
+      "claim": "The aromatic pathway residues are important for voltage-dependent gating in CLC exchangers.",
+      "claim_type": "EXPLICIT",
+      "source": "These residues are important for H+ transport and voltage-dependent gating in the CLC exchangers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and supported by electrophysiological data showing altered voltage dependence in mutants.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:44:54.715017Z"
+    },
+    {
+      "id": "561530d2-3c11-4f3d-900e-3e8233d1cf1d",
+      "content_id": "46047a7c-dfda-4d8d-9d85-ed0dade8bd96",
+      "claim_id": "C7",
+      "claim": "The aromatic pathway residues are evolutionarily conserved in CLC channels.",
+      "claim_type": "EXPLICIT",
+      "source": "The aromatic pathway residues are evolutionarily conserved in CLC channels where their electrostatic properties and conformational flexibility determine gating.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and supported by sequence conservation analysis and functional studies in CLC-0.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:44:54.715017Z"
+    },
+    {
+      "id": "358e9fe0-881f-438b-b8f6-f9af8a938609",
+      "content_id": "46047a7c-dfda-4d8d-9d85-ed0dade8bd96",
+      "claim_id": "C8",
+      "claim": "The electrostatic properties of the aromatic pathway residues determine gating in CLC channels.",
+      "claim_type": "EXPLICIT",
+      "source": "The aromatic pathway residues are evolutionarily conserved in CLC channels where their electrostatic properties and conformational flexibility determine gating.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and supported by non-canonical amino acid mutagenesis experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:44:54.715017Z"
+    },
+    {
+      "id": "e5de3a07-31ec-4406-aabd-9660bd98a357",
+      "content_id": "46047a7c-dfda-4d8d-9d85-ed0dade8bd96",
+      "claim_id": "C9",
+      "claim": "The conformational flexibility of the aromatic pathway residues determines gating in CLC channels.",
+      "claim_type": "EXPLICIT",
+      "source": "The aromatic pathway residues are evolutionarily conserved in CLC channels where their electrostatic properties and conformational flexibility determine gating.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and supported by experiments with rotationally restricted amino acid analogs.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:44:54.715017Z"
+    },
+    {
+      "id": "35ae5b6e-0a6a-4dd5-b054-23e753248d31",
+      "content_id": "46047a7c-dfda-4d8d-9d85-ed0dade8bd96",
+      "claim_id": "C10",
+      "claim": "Cl- and H+ move through physically distinct and evolutionarily conserved routes through CLC channels and transporters.",
+      "claim_type": "EXPLICIT",
+      "source": "We propose that Cl- and H+ move through physically distinct and evolutionarily conserved routes through the CLC channels and transporters and suggest a unifying mechanism that describes the gating mechanism of both CLC subtypes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary conclusion stated in the abstract and supported by MD simulations and functional data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:44:54.715017Z"
+    },
+    {
+      "id": "268aa0b9-a2c9-4e00-8d49-bdf150aa7354",
+      "content_id": "46047a7c-dfda-4d8d-9d85-ed0dade8bd96",
+      "claim_id": "C11",
+      "claim": "The human genome encodes nine CLC homologues.",
+      "claim_type": "EXPLICIT",
+      "source": "The human genome encodes nine CLC homologues, four (CLC-1,\u20132, -Ka, -Kb) are Cl- channels that reside in the plasma membrane and five (CLC-3 through \u22127) are 2 Cl-:1 H+ antiporters that localize to intracellular compartments along the endo-lysosomal pathway.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a factual statement about the human genome.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:44:54.715017Z"
+    },
+    {
+      "id": "5eef77f3-7bbd-47ce-b5b8-0aed26001c2c",
+      "content_id": "46047a7c-dfda-4d8d-9d85-ed0dade8bd96",
+      "claim_id": "C12",
+      "claim": "Four human CLC homologues (CLC-1, -2, -Ka, -Kb) are Cl- channels that reside in the plasma membrane.",
+      "claim_type": "EXPLICIT",
+      "source": "The human genome encodes nine CLC homologues, four (CLC-1,\u20132, -Ka, -Kb) are Cl- channels that reside in the plasma membrane and five (CLC-3 through \u22127) are 2 Cl-:1 H+ antiporters that localize to intracellular compartments along the endo-lysosomal pathway.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a factual statement about CLC protein localization and function.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:44:54.715017Z"
+    },
+    {
+      "id": "9cdd4e18-6ede-4d37-ae9d-76bd3cc7e443",
+      "content_id": "46047a7c-dfda-4d8d-9d85-ed0dade8bd96",
+      "claim_id": "C13",
+      "claim": "Five human CLC homologues (CLC-3 through -7) are 2 Cl-:1 H+ antiporters.",
+      "claim_type": "EXPLICIT",
+      "source": "The human genome encodes nine CLC homologues, four (CLC-1,\u20132, -Ka, -Kb) are Cl- channels that reside in the plasma membrane and five (CLC-3 through \u22127) are 2 Cl-:1 H+ antiporters that localize to intracellular compartments along the endo-lysosomal pathway.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a factual statement about CLC protein function.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:44:54.715017Z"
+    },
+    {
+      "id": "adb31d3e-5edd-433c-ba09-7b0807ce9a56",
+      "content_id": "46047a7c-dfda-4d8d-9d85-ed0dade8bd96",
+      "claim_id": "C14",
+      "claim": "CLC-3 through CLC-7 localize to intracellular compartments along the endo-lysosomal pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "The human genome encodes nine CLC homologues, four (CLC-1,\u20132, -Ka, -Kb) are Cl- channels that reside in the plasma membrane and five (CLC-3 through \u22127) are 2 Cl-:1 H+ antiporters that localize to intracellular compartments along the endo-lysosomal pathway.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a factual statement about CLC protein localization.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:44:54.715017Z"
+    },
+    {
+      "id": "9e575511-63b1-401e-963b-607eb8be2593",
+      "content_id": "46047a7c-dfda-4d8d-9d85-ed0dade8bd96",
+      "claim_id": "C15",
+      "claim": "Mutations in at least five human CLC genes lead to genetically inherited disorders.",
+      "claim_type": "EXPLICIT",
+      "source": "Mutations in at least five of the human CLC genes lead to genetically inherited disorders of muscle (Thomsen and Becker type Myotonia congenita), kidney (Bartter Syndrome Type III and IV, Dent's disease), bone (Osteopetrosis) and central nervous system (neuronal ceroid lipofuscinosis, retinal degeneration, deafness, syndromic intellectual disability, seizure disorders), highlighting the fundamental roles of CLC channels and transporters in human physiology (Jentsch, 2008; Stauber et al., 2012; Hu et al., 2016; Jentsch and Pusch, 2018; Palmer et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by multiple citations to the literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:44:54.715017Z"
+    },
+    {
+      "id": "6c5fc8f7-e406-46ad-8e3d-a9aacc5e8175",
+      "content_id": "46047a7c-dfda-4d8d-9d85-ed0dade8bd96",
+      "claim_id": "C16",
+      "claim": "CLC mutations cause Thomsen and Becker type Myotonia congenita.",
+      "claim_type": "EXPLICIT",
+      "source": "Mutations in at least five of the human CLC genes lead to genetically inherited disorders of muscle (Thomsen and Becker type Myotonia congenita), kidney (Bartter Syndrome Type III and IV, Dent's disease), bone (Osteopetrosis) and central nervous system (neuronal ceroid lipofuscinosis, retinal degeneration, deafness, syndromic intellectual disability, seizure disorders), highlighting the fundamental roles of CLC channels and transporters in human physiology (Jentsch, 2008; Stauber et al., 2012; Hu et al., 2016; Jentsch and Pusch, 2018; Palmer et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction with supporting citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:44:54.715017Z"
+    },
+    {
+      "id": "220f1de7-0a10-449f-9e69-2b159d1989c5",
+      "content_id": "46047a7c-dfda-4d8d-9d85-ed0dade8bd96",
+      "claim_id": "C17",
+      "claim": "CLC mutations cause Bartter Syndrome Type III and IV.",
+      "claim_type": "EXPLICIT",
+      "source": "Mutations in at least five of the human CLC genes lead to genetically inherited disorders of muscle (Thomsen and Becker type Myotonia congenita), kidney (Bartter Syndrome Type III and IV, Dent's disease), bone (Osteopetrosis) and central nervous system (neuronal ceroid lipofuscinosis, retinal degeneration, deafness, syndromic intellectual disability, seizure disorders), highlighting the fundamental roles of CLC channels and transporters in human physiology (Jentsch, 2008; Stauber et al., 2012; Hu et al., 2016; Jentsch and Pusch, 2018; Palmer et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction with supporting citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:44:54.715017Z"
+    },
+    {
+      "id": "fe3efb8c-e3e0-4eca-b790-5051703fe0ca",
+      "content_id": "46047a7c-dfda-4d8d-9d85-ed0dade8bd96",
+      "claim_id": "C18",
+      "claim": "CLC mutations cause Dent's disease.",
+      "claim_type": "EXPLICIT",
+      "source": "Mutations in at least five of the human CLC genes lead to genetically inherited disorders of muscle (Thomsen and Becker type Myotonia congenita), kidney (Bartter Syndrome Type III and IV, Dent's disease), bone (Osteopetrosis) and central nervous system (neuronal ceroid lipofuscinosis, retinal degeneration, deafness, syndromic intellectual disability, seizure disorders), highlighting the fundamental roles of CLC channels and transporters in human physiology (Jentsch, 2008; Stauber et al., 2012; Hu et al., 2016; Jentsch and Pusch, 2018; Palmer et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction with supporting citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:44:54.715017Z"
+    },
+    {
+      "id": "1a176707-0c6c-4a9d-9a36-7586c6c60984",
+      "content_id": "46047a7c-dfda-4d8d-9d85-ed0dade8bd96",
+      "claim_id": "C19",
+      "claim": "CLC mutations cause Osteopetrosis.",
+      "claim_type": "EXPLICIT",
+      "source": "Mutations in at least five of the human CLC genes lead to genetically inherited disorders of muscle (Thomsen and Becker type Myotonia congenita), kidney (Bartter Syndrome Type III and IV, Dent's disease), bone (Osteopetrosis) and central nervous system (neuronal ceroid lipofuscinosis, retinal degeneration, deafness, syndromic intellectual disability, seizure disorders), highlighting the fundamental roles of CLC channels and transporters in human physiology (Jentsch, 2008; Stauber et al., 2012; Hu et al., 2016; Jentsch and Pusch, 2018; Palmer et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction with supporting citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:44:54.715017Z"
+    },
+    {
+      "id": "5c547986-c9d1-43ee-b932-a229d13e2775",
+      "content_id": "46047a7c-dfda-4d8d-9d85-ed0dade8bd96",
+      "claim_id": "C20",
+      "claim": "CLC mutations cause neuronal ceroid lipofuscinosis.",
+      "claim_type": "EXPLICIT",
+      "source": "Mutations in at least five of the human CLC genes lead to genetically inherited disorders of muscle (Thomsen and Becker type Myotonia congenita), kidney (Bartter Syndrome Type III and IV, Dent's disease), bone (Osteopetrosis) and central nervous system (neuronal ceroid lipofuscinosis, retinal degeneration, deafness, syndromic intellectual disability, seizure disorders), highlighting the fundamental roles of CLC channels and transporters in human physiology (Jentsch, 2008; Stauber et al., 2012; Hu et al., 2016; Jentsch and Pusch, 2018; Palmer et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction with supporting citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:44:54.715017Z"
+    },
+    {
+      "id": "608b81be-fae5-48c3-9e73-58d0db892624",
+      "content_id": "46047a7c-dfda-4d8d-9d85-ed0dade8bd96",
+      "claim_id": "C21",
+      "claim": "Several disease-causing mutations in CLC channels and transporters impair the response to physiological stimuli such as voltage, pH and nucleotide concentration.",
+      "claim_type": "EXPLICIT",
+      "source": "Several disease-causing mutations occurring in CLC channels and transporters impair the response to the physiological stimuli regulating their activity, such as voltage, pH and nucleotide concentration (Accardi, 2015; Alekov, 2015; Bignon et al., 2018; Jentsch and Pusch, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by multiple citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:44:54.715017Z"
+    },
+    {
+      "id": "a19d12a1-0bd4-46df-b97a-2a35a70b091c",
+      "content_id": "46047a7c-dfda-4d8d-9d85-ed0dade8bd96",
+      "claim_id": "C22",
+      "claim": "CLC channels and transporters share a common dimeric architecture.",
+      "claim_type": "EXPLICIT",
+      "source": "High-resolution structural information on the CLC-ec1 and cmCLC exchangers (Dutzler et al., 2002; Feng et al., 2010) as well as CLC-K and CLC-1 channels (Park et al., 2017; Park and MacKinnon, 2018; Wang et al., 2019) revealed that both CLC subtypes share a common dimeric architecture, where each monomer forms physically distinct and functionally independent ion permeation pathways.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated based on structural studies cited in the text.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:44:54.715017Z"
+    },
+    {
+      "id": "0947756d-f9b0-42f1-bf20-1f4a3fe73822",
+      "content_id": "46047a7c-dfda-4d8d-9d85-ed0dade8bd96",
+      "claim_id": "C23",
+      "claim": "Each CLC monomer forms physically distinct and functionally independent ion permeation pathways.",
+      "claim_type": "EXPLICIT",
+      "source": "High-resolution structural information on the CLC-ec1 and cmCLC exchangers (Dutzler et al., 2002; Feng et al., 2010) as well as CLC-K and CLC-1 channels (Park et al., 2017; Park and MacKinnon, 2018; Wang et al., 2019) revealed that both CLC subtypes share a common dimeric architecture, where each monomer forms physically distinct and functionally independent ion permeation pathways.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated based on structural studies cited in the text.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:44:54.715017Z"
+    },
+    {
+      "id": "8c772a93-d4a4-4af2-a98b-a2584829e4d1",
+      "content_id": "46047a7c-dfda-4d8d-9d85-ed0dade8bd96",
+      "claim_id": "C24",
+      "claim": "The CLC ion permeation pathway is defined by three anionic binding sites.",
+      "claim_type": "EXPLICIT",
+      "source": "This pathway is defined by three anionic binding sites (Dutzler et al., 2002; Dutzler et al., 2003; Accardi and Picollo, 2010; Feng et al., 2010; Park et al., 2017; Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text with reference to Figure 1A and supported by multiple citations.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:44:54.715017Z"
+    },
+    {
+      "id": "089a416a-c199-480a-98de-dbd93a9086e3",
+      "content_id": "46047a7c-dfda-4d8d-9d85-ed0dade8bd96",
+      "claim_id": "C25",
+      "claim": "The external and central sites (Sext and Scen) are alternatively occupied by permeant anions or by the negatively charged side chain of a conserved glutamic acid (Gluex).",
+      "claim_type": "EXPLICIT",
+      "source": "The external and central sites, Sext and Scen, are alternatively occupied by the permeant anions or by the negatively charged side chain of a conserved glutamic acid, Gluex (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text with reference to Figure 1A.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:44:54.715017Z"
+    },
+    {
+      "id": "e4b5c652-a8ea-40c4-9981-4ea120c432a8",
+      "content_id": "46047a7c-dfda-4d8d-9d85-ed0dade8bd96",
+      "claim_id": "C26",
+      "claim": "The internal site (Sint) binds anions weakly.",
+      "claim_type": "EXPLICIT",
+      "source": "The internal site, Sint, binds anions weakly and likely serves as a recruitment site of intracellular permeating ions (Lobet and Dutzler, 2006; Picollo et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the text with supporting citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:44:54.715017Z"
+    },
+    {
+      "id": "99b8255c-a7ac-4d92-a386-fb3ff8006ed4",
+      "content_id": "46047a7c-dfda-4d8d-9d85-ed0dade8bd96",
+      "claim_id": "C27",
+      "claim": "Sint likely serves as a recruitment site of intracellular permeating ions.",
+      "claim_type": "EXPLICIT",
+      "source": "The internal site, Sint, binds anions weakly and likely serves as a recruitment site of intracellular permeating ions (Lobet and Dutzler, 2006; Picollo et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a likely function based on cited studies.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:44:54.715017Z"
+    },
+    {
+      "id": "2c29d2b3-118c-4cc1-8e41-e56de6c331d6",
+      "content_id": "46047a7c-dfda-4d8d-9d85-ed0dade8bd96",
+      "claim_id": "C28",
+      "claim": "A fourth binding site (Sext*) in direct contact with the extracellular solution has been proposed based on electrostatic calculations.",
+      "claim_type": "EXPLICIT",
+      "source": "The presence of a fourth binding site, Sext*, in direct contact with the extracellular solution has been proposed based on electrostatic calculations and is supported by electrophysiological (Lin and Chen, 2000), structural (Park et al., 2019), and molecular dynamics simulation studies (Faraldo-G\u00f3mez and Roux, 2004; Mayes et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with supporting citations to various types of studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:44:54.715017Z"
+    },
+    {
+      "id": "f30c10e2-93dc-47bf-a045-4573a83141e9",
+      "content_id": "46047a7c-dfda-4d8d-9d85-ed0dade8bd96",
+      "claim_id": "C29",
+      "claim": "The CLC Cl- pore can adopt at least three conformations, differentiated by the position and protonation state of Gluex.",
+      "claim_type": "EXPLICIT",
+      "source": "The CLC Cl- pore can adopt at least three conformations, differentiated by the position and protonation state of Gluex (Dutzler et al., 2002; Dutzler et al., 2003; Feng et al., 2010; Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text with reference to Figure 1A and supporting citations.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:44:54.715017Z"
+    },
+    {
+      "id": "60e4d9ae-006c-492e-81ef-e76bb82ef6f0",
+      "content_id": "46047a7c-dfda-4d8d-9d85-ed0dade8bd96",
+      "claim_id": "C30",
+      "claim": "Cycling through the three conformations of the Cl- pore underlies the Cl-/H+ exchange cycle in CLC transporters.",
+      "claim_type": "EXPLICIT",
+      "source": "Extensive functional work suggests that cycling through these conformations underlies the Cl-/H+ exchange cycle in the CLC transporters and gating in the CLC channels (L\u00edsal and Maduke, 2008; Feng et al., 2010; Feng et al., 2012; Basilio et al., 2014; Khantwal et al., 2016; Vien et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated based on functional studies cited in the text.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:44:54.715017Z"
+    },
+    {
+      "id": "f9608160-be53-4b58-b175-76f035fc5d1f",
+      "content_id": "46047a7c-dfda-4d8d-9d85-ed0dade8bd96",
+      "claim_id": "C31",
+      "claim": "Cycling through the three conformations of the Cl- pore underlies gating in CLC channels.",
+      "claim_type": "EXPLICIT",
+      "source": "Extensive functional work suggests that cycling through these conformations underlies the Cl-/H+ exchange cycle in the CLC transporters and gating in the CLC channels (L\u00edsal and Maduke, 2008; Feng et al., 2010; Feng et al., 2012; Basilio et al., 2014; Khantwal et al., 2016; Vien et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated based on functional studies cited in the text.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:44:54.715017Z"
+    },
+    {
+      "id": "906ce43d-edb5-4669-b89b-b72c61282159",
+      "content_id": "46047a7c-dfda-4d8d-9d85-ed0dade8bd96",
+      "claim_id": "C32",
+      "claim": "CLC transporters do not utilize a classical 'ping-pong' mechanism of antiport.",
+      "claim_type": "EXPLICIT",
+      "source": "All proposals accounting for the CLC exchange cycle suggest that these transporters do not utilize a classical 'ping-pong' mechanism of antiport, where the transporter sequentially interacts with one substrate at a time (Picollo et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with a supporting citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:44:54.715017Z"
+    },
+    {
+      "id": "970e9b7a-82f5-4368-9e62-65b29b915d71",
+      "content_id": "46047a7c-dfda-4d8d-9d85-ed0dade8bd96",
+      "claim_id": "C33",
+      "claim": "CLCs simultaneously bind Cl- and H+.",
+      "claim_type": "EXPLICIT",
+      "source": "Rather, the CLCs were proposed to simultaneously bind (Picollo et al., 2012) and translocate Cl- and H+ through partially congruent pathways (Accardi et al., 2005; Zdebik et al., 2008; Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated with supporting citations and reference to Figure 1B.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:44:54.715017Z"
+    },
+    {
+      "id": "8f098371-eefc-47e0-8baa-37556e3e929b",
+      "content_id": "46047a7c-dfda-4d8d-9d85-ed0dade8bd96",
+      "claim_id": "C34",
+      "claim": "The H+ pathway is delimited by two glutamic acids that are conserved in CLC transporters.",
+      "claim_type": "EXPLICIT",
+      "source": "The H+ pathway is delimited by two glutamic acids that are conserved in the CLC transporters: Gluin serves as the intracellular proton acceptor and is distal from the Cl- permeation pathway, while Gluex is the extracellular intersection between the H+ and Cl- pores (Figure 1B; Accardi et al., 2005; Zdebik et al., 2008).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated with reference to Figure 1B and supporting citations.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:44:54.715017Z"
+    },
+    {
+      "id": "616e37a1-9237-4c2d-ae48-4aab0a63949f",
+      "content_id": "46047a7c-dfda-4d8d-9d85-ed0dade8bd96",
+      "claim_id": "C35",
+      "claim": "Gluin serves as the intracellular proton acceptor.",
+      "claim_type": "EXPLICIT",
+      "source": "The H+ pathway is delimited by two glutamic acids that are conserved in the CLC transporters: Gluin serves as the intracellular proton acceptor and is distal from the Cl- permeation pathway, while Gluex is the extracellular intersection between the H+ and Cl- pores (Figure 1B; Accardi et al., 2005; Zdebik et al., 2008).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated with reference to Figure 1B and supporting citations.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:44:54.715017Z"
+    },
+    {
+      "id": "317a9fa5-f0fe-4019-96a9-f0e19c16047e",
+      "content_id": "46047a7c-dfda-4d8d-9d85-ed0dade8bd96",
+      "claim_id": "C36",
+      "claim": "Gluex is the extracellular intersection between the H+ and Cl- pores.",
+      "claim_type": "EXPLICIT",
+      "source": "The H+ pathway is delimited by two glutamic acids that are conserved in the CLC transporters: Gluin serves as the intracellular proton acceptor and is distal from the Cl- permeation pathway, while Gluex is the extracellular intersection between the H+ and Cl- pores (Figure 1B; Accardi et al., 2005; Zdebik et al., 2008).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated with reference to Figure 1B and supporting citations.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:44:54.715017Z"
+    },
+    {
+      "id": "d4ef5551-9b01-4385-b353-11b0c0a7769e",
+      "content_id": "46047a7c-dfda-4d8d-9d85-ed0dade8bd96",
+      "claim_id": "C37",
+      "claim": "Protonation of Gluex within the pathway destabilizes its binding to Scen and/or Sext.",
+      "claim_type": "EXPLICIT",
+      "source": "These proposals share the critical assumption that protonation of Gluex within the pathway destabilizes its binding to Scen and/or Sext, favoring its exit from the pathway.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a shared assumption of current models.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:44:54.715017Z"
+    },
+    {
+      "id": "b230d6df-3353-49b5-af0c-8629289748ac",
+      "content_id": "46047a7c-dfda-4d8d-9d85-ed0dade8bd96",
+      "claim_id": "C38",
+      "claim": "A protonated Gluex encounters a high energy barrier to enter the Cl- permeation pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, free-energy calculations show that a protonated Gluex encounters a high energy barrier to enter the Cl- permeation pathway (Kuang et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated based on a cited computational study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:44:54.715017Z"
+    },
+    {
+      "id": "c1f53587-799a-4af8-9683-58e0b2350111",
+      "content_id": "46047a7c-dfda-4d8d-9d85-ed0dade8bd96",
+      "claim_id": "C39",
+      "claim": "CLC exchangers function with comparable efficiency in the forward and reverse directions.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the CLC exchangers function with comparable efficiency in the forward and reverse directions (Matulef and Maduke, 2005; Leisle et al., 2011; De Stefano et al., 2013), suggesting that the entry and exit of the protonated Gluex from the Cl- pathway are equally favorable.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with supporting citations to experimental studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:44:54.715017Z"
+    },
+    {
+      "id": "9c063347-ce77-4396-b724-0262bc0919fc",
+      "content_id": "46047a7c-dfda-4d8d-9d85-ed0dade8bd96",
+      "claim_id": "C40",
+      "claim": "The reaction rates of deprotonation of Glu0ex in both directions of the H+ pathway are comparable to each other.",
+      "claim_type": "EXPLICIT",
+      "source": "Another free-energy calculation study shows that the reaction rates of deprotonation of Glu0ex in both directions of the H+ pathway are comparable to each other, while both reactions are coupled to Cl- at Scen (Lee et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated based on a cited computational study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:44:54.715017Z"
+    },
+    {
+      "id": "9a5c241d-de66-45f4-983d-0c05dd165ab5",
+      "content_id": "46047a7c-dfda-4d8d-9d85-ed0dade8bd96",
+      "claim_id": "C41",
+      "claim": "Ion release from Sext and Scen is rate-limited by a conformational step.",
+      "claim_type": "EXPLICIT",
+      "source": "While biochemical evidence suggests that ion release is rate-limited by a conformational step (Picollo et al., 2009), no release mechanism has been identified.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated based on a cited biochemical study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:44:54.715017Z"
+    },
+    {
+      "id": "a6e63548-95e3-4fc4-a979-5ff201ea3847",
+      "content_id": "46047a7c-dfda-4d8d-9d85-ed0dade8bd96",
+      "claim_id": "C42",
+      "claim": "F357 side chain exists in equilibrium between two rotameric states ('up', \u03c71=-160\u00b0; 'down', \u03c71=-70\u00b0).",
+      "claim_type": "EXPLICIT",
+      "source": "In our simulations, we find that the F357 side chain exists in equilibrium between two rotameric states with \u03c71 angles of \u2212160\u00b0 ('up'), as seen in the crystal structures of WT and mutant CLC-ec1 (Dutzler et al., 2002; Dutzler et al., 2003), and of \u221270\u00b0 ('down') (Figure 2E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from MD simulations presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:44:54.715017Z"
+    },
+    {
+      "id": "b98d6070-5dee-46c3-8a98-4a3e958e0ac9",
+      "content_id": "46047a7c-dfda-4d8d-9d85-ed0dade8bd96",
+      "claim_id": "C43",
+      "claim": "When F357 is in the 'down' state, a free energy barrier of ~12 kCal mol\u22121 opposes ion movement within the pore.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that when F357 is in the 'down' state, a free energy barrier of ~12 kCal mol\u22121 opposes ion movement within the pore, and the Scen/Sext double occupancy state remains unstable (Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from PMF calculations presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:44:54.715017Z"
+    },
+    {
+      "id": "295e2e56-37e4-4b4c-b684-5575120efbba",
+      "content_id": "46047a7c-dfda-4d8d-9d85-ed0dade8bd96",
+      "claim_id": "C44",
+      "claim": "When F357 is constrained to the 'up' conformer, two Cl- ions can simultaneously bind to Scen and Sext.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, when F357 is constrained to the 'up' conformer, two Cl- ions can simultaneously bind to Scen and Sext, and the different stable states along the permeation pathways are separated by free energy barriers of ~2\u20134 kCal mol\u22121 (Figure 2D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from PMF calculations presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:44:54.715017Z"
+    },
+    {
+      "id": "b90b3821-8337-43ac-87eb-0f8c0bdb0586",
+      "content_id": "46047a7c-dfda-4d8d-9d85-ed0dade8bd96",
+      "claim_id": "C45",
+      "claim": "The 'down' state of F357 is favored when no ions occupy the pathway or when only Sext is occupied.",
+      "claim_type": "EXPLICIT",
+      "source": "Reciprocally, the ion occupancy state directly impacts the conformation of F357: the 'down' state is favored when no ions occupy the pathway or when only Sext is occupied (Figure 2\u2014figure supplement 1C,D), ion occupancy of Scen or of Scen and Sext simultaneously favors the 'up' state of F357 (Figure 2\u2014figure supplement 1E,F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from PMF calculations presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:44:54.715017Z"
+    },
+    {
+      "id": "8dc12af7-6d80-432b-91ba-bb7212a6753c",
+      "content_id": "46047a7c-dfda-4d8d-9d85-ed0dade8bd96",
+      "claim_id": "C46",
+      "claim": "Ion occupancy of Scen or of Scen and Sext simultaneously favors the 'up' state of F357.",
+      "claim_type": "EXPLICIT",
+      "source": "Reciprocally, the ion occupancy state directly impacts the conformation of F357: the 'down' state is favored when no ions occupy the pathway or when only Sext is occupied (Figure 2\u2014figure supplement 1C,D), ion occupancy of Scen or of Scen and Sext simultaneously favors the 'up' state of F357 (Figure 2\u2014figure supplement 1E,F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from PMF calculations presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:44:54.715017Z"
+    },
+    {
+      "id": "d1678bdb-c807-420c-b44c-718cf3a575ae",
+      "content_id": "46047a7c-dfda-4d8d-9d85-ed0dade8bd96",
+      "claim_id": "C47",
+      "claim": "Constraining the relative movements of A399 and A432 inhibits the transition of F357 between its rotamers by adding a free energy barrier of ~6 kCal mol\u22121.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that constraining the relative movements of A399 and A432 inhibits the transition of F357 between its rotamers by adding a free energy barrier of ~6 kCal mol\u22121 (Figure 2\u2014figure supplement 2), suggesting that this transition is part of the transport cycle.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from MD simulations with an engineered crosslink.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:44:54.715017Z"
+    },
+    {
+      "id": "380a21d4-3f01-4174-b0a5-72a9c07cdb48",
+      "content_id": "46047a7c-dfda-4d8d-9d85-ed0dade8bd96",
+      "claim_id": "C48",
+      "claim": "The carboxylate group of Glu0ex rarely visits Sext and rather interacts with the aromatic ring of F190.",
+      "claim_type": "EXPLICIT",
+      "source": "The simulations also reveal that the carboxylate group of Glu0ex rarely visits Sext and rather interacts with the aromatic ring of F190, even if Sext is free of Cl- (Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from MD simulations presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:44:54.715017Z"
+    },
+    {
+      "id": "2f056907-d759-4cac-9cb0-094ac5ef54ee",
+      "content_id": "46047a7c-dfda-4d8d-9d85-ed0dade8bd96",
+      "claim_id": "C49",
+      "claim": "A proton wire composed of two water molecules forms spontaneously between Glu0ex (E148) and Gluin (E203).",
+      "claim_type": "EXPLICIT",
+      "source": "A first one in which a proton wire composed of two water molecules forms spontaneously between Glu0ex (E148) and Gluin (E203) (Figure 3D), potentially allowing the deprotonation of Glu0ex.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from MD simulations presented in the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:44:54.715017Z"
+    },
+    {
+      "id": "c4196e80-41f6-4223-b6cd-01e4a9b951d7",
+      "content_id": "46047a7c-dfda-4d8d-9d85-ed0dade8bd96",
+      "claim_id": "C50",
+      "claim": "Glu0ex can form a \u03c0-dipole interaction with the aromatic ring of F357.",
+      "claim_type": "EXPLICIT",
+      "source": "A second conformation reveals the possibility for Glu0ex to form a \u03c0-dipole interaction with the aromatic ring of F357 (Figure 3E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from MD simulations presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:44:54.715017Z"
+    },
+    {
+      "id": "8aaf628e-1e81-4109-a441-49396941471b",
+      "content_id": "46047a7c-dfda-4d8d-9d85-ed0dade8bd96",
+      "claim_id": "C51",
+      "claim": "The F190A mutant slows CLC-ec1 transport ~4 fold.",
+      "claim_type": "EXPLICIT",
+      "source": "The F190A mutant slows transport ~4 fold (Figure 4B,E,F; Figure 4\u2014figure supplement 1C), while it severely impairs the transport stoichiometry to ~8.6:1 (Figure 4D, Figure 4\u2014figure supplement 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from experimental measurements presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:44:54.715017Z"
+    },
+    {
+      "id": "efbac8b5-5e5d-4ecb-9e4e-13ad538de097",
+      "content_id": "46047a7c-dfda-4d8d-9d85-ed0dade8bd96",
+      "claim_id": "C52",
+      "claim": "The F190A mutant severely impairs the CLC-ec1 transport stoichiometry to ~8.6:1.",
+      "claim_type": "EXPLICIT",
+      "source": "The F190A mutant slows transport ~4 fold (Figure 4B,E,F; Figure 4\u2014figure supplement 1C), while it severely impairs the transport stoichiometry to ~8.6:1 (Figure 4D, Figure 4\u2014figure supplement 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from experimental measurements presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:44:54.715017Z"
+    },
+    {
+      "id": "12451308-4968-4a0d-ba5e-f7fac57c7a58",
+      "content_id": "46047a7c-dfda-4d8d-9d85-ed0dade8bd96",
+      "claim_id": "C53",
+      "claim": "The F357A mutant reduces the CLC-ec1 transport rate ~9 fold.",
+      "claim_type": "EXPLICIT",
+      "source": "The F357A mutant reduces the transport rate ~9 fold and alters the Cl-:H+ stoichiometry to ~4.3:1 (Figure 4C\u2013F, Figure 4\u2014figure supplement 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from experimental measurements presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:44:54.715017Z"
+    },
+    {
+      "id": "1cf4ae50-986b-4c46-87dd-aa9ea35be34d",
+      "content_id": "46047a7c-dfda-4d8d-9d85-ed0dade8bd96",
+      "claim_id": "C54",
+      "claim": "The F357A mutant alters the CLC-ec1 Cl-:H+ stoichiometry to ~4.3:1.",
+      "claim_type": "EXPLICIT",
+      "source": "The F357A mutant reduces the transport rate ~9 fold and alters the Cl-:H+ stoichiometry to ~4.3:1 (Figure 4C\u2013F, Figure 4\u2014figure supplement 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from experimental measurements presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:44:54.715017Z"
+    },
+    {
+      "id": "58e83ef3-0f8e-472e-827b-670acd85d819",
+      "content_id": "46047a7c-dfda-4d8d-9d85-ed0dade8bd96",
+      "claim_id": "C55",
+      "claim": "CLC-ec1 F357A has a Cl- binding affinity of ~0.7 mM.",
+      "claim_type": "EXPLICIT",
+      "source": "First, we used isothermal titration calorimetry (ITC) to measure Cl- binding to the F357A mutant and found that it has a WT-like affinity of ~0.7 mM (Figure 4\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from ITC measurements presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:44:54.715017Z"
+    },
+    {
+      "id": "48a12e3c-0880-4b24-bc6f-1fab6b34dd22",
+      "content_id": "46047a7c-dfda-4d8d-9d85-ed0dade8bd96",
+      "claim_id": "C56",
+      "claim": "F357L affects the CLC-ec1 turnover rate and exchange stoichiometry like F357A.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that F357L affects the turnover rate and exchange stoichiometry like F357A (Figure 4\u2014figure supplement 1B,C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from experimental measurements presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:44:54.715017Z"
+    },
+    {
+      "id": "19dd9210-55cc-4477-a3cd-a6aa19f851a3",
+      "content_id": "46047a7c-dfda-4d8d-9d85-ed0dade8bd96",
+      "claim_id": "C57",
+      "claim": "The E148A mutant reduces CLC-ec1 Cl- turnover ~3 fold compared to WT to ~974 ion s\u22121.",
+      "claim_type": "EXPLICIT",
+      "source": "The E148A mutant alone reduces Cl- turnover ~3 fold compared to WT to ~974 ion s\u22121 (Walden et al., 2007; Figure 4F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated with a citation and reference to Figure 4F.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:44:54.715017Z"
+    },
+    {
+      "id": "7bb19a75-2c8e-4477-b023-482ab4deec22",
+      "content_id": "46047a7c-dfda-4d8d-9d85-ed0dade8bd96",
+      "claim_id": "C58",
+      "claim": "The E148A/F357A mutant transports Cl- at a rate of ~582 ion s\u22121.",
+      "claim_type": "EXPLICIT",
+      "source": "The E148A/F357A mutant transports Cl- at a similar rate of the parent E148A construct,~582 ion s\u22121 (Figure 4F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from experimental measurements presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:44:54.715017Z"
+    },
+    {
+      "id": "90b4ffd6-2acf-46de-ae20-8d880ea879e8",
+      "content_id": "46047a7c-dfda-4d8d-9d85-ed0dade8bd96",
+      "claim_id": "C59",
+      "claim": "The double E148A/F190A mutant has a WT-like transport rate of 3,494 ions s\u22121.",
+      "claim_type": "EXPLICIT",
+      "source": "Remarkably, the double E148A/F190A mutant 'rescues' the transport defect of the E148A parent single mutants and has a WT-like transport rate of 3,494 ions s\u22121 (Figure 4F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from experimental measurements presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:44:54.715017Z"
+    },
+    {
+      "id": "d4c9baf8-516f-401d-bb7c-d4d31ad63582",
+      "content_id": "46047a7c-dfda-4d8d-9d85-ed0dade8bd96",
+      "claim_id": "C60",
+      "claim": "F190 is conserved at ~94% across the CLC family.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, F190 and F357 are among the highest conserved residues throughout the CLC family, respectively at ~94% and~76% (Figure 4\u2014figure supplement 2), suggesting that their functional role might be evolutionarily conserved.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated based on sequence conservation analysis shown in Figure 4\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:44:54.715017Z"
+    },
+    {
+      "id": "4d337e99-d589-424f-b1a2-70bb7681362f",
+      "content_id": "46047a7c-dfda-4d8d-9d85-ed0dade8bd96",
+      "claim_id": "C61",
+      "claim": "F357 is conserved at ~76% across the CLC family.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, F190 and F357 are among the highest conserved residues throughout the CLC family, respectively at ~94% and~76% (Figure 4\u2014figure supplement 2), suggesting that their functional role might be evolutionarily conserved.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated based on sequence conservation analysis shown in Figure 4\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:44:54.715017Z"
+    },
+    {
+      "id": "1d57dfa4-e65f-4aaa-8a08-20c4988552b9",
+      "content_id": "46047a7c-dfda-4d8d-9d85-ed0dade8bd96",
+      "claim_id": "C62",
+      "claim": "The F301A mutation in CLC-7 reduces the current at +90 mV by ~25% compared to WT.",
+      "claim_type": "EXPLICIT",
+      "source": "Alanine substitutions of CLC-7 Pheex (F301A) and Phecen (F514A) reduced the amplitude of outward currents; the current at +90 mV is reduced by ~25% for F301A and by ~50% for F514A compared to WT (Figure 5D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from electrophysiological measurements presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:44:54.715017Z"
+    },
+    {
+      "id": "b73276aa-8e33-4740-a6bd-118d6e665dce",
+      "content_id": "46047a7c-dfda-4d8d-9d85-ed0dade8bd96",
+      "claim_id": "C63",
+      "claim": "The F514A mutation in CLC-7 reduces the current at +90 mV by ~50% compared to WT.",
+      "claim_type": "EXPLICIT",
+      "source": "Alanine substitutions of CLC-7 Pheex (F301A) and Phecen (F514A) reduced the amplitude of outward currents; the current at +90 mV is reduced by ~25% for F301A and by ~50% for F514A compared to WT (Figure 5D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from electrophysiological measurements presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:44:54.715017Z"
+    },
+    {
+      "id": "d8a52714-33f0-4f68-bcb9-83b2bb1c029c",
+      "content_id": "46047a7c-dfda-4d8d-9d85-ed0dade8bd96",
+      "claim_id": "C64",
+      "claim": "The F301A and F514A mutations left-shift the voltage dependence of CLC-7.",
+      "claim_type": "EXPLICIT",
+      "source": "Both mutations also left-shifted the voltage dependence of CLC-7 (Figure 5E); with the F301A mutant decreasing rectification so that measurable currents could be seen at negative potentials (Figure 5, Figure 5\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from electrophysiological measurements presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:44:54.715017Z"
+    },
+    {
+      "id": "c51e138e-7a25-4718-95c9-397c39805979",
+      "content_id": "46047a7c-dfda-4d8d-9d85-ed0dade8bd96",
+      "claim_id": "C65",
+      "claim": "The F301A mutant shows a reduced voltage dependence, with an apparent Pmin of ~0.8.",
+      "claim_type": "EXPLICIT",
+      "source": "The F301A mutant shows a reduced voltage dependence, with an apparent Pmin of ~0.8 (Figure 5F, Suppl. File 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from electrophysiological measurements presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:44:54.715017Z"
+    },
+    {
+      "id": "66087dd6-6a93-4f4c-9db6-3063b5c93202",
+      "content_id": "46047a7c-dfda-4d8d-9d85-ed0dade8bd96",
+      "claim_id": "C66",
+      "claim": "The F514A mutant shows a sigmoidal voltage dependent G-V which could be well fit with a Boltzmann function, with z ~1 and V0.5 ~+41 mV.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the F514A shows a sigmoidal voltage dependent G-V which could be well fit with a Boltzmann function, with z ~1 and V0.5 ~+41 mV (Figure 5F, Suppl. File 1), consistent with the left-shift seen in the normalized I-V curves (Figure 5E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from electrophysiological measurements presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:44:54.715017Z"
+    },
+    {
+      "id": "2efcb3c1-d676-4dc0-8a78-42dc5237b33e",
+      "content_id": "46047a7c-dfda-4d8d-9d85-ed0dade8bd96",
+      "claim_id": "C67",
+      "claim": "The F255A mutation in CLC-5 reduces voltage-dependent gating, resulting in measurable currents at negative voltages.",
+      "claim_type": "EXPLICIT",
+      "source": "The corresponding mutations in the ClC-5 exchanger, F255A (Pheex) and F455A (Phecen), have qualitatively similar effects to those seen in CLC-7: the F255A mutant reduces voltage-dependent gating, resulting in measurable currents at negative voltages, and the activation threshold of the F455A mutant is left-shifted (Figure 5\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from electrophysiological measurements presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:44:54.715017Z"
+    },
+    {
+      "id": "e5f1bcf0-9da9-49ed-bb4c-08ae314bb344",
+      "content_id": "46047a7c-dfda-4d8d-9d85-ed0dade8bd96",
+      "claim_id": "C68",
+      "claim": "The activation threshold of the F455A mutant in CLC-5 is left-shifted.",
+      "claim_type": "EXPLICIT",
+      "source": "The corresponding mutations in the ClC-5 exchanger, F255A (Pheex) and F455A (Phecen), have qualitatively similar effects to those seen in CLC-7: the F255A mutant reduces voltage-dependent gating, resulting in measurable currents at negative voltages, and the activation threshold of the F455A mutant is left-shifted (Figure 5\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from electrophysiological measurements presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:44:54.715017Z"
+    },
+    {
+      "id": "525834cf-8c7f-4de7-a68b-5bbea3f73f68",
+      "content_id": "46047a7c-dfda-4d8d-9d85-ed0dade8bd96",
+      "claim_id": "C69",
+      "claim": "In CLC-0, the F214A and F418A mutants exhibit nearly voltage-independent open probabilities of the single-pore gate over the voltage range tested.",
+      "claim_type": "EXPLICIT",
+      "source": "In the F214A and F418A mutants, the single-pore gate exhibits nearly voltage-independent open probabilities over the voltage range tested (Figure 6B\u2013D), suggesting that these mutations favor the open conformation of Gluex (E166 in CLC-0).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from electrophysiological measurements presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:44:54.715017Z"
+    },
+    {
+      "id": "a00f6d68-aca6-4e23-adb3-31d93615f181",
+      "content_id": "46047a7c-dfda-4d8d-9d85-ed0dade8bd96",
+      "claim_id": "C70",
+      "claim": "The F214A and F418A mutations in CLC-0 favor the open conformation of Gluex.",
+      "claim_type": "EXPLICIT",
+      "source": "In the F214A and F418A mutants, the single-pore gate exhibits nearly voltage-independent open probabilities over the voltage range tested (Figure 6B\u2013D), suggesting that these mutations favor the open conformation of Gluex (E166 in CLC-0).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference from the electrophysiological data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:44:54.715017Z"
+    },
+    {
+      "id": "c2c67086-e2f7-4f82-a216-eec85cfd503c",
+      "content_id": "46047a7c-dfda-4d8d-9d85-ed0dade8bd96",
+      "claim_id": "C71",
+      "claim": "The voltage dependence of the common-pore gate is affected in the F214A and F418A mutants of CLC-0.",
+      "claim_type": "EXPLICIT",
+      "source": "The voltage dependence of the common-pore gate is also affected in these mutants, as the minimal open probability increases, the gating charge decreases and V0.5 shifts to more positive values (Figure 6E\u2013H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from electrophysiological measurements presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:44:54.715017Z"
+    },
+    {
+      "id": "983ac82a-f932-46f6-bc7e-0c194b7809d1",
+      "content_id": "46047a7c-dfda-4d8d-9d85-ed0dade8bd96",
+      "claim_id": "C72",
+      "claim": "Neutralization of electrostatics at Phecen with Cha right-shifts the single-pore G-V by ~50 mV.",
+      "claim_type": "EXPLICIT",
+      "source": "Neutralization of electrostatics at Phecen with Cha right-shifts the single-pore G-V by ~50 mV, while the redistribution of the electrons in 2,6F2-Phe left-shifts it by ~50 mV (Figure 7C, Supplementary file 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from non-canonical amino acid mutagenesis experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:44:54.715017Z"
+    },
+    {
+      "id": "cba0f480-631c-438b-993a-8b8ac4e299ba",
+      "content_id": "46047a7c-dfda-4d8d-9d85-ed0dade8bd96",
+      "claim_id": "C73",
+      "claim": "The redistribution of electrons in 2,6F2-Phe at Phecen left-shifts the single-pore G-V by ~50 mV.",
+      "claim_type": "EXPLICIT",
+      "source": "Neutralization of electrostatics at Phecen with Cha right-shifts the single-pore G-V by ~50 mV, while the redistribution of the electrons in 2,6F2-Phe left-shifts it by ~50 mV (Figure 7C, Supplementary file 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from non-canonical amino acid mutagenesis experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:44:54.715017Z"
+    },
+    {
+      "id": "ad548e6f-add0-42e8-b0a0-1e50632be5d2",
+      "content_id": "46047a7c-dfda-4d8d-9d85-ed0dade8bd96",
+      "claim_id": "C74",
+      "claim": "F214Cha and F214-2,6F2-Phe substitutions cause an ~20\u201325 mV right-shift in the single-pore G-V.",
+      "claim_type": "EXPLICIT",
+      "source": "These replacements have smaller effects at Pheex as both the F214Cha and the F214-2,6F2-Phe substitutions cause an ~20\u201325 mV right-shift in the G-V (Figure 7B, Supplementary file 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from non-canonical amino acid mutagenesis experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:44:54.715017Z"
+    },
+    {
+      "id": "0fd172d1-f2ff-4499-97cb-5290d61f54d8",
+      "content_id": "46047a7c-dfda-4d8d-9d85-ed0dade8bd96",
+      "claim_id": "C75",
+      "claim": "The effect of F418Cha is comparable to that of F418A on common-pore gating.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, the effect of F418Cha is comparable to that of F418A, suggesting that the electrostatics dominate the interactions of Phecen with Gluex during common-pore gating (Figures 6H and 7E, Supplementary file 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from comparing conventional and non-canonical amino acid mutagenesis experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:44:54.715017Z"
+    },
+    {
+      "id": "06e05b5f-2fdf-4033-9c5b-166e70e60679",
+      "content_id": "46047a7c-dfda-4d8d-9d85-ed0dade8bd96",
+      "claim_id": "C76",
+      "claim": "The V0.5 of the single-pore gate of the double mutant C212S F418-2,6diMeth-Phe is shifted by ~+40 mV.",
+      "claim_type": "EXPLICIT",
+      "source": "The V0.5 of the single-pore gate of the double mutant C212S F418-2,6diMeth-Phe is shifted by ~+40 mV, while the V0.5 of the common-pore gate of the single mutant is shifted by ~\u221225 mV (Figure 7C,E, Suppl. File 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from non-canonical amino acid mutagenesis experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:44:54.715017Z"
+    },
+    {
+      "id": "435de97b-87c7-4c05-9d0d-6882963cf2d2",
+      "content_id": "46047a7c-dfda-4d8d-9d85-ed0dade8bd96",
+      "claim_id": "C77",
+      "claim": "The V0.5 of the common-pore gate of the F418-2,6diMeth-Phe single mutant is shifted by ~\u221225 mV.",
+      "claim_type": "EXPLICIT",
+      "source": "The V0.5 of the single-pore gate of the double mutant C212S F418-2,6diMeth-Phe is shifted by ~+40 mV, while the V0.5 of the common-pore gate of the single mutant is shifted by ~\u221225 mV (Figure 7C,E, Suppl. File 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from non-canonical amino acid mutagenesis experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:44:54.715017Z"
+    },
+    {
+      "id": "40688069-9796-42d9-928d-9b30e16b9e8f",
+      "content_id": "46047a7c-dfda-4d8d-9d85-ed0dade8bd96",
+      "claim_id": "C78",
+      "claim": "Restricting the conformational rearrangement of Phecen between the 'up' and 'down' conformers impairs gating of CLC-0.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, restricting the conformational rearrangement of Phecen between the 'up' and 'down' conformers impairs gating of the CLC-0, consistent with the finding of our MD simulations on the CLC-ec1 transporter (Figure 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a conclusion drawn from the 2,6diMeth-Phe experiments and MD simulations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:44:54.715017Z"
+    },
+    {
+      "id": "0e630aa3-57d6-41a7-a866-9e0ee16cac9f",
+      "content_id": "46047a7c-dfda-4d8d-9d85-ed0dade8bd96",
+      "claim_id": "C79",
+      "claim": "The interaction between a protonated glutamate side chain and the aromatic ring of a phenylalanine is \u22125.0 kCal mol\u22121 using the CHARMM36 force field.",
+      "claim_type": "EXPLICIT",
+      "source": "Using the CHARMM36 force field, we compared the strength of a \u03c0-dipole interaction and that of a typical H-bond. We calculated that the interaction between a protonated glutamate side chain and the aromatic ring of a phenylalanine is \u22125.0 kCal mol\u22121 (for an optimized conformation in vacuum).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a calculation performed as part of the computational methods.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:44:54.715017Z"
+    },
+    {
+      "id": "0a8aab3f-7ce7-4d11-a0f0-b632be888f7c",
+      "content_id": "46047a7c-dfda-4d8d-9d85-ed0dade8bd96",
+      "claim_id": "C80",
+      "claim": "Mutations at the Phecen position severely affect CLC-1 channel gating and conductance.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, the role of Phecen in CLC function is also supported by the finding that mutations at this position severely affect CLC-1 channel gating and conductance (Est\u00e9vez et al., 2003) and cause dominant myotonia (Imbrici et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with supporting citations to the literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:44:54.715017Z"
+    },
+    {
+      "id": "97f07d7c-1f98-41ed-bafc-8cf350786c14",
+      "content_id": "46047a7c-dfda-4d8d-9d85-ed0dade8bd96",
+      "claim_id": "C81",
+      "claim": "Mutations at the Phecen position cause dominant myotonia.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, the role of Phecen in CLC function is also supported by the finding that mutations at this position severely affect CLC-1 channel gating and conductance (Est\u00e9vez et al., 2003) and cause dominant myotonia (Imbrici et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with a supporting citation to the literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:44:54.715017Z"
+    },
+    {
+      "id": "b5574e07-dd3e-4d34-b49c-a569e31e8f75",
+      "content_id": "46047a7c-dfda-4d8d-9d85-ed0dade8bd96",
+      "claim_id": "C82",
+      "claim": "The aromatic slide in CLC-0 could provide a conserved pathway that enables residual H+ transport associated with the common-pore gating process.",
+      "claim_type": "EXPLICIT",
+      "source": "We propose that the aromatic slide in CLC-0 could provide a conserved pathway that enables the residual H+ transport associated with the common-pore gating process of the CLC-0 channel to occur (L\u00edsal and Maduke, 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a proposal based on the findings and cited literature.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:44:54.715017Z"
+    },
+    {
+      "id": "95767f6c-b0f1-4139-b050-eb84e03a236b",
+      "content_id": "46047a7c-dfda-4d8d-9d85-ed0dade8bd96",
+      "claim_id": "C83",
+      "claim": "Rapid ion conduction in CLC channels would be enabled by the disruption of the intracellular gate.",
+      "claim_type": "EXPLICIT",
+      "source": "In this framework, rapid ion conduction would be enabled by the disruption of the intracellular gate, a hypothesis justified by the widened intracellular vestibule seen in the recent structures of the bCLC-K and hCLC-1 channels (Park et al., 2017; Park and MacKinnon, 2018; Wang et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis proposed based on structural observations cited from the literature.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:44:54.715017Z"
+    },
+    {
+      "id": "b7bd067a-e4b1-4ec7-88c4-db03fd5b845f",
+      "content_id": "46047a7c-dfda-4d8d-9d85-ed0dade8bd96",
+      "claim_id": "C84",
+      "claim": "All MD simulations were performed at 0 mV.",
+      "claim_type": "EXPLICIT",
+      "source": "All MD simulations were performed at 0 mV.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological detail stated in the Materials and methods section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:44:54.715017Z"
+    },
+    {
+      "id": "a49a36f9-e0cc-4c26-9731-4e35abf88178",
+      "content_id": "46047a7c-dfda-4d8d-9d85-ed0dade8bd96",
+      "claim_id": "C85",
+      "claim": "The monomeric form of CLC-ec1 is functional.",
+      "claim_type": "EXPLICIT",
+      "source": "As it was shown that the monomeric form of CLC-ec1 is functional (Robertson et al., 2010), a single subunit was used.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with a supporting citation and justifies the use of a monomer in simulations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:44:54.715017Z"
+    },
+    {
+      "id": "8fec5356-6dc3-4f26-ad22-b31d3b14892f",
+      "content_id": "46047a7c-dfda-4d8d-9d85-ed0dade8bd96",
+      "claim_id": "C86",
+      "claim": "The voltage-dependence of mammalian CLC exchangers arises from the movement of permeating ions and of Gluex through the electric field of the transport pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "This hypothesis is also consistent with the finding that the voltage-dependence of mammalian CLC exchangers arises from the movement of permeating ions and of Gluex through the electric field of the transport pathway (Smith and Lippiat, 2010; Zifarelli et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with supporting citations to the literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:44:54.715017Z"
+    },
+    {
+      "id": "e589449d-6e29-4150-89f0-49609205ec22",
+      "content_id": "46047a7c-dfda-4d8d-9d85-ed0dade8bd96",
+      "claim_id": "C87",
+      "claim": "Opening of CLC-0 channels is regulated by single-pore gating and common-pore gating.",
+      "claim_type": "EXPLICIT",
+      "source": "Opening of CLC-0 channels is regulated by two processes: individual pores open and close independently in a process called single-pore gating and cooperatively during common-pore gating (Accardi, 2015; Jentsch and Pusch, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with supporting citations to review articles.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:44:54.715017Z"
+    },
+    {
+      "id": "fc4b0af9-92f3-435a-8f79-219beb2bdd9c",
+      "content_id": "46047a7c-dfda-4d8d-9d85-ed0dade8bd96",
+      "claim_id": "C88",
+      "claim": "Single-pore gating in CLC-0 is thought to entail rearrangements of Gluex similar to those underlying the exchange cycle of the transporters.",
+      "claim_type": "EXPLICIT",
+      "source": "Single-pore gating is thought to entail rearrangements of Gluex similar to those underlying the exchange cycle of the transporters, while the mechanistic underpinnings of common-pore gating remain poorly understood (Accardi, 2015; Jentsch and Pusch, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with supporting citations to review articles.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:44:54.715017Z"
+    },
+    {
+      "id": "d42c3beb-0f4c-44e6-b057-6a5a39192cd8",
+      "content_id": "46047a7c-dfda-4d8d-9d85-ed0dade8bd96",
+      "claim_id": "C89",
+      "claim": "The mechanistic underpinnings of common-pore gating remain poorly understood.",
+      "claim_type": "EXPLICIT",
+      "source": "Single-pore gating is thought to entail rearrangements of Gluex similar to those underlying the exchange cycle of the transporters, while the mechanistic underpinnings of common-pore gating remain poorly understood (Accardi, 2015; Jentsch and Pusch, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with supporting citations to review articles.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:44:54.715017Z"
+    },
+    {
+      "id": "a4d9bf66-e312-4f17-acfb-5f7a38800491",
+      "content_id": "46047a7c-dfda-4d8d-9d85-ed0dade8bd96",
+      "claim_id": "C90",
+      "claim": "In CLC-0, single-pore gating is activated by depolarizing voltages.",
+      "claim_type": "EXPLICIT",
+      "source": "In the CLC-0 channel, single-pore gating is activated by depolarizing voltages (Figure 6A,D), while common-pore gating is hyperpolarization activated and occurs on much slower time scales (Figure 6E,H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated with reference to experimental data shown in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:44:54.715017Z"
+    },
+    {
+      "id": "49ab690e-69ef-4c02-8550-77430024f936",
+      "content_id": "46047a7c-dfda-4d8d-9d85-ed0dade8bd96",
+      "claim_id": "C91",
+      "claim": "In CLC-0, common-pore gating is hyperpolarization activated and occurs on much slower time scales than single-pore gating.",
+      "claim_type": "EXPLICIT",
+      "source": "In the CLC-0 channel, single-pore gating is activated by depolarizing voltages (Figure 6A,D), while common-pore gating is hyperpolarization activated and occurs on much slower time scales (Figure 6E,H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated with reference to experimental data shown in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:44:54.715017Z"
+    },
+    {
+      "id": "37613f7f-4fcc-47f2-8526-fc3459900a11",
+      "content_id": "46047a7c-dfda-4d8d-9d85-ed0dade8bd96",
+      "claim_id": "C92",
+      "claim": "A protonated Gluex does not move through the Cl- pore.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that, contrary to previously proposed models, a protonated Gluex does not move through the Cl- pore.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary conclusion stated in the Discussion based on MD simulations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:44:54.715017Z"
+    },
+    {
+      "id": "b627019e-c310-46fc-b49f-03efc4efcd8f",
+      "content_id": "46047a7c-dfda-4d8d-9d85-ed0dade8bd96",
+      "claim_id": "C93",
+      "claim": "The deprotonated and negatively charged Gluex moves through the Cl- pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "Our data suggest that while the deprotonated and negatively charged Gluex moves through the Cl- pathway, the protonated and neutral Glu0ex interacts with two highly conserved phenylalanines, Phecen and Pheex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion as a conclusion from the data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:44:54.715017Z"
+    },
+    {
+      "id": "57885381-36e9-4055-b658-a099ec3747dc",
+      "content_id": "46047a7c-dfda-4d8d-9d85-ed0dade8bd96",
+      "claim_id": "C94",
+      "claim": "The protonated and neutral Glu0ex interacts with two highly conserved phenylalanines, Phecen and Pheex.",
+      "claim_type": "EXPLICIT",
+      "source": "Our data suggest that while the deprotonated and negatively charged Gluex moves through the Cl- pathway, the protonated and neutral Glu0ex interacts with two highly conserved phenylalanines, Phecen and Pheex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion as a conclusion from the data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:44:54.715017Z"
+    },
+    {
+      "id": "0def1586-b77d-4826-9abe-b4a8926b0055",
+      "content_id": "46047a7c-dfda-4d8d-9d85-ed0dade8bd96",
+      "claim_id": "C95",
+      "claim": "Phecen is in the 'up' rotamer in available structures of CLC channels and exchangers.",
+      "claim_type": "EXPLICIT",
+      "source": "In the available structures of CLC channels and exchangers (Dutzler et al., 2002; Dutzler et al., 2003; Accardi et al., 2005; Accardi et al., 2006; Lobet and Dutzler, 2006; Feng et al., 2010; Jayaram et al., 2011; Basilio et al., 2014; Park et al., 2017; Last et al., 2018; Park and MacKinnon, 2018; Wang et al., 2019), Phecen is in the 'up' rotamer suggesting this conformation is likely the most stable.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated based on analysis of multiple crystal structures cited in the text.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:44:54.715017Z"
+    },
+    {
+      "id": "07e65523-7c9b-4ebf-86b1-7c9500194f33",
+      "content_id": "46047a7c-dfda-4d8d-9d85-ed0dade8bd96",
+      "claim_id": "C96",
+      "claim": "The 'up' conformation of Phecen is likely the most stable.",
+      "claim_type": "EXPLICIT",
+      "source": "In the available structures of CLC channels and exchangers (Dutzler et al., 2002; Dutzler et al., 2003; Accardi et al., 2005; Accardi et al., 2006; Lobet and Dutzler, 2006; Feng et al., 2010; Jayaram et al., 2011; Basilio et al., 2014; Park et al., 2017; Last et al., 2018; Park and MacKinnon, 2018; Wang et al., 2019), Phecen is in the 'up' rotamer suggesting this conformation is likely the most stable.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the observation that Phecen is in the 'up' rotamer in all available structures.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:44:54.715017Z"
+    },
+    {
+      "id": "be4b62f0-192e-4296-8de1-f42f4116be8c",
+      "content_id": "46047a7c-dfda-4d8d-9d85-ed0dade8bd96",
+      "claim_id": "C97",
+      "claim": "The aromatic ring of Pheex plays a structural role in helping position Gluex where it can interact with Phecen in the 'up' conformation.",
+      "claim_type": "EXPLICIT",
+      "source": "The aromatic ring of Pheex appears to play a structural role in helping position Gluex where it can interact with Phecen in the 'up' conformation (Figure 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a conclusion drawn from the MD simulations and mutagenesis data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:44:54.715017Z"
+    },
+    {
+      "id": "58df6956-f211-40a6-af92-2ec6a8e08f17",
+      "content_id": "46047a7c-dfda-4d8d-9d85-ed0dade8bd96",
+      "claim_id": "C98",
+      "claim": "The electrostatic properties of the aromatic ring of Phecen are essential determinants for Gluex movement in the CLC-0 channel.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the electrostatic properties of the aromatic ring of Phecen are essential determinants for Gluex movement in the CLC-0 channel: elimination of the \u03c0-electrons of Phecen favors the closed state of the single-pore gate (Figure 7C), while their re-localization to the proximal edge promotes opening (Figure 7C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a conclusion drawn from the non-canonical amino acid mutagenesis experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:44:54.715017Z"
+    },
+    {
+      "id": "6dc547c3-0be0-4339-b1a4-9e9273f19a7e",
+      "content_id": "46047a7c-dfda-4d8d-9d85-ed0dade8bd96",
+      "claim_id": "C99",
+      "claim": "Elimination of the \u03c0-electrons of Phecen favors the closed state of the single-pore gate in CLC-0.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the electrostatic properties of the aromatic ring of Phecen are essential determinants for Gluex movement in the CLC-0 channel: elimination of the \u03c0-electrons of Phecen favors the closed state of the single-pore gate (Figure 7C), while their re-localization to the proximal edge promotes opening (Figure 7C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from non-canonical amino acid mutagenesis experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:44:54.715017Z"
+    },
+    {
+      "id": "7bcfc394-30a8-42ea-9298-9d18e10900ca",
+      "content_id": "46047a7c-dfda-4d8d-9d85-ed0dade8bd96",
+      "claim_id": "C100",
+      "claim": "Re-localization of \u03c0-electrons to the proximal edge of Phecen promotes opening of the single-pore gate in CLC-0.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the electrostatic properties of the aromatic ring of Phecen are essential determinants for Gluex movement in the CLC-0 channel: elimination of the \u03c0-electrons of Phecen favors the closed state of the single-pore gate (Figure 7C), while their re-localization to the proximal edge promotes opening (Figure 7C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from non-canonical amino acid mutagenesis experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:44:54.715017Z"
+    },
+    {
+      "id": "6cff5f58-a11e-4e64-94bd-444ac4f2cb53",
+      "content_id": "46047a7c-dfda-4d8d-9d85-ed0dade8bd96",
+      "claim_id": "C101",
+      "claim": "The interaction between the buried aromatic Phecen and Gluex could account for the observed shifts in the pKa of Gluex in CLC channels and transporters.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, the interaction between the buried aromatic Phecen and Gluex could account for the observed shifts in the pKa of Gluex (Robinson et al., 2017) in CLC channels and transporters to keep Gluex protonated during its transition through the protein (Hanke and Miller, 1983; Niemeyer et al., 2009; Picollo et al., 2010; Picollo et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a proposal based on the findings and cited literature.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:44:54.715017Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "eecb01f8-9879-4d45-9d1a-8bcdd6aa37ca",
+      "content_id": "46047a7c-dfda-4d8d-9d85-ed0dade8bd96",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The CLC family comprises channels and exchangers with distinct functions and localizations, and mutations in CLC genes cause various genetic disorders affecting muscle, kidney, bone, and nervous system.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C23 provide well-established background knowledge about the CLC family structure, function, and disease associations. These claims are supported by multiple literature citations and represent accepted knowledge in the field rather than novel findings of this manuscript.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:44:54.715017Z"
+    },
+    {
+      "id": "22e7575a-ef92-4481-89c7-1f097a2abc10",
+      "content_id": "46047a7c-dfda-4d8d-9d85-ed0dade8bd96",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The CLC ion permeation pathway contains three main anionic binding sites (Sext, Scen, Sint) and a conserved glutamate (Gluex) that alternately occupies these sites. CLC transporters simultaneously bind Cl- and H+ through partially congruent pathways, unlike classical ping-pong antiporters.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C24-C41 describe established structural and mechanistic features of CLC proteins based on prior structural and functional studies. These are well-supported by extensive citations to previous work and provide necessary background for understanding the novel findings presented in this manuscript.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:44:54.715017Z"
+    },
+    {
+      "id": "635546d9-7092-41ad-8277-7a8aac6ef0a8",
+      "content_id": "46047a7c-dfda-4d8d-9d85-ed0dade8bd96",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "MD simulations reveal that F357 (Phecen) exists in equilibrium between 'up' and 'down' rotameric states, and this conformational flexibility controls ion movement through the pore. When F357 is 'down', a ~12 kCal/mol barrier opposes ion movement, while the 'up' state permits simultaneous Cl- binding to Scen and Sext with barriers of only ~2-4 kCal/mol.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C42-C47 present novel computational findings from PMF calculations showing the critical role of F357 rotameric states in controlling ion permeation. The data is internally consistent, with the crosslink experiment (C47) providing validation that constraining F357 movement impairs transport. However, all simulations were performed at 0 mV (C84), which may not fully capture voltage-dependent behavior observed experimentally.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:44:54.715017Z"
+    },
+    {
+      "id": "300d5c3b-a400-42f9-92d5-cc511e8b0fdc",
+      "content_id": "46047a7c-dfda-4d8d-9d85-ed0dade8bd96",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "MD simulations show that protonated Glu0ex interacts with the aromatic rings of F190 (Pheex) and F357 (Phecen) rather than occupying Sext, and can form a water wire to Gluin or a \u03c0-dipole interaction with F357.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C48-C50 describe key conformational states observed in MD simulations that support the aromatic slide hypothesis. These observations are consistent across multiple simulation windows and provide a mechanistic explanation for how protonated Gluex moves outside the Cl- pathway. The \u03c0-dipole interaction energy calculation (C79) provides quantitative support.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:44:54.715017Z"
+    },
+    {
+      "id": "c0c2e4ad-c97f-4fc4-a183-08e379a60d50",
+      "content_id": "46047a7c-dfda-4d8d-9d85-ed0dade8bd96",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Alanine mutations of F190 and F357 in CLC-ec1 significantly impair transport rate and Cl-:H+ coupling stoichiometry. F190A reduces rate ~4-fold and degrades stoichiometry to ~8.6:1, while F357A reduces rate ~9-fold and alters stoichiometry to ~4.3:1. The double mutant E148A/F190A rescues the transport defect of E148A.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C51-C59 present experimental validation of the MD simulation predictions using biochemical flux assays. The data shows clear functional effects of mutating the aromatic slide residues. The ITC data (C55) confirms F357A maintains WT-like Cl- binding affinity, ruling out structural disruption. The epistasis experiments with E148A provide strong support that these residues interact functionally with Gluex. Sample sizes and error estimates are provided.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:44:54.715017Z"
+    },
+    {
+      "id": "f807197b-1f79-4a64-bb7f-b9f4ccc2e4ed",
+      "content_id": "46047a7c-dfda-4d8d-9d85-ed0dade8bd96",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "F190 and F357 are highly conserved across the CLC family at ~94% and ~76% respectively, suggesting their functional role is evolutionarily conserved.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C60-C61 present sequence conservation analysis supporting the evolutionary importance of these residues. The conservation data is shown in Figure 4\u2014figure supplement 2 and is consistent with a functionally important role across the CLC family.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:44:54.715017Z"
+    },
+    {
+      "id": "dd17bf2b-4758-46a1-9445-2616878a9e9f",
+      "content_id": "46047a7c-dfda-4d8d-9d85-ed0dade8bd96",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Alanine mutations of Pheex and Phecen in mammalian CLC-7 and CLC-5 exchangers reduce current amplitude and left-shift voltage dependence, with F301A (Pheex) showing reduced voltage dependence and F514A (Phecen) showing sigmoidal voltage-dependent gating.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C62-C68 demonstrate that the functional role of the aromatic slide residues is conserved in mammalian CLC exchangers. The electrophysiological data shows consistent effects across CLC-7 and CLC-5, with appropriate sample sizes (N=10-22 oocytes) and statistical analysis. The inability to determine stoichiometry in oocytes is acknowledged as a limitation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:44:54.715017Z"
+    },
+    {
+      "id": "47dd1e33-6bf3-40e8-be76-de69fb6ebc0b",
+      "content_id": "46047a7c-dfda-4d8d-9d85-ed0dade8bd96",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "In the CLC-0 channel, F214A and F418A mutations cause nearly voltage-independent single-pore gating and alter common-pore gating parameters, suggesting these residues regulate Gluex movement in both gating processes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C69-C71 and C87-C91 show that the aromatic slide residues are important for both single-pore and common-pore gating in CLC-0 channels. The electrophysiological data is well-presented with appropriate controls and sample sizes. The inference that mutations favor the open conformation of Gluex (C70) is reasonable based on the voltage-independence of gating.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:44:54.715017Z"
+    },
+    {
+      "id": "e4409d4b-d09f-4bca-80e3-c555943811af",
+      "content_id": "46047a7c-dfda-4d8d-9d85-ed0dade8bd96",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Non-canonical amino acid mutagenesis reveals that the electrostatic properties of Phecen's aromatic ring are critical for gating: neutralizing \u03c0-electrons with Cha right-shifts single-pore G-V by ~50 mV, while redistributing electrons with 2,6F2-Phe left-shifts it by ~50 mV. Restricting rotational flexibility with 2,6diMeth-Phe impairs gating.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C72-C78 provide atomic-level mechanistic insight using non-canonical amino acids to selectively manipulate specific properties of the aromatic residues. The systematic effects of Cha, 2,6F2-Phe, and 2,6diMeth-Phe substitutions strongly support the proposed \u03c0-dipole interaction mechanism and the importance of conformational flexibility. The use of C212S background to isolate single-pore effects is appropriate. Incorporation efficiency data (Figure 7\u2014figure supplement 3) validates the approach.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:44:54.715017Z"
+    },
+    {
+      "id": "fada08f7-d293-4150-9d46-46846f7957b4",
+      "content_id": "46047a7c-dfda-4d8d-9d85-ed0dade8bd96",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Two conserved phenylalanine residues (Pheex and Phecen) form an aromatic pathway that enables H+ movement outside the Cl- pore. These residues are important for H+ transport and voltage-dependent gating in exchangers and channels, with their electrostatic properties and conformational flexibility determining function. Cl- and H+ move through physically distinct routes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4-C10 and C92-C94 represent the central conclusions of the manuscript, integrating MD simulations, biochemical, and electrophysiological data. The aromatic slide mechanism is supported by: (1) MD simulations showing F357 rotameric states control ion movement and Glu0ex interacts with aromatic rings; (2) functional impairment of F190A and F357A mutants in multiple CLC homologs; (3) non-canonical amino acid data demonstrating importance of electrostatics and flexibility; (4) epistasis with E148A mutations. The model provides a mechanistic explanation for reversible transport and resolves the energetic paradox of protonated Gluex entering the Cl- pathway.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:44:54.715017Z"
+    },
+    {
+      "id": "ac53121b-389d-4017-bf47-2ea853449af6",
+      "content_id": "46047a7c-dfda-4d8d-9d85-ed0dade8bd96",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Structural analysis shows Phecen adopts the 'up' rotamer in all available CLC structures, suggesting this is the most stable conformation. Pheex plays a structural role positioning Gluex, while Phecen's electrostatic properties are essential for Gluex movement. The Phecen-Gluex interaction may account for observed pKa shifts.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C95-C101 integrate structural observations with functional data to explain the differential roles of Pheex and Phecen. The structural analysis is based on multiple published structures (C95), and the functional interpretations are well-supported by the non-canonical amino acid data showing larger electrostatic effects at Phecen than Pheex. The pKa shift proposal (C101) is reasonable but remains speculative.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:44:54.715017Z"
+    },
+    {
+      "id": "99c9c41e-a0ec-4387-98c4-ad441ba55e0e",
+      "content_id": "46047a7c-dfda-4d8d-9d85-ed0dade8bd96",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Mutations at Phecen severely affect CLC-1 gating and cause dominant myotonia. The aromatic slide may provide a conserved pathway for residual H+ transport in CLC-0 channels, and rapid conduction may be enabled by disruption of the intracellular gate.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C80-C81 cite literature support for the importance of Phecen in CLC-1 function and disease. Claims C82-C83 are speculative proposals about channel function based on the transporter mechanism and structural observations. While reasonable hypotheses, these require direct experimental validation in channels to be fully supported.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:44:54.715017Z"
+    },
+    {
+      "id": "db781d91-f13b-4363-a940-506324e69997",
+      "content_id": "46047a7c-dfda-4d8d-9d85-ed0dade8bd96",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Methodological details: \u03c0-dipole interaction strength is ~-5.0 kCal/mol using CHARMM36 force field; all MD simulations were at 0 mV; monomeric CLC-ec1 is functional; voltage-dependence arises from ion and Gluex movement through the electric field.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C79, C84, C85, and C86 provide important methodological context. The force field validation (C79) supports the computational approach. The 0 mV simulation condition (C84) is a limitation for interpreting voltage-dependent phenomena. The use of monomers (C85) is justified by citation. The voltage-dependence mechanism (C86) is supported by prior literature.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:44:54.715017Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "1365a63a-cf2c-48c2-af3b-6688df64af35",
+      "result_id": "eecb01f8-9879-4d45-9d1a-8bcdd6aa37ca"
+    },
+    {
+      "claim_id": "7b6116f7-068a-4a21-a922-1950498592f3",
+      "result_id": "eecb01f8-9879-4d45-9d1a-8bcdd6aa37ca"
+    },
+    {
+      "claim_id": "268aa0b9-a2c9-4e00-8d49-bdf150aa7354",
+      "result_id": "eecb01f8-9879-4d45-9d1a-8bcdd6aa37ca"
+    },
+    {
+      "claim_id": "5eef77f3-7bbd-47ce-b5b8-0aed26001c2c",
+      "result_id": "eecb01f8-9879-4d45-9d1a-8bcdd6aa37ca"
+    },
+    {
+      "claim_id": "9cdd4e18-6ede-4d37-ae9d-76bd3cc7e443",
+      "result_id": "eecb01f8-9879-4d45-9d1a-8bcdd6aa37ca"
+    },
+    {
+      "claim_id": "adb31d3e-5edd-433c-ba09-7b0807ce9a56",
+      "result_id": "eecb01f8-9879-4d45-9d1a-8bcdd6aa37ca"
+    },
+    {
+      "claim_id": "9e575511-63b1-401e-963b-607eb8be2593",
+      "result_id": "eecb01f8-9879-4d45-9d1a-8bcdd6aa37ca"
+    },
+    {
+      "claim_id": "6c5fc8f7-e406-46ad-8e3d-a9aacc5e8175",
+      "result_id": "eecb01f8-9879-4d45-9d1a-8bcdd6aa37ca"
+    },
+    {
+      "claim_id": "220f1de7-0a10-449f-9e69-2b159d1989c5",
+      "result_id": "eecb01f8-9879-4d45-9d1a-8bcdd6aa37ca"
+    },
+    {
+      "claim_id": "fe3efb8c-e3e0-4eca-b790-5051703fe0ca",
+      "result_id": "eecb01f8-9879-4d45-9d1a-8bcdd6aa37ca"
+    },
+    {
+      "claim_id": "1a176707-0c6c-4a9d-9a36-7586c6c60984",
+      "result_id": "eecb01f8-9879-4d45-9d1a-8bcdd6aa37ca"
+    },
+    {
+      "claim_id": "5c547986-c9d1-43ee-b932-a229d13e2775",
+      "result_id": "eecb01f8-9879-4d45-9d1a-8bcdd6aa37ca"
+    },
+    {
+      "claim_id": "608b81be-fae5-48c3-9e73-58d0db892624",
+      "result_id": "eecb01f8-9879-4d45-9d1a-8bcdd6aa37ca"
+    },
+    {
+      "claim_id": "a19d12a1-0bd4-46df-b97a-2a35a70b091c",
+      "result_id": "eecb01f8-9879-4d45-9d1a-8bcdd6aa37ca"
+    },
+    {
+      "claim_id": "0947756d-f9b0-42f1-bf20-1f4a3fe73822",
+      "result_id": "eecb01f8-9879-4d45-9d1a-8bcdd6aa37ca"
+    },
+    {
+      "claim_id": "8c772a93-d4a4-4af2-a98b-a2584829e4d1",
+      "result_id": "22e7575a-ef92-4481-89c7-1f097a2abc10"
+    },
+    {
+      "claim_id": "089a416a-c199-480a-98de-dbd93a9086e3",
+      "result_id": "22e7575a-ef92-4481-89c7-1f097a2abc10"
+    },
+    {
+      "claim_id": "e4b5c652-a8ea-40c4-9981-4ea120c432a8",
+      "result_id": "22e7575a-ef92-4481-89c7-1f097a2abc10"
+    },
+    {
+      "claim_id": "99b8255c-a7ac-4d92-a386-fb3ff8006ed4",
+      "result_id": "22e7575a-ef92-4481-89c7-1f097a2abc10"
+    },
+    {
+      "claim_id": "2c29d2b3-118c-4cc1-8e41-e56de6c331d6",
+      "result_id": "22e7575a-ef92-4481-89c7-1f097a2abc10"
+    },
+    {
+      "claim_id": "f30c10e2-93dc-47bf-a045-4573a83141e9",
+      "result_id": "22e7575a-ef92-4481-89c7-1f097a2abc10"
+    },
+    {
+      "claim_id": "60e4d9ae-006c-492e-81ef-e76bb82ef6f0",
+      "result_id": "22e7575a-ef92-4481-89c7-1f097a2abc10"
+    },
+    {
+      "claim_id": "f9608160-be53-4b58-b175-76f035fc5d1f",
+      "result_id": "22e7575a-ef92-4481-89c7-1f097a2abc10"
+    },
+    {
+      "claim_id": "906ce43d-edb5-4669-b89b-b72c61282159",
+      "result_id": "22e7575a-ef92-4481-89c7-1f097a2abc10"
+    },
+    {
+      "claim_id": "970e9b7a-82f5-4368-9e62-65b29b915d71",
+      "result_id": "22e7575a-ef92-4481-89c7-1f097a2abc10"
+    },
+    {
+      "claim_id": "8f098371-eefc-47e0-8baa-37556e3e929b",
+      "result_id": "22e7575a-ef92-4481-89c7-1f097a2abc10"
+    },
+    {
+      "claim_id": "616e37a1-9237-4c2d-ae48-4aab0a63949f",
+      "result_id": "22e7575a-ef92-4481-89c7-1f097a2abc10"
+    },
+    {
+      "claim_id": "317a9fa5-f0fe-4019-96a9-f0e19c16047e",
+      "result_id": "22e7575a-ef92-4481-89c7-1f097a2abc10"
+    },
+    {
+      "claim_id": "d4ef5551-9b01-4385-b353-11b0c0a7769e",
+      "result_id": "22e7575a-ef92-4481-89c7-1f097a2abc10"
+    },
+    {
+      "claim_id": "b230d6df-3353-49b5-af0c-8629289748ac",
+      "result_id": "22e7575a-ef92-4481-89c7-1f097a2abc10"
+    },
+    {
+      "claim_id": "c1f53587-799a-4af8-9683-58e0b2350111",
+      "result_id": "22e7575a-ef92-4481-89c7-1f097a2abc10"
+    },
+    {
+      "claim_id": "9c063347-ce77-4396-b724-0262bc0919fc",
+      "result_id": "22e7575a-ef92-4481-89c7-1f097a2abc10"
+    },
+    {
+      "claim_id": "9a5c241d-de66-45f4-983d-0c05dd165ab5",
+      "result_id": "22e7575a-ef92-4481-89c7-1f097a2abc10"
+    },
+    {
+      "claim_id": "a6e63548-95e3-4fc4-a979-5ff201ea3847",
+      "result_id": "635546d9-7092-41ad-8277-7a8aac6ef0a8"
+    },
+    {
+      "claim_id": "b98d6070-5dee-46c3-8a98-4a3e958e0ac9",
+      "result_id": "635546d9-7092-41ad-8277-7a8aac6ef0a8"
+    },
+    {
+      "claim_id": "295e2e56-37e4-4b4c-b684-5575120efbba",
+      "result_id": "635546d9-7092-41ad-8277-7a8aac6ef0a8"
+    },
+    {
+      "claim_id": "b90b3821-8337-43ac-87eb-0f8c0bdb0586",
+      "result_id": "635546d9-7092-41ad-8277-7a8aac6ef0a8"
+    },
+    {
+      "claim_id": "8dc12af7-6d80-432b-91ba-bb7212a6753c",
+      "result_id": "635546d9-7092-41ad-8277-7a8aac6ef0a8"
+    },
+    {
+      "claim_id": "d1678bdb-c807-420c-b44c-718cf3a575ae",
+      "result_id": "635546d9-7092-41ad-8277-7a8aac6ef0a8"
+    },
+    {
+      "claim_id": "380a21d4-3f01-4174-b0a5-72a9c07cdb48",
+      "result_id": "300d5c3b-a400-42f9-92d5-cc511e8b0fdc"
+    },
+    {
+      "claim_id": "2f056907-d759-4cac-9cb0-094ac5ef54ee",
+      "result_id": "300d5c3b-a400-42f9-92d5-cc511e8b0fdc"
+    },
+    {
+      "claim_id": "c4196e80-41f6-4223-b6cd-01e4a9b951d7",
+      "result_id": "300d5c3b-a400-42f9-92d5-cc511e8b0fdc"
+    },
+    {
+      "claim_id": "8aaf628e-1e81-4109-a441-49396941471b",
+      "result_id": "c0c2e4ad-c97f-4fc4-a183-08e379a60d50"
+    },
+    {
+      "claim_id": "efbac8b5-5e5d-4ecb-9e4e-13ad538de097",
+      "result_id": "c0c2e4ad-c97f-4fc4-a183-08e379a60d50"
+    },
+    {
+      "claim_id": "12451308-4968-4a0d-ba5e-f7fac57c7a58",
+      "result_id": "c0c2e4ad-c97f-4fc4-a183-08e379a60d50"
+    },
+    {
+      "claim_id": "1cf4ae50-986b-4c46-87dd-aa9ea35be34d",
+      "result_id": "c0c2e4ad-c97f-4fc4-a183-08e379a60d50"
+    },
+    {
+      "claim_id": "58e83ef3-0f8e-472e-827b-670acd85d819",
+      "result_id": "c0c2e4ad-c97f-4fc4-a183-08e379a60d50"
+    },
+    {
+      "claim_id": "48a12e3c-0880-4b24-bc6f-1fab6b34dd22",
+      "result_id": "c0c2e4ad-c97f-4fc4-a183-08e379a60d50"
+    },
+    {
+      "claim_id": "19dd9210-55cc-4477-a3cd-a6aa19f851a3",
+      "result_id": "c0c2e4ad-c97f-4fc4-a183-08e379a60d50"
+    },
+    {
+      "claim_id": "7bb19a75-2c8e-4477-b023-482ab4deec22",
+      "result_id": "c0c2e4ad-c97f-4fc4-a183-08e379a60d50"
+    },
+    {
+      "claim_id": "90b4ffd6-2acf-46de-ae20-8d880ea879e8",
+      "result_id": "c0c2e4ad-c97f-4fc4-a183-08e379a60d50"
+    },
+    {
+      "claim_id": "d4c9baf8-516f-401d-bb7c-d4d31ad63582",
+      "result_id": "f807197b-1f79-4a64-bb7f-b9f4ccc2e4ed"
+    },
+    {
+      "claim_id": "4d337e99-d589-424f-b1a2-70bb7681362f",
+      "result_id": "f807197b-1f79-4a64-bb7f-b9f4ccc2e4ed"
+    },
+    {
+      "claim_id": "1d57dfa4-e65f-4aaa-8a08-20c4988552b9",
+      "result_id": "dd17bf2b-4758-46a1-9445-2616878a9e9f"
+    },
+    {
+      "claim_id": "b73276aa-8e33-4740-a6bd-118d6e665dce",
+      "result_id": "dd17bf2b-4758-46a1-9445-2616878a9e9f"
+    },
+    {
+      "claim_id": "d8a52714-33f0-4f68-bcb9-83b2bb1c029c",
+      "result_id": "dd17bf2b-4758-46a1-9445-2616878a9e9f"
+    },
+    {
+      "claim_id": "c51e138e-7a25-4718-95c9-397c39805979",
+      "result_id": "dd17bf2b-4758-46a1-9445-2616878a9e9f"
+    },
+    {
+      "claim_id": "66087dd6-6a93-4f4c-9db6-3063b5c93202",
+      "result_id": "dd17bf2b-4758-46a1-9445-2616878a9e9f"
+    },
+    {
+      "claim_id": "2efcb3c1-d676-4dc0-8a78-42dc5237b33e",
+      "result_id": "dd17bf2b-4758-46a1-9445-2616878a9e9f"
+    },
+    {
+      "claim_id": "e5f1bcf0-9da9-49ed-bb4c-08ae314bb344",
+      "result_id": "dd17bf2b-4758-46a1-9445-2616878a9e9f"
+    },
+    {
+      "claim_id": "525834cf-8c7f-4de7-a68b-5bbea3f73f68",
+      "result_id": "47dd1e33-6bf3-40e8-be76-de69fb6ebc0b"
+    },
+    {
+      "claim_id": "a00f6d68-aca6-4e23-adb3-31d93615f181",
+      "result_id": "47dd1e33-6bf3-40e8-be76-de69fb6ebc0b"
+    },
+    {
+      "claim_id": "c2c67086-e2f7-4f82-a216-eec85cfd503c",
+      "result_id": "47dd1e33-6bf3-40e8-be76-de69fb6ebc0b"
+    },
+    {
+      "claim_id": "e589449d-6e29-4150-89f0-49609205ec22",
+      "result_id": "47dd1e33-6bf3-40e8-be76-de69fb6ebc0b"
+    },
+    {
+      "claim_id": "fc4b0af9-92f3-435a-8f79-219beb2bdd9c",
+      "result_id": "47dd1e33-6bf3-40e8-be76-de69fb6ebc0b"
+    },
+    {
+      "claim_id": "d42c3beb-0f4c-44e6-b057-6a5a39192cd8",
+      "result_id": "47dd1e33-6bf3-40e8-be76-de69fb6ebc0b"
+    },
+    {
+      "claim_id": "a4d9bf66-e312-4f17-acfb-5f7a38800491",
+      "result_id": "47dd1e33-6bf3-40e8-be76-de69fb6ebc0b"
+    },
+    {
+      "claim_id": "49ab690e-69ef-4c02-8550-77430024f936",
+      "result_id": "47dd1e33-6bf3-40e8-be76-de69fb6ebc0b"
+    },
+    {
+      "claim_id": "983ac82a-f932-46f6-bc7e-0c194b7809d1",
+      "result_id": "e4409d4b-d09f-4bca-80e3-c555943811af"
+    },
+    {
+      "claim_id": "cba0f480-631c-438b-993a-8b8ac4e299ba",
+      "result_id": "e4409d4b-d09f-4bca-80e3-c555943811af"
+    },
+    {
+      "claim_id": "ad548e6f-add0-42e8-b0a0-1e50632be5d2",
+      "result_id": "e4409d4b-d09f-4bca-80e3-c555943811af"
+    },
+    {
+      "claim_id": "0fd172d1-f2ff-4499-97cb-5290d61f54d8",
+      "result_id": "e4409d4b-d09f-4bca-80e3-c555943811af"
+    },
+    {
+      "claim_id": "06e05b5f-2fdf-4033-9c5b-166e70e60679",
+      "result_id": "e4409d4b-d09f-4bca-80e3-c555943811af"
+    },
+    {
+      "claim_id": "435de97b-87c7-4c05-9d0d-6882963cf2d2",
+      "result_id": "e4409d4b-d09f-4bca-80e3-c555943811af"
+    },
+    {
+      "claim_id": "40688069-9796-42d9-928d-9b30e16b9e8f",
+      "result_id": "e4409d4b-d09f-4bca-80e3-c555943811af"
+    },
+    {
+      "claim_id": "5ac24d61-a576-41db-81ff-90cfee8b0bf5",
+      "result_id": "fada08f7-d293-4150-9d46-46846f7957b4"
+    },
+    {
+      "claim_id": "e202b497-6f25-4f7c-986a-34c6c73691d1",
+      "result_id": "fada08f7-d293-4150-9d46-46846f7957b4"
+    },
+    {
+      "claim_id": "e65db8b6-9ac9-4588-be40-928a1da0e4df",
+      "result_id": "fada08f7-d293-4150-9d46-46846f7957b4"
+    },
+    {
+      "claim_id": "561530d2-3c11-4f3d-900e-3e8233d1cf1d",
+      "result_id": "fada08f7-d293-4150-9d46-46846f7957b4"
+    },
+    {
+      "claim_id": "358e9fe0-881f-438b-b8f6-f9af8a938609",
+      "result_id": "fada08f7-d293-4150-9d46-46846f7957b4"
+    },
+    {
+      "claim_id": "e5de3a07-31ec-4406-aabd-9660bd98a357",
+      "result_id": "fada08f7-d293-4150-9d46-46846f7957b4"
+    },
+    {
+      "claim_id": "35ae5b6e-0a6a-4dd5-b054-23e753248d31",
+      "result_id": "fada08f7-d293-4150-9d46-46846f7957b4"
+    },
+    {
+      "claim_id": "37613f7f-4fcc-47f2-8526-fc3459900a11",
+      "result_id": "fada08f7-d293-4150-9d46-46846f7957b4"
+    },
+    {
+      "claim_id": "b627019e-c310-46fc-b49f-03efc4efcd8f",
+      "result_id": "fada08f7-d293-4150-9d46-46846f7957b4"
+    },
+    {
+      "claim_id": "57885381-36e9-4055-b658-a099ec3747dc",
+      "result_id": "fada08f7-d293-4150-9d46-46846f7957b4"
+    },
+    {
+      "claim_id": "0def1586-b77d-4826-9abe-b4a8926b0055",
+      "result_id": "ac53121b-389d-4017-bf47-2ea853449af6"
+    },
+    {
+      "claim_id": "07e65523-7c9b-4ebf-86b1-7c9500194f33",
+      "result_id": "ac53121b-389d-4017-bf47-2ea853449af6"
+    },
+    {
+      "claim_id": "be4b62f0-192e-4296-8de1-f42f4116be8c",
+      "result_id": "ac53121b-389d-4017-bf47-2ea853449af6"
+    },
+    {
+      "claim_id": "58df6956-f211-40a6-af92-2ec6a8e08f17",
+      "result_id": "ac53121b-389d-4017-bf47-2ea853449af6"
+    },
+    {
+      "claim_id": "6dc547c3-0be0-4339-b1a4-9e9273f19a7e",
+      "result_id": "ac53121b-389d-4017-bf47-2ea853449af6"
+    },
+    {
+      "claim_id": "7bcfc394-30a8-42ea-9298-9d18e10900ca",
+      "result_id": "ac53121b-389d-4017-bf47-2ea853449af6"
+    },
+    {
+      "claim_id": "6cff5f58-a11e-4e64-94bd-444ac4f2cb53",
+      "result_id": "ac53121b-389d-4017-bf47-2ea853449af6"
+    },
+    {
+      "claim_id": "0a8aab3f-7ce7-4d11-a0f0-b632be888f7c",
+      "result_id": "99c9c41e-a0ec-4387-98c4-ad441ba55e0e"
+    },
+    {
+      "claim_id": "97f07d7c-1f98-41ed-bafc-8cf350786c14",
+      "result_id": "99c9c41e-a0ec-4387-98c4-ad441ba55e0e"
+    },
+    {
+      "claim_id": "b5574e07-dd3e-4d34-b49c-a569e31e8f75",
+      "result_id": "99c9c41e-a0ec-4387-98c4-ad441ba55e0e"
+    },
+    {
+      "claim_id": "95767f6c-b0f1-4139-b050-eb84e03a236b",
+      "result_id": "99c9c41e-a0ec-4387-98c4-ad441ba55e0e"
+    },
+    {
+      "claim_id": "0e630aa3-57d6-41a7-a866-9e0ee16cac9f",
+      "result_id": "db781d91-f13b-4363-a940-506324e69997"
+    },
+    {
+      "claim_id": "b7bd067a-e4b1-4ec7-88c4-db03fd5b845f",
+      "result_id": "db781d91-f13b-4363-a940-506324e69997"
+    },
+    {
+      "claim_id": "a49a36f9-e0cc-4c26-9731-4e35abf88178",
+      "result_id": "db781d91-f13b-4363-a940-506324e69997"
+    },
+    {
+      "claim_id": "8fec5356-6dc3-4f26-ad22-b31d3b14892f",
+      "result_id": "db781d91-f13b-4363-a940-506324e69997"
+    }
+  ],
+  "comparisons": []
+}

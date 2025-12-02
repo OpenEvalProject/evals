@@ -1,0 +1,261 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "The authors developed a combined lateral magnetic tweezers (MT) and total internal reflection fluorescence (TIRF) microscopy platform that allows simultaneous control of force applied to DNA and visualization of fluorescently labeled ParB protein binding. The system can apply forces of ~1 pN sufficient to prevent DNA condensation while enabling direct observation of protein-DNA interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C42 describe the development and validation of the MT-TIRF platform with appropriate technical specifications and controls. The fluorescently labeled ParB variant (ParB2AF) was validated to retain wild-type DNA-binding properties (C39), and the system successfully visualized protein binding under non-permissive forces for condensation (C40-C42). The methodological claims are well-supported by experimental data and figures.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "At non-permissive forces for condensation (~1 pN), ParB binds non-specifically and highly dynamically to DNA with continuous and fast exchange between DNA-bound and free protein in solution. This dynamic behavior was demonstrated through constant fluorescence intensity over time, kymograph analysis, FRAP experiments, and photobleaching controls.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3 and C43-C51 collectively demonstrate the dynamic nature of ParB-DNA interactions under restrictive forces. Multiple independent lines of evidence support this conclusion: constant integrated intensity over 2 minutes (C43-C44), kymograph variations (C46), fluorescence recovery after photobleaching (C50), and appropriate photobleaching controls (C48-C49). The convergence of these different experimental approaches strongly supports the dynamic binding model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C129"
+    ],
+    "result": "The authors developed a multilaminar flow system integrated with MT-TIRF that enables rapid buffer exchange (~6.5 s) while maintaining low total force (~3.5 pN) on DNA, allowing precise measurement of protein binding and unbinding kinetics. The system operates under laminar flow conditions (Reynolds number << 2000).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C63 and C129 describe the multilaminar flow system with appropriate technical validation. The boundary shifting time was measured using fluorescein (C61), laminar flow conditions were confirmed by Reynolds number calculations (C129), and the system successfully distinguished DNA binding curves from background (C63). The technical specifications and validation experiments support the claimed capabilities of the system.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "The measured binding kinetics showed k_off ~0.1 s\u207b\u00b9 (independent of concentration) and k_on ~4 \u00d7 10\u2075 M\u207b\u00b9 s\u207b\u00b9. The k_on value was one order of magnitude lower than previously reported for a mutant ParB, with saturation in k_obs at high concentrations attributed to fluid exchange kinetics limitations or rate-limiting post-collision events.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C66-C74 present kinetic measurements but acknowledge significant limitations and uncertainties. The discrepancy with published values (C72) is explained speculatively (C73-C74), and the saturation effect has multiple possible explanations (C69-C71). While the measurements are reported, the authors appropriately acknowledge that technical limitations of the laminar flow system may affect the accuracy of the kinetic parameters, making definitive conclusions uncertain.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "The CTD of ParB binds DNA only in EDTA-containing buffer but not in Mg\u00b2\u207a-containing buffer. In EDTA conditions, CTDAF forms complexes with DNA at high concentrations (10 \u03bcM) with continuous rapid exchange, while no complexes are visible in Mg\u00b2\u207a buffer. This implies that free CTD will not inhibit full-length ParB-DNA interactions by simple competition under physiologically relevant Mg\u00b2\u207a conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C87 provide clear experimental evidence distinguishing CTD binding behavior in different buffer conditions. The observations are consistent with previous work (C75-C77, C82) and directly tested using fluorescently labeled CTD (C83-C85). The inference that CTD cannot compete for DNA binding under Mg\u00b2\u207a conditions (C87) logically follows from the experimental observations and is critical for ruling out scenarios 1 and 2 of the proposed mechanisms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "Under Mg\u00b2\u207a conditions, the CTD can only compete for DNA binding in EDTA conditions (which lack biological relevance), allowing the authors to discount scenarios 1 and 2 (DNA-binding competition and DNA-binding inhibition models) as mechanisms for CTD-mediated condensation inhibition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C93 represent a logical conclusion based on the experimental evidence showing CTD only binds DNA in EDTA (not Mg\u00b2\u207a) conditions. The inference that scenarios 1 and 2 can be discounted is well-supported by the data showing no reduction in ParB DNA binding in the presence of CTD under Mg\u00b2\u207a conditions. This is a critical step in the mechanistic argument of the paper.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C106"
+    ],
+    "result": "ParB-mediated DNA condensation was visualized by reducing force from 1 to 0.2 pN, with a minimum ParBAF concentration of 250 nM required for condensation. The condensation process could be stopped but not reversed by increasing force, and did not show distinct bright features suggesting large loops or nucleation regions, though the setup's resolution limit (~1 kbp) may preclude observation of smaller-scale condensation events.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C101 and C106 describe condensation experiments with appropriate acknowledgment of technical limitations. The observations are supported by video evidence and the authors appropriately note that the resolution limit (C100-C101) may prevent detection of sub-kbp condensation events. The inability to reverse condensation (C98) is reasonably attributed to technical limitations of the lateral magnet system compared to conventional MT.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113"
+    ],
+    "result": "In the presence of excess free CTD (2.5 \u03bcM) and 250 nM ParBAF under Mg\u00b2\u207a conditions, only 19% of DNA molecules showed condensation (compared to 83% with ParBAF alone), and condensation was never complete when observed. DNA molecules remained fully coated by ParBAF but did not condense even at very low permissive forces (0.07 pN).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C107-C113 provide quantitative evidence (47 molecules with ParBAF alone, 36 with ParBAF+CTD) showing dramatic reduction in condensation frequency in the presence of CTD. The key observation that DNA remains coated with ParBAF but fails to condense (C108) is critical evidence supporting the capping model. The interpretation of bright dots as surface artifacts (C113) is reasonable based on comparison with control experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119"
+    ],
+    "result": "The presence of free CTD converts full-length ParB into a form that can still bind DNA but can no longer condense it, which can only be explained by the capping model (scenario 3). Laminar flow experiments confirmed that CTD does not displace ParB from DNA (no intensity decrease when switching from ParB to ParB+CTD), while unlabeled ParB does compete for binding sites (showing expected intensity decrease).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C114-C119 represent the central conclusion of the paper, supported by converging evidence: (1) CTD inhibits condensation without reducing ParB binding (C107-C108), (2) CTD does not compete for DNA binding sites under Mg\u00b2\u207a conditions (C116), and (3) control experiments with unlabeled ParB show expected competition (C117-C118). The logic excluding alternative mechanisms and supporting the capping model is sound and well-supported by the experimental data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C34",
+      "C35",
+      "C121",
+      "C122"
+    ],
+    "result": "The free CTD blocks the formation of ParB networks by heterodimerization with full-length DNA-bound ParB via a dominant negative effect on a key protein-protein bridging interface, without displacing ParB from DNA. This supports a model in which the CTD acts as a key bridging interface between distal DNA binding loci within ParB networks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C5, C34-C35, and C121-C122 represent the main conclusions of the study, synthesizing evidence from all experimental approaches. The conclusion is well-supported by: (1) ruling out DNA competition mechanisms (C93), (2) demonstrating CTD inhibits condensation without affecting binding (C114-C119), and (3) showing CTD effects are specific to Mg\u00b2\u207a conditions (C121). The capping model is the only mechanism consistent with all observations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C123",
+      "C124",
+      "C125"
+    ],
+    "result": "The finding that CTD prevents condensation by capping a dimerization interface suggests that the CTD in full-length ParB in solution is somehow inaccessible (unlike DNA-bound ParB), which could explain why multimeric forms of ParB are not found in solution. The mechanism by which CTD becomes accessible upon DNA binding remains unclear and is proposed for future research.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C123-C125 are explicitly speculative interpretations (C123-C124 use 'suggests' and 'could explain') and acknowledge that the mechanism is unclear and requires future research (C125). While the speculation is reasonable given the data, it represents a hypothesis rather than a demonstrated result. The claims appropriately identify an important question arising from the work but do not provide experimental evidence to test this model.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C94",
+      "C95",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C120"
+    ],
+    "result": "The manuscript provides extensive background on ParB partition systems, their role in chromosome organization, previous findings on CTD function, and limitations of prior experimental approaches. This contextualizes the current work within the field and justifies the need for the new MT-TIRF methodology.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C30, C94-C95, C102-C105, and C120 represent background knowledge, citations to prior work, and contextualization of the current study. These claims are appropriately supported by citations and accurately represent established knowledge in the field. The limitations of previous approaches (C23-C30) provide clear justification for the methodological advances in the current work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C126",
+      "C127"
+    ],
+    "result": "ParB2AF was labeled with approximately 2 dyes per ParB monomer, and CTDAF was labeled with 0.82 dyes per CTD monomer.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C126-C127 report protein labeling efficiencies determined by spectrophotometry and mass spectrometry (as stated in methods). These are straightforward characterization data for the fluorescent protein constructs used throughout the study.",
+    "result_type": "MINOR"
+  }
+]

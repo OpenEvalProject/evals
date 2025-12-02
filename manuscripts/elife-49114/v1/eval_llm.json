@@ -1,0 +1,320 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C28",
+      "C29",
+      "C31",
+      "C73",
+      "C78",
+      "C79"
+    ],
+    "result": "Metagenomic analysis of 87 reef samples revealed that microbial communities in algae-dominated reefs shift toward overflow metabolism pathways. Genes encoding enzymes for Pentose Phosphate and Entner-Doudoroff pathways (glucose 6-phosphate dehydrogenase, KDPG aldolase) and anaplerotic reactions (phosphoenolpyruvate carboxylase, aspartate aminotransferase) increased with algal cover, while oxoglutarate dehydrogenase (involved in complete oxidation) decreased. These genes explained 14.3% of variance in algal cover and indicate incomplete carbon oxidation with lower oxygen consumption.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C31, C73, C78-C79 provide converging evidence from random forest analysis with appropriate statistical validation (permutation tests, p<0.05). The metagenomic approach is sound with proper normalization (FRAP method), adequate sample size (n=87, exceeding power analysis estimate of 67), and appropriate controls (rpoB, oxidative stress genes showed no relationship). The biochemical interpretation linking enzyme functions to metabolic pathways is well-established.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C89",
+      "C90",
+      "C91",
+      "C95"
+    ],
+    "result": "Taxonomic analysis showed that functional shifts in carbon metabolism genes could not be explained by changes in specific bacterial taxa. Seven species and five genera changed in abundance with algal cover, but none could account for the observed enzyme gene patterns. Only Prochlorococcus was considered as a potential contributor, but showed no significant relationship with oxoglutarate dehydrogenase abundance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C36, C89-C91, C95 demonstrate appropriate analysis ruling out taxonomic drivers of functional changes. The authors properly tested whether specific taxa with gene copy number variations could explain functional patterns, found no significant relationships (e.g., p=0.26 for Prochlorococcus-oxoglutarate dehydrogenase), and correctly invoked strain-level functional variation as explanation with appropriate citations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "Experimental incubations showed bacteria growing on algal exudates consumed significantly more DOC per cell than those on coral exudates (p=0.001), but cell-specific O2 consumption was not different between treatments (p=0.77). This indicates bacteria on algal exudates perform incomplete carbon oxidation, channeling carbon to biosynthesis rather than complete oxidation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C38, C85-C87 present experimental data with appropriate statistical tests (Kruskal-Wallis, Wilcoxon) and adequate replication (n\u22654 based on power analysis). The decoupling of DOC and O2 consumption is clearly demonstrated and properly interpreted as overflow metabolism. However, the claim of bacteria consuming \"10 times more oxygen\" (C122) is not directly supported by Figure 2B showing similar cell-specific O2 consumption.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "Bacterial abundance, cell volume, and total biomass changed differently in response to primary producer exudates. Fleshy algae (turf and macroalgae) increased bacterial abundance and cell volume, leading to higher total biomass compared to calcifying organisms (corals and CCA). Coral exudates decreased biomass while algal exudates increased it. This pattern was replicated in two independent experiments in different locations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C47 provide robust experimental evidence with appropriate statistics (Kruskal-Wallis, Wilcoxon with FDR correction, all p<0.05), adequate replication, and independent validation across two geographic locations (Cura\u00e7ao and Hawaii) with different species. The measurements of abundance and cell volume are standard methods, and the combined biomass calculation is appropriate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "POP chamber experiments measuring both dissolved and gaseous O2 showed that while net dissolved O2 production was similar between fleshy and calcifying organisms, fleshy organisms produced significantly more gaseous O2 (p=0.0001). Fleshy macroalgae released 37% of photosynthetic O2 as gas, compared to 14% for turf, 10% for CCA, and 5% for corals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C54 present novel experimental data using custom POP chambers with appropriate statistical validation. However, some macroalgae and CCA samples exceeded probe accuracy limits, requiring use of lower-bound estimates (indicated by gray symbols in Figure 4A). This means actual dissolved O2 and ebullition fractions may be underestimated for these treatments, though this limitation is properly acknowledged.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "Open-tank experiments quantified bubble production rates from algae and corals. Chaetomorpha produced the highest rates (10-16 bubbles/min/dm\u00b2), Gracilaria produced intermediate rates (~1 bubble/min/dm\u00b2), while corals produced negligible bubbles. Bubble production was not correlated with dissolved O2 concentration (p=0.16) or its rate of change (p=0.27), suggesting heterogeneous nucleation on algal surfaces. Ebullition rates varied with light intensity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C65 provide direct observational data with video documentation and statistical analysis. The lack of correlation between dissolved O2 and ebullition (C60-C61) supports heterogeneous nucleation mechanism. However, the experiments used only 2 algal and 2 coral species, limiting generalizability. The PAR-dependent variation in ebullition (C63-C65) is interesting but incompletely explored.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C111",
+      "C124"
+    ],
+    "result": "A weighted linear model integrating experimental data predicted that microbial respiration and ebullition together remove 11.5-66.7% of gross benthic O2 production as algal cover increases from 0-100%. At 100% algal cover, microbial respiration accounts for 47% and ebullition for 20% of O2 loss.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C66-C70, C111, C124 present model predictions based on experimental data. While the model appropriately combines measured rates, several limitations exist: (1) the model assumes a simplified reef with only coral and algae, (2) it uses a 1m boundary layer assumption that may not reflect in situ conditions, (3) extrapolation from bottle incubations to reef-scale is uncertain, (4) the model is linear and may not capture non-linear interactions, and (5) no validation against actual reef measurements is provided. The predictions require field validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C119",
+      "C125"
+    ],
+    "result": "The study concludes that overflow metabolism is the mechanism underlying bacterial biomass accumulation in coral reefs, and that ebullition facilitates this by creating high DOC:O2 environments. Together, microbial respiration and ebullition cause O2 depletion in algae-dominated reefs, potentially harming corals and other reef animals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C72, C112-C115, C119, C125 synthesize the experimental findings into a coherent mechanistic explanation. The evidence from metagenomics, incubation experiments, and ebullition measurements converges to support overflow metabolism as the mechanism. However, C115 (negative effects on corals) is speculative as no direct experiments on coral health were conducted. The conclusion is well-supported by the data but requires field validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "The study resolves a paradox: while calcifying organisms should theoretically produce higher DOC:O2 ratios due to calcification costs, experimental data show algae produce higher ratios. The authors propose ebullition as the explanation\u2014O2 escapes as bubbles while DOC remains dissolved, creating high DOC:dissolved O2 ratios. Heterogeneous nucleation on algal surfaces is the likely mechanism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C100-C104 provide a logical explanation for contradictory observations in prior literature. The ebullition mechanism is directly demonstrated by experiments, and the lack of correlation between dissolved O2 and bubble production (C60-C61) supports heterogeneous nucleation. However, the theoretical prediction (C100) relies on assumptions about calcification costs that may vary, and alternative explanations (differential carbon allocation) are mentioned but not fully explored.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "Ebullition accounted for 5-37% of net community production in this study, comparable to losses in other ecosystems (21-37% in salt marshes and lakes). If in situ rates match incubation rates, coral reef gross primary production may be significantly underestimated, especially in algae-dominated states. Benthic community composition determines ebullition magnitude.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C105-C110 appropriately contextualize findings with prior literature and acknowledge that ebullition is a recognized source of error in productivity estimates. However, C108 is highly conditional (\"if in situ bubble nucleation and rise rates are comparable\") and requires field validation. The extrapolation from closed/open tank experiments to reef-scale dynamics is uncertain due to differences in hydrodynamics, light fields, and community complexity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "The biochemical basis for overflow metabolism involves NADPH-producing pathways (PP, ED) that consume less O2 and accumulate more biomass compared to NADH-producing pathways. The TCA cycle shifts from oxidative to biosynthetic function through anaplerotic reactions. This is analogous to the Warburg effect and is adaptive for bacteria in high DOC, low O2 environments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C84 provide established biochemical knowledge properly cited and correctly applied to interpret the metagenomic and experimental data. The Warburg effect analogy is appropriate and well-supported by citations. The mechanistic explanation linking enzyme pathways to metabolic outcomes is sound and consistent with biochemical principles.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "The experimental observations of increased bacterial cell volume and abundance help explain higher microbial biomass in algae-dominated reefs globally. In the Pacific, bacterial energetic demands surpass those of macrobes in degraded reefs. Overflow metabolism provides a mechanism for these ecosystem-scale changes in biomass allocation and trophic interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C94 appropriately connect experimental findings to broader reef ecology with proper citations. The link between laboratory observations and field patterns is logical, though the causal connection requires validation. The claim about bacterial demands surpassing macrobes (C93) is supported by citations but represents prior work, not findings of this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C116",
+      "C117",
+      "C118"
+    ],
+    "result": "In healthy coral-dominated reefs, low DOC:O2 ratios stimulate oxidative metabolism and low bacterial biomass. In algae-dominated reefs, ebullition creates high DOC:O2 ratios that stimulate overflow metabolism and biomass accumulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C116-C118 synthesize the study's findings into a conceptual model illustrated in Figure 6. The model is well-supported by the experimental data and provides a clear mechanistic framework. However, it represents an idealized scenario and may not capture the full complexity of reef biogeochemistry.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6"
+    ],
+    "result": "Background claims establish that anthropogenic pressures shift reefs from calcifying to non-calcifying organisms, fleshy algae gain advantage through microbial interactions, high DOC from algae stimulates bacterial growth creating hypoxic zones that kill corals, leading to reef microbialization and a positive feedback loop.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C6 provide well-cited background from established literature. These are not findings of the current study but appropriately set context. All claims are supported by multiple citations to peer-reviewed work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "Background on primary producer physiology and prior observations: calcifying organisms invest 50-80% of fixed carbon in respiration for calcification, while fleshy algae allocate 10-30% to respiration and release up to 60% as DOC. Algae release more O2 but algae-dominated systems have lower O2 stocks. Bubble formation on algae is recognized but never quantified in coral reefs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C20 provide essential background with appropriate citations. C10 highlights a key paradox (higher DOC:O2 in algae despite predictions) that motivates the study. C20 identifies a critical knowledge gap that the study addresses. These are literature-based claims, not study findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C88"
+    ],
+    "result": "Control analyses showed that rpoB (RNA polymerase) and oxidative stress genes did not vary with algal cover, and there was no evidence for broken TCA cycles or ROS detoxification pathways increasing with algal cover.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C33, C88 represent appropriate negative controls that strengthen the specificity of the metabolic gene findings. The lack of change in housekeeping genes and stress response genes supports that the observed changes in carbon metabolism genes are specific and not artifacts of overall genomic changes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "Background biochemical principles: Prochlorococcus has cell volumes of ~0.1 \u00b5m\u00b3, photosynthesis and respiration have theoretical 1:1 C:O2 ratios, but holobionts with different heterotrophic/autotrophic proportions and calcification costs can alter these ratios.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C99 provide established facts properly cited. These support interpretation of experimental results but are not findings of the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C120",
+      "C121",
+      "C122",
+      "C123"
+    ],
+    "result": "Summary of key findings: fleshy algae stimulate incomplete carbon oxidation in bacteria, leading to increased cell sizes and abundances. Bacteria consume 10 times more oxygen in algae incubations than coral incubations. Ebullition from heterogeneous nucleation on algae surfaces causes oxygen loss.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNSUPPORTED",
+    "evaluation": "Claims C120-C123 summarize findings but C122 (\"10 times more oxygen\") is not supported by Figure 2B which shows similar cell-specific O2 consumption (p=0.77). The claim likely refers to total community O2 consumption due to higher biomass, but this is not clearly stated or directly measured. C121 is supported by Figures 2-3. C123 is supported by Figures 4-5.",
+    "result_type": "MAJOR"
+  }
+]

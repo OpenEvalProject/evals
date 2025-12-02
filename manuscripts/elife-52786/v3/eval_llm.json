@@ -1,0 +1,240 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "The authors developed a modular toolkit for expressing the fungal bioluminescence pathway (FBP) in plants. The FBP consists of codon-optimized genes (NPGA, H3H, Hisps, Luz, and optionally CPH) that convert caffeic acid into a luciferin substrate and generate bioluminescence. The toolkit uses the MoClo assembly system to enable rapid swapping of promoters and terminators for customizable expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C20 and C77-C84 collectively establish the development of a functional FBP toolkit. The pathway components are well-documented in the cited literature (C15-C17, C19-C20), the codon optimization and molecular cloning are described (C77-C78), and the biochemical pathway is clearly illustrated in Figure 1A (C81-C84). The modular design using MoClo is appropriately described (C78-C80).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "The FBP was successfully reconstituted in N. benthamiana leaves via transient Agrobacterium infiltration, producing significant bioluminescence using endogenous caffeic acid. Controls with incomplete pathways showed no luminescence, confirming that all FBP enzymes are required and that native plant enzymes cannot complement missing pathway components.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C25 are strongly supported by experimental data in Figure 1B-D and Figure 1\u2014figure supplement 1. The complete pathway shows significant luminescence (p=0.0002, n=12), while incomplete pathways and Agrobacterium controls show no signal. The negative controls are appropriate and the statistical analysis is adequate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C61"
+    ],
+    "result": "Incorporating the CPH recycling enzyme into the FBP prolongs luminescence at later timepoints (7 days post-infiltration) when substrate becomes limiting, though no difference is observed at earlier timepoints (4 days) when substrate is saturating.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C28 and C61 are supported by experimental data in Figure 1E and Figure 1\u2014figure supplement 2. The statistical analysis shows significant difference at 7 days (p=0.05, n=12) but not at 4 days, consistent with the substrate limitation hypothesis. However, the effect size is modest and sample size is adequate but not large.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "Stable transgenic N. benthamiana lines expressing the FBP exhibit auto-luminescence throughout the plant, with stronger signals in root tips and shoot apical meristem, and lower luminescence in younger leaves compared to older leaves.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C31 are supported by imaging data in Figure 1F-G and Figure 1\u2014figure supplement 4. The spatial patterns of luminescence are clearly visible in the images. However, the interpretation of signal differences (C30-C31) is somewhat qualitative and lacks quantitative analysis or statistical testing of the spatial heterogeneity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C75",
+      "C76"
+    ],
+    "result": "Transient expression of a caffeic acid biosynthesis pathway (HpaB, HpaC, RcTAL) in stable FBP-expressing N. benthamiana lines significantly increases luminescence, demonstrating that caffeic acid availability can be a limiting factor for FBP luminescence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C33 are supported by experimental data in Figure 1\u2014figure supplement 3, showing significant increases in luminescence across multiple biological replicates. The caffeic acid biosynthesis pathway is appropriately cited (C33). Claims C75-C76 provide important context about caffeic acid in plants, supported by citations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "The FBP functions across diverse plant species including Arabidopsis thaliana, Solanum lycopersicum (tomato), Dahlia, Catharanthus roseus (periwinkle), Petunia hybrida, and Rosa rubiginosa (rose), demonstrating broad applicability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C40 are well-supported by experimental data in Figure 2A-E and Figure 3A. Auto-luminescence is clearly demonstrated across multiple plant families (Brassicaceae, Solanaceae, Asteraceae, Apocynaceae, Rosaceae). The claim about caffeic acid ubiquity (C34) is appropriately cited. The breadth of species tested is impressive and supports generalizability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C41",
+      "C42"
+    ],
+    "result": "Bioluminescence signal in flowers drops off within a day of detachment from the plant body but persists when flowers remain attached, suggesting that pathway substrates or co-factors may be trafficked from source tissues.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C41 is supported by experimental observations, but C42 is explicitly speculative and the authors acknowledge that more tests are required. The observation is interesting but the mechanistic interpretation remains unvalidated. Alternative explanations (e.g., stress responses, wound responses, metabolic changes upon detachment) are not discussed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C66"
+    ],
+    "result": "The FBP can report spatiotemporal gene expression patterns, as demonstrated with the petunia ODO1 promoter driving Luz. The pODO1:Luz construct shows diurnal luminescence peaking at the day-night transition, matching previously characterized ODO1 expression patterns, while p35S:Luz controls show different temporal dynamics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C48 and C66 are supported by experimental data in Figure 3A-D. The diurnal pattern is clearly visible, and statistical significance is achieved at 2 days post-infiltration (p=0.01 based on Figure 3D). The comparison with constitutive promoter controls (C48) is critical and appropriately demonstrates that the temporal pattern reflects promoter activity rather than substrate availability. The consistency with prior firefly luciferase studies (C43-C44, C66) validates the approach.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "The FBP can function as a hormone biosensor, as demonstrated with the ABA-responsive AtRAB18 promoter driving Luz. The pRAB18:Luz reporter shows dose-dependent response to exogenous ABA and increased luminescence in response to drought stress, while p35S:Luz controls show no such response.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C56 are well-supported by experimental data in Figure 4B-D. The dose-response is clear (C50), sensitivity is consistent with prior GFP reporters (C51), and the drought response is demonstrated both in detached leaves (C52-C53) and intact plants (C54-C55). The constitutive promoter controls (C55-C56) appropriately demonstrate that the response is specific to the ABA-responsive promoter. Statistical significance is shown in Figure 4C.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "A low-cost bioluminescence imaging platform was developed using a Raspberry Pi, DSLR camera, and off-the-shelf components for less than $2,500. The platform provides sufficient sensitivity to capture FBP bioluminescence, though it exhibits higher thermodynamic noise than cooled CCD systems, which can be filtered using ImageJ.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C60 are supported by the detailed component list in Table 2 and demonstration images in Figure 2\u2014figure supplement 1 and throughout the manuscript. The cost comparison is reasonable (C57), the platform is adequately described (C58), and its performance is demonstrated (C59-C60). The acknowledgment of higher noise but adequate filtering is appropriate. The open-source code availability enhances reproducibility.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C62",
+      "C67",
+      "C68"
+    ],
+    "result": "FBP reporters show lower amplitude responses compared to substrate-supplemented luciferase reporters, likely due to reliance on endogenously synthesized luciferin. However, FBP reporters can visualize gene expression changes occurring on the timescale of hours.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62, C67, and C68 are supported by experimental observations throughout the manuscript, particularly in the time-course experiments (Figures 3 and 4). The lower amplitude is a reasonable inference from substrate limitation (C67), and the temporal resolution is demonstrated (C68). Claim C62 is appropriately speculative about the cause of stronger transient vs. stable expression.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "The FBP approach offers advantages over existing bioluminescence systems: it is spectrally separable from firefly luciferase enabling parallel deployment, can be nuclearly encoded avoiding plastid transformation challenges, and is extensible to diverse plant species.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C65 are supported by appropriate citations and logical inference. The spectral separation (C63) is cited to Kaskova et al. 2017, the extensibility (C64) is supported by the multi-species demonstrations, and the comparison to transplastomic approaches (C65) is appropriately cited. These represent valid advantages of the system.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "The authors propose future applications including engineering auto-luminescent flowers to attract nocturnal pollinators, designer floriculture, field-scale environmental monitoring, and biosensors for various phytohormones and environmental cues.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C69-C74 are explicitly speculative about future applications. While C69 is appropriately cited regarding natural fungal bioluminescence, claims C70-C74 are forward-looking proposals without experimental validation. These represent reasonable extensions of the technology but are not demonstrated results. They should not be evaluated as supported findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14"
+    ],
+    "result": "The introduction provides background on bioluminescence in nature, existing luciferase-based reporters in plants, challenges with substrate delivery and cost, and prior attempts at substrate-independent bioluminescence including the transplastomic lux operon approach.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C14 provide appropriate background context and are well-supported by citations to published literature. These are standard introductory claims establishing the rationale for the work. The characterization of challenges with existing systems (C7-C11) and prior approaches (C12-C14) appropriately motivates the current study.",
+    "result_type": "MINOR"
+  }
+]

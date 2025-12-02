@@ -1,0 +1,209 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "The manuscript provides background on Short Linear Motifs (SLiMs) and calcineurin (CN), establishing that ~40% of protein-protein interactions are mediated by SLiMs, the human proteome contains >100,000 SLiMs, and CN is a Ca2+/calmodulin-dependent phosphatase that recognizes substrates via PxIxIT and LxVP motifs. The relationship between PxIxIT sequence and CN binding affinity outside the core motif has not been systematically probed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C16 are background statements about SLiMs and calcineurin supported by citations to published literature (C1-C3, C7-C15) or established knowledge (C6, C10). Claim C16 accurately describes a gap in the field that motivates the current work. These claims provide appropriate context for the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "The manuscript reviews limitations of existing methods for studying protein-peptide interactions, noting that display-based methods (phage display, ProP-PD) identify only strong binders and cannot probe PTM effects, while array-based methods have difficulties with peptide quality control leading to false positives/negatives.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C24 accurately describe limitations of existing methods based on cited literature (C19, C20, C22-C24) and established knowledge (C21). These claims appropriately motivate the need for the MRBLE-pep method developed in this work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "The MRBLE-pep method synthesizes peptides on spectrally encoded beads with unique linkage between sequence and spectral code, allows precise control of peptide density and PTM incorporation, has slow on/off rates enabling measurement of weak interactions, and maintains stable spectral codes throughout synthesis. Peptide density is ~2\u00d710^8 molecules per bead.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C28, C31-C34 describe key features of the MRBLE-pep method supported by experimental data (C33, C34) and citations to prior work (C26, C32). The measured peptide density (C34) and code stability (C33) are directly demonstrated. These technical claims establish the method's capabilities.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "MRBLE-pep successfully measures CN-PxIxIT binding affinities despite prior literature showing 50-fold variation for the same substrate. High-affinity variants (PVIVIT, PVIVVT) showed strong binding, scrambled peptide showed no binding, and PKIVIT bound slightly stronger than PVIVIT. MRBLEs were engineered with slow on/off rates (hours) to approximate equilibrium, with intensities saturating at 5-6 hours.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C45 demonstrate MRBLE-pep's ability to measure CN-PxIxIT interactions with experimental data (C36-C39, C42-C44) and appropriate controls (C37). The slow kinetics design (C44-C45) is supported by time-course data and literature (C45). MALDI confirmation of peptide synthesis (C38) addresses quality control concerns. Results are consistent with prior observations while resolving discrepancies (C35).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "Systematic mutagenesis of PxIxIT core residues revealed that positions 2 and 4, previously considered degenerate, have unexpectedly strong effects on binding. V2R and V2K mutations in PVIVIT significantly enhanced binding, consistent with the high-affinity A238L viral inhibitor containing a positively-charged residue at position 2. All mutations from native R2 in NFATc2 caused dramatic loss of binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C50 present experimental findings from systematic mutagenesis supported by MRBLE-pep data (C47-C50) and sequence analysis (C46). The observation that 'degenerate' positions have strong effects (C49) is a key finding. Results are consistent with known high-affinity inhibitors (C50), providing validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C55",
+      "C56"
+    ],
+    "result": "Flanking residues outside the core PxIxIT motif make major contributions to CN binding affinity. At position -1, CN prefers hydrophobic residues (V, L, I) while acidic residues (D, E) strongly reduce binding. Phosphoserine/phosphothreonine at position 9 increased PVIVIT affinity ~50-fold, though this effect was sequence-specific. These data establish that the PxIxIT SLiM is significantly longer than previously thought.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C56 present a major finding that flanking residues contribute significantly to affinity, supported by systematic experimental data (C52, C53, C55). The 50-fold affinity increase from phosphorylation at position 9 is dramatic and well-documented. The sequence-specificity of this effect (C55) demonstrates the complexity of the interaction. This redefines the PxIxIT motif (C56).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "Double-mutant cycle analysis revealed epistatic interactions between positions 2 and 4. V4F substitution reduced PVIVIT affinity but had minor effects on PKIVIT, while V4I increased binding only in PKIVIT. This suggests the high affinity of A238L's PKIIIT sequence relies on cooperativity between positions 2 and 4.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C59 demonstrate non-additive effects between residues using double-mutant cycle analysis (C57-C58), with C59 providing a mechanistic interpretation. The experimental observations are clear, though C59 is an inference rather than direct demonstration. The epistasis finding is important for understanding binding specificity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C64",
+      "C66"
+    ],
+    "result": "Comparison of MRBLE-pep measurements with computational predictions (Rosetta, FoldX) based on crystal structures showed that while all methods correctly predicted effects of conserved buried residues (I3, I5), computational approaches failed to predict effects of solvent-exposed positions (V2, V4) that MRBLE-pep showed have strong effects. Only MRBLE-pep correctly distinguished that PVIVVT has little effect while PVIVIN reduces binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C62 describe structural features from published crystal structures. Claims C64 and C66 compare computational predictions to experimental data, showing computational methods fail for solvent-exposed residues. This is a fair comparison highlighting MRBLE-pep's advantages, though it also reveals limitations of current computational approaches for this system.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "In vivo validation using NFAT-driven luciferase assays showed that all 4 PxIxIT peptides inhibited CN activity, with PKIVIT being the most effective (greater than FK506). Hydrophobic residues at position -1 increased inhibition while acidic residues decreased it, consistent with in vitro measurements. Novel high-affinity variants (IPKIVITGPH, HPKIVITGPD, PPKIIIT) showed even stronger inhibition. MRBLE-pep in vitro measurements were strongly predictive of in vivo inhibition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C80 demonstrate strong correlation between in vitro MRBLE-pep measurements and in vivo activity (C80), validating the method's biological relevance. The in vivo assay is appropriate and well-controlled. The identification of peptides more potent than FK506 (C73) and the novel high-affinity variants (C78-C79) have potential therapeutic implications. The consistency between in vitro and in vivo results (C74-C76) strengthens confidence in the findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C87"
+    ],
+    "result": "The study demonstrates for the first time that flanking amino acids and PTMs play critical roles in determining PxIxIT-CN affinity and specificity, and identifies several PxIxIT peptides with unprecedented binding affinity. This redefines the PxIxIT motif as significantly longer than previously thought.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C30 and C87 summarize the major findings of the study. These conclusions are well-supported by the systematic mutagenesis data (claims grouped in previous results), in vitro binding measurements, and in vivo validation. The novelty claim (C87) is justified given the lack of prior systematic studies of flanking residues (C16, C51).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C81",
+      "C83",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "MRBLE-pep offers advantages over existing methods: it requires 400-2000x less protein than SPR/FP/ITC for 384 peptides, can be completed in days enabling iterative measurements, and provides information about residues that ablate binding (important for in vivo target prediction). SLiM interactions remain underrepresented in Y2H and AP-MS datasets.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81 and C83-C86 describe advantages of MRBLE-pep over alternative methods. The material savings calculation (C83) is supported by Supplementary file 2. The speed claim (C84) is reasonable given the described workflow. Claims C85-C86 about limitations of other methods are supported by citations. These claims appropriately position MRBLE-pep's contributions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "The expanded 10-residue PxIxIT motif definition will enhance computational efforts to map the CN signaling network. The findings are consistent with prior observations that JNK phosphorylation at position -1 regulates CN-NFAT4 binding and that phosphorylation at position 9 is required for CN binding to C16ORF74 in pancreatic cancer.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C88 is a prediction about future impact, appropriately qualified as speculation. Claims C89-C91 connect the current findings to prior literature, showing consistency with known regulatory mechanisms. These claims appropriately contextualize the findings within the broader field, though C88's prediction of impact cannot be evaluated without future work.",
+    "result_type": "MINOR"
+  }
+]

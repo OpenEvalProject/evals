@@ -1,0 +1,351 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C29",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C86",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "The authors created anatomical atlases from BigBrain histology (100 \u00b5m resolution) and postmortem MRI (50 \u00b5m resolution), correcting a significant misregistration of the inferior colliculus in the original BigBrain MNI dataset. All subcortical auditory structures (CN, SOC, IC, MGB) were successfully identified in the histological data, including small sub-nuclei like the medial and lateral superior olives.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C43 and C86-C87 document the identification and correction of a registration error in the BigBrain dataset, supported by Figure 7. Claims C88-C89 report successful identification of all auditory structures including small sub-nuclei in the histological data. The methodological approach is clearly described and the correction is visually documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C44",
+      "C90",
+      "C91",
+      "C118",
+      "C119"
+    ],
+    "result": "Postmortem MRI at 50 \u00b5m resolution clearly delineated the medial geniculate and inferior colliculus, with less contrast for the superior olive and cochlear nucleus. Postmortem MRI segmentations showed smaller CN and SOC but larger MGB volumes compared to histology and literature, possibly due to reduced contrast-to-noise ratio.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44 and C90 describe the postmortem MRI acquisition and results, supported by Figure 2. Claims C118-C119 acknowledge discrepancies in volumetric measurements and provide a plausible explanation. The overall image contrast facilitated registration with in vivo MRI (C91), demonstrating practical utility despite limitations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C80",
+      "C81",
+      "C182",
+      "C183"
+    ],
+    "result": "Functional MRI at 7T (1.1 mm isotropic) reliably identified all subcortical auditory structures (MGB, IC, SOC, CN) within individual participants across two experiments. Activation clusters were reproducible both within subjects (across experiments) and across subjects, with higher reproducibility for IC and MGB than for CN and SOC.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C64 report identification of all structures in all participants with cross-subject consistency (supported by Figure 4 and supplements). Claims C80-C81 and C182-C183 confirm within-subject and across-subject reproducibility. The differential reproducibility between structures (C63-C64) is acknowledged and explained by signal-to-noise differences. Statistical thresholding (FDR q=0.05, p<0.001) is appropriately applied.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C7",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "A group functional atlas locates subcortical auditory structures with median distance below 2 mm, though functionally defined regions exhibited larger volumes than histological ones. This volume difference is attributed to functional voxel size (1.1 mm), spatial smoothing (1.5 mm), residual anatomical misalignment, partial volume effects, and potential vascular draining effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C7 provides a quantitative accuracy metric supported by Figure 4 supplements. Claim C99 documents the volume discrepancy (Table 1), and claims C100-C103 provide multiple plausible explanations for this observation. The authors appropriately acknowledge these limitations while demonstrating the atlas's utility. The median distance metric indicates good localization accuracy despite volume differences.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C8",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "Postmortem diffusion MRI tractography (200 \u00b5m resolution) revealed structural connectivity maps showing streamlines predominantly through the lateral lemniscus, brachium of the inferior colliculus, and superior olivary complex, with connections primarily ipsilateral except for commissural connections and bilateral connectivity at CN/SOC levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C51 describe the postmortem tractography results supported by Figure 3, showing anatomically plausible connectivity patterns. Claims C52-C53 characterize the laterality and distribution of connections. The connectivity patterns match expected anatomy from the literature, though the authors appropriately note that tractography does not measure true neuronal connections (C115).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C164",
+      "C166"
+    ],
+    "result": "In vivo diffusion MRI tractography (1.05 mm resolution) at 7T demonstrated connectivity patterns dominated by ipsilateral connections, with notable bilateral connectivity between cochlear nuclei and superior olivary complexes, and commissural connections between inferior colliculi. The lower resolution in vivo data produced connectivity estimates more consistent with literature expectations than higher resolution postmortem data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C79 describe in vivo tractography results supported by Figure 6, showing anatomically plausible patterns. Claim C164 confirms sensitivity to subcortical auditory connections. Claim C166 notes the paradoxical finding that lower resolution data produced more expected connectivity patterns, which is explained by the authors through partial volume effects (C167-C169). The bilateral connectivity at CN/SOC levels (C78) is appropriately referenced to animal literature.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C165",
+      "C167",
+      "C168",
+      "C169",
+      "C170"
+    ],
+    "result": "High-resolution postmortem diffusion MRI (200 \u00b5m) produced streamlines resembling the auditory pathway but missed key connections between structures when using strictly defined ROIs. Dilating ROIs and downsampling to in vivo resolution increased connectivity, suggesting that higher resolution anatomical definitions excluding surrounding white matter and partial volume effects in lower resolution data both influence tractography results.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C165 documents the unexpected finding with high-resolution data. Claims C167-C169 provide testable hypotheses and experimental validation through ROI dilation and downsampling (Figure 3 supplements). Claim C170 appropriately concludes that high resolution places constraints requiring further investigation. This represents an important methodological finding about resolution-dependent tractography performance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C92",
+      "C177",
+      "C178"
+    ],
+    "result": "In vivo anatomical MRI at 7T allowed identification of MGB and IC based on anatomical contrast, but the superior olivary complex and cochlear nucleus could not be identified in the average anatomical image, possibly due to limited sample size and reduced signal-to-noise ratio. Functional MRI exhibited greater sensitivity to auditory structures than anatomical MRI despite lower resolution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C57 report the anatomical MRI results supported by Figure 5 supplements, with C58 providing a plausible explanation for the SOC limitation. Claims C92 and C177 compare anatomical and functional MRI capabilities. The finding that functional MRI (1.1 mm) outperformed anatomical MRI (0.7 mm) for structure identification is well-documented in Figures 4-5 and represents an important methodological insight.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "Functional activation patterns showed structure-specific characteristics: CN activation corresponded mainly to ventral portions, SOC activation overlapped with histological definitions but may be displaced ventrally by vasculature architecture, IC activation extended superiorly possibly due to vascular draining patterns, and MGB activation showed good agreement with histology without directional bias in vascular draining.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C65-C75 describe detailed observations about functional activation patterns and their relationship to vasculature (Figure 5). While the observations are documented, the causal relationships between vasculature architecture and functional activation displacement (C69, C72) remain speculative. The authors appropriately use cautious language ('may result', 'may impact'), but these hypotheses lack direct experimental validation. The observations are valuable but the mechanistic interpretations require further investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C107",
+      "C108",
+      "C121",
+      "C122",
+      "C123"
+    ],
+    "result": "Each methodology (histology, postmortem MRI, in vivo MRI) successfully localized subcortical auditory structures, but known issues in image registration hindered direct comparisons between modalities. Registration challenges include diverse image contrasts, different resolutions, and the difficulty of aligning data from different modalities, particularly for CN and SOC where in vivo anatomical contrast is limited.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C39 summarize the overall findings supported by Figures 1-5 and Table 2. Claims C107-C108 and C121-C123 acknowledge registration limitations with specific examples (e.g., the BigBrain colliculi misregistration in C41-C43). The authors appropriately characterize these as known challenges in the field while demonstrating that each method provides complementary information. The DICE coefficients and Hausdorff distances in Table 2 quantify the alignment quality.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C35",
+      "C160",
+      "C161",
+      "C162"
+    ],
+    "result": "Postmortem MRI provides 3-D anatomical information comparable to histology with advantages including minimal geometric warping, non-destructive imaging, and the ability to be used in vivo for functional and anatomical studies of human subcortical structures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C35 is supported by the successful identification of structures in postmortem MRI (Figure 2) and comparison with histology (Table 2). Claims C160-C162 enumerate well-established advantages of MRI over histology, supported by citation C160 and demonstrated in the study's results. The practical demonstration of these advantages through the creation of atlases and successful registration validates these claims.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C34"
+    ],
+    "result": "The authors created the first fully 3-D atlases and connectivity maps of the human subcortical auditory pathway based on histology, postmortem MRI (50 \u00b5m), and in vivo functional MRI at 7T, made publicly available in MNI152 reference space to facilitate future research.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C84 describe the creation of novel 3-D atlases and connectivity maps, with C84 asserting their novelty as the first fully 3-D representations. This is supported by the comprehensive methodology and results presented throughout the manuscript. Claims C85 and C34 confirm public availability in standard reference space, enhancing utility. The novelty claim is reasonable given the systematic multi-modal approach and 3-D nature of the atlases.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "The authors successfully identified subcortical auditory nuclei without cardiac gating by increasing statistical power through presenting 168 natural sounds with multiple repetitions and using smaller voxels (1.1 mm isotropic) to reduce partial volume effects between cerebrospinal fluid and brain tissue.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94 and C96 describe methodological choices that differ from previous studies (C95), with successful outcomes demonstrated in C61-C64. Claim C97 explains the rationale for smaller voxels with appropriate citation. The success of this approach is validated by the reproducible identification of all structures across participants and experiments, suggesting that the combination of high field strength, small voxels, and increased statistical power effectively compensated for not using cardiac gating.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "Functionally defined regions may include sub-regions not specific to the auditory system (e.g., multisensory superior colliculus layers), an effect that could be reduced by using different stimuli and statistical contrasts. For IC and MGB, higher thresholds in probabilistic maps result in more accurate volumetric definition and anatomical localization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C104 identifies a limitation of using overall sound response for functional definition, with appropriate citations to support the concern about superior colliculus. Claim C105 suggests a methodological improvement for future work. Claim C106 provides a practical solution for improving accuracy in high SNR regions, supported by Figure 5. These represent appropriate acknowledgment of limitations with constructive suggestions for improvement.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115"
+    ],
+    "result": "The diffusion MRI datasets implemented state-of-the-art acquisition techniques including compensation for fixation effects by increasing b-value, constrained spherical deconvolution for fiber orientation estimation, and EuDX deterministic tractography for handling crossing fibers. However, diffusion MRI does not measure true neuronal connections and remains subject to modeling errors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C110-C114 describe the methodological approaches with appropriate technical detail. Claim C111-C112 explain the rationale for increased b-value in postmortem data with supporting citations. Claim C115 appropriately acknowledges fundamental limitations of tractography with recent citations. The combination of state-of-the-art methods with honest acknowledgment of limitations represents good scientific practice.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120"
+    ],
+    "result": "BigBrain histological segmentations showed volumes similar to literature values, with slightly smaller CN and slightly larger MGB. Postmortem MRI segmentations differed more, showing smaller CN and SOC but larger MGB compared to both literature and histology, possibly due to reduced contrast-to-noise ratio that could be improved with different acquisition techniques.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C116 compares histological volumes to literature with appropriate citations, showing general agreement (Table 1). Claims C117-C119 acknowledge potential sources of error in both modalities. Claim C120 suggests future improvements with citation. The volumetric comparisons are quantified in Table 1, and the authors appropriately discuss potential sources of discrepancy while noting that the BigBrain dataset is of high quality.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C125",
+      "C126",
+      "C124"
+    ],
+    "result": "Both postmortem specimens (BigBrain and postmortem MRI) were from 65-year-old male donors, and age may have affected brain structure volumes. Postmortem imaging in general is prone to modest specimen deformation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C125-C126 acknowledge demographic limitations of the postmortem samples and potential age effects on volume measurements. Claim C124 notes a general limitation of postmortem imaging. These represent appropriate acknowledgment of study limitations that could affect generalizability. The authors are transparent about these constraints while noting they do not invalidate the main findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C127",
+      "C128",
+      "C129"
+    ],
+    "result": "Despite limitations, inter-rater and inter-experiment reliability suggest each method is effective for localizing the subcortical auditory pathway. The reliable functional localization enables future investigations of complex human auditory processing, and the 3-D representations should benefit understanding of the human subcortical auditory pathway structure.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C127 draws an appropriate conclusion from the reliability data presented throughout (Table 2, Figure 4 supplements). Claims C128-C129 discuss implications for future research. The reliability metrics (DICE coefficients, Hausdorff distances, overlap percentages) support the conclusion that the methods are effective despite acknowledged limitations. The forward-looking statements are reasonable given the demonstrated capabilities.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C21",
+      "C28"
+    ],
+    "result": "Studying the human subcortical auditory system non-invasively is challenging due to small, densely packed structures deep in the brain and difficulty understanding 3-D structure from 2-D schematics and animal models. A systematic comparison of imaging methodologies for the subcortical auditory system had not been undertaken prior to this study.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2 and C21 describe well-established challenges in the field, representing general knowledge supported by the literature review. Claim C28 asserts the novelty of the systematic comparison, which is supported by the comprehensive multi-modal approach presented. The manuscript addresses these challenges through the systematic comparison of three imaging modalities.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C139",
+      "C140"
+    ],
+    "result": "The study received appropriate ethical approval, obtained informed consent from participants with normal hearing, and used state-of-the-art MRI acquisition protocols including 7T in vivo imaging (0.7-1.1 mm resolution) and postmortem imaging (50-200 \u00b5m resolution) with appropriate specimen preparation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C130-C132 document ethical compliance. Claims C133 and C135-C140 provide detailed technical specifications for MRI acquisition and specimen preparation. These methodological details are appropriate and sufficient for reproducibility. The acquisition parameters represent state-of-the-art approaches for high-resolution imaging of small subcortical structures.",
+    "result_type": "MINOR"
+  }
+]

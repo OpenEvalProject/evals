@@ -1,0 +1,421 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C29",
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "The authors constructed a whole lifespan multi-tissue (WLMT) DNAm clock based on 435 CpG sites using 416 samples from 11 tissues/cell types covering ages from 1 week to 35 months. The clock was built using elastic net regression with 10-fold cross-validation on 80% training data, achieving R\u00b2=0.98 (MAE=28.6 days) on training and R\u00b2=0.89 (MAE=72.7 days) on test sets.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C29, C35-C38 provide comprehensive methodological details and performance metrics for the WLMT clock construction. The experimental design is well-documented with appropriate sample sizes, statistical methods, and validation approaches. Performance metrics demonstrate good predictive accuracy across the lifespan.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C43",
+      "C47"
+    ],
+    "result": "The WLMT clock, though trained predominantly on male samples (84%), shows no significant sex-based differences in performance and can be applied to both male and female mice.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43 and C47 are supported by statistical analyses showing no significant differences in MAE between sexes (p=0.37) or in regression slopes (p=0.72) and intercepts (p=0.54). The conclusion that WLMT is sex-independent is appropriately cautious given the sample composition.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C1",
+      "C23",
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "Existing mouse DNAm clocks have limitations including tissue specificity and age bias. The YOMT clock was tuned for younger mice with MAE increasing from 2.14 to 4.66 weeks when applied to older animals, and required normalization to the original training dataset.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C23, C25-C28 accurately characterize the limitations of existing mouse clocks based on cited literature and Table 1. The age-dependent performance degradation of YOMT is documented with specific MAE values from the original publication.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "Comparative analysis revealed that WLMT outperformed YOMT and liver clocks on non-liver samples (MAE=2.69 vs 11.64 and 14.24 months), while YOMT showed limited age range (88.2-149.5 days) and poor correlation (R\u00b2=0.36) when applied to samples spanning 7-1050 days, performing well only on 3-5 month old samples.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C59, C63-C68 provide detailed comparative performance data with specific MAE values and correlation coefficients. The analysis appropriately accounts for training set composition differences (44% liver in YOMT vs 23% in WLMT) and identifies practical limitations of YOMT application.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "On an independent dataset of 31 samples, WLMT showed slightly better performance (MAE=53 days) than other clocks and exhibited no significant systematic error (slope not significantly different from 0), while YOMT and liver clocks produced tight age clusters with minimal variation that failed to reflect actual age changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C83 describe validation on independent data from Reizel et al. 2018. The observation that YOMT and liver clocks produced tight clusters (SD=2-3 days for YOMT, 2-8 days for liver) with significant systematic error while WLMT showed better age tracking is well-documented with statistical support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C3",
+      "C84",
+      "C85"
+    ],
+    "result": "The blood clock successfully detected effects of several lifespan-extending interventions (caloric restriction, GHR knockout, Snell dwarf) on blood samples, while YOMT and liver clocks did not show significant DNAm age-modulating effects for the same interventions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C84-C85 are supported by data in Figure 5A,B,D,E showing significant changes detected by the blood clock. The failure of YOMT and liver clocks to detect these effects is documented, though the authors note WLMT showed trends that reached significance only for GHR KO with the given sample size.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C4"
+    ],
+    "result": "Both WLMT and blood clocks detected the rejuvenation effect during fibroblast to iPSC conversion, with WLMT showing p=8\u00d710\u207b\u2074 and blood clock p=1.3\u00d710\u207b\u2076.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C4 is supported by Figure 5C data showing statistically significant rejuvenation effects detected by both WLMT and blood clocks. The p-values indicate strong statistical support for this finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C90",
+      "C91"
+    ],
+    "result": "Only the liver clock detected aging slowdown in Ames dwarf liver samples, but fewer than 90% of CpG sites for other clocks were covered in these samples, limiting interpretation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C90-C91 identify a technical limitation (insufficient site coverage) that confounds interpretation of the Ames dwarf results. The authors appropriately note that the samples were generated by WGBS rather than RRBS, which may explain the poor performance of RRBS-based clocks. The result cannot be considered definitive evidence of liver clock superiority.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "WLMT clock sites are distributed across genomic regions with 58% in open sea, 26% in CpG islands, 11% in shores, and 5% in shelves, with all autosomes represented.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C96 describe the genomic distribution of WLMT clock sites based on annotation analysis. The distribution across all autosomes (Figure 2-supplement 1) and regional classification are straightforward descriptive results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C97",
+      "C98"
+    ],
+    "result": "There was no overlap between WLMT and YOMT clock sites, and overlaps between blood-WLMT and liver-YOMT were not statistically significant at the CpG site level.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97-C98 are supported by overlap analysis shown in Figure 2A. However, the authors note significant overlap at the gene level (Figure 2B), suggesting that while specific CpG sites differ, the clocks may target similar genomic regions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "The Kcns1 gene contained clock sites in both WLMT (11 sites) and blood clock (6 sites), with CpG sites showing high correlation with age by pyrosequencing, and higher-weighted RRBS sites showing stronger age correlation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C100-C103 identify Kcns1 as a gene with overlapping clock sites and validate the age-correlation using independent pyrosequencing data from Han et al. 2018. The concordance between RRBS weights and pyrosequencing correlations provides orthogonal validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C106",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113"
+    ],
+    "result": "Robustness analysis using 100 alternative clocks revealed that the highest-weighted site (chr8:110168311 in CALB2 promoter) appeared in all 100 clocks and the blood clock, while the majority of WLMT sites appeared in less than half of alternative clocks, supporting global methylation change during aging.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C106, C109-C113 describe a systematic robustness analysis. The finding that most sites are not consistently selected (Figure 2-supplement 3) while a few key sites are highly robust supports the interpretation of global methylation changes. The correlation between site weight and frequency (R\u00b2=0.37, p=3.3\u00d710\u207b\u2074\u2074) is statistically significant.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C114",
+      "C115"
+    ],
+    "result": "Single-tissue clocks were more precise on their corresponding tissues than multi-tissue clocks, but multi-tissue clocks better reflected systemic aging despite bias toward better-represented tissues in training sets.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C114-C115 represent a synthesis of the comparative analysis. The conclusion is supported by performance data showing tissue-specific clocks excel on their target tissue but fail on others (e.g., liver clock in Figure 3-supplement 2), while multi-tissue clocks show broader applicability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C116",
+      "C117",
+      "C118",
+      "C119"
+    ],
+    "result": "CpG sites with positive weights showed low early-life methylation that increased with age, while negative-weight sites showed the opposite pattern, drifting toward intermediate states. This supports the interpretation of DNAm clocks as representing global, systemic age-dependent changes rather than identifying key regulatory positions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C116-C119 describe methylation dynamics (Figure 2-supplements 4-5) and provide a mechanistic interpretation supported by citation to Szir\u00e1ki et al. 2018. The interpretation is consistent with the robustness analysis showing most sites are not consistently selected across alternative clocks.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "Only ~20% of RRBS CpG sites are sufficiently covered by WGBS when the same samples are sequenced by both methods, leading to the decision to use only RRBS data for clock construction due to insufficient overlap when pooling WGBS and RRBS profiles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C32 describe a methodological decision based on technical limitations of combining WGBS and RRBS data. The 20% overlap figure is supported by citation to Harris et al. 2010, and the decision to use only RRBS is justified by data availability and compatibility.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C148",
+      "C149",
+      "C150",
+      "C151"
+    ],
+    "result": "Despite selecting samples with >2 million covered sites (representing only 10% of all possible CpG sites), the median coverage of WLMT clock sites in independent samples was 435 (100%), with WLMT showing best coverage (75%) in low-coverage datasets, though <90% of sites were covered in WGBS datasets.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C148-C151 describe practical limitations of RRBS methodology and clock applicability. The data demonstrate that WLMT clock sites are reasonably well-covered in new RRBS samples but have limitations when applied to WGBS data, which is an important practical consideration.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C155",
+      "C156",
+      "C157",
+      "C158",
+      "C159",
+      "C160"
+    ],
+    "result": "Multi-tissue clocks and blood clock reflect age changes across all tested tissues (with tissue-dependent performance for blood clock: liver>lung>heart>cortex), while the liver clock only performs well on liver samples. This difference may relate to blood's cellular heterogeneity versus liver's predominance of hepatocytes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C155-C160 describe differential generalization of single-tissue clocks with a mechanistic hypothesis. The observation is supported by Figure 3-supplement 2, and the explanation based on cellular composition is reasonable though speculative, appropriately qualified with 'possible' and 'may'.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C126",
+      "C127"
+    ],
+    "result": "Construction of multi-tissue DNAm clocks cannot be reduced to superposition of tissue-specific clocks, as most tissue-specific clock sites do not contribute to multi-tissue clocks, indicating a general pattern of aging in the DNA methylome.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C126-C127 present an important conceptual conclusion supported by the overlap analysis (Figure 2) showing minimal site-level overlap between tissue-specific and multi-tissue clocks. The inference about general aging patterns is consistent with the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C69"
+    ],
+    "result": "A coordinate shift error in the blood methylation clock CpG sites was identified and corrected, where coordinates were accidentally shifted to the next CpG site in the supplementary table but not in the analyses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C69 describes a correction to previously published data (Petkovich et al. 2017). The corrected coordinates are provided in Supplementary file 3. This is an important technical correction for reproducibility.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "The introduction establishes that DNAm clocks are the most precise age biomarkers to date, with the human multi-tissue clock achieving 3.6 years median error (~3% of lifespan), outperforming earlier biomarkers based on telomeres, mutations, gene expression, or T-cell rearrangements. DNAm clocks have been developed for multiple species and can detect age acceleration from genetic and lifestyle factors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C22 provide background context supported by appropriate citations to foundational literature. The comparative assessment of DNAm clocks versus earlier biomarkers and the examples of applications are well-documented in the cited literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125"
+    ],
+    "result": "DNA methylation is an evolutionarily recent gene expression control mechanism, with CpG islands absent in chordates, present in small fractions of TSS in fish/amphibians, and associated with most TSS in warm-blooded vertebrates. Methylation patterns show strong tissue specificity and change differently with age across tissues.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C120-C125 provide evolutionary and biological context supported by citations to Sharif et al. 2010, Lokk et al. 2014, and Maegawa et al. 2010. This background appropriately contextualizes why multi-tissue clocks are challenging to construct.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133"
+    ],
+    "result": "DNAm clocks must be species-specific and cannot be directly transferred. Mouse clock development faces challenges including limited sample availability (order of magnitude less than human), strong batch effects from limited source studies, and varied experimental protocols. Despite limitations, current clocks can examine lifespan-extending interventions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C128-C133 discuss practical limitations and future directions. The comparison to human clock development (8000 samples from 82 datasets) contextualizes the challenges. The assessment is balanced, acknowledging limitations while noting current utility.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C138"
+    ],
+    "result": "Methylation clocks are based on chronological age, but their ability to detect intervention effects supports that they may measure biological age. Clocks with better baseline performance (like blood clock with lowest MAE on wild-type samples) are better at detecting intervention effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C134-C138 discuss the relationship between chronological age training and biological age measurement. The logical inference that intervention detection supports biological age measurement is reasonable, and the observation about baseline performance predicting intervention sensitivity is supported by Figure 3E and Figure 5 data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C139",
+      "C140",
+      "C141",
+      "C142"
+    ],
+    "result": "The four clocks differ in their mathematical models: WLMT and liver use linear models with untransformed chronological age, while YOMT and blood use log-transformed age with an additional transformation step, making the latter more tuned toward young ages.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C139-C142 describe important methodological differences between clocks that affect their age-range performance. These differences are documented in Supplementary file 3 and explain some of the comparative performance patterns observed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C163",
+      "C164",
+      "C165",
+      "C166",
+      "C167",
+      "C168",
+      "C169",
+      "C170",
+      "C171"
+    ],
+    "result": "The study used C57BL/6N mice with tissues homogenized to minimize heterogeneity. DNA was extracted using Qiagen DNeasy kit, and RRBS libraries were prepared from 100ng DNA with 3-6 samples per library, distributed to avoid batch effects. Libraries were sequenced on Illumina HiSeq2500 PE150 with 44M average reads and 20% genomic DNA spike-in. Data deposited as GSE121141.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C163-C171 provide detailed methods for sample preparation and sequencing. The experimental design appropriately addresses potential confounders (tissue heterogeneity, batch effects) and provides data availability information for reproducibility.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C172",
+      "C173",
+      "C174",
+      "C175",
+      "C176",
+      "C177",
+      "C178",
+      "C179",
+      "C180",
+      "C181"
+    ],
+    "result": "All samples were processed with a unified pipeline using Trim Galore v0.4.1 for trimming and Bismark v0.15.0 for mapping to mm10, with mitochondrial and sex chromosome sites removed. A soft coverage cutoff (<5x in >90% samples) was applied. ElasticNet regression with tissue-stratified 10-fold cross-validation was performed using scikit-learn. Code is available on GitHub under GPL.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C172-C181 provide comprehensive computational methods with specific software versions and parameters. The unified processing pipeline addresses batch effect concerns, and code availability supports reproducibility. The stratification strategy is appropriate for the multi-tissue design.",
+    "result_type": "MINOR"
+  }
+]

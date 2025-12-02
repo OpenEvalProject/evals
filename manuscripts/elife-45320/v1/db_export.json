@@ -1,0 +1,2194 @@
+{
+  "submission": {
+    "id": "f88295d6-5d2b-487c-b31c-4fb4666d7b06",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T10:34:39.695049Z",
+    "updated_at": "2025-12-02T10:34:39.695049Z"
+  },
+  "content": [
+    {
+      "id": "690dd656-10ca-44c9-8fbf-a3dc7baafa57",
+      "submission_id": "f88295d6-5d2b-487c-b31c-4fb4666d7b06",
+      "content_type": "manuscript",
+      "content_text": "# The interplay at the replisome mitigates the impact of oxidative damage on the genetic integrity of hyperthermophilic Archaea\n\n## Authors\n\n- Tom Killelea<sup>1</sup> ([ORCID: 0000-0003-0974-8034](https://orcid.org/0000-0003-0974-8034))\n- Adeline Palud<sup>1</sup>\n- Farida Akcha<sup>2</sup>\n- M\u00e9lanie Lemor<sup>1</sup>\n- Stephane L'haridon<sup>1</sup>\n- Anne Godfroy<sup>1</sup>\n- Ghislaine Henneke<sup>1</sup> ([ORCID: 0000-0002-2985-5526](https://orcid.org/0000-0002-2985-5526)) \u2020\n\n### Affiliations\n\n1. Univ Brest, Ifremer, CNRS, Laboratoire de Microbiologie des Environnements Extr\u00eames Plouzan\u00e9 France\n2. Laboratoire d'Ecotoxicologie Ifremer Nantes France\n\n\u2020 Corresponding author\n\n## Abstract\n\n8-oxodeoxyguanosine (8-oxodG), a major oxidised base modification, has been investigated to study its impact on DNA replication in hyperthermophilic Archaea. Here we show that 8-oxodG is formed in the genome of growing cells, with elevated levels following exposure to oxidative stress. Functional characterisation of cell-free extracts and the DNA polymerisation enzymes, PolB, PolD, and the p41/p46 complex, alone or in the presence of accessory factors (PCNA and RPA) indicates that translesion synthesis occurs under replicative conditions. One of the major polymerisation effects was stalling, but each of the individual proteins could insert and extend past 8-oxodG with differing efficiencies. The introduction of RPA and PCNA influenced PolB and PolD in similar ways, yet provided a cumulative enhancement to the polymerisation performance of p41/p46. Overall, 8-oxodG translesion synthesis was seen to be potentially mutagenic leading to errors that are reminiscent of dA:8-oxodG base pairing.\n\n## Introduction\n\nOxidative stress, arising as a result of a disturbance between the production of reactive oxygen and nitrogen species (ROS and RNS), and antioxidant defences, is associated with damage to a wide range of molecular species including lipids, proteins, and nucleic acids (McCord, 2000; Imlay, 2003; Apel and Hirt, 2004). 8-oxodeoxyguanosine (8-oxodG) is one of the major oxidised bases in DNA or the nucleotide pool (Kamiya, 2003). Base damage is caused by highly reactive free radicals (Kasai and Nishimura, 1984; Burrows and Muller, 1998; Neeley and Essigmann, 2006; Cadet et al., 2008) generated exogenously upon exposure to ionising radiation, environmental factors (e.g., transition metals, chemicals, free radicals, etc), or endogenously from metabolic processes in different cellular compartments (e.g., peroxisomes, mitochondria, chloroplasts, etc)\u00a0(Krumova and Cosa, 2016).\n\nTo protect against 8-oxodG accumulation and potential mutagenesis, cells evolved enzymatic repair mechanisms that ensure both the removal of the oxidised deoxyribonucleoside (8-oxodG) from genomic DNA and the degradation of the oxidised DNA precursor (8-oxodGTP), thereby preventing its incorporation by DNA polymerases (DNA pols) (for review, see David et al., 2007; Kamiya, 2010). Evolutionarily conserved from Bacteria to eukaryotes, the repair of 8-oxodG in DNA utilises the base excision repair (BER) pathway, ensuring the removal of dC:8-oxodG and dA:8-oxodG mispairs respectively by OGG1/MutM (Fpg) and MUTYH/MutY BER glycosylases in eukaryotic/E. coli cells. While demonstrated only in eukaryotes, other defence mechanisms such as the mismatch repair (MMR), nucleotide excision repair (NER) and transcription coupled-NER (TC-NER) may function as effective substitutes for 8-oxodG removal (Tuo et al., 2002; Russo et al., 2004; Macpherson et al., 2005).\n\nAlthough most 8-oxodG damage is repaired by these preventive systems (for review see van Loon et al., 2010), 8-oxodG that escapes repair is likely to be encountered by DNA pols during either replicative or repair DNA synthesis. The extent to which 8-oxodG is bypassed depends on the identity of the prokaryotic and eukaryotic DNA pols. The nucleotides dAMP and dCMP are incorporated opposite template 8-oxodG to varying efficiencies, potentially causing dG\u2192dT transversion mutations during subsequent rounds of DNA replication (H\u00fcbscher and Maga, 2011; Berquist and Wilson, 2012). The differences in selectivity for nucleotide insertion are dictated by the intrinsic features of DNA pols (active site steric constraints, specific interactions with the backbone of the template 8-oxodG, etc), the sequence context in the genome (Zahn et al., 2011) and the modulating role of accessory factors (Maga et al., 2007; Maga et al., 2008; Locatelli et al., 2010). The premutagenicity of 8-oxodG in DNA is mainly due to its Hoogsteen base pairing in the syn conformation with dA (Chemical structure 1) and the ability of DNA pols to extend the resulting mismatch (Shibutani et al., 1991). Mimicking the geometry of a correct base pair, the dA:8-oxodG anti:syn mispair thus escapes the proofreading 3\u2019\u22125\u2019 exonuclease activity in the replicative polymerase (Brieba et al., 2004; Hsu et al., 2004).\n\n![Chemical structure 1.](https://cdn.elifesciences.org/articles/45320/elife-45320-fig7-v1.jpg)\n\nWhile the oxidation of the deoxyguanosine and its impact on the genome stability of aerobic organisms has been extensively documented in Bacteria and eukaryotes, there are limited reports about its occurrence and effect on archaeal cells. Archaea, the third domain of life, are represented by aerobic and anaerobic microorganisms that all are equipped with ROS removal systems, indicating their appearance early in the evolution of life (Wiedenheft et al., 2005; Halliwell, 2006; Ramsay et al., 2006). Thriving in hostile habitats (such as hydrothermal vents, cold seeps, springs and salt lakes) under harsh environmental conditions (such as elevated temperature, high pressure, pH shifts, heavy metals, ionising radiations, etc) it is theorised that Archaea face large-scale DNA damage, thereby challenging replication accuracy. Examined in few aerobic euryarchaeal and crenarchaeal strains (two extreme halophiles Haloferax Volcanii and Halobacterium salinarum sp. NRC-1, and the thermoacidophile Sulfolobus acidocaldarius), the mutation frequencies were found to be comparable to those of mesophilic microbial genomes (Grogan et al., 2001; Mackwan et al., 2007; Busch and DiRuggiero, 2010). Low rates of genomic mutation, such as those observed, suggest that these Archaea evolved molecular mechanisms to ensure their genome integrity. Conversely, the thermoacidophile Sulfolobus solfataricus exhibits an elevated rate of spontaneous mutations (one order of magnitude higher) which is mediated by transposition of insertion elements (Martusewitsch et al., 2000).\n\nThe hyperthermophilic anaerobic Euryarchaea, Pyrococcus abyssi, has been isolated from hydrothermal vents characterised by elevated temperatures, pH-shifts, radiation and differing metal concentrations (Erauso et al., 1993). It exhibits extreme resistance to ionising radiation (Jolivet et al., 2003) and can withstand a moderate level of genomic abasic sites damage (25 abasic sites per 100000 bp)\u00a0(Palud et al., 2008). Used as model system to understand the molecular basis of DNA replication (Myllykallio et al., 2000; Matsunaga et al., 2003), P. abyssi encodes two replicative DNA polymerases, a B-family and a D-family, which have both been functionally and structurally characterized alone or in the presence of replication factors (Henneke et al., 2005; Rouillon et al., 2007; Castrec et al., 2009; Gouge et al., 2012; Henneke, 2012; Masuda et al., 2015; Sauguet et al., 2016; Lemor et al., 2018; Raia et al., 2019). Both PolD and PolB contain exonuclease domains and display high nucleotide selectivity (Palud et al., 2008), with PolB described as one of the most accurate and processive enzymes (Dietrich et al., 2002). These features make them ideally suited for accurate DNA synthesis in DNA replication and repair. Completing the repertoire of DNA polymerisation enzymes is the DNA polymerase/primase complex (p41/p46). Devoid of any proofreading 3\u2019\u22125\u2019 exonuclease activity, it has been identified as an RNA priming enzyme at the replication fork, and a potential DNA repair enzyme capable of synthesising short-patches of DNA (Le Breton et al., 2007; Jozwiakowski et al., 2015; Lemor et al., 2018).\n\nPrevious studies showing the strong resistance of P. abyssi to gamma irradiation (Jolivet et al., 2003) which exerts molecular oxidative stress in anoxic conditions makes this strain an ideal model to analyse the response of oxidative attacks from another oxidising agent, in this case, oxygen. In this study, we determine the steady-state level of 8-oxodG in the genome of normal growing cells and after exposure to oxygen. We further analyse the consequence that this damage has on the damage-bypass properties of cell-free extracts, and the individual DNA replication proteins, PolB, PolD and the p41/p46 complex alone, or in the presence of accessory factors (Proliferating Cell Nuclear Antigen and Replication Protein A for PCNA and RPA respectively). Finally, we measure the intrinsic 3\u2019\u22125\u2019 exonuclease activity of PolD and PolB alone or with accessory proteins of 8-oxodG mispairs. The potential mutagenicity of 8-oxodG in DNA and more generally genomic maintenance in Archaea are thus discussed.\n\n## Results\n\n### Rate of 8-oxodG in the genome of P. abyssi\n\nBefore analysing the in vitro properties of the DNA pols in the presence of 8-oxodG, we investigated whether this DNA lesion is present in the genome of P. abyssi, and how the levels compare to a mesophilic bacterial control, E. coli. The steady-state level of 8-oxodG for both organisms was calculated during the exponential and stationary phases of growth (Table 1). In the exponential phase, 63.2 8-oxodG/106 dG was calculated for the P. abyssi genome, with the value moderately increasing to 115.1 8-oxodG/106 dG at the stationary phase. Comparatively, 8-oxodG was not detectable in the genome of E. coli in both phases of growth.\n\n**Table 1.**\n Rate of endogenous\u00a0genomic 8-oxodG/106 dG in P. abyssi and E. coli genomes at different growth phases.Steady-state level of 8-oxodG per 106 dG was calculated during the exponential and stationary\u00a0growth phases. The number of 8-oxodG per 106 dG represents the average of triplicate experiments from two biological samples with the standard deviation (\u00b1) shown. ND means No Detectable (ND is assigned to values below the HPLC-EC-UV detection limit of 0.01 pmol of 8-oxodG). Raw data are presented in Table 1\u2014Source data 1.Table 1\u2014source data 1.Quantification of the steady-state level of 8-oxoguanosine in the genome of E.coli and P.abyssi.\n\n\n<table>\n  <thead>\n    <tr>\n      <th></th>\n      <th>Growth phase</th>\n      <th>8-oxodG/106 dG</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td rowspan=\"2\">E. coli</td>\n      <td>Exponential</td>\n      <td>ND</td>\n    </tr>\n    <tr>\n      <td>Stationary</td>\n      <td>ND</td>\n    </tr>\n    <tr>\n      <td rowspan=\"2\">P. abyssi</td>\n      <td>Exponential</td>\n      <td>63.2\u00a0\u00b1\u00a04.6</td>\n    </tr>\n    <tr>\n      <td>Stationary</td>\n      <td>115.1\u00a0\u00b1\u00a05.8</td>\n    </tr>\n  </tbody>\n</table>\n\nColonising hydrothermal vents P. abyssi encounters environmental fluctuations and has to deal with numerous genotoxic events (Huber et al., 1990; Summit and Baross, 1998). Here, proliferating P. abyssi were aerated to induce oxidative stress. Oxygen sparging of exponentially growing culture for 5 min gave rise to increased levels of genomic 8-oxodG (Figure 1). The level (174.9 8-oxodG/106 dG at time T1) was approximately 3-fold higher than observed before air exposure (60.1 8-oxodG/106 dG at time T0). After 5 min (time T1), approximately 12% of the cells were viable as observed by a lower cell density (7.5 \u00d7 106 cells/mL compared with 9.3 \u00d7 107 cells/mL at time T0). After 40 min (time T2) few oxygen-resistant cells were detectable (4.3 \u00d7 104 cells/mL), which unfortunately did not allow the quantification of 8-oxodG because of insignificant amount of genomic DNA. After 140 min (time T3), the number of cells increased to 9.3 \u00d7 104 cells/mL. Concomitantly with active cell proliferation, a complete recovery of the basal level of 8-oxodG was obtained (65.1 8-oxodG/106 dG at time T3). After 320 min the basal level of 8-oxodG remained constant according to the mean\u00a0\u00b1\u00a0standard deviation of 8-oxodG/106 dG measured at T0 and in Table 1. Taken together, these data provide the evidence for the first time that the hyperthermophile anaerobe P. abyssi possesses the necessary molecular mechanisms to overcome the presence of genomic 8-oxodG. Moreover, P. abyssi can withstand oxidative stress by counteracting and rapidly returning to the basal level of 8-oxodG in DNA.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/45320/elife-45320-fig1-v1.jpg)\n\n**Figure 1.:** Oxidative stress is applied to P. abyssi growing cells in a batch mode culture during 5 min. Steady-state level of 8-oxodG per 106 dG and viability are estimated at different times. T0, control before oxidative stress. T1, after the 5 min oxidative stress. T2, 40 min after the 5 min oxidative stress. T3, 140 min after the 5 min oxidative stress. T4, 320 min after the 5 min oxidative stress. Steady-state level of 8-oxodG is calculated from 10 \u00b5g of genomic DNA by HPLC-UV-EC as described in the methods. Errors bars indicated analytical duplicates. To enumerate viable cells, most-probable-number (MPN) assays were performed as previously published (Blodgett, 2006)\u00a0(Oblinger and Koburger, 1975) Survival (cells/ml) is based on a three-tube MNP dilution assay. Upper and lower error bars are shown. Gray and blue shaded indicates the presence of dissolved oxygen in the medium culture. White background corresponds to strict anaerobia. Sparging with oxygen or nitrogen is shown with an arrow. Raw data for each graph are provided in Figure 1\u2014source data 1.\n\n### Replication bypass of template strand 8-oxodG by P. abyssi cell extracts\n\nPrevious studies undertaken in E. coli have determined that DNA damage bypass in the form of trans-lesion synthesis (TLS) can be observed using cellular extracts (Wang et al., 1997). In this work, DNA synthesis capable of bypassing DNA lesions was measured in vitro using P. abyssi cell-extracts (PabCE) from exponentially growing cells (Figure 2A). Using a DNA substrate with a primer-template conformation (p/t-1), it was observed that PabCE is capable of extending primers when presented with dG control in the template strand, with products ranging from 18 to 87nt in length (3% of primers being extended to full length (87nt)). However, when encountering both an abasic site (AP) and 8-oxodG in template strand DNA, a total arresting of DNA polymerisation one base upstream of the damage base (32nt) is observed. Rather than being an indication of TLS failure by the replication machinery, lack of primer\u00a0extension was due to highly specific nuclease activity, resulting in cleavage of the phosphodiester bond of the damaged nucleotide before it was encountered by the polymerisation enzyme (Figure 2\u2014figure supplement 1). Altering the DNA substrate to incorporate the 8-oxodG within a region of double stranded DNA (p/t-2) enabled low, yet visible levels of TLS by PabCE, with 1% of primer DNA being fully extended in oxidative damage containing substrates, as opposed to 2% for the dG containing substrate (Figure 2B).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/45320/elife-45320-fig2-v1.jpg)\n\n**Figure 2.:** Primer-template extension carried out for 60 min on p/t-1 containing either dG/AP/8-oxodG (A) or p/t-2 containing either dG/AP/8-oxodG (B). In both instances \u2013ve one indicates sample lacking P. abyssi cell extract and \u2013ve two indicates sample containing cell extracts but lacking MgCl2 and dNTPs. An arrow is used to indicate the position of full length extension products (87nt in length), with * used to highlight the approximate location of the damaged base. Shown above each gel is a representative cartoon indicating the structure of primer-templates and the relative position (+33) of the dG/AP/8-oxodG within both DNA primer-template (highlighted in red).\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/45320/elife-45320-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) Diagrammatic representation of the Cy5 and FAM dual labelled primer-template substrate. (B) Primer extension carried out for 60 min on p/t-6 containing either dG, dU, AP, 8-oxodG with the gel imaged at 633 nm to observe the Cy5 labelled primer. (C) Gel imaged at 532 nm to observe the effects of PabCE on the FAM labelled template strand. Unlabelled ssDNA, complementary to the FAM labelled template, was added to ensure the Cy5 primer DNA product was prevented from re-annealing and visualised as ssDNA as described in the methods. Unfortunately this had the consequence of stabilising any full length FAM labelled template as dsDNA even under denaturing conditions as shown by the presence of the 34 bp dsDNA control. Only FAM labelled DNA that was cut and\u00a0<10 nt in length migrated as single stranded DNA. For B and C the length of the ladder oligonucleotides in lane M is indicated to the left and right respectively.\n\n### Replication bypass of template strand 8-oxodG by replicative DNA proteins of P. abyssi\n\nNext, we evaluated the ability of the three replicative enzymes from P. abyssi to bypass template strand 8-oxodG under running start conditions, as previously published (Palud et al., 2008). For each of the enzymes it was observed that encountering template strand 8-oxodG noticeably stalls primer\u00a0extension compared to the dG control (Figure 3A), with each enzyme possessing a unique stall profile that is particularly apparent at the 10 min time point (Figure 3B). PolB arrests replication one nucleotide upstream of the 8-oxodG (32nt \u2013 9%) or after having based paired a nucleotide opposite 8-oxodG (33nt \u2013 9%). PolD stalls following base pairing opposite the lesion (33nt \u2013 14%, Figure 3B\u2013C) while also exhibiting downstream stalling after encountering 8-oxodG (7% at both 35 or 36nt position); of the two enzymes, the cumulative effect of 8-oxodG across all stall products appears to impact on PolD the most (Figure 3C). Despite the total impact of 8-oxodG induced blockage for p41/p46 at 10 min being of a similar level to that observed for PolD (Figure 3C), 8-oxodG itself has no observable impact on upstream primer\u00a0extension or during incorporation opposite it. The enzyme partially arrests one nucleotide upstream of the 8-oxodG (32nt), but this is comparable to that observed for the dG control template, with more pronounced stalling seen at one (34nt) or two (35nt) nucleotides downstream of the damaged nucleotide (Figure 3B\u2013C). Overall, these results demonstrate that in\u00a0vitro both PolB and PolD exhibit prominent replication stalling upstream of template strand 8-oxodG, and while incorporating a nucleotide opposite the lesion, before eventually extending a primer beyond the lesion. In contrast to this, p41/p46 only stalls primer extension after bypassing the lesion.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/45320/elife-45320-fig3-v1.jpg)\n\n**Figure 3.:** (A) Primer-template extension reactions performed on p/t-1 containing either dG or 8-oxodG by PolB, PolD and the p41/p46 complex. The triangle above each gel image indicates time course of primer extension (time points taken at 0, 0.5, 1, 5, 10, 30 and 60 min), the arrows to the right of each gel indicates the location of 8-oxodG induced stalling. \u2013ve samples were incubated for 60 min lacking enzymes. (B) Diagrammatic representation of a section of p/t-1 template strand DNA indicating the positions at which the three replicative proteins stall replication at the 10 min time point, 8-oxodG is indicated by O. (C) Graphical representation of replication stalling profiles induced by 8-oxodG for each of the replicative proteins, shown for each individual stall event and as total 8-oxodG induced arrest at the 10 min time point (raw data for each graph are provided in Figure 3\u2014source data 1).*-Data for p41/p46 8-oxodG 32nt stall are not visible due to mirroring that of the dG control. (D) Effects of RPA and PCNA on both primer extension and TLS activity of PolB, PolD and the p41/p46 complex during a 15 min reaction with p/t-1 containing either dG or 8-oxodG.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/45320/elife-45320-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) Replicative enzyme activity when polymerisation is initiated from a pre-stalled start using p/t-3 containing either dG of 8-oxodG. The triangle above each gel image indicates time course of primer extension (time points taken at 0, 0.5, 1, 5, 10, 30 and 60 min). Primer+n compared to dG was calculated as formation of primer+n in 8-oxodG containing templates as a relative percentage of primer+n formation in dG containing templates. (B) Influence of RPA and PCNA on replicative enzyme activity when polymerisation is initiated from a pre-stalled start. Primer extension and translesion synthesis activity of PolB, PolD and the p41/p46 complex performed during a 15 min reaction.\n\nWe also examined the three DNA\u00a0polymerisation enzymes under standing start conditions, with dG or 8-oxodG located in the\u00a0+1 position from the primer-template junction (Figure 3\u2014figure supplement 1A). The observed data correlate with that produced during running start bypass experiments in Figure 3; the p41/p46 complex, being least affected by 8-oxodG, with the percentage of primer+n decreasing by only 20% after 0.5 min when 8-oxodG is present, compared to dG. Primer extension by the two conventional replicative DNA pols is again affected by the presence of template strand 8-oxodG, with the levels of primer+n at 0.5 min decreasing by 41% and 70% for PolB and PolD respectively, in the presence of 8-oxodG compared to the dG control. Again, PolD and p41/p46 display stalling products one or two nucleotides downstream of the 8-oxodG lesion.\n\n### Role of replication fork accessory proteins in replication bypass of template strand 8-oxodG\n\nDNA polymerases are key components of the multi-protein replisome complex, working in conjunction with an array of partner proteins to engage in highly accurate DNA synthesis. As such, the functional interaction that occurs between the three replicative DNA enzymes (PolB, PolD and p41/p46) and two major replication fork proteins, RPA and PCNA was investigated (Figure 3D). Previous studies in Euryarchaea have observed a physical interaction between RPA and PolB (Komori and Ishino, 2001), PolD (Komori and Ishino, 2001; Pluchon et al., 2013), and the p41/p46 complex (Komori and Ishino, 2001; Pluchon et al., 2013). For PCNA both physical and functional interactions have previously been reported for PolB and PolD (Rouillon et al., 2007; Castrec et al., 2009). However, no interaction has been observed with the p41/p46 complex.\n\nHere we report that in the presence of RPA primer\u00a0extension by both PolB and PolD is initially inhibited, leading to an almost universal loss of full-length primer extension and shorter extension products over 15 min, with the same effect observed in the presence of 8-oxodG (Figure 3D). Under standing start conditions, with 8-oxodG placed at the\u00a0+1 position from the primer-template junction, the influence of RPA is more pronounced causing primer utilisation to decrease by over 50% for both PolB and PolD (Figure 3\u2014figure supplement 1B). Although RPA doesn\u2019t enhance primer utilisation by p41/p46, it does result in longer elongation products, partially mitigating the inhibition that the regulatory p46 subunit exhibits on extension activity (Le Breton et al., 2007). The presence of RPA largely alleviates any negative impact that 8-oxodG plays on stalling p41/p46 extension, with the previously observed downstream stalling removed in both running start and standing start extension reactions (Figure 3\u2014figure supplement 1B).\n\nPCNA also impacts on the primer extension activity all three polymerisation enzymes. Under running start conditions, PolD exhibits a reduction in primer+n formation in the presence of PCNA independently of 8-oxodG in the template strand (27% primer+n formation with PCNA compared to 68% without, for p/t-1 (dG) extension). However, this is offset by an increase in longer extension products (Figure 3D). On the other hand, primer utilisation by PolD does not seem impaired by PCNA in standing start experiments (Figure 3\u2014figure supplement 1B). These results are in agreement with our previous data, showing that dNTP incorporation is less efficient on templates annealed to shorter DNA primers and that PCNA stimulates full-length DNA synthesis rather than primer utilisation by PolD (Henneke et al., 2005). PolB and p41/p46 exhibit increased primer elongation when reactions are supplemented with PCNA, corresponding to the accumulation of 87nt (PolB) or\u00a0~82 nt (p41/p46) products in length (Figure 3D). In the context of 8-oxodG bypass, all three polymerisation enzymes benefit from the addition of PCNA, with the % of stalled extension product being reduced, most likely due to the enhanced stability and processivity that PCNA provides (Figure 3D). These functional interactions are similarly observed under standing start experiments (Figure 3\u2014figure supplement 1B).\n\nThe effect that both accessory proteins have on primer extension is noticeable (Figure 3\u2014figure supplement 1B). For PolB the combined presence of both PCNA and RPA, while reducing the processivity enhancements that PCNA alone brings to PolB function, actually exacerbate PolB stalling in the presence of 8-oxodG (Figure 3D). For PolD the overall impact of both RPA and PCNA together is negative. This is most apparent in PolD when polymerisation is reduced to unobservable levels at 15 min. For both replicative DNA pols it is possible that additional replisome components are required to successfully mediate interactions with the RPA. Again, in contrast to the results observed with the two replicative DNA Pols, PCNA and RPA enhance the primer extension activity of the p41/p46 complex and remove any 8-oxodG induced downstream stalling (Figure 3\u2014figure supplement 1B).\n\n### Nucleotide insertion and extension at 8-oxodG template site by DNA polymerisation\u00a0enzymes of P. abyssi\n\nAs 8-oxodG can be bypassed by each of the three enzymes, its mutagenic base-pairing potential was evaluated by single nucleotide incorporation experiments (Figure 4). In this context, it is observed that all three DNA polymerisation enzymes provide correct incorporation opposite the dG control. Conversely, when incorporating opposite 8-oxodG all three enzymes are potentially mutagenic with dAMP and dCMP preferentially inserted. PolB suffers from a marked decrease in incorporation levels opposite 8-oxodG, with 35% and 31% primer+n for dAMP and dCMP respectively, compared to 91% dCMP incorporation opposite dG. PolD also shows a decreased incorporation when encountering 8-oxodG, 41% and 45% primer+n for dAMP and dCMP respectively, compared to 60% dCMP incorporation opposite dG. However, for the p41/p46 complex the levels of incorporation are similar regardless of the presence of oxidative damage, with 64% and 72% primer+n for dAMP and dCMP respectively, compared to 79% dCMP incorporation opposite dG.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/45320/elife-45320-fig4-v1.jpg)\n\n**Figure 4.:** Single nucleotide incorporation reactions were performed for each of the three replicative enzymes to determine the accuracy of incorporation when incorporating a single nucleotide opposite either dG or 8-oxodG when located at the\u00a0+1 position from the primer-template junctions (p/t-3). All reactions were left for 5 min, with the \u2013ve control lacking replicative enzyme.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/45320/elife-45320-fig4-figsupp1-v1.jpg)\n\n**Figure 4\u2014figure supplement 1.:** Primer-template extension reactions performed on p/t-4 containing either dG or 8-oxodG by PolB, PolD and the p41/p46 complex. The triangle above each gel image indicates time course of primer extension (time points taken at 0, 0.5, 1, 5 and 10 min). In all instances, the \u2013ve samples were incubated for 60 min lacking enzymes.\n\nTo determine if the three polymerisation enzymes are efficient extenders of dA:8-oxodG or dC:8-oxodG paired termini, primer extension compared to correctly base paired dC:dG and the mismatched dT:dG. When engaging in primer-template extension with base paired dA:8-oxodG or dC:8-oxodG there is a noticeable difference between the enzymes containing the intrinsic 3\u2019\u22125\u2019 exonuclease activity and the p41/p46 complex (Figure 4\u2014figure supplement 1). For PolB primer+n formation occurs regardless of the presence of 8-oxodG, with the lowest activity observed in the presence of dC:8-oxodG (52% primer+n) compared to dA:8-oxodG (73% primer+n) and the dC:dG control (87% primer+n) at the 0.5 min time point. PolD appears less tolerant of 8-oxodG base pairs, with primer+n formation after 0.5 min of 27% and 12% with dA and dC paired opposite 8-oxodG, compared to the dC:dG control (49% primer+n). The p41/p46 complex proves more tolerant of the presence of 8-oxodG paired termini, with high levels of primer+n formation at 0.5 min of 69% (dA:8-oxodG) and 65% (dC:8-oxodG), compared to 83% primer+n for the dC:dG control. Unlike PolB and polD, the p41/p46 complex was unable to extend a dT:dG mismatch.\n\n### Effects of 8-oxodG-containing primer-template and oxidative base pairs on 3\u2019\u22125\u2019 exonuclease activity\n\nTo further elucidate the differing mechanisms by which PolB and PolD stall primer extension when encountering template strand 8-oxodG, the ability of the damaged nucleotide to stimulate exonuclease (exo) activity was evaluated (Figure 5). Regardless of the base contained in the\u00a0+1\u00a0nt position from the primer-template junction there is a marked difference in the exonuclease activity of the two DNA pols (Figure 5A). PolB exo activity is highly stimulated, with a partial decrease observed when 8-oxodG is present in the\u00a0+1 position from the primer-template junction (84% primer-n compared to 96% for dG after 5 min). However, for PolD there is only minor exonuclease activity, with no significant difference observed in the presence of a damaged nucleotide in the\u00a0+1 position (7% primer-n for 8-oxodG compared to 5% for dG after 5 min).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/45320/elife-45320-fig5-v1.jpg)\n\n**Figure 5.:** Exonuclease activity of PolB and PolD in the presence of dG and 8-oxoxdG when located in p/t-3,+1 nucleotides from the primer-template junction) (A) or when base paired with a complementary or non-complementary nucleotide in p/t-4, 0 nucleotide from the primer-template junction (B). In all instances, the triangle above the gel images denotes an exonuclease time-course with time points taken at 0, 0.5, 1 and 5 min. For all gels the \u2013ve samples were incubated for 5 min lacking replicative enzyme. (C) Influence of RPA and PCNA on the exonuclease activity of PolB and PolD when encountering dG and 8-oxodG base paired with a complementary or non-complementary nucleotide (p/t-4) during a 5 min reaction.\n\nTo examine the effect of exonuclease activity on base-paired 8-oxodG, the primer length was extended by one nucleotide with either dA or dC base paired with 8-oxodG (Figure 5B). Encountering the mutagenic Hoogsteen base paired dA:8-oxodG causes stimulation of the PolB exonuclease rate, 72% primer-n degraded compared with 55% and 43% for non-mutagenic Watson-Crick base paired dC:8-oxodG and dC:dG after 5 min, respectively. Accordingly, the primer containing the single dT:dG mistmatch confers the highest enhancement in the rate of 3\u2019\u20135\u2019 exonucleolysis (87% primer-n after 5 min). In contrast, low stimulation of the PolD exonuclease activity is observed in the presence of the Hoogsteen base paired dA:8-oxodG, 27% primer-n after 5 min compared to 31% primer-n for dC:8-oxodG and 26% dC:dG. On the other hand, the dT:dG mismatch significantly stimulated the rate of exo degradation by PolD (58% primer-n after 5 min). Taken together, the data indicate that the presence of Hoogsteen base pairing enhances the PolB exonucleolysis rate, while having a minor effect on PolD.\n\nNot often considered, here we sought to examine the putative functional roles of PCNA and RPA on the exonuclease activity. It appears that the presence of the accessory proteins impacts on exonucleolysis by PolB and PolD (Figure 5C). Mirroring the alterations seen in extension reactions, RPA acts as an inhibitor of the exonuclease activity for both PolB and PolD, independently of the nature of the 3\u2019-end primer termini (dA:8-oxodG, dC:8-oxodG, dC:dG and dT:dG). Indeed, a reduction in total primer utilisation results in longer degradation product. On the other hand, PCNA stimulates exonuclease activity of both PolB and PolD, with primer degradation accentuated, particularly for the dT:dG mismatch.\n\n## Discussion\n\nDNA replication is an inherently accurate process that relies on the successful interplay between replication and repair to maintain genome integrity in the face of numerous lesions, adducts and DNA roadblocks. In this study we have identified that growth conditions which mimic the natural habitat of deep sea hyperthermophilic anaerobic Euryarchaeota (Erauso et al., 1993; Godfroy et al., 2006) produce measurable levels of 8-oxodG in P. abyssi genomic DNA during both the exponential and stationary growth phases (Table 1), in line with previously published observations of alternative damage indicators (Palud et al., 2008). These results are also consistent with a recent study showing that the basal level of 8-oxodG in the genome of a closely related Pyrococcus species, Thermococcus gammatolerans, exceeds those usually measured in eukaryotic cells or Bacteria (Barbier et al., 2016). The level of 8-oxodG in the genome of P. abyssi is higher than that of T. gammatorelans, likely confirming that increased temperature of growth favours DNA oxidation (95\u00b0C compared with 85\u00b0C, respectively). Despite being highly sensitive to oxygen, a small fraction of P. abyssi cells survive stress and recover the steady-state level of 8-oxodG in 2.5 hr, consistent with survival rates observed following gamma-ray irradiation (Jolivet et al., 2003). The presence of basal levels of 8-oxodG in \u2018normal\u2019 growth conditions of hyperthermophilic anaerobic Euryarchaeota corroborates the existence of active DNA protection and repair mechanisms in proliferating cells of hyperthermophilic Archaea (Barbier et al., 2016).\n\nIn order to document any potential mechanism triggered in response to DNA oxidation in archaeal cells, primer extension past DNA lesions was measured in vitro using PabCE from proliferating P. abyssi. In this instance TLS was only observed with the lesion present in a dsDNA conformation. Moreover, the lack of polymerisation past template strand 8-oxodG when present in a single stranded region of DNA is the result of specific nuclease activity which might be attributed to the 8-oxoguanine DNA glycosylase encoding gene in P. abyssi. This suggests that DNA repair mechanisms, such as BER, might be preferentially solicited over TLS, thus minimising the potential mutagenicity of 8-oxodG. It should be noted that BER has been assumed as a fundamental process in the removal of 8-oxodG in the genome of Thermoccus gammatolerans (Barbier et al., 2016). Thus, a preference for non-TLS repair is consistent with adduct bypass observations in model organisms, with TLS representing 8% of bypass events of replication hindering adducts in Saccharomyces cerevisiae (Baynton et al., 1998), and 1% (non-SOS induced) or 13% (SOS induced) in E. coli (Koffel-Schwartz et al., 1996).\n\nFurther credence for notion that TLS plays a limited role in DNA replication and repair can be derived from the mutagenic potential of 8-oxodG. Although both\u00a0polymerases exhibit reduced nucleotide incorporation opposite 8-oxodG, PolB and PolD insert both dAMP and dCMP opposite the lesion (Figure 4). Similarly, p41/p46 inserts dAMP and dCMP opposite 8-oxodG but with the same efficiency as a canonical base control. Moreover, each of the three polymerisation enzymes extends dA:8-oxodG to a greater extent than dC:8-oxodG paired termini. This preferential extension may be due to the inability of the Pol active site to detect the mispair in the Pol active site since dA:8-oxodG Hoogsteen base pair mimics the geometry of a correct base pair (Chemical structure 1). The dC:8-oxodG paired termini appears strongly inhibitory to extension by PolD likely due to steric constraints incompatible with the size and flexibility of the polymerase active site cavity. Recent structural determination of PolD indicates that the Pol active site is not comparable to any known\u00a0DNA polymerases,\u00a0but rather shares\u00a0similarities\u00a0with RNA polymerases, despite DNA synthesising capabilities (Sauguet et al., 2016). One may expect that the Pol active site adopts specific unprecedented features when interacting with the primer-template and the incoming dNTP.\n\nPossible scenario for lowering the mutagenic potential of the resulting 8-oxodG mismatches may involve MMR or 3\u2019\u22125\u2019 exonuclease activity. Although recent work identified potential MMR proteins in Pyrococcus species (Ishino et al., 2016), here we focus on correction process by 3\u2019\u22125\u2019 exonuclease activity. Relevant here is the finding that 8-oxodG mispairs are corrected by the exonuclease activities of PolD and PolB. Contrary to studies showing that E. coli Pol I (Shibutani et al., 1991), T7 Pol (Brieba et al., 2004), RB69 Pol (Zhong et al., 2008) and Pol \u03b4 (McCulloch et al., 2009) do not efficiently correct dA:8-oxodG mispair, significant exonuclease activity is observed with dA:8-oxodG and dC: 8-oxodG mismatches by PolD and PolB. It is interesting to notice that PolD exonuclease primer degradation is less active than PolB in the conditions tested. The PolD Exo active site exhibits structural dynamics clearly different to those of PolB in the presence of mismatches. This hypothesis is corroborated by the unusual structural exonuclease domain of PolD which looks more similar to the Mre11 nuclease protein than the three characteristic sequence motifs termed Exo I, Exo II and Exo III (Blanco et al., 1991). P. abyssi HiFi (High Fidelity) enzymes may have evolved acute removal of mutagenic and non mutagenic primer termini due to the lack of appropriate extrinsic correction mechanisms. Not often considered, PCNA appears essential in exonuclease stimulation of mispairs by PolD and PolB, while RPA does not severely affect the activity.\n\nEach of the three known polymerisation enzymes from P. abyssi possesses a unique stalling profile when encountering template strand 8-oxodG in\u00a0vitro. Both PolB and PolD are observed to be sensitive to the presence of oxidative damage, stalling replication before eventually bypassing the lesion, whilst p41/p46 bypasses with high efficiency before stalling immediately downstream, consistent with previously published results (Jozwiakowski et al., 2015). However, the functional interactions observed between the polymerisation enzymes, RPA and PCNA enables further elucidation of the mechanism of TLS and the interplay that occurs in the archaeal replisome.\n\nRPA enhances primer extension by the P. abyssi p41/p46 complex, functioning in a similar manner to eukaryotic RPA, which stimulates Pol \u03b1 activity and processivity (Braun et al., 1997; Maga et al., 2008). The importance of RPA, particularly in the context of TLS, is highlighted by the manner in which it is able to alleviate downstream stalling of p41/p46. The presence of 8-oxodG in ssDNA and dsDNA results in alterations in the phospho-deoxyribose structure, causing variations to vertical base staking in the immediate vicinity of 8-oxodG (Malins et al., 2000). Such an effect is still present in dsDNA, but the presence of the complementary strand introduces a stiffening and stabilising effect, reducing the impact of 8-oxodG on DNA structure (Crenshaw et al., 2011). Similarly, RPA introduces rigidity to ssDNA (Chen et al., 2015) which in this instances negates the disruptive influence of 8-oxodG on ssDNA, reducing downstream stalling of the p41/p46 complex.\n\nIt is through observing the interactions between key components of the replisome and p41/p46 that we can clarify the nature of this enzyme as both a primase (Figure 6A) and a TLS polymerase that can bypass oxidative damage (Figure 6B). The p41/p46 complex is classified as an Archaeo-Eukaryotic Primase (AEP)(Guilliam et al., 2015a). The identification of a second human AEP (PrimPol) (Garc\u00eda-G\u00f3mez et al., 2013), has instigated a revival in AEP enzyme research, that has at times resulted in a blurring of the lines amongst AEPs, particularly when discussing the Archaeal AEPs (Guilliam et al., 2015b; Guilliam et al., 2017). In vitro, human PrimPol can facilitate replication fork progression through TLS and downstream priming (Garc\u00eda-G\u00f3mez et al., 2013). However, more recent studies evaluating the interplay with replisome partners highlight that RPA is able to both recruit (Guilliam et al., 2017) and regulate PrimPol activity, inhibiting replication on short primer-templates or when RPA is present in saturating conditions (Guilliam et al., 2015b; Guilliam et al., 2017; Mart\u00ednez-Jim\u00e9nez et al., 2017). This is in stark contrast to the data generated here, in which RPA enhances processivity of p41/p46, in a manner consistent with that observed for both Pol \u03b1 (Kenny et al., 1989; Braun et al., 1997), the Pol \u03b1-Primase complex (Dornreiter et al., 1992) and Pol \u03bb (Krasikova et al., 2008). In a further, more abrupt contrast, to date, PrimPol has no observable physical or functional interaction with PCNA (Guilliam et al., 2015b).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/45320/elife-45320-fig6-v1.jpg)\n\n**Figure 6.:** (A) Priming: p41/46 is recruited at the replication fork and engages in the synthesis of a short RNA primer in a manganese catalysed reaction on both the leading and lagging strand. On the leading strand switching to a catalytic magnesium ion occurs, resulting in incorporation of dNTPs and extension of the RNA primer by p41/p46 until the loading of PCNA and the recruitment of PolB displace it to initiate DNA synthesis. Synthesis of an RNA primer by p41/p46 leads to direct loading of PCNA and recruitment of PolD to initiate DNA synthesis on the lagging strand (Henneke et al., 2005; Le Breton et al., 2007). (B) TLS: DNA replication stalls upon the HiFi Pol active site encountering oxidative damage. Unable to bypass the damaged nucleobase, polymerase switching occurs, with p41/p46 recruited to the primer-template junction and retained by PCNA. RPA bound to the single stranded region of DNA stabilizes the phosphodiester backbone downstream of the damage, allowing p41/p46 to function as a TLS polymerase, replicating past the damaged nucleobase until it is eventually replaced with a processive HiFi DNA polymerase.\n\nIt is the interaction with PCNA that cements the duality of p41/p46 as a primase and TLS polymerase, enhancing the notion of divergent roles for the differing AEP clades. While still not fully understood, evidence from the eukaryotes suggests that replication factor C (RFC), the clamp loader, is instrumental in polymerase switching, displacing the low fidelity Pol \u03b1 complex following primer synthesis and initial elongation and recruiting the high fidelity Pol \u03b4 during PCNA loading (Waga and Stillman, 1994; Maga et al., 2000; Mossi et al., 2000). While the exact role of RFC in Archaea is still contentious, there is evidence to suggest that in the Crenarchaea S. solfataricus it functions in a similar manner to its eukaryotic counterpart (Wu et al., 2007). If p41/p46 does not interact with PCNA during replication initiation, then when does the interaction occur? Y-family DNA polymerases Pol \u03b7, Pol \u03b9 and Pol \u03ba, all TLS polymerases, have well-established physical and functional interactions with PCNA (Bienko et al., 2005; Masuda et al., 2015). Moreover, PCNA has been observed to stimulate polymerase activity and recruit the human TLS polymerase Pol \u03b9 to the replisome (Haracska et al., 2001), similar to the role observed in this paper.\n\nIn conclusion we have identified that as well as being a capable TLS polymerase that is stimulated by the stabilising presence of RPA, p41/p46 functionally interacts with the replisome \u2018scaffold\u2019 protein PCNA. Coupled with data highlighting that PolB and PolD stall upon encountering 8-oxodG in the presence of PCNA, this allows elucidation of the processes that occur when the replisome encounters a lesion such as 8-oxodG (Figure 6B). Replicative polymerases stall when encountering a lesion, possibly reversing replication with their exonuclease activity, this allows displacement of the polymerase and recruitment of the p41/p46 complex by the replisome \u2018scaffold\u2019 protein PCNA. Stabilised by RPA TLS occurs before p41/p46 is in turn displaced by one of the replicative DNA polymerases.\n\n## Materials and methods\n\n### Strains and cell culture techniques for 8-oxodG detection\n\nThe E. coli CIP 54.8 strain (Biological Resource Center of Institut Pasteur, https://research.pasteur.fr/fr/team/biological-resources-center/) was cultivated in 1 L of LB at 37\u00b0C with shaking. Cells have been collected in exponential and stationary growth phases by monitoring cell growth using cell counts. Cell suspensions were centrifuged for 30 min at 6000 g at 4\u00b0C and cell pellets were stored at \u201320\u00b0C.\n\nP. abyssi GE5 (Brittany Culture Collection, http://www.ifremer.fr/souchotheque) culture experiments were performed under anaerobic conditions using a nitrogen-sparged gas-lift bioreactor as described (Godfroy et al., 2006). Exponentially growing cultures were obtained at 95\u00b0C on a complex SME medium at pH 6.5 at a dilution rate of 0.2 h\u22121 (Godfroy et al., 2000). Stationary batch cultures were obtained by drawing off the culture from the bioreactor in order to obtain lower initial cell densities. Growth under batch conditions was followed by regular cell counting (every 15 min, three counts per samples) in order to collect stationary phase cells (Postec et al., 2005). Both exponentially and stationary phase cells were harvested on ice in bottles flushed with nitrogen before use. Cold cell suspensions were transferred in oxygen impermeable leak free centrifugal devices in anaerobic glove box. Centrifugation was carried out for 30 min at 8000 g at 4\u00b0C. After elimination of the supernatant in the anerobic glove box, cell pellets were stored at \u201320\u00b0C. Thus, strict anaerobia (collection, centrifugation and storage) was maintained for P. abyssi before DNA extraction.\n\nCell densities were determined by direct cell counting using a Thoma cell (0.02 mm depth) under a phase contrast Olympus model BH-2 microscope (Postec et al., 2005).\n\n### Genomic DNA extraction and digestion\n\nGenomic DNA from P. abyssi and E. coli were isolated using the chaotropic NaI method (Helbock et al., 1998; Akcha et al., 2000; Wessel et al., 2007). Cell pellets were suspended in 2 mL lysis buffer (100 mM Tris-HCl pH 8.0, 1.4 M NaCl, 1% (w/v) SDS, 1% (v/v) \u03b2-mercaptoethanol (pure liquid; 14.3 M), 0.125 mM deferoxamine mesylate and disrupted with a Potter-Elvehjem homogenizer. Following centrifugation (5000 g for 5 min at 4\u00b0C), cell pellets were recovered and suspended in 800 \u00b5L of lysis buffer containing 2.5% (w/v) CTAB (Hexadecyltrimethylammonium bromide). The samples were then incubated at 65\u00b0C for 60 min. Following addition of 800 \u00b5L of chloroform:isoamyl alcohol (24:1), the tubes were gently mixed and centrifuged at 12000 g for 20 min at 4\u00b0C. The upper aqueous phases (~800 \u00b5L) were recovered and RNA digestion was performed by incubation with 20 \u00b5g of RNase A for 30 min at 37\u00b0C. Following addition of 1.2 mL of sodium iodide solution (20 mM EDTA-Na2, 7.6 M NaI, 40 mM Tris\u2013HCl, 0.3 mM deferoxamine mesylate, pH 8.0), the tubes were centrifuged at 10000 g for 20 min at 4\u00b0C. The pellets were then recovered and suspended in 1 mL of 40% (v/v) isopropanol. Following centrifugation (10000 g for 20 min at 4\u00b0C), pellets were washed with 2 mL of 70% (v/v) ethanol, and centrifuged at 10000 g for 20 min at 4\u00b0C. DNA pellets were left to dry for 1 hr at room temperature, and finally suspended in 50 \u00b5L of buffered (pH 8.0) deferoxamine mesylate (10 mM Tris-HCl pH 8.0, 1 mM EDTA-Na2, 0.1 mM deferoxamine mesylate).\n\nGenomic DNA (15 \u00b5g) from P. abyssi and E. coli was digested by incubation with five units of nuclease P1 (Sigma; one unit is defined as the amount of enzyme required to liberate 1.0 \u00b5mol of acid soluble nucleotides from RNA per min at 37\u00b0C, pH 5.3) for 2 hr at 37\u00b0C. Four units of alkaline phosphatase (Sigma; one unit is defined as the amount of enzyme required to hydrolyzes 1 mol of 4-nitrophenyl phosphate per min at 37\u00b0C, pH 9.8) were then added for an additional 1 hr incubation at 37\u00b0C. Released 2\u2019-deoxyribonucleosides were centrifuged (7000 g for 5 min at 4\u00b0C) and the supernatant was recovered for injection.\n\n### Quantification of 8-oxodG (HPLC/UV/EC)\n\nThe 8-oxodG level was determined by HPLC (Agilent 1200 series) coupled to electrochemical (Coulochem III, ESA) and UV (Agilent 1200 series) detection. The limit of detection is about 0.01 pmol of 8-oxodG (one 8-oxodG lesion per 106 dG). Separation of 8-oxodG and 2\u2019-deoxyribosides was carried out by using an Ultrasphere pre-column (5C18, Interchim) and an Uptisphere column (5ODB, Interchim). Elution was performed in isocratic mode using a mobile phase composed of 10% (v/v) methanol and 100 mM sodium acetate pH 5.2. The guard and the measure cells were respectively set to an oxidation potential of 460, 150 and 380 mV. The quantification of 8-oxodG was performed in accordance with a calibration curve previously obtained with known picomole amounts of authentic 8-oxodG. The standard expression of the number of 8-oxodG residues per 106 dG, deoxyguanosine were quantified by UV detection (254 nm) of the output of the HPLC column. For the conditions described, the retention times of 8-oxodG and dG were 11.5 and 8.5 min respectively at 35\u00b0C. For each condition (stationary and exponential growth phases), the average of three measurements (n\u00a0=\u00a03) from two biological replicates was used for statistical analyses. To enumerate viable cells, most-probable-number (MPN) assays were performed as previously published (Blodgett, 2006).\n\n### P. abyssi protein extracts\n\nP. abyssi was grown in continuous culture as described in the Strains and cell culture techniques for 8-oxodG detection section of the methods. Pelleted cells were resuspended at a 1:1 (w:v) ratio in a buffer containing 350 mM MOPS pH 7.5, 6.4 mM EDTA, 5 mM DTT, 25% glycerol, 480 mM NaCl, 1 \u00b5g/ml Pepstatin A and complete EDTA-free protease inhibitor cocktail tablet (Roche). Cells were lysed by sonication using a Vibracell ultrasonic processor (BioBlock Scientific, 3 \u00d7 0.5 min followed by 2 \u00d7 1 min, at 375 W, 40% amplitude on ice). Lysed cells were centrifuged at 10000 g for 60 min at 4\u00b0C to remove excess cell debris. The concentration of remaining protein in the cell extract was estimated using a Bradford Assay.\n\n### Protein over-expression and purification\n\nThe proteins utilised in this study, with the exception of the p41/p46 complex, were overexpressed and purified as previously described in the following publications, PolB (Gouge et al., 2012), PolD (Henneke et al., 2005), PCNA (Henneke et al., 2002) and RPA (Pluchon et al., 2013).\n\nFor the expression of the p41/p46 complex, Rosetta 2(DE3) pLysS competent cells (Novagen) were co-transformed with the vectors pQE-80L and pET26b(+) containing p41 (Pab2236) and p46 (Pab2235) respectively. The transformed strain was grown at 37\u00b0C in LB medium supplemented with 100 \u03bcg/ml Ampicillin and 34 \u03bcg/ml Kanamycin. Protein over-expression was induced through the addition of 1 mM IPTG and left to incubate at 30\u00b0C for 4 hr before the cells were pelleted by centrifugation. Cells were resuspended in buffer A (50 mM NaP pH 6, 200 mM NaCl, 1 mM DTT, 20 mM imidazole) supplemented with complete EDTA free protease inhibitor cocktail (Roche), before being lysed by sonication. Lysed cells were treated with DNase I (Sigma-Aldrich) and incubated at 37\u00b0C for 30 min followed by heat treatment for 20 min at 75\u00b0C. Denatured E. coli host proteins were removed by centrifugation (20000 g for 60 min at 4\u00b0C).\n\nClarified lysate was loaded onto a 1 ml HisTrap HP column (GE Healthcare). Following washing, protein was eluted directly onto a 1 ml HiTrap Heparin column (GE Healthcare) using a 5 ml gradient of 0.02\u20131 M imidazole in 50 mM NaP pH 6, 200 mM NaCl, 1 mM DTT. Elution from the Heparin column was developed using a 5 ml gradient of 0.2\u20131 M NaCl in 50 mM NaP pH 6, 1 mM DTT. Primase containing fractions were pooled and loaded onto a Superdex S200 10/300 GL column (GE Healthcare) before being eluted from the column with a buffer of 50 mM MES pH 6.0, 600 mM NaCl, 1 mM DTT. Glycerol was added to a final concentration of 40% before the sample was stored at \u221220\u00b0C.\n\n### Primer-template extension assays\n\nAll oligonucleotides used in this study (Supplementary file 1) were purchased from Eurogentec S.A. Primer-template substrates were prepared by mixing the relevant oligonucleotides at a 1:1 ratio in a buffer containing 10 mM Tris pH 8.0, 50 mM NaCl, 1 mM EDTA. Primer-template annealing was carried out by heating at 95\u00b0C for 10 min before being left to slowly cool to room temperature.\n\nBase reaction mix was prepared with 50 nM primer-template (indicated in the relevant figure), 50 mM Tris pH 8.0, 1 mM DTT, 50 mM NaCl, 5 mM MgCl2, 200 \u00b5M dNTPs. Reactions were supplemented with PCNA (100 nM) and RPA (500 nM) as indicated in the legend of each figure. The reactions mix was left to pre-incubate at 55\u00b0C for 10 min, before the reaction were initiated by the addition of the one of the polymerisation enzymes at the following final concentrations, PolB (2.5 nM), PolD (250 nM) and p41/p46 (250 nM). Reactions were left to incubate at 55\u00b0C for 5 min in the instance of single incorporation reactions, or for the time points indicated in each figure legend in the instance of time course reactions, and stopped by placing on ice and the addition of loading buffer (79% formamide, 20% glycerol, 20 mM EDTA, 1 \u00b5M reverse complement DNA).\n\nFor reactions using P. abyssi cell extract, 20 \u00b5g of whole cell extract was added to initiate the polymerisation reaction. The reactions were left to incubate for 60 min before being stopped by the addition of stop buffer (0.5 mg/ml Proteinase K, 5 mM EDTA, 0.5% SDS). The DNA was purified through ethanol precipitation followed by suspension in loading buffer.\n\nIn all instances, quenched reactions were denatured at 95\u00b0C for 10 min before being loaded onto an 18% denaturing acrylamide gel which was subsequently imaged using a Typhoon Scanner and analysed using ImageQuant TL 8.1 (GE healthcare) with the quantification methods as follows: Primer\u00b1n (%), densitometry measurement of primer\u00b1n as a percentage of total lane densitometry; Stall (%), densitometry measurement of identified stall band as a percentage of primer+n densitometry; 87nt (%), densitometry measurement of 87nt band as a percentage of primer+n densitometry. In all cases the background value was subtracted.\n\n### Exonuclease degradation assays\n\nAssays were carried out and analysed in an identical manner to that described for primer-template extension assays, but dNTPs were omitted from the reactions. Quantification of exonuclease activity (Primer-n(%)) was the densitometry measurement of all primer-n bands as a percentage of total lane densitometry following subtraction of the background value.\n",
+      "created_at": "2025-12-02T10:34:39.695049Z"
+    },
+    {
+      "id": "10a87941-e0af-4894-a4b9-7848d57b849d",
+      "submission_id": "f88295d6-5d2b-487c-b31c-4fb4666d7b06",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Michael R Botchan, University of California, Berkeley United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.45320.019](https://doi.org/10.7554/eLife.45320.019)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Interplay at the replisome mitigates the impact of oxidative damage on genetic integrity of hyperthermophilic Archaea\" for consideration by eLife. Your article has been reviewed by three peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Gisela Storz as the Senior Editor. The reviewers have opted to remain anonymous.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission. A summary below of the work is followed by major revisions and problems that the reviewers found important for final adjudication.\n\nKillelea and colleagues investigate the ability of DNA polymerases Pol B, Pol D and the polymerase-primase p41/p46 from Pyrococcus abyssi, to bypass template 8-oxodG. The authors first conduct measurements to assess the levels (steady state and upon induction by oxidative stress) of 8-oxodG in the Archaea genomic DNA. Next the authors attempt to measure bypass in whole cell-free extracts using synthetic primer-templates. But these measurements are complicated, not surprisingly, by what appears to be repair activity in the extract. Therefore, the authors used primer extension and degradation assays with purified polymerases. The authors conclude that even in the presence of accessory proteins PCNA and RPA, Pols B and D are relatively inefficient in 8-oxodG bypass. When the polymerases pause at the lesion their exonuclease activities take over and start degrading the primer strand. The authors argue that the idling at the lesion allows displacement of the replicative pol and recruitment of p41/p46, which bypasses the lesion and in turn is replaced by the replicative polymerase.\n\nThe subject of this work is important, as so far, much less is known about TLS and repair of 8-oxodG lesions in Archaea relative to the knowledge of eukaryotes and bacteria. Therefore, this work will be of interest to all studying DNA replication and repair. However, some of the experiments are insufficient to support the models put forward. There are also other issues that must be addressed.\n\nMajor comments:\n\n1) \"Coupled with enhanced exonuclease activity for both Pol B and Pol D when in presence of PCNA, this raises the notion of the stalling seen when encountering 8-oxodG manifesting as prolonged idling [...]\" As shown in Figure 5C, exonucleolytic degradation of the primer is stimulated by PCNA. However, these reactions are not in the presence of dNTPs, and therefore no extension or polymerase idling is possible. On the other hand, when synthesis is permitted by addition of dNTPs there is no evidence of primer degradation (Figure 3D and Figure 4\u2014figure supplement 1B). Hence, these results do not support the authors' model.\n\n2) There is no description of the 3\u00b4>5\u00b4 exonuclease assay in the Materials and methods section.\n\n3) \"we have identified that [\u2026] p41/p46 physically and functionally interacts with the replisome \"scaffold\" protein PCNA.\" This statement should be modified; the authors did not conduct experiments that show physical interaction between p41/p46 and PCNA.\n\n4) \"Finally, we measure the intrinsic proofreading activities\" The authors measured 3\u00b4>5\u00b4 exonuclease activity and not proofreading activity, which is error correction.\n\n5) Figure 3\u2014figure supplement 1B, bottom of figure: \"87 nt product (%)\" According to Supplementary file 1, the template strand in p/t-6 substrate is a 34-mer, not a 87-mer.\n\nFigure 3\u2014figure supplement 1C, if this is a denaturing gel, as indicated in the Materials and methods, why does the band labeled dsDNA (34bp) migrate differently than the 34 nt marker?\n\nFigure 2, it would be helpful if the position of the damaged base was indicated in the gels.\n\n6) \"the occurrence of TLS by PabCE can be observed with 1% of primer DNA being fully extended in oxidative damage containing substrates (Figure 2B).\" What is the percentage of full-length product with the dG-containing p/t-2 substrate? This is important to assess to what extent synthesis on the p/t-2 template is hampered by the necessity to strand displace.\n\n7) Figure 2. According to the figure legend, the survival curve is based on values from three replicate culture samples. Standard deviations should be included so that the reproducibility of the data can be evaluated. In the graph, the percentage of surviving cells appears the same or lower at T3 than T2. The authors should use a broken axis.\n\n8) In the Results section, the statement \"The cumulative effect that both accessory proteins have on primer extension is noticeable\u201d is misleading. The results for PolB indicate that on its own, PCNA stimulates synthesis both on the damage-containing and the undamaged templates. PCNA counteracts the inhibitory effect RPA on both damaged and undamaged templates. (Figure 3D and Figure 4\u2014figure supplement 1B).\n\nThe results of the two experiments with PolD are not consistent. In Figure 4\u2014figure supplement 1B, the amount of primer extensions on the dG-containing template is the same with and without PCNA, but results in Figure 3D indicate that primer extension on the dG template is over 50% lower in presence of PCNA relative to reactions without PCNA. Due to this inconsistency, these results are difficult to evaluate, and the conclusions do not seem valid.\n\n9) \"Indeed, RPA not only reduces the amount of primer-n, but also the length of the final degradation product.\" Reduced amount of primer degradation results in longer, not shorter, degradation products. Please correct.\n\n10) \u201cIn-vivo validation of TLS in the Archaea was provided through the use of primer extension by cell-free extract\" Cell-free extracts are not the same as in vivo conditions.\n\n11) A general point to be addressed perhaps in the Discussion: The manuscript starts by making the case that this organism endures the generation of a much higher level of 8-oxoG in the genome than does the mesophile E. coli. However, they should be cautious in the in vivo 8-oxoG measurements, which have a notorious history of over-estimation. The in vitro studies give some basic information, but more refined analysis will have to sort that out under conditions where the enzyme and substrate ratios are more realistic.\n\n12) Introduction, second paragraph: 8-oxodG is not a base, it is a deoxyribonucleoside.\n\nIntroduction, second and third paragraphs: Remove \"Ref.\"\n\n13) In the experiments for which oxygen was not added and was assumed not to be present, were all materials purged with nitrogen, helium, etc. so that there was no oxygen present and were all experiments done in a glove box which was similarly purged? If so, this should be noted; if not, they should have been done that way.\n\n14) Subsection \u201cGenomic DNA isolation and detection of 8-oxodG\u201d, first paragraph and elsewhere: What was the concentration of \u03b2-mercaptoethanol?\n\n15) Subsection \u201cGenomic DNA isolation and detection of 8-oxodG\u201d, first paragraph: This material is not clear-enough to reproduce the procedures. It should be rewritten.\n\n16) Introduction, third paragraph: Define the units.\n\n17) Legend to Table 1: there are no error bars shown.\n\n18) Figure 6: The symbols ought to be specifically defined either on the figure or in its legend. Otherwise is quite difficult to follow.\n\n19) Supplementary file 1: The conformations are not shown and even base pairing is not shown.\n\n20) Introduction, second paragraph: This is confusing, as MutT/MTH1 does not act on 8-oxoG in the template \u2013 maybe the authors mean 8-oxoG that is incorporated from the triphosphate and then remains in the (new) template for the next round of replication.\n\n21) Table 1: What is the level of detection for assigning \"ND\" for the E. coli DNA samples? Meanwhile, the numbers reported for P. abyssi have an indefensible level of precision. I doubt that the measurements are good to one part in 10,000 (0.01%) as the numbers imply. Finally, since P. abyssi was grown anaerobically, it cannot be ruled out that much of the observed 8-oxoG levels are artifactual, with the lesion generated during DNA extraction, which evidently was not done under anaerobic conditions (subsection \u201cStrains and cell culture techniques for 8-oxodG detection\u201d).\n\n22) Figure 2 is strange: it appears that the cells were exposed to oxygen for only the 5 minutes of treatment (but this is not clear from the figure legend or the Materials and methods section), so why, after reaching near zero at T2, do the 8-oxoG levels rise again at T3 and T4?\n\n23) Figure 3\u2014figure supplement 1: Probably the U residue is rapidly converted to an AP site, even (or especially) in single-stranded DNA.\n\n24) Subsection \u201cBypass of 8-oxoguanine by P. abyssi cell extracts\u201d: Most DNA repair enzymes act much more rapidly on lesions in double-stranded DNA than in a single-stranded context (the typical uracil glycosylase is an exception). So the explanation that the lesion is \"protected\" in dsDNA doesn't make sense.\n\n25) Figure 3D/Figure 4\u2014figure supplement 1B and associated text, and other figures and text: PCNA does not stably associate with linear DNA \u2013 it tends to slide off an end. The results would be more solid with a circular DNA substrate or one blocked at the ends; the PCNA-loading enzyme would then also be needed.\n\n26) Figure 5: It is hard to make any conclusions about PolD, since its 3' exonuclease appears inherently very weak, despite its being present at (apparently) 100 times the PolB level and in a 5-fold excess over the amount of substrate present (assuming that the same conditions as for primer extension were used for the exonuclease assays; the Materials and methods do not seem to specify the conditions).\n\n27) Figure 5 quantification: to determine the percentage of primer shortening shown, presumably products shorter than n-1 are included; that's the only way to account for some of the values shown. However, it is very important to correct for the extra background that comes with every band; the Materials and methods do not specify that, and some of the results look as though they might be inflated by such an artifact.\n\n28) Discussion: In view of the foregoing concerns, some places in this section might be toned down where activities are stated to be \"proficient\" or \"efficient\".\n",
+      "created_at": "2025-12-02T10:34:39.695049Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T10:34:39.695049Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T10:34:39.695049Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "340b52d2-b4b1-46c0-93b5-58b550b99a87",
+      "content_id": "690dd656-10ca-44c9-8fbf-a3dc7baafa57",
+      "claim_id": "C1",
+      "claim": "8-oxodeoxyguanosine (8-oxodG) is one of the major oxidised bases in DNA or the nucleotide pool.",
+      "claim_type": "EXPLICIT",
+      "source": "8-oxodeoxyguanosine (8-oxodG) is one of the major oxidised bases in DNA or the nucleotide pool (Kamiya, 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Kamiya, 2003",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:34:39.695049Z"
+    },
+    {
+      "id": "db926841-305c-4ce9-afa3-2d90d385f3a6",
+      "content_id": "690dd656-10ca-44c9-8fbf-a3dc7baafa57",
+      "claim_id": "C2",
+      "claim": "Base damage is caused by highly reactive free radicals.",
+      "claim_type": "EXPLICIT",
+      "source": "Base damage is caused by highly reactive free radicals (Kasai and Nishimura, 1984; Burrows and Muller, 1998; Neeley and Essigmann, 2006; Cadet et al., 2008)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by multiple citations",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:34:39.695049Z"
+    },
+    {
+      "id": "962bf075-f868-4d5c-a73a-725982e83408",
+      "content_id": "690dd656-10ca-44c9-8fbf-a3dc7baafa57",
+      "claim_id": "C3",
+      "claim": "The repair of 8-oxodG in DNA utilises the base excision repair (BER) pathway, which is evolutionarily conserved from Bacteria to eukaryotes.",
+      "claim_type": "EXPLICIT",
+      "source": "Evolutionarily conserved from Bacteria to eukaryotes, the repair of 8-oxodG in DNA utilises the base excision repair (BER) pathway, ensuring the removal of dC:8-oxodG and dA:8-oxodG mispairs respectively by OGG1/MutM (Fpg) and MUTYH/MutY BER glycosylases in eukaryotic/E. coli cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Draws from established scientific consensus about BER pathway conservation",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:34:39.695049Z"
+    },
+    {
+      "id": "d466c5cd-4db8-41ef-8f4f-fb388174dce2",
+      "content_id": "690dd656-10ca-44c9-8fbf-a3dc7baafa57",
+      "claim_id": "C4",
+      "claim": "The nucleotides dAMP and dCMP are incorporated opposite template 8-oxodG to varying efficiencies, potentially causing dG\u2192dT transversion mutations during subsequent rounds of DNA replication.",
+      "claim_type": "EXPLICIT",
+      "source": "The nucleotides dAMP and dCMP are incorporated opposite template 8-oxodG to varying efficiencies, potentially causing dG\u2192dT transversion mutations during subsequent rounds of DNA replication (H\u00fcbscher and Maga, 2011; Berquist and Wilson, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to H\u00fcbscher and Maga, 2011 and Berquist and Wilson, 2012",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:34:39.695049Z"
+    },
+    {
+      "id": "2789ffe2-ff2f-40ae-8596-895bd55bc538",
+      "content_id": "690dd656-10ca-44c9-8fbf-a3dc7baafa57",
+      "claim_id": "C5",
+      "claim": "The premutagenicity of 8-oxodG in DNA is mainly due to its Hoogsteen base pairing in the syn conformation with dA.",
+      "claim_type": "EXPLICIT",
+      "source": "The premutagenicity of 8-oxodG in DNA is mainly due to its Hoogsteen base pairing in the syn conformation with dA (Chemical structure 1) and the ability of DNA pols to extend the resulting mismatch (Shibutani et al., 1991).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by citation to Shibutani et al., 1991 and Chemical structure 1 showing the base pairing",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:34:39.695049Z"
+    },
+    {
+      "id": "5de2545e-903f-4ad7-b8f9-4c6737964851",
+      "content_id": "690dd656-10ca-44c9-8fbf-a3dc7baafa57",
+      "claim_id": "C6",
+      "claim": "Pyrococcus abyssi has been isolated from hydrothermal vents characterised by elevated temperatures, pH-shifts, radiation and differing metal concentrations.",
+      "claim_type": "EXPLICIT",
+      "source": "The hyperthermophilic anaerobic Euryarchaea, Pyrococcus abyssi, has been isolated from hydrothermal vents characterised by elevated temperatures, pH-shifts, radiation and differing metal concentrations (Erauso et al., 1993).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Erauso et al., 1993",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:34:39.695049Z"
+    },
+    {
+      "id": "8ccc99d0-9b89-42e9-ba21-18458dbda92a",
+      "content_id": "690dd656-10ca-44c9-8fbf-a3dc7baafa57",
+      "claim_id": "C7",
+      "claim": "P. abyssi exhibits extreme resistance to ionising radiation.",
+      "claim_type": "EXPLICIT",
+      "source": "It exhibits extreme resistance to ionising radiation (Jolivet et al., 2003)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Jolivet et al., 2003",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:34:39.695049Z"
+    },
+    {
+      "id": "3f3ad32b-a719-4f45-8243-d0d0a081e228",
+      "content_id": "690dd656-10ca-44c9-8fbf-a3dc7baafa57",
+      "claim_id": "C8",
+      "claim": "P. abyssi can withstand a moderate level of genomic abasic sites damage (25 abasic sites per 100000 bp).",
+      "claim_type": "EXPLICIT",
+      "source": "can withstand a moderate level of genomic abasic sites damage (25 abasic sites per 100000 bp) (Palud et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Palud et al., 2008",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:34:39.695049Z"
+    },
+    {
+      "id": "8daae817-01d0-4816-9607-f26d3e7a0dbd",
+      "content_id": "690dd656-10ca-44c9-8fbf-a3dc7baafa57",
+      "claim_id": "C9",
+      "claim": "P. abyssi encodes two replicative DNA polymerases, a B-family and a D-family.",
+      "claim_type": "EXPLICIT",
+      "source": "P. abyssi encodes two replicative DNA polymerases, a B-family and a D-family, which have both been functionally and structurally characterized alone or in the presence of replication factors (Henneke et al., 2005; Rouillon et al., 2007; Castrec et al., 2009; Gouge et al., 2012; Henneke, 2012; Masuda et al., 2015; Sauguet et al., 2016; Lemor et al., 2018; Raia et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by multiple citations documenting characterization of these polymerases",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:34:39.695049Z"
+    },
+    {
+      "id": "1a5a5fe1-435a-4217-9193-3f7196a1d3c6",
+      "content_id": "690dd656-10ca-44c9-8fbf-a3dc7baafa57",
+      "claim_id": "C10",
+      "claim": "Both PolD and PolB contain exonuclease domains and display high nucleotide selectivity.",
+      "claim_type": "EXPLICIT",
+      "source": "Both PolD and PolB contain exonuclease domains and display high nucleotide selectivity (Palud et al., 2008)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Palud et al., 2008",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:34:39.695049Z"
+    },
+    {
+      "id": "2f72558f-8c96-45da-bf28-db79b5a17954",
+      "content_id": "690dd656-10ca-44c9-8fbf-a3dc7baafa57",
+      "claim_id": "C11",
+      "claim": "PolB is described as one of the most accurate and processive enzymes.",
+      "claim_type": "EXPLICIT",
+      "source": "with PolB described as one of the most accurate and processive enzymes (Dietrich et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Dietrich et al., 2002",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:34:39.695049Z"
+    },
+    {
+      "id": "93aefff7-f266-4350-a261-729a8ae848f7",
+      "content_id": "690dd656-10ca-44c9-8fbf-a3dc7baafa57",
+      "claim_id": "C12",
+      "claim": "The DNA polymerase/primase complex (p41/p46) is devoid of any proofreading 3'\u22125' exonuclease activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Devoid of any proofreading 3'\u22125' exonuclease activity, it has been identified as an RNA priming enzyme at the replication fork, and a potential DNA repair enzyme capable of synthesising short-patches of DNA (Le Breton et al., 2007; Jozwiakowski et al., 2015; Lemor et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Le Breton et al., 2007; Jozwiakowski et al., 2015; Lemor et al., 2018",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:34:39.695049Z"
+    },
+    {
+      "id": "f50a26f7-f3f2-4816-880f-e54e9fba19f2",
+      "content_id": "690dd656-10ca-44c9-8fbf-a3dc7baafa57",
+      "claim_id": "C13",
+      "claim": "In the exponential phase, 63.2 8-oxodG/10^6 dG was calculated for the P. abyssi genome.",
+      "claim_type": "EXPLICIT",
+      "source": "In the exponential phase, 63.2 8-oxodG/106 dG was calculated for the P. abyssi genome, with the value moderately increasing to 115.1 8-oxodG/106 dG at the stationary phase.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental measurements presented in Table 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:34:39.695049Z"
+    },
+    {
+      "id": "1d0cf772-bd13-40c2-8a7a-932232b44961",
+      "content_id": "690dd656-10ca-44c9-8fbf-a3dc7baafa57",
+      "claim_id": "C14",
+      "claim": "The steady-state level of 8-oxodG in P. abyssi genome moderately increases to 115.1 8-oxodG/10^6 dG at the stationary phase.",
+      "claim_type": "EXPLICIT",
+      "source": "In the exponential phase, 63.2 8-oxodG/106 dG was calculated for the P. abyssi genome, with the value moderately increasing to 115.1 8-oxodG/106 dG at the stationary phase.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental measurements presented in Table 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:34:39.695049Z"
+    },
+    {
+      "id": "54bbd81f-296c-4978-aa70-0565108ee069",
+      "content_id": "690dd656-10ca-44c9-8fbf-a3dc7baafa57",
+      "claim_id": "C15",
+      "claim": "8-oxodG was not detectable in the genome of E. coli in both exponential and stationary phases of growth.",
+      "claim_type": "EXPLICIT",
+      "source": "Comparatively, 8-oxodG was not detectable in the genome of E. coli in both phases of growth.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental measurements presented in Table 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:34:39.695049Z"
+    },
+    {
+      "id": "4f9f03f2-9fea-4926-b791-f28ad3a4c437",
+      "content_id": "690dd656-10ca-44c9-8fbf-a3dc7baafa57",
+      "claim_id": "C16",
+      "claim": "Oxygen sparging of exponentially growing P. abyssi culture for 5 min gave rise to increased levels of genomic 8-oxodG.",
+      "claim_type": "EXPLICIT",
+      "source": "Oxygen sparging of exponentially growing culture for 5 min gave rise to increased levels of genomic 8-oxodG (Figure 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:34:39.695049Z"
+    },
+    {
+      "id": "d18297b3-92a8-47ed-8fbc-c89de8005538",
+      "content_id": "690dd656-10ca-44c9-8fbf-a3dc7baafa57",
+      "claim_id": "C17",
+      "claim": "The level of 8-oxodG after oxygen exposure (174.9 8-oxodG/10^6 dG at time T1) was approximately 3-fold higher than observed before air exposure (60.1 8-oxodG/10^6 dG at time T0).",
+      "claim_type": "EXPLICIT",
+      "source": "The level (174.9 8-oxodG/106 dG at time T1) was approximately 3-fold higher than observed before air exposure (60.1 8-oxodG/106 dG at time T0).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental measurements shown in Figure 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:34:39.695049Z"
+    },
+    {
+      "id": "9e2a2007-5bcc-4964-8da3-dbf04c5f0255",
+      "content_id": "690dd656-10ca-44c9-8fbf-a3dc7baafa57",
+      "claim_id": "C18",
+      "claim": "After 5 min of oxygen exposure, approximately 12% of P. abyssi cells were viable.",
+      "claim_type": "EXPLICIT",
+      "source": "After 5 min (time T1), approximately 12% of the cells were viable as observed by a lower cell density (7.5 \u00d7 106 cells/mL compared with 9.3 \u00d7 107 cells/mL at time T0).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by cell viability measurements shown in Figure 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:34:39.695049Z"
+    },
+    {
+      "id": "df20460d-1088-4b29-a219-041f1b178b44",
+      "content_id": "690dd656-10ca-44c9-8fbf-a3dc7baafa57",
+      "claim_id": "C19",
+      "claim": "After 140 min following oxygen exposure (time T3), P. abyssi achieved complete recovery of the basal level of 8-oxodG (65.1 8-oxodG/10^6 dG).",
+      "claim_type": "EXPLICIT",
+      "source": "After 140 min (time T3), the number of cells increased to 9.3 \u00d7 104 cells/mL. Concomitantly with active cell proliferation, a complete recovery of the basal level of 8-oxodG was obtained (65.1 8-oxodG/106 dG at time T3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental measurements shown in Figure 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:34:39.695049Z"
+    },
+    {
+      "id": "08b3c66c-199c-4dea-a938-ae7303272094",
+      "content_id": "690dd656-10ca-44c9-8fbf-a3dc7baafa57",
+      "claim_id": "C20",
+      "claim": "P. abyssi possesses the necessary molecular mechanisms to overcome the presence of genomic 8-oxodG.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, these data provide the evidence for the first time that the hyperthermophile anaerobe P. abyssi possesses the necessary molecular mechanisms to overcome the presence of genomic 8-oxodG.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the experimental data showing recovery of basal 8-oxodG levels after oxidative stress",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:34:39.695049Z"
+    },
+    {
+      "id": "821bd633-8ec2-497a-9a10-de9bf9874b72",
+      "content_id": "690dd656-10ca-44c9-8fbf-a3dc7baafa57",
+      "claim_id": "C21",
+      "claim": "P. abyssi can withstand oxidative stress by counteracting and rapidly returning to the basal level of 8-oxodG in DNA.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, P. abyssi can withstand oxidative stress by counteracting and rapidly returning to the basal level of 8-oxodG in DNA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data showing recovery of basal 8-oxodG levels within 140 minutes",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:34:39.695049Z"
+    },
+    {
+      "id": "6091c4b7-6d70-4810-805f-1d74d12d995b",
+      "content_id": "690dd656-10ca-44c9-8fbf-a3dc7baafa57",
+      "claim_id": "C22",
+      "claim": "PabCE is capable of extending primers when presented with dG control in the template strand, with products ranging from 18 to 87nt in length.",
+      "claim_type": "EXPLICIT",
+      "source": "Using a DNA substrate with a primer-template conformation (p/t-1), it was observed that PabCE is capable of extending primers when presented with dG control in the template strand, with products ranging from 18 to 87nt in length (3% of primers being extended to full length (87nt)).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 2A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:34:39.695049Z"
+    },
+    {
+      "id": "a4f0d6a3-e68a-4ea1-bf9a-d4c7d097120d",
+      "content_id": "690dd656-10ca-44c9-8fbf-a3dc7baafa57",
+      "claim_id": "C23",
+      "claim": "When PabCE encounters both an abasic site (AP) and 8-oxodG in template strand DNA, a total arresting of DNA polymerisation one base upstream of the damage base (32nt) is observed.",
+      "claim_type": "EXPLICIT",
+      "source": "However, when encountering both an abasic site (AP) and 8-oxodG in template strand DNA, a total arresting of DNA polymerisation one base upstream of the damage base (32nt) is observed.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 2A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:34:39.695049Z"
+    },
+    {
+      "id": "6218b11c-e9e0-457c-ad6c-aef5fced6abf",
+      "content_id": "690dd656-10ca-44c9-8fbf-a3dc7baafa57",
+      "claim_id": "C24",
+      "claim": "Lack of primer extension by PabCE at damaged sites was due to highly specific nuclease activity, resulting in cleavage of the phosphodiester bond of the damaged nucleotide before it was encountered by the polymerisation enzyme.",
+      "claim_type": "EXPLICIT",
+      "source": "Rather than being an indication of TLS failure by the replication machinery, lack of primer extension was due to highly specific nuclease activity, resulting in cleavage of the phosphodiester bond of the damaged nucleotide before it was encountered by the polymerisation enzyme (Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 2\u2014figure supplement 1",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:34:39.695049Z"
+    },
+    {
+      "id": "2839d719-947f-42be-9640-be9953f2e274",
+      "content_id": "690dd656-10ca-44c9-8fbf-a3dc7baafa57",
+      "claim_id": "C25",
+      "claim": "Low, yet visible levels of TLS by PabCE were observed when 8-oxodG was incorporated within a region of double stranded DNA (p/t-2), with 1% of primer DNA being fully extended in oxidative damage containing substrates.",
+      "claim_type": "EXPLICIT",
+      "source": "Altering the DNA substrate to incorporate the 8-oxodG within a region of double stranded DNA (p/t-2) enabled low, yet visible levels of TLS by PabCE, with 1% of primer DNA being fully extended in oxidative damage containing substrates, as opposed to 2% for the dG containing substrate (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 2B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:34:39.695049Z"
+    },
+    {
+      "id": "d943a68f-65ef-410f-9125-1d947e52f0b7",
+      "content_id": "690dd656-10ca-44c9-8fbf-a3dc7baafa57",
+      "claim_id": "C26",
+      "claim": "Encountering template strand 8-oxodG noticeably stalls primer extension by each of the three replicative enzymes (PolB, PolD, p41/p46) compared to the dG control.",
+      "claim_type": "EXPLICIT",
+      "source": "For each of the enzymes it was observed that encountering template strand 8-oxodG noticeably stalls primer extension compared to the dG control (Figure 3A)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 3A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:34:39.695049Z"
+    },
+    {
+      "id": "c1d7a432-8c56-48f9-b991-75ca7886a2ef",
+      "content_id": "690dd656-10ca-44c9-8fbf-a3dc7baafa57",
+      "claim_id": "C27",
+      "claim": "Each of the three replicative enzymes (PolB, PolD, p41/p46) possesses a unique stall profile when encountering 8-oxodG.",
+      "claim_type": "EXPLICIT",
+      "source": "with each enzyme possessing a unique stall profile that is particularly apparent at the 10 min time point (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 3B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:34:39.695049Z"
+    },
+    {
+      "id": "db83b74a-9658-4a36-a0cb-70b9f5f60a74",
+      "content_id": "690dd656-10ca-44c9-8fbf-a3dc7baafa57",
+      "claim_id": "C28",
+      "claim": "PolB arrests replication one nucleotide upstream of the 8-oxodG (32nt \u2013 9%) or after having based paired a nucleotide opposite 8-oxodG (33nt \u2013 9%).",
+      "claim_type": "EXPLICIT",
+      "source": "PolB arrests replication one nucleotide upstream of the 8-oxodG (32nt \u2013 9%) or after having based paired a nucleotide opposite 8-oxodG (33nt \u2013 9%).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 3B-C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:34:39.695049Z"
+    },
+    {
+      "id": "c83c4358-02e6-4afc-9dcb-a74c86e2b8c2",
+      "content_id": "690dd656-10ca-44c9-8fbf-a3dc7baafa57",
+      "claim_id": "C29",
+      "claim": "PolD stalls following base pairing opposite the 8-oxodG lesion (33nt \u2013 14%) while also exhibiting downstream stalling after encountering 8-oxodG (7% at both 35 or 36nt position).",
+      "claim_type": "EXPLICIT",
+      "source": "PolD stalls following base pairing opposite the lesion (33nt \u2013 14%, Figure 3B\u2013C) while also exhibiting downstream stalling after encountering 8-oxodG (7% at both 35 or 36nt position)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 3B-C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:34:39.695049Z"
+    },
+    {
+      "id": "1a4ce5fa-c3d9-440b-b96f-a0afa75eb04c",
+      "content_id": "690dd656-10ca-44c9-8fbf-a3dc7baafa57",
+      "claim_id": "C30",
+      "claim": "8-oxodG itself has no observable impact on upstream primer extension or during incorporation opposite it by p41/p46.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite the total impact of 8-oxodG induced blockage for p41/p46 at 10 min being of a similar level to that observed for PolD (Figure 3C), 8-oxodG itself has no observable impact on upstream primer extension or during incorporation opposite it.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 3C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:34:39.695049Z"
+    },
+    {
+      "id": "eb772b76-f72a-4c9b-8973-faec428fe79c",
+      "content_id": "690dd656-10ca-44c9-8fbf-a3dc7baafa57",
+      "claim_id": "C31",
+      "claim": "p41/p46 exhibits more pronounced stalling at one (34nt) or two (35nt) nucleotides downstream of the damaged nucleotide.",
+      "claim_type": "EXPLICIT",
+      "source": "The enzyme partially arrests one nucleotide upstream of the 8-oxodG (32nt), but this is comparable to that observed for the dG control template, with more pronounced stalling seen at one (34nt) or two (35nt) nucleotides downstream of the damaged nucleotide (Figure 3B\u2013C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 3B-C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:34:39.695049Z"
+    },
+    {
+      "id": "8b7eebb4-48e4-48ac-ae1f-3139ec72c45a",
+      "content_id": "690dd656-10ca-44c9-8fbf-a3dc7baafa57",
+      "claim_id": "C32",
+      "claim": "In the presence of RPA, primer extension by both PolB and PolD is initially inhibited, leading to an almost universal loss of full-length primer extension and shorter extension products over 15 min.",
+      "claim_type": "EXPLICIT",
+      "source": "Here we report that in the presence of RPA primer extension by both PolB and PolD is initially inhibited, leading to an almost universal loss of full-length primer extension and shorter extension products over 15 min, with the same effect observed in the presence of 8-oxodG (Figure 3D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 3D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:34:39.695049Z"
+    },
+    {
+      "id": "fa28dea4-e155-4469-8dc3-ec93cea2e5e3",
+      "content_id": "690dd656-10ca-44c9-8fbf-a3dc7baafa57",
+      "claim_id": "C33",
+      "claim": "Under standing start conditions with 8-oxodG at the +1 position, RPA causes primer utilisation to decrease by over 50% for both PolB and PolD.",
+      "claim_type": "EXPLICIT",
+      "source": "Under standing start conditions, with 8-oxodG placed at the +1 position from the primer-template junction, the influence of RPA is more pronounced causing primer utilisation to decrease by over 50% for both PolB and PolD (Figure 3\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 3\u2014figure supplement 1B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:34:39.695049Z"
+    },
+    {
+      "id": "fff31980-fabb-4c37-bc2a-568627b7c28e",
+      "content_id": "690dd656-10ca-44c9-8fbf-a3dc7baafa57",
+      "claim_id": "C34",
+      "claim": "Although RPA doesn't enhance primer utilisation by p41/p46, it does result in longer elongation products.",
+      "claim_type": "EXPLICIT",
+      "source": "Although RPA doesn't enhance primer utilisation by p41/p46, it does result in longer elongation products, partially mitigating the inhibition that the regulatory p46 subunit exhibits on extension activity (Le Breton et al., 2007).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 3D and citation to Le Breton et al., 2007",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:34:39.695049Z"
+    },
+    {
+      "id": "c0fcfed8-1d31-4f50-afde-fa148a055d81",
+      "content_id": "690dd656-10ca-44c9-8fbf-a3dc7baafa57",
+      "claim_id": "C35",
+      "claim": "The presence of RPA largely alleviates any negative impact that 8-oxodG plays on stalling p41/p46 extension.",
+      "claim_type": "EXPLICIT",
+      "source": "The presence of RPA largely alleviates any negative impact that 8-oxodG plays on stalling p41/p46 extension, with the previously observed downstream stalling removed in both running start and standing start extension reactions (Figure 3\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 3\u2014figure supplement 1B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:34:39.695049Z"
+    },
+    {
+      "id": "f0ec4f36-8870-4fa8-b2c2-a979c8651a5b",
+      "content_id": "690dd656-10ca-44c9-8fbf-a3dc7baafa57",
+      "claim_id": "C36",
+      "claim": "Under running start conditions, PolD exhibits a reduction in primer+n formation in the presence of PCNA independently of 8-oxodG in the template strand.",
+      "claim_type": "EXPLICIT",
+      "source": "Under running start conditions, PolD exhibits a reduction in primer+n formation in the presence of PCNA independently of 8-oxodG in the template strand (27% primer+n formation with PCNA compared to 68% without, for p/t-1 (dG) extension).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 3D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:34:39.695049Z"
+    },
+    {
+      "id": "b961bdd4-1480-422e-9172-0cdd2ef27b81",
+      "content_id": "690dd656-10ca-44c9-8fbf-a3dc7baafa57",
+      "claim_id": "C37",
+      "claim": "PCNA stimulates full-length DNA synthesis rather than primer utilisation by PolD.",
+      "claim_type": "EXPLICIT",
+      "source": "These results are in agreement with our previous data, showing that dNTP incorporation is less efficient on templates annealed to shorter DNA primers and that PCNA stimulates full-length DNA synthesis rather than primer utilisation by PolD (Henneke et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Henneke et al., 2005 and current experimental observations",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:34:39.695049Z"
+    },
+    {
+      "id": "e252820b-531f-44b2-9dc3-f89a717d73c0",
+      "content_id": "690dd656-10ca-44c9-8fbf-a3dc7baafa57",
+      "claim_id": "C38",
+      "claim": "PolB and p41/p46 exhibit increased primer elongation when reactions are supplemented with PCNA.",
+      "claim_type": "EXPLICIT",
+      "source": "PolB and p41/p46 exhibit increased primer elongation when reactions are supplemented with PCNA, corresponding to the accumulation of 87nt (PolB) or ~82 nt (p41/p46) products in length (Figure 3D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 3D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:34:39.695049Z"
+    },
+    {
+      "id": "2152030f-744b-48e0-9a6d-ac8b5194a9b7",
+      "content_id": "690dd656-10ca-44c9-8fbf-a3dc7baafa57",
+      "claim_id": "C39",
+      "claim": "In the context of 8-oxodG bypass, all three polymerisation enzymes benefit from the addition of PCNA, with the % of stalled extension product being reduced.",
+      "claim_type": "EXPLICIT",
+      "source": "In the context of 8-oxodG bypass, all three polymerisation enzymes benefit from the addition of PCNA, with the % of stalled extension product being reduced, most likely due to the enhanced stability and processivity that PCNA provides (Figure 3D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 3D and inference about PCNA function",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:34:39.695049Z"
+    },
+    {
+      "id": "310288a0-a215-42d2-945d-d1b874a7c7ed",
+      "content_id": "690dd656-10ca-44c9-8fbf-a3dc7baafa57",
+      "claim_id": "C40",
+      "claim": "For PolB, the combined presence of both PCNA and RPA exacerbates PolB stalling in the presence of 8-oxodG.",
+      "claim_type": "EXPLICIT",
+      "source": "For PolB the combined presence of both PCNA and RPA, while reducing the processivity enhancements that PCNA alone brings to PolB function, actually exacerbate PolB stalling in the presence of 8-oxodG (Figure 3D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 3D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:34:39.695049Z"
+    },
+    {
+      "id": "373ca510-385f-4d52-a8f3-219437eaa7e5",
+      "content_id": "690dd656-10ca-44c9-8fbf-a3dc7baafa57",
+      "claim_id": "C41",
+      "claim": "For PolD, the overall impact of both RPA and PCNA together is negative, with polymerisation reduced to unobservable levels at 15 min.",
+      "claim_type": "EXPLICIT",
+      "source": "For PolD the overall impact of both RPA and PCNA together is negative. This is most apparent in PolD when polymerisation is reduced to unobservable levels at 15 min.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 3D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:34:39.695049Z"
+    },
+    {
+      "id": "90f2bc32-c6f0-4edf-9f0f-7d364d7b063b",
+      "content_id": "690dd656-10ca-44c9-8fbf-a3dc7baafa57",
+      "claim_id": "C42",
+      "claim": "PCNA and RPA enhance the primer extension activity of the p41/p46 complex and remove any 8-oxodG induced downstream stalling.",
+      "claim_type": "EXPLICIT",
+      "source": "Again, in contrast to the results observed with the two replicative DNA Pols, PCNA and RPA enhance the primer extension activity of the p41/p46 complex and remove any 8-oxodG induced downstream stalling (Figure 3\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 3\u2014figure supplement 1B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:34:39.695049Z"
+    },
+    {
+      "id": "579afb67-1c17-43e5-86bd-3a8fe376beaa",
+      "content_id": "690dd656-10ca-44c9-8fbf-a3dc7baafa57",
+      "claim_id": "C43",
+      "claim": "All three DNA polymerisation enzymes provide correct incorporation opposite the dG control.",
+      "claim_type": "EXPLICIT",
+      "source": "In this context, it is observed that all three DNA polymerisation enzymes provide correct incorporation opposite the dG control.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 4",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:34:39.695049Z"
+    },
+    {
+      "id": "a8fdf67b-7b7d-4116-9c6e-fdc4bfa34df3",
+      "content_id": "690dd656-10ca-44c9-8fbf-a3dc7baafa57",
+      "claim_id": "C44",
+      "claim": "When incorporating opposite 8-oxodG, all three enzymes are potentially mutagenic with dAMP and dCMP preferentially inserted.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, when incorporating opposite 8-oxodG all three enzymes are potentially mutagenic with dAMP and dCMP preferentially inserted.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 4",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:34:39.695049Z"
+    },
+    {
+      "id": "bf4693f9-c82d-4072-ba66-4f293c46817b",
+      "content_id": "690dd656-10ca-44c9-8fbf-a3dc7baafa57",
+      "claim_id": "C45",
+      "claim": "PolB suffers from a marked decrease in incorporation levels opposite 8-oxodG, with 35% and 31% primer+n for dAMP and dCMP respectively, compared to 91% dCMP incorporation opposite dG.",
+      "claim_type": "EXPLICIT",
+      "source": "PolB suffers from a marked decrease in incorporation levels opposite 8-oxodG, with 35% and 31% primer+n for dAMP and dCMP respectively, compared to 91% dCMP incorporation opposite dG.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 4",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:34:39.695049Z"
+    },
+    {
+      "id": "d98f68ac-a296-4867-91a0-a00d0adbc824",
+      "content_id": "690dd656-10ca-44c9-8fbf-a3dc7baafa57",
+      "claim_id": "C46",
+      "claim": "PolD shows a decreased incorporation when encountering 8-oxodG, with 41% and 45% primer+n for dAMP and dCMP respectively, compared to 60% dCMP incorporation opposite dG.",
+      "claim_type": "EXPLICIT",
+      "source": "PolD also shows a decreased incorporation when encountering 8-oxodG, 41% and 45% primer+n for dAMP and dCMP respectively, compared to 60% dCMP incorporation opposite dG.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 4",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:34:39.695049Z"
+    },
+    {
+      "id": "94a0635b-3909-4aac-b91a-4e206c9be53e",
+      "content_id": "690dd656-10ca-44c9-8fbf-a3dc7baafa57",
+      "claim_id": "C47",
+      "claim": "For the p41/p46 complex, the levels of incorporation are similar regardless of the presence of oxidative damage, with 64% and 72% primer+n for dAMP and dCMP respectively, compared to 79% dCMP incorporation opposite dG.",
+      "claim_type": "EXPLICIT",
+      "source": "However, for the p41/p46 complex the levels of incorporation are similar regardless of the presence of oxidative damage, with 64% and 72% primer+n for dAMP and dCMP respectively, compared to 79% dCMP incorporation opposite dG.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 4",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:34:39.695049Z"
+    },
+    {
+      "id": "49e1f483-2834-4b46-9fdf-77d2cdcdedf3",
+      "content_id": "690dd656-10ca-44c9-8fbf-a3dc7baafa57",
+      "claim_id": "C48",
+      "claim": "For PolB, primer+n formation occurs regardless of the presence of 8-oxodG, with the lowest activity observed in the presence of dC:8-oxodG (52% primer+n) compared to dA:8-oxodG (73% primer+n) and the dC:dG control (87% primer+n) at the 0.5 min time point.",
+      "claim_type": "EXPLICIT",
+      "source": "For PolB primer+n formation occurs regardless of the presence of 8-oxodG, with the lowest activity observed in the presence of dC:8-oxodG (52% primer+n) compared to dA:8-oxodG (73% primer+n) and the dC:dG control (87% primer+n) at the 0.5 min time point.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 4\u2014figure supplement 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:34:39.695049Z"
+    },
+    {
+      "id": "e158fd13-f5ba-4176-983d-d12c6a19dac3",
+      "content_id": "690dd656-10ca-44c9-8fbf-a3dc7baafa57",
+      "claim_id": "C49",
+      "claim": "PolD appears less tolerant of 8-oxodG base pairs, with primer+n formation after 0.5 min of 27% and 12% with dA and dC paired opposite 8-oxodG, compared to the dC:dG control (49% primer+n).",
+      "claim_type": "EXPLICIT",
+      "source": "PolD appears less tolerant of 8-oxodG base pairs, with primer+n formation after 0.5 min of 27% and 12% with dA and dC paired opposite 8-oxodG, compared to the dC:dG control (49% primer+n).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 4\u2014figure supplement 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:34:39.695049Z"
+    },
+    {
+      "id": "92704835-d0bf-4bcb-9f85-817b85287959",
+      "content_id": "690dd656-10ca-44c9-8fbf-a3dc7baafa57",
+      "claim_id": "C50",
+      "claim": "The p41/p46 complex proves more tolerant of the presence of 8-oxodG paired termini, with high levels of primer+n formation at 0.5 min of 69% (dA:8-oxodG) and 65% (dC:8-oxodG), compared to 83% primer+n for the dC:dG control.",
+      "claim_type": "EXPLICIT",
+      "source": "The p41/p46 complex proves more tolerant of the presence of 8-oxodG paired termini, with high levels of primer+n formation at 0.5 min of 69% (dA:8-oxodG) and 65% (dC:8-oxodG), compared to 83% primer+n for the dC:dG control.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 4\u2014figure supplement 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:34:39.695049Z"
+    },
+    {
+      "id": "8c592f7a-fe54-462a-bcea-0af6c3366d28",
+      "content_id": "690dd656-10ca-44c9-8fbf-a3dc7baafa57",
+      "claim_id": "C51",
+      "claim": "The p41/p46 complex was unable to extend a dT:dG mismatch.",
+      "claim_type": "EXPLICIT",
+      "source": "Unlike PolB and polD, the p41/p46 complex was unable to extend a dT:dG mismatch.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 4\u2014figure supplement 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:34:39.695049Z"
+    },
+    {
+      "id": "59c5591b-be32-453c-b147-ca8959de5ba5",
+      "content_id": "690dd656-10ca-44c9-8fbf-a3dc7baafa57",
+      "claim_id": "C52",
+      "claim": "There is a marked difference in the exonuclease activity of PolB and PolD regardless of the base contained in the +1 nt position from the primer-template junction.",
+      "claim_type": "EXPLICIT",
+      "source": "Regardless of the base contained in the +1 nt position from the primer-template junction there is a marked difference in the exonuclease activity of the two DNA pols (Figure 5A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 5A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:34:39.695049Z"
+    },
+    {
+      "id": "4717f1ed-a07d-4c55-9538-0852db28c34b",
+      "content_id": "690dd656-10ca-44c9-8fbf-a3dc7baafa57",
+      "claim_id": "C53",
+      "claim": "PolB exo activity is highly stimulated, with a partial decrease observed when 8-oxodG is present in the +1 position from the primer-template junction (84% primer-n compared to 96% for dG after 5 min).",
+      "claim_type": "EXPLICIT",
+      "source": "PolB exo activity is highly stimulated, with a partial decrease observed when 8-oxodG is present in the +1 position from the primer-template junction (84% primer-n compared to 96% for dG after 5 min).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 5A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:34:39.695049Z"
+    },
+    {
+      "id": "0329cc97-ee03-4214-9f24-a41bfa0496f6",
+      "content_id": "690dd656-10ca-44c9-8fbf-a3dc7baafa57",
+      "claim_id": "C54",
+      "claim": "For PolD there is only minor exonuclease activity, with no significant difference observed in the presence of a damaged nucleotide in the +1 position (7% primer-n for 8-oxodG compared to 5% for dG after 5 min).",
+      "claim_type": "EXPLICIT",
+      "source": "However, for PolD there is only minor exonuclease activity, with no significant difference observed in the presence of a damaged nucleotide in the +1 position (7% primer-n for 8-oxodG compared to 5% for dG after 5 min).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 5A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:34:39.695049Z"
+    },
+    {
+      "id": "b1751d31-024c-423a-b7d6-eb656c4d17ca",
+      "content_id": "690dd656-10ca-44c9-8fbf-a3dc7baafa57",
+      "claim_id": "C55",
+      "claim": "Encountering the mutagenic Hoogsteen base paired dA:8-oxodG causes stimulation of the PolB exonuclease rate, with 72% primer-n degraded compared with 55% and 43% for non-mutagenic Watson-Crick base paired dC:8-oxodG and dC:dG after 5 min, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "Encountering the mutagenic Hoogsteen base paired dA:8-oxodG causes stimulation of the PolB exonuclease rate, 72% primer-n degraded compared with 55% and 43% for non-mutagenic Watson-Crick base paired dC:8-oxodG and dC:dG after 5 min, respectively.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 5B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:34:39.695049Z"
+    },
+    {
+      "id": "16b68021-d027-4f39-bc4b-010876a3b91c",
+      "content_id": "690dd656-10ca-44c9-8fbf-a3dc7baafa57",
+      "claim_id": "C56",
+      "claim": "The primer containing the single dT:dG mismatch confers the highest enhancement in the rate of 3'\u20135' exonucleolysis by PolB (87% primer-n after 5 min).",
+      "claim_type": "EXPLICIT",
+      "source": "Accordingly, the primer containing the single dT:dG mistmatch confers the highest enhancement in the rate of 3'\u20135' exonucleolysis (87% primer-n after 5 min).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 5B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:34:39.695049Z"
+    },
+    {
+      "id": "dedf4d02-9645-4adf-8612-307a71128312",
+      "content_id": "690dd656-10ca-44c9-8fbf-a3dc7baafa57",
+      "claim_id": "C57",
+      "claim": "Low stimulation of the PolD exonuclease activity is observed in the presence of the Hoogsteen base paired dA:8-oxodG, with 27% primer-n after 5 min compared to 31% primer-n for dC:8-oxodG and 26% dC:dG.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, low stimulation of the PolD exonuclease activity is observed in the presence of the Hoogsteen base paired dA:8-oxodG, 27% primer-n after 5 min compared to 31% primer-n for dC:8-oxodG and 26% dC:dG.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 5B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:34:39.695049Z"
+    },
+    {
+      "id": "49f8f429-693e-4006-a4dd-57636c389c64",
+      "content_id": "690dd656-10ca-44c9-8fbf-a3dc7baafa57",
+      "claim_id": "C58",
+      "claim": "The dT:dG mismatch significantly stimulated the rate of exo degradation by PolD (58% primer-n after 5 min).",
+      "claim_type": "EXPLICIT",
+      "source": "On the other hand, the dT:dG mismatch significantly stimulated the rate of exo degradation by PolD (58% primer-n after 5 min).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 5B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:34:39.695049Z"
+    },
+    {
+      "id": "130e13ab-75c5-4cd7-a2cb-fed619b5f216",
+      "content_id": "690dd656-10ca-44c9-8fbf-a3dc7baafa57",
+      "claim_id": "C59",
+      "claim": "The presence of Hoogsteen base pairing enhances the PolB exonucleolysis rate, while having a minor effect on PolD.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, the data indicate that the presence of Hoogsteen base pairing enhances the PolB exonucleolysis rate, while having a minor effect on PolD.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the experimental data comparing exonuclease activity on different base pairs",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:34:39.695049Z"
+    },
+    {
+      "id": "360a9189-38d9-49eb-aced-49a79b36d9b0",
+      "content_id": "690dd656-10ca-44c9-8fbf-a3dc7baafa57",
+      "claim_id": "C60",
+      "claim": "RPA acts as an inhibitor of the exonuclease activity for both PolB and PolD, independently of the nature of the 3'-end primer termini.",
+      "claim_type": "EXPLICIT",
+      "source": "Mirroring the alterations seen in extension reactions, RPA acts as an inhibitor of the exonuclease activity for both PolB and PolD, independently of the nature of the 3'-end primer termini (dA:8-oxodG, dC:8-oxodG, dC:dG and dT:dG).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 5C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:34:39.695049Z"
+    },
+    {
+      "id": "add186b2-06b3-462c-9748-f81516757be4",
+      "content_id": "690dd656-10ca-44c9-8fbf-a3dc7baafa57",
+      "claim_id": "C61",
+      "claim": "PCNA stimulates exonuclease activity of both PolB and PolD, with primer degradation accentuated, particularly for the dT:dG mismatch.",
+      "claim_type": "EXPLICIT",
+      "source": "On the other hand, PCNA stimulates exonuclease activity of both PolB and PolD, with primer degradation accentuated, particularly for the dT:dG mismatch.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 5C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:34:39.695049Z"
+    },
+    {
+      "id": "818aeeb5-724f-46e0-913d-d96657001bd8",
+      "content_id": "690dd656-10ca-44c9-8fbf-a3dc7baafa57",
+      "claim_id": "C62",
+      "claim": "The level of 8-oxodG in the genome of P. abyssi is higher than that of T. gammatolerans, likely confirming that increased temperature of growth favours DNA oxidation.",
+      "claim_type": "EXPLICIT",
+      "source": "The level of 8-oxodG in the genome of P. abyssi is higher than that of T. gammatorelans, likely confirming that increased temperature of growth favours DNA oxidation (95\u00b0C compared with 85\u00b0C, respectively).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from comparison of 8-oxodG levels at different growth temperatures",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:34:39.695049Z"
+    },
+    {
+      "id": "af2c6e51-a9bb-41b0-b40b-275c79613bcd",
+      "content_id": "690dd656-10ca-44c9-8fbf-a3dc7baafa57",
+      "claim_id": "C63",
+      "claim": "A small fraction of P. abyssi cells survive oxygen stress and recover the steady-state level of 8-oxodG in 2.5 hr, consistent with survival rates observed following gamma-ray irradiation.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite being highly sensitive to oxygen, a small fraction of P. abyssi cells survive stress and recover the steady-state level of 8-oxodG in 2.5 hr, consistent with survival rates observed following gamma-ray irradiation (Jolivet et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data and citation to Jolivet et al., 2003",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:34:39.695049Z"
+    },
+    {
+      "id": "a587afd4-f57e-409d-a39a-b1d7934a33a4",
+      "content_id": "690dd656-10ca-44c9-8fbf-a3dc7baafa57",
+      "claim_id": "C64",
+      "claim": "The presence of basal levels of 8-oxodG in 'normal' growth conditions of hyperthermophilic anaerobic Euryarchaeota corroborates the existence of active DNA protection and repair mechanisms in proliferating cells of hyperthermophilic Archaea.",
+      "claim_type": "EXPLICIT",
+      "source": "The presence of basal levels of 8-oxodG in 'normal' growth conditions of hyperthermophilic anaerobic Euryarchaeota corroborates the existence of active DNA protection and repair mechanisms in proliferating cells of hyperthermophilic Archaea (Barbier et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the observation of basal 8-oxodG levels and supported by citation to Barbier et al., 2016",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:34:39.695049Z"
+    },
+    {
+      "id": "c8803c56-a5ba-4cb6-88b3-64ce43556fef",
+      "content_id": "690dd656-10ca-44c9-8fbf-a3dc7baafa57",
+      "claim_id": "C65",
+      "claim": "The lack of polymerisation past template strand 8-oxodG when present in a single stranded region of DNA is the result of specific nuclease activity which might be attributed to the 8-oxoguanine DNA glycosylase encoding gene in P. abyssi.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, the lack of polymerisation past template strand 8-oxodG when present in a single stranded region of DNA is the result of specific nuclease activity which might be attributed to the 8-oxoguanine DNA glycosylase encoding gene in P. abyssi.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculative inference based on observed nuclease activity",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:34:39.695049Z"
+    },
+    {
+      "id": "ce5cc1c2-1a67-4144-bfbe-50d7c01789b8",
+      "content_id": "690dd656-10ca-44c9-8fbf-a3dc7baafa57",
+      "claim_id": "C66",
+      "claim": "DNA repair mechanisms, such as BER, might be preferentially solicited over TLS in P. abyssi, thus minimising the potential mutagenicity of 8-oxodG.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that DNA repair mechanisms, such as BER, might be preferentially solicited over TLS, thus minimising the potential mutagenicity of 8-oxodG.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the observation that nuclease activity prevents TLS at ssDNA lesions",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:34:39.695049Z"
+    },
+    {
+      "id": "253f51d8-33a5-4c7e-bfe4-efa9e9c5ec5c",
+      "content_id": "690dd656-10ca-44c9-8fbf-a3dc7baafa57",
+      "claim_id": "C67",
+      "claim": "BER has been assumed as a fundamental process in the removal of 8-oxodG in the genome of Thermoccus gammatolerans.",
+      "claim_type": "EXPLICIT",
+      "source": "It should be noted that BER has been assumed as a fundamental process in the removal of 8-oxodG in the genome of Thermoccus gammatolerans (Barbier et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Barbier et al., 2016",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:34:39.695049Z"
+    },
+    {
+      "id": "3b228509-2aaa-4cec-b8b9-6ac0e019d6b1",
+      "content_id": "690dd656-10ca-44c9-8fbf-a3dc7baafa57",
+      "claim_id": "C68",
+      "claim": "TLS represents 8% of bypass events of replication hindering adducts in Saccharomyces cerevisiae.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, a preference for non-TLS repair is consistent with adduct bypass observations in model organisms, with TLS representing 8% of bypass events of replication hindering adducts in Saccharomyces cerevisiae (Baynton et al., 1998)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Baynton et al., 1998",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:34:39.695049Z"
+    },
+    {
+      "id": "90b76257-2f62-4505-9ea4-4757c813621c",
+      "content_id": "690dd656-10ca-44c9-8fbf-a3dc7baafa57",
+      "claim_id": "C69",
+      "claim": "TLS represents 1% (non-SOS induced) or 13% (SOS induced) of bypass events in E. coli.",
+      "claim_type": "EXPLICIT",
+      "source": "and 1% (non-SOS induced) or 13% (SOS induced) in E. coli (Koffel-Schwartz et al., 1996).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Koffel-Schwartz et al., 1996",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:34:39.695049Z"
+    },
+    {
+      "id": "49987ab0-a25e-4478-aabe-8bfa38de1450",
+      "content_id": "690dd656-10ca-44c9-8fbf-a3dc7baafa57",
+      "claim_id": "C70",
+      "claim": "The preferential extension of dA:8-oxodG over dC:8-oxodG paired termini may be due to the inability of the Pol active site to detect the mispair since dA:8-oxodG Hoogsteen base pair mimics the geometry of a correct base pair.",
+      "claim_type": "EXPLICIT",
+      "source": "This preferential extension may be due to the inability of the Pol active site to detect the mispair in the Pol active site since dA:8-oxodG Hoogsteen base pair mimics the geometry of a correct base pair (Chemical structure 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Inferred from structural considerations and supported by Chemical structure 1",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:34:39.695049Z"
+    },
+    {
+      "id": "2c80772f-b23a-4ba1-95bf-4f09a61b4883",
+      "content_id": "690dd656-10ca-44c9-8fbf-a3dc7baafa57",
+      "claim_id": "C71",
+      "claim": "The dC:8-oxodG paired termini appears strongly inhibitory to extension by PolD likely due to steric constraints incompatible with the size and flexibility of the polymerase active site cavity.",
+      "claim_type": "EXPLICIT",
+      "source": "The dC:8-oxodG paired termini appears strongly inhibitory to extension by PolD likely due to steric constraints incompatible with the size and flexibility of the polymerase active site cavity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from experimental observations of reduced extension activity",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:34:39.695049Z"
+    },
+    {
+      "id": "05258b20-04e2-402c-ad3a-a233f2a52dc9",
+      "content_id": "690dd656-10ca-44c9-8fbf-a3dc7baafa57",
+      "claim_id": "C72",
+      "claim": "The Pol active site of PolD is not comparable to any known DNA polymerases, but rather shares similarities with RNA polymerases, despite DNA synthesising capabilities.",
+      "claim_type": "EXPLICIT",
+      "source": "Recent structural determination of PolD indicates that the Pol active site is not comparable to any known DNA polymerases, but rather shares similarities with RNA polymerases, despite DNA synthesising capabilities (Sauguet et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Sauguet et al., 2016",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:34:39.695049Z"
+    },
+    {
+      "id": "ffb5f53e-fb78-4434-9378-a90d729aef02",
+      "content_id": "690dd656-10ca-44c9-8fbf-a3dc7baafa57",
+      "claim_id": "C73",
+      "claim": "E. coli Pol I, T7 Pol, RB69 Pol and Pol \u03b4 do not efficiently correct dA:8-oxodG mispair.",
+      "claim_type": "EXPLICIT",
+      "source": "Contrary to studies showing that E. coli Pol I (Shibutani et al., 1991), T7 Pol (Brieba et al., 2004), RB69 Pol (Zhong et al., 2008) and Pol \u03b4 (McCulloch et al., 2009) do not efficiently correct dA:8-oxodG mispair",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by multiple citations",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:34:39.695049Z"
+    },
+    {
+      "id": "9ab4df6f-103e-4e1c-ad99-7443316c17d8",
+      "content_id": "690dd656-10ca-44c9-8fbf-a3dc7baafa57",
+      "claim_id": "C74",
+      "claim": "Significant exonuclease activity is observed with dA:8-oxodG and dC:8-oxodG mismatches by PolD and PolB.",
+      "claim_type": "EXPLICIT",
+      "source": "significant exonuclease activity is observed with dA:8-oxodG and dC: 8-oxodG mismatches by PolD and PolB.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data shown in Figure 5",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:34:39.695049Z"
+    },
+    {
+      "id": "afddb7d7-199f-46e5-b8d8-665db5b93f70",
+      "content_id": "690dd656-10ca-44c9-8fbf-a3dc7baafa57",
+      "claim_id": "C75",
+      "claim": "PolD exonuclease primer degradation is less active than PolB in the conditions tested.",
+      "claim_type": "EXPLICIT",
+      "source": "It is interesting to notice that PolD exonuclease primer degradation is less active than PolB in the conditions tested.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data shown in Figure 5",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:34:39.695049Z"
+    },
+    {
+      "id": "a6d4f016-64ba-43e0-b7cd-ca6abe125269",
+      "content_id": "690dd656-10ca-44c9-8fbf-a3dc7baafa57",
+      "claim_id": "C76",
+      "claim": "The PolD Exo active site exhibits structural dynamics clearly different to those of PolB in the presence of mismatches.",
+      "claim_type": "EXPLICIT",
+      "source": "The PolD Exo active site exhibits structural dynamics clearly different to those of PolB in the presence of mismatches.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from observed differences in exonuclease activity",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:34:39.695049Z"
+    },
+    {
+      "id": "c467b997-7815-44f5-9a40-e3dd299e42a6",
+      "content_id": "690dd656-10ca-44c9-8fbf-a3dc7baafa57",
+      "claim_id": "C77",
+      "claim": "The unusual structural exonuclease domain of PolD looks more similar to the Mre11 nuclease protein than the three characteristic sequence motifs termed Exo I, Exo II and Exo III.",
+      "claim_type": "EXPLICIT",
+      "source": "This hypothesis is corroborated by the unusual structural exonuclease domain of PolD which looks more similar to the Mre11 nuclease protein than the three characteristic sequence motifs termed Exo I, Exo II and Exo III (Blanco et al., 1991).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Blanco et al., 1991",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:34:39.695049Z"
+    },
+    {
+      "id": "68ef5216-ff64-410c-93fe-170498d80f8d",
+      "content_id": "690dd656-10ca-44c9-8fbf-a3dc7baafa57",
+      "claim_id": "C78",
+      "claim": "P. abyssi HiFi (High Fidelity) enzymes may have evolved acute removal of mutagenic and non mutagenic primer termini due to the lack of appropriate extrinsic correction mechanisms.",
+      "claim_type": "EXPLICIT",
+      "source": "P. abyssi HiFi (High Fidelity) enzymes may have evolved acute removal of mutagenic and non mutagenic primer termini due to the lack of appropriate extrinsic correction mechanisms.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculative inference based on observed exonuclease activities",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:34:39.695049Z"
+    },
+    {
+      "id": "39a4b8f0-cd2b-4ab3-9b1a-fe60bbc1a310",
+      "content_id": "690dd656-10ca-44c9-8fbf-a3dc7baafa57",
+      "claim_id": "C79",
+      "claim": "PCNA appears essential in exonuclease stimulation of mispairs by PolD and PolB.",
+      "claim_type": "EXPLICIT",
+      "source": "Not often considered, PCNA appears essential in exonuclease stimulation of mispairs by PolD and PolB, while RPA does not severely affect the activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data shown in Figure 5C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:34:39.695049Z"
+    },
+    {
+      "id": "4c4eecd0-67e6-4744-b493-040b5bc1aeda",
+      "content_id": "690dd656-10ca-44c9-8fbf-a3dc7baafa57",
+      "claim_id": "C80",
+      "claim": "Each of the three known polymerisation enzymes from P. abyssi possesses a unique stalling profile when encountering template strand 8-oxodG in vitro.",
+      "claim_type": "EXPLICIT",
+      "source": "Each of the three known polymerisation enzymes from P. abyssi possesses a unique stalling profile when encountering template strand 8-oxodG in vitro.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data shown in Figure 3",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:34:39.695049Z"
+    },
+    {
+      "id": "912ffc71-5d18-44bf-b617-2f80648ceafa",
+      "content_id": "690dd656-10ca-44c9-8fbf-a3dc7baafa57",
+      "claim_id": "C81",
+      "claim": "Both PolB and PolD are observed to be sensitive to the presence of oxidative damage, stalling replication before eventually bypassing the lesion.",
+      "claim_type": "EXPLICIT",
+      "source": "Both PolB and PolD are observed to be sensitive to the presence of oxidative damage, stalling replication before eventually bypassing the lesion",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data shown in Figure 3",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:34:39.695049Z"
+    },
+    {
+      "id": "533c3bc2-dbe2-450f-b183-5f6b58b0946e",
+      "content_id": "690dd656-10ca-44c9-8fbf-a3dc7baafa57",
+      "claim_id": "C82",
+      "claim": "p41/p46 bypasses 8-oxodG with high efficiency before stalling immediately downstream.",
+      "claim_type": "EXPLICIT",
+      "source": "whilst p41/p46 bypasses with high efficiency before stalling immediately downstream, consistent with previously published results (Jozwiakowski et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data and citation to Jozwiakowski et al., 2015",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:34:39.695049Z"
+    },
+    {
+      "id": "99f4f2a6-1b39-4e06-825c-ed76d4982647",
+      "content_id": "690dd656-10ca-44c9-8fbf-a3dc7baafa57",
+      "claim_id": "C83",
+      "claim": "RPA enhances primer extension by the P. abyssi p41/p46 complex, functioning in a similar manner to eukaryotic RPA, which stimulates Pol \u03b1 activity and processivity.",
+      "claim_type": "EXPLICIT",
+      "source": "RPA enhances primer extension by the P. abyssi p41/p46 complex, functioning in a similar manner to eukaryotic RPA, which stimulates Pol \u03b1 activity and processivity (Braun et al., 1997; Maga et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data and citations to Braun et al., 1997 and Maga et al., 2008",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:34:39.695049Z"
+    },
+    {
+      "id": "04f8f34f-4e82-4bfe-b1a5-890c8a27c6c6",
+      "content_id": "690dd656-10ca-44c9-8fbf-a3dc7baafa57",
+      "claim_id": "C84",
+      "claim": "The presence of 8-oxodG in ssDNA and dsDNA results in alterations in the phospho-deoxyribose structure, causing variations to vertical base staking in the immediate vicinity of 8-oxodG.",
+      "claim_type": "EXPLICIT",
+      "source": "The presence of 8-oxodG in ssDNA and dsDNA results in alterations in the phospho-deoxyribose structure, causing variations to vertical base staking in the immediate vicinity of 8-oxodG (Malins et al., 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Malins et al., 2000",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:34:39.695049Z"
+    },
+    {
+      "id": "ce52f497-60bd-470e-a269-db5b921ee3a6",
+      "content_id": "690dd656-10ca-44c9-8fbf-a3dc7baafa57",
+      "claim_id": "C85",
+      "claim": "The presence of the complementary strand in dsDNA introduces a stiffening and stabilising effect, reducing the impact of 8-oxodG on DNA structure.",
+      "claim_type": "EXPLICIT",
+      "source": "Such an effect is still present in dsDNA, but the presence of the complementary strand introduces a stiffening and stabilising effect, reducing the impact of 8-oxodG on DNA structure (Crenshaw et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Crenshaw et al., 2011",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:34:39.695049Z"
+    },
+    {
+      "id": "a2191ffd-c76c-426c-abb3-8575c10d4925",
+      "content_id": "690dd656-10ca-44c9-8fbf-a3dc7baafa57",
+      "claim_id": "C86",
+      "claim": "RPA introduces rigidity to ssDNA.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, RPA introduces rigidity to ssDNA (Chen et al., 2015)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Chen et al., 2015",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:34:39.695049Z"
+    },
+    {
+      "id": "2f2d8723-6561-444c-af93-1a46d7c37185",
+      "content_id": "690dd656-10ca-44c9-8fbf-a3dc7baafa57",
+      "claim_id": "C87",
+      "claim": "RPA negates the disruptive influence of 8-oxodG on ssDNA, reducing downstream stalling of the p41/p46 complex.",
+      "claim_type": "EXPLICIT",
+      "source": "which in this instances negates the disruptive influence of 8-oxodG on ssDNA, reducing downstream stalling of the p41/p46 complex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the experimental observation that RPA removes downstream stalling",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:34:39.695049Z"
+    },
+    {
+      "id": "64fdc888-368d-4ff6-b24c-f95ce3e564ba",
+      "content_id": "690dd656-10ca-44c9-8fbf-a3dc7baafa57",
+      "claim_id": "C88",
+      "claim": "The p41/p46 complex is classified as an Archaeo-Eukaryotic Primase (AEP).",
+      "claim_type": "EXPLICIT",
+      "source": "The p41/p46 complex is classified as an Archaeo-Eukaryotic Primase (AEP)(Guilliam et al., 2015a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Guilliam et al., 2015a",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:34:39.695049Z"
+    },
+    {
+      "id": "bca56573-8fa0-42a1-98a3-515d74e9cebf",
+      "content_id": "690dd656-10ca-44c9-8fbf-a3dc7baafa57",
+      "claim_id": "C89",
+      "claim": "Human PrimPol can facilitate replication fork progression through TLS and downstream priming in vitro.",
+      "claim_type": "EXPLICIT",
+      "source": "In vitro, human PrimPol can facilitate replication fork progression through TLS and downstream priming (Garc\u00eda-G\u00f3mez et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Garc\u00eda-G\u00f3mez et al., 2013",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:34:39.695049Z"
+    },
+    {
+      "id": "1f72f09a-6af2-4d78-a934-a07515828310",
+      "content_id": "690dd656-10ca-44c9-8fbf-a3dc7baafa57",
+      "claim_id": "C90",
+      "claim": "RPA is able to both recruit and regulate PrimPol activity, inhibiting replication on short primer-templates or when RPA is present in saturating conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "However, more recent studies evaluating the interplay with replisome partners highlight that RPA is able to both recruit (Guilliam et al., 2017) and regulate PrimPol activity, inhibiting replication on short primer-templates or when RPA is present in saturating conditions (Guilliam et al., 2015b; Guilliam et al., 2017; Mart\u00ednez-Jim\u00e9nez et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by multiple citations",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:34:39.695049Z"
+    },
+    {
+      "id": "d833a00d-74c9-4212-9e24-980fc141998e",
+      "content_id": "690dd656-10ca-44c9-8fbf-a3dc7baafa57",
+      "claim_id": "C91",
+      "claim": "RPA enhances processivity of p41/p46, in a manner consistent with that observed for both Pol \u03b1, the Pol \u03b1-Primase complex and Pol \u03bb.",
+      "claim_type": "EXPLICIT",
+      "source": "This is in stark contrast to the data generated here, in which RPA enhances processivity of p41/p46, in a manner consistent with that observed for both Pol \u03b1 (Kenny et al., 1989; Braun et al., 1997), the Pol \u03b1-Primase complex (Dornreiter et al., 1992) and Pol \u03bb (Krasikova et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data and multiple citations",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:34:39.695049Z"
+    },
+    {
+      "id": "c63d2306-46f0-4e10-97af-77de86847cd5",
+      "content_id": "690dd656-10ca-44c9-8fbf-a3dc7baafa57",
+      "claim_id": "C92",
+      "claim": "PrimPol has no observable physical or functional interaction with PCNA.",
+      "claim_type": "EXPLICIT",
+      "source": "In a further, more abrupt contrast, to date, PrimPol has no observable physical or functional interaction with PCNA (Guilliam et al., 2015b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Guilliam et al., 2015b",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:34:39.695049Z"
+    },
+    {
+      "id": "aa4a48ba-2c96-40b8-8489-32292932fb6c",
+      "content_id": "690dd656-10ca-44c9-8fbf-a3dc7baafa57",
+      "claim_id": "C93",
+      "claim": "Replication factor C (RFC) is instrumental in polymerase switching in eukaryotes, displacing the low fidelity Pol \u03b1 complex following primer synthesis and initial elongation and recruiting the high fidelity Pol \u03b4 during PCNA loading.",
+      "claim_type": "EXPLICIT",
+      "source": "While still not fully understood, evidence from the eukaryotes suggests that replication factor C (RFC), the clamp loader, is instrumental in polymerase switching, displacing the low fidelity Pol \u03b1 complex following primer synthesis and initial elongation and recruiting the high fidelity Pol \u03b4 during PCNA loading (Waga and Stillman, 1994; Maga et al., 2000; Mossi et al., 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by multiple citations",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:34:39.695049Z"
+    },
+    {
+      "id": "3b4d8efb-c224-4e12-82d0-95f9b133782e",
+      "content_id": "690dd656-10ca-44c9-8fbf-a3dc7baafa57",
+      "claim_id": "C94",
+      "claim": "In the Crenarchaea S. solfataricus, RFC functions in a similar manner to its eukaryotic counterpart.",
+      "claim_type": "EXPLICIT",
+      "source": "While the exact role of RFC in Archaea is still contentious, there is evidence to suggest that in the Crenarchaea S. solfataricus it functions in a similar manner to its eukaryotic counterpart (Wu et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Wu et al., 2007",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:34:39.695049Z"
+    },
+    {
+      "id": "c195a9fc-c175-419b-85ae-c3ceae70ef2f",
+      "content_id": "690dd656-10ca-44c9-8fbf-a3dc7baafa57",
+      "claim_id": "C95",
+      "claim": "Y-family DNA polymerases Pol \u03b7, Pol \u03b9 and Pol \u03ba, all TLS polymerases, have well-established physical and functional interactions with PCNA.",
+      "claim_type": "EXPLICIT",
+      "source": "Y-family DNA polymerases Pol \u03b7, Pol \u03b9 and Pol \u03ba, all TLS polymerases, have well-established physical and functional interactions with PCNA (Bienko et al., 2005; Masuda et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Bienko et al., 2005 and Masuda et al., 2015",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:34:39.695049Z"
+    },
+    {
+      "id": "9ed43f6d-f752-4092-9177-f9513b5c20a7",
+      "content_id": "690dd656-10ca-44c9-8fbf-a3dc7baafa57",
+      "claim_id": "C96",
+      "claim": "PCNA has been observed to stimulate polymerase activity and recruit the human TLS polymerase Pol \u03b9 to the replisome.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, PCNA has been observed to stimulate polymerase activity and recruit the human TLS polymerase Pol \u03b9 to the replisome (Haracska et al., 2001)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Haracska et al., 2001",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:34:39.695049Z"
+    },
+    {
+      "id": "7b149db1-c16d-4442-a31d-a39ff9b3b40f",
+      "content_id": "690dd656-10ca-44c9-8fbf-a3dc7baafa57",
+      "claim_id": "C97",
+      "claim": "p41/p46 is a capable TLS polymerase that is stimulated by the stabilising presence of RPA.",
+      "claim_type": "EXPLICIT",
+      "source": "In conclusion we have identified that as well as being a capable TLS polymerase that is stimulated by the stabilising presence of RPA, p41/p46 functionally interacts with the replisome 'scaffold' protein PCNA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data throughout the study",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:34:39.695049Z"
+    },
+    {
+      "id": "8e9949b8-795c-4553-91a3-9a36ba07c772",
+      "content_id": "690dd656-10ca-44c9-8fbf-a3dc7baafa57",
+      "claim_id": "C98",
+      "claim": "p41/p46 functionally interacts with the replisome 'scaffold' protein PCNA.",
+      "claim_type": "EXPLICIT",
+      "source": "In conclusion we have identified that as well as being a capable TLS polymerase that is stimulated by the stabilising presence of RPA, p41/p46 functionally interacts with the replisome 'scaffold' protein PCNA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data shown in Figure 3",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:34:39.695049Z"
+    },
+    {
+      "id": "74f2fc72-1bcf-48f4-be69-9a4dc061e106",
+      "content_id": "690dd656-10ca-44c9-8fbf-a3dc7baafa57",
+      "claim_id": "C99",
+      "claim": "PolB and PolD stall upon encountering 8-oxodG in the presence of PCNA.",
+      "claim_type": "EXPLICIT",
+      "source": "Coupled with data highlighting that PolB and PolD stall upon encountering 8-oxodG in the presence of PCNA",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data shown in Figure 3D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:34:39.695049Z"
+    },
+    {
+      "id": "f9b11318-c678-4aaf-9d6b-fc0ce901f6c4",
+      "content_id": "690dd656-10ca-44c9-8fbf-a3dc7baafa57",
+      "claim_id": "C100",
+      "claim": "When the replisome encounters a lesion such as 8-oxodG, replicative polymerases stall, possibly reversing replication with their exonuclease activity, allowing displacement of the polymerase and recruitment of the p41/p46 complex by PCNA.",
+      "claim_type": "EXPLICIT",
+      "source": "Replicative polymerases stall when encountering a lesion, possibly reversing replication with their exonuclease activity, this allows displacement of the polymerase and recruitment of the p41/p46 complex by the replisome 'scaffold' protein PCNA.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Model proposed based on experimental observations, shown in Figure 6B",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:34:39.695049Z"
+    },
+    {
+      "id": "9a96be81-9d97-4213-9a29-21c4dae127cb",
+      "content_id": "690dd656-10ca-44c9-8fbf-a3dc7baafa57",
+      "claim_id": "C101",
+      "claim": "Stabilised by RPA, TLS occurs by p41/p46 before it is in turn displaced by one of the replicative DNA polymerases.",
+      "claim_type": "EXPLICIT",
+      "source": "Stabilised by RPA TLS occurs before p41/p46 is in turn displaced by one of the replicative DNA polymerases.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Model proposed based on experimental observations, shown in Figure 6B",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:34:39.695049Z"
+    },
+    {
+      "id": "07d9fa67-c4d0-4268-bc09-c1517779e31a",
+      "content_id": "690dd656-10ca-44c9-8fbf-a3dc7baafa57",
+      "claim_id": "C102",
+      "claim": "8-oxodG is formed in the genome of P. abyssi growing cells, with elevated levels following exposure to oxidative stress.",
+      "claim_type": "EXPLICIT",
+      "source": "Here we show that 8-oxodG is formed in the genome of growing cells, with elevated levels following exposure to oxidative stress.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data shown in Table 1 and Figure 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:34:39.695049Z"
+    },
+    {
+      "id": "378c2be2-88cc-42ab-8f73-319632454cd2",
+      "content_id": "690dd656-10ca-44c9-8fbf-a3dc7baafa57",
+      "claim_id": "C103",
+      "claim": "Translesion synthesis occurs under replicative conditions in P. abyssi.",
+      "claim_type": "EXPLICIT",
+      "source": "Functional characterisation of cell-free extracts and the DNA polymerisation enzymes, PolB, PolD, and the p41/p46 complex, alone or in the presence of accessory factors (PCNA and RPA) indicates that translesion synthesis occurs under replicative conditions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data shown in Figures 2 and 3",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:34:39.695049Z"
+    },
+    {
+      "id": "2702fc9e-482f-4805-aede-cfa37b361bf0",
+      "content_id": "690dd656-10ca-44c9-8fbf-a3dc7baafa57",
+      "claim_id": "C104",
+      "claim": "One of the major polymerisation effects of 8-oxodG was stalling.",
+      "claim_type": "EXPLICIT",
+      "source": "One of the major polymerisation effects was stalling, but each of the individual proteins could insert and extend past 8-oxodG with differing efficiencies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data shown in Figure 3",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:34:39.695049Z"
+    },
+    {
+      "id": "96ee5ac8-92ed-426f-9245-217361049ce5",
+      "content_id": "690dd656-10ca-44c9-8fbf-a3dc7baafa57",
+      "claim_id": "C105",
+      "claim": "Each of the individual proteins (PolB, PolD, p41/p46) could insert and extend past 8-oxodG with differing efficiencies.",
+      "claim_type": "EXPLICIT",
+      "source": "One of the major polymerisation effects was stalling, but each of the individual proteins could insert and extend past 8-oxodG with differing efficiencies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data shown in Figures 3 and 4",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:34:39.695049Z"
+    },
+    {
+      "id": "60a63191-2415-44a2-9c32-24d50006f4cf",
+      "content_id": "690dd656-10ca-44c9-8fbf-a3dc7baafa57",
+      "claim_id": "C106",
+      "claim": "The introduction of RPA and PCNA influenced PolB and PolD in similar ways.",
+      "claim_type": "EXPLICIT",
+      "source": "The introduction of RPA and PCNA influenced PolB and PolD in similar ways, yet provided a cumulative enhancement to the polymerisation performance of p41/p46.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data shown in Figure 3D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:34:39.695049Z"
+    },
+    {
+      "id": "14fb5cb3-9b12-48d5-ad0b-5f8c78518947",
+      "content_id": "690dd656-10ca-44c9-8fbf-a3dc7baafa57",
+      "claim_id": "C107",
+      "claim": "RPA and PCNA provided a cumulative enhancement to the polymerisation performance of p41/p46.",
+      "claim_type": "EXPLICIT",
+      "source": "The introduction of RPA and PCNA influenced PolB and PolD in similar ways, yet provided a cumulative enhancement to the polymerisation performance of p41/p46.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data shown in Figure 3D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:34:39.695049Z"
+    },
+    {
+      "id": "c2d1a48b-9c60-4917-9ac7-0ab3593bb669",
+      "content_id": "690dd656-10ca-44c9-8fbf-a3dc7baafa57",
+      "claim_id": "C108",
+      "claim": "8-oxodG translesion synthesis was seen to be potentially mutagenic leading to errors that are reminiscent of dA:8-oxodG base pairing.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, 8-oxodG translesion synthesis was seen to be potentially mutagenic leading to errors that are reminiscent of dA:8-oxodG base pairing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data showing preferential dAMP incorporation opposite 8-oxodG",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:34:39.695049Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "5f0a9062-37ad-4f7d-852f-a9fda2292a3a",
+      "content_id": "690dd656-10ca-44c9-8fbf-a3dc7baafa57",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "P. abyssi exhibits measurable basal levels of genomic 8-oxodG during exponential (63.2/10^6 dG) and stationary (115.1/10^6 dG) growth phases, while E. coli shows no detectable 8-oxodG under the same conditions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C13-C15 are directly supported by experimental HPLC-EC-UV measurements presented in Table 1. The detection method has appropriate sensitivity (0.01 pmol detection limit), measurements were performed in triplicate from two biological replicates, and the contrast between P. abyssi and E. coli provides a meaningful control comparison.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:34:39.695049Z"
+    },
+    {
+      "id": "efb2e6bb-4631-449e-8620-34fae75d52cf",
+      "content_id": "690dd656-10ca-44c9-8fbf-a3dc7baafa57",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "P. abyssi responds to oxidative stress (5 min oxygen exposure) with a 3-fold increase in genomic 8-oxodG levels and 88% cell death, but surviving cells recover basal 8-oxodG levels within 140 minutes during active proliferation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C16-C21 are well-supported by time-course measurements in Figure 1 showing 8-oxodG levels and cell viability at multiple time points. The experimental design appropriately tracks both damage accumulation and repair. The conclusion that P. abyssi possesses mechanisms to overcome 8-oxodG (C20-C21) is a reasonable inference from the recovery data, though the specific mechanisms remain unidentified.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:34:39.695049Z"
+    },
+    {
+      "id": "a1ecd2a7-dc2a-47df-aa39-97bfd9e32014",
+      "content_id": "690dd656-10ca-44c9-8fbf-a3dc7baafa57",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "P. abyssi cell-free extracts (PabCE) extend primers past dG controls but exhibit complete arrest one base upstream of 8-oxodG or abasic sites in single-stranded DNA due to specific nuclease activity; low-level translesion synthesis occurs when 8-oxodG is in double-stranded DNA.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C22-C25 are supported by gel electrophoresis data in Figure 2 and Figure 2\u2014supplement 1. The nuclease activity explanation (C24) is directly demonstrated by dual-labeling experiments showing template strand cleavage. The distinction between ssDNA and dsDNA contexts is experimentally validated, though the identity of the nuclease remains speculative.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:34:39.695049Z"
+    },
+    {
+      "id": "3f6adc2a-98c8-473d-809c-94add9ce3bc4",
+      "content_id": "690dd656-10ca-44c9-8fbf-a3dc7baafa57",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The three P. abyssi replicative polymerases (PolB, PolD, p41/p46) exhibit distinct stalling profiles when encountering template strand 8-oxodG: PolB and PolD stall upstream and opposite the lesion, while p41/p46 bypasses efficiently but stalls 1-2 nucleotides downstream.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C26-C31 and C80-C82 are well-supported by time-course primer extension assays in Figure 3A-C with quantitative analysis of stalling positions. The unique stalling profiles are clearly demonstrated at the 10 min time point. The data are internally consistent across running start and standing start experiments (Figure 3\u2014supplement 1A).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:34:39.695049Z"
+    },
+    {
+      "id": "aa5ca8cf-fa3f-4388-8a03-601a2f2a2696",
+      "content_id": "690dd656-10ca-44c9-8fbf-a3dc7baafa57",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "RPA inhibits primer extension by PolB and PolD (>50% reduction under standing start conditions) but enhances p41/p46 processivity and alleviates 8-oxodG-induced downstream stalling, likely by stabilizing ssDNA structure.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C32-C35 and C83, C87 are supported by experimental data in Figure 3D and Figure 3\u2014supplement 1B. The differential effects on the three polymerases are clearly demonstrated. The mechanistic explanation involving DNA stabilization (C87) is a reasonable inference supported by citations to structural studies (C84-C86), though direct structural evidence is not provided in this study.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:34:39.695049Z"
+    },
+    {
+      "id": "b2bd88cd-192f-4202-bf88-5753422dba5e",
+      "content_id": "690dd656-10ca-44c9-8fbf-a3dc7baafa57",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "PCNA reduces primer+n formation by PolD but stimulates full-length synthesis, enhances primer elongation by PolB and p41/p46, and reduces 8-oxodG-induced stalling for all three polymerases.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C36-C39 are supported by experimental data in Figure 3D showing differential effects of PCNA on the three polymerases. The interpretation that PCNA stimulates processivity and stability (C39) is consistent with known PCNA functions and supported by the observed reduction in stalled products. Agreement with prior work (C37) strengthens the interpretation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:34:39.695049Z"
+    },
+    {
+      "id": "8ab031e5-693a-4afe-a410-61aea58daabc",
+      "content_id": "690dd656-10ca-44c9-8fbf-a3dc7baafa57",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Combined RPA and PCNA exacerbate PolB stalling and reduce PolD activity to unobservable levels in the presence of 8-oxodG, but provide cumulative enhancement to p41/p46 performance, establishing p41/p46 as a TLS polymerase that functionally interacts with PCNA.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C40-C42 and C97-C98, C106-C107 are supported by experimental data in Figure 3D and Figure 3\u2014supplement 1B. The contrasting effects on p41/p46 versus the replicative polymerases are clearly demonstrated. The functional interaction with PCNA (C98) is novel and well-supported, though no direct physical interaction is demonstrated.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:34:39.695049Z"
+    },
+    {
+      "id": "afdaac1b-4bdf-4e33-a9fb-f3bb0714a80c",
+      "content_id": "690dd656-10ca-44c9-8fbf-a3dc7baafa57",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "All three polymerases correctly incorporate dCMP opposite dG, but when encountering 8-oxodG, all three are potentially mutagenic, preferentially inserting both dAMP and dCMP, with p41/p46 showing the least reduction in incorporation efficiency.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C43-C47 and C108 are directly supported by single nucleotide incorporation assays in Figure 4. The quantitative data clearly show correct incorporation opposite dG and mutagenic incorporation opposite 8-oxodG for all three enzymes. The preferential insertion of dAMP is consistent with Hoogsteen base pairing and supports the mutagenic potential conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:34:39.695049Z"
+    },
+    {
+      "id": "26b46168-482e-402f-a926-79eb1883eef7",
+      "content_id": "690dd656-10ca-44c9-8fbf-a3dc7baafa57",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "In primer extension assays from 8-oxodG-paired termini, PolB extends dA:8-oxodG (73%) better than dC:8-oxodG (52%), PolD shows poor extension of both pairs (27% and 12%), while p41/p46 extends both efficiently (69% and 65%) but cannot extend dT:dG mismatches.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C48-C51 are supported by time-course extension data in Figure 4\u2014supplement 1. The differential extension efficiencies are clearly quantified at 0.5 min. The inability of p41/p46 to extend dT:dG mismatches (C51) distinguishes it from PolB and PolD and is clearly demonstrated.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:34:39.695049Z"
+    },
+    {
+      "id": "45d45aaa-b87d-465b-8c07-7db78d98d126",
+      "content_id": "690dd656-10ca-44c9-8fbf-a3dc7baafa57",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "PolB exhibits highly active exonuclease activity (96% for dG, 84% for 8-oxodG after 5 min) with enhanced degradation of Hoogsteen-paired dA:8-oxodG (72%), while PolD shows minimal exonuclease activity (5-7%) with little discrimination between base pairs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C52-C59 and C74-C75 are well-supported by exonuclease assays in Figure 5A-B with clear quantitative differences between PolB and PolD. The preferential degradation of mutagenic Hoogsteen pairs by PolB (C55-C56) is clearly demonstrated and represents an important proofreading mechanism. The minimal PolD exonuclease activity is consistently observed across conditions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:34:39.695049Z"
+    },
+    {
+      "id": "d9d0faf6-69b2-4e55-8d73-f466bbe417f0",
+      "content_id": "690dd656-10ca-44c9-8fbf-a3dc7baafa57",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "RPA inhibits exonuclease activity of both PolB and PolD independently of primer termini, while PCNA stimulates exonuclease activity, particularly for dT:dG mismatches, with PCNA appearing essential for mismatch removal.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C60-C61 and C79 are supported by experimental data in Figure 5C showing opposite effects of RPA and PCNA on exonuclease activity. The PCNA stimulation of mismatch removal is clearly demonstrated and represents an important quality control mechanism. The claim that PCNA is 'essential' (C79) may be overstated as it is based on stimulation rather than absolute requirement.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:34:39.695049Z"
+    },
+    {
+      "id": "2e02fec2-2b91-43d8-9cc4-803174540a8c",
+      "content_id": "690dd656-10ca-44c9-8fbf-a3dc7baafa57",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "A model is proposed where replicative polymerases stall at 8-oxodG lesions, possibly reverse with exonuclease activity, allowing PCNA-mediated recruitment of p41/p46 for RPA-stabilized translesion synthesis before polymerase switching back to replicative enzymes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C100-C101 represent a mechanistic model (Figure 6B) that integrates multiple experimental observations: polymerase stalling (C26-C31, C99), exonuclease activity (C52-C59), PCNA-mediated enhancement of p41/p46 (C38-C39, C98), and RPA stabilization (C34-C35). While the model is reasonable and consistent with the data, it remains inferential as direct evidence for polymerase switching and the proposed sequence of events is not provided.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:34:39.695049Z"
+    },
+    {
+      "id": "ef2aeef6-ea12-4d0b-a64a-20b4a68aeca1",
+      "content_id": "690dd656-10ca-44c9-8fbf-a3dc7baafa57",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The nuclease activity preventing TLS at ssDNA lesions suggests that BER may be preferentially utilized over TLS in P. abyssi, potentially involving an 8-oxoguanine DNA glycosylase, consistent with observations in related Thermococcus gammatolerans.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C65-C67 are speculative inferences from the observed nuclease activity (C24). While the preference for BER over TLS is a reasonable hypothesis supported by the ssDNA cleavage data and citation to T. gammatolerans (C67), the specific identity of the nuclease and direct evidence for BER pathway involvement are not provided. The claim requires validation through enzyme identification and BER pathway characterization.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:34:39.695049Z"
+    },
+    {
+      "id": "417675e4-5ff4-4a0b-80ba-2198cde8125f",
+      "content_id": "690dd656-10ca-44c9-8fbf-a3dc7baafa57",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The higher 8-oxodG levels in P. abyssi compared to T. gammatolerans correlate with higher growth temperature (95\u00b0C vs 85\u00b0C), and the recovery from oxidative stress is consistent with gamma-ray irradiation survival, supporting the existence of active DNA protection mechanisms in hyperthermophilic Archaea.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C62-C64 are supported by the experimental 8-oxodG measurements and recovery data (C13-C21), with appropriate citations to prior work on T. gammatolerans and radiation resistance. The temperature correlation (C62) is a reasonable inference though causation is not directly demonstrated. The conclusion about active protection mechanisms (C64) is well-supported by the recovery data.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:34:39.695049Z"
+    },
+    {
+      "id": "deecdfdb-e8be-4e0a-b106-d99aa57bb814",
+      "content_id": "690dd656-10ca-44c9-8fbf-a3dc7baafa57",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The preferential extension of dA:8-oxodG over dC:8-oxodG is attributed to Hoogsteen base pairing mimicking correct geometry, with PolD's strong inhibition by dC:8-oxodG potentially due to steric constraints in its unique RNA polymerase-like active site.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C70-C72 provide mechanistic interpretations of the extension data (C48-C50) based on structural considerations. The Hoogsteen base pairing explanation (C70) is well-established and supported by Chemical structure 1. The PolD active site interpretation (C71-C72) is supported by citation to structural studies (Sauguet et al., 2016), though direct structural evidence with 8-oxodG is not provided in this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:34:39.695049Z"
+    },
+    {
+      "id": "d0ff6d78-7e2e-4d54-869a-fc53b086c693",
+      "content_id": "690dd656-10ca-44c9-8fbf-a3dc7baafa57",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "The differential exonuclease activities of PolB and PolD suggest distinct structural dynamics, with PolD's unusual Mre11-like exonuclease domain potentially reflecting evolutionary adaptation for acute mismatch removal in the absence of extrinsic correction mechanisms.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C76-C78 are speculative inferences from the observed exonuclease differences (C52-C59, C75). While the structural distinction is supported by citation (C77), the evolutionary interpretation (C78) is highly speculative. The claim that P. abyssi lacks 'appropriate extrinsic correction mechanisms' is not demonstrated and contradicts evidence for other repair pathways.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:34:39.695049Z"
+    },
+    {
+      "id": "2a2211a1-b327-42eb-a64d-ed8524a770d2",
+      "content_id": "690dd656-10ca-44c9-8fbf-a3dc7baafa57",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "The p41/p46 complex is classified as an Archaeo-Eukaryotic Primase (AEP) but differs from human PrimPol in its response to RPA and PCNA, showing enhancement rather than inhibition, more similar to eukaryotic Pol \u03b1 and consistent with roles in polymerase switching.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C88-C96 provide important context through citations to prior work on AEPs, PrimPol, and polymerase switching. The contrast between p41/p46 and PrimPol (C90-C92) is well-supported by the experimental data and citations. The comparison to Pol \u03b1 (C91) is appropriate and supported by multiple citations. This contextualizes the novel findings about p41/p46.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:34:39.695049Z"
+    },
+    {
+      "id": "a2879cf0-e482-4326-a80d-8446fe239892",
+      "content_id": "690dd656-10ca-44c9-8fbf-a3dc7baafa57",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "8-oxodG causes alterations in DNA phospho-deoxyribose structure and base stacking in both ssDNA and dsDNA, with the complementary strand providing stabilization in dsDNA, and RPA introducing rigidity to ssDNA.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C84-C86 are supported by appropriate citations to structural studies (Malins et al., 2000; Crenshaw et al., 2011; Chen et al., 2015). These provide mechanistic context for understanding the differential effects of 8-oxodG in ssDNA versus dsDNA and the role of RPA in alleviating downstream stalling. The claims are background knowledge appropriately cited.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:34:39.695049Z"
+    },
+    {
+      "id": "528a52dc-63dd-413a-8960-d57f4fc8c29f",
+      "content_id": "690dd656-10ca-44c9-8fbf-a3dc7baafa57",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "TLS represents a minor fraction of damage bypass in model organisms (8% in S. cerevisiae, 1-13% in E. coli), and other DNA polymerases (E. coli Pol I, T7 Pol, RB69 Pol, Pol \u03b4) do not efficiently correct dA:8-oxodG mispairs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C68-C69 and C73 are appropriately cited background information that contextualizes the P. abyssi findings. The citations appear accurate and relevant. This information supports the interpretation that preferential use of BER over TLS (C66) would be consistent with observations in other organisms.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:34:39.695049Z"
+    },
+    {
+      "id": "2aa01315-0ed7-4276-9dc9-3c06106e54d3",
+      "content_id": "690dd656-10ca-44c9-8fbf-a3dc7baafa57",
+      "result_id": "R20",
+      "result_category": "llm",
+      "result": "Background information establishes that 8-oxodG is a major oxidative DNA lesion repaired by conserved BER pathways, causes mutagenic dG\u2192dT transversions through Hoogsteen base pairing with dA, and that P. abyssi is a radiation-resistant hyperthermophile encoding two replicative polymerases (PolB, PolD) and a primase complex (p41/p46).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C12 provide essential background information, all supported by appropriate citations to established literature. These claims accurately represent prior knowledge about 8-oxodG biochemistry, DNA repair pathways, and P. abyssi biology. The information is necessary context for interpreting the experimental results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:34:39.695049Z"
+    },
+    {
+      "id": "5d998bbc-7241-4c7d-a3cc-04a211608aa2",
+      "content_id": "690dd656-10ca-44c9-8fbf-a3dc7baafa57",
+      "result_id": "R21",
+      "result_category": "llm",
+      "result": "Summary claims state that 8-oxodG forms in P. abyssi genomes with elevated levels after oxidative stress, translesion synthesis occurs under replicative conditions, stalling is a major effect, and individual polymerases bypass 8-oxodG with differing efficiencies.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C102-C105 are accurate summary statements of the major findings, directly supported by the experimental data in Table 1, Figure 1, Figures 2-3, and Figure 4. These represent appropriate high-level conclusions from the collective results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:34:39.695049Z"
+    },
+    {
+      "id": "0191d1cf-1fe1-4c61-8cfe-563ddc8fc0d2",
+      "content_id": "690dd656-10ca-44c9-8fbf-a3dc7baafa57",
+      "result_id": "R22",
+      "result_category": "llm",
+      "result": "PolB and PolD stall upon encountering 8-oxodG in the presence of PCNA.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C99 is directly supported by experimental data in Figure 3D showing increased stalling of both PolB and PolD when PCNA is present with 8-oxodG-containing templates. This observation is central to the proposed polymerase switching model.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:34:39.695049Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "f50a26f7-f3f2-4816-880f-e54e9fba19f2",
+      "result_id": "5f0a9062-37ad-4f7d-852f-a9fda2292a3a"
+    },
+    {
+      "claim_id": "1d0cf772-bd13-40c2-8a7a-932232b44961",
+      "result_id": "5f0a9062-37ad-4f7d-852f-a9fda2292a3a"
+    },
+    {
+      "claim_id": "54bbd81f-296c-4978-aa70-0565108ee069",
+      "result_id": "5f0a9062-37ad-4f7d-852f-a9fda2292a3a"
+    },
+    {
+      "claim_id": "4f9f03f2-9fea-4926-b791-f28ad3a4c437",
+      "result_id": "efb2e6bb-4631-449e-8620-34fae75d52cf"
+    },
+    {
+      "claim_id": "d18297b3-92a8-47ed-8fbc-c89de8005538",
+      "result_id": "efb2e6bb-4631-449e-8620-34fae75d52cf"
+    },
+    {
+      "claim_id": "9e2a2007-5bcc-4964-8da3-dbf04c5f0255",
+      "result_id": "efb2e6bb-4631-449e-8620-34fae75d52cf"
+    },
+    {
+      "claim_id": "df20460d-1088-4b29-a219-041f1b178b44",
+      "result_id": "efb2e6bb-4631-449e-8620-34fae75d52cf"
+    },
+    {
+      "claim_id": "08b3c66c-199c-4dea-a938-ae7303272094",
+      "result_id": "efb2e6bb-4631-449e-8620-34fae75d52cf"
+    },
+    {
+      "claim_id": "821bd633-8ec2-497a-9a10-de9bf9874b72",
+      "result_id": "efb2e6bb-4631-449e-8620-34fae75d52cf"
+    },
+    {
+      "claim_id": "6091c4b7-6d70-4810-805f-1d74d12d995b",
+      "result_id": "a1ecd2a7-dc2a-47df-aa39-97bfd9e32014"
+    },
+    {
+      "claim_id": "a4f0d6a3-e68a-4ea1-bf9a-d4c7d097120d",
+      "result_id": "a1ecd2a7-dc2a-47df-aa39-97bfd9e32014"
+    },
+    {
+      "claim_id": "6218b11c-e9e0-457c-ad6c-aef5fced6abf",
+      "result_id": "a1ecd2a7-dc2a-47df-aa39-97bfd9e32014"
+    },
+    {
+      "claim_id": "2839d719-947f-42be-9640-be9953f2e274",
+      "result_id": "a1ecd2a7-dc2a-47df-aa39-97bfd9e32014"
+    },
+    {
+      "claim_id": "d943a68f-65ef-410f-9125-1d947e52f0b7",
+      "result_id": "3f6adc2a-98c8-473d-809c-94add9ce3bc4"
+    },
+    {
+      "claim_id": "c1d7a432-8c56-48f9-b991-75ca7886a2ef",
+      "result_id": "3f6adc2a-98c8-473d-809c-94add9ce3bc4"
+    },
+    {
+      "claim_id": "db83b74a-9658-4a36-a0cb-70b9f5f60a74",
+      "result_id": "3f6adc2a-98c8-473d-809c-94add9ce3bc4"
+    },
+    {
+      "claim_id": "c83c4358-02e6-4afc-9dcb-a74c86e2b8c2",
+      "result_id": "3f6adc2a-98c8-473d-809c-94add9ce3bc4"
+    },
+    {
+      "claim_id": "1a4ce5fa-c3d9-440b-b96f-a0afa75eb04c",
+      "result_id": "3f6adc2a-98c8-473d-809c-94add9ce3bc4"
+    },
+    {
+      "claim_id": "eb772b76-f72a-4c9b-8973-faec428fe79c",
+      "result_id": "3f6adc2a-98c8-473d-809c-94add9ce3bc4"
+    },
+    {
+      "claim_id": "4c4eecd0-67e6-4744-b493-040b5bc1aeda",
+      "result_id": "3f6adc2a-98c8-473d-809c-94add9ce3bc4"
+    },
+    {
+      "claim_id": "912ffc71-5d18-44bf-b617-2f80648ceafa",
+      "result_id": "3f6adc2a-98c8-473d-809c-94add9ce3bc4"
+    },
+    {
+      "claim_id": "533c3bc2-dbe2-450f-b183-5f6b58b0946e",
+      "result_id": "3f6adc2a-98c8-473d-809c-94add9ce3bc4"
+    },
+    {
+      "claim_id": "8b7eebb4-48e4-48ac-ae1f-3139ec72c45a",
+      "result_id": "aa5ca8cf-fa3f-4388-8a03-601a2f2a2696"
+    },
+    {
+      "claim_id": "fa28dea4-e155-4469-8dc3-ec93cea2e5e3",
+      "result_id": "aa5ca8cf-fa3f-4388-8a03-601a2f2a2696"
+    },
+    {
+      "claim_id": "fff31980-fabb-4c37-bc2a-568627b7c28e",
+      "result_id": "aa5ca8cf-fa3f-4388-8a03-601a2f2a2696"
+    },
+    {
+      "claim_id": "c0fcfed8-1d31-4f50-afde-fa148a055d81",
+      "result_id": "aa5ca8cf-fa3f-4388-8a03-601a2f2a2696"
+    },
+    {
+      "claim_id": "99f4f2a6-1b39-4e06-825c-ed76d4982647",
+      "result_id": "aa5ca8cf-fa3f-4388-8a03-601a2f2a2696"
+    },
+    {
+      "claim_id": "2f2d8723-6561-444c-af93-1a46d7c37185",
+      "result_id": "aa5ca8cf-fa3f-4388-8a03-601a2f2a2696"
+    },
+    {
+      "claim_id": "f0ec4f36-8870-4fa8-b2c2-a979c8651a5b",
+      "result_id": "b2bd88cd-192f-4202-bf88-5753422dba5e"
+    },
+    {
+      "claim_id": "b961bdd4-1480-422e-9172-0cdd2ef27b81",
+      "result_id": "b2bd88cd-192f-4202-bf88-5753422dba5e"
+    },
+    {
+      "claim_id": "e252820b-531f-44b2-9dc3-f89a717d73c0",
+      "result_id": "b2bd88cd-192f-4202-bf88-5753422dba5e"
+    },
+    {
+      "claim_id": "2152030f-744b-48e0-9a6d-ac8b5194a9b7",
+      "result_id": "b2bd88cd-192f-4202-bf88-5753422dba5e"
+    },
+    {
+      "claim_id": "310288a0-a215-42d2-945d-d1b874a7c7ed",
+      "result_id": "8ab031e5-693a-4afe-a410-61aea58daabc"
+    },
+    {
+      "claim_id": "373ca510-385f-4d52-a8f3-219437eaa7e5",
+      "result_id": "8ab031e5-693a-4afe-a410-61aea58daabc"
+    },
+    {
+      "claim_id": "90f2bc32-c6f0-4edf-9f0f-7d364d7b063b",
+      "result_id": "8ab031e5-693a-4afe-a410-61aea58daabc"
+    },
+    {
+      "claim_id": "7b149db1-c16d-4442-a31d-a39ff9b3b40f",
+      "result_id": "8ab031e5-693a-4afe-a410-61aea58daabc"
+    },
+    {
+      "claim_id": "8e9949b8-795c-4553-91a3-9a36ba07c772",
+      "result_id": "8ab031e5-693a-4afe-a410-61aea58daabc"
+    },
+    {
+      "claim_id": "60a63191-2415-44a2-9c32-24d50006f4cf",
+      "result_id": "8ab031e5-693a-4afe-a410-61aea58daabc"
+    },
+    {
+      "claim_id": "14fb5cb3-9b12-48d5-ad0b-5f8c78518947",
+      "result_id": "8ab031e5-693a-4afe-a410-61aea58daabc"
+    },
+    {
+      "claim_id": "579afb67-1c17-43e5-86bd-3a8fe376beaa",
+      "result_id": "afdaac1b-4bdf-4e33-a9fb-f3bb0714a80c"
+    },
+    {
+      "claim_id": "a8fdf67b-7b7d-4116-9c6e-fdc4bfa34df3",
+      "result_id": "afdaac1b-4bdf-4e33-a9fb-f3bb0714a80c"
+    },
+    {
+      "claim_id": "bf4693f9-c82d-4072-ba66-4f293c46817b",
+      "result_id": "afdaac1b-4bdf-4e33-a9fb-f3bb0714a80c"
+    },
+    {
+      "claim_id": "d98f68ac-a296-4867-91a0-a00d0adbc824",
+      "result_id": "afdaac1b-4bdf-4e33-a9fb-f3bb0714a80c"
+    },
+    {
+      "claim_id": "94a0635b-3909-4aac-b91a-4e206c9be53e",
+      "result_id": "afdaac1b-4bdf-4e33-a9fb-f3bb0714a80c"
+    },
+    {
+      "claim_id": "c2d1a48b-9c60-4917-9ac7-0ab3593bb669",
+      "result_id": "afdaac1b-4bdf-4e33-a9fb-f3bb0714a80c"
+    },
+    {
+      "claim_id": "49e1f483-2834-4b46-9fdf-77d2cdcdedf3",
+      "result_id": "26b46168-482e-402f-a926-79eb1883eef7"
+    },
+    {
+      "claim_id": "e158fd13-f5ba-4176-983d-d12c6a19dac3",
+      "result_id": "26b46168-482e-402f-a926-79eb1883eef7"
+    },
+    {
+      "claim_id": "92704835-d0bf-4bcb-9f85-817b85287959",
+      "result_id": "26b46168-482e-402f-a926-79eb1883eef7"
+    },
+    {
+      "claim_id": "8c592f7a-fe54-462a-bcea-0af6c3366d28",
+      "result_id": "26b46168-482e-402f-a926-79eb1883eef7"
+    },
+    {
+      "claim_id": "59c5591b-be32-453c-b147-ca8959de5ba5",
+      "result_id": "45d45aaa-b87d-465b-8c07-7db78d98d126"
+    },
+    {
+      "claim_id": "4717f1ed-a07d-4c55-9538-0852db28c34b",
+      "result_id": "45d45aaa-b87d-465b-8c07-7db78d98d126"
+    },
+    {
+      "claim_id": "0329cc97-ee03-4214-9f24-a41bfa0496f6",
+      "result_id": "45d45aaa-b87d-465b-8c07-7db78d98d126"
+    },
+    {
+      "claim_id": "b1751d31-024c-423a-b7d6-eb656c4d17ca",
+      "result_id": "45d45aaa-b87d-465b-8c07-7db78d98d126"
+    },
+    {
+      "claim_id": "16b68021-d027-4f39-bc4b-010876a3b91c",
+      "result_id": "45d45aaa-b87d-465b-8c07-7db78d98d126"
+    },
+    {
+      "claim_id": "dedf4d02-9645-4adf-8612-307a71128312",
+      "result_id": "45d45aaa-b87d-465b-8c07-7db78d98d126"
+    },
+    {
+      "claim_id": "49f8f429-693e-4006-a4dd-57636c389c64",
+      "result_id": "45d45aaa-b87d-465b-8c07-7db78d98d126"
+    },
+    {
+      "claim_id": "130e13ab-75c5-4cd7-a2cb-fed619b5f216",
+      "result_id": "45d45aaa-b87d-465b-8c07-7db78d98d126"
+    },
+    {
+      "claim_id": "9ab4df6f-103e-4e1c-ad99-7443316c17d8",
+      "result_id": "45d45aaa-b87d-465b-8c07-7db78d98d126"
+    },
+    {
+      "claim_id": "afddb7d7-199f-46e5-b8d8-665db5b93f70",
+      "result_id": "45d45aaa-b87d-465b-8c07-7db78d98d126"
+    },
+    {
+      "claim_id": "360a9189-38d9-49eb-aced-49a79b36d9b0",
+      "result_id": "d9d0faf6-69b2-4e55-8d73-f466bbe417f0"
+    },
+    {
+      "claim_id": "add186b2-06b3-462c-9748-f81516757be4",
+      "result_id": "d9d0faf6-69b2-4e55-8d73-f466bbe417f0"
+    },
+    {
+      "claim_id": "39a4b8f0-cd2b-4ab3-9b1a-fe60bbc1a310",
+      "result_id": "d9d0faf6-69b2-4e55-8d73-f466bbe417f0"
+    },
+    {
+      "claim_id": "f9b11318-c678-4aaf-9d6b-fc0ce901f6c4",
+      "result_id": "2e02fec2-2b91-43d8-9cc4-803174540a8c"
+    },
+    {
+      "claim_id": "9a96be81-9d97-4213-9a29-21c4dae127cb",
+      "result_id": "2e02fec2-2b91-43d8-9cc4-803174540a8c"
+    },
+    {
+      "claim_id": "c8803c56-a5ba-4cb6-88b3-64ce43556fef",
+      "result_id": "ef2aeef6-ea12-4d0b-a64a-20b4a68aeca1"
+    },
+    {
+      "claim_id": "ce5cc1c2-1a67-4144-bfbe-50d7c01789b8",
+      "result_id": "ef2aeef6-ea12-4d0b-a64a-20b4a68aeca1"
+    },
+    {
+      "claim_id": "253f51d8-33a5-4c7e-bfe4-efa9e9c5ec5c",
+      "result_id": "ef2aeef6-ea12-4d0b-a64a-20b4a68aeca1"
+    },
+    {
+      "claim_id": "818aeeb5-724f-46e0-913d-d96657001bd8",
+      "result_id": "417675e4-5ff4-4a0b-80ba-2198cde8125f"
+    },
+    {
+      "claim_id": "af2c6e51-a9bb-41b0-b40b-275c79613bcd",
+      "result_id": "417675e4-5ff4-4a0b-80ba-2198cde8125f"
+    },
+    {
+      "claim_id": "a587afd4-f57e-409d-a39a-b1d7934a33a4",
+      "result_id": "417675e4-5ff4-4a0b-80ba-2198cde8125f"
+    },
+    {
+      "claim_id": "49987ab0-a25e-4478-aabe-8bfa38de1450",
+      "result_id": "deecdfdb-e8be-4e0a-b106-d99aa57bb814"
+    },
+    {
+      "claim_id": "2c80772f-b23a-4ba1-95bf-4f09a61b4883",
+      "result_id": "deecdfdb-e8be-4e0a-b106-d99aa57bb814"
+    },
+    {
+      "claim_id": "05258b20-04e2-402c-ad3a-a233f2a52dc9",
+      "result_id": "deecdfdb-e8be-4e0a-b106-d99aa57bb814"
+    },
+    {
+      "claim_id": "a6d4f016-64ba-43e0-b7cd-ca6abe125269",
+      "result_id": "d0ff6d78-7e2e-4d54-869a-fc53b086c693"
+    },
+    {
+      "claim_id": "c467b997-7815-44f5-9a40-e3dd299e42a6",
+      "result_id": "d0ff6d78-7e2e-4d54-869a-fc53b086c693"
+    },
+    {
+      "claim_id": "68ef5216-ff64-410c-93fe-170498d80f8d",
+      "result_id": "d0ff6d78-7e2e-4d54-869a-fc53b086c693"
+    },
+    {
+      "claim_id": "64fdc888-368d-4ff6-b24c-f95ce3e564ba",
+      "result_id": "2a2211a1-b327-42eb-a64d-ed8524a770d2"
+    },
+    {
+      "claim_id": "bca56573-8fa0-42a1-98a3-515d74e9cebf",
+      "result_id": "2a2211a1-b327-42eb-a64d-ed8524a770d2"
+    },
+    {
+      "claim_id": "1f72f09a-6af2-4d78-a934-a07515828310",
+      "result_id": "2a2211a1-b327-42eb-a64d-ed8524a770d2"
+    },
+    {
+      "claim_id": "d833a00d-74c9-4212-9e24-980fc141998e",
+      "result_id": "2a2211a1-b327-42eb-a64d-ed8524a770d2"
+    },
+    {
+      "claim_id": "c63d2306-46f0-4e10-97af-77de86847cd5",
+      "result_id": "2a2211a1-b327-42eb-a64d-ed8524a770d2"
+    },
+    {
+      "claim_id": "aa4a48ba-2c96-40b8-8489-32292932fb6c",
+      "result_id": "2a2211a1-b327-42eb-a64d-ed8524a770d2"
+    },
+    {
+      "claim_id": "3b4d8efb-c224-4e12-82d0-95f9b133782e",
+      "result_id": "2a2211a1-b327-42eb-a64d-ed8524a770d2"
+    },
+    {
+      "claim_id": "c195a9fc-c175-419b-85ae-c3ceae70ef2f",
+      "result_id": "2a2211a1-b327-42eb-a64d-ed8524a770d2"
+    },
+    {
+      "claim_id": "9ed43f6d-f752-4092-9177-f9513b5c20a7",
+      "result_id": "2a2211a1-b327-42eb-a64d-ed8524a770d2"
+    },
+    {
+      "claim_id": "04f8f34f-4e82-4bfe-b1a5-890c8a27c6c6",
+      "result_id": "a2879cf0-e482-4326-a80d-8446fe239892"
+    },
+    {
+      "claim_id": "ce52f497-60bd-470e-a269-db5b921ee3a6",
+      "result_id": "a2879cf0-e482-4326-a80d-8446fe239892"
+    },
+    {
+      "claim_id": "a2191ffd-c76c-426c-abb3-8575c10d4925",
+      "result_id": "a2879cf0-e482-4326-a80d-8446fe239892"
+    },
+    {
+      "claim_id": "3b228509-2aaa-4cec-b8b9-6ac0e019d6b1",
+      "result_id": "528a52dc-63dd-413a-8960-d57f4fc8c29f"
+    },
+    {
+      "claim_id": "90b76257-2f62-4505-9ea4-4757c813621c",
+      "result_id": "528a52dc-63dd-413a-8960-d57f4fc8c29f"
+    },
+    {
+      "claim_id": "ffb5f53e-fb78-4434-9378-a90d729aef02",
+      "result_id": "528a52dc-63dd-413a-8960-d57f4fc8c29f"
+    },
+    {
+      "claim_id": "340b52d2-b4b1-46c0-93b5-58b550b99a87",
+      "result_id": "2aa01315-0ed7-4276-9dc9-3c06106e54d3"
+    },
+    {
+      "claim_id": "db926841-305c-4ce9-afa3-2d90d385f3a6",
+      "result_id": "2aa01315-0ed7-4276-9dc9-3c06106e54d3"
+    },
+    {
+      "claim_id": "962bf075-f868-4d5c-a73a-725982e83408",
+      "result_id": "2aa01315-0ed7-4276-9dc9-3c06106e54d3"
+    },
+    {
+      "claim_id": "d466c5cd-4db8-41ef-8f4f-fb388174dce2",
+      "result_id": "2aa01315-0ed7-4276-9dc9-3c06106e54d3"
+    },
+    {
+      "claim_id": "2789ffe2-ff2f-40ae-8596-895bd55bc538",
+      "result_id": "2aa01315-0ed7-4276-9dc9-3c06106e54d3"
+    },
+    {
+      "claim_id": "5de2545e-903f-4ad7-b8f9-4c6737964851",
+      "result_id": "2aa01315-0ed7-4276-9dc9-3c06106e54d3"
+    },
+    {
+      "claim_id": "8ccc99d0-9b89-42e9-ba21-18458dbda92a",
+      "result_id": "2aa01315-0ed7-4276-9dc9-3c06106e54d3"
+    },
+    {
+      "claim_id": "3f3ad32b-a719-4f45-8243-d0d0a081e228",
+      "result_id": "2aa01315-0ed7-4276-9dc9-3c06106e54d3"
+    },
+    {
+      "claim_id": "8daae817-01d0-4816-9607-f26d3e7a0dbd",
+      "result_id": "2aa01315-0ed7-4276-9dc9-3c06106e54d3"
+    },
+    {
+      "claim_id": "1a5a5fe1-435a-4217-9193-3f7196a1d3c6",
+      "result_id": "2aa01315-0ed7-4276-9dc9-3c06106e54d3"
+    },
+    {
+      "claim_id": "2f72558f-8c96-45da-bf28-db79b5a17954",
+      "result_id": "2aa01315-0ed7-4276-9dc9-3c06106e54d3"
+    },
+    {
+      "claim_id": "93aefff7-f266-4350-a261-729a8ae848f7",
+      "result_id": "2aa01315-0ed7-4276-9dc9-3c06106e54d3"
+    },
+    {
+      "claim_id": "07d9fa67-c4d0-4268-bc09-c1517779e31a",
+      "result_id": "5d998bbc-7241-4c7d-a3cc-04a211608aa2"
+    },
+    {
+      "claim_id": "378c2be2-88cc-42ab-8f73-319632454cd2",
+      "result_id": "5d998bbc-7241-4c7d-a3cc-04a211608aa2"
+    },
+    {
+      "claim_id": "2702fc9e-482f-4805-aede-cfa37b361bf0",
+      "result_id": "5d998bbc-7241-4c7d-a3cc-04a211608aa2"
+    },
+    {
+      "claim_id": "96ee5ac8-92ed-426f-9245-217361049ce5",
+      "result_id": "5d998bbc-7241-4c7d-a3cc-04a211608aa2"
+    },
+    {
+      "claim_id": "74f2fc72-1bcf-48f4-be69-9a4dc061e106",
+      "result_id": "0191d1cf-1fe1-4c61-8cfe-563ddc8fc0d2"
+    }
+  ],
+  "comparisons": []
+}

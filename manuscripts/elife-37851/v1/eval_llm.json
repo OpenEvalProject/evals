@@ -1,0 +1,458 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5",
+      "C32",
+      "C33",
+      "C34",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C44"
+    ],
+    "result": "Bcl11b activation in T-cell progenitors occurs stochastically with a slow time constant spanning multiple days, with the two alleles activating independently and asynchronously within the same cell.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C5, C32-C34, and C39-C42 are directly supported by timelapse imaging data (Figure 2) showing asynchronous allelic activation, mono-allelic expression persisting over multiple divisions, and equal activation rates for both alleles. The slow time constant (C40, C44) is inferred from the observation that ~40% of cells remain mono-allelic after 4 days, which is a reasonable inference from the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C6",
+      "C47",
+      "C53",
+      "C61",
+      "C62",
+      "C63",
+      "C65",
+      "C99",
+      "C101",
+      "C107"
+    ],
+    "result": "A distal enhancer located ~850 kb downstream of Bcl11b controls the rate of stochastic cis-activation of the locus, specifically at the DN2 stage, without affecting expression levels once activated.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C53, C61-C63, C65 are directly supported by enhancer deletion experiments (Figures 3 and 6) showing reduced activation frequency but normal expression levels in activated cells. Claims C99-C101 demonstrate stage-specificity of enhancer function. The conclusion that the enhancer controls activation rate rather than amplitude is well-supported by the experimental data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C7",
+      "C73",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "Mathematical modeling combined with clonal lineage analysis supports a parallel trans-cis model where a trans-acting step works in parallel with the cis-activation step to control Bcl11b expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73, C76-C78 present model predictions that are tested against experimental clonal data (C79-C80). The parallel model significantly outperforms the sequential model (p<0.005, C80) in predicting the observed 'single mono-allelic' clone frequency (77% observed vs 20.4% predicted by sequential model). The statistical comparison and model fitting are appropriately conducted.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "Notch signaling controls the parallel trans-acting step in Bcl11b activation, as demonstrated by Notch withdrawal experiments showing coordinated loss of both alleles in bi-allelic cells and disproportionate effects on mono-allelic populations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C90 are directly supported by experimental data in Figure 5A showing specific effects of DL1 removal on different starting populations. Claims C91-C92 show that model simulations of trans-step perturbation match experimental observations, particularly the direct reversion from bi-allelic to non-expressing state. The experimental design appropriately tests the model predictions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "The competence to activate silent Bcl11b alleles is developmentally restricted, with efficient activation occurring at DN2 stage (~80%) but dropping sharply at DN3 (~15%) and later stages.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C98 are directly supported by experimental data in Figure 6A showing stage-specific differences in activation competence. The experimental design (sorting mono-allelic cells from different stages and culturing for 4 days) appropriately tests the hypothesis. Sample sizes (N=4-5 replicates) are adequate for the observed effect sizes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "In the DN2a compartment where Bcl11b activation begins, a significant fraction of cells express only one copy of Bcl11b, with roughly equal fractions expressing either allele.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C30 are directly supported by flow cytometry data in Figure 1C showing mono-allelic populations. Claim C31 is a reasonable inference from this observation, later confirmed by timelapse imaging (Figure 2). The equal distribution between alleles rules out imprinting effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C66",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "The distal enhancer is not indispensable for Bcl11b activation, as enhancer-disrupted alleles can still be activated at later developmental stages, suggesting the existence of other compensatory cis-regulatory elements.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C56 are supported by flow cytometry data (Figure 3B,C and supplements) showing eventual activation of enhancer-disrupted alleles. Claims C68-C69 demonstrate that homozygous enhancer deletion still permits normal development. The inference of compensatory elements (C66, C70) is reasonable given the data, though the specific elements are not identified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C102",
+      "C105",
+      "C106"
+    ],
+    "result": "Stochastic, irreversible cis-activation at individual Bcl11b alleles fundamentally controls the timing of T-cell fate commitment and indirectly regulates progenitor pool proliferation by generating multi-day delays before differentiation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C102 and C106 represent the main conclusions synthesized from all experimental data (Figures 1-6) and modeling. Claim C105 is a reasonable inference about the functional consequence of the slow activation rate. The conclusions are well-supported by the comprehensive experimental and modeling evidence presented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "Bcl11b expression follows a developmental progression: inactive in ETPs, beginning to turn on in DN2a, and expressed in all cells by DN2b/DN3 stages.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C26 are supported by flow cytometry data (Figure 1C,D) and citations to prior work. This represents established developmental staging that provides context for the novel findings about allelic dynamics.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C35",
+      "C36"
+    ],
+    "result": "Similar activation rates for both Bcl11b alleles were observed across populations regardless of parent-of-origin, ruling out imprinting effects, while allelic bias within clones was clonally inherited.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C35 states data were collected but not shown ('data not shown'), making independent verification impossible. Claim C36 about clonal inheritance is inferred from persistence of mono-allelic patterns but lacks direct experimental demonstration of inheritance across multiple generations with lineage tracking.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C37",
+      "C38"
+    ],
+    "result": "Individual progenitors frequently gave rise to clonal descendants with multiple distinct states of Bcl11b allelic activation (53.3% heterogeneous after 4 days).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C38 are directly supported by data in Figure 2C and Figure 2\u2014figure supplement 1. The quantification (53.3%, N=15) provides appropriate statistical support. This finding demonstrates the stochastic nature of activation timing within clones.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C43"
+    ],
+    "result": "The same slow cis-event observed in vitro also governs Bcl11b activation in the thymus, as evidenced by similar mono-allelic and bi-allelic populations in both contexts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C43 is supported by the observation of similar mono-allelic populations both in vitro (OP9-DL1, Figure 2) and in vivo (thymus, Figure 1). While the kinetics may differ between systems, the presence of clearly defined mono-allelic populations in both contexts supports the inference that similar mechanisms operate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C59"
+    ],
+    "result": "Generation and persistence of mono-allelic Bcl11b expression due to enhancer disruption is determined cell-intrinsically.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C59 is supported by fetal liver chimera data (Figure 3\u2014figure supplement 3) showing that the enhancer mutation effect persists in a wild-type host environment, demonstrating cell-intrinsic control.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C60",
+      "C64"
+    ],
+    "result": "Once activated, both wildtype and enhancer-disrupted Bcl11b alleles maintain stable expression without reversion to silence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60 and C64 are supported by flow cytometry data (Figure 3D) showing that activated alleles maintain normal expression levels and do not revert. This demonstrates the irreversibility of the activation switch.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C94",
+      "C95"
+    ],
+    "result": "A small fraction of cells consistently express Bcl11b mono-allelically in mature T-cell subsets, suggesting cells lose competence to activate silent alleles during development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C94 is directly supported by flow cytometry data (Figures 1, 3). Claim C95 is a reasonable inference from this observation, later confirmed by the stage-specific activation competence experiments (Figure 6A).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C100"
+    ],
+    "result": "At the DN3 stage, wildtype and enhancer-disrupted alleles show equivalent activation propensity (~17%), indicating loss of enhancer-dependent activation advantage.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C100 is directly supported by experimental data in Figure 6B showing no difference between wildtype and mutant alleles at DN3 stage. This complements the finding of stage-specific enhancer function.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C27",
+      "C28"
+    ],
+    "result": "Developmental transitions from ETP to DN2a take ~2 days and from DN2a to DN2b take ~3 days, involving multiple cell cycles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C28 are supported by citation to prior work (Kueh et al., 2016). These timing estimates provide important context for interpreting the slow Bcl11b activation kinetics but represent previously published findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C52"
+    ],
+    "result": "At the ETP stage, essentially all Bcl11b alleles are silent regardless of enhancer status.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C52 is directly supported by flow cytometry data (Figure 3B) showing no expression in ETP cells from either wildtype or enhancer-disrupted alleles. This establishes the baseline for subsequent activation studies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C67"
+    ],
+    "result": "The intergenic region between Bcl11b and Vrk1 is rich in potential regulatory elements that could compensate for enhancer disruption.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C67 is speculation supported by a citation (Hu et al., 2018) but lacks direct experimental evidence in this study. While the existence of other regulatory elements is inferred from the eventual activation of enhancer-disrupted alleles, their specific identity and location are not demonstrated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C71",
+      "C72"
+    ],
+    "result": "Known transcriptional regulators of Bcl11b (TCF-1, Gata3, Notch1, Runx1) are already expressed before DN2 stage and are not limiting for Bcl11b activation in DN2 cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C71 represents established knowledge about transcription factor expression. Claim C72 is a reasonable inference that motivates the search for additional rate-limiting steps. However, the claim that these factors are 'not limiting' is somewhat overstated\u2014they may still be necessary but not sufficient.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C74",
+      "C75"
+    ],
+    "result": "The sequential and parallel models make distinct predictions about allelic activation patterns in clones based on the order of cis and trans steps.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C75 describe theoretical predictions from the two models that are later tested experimentally. These predictions are logically derived from the model structures and provide the basis for discriminating between models.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C2",
+      "C15",
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "Bcl11b is a master regulator of T-cell fate commitment that represses alternate lineage potential and is regulated by multiple transcription factors including Runx1, GATA-3, TCF-1, and Notch.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C15-C18 represent established knowledge about Bcl11b function and regulation, supported by citations to prior literature. These provide essential background context but are not novel findings of this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "Bcl11b activation occurs after a ~4-day delay despite presence of transcription factors, and the locus undergoes extensive epigenetic remodeling including DNA methylation, histone modifications, nuclear repositioning, and lncRNA expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C22 are supported by citations to prior literature. These establish the known context of delayed activation and epigenetic changes that motivated the current study but represent previously published findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C45",
+      "C46"
+    ],
+    "result": "Graded changes in signaling and transcription factor activity alter the probability rather than amplitude of Bcl11b activation, consistent with cis-regulatory elements modulating all-or-none activation in other systems.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C46 are supported by citations to prior work, including the authors' previous study (Kueh et al., 2016). These provide important conceptual context for interpreting the current findings but are not novel results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "The distal enhancer shows T-lineage-specific features including distinctive histone marks, transcription factor occupancy, proximity to a lncRNA promoter, and lineage-specific looping to the Bcl11b gene body.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C51 are supported by citations to prior literature characterizing the enhancer region. These provide important context for the enhancer deletion experiments but represent previously published characterization.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "Notch signaling drives T-cell commitment and enhances Bcl11b activation probability at DN2 stage while stabilizing expression after activation, but is not required for maintenance in committed cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C85 are supported by citations to prior work, including the authors' previous study (Kueh et al., 2016). These establish the known role of Notch that motivated the current mechanistic investigation but are not novel findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C108",
+      "C109"
+    ],
+    "result": "The Bcl11b locus undergoes specific chromatin changes during activation, including loss of DNA methylation and H3K27me3, and formation of a new topologically associated domain through enhancer-promoter contacts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C108-C109 are supported by citations to prior literature. These provide mechanistic context for understanding the cis-activation step but represent previously published findings about chromatin state changes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C110",
+      "C111",
+      "C112"
+    ],
+    "result": "The plant FLC silencing system shows similar dynamics to Bcl11b activation, including stochastic, independent allelic switching, slow kinetics relative to cell division, and stable inheritance through cell divisions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C110-C112 are supported by citations to prior literature on FLC. These comparisons provide useful context for interpreting the generality of stochastic epigenetic switches but do not represent findings from this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R29",
+    "claim_ids": [
+      "C1",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14"
+    ],
+    "result": "Cell fate decisions involve switch-like gene activation, with both transcription factor control (trans, coordinate) and epigenetic mechanisms (cis, potentially asynchronous) contributing to regulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C9-C14 represent established knowledge and conceptual framework from prior literature, supported by citations. These provide essential background for understanding the significance of the findings but are not novel results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R30",
+    "claim_ids": [
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C119"
+    ],
+    "result": "Stochastic epigenetic switches may have broader roles in development, potentially allowing tunable control of tissue composition and representing fundamental building blocks of cell fate control circuits.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C113-C117, C119 represent speculation about broader implications and potential applications. While these are reasonable extrapolations from the findings, they lack direct experimental support and represent hypotheses for future investigation rather than demonstrated results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R31",
+    "claim_ids": [
+      "C118"
+    ],
+    "result": "Cells undergo concerted transformations in chromatin modification states during developmental transitions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C118 represents established knowledge about developmental transitions. This provides general context but is not a specific finding of this study.",
+    "result_type": "MINOR"
+  }
+]

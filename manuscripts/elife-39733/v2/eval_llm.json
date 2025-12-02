@@ -1,0 +1,349 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C26"
+    ],
+    "result": "The authors developed a novel probabilistic method (PM) inspired by percolation theory to quantify biosynthetic robustness of metabolic networks under variable environmental conditions. The PM is mathematically defined as PM = 1-Pin,0.5, where Pin,0.5 is the input probability at which output probability equals 0.5.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3 and C26 together describe the development and mathematical definition of the producibility metric. The method is clearly defined, implemented computationally, and validated through multiple applications throughout the manuscript, providing strong support for this methodological contribution.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C38"
+    ],
+    "result": "The authors compiled an atlas of predicted biosynthetic capabilities for 88-97 metabolites across 456 human oral microbiome organisms representing 371 species across diverse taxonomic levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4 and C38 describe the large-scale data generation effort. The discrepancy in metabolite count (97 vs 88) appears to reflect different subsets analyzed, with the core analysis focusing on 88 essential biomass metabolites plus 9 organic acids. The scope and scale of the analysis is well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C5",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "The atlas captures taxonomically-related trends in biomass composition, with average PM values partially predicted by genome size (R\u00b2 = 0.498-0.551) and further improved by incorporating taxonomic information.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C43-C45 demonstrate that PM values show taxonomic patterns beyond simple genome size effects. The regression analyses provide quantitative support with specific R\u00b2 values, and the improvement with taxonomic parameters is validated through AIC/BIC criteria, supporting the biological relevance of the metric.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C6",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "Inter-microbial metabolic distances (PM distance) estimated from the atlas correlate with microbial co-occurrences across seven oral microbiome sites, with PM distance showing the most consistent significant correlation and maintaining significance in partial correlation analyses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6 and C62-C64 demonstrate that PM-based metrics correlate with independent co-occurrence data. The consistency across multiple sites and robustness in partial correlation analyses provide strong validation that the PM captures biologically relevant metabolic relationships, though the correlation is negative (similar organisms co-occur).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C7",
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "A distinct cluster of fastidious/uncultivated taxa was identified, including Mycoplasma, Treponema, and nearly all sequenced uncultivated organisms (Saccharibacteria TM7, SR1, Desulfobulbus, Anaerolineae), characterized by abundant metabolic deficiencies. Tannerella HMT-286 was the only uncultivated organism found outside this cluster.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7 and C67-C70 describe a major finding from hierarchical clustering analysis. The clustering successfully groups organisms with known reduced metabolic capabilities and identifies the exception (Tannerella HMT-286), which is explained by its unique siderophore dependency (C71), demonstrating the biological validity of the clustering.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "Fastidious organisms show reduced PM for specific metabolites including pyridoxal phosphate, valine, isoleucine, and other vitamins and amino acids. Amino acids with reduced PM tend to have high biosynthetic cost (\u03c1 = 0.4595, p = 0.0415), with branched-chain amino acids (valine, isoleucine) being notable exceptions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C74 identify specific metabolic deficiencies in fastidious organisms with statistical support. The correlation with biosynthetic cost provides mechanistic insight, and the identification of exceptions (branched-chain amino acids) suggests specific biological hypotheses for future investigation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "TM7 organisms show distinct metabolic complementarity with their host bacteria: TM7 has higher PM for certain cell-wall components (glucose-substituted teichoic acids), while hosts have higher PM for 14 metabolites including amino acids, vitamins, and cofactors. The correlation between amino acid biosynthesis cost and PM difference is stronger for TM7-host pairs (\u03c1 = 0.6011, p = 0.0051) than for fastidious organisms generally.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C79 provide detailed characterization of TM7-host metabolic relationships. The bidirectional complementarity (TM7 produces some metabolites hosts cannot, and vice versa) is well-documented, and the stronger correlation with biosynthetic cost suggests specific metabolic dependencies underlying the symbiosis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "All three TM7 strains possess nearly complete arginine deiminase pathways, arginine has consistently higher PM in hosts than TM7, and arginine exchange via this pathway could contribute to TM7 dependence on hosts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C84-C86 present solid observational data about pathway presence and PM differences. However, C87 is explicitly speculative ('could contribute'), and no experimental validation of arginine exchange is provided. The hypothesis is plausible and well-motivated but requires experimental confirmation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "In the E. coli core metabolic network, most metabolites have high PM values (>0.950), with specific examples including H+ (PM=0.968) and pyruvate (PM=0.952). Cofactors AMP/ADP/ATP and NAD+/NADH have lower PM (~0.7 and ~0.5) because they can interconvert but not be biosynthesized. PM shows no significant correlation with node degree.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C32 demonstrate the PM method on a well-characterized network. The specific PM values are reported with precision, the mechanistic explanation for cofactor PM values is sound, and the lack of correlation with node degree (supported by Figure 2\u2014figure supplement 1) demonstrates that PM captures network properties beyond simple connectivity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C33"
+    ],
+    "result": "The PM is more sensitive than pathway completeness in capturing the effect of reaction knockouts along biosynthetic pathways.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C33 is supported by the histidine biosynthetic pathway analysis (Figure 2\u2014figure supplement 2), which shows PM varies with knockout position while pathway completeness remains constant. This demonstrates a key advantage of the PM method over simpler pathway-based approaches.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "PM predictions are more tolerant to missing reactions than FBA predictions. FBA becomes infeasible for most networks after removing <1% of reactions, while PM remains quantitatively accurate up to 10% reaction removal.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C36 are supported by systematic perturbation analysis (Figure 3) comparing PM and FBA performance. The specific thresholds (1% vs 10%) are clearly stated and demonstrated, providing strong evidence for PM's robustness to network gaps\u2014a key advantage for analyzing draft metabolic networks.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C37"
+    ],
+    "result": "The overall distance between E. coli auxotroph PM values was positively correlated with synergistic growth in co-culture experiments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C37 is supported by comparison with experimental data from Wintermute and Silver (2010), with statistical validation (Mantel test). This provides external validation that PM-based distances capture metabolic complementarity relevant to microbial interactions, though the correlation is not perfect (as noted in Figure 3\u2014figure supplement 1).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "Across oral microbiome organisms, all nucleotides have high PM, amino acids generally have high PM except tryptophan, and metal ions have PM of 0 (serving as negative controls). Tryptophan's low PM is consistent with its high biosynthetic cost.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C42 describe broad patterns in the PM atlas with biological interpretation. The patterns are clearly shown in Figure 4, the negative control (metal ions) validates the method, and the tryptophan exception is explained by literature on biosynthetic costs (C41), demonstrating biological validity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "Cell-wall and membrane components show taxonomically-specific PM patterns: nine teichoic acids have higher PM in Gram-positive organisms (especially D-alanine substituted forms in Firmicutes/Bacilli), three phosphatidylethanolamine lipids show increased PM in Gram-negative organisms, and Negativicutes show a unique lipid profile (high PM for phosphatidylethanolamine, zero for cardiolipin/phosphatidylglycerol, increased PM for spermidine).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C53 describe detailed taxonomic patterns in membrane/cell-wall metabolism. The patterns are consistent with prior experimental observations (C49, C51, C52), and the Negativicutes example demonstrates how PM can recapitulate known biochemical features and generate testable hypotheses about compensatory mechanisms (spermidine).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "Several metabolites show increased PM in Proteobacteria and decreased PM in Bacteroidetes, including heme, arginine, cysteine, methionine, tryptophan, and glutathione. These patterns are consistent with known metabolic dependencies (e.g., P. gingivalis scavenges heme).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C58 identify phylum-level metabolic trends with biological interpretation. The heme pattern is validated by known P. gingivalis biology (C55), and the metabolites identified (sulfur-containing amino acids, high-cost amino acids, arginine for energy metabolism) suggest biologically meaningful exchange patterns between phyla.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "Among nine organic acids analyzed, acetate had the highest median PM, while butyrate showed variable PM with high values in Fusobacterium and some Porphyromonas/Prevotella species, consistent with their roles in periodontal disease.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C61 extend the PM analysis to non-biomass metabolites relevant to oral health. The butyrate patterns are consistent with prior transcriptomic data (C60) and disease associations (C61), demonstrating that PM can identify metabolic capabilities relevant to pathogenesis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C65",
+      "C66"
+    ],
+    "result": "PM complementarity displays a clear bi-modal distribution, with the high-valued peak capturing interactions between small-genome/fastidious microorganisms and their partners, a pattern absent from Seed complementarity distributions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C66 describe a distinctive feature of the PM complementarity metric. The bi-modal distribution (Figure 4\u2014figure supplement 7) and its biological interpretation (fastidious organism interactions) demonstrate that PM captures metabolic dependencies in a way that differs from alternative topology-based methods.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C80",
+      "C81"
+    ],
+    "result": "Prior transcriptomic data showed N-acetyl-D-glucosamine-associated genes were upregulated in A. odontolyticus during TM7x co-cultivation. PM analysis shows A. odontolyticus has higher PM for N-acetyl-D-glucosamine substituted components than TM7, providing metabolic context for the gene expression pattern.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C81 integrate PM predictions with independent transcriptomic data. The PM analysis provides mechanistic context for observed gene expression changes, demonstrating how the method can complement and interpret experimental data from co-cultivation studies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C83"
+    ],
+    "result": "The cyclic peptide cyclo(L-Pro-L-Val) identified in TM7x-host co-cultivation would be synthesized by the host based on increased PM values for both proline and valine in the host.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C83 makes an inference about the source of a metabolite detected experimentally. While the PM values support host synthesis, the claim is explicitly stated as a suggestion ('suggests'), and no direct experimental validation of the synthesis source is provided. The inference is reasonable but requires confirmation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "The PM method differs from alternative approaches in key ways: it captures multiple biosynthetic routes rather than single pathways, does not rely on predefined pathway annotations, has improved tolerance for missing reactions compared to FBA, does not require gap-filled networks, and represents metabolism as a stoichiometry-constrained bipartite graph rather than a metabolite adjacency matrix.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C92 describe methodological distinctions that are well-supported by the analyses presented. The comparison with FBA (C90) is demonstrated in Figure 3, the pathway analysis (C88) is shown in Figure 2\u2014figure supplement 2, and the theoretical basis (bipartite graph with stoichiometry) is clearly explained in the methods.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "The PM method has several limitations: enzyme annotation is the primary limitation, reaction directionality is difficult to predict, transport reactions are difficult to annotate (addressed by naively adding intracellular metabolites), and runtime is longer than alternatives (average ~9 min, maximum ~45 min per network-metabolite pair for 10 runs).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93-C98 honestly acknowledge method limitations. The computational performance is quantified (C97-C98), and the biological/technical limitations (annotation, directionality, transport) are standard challenges in metabolic modeling. The transparency about limitations strengthens confidence in the overall work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C1",
+      "C2"
+    ],
+    "result": "Biosynthetic capabilities of microbes underlie their growth and interactions in microbial communities, but prediction of these capabilities for large, diverse communities is limited by uncertainty about metabolic functions and environmental conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2 establish the biological context and motivation for the study. These are well-established principles in microbiology supported by general knowledge and the extensive literature cited throughout the introduction.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "Metabolic network reconstructions can be automatically generated from genomes, but standard methods (FBA/dFBA) are not easily applicable to draft networks due to gaps, and gap-filling requires knowledge of growth media. Alternative topology-based methods (network expansion, NetSeed) are less dependent on gap-filling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C25 accurately summarize the state of the field in metabolic modeling, supported by appropriate citations. This establishes the methodological gap that the PM method addresses and positions the work within existing approaches.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C99"
+    ],
+    "result": "The producibility metric could be used as an initial estimate of biomass composition during metabolic network reconstruction, to be compared with reference biomass compositions currently used.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C99 proposes a future application of the PM method. While the suggestion is reasonable given the demonstrated taxonomic variability in PM values, this is explicitly speculative and no validation of this application is provided in the manuscript.",
+    "result_type": "MINOR"
+  }
+]

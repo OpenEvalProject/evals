@@ -1,0 +1,261 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C4",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C29",
+      "C34",
+      "C84"
+    ],
+    "result": "S cones generate slower light responses than L and M cones in both peripheral and foveal retina. At 5000 R*/cone/s, S-cone responses reached peak at 45.3\u00b10.9 ms compared to 36.3\u00b10.6 ms for M cones and 36.7\u00b10.6 ms for L cones. Similar differences were observed at 50,000 R*/cone/s and in both response onset and recovery phases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C24 provide quantitative measurements with statistical significance (p<10\u207b\u2076 peripheral, p<0.05 foveal) from substantial sample sizes (36-49 cones per type). The data show consistent kinetic differences across multiple light levels and retinal regions. Claim C29 demonstrates the slowing affects both phases of the response, strengthening the mechanistic interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "S cones show reduced sensitivity to high-frequency sinusoidal stimuli compared to LM cones. The frequency at which response amplitudes decreased to 10% of maximum was significantly lower for S cones (24.4\u00b11.0 Hz at 5000 R*/s, 23.6\u00b11.0 Hz at 50,000 R*/s) compared to L and M cones (28-37 Hz range).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C38 provide quantitative measurements with statistical significance (p<0.01 to p<0.0001) supporting the prediction in C35. The frequency-tuning data (Figure 3) directly confirms that slower flash response kinetics translate to reduced high-frequency sensitivity, providing converging evidence with the flash response measurements.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C85",
+      "C113"
+    ],
+    "result": "The kinetic differences between S and LM cones originate primarily from phototransduction rather than voltage transformation. Voltage-clamp recordings showed S-cone linear filters were significantly slower (31.5\u00b12 ms) than LM cones (25.2\u00b11.2 ms, p<0.005), with similar magnitude differences as in current-clamp (6.3 ms vs 8.5 ms difference).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C44 provide voltage-clamp data that parallel the current-clamp findings, with C44 explicitly comparing the two approaches. The similarity in kinetic differences between voltage and current measurements (C44, C85, C113) strongly supports a phototransduction origin. The experimental design appropriately tests the mechanistic hypothesis stated in C39-C40.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C5",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C87"
+    ],
+    "result": "S-cone response kinetics adapt minimally across background light levels (1000-50,000 R*/s), showing <10% change in normalized time-to-peak, while LM-cone responses accelerate substantially (~30% change). This differential adaptation holds for both flash responses and frequency tuning, though response amplitude adaptation is similar across cone types.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C54 provide quantitative measurements with confidence intervals showing clear differential adaptation. The finding is supported by multiple stimulus types (flashes and sinusoids) and multiple metrics (time-to-peak, frequency tuning). Claim C52 appropriately notes that amplitude adaptation does not differ, indicating the effect is specific to kinetics. The large sample sizes and statistical rigor support the conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C95",
+      "C96"
+    ],
+    "result": "Differences in cone response kinetics are propagated through retinal circuitry to small bistratified cells (SBCs). The time-to-peak shift between 1000 and 10,000 R*/s was significantly smaller for S-cone mediated responses (4.5\u00b10.6 ms) than LM-cone mediated responses (10.2\u00b10.9 ms) in SBCs, matching the pattern observed in cones themselves.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C65 provide quantitative SBC recordings that test the prediction in C58. The agreement between SBC shifts and cone shifts (C65) demonstrates propagation of cone properties through the circuit. However, the sample size is limited (n=6 SBCs from 2 retinas), which is acknowledged but reduces generalizability. The experimental design cleverly uses differential adaptation to isolate cone contributions despite circuit complexity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C6",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C111",
+      "C112"
+    ],
+    "result": "S cones exhibit higher effective noise relative to their flash responses at low background light levels compared to LM cones, resulting in higher detection thresholds (3.7\u00b10.3 R* vs 1.7\u00b10.1 R* in darkness; 8\u00b11 R* vs 4.1\u00b10.5 R* at 500 R*/s). At higher light levels (5000-50,000 R*/s), detection thresholds become similar across cone types.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C79 provide quantitative noise and threshold measurements across multiple light levels. The finding that S cones are noisier at low light (C77, C111) contradicts predictions based on photopigment thermal stability (C71-C72), which is appropriately discussed. The data show clear light-level dependence with thresholds converging at higher backgrounds (C79), indicating the effect is specific to low-light conditions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "Foveal S cones are slower than peripheral S cones (63.5\u00b11.8 ms vs 45.3\u00b10.9 ms at 5000 R*/s), and foveal S cones remain slower than foveal LM cones (63.5\u00b11.8 ms vs 56.1\u00b11.1 ms), demonstrating that both regional and spectral differences in kinetics exist.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C28 and C31-C32 provide quantitative measurements from foveal recordings with appropriate statistical comparisons. The finding parallels prior work on LM cones (C30) and demonstrates the kinetic differences persist across retinal regions. Sample sizes are adequate (21-29 foveal S cones) though smaller than peripheral recordings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C104",
+      "C43"
+    ],
+    "result": "L and M cone responses are functionally identical within measurement resolution, showing no systematic differences in kinetics (time to peak: 24.7\u00b10.7 ms for M vs 23.8\u00b10.5 ms for L cones in voltage clamp; difference of -2.0 to +2.2 ms at 5000 R*/s in current clamp).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43 and C104 are supported by direct comparisons using the same methods applied to S vs LM comparisons. The confidence intervals in Figure 2\u2014figure supplement 1 show L and M cones cluster near unity, contrasting with the clear separation for S vs LM comparisons. This validates grouping L and M cones as 'LM cones' throughout the study and provides an important negative control.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C86",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "The measured 8-10 ms kinetic difference between S and LM cones closely matches the ~12 ms perceptual delay of S-cone signals reported in chromatic discrimination studies, suggesting cone kinetics contribute to perceptual differences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C92 makes an appropriate quantitative comparison between the current physiological findings and prior psychophysical work (C90). The agreement is close (8-10 ms vs ~12 ms) and the perceptual delay applies across color directions (C91), consistent with a cone origin. However, this is correlative evidence; the causal link between cone kinetics and perception is inferred rather than directly tested.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C120",
+      "C121",
+      "C122"
+    ],
+    "result": "Both rising and recovery phases of S-cone responses differ from LM cones, suggesting multiple components of the phototransduction cascade differ between cone types, similar to differences between rods and cones.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C120 is supported by normalized response analysis (Figure 2\u2014figure supplement 2). The inference in C122 that multiple phototransduction components differ is logical given that rising and recovery phases are controlled by different cascade components (C121, established knowledge). The comparison to rod-cone differences (citation to Ingram et al., 2016) provides appropriate context.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C125"
+    ],
+    "result": "The constancy of S-cone kinetics with increasing background suggests either cGMP-turnover rate contributes minimally to S-cone response kinetics, or compensatory slowing of other phototransduction components occurs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C125 presents two alternative mechanistic explanations for the observed constant S-cone kinetics, but the current data cannot distinguish between them. This is appropriately framed as speculation (evidence_type includes SPECULATION). While the observation of constant kinetics is well-supported (C48-C51), the mechanistic interpretation requires additional experiments to test the proposed hypotheses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "S-cone contributions to luminance perception show kinetic changes with light level that exceed those measured in cone photovoltages, suggesting downstream circuit mechanisms differentially shape S-cone responses in chromatic versus luminance pathways.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C98-C100 cite prior psychophysical and physiological work showing S-cone contributions to luminance speed with light level. Claim C101 notes this exceeds the changes measured in the current study. However, C102's inference about differential circuit shaping is speculative (evidence_type includes SPECULATION) and would require direct circuit measurements to confirm. The comparison is complicated by different stimulus conditions and measurement approaches.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C134",
+      "C135"
+    ],
+    "result": "S cones can be reliably identified based on morphological features (appearing smaller, recessed, and out of place), enabling collection of a large dataset (72 peripheral S cones, 32 foveal S cones) that substantially exceeds prior studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C134 describes a methodological advance supported by prior anatomical work (citations to Ahnelt et al., 1987; Packer et al., 2010). Claim C135 documents the resulting sample sizes, which are indeed much larger than prior electrophysiological studies (addressing the limitation noted in C17). This methodological contribution enabled the statistical power necessary for the main findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C116",
+      "C117",
+      "C118",
+      "C119"
+    ],
+    "result": "S cones share phototransduction components with both rods (arrestin1) and LM cones (arrestin3, though at lower levels), suggesting S cones may share functional features with both photoreceptor types based on their evolutionary relationship.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C116-C118 cite established biochemical knowledge about shared components. Claim C119's inference about shared functional features is reasonable given the biochemical data, though it remains somewhat speculative without direct functional measurements. This provides useful context for interpreting the kinetic differences but doesn't directly test functional predictions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C107",
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "Unlike salamander where S cones have lower noise than L cones (consistent with photopigment stability predictions), primate S cones show higher effective noise than LM cones at low light levels, indicating noise originates primarily from sources other than photopigment thermal activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C107-C110 appropriately cite prior work on salamander and photopigment stability. The contrast with primate findings (C111) is well-documented in the noise measurements (C77-C78). This cross-species comparison strengthens the interpretation that primate cone noise has different origins than salamander cone noise, though the specific noise sources remain to be identified.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C130"
+    ],
+    "result": "The results provide information necessary to construct models capturing differences between spectral types of primate cones, expanding on recent models of regional differences in LM cones.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C130 appropriately positions the work as enabling improved retinal models by providing validated cone response properties. This builds on prior work modeling regional LM cone differences (C129, citing Sinha et al., 2017). The comprehensive characterization of S vs LM differences (kinetics, adaptation, noise) does provide the necessary parameters for such models.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,415 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C45",
+      "C60",
+      "C148"
+    ],
+    "result": "Super-resolution microscopy using the 3B (Bayesian Blinking and Bleaching) technique was employed to visualize rotavirus viroplasms (VPs) at nanometric scale, with improvements developed in this work to resolve nanoscopic structures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C45, C60, and C148 collectively establish that the authors successfully applied 3B-SRM to study rotavirus VPs. The methodology is clearly described, and the images in Figure 1 demonstrate the improved resolution compared to conventional microscopy (C62). The development of improvements to the 3B technique is stated but details are relegated to the Appendix.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "A novel segmentation algorithm (VP-DLSFC) was developed and validated to automatically quantify the spatial distribution of viral proteins within VPs, showing high robustness and improved performance compared to alternative methods.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C88 describe the development and validation of the VP-DLSFC algorithm. The algorithm was tested on ~40,000 synthetic images and compared with alternative methods, demonstrating superior performance. The validation approach is rigorous, though the synthetic image generation method is not fully described in the main text.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C137",
+      "C138",
+      "C139",
+      "C140",
+      "C141"
+    ],
+    "result": "Rotavirus VPs are organized as five concentric layers: NSP5 at the center, followed by NSP2-NSP4, then VP1-VP2-VP6, VP4, and finally VP7 as the outermost layer.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This is the central finding of the manuscript, supported by multiple lines of evidence including qualitative SRM imaging (C61-C83), quantitative radius measurements (C89-C94), statistical analysis (C102-C103), hierarchical clustering (C110-C120), and linear regression analysis (C121-C131). The model is validated using alternative reference proteins (C134-C135). The convergence of multiple analytical approaches strongly supports this five-layer organization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C174",
+      "C175",
+      "C176"
+    ],
+    "result": "NSP5 forms the innermost core of VPs, distinguishable from NSP2 by super-resolution microscopy, contrasting with previous conventional microscopy studies that reported colocalization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C90 present quantitative data showing NSP5 has a smaller mean radius than NSP2 (Figure 2A). Claims C174-C175 acknowledge the contrast with prior studies and attribute the difference to improved spatial resolution. The interpretation that NSP5 serves as a core scaffold (C176) is speculative but reasonable given the data. The finding is well-supported by the quantitative analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C82",
+      "C96",
+      "C98",
+      "C125",
+      "C126"
+    ],
+    "result": "NSP4 colocalizes with NSP2 in the same structural layer of VPs, an unexpected finding given NSP4's known role as an ER integral membrane protein.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C80 and C82 establish the unexpected colocalization of NSP4 with NSP2. Claims C96, C98, C125, and C126 provide quantitative support showing similar radii and proportional growth. The finding is surprising given established knowledge about NSP4 (C180-C183), but the data are clear. The authors provide extensive discussion of possible explanations (C185-C207), though the mechanism remains speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C107",
+      "C108",
+      "C127",
+      "C128",
+      "C129"
+    ],
+    "result": "VP1, VP2, and VP6 form a single layer surrounding the NSP2-NSP4 layer, with similar spatial distributions despite initial measurement challenges with VP1 and VP2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C92 show VP1, VP2, and VP6 have slightly larger radii than NSP2. Claims C107-C108 address the statistical challenge that NSP2 radii were smaller when measured with VP1/VP2, but inferential analysis places them in the same layer as VP6. Claims C127-C129 confirm this through linear regression showing similar slopes. The convergence of evidence supports grouping these three proteins in one layer, though the VP1/VP2 measurement issue introduces some uncertainty.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C93",
+      "C130",
+      "C211"
+    ],
+    "result": "VP4 forms an independent layer external to the viroplasmic proteins and internal to VP7.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93 and C130 provide quantitative evidence from radius measurements and linear regression. Claim C211 confirms VP4 forms an independent layer. The data in Figures 2 and 3 clearly show VP4 occupies a distinct spatial position between the VP1-VP2-VP6 layer and VP7.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C94",
+      "C104",
+      "C105",
+      "C118",
+      "C130",
+      "C213",
+      "C214"
+    ],
+    "result": "VP7 monomers and trimers occupy the same outermost layer, indicating VP7 trimerization occurs at the ER membrane before assembly into virus particles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94 and C104 show VP7-Mon and VP7-Tri are at the same distance from NSP2. Claims C105, C213, and C214 provide the mechanistic interpretation that trimerization occurs at the ER membrane. This is a reasonable inference from the colocalization data, supported by prior knowledge about VP7 assembly (C59). The finding is well-supported by the quantitative analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C102",
+      "C103",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C119",
+      "C120"
+    ],
+    "result": "Statistical analyses including Mann-Whitney tests and hierarchical clustering confirm that viral proteins occupy specific, distinct regions within VPs organized as discrete layers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C102-C103 show Mann-Whitney tests demonstrate significant differences in protein distances from NSP2. Claims C109-C120 describe hierarchical clustering that partitions proteins into five clusters corresponding to layers. The statistical approaches are appropriate and converge on the same five-layer model, providing strong quantitative support for the spatial organization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C121",
+      "C124",
+      "C125",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132"
+    ],
+    "result": "Linear regression analysis reveals that the spatial distribution of viral components is conserved regardless of VP size, enabling development of a predictive model for protein layer radii.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C121-C131 describe strong linear relationships between NSP2 radius and other protein radii (Figure 3A). The slopes indicate proportional scaling (C124-C130), supporting size-independent organization (C131). Claim C132 describes the predictive model. The linear regression approach is sound, and the high R\u00b2 values (implied by the tight confidence intervals in Figure 3A) support the conclusions. The predictive model is a useful outcome.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C134",
+      "C135"
+    ],
+    "result": "The five-layer structural organization of VPs was validated using NSP5 and NSP4 as alternative reference proteins, producing identical results with ~0.05 \u03bcm localization error.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C134-C135 describe validation experiments using different reference proteins that confirm the structural model. The ~0.05 \u03bcm error is close to the resolution limit of the 3B algorithm, indicating good consistency. This cross-validation strengthens confidence in the five-layer model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C67",
+      "C68",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "3B-SRM imaging reveals that VPs have a roughly circular shape with viral components forming ring-like structures arrayed as discrete concentric layers, details not visible in diffraction-limited microscopy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C62 establish that SRM reveals structural details not visible in conventional microscopy (Figure 1B vs 1C-E). Claims C67-C68 and C74-C78 describe the ring-like and layered organization observed in SRM images. The visual evidence in Figure 1 clearly demonstrates the improved resolution and layered organization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C156",
+      "C157",
+      "C158",
+      "C159",
+      "C160"
+    ],
+    "result": "The spherical structure of VPs was confirmed by comparing circular and elliptical fitting approaches, showing no significant statistical differences and validating the use of circular models.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C156-C159 describe validation of the circular model assumption by comparison with elliptical fitting. Claim C160 confirms concentric circles share the same center. This validation is important for justifying the VP-DLSFC algorithm's use of circular fitting. The statistical comparison is appropriate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C165",
+      "C166",
+      "C167",
+      "C168",
+      "C169",
+      "C170"
+    ],
+    "result": "Super-resolution images reveal overlapping zones between protein layers and spike-like projections that may facilitate inter-layer protein interactions important for coordinating genome replication and virion assembly.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C165-C167 describe observed overlapping between layers in the SRM images. Claims C168 and C170 speculate about functional significance. While the overlapping is clearly visible in the images (e.g., Figure 1E), the functional interpretation (C168, C170) is speculative and not directly tested. The observations are valid but the mechanistic implications remain uncertain.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "VP4 exhibits ribbon-like projections extending toward the cytoplasm, and small cytoplasmic puncta observed in conventional microscopy are actually ribbon-like structures of various viral proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C70 describe direct observations from SRM images showing ribbon-like structures. Claim C71 speculates these may represent different organization forms of viroplasmic proteins. The observations are clearly visible in the SRM images (Figure 1C), though the interpretation of their functional significance is speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C186",
+      "C187",
+      "C188",
+      "C189",
+      "C190",
+      "C191",
+      "C192",
+      "C193",
+      "C194",
+      "C195",
+      "C196",
+      "C197",
+      "C198",
+      "C199",
+      "C200",
+      "C201",
+      "C202"
+    ],
+    "result": "The unexpected internal localization of NSP4 in VPs may be explained by multiple mechanisms including association with LC3-positive vesicles or lipid droplet-mediated VP assembly, where NSP4 could be incorporated during LD budding from the ER.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C186-C202 present various hypothetical mechanisms to explain NSP4's internal localization, drawing on prior literature about NSP4 pools (C186-C191) and lipid droplet models (C192-C202). While these are plausible explanations consistent with the data and prior knowledge, they remain speculative. The authors appropriately present these as possibilities rather than established mechanisms. Additional experiments would be needed to distinguish between these models.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C203",
+      "C204",
+      "C205",
+      "C206",
+      "C207"
+    ],
+    "result": "RNAi knockdown studies suggest NSP4 may play a dual role in both DLP budding into the ER and as a regulator of VP assembly, as NSP4 depletion reduces VP size and prevents proper localization of structural proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C203-C206 cite prior RNAi studies showing NSP4 knockdown effects. Claim C207 presents the interpretation that NSP4 has a regulatory role in VP assembly. While the RNAi data are from prior work (L\u00f3pez et al., 2005a), the interpretation connecting these findings to the current structural model is reasonable and helps explain the unexpected NSP4 localization.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C208",
+      "C209",
+      "C210"
+    ],
+    "result": "The colocalization of VP1, VP2, and VP6 in the same layer is consistent with their association in DLPs and suggests this zone may be where DLP production occurs, given the replicase activity of the VP1-VP2-VP6-NSP2 complex.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C208 notes the expected colocalization based on DLP structure. Claim C209 cites prior work on the replicase complex. Claim C210 speculates about DLP production location. The colocalization is well-supported by the data, and the functional interpretation is reasonable given established knowledge, though direct evidence for DLP production in this zone is not provided.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C212",
+      "C213",
+      "C214"
+    ],
+    "result": "The spatial arrangement of VP4 and VP7 in consecutive external layers agrees with the established model of rotavirus morphogenesis where VP4 assembles on DLPs before VP7 binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C212 connects the observed spatial arrangement to prior models of morphogenesis. Claims C213-C214 interpret the VP7 monomer/trimer colocalization. The spatial data are consistent with established models (Trask and Dormitzer, 2006), providing validation of both the SRM findings and prior models.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C153",
+      "C154",
+      "C155"
+    ],
+    "result": "The 3B-SRM algorithm was selected for its ability to handle high-density labeling despite higher computational cost, and manual pre-segmentation was used to avoid bias in VP isolation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C153-C155 explain methodological choices. The rationale for selecting 3B-SRM (high-density labeling capability) and using manual pre-segmentation (avoiding bias) is clearly stated. These are reasonable methodological decisions, though the manual pre-segmentation introduces some subjectivity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C177",
+      "C178"
+    ],
+    "result": "The finding that NSP5 is internal to NSP2 contrasts with Eichwald et al. (2004), potentially due to differences in spatial resolution and the use of endogenous structures versus GFP-tagged transiently expressed proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C177-C178 acknowledge and explain discrepancies with prior work. The explanation invoking both improved resolution and differences in experimental systems (endogenous vs. overexpressed proteins) is reasonable. This appropriately addresses potential concerns about conflicting findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C49",
+      "C50",
+      "C144",
+      "C145",
+      "C146",
+      "C147"
+    ],
+    "result": "Background information establishes that rotavirus VPs are sites of genome replication and assembly, previous microscopy studies lacked molecular-scale resolution, and super-resolution microscopy has not been previously applied to study rotavirus VPs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims provide established background knowledge about rotavirus biology (C1, C12-C32), prior microscopy limitations (C2, C36-C41, C49-C50), and the novelty of applying SRM to rotavirus (C145-C147). The background is well-supported by citations and accurately represents the state of the field.",
+    "result_type": "MINOR"
+  }
+]

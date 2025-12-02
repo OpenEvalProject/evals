@@ -1,0 +1,450 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C31",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "The genetic basis for differential aneuploidy tolerance between wild and laboratory yeast strains maps to SSD1, an RNA-binding translational regulator. SSD1 deletion sensitizes wild aneuploid strains to chromosome amplification across multiple genetic backgrounds and chromosomes, and the defective W303 allele is responsible for aneuploidy sensitivity in W303.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C36-C48 provide converging genetic mapping, deletion, and complementation evidence demonstrating that SSD1 is the causal locus. The mapping data (C2, Figure 1B), deletion phenotypes across multiple strains (C36-C42), and complementation experiments (C43-C47) collectively support this major finding with appropriate controls and statistical analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "Loss of SSD1 recapitulates the transcriptomic signature of aneuploidy previously reported in W303, including induction of environmental stress response genes and repression of rRNA/tRNA processing genes. This signature is independent of the amplified chromosome and is exacerbated with increasing DNA content.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C58 are supported by RNA-seq data (Figure 2A) showing 861 differentially expressed genes in ssd1\u0394 aneuploids that recapitulate the W303 signature. The analysis includes appropriate statistical thresholds (FDR < 0.05), functional enrichment analysis, and comparison to published W303 data. Multiple biological replicates strengthen the conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "Loss of SSD1 causes proteostasis defects in aneuploid cells, as evidenced by accumulation of VHL-GFP foci and increased Hsp104-GFP foci. Wild-type aneuploids do not show gross protein aggregation, indicating this is not a universal feature of aneuploidy but rather depends on SSD1 function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C64 are supported by microscopy data (Figure 2B-C) showing increased protein aggregation markers in ssd1\u0394 aneuploids compared to wild-type aneuploids. The use of established reporters (VHL-GFP, Hsp104-GFP) and quantification across biological replicates with statistical testing provides strong evidence. The conclusion that aggregation is not universal to aneuploidy (C61) is appropriately inferred from the wild-type data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "Ssd1 binds 286 mRNAs by immunoprecipitation, enriched for cell-wall proteins, cell-cycle regulators, and diverse cellular functions including mitochondrial proteins. Ssd1-bound mRNAs are not enriched for amplified chromosome genes, and most bound transcripts are not differentially expressed in the mutant, suggesting the mechanism of tolerance is not through modulating amplified-gene expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C84 are supported by RIP-seq data with appropriate statistical thresholds (FDR < 0.05) and functional enrichment analysis (p<1e-4). The observation that most bound transcripts are not differentially expressed (C82) and most differentially expressed genes are not bound (C83) is supported by the data comparison. The inference that the mechanism is not through modulating amplified-gene expression (C81) is reasonable given the lack of enrichment for amplified chromosome genes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "Ssd1 affects the proteome of aneuploid cells, with 301 proteins more abundant in ssd1\u0394 aneuploids. Many proteins are elevated beyond mRNA differences, including nuclear-encoded mitochondrial proteins. Specific Ssd1-bound transcripts like UTH1 show translational dysregulation with ~4X more protein despite little mRNA change.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C93 are supported by quantitative proteomics data (Figure 3A-B) with appropriate statistical analysis (FDR < 0.05, hypergeometric test p=6e-4). The integration of proteomics with RNA-seq and RIP-seq data strengthens the conclusions about translational regulation. The UTH1 example (C90-C91) provides a specific case study supported by both current data and citations to previous literature on Ssd1-mediated translational control.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "ssd1\u0394 aneuploids show synergistic defects in mitochondrial function, including sensitivity to non-fermentable acetate and CCCP, altered mitochondrial morphology, and increased fragmentation. The defects are specific to mitochondrial stress and occur across multiple strain backgrounds and chromosomes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97-C107 are supported by growth rate measurements (Figure 4A-B), mitochondrial morphology analysis (Figure 4C-D), and appropriate controls showing no synergistic sensitivity to cell wall or ER stress (C102, Figure 4\u2014figure supplement 1). The use of multiple strain backgrounds and statistical testing (p<2e-4) strengthens the conclusions. The morphology quantification includes sufficient cell numbers (>200-400 cells) and statistical analysis (p<0.0001).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117"
+    ],
+    "result": "Ssd1 associates with organelle fractions including mitochondria, binds nuclear-encoded mitochondrial transcripts, influences mitochondrial protein abundance and transcript localization (e.g., MMR1), and is required for proper mitochondrial function and inheritance in aneuploid cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C108-C117 are supported by cellular fractionation (Figure 5A), smFISH data (Figure 5B-C), Rhodamine staining (Figure 5D), and integration with RIP-seq and proteomics data. The smFISH quantification shows twice as many buds lacking MMR1 in ssd1\u0394 (C110, p<0.02), and Rhodamine staining shows double the cells lacking mitochondria (C111). The convergence of multiple experimental approaches supports the conclusion that SSD1 is required for mitochondrial function in aneuploids (C117).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C140",
+      "C141"
+    ],
+    "result": "Combinatorial drug treatment with CCCP and NTC, which mimic mitochondrial dysfunction and proteostasis stress, selectively blocks proliferation of wild-type aneuploids compared to euploids. This demonstrates that combined dysfunction in mitochondria and proteome management is responsible for aneuploidy sensitivity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C122-C133, C140-C141 are supported by drug treatment experiments (Figure 6) showing synergistic effects of CCCP+NTC on aneuploid growth across multiple strains and chromosomes. The microscopy data (C122-C123, Figure 6B) shows increased Hsp104-GFP foci with drug treatment. The growth measurements (Figure 6C-D) demonstrate selective targeting of aneuploids with appropriate controls and statistical analysis. The conclusion that combined dysfunction is responsible (C141) is well-supported by the experimental design testing the prediction from the model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C134",
+      "C135",
+      "C136"
+    ],
+    "result": "Mutation of a single gene (SSD1) explains the phenotypic difference in aneuploidy tolerance among strains studied, and many yeast phenotypes previously reported as signatures of aneuploidy can be caused by SSD1 deletion or mutation as seen in W303.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C134-C136 represent integrative conclusions drawn from the genetic mapping, complementation, and phenotypic characterization data presented throughout the manuscript. The conclusion that SSD1 mutation explains the strain differences (C134) is supported by the genetic evidence (C2, C36-C48). The claim that many W303 aneuploidy signatures result from SSD1 defects (C135) is supported by the transcriptomic, proteomic, and phenotypic data (C51-C65). These are appropriate inferences from the experimental data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C138",
+      "C142",
+      "C143",
+      "C144",
+      "C156",
+      "C157"
+    ],
+    "result": "The authors propose a model where Ssd1's function in translational silencing and mitochondrial physiology enables aneuploidy tolerance in wild yeast. Wild aneuploids buffer the effects of chromosome amplification but may exist near their proteostatic capacity, and additional stress pushes cells beyond capacity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C138, C142-C144, C156-C157 represent the authors' mechanistic model integrating their findings. While these are inferences rather than direct experimental observations, they are well-supported by the collective data on Ssd1's roles in translation (C145-C149), mitochondrial function (C97-C117), proteostasis (C59-C65), and the drug sensitivity experiments (C122-C133, C140-C141). The model is consistent with all experimental observations and provides a coherent framework for understanding the results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C1",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "Wild isolates of S. cerevisiae tolerate chromosome amplification while laboratory strain W303 does not. A substantial number of wild strains are naturally aneuploid, showing only subtle growth defects and lacking canonical stress responses, and this tolerance is not due to adaptation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C21-C30 summarize prior work by the authors (Gasch et al., 2016; Hose et al., 2015) and others (Peter et al., 2018) establishing the phenotypic differences between wild and laboratory strains. These claims are appropriately cited and provide essential context for the current study. The evidence is from published work rather than new data in this manuscript.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C49",
+      "C50"
+    ],
+    "result": "In laboratory strain W303, chromosome amplification leads to multiple defects including reduced growth, metabolic alterations, cell-cycle defects, a common transcriptome signature, and proteostasis stress. This transcriptomic signature is not seen in wild aneuploid strains.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C19, C49-C50 summarize well-established findings from previous literature (Torres et al., 2007 and others) about W303 aneuploidy phenotypes. These claims are appropriately cited and provide important context for understanding how the current work resolves discrepancies in the literature. The evidence is from prior published work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C145",
+      "C146",
+      "C147",
+      "C148"
+    ],
+    "result": "Ssd1 is characterized for regulating localization and translation of cell-wall destined mRNAs, delivering them to the bud during growth or to P-bodies during stress. Ssd1 has roles in aging, quiescence, and translational regulation including P-body localization and polysome reduction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C35, C145-C148 summarize established knowledge about Ssd1 function from previous literature (Jansen et al., 2009; Kurischko et al., 2011a; and others). These claims are appropriately cited and provide essential background for understanding Ssd1's known functions. The evidence is from prior published work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "Both euploid and aneuploid ssd1\u0394 mutants were highly sensitive to a high-copy gene over-expression library, with genes deleterious in wild type becoming toxic in the mutant, and many neutral genes becoming deleterious.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C68 are supported by barcode sequencing data from the MoBY overexpression library (Figure 2D). However, the authors acknowledge potential confounding from plasmid maintenance defects, and the biological interpretation is somewhat limited. The data show sensitivity but the mechanism remains unclear. This is a supporting observation rather than a central finding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "The ssd1\u0394 aneuploid transcriptome shows broader induction of genes encoding proteins localized to multiple organelles (mitochondria, ER, vacuole, peroxisome, plasma membrane, cell wall) and displays signatures of unfolded ER-protein response and mitochondrial protein import stress.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C71 are supported by functional enrichment analysis of RNA-seq data (p<1e-4) and analysis for UPR and mito-CPR signatures. These findings provide additional detail about the transcriptional response in ssd1\u0394 aneuploids and support the broader conclusions about organellar dysfunction, but are secondary to the main findings about mitochondrial and proteostasis defects.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "Wild aneuploid strains down-regulate many nuclear-encoded mitochondrial transcripts, a response also seen in Down syndrome models, suggesting mitochondrial regulation is important for tolerating chromosome amplification.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94-C96 summarize prior work by the authors (Hose et al., 2015) and others (Helguera et al., 2013; Liu et al., 2017) showing down-regulation of mitochondrial transcripts in wild aneuploids and Down syndrome. These claims provide important context for the mitochondrial findings but represent prior work rather than new data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C149",
+      "C150",
+      "C151",
+      "C152",
+      "C153",
+      "C154",
+      "C155"
+    ],
+    "result": "Ssd1's role in mitigating proteostatic stress likely emerges via RNA binding. Proteins encoded by Ssd1 targets are enriched among aggregation-prone proteins in W303 aneuploids and are predicted to have higher fractions of disordered regions, pointing to a protective role for Ssd1 in handling aggregation-prone proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C149-C155 integrate the current RIP-seq data with published aggregation data (Brennan et al., 2019) and computational predictions of protein disorder. The enrichment analysis (p=0.005, C154) and disorder predictions (p<2e-16, C155) support the model. However, these are correlative analyses and computational predictions rather than direct experimental tests of the proposed mechanism. The conclusions are reasonable inferences but would benefit from additional experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C20"
+    ],
+    "result": "Aneuploidy is highly detrimental during mammalian development but common in tumors and fungal pathogens. In tumors, aneuploidy shows little detriment and is associated with poorer prognosis. Chromosome amplification represents a major route to drug resistance in pathogenic infections and can be beneficial in the right environment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C14, C20 summarize established knowledge about aneuploidy in development, cancer, and fungi from the literature. These claims are appropriately cited and provide important context for the significance of the work. The evidence is from prior published work and general knowledge in the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C158",
+      "C159",
+      "C160",
+      "C161",
+      "C162",
+      "C163",
+      "C164"
+    ],
+    "result": "Underlying ssd1\u0394 defects are exacerbated by chromosome amplification. Defects in mitochondrial function and cytosolic proteome management are linked in neurological syndromes, aging, and aneuploidy, with bidirectional interactions between mitochondrial dysfunction and cytosolic protein stress.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C118-C121, C158-C164 summarize established knowledge from the literature about connections between mitochondrial function and proteostasis. These claims are appropriately cited and provide important conceptual framework for interpreting the results. Claim C118 is an inference from the data showing more severe defects in aneuploids. The evidence for the broader claims is from prior published work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C165",
+      "C166",
+      "C167"
+    ],
+    "result": "Mitochondrial defects in ssd1\u0394 cells may arise as a secondary consequence of Ssd1 dysfunction, but Ssd1 may also play a more direct function in mitochondrial physiology, potentially playing a broader role in localizing and/or handling mitochondrial mRNAs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C165-C167 are explicitly speculative (\"may arise,\" \"raises the possibility,\" \"may play\"). While the data show Ssd1 associates with mitochondria-enriched fractions, binds mitochondrial mRNAs, and affects mitochondrial protein abundance and localization, the mechanism remains unclear. The authors appropriately acknowledge uncertainty about whether effects are direct or indirect. Additional experiments would be needed to distinguish these possibilities.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C168",
+      "C169",
+      "C170",
+      "C171",
+      "C172",
+      "C173"
+    ],
+    "result": "The model that wild strains can handle chromosome stress but exist near buffering capacity is compatible with results from other systems. Some but not all aneuploid mammalian cell lines show signs of proteome stress, and proteostasis stress may not be universal but rather reflects variable buffering capacity across lines.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C168-C173 discuss the compatibility of the authors' model with mammalian aneuploidy studies. The claims about variable proteostasis signatures in mammalian aneuploids (C169-C171) are supported by citations to previous literature. The speculation that this reflects variable buffering capacity (C172-C173) is a reasonable interpretation but remains to be tested. These claims appropriately contextualize the yeast findings within the broader aneuploidy literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C174",
+      "C175",
+      "C176",
+      "C177",
+      "C178",
+      "C179"
+    ],
+    "result": "Trisomy 21 produces variable severity in Down syndrome, implicating genetic modifiers. DS proteomes show some commonalities including down-regulation of mitochondrial proteins, while other responses are variable. Natural genetic variation in yeast may also contribute to aneuploidy sensitivity, with at least five truncated SSD1 alleles segregating in populations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C174-C176 summarize findings from Down syndrome studies (Antonarakis, 2017; Liu et al., 2017) showing variable severity and proteome responses. Claim C178 about truncated SSD1 alleles in yeast populations is supported by citation to a large-scale sequencing study (Peter et al., 2018). Claims C177 and C179 are speculative about future research directions but are reasonable given the data. These claims provide important context for the broader significance of the findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C180",
+      "C181",
+      "C182",
+      "C183",
+      "C184",
+      "C185",
+      "C186",
+      "C187",
+      "C188"
+    ],
+    "result": "Ssd1 is orthologous to human Dis3L2, an RNA binding protein involved in RNA decay. Dis3L2 shares several features with Ssd1 and is implicated in Perlman syndrome, Wilms tumor, apoptosis, and aneuploidy (knockdown increases chromosome instability).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C180-C187 summarize established knowledge about Dis3L2 from the literature, appropriately cited. These claims provide important context for the potential relevance of the findings to human biology. Claim C188 about future work is speculative but reasonable. The evidence is from prior published work on Dis3L2.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C127",
+      "C128",
+      "C137",
+      "C139"
+    ],
+    "result": "Mitochondrial defect, protein over-abundance, and mislocalized transcripts/proteins from SSD1 deletion may push cells over capacity. Wild aneuploid strains studied do not show signs of metabolic or proteostatic stress under standard conditions. Integrating results reconciles to a holistic view of eukaryotic aneuploidy physiology.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C127 is speculative reasoning about mechanism but is supported by the collective data. Claim C139 is supported by the data showing wild-type aneuploids lack stress signatures. Claims C128 and C137 are speculative about broader implications and future directions but are reasonable given the findings. These represent appropriate discussion of the work's significance and limitations.",
+    "result_type": "MINOR"
+  }
+]

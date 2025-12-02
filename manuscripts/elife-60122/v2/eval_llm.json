@@ -1,0 +1,298 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C17",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "The meta-analysis integrated data from 21 studies (19 peer-reviewed articles and 2 preprints) comprising 3,214 datapoints from 516 individuals with varying disease severity. The study employed diverse analytical approaches including stepwise bootstrapping for seroconversion times (270 IgG and 240 IgM datapoints from 99 and 71 individuals respectively), detection probability analyses (8,053 IgG and 7,935 IgM datapoints), and RNA detection analyses across different sample types.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C17, C59-C65 provide comprehensive documentation of the study's data sources, sample sizes, and methodological approach. The explicit reporting of study composition, sample sizes for different analyses, and sensitivity analyses (excluding preprints) demonstrates methodological rigor. The heterogeneity in assays and antigens (C17) is appropriately acknowledged and addressed through the analytical framework.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C2",
+      "C18",
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "Mean seroconversion times for IgG and IgM are approximately 12-13 days post-symptom onset (IgG ELISA-NP: 13.3 days; IgM ELISA-Spike: 12.6 days), with no significant difference between antibody types (t=0.22, p=0.84). However, substantial individual variation exists (sd=5.7 for IgG, sd=5.8 for IgM), with observed seroconversion times ranging from 1-40 days.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C18-C21 are well-supported by statistical analyses with appropriate reporting of means, standard deviations, and statistical tests. The consistency across different assays (ELISA and MCLIA per C20) strengthens the findings. The large standard deviations relative to means appropriately highlight substantial inter-individual variability, which is a key finding of the study.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C3",
+      "C22",
+      "C23",
+      "C24",
+      "C49"
+    ],
+    "result": "Disease severity does not significantly affect seroconversion timing for either IgG or IgM antibodies. Statistical comparisons show no significant differences between mild/moderate and severe/critical cases for IgM (12.3 vs 13.2 days, p=0.83) or IgG (12.9 vs 15.5 days, p=0.35).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C22-C24, C49 are supported by appropriate statistical tests (t-tests) with reported p-values, degrees of freedom, and effect sizes. The finding contradicts some prior literature, which the authors acknowledge and discuss. However, the relatively small sample size for severe/critical cases (n=58) compared to mild/moderate (n=166) may limit statistical power to detect modest effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C4",
+      "C25",
+      "C26",
+      "C46"
+    ],
+    "result": "IgG detection probability increases from approximately 10% at symptom onset to 98-100% by days 22-27 post-symptom onset, remaining at this maximum level for at least 60 days (for ELISA-Spike). This pattern is consistent across different assay types.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C25, C26, C46 are supported by detection probability analyses with appropriate sample sizes (8,053 datapoints) and binomial confidence intervals. The consistency across assays strengthens the conclusion. However, data beyond 30 days are acknowledged as limited, which appropriately qualifies the long-term persistence claims.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C5",
+      "C27",
+      "C28",
+      "C47"
+    ],
+    "result": "IgM detection probability follows a different temporal pattern than IgG, peaking at approximately 90% around days 23-25 post-symptom onset, then declining to roughly 65% by day 60. This indicates that a growing proportion of individuals lose detectable IgM after day 28-30.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C27, C28, C47 are supported by detection probability data (7,935 datapoints) showing the characteristic waning of IgM responses. The pattern aligns with established immunological principles. However, the limited data after day 30 (acknowledged in the manuscript) introduces uncertainty about the precise trajectory of IgM decline.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C29"
+    ],
+    "result": "Neutralizing antibody detection probability rapidly rises to near 100% and remains elevated up to 29 days post-symptom onset.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C29 is explicitly noted as based on sparse data, with observations only up to 29 days. While the pattern is described, the authors appropriately acknowledge data limitations. The small sample size and short observation period prevent strong conclusions about neutralizing antibody kinetics, though the observed pattern is consistent with other antibody responses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C30"
+    ],
+    "result": "Detection probability patterns do not differ significantly between mild/moderate and severe/critical cases, except for a slightly steeper rise in severe/critical cases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C30 is supported by comparative analyses shown in supplementary figures. The finding of minimal differences aligns with the seroconversion timing results (C22-C24). However, the description of a 'slightly steeper rise' lacks quantitative specification, making it difficult to assess the magnitude and significance of this difference.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C6",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "RNA detection probability is high (80-100%) at symptom onset, with lower respiratory tract samples showing consistently highest detection rates (100% in first 8 days). Detection probability decreases most rapidly for upper respiratory samples, with all sample types approaching zero detection by day 30 post-symptom onset.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C31-C34, C53-C55 are supported by RNA detection analyses with substantial sample sizes (7,443 upper respiratory, 1,793 lower respiratory, 1,179 fecal samples). The sample type-specific patterns are clearly documented. However, the authors appropriately note that lower respiratory samples were not available beyond day 29, limiting conclusions about the true detection endpoint for this sample type.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C7"
+    ],
+    "result": "RNA detection is highest in feces and lower respiratory tract samples.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C7 is supported by the detection probability data showing consistently high rates for these sample types. However, there is some inconsistency in the manuscript: C32 and C53 emphasize lower respiratory tract as consistently highest, while C7 groups feces and lower respiratory together. The data in Figure 2b suggest lower respiratory is consistently highest throughout, with fecal samples showing high initial detection but more rapid decline.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C35",
+      "C36"
+    ],
+    "result": "Peak antibody levels are reached around days 14-20 post-symptom onset, with timing dependent on target antigen. Both IgG and IgM peak earlier when measured using ELISA-NP (mean=14.3 days, 95% CrI 12.0-16.1) compared to ELISA-Spike (mean=20.0 days, 95% CrI 17.6-22.4).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C36 are supported by Bayesian MCMC modeling with appropriate reporting of credible intervals. The 95% CrI for the difference (2.7 to 9.2 days) excludes zero, supporting a significant antigen effect. This finding has important implications for assay selection and interpretation, representing a novel contribution of the meta-analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C37"
+    ],
+    "result": "Peak timing does not differ significantly between IgG and IgM when measured using the same assay (ELISA-Spike or ELISA-NP).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C37 is supported by Bayesian analyses showing overlapping 95% credible intervals that include zero for both ELISA-Spike (CrI: -6.4 to 3.5) and ELISA-NP (CrI: -1.8 to 7.8). This suggests that the kinetic differences between antibody types are less pronounced than differences attributable to target antigen.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C38",
+      "C48"
+    ],
+    "result": "Antibody growth rates are higher for ELISA-NP (mean=0.55/day, 95% CrI 0.48-0.64) compared to ELISA-Spike (mean=0.39/day, 95% CrI 0.34-0.44), indicating that responses against NP rise faster than those against Spike for both IgM and IgG.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38 and C48 are supported by Bayesian modeling with credible intervals for the difference (0.07 to 0.26) excluding zero. This antigen-specific difference in kinetics is consistent with the earlier peak timing for NP (C36) and represents an important finding for understanding immune responses and selecting appropriate assays.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C39"
+    ],
+    "result": "The rate of antibody increase does not differ significantly between IgM and IgG when measured using the same assay.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C39 is supported by Bayesian analyses showing overlapping credible intervals for both ELISA-Spike (CrI: -0.08 to 0.13) and ELISA-NP (CrI: -0.50 to 0.14). This finding parallels the peak timing results (C37), suggesting that antigen choice has a larger effect on kinetics than antibody isotype.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C40",
+      "C42"
+    ],
+    "result": "Disease severity does not significantly affect IgG antibody kinetics, including neither the time to peak levels (mild: 14.0 days vs severe: 15.9 days, 95% CrI for difference: -8.0 to 4.2) nor the growth rate (mild: 0.58/day vs severe: 0.51/day, 95% CrI for difference: -0.16 to 0.28).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40 and C42 are supported by Bayesian analyses with credible intervals including zero. This finding is consistent with the seroconversion timing results (C22, C24) and contributes to the overall conclusion that disease severity has minimal impact on early antibody responses. However, the wide credible intervals suggest limited precision in these estimates.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C41",
+      "C43",
+      "C50"
+    ],
+    "result": "For IgM, disease severity significantly affects antibody kinetics: peak levels are reached approximately 7 days earlier in mild cases (15.6 days) compared to severe cases (22.7 days, 95% CrI for difference: -12.2 to -1.8), and growth rates are faster in mild cases (0.51/day vs 0.34/day, 95% CrI for difference: 0.05 to 0.28).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41, C43, C50 are supported by Bayesian analyses with credible intervals excluding zero, indicating significant effects. This represents the only consistent effect of disease severity on antibody responses in the study. However, the biological interpretation is unclear, and the authors appropriately note uncertainty about whether this reflects a meaningful biological difference given the lack of effects on other parameters.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C44",
+      "C45"
+    ],
+    "result": "IgG and IgM can be detected as early as day 0 post-symptom onset in 10-20% of patients, indicating that seroconversion can occur at or before symptom onset.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C45 are supported by the detection probability data. The inference that seroconversion can occur before symptom onset (C45) is reasonable given the 10-20% detection at day 0. However, this interpretation assumes symptom onset is accurately reported and that antibodies detected at day 0 represent true seroconversion rather than pre-existing cross-reactive antibodies, which is not directly tested.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C51"
+    ],
+    "result": "Mild cases could be substantial contributors to herd immunity development, given that disease severity does not have major effects on early-phase antibody patterns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C51 makes an inference about herd immunity based on the finding of similar antibody kinetics across disease severity. However, this conclusion requires the assumption (explicitly stated) that there is 'no cryptic relationship between severity and the factors governing protective immunity.' Since the correlation between antibody presence/levels and protective immunity is acknowledged as unknown (C52), this inference is speculative. The claim appropriately uses conditional language ('could be') but extends beyond what the data directly support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C52"
+    ],
+    "result": "It is not yet known whether the presence of IgG or IgM correlates with protective immunity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C52 appropriately acknowledges a critical limitation in interpreting the clinical significance of antibody detection. This is supported by citation to Altmann et al. 2020 and represents an important caveat for all conclusions about immunity and protection based on antibody detection alone.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C56"
+    ],
+    "result": "The presence of RNA does not necessarily imply the presence of live virus.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C56 is an important methodological caveat supported by citations (Theel et al. 2020, W\u00f6lfel et al. 2020). This distinction between RNA detection and infectious virus is critical for interpreting the clinical and epidemiological significance of PCR results, particularly at later timepoints when RNA may persist without viable virus.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C57",
+      "C58"
+    ],
+    "result": "The mean incubation period is estimated at 7-8 days (sd=4.4), with mild cases having longer incubation periods (8.3 days) than severe cases (6.5 days).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C58 are appropriately cited to Ma et al. 2020 and are used to contextualize potential limitations of using time since symptom onset as the temporal reference. The authors appropriately note that variation in incubation period could affect relative timing estimates, particularly when comparing disease severity groups.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "The introduction establishes the rationale for serological studies by citing prior work on the utility of antibody data for population-level epidemiology (attack rates, herd immunity, transmission models) and individual-level diagnostics (past exposure, infection timing, protection from reinfection).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C16 appropriately cite published literature to establish the scientific context and importance of the study. These claims represent standard background knowledge and established applications of serology, properly attributed to relevant sources. The citations support the study's motivation but do not constitute results of the current work.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,213 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "The study analyzed 11,247 orthologous protein-coding genes from 39 bird species using multiple computational methods (PAML site models, HyPhy BUSTED, and aBS-REL) to detect signatures of positive selection. The methodology included rigorous alignment filtering, phylogenetic tree construction, and multiple testing correction with FDR-corrected p-values < 0.05 as the significance threshold.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1 and C93-C101 describe a comprehensive and well-documented methodological approach. The use of multiple independent methods (PAML, HyPhy), appropriate statistical corrections (Benjamini-Hochberg FDR), and clear significance thresholds provides robust evidence for the analytical framework. The methods are standard in the field and appropriately applied.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "Between 17-73% of genes show evidence of positive selection depending on the model used, with 14% (1,562 genes) identified as under positive selection by all tests. These high-confidence genes have significantly higher \u03c9 values (median 0.344) compared to non-selected genes (median 0.084), and longer alignment length significantly increases power to detect selection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C42 present consistent results across multiple statistical models with appropriate acknowledgment of model-dependent variation. The identification of a conservative high-confidence set using all tests is methodologically sound. The correlation between alignment length and detection power (C42) is appropriately noted as a potential confounding factor, and statistical support is provided for all major findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "KEGG pathway enrichment analysis identified 18 significantly enriched pathways (q < 0.1) belonging to seven functional categories: immune system, recombination/repair, lipid metabolism, phototransduction, infectious disease, signaling molecules, and sensory system. These pathways contain both shared and unique genes, indicating the enrichment is not driven by a few core genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2-C5 and C43-C48 describe pathway enrichment results with appropriate statistical thresholds (q < 0.1) and multiple reference organisms tested (chicken, zebra finch, human). The analysis accounts for potential gene length bias and demonstrates that enrichment patterns are robust. The finding that many genes are uniquely enriched in single pathways (C48) strengthens the biological interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C49"
+    ],
+    "result": "PC1 from PCA of aBS-REL parameter estimates is significantly negatively correlated with log-transformed body mass using phylogenetic generalized least squares (proportion of sites: \u03b2 = -1.04, p = 0.0001; \u03c9: \u03b2 = -10.24, p = 0.0016).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C49 reports a statistically significant correlation using appropriate phylogenetic comparative methods (PGLS). The analysis accounts for phylogenetic non-independence and provides effect sizes, standard errors, and p-values. However, the biological interpretation of this correlation remains somewhat speculative and would benefit from additional validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "There is significant overlap in positively selected genes between birds and mammals at all FDR-corrected p-value cutoffs tested (0.1, 0.01, 0.001, 0.0001), with stronger signal at more stringent cutoffs. This overlap cannot be explained by constraint bias or alignment length, and shared selected genes are significantly enriched for viral immune pathways, particularly Influenza A and Herpes simplex infection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C54 demonstrate cross-taxa conservation of selection signatures using multiple statistical approaches including Fisher's exact tests, logistic regression controlling for confounders, and pathway enrichment with randomization tests. The analysis appropriately addresses alternative explanations (constraint, gene length) and shows consistent patterns across multiple significance thresholds, providing strong evidence for shared pathogen-mediated selection.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "Genes up-regulated in response to pathogens are significantly more likely to be under positive selection in birds across all seven pathogen types tested. For viral and bacterial pathogens, there is significant overlap in up-regulated genes between birds and mammals, while Plasmodium shows overlap in down-regulated genes. Genes under selection in both lineages have larger differential expression effect sizes, particularly for viruses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C60 integrate transcriptomic data from 12 bird studies and 14 mammal studies with selection analyses. The consistent pattern across multiple independent pathogen challenges strengthens the conclusions. Statistical support is provided through logistic regression and Mann-Whitney U-tests. The identification of specific genes (PKR, PARP9, MX1) under selection and differentially expressed in both clades provides concrete examples supporting the broader pattern.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C61",
+      "C64",
+      "C67",
+      "C70",
+      "C71"
+    ],
+    "result": "The combined evidence from pathway enrichment, cross-taxa comparisons, and transcriptomic analyses supports the hypothesis that pathogens, particularly viruses, consistently target the same genes across divergent clades (birds and mammals), and these genes represent hotspots of host-pathogen conflict over deep evolutionary time.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C10, C61, C64, C67, C70-C71 represent the main interpretive conclusions of the study. These are well-supported by the convergence of multiple independent lines of evidence: (1) significant overlap in selected genes between birds and mammals, (2) enrichment for viral immune pathways in shared selected genes, (3) correlation between positive selection and pathogen-induced gene expression, and (4) stronger signals for viral compared to other pathogens. The inference is logical and conservative given the data presented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "Five of ten avian TLRs are present in the dataset, with TLR5 showing the highest proportion of selected sites and endosomal TLRs (TLR3, TLR7) showing the lowest, confirming previous studies. TRIF (TICAM1), a signaling gene in the Influenza A pathway, shows selection in 61% of avian lineages, one of the highest proportions in the dataset.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C76 provide validation of the methods by replicating previous findings on TLR evolution (C73-C74) and identify novel candidates for host-pathogen coevolution (C75-C76). The consistency with prior work (Alcaide and Edwards 2011; Grueber et al. 2014) strengthens confidence in the overall approach, while the identification of TRIF extends understanding beyond classical receptor genes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "The introduction establishes the biological context by citing prior work showing immune pathways are common targets of selection across taxa, birds share features with mammals including common pathogens, and birds have genomic characteristics (small genomes, stable chromosomes, low repetitive elements) that make them suitable for comparative genomics, though genome-wide selection scans in birds were previously lacking.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C32 are primarily citation-based background claims that establish the rationale for the study. These are appropriately supported by references to published literature and represent accurate characterizations of prior knowledge. The claim that no prior genome-wide selection studies existed in birds (C19) provides important context for the novelty of the work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C65",
+      "C66",
+      "C68",
+      "C69",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "The discussion contextualizes findings within existing literature, noting that immune responses are conserved between birds and mammals, network architectures constrain pathogen interactions, viruses show host-switching tendencies, and various non-immune pathways (DNA repair, lipid metabolism, phototransduction) may be under selection due to direct or indirect pathogen interactions or other selective pressures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C92 are primarily interpretive statements supported by citations to relevant literature. These appropriately place the current findings in broader context and offer plausible mechanistic explanations. The discussion acknowledges alternative explanations (e.g., life history for lipid metabolism pathways) and notes where interpretations are speculative, demonstrating appropriate scientific caution.",
+    "result_type": "MINOR"
+  }
+]

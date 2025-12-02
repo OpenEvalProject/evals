@@ -1,0 +1,325 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "The authors determined the cryo-EM structure of mouse KCC4 in lipid nanodiscs at 3.65 \u00c5 resolution, capturing the transporter in an inward-open conformation. The structure enabled de novo modeling of the transmembrane and extracellular regions and revealed bound K+ and Cl- ions, two glycosylation sites, and a monomeric architecture.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C38-C43 describe the structural determination methodology and resolution, which are well-documented with cryo-EM data (Figures 2, 2-supplements). The monomeric state (C44) is supported by multiple lines of evidence including cryo-EM observations, cross-linking experiments, and gel filtration (C61-C66). The inward-open conformation (C6) is supported by structural analysis showing sealed extracellular surface and open intracellular cavity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "KCC4 expressed in Sf9 cells displays functional transport activity as measured by Tl+ uptake assay, with no significant difference between N- and C-terminally GFP-tagged constructs. Negative controls (SWELL1 and uninfected cells) showed no activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C37 are supported by functional assay data in Figure 1B,C showing increased fluorescence over time for KCC4 constructs but not controls. The statistical comparison between N- and C-terminal tags is explicitly shown with appropriate controls, validating the functional expression system used for structural studies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C49",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "The N-terminal region and C-terminal domain (CTD) of KCC4, comprising approximately half the protein mass, are not resolved in the cryo-EM structure. Mass spectrometry confirms the CTD is present (47% coverage, 81% abundance) but flexible/disordered, with progressive loss of density in TM11-12 connecting to the CTD.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C58 are well-supported by multiple lines of evidence: absence of density in cryo-EM maps, mass spectrometry data (Figure 2-supplement 7), local resolution analysis (Figure 2-supplements 5B, 6), and 2D class averages showing blurred CTD features (Figure 2-supplement 3B,D). The conclusion that these regions are flexible/disordered rather than proteolyzed is supported by the mass spec data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "KCC4 adopts a monomeric structure in nanodiscs, contrasting with dimeric structures of NKCC1 and KCC1. Multiple lines of evidence exclude disruption of dimers during purification, including cryo-EM observations before/after nanodisc reconstitution, cross-linking experiments showing reduced cross-linking after deglycosylation, and gel filtration across different conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C66 provide comprehensive evidence for the monomeric state through cryo-EM (Figure 2-supplements 2-3), cross-linking (Figure 2-supplement 2F), and gel filtration (Figure 2-supplement 8). The inference that cross-linking in glycosylated KCC4 involves glycan-glycan interactions (C65) is reasonable given the reduction upon deglycosylation. The comparison to NKCC1 and KCC1 dimeric interfaces is well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "The KCC1-type dimerization interface involving an extracellular loop is not functionally relevant for KCC4. The loop is poorly conserved in KCCs, incompatible with dimer formation in KCC4 due to steric clashes, and a triple mutation (S404E/R405E/G407E) designed to disrupt this interface has no effect on transport activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C71 are supported by sequence alignment (Figure 3E), structural modeling showing steric clashes (Figure 3B), and functional data showing no activity change with the triple mutation (Figure 3F). The conclusion that this dimerization mode is not relevant for KCC4 is well-justified by the combined structural and functional evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "Mutations designed to disrupt NKCC1-type CTD-CTD dimerization interfaces in KCC4 (three pairs of mutations) resulted in partial but incomplete reduction in activity (36-44%), comparable to a CTD truncation mutant. This suggests monomeric KCC4 is active but CTD dimerization increases transport activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C77 are supported by sequence conservation analysis (Figure 3E, Figure 2-supplement 1) and functional data (Figure 3F). The partial reduction in activity from CTD mutations and truncation supports the conclusion that monomers are active but dimers have enhanced activity. However, the inference about dimerization mechanism is based on analogy to NKCC1 rather than direct structural evidence of KCC4 dimers.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "KCC4 adopts an inward-open conformation with the extracellular surface sealed and a continuous cavity extending from the transmembrane center to the cytoplasm. The transmembrane region consists of 12 helices (TM1-TM12) with an inverted repeat between TM1-TM5 and TM6-TM10, and includes a conserved disulfide bond between TM2 (C163) and TM11 (C626).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C83 are supported by structural analysis shown in Figure 4 and sequence conservation analysis (Figure 2-supplement 1). The inward-open conformation is clearly demonstrated by the sealed extracellular surface and open intracellular cavity. The disulfide bond is observed in the structure and confirmed by sequence alignment showing conservation in KCCs but not other CCCs.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "KCC4 contains a large extracellular domain extending ~35 \u00c5 above the membrane, formed by EL3 and EL4, that is unique among known protein structures and conserved in all KCCs but not other CCCs. The domain is stabilized by two disulfide bonds and decorated with N-linked glycosylation at four sites (N312, N331, N344, N360), with partial carbohydrate chains modeled at N312 and N360.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C93 are supported by structural measurements, sequence alignment (Figure 2-supplement 1), and density for glycosylation sites (Figures 2C-D, 4A). The claim of uniqueness (C85) is reasonable given the novel architecture but would require comprehensive database searches to fully validate. The glycosylation sites are supported by previous work (cited) and density in the current map.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "The N312 glycosylation site projects underneath an extended segment leading to TM6A, potentially stabilizing the extracellular domain and coupling it to TM6A movements. Mutation of N312 to prevent glycosylation (N312Q) severely reduces KCC4 activity by 84%, providing a structural explanation for functional defects in non-glycosylated mutants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94-C97 combine structural observation (C93) with functional data (C96, Figure 4C) and inference about mechanism (C94). The severe activity reduction from N312Q mutation strongly supports the functional importance of this glycosylation site. The mechanistic inference about coupling to TM6A (C94) is reasonable based on structural position and comparison to other APC transporters (C95), though direct evidence for this coupling mechanism is not provided.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "The extracellular domain forms a gate that seals the internal vestibule through an electrostatic and hydrophobic interaction network involving residues in EL4, TM1, TM3, and TM10. Mutations disrupting these interactions (K485D/E, F486A, R140E) significantly reduce activity, while control mutations (K485A, E222R) have no effect. Opening the gate likely requires unzipping this network and rotation of the extracellular domain.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98-C109 are supported by structural analysis (Figure 4A,B) showing the interaction network and functional data (Figure 4C) demonstrating specific effects of mutations. The comparison to LeuT (C105) provides mechanistic context. The specificity of effects (C108) is well-demonstrated by the differential outcomes of mutations. The mechanistic inference about gate opening (C109) is reasonable based on analogy to other APC transporters but lacks direct experimental evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121"
+    ],
+    "result": "The intracellular cavity formed by TM1, TM3, TM6, and TM8 provides access to K+ and Cl- binding sites through a bifurcated pathway. The cavity is markedly electropositive up to the Cl- site, potentially favoring accumulation of the less abundant Cl- substrate, then becomes electronegative around the K+ site. The narrowest constriction (~3.6 \u00c5) is still large enough for ion passage.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C110-C121 are supported by structural analysis including cavity measurements (Figure 4D-F) and electrostatic surface calculations. The electropositive character of the cavity (C117-C118) is well-documented structurally. The functional inference about Cl- accumulation (C119) is reasonable given typical intracellular ion concentrations but is speculative. The cavity dimensions (C114-C116) are based on structural measurements.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129"
+    ],
+    "result": "A K+ ion is identified in the structure surrounded by backbone carbonyls from TM1 (N131, I132) and TM6 (P429, T432) and a tyrosine hydroxyl from TM3 (Y216) at distances consistent with K+ binding (2.8-2.9 \u00c5). The coordinating tyrosine Y216 is conserved in all K+-transporting CCCs, while NCC has a histidine at this position, explaining its K+-independence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C122-C129 are supported by density in the cryo-EM map (Figure 5A), structural measurements of coordination distances, and sequence conservation analysis (Figure 2-supplement 1). The assignment as K+ is validated by coordination geometry and distances. The inference about NCC's K+-independence (C129) based on histidine substitution is reasonable but would benefit from experimental validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C130",
+      "C131",
+      "C132",
+      "C133"
+    ],
+    "result": "A Cl- ion is identified in the structure surrounded by backbone amides from TM6 (G433, I434) and a tyrosine hydroxyl from TM10 (Y589). The coordination environment is reminiscent of Cl- sites in CLC transporters, and the coordinating tyrosine Y589 is conserved across all CCCs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C130-C133 are supported by density in the cryo-EM map (Figure 5D), structural analysis of the coordination environment, comparison to CLC transporters (cited), and sequence conservation analysis. The assignment as Cl- is supported by the coordination geometry and comparison to known Cl- binding sites.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C134",
+      "C135",
+      "C136",
+      "C137"
+    ],
+    "result": "Mutations at the K+ coordinating site Y216 (Y216A/F/H) and Cl- coordinating site Y589 (Y589F/H) result in marked loss of transport activity (45-81% and 59-65% reduction, respectively). Mutations altering electrostatic character around the Cl- site (N131A/D) also cause comparable transport defects, demonstrating that these sites are critical for KCC4 activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C134-C137 are supported by functional assay data in Figure 5G showing significant activity reductions for mutations at both ion binding sites. The range of effects from different mutations (conservative vs. non-conservative) provides additional validation. The conclusion that these sites are critical for activity (C137) is well-justified by the functional data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C138",
+      "C139",
+      "C140",
+      "C141",
+      "C142"
+    ],
+    "result": "The K+ and Cl- sites in KCC4 correspond closely to sites in NKCC1, but the Na+ site in NKCC1 is dramatically reorganized in KCC4. TM8 is rotated away from TM1, and two consecutive Na+-coordinating serines in NKCC1 are substituted by glycine and alanine in KCC4, resulting in loss of three of five Na+-coordinating positions and providing a structural explanation for Na+-independence in KCCs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C138-C142 are supported by structural comparison to NKCC1 (Figure 5B,C,E) and sequence alignment (Figure 2-supplement 1). The structural reorganization of the Na+ site is clearly demonstrated, and the sequence changes are well-documented. The conclusion that this explains Na+-independence (C142) is a reasonable inference based on the loss of coordinating residues, though direct experimental validation would strengthen this claim.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C143",
+      "C144",
+      "C145",
+      "C146"
+    ],
+    "result": "A second Cl- site extracellular to the K+ site is structurally conserved in KCC4 but shows no evidence of ion occupancy in the current structure. This site is occupied in the KCC1 structure, and mutations near this site (Y466A/H) reduce KCC4 activity, suggesting the integrity of both Cl- sites is important for transport.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C143-C145 are supported by structural comparison (Figure 5F) and citation to the KCC1 structure. However, the lack of occupancy in KCC4 (C144) raises questions about the functional relevance of this site. The functional data for Y466 mutations (C146, Figure 5G) shows reduced activity, but the inference that this demonstrates importance of the second Cl- site is uncertain\u2014the mutation could affect activity through other mechanisms. Understanding the role of this site requires additional structural states and functional characterization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C147",
+      "C148",
+      "C149",
+      "C150",
+      "C151",
+      "C152",
+      "C153",
+      "C154",
+      "C155"
+    ],
+    "result": "The structural and mutational data are consistent with monomeric KCCs existing in cells alongside dimers and heterooligomers. The KCC1-type interface is not relevant for KCC4, but NKCC1-type CTD dimerization may increase activity. Regulated oligomerization could modulate transport activity, potentially through CTD post-translational modifications, as supported by literature on KCC2 regulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C147-C155 integrate the current structural and functional data (C148-C149) with extensive literature citations (C152-C154) on KCC regulation. The consistency with prior evidence for multiple oligomeric states (C147) is well-argued. However, much of this result involves speculation about regulatory mechanisms (C150-C151, C155) that, while reasonable, lack direct experimental support in the current study. The literature support for similar mechanisms in KCC2 (C152-C154) strengthens these inferences.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C156",
+      "C157",
+      "C158",
+      "C159",
+      "C160",
+      "C161"
+    ],
+    "result": "The KCC4 structure provides insight into KCC architecture and K+:Cl- transport mechanism. The inward-open conformation with an electropositive tunnel may concentrate intracellular Cl-, and represents the lowest energy state under symmetrical conditions. The reorganization of the Na+ site explains Na+-independence in KCCs compared to NKCCs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C156-C161 represent summary conclusions integrating multiple findings from the study. The structural insights (C156-C157) are well-supported by the data. The comparison to NKCC1 and KCC1 conformations (C158) and inference about energy states (C159) are supported by citations. The identification of ion binding sites (C160) and explanation for Na+-independence (C161) are major conclusions well-supported by the structural and comparative analyses presented throughout the manuscript.",
+    "result_type": "MAJOR"
+  }
+]

@@ -1,0 +1,327 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5"
+    ],
+    "result": "Human physical reasoning develops early in infancy and becomes fast, rich, and generalizable by adulthood, but the brain basis of intuitive physics remains poorly understood.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C5 establish the developmental trajectory and importance of physical reasoning through citations to established literature (C2-C4) and general knowledge statements (C1, C5). These background claims are well-supported by the cited evidence.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C10"
+    ],
+    "result": "Computational models of intuitive physics differ in whether they use model-free pattern recognition or structured generative models (physics engines), with the latter showing human-level performance across diverse physical reasoning tasks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C10 describe two computational approaches to physical reasoning, supported by multiple citations (Lerer et al., Battaglia et al., Smith et al., Bates et al., Kubricht et al., Ullman et al., Hamrick et al.). The characterization of these models is well-documented in the literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17"
+    ],
+    "result": "Prior work (Fischer et al., 2016) identified parietal and frontal regions engaged in physical reasoning, which resemble regions involved in action planning and tool use, but what these regions represent about physical events remains unknown.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C17 accurately summarize prior findings from Fischer et al. (2016) and related literature on action planning and tool use. The gap in knowledge (C17) motivates the current study and is a reasonable inference from the literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "The study uses fMRI with a localizer task to identify physics-related brain regions, then applies pattern classification to test for invariant representations of mass, chosen as a fundamental physical variable.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C21 describe the rationale and overall experimental approach. The choice of mass as a target variable is justified by physics principles (C18), and the experimental design using localizer and decoding analyses is clearly described (C19-C21).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "Experiment 1 demonstrates situation-invariant mass decoding from candidate physics regions (mean accuracy 0.64, p=0.0304) across three physical scenarios, with controls ruling out confounds from shape, color, motion, and motor responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C31 describe Experiment 1's design, results, and controls. The significant decoding result (C27) with n=6 subjects is supported by statistical testing. The experimental design controls for multiple confounds (C29-C31), though the small sample size and lack of multiple comparison correction are potential limitations not addressed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "Experiment 2 replicates mass decoding during the mass task (mean accuracy 0.63, p=0.0357) and demonstrates automatic mass representation during an orthogonal color task (mean accuracy 0.61, p=0.0033), ruling out response code explanations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C41 describe Experiment 2's block design and key findings. The significant mass decoding during both tasks (C34, C37) with n=6 subjects supports automaticity (C38). The null result for color decoding (C40) strengthens the specificity claim (C41), though the authors acknowledge potential carryover effects from mass blocks.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "Experiment 3 demonstrates mass decoding (mean accuracy 0.60, p=0.0392) during physical prediction that generalizes across friction, material, and motion, with eye movement controls ruling out oculomotor confounds.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C51 describe Experiment 3's design with orthogonalized physical variables (C44) and significant mass decoding (C46) in n=20 subjects. The generalization across friction, material, and motion (C47-C48) is supported by the experimental design. Eye movement controls (C49-C51) address a potential confound, though only 6 subjects had eye tracking data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "Invariant mass decoding was not significant in ventral stream regions (LO and OTC), suggesting these regions may represent task-specific rather than abstract mass information.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C56 report null results in ventral stream regions (C53-C54) using an appropriate localizer (C52). The interpretation (C55-C56) is cautious, acknowledging the null results and offering speculation about functional differences. However, null results with n=6 subjects have limited power.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "Group analysis across 32 subjects replicates the physics network from Fischer et al. (2016), with mass decoding successful in 31/32 subjects and invariant to scenario, material, friction, and motion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C62 summarize the combined results across all experiments. The group analysis (C57-C58) replicates prior work with a larger sample. The high success rate (31/32 subjects, C59-C60) and demonstrated invariances (C61) support the main conclusions, though individual experiment sample sizes remain small.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C71",
+      "C72",
+      "C74"
+    ],
+    "result": "The invariant mass representations found in frontal and parietal regions support the hypothesis that these regions implement a causal generative model (physics engine) rather than pattern recognition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C64, C71-C72, C74 present the main theoretical interpretation. The invariance properties demonstrated across experiments support generative models over pattern recognition (C63, C71). However, this remains an inference from neural data rather than direct evidence of computational mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "The current study extends beyond prior work by demonstrating mass representations during non-action-planning tasks and showing generalization across scenarios, unlike previous studies limited to action planning contexts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C70 accurately characterize prior work (C65-C68) and distinguish the current findings (C69-C70). The comparison to Gallivan et al. (2014) is appropriate, highlighting the novelty of task-independent and scenario-invariant representations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C73",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "Similar frontal-parietal regions represent abstract physical concepts from words, and the absence of invariant mass representations in ventral stream during non-action tasks suggests these regions may only represent mass during motor planning.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C77 integrate findings with broader literature. The convergence with word-based physical reasoning (C73) supports abstractness. The ventral stream interpretation (C75-C77) is cautious speculation supported by lesion data (C76), though the null results have limited power.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "The study demonstrates that intuitive physics recruits regions outside the ventral stream, though how the brain estimates physical properties from visual input remains unknown and may involve integration of feed-forward and generative models.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C80 acknowledge limitations and future directions. The main conclusion (C80) is supported by the data. The speculation about hybrid models (C79) is appropriately tentative and cites relevant computational work (Yildirim et al., 2019).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "The study included 6 subjects in Experiments 1 and 2, and 20 subjects in Experiment 3, all right-handed with normal vision, with MIT IRB approval.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C85 report basic methodological details. Sample sizes are clearly stated, though small for Experiments 1-2. Power analysis is mentioned but details are limited. Ethical approval is documented (C85).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C103",
+      "C104"
+    ],
+    "result": "The localizer task used unstable block towers with physics vs. color judgments, with fROIs defined by intersecting individual subject maps with group parcels from Fischer et al. (2016) that showed physics-specific responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C88, C103-C104 describe the localizer task and fROI definition procedure. The method appropriately uses individually-defined fROIs within group-constrained parcels, balancing individual variability with anatomical consistency. The subset of parcels (C104) was validated in prior work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "Experiment 1 stimuli were constructed to have identical visual appearance across masses (45g vs 90g), with mass differences created by filling objects with lead pellets and flour.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C91 describe stimulus construction for Experiment 1. The control for visual appearance (C91) is critical for ensuring mass must be inferred from physical behavior rather than visual cues. The 2:1 mass ratio provides a reasonable discrimination challenge.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "Experiment 2 tasks were matched for difficulty using Amazon Mechanical Turk data (n=50), with mass task accuracy 86.2% and color task accuracy 89%.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C94 describe task difficulty matching. The pilot study with n=50 provides reasonable evidence for comparable difficulty, though the color task was slightly easier. This control strengthens the interpretation of differential decoding results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "Experiment 3 materials were selected to orthogonalize mass and friction, with friction coefficients measured empirically and motion quantified using optical flow analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95-C98 describe the sophisticated stimulus design for Experiment 3. The orthogonalization of physical variables (C95) is critical for testing invariance. Friction measurement (C96) and motion quantification (C97-C98) are appropriate methods, though the claim that variables are fully orthogonalized may be overstated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "Data were acquired on a 3T Siemens scanner and analyzed using FreeSurfer/FsFast for preprocessing and MATLAB for additional analyses, with eye tracking data processed using EyeLink software.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C99-C102 describe standard neuroimaging acquisition and analysis procedures. The methods are appropriate and software is properly cited. However, details about preprocessing parameters, statistical thresholds, and multiple comparison corrections are limited.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C105",
+      "C106"
+    ],
+    "result": "Linear SVM classification was used for decoding, with no significant hemispheric or regional differences in decoding accuracy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C105-C106 describe the decoding method and regional analysis. The choice of linear SVM is justified by biological plausibility (C105). The null result for regional differences (C106) suggests mass representations are distributed across the physics network, though power to detect differences may be limited.",
+    "result_type": "MINOR"
+  }
+]

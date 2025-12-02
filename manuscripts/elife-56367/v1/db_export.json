@@ -1,0 +1,2066 @@
+{
+  "submission": {
+    "id": "227847e3-6f1d-41cd-ad9c-2bf6a26e9956",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T18:14:18.753870Z",
+    "updated_at": "2025-12-02T18:14:18.753870Z"
+  },
+  "content": [
+    {
+      "id": "a5d81b66-966c-4bab-9d31-cb74e32e746c",
+      "submission_id": "227847e3-6f1d-41cd-ad9c-2bf6a26e9956",
+      "content_type": "manuscript",
+      "content_text": "# Targeted surveillance strategies for efficient detection of novel antibiotic resistance variants\n\n## Authors\n\n- Allison L Hicks<sup>1</sup> ([ORCID: 0000-0003-1372-1301](https://orcid.org/0000-0003-1372-1301))\n- Stephen M Kissler<sup>1</sup> ([ORCID: 0000-0003-3062-7800](https://orcid.org/0000-0003-3062-7800))\n- Tatum D Mortimer<sup>1</sup> ([ORCID: 0000-0001-6255-690X](https://orcid.org/0000-0001-6255-690X))\n- Kevin C Ma<sup>1</sup>\n- George Taiaroa<sup>2</sup>\n- Melinda Ashcroft<sup>2</sup>\n- Deborah A Williamson<sup>2</sup> ([ORCID: 0000-0001-7363-6665](https://orcid.org/0000-0001-7363-6665))\n- Marc Lipsitch<sup>1</sup> ([ORCID: 0000-0003-1504-9213](https://orcid.org/0000-0003-1504-9213))\n- Yonatan H Grad<sup>1</sup> ([ORCID: 0000-0001-5646-1314](https://orcid.org/0000-0001-5646-1314)) \u2020\n\n### Affiliations\n\n1. Department of Immunology and Infectious Diseases, Harvard T.H. Chan School of Public Health Boston United States\n2. Department of Microbiology and Immunology, The University of Melbourne at The Peter Doherty Institute for Infection and Immunity Melbourne Australia\n3. Center for Communicable Disease Dynamics, Department of Epidemiology, Harvard T.H. Chan School of Public Health Boston United States\n4. Division of Infectious Diseases, Department of Medicine, Brigham and Women\u2019s Hospital, Harvard Medical School Boston United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nGenotype-based diagnostics for antibiotic resistance represent a promising alternative to empiric therapy, reducing inappropriate antibiotic use. However, because such assays infer resistance based on known genetic markers, their utility will wane with the emergence of novel resistance. Maintenance of these diagnostics will therefore require surveillance to ensure early detection of novel resistance variants, but efficient strategies to do so remain undefined. We evaluate the efficiency of targeted sampling approaches informed by patient and pathogen characteristics in detecting antibiotic resistance and diagnostic escape variants in Neisseria gonorrhoeae, a pathogen associated with a high burden of disease and antibiotic resistance and the development of genotype-based diagnostics. We show that patient characteristic-informed sampling is not a reliable strategy for efficient variant detection. In contrast, sampling informed by pathogen characteristics, such as genomic diversity and genomic background, is significantly more efficient than random sampling in identifying genetic variants associated with resistance and diagnostic escape.\n\n## Introduction\n\nNucleic acid-based diagnostics that enable rapid pathogen identification and prediction of drug susceptibility profiles can improve clinical decision-making, reduce inappropriate antibiotic use, and help address the challenge of antibiotic resistance (McAdams et al., 2019; Fingerhuth et al., 2017; Tuite et al., 2017). However, the sensitivity of such diagnostics may be undermined by undetected genetic variants (Andr\u00e9 et al., 2017; Berhane et al., 2018; Herrmann et al., 2008; Guglielmino et al., 2019; Whiley et al., 2011; Golparian et al., 2012; Bruisten et al., 2004; Lee et al., 2018a; Marks et al., 2018). Pathogen surveillance programs aimed at early detection of novel variants are crucial to ensuring the clinical utility and sustainability of these diagnostics.\n\nUse of traditional nucleic acid amplification tests (NAATs) for pathogen identification and genotype-based diagnostics for antibiotic resistance can select for genetic variants that escape detection (Smid et al., 2019). Mutations and/or deletions at the NAAT target locus that cause an amplification failure have arisen in Neisseria gonorrhoeae, Chlamydia trachomatis, Staphylococcus aureus, and Plasmodium falciparum, resulting in false negative diagnostic errors only detected when using another diagnostic platform (Berhane et al., 2018; Herrmann et al., 2008; Guglielmino et al., 2019; Lee et al., 2018a). Diagnostic escape associated with genotype-based diagnostics for antibiotic resistance are the result of resistance-conferring variants (e.g., mutations or accessory genes) not accounted for in the diagnostic\u2019s panel of resistance markers (Andr\u00e9 et al., 2017) and require phenotypic testing to be uncovered.\n\nWe recently presented a framework to quantify the sampling rate for early detection of novel antibiotic resistance variants, defining the number of isolates that would need to undergo confirmatory phenotyping from those predicted by genotype to be susceptible (Hicks et al., 2019). Underlying this model are assumptions of unbiased sampling across a population and independence among all isolates. However, these assumptions may not hold in practice, as some subsets of the population (e.g., demographics and/or geographic regions) may be more likely to be sampled than others, and clonal transmission may result in repeated sampling of closely related isolates (Rempel and Laupland, 2009; Unemo et al., 2019; Hutinel et al., 2019; Van Goethem et al., 2019). The real-world application of this model may also be challenging for pathogens with high case incidence, such as N. gonorrhoeae, as the cost of phenotyping required by this model for timely detection of novel resistance variants is likely to be high (Hicks et al., 2019).\n\nImplementing a practical surveillance system thus requires improving efficiency over unbiased testing by prioritizing samples in which novel diagnostic escape variants are most likely to be found. There are numerous hypotheses for how to focus sampling and most quickly identify these variants. Novel variants may be more likely to emerge or spread in certain anatomical niches, demographics, or geographic regions (Lewis, 2013; Collignon et al., 2018; Frost et al., 2019; Hernando Rovirola et al., 2020), some of which may be systematically under-sampled (Kirkcaldy et al., 2019) and thus may provide a basis for sampling priority. Data on such characteristics may be obtained from metadata recorded during clinical encounters. Alternatively, they may be inferred from pathogen genomic data. Isolates or clades that are genetically divergent from the majority of isolates in a population may reflect travelers, their contacts, or otherwise under-sampled lineages (Perrin et al., 2003; Pham Thanh et al., 2016; Kingsley et al., 2009; Mac Aog\u00e1in et al., 2016). Some pathogen genomic backgrounds may be more conducive to the evolution of novel resistance mechanisms (Borrell and Gagneux, 2011), and markers of these genomic backgrounds (e.g., variants associated with a range of resistance mechanisms and/or resistance to other drugs) may help improve sampling efficiency. Similarly, given historical patterns of antibiotic use, novel resistance may emerge on a background of existing resistance (Gould and MacKenzie, 2002). Thus, genetic markers of resistance to certain drugs may facilitate identification of lineages more likely to have experienced selective pressures leading to emergence of novel resistance variants.\n\nHere, we test the performance of sampling strategies informed by these hypotheses using N. gonorrhoeae surveillance data. N. gonorrhoeae offers a useful model, given the increasing drug resistance and recent focus on developing sequence-based resistance diagnostics (Fingerhuth et al., 2017; Hook and Kirkcaldy, 2018). We present targeted sampling approaches informed by patient (i.e., demographics, anatomical site of isolate collection, geographical region, recent travel history, or sex worker status) and pathogen (i.e., phylogenetic or genomic background) information. We assess the efficiency of each of these strategies to detect rare (<10% prevalence) resistance variants associated with current or recent first-line recommended antibiotics (i.e., azithromycin [AZM] and extended spectrum cephalosporins [ESCs]), as well as rare genetic variants associated with diagnostic escape, across five genomic surveys with various demographic, geographic, and temporal ranges. We show that phylogeny- and genomic background-aware sampling approaches can increase the detection efficiency of known variants over random sampling, whereas patient feature-based sampling approaches do not. Our results suggest that implementation of such targeted sampling approaches into surveillance programs may reduce the number of cases of novel resistance that occur before it is detected, as well as the resources required to undertake surveillance, compared to random sampling of a population.\n\n## Results\n\n### Composition of the datasets\n\nThe datasets (Table 1) were biased across patient demographics and/or geographic regions (Supplementary files 1 and 2A). Isolates from men and men who have sex with men (MSM) were overrepresented in datasets 1 and 2 compared to overall gonorrhea incidence in men and MSM in the US and Australia, respectively, during the study periods (Supplementary file 2A, p<0.001 for both datasets by chi-squared test of men vs. women and MSM vs. non-MSM in dataset vs. reported incidence). Dataset 4 was comprised exclusively of isolates from men (Yahara et al., 2018). While it is difficult to estimate the prevalence of pharyngeal gonococcal infections, as they tend to be asymptomatic (Wiesner et al., 1973), pharyngeal isolates represented 4% and 18% of isolates with reported anatomical site of collection in datasets 1 and 2, respectively. This suggests either sampling bias across anatomical sites in at least one of the datasets or substantial variation across the two study populations in prevalence of pharyngeal gonococcal infections. Similarly, the geographic distribution of isolates in dataset 3 was significantly different from the reported case incidence across countries (Supplementary file 2A, p<0.001 by chi-squared test of prevalence for each of the countries in dataset 3 vs. the reported overall incidence for each of the countries).\n\n**Table 1.**\n Summary of datasets.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Dataset</th>\n      <th>Temporal range</th>\n      <th>Nisolates</th>\n      <th>Geographic range</th>\n      <th>Metadata available</th>\n      <th>SRA study ID/Reference</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>1</td>\n      <td>2011\u20132015</td>\n      <td>896</td>\n      <td>New York, NY, US</td>\n      <td>Gender, sexual behavior, anatomical site of isolation</td>\n      <td>ERP011192 (Mortimer et al., 2020)</td>\n    </tr>\n    <tr>\n      <td>2</td>\n      <td>2016\u20132017</td>\n      <td>2186</td>\n      <td>Victoria, Australia</td>\n      <td>Gender, sexual behavior, anatomical site of isolation, travel history, sex worker status</td>\n      <td>SRP185594 (Williamson et al., 2019)</td>\n    </tr>\n    <tr>\n      <td>3</td>\n      <td>2013</td>\n      <td>1054</td>\n      <td>Europe</td>\n      <td>Country of sample collection</td>\n      <td>ERP010312 (Harris et al., 2018)</td>\n    </tr>\n    <tr>\n      <td>4</td>\n      <td>2015</td>\n      <td>244</td>\n      <td>Japan</td>\n      <td>Prefecture of sample collection</td>\n      <td>DRP004052 (Yahara et al., 2018)</td>\n    </tr>\n    <tr>\n      <td>5</td>\n      <td>2014\u20132015</td>\n      <td>398</td>\n      <td>New Zealand</td>\n      <td>N/A</td>\n      <td>SRP111927 (Lee et al., 2018b)</td>\n    </tr>\n  </tbody>\n</table>\n\n### Targeted sampling based on patient characteristics\n\nWe investigated whether sampling evenly across demographic groups (demography-aware sampling), anatomical sites of isolate collection (niche-aware sampling), and geographic regions (geography-aware sampling) increased detection efficiency of resistance variants by ameliorating some of the demographic, niche, or geographic sampling biases. We further investigated whether preferentially sampling patients with recent overseas sexual encounters or recent sex work, two characteristics hypothesized to be associated with the introduction and/or increased transmission of resistance (Lewis, 2013; Frost et al., 2019; Hernando Rovirola et al., 2020), increased the detection efficiency of resistance variants. To do so, we simulated and compared the detection efficiency of three genetic resistance variants (Table 2) using each of these targeted sampling strategies and random sampling.\n\n**Table 2.**\n Summary by dataset of the prevalence and distribution of the genetic markers of resistance and resistance phenotypes tested.\n\n\n<table>\n  <thead>\n    <tr>\n      <th rowspan=\"2\">Variant</th>\n      <th></th>\n      <th colspan=\"3\">Genetic</th>\n      <th colspan=\"2\">Phenotypic</th>\n    </tr>\n    <tr>\n      <th></th>\n      <th>RplD G70D</th>\n      <th>23S rRNA C2611T (2\u20134 alleles)</th>\n      <th>penA XXXIV</th>\n      <th>CRO-RS (\u22650.12 \u03bcg/mL)</th>\n      <th>CFX-R (&gt;0.25 \u03bcg/mL)</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Drug</td>\n      <td></td>\n      <td>AZM (Grad et al., 2016)</td>\n      <td>AZM (Lk et al., 2002)</td>\n      <td>ESCs (Grad et al., 2014)</td>\n      <td>N/A</td>\n      <td>N/A</td>\n    </tr>\n    <tr>\n      <td rowspan=\"5\">Prevalence of variant in dataset</td>\n      <td>1</td>\n      <td>10.04%*</td>\n      <td>0.11%</td>\n      <td>5.25%</td>\n      <td>1.47%</td>\n      <td>0.11%</td>\n    </tr>\n    <tr>\n      <td>2</td>\n      <td>1.14%</td>\n      <td>1.24%</td>\n      <td>1.69%</td>\n      <td>0%</td>\n      <td>0%</td>\n    </tr>\n    <tr>\n      <td>3</td>\n      <td>2.47%</td>\n      <td>0.95%</td>\n      <td>15.68%*</td>\n      <td>1.04%</td>\n      <td>0.76%</td>\n    </tr>\n    <tr>\n      <td>4</td>\n      <td>11.07%*</td>\n      <td>1.23%</td>\n      <td>0.41%</td>\n      <td>6.56%</td>\n      <td>8.20%</td>\n    </tr>\n    <tr>\n      <td>5</td>\n      <td>0.75%</td>\n      <td>0.50%</td>\n      <td>2.26%</td>\n      <td>0.25%</td>\n      <td>0%</td>\n    </tr>\n    <tr>\n      <td rowspan=\"5\">Phylogenetic D statistic for variant in dataset</td>\n      <td>1</td>\n      <td>\u22120.18</td>\n      <td>17.50</td>\n      <td>\u22120.29</td>\n      <td>N/A</td>\n      <td>N/A</td>\n    </tr>\n    <tr>\n      <td>2</td>\n      <td>\u22120.10</td>\n      <td>0.46</td>\n      <td>\u22120.24</td>\n      <td>N/A</td>\n      <td>N/A</td>\n    </tr>\n    <tr>\n      <td>3</td>\n      <td>0.05</td>\n      <td>0.30</td>\n      <td>\u22120.20</td>\n      <td>N/A</td>\n      <td>N/A</td>\n    </tr>\n    <tr>\n      <td>4</td>\n      <td>\u22120.16</td>\n      <td>1.83</td>\n      <td>1.81</td>\n      <td>N/A</td>\n      <td>N/A</td>\n    </tr>\n    <tr>\n      <td>5</td>\n      <td>0.83</td>\n      <td>1.12</td>\n      <td>\u22120.15</td>\n      <td>N/A</td>\n      <td>N/A</td>\n    </tr>\n  </tbody>\n</table>\n\n_*Given the\u00a0>10% prevalence of RplD G70D in datasets 1 and 4 and penA XXXIV in dataset 3, these variants were excluded from sampling simulations.AZM, azithromycin; ESC, extended-spectrum cephalosporin; CRO-RS, ceftriaxone reduced susceptibility; CFX-R, cefixime resistance._\n\nThe detection efficiency was not improved by demography-, niche-, geography-aware sampling compared to random sampling for any of the resistance variants (Supplementary file 2B, Figure 1). In several cases, detection efficiency significantly decreased in demography- or geography-aware sampling compared to random sampling, reflecting enrichment of the resistance variant in the overrepresented demographic or geographic region. However, no significant association between a given resistance variant and demographic group was observed across both dataset 1 and dataset 2, and no demographics or geographic regions were significantly enriched for all variants (Supplementary file 1), suggesting that preferential sampling of any of these demographics or geographic regions would not be a reliable strategy for increasing novel variant detection efficiency. For example, while penA XXXIV was significantly enriched in MSM compared to men who have sex with women and women who have sex with men (MSW/WSM) in dataset 2 (p<0.003, Fisher\u2019s exact test), there was no significant difference in the proportions of MSM and MSW/WSM with penA XXXIV in dataset 1 (p=0.461, Fisher\u2019s exact test). Similarly, while the AZM-R-associated RplD G70D mutation in dataset 3 was at highest prevalence in patients from Malta and Greece (10% and 6.25%, respectively) and absent from patients from Denmark, the AZM-R-associated 23S C2611T variant was at highest prevalence in patients from Denmark (5.45%) and absent from patients from Malta or Greece.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/56367/elife-56367-fig1-v1.jpg)\n\n**Figure 1.:** Dot plots showing the detection efficiency (with lines indicating the mean and 95% confidence intervals from 100 simulations) for resistance variants RplD G70D (A\u2013B), 23S rRNA C2611T (C\u2013D), and penA XXXIV (E\u2013F) in datasets 1 and 2. In datasets 1 and 2, targeted sampling was informed by demographic (gender and sexual behavior) and anatomical site of isolate collection (niche) information (A, C, and E), and in datasets 3 and 4, targeted sampling was informed by country or prefecture of sample collection (B, D, and F). Dot colors indicate the sampling approach, and asterisks indicate a significant difference (p<0.05 by Mann-Whitney U test) in detection efficiency between the demography-, niche- or geography-aware approach compared to random sampling (*p<0.05, **p<0.01, ***p<0.001; red asterisks indicate significantly lower detection efficiency of demography- or geography-aware approaches compared to random sampling). Note that sampling simulations were not performed for RplD G70D in datasets 1 and 4 or for penA XXXIV in dataset 3 as prevalence of the variants in these datasets was\u00a0>10%. n.s., not significant at \u03b1\u00a0=\u00a00.05; M, men; W, women; MSM, men who have sex with men; MSW, men who have sex with women; WSM, women who have sex with men.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/56367/elife-56367-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** Maximum-likelihood phylogeny produced from the pseudogenome alignment (with predicted regions of recombination removed) of isolates from dataset 2 (A). Patient travel history is indicated by the colored ring in A. Scatter dot plots showing the terminal branch lengths (with lines indicating the mean and 95% confidence intervals) associated with isolates from patients with travel-associated gonorrhea compared to patients with locally-acquired gonorrhea with asterisks indicating a significant difference (p<0.001 by Mann-Whitney U test) in terminal branch lengths between the two groups (B).\n\nIsolates from patients with recent overseas sex were associated with significantly longer terminal branches compared to patients that had only engaged in sex locally (Figure 1\u2014figure supplement 1), in support of the hypothesis that international travel may be associated with the importation of novel or divergent strains, or, more generally, that isolates from travelers may be more likely to be associated with under-sampled lineages. Preferentially sampling from patients with recent overseas sex significantly improved detection efficiency of the RplD G70D mutation and the penA XXXIV allele, as these were at marginally higher prevalence in isolates from patients with recent overseas sex compared to those from patients who had only engaged in sex locally (3.03% overseas vs. 0.98% local and 2.02% overseas vs. 1.67% local, respectively, p=0.090 and 0.683, respectively, by Fisher\u2019s exact test for both variants). In contrast, the 23S C2611T mutation was exclusively present in isolates from patients who had engaged in sex locally (Supplementary files 1 and 2C). Similarly, while the 23S C2611T mutation was marginally enriched in isolates from patients who had engaged in recent sex work compared to patients who had not (2.33% in sex workers vs. 1.31% in non-sex workers, p=0.327 by Fisher\u2019s exact test), and thus preferentially sampling from sex workers significantly improved detection efficiency of this variant compared to sampling from the full patient population, detection efficiencies for the RplD G70D mutation and the penA XXXIV allele were not significantly improved by preferentially sampling from sex workers (Supplementary files 1 and 2 C).\n\nTogether, these results suggest that while targeted sampling based on patient characteristics may increase detection efficiency of some novel variants, it is difficult to predict which groups to target for all potential novel variants.\n\n### Targeted sampling based on genetic diversity\n\nTo assess whether preferential sampling of lineages that are divergent from those that have been previously sampled may increase detection efficiency of genetic resistance variants over random sampling, we simulated phylogeny-aware sampling using two methods: 1) maximization of the phylogenetic distance covered with each isolate sampled (distance maximization) and 2) even sampling across phylogenetic lineages (clonal group).\n\nWhile the distance maximization approach increased detection efficiency compared to random sampling for some variants, there were numerous instances in which this approach, which led to preferential sampling of isolates associated with long branches, substantially decreased detection efficiency (Figure 2, Supplementary file 2D).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/56367/elife-56367-fig2-v1.jpg)\n\n**Figure 2.:** Scatter dot plots showing the detection efficiency (with lines indicating the mean and 95% confidence intervals from 100 simulations) for resistance variants RplD G70D (A), 23S rRNA C2611T (B), and penA XXXIV (C) in datasets 1\u20135. Note that sampling simulations were not performed for RplD G70D in datasets 1 and 4 or for penA XXXIV in dataset 3 as prevalence of the variants in these datasets was\u00a0>10%. Maximum-likelihood phylogenies produced from pseudogenome alignments (with predicted regions of recombination removed) of isolates from dataset 4 (D) and dataset 2 (E). Presence or absence of the 23S rRNA C2611T mutation (in at least 2/4 alleles) and the mosaic penA XXXIV allele is indicated by colored rings. Scatter dot plots showing the detection efficiency (with lines indicating the mean and 95% confidence intervals from 100 simulations) for diagnostic-associated variants 16S rRNA C1209A (F), N. meningitidis-like porA (G), cppB deletion (H), and DR-9A G168A (I) in all datasets in which the variant was present. Dot colors in A\u2013C) and F\u2013I) indicate the sampling approach, and asterisks indicate a significant difference (p<0.05 by Mann-Whitney U test) in detection efficiency between the phylogeny-aware approach compared to random sampling (*p<0.05, **p<0.01, ***p<0.001; red asterisks indicate significantly lower detection efficiency of the phylogeny-aware approach compared to random sampling, and green asterisks indicate significantly higher detection efficiency of the phylogeny-aware approach compared to random sampling). n.s., not significant at \u03b1\u00a0=\u00a00.05.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/56367/elife-56367-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** Scatter dot plots showing the detection efficiency (with lines indicating the mean and 95% confidence intervals from 100 simulations) for resistance variants RplD G70D (A), 23S rRNA C2611T (B), and penA XXXIV (C) in datasets 1\u20135 and for diagnostic-associated variants 16S rRNA C1209A (D), N. meningitidis-like porA (E), cppB deletion (F), and DR-9A G168A (G) in all datasets in which the variant was present. Note that sampling simulations were not performed for RplD G70D in datasets 1 and 4 or for penA XXXIV in dataset 3 as prevalence of the variants in these datasets was\u00a0>10%. Dot colors indicate the sampling approach, and asterisks indicate a significant difference (p<0.05 by Mann-Whitney U test) in detection efficiency between the phylogeny-aware approach compared to random sampling (*p<0.05, **p<0.01, ***p<0.001; red asterisks indicate significantly lower detection efficiency of the phylogeny-aware approach compared to random sampling, and green asterisks indicate significantly higher detection efficiency of the phylogeny-aware approach compared to random sampling). n.s., not significant at \u03b1\u00a0=\u00a00.05.\n\nThe clonal group sampling approach prevents repeated sampling of very closely related isolates until all unique phylogenetic clusters have been sampled. Thus, for both rare variants that are clonally distributed and rare variants that are more randomly dispersed throughout the phylogeny (e.g., penA XXXIV and 23S rRNA C2611T mutations, respectively, Table 2), this approach increases detection efficiency in cases where 1) there is substantial clonality among isolates and 2) a substantial proportion of variant-positive isolates do not occur in clonal lineages dominated by variant-negative isolates (Figure 2E). In such datasets, effectively collapsing large variant-negative lineages into a single representative increases the effective prevalence of the variants and thus the detection efficiency of the clonal group approach compared to random sampling. The clonal group sampling approach significantly decreased detection efficiency in only one instance (i.e., the 23S rRNA C2611T variant in dataset 4, Supplementary file 2D), where all isolates with the variant appeared in large clonal lineages of predominately variant-negative isolates (Figure 2D).\n\nIn cases where the clonal group sampling approach did not perform better than random sampling, adjusting the threshold for clonal grouping and/or a marginal increase in the prevalence of variant-positive isolates could elevate the relative performance of this targeted approach. We chose 134 SNPs as an example threshold for clonal grouping, as it represents the lower 95% confidence interval of the mean of SNP distances between each CFX-R resistant and the closest susceptible isolate in datasets 1\u20135 (see Methods). In the case of the 23S rRNA C2611T variant in dataset 4, the average prevalence of the variant across clonal groups (i.e., the total number of variant-positive isolates, counting each variant-positive isolate as [1 / [1 + the total number of additional isolates that are\u00a0\u2264134 SNPs of the isolate]], divided by the number of clonal groups) is 0.005, lower than the actual prevalence of 0.012. However, if the threshold for clonal grouping was lower in this instance (e.g., 50 SNPs), the effective prevalence of the variants would be 0.020, greater than the actual prevalence of 0.012. Similarly, using the 134 SNP threshold, if one additional isolate that was\u00a0>134 SNPs from any other isolates in this dataset had the 23S rRNA C2611T mutation, the average prevalence of the variant across clonal groups would be 0.036, greater than the actual prevalence of 0.016, and thus the clonal group approach would outperform random sampling.\n\nTo further assess the performance of phylogeny-aware sampling in the context of rare genetic variants that may have emerged in response to diagnostic pressure, we simulated random and phylogeny-aware sampling to assess detection efficiency of an additional set of variants. Specifically, we assessed a panel of N. gonorrhoeae diagnostic escape variants: the 16S rRNA C1209A mutation, the N. meningitidis-like porA, and the cppB deletion, all of which have been previously associated with diagnostic failure (Guglielmino et al., 2019; Whiley et al., 2011; Golparian et al., 2012; Bruisten et al., 2004) and were present in one or more of datasets 1\u20135 at low prevalence (Table 3). The G168A mutation in the primer binding region of DR-9A, the target of the COBAS 4800 CT/NG (Roche) diagnostic, has not previously been documented but was present in 0.1% of strains from dataset 2. All of the diagnostic-associated variants assessed appeared in divergent backgrounds and were thus detected more efficiently by phylogeny-aware sampling compared to random sampling (Figure 2F\u2013I, Supplementary file 2E). Like the results from the simulations based on resistance variants, the distance maximization approach maximized detection efficiency for some of the diagnostic-associated variants, but superiority of this approach to random sampling was not consistent across all variants. However, the clonal group approach performed significantly better than random sampling for all diagnostic-associated variants across all datasets.\n\n**Table 3.**\n Summary of the potential diagnostic escape variants assessed.\n\n\n<table>\n  <thead>\n    <tr>\n      <th rowspan=\"2\">Variant</th>\n      <th rowspan=\"2\">Diagnostic assay</th>\n      <th rowspan=\"2\">Documented association with diagnostic failure</th>\n      <th colspan=\"5\">Prevalence in dataset</th>\n    </tr>\n    <tr>\n      <th>1</th>\n      <th>2</th>\n      <th>3</th>\n      <th>4</th>\n      <th>5</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>16S rRNA C1209A (four alleles)</td>\n      <td>Aptima GC Combo</td>\n      <td>Yes (Guglielmino et al., 2019)</td>\n      <td>0.11%</td>\n      <td>0.09%</td>\n      <td>0%</td>\n      <td>0%</td>\n      <td>0%</td>\n    </tr>\n    <tr>\n      <td>N. meningitidis-like porA</td>\n      <td>In-house (Whiley et al., 2004; Whiley et al., 2005)</td>\n      <td>Yes (Whiley et al., 2011; Golparian et al., 2012)</td>\n      <td>0.11%</td>\n      <td>0.05%</td>\n      <td>0%</td>\n      <td>0%</td>\n      <td>0%</td>\n    </tr>\n    <tr>\n      <td>cppB deletion</td>\n      <td>In-house (Diemert et al., 2002; Van Dyck et al., 2001)</td>\n      <td>Yes (Bruisten et al., 2004)</td>\n      <td>1.12%</td>\n      <td>0.05%</td>\n      <td>0.47%</td>\n      <td>0%</td>\n      <td>7.29%</td>\n    </tr>\n    <tr>\n      <td>DR-9A G168A</td>\n      <td>Roche COBAS 4800 CT/NG</td>\n      <td>No</td>\n      <td>0%</td>\n      <td>0.09%</td>\n      <td>0%</td>\n      <td>0%</td>\n      <td>0%</td>\n    </tr>\n  </tbody>\n</table>\n\nThe relative performance of the clonal group sampling approach compared to random sampling was generally consistent across multiple thresholds based on pseudogenomes (i.e.,\u2264134 SNPs,\u00a0\u2264422 SNPs, and fastBAPS groups); relative performance of clonal group sampling using MLSTs, however, was less consistent and was significantly worse than random sampling for several variants (Figure 2\u2014figure supplement 1, Supplementary file 2D-E). Together, these results suggest that preferentially sampling isolates that, based on whole genome sequencing (WGS), are phylogenetically divergent from those that have previously been sampled may increase detection efficiency of novel resistance variants.\n\n### Targeted sampling based on genetic markers\n\nMultiple drug resistance is more common in pathogenic bacteria than one would expect from the product of frequencies of resistance to individual drugs (Chang et al., 2015; Lehtinen et al., 2019). This suggests that novel resistance mechanisms might be more likely to arise and spread in bacterial strains that are already resistant to other drugs, a phenomenon that has been documented in N. gonorrhoeae (Goldstein et al., 2012). It may therefore be fruitful to look for novel resistance variants for one drug in genetic backgrounds that are resistant to other drugs. It may be similarly effective to sample preferentially isolates with genetic markers that have been associated with a range of resistance mechanisms (e.g., through epistatic interactions with other genetic variants) within and/or across different antibiotics when screening for a novel resistance variant. For example, as ciprofloxacin was the recommended first-line therapy for uncomplicated gonorrhea through 2005 in the United Kingdom (Whittles et al., 2018), 2007 in the United States (Centers for Disease Control and Prevention (CDC), 2007), and more recent years in other countries (Hemarajata et al., 2016; Unemo and Dillon, 2014; Bazzo et al., 2018), we investigated whether resistance to ESCs is significantly more likely to occur in the background of genotypic ciprofloxacin resistance (i.e., in strains with the GyrA S91F mutation). Similarly, as mutations at positions 120 and/or 121 in PorB, the major outer membrane protein in gonococci, have been associated with resistance to a range of drugs from multiple classes (Mortimer and Grad, 2019), we investigated whether resistance to ESCs is significantly more likely to occur in strains with PorB 120 and/or 121 mutations. Isolates with CRO-RS and CFX-R were significantly more likely to have the GyrA S91F mutation and the PorB G120 and/or A121 mutations than the wild-type GyrA S91 or wild-type PorB G120/A121 (p<0.001, Fisher\u2019s exact test, Figure 3A\u2013B). Further, both GyrA S91F and PorB G120 and/or A121 mutations occurred across a range of ESC resistance locus haplotypes (Figure 3C\u2013D). For all datasets with CRO-RS or CFX-R isolates, detection efficiency of both variants was significantly increased by only sampling isolates with the GyrA S91F mutation or the PorB G120 and/or A121 mutations (Figure 3E\u2013F, Supplementary file 2F). Together, these results suggest that preferential sampling of isolates with certain genetic markers, including markers of resistance to previous first-line antibiotics, may increase the detection efficiency of novel resistance variants.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/56367/elife-56367-fig3-v1.jpg)\n\n**Figure 3.:** Bar charts showing the proportions of ceftriaxone reduced susceptibility (CRO-RS) isolates, ceftriaxone susceptible (CRO-S) isolates, cefixime resistant (CFX-R) isolates, and cefixime susceptible (CFX-S) isolates with GyrA S91F and GyrA S91 wild-type alleles (A) and with PorB G120 and/or A121 mutations and PorB G120 and A121 wild-type alleles (B) across datasets 1\u20135. Bar charts showing the number of (C) CRO-RS and (D) CFX-R isolates with each haplotype, along with heatmaps showing the presence or absence of the GyrA S19F mutation, the PorB G120 and/or A121 mutations, and other alleles at loci previously associated with extended spectrum cephalosporin resistance. Bar colors in (C) and (D) indicate the dataset from which the isolates were derived. Scatter dot plots showing the detection efficiency (with lines indicating the mean and 95% confidence intervals from 100 simulations) for CRO-RS (E) and CFX-R (F) in all datasets in which the variant was present. Dot colors in E\u2013F) indicate the sampling approach, and asterisks indicate a significant difference (p<0.05 by Mann-Whitney U test) in detection efficiency between the phylogeny-aware approach compared to random sampling (*p<0.05, **p<0.01, ***p<0.001; green asterisks indicate significantly higher detection efficiency of the genomic background-aware approach compared to random sampling).\n\n## Discussion\n\nWith sequencing becoming more integral to routine pathogen surveillance and diagnostics, it is important to ensure that models mapping genotypic information to expected pathogen phenotype and/or clinical outcome are comprehensive and current (Don\u00e0 et al., 2017). In the case of genotype-based diagnostics, sustained phenotypic surveillance is crucial for identifying resistance variants that have recently emerged and/or increased in prevalence from previously undetected levels. While effective incorporation of patient metadata into surveillance strategies may be challenging, availability and incorporation of information on pathogen characteristics (e.g., pathogen genomic data) into surveillance programs may ultimately decrease the cost of surveillance to maintain the sensitivity of these diagnostic tools.\n\nCollection of patient metadata, including demographic and geographic information, is crucial to understanding the epidemiology of drug resistance. However, it may be difficult to obtain data on the relevant patient features, and the predictive power of such features may rapidly decay because of patient mobility and interactions (Goldstein et al., 2017). While availability of patient metadata varied across the datasets assessed, our results suggest that while incorporation of patient metadata into sampling strategies may increase detection efficiency for some novel resistance variants, it may be difficult to generalize for all potential novel resistance variants. It is possible that targeted sampling based on patient characteristics may be more reliable in the context of pathogens, antibiotic, and/or patient characteristics not assessed here.\n\nIncorporation of WGS into routine pathogen surveillance by public health agencies (European Centre for Disease Prevention and Control, 2019; Brown et al., 2019) may facilitate use of genomic information in phenotypic sampling strategies, particularly with emerging metagenomic approaches that do not require bacterial culture (B\u0159inda et al., 2020). Our results show that phylogeny-aware sampling, particularly the clonal group approach, which reduces the amount of repeated sampling of closely related isolates, significantly improved detection efficiency over random sampling for multiple resistance and diagnostic-associated variants. Further, identification of and preferential sampling of isolates with genetic markers that are consistently predictive of resistance across a range of mechanisms, including those associated with resistance to other drugs, may supplement phylogeny-aware sampling to further optimize detection efficiency of novel variants. However, the utility of sampling based on genetic markers of other resistance mechanisms will likely vary substantially across different drugs and be influenced by future treatment guidelines.\n\nWhile the clonal group sampling approach increased detection efficiency for the resistance and diagnostic escape variants assessed here, it may be difficult to determine the most effective and reliable metric or threshold for clonal grouping, especially as this is likely to vary across different clinical populations, antibiotics, and bacterial species. Detection efficiency was generally consistent across the two SNP thresholds and fastBAPS groupings based on WGS. However, performance of the clonal group approach using MLSTs was inconsistent and, in some instances, worse than random sampling, likely due to the shortcomings of MLST compared to WGS-based approaches in distinguishing between AMR variant-positive clades and more distantly-related variant-negative clades in species such as N. gonorrhoeae (Harris et al., 2018). This suggests that this approach is sensitive to similarity thresholds and that a low SNP threshold based on WGS assemblies may be the most appropriate approach, particularly in a population where there is expected to be substantial clonality among isolates and thus, even with a low threshold, detection efficiency will be improved by the clonal group approach. More broadly, surveillance incorporating WGS rather than MLST loci alone may further promote NAAT sustainability by enabling screening for variants with previously undetected mutations in target loci, such as the N. gonorrhoeae DR-9A G168A variants, that may be associated with diagnostic escape. While sequencing errors may occasionally impair clonal grouping of closely related isolates, thus weakening the benefit of the clonal group approach relative to random sampling, we expect the impact of such errors to be marginal in the absence of large sequence quality issues. Such large quality issues should be apparent at the first stages of an analysis.\n\nWe have assessed these targeted sampling approaches in detection of multiple resistance variants across a range of populations, but these represent only a fraction of resistance mechanisms in a single species. These findings may extend to other antibiotics and bacterial species. For example, given the high degree of clonality among M. tuberculosis isolates and the significant variation in prevalence of drug resistance and resistance-conferring genotypes across clonal groups (Merker et al., 2015; Casali et al., 2014), the clonal group sampling approach may similarly improve detection efficiency of novel resistance variants in M. tuberculosis. For species in which drug resistance is primarily acquired through gene acquisition, it is unclear if phylogeny-aware sampling based on the core genome will improve detection efficiency of novel variants, though in gonococcus, there is evidence of a relationship between the core genome and the plasmid-borne resistance genes blaTEM and tetM (S\u00e1nchez-Bus\u00f3 et al., 2019), and it is further possible that, combined with core genome-based phylogeny-informed sampling, screening for homologs of known resistance genes from other species may expedite identification of any novel resistance genes acquired by the species of interest. However, in addition to providing a more practically applicable (i.e., less computationally intensive) alternative to phylogeny-informed sampling, sampling informed by k-mer distances (Ondov et al., 2016; Lees et al., 2019) may also be more generalizable to a broader range of novel resistance mechanisms. Further, the requirement of confirmatory phenotyping to identify novel resistance may not extend to pathogens that are expected to be associated with reliably-identifiable treatment failures, as for these pathogens, identification of treatment failure likely represents the most efficient method of novel resistance variant detection (Berenger et al., 2019). However, for other pathogens, such as N. gonorrhoeae (Eyre et al., 2018), treatment failures may go undetected for reasons including partial abatement of symptoms or long treatment regimens. Ultimately, as genotype-based diagnostics for antibiotic resistance become available for more species, it will be important to assess the efficiencies of these approaches across pathogens with different clinical, epidemiological, and evolutionary paradigms.\n\nSince we lack the datasets to assess targeted sampling of variants from the time they first emerged in a population, any associations we observed between the variants and patient or pathogen features do not necessarily reflect those around the time of emergence. Thus, more longitudinal epidemiological and genomic studies, particularly after the implementation of genotype-based diagnostics, are necessary to better characterize patterns of novel resistance emergence and inform targeted surveillance approaches.\n\nThe phylogeny-aware sampling approaches presented here are based on the assumption that genomic data will be available for the pool of potential isolates from incident cases that may undergo confirmatory phenotyping. However, using information on isolate features to increase surveillance efficiency may be feasible even in the absence of mass prospective sequencing. For example, under the general assumption that novel resistance variants are more likely to appear in underrepresented lineages, phylogeny-aware surveillance could be paired with a diagnostic approach such as genomic neighbor typing (B\u0159inda et al., 2020), where any isolates with either susceptible or low confidence calls that appear to be divergent from the genomes in the reference database would be prioritized for confirmatory phenotyping. Similarly, a diagnostic that predicts AMR phenotypes through a combination of transcriptomic and genomic typing (Bhattacharyya et al., 2019) may facilitate targeted surveillance by identifying isolates with ambiguous predictions (e.g., isolates with transcriptional signatures of resistance that lack known genomic markers of resistance) that could be prioritized for confirmatory phenotyping.\n\nWhile the focus of this study was to introduce and evaluate approaches to increase the efficiency of surveillance programs for maintaining marker-based AMR diagnostics, these approaches may be broadly applicable to surveillance programs aimed at tracking AMR in general and/or other phenotypes of interest that may be time- and/or resource-intensive to directly measure. For example, programs such as the National Antimicrobial Resistance Monitoring System for Enteric Bacteria (https://www.cdc.gov/narms/) could adopt these targeted sampling approaches to prioritize isolates for phenotypic testing.\n\nAdvances in diagnostics, extensive sequencing of clinical isolates, and large collections of clinical and pathogen data together provide new opportunities for integrating data streams and optimizing surveillance efforts. As marker-based point-of-care AMR diagnostics are developed and implemented, optimization of surveillance systems will require assessments like those modeled here of species-, drug-, and population-specific factors that may affect the emergence and distribution of diagnostic escape resistance variants, as well as how the diagnostic itself may complement surveillance efforts.\n\n## Materials and methods\n\n### Dataset preparation and phylogenetic reconstruction\n\nSee Table 1 for details of the N. gonorrhoeae datasets and Tables 2 and 3 for the variants assessed. Raw sequencing data were downloaded from the NCBI Sequence Read Archive. Genomes were assembled using SPAdes v3.13 (Bankevich et al., 2012) with default parameters and the careful option to minimize the number of mismatches. Assembly quality was assessed using QUAST v4.3 (Gurevich et al., 2013), and contigs\u00a0<\u00a0500 bp in length and/or with\u00a0<10 x average coverage were removed. Isolate reference-based pseudogenomes were constructed by mapping raw reads to the NCCP11945 reference genome (RefSeq accession number NC_011035.1) using BWA-MEM v7.12 (Li, 2013), the Picard toolkit v2.8\u00a0(Picard development team, 2016) to identify duplicate reads, and Pilon v1.22 (Walker et al., 2014) to determine the base call for each site, with a minimum depth of 10 and a minimum base quality of 20.\n\nLoci in Tables 2 and 3 were extracted from the genome assemblies using blastn (Altschul et al., 1990) followed by MUSCLE alignment using default parameters (Edgar, 2004) to assess the presence or absence of the resistance variants. Presence or absence of mutations in the multi-copy 16S and 23S rRNA genes and the repetitive DR-9A and DR-9B regions (Dailey et al., 2013) was assessed using BWA-MEM, the Picard toolkit, and Pilon, as above, to map raw reads to a single 16S rRNA allele, a single 23S rRNA allele, a single DR-9A region, and a single DR-9B region from the NCCP11945 reference isolate and determine the mapping quality-weighted percentage of each nucleotide at the site of interest. See Table 4 for information on the reference sequences used for variant calling. Isolate metadata and resistance variant profiles are given in Supplementary file 1. Sampling bias across demographic and geographic groups was assessed by comparing (by chi-squared test) reported gonorrhea incidence across the groups in the population from which the dataset samples were collected to the prevalence of the groups in each dataset. Association between genetic variants and demographic or geographic groups and between phenotypic resistance variants and genetic markers in each of datasets was assessed by Fisher\u2019s exact test, due to the low prevalence of the variants.\n\n**Table 4.**\n Reference information for the genetic variants assessed.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Variant</th>\n      <th>Reference accession</th>\n      <th>Coordinates of genetic locus in reference entry</th>\n      <th>Position of mutation in reference locus</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>RplD G70D</td>\n      <td>NC_011035.1</td>\n      <td>2033052\u20132033672</td>\n      <td>amino acid 70</td>\n    </tr>\n    <tr>\n      <td>23S rRNA C2611T</td>\n      <td>NC_011035.1</td>\n      <td>1263408\u20131266305</td>\n      <td>nucleotide 2603</td>\n    </tr>\n    <tr>\n      <td>penA XXXIV</td>\n      <td>NZ_LT906440.1</td>\n      <td>1588456\u20131590201</td>\n      <td>N/A (assessed presence/absence of this allele)</td>\n    </tr>\n    <tr>\n      <td>16S rRNA C1209A</td>\n      <td>NC_011035.1</td>\n      <td>1266903\u20131268450</td>\n      <td>nucleotide 1192</td>\n    </tr>\n    <tr>\n      <td>N. meningitidis-like porA</td>\n      <td>NC_011035.1</td>\n      <td>735796\u2013737125</td>\n      <td>N/A (assessed nucleotide similarity across the full locus with a threshold of\u00a0\u2264\u00a090%)*</td>\n    </tr>\n    <tr>\n      <td>cppB deletion</td>\n      <td>LT592149.1</td>\n      <td>2912\u20133553</td>\n      <td>N/A (assessed presence/absence of full locus)</td>\n    </tr>\n    <tr>\n      <td>DR-9A G168A</td>\n      <td>NC_011035.1</td>\n      <td>530088\u2013530277</td>\n      <td>nucleotide 168</td>\n    </tr>\n  </tbody>\n</table>\n\n_*Isolates with a porA pseudogene with\u00a0\u226490% similarity to the NC_011035.1 porA pseudogene were called positive for N. meningitidis-like porA. Note that all such isolates were confirmed to have a porA pseudogene that was\u00a0\u226592% similar to the N. meningitidis porA (GenBank Accession: GQ173789.1), while all other isolates had\u00a0\u226489% similarity to the N. meningitidis porA._\n\nGubbins v2.3.4 (Croucher et al., 2015) was used with default parameters to identify and mask recombinant regions from the pseudogenomes and build maximum likelihood phylogenies from the non-recombinant pseudogenome alignments for each dataset through RAxML v8.2.12 (Sommer et al., 2017). Pairwise phylogenetic distances were calculated after removal of predicted recombinant regions using the ape package in R. Phylogenetic distributions of genetic resistance variants were assessed by estimating the phylogenetic D statistic (Fritz and Purvis, 2010) using the caper package in R. Bayesian analysis of population structure was performed on the pseudogenome alignments for each dataset using fastBAPS (Tonkin-Hill et al., 2019). Multilocus sequence types (MLSTs) were assigned using the PubMLST database (https://pubmlst.org/neisseria/).\n\n### Sampling approaches\n\nFor each sampling approach/dataset/variant combination, 100 simulations were carried out with isolate sampling continuing until variant detection. We defined \u2018detection efficiency\u2019 as one minus the fraction of isolates sampled prior to variant detection (excluding any samples for which the presence or absence of the variant could not be determined). As detection efficiencies were not normally distributed, differential performance between random sampling and targeted sampling was assessed by Mann Whitney U tests of differences in mean ranks of detection efficiencies. Because the purpose of this study was to compare the rare variant detection efficiency between random sampling and targeted sampling approaches, we did not evaluate RplD G70D in datasets 1 and 4 or for the penA XXXIV allele in dataset 3, as the prevalence of these variants in these datasets was\u00a0>10%.\n\nIn demography-aware sampling (datasets 1 and 2), the first isolate was selected at random, and each successive isolate was randomly selected from alternating demographic groups (men vs. women and men who have sex with men [MSM] vs. men who have sex with women [MSW] or women who have sex with men [WSM]). For anatomical site (niche)-aware sampling (datasets 1 and 2), the first isolate was selected at random, and each successive isolate was randomly selected from alternating anatomical sites of isolate collection (i.e., cervix, urethra, rectum, and pharynx). For geography-aware sampling (datasets 3 and 4), the first isolate was selected at random, and each successive isolate was randomly selected from alternating geographic regions (countries or prefectures). For geography- and distance-aware sampling (datasets 3 and 4), the first isolate was selected at random, and each successive isolate was selected randomly from the region (country or prefecture) with the largest product of geographic distances from previously sampled regions, only re-sampling from a given region after all regions had been sampled in that round. For travel history- and sex work-aware sampling (dataset 2), isolates were selected at random either limiting the pool to isolates from patients who had recently engaged in overseas sex or sex work, respectively (Williamson et al., 2019).\n\nFor phylogeny-aware sampling (datasets 1-5), the first isolate was selected at random, and each successive isolate was either selected to maximize the product of phylogenetic distances from each of the previously sampled isolates (\u201cdistance maximization\u201d) or selected randomly with the exception of ensuring even sampling across phylogenetic groups (\u201cclonal group\u201d; i.e., isolates \u2264 $N$ SNPs from a previously sampled isolate that were excluded from future sampling until all \u201cclonal groups\u201d had been sampled). SNP cutoffs tested for the clonal group approach included 1) 134 SNPs, the lower 95% confidence interval of the mean SNP distance across datasets 1-5 between each isolate with phenotypic cefixime resistance (CFX-R), azithromycin resistance (AZM-R), and/or ceftriaxone reduced susceptibility (CRO-RS, >0.25 \u03bcg/mL, >1 \u03bcg/mL, and \u22650.12 \u03bcg/mL, respectively) and the closest susceptible isolate, and 2) 422 SNPs, the lower 95% confidence interval of the mean SNP distance across datasets 1-5 between each isolate with the RplD G70D mutation, the 23S rRNA C2611T mutation, and/or the penA XXXIV allele and the closest isolate without the resistance variant. The clonal group sampling approach was further tested by alternating sampling across fastBAPS and MLST groups.\n\nFor genomic background-aware sampling, isolates were selected at random either limiting the pool to isolates with genotypic ciprofloxacin resistance (i.e., the GyrA S91F mutation) or to isolates with a mutation at PorB G120 and/or PorB A121, which have been associated with a range of resistance pathways in multiple classes of antibiotics (Mortimer and Grad, 2019). Genomic background-aware sampling was assessed in detection of CRO-RS (datasets 1 and 3\u20135; dataset 2 had no CRO-RS isolates) and CFX-R (datasets 1 and 3\u20134; datasets 2 and 5 had no CFX-RS isolates).\n",
+      "created_at": "2025-12-02T18:14:18.753870Z"
+    },
+    {
+      "id": "2519cd7f-6659-4745-8eaa-e17099f9eed9",
+      "submission_id": "227847e3-6f1d-41cd-ad9c-2bf6a26e9956",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Miles P Davenport, University of New South Wales Australia\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.56367.sa1](https://doi.org/10.7554/eLife.56367.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nAcceptance summary:\n\nIdentification of antibiotic resistance is shifting from culture based to genetic identification of drug resistant strains. However, how best to use these data is unclear \u2013 can we move beyond searching for common and known variants to identify new mutations? This manuscript addresses the critical question of how to rapidly identify antibiotic resistance from sequence data. It compares how inclusion of different clinical and genetic data affects these predictions. It finds a limited role for inclusion of clinical data but suggests that inclusion of data on phylogeny and background may be informative.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Targeted surveillance strategies for efficient detection of novel antibiotic resistance variants\" for consideration by eLife. Your article has been reviewed by two peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Eduardo Franco as the Senior Editor. The following individuals involved in review of your submission have agreed to reveal their identity: Michael Feldgarden (Reviewer #1); Nicholas Medland (Reviewer #2).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nWe would like to draw your attention to changes in our revision policy that we have made in response to COVID-19 (https://elifesciences.org/articles/57162). Specifically, we are asking editors to accept without delay manuscripts, like yours, that they judge can stand as eLife papers without additional data, even if they feel that they would make the manuscript stronger. Thus the revisions requested below only address clarity and presentation.\n\nSummary:\n\nThis paper addresses a critical shortcoming of the transition from conventional culture-based N. gonorrhoea AMR testing to molecular based systems, which otherwise have the potential to transform both diagnostics and surveillance globally. Determining the extent of the research flatform required support molecular AMR testing and how it is applied to real world sampling is critical. In particular, knowing that resistance develops according to known mechanisms and that population and anatomical distribution is not random, are sampling frames able to be manipulated to increase the probability that new resistant variants will be detected sooner? Using five historical datasets with established genotype and culture-based resistance results but with varying degrees of clinical and epidemiological data (from highly detailed to unavailable), the authors simulated whether different sampling based on demographic, anatomic and/or geographic sampling frames would detect markers of clinically important azithromycin and ceftriaxone resistance known to occur in low prevalence in those datasets. They found that although some targeted sampling, in particular of returned travellers, helps to identify resistant mutants, on the whole it did not do so reliably.\n\nSo as to better target sampling at strains that are genetically different from those previously sampled the authors propose two phylogenetic strategies: sampling maximally unrelated isolates and sampling from each phylogenetically related clone. These approaches led to some improvement in efficiency in detecting resistant mutants, particularly after post-hoc adjustment of sensitivity thresholds (for the latter) and in some data sets with particular characteristics (for the former).\n\nA third type of strategy was to sample strains what had already identified markers of resistant to other antibiotics, in particularly to ciprofloxacin whose resistance genotype is extremely well studied and well characterised.\n\nThe first approach uses metadata, which is considered essential in surveillance but is nonetheless not always available, and which the later approaches have the advantage of not requiring. However, the second and third approaches clearly require some preliminary molecular testing of specimens to determine which to sample for whole genome sequencing.\n\nEssential revisions:\n\n1) How would a low rate of either sequencing or phenotyping error affect the different approaches? Presumably, these effects would not qualitatively affect the outcomes, but would such error rates, which are often observed, falsely improve or weaken one approach?.\n\n2) The resistance markers used are mostly point mutations or recombinant alleles. What are the expectations for the performance of these sampling approaches for acquired resistance genes (e.g., plasmid borne AMR genes)?\n\n3) There are other large datasets with genomic and phenotypic information (e.g., NARMS) that could be used to test this-and find this approach useful. While I do not expect (nor want) the authors to examine these datasets, recognizing that this technique would be useful for large surveillance systems should be mentioned. It would be a shame for surveillance systems to be unaware of these findings.\n",
+      "created_at": "2025-12-02T18:14:18.753870Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T18:14:18.753870Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T18:14:18.753870Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "d6f4a253-34eb-4fd0-9e20-a8560a69b42a",
+      "content_id": "a5d81b66-966c-4bab-9d31-cb74e32e746c",
+      "claim_id": "C1",
+      "claim": "Genotype-based diagnostics for antibiotic resistance represent a promising alternative to empiric therapy, reducing inappropriate antibiotic use.",
+      "claim_type": "EXPLICIT",
+      "source": "Genotype-based diagnostics for antibiotic resistance represent a promising alternative to empiric therapy, reducing inappropriate antibiotic use.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to other scholarly work",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:14:18.753870Z"
+    },
+    {
+      "id": "f9be71a3-5694-40bf-95af-3f1079b50dfd",
+      "content_id": "a5d81b66-966c-4bab-9d31-cb74e32e746c",
+      "claim_id": "C2",
+      "claim": "The utility of genotype-based diagnostics will wane with the emergence of novel resistance.",
+      "claim_type": "EXPLICIT",
+      "source": "However, because such assays infer resistance based on known genetic markers, their utility will wane with the emergence of novel resistance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on logical inference from the nature of genotype-based diagnostics",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:14:18.753870Z"
+    },
+    {
+      "id": "d4c2e02f-0df8-49b3-97c5-d6b71a34a59d",
+      "content_id": "a5d81b66-966c-4bab-9d31-cb74e32e746c",
+      "claim_id": "C3",
+      "claim": "Maintenance of genotype-based diagnostics will require surveillance to ensure early detection of novel resistance variants.",
+      "claim_type": "EXPLICIT",
+      "source": "Maintenance of these diagnostics will therefore require surveillance to ensure early detection of novel resistance variants, but efficient strategies to do so remain undefined.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on logical inference from the limitation of genotype-based diagnostics",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:14:18.753870Z"
+    },
+    {
+      "id": "fce5dda5-8193-40d7-844e-810d76ced5e9",
+      "content_id": "a5d81b66-966c-4bab-9d31-cb74e32e746c",
+      "claim_id": "C4",
+      "claim": "Patient characteristic-informed sampling is not a reliable strategy for efficient variant detection.",
+      "claim_type": "EXPLICIT",
+      "source": "We show that patient characteristic-informed sampling is not a reliable strategy for efficient variant detection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data from sampling simulations",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:14:18.753870Z"
+    },
+    {
+      "id": "6cc4655b-2b3f-4f69-83b8-40a3b53dfcb3",
+      "content_id": "a5d81b66-966c-4bab-9d31-cb74e32e746c",
+      "claim_id": "C5",
+      "claim": "Sampling informed by pathogen characteristics, such as genomic diversity and genomic background, is significantly more efficient than random sampling in identifying genetic variants associated with resistance and diagnostic escape.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, sampling informed by pathogen characteristics, such as genomic diversity and genomic background, is significantly more efficient than random sampling in identifying genetic variants associated with resistance and diagnostic escape.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data from sampling simulations",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:14:18.753870Z"
+    },
+    {
+      "id": "5a7242b1-277f-4691-8b64-dcab7cac009d",
+      "content_id": "a5d81b66-966c-4bab-9d31-cb74e32e746c",
+      "claim_id": "C6",
+      "claim": "Nucleic acid-based diagnostics that enable rapid pathogen identification and prediction of drug susceptibility profiles can improve clinical decision-making, reduce inappropriate antibiotic use, and help address the challenge of antibiotic resistance.",
+      "claim_type": "EXPLICIT",
+      "source": "Nucleic acid-based diagnostics that enable rapid pathogen identification and prediction of drug susceptibility profiles can improve clinical decision-making, reduce inappropriate antibiotic use, and help address the challenge of antibiotic resistance (McAdams et al., 2019; Fingerhuth et al., 2017; Tuite et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by references to other scholarly work",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:14:18.753870Z"
+    },
+    {
+      "id": "5aac2aff-37c8-4788-83e0-8f82e74f8493",
+      "content_id": "a5d81b66-966c-4bab-9d31-cb74e32e746c",
+      "claim_id": "C7",
+      "claim": "The sensitivity of nucleic acid-based diagnostics may be undermined by undetected genetic variants.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the sensitivity of such diagnostics may be undermined by undetected genetic variants (Andr\u00e9 et al., 2017; Berhane et al., 2018; Herrmann et al., 2008; Guglielmino et al., 2019; Whiley et al., 2011; Golparian et al., 2012; Bruisten et al., 2004; Lee et al., 2018a; Marks et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by references to other scholarly work",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:14:18.753870Z"
+    },
+    {
+      "id": "f575889c-198c-44a8-89a1-43594ddb3860",
+      "content_id": "a5d81b66-966c-4bab-9d31-cb74e32e746c",
+      "claim_id": "C8",
+      "claim": "Pathogen surveillance programs aimed at early detection of novel variants are crucial to ensuring the clinical utility and sustainability of genotype-based diagnostics.",
+      "claim_type": "EXPLICIT",
+      "source": "Pathogen surveillance programs aimed at early detection of novel variants are crucial to ensuring the clinical utility and sustainability of these diagnostics.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on logical inference from the limitations of genotype-based diagnostics",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:14:18.753870Z"
+    },
+    {
+      "id": "4c833da3-b732-4909-ad8b-ace02c93ca1e",
+      "content_id": "a5d81b66-966c-4bab-9d31-cb74e32e746c",
+      "claim_id": "C9",
+      "claim": "Use of traditional nucleic acid amplification tests (NAATs) for pathogen identification and genotype-based diagnostics for antibiotic resistance can select for genetic variants that escape detection.",
+      "claim_type": "EXPLICIT",
+      "source": "Use of traditional nucleic acid amplification tests (NAATs) for pathogen identification and genotype-based diagnostics for antibiotic resistance can select for genetic variants that escape detection (Smid et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by references to other scholarly work",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:14:18.753870Z"
+    },
+    {
+      "id": "d6842773-faf2-4c28-9fac-c1241023da88",
+      "content_id": "a5d81b66-966c-4bab-9d31-cb74e32e746c",
+      "claim_id": "C10",
+      "claim": "Mutations and/or deletions at the NAAT target locus that cause an amplification failure have arisen in Neisseria gonorrhoeae, Chlamydia trachomatis, Staphylococcus aureus, and Plasmodium falciparum.",
+      "claim_type": "EXPLICIT",
+      "source": "Mutations and/or deletions at the NAAT target locus that cause an amplification failure have arisen in Neisseria gonorrhoeae, Chlamydia trachomatis, Staphylococcus aureus, and Plasmodium falciparum, resulting in false negative diagnostic errors only detected when using another diagnostic platform (Berhane et al., 2018; Herrmann et al., 2008; Guglielmino et al., 2019; Lee et al., 2018a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by references to other scholarly work",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:14:18.753870Z"
+    },
+    {
+      "id": "33877a9d-23b9-4e7e-876a-d6f6a2b3bb9e",
+      "content_id": "a5d81b66-966c-4bab-9d31-cb74e32e746c",
+      "claim_id": "C11",
+      "claim": "Diagnostic escape associated with genotype-based diagnostics for antibiotic resistance are the result of resistance-conferring variants not accounted for in the diagnostic's panel of resistance markers.",
+      "claim_type": "EXPLICIT",
+      "source": "Diagnostic escape associated with genotype-based diagnostics for antibiotic resistance are the result of resistance-conferring variants (e.g., mutations or accessory genes) not accounted for in the diagnostic's panel of resistance markers (Andr\u00e9 et al., 2017) and require phenotypic testing to be uncovered.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by references to other scholarly work and logical inference",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:14:18.753870Z"
+    },
+    {
+      "id": "b20470d4-d476-488c-8780-3ea0dcef26ee",
+      "content_id": "a5d81b66-966c-4bab-9d31-cb74e32e746c",
+      "claim_id": "C12",
+      "claim": "A framework was previously presented to quantify the sampling rate for early detection of novel antibiotic resistance variants.",
+      "claim_type": "EXPLICIT",
+      "source": "We recently presented a framework to quantify the sampling rate for early detection of novel antibiotic resistance variants, defining the number of isolates that would need to undergo confirmatory phenotyping from those predicted by genotype to be susceptible (Hicks et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by reference to prior work by the authors",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:14:18.753870Z"
+    },
+    {
+      "id": "e9d80b73-cdb1-4188-ad2a-37de0295c9c1",
+      "content_id": "a5d81b66-966c-4bab-9d31-cb74e32e746c",
+      "claim_id": "C13",
+      "claim": "The real-world application of the unbiased sampling model may be challenging for pathogens with high case incidence, such as N. gonorrhoeae, as the cost of phenotyping required by this model for timely detection of novel resistance variants is likely to be high.",
+      "claim_type": "EXPLICIT",
+      "source": "The real-world application of this model may also be challenging for pathogens with high case incidence, such as N. gonorrhoeae, as the cost of phenotyping required by this model for timely detection of novel resistance variants is likely to be high (Hicks et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by reference to prior work and logical inference",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:14:18.753870Z"
+    },
+    {
+      "id": "5f9b4d51-985a-4d60-9a3e-5cb41db167d0",
+      "content_id": "a5d81b66-966c-4bab-9d31-cb74e32e746c",
+      "claim_id": "C14",
+      "claim": "Novel variants may be more likely to emerge or spread in certain anatomical niches, demographics, or geographic regions.",
+      "claim_type": "EXPLICIT",
+      "source": "Novel variants may be more likely to emerge or spread in certain anatomical niches, demographics, or geographic regions (Lewis, 2013; Collignon et al., 2018; Frost et al., 2019; Hernando Rovirola et al., 2020), some of which may be systematically under-sampled (Kirkcaldy et al., 2019) and thus may provide a basis for sampling priority.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by references to other scholarly work",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:14:18.753870Z"
+    },
+    {
+      "id": "058faa7f-57c3-421d-a23d-3cb8cae06fd2",
+      "content_id": "a5d81b66-966c-4bab-9d31-cb74e32e746c",
+      "claim_id": "C15",
+      "claim": "Isolates or clades that are genetically divergent from the majority of isolates in a population may reflect travelers, their contacts, or otherwise under-sampled lineages.",
+      "claim_type": "EXPLICIT",
+      "source": "Isolates or clades that are genetically divergent from the majority of isolates in a population may reflect travelers, their contacts, or otherwise under-sampled lineages (Perrin et al., 2003; Pham Thanh et al., 2016; Kingsley et al., 2009; Mac Aog\u00e1in et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by references to other scholarly work",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:14:18.753870Z"
+    },
+    {
+      "id": "a6d7e7d6-4496-410c-8bf7-61409e414b01",
+      "content_id": "a5d81b66-966c-4bab-9d31-cb74e32e746c",
+      "claim_id": "C16",
+      "claim": "Some pathogen genomic backgrounds may be more conducive to the evolution of novel resistance mechanisms.",
+      "claim_type": "EXPLICIT",
+      "source": "Some pathogen genomic backgrounds may be more conducive to the evolution of novel resistance mechanisms (Borrell and Gagneux, 2011), and markers of these genomic backgrounds (e.g., variants associated with a range of resistance mechanisms and/or resistance to other drugs) may help improve sampling efficiency.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by references to other scholarly work",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:14:18.753870Z"
+    },
+    {
+      "id": "3059d5d8-e2e9-4865-9848-a993f3dcfd61",
+      "content_id": "a5d81b66-966c-4bab-9d31-cb74e32e746c",
+      "claim_id": "C17",
+      "claim": "Given historical patterns of antibiotic use, novel resistance may emerge on a background of existing resistance.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, given historical patterns of antibiotic use, novel resistance may emerge on a background of existing resistance (Gould and MacKenzie, 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by references to other scholarly work",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:14:18.753870Z"
+    },
+    {
+      "id": "faa7235b-747e-4774-b955-c20db5bc08d6",
+      "content_id": "a5d81b66-966c-4bab-9d31-cb74e32e746c",
+      "claim_id": "C18",
+      "claim": "N. gonorrhoeae offers a useful model for testing sampling strategies, given the increasing drug resistance and recent focus on developing sequence-based resistance diagnostics.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we test the performance of sampling strategies informed by these hypotheses using N. gonorrhoeae surveillance data. N. gonorrhoeae offers a useful model, given the increasing drug resistance and recent focus on developing sequence-based resistance diagnostics (Fingerhuth et al., 2017; Hook and Kirkcaldy, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by references to other scholarly work",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:14:18.753870Z"
+    },
+    {
+      "id": "d1ab35f7-7b5b-40f1-96d6-d1a8f25200a2",
+      "content_id": "a5d81b66-966c-4bab-9d31-cb74e32e746c",
+      "claim_id": "C19",
+      "claim": "Isolates from men and men who have sex with men (MSM) were overrepresented in datasets 1 and 2 compared to overall gonorrhea incidence in men and MSM in the US and Australia, respectively, during the study periods.",
+      "claim_type": "EXPLICIT",
+      "source": "Isolates from men and men who have sex with men (MSM) were overrepresented in datasets 1 and 2 compared to overall gonorrhea incidence in men and MSM in the US and Australia, respectively, during the study periods (Supplementary file 2A, p<0.001 for both datasets by chi-squared test of men vs. women and MSM vs. non-MSM in dataset vs. reported incidence).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by statistical analysis of the datasets",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:14:18.753870Z"
+    },
+    {
+      "id": "8d414a6a-10ee-428e-bf6e-af0d3be4104c",
+      "content_id": "a5d81b66-966c-4bab-9d31-cb74e32e746c",
+      "claim_id": "C20",
+      "claim": "Dataset 4 was comprised exclusively of isolates from men.",
+      "claim_type": "EXPLICIT",
+      "source": "Dataset 4 was comprised exclusively of isolates from men (Yahara et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by reference to the dataset source",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:14:18.753870Z"
+    },
+    {
+      "id": "7d040d76-fb9b-4d2e-9058-bfdd0e168117",
+      "content_id": "a5d81b66-966c-4bab-9d31-cb74e32e746c",
+      "claim_id": "C21",
+      "claim": "Pharyngeal isolates represented 4% and 18% of isolates with reported anatomical site of collection in datasets 1 and 2, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "While it is difficult to estimate the prevalence of pharyngeal gonococcal infections, as they tend to be asymptomatic (Wiesner et al., 1973), pharyngeal isolates represented 4% and 18% of isolates with reported anatomical site of collection in datasets 1 and 2, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by data from the datasets",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:14:18.753870Z"
+    },
+    {
+      "id": "33639c74-c334-46b7-aa36-72764352676b",
+      "content_id": "a5d81b66-966c-4bab-9d31-cb74e32e746c",
+      "claim_id": "C22",
+      "claim": "The geographic distribution of isolates in dataset 3 was significantly different from the reported case incidence across countries.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, the geographic distribution of isolates in dataset 3 was significantly different from the reported case incidence across countries (Supplementary file 2A, p<0.001 by chi-squared test of prevalence for each of the countries in dataset 3 vs. the reported overall incidence for each of the countries).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by statistical analysis of the dataset",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:14:18.753870Z"
+    },
+    {
+      "id": "27471f26-2638-4c1b-9942-41d5162ee56a",
+      "content_id": "a5d81b66-966c-4bab-9d31-cb74e32e746c",
+      "claim_id": "C23",
+      "claim": "The detection efficiency was not improved by demography-, niche-, geography-aware sampling compared to random sampling for any of the resistance variants.",
+      "claim_type": "EXPLICIT",
+      "source": "The detection efficiency was not improved by demography-, niche-, geography-aware sampling compared to random sampling for any of the resistance variants (Supplementary file 2B, Figure 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data from sampling simulations shown in Figure 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:14:18.753870Z"
+    },
+    {
+      "id": "c14394ea-f357-466b-bbeb-7ad23ee2a267",
+      "content_id": "a5d81b66-966c-4bab-9d31-cb74e32e746c",
+      "claim_id": "C24",
+      "claim": "In several cases, detection efficiency significantly decreased in demography- or geography-aware sampling compared to random sampling, reflecting enrichment of the resistance variant in the overrepresented demographic or geographic region.",
+      "claim_type": "EXPLICIT",
+      "source": "In several cases, detection efficiency significantly decreased in demography- or geography-aware sampling compared to random sampling, reflecting enrichment of the resistance variant in the overrepresented demographic or geographic region.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data from sampling simulations",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:14:18.753870Z"
+    },
+    {
+      "id": "a8fc7d75-d783-475e-8539-dbd63876e596",
+      "content_id": "a5d81b66-966c-4bab-9d31-cb74e32e746c",
+      "claim_id": "C25",
+      "claim": "No significant association between a given resistance variant and demographic group was observed across both dataset 1 and dataset 2.",
+      "claim_type": "EXPLICIT",
+      "source": "However, no significant association between a given resistance variant and demographic group was observed across both dataset 1 and dataset 2, and no demographics or geographic regions were significantly enriched for all variants (Supplementary file 1), suggesting that preferential sampling of any of these demographics or geographic regions would not be a reliable strategy for increasing novel variant detection efficiency.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by statistical analysis of the datasets",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:14:18.753870Z"
+    },
+    {
+      "id": "f3ef9542-e8c7-4fab-abe4-0017d2d92cdd",
+      "content_id": "a5d81b66-966c-4bab-9d31-cb74e32e746c",
+      "claim_id": "C26",
+      "claim": "penA XXXIV was significantly enriched in MSM compared to men who have sex with women and women who have sex with men (MSW/WSM) in dataset 2.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, while penA XXXIV was significantly enriched in MSM compared to men who have sex with women and women who have sex with men (MSW/WSM) in dataset 2 (p<0.003, Fisher's exact test), there was no significant difference in the proportions of MSM and MSW/WSM with penA XXXIV in dataset 1 (p=0.461, Fisher's exact test).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by statistical analysis of the datasets",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:14:18.753870Z"
+    },
+    {
+      "id": "cc1abed3-5d3d-4993-9b57-b12f7e0e6d75",
+      "content_id": "a5d81b66-966c-4bab-9d31-cb74e32e746c",
+      "claim_id": "C27",
+      "claim": "There was no significant difference in the proportions of MSM and MSW/WSM with penA XXXIV in dataset 1.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, while penA XXXIV was significantly enriched in MSM compared to men who have sex with women and women who have sex with men (MSW/WSM) in dataset 2 (p<0.003, Fisher's exact test), there was no significant difference in the proportions of MSM and MSW/WSM with penA XXXIV in dataset 1 (p=0.461, Fisher's exact test).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by statistical analysis of the datasets",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:14:18.753870Z"
+    },
+    {
+      "id": "2db86086-c086-4423-8d47-5bfb607949ae",
+      "content_id": "a5d81b66-966c-4bab-9d31-cb74e32e746c",
+      "claim_id": "C28",
+      "claim": "The AZM-R-associated RplD G70D mutation in dataset 3 was at highest prevalence in patients from Malta and Greece (10% and 6.25%, respectively) and absent from patients from Denmark.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, while the AZM-R-associated RplD G70D mutation in dataset 3 was at highest prevalence in patients from Malta and Greece (10% and 6.25%, respectively) and absent from patients from Denmark, the AZM-R-associated 23S C2611T variant was at highest prevalence in patients from Denmark (5.45%) and absent from patients from Malta or Greece.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by data from the datasets",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:14:18.753870Z"
+    },
+    {
+      "id": "987e78e6-aa30-4209-b788-e1a40664c1bc",
+      "content_id": "a5d81b66-966c-4bab-9d31-cb74e32e746c",
+      "claim_id": "C29",
+      "claim": "The AZM-R-associated 23S C2611T variant was at highest prevalence in patients from Denmark (5.45%) and absent from patients from Malta or Greece.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, while the AZM-R-associated RplD G70D mutation in dataset 3 was at highest prevalence in patients from Malta and Greece (10% and 6.25%, respectively) and absent from patients from Denmark, the AZM-R-associated 23S C2611T variant was at highest prevalence in patients from Denmark (5.45%) and absent from patients from Malta or Greece.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by data from the datasets",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:14:18.753870Z"
+    },
+    {
+      "id": "7a93993c-52f7-4351-a365-589b646b94cd",
+      "content_id": "a5d81b66-966c-4bab-9d31-cb74e32e746c",
+      "claim_id": "C30",
+      "claim": "Isolates from patients with recent overseas sex were associated with significantly longer terminal branches compared to patients that had only engaged in sex locally.",
+      "claim_type": "EXPLICIT",
+      "source": "Isolates from patients with recent overseas sex were associated with significantly longer terminal branches compared to patients that had only engaged in sex locally (Figure 1\u2014figure supplement 1), in support of the hypothesis that international travel may be associated with the importation of novel or divergent strains, or, more generally, that isolates from travelers may be more likely to be associated with under-sampled lineages.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by phylogenetic analysis shown in Figure 1\u2014figure supplement 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:14:18.753870Z"
+    },
+    {
+      "id": "ba00df2d-4c40-4e3e-9136-3df0d52a7877",
+      "content_id": "a5d81b66-966c-4bab-9d31-cb74e32e746c",
+      "claim_id": "C31",
+      "claim": "Preferentially sampling from patients with recent overseas sex significantly improved detection efficiency of the RplD G70D mutation and the penA XXXIV allele.",
+      "claim_type": "EXPLICIT",
+      "source": "Preferentially sampling from patients with recent overseas sex significantly improved detection efficiency of the RplD G70D mutation and the penA XXXIV allele, as these were at marginally higher prevalence in isolates from patients with recent overseas sex compared to those from patients who had only engaged in sex locally (3.03% overseas vs. 0.98% local and 2.02% overseas vs. 1.67% local, respectively, p=0.090 and 0.683, respectively, by Fisher's exact test for both variants).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data from sampling simulations and statistical analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:14:18.753870Z"
+    },
+    {
+      "id": "24949275-a941-41ac-a3e9-47575afc6eed",
+      "content_id": "a5d81b66-966c-4bab-9d31-cb74e32e746c",
+      "claim_id": "C32",
+      "claim": "The 23S C2611T mutation was exclusively present in isolates from patients who had engaged in sex locally.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the 23S C2611T mutation was exclusively present in isolates from patients who had engaged in sex locally (Supplementary files 1 and 2C).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by data from the datasets",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:14:18.753870Z"
+    },
+    {
+      "id": "bfc701db-54a9-4b92-9ff4-d4d17ee290bf",
+      "content_id": "a5d81b66-966c-4bab-9d31-cb74e32e746c",
+      "claim_id": "C33",
+      "claim": "The 23S C2611T mutation was marginally enriched in isolates from patients who had engaged in recent sex work compared to patients who had not.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, while the 23S C2611T mutation was marginally enriched in isolates from patients who had engaged in recent sex work compared to patients who had not (2.33% in sex workers vs. 1.31% in non-sex workers, p=0.327 by Fisher's exact test), and thus preferentially sampling from sex workers significantly improved detection efficiency of this variant compared to sampling from the full patient population, detection efficiencies for the RplD G70D mutation and the penA XXXIV allele were not significantly improved by preferentially sampling from sex workers (Supplementary files 1 and 2 C).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by statistical analysis of the datasets",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:14:18.753870Z"
+    },
+    {
+      "id": "11de568d-99db-4301-a155-5bebfa12257c",
+      "content_id": "a5d81b66-966c-4bab-9d31-cb74e32e746c",
+      "claim_id": "C34",
+      "claim": "Preferentially sampling from sex workers significantly improved detection efficiency of the 23S C2611T mutation compared to sampling from the full patient population.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, while the 23S C2611T mutation was marginally enriched in isolates from patients who had engaged in recent sex work compared to patients who had not (2.33% in sex workers vs. 1.31% in non-sex workers, p=0.327 by Fisher's exact test), and thus preferentially sampling from sex workers significantly improved detection efficiency of this variant compared to sampling from the full patient population, detection efficiencies for the RplD G70D mutation and the penA XXXIV allele were not significantly improved by preferentially sampling from sex workers (Supplementary files 1 and 2 C).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data from sampling simulations",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:14:18.753870Z"
+    },
+    {
+      "id": "bd461f25-b9da-46ff-87a7-d6cca1f2bd48",
+      "content_id": "a5d81b66-966c-4bab-9d31-cb74e32e746c",
+      "claim_id": "C35",
+      "claim": "Detection efficiencies for the RplD G70D mutation and the penA XXXIV allele were not significantly improved by preferentially sampling from sex workers.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, while the 23S C2611T mutation was marginally enriched in isolates from patients who had engaged in recent sex work compared to patients who had not (2.33% in sex workers vs. 1.31% in non-sex workers, p=0.327 by Fisher's exact test), and thus preferentially sampling from sex workers significantly improved detection efficiency of this variant compared to sampling from the full patient population, detection efficiencies for the RplD G70D mutation and the penA XXXIV allele were not significantly improved by preferentially sampling from sex workers (Supplementary files 1 and 2 C).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data from sampling simulations",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:14:18.753870Z"
+    },
+    {
+      "id": "62426c12-a27a-4c3f-ac31-620e63fae1ce",
+      "content_id": "a5d81b66-966c-4bab-9d31-cb74e32e746c",
+      "claim_id": "C36",
+      "claim": "While the distance maximization approach increased detection efficiency compared to random sampling for some variants, there were numerous instances in which this approach substantially decreased detection efficiency.",
+      "claim_type": "EXPLICIT",
+      "source": "While the distance maximization approach increased detection efficiency compared to random sampling for some variants, there were numerous instances in which this approach, which led to preferential sampling of isolates associated with long branches, substantially decreased detection efficiency (Figure 2, Supplementary file 2D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data from sampling simulations shown in Figure 2",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:14:18.753870Z"
+    },
+    {
+      "id": "1805709b-7750-407c-806c-480375bcb316",
+      "content_id": "a5d81b66-966c-4bab-9d31-cb74e32e746c",
+      "claim_id": "C37",
+      "claim": "The clonal group sampling approach significantly decreased detection efficiency in only one instance (i.e., the 23S rRNA C2611T variant in dataset 4), where all isolates with the variant appeared in large clonal lineages of predominately variant-negative isolates.",
+      "claim_type": "EXPLICIT",
+      "source": "The clonal group sampling approach significantly decreased detection efficiency in only one instance (i.e., the 23S rRNA C2611T variant in dataset 4, Supplementary file 2D), where all isolates with the variant appeared in large clonal lineages of predominately variant-negative isolates (Figure 2D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data from sampling simulations and phylogenetic analysis shown in Figure 2D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:14:18.753870Z"
+    },
+    {
+      "id": "3d5dbb6e-3180-477d-b7e1-dd805c9d8ca8",
+      "content_id": "a5d81b66-966c-4bab-9d31-cb74e32e746c",
+      "claim_id": "C38",
+      "claim": "The clonal group approach performed significantly better than random sampling for all diagnostic-associated variants across all datasets.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the clonal group approach performed significantly better than random sampling for all diagnostic-associated variants across all datasets.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data from sampling simulations",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:14:18.753870Z"
+    },
+    {
+      "id": "b8937a9a-93f6-45ba-8a8d-7b15fbde5aa2",
+      "content_id": "a5d81b66-966c-4bab-9d31-cb74e32e746c",
+      "claim_id": "C39",
+      "claim": "The relative performance of the clonal group sampling approach compared to random sampling was generally consistent across multiple thresholds based on pseudogenomes.",
+      "claim_type": "EXPLICIT",
+      "source": "The relative performance of the clonal group sampling approach compared to random sampling was generally consistent across multiple thresholds based on pseudogenomes (i.e.,\u2264134 SNPs, \u2264422 SNPs, and fastBAPS groups); relative performance of clonal group sampling using MLSTs, however, was less consistent and was significantly worse than random sampling for several variants (Figure 2\u2014figure supplement 1, Supplementary file 2D-E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data from sampling simulations shown in Figure 2\u2014figure supplement 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:14:18.753870Z"
+    },
+    {
+      "id": "778e718e-2658-49ec-91c6-115c97da0b0a",
+      "content_id": "a5d81b66-966c-4bab-9d31-cb74e32e746c",
+      "claim_id": "C40",
+      "claim": "Relative performance of clonal group sampling using MLSTs was less consistent and was significantly worse than random sampling for several variants.",
+      "claim_type": "EXPLICIT",
+      "source": "The relative performance of the clonal group sampling approach compared to random sampling was generally consistent across multiple thresholds based on pseudogenomes (i.e.,\u2264134 SNPs, \u2264422 SNPs, and fastBAPS groups); relative performance of clonal group sampling using MLSTs, however, was less consistent and was significantly worse than random sampling for several variants (Figure 2\u2014figure supplement 1, Supplementary file 2D-E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data from sampling simulations shown in Figure 2\u2014figure supplement 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:14:18.753870Z"
+    },
+    {
+      "id": "a67212d9-0f14-4867-b6fb-0d98b32f98d3",
+      "content_id": "a5d81b66-966c-4bab-9d31-cb74e32e746c",
+      "claim_id": "C41",
+      "claim": "Multiple drug resistance is more common in pathogenic bacteria than one would expect from the product of frequencies of resistance to individual drugs.",
+      "claim_type": "EXPLICIT",
+      "source": "Multiple drug resistance is more common in pathogenic bacteria than one would expect from the product of frequencies of resistance to individual drugs (Chang et al., 2015; Lehtinen et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by references to other scholarly work",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:14:18.753870Z"
+    },
+    {
+      "id": "fe4b81b5-c096-4e84-9137-4ed686bdfd22",
+      "content_id": "a5d81b66-966c-4bab-9d31-cb74e32e746c",
+      "claim_id": "C42",
+      "claim": "Novel resistance mechanisms might be more likely to arise and spread in bacterial strains that are already resistant to other drugs, a phenomenon that has been documented in N. gonorrhoeae.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that novel resistance mechanisms might be more likely to arise and spread in bacterial strains that are already resistant to other drugs, a phenomenon that has been documented in N. gonorrhoeae (Goldstein et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by references to other scholarly work",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:14:18.753870Z"
+    },
+    {
+      "id": "54f30cf2-db56-4bac-8394-cf03720c633b",
+      "content_id": "a5d81b66-966c-4bab-9d31-cb74e32e746c",
+      "claim_id": "C43",
+      "claim": "Ciprofloxacin was the recommended first-line therapy for uncomplicated gonorrhea through 2005 in the United Kingdom.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, as ciprofloxacin was the recommended first-line therapy for uncomplicated gonorrhea through 2005 in the United Kingdom (Whittles et al., 2018), 2007 in the United States (Centers for Disease Control and Prevention (CDC), 2007), and more recent years in other countries (Hemarajata et al., 2016; Unemo and Dillon, 2014; Bazzo et al., 2018), we investigated whether resistance to ESCs is significantly more likely to occur in the background of genotypic ciprofloxacin resistance (i.e., in strains with the GyrA S91F mutation).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by references to other scholarly work",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:14:18.753870Z"
+    },
+    {
+      "id": "e9571911-9f7d-4b93-9b40-12ae81c0881e",
+      "content_id": "a5d81b66-966c-4bab-9d31-cb74e32e746c",
+      "claim_id": "C44",
+      "claim": "Ciprofloxacin was the recommended first-line therapy for uncomplicated gonorrhea through 2007 in the United States.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, as ciprofloxacin was the recommended first-line therapy for uncomplicated gonorrhea through 2005 in the United Kingdom (Whittles et al., 2018), 2007 in the United States (Centers for Disease Control and Prevention (CDC), 2007), and more recent years in other countries (Hemarajata et al., 2016; Unemo and Dillon, 2014; Bazzo et al., 2018), we investigated whether resistance to ESCs is significantly more likely to occur in the background of genotypic ciprofloxacin resistance (i.e., in strains with the GyrA S91F mutation).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by references to other scholarly work",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:14:18.753870Z"
+    },
+    {
+      "id": "e0a07fac-5851-488a-a493-92bf9148fc68",
+      "content_id": "a5d81b66-966c-4bab-9d31-cb74e32e746c",
+      "claim_id": "C45",
+      "claim": "Mutations at positions 120 and/or 121 in PorB have been associated with resistance to a range of drugs from multiple classes.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, as mutations at positions 120 and/or 121 in PorB, the major outer membrane protein in gonococci, have been associated with resistance to a range of drugs from multiple classes (Mortimer and Grad, 2019), we investigated whether resistance to ESCs is significantly more likely to occur in strains with PorB 120 and/or 121 mutations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by references to other scholarly work",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:14:18.753870Z"
+    },
+    {
+      "id": "f8c467fb-50a8-4e42-9819-0d1fa1b3e179",
+      "content_id": "a5d81b66-966c-4bab-9d31-cb74e32e746c",
+      "claim_id": "C46",
+      "claim": "Isolates with CRO-RS and CFX-R were significantly more likely to have the GyrA S91F mutation and the PorB G120 and/or A121 mutations than the wild-type GyrA S91 or wild-type PorB G120/A121.",
+      "claim_type": "EXPLICIT",
+      "source": "Isolates with CRO-RS and CFX-R were significantly more likely to have the GyrA S91F mutation and the PorB G120 and/or A121 mutations than the wild-type GyrA S91 or wild-type PorB G120/A121 (p<0.001, Fisher's exact test, Figure 3A\u2013B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by statistical analysis and data shown in Figure 3A\u2013B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:14:18.753870Z"
+    },
+    {
+      "id": "afb2316d-193d-4f46-83e4-edb1d86a93da",
+      "content_id": "a5d81b66-966c-4bab-9d31-cb74e32e746c",
+      "claim_id": "C47",
+      "claim": "Both GyrA S91F and PorB G120 and/or A121 mutations occurred across a range of ESC resistance locus haplotypes.",
+      "claim_type": "EXPLICIT",
+      "source": "Further, both GyrA S91F and PorB G120 and/or A121 mutations occurred across a range of ESC resistance locus haplotypes (Figure 3C\u2013D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by data shown in Figure 3C\u2013D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:14:18.753870Z"
+    },
+    {
+      "id": "5cf22445-bcd8-4f86-a0c0-6ba066b11884",
+      "content_id": "a5d81b66-966c-4bab-9d31-cb74e32e746c",
+      "claim_id": "C48",
+      "claim": "For all datasets with CRO-RS or CFX-R isolates, detection efficiency of both variants was significantly increased by only sampling isolates with the GyrA S91F mutation or the PorB G120 and/or A121 mutations.",
+      "claim_type": "EXPLICIT",
+      "source": "For all datasets with CRO-RS or CFX-R isolates, detection efficiency of both variants was significantly increased by only sampling isolates with the GyrA S91F mutation or the PorB G120 and/or A121 mutations (Figure 3E\u2013F, Supplementary file 2F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data from sampling simulations shown in Figure 3E\u2013F",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:14:18.753870Z"
+    },
+    {
+      "id": "3731777b-61dd-4d3a-892b-2d5449229949",
+      "content_id": "a5d81b66-966c-4bab-9d31-cb74e32e746c",
+      "claim_id": "C49",
+      "claim": "Preferential sampling of isolates with certain genetic markers, including markers of resistance to previous first-line antibiotics, may increase the detection efficiency of novel resistance variants.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, these results suggest that preferential sampling of isolates with certain genetic markers, including markers of resistance to previous first-line antibiotics, may increase the detection efficiency of novel resistance variants.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on inference from the experimental data",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:14:18.753870Z"
+    },
+    {
+      "id": "0263708a-3931-4277-a9d6-f45673037b89",
+      "content_id": "a5d81b66-966c-4bab-9d31-cb74e32e746c",
+      "claim_id": "C50",
+      "claim": "With sequencing becoming more integral to routine pathogen surveillance and diagnostics, it is important to ensure that models mapping genotypic information to expected pathogen phenotype and/or clinical outcome are comprehensive and current.",
+      "claim_type": "EXPLICIT",
+      "source": "With sequencing becoming more integral to routine pathogen surveillance and diagnostics, it is important to ensure that models mapping genotypic information to expected pathogen phenotype and/or clinical outcome are comprehensive and current (Don\u00e0 et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by references to other scholarly work",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:14:18.753870Z"
+    },
+    {
+      "id": "c6c34ec8-0667-4a74-aa14-3031c3b219c7",
+      "content_id": "a5d81b66-966c-4bab-9d31-cb74e32e746c",
+      "claim_id": "C51",
+      "claim": "In the case of genotype-based diagnostics, sustained phenotypic surveillance is crucial for identifying resistance variants that have recently emerged and/or increased in prevalence from previously undetected levels.",
+      "claim_type": "EXPLICIT",
+      "source": "In the case of genotype-based diagnostics, sustained phenotypic surveillance is crucial for identifying resistance variants that have recently emerged and/or increased in prevalence from previously undetected levels.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on logical inference from the nature of genotype-based diagnostics",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:14:18.753870Z"
+    },
+    {
+      "id": "68972cf2-897c-4114-ad3f-713630875041",
+      "content_id": "a5d81b66-966c-4bab-9d31-cb74e32e746c",
+      "claim_id": "C52",
+      "claim": "Availability and incorporation of information on pathogen characteristics (e.g., pathogen genomic data) into surveillance programs may ultimately decrease the cost of surveillance to maintain the sensitivity of diagnostic tools.",
+      "claim_type": "EXPLICIT",
+      "source": "While effective incorporation of patient metadata into surveillance strategies may be challenging, availability and incorporation of information on pathogen characteristics (e.g., pathogen genomic data) into surveillance programs may ultimately decrease the cost of surveillance to maintain the sensitivity of these diagnostic tools.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on inference from the study results",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:14:18.753870Z"
+    },
+    {
+      "id": "8f3b3110-bc6a-4a76-9ed2-c5ede9428be9",
+      "content_id": "a5d81b66-966c-4bab-9d31-cb74e32e746c",
+      "claim_id": "C53",
+      "claim": "Collection of patient metadata, including demographic and geographic information, is crucial to understanding the epidemiology of drug resistance.",
+      "claim_type": "EXPLICIT",
+      "source": "Collection of patient metadata, including demographic and geographic information, is crucial to understanding the epidemiology of drug resistance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on established scientific knowledge",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:14:18.753870Z"
+    },
+    {
+      "id": "3513ac12-b3e2-41c5-bcca-d58261811e17",
+      "content_id": "a5d81b66-966c-4bab-9d31-cb74e32e746c",
+      "claim_id": "C54",
+      "claim": "It may be difficult to obtain data on the relevant patient features, and the predictive power of such features may rapidly decay because of patient mobility and interactions.",
+      "claim_type": "EXPLICIT",
+      "source": "However, it may be difficult to obtain data on the relevant patient features, and the predictive power of such features may rapidly decay because of patient mobility and interactions (Goldstein et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by references to other scholarly work",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:14:18.753870Z"
+    },
+    {
+      "id": "adca8703-e8eb-45a6-b6ee-66b0a3d36d64",
+      "content_id": "a5d81b66-966c-4bab-9d31-cb74e32e746c",
+      "claim_id": "C55",
+      "claim": "Incorporation of WGS into routine pathogen surveillance by public health agencies may facilitate use of genomic information in phenotypic sampling strategies.",
+      "claim_type": "EXPLICIT",
+      "source": "Incorporation of WGS into routine pathogen surveillance by public health agencies (European Centre for Disease Prevention and Control, 2019; Brown et al., 2019) may facilitate use of genomic information in phenotypic sampling strategies, particularly with emerging metagenomic approaches that do not require bacterial culture (B\u0159inda et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by references to other scholarly work",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:14:18.753870Z"
+    },
+    {
+      "id": "f591c14c-f7b1-402b-b609-fdc0e4a39c98",
+      "content_id": "a5d81b66-966c-4bab-9d31-cb74e32e746c",
+      "claim_id": "C56",
+      "claim": "Phylogeny-aware sampling, particularly the clonal group approach, significantly improved detection efficiency over random sampling for multiple resistance and diagnostic-associated variants.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results show that phylogeny-aware sampling, particularly the clonal group approach, which reduces the amount of repeated sampling of closely related isolates, significantly improved detection efficiency over random sampling for multiple resistance and diagnostic-associated variants.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data from sampling simulations",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:14:18.753870Z"
+    },
+    {
+      "id": "5e6382b3-a893-44ca-afec-09e33cd854a5",
+      "content_id": "a5d81b66-966c-4bab-9d31-cb74e32e746c",
+      "claim_id": "C57",
+      "claim": "Identification of and preferential sampling of isolates with genetic markers that are consistently predictive of resistance across a range of mechanisms, including those associated with resistance to other drugs, may supplement phylogeny-aware sampling to further optimize detection efficiency of novel variants.",
+      "claim_type": "EXPLICIT",
+      "source": "Further, identification of and preferential sampling of isolates with genetic markers that are consistently predictive of resistance across a range of mechanisms, including those associated with resistance to other drugs, may supplement phylogeny-aware sampling to further optimize detection efficiency of novel variants.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on inference from the study results",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:14:18.753870Z"
+    },
+    {
+      "id": "0978b62c-7601-4767-8cc3-f48ab51db182",
+      "content_id": "a5d81b66-966c-4bab-9d31-cb74e32e746c",
+      "claim_id": "C58",
+      "claim": "The utility of sampling based on genetic markers of other resistance mechanisms will likely vary substantially across different drugs and be influenced by future treatment guidelines.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the utility of sampling based on genetic markers of other resistance mechanisms will likely vary substantially across different drugs and be influenced by future treatment guidelines.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on speculation about future applications",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:14:18.753870Z"
+    },
+    {
+      "id": "55084be6-8657-4a26-b039-5544b18b299d",
+      "content_id": "a5d81b66-966c-4bab-9d31-cb74e32e746c",
+      "claim_id": "C59",
+      "claim": "It may be difficult to determine the most effective and reliable metric or threshold for clonal grouping, especially as this is likely to vary across different clinical populations, antibiotics, and bacterial species.",
+      "claim_type": "EXPLICIT",
+      "source": "While the clonal group sampling approach increased detection efficiency for the resistance and diagnostic escape variants assessed here, it may be difficult to determine the most effective and reliable metric or threshold for clonal grouping, especially as this is likely to vary across different clinical populations, antibiotics, and bacterial species.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on speculation about practical implementation",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:14:18.753870Z"
+    },
+    {
+      "id": "bd6f2cba-13a0-4eab-9d4b-901d8a71de42",
+      "content_id": "a5d81b66-966c-4bab-9d31-cb74e32e746c",
+      "claim_id": "C60",
+      "claim": "Detection efficiency was generally consistent across the two SNP thresholds and fastBAPS groupings based on WGS.",
+      "claim_type": "EXPLICIT",
+      "source": "Detection efficiency was generally consistent across the two SNP thresholds and fastBAPS groupings based on WGS.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data from sampling simulations",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:14:18.753870Z"
+    },
+    {
+      "id": "80dbf390-e36f-4ef3-afd8-8a05e10b714e",
+      "content_id": "a5d81b66-966c-4bab-9d31-cb74e32e746c",
+      "claim_id": "C61",
+      "claim": "Performance of the clonal group approach using MLSTs was inconsistent and, in some instances, worse than random sampling, likely due to the shortcomings of MLST compared to WGS-based approaches in distinguishing between AMR variant-positive clades and more distantly-related variant-negative clades in species such as N. gonorrhoeae.",
+      "claim_type": "EXPLICIT",
+      "source": "However, performance of the clonal group approach using MLSTs was inconsistent and, in some instances, worse than random sampling, likely due to the shortcomings of MLST compared to WGS-based approaches in distinguishing between AMR variant-positive clades and more distantly-related variant-negative clades in species such as N. gonorrhoeae (Harris et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data and references to other scholarly work",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:14:18.753870Z"
+    },
+    {
+      "id": "b3f836c1-11f1-49c9-a34e-f95f88c78851",
+      "content_id": "a5d81b66-966c-4bab-9d31-cb74e32e746c",
+      "claim_id": "C62",
+      "claim": "Surveillance incorporating WGS rather than MLST loci alone may further promote NAAT sustainability by enabling screening for variants with previously undetected mutations in target loci.",
+      "claim_type": "EXPLICIT",
+      "source": "More broadly, surveillance incorporating WGS rather than MLST loci alone may further promote NAAT sustainability by enabling screening for variants with previously undetected mutations in target loci, such as the N. gonorrhoeae DR-9A G168A variants, that may be associated with diagnostic escape.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on inference from the study results",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:14:18.753870Z"
+    },
+    {
+      "id": "47033108-f15b-498a-8b3f-22bdc1f26b39",
+      "content_id": "a5d81b66-966c-4bab-9d31-cb74e32e746c",
+      "claim_id": "C63",
+      "claim": "Given the high degree of clonality among M. tuberculosis isolates and the significant variation in prevalence of drug resistance and resistance-conferring genotypes across clonal groups, the clonal group sampling approach may similarly improve detection efficiency of novel resistance variants in M. tuberculosis.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, given the high degree of clonality among M. tuberculosis isolates and the significant variation in prevalence of drug resistance and resistance-conferring genotypes across clonal groups (Merker et al., 2015; Casali et al., 2014), the clonal group sampling approach may similarly improve detection efficiency of novel resistance variants in M. tuberculosis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on speculation supported by references to other scholarly work",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:14:18.753870Z"
+    },
+    {
+      "id": "d6732b01-e9b9-4f88-8d34-60655b415918",
+      "content_id": "a5d81b66-966c-4bab-9d31-cb74e32e746c",
+      "claim_id": "C64",
+      "claim": "For species in which drug resistance is primarily acquired through gene acquisition, it is unclear if phylogeny-aware sampling based on the core genome will improve detection efficiency of novel variants.",
+      "claim_type": "EXPLICIT",
+      "source": "For species in which drug resistance is primarily acquired through gene acquisition, it is unclear if phylogeny-aware sampling based on the core genome will improve detection efficiency of novel variants, though in gonococcus, there is evidence of a relationship between the core genome and the plasmid-borne resistance genes blaTEM and tetM (S\u00e1nchez-Bus\u00f3 et al., 2019), and it is further possible that, combined with core genome-based phylogeny-informed sampling, screening for homologs of known resistance genes from other species may expedite identification of any novel resistance genes acquired by the species of interest.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on speculation and references to other scholarly work",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:14:18.753870Z"
+    },
+    {
+      "id": "2aa769c9-e2e3-462e-ad69-9a859bdeb0d5",
+      "content_id": "a5d81b66-966c-4bab-9d31-cb74e32e746c",
+      "claim_id": "C65",
+      "claim": "In gonococcus, there is evidence of a relationship between the core genome and the plasmid-borne resistance genes blaTEM and tetM.",
+      "claim_type": "EXPLICIT",
+      "source": "For species in which drug resistance is primarily acquired through gene acquisition, it is unclear if phylogeny-aware sampling based on the core genome will improve detection efficiency of novel variants, though in gonococcus, there is evidence of a relationship between the core genome and the plasmid-borne resistance genes blaTEM and tetM (S\u00e1nchez-Bus\u00f3 et al., 2019), and it is further possible that, combined with core genome-based phylogeny-informed sampling, screening for homologs of known resistance genes from other species may expedite identification of any novel resistance genes acquired by the species of interest.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by references to other scholarly work",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:14:18.753870Z"
+    },
+    {
+      "id": "4d22bd61-c4a0-4ffc-88bf-89f86e79ed65",
+      "content_id": "a5d81b66-966c-4bab-9d31-cb74e32e746c",
+      "claim_id": "C66",
+      "claim": "The requirement of confirmatory phenotyping to identify novel resistance may not extend to pathogens that are expected to be associated with reliably-identifiable treatment failures.",
+      "claim_type": "EXPLICIT",
+      "source": "Further, the requirement of confirmatory phenotyping to identify novel resistance may not extend to pathogens that are expected to be associated with reliably-identifiable treatment failures, as for these pathogens, identification of treatment failure likely represents the most efficient method of novel resistance variant detection (Berenger et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on logical inference and references to other scholarly work",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:14:18.753870Z"
+    },
+    {
+      "id": "8499ea44-b98c-4d10-bee5-cb4f0a16c181",
+      "content_id": "a5d81b66-966c-4bab-9d31-cb74e32e746c",
+      "claim_id": "C67",
+      "claim": "For pathogens such as N. gonorrhoeae, treatment failures may go undetected for reasons including partial abatement of symptoms or long treatment regimens.",
+      "claim_type": "EXPLICIT",
+      "source": "However, for other pathogens, such as N. gonorrhoeae (Eyre et al., 2018), treatment failures may go undetected for reasons including partial abatement of symptoms or long treatment regimens.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by references to other scholarly work",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:14:18.753870Z"
+    },
+    {
+      "id": "b18617d0-be71-4c75-a485-24b446d66e25",
+      "content_id": "a5d81b66-966c-4bab-9d31-cb74e32e746c",
+      "claim_id": "C68",
+      "claim": "As genotype-based diagnostics for antibiotic resistance become available for more species, it will be important to assess the efficiencies of these approaches across pathogens with different clinical, epidemiological, and evolutionary paradigms.",
+      "claim_type": "EXPLICIT",
+      "source": "Ultimately, as genotype-based diagnostics for antibiotic resistance become available for more species, it will be important to assess the efficiencies of these approaches across pathogens with different clinical, epidemiological, and evolutionary paradigms.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on speculation about future research needs",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:14:18.753870Z"
+    },
+    {
+      "id": "6b22837b-4209-4063-b809-c253c77bc78c",
+      "content_id": "a5d81b66-966c-4bab-9d31-cb74e32e746c",
+      "claim_id": "C69",
+      "claim": "Any associations observed between the variants and patient or pathogen features do not necessarily reflect those around the time of emergence.",
+      "claim_type": "EXPLICIT",
+      "source": "Since we lack the datasets to assess targeted sampling of variants from the time they first emerged in a population, any associations we observed between the variants and patient or pathogen features do not necessarily reflect those around the time of emergence.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on logical inference about the limitations of the study",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:14:18.753870Z"
+    },
+    {
+      "id": "701c034e-28d6-4117-a412-53e2dba9ecc4",
+      "content_id": "a5d81b66-966c-4bab-9d31-cb74e32e746c",
+      "claim_id": "C70",
+      "claim": "More longitudinal epidemiological and genomic studies, particularly after the implementation of genotype-based diagnostics, are necessary to better characterize patterns of novel resistance emergence and inform targeted surveillance approaches.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, more longitudinal epidemiological and genomic studies, particularly after the implementation of genotype-based diagnostics, are necessary to better characterize patterns of novel resistance emergence and inform targeted surveillance approaches.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on speculation about future research needs",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:14:18.753870Z"
+    },
+    {
+      "id": "66ab0c19-078d-49b1-adb7-5dc2ca2b0082",
+      "content_id": "a5d81b66-966c-4bab-9d31-cb74e32e746c",
+      "claim_id": "C71",
+      "claim": "The phylogeny-aware sampling approaches presented are based on the assumption that genomic data will be available for the pool of potential isolates from incident cases that may undergo confirmatory phenotyping.",
+      "claim_type": "EXPLICIT",
+      "source": "The phylogeny-aware sampling approaches presented here are based on the assumption that genomic data will be available for the pool of potential isolates from incident cases that may undergo confirmatory phenotyping.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on the methods described in the study",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:14:18.753870Z"
+    },
+    {
+      "id": "b7b91e60-d30c-47f9-a614-bff03629217e",
+      "content_id": "a5d81b66-966c-4bab-9d31-cb74e32e746c",
+      "claim_id": "C72",
+      "claim": "Using information on isolate features to increase surveillance efficiency may be feasible even in the absence of mass prospective sequencing.",
+      "claim_type": "EXPLICIT",
+      "source": "However, using information on isolate features to increase surveillance efficiency may be feasible even in the absence of mass prospective sequencing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on speculation about practical implementation",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:14:18.753870Z"
+    },
+    {
+      "id": "4d5472c9-9756-4685-9d2a-28987b668995",
+      "content_id": "a5d81b66-966c-4bab-9d31-cb74e32e746c",
+      "claim_id": "C73",
+      "claim": "Under the general assumption that novel resistance variants are more likely to appear in underrepresented lineages, phylogeny-aware surveillance could be paired with a diagnostic approach such as genomic neighbor typing.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, under the general assumption that novel resistance variants are more likely to appear in underrepresented lineages, phylogeny-aware surveillance could be paired with a diagnostic approach such as genomic neighbor typing (B\u0159inda et al., 2020), where any isolates with either susceptible or low confidence calls that appear to be divergent from the genomes in the reference database would be prioritized for confirmatory phenotyping.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on speculation and references to other scholarly work",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:14:18.753870Z"
+    },
+    {
+      "id": "e2a0b505-d24b-4931-972c-08e6c71e6610",
+      "content_id": "a5d81b66-966c-4bab-9d31-cb74e32e746c",
+      "claim_id": "C74",
+      "claim": "A diagnostic that predicts AMR phenotypes through a combination of transcriptomic and genomic typing may facilitate targeted surveillance by identifying isolates with ambiguous predictions that could be prioritized for confirmatory phenotyping.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, a diagnostic that predicts AMR phenotypes through a combination of transcriptomic and genomic typing (Bhattacharyya et al., 2019) may facilitate targeted surveillance by identifying isolates with ambiguous predictions (e.g., isolates with transcriptional signatures of resistance that lack known genomic markers of resistance) that could be prioritized for confirmatory phenotyping.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on speculation and references to other scholarly work",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:14:18.753870Z"
+    },
+    {
+      "id": "0f589e3f-bff6-49b0-b85e-2d58d2046cfb",
+      "content_id": "a5d81b66-966c-4bab-9d31-cb74e32e746c",
+      "claim_id": "C75",
+      "claim": "These approaches may be broadly applicable to surveillance programs aimed at tracking AMR in general and/or other phenotypes of interest that may be time- and/or resource-intensive to directly measure.",
+      "claim_type": "EXPLICIT",
+      "source": "While the focus of this study was to introduce and evaluate approaches to increase the efficiency of surveillance programs for maintaining marker-based AMR diagnostics, these approaches may be broadly applicable to surveillance programs aimed at tracking AMR in general and/or other phenotypes of interest that may be time- and/or resource-intensive to directly measure.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on speculation about broader applications",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:14:18.753870Z"
+    },
+    {
+      "id": "804bcd87-a010-406b-ad24-b96a8aafe176",
+      "content_id": "a5d81b66-966c-4bab-9d31-cb74e32e746c",
+      "claim_id": "C76",
+      "claim": "Programs such as the National Antimicrobial Resistance Monitoring System for Enteric Bacteria could adopt these targeted sampling approaches to prioritize isolates for phenotypic testing.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, programs such as the National Antimicrobial Resistance Monitoring System for Enteric Bacteria (https://www.cdc.gov/narms/) could adopt these targeted sampling approaches to prioritize isolates for phenotypic testing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on speculation about practical applications",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:14:18.753870Z"
+    },
+    {
+      "id": "e627ce18-1513-4861-bb4d-5d4a32ad05c1",
+      "content_id": "a5d81b66-966c-4bab-9d31-cb74e32e746c",
+      "claim_id": "C77",
+      "claim": "Advances in diagnostics, extensive sequencing of clinical isolates, and large collections of clinical and pathogen data together provide new opportunities for integrating data streams and optimizing surveillance efforts.",
+      "claim_type": "EXPLICIT",
+      "source": "Advances in diagnostics, extensive sequencing of clinical isolates, and large collections of clinical and pathogen data together provide new opportunities for integrating data streams and optimizing surveillance efforts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on established scientific knowledge",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:14:18.753870Z"
+    },
+    {
+      "id": "4ed1a453-733f-459d-a069-a35d14d4d123",
+      "content_id": "a5d81b66-966c-4bab-9d31-cb74e32e746c",
+      "claim_id": "C78",
+      "claim": "As marker-based point-of-care AMR diagnostics are developed and implemented, optimization of surveillance systems will require assessments of species-, drug-, and population-specific factors that may affect the emergence and distribution of diagnostic escape resistance variants.",
+      "claim_type": "EXPLICIT",
+      "source": "As marker-based point-of-care AMR diagnostics are developed and implemented, optimization of surveillance systems will require assessments like those modeled here of species-, drug-, and population-specific factors that may affect the emergence and distribution of diagnostic escape resistance variants, as well as how the diagnostic itself may complement surveillance efforts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on speculation about future research needs",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:14:18.753870Z"
+    },
+    {
+      "id": "b000336e-cc0b-4785-ab38-261468d7678b",
+      "content_id": "a5d81b66-966c-4bab-9d31-cb74e32e746c",
+      "claim_id": "C79",
+      "claim": "Raw sequencing data were downloaded from the NCBI Sequence Read Archive.",
+      "claim_type": "EXPLICIT",
+      "source": "Raw sequencing data were downloaded from the NCBI Sequence Read Archive.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of methods used in the study",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:14:18.753870Z"
+    },
+    {
+      "id": "5269a559-cea2-4f6b-ae79-301d18d58b5c",
+      "content_id": "a5d81b66-966c-4bab-9d31-cb74e32e746c",
+      "claim_id": "C80",
+      "claim": "Genomes were assembled using SPAdes v3.13 with default parameters and the careful option to minimize the number of mismatches.",
+      "claim_type": "EXPLICIT",
+      "source": "Genomes were assembled using SPAdes v3.13 (Bankevich et al., 2012) with default parameters and the careful option to minimize the number of mismatches.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of methods used in the study",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:14:18.753870Z"
+    },
+    {
+      "id": "7e6dfc1d-53c3-45a2-aad9-383fbf5d5f9a",
+      "content_id": "a5d81b66-966c-4bab-9d31-cb74e32e746c",
+      "claim_id": "C81",
+      "claim": "Assembly quality was assessed using QUAST v4.3.",
+      "claim_type": "EXPLICIT",
+      "source": "Assembly quality was assessed using QUAST v4.3 (Gurevich et al., 2013), and contigs < 500 bp in length and/or with <10 x average coverage were removed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of methods used in the study",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:14:18.753870Z"
+    },
+    {
+      "id": "27600901-fc80-45dd-8a51-90e9adf9e6c9",
+      "content_id": "a5d81b66-966c-4bab-9d31-cb74e32e746c",
+      "claim_id": "C82",
+      "claim": "Isolate reference-based pseudogenomes were constructed by mapping raw reads to the NCCP11945 reference genome using BWA-MEM v7.12.",
+      "claim_type": "EXPLICIT",
+      "source": "Isolate reference-based pseudogenomes were constructed by mapping raw reads to the NCCP11945 reference genome (RefSeq accession number NC_011035.1) using BWA-MEM v7.12 (Li, 2013), the Picard toolkit v2.8 (Picard development team, 2016) to identify duplicate reads, and Pilon v1.22 (Walker et al., 2014) to determine the base call for each site, with a minimum depth of 10 and a minimum base quality of 20.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of methods used in the study",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:14:18.753870Z"
+    },
+    {
+      "id": "14593d3e-ab37-4cf9-876d-c8aa81b4479a",
+      "content_id": "a5d81b66-966c-4bab-9d31-cb74e32e746c",
+      "claim_id": "C83",
+      "claim": "Loci in Tables 2 and 3 were extracted from the genome assemblies using blastn followed by MUSCLE alignment using default parameters to assess the presence or absence of the resistance variants.",
+      "claim_type": "EXPLICIT",
+      "source": "Loci in Tables 2 and 3 were extracted from the genome assemblies using blastn (Altschul et al., 1990) followed by MUSCLE alignment using default parameters (Edgar, 2004) to assess the presence or absence of the resistance variants.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of methods used in the study",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:14:18.753870Z"
+    },
+    {
+      "id": "941e1831-093b-4eed-bda3-ff6d75399c06",
+      "content_id": "a5d81b66-966c-4bab-9d31-cb74e32e746c",
+      "claim_id": "C84",
+      "claim": "Gubbins v2.3.4 was used with default parameters to identify and mask recombinant regions from the pseudogenomes and build maximum likelihood phylogenies from the non-recombinant pseudogenome alignments for each dataset through RAxML v8.2.12.",
+      "claim_type": "EXPLICIT",
+      "source": "Gubbins v2.3.4 (Croucher et al., 2015) was used with default parameters to identify and mask recombinant regions from the pseudogenomes and build maximum likelihood phylogenies from the non-recombinant pseudogenome alignments for each dataset through RAxML v8.2.12 (Sommer et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of methods used in the study",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:14:18.753870Z"
+    },
+    {
+      "id": "6142c22c-5e50-49c5-9c60-d1c32adbd11f",
+      "content_id": "a5d81b66-966c-4bab-9d31-cb74e32e746c",
+      "claim_id": "C85",
+      "claim": "Pairwise phylogenetic distances were calculated after removal of predicted recombinant regions using the ape package in R.",
+      "claim_type": "EXPLICIT",
+      "source": "Pairwise phylogenetic distances were calculated after removal of predicted recombinant regions using the ape package in R.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of methods used in the study",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:14:18.753870Z"
+    },
+    {
+      "id": "0538371f-7383-4a89-bd5a-45ca7aaaf4cf",
+      "content_id": "a5d81b66-966c-4bab-9d31-cb74e32e746c",
+      "claim_id": "C86",
+      "claim": "Phylogenetic distributions of genetic resistance variants were assessed by estimating the phylogenetic D statistic using the caper package in R.",
+      "claim_type": "EXPLICIT",
+      "source": "Phylogenetic distributions of genetic resistance variants were assessed by estimating the phylogenetic D statistic (Fritz and Purvis, 2010) using the caper package in R.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of methods used in the study",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:14:18.753870Z"
+    },
+    {
+      "id": "cf981b1a-9be8-47f2-9adc-8447efffa517",
+      "content_id": "a5d81b66-966c-4bab-9d31-cb74e32e746c",
+      "claim_id": "C87",
+      "claim": "Bayesian analysis of population structure was performed on the pseudogenome alignments for each dataset using fastBAPS.",
+      "claim_type": "EXPLICIT",
+      "source": "Bayesian analysis of population structure was performed on the pseudogenome alignments for each dataset using fastBAPS (Tonkin-Hill et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of methods used in the study",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:14:18.753870Z"
+    },
+    {
+      "id": "8c7ff36b-12ad-4366-9352-cc8c68710a09",
+      "content_id": "a5d81b66-966c-4bab-9d31-cb74e32e746c",
+      "claim_id": "C88",
+      "claim": "Multilocus sequence types (MLSTs) were assigned using the PubMLST database.",
+      "claim_type": "EXPLICIT",
+      "source": "Multilocus sequence types (MLSTs) were assigned using the PubMLST database (https://pubmlst.org/neisseria/).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of methods used in the study",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:14:18.753870Z"
+    },
+    {
+      "id": "2f1b4e18-ec9d-493f-b362-965fe0f8f8af",
+      "content_id": "a5d81b66-966c-4bab-9d31-cb74e32e746c",
+      "claim_id": "C89",
+      "claim": "For each sampling approach/dataset/variant combination, 100 simulations were carried out with isolate sampling continuing until variant detection.",
+      "claim_type": "EXPLICIT",
+      "source": "For each sampling approach/dataset/variant combination, 100 simulations were carried out with isolate sampling continuing until variant detection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of methods used in the study",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:14:18.753870Z"
+    },
+    {
+      "id": "1321c361-57bd-4d7b-a046-d4e05d870059",
+      "content_id": "a5d81b66-966c-4bab-9d31-cb74e32e746c",
+      "claim_id": "C90",
+      "claim": "Detection efficiency was defined as one minus the fraction of isolates sampled prior to variant detection.",
+      "claim_type": "EXPLICIT",
+      "source": "We defined 'detection efficiency' as one minus the fraction of isolates sampled prior to variant detection (excluding any samples for which the presence or absence of the variant could not be determined).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of methods used in the study",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:14:18.753870Z"
+    },
+    {
+      "id": "19c3a356-f69a-4fb2-9021-b92578bb1bc5",
+      "content_id": "a5d81b66-966c-4bab-9d31-cb74e32e746c",
+      "claim_id": "C91",
+      "claim": "Differential performance between random sampling and targeted sampling was assessed by Mann Whitney U tests of differences in mean ranks of detection efficiencies.",
+      "claim_type": "EXPLICIT",
+      "source": "As detection efficiencies were not normally distributed, differential performance between random sampling and targeted sampling was assessed by Mann Whitney U tests of differences in mean ranks of detection efficiencies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of methods used in the study",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:14:18.753870Z"
+    },
+    {
+      "id": "4db1816f-058d-49cf-9c0a-b9302d3de88b",
+      "content_id": "a5d81b66-966c-4bab-9d31-cb74e32e746c",
+      "claim_id": "C92",
+      "claim": "RplD G70D in datasets 1 and 4 and penA XXXIV in dataset 3 were not evaluated because the prevalence of these variants in these datasets was >10%.",
+      "claim_type": "EXPLICIT",
+      "source": "Because the purpose of this study was to compare the rare variant detection efficiency between random sampling and targeted sampling approaches, we did not evaluate RplD G70D in datasets 1 and 4 or for the penA XXXIV allele in dataset 3, as the prevalence of these variants in these datasets was >10%.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of methods used in the study",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:14:18.753870Z"
+    },
+    {
+      "id": "b7771075-39e8-48b0-b365-4dba5df72707",
+      "content_id": "a5d81b66-966c-4bab-9d31-cb74e32e746c",
+      "claim_id": "C93",
+      "claim": "In demography-aware sampling, the first isolate was selected at random, and each successive isolate was randomly selected from alternating demographic groups.",
+      "claim_type": "EXPLICIT",
+      "source": "In demography-aware sampling (datasets 1 and 2), the first isolate was selected at random, and each successive isolate was randomly selected from alternating demographic groups (men vs. women and men who have sex with men [MSM] vs. men who have sex with women [MSW] or women who have sex with men [WSM]).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of methods used in the study",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:14:18.753870Z"
+    },
+    {
+      "id": "27e2658a-778a-4920-88ab-df0fa7c5686b",
+      "content_id": "a5d81b66-966c-4bab-9d31-cb74e32e746c",
+      "claim_id": "C94",
+      "claim": "For anatomical site (niche)-aware sampling, the first isolate was selected at random, and each successive isolate was randomly selected from alternating anatomical sites of isolate collection.",
+      "claim_type": "EXPLICIT",
+      "source": "For anatomical site (niche)-aware sampling (datasets 1 and 2), the first isolate was selected at random, and each successive isolate was randomly selected from alternating anatomical sites of isolate collection (i.e., cervix, urethra, rectum, and pharynx).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of methods used in the study",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:14:18.753870Z"
+    },
+    {
+      "id": "45262192-9918-4aae-9d78-357654f110e1",
+      "content_id": "a5d81b66-966c-4bab-9d31-cb74e32e746c",
+      "claim_id": "C95",
+      "claim": "For geography-aware sampling, the first isolate was selected at random, and each successive isolate was randomly selected from alternating geographic regions.",
+      "claim_type": "EXPLICIT",
+      "source": "For geography-aware sampling (datasets 3 and 4), the first isolate was selected at random, and each successive isolate was randomly selected from alternating geographic regions (countries or prefectures).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of methods used in the study",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:14:18.753870Z"
+    },
+    {
+      "id": "6dd10415-b118-4262-9f6f-2ba27754ace5",
+      "content_id": "a5d81b66-966c-4bab-9d31-cb74e32e746c",
+      "claim_id": "C97",
+      "claim": "SNP cutoffs tested for the clonal group approach included 134 SNPs and 422 SNPs.",
+      "claim_type": "EXPLICIT",
+      "source": "SNP cutoffs tested for the clonal group approach included 1) 134 SNPs, the lower 95% confidence interval of the mean SNP distance across datasets 1-5 between each isolate with phenotypic cefixime resistance (CFX-R), azithromycin resistance (AZM-R), and/or ceftriaxone reduced susceptibility (CRO-RS, >0.25 \u03bcg/mL, >1 \u03bcg/mL, and \u22650.12 \u03bcg/mL, respectively) and the closest susceptible isolate, and 2) 422 SNPs, the lower 95% confidence interval of the mean SNP distance across datasets 1-5 between each isolate with the RplD G70D mutation, the 23S rRNA C2611T mutation, and/or the penA XXXIV allele and the closest isolate without the resistance variant.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of methods used in the study",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:14:18.753870Z"
+    },
+    {
+      "id": "b79edf21-ceff-4166-8182-685cb5b14604",
+      "content_id": "a5d81b66-966c-4bab-9d31-cb74e32e746c",
+      "claim_id": "C98",
+      "claim": "The clonal group sampling approach was further tested by alternating sampling across fastBAPS and MLST groups.",
+      "claim_type": "EXPLICIT",
+      "source": "The clonal group sampling approach was further tested by alternating sampling across fastBAPS and MLST groups.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of methods used in the study",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:14:18.753870Z"
+    },
+    {
+      "id": "bb979fc8-e0f0-46c6-8d7c-bb3fa253e832",
+      "content_id": "a5d81b66-966c-4bab-9d31-cb74e32e746c",
+      "claim_id": "C99",
+      "claim": "For genomic background-aware sampling, isolates were selected at random either limiting the pool to isolates with genotypic ciprofloxacin resistance or to isolates with a mutation at PorB G120 and/or PorB A121.",
+      "claim_type": "EXPLICIT",
+      "source": "For genomic background-aware sampling, isolates were selected at random either limiting the pool to isolates with genotypic ciprofloxacin resistance (i.e., the GyrA S91F mutation) or to isolates with a mutation at PorB G120 and/or PorB A121, which have been associated with a range of resistance pathways in multiple classes of antibiotics (Mortimer and Grad, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of methods used in the study",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:14:18.753870Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "5d129bb6-fda8-4bae-a88a-108af6d4b2d4",
+      "content_id": "a5d81b66-966c-4bab-9d31-cb74e32e746c",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Genotype-based diagnostics for antibiotic resistance are promising but face challenges from novel resistance variants, necessitating surveillance programs for early detection to maintain diagnostic utility.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C3 and C6-C8 establish the context and rationale for the study through citations and logical inference. The claims consistently describe the promise of genotype-based diagnostics (C1, C6), their vulnerability to novel variants (C2, C7), and the need for surveillance (C3, C8). These are well-supported by citations to prior work and represent established knowledge in the field.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:14:18.753870Z"
+    },
+    {
+      "id": "ebbccde1-58ad-4426-b6a8-452e8b35890e",
+      "content_id": "a5d81b66-966c-4bab-9d31-cb74e32e746c",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Diagnostic escape variants have emerged in multiple pathogens including N. gonorrhoeae, C. trachomatis, S. aureus, and P. falciparum, resulting from mutations at NAAT target loci or undetected resistance-conferring variants.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C9-C11 document specific examples of diagnostic escape across multiple pathogens, supported by multiple citations. The claims provide concrete evidence that diagnostic escape is a real phenomenon requiring attention, establishing the practical importance of the study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:14:18.753870Z"
+    },
+    {
+      "id": "c6600071-6b31-45bd-8e50-91b21eb2c516",
+      "content_id": "a5d81b66-966c-4bab-9d31-cb74e32e746c",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "A previous framework for quantifying sampling rates for early detection of novel resistance variants may be challenging to apply in practice for high-incidence pathogens like N. gonorrhoeae due to high phenotyping costs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C12-C13 reference prior work by the authors and identify a practical limitation of unbiased sampling approaches. This establishes the motivation for developing more efficient targeted sampling strategies, which is the focus of the current study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:14:18.753870Z"
+    },
+    {
+      "id": "08e62aa3-b9d9-4521-8cd1-e93d008b3206",
+      "content_id": "a5d81b66-966c-4bab-9d31-cb74e32e746c",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Novel resistance variants may be more likely to emerge or spread in specific patient demographics, anatomical niches, geographic regions, genetically divergent lineages, or genomic backgrounds associated with existing resistance.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C14-C17 present hypotheses about factors that might predict where novel variants emerge, all supported by citations to prior work. These hypotheses form the basis for the targeted sampling approaches tested in the study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:14:18.753870Z"
+    },
+    {
+      "id": "1e4c95e2-b9af-4b66-83c3-bd3c7827531b",
+      "content_id": "a5d81b66-966c-4bab-9d31-cb74e32e746c",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "N. gonorrhoeae serves as a useful model organism for testing sampling strategies due to increasing drug resistance and focus on developing sequence-based resistance diagnostics.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C18 justifies the choice of N. gonorrhoeae as the study organism, supported by citations. This is a reasonable methodological choice given the pathogen's characteristics.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:14:18.753870Z"
+    },
+    {
+      "id": "57440052-e6fa-4b36-a0d0-3fb8f63cc40b",
+      "content_id": "a5d81b66-966c-4bab-9d31-cb74e32e746c",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The datasets used in the study exhibited significant sampling biases across patient demographics (overrepresentation of men and MSM), anatomical sites (variable pharyngeal representation), and geographic regions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C19-C22 document biases in the datasets using statistical tests (chi-squared, p<0.001). These biases are important to acknowledge as they affect the interpretation of patient characteristic-informed sampling approaches. The statistical support is appropriate.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:14:18.753870Z"
+    },
+    {
+      "id": "f1d268a0-9081-40e7-bf3f-b17c40a584af",
+      "content_id": "a5d81b66-966c-4bab-9d31-cb74e32e746c",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Patient characteristic-informed sampling (demography-, niche-, geography-aware) did not reliably improve detection efficiency compared to random sampling, and in some cases significantly decreased efficiency due to variant enrichment in overrepresented groups.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C23-C29 and C4 present a major finding that patient-based sampling strategies are unreliable. The claims are supported by simulation data (Figure 1), statistical tests, and specific examples showing inconsistent associations between variants and patient characteristics across datasets. The evidence demonstrates that no patient characteristic was consistently predictive across all variants.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:14:18.753870Z"
+    },
+    {
+      "id": "3980422e-6852-4e09-96ec-9ef42361ebb7",
+      "content_id": "a5d81b66-966c-4bab-9d31-cb74e32e746c",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Preferential sampling based on travel history or sex work status showed variant-specific improvements in detection efficiency, but these improvements were inconsistent across different resistance variants.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C30-C35 show that while some patient characteristics (travel, sex work) improved detection for specific variants, the benefit was not generalizable. Claim C30 is supported by phylogenetic analysis (Figure 1\u2014figure supplement 1), and C31-C35 are supported by simulation data and statistical tests. This reinforces the main finding that patient-based strategies are unreliable.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:14:18.753870Z"
+    },
+    {
+      "id": "e40899f6-2aa2-47fc-8da3-408d0bc7d7cd",
+      "content_id": "a5d81b66-966c-4bab-9d31-cb74e32e746c",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Phylogeny-aware sampling using a clonal group approach significantly improved detection efficiency over random sampling for resistance and diagnostic-associated variants across multiple datasets, while distance maximization showed inconsistent performance.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C36-C40 and C56 present a major finding supported by extensive simulation data (Figure 2, Figure 2\u2014figure supplement 1). The clonal group approach consistently outperformed random sampling except in one specific case (C37), while distance maximization was unreliable (C36). Claims C39-C40 show the approach is robust to different SNP thresholds but not to MLST-based grouping, providing important methodological insights.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:14:18.753870Z"
+    },
+    {
+      "id": "2099acf5-5a98-42f8-831a-35c108f4cc7b",
+      "content_id": "a5d81b66-966c-4bab-9d31-cb74e32e746c",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Sampling informed by genomic background markers, specifically GyrA S91F (ciprofloxacin resistance) and PorB G120/A121 mutations, significantly increased detection efficiency of ESC resistance variants across all datasets.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C41-C49 and C5 present another major finding supported by statistical analysis (Fisher's exact test, p<0.001) and simulation data (Figure 3). The claims establish that ESC resistance is significantly associated with these genetic markers (C46), that these markers occur across diverse resistance haplotypes (C47), and that preferential sampling based on these markers improves detection efficiency (C48). This represents a practical, generalizable strategy.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:14:18.753870Z"
+    },
+    {
+      "id": "6f99b388-2c8a-425c-b075-215e843460a5",
+      "content_id": "a5d81b66-966c-4bab-9d31-cb74e32e746c",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Detection efficiency of the clonal group approach was consistent across WGS-based thresholds (SNPs and fastBAPS) but inconsistent and sometimes worse than random sampling when using MLST-based grouping.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C60-C61 provide important methodological findings about the robustness of the clonal group approach. The claims are supported by simulation data (Figure 2\u2014figure supplement 1) and include a mechanistic explanation citing prior work on MLST limitations in N. gonorrhoeae. This has practical implications for implementation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:14:18.753870Z"
+    },
+    {
+      "id": "f692a392-e7d0-4f38-80e7-afa259ae8b6d",
+      "content_id": "a5d81b66-966c-4bab-9d31-cb74e32e746c",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "While patient metadata collection is important for understanding resistance epidemiology, incorporation of pathogen genomic data into surveillance programs may be more practical and cost-effective for maintaining genotype-based diagnostics.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C50-C55 synthesize the study's implications, supported by citations and logical inference from the results. The claims acknowledge the value of patient metadata (C53) while highlighting practical challenges (C54) and the potential advantages of pathogen-based approaches (C52, C55). This represents a balanced interpretation of the findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:14:18.753870Z"
+    },
+    {
+      "id": "cc5c8d37-149a-4634-8616-6d4d830f26c4",
+      "content_id": "a5d81b66-966c-4bab-9d31-cb74e32e746c",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Combining phylogeny-aware sampling with genomic background-aware sampling may further optimize detection efficiency, though utility will vary by drug and treatment guidelines.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C57-C58 propose a combined approach based on inference from the study results, with appropriate caveats about generalizability. This represents a reasonable synthesis of the findings, though C58 appropriately notes uncertainty about future applications.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:14:18.753870Z"
+    },
+    {
+      "id": "3de38bdb-0d49-4344-97c3-adf57867eb1f",
+      "content_id": "a5d81b66-966c-4bab-9d31-cb74e32e746c",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Determining optimal thresholds for clonal grouping may be challenging and context-dependent, but WGS-based surveillance offers advantages over MLST for detecting diagnostic escape variants.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C59 and C62 acknowledge practical implementation challenges while highlighting the advantages of WGS. C59 is appropriately cautious about generalizability, while C62 makes a specific inference about WGS advantages supported by the study's findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:14:18.753870Z"
+    },
+    {
+      "id": "55a49b01-4301-4a81-8d39-147394718635",
+      "content_id": "a5d81b66-966c-4bab-9d31-cb74e32e746c",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The clonal group approach may be applicable to other pathogens like M. tuberculosis with high clonality, though applicability to species with gene acquisition-based resistance is uncertain.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C63-C65 speculate about generalizability to other pathogens. C63 is supported by citations about M. tuberculosis characteristics, making it a reasonable hypothesis. C64 appropriately expresses uncertainty about species with different resistance mechanisms. C65 provides some evidence for core genome-plasmid relationships in gonococcus. However, these remain speculative without direct testing.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:14:18.753870Z"
+    },
+    {
+      "id": "787116f6-9e9b-427b-8e71-b1e31043fbd1",
+      "content_id": "a5d81b66-966c-4bab-9d31-cb74e32e746c",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "For pathogens with reliably identifiable treatment failures, treatment failure identification may be more efficient than confirmatory phenotyping, but this does not apply to N. gonorrhoeae where failures often go undetected.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C66-C67 make a logical distinction between pathogens based on treatment failure detectability, supported by citations. This contextualizes when the proposed surveillance approaches are most needed.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:14:18.753870Z"
+    },
+    {
+      "id": "85f01c2d-e8fb-4020-8640-013565ec2d8d",
+      "content_id": "a5d81b66-966c-4bab-9d31-cb74e32e746c",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Future work should assess these approaches across pathogens with different characteristics and include longitudinal studies to characterize resistance emergence patterns, particularly after diagnostic implementation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C68, C70, and C78 appropriately identify future research needs based on the study's limitations and findings. These represent reasonable next steps for the field.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:14:18.753870Z"
+    },
+    {
+      "id": "ddcd46fe-6103-4003-a600-fe2365fc1e1f",
+      "content_id": "a5d81b66-966c-4bab-9d31-cb74e32e746c",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "Associations between variants and patient/pathogen features observed in the study may not reflect those at the time of variant emergence due to lack of longitudinal data from emergence.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C69 acknowledges an important limitation of the study design. This is a valid concern that appropriately tempers interpretation of the findings, particularly for patient characteristic-based sampling.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:14:18.753870Z"
+    },
+    {
+      "id": "87d1b987-a719-4741-b492-5d86c3208209",
+      "content_id": "a5d81b66-966c-4bab-9d31-cb74e32e746c",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "Phylogeny-aware surveillance may be feasible without mass prospective sequencing by pairing with diagnostic approaches like genomic neighbor typing or transcriptomic-genomic typing that identify divergent or ambiguous isolates.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C71-C74 propose alternative implementation strategies. C71 correctly identifies an assumption of the study. C72-C74 speculate about practical implementations supported by citations to relevant technologies. However, these remain untested hypotheses about how to operationalize the findings without full prospective sequencing.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:14:18.753870Z"
+    },
+    {
+      "id": "caff252a-d778-4762-8ecd-7f6109337b04",
+      "content_id": "a5d81b66-966c-4bab-9d31-cb74e32e746c",
+      "result_id": "R20",
+      "result_category": "llm",
+      "result": "The targeted sampling approaches may be broadly applicable to surveillance programs tracking AMR or other resource-intensive phenotypes, with potential adoption by programs like NARMS.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C75-C77 speculate about broader applications beyond the specific context tested. While C77 makes a general statement about opportunities, C75-C76 extend beyond the evidence provided. These represent reasonable hypotheses but lack direct supporting data.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:14:18.753870Z"
+    },
+    {
+      "id": "ff628c92-c7eb-4f3a-9741-3d62528c56c3",
+      "content_id": "a5d81b66-966c-4bab-9d31-cb74e32e746c",
+      "result_id": "R21",
+      "result_category": "llm",
+      "result": "Genomic data processing involved standard bioinformatics pipelines including genome assembly (SPAdes), quality control (QUAST), pseudogenome construction (BWA-MEM, Pilon), variant calling (blastn, MUSCLE), recombination detection (Gubbins), phylogenetic reconstruction (RAxML), and population structure analysis (fastBAPS, MLST).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C79-C88 describe the computational methods used. These are standard, well-established approaches with appropriate tool versions specified. The methods are adequately described for reproducibility, though some parameters (e.g., random seeds for stochastic algorithms) are not mentioned.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:14:18.753870Z"
+    },
+    {
+      "id": "bb67bf2a-9d90-4402-ae90-09008acd4a6b",
+      "content_id": "a5d81b66-966c-4bab-9d31-cb74e32e746c",
+      "result_id": "R22",
+      "result_category": "llm",
+      "result": "Detection efficiency was assessed through 100 simulations per approach/dataset/variant combination, defined as one minus the fraction of isolates sampled before detection, with statistical comparison using Mann-Whitney U tests. Variants with >10% prevalence were excluded.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C89-C92 describe the simulation and statistical methods. The approach is reasonable: 100 simulations provide adequate power, the detection efficiency metric is clearly defined, and Mann-Whitney U test is appropriate for non-normal distributions. Excluding high-prevalence variants (C92) is justified given the focus on rare variant detection.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:14:18.753870Z"
+    },
+    {
+      "id": "0cbb2eef-2141-4439-b64d-a60566ad3ee3",
+      "content_id": "a5d81b66-966c-4bab-9d31-cb74e32e746c",
+      "result_id": "R23",
+      "result_category": "llm",
+      "result": "Patient characteristic-informed sampling approaches alternated sampling across demographic groups (men vs. women, MSM vs. MSW/WSM), anatomical sites (cervix, urethra, rectum, pharynx), or geographic regions (countries or prefectures).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C93-C95 describe the implementation of patient-based sampling strategies. The approaches are clearly defined and represent reasonable operationalizations of the hypotheses about patient characteristics predicting variant presence.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:14:18.753870Z"
+    },
+    {
+      "id": "905db153-1eeb-44ea-bb0c-13714d8114bf",
+      "content_id": "a5d81b66-966c-4bab-9d31-cb74e32e746c",
+      "result_id": "R24",
+      "result_category": "llm",
+      "result": "The clonal group approach was tested using multiple thresholds: 134 SNPs and 422 SNPs (based on 95% CI of mean distances to closest susceptible/variant-negative isolates), plus fastBAPS and MLST groupings.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C97-C98 describe how clonal grouping thresholds were determined. The SNP thresholds are empirically derived from the data in a principled way (95% CI of relevant distances). Testing multiple thresholds and methods (fastBAPS, MLST) strengthens the robustness assessment.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:14:18.753870Z"
+    },
+    {
+      "id": "5e83a84c-67fd-41b1-af6a-7760872b4833",
+      "content_id": "a5d81b66-966c-4bab-9d31-cb74e32e746c",
+      "result_id": "R25",
+      "result_category": "llm",
+      "result": "Genomic background-aware sampling limited the pool to isolates with GyrA S91F mutation (ciprofloxacin resistance) or PorB G120/A121 mutations (associated with multi-class resistance).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C99 describes the implementation of genomic background-aware sampling. The choice of markers is justified by their associations with resistance, and the approach is clearly defined.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:14:18.753870Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "d6f4a253-34eb-4fd0-9e20-a8560a69b42a",
+      "result_id": "5d129bb6-fda8-4bae-a88a-108af6d4b2d4"
+    },
+    {
+      "claim_id": "f9be71a3-5694-40bf-95af-3f1079b50dfd",
+      "result_id": "5d129bb6-fda8-4bae-a88a-108af6d4b2d4"
+    },
+    {
+      "claim_id": "d4c2e02f-0df8-49b3-97c5-d6b71a34a59d",
+      "result_id": "5d129bb6-fda8-4bae-a88a-108af6d4b2d4"
+    },
+    {
+      "claim_id": "5a7242b1-277f-4691-8b64-dcab7cac009d",
+      "result_id": "5d129bb6-fda8-4bae-a88a-108af6d4b2d4"
+    },
+    {
+      "claim_id": "5aac2aff-37c8-4788-83e0-8f82e74f8493",
+      "result_id": "5d129bb6-fda8-4bae-a88a-108af6d4b2d4"
+    },
+    {
+      "claim_id": "f575889c-198c-44a8-89a1-43594ddb3860",
+      "result_id": "5d129bb6-fda8-4bae-a88a-108af6d4b2d4"
+    },
+    {
+      "claim_id": "4c833da3-b732-4909-ad8b-ace02c93ca1e",
+      "result_id": "ebbccde1-58ad-4426-b6a8-452e8b35890e"
+    },
+    {
+      "claim_id": "d6842773-faf2-4c28-9fac-c1241023da88",
+      "result_id": "ebbccde1-58ad-4426-b6a8-452e8b35890e"
+    },
+    {
+      "claim_id": "33877a9d-23b9-4e7e-876a-d6f6a2b3bb9e",
+      "result_id": "ebbccde1-58ad-4426-b6a8-452e8b35890e"
+    },
+    {
+      "claim_id": "b20470d4-d476-488c-8780-3ea0dcef26ee",
+      "result_id": "c6600071-6b31-45bd-8e50-91b21eb2c516"
+    },
+    {
+      "claim_id": "e9d80b73-cdb1-4188-ad2a-37de0295c9c1",
+      "result_id": "c6600071-6b31-45bd-8e50-91b21eb2c516"
+    },
+    {
+      "claim_id": "5f9b4d51-985a-4d60-9a3e-5cb41db167d0",
+      "result_id": "08e62aa3-b9d9-4521-8cd1-e93d008b3206"
+    },
+    {
+      "claim_id": "058faa7f-57c3-421d-a23d-3cb8cae06fd2",
+      "result_id": "08e62aa3-b9d9-4521-8cd1-e93d008b3206"
+    },
+    {
+      "claim_id": "a6d7e7d6-4496-410c-8bf7-61409e414b01",
+      "result_id": "08e62aa3-b9d9-4521-8cd1-e93d008b3206"
+    },
+    {
+      "claim_id": "3059d5d8-e2e9-4865-9848-a993f3dcfd61",
+      "result_id": "08e62aa3-b9d9-4521-8cd1-e93d008b3206"
+    },
+    {
+      "claim_id": "faa7235b-747e-4774-b955-c20db5bc08d6",
+      "result_id": "1e4c95e2-b9af-4b66-83c3-bd3c7827531b"
+    },
+    {
+      "claim_id": "d1ab35f7-7b5b-40f1-96d6-d1a8f25200a2",
+      "result_id": "57440052-e6fa-4b36-a0d0-3fb8f63cc40b"
+    },
+    {
+      "claim_id": "8d414a6a-10ee-428e-bf6e-af0d3be4104c",
+      "result_id": "57440052-e6fa-4b36-a0d0-3fb8f63cc40b"
+    },
+    {
+      "claim_id": "7d040d76-fb9b-4d2e-9058-bfdd0e168117",
+      "result_id": "57440052-e6fa-4b36-a0d0-3fb8f63cc40b"
+    },
+    {
+      "claim_id": "33639c74-c334-46b7-aa36-72764352676b",
+      "result_id": "57440052-e6fa-4b36-a0d0-3fb8f63cc40b"
+    },
+    {
+      "claim_id": "27471f26-2638-4c1b-9942-41d5162ee56a",
+      "result_id": "f1d268a0-9081-40e7-bf3f-b17c40a584af"
+    },
+    {
+      "claim_id": "c14394ea-f357-466b-bbeb-7ad23ee2a267",
+      "result_id": "f1d268a0-9081-40e7-bf3f-b17c40a584af"
+    },
+    {
+      "claim_id": "a8fc7d75-d783-475e-8539-dbd63876e596",
+      "result_id": "f1d268a0-9081-40e7-bf3f-b17c40a584af"
+    },
+    {
+      "claim_id": "f3ef9542-e8c7-4fab-abe4-0017d2d92cdd",
+      "result_id": "f1d268a0-9081-40e7-bf3f-b17c40a584af"
+    },
+    {
+      "claim_id": "cc1abed3-5d3d-4993-9b57-b12f7e0e6d75",
+      "result_id": "f1d268a0-9081-40e7-bf3f-b17c40a584af"
+    },
+    {
+      "claim_id": "2db86086-c086-4423-8d47-5bfb607949ae",
+      "result_id": "f1d268a0-9081-40e7-bf3f-b17c40a584af"
+    },
+    {
+      "claim_id": "987e78e6-aa30-4209-b788-e1a40664c1bc",
+      "result_id": "f1d268a0-9081-40e7-bf3f-b17c40a584af"
+    },
+    {
+      "claim_id": "fce5dda5-8193-40d7-844e-810d76ced5e9",
+      "result_id": "f1d268a0-9081-40e7-bf3f-b17c40a584af"
+    },
+    {
+      "claim_id": "7a93993c-52f7-4351-a365-589b646b94cd",
+      "result_id": "3980422e-6852-4e09-96ec-9ef42361ebb7"
+    },
+    {
+      "claim_id": "ba00df2d-4c40-4e3e-9136-3df0d52a7877",
+      "result_id": "3980422e-6852-4e09-96ec-9ef42361ebb7"
+    },
+    {
+      "claim_id": "24949275-a941-41ac-a3e9-47575afc6eed",
+      "result_id": "3980422e-6852-4e09-96ec-9ef42361ebb7"
+    },
+    {
+      "claim_id": "bfc701db-54a9-4b92-9ff4-d4d17ee290bf",
+      "result_id": "3980422e-6852-4e09-96ec-9ef42361ebb7"
+    },
+    {
+      "claim_id": "11de568d-99db-4301-a155-5bebfa12257c",
+      "result_id": "3980422e-6852-4e09-96ec-9ef42361ebb7"
+    },
+    {
+      "claim_id": "bd461f25-b9da-46ff-87a7-d6cca1f2bd48",
+      "result_id": "3980422e-6852-4e09-96ec-9ef42361ebb7"
+    },
+    {
+      "claim_id": "62426c12-a27a-4c3f-ac31-620e63fae1ce",
+      "result_id": "e40899f6-2aa2-47fc-8da3-408d0bc7d7cd"
+    },
+    {
+      "claim_id": "1805709b-7750-407c-806c-480375bcb316",
+      "result_id": "e40899f6-2aa2-47fc-8da3-408d0bc7d7cd"
+    },
+    {
+      "claim_id": "3d5dbb6e-3180-477d-b7e1-dd805c9d8ca8",
+      "result_id": "e40899f6-2aa2-47fc-8da3-408d0bc7d7cd"
+    },
+    {
+      "claim_id": "b8937a9a-93f6-45ba-8a8d-7b15fbde5aa2",
+      "result_id": "e40899f6-2aa2-47fc-8da3-408d0bc7d7cd"
+    },
+    {
+      "claim_id": "778e718e-2658-49ec-91c6-115c97da0b0a",
+      "result_id": "e40899f6-2aa2-47fc-8da3-408d0bc7d7cd"
+    },
+    {
+      "claim_id": "f591c14c-f7b1-402b-b609-fdc0e4a39c98",
+      "result_id": "e40899f6-2aa2-47fc-8da3-408d0bc7d7cd"
+    },
+    {
+      "claim_id": "a67212d9-0f14-4867-b6fb-0d98b32f98d3",
+      "result_id": "2099acf5-5a98-42f8-831a-35c108f4cc7b"
+    },
+    {
+      "claim_id": "fe4b81b5-c096-4e84-9137-4ed686bdfd22",
+      "result_id": "2099acf5-5a98-42f8-831a-35c108f4cc7b"
+    },
+    {
+      "claim_id": "54f30cf2-db56-4bac-8394-cf03720c633b",
+      "result_id": "2099acf5-5a98-42f8-831a-35c108f4cc7b"
+    },
+    {
+      "claim_id": "e9571911-9f7d-4b93-9b40-12ae81c0881e",
+      "result_id": "2099acf5-5a98-42f8-831a-35c108f4cc7b"
+    },
+    {
+      "claim_id": "e0a07fac-5851-488a-a493-92bf9148fc68",
+      "result_id": "2099acf5-5a98-42f8-831a-35c108f4cc7b"
+    },
+    {
+      "claim_id": "f8c467fb-50a8-4e42-9819-0d1fa1b3e179",
+      "result_id": "2099acf5-5a98-42f8-831a-35c108f4cc7b"
+    },
+    {
+      "claim_id": "afb2316d-193d-4f46-83e4-edb1d86a93da",
+      "result_id": "2099acf5-5a98-42f8-831a-35c108f4cc7b"
+    },
+    {
+      "claim_id": "5cf22445-bcd8-4f86-a0c0-6ba066b11884",
+      "result_id": "2099acf5-5a98-42f8-831a-35c108f4cc7b"
+    },
+    {
+      "claim_id": "3731777b-61dd-4d3a-892b-2d5449229949",
+      "result_id": "2099acf5-5a98-42f8-831a-35c108f4cc7b"
+    },
+    {
+      "claim_id": "6cc4655b-2b3f-4f69-83b8-40a3b53dfcb3",
+      "result_id": "2099acf5-5a98-42f8-831a-35c108f4cc7b"
+    },
+    {
+      "claim_id": "bd6f2cba-13a0-4eab-9d4b-901d8a71de42",
+      "result_id": "6f99b388-2c8a-425c-b075-215e843460a5"
+    },
+    {
+      "claim_id": "80dbf390-e36f-4ef3-afd8-8a05e10b714e",
+      "result_id": "6f99b388-2c8a-425c-b075-215e843460a5"
+    },
+    {
+      "claim_id": "0263708a-3931-4277-a9d6-f45673037b89",
+      "result_id": "f692a392-e7d0-4f38-80e7-afa259ae8b6d"
+    },
+    {
+      "claim_id": "c6c34ec8-0667-4a74-aa14-3031c3b219c7",
+      "result_id": "f692a392-e7d0-4f38-80e7-afa259ae8b6d"
+    },
+    {
+      "claim_id": "68972cf2-897c-4114-ad3f-713630875041",
+      "result_id": "f692a392-e7d0-4f38-80e7-afa259ae8b6d"
+    },
+    {
+      "claim_id": "8f3b3110-bc6a-4a76-9ed2-c5ede9428be9",
+      "result_id": "f692a392-e7d0-4f38-80e7-afa259ae8b6d"
+    },
+    {
+      "claim_id": "3513ac12-b3e2-41c5-bcca-d58261811e17",
+      "result_id": "f692a392-e7d0-4f38-80e7-afa259ae8b6d"
+    },
+    {
+      "claim_id": "adca8703-e8eb-45a6-b6ee-66b0a3d36d64",
+      "result_id": "f692a392-e7d0-4f38-80e7-afa259ae8b6d"
+    },
+    {
+      "claim_id": "5e6382b3-a893-44ca-afec-09e33cd854a5",
+      "result_id": "cc5c8d37-149a-4634-8616-6d4d830f26c4"
+    },
+    {
+      "claim_id": "0978b62c-7601-4767-8cc3-f48ab51db182",
+      "result_id": "cc5c8d37-149a-4634-8616-6d4d830f26c4"
+    },
+    {
+      "claim_id": "55084be6-8657-4a26-b039-5544b18b299d",
+      "result_id": "3de38bdb-0d49-4344-97c3-adf57867eb1f"
+    },
+    {
+      "claim_id": "b3f836c1-11f1-49c9-a34e-f95f88c78851",
+      "result_id": "3de38bdb-0d49-4344-97c3-adf57867eb1f"
+    },
+    {
+      "claim_id": "47033108-f15b-498a-8b3f-22bdc1f26b39",
+      "result_id": "55a49b01-4301-4a81-8d39-147394718635"
+    },
+    {
+      "claim_id": "d6732b01-e9b9-4f88-8d34-60655b415918",
+      "result_id": "55a49b01-4301-4a81-8d39-147394718635"
+    },
+    {
+      "claim_id": "2aa769c9-e2e3-462e-ad69-9a859bdeb0d5",
+      "result_id": "55a49b01-4301-4a81-8d39-147394718635"
+    },
+    {
+      "claim_id": "4d22bd61-c4a0-4ffc-88bf-89f86e79ed65",
+      "result_id": "787116f6-9e9b-427b-8e71-b1e31043fbd1"
+    },
+    {
+      "claim_id": "8499ea44-b98c-4d10-bee5-cb4f0a16c181",
+      "result_id": "787116f6-9e9b-427b-8e71-b1e31043fbd1"
+    },
+    {
+      "claim_id": "b18617d0-be71-4c75-a485-24b446d66e25",
+      "result_id": "85f01c2d-e8fb-4020-8640-013565ec2d8d"
+    },
+    {
+      "claim_id": "701c034e-28d6-4117-a412-53e2dba9ecc4",
+      "result_id": "85f01c2d-e8fb-4020-8640-013565ec2d8d"
+    },
+    {
+      "claim_id": "4ed1a453-733f-459d-a069-a35d14d4d123",
+      "result_id": "85f01c2d-e8fb-4020-8640-013565ec2d8d"
+    },
+    {
+      "claim_id": "6b22837b-4209-4063-b809-c253c77bc78c",
+      "result_id": "ddcd46fe-6103-4003-a600-fe2365fc1e1f"
+    },
+    {
+      "claim_id": "66ab0c19-078d-49b1-adb7-5dc2ca2b0082",
+      "result_id": "87d1b987-a719-4741-b492-5d86c3208209"
+    },
+    {
+      "claim_id": "b7b91e60-d30c-47f9-a614-bff03629217e",
+      "result_id": "87d1b987-a719-4741-b492-5d86c3208209"
+    },
+    {
+      "claim_id": "4d5472c9-9756-4685-9d2a-28987b668995",
+      "result_id": "87d1b987-a719-4741-b492-5d86c3208209"
+    },
+    {
+      "claim_id": "e2a0b505-d24b-4931-972c-08e6c71e6610",
+      "result_id": "87d1b987-a719-4741-b492-5d86c3208209"
+    },
+    {
+      "claim_id": "0f589e3f-bff6-49b0-b85e-2d58d2046cfb",
+      "result_id": "caff252a-d778-4762-8ecd-7f6109337b04"
+    },
+    {
+      "claim_id": "804bcd87-a010-406b-ad24-b96a8aafe176",
+      "result_id": "caff252a-d778-4762-8ecd-7f6109337b04"
+    },
+    {
+      "claim_id": "e627ce18-1513-4861-bb4d-5d4a32ad05c1",
+      "result_id": "caff252a-d778-4762-8ecd-7f6109337b04"
+    },
+    {
+      "claim_id": "b000336e-cc0b-4785-ab38-261468d7678b",
+      "result_id": "ff628c92-c7eb-4f3a-9741-3d62528c56c3"
+    },
+    {
+      "claim_id": "5269a559-cea2-4f6b-ae79-301d18d58b5c",
+      "result_id": "ff628c92-c7eb-4f3a-9741-3d62528c56c3"
+    },
+    {
+      "claim_id": "7e6dfc1d-53c3-45a2-aad9-383fbf5d5f9a",
+      "result_id": "ff628c92-c7eb-4f3a-9741-3d62528c56c3"
+    },
+    {
+      "claim_id": "27600901-fc80-45dd-8a51-90e9adf9e6c9",
+      "result_id": "ff628c92-c7eb-4f3a-9741-3d62528c56c3"
+    },
+    {
+      "claim_id": "14593d3e-ab37-4cf9-876d-c8aa81b4479a",
+      "result_id": "ff628c92-c7eb-4f3a-9741-3d62528c56c3"
+    },
+    {
+      "claim_id": "941e1831-093b-4eed-bda3-ff6d75399c06",
+      "result_id": "ff628c92-c7eb-4f3a-9741-3d62528c56c3"
+    },
+    {
+      "claim_id": "6142c22c-5e50-49c5-9c60-d1c32adbd11f",
+      "result_id": "ff628c92-c7eb-4f3a-9741-3d62528c56c3"
+    },
+    {
+      "claim_id": "0538371f-7383-4a89-bd5a-45ca7aaaf4cf",
+      "result_id": "ff628c92-c7eb-4f3a-9741-3d62528c56c3"
+    },
+    {
+      "claim_id": "cf981b1a-9be8-47f2-9adc-8447efffa517",
+      "result_id": "ff628c92-c7eb-4f3a-9741-3d62528c56c3"
+    },
+    {
+      "claim_id": "8c7ff36b-12ad-4366-9352-cc8c68710a09",
+      "result_id": "ff628c92-c7eb-4f3a-9741-3d62528c56c3"
+    },
+    {
+      "claim_id": "2f1b4e18-ec9d-493f-b362-965fe0f8f8af",
+      "result_id": "bb67bf2a-9d90-4402-ae90-09008acd4a6b"
+    },
+    {
+      "claim_id": "1321c361-57bd-4d7b-a046-d4e05d870059",
+      "result_id": "bb67bf2a-9d90-4402-ae90-09008acd4a6b"
+    },
+    {
+      "claim_id": "19c3a356-f69a-4fb2-9021-b92578bb1bc5",
+      "result_id": "bb67bf2a-9d90-4402-ae90-09008acd4a6b"
+    },
+    {
+      "claim_id": "4db1816f-058d-49cf-9c0a-b9302d3de88b",
+      "result_id": "bb67bf2a-9d90-4402-ae90-09008acd4a6b"
+    },
+    {
+      "claim_id": "b7771075-39e8-48b0-b365-4dba5df72707",
+      "result_id": "0cbb2eef-2141-4439-b64d-a60566ad3ee3"
+    },
+    {
+      "claim_id": "27e2658a-778a-4920-88ab-df0fa7c5686b",
+      "result_id": "0cbb2eef-2141-4439-b64d-a60566ad3ee3"
+    },
+    {
+      "claim_id": "45262192-9918-4aae-9d78-357654f110e1",
+      "result_id": "0cbb2eef-2141-4439-b64d-a60566ad3ee3"
+    },
+    {
+      "claim_id": "6dd10415-b118-4262-9f6f-2ba27754ace5",
+      "result_id": "905db153-1eeb-44ea-bb0c-13714d8114bf"
+    },
+    {
+      "claim_id": "b79edf21-ceff-4166-8182-685cb5b14604",
+      "result_id": "905db153-1eeb-44ea-bb0c-13714d8114bf"
+    },
+    {
+      "claim_id": "bb979fc8-e0f0-46c6-8d7c-bb3fa253e832",
+      "result_id": "5e83a84c-67fd-41b1-af6a-7760872b4833"
+    }
+  ],
+  "comparisons": []
+}

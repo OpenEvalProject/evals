@@ -1,0 +1,1943 @@
+{
+  "submission": {
+    "id": "63129df5-8cec-4069-bbe7-1feb5299e307",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T14:36:40.328734Z",
+    "updated_at": "2025-12-02T14:36:40.328734Z"
+  },
+  "content": [
+    {
+      "id": "843badaf-4537-4923-aa68-988028874ed8",
+      "submission_id": "63129df5-8cec-4069-bbe7-1feb5299e307",
+      "content_type": "manuscript",
+      "content_text": "# Comprehensive annotations of human herpesvirus 6A and 6B genomes reveal novel and conserved genomic features\n\n## Authors\n\n- Yaara Finkel<sup>1</sup> ([ORCID: 0000-0002-3843-2357](https://orcid.org/0000-0002-3843-2357))\n- Dominik Schmiedel<sup>2</sup> ([ORCID: 0000-0003-3384-5651](https://orcid.org/0000-0003-3384-5651))\n- Julie Tai-Schmiedel<sup>1</sup>\n- Aharon Nachshon<sup>1</sup>\n- Roni Winkler<sup>1</sup>\n- Martina Dobesova<sup>1</sup>\n- Michal Schwartz<sup>1</sup> ([ORCID: 0000-0001-5442-0201](https://orcid.org/0000-0001-5442-0201))\n- Ofer Mandelboim<sup>2</sup> ([ORCID: 0000-0002-9354-1855](https://orcid.org/0000-0002-9354-1855))\n- Noam Stern-Ginossar<sup>1</sup> ([ORCID: 0000-0003-3583-5932](https://orcid.org/0000-0003-3583-5932)) \u2020\n\n### Affiliations\n\n1. Department of Molecular Genetics Weizmann Institute of Science Rehovot Israel\n2. The Lautenberg Center for General and Tumor Immunology Institute for Medical Research Israel-Canada, The Hebrew University Hadassah Medical School Jerusalem Israel\n\n\u2020 Corresponding author\n\n## Abstract\n\nHuman herpesvirus-6 (HHV-6) A and B are ubiquitous betaherpesviruses, infecting the majority of the human population. They encompass large genomes and our understanding of their protein coding potential is far from complete. Here, we employ ribosome-profiling and systematic transcript-analysis to experimentally define HHV-6 translation products. We identify hundreds of new open reading frames (ORFs), including upstream ORFs (uORFs) and internal ORFs (iORFs), generating a complete unbiased atlas of HHV-6 proteome. By integrating systematic data from the prototypic betaherpesvirus, human cytomegalovirus, we uncover numerous uORFs and iORFs conserved across betaherpesviruses and we show uORFs are enriched in late viral genes. We identified three highly abundant HHV-6 encoded long non-coding RNAs, one of which generates a non-polyadenylated stable intron appearing to be a conserved feature of betaherpesviruses. Overall, our work reveals the complexity of HHV-6 genomes and highlights novel features conserved between betaherpesviruses, providing a rich resource for future functional studies.\n\n## Introduction\n\nHuman herpesvirus 6 (HHV-6) is a ubiquitous betaherpesvirus. Based on distinct molecular, epidemiological and biological properties, two variants of this virus were declared as two separate, closely related, viral species; HHV-6A and HHV-6B (Ablashi et al., 2014; Forni et al., 2019; O'Grady et al., 2016; Telford et al., 2018). While HHV-6A remains poorly epidemiologically characterized, it was suspected to associate with neurodegenerative disease such as Alzheimer's disease (Allnutt et al., under review; Braun et al., 1997; Eimer et al., 2018; Leibovitch and Jacobson, 2014; Prusty et al., 2018b; Readhead et al., 2018). HHV-6B is known to infect more than 90% of the human population (Zerr et al., 2005) and was found to be the causative agent of Roseola Infantum, leading to febrile seizures in more than 10% of acute infections (De Bolle et al., 2005; Hall et al., 1994; Yamanishi et al., 1988). Both HHV-6A and HHV-6B, like all herpesviruses, establish a lifelong latent infection in their hosts (Kondo et al., 1991; Luppi et al., 1999). HHV-6 latency is established in multiple cell types, where the viral genome is integrated into host chromosomes between telomeres and subtelomeres (Arbuckle et al., 2013; Braun et al., 1997). Remarkably, in approximately 1% of the population worldwide HHV-6 is integrated in every cell in the body, and inherited, due to integration of the viral genome in germline cells (Clark, 2016; Pellett et al., 2012). HHV-6 reactivation is a common cause of encephalitis, and has been associated with several diseases including multiple sclerosis, hepatitis, pneumonitis and graft-versus-host disease (Braun et al., 1997; Caselli and Di Luca, 2007; De Bolle et al., 2005).\n\nThe genomes of HHV-6A and HHV-6B, similar to those of other herpesviruses, consist of large linear double stranded DNA molecules, 160 kb in length, containing a unique segment flanked by direct repeats (Lindquester and Pellett, 1991; Martin et al., 1991). The annotation of HHV-6 coding capacity has traditionally relied on open reading frame (ORF)-based analyses using canonical translational start and stop sequences and arbitrary size restriction to demarcate putative protein\u00a0coding genes, resulting in a list of around 100 ORFs for each virus (Dominguez et al., 1999; Gompels et al., 1995; Gravel et al., 2013). In recent years, genome wide-analysis of herpesviruses using short RNA sequencing (RNA-seq) reads, and recently also direct and long-read RNA-seq revealed very complex transcriptomes (Bal\u00e1zs et al., 2018; Bal\u00e1zs et al., 2017; Depledge et al., 2019; Gatherer et al., 2011; Kara et al., 2019; O'Grady et al., 2019; O'Grady et al., 2016; Tomb\u00e1cz et al., 2017), and combined with genome-wide mapping of translation, revealed hundreds of new viral ORFs (Arias et al., 2014; Bencun et al., 2018; Stern-Ginossar et al., 2012; Whisnant et al., 2019). Specifically for HHV-6, recent work using proteomics, transcriptomics and comparative genomics on HHV-6B enabled re-annotation of several viral gene products (Greninger et al., 2018). Taken together, this unforeseen complexity of herpesviruses suggests the current annotations of HHV-6 genomes are likely incomplete.\n\nHere, we apply ribosome profiling (Ribo-seq) and RNA-seq to investigate the genomes of the closely related HHV-6A and HHV-6B. These powerful tools allowed us to accurately determine the translation initiation sites of previously annotated genes, and to identify hundreds of new open reading frames including many upstream ORFs (uORFs) and internal ORFs (iORFs), generating a comprehensive\u00a0atlas of HHV-6 translation products. Using our RNA-seq data, we were able to map novel splice junctions and to identify novel highly abundant viral long non-coding RNAs. The systematic annotations of two betaherpesviruses together with our previous annotation of the prototypic betaherpesvirus human cytomegalovirus (HCMV)\u00a0(Stern-Ginossar et al., 2012) created for the first time an opportunity to look at functional conservation of some of these features. We found high levels of conservation between HHV-6A and HHV-6B, and in several cases, the newly identified features were also conserved in HCMV. Our results shed light on the complexity of herpesviruses, point to conserved features and can serve as a valuable resource for future studies of these important viruses.\n\n## Results\n\n### Profiling the transcriptome and translatome of HHV-6A and HHV-6B\n\nTo capture the full complexity of HHV-6A and HHV-6B genomes, we applied next generation sequencing methods that map genome-wide RNA expression and translation to HSB-2 and Molt-3 cells infected for 72 hr with HHV-6A strain GS and HHV-6B strain Z29, respectively (Figure 1A). For each virus we mapped genome-wide translation events by preparing three different ribosome-profiling libraries (Ribo-seq). Two Ribo-seq libraries facilitate mapping of translation initiation sites, by treating cells with lactimidomycin (LTM) or harringtonine (Harr), drugs that inhibit translation initiation in distinct mechanisms and lead to accumulation of ribosomes at translation initiation sites (Figure 1A and Ingolia et al., 2011; Lee et al., 2012). The third Ribo-seq library was prepared from cells treated with the translation elongation inhibitor cycloheximide (CHX), and gives a snap-shot of actively translating ribosomes across the body of the translated ORF (Figure 1A). In parallel, we used a tailored RNA-sequencing (RNA-seq) protocol which on top of quantification of RNA levels allows identification of transcription start sites (TSSs) due to a strong overrepresentation of fragments that start at the 5\u2019 end of transcripts, as well as detection of polyadenylation sites (Figure 1A\u00a0and\u00a0Stern-Ginossar et al., 2012). The combination of these methods provides accurate mapping of transcription and translation events, as seen in the example of U54 (Figure 1A). The different Ribo-seq libraries generate distinct profiles across the coding region, displaying a strong peak at the translation initiation site, which, as expected, is more distinct in the Harr and LTM libraries, while the CHX library provides the distribution of ribosomes across the entire coding region up to the stop codon, and its mapped footprints were enriched in fragments that align to the translated frame (Figure 1\u2014figure supplement 1\u2013). These profiles were consistent across coding regions in human genes (Figure 1B) and, as expected, the RNA-seq profiles were uniformly distributed across the coding region (Figure 1C).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/50960/elife-50960-fig1-v1.jpg)\n\n**Figure 1.:** (A) Viral gene expression was analyzed by performing ribosome profiling (red) and initiation enriched RNA-seq (green). HSB-2 cells were infected with HHV-6A strain GS, and MOLT3 cells were infected with HHV-6B strain Z29. Infected cells were harvested at 72 hr post infection (hpi) for RNA-seq, and for ribosome profiling using cycloheximide (CHX) treatment to map overall translation or lactimidomycin (LTM) and Harringtonine (Harr) treatments for mapping translation initiation. (B-C) Metagene analysis of the 5' and the 3' regions of human protein coding regions showing the expression profile as measured by the different (B) Ribo-seq and (C) RNA-seq methods in HHV-6A (green) and HHV-6B (blue) infected cells. The X axis shows the nucleotide position relative to the start or the stop codons.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/50960/elife-50960-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** Aggregated normalized reads from HHV-6A and HHV-6B CHX treated Ribo-seq libraries around start codons of human protein coding genes. Colors signify the translation reading frame to which the p-site of read was mapped.\n\n### Ribo-seq libraries uncover the translation landscape of HHV-6A and HHV-6B\n\nWe used the Ribo-seq data to determine translation of viral ORFs. Comparing to previously annotated ORFs, we found many misannotations (10 and 11, in HHV-6A and HHV-6B respectively) and novel un-annotated ORFs (278 and 227, in HHV-6A and HHV-6B respectively). Importantly, many of these new ORFs are conserved between HHV-6A and HHV-6B, validating our approach, and emphasizing the high similarity between these two viruses. One example of misannotation is the U30 gene, an essential viral gene coding for an inner tegument protein (Nicholas and Martin, 1994). We found translation of this gene to initiate at an AUG 411 bp downstream of the previously annotated start, in both HHV-6A and HHV-6B, resulting in a 946 amino acid (aa) long protein (Figure 2A). Importantly, the new annotations include the C-terminal domain which was shown to interact with the large tegument protein in the HSV-1 homolog (Richards et al., 2017).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/50960/elife-50960-fig2-v1.jpg)\n\n**Figure 2.:** Examples of expression profiles of viral genes that contain novel ORFs conserved in HHV-6A and HHV-6B. Ribo-seq reads are presented in red and RNA-seq reads are presented in green. Canonical annotated ORFs are labeled by black rectangles, novel ORFs initiating at an AUG codon are labeled in blue, and novel ORFs initiating at a near-cognate start codon are labeled in orange. ORF sizes are written in gray. (A) U30 translation initiates at an AUG downstream of the annotated start codon. (B) A 32 amino acid (aa) upstream overlapping ORF (uoORF) is coded by the U48 transcript, initiates upstream of the U48 canonical ORF and partially overlaps it. (C) U36 locus contains two uORFs, as well as an out-of-frame iORF. (D) U84 locus contains an in-frame iORF which is a truncated version of U84, and a novel out-of-frame iORF.\n\nWe identified novel ORFs that are present in both viruses. For example, a short 32\u00a0aa ORF was found to initiate upstream of the envelope protein gene U48 (Figure 2B). This ORF partially overlaps the U48 gene, making it an upstream overlapping ORF (uoORF). Since uoORFs are known to have repressive regulatory effects conserved across vertebrates (Johnstone et al., 2016), this novel ORF likely negatively regulates the translation of U48. We did not observe translation of another downstream ORF that could be positively regulated by this uoORF. The packaging gene U36 is an example of a gene for which we found translation of two very short (<20 aa) uORFs from its 5'UTR (Figure 2C). In addition, we identified translation of an internal ORF (iORF), initiating out-of-frame, inside the coding region of U36 (Figure 2C), leading to translation of a novel ORF. In the U84 gene we observed two iORFs, one of them out-of-frame possibly regulating the downstream ORF, and another in-frame, starting at an AUG downstream of the U84 start-codon and ending in the same stop-codon, resulting in a truncated version of U84 (Figure 2D).\n\n### RNA-seq analysis reveals pervasive splicing that is conserved between HHV-6A and HHV-6B\n\nTo systematically map the splice junctions of HHV-6A and HHV-6B, we used two independent splice-aware alignment tools, TopHat (Trapnell et al., 2009) and STAR (Dobin et al., 2013). We found an intricate set of splice junctions including dozens of novel splice junctions, which were overall positionally conserved between HHV-6A and HHV-6B (Figure 3A and Figure 3\u2014source data 1 and 2). We were able to detect 24 out of 26 annotated HHV-6A splice junctions and all 24 annotated HHV-6B splice junctions. Furthermore, we identified 37 novel splice junctions in HHV-6A and 44 in HHV-6B (Figure 3B and Figure 3\u2014source data 1 and 2). Some of the novel splice junctions identified in HHV-6A were recently reported in HHV-6B and are confirmed here for both viruses (U19, U83, and all splice forms of U79,\u00a0Greninger et al., 2018). Interestingly, many of the novel splice junctions seem to belong to one long transcript composed of several short exons separated by long introns, spanning the U42-U57 locus (Figure 3A). In a few cases, novel splice junctions result in reannotation of ORFs. For example, a splice junction between the HHV-6B U7 and U8 indicates that they are fused to one translation product, similar to the HHV-6A U7 (Dominguez et al., 1999; Gompels et al., 1995; Gravel et al., 2013\u00a0and Figure 3\u2014supplement figure 1A). Another splice junction in the HHV-6A U13 gene indicates that the U12 and U13 proteins share their N-terminal domain (Figure 3\u2014supplement figure 1B). The same junction was also detected at lower levels in HHV-6B. The high relative abundance of reads that capture splice junctions suggests there is an extensive use of alternative splicing in these viruses.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/50960/elife-50960-fig3-v1.jpg)\n\n**Figure 3.:** (A) Splice junctions mapped using RNA-seq reads are shown throughout the genomes of HHV-6A and HHV-6B. Previously annotated splice junctions are marked in orange and novel splice junctions are marked in brown. (B) Diagrams displaying the numbers of previously annotated and detected splice junctions for HHV-6A and HHV-6B.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/50960/elife-50960-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** Ribo-seq reads are shown in red and RNA-seq reads are shown in green for (A) the U7-9 locus of HHV-6A and HHV-6B. (B) The U12-13 locus of HHV-6A. Black rectangles mark canonical annotations of open reading frames, blue rectangles mark novel ORFs initiating at an AUG codon, and orange rectangles mark novel ORF initiating at a near-cognate start codon. Transcripts are shown in gray. RNA-seq read alignments in BAM format are shown at the bottom, thin gray lines represent spliced reads, pink lines are reads aligned to the positive strand and blue lines are reads aligned to the negative strand. LTM profiles resemble the Harr profiles and are therefore not presented in the figure.\n\n### Previously unrecognized HHV-6 encoded long non-coding RNAs (lncRNAs)\n\nBy examining the RNA-seq data, we discovered three highly expressed novel transcripts, that lack both observed or potential long ORFs, suggesting that these are likely lncRNAs. These three lncRNAs are conserved between HHV-6A and HHV-6B, and they all contain efficiently translated short ORFs (Figure 4A\u2013C). The short length of these ORFs implies that the RNAs themselves probably constitute functional elements. One lncRNA, designated here as lncRNA1, initiates within HHV-6 origin of replication (Figure 4A) and therefore resembles in synteny to an\u00a0HCMV encoded lncRNA, RNA4.9 although it is much shorter (Figure 4\u2014figure supplement 1A). This transcript is the most highly expressed polyadenylated\u00a0RNA in both HHV-6A and HHV-6B (Figure 4\u2014figure supplement 2), and its encoded short ORF,\u00a0which contains the highest ribosome densities in the viral genomes (Figure 4\u2014source data 1). The second lncRNA we identified, named here lncRNA2, is a spliced transcript that partially overlaps U18 (Figure 4B). The third lncRNA, designated lncRNA3, is transcribed between U77 and U79 (Figure 4C). This lncRNA has multiple possible isoforms generated by two alternative TSSs, two alternative polyadenylation sites, and alternative splicing. Initial inspection of the RNA-seq data suggested that the intron is not efficiently spliced (Figure 4C). However by synteny, this lncRNA is homologous to the\u00a0HCMV encoded lncRNA5.0 and the Murine CMV encoded lncRNA7.2 (Figure 4\u2014figure supplement 1B), shown to generate stable intronic RNAs which are not polyadenylated (Kulesza and Shenk, 2006; Kulesza and Shenk, 2004).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/50960/elife-50960-fig4-v1.jpg)\n\n**Figure 4.:** Viral transcripts that appear to be lncRNAs are shown as purple rectangles. Reads from RNA-seq are presented in green and reads containing polyA are presented in blue. The ribosome profiling (CHX), Harringtonine (Harr) and\u00a0lactimidomycin (LTM)\u00a0profiles are presented in red. (A) A transcript initiating within the origin of replication. One putative ORF not detected by our\u00a0predictions\u00a0(see\u00a0Figure 6)\u00a0is shown as a striped blue rectangle. (B) A spliced transcript initiating between U17 and U18. (C) Three possible isoforms of a spliced transcript with alternative splicing, initiation and termination, as well as a putative stable intron.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/50960/elife-50960-fig4-figsupp1-v1.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A and B) Reads from RNA-seq are presented in green. Black rectangles mark canonical ORFs and purple rectangles mark the putative lncRNAs (A) a lncRNA initiating within the lytic origin of replication of HHV-6A, HHV-6B and HCMV (RNA4.9). (B) A spliced lncRNA, likely generating a stable intron, transcribed from the locus between the viral helicase gene and a conserved early phosphoprotein gene in HHV-6A, HHV-6B, HCMV and Murine CMV (MCMV).\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/50960/elife-50960-fig4-figsupp2-v1.jpg)\n\n**Figure 4\u2014figure supplement 2.:** Scatter plot of normalized RNA expression levels of canonical HHV-6 ORFs and novel lncRNAs. Gray dots represent ORFs, colored dots represent lncRNAs (lncRNA1 in red, lncRNA2 in green and lncRNA3 in blue).\n\nSince our RNA-seq libraries were based on poly-A selection and therefore non-polyadenylated RNA molecules are under-represented, we suspected similar intronic RNA products might be generated from lncRNA3. To explore this possibility, we quantified the number of reads that span the exon-intron junction relative to the number of intronic reads, and found that in both HHV-6A and HHV-6B they comprise less than 10% of what is expected from retained intron isoforms (Figure 5A). Therefore, these intronic reads do not seem to originate from intron retention and rather indicate that lncRNA3 also generates a stable non-polyadenylated intron. To further examine this possibility, we extracted RNA from cells infected with HHV-6A or HHV-6B and measured the abundance of lncRNA3 intron in cDNA synthesized with random hexamers compared to cDNA synthesized with poly(dT) oligomers. Similar to the non-polyadenylated 18S ribosomal RNA, the intron RNA was detected at significantly higher levels in cDNA that was synthesized using random hexamers, while the polyadenylated lncRNA2 was more abundant or unchanged when poly(dT) oligomers were used in HHV-6A and HHV-6B, respectively (Figure 5B). We further quantified the abundance of the intronic RNA in of HHV-6B by deep sequencing total RNA without poly-A selection from infected cells. Based on these measurements the level of the intronic RNA of HHV-6B lncRNA3 is 100-fold higher than the spliced lncRNA3 (Figure 5\u2014figure supplement 1A), making it the most abundant transcript in infected cells. Similarly, RNA-seq analysis of total RNA from HCMV infected cells showed that the RNA5.0 intron is 10-fold higher than the spliced RNA5.0 (Figure 5\u2014figure supplement 1B). Additionally, we validated the presence of the HHV-6B lncRNA3 intron by performing Northern blot analysis, confirming the presence of the RNA at the predicted size of\u00a0~1500 nt (Figure 5\u2014figure supplement 1C).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/50960/elife-50960-fig5-v1.jpg)\n\n**Figure 5.:** (A) RNA-seq reads aligned to the negative strand of lncRNA3 locus in both HHV-6A and HHV-6B are presented. Thin gray lines represent spliced reads, blue lines represent reads aligned to either the exons or intron, pink lines represent reads that span the first exon intron junction. In regions with very high coverage (>100 reads per 50 nt region) reads were downsampled so that maximum 100 reads per region are displayed. Gray bars represent the total reads coverage without omissions. (B) RT-qPCR measurements of the HHV-6A and HHV-6B lncRNA3 intron RNA. Values were normalized to the HHV-6 U21 gene. cDNA was prepared with either oligo-dT or random hexamers primers and the ratio of these measurements is presented. Error bars represent standard error of biological duplicates. P-values were calculated using Student's t-test. * p-value<0.05 and ** p-value<0.01.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/50960/elife-50960-fig5-figsupp1-v1.jpg)\n\n**Figure 5\u2014figure supplement 1.:** Normalized RNA abundance as measured by RNA-seq of total RNA (without poly-A selection) from cells infected for 72 hr with (A) HHV-6B or (B) HCMV, of (A) the spliced lncRNA3 and the stable intron, or (B) the spliced RNA5.0 and the stable intron. Error bars represent standard error of biological replicates in A and triplicates in B. (C) Northern blot analysis of total RNA extracted from HHV-6B infected Molt-3 cells at 72hpi with probes against the lncRNA3 intron.\n\nTaken together, our results show that HHV-6 viruses express three highly abundant lncRNAs, as was shown in other herpesviruses (Gatherer et al., 2011; Hutchinson and Tocci, 1986; Kulesza and Shenk, 2004; McDonough et al., 1985; Rawlinson and Barrell, 1993), and that one of these lncRNAs, lncRNA3, generates a highly abundant stable non-polyadenylated intronic RNA that appears to be a conserved feature of betaherpesviruses.\n\n### Systematic annotations of translated viral ORFs\n\nTo systematically define the full coding potential of HHV-6A and HHV-6B, we trained a support vector machine (SVM) model to identify translation initiation sites based on our Ribo-seq data sets, combining the actively translating ribosomes profile (CHX treatment), and initiation site enrichment (LTM and Harr) from cells infected with HHV-6 for 72 hr. The model was trained on a subset of the canonical viral ORFs that had high ribosome footprint coverage (see Materials and methods). Using the trained SVM model, we predicted hundreds of translation initiation sites in each virus (Figure 6\u2014source data\u00a01 and 2). In these sites, we found strong enrichment of translation initiation at the canonical AUG start codon, as well as weaker but still significant enrichment for the near-cognate start codons (Figure 6A). Of the near-cognate start codons, CUG was the most common, similar to what was found in other herpesviruses (Arias et al., 2014; Stern-Ginossar et al., 2012; Whisnant et al., 2019) and in human cells (Fields et al., 2015). Of the previously annotated ORFs, we identified translation in 69 out of 88 HHV-6A ORFs and 63 out of 103 HHV-6B ORFs. The ORFs missing from the prediction were either reannotated, or hardly translated under the conditions we used (Figure 6\u2014source data 3). Since our detection is affected by the level of expression, it is likely these ORFs are expressed at low levels or translated under different conditions. In total, we identified 268 novel ORFs in HHV-6A and 216 novel ORFs in HHV-6B (Figure 6B). As expected, newly identified ORFs are shorter than the annotated ones (Figure 6C). Many of the novel ORFs we identified, were very short (<20 aa, 141 in HHV-6A and 111 in HHV-6B) and therefore are likely not functional at the polypeptide level. In addition, a large portion of the remaining ORFs are iORFs, translated within other ORFs (80 ORFs in HHV-6A and 67 in HHV-6B, Figure 6B). Due to the nature of the ribosome movement on the RNA during active translation, the ribosome protected fragments of coding sequences display a three-nucleotide periodicity, with enrichment for reads aligned to the first base of each codon. The newly identified ORFs displayed similar periodicity to the previously annotated ORFs, which was not seen in RNA-seq reads, further validating that these ORFs likely represent bona-fide translation products (Figure 6D).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/50960/elife-50960-fig6-v1.jpg)\n\n**Figure 6.:** (A) Fold enrichment of AUG and near-cognate codons at predicted sites of translation initiation compared to their genomic distribution. (B) Venn diagrams summarizing the HHV-6 translated ORFs. (C) Size distribution of previously annotated ORFs (dark) and of newly identified ORFs (bright). (D) Position of the ribosome footprint reads relative to the translated reading frame showing enrichment of the first position in the annotated ORFs (dark) as well as in the newly identified ones (bright). The mRNA reads were used as control and do not show enrichment to any frame.\n\n### Pervasive use of alternative 5' transcript ends controls viral gene expression\n\nGene expression during lytic herpesvirus infection is regulated in a temporal cascade. In order to explore the temporal kinetics of HHV-6 ORFs we performed a time course experiment and created Ribo-seq and RNA-seq libraries from HHV-6B strain Z29 infected Molt-3 cells at 5, 24 and 72 hr post infection (hpi). For these experiments, we chose to focus on HHV-6B as it is more common and clinically relevant (Braun et al., 1997; Clark, 2016). The data in this experiment was highly correlated with our single time point experiment (Pearson's R on log transformed data is 0.98 for RNA-seq 0.97 and for Ribo-seq, Figure 7\u2014figure supplement 1).\n\nHierarchical clustering of viral coding regions by footprint densities along infection (a measure of the relative translation rates) revealed several distinct temporal expression patterns (Figure 7A and see Figure 7\u2014source data 1 for read numbers). These temporal profiles largely agree with previously published kinetic classifications (Tsao et al., 2009; Yamanishi et al., 2013). Cluster one contains ORFs whose expression is relatively high at 5hpi compared to 24 and 72hpi, and this cluster includes most of the genes classified as immediate-early (IE, U79, U90 and U95). Another gene, U85, a glycoprotein previously classified as IE (Tsao et al., 2009), was not efficiently translated at 5hpi and was assigned to cluster 2. Cluster two contains genes that are most highly expressed at 24hpi and is enriched in early genes. Clusters 3 and 4 contain genes that are mostly expressed at 72hpi and are both enriched in late genes; however, cluster four is composed of genes that are expressed almost exclusively at 72hpi. While most of the previously annotated late genes were assigned to these clusters, the DNA helicase/primase U43 and the large tegument protein U31 were previously annotated as late genes, but are shown here to reach peak translation at the 24hpi timepoint.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/50960/elife-50960-fig7-v1.jpg)\n\n**Figure 7.:** (A) Heatmap of ribosome occupancy of HHV-6B ORFs clustered by relative expression levels at 5, 24 and 72hpi. Previously annotated kinetic class were labeled on the right as immediate early (IE, green), early (E, blue), late (L, pink), or unknown (N/A, gray). The cluster number appears on the left. (B and C) The ribosome occupancy (red) and mRNA profiles (green) are shown (B) around U53 loci at different hours post infection (marked on the left) and around its HCMV homolog, UL80 (C) and around U81 and U82 loci. (D and E) Dot plots showing the number of uORFs (D) and iORFs (E) of each canonical viral ORF with annotated kinetic class for HHV-6A, HHV-6B and HCMV. P-value was calculated using proportion test. * for p-value<0.05, ** for p-value<0.01 and N.S for non-significant.\n\n![Figure 7\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/50960/elife-50960-fig7-figsupp1-v1.jpg)\n\n**Figure 7\u2014figure supplement 1.:** Scatter plot of RNA-seq and CHX Ribo-seq reads of canonical HHV-6 ORFs and novel lncRNAs. Gray dots represent ORFs, colored dots represent lncRNAs (lncRNA1 in red, lncRNA2 in green and lncRNA3 in blue).\n\n![Figure 7\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/50960/elife-50960-fig7-figsupp2-v1.jpg)\n\n**Figure 7\u2014figure supplement 2.:** The ribosome occupancy and mRNA profiles are shown around the HHV-6B U51 locus and the UL78 HCMV locus, at different infection times (marked on the left). CHX Ribo-seq reads are presented in red and RNA-seq reads are presented in green. Black rectangles represent canonical annotations, blue rectangles represent novel ORF initiating at an AUG codon and in orange rectangles represent ORFs initiating at a near-cognate start codon.\n\n![Figure 7\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/50960/elife-50960-fig7-figsupp3-v1.jpg)\n\n**Figure 7\u2014figure supplement 3.:** Scatter plots showing the number of uORFs of each main ORF (Y axis) as a function of the RNA expression level of the same ORF as measured by RNA-seq (X axis). Pearson's correlation coefficient R is displayed for each virus.\n\n![Figure 7\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/50960/elife-50960-fig7-figsupp4-v1.jpg)\n\n**Figure 7\u2014figure supplement 4.:** The ratio of HHV-6B ORFs initiating and non-AUG start codons in each kinetic cluster (early clusters 1,2 and late clusters 3,4). P-value was calculated using proportion test. *** for p-value<0.001.\n\nWe previously demonstrated that pervasive use of alternative 5\u2019 ends in HCMV transcripts is critical for the tight temporal regulation of viral gene expression and production of alternate protein products (Stern-Ginossar et al., 2012). We observed similar phenomena in the temporal regulation of several HHV-6B genes. For example, the U53 gene contains newly identified iORFs, one of which initiates at an AUG, and is an orthologue of the annotated HHV-6A U53.5 ORF (Figure 7B). Relative to the main U53 ORF, these iORFs are translated more efficiently at 72hpi than at 24hpi. This could be explained by a temporal shift in the relative frequency of initiation at two TSSs, one of which is upstream of the U53 start codon from which the main U53 can be translated, and another downstream of the U53 start codon allowing translation of the iORFs but not of the main U53 ORF. Notably, we found the same pattern in the HCMV homolog, UL80 (Stern-Ginossar et al., 2012; Figure 7B). A similar form of regulation is seen in the HHV-6B locus coding for the U81 and U82 ORFs in which we found two TSSs. One TSS is immediately upstream of U81 creating an RNA that is mainly expressed at 24hpi, facilitating the translation of U81. At 72hpi a second TSS is also present, giving rise to translation of U82 (Figure 7C). Temporal regulation of 5' ends was also found for the HHV-6B U51 and its uoORF, which is also conserved in its HCMV homolog UL78 (Stern-Ginossar et al., 2012; Figure 7\u2014figure supplement 2).\n\n### uORFs are enriched in betaherpesvirus late genes\n\nAmong the newly identified ORFs many are iORFs and uORFs. Since the high abundance of these ORFs may be associated with changes in translation regulation, we examined whether these translation events are enriched in specific kinetic classes. Each uORF and iORF was assigned to a canonical transcript; iORFs were assigned to the canonical ORF in which they reside, and uORFs were assigned to a canonical ORF if they were located upstream of its translation initiation (Figure 7\u2014source data 2). For both HHV-6A and HHV-6B we found an enrichment of uORFs in the 5'UTRs of late genes compared to earlier kinetic classes (Figure 7D, p-value < 0.01, proportion test). In contrast, there was no enrichment for the presence of iORFs in any kinetic class (Figure 7E, p-value > 0.3), negating the option that the enrichment we found for uORFs is due to a bias in our approach or to a general increase in our ability to capture translation initiation. We further extended this analysis to HCMV ORFs and found that uORFs but not iORFs are enriched in 5\u2019UTRs of HCMV genes that are expressed with late kinetics, similar to what we see in HHV-6 (Figure 7D and E). Since the ability to capture uORFs translation might be affected by expression levels, which can skew our analysis, we checked the correlation between RNA expression and the number of predicted uORFs. We identified a positive correlation (Pearson's R\u00a0=\u00a00.34) for HHV-6B ORFs, but not for HHV-6A or HCMV ORFs (R\u00a0=\u00a00.04 and R\u00a0=\u00a00.03 respectively), suggesting expression levels probably do not solely explain the enrichment we see for uORFs in late genes (Figure 7\u2014figure supplement 3). Altogether, these results suggest a potential mechanism for translation regulation of late viral genes, utilizing uORFs, which is conserved among betaherpesviruses. Interestingly, we also observed an increased proportional use of non-canonical start codons late in infection (Figure 7\u2014figure supplement 4), further supporting the possibility that a change in translation regulation might occur at late time points post infection.\n\n### The presence of iORFs and uORFs is conserved among betaherpesvirus genes\n\nUsing our comprehensive transcriptome and translatome data we uncovered hundreds of novel ORFs in HHV-6A and in HHV-6B. We next examined whether the presence of these ORFs is conserved between these two HHV-6 species. We found that the number of iORFs and uORFs in HHV-6A and HHV-6B homolog ORFs are well correlated, indicating a high level of conservation of these translation events between these two viruses (p<10\u221215 for uORFs and p<10\u221210 for iORFs, Figure 8A). Several homolog ORFs have multiple conserved iORFs and/or uORFs (Figure 8B and Figure 8\u2014figure supplement 1). We also found some features that are conserved in HCMV. In five iORF-containing HHV-6 genes and in four uORF-containing HHV-6 genes, the HCMV homologs also contained similar iORFs or uORFs (Figure 8\u2014figure supplement 2). One of the HHV-6/HCMV homolog ORF pairs containing a conserved uORF is U51 and its HCMV homolog UL78 (Figure 8C), which interestingly also show conserved kinetics along infection suggesting a potential regulatory mechanism conserved between these viruses (Figure 7\u2014figure supplement 2). Altogether, the conserved presence of several uORFs and iORFs suggests that their occurrence is not random, and it is likely that these represent a functional module that plays a role in regulating herpesvirus protein expression.\n\n![Figure 8.](https://cdn.elifesciences.org/articles/50960/elife-50960-fig8-v1.jpg)\n\n**Figure 8.:** (A) Correlation between the number of iORFs and uORFs of canonical ORFs in HHV-6A and HHV-6B (55 shared canonical ORFs in total). Dot size indicates the number of canonical ORFs with the indicated number of iORFs or uORFs in the two viruses. (B\u2013C) Selected examples of novel internal or upstream initiation events that are conserved between HHV-6A and HHV-6B. Shown in black rectangles are canonical ORFs, in blue are novel ORFs initiating at an AUG codon, and in orange are novel ORFs initiating at a near-cognate start codon. ORF sizes are written in gray. The ribosome occupancy profiles are shown in red and the mRNA profile is shown in green (B) at U10 locus for both HHV-6A and HHV-6B and (C) at the U51 locus in HHV-6A and HHV-6B and its HCMV homolog U78. The gap in RNA reads in HHV-6B U51 is due to a base insertion relative to the reference, preventing read alignment to the region.\n\n![Figure 8\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/50960/elife-50960-fig8-figsupp1-v1.jpg)\n\n**Figure 8\u2014figure supplement 1.:** Ribo-seq reads (red) and RNA-seq (green) of several virus loci. Black rectangles represent canonical annotations, blue rectangles represent novel ORF initiating at an AUG codon and in orange rectangles represent ORFs initiating at a near-cognate start codon. ORF sizes are written in gray. (A) Multiple in-frame iORFs within U70 in HHV-6A and HHV-6B. (B) Multiple uORFs upstream of U32 ORF in HHV-6A and HHV-6B. LTM ribosome density profiles resemble the Harr ribosome density profiles and are not presented.\n\n![Figure 8\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/50960/elife-50960-fig8-figsupp2-v1.jpg)\n\n**Figure 8\u2014figure supplement 2.:** Correlation between the number of iORFs and uORFs of canonical HCMV and HHV-6 ORFs (26 canonical main ORFs in total). Dot size indicates the number of canonical ORFs with the indicated number of iORFs or uORFs in the two viruses. (A) HHV-6A and HCMV uORFs, (B) HHV-6B and HCMV uORFs, (C) HHV-6A and HCMV iORFs, and (D) HHV-6B and HCMV iORFs.\n\n## Discussion\n\nDecoding the transcriptional and translational landscape of any virus is a fundamental step in studying its biology and pathogenesis. For many herpesvirus genomes, traditional annotations have relied on the identification of canonical translational start codons and arbitrary size restriction to define viral open reading frames (ORFs). Laborious follow-up molecular work revealed the transcriptional architecture of individual genomic loci, but for most HHV-6 genes annotations are still based on these initial in-silico ORF predictions. In recent years, major advances in high-throughput sequencing approaches have revealed that the transcriptome and translatome of herpesviruses are extremely complex, encompassing large numbers of overlapping transcripts, extensive splicing and many non-canonical translation products (Arias et al., 2014; Bal\u00e1zs et al., 2017; Bencun et al., 2018; Depledge et al., 2019; Gatherer et al., 2011; Kara et al., 2019; O'Grady et al., 2019; O'Grady et al., 2016; Tomb\u00e1cz et al., 2017; Whisnant et al., 2019). Our own work in which we employed ribosome profiling and systematic transcript analysis to decipher HCMV genome complexity revealed a rich collection of coding sequences that include many viral short ORFs (sORFs), uORFs and alternative translation products that generate extensions or truncations of canonical proteins (Stern-Ginossar et al., 2012).\n\nHere, using RNA-Seq and ribosome profiling measurements along HHV-6 infection, we provide a comprehensive map of HHV-6A and HHV-6B coding elements over the lytic life cycle. In agreement with the complexity of other herpesviruses that have been analyzed using ribosome profiling approaches, we identified 268 and 216 novel viral ORFs that are expressed during HHV-6A and HHV-6B lytic infection, respectively. Furthermore, our transcriptome analyses enabled mapping of the full landscape of HHV-6 splice junctions and the identification of three virally encoded lncRNAs. Our data further show that in similarity to our findings in HCMV (Stern-Ginossar et al., 2012), the pervasive use alternative of 5\u2019 ends plays a major role in HHV-6 genomes in production of distinct polypeptides from single genomic loci. Like alternative splicing, this mechanism can expand protein diversity and contribute to virus complexity by allowing multiple distinct polypeptides to be generated from a single genomic locus. Overall, our revised experimental annotations will facilitate functional studies on HHV-6 ORFs and transcripts as well as their regulation.\n\nThis wealth of novel elements requires a more precise dissection of the components that are likely to be functional. The issue of functional relevance still represents a major challenge in these systematic experimental annotations. Our analysis of three betaherpesviruses allowed us, for the first time, to highlight some conserved features that may point towards functional importance. A large portion of the novel translated ORFs we identified are uORFs. uORFs are widely recognized as cis-regulatory elements and their presence generally correlates with reduced translation of the primary ORF, but there are instances in which they associate with increased translation (Young and Wek, 2016). Despite their pervasiveness, only a few viral uORFs have been studied in detail (Geballe et al., 1986; Kronstad et al., 2013). We show that genes that contain uORFs and the number of uORFs are largely conserved between HHV-6A and HHV-6B. In addition, we reveal that both in HHV-6 and in HCMV, uORFs appear to be especially abundant in late viral genes. The surplus of uORFs and their preferred use specifically at late time points of infection indicate that they may have a functional role in controlling viral gene expression, probably when cellular stress pathways are engaged. The overall high representation of sORFs, iORFs and uORFs in the viral genome, particularly at late stages of infection, is probably driven by several mechanisms; the first is extensive use of alternative transcription initiation, which is highly prevalent at late time point of infection with herpesviruses, and allows the translation of multiple translation products from the same viral loci (Bal\u00e1zs et al., 2018; Parida et al., 2019; Stern-Ginossar et al., 2012; Whisnant et al., 2019); the second mechanism may be related to changes in translation permissiveness which can explain the increase in translation initiation from near canonical start codons. Notably, our\u00a0expression data along infection likely underestimate the true changes in viral protein production as experimental HHV-6 infection inherently creates a mixed population of cells infected at different times (see\u00a0Materials\u00a0and methods).\n\nWe identified three conserved HHV-6 encoded lncRNAs, signifying lncRNAs are probably a shared feature of all herpesviruses (Tycowski et al., 2015). lncRNAs are still an enigmatic group of RNA molecules that do not form a well-defined class of genes, and mechanistically most lncRNAs, including viral lncRNAs, remain poorly characterized. Unlike mammalian lncRNAs, that as a group are significantly less abundant than canonical mRNAs (Mukherjee et al., 2017), in herpesviruses lncRNAs represent the most abundant group of viral transcripts (Gatherer et al., 2011; Tycowski et al., 2015). These high expression levels allude to essential roles for virally encoded lncRNAs during infection. The three HHV-6 encoded lncRNAs we identified are highly expressed but\u00a0present distinct features; lncRNA1 is relatively short (232 bp in HHV-6A and 424 bp in HHV-6B) and unspliced, lncRNA2 is composed of three exons that are efficiently spliced, and lncRNA3 represents a complex locus with two different TSSs and polyadenylation sites, three alternatively spliced exons and a stable intron.\n\nInterestingly, by synteny lncRNA1 and lncRNA3 seem related to HCMV encoded lncRNAs. lncRNA1 resembles the HCMV RNA4.9 as both are transcribed from the viral origin of replication at the same orientation. This similarity implies a possible conserved role of lncRNA transcription in betaherpesviruses origin of replication although they are very different in length (RNA4.9 is 4.9 kb long). lncRNA3 is an orthologue of HCMV encoded RNA5.0 both in synteny and in the production of a stable intron. RNA5.0 has previously been shown to generate a stable intron that is not required for HCMV replication in fibroblasts (Kulesza and Shenk, 2004). A murine cytomegalovirus 7.2 kb ortholog of RNA5.0 was identified which also generates a stable intronic RNA. Mutant MCMV viruses lacking this stable intron RNA replicated normally in culture, but exhibited a defect in establishing a persistent infection in vivo (Kulesza and Shenk, 2006). Our results indicate that the production of a stable intronic RNA from this locus is a conserved feature of betaherpesviruses, implying a central function. Importantly, the notion that this non-coding region is conserved in betaherpesviruses and therefore likely represents a functional component was already specified 15 years ago (Dolan et al., 2004). The strong expression of the intronic RNA, which is 100-fold higher compared to the spliced RNA, and its conservation in beta herpesviruses points that this intronic RNA is probably the main functional element in this locus. This may also explain the apparent complexity of the locus, if the intronic RNA mediates the function, there will be no selection to maintain a specific RNA isoform or a specific transcription start site as long as the intron is generated, allowing multiple isoforms to arise from the same locus.\n\nThe high abundance of this RNA together with its conservation make the molecular and functional characterization of these viral intronic RNAs highly interesting. There is little known about the mechanisms by which stable intronic RNAs may operate (Osman et al., 2016) but one possibility is that these RNAs sequester spliceosomes or specific splicing components that cause changes in the cellular splicing activity. Interestingly, a small non-coding RNA (sncRNA-U77) that is mapped to the intron of lncRNA3 was shown to be expressed by HHV-6A (Nukui et al., 2015). It is therefore possible that the stable intron is further processed to create additional functional elements. Furthermore, a recent study showed that TSA-mediated HHV-6A transactivation results in increased transcription from a region overlapping the lncRNA3 locus (Prusty et al., 2018a), implying lncRNA3 may be involved in HHV-6A reactivation.\n\nIn conclusion, we provide a comprehensive annotation of HHV-6 transcripts and ORFs and highlight conserved translation patterns and non-coding RNAs that may have central shared functions in all betaherpesviruses.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Strain, strain background (HHV-6A)</td>\n      <td>GS</td>\n      <td>NIH AIDS</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (HHV-6B)</td>\n      <td>Z29</td>\n      <td>NIH AIDS</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Cell line (Homo-sapiens)</td>\n      <td>HSB-2</td>\n      <td>NIH AIDS, Electro-Nucleonics, Inc (Barre-Sinoussi et al., 1983)</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Cell line (Homo-sapiens)</td>\n      <td>Molt-3</td>\n      <td>NIH AIDS</td>\n      <td>ATCC CRL1552</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>lncRNA3-6A F</td>\n      <td>This paper</td>\n      <td>qPCR primers</td>\n      <td>AAAAGGACAAGAGCAGCCGC</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>lncRNA3-6A R</td>\n      <td>This paper</td>\n      <td>qPCR primers</td>\n      <td>ACTCGTATCACCTACCTCTCTCTAC</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>lncRNA3-6A F</td>\n      <td>This paper</td>\n      <td>qPCR primers</td>\n      <td>GGTATCGGGGTAAGAATAAGATGACG</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>lncRNA3-6A R</td>\n      <td>This paper</td>\n      <td>qPCR primers</td>\n      <td>AAAAGGACAAGAGCAGCCGC</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>lncRNA2-6B F</td>\n      <td>This paper</td>\n      <td>qPCR primers</td>\n      <td>CAAAACGGTCTCACTGCTCC</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>lncRNA2-6B R</td>\n      <td>This paper</td>\n      <td>qPCR primers</td>\n      <td>TCTATAAAGTGCCGTGAGTGC</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>lncRNA2-6A F</td>\n      <td>This paper</td>\n      <td>qPCR primers</td>\n      <td>CGACAAAACAAAATAGTCCCACT</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>lncRNA2-6A R</td>\n      <td>This paper</td>\n      <td>qPCR primers</td>\n      <td>ATGGAAAAGGTGGTCGTGGA</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>U21-6B F</td>\n      <td>This paper</td>\n      <td>qPCR primers</td>\n      <td>CCGCACCCATGAACATAAGG</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>U21-6B R</td>\n      <td>This paper</td>\n      <td>qPCR primers</td>\n      <td>ATGATGTGACGTGGGGACTT</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>U21-6A F</td>\n      <td>This paper</td>\n      <td>qPCR primers</td>\n      <td>CCAGCCACCTAGAGAACGAA</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>U21-6A R</td>\n      <td>This paper</td>\n      <td>qPCR primers</td>\n      <td>TTGGGCTGAACTCTCGACAT</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>18 S F</td>\n      <td>This paper</td>\n      <td>qPCR primers</td>\n      <td>CTCAACACGGGAAACCTCAC</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>18 S R</td>\n      <td>This paper</td>\n      <td>qPCR primers</td>\n      <td>CGCTCCACCAACTAAGAACG</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>probe 1 F</td>\n      <td>This paper</td>\n      <td>Northern blot probe template primers</td>\n      <td>GTAAGATTTAACCTATTTTGCAT</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>probe 1 R</td>\n      <td>This paper</td>\n      <td>Northern blot probe template primers</td>\n      <td>TAATACGACTCACTATAGGGTGA TGACAATATAGAAGATGG</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>probe 2 F</td>\n      <td>This paper</td>\n      <td>Northern blot probe template primers</td>\n      <td>GAAAAGTCATCAGAAAAGTCATCAGAA</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>probe 2 R</td>\n      <td>This paper</td>\n      <td>Northern blot probe template primers</td>\n      <td>TAATACGACTCACTATAGGG TCA ACTGTTTTGTGCCCAAC</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>probe 3 F</td>\n      <td>This paper</td>\n      <td>Northern blot probe template primers</td>\n      <td>TATTTAGTTCACATTATAAGGACCT</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>probe 3 R</td>\n      <td>This paper</td>\n      <td>Northern blot probe template primers</td>\n      <td>TAATACGACTCACTATAGGGCT GCAAAAACAAATGAAAGTCT</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Bowtie v1.1.2</td>\n      <td>(Langmead et al., 2009)</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Morpheus</td>\n      <td>https://software.broadinstitute.org/morpheus</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>TopHat v2.1.1</td>\n      <td>(Kim et al., 2013; Trapnell et al., 2009)</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>STAR v2.5.3a</td>\n      <td>(Dobin et al., 2013)</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>R 3.6.0</td>\n      <td>(R Development Core Team, 2019; Wickham, 2016)</td>\n      <td></td>\n      <td></td>\n    </tr>\n  </tbody>\n</table>\n\n### Cell lines and virus strains\n\nHSB-2 Cells from Electro-Nucleonics, Inc (Barre-Sinoussi et al., 1983) and Molt-3 cells (ATCC CRL1552) were maintained at 37\u00b0C in 5% (vol/vol) CO2, in RPMI 1650 medium (Biological Industries) supplemented with 10% heat-inactivated fetal bovine serum (Life Technologies), 2 mM L-glutamine (Biological Industries), 1 mM sodium pyruvate, 0.1 mg/mL streptomycin and 100 U/mL penicillin (Biological Industries). Cell line identity was authenticated by confirming their morphology and growth rate corresponded to source description. All cells were tested and found negative for Mycoplasma.\n\nHHV-6A strain GS and HHV-6B strain Z29 were maintained in HSB2 and Molt-3 cells, respectively. For viral propagation, infected cells were added to uninfected cells at a ratio of 1:10 every 3 or 4 days. All viruses and cell lines were obtained from the NIH AIDS reagent program, Division of AIDS, NIAID, NIH.\n\n### Preparation of ribosome profiling and RNA sequencing samples\n\nSamples were prepared by co-incubating about 7 million cells of either HSB-2 or Molt-3 at a density of 1\u20131.5 M cells per mL with cells infected with HHV-6A and HHV-6B, respectively, at a 1:5 ratio, for 72 hr.\n\nFor RNA-seq, cells were harvested with Tri-Reagent (Sigma-Aldrich), total RNA was extracted, and poly-A selection was performed using Dynabeads mRNA DIRECT Purification Kit (Invitrogen). For Ribo-seq libraries, cells were treated with either 50 \u00b5M lactimidomycin (LTM) for 30 min or 2 \u00b5g/mL Harringtonine (Harr) for 5 min, for translation initiation libraries (LTM and Harr libraries correspondingly), or left untreated for the translation elongation libraries (cycloheximide [CHX] library). All three samples were subsequently treated with 100 \u00b5g/mL CHX for 1 min. Cells were placed on ice immediately after treatment, centrifuged and washed twice with PBS containing 100 \u00b5g/mL CHX. Subsequent lysis, Ribo-seq and RNA-seq library generation were performed as previously described (Ingolia et al., 2011).\n\nFor HHV-6B infection kinetics, virus containing supernatant was collected from Molt-3 cells infected for four days. Six samples of 250,000 Molt-3 cells were incubated in 50 \u00b5L of the viral supernatant each, for 30 min at 4\u00b0C and then for 45 min at 37\u00b0C. After infection, the cells were incubated in RPMI at a cell density of 1 million per 1.5 mL. Cells were harvested at 5, 24 and 72 hr post infection, and CHX and RNA-seq libraries were generated as described above. For total RNA sequencing without poly-A selection, total RNA from HHV-6B infected Molt-3 cells and HCMV infected HFFs at 72hpi was extracted as described and libraries were created using SENSE Total RNA-Seq Library Prep Kit (Lexogen). Prepared libraries were sequenced on the illumina NextSeq 500 with at least 61nt single-end reads.\n\n### Northern blot analysis\n\nTotal RNA was extracted from Molt-3 cells infected with HHV-6B for 72 hr as described above. Northern blot was performed using the NorthernMax kit (Ambion), mostly according to manufacturer\u2019s instructions. In short, 5 \u00b5g of total RNA was run on a 1% denaturing agarose gel. After RNA transfer from the agarose gel onto the BrightStar nylon membrane (Ambion), it was crosslinked to the membrane using UV radiation. Both pre-hybridization and hybridization steps were performed over-night at 68\u00b0C and a mix of three different RNA probes (0.1 nM each) was used to hybridize with the target RNA. Subsequently, the membrane was washed and then incubated in blocking buffer (Odyssey Blocking Buffer PBS (Licor) containing 0.5% SDS) for 30 min at room temperature. Next, the membrane was incubated with Alexa Fluor 647 Streptavidin (Biolegend) in blocking buffer in a dilution of 1:10 000. The membrane was washed with PBST and analyzed using Odyssey CLx (Licor). For size estimation of the transcript of interest, the 28S and 18S rRNA bands were used.\n\nFor probe generation, the lncRNA3 intron sequence was amplified from cDNA using PCR reactions with following primers:\n\nIn vitro transcription was performed using the MegaScript Kit (Ambion) according to manufacturer\u2019s instructions.\n\n### Sequence alignment, normalization, metagene analysis and clustering and visualization\n\nSequencing reads were aligned as previously described (Tirosh et al., 2015). Briefly, linker and poly-A sequences were removed and the remaining reads were aligned to the human and the viral reference genomes (HHV-6A KC465951.1, HHV-6B AF157706.1) using Bowtie v1.1.2 (Langmead et al., 2009) with maximum two mismatches per read. Reads that were not aligned to the genome were aligned to the transcriptome, taking into account all the new identified splice junctions. Reads aligned to multiple locations were discarded, therefore, genomic repeat regions were not included in the analysis. Sequencing data was visualized using IGV integrative genomics viewer (Robinson et al., 2011).\n\nFor the metagene analysis only genes with more than 100 reads were used. Each gene was normalized to its maximum signal and each position was normalized to the number of genes contributing to the position.\n\nFor the time-course clustering, footprints counts of one sample from each time point of HHV-6B infected cells were normalized to units of reads per million (RPM) in order to normalize for sequencing depth. To avoid noise arising from low viral gene expression at 5hpi, ORFs with less than six reads at this time point were considered to have zero reads. Morpheus (https://software.broadinstitute.org/morpheus) was used to perform hierarchical gene clustering with one minus Pearson correlation as metric and complete linkage method.\n\nFor comparing transcript expression level, mRNA and footprint counts were normalized to units of reads per kilobase per million (RPKM) in order to normalize for gene length and for sequencing depth.\n\nSingle nucleotide mutations in RNA-seq were identified (Mizrahi et al., 2018) and positions with at least 10 reads that had a different base than the reference in 95% or more of the reads are listed in Supplementary files 1 and 2. Lists of deletions and insertions that scored 20 or above in the TopHat output are also in Supplementary files 1 and 2.\n\n### Identification of splice junctions\n\nRNA-seq results were analyzed using TopHat v2.1.1 (Kim et al., 2013; Trapnell et al., 2009) with no coverage search, a minimum intron size of 15 bp, and STAR v2.5.3a (Dobin et al., 2013) with default parameters. Splice junctions were chosen for the final annotations if they score 20 or higher in both STAR and TopHat, and if the intron length was less than 3.5 Kb (to filter out artificial splice junctions between the viral repeat regions). We also included splice junctions that were detected and were previously known but did not pass the threshold (five junctions in HHV-6A and five in HHV-6B). Two additional previously annotated HHV-6B splice junctions that were not detected were added to the final list.\n\n### Prediction of translation initiation sites\n\nTranslation initiation sites were predicted as previously described (Ingolia et al., 2011; Stern-Ginossar et al., 2012). Briefly, a support vector machine model was trained to identify initiation sites based on normalized footprint profiles of the CHX, Harr and LTM samples (one sample of each type for each virus). A positive example set was composed of previously annotated translation initiation sites that were also well translated in our data (at least seven read counts in the normalized Harr peak, 39/58 ORFs for HHV-6A and 31/47 for HHV-6B). 10 negative examples were computed for each positive example. 2/3 of the combined set of positive and negative examples was used as a training set for the prediction model. The model was trained using a radial basis kernel, \u03b3\u00a0=\u00a02, C\u00a0=\u00a050, relative positive example weighing of 1.0, and without iterative removal and retraining, and used to produce a score for each potential translation initiation site based on their CHX, Harr and LTM footprint profiles. Initiation sites that scored less than 0.5 were discarded. The remaining 1/3 of the example set was used for cross-validation, which showed 37% and 25% false-negative rate, and 2% and 5% false-positive rate for HHV-6A and HHV-6B respectively. The trained classifier was then applied to all plus and minus strand codons that had at least seven normalized Harr read counts. ORFs were then defined by extending each initiating codon to the next in-frame stop codon, and incorporating any intervening splice junctions. Previously annotated ORFs that were not recognized by the trained model but presented observable translation in manual inspection were added to the final ORF list (Supplementary file 3).\n\nComparison of uORF and iORF conservation and kinetics uORFs were curated by selecting all ORFs of the predicted ORFs initiating in the 200 bp region upstream of each previously annotated ORF that are shorter than 200 bp. iORFs were curated by selecting ORFs longer than 20aa initiating within each previously annotated ORF. The total number of iORFs and uORFs for each main ORF was summed.\n\nThe comparison of HHV-6 annotations to HCMV was based on previously published Ribo-seq, RNA-seq and annotations of HCMV merlin strain (Stern-Ginossar et al., 2012; Tirosh et al., 2015). Text-book published lists were used to identify HHV-6 and HCMV homolog ORFs, as well as to determine the kinetic classes for previously annotated HHV-6 ORFs (Yamanishi et al., 2013). HCMV kinetic class annotations were taken from a proteomics-based publication (Weekes et al., 2014). Data for murine CMV lncRNA7.2 expression is from Tai-Schmiedel et al. unpublished.\n\nAll plot and statistical tests were done using R 3.6.0 (R Development Core Team, 2019; Wickham, 2016) on Rstudio (RStudio Team, 2015).\n\n### Real-time PCR\n\nTotal RNA was isolated from a duplicate of 500,000 cells infected for 72 hr using Tri-Reagent (Sigma-Aldrich). Reverse transcription was performed with qScript Flex cDNA kit (Quantabio), using either oligo-dT or random primers, as described for each sample. Real-time PCR was performed using the SYBR Green master-mix (ABI) on a real-time PCR system StepOnePlus (life technologies), with the following primers:\n\nTechnical triplicate results in CT were averaged and normalized to the U21 for sample virus and to oligo-dT cDNA for each duplicate.\n",
+      "created_at": "2025-12-02T14:36:40.328734Z"
+    },
+    {
+      "id": "eecd8e97-436e-4491-bf49-ec322f1172a9",
+      "submission_id": "63129df5-8cec-4069-bbe7-1feb5299e307",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Melanie M Brinkmann, Technische Universit\u00e4t Braunschweig Germany\n\nReviewers:\n- Bhupesh K Prusty, University of Wuerzburg Germany\n\n## Review text\n\nDOI: [10.7554/eLife.50960.sa1](https://doi.org/10.7554/eLife.50960.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nAcceptance summary:\n\nThis article greatly improves our understanding of the human betaherpesvirus subfamily of the large family of herpesviruses by mapping the genomes of Human Herpesviruses 6A and 6B in great detail. By using ribosome profiling and RNAseq, several new open reading frames (ORFs) were identified, and comparison of the data with human cytomegalovirus showed that a number of these ORFs are conserved between these two betaherpesviruses. In addition, three highly abundant long non-coding RNAs (lncRNAs) have been identified. This work provides an important basis for future work on these herpesviruses.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Comprehensive annotations of human herpesvirus 6A and 6B genomes reveal novel and conserved genomic features\" for consideration by eLife. Your article has been reviewed by three peer reviewers, one of whom is a member of our Board of Reviewing Editors, and the evaluation has been overseen by P\u00e4ivi Ojala as the Senior Editor. The following individual involved in review of your submission has agreed to reveal their identity: Bhupesh K Prusty (Reviewer #3).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nIn the manuscript \"Comprehensive annotations of Human Herpesvirus 6A and 6B genomes reveal novel and conserved genomic features\", Finkel et al. employed an integrative transcription and translation start site profiling approach to comprehensively characterize the gene products of HHV-6A and HHV-6B in HSB2 and MOLT-3 cells, respectively. They identified hundreds of novel viral transcripts and ORFs, including many uORFs and iORFs. The authors observed conserved patterns of uORF translation across betaherpesviruses. Supporting the role of alternate transcription start sites observed in other herpesviruses, they also observed prevalent non-canonical translation start site usage in both HHV-6A and HHV-6B. Most interestingly, they identified three highly expressed viral large non-coding RNAs that presumably reflect conserved viral large non-coding RNAs known to be expressed by other betaherpesviruses. One of these generated a non-polyadenylated stable intron that seems to be conserved among betaherpesviruses. In summary, this is first systematic study that comprehensively analyses viral gene expression in both HHV-6A and HHV-6B as well as its conservation in HCMV. The respective data will be invaluable not only for the entire HHV-6 community but for the herpesvirus field in general.\n\nEssential revisions:\n\n1) In the manuscript, the authors emphasize the comprehensive annotation of human herpesvirus 6A and 6B. Unfortunately, they do not provide a format the research community could use. They should provide a fully annotated GenBank file based on their exciting data (incl. new genes, splice variant and SNPs) that the community can use and cite.\n\n2) The authors used lactimidomycin (LTM) and Harringtonine (Harr) treatments for mapping translation initiation. In Figure 1 and several other panels they show the LTM data; however, for many other panels they left it out. Was the LTM data not consistent with the Harr data in these analyses? If the LTM data was comparable to Harr, the authors should include this line as done for the other panels. If not, the authors should discuss the differences between the two treatments.\n\n3) The authors should include a figure that depicts the signal-to-noise ratio of their Ribo-seq data (triplet-shifts of the translating ribosomes (cumulative reads in the three different frames in relation to the transcription start site)).\n\n4) The authors identified three novel large non-coding RNAs, two of which are heavily spliced. The transcription start site profiling RNA-seq data are very convincing regarding the existence of these viral lncRNAs. As these lncRNAs appear to be highly expressed, it should be relatively straight forward to confirm them by Northern Blot. In particular, this would reveal alternatively spliced isoforms which may differ in function. Moreover, this would provide a much more solid basis of these fascinating novel gene products for future studies.\n\n5) The continuous increase in viral gene expression throughout lytic infection results in a much broader range of transcripts (transcription start sites) late in infection. This will result in an increased number of uORFs and iORFs late in infection. It is interesting that viral late genes tend to have more uORFs than early genes. How reliable is the current annotation of viral early and late genes? The authors imply that uORFs and iORFs originate from alterations in the fidelity of the ribosomes at late times of infection. However, early viral mRNAs are still transcribed, present and translated at late times of infection. Therefore, it is unclear why viral late genes should be preferentially affected regarding translation of viral uORFs. Could the observed correlation simply result from a higher level of gene expression of the viral late genes compared to viral early genes (and thus a higher sensitivity for picking up uORF translation)? The authors should assess the impact of gene expression levels on their ability to detect viral uORFs and how this relates to their observation that uORFs are more prevalent in viral late genes.\n\n6) Similarly, iORFs will become more prevalent throughout lytic infection due to the increase in viral gene expression and the increase in the number of different viral transcripts present within the infected cells at late times of infection. While HHV6 iORFs may result from a failure of translation initiation at the upstream AUG, it is equally if not more likely that they originate from alternative transcripts that only initiate downstream of the respective AUG. This was most prevalent for HSV-1. While the RNA-seq approach the authors employed provides a strong transcription start site enrichment, it is not nearly as sensitive (transcription start site enrichment) as other approaches, e.g. dRNA-seq. Therefore, the authors are likely to have missed a decent number of transcription start sites that presumably explain translation of the viral iORFs they observed. This is particularly likely for highly expressed genes, which will mask embedded alternative transcription start sites. The authors should carefully rephrase their discussion to also consider more promiscuous transcription initiation (rather than translational fidelity) at late times of infection explaining novel iORFs and uORFs.\n\n7) The non-polyadenylated lncRNA3 is particularly interesting as a small non-coding RNA (U77) has previously been reported to be expressed from this region by Nukui, Mori and Murphy, 2015. Moreover, Prusty et al., 2018a, also demonstrated induction of viral transcription from this region immediately after viral reactivation. The authors may want to discuss their results in the light of these previous reports.\n\n8) Please provide a figure depicting the use of non-canonical start sites during the 3 different stages of infection for HHV-6B.\n\n9) Please provide more details how sequencing data were processed from the viral repeat regions. Currently, no data is shown from ORFs transcribed from the DR regions.\n",
+      "created_at": "2025-12-02T14:36:40.328734Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T14:36:40.328734Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T14:36:40.328734Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "5307d03b-4477-4b37-9345-aafc58ab1991",
+      "content_id": "843badaf-4537-4923-aa68-988028874ed8",
+      "claim_id": "C1",
+      "claim": "HHV-6A and HHV-6B are ubiquitous betaherpesviruses, infecting the majority of the human population.",
+      "claim_type": "EXPLICIT",
+      "source": "Human herpesvirus-6 (HHV-6) A and B are ubiquitous betaherpesviruses, infecting the majority of the human population.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and supported by citations in the introduction regarding HHV-6B infecting more than 90% of the human population (Zerr et al., 2005).",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:36:40.328734Z"
+    },
+    {
+      "id": "93703fcc-818b-4bc8-9316-cbd9aac214dd",
+      "content_id": "843badaf-4537-4923-aa68-988028874ed8",
+      "claim_id": "C2",
+      "claim": "HHV-6A and HHV-6B encompass large genomes.",
+      "claim_type": "EXPLICIT",
+      "source": "They encompass large genomes and our understanding of their protein coding potential is far from complete.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript states the genomes are 160 kb in length (Lindquester and Pellett, 1991; Martin et al., 1991).",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:36:40.328734Z"
+    },
+    {
+      "id": "c800de72-fb96-4709-aee4-68e966c531fc",
+      "content_id": "843badaf-4537-4923-aa68-988028874ed8",
+      "claim_id": "C3",
+      "claim": "The study identified hundreds of new open reading frames (ORFs) in HHV-6A and HHV-6B, including upstream ORFs (uORFs) and internal ORFs (iORFs).",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we employ ribosome-profiling and systematic transcript-analysis to experimentally define HHV-6 translation products. We identify hundreds of new open reading frames (ORFs), including upstream ORFs (uORFs) and internal ORFs (iORFs), generating a complete unbiased atlas of HHV-6 proteome.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract states this finding, and it is supported by data presented in Figure 6B showing 268 novel ORFs in HHV-6A and 216 in HHV-6B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:36:40.328734Z"
+    },
+    {
+      "id": "f2595957-bc17-43e9-81c2-b26e907a62e1",
+      "content_id": "843badaf-4537-4923-aa68-988028874ed8",
+      "claim_id": "C4",
+      "claim": "uORFs are enriched in late viral genes of betaherpesviruses.",
+      "claim_type": "EXPLICIT",
+      "source": "We show uORFs are enriched in late viral genes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and supported by data in Figure 7D showing enrichment of uORFs in late genes for HHV-6A, HHV-6B, and HCMV (p-value < 0.01).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:36:40.328734Z"
+    },
+    {
+      "id": "aaa13fe2-c7e3-4f40-ac3f-50afaea56cfb",
+      "content_id": "843badaf-4537-4923-aa68-988028874ed8",
+      "claim_id": "C5",
+      "claim": "The study identified three highly abundant HHV-6 encoded long non-coding RNAs.",
+      "claim_type": "EXPLICIT",
+      "source": "We identified three highly abundant HHV-6 encoded long non-coding RNAs, one of which generates a non-polyadenylated stable intron appearing to be a conserved feature of betaherpesviruses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and supported by data in Figures 4 and 5 showing the three lncRNAs and their expression levels.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:36:40.328734Z"
+    },
+    {
+      "id": "84f900fe-55cd-42a5-b44e-136e9de1459d",
+      "content_id": "843badaf-4537-4923-aa68-988028874ed8",
+      "claim_id": "C6",
+      "claim": "One HHV-6 lncRNA generates a non-polyadenylated stable intron that is a conserved feature of betaherpesviruses.",
+      "claim_type": "EXPLICIT",
+      "source": "We identified three highly abundant HHV-6 encoded long non-coding RNAs, one of which generates a non-polyadenylated stable intron appearing to be a conserved feature of betaherpesviruses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and supported by data in Figure 5 showing the stable intron of lncRNA3 and its conservation in HCMV and MCMV (Figure 4\u2014figure supplement 1B).",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:36:40.328734Z"
+    },
+    {
+      "id": "018e75ce-ce2b-4ab9-ac47-45a229cb8410",
+      "content_id": "843badaf-4537-4923-aa68-988028874ed8",
+      "claim_id": "C7",
+      "claim": "HHV-6A was suspected to associate with neurodegenerative disease such as Alzheimer's disease.",
+      "claim_type": "EXPLICIT",
+      "source": "While HHV-6A remains poorly epidemiologically characterized, it was suspected to associate with neurodegenerative disease such as Alzheimer's disease (Allnutt et al., under review; Braun et al., 1997; Eimer et al., 2018; Leibovitch and Jacobson, 2014; Prusty et al., 2018b; Readhead et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to published work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:36:40.328734Z"
+    },
+    {
+      "id": "ad7ce8f1-e393-48aa-8619-32f95d9f0359",
+      "content_id": "843badaf-4537-4923-aa68-988028874ed8",
+      "claim_id": "C8",
+      "claim": "HHV-6B infects more than 90% of the human population.",
+      "claim_type": "EXPLICIT",
+      "source": "HHV-6B is known to infect more than 90% of the human population (Zerr et al., 2005)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Zerr et al., 2005.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:36:40.328734Z"
+    },
+    {
+      "id": "29402aaa-7e11-416a-8f37-65e2ad8802e1",
+      "content_id": "843badaf-4537-4923-aa68-988028874ed8",
+      "claim_id": "C9",
+      "claim": "HHV-6B is the causative agent of Roseola Infantum.",
+      "claim_type": "EXPLICIT",
+      "source": "HHV-6B is known to infect more than 90% of the human population (Zerr et al., 2005) and was found to be the causative agent of Roseola Infantum, leading to febrile seizures in more than 10% of acute infections (De Bolle et al., 2005; Hall et al., 1994; Yamanishi et al., 1988).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to published work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:36:40.328734Z"
+    },
+    {
+      "id": "7cfd9e09-375a-46ef-8c76-d1a750b37b38",
+      "content_id": "843badaf-4537-4923-aa68-988028874ed8",
+      "claim_id": "C10",
+      "claim": "HHV-6B causes febrile seizures in more than 10% of acute infections.",
+      "claim_type": "EXPLICIT",
+      "source": "HHV-6B is known to infect more than 90% of the human population (Zerr et al., 2005) and was found to be the causative agent of Roseola Infantum, leading to febrile seizures in more than 10% of acute infections (De Bolle et al., 2005; Hall et al., 1994; Yamanishi et al., 1988).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to published work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:36:40.328734Z"
+    },
+    {
+      "id": "7c42cf4d-7c53-4970-8118-52e6567136be",
+      "content_id": "843badaf-4537-4923-aa68-988028874ed8",
+      "claim_id": "C11",
+      "claim": "HHV-6A and HHV-6B establish lifelong latent infection in their hosts.",
+      "claim_type": "EXPLICIT",
+      "source": "Both HHV-6A and HHV-6B, like all herpesviruses, establish a lifelong latent infection in their hosts (Kondo et al., 1991; Luppi et al., 1999).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations and is consistent with established knowledge about herpesviruses.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:36:40.328734Z"
+    },
+    {
+      "id": "3c8c8017-740a-40b6-b8f8-73fe6338c1e4",
+      "content_id": "843badaf-4537-4923-aa68-988028874ed8",
+      "claim_id": "C12",
+      "claim": "HHV-6 latency is established in multiple cell types, where the viral genome is integrated into host chromosomes between telomeres and subtelomeres.",
+      "claim_type": "EXPLICIT",
+      "source": "HHV-6 latency is established in multiple cell types, where the viral genome is integrated into host chromosomes between telomeres and subtelomeres (Arbuckle et al., 2013; Braun et al., 1997).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to published work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:36:40.328734Z"
+    },
+    {
+      "id": "5682bf8d-575e-445a-a49b-4292e86c6c0c",
+      "content_id": "843badaf-4537-4923-aa68-988028874ed8",
+      "claim_id": "C13",
+      "claim": "In approximately 1% of the population worldwide HHV-6 is integrated in every cell in the body and inherited due to integration of the viral genome in germline cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Remarkably, in approximately 1% of the population worldwide HHV-6 is integrated in every cell in the body, and inherited, due to integration of the viral genome in germline cells (Clark, 2016; Pellett et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to published work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:36:40.328734Z"
+    },
+    {
+      "id": "004bf621-d1cf-460b-b967-fca179f6442f",
+      "content_id": "843badaf-4537-4923-aa68-988028874ed8",
+      "claim_id": "C14",
+      "claim": "HHV-6 reactivation is a common cause of encephalitis.",
+      "claim_type": "EXPLICIT",
+      "source": "HHV-6 reactivation is a common cause of encephalitis, and has been associated with several diseases including multiple sclerosis, hepatitis, pneumonitis and graft-versus-host disease (Braun et al., 1997; Caselli and Di Luca, 2007; De Bolle et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to published work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:36:40.328734Z"
+    },
+    {
+      "id": "e6b5d11c-c30d-4202-bf72-db90eee0cb5e",
+      "content_id": "843badaf-4537-4923-aa68-988028874ed8",
+      "claim_id": "C15",
+      "claim": "HHV-6 reactivation has been associated with multiple sclerosis, hepatitis, pneumonitis and graft-versus-host disease.",
+      "claim_type": "EXPLICIT",
+      "source": "HHV-6 reactivation is a common cause of encephalitis, and has been associated with several diseases including multiple sclerosis, hepatitis, pneumonitis and graft-versus-host disease (Braun et al., 1997; Caselli and Di Luca, 2007; De Bolle et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to published work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:36:40.328734Z"
+    },
+    {
+      "id": "daa6b6b7-b276-44de-8b80-4922f1bc729f",
+      "content_id": "843badaf-4537-4923-aa68-988028874ed8",
+      "claim_id": "C16",
+      "claim": "The genomes of HHV-6A and HHV-6B consist of large linear double stranded DNA molecules, 160 kb in length, containing a unique segment flanked by direct repeats.",
+      "claim_type": "EXPLICIT",
+      "source": "The genomes of HHV-6A and HHV-6B, similar to those of other herpesviruses, consist of large linear double stranded DNA molecules, 160 kb in length, containing a unique segment flanked by direct repeats (Lindquester and Pellett, 1991; Martin et al., 1991).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to published work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:36:40.328734Z"
+    },
+    {
+      "id": "0a73418b-5761-488f-bde2-4d6c40e3df53",
+      "content_id": "843badaf-4537-4923-aa68-988028874ed8",
+      "claim_id": "C17",
+      "claim": "Traditional annotation of HHV-6 coding capacity has relied on ORF-based analyses using canonical translational start and stop sequences and arbitrary size restriction, resulting in a list of around 100 ORFs for each virus.",
+      "claim_type": "EXPLICIT",
+      "source": "The annotation of HHV-6 coding capacity has traditionally relied on open reading frame (ORF)-based analyses using canonical translational start and stop sequences and arbitrary size restriction to demarcate putative protein coding genes, resulting in a list of around 100 ORFs for each virus (Dominguez et al., 1999; Gompels et al., 1995; Gravel et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to published annotations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:36:40.328734Z"
+    },
+    {
+      "id": "6181f24a-2044-4f3d-b579-464e197ba0ef",
+      "content_id": "843badaf-4537-4923-aa68-988028874ed8",
+      "claim_id": "C18",
+      "claim": "Genome-wide analysis of herpesviruses using RNA sequencing revealed very complex transcriptomes.",
+      "claim_type": "EXPLICIT",
+      "source": "In recent years, genome wide-analysis of herpesviruses using short RNA sequencing (RNA-seq) reads, and recently also direct and long-read RNA-seq revealed very complex transcriptomes (Bal\u00e1zs et al., 2018; Bal\u00e1zs et al., 2017; Depledge et al., 2019; Gatherer et al., 2011; Kara et al., 2019; O'Grady et al., 2019; O'Grady et al., 2016; Tomb\u00e1cz et al., 2017)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to published work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:36:40.328734Z"
+    },
+    {
+      "id": "73726e4d-83c5-4d0b-9756-21ec10b00534",
+      "content_id": "843badaf-4537-4923-aa68-988028874ed8",
+      "claim_id": "C19",
+      "claim": "Genome-wide mapping of translation in herpesviruses revealed hundreds of new viral ORFs.",
+      "claim_type": "EXPLICIT",
+      "source": "In recent years, genome wide-analysis of herpesviruses using short RNA sequencing (RNA-seq) reads, and recently also direct and long-read RNA-seq revealed very complex transcriptomes (Bal\u00e1zs et al., 2018; Bal\u00e1zs et al., 2017; Depledge et al., 2019; Gatherer et al., 2011; Kara et al., 2019; O'Grady et al., 2019; O'Grady et al., 2016; Tomb\u00e1cz et al., 2017), and combined with genome-wide mapping of translation, revealed hundreds of new viral ORFs (Arias et al., 2014; Bencun et al., 2018; Stern-Ginossar et al., 2012; Whisnant et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to published work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:36:40.328734Z"
+    },
+    {
+      "id": "e41ac9c2-6a73-446f-879b-3f658ef13985",
+      "content_id": "843badaf-4537-4923-aa68-988028874ed8",
+      "claim_id": "C20",
+      "claim": "The study applied ribosome profiling and RNA-seq to HSB-2 and Molt-3 cells infected for 72 hr with HHV-6A strain GS and HHV-6B strain Z29, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we employ ribosome-profiling and systematic transcript-analysis to experimentally define HHV-6 translation products.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is described in the methods and shown in Figure 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:36:40.328734Z"
+    },
+    {
+      "id": "c58189ed-286f-4bf8-a04e-11ddc54dee3f",
+      "content_id": "843badaf-4537-4923-aa68-988028874ed8",
+      "claim_id": "C21",
+      "claim": "The study prepared three different ribosome-profiling libraries for each virus using lactimidomycin (LTM), harringtonine (Harr), and cycloheximide (CHX).",
+      "claim_type": "EXPLICIT",
+      "source": "For each virus we mapped genome-wide translation events by preparing three different ribosome-profiling libraries (Ribo-seq). Two Ribo-seq libraries facilitate mapping of translation initiation sites, by treating cells with lactimidomycin (LTM) or harringtonine (Harr), drugs that inhibit translation initiation in distinct mechanisms and lead to accumulation of ribosomes at translation initiation sites (Figure 1A and Ingolia et al., 2011; Lee et al., 2012). The third Ribo-seq library was prepared from cells treated with the translation elongation inhibitor cycloheximide (CHX), and gives a snap-shot of actively translating ribosomes across the body of the translated ORF (Figure 1A).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is described in the methods and shown in Figure 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:36:40.328734Z"
+    },
+    {
+      "id": "9dcb1353-66cf-40ba-8e37-d5916910c709",
+      "content_id": "843badaf-4537-4923-aa68-988028874ed8",
+      "claim_id": "C22",
+      "claim": "LTM and Harr treatments lead to accumulation of ribosomes at translation initiation sites.",
+      "claim_type": "EXPLICIT",
+      "source": "Two Ribo-seq libraries facilitate mapping of translation initiation sites, by treating cells with lactimidomycin (LTM) or harringtonine (Harr), drugs that inhibit translation initiation in distinct mechanisms and lead to accumulation of ribosomes at translation initiation sites (Figure 1A and Ingolia et al., 2011; Lee et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations and demonstrated in the data (Figure 1A).",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:36:40.328734Z"
+    },
+    {
+      "id": "58c657cd-3303-4d26-bba5-ccaf8747e8a6",
+      "content_id": "843badaf-4537-4923-aa68-988028874ed8",
+      "claim_id": "C23",
+      "claim": "CHX treatment gives a snap-shot of actively translating ribosomes across the body of the translated ORF.",
+      "claim_type": "EXPLICIT",
+      "source": "The third Ribo-seq library was prepared from cells treated with the translation elongation inhibitor cycloheximide (CHX), and gives a snap-shot of actively translating ribosomes across the body of the translated ORF (Figure 1A).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the data shown in Figure 1A and is consistent with established knowledge about CHX.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:36:40.328734Z"
+    },
+    {
+      "id": "128436bc-5234-43f3-a9af-471f7840fddb",
+      "content_id": "843badaf-4537-4923-aa68-988028874ed8",
+      "claim_id": "C24",
+      "claim": "The RNA-seq protocol used allows identification of transcription start sites (TSSs) due to a strong overrepresentation of fragments that start at the 5' end of transcripts.",
+      "claim_type": "EXPLICIT",
+      "source": "In parallel, we used a tailored RNA-sequencing (RNA-seq) protocol which on top of quantification of RNA levels allows identification of transcription start sites (TSSs) due to a strong overrepresentation of fragments that start at the 5' end of transcripts, as well as detection of polyadenylation sites (Figure 1A and Stern-Ginossar et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation and demonstrated in the data.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:36:40.328734Z"
+    },
+    {
+      "id": "50648618-bfa3-459f-adbd-21605b3032cb",
+      "content_id": "843badaf-4537-4923-aa68-988028874ed8",
+      "claim_id": "C25",
+      "claim": "The RNA-seq protocol used allows detection of polyadenylation sites.",
+      "claim_type": "EXPLICIT",
+      "source": "In parallel, we used a tailored RNA-sequencing (RNA-seq) protocol which on top of quantification of RNA levels allows identification of transcription start sites (TSSs) due to a strong overrepresentation of fragments that start at the 5' end of transcripts, as well as detection of polyadenylation sites (Figure 1A and Stern-Ginossar et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation and demonstrated in the data.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:36:40.328734Z"
+    },
+    {
+      "id": "e04a0ed1-9939-4c3e-9455-43fa62bc4a72",
+      "content_id": "843badaf-4537-4923-aa68-988028874ed8",
+      "claim_id": "C26",
+      "claim": "The study found many misannotations of previously annotated ORFs (10 in HHV-6A and 11 in HHV-6B).",
+      "claim_type": "EXPLICIT",
+      "source": "Comparing to previously annotated ORFs, we found many misannotations (10 and 11, in HHV-6A and HHV-6B respectively)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on comparison of Ribo-seq data to previous annotations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:36:40.328734Z"
+    },
+    {
+      "id": "27dc4d59-6a7a-4fa2-9163-2a1de06f7404",
+      "content_id": "843badaf-4537-4923-aa68-988028874ed8",
+      "claim_id": "C27",
+      "claim": "The study found novel un-annotated ORFs (278 in HHV-6A and 227 in HHV-6B).",
+      "claim_type": "EXPLICIT",
+      "source": "Comparing to previously annotated ORFs, we found many misannotations (10 and 11, in HHV-6A and HHV-6B respectively) and novel un-annotated ORFs (278 and 227, in HHV-6A and HHV-6B respectively).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on Ribo-seq data analysis and shown in Figure 6B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:36:40.328734Z"
+    },
+    {
+      "id": "0a287322-93f0-4115-82c1-b7cd62e88296",
+      "content_id": "843badaf-4537-4923-aa68-988028874ed8",
+      "claim_id": "C28",
+      "claim": "Many of the new ORFs are conserved between HHV-6A and HHV-6B.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, many of these new ORFs are conserved between HHV-6A and HHV-6B, validating our approach, and emphasizing the high similarity between these two viruses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated in Figure 8A showing correlation between the number of iORFs and uORFs in homolog ORFs.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:36:40.328734Z"
+    },
+    {
+      "id": "6dc57370-54c2-4782-acd5-d8de9fd799ca",
+      "content_id": "843badaf-4537-4923-aa68-988028874ed8",
+      "claim_id": "C29",
+      "claim": "Translation of the U30 gene initiates at an AUG 411 bp downstream of the previously annotated start in both HHV-6A and HHV-6B, resulting in a 946 amino acid long protein.",
+      "claim_type": "EXPLICIT",
+      "source": "One example of misannotation is the U30 gene, an essential viral gene coding for an inner tegument protein (Nicholas and Martin, 1994). We found translation of this gene to initiate at an AUG 411 bp downstream of the previously annotated start, in both HHV-6A and HHV-6B, resulting in a 946 amino acid (aa) long protein (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on Ribo-seq data shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:36:40.328734Z"
+    },
+    {
+      "id": "8e2d9980-892f-4213-ade6-af94c20ec988",
+      "content_id": "843badaf-4537-4923-aa68-988028874ed8",
+      "claim_id": "C30",
+      "claim": "The new U30 annotations include the C-terminal domain which was shown to interact with the large tegument protein in the HSV-1 homolog.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, the new annotations include the C-terminal domain which was shown to interact with the large tegument protein in the HSV-1 homolog (Richards et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to published work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:36:40.328734Z"
+    },
+    {
+      "id": "95aef356-ae66-49e8-9cbb-fcf9447afb42",
+      "content_id": "843badaf-4537-4923-aa68-988028874ed8",
+      "claim_id": "C31",
+      "claim": "A 32 amino acid upstream overlapping ORF (uoORF) is coded by the U48 transcript, initiates upstream of the U48 canonical ORF and partially overlaps it.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, a short 32 aa ORF was found to initiate upstream of the envelope protein gene U48 (Figure 2B). This ORF partially overlaps the U48 gene, making it an upstream overlapping ORF (uoORF).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on Ribo-seq data shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:36:40.328734Z"
+    },
+    {
+      "id": "b06a855f-c74e-4517-8f19-f5ba79c68a72",
+      "content_id": "843badaf-4537-4923-aa68-988028874ed8",
+      "claim_id": "C32",
+      "claim": "uoORFs are known to have repressive regulatory effects conserved across vertebrates.",
+      "claim_type": "EXPLICIT",
+      "source": "Since uoORFs are known to have repressive regulatory effects conserved across vertebrates (Johnstone et al., 2016), this novel ORF likely negatively regulates the translation of U48.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to published work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:36:40.328734Z"
+    },
+    {
+      "id": "bf352d56-df19-4c96-989c-742f4621cfcb",
+      "content_id": "843badaf-4537-4923-aa68-988028874ed8",
+      "claim_id": "C33",
+      "claim": "The U48 uoORF likely negatively regulates the translation of U48.",
+      "claim_type": "EXPLICIT",
+      "source": "Since uoORFs are known to have repressive regulatory effects conserved across vertebrates (Johnstone et al., 2016), this novel ORF likely negatively regulates the translation of U48.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from established knowledge about uoORFs and the observation of the uoORF in U48.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:36:40.328734Z"
+    },
+    {
+      "id": "93e3d717-dfb2-4d02-974c-229c6a9ff96c",
+      "content_id": "843badaf-4537-4923-aa68-988028874ed8",
+      "claim_id": "C34",
+      "claim": "Translation of two very short (<20 aa) uORFs from the 5'UTR of U36 was found.",
+      "claim_type": "EXPLICIT",
+      "source": "The packaging gene U36 is an example of a gene for which we found translation of two very short (<20 aa) uORFs from its 5'UTR (Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on Ribo-seq data shown in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:36:40.328734Z"
+    },
+    {
+      "id": "527efa1a-4bdb-4a51-b646-3083d52ba35d",
+      "content_id": "843badaf-4537-4923-aa68-988028874ed8",
+      "claim_id": "C35",
+      "claim": "An internal ORF (iORF) initiating out-of-frame inside the coding region of U36 was identified.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, we identified translation of an internal ORF (iORF), initiating out-of-frame, inside the coding region of U36 (Figure 2C), leading to translation of a novel ORF.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on Ribo-seq data shown in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:36:40.328734Z"
+    },
+    {
+      "id": "8ea9a502-67a0-4622-b4ff-4ed2f59e45e3",
+      "content_id": "843badaf-4537-4923-aa68-988028874ed8",
+      "claim_id": "C36",
+      "claim": "Two iORFs were observed in the U84 gene, one out-of-frame and another in-frame starting at an AUG downstream of the U84 start-codon.",
+      "claim_type": "EXPLICIT",
+      "source": "In the U84 gene we observed two iORFs, one of them out-of-frame possibly regulating the downstream ORF, and another in-frame, starting at an AUG downstream of the U84 start-codon and ending in the same stop-codon, resulting in a truncated version of U84 (Figure 2D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on Ribo-seq data shown in Figure 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:36:40.328734Z"
+    },
+    {
+      "id": "da4217e8-4cc9-4be2-bec6-db850e0d693c",
+      "content_id": "843badaf-4537-4923-aa68-988028874ed8",
+      "claim_id": "C37",
+      "claim": "The study detected 24 out of 26 annotated HHV-6A splice junctions and all 24 annotated HHV-6B splice junctions.",
+      "claim_type": "EXPLICIT",
+      "source": "We were able to detect 24 out of 26 annotated HHV-6A splice junctions and all 24 annotated HHV-6B splice junctions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on RNA-seq data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:36:40.328734Z"
+    },
+    {
+      "id": "afd7d39b-8d4a-4360-8b55-5933bf7f5ad7",
+      "content_id": "843badaf-4537-4923-aa68-988028874ed8",
+      "claim_id": "C38",
+      "claim": "The study identified 37 novel splice junctions in HHV-6A and 44 in HHV-6B.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, we identified 37 novel splice junctions in HHV-6A and 44 in HHV-6B (Figure 3B and Figure 3\u2014source data 1 and 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on RNA-seq data analysis shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:36:40.328734Z"
+    },
+    {
+      "id": "8d9b7ffa-356b-4f4b-8545-4f13b58866cf",
+      "content_id": "843badaf-4537-4923-aa68-988028874ed8",
+      "claim_id": "C39",
+      "claim": "Some of the novel splice junctions identified in HHV-6A were recently reported in HHV-6B and are confirmed here for both viruses (U19, U83, and all splice forms of U79).",
+      "claim_type": "EXPLICIT",
+      "source": "Some of the novel splice junctions identified in HHV-6A were recently reported in HHV-6B and are confirmed here for both viruses (U19, U83, and all splice forms of U79, Greninger et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on comparison with a recent publication.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:36:40.328734Z"
+    },
+    {
+      "id": "e5816a42-ea87-4d8a-a819-8c3e55107fb9",
+      "content_id": "843badaf-4537-4923-aa68-988028874ed8",
+      "claim_id": "C40",
+      "claim": "Many of the novel splice junctions seem to belong to one long transcript composed of several short exons separated by long introns, spanning the U42-U57 locus.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, many of the novel splice junctions seem to belong to one long transcript composed of several short exons separated by long introns, spanning the U42-U57 locus (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from the RNA-seq data shown in Figure 3A.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:36:40.328734Z"
+    },
+    {
+      "id": "af24ed43-6b37-4a13-a131-80d456c1d39a",
+      "content_id": "843badaf-4537-4923-aa68-988028874ed8",
+      "claim_id": "C41",
+      "claim": "A splice junction between the HHV-6B U7 and U8 indicates that they are fused to one translation product, similar to the HHV-6A U7.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, a splice junction between the HHV-6B U7 and U8 indicates that they are fused to one translation product, similar to the HHV-6A U7 (Dominguez et al., 1999; Gompels et al., 1995; Gravel et al., 2013 and Figure 3\u2014supplement figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on RNA-seq data shown in Figure 3\u2014supplement figure 1A and supported by citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:36:40.328734Z"
+    },
+    {
+      "id": "eb036580-5a38-46b7-8822-28bbe7dbc015",
+      "content_id": "843badaf-4537-4923-aa68-988028874ed8",
+      "claim_id": "C42",
+      "claim": "A splice junction in the HHV-6A U13 gene indicates that the U12 and U13 proteins share their N-terminal domain.",
+      "claim_type": "EXPLICIT",
+      "source": "Another splice junction in the HHV-6A U13 gene indicates that the U12 and U13 proteins share their N-terminal domain (Figure 3\u2014supplement figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on RNA-seq data shown in Figure 3\u2014supplement figure 1B.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:36:40.328734Z"
+    },
+    {
+      "id": "2eca63af-28eb-445e-b541-0656fac989e4",
+      "content_id": "843badaf-4537-4923-aa68-988028874ed8",
+      "claim_id": "C43",
+      "claim": "lncRNA1 initiates within HHV-6 origin of replication.",
+      "claim_type": "EXPLICIT",
+      "source": "One lncRNA, designated here as lncRNA1, initiates within HHV-6 origin of replication (Figure 4A)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on RNA-seq data shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:36:40.328734Z"
+    },
+    {
+      "id": "968ee9e1-2143-4465-a249-c5de290efe19",
+      "content_id": "843badaf-4537-4923-aa68-988028874ed8",
+      "claim_id": "C44",
+      "claim": "lncRNA1 resembles in synteny to an HCMV encoded lncRNA, RNA4.9.",
+      "claim_type": "EXPLICIT",
+      "source": "One lncRNA, designated here as lncRNA1, initiates within HHV-6 origin of replication (Figure 4A) and therefore resembles in synteny to an HCMV encoded lncRNA, RNA4.9 although it is much shorter (Figure 4\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on comparison of genomic locations shown in Figure 4\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:36:40.328734Z"
+    },
+    {
+      "id": "1454ede5-dd01-463a-823e-27c07fea9a0e",
+      "content_id": "843badaf-4537-4923-aa68-988028874ed8",
+      "claim_id": "C45",
+      "claim": "lncRNA1 is the most highly expressed polyadenylated RNA in both HHV-6A and HHV-6B.",
+      "claim_type": "EXPLICIT",
+      "source": "This transcript is the most highly expressed polyadenylated RNA in both HHV-6A and HHV-6B (Figure 4\u2014figure supplement 2)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on RNA-seq data shown in Figure 4\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:36:40.328734Z"
+    },
+    {
+      "id": "86bbe2c6-91f9-4e52-b9c1-90ffbd861211",
+      "content_id": "843badaf-4537-4923-aa68-988028874ed8",
+      "claim_id": "C46",
+      "claim": "The short ORF encoded by lncRNA1 contains the highest ribosome densities in the viral genomes.",
+      "claim_type": "EXPLICIT",
+      "source": "This transcript is the most highly expressed polyadenylated RNA in both HHV-6A and HHV-6B (Figure 4\u2014figure supplement 2), and its encoded short ORF, which contains the highest ribosome densities in the viral genomes (Figure 4\u2014source data 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on Ribo-seq data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:36:40.328734Z"
+    },
+    {
+      "id": "a8c36891-a683-4c6e-babb-6afb9590b7a6",
+      "content_id": "843badaf-4537-4923-aa68-988028874ed8",
+      "claim_id": "C47",
+      "claim": "lncRNA2 is a spliced transcript that partially overlaps U18.",
+      "claim_type": "EXPLICIT",
+      "source": "The second lncRNA we identified, named here lncRNA2, is a spliced transcript that partially overlaps U18 (Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on RNA-seq data shown in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:36:40.328734Z"
+    },
+    {
+      "id": "2abec353-36c3-4aae-ab51-55b1e97567fe",
+      "content_id": "843badaf-4537-4923-aa68-988028874ed8",
+      "claim_id": "C48",
+      "claim": "lncRNA3 is transcribed between U77 and U79.",
+      "claim_type": "EXPLICIT",
+      "source": "The third lncRNA, designated lncRNA3, is transcribed between U77 and U79 (Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on RNA-seq data shown in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:36:40.328734Z"
+    },
+    {
+      "id": "f1fb3a68-04b4-472c-ae5b-062add9d0e65",
+      "content_id": "843badaf-4537-4923-aa68-988028874ed8",
+      "claim_id": "C49",
+      "claim": "lncRNA3 has multiple possible isoforms generated by two alternative TSSs, two alternative polyadenylation sites, and alternative splicing.",
+      "claim_type": "EXPLICIT",
+      "source": "This lncRNA has multiple possible isoforms generated by two alternative TSSs, two alternative polyadenylation sites, and alternative splicing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on RNA-seq data shown in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:36:40.328734Z"
+    },
+    {
+      "id": "9d083de7-57d4-4b32-a05a-0fa0365462d0",
+      "content_id": "843badaf-4537-4923-aa68-988028874ed8",
+      "claim_id": "C50",
+      "claim": "lncRNA3 is homologous to the HCMV encoded lncRNA5.0 and the Murine CMV encoded lncRNA7.2.",
+      "claim_type": "EXPLICIT",
+      "source": "However by synteny, this lncRNA is homologous to the HCMV encoded lncRNA5.0 and the Murine CMV encoded lncRNA7.2 (Figure 4\u2014figure supplement 1B), shown to generate stable intronic RNAs which are not polyadenylated (Kulesza and Shenk, 2006; Kulesza and Shenk, 2004).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on comparison of genomic locations shown in Figure 4\u2014figure supplement 1B and supported by citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:36:40.328734Z"
+    },
+    {
+      "id": "07fb58a2-d302-4c0a-a0ae-181f43f4deac",
+      "content_id": "843badaf-4537-4923-aa68-988028874ed8",
+      "claim_id": "C51",
+      "claim": "HCMV lncRNA5.0 and Murine CMV lncRNA7.2 generate stable intronic RNAs which are not polyadenylated.",
+      "claim_type": "EXPLICIT",
+      "source": "However by synteny, this lncRNA is homologous to the HCMV encoded lncRNA5.0 and the Murine CMV encoded lncRNA7.2 (Figure 4\u2014figure supplement 1B), shown to generate stable intronic RNAs which are not polyadenylated (Kulesza and Shenk, 2006; Kulesza and Shenk, 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to published work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:36:40.328734Z"
+    },
+    {
+      "id": "f0686278-82ce-4ab8-81ca-0cd2d33e1666",
+      "content_id": "843badaf-4537-4923-aa68-988028874ed8",
+      "claim_id": "C52",
+      "claim": "The intronic reads of lncRNA3 comprise less than 10% of what is expected from retained intron isoforms in both HHV-6A and HHV-6B.",
+      "claim_type": "EXPLICIT",
+      "source": "To explore this possibility, we quantified the number of reads that span the exon-intron junction relative to the number of intronic reads, and found that in both HHV-6A and HHV-6B they comprise less than 10% of what is expected from retained intron isoforms (Figure 5A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on RNA-seq data analysis shown in Figure 5A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:36:40.328734Z"
+    },
+    {
+      "id": "a655bef8-b676-46c7-ad5c-94b05e928e68",
+      "content_id": "843badaf-4537-4923-aa68-988028874ed8",
+      "claim_id": "C53",
+      "claim": "The intronic reads of lncRNA3 do not seem to originate from intron retention and rather indicate that lncRNA3 generates a stable non-polyadenylated intron.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, these intronic reads do not seem to originate from intron retention and rather indicate that lncRNA3 also generates a stable non-polyadenylated intron.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the RNA-seq data analysis and RT-qPCR results shown in Figure 5.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:36:40.328734Z"
+    },
+    {
+      "id": "f11ae0e5-0938-454b-99cc-53d0cf855b35",
+      "content_id": "843badaf-4537-4923-aa68-988028874ed8",
+      "claim_id": "C54",
+      "claim": "The lncRNA3 intron was detected at significantly higher levels in cDNA synthesized using random hexamers compared to cDNA synthesized with poly(dT) oligomers.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar to the non-polyadenylated 18S ribosomal RNA, the intron RNA was detected at significantly higher levels in cDNA that was synthesized using random hexamers, while the polyadenylated lncRNA2 was more abundant or unchanged when poly(dT) oligomers were used in HHV-6A and HHV-6B, respectively (Figure 5B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on RT-qPCR data shown in Figure 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:36:40.328734Z"
+    },
+    {
+      "id": "85cd7048-ac1a-40b7-a961-fdf688723a2d",
+      "content_id": "843badaf-4537-4923-aa68-988028874ed8",
+      "claim_id": "C55",
+      "claim": "The level of the intronic RNA of HHV-6B lncRNA3 is 100-fold higher than the spliced lncRNA3 based on RNA-seq analysis of total RNA.",
+      "claim_type": "EXPLICIT",
+      "source": "We further quantified the abundance of the intronic RNA in of HHV-6B by deep sequencing total RNA without poly-A selection from infected cells. Based on these measurements the level of the intronic RNA of HHV-6B lncRNA3 is 100-fold higher than the spliced lncRNA3 (Figure 5\u2014figure supplement 1A), making it the most abundant transcript in infected cells.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on RNA-seq data of total RNA shown in Figure 5\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:36:40.328734Z"
+    },
+    {
+      "id": "513028d0-6609-453f-8809-19d518292f55",
+      "content_id": "843badaf-4537-4923-aa68-988028874ed8",
+      "claim_id": "C56",
+      "claim": "The RNA5.0 intron is 10-fold higher than the spliced RNA5.0 in HCMV infected cells based on RNA-seq analysis of total RNA.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, RNA-seq analysis of total RNA from HCMV infected cells showed that the RNA5.0 intron is 10-fold higher than the spliced RNA5.0 (Figure 5\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on RNA-seq data of total RNA shown in Figure 5\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:36:40.328734Z"
+    },
+    {
+      "id": "12aa0aa5-daca-4a31-9062-4cb5128551d6",
+      "content_id": "843badaf-4537-4923-aa68-988028874ed8",
+      "claim_id": "C57",
+      "claim": "Northern blot analysis confirmed the presence of the HHV-6B lncRNA3 intron at the predicted size of ~1500 nt.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, we validated the presence of the HHV-6B lncRNA3 intron by performing Northern blot analysis, confirming the presence of the RNA at the predicted size of ~1500 nt (Figure 5\u2014figure supplement 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on Northern blot data shown in Figure 5\u2014figure supplement 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:36:40.328734Z"
+    },
+    {
+      "id": "c2a0a975-845e-4ac0-affb-ccb97075708c",
+      "content_id": "843badaf-4537-4923-aa68-988028874ed8",
+      "claim_id": "C58",
+      "claim": "The study trained a support vector machine (SVM) model to identify translation initiation sites based on Ribo-seq data sets.",
+      "claim_type": "EXPLICIT",
+      "source": "To systematically define the full coding potential of HHV-6A and HHV-6B, we trained a support vector machine (SVM) model to identify translation initiation sites based on our Ribo-seq data sets, combining the actively translating ribosomes profile (CHX treatment), and initiation site enrichment (LTM and Harr) from cells infected with HHV-6 for 72 hr.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is described in the methods section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:36:40.328734Z"
+    },
+    {
+      "id": "41081355-7025-4626-8504-b598fc7b18ce",
+      "content_id": "843badaf-4537-4923-aa68-988028874ed8",
+      "claim_id": "C59",
+      "claim": "The study found strong enrichment of translation initiation at the canonical AUG start codon.",
+      "claim_type": "EXPLICIT",
+      "source": "In these sites, we found strong enrichment of translation initiation at the canonical AUG start codon, as well as weaker but still significant enrichment for the near-cognate start codons (Figure 6A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on analysis of predicted translation initiation sites shown in Figure 6A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:36:40.328734Z"
+    },
+    {
+      "id": "aee32438-9982-4723-9a42-000a287270c1",
+      "content_id": "843badaf-4537-4923-aa68-988028874ed8",
+      "claim_id": "C60",
+      "claim": "CUG was the most common near-cognate start codon, similar to what was found in other herpesviruses and in human cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Of the near-cognate start codons, CUG was the most common, similar to what was found in other herpesviruses (Arias et al., 2014; Stern-Ginossar et al., 2012; Whisnant et al., 2019) and in human cells (Fields et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on analysis of predicted translation initiation sites and supported by citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:36:40.328734Z"
+    },
+    {
+      "id": "8a379e88-79b1-4ef6-bef3-6b3ac556a52f",
+      "content_id": "843badaf-4537-4923-aa68-988028874ed8",
+      "claim_id": "C61",
+      "claim": "The study identified translation in 69 out of 88 HHV-6A ORFs and 63 out of 103 HHV-6B ORFs of previously annotated ORFs.",
+      "claim_type": "EXPLICIT",
+      "source": "Of the previously annotated ORFs, we identified translation in 69 out of 88 HHV-6A ORFs and 63 out of 103 HHV-6B ORFs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the SVM model predictions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:36:40.328734Z"
+    },
+    {
+      "id": "0e34c229-6b96-4b90-bc65-6a369f9d3703",
+      "content_id": "843badaf-4537-4923-aa68-988028874ed8",
+      "claim_id": "C62",
+      "claim": "The study identified 268 novel ORFs in HHV-6A and 216 novel ORFs in HHV-6B.",
+      "claim_type": "EXPLICIT",
+      "source": "In total, we identified 268 novel ORFs in HHV-6A and 216 novel ORFs in HHV-6B (Figure 6B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on the SVM model predictions shown in Figure 6B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:36:40.328734Z"
+    },
+    {
+      "id": "82e78454-6227-4320-a72c-aee49bbf327d",
+      "content_id": "843badaf-4537-4923-aa68-988028874ed8",
+      "claim_id": "C63",
+      "claim": "Newly identified ORFs are shorter than the annotated ones.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, newly identified ORFs are shorter than the annotated ones (Figure 6C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 6C comparing size distributions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:36:40.328734Z"
+    },
+    {
+      "id": "073b0abf-b80f-45b4-b33f-aa7323f94874",
+      "content_id": "843badaf-4537-4923-aa68-988028874ed8",
+      "claim_id": "C64",
+      "claim": "Many of the novel ORFs identified were very short (<20 aa, 141 in HHV-6A and 111 in HHV-6B).",
+      "claim_type": "EXPLICIT",
+      "source": "Many of the novel ORFs we identified, were very short (<20 aa, 141 in HHV-6A and 111 in HHV-6B) and therefore are likely not functional at the polypeptide level.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on analysis of the predicted ORFs.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:36:40.328734Z"
+    },
+    {
+      "id": "124034bb-d1d5-483b-8dd7-1e90d4c8ed1a",
+      "content_id": "843badaf-4537-4923-aa68-988028874ed8",
+      "claim_id": "C65",
+      "claim": "A large portion of the novel ORFs are iORFs, translated within other ORFs (80 ORFs in HHV-6A and 67 in HHV-6B).",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, a large portion of the remaining ORFs are iORFs, translated within other ORFs (80 ORFs in HHV-6A and 67 in HHV-6B, Figure 6B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on analysis of the predicted ORFs shown in Figure 6B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:36:40.328734Z"
+    },
+    {
+      "id": "2204e845-76a1-4b8d-b560-0c9a4ef7ad66",
+      "content_id": "843badaf-4537-4923-aa68-988028874ed8",
+      "claim_id": "C66",
+      "claim": "The newly identified ORFs displayed three-nucleotide periodicity similar to previously annotated ORFs.",
+      "claim_type": "EXPLICIT",
+      "source": "The newly identified ORFs displayed similar periodicity to the previously annotated ORFs, which was not seen in RNA-seq reads, further validating that these ORFs likely represent bona-fide translation products (Figure 6D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 6D and is consistent with active translation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:36:40.328734Z"
+    },
+    {
+      "id": "9eef9d49-609b-4f81-a7ad-f7f36099d77d",
+      "content_id": "843badaf-4537-4923-aa68-988028874ed8",
+      "claim_id": "C67",
+      "claim": "Hierarchical clustering of viral coding regions by footprint densities along infection revealed several distinct temporal expression patterns.",
+      "claim_type": "EXPLICIT",
+      "source": "Hierarchical clustering of viral coding regions by footprint densities along infection (a measure of the relative translation rates) revealed several distinct temporal expression patterns (Figure 7A and see Figure 7\u2014source data 1 for read numbers).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on time-course Ribo-seq data shown in Figure 7A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:36:40.328734Z"
+    },
+    {
+      "id": "4d137dd3-4d4f-4793-843c-51514c5d0b93",
+      "content_id": "843badaf-4537-4923-aa68-988028874ed8",
+      "claim_id": "C68",
+      "claim": "Cluster one contains ORFs whose expression is relatively high at 5hpi compared to 24 and 72hpi, and includes most of the genes classified as immediate-early (IE, U79, U90 and U95).",
+      "claim_type": "EXPLICIT",
+      "source": "Cluster one contains ORFs whose expression is relatively high at 5hpi compared to 24 and 72hpi, and this cluster includes most of the genes classified as immediate-early (IE, U79, U90 and U95).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on clustering analysis of time-course data shown in Figure 7A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:36:40.328734Z"
+    },
+    {
+      "id": "bdfa50b3-0c3b-430f-9ef6-04915094a108",
+      "content_id": "843badaf-4537-4923-aa68-988028874ed8",
+      "claim_id": "C69",
+      "claim": "U85, a glycoprotein previously classified as IE, was not efficiently translated at 5hpi and was assigned to cluster 2.",
+      "claim_type": "EXPLICIT",
+      "source": "Another gene, U85, a glycoprotein previously classified as IE (Tsao et al., 2009), was not efficiently translated at 5hpi and was assigned to cluster 2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on clustering analysis of time-course data and comparison with previous classification.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:36:40.328734Z"
+    },
+    {
+      "id": "6500c741-16a6-448f-9e8b-18dc6469ba65",
+      "content_id": "843badaf-4537-4923-aa68-988028874ed8",
+      "claim_id": "C70",
+      "claim": "Cluster two contains genes that are most highly expressed at 24hpi and is enriched in early genes.",
+      "claim_type": "EXPLICIT",
+      "source": "Cluster two contains genes that are most highly expressed at 24hpi and is enriched in early genes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on clustering analysis of time-course data shown in Figure 7A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:36:40.328734Z"
+    },
+    {
+      "id": "38cdba0e-ba96-4163-b1c4-6c3b4b1787e6",
+      "content_id": "843badaf-4537-4923-aa68-988028874ed8",
+      "claim_id": "C71",
+      "claim": "Clusters 3 and 4 contain genes that are mostly expressed at 72hpi and are both enriched in late genes.",
+      "claim_type": "EXPLICIT",
+      "source": "Clusters 3 and 4 contain genes that are mostly expressed at 72hpi and are both enriched in late genes; however, cluster four is composed of genes that are expressed almost exclusively at 72hpi.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on clustering analysis of time-course data shown in Figure 7A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:36:40.328734Z"
+    },
+    {
+      "id": "0915437d-a173-41ac-b5bd-7b578387d56f",
+      "content_id": "843badaf-4537-4923-aa68-988028874ed8",
+      "claim_id": "C72",
+      "claim": "The DNA helicase/primase U43 and the large tegument protein U31 were previously annotated as late genes, but reach peak translation at the 24hpi timepoint.",
+      "claim_type": "EXPLICIT",
+      "source": "While most of the previously annotated late genes were assigned to these clusters, the DNA helicase/primase U43 and the large tegument protein U31 were previously annotated as late genes, but are shown here to reach peak translation at the 24hpi timepoint.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on clustering analysis of time-course data and comparison with previous annotations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:36:40.328734Z"
+    },
+    {
+      "id": "083a7391-aa6e-4584-aec6-cfaf803db02d",
+      "content_id": "843badaf-4537-4923-aa68-988028874ed8",
+      "claim_id": "C73",
+      "claim": "Pervasive use of alternative 5' ends in HCMV transcripts is critical for the tight temporal regulation of viral gene expression and production of alternate protein products.",
+      "claim_type": "EXPLICIT",
+      "source": "We previously demonstrated that pervasive use of alternative 5' ends in HCMV transcripts is critical for the tight temporal regulation of viral gene expression and production of alternate protein products (Stern-Ginossar et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:36:40.328734Z"
+    },
+    {
+      "id": "78650222-bab4-46fc-92d0-84b571c900ba",
+      "content_id": "843badaf-4537-4923-aa68-988028874ed8",
+      "claim_id": "C74",
+      "claim": "Similar temporal regulation of 5' ends was observed in HHV-6B genes including U53, U81/U82, and U51.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed similar phenomena in the temporal regulation of several HHV-6B genes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated in Figures 7B, 7C, and Figure 7\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:36:40.328734Z"
+    },
+    {
+      "id": "858958c5-ece1-4997-abcf-cb00ca1b4ad2",
+      "content_id": "843badaf-4537-4923-aa68-988028874ed8",
+      "claim_id": "C75",
+      "claim": "The U53 gene contains newly identified iORFs that are translated more efficiently at 72hpi than at 24hpi relative to the main U53 ORF.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, the U53 gene contains newly identified iORFs, one of which initiates at an AUG, and is an orthologue of the annotated HHV-6A U53.5 ORF (Figure 7B). Relative to the main U53 ORF, these iORFs are translated more efficiently at 72hpi than at 24hpi.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on time-course Ribo-seq data shown in Figure 7B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:36:40.328734Z"
+    },
+    {
+      "id": "a1662e16-b461-4768-af23-07992799d172",
+      "content_id": "843badaf-4537-4923-aa68-988028874ed8",
+      "claim_id": "C76",
+      "claim": "The same pattern of temporal regulation of iORFs was found in the HCMV homolog, UL80.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, we found the same pattern in the HCMV homolog, UL80 (Stern-Ginossar et al., 2012; Figure 7B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on comparison with HCMV data shown in Figure 7B and supported by a citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:36:40.328734Z"
+    },
+    {
+      "id": "1ae57fa1-6df5-4265-8c0c-0f580cb76bc2",
+      "content_id": "843badaf-4537-4923-aa68-988028874ed8",
+      "claim_id": "C77",
+      "claim": "uORFs are enriched in the 5'UTRs of late genes compared to earlier kinetic classes in both HHV-6A and HHV-6B.",
+      "claim_type": "EXPLICIT",
+      "source": "For both HHV-6A and HHV-6B we found an enrichment of uORFs in the 5'UTRs of late genes compared to earlier kinetic classes (Figure 7D, p-value < 0.01, proportion test).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on analysis of uORF distribution shown in Figure 7D with statistical testing.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:36:40.328734Z"
+    },
+    {
+      "id": "ee025487-9aee-4056-81c4-616912f1c364",
+      "content_id": "843badaf-4537-4923-aa68-988028874ed8",
+      "claim_id": "C78",
+      "claim": "There was no enrichment for the presence of iORFs in any kinetic class.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, there was no enrichment for the presence of iORFs in any kinetic class (Figure 7E, p-value > 0.3)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on analysis of iORF distribution shown in Figure 7E with statistical testing.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:36:40.328734Z"
+    },
+    {
+      "id": "ec6d3cf3-a1a6-4dc8-8656-6165a2e50895",
+      "content_id": "843badaf-4537-4923-aa68-988028874ed8",
+      "claim_id": "C79",
+      "claim": "uORFs but not iORFs are enriched in 5'UTRs of HCMV genes that are expressed with late kinetics.",
+      "claim_type": "EXPLICIT",
+      "source": "We further extended this analysis to HCMV ORFs and found that uORFs but not iORFs are enriched in 5'UTRs of HCMV genes that are expressed with late kinetics, similar to what we see in HHV-6 (Figure 7D and E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on analysis of HCMV data shown in Figure 7D and E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:36:40.328734Z"
+    },
+    {
+      "id": "a8d5a2e7-4d32-41b5-a07e-f7797737e524",
+      "content_id": "843badaf-4537-4923-aa68-988028874ed8",
+      "claim_id": "C80",
+      "claim": "An increased proportional use of non-canonical start codons occurs late in infection.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, we also observed an increased proportional use of non-canonical start codons late in infection (Figure 7\u2014figure supplement 4)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on analysis of start codon usage shown in Figure 7\u2014figure supplement 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:36:40.328734Z"
+    },
+    {
+      "id": "ef1f2fda-da78-4e6a-8e25-47c4f4bd006e",
+      "content_id": "843badaf-4537-4923-aa68-988028874ed8",
+      "claim_id": "C81",
+      "claim": "The number of iORFs and uORFs in HHV-6A and HHV-6B homolog ORFs are well correlated.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the number of iORFs and uORFs in HHV-6A and HHV-6B homolog ORFs are well correlated, indicating a high level of conservation of these translation events between these two viruses (p<10\u221215 for uORFs and p<10\u221210 for iORFs, Figure 8A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on correlation analysis shown in Figure 8A with statistical testing.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:36:40.328734Z"
+    },
+    {
+      "id": "6e4eabd4-2d92-4524-9043-fc1459a0cc03",
+      "content_id": "843badaf-4537-4923-aa68-988028874ed8",
+      "claim_id": "C82",
+      "claim": "In five iORF-containing HHV-6 genes and in four uORF-containing HHV-6 genes, the HCMV homologs also contained similar iORFs or uORFs.",
+      "claim_type": "EXPLICIT",
+      "source": "We also found some features that are conserved in HCMV. In five iORF-containing HHV-6 genes and in four uORF-containing HHV-6 genes, the HCMV homologs also contained similar iORFs or uORFs (Figure 8\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on comparison with HCMV data shown in Figure 8\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:36:40.328734Z"
+    },
+    {
+      "id": "69dca483-a06f-4658-bd5d-7fa87eccca91",
+      "content_id": "843badaf-4537-4923-aa68-988028874ed8",
+      "claim_id": "C83",
+      "claim": "U51 and its HCMV homolog UL78 contain a conserved uORF and show conserved kinetics along infection.",
+      "claim_type": "EXPLICIT",
+      "source": "One of the HHV-6/HCMV homolog ORF pairs containing a conserved uORF is U51 and its HCMV homolog UL78 (Figure 8C), which interestingly also show conserved kinetics along infection suggesting a potential regulatory mechanism conserved between these viruses (Figure 7\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on data shown in Figure 8C and Figure 7\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:36:40.328734Z"
+    },
+    {
+      "id": "3fcb917e-0bb3-4c78-bba6-71c88d768c1c",
+      "content_id": "843badaf-4537-4923-aa68-988028874ed8",
+      "claim_id": "C84",
+      "claim": "The conserved presence of several uORFs and iORFs suggests that their occurrence is not random and likely represents a functional module that plays a role in regulating herpesvirus protein expression.",
+      "claim_type": "EXPLICIT",
+      "source": "Altogether, the conserved presence of several uORFs and iORFs suggests that their occurrence is not random, and it is likely that these represent a functional module that plays a role in regulating herpesvirus protein expression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the conservation analysis.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:36:40.328734Z"
+    },
+    {
+      "id": "6320ec26-2e7d-4a7b-8473-7d2717425cb2",
+      "content_id": "843badaf-4537-4923-aa68-988028874ed8",
+      "claim_id": "C85",
+      "claim": "Traditional annotations of HHV-6 genomes are likely incomplete.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, this unforeseen complexity of herpesviruses suggests the current annotations of HHV-6 genomes are likely incomplete.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the discovery of hundreds of novel ORFs and other genomic features.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:36:40.328734Z"
+    },
+    {
+      "id": "866d3c82-1919-4f75-ab86-22af61dab642",
+      "content_id": "843badaf-4537-4923-aa68-988028874ed8",
+      "claim_id": "C86",
+      "claim": "The surplus of uORFs and their preferred use specifically at late time points of infection indicate that they may have a functional role in controlling viral gene expression, probably when cellular stress pathways are engaged.",
+      "claim_type": "EXPLICIT",
+      "source": "The surplus of uORFs and their preferred use specifically at late time points of infection indicate that they may have a functional role in controlling viral gene expression, probably when cellular stress pathways are engaged.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the enrichment of uORFs in late genes and knowledge about cellular stress responses.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:36:40.328734Z"
+    },
+    {
+      "id": "fe0d6a1e-6455-4c3d-9a15-a646fafd124c",
+      "content_id": "843badaf-4537-4923-aa68-988028874ed8",
+      "claim_id": "C87",
+      "claim": "The high representation of sORFs, iORFs and uORFs in the viral genome, particularly at late stages of infection, is probably driven by extensive use of alternative transcription initiation and changes in translation permissiveness.",
+      "claim_type": "EXPLICIT",
+      "source": "The overall high representation of sORFs, iORFs and uORFs in the viral genome, particularly at late stages of infection, is probably driven by several mechanisms; the first is extensive use of alternative transcription initiation, which is highly prevalent at late time point of infection with herpesviruses, and allows the translation of multiple translation products from the same viral loci (Bal\u00e1zs et al., 2018; Parida et al., 2019; Stern-Ginossar et al., 2012; Whisnant et al., 2019); the second mechanism may be related to changes in translation permissiveness which can explain the increase in translation initiation from near canonical start codons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the data and supported by citations to related work.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:36:40.328734Z"
+    },
+    {
+      "id": "0893cf63-554a-4bea-81bd-f810dde78f28",
+      "content_id": "843badaf-4537-4923-aa68-988028874ed8",
+      "claim_id": "C88",
+      "claim": "Unlike mammalian lncRNAs that are significantly less abundant than canonical mRNAs, in herpesviruses lncRNAs represent the most abundant group of viral transcripts.",
+      "claim_type": "EXPLICIT",
+      "source": "Unlike mammalian lncRNAs, that as a group are significantly less abundant than canonical mRNAs (Mukherjee et al., 2017), in herpesviruses lncRNAs represent the most abundant group of viral transcripts (Gatherer et al., 2011; Tycowski et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to published work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:36:40.328734Z"
+    },
+    {
+      "id": "3c12e41a-f1cb-499e-a0db-2c3572e67e56",
+      "content_id": "843badaf-4537-4923-aa68-988028874ed8",
+      "claim_id": "C89",
+      "claim": "lncRNA1 resembles the HCMV RNA4.9 as both are transcribed from the viral origin of replication at the same orientation.",
+      "claim_type": "EXPLICIT",
+      "source": "lncRNA1 resembles the HCMV RNA4.9 as both are transcribed from the viral origin of replication at the same orientation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on comparison of genomic locations shown in Figure 4\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:36:40.328734Z"
+    },
+    {
+      "id": "5d22e550-9e2c-4d6c-9804-6544dac45b89",
+      "content_id": "843badaf-4537-4923-aa68-988028874ed8",
+      "claim_id": "C90",
+      "claim": "RNA5.0 has previously been shown to generate a stable intron that is not required for HCMV replication in fibroblasts.",
+      "claim_type": "EXPLICIT",
+      "source": "RNA5.0 has previously been shown to generate a stable intron that is not required for HCMV replication in fibroblasts (Kulesza and Shenk, 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to published work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:36:40.328734Z"
+    },
+    {
+      "id": "18326384-4589-415e-b1b6-a8f95f69a91e",
+      "content_id": "843badaf-4537-4923-aa68-988028874ed8",
+      "claim_id": "C91",
+      "claim": "Mutant MCMV viruses lacking the stable intron RNA of the 7.2 kb ortholog of RNA5.0 replicated normally in culture, but exhibited a defect in establishing a persistent infection in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "A murine cytomegalovirus 7.2 kb ortholog of RNA5.0 was identified which also generates a stable intronic RNA. Mutant MCMV viruses lacking this stable intron RNA replicated normally in culture, but exhibited a defect in establishing a persistent infection in vivo (Kulesza and Shenk, 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to published work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:36:40.328734Z"
+    },
+    {
+      "id": "8878e627-4f2c-4460-a8fa-e3a3d4c08a93",
+      "content_id": "843badaf-4537-4923-aa68-988028874ed8",
+      "claim_id": "C92",
+      "claim": "The production of a stable intronic RNA from the lncRNA3 locus is a conserved feature of betaherpesviruses.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results indicate that the production of a stable intronic RNA from this locus is a conserved feature of betaherpesviruses, implying a central function.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the conservation observed in HHV-6A, HHV-6B, HCMV, and MCMV.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:36:40.328734Z"
+    },
+    {
+      "id": "dfce9094-6171-47e0-a9ec-05251d8bec0b",
+      "content_id": "843badaf-4537-4923-aa68-988028874ed8",
+      "claim_id": "C93",
+      "claim": "The intronic RNA of lncRNA3 is probably the main functional element in this locus.",
+      "claim_type": "EXPLICIT",
+      "source": "The strong expression of the intronic RNA, which is 100-fold higher compared to the spliced RNA, and its conservation in beta herpesviruses points that this intronic RNA is probably the main functional element in this locus.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the high expression level and conservation.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:36:40.328734Z"
+    },
+    {
+      "id": "d0919348-c827-40ea-bc71-3341367e0558",
+      "content_id": "843badaf-4537-4923-aa68-988028874ed8",
+      "claim_id": "C94",
+      "claim": "A small non-coding RNA (sncRNA-U77) that is mapped to the intron of lncRNA3 was shown to be expressed by HHV-6A.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, a small non-coding RNA (sncRNA-U77) that is mapped to the intron of lncRNA3 was shown to be expressed by HHV-6A (Nukui et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to published work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:36:40.328734Z"
+    },
+    {
+      "id": "925edc8e-6e44-4441-a22a-2c128375343f",
+      "content_id": "843badaf-4537-4923-aa68-988028874ed8",
+      "claim_id": "C95",
+      "claim": "It is possible that the stable intron of lncRNA3 is further processed to create additional functional elements.",
+      "claim_type": "EXPLICIT",
+      "source": "It is therefore possible that the stable intron is further processed to create additional functional elements.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculated based on the existence of sncRNA-U77.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:36:40.328734Z"
+    },
+    {
+      "id": "150cb84a-962b-4f36-8eb9-c2478df7b7aa",
+      "content_id": "843badaf-4537-4923-aa68-988028874ed8",
+      "claim_id": "C96",
+      "claim": "TSA-mediated HHV-6A transactivation results in increased transcription from a region overlapping the lncRNA3 locus.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, a recent study showed that TSA-mediated HHV-6A transactivation results in increased transcription from a region overlapping the lncRNA3 locus (Prusty et al., 2018a)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to published work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:36:40.328734Z"
+    },
+    {
+      "id": "a666cfcc-9fb4-4d51-b97b-8ab497102f99",
+      "content_id": "843badaf-4537-4923-aa68-988028874ed8",
+      "claim_id": "C97",
+      "claim": "lncRNA3 may be involved in HHV-6A reactivation.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, a recent study showed that TSA-mediated HHV-6A transactivation results in increased transcription from a region overlapping the lncRNA3 locus (Prusty et al., 2018a), implying lncRNA3 may be involved in HHV-6A reactivation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observation of increased transcription during reactivation.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:36:40.328734Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "96074ef5-204a-4356-bdeb-b558ae79ce40",
+      "content_id": "843badaf-4537-4923-aa68-988028874ed8",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The study employed ribosome profiling (Ribo-seq) with three drug treatments (LTM, Harr, CHX) and RNA-seq to map translation and transcription in HHV-6A and HHV-6B infected cells at 72 hours post-infection.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C20-C25 describe the experimental methodology with appropriate technical detail. The methods are well-established (supported by citations C22, C24, C25) and the data quality is demonstrated in Figures 1A-C showing expected profiles for each library type. The approach is technically sound and appropriate for the research questions.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:36:40.328734Z"
+    },
+    {
+      "id": "bd3dd4df-610d-42e6-ba82-822cbc7a628e",
+      "content_id": "843badaf-4537-4923-aa68-988028874ed8",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The study identified 268 novel ORFs in HHV-6A and 216 in HHV-6B using an SVM-based prediction model, including many short ORFs (<20 aa), iORFs, and uORFs, while also correcting 10-11 misannotations in each virus.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C26-C27, C58-C66 collectively demonstrate systematic ORF identification using machine learning on Ribo-seq data. The SVM model was trained on well-translated canonical ORFs with cross-validation showing reasonable performance (37-25% false-negative, 2-5% false-positive rates). The three-nucleotide periodicity (C66, Figure 6D) validates that novel ORFs represent genuine translation. The enrichment of AUG and near-cognate start codons (C59-C60, Figure 6A) is consistent with known translation biology.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:36:40.328734Z"
+    },
+    {
+      "id": "790bd192-b736-4ef9-b3a2-73f3f3712ca3",
+      "content_id": "843badaf-4537-4923-aa68-988028874ed8",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Novel ORFs, including iORFs and uORFs, are highly conserved between HHV-6A and HHV-6B with significant correlation (p<10^-15 for uORFs, p<10^-10 for iORFs).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C28 and C81 demonstrate conservation through correlation analysis (Figure 8A) with highly significant p-values. This conservation between closely related viral species provides strong validation of the biological relevance of the identified ORFs, as functional elements are expected to be conserved.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:36:40.328734Z"
+    },
+    {
+      "id": "29ae08ef-5f72-4d64-991d-f4ee212af82f",
+      "content_id": "843badaf-4537-4923-aa68-988028874ed8",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The U30 gene translation initiates 411 bp downstream of the previously annotated start in both viruses, resulting in a 946 aa protein that includes a functionally important C-terminal domain.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C29-C30 demonstrate a specific misannotation correction supported by Ribo-seq data (Figure 2A) showing clear translation initiation at the revised start site in both viruses. The functional relevance is supported by citation C30 showing the C-terminal domain interacts with large tegument protein in HSV-1 homolog, providing biological validation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:36:40.328734Z"
+    },
+    {
+      "id": "d0ea26f7-53e6-458d-84ef-b08cf76d8c83",
+      "content_id": "843badaf-4537-4923-aa68-988028874ed8",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "A 32 aa upstream overlapping ORF (uoORF) in the U48 transcript likely negatively regulates U48 translation based on known uoORF regulatory functions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C31-C33 identify a uoORF in U48 (C31, Figure 2B) and infer regulatory function (C33) based on general knowledge about uoORFs (C32). While the uoORF identification is data-supported, the regulatory claim is speculative without experimental validation of U48 expression levels or functional assays.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:36:40.328734Z"
+    },
+    {
+      "id": "de4c89c7-0db1-4c18-ae6b-020e5d7968ba",
+      "content_id": "843badaf-4537-4923-aa68-988028874ed8",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Novel uORFs and iORFs were identified in U36 and U84 genes, including out-of-frame iORFs and truncated protein isoforms.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C34-C36 describe specific examples of novel ORFs supported by Ribo-seq data (Figures 2C-D). The identification of both in-frame and out-of-frame iORFs demonstrates the complexity of viral translation and is consistent with the systematic findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:36:40.328734Z"
+    },
+    {
+      "id": "e148432e-8095-4270-963e-6d6a972c433b",
+      "content_id": "843badaf-4537-4923-aa68-988028874ed8",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The study detected most annotated splice junctions and identified 37 novel junctions in HHV-6A and 44 in HHV-6B, including complex multi-exon transcripts and junctions that reannotate gene products.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C37-C42 demonstrate comprehensive splice junction mapping using two independent tools (TopHat and STAR). Detection of 24/26 and 24/24 annotated junctions (C37) validates the approach. Novel junctions (C38, Figure 3) are supported by RNA-seq data, with some confirmed by recent publications (C39). Specific examples (C41-C42) show functional implications for gene annotation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:36:40.328734Z"
+    },
+    {
+      "id": "9d642823-2487-4eea-a1c1-11ae867f1861",
+      "content_id": "843badaf-4537-4923-aa68-988028874ed8",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "lncRNA1 initiates within the viral origin of replication, resembles HCMV RNA4.9 in synteny, and is the most highly expressed polyadenylated viral RNA with the highest ribosome density on its short ORF.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C43-C46 characterize lncRNA1 with multiple lines of evidence: genomic location (C43, Figure 4A), syntenic conservation (C44), and expression quantification (C45-C46, Figure 4\u2014figure supplement 2). The high expression and ribosome density suggest functional importance, though the actual function remains unknown.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:36:40.328734Z"
+    },
+    {
+      "id": "45a88f41-9c0f-48d8-90b5-87f7ef5fb0af",
+      "content_id": "843badaf-4537-4923-aa68-988028874ed8",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "lncRNA2 is a spliced transcript that partially overlaps U18.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C47 describes lncRNA2 identification supported by RNA-seq data (Figure 4B) showing clear splicing pattern and genomic location. The characterization is straightforward and data-supported.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:36:40.328734Z"
+    },
+    {
+      "id": "58f46e25-da49-4904-bd2a-74638a202332",
+      "content_id": "843badaf-4537-4923-aa68-988028874ed8",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "lncRNA3 generates a highly abundant non-polyadenylated stable intron that is 100-fold more abundant than the spliced form and represents a conserved feature of betaherpesviruses (also found in HCMV RNA5.0 and MCMV lncRNA7.2).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C48-C57, C92-C93 provide comprehensive characterization of lncRNA3 through multiple experimental approaches: RNA-seq analysis showing low exon-intron junction reads (C52, Figure 5A), RT-qPCR with different primers showing non-polyadenylation (C54, Figure 5B), total RNA-seq quantification (C55-C56, Figure 5\u2014figure supplement 1A-B), and Northern blot validation (C57, Figure 5\u2014figure supplement 1C). Conservation across betaherpesviruses (C50-C51, C92, Figure 4\u2014figure supplement 1B) strongly supports functional importance. The multiple orthogonal validation methods provide robust support.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:36:40.328734Z"
+    },
+    {
+      "id": "cdd42c20-6044-4913-a976-8110aa1630a5",
+      "content_id": "843badaf-4537-4923-aa68-988028874ed8",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "uORFs but not iORFs are significantly enriched in late viral genes across HHV-6A, HHV-6B, and HCMV (p<0.01), suggesting a conserved regulatory mechanism for late gene expression in betaherpesviruses.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4, C77-C79 demonstrate enrichment of uORFs in late genes with statistical testing (Figure 7D, p<0.01) while showing no enrichment for iORFs (C78, Figure 7E, p>0.3). The pattern is conserved across three betaherpesviruses, strongly suggesting functional significance. The authors address potential confounding by expression level (Figure 7\u2014figure supplement 3), though correlation exists for HHV-6B (R=0.34). The consistency across viruses and specificity to uORFs (not iORFs) supports the conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:36:40.328734Z"
+    },
+    {
+      "id": "55997e48-06bd-4021-a925-d2a869c436db",
+      "content_id": "843badaf-4537-4923-aa68-988028874ed8",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Time-course analysis revealed four distinct temporal expression clusters for HHV-6B ORFs, largely agreeing with previous kinetic classifications but identifying some misclassifications (e.g., U85, U43, U31).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C67-C72 describe temporal clustering analysis (Figure 7A) based on Ribo-seq data at 5, 24, and 72 hpi. The clustering reveals expected immediate-early, early, and late patterns (C68-C71) while identifying specific genes with unexpected kinetics (C69, C72). The analysis is straightforward and data-supported, though the authors note that asynchronous infection may underestimate true temporal changes.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:36:40.328734Z"
+    },
+    {
+      "id": "b2504c29-dc03-4a03-8229-1d8bf8a4369d",
+      "content_id": "843badaf-4537-4923-aa68-988028874ed8",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Alternative transcription start sites regulate temporal expression of viral genes in HHV-6B, similar to HCMV, as demonstrated by U53 and its homolog UL80 showing preferential iORF translation at late timepoints.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C73-C76 demonstrate temporal regulation through alternative TSSs with specific examples (U53/UL80, Figures 7B). The conservation between HHV-6B and HCMV (C76) strengthens the conclusion. The mechanism is well-supported by the data showing differential translation of iORFs versus main ORFs at different timepoints.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:36:40.328734Z"
+    },
+    {
+      "id": "ed01d481-1b3c-4de3-9b57-f71f4deda4cb",
+      "content_id": "843badaf-4537-4923-aa68-988028874ed8",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Non-canonical start codon usage increases proportionally late in infection.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C80 is supported by analysis shown in Figure 7\u2014figure supplement 4 with statistical significance (p<0.001). This observation is consistent with the uORF enrichment in late genes and suggests altered translation regulation at late timepoints.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:36:40.328734Z"
+    },
+    {
+      "id": "34e446e4-6ee4-4838-b92c-573e5bc2261e",
+      "content_id": "843badaf-4537-4923-aa68-988028874ed8",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Some iORFs and uORFs are conserved between HHV-6 and HCMV, including U51/UL78 which contain conserved uORFs and show conserved temporal kinetics.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C82-C83 demonstrate conservation beyond HHV-6A/6B to HCMV (Figure 8\u2014figure supplement 2, Figure 8C). The conservation of both sequence features (uORFs) and temporal regulation (C83) provides strong evidence for functional importance, though the actual regulatory mechanism remains to be experimentally validated.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:36:40.328734Z"
+    },
+    {
+      "id": "9c418a25-29bf-4657-ba7f-7cebd7b56341",
+      "content_id": "843badaf-4537-4923-aa68-988028874ed8",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "The conserved presence of uORFs and iORFs, particularly their enrichment in late genes, suggests they represent functional regulatory modules, possibly driven by alternative transcription initiation and changes in translation permissiveness during cellular stress.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C84, C86-C87 present interpretations and mechanistic hypotheses based on the observed patterns. While the conservation data (C84) supports non-random occurrence, the proposed mechanisms (C86-C87) are speculative and based on inference from general knowledge and cited literature rather than direct experimental evidence in this study. The hypotheses are reasonable but require experimental validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:36:40.328734Z"
+    },
+    {
+      "id": "3140d1e8-cee0-48d6-8108-9d13ba86c95c",
+      "content_id": "843badaf-4537-4923-aa68-988028874ed8",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "HHV-6A and HHV-6B are ubiquitous betaherpesviruses with large 160 kb genomes that establish lifelong latent infections, and traditional annotations based on ORF prediction are likely incomplete given the complexity revealed by recent genomic studies.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C2, C7-C19, C85 provide background context supported by extensive citations to published literature. These claims establish the biological and clinical importance of HHV-6 and the rationale for the study. The conclusion that traditional annotations are incomplete (C85) is well-supported by the findings of hundreds of novel ORFs and other features.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:36:40.328734Z"
+    },
+    {
+      "id": "1a7eba20-f068-40c9-985f-87755f7ecae1",
+      "content_id": "843badaf-4537-4923-aa68-988028874ed8",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "Viral lncRNAs are highly abundant compared to mammalian lncRNAs, and lncRNA3 may be involved in HHV-6A reactivation based on increased transcription during TSA-mediated transactivation, with possible further processing to generate additional functional elements like sncRNA-U77.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C88-C91 provide context from literature (supported by citations). Claims C94-C97 present speculative connections: the existence of sncRNA-U77 within the intron (C94, cited) suggests possible processing (C95, speculation), and increased transcription during reactivation (C96, cited) suggests involvement in reactivation (C97, inference). These are reasonable hypotheses but lack direct experimental validation in this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:36:40.328734Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "e41ac9c2-6a73-446f-879b-3f658ef13985",
+      "result_id": "96074ef5-204a-4356-bdeb-b558ae79ce40"
+    },
+    {
+      "claim_id": "c58189ed-286f-4bf8-a04e-11ddc54dee3f",
+      "result_id": "96074ef5-204a-4356-bdeb-b558ae79ce40"
+    },
+    {
+      "claim_id": "9dcb1353-66cf-40ba-8e37-d5916910c709",
+      "result_id": "96074ef5-204a-4356-bdeb-b558ae79ce40"
+    },
+    {
+      "claim_id": "58c657cd-3303-4d26-bba5-ccaf8747e8a6",
+      "result_id": "96074ef5-204a-4356-bdeb-b558ae79ce40"
+    },
+    {
+      "claim_id": "128436bc-5234-43f3-a9af-471f7840fddb",
+      "result_id": "96074ef5-204a-4356-bdeb-b558ae79ce40"
+    },
+    {
+      "claim_id": "50648618-bfa3-459f-adbd-21605b3032cb",
+      "result_id": "96074ef5-204a-4356-bdeb-b558ae79ce40"
+    },
+    {
+      "claim_id": "c800de72-fb96-4709-aee4-68e966c531fc",
+      "result_id": "bd3dd4df-610d-42e6-ba82-822cbc7a628e"
+    },
+    {
+      "claim_id": "e04a0ed1-9939-4c3e-9455-43fa62bc4a72",
+      "result_id": "bd3dd4df-610d-42e6-ba82-822cbc7a628e"
+    },
+    {
+      "claim_id": "27dc4d59-6a7a-4fa2-9163-2a1de06f7404",
+      "result_id": "bd3dd4df-610d-42e6-ba82-822cbc7a628e"
+    },
+    {
+      "claim_id": "c2a0a975-845e-4ac0-affb-ccb97075708c",
+      "result_id": "bd3dd4df-610d-42e6-ba82-822cbc7a628e"
+    },
+    {
+      "claim_id": "41081355-7025-4626-8504-b598fc7b18ce",
+      "result_id": "bd3dd4df-610d-42e6-ba82-822cbc7a628e"
+    },
+    {
+      "claim_id": "aee32438-9982-4723-9a42-000a287270c1",
+      "result_id": "bd3dd4df-610d-42e6-ba82-822cbc7a628e"
+    },
+    {
+      "claim_id": "8a379e88-79b1-4ef6-bef3-6b3ac556a52f",
+      "result_id": "bd3dd4df-610d-42e6-ba82-822cbc7a628e"
+    },
+    {
+      "claim_id": "0e34c229-6b96-4b90-bc65-6a369f9d3703",
+      "result_id": "bd3dd4df-610d-42e6-ba82-822cbc7a628e"
+    },
+    {
+      "claim_id": "82e78454-6227-4320-a72c-aee49bbf327d",
+      "result_id": "bd3dd4df-610d-42e6-ba82-822cbc7a628e"
+    },
+    {
+      "claim_id": "073b0abf-b80f-45b4-b33f-aa7323f94874",
+      "result_id": "bd3dd4df-610d-42e6-ba82-822cbc7a628e"
+    },
+    {
+      "claim_id": "124034bb-d1d5-483b-8dd7-1e90d4c8ed1a",
+      "result_id": "bd3dd4df-610d-42e6-ba82-822cbc7a628e"
+    },
+    {
+      "claim_id": "2204e845-76a1-4b8d-b560-0c9a4ef7ad66",
+      "result_id": "bd3dd4df-610d-42e6-ba82-822cbc7a628e"
+    },
+    {
+      "claim_id": "0a287322-93f0-4115-82c1-b7cd62e88296",
+      "result_id": "790bd192-b736-4ef9-b3a2-73f3f3712ca3"
+    },
+    {
+      "claim_id": "ef1f2fda-da78-4e6a-8e25-47c4f4bd006e",
+      "result_id": "790bd192-b736-4ef9-b3a2-73f3f3712ca3"
+    },
+    {
+      "claim_id": "6dc57370-54c2-4782-acd5-d8de9fd799ca",
+      "result_id": "29ae08ef-5f72-4d64-991d-f4ee212af82f"
+    },
+    {
+      "claim_id": "8e2d9980-892f-4213-ade6-af94c20ec988",
+      "result_id": "29ae08ef-5f72-4d64-991d-f4ee212af82f"
+    },
+    {
+      "claim_id": "95aef356-ae66-49e8-9cbb-fcf9447afb42",
+      "result_id": "d0ea26f7-53e6-458d-84ef-b08cf76d8c83"
+    },
+    {
+      "claim_id": "b06a855f-c74e-4517-8f19-f5ba79c68a72",
+      "result_id": "d0ea26f7-53e6-458d-84ef-b08cf76d8c83"
+    },
+    {
+      "claim_id": "bf352d56-df19-4c96-989c-742f4621cfcb",
+      "result_id": "d0ea26f7-53e6-458d-84ef-b08cf76d8c83"
+    },
+    {
+      "claim_id": "93e3d717-dfb2-4d02-974c-229c6a9ff96c",
+      "result_id": "de4c89c7-0db1-4c18-ae6b-020e5d7968ba"
+    },
+    {
+      "claim_id": "527efa1a-4bdb-4a51-b646-3083d52ba35d",
+      "result_id": "de4c89c7-0db1-4c18-ae6b-020e5d7968ba"
+    },
+    {
+      "claim_id": "8ea9a502-67a0-4622-b4ff-4ed2f59e45e3",
+      "result_id": "de4c89c7-0db1-4c18-ae6b-020e5d7968ba"
+    },
+    {
+      "claim_id": "da4217e8-4cc9-4be2-bec6-db850e0d693c",
+      "result_id": "e148432e-8095-4270-963e-6d6a972c433b"
+    },
+    {
+      "claim_id": "afd7d39b-8d4a-4360-8b55-5933bf7f5ad7",
+      "result_id": "e148432e-8095-4270-963e-6d6a972c433b"
+    },
+    {
+      "claim_id": "8d9b7ffa-356b-4f4b-8545-4f13b58866cf",
+      "result_id": "e148432e-8095-4270-963e-6d6a972c433b"
+    },
+    {
+      "claim_id": "e5816a42-ea87-4d8a-a819-8c3e55107fb9",
+      "result_id": "e148432e-8095-4270-963e-6d6a972c433b"
+    },
+    {
+      "claim_id": "af24ed43-6b37-4a13-a131-80d456c1d39a",
+      "result_id": "e148432e-8095-4270-963e-6d6a972c433b"
+    },
+    {
+      "claim_id": "eb036580-5a38-46b7-8822-28bbe7dbc015",
+      "result_id": "e148432e-8095-4270-963e-6d6a972c433b"
+    },
+    {
+      "claim_id": "2eca63af-28eb-445e-b541-0656fac989e4",
+      "result_id": "9d642823-2487-4eea-a1c1-11ae867f1861"
+    },
+    {
+      "claim_id": "968ee9e1-2143-4465-a249-c5de290efe19",
+      "result_id": "9d642823-2487-4eea-a1c1-11ae867f1861"
+    },
+    {
+      "claim_id": "1454ede5-dd01-463a-823e-27c07fea9a0e",
+      "result_id": "9d642823-2487-4eea-a1c1-11ae867f1861"
+    },
+    {
+      "claim_id": "86bbe2c6-91f9-4e52-b9c1-90ffbd861211",
+      "result_id": "9d642823-2487-4eea-a1c1-11ae867f1861"
+    },
+    {
+      "claim_id": "a8c36891-a683-4c6e-babb-6afb9590b7a6",
+      "result_id": "45a88f41-9c0f-48d8-90b5-87f7ef5fb0af"
+    },
+    {
+      "claim_id": "2abec353-36c3-4aae-ab51-55b1e97567fe",
+      "result_id": "58f46e25-da49-4904-bd2a-74638a202332"
+    },
+    {
+      "claim_id": "f1fb3a68-04b4-472c-ae5b-062add9d0e65",
+      "result_id": "58f46e25-da49-4904-bd2a-74638a202332"
+    },
+    {
+      "claim_id": "9d083de7-57d4-4b32-a05a-0fa0365462d0",
+      "result_id": "58f46e25-da49-4904-bd2a-74638a202332"
+    },
+    {
+      "claim_id": "07fb58a2-d302-4c0a-a0ae-181f43f4deac",
+      "result_id": "58f46e25-da49-4904-bd2a-74638a202332"
+    },
+    {
+      "claim_id": "f0686278-82ce-4ab8-81ca-0cd2d33e1666",
+      "result_id": "58f46e25-da49-4904-bd2a-74638a202332"
+    },
+    {
+      "claim_id": "a655bef8-b676-46c7-ad5c-94b05e928e68",
+      "result_id": "58f46e25-da49-4904-bd2a-74638a202332"
+    },
+    {
+      "claim_id": "f11ae0e5-0938-454b-99cc-53d0cf855b35",
+      "result_id": "58f46e25-da49-4904-bd2a-74638a202332"
+    },
+    {
+      "claim_id": "85cd7048-ac1a-40b7-a961-fdf688723a2d",
+      "result_id": "58f46e25-da49-4904-bd2a-74638a202332"
+    },
+    {
+      "claim_id": "513028d0-6609-453f-8809-19d518292f55",
+      "result_id": "58f46e25-da49-4904-bd2a-74638a202332"
+    },
+    {
+      "claim_id": "12aa0aa5-daca-4a31-9062-4cb5128551d6",
+      "result_id": "58f46e25-da49-4904-bd2a-74638a202332"
+    },
+    {
+      "claim_id": "8878e627-4f2c-4460-a8fa-e3a3d4c08a93",
+      "result_id": "58f46e25-da49-4904-bd2a-74638a202332"
+    },
+    {
+      "claim_id": "dfce9094-6171-47e0-a9ec-05251d8bec0b",
+      "result_id": "58f46e25-da49-4904-bd2a-74638a202332"
+    },
+    {
+      "claim_id": "f2595957-bc17-43e9-81c2-b26e907a62e1",
+      "result_id": "cdd42c20-6044-4913-a976-8110aa1630a5"
+    },
+    {
+      "claim_id": "1ae57fa1-6df5-4265-8c0c-0f580cb76bc2",
+      "result_id": "cdd42c20-6044-4913-a976-8110aa1630a5"
+    },
+    {
+      "claim_id": "ee025487-9aee-4056-81c4-616912f1c364",
+      "result_id": "cdd42c20-6044-4913-a976-8110aa1630a5"
+    },
+    {
+      "claim_id": "ec6d3cf3-a1a6-4dc8-8656-6165a2e50895",
+      "result_id": "cdd42c20-6044-4913-a976-8110aa1630a5"
+    },
+    {
+      "claim_id": "9eef9d49-609b-4f81-a7ad-f7f36099d77d",
+      "result_id": "55997e48-06bd-4021-a925-d2a869c436db"
+    },
+    {
+      "claim_id": "4d137dd3-4d4f-4793-843c-51514c5d0b93",
+      "result_id": "55997e48-06bd-4021-a925-d2a869c436db"
+    },
+    {
+      "claim_id": "bdfa50b3-0c3b-430f-9ef6-04915094a108",
+      "result_id": "55997e48-06bd-4021-a925-d2a869c436db"
+    },
+    {
+      "claim_id": "6500c741-16a6-448f-9e8b-18dc6469ba65",
+      "result_id": "55997e48-06bd-4021-a925-d2a869c436db"
+    },
+    {
+      "claim_id": "38cdba0e-ba96-4163-b1c4-6c3b4b1787e6",
+      "result_id": "55997e48-06bd-4021-a925-d2a869c436db"
+    },
+    {
+      "claim_id": "0915437d-a173-41ac-b5bd-7b578387d56f",
+      "result_id": "55997e48-06bd-4021-a925-d2a869c436db"
+    },
+    {
+      "claim_id": "083a7391-aa6e-4584-aec6-cfaf803db02d",
+      "result_id": "b2504c29-dc03-4a03-8229-1d8bf8a4369d"
+    },
+    {
+      "claim_id": "78650222-bab4-46fc-92d0-84b571c900ba",
+      "result_id": "b2504c29-dc03-4a03-8229-1d8bf8a4369d"
+    },
+    {
+      "claim_id": "858958c5-ece1-4997-abcf-cb00ca1b4ad2",
+      "result_id": "b2504c29-dc03-4a03-8229-1d8bf8a4369d"
+    },
+    {
+      "claim_id": "a1662e16-b461-4768-af23-07992799d172",
+      "result_id": "b2504c29-dc03-4a03-8229-1d8bf8a4369d"
+    },
+    {
+      "claim_id": "a8d5a2e7-4d32-41b5-a07e-f7797737e524",
+      "result_id": "ed01d481-1b3c-4de3-9b57-f71f4deda4cb"
+    },
+    {
+      "claim_id": "6e4eabd4-2d92-4524-9043-fc1459a0cc03",
+      "result_id": "34e446e4-6ee4-4838-b92c-573e5bc2261e"
+    },
+    {
+      "claim_id": "69dca483-a06f-4658-bd5d-7fa87eccca91",
+      "result_id": "34e446e4-6ee4-4838-b92c-573e5bc2261e"
+    },
+    {
+      "claim_id": "3fcb917e-0bb3-4c78-bba6-71c88d768c1c",
+      "result_id": "9c418a25-29bf-4657-ba7f-7cebd7b56341"
+    },
+    {
+      "claim_id": "866d3c82-1919-4f75-ab86-22af61dab642",
+      "result_id": "9c418a25-29bf-4657-ba7f-7cebd7b56341"
+    },
+    {
+      "claim_id": "fe0d6a1e-6455-4c3d-9a15-a646fafd124c",
+      "result_id": "9c418a25-29bf-4657-ba7f-7cebd7b56341"
+    },
+    {
+      "claim_id": "5307d03b-4477-4b37-9345-aafc58ab1991",
+      "result_id": "3140d1e8-cee0-48d6-8108-9d13ba86c95c"
+    },
+    {
+      "claim_id": "93703fcc-818b-4bc8-9316-cbd9aac214dd",
+      "result_id": "3140d1e8-cee0-48d6-8108-9d13ba86c95c"
+    },
+    {
+      "claim_id": "018e75ce-ce2b-4ab9-ac47-45a229cb8410",
+      "result_id": "3140d1e8-cee0-48d6-8108-9d13ba86c95c"
+    },
+    {
+      "claim_id": "ad7ce8f1-e393-48aa-8619-32f95d9f0359",
+      "result_id": "3140d1e8-cee0-48d6-8108-9d13ba86c95c"
+    },
+    {
+      "claim_id": "29402aaa-7e11-416a-8f37-65e2ad8802e1",
+      "result_id": "3140d1e8-cee0-48d6-8108-9d13ba86c95c"
+    },
+    {
+      "claim_id": "7cfd9e09-375a-46ef-8c76-d1a750b37b38",
+      "result_id": "3140d1e8-cee0-48d6-8108-9d13ba86c95c"
+    },
+    {
+      "claim_id": "7c42cf4d-7c53-4970-8118-52e6567136be",
+      "result_id": "3140d1e8-cee0-48d6-8108-9d13ba86c95c"
+    },
+    {
+      "claim_id": "3c8c8017-740a-40b6-b8f8-73fe6338c1e4",
+      "result_id": "3140d1e8-cee0-48d6-8108-9d13ba86c95c"
+    },
+    {
+      "claim_id": "5682bf8d-575e-445a-a49b-4292e86c6c0c",
+      "result_id": "3140d1e8-cee0-48d6-8108-9d13ba86c95c"
+    },
+    {
+      "claim_id": "004bf621-d1cf-460b-b967-fca179f6442f",
+      "result_id": "3140d1e8-cee0-48d6-8108-9d13ba86c95c"
+    },
+    {
+      "claim_id": "e6b5d11c-c30d-4202-bf72-db90eee0cb5e",
+      "result_id": "3140d1e8-cee0-48d6-8108-9d13ba86c95c"
+    },
+    {
+      "claim_id": "daa6b6b7-b276-44de-8b80-4922f1bc729f",
+      "result_id": "3140d1e8-cee0-48d6-8108-9d13ba86c95c"
+    },
+    {
+      "claim_id": "0a73418b-5761-488f-bde2-4d6c40e3df53",
+      "result_id": "3140d1e8-cee0-48d6-8108-9d13ba86c95c"
+    },
+    {
+      "claim_id": "6181f24a-2044-4f3d-b579-464e197ba0ef",
+      "result_id": "3140d1e8-cee0-48d6-8108-9d13ba86c95c"
+    },
+    {
+      "claim_id": "73726e4d-83c5-4d0b-9756-21ec10b00534",
+      "result_id": "3140d1e8-cee0-48d6-8108-9d13ba86c95c"
+    },
+    {
+      "claim_id": "6320ec26-2e7d-4a7b-8473-7d2717425cb2",
+      "result_id": "3140d1e8-cee0-48d6-8108-9d13ba86c95c"
+    },
+    {
+      "claim_id": "0893cf63-554a-4bea-81bd-f810dde78f28",
+      "result_id": "1a7eba20-f068-40c9-985f-87755f7ecae1"
+    },
+    {
+      "claim_id": "3c12e41a-f1cb-499e-a0db-2c3572e67e56",
+      "result_id": "1a7eba20-f068-40c9-985f-87755f7ecae1"
+    },
+    {
+      "claim_id": "5d22e550-9e2c-4d6c-9804-6544dac45b89",
+      "result_id": "1a7eba20-f068-40c9-985f-87755f7ecae1"
+    },
+    {
+      "claim_id": "18326384-4589-415e-b1b6-a8f95f69a91e",
+      "result_id": "1a7eba20-f068-40c9-985f-87755f7ecae1"
+    },
+    {
+      "claim_id": "d0919348-c827-40ea-bc71-3341367e0558",
+      "result_id": "1a7eba20-f068-40c9-985f-87755f7ecae1"
+    },
+    {
+      "claim_id": "925edc8e-6e44-4441-a22a-2c128375343f",
+      "result_id": "1a7eba20-f068-40c9-985f-87755f7ecae1"
+    },
+    {
+      "claim_id": "150cb84a-962b-4f36-8eb9-c2478df7b7aa",
+      "result_id": "1a7eba20-f068-40c9-985f-87755f7ecae1"
+    },
+    {
+      "claim_id": "a666cfcc-9fb4-4d51-b97b-8ab497102f99",
+      "result_id": "1a7eba20-f068-40c9-985f-87755f7ecae1"
+    }
+  ],
+  "comparisons": []
+}

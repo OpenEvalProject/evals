@@ -1,0 +1,319 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "HD mice exhibit widespread functional connectivity deficits in cortico-striatal and thalamo-striatal networks. Resting-state fMRI revealed reduced whole-brain network strength and global efficiency in HD mice, with the left striatum showing significantly reduced functional connectivity with multiple cortical regions (OFC, mPFC, M2, M1, cingulate, somatosensory cortex) and thalamus compared to WT mice.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C43 provide converging evidence from resting-state fMRI showing reduced functional connectivity in HD mice. The findings include appropriate statistical tests (Student's t-test, two-way ANOVA with Bonferroni post hoc), specific p-values, and sample sizes (n=11 WT, n=13 HD). The seed-based analysis methodology is clearly described and the results are internally consistent.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "HD mice show altered striatal metabolite profiles and reduced glutamate/glutamine ratio. MRS revealed increased Cr+PCr and decreased NAA, NAAG, and Taurine in HD striatum, with a significantly reduced glutamate/glutamine ratio. GluCEST imaging confirmed decreased glutamate levels in both striatum and cortex of HD mice, with significant correlation between MRS and GluCEST measurements.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C52 present complementary metabolite measurements using two independent techniques (MRS and GluCEST). Statistical analyses are appropriate (two-way ANOVA with Bonferroni post hoc, Student's t-test), with specific p-values and sample sizes provided. The correlation between MRS and GluCEST (r=0.5979, p=0.0026) validates the consistency of measurements. However, C49 makes an inferential leap from reduced ratio to reduced release that requires additional validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "Optogenetically-induced glutamate release from M2 cortex terminals is abolished in HD mice. In vivo microdialysis showed that blue light stimulation of ChR2-expressing M2 cortex terminals increased striatal glutamate levels in WT mice but failed to produce detectable increases in HD mice, despite similar baseline glutamate concentrations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C56 demonstrate a clear functional deficit in cortico-striatal glutamate release using optogenetic stimulation coupled with microdialysis. The experimental design includes appropriate controls (YFP-expressing mice) and statistical analysis (two-way ANOVA with Bonferroni post hoc). Sample sizes are modest (WT-ChR2 n=4, HD-ChR2 n=5) but the effect is clear and consistent with other findings in the manuscript.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "Striatal electrophysiological responses to M2 cortex stimulation are blunted in HD mice. Multi-electrode array recordings showed that optogenetic stimulation of M2 cortex afferents evoked significantly smaller field postsynaptic currents (fPSC) in the dorsal striatum of HD mice compared to WT, with responses increasing with light intensity in both genotypes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C61 provide electrophysiological validation of impaired cortico-striatal transmission in HD. The MEA recordings demonstrate dose-response relationships and include appropriate statistical analysis (two-way ANOVA with Bonferroni post hoc). Sample sizes are small (WT-ChR2 n=4, HD-ChR2 n=3) but the findings are consistent with the microdialysis results and support both pre- and postsynaptic deficits.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "Repeated M2-DLS optogenetic stimulation improves exploratory behavior and reduces stereotypies in HD mice without affecting locomotion. HD mice showed reduced rearing and increased grooming compared to WT. Repeated optogenetic stimulation over three weekly sessions progressively increased exploratory behavior and reduced stereotypic grooming in HD-ChR2 mice, with effects persisting before and after stimulation sessions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C68 demonstrate behavioral improvements from repeated optogenetic stimulation. The experimental design includes multiple sessions, appropriate controls (YFP groups), and statistical analyses (two-way ANOVA with Bonferroni post hoc). Sample sizes are adequate (WT-YFP n=10, WT-ChR2 n=11, HD-YFP n=13, HD-ChR2 n=11). The persistence of effects across sessions suggests long-lasting plasticity changes, though the mechanism requires further investigation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "M2-DLS optogenetic stimulation rescues motor learning and coordination deficits in HD mice. HD mice showed impaired performance on accelerating rotarod and balance beam tests. Following repeated optogenetic stimulation, HD-ChR2 mice achieved performance levels similar to WT mice on both tasks, suggesting that M2-DLS circuit activation induces long-lasting improvements in basal ganglia motor function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C74 demonstrate rescue of motor deficits through circuit-specific stimulation. The behavioral tests are well-established for assessing motor function, and statistical analyses are appropriate (repeated measures ANOVA, two-way ANOVA with Bonferroni post hoc). Sample sizes are adequate (WT-YFP n=10, WT-ChR2 n=11, HD-YFP n=10, HD-ChR2 n=9). The results are striking and consistent across multiple motor tasks, though the durability of effects beyond the testing period is not assessed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "Repeated optogenetic stimulation restores long-term depression (LTD) induction capacity in HD mice. Following repeated in vivo optogenetic stimulation, ex vivo electrophysiological recordings showed that HD-ChR2 mice regained the ability to induce stable LTD at cortico-striatal synapses to levels comparable to WT mice, whereas HD-YFP mice showed impaired LTD.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C79 demonstrate restoration of synaptic plasticity mechanisms. The LTD protocol is standard (theta-burst stimulation) and the electrophysiological recordings are well-controlled. Statistical analyses are appropriate (two-way ANOVA with Bonferroni post hoc, Student's t-test) with adequate sample sizes (WT-YFP n=12, WT-ChR2 n=13, HD-YFP n=12, HD-ChR2 n=14). The findings provide a mechanistic link between repeated stimulation and behavioral improvements.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "Repeated M2-DLS optogenetic stimulation restores dendritic spine density in striatal medium spiny neurons of HD mice. Golgi staining revealed reduced spine density in HD mice compared to WT. Following repeated optogenetic stimulation, spine density in HD-ChR2 mice was significantly increased to levels not different from WT, without affecting WT spine density.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C82 provide morphological evidence of synaptic plasticity changes. The Golgi staining methodology is appropriate for spine density analysis, and statistical tests are correctly applied (two-way ANOVA with Bonferroni post hoc). Sample sizes are modest but adequate for this type of analysis. The findings complement the electrophysiological LTD results and provide structural correlates for behavioral improvements. However, causality between spine density changes and behavioral improvements is inferred rather than directly demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C4",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "Background on HD pathology and cortico-striatal dysfunction. HD is caused by CAG repeat expansion in the huntingtin gene, with pathology most prominent in the striatum. Progressive cortico-striatal disconnection characterizes HD, with evidence from both human patients and mouse models showing impaired cortico-striatal communication, synaptic loss, and altered glutamate release.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C32 provide established background knowledge about HD pathology and cortico-striatal dysfunction, supported by appropriate citations to prior literature. These claims establish the scientific context for the current study but do not represent novel findings from this work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "Discussion of HD pathophysiology and therapeutic context. The authors discuss that basal ganglia circuit dysfunction causes motor abnormalities in HD, with cortico-striatal disconnection playing a prominent role. They contextualize their findings within the broader literature on optogenetic circuit modulation for neurological disorders and discuss the specificity of M2-DLS pathway compromise in their HD model.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C95 represent interpretive discussion of the results in the context of prior literature. These claims are appropriately supported by citations and provide context for the study's findings, but represent synthesis and interpretation rather than novel experimental results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108"
+    ],
+    "result": "Discussion of glutamate alterations in HD. The authors discuss the complexity of glutamate measurements in HD, noting that while total glutamate levels show inconsistent changes, the glutamate/glutamine ratio (reflecting synaptic glutamate) is consistently reduced. They contextualize their optogenetic stimulation findings showing reduced glutamate release in symptomatic HD mice within the broader literature on biphasic changes across disease progression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C108 provide important discussion of the glutamate findings in context of prior literature. The authors appropriately acknowledge uncertainties and conflicting findings in the literature regarding total glutamate levels while emphasizing the consistency of their glutamate/glutamine ratio findings. This represents thoughtful interpretation rather than novel experimental findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123"
+    ],
+    "result": "Discussion of M2-DLS circuit function in motor learning and coordination. The authors discuss the role of M2-DLS circuitry in motor learning and coordination, including the functional reorganization during learning, the differential roles of direct and indirect pathways, and the contribution of GABAergic projections. They suggest their optogenetic stimulation may strengthen the ability to complete motor learning tasks in HD mice.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C109-C123 provide detailed discussion of the functional organization of cortico-striatal circuits and their role in motor behavior, supported by appropriate citations. These claims contextualize the motor behavioral findings but represent interpretation and synthesis of prior literature rather than novel experimental results. Claim C116 is appropriately qualified as speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C139"
+    ],
+    "result": "Discussion of long-lasting effects of optogenetic stimulation. The authors discuss that selective optogenetic stimulations induce long-lasting effects in neuronal plasticity and behavior, citing examples from depression and stroke models. They note that their M2-DLS stimulation effects on exploratory behavior and stereotypies persist for at least one week, and that the specific effects depend on the cortico-striatal subcircuit stimulated.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C124-C139 discuss the persistence of optogenetic stimulation effects, appropriately supported by citations to prior work and their own findings. The discussion appropriately contextualizes the long-lasting behavioral and plasticity changes observed in their study. These represent interpretation and synthesis rather than novel experimental findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C140",
+      "C141",
+      "C142",
+      "C143",
+      "C144",
+      "C145",
+      "C146"
+    ],
+    "result": "Summary conclusions and therapeutic implications. The authors conclude that cortico-striatal circuits are deeply altered in symptomatic HD mice, with altered glutamate release from M2 cortical projection neurons and deficient striatal responses. They highlight the key role of the M2-DLS circuit in motor alterations and conclude that they successfully reestablished physiological, morphological, and behavioral alterations through persistent synaptic plasticity in selected cortico-striatal circuits, opening opportunities for circuit restoration-based therapeutic strategies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C140-C146 represent summary conclusions that are well-supported by the experimental findings presented in the manuscript. Claims C145-C146 appropriately qualify the therapeutic implications as opportunities for future development rather than immediate clinical applications. These represent high-level synthesis of the study's findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C147"
+    ],
+    "result": "R6/1 mouse model description. The study used R6/1 transgenic mice expressing exon-1 of mutant huntingtin containing 115 CAG repeats, acquired from The Jackson Laboratory and maintained in a B6CBA background.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C147 provides a straightforward description of the mouse model used in the study, which is a well-established HD model. This is a methodological detail that is appropriately documented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C11",
+      "C90"
+    ],
+    "result": "Therapeutic potential of M2-DLS pathway stimulation. The authors conclude that selective stimulation of the M2-DLS pathway can become an effective therapeutic strategy in HD, based on their demonstration that this approach ameliorates HD symptoms in symptomatic HD mice.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C11 and C90 make strong statements about therapeutic potential based on proof-of-concept findings in a mouse model. While the experimental results support the efficacy of M2-DLS stimulation in this model, translation to human therapy faces substantial challenges including: (1) the optogenetic approach is not clinically applicable, (2) long-term durability of effects is not assessed, (3) only one HD mouse model is tested, and (4) the symptomatic stage tested may not represent the full disease spectrum. The claims would be better qualified as demonstrating therapeutic potential requiring further development rather than stating this 'can become' an effective strategy.",
+    "result_type": "MAJOR"
+  }
+]

@@ -1,0 +1,214 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C86",
+      "C120"
+    ],
+    "result": "Under nutrient restriction (LY), C4da sensory neurons exhibit preferential dendrite growth compared to epidermal cells, resulting in dendrite overgrowth. While LY delays overall larval development (264 hr vs 120 hr to pupariation), C4da neurons ultimately achieve 1.39-fold longer dendrites and grow 57% faster when normalized by segment width, with consistently higher dendrite density throughout development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C4, C29-C38, C86, and C120 collectively demonstrate preferential dendrite growth under nutrient stress through multiple complementary measurements (total length, normalized length, dendrite density, branch numbers). The data include time-course analyses, quantitative morphometric measurements with appropriate statistical analyses (R\u00b2 values >0.9), and controls comparing HY vs LY conditions. The finding is internally consistent across multiple metrics and developmental timepoints.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "Neuronal InR/Tor signaling mediates preferential dendrite growth under nutrient stress. Genetic manipulations (InR/Tor knockdown or dominant-negative expression) have nutrient-dependent effects: mild or non-significant effects in HY but pronounced dendrite reduction in LY. pRpS6 staining reveals that nutrient stress switches the relative Tor signaling strength, with neurons maintaining higher activity than epidermal cells under LY conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C41 and C87-C92 provide converging genetic and biochemical evidence. The genetic manipulations show statistically significant nutrient-dependent effects (interaction terms p<0.01), and pRpS6 immunostaining provides direct readout of Tor activity showing reversed ratios between neurons and epidermis under LY. The two-way ANOVA analyses appropriately test for nutrient-dependent effects. Epidermal InR/Tor suppression causing dendrite overgrowth (C87-C88) provides additional support for the relative signaling model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "C4da neurons maintain low, nutrient-independent autophagy levels while epidermal cells show robust autophagy induction under nutrient stress. Autophagosome levels (mCherry-Atg8a) in epidermal cells increase 5-fold in LY, while neuronal levels remain low in both conditions. Atg8a knockdown increases epidermal cell size by 16% in LY but has similar mild effects (11-13%) on dendrite length in both HY and LY. Mitf overexpression in neurons strongly reduces dendrite length in LY, confirming that high autophagy suppresses dendrite growth.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C44 and C93-C103 provide comprehensive evidence through multiple autophagy markers (mCherry-Atg8a, Lamp-mCherry, GFP-mCherry-Atg8a flux reporter) and genetic manipulations (Atg8a knockdown, Mitf overexpression). The differential regulation is demonstrated with appropriate quantification and statistics. The lack of Mitf-GFPnls detection in neurons (C45, C101) provides mechanistic insight. The functional consequences are tested through loss- and gain-of-function experiments with consistent results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C5",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C121",
+      "C122",
+      "C125",
+      "C127"
+    ],
+    "result": "FoxO is differentially expressed in neurons versus epidermal cells, with neurons showing minimal FoxO expression while epidermal cells express FoxO at high levels. Multiple reporters (FoxO-GFP, anti-FoxO antibody, foxo-Gal4) consistently show low/undetectable FoxO in C4da neurons but robust expression in epidermis. FoxO knockdown in neurons has no effect on dendrite length but knockdown in epidermis increases cell size by 34% under LY. FoxO overexpression in neurons causes nutrient-dependent dendrite reduction (11.7% in HY, 49.2% in LY).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C47-C55, C104-C110, C121-C122, C125, and C127 provide convergent evidence from multiple independent approaches (three different FoxO reporters, immunostaining, genetic manipulations). The differential expression is consistently demonstrated across methods. The functional studies show appropriate tissue-specific and nutrient-dependent effects with statistical support. The foxo-Gal4 line was generated using the Trojan-MiMIC system to ensure endogenous regulation, strengthening the expression data. The gain-of-function experiments showing nutrient-dependent effects of FoxO overexpression support the model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C112",
+      "C113",
+      "C114"
+    ],
+    "result": "FoxO overexpression suppresses dendritic Tor signaling and induces autophagy in a nutrient-dependent manner. In HY, neuronal FoxO overexpression does not alter pRpS6 ratios, but in LY it specifically reduces dendritic (but not somatic) pRpS6 to levels below epidermal cells. Autophagosome levels in FoxO-overexpressing neurons increase 4.9-fold in LY but not in HY.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C58 and C112-C114 demonstrate the mechanism by which FoxO overexpression affects dendrite growth through pRpS6 immunostaining and mCherry-Atg8a quantification. The compartment-specific effects (dendrites vs soma) and nutrient-dependent responses are well-documented with appropriate quantification. This mechanistically links FoxO to the Tor/autophagy axis and explains why low endogenous FoxO protects neuronal growth.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C8",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C115",
+      "C116"
+    ],
+    "result": "Preferential dendrite growth under nutrient stress enhances larval thermal nociception. LY larvae show increased nocifensive rolling responses across temperatures (40-46\u00b0C), with response thresholds ~2\u00b0C lower than HY larvae and more fast responses (<5s) at 43-48\u00b0C. FoxO overexpression in C4da neurons, which reduces dendrite growth in LY, significantly reduces both overall and fast responses at 46\u00b0C in LY larvae.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C59-C62, C115-C116 provide behavioral evidence for functional consequences of dendrite overgrowth using an established thermal nociception assay. The dose-response curves across temperatures (n=90 larvae per condition) show statistically significant differences. The FoxO overexpression experiment (n=120 per group) provides a genetic link between dendrite morphology and behavior, though the authors appropriately note they cannot rule out other effects of FoxO on neuronal function (C116). The correlation between dendrite reduction and behavioral phenotype is compelling but not definitive proof of causation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C117",
+      "C118",
+      "C119"
+    ],
+    "result": "Different classes of da neurons respond differentially to nutrient stress. C1da neurons (ddaE) show no change in dendrite length under LY, while C3da neurons (ddaA, ddaF) show significant increases (32-40% total length, 46-61% terminal length, 47-58% terminal branches). All da neuron classes examined (C1da, C3da, C4da) show low FoxO expression and nutrient-independent autophagy levels, though C1da neurons uniquely show high, nutrient-responsive lysosomal markers (2.7-fold increase in LY).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C67 and C117-C119 extend the findings to other da neuron classes with appropriate quantification. The differential responses correlate with arbor complexity and growth mechanisms (C82-C84), providing biological insight. The consistent low FoxO expression across da classes despite different growth responses suggests additional factors determine nutrient sensitivity. The C1da lysosomal data (C66) is intriguing but somewhat tangential to the main story. Sample sizes appear adequate (n=13-20) with statistical analyses performed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "PNS dendrite sparing represents a distinct form of nervous system protection from CNS brain sparing. Unlike CNS neuroblasts that rely on extrinsic glia-derived Jeb/Alk signaling independent of InR/Tor, PNS neurons use an intrinsic program (low FoxO expression) that maintains InR/Tor signaling under nutrient stress. This protects individual post-mitotic neurons at the level of arbor growth rather than protecting stem cell proliferation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C72 synthesize the current findings with prior work on CNS brain sparing (C2, C14-C15) to identify a novel mechanism. The distinctions are clearly supported: (1) post-mitotic arbor growth vs stem cell proliferation, (2) intrinsic genetic program vs extrinsic factor, (3) InR/Tor-dependent vs InR/Tor-independent. This represents an important conceptual advance in understanding neural protection mechanisms, though the comparison relies partly on prior literature.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C111"
+    ],
+    "result": "Low FoxO expression confers nutrient insensitivity to neurons, giving them a growth advantage over tissues with higher FoxO expression. This FoxO-dosage-dependent nutrient insensitivity has been previously described in adult genitalia, where genital arches (low FoxO) are less affected by poor diet than wings and maxillary palps (higher FoxO).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C80 and C111 synthesize the mechanistic findings and place them in broader context. The current data strongly support the FoxO dosage model through expression studies and gain/loss-of-function experiments. The comparison to adult genitalia (C79-C80, citing Tang et al., 2011) strengthens the generality of the mechanism, though that prior work focused on cell number rather than cell size. The claim that foxo plays a more significant role than other mTor inhibitors (C111) is supported by the candidate gene screen (C42-C46, Figure 4\u2014supplement 1), though the negative results should be interpreted cautiously given potential RNAi efficacy issues.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C123",
+      "C124",
+      "C126"
+    ],
+    "result": "In epidermal cells, high nutrition elevates InR/Tor signaling and suppresses FoxO activity and autophagy leading to high growth rates, while low nutrients reduce InR/Tor signaling and activate FoxO to stimulate autophagy and slow growth. In neurons, dendritic InR/Tor signaling is not further suppressed by FoxO when systemic insulin is low due to minimal FoxO expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C123-C124 and C126 represent the integrated model supported by the collective data on Tor signaling (C89-C92), autophagy (C93-C103), and FoxO expression/function (C47-C55). This model is well-supported by the experimental evidence, though it represents an interpretation/synthesis rather than direct experimental results. The model is depicted in Figure 8 and provides a coherent framework explaining the differential growth responses.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C128"
+    ],
+    "result": "Rheb in neurons mildly suppresses dendrite growth in high nutrition but enhances dendrite growth under nutrient stress, showing nutrient-dependent effects (11% increase in HY, 11% reduction in LY upon knockdown).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C128 describes an interesting nutrient-dependent role for Rheb, but the effects are modest (11% in each direction) and the mechanism is unclear. The authors note uncertainty about whether effects are Tor-mediated. The RNAi line is validated (Francis and Ghabrial, 2015), but the biological significance of these small, opposing effects is uncertain. This finding warrants further investigation but is not well-integrated into the main story. Sample sizes appear adequate (n=12-26) but the functional interpretation remains speculative.",
+    "result_type": "MINOR"
+  }
+]

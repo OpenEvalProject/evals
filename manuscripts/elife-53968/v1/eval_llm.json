@@ -1,0 +1,230 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9"
+    ],
+    "result": "Prior work has established that designer nucleases enable diverse genome editing applications, that double-strand breaks promote homologous recombination, and that short homology arms can direct targeted integration in various species, though with variable efficiency and high mosaicism in zebrafish.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C9 are all supported by citations to prior work and accurately summarize the state of the field before the current study. These claims establish the scientific context and motivation for the authors' work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15"
+    ],
+    "result": "A single 5' homology arm of 12-48 bp directs targeted integration at the noto locus with increasing efficiency and precision as homology length increases, achieving 95% precise integration with 24 bp homology arms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C15 are supported by MiSeq data showing 95% sgRNA cutting efficiency, fluorescence imaging showing increased RFP expression with longer homology arms, and sequencing data showing 56%, 95%, and 79% precise 5' junctions for 12, 24, and 48 bp homology arms respectively. The data directly support the conclusion that longer homology arms up to 48 bp improve targeting efficiency.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C16",
+      "C17"
+    ],
+    "result": "A universal guide RNA (UgRNA) with no predicted off-targets in zebrafish, pig, or human genomes efficiently liberates donor homology arms in vivo, resulting in 21% of embryos showing targeted integration at the noto locus.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C17 are supported by computational prediction of no off-targets, citation to prior validation work, and quantitative fluorescence data showing 21% targeting efficiency. This efficiency is comparable to using the gene-specific sgRNA to cut the donor, validating the UgRNA approach.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "Dual homology arm liberation using the UgRNA directs efficient targeted integration at multiple zebrafish loci (noto, tyr, esama, cx43.4), with 24 bp homology arms performing as efficiently as 48 bp arms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C22 are supported by quantitative fluorescence data across multiple loci showing 21-64% targeting efficiency. The data demonstrate that the dual homology arm strategy works at multiple genes and that 24 bp and 48 bp homology arms show similar efficiency when using UgRNA liberation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "At the cx43.4 locus, increasing homology arm length from 24/48 bp to 1 kb does not significantly improve targeting efficiency when using UgRNA liberation, while circular or linear donors without UgRNA show dramatically reduced efficiency.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C26 are supported by quantitative data with statistical analysis showing no significant difference between short and 1 kb homology arms (p=0.1693 and p=0.6520), while circular (0-3%, p=0.0067) and linear (5%, p=0.0111) donors without UgRNA show significantly reduced efficiency. This demonstrates the importance of UgRNA liberation and suggests short homology arms are sufficient.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C27",
+      "C28"
+    ],
+    "result": "At the esama locus, increasing homology arms from 24 bp to 1 kb dramatically increased targeting efficiency to 82-94% (p=0.0001), but the majority of expression was non-specific, suggesting off-target integration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C28 are supported by quantitative data showing significantly increased RFP-positive embryos with 1 kb homology arms, but the observation that expression was not vascular-specific indicates off-target integration. This is a locus-specific effect that contrasts with cx43.4 results and highlights potential risks of long homology arms containing intronic sequences.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "Germline transmission of targeted integrations occurred at high rates across multiple loci, with an average of 49% of F0 founders transmitting tagged alleles (range 22-100%), and F1 progeny showing targeted expression at an average frequency of 17.4% (range 2-64%).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C33 are supported by comprehensive germline transmission data across 9 loci showing 30/61 (49%) F0 founders transmitted targeted alleles. The data demonstrate efficient germline transmission, which is a major improvement over prior reports of high mosaicism and inefficient germline recovery in zebrafish.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "Junction fragment analysis and Southern blot analysis of F1 progeny revealed predominantly precise 5' integrations (95% across seven genes) and single-copy integrations, but lower precision at 3' junctions (46% across six genes).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C37 are supported by Southern blot data showing single-copy integration at tyr, and sequencing data showing 35/37 (95%) precise 5' junctions but only 13/28 (46%) precise 3' junctions across multiple loci. The asymmetry between 5' and 3' precision is notable and the authors appropriately note this may be due to lack of selection at the 3' end.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "Deletion tagging using two sgRNAs to simultaneously delete genomic regions (394 bp to 48.4 kb) and integrate a reporter cassette showed efficient somatic integration (44-85% RFP-positive embryos) with high precision at both 5' and 3' junctions in somatic tissue.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C40 are supported by fluorescence data showing similar targeting efficiency regardless of deletion size, and sequencing data showing 85-97% precise 5' junctions and 45-67% precise 3' junctions in somatic tissue. This demonstrates the strategy can bridge two distant cut sites in somatic cells.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "Deletion tagging showed poor germline transmission efficiency, with only 1/16 (6%) rb1 founders and 0/10 msna founders transmitting deletion-tagged alleles, suggesting simultaneous deletion and integration at two sites occurs at much lower frequency in the germline than single-site targeting.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C43 are supported by germline transmission data showing very low or absent transmission of deletion-tagged alleles, in stark contrast to the 49% average germline transmission for single-site targeting. This represents a significant limitation of the deletion tagging approach for germline applications.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "In porcine fibroblasts, the HMEJ strategy with 48 bp homology arms and UgRNA liberation resulted in 23% GFP-positive colonies with >50% showing both 5' and 3' junctions, compared to 2% with traditional HR using 760 bp homology arms where no colonies had both junctions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C46 are supported by quantitative colony counting data and PCR junction analysis showing dramatically improved efficiency with HMEJ compared to HR. Sequencing confirmed 7/8 colonies had precise 5' junctions and 8/8 had precise 3' junctions, demonstrating the strategy works efficiently in mammalian cells.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "In human K-562 cells, HMEJ with 48 bp homology arms resulted in >50% GFP-positive cells at day 14 compared to 6% with 806 bp HR donor, with stable expression maintained over 50 days and precise 5' junctions detected in bulk populations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C49 are supported by flow cytometry data showing >50% vs 6% GFP-positive cells, longitudinal data showing stable expression over 50 days, and sequencing showing precise 5' junctions. This demonstrates HMEJ outperforms traditional HR in human cells without antibiotic selection.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C50",
+      "C51"
+    ],
+    "result": "The pGTag vector series has been deposited at Addgene and the protocol and design tools are available at genesculpt.org.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C51 are statements of fact about resource availability that can be verified. These represent important contributions to the community by making the tools openly available.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "The authors speculate that their design elements (simultaneous DSBs, UgRNA liberation, fluorescence preselection) may enhance germline recovery, that precise 3' and 5' events may compete, that SDSA may be the repair mechanism, that rb1 essentiality may explain lack of germline transmission, and that repetitive elements in long homology arms may cause off-target integration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C52-C57 are explicitly speculative statements by the authors about mechanisms and explanations for their observations. While these are reasonable hypotheses based on the data, they are not directly tested and represent interpretations rather than demonstrated results. The speculation about SDSA (C55) is particularly uncertain as no mechanistic experiments were performed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "The authors conclude that short homology arms simplify vector construction and enable efficient targeting, that their tools will streamline experimental design and expand the zebrafish functional genomics toolkit, and that the results enable advanced genome editing in agriculture and human cell lines.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C63 represent reasonable conclusions based on the demonstrated results. The simplicity and efficiency of short homology arms is well-supported by the data (C58), the utility of the tools is demonstrated across multiple applications (C59-C60), and the successful application in mammalian cells supports broader utility (C62-C63). These are appropriate interpretations of the significance of the work.",
+    "result_type": "MINOR"
+  }
+]

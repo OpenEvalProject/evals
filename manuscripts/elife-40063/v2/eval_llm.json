@@ -1,0 +1,444 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5"
+    ],
+    "result": "M. tuberculosis causes significant global health burden and requires protein export for pathogenesis. The SecA2 export pathway is involved in exporting effector proteins, but its mechanism remains poorly understood.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C5 establish the background context for the study. C1 provides epidemiological data from WHO (2017), C2-C4 describe established knowledge about bacterial pathogenesis and the SecA2 pathway with appropriate citations, and C5 identifies the knowledge gap. These are well-supported background claims.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C17",
+      "C22",
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "A suppressor screen using secA2 K129R mutant identified satS (msmeg_1684) as a suppressor. Nine independent suppressor mutations mapped to satS, identified through whole-genome sequencing and direct sequencing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17, C22, C30-C33 describe the suppressor screen methodology and results shown in Figure 1A-B. The experimental approach is clearly described, multiple independent suppressors were identified, and the genetic evidence converges on satS. The data support the identification of satS as a secA2 K129R suppressor.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "Deletion of satS suppressed secA2 K129R phenotypes, and this suppression could be complemented with satS from either M. smegmatis or M. tuberculosis, indicating functional conservation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C41 are supported by experimental data in Figure 1C and Figure 1\u2014figure supplement 1A. The deletion, complementation, and cross-species complementation experiments provide strong genetic evidence for satS function and conservation. The controls (growth assays, complementation) are appropriate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "SatS is required for SecA2 K129R retention at the membrane. In the absence of SatS, SecA2 K129R localization shifts from membrane to cytoplasm, and SecY degradation is suppressed, suggesting SatS has a role in the SecA2 export pathway.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C51 are supported by subcellular fractionation data in Figures 1D-F. The localization experiments show clear differences between wild-type SecA2, SecA2 K129R, and the effect of satS deletion. Complementation controls validate the findings. The inference about SatS role in the SecA2 pathway (C50-C51) is reasonable based on the suppressor genetics and localization data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "In M. tuberculosis, satS is in an operon with sapM, which encodes a SecA2-dependent secreted phosphatase. This genomic arrangement is conserved in 26 mycobacterial species.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C25, C52-C54 are supported by RT-PCR data (Figure 2\u2014figure supplement 1) demonstrating operon structure and bioinformatic analysis identifying conservation. The experimental evidence for the operon is clear, and the bioinformatic analysis is appropriately cited. This genomic linkage provides important context for SatS function.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "The \u0394satS mutant of M. tuberculosis exhibits a more severe SapM secretion defect than the \u0394secA2 mutant, as measured by immunoblotting and phosphatase activity assays. This phenotype can be partially complemented.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C61 are supported by data in Figure 2A-B and supplements. Multiple independent assays (immunoblotting, phosphatase activity) show consistent results. The more severe phenotype of \u0394satS compared to \u0394secA2 is reproducible and includes appropriate controls (Mpt32, SigA). Partial complementation (26% of WT levels) is noted, which is important for interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "When M. tuberculosis sapM is expressed in M. smegmatis, SapM is secreted in a SecA2 and SatS dependent manner, with \u0394satS showing a more severe defect than \u0394secA2. This demonstrates functional conservation and validates M. smegmatis as a model system.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C65 are supported by data in Figure 2C. The heterologous expression experiment provides strong evidence for functional conservation. The phenotypes mirror those in M. tuberculosis, and appropriate controls are included. The inference about M. smegmatis as a valid model (C65) is reasonable based on the functional conservation data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "A whole cell phosphatase assay was developed that specifically detects secreted SapM. This assay confirmed that \u0394satS exhibits a more severe secretion defect than \u0394secA2, and the phenotype can be complemented with either SatSMtb or SatSMsm.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C70 are supported by data in Figure 2D. The assay validation using \u0394ss-SapM as a negative control (C67) is appropriate. The results are consistent with immunoblotting data, and complementation with both M. tuberculosis and M. smegmatis SatS provides additional evidence for functional conservation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "Total cellular and cytoplasmic SapM levels are dramatically reduced in the \u0394satS mutant compared to \u0394secA2. This effect is post-translational (not transcriptional or translational), suggesting SatS protects SapM protein prior to export.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C76 are supported by data in Figures 2E-F and Figure 2\u2014figure supplement 4. The dramatic reduction in cellular SapM is specific (SigA/GroEL controls are unchanged). qRT-PCR and lacZ fusion experiments rule out transcriptional/translational effects. The inference about SatS protecting SapM (C76) is reasonable but somewhat speculative\u2014it's the most likely explanation but not directly demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "Mce1A and Mce1E protein levels are reduced in cell wall fractions of \u0394satS mutants, with the defect being more severe than in \u0394secA2 mutants. Total cellular levels of Mce proteins are also reduced. SecA2-independent proteins (19 kDa, MspA) are unaffected.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C81 are supported by data in Figure 3A-C. The immunoblotting shows clear reductions in Mce protein export and cellular levels in \u0394satS mutants. Appropriate controls (19 kDa, MspA) demonstrate specificity. The more severe phenotype of \u0394satS compared to \u0394secA2 is consistent with SapM results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "PknG, PhoS1, and Ms1704 depend on SecA2 for export but are not affected by satS deletion, demonstrating that SatS affects multiple but not all SecA2-dependent substrates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C84 are supported by data in Figures 3D and 3F. The immunoblotting clearly shows that these proteins require SecA2 but not SatS for export. This substrate specificity is an important finding that distinguishes SatS from a core component of the SecA2 machinery and supports a chaperone-like role.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C87",
+      "C88"
+    ],
+    "result": "The \u0394satS mutant exhibits a significant defect in M. tuberculosis growth in macrophages, comparable to the \u0394secA2 mutant. This phenotype can be complemented, demonstrating that SatS plays an important role in intracellular growth.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C88 are supported by macrophage infection data in Figure 4. The experiment includes appropriate controls (H37Rv, \u0394secA2, complemented strain) and shows statistical significance. The comparable phenotypes of \u0394satS and \u0394secA2 mutants, despite SatS affecting only a subset of SecA2 substrates, suggests these substrates are critical for virulence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "SatS interacts with SapM preprotein in the cytoplasm prior to export and signal sequence cleavage. The signal sequence is not required for the SatS-SapM interaction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93-C96 are supported by co-immunoprecipitation data in Figure 5A. The preferential interaction with preprotein over mature SapM is clearly shown. The experiment with \u0394ss-SapM demonstrates that the signal sequence is not required. These findings are consistent with a chaperone function and are well-controlled.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "SatS-SapM interaction can be detected in a secA2 wild-type background, though less SapM is recovered when export is not inhibited. MspA does not co-immunoprecipitate with SatS. SatS is cytoplasmic in both M. tuberculosis and M. smegmatis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97-C101 are supported by data in Figure 5B and Figure 2\u2014figure supplement 2B, Figure 1\u2014figure supplement 1B. The reduced recovery in the secA2+ background (C98) is consistent with transient chaperone-substrate interactions. The MspA negative control (C99) demonstrates specificity. Subcellular fractionation confirms cytoplasmic localization (C100). The anomalous migration on SDS-PAGE (C101) is noted but not explained.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C102",
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "Epistasis analysis shows that the \u0394satS mutation is epistatic to the \u0394secA2 mutation, with the double mutant exhibiting the same dramatic reduction in cellular and secreted SapM as the \u0394satS single mutant, indicating SatS acts prior to SecA2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C102-C105 are supported by data in Figures 6A-C. The epistasis experiment is well-designed and the results clearly show that \u0394satS is epistatic to \u0394secA2. The lack of additive effect (C105) supports the interpretation that SatS acts upstream of SecA2 in the pathway. This is strong genetic evidence for the order of function.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112"
+    ],
+    "result": "In vitro aggregation assays demonstrate that SatS prevents preSapM-His aggregation in a dose-dependent manner. BSA and lysozyme controls do not prevent aggregation. A 2.5:1 SatS:preSapM ratio completely prevents aggregation, providing strong evidence for chaperone activity and direct interaction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C107-C112 are supported by data in Figure 7. The aggregation assay is a standard method for demonstrating chaperone activity. The dose-dependence, negative controls (BSA, lysozyme), and quantification of the effect provide strong evidence. The stoichiometry data (C110-C111) are informative about the mechanism. This is direct biochemical evidence for chaperone function.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119"
+    ],
+    "result": "Crystal structure determination revealed that only the C-terminal domain (SatSC, residues 237-420) crystallized due to in situ proteolysis. Structural and sequence analysis suggests SatS comprises two similar domains (SatSN and SatSC) connected by a flexible linker.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C113-C119 are supported by crystallographic data and analysis shown in Figure 8 and Figure 8\u2014figure supplement 1. The structure determination is clearly described, and the evidence for domain organization (sequence similarity, secondary structure prediction) is presented. The inability to crystallize SatSN is noted. The inference about domain architecture (C118) is reasonable based on the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126"
+    ],
+    "result": "The SatSC structure reveals a new fold with \u03b1/\u03b2 secondary structure. The surface features pronounced electronegative charge and two hydrophobic grooves that resemble the substrate-binding sites of SecB chaperone.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C120-C126 are supported by structural data in Figure 8A-B. The structure is well-characterized, and the comparison to SecB is appropriate and informative. The identification of hydrophobic grooves and their similarity to SecB binding sites provides structural support for a chaperone function. The bioinformatic searches confirming novelty (C121) are appropriately cited.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C127"
+    ],
+    "result": "SatSC alone is sufficient to prevent preSapM-His aggregation in vitro, comparable to full-length SatS, indicating the C-terminal domain contains the chaperone activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C127 is supported by data in Figure 7. This is an important functional validation of the structural findings. The result suggests that the C-terminal domain is sufficient for at least one aspect of SatS function (preventing aggregation), though it doesn't rule out additional roles for the N-terminal domain.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135"
+    ],
+    "result": "The SatS G134D mutant maintains cellular SapM levels and interacts with SapM preprotein but exhibits a secretion defect comparable to \u0394secA2, revealing that SatS has multiple separable functions in protein export.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C129-C135 are supported by data in Figures 9A-D. The G134D mutant analysis is elegant and reveals functional complexity. The mutant maintains one function (stabilizing SapM) but loses another (promoting secretion), demonstrating that these functions can be uncoupled. The co-IP data (C133) confirms the mutant still binds substrate. This is strong evidence for multiple roles.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C28",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C106",
+      "C139",
+      "C146",
+      "C147",
+      "C148",
+      "C149",
+      "C150"
+    ],
+    "result": "SatS exhibits multiple properties of a protein export chaperone: it is highly acidic, cytoplasmic, binds substrates transiently, affects only a subset of SecA2 substrates, is co-expressed with a substrate (SapM), and prevents substrate aggregation. Despite lacking sequence similarity to known chaperones and having a novel fold, SatS represents a new type of protein export chaperone.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28, C89-C92, C106, C139, C146-C150 synthesize multiple lines of evidence to support the chaperone designation. The properties listed are well-established characteristics of export chaperones (appropriately cited), and the experimental data demonstrate that SatS possesses these properties. The comparison to T3SS and T7SS chaperones is appropriate. The conclusion that SatS is a new type of chaperone (C139) is justified by the novel fold and lack of sequence similarity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C140",
+      "C141",
+      "C142",
+      "C143",
+      "C144",
+      "C145"
+    ],
+    "result": "Suppressor analysis suggests SatS enables wild-type SecA2 to interact with SecYEG. Loss of satS prevents the detrimental SecA2 K129R-SecYEG interaction. SatS likely functions as a chaperone that facilitates SecA2-substrate interaction rather than as a core component of the export apparatus.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C140-C145 present mechanistic interpretation of the suppressor data. The logic is sound: if SatS were a core component, all SecA2 substrates would require it (C144), but the data show substrate specificity. The alternative model (C145) that SatS facilitates SecA2-substrate interaction is consistent with all the data (suppressor genetics, substrate specificity, chaperone properties). However, this remains a model that requires further testing.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C151",
+      "C152",
+      "C153",
+      "C154"
+    ],
+    "result": "Export defects in \u0394secA2 mutants are never complete, suggesting residual export through an unknown pathway, possibly involving SecA1. SatS may also work with SecA1, and there may be SatS substrates exported independently of SecA2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C151-C154 are speculative. While C151 is supported by citations showing residual export in \u0394secA2 mutants, C152-C154 are explicitly presented as speculation. The more severe phenotype of \u0394satS compared to \u0394secA2 could support these ideas, but no direct evidence is provided. These are reasonable hypotheses for future work but remain uncertain.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C155",
+      "C156",
+      "C157"
+    ],
+    "result": "The satS G134D mutant reveals at least one additional role for SatS beyond maintaining intracellular SapM levels. This second function could involve targeting substrates to SecA2 and/or maintaining substrates in an unfolded state for translocation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C155-C157 are supported by the G134D mutant analysis (Figures 9A-D). The inference about a second function (C155-C156) is well-supported by the data. However, the specific nature of this second function (C157) is speculative and presented as such. The claim appropriately identifies this as a direction for future studies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C158",
+      "C159",
+      "C160",
+      "C161",
+      "C162",
+      "C163",
+      "C164"
+    ],
+    "result": "The structural similarity between SatS and SecB hydrophobic grooves is intriguing since both work with the SecYEG channel. Despite lack of evolutionary conservation, SatS may have a SecB-like function and could be an adaptation for protein export in Actinomycetales.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C158-C164 present structural comparisons and evolutionary speculation. The structural similarities (C160) are well-documented in Figure 8. The speculation about SecB-like function (C161, C164) is reasonable based on the structural and functional data but remains speculative. The phylogenetic distribution (C164) is based on the lack of SatS orthologs outside Actinomycetales. These are reasonable inferences but involve some speculation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C165",
+      "C166",
+      "C167",
+      "C168"
+    ],
+    "result": "Prior TraSH/Tnseq studies predicted SatS is required for infection. This prediction was validated by demonstrating that \u0394satS exhibits defective growth in macrophages, arguing for an important role in pathogenesis. Additional SatS-dependent proteins may remain to be identified.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C165-C168 are supported by macrophage infection data (Figure 4) and prior studies (appropriately cited). The validation of prior predictions (C166) strengthens the findings. The inference about importance in pathogenesis (C167) is reasonable. The speculation about additional substrates (C168) is appropriately cautious and acknowledges limitations of the approach.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C169",
+      "C170",
+      "C171",
+      "C172",
+      "C173"
+    ],
+    "result": "This work expands understanding of the SecA2 pathway, provides functional information for a previously uncharacterized M. tuberculosis protein contributing to pathogenesis, and expands appreciation of chaperone diversity by revealing a new fold.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C169-C173 are summary statements supported by the collective findings of the study. The work does expand understanding of SecA2 export (C169), characterizes a previously unknown protein with a role in pathogenesis (C170), and identifies a chaperone with a novel fold (C171-C173). These conclusions are well-supported by the data presented.",
+    "result_type": "MAJOR"
+  }
+]

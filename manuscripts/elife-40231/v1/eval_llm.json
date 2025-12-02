@@ -1,0 +1,477 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C8"
+    ],
+    "result": "Modern neuroscience research requires coordination of multiple processes with high temporal fidelity, and the technical demands of managing these processes limit the number of labs performing such work.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C2, and C8 establish the motivation for the work by describing the technical challenges in neuroscience research. These are reasonable assertions based on general knowledge of the field and are consistent with the authors' stated rationale for developing the REC-GUI framework.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19"
+    ],
+    "result": "The REC-GUI framework offers a modular, language-agnostic design that provides high temporal fidelity through network-based parallel processing across multiple CPUs, uses high-level programming environments, and provides real-time control via a customizable GUI.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C7 and C12-C19 describe the framework's design and capabilities, which are supported by the detailed system descriptions, performance tests (C130-C139), and successful implementation across three applications (C20-C25). The modular architecture is demonstrated through different configurations in Applications 1-3, and the use of high-level languages (Python, MATLAB) is documented throughout.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "Network-based parallel processing overcomes limitations of serial processing and single-CPU multithreading by dividing tasks across multiple CPUs, enabling parallel execution even when multithreading is not supported, and allowing different coding languages and operating systems.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C41 present the conceptual framework and rationale for the network-based approach. The limitations of serial processing (C30-C31) and multithreading (C34) are well-established in computer science. The advantages of network-based parallel processing (C35-C41) are demonstrated through the successful implementation of the three applications using different languages and systems.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C139"
+    ],
+    "result": "Network and system performance tests demonstrate that the REC-GUI framework achieves millisecond-level control synchronization with negligible network latency (24 \u00b5s average) and round-trip packet latencies of 6.79 ms under high computational demand.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C130-C139 present quantitative performance measurements with appropriate sample sizes (N=500-3000). The measurements are internally consistent and demonstrate that the framework achieves the stated goal of millisecond-level temporal precision. The tests appropriately separate network hardware latency from software processing time.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C140",
+      "C141",
+      "C142",
+      "C143",
+      "C144",
+      "C145",
+      "C146",
+      "C147",
+      "C148"
+    ],
+    "result": "External device control tests demonstrate that the framework can present stereoscopic stimuli at 240 Hz with high precision (4.71 ms average latency, 0.16 ms SD) and no dropped frames, using high-level programming environments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C140-C148 present rigorous validation of stimulus presentation fidelity using phototransistor measurements. The quantitative results (N=500 trials) show tight temporal control with low variability. The claim that previous attempts failed (C140) is mentioned but not substantiated with citations in this section, though it is addressed in the Discussion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C149",
+      "C150",
+      "C151",
+      "C152"
+    ],
+    "result": "Application 1 demonstrates that the GUI successfully monitors monkey eye positions in real-time, accurately detects saccadic eye movements to eight choice targets, and enforces both version and vergence gaze contingencies simultaneously.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C149-C152 are supported by eye tracking data from 34 trials (Figure 7A-B) and additional fixation-in-depth task data (Figure 7\u2014figure supplement 1). The data demonstrate successful real-time behavioral monitoring and gaze-contingent experimental control.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C153",
+      "C154",
+      "C155"
+    ],
+    "result": "Application 2 demonstrates that the framework can implement experimental control using inputs from multiple external devices (eye tracker and computer mouse) and precisely align these inputs to stimulus events without a dedicated data acquisition system.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C153-C155 are supported by data from 34 trials showing coordinated eye and mouse tracking (Figure 8). The observation that mouse movement initially lags eye movement (C155) provides additional validation of the temporal precision of the dual-device monitoring.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C156",
+      "C157",
+      "C158",
+      "C159"
+    ],
+    "result": "Application 3 demonstrates automated behavioral training and assessment in a passive avoidance task, where the framework transforms video tracking inputs into control outputs for a shock scrambler, showing behavioral changes consistent with learning.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C156-C159 are supported by behavioral data (Figure 9) showing reduced exploration and avoidance of the dark room after shock delivery. This demonstrates the framework's capability for automated experimental control in tasks without fixed trial structures.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C160",
+      "C161",
+      "C162",
+      "C163",
+      "C164",
+      "C165"
+    ],
+    "result": "Neuronal recordings from CIP demonstrate precise temporal alignment of spike times to stimulus onset and saccade onset, revealing expected visual transients and pre-saccadic activity buildup, with neurons showing tuning for 3D surface orientation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C160-C165 are supported by neurophysiological data (Figure 10) from 545 trials. The observed neural properties (sharp visual transient, pre-saccadic buildup, slant/tilt tuning) are consistent with known CIP characteristics cited in the text, validating the framework's ability to precisely align multiple data streams.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "Application 1 methods describe a 3D orientation discrimination task in a rhesus monkey with neuronal recordings from CIP using standard surgical, behavioral training, and electrophysiological procedures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C63 provide detailed methodological descriptions that are standard for non-human primate neurophysiology studies. The procedures are appropriately cited and include necessary details about subject characteristics, task parameters, and recording methods.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "Application 2 methods describe a variation of the 3D orientation discrimination task performed by a human participant with appropriate ethical approval and task parameters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C67 provide methodological details for the human psychophysics experiment. The procedures are standard and appropriately described, with IRB approval noted.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "Application 3 methods describe a passive avoidance task in mice using a two-way shuttle box, based on established protocols for testing learning and memory of fear events.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C71 describe the passive avoidance task with appropriate citation (C68) and standard behavioral procedures. The claim about mice preferring dark rooms (C71) is well-established in rodent behavior research.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "Application 1 system configuration uses three CPUs for experimental control, stimulus presentation (240 Hz stereoscopic), and data acquisition, with network-based communication and multithreading to achieve real-time 3D stimulus rendering with gaze-contingent control.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C89 provide detailed technical specifications of the system configuration. The implementation details are consistent with the performance results (C130-C148) and demonstrate the framework's capability to handle computationally demanding tasks.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "Application 2 system configuration uses two CPUs for experimental control/data acquisition and stimulus presentation, with dual external device inputs (eye tracker and mouse) and no external data acquisition system.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90-C95 describe a simplified configuration compared to Application 1, demonstrating the framework's modularity. The configuration successfully supports the experimental requirements as shown in the behavioral results (C153-C155).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "Application 3 system configuration uses two CPUs for experimental control/data acquisition and video tracking, with automated transformation of tracking data into control signals for a shock scrambler.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C103 describe the system configuration for automated behavioral training. The implementation successfully demonstrates the framework's capability for tasks without fixed trial structures, as validated by the behavioral results (C156-C159).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116"
+    ],
+    "result": "System communications use four connection types (UDP, TCP, analog, TTL) with network switches, and specialized hardware with non-configurable IP addresses requires multiple parallel networks with dedicated switches.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C104-C116 describe the communication infrastructure. The technical details are standard networking practices, and the solution for handling non-configurable IP addresses (C109-C113) is appropriate and well-documented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129"
+    ],
+    "result": "The GUI provides an intuitive, fully configurable interface with six main panels for experimental control and signal monitoring, coded in Python 2.7, with real-time parameter adjustment and customizable tools.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C117-C129 describe the GUI structure and functionality, supported by Figure 4 and Figure 4\u2014figure supplement 1. The implementation details are consistent with the successful operation demonstrated in all three applications.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C166",
+      "C167",
+      "C168",
+      "C169",
+      "C170",
+      "C171",
+      "C172",
+      "C173",
+      "C174",
+      "C175",
+      "C176"
+    ],
+    "result": "The REC-GUI framework provides a solution for implementing demanding neuroscience studies with accurate and precise experimental control using high-level programming environments, and can support diverse experimental paradigms including closed-loop experiments and naturalistic stimuli.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C166-C167 are well-supported by the three applications. However, claims C168-C172 about supporting more complex closed-loop experiments and naturalistic stimuli are largely speculative (marked as SPECULATION in evidence_type). Claim C176 about increased accessibility is also speculative. These capabilities are plausible extensions but not directly demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C177",
+      "C178",
+      "C179",
+      "C180",
+      "C181",
+      "C182",
+      "C183",
+      "C184",
+      "C185",
+      "C186",
+      "C187",
+      "C188",
+      "C189",
+      "C190",
+      "C191"
+    ],
+    "result": "The REC-GUI framework offers several advantages over other systems: inherent modularity and flexibility from network-based parallel processing, improved performance by dividing computing demands across CPUs, support for diverse experimental components at different temporal resolutions, and a user-friendly GUI.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C177-C191 summarize the framework's advantages, which are supported by the demonstrated capabilities across the three applications. Claims C186-C188 about potential optimizations are speculative but reasonable. The advantages are logically derived from the architecture and performance data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C192",
+      "C193",
+      "C194",
+      "C195",
+      "C196",
+      "C197",
+      "C198",
+      "C199",
+      "C200",
+      "C201",
+      "C202",
+      "C203",
+      "C204",
+      "C205",
+      "C206",
+      "C207",
+      "C208",
+      "C209",
+      "C210",
+      "C211",
+      "C212",
+      "C213",
+      "C214"
+    ],
+    "result": "Comparisons with existing control systems (Spike2, LSR suite, MonkeyLogic) show that REC-GUI offers advantages in flexibility, ease of use, and support for high-demand tasks, though it has added complexity and cost from requiring multiple CPUs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C192-C214 provide comparisons with other systems, supported by appropriate citations. The comparison with MonkeyLogic's inability to support 240 Hz presentation (C209) is documented with a forum reference. The acknowledged trade-offs (C212-C214) demonstrate balanced evaluation. However, some comparisons rely on general characterizations rather than direct benchmarking.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C215",
+      "C216",
+      "C217",
+      "C218",
+      "C219"
+    ],
+    "result": "The REC-GUI framework will be maintained as an open-source project with a webpage, forum, GitHub repository for version control, and encouragement for community contributions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C215-C218 describe concrete plans for open-source support with specific resources (webpage, GitHub). Claim C219 about helping researchers is speculative but represents a reasonable goal. The commitment to open-source development is clearly stated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11"
+    ],
+    "result": "Control systems must balance precision and flexibility, with systems favoring precision hindering productivity through coding overhead, and systems favoring usability limiting paradigm complexity and computational capability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C11 present design principles and trade-offs in control system development. These are reasonable assertions based on general knowledge of software engineering and are consistent with the motivation for developing REC-GUI.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "The three applications collectively demonstrate that REC-GUI supports state-of-the-art stimulus display during computationally demanding experiments, integrates with external data acquisition systems, implements real-time control with multiple devices, and automates experimental control without fixed trial structures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C25 summarize the capabilities demonstrated across the three applications. These summary claims are well-supported by the detailed results from each application (C149-C165) and the performance tests (C130-C148).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C29"
+    ],
+    "result": "The REC-GUI framework can enable scientific advances by reducing technical barriers, improving reproducibility, and reducing time needed for programming experimental protocols.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C29 makes broad assertions about potential impact that are marked as SPECULATION. While the framework's capabilities support these possibilities, the actual impact on scientific advances, reproducibility, and programming time would require longitudinal assessment and community adoption data not provided in this work.",
+    "result_type": "MINOR"
+  }
+]

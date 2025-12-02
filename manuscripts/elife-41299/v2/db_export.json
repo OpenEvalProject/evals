@@ -1,0 +1,2098 @@
+{
+  "submission": {
+    "id": "1284a4e9-3cbb-4a1b-98ad-02730b8d8d0e",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T09:07:38.482853Z",
+    "updated_at": "2025-12-02T09:07:38.482853Z"
+  },
+  "content": [
+    {
+      "id": "c03fed49-d7fa-45c5-8cfe-c804d0355c4c",
+      "submission_id": "1284a4e9-3cbb-4a1b-98ad-02730b8d8d0e",
+      "content_type": "manuscript",
+      "content_text": "# Intramolecular domain dynamics regulate synaptic MAGUK protein interactions\n\n## Authors\n\n- Nils Rademacher<sup>1</sup> ([ORCID: 0000-0003-0625-6798](https://orcid.org/0000-0003-0625-6798)) \u2020\n- Benno Kuropka<sup>2</sup>\n- Stella-Amrei Kunde<sup>1</sup> ([ORCID: 0000-0003-1493-9097](https://orcid.org/0000-0003-1493-9097))\n- Markus C Wahl<sup>3</sup>\n- Christian Freund<sup>2</sup>\n- Sarah A Shoichet<sup>1</sup> ([ORCID: 0000-0003-4933-7846](https://orcid.org/0000-0003-4933-7846)) \u2020\n\n### Affiliations\n\n1. Neuroscience Research Center Charit\u00e9-Universit\u00e4tsmedizin Berlin Berlin Germany\n2. Institute of Chemistry and Biochemistry, Laboratory of Protein Biochemistry Freie Universit\u00e4t Berlin Berlin Germany\n3. Institute of Chemistry and Biochemistry, Laboratory of Structural Biochemistry Freie Universit\u00e4t Berlin Berlin Germany\n4. Macromolecular Crystallography Helmholtz-Zentrum Berlin f\u00fcr Materialien und Energie Berlin Germany\n\n\u2020 Corresponding author\n\n## Abstract\n\nPSD-95 MAGUK family scaffold proteins are multi-domain organisers of synaptic transmission that contain three PDZ domains followed by an SH3-GK domain tandem. This domain architecture allows coordinated assembly of protein complexes composed of neurotransmitter receptors, synaptic adhesion molecules and downstream signalling effectors. Here we show that binding of monomeric CRIPT-derived PDZ3 ligands to the third PDZ domain of PSD-95 induces functional changes in the intramolecular SH3-GK domain assembly that influence subsequent homotypic and heterotypic complex formation. We identify PSD-95 interactors that differentially bind to the SH3-GK domain tandem depending on its conformational state. Among these interactors, we further establish the heterotrimeric G protein subunit Gnb5 as a PSD-95 complex partner at dendritic spines of rat hippocampal neurons. The PSD-95 GK domain binds to Gnb5, and this interaction is triggered by CRIPT-derived PDZ3 ligands binding to the third PDZ domain of PSD-95, unraveling a hierarchical binding mechanism of PSD-95 complex formation.\n\n## Introduction\n\nExcitatory synapses are the contact sites through which neurons communicate with each other. These synapses are asymmetric structures that are formed by pre- and postsynaptic terminals containing distinct sets of proteins. Incoming action potentials are converted into chemical signals (neurotransmitters) at presynaptic terminals, which subsequently pass through the synaptic cleft and are reconverted into electrical signals at postsynaptic sites (Lisman et al., 2007). These synaptic contacts are not static but are able to undergo structural changes and thereby modify neuronal network computation (Nishiyama and Yasuda, 2015). At postsynaptic sites, interacting proteins are densely packed into a sub-membrane structure called the postsynaptic density (PSD) (Sheng and Hoogenraad, 2007). Scaffold proteins of the PSD-95 family membrane-associated guanylate kinases (MAGUKs) are highly abundant components of the PSD and function as central regulators of postsynaptic organisation (Zhu et al., 2016a). PSD-95 family MAGUKs contain three PDZ domains that are known to directly interact with N-methyl-D-aspartate (NMDA) receptor C-termini (Kornau et al., 1995), \u03b1-amino-3-hydroxy-5-methyl-4-isoxazolepropionic acid (AMPA) receptor C-termini (Leonard et al., 1998), and AMPA receptor auxiliary subunit C-termini (Dakoji et al., 2003). The PDZ domains are followed by an SH3 - guanylate kinase (GK) domain tandem (Funke et al., 2005). The MAGUK SH3 domain lost its function to bind proline-rich peptides; instead it forms an intramolecular interaction with the GK domain (McGee et al., 2001). Similarly, the PSD-95 GK domain is atypical in that it is unable to phosphorylate GMP but has evolved as a protein interaction domain (Johnston et al., 2011). Binding of known interactors to the GK domain typically involves residues of the canonical GMP-binding region (Reese et al., 2007; Zhu et al., 2011; Zhu et al., 2016b). This modular array of protein interaction domains allows PSD-95 MAGUKs to function as bidirectional organisers of synaptic function. First, neurotransmitter receptors can be incorporated or removed from postsynaptic membranes, depending on molecular interactions with these sub-membrane scaffold proteins. Second, together with other scaffold proteins at postsynaptic sites, they align downstream effectors and cytoskeletal proteins. Accordingly, PSD-95 family MAGUKs are essential for the establishment of long-term potentiation (LTP) by regulating the content of AMPA receptors at dendritic spines (Ehrlich and Malinow, 2004; Opazo et al., 2012; Sheng et al., 2018). In line with this is the observation that acute knockdown of PSD-95 MAGUKs leads to a decrease in postsynaptic AMPA and NMDA receptor-mediated synaptic transmission as well as a reduction in PSD size (Chen et al., 2015). Taken together, exploring protein complex formation directed by PSD-95 MAGUK family members is of central importance\u00a0for\u00a0understanding regulation of synaptic transmission. We have previously shown that the synaptic MAGUK protein PSD-95 oligomerises upon binding of monomeric CRIPT-derived PDZ3 ligands (ligands that specifically bind to the third PDZ domain) (Rademacher et al., 2013) and speculated that ligand - PDZ3 domain binding induces conformational changes in the C-terminal domains that lead to complex formation. Our initial observations of PDZ ligand-induced effects in PSD-95 MAGUK proteins have recently been\u00a0supported by other studies (Zeng et al., 2016; Zeng et al., 2018).\n\nIn this study, we use a bimolecular fluorescence complementation (BiFC) assay to show that PSD-95 oligomerisation can be triggered by Neuroligin-1 (NLGN1) and that\u00a0this is dependent on the C-terminal SH3-GK domain tandem. Moreover, we identify new interaction partners of PSD-95 C-terminal domains by quantitative mass spectrometry. We provide evidence that the heterotrimeric G protein subunit Gnb5 is a novel GK domain interactor and that its ability to bind to PSD-95 is likewise promoted by binding of a ligand to the PSD-95 PDZ3 domain.\n\n## Results\n\n### Neuroligin-1 binding to PSD-95 PDZ3 domains facilitates oligomerisation guided by the PSG module\n\nWe are interested in the functional coupling of PDZ3 domains with the adjacent SH3-GK domain tandem in the synaptic scaffold protein PSD-95 (termed PSG module, see Figure 1A for domain structure) and the relevance of ligand - PDZ3 domain interactions for PSD-95 complex formation. To explore this idea, we built on our previous work with tagged cytosolic CRIPT-derived PDZ3 ligands (Rademacher et al., 2013) and we have now designed a cell-based assay to directly monitor the proximity of PSD-95 molecules by bimolecular fluorescence complementation (BiFC). Expression constructs of PSD-95 were fused to non-fluorescent halves of EYFP (N-terminal half\u00a0=\u00a0YN and C-terminal half\u00a0=\u00a0YC) and coexpressed with the established PDZ domain ligand Neuroligin-1 (NLGN1) in HEK-293T cells. NLGN1 is a synaptic adhesion molecule that specifically binds to the third PDZ domain of PSD-95 (Irie et al., 1997). Coexpression of the per se non-fluorescent PSD-95-YN and PSD-95-YC constructs (together referred to as WT/WTsplitEYFP) with full-length NLGN1 led to the formation of multimolecular fluorescent PSD-95 complexes that were located at the cell membrane, recapitulating the natural localisation of the endogenous protein complexes (Figure 1B), and highlighting that the PSD-95 C-termini (which harbour the splitEYFP tags) are in close proximity to each other in these complexes.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/41299/elife-41299-fig1-v2.jpg)\n\n**Figure 1.:** (A) Schematic representation of the PSD-95 domain organisation. PSD-95 contains three PDZ domains followed by a SH3-GK domain tandem. The PSG module (PDZ3-SH3-GK) is common to the MAGUK protein family. (B) Live-cell microscopy of HEK-293T cells transfected with PSD-95-YN, PSD-95-YC and full-length Neuroligin-1 reveals a membrane associated localisation of the refolded complex (transfection corresponding to WT/WTsplitEYFP plus NLGN1 in Figure 1C,D). Scale bar: 10 \u00b5m. (C,\u00a0D) PSD-95 oligomerisation assay based on BiFC. HEK-293T cells were triple-transfected with the displayed DNA constructs and EYFP refolding was assessed by flow cytometry. Formation of oligomeric fluorescent complexes is effective in the presence of wild-type Neuroligin-1 (NLGN1). (C) Fluorescence is almost not detectable by coexpression of SynCAM1 (SynCAM1 is not binding to PSD-95 PDZ domains) (D) Fluorescence is reduced by either site-directed mutagenesis of the NLGN1 PDZ3 ligand C- terminus (mutNLGN1: TTRV \u25ba TARA), or a targeted amino acid exchange in the PSD-95 SH3 domain (L460P). (C,\u00a0D) The dot plots indicate mean values (black horizontal bar) with SD (red vertical bar), based on twelve individual measurements (dots) that originate from four independent experiments (results from each experiment are triplicates for each DNA construct combination). Data were analysed by one-way ANOVA/Sidak's multiple comparisons test. ****p<0.0001. (E) MYC-PSG and FLAG-SH3-GK or FLAG-GK were coexpressed together with either CRIPT-derived PDZ3 or mutPDZ3 ligand constructs. Upon MYC-PSG IP, proteins were analysed by western blot with \u03b1FLAG antibodies. Coexpression of the CRIPT-derived PDZ3 ligand enhanced the coIP of PSG and GK, whereas coIP of PSG and SH3-GK was negligible regardless of whether or not the CRIPT-derived PDZ3 ligand construct was coexpressed. The western blot shown (left side) is a representative example of three independent experiments; the corresponding quantification of coIP band intensities from these three experiments is shown in the dot plot on the right side indicating mean values\u00a0\u00b1\u00a0SEM.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/41299/elife-41299-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A, B) Gating strategy and representative dot plots of the PSD-95 oligomerisation assay as shown in Figure 1C,D. Untransfected cells or cells transfected with the indicated constructs were harvested and analysed by flow cytometry. The HEK-293T cell population was defined by the gate G1 in the forward scatter height (FSC-H) versus side scatter height (SSC-H) plot. (A and B upper left panel). 10,000 cells from the gate G1 were then subsequently analysed by plotting side scatter height (SSC-H) versus yellow fluorescence (EYFP: enhanced yellow fluorescent protein) emitted by the refolded splitEYFP halves. Fluorescent cells appear as dots in the lower right quadrants.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/41299/elife-41299-fig1-figsupp2-v2.jpg)\n\n**Figure 1\u2014figure supplement 2.:** (A) PSD-95 constructs consisting of the PDZ3-SH3 domains (PS) were coexpressed together with either an SH3-GK domain construct, or a GK domain construct.\u00a0As a comparison PDZ3-SH3 L460P was coexpressed with a GK domain construct and PDZ3-SH3/PDZ3-SH3 L460P constructs were precipitated and copurified proteins were identified by western blot. By mutating the leucine 460 to proline this efficient protein complex formation is disrupted. By exchanging the internal L460 residue the SH3 domain loses its ability to bind to the GK domain construct in trans.\n\nIn order to quantify the formation of these fluorescent protein complexes, we used flow cytometry. In initial experiments (Figure 1C, see also Figure 1\u2014figure supplement 1 for gating strategy), we validated that efficient refolding of splitEYFP halves fused to wild-type PSD-95 indeed relied on the presence of a PDZ-binding ligand that interacts with PSD-95. For comparison, we took advantage of the synaptic cell adhesion molecule SynCAM1. SynCAMs, like NLGNs, are trans-synaptic membrane proteins; however, they differ from NLGN family members at the C-terminus and bind exclusively to class II PDZ domains (e.g. CASK, MPP2) rather than class I PDZ domains (such as PSD-95 PDZ domains) (Biederer et al., 2002). When we express the splitEYFP-tagged wild-type PSD-95 molecules together with SynCAM1, we do not induce refolding of splitEYFP (Figure 1C), suggesting that it is indeed the PDZ domain interactions between the transmembrane protein and wild-type PSD-95 that facilitate the observed formation of multimolecular PSD-95 complexes in which the splitEYFP halves refold efficiently.\n\nWe validated this idea in a second set of experiments by taking advantage of a targeted mutation of the PDZ-binding sequence of NLGN1: we generated mutant NLGN1 variants that carry two alanine substitutions within the C-terminal PDZ3\u00a0ligand sequence (mutNLGN1: C-terminus TTRV \u25ba TARA). Upon coexpression of this mutNLGN1 with splitEYFP-tagged PSD-95 molecules, the detected fluorescence intensity decreased by approximately 40% relative to that after coexpression with wild-type NLGN1 (Figure 1D, see also Figure 1\u2014figure supplement 1 for gating strategy), supporting the idea that indeed the ligand - PDZ domain interaction is critical for PSD-95 complex formation in our assay. Finally, we investigated the hypothesis that the natural PSD-95 SH3-GK conformation is also important in this PDZ ligand-mediated scaffolding process. Leucine 460 is an internal SH3 domain residue and the L460P mutation has been shown to specifically disrupt the intramolecular SH3-GK domain interaction (Figure 1\u2014figure supplement 2) (McGee and Bredt, 1999; Shin et al., 2000) that is one of the hallmark features of MAGUK proteins (Tavares et al., 2001). Interestingly, this amino acid exchange does not interfere with PDZ3 ligand binding (Rademacher et al., 2013) but strongly abolishes PSD-95 complex assembly, as observed by EYFP refolding (Figure 1D). We assume that in the context of the full-length protein, the L460P mutation likewise weakens the (intramolecular) interaction between the SH3 and GK domains, which would then result in a constitutively \u2018open\u2019 conformation. The profound negative effect that we observe following a targeted amino acid exchange in the SH3 domain highlights the importance of the SH3-GK domain tandem for its involvement in regulated PSD-95 oligomerisation.\n\n### Binding of a CRIPT-derived PDZ ligand to PSD-95 PDZ3 facilitates an \u2018open\u2019 SH3-GK state that frees both domains for binding in trans\n\nIn line with our BiFC assay results, we have previously reported that PSD-95 constructs (full-length and the\u00a0isolated\u00a0PSG module) efficiently oligomerise and coprecipitate upon binding of a PDZ3 ligand (Rademacher et al., 2013). Moreover, the observation by NMR spectroscopy that the PSG module forms a dynamic modular entity (Zhang et al., 2013) led us to hypothesise that this type of ligand binding to PDZ3 might influence intramolecular SH3-GK domain assembly, facilitating the formation of domain swapped oligomers (McGee et al., 2001; Ye et al., 2018). For these experiments, we again took advantage of the PSD-95 interactor CRIPT, which is a cytosolic protein that has been shown to interact predominantly with the third PDZ domain of PSD-95 (Niethammer et al., 1998). Specifically, we asked whether the ligand - PDZ3 domain interaction might release the intramolecular SH3-GK domain assembly, thereby allowing other domains and proteins to interact in trans. To explore this idea, we assessed which PSD-95 domains are able to interact in trans upon binding of a CRIPT-derived PDZ3 ligand to proteins that harbour the PSG module, using a coimmunoprecipitation experiment designed accordingly.\n\nOur strategy involves expression of the PSD-95 PSG module together with mCherry-tagged PDZ3 ligands, consisting of the last 10 amino acids of CRIPT (DTKNYKQTSV) (Niethammer et al., 1998). As a control, comparable constructs carrying two amino acid exchanges within the PDZ3 ligand sequence (DTKNYKQASA) were used. In our hands, this mutation in the CRIPT C-terminus almost completely abrogates binding to PDZ3, as observed by coIP (Rademacher et al., 2013), making it an ideal control for our coIP approach that targets the ligand - PDZ3 interaction. Upon triple transfection with either a GK or an SH3-GK domain construct and the CRIPT-derived PDZ3 ligand, the PSG modules were precipitated, and copurified proteins were analysed by western blot (Figure 1E). The SH3-GK construct did not coprecipitate with the PSG module regardless of whether it was coexpressed with wild-type or mutant CRIPT-derived PDZ3 ligands. This may be due to a constitutive intramolecular association of the SH3 and GK domains, leading to a \u2018closed\u2019 SH3-GK assembly, with no ability to bind a PSG module in trans. The GK domain alone, however, coprecipitated effectively with the PSG module, when expressed in the presence of functional CRIPT-derived PDZ3 ligands. These data suggest that binding of a CRIPT-derived PDZ3 ligand renders the PSG module \u2018interaction-competent\u2019; that\u00a0is it facilitates formation of a conformational state in which it is able to bind isolated GK domain constructs in trans. In this experiment, the intramolecular SH3-GK domain assembly resembles the \u2018interaction-incompetent\u2019 state, and the SH3 domain autoinhibits the GK domain\u2019s interaction activity.\n\n### The SH3-GK assembly state influences PSD-95 interactions\n\nBased on the above results, we propose that PSD-95 C-termini can adopt different functional states depending on whether or not CRIPT-derived PDZ3 ligands are bound to PSD-95 PDZ3 domains, i.e. ligand binding induces a loosening of the intramolecular SH3-GK domain assembly and renders the SH3-GK domain tandem \u2018interaction-competent\u2019. In order to identify interactors that differentially bind to PSD-95 C-termini in an \u2018open state\u2019 versus PSD-95 molecules where the GK domain is autoinhibited by an intramolecular interaction with the adjacent SH3 domain, we utilised a quantitative proteomics strategy. In a reductionist approach, we mimic the open and closed states with different bacterially expressed GST fusion proteins: a GST-GK construct serves as the \u2018interaction-competent\u2019 GK domain state, whereas a GST-SH3-GK domain fusion protein reflects the autoinhibited domain assembly. By performing GST pull-downs from crude synaptosome preparations followed by quantitative mass spectrometric analysis we aimed to identify novel proteins that preferentially bind to the \u2018open\u2019 or \u2018closed\u2019 state of the PSD-95 C-terminal domains (Figure 2A).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/41299/elife-41299-fig2-v2.jpg)\n\n**Figure 2.:** (A) Schematic representation of the quantitative mass spectrometry experiment to identify PSD-95 GK domain interactors from crude rat synaptosomes by GST pull-down of bacterially expressed GST-GK or GST-SH3-GK constructs and 18O-labeling. (B) GST pull-downs were performed in triplicates and 278 interacting proteins that passed our threshold settings were identified and quantified by mass spectrometry. Proteins are ranked by their mean L/H ratio indicating preferential enrichment with either GST-GK or GST-SH3-GK constructs. The heterotrimeric G protein subunit Gnb5 was found to be enriched in the GST-GK fraction relative to the GST-SH3-GK fraction and selected for further studies.\n\nBacterially expressed GST-GK vs. GST-SH3-GK constructs were incubated with solubilised proteins from crude synaptosome preparations of whole rat brains in triplicates. Interacting proteins were eluted from the beads and separated by SDS-PAGE. Enzymatic 16O/18O-labelling during tryptic in-gel digestion was used for relative quantification of proteins by nanoLC-MS/MS analysis. Proteins enriched by GST-GK were labelled light (16O), while proteins enriched by GST-SH3-GK were labelled heavy (18O). In total, we reproducibly identified and quantified 278 proteins (Figure 2\u2014source data 1). Remarkably, 230 (\u2248 82%) of these have been reported to be present in mouse and/or human cortical postsynaptic density fractions (Bay\u00e9s et al., 2012). Moreover, we also identified the known GK-domain interacting proteins Map1A (Reese et al., 2007), Mark2 (Wu et al., 2012), Dlgap2 (Takeuchi et al., 1997) and Srcin1/p140CAP (Fossati et al., 2015), validating the general success of our approach. Potential binders to the GST-GK construct are expected to be enriched in their light form (L/H ratio\u00a0>1), while binders to the GST-SH3-GK construct are expected to be enriched in their heavy form (L/H ratio\u00a0<1). Unexpectedly, we isolated several heterotrimeric G protein subunits enriched in the protein fractions that bind preferentially to the GST-GK construct (Figure 2B). Of special interest was the guanine nucleotide binding protein beta 5 (Gnb5), which is a signalling effector downstream of GPCRs that exhibits inhibitory activity in neurons (Xie et al., 2010; Ostrovskaya et al., 2014). Gnb5 contains an N-terminal \u03b1-helix followed by a \u03b2-sheet propeller composed of seven WD-40 repeats (Cheever et al., 2008). Gnb5 is specifically expressed in brain (Watson et al., 1994) and mutations in the Gnb5 gene cause a multisystem syndrome with intellectual disability in patients (Lodder et al., 2016).\n\n### Gnb5 is a novel synaptic PSD-95 complex partner\n\nIn order to verify Gnb5 as a potential binding partner from the above mass spectrometry result, we performed a GST pull-down from crude rat brain synaptosomes and analysed the associated proteins by western blot (Figure 3A). We could not detect Gnb5 in the bead control pull-down lane and almost no Gnb5 was detectable in the GST-SH3-GK lane. However, a clear Gnb5 signal was present in the GST-GK lane, supporting our quantitative mass spectrometry results and suggesting that a Gnb5 - GK domain interaction is favoured over a Gnb5 - SH3-GK domain interaction. Additionally, we observed a preferred interaction of overexpressed Gnb5 with the isolated GK domain compared to SH3-GK domain constructs in COS-7 cells. Upon IP of Gnb5 tagged with the green fluorescent protein Clover (Lam et al., 2012) using \u03b1GFP antibodies, the isolated\u00a0GK domain coprecipitates far more efficiently than does the SH3-GK domain (Figure 3B).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/41299/elife-41299-fig3-v2.jpg)\n\n**Figure 3.:** (A) GST pull-down from crude synaptosomal proteins (comparable amounts of GST tagged proteins observable by Coomassie, upper panel) enabled comparison of Gnb5 binding to the GK domain alone versus the SH3-GK domain. Gnb5 is effectively enriched in the GST-GK pull-down compared to bead controls or GST-SH3-GK pull-downs, as observed by western blot with a commercially available \u03b1Gnb5 antibody (lower panel). The GST pull-down shown on the left side is a representative example of three independent experiments; the corresponding quantification of copurified Gnb5 band intensities from these three experiments is shown in the dot plot on the right side indicating mean values\u00a0\u00b1\u00a0SEM. (B) CoIP experiment of tagged Gnb5 (Gnb5-Clover) with tagged SH3-GK or GK (FLAG-SH3-GK or FLAG-GK). Immunoprecipitation of Gnb5-Clover with \u03b1GFP antibody efficiently copurified the GK-domain construct (observed via western blot with \u03b1FLAG antibodies, lower panel). The western blot shown (left side) is a representative example of three independent experiments; the corresponding quantification of coIP band intensities from these three experiments is shown in the dot plot on the right side indicating mean values\u00a0\u00b1\u00a0SEM. (C) Cultures of rat hippocampal neurons (E18) were fixed at DIV21 and stained for Gnb5 together with the dendritic marker MAP2 (microtubule-associated protein 2) and either the postsynaptic protein PSD-95 (left panel) or the presynaptic marker Synapsin (right panel) and respective fluorescent secondary antibodies, and visualised by confocal microscopy. Scale bars: 5 \u03bcm.\n\nOur in vitro experiments clearly indicate that Gnb5 is an interactor of PSD-95 C-terminal domains. However, our interaction data do not clearly indicate in which subcellular compartment Gnb5 and the Gnb5 - PSD-95 complex is located. To explore this, we immunostained cultures of dissociated cells from rat hippocampi and analysed the subcellular distribution of endogenous proteins. We stained fixed cultures (DIV21) with antibodies against Gnb5 and costained for the dendritic marker MAP2 and for\u00a0PSD-95. Gnb5 staining was present in neuronal dendrites, where the signal overlaps with the PSD-95 staining (Figure 3C). Additionally, we stained neurons with antibodies against Gnb5, MAP2 and the presynaptic marker Synapsin. In these experiments, the Gnb5 signal is adjacent to the presynaptic Synapsin signal (Figure 3C). Together, these findings strongly support the idea that Gnb5 and PSD-95 are protein complex partners at postsynaptic sites of hippocampal neurons.\n\n### Regulation of PSD-95 complex formation\n\nOur data indicate that Gnb5 interacts differentially with PSD-95 C-terminal constructs and we observe that PSD-95 and Gnb5 exhibit overlapping expression at postsynaptic sites. We next set out to determine if the PSD-95 - Gnb5 interaction is indeed influenced by the presence of synaptic PDZ3 ligands, as we initially hypothesised. We coexpressed PSD-95 with CRIPT-derived PDZ3 ligand constructs as in previous experiments, together with Gnb5. Following IP of PSD-95, the precipitates were analysed by western blot: the presence of these PDZ3 ligands indeed triggered coimmunoprecipitation of Gnb5 and PSD-95, which supports the idea that ligand binding to PDZ3 indirectly affects protein-protein interactions at neighbouring domains. Gnb5 lacking the N-terminal \u03b1-helix (shortGnb5) coprecipitated somewhat less efficiently than the full-length protein (Figure 4A), suggesting that this N-terminal region of Gnb5 (amino acids 1\u201333) is important for the PDZ3 ligand-mediated interaction with PSD-95.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/41299/elife-41299-fig4-v2.jpg)\n\n**Figure 4.:** For this figure, western blots shown on the left side are representative examples of three independent experiments; the corresponding quantification of coIP band intensities from these three experiments are shown in the dot plots on the right side indicating mean values\u00a0\u00b1\u00a0SEM. (A) MYC-PSD-95 and FLAG-Gnb5 or FLAG-shortGnb5 were coexpressed with either CRIPT-derived PDZ3 or mutPDZ3 ligand constructs. MYC-PSD-95 was precipitated and proteins were analysed by western blot with \u03b1FLAG antibodies. Coexpression of the CRIPT-derived PDZ3 ligand facilitated the coIP of PSD-95 and Gnb5, coIP with the shortGnb5 construct (N-terminal truncation) was much less efficient. In the presence of the CRIPT-derived mutPDZ3 ligand, coprecipitated proteins were not detectable. (B) CoIP of MYC-PSG and FLAG-Gnb5 together with either CRIPT-derived PDZ3 or mutPDZ3 ligand constructs. The presence of CRIPT-derived PDZ3 ligand constructs facilitated coprecipitation of PSG and Gnb5 (see comparative western blot with \u03b1FLAG antibodies, lower panel). (C) Coexpression of MYC-PSG or MYC-PSG L460P with FLAG-Gnb5 and subsequent MYC IP. PSG L460P IP efficiently copurifies Gnb5 (observed by western blot with \u03b1FLAG antibodies).\n\nNext, we asked if the PSD-95 PSG module is sufficient to bind to Gnb5 in a ligand-triggered mode. We coexpressed a PSG expression construct together with Gnb5 and CRIPT-derived PDZ3 ligand constructs (wild-type or mutant) and performed pull-downs of the PSG constructs or unspecific IgGs as a control. Upon analysis of the precipitates by western blot, we detected a robust coIP of Gnb5 with the PSG module construct in the presence of this type of PDZ3 ligand (Figure 4B). Clearly, the PSG module is sufficient for ligand-triggered coimmunoprecipitation of Gnb5.\n\nOur comparative mass spectrometry results for Gnb5, together with subsequent PSD-95 coimmunoprecipitation data, support the idea that ligand binding can influence the PSD-95 PSG module such that its protein interaction profile resembles that of the isolated GK domain, that is\u00a0it differs from the SH3-GK domain tandem with regard to protein\u2013protein interactions (see Figure 1E). In summary, we propose that binding of a PDZ3 ligand weakens the intramolecular SH3-GK domain association, which then enables the individual SH3 and GK domains to participate in trans interactions with other molecules. To test this model, we took advantage of the\u00a0PSD-95 L460P mutation, which is known to disrupt the well-characterised intramolecular SH3-GK domain assembly, thus aberrantly releasing the GK domain from its SH3 domain-mediated inhibition. Upon coexpression of wild-type or mutant (L460P) PSG proteins together with Gnb5, we performed pull-downs of the PSG proteins and comparatively assessed coprecipitation of Gnb5. Gnb5 did not coprecipitate efficiently with the wild-type PSG module but was effectively coprecipitated by the PSG module harbouring the L460P mutation that disrupts the intramolecular SH3-GK domain interaction (Figure 4C). We conclude that Gnb5 is interacting with the PSD-95 PSG module in one of two possible modes. Gnb5 could bind at GK domain sites that are directly occupied by the neighbouring SH3 domain (and thereby compete with the SH3 domain for interaction with the GK domain). Alternatively, Gnb5 could bind to GK domain sites on distant surfaces (e.g. the canonical GMP-binding region) that are not directly influenced by intramolecular SH3-GK interactions but might be allosterically regulated by changes to the PSG module.\n\n### GK domain interactions are differentially regulated\n\nIn order to explore these two possibilities in more depth, we took advantage of established knowledge on the structure of GK domains and information on previously identified GK-interacting proteins. The GK domain of PSD-95 has evolved from an enzyme that catalyses the phosphorylation of GMP to an enzymatically inactive protein interaction domain. Interestingly, various PSD-95 GK-interacting proteins bind to the canonical GMP-binding region, and by exchanging arginine 568 (which is situated in the ancestral GMP-binding site) to alanine (R568A), these interactions can be specifically disrupted (Reese et al., 2007). In order to gain insight into the nature of the binding of Gnb5 to the PSD-95 GK domain, we compared PSD-95 - Gnb5 binding to PSD-95 - GKAP binding. GKAP (\u2018GK\u2019-associated protein, also referred to as SAPAP1 or DLGAP1) is an established synaptic GK domain binder (Kim et al., 1997) whose interaction involves the GMP-binding region (Zhu et al., 2017). These ideas are also validated by our own coimmunoprecipitation experiments: GKAP can be efficiently coprecipitated upon pull-down of either the isolated GK domain or an intact PSG module, whereas a recombinant PSG module harbouring the GMP binding site mutation R568A fails to precipitate GKAP (Figure 5A). In experiments with PSD-95 and Gnb5, however, the same mutation had no effect on coprecipitation of Gnb5 (Figure 5B), suggesting that GKAP and Gnb5 proteins bind to PSD-95 GK domains in fundamentally different ways.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/41299/elife-41299-fig5-v2.jpg)\n\n**Figure 5.:** For this figure, western blots shown on the left side are representative examples of three independent experiments; the corresponding quantification of coIP band intensities from these three experiments are shown in the dot plots on the right side indicating mean values\u00a0\u00b1\u00a0SEM. (A) MYC-PSG, MYC-PSG R568A and MYC-GK were coexpressed with FLAG-GKAP. Following MYC IP, precipitated proteins were analysed by western blot. GKAP coprecipitated with PSG and GK domain constructs. The GK domain mutant PSG R568A was not able to bind GKAP. (B) Following coexpression of MYC-PSD-95 or MYC-PSD-95 R568A with FLAG-Gnb5, together with either CRIPT-derived PDZ3 or mutPDZ3 ligand, proteins were precipitated with \u03b1MYC-antibody and analysed by western blot. Gnb5 coIP with either PSD-95 or PSD-95 R568A was efficiently promoted by the presence of PDZ3-binding ligand, irrespective of the GK domain mutation R568A. (C) CoIP of MYC-PSD-95 and FLAG-GKAP together with either CRIPT-derived PDZ3 or mutPDZ3 ligand constructs and analysis of precipitated proteins by western blot with antibodies to the corresponding tags. The presence of CRIPT-derived PDZ3 ligands in the lysate had almost negligible effect on PSD-95 GKAP interaction.\n\nWe next tested whether the GKAP - PSD-95 association could be influenced by CRIPT-derived PDZ3 ligands that bind to PSD-95, as we observed previously for Gnb5 (see Figures 4A, B and 5B). The presence of PDZ3 ligands did not substantially influence the GKAP interaction: PSD-95 binds GKAP regardless of whether wild-type or mutant CRIPT-derived PDZ3 ligands were present (Figure 5C). These data provide further evidence that the GKAP - GK domain binding mode differs substantially from the Gnb5 - GK interaction mode.\n\nImportantly, our data support a model in which ligand binding to PDZ3 results in a conformational change of the \u2018resting\u2019 intramolecular SH3-GK interaction that is common to MAGUK proteins. This conformational alteration is reflected by a change in the availability of specific GK surfaces for protein-protein interactions (Figure 6A). In the resting state, the external GK surface harbouring the classical GMP binding site is available for protein-protein interaction such as those with the well-known PSD-95 interactors GKAP and MAP1a. However, upon ligand binding, other GK surfaces become accessible for protein-protein interactions. A subset of synaptic GK-interacting proteins \u2013 in particular Gnb5, and perhaps other proteins enriched in our pool of interacting proteins that bind preferentially to GK rather than to SH3-GK \u2013 bind to these surfaces of the GK domain (Figure 6B).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/41299/elife-41299-fig6-v2.jpg)\n\n**Figure 6.:** (A) PSD-95 C-terminal domains (PSG module) functionally cooperate and regulate homotypic and heterotypic complex formation. We propose that CRIPT-derived PDZ3 ligand binding to the PDZ3 domain induces a loosening of the intramolecular SH3-GK interaction. This \u2018open\u2019 conformation is then able to initiate subsequent oligomerisation and protein binding. (B) Model of CRIPT-derived PDZ3 ligand-dependent and ligand-independent binding to the PSD-95 C-terminal SH3-GK domain tandem. Ligand - PDZ3 domain binding facilitates association with Gnb5.\n\n## Discussion\n\nThe molecular basis for the dynamic regulation of synaptic transmission is dependent on the assembly and disassembly of protein complexes (Yokoi et al., 2012; Lautz et al., 2018). It is also well established that activity-dependent changes in synaptic protein networks depend on phosphorylation (Opazo et al., 2010; Araki et al., 2015; Li et al., 2016) and other post-translational modifications, such as palmitoylation (El-Husseini et al., 2002; Fukata et al., 2013). Recently, it has been reported that the minimal requirement for the amplification of synaptic signals is the interaction of glutamate receptor auxiliary subunits with postsynaptic scaffold proteins; specifically the interaction between different PDZ ligand C-termini and synaptic MAGUKs can trigger a common molecular mechanism necessary for the induction of long-term potentiation downstream of glutamate receptors (Sheng et al., 2018).\n\nIn this study, we focussed on the postsynaptic scaffold protein PSD-95, which plays a central role in activity-dependent synapse regulation (Ehrlich et al., 2007). It is established that protein complex formation guided by PSD-95 PDZ and GK domains can be reversibly regulated by phosphorylation (Sumioka et al., 2010; Zhu et al., 2017), and at postsynaptic membranes, various PDZ ligand C-termini of multimeric receptor complexes are available to form multivalent interactions with scaffold proteins (Schwenk et al., 2012). In previous work, we showed that binding of CRIPT-derived ligands to PDZ3 of PSD-95 promoted formation of PSD-95 multimers (Rademacher et al., 2013). More recently, it was shown by others that binding of a SynGAP-derived PDZ ligand peptide was sufficient to induce PSD-95 PSG construct dimerisation (Zeng et al., 2016), and the same group subsequently explored how SynGAP-induced conformational coupling between the PDZ3 domain and the SH3-GK module plays a role in this process (Zeng et al., 2018).\n\nHere we identify synaptic interactors whose association with PSD-95 is influenced by the conformational state of the PSD-95 C-terminus. Among these proteins, we focussed further on Gnb5. Gnb5 acts in a heterodimeric complex together with RGS7 to functionally couple GIRK channels to GABAB receptors (Xie et al., 2010; Ostrovskaya et al., 2014). Upon activation of GABAB receptors, the Gnb5-RGS7 complex promotes fast deactivation of GIRK channels (Fajardo-Serrano et al., 2013). Interestingly, the interaction between RGS proteins and Gnb5 involves the N-terminal helical domain of Gnb5 and the G protein gamma-subunit-like (GGL) domain of RGS proteins (Cheever et al., 2008). In our experiments, the protein complex formation between PSD-95 and Gnb5 likewise involved the N-terminal helix of Gnb5: its deletion (see shortGnb5) strongly inhibited the interaction with PSD-95. It will be interesting to explore if PSD-95 competes with RGS7 for Gnb5 interaction during GABAB \u2013 GIRK channel signalling, or if PSD-95 associates with a different pool of Gnb5 that acts in other processes.\n\nOur data indicate that the Gnb5 - PSD-95 interaction is positively regulated by ligand binding to the third PDZ domain of PSD-95. In order to understand how this occurs, it is important to note that in MAGUK scaffold proteins, the SH3 and GK domains interact directly, and together they form a unique structure that sets them apart from SH3 and GK domains found independently in other protein families (Tavares et al., 2001). Indeed, PSD-95 SH3 and GK domains, when expressed independently, bind each other efficiently (McGee and Bredt, 1999; Shin et al., 2000). Likewise, in line with this structural model, mutations that disrupt the interface where these two domains contact each other can have detrimental effects on protein function (McGee and Bredt, 1999; Shin et al., 2000). Also relevant is the fact that the SH3 domain has been reported to be an allosteric regulator or inhibitor of GK domain binding function, not only by direct contact with the adjacent GK surface but also by regulating the conformation of distant GK domain surfaces (Marcette et al., 2009). It is possible that binding of a ligand to the PSD-95 PDZ3 domain influences precisely this function of the neighbouring SH3 domain and thus indirectly regulates GK interactions at distant sites. Alternatively, it is conceivable that regulation via PDZ3 ligand binding results in a conformational change that loosens the natural SH3-GK structure, thereby freeing up the SH3-interacting surface of the GK domain for other protein-protein interactions. Nevertheless, in both possible scenarios, binding of a ligand to the adjacent PDZ3 domain would release the GK domain from its regulation by the interacting SH3 domain. In order to explore these two possibilities, we took advantage of the established GK interactor GKAP and we compared Gnb5 and GKAP with regard to PSD-95 binding. By introducing a mutation (R568A) in the canonical GMP-binding region of PSD-95, we were able to completely abolish GKAP binding to the PSD-95 GK domain. The GKAP - PSD-95 interaction, however, was not influenced by ligand binding to PDZ3. This result suggests that the canonical GMP-binding region in the GK domain is not allosterically regulated by PDZ3 ligand binding. For Gnb5, we observed the opposite pattern: First of all, the R568A mutation had no effect on the Gnb5 - PSD-95 interaction, suggesting that Gnb5 might occupy a different GK domain surface for interaction \u2013 one that does not directly overlap with the canonical GMP-binding site responsible for the GKAP interaction. Second, the Gnb5 - PSD-95 association, unlike the GKAP - PSD-95 interaction, is strongly dependent on ligand binding to PDZ3, which provides further support for the idea that Gnb5 binds the PSD-95 GK domain away from the GMP-binding site.\n\nWe propose that the Gnb5 - PSD-95 interaction is regulated by a modular allosteric mechanism: the SH3 domain exerts inhibitory activity on the GK domain binding capacity by competing directly with Gnb5 for interaction surfaces. Our data are in line with a model in which the PSD-95 SH3-GK domain tandem undergoes structural rearrangements upon binding of a CRIPT-derived PDZ3 ligand to the adjacent PDZ3 domain, and these changes free up the GK domain for interactions with selected proteins.\n\nOur study highlights three interesting avenues for further study. Exploring how Gnb5 functionally links PSD-95 to GIRK channels, as discussed above, is of primary interest. In addition, the idea that other MAGUKs might be subject to similar ligand-induced alterations and subsequent modulation of protein interactions is relevant. Data from other groups suggest that SynGAP, which also binds to PSD-95 PDZ3, specifically influences conformational coupling between PDZ3 and the SH3-GK module, while the related SAP102 does not undergo the same mechanistic alterations (Zeng et al., 2018). It will be interesting to explore if the intramolecular SH3-GK assembly of synaptic MAGUKs is generally regulated by ligand binding to PDZ3, as we observe for PSD-95. It is likewise of interest to investigate in more detail how different PDZ3-binding ligands compare to full-length CRIPT and NLGN1 in how they induce changes within the SH3-GK assembly of PSD-95, and how these changes influence homotypic and heterotypic PSD-95 complex formation. The temporal and spatial expression of PDZ3-binding proteins could potentially steer the formation and composition of specific PSD-95-associated complexes. Moreover, kinase-mediated signalling in response to changes in synaptic activity can also influence binding affinity of ligands for PDZ3 domains (Walkup et al., 2016), highlighting another mechanistic level at which PSD-95 complex formation can be regulated by biological processes. These ideas will be explored in future investigations.\n\n## Materials and methods\n\n### DNA constructs\n\nFull-length rat PSD-95 (NM_019621) was cloned into pCMV-Tag3A, to obtain MYC-PSD-95. Arginine 568 was exchanged to Alanine by site-directed mutagenesis to generate MYC-PSD-95 R568A.\n\nPSD-95-YN was generated by a PCR based strategy: amino acids 1\u2013724 of PSD-95 were fused to a flexible 3x(GGGGS) linker followed by amino acids 1\u2013154 of EYFP and an HA-tag. PSD-95-YC was generated accordingly by fusing amino acids 1\u2013724 of PSD-95 to a flexible 3x(GGGGS) linker followed by amino acids 155\u2013238 of EYFP and a MYC-tag. Leucine 460 was exchanged to proline by site-directed mutagenesis to generate PSD-95-YN L460P.\n\nMYC-PSG was generated by cloning a fragment that encodes amino acids 247\u2013724 of PSD-95 into pCMV-Tag3A. MYC-PSG L460P and MYC-PSG R568A were generated by PCR based site-directed mutagenesis. FLAG-SH3-GK and FLAG-GK constructs were generated by cloning fragments that encode amino acids 403\u2013724 (SH3-GK) and amino acids 504\u2013724 (GK) of PSD-95 into pCMV-Tag2A. MYC-GK was generated by cloning a fragment that encodes amino acids 504\u2013724 of PSD-95 into pCMV-Tag3A.\n\nGST-SH3-GK and GST-GK constructs were generated by cloning fragments that encode amino acids 403\u2013724 (SH3-GK) and amino acids 504\u2013724 (GK) of PSD-95 into pGEX-6P-1 (GE Healthcare).\n\nFull-length rat Neuroligin-1 (NLGN1, NM_053868.2) was cloned into pcDNA3.1 and an HA-tag (YPYDVPDYA) was inserted following the signal sequence (between amino acid 45 and 46) by PCR mutagenesis. The C-terminal PDZ ligand motif (TTRV) was mutated to abolish PDZ domain binding by introducing two alanine residues (TARA) to generate a mutNLGN1 construct.\n\nFull-length rat SynCAM1 (XM_006242948) was cloned into pCMV-Tag2A and an HA-tag (YPYDVPDYA) was inserted following the signal sequence (between amino acid 47 and 48) by PCR mutagenesis.\n\nCRIPT-derived PDZ3 ligand constructs were generated by fusing an HSV-tag (QPELAPEDPED) to mCherry followed by a flexible 3x(GGGGS) linker and 10 amino acids (DTKNYKQTSV) referring to the PDZ ligand CRIPT. MutPDZ ligand constructs were generated by mutating the C-terminal QTSV motif to QASA.\n\nFull-length rat Gnb5 (NM_031770) was cloned into pCMV-Tag2A to generate FLAG-Gnb5. A shortGnb5 construct was generated by cloning a fragment that encodes amino acids 34\u2013353 of Gnb5 into pCMV-Tag2A. Gnb5-Clover was generated by cloning Gnb5 into pEYFP-N1. In a subsequent cloning step EYFP was exchanged for Clover. Full-length mouse GKAP (NM_001360665) was cloned into pCMV-Tag2A to generate FLAG-GKAP.\n\n### Cell culture and transfection\n\nCOS-7 (DSMZ no. ACC 60) and HEK-293T (DSMZ no. ACC 635) cells were purchased from the Leibniz-Institut DSMZ - Deutsche Sammlung von Mikroorganismen und Zellkulturen GmbH. HEK-293T (DSMZ no. ACC 635) cell identity was confirmed by fluorescent nonaplex PCR of short tandem repeat markers by DSMZ. COS-7 (DSMZ no. ACC 60) cell identity was confirmed by Hinf I-(gtg)5 DNA profiling by DSMZ. Both cell lines were tested negative for mycoplasma. Cultured cells were maintained in DMEM containing 10% FBS, PEN-STREP (1000 U/ml) and 2 mM L-glutamine. Cells were transfected with Lipofectamine 2000 Reagent (Invitrogen) according to the manufacturer\u2019s protocol and harvested for subsequent experimental procedures 20\u201324 hr post transfection.\n\n### Bimolecular fluorescence complementation (BiFC) assay and flow cytometry\n\nHEK-293T cells were cultured in 12 well plates and transfected with the respective expression construct combinations. Prior to analysis by flow cytometry (BD FACS Calibur) the cells were incubated for 60 min at room temperature to promote fluorophore formation. Cells were harvested by gently rocking the culture dishes and washing with PBS/10% FBS. The HEK-293T cell population was identified in the forward vs. side scatter plot and a gate was defined for subsequent analyses. 10,000 single-cell events for each construct combination were measured and fluorescence was quantified (BD CellQuest and FlowJo).\n\n### Coimmunoprecipitation\n\nTransfected COS-7 cells were harvested 20\u201324 hr post transfection, resuspended in lysis buffer (50 mM Tris-HCl, 100 mM NaCl, 0.1% NP40, pH 7.5/1 ml per T75 flask) and lysed using a 30-gauge syringe needle. Lysates (1 ml) were cleared by centrifugation and incubated with 2 \u00b5g of the appropriate antibody (mouse \u03b1GFP antibody [Roche], mouse \u03b1MYC [Clontech], or normal mouse IgG [Santa Cruz]) for 3 hr followed by a centrifugation at 20,000 x g. Supernatants were incubated with 30 \u00b5l Protein G-Agarose (Roche) per ml and washed three times with lysis buffer.\n\n### Western blot\n\nImmunocomplexes were collected by centrifugation, boiled in SDS sample buffer, and separated by 10% Tricine-SDS-PAGE (Sch\u00e4gger, 2006). Proteins were blotted onto a PVDF membrane (0.2 \u00b5m pore size, Bio-Rad) by semidry transfer (SEMI-DRY TRANSFER CELL, Bio-Rad). Membranes were blocked (PBS/0.1% Tween 20/5% dry milk) and incubated overnight with the primary antibody (1:5000). After incubation with the respective horseradish peroxidase (HRP)-conjugated secondary antibody (1:5000), blots were imaged using chemiluminescence HRP substrate (Western Lightning Plus ECL, Perkin Elmer) and a luminescent image analyser (ImageQuant LAS 4000 mini, GE Healthcare). The following primary antibodies were used for protein detection: \u03b1FLAG M2-HRP (mouse, A8592, Sigma), \u03b1Gnb5 (rabbit, ab185206, Abcam), \u03b1MYC (rabbit, 2272S, Cell Signalling). Secondary antibodies: \u03b1Mouse-HRP (115-035-003, Dianova), \u03b1Rabbit-HRP (111-035-003, Dianova). All western blots shown are representative results from individual pull-down experiments that have been replicated at least three times with similar outcome.\n\nFor western blot quantification, coIP band intensities were measured with the ImageQuant TL 1D v8.1 software (GE Healthcare). In each lane, the band detection areas were set to the same size and the background was automatically corrected using the \u2018rubberband\u2019 method. The resulting band volumes (total sum of pixel intensities) were normalised within each experiment to the respective internal control lane and the results represent relative fold changes (mean\u00a0\u00b1SEM). For a quantitative view of the variations between individual experiments, the resulting values of three experiments were combined and represented as dot plots.\n\n### Isolation of proteins from the crude synaptosome fraction and GST pull-down\n\nOne rat brain (Wistar, 2 g) was used to isolate the crude synaptosome fraction with Syn-PER reagent (Thermo Scientific) according to the manufacturer\u2019s manual. In brief, one rat brain was homogenised in 20 ml Syn-PER with a Dounce tissue grinder on ice. The resulting homogenate was centrifuged at 4\u00b0C for 10 minutes / 1200 x g. The supernatant was transferred to a new centrifuge tube and centrifuged at 4\u00b0C for 20 minutes / 15,000 x g. The resulting crude synaptosome pellet was solubilised in 10 ml PBS/1% Triton X-100 and cleared by centrifugation.\n\nGST-GK and GST-SH3-GK constructs were expressed in E.coli BL21 DE3 and purified according to the manufacturer\u2019s manual (GST Gene Fusion System, GE Healthcare). 30 \u00b5l of glutathione agarose (Pierce) was loaded with GST-GK or GST-SH3-GK proteins and incubated for 3 hr with solubilised proteins. The beads were washed three times with PBS/1% Triton X-100 and further processed for SDS-PAGE.\n\n### Sample preparation and liquid chromatography-mass spectrometry (LC-MS)\n\nProteins were eluted from the matrix by incubation with SDS sample buffer for 5 min at 95\u00b0C and subsequently separated by SDS-PAGE (10% Tricine-SDS-PAGE). Coomassie-stained lanes were cut into 12 slices and in-gel protein digestion and 16O/18O-labeling was performed as described\u00a0previously (Kristiansen et al., 2008; Lange et al., 2010). In brief, corresponding samples were incubated overnight at 37\u00b0C with 50 ng trypsin (sequencing grade modified, Promega) in 25 \u03bcl of 50 mM ammonium bicarbonate in the presence of heavy water (Campro Scientific GmbH, 97% 18O) and regular 16O-water, respectively. To prevent oxygen back-exchange by residual trypsin activity, samples were heated at 95\u00b0C for 20 min. After cooling down, 50 \u03bcl of 0.5% TFA in acetonitrile was added to decrease the pH of the sample from\u00a0~8 to\u00a0~2. Afterwards, corresponding heavy- and light-isotope samples were combined and peptides were dried under vacuum. Peptides were reconstituted in 10 \u03bcl of 0.05% (v/v) TFA, 2% (v/v) acetonitrile, and 6.5 \u00b5l were analysed by a reversed-phase capillary nano liquid chromatography system (Ultimate 3000, Thermo Scientific) connected to an Orbitrap Velos mass spectrometer (Thermo Scientific). Samples were injected and concentrated on a trap column (PepMap100 C18, 3 \u03bcm, 100 \u00c5, 75 \u03bcm i.d.\u00a0\u00d72 cm, Thermo Scientific) equilibrated with 0.05% TFA, 2% acetonitrile in water. After switching the trap column inline, LC separations were performed on a capillary column (Acclaim PepMap100 C18, 2 \u03bcm, 100 \u00c5, 75 \u03bcm i.d.\u00a0\u00d725 cm, Thermo Scientific) at an eluent flow rate of 300 nl/min. Mobile phase A contained 0.1% formic acid in water, and mobile phase B contained 0.1% formic acid in acetonitrile. The column was pre-equilibrated with 3% mobile phase B followed by an increase of 3\u201350% mobile phase B in 50 min. Mass spectra were acquired in a data-dependent mode utilising a single MS survey scan (m/z 350\u20131500) with a resolution of 60,000 in the Orbitrap, and MS/MS scans of the 20 most intense precursor ions in the linear trap quadrupole. The dynamic exclusion time was set to 60 s and automatic gain control was set to 1\u00a0\u00d7\u00a0106 and 5.000 for Orbitrap-MS and LTQ-MS/MS scans, respectively.\n\n### Proteomic data analysis\n\nIdentification and quantification of 16O/18O-labelled samples was performed using the Mascot Distiller Quantitation Toolbox (version 2.6.3.0, Matrix Science). Data were compared to the SwissProt protein database using the taxonomy rattus (August 2017 release with 7996 protein sequences). A maximum of two missed cleavages was allowed and the mass tolerance of precursor and sequence ions was set to 10 ppm and 0.35 Da, respectively. Methionine oxidation, acetylation (protein N-terminus), propionamide (C), and C-terminal 18O1- and 18O2-isotope labeling were used as variable modifications. A significance threshold of 0.05 was used based on decoy database searches. For quantification at protein level, a minimum of two quantified peptides was set as a threshold. Relative protein ratios were calculated from the intensity-weighted average of all peptide ratios. The median protein ratio of each experiment was used for normalisation of protein ratios. Only proteins that were quantified in all three replicates with a standard deviation of\u00a0<2 were considered. Mean protein L/H ratios (GST-GK/GST-SH3-GK) from all three replicates were calculated. Known contaminants (e.g. keratins) and the bait protein were removed from the protein output table.\n\n### Live cell microscopy\n\nHEK-293T cells were seeded in 35 mm FluoroDishes (World Precision Instruments) and triple-transfected with PSD-95-YN, PSD-95-YC and Neuroligin-1 expression constructs. Images were acquired using a spinning disk confocal microscope (Nikon CSU-X).\n\n### Immunofluorescence and confocal microscopy\n\nMixed cultures of primary hippocampal neurons were generated as reported earlier (Rademacher et al., 2016). Briefly, E18 Wistar pups were decapitated, and hippocampi were isolated and collected in ice-cold DMEM (Lonza). Single cell solution was generated by partially digestion (5 min at 37\u00b0C) with Trypsin/EDTA (Lonza). The reaction was stopped by adding DMEM/10% FBS (Biochrom) following a subsequent washing with DMEM. Tissue was then resuspended in neuron culture medium (Neurobasal supplemented with B27 and 500 \u03bcM glutamine) and mechanically dissociated. Neurons were plated at\u00a0~105 cells/cm2 on coverslips coated with poly-D-Lysine and laminin (Sigma). One hour after plating, cell debris was removed and cultures were maintained in a humidified incubator at 37\u00b0C with 5% CO2. The hippocampal neurons were fixed at DIV21 with 4% PFA in PBS for 10 min at RT and permeabilised with 0.2% Triton-X in PBS for 5 min. After blocking for 1 hr at RT with blocking solution (4% BSA in PBS) the primary antibodies were incubated overnight at 4\u00b0C diluted 1:500 in blocking solution. Secondary antibodies were diluted 1:1000 in blocking solution and incubated for 1 hr at RT. Coverslips were mounted with Fluoromount G and images were acquired with a Leica laser-scanning confocal microscope (Leica TCS-SP5 II, 63x objective). Primary antibodies: \u03b1Gnb5 (rabbit, ab185206, Abcam), \u03b1PSD-95 (mouse, 75\u2013028, NeuroMab), \u03b1MAP2 (mouse, 05\u2013346, Millipore), \u03b1MAP2 (guinea pig, 188004, Synaptic Systems), \u03b1Synapsin (guinea pig, 106004, Synaptic Systems). Secondary antibodies: \u03b1Rabbit Alexa Fluor 488 (A-21441, Invitrogen), \u03b1Guinea pig Alexa Fluor 568 (Thermo Fisher), \u03b1Guinea pig Alexa Fluor 405 (ab175678, Abcam), \u03b1Mouse Alexa Fluor 568 (A-11031, Life Technologies), \u03b1Mouse Alexa Fluor 405 (A-31553, Invitrogen).\n\n### Laboratory animal handling\n\nAll animals used were handled in accordance with the relevant guidelines and regulations. Protocols were approved by the \u2018Landesamt f\u00fcr Gesundheit und Soziales\u2019 (LaGeSo; Regional Office for Health and Social Affairs) in Berlin and animals reported under the permit number T0280/10.\n",
+      "created_at": "2025-12-02T09:07:38.482853Z"
+    },
+    {
+      "id": "0eec428a-a72d-4962-aa3a-85df313ccc00",
+      "submission_id": "1284a4e9-3cbb-4a1b-98ad-02730b8d8d0e",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Mary B Kennedy, California Institute of Technology United States\n\nReviewers:\n- Matthieu Sainlos, Universit\u00e9 de Bordeaux France\n\n## Review text\n\nDOI: [10.7554/eLife.41299.018](https://doi.org/10.7554/eLife.41299.018)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Intramolecular domain dynamics regulate synaptic MAGUK protein interactions\" for consideration by eLife. Your article has been reviewed by three peer reviewers, one of whom is a member of our Board of Reviewing Editors, and the evaluation has been overseen by Richard Aldrich as the Senior Editor. The following individual involved in review of your submission has agreed to reveal his identity: Matthieu Sainlos (Reviewer #2).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nIn this study the authors build on earlier studies by themselves and others showing that binding of ligands to the third PDZ domain of PSD-95 changes the conformation of the SH3-GK domain. Other studies have shown that a portion of the GK domain becomes more exposed upon binding of ligands to PDZ3, and this appears to increase the probability of formation of PSD-95 dimers by \"domain-swapping.\" The new finding in this study is that opening up of the GK domain exposes binding sites for additional proteins to the GK site. The authors carry out a \"proteomic\" study to identify possible interacting proteins that bind to the GK site alone but not to the tandem SH3-GK domain. They identify several G-protein subunits as potential regulated binders, and follow up with a study of the binding of gnb5, a \u03b2 subunit that is known to activate GIRK channels downstream of GABAB receptors. They confirm that this interaction is regulated by binding of a PDZ domain ligand and that it does not require a critical arginine residue in the GK binding groove (unlike a characterized GK partner, GKAP). These results indicate that there are at least two different binding modes in place for the GK domain. This study is interesting for two reasons. It identifies a regulated binding site on the GK domain of PSD-95 that is apparently blocked by interaction with the SH3 domain in the monomeric form of PSD-95. The study shows that gnb5 can bind to this site, suggesting that PSD-95 may, under particular conditions, localize gnb5 near synaptically located GABAB receptors at excitatory synapses, possibly increasing the probability of regulation of GIRK channels by nearby release of GABA.\n\nEssential revisions:\n\nThere are some major concerns that must be addressed before the study can be published in eLife.\n\n1) In most of the figures, results are shown as single immunoblots without quantification, an indication of how often they were reproduced, or the size of the standard error. In general it is not clear how often each individual experiment was repeated. This should clearly be stated for each figure. Quantification and statistical measures over several experiments are necessary for all of these instances in order to ensure the reproducibility and rigor of the findings before they can be published in eLife.\n\n2) Figure 1 lacks at least one critical control. The authors need to show and quantify the fluorescent signal When WT/WT split EYFP and WT/L460 split EYFP are expressed without a PDZ binding ligand. In the absence of this control it is not possible to assess with confidence the size of the effect of a PDZ ligand. The mutNLGN1 is an important control, but it is not adequate by itself. In addition, in Figure 1C, mutating the NLGN1 ligand for PDZ3 reduces signal by only ~40%. The mutation of the TTRV sequence to TARA would be expected to mostly if not completely abrogate binding of this ligand to PDZ3. If so then there should be a nearly 100% loss of the signal. The authors need to address to which degree the TARA really reduces binding and, if it is a complete abrogation, explain why the effect in that experiment is only partial. Also, Shin et al., 2000, as cited) find that the L460P mutation does not prevent multimerization of PSD-95 in contrast to what appears to be the case in Figure 1C. The authors need to address this discrepancy. In fact, the authors conclude later that the open conformation (as would be induced by either binding of ligand to PDZ3 or the L460P mutation) is required for binding of Gnb5. Why the L460P mutation does not result in any multimerization of PSD-95 in Figure 1C is unclear.\n\n3) The authors tend to overgeneralize/lack precision on some key elements. Their initial article (Rademacher et al., 2013) only showed that PSD-95 and not synaptic MAGUK proteins oligomerized upon PDZ domain ligand binding. Other reports indicate different behavior within the PSD-95 family with respect to oligomerization (Zeng et al., 2018 \u2013 and not 2017). Similarly, the authors often use the term PDZ3 ligand leading the reader to believe that any PDZ3 ligand will have the same effect. However they have only used two ligands -CRIPT and Neuroligin- and again other reports indicate a difference between CRIPT and another PDZ3 ligand, SynGAP, on their effect on the PSG module (Zeng et al., 2018). Of note, the molecular mechanism by which SynGAP interaction leads to PSD-95 oligomerization is clearly presented in that same study, despite what is written in the discussion (referring to an older citation).\n\n4) Along these lines, considering that CRIPT and SynGAP led to different results for PSD-95 oligomerization in Zeng et al., 2018, it would be interesting to clarify how the present results compare to the one obtained with the SynGAP PDZ3 ligand. Another point is that while CRIPT is, to my knowledge, a monomer, full-length Neuroligin is a dimer which complicates the interpretation of the results of the first section and raises the question if the same oligomerization mechanism is observed.\n\n5) The claim that Gnb5 and GKAP occupy different subdomains is not supported by totally convincing data. The results clearly show a different mode of interaction but do not exclude the fact that it could be the same subdomain. Simultaneous co-precipitation of the two GK partners, if successful, could support such a claim.\n\n6) The method that the authors use to isolate \"synaptic proteins\" using a reagent sold by Thermo-Fisher has not been verified in any peer-reviewed publication. A search of the online references listed on the Thermo-Fisher website does not contain any method that can reliably enrich for synaptic proteins without the use of a density gradient. The inadequacy of the method is revealed, for example, by the high level of ribosomal proteins listed in the author's Figure 2\u2014source data 1. In subsection \u201cThe SH3-GK assembly state influences PSD-95 interactions with synaptic proteins\u201d, the authors cite the overlap between their list of proteins and that of Wilkinson et al., 2017. However, Wilkinson et al. did not use a method that enriches for synaptic proteins. They simply extracted a crude membrane pellet from a brain homogenate with detergent to obtain detergent insoluble proteins. The extracted pellet would contain microsomes and mitochondria, in addition to synaptosomes. This fraction is not a postsynaptic density fraction because it skips the step of isolating synaptosomes from the brain homogenate. For the continued integrity of the literature, the authors should eliminate statements that indicate that they are working with \"synaptic proteins\" or \"postsynaptic density\" proteins. They should eliminate the reference to the Wilkinson paper completely as it does not support their statement that they are working with synaptic proteins. The authors have wisely chosen to work with a protein that has been shown to be located in the excitatory postsynaptic compartment, and to play an important role there (regulation of GIRK channels by GABAB receptors). They have verified the synaptic location of the particular protein they have studied. Nonetheless, all claims to have started with anything other than a detergent insoluble extract of a crude brain membrane fraction should be removed.\n\n7) There is not enough information in the Materials and methods section about how flow cytometry was performed and no actual plots of data distribution are shown as would be customary for such analysis, including the presumed existence of various populations of cells. Did the authors stain for cell viability (like propidium iodide) to exclude defective cells?\n\n[Editors' note: further revisions were requested prior to acceptance, as described below.]\n\nThank you for resubmitting your work entitled \"Intramolecular domain dynamics regulate synaptic MAGUK protein interactions\" for further consideration at eLife. Your revised article has been favourably evaluated by Richard Aldrich (Senior Editor), and three reviewers, one of whom is a member of our Board of Reviewing Editors.\n\nThe manuscript has been improved but there are some remaining issues that need to be addressed before acceptance, as outlined below:\n\nIn this first revision, the authors have responded adequately to some, but not all of the major comments on the original manuscript. They have included quantitation and statistical analysis of all of their experiments as appropriate. They have included a new control (SynCAM1) in their transfections to strengthen the conclusion that the interaction of the two halves of EYFP fused to neuroligin and transfected into 293 cells requires interaction of neuroligin with a PDZ domain of PSD-95.\n\nHowever, the authors have not responded adequately to the criticism that they have over-generalized and lack precision in their writing. There are two aspects of this problem.\n\n1) The authors conflate the finding that the CRIPT 10-mer \"opens-up\" the GK domain exposing a new domain that binds to Gnb5, with the generalization that the CRIPT 10-mer promotes multimerization of PSD-95 (which they believe also leads to dimerization of tagged neuroligin). The implication is that the multimerization of PSD-95 arises from the \"opening up\" of the GK and SH3 domains so that they can interact in trans with other proteins. This generalization conflicts with the finding reported by Zeng et al. in Journal of Molecular Biology (2018) that binding of a peptide containing the final 17 residues of CRIPT (CRIPT 17-mer) to PDZ3 does NOT lead to multimerization of PSD-95; whereas binding of a peptide containing the final 15 residues of synGAP DOES result in multimerization of PSD-95.\n\nCommunication about this issue may have been obfuscated by the fact that the authors have mis-stated the year of this Zeng et al. publication as 2017. The authors need to fix the citation of the J. Mol. Bio. paper by Zeng et al. by changing the year to 2018. Note that a later Cell paper published by Zeng et al. in 2018 on a similar topic is actually not relevant to the present study and should not be cited.\n\nIn the Zeng et al. 2018 J. Mol. Biol. paper, Zeng et al. used size-exclusion chromatography and NMR to show that binding of the synGAP 15-mer to PDZ3 (including a short downstream \u03b1 helix) causes dimerization of the PSD-95 construct; whereas, binding of the CRIPT 17-mer does not cause dimerization of PSD-95. The reviewers can think of two possible reasons for the discrepancy between their results and the present manuscript. One is that Zeng et al. used a CRIPT 17-mer; whereas the present authors used a CRIPT 10-mer. Perhaps the two peptides produce different results with respect to \"opening-up\" of the GK domain. If this is the case, it calls into question the in vivo significance of the finding with the CRIPT 10-mer. The other possible explanation is that the binding of either of the two CRIPT peptides to PDZ3 of PSD-95 causes a change in conformation of the SH3-GK domains such that a new binding site for Gnb5 and other proteins is made available; however, the conformational change does not permit full dimerization of PSD-95 through the domain-swapping trans association. In other words, CRIPT peptides may produce a different change in the structure of the SH3-GK domain than does the synGAP 15-mer. In the present manuscript, the authors have not used any methodology that would directly detect dimerization of the PSD-95 construct by the domain-swapping trans interaction. They have assumed that fluorescence resulting from interaction of the two halves of EYFP linked to neuroligin results from oligomerization of PSD-95. For example, they state:\n\n\"In this study, we use a bimolecular fluorescence complementation (BiFC) assay to show that PSD-95 oligomerisation is triggered by PDZ3 ligands and dependent on the C-terminal SH3-GK domain tandem.\"\n\nTo resolve the apparent conflict between their data and that of Zeng et al., the authors should compare the effect of a CRIPT 17-mer in their assays to the effect of the CRIPT 10-mer and test directly for dimerization of the PSD-95 construct after binding of the peptides by size-exclusion chromatography or another method that would unambiguously detect dimerization of PSD-95.\n\n2) The authors continue to inappropriately generalize their results to all PDZ3 binding ligands. For example:\n\nIn the Abstract, \"Here we show that binding of monomeric PDZ3 ligands to the third PDZ domain of PSD-95 induces functional changes in the intramolecular SH3-GK domain assembly that influence subsequent homotypic and heterotypic complex formation.\"\n\n\"\u2026this interaction is triggered by PDZ3 ligands binding to the third PDZ domain of PSD-95,\u2026\"\n\nIntroduction section: We have previously shown that synaptic MAGUK proteins oligomerise upon binding of monomeric PDZ3 ligands (ligands that specifically bind to the third PDZ domain) (Rademacher et al., 2013) and speculated that ligand \u2013 PDZ3 domain binding induces conformational changes in the C-terminal domains that lead to complex formation.\"\n\nThis generalization to all PDZ3 ligands is repeated in several places in the manuscript. The authors should replace the term PDZ3 ligand with the name of the specific ligand that the authors use in each experiment.\n",
+      "created_at": "2025-12-02T09:07:38.482853Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T09:07:38.482853Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T09:07:38.482853Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "c5d6c355-f3d4-4a59-8a65-1d3232b00dda",
+      "content_id": "c03fed49-d7fa-45c5-8cfe-c804d0355c4c",
+      "claim_id": "C1",
+      "claim": "PSD-95 MAGUK family scaffold proteins contain three PDZ domains followed by an SH3-GK domain tandem.",
+      "claim_type": "EXPLICIT",
+      "source": "PSD-95 MAGUK family scaffold proteins are multi-domain organisers of synaptic transmission that contain three PDZ domains followed by an SH3-GK domain tandem.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement in the abstract describing the domain architecture of PSD-95.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:07:38.482853Z"
+    },
+    {
+      "id": "8f8fb3de-3b2d-4f30-8db5-919fd0a5b3e0",
+      "content_id": "c03fed49-d7fa-45c5-8cfe-c804d0355c4c",
+      "claim_id": "C2",
+      "claim": "Binding of monomeric CRIPT-derived PDZ3 ligands to the third PDZ domain of PSD-95 induces functional changes in the intramolecular SH3-GK domain assembly.",
+      "claim_type": "EXPLICIT",
+      "source": "Here we show that binding of monomeric CRIPT-derived PDZ3 ligands to the third PDZ domain of PSD-95 induces functional changes in the intramolecular SH3-GK domain assembly that influence subsequent homotypic and heterotypic complex formation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding stated in the abstract and supported by experimental data throughout the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:07:38.482853Z"
+    },
+    {
+      "id": "8f955f41-e774-45f3-afa7-6deacb4b9f45",
+      "content_id": "c03fed49-d7fa-45c5-8cfe-c804d0355c4c",
+      "claim_id": "C3",
+      "claim": "The heterotrimeric G protein subunit Gnb5 is a PSD-95 complex partner at dendritic spines of rat hippocampal neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Among these interactors, we further establish the heterotrimeric G protein subunit Gnb5 as a PSD-95 complex partner at dendritic spines of rat hippocampal neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding stated in the abstract and supported by immunofluorescence data in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:07:38.482853Z"
+    },
+    {
+      "id": "a452b264-e2b1-42e1-80c6-91b68411b7f9",
+      "content_id": "c03fed49-d7fa-45c5-8cfe-c804d0355c4c",
+      "claim_id": "C4",
+      "claim": "The PSD-95 GK domain binds to Gnb5.",
+      "claim_type": "EXPLICIT",
+      "source": "The PSD-95 GK domain binds to Gnb5, and this interaction is triggered by CRIPT-derived PDZ3 ligands binding to the third PDZ domain of PSD-95, unraveling a hierarchical binding mechanism of PSD-95 complex formation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding stated in the abstract and supported by coimmunoprecipitation and GST pull-down experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:07:38.482853Z"
+    },
+    {
+      "id": "2b3eeb3f-4da0-4851-972b-0477936b5129",
+      "content_id": "c03fed49-d7fa-45c5-8cfe-c804d0355c4c",
+      "claim_id": "C5",
+      "claim": "The Gnb5-PSD-95 interaction is triggered by CRIPT-derived PDZ3 ligands binding to the third PDZ domain of PSD-95.",
+      "claim_type": "EXPLICIT",
+      "source": "The PSD-95 GK domain binds to Gnb5, and this interaction is triggered by CRIPT-derived PDZ3 ligands binding to the third PDZ domain of PSD-95, unraveling a hierarchical binding mechanism of PSD-95 complex formation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding stated in the abstract and supported by coimmunoprecipitation experiments in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:07:38.482853Z"
+    },
+    {
+      "id": "10a9fce4-75a7-4a58-8043-a5e9abdebcbc",
+      "content_id": "c03fed49-d7fa-45c5-8cfe-c804d0355c4c",
+      "claim_id": "C6",
+      "claim": "Excitatory synapses are contact sites through which neurons communicate with each other.",
+      "claim_type": "EXPLICIT",
+      "source": "Excitatory synapses are the contact sites through which neurons communicate with each other.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established scientific knowledge about synaptic function.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:07:38.482853Z"
+    },
+    {
+      "id": "ca59b10e-6d5d-428a-b354-3f16062ad01c",
+      "content_id": "c03fed49-d7fa-45c5-8cfe-c804d0355c4c",
+      "claim_id": "C7",
+      "claim": "Incoming action potentials are converted into chemical signals (neurotransmitters) at presynaptic terminals.",
+      "claim_type": "EXPLICIT",
+      "source": "Incoming action potentials are converted into chemical signals (neurotransmitters) at presynaptic terminals, which subsequently pass through the synaptic cleft and are reconverted into electrical signals at postsynaptic sites (Lisman et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by a citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:07:38.482853Z"
+    },
+    {
+      "id": "38052f28-0054-4ec9-9c11-972d511ded1a",
+      "content_id": "c03fed49-d7fa-45c5-8cfe-c804d0355c4c",
+      "claim_id": "C8",
+      "claim": "Synaptic contacts are able to undergo structural changes and thereby modify neuronal network computation.",
+      "claim_type": "EXPLICIT",
+      "source": "These synaptic contacts are not static but are able to undergo structural changes and thereby modify neuronal network computation (Nishiyama and Yasuda, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by a citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:07:38.482853Z"
+    },
+    {
+      "id": "7410a80e-97bb-4808-a6bb-bbc439382ea1",
+      "content_id": "c03fed49-d7fa-45c5-8cfe-c804d0355c4c",
+      "claim_id": "C9",
+      "claim": "At postsynaptic sites, interacting proteins are densely packed into a sub-membrane structure called the postsynaptic density (PSD).",
+      "claim_type": "EXPLICIT",
+      "source": "At postsynaptic sites, interacting proteins are densely packed into a sub-membrane structure called the postsynaptic density (PSD) (Sheng and Hoogenraad, 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by a citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:07:38.482853Z"
+    },
+    {
+      "id": "9e61fd8f-87a4-48a7-b361-8a21ded22323",
+      "content_id": "c03fed49-d7fa-45c5-8cfe-c804d0355c4c",
+      "claim_id": "C10",
+      "claim": "PSD-95 family MAGUKs are highly abundant components of the PSD and function as central regulators of postsynaptic organisation.",
+      "claim_type": "EXPLICIT",
+      "source": "Scaffold proteins of the PSD-95 family membrane-associated guanylate kinases (MAGUKs) are highly abundant components of the PSD and function as central regulators of postsynaptic organisation (Zhu et al., 2016a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by a citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:07:38.482853Z"
+    },
+    {
+      "id": "c98a5db5-2226-4766-973f-c87106801d02",
+      "content_id": "c03fed49-d7fa-45c5-8cfe-c804d0355c4c",
+      "claim_id": "C11",
+      "claim": "PSD-95 family MAGUKs directly interact with NMDA receptor C-termini.",
+      "claim_type": "EXPLICIT",
+      "source": "PSD-95 family MAGUKs contain three PDZ domains that are known to directly interact with N-methyl-D-aspartate (NMDA) receptor C-termini (Kornau et al., 1995)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by a citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:07:38.482853Z"
+    },
+    {
+      "id": "ba1f91fd-ae40-41a1-9072-982e586f7dcd",
+      "content_id": "c03fed49-d7fa-45c5-8cfe-c804d0355c4c",
+      "claim_id": "C12",
+      "claim": "PSD-95 family MAGUKs directly interact with AMPA receptor C-termini.",
+      "claim_type": "EXPLICIT",
+      "source": "\u03b1-amino-3-hydroxy-5-methyl-4-isoxazolepropionic acid (AMPA) receptor C-termini (Leonard et al., 1998)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by a citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:07:38.482853Z"
+    },
+    {
+      "id": "e68e004c-11ba-4bfd-b77d-7138d7afc08d",
+      "content_id": "c03fed49-d7fa-45c5-8cfe-c804d0355c4c",
+      "claim_id": "C13",
+      "claim": "PSD-95 family MAGUKs directly interact with AMPA receptor auxiliary subunit C-termini.",
+      "claim_type": "EXPLICIT",
+      "source": "and AMPA receptor auxiliary subunit C-termini (Dakoji et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by a citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:07:38.482853Z"
+    },
+    {
+      "id": "b6dc2565-4720-46b7-9e6b-f383f6f5d927",
+      "content_id": "c03fed49-d7fa-45c5-8cfe-c804d0355c4c",
+      "claim_id": "C14",
+      "claim": "The MAGUK SH3 domain lost its function to bind proline-rich peptides and instead forms an intramolecular interaction with the GK domain.",
+      "claim_type": "EXPLICIT",
+      "source": "The MAGUK SH3 domain lost its function to bind proline-rich peptides; instead it forms an intramolecular interaction with the GK domain (McGee et al., 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by a citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:07:38.482853Z"
+    },
+    {
+      "id": "0fd3e6d0-55dd-459d-8912-ef9d2e92d14b",
+      "content_id": "c03fed49-d7fa-45c5-8cfe-c804d0355c4c",
+      "claim_id": "C15",
+      "claim": "The PSD-95 GK domain is unable to phosphorylate GMP but has evolved as a protein interaction domain.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, the PSD-95 GK domain is atypical in that it is unable to phosphorylate GMP but has evolved as a protein interaction domain (Johnston et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by a citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:07:38.482853Z"
+    },
+    {
+      "id": "80c85fd0-acef-43bb-812c-0c6610cf5da5",
+      "content_id": "c03fed49-d7fa-45c5-8cfe-c804d0355c4c",
+      "claim_id": "C16",
+      "claim": "Binding of known interactors to the GK domain typically involves residues of the canonical GMP-binding region.",
+      "claim_type": "EXPLICIT",
+      "source": "Binding of known interactors to the GK domain typically involves residues of the canonical GMP-binding region (Reese et al., 2007; Zhu et al., 2011; Zhu et al., 2016b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:07:38.482853Z"
+    },
+    {
+      "id": "23e1c6ed-8eed-44cc-a31f-3a868229cb68",
+      "content_id": "c03fed49-d7fa-45c5-8cfe-c804d0355c4c",
+      "claim_id": "C17",
+      "claim": "PSD-95 family MAGUKs are essential for the establishment of long-term potentiation (LTP) by regulating the content of AMPA receptors at dendritic spines.",
+      "claim_type": "EXPLICIT",
+      "source": "Accordingly, PSD-95 family MAGUKs are essential for the establishment of long-term potentiation (LTP) by regulating the content of AMPA receptors at dendritic spines (Ehrlich and Malinow, 2004; Opazo et al., 2012; Sheng et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:07:38.482853Z"
+    },
+    {
+      "id": "f0549189-43d5-42e5-a771-aa9aaa7eacab",
+      "content_id": "c03fed49-d7fa-45c5-8cfe-c804d0355c4c",
+      "claim_id": "C18",
+      "claim": "Acute knockdown of PSD-95 MAGUKs leads to a decrease in postsynaptic AMPA and NMDA receptor-mediated synaptic transmission.",
+      "claim_type": "EXPLICIT",
+      "source": "In line with this is the observation that acute knockdown of PSD-95 MAGUKs leads to a decrease in postsynaptic AMPA and NMDA receptor-mediated synaptic transmission as well as a reduction in PSD size (Chen et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by a citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:07:38.482853Z"
+    },
+    {
+      "id": "d9d89b66-facd-463e-8db9-0d1acbf1bbba",
+      "content_id": "c03fed49-d7fa-45c5-8cfe-c804d0355c4c",
+      "claim_id": "C19",
+      "claim": "Acute knockdown of PSD-95 MAGUKs leads to a reduction in PSD size.",
+      "claim_type": "EXPLICIT",
+      "source": "In line with this is the observation that acute knockdown of PSD-95 MAGUKs leads to a decrease in postsynaptic AMPA and NMDA receptor-mediated synaptic transmission as well as a reduction in PSD size (Chen et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by a citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:07:38.482853Z"
+    },
+    {
+      "id": "03c1b967-61b9-4ac8-a275-0d7fff26f7cf",
+      "content_id": "c03fed49-d7fa-45c5-8cfe-c804d0355c4c",
+      "claim_id": "C20",
+      "claim": "PSD-95 oligomerises upon binding of monomeric CRIPT-derived PDZ3 ligands.",
+      "claim_type": "EXPLICIT",
+      "source": "We have previously shown that the synaptic MAGUK protein PSD-95 oligomerises upon binding of monomeric CRIPT-derived PDZ3 ligands (ligands that specifically bind to the third PDZ domain) (Rademacher et al., 2013)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a previous finding by the authors supported by a citation to their prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:07:38.482853Z"
+    },
+    {
+      "id": "87b8137a-953d-4756-a71f-c3f1abffb212",
+      "content_id": "c03fed49-d7fa-45c5-8cfe-c804d0355c4c",
+      "claim_id": "C21",
+      "claim": "Ligand-PDZ3 domain binding induces conformational changes in the C-terminal domains that lead to complex formation.",
+      "claim_type": "EXPLICIT",
+      "source": "and speculated that ligand - PDZ3 domain binding induces conformational changes in the C-terminal domains that lead to complex formation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation based on previous observations.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:07:38.482853Z"
+    },
+    {
+      "id": "60831f31-c3b4-4707-8bde-cf5d25f9ae1c",
+      "content_id": "c03fed49-d7fa-45c5-8cfe-c804d0355c4c",
+      "claim_id": "C22",
+      "claim": "PDZ ligand-induced effects in PSD-95 MAGUK proteins have been supported by other studies.",
+      "claim_type": "EXPLICIT",
+      "source": "Our initial observations of PDZ ligand-induced effects in PSD-95 MAGUK proteins have recently been supported by other studies (Zeng et al., 2016; Zeng et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to other studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:07:38.482853Z"
+    },
+    {
+      "id": "f1584e53-fef9-4220-82ab-c8493e5d1bf3",
+      "content_id": "c03fed49-d7fa-45c5-8cfe-c804d0355c4c",
+      "claim_id": "C23",
+      "claim": "PSD-95 oligomerisation can be triggered by Neuroligin-1 (NLGN1).",
+      "claim_type": "EXPLICIT",
+      "source": "In this study, we use a bimolecular fluorescence complementation (BiFC) assay to show that PSD-95 oligomerisation can be triggered by Neuroligin-1 (NLGN1)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the study supported by BiFC assay data in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:07:38.482853Z"
+    },
+    {
+      "id": "6ec69213-5880-4e67-a304-08a56a1a689a",
+      "content_id": "c03fed49-d7fa-45c5-8cfe-c804d0355c4c",
+      "claim_id": "C24",
+      "claim": "PSD-95 oligomerisation triggered by NLGN1 is dependent on the C-terminal SH3-GK domain tandem.",
+      "claim_type": "EXPLICIT",
+      "source": "and that this is dependent on the C-terminal SH3-GK domain tandem.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the study supported by BiFC assay data in Figure 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:07:38.482853Z"
+    },
+    {
+      "id": "4f469b88-5dbf-4d4b-ba76-89397f34eee0",
+      "content_id": "c03fed49-d7fa-45c5-8cfe-c804d0355c4c",
+      "claim_id": "C25",
+      "claim": "Neuroligin-1 is a synaptic adhesion molecule that specifically binds to the third PDZ domain of PSD-95.",
+      "claim_type": "EXPLICIT",
+      "source": "NLGN1 is a synaptic adhesion molecule that specifically binds to the third PDZ domain of PSD-95 (Irie et al., 1997).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by a citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:07:38.482853Z"
+    },
+    {
+      "id": "84c54bb3-4d79-4c19-abe5-3959c8404d70",
+      "content_id": "c03fed49-d7fa-45c5-8cfe-c804d0355c4c",
+      "claim_id": "C26",
+      "claim": "Coexpression of PSD-95-YN and PSD-95-YC constructs with full-length NLGN1 led to the formation of multimolecular fluorescent PSD-95 complexes located at the cell membrane.",
+      "claim_type": "EXPLICIT",
+      "source": "Coexpression of the per se non-fluorescent PSD-95-YN and PSD-95-YC constructs (together referred to as WT/WTsplitEYFP) with full-length NLGN1 led to the formation of multimolecular fluorescent PSD-95 complexes that were located at the cell membrane, recapitulating the natural localisation of the endogenous protein complexes (Figure 1B)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:07:38.482853Z"
+    },
+    {
+      "id": "2b40aaf4-6f19-4ee5-a36b-8742a8e83153",
+      "content_id": "c03fed49-d7fa-45c5-8cfe-c804d0355c4c",
+      "claim_id": "C27",
+      "claim": "In PSD-95 complexes formed with NLGN1, the PSD-95 C-termini are in close proximity to each other.",
+      "claim_type": "EXPLICIT",
+      "source": "and highlighting that the PSD-95 C-termini (which harbour the splitEYFP tags) are in close proximity to each other in these complexes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the BiFC assay results where splitEYFP refolding indicates proximity.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:07:38.482853Z"
+    },
+    {
+      "id": "b4d27f4a-8bf6-4502-b945-4b99346f7689",
+      "content_id": "c03fed49-d7fa-45c5-8cfe-c804d0355c4c",
+      "claim_id": "C28",
+      "claim": "SynCAM1 does not bind to PSD-95 PDZ domains.",
+      "claim_type": "EXPLICIT",
+      "source": "Fluorescence is almost not detectable by coexpression of SynCAM1 (SynCAM1 is not binding to PSD-95 PDZ domains)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data in Figure 1C and established knowledge about SynCAM1 binding specificity.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:07:38.482853Z"
+    },
+    {
+      "id": "c901beb5-2f77-4eaa-87b2-c1fed2dcddba",
+      "content_id": "c03fed49-d7fa-45c5-8cfe-c804d0355c4c",
+      "claim_id": "C29",
+      "claim": "SynCAMs bind exclusively to class II PDZ domains rather than class I PDZ domains.",
+      "claim_type": "EXPLICIT",
+      "source": "SynCAMs, like NLGNs, are trans-synaptic membrane proteins; however, they differ from NLGN family members at the C-terminus and bind exclusively to class II PDZ domains (e.g. CASK, MPP2) rather than class I PDZ domains (such as PSD-95 PDZ domains) (Biederer et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by a citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:07:38.482853Z"
+    },
+    {
+      "id": "2ee02aa5-b236-4cb2-8048-4abbdd161e62",
+      "content_id": "c03fed49-d7fa-45c5-8cfe-c804d0355c4c",
+      "claim_id": "C30",
+      "claim": "Mutation of the PDZ-binding sequence of NLGN1 (TTRV to TARA) decreases fluorescence intensity by approximately 40% relative to wild-type NLGN1.",
+      "claim_type": "EXPLICIT",
+      "source": "Upon coexpression of this mutNLGN1 with splitEYFP-tagged PSD-95 molecules, the detected fluorescence intensity decreased by approximately 40% relative to that after coexpression with wild-type NLGN1 (Figure 1D, see also Figure 1\u2014figure supplement 1 for gating strategy)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:07:38.482853Z"
+    },
+    {
+      "id": "52b487a4-fe8d-404c-a5dd-42de49063dde",
+      "content_id": "c03fed49-d7fa-45c5-8cfe-c804d0355c4c",
+      "claim_id": "C31",
+      "claim": "The L460P mutation in the PSD-95 SH3 domain specifically disrupts the intramolecular SH3-GK domain interaction.",
+      "claim_type": "EXPLICIT",
+      "source": "Leucine 460 is an internal SH3 domain residue and the L460P mutation has been shown to specifically disrupt the intramolecular SH3-GK domain interaction (Figure 1\u2014figure supplement 2) (McGee and Bredt, 1999; Shin et al., 2000)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is established knowledge supported by citations and validated by experimental data in Figure 1\u2014figure supplement 2.",
+      "evidence_type": "[\"CITATION\", \"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:07:38.482853Z"
+    },
+    {
+      "id": "08193e03-b4b1-4018-82f4-b1c2bdc37069",
+      "content_id": "c03fed49-d7fa-45c5-8cfe-c804d0355c4c",
+      "claim_id": "C32",
+      "claim": "The L460P mutation strongly abolishes PSD-95 complex assembly as observed by EYFP refolding.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, this amino acid exchange does not interfere with PDZ3 ligand binding (Rademacher et al., 2013) but strongly abolishes PSD-95 complex assembly, as observed by EYFP refolding (Figure 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:07:38.482853Z"
+    },
+    {
+      "id": "37f8705a-0ad6-41f0-826d-6979474bcdbc",
+      "content_id": "c03fed49-d7fa-45c5-8cfe-c804d0355c4c",
+      "claim_id": "C33",
+      "claim": "The L460P mutation does not interfere with PDZ3 ligand binding.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, this amino acid exchange does not interfere with PDZ3 ligand binding (Rademacher et al., 2013)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:07:38.482853Z"
+    },
+    {
+      "id": "c4c3151a-524b-4e67-8e18-1a09bff383dd",
+      "content_id": "c03fed49-d7fa-45c5-8cfe-c804d0355c4c",
+      "claim_id": "C34",
+      "claim": "The intramolecular SH3-GK domain interaction is a hallmark feature of MAGUK proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "that is one of the hallmark features of MAGUK proteins (Tavares et al., 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by a citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:07:38.482853Z"
+    },
+    {
+      "id": "47068b36-9132-4235-ab22-1581a0fa727b",
+      "content_id": "c03fed49-d7fa-45c5-8cfe-c804d0355c4c",
+      "claim_id": "C35",
+      "claim": "The L460P mutation results in a constitutively 'open' conformation of the SH3-GK domain tandem.",
+      "claim_type": "EXPLICIT",
+      "source": "We assume that in the context of the full-length protein, the L460P mutation likewise weakens the (intramolecular) interaction between the SH3 and GK domains, which would then result in a constitutively 'open' conformation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the known effects of the L460P mutation.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:07:38.482853Z"
+    },
+    {
+      "id": "056fbb5e-1dbb-48fd-ba9d-65a4a42e7010",
+      "content_id": "c03fed49-d7fa-45c5-8cfe-c804d0355c4c",
+      "claim_id": "C36",
+      "claim": "PSD-95 constructs efficiently oligomerise and coprecipitate upon binding of a PDZ3 ligand.",
+      "claim_type": "EXPLICIT",
+      "source": "In line with our BiFC assay results, we have previously reported that PSD-95 constructs (full-length and the isolated PSG module) efficiently oligomerise and coprecipitate upon binding of a PDZ3 ligand (Rademacher et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a previous finding by the authors supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:07:38.482853Z"
+    },
+    {
+      "id": "57b6eac7-d3fa-4172-88be-a75c7f8c9b17",
+      "content_id": "c03fed49-d7fa-45c5-8cfe-c804d0355c4c",
+      "claim_id": "C37",
+      "claim": "The PSG module forms a dynamic modular entity.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, the observation by NMR spectroscopy that the PSG module forms a dynamic modular entity (Zhang et al., 2013)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by a citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:07:38.482853Z"
+    },
+    {
+      "id": "2e6f14e3-4052-461e-972e-7ac4ad2cee06",
+      "content_id": "c03fed49-d7fa-45c5-8cfe-c804d0355c4c",
+      "claim_id": "C38",
+      "claim": "CRIPT is a cytosolic protein that interacts predominantly with the third PDZ domain of PSD-95.",
+      "claim_type": "EXPLICIT",
+      "source": "For these experiments, we again took advantage of the PSD-95 interactor CRIPT, which is a cytosolic protein that has been shown to interact predominantly with the third PDZ domain of PSD-95 (Niethammer et al., 1998).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by a citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:07:38.482853Z"
+    },
+    {
+      "id": "480debd7-c4b9-4b59-898c-26ad5a3916cc",
+      "content_id": "c03fed49-d7fa-45c5-8cfe-c804d0355c4c",
+      "claim_id": "C39",
+      "claim": "The CRIPT-derived mutPDZ3 ligand (DTKNYKQASA) almost completely abrogates binding to PDZ3.",
+      "claim_type": "EXPLICIT",
+      "source": "As a control, comparable constructs carrying two amino acid exchanges within the PDZ3 ligand sequence (DTKNYKQASA) were used. In our hands, this mutation in the CRIPT C-terminus almost completely abrogates binding to PDZ3, as observed by coIP (Rademacher et al., 2013)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:07:38.482853Z"
+    },
+    {
+      "id": "45adafb9-38cf-477f-957a-a54cc405189a",
+      "content_id": "c03fed49-d7fa-45c5-8cfe-c804d0355c4c",
+      "claim_id": "C40",
+      "claim": "The SH3-GK construct did not coprecipitate with the PSG module regardless of whether it was coexpressed with wild-type or mutant CRIPT-derived PDZ3 ligands.",
+      "claim_type": "EXPLICIT",
+      "source": "The SH3-GK construct did not coprecipitate with the PSG module regardless of whether it was coexpressed with wild-type or mutant CRIPT-derived PDZ3 ligands.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:07:38.482853Z"
+    },
+    {
+      "id": "cd5d4374-ef71-4ad4-b2ec-7b3f5b420e5d",
+      "content_id": "c03fed49-d7fa-45c5-8cfe-c804d0355c4c",
+      "claim_id": "C41",
+      "claim": "The GK domain alone coprecipitated effectively with the PSG module when expressed in the presence of functional CRIPT-derived PDZ3 ligands.",
+      "claim_type": "EXPLICIT",
+      "source": "The GK domain alone, however, coprecipitated effectively with the PSG module, when expressed in the presence of functional CRIPT-derived PDZ3 ligands.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:07:38.482853Z"
+    },
+    {
+      "id": "79cc2888-c30f-47d4-bfef-b09fcc54962e",
+      "content_id": "c03fed49-d7fa-45c5-8cfe-c804d0355c4c",
+      "claim_id": "C42",
+      "claim": "Binding of a CRIPT-derived PDZ3 ligand renders the PSG module 'interaction-competent' to bind isolated GK domain constructs in trans.",
+      "claim_type": "EXPLICIT",
+      "source": "These data suggest that binding of a CRIPT-derived PDZ3 ligand renders the PSG module 'interaction-competent'; that is it facilitates formation of a conformational state in which it is able to bind isolated GK domain constructs in trans.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the coimmunoprecipitation data in Figure 1E.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:07:38.482853Z"
+    },
+    {
+      "id": "329a8615-abaf-42a2-8a69-3a25021105eb",
+      "content_id": "c03fed49-d7fa-45c5-8cfe-c804d0355c4c",
+      "claim_id": "C43",
+      "claim": "The intramolecular SH3-GK domain assembly resembles the 'interaction-incompetent' state where the SH3 domain autoinhibits the GK domain's interaction activity.",
+      "claim_type": "EXPLICIT",
+      "source": "In this experiment, the intramolecular SH3-GK domain assembly resembles the 'interaction-incompetent' state, and the SH3 domain autoinhibits the GK domain's interaction activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the experimental results.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:07:38.482853Z"
+    },
+    {
+      "id": "5232a082-8a8a-435f-ab4c-7f1f2734bb78",
+      "content_id": "c03fed49-d7fa-45c5-8cfe-c804d0355c4c",
+      "claim_id": "C44",
+      "claim": "278 proteins were reproducibly identified and quantified in the mass spectrometry experiment.",
+      "claim_type": "EXPLICIT",
+      "source": "In total, we reproducibly identified and quantified 278 proteins (Figure 2\u2014source data 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the mass spectrometry data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:07:38.482853Z"
+    },
+    {
+      "id": "0faa2cf0-6aa4-47f2-80f6-166b6115de1d",
+      "content_id": "c03fed49-d7fa-45c5-8cfe-c804d0355c4c",
+      "claim_id": "C45",
+      "claim": "Approximately 82% of the identified proteins have been reported to be present in mouse and/or human cortical postsynaptic density fractions.",
+      "claim_type": "EXPLICIT",
+      "source": "Remarkably, 230 (\u2248 82%) of these have been reported to be present in mouse and/or human cortical postsynaptic density fractions (Bay\u00e9s et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by comparison with published data cited.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:07:38.482853Z"
+    },
+    {
+      "id": "ab564719-5367-4f65-a79e-898091f61e53",
+      "content_id": "c03fed49-d7fa-45c5-8cfe-c804d0355c4c",
+      "claim_id": "C46",
+      "claim": "Map1A is a known GK-domain interacting protein.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, we also identified the known GK-domain interacting proteins Map1A (Reese et al., 2007)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by a citation and validated by the mass spectrometry data.",
+      "evidence_type": "[\"CITATION\", \"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:07:38.482853Z"
+    },
+    {
+      "id": "168ee467-9c07-40da-8ad7-81bb5e8445de",
+      "content_id": "c03fed49-d7fa-45c5-8cfe-c804d0355c4c",
+      "claim_id": "C47",
+      "claim": "Mark2 is a known GK-domain interacting protein.",
+      "claim_type": "EXPLICIT",
+      "source": "Mark2 (Wu et al., 2012)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by a citation and validated by the mass spectrometry data.",
+      "evidence_type": "[\"CITATION\", \"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:07:38.482853Z"
+    },
+    {
+      "id": "ea81dbf8-466b-4213-823f-f64f27e0d44a",
+      "content_id": "c03fed49-d7fa-45c5-8cfe-c804d0355c4c",
+      "claim_id": "C48",
+      "claim": "Dlgap2 is a known GK-domain interacting protein.",
+      "claim_type": "EXPLICIT",
+      "source": "Dlgap2 (Takeuchi et al., 1997)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by a citation and validated by the mass spectrometry data.",
+      "evidence_type": "[\"CITATION\", \"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:07:38.482853Z"
+    },
+    {
+      "id": "e59cf2fa-238e-461e-b647-84c9bcbfedc2",
+      "content_id": "c03fed49-d7fa-45c5-8cfe-c804d0355c4c",
+      "claim_id": "C49",
+      "claim": "Srcin1/p140CAP is a known GK-domain interacting protein.",
+      "claim_type": "EXPLICIT",
+      "source": "and Srcin1/p140CAP (Fossati et al., 2015)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by a citation and validated by the mass spectrometry data.",
+      "evidence_type": "[\"CITATION\", \"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:07:38.482853Z"
+    },
+    {
+      "id": "852342bf-df9d-4051-bbb6-e17c714b979e",
+      "content_id": "c03fed49-d7fa-45c5-8cfe-c804d0355c4c",
+      "claim_id": "C50",
+      "claim": "Several heterotrimeric G protein subunits were enriched in the protein fractions that bind preferentially to the GST-GK construct.",
+      "claim_type": "EXPLICIT",
+      "source": "Unexpectedly, we isolated several heterotrimeric G protein subunits enriched in the protein fractions that bind preferentially to the GST-GK construct (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the mass spectrometry data shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:07:38.482853Z"
+    },
+    {
+      "id": "42f1db6b-d66e-4ae8-b41d-fa2d919f1ab3",
+      "content_id": "c03fed49-d7fa-45c5-8cfe-c804d0355c4c",
+      "claim_id": "C51",
+      "claim": "Gnb5 is a signalling effector downstream of GPCRs that exhibits inhibitory activity in neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Of special interest was the guanine nucleotide binding protein beta 5 (Gnb5), which is a signalling effector downstream of GPCRs that exhibits inhibitory activity in neurons (Xie et al., 2010; Ostrovskaya et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:07:38.482853Z"
+    },
+    {
+      "id": "0992e11d-2ad7-4aed-92c1-32278c78592e",
+      "content_id": "c03fed49-d7fa-45c5-8cfe-c804d0355c4c",
+      "claim_id": "C52",
+      "claim": "Gnb5 contains an N-terminal \u03b1-helix followed by a \u03b2-sheet propeller composed of seven WD-40 repeats.",
+      "claim_type": "EXPLICIT",
+      "source": "Gnb5 contains an N-terminal \u03b1-helix followed by a \u03b2-sheet propeller composed of seven WD-40 repeats (Cheever et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by a citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:07:38.482853Z"
+    },
+    {
+      "id": "060d0158-09b5-4dda-845e-80ba59edc3e1",
+      "content_id": "c03fed49-d7fa-45c5-8cfe-c804d0355c4c",
+      "claim_id": "C53",
+      "claim": "Gnb5 is specifically expressed in brain.",
+      "claim_type": "EXPLICIT",
+      "source": "Gnb5 is specifically expressed in brain (Watson et al., 1994)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by a citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:07:38.482853Z"
+    },
+    {
+      "id": "c9bfb09a-b9ce-4e29-b8f3-453b98a1b570",
+      "content_id": "c03fed49-d7fa-45c5-8cfe-c804d0355c4c",
+      "claim_id": "C54",
+      "claim": "Mutations in the Gnb5 gene cause a multisystem syndrome with intellectual disability in patients.",
+      "claim_type": "EXPLICIT",
+      "source": "and mutations in the Gnb5 gene cause a multisystem syndrome with intellectual disability in patients (Lodder et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by a citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:07:38.482853Z"
+    },
+    {
+      "id": "5c6051cf-fe0d-4294-bd81-a996309c2828",
+      "content_id": "c03fed49-d7fa-45c5-8cfe-c804d0355c4c",
+      "claim_id": "C55",
+      "claim": "Gnb5 was not detected in the bead control pull-down.",
+      "claim_type": "EXPLICIT",
+      "source": "We could not detect Gnb5 in the bead control pull-down lane",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:07:38.482853Z"
+    },
+    {
+      "id": "aca7b9db-af62-432d-8dc4-37595ae2a23a",
+      "content_id": "c03fed49-d7fa-45c5-8cfe-c804d0355c4c",
+      "claim_id": "C56",
+      "claim": "Almost no Gnb5 was detectable in the GST-SH3-GK lane.",
+      "claim_type": "EXPLICIT",
+      "source": "and almost no Gnb5 was detectable in the GST-SH3-GK lane.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:07:38.482853Z"
+    },
+    {
+      "id": "6bd9dd61-741f-41e2-b10a-2ae64cf48074",
+      "content_id": "c03fed49-d7fa-45c5-8cfe-c804d0355c4c",
+      "claim_id": "C57",
+      "claim": "A clear Gnb5 signal was present in the GST-GK lane.",
+      "claim_type": "EXPLICIT",
+      "source": "However, a clear Gnb5 signal was present in the GST-GK lane",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:07:38.482853Z"
+    },
+    {
+      "id": "c2913630-0f56-4c07-9fe6-17af06d9f67f",
+      "content_id": "c03fed49-d7fa-45c5-8cfe-c804d0355c4c",
+      "claim_id": "C58",
+      "claim": "A Gnb5-GK domain interaction is favoured over a Gnb5-SH3-GK domain interaction.",
+      "claim_type": "EXPLICIT",
+      "source": "supporting our quantitative mass spectrometry results and suggesting that a Gnb5 - GK domain interaction is favoured over a Gnb5 - SH3-GK domain interaction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the GST pull-down data in Figure 3A.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:07:38.482853Z"
+    },
+    {
+      "id": "9ca723ab-7580-4c3e-9ef8-8790bad56656",
+      "content_id": "c03fed49-d7fa-45c5-8cfe-c804d0355c4c",
+      "claim_id": "C59",
+      "claim": "Overexpressed Gnb5 preferentially interacts with the isolated GK domain compared to SH3-GK domain constructs in COS-7 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, we observed a preferred interaction of overexpressed Gnb5 with the isolated GK domain compared to SH3-GK domain constructs in COS-7 cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:07:38.482853Z"
+    },
+    {
+      "id": "bb396d18-9574-4011-a2da-699a8cac8123",
+      "content_id": "c03fed49-d7fa-45c5-8cfe-c804d0355c4c",
+      "claim_id": "C60",
+      "claim": "Upon IP of Gnb5-Clover, the isolated GK domain coprecipitates far more efficiently than the SH3-GK domain.",
+      "claim_type": "EXPLICIT",
+      "source": "Upon IP of Gnb5 tagged with the green fluorescent protein Clover (Lam et al., 2012) using \u03b1GFP antibodies, the isolated GK domain coprecipitates far more efficiently than does the SH3-GK domain (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:07:38.482853Z"
+    },
+    {
+      "id": "20c37ddf-5644-4d0c-a740-f842acf3f03f",
+      "content_id": "c03fed49-d7fa-45c5-8cfe-c804d0355c4c",
+      "claim_id": "C61",
+      "claim": "Gnb5 staining is present in neuronal dendrites where the signal overlaps with PSD-95 staining.",
+      "claim_type": "EXPLICIT",
+      "source": "Gnb5 staining was present in neuronal dendrites, where the signal overlaps with the PSD-95 staining (Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by immunofluorescence data shown in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:07:38.482853Z"
+    },
+    {
+      "id": "5f30b895-90eb-4067-93cc-60a0e958dfba",
+      "content_id": "c03fed49-d7fa-45c5-8cfe-c804d0355c4c",
+      "claim_id": "C62",
+      "claim": "The Gnb5 signal is adjacent to the presynaptic Synapsin signal.",
+      "claim_type": "EXPLICIT",
+      "source": "In these experiments, the Gnb5 signal is adjacent to the presynaptic Synapsin signal (Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by immunofluorescence data shown in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:07:38.482853Z"
+    },
+    {
+      "id": "b75b170b-4b01-47bc-86ed-8ffc99cce24d",
+      "content_id": "c03fed49-d7fa-45c5-8cfe-c804d0355c4c",
+      "claim_id": "C63",
+      "claim": "The presence of CRIPT-derived PDZ3 ligands triggers coimmunoprecipitation of Gnb5 and PSD-95.",
+      "claim_type": "EXPLICIT",
+      "source": "Following IP of PSD-95, the precipitates were analysed by western blot: the presence of these PDZ3 ligands indeed triggered coimmunoprecipitation of Gnb5 and PSD-95",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:07:38.482853Z"
+    },
+    {
+      "id": "9fcd84f2-7e57-4a1a-9180-1898a265766a",
+      "content_id": "c03fed49-d7fa-45c5-8cfe-c804d0355c4c",
+      "claim_id": "C64",
+      "claim": "Gnb5 lacking the N-terminal \u03b1-helix (shortGnb5) coprecipitated somewhat less efficiently than the full-length protein.",
+      "claim_type": "EXPLICIT",
+      "source": "Gnb5 lacking the N-terminal \u03b1-helix (shortGnb5) coprecipitated somewhat less efficiently than the full-length protein (Figure 4A)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:07:38.482853Z"
+    },
+    {
+      "id": "56fc20d1-d00b-42ee-b661-e3f0dd23e4f7",
+      "content_id": "c03fed49-d7fa-45c5-8cfe-c804d0355c4c",
+      "claim_id": "C65",
+      "claim": "The N-terminal region of Gnb5 (amino acids 1\u201333) is important for the PDZ3 ligand-mediated interaction with PSD-95.",
+      "claim_type": "EXPLICIT",
+      "source": "suggesting that this N-terminal region of Gnb5 (amino acids 1\u201333) is important for the PDZ3 ligand-mediated interaction with PSD-95.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the coimmunoprecipitation data in Figure 4A.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:07:38.482853Z"
+    },
+    {
+      "id": "519f0290-aba1-4fe0-a495-1c984fc282e8",
+      "content_id": "c03fed49-d7fa-45c5-8cfe-c804d0355c4c",
+      "claim_id": "C66",
+      "claim": "The PSG module is sufficient for ligand-triggered coimmunoprecipitation of Gnb5.",
+      "claim_type": "EXPLICIT",
+      "source": "Clearly, the PSG module is sufficient for ligand-triggered coimmunoprecipitation of Gnb5.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data shown in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:07:38.482853Z"
+    },
+    {
+      "id": "7affdb2a-f051-4f0a-a0d6-54e25a0484bd",
+      "content_id": "c03fed49-d7fa-45c5-8cfe-c804d0355c4c",
+      "claim_id": "C67",
+      "claim": "Gnb5 did not coprecipitate efficiently with the wild-type PSG module.",
+      "claim_type": "EXPLICIT",
+      "source": "Gnb5 did not coprecipitate efficiently with the wild-type PSG module",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data shown in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:07:38.482853Z"
+    },
+    {
+      "id": "666bf282-45db-40d1-9da3-1f58e25c7bc5",
+      "content_id": "c03fed49-d7fa-45c5-8cfe-c804d0355c4c",
+      "claim_id": "C68",
+      "claim": "Gnb5 was effectively coprecipitated by the PSG module harbouring the L460P mutation.",
+      "claim_type": "EXPLICIT",
+      "source": "but was effectively coprecipitated by the PSG module harbouring the L460P mutation that disrupts the intramolecular SH3-GK domain interaction (Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:07:38.482853Z"
+    },
+    {
+      "id": "6f803eca-58e7-4042-9ae3-53e127deb65d",
+      "content_id": "c03fed49-d7fa-45c5-8cfe-c804d0355c4c",
+      "claim_id": "C69",
+      "claim": "Various PSD-95 GK-interacting proteins bind to the canonical GMP-binding region.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, various PSD-95 GK-interacting proteins bind to the canonical GMP-binding region, and by exchanging arginine 568 (which is situated in the ancestral GMP-binding site) to alanine (R568A), these interactions can be specifically disrupted (Reese et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by a citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:07:38.482853Z"
+    },
+    {
+      "id": "3aafaf92-617d-468c-8ea6-1ce0171df653",
+      "content_id": "c03fed49-d7fa-45c5-8cfe-c804d0355c4c",
+      "claim_id": "C70",
+      "claim": "GKAP is an established synaptic GK domain binder.",
+      "claim_type": "EXPLICIT",
+      "source": "GKAP ('GK'-associated protein, also referred to as SAPAP1 or DLGAP1) is an established synaptic GK domain binder (Kim et al., 1997)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by a citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:07:38.482853Z"
+    },
+    {
+      "id": "864fb3d8-987c-4f76-8cb9-c04a0eee5d7a",
+      "content_id": "c03fed49-d7fa-45c5-8cfe-c804d0355c4c",
+      "claim_id": "C71",
+      "claim": "GKAP interaction with PSD-95 involves the GMP-binding region.",
+      "claim_type": "EXPLICIT",
+      "source": "whose interaction involves the GMP-binding region (Zhu et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by a citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:07:38.482853Z"
+    },
+    {
+      "id": "36466a20-688e-4c30-90a4-84cd673d0be0",
+      "content_id": "c03fed49-d7fa-45c5-8cfe-c804d0355c4c",
+      "claim_id": "C72",
+      "claim": "GKAP can be efficiently coprecipitated upon pull-down of either the isolated GK domain or an intact PSG module.",
+      "claim_type": "EXPLICIT",
+      "source": "These ideas are also validated by our own coimmunoprecipitation experiments: GKAP can be efficiently coprecipitated upon pull-down of either the isolated GK domain or an intact PSG module",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data shown in Figure 5A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:07:38.482853Z"
+    },
+    {
+      "id": "4506d54b-c4d1-4e6b-bd82-3f9203352e5e",
+      "content_id": "c03fed49-d7fa-45c5-8cfe-c804d0355c4c",
+      "claim_id": "C73",
+      "claim": "A recombinant PSG module harbouring the GMP binding site mutation R568A fails to precipitate GKAP.",
+      "claim_type": "EXPLICIT",
+      "source": "whereas a recombinant PSG module harbouring the GMP binding site mutation R568A fails to precipitate GKAP (Figure 5A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 5A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:07:38.482853Z"
+    },
+    {
+      "id": "6ffdefac-2c30-4e23-bd37-da69ab7e43d7",
+      "content_id": "c03fed49-d7fa-45c5-8cfe-c804d0355c4c",
+      "claim_id": "C74",
+      "claim": "The R568A mutation had no effect on coprecipitation of Gnb5 with PSD-95.",
+      "claim_type": "EXPLICIT",
+      "source": "In experiments with PSD-95 and Gnb5, however, the same mutation had no effect on coprecipitation of Gnb5 (Figure 5B)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:07:38.482853Z"
+    },
+    {
+      "id": "53347b6d-a945-442c-984f-af3ceebf95fe",
+      "content_id": "c03fed49-d7fa-45c5-8cfe-c804d0355c4c",
+      "claim_id": "C75",
+      "claim": "GKAP and Gnb5 proteins bind to PSD-95 GK domains in fundamentally different ways.",
+      "claim_type": "EXPLICIT",
+      "source": "suggesting that GKAP and Gnb5 proteins bind to PSD-95 GK domains in fundamentally different ways.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the differential effects of the R568A mutation on GKAP and Gnb5 binding.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:07:38.482853Z"
+    },
+    {
+      "id": "225dc9c0-9641-454b-be59-c7e54bcc7906",
+      "content_id": "c03fed49-d7fa-45c5-8cfe-c804d0355c4c",
+      "claim_id": "C76",
+      "claim": "The presence of PDZ3 ligands did not substantially influence the GKAP-PSD-95 interaction.",
+      "claim_type": "EXPLICIT",
+      "source": "The presence of PDZ3 ligands did not substantially influence the GKAP interaction: PSD-95 binds GKAP regardless of whether wild-type or mutant CRIPT-derived PDZ3 ligands were present (Figure 5C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 5C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:07:38.482853Z"
+    },
+    {
+      "id": "d53d1bc3-c999-42a1-ad7d-267e4b06766d",
+      "content_id": "c03fed49-d7fa-45c5-8cfe-c804d0355c4c",
+      "claim_id": "C77",
+      "claim": "Ligand binding to PDZ3 results in a conformational change of the intramolecular SH3-GK interaction.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, our data support a model in which ligand binding to PDZ3 results in a conformational change of the 'resting' intramolecular SH3-GK interaction that is common to MAGUK proteins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the experimental data throughout the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:07:38.482853Z"
+    },
+    {
+      "id": "80d7ed84-afa4-4e9d-866a-d05eb637d5f9",
+      "content_id": "c03fed49-d7fa-45c5-8cfe-c804d0355c4c",
+      "claim_id": "C78",
+      "claim": "In the resting state, the external GK surface harbouring the classical GMP binding site is available for protein-protein interaction with GKAP and MAP1a.",
+      "claim_type": "EXPLICIT",
+      "source": "In the resting state, the external GK surface harbouring the classical GMP binding site is available for protein-protein interaction such as those with the well-known PSD-95 interactors GKAP and MAP1a.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the experimental data and established knowledge.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:07:38.482853Z"
+    },
+    {
+      "id": "4c52b9b6-c48c-40eb-adff-8458cbc70da2",
+      "content_id": "c03fed49-d7fa-45c5-8cfe-c804d0355c4c",
+      "claim_id": "C79",
+      "claim": "Upon ligand binding, GK surfaces other than the GMP binding site become accessible for protein-protein interactions.",
+      "claim_type": "EXPLICIT",
+      "source": "However, upon ligand binding, other GK surfaces become accessible for protein-protein interactions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:07:38.482853Z"
+    },
+    {
+      "id": "28921867-90a9-4770-a9f0-33b9b84ea66d",
+      "content_id": "c03fed49-d7fa-45c5-8cfe-c804d0355c4c",
+      "claim_id": "C80",
+      "claim": "Gnb5 binds to GK domain surfaces that differ from the GMP-binding site.",
+      "claim_type": "EXPLICIT",
+      "source": "A subset of synaptic GK-interacting proteins \u2013 in particular Gnb5, and perhaps other proteins enriched in our pool of interacting proteins that bind preferentially to GK rather than to SH3-GK \u2013 bind to these surfaces of the GK domain (Figure 6B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference based on the experimental data showing differential binding patterns.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:07:38.482853Z"
+    },
+    {
+      "id": "9819722e-38f3-43a9-824f-bc98ac30747f",
+      "content_id": "c03fed49-d7fa-45c5-8cfe-c804d0355c4c",
+      "claim_id": "C81",
+      "claim": "The molecular basis for the dynamic regulation of synaptic transmission is dependent on the assembly and disassembly of protein complexes.",
+      "claim_type": "EXPLICIT",
+      "source": "The molecular basis for the dynamic regulation of synaptic transmission is dependent on the assembly and disassembly of protein complexes (Yokoi et al., 2012; Lautz et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:07:38.482853Z"
+    },
+    {
+      "id": "f2e94d25-5a31-463a-b763-b3249e92187e",
+      "content_id": "c03fed49-d7fa-45c5-8cfe-c804d0355c4c",
+      "claim_id": "C82",
+      "claim": "Activity-dependent changes in synaptic protein networks depend on phosphorylation.",
+      "claim_type": "EXPLICIT",
+      "source": "It is also well established that activity-dependent changes in synaptic protein networks depend on phosphorylation (Opazo et al., 2010; Araki et al., 2015; Li et al., 2016)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:07:38.482853Z"
+    },
+    {
+      "id": "ddf4463e-ceec-48c0-a2fd-06fca45fcebf",
+      "content_id": "c03fed49-d7fa-45c5-8cfe-c804d0355c4c",
+      "claim_id": "C83",
+      "claim": "Activity-dependent changes in synaptic protein networks depend on palmitoylation.",
+      "claim_type": "EXPLICIT",
+      "source": "and other post-translational modifications, such as palmitoylation (El-Husseini et al., 2002; Fukata et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:07:38.482853Z"
+    },
+    {
+      "id": "980665dc-385e-4c18-8109-f36c158294b2",
+      "content_id": "c03fed49-d7fa-45c5-8cfe-c804d0355c4c",
+      "claim_id": "C84",
+      "claim": "The minimal requirement for the amplification of synaptic signals is the interaction of glutamate receptor auxiliary subunits with postsynaptic scaffold proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "Recently, it has been reported that the minimal requirement for the amplification of synaptic signals is the interaction of glutamate receptor auxiliary subunits with postsynaptic scaffold proteins; specifically the interaction between different PDZ ligand C-termini and synaptic MAGUKs can trigger a common molecular mechanism necessary for the induction of long-term potentiation downstream of glutamate receptors (Sheng et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by a citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:07:38.482853Z"
+    },
+    {
+      "id": "4ce3d110-f838-4355-84ce-485cfeea5f31",
+      "content_id": "c03fed49-d7fa-45c5-8cfe-c804d0355c4c",
+      "claim_id": "C85",
+      "claim": "PSD-95 plays a central role in activity-dependent synapse regulation.",
+      "claim_type": "EXPLICIT",
+      "source": "In this study, we focussed on the postsynaptic scaffold protein PSD-95, which plays a central role in activity-dependent synapse regulation (Ehrlich et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by a citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:07:38.482853Z"
+    },
+    {
+      "id": "4e04942b-69bd-4106-b5e3-e07540a64ef7",
+      "content_id": "c03fed49-d7fa-45c5-8cfe-c804d0355c4c",
+      "claim_id": "C86",
+      "claim": "Protein complex formation guided by PSD-95 PDZ and GK domains can be reversibly regulated by phosphorylation.",
+      "claim_type": "EXPLICIT",
+      "source": "It is established that protein complex formation guided by PSD-95 PDZ and GK domains can be reversibly regulated by phosphorylation (Sumioka et al., 2010; Zhu et al., 2017)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:07:38.482853Z"
+    },
+    {
+      "id": "1df745ba-60fd-42b7-a733-ee8580f354e6",
+      "content_id": "c03fed49-d7fa-45c5-8cfe-c804d0355c4c",
+      "claim_id": "C87",
+      "claim": "At postsynaptic membranes, various PDZ ligand C-termini of multimeric receptor complexes are available to form multivalent interactions with scaffold proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "and at postsynaptic membranes, various PDZ ligand C-termini of multimeric receptor complexes are available to form multivalent interactions with scaffold proteins (Schwenk et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by a citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:07:38.482853Z"
+    },
+    {
+      "id": "12caf15f-df20-425d-8d08-bf38268abcc9",
+      "content_id": "c03fed49-d7fa-45c5-8cfe-c804d0355c4c",
+      "claim_id": "C88",
+      "claim": "Binding of a SynGAP-derived PDZ ligand peptide was sufficient to induce PSD-95 PSG construct dimerisation.",
+      "claim_type": "EXPLICIT",
+      "source": "More recently, it was shown by others that binding of a SynGAP-derived PDZ ligand peptide was sufficient to induce PSD-95 PSG construct dimerisation (Zeng et al., 2016)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by a citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:07:38.482853Z"
+    },
+    {
+      "id": "e2a5a990-fc8f-4a6d-abcf-a1b02a8a4cd1",
+      "content_id": "c03fed49-d7fa-45c5-8cfe-c804d0355c4c",
+      "claim_id": "C89",
+      "claim": "SynGAP-induced conformational coupling between the PDZ3 domain and the SH3-GK module plays a role in PSD-95 dimerisation.",
+      "claim_type": "EXPLICIT",
+      "source": "and the same group subsequently explored how SynGAP-induced conformational coupling between the PDZ3 domain and the SH3-GK module plays a role in this process (Zeng et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by a citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:07:38.482853Z"
+    },
+    {
+      "id": "96d86651-9c16-4dd5-901e-83a4aa0c39cb",
+      "content_id": "c03fed49-d7fa-45c5-8cfe-c804d0355c4c",
+      "claim_id": "C90",
+      "claim": "Gnb5 acts in a heterodimeric complex together with RGS7 to functionally couple GIRK channels to GABAB receptors.",
+      "claim_type": "EXPLICIT",
+      "source": "Gnb5 acts in a heterodimeric complex together with RGS7 to functionally couple GIRK channels to GABAB receptors (Xie et al., 2010; Ostrovskaya et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:07:38.482853Z"
+    },
+    {
+      "id": "eecfe205-f6f2-4a30-82a4-ae503341d5de",
+      "content_id": "c03fed49-d7fa-45c5-8cfe-c804d0355c4c",
+      "claim_id": "C91",
+      "claim": "Upon activation of GABAB receptors, the Gnb5-RGS7 complex promotes fast deactivation of GIRK channels.",
+      "claim_type": "EXPLICIT",
+      "source": "Upon activation of GABAB receptors, the Gnb5-RGS7 complex promotes fast deactivation of GIRK channels (Fajardo-Serrano et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by a citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:07:38.482853Z"
+    },
+    {
+      "id": "05d0d23e-f6fe-437a-a95c-083b235d88d3",
+      "content_id": "c03fed49-d7fa-45c5-8cfe-c804d0355c4c",
+      "claim_id": "C92",
+      "claim": "The interaction between RGS proteins and Gnb5 involves the N-terminal helical domain of Gnb5 and the G protein gamma-subunit-like (GGL) domain of RGS proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, the interaction between RGS proteins and Gnb5 involves the N-terminal helical domain of Gnb5 and the G protein gamma-subunit-like (GGL) domain of RGS proteins (Cheever et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by a citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:07:38.482853Z"
+    },
+    {
+      "id": "7a93f127-9118-4160-8968-04760e3b6b0f",
+      "content_id": "c03fed49-d7fa-45c5-8cfe-c804d0355c4c",
+      "claim_id": "C93",
+      "claim": "PSD-95 SH3 and GK domains, when expressed independently, bind each other efficiently.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, PSD-95 SH3 and GK domains, when expressed independently, bind each other efficiently (McGee and Bredt, 1999; Shin et al., 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:07:38.482853Z"
+    },
+    {
+      "id": "807aa018-8cb0-41ac-873a-3010b554e24c",
+      "content_id": "c03fed49-d7fa-45c5-8cfe-c804d0355c4c",
+      "claim_id": "C94",
+      "claim": "Mutations that disrupt the interface where SH3 and GK domains contact each other can have detrimental effects on protein function.",
+      "claim_type": "EXPLICIT",
+      "source": "Likewise, in line with this structural model, mutations that disrupt the interface where these two domains contact each other can have detrimental effects on protein function (McGee and Bredt, 1999; Shin et al., 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:07:38.482853Z"
+    },
+    {
+      "id": "bea10b66-bc76-4ccb-8504-d3d7ac71996a",
+      "content_id": "c03fed49-d7fa-45c5-8cfe-c804d0355c4c",
+      "claim_id": "C95",
+      "claim": "The SH3 domain has been reported to be an allosteric regulator or inhibitor of GK domain binding function.",
+      "claim_type": "EXPLICIT",
+      "source": "Also relevant is the fact that the SH3 domain has been reported to be an allosteric regulator or inhibitor of GK domain binding function, not only by direct contact with the adjacent GK surface but also by regulating the conformation of distant GK domain surfaces (Marcette et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by a citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:07:38.482853Z"
+    },
+    {
+      "id": "2ee1238d-c3e0-467b-a3e3-b64560862d8a",
+      "content_id": "c03fed49-d7fa-45c5-8cfe-c804d0355c4c",
+      "claim_id": "C96",
+      "claim": "Binding of a ligand to the PSD-95 PDZ3 domain may influence the allosteric regulatory function of the neighbouring SH3 domain.",
+      "claim_type": "EXPLICIT",
+      "source": "It is possible that binding of a ligand to the PSD-95 PDZ3 domain influences precisely this function of the neighbouring SH3 domain and thus indirectly regulates GK interactions at distant sites.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation based on the experimental observations.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:07:38.482853Z"
+    },
+    {
+      "id": "32169cbf-d228-4fa4-85e4-a9d74d1a02ea",
+      "content_id": "c03fed49-d7fa-45c5-8cfe-c804d0355c4c",
+      "claim_id": "C97",
+      "claim": "Regulation via PDZ3 ligand binding may result in a conformational change that loosens the natural SH3-GK structure, thereby freeing up the SH3-interacting surface of the GK domain for other protein-protein interactions.",
+      "claim_type": "EXPLICIT",
+      "source": "Alternatively, it is conceivable that regulation via PDZ3 ligand binding results in a conformational change that loosens the natural SH3-GK structure, thereby freeing up the SH3-interacting surface of the GK domain for other protein-protein interactions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation based on the experimental observations.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:07:38.482853Z"
+    },
+    {
+      "id": "638eb697-0dba-4d9d-8dce-43b6f029ee97",
+      "content_id": "c03fed49-d7fa-45c5-8cfe-c804d0355c4c",
+      "claim_id": "C98",
+      "claim": "The canonical GMP-binding region in the GK domain is not allosterically regulated by PDZ3 ligand binding.",
+      "claim_type": "EXPLICIT",
+      "source": "This result suggests that the canonical GMP-binding region in the GK domain is not allosterically regulated by PDZ3 ligand binding.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the observation that GKAP binding is not influenced by PDZ3 ligand binding.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:07:38.482853Z"
+    },
+    {
+      "id": "c3599f67-ef12-4533-86e4-4ba5d22e635a",
+      "content_id": "c03fed49-d7fa-45c5-8cfe-c804d0355c4c",
+      "claim_id": "C99",
+      "claim": "Gnb5 might occupy a different GK domain surface for interaction that does not directly overlap with the canonical GMP-binding site.",
+      "claim_type": "EXPLICIT",
+      "source": "First of all, the R568A mutation had no effect on the Gnb5 - PSD-95 interaction, suggesting that Gnb5 might occupy a different GK domain surface for interaction \u2013 one that does not directly overlap with the canonical GMP-binding site responsible for the GKAP interaction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the differential effects of the R568A mutation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:07:38.482853Z"
+    },
+    {
+      "id": "79bb13b7-55f5-4fa6-8774-11bd7e7f81ff",
+      "content_id": "c03fed49-d7fa-45c5-8cfe-c804d0355c4c",
+      "claim_id": "C100",
+      "claim": "The SH3 domain exerts inhibitory activity on the GK domain binding capacity by competing directly with Gnb5 for interaction surfaces.",
+      "claim_type": "EXPLICIT",
+      "source": "We propose that the Gnb5 - PSD-95 interaction is regulated by a modular allosteric mechanism: the SH3 domain exerts inhibitory activity on the GK domain binding capacity by competing directly with Gnb5 for interaction surfaces.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a proposed model based on the experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:07:38.482853Z"
+    },
+    {
+      "id": "b07b39a6-04c0-45f4-8ff3-f09bccdd80a0",
+      "content_id": "c03fed49-d7fa-45c5-8cfe-c804d0355c4c",
+      "claim_id": "C101",
+      "claim": "The PSD-95 SH3-GK domain tandem undergoes structural rearrangements upon binding of a CRIPT-derived PDZ3 ligand to the adjacent PDZ3 domain.",
+      "claim_type": "EXPLICIT",
+      "source": "Our data are in line with a model in which the PSD-95 SH3-GK domain tandem undergoes structural rearrangements upon binding of a CRIPT-derived PDZ3 ligand to the adjacent PDZ3 domain, and these changes free up the GK domain for interactions with selected proteins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a proposed model based on the experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:07:38.482853Z"
+    },
+    {
+      "id": "9b1e0624-2c2c-4ad0-a1b3-fbc394709541",
+      "content_id": "c03fed49-d7fa-45c5-8cfe-c804d0355c4c",
+      "claim_id": "C102",
+      "claim": "SynGAP specifically influences conformational coupling between PDZ3 and the SH3-GK module in PSD-95, while the related SAP102 does not undergo the same mechanistic alterations.",
+      "claim_type": "EXPLICIT",
+      "source": "Data from other groups suggest that SynGAP, which also binds to PSD-95 PDZ3, specifically influences conformational coupling between PDZ3 and the SH3-GK module, while the related SAP102 does not undergo the same mechanistic alterations (Zeng et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by a citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:07:38.482853Z"
+    },
+    {
+      "id": "ed463aff-91d3-4c84-9d3c-af2666bc4a2c",
+      "content_id": "c03fed49-d7fa-45c5-8cfe-c804d0355c4c",
+      "claim_id": "C103",
+      "claim": "Kinase-mediated signalling in response to changes in synaptic activity can influence binding affinity of ligands for PDZ3 domains.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, kinase-mediated signalling in response to changes in synaptic activity can also influence binding affinity of ligands for PDZ3 domains (Walkup et al., 2016)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by a citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:07:38.482853Z"
+    },
+    {
+      "id": "4248c07d-ef31-4e3c-9b2c-5a0ca43e41f6",
+      "content_id": "c03fed49-d7fa-45c5-8cfe-c804d0355c4c",
+      "claim_id": "C104",
+      "claim": "Coexpression of PSD-95-YN, PSD-95-YC and full-length Neuroligin-1 reveals a membrane associated localisation of the refolded complex.",
+      "claim_type": "EXPLICIT",
+      "source": "Live-cell microscopy of HEK-293T cells transfected with PSD-95-YN, PSD-95-YC and full-length Neuroligin-1 reveals a membrane associated localisation of the refolded complex (transfection corresponding to WT/WTsplitEYFP plus NLGN1 in Figure 1C,D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the microscopy image in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:07:38.482853Z"
+    },
+    {
+      "id": "8c4dd60d-f8fa-4698-a54e-3fa514b30287",
+      "content_id": "c03fed49-d7fa-45c5-8cfe-c804d0355c4c",
+      "claim_id": "C105",
+      "claim": "Formation of oligomeric fluorescent complexes is effective in the presence of wild-type Neuroligin-1.",
+      "claim_type": "EXPLICIT",
+      "source": "Formation of oligomeric fluorescent complexes is effective in the presence of wild-type Neuroligin-1 (NLGN1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by flow cytometry data in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:07:38.482853Z"
+    },
+    {
+      "id": "f16b7d30-9be7-41eb-8e88-15344a0d216a",
+      "content_id": "c03fed49-d7fa-45c5-8cfe-c804d0355c4c",
+      "claim_id": "C106",
+      "claim": "Fluorescence is reduced by site-directed mutagenesis of the NLGN1 PDZ3 ligand C-terminus (mutNLGN1: TTRV to TARA).",
+      "claim_type": "EXPLICIT",
+      "source": "Fluorescence is reduced by either site-directed mutagenesis of the NLGN1 PDZ3 ligand C- terminus (mutNLGN1: TTRV \u25ba TARA)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by flow cytometry data in Figure 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:07:38.482853Z"
+    },
+    {
+      "id": "e97c57b5-83ce-4fca-a134-4d00e4cf748d",
+      "content_id": "c03fed49-d7fa-45c5-8cfe-c804d0355c4c",
+      "claim_id": "C107",
+      "claim": "Fluorescence is reduced by a targeted amino acid exchange in the PSD-95 SH3 domain (L460P).",
+      "claim_type": "EXPLICIT",
+      "source": "or a targeted amino acid exchange in the PSD-95 SH3 domain (L460P).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by flow cytometry data in Figure 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:07:38.482853Z"
+    },
+    {
+      "id": "c81d4cb3-ab0d-45d5-9fd7-0d525da63f51",
+      "content_id": "c03fed49-d7fa-45c5-8cfe-c804d0355c4c",
+      "claim_id": "C108",
+      "claim": "Coexpression of the CRIPT-derived PDZ3 ligand enhanced the coIP of PSG and GK.",
+      "claim_type": "EXPLICIT",
+      "source": "Coexpression of the CRIPT-derived PDZ3 ligand enhanced the coIP of PSG and GK",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by western blot data in Figure 1E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:07:38.482853Z"
+    },
+    {
+      "id": "9b307c3b-9e72-4329-b9e4-b03f442aacbc",
+      "content_id": "c03fed49-d7fa-45c5-8cfe-c804d0355c4c",
+      "claim_id": "C109",
+      "claim": "CoIP of PSG and SH3-GK was negligible regardless of whether or not the CRIPT-derived PDZ3 ligand construct was coexpressed.",
+      "claim_type": "EXPLICIT",
+      "source": "whereas coIP of PSG and SH3-GK was negligible regardless of whether or not the CRIPT-derived PDZ3 ligand construct was coexpressed.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by western blot data in Figure 1E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:07:38.482853Z"
+    },
+    {
+      "id": "332972e7-17ec-41bb-b0c7-61062b8734a9",
+      "content_id": "c03fed49-d7fa-45c5-8cfe-c804d0355c4c",
+      "claim_id": "C110",
+      "claim": "By mutating leucine 460 to proline, the efficient protein complex formation between PDZ3-SH3 and GK domain constructs is disrupted.",
+      "claim_type": "EXPLICIT",
+      "source": "By mutating the leucine 460 to proline this efficient protein complex formation is disrupted. By exchanging the internal L460 residue the SH3 domain loses its ability to bind to the GK domain construct in trans.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by western blot data in Figure 1\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:07:38.482853Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "467a1d90-d183-47ef-8ebc-d4fd22a1d748",
+      "content_id": "c03fed49-d7fa-45c5-8cfe-c804d0355c4c",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Neuroligin-1 (NLGN1) binding to PSD-95 PDZ3 domains triggers PSD-95 oligomerization in a manner dependent on the SH3-GK domain tandem. This was demonstrated using a bimolecular fluorescence complementation (BiFC) assay where coexpression of split-EYFP-tagged PSD-95 with NLGN1 produced fluorescent complexes at the cell membrane. Mutation of the NLGN1 PDZ-binding motif (TTRV to TARA) reduced fluorescence by ~40%, and the L460P mutation in the SH3 domain (which disrupts SH3-GK interaction) strongly abolished complex assembly.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C23-C32, C104-C107 collectively demonstrate that NLGN1 binding to PDZ3 induces PSD-95 oligomerization dependent on intact SH3-GK interaction. The BiFC data (Figure 1B-D) show membrane localization, quantifiable fluorescence with wild-type NLGN1, reduced signal with mutant NLGN1 or L460P PSD-95, and appropriate negative controls (SynCAM1). The experimental design is sound with proper controls and quantification.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T09:07:38.482853Z"
+    },
+    {
+      "id": "04350b2b-ba28-409e-96c7-7328816db0b2",
+      "content_id": "c03fed49-d7fa-45c5-8cfe-c804d0355c4c",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Binding of CRIPT-derived PDZ3 ligands to the PSG module renders it 'interaction-competent' to bind isolated GK domains in trans. Coimmunoprecipitation experiments showed that the isolated GK domain coprecipitated with PSG only in the presence of functional PDZ3 ligands, while the SH3-GK construct did not coprecipitate regardless of ligand presence, suggesting the intramolecular SH3-GK assembly represents an 'interaction-incompetent' autoinhibited state.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C40-C43, C108-C109 are supported by coIP data in Figure 1E showing differential binding of GK vs. SH3-GK to PSG in the presence of PDZ3 ligands. The interpretation that PDZ3 ligand binding releases autoinhibition is logical and consistent with the data. However, the mechanism (allosteric vs. direct competition) remains unclear and would benefit from structural studies.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T09:07:38.482853Z"
+    },
+    {
+      "id": "45a500e6-7c06-404d-bd82-bb3ed3a9e11c",
+      "content_id": "c03fed49-d7fa-45c5-8cfe-c804d0355c4c",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Quantitative mass spectrometry identified 278 proteins that differentially bind to GST-GK versus GST-SH3-GK constructs from rat brain synaptosomes. Approximately 82% of identified proteins are known postsynaptic density components, and known GK-interacting proteins (Map1A, Mark2, Dlgap2, Srcin1) were detected. Unexpectedly, several heterotrimeric G protein subunits, including Gnb5, were enriched in the GST-GK fraction.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C44-C50 describe a well-designed quantitative proteomics experiment using 18O/16O labeling and triplicate measurements. The high overlap (82%) with known PSD proteins validates the approach, and detection of known GK interactors (C46-C49) provides positive controls. The identification of Gnb5 and other G protein subunits as preferentially binding GK over SH3-GK is novel and well-supported by the mass spectrometry data (Figure 2).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T09:07:38.482853Z"
+    },
+    {
+      "id": "dbd613f6-8d17-4dde-8929-aa5e68214cd9",
+      "content_id": "c03fed49-d7fa-45c5-8cfe-c804d0355c4c",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Gnb5 preferentially binds to the isolated GK domain over the SH3-GK domain tandem. GST pull-down experiments from rat brain synaptosomes showed clear Gnb5 signal with GST-GK but minimal signal with GST-SH3-GK or bead controls. Coimmunoprecipitation experiments in COS-7 cells confirmed that Gnb5-Clover efficiently coprecipitates with FLAG-GK but not with FLAG-SH3-GK.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C55-C60 are well-supported by orthogonal biochemical approaches (GST pull-down from native tissue in Figure 3A and coIP from overexpressed proteins in Figure 3B). Both experiments consistently show preferential Gnb5 binding to GK over SH3-GK. The quantification from three independent experiments strengthens the conclusion. The use of both endogenous and overexpressed systems increases confidence.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T09:07:38.482853Z"
+    },
+    {
+      "id": "1192f36e-6101-42cf-b4e6-880fc0923fb6",
+      "content_id": "c03fed49-d7fa-45c5-8cfe-c804d0355c4c",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Gnb5 is a PSD-95 complex partner localized at dendritic spines of rat hippocampal neurons. Immunofluorescence staining of DIV21 hippocampal neurons showed Gnb5 signal in dendrites overlapping with PSD-95 staining and adjacent to presynaptic Synapsin signal, consistent with postsynaptic localization.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C61-C62 are supported by confocal microscopy data in Figure 3C showing colocalization of Gnb5 with the postsynaptic marker PSD-95 and appropriate spatial relationship to the presynaptic marker Synapsin. The dendritic localization (MAP2 positive) and postsynaptic enrichment are clearly demonstrated. However, the resolution of confocal microscopy limits precise determination of synaptic vs. perisynaptic localization.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T09:07:38.482853Z"
+    },
+    {
+      "id": "d35de300-4aae-48ac-9918-0953a0fe9965",
+      "content_id": "c03fed49-d7fa-45c5-8cfe-c804d0355c4c",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The PSD-95 GK domain binds to Gnb5, and this interaction is triggered by CRIPT-derived PDZ3 ligands binding to PDZ3. Coimmunoprecipitation experiments showed that full-length Gnb5 coprecipitates with PSD-95 only in the presence of functional PDZ3 ligands. The N-terminal \u03b1-helix of Gnb5 (amino acids 1-33) is important for this interaction, as shortGnb5 (lacking this region) coprecipitated less efficiently. The PSG module alone is sufficient for ligand-triggered Gnb5 binding.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4-C5, C63-C66 are well-supported by coIP data in Figures 4A-B. The requirement for functional PDZ3 ligands is clearly demonstrated by comparing wild-type vs. mutant ligands. The contribution of the Gnb5 N-terminal helix (C64-C65) is supported by reduced binding of shortGnb5, though the effect is modest. The sufficiency of the PSG module (C66) is clearly shown. The experiments include appropriate controls and quantification from multiple replicates.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T09:07:38.482853Z"
+    },
+    {
+      "id": "5d3dce4b-c620-4b64-9a90-3d16583b7e6b",
+      "content_id": "c03fed49-d7fa-45c5-8cfe-c804d0355c4c",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The L460P mutation in the PSD-95 SH3 domain, which disrupts the intramolecular SH3-GK interaction, enables Gnb5 binding to the PSG module even in the absence of PDZ3 ligands. Wild-type PSG did not efficiently coprecipitate Gnb5, but PSG L460P effectively coprecipitated Gnb5, suggesting that disrupting the SH3-GK interaction mimics the effect of PDZ3 ligand binding.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C31-C33, C67-C68, C110 are supported by coIP data in Figures 4C and Figure 1\u2014figure supplement 2. The L460P mutation is well-characterized in the literature (C31) and validated here (C110, Figure 1\u2014figure supplement 2). The observation that L460P enables Gnb5 binding without PDZ3 ligands (C67-C68, Figure 4C) strongly supports the model that PDZ3 ligand binding releases SH3-mediated autoinhibition of the GK domain. This is a key mechanistic insight.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T09:07:38.482853Z"
+    },
+    {
+      "id": "440fd12a-1133-4ce2-a9b2-992cf5fa8484",
+      "content_id": "c03fed49-d7fa-45c5-8cfe-c804d0355c4c",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "GKAP and Gnb5 bind to PSD-95 GK domains through fundamentally different mechanisms. GKAP binding requires the canonical GMP-binding region (disrupted by R568A mutation), while Gnb5 binding is unaffected by the R568A mutation. GKAP efficiently coprecipitates with both isolated GK and intact PSG modules, but PSG R568A fails to bind GKAP. In contrast, PSD-95 R568A binds Gnb5 as efficiently as wild-type PSD-95.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C69-C75 are well-supported by coIP experiments in Figures 5A-B comparing GKAP and Gnb5 binding to wild-type and R568A mutant PSD-95 constructs. The differential effects of the R568A mutation clearly demonstrate distinct binding modes. GKAP serves as an appropriate positive control for GMP-binding site interactions. The conclusion that Gnb5 binds to a different GK surface is logical and well-supported.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T09:07:38.482853Z"
+    },
+    {
+      "id": "aa974295-597a-4f95-b20e-066f86e6ea00",
+      "content_id": "c03fed49-d7fa-45c5-8cfe-c804d0355c4c",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The GKAP-PSD-95 interaction is not substantially influenced by the presence of CRIPT-derived PDZ3 ligands. PSD-95 binds GKAP regardless of whether wild-type or mutant PDZ3 ligands are present, suggesting that the canonical GMP-binding region is not allosterically regulated by PDZ3 ligand binding.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C76 and C98 are supported by coIP data in Figure 5C showing comparable GKAP binding with or without functional PDZ3 ligands. This contrasts with Gnb5 binding (which requires PDZ3 ligands) and supports the model that different GK surfaces are differentially regulated. The inference about lack of allosteric regulation of the GMP-binding site (C98) is reasonable given the data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T09:07:38.482853Z"
+    },
+    {
+      "id": "c7c19206-a905-4a49-9996-1309408bf55a",
+      "content_id": "c03fed49-d7fa-45c5-8cfe-c804d0355c4c",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The authors propose a model where PDZ3 ligand binding induces conformational changes in the SH3-GK domain assembly, making different GK surfaces accessible for protein interactions. In the resting state, the GMP-binding site is available for proteins like GKAP and MAP1a. Upon ligand binding, the SH3-GK interaction is altered, freeing up other GK surfaces for proteins like Gnb5. The SH3 domain may exert inhibitory activity by competing with Gnb5 for GK interaction surfaces.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2, C77-C80, C99-C101 present a mechanistic model well-supported by the collective experimental data. The differential binding of GKAP (ligand-independent, GMP-site dependent) vs. Gnb5 (ligand-dependent, GMP-site independent) strongly supports the existence of distinct, differentially regulated GK surfaces. The L460P data (mimicking ligand binding) further supports the model. However, the precise structural mechanism (allosteric vs. direct competition, C100) remains speculative and would require structural studies to definitively resolve.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T09:07:38.482853Z"
+    },
+    {
+      "id": "79080feb-68c9-4034-945f-b7ce4581917f",
+      "content_id": "c03fed49-d7fa-45c5-8cfe-c804d0355c4c",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The manuscript provides extensive background on PSD-95 structure and function, synaptic biology, and established knowledge about MAGUK proteins, Gnb5, and synaptic regulation. This includes domain architecture, known interactions, roles in synaptic plasticity, and regulatory mechanisms.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C6-C19, C25, C29, C34, C37-C38, C51-C54, C81-C87, C90-C95 represent established knowledge appropriately cited from the literature. These provide necessary context for the study but are not novel findings. The citations appear appropriate and the background information is accurately represented.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T09:07:38.482853Z"
+    },
+    {
+      "id": "f4328ee2-16b7-4415-963f-9c9b3379ea6c",
+      "content_id": "c03fed49-d7fa-45c5-8cfe-c804d0355c4c",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The authors reference their previous work and recent studies by others showing that PDZ ligand binding to PSD-95 can induce oligomerization and conformational changes. Previous work showed PSD-95 oligomerizes upon CRIPT-derived PDZ3 ligand binding, and recent studies demonstrated SynGAP-induced PSG dimerization and conformational coupling between PDZ3 and the SH3-GK module.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C20-C22, C36, C88-C89, C102-C103 appropriately cite prior work that motivated and supports the current study. The authors correctly attribute findings to their own previous work (C20, C36) and to other groups (C22, C88-C89, C102). Claim C21 is explicitly labeled as speculation from prior work. This contextualizes the current findings within the broader literature.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T09:07:38.482853Z"
+    },
+    {
+      "id": "3b421842-dc90-4da9-8c66-77580d7be333",
+      "content_id": "c03fed49-d7fa-45c5-8cfe-c804d0355c4c",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The authors speculate on two possible mechanisms by which PDZ3 ligand binding might regulate GK interactions: (1) influencing the allosteric regulatory function of the SH3 domain to regulate distant GK surfaces, or (2) loosening the SH3-GK structure to free up the SH3-interacting surface for other interactions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C96-C97 are explicitly presented as speculation about possible mechanisms. While both mechanisms are plausible given the data, the current experiments cannot distinguish between them. Structural studies (e.g., crystallography, cryo-EM, NMR) would be needed to determine the precise conformational changes and interaction surfaces. The speculation is reasonable but remains unproven.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T09:07:38.482853Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "f1584e53-fef9-4220-82ab-c8493e5d1bf3",
+      "result_id": "467a1d90-d183-47ef-8ebc-d4fd22a1d748"
+    },
+    {
+      "claim_id": "6ec69213-5880-4e67-a304-08a56a1a689a",
+      "result_id": "467a1d90-d183-47ef-8ebc-d4fd22a1d748"
+    },
+    {
+      "claim_id": "84c54bb3-4d79-4c19-abe5-3959c8404d70",
+      "result_id": "467a1d90-d183-47ef-8ebc-d4fd22a1d748"
+    },
+    {
+      "claim_id": "2b40aaf4-6f19-4ee5-a36b-8742a8e83153",
+      "result_id": "467a1d90-d183-47ef-8ebc-d4fd22a1d748"
+    },
+    {
+      "claim_id": "b4d27f4a-8bf6-4502-b945-4b99346f7689",
+      "result_id": "467a1d90-d183-47ef-8ebc-d4fd22a1d748"
+    },
+    {
+      "claim_id": "2ee02aa5-b236-4cb2-8048-4abbdd161e62",
+      "result_id": "467a1d90-d183-47ef-8ebc-d4fd22a1d748"
+    },
+    {
+      "claim_id": "08193e03-b4b1-4018-82f4-b1c2bdc37069",
+      "result_id": "467a1d90-d183-47ef-8ebc-d4fd22a1d748"
+    },
+    {
+      "claim_id": "4248c07d-ef31-4e3c-9b2c-5a0ca43e41f6",
+      "result_id": "467a1d90-d183-47ef-8ebc-d4fd22a1d748"
+    },
+    {
+      "claim_id": "8c4dd60d-f8fa-4698-a54e-3fa514b30287",
+      "result_id": "467a1d90-d183-47ef-8ebc-d4fd22a1d748"
+    },
+    {
+      "claim_id": "f16b7d30-9be7-41eb-8e88-15344a0d216a",
+      "result_id": "467a1d90-d183-47ef-8ebc-d4fd22a1d748"
+    },
+    {
+      "claim_id": "e97c57b5-83ce-4fca-a134-4d00e4cf748d",
+      "result_id": "467a1d90-d183-47ef-8ebc-d4fd22a1d748"
+    },
+    {
+      "claim_id": "45adafb9-38cf-477f-957a-a54cc405189a",
+      "result_id": "04350b2b-ba28-409e-96c7-7328816db0b2"
+    },
+    {
+      "claim_id": "cd5d4374-ef71-4ad4-b2ec-7b3f5b420e5d",
+      "result_id": "04350b2b-ba28-409e-96c7-7328816db0b2"
+    },
+    {
+      "claim_id": "79cc2888-c30f-47d4-bfef-b09fcc54962e",
+      "result_id": "04350b2b-ba28-409e-96c7-7328816db0b2"
+    },
+    {
+      "claim_id": "329a8615-abaf-42a2-8a69-3a25021105eb",
+      "result_id": "04350b2b-ba28-409e-96c7-7328816db0b2"
+    },
+    {
+      "claim_id": "c81d4cb3-ab0d-45d5-9fd7-0d525da63f51",
+      "result_id": "04350b2b-ba28-409e-96c7-7328816db0b2"
+    },
+    {
+      "claim_id": "9b307c3b-9e72-4329-b9e4-b03f442aacbc",
+      "result_id": "04350b2b-ba28-409e-96c7-7328816db0b2"
+    },
+    {
+      "claim_id": "5232a082-8a8a-435f-ab4c-7f1f2734bb78",
+      "result_id": "45a500e6-7c06-404d-bd82-bb3ed3a9e11c"
+    },
+    {
+      "claim_id": "0faa2cf0-6aa4-47f2-80f6-166b6115de1d",
+      "result_id": "45a500e6-7c06-404d-bd82-bb3ed3a9e11c"
+    },
+    {
+      "claim_id": "ab564719-5367-4f65-a79e-898091f61e53",
+      "result_id": "45a500e6-7c06-404d-bd82-bb3ed3a9e11c"
+    },
+    {
+      "claim_id": "168ee467-9c07-40da-8ad7-81bb5e8445de",
+      "result_id": "45a500e6-7c06-404d-bd82-bb3ed3a9e11c"
+    },
+    {
+      "claim_id": "ea81dbf8-466b-4213-823f-f64f27e0d44a",
+      "result_id": "45a500e6-7c06-404d-bd82-bb3ed3a9e11c"
+    },
+    {
+      "claim_id": "e59cf2fa-238e-461e-b647-84c9bcbfedc2",
+      "result_id": "45a500e6-7c06-404d-bd82-bb3ed3a9e11c"
+    },
+    {
+      "claim_id": "852342bf-df9d-4051-bbb6-e17c714b979e",
+      "result_id": "45a500e6-7c06-404d-bd82-bb3ed3a9e11c"
+    },
+    {
+      "claim_id": "5c6051cf-fe0d-4294-bd81-a996309c2828",
+      "result_id": "dbd613f6-8d17-4dde-8929-aa5e68214cd9"
+    },
+    {
+      "claim_id": "aca7b9db-af62-432d-8dc4-37595ae2a23a",
+      "result_id": "dbd613f6-8d17-4dde-8929-aa5e68214cd9"
+    },
+    {
+      "claim_id": "6bd9dd61-741f-41e2-b10a-2ae64cf48074",
+      "result_id": "dbd613f6-8d17-4dde-8929-aa5e68214cd9"
+    },
+    {
+      "claim_id": "c2913630-0f56-4c07-9fe6-17af06d9f67f",
+      "result_id": "dbd613f6-8d17-4dde-8929-aa5e68214cd9"
+    },
+    {
+      "claim_id": "9ca723ab-7580-4c3e-9ef8-8790bad56656",
+      "result_id": "dbd613f6-8d17-4dde-8929-aa5e68214cd9"
+    },
+    {
+      "claim_id": "bb396d18-9574-4011-a2da-699a8cac8123",
+      "result_id": "dbd613f6-8d17-4dde-8929-aa5e68214cd9"
+    },
+    {
+      "claim_id": "8f955f41-e774-45f3-afa7-6deacb4b9f45",
+      "result_id": "1192f36e-6101-42cf-b4e6-880fc0923fb6"
+    },
+    {
+      "claim_id": "20c37ddf-5644-4d0c-a740-f842acf3f03f",
+      "result_id": "1192f36e-6101-42cf-b4e6-880fc0923fb6"
+    },
+    {
+      "claim_id": "5f30b895-90eb-4067-93cc-60a0e958dfba",
+      "result_id": "1192f36e-6101-42cf-b4e6-880fc0923fb6"
+    },
+    {
+      "claim_id": "a452b264-e2b1-42e1-80c6-91b68411b7f9",
+      "result_id": "d35de300-4aae-48ac-9918-0953a0fe9965"
+    },
+    {
+      "claim_id": "2b3eeb3f-4da0-4851-972b-0477936b5129",
+      "result_id": "d35de300-4aae-48ac-9918-0953a0fe9965"
+    },
+    {
+      "claim_id": "b75b170b-4b01-47bc-86ed-8ffc99cce24d",
+      "result_id": "d35de300-4aae-48ac-9918-0953a0fe9965"
+    },
+    {
+      "claim_id": "9fcd84f2-7e57-4a1a-9180-1898a265766a",
+      "result_id": "d35de300-4aae-48ac-9918-0953a0fe9965"
+    },
+    {
+      "claim_id": "56fc20d1-d00b-42ee-b661-e3f0dd23e4f7",
+      "result_id": "d35de300-4aae-48ac-9918-0953a0fe9965"
+    },
+    {
+      "claim_id": "519f0290-aba1-4fe0-a495-1c984fc282e8",
+      "result_id": "d35de300-4aae-48ac-9918-0953a0fe9965"
+    },
+    {
+      "claim_id": "52b487a4-fe8d-404c-a5dd-42de49063dde",
+      "result_id": "5d3dce4b-c620-4b64-9a90-3d16583b7e6b"
+    },
+    {
+      "claim_id": "08193e03-b4b1-4018-82f4-b1c2bdc37069",
+      "result_id": "5d3dce4b-c620-4b64-9a90-3d16583b7e6b"
+    },
+    {
+      "claim_id": "37f8705a-0ad6-41f0-826d-6979474bcdbc",
+      "result_id": "5d3dce4b-c620-4b64-9a90-3d16583b7e6b"
+    },
+    {
+      "claim_id": "7affdb2a-f051-4f0a-a0d6-54e25a0484bd",
+      "result_id": "5d3dce4b-c620-4b64-9a90-3d16583b7e6b"
+    },
+    {
+      "claim_id": "666bf282-45db-40d1-9da3-1f58e25c7bc5",
+      "result_id": "5d3dce4b-c620-4b64-9a90-3d16583b7e6b"
+    },
+    {
+      "claim_id": "332972e7-17ec-41bb-b0c7-61062b8734a9",
+      "result_id": "5d3dce4b-c620-4b64-9a90-3d16583b7e6b"
+    },
+    {
+      "claim_id": "6f803eca-58e7-4042-9ae3-53e127deb65d",
+      "result_id": "440fd12a-1133-4ce2-a9b2-992cf5fa8484"
+    },
+    {
+      "claim_id": "3aafaf92-617d-468c-8ea6-1ce0171df653",
+      "result_id": "440fd12a-1133-4ce2-a9b2-992cf5fa8484"
+    },
+    {
+      "claim_id": "864fb3d8-987c-4f76-8cb9-c04a0eee5d7a",
+      "result_id": "440fd12a-1133-4ce2-a9b2-992cf5fa8484"
+    },
+    {
+      "claim_id": "36466a20-688e-4c30-90a4-84cd673d0be0",
+      "result_id": "440fd12a-1133-4ce2-a9b2-992cf5fa8484"
+    },
+    {
+      "claim_id": "4506d54b-c4d1-4e6b-bd82-3f9203352e5e",
+      "result_id": "440fd12a-1133-4ce2-a9b2-992cf5fa8484"
+    },
+    {
+      "claim_id": "6ffdefac-2c30-4e23-bd37-da69ab7e43d7",
+      "result_id": "440fd12a-1133-4ce2-a9b2-992cf5fa8484"
+    },
+    {
+      "claim_id": "53347b6d-a945-442c-984f-af3ceebf95fe",
+      "result_id": "440fd12a-1133-4ce2-a9b2-992cf5fa8484"
+    },
+    {
+      "claim_id": "225dc9c0-9641-454b-be59-c7e54bcc7906",
+      "result_id": "aa974295-597a-4f95-b20e-066f86e6ea00"
+    },
+    {
+      "claim_id": "638eb697-0dba-4d9d-8dce-43b6f029ee97",
+      "result_id": "aa974295-597a-4f95-b20e-066f86e6ea00"
+    },
+    {
+      "claim_id": "8f8fb3de-3b2d-4f30-8db5-919fd0a5b3e0",
+      "result_id": "c7c19206-a905-4a49-9996-1309408bf55a"
+    },
+    {
+      "claim_id": "d53d1bc3-c999-42a1-ad7d-267e4b06766d",
+      "result_id": "c7c19206-a905-4a49-9996-1309408bf55a"
+    },
+    {
+      "claim_id": "80d7ed84-afa4-4e9d-866a-d05eb637d5f9",
+      "result_id": "c7c19206-a905-4a49-9996-1309408bf55a"
+    },
+    {
+      "claim_id": "4c52b9b6-c48c-40eb-adff-8458cbc70da2",
+      "result_id": "c7c19206-a905-4a49-9996-1309408bf55a"
+    },
+    {
+      "claim_id": "28921867-90a9-4770-a9f0-33b9b84ea66d",
+      "result_id": "c7c19206-a905-4a49-9996-1309408bf55a"
+    },
+    {
+      "claim_id": "c3599f67-ef12-4533-86e4-4ba5d22e635a",
+      "result_id": "c7c19206-a905-4a49-9996-1309408bf55a"
+    },
+    {
+      "claim_id": "79bb13b7-55f5-4fa6-8774-11bd7e7f81ff",
+      "result_id": "c7c19206-a905-4a49-9996-1309408bf55a"
+    },
+    {
+      "claim_id": "b07b39a6-04c0-45f4-8ff3-f09bccdd80a0",
+      "result_id": "c7c19206-a905-4a49-9996-1309408bf55a"
+    },
+    {
+      "claim_id": "c5d6c355-f3d4-4a59-8a65-1d3232b00dda",
+      "result_id": "79080feb-68c9-4034-945f-b7ce4581917f"
+    },
+    {
+      "claim_id": "10a9fce4-75a7-4a58-8043-a5e9abdebcbc",
+      "result_id": "79080feb-68c9-4034-945f-b7ce4581917f"
+    },
+    {
+      "claim_id": "ca59b10e-6d5d-428a-b354-3f16062ad01c",
+      "result_id": "79080feb-68c9-4034-945f-b7ce4581917f"
+    },
+    {
+      "claim_id": "38052f28-0054-4ec9-9c11-972d511ded1a",
+      "result_id": "79080feb-68c9-4034-945f-b7ce4581917f"
+    },
+    {
+      "claim_id": "7410a80e-97bb-4808-a6bb-bbc439382ea1",
+      "result_id": "79080feb-68c9-4034-945f-b7ce4581917f"
+    },
+    {
+      "claim_id": "9e61fd8f-87a4-48a7-b361-8a21ded22323",
+      "result_id": "79080feb-68c9-4034-945f-b7ce4581917f"
+    },
+    {
+      "claim_id": "c98a5db5-2226-4766-973f-c87106801d02",
+      "result_id": "79080feb-68c9-4034-945f-b7ce4581917f"
+    },
+    {
+      "claim_id": "ba1f91fd-ae40-41a1-9072-982e586f7dcd",
+      "result_id": "79080feb-68c9-4034-945f-b7ce4581917f"
+    },
+    {
+      "claim_id": "e68e004c-11ba-4bfd-b77d-7138d7afc08d",
+      "result_id": "79080feb-68c9-4034-945f-b7ce4581917f"
+    },
+    {
+      "claim_id": "b6dc2565-4720-46b7-9e6b-f383f6f5d927",
+      "result_id": "79080feb-68c9-4034-945f-b7ce4581917f"
+    },
+    {
+      "claim_id": "0fd3e6d0-55dd-459d-8912-ef9d2e92d14b",
+      "result_id": "79080feb-68c9-4034-945f-b7ce4581917f"
+    },
+    {
+      "claim_id": "80c85fd0-acef-43bb-812c-0c6610cf5da5",
+      "result_id": "79080feb-68c9-4034-945f-b7ce4581917f"
+    },
+    {
+      "claim_id": "23e1c6ed-8eed-44cc-a31f-3a868229cb68",
+      "result_id": "79080feb-68c9-4034-945f-b7ce4581917f"
+    },
+    {
+      "claim_id": "f0549189-43d5-42e5-a771-aa9aaa7eacab",
+      "result_id": "79080feb-68c9-4034-945f-b7ce4581917f"
+    },
+    {
+      "claim_id": "d9d89b66-facd-463e-8db9-0d1acbf1bbba",
+      "result_id": "79080feb-68c9-4034-945f-b7ce4581917f"
+    },
+    {
+      "claim_id": "4f469b88-5dbf-4d4b-ba76-89397f34eee0",
+      "result_id": "79080feb-68c9-4034-945f-b7ce4581917f"
+    },
+    {
+      "claim_id": "c901beb5-2f77-4eaa-87b2-c1fed2dcddba",
+      "result_id": "79080feb-68c9-4034-945f-b7ce4581917f"
+    },
+    {
+      "claim_id": "c4c3151a-524b-4e67-8e18-1a09bff383dd",
+      "result_id": "79080feb-68c9-4034-945f-b7ce4581917f"
+    },
+    {
+      "claim_id": "57b6eac7-d3fa-4172-88be-a75c7f8c9b17",
+      "result_id": "79080feb-68c9-4034-945f-b7ce4581917f"
+    },
+    {
+      "claim_id": "2e6f14e3-4052-461e-972e-7ac4ad2cee06",
+      "result_id": "79080feb-68c9-4034-945f-b7ce4581917f"
+    },
+    {
+      "claim_id": "42f1db6b-d66e-4ae8-b41d-fa2d919f1ab3",
+      "result_id": "79080feb-68c9-4034-945f-b7ce4581917f"
+    },
+    {
+      "claim_id": "0992e11d-2ad7-4aed-92c1-32278c78592e",
+      "result_id": "79080feb-68c9-4034-945f-b7ce4581917f"
+    },
+    {
+      "claim_id": "060d0158-09b5-4dda-845e-80ba59edc3e1",
+      "result_id": "79080feb-68c9-4034-945f-b7ce4581917f"
+    },
+    {
+      "claim_id": "c9bfb09a-b9ce-4e29-b8f3-453b98a1b570",
+      "result_id": "79080feb-68c9-4034-945f-b7ce4581917f"
+    },
+    {
+      "claim_id": "9819722e-38f3-43a9-824f-bc98ac30747f",
+      "result_id": "79080feb-68c9-4034-945f-b7ce4581917f"
+    },
+    {
+      "claim_id": "f2e94d25-5a31-463a-b763-b3249e92187e",
+      "result_id": "79080feb-68c9-4034-945f-b7ce4581917f"
+    },
+    {
+      "claim_id": "ddf4463e-ceec-48c0-a2fd-06fca45fcebf",
+      "result_id": "79080feb-68c9-4034-945f-b7ce4581917f"
+    },
+    {
+      "claim_id": "980665dc-385e-4c18-8109-f36c158294b2",
+      "result_id": "79080feb-68c9-4034-945f-b7ce4581917f"
+    },
+    {
+      "claim_id": "4ce3d110-f838-4355-84ce-485cfeea5f31",
+      "result_id": "79080feb-68c9-4034-945f-b7ce4581917f"
+    },
+    {
+      "claim_id": "4e04942b-69bd-4106-b5e3-e07540a64ef7",
+      "result_id": "79080feb-68c9-4034-945f-b7ce4581917f"
+    },
+    {
+      "claim_id": "1df745ba-60fd-42b7-a733-ee8580f354e6",
+      "result_id": "79080feb-68c9-4034-945f-b7ce4581917f"
+    },
+    {
+      "claim_id": "96d86651-9c16-4dd5-901e-83a4aa0c39cb",
+      "result_id": "79080feb-68c9-4034-945f-b7ce4581917f"
+    },
+    {
+      "claim_id": "eecfe205-f6f2-4a30-82a4-ae503341d5de",
+      "result_id": "79080feb-68c9-4034-945f-b7ce4581917f"
+    },
+    {
+      "claim_id": "05d0d23e-f6fe-437a-a95c-083b235d88d3",
+      "result_id": "79080feb-68c9-4034-945f-b7ce4581917f"
+    },
+    {
+      "claim_id": "7a93f127-9118-4160-8968-04760e3b6b0f",
+      "result_id": "79080feb-68c9-4034-945f-b7ce4581917f"
+    },
+    {
+      "claim_id": "807aa018-8cb0-41ac-873a-3010b554e24c",
+      "result_id": "79080feb-68c9-4034-945f-b7ce4581917f"
+    },
+    {
+      "claim_id": "bea10b66-bc76-4ccb-8504-d3d7ac71996a",
+      "result_id": "79080feb-68c9-4034-945f-b7ce4581917f"
+    },
+    {
+      "claim_id": "03c1b967-61b9-4ac8-a275-0d7fff26f7cf",
+      "result_id": "f4328ee2-16b7-4415-963f-9c9b3379ea6c"
+    },
+    {
+      "claim_id": "87b8137a-953d-4756-a71f-c3f1abffb212",
+      "result_id": "f4328ee2-16b7-4415-963f-9c9b3379ea6c"
+    },
+    {
+      "claim_id": "60831f31-c3b4-4707-8bde-cf5d25f9ae1c",
+      "result_id": "f4328ee2-16b7-4415-963f-9c9b3379ea6c"
+    },
+    {
+      "claim_id": "056fbb5e-1dbb-48fd-ba9d-65a4a42e7010",
+      "result_id": "f4328ee2-16b7-4415-963f-9c9b3379ea6c"
+    },
+    {
+      "claim_id": "12caf15f-df20-425d-8d08-bf38268abcc9",
+      "result_id": "f4328ee2-16b7-4415-963f-9c9b3379ea6c"
+    },
+    {
+      "claim_id": "e2a5a990-fc8f-4a6d-abcf-a1b02a8a4cd1",
+      "result_id": "f4328ee2-16b7-4415-963f-9c9b3379ea6c"
+    },
+    {
+      "claim_id": "9b1e0624-2c2c-4ad0-a1b3-fbc394709541",
+      "result_id": "f4328ee2-16b7-4415-963f-9c9b3379ea6c"
+    },
+    {
+      "claim_id": "ed463aff-91d3-4c84-9d3c-af2666bc4a2c",
+      "result_id": "f4328ee2-16b7-4415-963f-9c9b3379ea6c"
+    },
+    {
+      "claim_id": "2ee1238d-c3e0-467b-a3e3-b64560862d8a",
+      "result_id": "3b421842-dc90-4da9-8c66-77580d7be333"
+    },
+    {
+      "claim_id": "32169cbf-d228-4fa4-85e4-a9d74d1a02ea",
+      "result_id": "3b421842-dc90-4da9-8c66-77580d7be333"
+    }
+  ],
+  "comparisons": []
+}

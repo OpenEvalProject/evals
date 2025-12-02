@@ -1,0 +1,251 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C16",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "The study successfully performed deep mutational scanning of \u03b22AR, testing 7800 of 7828 possible single amino acid substitutions at four isoproterenol concentrations with reliable measurements for 95-99% of variants. Each variant was represented by a median of 10 barcodes, with biological replicates showing Pearson's correlations of 0.87-0.90 at the barcode level and 0.66-0.75 at the variant level.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C4, C16, C71, C72, and C73 collectively demonstrate successful execution of the deep mutational scanning experiment with appropriate technical replicates and quality metrics. The high barcode-level correlation (0.87-0.90) and moderate variant-level correlation (0.66-0.75) are consistent with the acknowledged noise in single-variant measurements (C67, CV=0.55), supporting the robustness of aggregate analyses.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "The multiplexed assay was validated using previously characterized \u03b22AR mutations, showing that known null mutations (D113A, I135W) have significantly diminished activity at all concentrations, while known hypomorphic mutations (S203A, S204A) show reduced activity at EC100 but recover to wild-type levels at Emax.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C23 provide validation of the assay using well-characterized mutations with appropriate statistical testing (Wald test, p<<0.001 and p>0.01). The differential behavior of hypomorphic vs. null mutations at different agonist concentrations demonstrates the assay can distinguish between different classes of functional impairment, supporting the validity of the experimental approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "The transmembrane domain and intracellular helix eight show greater sensitivity to amino acid substitutions compared to termini and loops, with particular sensitivity to helix-disrupting proline substitutions. Frameshift mutations consistently show lower activity than missense mutations, with reduced effects in the C-terminus.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C20 describe global patterns in the mutational landscape with appropriate statistical support (Mann-Whitney U tests, p<0.001 or p<<0.001). These findings are consistent with known structural principles of GPCRs where the transmembrane domain is critical for function and the C-terminus is less structured. The statistical significance and biological plausibility support these conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C76"
+    ],
+    "result": "Mutational tolerance correlates strongly with evolutionary conservation across \u03b22AR orthologs (\u03c1=-0.74) and Class A GPCRs (\u03c1=-0.68), with correlation maximizing at EC100. Individual variant effects correlate moderately with EVmutation predictions (\u03c1=0.520). A subset of ECL2 residues, including the C184-C190 disulfide bridge, showed greater intolerance than expected from conservation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C27 and C76 demonstrate strong agreement between experimental mutational data and evolutionary metrics, with appropriate correlation statistics. The identification of ECL2 residues (C26) as more intolerant than expected suggests \u03b22AR-specific functional constraints, which is a biologically meaningful finding. The moderate correlation with EVmutation (\u03c1=0.520) is reasonable given the complexity of GPCR function.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C28",
+      "C67"
+    ],
+    "result": "The study classified 11 ADRB2 variants from the human population (gnomAD) as potentially loss-of-function by comparing their activity to frameshift mutations, though individual measurements have high noise (CV=0.55).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While C28 reports classification of 11 variants as potentially loss-of-function, C67 acknowledges substantial measurement noise (CV=0.55) for individual mutations. The authors themselves state this analysis is 'best suited as a funnel to guide further characterization' and demonstrate that some predictions (C68) did not validate individually. Without additional validation or lower noise measurements, these specific variant classifications remain uncertain.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "The 100 least active mutations localize to the transmembrane domain core, while the 100 most activating mutations map to TM1, TM5, TM6 (facing away from the core), and are enriched in termini, ICL3, and Helix 8.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C31 describe spatial patterns of activating and inactivating mutations that are consistent with GPCR structural biology. The localization of inactivating mutations to the protein core and activating mutations to surface-exposed regions and G-protein binding interfaces (ICL3) is biologically plausible. However, the authors acknowledge (C63-C64) that activating mutations may reflect altered expression or internalization rather than intrinsic activity, which is a limitation but does not invalidate the spatial patterns observed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "Unsupervised learning (UMAP and HDBSCAN) identified six functionally distinct clusters of residues: Clusters 1-2 are globally intolerant, Cluster 3 is sensitive to proline and charged substitutions, Cluster 4 is sensitive to negative charges, Cluster 5 is sensitive to proline, and Cluster 6 is tolerant. Clusters 1-5 primarily comprise the transmembrane domain while Cluster 6 resides in loops and termini.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C38 describe a systematic unsupervised analysis that identifies biologically meaningful patterns. The clustering approach is appropriate for high-dimensional data, and the resulting clusters show distinct mutational sensitivities that map logically to protein structure. The authors acknowledge that Cluster 5 assignment is less robust as it relies heavily on proline sensitivity, which is appropriately cautious. The overall clustering results are well-supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "The globally intolerant Clusters 1-2 localize to the protein core while charge-sensitive Cluster 3 is enriched in lipid-facing regions. Residues uniquely sensitive to charged substitutions are significantly more lipid-facing than those sensitive to both hydrophobic and charged mutations (p=0.000036).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C41 integrate mutational data with structural analysis (solvent-accessible surface area) to reveal that charge sensitivity correlates with lipid exposure. This is biologically sensible as charged residues in the lipid bilayer would be energetically unfavorable. The statistical significance (p=0.000036) and the use of appropriate structural metrics (SASA) support this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "Among the 15 most mutationally intolerant positions, 11 belong to known functional motifs (PIF, CWxP, NPxxY, orthosteric site, water-mediated networks, disulfide bonds, cholesterol-binding). The study identified previously uncharacterized critical residues including G315 (2nd most intolerant), which likely clashes with W286 of the CWxP motif when mutated, and Y326 (3rd most intolerant), which participates in water-mediated hydrogen bond networks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C48 demonstrate that mutational intolerance successfully identifies known functional motifs and reveals novel critical residues. The structural rationalization for G315 intolerance (C44) is supported by crystal structure analysis, and experimental validation (C45, C48) confirms loss-of-function for tested mutations. The integration of mutational data with structural analysis provides strong support for these findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C49"
+    ],
+    "result": "Residues contacting the catecholamine head of isoproterenol (present in the assay agonist) have significantly lower mutational tolerance than residues contacting the hydroxybenzyl tail (absent in the assay agonist) at EC100 (p=0.0162).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C49 demonstrates that the assay can discriminate between contacts with different parts of a ligand based on which portions are present in the agonist used. The statistical significance (p=0.0162) and biological logic (residues contacting the actual agonist used should be more critical) support this finding. This suggests DMS can map functional ligand-receptor contacts.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C50",
+      "C51"
+    ],
+    "result": "Analysis of specific protein interfaces revealed W158 as the most intolerant residue in the cholesterol-binding pocket, and identified I135, V222, A271, and Q229 as the four most intolerant positions at the G\u03b1s-\u03b22AR interface.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C51 apply the mutational tolerance metric to characterize specific molecular interfaces. The identification of W158 as most critical for cholesterol binding aligns with structural predictions, and the G\u03b1s interface residues identified are consistent with known protein-protein interaction principles. These findings are supported by integration with structural data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "The study identified a previously uncharacterized 'structural latch' comprising W99 (13th most intolerant), G102, and the C106-C191 disulfide bond, forming a conserved WxxGxxxC motif. This motif is almost universally conserved across Class A GPCRs and these residues consistently contact each other across >25 high-resolution GPCR structures from diverse subfamilies and species.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C58 describe a novel structural feature identified through integration of mutational data (C52-C53), structural analysis (C54-C55, C57), and evolutionary conservation (C56). The convergence of multiple lines of evidence\u2014mutational intolerance, structural contacts across diverse GPCRs, and sequence conservation\u2014strongly supports the existence and functional importance of this structural latch. This is a major novel finding of the study.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "The structural latch remains conformationally rigid across receptor activation states. While overall RMSD between inactive and active states is 1-1.7 \u00c5 for \u03b22AR, M2 muscarinic, and \u03bc-opioid receptors, the latch conformation is nearly identical in both states, suggesting it is part of a larger rigid plug at the transmembrane-extracellular interface.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C60 provide quantitative structural evidence for the rigidity of the structural latch across conformational states in multiple GPCRs. The comparison of overall RMSD to latch-specific conformational stability is appropriate. Claim C61 is presented as a hypothesis ('suggests,' 'could be important') based on the observed rigidity, which is appropriately cautious. The structural data support the rigidity observation, though the functional implications remain speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "The assay has a key limitation: it cannot distinguish between mutations affecting G-protein signaling versus cell-surface expression. Activating mutations could work by reducing internalization rather than increasing intrinsic activity. However, the genomic integration at controlled copy number mitigates some expression-related artifacts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C65 represent an honest assessment of experimental limitations. The authors clearly acknowledge that the assay measures a composite phenotype (C63-C64) while noting design features that partially mitigate artifacts (C65). This limitation is important for interpreting activating mutations and some loss-of-function variants, but does not invalidate the major findings about mutational intolerance patterns and structural features.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C68"
+    ],
+    "result": "Three C-terminal proline mutations (E369P, R253P, T360P) predicted to be disruptive in the multiplexed assay did not show loss of function when tested individually.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C68 provides important negative validation data showing that some predictions from the multiplexed assay do not hold up in individual testing. This is consistent with the acknowledged high noise in individual measurements (C67, CV=0.55) and supports the authors' statement that individual variant data should be confirmed by traditional assays. This demonstrates appropriate scientific rigor in validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7"
+    ],
+    "result": "The study identified residues specifically important for \u03b22AR signaling, mutations in the human population that are potentially loss of function, and residues that modulate basal activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C7 are high-level summary statements of the study's findings. These are supported by the detailed results described in other claim groups: C5 is supported by the mutational intolerance analysis (C42-C48), C6 is supported by the gnomAD analysis (C28, though with caveats about noise), and C7 is supported by the identification of activating mutations (C29-C31). These represent the major outcomes of the study.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C8",
+      "C9"
+    ],
+    "result": "The study discovered a previously uncharacterized structural latch spanning the first two extracellular loops that is highly conserved across Class A GPCRs and conformationally rigid in both inactive and active receptor states.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C9 are high-level summary statements of the structural latch discovery, which is detailed and supported in claims C52-C61. The convergence of mutational, structural, and evolutionary evidence provides strong support for this novel finding. This represents one of the most significant discoveries of the manuscript.",
+    "result_type": "MAJOR"
+  }
+]

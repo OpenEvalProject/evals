@@ -1,0 +1,1767 @@
+{
+  "submission": {
+    "id": "b1835b78-7f53-4fec-b6d7-94adc51684ff",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T13:54:01.243125Z",
+    "updated_at": "2025-12-02T13:54:01.243125Z"
+  },
+  "content": [
+    {
+      "id": "82ad07b9-2729-4bab-82ff-ed92a8ec5356",
+      "submission_id": "b1835b78-7f53-4fec-b6d7-94adc51684ff",
+      "content_type": "manuscript",
+      "content_text": "# A novel lineage of candidate pheromone receptors for sex communication in moths\n\n## Authors\n\n- Lucie Bastin-H\u00e9line<sup>1</sup>\n- Arthur de Fouchier<sup>1</sup>\n- Song Cao<sup>2</sup>\n- Fotini Koutroumpa<sup>1</sup>\n- Gabriela Caballero-Vidal<sup>1</sup>\n- Stefania Robakiewicz<sup>1</sup>\n- Christelle Monsempes<sup>1</sup>\n- Marie-Christine Fran\u00e7ois<sup>1</sup>\n- Tatiana Ribeyre<sup>1</sup>\n- Annick Maria<sup>1</sup>\n- Thomas Chertemps<sup>1</sup>\n- Anne de Cian<sup>3</sup>\n- William B Walker<sup>4</sup> ([ORCID: 0000-0003-2798-9616](https://orcid.org/0000-0003-2798-9616))\n- Guirong Wang<sup>2</sup> \u2020\n- Emmanuelle Jacquin-Joly<sup>1</sup> ([ORCID: 0000-0002-6904-2036](https://orcid.org/0000-0002-6904-2036)) \u2020\n- Nicolas Montagn\u00e9<sup>1</sup> ([ORCID: 0000-0001-8810-3853](https://orcid.org/0000-0001-8810-3853)) \u2020\n\n### Affiliations\n\n1. Sorbonne Universit\u00e9, Inra, CNRS, IRD, UPEC, Universit\u00e9 Paris Diderot, Institute of Ecology and Environmental Sciences of Paris Paris and Versailles France\n2. State Key Laboratory for Biology of Plant Diseases and Insect Pests, Institute of Plant Protection Chinese Academy of Agricultural Sciences Beijing China\n3. CNRS UMR 7196, INSERM U1154, Museum National d\u2019Histoire Naturelle Paris France\n4. Department of Plant Protection Biology Swedish University of Agricultural Sciences Alnarp Sweden\n\n\u2020 Corresponding author\n\n## Abstract\n\nSex pheromone receptors (PRs) are key players in chemical communication between mating partners in insects. In the highly diversified insect order Lepidoptera, male PRs tuned to female-emitted type I pheromones (which make up the vast majority of pheromones identified) form a dedicated subfamily of odorant receptors (ORs). Here, using a combination of heterologous expression and in vivo genome editing methods, we bring functional evidence that at least one moth PR does not belong to this subfamily but to a distantly related OR lineage. This PR, identified in the cotton leafworm Spodoptera littoralis, is highly expressed in male antennae and is specifically tuned to the major sex pheromone component emitted by females. Together with a comprehensive phylogenetic analysis of moth ORs, our functional data suggest two independent apparitions of PRs tuned to type I pheromones in Lepidoptera, opening up a new path for studying the evolution of moth pheromone communication.\n\n## Introduction\n\nThe use of pheromone signals for mate recognition is widespread in animals, and changes in sex pheromone communication are expected to play a major role in the rise of reproductive barriers and the emergence of new species (Smadja and Butlin, 2009). Since the first chemical identification of such a pheromone in Bombyx mori (Butenandt et al., 1959), moths (Insecta, Lepidoptera) have been a preferred taxon for pheromone research (Card\u00e9 and Haynes, 2004; Kaissling, 2014). The diversification of pheromone signals has likely played a prominent role in the extensive radiation observed in Lepidoptera, which represents almost 10% of the total described species of living organisms (Stork, 2018).\n\nFemale moths generally release a species-specific blend of volatile molecules, which attract males over a long distance (Card\u00e9 and Haynes, 2004). Four types of sex pheromones have been described in moths (types 0, I, II and III), with distinct chemical structures and biosynthetic pathways (L\u00f6fstedt et al., 2016). 75% of all known moth sex pheromone compounds belong to type I and are straight-chain acetates, alcohols or aldehydes with 10 to 18 carbon atoms (Ando et al., 2004). Type I pheromones have been found in most moth families investigated, whereas the other types are restricted to only a few families (L\u00f6fstedt et al., 2016).\n\nIn moth male antennae, pheromone compounds are detected by dedicated populations of olfactory sensory neurons (OSNs). Each type of OSN usually expresses one pheromone receptor (PR) responsible for signal transduction. PRs are 7-transmembrane domain proteins belonging to the odorant receptor (OR) family and, as ORs, are co-expressed in OSNs together with the conserved co-receptor Orco (Chertemps, 2017; Fleischer and Krieger, 2018).\n\nSince the first discovery of moth PRs (Krieger et al., 2004; Sakurai et al., 2004), numerous pheromone receptors tuned to type I pheromone compounds have been characterized through different hererologous expression systems, and most appeared to be specific to only one compound (Zhang and L\u00f6fstedt, 2015). More recently, a few receptors tuned to type 0 and type II pheromones have also been characterized (Zhang et al., 2016; Yuvaraj et al., 2017). Type I PRs belong to a dedicated monophyletic subfamily of ORs, the so-called \u2018PR clade\u2019, suggesting a unique emergence early in the evolution of Lepidoptera (Yuvaraj et al., 2018). Another hallmark of type I PRs is their male-biased expression (Koenig et al., 2015). The phylogenetic position and the expression pattern have thus been the main criteria used to select candidate PRs for functional studies.\n\nLikewise, we selected PRs from the male transcriptome of the cotton leafworm Spodoptera littoralis (Legeai et al., 2011), a polyphagous crop pest that uses type I sex pheromone compounds (Mu\u00f1oz et al., 2008) and that has been established as a model in insect chemical ecology (Ljungberg et al., 1993; Binyameen et al., 2012; Saveer et al., 2012; Poivet et al., 2012; de Fouchier et al., 2017). Through heterologous expression, we characterized two PRs tuned to minor components of the S. littoralis pheromone blend (Montagn\u00e9 et al., 2012; de Fouchier et al., 2015), but none of the tested candidate PRs detected the major pheromone component (Z,E)-9,11-tetradecadienyl acetate (hereafter referred as (Z,E)-9,11-14:OAc), which is necessary and sufficient to elicit all steps of the male mate-seeking behavioral sequence (Quero et al., 1996).\n\nIn order to identify new type I PR candidates, we focused on male-biased ORs, whether they belong to the PR clade or not. Notably, a preliminary analysis of S. littoralis OR expression patterns led to the identification of such a receptor, SlitOR5, which was highly expressed in male antennae but did not belong to the PR clade (Legeai et al., 2011). Furthermore, a recent RNAseq analysis showed that SlitOR5 was the most abundant OR in S. littoralis male antennae (Walker et al., 2019). Here, we demonstrate that SlitOR5 is the receptor for (Z,E)-9,11-14:OAc using a combination of heterologous expression and in vivo genome editing methods. Based on a comprehensive phylogenetic analysis of lepidopteran ORs, we show that SlitOR5 belongs to an OR subfamily that is distantly related to the PR clade but harbors numerous sex-biased ORs from distinct moth families. Altogether, these results suggest that PRs detecting type I pheromones evolved at least twice in Lepidoptera, which offers a more detailed and complex panorama on moth PR evolution.\n\n## Results\n\n### SlitOr5 is highly expressed in males but does not belong to the type I pheromone receptor clade\n\nWe first used quantitative real-time PCR to compare the relative expression levels of the SlitOr5 gene in S. littoralis male and female adult antennae. We found SlitOr5 expressed with a more than 50-fold enrichment in the male antennae (Figure 1A), thus confirming previous observations (Legeai et al., 2011; Walker et al., 2019).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/49826/elife-49826-fig1-v1.jpg)\n\n**Figure 1.:** (A) Expression levels of SlitOr5 in adult male and female antennae of S. littoralis, as measured by real-time qPCR. Expression levels have been normalized to the expression of SlitRpl13. Plotted values represent the mean normalized expression values\u00a0\u00b1\u00a0SEM (n\u00a0=\u00a03). Raw results are available in Figure 1\u2014source data 1. (B) Unrooted maximum likelihood phylogeny of lepidopteran ORs, based on 506 amino acid sequences from nine species, each belonging to a different superfamily. The position of SlitOR5 and of receptors for type 0, type I and type II pheromone compounds is highlighted. Circles on the nodes indicate the distinct paralogous OR lineages, supported by a transfer bootstrap expectation (TBE)\u00a0>0.9. All the PR-containing lineages grouped within a large clade (highlighted in grey) also supported by the bootstrap analysis. The sequence alignment file is available in Figure 1\u2014source data 2.\n\nWe reconstructed a maximum likelihood phylogeny of lepidopteran ORs, based on entire OR repertoires from nine different species. Among the 20 paralogous lineages identified (each having evolved in principle from an ancestral OR present in the last common ancestor of Lepidoptera), SlitOR5 belonged to a lineage distantly related to the type I PR clade, as well as to the lineages containing type 0 and type II PRs (Figure 1B). These four paralogous lineages grouped within a larger clade highly supported by the bootstrap analysis (highlighted in grey in Figure 1B). This clade has been previously shown to contain ORs tuned to terpenes and aliphatic molecules \u2013 including sex pheromones \u2013 and exhibits higher evolutionary rates compared to more ancient clades that contain many receptors for aromatics (de Fouchier et al., 2017).\n\n### SlitOR5 binds (Z,E)-9,11-14:OAc with high specificity and sensitivity\n\nWe next used two complementary heterologous systems to characterize the function of SlitOR5 and assess whether it is the receptor to (Z,E)-9,11-14:OAc, the major component of the S. littoralis sex pheromone blend. First, we expressed SlitOR5 in Drosophila melanogaster OSNs housed in at1 trichoid sensilla, in place of the endogenous PR DmelOR67d (Kurtovic et al., 2007). Single-sensillum recordings were performed to measure the response of at1 OSNs to 26 type I pheromone compounds (Supplementary file 1), including all the components identified in the pheromones of Spodoptera species (El-Sayed, 2018). SlitOR5-expressing OSNs strongly responded to (Z,E)-9,11-14:OAc (65\u00a0\u00b1\u00a015 spikes.s\u22121), whereas there was no significant response to any other compound (Figure 2A).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/49826/elife-49826-fig2-v1.jpg)\n\n**Figure 2.:** (A) Action potential frequency of Drosophila at1 OSNs expressing SlitOR5 (n\u00a0=\u00a08) after stimulation with 26 type I pheromone compounds (10 \u00b5g loaded in the stimulus cartridge). ***p<0.001, significantly different from the response to solvent (one-way ANOVA followed by a Tukey\u2019s post\u00a0hoc test). (B) Inward current measured in Xenopus oocytes co-expressing SlitOR5 and SlitOrco (n\u00a0=\u00a013\u201316) after stimulation with the same panel of pheromone compounds (10\u22124 M solution). ***p<0.001, **p<0.01, significantly different from 0 (Wilcoxon signed rank test). (C) Action potential frequency of LT1A OSNs from S. littoralis male antennae (n\u00a0=\u00a08\u201316) after stimulation with pheromone compounds (1 \u00b5g loaded in the stimulus cartridge). ***p<0.001, *p<0.1, significantly different from the response to solvent (one-way ANOVA followed by a Tukey\u2019s post\u00a0hoc test). (D) Representative trace showing the response of a Xenopus oocyte co-expressing SlitOR5 and SlitOrco after stimulation with a range of (Z,E)-9,11-14:OAc doses from 10\u22129 M to 10\u22125 M. (E) Dose-response curve of SlitOR5/Orco Xenopus oocytes (n\u00a0=\u00a09) stimulated with (Z,E)-9,11-14:OAc (EC50\u00a0=\u00a01.707\u00a0\u00d7\u00a010\u22127 M). Plotted values in (A\u2013C and E) are mean responses\u00a0\u00b1\u00a0SEM. Raw results for all experiments are available in Figure 2\u2014source data 1.\n\nThen, we co-expressed SlitOR5 with its co-receptor SlitOrco in Xenopus oocytes and recorded the responses to the same panel of pheromone compounds using two-electrode voltage-clamp. A strong current was induced in SlitOR5-expressing oocytes when stimulated with (Z,E)-9,11-14:OAc (3.9\u00a0\u00b1\u00a00.3 \u00b5A), whereas only minor currents were recorded in response to (Z,E)-9,12-14:OAc and (Z)9-12:OAc (Figure 2B). SlitOR5 sensitivity was assessed with a dose-response experiment that showed a low detection threshold (10\u22128 M) and an EC50 of 1.707\u00a0\u00d7\u00a010\u22127 M (Figure 2D\u2013E).\n\nWe compared the response spectra of heterologously expressed SlitOR5 with that of S. littoralis male OSNs housed in type one long trichoid sensilla (LT1A OSNs, Figure 2C), known to detect (Z,E)-9,11-14:OAc (Ljungberg et al., 1993; Quero et al., 1996). When stimulated with the 26 pheromone compounds, LT1A OSNs significantly responded to (Z,E)-9,11-14:OAc (55\u00a0\u00b1\u00a04 spikes.s\u22121) and to a lesser extent to its stereoisomer (Z,Z)-9,11-14:OAc, which is absent from any Spodoptera pheromone. This mirrored the response spectra of heterologously expressed SlitOR5, especially the one observed in Drosophila OSNs (Figure 2A).\n\n### In vivo response to (Z,E)-9,11-14:OAc is abolished in SlitOr5 mutant males\n\nTo confirm in vivo that SlitOR5 is the receptor for the major sex pheromone component of S. littoralis, we carried out a loss-of-function study by generating mutant insects for the gene SlitOr5. The CRISPR/Cas9 genome editing system was used to create a mutation in the first exon of SlitOr5 with the aim of disrupting the open-reading frame. Guide RNAs were injected along with the Cas9 protein in more than one thousand eggs. We genotyped 66 G0 hatched larvae and found seven individuals carrying at least one mutation in SlitOr5. These 7 G0 individuals were back-crossed with wild-type individuals to create 7 G1 heterozygous mutant lines. We selected a line carrying a single mutation that consisted of a 10 bp deletion at the expected location, introducing a premature STOP codon within the SlitOr5 transcript after 247 codons (Figure 3A).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/49826/elife-49826-fig3-v1.jpg)\n\n**Figure 3.:** (A) Location of the 10 bp deletion induced in the first exon of the SlitOr5 gene by the CRISPR/Cas9 system. The sequence complementary to the RNA guide is indicated in blue, and the protospacer adjacent motif (PAM) in red. The frameshift created in the SlitOr5 open-reading frame (ORF) induced a premature stop codon. (B) Electroantennogram (EAG) amplitude measured in S. littoralis male antennae isolated from wild-type animals (light grey, n\u00a0=\u00a014), heterozygous SlitOr5 mutants (dark grey, n\u00a0=\u00a018) and homozygous SlitOr5 mutants (purple, n\u00a0=\u00a08) after stimulation with pheromone compounds (1 \u00b5g in the stimulus cartridge) and plant volatiles (10 \u00b5g in the stimulus cartridge). Plotted values represent the normalized mean response\u00a0\u00b1\u00a0SEM (response to the solvent was subtracted). ***p<0.001, significantly different from the response of the other genotypes; n.s.: not significantly different (one-way ANOVA, followed by a Tukey\u2019s post\u00a0hoc test). Raw results for the EAG experiment are available in Figure 3\u2014source data 1. (C) Cumulative proportion of S. littoralis males initiating a movement toward the odor source in homozygous SlitOr5 mutants (purple, n\u00a0=\u00a014) stimulated with the major pheromone component (100 ng in the stimulus cartridge) and in wild-type animals stimulated with the pheromone (blue, n\u00a0=\u00a036) or with solvent alone (light grey, n\u00a0=\u00a044). ***p<0.001, significantly different from the other distributions; n.s.: not significantly different (log-rank test). Results obtained for other behavioral items are presented in Figure 3\u2014figure supplement 1. (D) Proportion of wild-type S. littoralis males (light grey, n\u00a0=\u00a049) and homozygous SlitOr5 mutants (purple, n\u00a0=\u00a013) that mated with a wild-type female during a period of 6 hr in the scotophase. *p<0.05, significant difference between the two genotypes (Fisher\u2019s exact test). (E) Number of eggs laid (left panel) and of offspring (right panel) obtained per female after the mating experiment. Plotted values represent the mean\u00a0\u00b1\u00a0SEM. ***p<0.001, **p<0.005, significant difference between the two genotypes (Mann-Whitney U test). Raw results for all the behavioral experiments are available in Figure 3\u2014source data 2.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/49826/elife-49826-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** Cumulative proportion of S. littoralis males initiating antennal flicking, wing fanning, abdomen curving and extrusion of genitalia in homozygous SlitOr5 mutants (purple, n\u00a0=\u00a014) stimulated with the major pheromone component (100 ng in the stimulus cartridge) and in wild-type animals stimulated with the pheromone (blue, n\u00a0=\u00a036) or with solvent alone (light grey, n\u00a0=\u00a044). ***p<0.001, significantly different from the other distributions; n.s.: not significantly different (log-rank test). Raw results are available in Figure 3\u2014source data 2.\n\nWe next generated G2 homozygous mutant males (SlitOr5-/-) and compared their ability to detect (Z,E)-9,11-14:OAc to that of wild-type and heterozygous (SlitOr5+/-) males, using electroantennogram (EAG) recordings (Figure 3B). When stimulated with (Z,E)-9,11-14:OAc, wild-type and SlitOr5+/- antennae exhibited similar EAG amplitudes (0.89 mV and 1.16 mV, respectively), whereas the response was completely abolished in SlitOr5-/- antennae (0.02 mV). Control experiments using a S. littoralis minor pheromone component and plant volatiles known to induce EAG responses in S. littoralis (Saveer et al., 2012; L\u00f3pez et al., 2017) showed that antennal responses were not impaired in SlitOr5-/- mutants, as these odorants elicited similar responses in wild-type, heterozygous and homozygous moths (Figure 3B).\n\nThen, we analyzed the courtship behavior of SlitOr5-/- and wild-type males in the presence of (Z,E)-9,11-14:OAc, and found a strong behavioral defect in mutants. Whereas more than 80% of wild-type males initiated a movement toward the pheromone source in the first 8 min, only a minority of SlitOr5 mutants initiated such a movement (even after 30 min of test), a response similar to that of control wild-type males not stimulated with the pheromone (Figure 3C). All the steps of the courtship behavior were similarly affected (Figure 3\u2014figure supplement 1). We also verified whether SlitOr5 knock-out would result in mating inability. When paired with a wild-type virgin female, only 1 out of the 13 SlitOr5-/- males tested was able to mate, compared to\u00a0~75% for wild-type males (Figure 3D). This behavioral defect was further confirmed by analyzing the number of eggs laid by the females and the number of offspring (Figure 3E). Overall, these results confirm that SlitOR5 is the receptor responsible for the detection of the major component of the S. littoralis female pheromone blend.\n\n### A novel lineage of candidate moth pheromone receptors\n\nIn view of these results and the unexpected phylogenetic position of SlitOR5, we rebuilt the phylogeny of the lepidopteran OR clade containing SlitOR5 and the known receptors for type 0, type I and type II pheromones (highlighted in grey in Figure 1B), adding all ORs showing a strong sex-biased expression (at least 10-fold in one sex compared to the other) and ORs whose ligands were known as of September 2018 (Supplementary file 2). ORs grouped within eight different paralogous lineages, four of which including PRs (Figure 4). One was the so-called PR clade that, as previously observed, contained all type I PRs characterized so far (except SlitOR5) as well as two type II PRs (Zhang et al., 2016). The other three lineages harboring PRs consisted of one containing SlitOR5, one containing EgriOR31 (a type II PR from the geometrid Ectropis grisescens; Li et al., 2017) and one containing EsemOR3 and 5 (type 0 PRs from the non-dytrisian moth Eriocrania semipurpurella; Yuvaraj et al., 2017). Interestingly, most sex-biased lepidopteran ORs identified to date clustered within the PR clade and the lineage containing SlitOR5. While sex-biased ORs within the PR clade were mainly male-biased, the SlitOR5 lineage contained an equal proportion of male and female-biased receptors, identified from species belonging to different families of Lepidoptera. Deep nodes within the phylogeny were highly supported by the bootstrap analysis, enabling us to state that these two PR-containing clades were more closely related to clades harboring receptors for plant volatiles than to each other. This suggests that receptors tuned to type I pheromone compounds emerged twice independently during the evolution of Lepidoptera, and that the clade containing SlitOR5 may constitute a novel lineage of candidate PRs.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/49826/elife-49826-fig4-v1.jpg)\n\n**Figure 4.:** Maximum likelihood phylogeny of the lepidopteran OR clade that includes all the paralogous lineages containing pheromone receptors. 360 sequences from 34 lepidopteran species were included. Functional and expression data shown on the figure have been compiled from the literature (Supplementary file 2). Branch colors indicate OR function, when characterized: PRs for type I pheromones are depicted in red, those for type II pheromones in blue and those for type 0 pheromones in orange. ORs tuned to plant volatiles are depicted in green. Symbols at the edge indicate expression data: male-biased ORs are highlighted with black squares and female-biased ORs with black dots. Circles on the nodes indicate the distinct paralogous OR lineages. Support values on basal nodes are transfer bootstrap expectation (TBE) values. The tree has been rooted using an outgroup as identified in the lepidopteran OR phylogeny shown in Figure 1. The scale bar indicates the expected number of amino acid substitutions per site. The sequence alignment file is available in Figure 4\u2014source data 1.\n\n## Discussion\n\nWhile moth sex pheromone receptors have been the most investigated ORs in Lepidoptera, with more than 60 being functionally characterized (Zhang and L\u00f6fstedt, 2015), it remains unclear how and when these specialized receptors arose. Type I PRs have been proposed to form a monophyletic, specialized clade of ORs, the so-called \u2018PR clade\u2019, which emerged early in the evolution of Lepidoptera (Yuvaraj et al., 2017; Yuvaraj et al., 2018). Here, we bring functional and phylogenetic evidence that type I PRs are not restricted to this clade and likely appeared twice independently in Lepidoptera. We focused on an atypical OR, SlitOR5, which exhibited a strong male-biased expression in antennae of the noctuid moth S. littoralis but did not group with the PR clade. We demonstrated, using a combination of heterologous expression and loss-of-function studies, that this OR is responsible for the detection of (Z,E)-9,11-14:OAc, the major component of the S. littoralis sex pheromone blend. Due to the unexpected phylogenetic position of SlitOR5 outside of the previously defined PR clade, the question arose whether SlitOR5 is an exception or belongs to a previously unknown clade of moth PRs. This latter hypothesis is supported by the observation that the paralogous lineage containing SlitOR5 harbored many other sex-biased ORs, identified in species from six distinct lepidopteran families. Notably, male-biased ORs have been found in Lasiocampidae, Sphingidae, Noctuidae and Tortricidae. Among these, two ORs from Ctenopseustis obliquana and C. herana (Tortricidae) have been functionally studied by heterologous expression in cell cultures, but no ligand could be identified (Steinwender et al., 2015). In the Lasiocampidae species Dendrolimus punctatus, these male-biased ORs have been referred to as \u2018Dendrolimus-specific odorant receptors\u2019, with the suspicion that they would represent good PR candidates since in Dendrolimus species, there is no OR clustering in the PR clade (Zhang et al., 2014; Zhang et al., 2017). No functional data yet confirmed this suspicion.\n\nConversely, within the SlitOR5 lineage, almost half of the sex-biased ORs were female-biased (13 out of 28, compared to 4 out of 63 in the classical PR clade). Female-biased ORs have been generally proposed to be involved in the detection of plant-emitted oviposition cues, as demonstrated in Bombyx mori (Anderson et al., 2009). However, another interesting hypothesis is that they could be tuned to male sex pheromones. In moths, little attention has been put on male pheromones, which are known to be involved in various mating behaviors such as female attraction, female acceptance, aggregation of males to form leks, mate assessment or inhibition of other males (reviewed in Conner and Iyengar, 2016). The use of male pheromone systems has been selected multiple times in distinct moth families, as reflected by the chemical diversity of male pheromone compounds and of the disseminating structures (Birch et al., 1990; Phelan, 1997; Conner and Iyengar, 2016). It is thus expected that this polyphyletic nature of male pheromones would result in a large diversity of female PR types. Accordingly, female-biased ORs were found in different clades within the phylogeny. However, most remain orphan ORs, including BmorOR30 that does belong to the SlitOR5 lineage but for which no ligand could be identified (Anderson et al., 2009). Although the most common male-emitted volatiles are plant-derived pheromones (Conner and Iyengar, 2016), some male courtship pheromones are long-chained hydrocarbons related to type I female pheromone compounds (Hillier and Vickers, 2004) that could be detected by female-biased type I PRs such as those identified within the SlitOR5 lineage.\n\nThe ancestral protein from which the so-called \u2018PR clade\u2019 would have arisen is thought to be an OR tuned to plant-emitted volatiles (Yuvaraj et al., 2017; Yuvaraj et al., 2018). Here, we evidence that SlitOR5 is a new type I PR that belongs to a distinct early diverging lineage for which a role in pheromone detection had never been demonstrated. Together with the findings that PRs for Type 0 (Yuvaraj et al., 2017) and one PR for type II pheromones (Li et al., 2017) group in distinct paralogous lineages also unrelated to the PR clade, our data suggest that lepidopteran PRs have evolved four times in four paralogous lineages. Whether the SlitOR5 lineage has evolved from ORs that detected structurally\u00a0related plant volatiles - as has been proposed for type 0 (Yuvaraj et al., 2017) and classical type I PRs - remains elusive. Yet, no OR tuned to plant volatiles has been identified in closely related lineages. More functional data on SlitOR5 paralogs and orthologs in different moth species, possibly revealing more type I PRs, will help in understanding evolutionary history of this lineage, as to when and how these receptors have evolved, and confirm that we are facing a novel type I PR clade.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Gene (Spodoptera littoralis)</td>\n      <td>SlitOr5</td>\n      <td>GenBank</td>\n      <td>GB:MK614705</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Gene (Spodoptera littoralis)</td>\n      <td>SlitOrco</td>\n      <td>Malpel et al. (2008); PMID:18828844; GenBank</td>\n      <td>GB:EF395366</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (Drosophila melanogaster)</td>\n      <td>Or67dGAL4</td>\n      <td>Kurtovic et al. (2007); PMID: 17392786</td>\n      <td>FLYB:FBal0210948</td>\n      <td>kindly provided by B. Dickson</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (Drosophila melanogaster)</td>\n      <td>y1 M{vas-int.Dm}ZH-2A w*; M{3xP3-RFP.attP}ZH-51C</td>\n      <td>Bischof et al. (2007); PMID: 17360644; Bloomington Drosophila Stock Center</td>\n      <td>BDSC:24482</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (Drosophila melanogaster)</td>\n      <td>UAS-SlitOr5</td>\n      <td>This study</td>\n      <td></td>\n      <td>See Materials and methods</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pUAST.attB (plasmid)</td>\n      <td>Bischof et al. (2007); PMID: 17360644; GenBank</td>\n      <td>GB:EF362409</td>\n      <td>kindly provided by J. Bischof</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pUAST.attB-SlitOr5 (plasmid)</td>\n      <td>This study</td>\n      <td></td>\n      <td>See Materials and methods</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pCS2+ (plasmid)</td>\n      <td>Turner and Weintraub (1994); PMID: 7926743</td>\n      <td></td>\n      <td>kindly provided by C. H\u00e9ligon</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pCS2+-SlitOr5 (plasmid)</td>\n      <td>This study</td>\n      <td></td>\n      <td>See Materials and methods</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pCS2+-SlitOrco (plasmid)</td>\n      <td>This study</td>\n      <td></td>\n      <td>See Materials and methods</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>Or5up</td>\n      <td>This study</td>\n      <td>PCR primers</td>\n      <td>TCGGGAGAAACTGAAGGACGTTGT</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>Or5do</td>\n      <td>This study</td>\n      <td>PCR primers</td>\n      <td>GCACGGAACCGCACTTATCACTAT</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>Rpl13up</td>\n      <td>This study</td>\n      <td>PCR primers</td>\n      <td>GTACCTGCCGCTCTCCGTGT</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>Rpl13do</td>\n      <td>This study</td>\n      <td>PCR primers</td>\n      <td>CTGCGGTGAATGGTGCTGTC</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>SlitOr5 guide RNA</td>\n      <td>This study</td>\n      <td>gRNA</td>\n      <td>AGCATAAATACTGGACCCAGTGG</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>Or5_forward</td>\n      <td>This study</td>\n      <td>PCR primers</td>\n      <td>CCAAAAGGACTTGGACTTTGAA</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>Or5_reverse</td>\n      <td>This study</td>\n      <td>PCR primers</td>\n      <td>CCCGAATCTTTTCAGGATTAGAA</td>\n    </tr>\n  </tbody>\n</table>\n\n### Animal rearing and chemicals\n\nS. littoralis were reared in the laboratory on a semi-artificial diet\u00a0(Poitout and Bu\u00e8s, 1974) at 22\u00b0C, 60% relative humidity and under a 16 hr light:8 hr dark cycle. Males and females were sexed as pupae and further reared separately. D. melanogaster lines were reared on standard cornmeal-yeast-agar medium and kept in a climate- and light-controlled environment (25\u00b0C, 12 hr light:12 hr dark cycle). The 26 pheromone compounds used for electrophysiology experiments (Supplementary file 1) were either synthesized in the lab or purchased from Sigma-Aldrich (St Louis, MO) and Pherobank (Wijk bij Duurstede, The Netherlands). Paraffin oil was purchased from Sigma-Aldrich and hexane from Carlo Erba Reagents (Val de Reuil, France).\n\n### Quantitative real-time PCR\n\nTotal RNA from three biological replicates of 15 pairs of antennae of two-day-old virgin male and female S. littoralis was extracted using RNeasy Micro Kit (Qiagen, Hilden, Germany), which included a DNase treatment. cDNA was synthesized from total RNA (1 \u03bcg) using Invitrogen SuperScript II reverse transcriptase (Thermo Fisher Scientific, Waltham, MA). Gene-specific primers were designed for SlitOr5 (Or5up: 5\u2019-TCGGGAGAAACTGAAGGACGTTGT-3\u2019, Or5do: 5\u2019-GCACGGAACCGCACTTATCACTAT-3\u2019) and for the reference gene SlitRpl13 (Rpl13up: 5\u2019-GTACCTGCCGCTCTCCGTGT-3\u2019, Rpl13do: 5\u2019-CTGCGGTGAATGGTGCTGTC-3\u2019). qPCR mix was prepared in a total volume of 10 \u03bcL with 5 \u03bcL of LightCycler 480 SYBR Green I Master (Roche, Basel, Switzerland), 4 \u03bcL of diluted cDNA (or water for the negative control) and 0.5 \u03bcM of each primer. qPCR assays were performed using the LightCycler 480 Real-Time PCR system (Roche). All reactions were performed in triplicate for the three biological replicates. The PCR program began with a cycle at 95\u00b0C for 13.5 min, followed by 50 cycles of 10 s at 95\u00b0C, 15 s at 60\u00b0C and 15 s at 72\u00b0C. Dissociation curves of the amplified products were performed by gradual heating from 55\u00b0C to 95\u00b0C at 0.5 \u00b0C.s\u22121. A negative control (mix without cDNA) and a fivefold dilution series protocol of pooled cDNAs (from all conditions) were included. The fivefold dilution series were used to construct relative standard curves to determine the PCR efficiencies used for further quantification analyses. Data were analyzed with the LightCycler 480 software (Roche). Normalized expression of the SlitOr5 gene was calculated with the Q-Gene software (Joehanes and Nelson, 2008) using SlitRpl13 as a reference, considering it displays consistent expression as previously described in Durand et al. (2010).\n\n### Heterologous expression of SlitOR5 in Drosophila\n\nThe SlitOr5 full-length open-reading frame (1191 bp, GenBank acc. num. MK614705) was subcloned into the pUAST.attB vector. Transformant UAS-SlitOr5 balanced fly lines were generated by BestGene Inc (Chino Hills, CA), by injecting the pUAST.attB-SlitOr5 plasmid (Endofree prepared, Qiagen) into fly embryos with the genotype y1 M{vas-int.Dm}ZH-2A w*; M{3xP3-RFP.attP}ZH-51C (Bischof et al., 2007), leading to a non-random insertion of the UAS-SlitOr5 construct into the locus 51C of the second chromosome. The UAS-SlitOr5 balanced line was then crossed to the Or67dGAL4 line (Kurtovic et al., 2007) to obtain double homozygous flies (genotype w; UAS-SlitOr5,w+; Or67dGAL4) expressing the SlitOr5 transgene in at1 OSNs instead of the endogenous Drosophila receptor gene Or67d. The correct expression of SlitOr5 was confirmed by RT-PCR on total RNA extracted from 100 pairs of antennae.\n\n### Single-sensillum recordings\n\nSingle-sensillum extracellular recordings on Drosophila at1 OSNs were performed as previously described (de Fouchier et al., 2015). OSNs were stimulated during 500 ms, using stimulus cartridges containing 10 \u03bcg of pheromone (1 \u03bcg/\u03bcl in hexane) dropped onto a filter paper. Single-sensillum recordings on S. littoralis LT1A OSNs were performed using the tip-recording technique, as previously described (P\u00e9zier et al., 2007). Briefly, the tips of a few LT1 sensilla were cut off using sharpened forceps and a recording glass electrode filled with a saline solution (170 mM KCl, 25 mM NaCl, 3 mM MgCl2, 6 mM CaCl2, 10 mM HEPES and 7.5 mM glucose, pH 6.5) was slipped over the end of a cut LT1 sensillum. OSNs were stimulated with an air pulse of 200 ms (10 L.h\u22121), odorized using a stimulus cartridge containing 1 \u03bcg of pheromone (diluted at 1 \u03bcg/\u03bcl in hexane). Odorants were considered as active if the response they elicited was statistically different from the response elicited by the solvent alone (one-way ANOVA followed by a Tukey\u2019s post hoc test).\n\n### Heterologous expression of SlitOR5 in Xenopus oocytes and two-electrode voltage-clamp recordings\n\nOpen-reading frames of SlitOr5 and SlitOrco (GenBank acc. num. EF395366, Malpel et al., 2008) were subcloned into the pCS2+ vector (Turner and Weintraub, 1994). Template plasmids were fully linearized with PteI for pCS2+-SlitOr5 and NotI for pCS2+-SlitOrco and capped cRNAs were transcribed using SP6 RNA polymerase. Purified cRNAs were re-suspended in nuclease-free water at a concentration of 2 \u03bcg/\u03bcL and stored at \u221280\u00b0C. Mature healthy oocytes were treated with 2 mg/ml collagenase type I in washing buffer (96 mM NaCl, 2 mM KCl, 5 mM MgCl2 and 5 mM HEPES, pH 7.6) for 1\u20132 hr at room temperature. Oocytes were later microinjected with 27.6 ng of SlitOr5 cRNA and 27.6 ng of SlitOrco cRNA. After 4 days of incubation at 18\u00b0C in 1\u00a0\u00d7\u00a0Ringer\u2019s solution (96 mM NaCl, 2 mM KCl, 5 mM MgCl2, 0.8 mM CaCl2, and 5 mM HEPES, pH 7.6) supplemented with 5% dialyzed horse serum, 50 mg/ml tetracycline, 100 mg/ml streptomycin and 550 mg/ml sodium pyruvate, the whole-cell currents were recorded from the injected oocytes with a two-electrode voltage clamp. Oocytes were exposed to the 26 pheromone compounds diluted at 10\u22124 M in Ringer\u2019s solution, with an interval between exposures which allowed the current to return to baseline. Data acquisition and analysis were carried out with Digidata 1440A and pCLAMP10 software (Molecular Devices, San Jose, CA). Odorants were considered as active if the mean response they elicited was statistically different from 0 (Wilcoxon signed rank test). Dose\u2013response experiments were performed using pheromone concentrations ranging from 10\u22129 up to 10\u22125 M and data were analyzed using GraphPad Prism 5.\n\n### SlitOr5 knock-out via CRISPR/Cas9\n\nA guide RNA (gRNA sequence: AGCATAAATACTGGACCCAG TGG) was designed against the first exon of the SlitOr5 gene using the CRISPOR gRNA design tool (crispor.tefor.net; Haeussler et al., 2016) and transcribed after subcloning into the DR274 vector using the HiScribe T7 High Yield RNA Synthesis Kit (New England Biolabs, Ipswich, MA). The Cas9 protein was produced in Escherichia coli as previously described (M\u00e9noret et al., 2015). A mix of Cas9 protein and gRNA was injected in freshly laid eggs using an Eppendorf - Transjector 5246, as previously described (Koutroumpa et al., 2016). Individual genotyping at every generation was performed via PCR on genomic DNA extracted from larvae pseudopods (Wizard Genomic DNA Purification Kit, Promega, Madison, WI) using gene-specific primers (Or5_forward: 5\u2019-CCAAAAGGACTTGGACTTTGAA-3\u2019; Or5_reverse: 5\u2019-CCCGAATCTTTTCAGGATTAGAA-3\u2019) amplifying a fragment of 728 bp encompassing the target sequence. Mutagenic events were detected by sequencing the amplification products (Biofidal, Vaulx-en-Velin, France). G0 larvae carrying a single mutagenic event were reared until adults and crossed with wild-type individuals. Homozygous G2 individuals were obtained by crossing G1 heterozygous males and females.\n\n### Phenotyping of CRISPR/Cas9 mutants by electroantennogram recordings\n\nElectroantennogram recordings were performed as previously described (Koutroumpa et al., 2016) on isolated male antennae from wild-type animals and from heterozygous and homozygous SlitOr5 mutants. Antennae were stimulated using stimulus cartridges loaded with 10 \u03bcg of linalool or benzyl alcohol diluted in paraffin oil, and 1 \u03bcg of (Z,E)-9,11-14:OAc or (Z,E)-9,12-14:OAc diluted in hexane. Stimulations lasted for 500 ms (30 L/h). Negative controls consisted of paraffin oil and hexane alone. The maximum depolarization amplitude was measured using the pCLAMP10 software. Normalized mean responses were calculated (response to the solvent was subtracted) and data were analyzed using a one-way ANOVA followed by a Tukey\u2019s post\u00a0hoc\u00a0test.\n\n### Behavioral experiments\n\nFor courtship monitoring, 2-day-old wild-type or homozygous SlitOr5 mutant males were placed individually in a plastic squared petri dish (size\u00a0=\u00a012 cm) before the onset of the scotophase, and experiments started at the middle of the scotophase (22\u00b0C, 70% relative humidity). Odorant stimulation was performed using Pasteur pipettes containing a filter paper loaded with 100 ng of (Z,E)-9,11-14:OAc (10 ng/\u03bcl in hexane), or hexane alone as control. The narrow end of the pipette was inserted into the petri dish, and a constant stream of charcoal-filtered, humidified air (0.2 L.min\u22121) passed through the pipette during all the experiment. Male courtship behavior was recorded under dim red light during 30 min using a webcam (Logitech QuickCam Pro 9000). The latency of each of the following stereotyped behavioral items was individually screened: antennal flicking, movement toward the odor source, wing fanning, abdomen curving and extrusion of genitalia. Results were presented as cumulative occurrence of each item along the time of the experiment. Statistical analysis of the distributions obtained for each treatment were compared using a log-rank (Mantel-Cox) test.\u00a0For mating experiments, 2-day-old wild-type or homozygous SlitOr5 mutant males were paired with a 2-day-old wild-type virgin female in a cylindrical plastic box (diameter 8 cm, height 5 cm), the walls of which were covered up with filter paper. Experiments started at the onset of the scotophase and lasted over 6 hr. Copulation events were visually inspected every 20 min under dim red light. After the end of the experiment, females were kept in the boxes for 12 hr. Then, females were discarded and filter papers were examined for the presence of egg clutches. When present, eggs were transferred to a rearing plastic box, hatch was monitored every day during 7 days and second-instar larvae were counted, if any. Statistical analysis of mating rates was done using a Fisher\u2019s exact test, and analyses of the number of eggs and offspring were done using a Mann-Whitney U test.\n\n### Phylogenetic analyses\n\nThe dataset of lepidopteran amino acid OR sequences used to build the phylogeny shown in Figure 1 included entire OR repertoires from the following nine species, each belonging to a different lepidopteran superfamily: Bombyx mori (Bombycoidea; Tanaka et al., 2009), Dendrolimus punctatus (Lasiocampoidea; Zhang et al., 2017), Ectropis grisescens (Geometroidea; Li et al., 2017), Epiphyas postvittana (Tortricoidea; Corcoran et al., 2015), Eriocrania semipurpurella (Eriocranioidea; Yuvaraj et al., 2017), Heliconius melpomene (Papilionoidea; Heliconius Genome Consortium, 2012), Ostrinia furnacalis (Pyraloidea; Yang et al., 2015), Plutella xylostella (Yponomeutoidea; Engsontia et al., 2014) and Spodoptera littoralis (Noctuoidea; Walker et al., 2019). The dataset used to build the phylogeny shown in Figure 4 contained amino acid sequences from the same nine species falling into that clade, plus all the sequences of ORs within that clade showing a marked sex-biased expression (threshold of a 10-fold difference in expression rate between male and female antennae, based on RNAseq or qPCR experiments) and/or for which ligands have been identified as of September 2018 (Supplementary file 2). Alignments were performed using Muscle (Edgar, 2004) as implemented in Jalview v2.10.5 (Waterhouse et al., 2009). Phylogenetic reconstruction was performed using maximum likelihood. The best-fit model of protein evolution was selected by SMS (Lefort et al., 2017) and tree reconstruction was performed using PhyML 3.0 (Guindon et al., 2010). Node support was first assessed using 100 bootstrap iterations, then the file containing bootstrap trees was uploaded on the Booster website (Lemoine et al., 2018) to obtain the TBE (Transfer Bootstrap Expectation) node support estimation. Figures were created using the iTOL web server (Letunic and Bork, 2016).\n",
+      "created_at": "2025-12-02T13:54:01.243125Z"
+    },
+    {
+      "id": "b4109b3e-7e74-4521-8dd5-789fc65c4b8e",
+      "submission_id": "b1835b78-7f53-4fec-b6d7-94adc51684ff",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Kristin Scott, University of California, Berkeley United States\n\nReviewers:\n- Marcus C Stensmyr, Lund University Sweden\n- Laurence J Zwiebel, Vanderbilt University United States\n- Wei Xu, Murdoch University Australia\n\n## Review text\n\nDOI: [10.7554/eLife.49826.sa1](https://doi.org/10.7554/eLife.49826.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nAcceptance summary:\n\nMale moths travel extraordinary distances to seek a female mate. Pheromone blends emitted by females are essential for all aspects of male mating behavior. In this study, Bastin-Heline et al. characterized an odorant receptor (SlitOR5) in S. littoralis which is highly expressed in male antennae and found that it specifically responds to the major sex pheromone component. Male moths with CRISPR-generated mutations in SlitOR5 fail to detect the major pheromone by electroantennogram recordings and have severe defects in pheromone-mediated attraction and in all aspects of courtship behavior. Phylogenetic analysis demonstrated that SlitOR5 is on a separate clade from the classic Pheromone Receptor clades, suggesting it marks a new clade in lepidoptera. This study is significant because it provides a dramatic demonstration of how a single pheromone receptor impacts animal behavior. This is an important advance for the field of chemical ecology of insects and will attract a general audience interested in sensory-guided behavior.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"A novel lineage of candidate pheromone receptors for sex communication in moths\" for consideration by eLife. Your article has been reviewed by three peer reviewers, and the evaluation has been overseen by Kristin Scott as the Reviewing Editor and K VijayRaghavan as the Senior Editor. The following individuals involved in review of your submission have agreed to reveal their identity: Marcus C Stensmyr (Reviewer #1); Laurence J Zwiebel (Reviewer #2); Wei Xu (Reviewer #3).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nBastin-Heline et al. identified a new odorant receptor (SlitOR5) in S. littoralis which is highly expressed in male antennae and specifically responds to the major sex pheromone component. The functional characterization and knockout studies are solid, well-controlled studies that provide nice data in support of SlitOR5 being selectively tuned to the (Z,E)-9,11-14:OAc pheromone and responsible for the electrophysiological sensitivity. The paper is well written and easy to follow. The experiments (except the behavioral ones) are all done to a high technical standard and support the conclusions of the manuscript. The findings presented will certainly be met with interest in the moth/pheromone community and opens up new research venues.\n\nEssential revisions:\n\nGiven that the authors have gone through the extensive trouble of generating a mutant line, I'm surprised not more effort was spent in analyzing these animals behaviorally. The authors should, at bare minimum, quantify the behavioral deficiency they report and present this in a figure or table. Preferably, they should add additional behavioral tests, e.g. wind tunnel (assuming these animals are able to fly that is).\n",
+      "created_at": "2025-12-02T13:54:01.243125Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T13:54:01.243125Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T13:54:01.243125Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "15c9980b-9302-4a18-947a-7d463054b221",
+      "content_id": "82ad07b9-2729-4bab-82ff-ed92a8ec5356",
+      "claim_id": "C1",
+      "claim": "SlitOr5 is expressed with a more than 50-fold enrichment in male antennae compared to female antennae in S. littoralis.",
+      "claim_type": "EXPLICIT",
+      "source": "We found SlitOr5 expressed with a more than 50-fold enrichment in the male antennae (Figure 1A), thus confirming previous observations (Legeai et al., 2011; Walker et al., 2019).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by qPCR data shown in Figure 1A and confirmed by previous studies cited.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:54:01.243125Z"
+    },
+    {
+      "id": "09796fad-bdae-4dd5-8402-3175c882d279",
+      "content_id": "82ad07b9-2729-4bab-82ff-ed92a8ec5356",
+      "claim_id": "C2",
+      "claim": "SlitOR5 belongs to a lineage distantly related to the type I PR clade.",
+      "claim_type": "EXPLICIT",
+      "source": "Among the 20 paralogous lineages identified (each having evolved in principle from an ancestral OR present in the last common ancestor of Lepidoptera), SlitOR5 belonged to a lineage distantly related to the type I PR clade, as well as to the lineages containing type 0 and type II PRs (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by phylogenetic analysis shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:54:01.243125Z"
+    },
+    {
+      "id": "051ff625-36c4-48cd-9538-cddd83f6faa7",
+      "content_id": "82ad07b9-2729-4bab-82ff-ed92a8ec5356",
+      "claim_id": "C3",
+      "claim": "SlitOR5-expressing OSNs strongly responded to (Z,E)-9,11-14:OAc in Drosophila heterologous expression system.",
+      "claim_type": "EXPLICIT",
+      "source": "SlitOR5-expressing OSNs strongly responded to (Z,E)-9,11-14:OAc (65 \u00b1 15 spikes.s\u22121), whereas there was no significant response to any other compound (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by single-sensillum recording data shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:54:01.243125Z"
+    },
+    {
+      "id": "59e2bf67-3d0b-4afd-84ff-dbde4cd34548",
+      "content_id": "82ad07b9-2729-4bab-82ff-ed92a8ec5356",
+      "claim_id": "C4",
+      "claim": "SlitOR5 co-expressed with SlitOrco in Xenopus oocytes induced a strong current when stimulated with (Z,E)-9,11-14:OAc.",
+      "claim_type": "EXPLICIT",
+      "source": "A strong current was induced in SlitOR5-expressing oocytes when stimulated with (Z,E)-9,11-14:OAc (3.9 \u00b1 0.3 \u00b5A), whereas only minor currents were recorded in response to (Z,E)-9,12-14:OAc and (Z)9-12:OAc (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by two-electrode voltage-clamp recordings shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:54:01.243125Z"
+    },
+    {
+      "id": "d4b35a2d-04c2-44cc-b0d7-9ada1f7924e2",
+      "content_id": "82ad07b9-2729-4bab-82ff-ed92a8ec5356",
+      "claim_id": "C5",
+      "claim": "SlitOR5 has a low detection threshold of 10\u22128 M for (Z,E)-9,11-14:OAc.",
+      "claim_type": "EXPLICIT",
+      "source": "SlitOR5 sensitivity was assessed with a dose-response experiment that showed a low detection threshold (10\u22128 M) and an EC50 of 1.707 \u00d7 10\u22127 M (Figure 2D\u2013E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by dose-response experiments shown in Figure 2D-E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:54:01.243125Z"
+    },
+    {
+      "id": "3cb54613-d4cd-4001-a40d-69b80bc72a0b",
+      "content_id": "82ad07b9-2729-4bab-82ff-ed92a8ec5356",
+      "claim_id": "C6",
+      "claim": "SlitOR5 has an EC50 of 1.707 \u00d7 10\u22127 M for (Z,E)-9,11-14:OAc.",
+      "claim_type": "EXPLICIT",
+      "source": "SlitOR5 sensitivity was assessed with a dose-response experiment that showed a low detection threshold (10\u22128 M) and an EC50 of 1.707 \u00d7 10\u22127 M (Figure 2D\u2013E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by dose-response experiments shown in Figure 2D-E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:54:01.243125Z"
+    },
+    {
+      "id": "7f41f95c-9236-4dae-ab7c-47fb7e7a20e5",
+      "content_id": "82ad07b9-2729-4bab-82ff-ed92a8ec5356",
+      "claim_id": "C7",
+      "claim": "S. littoralis LT1A OSNs significantly responded to (Z,E)-9,11-14:OAc.",
+      "claim_type": "EXPLICIT",
+      "source": "When stimulated with the 26 pheromone compounds, LT1A OSNs significantly responded to (Z,E)-9,11-14:OAc (55 \u00b1 4 spikes.s\u22121) and to a lesser extent to its stereoisomer (Z,Z)-9,11-14:OAc, which is absent from any Spodoptera pheromone.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by single-sensillum recordings on native S. littoralis OSNs.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:54:01.243125Z"
+    },
+    {
+      "id": "da5cce30-7fa2-41d1-8c27-158ef94ff4f5",
+      "content_id": "82ad07b9-2729-4bab-82ff-ed92a8ec5356",
+      "claim_id": "C8",
+      "claim": "The response spectrum of heterologously expressed SlitOR5 mirrors that of S. littoralis LT1A OSNs.",
+      "claim_type": "EXPLICIT",
+      "source": "This mirrored the response spectra of heterologously expressed SlitOR5, especially the one observed in Drosophila OSNs (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Comparison of response spectra between heterologous expression and native OSNs.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:54:01.243125Z"
+    },
+    {
+      "id": "9d6f9a91-97c4-43b3-a699-e1e55faf9024",
+      "content_id": "82ad07b9-2729-4bab-82ff-ed92a8ec5356",
+      "claim_id": "C9",
+      "claim": "A 10 bp deletion was created in the first exon of SlitOr5 using CRISPR/Cas9.",
+      "claim_type": "EXPLICIT",
+      "source": "We selected a line carrying a single mutation that consisted of a 10 bp deletion at the expected location, introducing a premature STOP codon within the SlitOr5 transcript after 247 codons (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by genotyping and sequencing data shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:54:01.243125Z"
+    },
+    {
+      "id": "a349c5fe-a5d5-4163-a197-8bffe34bbc74",
+      "content_id": "82ad07b9-2729-4bab-82ff-ed92a8ec5356",
+      "claim_id": "C10",
+      "claim": "The 10 bp deletion in SlitOr5 introduces a premature STOP codon after 247 codons.",
+      "claim_type": "EXPLICIT",
+      "source": "We selected a line carrying a single mutation that consisted of a 10 bp deletion at the expected location, introducing a premature STOP codon within the SlitOr5 transcript after 247 codons (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by sequence analysis shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:54:01.243125Z"
+    },
+    {
+      "id": "535a544e-144a-49ee-b6f5-1a9125a8b4d0",
+      "content_id": "82ad07b9-2729-4bab-82ff-ed92a8ec5356",
+      "claim_id": "C11",
+      "claim": "Homozygous SlitOr5 mutant antennae showed no EAG response to (Z,E)-9,11-14:OAc.",
+      "claim_type": "EXPLICIT",
+      "source": "When stimulated with (Z,E)-9,11-14:OAc, wild-type and SlitOr5+/- antennae exhibited similar EAG amplitudes (0.89 mV and 1.16 mV, respectively), whereas the response was completely abolished in SlitOr5-/- antennae (0.02 mV).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by EAG recordings comparing wild-type, heterozygous, and homozygous mutants.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:54:01.243125Z"
+    },
+    {
+      "id": "3ceaf783-679a-484b-b5fd-6a861a77e6b9",
+      "content_id": "82ad07b9-2729-4bab-82ff-ed92a8ec5356",
+      "claim_id": "C12",
+      "claim": "Antennal responses to minor pheromone components and plant volatiles were not impaired in SlitOr5 mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "Control experiments using a S. littoralis minor pheromone component and plant volatiles known to induce EAG responses in S. littoralis (Saveer et al., 2012; L\u00f3pez et al., 2017) showed that antennal responses were not impaired in SlitOr5-/- mutants, as these odorants elicited similar responses in wild-type, heterozygous and homozygous moths (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by EAG recordings with control odorants shown in Figure 3B and cited studies.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:54:01.243125Z"
+    },
+    {
+      "id": "5fe83c61-6f61-4e8c-9e80-55242e0ab6d4",
+      "content_id": "82ad07b9-2729-4bab-82ff-ed92a8ec5356",
+      "claim_id": "C13",
+      "claim": "More than 80% of wild-type males initiated movement toward the pheromone source in the first 8 minutes.",
+      "claim_type": "EXPLICIT",
+      "source": "Whereas more than 80% of wild-type males initiated a movement toward the pheromone source in the first 8 min, only a minority of SlitOr5 mutants initiated such a movement (even after 30 min of test), a response similar to that of control wild-type males not stimulated with the pheromone (Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by behavioral assay data shown in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:54:01.243125Z"
+    },
+    {
+      "id": "08124b86-4140-44b8-93ea-027cc9a38118",
+      "content_id": "82ad07b9-2729-4bab-82ff-ed92a8ec5356",
+      "claim_id": "C14",
+      "claim": "Only a minority of SlitOr5 mutants initiated movement toward the pheromone source even after 30 minutes of testing.",
+      "claim_type": "EXPLICIT",
+      "source": "Whereas more than 80% of wild-type males initiated a movement toward the pheromone source in the first 8 min, only a minority of SlitOr5 mutants initiated such a movement (even after 30 min of test), a response similar to that of control wild-type males not stimulated with the pheromone (Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by behavioral assay data shown in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:54:01.243125Z"
+    },
+    {
+      "id": "844f8a73-911f-48cc-b5ae-4718f2ac59c4",
+      "content_id": "82ad07b9-2729-4bab-82ff-ed92a8ec5356",
+      "claim_id": "C15",
+      "claim": "All steps of courtship behavior were affected in SlitOr5 mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "All the steps of the courtship behavior were similarly affected (Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by behavioral data shown in Figure 3\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:54:01.243125Z"
+    },
+    {
+      "id": "84f725c1-8c9f-4151-b7f3-a44843e9b06d",
+      "content_id": "82ad07b9-2729-4bab-82ff-ed92a8ec5356",
+      "claim_id": "C16",
+      "claim": "Only 1 out of 13 SlitOr5 mutant males was able to mate with a wild-type virgin female.",
+      "claim_type": "EXPLICIT",
+      "source": "When paired with a wild-type virgin female, only 1 out of the 13 SlitOr5-/- males tested was able to mate, compared to ~75% for wild-type males (Figure 3D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by mating experiment data shown in Figure 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:54:01.243125Z"
+    },
+    {
+      "id": "abbd0f21-5910-4954-9656-0228dbc2c124",
+      "content_id": "82ad07b9-2729-4bab-82ff-ed92a8ec5356",
+      "claim_id": "C17",
+      "claim": "Approximately 75% of wild-type males were able to mate with a wild-type virgin female.",
+      "claim_type": "EXPLICIT",
+      "source": "When paired with a wild-type virgin female, only 1 out of the 13 SlitOr5-/- males tested was able to mate, compared to ~75% for wild-type males (Figure 3D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by mating experiment data shown in Figure 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:54:01.243125Z"
+    },
+    {
+      "id": "65c36493-92fc-47de-8dce-4308aac3b825",
+      "content_id": "82ad07b9-2729-4bab-82ff-ed92a8ec5356",
+      "claim_id": "C18",
+      "claim": "SlitOR5 is the receptor responsible for the detection of the major component of the S. littoralis female pheromone blend.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, these results confirm that SlitOR5 is the receptor responsible for the detection of the major component of the S. littoralis female pheromone blend.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion drawn from combined heterologous expression and loss-of-function studies.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:54:01.243125Z"
+    },
+    {
+      "id": "f37ca3c8-04a9-43a8-8168-d65b38cefefe",
+      "content_id": "82ad07b9-2729-4bab-82ff-ed92a8ec5356",
+      "claim_id": "C19",
+      "claim": "Lepidopteran ORs grouped within eight different paralogous lineages in the phylogenetic analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "ORs grouped within eight different paralogous lineages, four of which including PRs (Figure 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by phylogenetic analysis shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:54:01.243125Z"
+    },
+    {
+      "id": "9d9cf344-e428-449a-964d-05979c6507d5",
+      "content_id": "82ad07b9-2729-4bab-82ff-ed92a8ec5356",
+      "claim_id": "C20",
+      "claim": "Four paralogous lineages include pheromone receptors.",
+      "claim_type": "EXPLICIT",
+      "source": "ORs grouped within eight different paralogous lineages, four of which including PRs (Figure 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by phylogenetic analysis shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:54:01.243125Z"
+    },
+    {
+      "id": "b6aae196-d4b8-4e11-b14a-d9bfbc722203",
+      "content_id": "82ad07b9-2729-4bab-82ff-ed92a8ec5356",
+      "claim_id": "C21",
+      "claim": "The PR clade contains all type I PRs characterized so far except SlitOR5.",
+      "claim_type": "EXPLICIT",
+      "source": "One was the so-called PR clade that, as previously observed, contained all type I PRs characterized so far (except SlitOR5) as well as two type II PRs (Zhang et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by phylogenetic analysis and cited literature.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:54:01.243125Z"
+    },
+    {
+      "id": "cf89f29a-bbf7-439b-8f3a-52da98d8408d",
+      "content_id": "82ad07b9-2729-4bab-82ff-ed92a8ec5356",
+      "claim_id": "C22",
+      "claim": "The PR clade contains two type II PRs.",
+      "claim_type": "EXPLICIT",
+      "source": "One was the so-called PR clade that, as previously observed, contained all type I PRs characterized so far (except SlitOR5) as well as two type II PRs (Zhang et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by phylogenetic analysis and cited study.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:54:01.243125Z"
+    },
+    {
+      "id": "c9633d51-187e-48ac-9c75-ce6e5cfb1471",
+      "content_id": "82ad07b9-2729-4bab-82ff-ed92a8ec5356",
+      "claim_id": "C23",
+      "claim": "EgriOR31 is a type II PR from the geometrid Ectropis grisescens.",
+      "claim_type": "EXPLICIT",
+      "source": "The other three lineages harboring PRs consisted of one containing SlitOR5, one containing EgriOR31 (a type II PR from the geometrid Ectropis grisescens; Li et al., 2017) and one containing EsemOR3 and 5 (type 0 PRs from the non-dytrisian moth Eriocrania semipurpurella; Yuvaraj et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by cited study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:54:01.243125Z"
+    },
+    {
+      "id": "847f73a0-7061-4aa8-a547-ce3da1c8fb20",
+      "content_id": "82ad07b9-2729-4bab-82ff-ed92a8ec5356",
+      "claim_id": "C24",
+      "claim": "EsemOR3 and EsemOR5 are type 0 PRs from the non-dytrisian moth Eriocrania semipurpurella.",
+      "claim_type": "EXPLICIT",
+      "source": "The other three lineages harboring PRs consisted of one containing SlitOR5, one containing EgriOR31 (a type II PR from the geometrid Ectropis grisescens; Li et al., 2017) and one containing EsemOR3 and 5 (type 0 PRs from the non-dytrisian moth Eriocrania semipurpurella; Yuvaraj et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by cited study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:54:01.243125Z"
+    },
+    {
+      "id": "2b9081e6-60b2-4c33-9566-deae28d3c18d",
+      "content_id": "82ad07b9-2729-4bab-82ff-ed92a8ec5356",
+      "claim_id": "C25",
+      "claim": "Most sex-biased lepidopteran ORs identified to date cluster within the PR clade and the lineage containing SlitOR5.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, most sex-biased lepidopteran ORs identified to date clustered within the PR clade and the lineage containing SlitOR5.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Observation from phylogenetic analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:54:01.243125Z"
+    },
+    {
+      "id": "35edbb1d-b4c2-462f-86db-3fa224af85c2",
+      "content_id": "82ad07b9-2729-4bab-82ff-ed92a8ec5356",
+      "claim_id": "C26",
+      "claim": "Sex-biased ORs within the PR clade are mainly male-biased.",
+      "claim_type": "EXPLICIT",
+      "source": "While sex-biased ORs within the PR clade were mainly male-biased, the SlitOR5 lineage contained an equal proportion of male and female-biased receptors, identified from species belonging to different families of Lepidoptera.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Observation from phylogenetic analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:54:01.243125Z"
+    },
+    {
+      "id": "d6e34e42-8b64-4e5f-86b3-f173c52dde3e",
+      "content_id": "82ad07b9-2729-4bab-82ff-ed92a8ec5356",
+      "claim_id": "C27",
+      "claim": "The SlitOR5 lineage contains an equal proportion of male and female-biased receptors.",
+      "claim_type": "EXPLICIT",
+      "source": "While sex-biased ORs within the PR clade were mainly male-biased, the SlitOR5 lineage contained an equal proportion of male and female-biased receptors, identified from species belonging to different families of Lepidoptera.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Observation from phylogenetic analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:54:01.243125Z"
+    },
+    {
+      "id": "64b1568c-56f3-47bc-affe-b759448993ac",
+      "content_id": "82ad07b9-2729-4bab-82ff-ed92a8ec5356",
+      "claim_id": "C28",
+      "claim": "The SlitOR5 lineage contains receptors from species belonging to different families of Lepidoptera.",
+      "claim_type": "EXPLICIT",
+      "source": "While sex-biased ORs within the PR clade were mainly male-biased, the SlitOR5 lineage contained an equal proportion of male and female-biased receptors, identified from species belonging to different families of Lepidoptera.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Observation from phylogenetic analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:54:01.243125Z"
+    },
+    {
+      "id": "57eb9af6-e7c8-4368-b1d2-179e7a02ed77",
+      "content_id": "82ad07b9-2729-4bab-82ff-ed92a8ec5356",
+      "claim_id": "C29",
+      "claim": "The PR clade and the SlitOR5 lineage are more closely related to clades harboring receptors for plant volatiles than to each other.",
+      "claim_type": "EXPLICIT",
+      "source": "Deep nodes within the phylogeny were highly supported by the bootstrap analysis, enabling us to state that these two PR-containing clades were more closely related to clades harboring receptors for plant volatiles than to each other.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by phylogenetic analysis with bootstrap support.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:54:01.243125Z"
+    },
+    {
+      "id": "82559918-ff71-4977-a2b6-dc64705e92a5",
+      "content_id": "82ad07b9-2729-4bab-82ff-ed92a8ec5356",
+      "claim_id": "C30",
+      "claim": "Receptors tuned to type I pheromone compounds emerged twice independently during the evolution of Lepidoptera.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that receptors tuned to type I pheromone compounds emerged twice independently during the evolution of Lepidoptera, and that the clade containing SlitOR5 may constitute a novel lineage of candidate PRs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from phylogenetic analysis and functional data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:54:01.243125Z"
+    },
+    {
+      "id": "d5d14ef0-f2de-432a-860f-e989da0112ae",
+      "content_id": "82ad07b9-2729-4bab-82ff-ed92a8ec5356",
+      "claim_id": "C31",
+      "claim": "The clade containing SlitOR5 may constitute a novel lineage of candidate PRs.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that receptors tuned to type I pheromone compounds emerged twice independently during the evolution of Lepidoptera, and that the clade containing SlitOR5 may constitute a novel lineage of candidate PRs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from phylogenetic and functional data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:54:01.243125Z"
+    },
+    {
+      "id": "a2da0ad5-33cb-4ad3-89e9-51e577c37e99",
+      "content_id": "82ad07b9-2729-4bab-82ff-ed92a8ec5356",
+      "claim_id": "C32",
+      "claim": "75% of all known moth sex pheromone compounds belong to type I.",
+      "claim_type": "EXPLICIT",
+      "source": "75% of all known moth sex pheromone compounds belong to type I and are straight-chain acetates, alcohols or aldehydes with 10 to 18 carbon atoms (Ando et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by cited study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:54:01.243125Z"
+    },
+    {
+      "id": "d51c376b-4c6f-4070-85b4-e3ec9e27e531",
+      "content_id": "82ad07b9-2729-4bab-82ff-ed92a8ec5356",
+      "claim_id": "C33",
+      "claim": "Type I pheromones are straight-chain acetates, alcohols or aldehydes with 10 to 18 carbon atoms.",
+      "claim_type": "EXPLICIT",
+      "source": "75% of all known moth sex pheromone compounds belong to type I and are straight-chain acetates, alcohols or aldehydes with 10 to 18 carbon atoms (Ando et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by cited study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:54:01.243125Z"
+    },
+    {
+      "id": "f98684ea-f348-4637-9989-266cb3d91baa",
+      "content_id": "82ad07b9-2729-4bab-82ff-ed92a8ec5356",
+      "claim_id": "C34",
+      "claim": "Type I pheromones have been found in most moth families investigated.",
+      "claim_type": "EXPLICIT",
+      "source": "Type I pheromones have been found in most moth families investigated, whereas the other types are restricted to only a few families (L\u00f6fstedt et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by cited study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:54:01.243125Z"
+    },
+    {
+      "id": "77e9db0e-e3bb-48f3-a805-d4bbb5c4d742",
+      "content_id": "82ad07b9-2729-4bab-82ff-ed92a8ec5356",
+      "claim_id": "C35",
+      "claim": "Type 0, II, and III pheromones are restricted to only a few moth families.",
+      "claim_type": "EXPLICIT",
+      "source": "Type I pheromones have been found in most moth families investigated, whereas the other types are restricted to only a few families (L\u00f6fstedt et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by cited study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:54:01.243125Z"
+    },
+    {
+      "id": "d5c5f643-21f6-476e-ba12-49bfd6671931",
+      "content_id": "82ad07b9-2729-4bab-82ff-ed92a8ec5356",
+      "claim_id": "C36",
+      "claim": "Four types of sex pheromones have been described in moths (types 0, I, II and III).",
+      "claim_type": "EXPLICIT",
+      "source": "Four types of sex pheromones have been described in moths (types 0, I, II and III), with distinct chemical structures and biosynthetic pathways (L\u00f6fstedt et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by cited study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:54:01.243125Z"
+    },
+    {
+      "id": "3eb856d8-7ddf-4622-9371-413710437f13",
+      "content_id": "82ad07b9-2729-4bab-82ff-ed92a8ec5356",
+      "claim_id": "C37",
+      "claim": "The four types of moth sex pheromones have distinct chemical structures and biosynthetic pathways.",
+      "claim_type": "EXPLICIT",
+      "source": "Four types of sex pheromones have been described in moths (types 0, I, II and III), with distinct chemical structures and biosynthetic pathways (L\u00f6fstedt et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by cited study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:54:01.243125Z"
+    },
+    {
+      "id": "61545632-de53-4cd8-b693-8d7f45ae51b3",
+      "content_id": "82ad07b9-2729-4bab-82ff-ed92a8ec5356",
+      "claim_id": "C38",
+      "claim": "Each type of OSN usually expresses one pheromone receptor responsible for signal transduction.",
+      "claim_type": "EXPLICIT",
+      "source": "Each type of OSN usually expresses one pheromone receptor (PR) responsible for signal transduction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on established knowledge of insect olfactory system.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:54:01.243125Z"
+    },
+    {
+      "id": "505aac4d-67ad-4fc5-84b5-7190ba885888",
+      "content_id": "82ad07b9-2729-4bab-82ff-ed92a8ec5356",
+      "claim_id": "C39",
+      "claim": "PRs are 7-transmembrane domain proteins belonging to the odorant receptor family.",
+      "claim_type": "EXPLICIT",
+      "source": "PRs are 7-transmembrane domain proteins belonging to the odorant receptor (OR) family and, as ORs, are co-expressed in OSNs together with the conserved co-receptor Orco (Chertemps, 2017; Fleischer and Krieger, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by cited studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:54:01.243125Z"
+    },
+    {
+      "id": "5efcd556-ef56-4977-ac73-e0b57ad84233",
+      "content_id": "82ad07b9-2729-4bab-82ff-ed92a8ec5356",
+      "claim_id": "C40",
+      "claim": "PRs are co-expressed in OSNs together with the conserved co-receptor Orco.",
+      "claim_type": "EXPLICIT",
+      "source": "PRs are 7-transmembrane domain proteins belonging to the odorant receptor (OR) family and, as ORs, are co-expressed in OSNs together with the conserved co-receptor Orco (Chertemps, 2017; Fleischer and Krieger, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by cited studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:54:01.243125Z"
+    },
+    {
+      "id": "91ede13e-cfdc-45ee-b34b-882da5590d6b",
+      "content_id": "82ad07b9-2729-4bab-82ff-ed92a8ec5356",
+      "claim_id": "C41",
+      "claim": "Most type I PRs appeared to be specific to only one compound.",
+      "claim_type": "EXPLICIT",
+      "source": "Since the first discovery of moth PRs (Krieger et al., 2004; Sakurai et al., 2004), numerous pheromone receptors tuned to type I pheromone compounds have been characterized through different hererologous expression systems, and most appeared to be specific to only one compound (Zhang and L\u00f6fstedt, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by cited review.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:54:01.243125Z"
+    },
+    {
+      "id": "ba0de388-6fa7-4747-9be6-5be7cb86411b",
+      "content_id": "82ad07b9-2729-4bab-82ff-ed92a8ec5356",
+      "claim_id": "C42",
+      "claim": "Type I PRs belong to a dedicated monophyletic subfamily of ORs called the 'PR clade'.",
+      "claim_type": "EXPLICIT",
+      "source": "Type I PRs belong to a dedicated monophyletic subfamily of ORs, the so-called 'PR clade', suggesting a unique emergence early in the evolution of Lepidoptera (Yuvaraj et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by cited study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:54:01.243125Z"
+    },
+    {
+      "id": "36d0ac05-3bc0-4cce-a5fd-97f7a1e7e01e",
+      "content_id": "82ad07b9-2729-4bab-82ff-ed92a8ec5356",
+      "claim_id": "C43",
+      "claim": "The PR clade suggests a unique emergence early in the evolution of Lepidoptera.",
+      "claim_type": "EXPLICIT",
+      "source": "Type I PRs belong to a dedicated monophyletic subfamily of ORs, the so-called 'PR clade', suggesting a unique emergence early in the evolution of Lepidoptera (Yuvaraj et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by cited study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:54:01.243125Z"
+    },
+    {
+      "id": "b4aebf70-64ce-41b8-8764-d6e38ced3dfe",
+      "content_id": "82ad07b9-2729-4bab-82ff-ed92a8ec5356",
+      "claim_id": "C44",
+      "claim": "Type I PRs exhibit male-biased expression.",
+      "claim_type": "EXPLICIT",
+      "source": "Another hallmark of type I PRs is their male-biased expression (Koenig et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by cited study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:54:01.243125Z"
+    },
+    {
+      "id": "8bb21ac8-8ff5-41e0-adfa-e18eff35ea61",
+      "content_id": "82ad07b9-2729-4bab-82ff-ed92a8ec5356",
+      "claim_id": "C45",
+      "claim": "Phylogenetic position and expression pattern have been the main criteria used to select candidate PRs for functional studies.",
+      "claim_type": "EXPLICIT",
+      "source": "The phylogenetic position and the expression pattern have thus been the main criteria used to select candidate PRs for functional studies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about research methodology in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:54:01.243125Z"
+    },
+    {
+      "id": "76df98c9-8104-4d7b-b4d1-f28bc4b6ccd8",
+      "content_id": "82ad07b9-2729-4bab-82ff-ed92a8ec5356",
+      "claim_id": "C46",
+      "claim": "S. littoralis is a polyphagous crop pest that uses type I sex pheromone compounds.",
+      "claim_type": "EXPLICIT",
+      "source": "Likewise, we selected PRs from the male transcriptome of the cotton leafworm Spodoptera littoralis (Legeai et al., 2011), a polyphagous crop pest that uses type I sex pheromone compounds (Mu\u00f1oz et al., 2008) and that has been established as a model in insect chemical ecology (Ljungberg et al., 1993; Binyameen et al., 2012; Saveer et al., 2012; Poivet et al., 2012; de Fouchier et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by cited studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:54:01.243125Z"
+    },
+    {
+      "id": "dd6e5cbf-7838-43cc-b00a-ec6a3c10e08c",
+      "content_id": "82ad07b9-2729-4bab-82ff-ed92a8ec5356",
+      "claim_id": "C47",
+      "claim": "S. littoralis has been established as a model in insect chemical ecology.",
+      "claim_type": "EXPLICIT",
+      "source": "Likewise, we selected PRs from the male transcriptome of the cotton leafworm Spodoptera littoralis (Legeai et al., 2011), a polyphagous crop pest that uses type I sex pheromone compounds (Mu\u00f1oz et al., 2008) and that has been established as a model in insect chemical ecology (Ljungberg et al., 1993; Binyameen et al., 2012; Saveer et al., 2012; Poivet et al., 2012; de Fouchier et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by cited studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:54:01.243125Z"
+    },
+    {
+      "id": "c82ff440-5130-451c-b134-8b8a78f31b61",
+      "content_id": "82ad07b9-2729-4bab-82ff-ed92a8ec5356",
+      "claim_id": "C48",
+      "claim": "Two PRs tuned to minor components of the S. littoralis pheromone blend were characterized through heterologous expression.",
+      "claim_type": "EXPLICIT",
+      "source": "Through heterologous expression, we characterized two PRs tuned to minor components of the S. littoralis pheromone blend (Montagn\u00e9 et al., 2012; de Fouchier et al., 2015), but none of the tested candidate PRs detected the major pheromone component (Z,E)-9,11-tetradecadienyl acetate (hereafter referred as (Z,E)-9,11-14:OAc), which is necessary and sufficient to elicit all steps of the male mate-seeking behavioral sequence (Quero et al., 1996).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by cited studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:54:01.243125Z"
+    },
+    {
+      "id": "75e7f29c-71f6-45b1-978f-e3240dfdb3c6",
+      "content_id": "82ad07b9-2729-4bab-82ff-ed92a8ec5356",
+      "claim_id": "C49",
+      "claim": "(Z,E)-9,11-14:OAc is necessary and sufficient to elicit all steps of the male mate-seeking behavioral sequence in S. littoralis.",
+      "claim_type": "EXPLICIT",
+      "source": "Through heterologous expression, we characterized two PRs tuned to minor components of the S. littoralis pheromone blend (Montagn\u00e9 et al., 2012; de Fouchier et al., 2015), but none of the tested candidate PRs detected the major pheromone component (Z,E)-9,11-tetradecadienyl acetate (hereafter referred as (Z,E)-9,11-14:OAc), which is necessary and sufficient to elicit all steps of the male mate-seeking behavioral sequence (Quero et al., 1996).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by cited study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:54:01.243125Z"
+    },
+    {
+      "id": "984c2db3-67d3-4f7b-abef-2fe5717bedbf",
+      "content_id": "82ad07b9-2729-4bab-82ff-ed92a8ec5356",
+      "claim_id": "C50",
+      "claim": "SlitOR5 was the most abundant OR in S. littoralis male antennae.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, a recent RNAseq analysis showed that SlitOR5 was the most abundant OR in S. littoralis male antennae (Walker et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by cited RNAseq study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:54:01.243125Z"
+    },
+    {
+      "id": "964014a7-11dc-47b5-956e-7e2613ed042e",
+      "content_id": "82ad07b9-2729-4bab-82ff-ed92a8ec5356",
+      "claim_id": "C51",
+      "claim": "SlitOR5 is highly expressed in male antennae.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, a preliminary analysis of S. littoralis OR expression patterns led to the identification of such a receptor, SlitOR5, which was highly expressed in male antennae but did not belong to the PR clade (Legeai et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by cited study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:54:01.243125Z"
+    },
+    {
+      "id": "1685c9de-7f54-4b8f-be99-169ec29b7f76",
+      "content_id": "82ad07b9-2729-4bab-82ff-ed92a8ec5356",
+      "claim_id": "C52",
+      "claim": "SlitOR5 does not belong to the PR clade.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, a preliminary analysis of S. littoralis OR expression patterns led to the identification of such a receptor, SlitOR5, which was highly expressed in male antennae but did not belong to the PR clade (Legeai et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by cited study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:54:01.243125Z"
+    },
+    {
+      "id": "e717ace7-a049-4255-b536-f2ebc7f86525",
+      "content_id": "82ad07b9-2729-4bab-82ff-ed92a8ec5356",
+      "claim_id": "C53",
+      "claim": "LT1A OSNs are known to detect (Z,E)-9,11-14:OAc.",
+      "claim_type": "EXPLICIT",
+      "source": "We compared the response spectra of heterologously expressed SlitOR5 with that of S. littoralis male OSNs housed in type one long trichoid sensilla (LT1A OSNs, Figure 2C), known to detect (Z,E)-9,11-14:OAc (Ljungberg et al., 1993; Quero et al., 1996).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by cited studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:54:01.243125Z"
+    },
+    {
+      "id": "ab8f2721-90e0-4d11-b8ea-2dd2ca05f847",
+      "content_id": "82ad07b9-2729-4bab-82ff-ed92a8ec5356",
+      "claim_id": "C54",
+      "claim": "Seven G0 individuals carrying at least one mutation in SlitOr5 were identified from 66 genotyped hatched larvae.",
+      "claim_type": "EXPLICIT",
+      "source": "We genotyped 66 G0 hatched larvae and found seven individuals carrying at least one mutation in SlitOr5.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by genotyping data from CRISPR/Cas9 experiment.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:54:01.243125Z"
+    },
+    {
+      "id": "4e7f228c-7fd5-4331-bff2-8adc1544f486",
+      "content_id": "82ad07b9-2729-4bab-82ff-ed92a8ec5356",
+      "claim_id": "C55",
+      "claim": "More than one thousand eggs were injected with guide RNAs and Cas9 protein for CRISPR/Cas9 genome editing.",
+      "claim_type": "EXPLICIT",
+      "source": "Guide RNAs were injected along with the Cas9 protein in more than one thousand eggs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of experimental procedure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:54:01.243125Z"
+    },
+    {
+      "id": "7ec05920-c02a-45a6-8475-52b1defea0f1",
+      "content_id": "82ad07b9-2729-4bab-82ff-ed92a8ec5356",
+      "claim_id": "C56",
+      "claim": "Within the SlitOR5 lineage, almost half of the sex-biased ORs were female-biased (13 out of 28).",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, within the SlitOR5 lineage, almost half of the sex-biased ORs were female-biased (13 out of 28, compared to 4 out of 63 in the classical PR clade).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Observation from phylogenetic analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:54:01.243125Z"
+    },
+    {
+      "id": "d4a32b6b-f719-46fe-85cc-ba4e8b9f9f37",
+      "content_id": "82ad07b9-2729-4bab-82ff-ed92a8ec5356",
+      "claim_id": "C57",
+      "claim": "Within the classical PR clade, 4 out of 63 sex-biased ORs were female-biased.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, within the SlitOR5 lineage, almost half of the sex-biased ORs were female-biased (13 out of 28, compared to 4 out of 63 in the classical PR clade).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Observation from phylogenetic analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:54:01.243125Z"
+    },
+    {
+      "id": "b01bd639-0a33-4bdc-97c5-06aa818f480f",
+      "content_id": "82ad07b9-2729-4bab-82ff-ed92a8ec5356",
+      "claim_id": "C58",
+      "claim": "Female-biased ORs have been generally proposed to be involved in the detection of plant-emitted oviposition cues.",
+      "claim_type": "EXPLICIT",
+      "source": "Female-biased ORs have been generally proposed to be involved in the detection of plant-emitted oviposition cues, as demonstrated in Bombyx mori (Anderson et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by cited study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:54:01.243125Z"
+    },
+    {
+      "id": "e20b50ee-eada-40da-856b-cda65af65552",
+      "content_id": "82ad07b9-2729-4bab-82ff-ed92a8ec5356",
+      "claim_id": "C59",
+      "claim": "Female-biased ORs could be tuned to male sex pheromones.",
+      "claim_type": "EXPLICIT",
+      "source": "However, another interesting hypothesis is that they could be tuned to male sex pheromones.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculative hypothesis proposed by authors.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:54:01.243125Z"
+    },
+    {
+      "id": "673535e1-4083-4e0d-89c9-351a29997675",
+      "content_id": "82ad07b9-2729-4bab-82ff-ed92a8ec5356",
+      "claim_id": "C60",
+      "claim": "Male pheromones in moths are involved in various mating behaviors such as female attraction, female acceptance, aggregation of males to form leks, mate assessment or inhibition of other males.",
+      "claim_type": "EXPLICIT",
+      "source": "In moths, little attention has been put on male pheromones, which are known to be involved in various mating behaviors such as female attraction, female acceptance, aggregation of males to form leks, mate assessment or inhibition of other males (reviewed in Conner and Iyengar, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by cited review.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:54:01.243125Z"
+    },
+    {
+      "id": "43db0679-5a92-41b4-af1f-d76cf0b10902",
+      "content_id": "82ad07b9-2729-4bab-82ff-ed92a8ec5356",
+      "claim_id": "C61",
+      "claim": "The use of male pheromone systems has been selected multiple times in distinct moth families.",
+      "claim_type": "EXPLICIT",
+      "source": "The use of male pheromone systems has been selected multiple times in distinct moth families, as reflected by the chemical diversity of male pheromone compounds and of the disseminating structures (Birch et al., 1990; Phelan, 1997; Conner and Iyengar, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by cited studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:54:01.243125Z"
+    },
+    {
+      "id": "47a88fac-73b6-4cf0-9e2b-3dd23e732584",
+      "content_id": "82ad07b9-2729-4bab-82ff-ed92a8ec5356",
+      "claim_id": "C62",
+      "claim": "The polyphyletic nature of male pheromones would result in a large diversity of female PR types.",
+      "claim_type": "EXPLICIT",
+      "source": "It is thus expected that this polyphyletic nature of male pheromones would result in a large diversity of female PR types.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from the polyphyletic nature of male pheromones.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:54:01.243125Z"
+    },
+    {
+      "id": "5391670f-7e5d-4872-b913-e663eeae9864",
+      "content_id": "82ad07b9-2729-4bab-82ff-ed92a8ec5356",
+      "claim_id": "C63",
+      "claim": "The most common male-emitted volatiles are plant-derived pheromones.",
+      "claim_type": "EXPLICIT",
+      "source": "Although the most common male-emitted volatiles are plant-derived pheromones (Conner and Iyengar, 2016), some male courtship pheromones are long-chained hydrocarbons related to type I female pheromone compounds (Hillier and Vickers, 2004) that could be detected by female-biased type I PRs such as those identified within the SlitOR5 lineage.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by cited review.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:54:01.243125Z"
+    },
+    {
+      "id": "e5b7e329-47e7-4fb8-9fce-33dfaa47f3b9",
+      "content_id": "82ad07b9-2729-4bab-82ff-ed92a8ec5356",
+      "claim_id": "C64",
+      "claim": "Some male courtship pheromones are long-chained hydrocarbons related to type I female pheromone compounds.",
+      "claim_type": "EXPLICIT",
+      "source": "Although the most common male-emitted volatiles are plant-derived pheromones (Conner and Iyengar, 2016), some male courtship pheromones are long-chained hydrocarbons related to type I female pheromone compounds (Hillier and Vickers, 2004) that could be detected by female-biased type I PRs such as those identified within the SlitOR5 lineage.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by cited study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:54:01.243125Z"
+    },
+    {
+      "id": "2a51b0d5-04af-41d9-9f8e-2f5acee84642",
+      "content_id": "82ad07b9-2729-4bab-82ff-ed92a8ec5356",
+      "claim_id": "C65",
+      "claim": "The ancestral protein from which the PR clade arose is thought to be an OR tuned to plant-emitted volatiles.",
+      "claim_type": "EXPLICIT",
+      "source": "The ancestral protein from which the so-called 'PR clade' would have arisen is thought to be an OR tuned to plant-emitted volatiles (Yuvaraj et al., 2017; Yuvaraj et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by cited studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:54:01.243125Z"
+    },
+    {
+      "id": "e710af6e-dfa8-4180-ae26-50903bbbd1b3",
+      "content_id": "82ad07b9-2729-4bab-82ff-ed92a8ec5356",
+      "claim_id": "C66",
+      "claim": "PRs for Type 0 group in distinct paralogous lineages unrelated to the PR clade.",
+      "claim_type": "EXPLICIT",
+      "source": "Together with the findings that PRs for Type 0 (Yuvaraj et al., 2017) and one PR for type II pheromones (Li et al., 2017) group in distinct paralogous lineages also unrelated to the PR clade, our data suggest that lepidopteran PRs have evolved four times in four paralogous lineages.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by cited studies and current data.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:54:01.243125Z"
+    },
+    {
+      "id": "00cfaa4a-8b61-4fb3-b493-938468dca6a8",
+      "content_id": "82ad07b9-2729-4bab-82ff-ed92a8ec5356",
+      "claim_id": "C67",
+      "claim": "One PR for type II pheromones groups in a distinct paralogous lineage unrelated to the PR clade.",
+      "claim_type": "EXPLICIT",
+      "source": "Together with the findings that PRs for Type 0 (Yuvaraj et al., 2017) and one PR for type II pheromones (Li et al., 2017) group in distinct paralogous lineages also unrelated to the PR clade, our data suggest that lepidopteran PRs have evolved four times in four paralogous lineages.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by cited study and current data.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:54:01.243125Z"
+    },
+    {
+      "id": "c1ffd9ba-7544-4e6e-818d-96a397ca4e7f",
+      "content_id": "82ad07b9-2729-4bab-82ff-ed92a8ec5356",
+      "claim_id": "C68",
+      "claim": "Lepidopteran PRs have evolved four times in four paralogous lineages.",
+      "claim_type": "EXPLICIT",
+      "source": "Together with the findings that PRs for Type 0 (Yuvaraj et al., 2017) and one PR for type II pheromones (Li et al., 2017) group in distinct paralogous lineages also unrelated to the PR clade, our data suggest that lepidopteran PRs have evolved four times in four paralogous lineages.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from phylogenetic analysis and cited studies.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:54:01.243125Z"
+    },
+    {
+      "id": "8f5abc0d-d7b8-499b-bb30-1cd9ddc06da1",
+      "content_id": "82ad07b9-2729-4bab-82ff-ed92a8ec5356",
+      "claim_id": "C69",
+      "claim": "No OR tuned to plant volatiles has been identified in lineages closely related to the SlitOR5 lineage.",
+      "claim_type": "EXPLICIT",
+      "source": "Yet, no OR tuned to plant volatiles has been identified in closely related lineages.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Observation from current phylogenetic analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:54:01.243125Z"
+    },
+    {
+      "id": "16897fdd-c523-464f-a065-811d72ef1e5a",
+      "content_id": "82ad07b9-2729-4bab-82ff-ed92a8ec5356",
+      "claim_id": "C70",
+      "claim": "Changes in sex pheromone communication are expected to play a major role in the rise of reproductive barriers and the emergence of new species.",
+      "claim_type": "EXPLICIT",
+      "source": "The use of pheromone signals for mate recognition is widespread in animals, and changes in sex pheromone communication are expected to play a major role in the rise of reproductive barriers and the emergence of new species (Smadja and Butlin, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by cited study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:54:01.243125Z"
+    },
+    {
+      "id": "a6f034ce-b32a-4cbd-96a3-eae3c0bddd67",
+      "content_id": "82ad07b9-2729-4bab-82ff-ed92a8ec5356",
+      "claim_id": "C71",
+      "claim": "Moths have been a preferred taxon for pheromone research since the first chemical identification of a pheromone in Bombyx mori.",
+      "claim_type": "EXPLICIT",
+      "source": "Since the first chemical identification of such a pheromone in Bombyx mori (Butenandt et al., 1959), moths (Insecta, Lepidoptera) have been a preferred taxon for pheromone research (Card\u00e9 and Haynes, 2004; Kaissling, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by cited studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:54:01.243125Z"
+    },
+    {
+      "id": "ca1fba4a-8476-40d6-9270-7ef8071092bb",
+      "content_id": "82ad07b9-2729-4bab-82ff-ed92a8ec5356",
+      "claim_id": "C72",
+      "claim": "The diversification of pheromone signals has likely played a prominent role in the extensive radiation observed in Lepidoptera.",
+      "claim_type": "EXPLICIT",
+      "source": "The diversification of pheromone signals has likely played a prominent role in the extensive radiation observed in Lepidoptera, which represents almost 10% of the total described species of living organisms (Stork, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference supported by cited study.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:54:01.243125Z"
+    },
+    {
+      "id": "8d1c5c8e-5924-42fe-8e6e-a064ed3594f2",
+      "content_id": "82ad07b9-2729-4bab-82ff-ed92a8ec5356",
+      "claim_id": "C73",
+      "claim": "Lepidoptera represents almost 10% of the total described species of living organisms.",
+      "claim_type": "EXPLICIT",
+      "source": "The diversification of pheromone signals has likely played a prominent role in the extensive radiation observed in Lepidoptera, which represents almost 10% of the total described species of living organisms (Stork, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by cited study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:54:01.243125Z"
+    },
+    {
+      "id": "095ed4f8-e340-4d1d-a258-9977a0612f61",
+      "content_id": "82ad07b9-2729-4bab-82ff-ed92a8ec5356",
+      "claim_id": "C74",
+      "claim": "Female moths generally release a species-specific blend of volatile molecules which attract males over a long distance.",
+      "claim_type": "EXPLICIT",
+      "source": "Female moths generally release a species-specific blend of volatile molecules, which attract males over a long distance (Card\u00e9 and Haynes, 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by cited study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:54:01.243125Z"
+    },
+    {
+      "id": "070fa1d6-79bf-443a-90fa-134e5b0743c7",
+      "content_id": "82ad07b9-2729-4bab-82ff-ed92a8ec5356",
+      "claim_id": "C75",
+      "claim": "Two ORs from Ctenopseustis obliquana and C. herana have been functionally studied by heterologous expression in cell cultures, but no ligand could be identified.",
+      "claim_type": "EXPLICIT",
+      "source": "Among these, two ORs from Ctenopseustis obliquana and C. herana (Tortricidae) have been functionally studied by heterologous expression in cell cultures, but no ligand could be identified (Steinwender et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by cited study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:54:01.243125Z"
+    },
+    {
+      "id": "b21909b0-8caf-4b9a-a371-af4bcd7ba9ab",
+      "content_id": "82ad07b9-2729-4bab-82ff-ed92a8ec5356",
+      "claim_id": "C76",
+      "claim": "In Dendrolimus species, there is no OR clustering in the PR clade.",
+      "claim_type": "EXPLICIT",
+      "source": "In the Lasiocampidae species Dendrolimus punctatus, these male-biased ORs have been referred to as 'Dendrolimus-specific odorant receptors', with the suspicion that they would represent good PR candidates since in Dendrolimus species, there is no OR clustering in the PR clade (Zhang et al., 2014; Zhang et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by cited studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:54:01.243125Z"
+    },
+    {
+      "id": "cdfa6473-bdea-458d-bf27-da2db2870aee",
+      "content_id": "82ad07b9-2729-4bab-82ff-ed92a8ec5356",
+      "claim_id": "C77",
+      "claim": "Male-biased ORs in Dendrolimus punctatus have been referred to as 'Dendrolimus-specific odorant receptors'.",
+      "claim_type": "EXPLICIT",
+      "source": "In the Lasiocampidae species Dendrolimus punctatus, these male-biased ORs have been referred to as 'Dendrolimus-specific odorant receptors', with the suspicion that they would represent good PR candidates since in Dendrolimus species, there is no OR clustering in the PR clade (Zhang et al., 2014; Zhang et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by cited studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:54:01.243125Z"
+    },
+    {
+      "id": "289fef08-eb02-44f5-95cc-e4b5787c2f04",
+      "content_id": "82ad07b9-2729-4bab-82ff-ed92a8ec5356",
+      "claim_id": "C78",
+      "claim": "BmorOR30 belongs to the SlitOR5 lineage but no ligand could be identified for it.",
+      "claim_type": "EXPLICIT",
+      "source": "However, most remain orphan ORs, including BmorOR30 that does belong to the SlitOR5 lineage but for which no ligand could be identified (Anderson et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by cited study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:54:01.243125Z"
+    },
+    {
+      "id": "58fa7d6c-2549-4faa-bdbd-0062d9f74dad",
+      "content_id": "82ad07b9-2729-4bab-82ff-ed92a8ec5356",
+      "claim_id": "C79",
+      "claim": "The phylogenetic analysis included entire OR repertoires from nine species, each belonging to a different lepidopteran superfamily.",
+      "claim_type": "EXPLICIT",
+      "source": "The dataset of lepidopteran amino acid OR sequences used to build the phylogeny shown in Figure 1 included entire OR repertoires from the following nine species, each belonging to a different lepidopteran superfamily: Bombyx mori (Bombycoidea; Tanaka et al., 2009), Dendrolimus punctatus (Lasiocampoidea; Zhang et al., 2017), Ectropis grisescens (Geometroidea; Li et al., 2017), Epiphyas postvittana (Tortricoidea; Corcoran et al., 2015), Eriocrania semipurpurella (Eriocranioidea; Yuvaraj et al., 2017), Heliconius melpomene (Papilionoidea; Heliconius Genome Consortium, 2012), Ostrinia furnacalis (Pyraloidea; Yang et al., 2015), Plutella xylostella (Yponomeutoidea; Engsontia et al., 2014) and Spodoptera littoralis (Noctuoidea; Walker et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of phylogenetic analysis methodology.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:54:01.243125Z"
+    },
+    {
+      "id": "10164036-871c-4bff-8864-ea8a37dba5b2",
+      "content_id": "82ad07b9-2729-4bab-82ff-ed92a8ec5356",
+      "claim_id": "C80",
+      "claim": "The phylogenetic analysis identified 20 paralogous OR lineages.",
+      "claim_type": "EXPLICIT",
+      "source": "Among the 20 paralogous lineages identified (each having evolved in principle from an ancestral OR present in the last common ancestor of Lepidoptera), SlitOR5 belonged to a lineage distantly related to the type I PR clade, as well as to the lineages containing type 0 and type II PRs (Figure 1B).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Result from phylogenetic analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:54:01.243125Z"
+    },
+    {
+      "id": "645ff150-a2fa-4b6a-bc66-7fc5efd0890f",
+      "content_id": "82ad07b9-2729-4bab-82ff-ed92a8ec5356",
+      "claim_id": "C81",
+      "claim": "Each paralogous lineage has evolved in principle from an ancestral OR present in the last common ancestor of Lepidoptera.",
+      "claim_type": "EXPLICIT",
+      "source": "Among the 20 paralogous lineages identified (each having evolved in principle from an ancestral OR present in the last common ancestor of Lepidoptera), SlitOR5 belonged to a lineage distantly related to the type I PR clade, as well as to the lineages containing type 0 and type II PRs (Figure 1B).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference about evolutionary origin of OR lineages.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:54:01.243125Z"
+    },
+    {
+      "id": "87c53bce-bf8e-4944-b281-c42f5a2ed51f",
+      "content_id": "82ad07b9-2729-4bab-82ff-ed92a8ec5356",
+      "claim_id": "C82",
+      "claim": "The large clade containing SlitOR5 and PR-containing lineages has been previously shown to contain ORs tuned to terpenes and aliphatic molecules.",
+      "claim_type": "EXPLICIT",
+      "source": "This clade has been previously shown to contain ORs tuned to terpenes and aliphatic molecules \u2013 including sex pheromones \u2013 and exhibits higher evolutionary rates compared to more ancient clades that contain many receptors for aromatics (de Fouchier et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by cited study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:54:01.243125Z"
+    },
+    {
+      "id": "3d91275c-2954-47c2-ba29-db14f66a3c7b",
+      "content_id": "82ad07b9-2729-4bab-82ff-ed92a8ec5356",
+      "claim_id": "C83",
+      "claim": "The large clade containing SlitOR5 and PR-containing lineages exhibits higher evolutionary rates compared to more ancient clades that contain many receptors for aromatics.",
+      "claim_type": "EXPLICIT",
+      "source": "This clade has been previously shown to contain ORs tuned to terpenes and aliphatic molecules \u2013 including sex pheromones \u2013 and exhibits higher evolutionary rates compared to more ancient clades that contain many receptors for aromatics (de Fouchier et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by cited study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:54:01.243125Z"
+    },
+    {
+      "id": "bdf67672-4281-4a98-9f8b-0508126e63b7",
+      "content_id": "82ad07b9-2729-4bab-82ff-ed92a8ec5356",
+      "claim_id": "C84",
+      "claim": "SlitOR5 was expressed in Drosophila melanogaster OSNs housed in at1 trichoid sensilla in place of the endogenous PR DmelOR67d.",
+      "claim_type": "EXPLICIT",
+      "source": "First, we expressed SlitOR5 in Drosophila melanogaster OSNs housed in at1 trichoid sensilla, in place of the endogenous PR DmelOR67d (Kurtovic et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of experimental methodology.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:54:01.243125Z"
+    },
+    {
+      "id": "fb0b24dd-4219-4050-a555-7a82b3b0a106",
+      "content_id": "82ad07b9-2729-4bab-82ff-ed92a8ec5356",
+      "claim_id": "C85",
+      "claim": "Male-biased ORs have been found in Lasiocampidae, Sphingidae, Noctuidae and Tortricidae within the SlitOR5 lineage.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, male-biased ORs have been found in Lasiocampidae, Sphingidae, Noctuidae and Tortricidae.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Observation from phylogenetic analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:54:01.243125Z"
+    },
+    {
+      "id": "4b3b4fbf-5278-4442-a841-00b5235783c3",
+      "content_id": "82ad07b9-2729-4bab-82ff-ed92a8ec5356",
+      "claim_id": "C86",
+      "claim": "At least one moth PR does not belong to the classical PR subfamily but to a distantly related OR lineage.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, using a combination of heterologous expression and in vivo genome editing methods, we bring functional evidence that at least one moth PR does not belong to this subfamily but to a distantly related OR lineage.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Main finding of the study based on functional data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:54:01.243125Z"
+    },
+    {
+      "id": "b27f3a1b-8402-4da5-be60-d8bdfeb74fc3",
+      "content_id": "82ad07b9-2729-4bab-82ff-ed92a8ec5356",
+      "claim_id": "C87",
+      "claim": "The functional data suggest two independent apparitions of PRs tuned to type I pheromones in Lepidoptera.",
+      "claim_type": "EXPLICIT",
+      "source": "Together with a comprehensive phylogenetic analysis of moth ORs, our functional data suggest two independent apparitions of PRs tuned to type I pheromones in Lepidoptera, opening up a new path for studying the evolution of moth pheromone communication.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from functional and phylogenetic data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:54:01.243125Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "1a36dbe3-e562-4d96-a658-1d7b05bc04c2",
+      "content_id": "82ad07b9-2729-4bab-82ff-ed92a8ec5356",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "SlitOr5 is highly expressed in male antennae of S. littoralis with more than 50-fold enrichment compared to females, and it does not belong to the classical PR clade. This expression pattern was confirmed by qPCR and previous RNAseq studies, establishing SlitOr5 as an atypical candidate pheromone receptor.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C50, C51, and C52 are well-supported by qPCR data (Figure 1A), RNAseq analysis, and phylogenetic positioning (Figure 1B). The male-biased expression and phylogenetic distinctness from the PR clade are consistently demonstrated across multiple independent studies.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:54:01.243125Z"
+    },
+    {
+      "id": "0f081306-993d-4922-8000-025f3789bebb",
+      "content_id": "82ad07b9-2729-4bab-82ff-ed92a8ec5356",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Phylogenetic analysis of lepidopteran ORs identified 20 paralogous lineages, with SlitOR5 belonging to a lineage distantly related to the type I PR clade. Four lineages contain pheromone receptors, including the classical PR clade (containing all type I PRs except SlitOR5 and two type II PRs), the SlitOR5 lineage, and lineages containing type 0 and type II PRs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2, C19-C24, and C80 are supported by comprehensive phylogenetic analysis (Figures 1B and 4) using entire OR repertoires from nine lepidopteran species. The phylogeny is well-supported by bootstrap analysis, and the identification of distinct paralogous lineages is methodologically sound.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:54:01.243125Z"
+    },
+    {
+      "id": "b28acf97-9ecd-44a5-818f-95c3f1abdfc8",
+      "content_id": "82ad07b9-2729-4bab-82ff-ed92a8ec5356",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "SlitOR5 specifically and sensitively responds to (Z,E)-9,11-14:OAc in two heterologous expression systems. In Drosophila OSNs, SlitOR5 elicited strong responses (65\u00b115 spikes/s) only to (Z,E)-9,11-14:OAc. In Xenopus oocytes, SlitOR5 showed high sensitivity with a detection threshold of 10\u207b\u2078 M and EC50 of 1.707\u00d710\u207b\u2077 M.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3-C6 and C84 are strongly supported by electrophysiological data from two independent heterologous systems (Figures 2A, 2B, 2D-E). The specificity is demonstrated by testing 26 pheromone compounds, and dose-response curves provide quantitative sensitivity measures. The use of two complementary systems strengthens the conclusions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:54:01.243125Z"
+    },
+    {
+      "id": "a59e48be-b095-47a9-9a9c-b4e4ebfdfb9b",
+      "content_id": "82ad07b9-2729-4bab-82ff-ed92a8ec5356",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Native S. littoralis LT1A OSNs respond to (Z,E)-9,11-14:OAc (55\u00b14 spikes/s), mirroring the response spectrum of heterologously expressed SlitOR5. LT1A OSNs are known from prior studies to detect this major pheromone component.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7, C8, and C53 are supported by single-sensillum recordings on native OSNs (Figure 2C) and prior literature. The concordance between heterologous expression and native OSN responses provides strong validation that SlitOR5 is the receptor expressed in LT1A sensilla.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:54:01.243125Z"
+    },
+    {
+      "id": "2b10135a-980f-4f4c-b2fa-4c93ad83ac0b",
+      "content_id": "82ad07b9-2729-4bab-82ff-ed92a8ec5356",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "CRISPR/Cas9 genome editing successfully generated a SlitOr5 mutant line with a 10 bp deletion in the first exon, introducing a premature stop codon after 247 codons. Seven G0 individuals carrying mutations were identified from 66 genotyped larvae after injecting over 1000 eggs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C9, C10, C54, and C55 are supported by genotyping and sequencing data (Figure 3A). The methodology is standard for CRISPR/Cas9 experiments, and the mutation efficiency (7/66 = 10.6%) is reasonable. The molecular characterization of the mutation is well-documented.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:54:01.243125Z"
+    },
+    {
+      "id": "9c9ea0dc-a2d7-4cca-9ef2-99336e288bba",
+      "content_id": "82ad07b9-2729-4bab-82ff-ed92a8ec5356",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Homozygous SlitOr5 mutants showed complete loss of EAG response to (Z,E)-9,11-14:OAc (0.02 mV vs 0.89-1.16 mV in wild-type and heterozygotes), while responses to control odorants (minor pheromone components and plant volatiles) remained intact.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C11 and C12 are strongly supported by EAG recordings (Figure 3B) with appropriate controls. The specificity of the phenotype (loss of response only to the major pheromone component) provides compelling evidence that SlitOR5 is specifically required for detecting (Z,E)-9,11-14:OAc.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:54:01.243125Z"
+    },
+    {
+      "id": "b6a075dc-6710-400f-a260-b715a897316e",
+      "content_id": "82ad07b9-2729-4bab-82ff-ed92a8ec5356",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "SlitOr5 mutant males showed severe behavioral deficits in pheromone-induced courtship. While >80% of wild-type males initiated movement toward the pheromone source within 8 minutes, only a minority of mutants did so even after 30 minutes, and all courtship steps were similarly affected.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C13-C15 are supported by behavioral assays (Figure 3C and supplement). The behavioral phenotype is dramatic and statistically significant (log-rank test, p<0.001). The comprehensive assessment of multiple courtship steps strengthens the conclusion that SlitOR5 is essential for pheromone-mediated behavior.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:54:01.243125Z"
+    },
+    {
+      "id": "53ac8f99-0043-4caa-ba6f-6e036bf81ce3",
+      "content_id": "82ad07b9-2729-4bab-82ff-ed92a8ec5356",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "SlitOr5 mutant males showed severely impaired mating ability, with only 1 out of 13 mutants (7.7%) successfully mating with wild-type females compared to ~75% of wild-type males.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C16 and C17 are supported by mating experiments (Figure 3D) with statistically significant differences (Fisher's exact test, p<0.05). However, the sample size for mutants (n=13) is relatively small. The result is consistent with the behavioral deficits observed, but additional replicates would strengthen confidence.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:54:01.243125Z"
+    },
+    {
+      "id": "71945727-55dc-4f65-8e6e-894cd72a0008",
+      "content_id": "82ad07b9-2729-4bab-82ff-ed92a8ec5356",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "SlitOR5 is the receptor responsible for detecting the major component of the S. littoralis female pheromone blend, as demonstrated by combined heterologous expression and loss-of-function studies.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C18 is a synthesis conclusion supported by the convergence of multiple lines of evidence: heterologous expression showing specific ligand binding (C3-C6), native OSN responses (C7-C8), and loss-of-function phenotypes (C11-C17). The combination of gain-of-function and loss-of-function approaches provides strong support.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:54:01.243125Z"
+    },
+    {
+      "id": "844ae64b-0800-4edd-82a8-8835fa482e1f",
+      "content_id": "82ad07b9-2729-4bab-82ff-ed92a8ec5356",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The SlitOR5 lineage contains numerous sex-biased ORs from multiple lepidopteran families (Lasiocampidae, Sphingidae, Noctuidae, Tortricidae), with an equal proportion of male-biased (15/28) and female-biased (13/28) receptors. This contrasts with the classical PR clade where sex-biased ORs are predominantly male-biased (59/63 male-biased, 4/63 female-biased).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C25-C28, C56-C57, and C85 are supported by phylogenetic analysis (Figure 4) incorporating expression data from multiple species. The quantitative comparison between lineages is clear, though the functional significance of female-biased ORs remains speculative (addressed in C59).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:54:01.243125Z"
+    },
+    {
+      "id": "88536ff1-e75a-421e-8d1b-cdae093debd7",
+      "content_id": "82ad07b9-2729-4bab-82ff-ed92a8ec5356",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The PR clade and SlitOR5 lineage are more closely related to clades containing plant volatile receptors than to each other, suggesting that type I pheromone receptors evolved independently at least twice in Lepidoptera. The SlitOR5 lineage may constitute a novel lineage of candidate pheromone receptors.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C29-C31, C86, and C87 are supported by phylogenetic analysis with strong bootstrap support for deep nodes. The inference of independent evolution is logical given the phylogenetic topology. However, C31 appropriately uses cautious language ('may constitute') as functional characterization of other receptors in this lineage is limited.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:54:01.243125Z"
+    },
+    {
+      "id": "fb463913-ee62-4600-907d-1a78f6bb5c25",
+      "content_id": "82ad07b9-2729-4bab-82ff-ed92a8ec5356",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Lepidopteran pheromone receptors have evolved four times in four distinct paralogous lineages: the classical PR clade (type I), the SlitOR5 lineage (type I), a lineage containing type 0 PRs, and a lineage containing type II PRs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C66-C68 integrate current phylogenetic data with prior functional studies. The conclusion is well-supported by the phylogenetic topology and functional characterization of receptors in each lineage. This represents a major revision of understanding about PR evolution in Lepidoptera.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:54:01.243125Z"
+    },
+    {
+      "id": "0c96fc6d-4ad8-497d-a175-35ce79b2ddbd",
+      "content_id": "82ad07b9-2729-4bab-82ff-ed92a8ec5356",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Background context on moth pheromone biology: Four types of sex pheromones exist in moths (types 0, I, II, III), with type I being most common (75% of known compounds). Type I PRs were previously thought to form a monophyletic 'PR clade' with male-biased expression. Moths are important models for pheromone research, and pheromone diversification has contributed to lepidopteran radiation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C32-C49 and C70-C74 provide established background knowledge supported by appropriate citations. These claims accurately represent the state of the field prior to the current study and are not contested by the new findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:54:01.243125Z"
+    },
+    {
+      "id": "b45b55dc-6aab-4dba-a6c3-d1cd1a0a7191",
+      "content_id": "82ad07b9-2729-4bab-82ff-ed92a8ec5356",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Female-biased ORs in the SlitOR5 lineage could potentially detect male sex pheromones, which are chemically diverse and involved in various mating behaviors. While female-biased ORs are generally proposed to detect plant oviposition cues, some male courtship pheromones are long-chain hydrocarbons related to type I compounds.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C58-C64 present an interesting hypothesis about female-biased ORs, but this remains speculative (C59 explicitly notes this). While the hypothesis is plausible and supported by cited literature on male pheromones, no functional data are provided to test whether any female-biased ORs in the SlitOR5 lineage actually detect male pheromones.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:54:01.243125Z"
+    },
+    {
+      "id": "a7052e6e-dce3-44cd-a5c5-8f0319ab81c8",
+      "content_id": "82ad07b9-2729-4bab-82ff-ed92a8ec5356",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The ancestral protein from which the classical PR clade arose is thought to be an OR tuned to plant volatiles, but no OR tuned to plant volatiles has been identified in lineages closely related to the SlitOR5 lineage.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C65 and C69 are supported by cited studies and current phylogenetic analysis. The absence of characterized plant volatile receptors near the SlitOR5 lineage (C69) is an observation that raises questions about the evolutionary origin of this lineage, appropriately noted as requiring further investigation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:54:01.243125Z"
+    },
+    {
+      "id": "d7791eac-496c-40ff-a05b-4872ea961379",
+      "content_id": "82ad07b9-2729-4bab-82ff-ed92a8ec5356",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Several male-biased ORs within the SlitOR5 lineage from other species (Ctenopseustis spp., Dendrolimus punctatus, Bombyx mori) have been identified but remain orphan receptors without identified ligands.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C75-C78 accurately cite prior studies that identified male-biased ORs in the SlitOR5 lineage but failed to identify ligands. This contextualizes the current study's success in characterizing SlitOR5 and suggests these orphan receptors as candidates for future functional studies.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:54:01.243125Z"
+    },
+    {
+      "id": "3cff99af-f86f-4e3c-8121-b7092f02e47c",
+      "content_id": "82ad07b9-2729-4bab-82ff-ed92a8ec5356",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "The phylogenetic analysis methodology included entire OR repertoires from nine lepidopteran species representing different superfamilies. The 20 paralogous lineages are inferred to have evolved from ancestral ORs in the last common ancestor of Lepidoptera. The large clade containing SlitOR5 and PR lineages contains ORs tuned to terpenes and aliphatic molecules and exhibits higher evolutionary rates than clades containing aromatic receptors.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C79, C81-C83 describe the phylogenetic methodology and prior characterization of the large clade. The methodology is appropriate and well-documented. C81 appropriately uses cautious language ('in principle') about evolutionary origins. C82-C83 are supported by cited prior work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:54:01.243125Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "15c9980b-9302-4a18-947a-7d463054b221",
+      "result_id": "1a36dbe3-e562-4d96-a658-1d7b05bc04c2"
+    },
+    {
+      "claim_id": "984c2db3-67d3-4f7b-abef-2fe5717bedbf",
+      "result_id": "1a36dbe3-e562-4d96-a658-1d7b05bc04c2"
+    },
+    {
+      "claim_id": "964014a7-11dc-47b5-956e-7e2613ed042e",
+      "result_id": "1a36dbe3-e562-4d96-a658-1d7b05bc04c2"
+    },
+    {
+      "claim_id": "1685c9de-7f54-4b8f-be99-169ec29b7f76",
+      "result_id": "1a36dbe3-e562-4d96-a658-1d7b05bc04c2"
+    },
+    {
+      "claim_id": "09796fad-bdae-4dd5-8402-3175c882d279",
+      "result_id": "0f081306-993d-4922-8000-025f3789bebb"
+    },
+    {
+      "claim_id": "f37ca3c8-04a9-43a8-8168-d65b38cefefe",
+      "result_id": "0f081306-993d-4922-8000-025f3789bebb"
+    },
+    {
+      "claim_id": "9d9cf344-e428-449a-964d-05979c6507d5",
+      "result_id": "0f081306-993d-4922-8000-025f3789bebb"
+    },
+    {
+      "claim_id": "b6aae196-d4b8-4e11-b14a-d9bfbc722203",
+      "result_id": "0f081306-993d-4922-8000-025f3789bebb"
+    },
+    {
+      "claim_id": "cf89f29a-bbf7-439b-8f3a-52da98d8408d",
+      "result_id": "0f081306-993d-4922-8000-025f3789bebb"
+    },
+    {
+      "claim_id": "c9633d51-187e-48ac-9c75-ce6e5cfb1471",
+      "result_id": "0f081306-993d-4922-8000-025f3789bebb"
+    },
+    {
+      "claim_id": "847f73a0-7061-4aa8-a547-ce3da1c8fb20",
+      "result_id": "0f081306-993d-4922-8000-025f3789bebb"
+    },
+    {
+      "claim_id": "10164036-871c-4bff-8864-ea8a37dba5b2",
+      "result_id": "0f081306-993d-4922-8000-025f3789bebb"
+    },
+    {
+      "claim_id": "051ff625-36c4-48cd-9538-cddd83f6faa7",
+      "result_id": "b28acf97-9ecd-44a5-818f-95c3f1abdfc8"
+    },
+    {
+      "claim_id": "59e2bf67-3d0b-4afd-84ff-dbde4cd34548",
+      "result_id": "b28acf97-9ecd-44a5-818f-95c3f1abdfc8"
+    },
+    {
+      "claim_id": "d4b35a2d-04c2-44cc-b0d7-9ada1f7924e2",
+      "result_id": "b28acf97-9ecd-44a5-818f-95c3f1abdfc8"
+    },
+    {
+      "claim_id": "3cb54613-d4cd-4001-a40d-69b80bc72a0b",
+      "result_id": "b28acf97-9ecd-44a5-818f-95c3f1abdfc8"
+    },
+    {
+      "claim_id": "bdf67672-4281-4a98-9f8b-0508126e63b7",
+      "result_id": "b28acf97-9ecd-44a5-818f-95c3f1abdfc8"
+    },
+    {
+      "claim_id": "7f41f95c-9236-4dae-ab7c-47fb7e7a20e5",
+      "result_id": "a59e48be-b095-47a9-9a9c-b4e4ebfdfb9b"
+    },
+    {
+      "claim_id": "da5cce30-7fa2-41d1-8c27-158ef94ff4f5",
+      "result_id": "a59e48be-b095-47a9-9a9c-b4e4ebfdfb9b"
+    },
+    {
+      "claim_id": "e717ace7-a049-4255-b536-f2ebc7f86525",
+      "result_id": "a59e48be-b095-47a9-9a9c-b4e4ebfdfb9b"
+    },
+    {
+      "claim_id": "9d6f9a91-97c4-43b3-a699-e1e55faf9024",
+      "result_id": "2b10135a-980f-4f4c-b2fa-4c93ad83ac0b"
+    },
+    {
+      "claim_id": "a349c5fe-a5d5-4163-a197-8bffe34bbc74",
+      "result_id": "2b10135a-980f-4f4c-b2fa-4c93ad83ac0b"
+    },
+    {
+      "claim_id": "ab8f2721-90e0-4d11-b8ea-2dd2ca05f847",
+      "result_id": "2b10135a-980f-4f4c-b2fa-4c93ad83ac0b"
+    },
+    {
+      "claim_id": "4e7f228c-7fd5-4331-bff2-8adc1544f486",
+      "result_id": "2b10135a-980f-4f4c-b2fa-4c93ad83ac0b"
+    },
+    {
+      "claim_id": "535a544e-144a-49ee-b6f5-1a9125a8b4d0",
+      "result_id": "9c9ea0dc-a2d7-4cca-9ef2-99336e288bba"
+    },
+    {
+      "claim_id": "3ceaf783-679a-484b-b5fd-6a861a77e6b9",
+      "result_id": "9c9ea0dc-a2d7-4cca-9ef2-99336e288bba"
+    },
+    {
+      "claim_id": "5fe83c61-6f61-4e8c-9e80-55242e0ab6d4",
+      "result_id": "b6a075dc-6710-400f-a260-b715a897316e"
+    },
+    {
+      "claim_id": "08124b86-4140-44b8-93ea-027cc9a38118",
+      "result_id": "b6a075dc-6710-400f-a260-b715a897316e"
+    },
+    {
+      "claim_id": "844f8a73-911f-48cc-b5ae-4718f2ac59c4",
+      "result_id": "b6a075dc-6710-400f-a260-b715a897316e"
+    },
+    {
+      "claim_id": "84f725c1-8c9f-4151-b7f3-a44843e9b06d",
+      "result_id": "53ac8f99-0043-4caa-ba6f-6e036bf81ce3"
+    },
+    {
+      "claim_id": "abbd0f21-5910-4954-9656-0228dbc2c124",
+      "result_id": "53ac8f99-0043-4caa-ba6f-6e036bf81ce3"
+    },
+    {
+      "claim_id": "65c36493-92fc-47de-8dce-4308aac3b825",
+      "result_id": "71945727-55dc-4f65-8e6e-894cd72a0008"
+    },
+    {
+      "claim_id": "2b9081e6-60b2-4c33-9566-deae28d3c18d",
+      "result_id": "844ae64b-0800-4edd-82a8-8835fa482e1f"
+    },
+    {
+      "claim_id": "35edbb1d-b4c2-462f-86db-3fa224af85c2",
+      "result_id": "844ae64b-0800-4edd-82a8-8835fa482e1f"
+    },
+    {
+      "claim_id": "d6e34e42-8b64-4e5f-86b3-f173c52dde3e",
+      "result_id": "844ae64b-0800-4edd-82a8-8835fa482e1f"
+    },
+    {
+      "claim_id": "64b1568c-56f3-47bc-affe-b759448993ac",
+      "result_id": "844ae64b-0800-4edd-82a8-8835fa482e1f"
+    },
+    {
+      "claim_id": "7ec05920-c02a-45a6-8475-52b1defea0f1",
+      "result_id": "844ae64b-0800-4edd-82a8-8835fa482e1f"
+    },
+    {
+      "claim_id": "d4a32b6b-f719-46fe-85cc-ba4e8b9f9f37",
+      "result_id": "844ae64b-0800-4edd-82a8-8835fa482e1f"
+    },
+    {
+      "claim_id": "fb0b24dd-4219-4050-a555-7a82b3b0a106",
+      "result_id": "844ae64b-0800-4edd-82a8-8835fa482e1f"
+    },
+    {
+      "claim_id": "57eb9af6-e7c8-4368-b1d2-179e7a02ed77",
+      "result_id": "88536ff1-e75a-421e-8d1b-cdae093debd7"
+    },
+    {
+      "claim_id": "82559918-ff71-4977-a2b6-dc64705e92a5",
+      "result_id": "88536ff1-e75a-421e-8d1b-cdae093debd7"
+    },
+    {
+      "claim_id": "d5d14ef0-f2de-432a-860f-e989da0112ae",
+      "result_id": "88536ff1-e75a-421e-8d1b-cdae093debd7"
+    },
+    {
+      "claim_id": "4b3b4fbf-5278-4442-a841-00b5235783c3",
+      "result_id": "88536ff1-e75a-421e-8d1b-cdae093debd7"
+    },
+    {
+      "claim_id": "b27f3a1b-8402-4da5-be60-d8bdfeb74fc3",
+      "result_id": "88536ff1-e75a-421e-8d1b-cdae093debd7"
+    },
+    {
+      "claim_id": "e710af6e-dfa8-4180-ae26-50903bbbd1b3",
+      "result_id": "fb463913-ee62-4600-907d-1a78f6bb5c25"
+    },
+    {
+      "claim_id": "00cfaa4a-8b61-4fb3-b493-938468dca6a8",
+      "result_id": "fb463913-ee62-4600-907d-1a78f6bb5c25"
+    },
+    {
+      "claim_id": "c1ffd9ba-7544-4e6e-818d-96a397ca4e7f",
+      "result_id": "fb463913-ee62-4600-907d-1a78f6bb5c25"
+    },
+    {
+      "claim_id": "a2da0ad5-33cb-4ad3-89e9-51e577c37e99",
+      "result_id": "0c96fc6d-4ad8-497d-a175-35ce79b2ddbd"
+    },
+    {
+      "claim_id": "d51c376b-4c6f-4070-85b4-e3ec9e27e531",
+      "result_id": "0c96fc6d-4ad8-497d-a175-35ce79b2ddbd"
+    },
+    {
+      "claim_id": "f98684ea-f348-4637-9989-266cb3d91baa",
+      "result_id": "0c96fc6d-4ad8-497d-a175-35ce79b2ddbd"
+    },
+    {
+      "claim_id": "77e9db0e-e3bb-48f3-a805-d4bbb5c4d742",
+      "result_id": "0c96fc6d-4ad8-497d-a175-35ce79b2ddbd"
+    },
+    {
+      "claim_id": "d5c5f643-21f6-476e-ba12-49bfd6671931",
+      "result_id": "0c96fc6d-4ad8-497d-a175-35ce79b2ddbd"
+    },
+    {
+      "claim_id": "3eb856d8-7ddf-4622-9371-413710437f13",
+      "result_id": "0c96fc6d-4ad8-497d-a175-35ce79b2ddbd"
+    },
+    {
+      "claim_id": "61545632-de53-4cd8-b693-8d7f45ae51b3",
+      "result_id": "0c96fc6d-4ad8-497d-a175-35ce79b2ddbd"
+    },
+    {
+      "claim_id": "505aac4d-67ad-4fc5-84b5-7190ba885888",
+      "result_id": "0c96fc6d-4ad8-497d-a175-35ce79b2ddbd"
+    },
+    {
+      "claim_id": "5efcd556-ef56-4977-ac73-e0b57ad84233",
+      "result_id": "0c96fc6d-4ad8-497d-a175-35ce79b2ddbd"
+    },
+    {
+      "claim_id": "91ede13e-cfdc-45ee-b34b-882da5590d6b",
+      "result_id": "0c96fc6d-4ad8-497d-a175-35ce79b2ddbd"
+    },
+    {
+      "claim_id": "ba0de388-6fa7-4747-9be6-5be7cb86411b",
+      "result_id": "0c96fc6d-4ad8-497d-a175-35ce79b2ddbd"
+    },
+    {
+      "claim_id": "36d0ac05-3bc0-4cce-a5fd-97f7a1e7e01e",
+      "result_id": "0c96fc6d-4ad8-497d-a175-35ce79b2ddbd"
+    },
+    {
+      "claim_id": "b4aebf70-64ce-41b8-8764-d6e38ced3dfe",
+      "result_id": "0c96fc6d-4ad8-497d-a175-35ce79b2ddbd"
+    },
+    {
+      "claim_id": "8bb21ac8-8ff5-41e0-adfa-e18eff35ea61",
+      "result_id": "0c96fc6d-4ad8-497d-a175-35ce79b2ddbd"
+    },
+    {
+      "claim_id": "76df98c9-8104-4d7b-b4d1-f28bc4b6ccd8",
+      "result_id": "0c96fc6d-4ad8-497d-a175-35ce79b2ddbd"
+    },
+    {
+      "claim_id": "dd6e5cbf-7838-43cc-b00a-ec6a3c10e08c",
+      "result_id": "0c96fc6d-4ad8-497d-a175-35ce79b2ddbd"
+    },
+    {
+      "claim_id": "c82ff440-5130-451c-b134-8b8a78f31b61",
+      "result_id": "0c96fc6d-4ad8-497d-a175-35ce79b2ddbd"
+    },
+    {
+      "claim_id": "75e7f29c-71f6-45b1-978f-e3240dfdb3c6",
+      "result_id": "0c96fc6d-4ad8-497d-a175-35ce79b2ddbd"
+    },
+    {
+      "claim_id": "16897fdd-c523-464f-a065-811d72ef1e5a",
+      "result_id": "0c96fc6d-4ad8-497d-a175-35ce79b2ddbd"
+    },
+    {
+      "claim_id": "a6f034ce-b32a-4cbd-96a3-eae3c0bddd67",
+      "result_id": "0c96fc6d-4ad8-497d-a175-35ce79b2ddbd"
+    },
+    {
+      "claim_id": "ca1fba4a-8476-40d6-9270-7ef8071092bb",
+      "result_id": "0c96fc6d-4ad8-497d-a175-35ce79b2ddbd"
+    },
+    {
+      "claim_id": "8d1c5c8e-5924-42fe-8e6e-a064ed3594f2",
+      "result_id": "0c96fc6d-4ad8-497d-a175-35ce79b2ddbd"
+    },
+    {
+      "claim_id": "095ed4f8-e340-4d1d-a258-9977a0612f61",
+      "result_id": "0c96fc6d-4ad8-497d-a175-35ce79b2ddbd"
+    },
+    {
+      "claim_id": "b01bd639-0a33-4bdc-97c5-06aa818f480f",
+      "result_id": "b45b55dc-6aab-4dba-a6c3-d1cd1a0a7191"
+    },
+    {
+      "claim_id": "e20b50ee-eada-40da-856b-cda65af65552",
+      "result_id": "b45b55dc-6aab-4dba-a6c3-d1cd1a0a7191"
+    },
+    {
+      "claim_id": "673535e1-4083-4e0d-89c9-351a29997675",
+      "result_id": "b45b55dc-6aab-4dba-a6c3-d1cd1a0a7191"
+    },
+    {
+      "claim_id": "43db0679-5a92-41b4-af1f-d76cf0b10902",
+      "result_id": "b45b55dc-6aab-4dba-a6c3-d1cd1a0a7191"
+    },
+    {
+      "claim_id": "47a88fac-73b6-4cf0-9e2b-3dd23e732584",
+      "result_id": "b45b55dc-6aab-4dba-a6c3-d1cd1a0a7191"
+    },
+    {
+      "claim_id": "5391670f-7e5d-4872-b913-e663eeae9864",
+      "result_id": "b45b55dc-6aab-4dba-a6c3-d1cd1a0a7191"
+    },
+    {
+      "claim_id": "e5b7e329-47e7-4fb8-9fce-33dfaa47f3b9",
+      "result_id": "b45b55dc-6aab-4dba-a6c3-d1cd1a0a7191"
+    },
+    {
+      "claim_id": "2a51b0d5-04af-41d9-9f8e-2f5acee84642",
+      "result_id": "a7052e6e-dce3-44cd-a5c5-8f0319ab81c8"
+    },
+    {
+      "claim_id": "8f5abc0d-d7b8-499b-bb30-1cd9ddc06da1",
+      "result_id": "a7052e6e-dce3-44cd-a5c5-8f0319ab81c8"
+    },
+    {
+      "claim_id": "070fa1d6-79bf-443a-90fa-134e5b0743c7",
+      "result_id": "d7791eac-496c-40ff-a05b-4872ea961379"
+    },
+    {
+      "claim_id": "b21909b0-8caf-4b9a-a371-af4bcd7ba9ab",
+      "result_id": "d7791eac-496c-40ff-a05b-4872ea961379"
+    },
+    {
+      "claim_id": "cdfa6473-bdea-458d-bf27-da2db2870aee",
+      "result_id": "d7791eac-496c-40ff-a05b-4872ea961379"
+    },
+    {
+      "claim_id": "289fef08-eb02-44f5-95cc-e4b5787c2f04",
+      "result_id": "d7791eac-496c-40ff-a05b-4872ea961379"
+    },
+    {
+      "claim_id": "58fa7d6c-2549-4faa-bdbd-0062d9f74dad",
+      "result_id": "3cff99af-f86f-4e3c-8121-b7092f02e47c"
+    },
+    {
+      "claim_id": "645ff150-a2fa-4b6a-bc66-7fc5efd0890f",
+      "result_id": "3cff99af-f86f-4e3c-8121-b7092f02e47c"
+    },
+    {
+      "claim_id": "87c53bce-bf8e-4944-b281-c42f5a2ed51f",
+      "result_id": "3cff99af-f86f-4e3c-8121-b7092f02e47c"
+    },
+    {
+      "claim_id": "3d91275c-2954-47c2-ba29-db14f66a3c7b",
+      "result_id": "3cff99af-f86f-4e3c-8121-b7092f02e47c"
+    }
+  ],
+  "comparisons": []
+}

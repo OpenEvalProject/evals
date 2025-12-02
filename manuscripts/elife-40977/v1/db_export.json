@@ -1,0 +1,1156 @@
+{
+  "submission": {
+    "id": "0075791a-0d1a-4b40-8c05-149503fa4fe5",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T07:42:02.648873Z",
+    "updated_at": "2025-12-02T07:42:02.648873Z"
+  },
+  "content": [
+    {
+      "id": "fce38c06-509b-4b50-9381-757b1f49a69a",
+      "submission_id": "0075791a-0d1a-4b40-8c05-149503fa4fe5",
+      "content_type": "manuscript",
+      "content_text": "# Inference and control of the nosocomial transmission of methicillin-resistant Staphylococcus aureus\n\n## Authors\n\n- Sen Pei<sup>1</sup> ([ORCID: 0000-0002-7072-2995](https://orcid.org/0000-0002-7072-2995)) \u2020\n- Flaviano Morone<sup>2</sup>\n- Fredrik Liljeros<sup>3</sup>\n- Hern\u00e1n Makse<sup>2</sup>\n- Jeffrey L Shaman<sup>1</sup> ([ORCID: 0000-0002-7216-7809](https://orcid.org/0000-0002-7216-7809)) \u2020\n\n### Affiliations\n\n1. Department of Environmental Health Sciences, Mailman School of Public Health Columbia University New York United States\n2. Levich Institute and Physics Department City College of New York New York United States\n3. Department of Sociology Stockholm University Stockholm Sweden\n\n\u2020 Corresponding author\n\n## Abstract\n\nMethicillin-resistant Staphylococcus aureus (MRSA) is a continued threat to human health in both community and healthcare settings. In hospitals, control efforts would benefit from accurate estimation of asymptomatic colonization and infection importation rates from the community. However, developing such estimates remains challenging due to limited observation of colonization and complicated transmission dynamics within hospitals and the community. Here, we develop an inference framework that can estimate these key quantities by combining statistical filtering techniques, an agent-based model, and real-world patient-to-patient contact networks, and use this framework to infer nosocomial transmission and infection importation over an outbreak spanning 6 years in 66 Swedish hospitals. In particular, we identify a small number of patients with disproportionately high risk of colonization. In retrospective control experiments, interventions targeted to these individuals yield a substantial improvement over heuristic strategies informed by number of contacts, length of stay and contact tracing.\n\n## Introduction\n\nAntimicrobial resistance is a global concern in healthcare systems due to its substantial morbidity and mortality burden and the lack of effective treatment options (CDC, 2013a; Magill et al., 2014; WHO, 2018). Among antibiotic-resistant agents, Methicillin-resistant Staphylococcus aureus (MRSA) emerges as one of the most widespread and virulent pathogens (Grundmann et al., 2006; Klevens et al., 2007; Klein et al., 2007; Jarvis et al., 2012) and has been highlighted as a leading cause of healthcare-associated infections (HAIs) by the U.S. Centers for Disease Control and Prevention (CDC) (CDC, 2013b). Initially confined to healthcare facilities, MRSA has since become increasingly prevalent in the broader population in both the United States and Europe (Chambers, 2001; Naimi et al., 2003; Zetola et al., 2005; Hetem et al., 2012; Kouyos et al., 2013; Tosas Auguet et al., 2016). This entwined transmission among hospitals and the community has obscured understanding of the dynamics and persistence of MRSA. Further, MRSA can colonize patients without symptoms for years, during which it can be transmitted stealthily (Cooper et al., 2004a). These epidemiological features have greatly complicated its control and elimination.\n\nThe prevalence of MRSA has large variations across different countries. In Europe, a general north-south gradient has been observed, with rare incidence in Scandinavian hospitals and much higher occurrence in Mediterranean hospitals (Stefani and Varaldo, 2003; Tiemersma et al., 2004; Johnson, 2011). In particular, Sweden remains one of the few countries with a low prevalence of MRSA infection (Stenhem et al., 2006). A substantial proportion of MRSA cases in Sweden has been imported from abroad due to traveling and healthcare contacts in foreign countries (Stenhem et al., 2010; Larsson et al., 2014). As a consequence, analyzing MRSA outbreaks in Sweden offers a good opportunity to study the hybrid dynamics of MRSA in hospital settings where both nosocomial transmission and importation occurs.\n\nTo facilitate better control of MRSA in hospital settings, several critical questions need to be answered. First, what are the relative roles of nosocomial transmission and infection importation from the community? Public health officials require an accurate assessment of the current force of infection within and into hospitals in order to deploy appropriate containment measures; however, with the increasing prevalence of MRSA in the community, disentangling HAIs from infections imported from the community has become difficult. Second, how many patients are colonized, and who and where are these high-risk individuals? Effective control would benefit from accurate determination of asymptomatic colonization rates in the general population; failure to estimate and account for colonization may result in long-term control issues (Cooper et al., 2004a). Although colonized patients can be identified using sequencing methods (Harris et al., 2010; Long et al., 2014), the expense of these assays limits their application, particularly in underdeveloped countries where MRSA has become endemic. In light of this situation, mathematical modeling offers an alternative approach for locating individuals with a high probability of colonization and guiding the targeted deployment of laboratory testing (Grundmann and Hellriegel, 2006; van Kleef et al., 2013; Opatowski et al., 2011). However, this inference problem is again complicated by the unobserved stealth transmission dynamics that occurs in the highly complex time-varying contact networks of the real world (Donker et al., 2010; Vanhems et al., 2013; Jarynowski and Liljeros, 2015; Obadia et al., 2015a; Obadia et al., 2015b; Rocha et al., 2016; Nekkab et al., 2017; Duval et al., 2018).\n\nTo address these issues, here we develop an agent-based network model-Bayesian inference system for estimating unobserved colonization and importation rates from simple incidence records. We use this system to infer the transmission dynamics of the most commonly diagnosed MRSA strain, UK EMRSA-15 (Grundmann et al., 2010; Das et al., 2013), from multiple Swedish hospitals (Materials and methods). Key features estimated include the number of infections acquired in hospital and imported from outside, as well as the locations of individuals with a high colonization probability. Such information is crucial for designing cost-effective control measures (Cooper et al., 2003; Cooper et al., 2004b; Hubben et al., 2011; Worby et al., 2013). In retrospective control experiments, decolonization of potentially colonized patients outperforms heuristic intervention strategies based on number of contacts, length of stay and contact tracing. These findings indicate that the model-inference system can inform effective, actionable and cost-effective measures for reducing nosocomial transmission.\n\n## Results\n\n### Spatiotemporal features of MRSA infection\n\nObserved incidence over a 6-year outbreak period is reported in Figure 1A. The relative date of diagnosis and associated ward of each observed infection were recorded; however, information on type of ward was not provided. Previous studies indicate that heterogeneity in infection risk exists across different types of ward (Bootsma et al., 2006). For instance, patients in intensive care units (ICUs) typically suffer a higher risk of infection than those in non-ICU settings due to higher patient-healthcare-worker contact rates, high levels of antibiotic use, and high patient vulnerability to infection. In this study dataset, however, we observed no clear clustering of infections in certain wards. In Figure 1B, we use a raster plot to display the distribution of infections in 114 infected wards over time. Infections are distributed without noticeable clustering, presumably due to effective control measures taken in the study hospitals that maintain a low infection rate even in ICU settings (Tiemersma et al., 2004).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/40977/elife-40977-fig1-v1.jpg)\n\n**Figure 1.:** (A) Incidence of UK EMRSA-15 every 4 weeks (red crosses) and cumulative cases (blue curve). (B) The raster plot for infections in 114 infected wards. Color indicates number of observed infections during 4-week periods. (C) Distributions of total patient numbers per ward (persons, upper panel), patient average length of stay (days, middle panel) and ward capacity (persons, lower panel) for infected and uninfected wards. (D) Overlaid degree distributions of 300 weekly aggregated contact networks. The solid blue line is the fitting to a Weibull distribution. Inset shows an illustration of the time-varying contact network. (E) A schematic of the model framework. The blue box defines the transmission process within hospitals, and imported infection and colonization from outside the study hospitals are quantified by two parameters $I_{0}$ and $C_{0}$.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/40977/elife-40977-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) Number of wards with a given number of total patient-days in the hospitalization records. Inset shows the scatter plot of the number of positive cases and patient-days per ward. (B) Average infection number as a function of patient-days per ward.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/40977/elife-40977-fig1-figsupp2-v1.jpg)\n\n**Figure 1\u2014figure supplement 2.:** (A) Daily patient overlap ratio Q during 300 days. Inset provides a zoom-in plot of the first 30 days. (B) The number of total patients and new patients (with respect to patients present the previous day) in hospitals each day. (C) Distribution of hospitalization time. The upper inset shows the distribution of contact time between all pairs of patients. The lower inset presents the distribution of readmission time (the time between previous discharge and current admission) for all patients. (D) Analysis of connected components in the contact network. The upper panel shows the total number of patients in the contact network and number of patients in the giant connected component. The lower panel displays the number of connected components in the contact network, and the inset shows the distribution of size of connected components.\n\nDistributions of some key statistics of the patient flow in infected wards differ from those in uninfected ones (Figure 1C). Infected wards tend to have a higher number of inpatients, a longer average length of stay as well as a larger ward size. Intuitively, the number of MRSA infections in a ward should increase as patient-days within the ward increase. However, the average number of infections is not observed to increase linearly with patient-days, indicating that patient-days per ward alone cannot explain the observed patterns of infection (Figure 1\u2014figure supplement 1). While these raw features provide a general understanding of MRSA transmission, they cannot be effectively employed to assess infection or colonization risk in a specific ward due to their largely overlapping distributions, which prevent a clear classification of risk. Instead, a quantitative analysis using mathematical modeling is needed.\n\n### The agent-based model\n\nIn hospital settings, MRSA transmission between colonized/infected patients and susceptible individuals is primarily mediated indirectly by healthcare workers (Lowy, 1998; Temime et al., 2009). As a result, accurate representation of actual contact patterns is crucial for modeling MRSA transmission. Many previous studies have formulated transmission models using ordinary differential equations (ODEs) (Cooper et al., 2004a; Kajita et al., 2007; D'Agata et al., 2009) or stochastic processes (Forrester et al., 2007; Kypraios et al., 2010). To account for heterogeneity among different settings, several studies have included multiple facilities in a single-model construct, incorporating prior information on facility type in order to characterize and differentiate transmission dynamics (Bootsma et al., 2006; Forrester et al., 2007). These approaches were then generalized to permit connection among institutions at different scales (hospitals, nursing homes and long-term healthcare facilities, or multiple wards or units within a facility) with time-varying contact patterns (Thomas et al., 2018).\n\nIn this work, we model nosocomial MRSA transmission using an individual-level agent-based model (Macal et al., 2014; Assab et al., 2017). One major advantage of using an agent-based approach is that the heterogeneity of contact in different ward types can be accounted for within the model. For instance, even though we were provided no information about ward type, some of the heterogeneity among wards can be represented by the contact pattern specific to each ward, for\u00a0example a longer length of stay in long-term healthcare units. Other aspects, however, are simplified; for example, due to the observed absence of infection clusters (Figure 1B), we assume a uniform transmission rate across different wards within the model. This assumption is ultimately justified by the good agreement between inferred dynamics and observations (as described later).\n\nIn the model, transmission occurs on the substrate of a time-varying contact network, which is constructed using the actual hospitalization records from 66 hospitals in Stockholm County, Sweden. In this contact network, nodes represent uniquely labeled patients, connected by undirected links among individuals sharing a ward at a given time. The rationale behind this network construction approach is that, if two patients stay in the same ward simultaneously, the shared healthcare personnel may facilitate transmission between them. The structure of the contact network is relatively stable over time, as indicated by the degree distributions of the weekly aggregated networks (Figure 1D). In particular, the degree distributions can be well fitted by a Weibull distribution, $P(k)=abk^{b\u22121}e^{\u2212ak^{b}}$, where $a=6.15\\times10^{-4}$ (95% CI: $5.96\\times10^{-4}-6.34\\times10^{-4}$), $b=2.13$ (95% CI: $2.12-2.14$) ($R^{2}=0.95$).\n\nThe contact network is time-varying and exhibits high spatiotemporal complexity. The daily in-hospital patient number fluctuates between 4000 and 7000 during the study period (Figure 1\u2014figure supplement 2A\u2013B). Patient hospitalization time, readmission time, and patient-to-patient contact time all follow heavy-tailed distributions, spanning several orders of magnitude (Figure 1\u2014figure supplement 2C). Moreover, about 100 connected components coexist in the contact network each week (Figure 1\u2014figure supplement 2D). Connections between different connected components change over time due to the transfer and readmission of patients. 128,119 patients were transferred from one ward to another during their stay, and another 280,506 patients were readmitted within 1 year of their previous discharge. These patient movements connect healthcare facilities that would otherwise be isolated in the network and facilitate long-range transmission across multiple hospitals. A direct consequence of this patient movement is difficulty tracking the indirect transmission path of MRSA across different hospitals. For instance, a patient located in one hospital can be involved in the transmission occurring in another when he/she moves across multiple facilities. Detailed analyses of the contact network structure and hospitalization traffic can be found in Appendix 1.\n\nModel patients are classified into three categories: susceptible individuals who are free of MRSA ($S$), colonized individuals who carry the bacteria asymptomatically ($C$), and confirmed positive patients ($P$). The model simulates two connected dynamics: nosocomial transmission and importation from the community. Here, the community is broadly defined as all locations outside the study hospitals, and may include households and healthcare facilities not covered in the study. Within hospitals, transitions between states ($S$, $C$, $P$) are governed by parameters that help define either interaction dynamics or the progression of infection. Specifically, a susceptible individual staying in a ward with a colonized person can become MRSA colonized with transmission probability $\\beta$ per day. In our model, we assume that patients within a ward have the same rate of contact with each other, presumably mediated by the shared healthcare workers in a ward. The transmission process is density-dependent, as the force of infection in a ward increases with the number of colonized patients within the ward\u00a0(Begon et al., 2002). Upon colonization, asymptomatic persons can return to the susceptible state at a spontaneous decolonization rate $\\alpha$, or they can test positive with an infection progression rate $p$. We assume infected patients will receive treatment, no longer spread bacteria, and return to state $S$ with a recovery rate $\\mu$. Treatment is assumed to continue until infected patients are clear of MRSA. Given the exponential decay of infection probability, the characteristic treatment period is $1/\\mu$ days. Note that colonization only occurs between individuals connected by a link in the contact network, whereas decolonization, infection and recovery progress spontaneously, independent of the contact network. Outside the study hospitals, the transmission process is not explicitly simulated; instead, two additional parameters are introduced to represent transmission intensity. For patients who appear for the first time in hospital, we assume they belong to states $C$ and $P$ with probability $C_{0}$ and $I_{0}$, respectively. As importation rates of colonized and infected patients depend on the time-varying MRSA prevalence outside hospitals, we assume the parameters $C_{0}$ and $I_{0}$ are time-dependent. Once patients appear in the contact network, the evolution of their states follows the dynamics as defined above. After discharge, we continue tracking the progression of colonized individuals; however, transmission outside the study hospitals is not represented. The flow of individuals between categories is illustrated schematically in Figure 1E.\n\nFor a realistic scenario, disease-related model parameters may differ from person to person. To account for this variability during implementation, parameters, for example $\\alpha$, $p$ and $\\mu$, for each individual are randomly drawn from uniform ranges obtained from prior literature (Table 1). The parameter ranges are enlarged slightly to cover the values reported in these works. Our main objective is to infer the three most important parameters governing transmission dynamics: the transmission rate $\\beta$, the infection importation rate $I_{0}$ and the colonization importation rate $C_{0}$.\n\n**Table 1.**\n Parameter ranges used in the agent-based transmission model.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Parameter</th>\n      <th>Description</th>\n      <th>Range</th>\n      <th>Unit</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Spontaneous decolonization rate</td>\n      <td>[1/525, 1/175]</td>\n      <td>per day</td>\n      <td>\u03b1</td>\n    </tr>\n    <tr>\n      <td>Infection progress rate</td>\n      <td>[0.1\u03b1, 0.3\u03b1]</td>\n      <td>per day</td>\n      <td>p</td>\n    </tr>\n    <tr>\n      <td>Recovery rate with treatment</td>\n      <td>[1/120, 1/20]</td>\n      <td>per day</td>\n      <td>\u03bc</td>\n    </tr>\n    <tr>\n      <td>Transmission rate in hospitals</td>\n      <td>[0, 0.01]</td>\n      <td>per day</td>\n      <td>\u03b2</td>\n    </tr>\n    <tr>\n      <td>Infection importation rate</td>\n      <td>[0, 0.001]</td>\n      <td>per admission</td>\n      <td>I0</td>\n    </tr>\n    <tr>\n      <td>Colonization importation rate</td>\n      <td>[0, 0.1]</td>\n      <td>per admission</td>\n      <td>C0</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n  </tbody>\n</table>\n\n_Sources for parameter ranges \u2013 \u03b1: (Cooper et al., 2004a; Bootsma et al., 2006; Eveillard et al., 2006; Wang et al., 2013; Macal et al., 2014; Jarynowski and Liljeros, 2015); p: (Kajita et al., 2007; Jarynowski and Liljeros, 2015); \u03bc: (D'Agata et al., 2009; Wang et al., 2013); \u03b2: Prior; I0: Prior; C0: Prior, (Hidron et al., 2005; Eveillard et al., 2006; Jarvis et al., 2012). For each individual, the infection progress rate p is drawn after \u03b1 is specified._\n\n### Iterated filtering for agent-based models\n\nTo infer epidemiological parameters in an agent-based model, we adapt an iterated filtering (IF) algorithm (Ionides et al., 2006; King et al., 2008; Ionides et al., 2011). IF can be used to infer the maximum likelihood estimates (MLEs) of parameters in epidemic models and has been successfully applied to infectious diseases such as cholera (King et al., 2008) and measles (He et al., 2010). Initially developed for ODE models, IF has subsequently been generalized for other model forms (e.g. stochastic models) using the plug-and-play approach (He et al., 2010). Here, we adapt IF for agent-based models, leveraging an equation-free approach (Kevrekidis et al., 2003) that allows for mapping between the system-level observations (e.g. weekly incidence) used for the IF and the individual-level states evolved in the agent-based model (Appendix 1). In applying the IF, we perform multiple iterations using an efficient Bayesian filtering algorithm \u2013 the Ensemble Adjustment Kalman Filter (EAKF) (Anderson, 2001), which has been widely used in infectious disease forecast and inference (Shaman and Karspeck, 2012; Yang et al., 2015; Pei and Shaman, 2017; Pei et al., 2018a; Kandula et al., 2018). Details of the IF implementation can be found in Materials and methods.\n\nBefore applying the inference system to real-world data, we first need to validate its effectiveness. For the real-world data the inference targets are unobserved, so instead we test the inference system using model-generated synthetic outbreaks for which we know the exact values of the parameter. Although actual MRSA transmission dynamics cannot be fully described by the simplified agent-based model, performing synthetic tests provides validation that the inference system works if the transmission process generally follows the model-specified dynamics.\n\nTo generate synthetic outbreak observations, we used the agent-based model to simulate weekly incidence during a one-year period (52 weeks), and then imposed noise to produce the observations used in inference (See details in Appendix 1). We ran 20 iterations of the EAKF within the IF framework. In Figure 2A, we display the inference results for the three parameters $\\beta$, $I_{0}$ and $C_{0}$ at different iterations in one realization of the IF algorithm. The blue horizontal lines mark the target values used to generate the outbreak. The orange boxes show the distribution of posterior parameters (300 ensemble members) after each iteration. The IF algorithm returns the stabilized ensemble mean as the MLEs of parameters. As a result of the stochastic nature of model dynamics and initialization of the inference algorithm, different runs of the IF algorithm usually return slightly different MLEs. To obtain the credible intervals (CIs) for the MLEs, we repeated the inference for 100 times (see Materials and methods). The inferred mean values and 95% CIs for the parameters $\\beta$, $I_{0}$ and $C_{0}$ are $9.00,[8.07,9.68]\\times10^{-3}$, $1.91,[1.38,2.54]\\times10^{-3}$ and $7.18,[5.84,8.70]\\times10^{-2}$, with the actual values $\\beta=9\\times10^{-3}$, $I_{0}=2\\times10^{-3}$ and $C_{0}=7.5\\times10^{-2}$. The inference system thus accurately estimates $\\beta$ and $I_{0}$ from noisy observations, and slightly underestimates $C_{0}$. In its implementation, the performance of the inference system depends on the sensitivity of the observations to each parameter. In the agent-based model used here, observed incidence is less sensitive to $C_{0}$ due to the long period of colonization. As a consequence, estimates of $C_{0}$ do not always exactly match the actual target and are here biased low. Nevertheless, this slight underestimation does not significantly affect the inferred dynamics. To demonstrate this insensitivity, we ran 1000 simulations using the inferred mean parameters and obtained distributions of weekly incidence from the stochastic agent-based model. The distributions of weekly incidence (blue boxes) are compared with the observed cases (red crosses) in Figure 2B. We also evaluated the agreement between the observed and simulated incidences in Figure 2B (Figure 2\u2014figure supplement 1; Analysis details are explained in Appendix 1). The inferred dynamics fit the observed incidence well. The Matlab code for synthetic test on an example network is uploaded as an additional file.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/40977/elife-40977-fig2-v1.jpg)\n\n**Figure 2.:** (A) Distributions of the posterior parameters $\\beta$ (top), $I_{0}$ (middle) and $C_{0}$ (bottom) (300 ensemble members) for 20 iterations of inference in one realization of the IF algorithm. Orange Tukey boxes show the median and interquartile (IQR, Q1 to Q3). Whiskers mark the inferred values within the range [Q1-1.5\u00a0\u00d7\u00a0IQR, Q3\u00a0+\u00a01.5\u00a0\u00d7\u00a0IQR]. Dots are outliers. Horizontal blue lines indicate the inference targets used in generating the synthetic outbreak. (B\u2013C) Distributions of weekly incidence (B) and colonization (C) generated from 1000 realizations of simulations using the inferred parameters are shown by the blue boxes. The red crosses represent the synthetic observations used during the inference (B) and actual colonization in the outbreak (C). (D\u2013E) Inference of the transmitted and imported infections. Blue boxes are distributions generated from simulations, and red crosses are the actual values in the synthetic outbreak.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/40977/elife-40977-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) Distribution of the log likelihood calculated from surrogate data (blue bars). We generated 1000 synthetic outbreaks using the inferred parameters, from which we approximated the distribution of incidence at each week. We then calculated the log likelihood for the observed incidence in each synthetic outbreak, and obtained its distribution using the 1000 log likelihood values computed from the surrogate data. Vertical red line indicates the log likelihood obtained in Figure 2B. Subplot title shows the two-sided p-value of the log likelihood for the inference relative to the surrogate distribution. The same analysis was also performed for RMSE (B), $R^{2}$ (C) and Pearson correlation coefficient (D). The RMSE, $R^{2}$ and Pearson correlation coefficient were calculated using the incidence time series in each synthetic outbreak and the mean incidence time series averaged over 1000 realizations.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/40977/elife-40977-fig2-figsupp2-v1.jpg)\n\n**Figure 2\u2014figure supplement 2.:** (A) Parameters used in the synthetic outbreak (inference targets) are marked by red lines. The posterior parameter distributions (300 ensemble members) for different iterations in one realization of the IF algorithm are shown by the blue boxes and whiskers (box: interquartile; whisker: 95% CI). (B) Distributions of weekly incidence generated from 1000 realizations of simulations using the inferred parameters are shown by the blue boxes and whiskers. The red crosses represent the synthetic observations used in the inference. (C\u2013E) Same analysis as in (B) for the colonized population, cases transmitted in hospital and cases imported from outside.\n\n![Figure 2\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/40977/elife-40977-fig2-figsupp3-v1.jpg)\n\n**Figure 2\u2014figure supplement 3.:** Same analysis as in Figure 2\u2014figure supplement 1. Comparisons of the log likelihood (A), RMSE (B), $R^{2}$ (C), and Pearson correlation coefficient (D) obtained from the inference in Figure 2\u2014figure supplement 2B with the distributions of these metrics calculated from 1000 simulations with inferred parameters.\n\n![Figure 2\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/40977/elife-40977-fig2-figsupp4-v1.jpg)\n\n**Figure 2\u2014figure supplement 4.:** Parameters are set as in Figure 2. (A) Parameters used in the synthetic outbreak (inference targets) are marked by red lines. The posterior parameter distributions (300 ensemble members) for different iterations in one realization of the IF algorithm are shown by the blue boxes and whiskers (box: interquartile; whisker: 95% CI). (B) Distributions of weekly incidence generated from 1000 realizations of simulations using the inferred parameters are shown by the blue boxes and whiskers. The red crosses represent the synthetic observations used in the inference. (C\u2013E) Same analysis as in (B) for the colonized population, cases transmitted in hospital and cases imported from outside.\n\n![Figure 2\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/40977/elife-40977-fig2-figsupp5-v1.jpg)\n\n**Figure 2\u2014figure supplement 5.:** Same analysis as in Figure 2\u2014figure supplement 1. Comparisons of the log likelihood (A), RMSE (B), $R^{2}$ (C), and Pearson correlation coefficient (D) obtained from the inference in Figure 2\u2014figure supplement 4B with the distributions of these metrics calculated from 1000 simulations with inferred parameters.\n\nWe repeated the above analysis for the colonized population (Figure 2C) and found that the numbers of unobserved colonized patients can also be well estimated by the inference system. Moreover, the inference system can distinguish the number of infections transmitted in hospital and imported from outside the study hospitals (Figure 2D\u2013E). More tests for alternate synthetic outbreaks and different observation frequencies were performed and are presented in Figure 2\u2014figure supplements 2\u20135.\n\n### Inference of MRSA transmission in swedish hospitals\n\nWe next applied the inference system to the UK EMRSA-15 incidence data binned every 4 weeks. Because the UK EMRSA-15 transmission parameters are unlikely to remain constant over the entire 6-year outbreak cycle, we inferred model parameters year by year (52 weeks). Beginning with the first year, we ran the IF inference sequentially through each year. Between 2 consecutive years, the inferred results from the previous year were used to initialize the inference system in the next (see Figure 3\u2014figure supplement 1). In Figure 3A, we present the distributions of the key parameters $\\beta$, $I_{0}$ and $C_{0}$ for each year, generated from 100 independent realizations of the IF algorithm. The parameter estimates together with the associated 95% CIs are reported in Table 2. All parameter values increased in the first 3 or 4 years, and then gradually decreased thereafter.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/40977/elife-40977-fig3-v1.jpg)\n\n**Figure 3.:** (A) Inferred distributions of the MLEs for key parameters $\\beta$, $I_{0}$ and $C_{0}$ over 6 years, obtained from 100 independent realizations of the IF algorithm. (B) Observed incidence every 4 weeks (red crosses) and corresponding distributions generated from 1000 simulated outbreaks using the inferred mean parameters (blue boxes and whiskers). (C) Distribution of the number of infected wards obtained from 1000 simulations. The vertical red dash line indicates 114, the observed number of infected wards. (D) Distributions of the number of infections per ward from 1000 simulations (blue boxes and whiskers). Red diamonds are the observed probabilities. (E) Inferred distributions of infections transmitted in hospital (turquoise area) and imported from outside the study hospitals (pink area). The dark areas mark the IQR; light areas show values within the range [Q1-1.5\u00a0\u00d7\u00a0IQR, Q3\u00a0+\u00a01.5\u00a0\u00d7\u00a0IQR].\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/40977/elife-40977-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** In each year, we performed 20 iterations using the IF. Boxes show the inferred distributions of 300 posterior parameters (box: interquartile; whisker: 95% CI).\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/40977/elife-40977-fig3-figsupp2-v1.jpg)\n\n**Figure 3\u2014figure supplement 2.:** We generated the surrogate data (1000 synthetic outbreaks) using the inferred parameters, and compared the log likelihood (A), RMSE (B), $R^{2}$ (C), and Pearson correlation coefficient (D) obtained from the inference in Figure 3B with the distributions of these metrics calculated from 1000 simulations with inferred parameters.\n\n![Figure 3\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/40977/elife-40977-fig3-figsupp3-v1.jpg)\n\n**Figure 3\u2014figure supplement 3.:** We classified the patients testing positive according to the time intervals between their hospital admission and confirmation date: those with $\\leq2$ days (48 hr) were regarded as imported cases (199 cases), whereas the others were classified as nosocomial cases (90 cases). Inset shows the mean time series for imported and nosocomial cases generated from 1000 simulations using the inferred parameters. The simulation results (imported cases: 191, 50% CI [100, 266]; nosocomial cases: 120, 50% CI [64, 169]) agree well with the classification using days from admission to infection.\n\n**Table 2.**\n Inferred parameters and 95% CIs across 6 years using the actual diagnostic data.Table 2\u2014source data 1.Numerical data represented in Table 2.Results are obtained from 100 independent realizations of the IF algorithm.\n\n\n<table>\n  <thead>\n    <tr>\n      <th></th>\n      <th colspan=\"3\">Inferred parameters and 95% CIs</th>\n    </tr>\n    <tr>\n      <th>Year</th>\n      <th>\u03b2</th>\n      <th>I0</th>\n      <th>C0</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>2.16,[1.83,2.60]\u00d710-3</td>\n      <td>3.67,[3.28,4.06]\u00d710-5</td>\n      <td>8.61,[7.92,9.47]\u00d710-3</td>\n      <td>I</td>\n    </tr>\n    <tr>\n      <td>2.87,[2.48,3.44]\u00d710-3</td>\n      <td>1.27,[1.13,1.45]\u00d710-4</td>\n      <td>1.68,[1.40,1.98]\u00d710-2</td>\n      <td>II</td>\n    </tr>\n    <tr>\n      <td>4.71,[4.29,5.13]\u00d710-3</td>\n      <td>6.19,[5.31,7.48]\u00d710-5</td>\n      <td>3.03,[2.36,3.62]\u00d710-2</td>\n      <td>III</td>\n    </tr>\n    <tr>\n      <td>2.91,[2.47,3.44]\u00d710-3</td>\n      <td>2.31,[1.93,2.64]\u00d710-4</td>\n      <td>2.53,[1.85,3.26]\u00d710-2</td>\n      <td>IV</td>\n    </tr>\n    <tr>\n      <td>3.18,[2.61,3.79]\u00d710-4</td>\n      <td>1.62,[1.29,2.04]\u00d710-4</td>\n      <td>2.08,[1.51,2.63]\u00d710-2</td>\n      <td>V</td>\n    </tr>\n    <tr>\n      <td>2.16,[1.83,2.60]\u00d710-3</td>\n      <td>5.31,[4.27,6.30]\u00d710-5</td>\n      <td>9.57,[7.72,12.43]\u00d710-3</td>\n      <td>VI</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n  </tbody>\n</table>\n\nThe inferred parameters can be plugged back into the model to run simulations and obtain information addressing our questions of interest (see Video 1 for an example). For instance, we performed 1000 model simulations using the inferred mean parameter values, and generated distributions of incidence from the stochastic agent-based model. These distributions are compared to observations in Figure 3B. All observations fall within the whisker range of Tukey boxplots (see more analyses in Figure 3\u2014figure supplement 2). To further explore whether some of the key observed statistics can be reproduced using the inferred parameters, we display the distribution of the number of infected wards in Figure 3C. The observed number lies at the peak of the simulated distribution (vertical dash line). The spatial distribution of infections among different wards can be characterized by the distribution of wards with a certain number of infections in an outbreak. In Figure 3D, we compare this distribution obtained from 1000 simulations with what we observed in the data (red diamonds): the observed distribution agrees well with the simulated distributions. This close matching indicates that the model structure and inferred parameters can reliably reproduce the observed outbreak pattern in both space and time (see also Figure 3\u2014figure supplement 2). In addition to generating a good model fit, the inference system also discriminates the burdens of nosocomial transmission and infection importation. Nosocomial and imported infections are distinguished by the location of MRSA colonization: if patients acquire MRSA in hospital, they are classified as nosocomial transmission cases; otherwise they are imported cases. Figure 3E compares the distributions of both types of infections generated from 1000 simulations: a substantial number of infections are inferred as importations. In clinical practice, the number of days between hospital admission and infection is usually used to distinguish hospital-acquired from community-acquired infections, typically with 48 hr used as the threshold. We performed this classification and compared the findings with our inference result. As shown in Figure 3\u2014figure supplement 3, the number of imported and nosocomial cases obtained from inference generally matches the classification result using days from admission to infection.\n\n![Video 1.](https://cdn.elifesciences.org/articles/40977/elife-40977-video1.mp4.jpg)\n\n**Video 1.:** We visualize a single realization of the agent-based model during a one-year period. The grey nodes represent susceptible people, green nodes represent colonized individuals, and red nodes highlight infected patients. The contact network changes from day to day.\n\nOur findings indicate that, at its onset, during the first year of the outbreak, UK EMRSA-15 gradually invaded the hospital system from the community. Only sporadic nosocomial transmission occurred. With the accumulation of infected and colonized patients in the hospitals, a rise in nosocomial transmission occurred, reflected by an increase of the transmission rate $\\beta$ during the third year (Figure 3A). Concurrently, both the infection and colonization importation rates, $I_{0}$ and $C_{0}$, also experienced growth. This simultaneous rise may have been caused by household transmission initiated by asymptomatically colonized patients discharged from hospitals. After this growth phase, both transmission and importation rates were suppressed. Finally, the UK EMRSA-15 outbreak appears near eliminated in Swedish hospitals, represented by the inferred low values of all parameters. However, if control measures in hospital were to be relaxed, the colonized patients might spark another outbreak due to the lengthy colonization period, which highlights the need for asymptomatic colonization control in order to effect MRSA elimination (Cooper et al., 2004a).\n\n### Designing cost-effective interventions\n\nAsymptomatic colonization is a major issue hindering the control and elimination of MRSA in hospitals (Cooper et al., 2004a). Screening can identify colonized patients and evaluate the general colonization burden; however, it is an inefficient and costly measure that wastes resources that otherwise could be used to solve more urgent problems. As shown above, given the heterogeneity of contact among patients, levels of exposure to the hazard of colonization differ substantially. As a result, more efficient intervention strategies can be designed that leverage this individual-level heterogeneity.\n\nIn Figure 4A, we display the inferred distribution of colonized patients in the Swedish hospitals over time. Colonized patient numbers peak in the middle of the record and decline thereafter. To determine who and where these high-risk individuals reside within the network, we can use the agent-based model to quantify colonization risk at the individual level. The distribution of individual colonization probability at T\u00a0=\u00a040 (week 160), generated from $10^{4}$ simulations using inferred parameters, is displayed in Figure 4B. A clear heavy-tailed power-law distribution $y\u221dx^{-2.13}$ emerges in which the colonization probability spans several orders of magnitude (see Figure 4\u2014figure supplement 1 and Appendix 1 for a rigorous statistical analysis of this distribution) (Clauset et al., 2009; Muchnik et al., 2013). The complex spatiotemporal interaction patterns within the network give rise to a small number of patients with a disproportionately high risk of colonization. To examine how these individuals distribute among hospitals, we visualize the colonization probability in Figure 4C. High-risk patients tend to appear in densely connected clusters.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/40977/elife-40977-fig4-v1.jpg)\n\n**Figure 4.:** (A) Inferred distributions of colonized patients through time. (B) The distribution of colonization probability for each individual in hospital at T\u00a0=\u00a040 (week 160) calculated from 104 model simulations. The red line is the power-law fitting. (C) Visualization of individual-level colonization probability at T\u00a0=\u00a040. The probability is color-coded in a logarithmic scale. Node size reflects the number of connections.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/40977/elife-40977-fig4-figsupp1-v1.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (B) Comparison of the KS statistic between $10^{4}$ synthetic samples and observed data. The vertical line indicates the KS statistic for the observed data.\n\nCost-effective interventions can be practiced by the targeted screen and decolonization of identified high-risk patients. In order to evaluate the effectiveness of such interventions, we performed a retrospective control experiment. Specifically, we used the inferred parameters in Figure 3A to run the model for 6 years to reproduce the outbreak. Every 4 weeks, we used currently available information (as would be available in real time) to estimate patient colonization probabilities (see details in Materials and methods). The colonization probabilities estimated in real time are highly correlated with the results obtained using information from the whole course of the epidemic, shown in Figure 4C. During the model integration, every 4 weeks, we selected patients with an estimated colonization probability higher than a certain threshold for screening. If positive, these inpatients were decolonized. To assess the impact of decolonization success rate on intervention impact, two efficiencies, 100% and 75%, were tested, and we repeated the experiment 1000 times. The findings show that the proposed intervention strategy can avert considerable numbers of colonization and infection (Figure 5A\u2013B). Decreasing the decolonization threshold leads to a larger screened population (as shown in the inset of Figure 5B), and thus reduces colonization and infection further. However, the marginal benefit becomes negligible below a certain threshold value, as the remaining colonized and infected patients are possibly caused by importation, which cannot be directly controlled by inpatient intervention. The decolonization success rate also plays an important role, as indicated by the increased colonization and infection for the lower success rate.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/40977/elife-40977-fig5-v1.jpg)\n\n**Figure 5.:** The cumulative cases of colonization (A) and infection (B) after decolonizing patients with a hazard of colonization higher than a specified decolonization threshold. Simulations were performed with decolonization success rates of 100% (blue boxes) and 75% (red boxes). Distributions were obtained from 1000 realizations of the retrospective control experiment. The inset in (A) reports the Pearson correlation coefficient between colonization probability estimated in real time and that obtained using information from the whole course of the epidemic. The inset in (B) shows the number of screened patients as a function of the decolonization threshold. (C\u2013D) Comparison of the inference-based intervention with heuristic control measures informed by number of contacts, length of stay and contact tracing. Curves are average cumulative cases obtained from 1000 experiments with a 100% decolonization success rate.\n\nThe advantage of the proposed inference-based intervention can be better appreciated by examining its additional benefit over other heuristic control measures. Here, we compare the performance of the inference-based intervention with three alternative screening strategies informed by patient number of contacts, length of stay and contact tracing. For the former two, at each month, we ranked patients by their current total number of contacts (i.e. cumulative number of connections in the time-varying network since admission) or length of stay in a descending order, and created the screening list using the top-ranked patients. By varying the fraction of patients selected from the ranking (from 0% to 5%), we can inspect the control results for different numbers of screened patients. For contact tracing, upon each observation of infection, we tracked patients who stayed in the same ward with an infected individual within a certain time window prior to the infection, and screened those possibly colonized patients in hospitals. Tracing time windows ranging from 1 day to 14 days were tested. The number of screened patients does not increase significantly with tracing times longer than 14 days. Note that, screening and decolonization are performed only within hospitals. If patients listed for screening have already discharged before the diagnosis of infection, they are screened upon their next re-admission.\n\nIn Figure 5C\u2013D, the average numbers of colonized and infected patients are compared based on the number of screened patients. Heuristic control measures relying on the number of contacts, length of stay and contact tracing all limit MRSA transmission; however, a substantial additional reduction in both colonization and infection can be achieved through inference-based intervention. On average, inference-based screening of approximately 0.89% (6,617/743,599) of all patients can avert up to 38% (121/315) of infections and 9% (1,610/17,810) of colonizations. In comparison, the other three methods given similar numbers of screened patients only reduced infections and colonizations by 21% and 4% (number of contacts), 27% and 6% (length of stay), and 28% and 6% (contact tracing), respectively.\n\nThe colonization probability obtained from inference quantifies individual systemic risk given the general situation of transmission, regardless of the specific location of undetected colonization. In contrast, screening based on contact tracing identifies colonized individuals related to observed infections; however, with an unknown amount of imported colonization, this approach may overlook a considerable number of colonized patients, who can sustain subsequent transmission. As a result, the inference-based intervention can identify and treat the pivotal individuals, or superspreaders (Pei and Makse, 2013; Pei et al., 2014; Pei et al., 2017; Pei et al., 2018b; Teng et al., 2016), who may otherwise transmit MRSA asymptomatically in the first place. This preventive approach is more effective than contact tracing in the presence of frequent importation, as it disrupts probable transmission pathways. In real-world hospital settings, the proposed inference-based intervention could be implemented and evaluated in real time: it only requires hospitalization records and ward information.\n\n## Discussion\n\nIn this work, we have developed an agent-based model-inference framework that can estimate nosocomial MRSA transmission dynamics in the presence of importation. Further, we have shown that these inferred dynamics can be used to quantify patient colonization risk and guide more effective interventions.\n\nThe transmission dynamics generated using the agent-based model are intrinsically stochastic, that\u00a0is, the observed record of UK EMRSA-15 infections is just one realization among an ensemble of all possible outcomes of an underlying highly stochastic process. In order to evaluate the general risk of MRSA transmission, key epidemiological parameters were inferred from the single observed realization. Previous studies have developed methods to infer transmission risk factors and reconstruct transmission paths using individual-level infection data for diseases such as H1N1 and MERS-CoV (Cauchemez et al., 2011; Cauchemez and Ferguson, 2012; Cauchemez et al., 2016). In particular, Bayesian data augmentation approaches have been applied to MRSA models (Forrester et al., 2007; Kypraios et al., 2010); however, these approaches are not readily applicable to our dataset. The data assimilation scheme we developed here enables estimation of epidemiological parameters and key transmission information using aggregated incidence data. As demonstrated in the retrospective control experiment, assessment of individual colonization risk using aggregated data can be quite useful for preventing future MRSA transmission, especially when stealth importations are frequent.\n\nIn this study, we omitted representation of heterogeneity across different wards. This simplification is valid for the study Swedish hospitals, as we observed no infection clusters and the model reproduced key statistics of observations well. However, in other settings, clustering analysis and ward information may be necessary before the application of the inference system. Should certain wards suffer a much higher rate of infection, a separate suite of parameters can be defined and inferred for these wards, using priors that better represent this more intense transmission. We also only considered transmission among patients staying in the same ward. In the future, more contact information such as healthcare workers shared by a group of patients could be incorporated into the contact network. In addition, as the community defined in the model may include non-sampled hospitals, inferred community risk may have been overestimated as it also included contributions from those healthcare facilities outside the network.\n\nWe note that the reported inference results are obtained using only hospitalization records and UK EMRSA-15 case numbers. Should more data (e.g. surgery or treatment records) become available, this additional information could be incorporated into the agent-based model and used to refine the present results. Our model-inference framework provides a foundational platform for flexible simulation and inference of antibiotic resistant pathogens. In this study, we applied this system to Swedish hospitals with low MRSA prevalence. However, in the future, it could be used to provide actionable information for disease control in less developed settings where MRSA is endemic. In a highly interconnected area, transmission of antibiotic resistant pathogens from endemic regions to epidemic-free hospitals is more likely. This risk calls for containment measures in the general population and collaborative control efforts among multiple healthcare facilities (Smith et al., 2005; D'Agata et al., 2009; Ciccolini et al., 2014; Slayton et al., 2015).\n\n## Materials and methods\n\n### Data description\n\nThe dataset contains admission and discharge records of 743,599 distinct patients from 66 hospitals (271 clinics, 1041 wards) in Stockholm County, Sweden (Jarynowski and Liljeros, 2015; Rocha et al., 2016), spanning over 3500 continuous days during the 2000s. The exact dates and ward types are confidential for the protection of patient privacy. In total, 2,041,531 admission records were collected. The hospitalization dataset is quite comprehensive as the patients constitute over one third of the total 2.2 million population of Stockholm County. In addition, the dataset also contains individual diagnostic records of MRSA, which provide relative date of diagnosis and the strain of MRSA. Diagnosis was performed on patients with symptomatic infections as well as asymptomatic patients in contact with positive cases. A total of 991 positive cases from 172 different strains were confirmed, and the most prevalent strain was UK EMRSA-15 (289 cases). UK EMRSA-15 is present in 16 countries worldwide (Grundmann et al., 2010; Das et al., 2013). Here, we focus on this specific strain. Although the dataset spans over 3500 days (nearly 10 years), we limit our study to a 6-year (300-week) period with reported UK EMRSA-15 incidence. We display time series of 4-week incidence and cumulative incidence for UK EMRSA-15 in Figure 1A.\n\n### Iterated filtering for agent-based models\n\nWe infer system epidemiological parameters using an iterated filtering (IF) algorithm (Ionides et al., 2006; King et al., 2008; Ionides et al., 2011). This algorithm has been coupled with ODE models and used to infer latent variables associated with the transmission of cholera (King et al., 2008) and measles (He et al., 2010). The IF framework is designed as follows: an ensemble of system states, which represent the distribution of parameters, are repeatedly adjusted using filtering techniques in a series of iterations, during which the variance of the parameters is gradually tuned down. In the process, the distribution of parameters is iteratively optimized per observations and narrowed down to values that achieve maximum likelihood. This approach is based on an analytical proof that guarantees its convergence under mild assumptions (Ionides et al., 2006).\n\nIn its original implementation, the data assimilation method used in IF is sequential Monte Carlo, or particle filtering (Arulampalam et al., 2002). Here, due to the high computational cost of the agent-based model, we use a different efficient data assimilation algorithm - the Ensemble Adjustment Kalman Filter (EAKF) (Anderson, 2001). Unlike particle filtering, which requires a large ensemble size (usually of the order O($10^{4}$) or higher) (Snyder et al., 2008), the EAKF can generate results similar in performance using only hundreds of ensemble members (Shaman and Karspeck, 2012). Originally developed for use in weather prediction, the EAKF assumes a Gaussian distribution of both the prior and likelihood, and adjusts the prior distribution to a posterior using Bayes rule in a deterministic way such that the first two moments (mean and variance) of an observed variable are adjusted while higher moments remain unchanged during the update (Anderson, 2001). In epidemiological studies, the EAKF has been widely used for parameter inference and forecast of infectious diseases (Shaman and Karspeck, 2012; Yang et al., 2015; Pei and Shaman, 2017; Pei et al., 2018a; Kandula et al., 2018). The implementation details of the EAKF are introduced in Appendix 1.\n\nIn this study, we focus on the inference of three transmission-related parameters: the nosocomial transmission rate $\\beta$, the infection importation rate $I_{0}$ and the colonization importation rate $C_{0}$. The initial prior ranges for these parameters are reported in Table 1. Other disease-related parameters, for example the spontaneous decolonization rate $\\alpha$, the infection progress rate $p$, and the recovery rate $\\mu$, are drawn uniformly from ranges obtained from previous studies for each individual in the agent-based model (see Table 1). Should more specific information about these parameters become available, it may be possible in the future to better constrain the model with their incorporation into the system. In synthetic testing of the IF-EAKF algorithm, we use weekly incidence as observations. Given the parameter vector, $\ud835\udc33=(\\beta,I_{0},C_{0})^{T}$, the IF-EAKF algorithm proceeds per the pseudo-code in Algorithm 1. During the EAKF update, only the parameters $\\beta$, $I_{0}$ and $C_{0}$ were adjusted; the microscopic state ($S$, $C$ or $P$) in each ensemble member was set as the state at the end of previous time step and was not adjusted. Detailed explanation of the IF-EAKF system is provided in Appendix 1.\n\nIn each iteration of the IF, the standard deviation of each parameter is shrunk by a factor $a\\in(0,1)$ (or equivalently, the variance is discounted by a factor of $a^{2}$). In practice, the discount factor $a$ can range between 0.9 and 0.99 (Ionides et al., 2006). If $a$ is too small, the algorithm may \u2018quench\u2019 too fast and fail to find the MLE; if it is too close to 1, the algorithm may not converge in a reasonable time interval. We stop the IF algorithm once the estimates of the ensemble mean stabilize. The number of iterations required for this convergence was determined by inspecting the evolution of posterior parameter distributions, as in Figure 2A. Note that once the ensemble mean stabilizes, increasing the iteration time will not affect the MLE, although it can lead to a further narrowing of the ensemble distribution.\n\nAlgorithm 1 only returns the MLEs for the parameters; however, it is also desirable to obtain CIs for those MLEs. For deterministic ODE models, Ionides et al. used \u2018sliced likelihood\u2019 to numerically estimate the Fisher information and standard errors (SEs) of MLEs (Ionides et al., 2006). Here, for a highly stochastic system, evaluating the Fisher information numerically is challenging. As a result, we took another approach by running multiple realizations of the IF algorithm. In different runs, the MLEs are slightly different due to stochasticity in the agent-based model and in the initialization of the inference algorithm. In this work, we ran 100 independent realizations to generate the average MLEs of inferred parameters and their corresponding 95% CIs. Results from synthetic tests indicate that this approach is effective in calculating MLEs and quantifying their uncertainties.\n\n<table>\n  <thead>\n    <tr>\n      <th>Algorithm 1. IF\u2013EAKF</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Input: An agent-based model \u2133 in a time-varying contact network G\u2062(V,E,t), the number of observations T, incidence {ot}, the observational error variance (OEV) {\u03c3t,o2}, the initial system parameters \ud835\udc33\u00af0=(\u03b2,I0,C0)T, the initial covariance matrix \u03a3, a discount factor a\u2208(0,1), and the\u00a0number of iterations L.for\u00a0l=1 to L\u00a0do      Generate an ensemble of parameter vectors with n members using a multivariate Gaussian distribution: {\ud835\udc33^0l}n\u223c\ud835\udca9\u2062(\ud835\udc33\u00afl-1,a2\u2062(l-1)\u2062\u03a3).      for\u00a0t=1 to T\u00a0do              Run the agent-based model \u2133 with posterior {\ud835\udc33^t-1l}n obtained from last update for one week, and return the ensemble of incidence: {otl}n=\u2133\u2062(G,{\ud835\udc33^t-1l}n).              Update the prior distribution of parameters \u03b2, I0 and C0:{ztl}n\u2261{z^t\u22121l}n to posterior {\ud835\udc33^tl}n using the EAKF, {otl}n, {\u03c3t,o2} and {ot}. Individual states are evolved per the agent-based model and are not updated by the EAKF.       end for        Calculate the ensemble mean of the posterior over time as the input in next iteration:z\u00afl=\u2211tE({z^tl}n)/T, where E computes the ensemble mean.end forOutput:\u00a0\ud835\udc33\u00afL as the MLE of the parameter vector.</td>\n    </tr>\n  </tbody>\n</table>\n\nAn alternative method to infer posterior parameters is to use Approximate Bayesian computation (ABC) (Beaumont et al., 2002). ABC-based methods employ numerical simulations to approximate the likelihood function, in which the simulated samples are compared with the observed data. In a typical ABC rejection algorithm, large numbers of parameters are sampled from the prior distribution. For each set of parameters, the distance between simulated samples (generated using the parameters) and observed data is calculated. Parameters resulting in a distance larger than a certain tolerance are rejected, and the retained parameters form the posterior distribution. ABC methods can fully explore the likelihood landscape in parameter space. However, it requires large numbers of simulations, which may be prohibitive for the large-scale agent-based models considered here. In addition, a good choice of the tolerance in the rejection algorithm is needed. The IF algorithm, instead, is applicable to computationally expensive agent-based models, but may become trapped in the local optimum of the posterior distribution. In practice, this problem can be alleviated by exploring a larger prior parameter space and setting a slower quenching speed, that is, a smaller discount factor $a$.\n\n### Inferred parameters and 95% CIs for three synthetic tests\n\nWe report the inferred parameters and their corresponding 95% CIs for the synthetic tests in Table 3. The actual parameters used to generate the synthetic outbreaks are also reported. Results are obtained from 100 independent realizations of the IF algorithm.\n\n**Table 3.**\n Inferred parameters and 95% CIs for three synthetic tests.\n\n\n<table>\n  <thead>\n    <tr>\n      <th></th>\n      <th>\u03b2</th>\n      <th>I0</th>\n      <th>C0</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>9\u00d710-3</td>\n      <td>2\u00d710-3</td>\n      <td>7.5\u00d710-2</td>\n      <td>Actual</td>\n    </tr>\n    <tr>\n      <td>9.00,[8.07,9.68]\u00d710-3</td>\n      <td>1.91,[1.38,2.54]\u00d710-3</td>\n      <td>7.18,[5.84,8.70]\u00d710-2</td>\n      <td>Inference (weekly)</td>\n    </tr>\n    <tr>\n      <td>6\u00d710-3</td>\n      <td>2\u00d710-3</td>\n      <td>7.5\u00d710-2</td>\n      <td>Actual</td>\n    </tr>\n    <tr>\n      <td>5.54,[4.17,5.80]\u00d710-3</td>\n      <td>2.11,[1.52,2.55]\u00d710-3</td>\n      <td>7.05,[5.79,8.11]\u00d710-2</td>\n      <td>Inference (weekly)</td>\n    </tr>\n    <tr>\n      <td>9\u00d710-3</td>\n      <td>2\u00d710-3</td>\n      <td>7.5\u00d710-2</td>\n      <td>Actual</td>\n    </tr>\n    <tr>\n      <td>9.00,[8.17,9.66]\u00d710-3</td>\n      <td>1.99,[1.21,2.64]\u00d710-3</td>\n      <td>7.14,[5.99,9.04]\u00d710-2</td>\n      <td>Inference (monthly)</td>\n    </tr>\n  </tbody>\n</table>\n\n### Inference-based intervention\n\nTo guarantee a fair comparison between the inference-based intervention and other heuristic strategies, we estimated the colonization probability using only real-time information available before control measures are effected. For instance, to estimate the colonization probability at the fifth month in the third year, we first infer the model parameters for the first 2\u00a0years, where we have data from the whole year, and then use the partial observation in the remaining 5 months to infer the model parameters for the third year. The inferred parameters are then used to generate 1000 synthetic outbreaks from the beginning, and the current colonization probability for each individual is calculated from these simulations. In the inset of Figure 5A, we show that the colonization probability estimated in real time is highly correlated with that obtained using information from the entire outbreak record. In practice, every 4 weeks, the estimated colonization probability and the decolonization list were updated. The inference-based intervention only uses information available at the time control measures are effected. As a consequence, it is a practical method that can be implemented in real time.\n",
+      "created_at": "2025-12-02T07:42:02.648873Z"
+    },
+    {
+      "id": "ec4dd914-7b34-4f76-bbb8-ddb327bd0f50",
+      "submission_id": "0075791a-0d1a-4b40-8c05-149503fa4fe5",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Ben Cooper, Mahidol Oxford Tropical Medicine Research Unit Thailand\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.40977.033](https://doi.org/10.7554/eLife.40977.033)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Inference and control of the nosocomial transmission of Methicillin-resistant Staphylococcus aureus\" for consideration by eLife. Your article has been reviewed by three peer reviewers, including Ben Cooper as the Reviewing Editor and Reviewer #1, and the evaluation has been overseen by a Reviewing Editor and Prabhat Jha as the Senior Editor. The following individuals involved in review of your submission have agreed to reveal their identity: Martin Bootsma (Reviewer #2); Lulla Opatowski (Reviewer #3).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nThis work makes both an important methodological contribution to the communicable disease modelling literature, and also an important practical contribution to the study of nosocomial infections. First, the authors develop a novel inference framework allowing inferences from individual based transmission models (overcoming computational problems with existing particle filtering approaches). Second, the methods are applied to make inferences about parameters for a multi-institutional MRSA outbreak across a network of hospitals in Sweden and simulations are used to show how such model-based inferences could translate into improved control measures for MRSA.\n\nEssential revisions:\n\n1) Clarification of exact nature of the MRSA data is needed. Does this only come from clinical infections or was there also screening on asymptomatic carriage?\n\n2) Figure 1B is difficult to read and should be revised. Since only integers (0-5) are plotted, the continuous scale may not be the best choice and makes it difficult to pick out what numbers are being plotted.\n\n3) Enough information needs to be presented to allow an interested reader to repeat this analysis on their own data. In particular, the following aspects of the methods were not clear to any of the reviewers:\n\ni) In Algorithm 1, why is the discount factor raised to the power 2(l-1), rather than just (l-1). Is the 2 arbitrary?\n\nii) How should the discount factor a be chosen, and how do different values of a influence the algorithm? A value of 0.9 is used, but not explanation is given for this choice.\n\niii) Algorithm 1 returns the MLE of the parameter vector but makes no attempt to measure the associated uncertainty. Indeed, the variance of the parameter vector ensemble approaches zero as L increases. This is also seen in Appendix 1, Figure 4A. However, distributions for parameters are reported in Figure 3A, and the methods say that \"parameter distributions become stable after 5 iterations\u2026which means our choice of L=10 is sufficient\". So how are the distributions in Figure 3A derived? Are these just taken from the ensemble of parameter vectors stopping after 10 iterations (implying that if L had been taken as 20 or more, the distributions shown in Figure 3A would have had much lower variance?) Surely it is important to produce not only point estimates, but also appropriate measures of uncertainty associated with these; it is not clear if this is being done and justification of the choice of L=10 in the data analysis (subsection \u201cInference using the actual diagnostic data\u201d) compared with L=20 in the synthetic tests (subsection \u201cSynthetic tests\u201d) is lacking.\n\niv) In Algorithm 1 the actual EAKF step is not explained. Given that space is not a limitation (and technical details can be put int he appendix), it would be helpful to provide details of this EAKF step with sufficient detail to enable replication by the interested reader.\n\n4) Clarification of model assumptions is needed. In particular, it is unclear whether the increased decolonization rate \u03bc was only present during treatment, and that afterwards the spontaneous decolonization rate \u03b1 kicks in, or whether treated patients keep their increased rate \u03bc also after the treatment is stopped. Linked to this, what is the duration of treatment?\n\n5) An explicit unambiguous description of the transmission process within a ward is lacking. Is the process density-dependent or frequency-dependent?\n\n6) Units are missing in Table 1.\n\n7) A table with all parameters estimates is missing.\n\n8) Figure 5A-B legend is confusing as the y-axis doesn't seem to depict a reduction but cumulative incidence. Clarification is needed.\n\n9) Can more formal assessment of model fits with synthetic and real data be provided in addition to the plots in Figure 2 and Figure 3?\n\n10) Figure 5 and associated text: it is unclear whether the model based control measures uses only data/information that would be available at the time point control measures are put in place. If the inference approach instead uses information from the whole course of the epidemic, then this would be an unfair comparison. This needs clarification.\n\n11) Subsection \u201cStatistical test of power-law distribution\u201d: \"the significance level of 0.05\" Following the recent ASA statement on the use (and misuse of p-values) there is a consensus that we should be striving to move away from such \"bright lines\". So fine to report the p-value, but we should try to avoid saying that. 049 is significant while. 051 isn't.\n",
+      "created_at": "2025-12-02T07:42:02.648873Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T07:42:02.648873Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T07:42:02.648873Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "90ce282c-1fb4-4d3e-b89c-22633dfbda46",
+      "content_id": "fce38c06-509b-4b50-9381-757b1f49a69a",
+      "claim_id": "C1",
+      "claim": "Methicillin-resistant Staphylococcus aureus (MRSA) is a continued threat to human health in both community and healthcare settings.",
+      "claim_type": "EXPLICIT",
+      "source": "Methicillin-resistant Staphylococcus aureus (MRSA) is a continued threat to human health in both community and healthcare settings.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement supported by established scientific knowledge about MRSA.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:42:02.648873Z"
+    },
+    {
+      "id": "de0294d9-73a3-4fba-81d3-35d835d763ab",
+      "content_id": "fce38c06-509b-4b50-9381-757b1f49a69a",
+      "claim_id": "C2",
+      "claim": "MRSA emerges as one of the most widespread and virulent pathogens among antibiotic-resistant agents.",
+      "claim_type": "EXPLICIT",
+      "source": "Among antibiotic-resistant agents, Methicillin-resistant Staphylococcus aureus (MRSA) emerges as one of the most widespread and virulent pathogens (Grundmann et al., 2006; Klevens et al., 2007; Klein et al., 2007; Jarvis et al., 2012)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by multiple citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:42:02.648873Z"
+    },
+    {
+      "id": "6870fab2-5e2a-4791-ae5c-dfbcf02a5eca",
+      "content_id": "fce38c06-509b-4b50-9381-757b1f49a69a",
+      "claim_id": "C3",
+      "claim": "MRSA has been highlighted as a leading cause of healthcare-associated infections (HAIs) by the U.S. Centers for Disease Control and Prevention (CDC).",
+      "claim_type": "EXPLICIT",
+      "source": "has been highlighted as a leading cause of healthcare-associated infections (HAIs) by the U.S. Centers for Disease Control and Prevention (CDC) (CDC, 2013b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to CDC report.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:42:02.648873Z"
+    },
+    {
+      "id": "cbe487ad-fd3c-4468-b74a-3a3a3bd1eced",
+      "content_id": "fce38c06-509b-4b50-9381-757b1f49a69a",
+      "claim_id": "C4",
+      "claim": "MRSA was initially confined to healthcare facilities.",
+      "claim_type": "EXPLICIT",
+      "source": "Initially confined to healthcare facilities, MRSA has since become increasingly prevalent in the broader population in both the United States and Europe (Chambers, 2001; Naimi et al., 2003; Zetola et al., 2005; Hetem et al., 2012; Kouyos et al., 2013; Tosas Auguet et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by multiple citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:42:02.648873Z"
+    },
+    {
+      "id": "62c0a10a-59fc-41be-8123-8f943bca057a",
+      "content_id": "fce38c06-509b-4b50-9381-757b1f49a69a",
+      "claim_id": "C5",
+      "claim": "MRSA has become increasingly prevalent in the broader population in both the United States and Europe.",
+      "claim_type": "EXPLICIT",
+      "source": "Initially confined to healthcare facilities, MRSA has since become increasingly prevalent in the broader population in both the United States and Europe (Chambers, 2001; Naimi et al., 2003; Zetola et al., 2005; Hetem et al., 2012; Kouyos et al., 2013; Tosas Auguet et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by multiple citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:42:02.648873Z"
+    },
+    {
+      "id": "f1722d05-d056-4328-b800-ec0a9d2f48f2",
+      "content_id": "fce38c06-509b-4b50-9381-757b1f49a69a",
+      "claim_id": "C6",
+      "claim": "MRSA can colonize patients without symptoms for years.",
+      "claim_type": "EXPLICIT",
+      "source": "Further, MRSA can colonize patients without symptoms for years, during which it can be transmitted stealthily (Cooper et al., 2004a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:42:02.648873Z"
+    },
+    {
+      "id": "620bb49c-a0fd-4d68-90e9-be43638c3352",
+      "content_id": "fce38c06-509b-4b50-9381-757b1f49a69a",
+      "claim_id": "C7",
+      "claim": "MRSA can be transmitted stealthily during asymptomatic colonization.",
+      "claim_type": "EXPLICIT",
+      "source": "Further, MRSA can colonize patients without symptoms for years, during which it can be transmitted stealthily (Cooper et al., 2004a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:42:02.648873Z"
+    },
+    {
+      "id": "366fec5f-47bc-449f-a8ec-d7a723ea5427",
+      "content_id": "fce38c06-509b-4b50-9381-757b1f49a69a",
+      "claim_id": "C8",
+      "claim": "A general north-south gradient of MRSA prevalence has been observed in Europe, with rare incidence in Scandinavian hospitals and much higher occurrence in Mediterranean hospitals.",
+      "claim_type": "EXPLICIT",
+      "source": "In Europe, a general north-south gradient has been observed, with rare incidence in Scandinavian hospitals and much higher occurrence in Mediterranean hospitals (Stefani and Varaldo, 2003; Tiemersma et al., 2004; Johnson, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by multiple citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:42:02.648873Z"
+    },
+    {
+      "id": "8e57179d-f5f5-49c5-b41f-c295b3b5eba8",
+      "content_id": "fce38c06-509b-4b50-9381-757b1f49a69a",
+      "claim_id": "C9",
+      "claim": "Sweden remains one of the few countries with a low prevalence of MRSA infection.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, Sweden remains one of the few countries with a low prevalence of MRSA infection (Stenhem et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:42:02.648873Z"
+    },
+    {
+      "id": "d81019d7-587a-4335-b9f2-144c7743eab2",
+      "content_id": "fce38c06-509b-4b50-9381-757b1f49a69a",
+      "claim_id": "C10",
+      "claim": "A substantial proportion of MRSA cases in Sweden has been imported from abroad due to traveling and healthcare contacts in foreign countries.",
+      "claim_type": "EXPLICIT",
+      "source": "A substantial proportion of MRSA cases in Sweden has been imported from abroad due to traveling and healthcare contacts in foreign countries (Stenhem et al., 2010; Larsson et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by multiple citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:42:02.648873Z"
+    },
+    {
+      "id": "f966d8cf-1730-46df-81e3-ba7f795e223d",
+      "content_id": "fce38c06-509b-4b50-9381-757b1f49a69a",
+      "claim_id": "C11",
+      "claim": "No clear clustering of infections in certain wards was observed in the study dataset.",
+      "claim_type": "EXPLICIT",
+      "source": "In this study dataset, however, we observed no clear clustering of infections in certain wards.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on direct observation of the study data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:42:02.648873Z"
+    },
+    {
+      "id": "60d78a57-0130-4cf8-8fcf-3c6d031b1975",
+      "content_id": "fce38c06-509b-4b50-9381-757b1f49a69a",
+      "claim_id": "C12",
+      "claim": "Infections are distributed without noticeable clustering, presumably due to effective control measures taken in the study hospitals that maintain a low infection rate even in ICU settings.",
+      "claim_type": "EXPLICIT",
+      "source": "Infections are distributed without noticeable clustering, presumably due to effective control measures taken in the study hospitals that maintain a low infection rate even in ICU settings (Tiemersma et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on observation of data and inference about the cause, with citation support.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:42:02.648873Z"
+    },
+    {
+      "id": "b81f0b5f-e37f-4146-9f56-7d1e48279646",
+      "content_id": "fce38c06-509b-4b50-9381-757b1f49a69a",
+      "claim_id": "C13",
+      "claim": "Infected wards tend to have a higher number of inpatients than uninfected wards.",
+      "claim_type": "EXPLICIT",
+      "source": "Infected wards tend to have a higher number of inpatients, a longer average length of stay as well as a larger ward size.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by data shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:42:02.648873Z"
+    },
+    {
+      "id": "85f4540a-a7a4-4885-991a-6d533c823fb8",
+      "content_id": "fce38c06-509b-4b50-9381-757b1f49a69a",
+      "claim_id": "C14",
+      "claim": "Infected wards tend to have a longer average length of stay than uninfected wards.",
+      "claim_type": "EXPLICIT",
+      "source": "Infected wards tend to have a higher number of inpatients, a longer average length of stay as well as a larger ward size.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by data shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:42:02.648873Z"
+    },
+    {
+      "id": "b702944d-afe0-4476-99e1-799c30aa81df",
+      "content_id": "fce38c06-509b-4b50-9381-757b1f49a69a",
+      "claim_id": "C15",
+      "claim": "Infected wards tend to have a larger ward size than uninfected wards.",
+      "claim_type": "EXPLICIT",
+      "source": "Infected wards tend to have a higher number of inpatients, a longer average length of stay as well as a larger ward size.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by data shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:42:02.648873Z"
+    },
+    {
+      "id": "d26bf776-2d82-4295-abb9-b5e8d3d35f57",
+      "content_id": "fce38c06-509b-4b50-9381-757b1f49a69a",
+      "claim_id": "C16",
+      "claim": "The average number of infections is not observed to increase linearly with patient-days.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the average number of infections is not observed to increase linearly with patient-days, indicating that patient-days per ward alone cannot explain the observed patterns of infection (Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on analysis of data shown in Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:42:02.648873Z"
+    },
+    {
+      "id": "655e11c2-4cc1-40cc-81be-43facf20a7ef",
+      "content_id": "fce38c06-509b-4b50-9381-757b1f49a69a",
+      "claim_id": "C17",
+      "claim": "Patient-days per ward alone cannot explain the observed patterns of infection.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the average number of infections is not observed to increase linearly with patient-days, indicating that patient-days per ward alone cannot explain the observed patterns of infection (Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Inference based on data analysis shown in Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:42:02.648873Z"
+    },
+    {
+      "id": "5072bc66-a497-4da9-b1df-a5948ec38861",
+      "content_id": "fce38c06-509b-4b50-9381-757b1f49a69a",
+      "claim_id": "C18",
+      "claim": "MRSA transmission between colonized/infected patients and susceptible individuals is primarily mediated indirectly by healthcare workers in hospital settings.",
+      "claim_type": "EXPLICIT",
+      "source": "In hospital settings, MRSA transmission between colonized/infected patients and susceptible individuals is primarily mediated indirectly by healthcare workers (Lowy, 1998; Temime et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:42:02.648873Z"
+    },
+    {
+      "id": "fe72bb88-4432-444a-bdf4-61263e0f7a2a",
+      "content_id": "fce38c06-509b-4b50-9381-757b1f49a69a",
+      "claim_id": "C20",
+      "claim": "The daily in-hospital patient number fluctuates between 4000 and 7000 during the study period.",
+      "claim_type": "EXPLICIT",
+      "source": "The daily in-hospital patient number fluctuates between 4000 and 7000 during the study period (Figure 1\u2014figure supplement 2A\u2013B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on data shown in Figure 1\u2014figure supplement 2A\u2013B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:42:02.648873Z"
+    },
+    {
+      "id": "ef1fd6a0-ff9b-4b89-96f2-dd02d0d00171",
+      "content_id": "fce38c06-509b-4b50-9381-757b1f49a69a",
+      "claim_id": "C21",
+      "claim": "Patient hospitalization time, readmission time, and patient-to-patient contact time all follow heavy-tailed distributions, spanning several orders of magnitude.",
+      "claim_type": "EXPLICIT",
+      "source": "Patient hospitalization time, readmission time, and patient-to-patient contact time all follow heavy-tailed distributions, spanning several orders of magnitude (Figure 1\u2014figure supplement 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on data shown in Figure 1\u2014figure supplement 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:42:02.648873Z"
+    },
+    {
+      "id": "5b3ca7b3-6e1e-44c5-9019-dd85dfea78fc",
+      "content_id": "fce38c06-509b-4b50-9381-757b1f49a69a",
+      "claim_id": "C22",
+      "claim": "About 100 connected components coexist in the contact network each week.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, about 100 connected components coexist in the contact network each week (Figure 1\u2014figure supplement 2D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on data shown in Figure 1\u2014figure supplement 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:42:02.648873Z"
+    },
+    {
+      "id": "e563aaf5-ba41-415e-b858-72c138af84a8",
+      "content_id": "fce38c06-509b-4b50-9381-757b1f49a69a",
+      "claim_id": "C23",
+      "claim": "128,119 patients were transferred from one ward to another during their stay.",
+      "claim_type": "EXPLICIT",
+      "source": "128,119 patients were transferred from one ward to another during their stay, and another 280,506 patients were readmitted within 1 year of their previous discharge.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on analysis of hospitalization records.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:42:02.648873Z"
+    },
+    {
+      "id": "7571ef1c-0cf4-46ab-ac8e-c680165ae045",
+      "content_id": "fce38c06-509b-4b50-9381-757b1f49a69a",
+      "claim_id": "C24",
+      "claim": "280,506 patients were readmitted within 1 year of their previous discharge.",
+      "claim_type": "EXPLICIT",
+      "source": "128,119 patients were transferred from one ward to another during their stay, and another 280,506 patients were readmitted within 1 year of their previous discharge.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on analysis of hospitalization records.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:42:02.648873Z"
+    },
+    {
+      "id": "5f18e312-0b9e-4e80-8743-49261ef0719c",
+      "content_id": "fce38c06-509b-4b50-9381-757b1f49a69a",
+      "claim_id": "C28",
+      "claim": "All parameter values (\u03b2, I\u2080, C\u2080) increased in the first 3 or 4 years, and then gradually decreased thereafter.",
+      "claim_type": "EXPLICIT",
+      "source": "All parameter values increased in the first 3 or 4 years, and then gradually decreased thereafter.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on inference results shown in Figure 3A and Table 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:42:02.648873Z"
+    },
+    {
+      "id": "2b7a19cb-e767-446b-a29c-80cb382009f5",
+      "content_id": "fce38c06-509b-4b50-9381-757b1f49a69a",
+      "claim_id": "C29",
+      "claim": "The inferred dynamics fit the observed incidence well.",
+      "claim_type": "EXPLICIT",
+      "source": "The inferred dynamics fit the observed incidence well.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on comparison shown in Figure 3B and statistical analysis in Figure 3\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:42:02.648873Z"
+    },
+    {
+      "id": "65646732-6f36-4115-b793-1310f59718d8",
+      "content_id": "fce38c06-509b-4b50-9381-757b1f49a69a",
+      "claim_id": "C30",
+      "claim": "The observed number of infected wards lies at the peak of the simulated distribution.",
+      "claim_type": "EXPLICIT",
+      "source": "The observed number lies at the peak of the simulated distribution (vertical dash line).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on comparison shown in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:42:02.648873Z"
+    },
+    {
+      "id": "e8093572-72a3-4717-95fd-eaed9cd6127d",
+      "content_id": "fce38c06-509b-4b50-9381-757b1f49a69a",
+      "claim_id": "C31",
+      "claim": "The observed distribution of infections among wards agrees well with the simulated distributions.",
+      "claim_type": "EXPLICIT",
+      "source": "In Figure 3D, we compare this distribution obtained from 1000 simulations with what we observed in the data (red diamonds): the observed distribution agrees well with the simulated distributions.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on comparison shown in Figure 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:42:02.648873Z"
+    },
+    {
+      "id": "571f4aeb-bb9b-4c51-8726-7e5f70133940",
+      "content_id": "fce38c06-509b-4b50-9381-757b1f49a69a",
+      "claim_id": "C32",
+      "claim": "A substantial number of infections are inferred as importations.",
+      "claim_type": "EXPLICIT",
+      "source": "Figure 3E compares the distributions of both types of infections generated from 1000 simulations: a substantial number of infections are inferred as importations.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on inference results shown in Figure 3E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:42:02.648873Z"
+    },
+    {
+      "id": "67a7fa07-ad81-4ab2-9661-11ab27446775",
+      "content_id": "fce38c06-509b-4b50-9381-757b1f49a69a",
+      "claim_id": "C33",
+      "claim": "The number of imported and nosocomial cases obtained from inference generally matches the classification result using days from admission to infection.",
+      "claim_type": "EXPLICIT",
+      "source": "As shown in Figure 3\u2014figure supplement 3, the number of imported and nosocomial cases obtained from inference generally matches the classification result using days from admission to infection.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on comparison shown in Figure 3\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:42:02.648873Z"
+    },
+    {
+      "id": "1602f024-98d8-4a52-965b-3ca8964503df",
+      "content_id": "fce38c06-509b-4b50-9381-757b1f49a69a",
+      "claim_id": "C34",
+      "claim": "At its onset, during the first year of the outbreak, UK EMRSA-15 gradually invaded the hospital system from the community with only sporadic nosocomial transmission.",
+      "claim_type": "EXPLICIT",
+      "source": "Our findings indicate that, at its onset, during the first year of the outbreak, UK EMRSA-15 gradually invaded the hospital system from the community. Only sporadic nosocomial transmission occurred.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on inference of parameters and transmission dynamics.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:42:02.648873Z"
+    },
+    {
+      "id": "5b485fce-0b5f-41e8-890e-4125cc508064",
+      "content_id": "fce38c06-509b-4b50-9381-757b1f49a69a",
+      "claim_id": "C37",
+      "claim": "The simultaneous rise in importation rates may have been caused by household transmission initiated by asymptomatically colonized patients discharged from hospitals.",
+      "claim_type": "EXPLICIT",
+      "source": "This simultaneous rise may have been caused by household transmission initiated by asymptomatically colonized patients discharged from hospitals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative explanation for the observed pattern.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:42:02.648873Z"
+    },
+    {
+      "id": "2bb2e3d1-ed1d-406c-8dc7-1729afddfe76",
+      "content_id": "fce38c06-509b-4b50-9381-757b1f49a69a",
+      "claim_id": "C38",
+      "claim": "Both transmission and importation rates were suppressed after the growth phase.",
+      "claim_type": "EXPLICIT",
+      "source": "After this growth phase, both transmission and importation rates were suppressed.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on inference results shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:42:02.648873Z"
+    },
+    {
+      "id": "ae11b95d-a8e3-4691-a771-6473dd27f243",
+      "content_id": "fce38c06-509b-4b50-9381-757b1f49a69a",
+      "claim_id": "C39",
+      "claim": "The UK EMRSA-15 outbreak appears near eliminated in Swedish hospitals, represented by the inferred low values of all parameters.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, the UK EMRSA-15 outbreak appears near eliminated in Swedish hospitals, represented by the inferred low values of all parameters.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on inference results shown in Figure 3A.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:42:02.648873Z"
+    },
+    {
+      "id": "59e97c9d-8574-4c10-bac2-ce350a5c67c6",
+      "content_id": "fce38c06-509b-4b50-9381-757b1f49a69a",
+      "claim_id": "C40",
+      "claim": "If control measures in hospital were to be relaxed, the colonized patients might spark another outbreak due to the lengthy colonization period.",
+      "claim_type": "EXPLICIT",
+      "source": "However, if control measures in hospital were to be relaxed, the colonized patients might spark another outbreak due to the lengthy colonization period, which highlights the need for asymptomatic colonization control in order to effect MRSA elimination (Cooper et al., 2004a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about potential future outcomes, with citation support.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:42:02.648873Z"
+    },
+    {
+      "id": "e0c139ae-65dc-4107-affa-3385f682903a",
+      "content_id": "fce38c06-509b-4b50-9381-757b1f49a69a",
+      "claim_id": "C42",
+      "claim": "The complex spatiotemporal interaction patterns within the network give rise to a small number of patients with a disproportionately high risk of colonization.",
+      "claim_type": "EXPLICIT",
+      "source": "The complex spatiotemporal interaction patterns within the network give rise to a small number of patients with a disproportionately high risk of colonization.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on inference from the observed power-law distribution of colonization probability.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:42:02.648873Z"
+    },
+    {
+      "id": "26164773-cc7d-4bcc-bc36-9a25ee0f7ddd",
+      "content_id": "fce38c06-509b-4b50-9381-757b1f49a69a",
+      "claim_id": "C43",
+      "claim": "High-risk patients tend to appear in densely connected clusters.",
+      "claim_type": "EXPLICIT",
+      "source": "High-risk patients tend to appear in densely connected clusters.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on visualization shown in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:42:02.648873Z"
+    },
+    {
+      "id": "ff475011-38f2-4b36-879b-a1e549f3dd1c",
+      "content_id": "fce38c06-509b-4b50-9381-757b1f49a69a",
+      "claim_id": "C44",
+      "claim": "The proposed intervention strategy can avert considerable numbers of colonization and infection.",
+      "claim_type": "EXPLICIT",
+      "source": "The findings show that the proposed intervention strategy can avert considerable numbers of colonization and infection (Figure 5A\u2013B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on retrospective control experiment results shown in Figure 5A\u2013B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:42:02.648873Z"
+    },
+    {
+      "id": "c2f0e720-c362-4424-b14d-0bad12ccd013",
+      "content_id": "fce38c06-509b-4b50-9381-757b1f49a69a",
+      "claim_id": "C45",
+      "claim": "Decreasing the decolonization threshold leads to a larger screened population and reduces colonization and infection further.",
+      "claim_type": "EXPLICIT",
+      "source": "Decreasing the decolonization threshold leads to a larger screened population (as shown in the inset of Figure 5B), and thus reduces colonization and infection further.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on retrospective control experiment results shown in Figure 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:42:02.648873Z"
+    },
+    {
+      "id": "6ec8316f-d03d-4849-836f-1b3a3ee31afd",
+      "content_id": "fce38c06-509b-4b50-9381-757b1f49a69a",
+      "claim_id": "C46",
+      "claim": "The marginal benefit of decreasing the decolonization threshold becomes negligible below a certain threshold value.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the marginal benefit becomes negligible below a certain threshold value, as the remaining colonized and infected patients are possibly caused by importation, which cannot be directly controlled by inpatient intervention.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on retrospective control experiment results shown in Figure 5A\u2013B, with inference about the cause.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:42:02.648873Z"
+    },
+    {
+      "id": "f6d06d45-9a17-4a27-9873-fc71c73f6160",
+      "content_id": "fce38c06-509b-4b50-9381-757b1f49a69a",
+      "claim_id": "C47",
+      "claim": "The decolonization success rate plays an important role in intervention effectiveness.",
+      "claim_type": "EXPLICIT",
+      "source": "The decolonization success rate also plays an important role, as indicated by the increased colonization and infection for the lower success rate.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on comparison of results with different success rates shown in Figure 5A\u2013B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:42:02.648873Z"
+    },
+    {
+      "id": "8df40ba1-96b5-4fe4-8d77-b7b70499f697",
+      "content_id": "fce38c06-509b-4b50-9381-757b1f49a69a",
+      "claim_id": "C48",
+      "claim": "Inference-based screening of approximately 0.89% of all patients can avert up to 38% of infections and 9% of colonizations on average.",
+      "claim_type": "EXPLICIT",
+      "source": "On average, inference-based screening of approximately 0.89% (6,617/743,599) of all patients can avert up to 38% (121/315) of infections and 9% (1,610/17,810) of colonizations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on retrospective control experiment results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:42:02.648873Z"
+    },
+    {
+      "id": "f52eacef-3322-422f-a7b3-906f0ea5d132",
+      "content_id": "fce38c06-509b-4b50-9381-757b1f49a69a",
+      "claim_id": "C49",
+      "claim": "Heuristic control measures based on number of contacts reduced infections and colonizations by 21% and 4%, respectively, given similar numbers of screened patients.",
+      "claim_type": "EXPLICIT",
+      "source": "In comparison, the other three methods given similar numbers of screened patients only reduced infections and colonizations by 21% and 4% (number of contacts), 27% and 6% (length of stay), and 28% and 6% (contact tracing), respectively.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on retrospective control experiment results shown in Figure 5C\u2013D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:42:02.648873Z"
+    },
+    {
+      "id": "dddbefd0-9e17-41a8-a79a-a7734f4da035",
+      "content_id": "fce38c06-509b-4b50-9381-757b1f49a69a",
+      "claim_id": "C50",
+      "claim": "Heuristic control measures based on length of stay reduced infections and colonizations by 27% and 6%, respectively, given similar numbers of screened patients.",
+      "claim_type": "EXPLICIT",
+      "source": "In comparison, the other three methods given similar numbers of screened patients only reduced infections and colonizations by 21% and 4% (number of contacts), 27% and 6% (length of stay), and 28% and 6% (contact tracing), respectively.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on retrospective control experiment results shown in Figure 5C\u2013D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:42:02.648873Z"
+    },
+    {
+      "id": "3604907f-caf2-4063-a6d1-85d79f3eb480",
+      "content_id": "fce38c06-509b-4b50-9381-757b1f49a69a",
+      "claim_id": "C51",
+      "claim": "Heuristic control measures based on contact tracing reduced infections and colonizations by 28% and 6%, respectively, given similar numbers of screened patients.",
+      "claim_type": "EXPLICIT",
+      "source": "In comparison, the other three methods given similar numbers of screened patients only reduced infections and colonizations by 21% and 4% (number of contacts), 27% and 6% (length of stay), and 28% and 6% (contact tracing), respectively.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on retrospective control experiment results shown in Figure 5C\u2013D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:42:02.648873Z"
+    },
+    {
+      "id": "66be86ee-4d49-47ff-8311-8839bd3e4757",
+      "content_id": "fce38c06-509b-4b50-9381-757b1f49a69a",
+      "claim_id": "C52",
+      "claim": "The inference-based intervention can identify and treat pivotal individuals (superspreaders) who may otherwise transmit MRSA asymptomatically.",
+      "claim_type": "EXPLICIT",
+      "source": "As a result, the inference-based intervention can identify and treat the pivotal individuals, or superspreaders (Pei and Makse, 2013; Pei et al., 2014; Pei et al., 2017; Pei et al., 2018b; Teng et al., 2016), who may otherwise transmit MRSA asymptomatically in the first place.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on inference from the intervention results, with citations to related work on superspreaders.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:42:02.648873Z"
+    },
+    {
+      "id": "41c84ffa-d2cd-4eb5-ba6b-7e3f1a24296b",
+      "content_id": "fce38c06-509b-4b50-9381-757b1f49a69a",
+      "claim_id": "C53",
+      "claim": "The preventive approach of inference-based intervention is more effective than contact tracing in the presence of frequent importation, as it disrupts probable transmission pathways.",
+      "claim_type": "EXPLICIT",
+      "source": "This preventive approach is more effective than contact tracing in the presence of frequent importation, as it disrupts probable transmission pathways.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on inference from the intervention results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:42:02.648873Z"
+    },
+    {
+      "id": "f9106bf7-b37b-4203-a615-819190e9e6ef",
+      "content_id": "fce38c06-509b-4b50-9381-757b1f49a69a",
+      "claim_id": "C54",
+      "claim": "The dataset contains admission and discharge records of 743,599 distinct patients from 66 hospitals (271 clinics, 1041 wards) in Stockholm County, Sweden.",
+      "claim_type": "EXPLICIT",
+      "source": "The dataset contains admission and discharge records of 743,599 distinct patients from 66 hospitals (271 clinics, 1041 wards) in Stockholm County, Sweden (Jarynowski and Liljeros, 2015; Rocha et al., 2016), spanning over 3500 continuous days during the 2000s.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of the dataset used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:42:02.648873Z"
+    },
+    {
+      "id": "3f53e947-29b8-440c-98b8-ca41539aa027",
+      "content_id": "fce38c06-509b-4b50-9381-757b1f49a69a",
+      "claim_id": "C55",
+      "claim": "The dataset spans over 3500 continuous days during the 2000s.",
+      "claim_type": "EXPLICIT",
+      "source": "The dataset contains admission and discharge records of 743,599 distinct patients from 66 hospitals (271 clinics, 1041 wards) in Stockholm County, Sweden (Jarynowski and Liljeros, 2015; Rocha et al., 2016), spanning over 3500 continuous days during the 2000s.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of the dataset used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:42:02.648873Z"
+    },
+    {
+      "id": "cf2d7b59-254e-471b-a970-b625a132058f",
+      "content_id": "fce38c06-509b-4b50-9381-757b1f49a69a",
+      "claim_id": "C56",
+      "claim": "A total of 2,041,531 admission records were collected.",
+      "claim_type": "EXPLICIT",
+      "source": "In total, 2,041,531 admission records were collected.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of the dataset used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:42:02.648873Z"
+    },
+    {
+      "id": "a6ac135d-7407-4141-a882-47aa225ac522",
+      "content_id": "fce38c06-509b-4b50-9381-757b1f49a69a",
+      "claim_id": "C57",
+      "claim": "The patients constitute over one third of the total 2.2 million population of Stockholm County.",
+      "claim_type": "EXPLICIT",
+      "source": "The hospitalization dataset is quite comprehensive as the patients constitute over one third of the total 2.2 million population of Stockholm County.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of the dataset used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:42:02.648873Z"
+    },
+    {
+      "id": "3e5cd9c3-a450-4cd7-aaa3-c04dffbe6364",
+      "content_id": "fce38c06-509b-4b50-9381-757b1f49a69a",
+      "claim_id": "C58",
+      "claim": "A total of 991 positive cases from 172 different strains were confirmed.",
+      "claim_type": "EXPLICIT",
+      "source": "A total of 991 positive cases from 172 different strains were confirmed, and the most prevalent strain was UK EMRSA-15 (289 cases).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of the dataset used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:42:02.648873Z"
+    },
+    {
+      "id": "fdf7dd8d-50dc-467e-8e05-606ddefea533",
+      "content_id": "fce38c06-509b-4b50-9381-757b1f49a69a",
+      "claim_id": "C59",
+      "claim": "The most prevalent strain was UK EMRSA-15 (289 cases).",
+      "claim_type": "EXPLICIT",
+      "source": "A total of 991 positive cases from 172 different strains were confirmed, and the most prevalent strain was UK EMRSA-15 (289 cases).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of the dataset used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:42:02.648873Z"
+    },
+    {
+      "id": "b397aa36-2182-4f94-b6e3-03379e6ecc2c",
+      "content_id": "fce38c06-509b-4b50-9381-757b1f49a69a",
+      "claim_id": "C60",
+      "claim": "UK EMRSA-15 is present in 16 countries worldwide.",
+      "claim_type": "EXPLICIT",
+      "source": "UK EMRSA-15 is present in 16 countries worldwide (Grundmann et al., 2010; Das et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:42:02.648873Z"
+    },
+    {
+      "id": "c63fd89f-126f-42c1-ab7e-49cbebd97295",
+      "content_id": "fce38c06-509b-4b50-9381-757b1f49a69a",
+      "claim_id": "C61",
+      "claim": "Heterogeneity in infection risk exists across different types of ward.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous studies indicate that heterogeneity in infection risk exists across different types of ward (Bootsma et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:42:02.648873Z"
+    },
+    {
+      "id": "573570ea-6fbc-4d2b-b30d-3a36c2e4a91d",
+      "content_id": "fce38c06-509b-4b50-9381-757b1f49a69a",
+      "claim_id": "C62",
+      "claim": "Patients in intensive care units (ICUs) typically suffer a higher risk of infection than those in non-ICU settings due to higher patient-healthcare-worker contact rates, high levels of antibiotic use, and high patient vulnerability to infection.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, patients in intensive care units (ICUs) typically suffer a higher risk of infection than those in non-ICU settings due to higher patient-healthcare-worker contact rates, high levels of antibiotic use, and high patient vulnerability to infection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on established knowledge about ICU infection risk.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:42:02.648873Z"
+    },
+    {
+      "id": "dafa47ab-5ed2-4752-8d37-05a650fd16c8",
+      "content_id": "fce38c06-509b-4b50-9381-757b1f49a69a",
+      "claim_id": "C63",
+      "claim": "The colonization probability estimated in real time is highly correlated with the results obtained using information from the whole course of the epidemic.",
+      "claim_type": "EXPLICIT",
+      "source": "The colonization probabilities estimated in real time are highly correlated with the results obtained using information from the whole course of the epidemic, shown in Figure 4C.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on comparison shown in the inset of Figure 5A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:42:02.648873Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "6a206e54-cf09-48df-9eba-09356db711c9",
+      "content_id": "fce38c06-509b-4b50-9381-757b1f49a69a",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "MRSA is a widespread antibiotic-resistant pathogen that has expanded from healthcare facilities to community settings, with geographic variation in prevalence. Sweden maintains low MRSA prevalence, with substantial importation from abroad.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C10 provide well-cited background on MRSA epidemiology from established literature. The claims about MRSA's threat, geographic distribution, and Sweden's situation are supported by multiple citations to prior research and represent accepted knowledge in the field.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:42:02.648873Z"
+    },
+    {
+      "id": "a01384ee-94f4-46ee-848b-e744488a6468",
+      "content_id": "fce38c06-509b-4b50-9381-757b1f49a69a",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "In the study dataset, MRSA infections show no clear ward clustering. Infected wards have higher patient numbers, longer stays, and larger sizes than uninfected wards, but patient-days alone cannot explain infection patterns.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C11-C17 describe observed patterns in the data with appropriate visual evidence (Figure 1). The statistical observations about ward characteristics are directly supported by data, though the causal inference about control measures (C12) is speculative but reasonably supported by citation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:42:02.648873Z"
+    },
+    {
+      "id": "20a7b563-0919-4b4c-8303-212cffd9e91d",
+      "content_id": "fce38c06-509b-4b50-9381-757b1f49a69a",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The hospital contact network exhibits complex spatiotemporal dynamics with heavy-tailed distributions of hospitalization, readmission, and contact times. Patient transfers and readmissions connect otherwise isolated facilities.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C18-C24 characterize the contact network structure with data from Figure 1 supplements. The observations about network properties, patient movements, and temporal patterns are well-documented. C18 is supported by prior literature on MRSA transmission mechanisms.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:42:02.648873Z"
+    },
+    {
+      "id": "4401b974-aab5-4a22-874e-67044aad7c0a",
+      "content_id": "fce38c06-509b-4b50-9381-757b1f49a69a",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The inference system successfully estimated time-varying transmission parameters (\u03b2, I\u2080, C\u2080) for UK EMRSA-15 over 6 years. The inferred dynamics fit observed incidence well and accurately reproduce spatial distribution of infections and distinguish imported from nosocomial cases.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C28-C33 demonstrate model validation with strong agreement between simulations and observations (Figure 3). Statistical analyses (Figure 3 supplements) support goodness of fit. The classification of imported vs. nosocomial cases matches clinical criteria (48-hour threshold), providing external validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:42:02.648873Z"
+    },
+    {
+      "id": "3dabb0ff-565b-420d-84bd-fc8fcb460e82",
+      "content_id": "fce38c06-509b-4b50-9381-757b1f49a69a",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "UK EMRSA-15 gradually invaded Swedish hospitals from the community during year 1, experienced growth in transmission and importation rates in years 2-4, then declined to near-elimination by year 6. Household transmission by discharged colonized patients may have driven importation increases.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C34, C38, and C39 are supported by inferred parameter trends (Figure 3A, Table 2). However, C37 and C40 are explicitly speculative about mechanisms (household transmission, future outbreak risk). While plausible, these mechanistic explanations lack direct evidence and represent hypotheses rather than demonstrated findings.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:42:02.648873Z"
+    },
+    {
+      "id": "79f7f614-fa46-4148-9dbd-842381905ffa",
+      "content_id": "fce38c06-509b-4b50-9381-757b1f49a69a",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The contact network's spatiotemporal complexity creates a power-law distribution of colonization risk, with high-risk patients appearing in densely connected clusters.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C42-C43 are supported by the power-law distribution analysis (Figure 4B, y\u221dx^-2.13) with rigorous statistical testing (Figure 4 supplement 1) and network visualization (Figure 4C). The emergence of heterogeneous risk from network structure is well-demonstrated.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:42:02.648873Z"
+    },
+    {
+      "id": "d66177cb-1dfe-4546-a1b2-d885007152f3",
+      "content_id": "fce38c06-509b-4b50-9381-757b1f49a69a",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Inference-based screening of 0.89% of patients can avert 38% of infections and 9% of colonizations. Effectiveness increases with lower decolonization thresholds but shows diminishing returns. Decolonization success rate significantly impacts outcomes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C44-C48 are supported by retrospective control experiments (Figure 5A-B) with 1000 simulation replicates. The quantitative results are clearly presented with uncertainty estimates. The diminishing returns observation (C46) is appropriately explained by importation that cannot be controlled by inpatient intervention.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:42:02.648873Z"
+    },
+    {
+      "id": "68fde83b-02f4-4ba3-a912-7d654c68d084",
+      "content_id": "fce38c06-509b-4b50-9381-757b1f49a69a",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Inference-based intervention substantially outperforms heuristic strategies (number of contacts: 21% infection reduction; length of stay: 27%; contact tracing: 28%) by identifying superspreaders and disrupting transmission pathways preventively.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C49-C51 provide quantitative comparisons from controlled experiments (Figure 5C-D) with consistent screening numbers. C52-C53 offer mechanistic explanations supported by the superior performance and cited superspreader literature. The preventive approach rationale is logical given frequent importation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:42:02.648873Z"
+    },
+    {
+      "id": "65ca0f3a-4235-44c8-9b0b-cd1afcc39884",
+      "content_id": "fce38c06-509b-4b50-9381-757b1f49a69a",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The study analyzed a comprehensive dataset of 743,599 patients from 66 Swedish hospitals over 3500 days, including 991 MRSA cases from 172 strains, with UK EMRSA-15 being most prevalent (289 cases).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C54-C60 provide dataset description with specific numbers and appropriate citations. The comprehensiveness claim (C57) is justified by the large population coverage (>1/3 of Stockholm County). C60 about UK EMRSA-15 global presence is citation-supported.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:42:02.648873Z"
+    },
+    {
+      "id": "9b44ad2f-6941-4476-947c-b2ef06c50985",
+      "content_id": "fce38c06-509b-4b50-9381-757b1f49a69a",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Heterogeneity in infection risk exists across ward types, with ICU patients at higher risk due to increased healthcare worker contact, antibiotic use, and patient vulnerability.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C61-C62 represent established knowledge about nosocomial infection risk factors. C61 is citation-supported, and C62 describes well-known ICU risk factors. These provide context for the study's modeling assumptions.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:42:02.648873Z"
+    },
+    {
+      "id": "26a778dd-6449-4299-9cf2-5c51a3e01162",
+      "content_id": "fce38c06-509b-4b50-9381-757b1f49a69a",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Real-time colonization probability estimates are highly correlated with retrospective estimates using complete outbreak information.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C63 is supported by correlation analysis shown in Figure 5A inset. This validates that the inference-based intervention can be implemented prospectively in real-time, which is critical for practical application.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:42:02.648873Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "90ce282c-1fb4-4d3e-b89c-22633dfbda46",
+      "result_id": "6a206e54-cf09-48df-9eba-09356db711c9"
+    },
+    {
+      "claim_id": "de0294d9-73a3-4fba-81d3-35d835d763ab",
+      "result_id": "6a206e54-cf09-48df-9eba-09356db711c9"
+    },
+    {
+      "claim_id": "6870fab2-5e2a-4791-ae5c-dfbcf02a5eca",
+      "result_id": "6a206e54-cf09-48df-9eba-09356db711c9"
+    },
+    {
+      "claim_id": "cbe487ad-fd3c-4468-b74a-3a3a3bd1eced",
+      "result_id": "6a206e54-cf09-48df-9eba-09356db711c9"
+    },
+    {
+      "claim_id": "62c0a10a-59fc-41be-8123-8f943bca057a",
+      "result_id": "6a206e54-cf09-48df-9eba-09356db711c9"
+    },
+    {
+      "claim_id": "f1722d05-d056-4328-b800-ec0a9d2f48f2",
+      "result_id": "6a206e54-cf09-48df-9eba-09356db711c9"
+    },
+    {
+      "claim_id": "620bb49c-a0fd-4d68-90e9-be43638c3352",
+      "result_id": "6a206e54-cf09-48df-9eba-09356db711c9"
+    },
+    {
+      "claim_id": "366fec5f-47bc-449f-a8ec-d7a723ea5427",
+      "result_id": "6a206e54-cf09-48df-9eba-09356db711c9"
+    },
+    {
+      "claim_id": "8e57179d-f5f5-49c5-b41f-c295b3b5eba8",
+      "result_id": "6a206e54-cf09-48df-9eba-09356db711c9"
+    },
+    {
+      "claim_id": "d81019d7-587a-4335-b9f2-144c7743eab2",
+      "result_id": "6a206e54-cf09-48df-9eba-09356db711c9"
+    },
+    {
+      "claim_id": "f966d8cf-1730-46df-81e3-ba7f795e223d",
+      "result_id": "a01384ee-94f4-46ee-848b-e744488a6468"
+    },
+    {
+      "claim_id": "60d78a57-0130-4cf8-8fcf-3c6d031b1975",
+      "result_id": "a01384ee-94f4-46ee-848b-e744488a6468"
+    },
+    {
+      "claim_id": "b81f0b5f-e37f-4146-9f56-7d1e48279646",
+      "result_id": "a01384ee-94f4-46ee-848b-e744488a6468"
+    },
+    {
+      "claim_id": "85f4540a-a7a4-4885-991a-6d533c823fb8",
+      "result_id": "a01384ee-94f4-46ee-848b-e744488a6468"
+    },
+    {
+      "claim_id": "b702944d-afe0-4476-99e1-799c30aa81df",
+      "result_id": "a01384ee-94f4-46ee-848b-e744488a6468"
+    },
+    {
+      "claim_id": "d26bf776-2d82-4295-abb9-b5e8d3d35f57",
+      "result_id": "a01384ee-94f4-46ee-848b-e744488a6468"
+    },
+    {
+      "claim_id": "655e11c2-4cc1-40cc-81be-43facf20a7ef",
+      "result_id": "a01384ee-94f4-46ee-848b-e744488a6468"
+    },
+    {
+      "claim_id": "5072bc66-a497-4da9-b1df-a5948ec38861",
+      "result_id": "20a7b563-0919-4b4c-8303-212cffd9e91d"
+    },
+    {
+      "claim_id": "fe72bb88-4432-444a-bdf4-61263e0f7a2a",
+      "result_id": "20a7b563-0919-4b4c-8303-212cffd9e91d"
+    },
+    {
+      "claim_id": "ef1fd6a0-ff9b-4b89-96f2-dd02d0d00171",
+      "result_id": "20a7b563-0919-4b4c-8303-212cffd9e91d"
+    },
+    {
+      "claim_id": "5b3ca7b3-6e1e-44c5-9019-dd85dfea78fc",
+      "result_id": "20a7b563-0919-4b4c-8303-212cffd9e91d"
+    },
+    {
+      "claim_id": "e563aaf5-ba41-415e-b858-72c138af84a8",
+      "result_id": "20a7b563-0919-4b4c-8303-212cffd9e91d"
+    },
+    {
+      "claim_id": "7571ef1c-0cf4-46ab-ac8e-c680165ae045",
+      "result_id": "20a7b563-0919-4b4c-8303-212cffd9e91d"
+    },
+    {
+      "claim_id": "5f18e312-0b9e-4e80-8743-49261ef0719c",
+      "result_id": "4401b974-aab5-4a22-874e-67044aad7c0a"
+    },
+    {
+      "claim_id": "2b7a19cb-e767-446b-a29c-80cb382009f5",
+      "result_id": "4401b974-aab5-4a22-874e-67044aad7c0a"
+    },
+    {
+      "claim_id": "65646732-6f36-4115-b793-1310f59718d8",
+      "result_id": "4401b974-aab5-4a22-874e-67044aad7c0a"
+    },
+    {
+      "claim_id": "e8093572-72a3-4717-95fd-eaed9cd6127d",
+      "result_id": "4401b974-aab5-4a22-874e-67044aad7c0a"
+    },
+    {
+      "claim_id": "571f4aeb-bb9b-4c51-8726-7e5f70133940",
+      "result_id": "4401b974-aab5-4a22-874e-67044aad7c0a"
+    },
+    {
+      "claim_id": "67a7fa07-ad81-4ab2-9661-11ab27446775",
+      "result_id": "4401b974-aab5-4a22-874e-67044aad7c0a"
+    },
+    {
+      "claim_id": "1602f024-98d8-4a52-965b-3ca8964503df",
+      "result_id": "3dabb0ff-565b-420d-84bd-fc8fcb460e82"
+    },
+    {
+      "claim_id": "5b485fce-0b5f-41e8-890e-4125cc508064",
+      "result_id": "3dabb0ff-565b-420d-84bd-fc8fcb460e82"
+    },
+    {
+      "claim_id": "2bb2e3d1-ed1d-406c-8dc7-1729afddfe76",
+      "result_id": "3dabb0ff-565b-420d-84bd-fc8fcb460e82"
+    },
+    {
+      "claim_id": "ae11b95d-a8e3-4691-a771-6473dd27f243",
+      "result_id": "3dabb0ff-565b-420d-84bd-fc8fcb460e82"
+    },
+    {
+      "claim_id": "59e97c9d-8574-4c10-bac2-ce350a5c67c6",
+      "result_id": "3dabb0ff-565b-420d-84bd-fc8fcb460e82"
+    },
+    {
+      "claim_id": "e0c139ae-65dc-4107-affa-3385f682903a",
+      "result_id": "79f7f614-fa46-4148-9dbd-842381905ffa"
+    },
+    {
+      "claim_id": "26164773-cc7d-4bcc-bc36-9a25ee0f7ddd",
+      "result_id": "79f7f614-fa46-4148-9dbd-842381905ffa"
+    },
+    {
+      "claim_id": "ff475011-38f2-4b36-879b-a1e549f3dd1c",
+      "result_id": "d66177cb-1dfe-4546-a1b2-d885007152f3"
+    },
+    {
+      "claim_id": "c2f0e720-c362-4424-b14d-0bad12ccd013",
+      "result_id": "d66177cb-1dfe-4546-a1b2-d885007152f3"
+    },
+    {
+      "claim_id": "6ec8316f-d03d-4849-836f-1b3a3ee31afd",
+      "result_id": "d66177cb-1dfe-4546-a1b2-d885007152f3"
+    },
+    {
+      "claim_id": "f6d06d45-9a17-4a27-9873-fc71c73f6160",
+      "result_id": "d66177cb-1dfe-4546-a1b2-d885007152f3"
+    },
+    {
+      "claim_id": "8df40ba1-96b5-4fe4-8d77-b7b70499f697",
+      "result_id": "d66177cb-1dfe-4546-a1b2-d885007152f3"
+    },
+    {
+      "claim_id": "f52eacef-3322-422f-a7b3-906f0ea5d132",
+      "result_id": "68fde83b-02f4-4ba3-a912-7d654c68d084"
+    },
+    {
+      "claim_id": "dddbefd0-9e17-41a8-a79a-a7734f4da035",
+      "result_id": "68fde83b-02f4-4ba3-a912-7d654c68d084"
+    },
+    {
+      "claim_id": "3604907f-caf2-4063-a6d1-85d79f3eb480",
+      "result_id": "68fde83b-02f4-4ba3-a912-7d654c68d084"
+    },
+    {
+      "claim_id": "66be86ee-4d49-47ff-8311-8839bd3e4757",
+      "result_id": "68fde83b-02f4-4ba3-a912-7d654c68d084"
+    },
+    {
+      "claim_id": "41c84ffa-d2cd-4eb5-ba6b-7e3f1a24296b",
+      "result_id": "68fde83b-02f4-4ba3-a912-7d654c68d084"
+    },
+    {
+      "claim_id": "f9106bf7-b37b-4203-a615-819190e9e6ef",
+      "result_id": "65ca0f3a-4235-44c8-9b0b-cd1afcc39884"
+    },
+    {
+      "claim_id": "3f53e947-29b8-440c-98b8-ca41539aa027",
+      "result_id": "65ca0f3a-4235-44c8-9b0b-cd1afcc39884"
+    },
+    {
+      "claim_id": "cf2d7b59-254e-471b-a970-b625a132058f",
+      "result_id": "65ca0f3a-4235-44c8-9b0b-cd1afcc39884"
+    },
+    {
+      "claim_id": "a6ac135d-7407-4141-a882-47aa225ac522",
+      "result_id": "65ca0f3a-4235-44c8-9b0b-cd1afcc39884"
+    },
+    {
+      "claim_id": "3e5cd9c3-a450-4cd7-aaa3-c04dffbe6364",
+      "result_id": "65ca0f3a-4235-44c8-9b0b-cd1afcc39884"
+    },
+    {
+      "claim_id": "fdf7dd8d-50dc-467e-8e05-606ddefea533",
+      "result_id": "65ca0f3a-4235-44c8-9b0b-cd1afcc39884"
+    },
+    {
+      "claim_id": "b397aa36-2182-4f94-b6e3-03379e6ecc2c",
+      "result_id": "65ca0f3a-4235-44c8-9b0b-cd1afcc39884"
+    },
+    {
+      "claim_id": "c63fd89f-126f-42c1-ab7e-49cbebd97295",
+      "result_id": "9b44ad2f-6941-4476-947c-b2ef06c50985"
+    },
+    {
+      "claim_id": "573570ea-6fbc-4d2b-b30d-3a36c2e4a91d",
+      "result_id": "9b44ad2f-6941-4476-947c-b2ef06c50985"
+    },
+    {
+      "claim_id": "dafa47ab-5ed2-4752-8d37-05a650fd16c8",
+      "result_id": "26a778dd-6449-4299-9cf2-5c51a3e01162"
+    }
+  ],
+  "comparisons": []
+}

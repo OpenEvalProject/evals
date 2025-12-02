@@ -1,0 +1,336 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C54",
+      "C55",
+      "C68",
+      "C151"
+    ],
+    "result": "The authors identify two types of genetic regime transitions in two-module developmental systems: local bifurcations (Hopf and saddle-node) and global bifurcations (SNIC). The global bifurcation type (SNIC) is more generic, more robust, and better preserves dynamical information than the local bifurcation type. SNIC bifurcations arise when the transition between modules is smooth, while Hopf bifurcations occur when the transition is more non-linear.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C54, C55, C68, and C151 are directly supported by bifurcation analysis and simulations shown in Figures 2, 4, and supplementary figures. The characterization of SNIC as more generic (C5), robust (C6, C57), and better at preserving information (C7, C72-C74, C77) is demonstrated through mutual information calculations (Figure 3E) and robustness tests under noise and parameter variations (Figures 3, 5, 6). The mathematical framework and computational results provide strong convergent evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C62",
+      "C63"
+    ],
+    "result": "The authors introduce a two-module modeling framework where developmental expression phases (dynamic and static) are separated into independent transcriptional modules acting on multiple genes, with smooth switching between modules. This framework is motivated by observations in insects where different enhancers control gap gene waves at different developmental phases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C51 describe the core modeling assumptions, which are explicitly implemented in the models (Equation 1, Figures 2, 4). The motivation from insect development (C52-C53) is supported by citations to El-Sherif and Levine 2016 and Zhu et al. 2017. The model properties (C62-C63) are demonstrated in the simulations. However, these are modeling assumptions rather than experimental validations, so the biological relevance depends on consistency with existing data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C76",
+      "C77",
+      "C108",
+      "C109",
+      "C115",
+      "C121"
+    ],
+    "result": "Model 2 (SNIC bifurcation) consistently outperforms Model 1 (Hopf bifurcation) in robustness to noise and parameter variations. SNIC bifurcations preserve phase information better because fixed points form directly on the oscillatory trajectory, while Hopf bifurcations erase phase memory through an intermediate single-fixed-point regime. This superiority holds even with asymmetric parameters and basin geometries.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The mutual information analysis (C72-C74, Figure 3E) quantitatively demonstrates Model 2's superiority. The mechanistic explanation (C76-C77) is theoretically sound and consistent with the data. Robustness to asymmetries (C108-C109, C115, C121) is demonstrated in Figures 5-6 and supplementary figures. The statistical metric (mutual information) is appropriate, and the results are consistent across multiple perturbations. The sample size of simulations appears adequate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C71",
+      "C135",
+      "C140",
+      "C143"
+    ],
+    "result": "The SNIC bifurcation provides an explicit mechanism for the infinite-period scenario in segmentation, where the oscillation period diverges to infinity as cells become more anterior. This contrasts with Hopf bifurcations where the period remains finite at the transition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C71 is directly demonstrated in Figure 2N showing period divergence for Model 2. The theoretical prediction (C135) about period behavior is consistent with dynamical systems theory. The predictions about wavelength matching (C140, C143) follow logically from the period divergence. However, these are model predictions rather than experimental validations, so experimental confirmation would strengthen the result.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C93",
+      "C152",
+      "C153",
+      "C154"
+    ],
+    "result": "SNIC bifurcations spontaneously emerge in two-module systems due to the smooth interpolation between oscillatory and bistable flows in phase space. This is surprising because global bifurcations typically require special symmetries or parameter fine-tuning, but here they arise generically from the two-module structure.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The emergence of SNIC bifurcations is demonstrated across multiple model variants (C93, Figure 4 supplements). The mechanistic explanation (C87, C152-C154) is theoretically sound and supported by phase space analysis (Figure 4I). The claim of surprise (C86) is justified given that global bifurcations typically require fine-tuning. The geometric models provide clear visualization of the mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C146",
+      "C148",
+      "C149",
+      "C150"
+    ],
+    "result": "SNIC bifurcations generate asymmetric 'sawtooth' wave patterns in spatial profiles, where transitions between states occur at different rates. This asymmetry is observed in all Model 2 variants but absent from Model 1 variants, and may explain segment polarity in development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The asymmetric wave patterns are clearly demonstrated in Figure 7 and supplements (C146, C148). The mechanistic explanation linking this to relaxation oscillations (C149) is theoretically sound with citation to relevant work. However, the claim about solving segment polarity (C150) is more speculative, as it relies on consistency with prior proposals (Meinhardt 1982) rather than direct experimental validation. The pattern is a robust prediction of the model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C157",
+      "C158",
+      "C159",
+      "C160",
+      "C134"
+    ],
+    "result": "Experimental evidence from vertebrate and insect segmentation shows gradual reinforcement of oscillation amplitude (not damping) as cells become more anterior, consistent with SNIC bifurcations rather than Hopf bifurcations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C157-C160 cite multiple experimental studies (Gomez et al. 2008, Delaune et al. 2012, Lauschke et al. 2013, Zhu et al. 2017) showing amplitude increases. Claim C134 correctly interprets this as inconsistent with Hopf-predicted damping. However, the authors are interpreting prior work rather than presenting new experimental data. The interpretation appears accurate based on the cited literature, but alternative explanations are not fully excluded.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C161",
+      "C162",
+      "C165"
+    ],
+    "result": "Experimental observations show asymmetric wave patterns in both vertebrate somitogenesis and insect segmentation, with different transition rates between high and low expression phases, consistent with SNIC-generated sawtooth patterns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The claims cite specific experimental observations (Shih et al. 2015, McMillen et al. 2016, Zhu et al. 2017) showing wave asymmetries. The consistency with model predictions is noted but not quantitatively validated. The authors acknowledge that precise quantification of wave asymmetry has not been done in insects (C164), indicating some uncertainty. The evidence supports the general pattern but lacks quantitative comparison.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C175",
+      "C176",
+      "C177",
+      "C178",
+      "C179"
+    ],
+    "result": "Beta-catenin gain-of-function mutants in mouse and axin RNAi in Tribolium show extended PSM with multiple oscillation waves, reduced wavelengths matching anterior patterns, and slow wave movement, consistent with SNIC/infinite-period bifurcations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The experimental observations are well-documented (Aulehla et al. 2008, Zhu et al. 2017) and include private communication for additional details (C177). The interpretation as consistent with SNIC (C179) is reasonable given the observed phenotypes. However, this is post-hoc interpretation of existing data rather than prospective experimental validation. Alternative explanations are not fully excluded, though the consistency is striking.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C96",
+      "C99",
+      "C101",
+      "C107"
+    ],
+    "result": "The type of bifurcation (Hopf vs SNIC) is determined by the presence or absence of an intermediate regime where both module weights are small, not by the specific functional form of the weights. SNIC bifurcations are more generic and robust across different weight functions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C80 identify the key determinant of bifurcation type, demonstrated across multiple weight functions (C96, C99, Figure 2 and 4 supplements). The mutual information analysis (C101) confirms superior robustness for SNIC. The general conclusion (C107) is well-supported by systematic exploration of parameter space. The caveat about \"simple low-dimension models\" appropriately limits the scope.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C130",
+      "C131",
+      "C133"
+    ],
+    "result": "Hopf and SNIC bifurcations can be distinguished experimentally by measuring gene concentration distributions over time: Hopf bifurcations show narrowing distributions (damped oscillations), while SNIC bifurcations show gradual pattern reinforcement with maintained or increasing amplitude.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The prediction is clearly demonstrated in simulated kymographs (C130-C131, Figures 2-5) and quantified in distribution plots (Figure 7 supplement 2). The proposed experimental test (C133) is reasonable and feasible. However, this is a prediction rather than experimental validation. The distinction is clear in simulations but may be more challenging to quantify experimentally due to noise and measurement limitations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C138",
+      "C140",
+      "C141",
+      "C142"
+    ],
+    "result": "The wavelength of propagating waves provides a signature to distinguish bifurcation types: Hopf bifurcations predict discontinuity between wave and pattern wavelengths, while SNIC bifurcations predict continuous matching. However, peak-to-peak measurements may not clearly distinguish the two due to ghost frequencies after Hopf bifurcations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The theoretical predictions (C138, C140-C141) follow logically from the bifurcation properties. The caveat about measurement difficulties (C142) is important and supported by Figure 2 supplement 2. This is an honest assessment of experimental feasibility. The prediction is testable but requires careful experimental design to avoid the identified pitfalls.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C166",
+      "C167",
+      "C168",
+      "C169",
+      "C170",
+      "C171"
+    ],
+    "result": "Different vertebrate species show varying consistency with SNIC vs Hopf scenarios: mouse appears more consistent with Hopf (moderate period change), while zebrafish and snake show features more consistent with SNIC (period divergence, amplitude increase, wavelength matching).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The claims cite relevant experimental observations (Lauschke et al. 2013, Shih et al. 2015, Gomez et al. 2008, Giudicelli et al. 2007) but acknowledge ambiguities and measurement limitations. For zebrafish (C167-C169), the evidence is mixed and requires inference beyond direct measurements. The interpretation of Mesp2 expression (C171) as consistent with infinite-period is reasonable but not definitive. The authors appropriately express uncertainty about which scenario applies to which species.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C180",
+      "C181",
+      "C182",
+      "C183",
+      "C184"
+    ],
+    "result": "The model predicts that developmental time-scales are controlled by the balance of transcriptional activities between modules, potentially mediated by multiple enhancers or super-enhancers regulating genes coordinately.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "These are predictions and speculations about biological implementation (C180, C183-C184) with some supporting evidence for multi-enhancer regulation (C181-C182, citations to Cannav\u00f2 et al. 2016, El-Sherif and Levine 2016). However, direct experimental validation of the two-module control mechanism is lacking. The predictions are testable but remain to be confirmed. The biological plausibility is supported by existing knowledge of enhancer biology.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C58",
+      "C59"
+    ],
+    "result": "The SNIC bifurcation model can parsimoniously explain common features of metazoan segmentation including period changes, waves of gene expression, speed/frequency-gradient dynamics, and changes in wave patterns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The model's ability to reproduce these features is demonstrated in the simulations (Figures 2-7). The explanation is parsimonious in that it derives multiple phenomena from a single mechanism. However, these are model predictions and post-hoc explanations of known phenomena rather than novel predictions subsequently validated. The consistency with observations is strong but alternative explanations are not fully excluded.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C11",
+      "C56"
+    ],
+    "result": "Geometric approaches provide useful alternatives to detailed gene regulatory network models for understanding developmental transitions, particularly for studying generic properties of bifurcations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The utility of geometric models is demonstrated throughout the paper, particularly in Figures 4-6 where they clarify bifurcation mechanisms. The geometric approach successfully identifies generic properties (SNIC emergence) that might be obscured in detailed network models. However, this is a methodological conclusion about modeling approaches rather than a biological discovery. The value is demonstrated but the claim is somewhat subjective.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C195",
+      "C196",
+      "C197",
+      "C198",
+      "C199",
+      "C200"
+    ],
+    "result": "SNIC bifurcations may evolve from Hopf/saddle-node systems through modularization. SNIC-based segmentation provides developmental plasticity, allowing variation in transient phenotypes while maintaining pattern formation, which may be important for evo-devo.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "These are evolutionary speculations (C196-C200) based on prior evolutionary simulations (C195, Fran\u00e7ois et al. 2007) and theoretical considerations about modularity (citations to West-Eberhard 2003). The arguments are logical and consistent with evo-devo theory, but lack direct evolutionary evidence or simulations. The connection between SNIC robustness and evolvability is plausible but not demonstrated. These are interesting hypotheses requiring further investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C12",
+      "C13",
+      "C14"
+    ],
+    "result": "Background claims about developmental biology: cells assume specialized fates through transcriptional dynamics, transitions between dynamic and static regimes may involve different modules, and little is known about how these transitions are mediated.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These are general statements about developmental biology (C1, C12-C13) supported by established knowledge and citations (Wolpert et al. 2006). The identification of a knowledge gap (C14) appropriately motivates the study. Claim C2 about transcriptional modules is supported by literature. These are accurate representations of the field's state of knowledge.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C17",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C102",
+      "C103"
+    ],
+    "result": "Definitions and properties of bifurcations from dynamical systems theory: bifurcations are qualitative changes driven by control parameters, local bifurcations (Hopf, saddle-node) are standard and don't require fine-tuning, while global bifurcations (SNIC) typically require special conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These are standard definitions from dynamical systems theory, appropriately cited (Strogatz 2015, Ermentrout 2008, Poston and Stewart 2012). The characterizations are accurate and provide necessary background for understanding the main results. These are not novel claims but correct applications of established theory.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "Background on the Clock-and-Wavefront model and segmentation: the model was inspired by catastrophe theory, predicted a clock that was later identified, cellular oscillators increase period before segmentation, Notch waves stabilize into patterns, and the clock phase is encoded into static identities.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims accurately summarize the history and key findings of segmentation research, with appropriate citations (Cooke and Zeeman 1976, Palmeirim et al. 1997, Giudicelli et al. 2007, Oginuma et al. 2010, etc.). The interpretation that this represents an emergent process (C33) is reasonable given the cited evidence. These provide accurate historical and biological context.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,1744 @@
+{
+  "submission": {
+    "id": "0d23c181-9d68-4813-8b83-1d2965a91293",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T09:41:36.048315Z",
+    "updated_at": "2025-12-02T09:41:36.048315Z"
+  },
+  "content": [
+    {
+      "id": "94cb30a1-b692-471f-8df8-0ae3bc7671c9",
+      "submission_id": "0d23c181-9d68-4813-8b83-1d2965a91293",
+      "content_type": "manuscript",
+      "content_text": "# MicroRNA-deficient mouse embryonic stem cells acquire a functional interferon response\n\n## Authors\n\n- Jeroen Witteveldt<sup>1</sup> ([ORCID: 0000-0001-8247-7010](https://orcid.org/0000-0001-8247-7010))\n- Lisanne I Knol<sup>1</sup> ([ORCID: 0000-0002-8975-0398](https://orcid.org/0000-0002-8975-0398))\n- Sara Macias<sup>1</sup> ([ORCID: 0000-0002-0643-3494](https://orcid.org/0000-0002-0643-3494)) \u2020\n\n### Affiliations\n\n1. Institute of Immunology and Infection Research, School of Biological Sciences University of Edinburgh Edinburgh United Kingdom\n\n\u2020 Corresponding author\n\n## Abstract\n\nWhen mammalian cells detect a viral infection, they initiate a type I interferon (IFNs) response as part of their innate immune system. This antiviral mechanism is conserved in virtually all cell types, except for embryonic stem cells (ESCs) and oocytes which are intrinsically incapable of producing IFNs. Despite the importance of the IFN response to fight viral infections, the mechanisms regulating this pathway during pluripotency are still unknown. Here we show that, in the absence of miRNAs, ESCs acquire an active IFN response. Proteomic analysis identified MAVS, a central component of the IFN pathway, to be actively silenced by miRNAs and responsible for suppressing IFN expression in ESCs. Furthermore, we show that knocking out a single miRNA, miR-673, restores the antiviral response in ESCs through MAVS regulation. Our findings suggest that the interaction between miR-673 and MAVS acts as a switch to suppress the antiviral IFN during pluripotency and present genetic approaches to enhance their antiviral immunity.\n\n## Introduction\n\nType I interferons (IFN) are crucial cytokines of the innate antiviral response. Although showing great variation, most mammalian cell types are capable of synthesizing type I IFNs in response to invading viruses and other pathogens. Once type I IFNs are secreted, they activate the JAK-STAT pathway and production of interferon-stimulated genes (ISGs) in both the infected and neighbouring cells to induce an antiviral state (Ivashkiv and Donlin, 2015). Two major signalling pathways are involved in IFN production in the context of viral infections. The dsRNA sensors RIG-I and MDA5 initiate a signalling cascade that signals through the central mitochondrial-associated factor MAVS, ultimately activating Ifnb1 transcription. The cGAS/STING pathway is activated upon detection of viral or other foreign DNA molecules and uses a distinct signalling pathway involving the endoplasmic reticulum associated STING protein (Chan and Gack, 2016).\n\nDespite its crucial function in fighting pathogens, pluripotent mammalian cells do not exhibit an IFN response. Both mouse and human embryonic stem cells (ESCs) (Wang et al., 2013; Chen et al., 2010) as well as embryonic carcinoma cells (Burke et al., 1978) fail to produce IFNs, suggesting that this function is acquired during differentiation. The rationale for silencing this response is not fully understood but it has been proposed that in their natural setting, ESCs are protected from viral infections by the trophoblast, which forms the outer layer of the blastocyst (Delorme-Axford et al., 2014). ESCs exhibit a mild response to exogenous IFNs, suggesting that during embryonic development, maternal IFN could have protective properties (Hong and Carmichael, 2013; Wang et al., 2014). In mouse ESCs, a Dicer-dependent RNA interference (RNAi) mechanism, reminiscent to that of plants and insects, is suggested to function as an alternative antiviral mechanism (Maillard et al., 2013). And in humans, ESCs intrinsically express high levels of a subgroup of ISGs in the absence of infection, bypassing the need for an antiviral IFN response (Wu et al., 2018; Wu et al., 2012). All these suggest that different antiviral pathways are employed depending on the differentiation status of the cell. Silencing of the IFN response during pluripotency may also be essential to avoid aberrant IFN production in response to retrotransposons and endogenous retroviral derived dsRNA, which are highly expressed during the early stages of embryonic development and oocytes (Ahmad et al., 2018; Grow et al., 2015; Macia et al., 2015; Peaston et al., 2004; Macfarlan et al., 2012). Furthermore, exposing cells to exogenous IFN induces differentiation and an anti-proliferative state, which would have catastrophic consequences during very early embryonic development (Borden et al., 1982; Hertzog et al., 1994).\n\nAll these observations support a model in which cells gain the ability to produce IFNs during differentiation. One particular class of regulatory factors that are essential for the successful differentiation of ESCs are miRNAs (Greve et al., 2013). These type of small RNAs originate from long precursor RNA molecules, which undergo two consecutive processing steps, one in the nucleus by the Microprocessor complex, followed by a DICER-mediated processing in the cytoplasm (Treiber et al., 2018). The Microprocessor complex is composed of the dsRNA binding protein DGCR8 and the RNase III DROSHA which are both essential for mature miRNA production (Gregory et al., 2004; Lee et al., 2003). In addition, mammalian DICER is also essential for production of siRNAs (Bernstein et al., 2001). The genetic ablation of Dgcr8 or Dicer in mice blocks ESCs differentiation suggesting that miRNAs are an essential factor for this, as these are the common substrates for the two RNA processing factors (Wang et al., 2007; Kanellopoulou et al., 2005).\n\nIn this study, we show that miRNAs are responsible for suppressing the IFN response during pluripotency, specifically to immunostimulatory RNAs. We found that miRNA-deficient ESCs acquire an IFN-proficient state, are able to synthesize IFN-\u03b2 and mount a functional antiviral response. Our results show that miRNAs specifically downregulate MAVS (mitochondrial antiviral signalling protein), an essential and central protein in the IFN response pathway. In agreement, ESCs with increased MAVS expression or knock-out of the MAVS-regulating miRNA miR-673, resulted in an increased IFN production and antiviral response. Our results support a model where the MAVS-miR-673 interaction acts as a switch to suppress the IFN response and consequently virus susceptibility during pluripotency.\n\n## Results\n\n### ESCs fail to express IFN-\u03b2 in response to viral DNA/RNA\n\nThere are two major pathways for sensing intracellular viral infections and consequent activation of the IFN response in cells. One senses dsRNA, usually originating from RNA viruses, with MAVS as a central factor, and the second senses dsDNA, from DNA- and retroviruses signalling through STING (McFadden et al., 2017). It has been shown that mouse ESCs do not produce type I IFNs in response to poly(I:C) transfection, a synthetic analogue of dsRNA classically used to mimic viral RNA replication intermediates (Wang et al., 2013). In contrast, it is still unknown how mouse ESCs respond to immunostimulatory DNA. To study this, two different mouse ESC cell lines (ESC1 and ESC2) were transfected with poly(I:C) and G3-YSD, an HIV-derived DNA that stimulates the cGAS/STING pathway (Herzner et al., 2015). As controls, NIH3T3 fibroblasts and BV-2 microglial cells were included. As expected, the transfection of poly(I:C) did not result in Ifnb1 expression in both ESC lines (Figure 1A). ESCs also failed to activate Ifnb1 expression upon G3-YSD transfection, suggesting that the cGAS/STING pathway was also inactive (Figure 1B). Similarly, NIH3T3 cells, which have also been previously shown to have a defect in this specific pathway (Cheng et al., 2018), did not express Ifnb1 in response to G3-YSD (Figure 1B). These same cell lines were infected with the (+) ssRNA virus TMEV (Theiler's Murine Encephalomyelitis Virus) and showed that ESCs are at least 30 times more sensitive than NIH3T3 and BV-2 cells, which correlates with the ability of these cell lines to induce Ifnb1mRNA expression (Figure 1C).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/44171/elife-44171-fig1-v2.jpg)\n\n**Figure 1.:** (a) Quantification of Ifnb1 expression in ESCs and the somatic mouse cell lines NIH3T3 and BV-2 after transfection with the dsRNA analogue poly(I:C). Data show the average (n\u00a0=\u00a03)\u00b1s.e.m, (*) p-value<0.05 by t-test. (b) Quantification of Ifnb1 expression after activation of the cGAS response by Y-DNA (G3-YSD) in the same cells lines as (a). Data show the average (n\u00a0=\u00a03, except for ESC2, n\u00a0=\u00a02)\u00b1s.e.m, (*) p-value<0.05 by t-test. (c) Susceptibility (TCID50/ml) of same cell lines as used in (a) to TMEV infection. (d) Quantification of Ifnb1 expression in pluripotent and differentiated ESCs after activation with poly(I:C). Data show the average (n\u00a0=\u00a03) fold change over mock treated cells,\u00b1s.d. (*) p-value<0.05 by t-test.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/44171/elife-44171-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (a) Quantification of pluripotency markers, Nanog and Pou5f1 (Oct-4) expression by qRT-PCR upon differentiation with retinoic acid (RA), and normalized to Actb expression, during pluripotency (ESC), after 2 days in hanging droplets, 2 days (2d RA) and 10 days in retinoic acid (10d RA) (b) Quantification of differentiation markers expression, Neurog2, Gata6 and Gata4 upon differentation with retinoic acid, as in (a). Both panels include data of one representative experiment.\n\nThe ability of cells to express IFN in response to viruses or immunogenic nucleic acids is assumed to be acquired during differentiation. To test this model, we in vitro differentiated both ESC lines with retinoic acid and determined their ability to respond to poly(I:C). Briefly, embryoid bodies were generated by a hanging droplet method for 48 hr before being cultured in the presence of retinoic acid for 2 or 10 days. Samples from each of these time points were analysed for expression of pluripotency and differentiation markers. The pluripotency markers Nanog and Pou5f1 (Oct4) showed a rapid decrease in mRNA expression during differentiation in both the cell lines (Figure 1\u2014figure supplement 1A), whereas differentiation markers Neurog2, Gata6 and Gata4 showed a gradual increase (Figure 1\u2014figure supplement 1B) confirming successful differentiation of the ESCs. Next, we compared the ability of ESCs (day 0) and retinoic-acid differentiated cells after 10 days (day 10) to express Ifnb1 mRNA in response to poly(I:C), and confirmed that differentiated cells acquired the ability to synthesize Ifnb1 to similar levels to the positive control cell line, BV-2 (Figure 1D).\n\n### Dicer-deficient ESCs acquire an active IFN response\n\nGiven the relevance of RNAi as an antiviral mechanism in mouse ESCs (Maillard et al., 2013), we next asked if ESCs, in the absence of the central factor for RNAi, ICER, would be more susceptible to RNA viruses. Unexpectedly, Dicer-/- ESCs were more resistant to viruses compared to their wild-type counterparts (previously named ESC2) (Figure 2A, left). Similar results were obtained using the (-) ssRNA virus, Influenza A (IAV) (Figure 2A, right). Importantly, mammalian Dicer has a dual function, being essential for both siRNA and miRNA biogenesis. To determine whether these differences in viral susceptibility were due to the activity of Dicer on siRNA or miRNA production, we compared Dicer-/- cells with ESCs lacking the essential nuclear factor for miRNA biogenesis, Dgcr8. The absence of Dgcr8 also decreased TMEV and IAV viral susceptibility, suggesting that miRNAs are responsible for suppressing the antiviral response in ESCs (Figure 2A). Interestingly, Dgcr8-/- cells were more resistant to virus infection than Dicer-/- cells, which supports a dual function for DICER by also acting as a direct antiviral factor targeting viral transcripts for degradation by RNAi. To rule out the possibility of morphological differences influencing viral susceptibility, we performed a virus binding and entry assay which showed no differences (Figure 2\u2014figure supplement 1).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/44171/elife-44171-fig2-v2.jpg)\n\n**Figure 2.:** (a) (left) Susceptibility (TCID50/ml) of miRNA deficient cells (Dgcr8-/-, Dicer-/-) and wild-type parental cells (Dgcr8+/+(ESC1), Dicer+/+(ESC2)) to TMEV infection, higher values represent higher susceptibility (n\u00a0=\u00a04, p-value<0.05, t-test). (right) Quantification of Influenza A replication after infection of the same cell lines, data show the average (n\u00a0=\u00a03)\u00b1s.d. (*) p-value<0.05 by t-test. (b) Quantification of Ifnb1 expression of ESCs lacking Dgcr8 or Dicer to stimulation with poly(I:C) and G3-YSD. Data show average (n\u00a0=\u00a03)\u00b1s.d., normalized to mock, (*) p-value<0.05 by t-test. (c) Quantification of TMEV vRNA upon JAK1/2 inhibition by Ruxolitinib treatment. Data show the\u00a0average (n\u00a0=\u00a03)\u00b1s.d. (d) qRT-PCR analyses of ISGs expression after stimulation of wild-type and miRNA-deficient ESCs with IFN-\u03b2. Data show average (n\u00a0=\u00a03)\u00b1s.d., normalized to mock treated cells (e, f) Quantification of TMEV replication after infection in Dgcr8 (e) and Dicer (f) parental (+/+), deficient (-/-) and rescued (resc) cell lines. Data are normalized to miRNA-deficient cell lines susceptibility. Data show\u00a0the average (n\u00a0=\u00a03)\u00b1s.d (*) p-value<0.05 by t-test. Northern blots for three stem-cell specific miRNAs, as control for knock-out and rescue of Dgcr8 and Dicer, are shown at the right of each panel.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/44171/elife-44171-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** To rule out morphological changes affecting the outcome of viral infections, a binding and entry assay was performed. Cells were infected at 4\u00b0C which inhibits entry of viral particles, but allows binding of virions. At t\u00a0=\u00a00, cells are moved to 37\u00b0C resulting in a synchronized entry of virus particles allowing an accurate quantification of how much virus enters the cell and virus replication kinetics. Cells were infected with either TMEV (top panels) or Influenza A virus (bottom panels) and viral RNA was quantified by qRT-PCR. For all viruses, binding was comparable in all cell lines. Differences in TMEV kinetics were greater soon after the entry phase and continued to increase towards the end of the experiment. Differences in IAV became most apparent late in the replication phase, possibly because IAV is very proficient in knock down the IFN response in its host cells. Data show\u00a0the average (n\u00a0=\u00a03)\u00b1s.d, (*) denotes p-value.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/44171/elife-44171-fig2-figsupp2-v2.jpg)\n\n**Figure 2\u2014figure supplement 2.:** (a) RT-PCR of poly(I:C) activated ESCs.\u00a0Only Dgcr8 -/- (lane 6, left panel) and Dicer -/- (lane 5 and 6, right panel) express detectable Ifnb1 transcript (top panels). Actb amplification serves as a loading control. (b) Ifnb mRNA quantification by qRT-PCR after increasing amounts of poly(I:C) in Dgcr8-/- and Dicer-/- mESCs. Data show the average (n\u00a0=\u00a03)\u00b1s.d., normalized to mock, (*) p-value<0.05 by t-test. (c) IFN-\u03b2 ELISA analyses from mock and poly(I:C) stimulated wild-type and miRNA-deficient ESCs. Data show the average (n\u00a0=\u00a03)\u00b1s.d., (*) p-value<0.05 by two-tailed T test (d) TMEV vRNA quantification in wild-type and miRNA-deficient cell lines after mock or Ruxolitinib treatment (JAK1/2 inhibitor). Data show the average (n\u00a0=\u00a03)\u00b1s.d., (*) p value\u00a0<\u00a00.05 by Student\u2019s t-test, n.s. non-significant (e) TCID50 quantification after TMEV infection of Dgcr8 (left) and Dicer (right) rescued cell lines.\n\nEven though ESCs lack an IFN response, we wondered whether the differential resistance to viral infections were the result of abnormal IFN activation due to the absence of miRNAs. To test this hypothesis, we transfected the dsRNA analogue, poly(I:C) and the immunogenic G3-YSD DNA in Dgcr8 or Dicer deficient mESCs, and quantified Ifnb1 expression by RT-qPCR and ELISA. ESCs lacking miRNAs (Dgcr8-/- or Dicer-/-) were able to respond to the dsRNA analogue, poly(I:C) and express Ifnb1 mRNA and protein in a dose dependent manner (Figure 2B and Figure 2\u2014figure supplement 2A\u2013C), whereas no significant response was observed with immunostimulatory DNA (Figure 2B). These results show there is a correlation between viral susceptibility and the ability of miRNA-deficient ESCs to express IFN-\u03b2, and suggest that miRNAs are responsible for silencing the IFN response to dsRNA. To further establish the involvement of IFN expression in these observations, we blocked IFN signalling using the JAK1/2 inhibitor Ruxolitinib before infecting cells with TMEV. As a result we observed no, or a very mild increase in TMEV viral replication in wild-type ESCs, but a significant increase in viral replication in miRNA-deficient ESCs (Figure 2C and Figure 2\u2014figure supplement 2D). ESCs were also stimulated with exogenous IFN-\u03b2 and confirmed that mouse ESCs retain the ability to respond to external IFNs, and, importantly, that miRNA deficiency did not alter ISG expression levels, supporting the hypothesis that the miRNA-mediated silencing of the IFN pathway in ESCs occurs upstream of IFN production (Figure 2D). To verify that the observed results are solely due to the absence of miRNAs, we rescued the knock-out cell lines by reintroducing Dgcr8 and Dicer and observed that these reverted to wild-type viral replication and susceptibility levels (Figure 2E,F and Figure 2\u2014figure supplement 2E). As a control, we confirmed rescue of miRNA production by Northern blot (Figure 2E,F).\n\n### miRNAs suppress MAVS expression in ESCs\n\nTo understand where the IFN pathway is silenced in ESCs we blocked the interferon response at defined points in the pathway and measured viral susceptibility. The inhibitor BX795 blocks TBK1/IKK\u03b5 phosphorylation and consequently IRF3 transcriptional activity, whereas BMS345541 is an inhibitor of the catalytic subunits of IKK and thus blocks Nf-\u03baB-driven transcription. Both transcription factors are essential for the expression of Ifnb1 and other pro-inflammatory cytokines and initiation of an antiviral response (Lawrence, 2009; Schafer et al., 1998). Both inhibitors increased viral susceptibility in wild-type cells lines, however, the effect was far greater in the knock-out cell lines (Figure 3A,B and Figure 3\u2014figure supplement 1A\u2013C), suggesting that miRNAs regulate the interferon pathway upstream Ifnb1 transcription.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/44171/elife-44171-fig3-v2.jpg)\n\n**Figure 3.:** (a, b)\u00a0Susceptibility of Dgcr8-/-, Dicer-/- and parental cells to TMEV infection after inhibition of IRF3 (BX795) (a) and Nf-\u03baB (BMS345541) (b), normalized to mock-treated cells. (c) Heat map of significantly differentially expressed proteins (p<0.05) in the absence (Dgcr8-/-) or presence (Dgcr8resc) of miRNAs identified by STRING analysis. (d) Western blot analysis of MAVS expression in miRNA-deficient cells (Dgcr8-/- and Dicer-/-, lanes 2 and 5), wild-type counterparts (Dgcr8+/+ and Dicer+/+, lanes 1 and 4) and respective rescued ESCs lines (Dgcr8resc and Dicerresc, lanes 3 and 6). MAVS quantification normalized to Tubulin and relative to wild-type levels is shown at the top of the panel.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/44171/elife-44171-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (a) Treatment of mESCs with inhibitors of IRF3 and NF-\u03baB activation improves viral replication to a much greater extend in the Dgcr8-/- and Dicer-/- cells compared to the parental cells, suggesting that the inhibitory effect that miRNAs have on the IFN response is upstream of these two transcription factors. (b) Western blot analyses of phospho-IRF3 upon stimulation of Dgcr8-/- ESCs with poly(I:C) in the presence or absence of BX759 (inhibitor IRF3 phosphorylation). Tubulin serves as a loading control (c) Quantification of Tnf mRNA upon poly(I:C) stimulation in Dgcr8+/+ and Dgcr8-/- in the presence or absence of BMS345541 (inhibitor of NFkB activation). Data show the average (n\u00a0=\u00a02) normalized to Gapdh (d) Quantification of oxidative phosphorylation activity by Rhodamine 123 uptake assay in Dgcr8 (left) and Dicer (right) cell lines. (e) qRT-PCR quantification of Mavs mRNA. Mavs expression is higher in the absence of miRNAs (Dgcr8-/- and Dicer-/-), when compared to parental cell lines (Dgcr8+/+ and Dicer+/+). Data show the\u00a0average (n\u00a0=\u00a03)\u00b1s.d, (*) denotes p<0.05, t-test. (f) Western blot analyses for MDA5, RIG-I and PKR for wild-type cell lines (+/+), Dgcr8 and Dicer KO (-/-), and the respective rescued cell lines (resc). Quantification of the signal normalized to Tubulin and relative to wild-type is shown at the top of each panel.\n\nWe next aimed to identify the mechanism by which miRNAs silence IFN expression in ESCs, and analysed the proteomes of Dgcr8-/- and the rescued cell line by mass spectrometry. STRING analyses of the expression profiles revealed significant differences in a number of pathways, including ribosome structure/function, mitochondrial activity and the oxidative phosphorylation pathway, which were downregulated in the absence of miRNAs (Figure 3C, for complete list see Figure 3\u2014source data 1). Measurement of Rhodamine 123 uptake in mitochondria, as an indirect measure for oxidative phosphorylation activity (Scaduto and Grotyohann, 1999), confirmed lower oxidative phosphorylation activity in the absence of miRNAs (Dgcr8-/- and Dicer-/-) (Figure 3\u2014figure supplement 1D). A search for differentially expressed proteins involved in the IFN response did not reveal any significant changes except for the Mitochondrial antiviral-signalling protein (MAVS), which in contrast to many other mitochondria-related proteins, was upregulated in the absence of miRNAs. This protein has a central role in the RLR-induced (Rig-I-like receptors) IFN pathway, where activated MDA5 and RIG-I receptors translocate to the mitochondria and bind MAVS to ultimately induce Ifnb1 expression (Kawai et al., 2005). Western blot and qRT-PCR analysis confirmed that MAVS was the only factor consistently expressed to higher levels in both miRNA-deficient cell lines, Dgcr8-/- and Dicer-/- (Figure 3D, lanes 2 and 5, and Figure 3\u2014figure supplement 1E), compared to a panel of other components of the same innate immune response pathway (Figure 3\u2014figure supplement 1F).\n\n### MAVS acts as a switch for IFN expression\n\nTo confirm the involvement of miRNAs on MAVS expression, a dual luciferase assay system was used where the 3\u2019UTRs of Mavs, Mda5 and Rig-I were fused to a luciferase reporter gene to compare luciferase activity in wild-type and knock-out ESCs. Only the Mavs 3\u2019UTR showed relatively higher luciferase expression levels in the knock-out lines when compared to the empty plasmid, suggesting that the 3\u2019UTR of Mavs is strongly regulated by miRNAs in ESCs (Figure 4A). For this reason, a miRNA-resistant form of Mavs, lacking its natural 3'UTR, was overexpressed in wild-type ESCs and infected with TMEV to test if cells regain viral resistance similar to miRNA deficient ESCs\u00a0(Figure 4B). A 15-fold decrease in TCID50 and significant reduction in vRNA levels were found compared to wild-type ESCs (Figure 4C). MAVS overexpressing cells also regained the ability to produce Ifnb1 after stimulation with poly(I:C) (Figure 4D). All these experiments show that MAVS is a crucial target for the absence of the IFN response in ESCs.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/44171/elife-44171-fig4-v2.jpg)\n\n**Figure 4.:** (a) Dual luciferase assay with Mavs, Rig-I and Mda5 3\u2019UTRs in miRNA-deficient cells lines (Dgcr8-/- and Dicer-/-). Data show the average (n\u00a0=\u00a03)\u00b1s.d normalized to Renilla and relative to the parental lines, (*) p-value<0.05 by t-test (b) Western blot of cell line overexpressing MAVS lacking the 3\u2019UTR in Dgcr8+/+ cells (lane 3). MAVS quantification normalized to Tubulin and relative to wild-type is shown at the top (c) Susceptibility (TCID50/ml) of same cells lines as in (b) to TMEV infection (left panel) and quantification of viral RNA after TMEV infections in the same cell lines (right panel). Data show the average (n\u00a0=\u00a05)\u00b1s.d. (*) p-value<0.05 by t-test (d) Ifnb mRNA expression after poly(I:C) transfection of the same cell lines as in (b), average is represented (n\u00a0=\u00a03)\u00b1s.d, normalized to Dgcr8+/+ cell line, (*) p-value<0.05 by t-test.\n\n### miR-673 is crucial to suppress antiviral immunity in ESCs\n\nWe next aimed to identify the miRNA(s) responsible for the regulation of MAVS in ESCs and selected a number of miRNA candidates based on literature, prediction software and public miRNA expression databases for further investigations. Previous experimental evidence has shown that human MAVS is regulated by miR-125a, miR-125b and miR-22 (Hsu et al., 2017; Wan et al., 2016). However, only miR-125a-5p and miR-125b-5p have conserved binding sites in mouse MAVS. Two additional miRNAs, miR-185\u20135p and miR-673\u20135p, were selected based on their DICER and DGCR8-dependent biosynthesis pathway, their high expression levels in mouse ESCs and number of predicted binding sites in the Mavs 3\u2019UTR (Tang et al., 2006; Babiarz et al., 2008). We transfected Dgcr8-/- cells with mimics of these miRNAs and measured Mavs mRNA and protein levels by RT-qPCR and western blot, respectively. Results showed reductions in MAVS protein and mRNA levels for all tested miRNAs (Figure 5A and Figure 5\u2014figure supplement 1A). The infection of miRNA-transfected Dgcr8-/- cells with TMEV resulted in an increase in both susceptibility and viral replication for miR-125a-5p, miR-125b-5p and miR-673\u20135p, which correlated with the ability of these miRNAs to downregulate MAVS protein levels (Figure 5B and Figure 5\u2014figure supplement 1B).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/44171/elife-44171-fig5-v2.jpg)\n\n**Figure 5.:** (a) Transfection of miRNA mimics miR-125a-5p, miR-125b-5p, miR-185\u20135p and miR-673\u20135p in Dgcr8-/- cells followed by MAVS western blot. MAVS quantification normalized to Tubulin and relative to wild-type is shown at the top (b) Quantification of TMEV replication by qRT-PCR in the same cell lines as in (a) (n\u00a0=\u00a03) (c) Western blot analysis of MAVS expression in Dgcr8+/+ cells transfected with antagomirs against miR-125a-5p, miR-125b-5p and miR-673\u20135p. MAVS quantification normalized to Tubulin and relative to wild-type is shown at the top (d) Western blot analysis of MAVS expression in miR-673-/- cell lines. MAVS quantification normalized to Tubulin and relative to wild-type is shown at the top (e) Quantification of TMEV vRNA in miR-673 CRISPR knock-out cell lines in a Dgcr8+/+ background. Data show the average (n\u00a0=\u00a03)\u00b1s.d (*) p-value<0.05 by t-test. (f) Quantification of TMEV vRNA shown as fold-change compared to mock upon JAK1/2 inhibition by Ruxolitinib treatment. Data show the\u00a0average (n\u00a0=\u00a03)\u00b1s.d (g) qRT-PCR quantification of mmu-miR-673\u20135p expression after retinoic acid (RA) differentiation of ESC. Data show\u00a0the\u00a0average (n\u00a0=\u00a02)\u00b1s.e.m, normalized to U6 snRNA, (*) p-val\u00a0<0.05 by t-test.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/44171/elife-44171-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** (a) Dgcr8-/- cells were transfected with miRNA mimics for 24 hr, followed by RNA extraction and Mavs mRNA quantification by qRT-PCR. Transfection of all miRNA mimics result in (non-significant) decrease of Mavs levels. (b) Dgcr8-/- mESCs were first transfected with mimics, as in (a) followed by TMEV infections 36 hr later, and measurement of the TCID50. All mimics except for mir-185-5p resulted in higher TCID50 values compared to mock transfected cells, suggesting that in mESC cells targeting Mavs with these miRNAs leads to a higher susceptibility to viral infection.\n\n![Figure 5\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/44171/elife-44171-fig5-figsupp2-v2.jpg)\n\n**Figure 5\u2014figure supplement 2.:** (a) Genomic sequencing of miR-673 locus contained in chromosome 12. In WT, the position of the two miRNAs encoded by the locus, miR-673\u20135p and miR-673\u20133p are indicated by yellow boxes. For miR-673-/- clones (1,2 and 3) both sequenced alleles are shown with the indicated deletions induced by CRISPR. (b) Quantification of mmu-miR-673\u20135p abundance by qRT-PCR. Data show the\u00a0average (n\u00a0=\u00a03)\u00b1s.d, normalized to U6 snRNA. (n.d, not detected) (c) Quantification of Mavs mRNA levels by RT-qPCR. Data show the\u00a0average of at least (n\u00a0=\u00a03)\u00b1s.d, normalized to Actb, and relative to Dgcr8 +/+.\n\n![Figure 5\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/44171/elife-44171-fig5-figsupp3-v2.jpg)\n\n**Figure 5\u2014figure supplement 3.:** (a) TMEV vRNA quantification in wild-type and miRNA-deficient cell lines after mock or Ruxolitinib treatment (JAK1/2 inhibitor). Data show the average (n\u00a0=\u00a03)\u00b1s.d., (*) p value\u00a0<\u00a00.05 by Student\u2019s t-test, n.s. non-significant (b) Growth curves of ESCs. Data show the average (n\u00a0=\u00a03)\u00b1s.d. (c) No obvious morphological changes were observed between wild-type (Dgcr8+/+) and miR-673-deficient ESCs (d) Quantification of Nanog and Pouf5f1 pluripotent markers upon knocking out miR-673 by CRISPR in comparison to wild-type ESCs, data show the average (n\u00a0=\u00a03)\u00b1s.e.m, (n.s.) non-significant by t-test. NIH3T3 serves as a negative control for pluripotent maker expression (e) Quantification of Nanog and Pouf51 expression after reintroduction of miR-673 mimics and controls for 24 or 48 hr. Data show\u00a0the average (n\u00a0=\u00a03)\u00b1s.e.m. (n.s.) non-significant by t-test.\n\nAs an alternative approach, Dgcr8+/+ cells were transfected with inhibitors to miRNAs miR-125a-5p, miR-125b-5p and miR-673\u20135p. Western blot analysis showed a clear increase in MAVS protein expression, especially for anti-miR-673\u20135p (Figure 5C). Because miR-673\u20135p showed the largest effect on MAVS protein expression both when depleted and overexpressed, we hypothesize that miR-673 is a crucial miRNA involved on MAVS regulation.\n\nWe further investigated the role of miR-673\u20135p in ESCs by creating stable knock-out cell lines for this\u00a0miRNA by CRISPR/Cas9. Three cell lines were selected based on the genomic deletion and confirmed undetectable expression of miR-673\u20135p (Figure 5\u2014figure supplement 2A,B). The absence of miR-673\u20135p was enough to observe an increase in MAVS expression both at the mRNA and protein levels (Figure 5D and Figure 5\u2014figure supplement 2C). In addition, we measured miR-673 and MAVS expression levels in the mouse fibroblasts cell line, NIH3T3, which is proficient in producing IFN in response to dsRNA. Mouse fibroblasts had no detectable miR-673\u20135p, and MAVS protein expression was comparable to miRNA-deficient ESC (Figure 5D and Figure 5\u2014figure supplement 2B), highlighting the correlation of MAVS expression with the ability of cells to activate Ifnb1 expression in response to immunogenic RNA.\n\nNext, miR-673-deficient cell lines were tested for TMEV susceptibility, which showed a consistent decrease in virus replication, similar to that observed in the absence of all miRNAs (Dgcr8-/-), suggesting this miRNA is essential in regulating the innate antiviral response in ESCs (Figure 5E). To test the relevance of IFNs on the increased antiviral resistance of miR-673-/- cell lines, we compared their sensitivity to TMEV infections in the presence of the JAK1/2 inhibitor, Ruxolitinib. Whereas inhibition of IFN signalling did not significantly increase the accumulation of viral RNA in wild-type ESCs (Dgcr8+/+), both miR-673-deficient and Dgcr8-/- ESCs showed a significant increase in viral RNA upon treatment, confirming the role of miR-673 and IFNs in viral susceptibility (Figure 5F and Figure 5\u2014figure supplement 3A). As controls, we confirmed that knocking out miR-673\u20135p expression did not affect the ability of ESCs to proliferate or induced spontaneous differentiation, which could cause differences in viral susceptibility (Figure 5\u2014figure supplement 3B\u2013E). Interestingly, during ESC differentiation with retinoic acid, expression of miR-673\u20135p became silenced, confirming previous results obtained with alternative differentiation protocols (Knelangen et al., 2011; Zhao et al., 2014; Hadjimichael et al., 2016; Yang et al., 2016), and suggesting that the expression levels of this miRNA negatively correlate with the ability of cells to activate the IFN response (Figure 5G).\n\nCollectively, these data show that the IFN response in mouse ESCs is silenced by the post-transcriptional control of Mavs expression by miR-673\u20135p.\n\n## Discussion\n\nSeveral studies suggest that the pluripotent state of a cell is incompatible with an active IFN response (Guo et al., 2015). Both mouse and human stem cells fail to synthesize IFNs in response to dsRNA (Wang et al., 2013; Chen et al., 2010), implying that this characteristic is acquired during differentiation (D'Angelo et al., 2016). Embryonic carcinoma cells, which are still pluripotent, also fail to produce IFNs in response to viral RNA mimics (Burke et al., 1978). In agreement, reprogramming of somatic cells to iPSCs (induced pluripotent stem cells) leads to a loss of IFN response, suggesting the presence of regulatory mechanisms able to switch this antiviral pathway on or off between the differentiated and pluripotent states (Chen et al., 2012). Another feature of pluripotent cells is their attenuated response to exogenous type I IFNs. Mammalian pluripotent stem cells, iPSCs and embryonic carcinoma cells exhibit an attenuated production of ISGs upon type I IFN stimulation (Hong and Carmichael, 2013; Irudayam et al., 2015; Wang et al., 2014; Burke et al., 1978). Why these activities are supressed is still not understood, but it has been hypothesized that type I IFN stimulation could impair their self-renewal capacity, since these compounds are well-known antiproliferative agents and inducers of cell death (Bekisz et al., 2010). Indeed, type I IFNs are capable of inhibiting tumour cell division in vitro and are currently employed as an adjuvant to treat several types of cancers, acting as stimulants of the innate immune cellular response (Bracci et al., 2017).\n\nMouse ESCs express low levels of the RNA sensors TLR3, MDA5 and RIG-I, which could explain their inability to respond to dsRNA although no functional studies support this model so far (Wang et al., 2013). Our data shows an alternative scenario in which MAVS is the key factor for controlling the IFN response. The overexpression of a miRNA-resistant form of MAVS in wild-type ESCs is enough to enable dsRNA-mediated IFN activation, suggesting that dsRNA sensing is not a limiting step in the IFN pathway in ESCs. Regulation of MAVS alone proves to be an efficient mechanism to block dsRNA induced IFN expression compared to suppressing individual dsRNA sensors.\n\nThe observation that miRNAs only suppress RNA-mediated IFN activation, but not the DNA-mediated pathway, leads us to speculate about the reasons for silencing this specific response during pluripotency. Embryonic stem cells, and also earlier stages of embryonic development are characterized by high expression levels of specific retrotransposons (non-LTR) and endogenous retroviruses (LTR), which are a hallmark of their pluripotent state. This is in contrast to most somatic cell types that silence their expression (Yin et al., 2018). These repetitive elements produce cytoplasmic RNA molecules as an intermediate for mobilisation, which can be accidentally recognised as immunogenic or non-self RNAs, as it has been previously shown for the human non-LTR retroelement Alu in the context of Aicardi-Goutires syndrome or for endogenous retroviruses (Ahmad et al., 2018; Chiappinelli et al., 2015; Roulois et al., 2015). Therefore, silencing the RNA-mediated IFN response during pluripotency would act as a protective mechanism for aberrant IFN activation by transposon-derived transcripts.\n\nCells that are incapable of activating the RNA-mediated IFN response have developed alternative antiviral defence pathways. The endonuclease DICER can act as an antiviral factor in mouse ESCs by generating antiviral siRNAs (Maillard et al., 2013). Detection of antiviral DICER activity is facilitated in the absence of a competent IFN response, such as in the case of pluripotent cells, but also in somatic cells where the type I IFN response has been genetically impaired (Maillard et al., 2016). These findings are supported by the observation that in IFN-competent cells, the RNA sensor LGP2 acts as an inhibitor of DICER cleavage activity on dsRNA (van der Veen et al., 2018). However, DICER activity has also been reported in other cell lines, independently of their IFN-proficiency capacity (Li et al., 2016). Interestingly, when we disrupt Dicer in ESCs, which inherently lack an IFN response and would theoretically render these cells highly sensitive to viral infections, they become more resistant by acquiring an active IFN response. All these results support the presence of extensive cross-talk between the different antiviral strategies, and suggests that cells have developed mechanisms to compensate for the loss of a specific antiviral pathway.\n\nOur model shows that MAVS and miR-673 levels are the key factors regulating the IFN response to dsRNAs during pluripotency. Accordingly, overexpressing MAVS or knocking-out this single miRNA in ESCs is enough to enhance their antiviral response. Interestingly, this miRNA is only conserved in rodents, despite human ESCs also suppressing type I IFNs expression (Hong and Carmichael, 2013). This suggests that either other miRNAs regulate MAVS expression in human ESCs, or alternative mechanisms operate to silence IFN. Interestingly, human and mouse ESCs have been suggested to constitutively express a subset of ISGs to protect them from viruses (Wu et al., 2018). Our proteomics data suggest that, from all the ISGs detected, miRNAs did not significantly affect production of these antiviral factors, such as IFITM1, IFTIM2, IFITM3 amongst others. We have shown that engineering ESCs to acquire a functional IFN response significantly increases their antiviral immunity, highlighting the powerful antiviral effects of IFNs even during pluripotency.\n\nPrevious findings also support a general role for DICER and miRNAs acting as negative regulators of the IFN response in human and mouse models outside pluripotency (Papadopoulou et al., 2012; Witteveldt et al., 2018). In agreement, an indirect approach to deplete cellular miRNAs, by overexpressing the viral protein VP55 from Vaccinia virus, showed that miRNAs are also relevant to control the expression of pro-inflammatory cytokines during viral chronic infections, but not in the acute antiviral response (Aguado et al., 2015). However, the concept of miRNAs acting as direct antiviral factors is still controversial. It is relevant to mention that some of the results leading to this conclusion have been primarily generated in DICER1-/- HEK293T human cell line (Bogerd et al., 2014; Tsai et al., 2018), which has an attenuated IFN response due to low PRRs expression (Rice et al., 2014; Witteveldt et al., 2018).\n\nWe have shown that overexpression of MAVS or silencing specific miRNAs in a transient or stable manner improves the antiviral response of ESCs. These findings are the basis to further study the conservation of the miRNA-mediated regulation of the IFN response in somatic cells and in the context of human pluripotency. All these investigations will provide a deeper understanding and tool set on how to enhance the innate immunity of ESCs and their differentiated progeny, an especially relevant aspect in clinical applications.\n\n## Materials and methods\n\n### Cells and viruses\n\nDgcr8 knockout (Dgcr8-/-) mouse ESCs were purchased from Novus Biologicals (NBA1-19349) and the parental strain, v6.5 (Dgcr8+/+, also named in the text ESC1) from ThermoFisher (MES1402). Dicer flox/flox (Dicer+/+, also named ESC2) and Dicer knockout (Dicer-/-) mouse ESCs were provided by R. Blelloch lab (University of California, San Francisco). All mESC cells were cultured in Dulbecco\u2019s modified Eagle Medium (DMEM, ThermoFisher) supplemented with 15% heat-inactivated foetal calf serum (ThermoFisher), 100 U/ml penicillin, 100 \u00b5g/ml streptomycin (ThermoFisher), 1X Minimal essential amino acids (ThermoFisher), 2 mM L-glutamine, 103 U/ml of LIF (Stemcell Technologies) and 50 \u00b5M 2-mercaptoethanol (ThermoFisher). Cells were grown on plates coated with 0.1% Gelatine (Embryomax, Millipore), detached using 0.05% Trypsin (ThermoFisher) and incubated at 5% CO2 at 37\u00b0C. MDCK, BHK-21, BV-2 and RAW264.7 cells were cultured in Dulbecco\u2019s modified Eagle Medium (DMEM, ThermoFisher) supplemented with 10% heat-inactivated foetal calf serum (ThermoFisher), 100 U/ml penicillin, 100 \u00b5g/ml streptomycin (ThermoFisher), 2 mM L-glutamine and incubated at 5% CO2 at 37\u00b0C. NIH3T3 cell line was provided by A. Buck lab, and grown in DMEM supplemented with 10% FCS. To determine cell proliferation kinetics, cells were seeded in 6-well plates at a density of 2*105 cells/well. Cell numbers were determined in triplicates after 12, 24, 36 and 48 hr using a CASY cell counter.\n\nStocks of TMEV strain GDVII were grown on BHK-21 cells and frozen in aliquots at \u221280\u00b0C. Stocks of Influenza A virus strain PR8 (kindly provided by P. Digard, University of Edinburgh) were grown on MDCK cells in the absence of serum and in the presence of 2 \u00b5g/ml TPCK-treated trypsin and frozen in aliquots at \u221280\u00b0C. For TMEV infections, cells were infected for 1 hr with the required dilution, followed by replacement with fresh medium and incubation for the desired time. For the 50% Tissue Culture Infective dose (TCID50) assays, seven serial dilutions of TMEV were prepared and at least six wells (in 96-well format) per dilution were infected and incubated for at least 24 hr before counting infected wells. TCID50 values were calculated using the Spearman and K\u00e4rber algorithm. Influenza A virus infections were performed by infecting cells in the absence of serum for 45 min with the addition of 2 \u00b5g/ml TPCK-treated trypsin. After replacement of the inoculum with fresh serum containing medium the cells were incubated for the desired period.\n\n### Differentiation of mESCs\n\nTo differentiate mESCs, they were first cultured as hanging droplets to induce embryoid body formation. For this, a single-cell suspension of 5 \u00d7 105 cells/ml was prepared in medium without LIF and 20 \u00b5l drops are pipetted on the inside of the lid of a 10 cm petri dish and hung upside-down. The petri-dish was filled with PBS to prevent drying of the hanging drops and incubated at 37\u00b0C, 5% CO2 for 48 hr. The embryoid bodies were consequently washed from the lids and transferred to petri dishes to further differentiate, all in the absence of LIF. After another incubation time of 48 hr, medium was removed and replaced with fresh medium containing 250 nM of retinoic acid (Sigma-Aldrich) and incubated for 7 days while replacing the medium every 48 hr. After this incubation time, the embryoid bodies were collected and plated on normal gelatine-coated cell culture plates which allowed the embryoid bodies to adhere to the plastic and the cells to migrate from the embryoid bodies. Again, the medium was refreshed every 48 hr for the cells to further differentiate.\n\n### Northern blot for miRNAs\n\nTotal RNA (15 \u00b5g) was loaded on a 10% TBE-UREA gel. After electrophoresis, gel was stained with SYBR gold for visualization of equal loading. Gel was transferred onto a positively charged Nylon membrane for 1 hr at 250 mA. After UV-crosslinking, the membrane was pre-hybridized for 4 hr at 40\u00b0C in 1xSSC, 1%SDS (w/v) and 100 mg/ml single-stranded DNA (Sigma). Radioactively labelled probes corresponding to the highly expressed ESCs miRNAs miR-130\u20133 p, miR-293\u20133 p, and miR-294\u20133 p were synthesized using the mirVana miRNA Probe Construction Kit (Ambion) and hybridized overnight in 1xSSC, 1%SDS (w/v) and 100 mg/ml ssDNA. After hybridization, membranes were washed four times at 40\u00b0C in 0.2xSSC and 0.2%SDS (w/v) for 30 min each. Blots were analysed using a PhosphorImager (Molecular Dynamics) and ImageQuant TL software for quantification. Oligonucleotides used are listed in Supplementary file 1.\n\n### Transfections of poly(I:C), DNA, miRNA mimics and Antagomirs\n\nTo activate the IFN response, cells were transfected with either the dsRNA analogue poly(I:C) (Invivogen) or the Y-shaped-DNA cGAS agonist (G3-YSD, Invivogen) using Lipofectamine 2000 (ThermoFisher). Transfections were performed in 24-well format, with cells approximately 80% confluent, using different concentrations of poly(I:C), from 0,5 to 2,5 \u00b5g per well (as indicated in the figures) or 0.5 \u00b5g of G3-YSD. Cells were incubated for approximately 16 hr for poly(I:C)- and 8 hr for DNA-transfections before harvest and further processing. IFN-\u03b2 expression was measured using a quantitative ELISA kit (Mouse IFN-\u03b2, Quantikine, R and D systems) according to manufacturer\u2019s instructions. Cells were transfected with 2.5 \u00b5g/ml poly(I:C), incubated for 16 hr after which supernatant was collected and assayed for IFN-\u03b2. To activate ESCs with exogenous IFN-\u03b2 (R and D systems), cells were incubated with 10.000 U/ml of IFN-\u03b2 for 4 hr, followed by RNA extraction and quantitative RT-PCR.\n\nFor the miRNA mimics (miScript, Qiagen) a final concentration of 1 \u03bcM was transfected into cells using Dharmafect (Dharmacon), incubated for the desired period and further processed. The same procedure was followed for the antagomirs (Dharmacon), but at a concentration of 100 nM. All experiments were performed in 24-well format, with cells at approximately 80% confluency.\n\n### Quantitative RT-PCR\n\nTotal RNA from cells was isolated using Tri reagent (Sigma-Aldrich) according to the manufacturer\u2019s instructions. 0.5\u20131 \u00b5g RNA was subsequently reverse transcribed using M-MLV (Promega) and random hexamers, and used for quantitative PCR in a StepOnePlus real-time PCR machine (ThermoFisher) using GoTaq master mix (Promega). Data was analysed using the StepOne software package. Oligonucleotides used are listed in Supplementary file 1.\n\n### Cell lysis and western blots\n\nCells used for Western blot analysis were lysed in RIPA buffer (50 mM TRIS-HCl, pH 7.4, 1% triton X-100, 0.5% Na-deoxycholate, 0.1% SDS, 150 mM NaCl, protease inhibitor cocktail (Roche), 5 mM NaF, 0.2 mM Sodium orthovanadate). Lysates were spun and protein concentrations measured using a BCA protein assay kit (BioVision). After adjusting protein concentrations, lysates were mixed with reducing agent (Novex, ThermoFisher) and LDS sample buffer (Novex, ThermoFisher) and boiled at 70\u00b0C for 10 min before loading on pre-made gels (NuPAGE, ThermoFisher). Proteins were transferred to nitrocellulose membrane using semi-dry transfer (iBlot2, ThermoFisher). Membranes were blocked for 1 hr at room temperature in PBS-T (0.1% Tween-20) and 5% milk powder before overnight incubation at 4\u00b0C with primary antibody. Antibodies used were: Anti-rabbit HRP (Cell Signaling Technology), Anti-mouse HRP (Bio-Rad), MAVS (E-6, Santa Cruz Biotechnology), PKR (ab45427, Abcam), MDA5 (D74E4, Cell Signaling Technology), RIG-I (D12G6, Cell Signaling Technology), phospho-IRF-3 (D601M, Cell Signaling Technology) and \u03b1-tubulin (CP06, Merck). Proteins bands were visualised using ECL (Pierce) on a Bio-Rad ChemiDoc imaging system. Protein bands were quantified using ImageJ (v1.51p) software and expression levels calculated normalized to \u03b1-tubulin.\n\n### Luciferase assay\n\nThe 3\u2019UTRs from Mda5, Rig-I and Mavs were amplified from genomic DNA based on the annotation from UTRdb (utrdb.ba.itb.cnr.it) using primers containing restriction sites. The fragments were cloned in the psiCHECK-2 vector (Promega) at the 3\u2019 end of the hRluc gene. Cells in 24-well format were transfected with 250 ng plasmid using Lipofectamine 2000 and incubated for 24 hr. Cells were subsequently lysed and assayed using the Dual-Glo Luciferase assay system (Promega). Luminescence was measured in a Varioskan flash (ThermoFisher) platereader.\n\n### Proteomics\n\nFor the total proteome comparison, 6 replicates of the Dgcr8-/- and Dgcr8resc cell lines were prepared by lysing cells in Lysis buffer (50 mM TRIS-HCl, pH 7.4, 1% triton X-100, 0.5% Na-deoxycholate, 0.1% SDS, 150 mM NaCl, protease inhibitor cocktail (Roche), 5 mM NaF and 0.2 mM Sodium orthovanadate) at 4\u00b0C. Samples were subsequently sonicated 4 \u00d7 10 s, at 2\u03bc amplitude, reduced by boiling with 10 mM DTT and centrifuged. The samples were further processed by Filter-aided sample preparation (FASP) by mixing each sample with 200 \u00b5l UA (8M Urea, 0.1 M Tris/HCl pH 8.5) in a Vivacon 500 filter column (30 kDa cut off, Sartorius VN01H22), centrifuged at 14.000 x g and washed twice with 200 \u00b5l UA. To alkylate the sample, 100 \u00b5l 50 mM iodoacetamide in UA was applied to the columns and incubated in the dark for 30 min, spun, followed by two washes with UA and another two washes with 50 mM ammonium bicarbonate. The samples were trypsinized on the column by the addition of 4 \u00b5g trypsin (ThermoFisher) in 40 \u00b5l 50 mM ammonium bicarbonate to the filter. Samples were incubated overnight in a wet chamber at 37\u00b0C and acidified by the addition of 5 \u00b5l 10% trifluoroacetic acid (TFA). The pH was checked by spotting onto pH paper, and peptide concentration estimated using a NanoDrop. C18 Stage tips were activated using 20 \u00b5l of methanol, equilibrated with 100 \u00b5l 0.1% TFA) and loaded with 10 \u00b5g peptide solution. After washing with 100 uL 0.1% TFA, the bound peptides were eluted into a Protein LoBind 1.5 mL tube (Eppendorf) with 20 \u00b5l 80% acetonitrile, 0.1% TFA and concentrated to less than 4 \u00b5l in a vacuum concentrator. The final volume was adjusted to 6 \u00b5l with 0.1% TFA.\n\nFive \u00b5g of peptides were injected onto a C18 packed emitter and eluted over a gradient of 2\u201380% ACN in 120 min, with 0.1% TFA throughout on a Dionex RSLnano. Eluting peptides were ionised at\u00a0+2 kV before data-dependent analysis on a Thermo Q-Exactive Plus. MS1 was acquired with mz range 300\u20131650 and resolution 70,000, and top 12 ions were selected for fragmentation with normalised collision energy of 26, and an exclusion window of 30 s. MS2 were collected with resolution 17,500. The AGC targets for MS1 and MS2 were 3e6 and 5e4 respectively, and all spectra were acquired with one microscan and without lockmass. Finally, the data were analysed using MaxQuant (v 1.5.7.4) in conjunction with uniprot fasta database 2017_02, with match between runs (MS/MS not required), LFQ with one peptide required. Average expression levels were calculated for each protein and significant differences identified using a two tailed t-test assuming equal variance (homoscedasticity) with a p-value lower than 0.05.\n\n### Stable cell lines overexpressing DGCR8, Dicer and MAVS\n\nPlasmids containing the sequence of mouse DICER (pCAGEN-SBP-DICER1, Addgene), MAVS (GE-healthcare, MMM1013-202764911) and DGCR8 (Macias et al., 2012) were used to amplify the open reading frame using specific primers containing restriction sites (Supplementary file 1). The amplified and digested fragments were ligated in pLenti-GIII-EF1\u03b1 for MAVS and pEF1\u03b1-IRES-dsRED-Express2 for DGCR8 and DICER. Verified plasmids containing the genes of interest were transfected in mESCs using Lipofectamine 2000 and selected with the appropriate antibiotic. After several weeks of selection, colonies were isolated, expanded and tested for expression by qRT-PCR and Western blot.\n\n### Mitochondrial activity\n\nThe mitochondria specific dye Rhodamine 123 (Sigma-Aldrich) was used to measure mitochondrial activity. Suspended cells were incubated with Rhodamine 123 at 37\u00b0C and samples were taken at various intervals, washed three times with PBS at 4\u00b0C and the fluorescence measured in a VarioSkan flash (ThermoFisher) plate reader (excitation 508, emission 535).\n\n### Inhibitors\n\nCells were pre-incubated with the inhibitors BX795, which blocks the phosphorylation of the kinases TBK1 and IKK\u03b5, and consequently IRF3 activation and IFN-\u03b2 production (10 \u00b5M, Synkinase) and the inhibitor BMS345541, which targets IK\u03b2\u03b1, IKK\u03b1 and IKK\u03b2 and consequently NF-\u03ba\u03b2 signalling (10 \u00b5M, Cayman Chemical) for 45 min before infection with TMEV. 24 hr post-infection in the presence of the inhibitor, infected wells were scored and the TCID50 calculated. For Ruxolitinib (Cell Guidance Systems), cells were pre-incubated for 45 min with 50 \u00b5M Ruxotlitinib, infected with TMEV and incubated for 16 hr followed by extensive washing with PBS, RNA extraction and analysis by quantitative RT-PCR.\n\n### CRISPR/Cas 9 targeting of mmu-miR-673\n\nTo create a cell line lacking mmu-mmiR-673\u20135p, the Alt-R CRISPR-Cas9 System (IDT) was used. Two different crRNAs were designed to target sequences within the pri-miRNA sequence hairpin to induce structural changes disrupting processing by the Microprocessor and DICER. Cas9 protein and tracrRNAs were transfected with the Neon Transfection System followed by cell sorting to create single cell clones. Genomic DNA was purified and screened by PCR followed by restriction site disruption analyses for the pri-miRNA sequence. Genomic DNA of the pri-miRNA sequence of candidates was amplified using primers in Supplementary file 1, and cloned into pGEMt-easy vector for sequencing.\n\n### miRNA qRT-PCR\n\nTotal RNA (100 ng) was used to quantify mmu-mmiR-673\u20135p levels. RNA was first converted to cDNA using miRCURY LNA RT kit (Qiagen). cDNA was diluted 1/25 for RT-qPCR using miRCURY LNA SYBR Green kit and amplified using mmu-mmiR-673\u20135p specific primers (Qiagen) and U6 as a loading control. Quantitative PCR was carried out on a Roche LC480 light cycler and analysed using the second derivative method.\n\n### Data availability\n\nAll processed Mass spectrometry data is provided as Figure 3\u2014source data 1, including LFQ intensity values for each protein detected in each of the samples. All raw data are available from corresponding author upon request.\n",
+      "created_at": "2025-12-02T09:41:36.048315Z"
+    },
+    {
+      "id": "692fca16-57a5-4ae9-b7e6-1f4963417e95",
+      "submission_id": "0d23c181-9d68-4813-8b83-1d2965a91293",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Xuetao Cao, Zhejiang University School of Medicine China\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.44171.022](https://doi.org/10.7554/eLife.44171.022)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for sending your article entitled \"MicroRNA-deficient embryonic stem cells acquire a functional Interferon response\" for peer review at eLife. Your article has been evaluated by two peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Tadatsugu Taniguchi as the Senior Editor.\n\nGiven the list of essential revisions, including some new experiments, the editors and reviewers invite you to respond within the next two weeks with an action plan and timetable for the completion of the additional work. In doing so, please describe point-by-point response to the issues raised by the reviewers.\n\nWe plan to share your responses with the reviewers and then issue a binding recommendation.\n\nEssential revisions:\n\nBiological relevance should be strengthened. Data showing the production of IFN protein and biological activities of the secreted IFN on ESC is needed, with or without virus infection in Dgcr8-/- ESCs. Furthermore, more mechanistic study is needed, for examples, whether the ESCs have abnormal epigenetic regulation of miR-673 and whether miR-673 expression was suppressed through ESC differentiation.\n\nReviewer #1:\n\nBoth human and murine ESCs are incapable to produce type I IFN in response to dsRNA, to avoid an unexpected responses to transponson derived transcripts. Previous studies suggested this attributed to a reduced expression of dsRNA receptors (TLR3, MDA5, RIG-I). The authors declared here that at least in murine ESCs, miRNAs take the central role to suppress IFN responses by targeting MAVS. By bioinformatic analysis and verifying experiments, they declared miR-673 was the exact functional microRNA targeting MAVS in mESCs. This is an interesting study, and adds potential new understanding in this area. However, the data are not strongly supportive of the conclusion, and there are some conclusions need modification or additional experimental evidence to support.\n\n1) The main conclusion of the manuscript is \"miRNA mediated IFN suppression is responsible for the reduced resistance of mESC to RNA virus\". They draw this from the observation: i) Dgcr8-/- mESC were resistant to virus; ii) IFN mRNA were increased in Dgcr8-/- mESC. This is illogical, and correlation is not causation. MicroRNAs may target other anti-viral factors (e.g. ISGs directly) and cause reduced resistance to virus, along with IFN upregulation.\n\n2) All through the paper, they only examined the IFNb by qPCR. As ESCs mildly response to IFNs, a solid data shown the production of IFN protein and biological activities of the secreted IFN on ESC is needed. Otherwise, they can't conclude that IFN was responsible for reduced virus infection in Dgcr8-/- ESCs.\n\n3) They only observed that miRNA is responsible for resistance of IFN responses of mESCs. They still haven't explained the reason. Whether the ESCs have abnormal epigenetic regulation of miR-673? Which transcript factors caused this epigenetic change (Oct4? Nanog? etc.)? and through ESC differentiation, whether miR-673 expression was suppressed?\n\n4) ESCs acquire IFN responses during differentiation. Does miR-673 have any activities on ESC colony formation, proliferation and differentiation, as miR-673 may regulated IFN response by regulating ESC differentiation indirectly, instead of directly on MAVS.\n\n5) Genetic ablation of Dgcr8 or Dicer would influence many biological activities of ESCs, e.g. their differentiation. Whether the reduced virus in these ESCs were caused by abnormities in cell proliferation or apoptosis?\n\n6) \"Both inhibitors increased viral susceptibility in wild type cells lines, however, the effect was far greater in the knock out cell lines\". We can't draw the conclusion from Figure 3A and Figure 3\u2014figure supplement 1A. There lacks a vehicle control. In addition, western analysis of the activation of RIG-I/IFN pathways (pTBK1, pIRF3, pIKK, pIkB, pp65, etc.) would be more helpful.\n\n7) Subsection \u201cmiR-673 is crucial to suppress antiviral immunity in ESCs\u201d, first paragraph, they declare high expression of miR-185 and miR-673 in ESC, however, there were no data shown this.\n\n8) Figure 4B, It's intriguing that overexpression is less effective that miRNA inhibition to increase the protein level of MAVS.\n\nReviewer #2:\n\nIn this manuscript Witteveldt et al. investigate the lack of innate immune response in mouse ESCs. They exquisitely demonstrate that a miRNA; miR-673 binds to the 3' UTR of MAVS and suppresses the IFN response. This is a very novel finding as it reveals the importance of the miRNA pathway regulating innate immunity in ESCs.\n\nThe experiments in this manuscript substantiate this conclusions and in my opinion there is no requirement for additional ones.\n",
+      "created_at": "2025-12-02T09:41:36.048315Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T09:41:36.048315Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T09:41:36.048315Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "f63398c5-f441-4050-9e72-3588deb350ed",
+      "content_id": "94cb30a1-b692-471f-8df8-0ae3bc7671c9",
+      "claim_id": "C1",
+      "claim": "Mouse embryonic stem cells (ESCs) are intrinsically incapable of producing type I interferons (IFNs).",
+      "claim_type": "EXPLICIT",
+      "source": "When mammalian cells detect a viral infection, they initiate a type I interferon (IFNs) response as part of their innate immune system. This antiviral mechanism is conserved in virtually all cell types, except for embryonic stem cells (ESCs) and oocytes which are intrinsically incapable of producing IFNs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated in the abstract as established background; supported by citations in introduction",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:41:36.048315Z"
+    },
+    {
+      "id": "eb638a08-ca5a-4eea-b02e-5345e3853d10",
+      "content_id": "94cb30a1-b692-471f-8df8-0ae3bc7671c9",
+      "claim_id": "C2",
+      "claim": "In the absence of miRNAs, ESCs acquire an active IFN response.",
+      "claim_type": "EXPLICIT",
+      "source": "Here we show that, in the absence of miRNAs, ESCs acquire an active IFN response.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Main finding stated in abstract and supported by experimental data in Figures 2 and 3",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:41:36.048315Z"
+    },
+    {
+      "id": "125f6689-28f5-4289-b7fe-f9c93ba61467",
+      "content_id": "94cb30a1-b692-471f-8df8-0ae3bc7671c9",
+      "claim_id": "C3",
+      "claim": "MAVS is actively silenced by miRNAs in ESCs.",
+      "claim_type": "EXPLICIT",
+      "source": "Proteomic analysis identified MAVS, a central component of the IFN pathway, to be actively silenced by miRNAs and responsible for suppressing IFN expression in ESCs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by proteomic analysis and Western blot data shown in Figure 3",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:41:36.048315Z"
+    },
+    {
+      "id": "ff442554-34a4-47df-944d-5cb6de8f5ab2",
+      "content_id": "94cb30a1-b692-471f-8df8-0ae3bc7671c9",
+      "claim_id": "C4",
+      "claim": "Knocking out miR-673 restores the antiviral response in ESCs through MAVS regulation.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, we show that knocking out a single miRNA, miR-673, restores the antiviral response in ESCs through MAVS regulation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by CRISPR knockout experiments and viral susceptibility assays shown in Figure 5",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:41:36.048315Z"
+    },
+    {
+      "id": "9aa654ca-4f9f-4841-bad5-f4b92145938a",
+      "content_id": "94cb30a1-b692-471f-8df8-0ae3bc7671c9",
+      "claim_id": "C5",
+      "claim": "The interaction between miR-673 and MAVS acts as a switch to suppress the antiviral IFN during pluripotency.",
+      "claim_type": "EXPLICIT",
+      "source": "Our findings suggest that the interaction between miR-673 and MAVS acts as a switch to suppress the antiviral IFN during pluripotency and present genetic approaches to enhance their antiviral immunity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion based on experimental data showing miR-673 regulation of MAVS and its effects on IFN response",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:41:36.048315Z"
+    },
+    {
+      "id": "67f8ea4a-b49d-4b2c-a7aa-c139772f00ab",
+      "content_id": "94cb30a1-b692-471f-8df8-0ae3bc7671c9",
+      "claim_id": "C6",
+      "claim": "Type I IFNs activate the JAK-STAT pathway and production of interferon-stimulated genes (ISGs) in infected and neighboring cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Once type I IFNs are secreted, they activate the JAK-STAT pathway and production of interferon-stimulated genes (ISGs) in both the infected and neighbouring cells to induce an antiviral state (Ivashkiv and Donlin, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Established mechanism cited from literature",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:41:36.048315Z"
+    },
+    {
+      "id": "a6c5bac6-b9ba-4a3e-9c34-7a5e39465824",
+      "content_id": "94cb30a1-b692-471f-8df8-0ae3bc7671c9",
+      "claim_id": "C7",
+      "claim": "RIG-I and MDA5 initiate a signaling cascade through MAVS that activates Ifnb1 transcription.",
+      "claim_type": "EXPLICIT",
+      "source": "The dsRNA sensors RIG-I and MDA5 initiate a signalling cascade that signals through the central mitochondrial-associated factor MAVS, ultimately activating Ifnb1 transcription.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Established pathway mechanism from literature",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:41:36.048315Z"
+    },
+    {
+      "id": "684968e9-bd4a-4612-8b48-44f48ff6de99",
+      "content_id": "94cb30a1-b692-471f-8df8-0ae3bc7671c9",
+      "claim_id": "C8",
+      "claim": "The cGAS/STING pathway is activated upon detection of viral or foreign DNA molecules.",
+      "claim_type": "EXPLICIT",
+      "source": "The cGAS/STING pathway is activated upon detection of viral or other foreign DNA molecules and uses a distinct signalling pathway involving the endoplasmic reticulum associated STING protein (Chan and Gack, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Established pathway mechanism cited from literature",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:41:36.048315Z"
+    },
+    {
+      "id": "4ea7f005-88db-4c0f-aae8-c082087b1b18",
+      "content_id": "94cb30a1-b692-471f-8df8-0ae3bc7671c9",
+      "claim_id": "C9",
+      "claim": "Both mouse and human embryonic stem cells fail to produce IFNs.",
+      "claim_type": "EXPLICIT",
+      "source": "Both mouse and human embryonic stem cells (ESCs) (Wang et al., 2013; Chen et al., 2010) as well as embryonic carcinoma cells (Burke et al., 1978) fail to produce IFNs, suggesting that this function is acquired during differentiation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from multiple literature sources",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:41:36.048315Z"
+    },
+    {
+      "id": "10389eab-0cf4-41b6-bad3-1c70ab7ec0bb",
+      "content_id": "94cb30a1-b692-471f-8df8-0ae3bc7671c9",
+      "claim_id": "C10",
+      "claim": "ESCs are protected from viral infections by the trophoblast in their natural setting.",
+      "claim_type": "EXPLICIT",
+      "source": "The rationale for silencing this response is not fully understood but it has been proposed that in their natural setting, ESCs are protected from viral infections by the trophoblast, which forms the outer layer of the blastocyst (Delorme-Axford et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Hypothesis cited from literature",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:41:36.048315Z"
+    },
+    {
+      "id": "081491fb-b857-42b7-8162-f7f0931fe17d",
+      "content_id": "94cb30a1-b692-471f-8df8-0ae3bc7671c9",
+      "claim_id": "C11",
+      "claim": "ESCs exhibit a mild response to exogenous IFNs.",
+      "claim_type": "EXPLICIT",
+      "source": "ESCs exhibit a mild response to exogenous IFNs, suggesting that during embryonic development, maternal IFN could have protective properties (Hong and Carmichael, 2013; Wang et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from literature",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:41:36.048315Z"
+    },
+    {
+      "id": "4db33b15-70e9-4c33-a7b2-cf386ac6e7eb",
+      "content_id": "94cb30a1-b692-471f-8df8-0ae3bc7671c9",
+      "claim_id": "C12",
+      "claim": "A Dicer-dependent RNA interference mechanism functions as an alternative antiviral mechanism in mouse ESCs.",
+      "claim_type": "EXPLICIT",
+      "source": "In mouse ESCs, a Dicer-dependent RNA interference (RNAi) mechanism, reminiscent to that of plants and insects, is suggested to function as an alternative antiviral mechanism (Maillard et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from literature",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:41:36.048315Z"
+    },
+    {
+      "id": "578e431a-9255-4c9f-a397-06eddb2d01fd",
+      "content_id": "94cb30a1-b692-471f-8df8-0ae3bc7671c9",
+      "claim_id": "C13",
+      "claim": "Human ESCs intrinsically express high levels of a subgroup of ISGs in the absence of infection.",
+      "claim_type": "EXPLICIT",
+      "source": "And in humans, ESCs intrinsically express high levels of a subgroup of ISGs in the absence of infection, bypassing the need for an antiviral IFN response (Wu et al., 2018; Wu et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from literature",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:41:36.048315Z"
+    },
+    {
+      "id": "29bb7be1-75df-403d-825d-4f4018d3c832",
+      "content_id": "94cb30a1-b692-471f-8df8-0ae3bc7671c9",
+      "claim_id": "C14",
+      "claim": "Silencing of the IFN response during pluripotency may prevent aberrant IFN production in response to retrotransposons and endogenous retroviral derived dsRNA.",
+      "claim_type": "EXPLICIT",
+      "source": "Silencing of the IFN response during pluripotency may also be essential to avoid aberrant IFN production in response to retrotransposons and endogenous retroviral derived dsRNA, which are highly expressed during the early stages of embryonic development and oocytes (Ahmad et al., 2018; Grow et al., 2015; Macia et al., 2015; Peaston et al., 2004; Macfarlan et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Hypothesis supported by citations",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:41:36.048315Z"
+    },
+    {
+      "id": "e7aebc1c-1548-41db-b00d-d7bc6f9bff21",
+      "content_id": "94cb30a1-b692-471f-8df8-0ae3bc7671c9",
+      "claim_id": "C15",
+      "claim": "Exposing cells to exogenous IFN induces differentiation and an anti-proliferative state.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, exposing cells to exogenous IFN induces differentiation and an anti-proliferative state, which would have catastrophic consequences during very early embryonic development (Borden et al., 1982; Hertzog et al., 1994).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from literature",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:41:36.048315Z"
+    },
+    {
+      "id": "697a9f82-06e8-4c80-b53e-f480b0f62f19",
+      "content_id": "94cb30a1-b692-471f-8df8-0ae3bc7671c9",
+      "claim_id": "C16",
+      "claim": "miRNAs are essential for successful differentiation of ESCs.",
+      "claim_type": "EXPLICIT",
+      "source": "One particular class of regulatory factors that are essential for the successful differentiation of ESCs are miRNAs (Greve et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from literature",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:41:36.048315Z"
+    },
+    {
+      "id": "d5762fc6-af06-4f1a-b00b-942ae13d6c58",
+      "content_id": "94cb30a1-b692-471f-8df8-0ae3bc7671c9",
+      "claim_id": "C17",
+      "claim": "miRNAs originate from long precursor RNA molecules that undergo two consecutive processing steps.",
+      "claim_type": "EXPLICIT",
+      "source": "These type of small RNAs originate from long precursor RNA molecules, which undergo two consecutive processing steps, one in the nucleus by the Microprocessor complex, followed by a DICER-mediated processing in the cytoplasm (Treiber et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Established mechanism cited from literature",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:41:36.048315Z"
+    },
+    {
+      "id": "6b1871d4-6fa0-42f2-91f5-c1efc9253dd0",
+      "content_id": "94cb30a1-b692-471f-8df8-0ae3bc7671c9",
+      "claim_id": "C18",
+      "claim": "The Microprocessor complex is composed of DGCR8 and DROSHA, both essential for mature miRNA production.",
+      "claim_type": "EXPLICIT",
+      "source": "The Microprocessor complex is composed of the dsRNA binding protein DGCR8 and the RNase III DROSHA which are both essential for mature miRNA production (Gregory et al., 2004; Lee et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Established mechanism cited from literature",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:41:36.048315Z"
+    },
+    {
+      "id": "430b8c88-d554-4bef-b57c-dee956d6d96d",
+      "content_id": "94cb30a1-b692-471f-8df8-0ae3bc7671c9",
+      "claim_id": "C19",
+      "claim": "Mammalian DICER is essential for production of siRNAs.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, mammalian DICER is also essential for production of siRNAs (Bernstein et al., 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from literature",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:41:36.048315Z"
+    },
+    {
+      "id": "092dfbc2-9f40-4375-b466-001905bba454",
+      "content_id": "94cb30a1-b692-471f-8df8-0ae3bc7671c9",
+      "claim_id": "C20",
+      "claim": "Genetic ablation of Dgcr8 or Dicer in mice blocks ESC differentiation.",
+      "claim_type": "EXPLICIT",
+      "source": "The genetic ablation of Dgcr8 or Dicer in mice blocks ESCs differentiation suggesting that miRNAs are an essential factor for this, as these are the common substrates for the two RNA processing factors (Wang et al., 2007; Kanellopoulou et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from literature",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:41:36.048315Z"
+    },
+    {
+      "id": "a72c2867-ddb3-4f71-89d2-86012671f076",
+      "content_id": "94cb30a1-b692-471f-8df8-0ae3bc7671c9",
+      "claim_id": "C21",
+      "claim": "miRNAs are responsible for suppressing the IFN response during pluripotency, specifically to immunostimulatory RNAs.",
+      "claim_type": "EXPLICIT",
+      "source": "In this study, we show that miRNAs are responsible for suppressing the IFN response during pluripotency, specifically to immunostimulatory RNAs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Main finding supported by experimental data in Figures 2 and 3",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:41:36.048315Z"
+    },
+    {
+      "id": "40d946bd-1558-4cb5-9204-54f2dec04549",
+      "content_id": "94cb30a1-b692-471f-8df8-0ae3bc7671c9",
+      "claim_id": "C22",
+      "claim": "miRNA-deficient ESCs are able to synthesize IFN-\u03b2 and mount a functional antiviral response.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that miRNA-deficient ESCs acquire an IFN-proficient state, are able to synthesize IFN-\u03b2 and mount a functional antiviral response.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data in Figure 2",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:41:36.048315Z"
+    },
+    {
+      "id": "faaf30c6-da5a-4ba1-9614-42a2f9d92b20",
+      "content_id": "94cb30a1-b692-471f-8df8-0ae3bc7671c9",
+      "claim_id": "C23",
+      "claim": "miRNAs specifically downregulate MAVS in ESCs.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results show that miRNAs specifically downregulate MAVS (mitochondrial antiviral signalling protein), an essential and central protein in the IFN response pathway.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by proteomic and Western blot data in Figure 3",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:41:36.048315Z"
+    },
+    {
+      "id": "febea628-2321-4ed6-b863-bf761b82a3fc",
+      "content_id": "94cb30a1-b692-471f-8df8-0ae3bc7671c9",
+      "claim_id": "C24",
+      "claim": "ESCs with increased MAVS expression show increased IFN production and antiviral response.",
+      "claim_type": "EXPLICIT",
+      "source": "In agreement, ESCs with increased MAVS expression or knock-out of the MAVS-regulating miRNA miR-673, resulted in an increased IFN production and antiviral response.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data in Figures 4 and 5",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:41:36.048315Z"
+    },
+    {
+      "id": "ecb0fbe7-35e7-4657-82dd-039838aec77f",
+      "content_id": "94cb30a1-b692-471f-8df8-0ae3bc7671c9",
+      "claim_id": "C25",
+      "claim": "Mouse ESCs do not produce type I IFNs in response to poly(I:C) transfection.",
+      "claim_type": "EXPLICIT",
+      "source": "It has been shown that mouse ESCs do not produce type I IFNs in response to poly(I:C) transfection, a synthetic analogue of dsRNA classically used to mimic viral RNA replication intermediates (Wang et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from literature and confirmed by experimental data in Figure 1A",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:41:36.048315Z"
+    },
+    {
+      "id": "168b8c11-4694-44be-9dfc-37bde4dc9841",
+      "content_id": "94cb30a1-b692-471f-8df8-0ae3bc7671c9",
+      "claim_id": "C26",
+      "claim": "Transfection of poly(I:C) did not result in Ifnb1 expression in both ESC lines (ESC1 and ESC2).",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, the transfection of poly(I:C) did not result in Ifnb1 expression in both ESC lines (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Experimental result shown in Figure 1A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:41:36.048315Z"
+    },
+    {
+      "id": "d3df4b01-4ae5-440e-b64f-15a9d40055fd",
+      "content_id": "94cb30a1-b692-471f-8df8-0ae3bc7671c9",
+      "claim_id": "C27",
+      "claim": "ESCs failed to activate Ifnb1 expression upon G3-YSD transfection.",
+      "claim_type": "EXPLICIT",
+      "source": "ESCs also failed to activate Ifnb1 expression upon G3-YSD transfection, suggesting that the cGAS/STING pathway was also inactive (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Experimental result shown in Figure 1B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:41:36.048315Z"
+    },
+    {
+      "id": "7a8aa6fd-95da-430d-9c36-ebb36598b5c6",
+      "content_id": "94cb30a1-b692-471f-8df8-0ae3bc7671c9",
+      "claim_id": "C28",
+      "claim": "NIH3T3 cells did not express Ifnb1 in response to G3-YSD.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, NIH3T3 cells, which have also been previously shown to have a defect in this specific pathway (Cheng et al., 2018), did not express Ifnb1 in response to G3-YSD (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Experimental result shown in Figure 1B, supported by citation",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:41:36.048315Z"
+    },
+    {
+      "id": "2be106b8-d364-4aee-9781-b727a5614c04",
+      "content_id": "94cb30a1-b692-471f-8df8-0ae3bc7671c9",
+      "claim_id": "C29",
+      "claim": "ESCs are at least 30 times more sensitive to TMEV infection than NIH3T3 and BV-2 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "These same cell lines were infected with the (+) ssRNA virus TMEV (Theiler's Murine Encephalomyelitis Virus) and showed that ESCs are at least 30 times more sensitive than NIH3T3 and BV-2 cells, which correlates with the ability of these cell lines to induce Ifnb1mRNA expression (Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Experimental result shown in Figure 1C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:41:36.048315Z"
+    },
+    {
+      "id": "05a52b87-0729-4327-8499-da4404861f52",
+      "content_id": "94cb30a1-b692-471f-8df8-0ae3bc7671c9",
+      "claim_id": "C30",
+      "claim": "The ability of cells to express IFN in response to viruses or immunogenic nucleic acids is acquired during differentiation.",
+      "claim_type": "EXPLICIT",
+      "source": "The ability of cells to express IFN in response to viruses or immunogenic nucleic acids is assumed to be acquired during differentiation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Hypothesis tested by differentiation experiments",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:41:36.048315Z"
+    },
+    {
+      "id": "459f8bb8-c7c3-4a76-b89e-5fcff34e752b",
+      "content_id": "94cb30a1-b692-471f-8df8-0ae3bc7671c9",
+      "claim_id": "C31",
+      "claim": "Pluripotency markers Nanog and Pou5f1 showed a rapid decrease in mRNA expression during differentiation in both ESC lines.",
+      "claim_type": "EXPLICIT",
+      "source": "The pluripotency markers Nanog and Pou5f1 (Oct4) showed a rapid decrease in mRNA expression during differentiation in both the cell lines (Figure 1\u2014figure supplement 1A), whereas differentiation markers Neurog2, Gata6 and Gata4 showed a gradual increase (Figure 1\u2014figure supplement 1B) confirming successful differentiation of the ESCs.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Experimental result shown in Figure 1\u2014figure supplement 1A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:41:36.048315Z"
+    },
+    {
+      "id": "8f4b353c-528d-4423-b7ec-75c9f6317a26",
+      "content_id": "94cb30a1-b692-471f-8df8-0ae3bc7671c9",
+      "claim_id": "C32",
+      "claim": "Differentiation markers Neurog2, Gata6 and Gata4 showed a gradual increase during ESC differentiation.",
+      "claim_type": "EXPLICIT",
+      "source": "The pluripotency markers Nanog and Pou5f1 (Oct4) showed a rapid decrease in mRNA expression during differentiation in both the cell lines (Figure 1\u2014figure supplement 1A), whereas differentiation markers Neurog2, Gata6 and Gata4 showed a gradual increase (Figure 1\u2014figure supplement 1B) confirming successful differentiation of the ESCs.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Experimental result shown in Figure 1\u2014figure supplement 1B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:41:36.048315Z"
+    },
+    {
+      "id": "70318cd0-8755-49c4-b45b-ae0af86989ae",
+      "content_id": "94cb30a1-b692-471f-8df8-0ae3bc7671c9",
+      "claim_id": "C33",
+      "claim": "Differentiated ESCs acquired the ability to synthesize Ifnb1 to similar levels as BV-2 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Next, we compared the ability of ESCs (day 0) and retinoic-acid differentiated cells after 10 days (day 10) to express Ifnb1 mRNA in response to poly(I:C), and confirmed that differentiated cells acquired the ability to synthesize Ifnb1 to similar levels to the positive control cell line, BV-2 (Figure 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Experimental result shown in Figure 1D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:41:36.048315Z"
+    },
+    {
+      "id": "fa88caa6-3db7-4d91-bb03-899108c01e4a",
+      "content_id": "94cb30a1-b692-471f-8df8-0ae3bc7671c9",
+      "claim_id": "C34",
+      "claim": "Dicer-/- ESCs were more resistant to viruses compared to their wild-type counterparts.",
+      "claim_type": "EXPLICIT",
+      "source": "Unexpectedly, Dicer-/- ESCs were more resistant to viruses compared to their wild-type counterparts (previously named ESC2) (Figure 2A, left).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Experimental result shown in Figure 2A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:41:36.048315Z"
+    },
+    {
+      "id": "b1d65917-beea-4894-9b3f-74b54f99127b",
+      "content_id": "94cb30a1-b692-471f-8df8-0ae3bc7671c9",
+      "claim_id": "C35",
+      "claim": "Similar results of increased viral resistance were obtained using Influenza A virus in Dicer-/- ESCs.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar results were obtained using the (-) ssRNA virus, Influenza A (IAV) (Figure 2A, right).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Experimental result shown in Figure 2A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:41:36.048315Z"
+    },
+    {
+      "id": "92d3efc2-e5b3-433c-8899-20f997339f94",
+      "content_id": "94cb30a1-b692-471f-8df8-0ae3bc7671c9",
+      "claim_id": "C36",
+      "claim": "The absence of Dgcr8 decreased TMEV and IAV viral susceptibility.",
+      "claim_type": "EXPLICIT",
+      "source": "The absence of Dgcr8 also decreased TMEV and IAV viral susceptibility, suggesting that miRNAs are responsible for suppressing the antiviral response in ESCs (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Experimental result shown in Figure 2A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:41:36.048315Z"
+    },
+    {
+      "id": "0fd8be80-82e2-4493-bb69-429a96666340",
+      "content_id": "94cb30a1-b692-471f-8df8-0ae3bc7671c9",
+      "claim_id": "C37",
+      "claim": "Dgcr8-/- cells were more resistant to virus infection than Dicer-/- cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, Dgcr8-/- cells were more resistant to virus infection than Dicer-/- cells, which supports a dual function for DICER by also acting as a direct antiviral factor targeting viral transcripts for degradation by RNAi.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Experimental result shown in Figure 2A with interpretation",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:41:36.048315Z"
+    },
+    {
+      "id": "a63d7350-bc1d-4609-88d3-4c50cb3cb64c",
+      "content_id": "94cb30a1-b692-471f-8df8-0ae3bc7671c9",
+      "claim_id": "C38",
+      "claim": "ESCs lacking miRNAs (Dgcr8-/- or Dicer-/-) were able to respond to poly(I:C) and express Ifnb1 mRNA and protein in a dose dependent manner.",
+      "claim_type": "EXPLICIT",
+      "source": "ESCs lacking miRNAs (Dgcr8-/- or Dicer-/-) were able to respond to the dsRNA analogue, poly(I:C) and express Ifnb1 mRNA and protein in a dose dependent manner (Figure 2B and Figure 2\u2014figure supplement 2A\u2013C), whereas no significant response was observed with immunostimulatory DNA (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Experimental results shown in Figure 2B and Figure 2\u2014figure supplement 2A\u2013C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:41:36.048315Z"
+    },
+    {
+      "id": "1fab5e74-c905-487c-83f1-f1d377c8105c",
+      "content_id": "94cb30a1-b692-471f-8df8-0ae3bc7671c9",
+      "claim_id": "C39",
+      "claim": "No significant response to immunostimulatory DNA was observed in miRNA-deficient ESCs.",
+      "claim_type": "EXPLICIT",
+      "source": "ESCs lacking miRNAs (Dgcr8-/- or Dicer-/-) were able to respond to the dsRNA analogue, poly(I:C) and express Ifnb1 mRNA and protein in a dose dependent manner (Figure 2B and Figure 2\u2014figure supplement 2A\u2013C), whereas no significant response was observed with immunostimulatory DNA (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Experimental result shown in Figure 2B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:41:36.048315Z"
+    },
+    {
+      "id": "794d5ca6-1fea-4583-8109-3ca26c5136f8",
+      "content_id": "94cb30a1-b692-471f-8df8-0ae3bc7671c9",
+      "claim_id": "C40",
+      "claim": "Blocking IFN signaling using Ruxolitinib significantly increased viral replication in miRNA-deficient ESCs but not in wild-type ESCs.",
+      "claim_type": "EXPLICIT",
+      "source": "To further establish the involvement of IFN expression in these observations, we blocked IFN signalling using the JAK1/2 inhibitor Ruxolitinib before infecting cells with TMEV. As a result we observed no, or a very mild increase in TMEV viral replication in wild-type ESCs, but a significant increase in viral replication in miRNA-deficient ESCs (Figure 2C and Figure 2\u2014figure supplement 2D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Experimental result shown in Figure 2C and Figure 2\u2014figure supplement 2D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:41:36.048315Z"
+    },
+    {
+      "id": "41755a2f-eeef-4cfc-b4b2-672dbbfcb4fd",
+      "content_id": "94cb30a1-b692-471f-8df8-0ae3bc7671c9",
+      "claim_id": "C41",
+      "claim": "Mouse ESCs retain the ability to respond to external IFNs.",
+      "claim_type": "EXPLICIT",
+      "source": "ESCs were also stimulated with exogenous IFN-\u03b2 and confirmed that mouse ESCs retain the ability to respond to external IFNs, and, importantly, that miRNA deficiency did not alter ISG expression levels, supporting the hypothesis that the miRNA-mediated silencing of the IFN pathway in ESCs occurs upstream of IFN production (Figure 2D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Experimental result shown in Figure 2D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:41:36.048315Z"
+    },
+    {
+      "id": "f84ae211-9284-4789-867c-f33794958805",
+      "content_id": "94cb30a1-b692-471f-8df8-0ae3bc7671c9",
+      "claim_id": "C42",
+      "claim": "miRNA deficiency did not alter ISG expression levels in response to exogenous IFN-\u03b2.",
+      "claim_type": "EXPLICIT",
+      "source": "ESCs were also stimulated with exogenous IFN-\u03b2 and confirmed that mouse ESCs retain the ability to respond to external IFNs, and, importantly, that miRNA deficiency did not alter ISG expression levels, supporting the hypothesis that the miRNA-mediated silencing of the IFN pathway in ESCs occurs upstream of IFN production (Figure 2D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Experimental result shown in Figure 2D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:41:36.048315Z"
+    },
+    {
+      "id": "64b957a7-84f5-413f-b702-a3cc694ed149",
+      "content_id": "94cb30a1-b692-471f-8df8-0ae3bc7671c9",
+      "claim_id": "C43",
+      "claim": "Rescue of Dgcr8 and Dicer knock-out cell lines reverted to wild-type viral replication and susceptibility levels.",
+      "claim_type": "EXPLICIT",
+      "source": "To verify that the observed results are solely due to the absence of miRNAs, we rescued the knock-out cell lines by reintroducing Dgcr8 and Dicer and observed that these reverted to wild-type viral replication and susceptibility levels (Figure 2E,F and Figure 2\u2014figure supplement 2E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Experimental result shown in Figure 2E,F and Figure 2\u2014figure supplement 2E",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:41:36.048315Z"
+    },
+    {
+      "id": "65e810b6-33bf-42c5-a34b-eeb9fafff54e",
+      "content_id": "94cb30a1-b692-471f-8df8-0ae3bc7671c9",
+      "claim_id": "C44",
+      "claim": "The inhibitors BX795 and BMS345541 increased viral susceptibility far more in knock-out cell lines than in wild-type cell lines.",
+      "claim_type": "EXPLICIT",
+      "source": "Both inhibitors increased viral susceptibility in wild-type cells lines, however, the effect was far greater in the knock-out cell lines (Figure 3A,B and Figure 3\u2014figure supplement 1A\u2013C), suggesting that miRNAs regulate the interferon pathway upstream Ifnb1 transcription.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Experimental result shown in Figure 3A,B and Figure 3\u2014figure supplement 1A\u2013C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:41:36.048315Z"
+    },
+    {
+      "id": "6bef95cd-e462-42df-b7f4-b749ff2cba66",
+      "content_id": "94cb30a1-b692-471f-8df8-0ae3bc7671c9",
+      "claim_id": "C45",
+      "claim": "miRNAs regulate the interferon pathway upstream of Ifnb1 transcription.",
+      "claim_type": "EXPLICIT",
+      "source": "Both inhibitors increased viral susceptibility in wild-type cells lines, however, the effect was far greater in the knock-out cell lines (Figure 3A,B and Figure 3\u2014figure supplement 1A\u2013C), suggesting that miRNAs regulate the interferon pathway upstream Ifnb1 transcription.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Inference from experimental results shown in Figure 3A,B",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:41:36.048315Z"
+    },
+    {
+      "id": "0b942d9f-d1a2-4701-a7ad-3801c6c7d2d9",
+      "content_id": "94cb30a1-b692-471f-8df8-0ae3bc7671c9",
+      "claim_id": "C46",
+      "claim": "Proteomic analysis revealed significant differences in ribosome structure/function, mitochondrial activity and oxidative phosphorylation pathways between Dgcr8-/- and rescued cell lines.",
+      "claim_type": "EXPLICIT",
+      "source": "STRING analyses of the expression profiles revealed significant differences in a number of pathways, including ribosome structure/function, mitochondrial activity and the oxidative phosphorylation pathway, which were downregulated in the absence of miRNAs (Figure 3C, for complete list see Figure 3\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Proteomic analysis result shown in Figure 3C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:41:36.048315Z"
+    },
+    {
+      "id": "06cd7d6c-2cd5-47df-b5bb-8c61e8d4d943",
+      "content_id": "94cb30a1-b692-471f-8df8-0ae3bc7671c9",
+      "claim_id": "C47",
+      "claim": "MAVS was upregulated in the absence of miRNAs.",
+      "claim_type": "EXPLICIT",
+      "source": "A search for differentially expressed proteins involved in the IFN response did not reveal any significant changes except for the Mitochondrial antiviral-signalling protein (MAVS), which in contrast to many other mitochondria-related proteins, was upregulated in the absence of miRNAs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Proteomic analysis result",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:41:36.048315Z"
+    },
+    {
+      "id": "8dadf638-b718-4dc3-867e-fb2f46af427f",
+      "content_id": "94cb30a1-b692-471f-8df8-0ae3bc7671c9",
+      "claim_id": "C48",
+      "claim": "MAVS was the only factor consistently expressed to higher levels in both miRNA-deficient cell lines, Dgcr8-/- and Dicer-/-.",
+      "claim_type": "EXPLICIT",
+      "source": "Western blot and qRT-PCR analysis confirmed that MAVS was the only factor consistently expressed to higher levels in both miRNA-deficient cell lines, Dgcr8-/- and Dicer-/- (Figure 3D, lanes 2 and 5, and Figure 3\u2014figure supplement 1E), compared to a panel of other components of the same innate immune response pathway (Figure 3\u2014figure supplement 1F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Western blot and qRT-PCR results shown in Figure 3D and Figure 3\u2014figure supplement 1E,F",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:41:36.048315Z"
+    },
+    {
+      "id": "8932838f-53c0-44e1-84f3-2c17be0c8ba4",
+      "content_id": "94cb30a1-b692-471f-8df8-0ae3bc7671c9",
+      "claim_id": "C49",
+      "claim": "Only the Mavs 3'UTR showed relatively higher luciferase expression levels in the knock-out lines compared to the empty plasmid.",
+      "claim_type": "EXPLICIT",
+      "source": "Only the Mavs 3'UTR showed relatively higher luciferase expression levels in the knock-out lines when compared to the empty plasmid, suggesting that the 3'UTR of Mavs is strongly regulated by miRNAs in ESCs (Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Luciferase assay result shown in Figure 4A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:41:36.048315Z"
+    },
+    {
+      "id": "a057a5f8-aa0a-42ff-94ee-ff59a49109b3",
+      "content_id": "94cb30a1-b692-471f-8df8-0ae3bc7671c9",
+      "claim_id": "C50",
+      "claim": "Overexpression of miRNA-resistant MAVS in wild-type ESCs resulted in a 15-fold decrease in TCID50 and significant reduction in vRNA levels compared to wild-type ESCs.",
+      "claim_type": "EXPLICIT",
+      "source": "For this reason, a miRNA-resistant form of Mavs, lacking its natural 3'UTR, was overexpressed in wild-type ESCs and infected with TMEV to test if cells regain viral resistance similar to miRNA deficient ESCs (Figure 4B). A 15-fold decrease in TCID50 and significant reduction in vRNA levels were found compared to wild-type ESCs (Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Experimental result shown in Figure 4B,C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:41:36.048315Z"
+    },
+    {
+      "id": "48b0477c-b858-46d9-9dcd-4196e8ab258f",
+      "content_id": "94cb30a1-b692-471f-8df8-0ae3bc7671c9",
+      "claim_id": "C51",
+      "claim": "MAVS overexpressing cells regained the ability to produce Ifnb1 after stimulation with poly(I:C).",
+      "claim_type": "EXPLICIT",
+      "source": "MAVS overexpressing cells also regained the ability to produce Ifnb1 after stimulation with poly(I:C) (Figure 4D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Experimental result shown in Figure 4D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:41:36.048315Z"
+    },
+    {
+      "id": "b1ca766a-781b-4474-868a-b7624dc06d16",
+      "content_id": "94cb30a1-b692-471f-8df8-0ae3bc7671c9",
+      "claim_id": "C52",
+      "claim": "MAVS is a crucial target for the absence of the IFN response in ESCs.",
+      "claim_type": "EXPLICIT",
+      "source": "All these experiments show that MAVS is a crucial target for the absence of the IFN response in ESCs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion from experimental results in Figure 4",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:41:36.048315Z"
+    },
+    {
+      "id": "f21fd5eb-c3ca-4622-a87c-b06b873dae81",
+      "content_id": "94cb30a1-b692-471f-8df8-0ae3bc7671c9",
+      "claim_id": "C53",
+      "claim": "Transfection of miR-125a-5p, miR-125b-5p, miR-185-5p and miR-673-5p mimics in Dgcr8-/- cells resulted in reductions in MAVS protein and mRNA levels.",
+      "claim_type": "EXPLICIT",
+      "source": "We transfected Dgcr8-/- cells with mimics of these miRNAs and measured Mavs mRNA and protein levels by RT-qPCR and western blot, respectively. Results showed reductions in MAVS protein and mRNA levels for all tested miRNAs (Figure 5A and Figure 5\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Experimental result shown in Figure 5A and Figure 5\u2014figure supplement 1A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:41:36.048315Z"
+    },
+    {
+      "id": "ef91bd61-d6a9-4766-aec3-f5ddab5a8581",
+      "content_id": "94cb30a1-b692-471f-8df8-0ae3bc7671c9",
+      "claim_id": "C54",
+      "claim": "Infection of miRNA-transfected Dgcr8-/- cells with TMEV resulted in an increase in both susceptibility and viral replication for miR-125a-5p, miR-125b-5p and miR-673-5p.",
+      "claim_type": "EXPLICIT",
+      "source": "The infection of miRNA-transfected Dgcr8-/- cells with TMEV resulted in an increase in both susceptibility and viral replication for miR-125a-5p, miR-125b-5p and miR-673\u20135p, which correlated with the ability of these miRNAs to downregulate MAVS protein levels (Figure 5B and Figure 5\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Experimental result shown in Figure 5B and Figure 5\u2014figure supplement 1B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:41:36.048315Z"
+    },
+    {
+      "id": "72e83c2d-9579-4d4b-ade2-f4e9c503bfc6",
+      "content_id": "94cb30a1-b692-471f-8df8-0ae3bc7671c9",
+      "claim_id": "C55",
+      "claim": "Transfection of Dgcr8+/+ cells with anti-miR-673-5p showed a clear increase in MAVS protein expression.",
+      "claim_type": "EXPLICIT",
+      "source": "As an alternative approach, Dgcr8+/+ cells were transfected with inhibitors to miRNAs miR-125a-5p, miR-125b-5p and miR-673\u20135p. Western blot analysis showed a clear increase in MAVS protein expression, especially for anti-miR-673\u20135p (Figure 5C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Experimental result shown in Figure 5C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:41:36.048315Z"
+    },
+    {
+      "id": "a0847bfa-9a45-4254-96ec-8a666e487340",
+      "content_id": "94cb30a1-b692-471f-8df8-0ae3bc7671c9",
+      "claim_id": "C56",
+      "claim": "miR-673 is a crucial miRNA involved in MAVS regulation.",
+      "claim_type": "EXPLICIT",
+      "source": "Because miR-673\u20135p showed the largest effect on MAVS protein expression both when depleted and overexpressed, we hypothesize that miR-673 is a crucial miRNA involved on MAVS regulation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from experimental results in Figure 5A,C",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:41:36.048315Z"
+    },
+    {
+      "id": "c26419f9-1f36-4b83-bee4-ab76940c32a1",
+      "content_id": "94cb30a1-b692-471f-8df8-0ae3bc7671c9",
+      "claim_id": "C57",
+      "claim": "The absence of miR-673-5p was enough to observe an increase in MAVS expression both at the mRNA and protein levels.",
+      "claim_type": "EXPLICIT",
+      "source": "The absence of miR-673\u20135p was enough to observe an increase in MAVS expression both at the mRNA and protein levels (Figure 5D and Figure 5\u2014figure supplement 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Experimental result shown in Figure 5D and Figure 5\u2014figure supplement 2C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:41:36.048315Z"
+    },
+    {
+      "id": "b670fc15-8070-47a9-ba41-3fdb5d27ef8e",
+      "content_id": "94cb30a1-b692-471f-8df8-0ae3bc7671c9",
+      "claim_id": "C58",
+      "claim": "Mouse fibroblasts (NIH3T3) had no detectable miR-673-5p.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, we measured miR-673 and MAVS expression levels in the mouse fibroblasts cell line, NIH3T3, which is proficient in producing IFN in response to dsRNA. Mouse fibroblasts had no detectable miR-673\u20135p, and MAVS protein expression was comparable to miRNA-deficient ESC (Figure 5D and Figure 5\u2014figure supplement 2B), highlighting the correlation of MAVS expression with the ability of cells to activate Ifnb1 expression in response to immunogenic RNA.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Experimental result shown in Figure 5D and Figure 5\u2014figure supplement 2B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:41:36.048315Z"
+    },
+    {
+      "id": "e732de26-ae11-4588-9c18-f87eab4bb544",
+      "content_id": "94cb30a1-b692-471f-8df8-0ae3bc7671c9",
+      "claim_id": "C59",
+      "claim": "MAVS protein expression in NIH3T3 cells was comparable to miRNA-deficient ESCs.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, we measured miR-673 and MAVS expression levels in the mouse fibroblasts cell line, NIH3T3, which is proficient in producing IFN in response to dsRNA. Mouse fibroblasts had no detectable miR-673\u20135p, and MAVS protein expression was comparable to miRNA-deficient ESC (Figure 5D and Figure 5\u2014figure supplement 2B), highlighting the correlation of MAVS expression with the ability of cells to activate Ifnb1 expression in response to immunogenic RNA.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Experimental result shown in Figure 5D and Figure 5\u2014figure supplement 2B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:41:36.048315Z"
+    },
+    {
+      "id": "cedd9b00-5b42-44b7-a698-3cff91927bb2",
+      "content_id": "94cb30a1-b692-471f-8df8-0ae3bc7671c9",
+      "claim_id": "C60",
+      "claim": "miR-673-deficient cell lines showed a consistent decrease in virus replication, similar to that observed in the absence of all miRNAs (Dgcr8-/-).",
+      "claim_type": "EXPLICIT",
+      "source": "Next, miR-673-deficient cell lines were tested for TMEV susceptibility, which showed a consistent decrease in virus replication, similar to that observed in the absence of all miRNAs (Dgcr8-/-), suggesting this miRNA is essential in regulating the innate antiviral response in ESCs (Figure 5E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Experimental result shown in Figure 5E",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:41:36.048315Z"
+    },
+    {
+      "id": "90b5d947-0ba8-4b78-9b87-9d1160c703f4",
+      "content_id": "94cb30a1-b692-471f-8df8-0ae3bc7671c9",
+      "claim_id": "C61",
+      "claim": "miR-673 is essential in regulating the innate antiviral response in ESCs.",
+      "claim_type": "EXPLICIT",
+      "source": "Next, miR-673-deficient cell lines were tested for TMEV susceptibility, which showed a consistent decrease in virus replication, similar to that observed in the absence of all miRNAs (Dgcr8-/-), suggesting this miRNA is essential in regulating the innate antiviral response in ESCs (Figure 5E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Inference from experimental result shown in Figure 5E",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:41:36.048315Z"
+    },
+    {
+      "id": "d65cadb7-b850-455f-ad35-ce12507bdb44",
+      "content_id": "94cb30a1-b692-471f-8df8-0ae3bc7671c9",
+      "claim_id": "C62",
+      "claim": "Inhibition of IFN signaling did not significantly increase the accumulation of viral RNA in wild-type ESCs (Dgcr8+/+).",
+      "claim_type": "EXPLICIT",
+      "source": "Whereas inhibition of IFN signalling did not significantly increase the accumulation of viral RNA in wild-type ESCs (Dgcr8+/+), both miR-673-deficient and Dgcr8-/- ESCs showed a significant increase in viral RNA upon treatment, confirming the role of miR-673 and IFNs in viral susceptibility (Figure 5F and Figure 5\u2014figure supplement 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Experimental result shown in Figure 5F and Figure 5\u2014figure supplement 3A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:41:36.048315Z"
+    },
+    {
+      "id": "099df5c9-82ba-49f4-aca5-63fe60b65b6f",
+      "content_id": "94cb30a1-b692-471f-8df8-0ae3bc7671c9",
+      "claim_id": "C63",
+      "claim": "Both miR-673-deficient and Dgcr8-/- ESCs showed a significant increase in viral RNA upon Ruxolitinib treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "Whereas inhibition of IFN signalling did not significantly increase the accumulation of viral RNA in wild-type ESCs (Dgcr8+/+), both miR-673-deficient and Dgcr8-/- ESCs showed a significant increase in viral RNA upon treatment, confirming the role of miR-673 and IFNs in viral susceptibility (Figure 5F and Figure 5\u2014figure supplement 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Experimental result shown in Figure 5F and Figure 5\u2014figure supplement 3A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:41:36.048315Z"
+    },
+    {
+      "id": "a2959701-9e5c-4694-915e-d01ffcc6e02e",
+      "content_id": "94cb30a1-b692-471f-8df8-0ae3bc7671c9",
+      "claim_id": "C64",
+      "claim": "Knocking out miR-673-5p expression did not affect the ability of ESCs to proliferate or induce spontaneous differentiation.",
+      "claim_type": "EXPLICIT",
+      "source": "As controls, we confirmed that knocking out miR-673\u20135p expression did not affect the ability of ESCs to proliferate or induced spontaneous differentiation, which could cause differences in viral susceptibility (Figure 5\u2014figure supplement 3B\u2013E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Control experiments shown in Figure 5\u2014figure supplement 3B\u2013E",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:41:36.048315Z"
+    },
+    {
+      "id": "683487fb-4559-472c-b2e2-fefc2f8ae1b8",
+      "content_id": "94cb30a1-b692-471f-8df8-0ae3bc7671c9",
+      "claim_id": "C65",
+      "claim": "During ESC differentiation with retinoic acid, expression of miR-673-5p became silenced.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, during ESC differentiation with retinoic acid, expression of miR-673\u20135p became silenced, confirming previous results obtained with alternative differentiation protocols (Knelangen et al., 2011; Zhao et al., 2014; Hadjimichael et al., 2016; Yang et al., 2016), and suggesting that the expression levels of this miRNA negatively correlate with the ability of cells to activate the IFN response (Figure 5G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Experimental result shown in Figure 5G, supported by citations",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:41:36.048315Z"
+    },
+    {
+      "id": "2f044147-43c6-4841-80c5-d22d3fb9513e",
+      "content_id": "94cb30a1-b692-471f-8df8-0ae3bc7671c9",
+      "claim_id": "C66",
+      "claim": "The expression levels of miR-673 negatively correlate with the ability of cells to activate the IFN response.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, during ESC differentiation with retinoic acid, expression of miR-673\u20135p became silenced, confirming previous results obtained with alternative differentiation protocols (Knelangen et al., 2011; Zhao et al., 2014; Hadjimichael et al., 2016; Yang et al., 2016), and suggesting that the expression levels of this miRNA negatively correlate with the ability of cells to activate the IFN response (Figure 5G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Inference from experimental result shown in Figure 5G",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:41:36.048315Z"
+    },
+    {
+      "id": "d0da84ee-0015-47de-adfa-15b59aa2afb2",
+      "content_id": "94cb30a1-b692-471f-8df8-0ae3bc7671c9",
+      "claim_id": "C67",
+      "claim": "The IFN response in mouse ESCs is silenced by the post-transcriptional control of Mavs expression by miR-673-5p.",
+      "claim_type": "EXPLICIT",
+      "source": "Collectively, these data show that the IFN response in mouse ESCs is silenced by the post-transcriptional control of Mavs expression by miR-673\u20135p.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion from all experimental results",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:41:36.048315Z"
+    },
+    {
+      "id": "37ed3bb4-3a90-4f29-98b8-751a6dccd85f",
+      "content_id": "94cb30a1-b692-471f-8df8-0ae3bc7671c9",
+      "claim_id": "C68",
+      "claim": "The pluripotent state of a cell is incompatible with an active IFN response.",
+      "claim_type": "EXPLICIT",
+      "source": "Several studies suggest that the pluripotent state of a cell is incompatible with an active IFN response (Guo et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from literature",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:41:36.048315Z"
+    },
+    {
+      "id": "23ea0ae9-e8e8-489f-9472-dde0fe2201f8",
+      "content_id": "94cb30a1-b692-471f-8df8-0ae3bc7671c9",
+      "claim_id": "C69",
+      "claim": "Reprogramming of somatic cells to iPSCs leads to a loss of IFN response.",
+      "claim_type": "EXPLICIT",
+      "source": "In agreement, reprogramming of somatic cells to iPSCs (induced pluripotent stem cells) leads to a loss of IFN response, suggesting the presence of regulatory mechanisms able to switch this antiviral pathway on or off between the differentiated and pluripotent states (Chen et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from literature",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:41:36.048315Z"
+    },
+    {
+      "id": "523d6687-e354-4940-81d5-494a2e0c111a",
+      "content_id": "94cb30a1-b692-471f-8df8-0ae3bc7671c9",
+      "claim_id": "C70",
+      "claim": "Mammalian pluripotent stem cells, iPSCs and embryonic carcinoma cells exhibit an attenuated production of ISGs upon type I IFN stimulation.",
+      "claim_type": "EXPLICIT",
+      "source": "Mammalian pluripotent stem cells, iPSCs and embryonic carcinoma cells exhibit an attenuated production of ISGs upon type I IFN stimulation (Hong and Carmichael, 2013; Irudayam et al., 2015; Wang et al., 2014; Burke et al., 1978).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from literature",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:41:36.048315Z"
+    },
+    {
+      "id": "3968d89a-f836-4890-94f5-e200130b9752",
+      "content_id": "94cb30a1-b692-471f-8df8-0ae3bc7671c9",
+      "claim_id": "C71",
+      "claim": "Type I IFN stimulation could impair ESC self-renewal capacity.",
+      "claim_type": "EXPLICIT",
+      "source": "Why these activities are supressed is still not understood, but it has been hypothesized that type I IFN stimulation could impair their self-renewal capacity, since these compounds are well-known antiproliferative agents and inducers of cell death (Bekisz et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Hypothesis cited from literature",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:41:36.048315Z"
+    },
+    {
+      "id": "d192a078-338d-4f9d-a66a-b74547eea031",
+      "content_id": "94cb30a1-b692-471f-8df8-0ae3bc7671c9",
+      "claim_id": "C72",
+      "claim": "Type I IFNs are capable of inhibiting tumour cell division in vitro.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, type I IFNs are capable of inhibiting tumour cell division in vitro and are currently employed as an adjuvant to treat several types of cancers, acting as stimulants of the innate immune cellular response (Bracci et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from literature",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:41:36.048315Z"
+    },
+    {
+      "id": "b272523b-9c06-4112-b628-a882f883c884",
+      "content_id": "94cb30a1-b692-471f-8df8-0ae3bc7671c9",
+      "claim_id": "C73",
+      "claim": "Mouse ESCs express low levels of the RNA sensors TLR3, MDA5 and RIG-I.",
+      "claim_type": "EXPLICIT",
+      "source": "Mouse ESCs express low levels of the RNA sensors TLR3, MDA5 and RIG-I, which could explain their inability to respond to dsRNA although no functional studies support this model so far (Wang et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from literature",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:41:36.048315Z"
+    },
+    {
+      "id": "f396f185-8446-462c-8633-a15e4bdc8e12",
+      "content_id": "94cb30a1-b692-471f-8df8-0ae3bc7671c9",
+      "claim_id": "C74",
+      "claim": "The overexpression of a miRNA-resistant form of MAVS in wild-type ESCs is enough to enable dsRNA-mediated IFN activation.",
+      "claim_type": "EXPLICIT",
+      "source": "Our data shows an alternative scenario in which MAVS is the key factor for controlling the IFN response. The overexpression of a miRNA-resistant form of MAVS in wild-type ESCs is enough to enable dsRNA-mediated IFN activation, suggesting that dsRNA sensing is not a limiting step in the IFN pathway in ESCs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Experimental result from Figure 4",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:41:36.048315Z"
+    },
+    {
+      "id": "0710de90-fd9d-48f5-a76c-f5b940708a99",
+      "content_id": "94cb30a1-b692-471f-8df8-0ae3bc7671c9",
+      "claim_id": "C75",
+      "claim": "dsRNA sensing is not a limiting step in the IFN pathway in ESCs.",
+      "claim_type": "EXPLICIT",
+      "source": "Our data shows an alternative scenario in which MAVS is the key factor for controlling the IFN response. The overexpression of a miRNA-resistant form of MAVS in wild-type ESCs is enough to enable dsRNA-mediated IFN activation, suggesting that dsRNA sensing is not a limiting step in the IFN pathway in ESCs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from experimental result in Figure 4",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:41:36.048315Z"
+    },
+    {
+      "id": "28851682-164a-4298-8bc0-54321b71e99c",
+      "content_id": "94cb30a1-b692-471f-8df8-0ae3bc7671c9",
+      "claim_id": "C76",
+      "claim": "Regulation of MAVS alone is an efficient mechanism to block dsRNA induced IFN expression compared to suppressing individual dsRNA sensors.",
+      "claim_type": "EXPLICIT",
+      "source": "Regulation of MAVS alone proves to be an efficient mechanism to block dsRNA induced IFN expression compared to suppressing individual dsRNA sensors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from experimental results",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:41:36.048315Z"
+    },
+    {
+      "id": "c93437b7-2629-4f10-a457-fca2da9c7d9f",
+      "content_id": "94cb30a1-b692-471f-8df8-0ae3bc7671c9",
+      "claim_id": "C77",
+      "claim": "miRNAs only suppress RNA-mediated IFN activation, but not the DNA-mediated pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "The observation that miRNAs only suppress RNA-mediated IFN activation, but not the DNA-mediated pathway, leads us to speculate about the reasons for silencing this specific response during pluripotency.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Experimental result from Figure 2B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:41:36.048315Z"
+    },
+    {
+      "id": "aee70ea0-49fb-4871-977d-65b6a671c6a3",
+      "content_id": "94cb30a1-b692-471f-8df8-0ae3bc7671c9",
+      "claim_id": "C78",
+      "claim": "Embryonic stem cells and earlier stages of embryonic development are characterized by high expression levels of specific retrotransposons and endogenous retroviruses.",
+      "claim_type": "EXPLICIT",
+      "source": "Embryonic stem cells, and also earlier stages of embryonic development are characterized by high expression levels of specific retrotransposons (non-LTR) and endogenous retroviruses (LTR), which are a hallmark of their pluripotent state. This is in contrast to most somatic cell types that silence their expression (Yin et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from literature",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:41:36.048315Z"
+    },
+    {
+      "id": "fcc59ef6-5b7f-4f69-8ca9-126a5c59c92d",
+      "content_id": "94cb30a1-b692-471f-8df8-0ae3bc7671c9",
+      "claim_id": "C79",
+      "claim": "Silencing the RNA-mediated IFN response during pluripotency would act as a protective mechanism for aberrant IFN activation by transposon-derived transcripts.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, silencing the RNA-mediated IFN response during pluripotency would act as a protective mechanism for aberrant IFN activation by transposon-derived transcripts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Hypothesis based on literature and experimental results",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:41:36.048315Z"
+    },
+    {
+      "id": "4f7ab567-b0e4-4783-813b-65eec8eba8dc",
+      "content_id": "94cb30a1-b692-471f-8df8-0ae3bc7671c9",
+      "claim_id": "C80",
+      "claim": "The endonuclease DICER can act as an antiviral factor in mouse ESCs by generating antiviral siRNAs.",
+      "claim_type": "EXPLICIT",
+      "source": "The endonuclease DICER can act as an antiviral factor in mouse ESCs by generating antiviral siRNAs (Maillard et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from literature",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:41:36.048315Z"
+    },
+    {
+      "id": "d026a21c-164e-4681-b0fa-9690fcb13694",
+      "content_id": "94cb30a1-b692-471f-8df8-0ae3bc7671c9",
+      "claim_id": "C81",
+      "claim": "Detection of antiviral DICER activity is facilitated in the absence of a competent IFN response.",
+      "claim_type": "EXPLICIT",
+      "source": "Detection of antiviral DICER activity is facilitated in the absence of a competent IFN response, such as in the case of pluripotent cells, but also in somatic cells where the type I IFN response has been genetically impaired (Maillard et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from literature",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:41:36.048315Z"
+    },
+    {
+      "id": "feb6674a-a4f6-4714-b580-1a074ce2ddcc",
+      "content_id": "94cb30a1-b692-471f-8df8-0ae3bc7671c9",
+      "claim_id": "C82",
+      "claim": "In IFN-competent cells, the RNA sensor LGP2 acts as an inhibitor of DICER cleavage activity on dsRNA.",
+      "claim_type": "EXPLICIT",
+      "source": "These findings are supported by the observation that in IFN-competent cells, the RNA sensor LGP2 acts as an inhibitor of DICER cleavage activity on dsRNA (van der Veen et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from literature",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:41:36.048315Z"
+    },
+    {
+      "id": "913514f2-a52c-44ca-a6ab-97a781655585",
+      "content_id": "94cb30a1-b692-471f-8df8-0ae3bc7671c9",
+      "claim_id": "C83",
+      "claim": "When Dicer is disrupted in ESCs, they become more resistant by acquiring an active IFN response.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, when we disrupt Dicer in ESCs, which inherently lack an IFN response and would theoretically render these cells highly sensitive to viral infections, they become more resistant by acquiring an active IFN response.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Experimental result from Figure 2A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:41:36.048315Z"
+    },
+    {
+      "id": "c053ae3c-2446-4231-bb27-664f4a9319ee",
+      "content_id": "94cb30a1-b692-471f-8df8-0ae3bc7671c9",
+      "claim_id": "C84",
+      "claim": "Cells have developed mechanisms to compensate for the loss of a specific antiviral pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "All these results support the presence of extensive cross-talk between the different antiviral strategies, and suggests that cells have developed mechanisms to compensate for the loss of a specific antiviral pathway.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from experimental results and literature",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:41:36.048315Z"
+    },
+    {
+      "id": "6d4f6c98-3348-4027-91d1-0ef6920fcce0",
+      "content_id": "94cb30a1-b692-471f-8df8-0ae3bc7671c9",
+      "claim_id": "C85",
+      "claim": "MAVS and miR-673 levels are the key factors regulating the IFN response to dsRNAs during pluripotency.",
+      "claim_type": "EXPLICIT",
+      "source": "Our model shows that MAVS and miR-673 levels are the key factors regulating the IFN response to dsRNAs during pluripotency.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion from all experimental results",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:41:36.048315Z"
+    },
+    {
+      "id": "cd697edb-0624-4c26-8ab5-8448ffe9d101",
+      "content_id": "94cb30a1-b692-471f-8df8-0ae3bc7671c9",
+      "claim_id": "C86",
+      "claim": "Overexpressing MAVS or knocking-out miR-673 in ESCs is enough to enhance their antiviral response.",
+      "claim_type": "EXPLICIT",
+      "source": "Accordingly, overexpressing MAVS or knocking-out this single miRNA in ESCs is enough to enhance their antiviral response.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Experimental results from Figures 4 and 5",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:41:36.048315Z"
+    },
+    {
+      "id": "7225591d-6a54-4808-a097-f60abefa0d53",
+      "content_id": "94cb30a1-b692-471f-8df8-0ae3bc7671c9",
+      "claim_id": "C87",
+      "claim": "miR-673 is only conserved in rodents.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, this miRNA is only conserved in rodents, despite human ESCs also suppressing type I IFNs expression (Hong and Carmichael, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as fact with citation for human ESC IFN suppression",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:41:36.048315Z"
+    },
+    {
+      "id": "f3fb20f9-00eb-4f8f-9e89-8f6d808058b9",
+      "content_id": "94cb30a1-b692-471f-8df8-0ae3bc7671c9",
+      "claim_id": "C88",
+      "claim": "Either other miRNAs regulate MAVS expression in human ESCs, or alternative mechanisms operate to silence IFN.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that either other miRNAs regulate MAVS expression in human ESCs, or alternative mechanisms operate to silence IFN.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculation based on species differences",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:41:36.048315Z"
+    },
+    {
+      "id": "317b8cdc-5cc4-467d-8750-aae6ddf95790",
+      "content_id": "94cb30a1-b692-471f-8df8-0ae3bc7671c9",
+      "claim_id": "C89",
+      "claim": "Human and mouse ESCs have been suggested to constitutively express a subset of ISGs to protect them from viruses.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, human and mouse ESCs have been suggested to constitutively express a subset of ISGs to protect them from viruses (Wu et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from literature",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:41:36.048315Z"
+    },
+    {
+      "id": "ce061130-6cb6-4f45-9e3b-7a1a6561c38c",
+      "content_id": "94cb30a1-b692-471f-8df8-0ae3bc7671c9",
+      "claim_id": "C90",
+      "claim": "miRNAs did not significantly affect production of ISGs such as IFITM1, IFTIM2, IFITM3 in ESCs.",
+      "claim_type": "EXPLICIT",
+      "source": "Our proteomics data suggest that, from all the ISGs detected, miRNAs did not significantly affect production of these antiviral factors, such as IFITM1, IFTIM2, IFITM3 amongst others.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Proteomic analysis result",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:41:36.048315Z"
+    },
+    {
+      "id": "196fd1cb-8191-4ef1-a46b-6c2d78d75c63",
+      "content_id": "94cb30a1-b692-471f-8df8-0ae3bc7671c9",
+      "claim_id": "C91",
+      "claim": "Engineering ESCs to acquire a functional IFN response significantly increases their antiviral immunity.",
+      "claim_type": "EXPLICIT",
+      "source": "We have shown that engineering ESCs to acquire a functional IFN response significantly increases their antiviral immunity, highlighting the powerful antiviral effects of IFNs even during pluripotency.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion from experimental results in Figures 4 and 5",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:41:36.048315Z"
+    },
+    {
+      "id": "23993746-62f7-482d-86ad-891653961029",
+      "content_id": "94cb30a1-b692-471f-8df8-0ae3bc7671c9",
+      "claim_id": "C92",
+      "claim": "DICER and miRNAs act as negative regulators of the IFN response in human and mouse models outside pluripotency.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous findings also support a general role for DICER and miRNAs acting as negative regulators of the IFN response in human and mouse models outside pluripotency (Papadopoulou et al., 2012; Witteveldt et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from literature",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:41:36.048315Z"
+    },
+    {
+      "id": "64983335-4693-4166-8f9e-dfbdeeceeac7",
+      "content_id": "94cb30a1-b692-471f-8df8-0ae3bc7671c9",
+      "claim_id": "C93",
+      "claim": "Overexpressing the viral protein VP55 from Vaccinia virus to deplete cellular miRNAs showed that miRNAs are relevant to control the expression of pro-inflammatory cytokines during viral chronic infections, but not in the acute antiviral response.",
+      "claim_type": "EXPLICIT",
+      "source": "In agreement, an indirect approach to deplete cellular miRNAs, by overexpressing the viral protein VP55 from Vaccinia virus, showed that miRNAs are also relevant to control the expression of pro-inflammatory cytokines during viral chronic infections, but not in the acute antiviral response (Aguado et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from literature",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:41:36.048315Z"
+    },
+    {
+      "id": "669dd1fe-418c-492c-badd-006637fc7581",
+      "content_id": "94cb30a1-b692-471f-8df8-0ae3bc7671c9",
+      "claim_id": "C94",
+      "claim": "DICER1-/- HEK293T human cell line has an attenuated IFN response due to low PRRs expression.",
+      "claim_type": "EXPLICIT",
+      "source": "It is relevant to mention that some of the results leading to this conclusion have been primarily generated in DICER1-/- HEK293T human cell line (Bogerd et al., 2014; Tsai et al., 2018), which has an attenuated IFN response due to low PRRs expression (Rice et al., 2014; Witteveldt et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from literature",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:41:36.048315Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "ed42017e-1871-40d9-970e-86c582dae576",
+      "content_id": "94cb30a1-b692-471f-8df8-0ae3bc7671c9",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Mouse ESCs fail to produce type I IFNs in response to immunogenic RNA (poly(I:C)) and DNA (G3-YSD), and are highly susceptible to viral infection compared to differentiated cells. This lack of IFN response is a characteristic feature of pluripotent cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C25-C29 provide experimental evidence (Figure 1A-C) confirming the established knowledge (C1, C9) that ESCs do not produce IFNs in response to immunogenic nucleic acids. The data show no Ifnb1 expression upon poly(I:C) or G3-YSD transfection, and demonstrate 30-fold higher viral susceptibility compared to control cells. The experimental results are consistent across multiple ESC lines and support the background claims.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T09:41:36.048315Z"
+    },
+    {
+      "id": "4af29d45-493f-4259-8a03-a3006c0d8225",
+      "content_id": "94cb30a1-b692-471f-8df8-0ae3bc7671c9",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "ESCs acquire the ability to produce IFN-\u03b2 in response to poly(I:C) upon differentiation with retinoic acid. Differentiation was confirmed by decreased expression of pluripotency markers (Nanog, Pou5f1) and increased expression of differentiation markers (Neurog2, Gata6, Gata4).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C31-C33 provide experimental validation (Figure 1D, Figure 1\u2014figure supplement 1A-B) showing that differentiated ESCs acquire IFN response capability to levels comparable to BV-2 cells. The differentiation protocol is properly controlled with appropriate marker expression changes. This supports the hypothesis in C30 that IFN response is acquired during differentiation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T09:41:36.048315Z"
+    },
+    {
+      "id": "fb934c77-b25b-4588-8ad7-9b454f937316",
+      "content_id": "94cb30a1-b692-471f-8df8-0ae3bc7671c9",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "miRNA-deficient ESCs (Dgcr8-/- and Dicer-/-) acquire an active IFN response, becoming resistant to viral infection and capable of producing IFN-\u03b2 in response to poly(I:C) but not immunostimulatory DNA. The effect is specific to miRNA loss and can be reversed by rescue experiments.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C34-C43 provide comprehensive experimental evidence (Figure 2) demonstrating that loss of miRNAs restores IFN response in ESCs. The data include viral susceptibility assays, Ifnb1 expression measurements, JAK/STAT inhibitor experiments, and rescue experiments that reverse the phenotype. The specificity for RNA-mediated (C38) but not DNA-mediated (C39) IFN activation is clearly demonstrated. The observation that Dgcr8-/- cells are more resistant than Dicer-/- cells (C37) is supported but the interpretation of dual DICER function requires additional validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T09:41:36.048315Z"
+    },
+    {
+      "id": "14d3a070-a064-4768-93bf-67d91966da50",
+      "content_id": "94cb30a1-b692-471f-8df8-0ae3bc7671c9",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Inhibitors of IRF3 (BX795) and NF-\u03baB (BMS345541) increase viral susceptibility more in miRNA-deficient ESCs than in wild-type ESCs, suggesting that miRNAs regulate the IFN pathway upstream of Ifnb1 transcription.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C44 is supported by experimental data (Figure 3A-B) showing differential effects of transcription factor inhibitors between wild-type and knockout cells. The inference in C45 that miRNAs act upstream of transcription is logical given the greater effect in cells with active IFN response, though alternative explanations are not fully excluded.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T09:41:36.048315Z"
+    },
+    {
+      "id": "8e1c0a89-60dd-4d2a-9498-19df9ed04ea0",
+      "content_id": "94cb30a1-b692-471f-8df8-0ae3bc7671c9",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Proteomic analysis identified MAVS as specifically upregulated in miRNA-deficient ESCs, while other mitochondrial proteins and IFN pathway components showed no consistent changes. MAVS is the only factor consistently elevated in both Dgcr8-/- and Dicer-/- cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C46-C48 provide proteomic and Western blot evidence (Figure 3C-D, Figure 3\u2014figure supplement 1E-F) identifying MAVS as the key differentially expressed IFN pathway component. The specificity is demonstrated by comparison with other pathway components. However, the proteomic analysis shows only 6 replicates and statistical details are limited. The conclusion that MAVS is 'actively silenced' (C3, C23) is supported but the mechanism of silencing is not yet demonstrated at this stage.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T09:41:36.048315Z"
+    },
+    {
+      "id": "ebbed5c9-194e-4b11-8586-023a4e056e2c",
+      "content_id": "94cb30a1-b692-471f-8df8-0ae3bc7671c9",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The 3'UTR of Mavs is strongly regulated by miRNAs in ESCs, and overexpression of miRNA-resistant MAVS (lacking 3'UTR) in wild-type ESCs is sufficient to restore IFN-\u03b2 production and reduce viral susceptibility, demonstrating that MAVS is the crucial target and that dsRNA sensing is not limiting.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C49-C51 provide luciferase assay and gain-of-function experimental evidence (Figure 4A-D) showing that MAVS 3'UTR is regulated by miRNAs and that MAVS overexpression alone restores IFN response. The 15-fold decrease in viral susceptibility and restoration of Ifnb1 expression are well-documented. Claims C74-C76 draw appropriate conclusions about MAVS being the key regulatory point and dsRNA sensing not being limiting, though C76 is somewhat speculative.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T09:41:36.048315Z"
+    },
+    {
+      "id": "2a40ee83-b9fe-4faa-afb8-dd1f09b107b9",
+      "content_id": "94cb30a1-b692-471f-8df8-0ae3bc7671c9",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Multiple miRNAs (miR-125a-5p, miR-125b-5p, miR-673-5p) can downregulate MAVS expression, with miR-673-5p showing the largest effect in both overexpression and inhibition experiments, identifying it as a crucial regulator of MAVS.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C53-C55 provide miRNA mimic and antagomir experimental data (Figure 5A-C) demonstrating that multiple miRNAs can regulate MAVS, with miR-673 showing the strongest effect. The inference in C56 that miR-673 is 'crucial' is supported by the magnitude of effects in both gain- and loss-of-function experiments, though the contribution of other miRNAs is not fully quantified.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T09:41:36.048315Z"
+    },
+    {
+      "id": "1a1f9860-bf53-485a-8669-818814ffdbfb",
+      "content_id": "94cb30a1-b692-471f-8df8-0ae3bc7671c9",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "CRISPR knockout of miR-673 alone is sufficient to increase MAVS expression and restore antiviral response in ESCs to levels similar to complete miRNA deficiency. The effect is IFN-dependent and does not affect cell proliferation or differentiation status.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C57-C64 provide comprehensive evidence (Figure 5D-F, Figure 5\u2014figure supplement 2-3) that single miRNA knockout phenocopies the complete miRNA-deficient state. The CRISPR knockout is validated by sequencing and qRT-PCR, MAVS upregulation is confirmed, viral resistance is demonstrated, and appropriate controls for proliferation and differentiation are included. The Ruxolitinib experiments (C62-C63) confirm IFN-dependence. This is a key result demonstrating sufficiency of single miRNA regulation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T09:41:36.048315Z"
+    },
+    {
+      "id": "e3f6f7b0-78b5-43e6-a172-50acbf76a774",
+      "content_id": "94cb30a1-b692-471f-8df8-0ae3bc7671c9",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "miR-673 expression is silenced during ESC differentiation, and its expression levels negatively correlate with IFN response capability. The miR-673/MAVS interaction acts as a molecular switch controlling IFN response during pluripotency.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C65 provides experimental evidence (Figure 5G) that miR-673 is downregulated during differentiation, supported by literature citations. The negative correlation (C66) is demonstrated by comparing miR-673 and MAVS levels across cell types (C58-C59). The 'switch' model (C5, C67, C85) is a reasonable interpretation of the collective data, though it remains somewhat conceptual. The mechanistic details of how this switch operates are not fully elucidated.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T09:41:36.048315Z"
+    },
+    {
+      "id": "feedad78-baa5-4598-b8f6-8ba5cdcbb0df",
+      "content_id": "94cb30a1-b692-471f-8df8-0ae3bc7671c9",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "miRNAs specifically suppress RNA-mediated but not DNA-mediated IFN activation in ESCs. This selective suppression may protect against aberrant IFN activation by retrotransposon-derived transcripts that are highly expressed during pluripotency.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C77 is directly supported by experimental data (Figure 2B) showing differential responses to poly(I:C) versus G3-YSD. Claim C78 is supported by literature citations. However, claim C79 is speculative\u2014while the hypothesis is logical and consistent with the data, direct evidence that retrotransposon transcripts would trigger IFN response in the absence of miRNA regulation is not provided. This remains an untested model.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T09:41:36.048315Z"
+    },
+    {
+      "id": "9af0bc13-f1cd-431d-97e5-bcd909644230",
+      "content_id": "94cb30a1-b692-471f-8df8-0ae3bc7671c9",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "DICER has a dual antiviral function through both siRNA production and miRNA-mediated IFN regulation. Disruption of Dicer in ESCs leads to increased viral resistance through IFN response acquisition, suggesting compensatory mechanisms between antiviral pathways.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C83 is supported by experimental data (Figure 2A) showing that Dicer-/- cells are more resistant than wild-type. Claims C80-C82 provide literature context. The interpretation of dual function (C37) and compensatory mechanisms (C84) is reasonable given that Dgcr8-/- cells (lacking only miRNAs) are more resistant than Dicer-/- cells (lacking both miRNAs and siRNAs). However, the relative contributions of each pathway are not quantitatively determined.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T09:41:36.048315Z"
+    },
+    {
+      "id": "08e098b6-b02b-43ba-909f-23b5acd9702a",
+      "content_id": "94cb30a1-b692-471f-8df8-0ae3bc7671c9",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Overexpressing MAVS or knocking out miR-673 in ESCs is sufficient to enhance their antiviral response, demonstrating that engineering ESCs to acquire functional IFN response significantly increases their antiviral immunity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C86 and C91 are well-supported by the experimental results from Figures 4 and 5, showing that both genetic manipulations restore antiviral immunity. The practical implications for ESC engineering are appropriately stated, though long-term effects on pluripotency and differentiation capacity would require additional investigation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T09:41:36.048315Z"
+    },
+    {
+      "id": "fc7c1bbe-63e2-4230-aadf-db9348780bca",
+      "content_id": "94cb30a1-b692-471f-8df8-0ae3bc7671c9",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "miR-673 is only conserved in rodents, suggesting that either other miRNAs regulate MAVS in human ESCs or alternative mechanisms silence IFN response in human pluripotent cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C87 states a fact about miR-673 conservation with appropriate citation for human ESC IFN suppression. Claim C88 is a reasonable speculation given the species difference, but remains untested. This identifies an important limitation and future direction but does not undermine the mouse ESC findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T09:41:36.048315Z"
+    },
+    {
+      "id": "0a18e935-d42c-44a5-972f-c7a28d82bdcd",
+      "content_id": "94cb30a1-b692-471f-8df8-0ae3bc7671c9",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Proteomic analysis shows that miRNAs do not significantly affect production of interferon-stimulated genes (ISGs) such as IFITM1, IFITM2, IFITM3 in ESCs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C90 is supported by the proteomic data, indicating that the miRNA-mediated regulation is specific to the IFN production pathway rather than affecting constitutive ISG expression. This is consistent with claims C41-C42 showing that miRNA deficiency does not alter ISG response to exogenous IFN.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T09:41:36.048315Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "f63398c5-f441-4050-9e72-3588deb350ed",
+      "result_id": "ed42017e-1871-40d9-970e-86c582dae576"
+    },
+    {
+      "claim_id": "4ea7f005-88db-4c0f-aae8-c082087b1b18",
+      "result_id": "ed42017e-1871-40d9-970e-86c582dae576"
+    },
+    {
+      "claim_id": "ecb0fbe7-35e7-4657-82dd-039838aec77f",
+      "result_id": "ed42017e-1871-40d9-970e-86c582dae576"
+    },
+    {
+      "claim_id": "168b8c11-4694-44be-9dfc-37bde4dc9841",
+      "result_id": "ed42017e-1871-40d9-970e-86c582dae576"
+    },
+    {
+      "claim_id": "d3df4b01-4ae5-440e-b64f-15a9d40055fd",
+      "result_id": "ed42017e-1871-40d9-970e-86c582dae576"
+    },
+    {
+      "claim_id": "7a8aa6fd-95da-430d-9c36-ebb36598b5c6",
+      "result_id": "ed42017e-1871-40d9-970e-86c582dae576"
+    },
+    {
+      "claim_id": "2be106b8-d364-4aee-9781-b727a5614c04",
+      "result_id": "ed42017e-1871-40d9-970e-86c582dae576"
+    },
+    {
+      "claim_id": "05a52b87-0729-4327-8499-da4404861f52",
+      "result_id": "4af29d45-493f-4259-8a03-a3006c0d8225"
+    },
+    {
+      "claim_id": "459f8bb8-c7c3-4a76-b89e-5fcff34e752b",
+      "result_id": "4af29d45-493f-4259-8a03-a3006c0d8225"
+    },
+    {
+      "claim_id": "8f4b353c-528d-4423-b7ec-75c9f6317a26",
+      "result_id": "4af29d45-493f-4259-8a03-a3006c0d8225"
+    },
+    {
+      "claim_id": "70318cd0-8755-49c4-b45b-ae0af86989ae",
+      "result_id": "4af29d45-493f-4259-8a03-a3006c0d8225"
+    },
+    {
+      "claim_id": "eb638a08-ca5a-4eea-b02e-5345e3853d10",
+      "result_id": "fb934c77-b25b-4588-8ad7-9b454f937316"
+    },
+    {
+      "claim_id": "a72c2867-ddb3-4f71-89d2-86012671f076",
+      "result_id": "fb934c77-b25b-4588-8ad7-9b454f937316"
+    },
+    {
+      "claim_id": "40d946bd-1558-4cb5-9204-54f2dec04549",
+      "result_id": "fb934c77-b25b-4588-8ad7-9b454f937316"
+    },
+    {
+      "claim_id": "fa88caa6-3db7-4d91-bb03-899108c01e4a",
+      "result_id": "fb934c77-b25b-4588-8ad7-9b454f937316"
+    },
+    {
+      "claim_id": "b1d65917-beea-4894-9b3f-74b54f99127b",
+      "result_id": "fb934c77-b25b-4588-8ad7-9b454f937316"
+    },
+    {
+      "claim_id": "92d3efc2-e5b3-433c-8899-20f997339f94",
+      "result_id": "fb934c77-b25b-4588-8ad7-9b454f937316"
+    },
+    {
+      "claim_id": "0fd8be80-82e2-4493-bb69-429a96666340",
+      "result_id": "fb934c77-b25b-4588-8ad7-9b454f937316"
+    },
+    {
+      "claim_id": "a63d7350-bc1d-4609-88d3-4c50cb3cb64c",
+      "result_id": "fb934c77-b25b-4588-8ad7-9b454f937316"
+    },
+    {
+      "claim_id": "1fab5e74-c905-487c-83f1-f1d377c8105c",
+      "result_id": "fb934c77-b25b-4588-8ad7-9b454f937316"
+    },
+    {
+      "claim_id": "794d5ca6-1fea-4583-8109-3ca26c5136f8",
+      "result_id": "fb934c77-b25b-4588-8ad7-9b454f937316"
+    },
+    {
+      "claim_id": "41755a2f-eeef-4cfc-b4b2-672dbbfcb4fd",
+      "result_id": "fb934c77-b25b-4588-8ad7-9b454f937316"
+    },
+    {
+      "claim_id": "f84ae211-9284-4789-867c-f33794958805",
+      "result_id": "fb934c77-b25b-4588-8ad7-9b454f937316"
+    },
+    {
+      "claim_id": "64b957a7-84f5-413f-b702-a3cc694ed149",
+      "result_id": "fb934c77-b25b-4588-8ad7-9b454f937316"
+    },
+    {
+      "claim_id": "65e810b6-33bf-42c5-a34b-eeb9fafff54e",
+      "result_id": "14d3a070-a064-4768-93bf-67d91966da50"
+    },
+    {
+      "claim_id": "6bef95cd-e462-42df-b7f4-b749ff2cba66",
+      "result_id": "14d3a070-a064-4768-93bf-67d91966da50"
+    },
+    {
+      "claim_id": "125f6689-28f5-4289-b7fe-f9c93ba61467",
+      "result_id": "8e1c0a89-60dd-4d2a-9498-19df9ed04ea0"
+    },
+    {
+      "claim_id": "faaf30c6-da5a-4ba1-9614-42a2f9d92b20",
+      "result_id": "8e1c0a89-60dd-4d2a-9498-19df9ed04ea0"
+    },
+    {
+      "claim_id": "0b942d9f-d1a2-4701-a7ad-3801c6c7d2d9",
+      "result_id": "8e1c0a89-60dd-4d2a-9498-19df9ed04ea0"
+    },
+    {
+      "claim_id": "06cd7d6c-2cd5-47df-b5bb-8c61e8d4d943",
+      "result_id": "8e1c0a89-60dd-4d2a-9498-19df9ed04ea0"
+    },
+    {
+      "claim_id": "8dadf638-b718-4dc3-867e-fb2f46af427f",
+      "result_id": "8e1c0a89-60dd-4d2a-9498-19df9ed04ea0"
+    },
+    {
+      "claim_id": "8932838f-53c0-44e1-84f3-2c17be0c8ba4",
+      "result_id": "ebbed5c9-194e-4b11-8586-023a4e056e2c"
+    },
+    {
+      "claim_id": "a057a5f8-aa0a-42ff-94ee-ff59a49109b3",
+      "result_id": "ebbed5c9-194e-4b11-8586-023a4e056e2c"
+    },
+    {
+      "claim_id": "48b0477c-b858-46d9-9dcd-4196e8ab258f",
+      "result_id": "ebbed5c9-194e-4b11-8586-023a4e056e2c"
+    },
+    {
+      "claim_id": "b1ca766a-781b-4474-868a-b7624dc06d16",
+      "result_id": "ebbed5c9-194e-4b11-8586-023a4e056e2c"
+    },
+    {
+      "claim_id": "f396f185-8446-462c-8633-a15e4bdc8e12",
+      "result_id": "ebbed5c9-194e-4b11-8586-023a4e056e2c"
+    },
+    {
+      "claim_id": "0710de90-fd9d-48f5-a76c-f5b940708a99",
+      "result_id": "ebbed5c9-194e-4b11-8586-023a4e056e2c"
+    },
+    {
+      "claim_id": "28851682-164a-4298-8bc0-54321b71e99c",
+      "result_id": "ebbed5c9-194e-4b11-8586-023a4e056e2c"
+    },
+    {
+      "claim_id": "f21fd5eb-c3ca-4622-a87c-b06b873dae81",
+      "result_id": "2a40ee83-b9fe-4faa-afb8-dd1f09b107b9"
+    },
+    {
+      "claim_id": "ef91bd61-d6a9-4766-aec3-f5ddab5a8581",
+      "result_id": "2a40ee83-b9fe-4faa-afb8-dd1f09b107b9"
+    },
+    {
+      "claim_id": "72e83c2d-9579-4d4b-ade2-f4e9c503bfc6",
+      "result_id": "2a40ee83-b9fe-4faa-afb8-dd1f09b107b9"
+    },
+    {
+      "claim_id": "a0847bfa-9a45-4254-96ec-8a666e487340",
+      "result_id": "2a40ee83-b9fe-4faa-afb8-dd1f09b107b9"
+    },
+    {
+      "claim_id": "ff442554-34a4-47df-944d-5cb6de8f5ab2",
+      "result_id": "1a1f9860-bf53-485a-8669-818814ffdbfb"
+    },
+    {
+      "claim_id": "c26419f9-1f36-4b83-bee4-ab76940c32a1",
+      "result_id": "1a1f9860-bf53-485a-8669-818814ffdbfb"
+    },
+    {
+      "claim_id": "b670fc15-8070-47a9-ba41-3fdb5d27ef8e",
+      "result_id": "1a1f9860-bf53-485a-8669-818814ffdbfb"
+    },
+    {
+      "claim_id": "e732de26-ae11-4588-9c18-f87eab4bb544",
+      "result_id": "1a1f9860-bf53-485a-8669-818814ffdbfb"
+    },
+    {
+      "claim_id": "cedd9b00-5b42-44b7-a698-3cff91927bb2",
+      "result_id": "1a1f9860-bf53-485a-8669-818814ffdbfb"
+    },
+    {
+      "claim_id": "90b5d947-0ba8-4b78-9b87-9d1160c703f4",
+      "result_id": "1a1f9860-bf53-485a-8669-818814ffdbfb"
+    },
+    {
+      "claim_id": "d65cadb7-b850-455f-ad35-ce12507bdb44",
+      "result_id": "1a1f9860-bf53-485a-8669-818814ffdbfb"
+    },
+    {
+      "claim_id": "099df5c9-82ba-49f4-aca5-63fe60b65b6f",
+      "result_id": "1a1f9860-bf53-485a-8669-818814ffdbfb"
+    },
+    {
+      "claim_id": "a2959701-9e5c-4694-915e-d01ffcc6e02e",
+      "result_id": "1a1f9860-bf53-485a-8669-818814ffdbfb"
+    },
+    {
+      "claim_id": "9aa654ca-4f9f-4841-bad5-f4b92145938a",
+      "result_id": "e3f6f7b0-78b5-43e6-a172-50acbf76a774"
+    },
+    {
+      "claim_id": "683487fb-4559-472c-b2e2-fefc2f8ae1b8",
+      "result_id": "e3f6f7b0-78b5-43e6-a172-50acbf76a774"
+    },
+    {
+      "claim_id": "2f044147-43c6-4841-80c5-d22d3fb9513e",
+      "result_id": "e3f6f7b0-78b5-43e6-a172-50acbf76a774"
+    },
+    {
+      "claim_id": "d0da84ee-0015-47de-adfa-15b59aa2afb2",
+      "result_id": "e3f6f7b0-78b5-43e6-a172-50acbf76a774"
+    },
+    {
+      "claim_id": "6d4f6c98-3348-4027-91d1-0ef6920fcce0",
+      "result_id": "e3f6f7b0-78b5-43e6-a172-50acbf76a774"
+    },
+    {
+      "claim_id": "c93437b7-2629-4f10-a457-fca2da9c7d9f",
+      "result_id": "feedad78-baa5-4598-b8f6-8ba5cdcbb0df"
+    },
+    {
+      "claim_id": "aee70ea0-49fb-4871-977d-65b6a671c6a3",
+      "result_id": "feedad78-baa5-4598-b8f6-8ba5cdcbb0df"
+    },
+    {
+      "claim_id": "fcc59ef6-5b7f-4f69-8ca9-126a5c59c92d",
+      "result_id": "feedad78-baa5-4598-b8f6-8ba5cdcbb0df"
+    },
+    {
+      "claim_id": "4f7ab567-b0e4-4783-813b-65eec8eba8dc",
+      "result_id": "9af0bc13-f1cd-431d-97e5-bcd909644230"
+    },
+    {
+      "claim_id": "d026a21c-164e-4681-b0fa-9690fcb13694",
+      "result_id": "9af0bc13-f1cd-431d-97e5-bcd909644230"
+    },
+    {
+      "claim_id": "feb6674a-a4f6-4714-b580-1a074ce2ddcc",
+      "result_id": "9af0bc13-f1cd-431d-97e5-bcd909644230"
+    },
+    {
+      "claim_id": "913514f2-a52c-44ca-a6ab-97a781655585",
+      "result_id": "9af0bc13-f1cd-431d-97e5-bcd909644230"
+    },
+    {
+      "claim_id": "c053ae3c-2446-4231-bb27-664f4a9319ee",
+      "result_id": "9af0bc13-f1cd-431d-97e5-bcd909644230"
+    },
+    {
+      "claim_id": "cd697edb-0624-4c26-8ab5-8448ffe9d101",
+      "result_id": "08e098b6-b02b-43ba-909f-23b5acd9702a"
+    },
+    {
+      "claim_id": "196fd1cb-8191-4ef1-a46b-6c2d78d75c63",
+      "result_id": "08e098b6-b02b-43ba-909f-23b5acd9702a"
+    },
+    {
+      "claim_id": "7225591d-6a54-4808-a097-f60abefa0d53",
+      "result_id": "fc7c1bbe-63e2-4230-aadf-db9348780bca"
+    },
+    {
+      "claim_id": "f3fb20f9-00eb-4f8f-9e89-8f6d808058b9",
+      "result_id": "fc7c1bbe-63e2-4230-aadf-db9348780bca"
+    },
+    {
+      "claim_id": "ce061130-6cb6-4f45-9e3b-7a1a6561c38c",
+      "result_id": "0a18e935-d42c-44a5-972f-c7a28d82bdcd"
+    }
+  ],
+  "comparisons": []
+}

@@ -1,0 +1,238 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C59",
+      "C60",
+      "C67",
+      "C98"
+    ],
+    "result": "Alcids maintain efficient Strouhal numbers (St) in both air and water, with values ranging from 0.10 to 0.40 across four species during horizontal and descending aquatic flight, and aerial flight. These values overlap with the efficient range (0.2 < St < 0.4) and the range exhibited by strictly aerial birds (0.12 < St < 0.47), suggesting that alcids achieve efficient wake production comparable to single-fluid specialists in both media.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C27-C44, C59-C60, C67, and C98 collectively demonstrate that alcids maintain St values within or near the efficient range across both fluids. The data from Figure 2 shows species-specific St measurements with statistical support (C31-C32), and comparisons to literature values (C60, C67) confirm overlap with single-fluid specialists. The methodology for calculating St is well-documented (C103-C117), though aerial St calculations rely on literature airspeeds (C110-C111) rather than direct measurement, which introduces some uncertainty but is appropriately acknowledged.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C45",
+      "C46",
+      "C49",
+      "C84"
+    ],
+    "result": "Alcids flap their wings approximately 50% slower (2X difference in stroke velocity) in water compared to air, with significantly greater stroke velocities during aerial flight for both downstroke and upstroke across all four species. This difference persists despite greater wingbeat amplitudes in water and stroke durations that are 2-3X greater in water.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C45-C46, C49, and C84 are strongly supported by statistical analyses presented in Figure 3, with highly significant p-values (p < 0.0001) for all species comparisons. The methodology for measuring stroke velocity is validated (C117), though the authors acknowledge measurement differences between wingtip (aerial) and wrist (aquatic) due to feather bending (C86-C87). The ~50% slower claim is consistent with the ~2X faster aerial velocities reported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C5",
+      "C21",
+      "C22",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "The observed difference in stroke velocities between air and water suggests that alcids either contract their flight muscles at inefficient velocities in one or both fluids, or maintain a two-geared muscle system with separate muscle populations for each medium. Evidence for a two-geared system includes anatomical features (long sterna, enlarged latissimus dorsi caudalis) and histological data showing two fast fiber types, though myosin isoform composition remains unknown.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C5, C88-C94 present a logical inference from the stroke velocity data (C4, C45-C46), combined with established muscle physiology principles (C21-C22). However, this remains speculative as the authors acknowledge that myosin isoform data are lacking (C92). The anatomical and histological evidence (C88-C91) is suggestive but not definitive. Claims C93-C94 about trade-offs are purely speculative. Direct measurement of muscle contractile properties and myosin composition would be needed to definitively support this result.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C6",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C75",
+      "C76",
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "Alcids vary stroke-plane angle (\u03b2) between air and water, with significantly lower angles during aerial flight (79\u00b17\u00b0) compared to aquatic flight (92\u00b17\u00b0 horizontal, 93\u00b112\u00b0 descending). This shift allows birds to reorient force production from counteracting gravity in air to counteracting drag in water. However, stroke-plane angle does not vary significantly with descent angle during aquatic flight.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C50-C54, and C76-C82 are well-supported by statistical analysis (F1,47=41.3, p=6.14e-08) and Figure 5 data. The interpretation is strengthened by robotics research (C75, Izraelevitz et al. 2018) demonstrating that stroke-plane angle shifts enable dual-medium propulsion. The lack of relationship between stroke-plane angle and descent angle (C54, C82) is appropriately reported with statistics (p=0.786). The biomechanical interpretation (C79-C81) is reasonable given the physical constraints.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C7",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C83"
+    ],
+    "result": "Alcids vary chord angle (\u03b1) during aquatic flight, with significant increases in upstroke chord angle as a function of descent angle (F1,30=55.7, p=2.55e-08). This modulation appears to be a mechanism for adjusting force orientation during aquatic flight. The relationship for downstroke chord angle shows a significant species interaction, making the main effect uninterpretable.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C55-C58, and C83 are supported by statistical analyses presented in Figure 6. The upstroke relationship (C55, C58) is robust with strong statistical support. The authors appropriately acknowledge that the downstroke relationship is confounded by species interactions (C57), demonstrating careful statistical interpretation. The inference that chord angle modulation helps adjust force orientation (C83) is reasonable given the biomechanical context, though direct force measurements would strengthen this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C47",
+      "C48"
+    ],
+    "result": "Wingbeat amplitudes were significantly greater during aquatic flights compared to aerial flights across all four species (F1,71=162.4, p<2.2e-16), with all species showing this pattern in post-hoc tests.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C48 are strongly supported by statistical analysis with highly significant p-values and large effect size (\u03b7\u00b2=0.597). The data are presented in Figure 4. The authors acknowledge measurement differences between aerial (wingtip) and aquatic (wrist) measurements due to feather bending (C86), which could affect amplitude estimates, but the effect is consistent across species.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C31",
+      "C32"
+    ],
+    "result": "Strouhal numbers for descending aquatic flights were significantly greater than those for horizontal aquatic flights (F1,27=145.6, p=2.18e-12), with all species exhibiting this pattern in post-hoc comparisons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C32 are strongly supported by statistical analysis with highly significant p-values and large effect size (\u03b7\u00b2=0.729). The biological interpretation relates to buoyancy effects (C61-C66), which is mechanistically reasonable. The data are presented in Figure 2 with species-specific values in C33-C36.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C68"
+    ],
+    "result": "The relatively low St values during horizontal aquatic flight (often below 0.2) are interpreted as a consequence of buoyancy forces at shallow depths. Alcids compensate by producing quick, low-excursion wingbeats with near-horizontal chord angles during upstroke to generate negative heave, counteracting dorsally-oriented buoyancy. Despite this constraint, alcids still produce wakes of similar efficiency to strictly aerial birds.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C61-C66 and C68 present a mechanistically plausible interpretation of the St data, supported by physical principles (C62-C63) and prior research on upstroke function (C65). However, this interpretation is inferential rather than directly demonstrated. The study was conducted at shallow depths (0-3m), and the authors acknowledge this limitation (C70-C74). Direct force measurements or deeper dive data would strengthen this interpretation. The claim that alcids produce similarly efficient wakes (C68) is an inference from St overlap, not a direct efficiency measurement.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C70",
+      "C71"
+    ],
+    "result": "The swimming kinematics measured in this study (velocity 1.63 m/s, frequency 2.4 Hz for common murres) are comparable to those reported for wild birds (1.61 m/s, 2.6 Hz), and previous research indicates that velocity, wingbeat frequency, and wing excursion remain within narrow ranges across depths, suggesting the shallow-depth results apply to wild alcids.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C74 provide direct validation that captive bird kinematics match wild birds, strengthening the study's ecological relevance. Claims C70-C71 cite multiple studies showing kinematic consistency across depths. However, all aquatic data were collected at 0-3m depth, which is a limitation for generalizing to the deep dives alcids perform in nature (C14-C16). The comparison is appropriate but the depth limitation should be considered when interpreting results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13"
+    ],
+    "result": "The 'jack-of-all-trades' concept predicts that dual-medium birds should fly poorly in both air and water relative to specialists. However, alcids exhibit exceptional dive performance while retaining aerial flight, and their high wing-loading appears to result from aquatic selection rather than being a specific trade-off of dual-medium flight.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2 and C9-C13 establish the theoretical framework and context for the study. The 'jack-of-all-trades' expectation (C1) is appropriately cited. The exceptional dive performance of alcids (C2, C14-C16) is well-documented in the literature. The inference about wing-loading (C12-C13) is supported by comparative data showing similarity to foot-propelled divers, though this is based on cited sources rather than original data. This contextual framing is appropriate for the introduction.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C95",
+      "C99"
+    ],
+    "result": "The metabolic rate of common murres is high in aerial flight but low in aquatic flight, consistent with the hypothesis that selection has optimized alcids for locomotion in both fluids despite their different physical properties.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C95 cites Elliott et al. 2013 for metabolic rate differences, which supports the two-geared system hypothesis. Claim C99 is an inference that 'selection has optimized' alcids based on the St data. However, this is an evolutionary interpretation of kinematic data without direct evidence of selection or fitness consequences. The efficient St values are consistent with optimization, but alternative explanations (e.g., phylogenetic constraint, developmental limitations) are not ruled out.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117"
+    ],
+    "result": "The study employed rigorous kinematic analysis methods, including hand-digitization of over 45,000 points, stringent selection criteria (<5% of recordings), appropriate data smoothing to account for head movement and digitization error, and validation of stroke duration calculations. Sample sizes varied by flight type and species, with median wingbeat counts of 15 for aerial and 3 for aquatic perpendicular flights.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C103-C109 and C113-C117 describe methodological rigor that is appropriate for kinematic studies. The validation of stroke duration methods (C117) strengthens confidence in the aerial measurements. The stringent selection criteria (C104) and error estimation (C105) are appropriate. However, the lower sample sizes for aquatic flights (median 3 wingbeats, C114) compared to aerial flights (median 15 wingbeats, C113) may affect statistical power, though this is acknowledged. The smoothing parameters are cited to prior work (C109), which is appropriate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C110",
+      "C111"
+    ],
+    "result": "For aerial St calculations, the authors assumed airspeeds based on literature values (Spear and Ainley 1997): 13.95-18.65 m/s for medium alcids and 13.32-24.68 m/s for large alcids, using 95% prediction intervals from crosswind flight data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C110-C111 describe a necessary methodological compromise due to inability to measure airspeed without disturbing flight. The use of literature values is reasonable, but introduces uncertainty as the cited study measured different individuals in different conditions. The 95% prediction interval approach is statistically appropriate but produces wide St ranges (C41-C44). Ground speed measurements (C37-C40) were also provided, showing high variability (e.g., pigeon guillemot St=0.49\u00b10.06), likely due to wind effects. This limitation is appropriately acknowledged but affects confidence in aerial St estimates.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,1877 @@
+{
+  "submission": {
+    "id": "9ee02375-9ece-47fa-a145-8fa26cd536f9",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T19:20:03.926654Z",
+    "updated_at": "2025-12-02T19:20:03.926654Z"
+  },
+  "content": [
+    {
+      "id": "44a2e69f-5c79-4818-a1ca-b010127c4667",
+      "submission_id": "9ee02375-9ece-47fa-a145-8fa26cd536f9",
+      "content_type": "manuscript",
+      "content_text": "# Metabolic but not transcriptional regulation by PKM2 is important for natural killer cell responses\n\n## Authors\n\n- Jessica F Walls<sup>1</sup> ([ORCID: 0000-0003-2901-3318](https://orcid.org/0000-0003-2901-3318))\n- Jeff J Subleski<sup>2</sup>\n- Erika M Palmieri<sup>2</sup> ([ORCID: 0000-0002-4237-5324](https://orcid.org/0000-0002-4237-5324))\n- Marieli Gonzalez-Cotto<sup>2</sup> ([ORCID: 0000-0003-3359-8814](https://orcid.org/0000-0003-3359-8814))\n- Clair M Gardiner<sup>1</sup>\n- Daniel W McVicar<sup>2</sup>\n- David K Finlay<sup>1</sup> ([ORCID: 0000-0003-2716-6679](https://orcid.org/0000-0003-2716-6679)) \u2020\n\n### Affiliations\n\n1. School of Biochemistry and Immunology, Trinity Biomedical Sciences Institute, Trinity College Dublin Dublin Ireland\n2. Laboratory of Cancer Immunometabolism, National Cancer Institute Frederick United States\n3. School of Pharmacy and Pharmaceutical Sciences, Trinity Biomedical Sciences Institute, Trinity College Dublin Dublin Ireland\n\n\u2020 Corresponding author\n\n## Abstract\n\nNatural Killer (NK) cells have an important role in immune responses to viruses and tumours. Integrating changes in signal transduction pathways and cellular metabolism is essential for effective NK cells responses. The glycolytic enzyme Pyruvate Kinase Muscle 2 (PKM2) has described roles in regulating glycolytic flux and signal transduction, particularly gene transcription. While PKM2 expression is robustly induced in activated NK cells, mice lacking PKM2 in NK cells showed no defect in NK cell metabolism, transcription or antiviral responses to MCMV infection. NK cell metabolism was maintained due to compensatory PKM1 expression in PKM2-null NK cells. To further investigate the role of PKM2, we used TEPP-46, which increases PKM2 catalytic activity while inhibiting any PKM2 signalling functions. NK cells activated with TEPP-46 had reduced effector function due to TEPP-46-induced increases in oxidative stress. Overall, PKM2-regulated glycolytic metabolism and redox status, not transcriptional control, facilitate optimal NK cells responses.\n\n## Introduction\n\nNatural Killer (NK) cells are key lymphocytes for the control of viral infection and cancer immunosurveillance. Glycolysis is important for the function of NK cells as inhibition of glycolysis disrupts normal NK cell effector functions including the production of IFN\u03b3 and the lysis of target cells (Assmann et al., 2017; Donnelly et al., 2014; Keating et al., 2016; Loftus et al., 2018; Kedia-Mehta et al., 2019). Glucose breakdown through glycolysis provides energy, in the form of ATP, both directly and via generation of pyruvate to fuel mitochondrial oxidative phosphorylation (OXPHOS). Oxidation of glucose also produces glycolytic intermediates that feed into ancillary metabolic pathways such as the pentose phosphate pathway (PPP) to support cellular processes including biosynthesis and antioxidant activities. For instance, the glycolytic intermediate glucose-6-phosphate can feed into the PPP for the production of nucleotides and to generate NADPH, an important cofactor for cellular biosynthesis and for maintaining cellular redox control. Glycolytic intermediates and enzymes can also play a role in directly regulating immune functions. For example, in T lymphocytes, the metabolite phosphoenolpyruvate can control Ca2+/NFAT signalling and the glycolytic enzyme glyceraldehyde-3 phosphate dehydrogenase (GAPDH) has a role outside of glycolysis where it can control the translation of IFN\u03b3 and IL-2 mRNAs (Ho et al., 2015; Chang et al., 2013). Another glycolytic enzyme linked to the control of immune functions is an isoform of the final enzyme in glycolysis, pyruvate kinase muscle (PKM).\n\nIn most tissues, alternative splicing of the PKM gene yields two isoforms, PKM1 and PKM2. PKM1 forms a homo tetramer that efficiently converts phosphoenolpyruvate and ADP into pyruvate and ATP. While PKM2 can similarly form a catalytically efficient tetramer, it is also found as a monomer/dimer (called monomeric PKM2 hereafter) that has substantially less catalytic activity (Christofk et al., 2008). Therefore, in situations where PKM2 is predominantly mono/dimeric, the rate of glycolytic flux may be slowed leading to an accumulation of upstream glycolytic intermediates that can be diverted into other pathways such as the PPP to support cellular biosynthesis. Accordingly, PKM2 expression has been found to be elevated in many cells with high biosynthetic burdens including tumour cells (Li et al., 2018; Hitosugi et al., 2009). Monomeric PKM2 has also been shown to have functions independent of its metabolic role in glycolysis, primarily in the nucleus where it contributes to transcriptional control through interactions with the hypoxia inducible factor-1\u03b1 (HIF-1\u03b1) and signal transduction and activator of transcription (STAT) transcription factors (Hitosugi et al., 2009; Demaria and Poli, 2012; Dong et al., 2016). The balance between catalytically less active mono/dimeric PKM2, with potential signalling roles, and catalytically more active tetrameric PKM2, without signalling roles, is controlled by a range of cellular factors. For instance, mono/dimeric PKM2 is converted to the catalytically efficient tetramer when levels of upstream metabolites such as fructose-1,6-phosphate or serine are high (Keller et al., 2012; Morgan et al., 2013; Anastasiou et al., 2012). In this way, PKM2 operates as a rheostat by sensing upstream pools of glycolytic and biosynthetic intermediates and tuning glycolytic rates accordingly to carefully balance metabolic needs for cellular growth and function.\n\nWhile activated NK cells are known to engage elevated levels of glycolysis to support rapid growth, proliferation and function, how glycolytic flux is controlled to promote these processes in NK cells is not understood. In particular, what role PKM2 plays in supporting NK cell metabolic and functional responses is unknown. Here, we use genetic and pharmacological approaches in vitro to show that PKM2 does not have a significant role in regulating the transcriptional landscape of NK cells. Additionally, we find that although PKM2 is highly expressed in activated NK cells, in the absence of PKM2 these cells can precisely adjust the expression of PKM1 to control overall PKM activity demonstrating a remarkable capability of NK cells for precise metabolic plasticity. In contrast, acute pharmacological activation of PKM2 catalytic activity blunted NK cell growth and effector functions. These defects were associated with increased levels of ROS and a transcriptional signature indicating oxidative stress that we linked to reduced PPP metabolites and decreased NADPH levels. Overall, this study reveals an important metabolic role for PKM2 in supporting the PPP and redox balance in activated NK cells and highlights that PKM2 does not have a profound transcriptional role in all immune cells.\n\n## Results\n\n### PKM2 expression is induced in activated NK cells\n\nTo investigate whether NK cell activation in vivo is associated with changes in PKM2 expression mice were injected with poly(I:C) and splenocytes were isolated for analysis. There was a significant increase in the expression of PKM2 in\u00a0NK cells from mice that received poly(I:C) as measured by flow cytometry (Figure 1a). To further investigate PKM2 expression splenic NK cells were cultured for 6 days in low-dose IL-15, a cytokine required for DC-mediated NK cell priming in vivo (Lucas et al., 2007; Dubois et al., 2002; Koka et al., 2004) (called \u2018cultured NK cells\u2019 hereafter). These cultured NK cells were purified and stimulated with IL-2 plus IL-12 and PKM2 protein and mRNA expression measured over the course of 24 hr by western blot analysis and rtPCR, respectively. The expression of PKM2 increased over time following activation peaking at 24 hr post cytokine stimulation (Figure 1b). The mammalian Target of Rapamycin complex 1 (mTORC1) has been shown to be active both in NK cells stimulated in vivo following poly(I:C) injection, and in IL-2/IL-12 stimulated NK cells, and is an important regulator of NK cell metabolism (Donnelly et al., 2014). Inhibition of mTORC1 activity using the inhibitor rapamycin significantly reduced the abundance of PKM2 mRNA and protein in IL-2/12 stimulated cultured NK cells (Figure 1c). Rapamycin efficacy was confirmed by immunoblot for phosphorylation of the mTORC1 target, ribosomal s6 protein (Figure 1c). Similarly, we confirmed that Pkm1 mRNA is expressed and regulated by mTORC1 in IL-2/12 stimulated NK cells along with PKM1 protein (Figure 1\u2014figure supplement 1a\u2013b). Although we were primarily concerned with the pyruvate kinase muscle (PKM) family of enzymes, we also confirmed that NK cells do not express the liver- and erythrocyte-specific isoforms of pyruvate kinase, PK-L and PK-R respectively, using quantitative proteomics. We observed upwards of 6 \u00d7 106 copies of PKM peptide in IL-2/12 stimulated NK cells, with no detectable peptides from the Pklr gene (Figure 1\u2014figure supplement 1c). As both PKM1 and PKM2 are induced with IL-2/12 stimulation, we next asked if they are present in comparable quantities. Interestingly, quantitative proteomics analysis revealed that PKM2 is ninefold more abundant than PKM1 in cytokine activated NK cells (Figure 1d). PKM2 is known to exist in three different oligomeric conformations, monomers, dimers and tetramers (Angiari et al., 2020; Shirai et al., 2016). We therefore assessed what conformation PKM2 was expressed by cultured NK cells. This was achieved using disuccinimidylsuberate (DSS) crosslinking in unstimulated or IL-2/12-stimulated NK cells, whereby proteins in close proximity are \u2018linked\u2019 to each other by DSS. The cells can then be lysed and assessed by immunoblot for PKM2 expression. Western blotting revealed that IL-2/12-stimulated NK cells express both monomeric and tetrameric PKM2 (Figure 1e). Therefore, PKM2 expression is robustly increased in activated NK cells, is the dominant pyruvate kinase isoform in these metabolically active cells and is present as both monomers and tetramers.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/59166/elife-59166-fig1-v2.jpg)\n\n**Figure 1.:** (a) Wildtype C57Bl/6 mice were injected with saline (100 \u03bcL), low-dose poly(I:C) (100 \u03bcg/100 \u03bcL) or high-dose poly(I:C) (200 \u03bcg/100 \u03bcL) I.\u00a0P. Spleens were harvested 24 hr post-injection and PKM2 expression was analysed by intracellular flow cytometry in NK1.1+ NKp46+ cells (b) NK cell cultures were activated with IL-2/12 for 48 hr and cells were lysed for protein and mRNA. Samples were analysed by immunoblot for PKM2 and SMC1 protein expression. mRNA samples were subjected to qPCR analysis and Pkm2 expression over time was determined relative to time zero. Data was normalised to housekeeping gene Rplp0. (c) Cultured NK cells were stimulated for 18 hr in IL-2/12 +/-\u00a0rapamycin. After 18 hr cells were harvested for protein and mRNA. Samples were analysed by immunoblot for PKM2, \u03b2-Actin, total S6 and pS6. mRNA samples were subjected to qPCR analysis for Pkm2 expression. Data was normalised to housekeeping gene Rplp0. (d) Levels of individual peptides for PKM1 and PKM2 were compared using quantitative proteomics. a Data are mean +/-\u00a0S.E.M for 4\u20135 mice per group in two individual experiments. (b\u2013e) Data were analysed using one-way ANOVA with Tukey post-test and are pooled or representative of three individual experiments. *p>0.05, **p>0.01, ***p>0.001.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/59166/elife-59166-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (a)\u00a0Cultured NK cells were stimulated for 18 hr in IL-2/12 +/-\u00a0rapamycin.\u00a0After 18 hours cells were harvested for mRNA. mRNA samples were subjected to qPCR analysis for Pkm1 expression. Data was normalised to housekeeping gene Rplp0. (b) Cultured NK cells were stimulated for 18 hr in IL-2/12 or left unstimulated. After 18 hr cells were harvested for protein. Samples were analysed by immunoblot for PKM1 and \u03b2-Actin. (c) Levels of peptides for PKM and PKLR were compared using quantitative proteomics. a Data are mean +/-\u00a0S.E.M and are pooled data from two experiments (b) western blot is representative of two individual experiments.\n\n### PKM2NK-KO mice show no defects in splenic NK cell development and function\n\nTo investigate the importance of PKM2 during NK cell responses, NK-cell-specific Pkm2 knockout mice were generated by backcrossing mice with loxP sites flanking the exon specific for Pkm2, exon 10, with mice expressing Cre recombinase under the control of the Ncr1 promoter (Narni-Mancinelli et al., 2011; Israelsen et al., 2013). NK cells were purified by cell sorting from the spleens of Pkm2flox/flox Ncr1-Cre mice (hereafter called Pkm2NK-KO) and control mice (Pkm2WT/WT Ncr1-Cre, hereafter called Pkm2NK-WT) and DNA was isolated. The Pkm2WT/WT or Pkm2fl/fl genes were amplified using PCR and electrophoresed on a DNA agarose gel (Figure 2a). The data show that NK cells containing both the Ncr1-Cre transgene and homozygous for the Pkm2fl locus specifically excise the exon 10 of Pkm2 gene leading to a smaller DNA band (~200 kb) (Figure 2a). Remaining splenocytes (not including NK cells) show a normal sized band for Pkm2fl/fl (~600 kb). NK cells developed normally in Pkm2NK-KO mice as the numbers and frequencies of NK cells and NK cells subsets were normal in the spleen when compared to control Pkm2NK-WT mice (Figure 2b,c). Consistent with normal NK cell development splenic Pkm2NK-KO NK cells expanded normally ex vivo in response to low-dose IL-15, important for NK cells homeostatic proliferation (Figure 2d). Cultured PKM2NK-KO and PKM2NK-WT NK cells were stimulated with IL-2/IL-12 cytokine for 18 hr and analysed by flow cytometry for the expression of effector molecules. Pkm2NK-KO NK cells expressed comparable levels of the cytotoxic granule component granzyme B and produced equivalent amounts of IFN\u03b3 compared to Pkm2NK-WT NK cells (Figure 2e\u2013h). Additionally, there were no differences in the secretion of cytokines (IFN\u03b3, TNF\u03b1 and IL-10) or chemokines (MIP1\u03b1 and MIP1\u03b2) between stimulated Pkm2NK-KO and Pkm2NK-WT NK cells (Figure 2i,j).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/59166/elife-59166-fig2-v2.jpg)\n\n**Figure 2.:** (a) NK cells were sorted by flow cytometry (NK1.1+NKp46+CD3-CD49b+) from wildtype C57Bl/6, Pkm2fl/fl or Ncr1CrePkm2fl/fl mice. Cells were lysed and DNA was purified. DNA was subject to PCR amplification for the Pkm2 gene and products were electrophoresed on a 1.8% agarose gel and imaged. (b) Splenic Pkm2NK-WT and PKM2NK-KO NK cells were analysed by flow cytometry for the expression of CD11b and CD27. (c) Pkm2NK-WT and Pkm2NK-KO cells were isolated and counted and analysed by flow cytometry for frequency of NK1.1+NKp46+CD3- cells. (d) Splenic Pkm2NK-WT and Pkm2NK-WT cells were expanded for 6 days in IL-15 (15 ng/mL). Data displayed show total splenocyte numbers before expansion (pre) and pure NK cell numbers after magnetic purification (pure). (e\u2013h) Pkm2WT and Pkm2KO NK cells were stimulated for 18 hr in IL-2/12 or left unstimulated. NK1.1+NKp46+CD3- cells were analysed for granzyme B (e\u2013f) or IFN\u03b3 expression (g\u2013h). (i\u2013j) Pkm2NK-WT and Pkm2NK-KO cells were stimulated for 18 hr in IL-2/12 or left unstimulated and media supernatants were collected. Supernatants were then analysed for by cytometric bead array analysis for (i) IFN\u03b3, IL-10, TNF, (j) MIP1\u03b1, MIP1\u03b2. (b\u2013j) data are mean +/-\u00a0S.E.M for n\u00a0=\u00a04\u20138 mice per group. (c) Data was analysed using a Students t test. (b, d-i) Data were analysed by two-way ANOVA with multiple comparisons. *p>0.05, **p>0.01, ***p>0.001.\n\n### PKM2NK-KO mice respond normally to MCMV infection\n\nAs cellular metabolism is considered to be of particular importance in highly proliferative cells, we next investigated whether Pkm2NK-KO mice could control MCMV infection normally. NK cells are particularly important in the early immune response to this viral infection and a subset of Ly49H+ NK cells undergo robust proliferation in MCMV infected mice. Therefore, Pkm2NK-KO and Pkm2NK-WT mice were infected with MCMV (1 \u00d7 105 PFU from salivary passage) i.p. and analyzed 4 days post-infection. The spleen size as determined by weight was equivalent in Pkm2NK-KO and Pkm2NK-WT mice as were the numbers of NK cells and the frequencies of Ly49H+ splenic NK cells (Figure 3a\u2013c). In addition, there was no difference in NK cell activation in Pkm2NK-KO and Pkm2NK-WT mice based on CD69 expression. Additionally,\u00a0Ly49H+ cells from these mice showed equivalent levels of virus-induced proliferation based on BrDU incorporation (Figure 3d\u2013g). There were no differences in the levels of IFN\u03b3, TNF\u03b1 and IL10 in the serum of uninfected or MCMV infected Pkm2NK-KO and Pkm2NK-WT mice (Figure 3h). Finally, viral loads on day 4 were similar in Pkm2NK-KO and Pkm2NK-WT mice (Figure 3i). These data clearly show that the immune response to MCMV infection was not compromised in mice containing Pkm2 deficient NK cells 4 days post-infection.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/59166/elife-59166-fig3-v2.jpg)\n\n**Figure 3.:** Pkm2NK-WT and Pkm2NK-KO mice were infected with 1 \u00d7 105 PFU of MCMV or injected with saline for 4 days. (a) Spleens were harvested from Pkm2NK-WT and Pkm2NK-KO mice 4 days post MCMV infection and weighed. (b) Spleens were harvested 4 days post-MCMV infection from Pkm2NK-WT and Pkm2NK-KO mice and NK cells were identified as being NK1.1+NKp46+CD3- by flow cytometry. (c) Ly49H-positive cells were assessed by flow cytometry and expressed as a percentage of total splenocytes (d-e) Splenic NK cells from Pkm2NK-WT and Pkm2NK-KO mice were identified post MCMV infection and assessed for CD69 expression by flow cytometry (f) Ly49H+ cells from MCMV infected Pkm2NK-WT and Pkm2NK-KO mice were assessed for BrDU incorporation 4 days post infection (g) Representative dot plot of BrDU incorporation into Ly49H+ cells 4 days post-MCMV infection. (h) Blood was drawn from Pkm2NK-WT and Pkm2NK-KO by cardiac puncture 4 days post-MCMV infection and serum was isolated. Serum was then analysed for levels of cytokines by cytometric bead array for IL-10, TNF and IFN\u03b3. (i) Splenic viral load was measured using qPCR for MCMV-IE and DNA was normalised to \u03b2-Actin. n\u00a0=\u00a04\u20135 mice per group and are representative of two independent experiments. Data were analysed by two-way ANOVA with multiple comparisons. ns \u2013 not significant *p>0.05, **p>0.01, ***p>0.001.\n\n### PKM2NK-KO NK cells adjust PKM1 expression to normalise total pyruvate kinase activity\n\nConsidering the important roles described for PKM2 in other immune cells, the lack of any functional phenotype in Pkm2NK-KO was intriguing. Next, we considered whether the loss of Pkm2 affected the metabolic pathways used by Pkm2NK-KO NK cells. Firstly, the flux through glycolysis and OXPHOS was assessed using the Seahorse extracellular flux analyzer. The basal and maximal rates of glycolysis and of OXPHOS were comparable in both unstimulated and IL2/IL12 stimulated Pkm2NK-KO compared to Pkm2NK-WT NK cells (Figure 4a\u2013e). In addition, the levels of glycolytic intermediates, pentose phosphate pathway components (PPP) and elements of the tricarboxcylic acid (TCA) cycle were similar in Pkm2NK-KO and Pkm2NK-WT NK cells (Figure 4f\u2013h). Therefore, despite lacking the most highly expressed pyruvate kinase subunit (Figure 1e), which is known to play a crucial role in controlling the metabolism of other immune cell subsets, there were no substantial differences in the metabolic status of Pkm2-null NK cells. One possible explanation for the surprising lack of a metabolic phenotype in Pkm2-null NK cells could be due to compensatory changes in the expression of another pyruvate kinase isoform. Indeed, RNA and protein analyses using rtPCR, RNAseq and western blotting revealed that expression of PKM1, the alternative splice variant of Pkm2, was significantly increased in Pkm2NK-KO compared to Pkm2NK-WT NK cells (Figure 4i\u2013k). Remarkably, Pkm2NK-KO NK cells had precisely compensated with increased PKM1 expression to maintain an extraordinarily similar rate of overall pyruvate kinase activity, as measured using a direct biochemical enzymatic assay (Figure 4l). This re-calibration of pyruvate kinase activity demonstrates the metabolic plasticity of NK cells.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/59166/elife-59166-fig4-v2.jpg)\n\n**Figure 4.:** (a) Pkm2NK-WT and Pkm2NK-KO splenocytes were cultured for 6 days in low-dose IL-15 and NK cells were magnetically purified. NK cells were then stimulated for 18 hr in IL-2/12 or left unstimulated. (a\u2013e) Stimulated or unstimulated Pkm2NK-WT and Pkm2NK-KO cells were analysed by seahorse for glycolysis and oxphos (a) Pkm2NK-WT and Pkm2NK-KO cells were stimulated with (IL-2/12) or left unstimulated (low-dose IL-15) and oxygen consumption was measured over time. Data is representative OCR trace. (b) Bar graph of pooled data for basal rates of OxPhos. (c) Bar graph of maximum rates of OxPhos in Pkm2NK-WT and Pkm2NK-KO treated with IL-2/12 or left unstimulated (d) Pkm2NK-WT and Pkm2NK-KO cells were stimulated with (IL-2/12) or left unstimulated (low-dose IL-15) and extracellular acidification was measured over time. Data is representative ECAR trace. (f\u2013h) Pkm2NK-WT and Pkm2NK-KO cells were stimulated with (IL-2/12) or left unstimulated (low-dose IL-15) and cells were analysed for relative metabolite abundance using LC-MS metabolomics. Peak areas were normalised to the average of Pkm2NK-WT unstimulated samples and then log(y) transformed using Graphpad Prism. (f) Data displayed are metabolites of the pentose phosphate pathway determined using LC-MS metabolomics. (g) Data displayed are a heat map for relative abundance of tricarboxylic cycle metabolites determined using LC-MS metabolomics. (h) Data displayed are a heat map for relative abundance of glycolytic metabolites determined using LC-MS metabolomics. (i) Pkm2NK-WT and Pkm2NK-KO cells were stimulated with (IL-2/12) or left unstimulated (low-dose IL-15) and cells were analysed by immunoblot or qPCR for the expression of PKM1 or PKM2. The same western blot was stripped and re-probed for PKM2 and the same loading control \u03b2-actin is pictured for both. qPCR data was normalised using the \u0394\u0394Ct method and HPRT housekeeping gene was used. (k) RNA sequencing for the quantity of transcripts encoding Pkm1 and Pkm2. (m) Pkm2NK-WT and Pkm2NK-KO cells were stimulated with (IL-2/12) or left unstimulated (low-dose IL-15) and cells were lysed and assessed using an absorbance based assay for total pyruvate kinase activity. n\u00a0=\u00a03\u20135 mice per group. Data are mean +/-\u00a0S.E.M and were analysed by (a\u2013h) two-way ANOVA with multiple comparisons or (i\u2013j) one-way ANOVA with Tukey post-test. ns \u2013 not significant *p>0.05, **p>0.01, ***p>0.001.\n\n### PKM2 does not substantially regulate gene expression in activated NK cells\n\nWhile PKM1 expression can compensate for the lack of PKM2 in terms of catalyzing the final step of glycolysis, PKM1 has not been demonstrated to have the non-glycolytic roles that have been ascribed to mono/dimeric PKM2, such as the regulation of transcription factors such as HIF1\u03b1 and STAT5. Therefore, we used RNAseq analysis to investigate whether there were any differences in gene expression in Pkm2NK-KO versus Pkm2NK-WT NK cells. There were very few significant differentially expressed genes (DEG) in the transcriptome of Pkm2NK-KO versus Pkm2NK-WT NK cells (Figure 5a). There were only two genes upregulated by over twofold and four genes downregulated by greater than twofold expression with a false discovery rate of 0.05 (Figure 5a, Supplementary file 1). PKM2 has been linked to the control of gene expression through its regulation of HIF1\u03b1 and STAT5 transcription factors (Angiari et al., 2020). Importantly, there was no enrichment for HIF1\u03b1 or STAT5 target genes in the differentially expressed mRNA in Pkm2NK-KO NK cells (Figure 5b and c, Supplementary file 2). To further investigate the effect of PKM2 in NK cell gene expression, an acute pharmacological approach was used to manipulate PKM2 function. TEPP-46 is a pharmacological activator of PKM2 function that promotes the oligomerisation of mono/dimeric PKM2 into tetrameric, catalytically active PKM2 (Anastasiou et al., 2012), resulting in the loss of non-glycolytic PKM2 signalling functions (Angiari et al., 2020). Therefore, cultured NK cells were stimulated with IL-2/IL-12 in the presence or absence of TEPP-46 and analysed by RNA-seq. The transcriptomes were remarkably similar between the two conditions with only 10 DEG with a fold change cutoff of 2 and a FDR of 0.05 (Figure 5d). Amongst these genes, there was again no enrichment for HIF1\u03b1 or STAT5 targets aside from a small but significant increase in Bcl2 expression (Figure 5e,f). Therefore, using both genetic and pharmacological approaches these data clearly show that PKM2 is not necessary for the regulation of the NK cell transcriptome.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/59166/elife-59166-fig5-v2.jpg)\n\n**Figure 5.:** (a\u2013c) Pkm2NK-WT and Pkm2NK-KO cultured and purified cells were stimulated with (IL-2/12) or left unstimulated (low-dose IL-15) for 18 hr. HiSeq RNA sequencing was then performed. (a) Differential gene expression analysis was carried out to assess total gene changes between IL-2/12 stimulated Pkm2NK-WT and Pkm2NK-KO cells. Total gene changes were assessed at a fold change cut-off of 2 and a p value of 0.05 with an FDR of 0.05. (c) Expression levels of key HIF1\u03b1 target genes were assessed and compared between Pkm2NK-WT and Pkm2NK-KO cells (c) Expression levels of key STAT5 target genes were assessed and compared between Pkm2NK-WT and Pkm2NK-KO cells. (d-f) Cultured wildtype NK cells were stimulated with IL-2/12 +/-\u00a0TEPP-46/vehicle for 18 hr. HiSeq RNA sequencing was then performed. (d) Differential gene expression analysis was carried out to assess total gene changes between IL-2/12 TEPP-46 (50 \u03bcM) and IL-2/12 Vehicle (0.1% v/v DMSO). Total gene changes were assessed at a fold change cut-off of 2 and a p value of 0.05 with FDR 0.05. (e) Expression levels of key HIF1\u03b1 target genes were assessed and compared between IL-2/12 TEPP-46 (50 \u03bcM) and IL-2/12 Vehicle (0.1% v/v DMSO) treated cells. (f) Expression levels of key STAT5 target genes were assessed and compared between IL-2/12 TEPP-46 (50 \u03bcM) and IL-2/12 Vehicle (0.1% v/v DMSO) treated cells. Data are from n\u00a0=\u00a03 biological replicates per group and are displayed as mean values. (b\u2013c) RPKM values were normalised to the average of PKM2NK-WT unstimulated. Fold change values were then log transformed and displayed in heat maps. (e\u2013f) RPKM values were normalised to the mean of both groups combined and then converted to fold change from the mean. Data were then log transformed and displayed as heat maps. n\u00a0=\u00a03 mice per group. Data are mean and were analysed by (a\u2013c) two-way ANOVA with multiple comparisons or (d-f) one-way ANOVA with Tukey post-test. ns \u2013 not significant *p>0.05.\n\n### Monomeric PKM2 is important for cytokine-induced NK cells responses\n\nPKM2 tetramerisation in response to TEPP-46 results in increased PKM2 enzymatic activity leading to an increased rate of phosphoenolpyruvate conversion to pyruvate at the end of glycolysis. As expected, addition of TEPP-46 for 1 hr to cultured NK cells that had been previously stimulated for 18 hr with IL-2/IL-12, resulted in an increase in pyruvate kinase activity and of cellular glycolysis (Figure 6a\u2013c). These data confirm that a substantial portion of PKM2 is present in the less catalytically active mono/dimeric conformation in IL-2/IL-12 stimulated NK cells, as its enzymatic activity can be boosted by TEPP-46. To investigate the importance of mono/dimeric PKM2 during NK cell activation, cultured NK cells were stimulated with IL-2/IL-12 for 18 hr in the presence or absence of TEPP-46. NK cells treated with TEPP-46 were viable but showed reduced production of IFN\u03b3 and reduced granzyme B expression (Figure 6d\u2013f). TEPP-46 treated NK cells also secreted reduced amounts of TNF\u03b1 and IL10 while maintaining normal production of MIP1\u03b1/\u03b2 chemokines (Figure 6g\u2013h). We confirmed that TEPP-46 was specific for PKM2 by treating Pkm2NK-WT and Pkm2NK-KO NK cells with TEPP-46 and assessing IFN\u03b3 and granzyme B production. TEPP-46 impaired Pkm2NK-WT IFN\u03b3 and granzyme B production while having no effect in Pkm2NK-KO cells. Similarly, TEPP-46 did not affect pyruvate kinase activity in Pkm2NK-KO cells (Figure 6\u2014figure supplement 1).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/59166/elife-59166-fig6-v2.jpg)\n\n**Figure 6.:** (a) Wildtype cultured NK cells were stimulated for 17 hr in IL-2/12 or left unstimulated. NK cells were then treated with TEPP-46 for 1 hr, lysed and a pyruvate kinase activity assay was carried out. (b) Wildtype cultured NK cells were stimulated for 17 hr in IL-2/12 or left unstimulated. NK cells were then treated with TEPP-46 for 1 hr and glycolysis was assessed by Seahorse extracellular flux analysis. (c) Pooled data for basal glycolysis and glycolytic capacity as measured by seahorse extracellular flux analysis. (d) Cultured NK cells were stimulated with IL-2/12 for 18 hr +/-\u00a0TEPP-46 (50 \u03bcM) and analysed by flow cytometry for Annexin V staining and PI incorporation. (e) Cultured NK cells were stimulated with IL-2/12 for 18 hr +/-\u00a0TEPP-46 (50 \u03bcM) or left unstimulated and analysed by flow cytometry for frequency of IFN\u03b3 expression. (f) Cultured NK cells were stimulated with IL-2/12 for 18 hr +/-\u00a0TEPP-46 (50 \u03bcM) or left unstimulated and analysed by flow cytometry for granzyme B expression. (g) Cultured NK cells were stimulated with IL-2/12 for 18 hr +/-\u00a0TEPP-46 (50 \u03bcM) or left unstimulated. Supernatants were harvested and analysed for levels of proinflammatory cytokines (TNF, IFN\u03b3, IL-10) by flow cytometric bead array. (h) Cultured NK cells were stimulated with IL-2/12 for 18 hr +/-\u00a0TEPP-46 (50 \u03bcM) or left unstimulated. Supernatants were harvested and analysed for levels of chemokines (MIP1\u03b1 and MIP1\u03b2) by flow cytometric bead array. (a\u2013d) data are representative of three independent experiments. (e) Data are pooled data of 9 experiments. (f) Data are pooled data of six experiments. (g\u2013h) Data are pooled data of seven individual experiments. Data are mean +/-\u00a0S.E.M and were analysed by (a\u2013c) two-way ANOVA with multiple comparisons or (d-f) one-way ANOVA with Tukey post-test. ns \u2013 not significant *p>0.05, **p>0.01, ***p>0.001.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/59166/elife-59166-fig6-figsupp1-v2.jpg)\n\n**Figure 6\u2014figure supplement 1.:** Pkm2NK-WT and Pkm2NK-KO cultured and purified cells were stimulated with (IL-2/12) or left unstimulated (low-dose IL-15) for 18 hr.\u00a0IL-2/12 stimulated cells were treated with TEPP-46 (50 \u03bcM) or vehicle (0.1% v/v DMSO). Cells were then analysed by flow cytometry for the expression of IFN\u03b3 and granzyme b. (c) Pkm2NK-WT and Pkm2NK-KO cells were stimulated with (IL-2/12) +/-\u00a0TEPP-46 (50 \u03bcM) for 18 hr. Cells were lysed and assessed using an absorbance assay for total pyruvate kinase activity. (a\u2013b) Data are mean +/-\u00a0S.E.M of 4\u20137 experiments. (c) Data displayed are pooled data of two biological replicates and are representative of two individual experiments (total n\u00a0=\u00a04). Data were analysed using two-way ANOVA with Tukey post test. ****p>0.0001, **p>0.01, ns- not significant.\n\nFlow cytometric analysis revealed that NK cells stimulated in the presence of TEPP-46 were smaller in size than vehicle-treated NK cells suggesting defects in cellular growth (Figure 7a). TEPP-46-treated NK cells also showed reduced proliferation in response to IL2/IL12 stimulation (Figure 7\u2014figure supplement 1). This was consistent with the concept that monomeric PKM2 promotes cellular growth by limiting the last step of glycolysis and allowing glycolytic intermediates to be diverted into biosynthetic pathways. In this scenario, TEPP-46 would drain glycolysis of glycolytic intermediates and reduce biosynthesis and cellular growth. However, NK cells stimulated with IL-2/IL-12 plus TEPP-46, the basal rates of glycolysis were equivalent to those of NK cells stimulated with IL-2/IL-12 alone (Figure 7b). There was\u00a0also a small but significant effect on NK cell glycolytic capacity (Figure 7c). While metabolomics analysis showed no decrease in the levels glycolytic intermediates there were decreased levels of the PPP metabolite ribose-5-phosphate (R5P) arguing that in the presence of TEPP-46 glucose-6-phosphate might be withheld from the PPP (Figure 7d,e). Since the PPP is important for the biosynthesis of nucleotides and for maintaining redox balance in the cell, we considered whether decreased flux through the PPP in response to TEPP-46 might lead to increased cellular ROS levels. Indeed, TEPP-46-treated NK cells showed a dramatic increase in ROS compared to vehicle controls, as measured using the flow cytometric ROS probe H2-DCFDA (Figure 8a). Inhibition of flux through the PPP using the glucose-6-phosphate dehydrogenase inhibitor, DHEA, similarly resulted in an increase in ROS (Figure 8b). The PPP supports redox balance because it generates NADPH, the electron donor required for the redox enzymes glutathione reductase and thioredoxin reductase. Accordingly, we found a significant decrease in the levels of NADPH in TEPP-46-treated NK cells (Figure 8c). Moreover, supporting that there was increased oxidative stress in TEPP-46-treated NK cells, our RNAseq data showed that two of the most significantly upregulated genes in\u00a0TEPP-46-treated NK cells were members of the metallothionein family, namely Mt1 and Mt2 (Figure 8d). Metallothioneins are a set of zinc-responsive proteins that have antioxidant properties and are known to be induced in response to oxidative stress (Ruttkay-Nedecky et al., 2013).\n\n![Figure 7.](https://cdn.elifesciences.org/articles/59166/elife-59166-fig7-v2.jpg)\n\n**Figure 7.:** (a) Cultured NK cells were stimulated with IL-2/12 for 18 hr +/-\u00a0TEPP-46 (50 \u03bcM) or left unstimulated.\u00a0NK cells were analysed by flow cytometry and forward scatter (FSC-A) was assessed (b\u2013c) Cultured NK cells were stimulated with IL-2/12 for 18 hr +/-\u00a0TEPP-46 (50 \u03bcM) and analysed for glycolysis by Seahorse extracellular flux analysis (b) representative seahorse trace for IL-2/12 stimulated NK cells +/-\u00a0TEPP-46 (18 hr)\u00a0(c) IL-2/12 stimulated NKs treated +/-\u00a0TEPP-46 (18 hr) were analysed by Seahorse extracellular flux analysis and data were compiled for glycolytic capacity and pooled basal glycolysis. (d) Cultured NK cells were stimulated with IL-2/12 for 18 hr +/-\u00a0TEPP-46 (50 \u03bcM) and analysed by metabolomics for glycolytic metabolites using GC-MS metabolomics. Data were normalised to the mean of each metabolite peak height across both groups and displayed as fold change relative to the mean. (e) Metabolomics analysis for the metabolite ribose-5-phosphate displayed as peak height. Data are pooled or representative of between three\u00a0and\u00a0five individual experiments. Data were analysed by a Students t test (b) or by one-way ANOVA with Tukey post-test (e) Data are representative of mean +\\- S.E.M. ns \u2013 not significant *p>0.05, **p>0.01, ***p>0.001.\n\n![Figure 7\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/59166/elife-59166-fig7-figsupp1-v2.jpg)\n\n**Figure 7\u2014figure supplement 1.:** Splenocytes were cultured for 3 days in IL-15 (15 ng/mL).\u00a0Cells were then labelled using cell trace violet (CTV) and stimulated using IL-2/12 or left unstimulated. 24 hr later an aliquot of IL-2/12 stimulated NK cells was treated with TEPP-46. Cells were then analysed for CTV dilution 3 days post initial labelling. Data are representative of two individual experiments.\n\n![Figure 8.](https://cdn.elifesciences.org/articles/59166/elife-59166-fig8-v2.jpg)\n\n**Figure 8.:** (a) Cultured NK cells were stimulated with IL-2/12 for 18 hr +/-\u00a0TEPP-46 (50 \u03bcM) or left unstimulated (low-dose IL-15) and stained for ROS using the flow cytometric probe DCFDA.\u00a0NK cells were gated (NK1.1+NKp46+CD3-) and MFI for DCFDA was analysed and displayed as both a representative histogram and pooled data from seven individual experiments. (b) Cultured NK cells were stimulated with IL-2/12 for 18 hr +/-\u00a0DHEA (75 \u03bcM) or vehicle and stained for ROS using the flow cytometric probe DCFDA. NK cells were gated (NK1.1+NKp46+CD3-) and MFI for DCFDA was analysed and displayed as both a representative histogram and pooled data from five individual experiments. (c) Cultured NK cells were stimulated with IL-2/12 for 18 hr +/-\u00a0TEPP-46 (50 \u03bcM) or left unstimulated (low-dose IL-15). Cells were lysed and assessed for NADPH levels using a luminescent NADPH assay with 0.15 \u00d7 106 cells with three technical replicates per assay. Data are pooled data of three independent experiments. (d) Cultured wild-type NK cells were stimulated with IL-2/12 +/-\u00a0TEPP-46/vehicle (0.1% DMSO) for 18 hr. HiSeq RNA sequencing was then performed. Expression levels for the genes Mt1 and Mt2 are displayed as RPKM (Reads Per Kilobase of transcript, per Million mapped reads) and are pooled data from three individual experiments. (e) Cultured NK cells were stimulated with IL-2/12 for 18 hr +/-\u00a0TEPP-46 (50 \u03bcM) or vehicle and using the flow cytometric probe Mitotracker red. NK cells were gated (NK1.1+NKp46+CD3-) and MFI for mitotracker was analysed and displayed as both a representative histogram and relative pooled data from six individual experiments. (f\u2013h) Cultured NK cells were stimulated with IL-2/12 for 18 hr +/-\u00a0TEPP-46 (50 \u03bcM) and analysed for oxygen consumption by Seahorse extracellular flux analysis (f) representative seahorse trace for IL-2/12 stimulated NK cells +/-\u00a0TEPP-46 (18 hr).\u00a0(g\u2013h) IL-2/12 stimulated NKs treated +/-\u00a0TEPP-46 (18 hr) were analysed by Seahorse extracellular flux analysis and data were compiled for basal OCR and maximum respiratory capacity. (i) Cultured NK cells were stimulated with IL-2/12 for 18 hr +/-\u00a0TEPP-46 (50 \u03bcM) and analysed by metabolomics for tricarboxylic acid/citrate-malate shuttle metabolites using GC-MS metabolomics. Data were normalised to the mean of each metabolite peak height across both groups and displayed as fold change relative to the mean. (j) Metabolomics analysis for the metabolite glutamine and glutamate displayed as peak height. One outlier was omitted from glutamine using a Grubbs test (\u03b1\u00a0=\u00a00.05).\u00a0(k) Cultured NK cells were left unstimulated or activated with IL-2/12 +/-\u00a0TEPP-46 (25 or 50 \u03bcM) for 18 hr were lysed for protein. Samples were analysed by immunoblot for cMyc and \u03b2-Actin protein expression. Data are pooled or representative of between three\u00a0and\u00a0five experiments. Data are representative of mean +\\- S.E.M. (a,c) Data were analysed by one-way ANOVA with Tukey post-test. (b,d\u2013e,g\u2013j) Data were analysed using students t test ns \u2013 not significant *p>0.05, **p>0.01, ***p>0.001.\n\nAs oxidative stress can be linked to mitochondrial damage, we next investigated mitochondrial function in NK cells stimulated with or without TEPP-46. While there was no difference in the membrane potential-dependent mitochondrial mass in TEPP-46 treated NK cells (Figure 8e), we found that there was a substantial decrease in the basal rates of OXPHOS (Figure 8f). Additionally, there was a greatly decreased maximum respiration and spare respiratory capacity (Figure 8g,h). Normal mitochondrial mass with reduced maximum respiration suggest that there was reduced fueling of OXPHOS. Two prominent metabolic cycles that feed electrons into the mitochondrial electron transport chain are the TCA cycle and the Citrate-Malate shuttle (Assmann et al., 2017; Loftus et al., 2018). The metabolites of both these cycles were reduced in TEPP-46 treated NK cells (Figure 8i). While malate is shared between both these metabolic cycles, succinic and fumaric acids are specific for the TCA cycle. In line with decreased fueling of oxidative metabolism, the levels of glutamine and glutamate were also reduced indicative of impaired glutaminolysis (Figure 8j). The transcription factor cMyc is important for glutamine metabolism and was also found to be reduced in TEPP-46-treated NK cells; however, this was only at the protein level as it was not found to be altered in the transcriptomic dataset (Figure 8k). Considering the increased ROS in TEPP-46-treated NK cells, we investigated whether the use of cellular antioxidants could reverse NK cell dysfunction. Interestingly, the addition of antioxidant MitoQ was sufficient to partially restore the expression of cMyc protein expression in TEPP-46-treated NK cells (Figure 9a). We could also profoundly reduce TEPP-46 induced ROS using the antioxidant N-acetylcysteine (NAC) (Figure 9b). In addition, NAC treatment could rescue the production of IFN\u03b3, but not that of TNF in NK cells stimulated with IL2/12+TEPP46 (Figure 9c).\n\n![Figure 9.](https://cdn.elifesciences.org/articles/59166/elife-59166-fig9-v2.jpg)\n\n**Figure 9.:** (a) Cultured NK cells were stimulated with IL-2/12 for 18 hr +/-\u00a0TEPP-46 (50 \u03bcM) in the presence or absence of MitoQ (50 nM) or left unstimulated (low-dose IL-15). Cells were then lysed and analysed by immunoblot for cMyc and \u03b2-Actin expression. (b) Cultured NK cells were stimulated with IL-2/12 for 18 hr +/-\u00a0TEPP-46 (50 \u03bcM) and NAC (7.5 mM) or vehicle and stained for ROS using the flow cytometric probe DCFDA. NK cells were gated (NK1.1+NKp46+CD3-) and relative MFI for DCFDA was analysed and displayed pooled data from five individual experiments. (c\u2013e) Cultured NK cells were stimulated with IL-2/12 for 18 hr +/-\u00a0TEPP-46 (50 \u03bcM) and NAC (7.5 mM) or vehicle. Supernatants were harvested and analysed for levels of cytokines (TNF, IFN\u03b3) by flow cytometric bead array. (a) Representative western blot of three individual experiments (b\u2013e) Data are mean +/-\u00a0S.E.M and are representative of three\u00a0to\u00a0five individual experiments. Data was analysed using one way ANOVA with multiple comparisons. **p>0.01, ns \u2013 non significant.\n\nTaken together, this study demonstrates that PKM2 is involved in metabolic but not transcriptional regulation of NK cell responses.\n\n## Discussion\n\nPKM2 is a metabolic enzyme that has received significant attention in the immunometabolism field because in addition to its role in glycolysis it can have non-metabolic functions, augmenting transcriptional programmes to regulate immune function. This \u2018moonlighting\u2019 activity has been demonstrated in macrophages, T cells and cancer cells where PKM2 supports the function of transcription factors including HIF1\u03b1 and STATs (Angiari et al., 2020; Palsson-McDermott et al., 2015; Zhang et al., 2019). Our study shows that PKM2 has no significant role in regulating HIF1\u03b1 and STAT associated gene expression in NK cells. The data clearly show that while PKM2 is the most highly expressed isoform in NK cells, either deletion of PKM2 or allosteric tetramerisation of PKM2 has minimal impact upon the NK cell transcriptome and that there was no evidence of significantly altered expression of HIF1\u03b1 or STAT target genes. This study highlights that diversity of regulatory circuits in immune cells and shows the importance of verifying mechanisms in individual immune cell subsets.\n\nStimulated NK cells preferentially express PKM2 over PKM1 for metabolic reasons. Unlike PKM1, PKM2 can exist in different conformations that have different catalytic activities. PKM2 tetramers are highly enzymatically active and have a Km for phosphoenolpyruvate of 0.03 mM, whereas PKM2 mono/dimers are considerably less active with a Km of 0.46 mM as measured in breast cancer cells (Mazurek, 2011). Therefore, the expression of PKM2 gives NK cells the ability to quickly regulate their glycolytic flux toward anabolic or catabolic processes and confers upon them a level of metabolic plasticity. It has been previously demonstrated that NK cells lacking the metabolic regulator mTORC1 are defective in responding to MCMV challenge (Mar\u00e7ais et al., 2014). Similarly, mice treated with 2-deoxyglucose, a glycolytic inhibitor are impaired in their responses to MCMV (Mah et al., 2017). However, in this study, genetic deletion of Pkm2 resulted in a normal phenotype 4 days post-MCMV infection. Pkm2NK-KO cells only express PKM1 which in theory should be kinetically more efficient at producing pyruvate than Pkm2NK-WT cells. It would have been expected that these PKM1-only expressing cells would demonstrate dysregulated metabolism and higher levels of glycolytic flux. However, the PKM1-only expressing NK cells in this study demonstrated a remarkable ability to transcriptionally titrate the overall level of PKM1 to match a similar level of glycolytic flux to Pkm2NK-WT cells in vitro. We propose that this compensation is sufficient to allow NK cells to mount a normal immune response to MCMV infection, a process for which regulated NK cell metabolism is known to be important.\n\nAlthough, PKM1 can metabolically compensate for PKM2, there is no evidence in the literature that PKM1 can substitute for PKM2-mediated signalling and transcriptional regulation. The data presented in this study show that PKM2 deletion does not adversely affect previously described PKM2-regulated signalling axes. These data are surprising as PKM2 has been previously shown to regulate cMyc, HIF1\u03b1 and STAT5 signalling in CD4 T cells (Angiari et al., 2020). Although cMyc was reduced with TEPP-46 treatment in this study, it is important to note that this effect is secondary PKM2 metabolic regulation of NK cells as it is TEPP46-induced ROS production that leads to reduced cMyc protein expression. This was demonstrated by the rescued cMyc expression upon the addition of antioxidants. However, the reduced levels of cMyc protein were not sufficient to have a substantial impact on the expression of described cMyc target genes as there were only a total of 6 DEG (Supplementary file 1). The increased ROS in TEPP46 treated cells is likely to have accumulated over the 24 hr activation period and by extension it is likely that cMyc expression was not impaired at earlier time points. This may explain the lack of a cMyc gene signature in the list of differentially expressed genes identified in the RNAseq analysis. It will be of interest to further explore the relationship between PKM2, ROS and cMyc in the regulation of NK cell function.\n\nIt is also tempting to speculate that the profound differences in PKM2 function between NK cells and other cell types may be due to both functional and technical reasons. Although NK cells and T cells are both lymphocytes and have similar functional roles, their methods and contexts of activation vastly differ. T cells require a two-signal activation composed of both TCR/costimulatory molecule ligation and/or IL-2 signalling. In the context of PKM2-mediated T cell metabolic signalling, it is possible that receptor-mediated signalling may play an important role in activating the non-metabolic functions of PKM2. Indeed, in TCR stimulated T cells, levels of phosphoenolpyruvate (a PKM substrate) positively regulates activation of nuclear factor of activated T cells (NFAT) (Ho et al., 2015). Therefore, in theory, increased PKM2 activity would drain the pool of phosphoenolpyruvate, resulting in decreased NFAT activation in response to TCR ligation. It is interesting to note that NFAT has been previously shown to regulate transcription at the cMyc promoter (Mognol et al., 2012). Therefore this may somewhat explain why NK cells have a less profound signalling phenotype than CD4+ T cells. In this study, NK cells were activated in vitro using cytokines. It is interesting to speculate that receptor mediated activation of NK cells may similarly reveal a signalling role for PKM2 in vitro.\n\nFrom a technical point of view, it may also be that the method of PKM2 manipulation plays a role in whether PKM2 is required for transcription in different experimental systems. Indeed, most studies investigating PKM2 in immune cells using genetic approaches utilise shRNA to knock it down (Kono et al., 2019) or acute excision of exon 10 using tamoxifen Cre models in vitro (Palsson-McDermott et al., 2015). Knockdown approaches do not always lead to total deletion of the protein and may have differential effects to a total knock out (Zimmer et al., 2019). Similarly, studies that utilise a tamoxifen Cre method of PKM2 ablation may also see more acute effects of PKM2 deletion. For example, Palsson-McDermott et. al, utilised a tamoxifen Cre x Pkm2fl/fl mouse model and observed some interesting transcriptional effects on HIF1\u03b1 target genes such as Ldha. This Cre model differs from the one utilised in our current study as using the Ncr1 Cre model involves deletion of PKM2 in vivo and during the immature stage of NK cell development (Narni-Mancinelli et al., 2011). It is possible that deletion of PKM2 during NK cell development in vivo in this study may allow for selection for cells that have PKM2-independent transcriptional programs. It is also possible to speculate that earlier deletion of PKM2, for example, in haematopoietic progenitor stage using a Vav Cre model may reveal an interesting developmental phenotype (Georgiades et al., 2002).\n\nThe combination of genetic and pharmacological approaches is important for studying metabolic systems and while each has its limitations, they combine to provide confidence in the overall results and conclusions. Herein, both approaches show the PKM2 does not critically regulate the NK cell transcriptome. However, both genetic and pharmacological approaches support an important metabolic role for PKM2 in NK cells. In PKM2NK-WT cells the recalibration of PKM1 levels indicates the importance of maintaining exact pyruvate kinase activity. Acute activation of PKM2 using TEPP-46 showed that controlling pyruvate kinase activity is important as it supports flux through the PPP to maintain redox balance in NK cells. Rerouting of glucose into the PPP has been shown to occur immediately after oxidative injury in skin cells (Kuehne et al., 2015) and PPP-controlled antioxidant response has also been shown to be important in the control of inflammatory macrophage responses (Baardman et al., 2018). Similarly CD4+ T cells from patients with rheumatoid arthritis (RA) divert glucose into the PPP to increase NADPH production for protection against ROS. This allows these RA-associated T cells to bypass normal cell cycle control points and to become hyperinflammatory (Yang et al., 2016). These studies indicate that there is an intricate relationship between PPP-derived antioxidants and immune function. Interestingly, PKM2 has been shown to be a key regulator of antioxidant defence in esophageal squamous cell carcinoma, through direct regulation of flux into the PPP (Fukuda et al., 2015).\n\nWe have demonstrated that PKM2-controlled metabolism is required for normal NK cell responses as treatment with TEPP-46 is detrimental to the production of a range of NK cell cytokines including IFN\u03b3 and TNF\u03b1. Moreover, mitochondrial damage (Zheng et al., 2019) or directly targeting OXPHOS using pharmacological inhibitors has also been shown to inhibit NK cell cytokine production (Keating et al., 2016; Kedia-Mehta et al., 2019) and accordingly we found that one metabolic consequence of TEPP-46 treatment is the inhibition of mitochondrial OXPHOS.\n\nTEPP-46 has been tested as an anti-tumour drug, whereby it has been shown to inhibit tumour growth in xenograft models in nu/nu mice which lack a functional immune system (Anastasiou et al., 2012). However, it is important to consider the impact that such therapies would have for the antitumour immune responses. Although TEPP-46 showed some promise in preventing tumour growth, it is tempting to speculate that its efficacy may be hindered in mouse models with complete immune systems. As shown in this study, TEPP-46 is detrimental to NK cell metabolism and function. Similarly TEPP-46 has been shown to be anti-inflammatory in EAE models (Angiari et al., 2020). Therefore, PKM2 targeting therapies may not be suitable for treating cancer unless they can be specifically targeted to tumour cells.\n\n## Materials and methods\n\n### Mice\n\nC57BL/6J mice were purchased from Harlan (Bicester, U.K.) and maintained in compliance with Irish Department of Health and Children regulations and with the approval of the University of Dublin\u2019s ethical review board. Mice were also obtained from NCI Frederick. Animal care at NCI Frederick was provided in accordance with procedures in: \u2018A Guide for the Care and Use of Laboratory Animals\u2019. Ethics approval for the animal experiments detailed in this manuscript was received from the Institutional Animal Care and Use Committee (Permit Number: 000386) at the NCI-Frederick. Pkm2fl/fl mice were obtained from Matthew Vander Heiden at MIT, MA (Israelsen et al., 2013). Ncr1Cre KI mice were obtained from Eric Vivier, INSERM, France (Narni-Mancinelli et al., 2011). All mice were backcrossed to a C57BL/6 background. Pkm2fl/fl mice and Ncr1Cre KI mice were bred together and controls were maintained in the same room at NCI Frederick.\n\n### Mouse genotyping\n\nDNA samples were obtained from mice by tail snip. Tails were digested using 50 \u03bcl of tail lysis buffer and 5 \u03bcl of 10 mg/ml proteinase K in 1.5 ml tubes. Tubes were placed in a heating block at 55\u00b0C for 4 hr to overnight, allowing the tails to become digested. Tails were then heated to 95\u00b0C for 10 min to inactivate proteinase K. 950 \u03bcL of DNAse free water was then added to sample. DNA samples were stored at \u221220\u00b0C until use. Pkm2fl/fl genotyping was carried out using the following primers: Forward: 5\u2019-TAG GGC AGG ACC AAA GGA TTC CCT-3\u2019, Reverse: 5\u2019-CTG GCC CAG AGC CAC TCA CTC TTG-3\u2019. PCR reactions were carried out using GoTaq green PCR reaction buffer (Promega). DNA was cycled according to the following protocol: 94\u00b0C for 3 min, 94\u00b0C for 30 s (x30), 59\u00b0C for 30 s (x30), 72\u00b0C for 30 s (x30). DNA was then electrophoresed on an agarose gel stained with ethidium bromide. For Ncr1 Cre genotyping, briefly, the following primers were utilised: Forward - 5\u2032 GGA ACT GAA GGC AAC TCC TG- 3\u2019, Reverse (WT)\u2013 5\u2032- TTC CCG GCA ACA TAA AAT AAA-3\u2019, Reverse (Cre) - 5\u2032 -CCC TAG GAA TGC TCG TCA AG-3\u2019. PCR reactions were carried out using GoTaq green PCR reaction buffer (Promega). DNA was cycled according to the following protocol: 94\u00b0C for 3 min, 94\u00b0C for 30 s (x32), 57\u00b0C for 30 s (x32), 72\u00b0C for 1 min (x32), 72\u00b0C for 3 min. DNA was then electrophoresed on an agarose gel stained with ethidium bromide.\n\n### Cell culture\n\nSplenocytes were isolated and cultured in IL-15 (15 ng/ml; PeproTech) at 37\u00b0C for 6 days. On day 4, the cells were supplemented with IL-15 (15 ng/ml) and cultured for an additional 2 d. On day 6, cultured NK cells were magnetically purified (NK cell Isolation Kit II, Miltenyi) and stimulated for 18 hr with IL-2 (20 ng/ml; National Cancer Institute Preclinical Repository) and/or IL-12 (10 ng/ml; Miltenyi Biotec) cytokines. Low-dose IL-15 (6.66 ng/ml) was added as a survival factor to unstimulated cultures. Experiments were carried out in the presence or absence of TEPP-46 (Cayman Chemical or EMD Millipore), rapamycin (20 nM; Fisher), N-acetyl-cysteine (7.5 mM; EMD Millipore) or dehydroepiandrosterone (DHEA) (75 \u03bcM, Sigma Aldrich). Splenocytes were cultured in RPMI medium containing 10% FBS, 2 mM glutamine (Thermo Fisher), 50 \u03bcM 2-ME (Sigma-Aldrich), and 1% Penicillin/Streptomycin (Thermo Fisher).\n\n### NK cell activation with polyinosinic-polycytidylic acid in vivo\n\nMice were injected i.p. with 100\u00a0or\u00a0200 \u03bcg polyinosinic-polycytidylic acid [poly(I:C)] in saline (InvivoGen). Mice were sacrificed after 24 hr. Spleens were harvested, and NK cells were analysed.\n\n### Murine cytomegalovirus infection model\n\nStock of MCMV was a gift from the Michael Brown lab at the University of Virginia. MCMV stock was obtained from salivary gland passage of MCMV infected BALB/c mice. 1 \u00d7 105 PFU of virus in 100 \u03bcL was injected into the left side of the peritoneum in saline. Vehicle controls were given 100 \u03bcL of saline only. On day 4 post-infection, 4 hr prior to harvest, mice were injected with BrDU in saline i.p. Mice were then euthanised after 4 hr and tissues harvested. DNA from spleen was digested overnight with DNeasy extraction kit (Qiagen) for further downstream qPCR analysis.\n\nPrimers were from Integrated DNA Technologies. Primers used were as follows: Forward:5\u2019-TGTGTGGATACGCTCTCACCTCTAT-3\u2019, Rev:5\u2019GTTACACCAAGCCTTTCCTGGAT-3\u2019 (Integrated DNA Technologies). Taqman Probe was obtained from TaqMan Thermo Fisher 5\u2019-TTCATCTGCTGCCATACTGCCAGCTG-3\u2019. Data were normalised to the probe for housekeeping gene \u03b2-Actin (Thermo Fisher). Primer sequences were obtained from a previously published paper by Tanaka et al., 2007. qPCR data was obtained using the following reaction master mix: 900 nM forward primer, 900 nM reverse primer, 200 nM Taqman probe, 1 X EagleTaq master mix (Roche) and 50 ng/ \u03bcL of DNA in 20 \u03bcL reaction volume. Master mix then underwent thermal cycling according to the following protocol: 50\u00b0C for 2 min, 95\u00b0C for 10 min, denaturation at 95\u00b0C for 15 s, and extension at 60\u00b0C for 1 min. MCMV qPCR data is represented as relative levels between groups, normalised to \u03b2-actin. Mice used were 7\u201310 weeks old.\n\n### Flow cytometry\n\nCells were incubated for 10 min at 4\u00b0C with Fc blocking antibody CD16/CD32 (2.4G2) and subsequently stained for 20 min at 4\u00b0C with saturating concentrations of fluorophore conjugated antibodies. Antibodies used were as follows: NK1.1\u2013eFluor 450 (PK136), NK1.1\u2013BV421 (PK136), NK1.1-APC (PK136), NKp46\u2013PerCP eFluor 710 (29A1.4), NKp46\u2013PE (29A1.4), NKp46\u2013efluor450 (29A1.4), CD3\u2013FITC (145\u20132 C11), CD3\u2013PacBlue (500A2), TCR\u03b2\u2013APC (H57-597), TCR\u03b2\u2013PE (H57-597), CD69\u2013PerCp-Cy5.5 (H1.2F3), IFN\u03b3\u2013APC (XMG1.2), IFN\u03b3\u2013eFluor450 (XMG1.2), granzyme B\u2013PE-Cy7 (NGZB), BrDU \u2013 APC (B44), TCRb\u2013PECy7 (H57-597), CD69\u2013PE (H1.2F3), NK1.1\u2013APC (PK136), Ly49H \u2013 PE (3D10), CD11b-PE-Cy7 (M1/70), CD27- FITC (LG.7F9), PKM2- PE purchased from Abcam, eBiosciences, Biolegend, Thermo Fisher and BD Biosciences. L/D Aqua (Thermo Fisher) was used as a viability dye. Live cells were gated according to their forward scatter (FSC-A) and side scatter or according to L/D Aqua negative cells, single cells according to their FSC-W and FSC-A, NK cells were identified as NK1.1+, NKp46+ and CD3\u2212 cells. Cellular ROS measurements were obtained using H2-DCFDA flow cytometric dye (5 \u03bcM) (Thermo Fisher). Cell proliferation experiments were carried out using Cell Trace Violet Cell Proliferation kit (Thermo Fisher). For intracellular staining, the cells were incubated for 4 hr with the protein transport inhibitor GolgiPlug (BD Biosciences). For fixation and permeabilisation of the cells, the Cytofix/Cytoperm kit from BD Biosciences was used according to manufacturer\u2019s instructions. BrDU staining was carried out according to manufacturer\u2019s instructions (BD Biosciences). Data were acquired on either a FACSCanto, a LSR Fortessa, or LSR II (Beckton Dickson). Flow cytometry data was analysed using FlowJo 10.\n\n### Cytometric bead array\n\nFor cell supernatant measurements, cells were seeded at 2 \u00d7 106 per mL and treated with cytokines. After 18 hr, supernatants were harvested and frozen for later analysis. For serum measurements, blood was harvested from mice by cardiac puncture. Serum was harvested by centrifugation in serum separator tubes at top speed for two minutes. CBA was performed as per manufacturers (Becton Dickinson) instructions using 50 \u03bcL of supernatant or serum per sample and analysed by flow cytometry on a BD Fortessa. Data was analysed using FCAP Array software (BD Biosciences).\n\n### Real-time quantitative PCR\n\nCultured NK cells were purified using MACS purification with the NK isolation kit II (Miltenyi Biotech) prior to stimulation. RNA was isolated using the RNeasy RNA purification mini kit (QIAGEN) or GeneJET RNA purification kit (Thermo Fisher)(according to the manufacturer\u2019s protocol). From purified RNA, complementary DNA (cDNA) was synthesised using the reverse-transcriptase kit qScript cDNA synthesis kit (Quanta Biosciences) or high-capacity reverse DNA synthesis kit (Applied biosciences). Real-time PCR was performed in triplicate in a 96-well plate using iQ SYBR Green-based detection on an ABI 7900HT fast qPCR machine. For the analysis of mRNA levels using SYBR green detection the derived values were normalised to Rplp0 mRNA levels. Primers: Rplp0 forward: 5\u2019-CATGTCGCTCCGAGGGAAG-3\u2019,Rplp0 reverse: 5\u2019-CAGCAGCTGGCACCTTATTG-3\u2019, Pkm2 forward: 5\u2019- GCTATTCGAGGAACTCCGCC-3\u2019, Pkm2 reverse:5\u2019-AAGGTACAGGCACTACACGC-3\u2019. For the analysis of mRNA levels using Taqman detection, the derived values were normalised to HPRT mRNA levels. Pkm2:Probe: 5\u2019-/56FAM/TTATCGTTC/ZEN/TCACCAAGTCTGGCA/3IABkFQ\u00a0/-\u00a03\u2019,Primer 1: 5\u2019TTCGAGTCACGGCAATGATAG-3\u2019, Primer 2: 5\u2019-TCCTTCAAGTGCTGCAGTG-3\u2019, Hprt: Proprietary Probe Mm01545399_m1 Cat: 4331182.\n\n### Proteomics\n\nFor proteomic analysis, 5\u00a0\u00d7\u00a0106 purified cultured NK cells were stimulated for 18 hr in RPMI media containing IL-2 (20 ng/ml) plus IL-12 (10 ng/ml). To remove dead cells, a density gradient (Lymphoprep, Axis-Shield) was used. Cells were spun down and stored at \u221280\u00b0C until further preparation. Cell pellets were lysed in 400 \u03bcl lysis buffer (4% SDS, 50 mM TEAB pH 8.5, 10 mM TCEP). Lysates were boiled and sonicated with a BioRuptor (30 cycles: 30 s on, 30 s off) before alkylation with iodoacetamide for 1 hr at room temperature in the dark. The lysates were subjected to the SP3 procedure for protein clean-up before elution into digest buffer (0.1% SDS, 50 mM TEAB pH 8.5, 1 mM CaCl2) and digested with LysC and Trypsin, each in a 1:50 (enzyme:protein) ratio. Tandem mass tag (TMT) labelling and peptide clean-up were performed according to the SP3 protocol. Samples were eluted into 2% dimethyl sulphoxide in water, combined and dried in vacuo. The TMT samples were fractionated using off-line high pH reverse phase chromatography: samples were loaded onto a 4.6\u00a0\u00d7\u00a0250 mm Xbridge BEH130 C18 column with 3.5 \u00b5m particles (Waters). Using a Dionex BioRS system, the samples were separated using a 25-min multistep gradient of solvents A (10 mM formate at pH 9 in 2% acetonitrile) and B (10 mM ammonium formate pH 9 in 80% acetonitrile) at a flow rate of 1 ml/min. Peptides were separated into 48 fractions which were consolidated into 24 fractions. The fractions were subsequently dried and the peptides redissolved in 5% formic acid and analysed by liquid chromatography\u2013mass spectrometry (LC-MS). These data are publicly available at on the Immunological Protein Resource at immpres.co.uk.\n\n### Western blotting\n\nFor western blot analysis, cells were harvested, washed twice with ice-cold PBS and lysed at 1\u00a0\u00d7\u00a0107/ml in lysis buffer containing 50 mM Tris Cl pH 6.7, 2% SDS, 10% glycerol, 0.05% Bromophenol Blue, 1 \u00b5M dithiothreitol (DTT), phosphatase and protease inhibitors. Samples were denatured at 95\u00b0C for 10 min, separated by sodium dodecyl sulphate\u2013polyacrylamide gel electrophoresis and transferred to a polyvinylidene difluoride membrane. PKM1 (D30G6), PKM2 (D78A4) and phospho- S6 ribosomal protein (Ser235/236) (D57.2.2E) were obtained from Cell Signalling. Actin (AC-15) was obtained from Abcam. Total S6 ribosomal protein (C-8) was obtained SantaCruz Biotechnology. Where western blotting stripping was required, Restore western blot stripping buffer (Thermo Fisher) was used, blots were re-blocked and subsequently probed for different proteins. For DSS crosslinking cells were suspended at 1\u00a0\u00d7\u00a0107/ml in PBS and treated with 500 \u03bcM DSS for 30 min at room temperature. After 30 min, 5 \u00b5l of 1M Tris pH 7.5 was added to quench unreacted DSS. Cells were then lysed in sample buffer and electrophoresed as described above.\n\n### Seahorse metabolic flux analysis\n\nFor real-time analysis of the extracellular acidification rate (ECAR) and oxygen consumption rate (OCR) of purified and expanded NK cells cultured under various conditions, a Seahorse XF-24 Analyser or a Seahorse XFe-96e Analyser (Agilent Technologies) was used. In brief, 750,000 MACS purified, expanded NK cells were added to a 24-well XF Cell Culture Microplate, 200,000 MACS purified NK cells to a 96-well XFe Cell Culture Microplate. All cell culture plates were treated with Cell-Tak (BD Pharmingen) to ensure that the NK cells adhere to the plate. Sequential measurements of ECAR and OCR following addition of the inhibitors (Sigma) oligomycin (2 \u03bcM), FCCP (1 \u03bcM), rotenone (100 nM) plus antimycin A (4 \u03bcM), and 2-deoxyglucose (2DG, 30 mM) allowed for the calculation of basal glycolysis, glycolytic capacity, basal mitochondrial respiration, and maximal mitochondrial respiration.\n\n### Pyruvate kinase activity assay\n\nFor analysis of pyruvate kinase activity, cultured NK cells were purified and stimulated and lysed using assay buffer from the manufacturer (Biovision). Calls were lysed as 75,000 cells per well and carried out in triplicate technical replicates. The assay was measured using absorbance over time on a SpectraMax plate reader.\n\n### NADPH level assay\n\nCells were lysed in 0.1 M NaOH with 0.5% DTAC for NADPH determination at 0.1 \u00d7 106 cells per well. Relative NADPH levels were then determined using the NADPH-Glo assay kit (Promega) as per manufacturer\u2019s instructions.\n\n### RNA sequencing\n\nTwo\u00a0million MACS purified NK cells were washed twice in cold PBS. Cells were then lysed using the Gene Jet lysis buffer (Thermo Fisher). mRNA was purified using the Gene Jet RNA kit according to manufacturer\u2019s instructions. RNA was quantified using NanoDrop. RNA was then snap frozen in liquid nitrogen and sent on dry ice to the Frederick National Laboratory Sequencing facility for sequencing. RNA samples were first subjected to quality control analysis. RNA-Seq samples were then pooled and sequenced on HiSeq4000 using Illumina TruSeq Stranded Total RNA Library Prep and paired-end sequencing. The samples had 52 to 246 million pass filter reads with more than 90% of bases above the quality score of Q30. Reads of the samples were trimmed for adapters and low-quality bases using Cutadapt before alignment with the reference genome (Mouse - mm10) and the annotated transcripts using STAR. Library complexity was measured in terms of unique fragments in the mapped reads using Picard\u2019s Mark Duplicate utility. The gene expression quantification analysis was performed for all samples using STAR/RSEM tools.\n\nFor mRNA quantification, BAM files were imported into Partek Genomic Suite software (Partek Inc) and the built-in RNA-seq workflow pipeline was used. Reads were aligned and quantified using RefSeq transcripts database based on the E/M algorithm.\n\nGene-level RPKMs were used for subsequent analyses. Differentially expressed genes were identified by analysis of variance (ANOVA). The threshold value has been set at 1.5-fold change and a false discovery rate (FDR)\u00a0<\u00a00.05. Differentially expressed genes were analysed by ingenuity pathway analysis (IPA; Ingenuity Systems).\n\n### Metabolomics\n\n#### GC-MS metabolomics\n\nUntargeted metabolomics was carried out by West Coast Metabolomics at UC Davis. 10 \u00d7 106 MACS purified NK cells were washed three times in cold PBS. Samples were then snap frozen in liquid nitrogen. At UC Davis, samples were re-suspended with 1 ml of extraction buffer (37.5% degassed acetonitrile, 37.5% isopropanol and 20% water) at \u201320\u00b0C, centrifuged and evaporated to complete dryness. Membrane lipids and triglycerides were removed with 50% acetonitrile in water. The extract was aliquoted into two equal portions and the supernatant evaporated again. Internal standards C08-C30 fatty acid methyl esters were added and the sample derivatised by methoxyamine hydrochloride in pyridine and subsequently by N-methyl-N-trimethylsilyltrifluoroacetamide for trimethylsilylation of acidic protons. Gas chromatography-time-of-flight analysis was performed by the LECO Pegasus IV mass spectrometer. Samples were additionally normalised using the sum of peak heights for all identified metabolites (mTIC Normalisation).\n\n#### LC-MS metabolomics\n\nCell pellets for targeted analysis were washed and resuspended in ice cold 80% methanol. Phase separation was achieved by centrifugation at 4\u00b0C and the methanol-water phase containing polar metabolites was separated and dried using a vacuum concentrator. The dried metabolite samples were stored at \u221280\u00b0C and resuspended in Milli-Q water the day of analysis. An Agilent 6410 Triple Quadrupole mass spectrometer interfaced with a 1200 Series HPLC quaternary pump (Agilent) was used for ESI-LC\u2013MS/MS analysis in multiple reaction monitoring mode. Seven concentrations of standards, processed under the same conditions as the samples, were used to establish calibration curves. The best \ufb01t was determined using regression analysis of the peak analyte area. Chromatographic resolution was obtained in reverse phase on a Zorbax SB-C18 (1.8 \u03bcm; Agilent) for amino acids and an Eclipse Plus C18 (1.8 \u03bcm; Agilent) for TCA and PPP intermediates, with a \ufb02ow rate set at 0.4 ml/min. Data were normalised to protein concentration.\n\n### Statistical analysis\n\nStatistical analysis was performed by GraphPad Prism 8, with the tests used indicated in the figure legend. Datasets where two independent parameters were being compared (genotype and stimulation/treatment) were analysed by two-way ANOVA with Sidaks post-test. Datasets one variable parameter (treatment) with more than two groups were analysed by one-way ANOVA with Tukey\u2019s post-test. Datasets with one variable (treatment) and two groups were analysed by a Students t test. Data were log transformed where appropriate before analysis. Flow cytometry data was analysed using FlowJo 10. *p<0.05, **p<0.01, ***p<0.001. All error bars represent the mean\u00a0\u00b1the standard error of the mean (S.E.M).\n",
+      "created_at": "2025-12-02T19:20:03.926654Z"
+    },
+    {
+      "id": "4833fae1-adc7-4cf2-b253-8f69c0fcd2db",
+      "submission_id": "9ee02375-9ece-47fa-a145-8fa26cd536f9",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Tiffany Horng, ShanghaiTech University China\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.59166.sa1](https://doi.org/10.7554/eLife.59166.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nAcceptance summary:\n\nThis study investigates the role of a glycolytic enzyme called PKM2 in regulating the functions of natural killer cells. The authors show that PKM2 tetramerization during NK cell activation regulates PKM2 activity to influence NK cell growth, metabolism, and function.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Metabolic but not transcriptional regulation by PKM2 is important for Natural Killer cell responses\" for consideration by eLife. Your article has been reviewed by three peer reviewers, one of whom is a member of our Board of Reviewing Editors, and the evaluation has been overseen by Tadatsugu Taniguchi as the Senior Editor. The following individual involved in review of your submission has agreed to reveal their identity: Ruoning Wang (Reviewer #3).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nAs the editors have judged that your manuscript is of interest, but as described below that additional experiments are required before it is published, we would like to draw your attention to changes in our revision policy that we have made in response to COVID-19 (https://elifesciences.org/articles/57162). First, because many researchers have temporarily lost access to the labs, we will give authors as much time as they need to submit revised manuscripts. We are also offering, if you choose, to post the manuscript to bioRxiv (if it is not already there) along with this decision letter and a formal designation that the manuscript is \"in revision at eLife\". Please let us know if you would like to pursue this option. (If your work is more suitable for medRxiv, you will need to post the preprint yourself, as the mechanisms for us to do so are still in development.)\n\nSummary:\n\nIn this study, Walls et al. examine the role of PKM2 in NK cells. PKM2, the glycolytic enzyme that converts PEP to pyruvate, is expressed in NK cells and further upregulated during NK cell activation by Il-2/IL-12 stimulation. However, NK cells lacking PKM2 are activated normally in vitro and in vivo during MCMV infection, as indicated by proliferation, production of IFN\u03b3 and TNF, expression of Granzyme B, and viral clearance. The authors attribute the lack of phenotype to compensatory induction of PKM1. The authors' findings also suggest that while in other cell types PKM2 may \"moonlight\" in a transcriptional role, any such role for PKM2 in NK cells seems not to influence NK cell activation, at least in the contexts studied.\n\nPKM2, unlike PKM1, can form a tetramer with increased enzyme activity. In other contexts, such tetramerization is thought to enhance flux through glycolysis which disfavors glycolytic intermediates from being diverted to biosynthetic shunts like the PPP. The authors next asked how such tetramerization of PKM2 may influence NK cell activation, using a small molecule TEPP-46 that enhances PKM2 tetramerization. The authors found that TEPP-46 treatment during NK cell activation led to reduced cellular growth, reduced production of the PPP metabolites R5P and NADPH, increased cellular ROS, and reduced oxidative metabolism, as well as reduced production of IFN\u03b3 and TNF and reduced expression of Granzyme B.\n\nEssential revisions:\n\n1) The authors should provide some mechanistic insight into how PKM2 tetramerization leads to reduced NK cell activation. Does treatment with ROS scavengers like NAC or cell permeable glutathione rescue the effects of TEPP-46 on NK cell activation?\n\n2) Does PKM2 undergo tetramerization in a physiological context? Given the lack of a phenotype in the PKM2 KO in the in vitro or in vivo conditions that the authors analyzed, it seems like tetramerization may not occur (because PKM1, which is upregulated, is thought to not tetramerize). At the very least, the authors should discuss under what conditions PKM2 tetramerization can occur to suppress NK cell activation.\n\n3) The authors should confirm that TEPP-46 has no effect in PKM2 KO cells.\n",
+      "created_at": "2025-12-02T19:20:03.926654Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T19:20:03.926654Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T19:20:03.926654Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "f275f45e-8df4-4ad0-ae17-212b06b05dc5",
+      "content_id": "44a2e69f-5c79-4818-a1ca-b010127c4667",
+      "claim_id": "C1",
+      "claim": "PKM2 expression is significantly increased in NK cells from mice that received poly(I:C) compared to control mice.",
+      "claim_type": "EXPLICIT",
+      "source": "There was a significant increase in the expression of PKM2 in NK cells from mice that received poly(I:C) as measured by flow cytometry (Figure 1a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by flow cytometry data shown in Figure 1a comparing PKM2 expression in NK cells from poly(I:C)-treated versus control mice.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:20:03.926654Z"
+    },
+    {
+      "id": "c8794c4e-26a8-4db9-9e19-9808c92df704",
+      "content_id": "44a2e69f-5c79-4818-a1ca-b010127c4667",
+      "claim_id": "C2",
+      "claim": "PKM2 protein and mRNA expression increases over time following IL-2/IL-12 activation, peaking at 24 hours post-stimulation.",
+      "claim_type": "EXPLICIT",
+      "source": "The expression of PKM2 increased over time following activation peaking at 24 hr post cytokine stimulation (Figure 1b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by western blot and rtPCR data shown in Figure 1b measuring PKM2 expression at multiple time points after IL-2/IL-12 stimulation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:20:03.926654Z"
+    },
+    {
+      "id": "5dbe064b-ca62-4910-99df-9b70a8ef8bd2",
+      "content_id": "44a2e69f-5c79-4818-a1ca-b010127c4667",
+      "claim_id": "C3",
+      "claim": "mTORC1 is active in NK cells stimulated in vivo following poly(I:C) injection and in IL-2/IL-12 stimulated NK cells.",
+      "claim_type": "EXPLICIT",
+      "source": "The mammalian Target of Rapamycin complex 1 (mTORC1) has been shown to be active both in NK cells stimulated in vivo following poly(I:C) injection, and in IL-2/IL-12 stimulated NK cells, and is an important regulator of NK cell metabolism (Donnelly et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Donnelly et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:20:03.926654Z"
+    },
+    {
+      "id": "21eef29d-8647-4a5b-aa74-9a686475b98c",
+      "content_id": "44a2e69f-5c79-4818-a1ca-b010127c4667",
+      "claim_id": "C4",
+      "claim": "Inhibition of mTORC1 activity using rapamycin significantly reduces PKM2 mRNA and protein abundance in IL-2/12 stimulated cultured NK cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Inhibition of mTORC1 activity using the inhibitor rapamycin significantly reduced the abundance of PKM2 mRNA and protein in IL-2/12 stimulated cultured NK cells (Figure 1c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by western blot and qPCR data shown in Figure 1c comparing PKM2 expression in rapamycin-treated versus control NK cells.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:20:03.926654Z"
+    },
+    {
+      "id": "baede0dd-b56c-443d-9433-82192d807c39",
+      "content_id": "44a2e69f-5c79-4818-a1ca-b010127c4667",
+      "claim_id": "C5",
+      "claim": "Pkm1 mRNA is expressed and regulated by mTORC1 in IL-2/12 stimulated NK cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, we confirmed that Pkm1 mRNA is expressed and regulated by mTORC1 in IL-2/12 stimulated NK cells along with PKM1 protein (Figure 1\u2014figure supplement 1a\u2013b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by qPCR and western blot data shown in Figure 1\u2014figure supplement 1a\u2013b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:20:03.926654Z"
+    },
+    {
+      "id": "b3111ff2-c62b-486b-9342-c4ba56b993cf",
+      "content_id": "44a2e69f-5c79-4818-a1ca-b010127c4667",
+      "claim_id": "C6",
+      "claim": "NK cells do not express the liver- and erythrocyte-specific isoforms of pyruvate kinase, PK-L and PK-R.",
+      "claim_type": "EXPLICIT",
+      "source": "Although we were primarily concerned with the pyruvate kinase muscle (PKM) family of enzymes, we also confirmed that NK cells do not express the liver- and erythrocyte-specific isoforms of pyruvate kinase, PK-L and PK-R respectively, using quantitative proteomics.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by quantitative proteomics data showing no detectable peptides from the Pklr gene.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:20:03.926654Z"
+    },
+    {
+      "id": "2b959dee-f175-42bf-803c-5a3b49e48c43",
+      "content_id": "44a2e69f-5c79-4818-a1ca-b010127c4667",
+      "claim_id": "C7",
+      "claim": "IL-2/12 stimulated NK cells contain upwards of 6 \u00d7 10^6 copies of PKM peptide with no detectable peptides from the Pklr gene.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed upwards of 6 \u00d7 106 copies of PKM peptide in IL-2/12 stimulated NK cells, with no detectable peptides from the Pklr gene (Figure 1\u2014figure supplement 1c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by quantitative proteomics data shown in Figure 1\u2014figure supplement 1c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:20:03.926654Z"
+    },
+    {
+      "id": "177233cc-7440-4de2-a6c1-d8b9fff37166",
+      "content_id": "44a2e69f-5c79-4818-a1ca-b010127c4667",
+      "claim_id": "C8",
+      "claim": "PKM2 is ninefold more abundant than PKM1 in cytokine activated NK cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, quantitative proteomics analysis revealed that PKM2 is ninefold more abundant than PKM1 in cytokine activated NK cells (Figure 1d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by quantitative proteomics data shown in Figure 1d comparing PKM1 and PKM2 protein copy numbers.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:20:03.926654Z"
+    },
+    {
+      "id": "945e8919-756e-4d15-978d-21ab9861c715",
+      "content_id": "44a2e69f-5c79-4818-a1ca-b010127c4667",
+      "claim_id": "C9",
+      "claim": "IL-2/12-stimulated NK cells express both monomeric and tetrameric PKM2.",
+      "claim_type": "EXPLICIT",
+      "source": "Western blotting revealed that IL-2/12-stimulated NK cells express both monomeric and tetrameric PKM2 (Figure 1e).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by DSS crosslinking and western blot data shown in Figure 1e.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:20:03.926654Z"
+    },
+    {
+      "id": "bd51c7c7-15e9-486c-9077-e9b318109353",
+      "content_id": "44a2e69f-5c79-4818-a1ca-b010127c4667",
+      "claim_id": "C10",
+      "claim": "PKM2 expression is robustly increased in activated NK cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, PKM2 expression is robustly increased in activated NK cells, is the dominant pyruvate kinase isoform in these metabolically active cells and is present as both monomers and tetramers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from multiple experimental results presented in Figure 1.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:20:03.926654Z"
+    },
+    {
+      "id": "ae9026ed-48c3-4120-b484-dd163fec0972",
+      "content_id": "44a2e69f-5c79-4818-a1ca-b010127c4667",
+      "claim_id": "C11",
+      "claim": "PKM2 is the dominant pyruvate kinase isoform in metabolically active NK cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, PKM2 expression is robustly increased in activated NK cells, is the dominant pyruvate kinase isoform in these metabolically active cells and is present as both monomers and tetramers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by quantitative proteomics data showing PKM2 is ninefold more abundant than PKM1.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:20:03.926654Z"
+    },
+    {
+      "id": "217aab77-35d6-4c5b-b4c8-03d727328cf6",
+      "content_id": "44a2e69f-5c79-4818-a1ca-b010127c4667",
+      "claim_id": "C12",
+      "claim": "NK cells containing both the Ncr1-Cre transgene and homozygous for the Pkm2fl locus specifically excise exon 10 of the Pkm2 gene.",
+      "claim_type": "EXPLICIT",
+      "source": "The data show that NK cells containing both the Ncr1-Cre transgene and homozygous for the Pkm2fl locus specifically excise the exon 10 of Pkm2 gene leading to a smaller DNA band (~200 kb) (Figure 2a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by PCR and gel electrophoresis data shown in Figure 2a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:20:03.926654Z"
+    },
+    {
+      "id": "deb693cd-bfc9-45f6-a7e5-0f765688b84a",
+      "content_id": "44a2e69f-5c79-4818-a1ca-b010127c4667",
+      "claim_id": "C13",
+      "claim": "NK cells developed normally in Pkm2NK-KO mice as the numbers and frequencies of NK cells and NK cell subsets were normal in the spleen compared to control Pkm2NK-WT mice.",
+      "claim_type": "EXPLICIT",
+      "source": "NK cells developed normally in Pkm2NK-KO mice as the numbers and frequencies of NK cells and NK cells subsets were normal in the spleen when compared to control Pkm2NK-WT mice (Figure 2b,c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by flow cytometry data shown in Figure 2b,c comparing NK cell populations in Pkm2NK-KO versus Pkm2NK-WT mice.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:20:03.926654Z"
+    },
+    {
+      "id": "5fa21ebb-56ed-4d35-8e0d-3493eed0d538",
+      "content_id": "44a2e69f-5c79-4818-a1ca-b010127c4667",
+      "claim_id": "C14",
+      "claim": "Splenic Pkm2NK-KO NK cells expanded normally ex vivo in response to low-dose IL-15.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with normal NK cell development splenic Pkm2NK-KO NK cells expanded normally ex vivo in response to low-dose IL-15, important for NK cells homeostatic proliferation (Figure 2d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by cell counting data shown in Figure 2d comparing expansion of Pkm2NK-KO versus Pkm2NK-WT NK cells.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:20:03.926654Z"
+    },
+    {
+      "id": "a2053b6f-98c4-42a7-bbdb-65b37bf27b65",
+      "content_id": "44a2e69f-5c79-4818-a1ca-b010127c4667",
+      "claim_id": "C15",
+      "claim": "Pkm2NK-KO NK cells expressed comparable levels of granzyme B to Pkm2NK-WT NK cells following IL-2/IL-12 stimulation.",
+      "claim_type": "EXPLICIT",
+      "source": "Pkm2NK-KO NK cells expressed comparable levels of the cytotoxic granule component granzyme B and produced equivalent amounts of IFN\u03b3 compared to Pkm2NK-WT NK cells (Figure 2e\u2013h).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by flow cytometry data shown in Figure 2e\u2013f comparing granzyme B expression.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:20:03.926654Z"
+    },
+    {
+      "id": "a8e7d48c-ad4e-440e-b0aa-aadf8ff2be2e",
+      "content_id": "44a2e69f-5c79-4818-a1ca-b010127c4667",
+      "claim_id": "C16",
+      "claim": "Pkm2NK-KO NK cells produced equivalent amounts of IFN\u03b3 compared to Pkm2NK-WT NK cells following IL-2/IL-12 stimulation.",
+      "claim_type": "EXPLICIT",
+      "source": "Pkm2NK-KO NK cells expressed comparable levels of the cytotoxic granule component granzyme B and produced equivalent amounts of IFN\u03b3 compared to Pkm2NK-WT NK cells (Figure 2e\u2013h).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by flow cytometry data shown in Figure 2g\u2013h comparing IFN\u03b3 production.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:20:03.926654Z"
+    },
+    {
+      "id": "d730c803-8620-4225-8524-5626ef6b449e",
+      "content_id": "44a2e69f-5c79-4818-a1ca-b010127c4667",
+      "claim_id": "C17",
+      "claim": "There were no differences in the secretion of cytokines (IFN\u03b3, TNF\u03b1 and IL-10) or chemokines (MIP1\u03b1 and MIP1\u03b2) between stimulated Pkm2NK-KO and Pkm2NK-WT NK cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, there were no differences in the secretion of cytokines (IFN\u03b3, TNF\u03b1 and IL-10) or chemokines (MIP1\u03b1 and MIP1\u03b2) between stimulated Pkm2NK-KO and Pkm2NK-WT NK cells (Figure 2i,j).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by cytometric bead array data shown in Figure 2i,j comparing cytokine and chemokine secretion.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:20:03.926654Z"
+    },
+    {
+      "id": "d112f276-79fc-4951-a951-dda6acfe4d0b",
+      "content_id": "44a2e69f-5c79-4818-a1ca-b010127c4667",
+      "claim_id": "C18",
+      "claim": "The spleen size as determined by weight was equivalent in Pkm2NK-KO and Pkm2NK-WT mice 4 days post-MCMV infection.",
+      "claim_type": "EXPLICIT",
+      "source": "The spleen size as determined by weight was equivalent in Pkm2NK-KO and Pkm2NK-WT mice as were the numbers of NK cells and the frequencies of Ly49H+ splenic NK cells (Figure 3a\u2013c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by spleen weight measurements shown in Figure 3a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:20:03.926654Z"
+    },
+    {
+      "id": "3ffd6b7b-4db8-4321-9220-aad059ee63fd",
+      "content_id": "44a2e69f-5c79-4818-a1ca-b010127c4667",
+      "claim_id": "C19",
+      "claim": "The numbers of NK cells were equivalent in Pkm2NK-KO and Pkm2NK-WT mice 4 days post-MCMV infection.",
+      "claim_type": "EXPLICIT",
+      "source": "The spleen size as determined by weight was equivalent in Pkm2NK-KO and Pkm2NK-WT mice as were the numbers of NK cells and the frequencies of Ly49H+ splenic NK cells (Figure 3a\u2013c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by flow cytometry data shown in Figure 3b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:20:03.926654Z"
+    },
+    {
+      "id": "ad7a1717-081f-4639-931f-fff527c72085",
+      "content_id": "44a2e69f-5c79-4818-a1ca-b010127c4667",
+      "claim_id": "C20",
+      "claim": "The frequencies of Ly49H+ splenic NK cells were equivalent in Pkm2NK-KO and Pkm2NK-WT mice 4 days post-MCMV infection.",
+      "claim_type": "EXPLICIT",
+      "source": "The spleen size as determined by weight was equivalent in Pkm2NK-KO and Pkm2NK-WT mice as were the numbers of NK cells and the frequencies of Ly49H+ splenic NK cells (Figure 3a\u2013c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by flow cytometry data shown in Figure 3c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:20:03.926654Z"
+    },
+    {
+      "id": "6325b849-4471-41da-9c5b-fd3d0aabb5a5",
+      "content_id": "44a2e69f-5c79-4818-a1ca-b010127c4667",
+      "claim_id": "C21",
+      "claim": "There was no difference in NK cell activation in Pkm2NK-KO and Pkm2NK-WT mice based on CD69 expression 4 days post-MCMV infection.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, there was no difference in NK cell activation in Pkm2NK-KO and Pkm2NK-WT mice based on CD69 expression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by flow cytometry data shown in Figure 3d\u2013e.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:20:03.926654Z"
+    },
+    {
+      "id": "01ddba6a-bdf6-41ae-ba09-ea86ebd0fb0e",
+      "content_id": "44a2e69f-5c79-4818-a1ca-b010127c4667",
+      "claim_id": "C22",
+      "claim": "Ly49H+ cells from Pkm2NK-KO and Pkm2NK-WT mice showed equivalent levels of virus-induced proliferation based on BrDU incorporation 4 days post-MCMV infection.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, Ly49H+ cells from these mice showed equivalent levels of virus-induced proliferation based on BrDU incorporation (Figure 3d\u2013g).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by BrDU incorporation data shown in Figure 3f\u2013g.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:20:03.926654Z"
+    },
+    {
+      "id": "40fe5e71-861b-467c-8c22-e60d5d0779d2",
+      "content_id": "44a2e69f-5c79-4818-a1ca-b010127c4667",
+      "claim_id": "C23",
+      "claim": "There were no differences in the levels of IFN\u03b3, TNF\u03b1 and IL10 in the serum of uninfected or MCMV infected Pkm2NK-KO and Pkm2NK-WT mice.",
+      "claim_type": "EXPLICIT",
+      "source": "There were no differences in the levels of IFN\u03b3, TNF\u03b1 and IL10 in the serum of uninfected or MCMV infected Pkm2NK-KO and Pkm2NK-WT mice (Figure 3h).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by cytometric bead array data shown in Figure 3h.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:20:03.926654Z"
+    },
+    {
+      "id": "fd0c2da2-1dc8-4c54-8f4a-074c48d35c29",
+      "content_id": "44a2e69f-5c79-4818-a1ca-b010127c4667",
+      "claim_id": "C24",
+      "claim": "Viral loads on day 4 post-MCMV infection were similar in Pkm2NK-KO and Pkm2NK-WT mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, viral loads on day 4 were similar in Pkm2NK-KO and Pkm2NK-WT mice (Figure 3i).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by qPCR data for viral load shown in Figure 3i.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:20:03.926654Z"
+    },
+    {
+      "id": "c02654fc-bd23-48ec-b504-ec5543e1bb7c",
+      "content_id": "44a2e69f-5c79-4818-a1ca-b010127c4667",
+      "claim_id": "C25",
+      "claim": "The immune response to MCMV infection was not compromised in mice containing Pkm2 deficient NK cells 4 days post-infection.",
+      "claim_type": "EXPLICIT",
+      "source": "These data clearly show that the immune response to MCMV infection was not compromised in mice containing Pkm2 deficient NK cells 4 days post-infection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from multiple measurements of immune parameters shown in Figure 3.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:20:03.926654Z"
+    },
+    {
+      "id": "dd8488fa-12f9-40be-ba7a-77b68440010e",
+      "content_id": "44a2e69f-5c79-4818-a1ca-b010127c4667",
+      "claim_id": "C26",
+      "claim": "The basal and maximal rates of glycolysis were comparable in both unstimulated and IL2/IL12 stimulated Pkm2NK-KO compared to Pkm2NK-WT NK cells.",
+      "claim_type": "EXPLICIT",
+      "source": "The basal and maximal rates of glycolysis and of OXPHOS were comparable in both unstimulated and IL2/IL12 stimulated Pkm2NK-KO compared to Pkm2NK-WT NK cells (Figure 4a\u2013e).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by Seahorse extracellular flux analysis data shown in Figure 4a\u2013e.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:20:03.926654Z"
+    },
+    {
+      "id": "d4e790d3-fbd7-4b9f-b341-8ea03fb8f698",
+      "content_id": "44a2e69f-5c79-4818-a1ca-b010127c4667",
+      "claim_id": "C27",
+      "claim": "The basal and maximal rates of OXPHOS were comparable in both unstimulated and IL2/IL12 stimulated Pkm2NK-KO compared to Pkm2NK-WT NK cells.",
+      "claim_type": "EXPLICIT",
+      "source": "The basal and maximal rates of glycolysis and of OXPHOS were comparable in both unstimulated and IL2/IL12 stimulated Pkm2NK-KO compared to Pkm2NK-WT NK cells (Figure 4a\u2013e).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by Seahorse extracellular flux analysis data shown in Figure 4a\u2013e.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:20:03.926654Z"
+    },
+    {
+      "id": "9abe1bf1-c80b-4011-a2bd-77d23cc87955",
+      "content_id": "44a2e69f-5c79-4818-a1ca-b010127c4667",
+      "claim_id": "C28",
+      "claim": "The levels of glycolytic intermediates were similar in Pkm2NK-KO and Pkm2NK-WT NK cells.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, the levels of glycolytic intermediates, pentose phosphate pathway components (PPP) and elements of the tricarboxcylic acid (TCA) cycle were similar in Pkm2NK-KO and Pkm2NK-WT NK cells (Figure 4f\u2013h).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by LC-MS metabolomics data shown in Figure 4h.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:20:03.926654Z"
+    },
+    {
+      "id": "3d24e6fe-9354-4b27-a3f3-8e0758347fc7",
+      "content_id": "44a2e69f-5c79-4818-a1ca-b010127c4667",
+      "claim_id": "C29",
+      "claim": "The levels of pentose phosphate pathway components were similar in Pkm2NK-KO and Pkm2NK-WT NK cells.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, the levels of glycolytic intermediates, pentose phosphate pathway components (PPP) and elements of the tricarboxcylic acid (TCA) cycle were similar in Pkm2NK-KO and Pkm2NK-WT NK cells (Figure 4f\u2013h).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by LC-MS metabolomics data shown in Figure 4f.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:20:03.926654Z"
+    },
+    {
+      "id": "e1c1962e-4b3c-4bb2-8c37-c1102d868a38",
+      "content_id": "44a2e69f-5c79-4818-a1ca-b010127c4667",
+      "claim_id": "C30",
+      "claim": "The levels of tricarboxylic acid (TCA) cycle elements were similar in Pkm2NK-KO and Pkm2NK-WT NK cells.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, the levels of glycolytic intermediates, pentose phosphate pathway components (PPP) and elements of the tricarboxcylic acid (TCA) cycle were similar in Pkm2NK-KO and Pkm2NK-WT NK cells (Figure 4f\u2013h).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by LC-MS metabolomics data shown in Figure 4g.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:20:03.926654Z"
+    },
+    {
+      "id": "63a5dcfc-5289-4995-9c3f-56c5e3309ed0",
+      "content_id": "44a2e69f-5c79-4818-a1ca-b010127c4667",
+      "claim_id": "C31",
+      "claim": "Expression of PKM1 was significantly increased in Pkm2NK-KO compared to Pkm2NK-WT NK cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, RNA and protein analyses using rtPCR, RNAseq and western blotting revealed that expression of PKM1, the alternative splice variant of Pkm2, was significantly increased in Pkm2NK-KO compared to Pkm2NK-WT NK cells (Figure 4i\u2013k).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by rtPCR, RNAseq, and western blot data shown in Figure 4i\u2013k.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:20:03.926654Z"
+    },
+    {
+      "id": "f00898ce-f358-448e-949e-e8a8e0682490",
+      "content_id": "44a2e69f-5c79-4818-a1ca-b010127c4667",
+      "claim_id": "C32",
+      "claim": "Pkm2NK-KO NK cells had precisely compensated with increased PKM1 expression to maintain an extraordinarily similar rate of overall pyruvate kinase activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Remarkably, Pkm2NK-KO NK cells had precisely compensated with increased PKM1 expression to maintain an extraordinarily similar rate of overall pyruvate kinase activity, as measured using a direct biochemical enzymatic assay (Figure 4l).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by pyruvate kinase activity assay data shown in Figure 4l.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:20:03.926654Z"
+    },
+    {
+      "id": "f46b0306-8118-452c-b1e4-b439caee0a9e",
+      "content_id": "44a2e69f-5c79-4818-a1ca-b010127c4667",
+      "claim_id": "C33",
+      "claim": "There were very few significant differentially expressed genes in the transcriptome of Pkm2NK-KO versus Pkm2NK-WT NK cells.",
+      "claim_type": "EXPLICIT",
+      "source": "There were very few significant differentially expressed genes (DEG) in the transcriptome of Pkm2NK-KO versus Pkm2NK-WT NK cells (Figure 5a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by RNAseq analysis shown in Figure 5a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:20:03.926654Z"
+    },
+    {
+      "id": "b207fd1b-3aa1-4490-96c6-605caf10218e",
+      "content_id": "44a2e69f-5c79-4818-a1ca-b010127c4667",
+      "claim_id": "C34",
+      "claim": "There were only two genes upregulated by over twofold and four genes downregulated by greater than twofold expression with a false discovery rate of 0.05 in Pkm2NK-KO versus Pkm2NK-WT NK cells.",
+      "claim_type": "EXPLICIT",
+      "source": "There were only two genes upregulated by over twofold and four genes downregulated by greater than twofold expression with a false discovery rate of 0.05 (Figure 5a, Supplementary file 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by RNAseq differential gene expression analysis shown in Figure 5a and Supplementary file 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:20:03.926654Z"
+    },
+    {
+      "id": "8dc8adcb-f62b-4f75-ae7a-8a4ba361541c",
+      "content_id": "44a2e69f-5c79-4818-a1ca-b010127c4667",
+      "claim_id": "C35",
+      "claim": "There was no enrichment for HIF1\u03b1 target genes in the differentially expressed mRNA in Pkm2NK-KO NK cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, there was no enrichment for HIF1\u03b1 or STAT5 target genes in the differentially expressed mRNA in Pkm2NK-KO NK cells (Figure 5b and c, Supplementary file 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by gene expression analysis of HIF1\u03b1 targets shown in Figure 5b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:20:03.926654Z"
+    },
+    {
+      "id": "4a605f7f-2966-4381-9a3f-9b93b1669ead",
+      "content_id": "44a2e69f-5c79-4818-a1ca-b010127c4667",
+      "claim_id": "C36",
+      "claim": "There was no enrichment for STAT5 target genes in the differentially expressed mRNA in Pkm2NK-KO NK cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, there was no enrichment for HIF1\u03b1 or STAT5 target genes in the differentially expressed mRNA in Pkm2NK-KO NK cells (Figure 5b and c, Supplementary file 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by gene expression analysis of STAT5 targets shown in Figure 5c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:20:03.926654Z"
+    },
+    {
+      "id": "20f98d52-4582-4ea5-b182-d24e5efecbf8",
+      "content_id": "44a2e69f-5c79-4818-a1ca-b010127c4667",
+      "claim_id": "C37",
+      "claim": "TEPP-46 is a pharmacological activator of PKM2 function that promotes the oligomerisation of mono/dimeric PKM2 into tetrameric, catalytically active PKM2.",
+      "claim_type": "EXPLICIT",
+      "source": "TEPP-46 is a pharmacological activator of PKM2 function that promotes the oligomerisation of mono/dimeric PKM2 into tetrameric, catalytically active PKM2 (Anastasiou et al., 2012), resulting in the loss of non-glycolytic PKM2 signalling functions (Angiari et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Anastasiou et al., 2012 and Angiari et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:20:03.926654Z"
+    },
+    {
+      "id": "16d80945-f4fa-4588-b83a-eec688d3e6de",
+      "content_id": "44a2e69f-5c79-4818-a1ca-b010127c4667",
+      "claim_id": "C38",
+      "claim": "TEPP-46 treatment results in the loss of non-glycolytic PKM2 signalling functions.",
+      "claim_type": "EXPLICIT",
+      "source": "TEPP-46 is a pharmacological activator of PKM2 function that promotes the oligomerisation of mono/dimeric PKM2 into tetrameric, catalytically active PKM2 (Anastasiou et al., 2012), resulting in the loss of non-glycolytic PKM2 signalling functions (Angiari et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Angiari et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:20:03.926654Z"
+    },
+    {
+      "id": "1f77c22b-dc71-4639-a5ce-fc5627e7c739",
+      "content_id": "44a2e69f-5c79-4818-a1ca-b010127c4667",
+      "claim_id": "C39",
+      "claim": "There were only 10 differentially expressed genes with a fold change cutoff of 2 and a FDR of 0.05 between IL-2/IL-12 stimulated NK cells treated with TEPP-46 versus vehicle.",
+      "claim_type": "EXPLICIT",
+      "source": "The transcriptomes were remarkably similar between the two conditions with only 10 DEG with a fold change cutoff of 2 and a FDR of 0.05 (Figure 5d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by RNAseq differential gene expression analysis shown in Figure 5d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:20:03.926654Z"
+    },
+    {
+      "id": "17bdfa56-2996-4288-a5d4-c82080c9d11f",
+      "content_id": "44a2e69f-5c79-4818-a1ca-b010127c4667",
+      "claim_id": "C40",
+      "claim": "There was no enrichment for HIF1\u03b1 target genes in TEPP-46 treated NK cells aside from a small but significant increase in Bcl2 expression.",
+      "claim_type": "EXPLICIT",
+      "source": "Amongst these genes, there was again no enrichment for HIF1\u03b1 or STAT5 targets aside from a small but significant increase in Bcl2 expression (Figure 5e,f).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by gene expression analysis shown in Figure 5e.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:20:03.926654Z"
+    },
+    {
+      "id": "4a57beff-497d-4f7d-b9a1-49c4e5d80185",
+      "content_id": "44a2e69f-5c79-4818-a1ca-b010127c4667",
+      "claim_id": "C41",
+      "claim": "There was no enrichment for STAT5 target genes in TEPP-46 treated NK cells aside from a small but significant increase in Bcl2 expression.",
+      "claim_type": "EXPLICIT",
+      "source": "Amongst these genes, there was again no enrichment for HIF1\u03b1 or STAT5 targets aside from a small but significant increase in Bcl2 expression (Figure 5e,f).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by gene expression analysis shown in Figure 5f.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:20:03.926654Z"
+    },
+    {
+      "id": "b410ad18-dc24-4bb9-9fe6-c86da3f0a0b0",
+      "content_id": "44a2e69f-5c79-4818-a1ca-b010127c4667",
+      "claim_id": "C42",
+      "claim": "PKM2 is not necessary for the regulation of the NK cell transcriptome.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, using both genetic and pharmacological approaches these data clearly show that PKM2 is not necessary for the regulation of the NK cell transcriptome.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from RNAseq data from both Pkm2NK-KO cells and TEPP-46 treated cells showing minimal transcriptional changes.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:20:03.926654Z"
+    },
+    {
+      "id": "29953c9f-8ae5-4055-afdb-d4805f3a6bc1",
+      "content_id": "44a2e69f-5c79-4818-a1ca-b010127c4667",
+      "claim_id": "C43",
+      "claim": "Addition of TEPP-46 for 1 hr to cultured NK cells that had been previously stimulated for 18 hr with IL-2/IL-12 resulted in an increase in pyruvate kinase activity.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, addition of TEPP-46 for 1 hr to cultured NK cells that had been previously stimulated for 18 hr with IL-2/IL-12, resulted in an increase in pyruvate kinase activity and of cellular glycolysis (Figure 6a\u2013c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by pyruvate kinase activity assay data shown in Figure 6a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:20:03.926654Z"
+    },
+    {
+      "id": "4464ab4f-803e-4ad9-b893-dfcb05cb4812",
+      "content_id": "44a2e69f-5c79-4818-a1ca-b010127c4667",
+      "claim_id": "C44",
+      "claim": "Addition of TEPP-46 for 1 hr to cultured NK cells that had been previously stimulated for 18 hr with IL-2/IL-12 resulted in an increase in cellular glycolysis.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, addition of TEPP-46 for 1 hr to cultured NK cells that had been previously stimulated for 18 hr with IL-2/IL-12, resulted in an increase in pyruvate kinase activity and of cellular glycolysis (Figure 6a\u2013c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by Seahorse extracellular flux analysis data shown in Figure 6b\u2013c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:20:03.926654Z"
+    },
+    {
+      "id": "d9eab249-aec5-4dad-97f8-a8fcc5c04142",
+      "content_id": "44a2e69f-5c79-4818-a1ca-b010127c4667",
+      "claim_id": "C45",
+      "claim": "A substantial portion of PKM2 is present in the less catalytically active mono/dimeric conformation in IL-2/IL-12 stimulated NK cells.",
+      "claim_type": "EXPLICIT",
+      "source": "These data confirm that a substantial portion of PKM2 is present in the less catalytically active mono/dimeric conformation in IL-2/IL-12 stimulated NK cells, as its enzymatic activity can be boosted by TEPP-46.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the observation that TEPP-46 can increase PKM2 enzymatic activity.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:20:03.926654Z"
+    },
+    {
+      "id": "9d4e679d-db40-43f9-8deb-af40e44f64dd",
+      "content_id": "44a2e69f-5c79-4818-a1ca-b010127c4667",
+      "claim_id": "C46",
+      "claim": "NK cells treated with TEPP-46 were viable but showed reduced production of IFN\u03b3.",
+      "claim_type": "EXPLICIT",
+      "source": "NK cells treated with TEPP-46 were viable but showed reduced production of IFN\u03b3 and reduced granzyme B expression (Figure 6d\u2013f).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by flow cytometry data shown in Figure 6d\u2013e.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:20:03.926654Z"
+    },
+    {
+      "id": "4e59283a-e6a0-4228-99a2-1035cd72d123",
+      "content_id": "44a2e69f-5c79-4818-a1ca-b010127c4667",
+      "claim_id": "C47",
+      "claim": "NK cells treated with TEPP-46 showed reduced granzyme B expression.",
+      "claim_type": "EXPLICIT",
+      "source": "NK cells treated with TEPP-46 were viable but showed reduced production of IFN\u03b3 and reduced granzyme B expression (Figure 6d\u2013f).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by flow cytometry data shown in Figure 6f.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:20:03.926654Z"
+    },
+    {
+      "id": "27eb2654-e2ac-4199-b7e4-2149d3c91ce1",
+      "content_id": "44a2e69f-5c79-4818-a1ca-b010127c4667",
+      "claim_id": "C48",
+      "claim": "TEPP-46 treated NK cells secreted reduced amounts of TNF\u03b1 and IL10 while maintaining normal production of MIP1\u03b1/\u03b2 chemokines.",
+      "claim_type": "EXPLICIT",
+      "source": "TEPP-46 treated NK cells also secreted reduced amounts of TNF\u03b1 and IL10 while maintaining normal production of MIP1\u03b1/\u03b2 chemokines (Figure 6g\u2013h).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by cytometric bead array data shown in Figure 6g\u2013h.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:20:03.926654Z"
+    },
+    {
+      "id": "55db81b4-8955-485e-b287-31153bd3a600",
+      "content_id": "44a2e69f-5c79-4818-a1ca-b010127c4667",
+      "claim_id": "C49",
+      "claim": "TEPP-46 impaired Pkm2NK-WT IFN\u03b3 and granzyme B production while having no effect in Pkm2NK-KO cells.",
+      "claim_type": "EXPLICIT",
+      "source": "TEPP-46 impaired Pkm2NK-WT IFN\u03b3 and granzyme B production while having no effect in Pkm2NK-KO cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by flow cytometry data shown in Figure 6\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:20:03.926654Z"
+    },
+    {
+      "id": "57c9bbd5-1865-4740-8955-ad438df7c502",
+      "content_id": "44a2e69f-5c79-4818-a1ca-b010127c4667",
+      "claim_id": "C50",
+      "claim": "TEPP-46 did not affect pyruvate kinase activity in Pkm2NK-KO cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, TEPP-46 did not affect pyruvate kinase activity in Pkm2NK-KO cells (Figure 6\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by pyruvate kinase activity assay data shown in Figure 6\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:20:03.926654Z"
+    },
+    {
+      "id": "fe7fc21f-a01c-4b8c-ac9e-2b0007967133",
+      "content_id": "44a2e69f-5c79-4818-a1ca-b010127c4667",
+      "claim_id": "C51",
+      "claim": "NK cells stimulated in the presence of TEPP-46 were smaller in size than vehicle-treated NK cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Flow cytometric analysis revealed that NK cells stimulated in the presence of TEPP-46 were smaller in size than vehicle-treated NK cells suggesting defects in cellular growth (Figure 7a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by flow cytometry forward scatter data shown in Figure 7a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:20:03.926654Z"
+    },
+    {
+      "id": "bcccf0c4-f924-4d34-9967-bca6ba960cd3",
+      "content_id": "44a2e69f-5c79-4818-a1ca-b010127c4667",
+      "claim_id": "C52",
+      "claim": "TEPP-46-treated NK cells showed reduced proliferation in response to IL2/IL12 stimulation.",
+      "claim_type": "EXPLICIT",
+      "source": "TEPP-46-treated NK cells also showed reduced proliferation in response to IL2/IL12 stimulation (Figure 7\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by cell trace violet proliferation assay data shown in Figure 7\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:20:03.926654Z"
+    },
+    {
+      "id": "a43ab7d5-0efc-4247-aee2-ac68b572c3e2",
+      "content_id": "44a2e69f-5c79-4818-a1ca-b010127c4667",
+      "claim_id": "C53",
+      "claim": "In NK cells stimulated with IL-2/IL-12 plus TEPP-46, the basal rates of glycolysis were equivalent to those of NK cells stimulated with IL-2/IL-12 alone.",
+      "claim_type": "EXPLICIT",
+      "source": "However, NK cells stimulated with IL-2/IL-12 plus TEPP-46, the basal rates of glycolysis were equivalent to those of NK cells stimulated with IL-2/IL-12 alone (Figure 7b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by Seahorse extracellular flux analysis data shown in Figure 7b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:20:03.926654Z"
+    },
+    {
+      "id": "738d4c91-633a-465c-89c3-edfd8ce265d2",
+      "content_id": "44a2e69f-5c79-4818-a1ca-b010127c4667",
+      "claim_id": "C54",
+      "claim": "There was a small but significant effect of TEPP-46 on NK cell glycolytic capacity.",
+      "claim_type": "EXPLICIT",
+      "source": "There was also a small but significant effect on NK cell glycolytic capacity (Figure 7c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by Seahorse extracellular flux analysis data shown in Figure 7c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:20:03.926654Z"
+    },
+    {
+      "id": "439693c4-c1aa-429f-8ff2-fc070e613ee6",
+      "content_id": "44a2e69f-5c79-4818-a1ca-b010127c4667",
+      "claim_id": "C55",
+      "claim": "Metabolomics analysis showed no decrease in the levels of glycolytic intermediates in TEPP-46 treated NK cells.",
+      "claim_type": "EXPLICIT",
+      "source": "While metabolomics analysis showed no decrease in the levels glycolytic intermediates there were decreased levels of the PPP metabolite ribose-5-phosphate (R5P) arguing that in the presence of TEPP-46 glucose-6-phosphate might be withheld from the PPP (Figure 7d,e).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by GC-MS metabolomics data shown in Figure 7d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:20:03.926654Z"
+    },
+    {
+      "id": "adafdfc4-1743-45d9-b2ff-742dc2d7de00",
+      "content_id": "44a2e69f-5c79-4818-a1ca-b010127c4667",
+      "claim_id": "C56",
+      "claim": "There were decreased levels of the PPP metabolite ribose-5-phosphate (R5P) in TEPP-46 treated NK cells.",
+      "claim_type": "EXPLICIT",
+      "source": "While metabolomics analysis showed no decrease in the levels glycolytic intermediates there were decreased levels of the PPP metabolite ribose-5-phosphate (R5P) arguing that in the presence of TEPP-46 glucose-6-phosphate might be withheld from the PPP (Figure 7d,e).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by metabolomics data shown in Figure 7e.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:20:03.926654Z"
+    },
+    {
+      "id": "063ec408-0f4a-405e-baf0-524e6ba467a0",
+      "content_id": "44a2e69f-5c79-4818-a1ca-b010127c4667",
+      "claim_id": "C57",
+      "claim": "TEPP-46-treated NK cells showed a dramatic increase in ROS compared to vehicle controls.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, TEPP-46-treated NK cells showed a dramatic increase in ROS compared to vehicle controls, as measured using the flow cytometric ROS probe H2-DCFDA (Figure 8a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by flow cytometry ROS measurement data shown in Figure 8a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:20:03.926654Z"
+    },
+    {
+      "id": "9c9bd7a0-cf74-4122-aed4-995f4cfacc6f",
+      "content_id": "44a2e69f-5c79-4818-a1ca-b010127c4667",
+      "claim_id": "C58",
+      "claim": "Inhibition of flux through the PPP using the glucose-6-phosphate dehydrogenase inhibitor, DHEA, resulted in an increase in ROS.",
+      "claim_type": "EXPLICIT",
+      "source": "Inhibition of flux through the PPP using the glucose-6-phosphate dehydrogenase inhibitor, DHEA, similarly resulted in an increase in ROS (Figure 8b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by flow cytometry ROS measurement data shown in Figure 8b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:20:03.926654Z"
+    },
+    {
+      "id": "c2677de6-b1de-4844-8ac1-a8751f7bcc3e",
+      "content_id": "44a2e69f-5c79-4818-a1ca-b010127c4667",
+      "claim_id": "C59",
+      "claim": "There was a significant decrease in the levels of NADPH in TEPP-46-treated NK cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Accordingly, we found a significant decrease in the levels of NADPH in TEPP-46-treated NK cells (Figure 8c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by NADPH assay data shown in Figure 8c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:20:03.926654Z"
+    },
+    {
+      "id": "783737b7-6d9d-4fd8-ba57-8f8fa8f2be2d",
+      "content_id": "44a2e69f-5c79-4818-a1ca-b010127c4667",
+      "claim_id": "C60",
+      "claim": "Two of the most significantly upregulated genes in TEPP-46-treated NK cells were members of the metallothionein family, namely Mt1 and Mt2.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, supporting that there was increased oxidative stress in TEPP-46-treated NK cells, our RNAseq data showed that two of the most significantly upregulated genes in TEPP-46-treated NK cells were members of the metallothionein family, namely Mt1 and Mt2 (Figure 8d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by RNAseq data shown in Figure 8d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:20:03.926654Z"
+    },
+    {
+      "id": "5f78552f-7f10-43a2-9e5f-a36d51c77ec6",
+      "content_id": "44a2e69f-5c79-4818-a1ca-b010127c4667",
+      "claim_id": "C61",
+      "claim": "Metallothioneins are a set of zinc-responsive proteins that have antioxidant properties and are known to be induced in response to oxidative stress.",
+      "claim_type": "EXPLICIT",
+      "source": "Metallothioneins are a set of zinc-responsive proteins that have antioxidant properties and are known to be induced in response to oxidative stress (Ruttkay-Nedecky et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Ruttkay-Nedecky et al., 2013.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:20:03.926654Z"
+    },
+    {
+      "id": "8c6a8ee7-bdf9-46e7-9156-6a2e9d5ac9fb",
+      "content_id": "44a2e69f-5c79-4818-a1ca-b010127c4667",
+      "claim_id": "C62",
+      "claim": "There was no difference in the membrane potential-dependent mitochondrial mass in TEPP-46 treated NK cells.",
+      "claim_type": "EXPLICIT",
+      "source": "While there was no difference in the membrane potential-dependent mitochondrial mass in TEPP-46 treated NK cells (Figure 8e), we found that there was a substantial decrease in the basal rates of OXPHOS (Figure 8f).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by Mitotracker flow cytometry data shown in Figure 8e.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:20:03.926654Z"
+    },
+    {
+      "id": "ef7aed65-ca54-41bb-b8a5-b0eecff15299",
+      "content_id": "44a2e69f-5c79-4818-a1ca-b010127c4667",
+      "claim_id": "C63",
+      "claim": "There was a substantial decrease in the basal rates of OXPHOS in TEPP-46 treated NK cells.",
+      "claim_type": "EXPLICIT",
+      "source": "While there was no difference in the membrane potential-dependent mitochondrial mass in TEPP-46 treated NK cells (Figure 8e), we found that there was a substantial decrease in the basal rates of OXPHOS (Figure 8f).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by Seahorse oxygen consumption rate data shown in Figure 8f.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:20:03.926654Z"
+    },
+    {
+      "id": "0811f679-7ef4-4274-a694-9e41a42f7329",
+      "content_id": "44a2e69f-5c79-4818-a1ca-b010127c4667",
+      "claim_id": "C64",
+      "claim": "There was a greatly decreased maximum respiration and spare respiratory capacity in TEPP-46 treated NK cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, there was a greatly decreased maximum respiration and spare respiratory capacity (Figure 8g,h).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by Seahorse oxygen consumption rate data shown in Figure 8g,h.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:20:03.926654Z"
+    },
+    {
+      "id": "25358ef2-bb21-4b84-9ead-dc87d62ebdbe",
+      "content_id": "44a2e69f-5c79-4818-a1ca-b010127c4667",
+      "claim_id": "C65",
+      "claim": "The metabolites of both the TCA cycle and the Citrate-Malate shuttle were reduced in TEPP-46 treated NK cells.",
+      "claim_type": "EXPLICIT",
+      "source": "The metabolites of both these cycles were reduced in TEPP-46 treated NK cells (Figure 8i).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by GC-MS metabolomics data shown in Figure 8i.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:20:03.926654Z"
+    },
+    {
+      "id": "cf96050b-20f6-414d-b97b-799c507ab150",
+      "content_id": "44a2e69f-5c79-4818-a1ca-b010127c4667",
+      "claim_id": "C66",
+      "claim": "The levels of glutamine and glutamate were reduced in TEPP-46 treated NK cells, indicative of impaired glutaminolysis.",
+      "claim_type": "EXPLICIT",
+      "source": "In line with decreased fueling of oxidative metabolism, the levels of glutamine and glutamate were also reduced indicative of impaired glutaminolysis (Figure 8j).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by metabolomics data shown in Figure 8j.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:20:03.926654Z"
+    },
+    {
+      "id": "43b2f8fd-c5e7-463e-945c-645d0f5c8143",
+      "content_id": "44a2e69f-5c79-4818-a1ca-b010127c4667",
+      "claim_id": "C67",
+      "claim": "The transcription factor cMyc was reduced in TEPP-46-treated NK cells at the protein level but not at the transcriptomic level.",
+      "claim_type": "EXPLICIT",
+      "source": "The transcription factor cMyc is important for glutamine metabolism and was also found to be reduced in TEPP-46-treated NK cells; however, this was only at the protein level as it was not found to be altered in the transcriptomic dataset (Figure 8k).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by western blot data shown in Figure 8k and RNAseq data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:20:03.926654Z"
+    },
+    {
+      "id": "918c46d6-6d67-49cb-91b0-5cd74c5ade1a",
+      "content_id": "44a2e69f-5c79-4818-a1ca-b010127c4667",
+      "claim_id": "C68",
+      "claim": "The addition of antioxidant MitoQ was sufficient to partially restore the expression of cMyc protein expression in TEPP-46-treated NK cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, the addition of antioxidant MitoQ was sufficient to partially restore the expression of cMyc protein expression in TEPP-46-treated NK cells (Figure 9a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by western blot data shown in Figure 9a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:20:03.926654Z"
+    },
+    {
+      "id": "d873d2b6-d223-41ea-9534-8427f03274f8",
+      "content_id": "44a2e69f-5c79-4818-a1ca-b010127c4667",
+      "claim_id": "C69",
+      "claim": "The antioxidant N-acetylcysteine (NAC) profoundly reduced TEPP-46 induced ROS.",
+      "claim_type": "EXPLICIT",
+      "source": "We could also profoundly reduce TEPP-46 induced ROS using the antioxidant N-acetylcysteine (NAC) (Figure 9b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by flow cytometry ROS measurement data shown in Figure 9b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:20:03.926654Z"
+    },
+    {
+      "id": "3da46831-a0bd-48d4-8813-db259136222c",
+      "content_id": "44a2e69f-5c79-4818-a1ca-b010127c4667",
+      "claim_id": "C70",
+      "claim": "NAC treatment could rescue the production of IFN\u03b3, but not that of TNF in NK cells stimulated with IL2/12+TEPP46.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, NAC treatment could rescue the production of IFN\u03b3, but not that of TNF in NK cells stimulated with IL2/12+TEPP46 (Figure 9c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by cytometric bead array data shown in Figure 9c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:20:03.926654Z"
+    },
+    {
+      "id": "ccc1fd71-4365-45ac-a15e-e184ee71668c",
+      "content_id": "44a2e69f-5c79-4818-a1ca-b010127c4667",
+      "claim_id": "C71",
+      "claim": "PKM2 is involved in metabolic but not transcriptional regulation of NK cell responses.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, this study demonstrates that PKM2 is involved in metabolic but not transcriptional regulation of NK cell responses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the combined genetic and pharmacological data showing minimal transcriptional changes but significant metabolic effects.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:20:03.926654Z"
+    },
+    {
+      "id": "fcd5a915-308a-44af-87ee-eef3291e613e",
+      "content_id": "44a2e69f-5c79-4818-a1ca-b010127c4667",
+      "claim_id": "C72",
+      "claim": "PKM2 has no significant role in regulating HIF1\u03b1 and STAT associated gene expression in NK cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Our study shows that PKM2 has no significant role in regulating HIF1\u03b1 and STAT associated gene expression in NK cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by RNAseq analysis showing no enrichment for HIF1\u03b1 or STAT target genes in PKM2-deficient or TEPP-46 treated NK cells.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:20:03.926654Z"
+    },
+    {
+      "id": "cd794c45-3723-4f0b-a95d-4b8b7996c60c",
+      "content_id": "44a2e69f-5c79-4818-a1ca-b010127c4667",
+      "claim_id": "C73",
+      "claim": "While PKM2 is the most highly expressed isoform in NK cells, either deletion of PKM2 or allosteric tetramerisation of PKM2 has minimal impact upon the NK cell transcriptome.",
+      "claim_type": "EXPLICIT",
+      "source": "The data clearly show that while PKM2 is the most highly expressed isoform in NK cells, either deletion of PKM2 or allosteric tetramerisation of PKM2 has minimal impact upon the NK cell transcriptome and that there was no evidence of significantly altered expression of HIF1\u03b1 or STAT target genes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by RNAseq data from both Pkm2NK-KO and TEPP-46 treated NK cells.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:20:03.926654Z"
+    },
+    {
+      "id": "bd2b355c-48eb-4923-abbf-c9d957c38228",
+      "content_id": "44a2e69f-5c79-4818-a1ca-b010127c4667",
+      "claim_id": "C74",
+      "claim": "Glycolysis is important for the function of NK cells as inhibition of glycolysis disrupts normal NK cell effector functions including the production of IFN\u03b3 and the lysis of target cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Glycolysis is important for the function of NK cells as inhibition of glycolysis disrupts normal NK cell effector functions including the production of IFN\u03b3 and the lysis of target cells (Assmann et al., 2017; Donnelly et al., 2014; Keating et al., 2016; Loftus et al., 2018; Kedia-Mehta et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to multiple studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:20:03.926654Z"
+    },
+    {
+      "id": "3c8f0449-eedc-42f4-a96d-4d4066696a6a",
+      "content_id": "44a2e69f-5c79-4818-a1ca-b010127c4667",
+      "claim_id": "C75",
+      "claim": "PKM1 forms a homo tetramer that efficiently converts phosphoenolpyruvate and ADP into pyruvate and ATP.",
+      "claim_type": "EXPLICIT",
+      "source": "PKM1 forms a homo tetramer that efficiently converts phosphoenolpyruvate and ADP into pyruvate and ATP.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on established biochemical knowledge about PKM1.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:20:03.926654Z"
+    },
+    {
+      "id": "721566bb-56a2-4412-8ffd-525ddcce3d40",
+      "content_id": "44a2e69f-5c79-4818-a1ca-b010127c4667",
+      "claim_id": "C76",
+      "claim": "PKM2 can form a catalytically efficient tetramer and is also found as a monomer/dimer that has substantially less catalytic activity.",
+      "claim_type": "EXPLICIT",
+      "source": "While PKM2 can similarly form a catalytically efficient tetramer, it is also found as a monomer/dimer (called monomeric PKM2 hereafter) that has substantially less catalytic activity (Christofk et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Christofk et al., 2008.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:20:03.926654Z"
+    },
+    {
+      "id": "8ad6b88b-3a3a-492d-9212-24c741e156bc",
+      "content_id": "44a2e69f-5c79-4818-a1ca-b010127c4667",
+      "claim_id": "C77",
+      "claim": "In situations where PKM2 is predominantly mono/dimeric, the rate of glycolytic flux may be slowed leading to an accumulation of upstream glycolytic intermediates that can be diverted into other pathways such as the PPP to support cellular biosynthesis.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, in situations where PKM2 is predominantly mono/dimeric, the rate of glycolytic flux may be slowed leading to an accumulation of upstream glycolytic intermediates that can be diverted into other pathways such as the PPP to support cellular biosynthesis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on established metabolic principles and inference from PKM2 biochemistry.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:20:03.926654Z"
+    },
+    {
+      "id": "450260c3-9ce3-4677-8a33-28938bbc3d3c",
+      "content_id": "44a2e69f-5c79-4818-a1ca-b010127c4667",
+      "claim_id": "C78",
+      "claim": "PKM2 expression has been found to be elevated in many cells with high biosynthetic burdens including tumour cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Accordingly, PKM2 expression has been found to be elevated in many cells with high biosynthetic burdens including tumour cells (Li et al., 2018; Hitosugi et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Li et al., 2018 and Hitosugi et al., 2009.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:20:03.926654Z"
+    },
+    {
+      "id": "f6309c81-30c1-4473-bde2-dc31d2f0ae2f",
+      "content_id": "44a2e69f-5c79-4818-a1ca-b010127c4667",
+      "claim_id": "C79",
+      "claim": "Monomeric PKM2 has functions independent of its metabolic role in glycolysis, primarily in the nucleus where it contributes to transcriptional control through interactions with HIF-1\u03b1 and STAT transcription factors.",
+      "claim_type": "EXPLICIT",
+      "source": "Monomeric PKM2 has also been shown to have functions independent of its metabolic role in glycolysis, primarily in the nucleus where it contributes to transcriptional control through interactions with the hypoxia inducible factor-1\u03b1 (HIF-1\u03b1) and signal transduction and activator of transcription (STAT) transcription factors (Hitosugi et al., 2009; Demaria and Poli, 2012; Dong et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Hitosugi et al., 2009; Demaria and Poli, 2012; Dong et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:20:03.926654Z"
+    },
+    {
+      "id": "e4302f78-646a-4610-9083-93a96dca47ec",
+      "content_id": "44a2e69f-5c79-4818-a1ca-b010127c4667",
+      "claim_id": "C80",
+      "claim": "Mono/dimeric PKM2 is converted to the catalytically efficient tetramer when levels of upstream metabolites such as fructose-1,6-phosphate or serine are high.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, mono/dimeric PKM2 is converted to the catalytically efficient tetramer when levels of upstream metabolites such as fructose-1,6-phosphate or serine are high (Keller et al., 2012; Morgan et al., 2013; Anastasiou et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Keller et al., 2012; Morgan et al., 2013; Anastasiou et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:20:03.926654Z"
+    },
+    {
+      "id": "f016539a-9c28-49e4-b241-5b5b5f91c3ec",
+      "content_id": "44a2e69f-5c79-4818-a1ca-b010127c4667",
+      "claim_id": "C81",
+      "claim": "IL-15 is a cytokine required for DC-mediated NK cell priming in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "To further investigate PKM2 expression splenic NK cells were cultured for 6 days in low-dose IL-15, a cytokine required for DC-mediated NK cell priming in vivo (Lucas et al., 2007; Dubois et al., 2002; Koka et al., 2004) (called 'cultured NK cells' hereafter).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Lucas et al., 2007; Dubois et al., 2002; Koka et al., 2004.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:20:03.926654Z"
+    },
+    {
+      "id": "6da32b17-24c6-4576-8e84-a707181c3d5a",
+      "content_id": "44a2e69f-5c79-4818-a1ca-b010127c4667",
+      "claim_id": "C82",
+      "claim": "Mice lacking mTORC1 in NK cells are defective in responding to MCMV challenge.",
+      "claim_type": "EXPLICIT",
+      "source": "It has been previously demonstrated that NK cells lacking the metabolic regulator mTORC1 are defective in responding to MCMV challenge (Mar\u00e7ais et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Mar\u00e7ais et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:20:03.926654Z"
+    },
+    {
+      "id": "31c9b3b9-7171-46e1-8afa-49a859c1ee7f",
+      "content_id": "44a2e69f-5c79-4818-a1ca-b010127c4667",
+      "claim_id": "C83",
+      "claim": "Mice treated with 2-deoxyglucose, a glycolytic inhibitor, are impaired in their responses to MCMV.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, mice treated with 2-deoxyglucose, a glycolytic inhibitor are impaired in their responses to MCMV (Mah et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Mah et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:20:03.926654Z"
+    },
+    {
+      "id": "c5797dfe-98f0-4f53-b5fd-9d7a72c99338",
+      "content_id": "44a2e69f-5c79-4818-a1ca-b010127c4667",
+      "claim_id": "C84",
+      "claim": "PKM2 has been previously shown to regulate cMyc, HIF1\u03b1 and STAT5 signalling in CD4 T cells.",
+      "claim_type": "EXPLICIT",
+      "source": "These data are surprising as PKM2 has been previously shown to regulate cMyc, HIF1\u03b1 and STAT5 signalling in CD4 T cells (Angiari et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Angiari et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:20:03.926654Z"
+    },
+    {
+      "id": "7982f18f-475e-42df-9e1e-fd66c303a261",
+      "content_id": "44a2e69f-5c79-4818-a1ca-b010127c4667",
+      "claim_id": "C85",
+      "claim": "In TCR stimulated T cells, levels of phosphoenolpyruvate positively regulate activation of nuclear factor of activated T cells (NFAT).",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, in TCR stimulated T cells, levels of phosphoenolpyruvate (a PKM substrate) positively regulates activation of nuclear factor of activated T cells (NFAT) (Ho et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Ho et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:20:03.926654Z"
+    },
+    {
+      "id": "3bf6fec9-25e9-4ad4-a6c1-a3b11fe36f9e",
+      "content_id": "44a2e69f-5c79-4818-a1ca-b010127c4667",
+      "claim_id": "C86",
+      "claim": "NFAT has been previously shown to regulate transcription at the cMyc promoter.",
+      "claim_type": "EXPLICIT",
+      "source": "It is interesting to note that NFAT has been previously shown to regulate transcription at the cMyc promoter (Mognol et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Mognol et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:20:03.926654Z"
+    },
+    {
+      "id": "e8c724fa-b2c9-4e8c-8941-594cb34527a7",
+      "content_id": "44a2e69f-5c79-4818-a1ca-b010127c4667",
+      "claim_id": "C87",
+      "claim": "Rerouting of glucose into the PPP has been shown to occur immediately after oxidative injury in skin cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Rerouting of glucose into the PPP has been shown to occur immediately after oxidative injury in skin cells (Kuehne et al., 2015) and PPP-controlled antioxidant response has also been shown to be important in the control of inflammatory macrophage responses (Baardman et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Kuehne et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:20:03.926654Z"
+    },
+    {
+      "id": "1002a106-fac1-4c63-8212-97af3c4f6cb2",
+      "content_id": "44a2e69f-5c79-4818-a1ca-b010127c4667",
+      "claim_id": "C88",
+      "claim": "PPP-controlled antioxidant response has been shown to be important in the control of inflammatory macrophage responses.",
+      "claim_type": "EXPLICIT",
+      "source": "Rerouting of glucose into the PPP has been shown to occur immediately after oxidative injury in skin cells (Kuehne et al., 2015) and PPP-controlled antioxidant response has also been shown to be important in the control of inflammatory macrophage responses (Baardman et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Baardman et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:20:03.926654Z"
+    },
+    {
+      "id": "3b51df27-574d-4009-a3c5-3f1aaefc4936",
+      "content_id": "44a2e69f-5c79-4818-a1ca-b010127c4667",
+      "claim_id": "C89",
+      "claim": "CD4+ T cells from patients with rheumatoid arthritis (RA) divert glucose into the PPP to increase NADPH production for protection against ROS.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly CD4+ T cells from patients with rheumatoid arthritis (RA) divert glucose into the PPP to increase NADPH production for protection against ROS. This allows these RA-associated T cells to bypass normal cell cycle control points and to become hyperinflammatory (Yang et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Yang et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:20:03.926654Z"
+    },
+    {
+      "id": "c2319daf-f02a-470b-8b72-904d733dd8e1",
+      "content_id": "44a2e69f-5c79-4818-a1ca-b010127c4667",
+      "claim_id": "C90",
+      "claim": "PKM2 has been shown to be a key regulator of antioxidant defence in esophageal squamous cell carcinoma, through direct regulation of flux into the PPP.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, PKM2 has been shown to be a key regulator of antioxidant defence in esophageal squamous cell carcinoma, through direct regulation of flux into the PPP (Fukuda et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Fukuda et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:20:03.926654Z"
+    },
+    {
+      "id": "2cb7ee9a-184b-4fb5-8361-10a89d09444a",
+      "content_id": "44a2e69f-5c79-4818-a1ca-b010127c4667",
+      "claim_id": "C91",
+      "claim": "Mitochondrial damage or directly targeting OXPHOS using pharmacological inhibitors has been shown to inhibit NK cell cytokine production.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, mitochondrial damage (Zheng et al., 2019) or directly targeting OXPHOS using pharmacological inhibitors has also been shown to inhibit NK cell cytokine production (Keating et al., 2016; Kedia-Mehta et al., 2019) and accordingly we found that one metabolic consequence of TEPP-46 treatment is the inhibition of mitochondrial OXPHOS.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Zheng et al., 2019; Keating et al., 2016; Kedia-Mehta et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:20:03.926654Z"
+    },
+    {
+      "id": "c637eeb4-7978-4c1b-9878-646d7f6bba13",
+      "content_id": "44a2e69f-5c79-4818-a1ca-b010127c4667",
+      "claim_id": "C92",
+      "claim": "TEPP-46 has been tested as an anti-tumour drug and has been shown to inhibit tumour growth in xenograft models in nu/nu mice which lack a functional immune system.",
+      "claim_type": "EXPLICIT",
+      "source": "TEPP-46 has been tested as an anti-tumour drug, whereby it has been shown to inhibit tumour growth in xenograft models in nu/nu mice which lack a functional immune system (Anastasiou et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Anastasiou et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:20:03.926654Z"
+    },
+    {
+      "id": "242495b5-9505-41dc-b204-e54ebc0fd4d9",
+      "content_id": "44a2e69f-5c79-4818-a1ca-b010127c4667",
+      "claim_id": "C93",
+      "claim": "TEPP-46 has been shown to be anti-inflammatory in EAE models.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly TEPP-46 has been shown to be anti-inflammatory in EAE models (Angiari et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Angiari et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:20:03.926654Z"
+    },
+    {
+      "id": "313e1219-3557-49e9-a62c-b3cf9dd198ea",
+      "content_id": "44a2e69f-5c79-4818-a1ca-b010127c4667",
+      "claim_id": "C94",
+      "claim": "PKM2-regulated glycolytic metabolism and redox status, not transcriptional control, facilitate optimal NK cell responses.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, PKM2-regulated glycolytic metabolism and redox status, not transcriptional control, facilitate optimal NK cells responses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is the main conclusion inferred from all experimental data presented in the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:20:03.926654Z"
+    },
+    {
+      "id": "8ce12955-4a07-4daf-acc9-be86a9453109",
+      "content_id": "44a2e69f-5c79-4818-a1ca-b010127c4667",
+      "claim_id": "C95",
+      "claim": "Acute pharmacological activation of PKM2 catalytic activity blunted NK cell growth and effector functions.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, acute pharmacological activation of PKM2 catalytic activity blunted NK cell growth and effector functions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by multiple experiments with TEPP-46 showing reduced cell size, proliferation, and cytokine production.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:20:03.926654Z"
+    },
+    {
+      "id": "15748afa-aea9-4801-8aef-5a9b113f7e54",
+      "content_id": "44a2e69f-5c79-4818-a1ca-b010127c4667",
+      "claim_id": "C96",
+      "claim": "Defects in NK cell function caused by TEPP-46 were associated with increased levels of ROS and a transcriptional signature indicating oxidative stress.",
+      "claim_type": "EXPLICIT",
+      "source": "These defects were associated with increased levels of ROS and a transcriptional signature indicating oxidative stress that we linked to reduced PPP metabolites and decreased NADPH levels.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by ROS measurements, RNAseq data showing Mt1/Mt2 upregulation, and NADPH measurements.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:20:03.926654Z"
+    },
+    {
+      "id": "8566e201-4806-4872-acbe-42e664f7f49f",
+      "content_id": "44a2e69f-5c79-4818-a1ca-b010127c4667",
+      "claim_id": "C97",
+      "claim": "TEPP-46-induced defects in NK cell function were linked to reduced PPP metabolites and decreased NADPH levels.",
+      "claim_type": "EXPLICIT",
+      "source": "These defects were associated with increased levels of ROS and a transcriptional signature indicating oxidative stress that we linked to reduced PPP metabolites and decreased NADPH levels.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by metabolomics data showing reduced ribose-5-phosphate and NADPH measurements.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:20:03.926654Z"
+    },
+    {
+      "id": "75f239f6-964d-434d-a9f1-d7b97e0c40a0",
+      "content_id": "44a2e69f-5c79-4818-a1ca-b010127c4667",
+      "claim_id": "C98",
+      "claim": "This study reveals an important metabolic role for PKM2 in supporting the PPP and redox balance in activated NK cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, this study reveals an important metabolic role for PKM2 in supporting the PPP and redox balance in activated NK cells and highlights that PKM2 does not have a profound transcriptional role in all immune cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is the main conclusion inferred from the TEPP-46 experiments showing effects on PPP metabolites, NADPH, and ROS.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:20:03.926654Z"
+    },
+    {
+      "id": "abf2b33c-45b6-4b8d-b6d3-fb28607bc4a4",
+      "content_id": "44a2e69f-5c79-4818-a1ca-b010127c4667",
+      "claim_id": "C99",
+      "claim": "PKM2 does not have a profound transcriptional role in all immune cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, this study reveals an important metabolic role for PKM2 in supporting the PPP and redox balance in activated NK cells and highlights that PKM2 does not have a profound transcriptional role in all immune cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the contrast between the lack of transcriptional effects in NK cells versus reported transcriptional effects in other immune cells.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:20:03.926654Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "582d286d-e732-43d7-903c-7c873a26ed49",
+      "content_id": "44a2e69f-5c79-4818-a1ca-b010127c4667",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "PKM2 expression is robustly increased in activated NK cells both in vivo and in vitro, and this induction is regulated by mTORC1 signaling.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C2, C4, and C10 collectively demonstrate that PKM2 expression increases upon NK cell activation through poly(I:C) injection in vivo (C1) and IL-2/IL-12 stimulation in vitro (C2), peaking at 24 hours. The mTORC1 dependence is confirmed by rapamycin inhibition experiments (C4). The data from flow cytometry, western blot, and qPCR provide converging evidence for this result.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:20:03.926654Z"
+    },
+    {
+      "id": "583c78e1-6ee9-4d6c-b574-f6c21e6819da",
+      "content_id": "44a2e69f-5c79-4818-a1ca-b010127c4667",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "PKM2 is the dominant pyruvate kinase isoform in activated NK cells, being ninefold more abundant than PKM1, and exists in both monomeric and tetrameric conformations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8, C9, and C11 are supported by quantitative proteomics showing PKM2 is ninefold more abundant than PKM1 (C8) and DSS crosslinking experiments demonstrating both monomeric and tetrameric forms (C9). This establishes PKM2 as the dominant isoform in metabolically active NK cells (C11).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:20:03.926654Z"
+    },
+    {
+      "id": "6397fc31-e5e6-479c-9357-b3a180289510",
+      "content_id": "44a2e69f-5c79-4818-a1ca-b010127c4667",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Genetic deletion of PKM2 in NK cells does not impair NK cell development, expansion, or effector function in vitro.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C12-C17 demonstrate successful genetic deletion of PKM2 (C12) with no defects in NK cell development (C13), IL-15-mediated expansion (C14), or effector functions including granzyme B expression (C15), IFN\u03b3 production (C16), and cytokine/chemokine secretion (C17). Multiple flow cytometry and functional assays support this conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:20:03.926654Z"
+    },
+    {
+      "id": "cb148a66-9589-4916-9c48-e83f1722a7ee",
+      "content_id": "44a2e69f-5c79-4818-a1ca-b010127c4667",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Pkm2NK-KO mice mount normal immune responses to MCMV infection at day 4 post-infection, with equivalent NK cell activation, proliferation, cytokine production, and viral control compared to wild-type mice.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C18-C25 collectively show that PKM2 deletion does not compromise the in vivo immune response to MCMV. Multiple parameters including spleen size (C18), NK cell numbers (C19), Ly49H+ frequencies (C20), activation markers (C21), proliferation (C22), serum cytokines (C23), and viral loads (C24) are all equivalent between genotypes, supporting the conclusion that PKM2 is dispensable for MCMV responses (C25).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:20:03.926654Z"
+    },
+    {
+      "id": "143ddc8f-afa6-4a0b-ba03-2672e8416a8e",
+      "content_id": "44a2e69f-5c79-4818-a1ca-b010127c4667",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Pkm2NK-KO NK cells maintain normal glycolytic and oxidative metabolism with unchanged levels of glycolytic intermediates, pentose phosphate pathway components, and TCA cycle metabolites.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C26-C30 demonstrate that PKM2 deletion does not alter cellular metabolism. Seahorse analysis shows comparable glycolysis and OXPHOS rates (C26-C27), while metabolomics reveals similar levels of glycolytic intermediates (C28), PPP components (C29), and TCA cycle metabolites (C30). This metabolic compensation is remarkable given PKM2's expected role.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:20:03.926654Z"
+    },
+    {
+      "id": "67ec2f25-516f-4d72-9c0e-1c66e26c2a7e",
+      "content_id": "44a2e69f-5c79-4818-a1ca-b010127c4667",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Pkm2NK-KO NK cells compensate for PKM2 loss by upregulating PKM1 expression to precisely maintain total pyruvate kinase activity at wild-type levels.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C31 and C32 reveal the mechanism underlying the lack of phenotype in PKM2-deficient cells. Multiple techniques (rtPCR, RNAseq, western blot) confirm increased PKM1 expression (C31), and direct enzymatic assays demonstrate that total pyruvate kinase activity is maintained at remarkably similar levels (C32). This represents a key finding explaining the metabolic compensation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:20:03.926654Z"
+    },
+    {
+      "id": "042b80cd-6b45-469c-b6aa-a955824e2e56",
+      "content_id": "44a2e69f-5c79-4818-a1ca-b010127c4667",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "PKM2 deletion has minimal impact on the NK cell transcriptome, with no enrichment for HIF1\u03b1 or STAT5 target genes, demonstrating that PKM2 does not play a significant transcriptional regulatory role in NK cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C33-C36 show very few differentially expressed genes in Pkm2NK-KO cells (only 2 up and 4 down at FDR 0.05), with no enrichment for HIF1\u03b1 or STAT5 targets. Claims C42, C72, and C73 synthesize this finding, concluding that PKM2 lacks the transcriptional regulatory function in NK cells that has been reported in other immune cell types. The RNAseq data strongly support this conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:20:03.926654Z"
+    },
+    {
+      "id": "31c6c191-c173-400a-8e5d-856f39d57c26",
+      "content_id": "44a2e69f-5c79-4818-a1ca-b010127c4667",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Pharmacological activation of PKM2 with TEPP-46 produces minimal transcriptional changes in NK cells, with only 10 differentially expressed genes and no enrichment for HIF1\u03b1 or STAT5 targets (except Bcl2).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C39-C41 demonstrate that acute PKM2 activation with TEPP-46 also fails to produce substantial transcriptional changes. Only 10 genes are differentially expressed (C39), with no HIF1\u03b1 enrichment aside from Bcl2 (C40) and no STAT5 enrichment aside from Bcl2 (C41). This pharmacological approach complements the genetic data, strengthening the conclusion about PKM2's lack of transcriptional function.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:20:03.926654Z"
+    },
+    {
+      "id": "7e5649e4-7930-4e7a-b5c7-9a2434a3c527",
+      "content_id": "44a2e69f-5c79-4818-a1ca-b010127c4667",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "TEPP-46 treatment increases pyruvate kinase activity and glycolysis in NK cells, confirming that a substantial portion of PKM2 exists in the less catalytically active monomeric/dimeric conformation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C43-C45 demonstrate that TEPP-46 increases both pyruvate kinase activity (C43) and glycolysis (C44), which would not be possible if PKM2 were already fully tetrameric. This confirms the presence of monomeric/dimeric PKM2 (C45) and validates TEPP-46 as a tool for studying PKM2 function. The enzymatic and Seahorse data support this conclusion.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:20:03.926654Z"
+    },
+    {
+      "id": "bae9c9cd-3e15-4c4d-8c72-11c4273aef1c",
+      "content_id": "44a2e69f-5c79-4818-a1ca-b010127c4667",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "TEPP-46 treatment impairs NK cell effector functions, reducing IFN\u03b3, granzyme B, TNF\u03b1, and IL-10 production in a PKM2-dependent manner while maintaining viability and chemokine production.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C46-C48 show that TEPP-46 reduces multiple effector functions (IFN\u03b3, granzyme B, TNF\u03b1, IL-10) while maintaining viability and chemokine production. Claims C49-C50 confirm PKM2 specificity by showing no effect in Pkm2NK-KO cells. The flow cytometry and cytometric bead array data support these findings, though the mechanism remains to be fully elucidated.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:20:03.926654Z"
+    },
+    {
+      "id": "a7de566a-c754-4b61-a7cf-d12955038679",
+      "content_id": "44a2e69f-5c79-4818-a1ca-b010127c4667",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "TEPP-46 treatment reduces NK cell size and proliferation, indicating impaired cellular growth.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C51 and C52 demonstrate that TEPP-46 affects NK cell growth, with reduced cell size measured by forward scatter (C51) and decreased proliferation measured by cell trace violet (C52). These findings suggest that PKM2 tetramerization impairs biosynthetic processes required for cell growth.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:20:03.926654Z"
+    },
+    {
+      "id": "e5956b32-63b0-4028-b518-9c242b547755",
+      "content_id": "44a2e69f-5c79-4818-a1ca-b010127c4667",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "TEPP-46 treatment does not substantially reduce basal glycolysis or glycolytic intermediates but decreases the pentose phosphate pathway metabolite ribose-5-phosphate, suggesting reduced glucose flux into the PPP.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C53-C56 reveal an unexpected metabolic phenotype: basal glycolysis is maintained (C53) with only a small effect on glycolytic capacity (C54), glycolytic intermediates are unchanged (C55), but the PPP metabolite R5P is decreased (C56). This suggests TEPP-46 redirects glucose away from the PPP, which is critical for the subsequent findings on oxidative stress.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:20:03.926654Z"
+    },
+    {
+      "id": "a5d75c50-c33f-41b0-872a-b9ab53f4c68e",
+      "content_id": "44a2e69f-5c79-4818-a1ca-b010127c4667",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "TEPP-46 treatment causes oxidative stress in NK cells, with dramatically increased ROS, decreased NADPH, and upregulation of oxidative stress response genes Mt1 and Mt2.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C57-C60 establish that TEPP-46 induces oxidative stress through multiple lines of evidence: increased ROS measured by H2-DCFDA (C57), similar ROS increase with PPP inhibitor DHEA (C58), decreased NADPH (C59), and upregulation of metallothionein genes (C60). These findings are mechanistically linked to reduced PPP flux and provide a coherent explanation for the functional defects.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:20:03.926654Z"
+    },
+    {
+      "id": "7f952839-f04c-4da8-8b1f-604df1fa2d69",
+      "content_id": "44a2e69f-5c79-4818-a1ca-b010127c4667",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "TEPP-46 treatment impairs mitochondrial oxidative metabolism without affecting mitochondrial mass, with reduced OXPHOS, decreased TCA cycle and citrate-malate shuttle metabolites, and impaired glutaminolysis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C62-C66 demonstrate mitochondrial dysfunction: normal mitochondrial mass (C62) but substantially decreased OXPHOS (C63), maximum respiration, and spare capacity (C64), along with reduced TCA/citrate-malate metabolites (C65) and glutamine/glutamate levels (C66). This suggests reduced mitochondrial fuel supply rather than mitochondrial damage, consistent with the oxidative stress phenotype.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:20:03.926654Z"
+    },
+    {
+      "id": "5c412a6d-e1a6-4c82-b581-b009e51b91fd",
+      "content_id": "44a2e69f-5c79-4818-a1ca-b010127c4667",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "TEPP-46 treatment reduces cMyc protein levels without affecting mRNA, and this reduction can be partially rescued by the antioxidant MitoQ, suggesting ROS-mediated post-transcriptional regulation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C67 and C68 reveal that cMyc is reduced at the protein but not mRNA level (C67), and MitoQ partially restores cMyc protein (C68). This suggests oxidative stress causes post-transcriptional or post-translational regulation of cMyc. However, the mechanism linking ROS to cMyc protein stability is not fully elucidated, and the functional consequences of reduced cMyc are not extensively characterized.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:20:03.926654Z"
+    },
+    {
+      "id": "c8e81cc6-ed8f-450c-9b5a-ce5689bbf668",
+      "content_id": "44a2e69f-5c79-4818-a1ca-b010127c4667",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "The antioxidant N-acetylcysteine (NAC) reduces TEPP-46-induced ROS and partially rescues IFN\u03b3 production but not TNF production.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C69 and C70 demonstrate that NAC profoundly reduces TEPP-46-induced ROS (C69) and rescues IFN\u03b3 but not TNF production (C70). This provides functional evidence linking oxidative stress to impaired NK cell function, though the differential rescue of IFN\u03b3 versus TNF suggests additional complexity in how ROS affects different effector functions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:20:03.926654Z"
+    },
+    {
+      "id": "1fd58da9-c3f6-4e7f-97c9-9a91cb0552be",
+      "content_id": "44a2e69f-5c79-4818-a1ca-b010127c4667",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "PKM2 regulates NK cell function through metabolic control of the pentose phosphate pathway and redox balance rather than through transcriptional regulation, with acute PKM2 activation impairing NK cell responses via oxidative stress.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C71, C94-C98 represent the main conclusions synthesizing all experimental findings. The genetic data show no transcriptional role (C71, C94), while pharmacological activation reveals metabolic regulation through PPP/redox control (C95-C98). The convergence of multiple experimental approaches (genetic deletion, pharmacological activation, metabolomics, ROS measurements, antioxidant rescue) strongly supports this integrated conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:20:03.926654Z"
+    },
+    {
+      "id": "dd56858a-c905-4f02-8a8c-8e61eed9dfd6",
+      "content_id": "44a2e69f-5c79-4818-a1ca-b010127c4667",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "PKM2 does not have a profound transcriptional role in all immune cells, contrasting with findings in other immune cell types.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C99 is supported by the contrast between the minimal transcriptional effects observed in NK cells versus the reported transcriptional functions in T cells and other immune cells (referenced in C84). The RNAseq data from both genetic and pharmacological approaches provide strong evidence for this cell-type-specific difference in PKM2 function.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:20:03.926654Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "f275f45e-8df4-4ad0-ae17-212b06b05dc5",
+      "result_id": "582d286d-e732-43d7-903c-7c873a26ed49"
+    },
+    {
+      "claim_id": "c8794c4e-26a8-4db9-9e19-9808c92df704",
+      "result_id": "582d286d-e732-43d7-903c-7c873a26ed49"
+    },
+    {
+      "claim_id": "21eef29d-8647-4a5b-aa74-9a686475b98c",
+      "result_id": "582d286d-e732-43d7-903c-7c873a26ed49"
+    },
+    {
+      "claim_id": "bd51c7c7-15e9-486c-9077-e9b318109353",
+      "result_id": "582d286d-e732-43d7-903c-7c873a26ed49"
+    },
+    {
+      "claim_id": "177233cc-7440-4de2-a6c1-d8b9fff37166",
+      "result_id": "583c78e1-6ee9-4d6c-b574-f6c21e6819da"
+    },
+    {
+      "claim_id": "945e8919-756e-4d15-978d-21ab9861c715",
+      "result_id": "583c78e1-6ee9-4d6c-b574-f6c21e6819da"
+    },
+    {
+      "claim_id": "ae9026ed-48c3-4120-b484-dd163fec0972",
+      "result_id": "583c78e1-6ee9-4d6c-b574-f6c21e6819da"
+    },
+    {
+      "claim_id": "217aab77-35d6-4c5b-b4c8-03d727328cf6",
+      "result_id": "6397fc31-e5e6-479c-9357-b3a180289510"
+    },
+    {
+      "claim_id": "deb693cd-bfc9-45f6-a7e5-0f765688b84a",
+      "result_id": "6397fc31-e5e6-479c-9357-b3a180289510"
+    },
+    {
+      "claim_id": "5fa21ebb-56ed-4d35-8e0d-3493eed0d538",
+      "result_id": "6397fc31-e5e6-479c-9357-b3a180289510"
+    },
+    {
+      "claim_id": "a2053b6f-98c4-42a7-bbdb-65b37bf27b65",
+      "result_id": "6397fc31-e5e6-479c-9357-b3a180289510"
+    },
+    {
+      "claim_id": "a8e7d48c-ad4e-440e-b0aa-aadf8ff2be2e",
+      "result_id": "6397fc31-e5e6-479c-9357-b3a180289510"
+    },
+    {
+      "claim_id": "d730c803-8620-4225-8524-5626ef6b449e",
+      "result_id": "6397fc31-e5e6-479c-9357-b3a180289510"
+    },
+    {
+      "claim_id": "d112f276-79fc-4951-a951-dda6acfe4d0b",
+      "result_id": "cb148a66-9589-4916-9c48-e83f1722a7ee"
+    },
+    {
+      "claim_id": "3ffd6b7b-4db8-4321-9220-aad059ee63fd",
+      "result_id": "cb148a66-9589-4916-9c48-e83f1722a7ee"
+    },
+    {
+      "claim_id": "ad7a1717-081f-4639-931f-fff527c72085",
+      "result_id": "cb148a66-9589-4916-9c48-e83f1722a7ee"
+    },
+    {
+      "claim_id": "6325b849-4471-41da-9c5b-fd3d0aabb5a5",
+      "result_id": "cb148a66-9589-4916-9c48-e83f1722a7ee"
+    },
+    {
+      "claim_id": "01ddba6a-bdf6-41ae-ba09-ea86ebd0fb0e",
+      "result_id": "cb148a66-9589-4916-9c48-e83f1722a7ee"
+    },
+    {
+      "claim_id": "40fe5e71-861b-467c-8c22-e60d5d0779d2",
+      "result_id": "cb148a66-9589-4916-9c48-e83f1722a7ee"
+    },
+    {
+      "claim_id": "fd0c2da2-1dc8-4c54-8f4a-074c48d35c29",
+      "result_id": "cb148a66-9589-4916-9c48-e83f1722a7ee"
+    },
+    {
+      "claim_id": "c02654fc-bd23-48ec-b504-ec5543e1bb7c",
+      "result_id": "cb148a66-9589-4916-9c48-e83f1722a7ee"
+    },
+    {
+      "claim_id": "dd8488fa-12f9-40be-ba7a-77b68440010e",
+      "result_id": "143ddc8f-afa6-4a0b-ba03-2672e8416a8e"
+    },
+    {
+      "claim_id": "d4e790d3-fbd7-4b9f-b341-8ea03fb8f698",
+      "result_id": "143ddc8f-afa6-4a0b-ba03-2672e8416a8e"
+    },
+    {
+      "claim_id": "9abe1bf1-c80b-4011-a2bd-77d23cc87955",
+      "result_id": "143ddc8f-afa6-4a0b-ba03-2672e8416a8e"
+    },
+    {
+      "claim_id": "3d24e6fe-9354-4b27-a3f3-8e0758347fc7",
+      "result_id": "143ddc8f-afa6-4a0b-ba03-2672e8416a8e"
+    },
+    {
+      "claim_id": "e1c1962e-4b3c-4bb2-8c37-c1102d868a38",
+      "result_id": "143ddc8f-afa6-4a0b-ba03-2672e8416a8e"
+    },
+    {
+      "claim_id": "63a5dcfc-5289-4995-9c3f-56c5e3309ed0",
+      "result_id": "67ec2f25-516f-4d72-9c0e-1c66e26c2a7e"
+    },
+    {
+      "claim_id": "f00898ce-f358-448e-949e-e8a8e0682490",
+      "result_id": "67ec2f25-516f-4d72-9c0e-1c66e26c2a7e"
+    },
+    {
+      "claim_id": "f46b0306-8118-452c-b1e4-b439caee0a9e",
+      "result_id": "042b80cd-6b45-469c-b6aa-a955824e2e56"
+    },
+    {
+      "claim_id": "b207fd1b-3aa1-4490-96c6-605caf10218e",
+      "result_id": "042b80cd-6b45-469c-b6aa-a955824e2e56"
+    },
+    {
+      "claim_id": "8dc8adcb-f62b-4f75-ae7a-8a4ba361541c",
+      "result_id": "042b80cd-6b45-469c-b6aa-a955824e2e56"
+    },
+    {
+      "claim_id": "4a605f7f-2966-4381-9a3f-9b93b1669ead",
+      "result_id": "042b80cd-6b45-469c-b6aa-a955824e2e56"
+    },
+    {
+      "claim_id": "b410ad18-dc24-4bb9-9fe6-c86da3f0a0b0",
+      "result_id": "042b80cd-6b45-469c-b6aa-a955824e2e56"
+    },
+    {
+      "claim_id": "fcd5a915-308a-44af-87ee-eef3291e613e",
+      "result_id": "042b80cd-6b45-469c-b6aa-a955824e2e56"
+    },
+    {
+      "claim_id": "cd794c45-3723-4f0b-a95d-4b8b7996c60c",
+      "result_id": "042b80cd-6b45-469c-b6aa-a955824e2e56"
+    },
+    {
+      "claim_id": "1f77c22b-dc71-4639-a5ce-fc5627e7c739",
+      "result_id": "31c6c191-c173-400a-8e5d-856f39d57c26"
+    },
+    {
+      "claim_id": "17bdfa56-2996-4288-a5d4-c82080c9d11f",
+      "result_id": "31c6c191-c173-400a-8e5d-856f39d57c26"
+    },
+    {
+      "claim_id": "4a57beff-497d-4f7d-b9a1-49c4e5d80185",
+      "result_id": "31c6c191-c173-400a-8e5d-856f39d57c26"
+    },
+    {
+      "claim_id": "29953c9f-8ae5-4055-afdb-d4805f3a6bc1",
+      "result_id": "7e5649e4-7930-4e7a-b5c7-9a2434a3c527"
+    },
+    {
+      "claim_id": "4464ab4f-803e-4ad9-b893-dfcb05cb4812",
+      "result_id": "7e5649e4-7930-4e7a-b5c7-9a2434a3c527"
+    },
+    {
+      "claim_id": "d9eab249-aec5-4dad-97f8-a8fcc5c04142",
+      "result_id": "7e5649e4-7930-4e7a-b5c7-9a2434a3c527"
+    },
+    {
+      "claim_id": "9d4e679d-db40-43f9-8deb-af40e44f64dd",
+      "result_id": "bae9c9cd-3e15-4c4d-8c72-11c4273aef1c"
+    },
+    {
+      "claim_id": "4e59283a-e6a0-4228-99a2-1035cd72d123",
+      "result_id": "bae9c9cd-3e15-4c4d-8c72-11c4273aef1c"
+    },
+    {
+      "claim_id": "27eb2654-e2ac-4199-b7e4-2149d3c91ce1",
+      "result_id": "bae9c9cd-3e15-4c4d-8c72-11c4273aef1c"
+    },
+    {
+      "claim_id": "55db81b4-8955-485e-b287-31153bd3a600",
+      "result_id": "bae9c9cd-3e15-4c4d-8c72-11c4273aef1c"
+    },
+    {
+      "claim_id": "57c9bbd5-1865-4740-8955-ad438df7c502",
+      "result_id": "bae9c9cd-3e15-4c4d-8c72-11c4273aef1c"
+    },
+    {
+      "claim_id": "fe7fc21f-a01c-4b8c-ac9e-2b0007967133",
+      "result_id": "a7de566a-c754-4b61-a7cf-d12955038679"
+    },
+    {
+      "claim_id": "bcccf0c4-f924-4d34-9967-bca6ba960cd3",
+      "result_id": "a7de566a-c754-4b61-a7cf-d12955038679"
+    },
+    {
+      "claim_id": "a43ab7d5-0efc-4247-aee2-ac68b572c3e2",
+      "result_id": "e5956b32-63b0-4028-b518-9c242b547755"
+    },
+    {
+      "claim_id": "738d4c91-633a-465c-89c3-edfd8ce265d2",
+      "result_id": "e5956b32-63b0-4028-b518-9c242b547755"
+    },
+    {
+      "claim_id": "439693c4-c1aa-429f-8ff2-fc070e613ee6",
+      "result_id": "e5956b32-63b0-4028-b518-9c242b547755"
+    },
+    {
+      "claim_id": "adafdfc4-1743-45d9-b2ff-742dc2d7de00",
+      "result_id": "e5956b32-63b0-4028-b518-9c242b547755"
+    },
+    {
+      "claim_id": "063ec408-0f4a-405e-baf0-524e6ba467a0",
+      "result_id": "a5d75c50-c33f-41b0-872a-b9ab53f4c68e"
+    },
+    {
+      "claim_id": "9c9bd7a0-cf74-4122-aed4-995f4cfacc6f",
+      "result_id": "a5d75c50-c33f-41b0-872a-b9ab53f4c68e"
+    },
+    {
+      "claim_id": "c2677de6-b1de-4844-8ac1-a8751f7bcc3e",
+      "result_id": "a5d75c50-c33f-41b0-872a-b9ab53f4c68e"
+    },
+    {
+      "claim_id": "783737b7-6d9d-4fd8-ba57-8f8fa8f2be2d",
+      "result_id": "a5d75c50-c33f-41b0-872a-b9ab53f4c68e"
+    },
+    {
+      "claim_id": "8c6a8ee7-bdf9-46e7-9156-6a2e9d5ac9fb",
+      "result_id": "7f952839-f04c-4da8-8b1f-604df1fa2d69"
+    },
+    {
+      "claim_id": "ef7aed65-ca54-41bb-b8a5-b0eecff15299",
+      "result_id": "7f952839-f04c-4da8-8b1f-604df1fa2d69"
+    },
+    {
+      "claim_id": "0811f679-7ef4-4274-a694-9e41a42f7329",
+      "result_id": "7f952839-f04c-4da8-8b1f-604df1fa2d69"
+    },
+    {
+      "claim_id": "25358ef2-bb21-4b84-9ead-dc87d62ebdbe",
+      "result_id": "7f952839-f04c-4da8-8b1f-604df1fa2d69"
+    },
+    {
+      "claim_id": "cf96050b-20f6-414d-b97b-799c507ab150",
+      "result_id": "7f952839-f04c-4da8-8b1f-604df1fa2d69"
+    },
+    {
+      "claim_id": "43b2f8fd-c5e7-463e-945c-645d0f5c8143",
+      "result_id": "5c412a6d-e1a6-4c82-b581-b009e51b91fd"
+    },
+    {
+      "claim_id": "918c46d6-6d67-49cb-91b0-5cd74c5ade1a",
+      "result_id": "5c412a6d-e1a6-4c82-b581-b009e51b91fd"
+    },
+    {
+      "claim_id": "d873d2b6-d223-41ea-9534-8427f03274f8",
+      "result_id": "c8e81cc6-ed8f-450c-9b5a-ce5689bbf668"
+    },
+    {
+      "claim_id": "3da46831-a0bd-48d4-8813-db259136222c",
+      "result_id": "c8e81cc6-ed8f-450c-9b5a-ce5689bbf668"
+    },
+    {
+      "claim_id": "ccc1fd71-4365-45ac-a15e-e184ee71668c",
+      "result_id": "1fd58da9-c3f6-4e7f-97c9-9a91cb0552be"
+    },
+    {
+      "claim_id": "313e1219-3557-49e9-a62c-b3cf9dd198ea",
+      "result_id": "1fd58da9-c3f6-4e7f-97c9-9a91cb0552be"
+    },
+    {
+      "claim_id": "8ce12955-4a07-4daf-acc9-be86a9453109",
+      "result_id": "1fd58da9-c3f6-4e7f-97c9-9a91cb0552be"
+    },
+    {
+      "claim_id": "15748afa-aea9-4801-8aef-5a9b113f7e54",
+      "result_id": "1fd58da9-c3f6-4e7f-97c9-9a91cb0552be"
+    },
+    {
+      "claim_id": "8566e201-4806-4872-acbe-42e664f7f49f",
+      "result_id": "1fd58da9-c3f6-4e7f-97c9-9a91cb0552be"
+    },
+    {
+      "claim_id": "75f239f6-964d-434d-a9f1-d7b97e0c40a0",
+      "result_id": "1fd58da9-c3f6-4e7f-97c9-9a91cb0552be"
+    },
+    {
+      "claim_id": "abf2b33c-45b6-4b8d-b6d3-fb28607bc4a4",
+      "result_id": "dd56858a-c905-4f02-8a8c-8e61eed9dfd6"
+    }
+  ],
+  "comparisons": []
+}

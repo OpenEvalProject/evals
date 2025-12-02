@@ -1,0 +1,677 @@
+[
+  {
+    "claim_id": "C1",
+    "claim": "Multiscale Graph Correlation (MGC) is a dependence test that juxtaposes disparate data science techniques, including k-nearest neighbors, kernel methods, and multiscale analysis.",
+    "claim_type": "EXPLICIT",
+    "source": "Our approach, 'Multiscale Graph Correlation' (MGC), is a dependence test that juxtaposes disparate data science techniques, including k-nearest neighbors, kernel methods, and multiscale analysis.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated directly in the abstract as a description of the method.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C2",
+    "claim": "Other methods may require double or triple the number of samples to achieve the same statistical power as MGC in a benchmark suite including high-dimensional and nonlinear relationships, with dimensionality ranging from 1 to 1000.",
+    "claim_type": "EXPLICIT",
+    "source": "Other methods may require double or triple the number of samples to achieve the same statistical power as MGC in a benchmark suite including high-dimensional and nonlinear relationships, with dimensionality ranging from 1 to 1000.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This claim is supported by simulation results presented in the manuscript, including Table 1 and Figure 2.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C3",
+    "claim": "MGC uniquely characterizes the latent geometry underlying the relationship, while maintaining computational efficiency.",
+    "claim_type": "EXPLICIT",
+    "source": "Moreover, MGC uniquely characterizes the latent geometry underlying the relationship, while maintaining computational efficiency.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by the MGC-Map analysis shown in Figure 3 and the computational complexity analysis.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C4",
+    "claim": "In real data, including brain imaging and cancer genetics, MGC detects the presence of a dependency and provides guidance for the next experiments to conduct.",
+    "claim_type": "EXPLICIT",
+    "source": "In real data, including brain imaging and cancer genetics, MGC detects the presence of a dependency and provides guidance for the next experiments to conduct.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is demonstrated through the brain imaging experiments (Table 2, Figure 4A-B) and cancer proteomics experiments (Figure 4C-D).",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C5",
+    "claim": "Pearson's Product-Moment Correlation was published in 1895.",
+    "claim_type": "EXPLICIT",
+    "source": "One of the first approaches for determining whether two properties are related to\u2014or statistically dependent on\u2014each other is Pearson's Product-Moment Correlation (published in 1895; Pearson, 1895).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a historical fact supported by citation.",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C6",
+    "claim": "Distance correlation test (Dcorr) was shown to be able to detect any dependency with sufficient observations, at arbitrary dimensions, and structured data under a proper distance metric.",
+    "claim_type": "EXPLICIT",
+    "source": "'Energy statistics', and in particular the distance correlation test (Dcorr), was recently shown to be able to detect any dependency with sufficient observations, at arbitrary dimensions, and structured data under a proper distance metric (Sz\u00e9kely et al., 2007; Sz\u00e9kely and Rizzo, 2009; Szekely and Rizzo, 2013; Lyons, 2013).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This claim is supported by multiple citations to prior work.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C7",
+    "claim": "The Hilbert Schmidt Independence Criterion (Hsic) has the same theoretical guarantees as distance correlation and is shown to be a kernel version of the energy statistics.",
+    "claim_type": "EXPLICIT",
+    "source": "Another set of methods, referred to a 'kernel mean embedding' approaches, including the Hilbert Schmidt Independence Criterion (Hsic) (Gretton and Gyorfi, 2010; Muandet et al., 2017), have the same theoretical guarantees, which is shown to be a kernel version of the energy statistics (Sejdinovic et al., 2013; Shen and Vogelstein, 2018).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by citations to prior theoretical work.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C8",
+    "claim": "No test performs particularly well on high-dimensional nonlinear data with typical sample sizes.",
+    "claim_type": "EXPLICIT",
+    "source": "But no test performs particularly well on high-dimensional nonlinear data with typical sample sizes, which characterizes a large fraction of real data challenges in the current big data era.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an inference based on the review of existing methods and motivates the development of MGC.",
+    "evidence_type": [
+      "INFERENCE",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C9",
+    "claim": "Existing dependency tests do not attempt to further characterize the dependency structure.",
+    "claim_type": "EXPLICIT",
+    "source": "Moreover, to our knowledge, existing dependency tests do not attempt to further characterize the dependency structure.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated as a gap in existing methods based on the authors' knowledge of the field.",
+    "evidence_type": [
+      "KNOWLEDGE",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C11",
+    "claim": "MGC is valid and universally consistent for dependence testing against all distributions of finite second moments.",
+    "claim_type": "EXPLICIT",
+    "source": "In a complementary manuscript (Shen et al., 2018), we established the theoretical properties of Mgc, proving its validity and universal consistency for dependence testing against all distributions of finite second moments.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a theoretical result proven in a companion paper.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C12",
+    "claim": "MGC achieves the highest (or close to the highest) power given 100 samples for each relationship and dimensionality in the benchmark suite.",
+    "claim_type": "EXPLICIT",
+    "source": "Figure 2 shows that Mgc achieves the highest (or close to the highest) power given 100 samples for each relationship and dimensionality.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is demonstrated by the simulation results shown in Figure 2.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C13",
+    "claim": "For monotone relationships (type 1\u20135), traditional correlation methods (Pearson, RV, Cca, Spearman, Kendall) always perform the best.",
+    "claim_type": "EXPLICIT",
+    "source": "More specifically, traditional correlation methods (Pearson, RV, Cca, Spearman, Kendall) always perform the best in monotonic simulations, distance-based methods including Mcorr, Dcorr, Mgc, Hhg and Hsic are slightly worse, while Mic and Mantel are the worst.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is based on the sample size analysis presented in Table 1.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C14",
+    "claim": "For non-monotonic relationships, Hhg and MGC require the fewest samples.",
+    "claim_type": "EXPLICIT",
+    "source": "For non-monotonic relationships, traditional correlations fail to detect the existence of dependencies, Dcorr, Mcorr, and Mic, do reasonably well, but Hhg and Mgc require the fewest samples.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is based on the sample size analysis presented in Table 1.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C15",
+    "claim": "In high-dimensional non-monotonic relationships, the second best universally consistent test (Hhg) requires nearly double as many samples as MGC.",
+    "claim_type": "EXPLICIT",
+    "source": "In the high-dimensional non-monotonic relationships that motivated this work, and are common in biomedicine, Mgc significantly outperforms other methods. The second best test that is universally consistent (Hhg) requires nearly double as many samples as Mgc, demonstrating that Mgc could half the time and cost of experiments designed to discover relationships at a given effect size.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is based on the sample size analysis presented in Table 1.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C18",
+    "claim": "For the monotonic dependencies (1-5), the optimal scale is always the largest scale, that is the global one.",
+    "claim_type": "EXPLICIT",
+    "source": "For the monotonic dependencies (1-5), the optimal scale is always the largest scale, that is the global one.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is observed from the MGC-Maps shown in Figure 3.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C19",
+    "claim": "For all non-monotonic dependencies (6-19), MGC chooses smaller scales.",
+    "claim_type": "EXPLICIT",
+    "source": "For all non-monotonic dependencies (6-19), Mgc chooses smaller scales.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is observed from the MGC-Maps shown in Figure 3.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C20",
+    "claim": "Similar dependencies have similar MGC-Maps and often similar optimal scales.",
+    "claim_type": "EXPLICIT",
+    "source": "Moreover, similar dependencies have similar Mgc-Maps and often similar optimal scales.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is demonstrated by examples in Figure 3, such as logarithmic and fourth root functions.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C21",
+    "claim": "The sample MGC-Map converges to the true MGC-Map provided by the underlying joint distribution of the data.",
+    "claim_type": "EXPLICIT",
+    "source": "Moreover, in Shen and Vogelstein, 2018, we proved that the sample Mgc-Map (which Mgc estimates) converges to the true Mgc-Map provided by the underlying joint distribution of the data.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a theoretical result proven in a companion paper.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C22",
+    "claim": "MGC does not incur large computational costs and has a similar complexity as existing methods.",
+    "claim_type": "EXPLICIT",
+    "source": "Mgc does not incur large computational costs and has a similar complexity as existing methods.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by the computational complexity analysis showing O(n\u00b2log n) time.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C26",
+    "claim": "MGC is able to yield a significant p-value (< 0.05) for the relationship between resting-state functional magnetic resonance (rs-fMRI) activity and personality, whereas all previously proposed global dependence tests under consideration (Mantel, Dcorr, Mcorr, or Hhg) fail to detect dependence at a significance level of 0.05.",
+    "claim_type": "EXPLICIT",
+    "source": "Mgc is able to yield a significant p-value (< 0.05), whereas all previously proposed global dependence tests under consideration (Mantel, Dcorr, Mcorr, or Hhg) fail to detect dependence at a significance level of 0.05.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is demonstrated by the p-values shown in Table 2 for the Activity vs Personality experiment.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C27",
+    "claim": "For brain activity versus personality, the optimal scale indicates that the dependency is strongly nonlinear.",
+    "claim_type": "EXPLICIT",
+    "source": "Moreover, the Mgc-Map provides a characterization of the dependence, for which the optimal scale indicates that the dependency is strongly nonlinear.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is inferred from the MGC-Map shown in Figure 4A.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C28",
+    "claim": "MGC is able to ascertain a dependency between the whole brain network and the subject's creativity.",
+    "claim_type": "EXPLICIT",
+    "source": "Second, we investigated the relationship between diffusion MRI derived connectivity and creativity (Jung et al., 2009). The second row of Table 2 shows that Mgc is able to ascertain a dependency between the whole brain network and the subject's creativity.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is demonstrated by the p-values shown in Table 2 for the Connectivity vs Creativity experiment.",
+    "evidence_type": [
+      "DATA",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C29",
+    "claim": "For brain connectivity versus creativity, the MGC-Map closely resembles a linear relationship where the optimal scale is global.",
+    "claim_type": "EXPLICIT",
+    "source": "The Mgc-Map in Figure 4B closely resembles a linear relationship where the optimal scale is global.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is observed from the MGC-Map shown in Figure 4B.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C30",
+    "claim": "MGC achieves a false positive rate of 5% when using a significance level of 0.05 on brain activity data.",
+    "claim_type": "EXPLICIT",
+    "source": "In a separate experiment, we assessed the frequency with which Mgc obtained false positive results using brain activity data, based on experiments from Eklund et al. (2012); Eklund et al. (2016). Appendix 1\u2014figure 1 shows that Mgc achieves a false positive rate of 5% when using a significance level of 0.05, implying that it correctly controls for false positives, unlike typical parametric methods on these data.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is demonstrated by the false positive rate analysis referenced in the text.",
+    "evidence_type": [
+      "DATA",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C31",
+    "claim": "MGC identified neurogranin as a protein that exhibits a strong dependency specifically with pancreatic cancer.",
+    "claim_type": "EXPLICIT",
+    "source": "Figure 4C shows the p-value of each peptide assigned by Mgc, which reveals one particular protein, neurogranin, that exhibits a strong dependency specifically with pancreatic cancer.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is demonstrated by the p-value analysis shown in Figure 4C.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C32",
+    "claim": "Neurogranin is a potentially valuable biomarker for pancreatic cancer because it is exclusively expressed in brain tissue among normal tissues and has not been linked with any other cancer type.",
+    "claim_type": "EXPLICIT",
+    "source": "Subsequent literature searches reveal that neurogranin is a potentially valuable biomarker for pancreatic cancer because it is exclusively expressed in brain tissue among normal tissues and has not been linked with any other cancer type (Yang et al., 2015; Willemse et al., 2018).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by citations to prior literature.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C33",
+    "claim": "The peptide selected by MGC (neurogranin) works better than any other subset of the peptides selected by Hsic or Hhg in k-nearest-neighbor classification, in terms of both fewer false positives and negatives.",
+    "claim_type": "EXPLICIT",
+    "source": "Figure 4D shows that the peptide selected by Mgc (neurogranin) works better than any other subset of the peptides selected by Hsic or Hhg, in terms of both fewer false positives and negatives.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is demonstrated by the classification results shown in Figure 4D.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C34",
+    "claim": "Dcorr, Mcorr, Hsic, and Hhg are all consistent against any joint distribution of finite second moments and finite dimension.",
+    "claim_type": "EXPLICIT",
+    "source": "Under the regularity condition that the data distribution has finite second moment, the first four tests are universally consistent, whereas the other tests are not.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated based on theoretical properties of these tests.",
+    "evidence_type": [
+      "KNOWLEDGE",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C35",
+    "claim": "The benchmark suite includes 20 relationships, including different polynomial (linear, quadratic, cubic), trigonometric (sinusoidal, circular, ellipsoidal, spiral), geometric (square, diamond, W-shape), and other functions.",
+    "claim_type": "EXPLICIT",
+    "source": "We generate an extensive benchmark suite of 20 relationships, including different polynomial (linear, quadratic, cubic), trigonometric (sinusoidal, circular, ellipsoidal, spiral), geometric (square, diamond, W-shape), and other functions.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the simulation setup used for evaluation.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C36",
+    "claim": "The benchmark suite includes and extends the simulated settings from previous dependence testing work.",
+    "claim_type": "EXPLICIT",
+    "source": "This suite includes and extends the simulated settings from previous dependence testing work (Sz\u00e9kely et al., 2007; Simon and Tibshirani, 2012; Gorfine et al., 2012; Heller et al., 2013; Szekely and Rizzo, 2013).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated with citations to prior work.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C37",
+    "claim": "MGC can be thought of as a regularized or sparsified variant of distance or kernel methods.",
+    "claim_type": "EXPLICIT",
+    "source": "First, Mgc can be thought of as a regularized or sparsified variant of distance or kernel methods.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an interpretation of the method provided by the authors.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C39",
+    "claim": "Deep learning can be thought of as metric learning.",
+    "claim_type": "EXPLICIT",
+    "source": "In particular, deep learning can be thought of as metric learning (Giryes et al., 2015), and generative adversarial networks (Goodfellow et al., 2014) are implicitly testing for equality, which is closely related to dependence (Sutherland et al., 2016).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated with citations to prior work.",
+    "evidence_type": [
+      "CITATION",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C40",
+    "claim": "MGC can be adapted for goodness-of-fit, analysis of variance, conditional dependence, and feature selection.",
+    "claim_type": "EXPLICIT",
+    "source": "Third, energy statistics provide state of the art approaches to other problems, including goodness-of-fit (Sz\u00e9kely and Rizzo, 2005), analysis of variance (Rizzo and Sz\u00e9kely, 2010), conditional dependence (Sz\u00e9kely and Rizzo, 2014; Wang et al., 2015), and feature selection (Li et al., 2012; Zhong and Zhu, 2015), so Mgc can be adapted for them as well.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated with citations to prior work on energy statistics.",
+    "evidence_type": [
+      "CITATION",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C41",
+    "claim": "MGC can implement a two-sample (or generally the K-sample) test.",
+    "claim_type": "EXPLICIT",
+    "source": "Indeed, Mgc can also implement a two-sample (or generally the K-sample) test (Szekely and Rizzo, 2004; Heller et al., 2016; Shen and Vogelstein, 2018).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated with citations to prior work.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C42",
+    "claim": "The default metric choice of MGC is always the Euclidean distance.",
+    "claim_type": "EXPLICIT",
+    "source": "The default metric choice of Mgc in this paper is always the Euclidean distance, but other metric choices may be more appropriate in different fields, and using the strong negative type metric as specified in Lyons (2013) guarantees consistency.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the default implementation choice.",
+    "evidence_type": [
+      "DATA",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C43",
+    "claim": "Using the strong negative type metric guarantees consistency for MGC.",
+    "claim_type": "EXPLICIT",
+    "source": "The default metric choice of Mgc in this paper is always the Euclidean distance, but other metric choices may be more appropriate in different fields, and using the strong negative type metric as specified in Lyons (2013) guarantees consistency.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated with citation to theoretical work.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C44",
+    "claim": "MGC is the first dependence test to take a step towards valid post-selection inference.",
+    "claim_type": "EXPLICIT",
+    "source": "To our knowledge, Mgc is the first dependence test to take a step towards valid post-selection inference.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated as a claim about the novelty of the method.",
+    "evidence_type": [
+      "KNOWLEDGE",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C45",
+    "claim": "MGC currently requires space and time that are quadratic with respect to the number of samples.",
+    "claim_type": "EXPLICIT",
+    "source": "Mgc currently requires space and time that are quadratic with respect to the number of samples, which can be costly for very large data.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated as a limitation of the current implementation.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C46",
+    "claim": "Source code for MGC is available in MATLAB, R, and Python from https://mgc.neurodata.io/.",
+    "claim_type": "EXPLICIT",
+    "source": "Source code is available in MATLAB, R, and Python from https://mgc.neurodata.io/ (Bridgeford et al., 2018; experiments archived at https://github.com/elifesciences-publications/MGC-paper).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This provides information about code availability.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C54",
+    "claim": "Mcorr always has zero mean under independence.",
+    "claim_type": "EXPLICIT",
+    "source": "Thus it enjoys the same theoretical consistency as Dcorr and always has zero mean under independence.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated as a property of Mcorr.",
+    "evidence_type": [
+      "KNOWLEDGE",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C55",
+    "claim": "In the linear relationship between cloud density and grass wetness, when a pair of observations are close to each other in cloud density, they also tend to be close to each other in grass wetness.",
+    "claim_type": "EXPLICIT",
+    "source": "Under the linear relationship (top panels), when a pair of observations are close to each other in cloud density, they also tend to be close to each other in grass wetness (for example, observations 1 and 2 highlighted in black in Figure 1A, and distances between them in Figure 1B).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is illustrated in Figure 1 and described in the text.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C56",
+    "claim": "In the linear relationship between cloud density and grass wetness, when a pair of observations are far from each other in cloud density, they also tend to be far from each other in grass wetness.",
+    "claim_type": "EXPLICIT",
+    "source": "Similarly, when a pair of observations are far from each other in cloud density, they also tend to be far from each other in grass wetness (see for example, distances between observations 2 and 3).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is illustrated in Figure 1 and described in the text.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C57",
+    "claim": "In the nonlinear (spiral) relationship between cloud density and grass wetness, when a pair of observations are close to each other in cloud density, they also tend to be close to each other in grass wetness.",
+    "claim_type": "EXPLICIT",
+    "source": "Here, when a pair of observations are close to each other in cloud density, they also tend to be close to each other in grass wetness (see points 1 and 2 again).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is illustrated in Figure 1 and described in the text.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C58",
+    "claim": "In the nonlinear (spiral) relationship between cloud density and grass wetness, the same is not true for large distances.",
+    "claim_type": "EXPLICIT",
+    "source": "However, the same is not true for large distances (see points 2 and 3).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is illustrated in Figure 1 and described in the text.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C59",
+    "claim": "In the linear relationship, the distance between every pair of points is informative with respect to the relationship.",
+    "claim_type": "EXPLICIT",
+    "source": "Thus, in the linear relationship, the distance between every pair of points is informative with respect to the relationship, while under the nonlinear relationship, only a subset of the distances are.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is inferred from the analysis of the linear and spiral relationships in Figure 1.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C60",
+    "claim": "Under the nonlinear relationship, only a subset of the distances are informative.",
+    "claim_type": "EXPLICIT",
+    "source": "Thus, in the linear relationship, the distance between every pair of points is informative with respect to the relationship, while under the nonlinear relationship, only a subset of the distances are.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is inferred from the analysis of the linear and spiral relationships in Figure 1.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C61",
+    "claim": "For the linear relationship, the global scale is optimal, which is the scale that MGC selects and results in a p-value identical to Dcorr.",
+    "claim_type": "EXPLICIT",
+    "source": "For the linear relationship, the global scale is optimal, which is the scale that Mgc selects and results in a p-value identical to Dcorr.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is demonstrated in Figure 1C for the linear relationship.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C63",
+    "claim": "MGC uniquely detects dependence and characterizes the geometry in both linear and nonlinear relationships.",
+    "claim_type": "EXPLICIT",
+    "source": "Thus, Mgc uniquely detects dependence and characterizes the geometry in both relationships.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is concluded from the analysis of Figure 1.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C64",
+    "claim": "Spiral relationships are prevalent in nature and mathematics (for example, shells, hurricanes, and galaxies).",
+    "claim_type": "EXPLICIT",
+    "source": "Although the relationship between clouds and grass is unlikely to be spiral, spiral relationships are prevalent in nature and mathematics (for example, shells, hurricanes, and galaxies), and are canonical in evaluations of manifold learning techniques (Lee and Verleysen, 2007), thereby motivating its use here.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated as general knowledge with citation.",
+    "evidence_type": [
+      "KNOWLEDGE",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C65",
+    "claim": "Spiral relationships are canonical in evaluations of manifold learning techniques.",
+    "claim_type": "EXPLICIT",
+    "source": "Although the relationship between clouds and grass is unlikely to be spiral, spiral relationships are prevalent in nature and mathematics (for example, shells, hurricanes, and galaxies), and are canonical in evaluations of manifold learning techniques (Lee and Verleysen, 2007), thereby motivating its use here.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated with citation to prior work.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  }
+]

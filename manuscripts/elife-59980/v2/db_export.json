@@ -1,0 +1,1637 @@
+{
+  "submission": {
+    "id": "b765c39e-4e12-4858-821d-ad4281b1fc16",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T21:11:18.747455Z",
+    "updated_at": "2025-12-02T21:11:18.747455Z"
+  },
+  "content": [
+    {
+      "id": "2407d386-f917-4a36-9fe2-c4c66de289fa",
+      "submission_id": "b765c39e-4e12-4858-821d-ad4281b1fc16",
+      "content_type": "manuscript",
+      "content_text": "# Integration of genomics and transcriptomics predicts diabetic retinopathy susceptibility genes\n\n## Authors\n\n- Andrew D Skol<sup>1</sup>\n- Segun C Jung<sup>2</sup>\n- Ana Marija Sokovic<sup>3</sup>\n- Siquan Chen<sup>4</sup>\n- Sarah Fazal<sup>4</sup>\n- Olukayode Sosina<sup>5</sup>\n- Poulami P Borkar<sup>3</sup>\n- Amy Lin<sup>3</sup>\n- Maria Sverdlov<sup>3</sup>\n- Dingcai Cao<sup>3</sup>\n- Anand Swaroop<sup>6</sup> ([ORCID: 0000-0002-1975-1141](https://orcid.org/0000-0002-1975-1141))\n- Ionut Bebu<sup>7</sup>\n- Barbara E Stranger<sup>8</sup> \u2020\n- Michael A Grassi<sup>3</sup> ([ORCID: 0000-0002-8467-3223](https://orcid.org/0000-0002-8467-3223)) \u2020\n\n### Affiliations\n\n1. Department of Pathology and Laboratory Medicine, Ann and Robert H. Lurie Children's Hospital of Chicago Chicago United States\n2. Research and Development, NeoGenomics Laboratories Aliso Viejo United States\n3. University of Illinois at Chicago Chicago United States\n4. Cellular Screening Center, Office of Shared Research Facilities, The University of Chicago Chicago United States\n5. Department of Biostatistics, Johns Hopkins University Baltimore United States\n6. National Eye Institute, National Institutes of Health (NIH) Bethesda United States\n7. The George Washington University, Biostatistics Center Rockville United States\n8. Department of Pharmacology, Center for Genetic Medicine, Northwestern University Feinberg School of Medicine Chicago United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nWe determined differential gene expression in response to high glucose in lymphoblastoid cell lines derived from matched individuals with type 1 diabetes with and without retinopathy. Those genes exhibiting the largest difference in glucose response were assessed for association with diabetic retinopathy in a genome-wide association study meta-analysis. Expression quantitative trait loci (eQTLs) of the glucose response genes were tested for association with diabetic retinopathy. We detected an enrichment of the eQTLs from the glucose response genes among small association p-values and identified folliculin (FLCN) as a susceptibility gene for diabetic retinopathy. Expression of FLCN in response to glucose was greater in individuals with diabetic retinopathy. Independent cohorts of individuals with diabetes revealed an association of FLCN eQTLs with diabetic retinopathy. Mendelian randomization confirmed a direct positive effect of increased FLCN expression on retinopathy. Integrating genetic association with gene expression implicated FLCN as a disease gene for diabetic retinopathy.\n\n## Introduction\n\nAlmost all individuals with diabetes will develop some form of diabetic retinopathy over time (National Diabetes Fact Sheet, 2011). In the United States diabetic retinopathy is the most frequent cause of blindness among working age individuals (Centers for Disease Control and Prevention, 2018). Interindividual variation contributes significantly to susceptibility of the severe manifestations of diabetic retinopathy, which results in vision impairment. Epidemiological studies suggest that phenotypic variation is influenced by two primary risk factors: the duration of diabetes and an individual\u2019s level of glycemia (HbA1c) (DCCT/EDIC Research Group et al., 2017). However, these two factors do not completely explain an individual\u2019s risk for developing diabetic retinopathy. For instance, a common anecdotal clinical experience is the comparison of patients with similar durations of diabetes and similar levels of glycemic control who have tremendously disparate clinical outcomes for diabetic retinopathy. Moreover, some individuals with diabetes develop very minimal retinopathy (Sun et al., 2011), whereas others clearly seem to have a predisposition for severe retinopathy (Gao et al., 2014).\n\nTogether, these observations in conjunction with the high concordance of diabetic retinopathy between family members support an underlying genetic mechanism. Familial aggregation and twin studies estimate that genetic factors account for 25\u201350% of an individual\u2019s risk of developing severe diabetic retinopathy (Arar et al., 2008; Hietala et al., 2008). Unfortunately, little is known about the genetic architecture that contributes to susceptibility for diabetic retinopathy. Genetic studies suggest that it is a highly polygenic trait influenced by multiple genetic variants of small effect. Our group and others have performed genome-wide association studies to better delineate the molecular factors that predispose to diabetic retinopathy (Grassi et al., 2011; Grassi et al., 2012; Pollack et al., 2019). However, these studies have had limited success, likely due to insufficient study sample sizes and the phenotypic heterogeneity of diabetic retinopathy.\n\nNotably, like other complex disease traits including age-related macular degeneration (Fritsche et al., 2014; Fritsche et al., 2016), a majority of genetic variants nominally associated with diabetic retinopathy are located in intronic or inter-genic regions (Risch and Merikangas, 1996). Most of these variants appear to play critically important functional roles in regulating gene expression. In fact, several of the top associated SNPs identified in our meta-GWAS of diabetic retinopathy (Grassi et al., 2011) are present in DNase hypersensitivity sites and affect gene expression levels by altering the allelic chromatin state or the binding sites of transcription factors (Maurano et al., 2012).\n\nThe observation that disease-associated genetic loci often influence gene expression levels (Gamazon et al., 2018) led us to postulate that integrating gene expression with genetic association would be a powerful approach to identify susceptibility genes for diabetic retinopathy. We hypothesized that cell lines derived from individuals with diabetes with and without retinopathy could be used to uncover genetic variation that explain individual differences in the response to diabetes. Culturing two sets of cell lines under controlled, identical conditions from individuals with diabetes who did and those who did not develop retinopathy could unmask molecular differences in how these groups respond to glucose (Grassi et al., 2016; Grassi et al., 2014). We presumed that a portion of those differences would have a genetic basis.\n\nIn this article, we identify genes whose expression responds differently to glucose in cells derived from T1D individuals with and without diabetic retinopathy. We show that one of these genes, folliculin (FLCN), is causally implicated in diabetic retinopathy based on results from genetic association testing and Mendelian randomization.\n\n## Results\n\n### Individuals with retinopathy (PDR) show differences in diabetes duration and level of glycemia compared to individuals without retinopathy (nDR)\n\nMatched DCCT/EDIC participants (for age, sex, treatment group, cohort, and diabetes duration) from whom the gene expression profiling was obtained are detailed in Supplementary file 1a. All individuals had T1D\u00a0and were Caucasian, and 60% were female. As anticipated, notable differences were observed between individuals with and without retinopathy (PDR vs. nDR) for mean duration of diabetes (53 \u00b1\u00a043.4 months vs. 27 \u00b1\u00a013.4 months). as it was also not possible to completely match participant pairs for this covariate or for level of glycemia (HbA1c).mean HbA1c (9.71 \u00b1\u00a02.37 vs. 7.62 \u00b1\u00a01.07) given their significant impact on retinopathy.\n\n### Interindividual variation is evident in the transcriptional response to glucose\n\nWe quantified gene expression levels from lymphoblastoid cell lines\u00a0(LCLs) of all study individuals (nDM, PDR, and\u00a0nDR) in both standard glucose (SG) and high glucose (HG) conditions\u00a0and determined the genome-wide transcriptional response to glucose for each individual (RGall). We observed that 22% of 11,548 examined genes demonstrated a differential response in expression between the two conditions (true positive rate; \u03c01\u00a0=\u00a00.22) (Storey and Tibshirani, 2003;\u00a0Figure 1\u2014figure supplement 1), with 299 of those at an FDR\u00a0<\u00a00.05 (Figure 1a), supporting a significant impact of glucose on the LCL transcriptome. We confirmed that interindividual transcriptome response to HG\u00a0is greater than the intraindividual response (p=2\u00d710\u221216) (Figure 1\u2014figure supplement 2, Figure 1\u2014figure supplement 3, Figure 1\u2014figure supplement 4). Interestingly, TXNIP, the most highly glucose-inducible gene in multiple cell types (Devi et al., 2017; Chen et al., 2016), exhibited the largest (log2(FC) difference\u00a0=\u00a00.2) and most significant (p=3.2\u00d710\u221212, FDR\u00a0=\u00a05.1\u00d710\u22128) transcriptional response to glucose. Pathway analysis using gene set enrichment analysis (GSEA) revealed dramatic upregulation of genes involved in structural changes to DNA (DNA packaging, FDR\u00a0<\u00a00.0001) and in genes such as transcription factors that modulate the cellular response to environmental stimuli (protein DNA complex, FDR\u00a0<\u00a00.0001) (Figure 1b). Conversely, genes that modulate the cellular response to infection were considerably downregulated (type 1 interferon, FDR\u00a0<\u00a00.0001; gamma interferon, FDR\u00a0<\u00a00.0001; leukocyte chemotaxis genes, FDR\u00a0<\u00a00.0001) potentially supporting earlier work that chronic glucose exposure depresses cellular immune responsiveness (Delamaire et al., 1997; Al-Mashat et al., 2006).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/59980/elife-59980-fig1-v2.jpg)\n\n**Figure 1.:** (a) Volcano plot summarizing transcriptional response to glucose for all 22 individuals (RGAll consisting of nDM, nDR, and PDR individuals). Each point represents a single gene. Red indicates genes showing a differential response (FDR\u00a0<\u00a00.05; log10\u00a0>1.3 represented by the dotted line) and an absolute log2FC\u00a0>0.17. Adj p-value is false discovery rate (FDR). FC indicates expression fold change with positive values indicating higher expression in the high glucose condition relative to the standard condition. Source and code files for this plot are available in Figure 1\u2014source data 1 and Source code 1. An additional source file can be found in Gene Expression Omnibus (GEO) at https://www.ncbi.nlm.nih.gov/geo/ under accession code GSE146615. (b) QQ\u00a0(quantile-quantile)\u00a0plot plot summarizing GSEA of transcriptional response to glucose in all 22 individuals. Pathways are classified as upregulated (red) or downregulated (blue) in response to glucose. Only significant GO categories (FDR\u00a0<\u00a00.1%) are labeled. Red line indicates the null expectation. Source and code files for this plot are available in Figure 1\u2014source data 2, 3, 4, and 5 and Source code 2.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/59980/elife-59980-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** Plotted are limma-derived differential expression p-values for 11,548 genes. The dashed line represents the expected null distribution. Source and code files for this plot are available in Figure 1\u2014source data 6 and Source code 3.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/59980/elife-59980-fig1-figsupp2-v2.jpg)\n\n**Figure 1\u2014figure supplement 2.:** Intraindividual variation in the transcriptome was quantified among biological replicates and compared to interindividual variation, for individual genes (2,3), and comparing the two distributions of all genes (3,4). Source and code files for these plots are available in Figure 1\u2014source data 7 and 8, and Source code 4.\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/59980/elife-59980-fig1-figsupp3-v2.jpg)\n\n![Figure 1\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/59980/elife-59980-fig1-figsupp4-v2.jpg)\n\n### Individuals with diabetic retinopathy exhibit a differential transcriptional response to glucose\n\nWe observed differences in the transcriptional response to glucose between matched individuals with and without diabetic retinopathy (RGpdr\u2013ndr). Principal component analysis (PCA) demonstrated that the observed interindividual variance is dominated by randomized DCCT treatment (intensive vs. conventional) group effects based on retinopathy status (p=3\u00d710\u22126) (Figure 2\u2014figure supplement 1) and is not confounded by LCL growth rate (p>0.05) or EBV-(Epstein Barr virus) copy number (p>0.05). Using a gene-wise analysis we identified 103 genes exhibiting a differential glucose response between individuals with and without retinopathy (p<0.01) (Figure 2; Supplementary file 1b). Some of these genes and pathways have previously been shown to play a role in diabetic retinopathy. One of the top differential response genes was IL1B (p=0.008, log2(FC) response difference\u00a0=\u00a00.289). Expression of IL1B has been previously reported to be induced by HG\u00a0(Shanmugam et al., 2003). Additionally, the expression of IL1B is upregulated in the diabetic retina and has been implicated in the pathogenesis of diabetic retinopathy (Liu et al., 2012). Likewise, the top GSEA pathway has also previously been implicated in the pathogenesis of diabetic retinopathy. We identified PDGF signaling as the most significant differential response pathway (FDR\u00a0=\u00a00.012) (Figure 2\u2014figure supplement 2). Elevated levels of PDGF are present in the vitreous of individuals with proliferative diabetic retinopathy\u00a0(PDR) compared to individuals without diabetes (Freyberger et al., 2000). As PDGF is required for normal blood vessel maintenance, it is thought to contribute to the pericyte loss, microaneurysms, and acellular capillaries that are key features of the diabetic retina (Hammes et al., 2002). Interestingly, despite our model utilizing lymphoblastoid cells, it was able to reveal the upregulation of PDGF which is primarily a vascular factor that also plays a key role in neuronal tissue.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/59980/elife-59980-fig2-v2.jpg)\n\n**Figure 2.:** Volcano plot summarizing genes exhibiting a differential response to glucose between individuals with diabetes with and without retinopathy (RGPDR\u2013nDR). The difference in FC\u00a0between groups is represented on the X-axis and p-value of this difference on the Y-axis. Red indicates the 103 genes showing the most differential expression between individuals with and without retinopathy (p<0.01). FC, fold change. Source and code files for this plot are available in Figure 2\u2014source data 1 and Source code 5. An additional source file for this plot can be found in Gene Expression Omnibus (GEO) at https://www.ncbi.nlm.nih.gov/geo/ under accession code GSE146615.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/59980/elife-59980-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** Each point represents a single study subject; individuals with proliferative diabetic retinopathy (PDR, red, n\u00a0=\u00a08) and individuals with diabetes without retinopathy (nDR, blue, n\u00a0=\u00a07). The first coordinate (Dim.1, x-axis) is correlated with subject retinopathy status (RGpdr\u2013ndr, p=3\u00d710\u22126). Source and code files for this plot are available in Figure 2\u2014source data 2, 3, 4, and 5 and Source code 6.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/59980/elife-59980-fig2-figsupp2-v2.jpg)\n\n**Figure 2\u2014figure supplement 2.:** Normalized enrichment score (NES). Source files for this plot can be found in Gene Expression Omnibus (GEO) at https://www.ncbi.nlm.nih.gov/geo/ under accession code GSE146615.\n\n### Genetic association reveals that some genes with differential response to glucose play a role in susceptibility to diabetic retinopathy\n\nWe sought to assess whether the most significant differential response genes (RGpdr\u2013ndr) could yield novel insights into diabetic retinopathy. An overview of our approach is presented in Figure 3a. First, we selected the top 103 genes (p<0.01) that showed the largest difference in gene expression response to glucose between individuals with diabetes with and without retinopathy. We next identified all of the significant expression quantitative trait loci (eQTLs) for these genes in GTEx (version 7) (GTEx Consortium, 2015). In total, we found 7253 unique eQTL SNPs (hereafter referred to as eSNPs) in at least one of the 48 tissues investigated by GTEx. Differential response genes are more likely to harbor eSNPs, and hence be eGenes, compared to the genome-wide average (p=2.0\u00d710\u221216) (Figure 3\u2014figure supplement 1). This suggests that differential response genes are more likely to be genetically regulated and may contribute to interindividual differences in the development of diabetic retinopathy. To test if the eSNPs for the 103 differential response genes were more associated with diabetic retinopathy than expected, we evaluated the association between the 7253 differential response gene eSNPs and diabetic retinopathy using our published GWAS of diabetic retinopathy (Grassi et al., 2011). The 7253 eSNPs from the differential response genes are enriched for association with diabetic retinopathy (FDR\u00a0<\u00a00.05) (Figure 3b). To further assess the significance of this enrichment, we performed permutation testing of eSNPs from random sets of 103 genes which demonstrated that less than 1% contained the same proportion of similarly skewed GWAS p-values (Figure 3\u2014figure supplement 2). The eSNPs for differential response genes were enriched among diabetic retinopathy meta-GWAS p-values relative to all eSNPs (p=0.0012) and all SNPs (p=0.0023) (Figure 3c). Thus, some of the genes exhibiting a differential response to glucose (RGpdr\u2013ndr) are associated with the development of severe diabetic retinopathy.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/59980/elife-59980-fig3-v2.jpg)\n\n**Figure 3.:** (a) Workflow of analytical steps integrating glucose differential response genes with genetic association with diabetic retinopathy. Flow chart showing key experimental steps based on stepwise findings. (b) QQ plot revealing a skew away from the null and above the FDR 0.05 threshold suggests that expression of some of the glucose response genes may be causally related to diabetic retinopathy. 7253 GTEx eSNPs were generated from the 103 differential response genes and tested for their association with\u00a0diabetic retinopathy in a GWAS. Observed vs. expected p-values are plotted. The null hypothesis of no difference between the observed and expected p-values is represented by the red line. No influence of population structure or other design factors was observed (genomic control inflation estimate \u03bbGC = 1.005) (Devlin and Roeder, 1999). Source and code files for this plot are available in Figure 3\u2014source data 1 and Source code 7. (c) Bar plot comparing frequency of p-values\u00a0<0.05 in diabetic retinopathy GWAS of: all eSNPs, all SNPs, and eSNPs from the 103 differential response genes. An excess of GWAS p-values of\u00a0<0.05 is observed in the eSNPs from the glucose differential response genes (p=0.0012 vs. all eSNPs and p=0.0023 vs. all SNPs). The proportion of SNPs with p<0.05 in the all SNPs, all eSNPs, and 103 differential response gene eSNPs are 0.0505, 0.0499, and 0.0571, respectively. Source and code files for this plot are available in Figure 3\u2014source data 2 and Source code 8.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/59980/elife-59980-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** The proportion of eGenes is plotted to compare all 12,503 genes assessed on the microarray to the 103 glucose response genes. An eGene is defined as any gene with a GTEx eSNP (q-value\u00a0<0.05) in any tissue. GTEx (version 7). Source files are available with open access at https://www.gtexportal.org/home/datasets, and code in Source code 9.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/59980/elife-59980-fig3-figsupp2-v2.jpg)\n\n**Figure 3\u2014figure supplement 2.:** For each resampling, 103 genes were chosen at random from the genome. eSNPs for each gene were generated from GTEx (version 7) using all 48 tissues. p-Values for each eSNP were determined in our prior meta-GWAS for diabetic retinopathy (Grassi et al., 2011). The x-axis shows the proportion of eSNPs in each set with an FDR\u00a0<\u00a00.05 in the diabetic retinopathy meta-GWAS. The figure reveals a significant shift to the right (represented by the red dot) for the glucose response gene eSNPs in the meta-GWAS compared to resampled eSNPs. Source and code files for this plot are available in Figure 3\u2014source data 3, and additional source data files available at https://doi.org/10.5061/dryad.zkh18938j, and Source code 10.\n\n### FLCN is a putative diabetic retinopathy disease gene\n\nThe most significant retinopathy-associated eSNP among the set of 7253 eSNPs tested is rs11867934 (Figure 4a); FDR\u00a0<\u00a00.05; meta-GWAS p=6.7\u00d710\u22126<Bonferroni adjusted p-value of 6.9 \u00d7 10\u22126; OR\u00a0=\u00a00.86, 95%\u00a0confidence interval\u00a0(CI)\u00a0=\u00a00.71,1.00; minor allele frequency\u00a0=\u00a00.22. rs11867934 is an intergenic eSNP for FLCN in multiple biologically relevant tissues including artery and nerve. We confirmed FLCN expression in the retina of human donor eyes (Figure 4\u2014figure supplement 1). In the LCLs derived from individuals with diabetes, FLCN was upregulated in response to glucose to a greater extent in individuals with diabetic retinopathy than in individuals with diabetes without retinopathy (log2FC difference\u00a0=\u00a00.27, p=2.5\u00d710\u22123) (Figure 2, Supplementary file 1b, and Figure 4\u2014figure supplement 2). eQTLs in retina have recently been mapped (Ratnapriya et al., 2019). We determined that at least 43% of retina eQTLs are also eQTLs in GTEx LCLs. Examining the genome-wide association signal for a disease from eQTLs in aggregate can be a more powerful strategy to discern a heterogenous genetic signal than testing each of these SNPs individually. We collated all the eSNPs for FLCN in the retina. We assessed the aggregated association of FLCN eSNPs (n\u00a0=\u00a0272 eSNPs significant in the retina and 20 or more GTEx tissues) with\u00a0diabetic retinopathy in the meta-GWAS and observed an enrichment for association with\u00a0diabetic retinopathy (\u03c01 = 0.9; Figure 4b, Figure 4\u2014figure supplement 3). We then validated the FLCN association with\u00a0diabetic retinopathy in a third cohort, the UK Biobank (UKBB) (Supplementary file 1c), and found that the FLCN eSNPs were enriched for association\u00a0with diabetic retinopathy in the UKBB (\u03c01 = 0.73) (Figure 4\u2014figure supplement 4).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/59980/elife-59980-fig4-v2.jpg)\n\n**Figure 4.:** (a) Manhattan plot of the results of the meta-GWAS for diabetic retinopathy showing association signals for the eSNPs from the differential response genes to glucose for individuals with and without retinopathy (RGPDR\u2013nDR). Threshold lines represent Bonferroni correction (blue) and FDR\u00a0<\u00a00.05 (black). Association testing for diabetic retinopathy performed with 7253 eSNPs representing 103 differential response genes to glucose. Source and code files for this plot are available in Figure 4\u2014source data 1 and Source code 11. (b) Bar plot comparing the true positive rate (\u03c01), TPR, for association of diabetic retinopathy with all SNPs, all eSNPs, eSNPs from the 103 differential response genes to glucose (n\u00a0=\u00a07253), and eSNPs found in retina and\u00a0>20 GTEx tissues for folliculin (FLCN) (n\u00a0=\u00a0272). TPR is an estimate of the proportion of tests that are true under the alternative hypothesis. Plot reveals significant enrichment for glucose response gene eSNPs in general and for FLCN eSNPs (\u03c01 = 0.9) in\u00a0particular. Source and code files for this plot are available in Figure 4\u2014source data 2, 3, and 4, and Source code 12.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/59980/elife-59980-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A) FLCN (green) is evident in the ganglion cell layer (GCL), neuronal cells of the inner nuclear layer (INL), and faintly in the outer nuclear layer (ONL). (B) Colocalization of FLCN with CD31 (red), a marker of endothelial cells, confirms FLCN expression in retinal blood vessels (white arrows).\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/59980/elife-59980-fig4-figsupp2-v2.jpg)\n\n**Figure 4\u2014figure supplement 2.:** Box and whisker plot of the change in FLCN expression in lymphoblastoid cell lines between standard glucose and high glucose conditions. Pink indicates the distribution of responses for individuals with proliferative diabetic retinopathy (PDR) (log2FC\u00a0=\u00a00.08), and blue indicates the same for individuals with diabetes but no retinopathy (nDR) (log2FC\u00a0=\u00a0\u22120.19). Y-axis measures the difference in expression fold change on the log2 scale. Each individual is represented by a dot. Difference in means between PDR and nDR is 0.27, p-value 0.003. Source and code files for this plot are available in Gene Expression Omnibus (GEO) at https://www.ncbi.nlm.nih.gov/geo/ under accession code GSE146615, and Source code 13.\n\n![Figure 4\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/59980/elife-59980-fig4-figsupp3-v2.jpg)\n\n**Figure 4\u2014figure supplement 3.:** Points represent observed and expected GWAS-meta-analysis p-values for each of 272 FLCN eSNPs identified in the retina and more than 20 GTEx tissues. The red line represents the null hypothesis of no difference between the observed and expected p-values. Source and code files for this plot are available in Figure 4\u2014source data 5 and Source code 14.\n\n![Figure 4\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/59980/elife-59980-fig4-figsupp4-v2.jpg)\n\n**Figure 4\u2014figure supplement 4.:** Points represent observed and expected UKBB GWAS p-values for each of 272 FLCN eSNPs identified in the retina and more than 20 GTEx tissues. The red line represents the null hypothesis of no difference between the observed and expected p-values. Source and code files for this plot are available in Figure 4\u2014source data 6 and Source code 15.\n\nWe applied Mendelian randomization to assess whether the level of FLCN expression affects the development of diabetic retinopathy. We first imputed retinal FLCN expression in the UKBB, and then estimated the effects of the estimated FLCN expression on diabetic retinopathy using summary data-based Mendelian randomization analysis (Zhu et al., 2016) (SMR). Mendelian randomization treats the genotype as an instrumental variable. A one standard deviation (SD) increase in the predicted retinal expression of FLCN increases the risk of diabetic retinopathy by 0.15 SD (95%\u00a0CI: 0.02\u20130.29, standard error 0.07, p=0.024). Individuals with diabetes with high predicted retinal FLCN expression have increased odds of developing retinopathy (1.3 OR increase per SD increase in FLCN expression) (Chinn, 2000). We did not observe any evidence of horizontal pleiotropy (in which FLCN eSNPs are independently associated with both FLCN expression and diabetic retinopathy) confounding the analysis [HEIDI p>0.05 (p=0.2)] (Zhu et al., 2016). We detected an aggregated effect of 14 independent FLCN eQTLs (r2\u00a0<\u00a00.2) on the development of diabetic retinopathy through FLCN expression using multi-SNP Mendelian randomization (p=0.04) (Wu et al., 2018a). Together, these findings support the presence of genetic variation at the FLCN locus affecting both FLCN expression and the development of diabetic retinopathy through the expression of FLCN.\n\n## Discussion\n\nThe cellular response to elevated glucose is an increasingly important pathway to understand in light of the emerging epidemic levels of diabetes worldwide (National Diabetes Fact Sheet, 2011). Variations in the cellular response to glucose at a molecular level have not been well\u00a0characterized between cell types, and to an even lesser degree between individuals. In prior work, we characterized robust, repeatable interindividual differences in transcriptional response to glucose in LCLs of individuals with diabetic retinopathy (Grassi et al., 2016). As an\u00a0LCL\u00a0generated from each individual is genetically unique, it follows that the gene expression response to glucose between individuals should be phenotypically heterogeneous and that a portion of the interindividual variability will be genetically determined. We hypothesized that interindividual variation in the cellular response to glucose may reveal clues to the genetic basis of diabetic retinopathy, thereby providing insights into its predisposition.\n\nWe demonstrated that different individual-derived cell lines treated under identical culture conditions reveal an individual-specific transcriptional response to glucose and this signal far exceeds accompanying experimental noise. Transformation and multiple freeze/thaw passages do not homogenize the individualized response to HG-induced gene expression in LCLs. Analyzing the individual glucose-stimulated transcriptional response revealed several insights into the pathophysiology of the diabetic state and how it relates to the development of retinopathy. For instance, TXNIP was identified as the top differential response gene to glucose in all individuals (RGall). TXNIP is a key marker of oxidative stress. It is upregulated in the diabetic retina where it induces Muller cell activation (Devi et al., 2017). HG\u00a0treatment has been shown to increase TXNIP expression (Chen et al., 2016). TXNIP is a glucose sensor whose expression has been strongly associated with both hyperglycemia and diabetic complications. Specifically, the TXNIP locus was differentially methylated in the primary leukocytes of EDIC cases and controls (Chen et al., 2016). A key mechanism by which cells respond to stress is through changes in genome configuration. Conformational alterations in DNA packaging influence the accessibility of DNA for transcription. Structural changes in DNA conformation facilitate cellular adaptation and response to stimuli which can enable transcriptional changes. The GSEA showed that the cellular response to chronic glucose stress involves alterations in DNA accessibility which facilitates the gene expression response to this environmental stimulus (Smith and Workman, 2012). The transcriptional response to glucose in part manifests as diminished immune responsiveness, a well-characterized feature of diabetes (Shanmugam et al., 2003; Mowat and Baum, 1971).\n\nFurther, we considered that the genetic component of an individual\u2019s response to glucose may influence their susceptibility to diabetic complications like retinopathy. Cell lines from individuals with diabetes with and without retinopathy reveal differences in the response to glucose at a molecular level. In addition, not only were some of these differential response genes biologically relevant to diabetic retinopathy as exemplified by IL1B and PDGF, but also many had a genetic basis for their differential response. By integrating the gene expression findings with GWAS data, we implicated FLCN as a putative disease gene in diabetic retinopathy. Mendelian randomization provided evidence that genetic variation affects diabetic retinopathy through alterations in FLCN expression thereby suggesting that FLCN expression is a mediator of diabetic retinopathy. FLCN is a biologically plausible diabetic retinopathy disease gene since its expression is present in both neuronal and vascular cells of the retina. Current evidence suggests that FLCN is a negative regulator of AMPK which helps to modulate the energy sensing ability of AMPK and plays a role in responding to cellular stress (Hasumi et al., 2012). AMPK plays an important role in providing resistance to cellular stresses by regulating autophagy and cellular bioenergetics to avoid apoptosis. Loss of FLCN results in constitutive activation of AMPK. Higher levels of FLCN would suggest less cellular capacity to deal with stress (Possik et al., 2014). Interestingly, the protective effect of agents such as metformin and fenofibrate on diabetic retinopathy might be mediated through AMPK (Kim et al., 2007; Joe et al., 2015).\n\nOur study design had several advantages over prior approaches aimed at revealing the genetic basis of diabetic retinopathy. First, we utilized white blood cells which are readily accessible from the peripheral circulation of human patients (Epidemiology of Diabetes Interventions and Complications (EDIC) Research Group, 1999) and can reveal differential molecular characteristics depending on the stage of diabetic retinopathy (Tang and Kern, 2011; Gubitosi-Klug et al., 2008; Kern, 2007). LCLs are derived from white blood cells making them a relevant cellular population to study for diabetic retinopathy. LCLs have been shown to be a powerful model system for functional genetic studies in humans (Tang and Kern, 2011; Kern, 2007). Second, an LCL was generated for every individual enrolled in the landmark DCCT/EDIC study. DCCT/EDIC is the best-characterized prospective interventional cohort ever created to follow systemic complications of long-standing diabetes. DCCT/EDIC allows for detailed stratification of individuals, each of whom has had extensive prospective clinical phenotyping. Third, glucose was employed to elicit a provocative response in LCLs. By focusing on a secondary sequela of diabetes like retinopathy, the cellular response to glucose stimulation through transcription became a meaningful and directly relevant reflection of the stress each cell in the body encounters from diabetes. Insights into glucose-stimulated gene expression in LCLs have broad applicability to multiple tissues of interest for diabetic complications (even in the retina as we have shown) due to significant evidence supporting a shared framework for gene regulation among tissues (GTEx Consortium, 2015). Finally, disease-associated eQTL provide functional insights into the pathogenesis of a condition. We show that altering the levels of FLCN expression impacts risk of diabetic retinopathy. Aggregating independent eQTLs for the same gene (that are not in high linkage disequilibrium) revealed an enriched association that may otherwise have been missed by a conventional GWAS approach (Wu et al., 2018b). Treating the associated eQTL as an instrumental variable, Mendelian randomization supported the potential causality of FLCN in the pathogenesis of the disease. Inherently, this approach yielded all three M\u2019s of target modulation: mechanism, magnitude, and markers (Plenge, 2019).\n\nThe present work had inherent limitations. First, LCLs are not primary cells but rather a transformed cell line. The Multiple Tissue Human Expression Resource (MuTHER) LCL study revealed a large impact of common environmental exposure, stemming from shared sample handling, on gene expression in twin LCLs (Wright et al., 2014). The significant correlation of these extrinsic factors on LCL gene expression emphasizes the importance of randomization and biological replicates which we implemented in this study. Moreover, as a cell line, heterogeneous genomic alterations have been identified in lymphoblastoid cells that increase with passaging, thereby raising the concern that this can lead to variability in their transcriptome (Ben-David et al., 2018). Importantly, the EDIC cell lines employed in this study were only passaged once previously. Additionally, genomic changes have only a minor effect on genotypic frequencies with a 99.63% genotype concordance between lymphoblastoid cells and their parent leukocytes. Mendelian error rates in levels of heterozygosity are not significantly different between LCLs and their primary B-lymphocyte cells of origin (McCarthy et al., 2016). Second, it is not possible to delineate cause from effect in gene expression studies. Gene expression changes may be causal, epiphenomena, or due to reverse causality (the disease causing the gene expression changes rather than the other way around). In this study, by integrating genetic analyses with gene expression and recognizing that variation in the underlying genome precedes disease onset and can therefore be considered an instrumental variable, we identified through Mendelian randomization potentially causal gene expression changes in FLCN that act as a mediator for retinopathy thereby avoiding the trap of reverse causality. Finally, eQTL found in LCLs may not be relevant to diabetic retinopathy. As noted previously we found 43% of retina eQTL are shared with LCLs. We demonstrated that independent FLCN eQTLs found both in the retina and GTEx tissues showed an enriched association with diabetic retinopathy, a finding that was replicated in a large independent cohort from the UKBB. For complex trait associations in general and for those specifically in the retina, eQTL that are shared between tissues explain a greater proportion of associations than tissue-specific eQTL (Gamazon et al., 2018). For instance, shared tissue eQTL are enriched among genetic associations with age-related macular degeneration, another common retinal disease, despite the high tissue specificity of the disease (Ratnapriya et al., 2019; Unlu et al., 2019).\n\nIn summary, integration of gene expression from a relevant cellular model with genetic association data provided insights into the functional relevance of genetic risk for a complex disease. Using disease-associated differential gene and eQTL-based genome-wide association testing, we identified possible causal genetic pathways for diabetic retinopathy. Specifically, our studies implicated FLCN as a putative diabetic retinopathy susceptibility gene. Future work that incorporates more extensive molecular profiling of the cellular response to glucose in conjunction with a greater number of cell lines may yield further insights into the underlying genetic basis of diabetic retinopathy.\n\n## Materials and methods\n\n### Overview\n\nIn this study we profiled the transcriptomes of cell lines derived from 22 individuals (seven individuals with no diabetes [nDM], eight with T1D with PDR, and seven with T1D with no retinopathy [nDR]) utilizing gene expression microarrays to characterize the transcriptional response to glucose. Specifically, we cultured LCLs derived from each individual in SG and HG medium and measured gene expression for each gene in each sample, as well as the difference (\u0394\u00a0=\u00a0response to glucose [RG]) in each gene\u2019s expression for each individual (Figure 5a). We compared the differential response in gene expression to glucose for all individuals with and without proliferative retinopathy. \u2018Differential response\u2019 in gene expression refers to the difference in gene expression response to glucose between groups. Specifically, we identified genes with a significant differential response in expression between individuals with diabetes with and without PDR\u00a0(RGpdr\u2013ndr). We followed up genes showing differential response using the results of both a prior genome-wide association study\u00a0(GWAS) meta-analysis of diabetic retinopathy (in the GoKinD and EDIC cohorts) (Grassi et al., 2011) and the results of a multi-tissue eQTL analysis from GTEx (GTEx Consortium, 2015) to identify potential diabetic retinopathy susceptibility genes (Figure 5b).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/59980/elife-59980-fig5-v2.jpg)\n\n**Figure 5.:** (a) Schematic representation of the experimental design for transcriptomic profiling. Lymphoblastoid cell lines (LCLs) from 22 individuals were cultured under both standard glucose\u00a0(SG) and high glucose\u00a0(HG) conditions. Gene expression was quantified using microarrays for three biological replicates of each LCL in each condition. The response to glucose was determined for all genes on a per-individual basis, by comparing expression in SG\u00a0and HG\u00a0conditions. The cell lines were derived from individuals with diabetes and no retinopathy (7), individuals with diabetes and proliferative diabetic retinopathy (8), and individuals without diabetes (7). (b) We identified 15 individuals based on retinopathy status from the Epidemiology of Diabetes Interventions and Complications (EDIC) cohort. We compared the differential response in gene expression to glucose for individuals with and without proliferative retinopathy (RGpdr\u2013ndr). Expression quantitative trait loci (eQTL) for those genes that showed the greatest differential response between individuals with and without retinopathy were tested for their genetic association with diabetic retinopathy.\n\n### Participant safety and confidentiality issues\n\nAll cell lines were de-identified prior to their arrival at the University of Illinois at Chicago; therefore, this proposal qualified as non-human subjects research according to the guidelines set forth by the institutional review board at the University of Illinois at Chicago. As the data were analyzed anonymously, no participant consent was required. DCCT participants previously provided consent for their samples to be used for research. Matching of participants was performed at George Washington University Biostatistics Center and did not involve protected health information as the phenotypic data were de-identified. The George Washington University institutional review board has approved all analyses of EDIC data of this nature. All protocols used for this portion of the study are in accordance with federal regulations and the principles expressed in the Declaration of Helsinki. Specific approval of the study design and plan was obtained from the EDIC Research Review Committee.\n\n### Cell lines\n\nTwenty-two LCLs were used in the study as described previously (Grassi et al., 2016). Briefly, we included 15 of the 1441 LCLs generated from individuals with type 1 diabetes from the DCCT/EDIC cohort (The Writing Team for the Diabetes Control and Complications Trial/Epidemiology of Diabetes Interventions and Complications Research Group, 2002; Epidemiology of Diabetes Interventions and Complications (EDIC) Research Group, 1999), consisting of eight\u00a0matched cases with PDR and seven without retinopathy (nDR) as the controls (Grassi et al., 2016;\u00a0Supplementary file 1d). Whole blood samples were ascertained from DCCT study participants between 1991 and 1993. White blood cells from the samples were transformed into LCLs in the early 2000s. The 15 LCLs from individuals with diabetes consisted of matched cases and controls. Cases were defined by the development of PDR\u00a0by EDIC Year 10 (2004), whereas controls had no retinopathy through EDIC Year 10 (2004). Retinopathy grade was determined by seven-field stereoscopic photos. Control participants had an ETDRS (Early Treatment Diabetes Retinopathy Score) of 10 and case participants had an ETDRS score of\u00a0\u226561. All eight pairs were matched by age, sex, treatment group (intensive vs. conventional), cohort (primary vs. secondary), and diabetes duration (The DCCT Research Group, 1986; The diabetes control and complications trial, 1995), except one pair that was matched by age, sex, and treatment group only. Diabetes duration was defined as the number of months since the diagnosis of diabetes at DCCT baseline which was the time at participant enrollment (1983\u20131989). For the seven pairs matched on duration, four pairs were matched by duration quartiles (baseline duration 0\u20134 years, 4\u20138 years, 8\u201312 years, or 12\u201315 years) and three pairs were matched by duration halves (<8 years vs.\u00a0\u2265 8 years). Matching by age was done similar to duration: four pairs by quartile (<21 years, 21\u201325 years, 26\u201331 years,\u00a0and \u226531 years) and the remaining four by halves (<26 years vs. \u226526 years). The remaining seven LCLs were purchased from the Coriell Institute for Medical Research NIGMS Human Genetic Cell Repository (http://ccr.coriell.org/) (GM14581, GM14569, GM14381, GM07012, GM14520, GM11985, and GM07344). None of these individuals had a history of diabetes (nDM). The covariates available for these seven individuals were age and sex; male and female individuals were included. All of these individuals without diabetes were unrelated and of European ancestry (Grassi et al., 2016; Grassi et al., 2014;\u00a0Supplementary file 1d). All 22\u00a0cell lines underwent Hoechst staining to ensure they were free from mycoplasma contamination.\n\n### Culture conditions\n\nAll LCLs were maintained in conventional lymphocyte cell culture conditions of RPMI 1640 with 10% FBS in a 25 cm2 cell culture flask. The cells were incubated at 37\u00b0C in 5% CO2 and the media was changed twice each week. Prior to the experiments (below), lymphoblastoid cells following serum starvation were passaged for a minimum of 1\u00a0week in either SG RPMI 1640 (11 mM glucose) or HG RPMI media (30 mM glucose) (Caramori et al., 2012).\n\n### Gene expression profiling\n\nQuality control from RNA extraction was performed using the Agilent bio-analyzer, processed using the Illumina TotalPrep\u221296 RNA Amplification Kit (ThermoFisher 4393543), hybridized to Illumina HT12v4 microarrays (Catalog number: 4393543), and scanned on an Illumina HiScan scanner (Du et al., 2008; Lin et al., 2008). For each of the 22 individuals, three biological replicates were profiled, with each sample assessed at both SG\u00a0conditions (11 mM of glucose) and HG conditions (30 mM of glucose). Biological replicates were split from the same mother flask; cells were grown in separate flasks and run on different microarray plates on different days. Each biological replicate was generated from a separate frozen aliquot of that cell line. The gene expression profiling was performed in a masked fashion for both the case/control (PDR, nDR, and\u00a0nDM) status of the individual and\u00a0the glucose treatment (SG\u00a0and HG) of the sample in order to reduce any bias.\n\n### Relative EBV copy number\n\nStandard TaqMan qPCR was performed using EBV and NRF1 probes and primers (Choy et al., 2008). To calculate real-time PCR efficiencies a standard curve of 10\u00a0points of twofold dilution of 156.7 ng of gDNA was used from the Raji cell line (ATCC CCL-86). Probes were designed for the target, EBV, and a reference gene, NRF1. Final concentrations of the probes and primers were 657 nM and 250 nM, respectively. EBV probe: 5\u20326FAM-CCACCTCCACGTGGATCACGA-MGBNFGQ3\u2032; EBV forward primer: 5\u2032 GAGCGATCTTGGCAATCTCT; EBV reverse primer: 5\u2032 AGTAGCCAGGCACCTACTGG; NRF1 probe: 5\u2032VIC-CACTGCATGTGCTTCTATGGTAGCCA-MGBNFQ3\u2032; NRF1 forward primer: 5\u2032 ATGGAGGAACACGGAGTGAC; NRF1 reverse primer: 5\u2032 CATCAGCTGCTGTGGAGTTG. Cycle number of crossing point versus DNA concentration were plotted to calculate the slope. The real-time PCR efficiency (E) was calculated according to the equation: E\u00a0=\u00a010 (\u22121/slope). Triplicates were done for each data point. Genomic DNA (78.3 ng) from each LCL\u00a0was used in a standard TaqMan qPCR reaction with EBV as target gene and NRF1 as reference gene. The sequences and concentrations of the probes and primers were as shown above.\n\n### Growth rate measurement\n\nLCLs were thawed and cultured in RPMI and 10% FBS until they reached over 85% cell viability. Cells were seeded in a T25 flask. Two replicates were performed per cell line. Cells were counted every day or every other day for 5\u201310 days and recorded.\n\n### Quality control for gene expression\n\nThe gene expression data comprised a total of 144 samples from 22 individuals (three replicates per individual and treatment, except for three\u00a0individuals with five replicates). Gene expression was assessed in two conditions, SG\u00a0and HG, and generated in four batch runs that were carefully designed to minimize potential batch effects. BeadChip data were extracted using GenomeStudio (version GSGX 1.9.0) and the raw expression and control probe data from the four different batches were preprocessed using a lumiExpresso function in the lumi R package version 2.38.0 (Grassi et al., 2011; Grassi et al., 2012) in three steps: (i) background correction (lumiB function with the bgAdjust method); (ii) variance stabilizing transformation (lumiT function with the log2 option); and\u00a0(iii) normalization (lumiN function with the robust spline normalization [rsn] algorithm that is a mixture of quantile and loess normalization). To remove unexpressed probes, we applied a detection filter to retain probes with strong true signal by applying Illumina BeadArrays detection p-values\u00a0<0.01 followed by removing probes that did not have annotated genes, resulting in a total of 15,591 probes.\n\n### Gene expression analysis\n\nThe study design is portrayed in Figure 5a. For a given individual Si (i\u00a0=\u00a01,\u2026,22) and gene Gk (k\u00a0=\u00a01,...,15591), we calculated \u2206i,k\u00a0= HGi,k\u2212 SGi,k, where \u2206 is the individual\u2019s response to glucose (RG), HG is gene expression in high glucose\u00a0culture, and SG is gene expression in standard glucose\u00a0culture. All replicate data were fit using a mixed model that accounted for the correlation between repeated measures within individuals. The design matrix was constructed and analysis performed using the R version 3.5.1 package limma (Ritchie et al., 2015). We built a design matrix using the model.matrix function, and accounted for correlation between biological triplicates using limma\u2019s duplicate\u00a0correlation function. A mixed linear model was then fit that incorporates this correlation and \u2206i,k using the lmFit function. PCA of gene expression was run with the prcomp function in R (Becker, 1988). For each gene, we calculated moderated t- and f-statistics and log-odds of expression by empirical Bayes moderation of the standard errors toward a common value. Differential response reflects fold change (FC) differences between matched individuals in the two groups in their paired response to glucose. The power to detect a 2 FC difference in gene expression between the two retinopathy groups (retinopathy vs. no retinopathy) (RGpdr\u2013ndr) with a paired analysis given our sample size and using a type I error rate of 0.05 is 95% (as supported by our prior work Grassi et al., 2016).\n\n### Gene set enrichment analysis\n\nGSEA was performed using pre-ranked gene lists (Subramanian et al., 2005). We ranked all analyzed genes based on sign (fold change) \u00d7 (\u2013log10(p-value)) (Grassi et al., 2012). Duplicated genes were removed. The gene ranking resulted in the inclusion of 11,579 genes. Enrichment statistics were calculated using rank weighting and the significance of enrichment was determined using permutations performed by gene set. The gene sets included c2.all.v6.0 and c5.all.v6.0. The minimum gene set size was 15 and the maximum gene set size was 500. GSEA was used to identify significant gene sets for the response to glucose in all study participants (RGall: nDM + PDR + nDR).\n\n### Expression quantitative trait loci\n\nTo determine if the genes showing a differential response in gene expression (RGpdr\u2013ndr) is driven by germline genetic variation, we tested if the eQTLs for these genes are enriched for small diabetic retinopathy GWAS p-values (Grassi et al., 2011). We use the term \u2018differential response gene\u2019 for those genes identified by the RGpdr\u2013ndr analysis. All statistically significant eSNPs (false discovery rate [FDR] threshold of\u00a0\u22640.05) (single nucleotide polymorphisms, SNPs, corresponding to cis-eQTLs from the GTEx and EyeGEx datasets) were collated for the glucose response genes in any of the 48 GTEx (version 7) tissues and the retina (GTEx Consortium, 2015; Ratnapriya et al., 2019). We use the term eGene for any gene with at least one significant eSNP in any tissue.\n\n### Genome-wide association study\n\nMeta-analysis p-values were ascertained from our prior GWAS\u00a0for diabetic retinopathy (Grassi et al., 2011). The study assessed the genetic risk of sight threatening complications of diabetic retinopathy as defined by the presence of diabetic macular edema or PDR\u00a0(cases) compared to those without (controls) in two large type 1 diabetes cohorts of 2829 total individuals (973 cases\u00a0and 1856 controls) taken from the Genetics of Kidney in Diabetes (GoKinD) and the Epidemiology of Diabetes Interventions and Complications study (EDIC) cohorts.\n\nWe sought to determine whether there is enrichment of small p-values for diabetic retinopathy meta-GWAS among the significant eQTLs for the glucose response genes that show a significant differential glucose response between individuals with and without retinopathy (RGpdr\u2013ndr). We used Benjamini\u2013Hochberg adjusted p-values (FDR) to account for multiple testing given the high level of linkage disequilibrium between many eSNPs within an eQTL. SNPs from the three studies (expression, eQTL, and\u00a0GWAS) were matched by mapping all SNPs to dbSNP v.147 (Grassi et al., 2013). We determined the corresponding FDR for each glucose response gene\u2019s eSNPs in the diabetic retinopathy meta-GWAS. The Bonferroni correction was used to establish the threshold for significance. To assess enrichment, we first determined the observed proportion of meta-GWAS FDR values\u00a0<0.05 among the statistically significant eQTLs of the glucose response genes (RGpdr\u2013ndr). Next, we took 10,000 random samples of 103 GTEx eGenes (genes with an eQTL in any GTEx tissue) and identified corresponding eSNPs across all GTEx tissues. We calculated the GWAS FDR for these eSNPs and recorded the proportion of FDR values\u00a0<0.05.\n\nValidation for the association of glucose response gene eSNPs with diabetic retinopathy was performed in the UKBB GWAS (Supplementary file 1c; Sudlow et al., 2015). Only individuals of northern European ancestry were analyzed. Quality control excluded individuals who were outliers based on relatedness, exhibited an excess of missing genotype calls, had more heterozygosity than expected, or had sex chromosome aneuploidy. A total of 337,147 individuals were available for analysis. Case participants were defined as those who answered \u2018yes\u2019 to questionnaire data eyesight field 6148 \u2018Diabetes related eye disease\u2019 (n\u00a0=\u00a02332). Our prior work validated the utility of self-report for the presence of severe diabetic retinopathy (Grassi et al., 2013; Grassi et al., 2009). Control participants were defined as those who answered \u2018yes\u2019 to data field 2443 \u2018Diabetes diagnosed by doctor\u2019 (n\u00a0=\u00a014,680), excluding case participants. SNPs were excluded according to the following: minor allele frequency\u00a0<0.004; missing rate\u00a0>0.015; HWE p<1\u00d710\u221210; INFO score\u00a0<0.8. We performed logistic regression as implemented in Plink2 (Chang et al., 2015) on this set of cases and controls. The logistic regression, including the following covariates: first 10 genotype-based principal components, chromosomal sex (as defined by XX, XY status), age, type of diabetes, HbA1c, and genotyping array type.\n\n### Mendelian randomization\n\nTo explore a possible causal effect of increased FLCN expression on diabetic retinopathy, we employed Mendelian randomization (Davies et al., 2019). Effects were estimated with summary data-based Mendelian randomization analysis (Zhu et al., 2016) (SMR). We estimated the effect of increasing levels of FLCN expression on diabetic retinopathy in the UKBB GWAS for diabetic retinopathy (described above) utilizing 272 SNPs that were significant cis-eSNPs (FDR\u00a0\u2264\u00a00.05) for FLCN in retina and also in at least 20 GTEx tissues. A total of 246 SNPs remained after removing those SNPs or their proxies (r2\u00a0>\u00a00.8) not genotyped in the UKBB. For each individual, the exposure was based on the genetically predicted gene expression of FLCN in retina and the outcome was the likelihood of having diabetic retinopathy. Heterogeneity in dependent instruments (HEIDI) (Zhu et al., 2016) was used to investigate the possibility of confounding bias from horizontal pleiotropy with 14 independent (r2\u00a0<\u00a00.2) FLCN eQTLs. As multiple independent (r2\u00a0<\u00a00.2, n\u00a0=\u00a014) FLCN eQTLs exist, we also employed multi-SNP Mendelian randomization to assess for an aggregated effect (Wu et al., 2018a) of the eQTLs on diabetic retinopathy mediated through FLCN expression.\n\n### FLCN localization in human donor eye retina\n\nA whole eye from a 69-year-old Caucasian female post-mortem donor without diabetes was obtained from National Disease Research Interchange (NDRI). Findings were replicated in an additional five post-mortem donors without diabetes from the NDRI. The eye was cut in half in a horizontal plane, and each half was placed in an individual cassette. Samples were processed on ASP300 S automated tissue processor (Leica Biosystems) using a standard overnight processing protocol and embedded into paraffin blocks. Tissue was sectioned at 5 \u00b5m, and sections were de-paraffinized and stained on BOND RX autostainer (Leica Biosystems) following a preset protocol. In brief, sections were subjected to EDTA-based (BOND ER2 solution, pH9) antigen retrieval for 40 min at 100\u00b0C, washed, and incubated with protein block (Background Sniper, Biocare Medical, BS966) for 30 min at room temperature. For immunofluorescence (IF), sequential staining with rabbit polyclonal anti-FLCN antibody (1:50, Abcam #ab93196) and mouse monoclonal anti-CD31 antibody (1:50, DAKO, M0823) was conducted using goat-anti-rabbit Alexa-488 and goat-anti-mouse Alexa-555 secondary antibodies (Molecular Probes) for detection. DAPI (Invitrogen, #D3571) was used to stain nuclei. The slides were mounted with ProLong Diamond Antifade mounting media (ThermoFisher, #P36961). Images were taken at 20\u00d7 magnification on Vectra three multispectral imaging system (Akoya Biosciences). A spectral library acquired from mono stains for each fluorophore (Alexa-488, Alexa-594), DAPI, and human retina background fluorescence slide was used to spectrally unmix images in InForm software (Akoya Biosciences) for visualization of each color.\n",
+      "created_at": "2025-12-02T21:11:18.747455Z"
+    },
+    {
+      "id": "7aa66c38-05d9-4329-be58-f816284387ab",
+      "submission_id": "b765c39e-4e12-4858-821d-ad4281b1fc16",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- David E James, The University of Sydney Australia\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.59980.sa1](https://doi.org/10.7554/eLife.59980.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nAcceptance summary:\n\nThis study addresses the genetic underpinnings of diabetic retinopathy one of the major complications of diabetes in humans. The approach used here was considered innovative. Rather than using traditional genetic approaches, such as genome wide association, the examination of glucose induced changes in gene expression in cell lines from people with type 1 diabetes either with or without retinopathy provided new insights into the disease. The identification of SNPs associated with such changes \u2013 so called eQTLs \u2013 followed by validation in independent human cohorts took the study one step beyond many others in the field. The further confirmation of FLCN as a mediator of diabetic retinopathy using Mendelian Randomization provided further confidence in the method. This study was considered to provide advances in our understanding of the mechanisms that lead to diabetic retinopathy in humans.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Mendelian randomization identifies folliculin expression as a mediator of diabetic retinopathy.\" for consideration by eLife. Your article has been reviewed by two peer reviewers, and the evaluation has been overseen by David James as the Senior and Reviewing Editor. The reviewers have opted to remain anonymous.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nAs the editors have judged that your manuscript is of interest, but as described below that additional experiments are required before it is published, we would like to draw your attention to changes in our revision policy that we have made in response to COVID-19 (https://elifesciences.org/articles/57162). First, because many researchers have temporarily lost access to the labs, we will give authors as much time as they need to submit revised manuscripts. We are also offering, if you choose, to post the manuscript to bioRxiv (if it is not already there) along with this decision letter and a formal designation that the manuscript is \"in revision at eLife\". Please let us know if you would like to pursue this option. (If your work is more suitable for medRxiv, you will need to post the preprint yourself, as the mechanisms for us to do so are still in development.)\n\nWhile your study was well performed, several rather serious issues were raised by the reviewers as detailed below and all of these points need to be addressed prior to further consideration by eLife. Also one reviewer noted that the title only focused on \"Mendelian randomization\", which is an overstatement of what is essentially only a gene expression study. In addition stating that RM \" identifies folliculin expression as a mediator of diabetic retinopathy\" is also an overstatement as the mediator effect is not shown. So it will be important to reword the title if you decide to undertake a substantial revision.\n\nSummary:\n\nThis study investigates gene expression profiling related to diabetic retinopathy using several strategies including differential gene expression associated with response to glucose by comparing lymphoblastoid cell lines (LCLs) between cases (with retinopathy) and controls (without retinopathy) with type 1 diabetes. The study identified significant eQTLs from gene expression analysis and public gene expression databases and then tested significant eSNPs by the meta-analysis GWAS using independent cohorts. The expression of one gene, FLCN, to be a mediator of diabetic retinopathy by the Mendelian Randomization method was confirmed.\n\nEssential revisions:\n\n1) The whole paper and its conclusions are based on a very small number of samples and not supported by strong experimental data about causality. Overall, the small group of studied subjects present huge differences in duration of diabetes and glucose control the 2 main factors of retinopathy. Thus, it is unclear how to differentiate the biological effects of long term high glucose and their impact on retinopathy.\n\n2) Based on the transcriptome analysis the conclusion \"This finding suggests that chronic glucose exposure depresses cellular immune responsiveness and may explain in part the increased risk of infection found in patients with diabetes\" is not based on evidence as authors selected transcripts of their choice and also causality is not shown.\n\n\"Individuals with diabetic retinopathy exhibit a differential transcriptional response to glucose\". Note that the level of association shown (especially for PDGF) is somewhat marginal.\n\n3) \"Genes with differential response to glucose are implicated in the pathogenesis of diabetic retinopathy.\" This part is the most intriguing and original but it is based on expression in many tissues and thus the title is also overstated: it shows some kind of association but certainly not that the 103 genes \"are implicated\" in retinopathy.\n\n4) \"Folliculin (FLCN) is a putative diabetic retinopathy disease gene\" this part is also interesting (and includes some in vivo experiments) but the original whole genome gene expression study did not detect FLNC as differentially expressed in the cell blood of the patients with retinopathy. Can the authors comment on this? One of the reviewers also mentioned that no SNPs near FLCN have been identified in diabetes (or complications) GWAS and this is somewhat worrying.\n\n5) It is confusing that the authors used different selection criteria for gene identifications. In Results (subsection \u201cIndividuals with diabetic retinopathy exhibit a differential transcriptional response to glucose\u201d), they identified 19 differentially response genes (P <0.05) between retinopathy cases and controls. However, they have selected the top 103 genes with P<0.01 (Results, subsection \u201cGenes with differential response to glucose are implicated in the pathogenesis of diabetic retinopathy\u201d) for further investigations. What is the gap between these two gene sets selection? I assume that the FLCN gene is in the top 103 gene set but not in the above 19 gene set. Explanations are needed for including specific genes for different analysis purposes.\n\n6) The authors selected LCLs from individuals of 3 groups, non-diabetes (nDM), type 1 diabetes without retinopathy (nDR) and type 1 diabetes with proliferative diabetic retinopathy (PDR). The benefits of utilizing nDM samples in the analysis was not clear. Although both gene expression and GSEA methods were conducted, the results were not relevant to diabetic retinopathy. What is the purpose of including these samples? Similarly, it is not clear what the purpose of using the gene set enrichment analysis (GSEA) was because it seems that the authors performed most analyses to identify genetic components by gene-based or SNP-based methods in the manuscript.\n\n7) The authors tested gene expression profile and associations using data from type 1 diabetic retinopathy. However, for the confirmation with UK BioBank (UKBB) data, they included all samples with both type 1 and type 2 diabetes. Did you perform the analysis stratified by the type of diabetes? Do you have any explanations of possible differences?\n",
+      "created_at": "2025-12-02T21:11:18.747455Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T21:11:18.747455Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T21:11:18.747455Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "ddcbcc89-5a3c-4264-9c7d-34b7a6a452ec",
+      "content_id": "2407d386-f917-4a36-9fe2-c4c66de289fa",
+      "claim_id": "C1",
+      "claim": "Almost all individuals with diabetes will develop some form of diabetic retinopathy over time.",
+      "claim_type": "EXPLICIT",
+      "source": "Almost all individuals with diabetes will develop some form of diabetic retinopathy over time (National Diabetes Fact Sheet, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to National Diabetes Fact Sheet, 2011",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:11:18.747455Z"
+    },
+    {
+      "id": "7dd44db4-a235-4000-b43d-4bee73517c1c",
+      "content_id": "2407d386-f917-4a36-9fe2-c4c66de289fa",
+      "claim_id": "C2",
+      "claim": "In the United States diabetic retinopathy is the most frequent cause of blindness among working age individuals.",
+      "claim_type": "EXPLICIT",
+      "source": "In the United States diabetic retinopathy is the most frequent cause of blindness among working age individuals (Centers for Disease Control and Prevention, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Centers for Disease Control and Prevention, 2018",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:11:18.747455Z"
+    },
+    {
+      "id": "3d1a5b26-faeb-4109-acfb-0d4b7b61e352",
+      "content_id": "2407d386-f917-4a36-9fe2-c4c66de289fa",
+      "claim_id": "C3",
+      "claim": "Phenotypic variation in diabetic retinopathy is influenced by two primary risk factors: the duration of diabetes and an individual's level of glycemia (HbA1c).",
+      "claim_type": "EXPLICIT",
+      "source": "Epidemiological studies suggest that phenotypic variation is influenced by two primary risk factors: the duration of diabetes and an individual's level of glycemia (HbA1c) (DCCT/EDIC Research Group et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to DCCT/EDIC Research Group et al., 2017",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:11:18.747455Z"
+    },
+    {
+      "id": "05541e64-e761-46c6-9524-f7232e51b72a",
+      "content_id": "2407d386-f917-4a36-9fe2-c4c66de289fa",
+      "claim_id": "C4",
+      "claim": "Duration of diabetes and level of glycemic control do not completely explain an individual's risk for developing diabetic retinopathy.",
+      "claim_type": "EXPLICIT",
+      "source": "However, these two factors do not completely explain an individual's risk for developing diabetic retinopathy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by clinical observations and epidemiological context",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:11:18.747455Z"
+    },
+    {
+      "id": "fd93a3f2-0a3d-4ed2-9e2d-ae30b65c054e",
+      "content_id": "2407d386-f917-4a36-9fe2-c4c66de289fa",
+      "claim_id": "C5",
+      "claim": "Some individuals with diabetes develop very minimal retinopathy.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, some individuals with diabetes develop very minimal retinopathy (Sun et al., 2011), whereas others clearly seem to have a predisposition for severe retinopathy (Gao et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Sun et al., 2011",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:11:18.747455Z"
+    },
+    {
+      "id": "3da4b4a1-421d-4fdf-82f3-4962d2b7e027",
+      "content_id": "2407d386-f917-4a36-9fe2-c4c66de289fa",
+      "claim_id": "C6",
+      "claim": "Some individuals with diabetes have a predisposition for severe retinopathy.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, some individuals with diabetes develop very minimal retinopathy (Sun et al., 2011), whereas others clearly seem to have a predisposition for severe retinopathy (Gao et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Gao et al., 2014",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:11:18.747455Z"
+    },
+    {
+      "id": "85c1e6b0-f61a-4a99-8f41-a7a4a8595a92",
+      "content_id": "2407d386-f917-4a36-9fe2-c4c66de289fa",
+      "claim_id": "C7",
+      "claim": "Genetic factors account for 25\u201350% of an individual's risk of developing severe diabetic retinopathy.",
+      "claim_type": "EXPLICIT",
+      "source": "Familial aggregation and twin studies estimate that genetic factors account for 25\u201350% of an individual's risk of developing severe diabetic retinopathy (Arar et al., 2008; Hietala et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Arar et al., 2008 and Hietala et al., 2008",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:11:18.747455Z"
+    },
+    {
+      "id": "6df4adee-09e8-442c-bde5-f942417abb0c",
+      "content_id": "2407d386-f917-4a36-9fe2-c4c66de289fa",
+      "claim_id": "C8",
+      "claim": "Diabetic retinopathy is a highly polygenic trait influenced by multiple genetic variants of small effect.",
+      "claim_type": "EXPLICIT",
+      "source": "Genetic studies suggest that it is a highly polygenic trait influenced by multiple genetic variants of small effect.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by genetic studies and established knowledge",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:11:18.747455Z"
+    },
+    {
+      "id": "a8eae754-5c24-404c-b6c5-1fd97f0b1c51",
+      "content_id": "2407d386-f917-4a36-9fe2-c4c66de289fa",
+      "claim_id": "C9",
+      "claim": "A majority of genetic variants nominally associated with diabetic retinopathy are located in intronic or inter-genic regions.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, like other complex disease traits including age-related macular degeneration (Fritsche et al., 2014; Fritsche et al., 2016), a majority of genetic variants nominally associated with diabetic retinopathy are located in intronic or inter-genic regions (Risch and Merikangas, 1996).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Fritsche et al., 2014; Fritsche et al., 2016; and Risch and Merikangas, 1996",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:11:18.747455Z"
+    },
+    {
+      "id": "fc970e91-5461-4f68-a9f1-26ed9bc97ed8",
+      "content_id": "2407d386-f917-4a36-9fe2-c4c66de289fa",
+      "claim_id": "C10",
+      "claim": "Most genetic variants associated with diabetic retinopathy play critically important functional roles in regulating gene expression.",
+      "claim_type": "EXPLICIT",
+      "source": "Most of these variants appear to play critically important functional roles in regulating gene expression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the location of variants and their functional context",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:11:18.747455Z"
+    },
+    {
+      "id": "d17905d6-f1d7-4f17-ac77-c32b9b53c5b4",
+      "content_id": "2407d386-f917-4a36-9fe2-c4c66de289fa",
+      "claim_id": "C11",
+      "claim": "Several of the top associated SNPs identified in the meta-GWAS of diabetic retinopathy are present in DNase hypersensitivity sites and affect gene expression levels by altering the allelic chromatin state or the binding sites of transcription factors.",
+      "claim_type": "EXPLICIT",
+      "source": "In fact, several of the top associated SNPs identified in our meta-GWAS of diabetic retinopathy (Grassi et al., 2011) are present in DNase hypersensitivity sites and affect gene expression levels by altering the allelic chromatin state or the binding sites of transcription factors (Maurano et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Grassi et al., 2011 and Maurano et al., 2012",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:11:18.747455Z"
+    },
+    {
+      "id": "ff1c8a1d-781a-4d0f-af6a-1e3071c97220",
+      "content_id": "2407d386-f917-4a36-9fe2-c4c66de289fa",
+      "claim_id": "C12",
+      "claim": "Disease-associated genetic loci often influence gene expression levels.",
+      "claim_type": "EXPLICIT",
+      "source": "The observation that disease-associated genetic loci often influence gene expression levels (Gamazon et al., 2018) led us to postulate that integrating gene expression with genetic association would be a powerful approach to identify susceptibility genes for diabetic retinopathy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Gamazon et al., 2018",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:11:18.747455Z"
+    },
+    {
+      "id": "36f3f159-22ff-4dda-8876-3e0a6b94f39d",
+      "content_id": "2407d386-f917-4a36-9fe2-c4c66de289fa",
+      "claim_id": "C13",
+      "claim": "Individuals with retinopathy (PDR) show differences in diabetes duration compared to individuals without retinopathy (nDR).",
+      "claim_type": "EXPLICIT",
+      "source": "As anticipated, notable differences were observed between individuals with and without retinopathy (PDR vs. nDR) for mean duration of diabetes (53 \u00b1 43.4 months vs. 27 \u00b1 13.4 months).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by data from matched DCCT/EDIC participants",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:11:18.747455Z"
+    },
+    {
+      "id": "0d15068a-c04b-4208-b9af-e48d28648133",
+      "content_id": "2407d386-f917-4a36-9fe2-c4c66de289fa",
+      "claim_id": "C14",
+      "claim": "Individuals with retinopathy (PDR) show differences in level of glycemia (HbA1c) compared to individuals without retinopathy (nDR).",
+      "claim_type": "EXPLICIT",
+      "source": "mean HbA1c (9.71 \u00b1 2.37 vs. 7.62 \u00b1 1.07) given their significant impact on retinopathy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by data from matched DCCT/EDIC participants",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:11:18.747455Z"
+    },
+    {
+      "id": "f8e07cf3-daa8-4f41-940b-fa656804a385",
+      "content_id": "2407d386-f917-4a36-9fe2-c4c66de289fa",
+      "claim_id": "C15",
+      "claim": "22% of 11,548 examined genes demonstrated a differential response in expression between standard glucose and high glucose conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed that 22% of 11,548 examined genes demonstrated a differential response in expression between the two conditions (true positive rate; \u03c01 = 0.22) (Storey and Tibshirani, 2003; Figure 1\u2014figure supplement 1), with 299 of those at an FDR < 0.05 (Figure 1a), supporting a significant impact of glucose on the LCL transcriptome.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by gene expression data and statistical analysis shown in Figure 1\u2014figure supplement 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:11:18.747455Z"
+    },
+    {
+      "id": "15ee5461-a610-4da6-8503-7070798ddaab",
+      "content_id": "2407d386-f917-4a36-9fe2-c4c66de289fa",
+      "claim_id": "C16",
+      "claim": "299 genes showed differential response to glucose at an FDR < 0.05.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed that 22% of 11,548 examined genes demonstrated a differential response in expression between the two conditions (true positive rate; \u03c01 = 0.22) (Storey and Tibshirani, 2003; Figure 1\u2014figure supplement 1), with 299 of those at an FDR < 0.05 (Figure 1a), supporting a significant impact of glucose on the LCL transcriptome.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by gene expression data shown in Figure 1a",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:11:18.747455Z"
+    },
+    {
+      "id": "de1ffdb1-e350-4f19-8dd2-1f5c5e7893a6",
+      "content_id": "2407d386-f917-4a36-9fe2-c4c66de289fa",
+      "claim_id": "C17",
+      "claim": "Interindividual transcriptome response to high glucose is greater than the intraindividual response.",
+      "claim_type": "EXPLICIT",
+      "source": "We confirmed that interindividual transcriptome response to HG is greater than the intraindividual response (p=2\u00d710\u221216) (Figure 1\u2014figure supplement 2, Figure 1\u2014figure supplement 3, Figure 1\u2014figure supplement 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by statistical analysis with p-value and shown in Figure 1\u2014figure supplements 2, 3, and 4",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:11:18.747455Z"
+    },
+    {
+      "id": "d84e53c7-fb2e-4bb3-a253-3ae7e76facdd",
+      "content_id": "2407d386-f917-4a36-9fe2-c4c66de289fa",
+      "claim_id": "C18",
+      "claim": "TXNIP exhibited the largest and most significant transcriptional response to glucose.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, TXNIP, the most highly glucose-inducible gene in multiple cell types (Devi et al., 2017; Chen et al., 2016), exhibited the largest (log2(FC) difference = 0.2) and most significant (p=3.2\u00d710\u221212, FDR = 5.1\u00d710\u22128) transcriptional response to glucose.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by gene expression data and citations to Devi et al., 2017 and Chen et al., 2016",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:11:18.747455Z"
+    },
+    {
+      "id": "3034c3ba-c14e-4497-9edb-6d11a500656b",
+      "content_id": "2407d386-f917-4a36-9fe2-c4c66de289fa",
+      "claim_id": "C19",
+      "claim": "TXNIP is the most highly glucose-inducible gene in multiple cell types.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, TXNIP, the most highly glucose-inducible gene in multiple cell types (Devi et al., 2017; Chen et al., 2016), exhibited the largest (log2(FC) difference = 0.2) and most significant (p=3.2\u00d710\u221212, FDR = 5.1\u00d710\u22128) transcriptional response to glucose.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Devi et al., 2017 and Chen et al., 2016",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:11:18.747455Z"
+    },
+    {
+      "id": "cac925de-38fa-475f-b3cb-73f3caab5711",
+      "content_id": "2407d386-f917-4a36-9fe2-c4c66de289fa",
+      "claim_id": "C20",
+      "claim": "Genes involved in DNA packaging are dramatically upregulated in response to glucose.",
+      "claim_type": "EXPLICIT",
+      "source": "Pathway analysis using gene set enrichment analysis (GSEA) revealed dramatic upregulation of genes involved in structural changes to DNA (DNA packaging, FDR < 0.0001) and in genes such as transcription factors that modulate the cellular response to environmental stimuli (protein DNA complex, FDR < 0.0001) (Figure 1b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by GSEA analysis shown in Figure 1b",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:11:18.747455Z"
+    },
+    {
+      "id": "aeb56b4c-0dcb-4396-860d-cf7e5b443758",
+      "content_id": "2407d386-f917-4a36-9fe2-c4c66de289fa",
+      "claim_id": "C21",
+      "claim": "Genes such as transcription factors that modulate the cellular response to environmental stimuli are dramatically upregulated in response to glucose.",
+      "claim_type": "EXPLICIT",
+      "source": "Pathway analysis using gene set enrichment analysis (GSEA) revealed dramatic upregulation of genes involved in structural changes to DNA (DNA packaging, FDR < 0.0001) and in genes such as transcription factors that modulate the cellular response to environmental stimuli (protein DNA complex, FDR < 0.0001) (Figure 1b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by GSEA analysis shown in Figure 1b",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:11:18.747455Z"
+    },
+    {
+      "id": "772c1ca2-27c4-419d-8f8a-ef43235afd23",
+      "content_id": "2407d386-f917-4a36-9fe2-c4c66de289fa",
+      "claim_id": "C22",
+      "claim": "Genes that modulate the cellular response to infection are considerably downregulated in response to glucose.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, genes that modulate the cellular response to infection were considerably downregulated (type 1 interferon, FDR < 0.0001; gamma interferon, FDR < 0.0001; leukocyte chemotaxis genes, FDR < 0.0001) potentially supporting earlier work that chronic glucose exposure depresses cellular immune responsiveness (Delamaire et al., 1997; Al-Mashat et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by GSEA analysis and citations to Delamaire et al., 1997 and Al-Mashat et al., 2006",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:11:18.747455Z"
+    },
+    {
+      "id": "cbdf576e-8c36-4687-ace0-5983fb72266c",
+      "content_id": "2407d386-f917-4a36-9fe2-c4c66de289fa",
+      "claim_id": "C23",
+      "claim": "Chronic glucose exposure depresses cellular immune responsiveness.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, genes that modulate the cellular response to infection were considerably downregulated (type 1 interferon, FDR < 0.0001; gamma interferon, FDR < 0.0001; leukocyte chemotaxis genes, FDR < 0.0001) potentially supporting earlier work that chronic glucose exposure depresses cellular immune responsiveness (Delamaire et al., 1997; Al-Mashat et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Delamaire et al., 1997 and Al-Mashat et al., 2006",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:11:18.747455Z"
+    },
+    {
+      "id": "ddb88086-d71e-4de4-8f37-45f9e8295ecc",
+      "content_id": "2407d386-f917-4a36-9fe2-c4c66de289fa",
+      "claim_id": "C24",
+      "claim": "The observed interindividual variance in transcriptional response to glucose is dominated by randomized DCCT treatment group effects based on retinopathy status.",
+      "claim_type": "EXPLICIT",
+      "source": "Principal component analysis (PCA) demonstrated that the observed interindividual variance is dominated by randomized DCCT treatment (intensive vs. conventional) group effects based on retinopathy status (p=3\u00d710\u22126) (Figure 2\u2014figure supplement 1) and is not confounded by LCL growth rate (p>0.05) or EBV-(Epstein Barr virus) copy number (p>0.05).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by PCA analysis with p-value shown in Figure 2\u2014figure supplement 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:11:18.747455Z"
+    },
+    {
+      "id": "5d645ee2-63b3-46ab-8a02-d46036649dfb",
+      "content_id": "2407d386-f917-4a36-9fe2-c4c66de289fa",
+      "claim_id": "C25",
+      "claim": "The observed interindividual variance in transcriptional response to glucose is not confounded by LCL growth rate.",
+      "claim_type": "EXPLICIT",
+      "source": "Principal component analysis (PCA) demonstrated that the observed interindividual variance is dominated by randomized DCCT treatment (intensive vs. conventional) group effects based on retinopathy status (p=3\u00d710\u22126) (Figure 2\u2014figure supplement 1) and is not confounded by LCL growth rate (p>0.05) or EBV-(Epstein Barr virus) copy number (p>0.05).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by PCA analysis with p-value",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:11:18.747455Z"
+    },
+    {
+      "id": "29f428fb-e0bd-4325-b160-19006ad4406a",
+      "content_id": "2407d386-f917-4a36-9fe2-c4c66de289fa",
+      "claim_id": "C26",
+      "claim": "The observed interindividual variance in transcriptional response to glucose is not confounded by EBV copy number.",
+      "claim_type": "EXPLICIT",
+      "source": "Principal component analysis (PCA) demonstrated that the observed interindividual variance is dominated by randomized DCCT treatment (intensive vs. conventional) group effects based on retinopathy status (p=3\u00d710\u22126) (Figure 2\u2014figure supplement 1) and is not confounded by LCL growth rate (p>0.05) or EBV-(Epstein Barr virus) copy number (p>0.05).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by PCA analysis with p-value",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:11:18.747455Z"
+    },
+    {
+      "id": "22d881d5-3dfc-4d15-8358-a76839a9a31f",
+      "content_id": "2407d386-f917-4a36-9fe2-c4c66de289fa",
+      "claim_id": "C27",
+      "claim": "103 genes exhibit a differential glucose response between individuals with and without retinopathy at p<0.01.",
+      "claim_type": "EXPLICIT",
+      "source": "Using a gene-wise analysis we identified 103 genes exhibiting a differential glucose response between individuals with and without retinopathy (p<0.01) (Figure 2; Supplementary file 1b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by gene-wise analysis shown in Figure 2 and Supplementary file 1b",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:11:18.747455Z"
+    },
+    {
+      "id": "971eca17-c869-4f46-8fad-23f0535d2bff",
+      "content_id": "2407d386-f917-4a36-9fe2-c4c66de289fa",
+      "claim_id": "C28",
+      "claim": "IL1B is one of the top differential response genes between individuals with and without retinopathy.",
+      "claim_type": "EXPLICIT",
+      "source": "One of the top differential response genes was IL1B (p=0.008, log2(FC) response difference = 0.289).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by gene expression data with p-value and fold change",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:11:18.747455Z"
+    },
+    {
+      "id": "64bc196a-ed02-47c1-aea2-741dd5bd6b0b",
+      "content_id": "2407d386-f917-4a36-9fe2-c4c66de289fa",
+      "claim_id": "C29",
+      "claim": "Expression of IL1B is induced by high glucose.",
+      "claim_type": "EXPLICIT",
+      "source": "Expression of IL1B has been previously reported to be induced by HG (Shanmugam et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Shanmugam et al., 2003",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:11:18.747455Z"
+    },
+    {
+      "id": "bfaa51dc-87d8-48ce-b7b5-9b1bb91d3f16",
+      "content_id": "2407d386-f917-4a36-9fe2-c4c66de289fa",
+      "claim_id": "C30",
+      "claim": "The expression of IL1B is upregulated in the diabetic retina and has been implicated in the pathogenesis of diabetic retinopathy.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, the expression of IL1B is upregulated in the diabetic retina and has been implicated in the pathogenesis of diabetic retinopathy (Liu et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Liu et al., 2012",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:11:18.747455Z"
+    },
+    {
+      "id": "e2ddcf12-b78b-4b3e-b7a3-bee758425b9d",
+      "content_id": "2407d386-f917-4a36-9fe2-c4c66de289fa",
+      "claim_id": "C31",
+      "claim": "PDGF signaling is the most significant differential response pathway between individuals with and without retinopathy.",
+      "claim_type": "EXPLICIT",
+      "source": "We identified PDGF signaling as the most significant differential response pathway (FDR = 0.012) (Figure 2\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by GSEA analysis shown in Figure 2\u2014figure supplement 2",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:11:18.747455Z"
+    },
+    {
+      "id": "d153a704-06f1-4396-b20b-6011d826b95f",
+      "content_id": "2407d386-f917-4a36-9fe2-c4c66de289fa",
+      "claim_id": "C32",
+      "claim": "Elevated levels of PDGF are present in the vitreous of individuals with proliferative diabetic retinopathy compared to individuals without diabetes.",
+      "claim_type": "EXPLICIT",
+      "source": "Elevated levels of PDGF are present in the vitreous of individuals with proliferative diabetic retinopathy (PDR) compared to individuals without diabetes (Freyberger et al., 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Freyberger et al., 2000",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:11:18.747455Z"
+    },
+    {
+      "id": "589b4af5-489e-4343-b7ee-a58a0b19114b",
+      "content_id": "2407d386-f917-4a36-9fe2-c4c66de289fa",
+      "claim_id": "C33",
+      "claim": "PDGF is required for normal blood vessel maintenance.",
+      "claim_type": "EXPLICIT",
+      "source": "As PDGF is required for normal blood vessel maintenance, it is thought to contribute to the pericyte loss, microaneurysms, and acellular capillaries that are key features of the diabetic retina (Hammes et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Hammes et al., 2002",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:11:18.747455Z"
+    },
+    {
+      "id": "df076428-8328-46a8-a03e-0dd7a37a094f",
+      "content_id": "2407d386-f917-4a36-9fe2-c4c66de289fa",
+      "claim_id": "C34",
+      "claim": "PDGF contributes to the pericyte loss, microaneurysms, and acellular capillaries that are key features of the diabetic retina.",
+      "claim_type": "EXPLICIT",
+      "source": "As PDGF is required for normal blood vessel maintenance, it is thought to contribute to the pericyte loss, microaneurysms, and acellular capillaries that are key features of the diabetic retina (Hammes et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Hammes et al., 2002",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:11:18.747455Z"
+    },
+    {
+      "id": "bb86cfeb-3d96-4dc0-9902-d130d1034d67",
+      "content_id": "2407d386-f917-4a36-9fe2-c4c66de289fa",
+      "claim_id": "C35",
+      "claim": "Differential response genes are more likely to harbor eSNPs and be eGenes compared to the genome-wide average.",
+      "claim_type": "EXPLICIT",
+      "source": "Differential response genes are more likely to harbor eSNPs, and hence be eGenes, compared to the genome-wide average (p=2.0\u00d710\u221216) (Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by statistical analysis with p-value shown in Figure 3\u2014figure supplement 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:11:18.747455Z"
+    },
+    {
+      "id": "5db60e51-1d09-453f-95c8-bc66d2ea0b9a",
+      "content_id": "2407d386-f917-4a36-9fe2-c4c66de289fa",
+      "claim_id": "C36",
+      "claim": "Differential response genes are more likely to be genetically regulated and may contribute to interindividual differences in the development of diabetic retinopathy.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that differential response genes are more likely to be genetically regulated and may contribute to interindividual differences in the development of diabetic retinopathy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the observation that differential response genes are more likely to be eGenes",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:11:18.747455Z"
+    },
+    {
+      "id": "04240b37-a796-45a4-8712-1255f4da1ebc",
+      "content_id": "2407d386-f917-4a36-9fe2-c4c66de289fa",
+      "claim_id": "C37",
+      "claim": "7253 eSNPs from the differential response genes are enriched for association with diabetic retinopathy at FDR < 0.05.",
+      "claim_type": "EXPLICIT",
+      "source": "The 7253 eSNPs from the differential response genes are enriched for association with diabetic retinopathy (FDR < 0.05) (Figure 3b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by GWAS analysis shown in Figure 3b",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:11:18.747455Z"
+    },
+    {
+      "id": "909b492e-780b-4f95-bb6c-efd603d23300",
+      "content_id": "2407d386-f917-4a36-9fe2-c4c66de289fa",
+      "claim_id": "C38",
+      "claim": "Less than 1% of random sets of 103 genes contained the same proportion of similarly skewed GWAS p-values as the differential response genes.",
+      "claim_type": "EXPLICIT",
+      "source": "To further assess the significance of this enrichment, we performed permutation testing of eSNPs from random sets of 103 genes which demonstrated that less than 1% contained the same proportion of similarly skewed GWAS p-values (Figure 3\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by permutation testing shown in Figure 3\u2014figure supplement 2",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:11:18.747455Z"
+    },
+    {
+      "id": "5ee87d9f-a052-417e-b9a7-311fdb391e7b",
+      "content_id": "2407d386-f917-4a36-9fe2-c4c66de289fa",
+      "claim_id": "C39",
+      "claim": "The eSNPs for differential response genes were enriched among diabetic retinopathy meta-GWAS p-values relative to all eSNPs.",
+      "claim_type": "EXPLICIT",
+      "source": "The eSNPs for differential response genes were enriched among diabetic retinopathy meta-GWAS p-values relative to all eSNPs (p=0.0012) and all SNPs (p=0.0023) (Figure 3c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by statistical analysis with p-values shown in Figure 3c",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:11:18.747455Z"
+    },
+    {
+      "id": "bd4bed02-e3a9-4927-953f-f693891dc2e7",
+      "content_id": "2407d386-f917-4a36-9fe2-c4c66de289fa",
+      "claim_id": "C40",
+      "claim": "The eSNPs for differential response genes were enriched among diabetic retinopathy meta-GWAS p-values relative to all SNPs.",
+      "claim_type": "EXPLICIT",
+      "source": "The eSNPs for differential response genes were enriched among diabetic retinopathy meta-GWAS p-values relative to all eSNPs (p=0.0012) and all SNPs (p=0.0023) (Figure 3c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by statistical analysis with p-values shown in Figure 3c",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:11:18.747455Z"
+    },
+    {
+      "id": "4c905278-9a70-4754-82cf-d63b867c5efc",
+      "content_id": "2407d386-f917-4a36-9fe2-c4c66de289fa",
+      "claim_id": "C41",
+      "claim": "Some of the genes exhibiting a differential response to glucose are associated with the development of severe diabetic retinopathy.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, some of the genes exhibiting a differential response to glucose (RGpdr\u2013ndr) are associated with the development of severe diabetic retinopathy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the enrichment of eSNPs for association with diabetic retinopathy",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:11:18.747455Z"
+    },
+    {
+      "id": "10f11d0f-e905-40ff-8ad2-f452f1a0874e",
+      "content_id": "2407d386-f917-4a36-9fe2-c4c66de289fa",
+      "claim_id": "C42",
+      "claim": "rs11867934 is the most significant retinopathy-associated eSNP among the set of 7253 eSNPs tested.",
+      "claim_type": "EXPLICIT",
+      "source": "The most significant retinopathy-associated eSNP among the set of 7253 eSNPs tested is rs11867934 (Figure 4a); FDR < 0.05; meta-GWAS p=6.7\u00d710\u22126<Bonferroni adjusted p-value of 6.9 \u00d7 10\u22126; OR = 0.86, 95% confidence interval (CI) = 0.71,1.00; minor allele frequency = 0.22.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by GWAS analysis shown in Figure 4a",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:11:18.747455Z"
+    },
+    {
+      "id": "e757150f-7d41-4ab8-a49d-3a0e04ab5ae2",
+      "content_id": "2407d386-f917-4a36-9fe2-c4c66de289fa",
+      "claim_id": "C43",
+      "claim": "rs11867934 is an intergenic eSNP for FLCN in multiple biologically relevant tissues including artery and nerve.",
+      "claim_type": "EXPLICIT",
+      "source": "rs11867934 is an intergenic eSNP for FLCN in multiple biologically relevant tissues including artery and nerve.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by eQTL data from GTEx",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:11:18.747455Z"
+    },
+    {
+      "id": "51309a23-2b9b-450c-a864-14a105f061b7",
+      "content_id": "2407d386-f917-4a36-9fe2-c4c66de289fa",
+      "claim_id": "C44",
+      "claim": "FLCN is expressed in the retina of human donor eyes.",
+      "claim_type": "EXPLICIT",
+      "source": "We confirmed FLCN expression in the retina of human donor eyes (Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by immunofluorescence data shown in Figure 4\u2014figure supplement 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:11:18.747455Z"
+    },
+    {
+      "id": "790c1132-c4fd-4b9c-b5ef-a9bdf5eb8bf8",
+      "content_id": "2407d386-f917-4a36-9fe2-c4c66de289fa",
+      "claim_id": "C45",
+      "claim": "FLCN was upregulated in response to glucose to a greater extent in individuals with diabetic retinopathy than in individuals with diabetes without retinopathy.",
+      "claim_type": "EXPLICIT",
+      "source": "In the LCLs derived from individuals with diabetes, FLCN was upregulated in response to glucose to a greater extent in individuals with diabetic retinopathy than in individuals with diabetes without retinopathy (log2FC difference = 0.27, p=2.5\u00d710\u22123) (Figure 2, Supplementary file 1b, and Figure 4\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by gene expression data shown in Figure 2, Supplementary file 1b, and Figure 4\u2014figure supplement 2",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:11:18.747455Z"
+    },
+    {
+      "id": "3b16ca48-d27f-403c-81cc-1f416fab07a6",
+      "content_id": "2407d386-f917-4a36-9fe2-c4c66de289fa",
+      "claim_id": "C46",
+      "claim": "At least 43% of retina eQTLs are also eQTLs in GTEx LCLs.",
+      "claim_type": "EXPLICIT",
+      "source": "We determined that at least 43% of retina eQTLs are also eQTLs in GTEx LCLs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by comparison of retina eQTLs and GTEx LCL eQTLs",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:11:18.747455Z"
+    },
+    {
+      "id": "d50d0645-d9e4-4adf-b1f0-c263b707671b",
+      "content_id": "2407d386-f917-4a36-9fe2-c4c66de289fa",
+      "claim_id": "C47",
+      "claim": "FLCN eSNPs (n = 272 eSNPs significant in the retina and 20 or more GTEx tissues) show an enrichment for association with diabetic retinopathy in the meta-GWAS.",
+      "claim_type": "EXPLICIT",
+      "source": "We assessed the aggregated association of FLCN eSNPs (n = 272 eSNPs significant in the retina and 20 or more GTEx tissues) with diabetic retinopathy in the meta-GWAS and observed an enrichment for association with diabetic retinopathy (\u03c01 = 0.9; Figure 4b, Figure 4\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by GWAS analysis shown in Figure 4b and Figure 4\u2014figure supplement 3",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:11:18.747455Z"
+    },
+    {
+      "id": "495fe894-d2b0-4140-b9aa-4de1b267e273",
+      "content_id": "2407d386-f917-4a36-9fe2-c4c66de289fa",
+      "claim_id": "C48",
+      "claim": "FLCN eSNPs were enriched for association with diabetic retinopathy in the UK Biobank.",
+      "claim_type": "EXPLICIT",
+      "source": "We then validated the FLCN association with diabetic retinopathy in a third cohort, the UK Biobank (UKBB) (Supplementary file 1c), and found that the FLCN eSNPs were enriched for association with diabetic retinopathy in the UKBB (\u03c01 = 0.73) (Figure 4\u2014figure supplement 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by GWAS analysis in UKBB shown in Figure 4\u2014figure supplement 4",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:11:18.747455Z"
+    },
+    {
+      "id": "bd58cf03-a0b1-4bdd-a747-f169daf57c29",
+      "content_id": "2407d386-f917-4a36-9fe2-c4c66de289fa",
+      "claim_id": "C49",
+      "claim": "A one standard deviation increase in the predicted retinal expression of FLCN increases the risk of diabetic retinopathy by 0.15 SD.",
+      "claim_type": "EXPLICIT",
+      "source": "A one standard deviation (SD) increase in the predicted retinal expression of FLCN increases the risk of diabetic retinopathy by 0.15 SD (95% CI: 0.02\u20130.29, standard error 0.07, p=0.024).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by Mendelian randomization analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:11:18.747455Z"
+    },
+    {
+      "id": "cc6df451-0a68-433f-a8a8-335e18700626",
+      "content_id": "2407d386-f917-4a36-9fe2-c4c66de289fa",
+      "claim_id": "C50",
+      "claim": "Individuals with diabetes with high predicted retinal FLCN expression have increased odds of developing retinopathy.",
+      "claim_type": "EXPLICIT",
+      "source": "Individuals with diabetes with high predicted retinal FLCN expression have increased odds of developing retinopathy (1.3 OR increase per SD increase in FLCN expression) (Chinn, 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by Mendelian randomization analysis and citation to Chinn, 2000",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:11:18.747455Z"
+    },
+    {
+      "id": "b0394773-cb4c-4ffb-8269-d787f649818d",
+      "content_id": "2407d386-f917-4a36-9fe2-c4c66de289fa",
+      "claim_id": "C51",
+      "claim": "There is no evidence of horizontal pleiotropy confounding the Mendelian randomization analysis of FLCN and diabetic retinopathy.",
+      "claim_type": "EXPLICIT",
+      "source": "We did not observe any evidence of horizontal pleiotropy (in which FLCN eSNPs are independently associated with both FLCN expression and diabetic retinopathy) confounding the analysis [HEIDI p>0.05 (p=0.2)] (Zhu et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by HEIDI test with p-value and citation to Zhu et al., 2016",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:11:18.747455Z"
+    },
+    {
+      "id": "f798e39d-20f3-4eb4-a648-ea5c474e0547",
+      "content_id": "2407d386-f917-4a36-9fe2-c4c66de289fa",
+      "claim_id": "C52",
+      "claim": "There is an aggregated effect of 14 independent FLCN eQTLs on the development of diabetic retinopathy through FLCN expression.",
+      "claim_type": "EXPLICIT",
+      "source": "We detected an aggregated effect of 14 independent FLCN eQTLs (r2 < 0.2) on the development of diabetic retinopathy through FLCN expression using multi-SNP Mendelian randomization (p=0.04) (Wu et al., 2018a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by multi-SNP Mendelian randomization analysis with p-value and citation to Wu et al., 2018a",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:11:18.747455Z"
+    },
+    {
+      "id": "3199a034-677d-44cd-b9ba-bb5ee43b10e6",
+      "content_id": "2407d386-f917-4a36-9fe2-c4c66de289fa",
+      "claim_id": "C53",
+      "claim": "Genetic variation at the FLCN locus affects both FLCN expression and the development of diabetic retinopathy through the expression of FLCN.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, these findings support the presence of genetic variation at the FLCN locus affecting both FLCN expression and the development of diabetic retinopathy through the expression of FLCN.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from Mendelian randomization and genetic association results",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:11:18.747455Z"
+    },
+    {
+      "id": "959a6e5b-94d7-42b7-b063-9833d627b7ca",
+      "content_id": "2407d386-f917-4a36-9fe2-c4c66de289fa",
+      "claim_id": "C54",
+      "claim": "TXNIP is a key marker of oxidative stress.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, TXNIP was identified as the top differential response gene to glucose in all individuals (RGall). TXNIP is a key marker of oxidative stress.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by established knowledge",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:11:18.747455Z"
+    },
+    {
+      "id": "cad4ecfc-bd4c-4075-91d8-a4c747906a1b",
+      "content_id": "2407d386-f917-4a36-9fe2-c4c66de289fa",
+      "claim_id": "C55",
+      "claim": "TXNIP is upregulated in the diabetic retina where it induces Muller cell activation.",
+      "claim_type": "EXPLICIT",
+      "source": "It is upregulated in the diabetic retina where it induces Muller cell activation (Devi et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Devi et al., 2017",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:11:18.747455Z"
+    },
+    {
+      "id": "89015ff8-88f6-4e0d-a334-c8b701bf7fbc",
+      "content_id": "2407d386-f917-4a36-9fe2-c4c66de289fa",
+      "claim_id": "C56",
+      "claim": "High glucose treatment increases TXNIP expression.",
+      "claim_type": "EXPLICIT",
+      "source": "HG treatment has been shown to increase TXNIP expression (Chen et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Chen et al., 2016",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:11:18.747455Z"
+    },
+    {
+      "id": "763dc6fa-1ecc-466f-b8b4-43d9f0794252",
+      "content_id": "2407d386-f917-4a36-9fe2-c4c66de289fa",
+      "claim_id": "C57",
+      "claim": "TXNIP is a glucose sensor whose expression has been strongly associated with both hyperglycemia and diabetic complications.",
+      "claim_type": "EXPLICIT",
+      "source": "TXNIP is a glucose sensor whose expression has been strongly associated with both hyperglycemia and diabetic complications.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by established knowledge",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:11:18.747455Z"
+    },
+    {
+      "id": "db7c5d46-d2c9-4635-8d01-868fd2fbf1b5",
+      "content_id": "2407d386-f917-4a36-9fe2-c4c66de289fa",
+      "claim_id": "C58",
+      "claim": "The TXNIP locus was differentially methylated in the primary leukocytes of EDIC cases and controls.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, the TXNIP locus was differentially methylated in the primary leukocytes of EDIC cases and controls (Chen et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Chen et al., 2016",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:11:18.747455Z"
+    },
+    {
+      "id": "c5923a29-70f0-4877-8d84-33b13073cb91",
+      "content_id": "2407d386-f917-4a36-9fe2-c4c66de289fa",
+      "claim_id": "C59",
+      "claim": "The cellular response to chronic glucose stress involves alterations in DNA accessibility which facilitates the gene expression response to this environmental stimulus.",
+      "claim_type": "EXPLICIT",
+      "source": "The GSEA showed that the cellular response to chronic glucose stress involves alterations in DNA accessibility which facilitates the gene expression response to this environmental stimulus (Smith and Workman, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by GSEA analysis and citation to Smith and Workman, 2012",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:11:18.747455Z"
+    },
+    {
+      "id": "e8dedaab-7fa2-4eb3-9696-c9c62705c902",
+      "content_id": "2407d386-f917-4a36-9fe2-c4c66de289fa",
+      "claim_id": "C60",
+      "claim": "The transcriptional response to glucose in part manifests as diminished immune responsiveness, a well-characterized feature of diabetes.",
+      "claim_type": "EXPLICIT",
+      "source": "The transcriptional response to glucose in part manifests as diminished immune responsiveness, a well-characterized feature of diabetes (Shanmugam et al., 2003; Mowat and Baum, 1971).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by gene expression data and citations to Shanmugam et al., 2003 and Mowat and Baum, 1971",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:11:18.747455Z"
+    },
+    {
+      "id": "538af158-2e2d-4463-992b-2c40b76749eb",
+      "content_id": "2407d386-f917-4a36-9fe2-c4c66de289fa",
+      "claim_id": "C61",
+      "claim": "FLCN is a biologically plausible diabetic retinopathy disease gene since its expression is present in both neuronal and vascular cells of the retina.",
+      "claim_type": "EXPLICIT",
+      "source": "FLCN is a biologically plausible diabetic retinopathy disease gene since its expression is present in both neuronal and vascular cells of the retina.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by immunofluorescence data showing FLCN expression in retina",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:11:18.747455Z"
+    },
+    {
+      "id": "373e2621-97d6-42ef-80e1-44d56578dff6",
+      "content_id": "2407d386-f917-4a36-9fe2-c4c66de289fa",
+      "claim_id": "C62",
+      "claim": "FLCN is a negative regulator of AMPK which helps to modulate the energy sensing ability of AMPK and plays a role in responding to cellular stress.",
+      "claim_type": "EXPLICIT",
+      "source": "Current evidence suggests that FLCN is a negative regulator of AMPK which helps to modulate the energy sensing ability of AMPK and plays a role in responding to cellular stress (Hasumi et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Hasumi et al., 2012",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:11:18.747455Z"
+    },
+    {
+      "id": "ebd108c1-ecb8-46fa-bb1f-8f2759834ef2",
+      "content_id": "2407d386-f917-4a36-9fe2-c4c66de289fa",
+      "claim_id": "C63",
+      "claim": "AMPK plays an important role in providing resistance to cellular stresses by regulating autophagy and cellular bioenergetics to avoid apoptosis.",
+      "claim_type": "EXPLICIT",
+      "source": "AMPK plays an important role in providing resistance to cellular stresses by regulating autophagy and cellular bioenergetics to avoid apoptosis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by established knowledge",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:11:18.747455Z"
+    },
+    {
+      "id": "92f26244-9924-41b6-9ac7-52bc12896e7c",
+      "content_id": "2407d386-f917-4a36-9fe2-c4c66de289fa",
+      "claim_id": "C64",
+      "claim": "Loss of FLCN results in constitutive activation of AMPK.",
+      "claim_type": "EXPLICIT",
+      "source": "Loss of FLCN results in constitutive activation of AMPK.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by established knowledge",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:11:18.747455Z"
+    },
+    {
+      "id": "f5966c8f-5a21-4f77-9f06-fdce192abc31",
+      "content_id": "2407d386-f917-4a36-9fe2-c4c66de289fa",
+      "claim_id": "C65",
+      "claim": "Higher levels of FLCN would suggest less cellular capacity to deal with stress.",
+      "claim_type": "EXPLICIT",
+      "source": "Higher levels of FLCN would suggest less cellular capacity to deal with stress (Possik et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Possik et al., 2014",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:11:18.747455Z"
+    },
+    {
+      "id": "9da30ea4-2cd0-4d74-845d-86740b8ce204",
+      "content_id": "2407d386-f917-4a36-9fe2-c4c66de289fa",
+      "claim_id": "C66",
+      "claim": "The protective effect of agents such as metformin and fenofibrate on diabetic retinopathy might be mediated through AMPK.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, the protective effect of agents such as metformin and fenofibrate on diabetic retinopathy might be mediated through AMPK (Kim et al., 2007; Joe et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Kim et al., 2007 and Joe et al., 2015",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:11:18.747455Z"
+    },
+    {
+      "id": "05fbbaa6-f3d1-4e37-8bdd-94e8b33bb4d8",
+      "content_id": "2407d386-f917-4a36-9fe2-c4c66de289fa",
+      "claim_id": "C67",
+      "claim": "White blood cells are readily accessible from the peripheral circulation of human patients and can reveal differential molecular characteristics depending on the stage of diabetic retinopathy.",
+      "claim_type": "EXPLICIT",
+      "source": "First, we utilized white blood cells which are readily accessible from the peripheral circulation of human patients (Epidemiology of Diabetes Interventions and Complications (EDIC) Research Group, 1999) and can reveal differential molecular characteristics depending on the stage of diabetic retinopathy (Tang and Kern, 2011; Gubitosi-Klug et al., 2008; Kern, 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to EDIC Research Group, 1999; Tang and Kern, 2011; Gubitosi-Klug et al., 2008; and Kern, 2007",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:11:18.747455Z"
+    },
+    {
+      "id": "c20543fa-66f9-427b-848e-d9dfa9a86c76",
+      "content_id": "2407d386-f917-4a36-9fe2-c4c66de289fa",
+      "claim_id": "C68",
+      "claim": "LCLs have been shown to be a powerful model system for functional genetic studies in humans.",
+      "claim_type": "EXPLICIT",
+      "source": "LCLs have been shown to be a powerful model system for functional genetic studies in humans (Tang and Kern, 2011; Kern, 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Tang and Kern, 2011 and Kern, 2007",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:11:18.747455Z"
+    },
+    {
+      "id": "11021409-96a4-4ec6-b6eb-196aa164365d",
+      "content_id": "2407d386-f917-4a36-9fe2-c4c66de289fa",
+      "claim_id": "C69",
+      "claim": "Insights into glucose-stimulated gene expression in LCLs have broad applicability to multiple tissues of interest for diabetic complications due to significant evidence supporting a shared framework for gene regulation among tissues.",
+      "claim_type": "EXPLICIT",
+      "source": "Insights into glucose-stimulated gene expression in LCLs have broad applicability to multiple tissues of interest for diabetic complications (even in the retina as we have shown) due to significant evidence supporting a shared framework for gene regulation among tissues (GTEx Consortium, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to GTEx Consortium, 2015",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:11:18.747455Z"
+    },
+    {
+      "id": "d6bbdf05-3e0b-4093-a6b1-f614edb65508",
+      "content_id": "2407d386-f917-4a36-9fe2-c4c66de289fa",
+      "claim_id": "C70",
+      "claim": "Altering the levels of FLCN expression impacts risk of diabetic retinopathy.",
+      "claim_type": "EXPLICIT",
+      "source": "We show that altering the levels of FLCN expression impacts risk of diabetic retinopathy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by Mendelian randomization analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:11:18.747455Z"
+    },
+    {
+      "id": "b4a50d59-7e81-404e-908d-fda2cf39b1f5",
+      "content_id": "2407d386-f917-4a36-9fe2-c4c66de289fa",
+      "claim_id": "C71",
+      "claim": "Aggregating independent eQTLs for the same gene revealed an enriched association that may otherwise have been missed by a conventional GWAS approach.",
+      "claim_type": "EXPLICIT",
+      "source": "Aggregating independent eQTLs for the same gene (that are not in high linkage disequilibrium) revealed an enriched association that may otherwise have been missed by a conventional GWAS approach (Wu et al., 2018b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Wu et al., 2018b",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:11:18.747455Z"
+    },
+    {
+      "id": "997b628e-5afe-433b-b6f9-c438f1b7e2ae",
+      "content_id": "2407d386-f917-4a36-9fe2-c4c66de289fa",
+      "claim_id": "C72",
+      "claim": "The Multiple Tissue Human Expression Resource (MuTHER) LCL study revealed a large impact of common environmental exposure, stemming from shared sample handling, on gene expression in twin LCLs.",
+      "claim_type": "EXPLICIT",
+      "source": "The Multiple Tissue Human Expression Resource (MuTHER) LCL study revealed a large impact of common environmental exposure, stemming from shared sample handling, on gene expression in twin LCLs (Wright et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Wright et al., 2014",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:11:18.747455Z"
+    },
+    {
+      "id": "7e62c06b-6a4c-40d6-9586-c55ad936b310",
+      "content_id": "2407d386-f917-4a36-9fe2-c4c66de289fa",
+      "claim_id": "C73",
+      "claim": "Heterogeneous genomic alterations have been identified in lymphoblastoid cells that increase with passaging.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, as a cell line, heterogeneous genomic alterations have been identified in lymphoblastoid cells that increase with passaging, thereby raising the concern that this can lead to variability in their transcriptome (Ben-David et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Ben-David et al., 2018",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:11:18.747455Z"
+    },
+    {
+      "id": "ec522817-070b-4011-9089-049100150d8c",
+      "content_id": "2407d386-f917-4a36-9fe2-c4c66de289fa",
+      "claim_id": "C74",
+      "claim": "Genomic changes have only a minor effect on genotypic frequencies with a 99.63% genotype concordance between lymphoblastoid cells and their parent leukocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, genomic changes have only a minor effect on genotypic frequencies with a 99.63% genotype concordance between lymphoblastoid cells and their parent leukocytes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by established knowledge",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:11:18.747455Z"
+    },
+    {
+      "id": "1f98b3ae-1290-480b-a912-0a269aa8d13a",
+      "content_id": "2407d386-f917-4a36-9fe2-c4c66de289fa",
+      "claim_id": "C75",
+      "claim": "Mendelian error rates in levels of heterozygosity are not significantly different between LCLs and their primary B-lymphocyte cells of origin.",
+      "claim_type": "EXPLICIT",
+      "source": "Mendelian error rates in levels of heterozygosity are not significantly different between LCLs and their primary B-lymphocyte cells of origin (McCarthy et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to McCarthy et al., 2016",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:11:18.747455Z"
+    },
+    {
+      "id": "55171b3f-b5ee-4bfb-9fa2-2812fed55102",
+      "content_id": "2407d386-f917-4a36-9fe2-c4c66de289fa",
+      "claim_id": "C76",
+      "claim": "For complex trait associations in general and for those specifically in the retina, eQTL that are shared between tissues explain a greater proportion of associations than tissue-specific eQTL.",
+      "claim_type": "EXPLICIT",
+      "source": "For complex trait associations in general and for those specifically in the retina, eQTL that are shared between tissues explain a greater proportion of associations than tissue-specific eQTL (Gamazon et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Gamazon et al., 2018",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:11:18.747455Z"
+    },
+    {
+      "id": "b2e5a12d-632d-4626-8060-009ddd6dc212",
+      "content_id": "2407d386-f917-4a36-9fe2-c4c66de289fa",
+      "claim_id": "C77",
+      "claim": "Shared tissue eQTL are enriched among genetic associations with age-related macular degeneration.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, shared tissue eQTL are enriched among genetic associations with age-related macular degeneration, another common retinal disease, despite the high tissue specificity of the disease (Ratnapriya et al., 2019; Unlu et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Ratnapriya et al., 2019 and Unlu et al., 2019",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:11:18.747455Z"
+    },
+    {
+      "id": "ef1da497-4322-4466-b683-eb31476a0bf1",
+      "content_id": "2407d386-f917-4a36-9fe2-c4c66de289fa",
+      "claim_id": "C78",
+      "claim": "FLCN is expressed in the ganglion cell layer, neuronal cells of the inner nuclear layer, and faintly in the outer nuclear layer of the retina.",
+      "claim_type": "EXPLICIT",
+      "source": "FLCN (green) is evident in the ganglion cell layer (GCL), neuronal cells of the inner nuclear layer (INL), and faintly in the outer nuclear layer (ONL).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by immunofluorescence data shown in Figure 4\u2014figure supplement 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:11:18.747455Z"
+    },
+    {
+      "id": "9b627e85-307b-49e9-843d-19222da5be17",
+      "content_id": "2407d386-f917-4a36-9fe2-c4c66de289fa",
+      "claim_id": "C79",
+      "claim": "FLCN colocalizes with CD31, a marker of endothelial cells, confirming FLCN expression in retinal blood vessels.",
+      "claim_type": "EXPLICIT",
+      "source": "Colocalization of FLCN with CD31 (red), a marker of endothelial cells, confirms FLCN expression in retinal blood vessels (white arrows).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by immunofluorescence data shown in Figure 4\u2014figure supplement 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:11:18.747455Z"
+    },
+    {
+      "id": "a982311e-f1a4-4332-a33a-ee5b840e29a6",
+      "content_id": "2407d386-f917-4a36-9fe2-c4c66de289fa",
+      "claim_id": "C80",
+      "claim": "All study individuals had type 1 diabetes and were Caucasian, and 60% were female.",
+      "claim_type": "EXPLICIT",
+      "source": "All individuals had T1D and were Caucasian, and 60% were female.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by participant demographics",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:11:18.747455Z"
+    },
+    {
+      "id": "56e04ff3-98cc-4957-af2a-7353337de564",
+      "content_id": "2407d386-f917-4a36-9fe2-c4c66de289fa",
+      "claim_id": "C81",
+      "claim": "The power to detect a 2 fold change difference in gene expression between the two retinopathy groups with a paired analysis given the sample size and using a type I error rate of 0.05 is 95%.",
+      "claim_type": "EXPLICIT",
+      "source": "The power to detect a 2 FC difference in gene expression between the two retinopathy groups (retinopathy vs. no retinopathy) (RGpdr\u2013ndr) with a paired analysis given our sample size and using a type I error rate of 0.05 is 95% (as supported by our prior work Grassi et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by power calculation and citation to Grassi et al., 2016",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:11:18.747455Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "16f79200-6e4a-4a4e-8795-3aad32cf59bf",
+      "content_id": "2407d386-f917-4a36-9fe2-c4c66de289fa",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Diabetic retinopathy is a common complication of diabetes with significant genetic contribution. While duration of diabetes and glycemic control are primary risk factors, they do not fully explain individual susceptibility. Genetic factors account for 25\u201350% of risk, and the condition is highly polygenic.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C8 establish the background and rationale for the study through well-cited epidemiological and genetic literature. The claims about prevalence (C1, C2), risk factors (C3, C4), phenotypic variation (C5, C6), and genetic architecture (C7, C8) are all supported by appropriate citations to established literature and represent accepted knowledge in the field.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T21:11:18.747455Z"
+    },
+    {
+      "id": "f1a1c7a3-338e-4333-9725-a712153fba1f",
+      "content_id": "2407d386-f917-4a36-9fe2-c4c66de289fa",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Most genetic variants associated with diabetic retinopathy are located in non-coding regions and function by regulating gene expression. Disease-associated SNPs are enriched in DNase hypersensitivity sites and affect chromatin state or transcription factor binding.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C9-C12 are well-supported by citations to prior GWAS studies and functional genomics literature. The observation that disease-associated variants are predominantly regulatory (C9, C10) and the specific finding about DNase hypersensitivity sites (C11) are supported by the authors' prior meta-GWAS work and established eQTL studies (C12).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T21:11:18.747455Z"
+    },
+    {
+      "id": "5261a7d6-fd4a-4b85-aa40-0b5a9a5da8f8",
+      "content_id": "2407d386-f917-4a36-9fe2-c4c66de289fa",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The study cohort consisted of matched DCCT/EDIC participants with type 1 diabetes who were Caucasian (60% female), showing expected differences in diabetes duration and HbA1c between those with and without retinopathy.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C13, C14, and C80 describe the study population and are supported by data from Supplementary file 1a. The observed differences in diabetes duration (53\u00b143.4 vs 27\u00b113.4 months) and HbA1c (9.71\u00b12.37 vs 7.62\u00b11.07) between PDR and nDR groups are consistent with known risk factors and expected given the matching strategy.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T21:11:18.747455Z"
+    },
+    {
+      "id": "e4c61552-10d6-4818-96ab-993cbef1e6e1",
+      "content_id": "2407d386-f917-4a36-9fe2-c4c66de289fa",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Gene expression profiling revealed that 22% of genes (299 at FDR<0.05) showed differential response to glucose, with TXNIP exhibiting the largest and most significant response. Interindividual variance in transcriptional response exceeded intraindividual variance.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C15-C19 are well-supported by the gene expression data shown in Figure 1 and supplements. The statistical analysis is appropriate with FDR correction for multiple testing. The finding that TXNIP is the top glucose-responsive gene (C18, C19) is validated by citations showing this is consistent across multiple cell types. The comparison of inter- vs intra-individual variance (C17) is statistically significant (p=2\u00d710\u207b\u00b9\u2076).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T21:11:18.747455Z"
+    },
+    {
+      "id": "999442ec-a460-43b7-b283-6426fabd5c40",
+      "content_id": "2407d386-f917-4a36-9fe2-c4c66de289fa",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Pathway analysis revealed that glucose exposure upregulates genes involved in DNA packaging and transcriptional regulation while downregulating immune response genes, consistent with glucose-induced suppression of cellular immune responsiveness.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C20-C23, C59, and C60 are supported by GSEA analysis shown in Figure 1b with highly significant FDR values (<0.0001). The biological interpretation is strengthened by citations to prior work on glucose effects on immune function (Delamaire et al., 1997; Al-Mashat et al., 2006). The pathway findings are internally consistent and biologically plausible.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T21:11:18.747455Z"
+    },
+    {
+      "id": "d792f3a5-e112-4e2d-9488-aff74cdaa199",
+      "content_id": "2407d386-f917-4a36-9fe2-c4c66de289fa",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Principal component analysis showed that interindividual variance in transcriptional response to glucose is dominated by retinopathy status and is not confounded by technical factors such as LCL growth rate or EBV copy number.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C24-C26 are supported by PCA analysis shown in Figure 2\u2014figure supplement 1 with appropriate statistical testing. The significant association with retinopathy status (p=3\u00d710\u207b\u2076) and lack of confounding by growth rate and EBV copy number (both p>0.05) demonstrate proper quality control and validate the biological signal.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T21:11:18.747455Z"
+    },
+    {
+      "id": "80394748-4731-4af3-9d6a-d501fbec3bfc",
+      "content_id": "2407d386-f917-4a36-9fe2-c4c66de289fa",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "103 genes showed differential glucose response between individuals with and without retinopathy (p<0.01), including IL1B and genes in the PDGF signaling pathway, both previously implicated in diabetic retinopathy pathogenesis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C27-C34 are supported by gene-wise analysis (Figure 2, Supplementary file 1b) and GSEA (Figure 2\u2014figure supplement 2). The identification of IL1B (C28, p=0.008) and PDGF signaling (C31, FDR=0.012) as differential response genes is validated by multiple citations showing their prior implication in diabetic retinopathy, providing biological validation of the approach.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T21:11:18.747455Z"
+    },
+    {
+      "id": "3a18a0dc-991f-4e4e-9687-55ca469fd77e",
+      "content_id": "2407d386-f917-4a36-9fe2-c4c66de289fa",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Differential response genes are significantly enriched for eQTLs (p=2.0\u00d710\u207b\u00b9\u2076), and their eSNPs show enrichment for association with diabetic retinopathy in GWAS (FDR<0.05), validated by permutation testing showing <1% of random gene sets had similar enrichment.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C35-C41 demonstrate a key finding linking gene expression to genetic association. The enrichment of eQTLs among differential response genes (C35, Figure 3\u2014figure supplement 1) and the enrichment of these eSNPs for diabetic retinopathy association (C37-C40, Figure 3b-c) are well-supported by statistical analysis. The permutation testing (C38) provides strong validation that this enrichment is not due to chance.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T21:11:18.747455Z"
+    },
+    {
+      "id": "91d2dc8d-0dba-4b65-b02f-c6af1b5e2acf",
+      "content_id": "2407d386-f917-4a36-9fe2-c4c66de289fa",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "rs11867934, the most significant retinopathy-associated eSNP, regulates FLCN expression in multiple tissues. FLCN is expressed in retinal neurons and blood vessels, and shows greater glucose-induced upregulation in individuals with diabetic retinopathy.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C42-C45, C78, and C79 are well-supported by multiple lines of evidence: GWAS data (C42, p=6.7\u00d710\u207b\u2076), eQTL data from GTEx (C43), immunofluorescence showing FLCN expression in human retina (C44, C78, C79, Figure 4\u2014figure supplement 1), and differential expression analysis (C45, log2FC=0.27, p=2.5\u00d710\u207b\u00b3). The convergence of genetic, expression, and localization data strongly supports FLCN as a candidate gene.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T21:11:18.747455Z"
+    },
+    {
+      "id": "2c77b5aa-9fe7-4278-956d-4ba5b4c26047",
+      "content_id": "2407d386-f917-4a36-9fe2-c4c66de289fa",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "At least 43% of retina eQTLs are shared with LCLs. FLCN eSNPs show strong enrichment for association with diabetic retinopathy in both the meta-GWAS (\u03c0\u2081=0.9) and independent UK Biobank validation cohort (\u03c0\u2081=0.73).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C46-C48 provide critical validation of the LCL model relevance to retina (C46) and replication of the FLCN association in an independent cohort (C48). The enrichment statistics (\u03c0\u2081=0.9 in meta-GWAS, \u03c0\u2081=0.73 in UKBB) shown in Figure 4b and Figure 4\u2014figure supplement 4 demonstrate robust and reproducible association across multiple datasets.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T21:11:18.747455Z"
+    },
+    {
+      "id": "ac6060f2-fb36-4707-aacf-f513d1a7af6e",
+      "content_id": "2407d386-f917-4a36-9fe2-c4c66de289fa",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Mendelian randomization analysis demonstrates that increased FLCN expression causally increases diabetic retinopathy risk (0.15 SD increase per SD increase in FLCN, p=0.024; OR=1.3), with no evidence of horizontal pleiotropy (HEIDI p=0.2) and significant multi-SNP effect (p=0.04).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C49-C53 and C70 present strong causal evidence through Mendelian randomization. The SMR analysis (C49, C50) with appropriate pleiotropy testing (C51) and multi-SNP validation (C52) provides robust support for a causal relationship. The effect size is modest but statistically significant, and the lack of horizontal pleiotropy strengthens the causal interpretation. This represents the strongest evidence for FLCN as a disease gene.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T21:11:18.747455Z"
+    },
+    {
+      "id": "b592fdc3-5758-439c-bced-a15464e1b8ca",
+      "content_id": "2407d386-f917-4a36-9fe2-c4c66de289fa",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "TXNIP, identified as the top glucose-responsive gene, is a key oxidative stress marker that is upregulated in diabetic retina, induces M\u00fcller cell activation, and shows differential methylation in EDIC cases versus controls.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C54-C58 are well-supported by citations to prior literature establishing TXNIP's role in oxidative stress (C54, C57), diabetic retinopathy (C55), glucose response (C56), and epigenetic regulation (C58). These claims provide biological context for the gene expression findings and connect the LCL model to retinal pathophysiology.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T21:11:18.747455Z"
+    },
+    {
+      "id": "b1a91d61-d948-46e8-b630-c0ca8403cfbe",
+      "content_id": "2407d386-f917-4a36-9fe2-c4c66de289fa",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "FLCN is a biologically plausible diabetic retinopathy gene expressed in retinal neurons and vessels. It negatively regulates AMPK, which modulates cellular stress response, and higher FLCN levels suggest reduced stress tolerance. Protective agents like metformin and fenofibrate may act through AMPK.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C61-C66 provide biological rationale for FLCN's role in diabetic retinopathy. The expression data (C61) is supported by immunofluorescence, while the mechanistic claims (C62-C66) are supported by appropriate citations. The connection to therapeutic agents (C66) provides translational relevance, though this remains speculative and would require experimental validation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T21:11:18.747455Z"
+    },
+    {
+      "id": "08af06e6-f046-4870-832c-8a12da585a74",
+      "content_id": "2407d386-f917-4a36-9fe2-c4c66de289fa",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "LCLs are a valid model system for studying diabetic retinopathy genetics: they are accessible, show differential molecular characteristics by retinopathy status, share eQTLs across tissues (43% with retina), and maintain high genotype concordance (99.63%) with parent leukocytes despite some genomic alterations with passaging.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C67-C69 and C72-C77 justify the use of LCLs as a model system through multiple citations. The acknowledgment of limitations (C72, C73) balanced with evidence of validity (C74, C75) demonstrates appropriate critical evaluation. The finding that 43% of retina eQTLs are shared with LCLs (C46, C69) and that shared eQTLs explain more trait associations than tissue-specific ones (C76, C77) provides strong empirical support for the model's relevance.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T21:11:18.747455Z"
+    },
+    {
+      "id": "3f7894fa-bc42-4e5c-ac73-557c81366f71",
+      "content_id": "2407d386-f917-4a36-9fe2-c4c66de289fa",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The study design has 95% power to detect 2-fold expression changes between retinopathy groups. Aggregating independent eQTLs for the same gene revealed enriched associations that conventional GWAS approaches might miss.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C71 and C81 address methodological considerations. The power calculation (C81) is supported by citation to prior work and is appropriate for the sample size (n=15 diabetic individuals). The statement about aggregating eQTLs (C71) is supported by citation and is validated by the empirical findings showing enrichment when multiple FLCN eQTLs are considered together.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T21:11:18.747455Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "ddcbcc89-5a3c-4264-9c7d-34b7a6a452ec",
+      "result_id": "16f79200-6e4a-4a4e-8795-3aad32cf59bf"
+    },
+    {
+      "claim_id": "7dd44db4-a235-4000-b43d-4bee73517c1c",
+      "result_id": "16f79200-6e4a-4a4e-8795-3aad32cf59bf"
+    },
+    {
+      "claim_id": "3d1a5b26-faeb-4109-acfb-0d4b7b61e352",
+      "result_id": "16f79200-6e4a-4a4e-8795-3aad32cf59bf"
+    },
+    {
+      "claim_id": "05541e64-e761-46c6-9524-f7232e51b72a",
+      "result_id": "16f79200-6e4a-4a4e-8795-3aad32cf59bf"
+    },
+    {
+      "claim_id": "fd93a3f2-0a3d-4ed2-9e2d-ae30b65c054e",
+      "result_id": "16f79200-6e4a-4a4e-8795-3aad32cf59bf"
+    },
+    {
+      "claim_id": "3da4b4a1-421d-4fdf-82f3-4962d2b7e027",
+      "result_id": "16f79200-6e4a-4a4e-8795-3aad32cf59bf"
+    },
+    {
+      "claim_id": "85c1e6b0-f61a-4a99-8f41-a7a4a8595a92",
+      "result_id": "16f79200-6e4a-4a4e-8795-3aad32cf59bf"
+    },
+    {
+      "claim_id": "6df4adee-09e8-442c-bde5-f942417abb0c",
+      "result_id": "16f79200-6e4a-4a4e-8795-3aad32cf59bf"
+    },
+    {
+      "claim_id": "a8eae754-5c24-404c-b6c5-1fd97f0b1c51",
+      "result_id": "f1a1c7a3-338e-4333-9725-a712153fba1f"
+    },
+    {
+      "claim_id": "fc970e91-5461-4f68-a9f1-26ed9bc97ed8",
+      "result_id": "f1a1c7a3-338e-4333-9725-a712153fba1f"
+    },
+    {
+      "claim_id": "d17905d6-f1d7-4f17-ac77-c32b9b53c5b4",
+      "result_id": "f1a1c7a3-338e-4333-9725-a712153fba1f"
+    },
+    {
+      "claim_id": "ff1c8a1d-781a-4d0f-af6a-1e3071c97220",
+      "result_id": "f1a1c7a3-338e-4333-9725-a712153fba1f"
+    },
+    {
+      "claim_id": "36f3f159-22ff-4dda-8876-3e0a6b94f39d",
+      "result_id": "5261a7d6-fd4a-4b85-aa40-0b5a9a5da8f8"
+    },
+    {
+      "claim_id": "0d15068a-c04b-4208-b9af-e48d28648133",
+      "result_id": "5261a7d6-fd4a-4b85-aa40-0b5a9a5da8f8"
+    },
+    {
+      "claim_id": "a982311e-f1a4-4332-a33a-ee5b840e29a6",
+      "result_id": "5261a7d6-fd4a-4b85-aa40-0b5a9a5da8f8"
+    },
+    {
+      "claim_id": "f8e07cf3-daa8-4f41-940b-fa656804a385",
+      "result_id": "e4c61552-10d6-4818-96ab-993cbef1e6e1"
+    },
+    {
+      "claim_id": "15ee5461-a610-4da6-8503-7070798ddaab",
+      "result_id": "e4c61552-10d6-4818-96ab-993cbef1e6e1"
+    },
+    {
+      "claim_id": "de1ffdb1-e350-4f19-8dd2-1f5c5e7893a6",
+      "result_id": "e4c61552-10d6-4818-96ab-993cbef1e6e1"
+    },
+    {
+      "claim_id": "d84e53c7-fb2e-4bb3-a253-3ae7e76facdd",
+      "result_id": "e4c61552-10d6-4818-96ab-993cbef1e6e1"
+    },
+    {
+      "claim_id": "3034c3ba-c14e-4497-9edb-6d11a500656b",
+      "result_id": "e4c61552-10d6-4818-96ab-993cbef1e6e1"
+    },
+    {
+      "claim_id": "cac925de-38fa-475f-b3cb-73f3caab5711",
+      "result_id": "999442ec-a460-43b7-b283-6426fabd5c40"
+    },
+    {
+      "claim_id": "aeb56b4c-0dcb-4396-860d-cf7e5b443758",
+      "result_id": "999442ec-a460-43b7-b283-6426fabd5c40"
+    },
+    {
+      "claim_id": "772c1ca2-27c4-419d-8f8a-ef43235afd23",
+      "result_id": "999442ec-a460-43b7-b283-6426fabd5c40"
+    },
+    {
+      "claim_id": "cbdf576e-8c36-4687-ace0-5983fb72266c",
+      "result_id": "999442ec-a460-43b7-b283-6426fabd5c40"
+    },
+    {
+      "claim_id": "c5923a29-70f0-4877-8d84-33b13073cb91",
+      "result_id": "999442ec-a460-43b7-b283-6426fabd5c40"
+    },
+    {
+      "claim_id": "e8dedaab-7fa2-4eb3-9696-c9c62705c902",
+      "result_id": "999442ec-a460-43b7-b283-6426fabd5c40"
+    },
+    {
+      "claim_id": "ddb88086-d71e-4de4-8f37-45f9e8295ecc",
+      "result_id": "d792f3a5-e112-4e2d-9488-aff74cdaa199"
+    },
+    {
+      "claim_id": "5d645ee2-63b3-46ab-8a02-d46036649dfb",
+      "result_id": "d792f3a5-e112-4e2d-9488-aff74cdaa199"
+    },
+    {
+      "claim_id": "29f428fb-e0bd-4325-b160-19006ad4406a",
+      "result_id": "d792f3a5-e112-4e2d-9488-aff74cdaa199"
+    },
+    {
+      "claim_id": "22d881d5-3dfc-4d15-8358-a76839a9a31f",
+      "result_id": "80394748-4731-4af3-9d6a-d501fbec3bfc"
+    },
+    {
+      "claim_id": "971eca17-c869-4f46-8fad-23f0535d2bff",
+      "result_id": "80394748-4731-4af3-9d6a-d501fbec3bfc"
+    },
+    {
+      "claim_id": "64bc196a-ed02-47c1-aea2-741dd5bd6b0b",
+      "result_id": "80394748-4731-4af3-9d6a-d501fbec3bfc"
+    },
+    {
+      "claim_id": "bfaa51dc-87d8-48ce-b7b5-9b1bb91d3f16",
+      "result_id": "80394748-4731-4af3-9d6a-d501fbec3bfc"
+    },
+    {
+      "claim_id": "e2ddcf12-b78b-4b3e-b7a3-bee758425b9d",
+      "result_id": "80394748-4731-4af3-9d6a-d501fbec3bfc"
+    },
+    {
+      "claim_id": "d153a704-06f1-4396-b20b-6011d826b95f",
+      "result_id": "80394748-4731-4af3-9d6a-d501fbec3bfc"
+    },
+    {
+      "claim_id": "589b4af5-489e-4343-b7ee-a58a0b19114b",
+      "result_id": "80394748-4731-4af3-9d6a-d501fbec3bfc"
+    },
+    {
+      "claim_id": "df076428-8328-46a8-a03e-0dd7a37a094f",
+      "result_id": "80394748-4731-4af3-9d6a-d501fbec3bfc"
+    },
+    {
+      "claim_id": "bb86cfeb-3d96-4dc0-9902-d130d1034d67",
+      "result_id": "3a18a0dc-991f-4e4e-9687-55ca469fd77e"
+    },
+    {
+      "claim_id": "5db60e51-1d09-453f-95c8-bc66d2ea0b9a",
+      "result_id": "3a18a0dc-991f-4e4e-9687-55ca469fd77e"
+    },
+    {
+      "claim_id": "04240b37-a796-45a4-8712-1255f4da1ebc",
+      "result_id": "3a18a0dc-991f-4e4e-9687-55ca469fd77e"
+    },
+    {
+      "claim_id": "909b492e-780b-4f95-bb6c-efd603d23300",
+      "result_id": "3a18a0dc-991f-4e4e-9687-55ca469fd77e"
+    },
+    {
+      "claim_id": "5ee87d9f-a052-417e-b9a7-311fdb391e7b",
+      "result_id": "3a18a0dc-991f-4e4e-9687-55ca469fd77e"
+    },
+    {
+      "claim_id": "bd4bed02-e3a9-4927-953f-f693891dc2e7",
+      "result_id": "3a18a0dc-991f-4e4e-9687-55ca469fd77e"
+    },
+    {
+      "claim_id": "4c905278-9a70-4754-82cf-d63b867c5efc",
+      "result_id": "3a18a0dc-991f-4e4e-9687-55ca469fd77e"
+    },
+    {
+      "claim_id": "10f11d0f-e905-40ff-8ad2-f452f1a0874e",
+      "result_id": "91d2dc8d-0dba-4b65-b02f-c6af1b5e2acf"
+    },
+    {
+      "claim_id": "e757150f-7d41-4ab8-a49d-3a0e04ab5ae2",
+      "result_id": "91d2dc8d-0dba-4b65-b02f-c6af1b5e2acf"
+    },
+    {
+      "claim_id": "51309a23-2b9b-450c-a864-14a105f061b7",
+      "result_id": "91d2dc8d-0dba-4b65-b02f-c6af1b5e2acf"
+    },
+    {
+      "claim_id": "790c1132-c4fd-4b9c-b5ef-a9bdf5eb8bf8",
+      "result_id": "91d2dc8d-0dba-4b65-b02f-c6af1b5e2acf"
+    },
+    {
+      "claim_id": "ef1da497-4322-4466-b683-eb31476a0bf1",
+      "result_id": "91d2dc8d-0dba-4b65-b02f-c6af1b5e2acf"
+    },
+    {
+      "claim_id": "9b627e85-307b-49e9-843d-19222da5be17",
+      "result_id": "91d2dc8d-0dba-4b65-b02f-c6af1b5e2acf"
+    },
+    {
+      "claim_id": "3b16ca48-d27f-403c-81cc-1f416fab07a6",
+      "result_id": "2c77b5aa-9fe7-4278-956d-4ba5b4c26047"
+    },
+    {
+      "claim_id": "d50d0645-d9e4-4adf-b1f0-c263b707671b",
+      "result_id": "2c77b5aa-9fe7-4278-956d-4ba5b4c26047"
+    },
+    {
+      "claim_id": "495fe894-d2b0-4140-b9aa-4de1b267e273",
+      "result_id": "2c77b5aa-9fe7-4278-956d-4ba5b4c26047"
+    },
+    {
+      "claim_id": "bd58cf03-a0b1-4bdd-a747-f169daf57c29",
+      "result_id": "ac6060f2-fb36-4707-aacf-f513d1a7af6e"
+    },
+    {
+      "claim_id": "cc6df451-0a68-433f-a8a8-335e18700626",
+      "result_id": "ac6060f2-fb36-4707-aacf-f513d1a7af6e"
+    },
+    {
+      "claim_id": "b0394773-cb4c-4ffb-8269-d787f649818d",
+      "result_id": "ac6060f2-fb36-4707-aacf-f513d1a7af6e"
+    },
+    {
+      "claim_id": "f798e39d-20f3-4eb4-a648-ea5c474e0547",
+      "result_id": "ac6060f2-fb36-4707-aacf-f513d1a7af6e"
+    },
+    {
+      "claim_id": "3199a034-677d-44cd-b9ba-bb5ee43b10e6",
+      "result_id": "ac6060f2-fb36-4707-aacf-f513d1a7af6e"
+    },
+    {
+      "claim_id": "d6bbdf05-3e0b-4093-a6b1-f614edb65508",
+      "result_id": "ac6060f2-fb36-4707-aacf-f513d1a7af6e"
+    },
+    {
+      "claim_id": "959a6e5b-94d7-42b7-b063-9833d627b7ca",
+      "result_id": "b592fdc3-5758-439c-bced-a15464e1b8ca"
+    },
+    {
+      "claim_id": "cad4ecfc-bd4c-4075-91d8-a4c747906a1b",
+      "result_id": "b592fdc3-5758-439c-bced-a15464e1b8ca"
+    },
+    {
+      "claim_id": "89015ff8-88f6-4e0d-a334-c8b701bf7fbc",
+      "result_id": "b592fdc3-5758-439c-bced-a15464e1b8ca"
+    },
+    {
+      "claim_id": "763dc6fa-1ecc-466f-b8b4-43d9f0794252",
+      "result_id": "b592fdc3-5758-439c-bced-a15464e1b8ca"
+    },
+    {
+      "claim_id": "db7c5d46-d2c9-4635-8d01-868fd2fbf1b5",
+      "result_id": "b592fdc3-5758-439c-bced-a15464e1b8ca"
+    },
+    {
+      "claim_id": "538af158-2e2d-4463-992b-2c40b76749eb",
+      "result_id": "b1a91d61-d948-46e8-b630-c0ca8403cfbe"
+    },
+    {
+      "claim_id": "373e2621-97d6-42ef-80e1-44d56578dff6",
+      "result_id": "b1a91d61-d948-46e8-b630-c0ca8403cfbe"
+    },
+    {
+      "claim_id": "ebd108c1-ecb8-46fa-bb1f-8f2759834ef2",
+      "result_id": "b1a91d61-d948-46e8-b630-c0ca8403cfbe"
+    },
+    {
+      "claim_id": "92f26244-9924-41b6-9ac7-52bc12896e7c",
+      "result_id": "b1a91d61-d948-46e8-b630-c0ca8403cfbe"
+    },
+    {
+      "claim_id": "f5966c8f-5a21-4f77-9f06-fdce192abc31",
+      "result_id": "b1a91d61-d948-46e8-b630-c0ca8403cfbe"
+    },
+    {
+      "claim_id": "9da30ea4-2cd0-4d74-845d-86740b8ce204",
+      "result_id": "b1a91d61-d948-46e8-b630-c0ca8403cfbe"
+    },
+    {
+      "claim_id": "05fbbaa6-f3d1-4e37-8bdd-94e8b33bb4d8",
+      "result_id": "08af06e6-f046-4870-832c-8a12da585a74"
+    },
+    {
+      "claim_id": "c20543fa-66f9-427b-848e-d9dfa9a86c76",
+      "result_id": "08af06e6-f046-4870-832c-8a12da585a74"
+    },
+    {
+      "claim_id": "11021409-96a4-4ec6-b6eb-196aa164365d",
+      "result_id": "08af06e6-f046-4870-832c-8a12da585a74"
+    },
+    {
+      "claim_id": "997b628e-5afe-433b-b6f9-c438f1b7e2ae",
+      "result_id": "08af06e6-f046-4870-832c-8a12da585a74"
+    },
+    {
+      "claim_id": "7e62c06b-6a4c-40d6-9586-c55ad936b310",
+      "result_id": "08af06e6-f046-4870-832c-8a12da585a74"
+    },
+    {
+      "claim_id": "ec522817-070b-4011-9089-049100150d8c",
+      "result_id": "08af06e6-f046-4870-832c-8a12da585a74"
+    },
+    {
+      "claim_id": "1f98b3ae-1290-480b-a912-0a269aa8d13a",
+      "result_id": "08af06e6-f046-4870-832c-8a12da585a74"
+    },
+    {
+      "claim_id": "55171b3f-b5ee-4bfb-9fa2-2812fed55102",
+      "result_id": "08af06e6-f046-4870-832c-8a12da585a74"
+    },
+    {
+      "claim_id": "b2e5a12d-632d-4626-8060-009ddd6dc212",
+      "result_id": "08af06e6-f046-4870-832c-8a12da585a74"
+    },
+    {
+      "claim_id": "b4a50d59-7e81-404e-908d-fda2cf39b1f5",
+      "result_id": "3f7894fa-bc42-4e5c-ac73-557c81366f71"
+    },
+    {
+      "claim_id": "56e04ff3-98cc-4957-af2a-7353337de564",
+      "result_id": "3f7894fa-bc42-4e5c-ac73-557c81366f71"
+    }
+  ],
+  "comparisons": []
+}

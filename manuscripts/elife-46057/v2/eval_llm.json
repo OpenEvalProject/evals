@@ -1,0 +1,269 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "Cryo-EM structures of SNF2h-nucleosome complexes were determined at resolutions ranging from 3.4 \u00c5 to 8.4 \u00c5, capturing both singly and doubly bound states. The 3.4 \u00c5 structure shows SNF2h bound at SHL-2 with clear ADP density, though BeFx presence cannot be unambiguously confirmed. The AutoN and HSS domains are not visible at high resolution, suggesting conformational flexibility.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C19-C26 collectively describe the cryo-EM structure determination with appropriate resolution reporting, particle distribution analysis, and acknowledgment of limitations (C22). The structural observations are supported by density maps (Figures 1-2) and standard cryo-EM validation metrics. The interpretation of missing density as conformational flexibility (C23) is reasonable and standard practice in structural biology.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "The singly bound SNF2h-nucleosome structure at 70 mM KCl reveals asymmetric histone octamer deformation. Two specific regions show increased disorder: helix \u03b12 in H3 near the dyad and the H2A/H2B acidic patch, both distal to the bound SNF2h protomer. The disordered region in H3 interfaces with H4 residues that showed increased dynamics in previous NMR studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C29-C34 describe asymmetric octamer deformation supported by cryo-EM density analysis (Figure 2B-C) using the non-disordered face as an internal control. The connection to prior NMR data (C34) strengthens the interpretation. The use of internal controls and comparison between faces provides rigorous evidence for the asymmetric deformation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "The observed histone deformations have mechanistic implications for nucleosome sliding. Disorder near the dyad is proposed to facilitate DNA translocation, while disorder in the acidic patch may inhibit the second SNF2h protomer, preventing a tug-of-war. These interpretations are supported by prior disulfide cross-linking studies showing that constraining H3 \u03b12 alters sliding directionality.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C5-C6 and C35-C44 present mechanistic interpretations that are largely speculative (marked as INFERENCE/SPECULATION in evidence). While the structural observations are sound, the functional consequences are inferred rather than directly demonstrated. The connection to prior cross-linking studies (C37-C39) and asymmetric acidic patch mutant studies (C42) provides indirect support, but direct experimental validation of the proposed allosteric mechanism is lacking.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C7",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "Structures obtained at 140 mM KCl show a 2 bp DNA translocation from the exit site, with clearly resolved phosphate groups enabling precise base pair counting. This translocation is not observed in nucleosomes assembled without SNF2h or in structures obtained at 70 mM KCl, indicating salt-dependent and SNF2h-dependent translocation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C45-C50 describe the 2 bp translocation with appropriate controls (C48: nucleosomes without SNF2h; C49: lower salt conditions). The high resolution (3.9 \u00c5) allows confident identification of individual phosphate groups (C47), and multiple validation approaches including bootstrapping (Figure 1\u2014supplement 6) and difference maps (Figure 1\u2014supplement 5) confirm the translocation is not an artifact.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C8",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "FRET experiments confirm that SNF2h with ADP-BeFx promotes DNA translocation consistent with 1-2 bp movement. Both single-molecule and ensemble FRET show changes dependent on SNF2h presence and salt concentration (140 mM KCl), with no significant change at 70 mM KCl.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C52-C58 describe orthogonal FRET validation of the translocation observed by cryo-EM. The experiments include appropriate controls (C54, C56: no SNF2h; C58: 70 mM KCl) and use two different labeling schemes (single-molecule and ensemble FRET), providing convergent evidence. The salt-dependence matches the cryo-EM observations, strengthening the overall conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "The authors propose that structures at 70 mM KCl represent pre-translocation intermediates with octamer deformation, while structures at 140 mM KCl represent post-translocation states where the octamer has relaxed. The higher proportion of singly bound SNF2h at SHL-2 in the 140 mM KCl dataset is interpreted as resulting from dissociation of the more flexible SHL+2 protomer during grid preparation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C59-C66 present a model to reconcile the different states observed under different conditions. However, this interpretation is largely speculative (C59, C63, C64 marked as SPECULATION). The authors acknowledge uncertainty about salt effects during plunge freezing and cannot definitively establish the temporal relationship between the observed states. Alternative explanations for the particle distribution differences are not fully excluded.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "The structure reveals large conformational rearrangements in SNF2h upon nucleosome binding, including RecA lobe repositioning and brace helix movement. The AutoN domain moves away from its position in the apo structure, and RecA lobe 2 now engages the H4 tail basic patch, providing a structural explanation for H4 tail-mediated relief of AutoN autoinhibition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C77 describe conformational changes supported by comparison to apo structures (Figure 3B, Figure 3\u2014supplement 3). The structural observations are clear, and the interpretation regarding AutoN relief (C76) is well-supported by prior biochemical data (C70-C71, C77). The comparison to similar interactions in isolated ATPase-H4 peptide structures (C77) validates the observed contacts.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "New interactions between RecA lobe 2 and histone H3 core are revealed, involving residues K440 and K443. Mutagenesis shows K443A causes a 6-fold defect in remodeling with minimal effect on ATPase activity (\u22642 fold), suggesting a role in coupling ATP hydrolysis to sliding. K443 is unique to and conserved across ISWI family members.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C85 combine structural observations with functional validation through mutagenesis (Figure 3D-F). The differential effects on remodeling versus ATPase activity (C83) support the proposed coupling role. The conservation analysis (C80) and comparison to CHD family (C86) strengthen the significance. However, the mechanistic interpretation (C84) remains speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "DNA contacts at SHL-2 involve conserved residues W581 and N448. N448A causes a ~9-fold defect in remodeling without affecting Km, while W581A causes a 3-fold defect. Both mutations have smaller effects on ATPase activity (\u22642 fold), suggesting roles in coupling ATP hydrolysis to DNA translocation. DNA distortion is observed at SHL-2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C95 describe DNA contacts with functional validation through mutagenesis (Figure 4B-D). The kinetic analysis distinguishing kmax from Km effects (C91-C92) and comparing remodeling to ATPase activity (C93) provides mechanistic insight. The observed DNA distortion (C94) is consistent with prior biochemical observations (C95), providing convergent evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "Cross-gyre contacts near SHL\u00b16 differ between remodeler families. While Swi2/Snf2 shows strong contacts via a positively charged patch, SNF2h shows RecA lobe 1 positioned near SHL+6 without close contacts. K298E mutation causes only ~3-fold reduction in sliding, suggesting a modest role for this interaction in SNF2h.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C102 compare SNF2h to other remodelers with appropriate citations (C96-C99). The structural observation (C100) and functional validation (C101) are consistent. The modest effect of K298E mutation supports the interpretation that cross-gyre contacts are less important for ISWI than for SWI/SNF remodelers, highlighting mechanistic differences between families.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C9",
+      "C113",
+      "C114",
+      "C115",
+      "C116"
+    ],
+    "result": "The authors propose a model for allosteric control where one SNF2h protomer promotes asymmetric octamer deformation to inhibit the second protomer while stimulating directional DNA translocation. The structure at lower salt mimics a pre-translocation intermediate, while collapse of this intermediate results in an elemental translocation step mimicked by the higher salt structure.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C9, C113-C116 present the central mechanistic model of the paper. While the model is consistent with the structural observations and prior single-molecule data (C117), it remains largely speculative. The temporal relationship between states, the mechanism of allosteric communication, and the coupling between octamer deformation and translocation are inferred rather than directly demonstrated. The model requires validation through additional experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112"
+    ],
+    "result": "The EM reconstructions at 70 mM KCl provide structural insight into SNF2h-mediated octamer fluctuations. Unlike defined alternative helical conformations observed in nucleosomes alone, the EM density changes imply an ensemble of states with increased disorder. The disorder is asymmetric and distal from the bound SNF2h, suggesting an allosteric mode of octamer deformation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C103-C112 connect the current structural observations to prior work on nucleosome dynamics (C105-C109). The interpretation of EM density as representing an ensemble of disordered states (C111) rather than discrete conformations is reasonable given the resolution and density characteristics. The asymmetric nature (C112) is well-supported by the internal control analysis (C29-C31).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C27",
+      "C37",
+      "C38",
+      "C39",
+      "C41",
+      "C42",
+      "C51",
+      "C70",
+      "C71",
+      "C77",
+      "C86",
+      "C89",
+      "C96",
+      "C97",
+      "C117"
+    ],
+    "result": "The manuscript contextualizes findings within established knowledge about chromatin remodelers, including SNF2h functioning as a dimer, differences between remodeler families, the role of the H4 tail and acidic patch, and prior studies on histone dynamics and nucleosome sliding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2, C10-C18, C27, C37-C42, C51, C70-C71, C77, C86, C89, C96-C97, C117 represent background knowledge and prior work appropriately cited throughout the manuscript. These claims provide context for interpreting the new structural and functional data. The citations appear accurate and relevant to the claims made.",
+    "result_type": "MINOR"
+  }
+]

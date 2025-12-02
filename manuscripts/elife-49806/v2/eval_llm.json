@@ -1,0 +1,308 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C88"
+    ],
+    "result": "The lid subcomplex is required for proteasome function independent of its deubiquitination activity. Using a ubiquitin-independent substrate-delivery system (SspB-fused base with ssrA-tagged substrates), the authors demonstrate that even when Rpn11-mediated deubiquitination is bypassed, the lid is still essential for efficient ATP-dependent degradation. This contrasts with other compartmental proteases where the AAA+ motor and peptidase alone are sufficient.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C34 and C88 are well-supported by experimental data shown in Figure 1A and supplements. The ubiquitin-independent delivery system is a valid approach to isolate the lid's structural role from its deubiquitination function. The data clearly show that base + core alone cannot efficiently degrade substrate, while addition of lid restores activity. This is a key control demonstrating the lid's non-catalytic role.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C89",
+      "C95"
+    ],
+    "result": "The Rpn5-VTENKIF mutation, which disrupts the interaction between Rpn5's VTENKIF-containing loop and Rpt3's small AAA+ subdomain (a contact present only in the s1 state), significantly impairs proteasome degradation activity. The mutation decreases degradation rates for both ubiquitin-dependent and -independent substrates by approximately 6-fold, with minimal effects on proteasome assembly, lid-base affinity, or the presence of the Nas6 chaperone.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C35-C44, C89, and C95 are strongly supported by multiple lines of evidence including degradation assays (Figure 1C), native PAGE (Figure 1\u2014supplement 2), ATPase measurements (Figure 1\u2014supplement 1D), and Nas6 retention studies (Figure 1\u2014supplements 1E-F). The authors appropriately control for assembly defects and demonstrate that the degradation defect is intrinsic to substrate processing rather than holoenzyme formation. The structural basis (VTENKIF-Rpt3 contact) is well-established from prior cryo-EM studies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C29",
+      "C45",
+      "C46",
+      "C47",
+      "C49",
+      "C91"
+    ],
+    "result": "Negative-stain EM analysis reveals that Rpn5-VTENKIF mutant proteasomes have a perturbed conformational landscape. In the presence of ATP, wild-type proteasomes show nearly equal distribution of s1 and s2 states, while Rpn5-VTENKIF mutants show only 37% s1 state and populate substrate-engaged-like states (s3/s4/s6) absent in wild-type. The mutant predominantly displays s2 or s5 conformations characterized by Rpn11 obstructing the central pore. With ATP\u03b3S, the mutant behaves similarly to wild-type, demonstrating retained conformational responsiveness.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29, C45-C47, C49, and C91 are supported by negative-stain EM data (Figure 2 and supplements 3-6). The conformational classification is based on comparison to established atomic models from Eisele et al. 2018. While negative-stain EM has limited resolution compared to cryo-EM, the approach is appropriate for assessing conformational distributions. The observation that ATP\u03b3S normalizes the mutant's behavior provides important validation that the conformational machinery remains intact.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C5",
+      "C30",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C103",
+      "C108"
+    ],
+    "result": "Walker-B mutations in individual Rpt subunits differentially affect proteasome conformational equilibrium. Rpt6-EQ and Rpt4-EQ mutants show severe degradation defects and do not respond to ubiquitin-bound Ubp6 in ATPase stimulation assays, suggesting they adopt non-s1 states even without substrate. Rpt6-EQ shows elevated gate opening in ATP that resembles ATP\u03b3S-bound wild-type and does not further increase with ATP\u03b3S. Other Walker-B mutants (Rpt1, Rpt2, Rpt3, Rpt5) retain some Ubp6-mediated ATPase stimulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C30, C50-C55, C103, and C108 are well-supported by functional assays including Ubp6-mediated ATPase stimulation (Figure 3B), Ubp6 DUB activity (Figure 3C), and gate-opening measurements (Figure 3D). The use of Ubp6 as a conformational reporter is validated by prior work. The differential effects of Walker-B mutations in different Rpt subunits are consistent with the functional asymmetry of the AAA+ motor. Assembly controls (Figure 1\u2014supplement 2, Figure 3\u2014supplement 2) appropriately rule out assembly defects as the primary cause.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C4",
+      "C31",
+      "C64",
+      "C69",
+      "C78",
+      "C79",
+      "C80",
+      "C86"
+    ],
+    "result": "Disrupting Rpn5-base or Rpt6 nucleotide state primarily affects degradation initiation rather than later processing steps. Michaelis-Menten analysis shows Rpt6-EQ and Rpn5-VTENKIF mutations decrease kcat ~6-fold with minimal Km effects, indicating substrate engagement in the s1 state is not impaired. Restart experiments after o-PA-induced stalling demonstrate that both mutants fully regain wild-type degradation rates, confirming that only tail insertion and engagement are compromised while subsequent deubiquitination, unfolding, and translocation remain intact.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C31, C64, C69, C78-C80, and C86 are strongly supported by kinetic analyses (Figure 4A), restart experiments (Figure 5B), and FRET-based tail insertion assays (Figure 5A, supplements). The restart experiment is particularly compelling evidence that later steps are unaffected. The interpretation that minimal Km changes indicate normal engagement in s1 state is reasonable given prior work establishing the relationship between Km and engagement (Bard et al. 2019). The shift in rate-limiting step from unfolding to engagement is a logical inference from the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "FRET-based tail insertion assays show that substrate tail insertion takes approximately twice as long for Rpn5-VTENKIF and Rpt6-EQ mutant proteasomes compared to wild-type. Minimal tail insertion is observed with ATP\u03b3S or in the absence of core and lid for both wild-type and mutant proteasomes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C76 are supported by FRET measurements (Figure 5A, Figure 5\u2014supplement 1). The FRET assay using Cy3-labeled proteasomes and Cy5-labeled substrate with o-PA-inhibited Rpn11 is well-designed to specifically measure tail insertion. The ~2-fold increase in insertion time for mutants is consistent with their conformational defects. Controls with ATP\u03b3S and incomplete proteasomes validate the assay specificity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C77",
+      "C107"
+    ],
+    "result": "Rpn5-VTENKIF and Rpt6-EQ mutant proteasomes fully regain wild-type degradation rates when restarted after an o-PA-induced deubiquitination stall, demonstrating that post-engagement processing steps (deubiquitination, unfolding, translocation) are not compromised by these mutations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77 and C107 are strongly supported by restart experiment data (Figure 5B, Figure 5\u2014supplement 2A). The experimental design is elegant: by stalling proteasomes after engagement but before deubiquitination, then restarting with Zn2+, the authors isolate post-engagement steps. The complete rescue of degradation rates in mutants is compelling evidence that only initiation is affected. This is a critical result distinguishing engagement defects from processing defects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "Substrate stability comparison experiments reveal that the rate-limiting step differs between wild-type and mutant proteasomes depending on substrate stability. Wild-type degrades destabilized titin-I27V13P/V15P significantly faster than non-destabilized titin-I27, while Rpn5-VTENKIF and Rpt6-EQ mutants show minimal differences. All three proteasome variants degrade non-destabilized titin-I27 at comparable rates, indicating that for highly stable substrates, unfolding becomes rate-limiting even for mutants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C85 are supported by degradation rate measurements with substrates of varying stability (Figure 5C, Figure 5\u2014supplement 2B). The interpretation that unfolding is not rate-limiting for mutants with destabilized substrates is logical given the similar rates for substrates with different stabilities. The convergence of rates for the stable substrate suggests unfolding becomes limiting for all variants. This provides additional evidence that engagement, not unfolding, is the primary defect in mutants.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C105"
+    ],
+    "result": "Rpt4-EQ mutant proteasomes are degradation-incompetent, showing no discernible degradation activity at any substrate concentration tested. Single-turnover measurements reveal only deubiquitination without peptide product formation. Free Rpt4-EQ regulatory particle shows minimal deubiquitination activity that increases upon core docking, but the holoenzyme still lacks substrate engagement or translocation activities.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C68 and C105 are well-supported by Michaelis-Menten analysis (Figure 4A), single-turnover measurements (Figure 4B-C), and regulatory particle deubiquitination assays (Figure 4\u2014supplement 1). The complete loss of degradation activity despite retained deubiquitination and assembly is striking. The authors appropriately distinguish between deubiquitination and degradation. This explains the lethality of this mutant in yeast (Eisele et al. 2018) and highlights Rpt4's critical role.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "Rpt4-EQ mutant proteasomes display unusual behavior: they interact with ubiquitin-bound Ubp6 similar to engaged-state proteasomes but fail to properly open the core gate. Gate-opening resembles ATP-bound wild-type and is unresponsive to ATP\u03b3S. While native-PAGE shows decreased assembly under non-equilibrium conditions, the gate-opening defect persists at increased base concentrations, suggesting a biased conformational landscape rather than assembly defects. The Rpt4-EQ mutation is dominant over Rpn5-VTENKIF in determining conformational state.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C62 are supported by gate-opening assays (Figure 3D), native-PAGE (Figure 1\u2014supplement 2), and concentration-dependence studies (Figure 3\u2014supplement 2). The interpretation that Rpt4-EQ induces a partially distorted conformation is reasonable given the discordant Ubp6 and gate-opening behaviors. The dominance experiments with double mutants provide additional mechanistic insight. However, the exact nature of the Rpt4-EQ conformational defect remains somewhat uncertain.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C63",
+      "C109",
+      "C110"
+    ],
+    "result": "Rpn5-VTENKIF mutation shows moderately increased core gate-opening that still responds to ATP\u03b3S, indicating partial conformational shift. Double mutant analysis reveals that Rpt6-EQ and Rpt4-EQ mutations are dominant over Rpn5-VTENKIF for gate-opening, suggesting nucleotide states in the motor primarily drive conformational switching. However, Rpn5-VTENKIF dominates degradation defects when combined with Rpt6-EQ, potentially due to different dynamics of conformational switching.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C57, C63, C109-C110 are supported by gate-opening assays with single and double mutants (Figure 3D). The epistasis analysis provides insight into the relative contributions of lid-base contacts versus motor nucleotide states. The interpretation that different dynamics explain the discordant dominance patterns is speculative but reasonable. These results help establish a hierarchy of conformational control mechanisms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C112",
+      "C113",
+      "C114",
+      "C115"
+    ],
+    "result": "The study establishes that Rpn5-VTENKIF and Rpt6-EQ mutations affect conformational switching through distinct mechanisms despite producing similar degradation defects. Rpn5-VTENKIF disrupts critical lid-base interactions and destabilizes the s1 state through spontaneous re-equilibration. Rpt6-EQ stabilizes substrate-processing states and inhibits sequential ATPase cycle progression, pulling equilibrium away from s1. Both highlight the critical importance of s1 state population for substrate-tail insertion and engagement before conformational switching to processing states.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93-C94, C112-C115 represent the major mechanistic conclusions of the study, synthesizing data from multiple experimental approaches. The distinction between destabilizing s1 (Rpn5-VTENKIF) versus stabilizing processing states (Rpt6-EQ) is well-supported by the conformational, kinetic, and functional data. The proposal that lid-base contact breaking is an early step in s1\u2192processing transition (C93-C94) is a reasonable mechanistic hypothesis based on structural observations, though somewhat speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "The authors propose that non-s1 states do not significantly contribute to substrate processing because Rpn11's coaxially aligned position obstructs substrate-tail insertion and limits DUB access. They hypothesize that weakening lid-base interactions may increase conformational switching dynamics and shorten s1 state lifetime below the time constant for tail insertion (~1.6 s), which would disrupt the kinetic-gateway substrate-selection mechanism and cause degradation defects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C70-C72, C98-C100 represent mechanistic hypotheses and speculation rather than directly demonstrated results. While the structural reasoning about Rpn11 obstruction is sound and supported by prior work, the proposal about shortened s1 lifetime and increased dynamics is not directly tested. The EM provides static snapshots of conformational distributions but cannot measure dynamics or state lifetimes. The hypothesis is plausible and consistent with the data, but would require additional experiments (e.g., single-molecule studies) to validate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C116",
+      "C117",
+      "C118",
+      "C119"
+    ],
+    "result": "The authors speculate that the alternative mechanisms for shifting conformational landscape (lid-base contacts vs. motor nucleotide states) suggest numerous possibilities for regulatory fine-tuning through posttranslational modifications or binding partners. They propose that modulating conformational equilibria could differentially influence turnover of specific substrate pools, and expect this regulatory mechanism to be conserved in eukaryotic proteasomes given structural/functional conservation between yeast and humans.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C116-C119 represent speculation about broader implications rather than demonstrated results. While the speculation is reasonable and supported by existing knowledge of proteasome regulation (VerPlank citations), these are hypotheses for future work rather than conclusions from the current study. The observation that mutations affect different substrates differently (C118) provides some support, but the regulatory implications remain to be tested. Conservation (C119) is a reasonable expectation but not demonstrated here.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C87"
+    ],
+    "result": "The manuscript provides extensive background on proteasome structure, function, and conformational states, establishing the context for the current work. This includes the proteasome's role in proteostasis, its structural organization (core, base, lid), the AAA+ motor mechanism, substrate requirements, conformational states (s1-s6) identified by prior cryo-EM studies, and the functional asymmetry of Rpt subunits demonstrated by mutational studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2, C6-C28, and C87 represent established knowledge from prior work, appropriately cited throughout. These provide essential context but are not novel findings of this study. The authors accurately represent prior work and cite appropriate references. This background is necessary to understand the significance of the current findings but does not constitute a result of this manuscript.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C48",
+      "C90",
+      "C92",
+      "C101",
+      "C102",
+      "C104",
+      "C106",
+      "C111"
+    ],
+    "result": "The study compares Rpn5-VTENKIF effects to prior Walker-B mutant studies and provides structural context for Rpt6 and Rpt4 nucleotide states in different conformations. The comparison reveals similarities in conformational landscape perturbations while noting unique features of each mutant. The authors acknowledge uncertainty about whether Rpt4-EQ defects originate solely from conformational bias or also affect other degradation steps.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48, C90, C92, C101-C102, C104, C106, and C111 represent comparisons to prior work and acknowledgment of limitations. The comparison to Eisele et al. 2018 is appropriate and helps contextualize the findings. The structural information about Rpt6 nucleotide states (C101-C102) is established knowledge used to interpret results. The acknowledgment of uncertainty about Rpt4-EQ mechanism (C106) is appropriate scientific caution. These are valid interpretive points but not primary results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C73",
+      "C96",
+      "C97"
+    ],
+    "result": "The authors note that their prior work established that substrate engagement triggers the conformational change from s1, breaking Rpn5-VTENKIF contacts. They emphasize that the Rpn5-VTENKIF mutant contains an unmodified ATPase ring with mutations relevant only in s1 state, providing cleaner evidence for s1-state requirement than prior ATP\u03b3S experiments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73, C96-C97 represent methodological context and comparison to prior approaches. The point that Rpn5-VTENKIF provides cleaner evidence than ATP\u03b3S experiments (C97) is valid and represents an important advance in experimental design. However, this is more about the strength of the approach than a novel result per se. The reference to prior work (C73) provides necessary context.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,411 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "BCL6 expression and chromatin binding are enriched in the fed state and diminish with fasting. BCL6 mRNA and protein levels decrease sharply from fed to fasted state, with BCL6 occupancy diminished at the majority of binding sites and the cistrome reduced by 39% with fasting.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C46, C47, and C48 are well-supported by qPCR, Western blot, and ChIP-seq data (Figure 1D-F). The reciprocal pattern between BCL6 (fed-enriched) and PPAR\u03b1 (fasting-induced) is consistently demonstrated across multiple experimental approaches with appropriate biological replicates.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C2",
+      "C23",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "BCL6 and PPAR\u03b1 converge genome-wide at over 13,000 shared regulatory regions in sub-nucleosomal proximity. These overlapping peaks represent 77% of the BCL6 cistrome and 41% of the PPAR\u03b1 cistrome, with >96% showing <100 bp distance between peak centers, predominantly in intragenic and intergenic locations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C23, C51-C57 are strongly supported by ChIP-seq data with biological triplicates (Figure 1F-H). The spatial proximity analysis, genomic distribution, and tag density comparisons provide robust evidence for independent but proximate binding. The reciprocal binding patterns upon fasting are confirmed by ChIP-qPCR.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "BCL6 ChIP-seq identified over 15,000 high-confidence binding sites in fed liver enriched near genes involved in lipid/ketone metabolism, PPAR signaling, and peroxisomal/mitochondrial functions. Motif analysis revealed enrichment for BCL6, PPAR, FOXA1, C/EBP, HNF4, and HNF6 response elements.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C43 are supported by ChIP-seq data from biological triplicates and computational analyses (Figure 1A-B). Gene ontology and motif enrichment analyses were performed using established methods (GREAT, HOMER). The consistency between input-controlled and Bcl6LKO-controlled peak calling strengthens confidence in hepatocyte-specific binding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C145"
+    ],
+    "result": "BCL6 and PPAR\u03b1 bind independently to chromatin, as genetic ablation of Ppara does not affect BCL6 binding, liver-specific deletion of Bcl6 does not alter PPAR\u03b1 binding, and both Ppara and Ppard are genetically dispensable for BCL6 chromatin recruitment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58, C59, and C145 are supported by ChIP-seq experiments in genetic knockout models (Figure 2A-B). The independence of binding is demonstrated through loss-of-function approaches in multiple genotypes, ruling out protein-protein interaction-dependent chromatin recruitment.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "PPAR\u03b4 is expressed at low levels in liver and shows limited independent co-localization with BCL6 (87 sites without PPAR\u03b1). While 85% of PPAR\u03b4 sites overlap with PPAR\u03b1's more extensive cistrome, PPAR\u03b4 binding diminishes by half with fasting, suggesting competition with PPAR\u03b1 at shared sites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C69 are supported by qPCR, ChIP-seq data in PpardLKO mice, and cistrome overlap analysis (Figure 2). The prior report of PPAR\u03b4-BCL6 interaction (Lee et al., 2003) is appropriately cited, but the genetic data demonstrate this interaction is not required for BCL6 chromatin binding. The competition model between PPAR\u03b1 and PPAR\u03b4 is reasonably inferred from the data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "Bcl6LKO mice exhibit 75% reduced Bcl6 mRNA and >90% diminished protein in liver. RNA-seq revealed 721 upregulated and 362 downregulated genes (>2-fold), indicating BCL6 predominantly functions as a transcriptional repressor, particularly at strongly bound sites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C75 are supported by qPCR, Western blot, and RNA-seq data (Figure 3A-B, Figure 3\u2014figure supplement 1). The 2:1 ratio of upregulated to downregulated genes provides strong evidence for predominant repressor function. The correlation between BCL6 binding strength and repression is appropriately analyzed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "BCL6 co-localizes with SMRT, NCoR, and HDAC3 at 6,643 common sites (79% overlap), though thousands of corepressor sites are BCL6-independent. In Bcl6LKO livers, corepressor occupancy at BCL6 sites is significantly reduced and inversely correlated with elevated H3K27ac, indicating BCL6 recruits SMRT/NCoR-HDAC3 complexes to repress regulatory regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C86 are supported by ChIP-seq for BCL6, SMRT, NCoR, HDAC3, and H3K27ac in control and Bcl6LKO mice (Figure 3C-D). The cistrome overlap analysis, motif enrichment, and inverse correlation with H3K27ac provide strong mechanistic evidence. However, persistent corepressor signals in Bcl6LKO mice suggest additional complexity not fully explained.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "Bcl6 deletion and fasting regulate overlapping gene expression programs enriched for lipid metabolism, oxidation, and PPAR signaling. Over 40% of fasting-regulated genes (135/336) are controlled by BCL6, and Bcl6LKO gene expression patterns resemble fasted rather than fed profiles regardless of nutritional status.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C92 are supported by RNA-seq in fed/fasted control and Bcl6LKO mice with appropriate replicates (Figure 4A-D). Gene ontology analysis and unsupervised clustering provide robust evidence. The overlap between fasting and Bcl6 deletion transcriptional programs is substantial and statistically significant.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "Over 50% of fasting-regulated genes contain co-occurring BCL6-PPAR\u03b1 binding sites (median of 2 sites per gene), compared to 24% with PPAR\u03b1-only or 1.4% with BCL6-only sites. Genes with BCL6-PPAR\u03b1 regulatory elements exhibit significantly greater expression ranges and are enriched for lipid regulation and oxidative metabolism functions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93-C97 are supported by integrated ChIP-seq and RNA-seq analysis (Figure 4\u2014figure supplement 2). The statistical enrichment of BCL6-PPAR\u03b1 sites at fasting genes and the correlation with expression dynamics are appropriately quantified. Gene ontology analysis supports functional enrichment claims.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "In Ppara-/- mice, Bcl6 deletion rescued 209 of 795 dysregulated genes, restoring expression of genes involved in monocarboxylic acid/lipoprotein metabolism, ketone body synthesis, AMPK/PPAR signaling, and peroxisomes. H3K27ac is reestablished or enhanced at BCL6-PPAR\u03b1 sites in Ppara-/-;Bcl6LKO livers, indicating BCL6 de-repression restores aberrant enhancer activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C99-C103 are supported by RNA-seq and H3K27ac ChIP-seq in Ppara-/-;Bcl6LKO mice (Figure 5A-C). The rescue of gene expression and enhancer activity in the absence of PPAR\u03b1 is a key finding. However, only 26% (209/795) of dysregulated genes are rescued, indicating partial compensation. The mechanistic link between BCL6 loss and enhancer restoration is well-demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "In Ppara-/-;Bcl6LKO mice, HDAC3 is substantially diminished at BCL6-PPAR\u03b1 sites, Ppard expression is significantly increased, BCL6 binds multiple intronic sites in Ppard (suggesting direct repression), and PPAR\u03b4 binding is increased near rescued genes. Loss of BCL6 relieves repression and potentiates PPAR\u03b4-mediated transactivation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C104-C110 are supported by HDAC3 and PPAR\u03b4 ChIP-seq, qPCR, and integrated analysis (Figure 5D-G). The mechanistic model linking BCL6 loss to both direct de-repression and indirect PPAR\u03b4 upregulation is well-supported. The dual mechanism (loss of HDAC3 repression + increased PPAR\u03b4 activation) provides a compelling explanation for rescue in Ppara-/- mice.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C111",
+      "C112",
+      "C113"
+    ],
+    "result": "Bcl6LKO mice exhibit higher circulating ketone bodies in both fed and fasted states and increased rates of complete fatty acid oxidation in liver homogenates, with no differences in fatty acid uptake, triglyceride secretion, or hepatic lipogenesis compared to controls.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C111-C113 are supported by ketone body measurements, 14C-palmitate oxidation assays, and deuterium incorporation studies (Figure 6A-E). The specificity for oxidation without effects on uptake, secretion, or synthesis strengthens the conclusion that BCL6 specifically regulates catabolic pathways. Sample sizes appear adequate (N=3-12).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C114",
+      "C115",
+      "C116",
+      "C117"
+    ],
+    "result": "Bcl6LKO mice are profoundly protected from high-fat diet-induced steatosis, showing >50% reduction in hepatic triglyceride content despite similar body weight gain. HFD-exposed Bcl6LKO mice exhibit significantly lower fasting glucose and trends toward enhanced insulin responsiveness.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C5, C114-C117 are supported by histology, triglyceride measurements, glucose/insulin assays, and phospho-AKT analysis after 5-19 weeks of HFD (Figure 6F-H, Figure 6\u2014figure supplement 1). The protection from steatosis is dramatic and well-documented. The insulin responsiveness data show a trend but lack statistical significance, appropriately noted. The metabolic improvements are consistent with enhanced fatty acid oxidation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127"
+    ],
+    "result": "In Ppara-/- mice, hepatocyte Bcl6 ablation restores enhancer activity, overcomes defective fasting-induced fatty acid oxidation and lipid accumulation. Ppara-/-;Bcl6LKO mice show 23% reduced triglyceride accumulation, higher rates of palmitate oxidation, and elevated ketone bodies compared to Ppara-/- mice, demonstrating that BCL6 loss rescues metabolic defects of Ppara deficiency.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C8, C122-C127 are supported by histology, triglyceride measurements, 14C-palmitate oxidation assays, and ketone body measurements in Ppara-/-;Bcl6LKO mice (Figure 6I-L). The rescue of multiple metabolic phenotypes in the absence of PPAR\u03b1 is remarkable and well-documented. The 23% reduction in triglycerides is statistically significant but represents partial rescue, consistent with the gene expression data showing ~26% of genes rescued.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C3",
+      "C9",
+      "C10",
+      "C128",
+      "C129",
+      "C130",
+      "C151",
+      "C152"
+    ],
+    "result": "BCL6 potently suppresses fasting transcription and functions as a negative regulator of oxidative metabolism. The BCL6-PPAR\u03b1 cis-regulatory module at >13,000 regions annotates to >1,400 fasting-responsive genes. Alternating recruitment of BCL6 (repressive) and PPAR\u03b1 (activating) to shared regulatory regions dictates hepatic lipid handling, demonstrating that 'active repression' plays key roles in metabolic state transitions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C9, C10, C128-C130, C151-C152 represent the major conceptual conclusions supported by the integrated genomic, transcriptomic, and functional data. The model of alternating repressor/activator recruitment is well-supported by ChIP-seq showing reciprocal binding patterns, RNA-seq showing Bcl6LKO mimics fasting, and functional assays showing enhanced oxidation. The citation to 'active repression' (Hanna-Rose and Hansen, 1996) appropriately contextualizes the findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C25",
+      "C26"
+    ],
+    "result": "Genes harboring BCL6-PPAR\u03b1 regulatory modules constitute over 50% of fasting-responsive transcripts and exhibit particularly dynamic expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C26 are supported by integrated ChIP-seq and RNA-seq analysis showing that genes with BCL6-PPAR\u03b1 sites are enriched among fasting-regulated genes and show greater expression ranges (Figure 4\u2014figure supplement 2). The statistical enrichment and correlation with expression dynamics are appropriately demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C49",
+      "C50"
+    ],
+    "result": "Ppara is the dominantly expressed PPAR subtype in liver, and PPAR\u03b1 RNA and protein levels increase with overnight fasting. PPAR\u03b1 recruitment is enhanced and its cistrome expands by 36% with fasting.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44, C45, C49, C50 are supported by RNA-seq, qPCR, Western blot, and ChIP-seq data (Figure 1C-F). The dominant expression of Ppara and its fasting induction are well-established and appropriately cited (Kersten et al., 1999). The 36% cistrome expansion with fasting is quantified from ChIP-seq data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C135",
+      "C118",
+      "C119"
+    ],
+    "result": "Loss of Bcl6 in hepatocytes causes cell-autonomous enhancement of fatty acid oxidation without direct impact on lipid synthesis. Bcl6LKO mice have heightened capacity to catabolize lipids via \u03b2-oxidation and subsequent ketogenesis or TCA cycling, as well as improved glucose homeostasis when challenged with high-fat diet.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C135, C118, C119 summarize the functional metabolic phenotypes supported by fatty acid oxidation assays, lipogenesis measurements, ketone body assays, and glucose/insulin measurements (Figure 6). The cell-autonomous nature is demonstrated by hepatocyte-specific deletion. The lack of effect on lipid synthesis is important for establishing specificity of the catabolic phenotype.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C139",
+      "C140",
+      "C141"
+    ],
+    "result": "Nearly 80% overlap exists between BCL6 and SMRT/NCoR/HDAC3 cistromes in liver, but thousands of corepressor binding peaks are BCL6-independent. Persistent ChIP-seq signals for corepressors in Bcl6LKO mice indicate SMRT/NCoR/HDAC3 may engage multiple transcription factor complexes within single regulatory regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C139-C141 are supported by ChIP-seq data in control and Bcl6LKO mice (Figure 3C-D). The extensive but incomplete overlap and persistent corepressor binding in knockouts are well-documented. The inference about multiple TF complexes is reasonable but represents interpretation rather than direct demonstration. This complexity is important for understanding corepressor biology beyond BCL6.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C70"
+    ],
+    "result": "BCL6-PPAR\u03b1-PPAR\u03b4 shared or BCL6-PPAR\u03b1 exclusive peaks annotate predominantly to genes controlling metabolism of lipids and lipoproteins, fatty acids, triacylglycerol, ketone bodies, PPAR signaling, and biological oxidations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C70 is supported by gene ontology analysis of ChIP-seq peaks (Figure 2E). The functional enrichment is consistent with the metabolic phenotypes and provides biological context for the genomic findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C98",
+      "C120",
+      "C121",
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C136",
+      "C137",
+      "C138",
+      "C142",
+      "C143",
+      "C144",
+      "C147",
+      "C148"
+    ],
+    "result": "Background and context claims about metabolic transcriptional regulation, BCL6 biology, and prior literature. These include established knowledge about lac operon, SREBP/ChREBP, FOXOs, GR/CREB, PPAR\u03b1, fasting enhancers, BCL6 structure/function, corepressor interactions, and prior work on BCL6 in liver and other systems.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C22, C98, C120-C121, C131-C134, C136-C138, C142-C144, C147-C148 represent background knowledge and literature context appropriately cited throughout. These claims establish the scientific foundation and rationale for the study. The citations appear accurate and relevant. The characterization of prior BCL6 knowledge as 'poorly defined' outside immune cells (C131) is reasonable given the literature at the time.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C146"
+    ],
+    "result": "BCL6 opposition to PPAR\u03b1 occurs via proximate binding at independent cis-regulatory elements, a mechanism distinct from FXR competition for DR1-binding sites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C146 is supported by ChIP-seq data showing independent binding in genetic knockouts and is appropriately contrasted with the FXR mechanism (Lee et al., 2014). This mechanistic distinction is important for understanding transcriptional regulation diversity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C149",
+      "C150"
+    ],
+    "result": "BCL6-PPAR elements in fasting enhancers endow them with variably repressive or activating regulatory potential, contributing to dynamic gene expression. Genetic Bcl6 ablation de-represses BCL6-PPAR regulatory regions and compensates for loss of PPAR\u03b1 transactivity in Ppara-/-;Bcl6LKO mice.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C149-C150 represent mechanistic interpretations supported by the ChIP-seq, RNA-seq, and H3K27ac data in multiple genotypes. C149 includes appropriate speculation ('we speculate') about the functional consequences of the regulatory architecture. C150 is well-supported by the rescue experiments in Ppara-/-;Bcl6LKO mice.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C153",
+      "C154"
+    ],
+    "result": "Inhibitors of BCL6 have been developed to target BCL6 and its corepressor interactions. BCL6 de-repression could represent a future therapeutic strategy for non-alcoholic fatty liver disease.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C153 is supported by appropriate citations (Cardenas et al., 2016; Lu et al., 2018). Claim C154 represents speculation about therapeutic potential based on the functional data showing protection from steatosis. While the preclinical data are compelling, translation to human NAFLD therapy requires substantial additional validation including safety studies, as BCL6 has critical immune functions. The claim appropriately uses cautious language ('could represent', 'raise the possibility').",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,261 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "The study analyzed 472,449 peer review reports from the PEERE database covering 61 Elsevier journals across four research areas. The dataset included information on reviewer recommendations (5.6% accept, 28.5% minor revisions, 34.2% major revisions, 31.7% reject), type of peer review (87.1% single-blind, 12.9% double-blind), and reviewer gender (75.9% male, 24.1% female).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C22-C31, and C86-C92 provide comprehensive descriptive statistics about the dataset composition and filtering process. The sample size, distribution of recommendations, peer review types, and gender proportions are clearly documented with specific numbers that are internally consistent.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "Gender determination was achieved for 81.1% of reviewers using a multi-stage approach combining salutation (6.3%), gender-guesser (77.2%), and Gender API (16.5%). The remaining 18.9% were assigned unknown gender, consistent with non-classification rates in previous research.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93-C98 describe the gender determination methodology with specific percentages that sum correctly. The validation against previous research (C98) provides external support for the approach, though the method's accuracy depends on the cited benchmarks which are not independently verified here.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "Report length varied systematically by reviewer recommendation, with accept reports being shortest, followed by minor revisions, reject, and major revisions (longest). Social sciences reports were significantly longer than medical reports, men wrote longer reports than women, but peer review type (single- vs. double-blind) had no influence on length.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C41 are supported by Figure 1 and supplementary data showing consistent patterns across all combinations of variables. The mixed model analysis appropriately controls for confounders (journal, word count, article type as random factors per C107-C109), strengthening the conclusions about which factors influence report length.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "Peer review reports showed high analytical tone (85.0-91.0) and low authenticity (18.0-25.0), characteristic of medical research writing. Analytical tone was higher for major revision recommendations, female reviewers, and single-blind review, but did not vary by research area.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C50 are supported by Figure 2 and supplementary data. The definitions (C44) are properly cited, and the findings align with expectations for scientific writing (C45). However, the claim that area of research had no effect (C50) appears to contradict the overall conclusion (C3) and requires careful interpretation of effect sizes versus statistical significance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C46",
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "Clout scores varied by reviewer recommendation (accept highest, reject lowest) and research area (highest in social sciences and economics). Reports recommending rejection, by male reviewers, and using single-blind review showed lower clout levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46 and C51-C54 are supported by Figure 2B and supplementary data. The pattern is consistent across variables, though the finding that research area affects clout (C51) appears to contradict the main conclusion that area has little impact (C3), suggesting clout may be an exception or effect sizes are small.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "Authenticity was highest in social sciences and economics reports and when reviewers recommended rejection. No significant variation was found by reviewer gender or type of peer review.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C57 are supported by supplementary data (Table 10). The finding that research area affects authenticity (C55) again appears inconsistent with the main conclusion (C3) that area has little impact, suggesting either small effect sizes or that authenticity is an exception to the general pattern.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "Three sentiment analysis methods (LIWC, SentimentR, Stanford CoreNLP) produced similar results showing accept recommendations had highest sentiment, followed by minor revisions, major revisions, and reject. Social sciences reports and those by female reviewers had higher sentiment, with no association with peer review type.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C62 are supported by Figure 3 and supplementary data. The convergence of three independent methods (C58) strengthens confidence in the sentiment findings. However, the finding that research area (C60) and gender (C61) affect sentiment appears to contradict the main conclusions (C3, C5) about minimal impact of these variables.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "General morality scores were highest for accept recommendations, followed by minor revisions, major revisions, and reject. The lowest proportion of morality-related words was found in social sciences and economics, for male reviewers, and in single-blind review.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C66 are supported by Figure 4 showing consistent patterns. However, the findings that research area (C64), gender (C65), and review type (C66) all influence morality scores directly contradict the main conclusions (C3, C4, C5) that these variables have little or no impact on linguistic characteristics.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "Analysis of five moral foundations (care/harm, fairness/cheating, loyalty/betrayal, authority/subversion, sanctity/degradation) revealed no clear patterns, with minimal prevalence (<1%) and words appearing in common phrases rather than reflecting moral content. This suggests qualitative and machine learning methods are needed to explore moral aspects of peer review.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C70 are supported by supplementary figures and acknowledge the limitations of dictionary-based approaches for detecting moral content. The recommendation for future methods (C70) is appropriate given the negative findings, though this represents a limitation rather than a positive result.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C2",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "Reviewer recommendation had the biggest influence on linguistic characteristics and report length. Reviewers likely write longer reports when recommending revisions to justify requests and suggest improvements. For negative recommendations (reject and major revisions), reports were shorter with less emotional and more analytical language.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C71-C73 represent the primary conclusion supported by consistent patterns across all linguistic measures. The interpretation (C72) is reasonable speculation based on the data. This finding is consistent with previous research (C71 cites Casnici et al., 2017), strengthening confidence in the result.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "Area of research, type of peer review (single- vs. double-blind), and reviewer gender had little or no significant influence on peer review reports. This lack of influence is interpreted as a sign of the robustness of peer review, contradicting some previous smaller studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C3-C6 and C74-C76 represent the main conclusion but are contradicted by multiple specific findings showing that research area affects report length (C39), clout (C51), authenticity (C55), sentiment (C60), and morality (C64); gender affects report length (C40), analytical tone (C48), sentiment (C61), and morality (C65); and review type affects analytical tone (C49) and morality (C66). The conclusion appears to conflate statistical significance with practical significance or may reflect small effect sizes that are nonetheless statistically significant. The interpretation as 'robustness' (C6) is not well justified given the contradictory evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "The dataset was dominated by health/medical sciences and physical sciences journals using single-blind review. Despite this limitation, the size, depth, and uniqueness of the dataset provided more comprehensive analysis than previous studies limited by small samples and incomplete data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C80 acknowledge dataset limitations while arguing for its value. The comparison to previous studies (C80) is supported by citations. However, the imbalance in research areas and review types (C77-C78) may limit generalizability of conclusions about these variables having 'no impact.'",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "Study limitations include lack of baseline data for comparison (though results match one biomedical journal study), no examination of manuscript content, and inability to assess reviewer reliability. Future research combining language analysis with inter-reviewer reliability estimates could provide new insights.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C85 appropriately acknowledge limitations and suggest future directions. The validation against one previous study (C82) provides some external support but is limited. The recommendations for future work (C81, C85) are reasonable given the acknowledged limitations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "The study employed LIWC for analytical tone, clout, authenticity, and emotional tone (0-100% scales), SentimentR (-1 to +1 scale), and Stanford CoreNLP (0-4 scale) for sentiment analysis. Definitions and scoring systems are based on established methodologies with proper citations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C36 and C99-C106 describe the methodological tools with appropriate citations. The definitions are clearly stated and properly attributed. The use of three independent sentiment analysis methods (C58) provides methodological triangulation, though the manuscript does not report inter-method correlations to quantify agreement.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "Mixed model linear analysis was conducted with reviewer recommendation, research area, peer review type, and reviewer gender as fixed factors, and journal, word count, and article type as random factors to control for confounding variables.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C107-C109 describe appropriate statistical methodology for the hierarchical data structure. Using random effects for journal, word count, and article type (C108-C109) properly accounts for clustering and confounding. However, the manuscript does not report model diagnostics, effect sizes, or correction for multiple testing across numerous linguistic variables.",
+    "result_type": "MINOR"
+  }
+]

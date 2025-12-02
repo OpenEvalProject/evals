@@ -1,0 +1,2317 @@
+{
+  "submission": {
+    "id": "be84cd65-d5cc-4e7e-8e63-d77e69989e54",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T17:57:48.905841Z",
+    "updated_at": "2025-12-02T17:57:48.905841Z"
+  },
+  "content": [
+    {
+      "id": "9a5339fa-8554-4d12-b9b4-5b4e22cfc91e",
+      "submission_id": "be84cd65-d5cc-4e7e-8e63-d77e69989e54",
+      "content_type": "manuscript",
+      "content_text": "# A trans-eQTL network regulates osteoclast multinucleation and bone mass\n\n## Authors\n\n- Marie Pereira<sup>1</sup> ([ORCID: 0000-0003-0711-3385](https://orcid.org/0000-0003-0711-3385))\n- Jeong-Hun Ko<sup>1</sup>\n- John Logan<sup>2</sup>\n- Hayley Protheroe<sup>2</sup>\n- Kee-Beom Kim<sup>3</sup>\n- Amelia Li Min Tan<sup>4</sup>\n- Peter I Croucher<sup>5</sup>\n- Kwon-Sik Park<sup>3</sup>\n- Maxime Rotival<sup>6</sup>\n- Enrico Petretto<sup>4</sup>\n- JH Duncan Bassett<sup>2</sup> ([ORCID: 0000-0003-0817-0082](https://orcid.org/0000-0003-0817-0082)) \u2020\n- Graham R Williams<sup>2</sup> ([ORCID: 0000-0002-8555-8219](https://orcid.org/0000-0002-8555-8219)) \u2020\n- Jacques Behmoaras<sup>1</sup> \u2020\n\n### Affiliations\n\n1. Centre for Inflammatory Disease, Department of Immunology and Inflammation, Hammersmith Hospital, Imperial College London London United Kingdom\n2. Molecular Endocrinology Laboratory, Department of Metabolism, Digestion and Reproduction, Hammersmith Hospital, Imperial College London London United Kingdom\n3. Department of Microbiology, Immunology, and Cancer Biology, University of Virginia School of Medicine Charlottesville United States\n4. Duke-NUS Medical School Singapore Singapore\n5. The Garvan Institute of Medical Research and St. Vincent's Clinical School, University of NewSouth Wales Medicine Sydney Australia\n6. Human Evolutionary Genetics Unit, Institut Pasteur, Centre National de la Recherche Scientifique, UMR 2000 Paris France\n\n\u2020 Corresponding author\n\n## Abstract\n\nFunctional characterisation of cell-type-specific regulatory networks is key to establish a causal link between genetic variation and phenotype. The osteoclast offers a unique model for interrogating the contribution of co-regulated genes to in vivo phenotype as its multinucleation and resorption activities determine quantifiable skeletal traits. Here we took advantage of a trans-regulated gene network (MMnet, macrophage multinucleation network) which we found to be significantly enriched for GWAS variants associated with bone-related phenotypes. We found that the network hub gene Bcat1 and seven other co-regulated MMnet genes out of 13, regulate bone function. Specifically, global (Pik3cb-/-, Atp8b2+/-, Igsf8-/-, Eml1-/-, Appl2-/-, Deptor-/-) and myeloid-specific Slc40a1 knockout mice displayed abnormal bone phenotypes. We report opposing effects of MMnet genes on bone mass in mice and osteoclast multinucleation/resorption in humans with strong correlation between the two. These results identify MMnet as a functionally conserved network that regulates osteoclast multinucleation and bone mass.\n\n## Introduction\n\nThe large number of common genetic variants associated with prevalent complex diseases suggests that disease pathogenesis involves perturbations to intricate gene networks (Furlong, 2013). The recently proposed omnigenic model of complex traits highlights the importance of trans-regulated networks in understanding causative disease pathways (Boyle et al., 2017; Liu et al., 2019). One way of mapping these regulatory networks is to identify the genetic control points of gene co-expression networks in a cell type relevant to the disease of interest. In this way, expression quantitative trait loci (eQTL) studies have revealed regions of the genome that harbour sequence variants affecting the mRNA expression levels of one or more genes (Albert and Kruglyak, 2015). These approaches identified trans-eQTLs, which regulate gene expression that are often observed in clusters, also known as trans-eQTL hotspots (Albert et al., 2018; Brem et al., 2002; Morley et al., 2004; Schadt et al., 2003). Many of the trans-eQTLs discovered to date in different model organisms tend to influence the expression of multiple genes (Albert et al., 2018; Bagnati et al., 2019; Grundberg et al., 2012; Johnson et al., 2015; Kang et al., 2014; Small et al., 2011; Yao et al., 2017), which suggests coordinated (network-based) regulatory mechanisms might be perturbed during disease pathogenesis. Although identification of such networks has informed our understanding of gene-gene interactions, their functional validation remains challenging.\n\nBone-resorbing multinucleated osteoclasts are derived from the monocyte-macrophage lineage (Udagawa et al., 1990). They display high metabolic activity (Indo et al., 2013) and regulate bone mass, structure and strength. Dysregulation of osteoclastic bone resorption is a major cause of both low and high bone mass disorders including osteoporosis (Manolagas, 2010), and osteopetrosis (Sobacchi et al., 2013), and an important contributor to the pathogenesis of Paget's disease (Galson and Roodman, 2014), adolescent idiopathic scoliosis (AIS) (Liu et al., 2018), and inflammatory diseases that affect the skeleton such as rheumatoid arthritis, ankylosing spondylitis and periodontitis (DiCarlo and Kahn, 2011; McInnes and Schett, 2011). Recent genome-wide association studies (GWAS) have identified hundreds of independent polymorphic loci associated with bone diseases in humans, including many that contain osteoclast-related genes (Albagha et al., 2010; Estrada et al., 2012; Kemp et al., 2017; Kim, 2018; Medina-Gomez et al., 2018; Morris et al., 2019; Stahl et al., 2010). However, only a few causal genes have been implicated in disease onset and progression, suggesting that activities of complex interacting gene networks play a crucial role in establishing and optimising bone mass and strength, and in the pathogenesis of skeletal disease (Al-Barghouthi and Farber, 2019).\n\nWe previously developed a rapid-throughput skeletal phenotyping pipeline that combines both structural and functional parameters (Bassett et al., 2012a; Freudenthal et al., 2016). We first applied this multi-parameter phenotyping pipeline to analyse 100 knockout (KO) mice and reported nine new genetic determinants of bone mineralisation, structure and strength (Bassett et al., 2012a). We then extended our studies to over 500 KO mouse lines and integrated this large-scale phenotype resource with over 1000 conditionally independent SNPs at over 500 loci that significantly associate with bone mineral density (BMD) and fracture in GWAS to provide functional evidence of causation for candidate genes (Kemp et al., 2017; Medina-Gomez et al., 2018; Morris et al., 2019; Trajanoska et al., 2018). These integrated studies demonstrated how large-scale phenotyping and genetic association projects provide systems-level platforms for gene identification in skeletal disorders. Robust systems genetics approaches also incorporate functional assays in a context-dependent cell type such that the effect of genome variation can be investigated to identify cell-specific mechanisms of disease. The osteoclast has an important advantage that, physiologically, its multinucleation capability correlates with its resorptive activity as well as with quantitative in vivo traits such as bone mass, structure and strength (Pereira et al., 2018). By contrast, osteoclast-rich osteopetrosis occurs due to impaired osteoclast function despite normal multinucleation and may result from mutations in (i) TCIRG1, CLCN7, OSTM1 or CA2 deficiency of which impair acidification, or (ii) SNX10 and PLEKHM1 deficiency of which impair endosome trafficking (Sobacchi et al., 2013). Thus, we hypothesise that osteoclast gene regulatory networks play a key role to establish and maintain optimal bone structure and strength, and are perturbed in skeletal disease.\n\nWe previously investigated the genetic determinants of macrophage multinucleation, using the inbred Wistar Kyoto (WKY) rat strain that displays spontaneous macrophage fusion (Kang et al., 2014; Rotival et al., 2015). By mapping eQTLs in fusion-competent primary macrophages, we found a trans-regulated gene co-expression network (190 genes) enriched for osteoclast genes that we defined as a \u2018macrophage multinucleation network\u2019 (MMnet) (Kang et al., 2014). MMnet is under the genetic control of the Trem2 (Triggering Receptor Expressed On Myeloid Cells 2) locus and includes a hub gene, Bcat1 (Branched chain amino acid transferase 1) that has the greatest number of connections (i.e. co-expression) with other MMnet transcripts. This network contained trans-regulated genes previously involved in osteoclastogenesis and we defined a new role for the most significant trans-eQTL (Kcnn4) in osteoclast multinucleation, bone homeostasis and inflammatory arthritis (Kang et al., 2014).\n\nHere we validate the functional role of MMnet in the regulation of osteoclast multinucleation, resorption and bone mass and strength. We report a correlation between the effects of MMnet gene knockdown on multinucleation and resorption in vitro and the effect on bone mass in vivo. Our study illustrates how the cell- specific function of osteoclast multinucleation and resorption can be used to link genetic variation within a complex network of co-regulated genes to the clinically critical phenotypes of bone mass and strength.\n\n## Results\n\n### MMnet regulates adult bone homeostasis via control of osteoclast multinucleation\n\nMMnet is a co-expression network comprising 190 osteoclast-enriched eQTLs that are regulated in trans by Trem2 (Kang et al., 2014). It was generated using primary macrophages from a heterogenous rat population derived from experimental crossing of inbred Wistar Kyoto (WKY) and LEW rats. Macrophages from WKY rats display spontaneous fusion and multinucleation, whereas spontaneous macrophage fusion does not occur in Lewis (LEW) rats (Kang et al., 2014; Rotival et al., 2015). Here we show that WKY rats display increased osteoclastogenesis in vitro compared to LEW rats (Figure 1A\u2013B). We therefore reasoned that WKY and LEW rats should exhibit divergent skeletal phenotypes. Skeletal analysis demonstrated that, compared to LEW rats, WKY rats have decreased bone length, bone mineral content (BMC), trabecular bone volume (BV/TV) and thickness (Tb.Th), together with reduced cortical bone thickness (Ct.Th) and mineral density (BMD) (Figure 1C\u2013E). These abnormalities resulted in markedly decreased bone strength (Figure 1D\u2013E). Overall, these data indicate that spontaneous macrophage and osteoclast multinucleation in WKY rats is associated with low bone mass, mineralisation and strength. Thus, these findings suggest that MMnet regulates adult bone homeostasis via its action in osteoclasts to control multinucleation.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/55549/elife-55549-fig1-v2.jpg)\n\n**Figure 1.:** (A) Left: Representative images of osteoclasts from Lewis (LEW) and Wistar Kyoto (WKY) rats stained with Giemsa stain.\u00a0Right: number of osteoclasts with\u00a0>10 nuclei from LEW and WKY rats. (B) Relative mRNA expression of Nfatc1\u00a0and\u00a0Trem2 determined by qRT-PCR following osteoclast culture (n\u00a0=\u00a03/group). (C) (Left) Pseudocoloured X-ray microradiography images of femurs from male Lewis (LEW) and Wistar-Kyoto (WKY) rats (low BMC blue and green and high BMC red and pink) showing decreased femur length in WKY animals (scale bar\u00a0=\u00a02 mm). (Right) Cumulative frequency histogram showing reduced BMC in WKY rats; (n\u00a0=\u00a04 **p<0.01 vs. WT; Kolmogorov\u2013Smirnov test). (D) Representative load displacement curves from femur three-point bend testing. (E) Micro-CT analysis of distal femur trabecular bone (trabecular bone volume/tissue volume (BV/TV), trabecular number (Tb.N), trabecular thickness (Tb.Th), trabecular separation (Tb.Sp), trabecular bone mineral density (Tb.BMD) and structure model index (SMI)) (Upper panel), micro-CT analysis from mid-diaphysis cortical bone (cortical thickness (Ct.Th), bone area (Ct.Ar), internal diameter (Int.Dia) and cortical bone mineral density (Ct.BMD)) (middle panel) and femur three-point-bend testing (lower panel) (Mean\u00a0\u00b1\u00a0SD; n\u00a0=\u00a04 *p<0.05, **p<0.01 LEW vs WKY Student\u2019s t-test). (F) MMnet comprising 190 trans-eQTLs under the master regulatory locus (Trem2, highlighted in red). Each gene in the network is represented as a circle (node), and the genes that are GWAS hits (See also Table 1 and Figure 1\u2014source data 1) are highlighted in blue. Connecting lines indicate co-expression between the two transcripts.\n\n### MMnet genes are enriched in human skeletal GWAS\u00a0variants\n\nWe first determined whether MMnet eQTL genes are significantly enriched for GWAS loci associated with bone disorders in humans. In comparison with the background set of eQTLs (1448 eQTLs that were previously mapped in multinucleating macrophages [Kang et al., 2014], MMnet was generally enriched for bone-related GWAS loci (p=0.0085, hypergeometric test, Table 1) and more specifically for heel bone mineral density associated GWAS variants (Figure 1\u2014source data 1), which had the most significant enrichment (20 loci, p=4.49\u00d710\u22123, hypergeometric test, Table 1). Consistent with the decreased bone length observed in WKY rats, MMnet was also significantly enriched for body height variants (24 loci, p=1.86\u00d710\u22122, hypergeometric test, Table 1). In addition to enrichment for GWAS loci associated with skeletal traits, 9 MMnet genes have also been implicated in the pathogenesis of rare monogenic skeletal disorders (CTSK, FAM20C, FLNA, FN1, IDUA, IL1RN, MANBA, MET, MMP9) (Mortier et al., 2019). These results demonstrate that MMnet is conserved in humans and implicated in the regulation of skeletal development and bone homeostasis (Figure 1F).\n\n**Table 1.**\n MMnet is significantly enriched for variants that associate with different bone traits.Single nucleotide polymorphisms (SNPs) significantly associated with the reported GWAS traits were interrogated in two datasets: the background dataset which includes all the eQTLs (posterior probability\u00a0>80% see Materials\u00a0and\u00a0methods) and MMnet gene set. The enrichment was then tested over the background using a hypergeometric test. The significantly enriched traits are shown in bold.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>GWAS trait</th>\n      <th>Number of eQTLs genes (background) with at least one GWAS hit</th>\n      <th>Number of MMnet genes with at least one GWAS hit</th>\n      <th>Frequency (%) eQTLs genes (background) with at least one GWAS hit</th>\n      <th>Frequency (%) MMnet genes with at least one GWAS hit</th>\n      <th>P-value MMnet enrichment over background (hypergeometric test)</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>All GWAS combined</td>\n      <td>299</td>\n      <td>41</td>\n      <td>20.3%</td>\n      <td>27.7%</td>\n      <td>0.0085</td>\n    </tr>\n    <tr>\n      <td>Heel bone mineral density</td>\n      <td>117</td>\n      <td>20</td>\n      <td>8.0%</td>\n      <td>13.5%</td>\n      <td>0.0045</td>\n    </tr>\n    <tr>\n      <td>Osteoarthritis</td>\n      <td>9</td>\n      <td>3</td>\n      <td>0.6%</td>\n      <td>2.0%</td>\n      <td>0.0083</td>\n    </tr>\n    <tr>\n      <td>Psoriatic arthritis</td>\n      <td>2</td>\n      <td>1</td>\n      <td>0.1%</td>\n      <td>0.7%</td>\n      <td>0.0101</td>\n    </tr>\n    <tr>\n      <td>Body height</td>\n      <td>165</td>\n      <td>24</td>\n      <td>11.2%</td>\n      <td>16.2%</td>\n      <td>0.0186</td>\n    </tr>\n    <tr>\n      <td>Bone quantitative ultrasound measurement</td>\n      <td>4</td>\n      <td>1</td>\n      <td>0.3%</td>\n      <td>0.7%</td>\n      <td>0.0527</td>\n    </tr>\n    <tr>\n      <td>Bone density</td>\n      <td>16</td>\n      <td>3</td>\n      <td>1.1%</td>\n      <td>2.0%</td>\n      <td>0.0686</td>\n    </tr>\n    <tr>\n      <td>Hip bone mineral density</td>\n      <td>5</td>\n      <td>1</td>\n      <td>0.3%</td>\n      <td>0.7%</td>\n      <td>0.0821</td>\n    </tr>\n    <tr>\n      <td>Spine bone mineral density</td>\n      <td>7</td>\n      <td>1</td>\n      <td>0.5%</td>\n      <td>0.7%</td>\n      <td>0.1509</td>\n    </tr>\n    <tr>\n      <td>Bone fracture</td>\n      <td>3</td>\n      <td>0</td>\n      <td>0.2%</td>\n      <td>0.0%</td>\n      <td>0.2727</td>\n    </tr>\n    <tr>\n      <td>Ankylosing spondylitis</td>\n      <td>4</td>\n      <td>0</td>\n      <td>0.3%</td>\n      <td>0.0%</td>\n      <td>0.3460</td>\n    </tr>\n    <tr>\n      <td>Periodontitis</td>\n      <td>4</td>\n      <td>0</td>\n      <td>0.3%</td>\n      <td>0.0%</td>\n      <td>0.3460</td>\n    </tr>\n    <tr>\n      <td>Rheumatoid arthritis</td>\n      <td>15</td>\n      <td>1</td>\n      <td>1.0%</td>\n      <td>0.7%</td>\n      <td>0.4550</td>\n    </tr>\n    <tr>\n      <td>Adolescent idiopathic scoliosis</td>\n      <td>60</td>\n      <td>5</td>\n      <td>4.1%</td>\n      <td>3.4%</td>\n      <td>0.5723</td>\n    </tr>\n    <tr>\n      <td>Bone mineral content measurement</td>\n      <td>1</td>\n      <td>1</td>\n      <td>0.1%</td>\n      <td>0.7%</td>\n      <td>-</td>\n    </tr>\n    <tr>\n      <td>Lumbar disc degeneration</td>\n      <td>1</td>\n      <td>1</td>\n      <td>0.1%</td>\n      <td>0.7%</td>\n      <td>-</td>\n    </tr>\n    <tr>\n      <td>Osteitis deformans</td>\n      <td>1</td>\n      <td>0</td>\n      <td>0.1%</td>\n      <td>0.0%</td>\n      <td>-</td>\n    </tr>\n  </tbody>\n</table>\n\n### BCAT1 maintains normal bone mass and strength by regulating osteoclast multinucleation and function\n\nTo validate the role of MMnet, we investigated the effect of the MMnet hub gene Bcat1 on osteoclast multinucleation and resorption, and bone mass (Figure 2A). 12 week-old male Bcat1-/- mice had high bone mass characterised by increased cortical thickness (Ct.Th), trabecular bone volume (BV/TV), number (Tb.N) and thickness (Tb.Th), and reduced trabecular separation (Tb.Sp) and structural model index (SMI) (n\u00a0=\u00a08 per genotype) (Figure 2B\u2013C; Figure 2\u2014figure supplement 1). Biomechanical 3-point bend testing demonstrated that Bcat1-/- mice had enhanced bone strength characterised by increased yield, maximum and fracture loads and stiffness (Figure 2C; Figure 2\u2014figure supplement 1). Furthermore, static histomorphometry showed that Bcat1-/- mice had decreased osteoclast surface (Oc.S/BS) and number (Oc.N/BS), suggesting their high bone mass phenotype results from impaired osteoclast activity (Figure 2D). Moreover, Bcat1-/- mice had increased amounts of retained cartilage within both trabecular and cortical bone, suggesting impaired osteoclastic resorption during bone modelling and remodelling (Figure 2\u2014figure supplement 1D\u2013E). Consistent with this, siRNA-mediated knockdown of BCAT1 expression in human osteoclasts in vitro inhibited multinucleation and resorption by 60% (Figure 2E\u2013F). By comparison, knockdown of DCSTAMP, a master regulator of osteoclast and macrophage membrane fusion (Yagi et al., 2005; Yagi et al., 2006), resulted in 90% inhibition of osteoclast multinucleation and resorption (Figure 2E\u2013F). Taken together, these data demonstrate an important new role for BCAT1 in osteoclast formation and function, and the physiological maintenance of adult bone mass and strength.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/55549/elife-55549-fig2-v2.jpg)\n\n**Figure 2.:** (A) Location of Bcat1 as the MMnet hub (left panel). Skeletal phenotyping of Bcat1-/- mice using X-ray microradiography, micro computed tomography (micro-CT) and three point bending testing (right panel). (B) Micro-CT images of distal femur trabecular bone and mid-diaphysis cortical bone in wild-type (WT) and Bcat1-/- mice (upper panel) (scale bar\u00a0=\u00a0200 \u03bcm). Trabecular bone volume/tissue volume (BV/TV) and cortical thickness (Ct.Th) are shown in the lower panel; (Mean\u00a0\u00b1\u00a0SD; n\u00a0=\u00a08 per genotype, **p<0.01, ***p<0.001 vs WT Student\u2019s t-test). (C) Representative load displacement curves from femur three-point bend testing (upper panel). Fracture load and stiffness are shown in the lower panel; (Mean \u00b1 SD; n =\u00a08 mice per genotype,\u00a0**p<0.01 vs WT Student\u2019s t-test). (D) Representative tartrate-resistant acid phosphatase (TRAP) stained sections from the distal femur of WT and Bcat1-/- mice showing osteoclasts in red (left panel). Quantification of the osteoclast surface/bone surface (Oc.S/BS) and osteoclast number/bone surface (N.Oc/BS) (right panel) (scale bar\u00a0=\u00a0100 \u00b5m); (Mean\u00a0\u00b1\u00a0SD; n\u00a0=\u00a08 per genotype, *p<0.05, ***p<0.001 vs WT Student\u2019s t-test). (E) Representative images of TRAP+ multinucleated osteoclasts (upper panel) (scale bar\u00a0=\u00a040 \u00b5m) and hydroxyapatite resorption (lower panel) (scale bar\u00a0=\u00a01 mm) 2 days after siRNA transfection. (F) Percentage inhibition of multinucleation compared to scrambled siRNA (left panel) and percentage inhibition of hydroxyapatite resorption compared to scrambled siRNA (right panel); (Mean\u00a0\u00b1\u00a0SD from n\u00a0=\u00a04 donors, **p<0.01, ***p<0.001 vs scrambled siRNA, one-sample-t test).\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/55549/elife-55549-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) Representative X-ray microradiography images of femurs from male WT and Bcat1-/- mice. In pseudocoloured images low BMC is indicated by blue and green and high BMC by red and pink (scale bar\u00a0=\u00a01 mm). (B) Cumulative frequency histogram of relative bone mineral content (BMC) (n\u00a0=\u00a08 per genotype, by Kolmogorov\u2013Smirnov test). (C) Micro-CT analysis of distal femur trabecular bone, micro-CT analysis of mid-diaphysis cortical bone and femur three-point-bend testing (trabecular number (Tb.N), trabecular thickness (Tb.Th), trabecular separation (Tb.Sp), structure model index (SMI), internal diameter (Int.Dia) and cortical bone mineral density (Ct.BMD)); (Mean\u00a0\u00b1\u00a0SD; n\u00a0=\u00a08 per genotype, **p<0.01, ***p<0.001 vs WT Student\u2019s t-test). (D) Representative images of retained cartilage stained with Alcian Blue (blue-green) in trabecular bone stained with van Gieson (red) from the distal femurs of WT and Bcat1-/- mice. Top panel shows images of the distal femoral metaphyses. Black boxes indicate the region of interest (ROI) used to determine trabecular and cortical cartilage areas. Lower panel shows trabecular ROI before and after image analysis to highlight retained trabecular cartilage in blue (scale bars\u00a0=\u00a0100 \u03bcm). (E) Quantification of the retained cartilage area as a proportion of total trabecular bone area (Tb.Cartilage area) and as a proportion of total cortical bone area (Ct.Cartilage area); (Mean\u00a0\u00b1\u00a0SD; n\u00a0=\u00a04\u20136 per genotype *p<0.05 vs WT Student\u2019s t-test).\n\n### MMnet genes have counter regulatory roles in the maintenance of adult bone mass and strength\n\nTo investigate whether individual MMnet genes regulate skeletal homeostasis, we studied all the MMnet genes for which the Wellcome Trust Sanger Institute, as part of the IMPC, had generated KO mice. Rapid-throughput phenotyping (Bassett et al., 2012a; Estrada et al., 2012; Kemp et al., 2017; Kim, 2018; Medina-Gomez et al., 2018; Morris et al., 2019) of samples from 16 week-old female mice with deletion of 12 MMnet genes (Appl2-/-, Atp8b2+/-, Deptor-/-, Dot1l+/-, Egfr+/-, Eml1-/-, Eps15-/-, Igsf8-/-, Pik3cb-/-, Rnf125-/-, Slc1a4-/-, Tgfb1i1-/- mice) was performed using X-ray microradiography, micro-CT and biomechanical testing (Figure 3A). Six of the 12 MMnet KO mouse lines exhibited abnormal skeletal phenotypes, whereas Dot1l+/-, Egfr+/-, Eps15-/-, Rnf125-/-, Slc1a4-/- and Tgfb1i1-/- mice displayed no skeletal abnormalities (Figure 3B). Igsf8-/- mice had decreased femur length (Figure 3\u2014source data 1; Pik3cb-/- (increased BV/TV and Tb.N), Appl2-/- (increased BV/TV) and Atp8b2+/- (increased BV/TV) mice had high bone mass; whereas Deptor-/- (decreased BV/TV and Tb.N) mice had low bone mass (Figure 3C\u2013D, Figure 3\u2014source data 1). Biomechanical testing demonstrated decreased bone strength in Atp8b2+/- (decreased femur stiffness), Deptor-/- (decreased vertebral stiffness) and Eml1-/- (decreased vertebral stiffness) mice (Figure 3E\u2013F, Figure 3\u2014source data 1).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/55549/elife-55549-fig3-v2.jpg)\n\n**Figure 3.:** (A) The location of the 12 MMnet genes for which knockout mice were available are highlighted in the network. (B) Venn diagram showing mutant strains with outlier phenotypes for bone mass, bone strength and bone length. (C) Representative micro-CT images of distal femur trabecular bone and mid diaphyseal cortical bone from WT and mutant mice (scale bar\u00a0=\u00a0200 \u03bcm). (D) Graphs show trabecular bone volume (BV/TV), trabecular number (Tb.N) and trabecular separation (Tb.Sp). Grey box represents WT reference mean + / - 2 SD (n\u00a0=\u00a0320, 16 week old, female C57BL/6 WT mice). (E) Representative load displacement curves for femur three-point bend testing and vertebral compression. (F) Femur stiffness (Fem.stiffness) and vertebral stiffness (vert.stiffness). Data from individual mice are shown as black dots and mean value by a red line (n\u00a0=\u00a02 or six per genotype). Parameters outside the WT reference range are indicated by an asterisk *.\n\n### Human MMnet orthologues regulate osteoclast multinucleation and resorption\n\nTo investigate whether the divergent skeletal phenotypes identified in MMnet knockout mice correlate with osteoclast multinucleation and resorption in vitro, we determined the functional consequences of siRNA-mediated knockdown of 11 human orthologues of these MMnet genes in human osteoclasts (TGFB1I1 was not expressed). The MMnet gene DCSTAMP was included as a positive control (Figure 4A, Figure 4\u2014figure supplement 1A). For all 11 MMnet genes, siRNA-mediated knockdown resulted in a greater than 80% reduction in mRNA expression and did not affect cell viability (Figure 4\u2014figure supplement 1B\u2013C). The number of nuclei in each TRAP+ osteoclast was determined following siRNA knockdown (Figure 4B\u2013D, Figure 4\u2014figure supplement 1D\u2013E). The functional consequences of in vitro siRNA knockdown correlated with the skeletal consequences of gene deletion in vivo. Knockdown of DOTL1, EPS15 and RNF125 had no effect on osteoclast multinucleation or resorption (Figure 4B\u2013D) and the skeletal phenotype of the corresponding knockout mice was also unaffected (Figure 3\u2014source data 1). Furthermore, knockdown of APPL2 inhibited osteoclast resorption and knockdown of PIK3CB and ATP8B2 inhibited both multinucleation and resorption (Figure 4B\u2013D) whilst the corresponding knockout mice displayed increased bone mass (Figure 3C\u2013D). By contrast, knockdown of DEPTOR resulted in a marked stimulation of both multinucleation and resorption (Figure 4B\u2013D), and DEPTOR deficient mice had reduced bone mass and vertebral stiffness (Figure 3C\u2013F). Overall, the effects of mRNA knockdown of MMnet genes on in vivo osteoclast multinucleation and resorption were concordant and strongly correlated (R2\u00a0=\u00a00.76; p<0.001) (Figure 4E). Moreover, the effect of knockdown of MMnet genes on osteoclast resorption was also strongly and inversely correlated with trabecular bone mass (BV/TV) in knockout mice (R2\u00a0=\u00a00.65; p<0.01) (Figure 4F).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/55549/elife-55549-fig4-v2.jpg)\n\n**Figure 4.:** (A) The location of the 11 MMnet genes for which knockout mice were available, and for which there are human orthologues. The master regulator of macrophage fusion Dcstamp is highlighted in red. (B) Representative images of TRAP+ osteoclasts (Top panel) (scale bar\u00a0=\u00a040 \u00b5m) and hydroxyapatite resorption (Bottom panel) (scale bar\u00a0=\u00a01 mm) following siRNA knockdown for DCSTAMP, PIK3CB, ATP8B2, APPL2 and DEPTOR. (C) Graphs show the frequency of multinucleated cells (>4 nuclei) following siRNA knockdown as a percentage of the scramble siRNA control; n\u00a0=\u00a04 donors. (D) Hydroxyapatite resorption following siRNA knockdown as a percentage of the scramble siRNA control; n\u00a0=\u00a04 donors. (For (C) and (D): Mean\u00a0\u00b1\u00a0SD from n\u00a0=\u00a04 donors, *p<0.05, **p<0.01, ***p<0.001 vs scrambled siRNA, one-sample-t test). (E) Pearson correlation between human osteoclast multinucleation and resorptive activity following siRNA knockdown of 12 MMnet genes compared to control (R2\u00a0=\u00a00.76; p<0.001) (F) Pearson correlation between human osteoclast resorption activity following si-RNA knockdown of 11 MMnet genes compared to control and BV/TV in the corresponding 11 MMnet knockout mouse strains (R2\u00a0=\u00a00.65; p<0.01).\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/55549/elife-55549-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A) Inhibition of osteoclast multinucleation following DCSTAMP siRNA knockdown compared with scrambled control (Mean\u00a0\u00b1\u00a0SD; n\u00a0=\u00a04 donors, ****p<0.001 vs scrambled siRNA, one-sample-t test). (B) Relative mRNA expression of the targeted gene determined by qRT-PCR following siRNA knockdown (Mean\u00a0\u00b1\u00a0SD; n\u00a0=\u00a04 donors per gene, **p<0.01, ***p<0.001, ****p<0.001 vs scrambled siRNA, Student\u2019s t-test). (C) Cell viability following siRNA transfection determined using alamar blue staining (n\u00a0=\u00a02\u20133 donors per gene). (D) Representative images of TRAP+ multinucleated osteoclasts following siRNA knockdown. (E) Graphs show the percentage of mono, bi and tri-nucleated cells following siRNA knockdown compared to scramble siRNA control; (Mean\u00a0\u00b1\u00a0SD from n\u00a0=\u00a04 donors, *p<0.05, **p<0.01, ***p<0.001 vs scrambled siRNA, one-sample-t test).\n\nThese findings demonstrate that the effects of MMnet gene deletion on the skeletal phenotype of knockout mice result, at least in part, from the direct consequences of gene deletion on osteoclast multinucleation and function, and that MMnet contains genes with important counter regulatory roles in the physiological control of adult bone mass and strength.\n\n### MMnet regulates bone mass and strength via direct actions in the macrophage-osteoclast lineage\n\nMMnet contains 190 genes, of which 178 are annotated, and among these genes there are known regulators of osteoclast multinucleation (Dcstamp, Mmp9, Ctsk) but the majority of MMnet genes require further investigation. To determine if MMnet genes regulate adult bone mass and strength by direct actions in osteoclasts we developed a prioritisation pipeline to identify a novel and tractable MMnet gene to target for cell-specific gene deletion in the macrophage-osteoclast cell lineage. To identify potential novel and tractable candidates we applied a bespoke in silico filtering to the 178 annotated MMnet genes. The following criteria were used as a stepwise prioritisation filter (Figure 5\u2014source data 1): (i) conserved expression in human osteoclasts; (ii) conserved expression in mouse macrophages; (iii) unknown function in osteoclastogenesis (Pubmed, accessed December 2017); (iv) availability of the mouse model (http://www.informatics.jax.org/); (v) strength of the MMnet eQTL (R2\u00a0>1) (Kang et al., 2014; (vi) Membrane receptors with pharmacologically tractable signalling pathways (Figure 5\u2014figure supplement 1A, Figure 5\u2014source data 1). This prioritisation process identified five candidate MMnet genes (FGR, LAT2, MYOF, FCGRT, and SLC40A1) (Figure 5\u2014figure supplement 1A\u2013B). To identify the most robust regulator of osteoclast multinucleation we determined the consequences of siRNA-mediated knockdown of these five genes in human osteoclasts. Knockdown of all five MMnet genes resulted in greater than 40% inhibition of multinucleation (Figure 5\u2014figure supplement 1C). Most strikingly, knockdown of SLC40A1 (encoding the mammalian iron transporter, ferroportin) resulted in more than 80% inhibition of multinucleation, an effect comparable with that of the master regulator DCSTAMP (Figure 5\u2014figure supplement 1C\u2013D).\n\nConsequently, SLC40A1 was prioritised for further investigation and we generated a myeloid lineage-specific knockout of Slc40a1 by crossing Slc40a1flox/flox mice with LysM-cre mice. Femurs from 16 week-old male and female mutant Slc40a1 conditionnal\u00a0KO\u00a0(cKO) and Control mice were analysed by X-ray-microradiography, microCT and 3-point bend testing (n\u00a0=\u00a08 per sex per genotype). Slc40a1 cKO mice had greatly increased bone mass characterised by increased BMC (Figure 5B\u2013C), cortical thickness (Ct.Th), trabecular BV/TV, Tb.N and Tb.Th compared to littermate controls\u00a0(Figure 5C\u2013D,\u00a0Figure 5\u2014figure supplement 2A). This high bone mass phenotype was associated with markedly increased bone strength characterised by increased yield, maximum and fracture loads (Figure 5C\u2013D, Figure 5\u2014figure supplement 2A). Consistent with this, histomorphometic analysis demonstrated decreased osteoclast surfaces (Oc.S/BS) in Slc40a1 cKO mice (Figure 5E) and Slc40a1 cKO mice had increased amounts of retained cartilage within trabecular bone, consistent with impaired osteoclastic bone resorption and abnormal bone remodelling (Figure 5\u2014figure supplement 2 B, C). siRNA-mediated knockdown of SLC40A1 expression, in human osteoclasts in vitro, inhibited osteoclast resorption by more than 85% (Figure 5F\u2013G). Taken together, these data demonstrate that the MMnet gene, Slc40a1, acts as an important determinant of adult bone mass and strength by directly regulating osteoclast multinucleation and function.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/55549/elife-55549-fig5-v2.jpg)\n\n**Figure 5.:** (A) Location of Slc40a1 in MMnet. (B) Cumulative frequency histogram of relative BMC; n\u00a0=\u00a08 per genotype. ***p<0.001 vs. WT by Kolmogorov\u2013Smirnov test. (C) Representative X-ray microradiography images of femurs from male Control and Slc40a1 cKO mice. Pseudocoloured images indicating low BMC (blue and green) and high BMC (red and pink) are shown in the left panel (scale bar\u00a0=\u00a01 mm). Micro-CT images of distal femur trabecular bone and mid-diaphysis cortical bone (middle panel) (scale bar\u00a0=\u00a0200 \u03bcm). Representative load displacement curves from femur three-point bend testing (right panel). (D) Trabecular bone volume (BV/TV) and cortical thickness (Ct.Th), femur maximum load and fracture load. (E) Representative TRAP-stained femur sections from Control and Slc40a1 cKO mice showing osteoclasts stained in red (left panel). Osteoclast surface (Oc.S/BS) and osteoclast number (N.Oc/BS) (right panel) (scale bar\u00a0=\u00a0100 \u00b5m); (For (D) and (E): Mean\u00a0\u00b1\u00a0SD; n\u00a0=\u00a08 per genotype, *p<0.05, **p<0.01, ***p<0.001 vs Control Student\u2019s t-test). (F) Representative images of hydroxyapatite resorption (scale bar\u00a0=\u00a01 mm) following DCSTAMP and SLC40A1 si-RNA knockdown. (G) Inhibition of osteoclast hydroxyapatite resorption following DCSTAMP and SLC40A1 siRNA knockdown; (Mean\u00a0\u00b1\u00a0SD from n\u00a0=\u00a04 donors, ***p<0.001 vs scrambled siRNA, one-sample-t test).\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/55549/elife-55549-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** (A) Step-wise filtering workflow. (B) Five candidate genes within MMnet. (C) Percentage of osteoclasts with\u00a0>4 nuclei after RNAi compared to non-targeting si-RNA; n\u00a0=\u00a04 donors. (D) Representative images of TRAP+ multinucleated osteoclasts (scale bar\u00a0=\u00a040 \u00b5m) following DCSTAMP and SLC40A1 si-RNA knockdown. (Mean\u00a0\u00b1\u00a0SD from n\u00a0=\u00a04 donors, *p<0.05, **p<0.01, ***p<0.001 vs scrambled siRNA, one-sample-t test).\n\n![Figure 5\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/55549/elife-55549-fig5-figsupp2-v2.jpg)\n\n**Figure 5\u2014figure supplement 2.:** (A) Graphs show micro-CT analysis of distal femur trabecular bone, micro-CT analysis of mid-diaphysis cortical bone and femur three-point-bend testing in male mice. (trabecular bone volume/tissue volume (BV/TV), trabecular number (Tb.N), trabecular thickness (Tb.Th), trabecular separation (Tb.Sp), structure model index (SMI), trabecular connectivity density (Tb.Conn.D), cortical thickness, (Ct.Th), internal diameter (Int.Dia) and cortical bone mineral density (Ct.BMD)) (Mean\u00a0\u00b1\u00a0SD; n\u00a0=\u00a08 per genotype as *p<0.05, **p<0.01, ***p<0.001 Slc40a1 cKO vs Control Student\u2019s t-test). (B) Representative images of retained cartilage stained by Alcian Blue (blue-green) in trabecular bone stained with van Gieson (red) from the distal femurs of Control and Slc40a1 cKO mice. Top panel shows images of the distal femoral metaphyses. Black boxes indicate the region of interest (ROI) used to determine trabecular and cortical cartilage areas. Lower panel shows trabecular ROI before and after image analysis to highlight retained trabecular cartilage in blue (scale bar\u00a0=\u00a0100 \u03bcm). (C) Quantification of the retained cartilage area as a proportion of total trabecular bone area (Tb.Cartilage area) and as a proportion of total cortical bone area (Ct.Cartilage area). (Mean\u00a0\u00b1\u00a0SD; n\u00a0=\u00a05 per genotype *p<0.05 vs Control, Student\u2019s t-test). (D) Representative micro-CT images of distal femur trabecular bone and mid-diaphysis cortical bone in Slc40a1 cKO and Control female mice (scale bar\u00a0=\u00a0200 \u03bcm). (E) Representative load displacement curves from three-point bend testing of femurs from Slc40a1 cKO and Control female mice. (F) Graphs show micro-CT analysis of distal femur trabecular bone, micro-CT analysis of mid-diaphysis cortical bone and femur three-point-bend testing in female mice; (Mean\u00a0\u00b1\u00a0SD; n\u00a0=\u00a08 per genotype, *p<0.05, **p<0.01 Slc40a1 cKO vs Control, Student\u2019s t-test).\n\n## Discussion\n\nIn this study, we took advantage of an unique trans-eQTL network (MMnet) in multinucleating rat primary macrophages that is enriched for osteoclast genes. The parental rat strains used to generate MMnet (WKY and LEW) had opposing skeletal phenotypes and rate of osteoclast multinucleation. Spontaneous fusion of WKY macrophages in vitro was associated with decreased bone length, mass, and strength in vivo, suggesting that genetic determinants of osteoclast multinucleation directly affect bone development and maintenance. These results implicate MMnet in the physiological regulation of adult bone mass and strength.\n\nNext, we determined whether MMnet is enriched for GWAS variants associated with skeletal traits and showed enrichment for heel bone mineral density, body height, osteoarthritis and psoriatic arthritis. These results confirm conservation of MMnet in humans and demonstrate associations between MMnet and osteoclast multinucleation and bone mass. Furthermore, the association of MMnet with osteoarthritis suggests involvement of osteoclasts in articular cartilage degradation, an area that is gaining increasing attention (Goldring and Goldring, 2016; L\u00f6fvall et al., 2018).\n\nTo validate the function of MMnet in vivo, we first investigated the role of the hub gene, Bcat1, in knockout mice and demonstrated important new roles for BCAT1 in osteoclast formation and function, and the physiological maintenance of adult bone mass and strength. These results demonstrate that MMnet has a critical homeostatic role in bone that is conserved in rodents and humans. Furthermore, they specifically implicate branched chain amino acid (BCAA) metabolism in osteoclast-mediated bone homeostasis and are consistent with our recent observation that osteoclast numbers and severity of collagen-induced arthritis are also reduced following pharmacological inhibition of BCAT1 in mice (Papathanassiu et al., 2017). BCAT1 activity controls intracellular leucine, a known activator of mammalian target of rapamycin complex 1 (mTORC1) signalling (Ananieva et al., 2014), suggesting that MMnet may directly regulate mTORC1-dependent bone homeostasis and inflammation via the hub gene Bcat1.\n\nTo investigate further the homeostatic roles of MMnet in the maintenance of adult bone mass and strength, we analysed knockout mice with deletion of 12 unselected MMnet genes and demonstrated significant outlier phenotypes in six of these lines, which include both known Pik3cb (Gy\u0151ri et al., 2014; Hall et al., 1995; Lee et al., 2002) and unknown (Atp8b2, Igsf8, Eml1, Appl2, and Deptor) regulators of skeletal homeostasis. Deletion of Pik3cb, Appl2 and Atp8b2 resulted in increased bone mass whereas deletion of Deptor resulted in decreased bone mass and strength, suggesting MMnet represents a conserved and complex homeostatic counter-regulatory network that serves to optimise bone structure and strength. Consistent with this, deletion of MMnet\u2019s strongest trans-eQTL Kcnn4 results in increased bone mass (Kang et al., 2014) as did deletion of Dcstamp, the master regulator of membrane fusion (Yagi et al., 2005). Nevertheless, although (i) BCAT1, PIK3CB, ATP8B2, and APPL2 knockdown in vitro resulted in impaired osteoclast multinucleation and resorption in humans, and (ii) Bcat1, Pik3cb, Atp8b2, and Appl2 deletion in vivo resulted in increased trabecular bone mass, only Bcat1 deficient mice exhibited increased cortical thickness and bone strength. These findings may refect that (i) Bcat1 deletion has the greatest effect on osteoclast multinucleation and function in vivo, (ii) Atp8b2 mice were heterozygotes, (iii) trabecular bone is more sensitive than cortical bone to abnormalities of osteoclastic resorption, and (iv) cortical bone parameters are the major determinants of bone strength. However, since these genetically modified mice have global gene deletions, the variation in skeletal phenotypes may also result from the consequences of gene deletion in non-monocyte/macrophage lineages.\n\nOverall, these studies reveal a common molecular pathway within MMnet that regulates osteoclast multinucleation and function as well as bone mass. Thus, at least four MMnet genes (Trem2, Bcat1, Pik3cb and Deptor), that include the network master regulator (Trem2) and network hub (Bcat1), act within the Trem2-Pi3K-mTORC1 pathway (Ananieva et al., 2014; Mossmann et al., 2018; Peterson et al., 2009; Ulland et al., 2017). mTORC1 protein kinase comprises a complex of proteins that includes DEPTOR (Peterson et al., 2009), a regulator of cell growth and metabolism that is essential for osteoclast formation (Indo et al., 2013). While Trem2 (Ulland et al., 2017), Bcat1 (Ananieva et al., 2014) and Pik3cb (Mossmann et al., 2018) are positive regulators of mTORC1, Deptor inhibits mTORC1 activity (Peterson et al., 2009). Significantly, the divergent effects of these genes on activity of the mTORC1 signalling pathway correlate precisely with the effects of gene knockdown or deletion on osteoclast multinucleation and function in vitro and on skeletal phenotype in vivo. Thus, knockdown or deletion of Bcat1 and Pik3cb results in decreased osteoclast multinucleation and resorption, and increased bone mass, whereas knockdown or deletion of Deptor results in opposite cellular and in vivo phenotypes. Together, these data suggest a pivotal and integrated counter-regulatory role for the Trem2-Pi3K-mTORC1 pathway in osteoclast multinucleation and function, and the homeostatic control of bone mass, and may thus provide novel therapeutic targets for the inhibition of bone loss.\n\nOverall, these studies demonstrate that MMnet regulates bone mass and strength via important effects on osteoclast multinucleation and function. Nevertheless, it is important to recognise that primary actions of MMnet genes in osteoclasts may secondarily regulate osteoblastic bone formation. Alternatively, MMnet genes may have direct cell autonomous effects in the osteoblast lineage. Thus, direct and indirect effects of MMnet genes in osteoblast may influence the skeletal phenotypes observed in mutant mice. The role of osteoblasts has not been investigated here, and this represents an important limitation of the study.\n\nFinally, we investigated the role of the iron transporter ferroportin, encoded by the MMnet gene Slc40a1, in the osteoclast lineage. Ferroportin was identified as a powerful inhibitor of human osteoclast multinucleation and function in vitro, with a potency equivalent to Dcstamp (Figure 5 and Figure 4\u2014figure supplement 1). Generation of mice with conditional deletion of Slc40a1 in the macrophage-osteoclast lineage using LysMCre mice was consistent with in vitro multinucleation and resulted in a phenotype of increased bone mass and strength (Figure 5 and Figure 5\u2014figure supplement 2). Thus, Slc40a1 regulates bone structure and strength via direct actions in the macrophage-osteoclast lineage, further supporting the conclusion that MMnet plays a key role in the physiological regulation of bone mass by osteoclasts.\n\nNevertheless, Wang and colleagues (Wang et al., 2018) recently reported that deletion of Slc40a1 in the myeloid lineage using LysMCre mice causes decreased bone mass and mineralisation in female, but not male, mice. Wang et al also reported that deletion of Slc40a1 in terminally differentiated osteoclasts using CtskCre mice resulted in no skeletal abnormalities in either sex. The discordance between our findings and those reported by Wang et al may be due to differences in the age at which mice were phenotyped and the strain of Slc40a1 floxed mice investigated (C57BL/6N-Slc40a1tm1c(EUCOMM)Hmgu/H in this study compared to 129S-Slc40a1tm2Nca/J by Wang and colleagues). Although it is clear that ferroportin acts directly in the macrophage-osteoclast lineage, further longitudinal studies will be required to define its temporal effects on bone mass and strength, whilst studies with the different floxed strains may be required to determine whether modifier genes influence the skeletal response to deletion of Slc40a1.\n\nSystems genetics studies use naturally occurring genetic variation to identify gene networks that are associated with the trait of interest in disease-relevant cells (Baliga et al., 2017). Systems genetics approaches in osteoblasts and osteoclasts have been previously carried out to identify genes that are implicated in skeletal homeostasis (Calabrese et al., 2012; Calabrese et al., 2017; Farber et al., 2011; Mesner et al., 2019; Mesner et al., 2014). Here, we have used systems genetics approaches to demonstrate that a complex trans-eQTL network (MMnet) facilitates homeostatic control of bone mass via its effects on osteoclast fusion and function that are mediated in large part by the mTOR pathway. This physiologically important network is conserved in rats, mice and humans and its identification will lead the way to an understanding of the gene-gene interactions and network-based therapeutic approaches that may be used in osteoclast-mediated inflammatory disease or to prevent bone loss.\n\n## Materials and methods\n\n### Animals\n\n14 week-old male Wistar-Kyoto (WKY/NCrl) and Lewis (LEW/Crl) rats were purchased from Charles River. Bcat1 knockout (Bcat1-/-) and wild-type (WT) littermate mice were previously described (Ananieva et al., 2014) and maintained according to protocols approved by the University of Virginia Animal Care and Use Committee. To rederive Slc40aflox/flox mice, sperm from conditional-ready heterozygous Slc40a1-floxed mice (C57BL/6N-Slc40a1tm1c(EUCOMM)Hmgu/H) was obtained from MRC Harwell and used for in vitro fertilisation of C57BL/6N female mice. LysM-Cre mice (Lyz2tm1(cre)Ifo) were obtained from The Jackson Laboratory. Slc40a1flox/flox and LysM-Cre mice were crossed to generate Slc40a1 mice in which Slc40a1 is deleted in cells of the monocyte-macrophage-osteoclast lineage (cKO). Slc40a1flox/flox (called Control) littermates were used as controls in all experiments. All animals were housed in standard caging on a 12-hr-light cycle and provided with free access to chow and water.\n\nTissues were collected and placed in either 70% ethanol or 10% neutral buffered formalin for 24 hr prior to storage in 70% ethanol. Samples were randomly assigned to batches for rapid-throughput analysis. All studies were performed in accordance to the U.K. Animal (Scientific Procedures) Act 1986, the ARRIVE guidelines, the EU Directive 2010/63/EU for animal experiments and practices prescribed by the National Institutes of Health in the United States.\n\nThe International Mouse Phenotyping Consortium (IMPC: http://www.mousephenotype.org) and the International Knockout Mouse Consortium (IKMC) are generating null alleles for all protein-coding genes in mice on a C57BL/6 genetic background (Collins et al., 2007). The Origins of Bone and Cartilage Disease Programme (OBCD) is undertaking a validated rapid-throughput multiparameter skeletal phenotype screen (Bassett et al., 2012a; Freudenthal et al., 2016) of mutant mouse lines generated by the Wellcome Trust Sanger Institute as part of the IKMC and IMPC effort.\n\n### Digital X-ray microradiography\n\nFemurs and caudal vertebrae 6 and 7 from 16 week-old mice and 14 week-old rats were fixed in 70% ethanol. Soft tissue was removed and digital X-ray images were recorded at 10 \u00b5m pixel resolution using a Faxitron MX20 variable kV point projection X-ray source and digital image system (Qados, Cross Technologies plc, UK) operating at 26 kV and 5x magnification. Bone mineral content (BMC) was determined relative to steel, aluminium and polyester standards as described (Bassett et al., 2012b). Images were calibrated with a digital micrometer and long bone and vertebra lengths were determined (Bassett et al., 2012a; Bassett et al., 2012b).\n\n### Micro-computerised tomography (micro-CT)\n\nMouse and rat femurs were analysed by micro-CT (Scanco uCT50, 70 kV, 200 \u03bcA, 0.5 mm aluminium filter) as described (Bassett et al., 2012a). Measurements included cortical bone parameters (cortical thickness (Ct.Th), cortical bone mineral density (Ct.BMD), internal diameter (Int.Dia) and bone area (Ct.Ar) at 10 \u03bcm3 voxel resolution in a 1.5 mm2 region centred on the mid-shaft region 56% of the way along the length of the femur distal to the femoral head, and trabecular parameters (bone volume (BV/TV), trabecular number (Tb.N), thickness (Tb.Th), spacing (Tb.Sp), structure model index (SMI) and trabecular BMD (Tb.BMD)) at 5 \u03bcm3 voxel resolution in a 1 mm2 region beginning 100 \u03bcm proximal to the distal growth plate. Parameters were determined using Scanco analysis software.\n\n### Destructive 3-point bend testing\n\nDestructive 3-point bend tests were performed on femurs and compression tests on caudal vertebrae 6 and 7 using an Instron 5543 load frame and load cell (100N for mouse femurs and 500N for mouse caudal vertebrae and rat bones) (Instron Limited, High Wycombe, Buckinghamshire, UK) as described (Bassett et al., 2012a). Bones were positioned horizontally on custom supports and load was applied perpendicular to the mid-diaphysis with a constant rate of displacement of 0.03 mm/s until fracture. Vertebrae were bonded in vertical alignment to a custom anvil support using cyanoacrylate glue and load was applied vertically at a constant rate of displacement of 0.03 mm/s and a sample rate of 20 Hz. Yield load, maximum load, fracture load, stiffness and toughness (Energy dissipated prior to fracture) were determined from femur load displacement curves and yield load, maximum load and stiffness from caudal vertebrae load displacement curves.\n\n### Osteoclast histomorphometry\n\nOsteoclast numbers were determined according to the American Society for Bone and Mineral Research system (Dempster et al., 2013) in paraffin sections from decalcified mouse femurs stained for tartrate resistant acid phosphatase (TRAP) activity, counterstained with aniline blue and imaged using a Leica DM LB2 microscope and DFC320 digital camera (Bassett et al., 2014). A montage of nine overlapping fields covering an area of 1 mm2 located 0.2 mm below the growth plate was constructed for each bone. BV/TV was measured, and osteoclast numbers and surface were determined in trabecular bone normalised to total bone surface (Bassett et al., 2014).\n\n### Alcian blue and Van Gieson staining of retained cartilage\n\nParaffin sections from decalcified mouse femurs were stained with Alcian blue van Gieson. Sections were imaged using a Leica DM LB2 microscope at a resolution of 920 pixels/mm. The trabecular region of interest (ROI) was defined as a 1 mm2 region beginning 100 \u03bcm proximal to the distal growth plate. The cortical ROI was defined as two 1.0 \u00d7 0.3 mm regions located 100 \u03bcm proximal to the distal growth plate each containing one femoral cortex. Blinded samples were analysed to determine bone area (B.Ar) and cartilage area (Cartilage.Ar) for each ROI using the Threshold and Colour Threshold functions of ImageJ. Cartilage area as a proportion of bone area (Cartilage.Ar/B.Ar) was then determined for both trabecular and cortical bone.\n\n### Cell culture, transfection and assessment of cell multinucleation\n\nHuman monocyte-derived macrophages were separated from healthy donor buffy coats by centrifugation through a Histopaque 1077 (Sigma) gradient and adhesion purification. Following Histopaque separation, peripheral blood mononuclear cells were re-suspended in RPMI (Life Technologies) and monocytes purified by adherence for 1 hr at 37\u00b0C, 5% CO2 in twelve-well plates. The monolayer was washed three times with HBSS to remove non-adherent cells and monocytes were differentiated for 3 days in RPMI medium containing 20 ng/ml M-CSF and 20 ng/ml recombinant human RANKL (PeproTech, UK). After 3 days of culture, mononucleated TRAP positive osteoclasts were obtained and transfected using Dharmafect 1 (Dharmacon) diluted in OPTIMEM medium (1:50 Invitrogen). siGENOME SMARTpools (100 nM, Dharmacon SMART pool) targeting human APPL2, ATP8B2, BCAT1, DEPTOR, DOT1L, EGFR, EML1, EPS15, IGSF8, PIK3CB, RNF125, SLC1A4 and SLC40A1 were used for RNAi and a non-targeting siRNA pool was used as the scrambled control siRNA. Primer sequence information is available in Supplementary Method 1. At the end of the culture (Day 5), osteoclasts were fixed in formalin, stained for TRAP and imaged. Transfection experiments were performed with four donors per si-RNA and three technical replicates in 12-well plates. Following the transfection, the number of nuclei in each TRAP-positive cell was counted to obtain the percentage of cells with 1, 2, three and\u00a0>4 nuclei, relative to numbers of nuclei in cells transfected with scrambled control siRNA.\n\nBone marrow-derived osteoclasts were isolated from 12 week old LEW and WKY rats by flushing bone marrow cells in DMEM (Thermo Fisher) supplemented with 25 mM HEPES buffer (Sigma), 25% fetal bovine serum (Labtech), penicillin/streptomycin (100 units/ml; Thermo Fisher). Bone marrow cells were differentiated into osteoclasts in DMEM containing 20 ng/ml M-CSF and 20 ng/ml recombinant rat RANKL (PeproTech, UK) for 6 days in Petri dishes (Nunc). At the end of the culture, cells were fixed in formalin and stained with Giemsa to visualise nuclei and count osteoclasts.\n\n### Quantitative RT-PCR\n\nFor quantitative RT-PCR (RT-qPCR), total RNA was extracted from human and rat osteoclasts using the TRIzol reagent (Invitrogen, Carlsbad, CA) according to the manufacturer\u2019s instructions. Complementary DNA (cDNA) was synthesised using iScript cDNA Synthesis Kit (Bio-Rad, Hercules, CA). A total of 10 ng cDNA for each sample was used and all RT-qPCR reactions were performed on a ViaA 7 Real-Time PCR System (Life Technologies, Carlsbad, CA) using Brilliant II SYBR Green QPCR Master Mix (Agilent, Santa Clara, CA). Results were analysed by the comparative Ct method using ViiA 7 RUO software, and each sample was normalised relative to HPRT expression.\n\n### In vitro resorption\n\nIn vitro resorption activity of human osteoclasts was measured on Osteo Assay Surface 96 well plates (hydroxyapatatite surfaces) (Corning). siRNA transfected cells were incubated with cell dissociation buffer (Sigma) and 105 cells/well were seeded in Osteo Assay Surface Plates. After 2 days of culture with 20 ng/ml M-CSF and 20 ng/ml recombinant human RANKL (PeproTech, UK), the wells were rinsed twice with PBS and incubated with 10% bleach solution for 30 min at room temperature. The wells were then washed twice with PBS and allowed to dry at room temperature. Individual resorption pits were imaged by light microscopy. Images were inverted and processed using Photoshop to yield high-contrast images and show the resorbed areas in black against a white background. Binary images of each individual well were then subjected to automated analysis (ImageJ), using constant \u2018threshold\u2019 and \u2018minimum particle\u2019 levels, to determine the number and surface area of resorbed pits.\n\n### Statistical analysis\n\nData are presented as mean\u00a0\u00b1\u00a0standard deviations (SD) and analysed using GraphPad Prism software (version 7.02; GraphPad). Normally distributed data were analysed by two tailed Student\u2019s t test. Relationships between micro-CT parameters and in vitro osteoclastogenesis were determined by Pearson correlation. Frequency distributions of bone mineral densities obtained by x-ray microradiography were compared using the Kolmogorov-Smirnov test. Differences in percentage of control following si-RNA knockdown in primary osteoclasts were tested for significance using a one-sample-t test.\n\nIMPC mutant lines were compared to C57BL6/N strain-specific reference ranges established for all parameters using 16 week-old female wild-type mice (n\u00a0=\u00a0320) obtained from control cohorts. Strains in which a structural or functional parameter was\u00a0\u00b12.0 SD from the C57BL6/N reference mean were considered as outliers.\n\nThe hypergeometric test was used to determine whether the MMnet network (n\u00a0=\u00a0190 rat genes, of which 178 genes had a unique human orthologue) was enriched for genes with a GWAS signal (p<10\u22126) for traits related to bone and height (Table 1) in the NHGRI-EBI Catalog of published GWAS (https://www.ebi.ac.uk/gwas/). Over-representation of GWAS gene signals in MMnet was assessed in comparison with the whole set of eQTLs (n\u00a0=\u00a01527 genes, of which 1448 genes had a unique human orthologue) that were previously mapped in multinucleating macrophages (Kang et al., 2014). Biomart was used to map rat genes to the human orthologues (one-to-one orthology) using Ensembl rel. 98.\n",
+      "created_at": "2025-12-02T17:57:48.905841Z"
+    },
+    {
+      "id": "3150c673-1611-4383-be3f-4729d24762bf",
+      "submission_id": "be84cd65-d5cc-4e7e-8e63-d77e69989e54",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Charles Farber, University of Virginia United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.55549.sa1](https://doi.org/10.7554/eLife.55549.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"A trans-eQTL network regulates osteoclast multinucleation and bone mass\" for consideration by eLife. Your article has been reviewed by Clifford Rosen as the Senior Editor, a Reviewing Editor, and three reviewers. The following individuals involved in review of your submission have agreed to reveal their identity: Natalie Sims (Reviewer #1); Nathan J Pavlos (Reviewer #2); Steven Munger (Reviewer #3).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nThis manuscript describes a systems genetics analysis using a previously identified transcriptomic network (MMNet) found to be important in the context of macrophage nucleation. Specifically, the authors integrate the MMNet with human eBMD GWAS data and results from a large-scale mouse phenotyping effort to identify novel genes impacting osteoclast function and bone mass. All reviewers thought the manuscript was well-written and an outstanding example of the power of systems genetics. The phenotypic assessment of novel genes using large-scale mutant mouse phenotyping scans was also viewed as a significant strength. However, the reviewers questioned whether this work provided direct evidence that the MMnet genes are bona fide regulators of osteoclast fusion/multinucleation and that few mechanistic details were provided. To improve the manuscript we recommend providing a more detailed analysis of the bone phenotypes (i.e. better analysis of osteoclasts (e.g. simply counting nuclei) and, to the extent possible, osteoblast contributions to the phenotype). It was suggested that a more detailed and balanced assessment of at least one of the mutant mice be provided, e.g. Slc40a1 is a good candidate given it was deleted in a macrophage-specific background. Below are the detailed comments from the reviewers.\n\nEssential revisions:\n\n1) The term \"osteoclast multinucleation\" is used throughout the manuscript, but it is not very accurate. In each of the gene suppression or gene deletion studies, they observed reduced formation of osteoclasts, but it is not clear at which stage the genes function \u2013 they may be involved in osteoclast precursor maturation (TRAP+ mononuclear cells have not been counted), or may be involved in initiation of binucleation. At no point have number of nuclei been counted. All that can be said at this point is that they are involved in osteoclast formation.\n\n2) The authors state multiple times (particularly in the Introduction and Discussion section) that multinucleation capability correlates with resorptive activity, but this is not true. There are many conditions (e.g. Src deletion, Pyk2 deletion, ClC-7 deficiency \u2013 the so-called \"osteoclast-rich osteopetroses\") where multinucleation occurs but osteoclasts are non-functional (or have impaired function).\n\n3) In the phenotypic analysis of the mice, the authors explain all phenotypes by a change in osteoclast generation with no analysis presented on the other side of the equation \u2013 osteoblast numbers and bone formation rate. This oversight is disappointing. It is not clear that the high bone mass phenotypes are truly osteopetrotic \u2013 no data on cartilage remnants is shown.\n\n4) It is very concerning that the number of mice analysed by histomorphometry is a very small subset of those analysed by micro-CT (e.g. for Bcat1 it is n=4 rather than n=8, and for Slc40a1 it is 4-5 instead of n=8). These are very low sample numbers indeed, and for the Slc40a1 data it is not clear that any affect on osteoclast formation is observed due to the biological variance. How were the subset of samples chosen for histomorphometry? Why were 50% of the samples excluded?\n\n5) The description of osteoclastogenesis assays is very limited. Although osteoclast formation is suppressed by the siRNA experiments, there is no information presented about whether it is truly an effect on \"multinucleation\" or an effect on precursor differentiation. Was there any suppression in the number of TRAP+ mononuclear cells? Were binucleated cells observed? Did the osteoclasts formed contain less nuclei than the control osteoclasts.\n\n6) siRNA is used to assess the affect of gene suppression on osteoclast formation, but no evidence is presented to show success of the knockdown.\n\n7) Images shown in Figure 1E and Figure 3B for si-scrambled and si-DCSTAMP are identical. Were all these analyses performed together? If so, the data should not be presented twice.\n\n8) Although deletion of Bcat1, Pik3cb, Atp8b2, Slc40a1, and Appl2 all lead to reduced osteoclast formation and increased BV/TV, the phenotypes are different in their effects on strength and cortical bone. This is not discussed.\n\n9) The authors analyse knockout mice of 12 candidate co-regulatory genes with modest to mild bone phenotypes, some of which have been previously described in detail and implicated in osteoclast function and bone mass including Pik3cb, Deptor and Slc40a1. With the exception of Slc40a1, all of the bone parameters assessed arise from global or heterozygous (Atp8b2) knockout mice from a single age-point/sex (i.e. 12-wk old male Bcat1 and others 16-week old female) making it difficult to assess the penetrance and robustness of bone phenotype across both sexes and whether the phenotype resolves or increases with age as is frequently observed in the bones of mice harbouring dysfunctional osteoclasts. Moreover, changes in femur length observed (e.g. for Igsf8 and WKY rats) imply that bone phenotype(s) are not restricted to osteoclasts but likely extends to other bone/cartilage resident cell types such as chondrocytes or osteoblasts and/or osteocytes. However, the authors make no provisions to address cell-autonomous defects experimentally nor has this been acknowledged in the Discussion section, which misleads the reader. Can the authors lend any information as to whether the phenotypes are maintained across both sexes and time? Further, are the MMnet genes expressed and/or functionally implicated in other bone/cartilage resident cells? As a minimum this needs to be addressed in the Discussion section and statements implicating osteoclasts tempered accordingly.\n\n10) Similarly, the notion that the low bone mass phenotype and shorter bones in WKY rats reflects disturbances in osteoclast multinucleation is unsubstantiated by the data presented in Figure 2\u2014figure supplement 1. There has been little attempt to address this at either at the histological/histomorphometric level or ex vivo generation of osteoclasts which is well within their remit. Do the authors have any evidence that osteoclast numbers and/or fusion rates are increased in WKY? I can only identify data pertaining to multinucleated giant cells in the study of Kang et al., 2014. This data is important as it underscores the premise of the MMnet network from which ensuing target fusion genes and functional studies on osteoclasts are derived. As an aside, caution should be exercised when drawing direct comparisons between multinucleation regulatory networks of macrophage-derived giant cells and osteoclasts given that they are enzymatically and functionally distinct polykaryons.\n\n11) In their present form, the in vitro studies remain too premature to draw meaningful correlations with in vivo data and thus fail to support conclusions that these genes regulate osteoclast fusion and/or resorption. Given the ready access to the IMPC mice it is surprising that the authors did not capitalize on this resource to validate cell-autonomous defects on osteoclast formation and multinucleation parameters ex vivo for at least a subset of the identified MMnet genes. Such data would go a long way towards substantiating claims and strengthening the resolve of the human osteoclast data, which are derived from siRNA-mediated transient knockdown experiments for which the efficiency and specificity of targeting remains incomplete for many of the described MMnet genes. This is of particular importance for the Slc40a1(Ferroportin) gene given the claims that \" \"Slc40a1 acts as an important determinant of adult bone mass and\u2026. by directly regulating osteoclast multinucleation and function.\", and in light of the discrepancies observed between the bone phenotypes in this study with those detailed by Wang et al., 2019, who reported reduced bone mass upon Slc40a1 deletion and accelerated osteoclast differentiation/fusion in the same LysoM-Cre conditional knockout model.\n\n12) Although collectively the data presented in this study encompass a nice synergy between genetic and high through bone phenotyping, individually the data offers few mechanistic insights into the roles of the identified multinucealation factors in osteoclasts. Given the robust inhibition of osteoclast multinucleation following Slc40a1, any additional data here would be welcomed to strengthen is potential role a regulator of osteoclast fusion.\n",
+      "created_at": "2025-12-02T17:57:48.905841Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T17:57:48.905841Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T17:57:48.905841Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "12126fcb-1ad7-4db1-b21d-2e5409fdd9f2",
+      "content_id": "9a5339fa-8554-4d12-b9b4-5b4e22cfc91e",
+      "claim_id": "C1",
+      "claim": "WKY rats display increased osteoclastogenesis in vitro compared to LEW rats.",
+      "claim_type": "EXPLICIT",
+      "source": "Here we show that WKY rats display increased osteoclastogenesis in vitro compared to LEW rats (Figure 1A\u2013B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 1A-B comparing osteoclast formation between WKY and LEW rats.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:57:48.905841Z"
+    },
+    {
+      "id": "b94c45b4-8167-43ba-bb51-ac508aff5bcc",
+      "content_id": "9a5339fa-8554-4d12-b9b4-5b4e22cfc91e",
+      "claim_id": "C2",
+      "claim": "WKY rats have decreased bone length compared to LEW rats.",
+      "claim_type": "EXPLICIT",
+      "source": "Skeletal analysis demonstrated that, compared to LEW rats, WKY rats have decreased bone length, bone mineral content (BMC), trabecular bone volume (BV/TV) and thickness (Tb.Th), together with reduced cortical bone thickness (Ct.Th) and mineral density (BMD) (Figure 1C\u2013E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by skeletal analysis data presented in Figure 1C-E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:57:48.905841Z"
+    },
+    {
+      "id": "ce3f299a-69cb-4ca2-969a-8365f5eb5f66",
+      "content_id": "9a5339fa-8554-4d12-b9b4-5b4e22cfc91e",
+      "claim_id": "C3",
+      "claim": "WKY rats have decreased bone mineral content (BMC) compared to LEW rats.",
+      "claim_type": "EXPLICIT",
+      "source": "Skeletal analysis demonstrated that, compared to LEW rats, WKY rats have decreased bone length, bone mineral content (BMC), trabecular bone volume (BV/TV) and thickness (Tb.Th), together with reduced cortical bone thickness (Ct.Th) and mineral density (BMD) (Figure 1C\u2013E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by skeletal analysis data presented in Figure 1C-E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:57:48.905841Z"
+    },
+    {
+      "id": "ad469750-7fc3-4939-9ffd-5e715732b96a",
+      "content_id": "9a5339fa-8554-4d12-b9b4-5b4e22cfc91e",
+      "claim_id": "C4",
+      "claim": "WKY rats have decreased trabecular bone volume (BV/TV) compared to LEW rats.",
+      "claim_type": "EXPLICIT",
+      "source": "Skeletal analysis demonstrated that, compared to LEW rats, WKY rats have decreased bone length, bone mineral content (BMC), trabecular bone volume (BV/TV) and thickness (Tb.Th), together with reduced cortical bone thickness (Ct.Th) and mineral density (BMD) (Figure 1C\u2013E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by skeletal analysis data presented in Figure 1C-E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:57:48.905841Z"
+    },
+    {
+      "id": "4865c285-c6cf-42ff-81e0-a233897f2e79",
+      "content_id": "9a5339fa-8554-4d12-b9b4-5b4e22cfc91e",
+      "claim_id": "C5",
+      "claim": "WKY rats have decreased trabecular thickness (Tb.Th) compared to LEW rats.",
+      "claim_type": "EXPLICIT",
+      "source": "Skeletal analysis demonstrated that, compared to LEW rats, WKY rats have decreased bone length, bone mineral content (BMC), trabecular bone volume (BV/TV) and thickness (Tb.Th), together with reduced cortical bone thickness (Ct.Th) and mineral density (BMD) (Figure 1C\u2013E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by skeletal analysis data presented in Figure 1C-E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:57:48.905841Z"
+    },
+    {
+      "id": "612cd9e9-5820-44d1-9933-e532ce6c5dfe",
+      "content_id": "9a5339fa-8554-4d12-b9b4-5b4e22cfc91e",
+      "claim_id": "C6",
+      "claim": "WKY rats have reduced cortical bone thickness (Ct.Th) compared to LEW rats.",
+      "claim_type": "EXPLICIT",
+      "source": "Skeletal analysis demonstrated that, compared to LEW rats, WKY rats have decreased bone length, bone mineral content (BMC), trabecular bone volume (BV/TV) and thickness (Tb.Th), together with reduced cortical bone thickness (Ct.Th) and mineral density (BMD) (Figure 1C\u2013E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by skeletal analysis data presented in Figure 1C-E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:57:48.905841Z"
+    },
+    {
+      "id": "b0165869-eb36-494b-87bc-28c79965d8e3",
+      "content_id": "9a5339fa-8554-4d12-b9b4-5b4e22cfc91e",
+      "claim_id": "C7",
+      "claim": "WKY rats have reduced cortical bone mineral density (BMD) compared to LEW rats.",
+      "claim_type": "EXPLICIT",
+      "source": "Skeletal analysis demonstrated that, compared to LEW rats, WKY rats have decreased bone length, bone mineral content (BMC), trabecular bone volume (BV/TV) and thickness (Tb.Th), together with reduced cortical bone thickness (Ct.Th) and mineral density (BMD) (Figure 1C\u2013E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by skeletal analysis data presented in Figure 1C-E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:57:48.905841Z"
+    },
+    {
+      "id": "b70ccd49-9747-49d9-9a6d-660a116cd3b6",
+      "content_id": "9a5339fa-8554-4d12-b9b4-5b4e22cfc91e",
+      "claim_id": "C8",
+      "claim": "WKY rats have markedly decreased bone strength compared to LEW rats.",
+      "claim_type": "EXPLICIT",
+      "source": "These abnormalities resulted in markedly decreased bone strength (Figure 1D\u2013E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by biomechanical testing data shown in Figure 1D-E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:57:48.905841Z"
+    },
+    {
+      "id": "9466cb6d-48bf-404b-ad2e-5af65e0fecf1",
+      "content_id": "9a5339fa-8554-4d12-b9b4-5b4e22cfc91e",
+      "claim_id": "C9",
+      "claim": "Spontaneous macrophage and osteoclast multinucleation in WKY rats is associated with low bone mass, mineralisation and strength.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, these data indicate that spontaneous macrophage and osteoclast multinucleation in WKY rats is associated with low bone mass, mineralisation and strength.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the combined observations of increased osteoclastogenesis and decreased bone parameters in WKY rats.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:57:48.905841Z"
+    },
+    {
+      "id": "d4f1e698-19a9-4df0-89ec-3b4671caf3ae",
+      "content_id": "9a5339fa-8554-4d12-b9b4-5b4e22cfc91e",
+      "claim_id": "C10",
+      "claim": "MMnet regulates adult bone homeostasis via its action in osteoclasts to control multinucleation.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, these findings suggest that MMnet regulates adult bone homeostasis via its action in osteoclasts to control multinucleation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the correlation between osteoclast multinucleation and bone phenotypes in WKY vs LEW rats.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:57:48.905841Z"
+    },
+    {
+      "id": "feec43b7-a13f-45e2-bbe7-d2c7d4528065",
+      "content_id": "9a5339fa-8554-4d12-b9b4-5b4e22cfc91e",
+      "claim_id": "C11",
+      "claim": "MMnet is significantly enriched for GWAS variants associated with bone-related phenotypes.",
+      "claim_type": "EXPLICIT",
+      "source": "In comparison with the background set of eQTLs (1448 eQTLs that were previously mapped in multinucleating macrophages [Kang et al., 2014], MMnet was generally enriched for bone-related GWAS loci (p=0.0085, hypergeometric test, Table 1)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by statistical analysis using hypergeometric test comparing MMnet genes to background eQTLs.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:57:48.905841Z"
+    },
+    {
+      "id": "a05f5404-1c0e-4ae7-ba65-3f27a7650987",
+      "content_id": "9a5339fa-8554-4d12-b9b4-5b4e22cfc91e",
+      "claim_id": "C12",
+      "claim": "MMnet is significantly enriched for heel bone mineral density associated GWAS variants (20 loci, p=4.49\u00d710\u22123).",
+      "claim_type": "EXPLICIT",
+      "source": "and more specifically for heel bone mineral density associated GWAS variants (Figure 1\u2014source data 1), which had the most significant enrichment (20 loci, p=4.49\u00d710\u22123, hypergeometric test, Table 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by statistical analysis using hypergeometric test.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:57:48.905841Z"
+    },
+    {
+      "id": "77ce1b63-c2c2-4b2c-8959-709c7b9d1729",
+      "content_id": "9a5339fa-8554-4d12-b9b4-5b4e22cfc91e",
+      "claim_id": "C13",
+      "claim": "MMnet is significantly enriched for body height variants (24 loci, p=1.86\u00d710\u22122).",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with the decreased bone length observed in WKY rats, MMnet was also significantly enriched for body height variants (24 loci, p=1.86\u00d710\u22122, hypergeometric test, Table 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by statistical analysis using hypergeometric test.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:57:48.905841Z"
+    },
+    {
+      "id": "afa2502a-aba6-4d57-9065-5a7b3c0bb1e9",
+      "content_id": "9a5339fa-8554-4d12-b9b4-5b4e22cfc91e",
+      "claim_id": "C14",
+      "claim": "9 MMnet genes have been implicated in the pathogenesis of rare monogenic skeletal disorders.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to enrichment for GWAS loci associated with skeletal traits, 9 MMnet genes have also been implicated in the pathogenesis of rare monogenic skeletal disorders (CTSK, FAM20C, FLNA, FN1, IDUA, IL1RN, MANBA, MET, MMP9) (Mortier et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Mortier et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:57:48.905841Z"
+    },
+    {
+      "id": "f7bb3b65-4627-414a-8d1f-284784ffc86f",
+      "content_id": "9a5339fa-8554-4d12-b9b4-5b4e22cfc91e",
+      "claim_id": "C15",
+      "claim": "MMnet is conserved in humans and implicated in the regulation of skeletal development and bone homeostasis.",
+      "claim_type": "EXPLICIT",
+      "source": "These results demonstrate that MMnet is conserved in humans and implicated in the regulation of skeletal development and bone homeostasis (Figure 1F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Inferred from GWAS enrichment analysis and monogenic disease associations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:57:48.905841Z"
+    },
+    {
+      "id": "997d0741-b251-48b1-b028-973a916e3071",
+      "content_id": "9a5339fa-8554-4d12-b9b4-5b4e22cfc91e",
+      "claim_id": "C16",
+      "claim": "12 week-old male Bcat1-/- mice have high bone mass characterized by increased cortical thickness (Ct.Th).",
+      "claim_type": "EXPLICIT",
+      "source": "12 week-old male Bcat1-/- mice had high bone mass characterised by increased cortical thickness (Ct.Th), trabecular bone volume (BV/TV), number (Tb.N) and thickness (Tb.Th), and reduced trabecular separation (Tb.Sp) and structural model index (SMI) (n = 8 per genotype) (Figure 2B\u2013C; Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by micro-CT analysis data shown in Figure 2B-C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:57:48.905841Z"
+    },
+    {
+      "id": "14f086c9-79f5-4836-929d-5481ce4db235",
+      "content_id": "9a5339fa-8554-4d12-b9b4-5b4e22cfc91e",
+      "claim_id": "C17",
+      "claim": "12 week-old male Bcat1-/- mice have increased trabecular bone volume (BV/TV).",
+      "claim_type": "EXPLICIT",
+      "source": "12 week-old male Bcat1-/- mice had high bone mass characterised by increased cortical thickness (Ct.Th), trabecular bone volume (BV/TV), number (Tb.N) and thickness (Tb.Th), and reduced trabecular separation (Tb.Sp) and structural model index (SMI) (n = 8 per genotype) (Figure 2B\u2013C; Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by micro-CT analysis data shown in Figure 2B-C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:57:48.905841Z"
+    },
+    {
+      "id": "272d6023-67df-4c78-832c-1363321914f5",
+      "content_id": "9a5339fa-8554-4d12-b9b4-5b4e22cfc91e",
+      "claim_id": "C18",
+      "claim": "12 week-old male Bcat1-/- mice have increased trabecular number (Tb.N).",
+      "claim_type": "EXPLICIT",
+      "source": "12 week-old male Bcat1-/- mice had high bone mass characterised by increased cortical thickness (Ct.Th), trabecular bone volume (BV/TV), number (Tb.N) and thickness (Tb.Th), and reduced trabecular separation (Tb.Sp) and structural model index (SMI) (n = 8 per genotype) (Figure 2B\u2013C; Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by micro-CT analysis data shown in Figure 2B-C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:57:48.905841Z"
+    },
+    {
+      "id": "d807c82c-6faf-4eab-a403-e814cd3e14af",
+      "content_id": "9a5339fa-8554-4d12-b9b4-5b4e22cfc91e",
+      "claim_id": "C19",
+      "claim": "12 week-old male Bcat1-/- mice have increased trabecular thickness (Tb.Th).",
+      "claim_type": "EXPLICIT",
+      "source": "12 week-old male Bcat1-/- mice had high bone mass characterised by increased cortical thickness (Ct.Th), trabecular bone volume (BV/TV), number (Tb.N) and thickness (Tb.Th), and reduced trabecular separation (Tb.Sp) and structural model index (SMI) (n = 8 per genotype) (Figure 2B\u2013C; Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by micro-CT analysis data shown in Figure 2B-C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:57:48.905841Z"
+    },
+    {
+      "id": "f2e78aab-7086-4037-a8de-5c016ce68f3e",
+      "content_id": "9a5339fa-8554-4d12-b9b4-5b4e22cfc91e",
+      "claim_id": "C20",
+      "claim": "12 week-old male Bcat1-/- mice have reduced trabecular separation (Tb.Sp).",
+      "claim_type": "EXPLICIT",
+      "source": "12 week-old male Bcat1-/- mice had high bone mass characterised by increased cortical thickness (Ct.Th), trabecular bone volume (BV/TV), number (Tb.N) and thickness (Tb.Th), and reduced trabecular separation (Tb.Sp) and structural model index (SMI) (n = 8 per genotype) (Figure 2B\u2013C; Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by micro-CT analysis data shown in Figure 2B-C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:57:48.905841Z"
+    },
+    {
+      "id": "e453c24e-e767-422d-a39d-693fda5a0f3e",
+      "content_id": "9a5339fa-8554-4d12-b9b4-5b4e22cfc91e",
+      "claim_id": "C21",
+      "claim": "12 week-old male Bcat1-/- mice have reduced structural model index (SMI).",
+      "claim_type": "EXPLICIT",
+      "source": "12 week-old male Bcat1-/- mice had high bone mass characterised by increased cortical thickness (Ct.Th), trabecular bone volume (BV/TV), number (Tb.N) and thickness (Tb.Th), and reduced trabecular separation (Tb.Sp) and structural model index (SMI) (n = 8 per genotype) (Figure 2B\u2013C; Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by micro-CT analysis data shown in Figure 2B-C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:57:48.905841Z"
+    },
+    {
+      "id": "d95d3032-6f98-4fb3-92be-f78b44d5cce2",
+      "content_id": "9a5339fa-8554-4d12-b9b4-5b4e22cfc91e",
+      "claim_id": "C22",
+      "claim": "Bcat1-/- mice have enhanced bone strength characterized by increased yield, maximum and fracture loads and stiffness.",
+      "claim_type": "EXPLICIT",
+      "source": "Biomechanical 3-point bend testing demonstrated that Bcat1-/- mice had enhanced bone strength characterised by increased yield, maximum and fracture loads and stiffness (Figure 2C; Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by biomechanical testing data shown in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:57:48.905841Z"
+    },
+    {
+      "id": "b78b54ba-be1f-4cb7-87be-36d741707ff3",
+      "content_id": "9a5339fa-8554-4d12-b9b4-5b4e22cfc91e",
+      "claim_id": "C23",
+      "claim": "Bcat1-/- mice have decreased osteoclast surface (Oc.S/BS).",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, static histomorphometry showed that Bcat1-/- mice had decreased osteoclast surface (Oc.S/BS) and number (Oc.N/BS), suggesting their high bone mass phenotype results from impaired osteoclast activity (Figure 2D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by histomorphometry data shown in Figure 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:57:48.905841Z"
+    },
+    {
+      "id": "2bd5eecd-f97e-4c67-b31a-e31d969622b9",
+      "content_id": "9a5339fa-8554-4d12-b9b4-5b4e22cfc91e",
+      "claim_id": "C24",
+      "claim": "Bcat1-/- mice have decreased osteoclast number (Oc.N/BS).",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, static histomorphometry showed that Bcat1-/- mice had decreased osteoclast surface (Oc.S/BS) and number (Oc.N/BS), suggesting their high bone mass phenotype results from impaired osteoclast activity (Figure 2D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by histomorphometry data shown in Figure 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:57:48.905841Z"
+    },
+    {
+      "id": "6cffcc75-8a2e-40d0-ba52-285ebb8758b9",
+      "content_id": "9a5339fa-8554-4d12-b9b4-5b4e22cfc91e",
+      "claim_id": "C25",
+      "claim": "The high bone mass phenotype in Bcat1-/- mice results from impaired osteoclast activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, static histomorphometry showed that Bcat1-/- mice had decreased osteoclast surface (Oc.S/BS) and number (Oc.N/BS), suggesting their high bone mass phenotype results from impaired osteoclast activity (Figure 2D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Inferred from the observation of decreased osteoclast parameters in Bcat1-/- mice with high bone mass.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:57:48.905841Z"
+    },
+    {
+      "id": "2e738de9-715f-4c17-a85f-0da865e4cdee",
+      "content_id": "9a5339fa-8554-4d12-b9b4-5b4e22cfc91e",
+      "claim_id": "C26",
+      "claim": "Bcat1-/- mice have increased amounts of retained cartilage within both trabecular and cortical bone.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, Bcat1-/- mice had increased amounts of retained cartilage within both trabecular and cortical bone, suggesting impaired osteoclastic resorption during bone modelling and remodelling (Figure 2\u2014figure supplement 1D\u2013E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by histological analysis shown in Figure 2\u2014figure supplement 1D-E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:57:48.905841Z"
+    },
+    {
+      "id": "65cd7ed8-0964-467e-adb4-528314d63ed1",
+      "content_id": "9a5339fa-8554-4d12-b9b4-5b4e22cfc91e",
+      "claim_id": "C27",
+      "claim": "Retained cartilage in Bcat1-/- mice suggests impaired osteoclastic resorption during bone modelling and remodelling.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, Bcat1-/- mice had increased amounts of retained cartilage within both trabecular and cortical bone, suggesting impaired osteoclastic resorption during bone modelling and remodelling (Figure 2\u2014figure supplement 1D\u2013E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Inferred from the observation of retained cartilage, which is normally resorbed by osteoclasts.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:57:48.905841Z"
+    },
+    {
+      "id": "ef5046b8-0f34-46e5-a701-7ba846e7939a",
+      "content_id": "9a5339fa-8554-4d12-b9b4-5b4e22cfc91e",
+      "claim_id": "C28",
+      "claim": "siRNA-mediated knockdown of BCAT1 expression in human osteoclasts in vitro inhibited multinucleation by 60%.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with this, siRNA-mediated knockdown of BCAT1 expression in human osteoclasts in vitro inhibited multinucleation and resorption by 60% (Figure 2E\u2013F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by in vitro knockdown experiments shown in Figure 2E-F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:57:48.905841Z"
+    },
+    {
+      "id": "8f59f9bc-225f-4c1e-9ffd-593c2cc43712",
+      "content_id": "9a5339fa-8554-4d12-b9b4-5b4e22cfc91e",
+      "claim_id": "C29",
+      "claim": "siRNA-mediated knockdown of BCAT1 expression in human osteoclasts in vitro inhibited resorption by 60%.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with this, siRNA-mediated knockdown of BCAT1 expression in human osteoclasts in vitro inhibited multinucleation and resorption by 60% (Figure 2E\u2013F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by in vitro knockdown experiments shown in Figure 2E-F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:57:48.905841Z"
+    },
+    {
+      "id": "6a1672e8-2419-44bb-ace6-be02f26e39ac",
+      "content_id": "9a5339fa-8554-4d12-b9b4-5b4e22cfc91e",
+      "claim_id": "C30",
+      "claim": "Knockdown of DCSTAMP resulted in 90% inhibition of osteoclast multinucleation.",
+      "claim_type": "EXPLICIT",
+      "source": "By comparison, knockdown of DCSTAMP, a master regulator of osteoclast and macrophage membrane fusion (Yagi et al., 2005; Yagi et al., 2006), resulted in 90% inhibition of osteoclast multinucleation and resorption (Figure 2E\u2013F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by in vitro knockdown experiments shown in Figure 2E-F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:57:48.905841Z"
+    },
+    {
+      "id": "3376741a-eeb3-469c-8719-7254aa7b2f07",
+      "content_id": "9a5339fa-8554-4d12-b9b4-5b4e22cfc91e",
+      "claim_id": "C31",
+      "claim": "Knockdown of DCSTAMP resulted in 90% inhibition of osteoclast resorption.",
+      "claim_type": "EXPLICIT",
+      "source": "By comparison, knockdown of DCSTAMP, a master regulator of osteoclast and macrophage membrane fusion (Yagi et al., 2005; Yagi et al., 2006), resulted in 90% inhibition of osteoclast multinucleation and resorption (Figure 2E\u2013F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by in vitro knockdown experiments shown in Figure 2E-F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:57:48.905841Z"
+    },
+    {
+      "id": "ce6f6cf7-08d7-4173-98e2-e4ffc6591d50",
+      "content_id": "9a5339fa-8554-4d12-b9b4-5b4e22cfc91e",
+      "claim_id": "C32",
+      "claim": "DCSTAMP is a master regulator of osteoclast and macrophage membrane fusion.",
+      "claim_type": "EXPLICIT",
+      "source": "By comparison, knockdown of DCSTAMP, a master regulator of osteoclast and macrophage membrane fusion (Yagi et al., 2005; Yagi et al., 2006), resulted in 90% inhibition of osteoclast multinucleation and resorption (Figure 2E\u2013F).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Yagi et al., 2005 and Yagi et al., 2006.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:57:48.905841Z"
+    },
+    {
+      "id": "2a538fec-3c4c-4f9d-aaef-1f3fd5ebca65",
+      "content_id": "9a5339fa-8554-4d12-b9b4-5b4e22cfc91e",
+      "claim_id": "C33",
+      "claim": "BCAT1 has an important new role in osteoclast formation and function.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, these data demonstrate an important new role for BCAT1 in osteoclast formation and function, and the physiological maintenance of adult bone mass and strength.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the combined in vitro and in vivo data on BCAT1 function.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:57:48.905841Z"
+    },
+    {
+      "id": "8e463bbb-6974-4799-b847-a231ba84e496",
+      "content_id": "9a5339fa-8554-4d12-b9b4-5b4e22cfc91e",
+      "claim_id": "C34",
+      "claim": "BCAT1 plays a role in the physiological maintenance of adult bone mass and strength.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, these data demonstrate an important new role for BCAT1 in osteoclast formation and function, and the physiological maintenance of adult bone mass and strength.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the combined in vitro and in vivo data on BCAT1 function.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:57:48.905841Z"
+    },
+    {
+      "id": "b262e0d4-f0d3-4806-9f01-75c8b004b312",
+      "content_id": "9a5339fa-8554-4d12-b9b4-5b4e22cfc91e",
+      "claim_id": "C35",
+      "claim": "Six of the 12 MMnet KO mouse lines exhibited abnormal skeletal phenotypes.",
+      "claim_type": "EXPLICIT",
+      "source": "Six of the 12 MMnet KO mouse lines exhibited abnormal skeletal phenotypes, whereas Dot1l+/-, Egfr+/-, Eps15-/-, Rnf125-/-, Slc1a4-/- and Tgfb1i1-/- mice displayed no skeletal abnormalities (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by phenotyping data from 12 knockout mouse lines.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:57:48.905841Z"
+    },
+    {
+      "id": "402af69c-f766-4379-9510-51503a2ea412",
+      "content_id": "9a5339fa-8554-4d12-b9b4-5b4e22cfc91e",
+      "claim_id": "C36",
+      "claim": "Dot1l+/-, Egfr+/-, Eps15-/-, Rnf125-/-, Slc1a4-/- and Tgfb1i1-/- mice displayed no skeletal abnormalities.",
+      "claim_type": "EXPLICIT",
+      "source": "Six of the 12 MMnet KO mouse lines exhibited abnormal skeletal phenotypes, whereas Dot1l+/-, Egfr+/-, Eps15-/-, Rnf125-/-, Slc1a4-/- and Tgfb1i1-/- mice displayed no skeletal abnormalities (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by phenotyping data from 12 knockout mouse lines.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:57:48.905841Z"
+    },
+    {
+      "id": "b54af0e7-855e-4503-ac5f-745cdb91351b",
+      "content_id": "9a5339fa-8554-4d12-b9b4-5b4e22cfc91e",
+      "claim_id": "C37",
+      "claim": "Igsf8-/- mice have decreased femur length.",
+      "claim_type": "EXPLICIT",
+      "source": "Igsf8-/- mice had decreased femur length (Figure 3\u2014source data 1;",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by phenotyping data referenced in Figure 3\u2014source data 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:57:48.905841Z"
+    },
+    {
+      "id": "b679960f-ad4b-4a7f-b383-9d166f33df6b",
+      "content_id": "9a5339fa-8554-4d12-b9b4-5b4e22cfc91e",
+      "claim_id": "C38",
+      "claim": "Pik3cb-/- mice have increased BV/TV.",
+      "claim_type": "EXPLICIT",
+      "source": "Pik3cb-/- (increased BV/TV and Tb.N), Appl2-/- (increased BV/TV) and Atp8b2+/- (increased BV/TV) mice had high bone mass;",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by micro-CT analysis data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:57:48.905841Z"
+    },
+    {
+      "id": "8b1bfdb6-08f7-418f-a0bc-4f9320eba86b",
+      "content_id": "9a5339fa-8554-4d12-b9b4-5b4e22cfc91e",
+      "claim_id": "C39",
+      "claim": "Pik3cb-/- mice have increased Tb.N.",
+      "claim_type": "EXPLICIT",
+      "source": "Pik3cb-/- (increased BV/TV and Tb.N), Appl2-/- (increased BV/TV) and Atp8b2+/- (increased BV/TV) mice had high bone mass;",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by micro-CT analysis data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:57:48.905841Z"
+    },
+    {
+      "id": "2f071aa8-0008-4792-9ffd-73b978e40f1f",
+      "content_id": "9a5339fa-8554-4d12-b9b4-5b4e22cfc91e",
+      "claim_id": "C40",
+      "claim": "Appl2-/- mice have increased BV/TV.",
+      "claim_type": "EXPLICIT",
+      "source": "Pik3cb-/- (increased BV/TV and Tb.N), Appl2-/- (increased BV/TV) and Atp8b2+/- (increased BV/TV) mice had high bone mass;",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by micro-CT analysis data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:57:48.905841Z"
+    },
+    {
+      "id": "e5250905-7ad4-4a48-9d11-5d22f81c5292",
+      "content_id": "9a5339fa-8554-4d12-b9b4-5b4e22cfc91e",
+      "claim_id": "C41",
+      "claim": "Atp8b2+/- mice have increased BV/TV.",
+      "claim_type": "EXPLICIT",
+      "source": "Pik3cb-/- (increased BV/TV and Tb.N), Appl2-/- (increased BV/TV) and Atp8b2+/- (increased BV/TV) mice had high bone mass;",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by micro-CT analysis data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:57:48.905841Z"
+    },
+    {
+      "id": "c8580dc0-f820-42c5-83d4-064938c79b38",
+      "content_id": "9a5339fa-8554-4d12-b9b4-5b4e22cfc91e",
+      "claim_id": "C42",
+      "claim": "Deptor-/- mice have decreased BV/TV.",
+      "claim_type": "EXPLICIT",
+      "source": "whereas Deptor-/- (decreased BV/TV and Tb.N) mice had low bone mass (Figure 3C\u2013D, Figure 3\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by micro-CT analysis data shown in Figure 3C-D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:57:48.905841Z"
+    },
+    {
+      "id": "0fa83186-21bd-44f3-b4d4-a49574b223e7",
+      "content_id": "9a5339fa-8554-4d12-b9b4-5b4e22cfc91e",
+      "claim_id": "C43",
+      "claim": "Deptor-/- mice have decreased Tb.N.",
+      "claim_type": "EXPLICIT",
+      "source": "whereas Deptor-/- (decreased BV/TV and Tb.N) mice had low bone mass (Figure 3C\u2013D, Figure 3\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by micro-CT analysis data shown in Figure 3C-D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:57:48.905841Z"
+    },
+    {
+      "id": "12cb6d5f-ef28-43a8-8c26-ccc4d42372bc",
+      "content_id": "9a5339fa-8554-4d12-b9b4-5b4e22cfc91e",
+      "claim_id": "C44",
+      "claim": "Atp8b2+/- mice have decreased femur stiffness.",
+      "claim_type": "EXPLICIT",
+      "source": "Biomechanical testing demonstrated decreased bone strength in Atp8b2+/- (decreased femur stiffness), Deptor-/- (decreased vertebral stiffness) and Eml1-/- (decreased vertebral stiffness) mice (Figure 3E\u2013F, Figure 3\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by biomechanical testing data shown in Figure 3E-F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:57:48.905841Z"
+    },
+    {
+      "id": "7e2e85d5-a46b-47f0-b41e-c73fb17ee010",
+      "content_id": "9a5339fa-8554-4d12-b9b4-5b4e22cfc91e",
+      "claim_id": "C45",
+      "claim": "Deptor-/- mice have decreased vertebral stiffness.",
+      "claim_type": "EXPLICIT",
+      "source": "Biomechanical testing demonstrated decreased bone strength in Atp8b2+/- (decreased femur stiffness), Deptor-/- (decreased vertebral stiffness) and Eml1-/- (decreased vertebral stiffness) mice (Figure 3E\u2013F, Figure 3\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by biomechanical testing data shown in Figure 3E-F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:57:48.905841Z"
+    },
+    {
+      "id": "71ca282e-f05e-4dcc-9ef8-dbe39b44f23f",
+      "content_id": "9a5339fa-8554-4d12-b9b4-5b4e22cfc91e",
+      "claim_id": "C46",
+      "claim": "Eml1-/- mice have decreased vertebral stiffness.",
+      "claim_type": "EXPLICIT",
+      "source": "Biomechanical testing demonstrated decreased bone strength in Atp8b2+/- (decreased femur stiffness), Deptor-/- (decreased vertebral stiffness) and Eml1-/- (decreased vertebral stiffness) mice (Figure 3E\u2013F, Figure 3\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by biomechanical testing data shown in Figure 3E-F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:57:48.905841Z"
+    },
+    {
+      "id": "1411fbd2-0d0e-476f-b787-1cc0eebdfd09",
+      "content_id": "9a5339fa-8554-4d12-b9b4-5b4e22cfc91e",
+      "claim_id": "C47",
+      "claim": "siRNA-mediated knockdown of all 11 MMnet genes resulted in greater than 80% reduction in mRNA expression.",
+      "claim_type": "EXPLICIT",
+      "source": "For all 11 MMnet genes, siRNA-mediated knockdown resulted in a greater than 80% reduction in mRNA expression and did not affect cell viability (Figure 4\u2014figure supplement 1B\u2013C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by qRT-PCR data shown in Figure 4\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:57:48.905841Z"
+    },
+    {
+      "id": "a2aba3d7-c9b6-4ab3-aa49-0f2fccc6e24b",
+      "content_id": "9a5339fa-8554-4d12-b9b4-5b4e22cfc91e",
+      "claim_id": "C48",
+      "claim": "siRNA-mediated knockdown of all 11 MMnet genes did not affect cell viability.",
+      "claim_type": "EXPLICIT",
+      "source": "For all 11 MMnet genes, siRNA-mediated knockdown resulted in a greater than 80% reduction in mRNA expression and did not affect cell viability (Figure 4\u2014figure supplement 1B\u2013C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by cell viability assay data shown in Figure 4\u2014figure supplement 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:57:48.905841Z"
+    },
+    {
+      "id": "93d560f0-8c75-4ad2-ba9f-ecbaebab28c0",
+      "content_id": "9a5339fa-8554-4d12-b9b4-5b4e22cfc91e",
+      "claim_id": "C49",
+      "claim": "Knockdown of DOTL1, EPS15 and RNF125 had no effect on osteoclast multinucleation or resorption.",
+      "claim_type": "EXPLICIT",
+      "source": "Knockdown of DOTL1, EPS15 and RNF125 had no effect on osteoclast multinucleation or resorption (Figure 4B\u2013D)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by in vitro knockdown experiments shown in Figure 4B-D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:57:48.905841Z"
+    },
+    {
+      "id": "7927843c-4627-4410-acfa-0ab3bfd7e275",
+      "content_id": "9a5339fa-8554-4d12-b9b4-5b4e22cfc91e",
+      "claim_id": "C50",
+      "claim": "The skeletal phenotype of Dot1l+/-, Eps15-/- and Rnf125-/- knockout mice was unaffected.",
+      "claim_type": "EXPLICIT",
+      "source": "and the skeletal phenotype of the corresponding knockout mice was also unaffected (Figure 3\u2014source data 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by phenotyping data referenced in Figure 3\u2014source data 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:57:48.905841Z"
+    },
+    {
+      "id": "012ab57c-fadc-4ca2-aa31-2a34bb7a7992",
+      "content_id": "9a5339fa-8554-4d12-b9b4-5b4e22cfc91e",
+      "claim_id": "C51",
+      "claim": "Knockdown of APPL2 inhibited osteoclast resorption.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, knockdown of APPL2 inhibited osteoclast resorption and knockdown of PIK3CB and ATP8B2 inhibited both multinucleation and resorption (Figure 4B\u2013D)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by in vitro knockdown experiments shown in Figure 4B-D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:57:48.905841Z"
+    },
+    {
+      "id": "74f35d93-f7ba-4b11-a7ee-68bf18bd921f",
+      "content_id": "9a5339fa-8554-4d12-b9b4-5b4e22cfc91e",
+      "claim_id": "C52",
+      "claim": "Knockdown of PIK3CB inhibited both multinucleation and resorption.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, knockdown of APPL2 inhibited osteoclast resorption and knockdown of PIK3CB and ATP8B2 inhibited both multinucleation and resorption (Figure 4B\u2013D)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by in vitro knockdown experiments shown in Figure 4B-D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:57:48.905841Z"
+    },
+    {
+      "id": "b8b55434-5f87-468a-a113-1672a84b0261",
+      "content_id": "9a5339fa-8554-4d12-b9b4-5b4e22cfc91e",
+      "claim_id": "C53",
+      "claim": "Knockdown of ATP8B2 inhibited both multinucleation and resorption.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, knockdown of APPL2 inhibited osteoclast resorption and knockdown of PIK3CB and ATP8B2 inhibited both multinucleation and resorption (Figure 4B\u2013D)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by in vitro knockdown experiments shown in Figure 4B-D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:57:48.905841Z"
+    },
+    {
+      "id": "480f9440-f919-41cb-ac8e-73b17a4b7c18",
+      "content_id": "9a5339fa-8554-4d12-b9b4-5b4e22cfc91e",
+      "claim_id": "C54",
+      "claim": "Pik3cb-/-, Appl2-/- and Atp8b2+/- knockout mice displayed increased bone mass.",
+      "claim_type": "EXPLICIT",
+      "source": "whilst the corresponding knockout mice displayed increased bone mass (Figure 3C\u2013D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by micro-CT analysis data shown in Figure 3C-D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:57:48.905841Z"
+    },
+    {
+      "id": "c82b84da-7fb9-46aa-9ede-89a8cdba03ab",
+      "content_id": "9a5339fa-8554-4d12-b9b4-5b4e22cfc91e",
+      "claim_id": "C55",
+      "claim": "Knockdown of DEPTOR resulted in a marked stimulation of both multinucleation and resorption.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, knockdown of DEPTOR resulted in a marked stimulation of both multinucleation and resorption (Figure 4B\u2013D),",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by in vitro knockdown experiments shown in Figure 4B-D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:57:48.905841Z"
+    },
+    {
+      "id": "f4fb3cee-6bcb-494c-9e91-307760549d8a",
+      "content_id": "9a5339fa-8554-4d12-b9b4-5b4e22cfc91e",
+      "claim_id": "C56",
+      "claim": "DEPTOR deficient mice had reduced bone mass.",
+      "claim_type": "EXPLICIT",
+      "source": "and DEPTOR deficient mice had reduced bone mass and vertebral stiffness (Figure 3C\u2013F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by micro-CT analysis data shown in Figure 3C-F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:57:48.905841Z"
+    },
+    {
+      "id": "0c7ae756-f126-433c-a9e4-d92404e42e5e",
+      "content_id": "9a5339fa-8554-4d12-b9b4-5b4e22cfc91e",
+      "claim_id": "C57",
+      "claim": "DEPTOR deficient mice had reduced vertebral stiffness.",
+      "claim_type": "EXPLICIT",
+      "source": "and DEPTOR deficient mice had reduced bone mass and vertebral stiffness (Figure 3C\u2013F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by biomechanical testing data shown in Figure 3C-F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:57:48.905841Z"
+    },
+    {
+      "id": "f1b2172a-7388-4359-a4bd-704736f4a161",
+      "content_id": "9a5339fa-8554-4d12-b9b4-5b4e22cfc91e",
+      "claim_id": "C58",
+      "claim": "The effects of mRNA knockdown of MMnet genes on in vitro osteoclast multinucleation and resorption were concordant and strongly correlated (R2 = 0.76; p<0.001).",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, the effects of mRNA knockdown of MMnet genes on in vivo osteoclast multinucleation and resorption were concordant and strongly correlated (R2 = 0.76; p<0.001) (Figure 4E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by Pearson correlation analysis shown in Figure 4E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:57:48.905841Z"
+    },
+    {
+      "id": "ed12005d-24a1-4f12-8fc1-428e20d3c9cc",
+      "content_id": "9a5339fa-8554-4d12-b9b4-5b4e22cfc91e",
+      "claim_id": "C59",
+      "claim": "The effect of knockdown of MMnet genes on osteoclast resorption was strongly and inversely correlated with trabecular bone mass (BV/TV) in knockout mice (R2 = 0.65; p<0.01).",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, the effect of knockdown of MMnet genes on osteoclast resorption was also strongly and inversely correlated with trabecular bone mass (BV/TV) in knockout mice (R2 = 0.65; p<0.01) (Figure 4F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by Pearson correlation analysis shown in Figure 4F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:57:48.905841Z"
+    },
+    {
+      "id": "de66a55b-1cf5-4ee7-8091-aee8f2623d15",
+      "content_id": "9a5339fa-8554-4d12-b9b4-5b4e22cfc91e",
+      "claim_id": "C60",
+      "claim": "The effects of MMnet gene deletion on the skeletal phenotype of knockout mice result, at least in part, from the direct consequences of gene deletion on osteoclast multinucleation and function.",
+      "claim_type": "EXPLICIT",
+      "source": "These findings demonstrate that the effects of MMnet gene deletion on the skeletal phenotype of knockout mice result, at least in part, from the direct consequences of gene deletion on osteoclast multinucleation and function, and that MMnet contains genes with important counter regulatory roles in the physiological control of adult bone mass and strength.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the correlation between in vitro osteoclast function and in vivo bone phenotypes.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:57:48.905841Z"
+    },
+    {
+      "id": "a96d2957-9212-46c3-82cf-09491059a3b6",
+      "content_id": "9a5339fa-8554-4d12-b9b4-5b4e22cfc91e",
+      "claim_id": "C61",
+      "claim": "MMnet contains genes with important counter regulatory roles in the physiological control of adult bone mass and strength.",
+      "claim_type": "EXPLICIT",
+      "source": "These findings demonstrate that the effects of MMnet gene deletion on the skeletal phenotype of knockout mice result, at least in part, from the direct consequences of gene deletion on osteoclast multinucleation and function, and that MMnet contains genes with important counter regulatory roles in the physiological control of adult bone mass and strength.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the divergent effects of different MMnet genes on bone mass.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:57:48.905841Z"
+    },
+    {
+      "id": "5b9648a1-88d3-4c68-bd42-803dfcb6ca27",
+      "content_id": "9a5339fa-8554-4d12-b9b4-5b4e22cfc91e",
+      "claim_id": "C62",
+      "claim": "MMnet contains 190 genes, of which 178 are annotated.",
+      "claim_type": "EXPLICIT",
+      "source": "MMnet contains 190 genes, of which 178 are annotated, and among these genes there are known regulators of osteoclast multinucleation (Dcstamp, Mmp9, Ctsk) but the majority of MMnet genes require further investigation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on the network composition described in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:57:48.905841Z"
+    },
+    {
+      "id": "905098ea-7b44-4f9e-b487-681199e99ae3",
+      "content_id": "9a5339fa-8554-4d12-b9b4-5b4e22cfc91e",
+      "claim_id": "C63",
+      "claim": "MMnet contains known regulators of osteoclast multinucleation including Dcstamp, Mmp9, and Ctsk.",
+      "claim_type": "EXPLICIT",
+      "source": "MMnet contains 190 genes, of which 178 are annotated, and among these genes there are known regulators of osteoclast multinucleation (Dcstamp, Mmp9, Ctsk) but the majority of MMnet genes require further investigation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on established scientific knowledge about these genes.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:57:48.905841Z"
+    },
+    {
+      "id": "a3c6c2e6-9a14-40c3-8438-b98949317dee",
+      "content_id": "9a5339fa-8554-4d12-b9b4-5b4e22cfc91e",
+      "claim_id": "C64",
+      "claim": "The majority of MMnet genes require further investigation.",
+      "claim_type": "EXPLICIT",
+      "source": "MMnet contains 190 genes, of which 178 are annotated, and among these genes there are known regulators of osteoclast multinucleation (Dcstamp, Mmp9, Ctsk) but the majority of MMnet genes require further investigation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a gap in knowledge in the manuscript.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:57:48.905841Z"
+    },
+    {
+      "id": "a828cf98-3949-4b78-b7fb-087f30e4b0b0",
+      "content_id": "9a5339fa-8554-4d12-b9b4-5b4e22cfc91e",
+      "claim_id": "C65",
+      "claim": "Knockdown of SLC40A1 resulted in more than 80% inhibition of multinucleation.",
+      "claim_type": "EXPLICIT",
+      "source": "Most strikingly, knockdown of SLC40A1 (encoding the mammalian iron transporter, ferroportin) resulted in more than 80% inhibition of multinucleation, an effect comparable with that of the master regulator DCSTAMP (Figure 5\u2014figure supplement 1C\u2013D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by in vitro knockdown experiments shown in Figure 5\u2014figure supplement 1C-D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:57:48.905841Z"
+    },
+    {
+      "id": "a0b6b3ba-5a89-4c7c-b01b-3b9ebbaa86fe",
+      "content_id": "9a5339fa-8554-4d12-b9b4-5b4e22cfc91e",
+      "claim_id": "C66",
+      "claim": "SLC40A1 encodes the mammalian iron transporter, ferroportin.",
+      "claim_type": "EXPLICIT",
+      "source": "Most strikingly, knockdown of SLC40A1 (encoding the mammalian iron transporter, ferroportin) resulted in more than 80% inhibition of multinucleation, an effect comparable with that of the master regulator DCSTAMP (Figure 5\u2014figure supplement 1C\u2013D).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on established scientific knowledge about SLC40A1.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:57:48.905841Z"
+    },
+    {
+      "id": "c6891666-9d22-4021-b1a9-7124bab519fc",
+      "content_id": "9a5339fa-8554-4d12-b9b4-5b4e22cfc91e",
+      "claim_id": "C67",
+      "claim": "The effect of SLC40A1 knockdown on multinucleation is comparable with that of the master regulator DCSTAMP.",
+      "claim_type": "EXPLICIT",
+      "source": "Most strikingly, knockdown of SLC40A1 (encoding the mammalian iron transporter, ferroportin) resulted in more than 80% inhibition of multinucleation, an effect comparable with that of the master regulator DCSTAMP (Figure 5\u2014figure supplement 1C\u2013D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by comparison of knockdown effects shown in Figure 5\u2014figure supplement 1C-D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:57:48.905841Z"
+    },
+    {
+      "id": "5f14decf-0684-462b-9e8d-05d4ff412c67",
+      "content_id": "9a5339fa-8554-4d12-b9b4-5b4e22cfc91e",
+      "claim_id": "C68",
+      "claim": "Slc40a1 cKO mice have greatly increased bone mass characterized by increased BMC.",
+      "claim_type": "EXPLICIT",
+      "source": "Slc40a1 cKO mice had greatly increased bone mass characterised by increased BMC (Figure 5B\u2013C), cortical thickness (Ct.Th), trabecular BV/TV, Tb.N and Tb.Th compared to littermate controls (Figure 5C\u2013D, Figure 5\u2014figure supplement 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by X-ray microradiography data shown in Figure 5B-C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:57:48.905841Z"
+    },
+    {
+      "id": "8089796d-becc-4aed-8743-adab66b129c5",
+      "content_id": "9a5339fa-8554-4d12-b9b4-5b4e22cfc91e",
+      "claim_id": "C69",
+      "claim": "Slc40a1 cKO mice have increased cortical thickness (Ct.Th).",
+      "claim_type": "EXPLICIT",
+      "source": "Slc40a1 cKO mice had greatly increased bone mass characterised by increased BMC (Figure 5B\u2013C), cortical thickness (Ct.Th), trabecular BV/TV, Tb.N and Tb.Th compared to littermate controls (Figure 5C\u2013D, Figure 5\u2014figure supplement 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by micro-CT analysis data shown in Figure 5C-D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:57:48.905841Z"
+    },
+    {
+      "id": "315324f5-f0ac-4d6b-b8d5-4fd80d124530",
+      "content_id": "9a5339fa-8554-4d12-b9b4-5b4e22cfc91e",
+      "claim_id": "C70",
+      "claim": "Slc40a1 cKO mice have increased trabecular BV/TV.",
+      "claim_type": "EXPLICIT",
+      "source": "Slc40a1 cKO mice had greatly increased bone mass characterised by increased BMC (Figure 5B\u2013C), cortical thickness (Ct.Th), trabecular BV/TV, Tb.N and Tb.Th compared to littermate controls (Figure 5C\u2013D, Figure 5\u2014figure supplement 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by micro-CT analysis data shown in Figure 5C-D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:57:48.905841Z"
+    },
+    {
+      "id": "4af2d0d6-d374-4c80-ac42-62828f4312c6",
+      "content_id": "9a5339fa-8554-4d12-b9b4-5b4e22cfc91e",
+      "claim_id": "C71",
+      "claim": "Slc40a1 cKO mice have increased Tb.N.",
+      "claim_type": "EXPLICIT",
+      "source": "Slc40a1 cKO mice had greatly increased bone mass characterised by increased BMC (Figure 5B\u2013C), cortical thickness (Ct.Th), trabecular BV/TV, Tb.N and Tb.Th compared to littermate controls (Figure 5C\u2013D, Figure 5\u2014figure supplement 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by micro-CT analysis data shown in Figure 5C-D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:57:48.905841Z"
+    },
+    {
+      "id": "efa215bf-85b5-4e9b-8cea-6a882f7bdcd5",
+      "content_id": "9a5339fa-8554-4d12-b9b4-5b4e22cfc91e",
+      "claim_id": "C72",
+      "claim": "Slc40a1 cKO mice have increased Tb.Th.",
+      "claim_type": "EXPLICIT",
+      "source": "Slc40a1 cKO mice had greatly increased bone mass characterised by increased BMC (Figure 5B\u2013C), cortical thickness (Ct.Th), trabecular BV/TV, Tb.N and Tb.Th compared to littermate controls (Figure 5C\u2013D, Figure 5\u2014figure supplement 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by micro-CT analysis data shown in Figure 5C-D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:57:48.905841Z"
+    },
+    {
+      "id": "1debeb69-e7f5-4fd4-9551-c96ffcc3193c",
+      "content_id": "9a5339fa-8554-4d12-b9b4-5b4e22cfc91e",
+      "claim_id": "C73",
+      "claim": "The high bone mass phenotype in Slc40a1 cKO mice is associated with markedly increased bone strength characterized by increased yield, maximum and fracture loads.",
+      "claim_type": "EXPLICIT",
+      "source": "This high bone mass phenotype was associated with markedly increased bone strength characterised by increased yield, maximum and fracture loads (Figure 5C\u2013D, Figure 5\u2014figure supplement 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by biomechanical testing data shown in Figure 5C-D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:57:48.905841Z"
+    },
+    {
+      "id": "f983b97b-74e6-4b71-bf89-3afe2d6786de",
+      "content_id": "9a5339fa-8554-4d12-b9b4-5b4e22cfc91e",
+      "claim_id": "C74",
+      "claim": "Slc40a1 cKO mice have decreased osteoclast surfaces (Oc.S/BS).",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with this, histomorphometic analysis demonstrated decreased osteoclast surfaces (Oc.S/BS) in Slc40a1 cKO mice (Figure 5E)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by histomorphometry data shown in Figure 5E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:57:48.905841Z"
+    },
+    {
+      "id": "4b05d94b-8c6b-43fa-882c-0cbf0d7f8441",
+      "content_id": "9a5339fa-8554-4d12-b9b4-5b4e22cfc91e",
+      "claim_id": "C75",
+      "claim": "Slc40a1 cKO mice have increased amounts of retained cartilage within trabecular bone.",
+      "claim_type": "EXPLICIT",
+      "source": "and Slc40a1 cKO mice had increased amounts of retained cartilage within trabecular bone, consistent with impaired osteoclastic bone resorption and abnormal bone remodelling (Figure 5\u2014figure supplement 2 B, C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by histological analysis shown in Figure 5\u2014figure supplement 2B-C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:57:48.905841Z"
+    },
+    {
+      "id": "d75077c9-45c4-4543-8b75-8546d13a548a",
+      "content_id": "9a5339fa-8554-4d12-b9b4-5b4e22cfc91e",
+      "claim_id": "C76",
+      "claim": "Retained cartilage in Slc40a1 cKO mice is consistent with impaired osteoclastic bone resorption and abnormal bone remodelling.",
+      "claim_type": "EXPLICIT",
+      "source": "and Slc40a1 cKO mice had increased amounts of retained cartilage within trabecular bone, consistent with impaired osteoclastic bone resorption and abnormal bone remodelling (Figure 5\u2014figure supplement 2 B, C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Inferred from the observation of retained cartilage, which is normally resorbed by osteoclasts.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:57:48.905841Z"
+    },
+    {
+      "id": "5a9ea925-aaf9-4b19-8c03-e1986985f769",
+      "content_id": "9a5339fa-8554-4d12-b9b4-5b4e22cfc91e",
+      "claim_id": "C77",
+      "claim": "siRNA-mediated knockdown of SLC40A1 expression in human osteoclasts in vitro inhibited osteoclast resorption by more than 85%.",
+      "claim_type": "EXPLICIT",
+      "source": "siRNA-mediated knockdown of SLC40A1 expression, in human osteoclasts in vitro, inhibited osteoclast resorption by more than 85% (Figure 5F\u2013G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by in vitro resorption assay data shown in Figure 5F-G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:57:48.905841Z"
+    },
+    {
+      "id": "56f01207-46d8-4084-82ec-607ebbe069ee",
+      "content_id": "9a5339fa-8554-4d12-b9b4-5b4e22cfc91e",
+      "claim_id": "C78",
+      "claim": "Slc40a1 regulates bone structure and strength via direct actions in the macrophage-osteoclast lineage.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, Slc40a1 regulates bone structure and strength via direct actions in the macrophage-osteoclast lineage, further supporting the conclusion that MMnet plays a key role in the physiological regulation of bone mass by osteoclasts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the myeloid-specific knockout phenotype and in vitro data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:57:48.905841Z"
+    },
+    {
+      "id": "94ed0140-51dd-41cb-bfec-07faeebb5e44",
+      "content_id": "9a5339fa-8554-4d12-b9b4-5b4e22cfc91e",
+      "claim_id": "C79",
+      "claim": "MMnet plays a key role in the physiological regulation of bone mass by osteoclasts.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, Slc40a1 regulates bone structure and strength via direct actions in the macrophage-osteoclast lineage, further supporting the conclusion that MMnet plays a key role in the physiological regulation of bone mass by osteoclasts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the cumulative evidence from multiple MMnet genes.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:57:48.905841Z"
+    },
+    {
+      "id": "f8b1f233-fca8-47d6-91dc-df1a7f8b7fb2",
+      "content_id": "9a5339fa-8554-4d12-b9b4-5b4e22cfc91e",
+      "claim_id": "C80",
+      "claim": "Wang and colleagues reported that deletion of Slc40a1 in the myeloid lineage using LysMCre mice causes decreased bone mass and mineralisation in female, but not male, mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Nevertheless, Wang and colleagues (Wang et al., 2018) recently reported that deletion of Slc40a1 in the myeloid lineage using LysMCre mice causes decreased bone mass and mineralisation in female, but not male, mice.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Wang et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:57:48.905841Z"
+    },
+    {
+      "id": "2d14843b-9ede-45db-a00b-9a4d9d58eb63",
+      "content_id": "9a5339fa-8554-4d12-b9b4-5b4e22cfc91e",
+      "claim_id": "C81",
+      "claim": "Wang et al reported that deletion of Slc40a1 in terminally differentiated osteoclasts using CtskCre mice resulted in no skeletal abnormalities in either sex.",
+      "claim_type": "EXPLICIT",
+      "source": "Wang et al also reported that deletion of Slc40a1 in terminally differentiated osteoclasts using CtskCre mice resulted in no skeletal abnormalities in either sex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Wang et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:57:48.905841Z"
+    },
+    {
+      "id": "761c051c-3b52-48f1-aa8a-6e37f0ad71be",
+      "content_id": "9a5339fa-8554-4d12-b9b4-5b4e22cfc91e",
+      "claim_id": "C82",
+      "claim": "The discordance between the current findings and those reported by Wang et al may be due to differences in the age at which mice were phenotyped.",
+      "claim_type": "EXPLICIT",
+      "source": "The discordance between our findings and those reported by Wang et al may be due to differences in the age at which mice were phenotyped and the strain of Slc40a1 floxed mice investigated (C57BL/6N-Slc40a1tm1c(EUCOMM)Hmgu/H in this study compared to 129S-Slc40a1tm2Nca/J by Wang and colleagues).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculative explanation for discordant results.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:57:48.905841Z"
+    },
+    {
+      "id": "5be0fa26-a2e5-4333-97b2-24c519c3c0fb",
+      "content_id": "9a5339fa-8554-4d12-b9b4-5b4e22cfc91e",
+      "claim_id": "C83",
+      "claim": "The discordance between the current findings and those reported by Wang et al may be due to differences in the strain of Slc40a1 floxed mice investigated.",
+      "claim_type": "EXPLICIT",
+      "source": "The discordance between our findings and those reported by Wang et al may be due to differences in the age at which mice were phenotyped and the strain of Slc40a1 floxed mice investigated (C57BL/6N-Slc40a1tm1c(EUCOMM)Hmgu/H in this study compared to 129S-Slc40a1tm2Nca/J by Wang and colleagues).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculative explanation for discordant results.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:57:48.905841Z"
+    },
+    {
+      "id": "30e227e4-4047-4d48-8678-ed1e9fdfb453",
+      "content_id": "9a5339fa-8554-4d12-b9b4-5b4e22cfc91e",
+      "claim_id": "C84",
+      "claim": "Ferroportin acts directly in the macrophage-osteoclast lineage.",
+      "claim_type": "EXPLICIT",
+      "source": "Although it is clear that ferroportin acts directly in the macrophage-osteoclast lineage, further longitudinal studies will be required to define its temporal effects on bone mass and strength, whilst studies with the different floxed strains may be required to determine whether modifier genes influence the skeletal response to deletion of Slc40a1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the myeloid-specific knockout phenotype.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:57:48.905841Z"
+    },
+    {
+      "id": "7f9a4330-417a-415c-8175-db94e7e50356",
+      "content_id": "9a5339fa-8554-4d12-b9b4-5b4e22cfc91e",
+      "claim_id": "C85",
+      "claim": "At least four MMnet genes (Trem2, Bcat1, Pik3cb and Deptor) act within the Trem2-Pi3K-mTORC1 pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, at least four MMnet genes (Trem2, Bcat1, Pik3cb and Deptor), that include the network master regulator (Trem2) and network hub (Bcat1), act within the Trem2-Pi3K-mTORC1 pathway (Ananieva et al., 2014; Mossmann et al., 2018; Peterson et al., 2009; Ulland et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Ananieva et al., 2014; Mossmann et al., 2018; Peterson et al., 2009; Ulland et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:57:48.905841Z"
+    },
+    {
+      "id": "99811848-28ef-4e66-abd1-a89ea7d655ff",
+      "content_id": "9a5339fa-8554-4d12-b9b4-5b4e22cfc91e",
+      "claim_id": "C86",
+      "claim": "mTORC1 protein kinase comprises a complex of proteins that includes DEPTOR.",
+      "claim_type": "EXPLICIT",
+      "source": "mTORC1 protein kinase comprises a complex of proteins that includes DEPTOR (Peterson et al., 2009), a regulator of cell growth and metabolism that is essential for osteoclast formation (Indo et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Peterson et al., 2009 and Indo et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:57:48.905841Z"
+    },
+    {
+      "id": "e8d051b9-bbaf-44bc-9a28-9f9c959b7837",
+      "content_id": "9a5339fa-8554-4d12-b9b4-5b4e22cfc91e",
+      "claim_id": "C87",
+      "claim": "DEPTOR is a regulator of cell growth and metabolism that is essential for osteoclast formation.",
+      "claim_type": "EXPLICIT",
+      "source": "mTORC1 protein kinase comprises a complex of proteins that includes DEPTOR (Peterson et al., 2009), a regulator of cell growth and metabolism that is essential for osteoclast formation (Indo et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Indo et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:57:48.905841Z"
+    },
+    {
+      "id": "92aded00-ffa9-4c68-ae02-be07120d4964",
+      "content_id": "9a5339fa-8554-4d12-b9b4-5b4e22cfc91e",
+      "claim_id": "C88",
+      "claim": "Trem2 is a positive regulator of mTORC1.",
+      "claim_type": "EXPLICIT",
+      "source": "While Trem2 (Ulland et al., 2017), Bcat1 (Ananieva et al., 2014) and Pik3cb (Mossmann et al., 2018) are positive regulators of mTORC1, Deptor inhibits mTORC1 activity (Peterson et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Ulland et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:57:48.905841Z"
+    },
+    {
+      "id": "e5070bf9-67a3-48ef-8d9d-9ad0e7bcb258",
+      "content_id": "9a5339fa-8554-4d12-b9b4-5b4e22cfc91e",
+      "claim_id": "C89",
+      "claim": "Bcat1 is a positive regulator of mTORC1.",
+      "claim_type": "EXPLICIT",
+      "source": "While Trem2 (Ulland et al., 2017), Bcat1 (Ananieva et al., 2014) and Pik3cb (Mossmann et al., 2018) are positive regulators of mTORC1, Deptor inhibits mTORC1 activity (Peterson et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Ananieva et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:57:48.905841Z"
+    },
+    {
+      "id": "fc0a41e9-9fd3-4c79-a3da-7804d20ad18a",
+      "content_id": "9a5339fa-8554-4d12-b9b4-5b4e22cfc91e",
+      "claim_id": "C90",
+      "claim": "Pik3cb is a positive regulator of mTORC1.",
+      "claim_type": "EXPLICIT",
+      "source": "While Trem2 (Ulland et al., 2017), Bcat1 (Ananieva et al., 2014) and Pik3cb (Mossmann et al., 2018) are positive regulators of mTORC1, Deptor inhibits mTORC1 activity (Peterson et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Mossmann et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:57:48.905841Z"
+    },
+    {
+      "id": "425c99d6-d0c5-427b-ad18-026b25c741d6",
+      "content_id": "9a5339fa-8554-4d12-b9b4-5b4e22cfc91e",
+      "claim_id": "C91",
+      "claim": "Deptor inhibits mTORC1 activity.",
+      "claim_type": "EXPLICIT",
+      "source": "While Trem2 (Ulland et al., 2017), Bcat1 (Ananieva et al., 2014) and Pik3cb (Mossmann et al., 2018) are positive regulators of mTORC1, Deptor inhibits mTORC1 activity (Peterson et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Peterson et al., 2009.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:57:48.905841Z"
+    },
+    {
+      "id": "79275730-85f3-484b-9190-b1c7885a2387",
+      "content_id": "9a5339fa-8554-4d12-b9b4-5b4e22cfc91e",
+      "claim_id": "C92",
+      "claim": "The divergent effects of Trem2, Bcat1, Pik3cb and Deptor on activity of the mTORC1 signalling pathway correlate precisely with the effects of gene knockdown or deletion on osteoclast multinucleation and function in vitro and on skeletal phenotype in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "Significantly, the divergent effects of these genes on activity of the mTORC1 signalling pathway correlate precisely with the effects of gene knockdown or deletion on osteoclast multinucleation and function in vitro and on skeletal phenotype in vivo.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the combined data on mTORC1 regulation and phenotypes.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:57:48.905841Z"
+    },
+    {
+      "id": "549c6586-3e36-4661-99b1-d4d18efec6c4",
+      "content_id": "9a5339fa-8554-4d12-b9b4-5b4e22cfc91e",
+      "claim_id": "C93",
+      "claim": "Knockdown or deletion of Bcat1 and Pik3cb results in decreased osteoclast multinucleation and resorption, and increased bone mass.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, knockdown or deletion of Bcat1 and Pik3cb results in decreased osteoclast multinucleation and resorption, and increased bone mass, whereas knockdown or deletion of Deptor results in opposite cellular and in vivo phenotypes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by the combined in vitro and in vivo data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:57:48.905841Z"
+    },
+    {
+      "id": "41f88d66-df8c-49ce-8dd6-39e256b686bf",
+      "content_id": "9a5339fa-8554-4d12-b9b4-5b4e22cfc91e",
+      "claim_id": "C94",
+      "claim": "Knockdown or deletion of Deptor results in increased osteoclast multinucleation and resorption, and decreased bone mass.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, knockdown or deletion of Bcat1 and Pik3cb results in decreased osteoclast multinucleation and resorption, and increased bone mass, whereas knockdown or deletion of Deptor results in opposite cellular and in vivo phenotypes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by the combined in vitro and in vivo data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:57:48.905841Z"
+    },
+    {
+      "id": "4f8b6a75-2f47-435b-991c-f972e095d385",
+      "content_id": "9a5339fa-8554-4d12-b9b4-5b4e22cfc91e",
+      "claim_id": "C95",
+      "claim": "The Trem2-Pi3K-mTORC1 pathway plays a pivotal and integrated counter-regulatory role in osteoclast multinucleation and function, and the homeostatic control of bone mass.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, these data suggest a pivotal and integrated counter-regulatory role for the Trem2-Pi3K-mTORC1 pathway in osteoclast multinucleation and function, and the homeostatic control of bone mass, and may thus provide novel therapeutic targets for the inhibition of bone loss.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the combined data on multiple genes in the pathway.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:57:48.905841Z"
+    },
+    {
+      "id": "6c1a9bca-d990-41d3-981d-a3d91d2e7a84",
+      "content_id": "9a5339fa-8554-4d12-b9b4-5b4e22cfc91e",
+      "claim_id": "C96",
+      "claim": "The Trem2-Pi3K-mTORC1 pathway may provide novel therapeutic targets for the inhibition of bone loss.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, these data suggest a pivotal and integrated counter-regulatory role for the Trem2-Pi3K-mTORC1 pathway in osteoclast multinucleation and function, and the homeostatic control of bone mass, and may thus provide novel therapeutic targets for the inhibition of bone loss.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculative statement about potential therapeutic applications.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:57:48.905841Z"
+    },
+    {
+      "id": "36dd590e-09eb-4877-8fa9-44d8d39afa51",
+      "content_id": "9a5339fa-8554-4d12-b9b4-5b4e22cfc91e",
+      "claim_id": "C97",
+      "claim": "MMnet regulates bone mass and strength via important effects on osteoclast multinucleation and function.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, these studies demonstrate that MMnet regulates bone mass and strength via important effects on osteoclast multinucleation and function.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the cumulative evidence from multiple MMnet genes.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:57:48.905841Z"
+    },
+    {
+      "id": "314d4eec-f157-4caa-9b95-686aa3bf69a3",
+      "content_id": "9a5339fa-8554-4d12-b9b4-5b4e22cfc91e",
+      "claim_id": "C98",
+      "claim": "Primary actions of MMnet genes in osteoclasts may secondarily regulate osteoblastic bone formation.",
+      "claim_type": "EXPLICIT",
+      "source": "Nevertheless, it is important to recognise that primary actions of MMnet genes in osteoclasts may secondarily regulate osteoblastic bone formation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculative statement about potential indirect effects.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:57:48.905841Z"
+    },
+    {
+      "id": "aa5d6b52-df7b-446b-8e76-0511f13de516",
+      "content_id": "9a5339fa-8554-4d12-b9b4-5b4e22cfc91e",
+      "claim_id": "C99",
+      "claim": "MMnet genes may have direct cell autonomous effects in the osteoblast lineage.",
+      "claim_type": "EXPLICIT",
+      "source": "Alternatively, MMnet genes may have direct cell autonomous effects in the osteoblast lineage.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculative statement about potential direct effects in osteoblasts.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:57:48.905841Z"
+    },
+    {
+      "id": "0a3ad8d0-2a19-4fb6-8617-9f18d4fa996e",
+      "content_id": "9a5339fa-8554-4d12-b9b4-5b4e22cfc91e",
+      "claim_id": "C100",
+      "claim": "Direct and indirect effects of MMnet genes in osteoblast may influence the skeletal phenotypes observed in mutant mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, direct and indirect effects of MMnet genes in osteoblast may influence the skeletal phenotypes observed in mutant mice.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculative statement about potential osteoblast contributions.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:57:48.905841Z"
+    },
+    {
+      "id": "012b8fa1-9b5b-4b07-805a-4748251dade5",
+      "content_id": "9a5339fa-8554-4d12-b9b4-5b4e22cfc91e",
+      "claim_id": "C101",
+      "claim": "The role of osteoblasts has not been investigated in this study.",
+      "claim_type": "EXPLICIT",
+      "source": "The role of osteoblasts has not been investigated here, and this represents an important limitation of the study.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Explicit statement of study limitation.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:57:48.905841Z"
+    },
+    {
+      "id": "e9344018-8ce5-4c33-821e-7b4a82baa4d6",
+      "content_id": "9a5339fa-8554-4d12-b9b4-5b4e22cfc91e",
+      "claim_id": "C102",
+      "claim": "MMnet is a co-expression network comprising 190 osteoclast-enriched eQTLs that are regulated in trans by Trem2.",
+      "claim_type": "EXPLICIT",
+      "source": "MMnet is a co-expression network comprising 190 osteoclast-enriched eQTLs that are regulated in trans by Trem2 (Kang et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Kang et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:57:48.905841Z"
+    },
+    {
+      "id": "15c12f5b-2268-4081-b3c9-02fce4953c47",
+      "content_id": "9a5339fa-8554-4d12-b9b4-5b4e22cfc91e",
+      "claim_id": "C103",
+      "claim": "MMnet was generated using primary macrophages from a heterogenous rat population derived from experimental crossing of inbred Wistar Kyoto (WKY) and LEW rats.",
+      "claim_type": "EXPLICIT",
+      "source": "It was generated using primary macrophages from a heterogenous rat population derived from experimental crossing of inbred Wistar Kyoto (WKY) and LEW rats.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of the experimental approach used to generate MMnet.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:57:48.905841Z"
+    },
+    {
+      "id": "7b6f2cde-3a3b-4dd8-a0dd-113d96fb6af1",
+      "content_id": "9a5339fa-8554-4d12-b9b4-5b4e22cfc91e",
+      "claim_id": "C104",
+      "claim": "Macrophages from WKY rats display spontaneous fusion and multinucleation.",
+      "claim_type": "EXPLICIT",
+      "source": "Macrophages from WKY rats display spontaneous fusion and multinucleation, whereas spontaneous macrophage fusion does not occur in Lewis (LEW) rats (Kang et al., 2014; Rotival et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Kang et al., 2014 and Rotival et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:57:48.905841Z"
+    },
+    {
+      "id": "79dd6f0f-04fe-4b0b-b6d4-40e8175b9894",
+      "content_id": "9a5339fa-8554-4d12-b9b4-5b4e22cfc91e",
+      "claim_id": "C105",
+      "claim": "Spontaneous macrophage fusion does not occur in Lewis (LEW) rats.",
+      "claim_type": "EXPLICIT",
+      "source": "Macrophages from WKY rats display spontaneous fusion and multinucleation, whereas spontaneous macrophage fusion does not occur in Lewis (LEW) rats (Kang et al., 2014; Rotival et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Kang et al., 2014 and Rotival et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:57:48.905841Z"
+    },
+    {
+      "id": "0217c33b-7dea-479b-b6ae-561255bc8d72",
+      "content_id": "9a5339fa-8554-4d12-b9b4-5b4e22cfc91e",
+      "claim_id": "C106",
+      "claim": "BCAT1 activity controls intracellular leucine, a known activator of mammalian target of rapamycin complex 1 (mTORC1) signalling.",
+      "claim_type": "EXPLICIT",
+      "source": "BCAT1 activity controls intracellular leucine, a known activator of mammalian target of rapamycin complex 1 (mTORC1) signalling (Ananieva et al., 2014), suggesting that MMnet may directly regulate mTORC1-dependent bone homeostasis and inflammation via the hub gene Bcat1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Ananieva et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:57:48.905841Z"
+    },
+    {
+      "id": "368fc7cb-45ea-4991-91d8-1ed7af9013a2",
+      "content_id": "9a5339fa-8554-4d12-b9b4-5b4e22cfc91e",
+      "claim_id": "C107",
+      "claim": "MMnet may directly regulate mTORC1-dependent bone homeostasis and inflammation via the hub gene Bcat1.",
+      "claim_type": "EXPLICIT",
+      "source": "BCAT1 activity controls intracellular leucine, a known activator of mammalian target of rapamycin complex 1 (mTORC1) signalling (Ananieva et al., 2014), suggesting that MMnet may directly regulate mTORC1-dependent bone homeostasis and inflammation via the hub gene Bcat1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the role of BCAT1 in leucine metabolism and mTORC1 activation.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:57:48.905841Z"
+    },
+    {
+      "id": "05e65925-cc71-4e2a-acce-16217988135e",
+      "content_id": "9a5339fa-8554-4d12-b9b4-5b4e22cfc91e",
+      "claim_id": "C108",
+      "claim": "Osteoclast numbers and severity of collagen-induced arthritis are reduced following pharmacological inhibition of BCAT1 in mice.",
+      "claim_type": "EXPLICIT",
+      "source": "These results demonstrate that MMnet has a critical homeostatic role in bone that is conserved in rodents and humans. Furthermore, they specifically implicate branched chain amino acid (BCAA) metabolism in osteoclast-mediated bone homeostasis and are consistent with our recent observation that osteoclast numbers and severity of collagen-induced arthritis are also reduced following pharmacological inhibition of BCAT1 in mice (Papathanassiu et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Papathanassiu et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:57:48.905841Z"
+    },
+    {
+      "id": "f2a87f93-aa42-46da-916d-2d4702fa226d",
+      "content_id": "9a5339fa-8554-4d12-b9b4-5b4e22cfc91e",
+      "claim_id": "C109",
+      "claim": "Pik3cb is a known regulator of skeletal homeostasis.",
+      "claim_type": "EXPLICIT",
+      "source": "To investigate further the homeostatic roles of MMnet in the maintenance of adult bone mass and strength, we analysed knockout mice with deletion of 12 unselected MMnet genes and demonstrated significant outlier phenotypes in six of these lines, which include both known Pik3cb (Gy\u0151ri et al., 2014; Hall et al., 1995; Lee et al., 2002) and unknown (Atp8b2, Igsf8, Eml1, Appl2, and Deptor) regulators of skeletal homeostasis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Gy\u0151ri et al., 2014; Hall et al., 1995; Lee et al., 2002.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:57:48.905841Z"
+    },
+    {
+      "id": "400ad31e-37f9-4d09-b2d3-10404cbaca7f",
+      "content_id": "9a5339fa-8554-4d12-b9b4-5b4e22cfc91e",
+      "claim_id": "C110",
+      "claim": "Atp8b2, Igsf8, Eml1, Appl2, and Deptor are unknown regulators of skeletal homeostasis.",
+      "claim_type": "EXPLICIT",
+      "source": "To investigate further the homeostatic roles of MMnet in the maintenance of adult bone mass and strength, we analysed knockout mice with deletion of 12 unselected MMnet genes and demonstrated significant outlier phenotypes in six of these lines, which include both known Pik3cb (Gy\u0151ri et al., 2014; Hall et al., 1995; Lee et al., 2002) and unknown (Atp8b2, Igsf8, Eml1, Appl2, and Deptor) regulators of skeletal homeostasis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as novel findings in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:57:48.905841Z"
+    },
+    {
+      "id": "0d05053f-d371-4656-95dd-7ca021431fd5",
+      "content_id": "9a5339fa-8554-4d12-b9b4-5b4e22cfc91e",
+      "claim_id": "C111",
+      "claim": "Deletion of MMnet's strongest trans-eQTL Kcnn4 results in increased bone mass.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with this, deletion of MMnet's strongest trans-eQTL Kcnn4 results in increased bone mass (Kang et al., 2014) as did deletion of Dcstamp, the master regulator of membrane fusion (Yagi et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Kang et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:57:48.905841Z"
+    },
+    {
+      "id": "f82a1853-1e77-4f5a-9225-6cbbfe0ad101",
+      "content_id": "9a5339fa-8554-4d12-b9b4-5b4e22cfc91e",
+      "claim_id": "C112",
+      "claim": "Deletion of Dcstamp results in increased bone mass.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with this, deletion of MMnet's strongest trans-eQTL Kcnn4 results in increased bone mass (Kang et al., 2014) as did deletion of Dcstamp, the master regulator of membrane fusion (Yagi et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Yagi et al., 2005.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:57:48.905841Z"
+    },
+    {
+      "id": "ed47ea5d-e744-4a99-a733-6a45822cf8e7",
+      "content_id": "9a5339fa-8554-4d12-b9b4-5b4e22cfc91e",
+      "claim_id": "C113",
+      "claim": "Only Bcat1 deficient mice exhibited increased cortical thickness and bone strength among the genes tested.",
+      "claim_type": "EXPLICIT",
+      "source": "Nevertheless, although (i) BCAT1, PIK3CB, ATP8B2, and APPL2 knockdown in vitro resulted in impaired osteoclast multinucleation and resorption in humans, and (ii) Bcat1, Pik3cb, Atp8b2, and Appl2 deletion in vivo resulted in increased trabecular bone mass, only Bcat1 deficient mice exhibited increased cortical thickness and bone strength.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by the phenotyping data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:57:48.905841Z"
+    },
+    {
+      "id": "f6e830c6-ce6c-4490-a713-aa5911e050f9",
+      "content_id": "9a5339fa-8554-4d12-b9b4-5b4e22cfc91e",
+      "claim_id": "C114",
+      "claim": "Bcat1 deletion has the greatest effect on osteoclast multinucleation and function in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "These findings may refect that (i) Bcat1 deletion has the greatest effect on osteoclast multinucleation and function in vivo, (ii) Atp8b2 mice were heterozygotes, (iii) trabecular bone is more sensitive than cortical bone to abnormalities of osteoclastic resorption, and (iv) cortical bone parameters are the major determinants of bone strength.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculative explanation for the observed phenotypic differences.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:57:48.905841Z"
+    },
+    {
+      "id": "324b5b16-3dcd-4620-b522-c85e3f19583e",
+      "content_id": "9a5339fa-8554-4d12-b9b4-5b4e22cfc91e",
+      "claim_id": "C115",
+      "claim": "Trabecular bone is more sensitive than cortical bone to abnormalities of osteoclastic resorption.",
+      "claim_type": "EXPLICIT",
+      "source": "These findings may refect that (i) Bcat1 deletion has the greatest effect on osteoclast multinucleation and function in vivo, (ii) Atp8b2 mice were heterozygotes, (iii) trabecular bone is more sensitive than cortical bone to abnormalities of osteoclastic resorption, and (iv) cortical bone parameters are the major determinants of bone strength.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on established knowledge about bone biology.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:57:48.905841Z"
+    },
+    {
+      "id": "16115f4f-2767-4b0c-94c1-28cde151138d",
+      "content_id": "9a5339fa-8554-4d12-b9b4-5b4e22cfc91e",
+      "claim_id": "C116",
+      "claim": "Cortical bone parameters are the major determinants of bone strength.",
+      "claim_type": "EXPLICIT",
+      "source": "These findings may refect that (i) Bcat1 deletion has the greatest effect on osteoclast multinucleation and function in vivo, (ii) Atp8b2 mice were heterozygotes, (iii) trabecular bone is more sensitive than cortical bone to abnormalities of osteoclastic resorption, and (iv) cortical bone parameters are the major determinants of bone strength.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on established knowledge about bone biomechanics.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:57:48.905841Z"
+    },
+    {
+      "id": "5643c50d-6c0a-4723-a5c1-c0c28318fab2",
+      "content_id": "9a5339fa-8554-4d12-b9b4-5b4e22cfc91e",
+      "claim_id": "C117",
+      "claim": "The variation in skeletal phenotypes may result from the consequences of gene deletion in non-monocyte/macrophage lineages.",
+      "claim_type": "EXPLICIT",
+      "source": "However, since these genetically modified mice have global gene deletions, the variation in skeletal phenotypes may also result from the consequences of gene deletion in non-monocyte/macrophage lineages.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculative explanation for phenotypic variation.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:57:48.905841Z"
+    },
+    {
+      "id": "574aaea0-3683-431d-b4ee-5ef07dd17036",
+      "content_id": "9a5339fa-8554-4d12-b9b4-5b4e22cfc91e",
+      "claim_id": "C118",
+      "claim": "MMnet is a functionally conserved network that regulates osteoclast multinucleation and bone mass.",
+      "claim_type": "EXPLICIT",
+      "source": "These results identify MMnet as a functionally conserved network that regulates osteoclast multinucleation and bone mass.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the cumulative evidence across species and experimental approaches.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:57:48.905841Z"
+    },
+    {
+      "id": "fbecfd49-ba28-48d4-b1ac-fd6e9a503000",
+      "content_id": "9a5339fa-8554-4d12-b9b4-5b4e22cfc91e",
+      "claim_id": "C119",
+      "claim": "There is a correlation between the effects of MMnet genes on bone mass in mice and osteoclast multinucleation/resorption in humans.",
+      "claim_type": "EXPLICIT",
+      "source": "We report opposing effects of MMnet genes on bone mass in mice and osteoclast multinucleation/resorption in humans with strong correlation between the two.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by the correlation analyses presented in Figure 4E-F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:57:48.905841Z"
+    },
+    {
+      "id": "a91b603b-27f3-454d-a1e6-4525912f9cbd",
+      "content_id": "9a5339fa-8554-4d12-b9b4-5b4e22cfc91e",
+      "claim_id": "C120",
+      "claim": "The hub gene Bcat1 and seven other co-regulated MMnet genes out of 13 regulate bone function.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the network hub gene Bcat1 and seven other co-regulated MMnet genes out of 13, regulate bone function.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by the phenotyping data from knockout mice.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:57:48.905841Z"
+    },
+    {
+      "id": "09617282-13c2-410b-9236-8df978476905",
+      "content_id": "9a5339fa-8554-4d12-b9b4-5b4e22cfc91e",
+      "claim_id": "C121",
+      "claim": "Global Pik3cb-/-, Atp8b2+/-, Igsf8-/-, Eml1-/-, Appl2-/-, Deptor-/- and myeloid-specific Slc40a1 knockout mice displayed abnormal bone phenotypes.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, global (Pik3cb-/-, Atp8b2+/-, Igsf8-/-, Eml1-/-, Appl2-/-, Deptor-/-) and myeloid-specific Slc40a1 knockout mice displayed abnormal bone phenotypes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by the phenotyping data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:57:48.905841Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "82b626d9-83e7-4d2b-8803-f0cb32b5853c",
+      "content_id": "9a5339fa-8554-4d12-b9b4-5b4e22cfc91e",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "WKY rats display increased osteoclastogenesis in vitro and decreased bone mass, structure, and strength in vivo compared to LEW rats, suggesting that MMnet regulates adult bone homeostasis via control of osteoclast multinucleation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C8 provide comprehensive structural and functional bone phenotyping data from WKY vs LEW rats, showing consistent patterns of increased osteoclastogenesis and decreased bone parameters. The association between osteoclast multinucleation and bone phenotype (C9-C10) is a reasonable inference from the data, though causality is not directly demonstrated.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:57:48.905841Z"
+    },
+    {
+      "id": "98402194-bcc1-4b42-940e-b095149d0bf3",
+      "content_id": "9a5339fa-8554-4d12-b9b4-5b4e22cfc91e",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "MMnet is significantly enriched for GWAS variants associated with bone-related phenotypes in humans, including heel bone mineral density and body height, and contains genes implicated in monogenic skeletal disorders, demonstrating conservation in humans.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C11-C13 provide statistical evidence of GWAS enrichment with appropriate p-values from hypergeometric tests. C14 cites prior literature for monogenic disease associations. The conclusion of conservation (C15) is well-supported by the enrichment data, though the functional conservation requires additional validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:57:48.905841Z"
+    },
+    {
+      "id": "99595702-8c46-46f6-ac48-0e173496af43",
+      "content_id": "9a5339fa-8554-4d12-b9b4-5b4e22cfc91e",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "BCAT1 maintains normal bone mass and strength by regulating osteoclast multinucleation and function, as demonstrated by Bcat1-/- mice showing high bone mass, enhanced bone strength, decreased osteoclast parameters, and retained cartilage, with siRNA knockdown in human osteoclasts inhibiting multinucleation and resorption by 60%.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C16-C27 provide comprehensive in vivo phenotyping data from Bcat1-/- mice with consistent findings across multiple bone parameters. Claims C28-C29 provide in vitro validation in human cells. The comparison to DCSTAMP (C30-C32) provides appropriate context. The conclusions (C33-C34) are well-supported by converging in vivo and in vitro evidence, though the mechanism linking BCAT1 to osteoclast function requires further investigation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:57:48.905841Z"
+    },
+    {
+      "id": "b8b3e015-922e-45a7-b5b0-d0ea7fdf83a9",
+      "content_id": "9a5339fa-8554-4d12-b9b4-5b4e22cfc91e",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Six of 12 MMnet knockout mouse lines exhibited abnormal skeletal phenotypes, with Pik3cb-/-, Appl2-/-, and Atp8b2+/- mice showing high bone mass, Deptor-/- mice showing low bone mass, and several lines showing decreased bone strength, while six lines showed no skeletal abnormalities.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C35-C46 report phenotyping results from 12 knockout mouse lines with clear identification of which lines showed phenotypes and which did not. The data are presented with appropriate reference to source data. However, the manuscript notes these are global knockouts, which limits interpretation of cell-type-specific effects. Sample sizes appear small (n=2 or 6 per genotype) which may limit statistical power.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:57:48.905841Z"
+    },
+    {
+      "id": "da73b089-0381-47a5-ae87-f494051a2ea2",
+      "content_id": "9a5339fa-8554-4d12-b9b4-5b4e22cfc91e",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "siRNA knockdown of MMnet genes in human osteoclasts shows concordant effects on multinucleation and resorption that correlate with bone mass phenotypes in knockout mice, demonstrating that MMnet genes have counter-regulatory roles in osteoclast function and bone homeostasis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C47-C57 provide systematic in vitro knockdown data for 11 MMnet genes with appropriate controls. Claims C58-C59 report strong correlations (R\u00b2=0.76 and R\u00b2=0.65) between in vitro and in vivo phenotypes. The conclusions (C60-C61) are well-supported by the correlation data, though the use of global knockouts in vivo limits the ability to definitively attribute phenotypes to osteoclast-specific effects.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:57:48.905841Z"
+    },
+    {
+      "id": "e18fb2aa-57f2-41e4-b4e8-f6eb32684dee",
+      "content_id": "9a5339fa-8554-4d12-b9b4-5b4e22cfc91e",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "SLC40A1/ferroportin regulates bone structure and strength via direct actions in the macrophage-osteoclast lineage, as demonstrated by myeloid-specific Slc40a1 knockout mice showing greatly increased bone mass and strength, decreased osteoclast surfaces, retained cartilage, and siRNA knockdown in human osteoclasts inhibiting resorption by >85%.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C65-C77 provide comprehensive evidence from in vitro knockdown (>80% inhibition of multinucleation and >85% inhibition of resorption) and myeloid-specific knockout mice showing consistent high bone mass phenotypes. The use of LysM-Cre for cell-type-specific deletion (C68-C76) strengthens the conclusion of direct osteoclast effects (C78). However, the authors acknowledge discordance with Wang et al. 2018 (C80-C83), suggesting potential confounding factors related to mouse strain or age.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:57:48.905841Z"
+    },
+    {
+      "id": "1acb27a6-5dd5-4d98-90ec-062a642fad0b",
+      "content_id": "9a5339fa-8554-4d12-b9b4-5b4e22cfc91e",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The current findings on Slc40a1 show discordance with Wang et al. 2018, potentially due to differences in mouse age at phenotyping or strain of Slc40a1 floxed mice, though ferroportin clearly acts directly in the macrophage-osteoclast lineage.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C80-C81 accurately report prior conflicting findings from Wang et al. 2018. Claims C82-C83 offer speculative explanations for the discordance without experimental validation. While C84 asserts direct action in the osteoclast lineage based on the myeloid-specific knockout, the conflicting prior results and lack of resolution create uncertainty about the complete picture of Slc40a1 function in bone.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:57:48.905841Z"
+    },
+    {
+      "id": "fb9e2c67-e904-4501-8237-afc2e3b2275c",
+      "content_id": "9a5339fa-8554-4d12-b9b4-5b4e22cfc91e",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "At least four MMnet genes (Trem2, Bcat1, Pik3cb, Deptor) act within the Trem2-Pi3K-mTORC1 pathway with counter-regulatory effects on mTORC1 activity that correlate precisely with their effects on osteoclast function and bone mass, suggesting this pathway plays a pivotal role in bone homeostasis and may provide therapeutic targets.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C85-C91 are supported by appropriate citations establishing the roles of these genes in the mTORC1 pathway. Claims C92-C94 demonstrate correlation between known pathway effects and observed phenotypes. The conclusion about the pathway's role (C95) is well-supported by the convergent data, though C96 about therapeutic potential is speculative. The pathway-level interpretation provides mechanistic insight beyond individual gene effects.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:57:48.905841Z"
+    },
+    {
+      "id": "d98e3540-f87f-46fc-ba76-bb02f2a0c81a",
+      "content_id": "9a5339fa-8554-4d12-b9b4-5b4e22cfc91e",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "MMnet regulates bone mass and strength via effects on osteoclast multinucleation and function, though potential direct or indirect effects in osteoblasts have not been investigated and represent an important study limitation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C97 summarizes the main findings appropriately. Claims C98-C100 acknowledge potential osteoblast contributions as speculation. Claim C101 explicitly identifies the lack of osteoblast investigation as a limitation. This honest acknowledgment of limitations is appropriate, though it does not undermine the osteoclast-focused findings.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:57:48.905841Z"
+    },
+    {
+      "id": "75f0f289-7e3e-41a0-bfec-2e27b7fdfe06",
+      "content_id": "9a5339fa-8554-4d12-b9b4-5b4e22cfc91e",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "MMnet is a co-expression network of 190 osteoclast-enriched eQTLs regulated in trans by Trem2, generated using macrophages from WKY and LEW rats that differ in spontaneous fusion capability.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C102-C105 describe the origin and characteristics of MMnet, supported by citation to Kang et al. 2014 and Rotival et al. 2015. This provides essential background for the study but represents prior work rather than new findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:57:48.905841Z"
+    },
+    {
+      "id": "6f06f791-e4d8-4d16-868c-719a13a19820",
+      "content_id": "9a5339fa-8554-4d12-b9b4-5b4e22cfc91e",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "BCAT1 controls intracellular leucine, an mTORC1 activator, suggesting MMnet may regulate mTORC1-dependent bone homeostasis via Bcat1, consistent with reduced osteoclast numbers and arthritis severity following BCAT1 inhibition.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C106 is supported by citation to Ananieva et al. 2014. Claim C107 is a reasonable inference connecting BCAT1 function to the observed phenotypes. Claim C108 provides supporting evidence from prior work (Papathanassiu et al. 2017). The mechanistic link through leucine/mTORC1 is plausible but not directly tested in this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:57:48.905841Z"
+    },
+    {
+      "id": "386bcdb6-51e7-4f43-b6bb-5d97a759f65e",
+      "content_id": "9a5339fa-8554-4d12-b9b4-5b4e22cfc91e",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Among the MMnet genes tested, Pik3cb is a known regulator of skeletal homeostasis while Atp8b2, Igsf8, Eml1, Appl2, and Deptor are novel regulators; deletion of Kcnn4 and Dcstamp also results in increased bone mass.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C109 and C111-C112 are supported by appropriate citations to prior literature. Claim C110 identifies novel regulators based on the current study's findings. This appropriately distinguishes known from novel findings and provides context from prior work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:57:48.905841Z"
+    },
+    {
+      "id": "65d17849-58cd-42bc-856d-1c8e5a2ca547",
+      "content_id": "9a5339fa-8554-4d12-b9b4-5b4e22cfc91e",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Among genes causing increased trabecular bone mass (Bcat1, Pik3cb, Atp8b2, Appl2), only Bcat1 deficiency increased cortical thickness and bone strength, potentially because Bcat1 deletion has the greatest effect on osteoclast function, trabecular bone is more sensitive to osteoclast abnormalities, cortical parameters determine bone strength, or because global deletions may have non-osteoclast effects.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C113 accurately reports the differential phenotypes observed. Claims C114-C117 offer multiple speculative explanations for the differences. While the speculation is reasonable and acknowledges multiple possibilities, the lack of experimental testing of these hypotheses limits the strength of the conclusions. The observation itself (C113) is well-supported by the data.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:57:48.905841Z"
+    },
+    {
+      "id": "fe9e6442-6772-47ee-828c-9385234c3ca0",
+      "content_id": "9a5339fa-8554-4d12-b9b4-5b4e22cfc91e",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "MMnet is a functionally conserved network regulating osteoclast multinucleation and bone mass, with the hub gene Bcat1 and seven other genes (Pik3cb, Atp8b2, Igsf8, Eml1, Appl2, Deptor, Slc40a1) showing abnormal bone phenotypes in knockout mice and correlation between effects on bone mass in mice and osteoclast function in humans.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C118-C121 provide appropriate summary statements of the main findings. The conclusion of functional conservation (C118) is supported by the GWAS enrichment, cross-species validation, and correlation data (C119). The identification of 8 functional genes out of 13 tested (C120-C121) is well-documented in the results.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:57:48.905841Z"
+    },
+    {
+      "id": "6007fa2c-2d7b-445d-adbe-da3ea6206300",
+      "content_id": "9a5339fa-8554-4d12-b9b4-5b4e22cfc91e",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "MMnet contains 190 genes (178 annotated) including known regulators of osteoclast multinucleation (Dcstamp, Mmp9, Ctsk), but the majority require further investigation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C62-C64 provide basic descriptive information about MMnet composition. C62 states the network size, C63 identifies known regulators based on established knowledge, and C64 acknowledges the gap in knowledge. This is accurate descriptive information that motivates the study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:57:48.905841Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "12126fcb-1ad7-4db1-b21d-2e5409fdd9f2",
+      "result_id": "82b626d9-83e7-4d2b-8803-f0cb32b5853c"
+    },
+    {
+      "claim_id": "b94c45b4-8167-43ba-bb51-ac508aff5bcc",
+      "result_id": "82b626d9-83e7-4d2b-8803-f0cb32b5853c"
+    },
+    {
+      "claim_id": "ce3f299a-69cb-4ca2-969a-8365f5eb5f66",
+      "result_id": "82b626d9-83e7-4d2b-8803-f0cb32b5853c"
+    },
+    {
+      "claim_id": "ad469750-7fc3-4939-9ffd-5e715732b96a",
+      "result_id": "82b626d9-83e7-4d2b-8803-f0cb32b5853c"
+    },
+    {
+      "claim_id": "4865c285-c6cf-42ff-81e0-a233897f2e79",
+      "result_id": "82b626d9-83e7-4d2b-8803-f0cb32b5853c"
+    },
+    {
+      "claim_id": "612cd9e9-5820-44d1-9933-e532ce6c5dfe",
+      "result_id": "82b626d9-83e7-4d2b-8803-f0cb32b5853c"
+    },
+    {
+      "claim_id": "b0165869-eb36-494b-87bc-28c79965d8e3",
+      "result_id": "82b626d9-83e7-4d2b-8803-f0cb32b5853c"
+    },
+    {
+      "claim_id": "b70ccd49-9747-49d9-9a6d-660a116cd3b6",
+      "result_id": "82b626d9-83e7-4d2b-8803-f0cb32b5853c"
+    },
+    {
+      "claim_id": "9466cb6d-48bf-404b-ad2e-5af65e0fecf1",
+      "result_id": "82b626d9-83e7-4d2b-8803-f0cb32b5853c"
+    },
+    {
+      "claim_id": "d4f1e698-19a9-4df0-89ec-3b4671caf3ae",
+      "result_id": "82b626d9-83e7-4d2b-8803-f0cb32b5853c"
+    },
+    {
+      "claim_id": "feec43b7-a13f-45e2-bbe7-d2c7d4528065",
+      "result_id": "98402194-bcc1-4b42-940e-b095149d0bf3"
+    },
+    {
+      "claim_id": "a05f5404-1c0e-4ae7-ba65-3f27a7650987",
+      "result_id": "98402194-bcc1-4b42-940e-b095149d0bf3"
+    },
+    {
+      "claim_id": "77ce1b63-c2c2-4b2c-8959-709c7b9d1729",
+      "result_id": "98402194-bcc1-4b42-940e-b095149d0bf3"
+    },
+    {
+      "claim_id": "afa2502a-aba6-4d57-9065-5a7b3c0bb1e9",
+      "result_id": "98402194-bcc1-4b42-940e-b095149d0bf3"
+    },
+    {
+      "claim_id": "f7bb3b65-4627-414a-8d1f-284784ffc86f",
+      "result_id": "98402194-bcc1-4b42-940e-b095149d0bf3"
+    },
+    {
+      "claim_id": "997d0741-b251-48b1-b028-973a916e3071",
+      "result_id": "99595702-8c46-46f6-ac48-0e173496af43"
+    },
+    {
+      "claim_id": "14f086c9-79f5-4836-929d-5481ce4db235",
+      "result_id": "99595702-8c46-46f6-ac48-0e173496af43"
+    },
+    {
+      "claim_id": "272d6023-67df-4c78-832c-1363321914f5",
+      "result_id": "99595702-8c46-46f6-ac48-0e173496af43"
+    },
+    {
+      "claim_id": "d807c82c-6faf-4eab-a403-e814cd3e14af",
+      "result_id": "99595702-8c46-46f6-ac48-0e173496af43"
+    },
+    {
+      "claim_id": "f2e78aab-7086-4037-a8de-5c016ce68f3e",
+      "result_id": "99595702-8c46-46f6-ac48-0e173496af43"
+    },
+    {
+      "claim_id": "e453c24e-e767-422d-a39d-693fda5a0f3e",
+      "result_id": "99595702-8c46-46f6-ac48-0e173496af43"
+    },
+    {
+      "claim_id": "d95d3032-6f98-4fb3-92be-f78b44d5cce2",
+      "result_id": "99595702-8c46-46f6-ac48-0e173496af43"
+    },
+    {
+      "claim_id": "b78b54ba-be1f-4cb7-87be-36d741707ff3",
+      "result_id": "99595702-8c46-46f6-ac48-0e173496af43"
+    },
+    {
+      "claim_id": "2bd5eecd-f97e-4c67-b31a-e31d969622b9",
+      "result_id": "99595702-8c46-46f6-ac48-0e173496af43"
+    },
+    {
+      "claim_id": "6cffcc75-8a2e-40d0-ba52-285ebb8758b9",
+      "result_id": "99595702-8c46-46f6-ac48-0e173496af43"
+    },
+    {
+      "claim_id": "2e738de9-715f-4c17-a85f-0da865e4cdee",
+      "result_id": "99595702-8c46-46f6-ac48-0e173496af43"
+    },
+    {
+      "claim_id": "65cd7ed8-0964-467e-adb4-528314d63ed1",
+      "result_id": "99595702-8c46-46f6-ac48-0e173496af43"
+    },
+    {
+      "claim_id": "ef5046b8-0f34-46e5-a701-7ba846e7939a",
+      "result_id": "99595702-8c46-46f6-ac48-0e173496af43"
+    },
+    {
+      "claim_id": "8f59f9bc-225f-4c1e-9ffd-593c2cc43712",
+      "result_id": "99595702-8c46-46f6-ac48-0e173496af43"
+    },
+    {
+      "claim_id": "6a1672e8-2419-44bb-ace6-be02f26e39ac",
+      "result_id": "99595702-8c46-46f6-ac48-0e173496af43"
+    },
+    {
+      "claim_id": "3376741a-eeb3-469c-8719-7254aa7b2f07",
+      "result_id": "99595702-8c46-46f6-ac48-0e173496af43"
+    },
+    {
+      "claim_id": "ce6f6cf7-08d7-4173-98e2-e4ffc6591d50",
+      "result_id": "99595702-8c46-46f6-ac48-0e173496af43"
+    },
+    {
+      "claim_id": "2a538fec-3c4c-4f9d-aaef-1f3fd5ebca65",
+      "result_id": "99595702-8c46-46f6-ac48-0e173496af43"
+    },
+    {
+      "claim_id": "8e463bbb-6974-4799-b847-a231ba84e496",
+      "result_id": "99595702-8c46-46f6-ac48-0e173496af43"
+    },
+    {
+      "claim_id": "b262e0d4-f0d3-4806-9f01-75c8b004b312",
+      "result_id": "b8b3e015-922e-45a7-b5b0-d0ea7fdf83a9"
+    },
+    {
+      "claim_id": "402af69c-f766-4379-9510-51503a2ea412",
+      "result_id": "b8b3e015-922e-45a7-b5b0-d0ea7fdf83a9"
+    },
+    {
+      "claim_id": "b54af0e7-855e-4503-ac5f-745cdb91351b",
+      "result_id": "b8b3e015-922e-45a7-b5b0-d0ea7fdf83a9"
+    },
+    {
+      "claim_id": "b679960f-ad4b-4a7f-b383-9d166f33df6b",
+      "result_id": "b8b3e015-922e-45a7-b5b0-d0ea7fdf83a9"
+    },
+    {
+      "claim_id": "8b1bfdb6-08f7-418f-a0bc-4f9320eba86b",
+      "result_id": "b8b3e015-922e-45a7-b5b0-d0ea7fdf83a9"
+    },
+    {
+      "claim_id": "2f071aa8-0008-4792-9ffd-73b978e40f1f",
+      "result_id": "b8b3e015-922e-45a7-b5b0-d0ea7fdf83a9"
+    },
+    {
+      "claim_id": "e5250905-7ad4-4a48-9d11-5d22f81c5292",
+      "result_id": "b8b3e015-922e-45a7-b5b0-d0ea7fdf83a9"
+    },
+    {
+      "claim_id": "c8580dc0-f820-42c5-83d4-064938c79b38",
+      "result_id": "b8b3e015-922e-45a7-b5b0-d0ea7fdf83a9"
+    },
+    {
+      "claim_id": "0fa83186-21bd-44f3-b4d4-a49574b223e7",
+      "result_id": "b8b3e015-922e-45a7-b5b0-d0ea7fdf83a9"
+    },
+    {
+      "claim_id": "12cb6d5f-ef28-43a8-8c26-ccc4d42372bc",
+      "result_id": "b8b3e015-922e-45a7-b5b0-d0ea7fdf83a9"
+    },
+    {
+      "claim_id": "7e2e85d5-a46b-47f0-b41e-c73fb17ee010",
+      "result_id": "b8b3e015-922e-45a7-b5b0-d0ea7fdf83a9"
+    },
+    {
+      "claim_id": "71ca282e-f05e-4dcc-9ef8-dbe39b44f23f",
+      "result_id": "b8b3e015-922e-45a7-b5b0-d0ea7fdf83a9"
+    },
+    {
+      "claim_id": "1411fbd2-0d0e-476f-b787-1cc0eebdfd09",
+      "result_id": "da73b089-0381-47a5-ae87-f494051a2ea2"
+    },
+    {
+      "claim_id": "a2aba3d7-c9b6-4ab3-aa49-0f2fccc6e24b",
+      "result_id": "da73b089-0381-47a5-ae87-f494051a2ea2"
+    },
+    {
+      "claim_id": "93d560f0-8c75-4ad2-ba9f-ecbaebab28c0",
+      "result_id": "da73b089-0381-47a5-ae87-f494051a2ea2"
+    },
+    {
+      "claim_id": "7927843c-4627-4410-acfa-0ab3bfd7e275",
+      "result_id": "da73b089-0381-47a5-ae87-f494051a2ea2"
+    },
+    {
+      "claim_id": "012ab57c-fadc-4ca2-aa31-2a34bb7a7992",
+      "result_id": "da73b089-0381-47a5-ae87-f494051a2ea2"
+    },
+    {
+      "claim_id": "74f35d93-f7ba-4b11-a7ee-68bf18bd921f",
+      "result_id": "da73b089-0381-47a5-ae87-f494051a2ea2"
+    },
+    {
+      "claim_id": "b8b55434-5f87-468a-a113-1672a84b0261",
+      "result_id": "da73b089-0381-47a5-ae87-f494051a2ea2"
+    },
+    {
+      "claim_id": "480f9440-f919-41cb-ac8e-73b17a4b7c18",
+      "result_id": "da73b089-0381-47a5-ae87-f494051a2ea2"
+    },
+    {
+      "claim_id": "c82b84da-7fb9-46aa-9ede-89a8cdba03ab",
+      "result_id": "da73b089-0381-47a5-ae87-f494051a2ea2"
+    },
+    {
+      "claim_id": "f4fb3cee-6bcb-494c-9e91-307760549d8a",
+      "result_id": "da73b089-0381-47a5-ae87-f494051a2ea2"
+    },
+    {
+      "claim_id": "0c7ae756-f126-433c-a9e4-d92404e42e5e",
+      "result_id": "da73b089-0381-47a5-ae87-f494051a2ea2"
+    },
+    {
+      "claim_id": "f1b2172a-7388-4359-a4bd-704736f4a161",
+      "result_id": "da73b089-0381-47a5-ae87-f494051a2ea2"
+    },
+    {
+      "claim_id": "ed12005d-24a1-4f12-8fc1-428e20d3c9cc",
+      "result_id": "da73b089-0381-47a5-ae87-f494051a2ea2"
+    },
+    {
+      "claim_id": "de66a55b-1cf5-4ee7-8091-aee8f2623d15",
+      "result_id": "da73b089-0381-47a5-ae87-f494051a2ea2"
+    },
+    {
+      "claim_id": "a96d2957-9212-46c3-82cf-09491059a3b6",
+      "result_id": "da73b089-0381-47a5-ae87-f494051a2ea2"
+    },
+    {
+      "claim_id": "a828cf98-3949-4b78-b7fb-087f30e4b0b0",
+      "result_id": "e18fb2aa-57f2-41e4-b4e8-f6eb32684dee"
+    },
+    {
+      "claim_id": "a0b6b3ba-5a89-4c7c-b01b-3b9ebbaa86fe",
+      "result_id": "e18fb2aa-57f2-41e4-b4e8-f6eb32684dee"
+    },
+    {
+      "claim_id": "c6891666-9d22-4021-b1a9-7124bab519fc",
+      "result_id": "e18fb2aa-57f2-41e4-b4e8-f6eb32684dee"
+    },
+    {
+      "claim_id": "5f14decf-0684-462b-9e8d-05d4ff412c67",
+      "result_id": "e18fb2aa-57f2-41e4-b4e8-f6eb32684dee"
+    },
+    {
+      "claim_id": "8089796d-becc-4aed-8743-adab66b129c5",
+      "result_id": "e18fb2aa-57f2-41e4-b4e8-f6eb32684dee"
+    },
+    {
+      "claim_id": "315324f5-f0ac-4d6b-b8d5-4fd80d124530",
+      "result_id": "e18fb2aa-57f2-41e4-b4e8-f6eb32684dee"
+    },
+    {
+      "claim_id": "4af2d0d6-d374-4c80-ac42-62828f4312c6",
+      "result_id": "e18fb2aa-57f2-41e4-b4e8-f6eb32684dee"
+    },
+    {
+      "claim_id": "efa215bf-85b5-4e9b-8cea-6a882f7bdcd5",
+      "result_id": "e18fb2aa-57f2-41e4-b4e8-f6eb32684dee"
+    },
+    {
+      "claim_id": "1debeb69-e7f5-4fd4-9551-c96ffcc3193c",
+      "result_id": "e18fb2aa-57f2-41e4-b4e8-f6eb32684dee"
+    },
+    {
+      "claim_id": "f983b97b-74e6-4b71-bf89-3afe2d6786de",
+      "result_id": "e18fb2aa-57f2-41e4-b4e8-f6eb32684dee"
+    },
+    {
+      "claim_id": "4b05d94b-8c6b-43fa-882c-0cbf0d7f8441",
+      "result_id": "e18fb2aa-57f2-41e4-b4e8-f6eb32684dee"
+    },
+    {
+      "claim_id": "d75077c9-45c4-4543-8b75-8546d13a548a",
+      "result_id": "e18fb2aa-57f2-41e4-b4e8-f6eb32684dee"
+    },
+    {
+      "claim_id": "5a9ea925-aaf9-4b19-8c03-e1986985f769",
+      "result_id": "e18fb2aa-57f2-41e4-b4e8-f6eb32684dee"
+    },
+    {
+      "claim_id": "56f01207-46d8-4084-82ec-607ebbe069ee",
+      "result_id": "e18fb2aa-57f2-41e4-b4e8-f6eb32684dee"
+    },
+    {
+      "claim_id": "94ed0140-51dd-41cb-bfec-07faeebb5e44",
+      "result_id": "e18fb2aa-57f2-41e4-b4e8-f6eb32684dee"
+    },
+    {
+      "claim_id": "f8b1f233-fca8-47d6-91dc-df1a7f8b7fb2",
+      "result_id": "1acb27a6-5dd5-4d98-90ec-062a642fad0b"
+    },
+    {
+      "claim_id": "2d14843b-9ede-45db-a00b-9a4d9d58eb63",
+      "result_id": "1acb27a6-5dd5-4d98-90ec-062a642fad0b"
+    },
+    {
+      "claim_id": "761c051c-3b52-48f1-aa8a-6e37f0ad71be",
+      "result_id": "1acb27a6-5dd5-4d98-90ec-062a642fad0b"
+    },
+    {
+      "claim_id": "5be0fa26-a2e5-4333-97b2-24c519c3c0fb",
+      "result_id": "1acb27a6-5dd5-4d98-90ec-062a642fad0b"
+    },
+    {
+      "claim_id": "30e227e4-4047-4d48-8678-ed1e9fdfb453",
+      "result_id": "1acb27a6-5dd5-4d98-90ec-062a642fad0b"
+    },
+    {
+      "claim_id": "7f9a4330-417a-415c-8175-db94e7e50356",
+      "result_id": "fb9e2c67-e904-4501-8237-afc2e3b2275c"
+    },
+    {
+      "claim_id": "99811848-28ef-4e66-abd1-a89ea7d655ff",
+      "result_id": "fb9e2c67-e904-4501-8237-afc2e3b2275c"
+    },
+    {
+      "claim_id": "e8d051b9-bbaf-44bc-9a28-9f9c959b7837",
+      "result_id": "fb9e2c67-e904-4501-8237-afc2e3b2275c"
+    },
+    {
+      "claim_id": "92aded00-ffa9-4c68-ae02-be07120d4964",
+      "result_id": "fb9e2c67-e904-4501-8237-afc2e3b2275c"
+    },
+    {
+      "claim_id": "e5070bf9-67a3-48ef-8d9d-9ad0e7bcb258",
+      "result_id": "fb9e2c67-e904-4501-8237-afc2e3b2275c"
+    },
+    {
+      "claim_id": "fc0a41e9-9fd3-4c79-a3da-7804d20ad18a",
+      "result_id": "fb9e2c67-e904-4501-8237-afc2e3b2275c"
+    },
+    {
+      "claim_id": "425c99d6-d0c5-427b-ad18-026b25c741d6",
+      "result_id": "fb9e2c67-e904-4501-8237-afc2e3b2275c"
+    },
+    {
+      "claim_id": "79275730-85f3-484b-9190-b1c7885a2387",
+      "result_id": "fb9e2c67-e904-4501-8237-afc2e3b2275c"
+    },
+    {
+      "claim_id": "549c6586-3e36-4661-99b1-d4d18efec6c4",
+      "result_id": "fb9e2c67-e904-4501-8237-afc2e3b2275c"
+    },
+    {
+      "claim_id": "41f88d66-df8c-49ce-8dd6-39e256b686bf",
+      "result_id": "fb9e2c67-e904-4501-8237-afc2e3b2275c"
+    },
+    {
+      "claim_id": "4f8b6a75-2f47-435b-991c-f972e095d385",
+      "result_id": "fb9e2c67-e904-4501-8237-afc2e3b2275c"
+    },
+    {
+      "claim_id": "6c1a9bca-d990-41d3-981d-a3d91d2e7a84",
+      "result_id": "fb9e2c67-e904-4501-8237-afc2e3b2275c"
+    },
+    {
+      "claim_id": "36dd590e-09eb-4877-8fa9-44d8d39afa51",
+      "result_id": "d98e3540-f87f-46fc-ba76-bb02f2a0c81a"
+    },
+    {
+      "claim_id": "314d4eec-f157-4caa-9b95-686aa3bf69a3",
+      "result_id": "d98e3540-f87f-46fc-ba76-bb02f2a0c81a"
+    },
+    {
+      "claim_id": "aa5d6b52-df7b-446b-8e76-0511f13de516",
+      "result_id": "d98e3540-f87f-46fc-ba76-bb02f2a0c81a"
+    },
+    {
+      "claim_id": "0a3ad8d0-2a19-4fb6-8617-9f18d4fa996e",
+      "result_id": "d98e3540-f87f-46fc-ba76-bb02f2a0c81a"
+    },
+    {
+      "claim_id": "012b8fa1-9b5b-4b07-805a-4748251dade5",
+      "result_id": "d98e3540-f87f-46fc-ba76-bb02f2a0c81a"
+    },
+    {
+      "claim_id": "e9344018-8ce5-4c33-821e-7b4a82baa4d6",
+      "result_id": "75f0f289-7e3e-41a0-bfec-2e27b7fdfe06"
+    },
+    {
+      "claim_id": "15c12f5b-2268-4081-b3c9-02fce4953c47",
+      "result_id": "75f0f289-7e3e-41a0-bfec-2e27b7fdfe06"
+    },
+    {
+      "claim_id": "7b6f2cde-3a3b-4dd8-a0dd-113d96fb6af1",
+      "result_id": "75f0f289-7e3e-41a0-bfec-2e27b7fdfe06"
+    },
+    {
+      "claim_id": "79dd6f0f-04fe-4b0b-b6d4-40e8175b9894",
+      "result_id": "75f0f289-7e3e-41a0-bfec-2e27b7fdfe06"
+    },
+    {
+      "claim_id": "0217c33b-7dea-479b-b6ae-561255bc8d72",
+      "result_id": "6f06f791-e4d8-4d16-868c-719a13a19820"
+    },
+    {
+      "claim_id": "368fc7cb-45ea-4991-91d8-1ed7af9013a2",
+      "result_id": "6f06f791-e4d8-4d16-868c-719a13a19820"
+    },
+    {
+      "claim_id": "05e65925-cc71-4e2a-acce-16217988135e",
+      "result_id": "6f06f791-e4d8-4d16-868c-719a13a19820"
+    },
+    {
+      "claim_id": "f2a87f93-aa42-46da-916d-2d4702fa226d",
+      "result_id": "386bcdb6-51e7-4f43-b6bb-5d97a759f65e"
+    },
+    {
+      "claim_id": "400ad31e-37f9-4d09-b2d3-10404cbaca7f",
+      "result_id": "386bcdb6-51e7-4f43-b6bb-5d97a759f65e"
+    },
+    {
+      "claim_id": "0d05053f-d371-4656-95dd-7ca021431fd5",
+      "result_id": "386bcdb6-51e7-4f43-b6bb-5d97a759f65e"
+    },
+    {
+      "claim_id": "f82a1853-1e77-4f5a-9225-6cbbfe0ad101",
+      "result_id": "386bcdb6-51e7-4f43-b6bb-5d97a759f65e"
+    },
+    {
+      "claim_id": "ed47ea5d-e744-4a99-a733-6a45822cf8e7",
+      "result_id": "65d17849-58cd-42bc-856d-1c8e5a2ca547"
+    },
+    {
+      "claim_id": "f6e830c6-ce6c-4490-a713-aa5911e050f9",
+      "result_id": "65d17849-58cd-42bc-856d-1c8e5a2ca547"
+    },
+    {
+      "claim_id": "324b5b16-3dcd-4620-b522-c85e3f19583e",
+      "result_id": "65d17849-58cd-42bc-856d-1c8e5a2ca547"
+    },
+    {
+      "claim_id": "16115f4f-2767-4b0c-94c1-28cde151138d",
+      "result_id": "65d17849-58cd-42bc-856d-1c8e5a2ca547"
+    },
+    {
+      "claim_id": "5643c50d-6c0a-4723-a5c1-c0c28318fab2",
+      "result_id": "65d17849-58cd-42bc-856d-1c8e5a2ca547"
+    },
+    {
+      "claim_id": "574aaea0-3683-431d-b4ee-5ef07dd17036",
+      "result_id": "fe9e6442-6772-47ee-828c-9385234c3ca0"
+    },
+    {
+      "claim_id": "fbecfd49-ba28-48d4-b1ac-fd6e9a503000",
+      "result_id": "fe9e6442-6772-47ee-828c-9385234c3ca0"
+    },
+    {
+      "claim_id": "a91b603b-27f3-454d-a1e6-4525912f9cbd",
+      "result_id": "fe9e6442-6772-47ee-828c-9385234c3ca0"
+    },
+    {
+      "claim_id": "09617282-13c2-410b-9236-8df978476905",
+      "result_id": "fe9e6442-6772-47ee-828c-9385234c3ca0"
+    },
+    {
+      "claim_id": "5b9648a1-88d3-4c68-bd42-803dfcb6ca27",
+      "result_id": "6007fa2c-2d7b-445d-adbe-da3ea6206300"
+    },
+    {
+      "claim_id": "905098ea-7b44-4f9e-b487-681199e99ae3",
+      "result_id": "6007fa2c-2d7b-445d-adbe-da3ea6206300"
+    },
+    {
+      "claim_id": "a3c6c2e6-9a14-40c3-8438-b98949317dee",
+      "result_id": "6007fa2c-2d7b-445d-adbe-da3ea6206300"
+    }
+  ],
+  "comparisons": []
+}

@@ -1,0 +1,589 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "Mitochondrial gene expression is dynamically regulated in NPC1 KO mice, with upregulation in pre-symptomatic brain, followed by robust downregulation in symptomatic brain and liver. The proportion of mitochondrial genes in differentially expressed gene lists increases ~5-fold with disease onset.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C54 are well-supported by transcriptome analysis data shown in Figure 1B and Figure 1\u2014figure supplement 2. The temporal pattern of mitochondrial gene expression changes is clearly demonstrated with appropriate statistical analysis (Bonferroni-corrected p-values). The data show a consistent trend across multiple tissues and disease stages.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C66",
+      "C67",
+      "C71",
+      "C72"
+    ],
+    "result": "Mitochondrial biogenesis is repressed in NPC and ASM-deficient cells and tissues, with decreased expression of mitochondria-related genes and impaired mitochondrial function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C72 are supported by qPCR data (Figure 2A-D) showing decreased mitochondrial gene expression in both mouse tissues and patient fibroblasts. The functional impairment is demonstrated by increased MitoSox intensity (Figure 2E-F), indicating poor mitochondrial performance. Multiple independent patient lines and tissues show consistent phenotypes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "ASM-deficient and NPC fibroblasts exhibit severely impaired mitochondrial respiration, with ~70% decrease in OCR in ASM-1 cells and ~50% decrease in ASM-2 and NPC cells under both basal and maximal conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C81 are well-supported by Seahorse respirometry data (Figure 3A-D). The measurements include appropriate controls (oligomycin, FCCP, rotenone/antimycin) to assess different aspects of mitochondrial function. The quantifications show statistically significant decreases with error bars indicating reproducibility across replicates.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "Expression of wild-type ASM or NPC1 rescues mitochondrial biogenesis and respiration defects in patient fibroblasts, demonstrating that the mitochondrial phenotypes are specific consequences of ASM or NPC1 loss.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C86 are supported by rescue experiments shown in Figure 3\u2014figure supplement 1C-E. The data demonstrate that complementation with wild-type proteins increases OCR and mitochondrial gene expression. This is a critical control establishing causality, though the rescue is partial rather than complete in some cases.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "Despite transcriptional repression of mitochondrial biogenesis, ASM- and NPC1-deficient cells accumulate dysfunctional mitochondria with increased mass but decreased membrane potential, likely due to impaired mitophagy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C91 are supported by MitoTracker Green (Figure 3\u2014figure supplement 2A) and dual MitoTracker staining (Figure 3\u2014figure supplement 2C) showing increased mitochondrial mass but decreased membrane potential. The inference about impaired mitophagy is reasonable given the known role of lysosomes in this process, though direct mitophagy measurements are not provided.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "Pharmacological inhibition of ASM (with desipramine) or NPC1 (with U18666A) recapitulates the mitochondrial phenotypes observed in genetic patient cells, including decreased gene expression, increased superoxide, and impaired respiration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93-C99 are supported by data in Figure 3\u2014figure supplement 3 and 4. The pharmacological approaches provide important validation that the phenotypes are not due to developmental compensation or off-target effects of genetic mutations. Both inhibitors produce similar mitochondrial defects to those seen in patient cells.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "Promoter analysis of respiratory chain genes identifies KLF and ETS transcription factor families as significantly enriched, while SP1 and E2F families are enriched in both mitochondrial and lysosomal gene promoters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C100-C102 are supported by in silico promoter analysis (Table 2). The approach is methodologically sound, using Genomatix tools to identify transcription factor binding sites. The logic of excluding SP1 and E2F due to their presence in both up- and down-regulated gene sets is reasonable, though this could miss complex regulatory scenarios.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "KLF2 and ETV1 are upregulated at the protein level in ASM- and NPC1-deficient cells, with increased nuclear localization, while transcript levels show different patterns (ETV1 increased, KLF2 unchanged).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C104-C111 are supported by qPCR (Figure 4\u2014figure supplement 1A-B) and Western blot data (Figure 4B-C, Figure 4\u2014figure supplement 1C-D). The differential regulation at transcript vs. protein level is clearly demonstrated and suggests post-translational regulation of KLF2. Nuclear fractionation experiments provide evidence for transcriptional activity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C116",
+      "C117",
+      "C118",
+      "C119"
+    ],
+    "result": "Analysis of KLF2 KO mice shows increased mitochondrial gene expression, and KLF2 ChIP-Seq data reveals direct binding to promoters of mitochondrial genes including respiratory chain subunits and transcription factors like ETV1 and NRF1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C116-C119 are supported by analysis of publicly available datasets (Figure 4\u2014figure supplement 3 and 4). The KLF2 KO data provide important in vivo validation of KLF2's repressive role. The ChIP-Seq analysis demonstrates direct binding, supporting a direct transcriptional mechanism. However, the authors rely on published data rather than generating their own.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C121",
+      "C122",
+      "C123"
+    ],
+    "result": "Overexpression of full-length ETV1 represses mitochondrial gene expression, while a DNA-binding-deficient mutant (ETV1 1-334) does not, demonstrating that ETV1 represses mitochondrial biogenesis via direct DNA binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C121-C123 are supported by overexpression experiments (Figure 4E-F). The use of a DNA-binding-deficient mutant is a strong control demonstrating direct transcriptional regulation. The unexpected increase in gene expression with the mutant (possibly acting as dominant-negative) is acknowledged and reasonably explained.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136"
+    ],
+    "result": "siRNA-mediated silencing of KLF2 or ETV1 rescues mitochondrial biogenesis and function in ASM- and NPC1-deficient fibroblasts, with KLF2 knockdown showing more robust rescue than ETV1 knockdown. The rescue is independent of lysosomal function improvement.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C124-C136 are strongly supported by comprehensive knockdown experiments (Figure 5). The data include Western blots confirming knockdown efficiency, qPCR showing increased mitochondrial gene expression, and Seahorse measurements demonstrating functional rescue. The control showing no improvement in lysosomal markers (Figure 5\u2014figure supplement 1) is important for establishing specificity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C137",
+      "C138",
+      "C139",
+      "C140"
+    ],
+    "result": "KLF2 regulates ETV1 expression in an epistatic relationship, with ETV1 downstream of KLF2. KLF2 silencing ablates ETV1, while ETV1 silencing has minimal effect on KLF2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C137-C140 are supported by knockdown experiments (Figure 6A) and are consistent with ChIP-Seq data showing KLF2 binds to the ETV1 promoter. The epistasis is clearly demonstrated, though the inference about transcriptional activation is based on correlation rather than direct promoter activity assays.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C142",
+      "C144",
+      "C145",
+      "C146",
+      "C147",
+      "C148",
+      "C149",
+      "C150"
+    ],
+    "result": "ASM-deficient fibroblasts show altered signaling with decreased Akt activity, increased ERK and mTORC1 activity, and unchanged AMPK activity. ERK inhibition reduces ETV1 but not KLF2, suggesting KLF2 requires active ERK signaling to induce ETV1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C142-C150 are supported by Western blot analysis of phosphorylated signaling proteins (Figure 6B-C). The ERK inhibition experiment provides mechanistic insight into the KLF2-ETV1 relationship. However, the conclusion about ERK requirement is based on a single inhibitor experiment and could benefit from additional validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C157",
+      "C158",
+      "C159",
+      "C160",
+      "C161",
+      "C162",
+      "C163",
+      "C164",
+      "C165",
+      "C166",
+      "C167"
+    ],
+    "result": "S1PR1 bidirectionally regulates mitochondrial biogenesis and function in control fibroblasts. Activation with Sew2871 increases mitochondrial gene expression and OCR while decreasing KLF2 and ETV1; inhibition with W146 has opposite effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C157-C167 are well-supported by comprehensive pharmacological experiments (Figure 7A-H). The bidirectional regulation is clearly demonstrated with both agonist and antagonist, providing strong evidence for S1PR1's role. The data include transcript levels, protein levels, and functional measurements (OCR), all showing consistent patterns.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C169",
+      "C170",
+      "C171",
+      "C172"
+    ],
+    "result": "S1P signaling via S1PR1 is profoundly down-regulated in ASM-deficient fibroblasts, with decreased expression of sphingosine kinases SPHK1 and SPHK2, leading to KLF2 upregulation and mitochondrial biogenesis inhibition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C169-C172 are supported by qPCR data (Figure 7\u2014figure supplement 1) showing decreased SPHK1/2 expression. The inference about S1P signaling downregulation is reasonable given the decreased kinase expression and S1PR1 mislocalization (shown later). This provides a mechanistic link between lysosomal dysfunction and KLF2 upregulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C173",
+      "C174",
+      "C175",
+      "C176",
+      "C177",
+      "C178"
+    ],
+    "result": "ASM-deficient fibroblasts do not respond to S1PR1 agonist treatment, and S1PR1 is robustly decreased at the plasma membrane despite unchanged total protein levels, indicating receptor mislocalization that explains KLF2 upregulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C173-C178 are strongly supported by qPCR (Figure 8B), Western blot (Figure 8C), and flow cytometry (Figure 8D) data. The lack of response to agonist combined with surface staining showing decreased plasma membrane localization provides compelling evidence for receptor mislocalization. This is a key mechanistic finding explaining the pathway activation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C179",
+      "C180",
+      "C181",
+      "C182",
+      "C183"
+    ],
+    "result": "Silencing KLF2 or ETV1 in ASM-deficient cells increases apoptosis (from ~38% to ~55%), increases cleaved caspase-3 and PARP, and decreases cell viability, indicating that KLF2/ETV1 upregulation is a protective mechanism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C179-C183 are supported by multiple assays: Annexin V/PI flow cytometry (Figure 8E), Western blots for apoptotic markers (Figure 8F), and CellTiter-Glo viability assay (Figure 8G). This is an important finding showing that the transcriptional response, while impairing mitochondrial function, protects against cell death. The data are consistent across multiple readouts.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "A transcriptional program mediated by KLF2 and ETV1 represses mitochondrial biogenesis and function in NPC and ASM patient cells and mouse tissues. Silencing these transcription factors rescues the mitochondrial defects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This is the central finding of the manuscript, integrating claims C3-C6 and C44-C46. The result is well-supported by multiple lines of evidence: transcriptome analysis, protein expression studies, functional assays, and rescue experiments. The data span multiple model systems (mouse tissues, patient cells, pharmacological models) and include both loss-of-function and gain-of-function approaches.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11"
+    ],
+    "result": "KLF2 upregulation in patient cells results from impaired S1PR1 signaling. S1PR1 normally represses KLF2, but in patient cells, S1PR1 is barely detectable at the plasma membrane and unable to repress KLF2. KLF2 then activates ETV1 expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C11 integrate the mechanistic pathway from S1PR1 to KLF2 to ETV1. The evidence includes S1PR1 localization studies, agonist/antagonist experiments, and epistasis analysis. The pathway is well-supported, though some steps rely on inference from correlative data rather than direct mechanistic proof.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C73",
+      "C74"
+    ],
+    "result": "Mitochondrial impairments in NPC and ASM deficiency are likely unrelated to mitochondrial cholesterol levels and instead result from lysosomal saturation, as both diseases show similar mitochondrial defects despite different mitochondrial cholesterol levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C74 are supported by the observation that both NPC (high mitochondrial cholesterol) and ASM (normal mitochondrial cholesterol) show similar mitochondrial phenotypes. This is an important inference ruling out cholesterol as the primary mechanism. However, the conclusion is based on comparison rather than direct manipulation of cholesterol levels.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "Lysosomal stress in NPC1 KO mice specifically affects mitochondrial gene expression across tissues, with some liver-specific effects on peroxisomal genes, while ER and Golgi gene expression remains unchanged.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C59 are supported by organelle-specific gene expression analysis (Figure 1\u2014figure supplement 1B). The specificity for mitochondrial genes is important for establishing that this is not a general transcriptional shutdown. The peroxisomal effect in liver suggests some tissue-specific responses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "ASM-1 patient fibroblasts show characteristic lysosomal dysfunction with increased p62/SQSTM1 and LC3B-II levels and strongly decreased DQ-BSA degradation rate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C77 are supported by Western blot (Figure 3\u2014figure supplement 1A) and DQ-BSA assay (Figure 3\u2014figure supplement 1B). This is important characterization of the ASM-1 cell line used throughout the study, establishing that it has the expected lysosomal phenotype.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C112",
+      "C113",
+      "C114",
+      "C115"
+    ],
+    "result": "Desipramine treatment upregulates both KLF2 and ETV1 at protein level, but only ETV1 at transcript level, suggesting KLF2 accumulation is regulated post-translationally while ETV1 is regulated transcriptionally.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C112-C115 are supported by Western blot and qPCR data (Figure 4\u2014figure supplement 2). This pharmacological validation confirms the findings in genetic models and provides insight into the different regulatory mechanisms for KLF2 (post-translational) vs. ETV1 (transcriptional).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C18",
+      "C19"
+    ],
+    "result": "Mitochondrial perturbations are pervasive in lysosomal storage diseases, but the underlying mechanisms have remained unknown until this study.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2 and C18-C19 establish the context and knowledge gap. These are well-supported by citations to prior literature showing mitochondrial dysfunction in various lysosomal storage diseases. This provides the rationale for the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "Background information on lysosomal storage diseases, lysosomes, NPC, ASM deficiency, and mouse models is established through citations to prior literature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C29 provide essential background information, all supported by appropriate citations to established literature. These claims set up the biological context for the study and describe the disease models used.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "Background on mitochondrial biology and transcriptional regulation of mitochondrial biogenesis is established, noting that no transcriptional repressors had been previously described.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C43 provide background on mitochondrial biology and regulation, supported by appropriate citations. Claim C42 about the absence of known transcriptional repressors is a key knowledge gap that this study addresses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "Cholesterol and sphingomyelin accumulate in lysosomes in both NPC and ASM deficiency, but mitochondrial cholesterol is elevated only in NPC, not in ASM deficiency.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C65 are supported by citations to prior literature (Torres et al., 2017 and others). This information is important for interpreting the similar mitochondrial phenotypes in both diseases despite different mitochondrial cholesterol levels.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C103"
+    ],
+    "result": "ELK1 transcript levels were not changed in ASM-deficient fibroblasts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C103 is supported by qPCR data (Figure 4\u2014figure supplement 1A). This negative result is important for narrowing down which ETS family members are relevant to the phenotype.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R29",
+    "claim_ids": [
+      "C120"
+    ],
+    "result": "Several known ETV1 target genes encode mitochondrial proteins, as shown by prior ChIP-ChIP studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C120 is supported by citation to Baena et al., 2013 and Figure 4\u2014figure supplement 5. This provides additional support for ETV1's role in regulating mitochondrial genes, though it relies on published data rather than new experiments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R30",
+    "claim_ids": [
+      "C141",
+      "C143",
+      "C151",
+      "C152",
+      "C153",
+      "C154",
+      "C155",
+      "C156"
+    ],
+    "result": "Background on signaling pathways regulating KLF2 and ETV1, including Akt, ERK, and S1PR1, is established through citations and preliminary observations in patient cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C141-C156 provide background on relevant signaling pathways and establish their status in patient cells. These are supported by appropriate citations and Western blot data. This information sets up the mechanistic studies of S1PR1 signaling.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R31",
+    "claim_ids": [
+      "C184",
+      "C185",
+      "C186"
+    ],
+    "result": "This study addresses a novel mechanism for mitochondrial impairment in lysosomal storage diseases and identifies the first transcriptional repressors of mitochondrial biogenesis, opening a new paradigm.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C184-C186 are summary statements about the study's significance. These are supported by the comprehensive data presented throughout the manuscript. The identification of transcriptional repressors of mitochondrial biogenesis is indeed novel and significant.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R32",
+    "claim_ids": [
+      "C187",
+      "C188"
+    ],
+    "result": "KLF4 promotes mitochondrial biogenesis in the heart, indicating that KLF2's repressive behavior is specific to this transcription factor and not a general property of the Kr\u00fcppel-like factor family.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C187-C188 are supported by citation to Liao et al., 2015. This comparison is important for understanding the specificity of KLF2's repressive function and suggests that different KLF family members have distinct roles.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R33",
+    "claim_ids": [
+      "C189"
+    ],
+    "result": "KLF2, ETV1, and NRF1 may form a transcriptional regulatory network that dynamically regulates mitochondrial biogenesis, with NRF1 as an 'accelerator' and KLF2/ETV1 as 'brakes'.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C189 is an inference supported by data showing NRF1 is repressed by KLF2 and ETV1 (Figure 5A-B) and that NRF1 is a KLF2 target (ChIP-Seq data). This is a reasonable model integrating the findings, though direct evidence for coordinated regulation is limited.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R34",
+    "claim_ids": [
+      "C190",
+      "C191",
+      "C192",
+      "C193"
+    ],
+    "result": "A reciprocal mechanism exists where chronic mitochondrial defects repress lysosomal biogenesis and function, and the communication between these organelles involves transcriptional networks beyond metabolic cues.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C190-C193 are supported by citations to prior literature showing reciprocal effects. The inference about transcriptional networks is reasonable given the findings of this study. This places the current work in a broader context of organellar communication.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R35",
+    "claim_ids": [
+      "C194",
+      "C195",
+      "C196"
+    ],
+    "result": "S1PR1 is a bidirectional regulator of mitochondrial function via KLF2 and ETV1, providing a mechanism for the previously unclear role of S1PR1 in mitochondrial regulation in T cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C194-C196 are supported by the S1PR1 agonist/antagonist experiments (Figure 7). This extends prior observations in T cells by providing a clear molecular mechanism. The bidirectional regulation is well-demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R36",
+    "claim_ids": [
+      "C197"
+    ],
+    "result": "A therapeutic strategy targeting S1PR1 receptor activity would likely be insufficient in ASM-deficient cells due to receptor mislocalization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C197 is a reasonable inference from the data showing S1PR1 mislocalization and lack of response to agonists. This has important implications for potential therapeutic approaches, though it is speculative about future therapies.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,261 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C43",
+      "C44",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "M\u00fcller cells from the macula and peripheral retina display distinct morphological differences in primary culture. Macular M\u00fcller cells (M-huPMCs) are small, spindle- or stellate-shaped with low cytoplasm/nucleus ratios and shorter processes, while peripheral M\u00fcller cells (P-huPMCs) have larger cell bodies, multiple cytoplasmic processes, and higher cytoplasm/nucleus ratios. These phenotypic differences are retained up to the second passage (P2).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C43, C44, C82, C83, and C84 are supported by morphological observations shown in Figure 1B-F and quantitative analysis in Figure 1B. The distinct morphologies are documented with microscopy images and statistical analysis (p<0.001 for cytoplasm/nucleus ratio differences). The retention of phenotype through P2 is explicitly stated and observed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "Both macular and peripheral M\u00fcller cells express canonical M\u00fcller cell markers (GFAP, carbonic anhydrase II, SOX9, CRALBP, vimentin, glutamine synthetase) and negligibly express markers of other retinal cell types (rhodopsin, mGluR6, syntaxin 1A, Iba1, PECAM1), confirming their identity as M\u00fcller cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C48 and C53-C55 are supported by immunofluorescence data (Figure 1G-L, Figure 1\u2014figure supplement 1) and RNA-seq data (Table 1). The expression of M\u00fcller cell markers is demonstrated both at protein and transcript levels, while markers of other retinal cell types show negligible expression, validating cell identity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C4",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C56"
+    ],
+    "result": "RNA-sequencing analysis revealed significant transcriptomic differences between macular and peripheral M\u00fcller cells, with 7588 differentially expressed genes (DEGs) identified. Upregulated genes in macular M\u00fcller cells are significantly associated with 'response to oxygen levels', 'response to decreased oxygen levels', and 'response to hypoxia'. Peripheral M\u00fcller cells expressed M\u00fcller cell markers more strongly than macular cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C49-C52, and C56 are supported by comprehensive RNA-seq analysis shown in Figure 2 and Tables 1-2. The identification of 7588 DEGs with FDR-corrected p-value<0.05 and 1.5-fold change threshold is appropriate. GO enrichment analysis (Figure 2G) validates the association with oxygen response pathways. The observation that peripheral cells express M\u00fcller markers more strongly is supported by RPKM values in Table 1.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C5",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C89",
+      "C112"
+    ],
+    "result": "Macular M\u00fcller cells express significantly more PHGDH (phosphoglycerate dehydrogenase) than peripheral M\u00fcller cells, both in culture and in retinal tissue. PHGDH is highly expressed in the macular Henle fibre layer, and the macula has multiple layers of M\u00fcller cell nuclei in the inner nuclear layer. PHGDH expression in retina predominantly reflects M\u00fcller cell expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C57-C63, C89, and C112 are supported by multiple lines of evidence: RNA-seq data (Table 2), Western blot analysis (Figure 3A-F), and immunofluorescence staining (Figure 4). The differential expression is statistically significant (p=0.02, n=4 donors for cultured cells; n=5 donors for tissue). The localization to Henle fibre layer and co-localization with CRALBP (M\u00fcller cell marker) is clearly demonstrated in Figure 4E-H.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C7",
+      "C64",
+      "C65",
+      "C66",
+      "C93",
+      "C95"
+    ],
+    "result": "Serine synthesis is more activated in macular than peripheral M\u00fcller cells. After 3 hr of 13C-glucose labeling, approximately 18% of cellular serine was replaced, with M-huPMCs showing higher 13C-labeled serine (24%) and glycine (12%) compared to P-huPMCs (13% and 5%, respectively). Macular M\u00fcller cells shift glucose carbons more toward de novo serine synthesis than peripheral cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C64-C66, C93, and C95 are supported by 13C-glucose labeling experiments shown in Figure 5A-D. The metabolic flux analysis demonstrates higher serine synthesis activity in macular cells. The 18% enrichment within 3 hr is notably high compared to literature values for other cell types (12% in 24 hr for melanoma cells). The data from n=4 donors provides adequate replication.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C8",
+      "C67",
+      "C68",
+      "C91"
+    ],
+    "result": "Macular M\u00fcller cells have significantly higher glycolytic capacity and reserve than peripheral M\u00fcller cells, displaying more active glycolytic metabolism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C67, C68, and C91 are supported by Seahorse XF analysis shown in Figure 5E-F. The differences in glycolytic capacity (p=0.001) and glycolytic reserve (p=0.025) are statistically significant with n=4 donors. The ECAR measurements provide direct evidence of enhanced glycolytic function in macular cells.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C9",
+      "C69",
+      "C70",
+      "C71",
+      "C92"
+    ],
+    "result": "Macular M\u00fcller cells have significantly higher basal mitochondrial respiration and ATP production but lower spare respiratory capacity than peripheral M\u00fcller cells, displaying more active mitochondrial metabolism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9, C69-C71, and C92 are supported by Seahorse XF analysis shown in Figure 5G-H. The differences in basal respiration (p=0.043) and ATP production (p=0.052) are statistically significant or near-significant. The lower spare respiratory capacity in macular cells suggests they operate closer to maximal capacity. OCR measurements from n=4 donors provide adequate evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C10",
+      "C13",
+      "C14",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C98",
+      "C99"
+    ],
+    "result": "Serine biosynthesis is critical for defending against oxidative stress in macular M\u00fcller cells. Treatment with PHGDH inhibitor CBR-5884 reduced serine (61%) and glycine (42%) levels and led to more pronounced cytotoxicity in macular M\u00fcller cells compared to peripheral cells when exposed to oxidative stress (100 \u00b5M H2O2). This indicates that defects in de novo serine synthesis increase the vulnerability of macular M\u00fcller cells to oxidative stress.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10, C13, C14, C72-C76, C98, and C99 are supported by multiple assays shown in Figure 6A-C. The inhibition efficiency of CBR-5884 is validated (Figure 6A). Cell viability and cytotoxicity assays demonstrate that macular cells are more susceptible to oxidative stress when PHGDH is inhibited (p=0.026 for viability, p<0.001 for cytotoxicity). The experimental design appropriately tests the role of serine biosynthesis in oxidative stress defense.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C102",
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "Macular M\u00fcller cells have significantly higher intracellular levels of both glutathione (GSH) and reactive oxygen species (ROS) than peripheral cells. Under mild oxidative stress (100 \u00b5M H2O2), peripheral cells show more pronounced GSH decrease and ROS elevation. Inhibition of PHGDH induces more significant GSH reduction in macular cells and increases ROS in both cell types, supporting that impaired serine synthesis affects ROS balance more in macular M\u00fcller cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11, C12, C77-C81, and C102-C105 are supported by flow cytometry analysis shown in Figure 6D-I. The baseline differences in GSH and ROS levels are statistically significant (p<0.001 for GSH, p=0.007 for ROS). The differential responses to PHGDH inhibition are well-documented with n=5 donors. However, the interpretation that higher baseline ROS in macular cells indicates greater oxidative stress requires caution, as ROS can also be signaling molecules.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C15",
+      "C100",
+      "C101",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C113",
+      "C115"
+    ],
+    "result": "The findings suggest dysregulation of serine biosynthesis as a potential cause of macular pathology, particularly macular telangiectasia type 2 (MacTel). PHGDH dysfunction has been implicated in MacTel pathogenesis, with decreased serum serine levels in patients. The disease affects the temporal parafovea with M\u00fcller cell loss matching luteal pigment depletion and is associated with Henle fibre layer pathology. The differences in serine biosynthesis between macular and peripheral M\u00fcller cells are consistent with the hypothesis that M\u00fcller cell metabolic dysfunction is the primary cause of MacTel.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C15, C100-C101, C106-C111, C113, and C115 involve speculation about disease mechanisms based on the experimental findings and cited literature. While the experimental data (C5-C13) support differential serine metabolism in macular vs. peripheral M\u00fcller cells, and the association with MacTel is supported by citations (Scerri et al., 2017; Powner et al., 2010), the causal link between PHGDH dysfunction and MacTel pathogenesis remains hypothetical. The study does not directly test MacTel patient samples or disease models. This represents a reasonable hypothesis requiring further validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C86",
+      "C87",
+      "C88",
+      "C90",
+      "C94",
+      "C116"
+    ],
+    "result": "Background knowledge claims about macular anatomy, susceptibility to disease, M\u00fcller cell functions, and prior findings on serine synthesis are established from cited literature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2, C16-C42, C86-C88, C90, C94, and C116 are appropriately cited from peer-reviewed literature (Sharon et al., 2002; Curcio and Allen, 1990; Curcio et al., 1990; Handa, 2012; Reichenbach and Bringmann, 2013; and others). These provide necessary context for the study. The citations appear appropriate and accurately represent the cited work based on the claims made.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C85",
+      "C114"
+    ],
+    "result": "The distinct transcriptional and functional differences between macular and peripheral M\u00fcller cells contribute to explaining the unique biochemical and metabolic specializations of the human macula.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85 and C114 represent reasonable inferences from the comprehensive experimental findings (morphological, transcriptomic, metabolic, and functional differences documented in C3-C92). The conclusion is appropriately qualified as 'contributing to explaining' rather than definitively proving causation. The data support that macular and peripheral M\u00fcller cells have distinct properties that may underlie regional specialization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C6",
+      "C117",
+      "C118"
+    ],
+    "result": "Methodological details: PHGDH is a rate-limiting enzyme in serine synthesis; a 5 mm diameter disk centered at the fovea was used to obtain macular tissue; mid-peripheral retina was defined as 4.5-7.5 mm from the fovea.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C117, and C118 describe established biochemical knowledge (PHGDH function) and methodological details that are clearly stated in the Materials and Methods section. The tissue sampling approach is appropriate and consistent with anatomical definitions of the macula (C116, citing Chopdar et al., 2003).",
+    "result_type": "MINOR"
+  }
+]

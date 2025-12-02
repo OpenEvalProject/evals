@@ -1,0 +1,1914 @@
+{
+  "submission": {
+    "id": "680862f1-1cdb-4ab5-8663-7149c9c6b714",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T06:39:29.099404Z",
+    "updated_at": "2025-12-02T06:39:29.099404Z"
+  },
+  "content": [
+    {
+      "id": "caeeacc5-1527-4b42-8bb7-8f235d857323",
+      "submission_id": "680862f1-1cdb-4ab5-8663-7149c9c6b714",
+      "content_type": "manuscript",
+      "content_text": "# Screening of candidate substrates and coupling ions of transporters by thermostability shift assays\n\n## Authors\n\n- Homa Majd<sup>1</sup> ([ORCID: 0000-0002-2048-1839](https://orcid.org/0000-0002-2048-1839))\n- Martin S King<sup>1</sup> ([ORCID: 0000-0001-6030-5154](https://orcid.org/0000-0001-6030-5154))\n- Shane M Palmer<sup>1</sup>\n- Anthony C Smith<sup>1</sup>\n- Liam DH Elbourne<sup>2</sup>\n- Ian T Paulsen<sup>2</sup>\n- David Sharples<sup>3</sup>\n- Peter JF Henderson<sup>3</sup> ([ORCID: 0000-0002-9187-0938](https://orcid.org/0000-0002-9187-0938))\n- Edmund RS Kunji<sup>1</sup> ([ORCID: 0000-0002-0610-4500](https://orcid.org/0000-0002-0610-4500)) \u2020\n\n### Affiliations\n\n1. Medical Research Council Mitochondrial Biology Unit University of Cambridge Cambridge United Kingdom\n2. Department of Molecular Sciences Macquarie University Sydney Australia\n3. Astbury Centre for Structural Molecular Biology University of Leeds Leeds United Kingdom\n4. School of Biomedical Sciences University of Leeds Leeds United Kingdom\n\n\u2020 Corresponding author\n\n## Abstract\n\nSubstrates of most transport proteins have not been identified, limiting our understanding of their role in physiology and disease. Traditional identification methods use transport assays with radioactive compounds, but they are technically challenging and many compounds are unavailable in radioactive form or are prohibitively expensive, precluding large-scale trials. Here, we present a high-throughput screening method that can identify candidate substrates from libraries of unlabeled compounds. The assay is based on the principle that transport proteins recognize substrates through specific interactions, which lead to enhanced stabilization of the transporter population in thermostability shift assays. Representatives of three different transporter (super)families were tested, which differ in structure as well as transport and ion coupling mechanisms. In each case, the substrates were identified correctly from a large set of chemically related compounds, including stereo-isoforms. In some cases, stabilization by substrate binding was enhanced further by ions, providing testable hypotheses on energy coupling mechanisms.\n\n## Introduction\n\nTransport proteins, also called transporters, porters, carriers, translocases or permeases, encompass a diverse and ubiquitous group of membrane proteins that facilitate the translocation of ions and molecules across all types of biological membranes, linking biochemical pathways, maintaining homeostasis and providing building blocks for growth and maintenance. They comprise 5\u201315% of the genomic complement in most organisms. Transport proteins are classified into four major groups: primary active transporters, secondary active transporters, facilitative transporters, and channels. Human solute transport proteins have been divided into 65 subfamilies (based on sequence alignments or experimentally determined substrate specificities), which transport a diverse range of compounds, including amino acids, sugars, nucleotides, lipids, vitamins, hormones, inorganic and organic ions, metals, xenobiotics and drugs (http://slc.bioparadigms.org/). Of the 538 identified solute transport proteins in humans, more than a quarter have no assigned substrate specificity (http://slc.bioparadigms.org/). Consequently, their role in human physiology is ill-defined and opportunities for drug intervention are missed (Hediger et al., 2013). Currently, about half of the transport proteins have been associated with human disease (Rask-Andersen et al., 2013; Hediger et al., 2013; Lin et al., 2015), but only 12 classes of drugs target them directly, despite their inherent \u2018druggability\u2019 (Hediger et al., 2013; Lin et al., 2015; C\u00e9sar-Razquin et al., 2015; Fauman et al., 2011). The situation is not better in other eukaryotic organisms and bacterial pathogens, currently on the WHO list (Supplementary file 1) (Elbourne et al., 2017). For most transporters in the sequence databases, the identifications are preliminary because they are based only on sequence homology without direct experimental evidence for the substrates, even though single amino acid residue variations in the substrate binding site can alter the specificity profoundly. Moreover, the substrate specificities of some transporters may have been incompletely or incorrectly assigned. Finally, there could be membrane proteins with unassigned function that belong to unidentified transporter families, which are not counted at all.\n\nOne of the major challenges is to find the correct substrates from a large number of potential candidates. There are approximately\u00a0~3,000 metabolites in Escherichia coli (Sajed et al., 2016),\u00a0~16,000 in Saccharomyces cerevisiae (Ramirez-Gaona et al., 2017),\u00a0~40,000 in Homo sapiens (Wishart et al., 2013), and plants must have even more as they carry out an extensive secondary metabolism. Some metabolites, such as vitamin B6, have several interconvertible species, each of which could be transported. The classical method to identify transport proteins monitors the accumulation of radiolabeled compounds in whole cells, membrane vesicles or proteoliposomes. However, these experiments can easily fail when the expressed transporters are not active due to targeting, insertion or folding issues, when they are unstable in purification and reconstitution experiments, or when substrate and coupling ion gradients are not setup correctly. Moreover, some compounds are not available in radioactive form or are prohibitively expensive, preventing large-scale identification trials. Given all these technical difficulties, it is often necessary to limit the number of candidate substrates first by using phylogenetic analysis, by analyzing phenotypic (patho)physiological data, by complementation studies or by metabolic analysis of knock-out or mutant strains.\n\nTherefore, there is an unmet demand for the development of new methods to limit the number of potential substrates for identification of solute carriers. Here, we present a high-throughput screening method for the identification of substrates of transporters, which does not require radioactive compounds or prior knowledge. The method uses the simple concept that transporters recognize their substrates through specific interactions, enhancing their stabilization in thermostability shift assays. We verify the approach by defining the substrate specificity of three solute carriers from different bacterial and eukaryotic protein families and show that these experiments also provide valuable clues about the ion coupling mechanism.\n\n## Results\n\n### Principle of the method\n\nLigands, such as substrates or inhibitors, are recognized by transport proteins through specific interactions at the exclusion of other molecules. The formation of these additional bonds leads to an increase in the total number of interactions (Robinson and Kunji, 2006; Yan, 2017; Yamashita et al., 2005). Consequently, binding leads to an overall increase in the stability of the ligand-bound species compared to the unliganded species in the population of protein molecules. We have previously shown that the mitochondrial ADP/ATP carrier (AAC) from the thermophilic fungus Thermothelomyces thermophila (UniProt G2QNH0) when purified in dodecyl-maltoside is stabilized upon binding of its specific inhibitors carboxyatractyloside and bongkrekic acid in thermostability shift assays using the thiol-reactive fluorophore N-[4-(7-diethylamino-4-methyl-3-coumarinyl)-phenyl]-maleimide (CPM) (Crichton et al., 2015; King et al., 2016). In the assay, the apparent melting temperature Tm of a population of purified transporters is determined by monitoring the increase in fluorescence by CPM reacting with thiols that have become exposed due to thermal denaturation of the proteins (Figure 1a). The apparent melting temperature Tm is the temperature at which the rate of unfolding for a given population is highest. We tested whether transported substrates can also cause a shift in thermostability, as their properties differ quite substantially from those of inhibitors or other tight binders. Indeed, the thermostability of the AAC population was enhanced in the presence of ADP and ATP, but not in the presence of AMP, which reflects the known substrate specificity of the carrier well (Mifsud et al., 2013) (Figure 1b). This effect is only observed at high concentrations of the substrate, well above the apparent Km of transport (Figure 1\u2014figure supplement 1). The higher the substrate concentration, the higher the likelihood that part of the population is prevented from unfolding by binding of the substrate, leading to the observed shift in thermostability. We reasoned that this approach could be applied as a screening method to find substrate candidates of uncharacterized transporters by using compound libraries. To verify the method, we have tested transporters from three different (super)families, which are distinct in structure and transport mechanism.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/38821/elife-38821-fig1-v2.jpg)\n\n**Figure 1.:** (a) As protein molecules in a population unfold due to a gradual rise in temperature (25\u201390\u00b0C), buried cysteine residues become solvent-exposed and accessible to the thiol-specific probe CPM (blue stick representation) that becomes fluorescent upon reaction. (b) Typical unfolding curves of the mitochondrial ADP/ATP carrier of Thermothelomyces thermophila (2 \u03bcg) in the absence and presence of 2.5 mM AMP, ADP and ATP, shown in red, blue and green, respectively. (c) The apparent melting temperature (Tm) is the peak in the derivative of the unfolding curve (dF/dT), which is used as an indicator of thermal stability. The apparent melting temperatures reported in the text are from three independent protein purifications.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/38821/elife-38821-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** The substrate concentration-dependency of the apparent melting temperature of purified mitochondrial ADP/ATP carrier. The apparent melting temperature (Tm) was determined from the peak in the derivative of the unfolding curve for different concentrations of AMP, ADP, and ATP in 20 mM HEPES pH 8.0, 100 mM NaCl, 0.1% dodecyl-maltoside, 0.1 mg ml\u22121 tetraoleoyl cardiolipin. The data are represented by the average and standard deviation of three biological repeats for ADP and ATP, and five biological repeats for AMP.\n\n### Substrates cause specific thermostability shifts in different transporters\n\nThe galactose transporter GalP of E. coli (Henderson, 1977) is a prototypical member of the sugar porter family that belongs to the major facilitator superfamily (MFS) (Pao et al., 1998). Currently, the MFS contains 24 different transporter families and 320,665 sequence entries from 5224 species, but the substrates for the vast majority of them have not been formally identified (Pfam CL0015). In humans, 14 of the 65 solute carrier families belong to the MFS, and substrates are not known for around 12% of them (http://slc.bioparadigms.org/).\n\nThe structure of GalP has not been determined, but those of its mammalian homologs GLUT1 (Deng et al., 2014), GLUT3 (Deng et al., 2015), and GLUT5 (Nomura et al., 2015) are available (Figure 2a). GalP contains three cysteine residues, of which only one is readily accessible to reaction with N-ethylmaleimide (McDonald and Henderson, 2001). To evaluate the strategy, we measured the unfolding curves of purified GalP in dodecyl-maltoside in the presence of a large number of different sugars. We determined the temperature shift by subtracting the apparent Tm of unliganded GalP (57.6 \u00b1 0.3\u00b0C) from the apparent Tm values observed in the presence of compounds (\u0394Tm). The GalP population was markedly stabilized by D-glucosamine (\u0394Tm; 5.7 \u00b1 0.4\u00b0C), D-glucose (\u0394Tm; 4.2 \u00b1 0.5\u00b0C), D-galactose (\u0394Tm; 2.1 \u00b1 0.6\u00b0C) (Figure 2\u2014figure supplement 1), and to a lesser extent by D-talose, 2-deoxy-D-glucose, 6-deoxy-D-glucose. Importantly, the related L-isoforms showed no significant shift (Figure 2b). These results match the known substrate specificity of GalP well (Henderson and Maiden, 1990; Walmsley et al., 1994). D-Glucosamine, the most stabilizing compound, had not been investigated previously, but transport assays showed that this compound is a new substrate (Figure 2\u2014figure supplement 2), demonstrating that the assay can be used to discover as well as to extend the substrate specificity of transport proteins.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/38821/elife-38821-fig2-v2.jpg)\n\n**Figure 2.:** (a), (c) and (e) Structural models of GalP (based on GLUT5, PDB 4YBQ), Mhp1 (PDB 2JLN) and AAC (based on Aac2p, PDB 4C9G), respectively. The models are shown in rainbow cartoon and wheat surface representations. Cysteine residues are shown as spheres, except for Cys-19 of GalP, which could not be modeled. (b), (d) and (f) Thermostability screen of GalP (3 \u03bcg), Mhp1 (3 \u03bcg) and AAC (2 \u03bcg) against sugar (50 mM final concentration), nucleobase (2 mM) and nucleotide libraries (2.5 mM), respectively. The temperature shift (\u0394Tm) is the apparent melting temperature in the presence of compound minus the apparent melting temperature in the absence of compound. The data are represented by the standard deviation of five, three and three independent repeats, respectively. Two-tailed Student\u2019s t-tests assuming unequal variances were performed for the significance analysis (0.05\u00a0<\u00a0p-value: not significant; 0.01\u00a0<\u00a0p-value<0.05: *; 0.001\u00a0<\u00a0p-value<0.01: **; 0.0001\u00a0<\u00a0p-value<0.001: ***; p-value<0.0001: ****). L-BH, 5-benzyl-L-hydantoin; BVH, 5-bromovinylhydantoin; L-IMH, 5-indolylmethyl-L-hydantoin, L-NMH 5- (2-naphthylmethyl)-L-hydantoin.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/38821/elife-38821-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** Typical thermostability profiles of purified GalP (top) and their derivatives (dF/dT; bottom) in the absence and presence of stabilizing substrates D-galactose (red trace), D-glucose (blue trace) and D-glucosamine (green trace), which was also causing a significant shift. The apparent melting temperature (Tm) is the peak in the derivative of the unfolding curve (dF/dT) and is indicated for each curve. For each reaction, 2.5 \u03bcg purified protein was assayed in the presence of 50 mM compound. The apparent melting temperature reported in the text is from five independent protein purifications.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/38821/elife-38821-fig2-figsupp2-v2.jpg)\n\n**Figure 2\u2014figure supplement 2.:** Transport assays with [14C]-labeled D-glucosamine in whole cells of the GalP-expressing plasmid pGP1 in the host E. coli strain JM1100 (open circles) and control JM1100 without plasmid (closed circles). Transport in (a) the absence or (b) presence of 4000-fold excess of unlabeled D-galactose. The data are represented by the average and standard deviation of four technical repeats.\n\n![Figure 2\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/38821/elife-38821-fig2-figsupp3-v2.jpg)\n\n**Figure 2\u2014figure supplement 3.:** Typical thermostability profiles of purified Mhp1 (top) and their derivatives (dF/dT; bottom) in the absence or presence of stabilizing compounds 5-benzyl-L-hydantoin (L-BH, red trace), 5-indolylmethyl-L-hydantoin (L-IMH, blue trace), 5-(2-naphthylmethyl)-L-hydantoin (L-NMH, green trace) and 5-bromovinylhydantoin (BVH, orange trace). The apparent melting temperature (Tm) is the peak in the derivative of the unfolding curve (dF/dT) and is indicated for each curve. For each reaction, 2.5 \u03bcg purified protein was assayed in the presence of 140 mM NaCl and 2 mM compound in buffer containing 10 mM Tris-HCl pH 8.0, 2.5% glycerol and 0.05% dodecyl-maltoside. The apparent melting temperature reported in the text is from three independent protein purifications.\n\n![Figure 2\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/38821/elife-38821-fig2-figsupp4-v2.jpg)\n\n**Figure 2\u2014figure supplement 4.:** Purified ADP/ATP carrier in dodecyl-maltoside was separately mixed with 2.5 mM of library compounds in 20 mM HEPES pH 8.0, 100 mM NaCl, 0.1% dodecyl-maltoside, 0.1 mg ml\u22121 tetraoleoyl cardiolipin and subjected to a melting regime. The shifts in the apparent Tm were recorded and are shown as bars. The data are represented by the average and standard deviation of three independent assays. The significance tests were carried out as in Figure 2.\n\nThe transport protein Mhp1 from Microbacterium liquefaciens (Uniprot D6R8X8) transports 5-substituted hydantoins in a sodium-coupled mechanism (Suzuki and Henderson, 2006; Shimamura et al., 2010) (Figure 2c), and is a member of the nucleobase-cation-symport family of homologous proteins that also transport purines, pyrimidines, vitamins and related metabolites. The transporter has the LeuT-fold (Shimamura et al., 2010; Yamashita et al., 2005) and belongs to the amino acid-polyamine-organocation superfamily (V\u00e4stermark and Saier, 2014), which currently contains 20 families and 147,819 sequence entries, the substrates of which have mostly not been identified (Pfam CL0062). Mhp1 contains three cysteine residues, of which only one is readily accessible to reaction with N-ethylmaleimide (Calabrese et al., 2017). Purified Mhp1 in dodecyl-maltoside had an apparent Tm of 51.3\u00b0C\u00a0\u00b1\u00a00.6\u00b0C and to test the binding specificity, the \u0394Tm was determined upon addition of different nucleobases and other compounds (Figure 2d). The only stabilizing compounds were 5-indolylmethyl-L-hydantoin (\u0394Tm; 14.1 \u00b1 1.2\u00b0C), 5-benzyl-L-hydantoin (\u0394Tm; 13.6 \u00b1 1.2\u00b0C) and 5-bromovinylhydantoin (\u0394Tm; 11.9 \u00b1 1.1\u00b0C) (Figure 2\u2014figure supplement 3). A chemically related inhibitor of Mhp1, 5-(2-naphthylmethyl)-L-hydantoin (L-NMH) also led to a thermostability shift (\u0394Tm; 15.6 \u00b1 1.7\u00b0C) (Figure 2d). These results match the known substrate and inhibitor specificity of Mhp1 (Simmons et al., 2014), showing that the assay could identify substrates from a set of closely related compounds without false positives.\n\nTo validate the method further, we also screened the mitochondrial ADP/ATP carrier from T. thermophila (UniProt G2QNH0) (King et al., 2016) (Figure 2e). This transport protein belongs to the mitochondrial carrier family (MCF), which is involved in the translocation of chemically diverse compounds across the mitochondrial inner membrane, using uniport, symport or antiport modes of transport (Kunji, 2012). Currently, there are 89,340 different sequence entries from 831 different species in the database (Pfam PF00153). In humans, the MCF is the largest solute carrier family with 53 different members (SLC25), but the substrate specificity of only half of them has been defined (Kunji, 2012). We screened the thermostability of purified AAC using a library of mitochondrial compounds (Figure 2\u2014figure supplement 4). In the presence of ATP, ADP, and dADP the population was stabilized, showing \u0394Tm values of 7.2\u00a0\u00b1\u00a00.2, 6.0\u00a0\u00b1\u00a00.5 and 1.8 \u00b1 0.2\u00b0C, respectively (Figures 1b and 2f). Some other compounds, mostly structurally related nucleotides, also stabilized the protein, but with significantly smaller shifts (Figure 2f). For each type of nucleotide, the di- and tri-phosphate species showed larger shifts than the monophosphate forms, similar to the preference of ATP and ADP over AMP (Figures 1d and 2f), showing that the assay can also identify functional groups that are important contributors to substrate binding.\n\n### Substrate screening of a mitochondrial carrier from Tetrahymena thermophila\n\nTo see whether this method can be used to identify candidate substrates for a previously uncharacterized transporter, we performed a high-throughput screen on a purified mitochondrial carrier from the thermophilic ciliate Tetrahymena thermophila (UniProt I7M3J0). The carrier is phylogenetically related to the yeast mitochondrial carrier that transports inorganic phosphate in symport with a proton into the mitochondrial matrix for ATP synthesis (Runswick et al., 1987), but its substrates have not been identified experimentally. The population of carriers had an apparent Tm of 56.0 \u00b1 0.8\u00b0C and was screened against a library of 132 different mitochondrial compounds at pH 6.0 (Figure 3). The highest shift in the Tm of the population was observed for phosphate (\u0394Tm; 4.6 \u00b1 0.4\u00b0C), followed by glyoxylate (\u0394Tm; 3.6 \u00b1 0.8\u00b0C), acetyl-phosphate (\u0394Tm; 3.2 \u00b1 0.5\u00b0C) and phosphoenolpyruvate (\u0394Tm; 2.3 \u00b1 0.2\u00b0C) (Figure 3\u2014figure supplement 1), whereas small shifts were observed for nucleotides. These compounds either contain phosphate as a functional group or resemble the structure of phosphate, such as glyoxylate (Figure 3\u2014figure supplement 2). Thus, this assay can be used to narrow down substantially the number of potential substrate candidates from a library of unlabeled compounds. Uptake assays using protein reconstituted into proteoliposomes confirmed that the mitochondrial carrier exchanges phosphate (Figure 3\u2014figure supplement 3a). We also tested whether glyoxylate, phosphoenolpyruvate and acetyl phosphate, which also gave a shift in thermostability assays, were transported, but none of them did (Figure 3\u2014figure supplement 3b). However, in competition assays glyoxylate abolished uptake, demonstrating that it competes effectively with [33P]-orthophosphate for binding when present in a 1000-fold excess (Figure 3\u2014figure supplement 3c).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/38821/elife-38821-fig3-v2.jpg)\n\n**Figure 3.:** Purified carrier (1 \u03bcg) in lauryl maltose neopentyl glycol was incubated at pH 6.0 with 2.5 mM of each library compound separately and the \u0394Tm was determined, which is the difference between the apparent melting temperatures in the presence and absence of the tested compound. The data are represented by the average and standard deviation of three independent assays. The significance tests were performed as described in the legend to Figure 2.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/38821/elife-38821-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** Typical thermostability curves of purified phosphate carrier (top) and their derivatives (dF/dT; bottom) in the absence and presence of stabilizing compounds phosphate (red trace), glyoxylate (blue trace), acetyl-phosphate (green trace) and phosphoenolpyruvate (PEP,\u00a0orange trace). The apparent melting temperature (Tm) is the peak in the derivative of the unfolding curve (dF/dT) and is indicated for each curve. For each reaction, 2 \u03bcg purified protein was assayed in the presence of 2.5 mM compound in 20 mM MES pH 6.0, 100 mM NaCl, 0.1% lauryl maltose neopentyl glycol, 0.1 mg ml\u22121 tetraoleoyl cardiolipin. The apparent melting temperatures reported in the text are from three independent protein purifications.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/38821/elife-38821-fig3-figsupp2-v2.jpg)\n\n![Figure 3\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/38821/elife-38821-fig3-figsupp3-v2.jpg)\n\n**Figure 3\u2014figure supplement 3.:** (A) Transport assays were initiated by the addition of 20 \u03bcM. [33P]-labeled orthophosphate in proteoliposomes with reconstituted carrier in the absence of internal orthophosphate (triangles) or the presence of 20 mM internal orthophosphate (circles), and a control with liposomes without reconstituted protein (squares). (B) Proteoliposomes were loaded with 20 mM compound (as indicated), and transport was initiated by the addition of 20 \u03bcM [33P]-labeled orthophosphate. (C) Competition experiments in which uptake was assayed in the presence of 20 mM external unlabeled compound (1,000-fold excess). All data are represented by the average and the standard deviation of four technical repeats, except for [33P]-orthophosphate/orthophosphate homoexchange, which is represented by the average and the standard deviation of two biological repeats, each with four technical repeats (n\u00a0=\u00a08). PEP; phosphoenolpyruvate.\n\n### The effect of coupling ions\n\nSecondary active transporters are widespread and often use the electrochemical gradient of protons or other ions to drive the uptake of substrates against their concentration gradient. Coupling ions are also recognized by transporters through specific interactions, often directly associated with the binding of substrates (Kunji and Robinson, 2010; Krishnamurthy et al., 2009).\n\n5-Benzyl-L-hydantoin is transported by Mhp1 in symport with sodium ions (Suzuki and Henderson, 2006; Shimamura et al., 2010) and thus, we tested whether the temperature shifts of Mhp1 induced by substrate binding were ion-dependent. When different ions were tested, only sodium ions induced a large substrate stabilization, whereas relatively small stabilizations were observed in the presence of potassium, calcium and magnesium ions (Figure 4a).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/38821/elife-38821-fig4-v2.jpg)\n\n**Figure 4.:** (a) Thermostability shifts of Mhp1 (3 \u03bcg) induced by binding of hydantoins in the presence of 140 mM NaCl, KCl, CaCl2 and MgCl2. L-BH: 5-benzyl-L-hydantoin, BVH: 5-bromovinylhydantoin, L-IMH: 5-indolmethyl-L-hydantoin. (b) Thermostability shifts of the phosphate carrier (1 \u03bcg) induced by binding of 2.5 mM phosphate-containing compounds at pH 6.0 and 8.0. Acetyl-Pi: acetyl-phosphate, Pi: phosphate. (c) Thermostability shifts of the (2 \u03bcg) induced by 2.5 mM ADP and ATP binding at pH 6.0 and 8.0, using AMP as control.\n\nMitochondrial phosphate carriers are proton-driven, coupling phosphate translocation to proton symport (Kunji and Robinson, 2010). To investigate whether proton-dependency of substrate binding could be inferred from the assay, the shift in thermal stability by substrate binding was determined at pH 6.0 and 8.0. The pH can affect the reaction of maleimide groups of CPM with free thiols and the stability of the protein itself, but the \u0394Tm value shows the effect of pH on substrate binding only. In both cases, a substrate-induced stabilization was observed, but the effect was larger in pH 6.0 than in pH 8.0 (\u0394Tm\u00a04.6 \u00b1 0.4\u00b0C and 2.6 \u00b1 0.4\u00b0C, respectively) (Figure 4b).\n\nAs a control, we carried out the same experiment with the mitochondrial ADP/ATP carrier, which is not a proton symporter (Figure 4c). The opposite effect was observed; substrate binding at pH 8.0 led to a bigger thermostability shift than at pH 6.0. The predicted substrate-binding site of AAC has three positively charged residues that interact with the negatively charged phosphate groups of ADP and ATP (Kunji and Robinson, 2006; Robinson and Kunji, 2006). ATP has pKa values of 0.9, 1.5, 2.3 and 7.7, whereas ADP has pKa values 0.9, 2.8 and 6.8. This means that the substrates are more negatively charged at pH 8.0 compared to pH 6.0, which will enhance their binding to the positively charged residues of the substrate binding site, leading to an increase in thermostability. In the case of the phosphate carrier, the situation is very different. Phosphate has pKa values of 2.2, 7.2 and 12.3, and the predicted binding site contains two positively charged residues to neutralize the two negative charges on phosphate. However, in addition, the binding site contains a negatively charged glutamate, which has a pKa of\u00a0~4.0. The coupling proton mediates bonding of the substrate and the carboxyl group of the glutamate residue (Kunji and Robinson, 2010), which occurs more readily at pH 6.0 than pH 8.0, explaining the difference in thermostability. In support of this notion the transport rates of the phosphate carrier are high at pH 6.0 and virtually absent at pH 8.0 (Stappen and Kr\u00e4mer, 1994). These results show that substrate binding stabilizes the transporters, but that this effect is enhanced further by the presence of coupling ions, providing testable hypotheses on energy coupling mechanisms.\n\n## Discussion\n\nWe have shown that thermostability assays can be used to study the interaction of substrates with transporters, which is not intuitive, as substrates only bind transiently. Still, for diverse types of transport proteins, which differ in structure and transport mechanism, a shift in thermostability was observed in the presence of specific substrates. The shift is observed at concentrations well above the apparent Km of transport, as under these conditions a larger part of the protein population is rescued from unfolding by binding of the substrate, increasing the overall number of interactions.\n\nThese studies highlight the different contributions that\u00a0these assays can make to studying the properties of transport proteins. First, they can be used to limit the number of potential substrate candidates from libraries of unlabeled compounds, providing important clues about the substrate specificity (Figures 2 and 3). In the tested cases, the assay correctly identified the substrates from a set of chemically related compounds, including stereo-isoforms. Still, these candidates need to be tested by transport or other types of assays, as the compounds could potentially be inhibitors, competitors or regulators. However, no prior knowledge is required and the number of radioactive compounds that need testing is highly reduced, meaning that it is easier and cheaper to establish a robust transport assay. Second, the assays can be used to extend the substrate specificity of known transport proteins, as was shown for GalP with D-glucosamine (Figure 2b). Third, they can be used to identify functional groups that are key to substrate binding, as shown for AAC, where nucleotide di- and tri-phosphates bound more tightly than nucleotide monophosphates (Figure 2f). In the case of mitochondrial phosphate carriers, the common properties of compounds, such as the phosphate group, may lead directly to the most probable candidates. Fourth, this assay can provide important clues on the involvement of coupling ions in substrate binding, as shown for cases where transport is driven by sodium ion or proton symport (Figure 4).\n\nThis method has major advantages over the traditional methods of identification. It is highly reproducible and can be performed in a high-throughput manner, allowing screening of about 100 compounds per machine per hour. The assay requires a relatively small amount of protein per assay (micrograms), depending on the number of buried cysteine residues. Another advantage is that the unfolding curves are themselves important quality checks, as they indicate that the protein is folded and therefore competent to bind substrate. Compounds which are poorly soluble in water can be added dissolved in dimethyl sulfoxide, provided that the final concentration of the solvent is kept low. Another advantage is that most compounds of the library can be used as internal controls, providing a reliable discrimination between positive and negative results. Furthermore, generic stabilizing and destabilizing compounds can be identified as more proteins of the same family are tested. For example, the polyamines spermine and spermidine have a destabilising effect on all purified mitochondrial carriers tested in our laboratory with the exception of AAC. These observations will reduce false positives for members of the same protein family. We have also observed that proteins incorporated into nanodiscs or amphipols can be successfully assayed using this approach, which is potentially useful for membrane proteins that are unstable in detergents.\n\nThere are also some limitations, as only proteins that have buried thiols can be used, although accessible cysteines can be tolerated as they only raise the base line of the assay without interfering with the unfolding curve. Thiol-containing compounds, such as cysteine or glutathione, cannot be screened as the probe reacts with them directly. However, changes in the fluorescence of environmentally\u00a0sensitive dyes or endogenous tryptophans can be used as alternatives to CPM. Furthermore, the assay requires purified and stable transporter in detergent, although partially purified protein might be sufficient. Advances in bacterial (King et al., 2016; Ward et al., 1999), yeast (Routledge et al., 2016), insect (Contreras-G\u00f3mez et al., 2014), and mammalian (Goehring et al., 2014; Andr\u00e9ll and Tate, 2013) expression systems have allowed many transporters to be expressed in folded and functional states. Also, robust purification methods and novel classes of \u2018stabilizing\u2019 detergents, such as the neopentyl glycol maltoside detergents (Chae et al., 2010), have allowed even poorly expressed transporters to be purified in the small quantities required for these studies.\n\nEven though the main purpose of this study was to identify potential substrates of transporters, the assays may also be used in drug discovery or in the identification of substrates, inhibitors and regulators of any other soluble or membrane proteins with occluded cysteines.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Dodecyl-\u03b2-D-maltoside</td>\n      <td>Glycon Biochemicals GmbH</td>\n      <td>Glycon:D97002</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Dodecyl maltose neopentyl glycol</td>\n      <td>Anatrace</td>\n      <td>Anatrace:NG310</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>N-[4-(7-diethylamino-4-methyl-3- coumarinyl)phenyl] maleimide (CPM)</td>\n      <td>Sigma</td>\n      <td>Sigma:C1484</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Complete Mini EDTA-free protease inhibitor tablets</td>\n      <td>Roche</td>\n      <td>Roche:5056489001</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Nickel Sepharose (High Performance)</td>\n      <td>GE Healthcare</td>\n      <td>GE Healthcare:17526802</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Nickel-NTA Superflow</td>\n      <td>Qiagen</td>\n      <td>Qiagen:30430</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Factor Xa protease</td>\n      <td>NEB</td>\n      <td>NEB:P8010L</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Tetraoleoyl cardiolipin (TOCL)</td>\n      <td>Avanti Polar Lipids</td>\n      <td>Avanti Polar Lipids:710335C</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>E. coli polar lipid extract</td>\n      <td>Avanti Polar Lipids</td>\n      <td>Avanti Polar Lipids:100600C</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>[14C]-galactose</td>\n      <td>American Radiolabeled Chemicals</td>\n      <td>American Radiolabeled Chemicals:ARC0117</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>[14C]-glucosamine</td>\n      <td>American Radiolabeled Chemicals</td>\n      <td>American Radiolabeled Chemicals:ARC0118A</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>[33P]-orthophosphate</td>\n      <td>Hartmann Analytic</td>\n      <td>Hartmann Analytic:FF-01</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>BioBeads</td>\n      <td>BioRad</td>\n      <td>BioRad:152\u20133920</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>C10E5</td>\n      <td>Sigma</td>\n      <td>Sigma:76436</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Hydantoin compounds</td>\n      <td>Other</td>\n      <td></td>\n      <td>A gift from Marta Sans, Maria Kokkinidou and Arwen Pearson, University of Hamburg</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Prism</td>\n      <td>GraphPad</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (S. cerevisiae)</td>\n      <td>Saccharomyces cerevisiae W303-1B</td>\n      <td>ATCC</td>\n      <td>ATTC:201238</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (S. cerevisiae)</td>\n      <td>Saccharomyces cerevisiae WB12</td>\n      <td>PMID:9878703</td>\n      <td></td>\n      <td>A gift from Dr H. Terada, Tokyo University of Science</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (E. coli)</td>\n      <td>Escherichia coli JM1100</td>\n      <td>PMID:15558</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Recombinant \u00a0DNA reagent</td>\n      <td>Modified pYES3 vector</td>\n      <td>PMID:26453935</td>\n      <td></td>\n      <td></td>\n    </tr>\n  </tbody>\n</table>\n\nAn additional key resources table is presented in Supplementary file 2, and details the compounds in the libraries.\n\n### Materials\n\nChemicals were obtained from Sigma Aldrich and Thermo Fisher Scientific (USA). Nickel NTA and sepharose beads were purchased from Qiagen (USA). All enzymes were provided by New England BioLabs (USA). Lipids were purchased from Avanti Polar Lipids (USA) and detergents from Anatrace (USA). The hydantoin compounds were a kind gift of Marta Sans, Maria Kokkinidou and Arwen Pearson (University of Hamburg).\n\n### Protein expression\n\nFor expression of mitochondrial ADP/ATP carrier of Thermothelomyces thermophila and the putative phosphate carrier of Tetrahymena thermophila in yeast mitochondria, gene constructs were designed to contain an N-terminal tag composed of eight histidine residues followed by a Thr-Ser-Glu-Asp linker and an Ile-Glu-Gly-Arg Factor Xa protease cleavage site. The genes were cloned into pYES3/CT vector (Invitrogen, USA) with a constitutively active promoter (pMIR promoter of the S. cerevisiae phosphate carrier). The plasmids were transformed into S. cerevisiae WB.12 (MAT\u03b1 ade2-1 trp1-1 ura3-1 can1-100 aac1::LEU2 aac2::HIS3) and W303-1B (MAT\u03b1 leu2-3,112 trp1-1 can1-100 ura3-1 ade2-1 his3-11,15) strains, respectively. Cells were grown in a 50-l fermenter after which mitochondria were prepared (Kunji and Harding, 2003).\n\nFor expression of GalP in E. coli the promoter region and the galP gene, which was modified to encode six histidine residues at the C-terminus of the protein, were cloned into plasmid pBR322 to form plasmid pGP1, which was transformed into the galactose/glucose transport-deficient host strain JM1100 (ptsG ptsM ptsF mgl galP Hfr \u0394his gnd thyA galK) (Henderson et al., 1977). Cells were grown in basal salts medium supplemented with 30 mM glycerol, 20 \u00b5g/ml thymine, 80 \u00b5g/ml histidine and 15 \u00b5g/ml tetracycline in a fermenter (30- or 100-liter scale). The gene hyuP from M. liquefaciens, modified to encode six histidine residues at the C-terminus, was cloned into plasmid pTTQ18 (Stark, 1987; Suzuki and Henderson, 2006). The His6-tagged Mhp1 hydantoin transport protein was expressed in E. coli BL21 (DE3) grown in M9 medium supplemented with 20 mM glycerol, 20 mM NH4Cl, 100 \u03bcg/ml of carbenicillin, 0.2% w/v casamino acids, 2 mM MgSO4.7H2O, 0.4 mM CaCl2.2H2O, using induction by IPTG in 100-l fermenter cultures. In all cases after harvesting the intact cells preparations were made of inner membranes (Ward et al., 1999), which were stored at \u221280\u00b0C in Tris-HCl buffer pH 7.5 until used for purification of each individual protein.\n\n### Protein purification\n\nThe mitochondrial ADP/ATP carrier and phosphate carrier were purified using the detergents dodecyl-maltoside and lauryl maltose neopentyl glycol, respectively, using established procedures (King et al., 2016).\n\nFor the purification of His-tagged GalP, E. coli membranes were solubilized in buffer containing 20 mM Tris-HCl pH 8, 20 mM imidazole, 300 mM NaCl, 20% glycerol and 1% dodecyl-maltoside for 1 hr at 4\u00b0C with gentle mixing to a final protein concentration of 2.5 mg/ml. After centrifugation (108,000 x g, 1 hr, 4\u00b0C), the supernatant was mixed with pre-washed nickel-NTA resin and purified by immobilized nickel affinity chromatography (1 ml resin per 37 mg of total protein; Superflow, Qiagen) for batch-binding affinity chromatography for 1 hr at 4\u00b0C. Non-specific proteins were removed with buffer containing 20 mM Tris-HCl pH 8, 20 mM imidazole, 150 mM NaCl, 10% glycerol and 0.02% dodecyl-maltoside, after which His-tagged GalP was eluted with buffer containing 20 mM Tris-HCl pH 8, 200 mM imidazole, 100 mM NaCl, 5% glycerol and 0.02% dodecyl-maltoside. Imidazole was then removed by passing the sample through pre-equilibrated PD-10 desalting column (GE Healthcare). Protein samples were snap-frozen and stored in liquid nitrogen.\n\nThe purification of Mhp1 followed the same procedure as the GalP purification with the following modifications. Membranes were solubilized for 2 hr and incubated with Nickel NTA resin for 2 hr. The wash buffer contained 10 mM Tris-HCl pH 8, 20 mM imidazole, 10% glycerol and 0.05% dodecyl-maltoside and the elution buffer contained 10 mM Tris-HCl pH 8, 200 mM imidazole, 2.5% glycerol and 0.05% dodecyl-maltoside.\n\n### Reconstitution\n\nTwelve milligrams of total polar lipid extract (Avanti Polar Lipids, Alabaster) was dried under a stream of nitrogen, washed with methanol, and dried as before. Lipids were re-hydrated in 20 mM MES pH 6.5, 50 mM NaCl and, when required, compound was added to a final concentration of 20 mM from a 200 mM stock. Lipids were solubilised by vortexing in the presence of 1.5% (v/v) pentaethylene glycol monodecyl ether, and 50 \u03bcg protein was added. The samples were incubated on ice for 5 min, and pentaethylene glycol monodecyl was removed to form liposomes by addition of bio-beads (Bio-Rad, Hemel Hempstead, UK). Eight additions of bio-beads were made to the sample: the first four used 60 mg, and the final four used 120 mg. Between additions, the samples were incubated with inversion at 4\u02daC for 20 min. Following the final bio-bead addition, the samples were incubated overnight at 4\u02daC with inversion. Bio-beads were removed by passage of the sample through empty micro-bio spin columns (Bio-Rad, Hemel Hempstead, UK). The external buffer was replaced with 20 mM MES pH 6.5, 50 mM NaCl using a PD10 desalting column (GE Healthcare, Little Chalfont, UK). When required, competitors were added externally to a final concentration of 20 mM.\n\n### Transport assays\n\nRobotic transport assays were performed using a Hamilton MicroLab Star robot (Hamilton Robotics Ltd, UK). For GalP transport assays, E. coli cells (GalP-expressing strain pGP1/JM1100 and JM1100 control strains) were diluted to OD600 of 20 in MES buffer (5 mM MES pH 6.6, 150 mM KCl) and incubated at room temperature with 20 mM glycerol for 10 min to be energized prior to being loaded into the wells of a MultiScreenHTS\u00a0+Hi Flow-FB (pore size\u00a0=\u00a01.0 \u03bcm, Millipore). Transport assays were initiated by addition of 100 \u03bcl of buffer containing 5 \u03bcM [14C]-galactose (American Radiolabeled Chemicals, 0.2 GBq/mmol) or 5 \u03bcM [14C]-glucosamine (American Radiolabeled Chemicals, 0.2 GBq/mmol). For the competition assay, radiolabeled substrate was mixed with a 4000-fold excess of the competitor compound prior to the assay. For phosphate transport assays, 100 \u03bcl proteoliposomes were loaded into a MultiScreenHTS-HA 96-well filter plate (pore size, 0.45 \u00b5m; Millipore, Billerica), and transport was initiated by the addition of 100 \u03bcl of buffer containing 20 \u03bcM [33P]-orthophosphate (Hartmann Analytic, 0.5 GBq/mmol). For competition assays, transport was initiated in the presence of 20 mM compound (1000-fold excess). Transport was stopped after 0, 10, 20, 30, 45, 60, 150 s and, 5, 7.5 and 10 min incubation times with 200 \u03bcl ice-cold buffer and the samples were filtered and washed as above. Levels of radioactivity were measured by adding 200 \u03bcl MicroScint-20 (Perkin Elmer) and measured with a TopCount scintillation counter (Perkin Elmer). Initial rates were determined from the linear part of the uptake curves.\n\n### Preparation of the mitochondrial compound library\n\nTo identify mitochondrial metabolites every enzyme in the KEGG metabolic database (Kanehisa et al., 2017) was evaluated for mitochondrial localization using the MitoMiner database of mitochondrial localization evidence (Smith and Robinson, 2016). A wide range of data were considered including large-scale experimental evidence from GFP tagging and mass-spectrometry of mitochondrial fractions, mitochondrial targeting sequence predictions, immunofluorescent staining from the Human Protein Atlas (Thul et al., 2017), and annotation from the Gene Ontology Consortium (The Gene Ontology Consortium, 2017). Ensembl Compara allowed these data to be shared across human, mouse, rat and yeast homologs (Zerbino et al., 2018). Once a list of enzymes with probable mitochondrial localization was collated, KEGG was used to produce a corresponding list of potential mitochondrial compounds. Additional candidates were taken from a computer model of mitochondrial metabolism that manually partitioned metabolites on either side of the mitochondrial inner membrane (Smith and Robinson, 2011). Compounds were dissolved in PIPES buffer (10 mM PIPES pH 7.0, 50 mM NaCl) to a final concentration of 25 mM or in dimethyl sulfoxide to a final concentration of 100 mM. pH was adjusted if necessary and the stocks were frozen at \u221280\u00b0C.\n\n### Analysis of the total number of identified transport protein substrates in different species\n\nThe TransportDB database contains a large number of organisms for which the transporter complement has been identified via a bioinformatic pipeline, along with substrate predictions for the transporters characterized (Elbourne et al., 2017). To acquire the figures in Supplementary file 1, a Perl script driving an SQL query of the underlying MySQL database to TransportDB was developed to quantify those transporters where no prediction could be made for the substrate for the listed species. The number of transporters with unassigned specificity represents a minimal number, as the search procedure uses sequence similarity to characterised transporters as a criterion. However, the substrate specificity needs to be determined experimentally, as a single mutation in the binding site can profoundly change substrate recognition.\n\n### Thermostability shift assay and library screening\n\nTo determine stability, purified protein (typically 1\u20133 \u03bcg) was mixed with 20 \u03bcg/ml of the thiol-reactive fluorophore 7-diethylamino-3-(4'-maleimidylphenyl)\u22124-methylcoumarin (CPM) and the fluorescent intensity was measured over a 25\u201390\u00b0C range of temperature using a rotatory qPCR multi sample instrument (Rotor-Gene Q, Qiagen, the Netherlands). Following an initial 18\u00b0C pre-incubation step of 90 s, the temperature was ramped 1\u00b0C every 15 s, with a 4 s wait between readings, which is equal to a ramp rate of 5.6 \u00b0C/min. The excitation and emission wavelengths were 460 nm and 510 nm, respectively. Five mg/ml stocks of CPM prepared in dimethyl sulfoxide were diluted to 0.1 mg/ml and equilibrated in assay buffer for 1 hr at room temperature in the dark before addition to the protein sample. The assay buffer was usually the buffer in which the protein was purified or in a similar buffer with a different pH (MES for pH 6.0, HEPES for pH 8.0) or a different concentration of other ions. Data analyses and apparent melting temperatures (Tm, the inflection point of a melting temperature) were determined using software supplied with the instrument.\n\nFor GalP experiments, 500 mM sugar stocks were made in MilliQ water (Merck-Millipore, USA) as 10 times stocks. For Mhp1 experiments, 100 mM compound stocks were made in dimethyl sulfoxide as 50 times stocks.\n\n### Data analyses and representation\n\nStatistical analyses were performed using Microsoft Excel with the inbuilt function of two-tailed, two-sample unequal variance Student\u2019s t-test. The average apparent Tm of \u2018no ligand\u2019 control samples (three technical repeats within each Rotor-Gene Q run) was subtracted from the apparent Tm measured for each compound addition in the same run. This assay was performed with three or five biological repeats using independent batches of purified protein. The null hypothesis of the t-test was that the observed \u0394Tm for each compound was not significantly different from zero.\n",
+      "created_at": "2025-12-02T06:39:29.099404Z"
+    },
+    {
+      "id": "50bf2faf-feaf-45f2-bf3c-e142fedee38d",
+      "submission_id": "680862f1-1cdb-4ab5-8663-7149c9c6b714",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Volker D\u00f6tsch, J.W. Goethe-University Germany\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.38821.020](https://doi.org/10.7554/eLife.38821.020)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Screening of candidate substrates and coupling ions of transporters by thermostability shift assays\" for consideration by eLife. Your article has been reviewed by three peer reviewers including Volker D\u00f6tsch as the Reviewing Editor and Reviewer #1, and the evaluation has been overseen by Richard Aldrich as the Senior Editor. The following individual involved in review of your submission has agreed to reveal their identity: Dirk Slotboom (Reviewer #3).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission. Given that we consider this work to be more of a technical than a conceptual advance, we feel the contribution would be better placed in the category of a Tools and Resources paper than a Research Article.\n\nSummary:\n\nThe substrates of many transporters, including those belonging to the human SLC family of transporters are unknown. In vitro transport assays are the gold standard, but for technical reasons these can be hard to establish. The Kunji lab nicely demonstrates how thermal shift assays with the CPM dye can be used in a high-throughput format to screen for potential substrates. The premise is simple. Only interacting ligands that show increased (high) thermostabilization are potential substrates. They show the usefulness of the CPM assay to identify the correct substrates and ligands for three different transport proteins and also show how it is able to also pick-up ion dependent (Na+) or (H+) substrate binding. They further show the use of the assay to identify potential substrates for an unknown mitochondrial carrier.\n\nEssential revisions:\n\n1) The de-orphanizing of the mitochondrial carrier is a very important result of this study and should be confirmed by a classical transport assay to validate the main conclusion that this is a phosphate transporter. Do other negatively charged anions, such as sulphate, show a change in its melting temperature?\n\n2) The discussion of the data should be expanded. For instance, spermidine and spermine destabilize the phosphate transporter, but have no effect on the ADP/ATP carrier (AAC). Such observations should be discussed. Similarly, for the stabilizing effect of zinc chloride on AAC. Unfortunately, all substrates shown in Figure 2\u2014figure supplement 4 were also tested for the phosphate transporter (Figure 3), apart from zinc. Why? Zinc ions seem interesting.\n\n3) Related to this question, the authors claim: \"Transported substrates bind only transiently and relatively weakly, leading to conformational change that in turn causes the release\u2026\" This is not strictly true. In some cases, transported substrate bind very tightly (aspartate to GltPh for instance). In addition, in detergent solution transporters are simply binding proteins that are characterized by an apparent Kd, regardless of conformational changes. This part must be phrased more carefully.\n\n4) What is the reliable working range of thermostabilization? In this setup it seems that Tm shifts as low as 2 degrees are significant. Is this empirically-based and/or are there recommendations based on other studies for using thermal shift assays for identifying potential ligands?\n\n5) Some membrane proteins will be destabilised in DMSO. If the protein is too unstable in DMSO would this not make it difficult to measure a shift in thermostabilization? In other words, what is the working range of thermostability of the protein required for accurately measuring ligand binding by this method? Indeed, all of the transporters tested in this study had melting temperatures higher than 50 \u00b0C, which seem high and many membrane proteins, especially mammalian membrane proteins, will have lower melting temperatures.\n\n6) Related, could this assay also be carried out with the membrane protein incorporated into nanodiscs or into bicelles obtained through detergent titration from nanodiscs (thus avoiding complications from MSP melting)? This would make it a useful assay for membrane proteins of non-thermophilic organisms, in particular mammalian proteins. Without this possibility this method would not change the current situation for mammalian transporters of guessing the ligand based on homology to bacterial transporters. Since the authors use human and eukaryotic transporters as justification for their method development in the Introduction, this issue should at least be discussed.\n\n7) Data representations and statistics should be improved. For instance, in Figure 1\u2014figure supplement 1, the authors state that data represent averages and SDs of 3 biological replicates. Yet, for the AMP data 4-5 data points, which is more than 3 were used, and there are no error bars with SD.\n\n8) The explanation for the stabilizing effect of low pH (pH 6 compared to pH 8) on the phosphate transporter seems questionable (subsection \u201cThe effect of coupling ions\u201d). Protonation of the glutamate residue in the binding site (pKa of 4) is less likely than protonation of the substrate pKa of 7.2.\n\n9) The stock concentrations of ligands are very high (either 25 mM in buffer or 100 mM in DMSO). What was the final concentration actually used for library screening? Along these lines, how can one eliminate false positives due to non-specific interactions with such high concentrations of ligands? In particular hydrophobic compounds will easily become incorporated into the micelles and could cause effects.\n",
+      "created_at": "2025-12-02T06:39:29.099404Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T06:39:29.099404Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T06:39:29.099404Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "39d0f395-93c2-49c0-a3bd-f22035d93b26",
+      "content_id": "caeeacc5-1527-4b42-8bb7-8f235d857323",
+      "claim_id": "C1",
+      "claim": "Transport proteins comprise 5\u201315% of the genomic complement in most organisms.",
+      "claim_type": "EXPLICIT",
+      "source": "They comprise 5\u201315% of the genomic complement in most organisms.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a general fact about transport proteins without specific experimental data in this manuscript, drawing from established scientific knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:39:29.099404Z"
+    },
+    {
+      "id": "ea024d0e-5dd5-47db-9f4f-ff0ad8a25313",
+      "content_id": "caeeacc5-1527-4b42-8bb7-8f235d857323",
+      "claim_id": "C2",
+      "claim": "Of the 538 identified solute transport proteins in humans, more than a quarter have no assigned substrate specificity.",
+      "claim_type": "EXPLICIT",
+      "source": "Of the 538 identified solute transport proteins in humans, more than a quarter have no assigned substrate specificity (http://slc.bioparadigms.org/).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by reference to an external database (http://slc.bioparadigms.org/).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:39:29.099404Z"
+    },
+    {
+      "id": "68611376-be9b-4a63-86f8-9426a02fa3ff",
+      "content_id": "caeeacc5-1527-4b42-8bb7-8f235d857323",
+      "claim_id": "C3",
+      "claim": "About half of the transport proteins have been associated with human disease.",
+      "claim_type": "EXPLICIT",
+      "source": "Currently, about half of the transport proteins have been associated with human disease (Rask-Andersen et al., 2013; Hediger et al., 2013; Lin et al., 2015)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:39:29.099404Z"
+    },
+    {
+      "id": "974d74b8-58be-45c4-b21e-a1a2bd1afa55",
+      "content_id": "caeeacc5-1527-4b42-8bb7-8f235d857323",
+      "claim_id": "C4",
+      "claim": "Only 12 classes of drugs target transport proteins directly.",
+      "claim_type": "EXPLICIT",
+      "source": "but only 12 classes of drugs target them directly, despite their inherent 'druggability' (Hediger et al., 2013; Lin et al., 2015; C\u00e9sar-Razquin et al., 2015; Fauman et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:39:29.099404Z"
+    },
+    {
+      "id": "50d40ec6-d7ae-40b6-b962-7984f8ee5361",
+      "content_id": "caeeacc5-1527-4b42-8bb7-8f235d857323",
+      "claim_id": "C5",
+      "claim": "There are approximately ~3,000 metabolites in Escherichia coli.",
+      "claim_type": "EXPLICIT",
+      "source": "There are approximately ~3,000 metabolites in Escherichia coli (Sajed et al., 2016)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:39:29.099404Z"
+    },
+    {
+      "id": "3154f0f9-dee6-498c-8b84-8cdf78b8318e",
+      "content_id": "caeeacc5-1527-4b42-8bb7-8f235d857323",
+      "claim_id": "C6",
+      "claim": "There are approximately ~16,000 metabolites in Saccharomyces cerevisiae.",
+      "claim_type": "EXPLICIT",
+      "source": "~16,000 in Saccharomyces cerevisiae (Ramirez-Gaona et al., 2017)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:39:29.099404Z"
+    },
+    {
+      "id": "f2e13289-8527-4ff4-bd6e-ab5ca44663d8",
+      "content_id": "caeeacc5-1527-4b42-8bb7-8f235d857323",
+      "claim_id": "C7",
+      "claim": "There are approximately ~40,000 metabolites in Homo sapiens.",
+      "claim_type": "EXPLICIT",
+      "source": "~40,000 in Homo sapiens (Wishart et al., 2013)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:39:29.099404Z"
+    },
+    {
+      "id": "512a24fd-9522-4371-8d6e-d4a5efc38180",
+      "content_id": "caeeacc5-1527-4b42-8bb7-8f235d857323",
+      "claim_id": "C8",
+      "claim": "Ligands such as substrates or inhibitors are recognized by transport proteins through specific interactions at the exclusion of other molecules.",
+      "claim_type": "EXPLICIT",
+      "source": "Ligands, such as substrates or inhibitors, are recognized by transport proteins through specific interactions at the exclusion of other molecules.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an established principle in the field, drawing from scientific knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:39:29.099404Z"
+    },
+    {
+      "id": "c5064a5d-53e3-46bf-a242-6a475f629db7",
+      "content_id": "caeeacc5-1527-4b42-8bb7-8f235d857323",
+      "claim_id": "C9",
+      "claim": "The formation of additional bonds between ligands and transport proteins leads to an increase in the total number of interactions.",
+      "claim_type": "EXPLICIT",
+      "source": "The formation of these additional bonds leads to an increase in the total number of interactions (Robinson and Kunji, 2006; Yan, 2017; Yamashita et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:39:29.099404Z"
+    },
+    {
+      "id": "6047f7dd-97bc-411b-b423-05f0e5241bd5",
+      "content_id": "caeeacc5-1527-4b42-8bb7-8f235d857323",
+      "claim_id": "C10",
+      "claim": "Ligand binding leads to an overall increase in the stability of the ligand-bound species compared to the unliganded species in the population of protein molecules.",
+      "claim_type": "EXPLICIT",
+      "source": "Consequently, binding leads to an overall increase in the stability of the ligand-bound species compared to the unliganded species in the population of protein molecules.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference from the principle that additional bonds increase stability.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:39:29.099404Z"
+    },
+    {
+      "id": "450ab9d5-40e0-4e7c-87ad-4897a775b5e4",
+      "content_id": "caeeacc5-1527-4b42-8bb7-8f235d857323",
+      "claim_id": "C11",
+      "claim": "The mitochondrial ADP/ATP carrier (AAC) from Thermothelomyces thermophila when purified in dodecyl-maltoside is stabilized upon binding of its specific inhibitors carboxyatractyloside and bongkrekic acid in thermostability shift assays.",
+      "claim_type": "EXPLICIT",
+      "source": "We have previously shown that the mitochondrial ADP/ATP carrier (AAC) from the thermophilic fungus Thermothelomyces thermophila (UniProt G2QNH0) when purified in dodecyl-maltoside is stabilized upon binding of its specific inhibitors carboxyatractyloside and bongkrekic acid in thermostability shift assays using the thiol-reactive fluorophore N-[4-(7-diethylamino-4-methyl-3-coumarinyl)-phenyl]-maleimide (CPM) (Crichton et al., 2015; King et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous work by the authors.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:39:29.099404Z"
+    },
+    {
+      "id": "d9ccb272-0b9c-48eb-bc0a-b87d02326f00",
+      "content_id": "caeeacc5-1527-4b42-8bb7-8f235d857323",
+      "claim_id": "C12",
+      "claim": "The thermostability of the AAC population was enhanced in the presence of ADP and ATP.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, the thermostability of the AAC population was enhanced in the presence of ADP and ATP, but not in the presence of AMP, which reflects the known substrate specificity of the carrier well (Mifsud et al., 2013) (Figure 1b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1b and cited literature on substrate specificity.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:39:29.099404Z"
+    },
+    {
+      "id": "d8ec74f8-2fef-4345-86e7-d2297fbb3903",
+      "content_id": "caeeacc5-1527-4b42-8bb7-8f235d857323",
+      "claim_id": "C13",
+      "claim": "The thermostability of the AAC population was not enhanced in the presence of AMP.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, the thermostability of the AAC population was enhanced in the presence of ADP and ATP, but not in the presence of AMP, which reflects the known substrate specificity of the carrier well (Mifsud et al., 2013) (Figure 1b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1b and cited literature on substrate specificity.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:39:29.099404Z"
+    },
+    {
+      "id": "3671cc02-aa63-44da-b08c-40126e71aaea",
+      "content_id": "caeeacc5-1527-4b42-8bb7-8f235d857323",
+      "claim_id": "C14",
+      "claim": "The substrate-induced thermostability effect is only observed at high concentrations of the substrate, well above the apparent Km of transport.",
+      "claim_type": "EXPLICIT",
+      "source": "This effect is only observed at high concentrations of the substrate, well above the apparent Km of transport (Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:39:29.099404Z"
+    },
+    {
+      "id": "a3f4e4b3-74fc-4caa-8028-be2dec82871c",
+      "content_id": "caeeacc5-1527-4b42-8bb7-8f235d857323",
+      "claim_id": "C15",
+      "claim": "The galactose transporter GalP of E. coli is a prototypical member of the sugar porter family that belongs to the major facilitator superfamily (MFS).",
+      "claim_type": "EXPLICIT",
+      "source": "The galactose transporter GalP of E. coli (Henderson, 1977) is a prototypical member of the sugar porter family that belongs to the major facilitator superfamily (MFS) (Pao et al., 1998).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:39:29.099404Z"
+    },
+    {
+      "id": "eb4e3b51-866c-4be9-ab27-0d1388bcc960",
+      "content_id": "caeeacc5-1527-4b42-8bb7-8f235d857323",
+      "claim_id": "C16",
+      "claim": "The MFS currently contains 24 different transporter families and 320,665 sequence entries from 5224 species.",
+      "claim_type": "EXPLICIT",
+      "source": "Currently, the MFS contains 24 different transporter families and 320,665 sequence entries from 5224 species, but the substrates for the vast majority of them have not been formally identified (Pfam CL0015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by reference to the Pfam database.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:39:29.099404Z"
+    },
+    {
+      "id": "d5e79ff5-28e9-4a2e-9c97-c7582dc7c457",
+      "content_id": "caeeacc5-1527-4b42-8bb7-8f235d857323",
+      "claim_id": "C17",
+      "claim": "The substrates for the vast majority of MFS transporters have not been formally identified.",
+      "claim_type": "EXPLICIT",
+      "source": "Currently, the MFS contains 24 different transporter families and 320,665 sequence entries from 5224 species, but the substrates for the vast majority of them have not been formally identified (Pfam CL0015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by reference to the Pfam database.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:39:29.099404Z"
+    },
+    {
+      "id": "a21aa333-9e27-412c-b0f9-ac472a84304a",
+      "content_id": "caeeacc5-1527-4b42-8bb7-8f235d857323",
+      "claim_id": "C18",
+      "claim": "In humans, 14 of the 65 solute carrier families belong to the MFS.",
+      "claim_type": "EXPLICIT",
+      "source": "In humans, 14 of the 65 solute carrier families belong to the MFS, and substrates are not known for around 12% of them (http://slc.bioparadigms.org/).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by reference to an external database.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:39:29.099404Z"
+    },
+    {
+      "id": "5e0230a2-5dcc-4773-98e2-2765c781bfa2",
+      "content_id": "caeeacc5-1527-4b42-8bb7-8f235d857323",
+      "claim_id": "C19",
+      "claim": "Substrates are not known for around 12% of human MFS solute carrier families.",
+      "claim_type": "EXPLICIT",
+      "source": "In humans, 14 of the 65 solute carrier families belong to the MFS, and substrates are not known for around 12% of them (http://slc.bioparadigms.org/).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by reference to an external database.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:39:29.099404Z"
+    },
+    {
+      "id": "0a6cdb2d-904c-45af-90e5-d7a97900d949",
+      "content_id": "caeeacc5-1527-4b42-8bb7-8f235d857323",
+      "claim_id": "C20",
+      "claim": "GalP contains three cysteine residues, of which only one is readily accessible to reaction with N-ethylmaleimide.",
+      "claim_type": "EXPLICIT",
+      "source": "GalP contains three cysteine residues, of which only one is readily accessible to reaction with N-ethylmaleimide (McDonald and Henderson, 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:39:29.099404Z"
+    },
+    {
+      "id": "941472b7-8918-4075-a191-2c6ed2c5d229",
+      "content_id": "caeeacc5-1527-4b42-8bb7-8f235d857323",
+      "claim_id": "C21",
+      "claim": "Purified GalP in dodecyl-maltoside had an apparent Tm of 57.6 \u00b1 0.3\u00b0C.",
+      "claim_type": "EXPLICIT",
+      "source": "We determined the temperature shift by subtracting the apparent Tm of unliganded GalP (57.6 \u00b1 0.3\u00b0C) from the apparent Tm values observed in the presence of compounds (\u0394Tm).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an experimental measurement reported in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:39:29.099404Z"
+    },
+    {
+      "id": "b53431b9-610a-44e7-81bf-099191103302",
+      "content_id": "caeeacc5-1527-4b42-8bb7-8f235d857323",
+      "claim_id": "C22",
+      "claim": "The GalP population was markedly stabilized by D-glucosamine with a \u0394Tm of 5.7 \u00b1 0.4\u00b0C.",
+      "claim_type": "EXPLICIT",
+      "source": "The GalP population was markedly stabilized by D-glucosamine (\u0394Tm; 5.7 \u00b1 0.4\u00b0C), D-glucose (\u0394Tm; 4.2 \u00b1 0.5\u00b0C), D-galactose (\u0394Tm; 2.1 \u00b1 0.6\u00b0C) (Figure 2\u2014figure supplement 1)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 2\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:39:29.099404Z"
+    },
+    {
+      "id": "734cdc84-d61c-43e0-8b85-8d4da061a816",
+      "content_id": "caeeacc5-1527-4b42-8bb7-8f235d857323",
+      "claim_id": "C23",
+      "claim": "The GalP population was markedly stabilized by D-glucose with a \u0394Tm of 4.2 \u00b1 0.5\u00b0C.",
+      "claim_type": "EXPLICIT",
+      "source": "The GalP population was markedly stabilized by D-glucosamine (\u0394Tm; 5.7 \u00b1 0.4\u00b0C), D-glucose (\u0394Tm; 4.2 \u00b1 0.5\u00b0C), D-galactose (\u0394Tm; 2.1 \u00b1 0.6\u00b0C) (Figure 2\u2014figure supplement 1)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 2\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:39:29.099404Z"
+    },
+    {
+      "id": "c26b0914-9197-4d08-820c-8a6c615ec291",
+      "content_id": "caeeacc5-1527-4b42-8bb7-8f235d857323",
+      "claim_id": "C24",
+      "claim": "The GalP population was markedly stabilized by D-galactose with a \u0394Tm of 2.1 \u00b1 0.6\u00b0C.",
+      "claim_type": "EXPLICIT",
+      "source": "The GalP population was markedly stabilized by D-glucosamine (\u0394Tm; 5.7 \u00b1 0.4\u00b0C), D-glucose (\u0394Tm; 4.2 \u00b1 0.5\u00b0C), D-galactose (\u0394Tm; 2.1 \u00b1 0.6\u00b0C) (Figure 2\u2014figure supplement 1)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 2\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:39:29.099404Z"
+    },
+    {
+      "id": "258edc92-1539-45a2-aa65-7e188104ad08",
+      "content_id": "caeeacc5-1527-4b42-8bb7-8f235d857323",
+      "claim_id": "C25",
+      "claim": "The related L-isoforms of sugars showed no significant thermostability shift for GalP.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, the related L-isoforms showed no significant shift (Figure 2b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 2b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:39:29.099404Z"
+    },
+    {
+      "id": "4953fec2-b936-472f-a0e3-23d3343253ac",
+      "content_id": "caeeacc5-1527-4b42-8bb7-8f235d857323",
+      "claim_id": "C26",
+      "claim": "The thermostability results for GalP match the known substrate specificity of GalP well.",
+      "claim_type": "EXPLICIT",
+      "source": "These results match the known substrate specificity of GalP well (Henderson and Maiden, 1990; Walmsley et al., 1994).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to published literature on GalP substrate specificity.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:39:29.099404Z"
+    },
+    {
+      "id": "8575b2c8-fa1b-4a06-8003-3c98aa656e17",
+      "content_id": "caeeacc5-1527-4b42-8bb7-8f235d857323",
+      "claim_id": "C27",
+      "claim": "D-Glucosamine is a new substrate of GalP.",
+      "claim_type": "EXPLICIT",
+      "source": "D-Glucosamine, the most stabilizing compound, had not been investigated previously, but transport assays showed that this compound is a new substrate (Figure 2\u2014figure supplement 2)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by transport assay data shown in Figure 2\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:39:29.099404Z"
+    },
+    {
+      "id": "fc8cfea4-3214-4dbd-b90f-1d996e91604d",
+      "content_id": "caeeacc5-1527-4b42-8bb7-8f235d857323",
+      "claim_id": "C28",
+      "claim": "The transport protein Mhp1 from Microbacterium liquefaciens transports 5-substituted hydantoins in a sodium-coupled mechanism.",
+      "claim_type": "EXPLICIT",
+      "source": "The transport protein Mhp1 from Microbacterium liquefaciens (Uniprot D6R8X8) transports 5-substituted hydantoins in a sodium-coupled mechanism (Suzuki and Henderson, 2006; Shimamura et al., 2010)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:39:29.099404Z"
+    },
+    {
+      "id": "ec4c3aec-1f81-40b0-9886-4461650de932",
+      "content_id": "caeeacc5-1527-4b42-8bb7-8f235d857323",
+      "claim_id": "C29",
+      "claim": "Mhp1 is a member of the nucleobase-cation-symport family.",
+      "claim_type": "EXPLICIT",
+      "source": "and is a member of the nucleobase-cation-symport family of homologous proteins that also transport purines, pyrimidines, vitamins and related metabolites.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a classification based on established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:39:29.099404Z"
+    },
+    {
+      "id": "4c6ca925-caf7-4b70-b8a2-b7da583adc40",
+      "content_id": "caeeacc5-1527-4b42-8bb7-8f235d857323",
+      "claim_id": "C30",
+      "claim": "Mhp1 has the LeuT-fold.",
+      "claim_type": "EXPLICIT",
+      "source": "The transporter has the LeuT-fold (Shimamura et al., 2010; Yamashita et al., 2005)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:39:29.099404Z"
+    },
+    {
+      "id": "7041ad6f-ce83-4caf-803f-61d2a9890c1d",
+      "content_id": "caeeacc5-1527-4b42-8bb7-8f235d857323",
+      "claim_id": "C31",
+      "claim": "Mhp1 belongs to the amino acid-polyamine-organocation superfamily.",
+      "claim_type": "EXPLICIT",
+      "source": "and belongs to the amino acid-polyamine-organocation superfamily (V\u00e4stermark and Saier, 2014)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:39:29.099404Z"
+    },
+    {
+      "id": "93fc91a2-a3f9-4120-b31b-4d03400cc27a",
+      "content_id": "caeeacc5-1527-4b42-8bb7-8f235d857323",
+      "claim_id": "C32",
+      "claim": "The amino acid-polyamine-organocation superfamily currently contains 20 families and 147,819 sequence entries.",
+      "claim_type": "EXPLICIT",
+      "source": "which currently contains 20 families and 147,819 sequence entries, the substrates of which have mostly not been identified (Pfam CL0062).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by reference to the Pfam database.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:39:29.099404Z"
+    },
+    {
+      "id": "ae30999c-5475-4edc-a4dd-4c7de31e7ece",
+      "content_id": "caeeacc5-1527-4b42-8bb7-8f235d857323",
+      "claim_id": "C33",
+      "claim": "Mhp1 contains three cysteine residues, of which only one is readily accessible to reaction with N-ethylmaleimide.",
+      "claim_type": "EXPLICIT",
+      "source": "Mhp1 contains three cysteine residues, of which only one is readily accessible to reaction with N-ethylmaleimide (Calabrese et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:39:29.099404Z"
+    },
+    {
+      "id": "a93015ff-adfc-4b2e-9daa-946c4fce9ca0",
+      "content_id": "caeeacc5-1527-4b42-8bb7-8f235d857323",
+      "claim_id": "C34",
+      "claim": "Purified Mhp1 in dodecyl-maltoside had an apparent Tm of 51.3\u00b0C \u00b1 0.6\u00b0C.",
+      "claim_type": "EXPLICIT",
+      "source": "Purified Mhp1 in dodecyl-maltoside had an apparent Tm of 51.3\u00b0C \u00b1 0.6\u00b0C",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an experimental measurement reported in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:39:29.099404Z"
+    },
+    {
+      "id": "acf4e02b-c5e8-4ab8-a086-a97fd97c07a7",
+      "content_id": "caeeacc5-1527-4b42-8bb7-8f235d857323",
+      "claim_id": "C35",
+      "claim": "5-indolylmethyl-L-hydantoin stabilized Mhp1 with a \u0394Tm of 14.1 \u00b1 1.2\u00b0C.",
+      "claim_type": "EXPLICIT",
+      "source": "The only stabilizing compounds were 5-indolylmethyl-L-hydantoin (\u0394Tm; 14.1 \u00b1 1.2\u00b0C), 5-benzyl-L-hydantoin (\u0394Tm; 13.6 \u00b1 1.2\u00b0C) and 5-bromovinylhydantoin (\u0394Tm; 11.9 \u00b1 1.1\u00b0C) (Figure 2\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 2\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:39:29.099404Z"
+    },
+    {
+      "id": "5d17448b-e37d-44d8-941c-67107186e16b",
+      "content_id": "caeeacc5-1527-4b42-8bb7-8f235d857323",
+      "claim_id": "C36",
+      "claim": "5-benzyl-L-hydantoin stabilized Mhp1 with a \u0394Tm of 13.6 \u00b1 1.2\u00b0C.",
+      "claim_type": "EXPLICIT",
+      "source": "The only stabilizing compounds were 5-indolylmethyl-L-hydantoin (\u0394Tm; 14.1 \u00b1 1.2\u00b0C), 5-benzyl-L-hydantoin (\u0394Tm; 13.6 \u00b1 1.2\u00b0C) and 5-bromovinylhydantoin (\u0394Tm; 11.9 \u00b1 1.1\u00b0C) (Figure 2\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 2\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:39:29.099404Z"
+    },
+    {
+      "id": "40a79cae-c6d3-447e-9b65-24b5e8b22261",
+      "content_id": "caeeacc5-1527-4b42-8bb7-8f235d857323",
+      "claim_id": "C37",
+      "claim": "5-bromovinylhydantoin stabilized Mhp1 with a \u0394Tm of 11.9 \u00b1 1.1\u00b0C.",
+      "claim_type": "EXPLICIT",
+      "source": "The only stabilizing compounds were 5-indolylmethyl-L-hydantoin (\u0394Tm; 14.1 \u00b1 1.2\u00b0C), 5-benzyl-L-hydantoin (\u0394Tm; 13.6 \u00b1 1.2\u00b0C) and 5-bromovinylhydantoin (\u0394Tm; 11.9 \u00b1 1.1\u00b0C) (Figure 2\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 2\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:39:29.099404Z"
+    },
+    {
+      "id": "69af5f18-79f1-4632-abf6-744975b65411",
+      "content_id": "caeeacc5-1527-4b42-8bb7-8f235d857323",
+      "claim_id": "C38",
+      "claim": "5-(2-naphthylmethyl)-L-hydantoin (L-NMH), a chemically related inhibitor of Mhp1, led to a thermostability shift with a \u0394Tm of 15.6 \u00b1 1.7\u00b0C.",
+      "claim_type": "EXPLICIT",
+      "source": "A chemically related inhibitor of Mhp1, 5-(2-naphthylmethyl)-L-hydantoin (L-NMH) also led to a thermostability shift (\u0394Tm; 15.6 \u00b1 1.7\u00b0C) (Figure 2d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 2d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:39:29.099404Z"
+    },
+    {
+      "id": "b9bffacc-3a39-4752-8205-361cb7c09899",
+      "content_id": "caeeacc5-1527-4b42-8bb7-8f235d857323",
+      "claim_id": "C39",
+      "claim": "The thermostability results for Mhp1 match the known substrate and inhibitor specificity of Mhp1.",
+      "claim_type": "EXPLICIT",
+      "source": "These results match the known substrate and inhibitor specificity of Mhp1 (Simmons et al., 2014)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:39:29.099404Z"
+    },
+    {
+      "id": "df71e760-1bd6-454a-b4a0-67869ae9bc19",
+      "content_id": "caeeacc5-1527-4b42-8bb7-8f235d857323",
+      "claim_id": "C40",
+      "claim": "The mitochondrial ADP/ATP carrier belongs to the mitochondrial carrier family (MCF).",
+      "claim_type": "EXPLICIT",
+      "source": "This transport protein belongs to the mitochondrial carrier family (MCF), which is involved in the translocation of chemically diverse compounds across the mitochondrial inner membrane, using uniport, symport or antiport modes of transport (Kunji, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:39:29.099404Z"
+    },
+    {
+      "id": "a3d9bdf0-3603-40ac-8664-c11d75d5c291",
+      "content_id": "caeeacc5-1527-4b42-8bb7-8f235d857323",
+      "claim_id": "C41",
+      "claim": "The mitochondrial carrier family is involved in the translocation of chemically diverse compounds across the mitochondrial inner membrane, using uniport, symport or antiport modes of transport.",
+      "claim_type": "EXPLICIT",
+      "source": "This transport protein belongs to the mitochondrial carrier family (MCF), which is involved in the translocation of chemically diverse compounds across the mitochondrial inner membrane, using uniport, symport or antiport modes of transport (Kunji, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:39:29.099404Z"
+    },
+    {
+      "id": "04455d00-f588-43db-9744-7e2e05c1e4ce",
+      "content_id": "caeeacc5-1527-4b42-8bb7-8f235d857323",
+      "claim_id": "C42",
+      "claim": "There are 89,340 different sequence entries from 831 different species in the mitochondrial carrier family database.",
+      "claim_type": "EXPLICIT",
+      "source": "Currently, there are 89,340 different sequence entries from 831 different species in the database (Pfam PF00153).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by reference to the Pfam database.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:39:29.099404Z"
+    },
+    {
+      "id": "a1acea66-53af-4555-affa-cd6d50a53f77",
+      "content_id": "caeeacc5-1527-4b42-8bb7-8f235d857323",
+      "claim_id": "C43",
+      "claim": "In humans, the MCF is the largest solute carrier family with 53 different members (SLC25).",
+      "claim_type": "EXPLICIT",
+      "source": "In humans, the MCF is the largest solute carrier family with 53 different members (SLC25), but the substrate specificity of only half of them has been defined (Kunji, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:39:29.099404Z"
+    },
+    {
+      "id": "baa7bfd2-3a47-488a-895b-8f40b01437bb",
+      "content_id": "caeeacc5-1527-4b42-8bb7-8f235d857323",
+      "claim_id": "C44",
+      "claim": "The substrate specificity of only half of human MCF members has been defined.",
+      "claim_type": "EXPLICIT",
+      "source": "In humans, the MCF is the largest solute carrier family with 53 different members (SLC25), but the substrate specificity of only half of them has been defined (Kunji, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:39:29.099404Z"
+    },
+    {
+      "id": "6e24f5b6-b8c8-46f5-bf28-f22a6831254b",
+      "content_id": "caeeacc5-1527-4b42-8bb7-8f235d857323",
+      "claim_id": "C45",
+      "claim": "In the presence of ATP, the AAC population was stabilized with a \u0394Tm of 7.2 \u00b1 0.2\u00b0C.",
+      "claim_type": "EXPLICIT",
+      "source": "In the presence of ATP, ADP, and dADP the population was stabilized, showing \u0394Tm values of 7.2 \u00b1 0.2, 6.0 \u00b1 0.5 and 1.8 \u00b1 0.2\u00b0C, respectively (Figures 1b and 2f).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figures 1b and 2f.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:39:29.099404Z"
+    },
+    {
+      "id": "386782aa-0cdd-4efe-bf4d-9cd51caeefd0",
+      "content_id": "caeeacc5-1527-4b42-8bb7-8f235d857323",
+      "claim_id": "C46",
+      "claim": "In the presence of ADP, the AAC population was stabilized with a \u0394Tm of 6.0 \u00b1 0.5\u00b0C.",
+      "claim_type": "EXPLICIT",
+      "source": "In the presence of ATP, ADP, and dADP the population was stabilized, showing \u0394Tm values of 7.2 \u00b1 0.2, 6.0 \u00b1 0.5 and 1.8 \u00b1 0.2\u00b0C, respectively (Figures 1b and 2f).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figures 1b and 2f.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:39:29.099404Z"
+    },
+    {
+      "id": "32ac0ed0-afbd-4a62-b9e5-9f0cef13f752",
+      "content_id": "caeeacc5-1527-4b42-8bb7-8f235d857323",
+      "claim_id": "C47",
+      "claim": "In the presence of dADP, the AAC population was stabilized with a \u0394Tm of 1.8 \u00b1 0.2\u00b0C.",
+      "claim_type": "EXPLICIT",
+      "source": "In the presence of ATP, ADP, and dADP the population was stabilized, showing \u0394Tm values of 7.2 \u00b1 0.2, 6.0 \u00b1 0.5 and 1.8 \u00b1 0.2\u00b0C, respectively (Figures 1b and 2f).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figures 1b and 2f.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:39:29.099404Z"
+    },
+    {
+      "id": "55dce0a9-9e3c-48ef-a00d-e05475b67a26",
+      "content_id": "caeeacc5-1527-4b42-8bb7-8f235d857323",
+      "claim_id": "C48",
+      "claim": "For each type of nucleotide, the di- and tri-phosphate species showed larger thermostability shifts than the monophosphate forms for AAC.",
+      "claim_type": "EXPLICIT",
+      "source": "For each type of nucleotide, the di- and tri-phosphate species showed larger shifts than the monophosphate forms, similar to the preference of ATP and ADP over AMP (Figures 1d and 2f)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figures 1d and 2f.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:39:29.099404Z"
+    },
+    {
+      "id": "4981dfd7-e447-4de4-9254-f1c36a8b8eaa",
+      "content_id": "caeeacc5-1527-4b42-8bb7-8f235d857323",
+      "claim_id": "C49",
+      "claim": "A mitochondrial carrier from Tetrahymena thermophila (UniProt I7M3J0) is phylogenetically related to the yeast mitochondrial carrier that transports inorganic phosphate in symport with a proton into the mitochondrial matrix for ATP synthesis.",
+      "claim_type": "EXPLICIT",
+      "source": "The carrier is phylogenetically related to the yeast mitochondrial carrier that transports inorganic phosphate in symport with a proton into the mitochondrial matrix for ATP synthesis (Runswick et al., 1987)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:39:29.099404Z"
+    },
+    {
+      "id": "06a485a1-2c17-4b44-8edc-28ed947fb97d",
+      "content_id": "caeeacc5-1527-4b42-8bb7-8f235d857323",
+      "claim_id": "C50",
+      "claim": "The substrates of the mitochondrial carrier from Tetrahymena thermophila (UniProt I7M3J0) have not been identified experimentally.",
+      "claim_type": "EXPLICIT",
+      "source": "but its substrates have not been identified experimentally.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a fact about the current state of knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:39:29.099404Z"
+    },
+    {
+      "id": "792b5b53-3d48-4c60-875f-10578e3a1ee5",
+      "content_id": "caeeacc5-1527-4b42-8bb7-8f235d857323",
+      "claim_id": "C51",
+      "claim": "The population of the Tetrahymena thermophila mitochondrial carrier had an apparent Tm of 56.0 \u00b1 0.8\u00b0C.",
+      "claim_type": "EXPLICIT",
+      "source": "The population of carriers had an apparent Tm of 56.0 \u00b1 0.8\u00b0C",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an experimental measurement reported in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:39:29.099404Z"
+    },
+    {
+      "id": "2141b261-6586-408e-a8cb-3e93cb8af2c6",
+      "content_id": "caeeacc5-1527-4b42-8bb7-8f235d857323",
+      "claim_id": "C52",
+      "claim": "Phosphate caused the highest shift in the Tm of the Tetrahymena thermophila mitochondrial carrier population with a \u0394Tm of 4.6 \u00b1 0.4\u00b0C.",
+      "claim_type": "EXPLICIT",
+      "source": "The highest shift in the Tm of the population was observed for phosphate (\u0394Tm; 4.6 \u00b1 0.4\u00b0C), followed by glyoxylate (\u0394Tm; 3.6 \u00b1 0.8\u00b0C), acetyl-phosphate (\u0394Tm; 3.2 \u00b1 0.5\u00b0C) and phosphoenolpyruvate (\u0394Tm; 2.3 \u00b1 0.2\u00b0C) (Figure 3\u2014figure supplement 1)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 3\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:39:29.099404Z"
+    },
+    {
+      "id": "33a840e9-1587-40cd-99a4-43bf15639a04",
+      "content_id": "caeeacc5-1527-4b42-8bb7-8f235d857323",
+      "claim_id": "C53",
+      "claim": "Glyoxylate caused a shift in the Tm of the Tetrahymena thermophila mitochondrial carrier population with a \u0394Tm of 3.6 \u00b1 0.8\u00b0C.",
+      "claim_type": "EXPLICIT",
+      "source": "The highest shift in the Tm of the population was observed for phosphate (\u0394Tm; 4.6 \u00b1 0.4\u00b0C), followed by glyoxylate (\u0394Tm; 3.6 \u00b1 0.8\u00b0C), acetyl-phosphate (\u0394Tm; 3.2 \u00b1 0.5\u00b0C) and phosphoenolpyruvate (\u0394Tm; 2.3 \u00b1 0.2\u00b0C) (Figure 3\u2014figure supplement 1)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 3\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:39:29.099404Z"
+    },
+    {
+      "id": "9673baaf-6fb0-4a01-9c94-a57eebccf84e",
+      "content_id": "caeeacc5-1527-4b42-8bb7-8f235d857323",
+      "claim_id": "C54",
+      "claim": "Acetyl-phosphate caused a shift in the Tm of the Tetrahymena thermophila mitochondrial carrier population with a \u0394Tm of 3.2 \u00b1 0.5\u00b0C.",
+      "claim_type": "EXPLICIT",
+      "source": "The highest shift in the Tm of the population was observed for phosphate (\u0394Tm; 4.6 \u00b1 0.4\u00b0C), followed by glyoxylate (\u0394Tm; 3.6 \u00b1 0.8\u00b0C), acetyl-phosphate (\u0394Tm; 3.2 \u00b1 0.5\u00b0C) and phosphoenolpyruvate (\u0394Tm; 2.3 \u00b1 0.2\u00b0C) (Figure 3\u2014figure supplement 1)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 3\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:39:29.099404Z"
+    },
+    {
+      "id": "9dd7cdd8-74e8-4e77-9196-1559dfa67e5e",
+      "content_id": "caeeacc5-1527-4b42-8bb7-8f235d857323",
+      "claim_id": "C55",
+      "claim": "Phosphoenolpyruvate caused a shift in the Tm of the Tetrahymena thermophila mitochondrial carrier population with a \u0394Tm of 2.3 \u00b1 0.2\u00b0C.",
+      "claim_type": "EXPLICIT",
+      "source": "The highest shift in the Tm of the population was observed for phosphate (\u0394Tm; 4.6 \u00b1 0.4\u00b0C), followed by glyoxylate (\u0394Tm; 3.6 \u00b1 0.8\u00b0C), acetyl-phosphate (\u0394Tm; 3.2 \u00b1 0.5\u00b0C) and phosphoenolpyruvate (\u0394Tm; 2.3 \u00b1 0.2\u00b0C) (Figure 3\u2014figure supplement 1)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 3\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:39:29.099404Z"
+    },
+    {
+      "id": "00b51133-7153-46fa-af12-e81f09d54066",
+      "content_id": "caeeacc5-1527-4b42-8bb7-8f235d857323",
+      "claim_id": "C56",
+      "claim": "The Tetrahymena thermophila mitochondrial carrier exchanges phosphate.",
+      "claim_type": "EXPLICIT",
+      "source": "Uptake assays using protein reconstituted into proteoliposomes confirmed that the mitochondrial carrier exchanges phosphate (Figure 3\u2014figure supplement 3a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by transport assay data shown in Figure 3\u2014figure supplement 3a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:39:29.099404Z"
+    },
+    {
+      "id": "88af5cc7-8ddf-4dbe-a4b6-2d4c4d2cdcf7",
+      "content_id": "caeeacc5-1527-4b42-8bb7-8f235d857323",
+      "claim_id": "C57",
+      "claim": "Glyoxylate, phosphoenolpyruvate and acetyl phosphate are not transported by the Tetrahymena thermophila mitochondrial carrier.",
+      "claim_type": "EXPLICIT",
+      "source": "We also tested whether glyoxylate, phosphoenolpyruvate and acetyl phosphate, which also gave a shift in thermostability assays, were transported, but none of them did (Figure 3\u2014figure supplement 3b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by transport assay data shown in Figure 3\u2014figure supplement 3b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:39:29.099404Z"
+    },
+    {
+      "id": "ef35b053-5fac-4bf8-9778-290a7a6ccd5b",
+      "content_id": "caeeacc5-1527-4b42-8bb7-8f235d857323",
+      "claim_id": "C58",
+      "claim": "Glyoxylate competes effectively with [33P]-orthophosphate for binding to the Tetrahymena thermophila mitochondrial carrier when present in a 1000-fold excess.",
+      "claim_type": "EXPLICIT",
+      "source": "However, in competition assays glyoxylate abolished uptake, demonstrating that it competes effectively with [33P]-orthophosphate for binding when present in a 1000-fold excess (Figure 3\u2014figure supplement 3c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by competition assay data shown in Figure 3\u2014figure supplement 3c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:39:29.099404Z"
+    },
+    {
+      "id": "5868dcac-04c1-4517-9afb-b9849ff1227c",
+      "content_id": "caeeacc5-1527-4b42-8bb7-8f235d857323",
+      "claim_id": "C59",
+      "claim": "5-Benzyl-L-hydantoin is transported by Mhp1 in symport with sodium ions.",
+      "claim_type": "EXPLICIT",
+      "source": "5-Benzyl-L-hydantoin is transported by Mhp1 in symport with sodium ions (Suzuki and Henderson, 2006; Shimamura et al., 2010)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:39:29.099404Z"
+    },
+    {
+      "id": "50904abe-fc60-4f7c-b1b4-c9e4d4042b06",
+      "content_id": "caeeacc5-1527-4b42-8bb7-8f235d857323",
+      "claim_id": "C60",
+      "claim": "Only sodium ions induced a large substrate stabilization of Mhp1, whereas relatively small stabilizations were observed in the presence of potassium, calcium and magnesium ions.",
+      "claim_type": "EXPLICIT",
+      "source": "When different ions were tested, only sodium ions induced a large substrate stabilization, whereas relatively small stabilizations were observed in the presence of potassium, calcium and magnesium ions (Figure 4a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 4a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:39:29.099404Z"
+    },
+    {
+      "id": "7965358d-1c49-4588-adfd-97150142b389",
+      "content_id": "caeeacc5-1527-4b42-8bb7-8f235d857323",
+      "claim_id": "C61",
+      "claim": "Mitochondrial phosphate carriers are proton-driven, coupling phosphate translocation to proton symport.",
+      "claim_type": "EXPLICIT",
+      "source": "Mitochondrial phosphate carriers are proton-driven, coupling phosphate translocation to proton symport (Kunji and Robinson, 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:39:29.099404Z"
+    },
+    {
+      "id": "67fc3d8e-c62e-4e7b-b73f-15cf4168d0fd",
+      "content_id": "caeeacc5-1527-4b42-8bb7-8f235d857323",
+      "claim_id": "C62",
+      "claim": "The Tetrahymena thermophila phosphate carrier showed larger substrate-induced stabilization at pH 6.0 (\u0394Tm 4.6 \u00b1 0.4\u00b0C) than at pH 8.0 (\u0394Tm 2.6 \u00b1 0.4\u00b0C).",
+      "claim_type": "EXPLICIT",
+      "source": "In both cases, a substrate-induced stabilization was observed, but the effect was larger in pH 6.0 than in pH 8.0 (\u0394Tm 4.6 \u00b1 0.4\u00b0C and 2.6 \u00b1 0.4\u00b0C, respectively) (Figure 4b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 4b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:39:29.099404Z"
+    },
+    {
+      "id": "3843f080-2dff-47d7-b15e-43c2677100e0",
+      "content_id": "caeeacc5-1527-4b42-8bb7-8f235d857323",
+      "claim_id": "C63",
+      "claim": "The mitochondrial ADP/ATP carrier is not a proton symporter.",
+      "claim_type": "EXPLICIT",
+      "source": "As a control, we carried out the same experiment with the mitochondrial ADP/ATP carrier, which is not a proton symporter (Figure 4c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated as an established fact about AAC.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:39:29.099404Z"
+    },
+    {
+      "id": "a1e6b153-a027-488b-b7db-134d4ba6230f",
+      "content_id": "caeeacc5-1527-4b42-8bb7-8f235d857323",
+      "claim_id": "C64",
+      "claim": "For AAC, substrate binding at pH 8.0 led to a bigger thermostability shift than at pH 6.0.",
+      "claim_type": "EXPLICIT",
+      "source": "The opposite effect was observed; substrate binding at pH 8.0 led to a bigger thermostability shift than at pH 6.0.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 4c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:39:29.099404Z"
+    },
+    {
+      "id": "6b7a06d2-8a80-401b-96c3-e94e696e1682",
+      "content_id": "caeeacc5-1527-4b42-8bb7-8f235d857323",
+      "claim_id": "C65",
+      "claim": "The predicted substrate-binding site of AAC has three positively charged residues that interact with the negatively charged phosphate groups of ADP and ATP.",
+      "claim_type": "EXPLICIT",
+      "source": "The predicted substrate-binding site of AAC has three positively charged residues that interact with the negatively charged phosphate groups of ADP and ATP (Kunji and Robinson, 2006; Robinson and Kunji, 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:39:29.099404Z"
+    },
+    {
+      "id": "d2df9c99-e201-4f3a-9591-4bc725b01f7f",
+      "content_id": "caeeacc5-1527-4b42-8bb7-8f235d857323",
+      "claim_id": "C66",
+      "claim": "ATP has pKa values of 0.9, 1.5, 2.3 and 7.7.",
+      "claim_type": "EXPLICIT",
+      "source": "ATP has pKa values of 0.9, 1.5, 2.3 and 7.7, whereas ADP has pKa values 0.9, 2.8 and 6.8.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established chemical knowledge about ATP.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:39:29.099404Z"
+    },
+    {
+      "id": "a9f1c82a-70d9-4fa7-b667-2b3174ee05eb",
+      "content_id": "caeeacc5-1527-4b42-8bb7-8f235d857323",
+      "claim_id": "C67",
+      "claim": "ADP has pKa values of 0.9, 2.8 and 6.8.",
+      "claim_type": "EXPLICIT",
+      "source": "ATP has pKa values of 0.9, 1.5, 2.3 and 7.7, whereas ADP has pKa values 0.9, 2.8 and 6.8.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established chemical knowledge about ADP.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:39:29.099404Z"
+    },
+    {
+      "id": "56577624-9a56-4b20-a144-042d7139dbac",
+      "content_id": "caeeacc5-1527-4b42-8bb7-8f235d857323",
+      "claim_id": "C68",
+      "claim": "ATP and ADP substrates are more negatively charged at pH 8.0 compared to pH 6.0.",
+      "claim_type": "EXPLICIT",
+      "source": "This means that the substrates are more negatively charged at pH 8.0 compared to pH 6.0",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the pKa values of ATP and ADP.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:39:29.099404Z"
+    },
+    {
+      "id": "1ce46418-fcb0-4760-9e3a-d1e9a97774c6",
+      "content_id": "caeeacc5-1527-4b42-8bb7-8f235d857323",
+      "claim_id": "C69",
+      "claim": "The increased negative charge of ATP and ADP at pH 8.0 enhances their binding to the positively charged residues of the AAC substrate binding site, leading to an increase in thermostability.",
+      "claim_type": "EXPLICIT",
+      "source": "which will enhance their binding to the positively charged residues of the substrate binding site, leading to an increase in thermostability.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference from the charge properties and binding site characteristics.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:39:29.099404Z"
+    },
+    {
+      "id": "c3ce56f0-89ec-4371-8b4e-9a2f10185715",
+      "content_id": "caeeacc5-1527-4b42-8bb7-8f235d857323",
+      "claim_id": "C70",
+      "claim": "Phosphate has pKa values of 2.2, 7.2 and 12.3.",
+      "claim_type": "EXPLICIT",
+      "source": "Phosphate has pKa values of 2.2, 7.2 and 12.3",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established chemical knowledge about phosphate.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:39:29.099404Z"
+    },
+    {
+      "id": "26b9fb48-8446-41cb-bb06-4d7649a27ce8",
+      "content_id": "caeeacc5-1527-4b42-8bb7-8f235d857323",
+      "claim_id": "C71",
+      "claim": "The predicted binding site of the phosphate carrier contains two positively charged residues to neutralize the two negative charges on phosphate.",
+      "claim_type": "EXPLICIT",
+      "source": "and the predicted binding site contains two positively charged residues to neutralize the two negative charges on phosphate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a prediction based on structural analysis.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:39:29.099404Z"
+    },
+    {
+      "id": "e6a510f1-cc0a-4f35-a85a-ab8560510269",
+      "content_id": "caeeacc5-1527-4b42-8bb7-8f235d857323",
+      "claim_id": "C72",
+      "claim": "The binding site of the phosphate carrier contains a negatively charged glutamate, which has a pKa of ~4.0.",
+      "claim_type": "EXPLICIT",
+      "source": "However, in addition, the binding site contains a negatively charged glutamate, which has a pKa of ~4.0.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a prediction based on structural analysis and established knowledge of glutamate pKa.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:39:29.099404Z"
+    },
+    {
+      "id": "9b222953-333b-419a-a463-6abcbde62959",
+      "content_id": "caeeacc5-1527-4b42-8bb7-8f235d857323",
+      "claim_id": "C73",
+      "claim": "The coupling proton mediates bonding of the substrate and the carboxyl group of the glutamate residue in the phosphate carrier.",
+      "claim_type": "EXPLICIT",
+      "source": "The coupling proton mediates bonding of the substrate and the carboxyl group of the glutamate residue (Kunji and Robinson, 2010)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:39:29.099404Z"
+    },
+    {
+      "id": "8ab5eb8b-a43d-46b9-b5b6-283864f99a77",
+      "content_id": "caeeacc5-1527-4b42-8bb7-8f235d857323",
+      "claim_id": "C74",
+      "claim": "Proton-mediated bonding in the phosphate carrier occurs more readily at pH 6.0 than pH 8.0.",
+      "claim_type": "EXPLICIT",
+      "source": "which occurs more readily at pH 6.0 than pH 8.0, explaining the difference in thermostability.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference from the pKa of the glutamate residue and pH conditions.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:39:29.099404Z"
+    },
+    {
+      "id": "f44a5460-01ad-4fe1-997f-fb188fc14dea",
+      "content_id": "caeeacc5-1527-4b42-8bb7-8f235d857323",
+      "claim_id": "C75",
+      "claim": "The transport rates of the phosphate carrier are high at pH 6.0 and virtually absent at pH 8.0.",
+      "claim_type": "EXPLICIT",
+      "source": "In support of this notion the transport rates of the phosphate carrier are high at pH 6.0 and virtually absent at pH 8.0 (Stappen and Kr\u00e4mer, 1994).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:39:29.099404Z"
+    },
+    {
+      "id": "cd5ed9d3-d198-47f9-9857-27fabe070021",
+      "content_id": "caeeacc5-1527-4b42-8bb7-8f235d857323",
+      "claim_id": "C76",
+      "claim": "Substrate binding stabilizes transporters, and this effect is enhanced further by the presence of coupling ions.",
+      "claim_type": "EXPLICIT",
+      "source": "These results show that substrate binding stabilizes the transporters, but that this effect is enhanced further by the presence of coupling ions, providing testable hypotheses on energy coupling mechanisms.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental data presented in the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:39:29.099404Z"
+    },
+    {
+      "id": "74df74ae-355e-4354-9b3e-a3d32b927673",
+      "content_id": "caeeacc5-1527-4b42-8bb7-8f235d857323",
+      "claim_id": "C77",
+      "claim": "Thermostability assays can be used to study the interaction of substrates with transporters.",
+      "claim_type": "EXPLICIT",
+      "source": "We have shown that thermostability assays can be used to study the interaction of substrates with transporters",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental work presented in the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:39:29.099404Z"
+    },
+    {
+      "id": "7c698e29-012f-4087-b1a2-2bab2bfe2b39",
+      "content_id": "caeeacc5-1527-4b42-8bb7-8f235d857323",
+      "claim_id": "C78",
+      "claim": "For diverse types of transport proteins, which differ in structure and transport mechanism, a shift in thermostability was observed in the presence of specific substrates.",
+      "claim_type": "EXPLICIT",
+      "source": "Still, for diverse types of transport proteins, which differ in structure and transport mechanism, a shift in thermostability was observed in the presence of specific substrates.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental data on GalP, Mhp1, and AAC.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:39:29.099404Z"
+    },
+    {
+      "id": "5489afc6-5efd-448a-9824-10631e61c22f",
+      "content_id": "caeeacc5-1527-4b42-8bb7-8f235d857323",
+      "claim_id": "C79",
+      "claim": "The thermostability shift is observed at concentrations well above the apparent Km of transport.",
+      "claim_type": "EXPLICIT",
+      "source": "The shift is observed at concentrations well above the apparent Km of transport",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated based on experimental observations shown in Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:39:29.099404Z"
+    },
+    {
+      "id": "d0a94e2c-3720-4576-bcc1-4f6874830e42",
+      "content_id": "caeeacc5-1527-4b42-8bb7-8f235d857323",
+      "claim_id": "C80",
+      "claim": "At high substrate concentrations, a larger part of the protein population is rescued from unfolding by binding of the substrate, increasing the overall number of interactions.",
+      "claim_type": "EXPLICIT",
+      "source": "as under these conditions a larger part of the protein population is rescued from unfolding by binding of the substrate, increasing the overall number of interactions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a mechanistic explanation inferred from the experimental observations.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:39:29.099404Z"
+    },
+    {
+      "id": "edb79ddc-92ea-49d2-bd56-720c2686937c",
+      "content_id": "caeeacc5-1527-4b42-8bb7-8f235d857323",
+      "claim_id": "C81",
+      "claim": "Thermostability assays can be used to limit the number of potential substrate candidates from libraries of unlabeled compounds.",
+      "claim_type": "EXPLICIT",
+      "source": "First, they can be used to limit the number of potential substrate candidates from libraries of unlabeled compounds, providing important clues about the substrate specificity (Figures 2 and 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a conclusion drawn from the experimental work presented in Figures 2 and 3.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:39:29.099404Z"
+    },
+    {
+      "id": "92524031-a141-4cef-b2b2-10101dd46dc0",
+      "content_id": "caeeacc5-1527-4b42-8bb7-8f235d857323",
+      "claim_id": "C82",
+      "claim": "The thermostability assay correctly identified the substrates from a set of chemically related compounds, including stereo-isoforms.",
+      "claim_type": "EXPLICIT",
+      "source": "In the tested cases, the assay correctly identified the substrates from a set of chemically related compounds, including stereo-isoforms.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental results on GalP, Mhp1, and AAC.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:39:29.099404Z"
+    },
+    {
+      "id": "3515534b-f077-43d7-9a10-3a2203d3428e",
+      "content_id": "caeeacc5-1527-4b42-8bb7-8f235d857323",
+      "claim_id": "C83",
+      "claim": "Thermostability assays can be used to extend the substrate specificity of known transport proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, the assays can be used to extend the substrate specificity of known transport proteins, as was shown for GalP with D-glucosamine (Figure 2b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by the discovery that D-glucosamine is a substrate of GalP.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:39:29.099404Z"
+    },
+    {
+      "id": "589f65c2-c14b-42cc-9f94-d8d7a43d469b",
+      "content_id": "caeeacc5-1527-4b42-8bb7-8f235d857323",
+      "claim_id": "C84",
+      "claim": "Thermostability assays can be used to identify functional groups that are key to substrate binding.",
+      "claim_type": "EXPLICIT",
+      "source": "Third, they can be used to identify functional groups that are key to substrate binding, as shown for AAC, where nucleotide di- and tri-phosphates bound more tightly than nucleotide monophosphates (Figure 2f).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by the differential stabilization of AAC by nucleotides with different numbers of phosphate groups.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:39:29.099404Z"
+    },
+    {
+      "id": "6158ab54-5e5d-49b9-8be3-da0d4a3267a3",
+      "content_id": "caeeacc5-1527-4b42-8bb7-8f235d857323",
+      "claim_id": "C85",
+      "claim": "Thermostability assays can provide important clues on the involvement of coupling ions in substrate binding.",
+      "claim_type": "EXPLICIT",
+      "source": "Fourth, this assay can provide important clues on the involvement of coupling ions in substrate binding, as shown for cases where transport is driven by sodium ion or proton symport (Figure 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by the pH and ion-dependent stabilization experiments shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:39:29.099404Z"
+    },
+    {
+      "id": "53dd5cd3-d7dd-491e-b333-81fdc7d7acd0",
+      "content_id": "caeeacc5-1527-4b42-8bb7-8f235d857323",
+      "claim_id": "C86",
+      "claim": "The thermostability assay method is highly reproducible.",
+      "claim_type": "EXPLICIT",
+      "source": "It is highly reproducible and can be performed in a high-throughput manner, allowing screening of about 100 compounds per machine per hour.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a characteristic of the method based on the authors' experience.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:39:29.099404Z"
+    },
+    {
+      "id": "8515279b-3214-4d2b-b083-66d5f3d29bfa",
+      "content_id": "caeeacc5-1527-4b42-8bb7-8f235d857323",
+      "claim_id": "C87",
+      "claim": "The thermostability assay can be performed in a high-throughput manner, allowing screening of about 100 compounds per machine per hour.",
+      "claim_type": "EXPLICIT",
+      "source": "It is highly reproducible and can be performed in a high-throughput manner, allowing screening of about 100 compounds per machine per hour.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a characteristic of the method based on the authors' experience.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:39:29.099404Z"
+    },
+    {
+      "id": "46edc581-3342-4a9a-b9e1-6f2b47e06375",
+      "content_id": "caeeacc5-1527-4b42-8bb7-8f235d857323",
+      "claim_id": "C88",
+      "claim": "The thermostability assay requires a relatively small amount of protein per assay (micrograms).",
+      "claim_type": "EXPLICIT",
+      "source": "The assay requires a relatively small amount of protein per assay (micrograms), depending on the number of buried cysteine residues.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a characteristic of the method based on the authors' experience.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:39:29.099404Z"
+    },
+    {
+      "id": "6242fae5-03bc-4e14-bf74-7ffb681ec306",
+      "content_id": "caeeacc5-1527-4b42-8bb7-8f235d857323",
+      "claim_id": "C89",
+      "claim": "The unfolding curves in thermostability assays are important quality checks, as they indicate that the protein is folded and therefore competent to bind substrate.",
+      "claim_type": "EXPLICIT",
+      "source": "Another advantage is that the unfolding curves are themselves important quality checks, as they indicate that the protein is folded and therefore competent to bind substrate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an advantage of the method based on logical inference.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:39:29.099404Z"
+    },
+    {
+      "id": "41c44681-54a8-4c52-9032-99475a4d5083",
+      "content_id": "caeeacc5-1527-4b42-8bb7-8f235d857323",
+      "claim_id": "C90",
+      "claim": "Compounds which are poorly soluble in water can be added dissolved in dimethyl sulfoxide, provided that the final concentration of the solvent is kept low.",
+      "claim_type": "EXPLICIT",
+      "source": "Compounds which are poorly soluble in water can be added dissolved in dimethyl sulfoxide, provided that the final concentration of the solvent is kept low.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a practical consideration for the method.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:39:29.099404Z"
+    },
+    {
+      "id": "284b1b57-eda5-4783-a5c8-40f7ae3cb1bf",
+      "content_id": "caeeacc5-1527-4b42-8bb7-8f235d857323",
+      "claim_id": "C91",
+      "claim": "Most compounds of the library can be used as internal controls in thermostability assays, providing a reliable discrimination between positive and negative results.",
+      "claim_type": "EXPLICIT",
+      "source": "Another advantage is that most compounds of the library can be used as internal controls, providing a reliable discrimination between positive and negative results.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an advantage of the method based on the authors' experience.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:39:29.099404Z"
+    },
+    {
+      "id": "7f8cf1ec-6592-49b5-8713-607e6f6b1cd6",
+      "content_id": "caeeacc5-1527-4b42-8bb7-8f235d857323",
+      "claim_id": "C92",
+      "claim": "The polyamines spermine and spermidine have a destabilising effect on all purified mitochondrial carriers tested except AAC.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, the polyamines spermine and spermidine have a destabilising effect on all purified mitochondrial carriers tested in our laboratory with the exception of AAC.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an observation from the authors' laboratory work.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:39:29.099404Z"
+    },
+    {
+      "id": "8c6ba700-e646-418d-8808-3745488764c5",
+      "content_id": "caeeacc5-1527-4b42-8bb7-8f235d857323",
+      "claim_id": "C93",
+      "claim": "Proteins incorporated into nanodiscs or amphipols can be successfully assayed using the thermostability approach.",
+      "claim_type": "EXPLICIT",
+      "source": "We have also observed that proteins incorporated into nanodiscs or amphipols can be successfully assayed using this approach",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an observation from the authors' work.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:39:29.099404Z"
+    },
+    {
+      "id": "27c3e676-1531-4c81-9ffc-b5f9bca35a80",
+      "content_id": "caeeacc5-1527-4b42-8bb7-8f235d857323",
+      "claim_id": "C94",
+      "claim": "Only proteins that have buried thiols can be used in the CPM-based thermostability assay.",
+      "claim_type": "EXPLICIT",
+      "source": "There are also some limitations, as only proteins that have buried thiols can be used",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a limitation of the method.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:39:29.099404Z"
+    },
+    {
+      "id": "027e6e95-5a05-45bb-b2b2-0b37a33d5422",
+      "content_id": "caeeacc5-1527-4b42-8bb7-8f235d857323",
+      "claim_id": "C95",
+      "claim": "Accessible cysteines can be tolerated in the thermostability assay as they only raise the base line without interfering with the unfolding curve.",
+      "claim_type": "EXPLICIT",
+      "source": "although accessible cysteines can be tolerated as they only raise the base line of the assay without interfering with the unfolding curve.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a practical consideration for the method.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:39:29.099404Z"
+    },
+    {
+      "id": "a52dfb79-1fbf-46a6-b13c-80e565ca3459",
+      "content_id": "caeeacc5-1527-4b42-8bb7-8f235d857323",
+      "claim_id": "C96",
+      "claim": "Thiol-containing compounds, such as cysteine or glutathione, cannot be screened using the CPM-based thermostability assay as the probe reacts with them directly.",
+      "claim_type": "EXPLICIT",
+      "source": "Thiol-containing compounds, such as cysteine or glutathione, cannot be screened as the probe reacts with them directly.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a limitation of the method based on the chemistry of CPM.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:39:29.099404Z"
+    },
+    {
+      "id": "75a82591-fc2a-4da9-a4d1-13e0c6d753a9",
+      "content_id": "caeeacc5-1527-4b42-8bb7-8f235d857323",
+      "claim_id": "C97",
+      "claim": "Changes in the fluorescence of environmentally sensitive dyes or endogenous tryptophans can be used as alternatives to CPM in thermostability assays.",
+      "claim_type": "EXPLICIT",
+      "source": "However, changes in the fluorescence of environmentally sensitive dyes or endogenous tryptophans can be used as alternatives to CPM.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an alternative approach to overcome the limitation of CPM.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:39:29.099404Z"
+    },
+    {
+      "id": "6a6a8f5a-6e6a-4808-8392-a60fd57b2450",
+      "content_id": "caeeacc5-1527-4b42-8bb7-8f235d857323",
+      "claim_id": "C98",
+      "claim": "The thermostability assay requires purified and stable transporter in detergent.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, the assay requires purified and stable transporter in detergent, although partially purified protein might be sufficient.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a requirement for the method.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:39:29.099404Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "9a086134-1c6a-40c5-9f10-5c96e6a86ba9",
+      "content_id": "caeeacc5-1527-4b42-8bb7-8f235d857323",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Transport proteins are widespread but poorly characterized across organisms. The manuscript establishes that transport proteins comprise 5-15% of genomes, with substantial fractions having unknown substrate specificity in humans (>25% of 538 solute carriers) and across major superfamilies (MFS: 320,665 entries; amino acid-polyamine-organocation: 147,819 entries; mitochondrial carrier family: 89,340 entries).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C7, C16-C19, C32, C42-C44 collectively establish the scope of the problem through citations to databases and literature. The statistics are drawn from established sources (Pfam, slc.bioparadigms.org) and published literature, providing a well-supported motivation for the study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T06:39:29.099404Z"
+    },
+    {
+      "id": "ef0475f8-ae43-432a-8fa7-b6bc9242eeb8",
+      "content_id": "caeeacc5-1527-4b42-8bb7-8f235d857323",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Substrate binding to transport proteins increases molecular interactions and stabilizes the ligand-bound state. This principle was previously demonstrated for the mitochondrial ADP/ATP carrier with specific inhibitors carboxyatractyloside and bongkrekic acid.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8-C11 establish the theoretical basis for the method through citations to prior work and established biophysical principles. The prior demonstration with inhibitors (C11) provides precedent for the approach, though this is confirmatory rather than novel.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T06:39:29.099404Z"
+    },
+    {
+      "id": "4627db86-2c1e-4838-83a3-a6c9ac719e65",
+      "content_id": "caeeacc5-1527-4b42-8bb7-8f235d857323",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Substrates ADP and ATP, but not AMP, stabilize the mitochondrial ADP/ATP carrier in thermostability assays at high concentrations (well above Km). This substrate-induced stabilization reflects the known substrate specificity and occurs because high substrate concentrations rescue a larger fraction of the protein population from unfolding.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C12-C14, C79-C80 are supported by experimental data (Figure 1b, Figure 1\u2014figure supplement 1) and match known AAC specificity from cited literature. The mechanistic explanation for high concentration requirement is logical and consistent with the population-based nature of the assay.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T06:39:29.099404Z"
+    },
+    {
+      "id": "8ef18826-e65a-4f38-b7e6-3200425f6cdd",
+      "content_id": "caeeacc5-1527-4b42-8bb7-8f235d857323",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The galactose transporter GalP shows substrate-specific thermostability shifts with D-glucosamine (\u0394Tm 5.7\u00b10.4\u00b0C), D-glucose (\u0394Tm 4.2\u00b10.5\u00b0C), and D-galactose (\u0394Tm 2.1\u00b10.6\u00b0C), but not with L-isoforms. D-glucosamine was identified as a new substrate and confirmed by transport assays.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C21-C27 are supported by thermostability data (Figure 2b, Figure 2\u2014figure supplement 1) and transport assays (Figure 2\u2014figure supplement 2). The stereoselectivity (C25) and discovery of a new substrate (C27) demonstrate the method's specificity and utility. Statistical significance is reported.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T06:39:29.099404Z"
+    },
+    {
+      "id": "45137d65-5de5-46c7-ab14-e2bca6fe4680",
+      "content_id": "caeeacc5-1527-4b42-8bb7-8f235d857323",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The hydantoin transporter Mhp1 shows specific thermostability shifts with known substrates 5-indolylmethyl-L-hydantoin (\u0394Tm 14.1\u00b11.2\u00b0C), 5-benzyl-L-hydantoin (\u0394Tm 13.6\u00b11.2\u00b0C), 5-bromovinylhydantoin (\u0394Tm 11.9\u00b11.1\u00b0C), and inhibitor L-NMH (\u0394Tm 15.6\u00b11.7\u00b0C), matching known specificity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C34-C39 are supported by experimental data (Figure 2d, Figure 2\u2014figure supplement 3) and match literature on Mhp1 specificity. The assay correctly identified substrates from a library of nucleobases without false positives, demonstrating specificity.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T06:39:29.099404Z"
+    },
+    {
+      "id": "2d17cb3f-db0d-431a-8b5e-edd1b2ae0f4e",
+      "content_id": "caeeacc5-1527-4b42-8bb7-8f235d857323",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The mitochondrial ADP/ATP carrier shows differential stabilization by nucleotides, with ATP (\u0394Tm 7.2\u00b10.2\u00b0C) and ADP (\u0394Tm 6.0\u00b10.5\u00b0C) causing larger shifts than dADP (\u0394Tm 1.8\u00b10.2\u00b0C). Di- and tri-phosphate nucleotides consistently show larger shifts than monophosphates.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C45-C48 are supported by experimental data (Figures 1b, 2f, 1d). The differential stabilization by phosphate number identifies functional groups important for binding, demonstrating the method can reveal structure-activity relationships.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T06:39:29.099404Z"
+    },
+    {
+      "id": "3445eafa-da75-4d72-8885-d982b380e6bb",
+      "content_id": "caeeacc5-1527-4b42-8bb7-8f235d857323",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "A previously uncharacterized mitochondrial carrier from Tetrahymena thermophila was screened against 132 compounds. Phosphate caused the highest thermostability shift (\u0394Tm 4.6\u00b10.4\u00b0C), followed by glyoxylate, acetyl-phosphate, and phosphoenolpyruvate. Transport assays confirmed phosphate as substrate; glyoxylate competed for binding but was not transported.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C49-C58 demonstrate the method's utility for substrate discovery. Thermostability screening (Figure 3, Figure 3\u2014figure supplement 1) narrowed candidates, and transport assays (Figure 3\u2014figure supplement 3) validated phosphate as substrate and glyoxylate as competitor. This represents successful de novo substrate identification.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T06:39:29.099404Z"
+    },
+    {
+      "id": "4c641450-72a4-41f8-aaa0-42c1b5b084d4",
+      "content_id": "caeeacc5-1527-4b42-8bb7-8f235d857323",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Sodium ions specifically enhance substrate-induced stabilization of the sodium-coupled transporter Mhp1, while potassium, calcium, and magnesium ions show minimal effects, demonstrating ion-coupling specificity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C59-C60 are supported by experimental data (Figure 4a) and match known sodium-coupling mechanism from literature. The ion selectivity demonstrates the method can identify coupling ions, though the magnitude of differences could be better quantified.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T06:39:29.099404Z"
+    },
+    {
+      "id": "af454319-a426-4124-b269-e7476c13bea4",
+      "content_id": "caeeacc5-1527-4b42-8bb7-8f235d857323",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The proton-coupled phosphate carrier shows pH-dependent substrate stabilization, with larger shifts at pH 6.0 (\u0394Tm 4.6\u00b10.4\u00b0C) than pH 8.0 (\u0394Tm 2.6\u00b10.4\u00b0C). This reflects proton-mediated bonding between substrate and a glutamate residue, consistent with transport rates being high at pH 6.0 and absent at pH 8.0.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C61-C62, C73-C75 are supported by experimental data (Figure 4b) and literature on proton coupling and transport rates. The pH-dependence provides mechanistic insight into coupling, though the glutamate role (C72-C73) is inferred from structural predictions rather than direct evidence.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T06:39:29.099404Z"
+    },
+    {
+      "id": "47a9dc53-0f28-4bdb-824a-10a6cd01c9cd",
+      "content_id": "caeeacc5-1527-4b42-8bb7-8f235d857323",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The mitochondrial ADP/ATP carrier (not proton-coupled) shows opposite pH-dependence from the phosphate carrier, with greater stabilization at pH 8.0 than pH 6.0. This is explained by increased negative charge on ATP/ADP at higher pH enhancing binding to positively charged residues in the substrate-binding site.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C63-C69 are supported by experimental data (Figure 4c) and established pKa values. The opposite pH-dependence compared to the phosphate carrier (C62) serves as an effective control, and the mechanistic explanation based on charge interactions is logical and well-supported.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T06:39:29.099404Z"
+    },
+    {
+      "id": "b8de772a-19ed-4dd6-a990-3805d7e77bfa",
+      "content_id": "caeeacc5-1527-4b42-8bb7-8f235d857323",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Thermostability assays can identify substrates and coupling ions across diverse transporter families. The method correctly identified substrates from chemically related compounds including stereo-isoforms, extended substrate specificity (D-glucosamine for GalP), identified key functional groups (phosphate number for AAC), and revealed coupling ion involvement (sodium for Mhp1, protons for phosphate carrier).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C76-C78, C81-C85 summarize the method's capabilities demonstrated across three transporter families. The conclusions are well-supported by the experimental results (C12-C27, C35-C39, C45-C48, C52-C58, C60, C62, C64), showing broad applicability and multiple use cases.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T06:39:29.099404Z"
+    },
+    {
+      "id": "b7aa233a-a4b3-4b63-a0d7-40ef1d306bcc",
+      "content_id": "caeeacc5-1527-4b42-8bb7-8f235d857323",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The thermostability assay is highly reproducible, high-throughput (~100 compounds/machine/hour), requires small amounts of protein (micrograms), provides quality control through unfolding curves, accommodates poorly soluble compounds in DMSO, and allows most library compounds to serve as internal controls.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C86-C91 describe practical advantages based on the authors' experience implementing the method. The reproducibility is evident from error bars in figures, and the throughput/protein requirements are reasonable given the experimental design. These are methodological strengths rather than novel findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T06:39:29.099404Z"
+    },
+    {
+      "id": "f12dfbe1-9a54-4b46-a90b-0fd1f36f0f44",
+      "content_id": "caeeacc5-1527-4b42-8bb7-8f235d857323",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The method identified generic effects (polyamines destabilize most mitochondrial carriers except AAC) and is compatible with alternative membrane mimetics (nanodiscs, amphipols).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C92-C93 describe additional observations from the authors' laboratory work. These extend the method's applicability but are stated without detailed supporting data in the manuscript.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T06:39:29.099404Z"
+    },
+    {
+      "id": "51d8b119-cb4e-4438-ba51-f4813feeacd4",
+      "content_id": "caeeacc5-1527-4b42-8bb7-8f235d857323",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The CPM-based thermostability assay has limitations: requires buried thiols (though accessible cysteines are tolerable), cannot screen thiol-containing compounds, and requires purified stable protein in detergent. Alternative fluorescence probes (environmentally sensitive dyes, tryptophans) can overcome some limitations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C94-C98 honestly describe method limitations based on the chemistry of CPM and practical requirements. The limitations are logical given the detection mechanism, and alternatives are suggested. This represents appropriate scientific transparency.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T06:39:29.099404Z"
+    },
+    {
+      "id": "96f6054b-3b15-4585-acfc-1c2231cde901",
+      "content_id": "caeeacc5-1527-4b42-8bb7-8f235d857323",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The three transporters tested (GalP, Mhp1, AAC) represent distinct structural families: GalP is an MFS sugar porter, Mhp1 has the LeuT-fold and belongs to the amino acid-polyamine-organocation superfamily, and AAC belongs to the mitochondrial carrier family with diverse transport modes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C15, C20, C28-C31, C33, C40-C41 establish the structural and mechanistic diversity of test cases through literature citations. This diversity strengthens the conclusion that the method is broadly applicable, though all are secondary active or facilitative transporters.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T06:39:29.099404Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "39d0f395-93c2-49c0-a3bd-f22035d93b26",
+      "result_id": "9a086134-1c6a-40c5-9f10-5c96e6a86ba9"
+    },
+    {
+      "claim_id": "ea024d0e-5dd5-47db-9f4f-ff0ad8a25313",
+      "result_id": "9a086134-1c6a-40c5-9f10-5c96e6a86ba9"
+    },
+    {
+      "claim_id": "68611376-be9b-4a63-86f8-9426a02fa3ff",
+      "result_id": "9a086134-1c6a-40c5-9f10-5c96e6a86ba9"
+    },
+    {
+      "claim_id": "974d74b8-58be-45c4-b21e-a1a2bd1afa55",
+      "result_id": "9a086134-1c6a-40c5-9f10-5c96e6a86ba9"
+    },
+    {
+      "claim_id": "50d40ec6-d7ae-40b6-b962-7984f8ee5361",
+      "result_id": "9a086134-1c6a-40c5-9f10-5c96e6a86ba9"
+    },
+    {
+      "claim_id": "3154f0f9-dee6-498c-8b84-8cdf78b8318e",
+      "result_id": "9a086134-1c6a-40c5-9f10-5c96e6a86ba9"
+    },
+    {
+      "claim_id": "f2e13289-8527-4ff4-bd6e-ab5ca44663d8",
+      "result_id": "9a086134-1c6a-40c5-9f10-5c96e6a86ba9"
+    },
+    {
+      "claim_id": "eb4e3b51-866c-4be9-ab27-0d1388bcc960",
+      "result_id": "9a086134-1c6a-40c5-9f10-5c96e6a86ba9"
+    },
+    {
+      "claim_id": "d5e79ff5-28e9-4a2e-9c97-c7582dc7c457",
+      "result_id": "9a086134-1c6a-40c5-9f10-5c96e6a86ba9"
+    },
+    {
+      "claim_id": "a21aa333-9e27-412c-b0f9-ac472a84304a",
+      "result_id": "9a086134-1c6a-40c5-9f10-5c96e6a86ba9"
+    },
+    {
+      "claim_id": "5e0230a2-5dcc-4773-98e2-2765c781bfa2",
+      "result_id": "9a086134-1c6a-40c5-9f10-5c96e6a86ba9"
+    },
+    {
+      "claim_id": "93fc91a2-a3f9-4120-b31b-4d03400cc27a",
+      "result_id": "9a086134-1c6a-40c5-9f10-5c96e6a86ba9"
+    },
+    {
+      "claim_id": "04455d00-f588-43db-9744-7e2e05c1e4ce",
+      "result_id": "9a086134-1c6a-40c5-9f10-5c96e6a86ba9"
+    },
+    {
+      "claim_id": "a1acea66-53af-4555-affa-cd6d50a53f77",
+      "result_id": "9a086134-1c6a-40c5-9f10-5c96e6a86ba9"
+    },
+    {
+      "claim_id": "baa7bfd2-3a47-488a-895b-8f40b01437bb",
+      "result_id": "9a086134-1c6a-40c5-9f10-5c96e6a86ba9"
+    },
+    {
+      "claim_id": "512a24fd-9522-4371-8d6e-d4a5efc38180",
+      "result_id": "ef0475f8-ae43-432a-8fa7-b6bc9242eeb8"
+    },
+    {
+      "claim_id": "c5064a5d-53e3-46bf-a242-6a475f629db7",
+      "result_id": "ef0475f8-ae43-432a-8fa7-b6bc9242eeb8"
+    },
+    {
+      "claim_id": "6047f7dd-97bc-411b-b423-05f0e5241bd5",
+      "result_id": "ef0475f8-ae43-432a-8fa7-b6bc9242eeb8"
+    },
+    {
+      "claim_id": "450ab9d5-40e0-4e7c-87ad-4897a775b5e4",
+      "result_id": "ef0475f8-ae43-432a-8fa7-b6bc9242eeb8"
+    },
+    {
+      "claim_id": "d9ccb272-0b9c-48eb-bc0a-b87d02326f00",
+      "result_id": "4627db86-2c1e-4838-83a3-a6c9ac719e65"
+    },
+    {
+      "claim_id": "d8ec74f8-2fef-4345-86e7-d2297fbb3903",
+      "result_id": "4627db86-2c1e-4838-83a3-a6c9ac719e65"
+    },
+    {
+      "claim_id": "3671cc02-aa63-44da-b08c-40126e71aaea",
+      "result_id": "4627db86-2c1e-4838-83a3-a6c9ac719e65"
+    },
+    {
+      "claim_id": "5489afc6-5efd-448a-9824-10631e61c22f",
+      "result_id": "4627db86-2c1e-4838-83a3-a6c9ac719e65"
+    },
+    {
+      "claim_id": "d0a94e2c-3720-4576-bcc1-4f6874830e42",
+      "result_id": "4627db86-2c1e-4838-83a3-a6c9ac719e65"
+    },
+    {
+      "claim_id": "941472b7-8918-4075-a191-2c6ed2c5d229",
+      "result_id": "8ef18826-e65a-4f38-b7e6-3200425f6cdd"
+    },
+    {
+      "claim_id": "b53431b9-610a-44e7-81bf-099191103302",
+      "result_id": "8ef18826-e65a-4f38-b7e6-3200425f6cdd"
+    },
+    {
+      "claim_id": "734cdc84-d61c-43e0-8b85-8d4da061a816",
+      "result_id": "8ef18826-e65a-4f38-b7e6-3200425f6cdd"
+    },
+    {
+      "claim_id": "c26b0914-9197-4d08-820c-8a6c615ec291",
+      "result_id": "8ef18826-e65a-4f38-b7e6-3200425f6cdd"
+    },
+    {
+      "claim_id": "258edc92-1539-45a2-aa65-7e188104ad08",
+      "result_id": "8ef18826-e65a-4f38-b7e6-3200425f6cdd"
+    },
+    {
+      "claim_id": "4953fec2-b936-472f-a0e3-23d3343253ac",
+      "result_id": "8ef18826-e65a-4f38-b7e6-3200425f6cdd"
+    },
+    {
+      "claim_id": "8575b2c8-fa1b-4a06-8003-3c98aa656e17",
+      "result_id": "8ef18826-e65a-4f38-b7e6-3200425f6cdd"
+    },
+    {
+      "claim_id": "a93015ff-adfc-4b2e-9daa-946c4fce9ca0",
+      "result_id": "45137d65-5de5-46c7-ab14-e2bca6fe4680"
+    },
+    {
+      "claim_id": "acf4e02b-c5e8-4ab8-a086-a97fd97c07a7",
+      "result_id": "45137d65-5de5-46c7-ab14-e2bca6fe4680"
+    },
+    {
+      "claim_id": "5d17448b-e37d-44d8-941c-67107186e16b",
+      "result_id": "45137d65-5de5-46c7-ab14-e2bca6fe4680"
+    },
+    {
+      "claim_id": "40a79cae-c6d3-447e-9b65-24b5e8b22261",
+      "result_id": "45137d65-5de5-46c7-ab14-e2bca6fe4680"
+    },
+    {
+      "claim_id": "69af5f18-79f1-4632-abf6-744975b65411",
+      "result_id": "45137d65-5de5-46c7-ab14-e2bca6fe4680"
+    },
+    {
+      "claim_id": "b9bffacc-3a39-4752-8205-361cb7c09899",
+      "result_id": "45137d65-5de5-46c7-ab14-e2bca6fe4680"
+    },
+    {
+      "claim_id": "6e24f5b6-b8c8-46f5-bf28-f22a6831254b",
+      "result_id": "2d17cb3f-db0d-431a-8b5e-edd1b2ae0f4e"
+    },
+    {
+      "claim_id": "386782aa-0cdd-4efe-bf4d-9cd51caeefd0",
+      "result_id": "2d17cb3f-db0d-431a-8b5e-edd1b2ae0f4e"
+    },
+    {
+      "claim_id": "32ac0ed0-afbd-4a62-b9e5-9f0cef13f752",
+      "result_id": "2d17cb3f-db0d-431a-8b5e-edd1b2ae0f4e"
+    },
+    {
+      "claim_id": "55dce0a9-9e3c-48ef-a00d-e05475b67a26",
+      "result_id": "2d17cb3f-db0d-431a-8b5e-edd1b2ae0f4e"
+    },
+    {
+      "claim_id": "4981dfd7-e447-4de4-9254-f1c36a8b8eaa",
+      "result_id": "3445eafa-da75-4d72-8885-d982b380e6bb"
+    },
+    {
+      "claim_id": "06a485a1-2c17-4b44-8edc-28ed947fb97d",
+      "result_id": "3445eafa-da75-4d72-8885-d982b380e6bb"
+    },
+    {
+      "claim_id": "792b5b53-3d48-4c60-875f-10578e3a1ee5",
+      "result_id": "3445eafa-da75-4d72-8885-d982b380e6bb"
+    },
+    {
+      "claim_id": "2141b261-6586-408e-a8cb-3e93cb8af2c6",
+      "result_id": "3445eafa-da75-4d72-8885-d982b380e6bb"
+    },
+    {
+      "claim_id": "33a840e9-1587-40cd-99a4-43bf15639a04",
+      "result_id": "3445eafa-da75-4d72-8885-d982b380e6bb"
+    },
+    {
+      "claim_id": "9673baaf-6fb0-4a01-9c94-a57eebccf84e",
+      "result_id": "3445eafa-da75-4d72-8885-d982b380e6bb"
+    },
+    {
+      "claim_id": "9dd7cdd8-74e8-4e77-9196-1559dfa67e5e",
+      "result_id": "3445eafa-da75-4d72-8885-d982b380e6bb"
+    },
+    {
+      "claim_id": "00b51133-7153-46fa-af12-e81f09d54066",
+      "result_id": "3445eafa-da75-4d72-8885-d982b380e6bb"
+    },
+    {
+      "claim_id": "88af5cc7-8ddf-4dbe-a4b6-2d4c4d2cdcf7",
+      "result_id": "3445eafa-da75-4d72-8885-d982b380e6bb"
+    },
+    {
+      "claim_id": "ef35b053-5fac-4bf8-9778-290a7a6ccd5b",
+      "result_id": "3445eafa-da75-4d72-8885-d982b380e6bb"
+    },
+    {
+      "claim_id": "5868dcac-04c1-4517-9afb-b9849ff1227c",
+      "result_id": "4c641450-72a4-41f8-aaa0-42c1b5b084d4"
+    },
+    {
+      "claim_id": "50904abe-fc60-4f7c-b1b4-c9e4d4042b06",
+      "result_id": "4c641450-72a4-41f8-aaa0-42c1b5b084d4"
+    },
+    {
+      "claim_id": "7965358d-1c49-4588-adfd-97150142b389",
+      "result_id": "af454319-a426-4124-b269-e7476c13bea4"
+    },
+    {
+      "claim_id": "67fc3d8e-c62e-4e7b-b73f-15cf4168d0fd",
+      "result_id": "af454319-a426-4124-b269-e7476c13bea4"
+    },
+    {
+      "claim_id": "9b222953-333b-419a-a463-6abcbde62959",
+      "result_id": "af454319-a426-4124-b269-e7476c13bea4"
+    },
+    {
+      "claim_id": "8ab5eb8b-a43d-46b9-b5b6-283864f99a77",
+      "result_id": "af454319-a426-4124-b269-e7476c13bea4"
+    },
+    {
+      "claim_id": "f44a5460-01ad-4fe1-997f-fb188fc14dea",
+      "result_id": "af454319-a426-4124-b269-e7476c13bea4"
+    },
+    {
+      "claim_id": "3843f080-2dff-47d7-b15e-43c2677100e0",
+      "result_id": "47a9dc53-0f28-4bdb-824a-10a6cd01c9cd"
+    },
+    {
+      "claim_id": "a1e6b153-a027-488b-b7db-134d4ba6230f",
+      "result_id": "47a9dc53-0f28-4bdb-824a-10a6cd01c9cd"
+    },
+    {
+      "claim_id": "6b7a06d2-8a80-401b-96c3-e94e696e1682",
+      "result_id": "47a9dc53-0f28-4bdb-824a-10a6cd01c9cd"
+    },
+    {
+      "claim_id": "d2df9c99-e201-4f3a-9591-4bc725b01f7f",
+      "result_id": "47a9dc53-0f28-4bdb-824a-10a6cd01c9cd"
+    },
+    {
+      "claim_id": "a9f1c82a-70d9-4fa7-b667-2b3174ee05eb",
+      "result_id": "47a9dc53-0f28-4bdb-824a-10a6cd01c9cd"
+    },
+    {
+      "claim_id": "56577624-9a56-4b20-a144-042d7139dbac",
+      "result_id": "47a9dc53-0f28-4bdb-824a-10a6cd01c9cd"
+    },
+    {
+      "claim_id": "1ce46418-fcb0-4760-9e3a-d1e9a97774c6",
+      "result_id": "47a9dc53-0f28-4bdb-824a-10a6cd01c9cd"
+    },
+    {
+      "claim_id": "cd5ed9d3-d198-47f9-9857-27fabe070021",
+      "result_id": "b8de772a-19ed-4dd6-a990-3805d7e77bfa"
+    },
+    {
+      "claim_id": "74df74ae-355e-4354-9b3e-a3d32b927673",
+      "result_id": "b8de772a-19ed-4dd6-a990-3805d7e77bfa"
+    },
+    {
+      "claim_id": "7c698e29-012f-4087-b1a2-2bab2bfe2b39",
+      "result_id": "b8de772a-19ed-4dd6-a990-3805d7e77bfa"
+    },
+    {
+      "claim_id": "edb79ddc-92ea-49d2-bd56-720c2686937c",
+      "result_id": "b8de772a-19ed-4dd6-a990-3805d7e77bfa"
+    },
+    {
+      "claim_id": "92524031-a141-4cef-b2b2-10101dd46dc0",
+      "result_id": "b8de772a-19ed-4dd6-a990-3805d7e77bfa"
+    },
+    {
+      "claim_id": "3515534b-f077-43d7-9a10-3a2203d3428e",
+      "result_id": "b8de772a-19ed-4dd6-a990-3805d7e77bfa"
+    },
+    {
+      "claim_id": "589f65c2-c14b-42cc-9f94-d8d7a43d469b",
+      "result_id": "b8de772a-19ed-4dd6-a990-3805d7e77bfa"
+    },
+    {
+      "claim_id": "6158ab54-5e5d-49b9-8be3-da0d4a3267a3",
+      "result_id": "b8de772a-19ed-4dd6-a990-3805d7e77bfa"
+    },
+    {
+      "claim_id": "53dd5cd3-d7dd-491e-b333-81fdc7d7acd0",
+      "result_id": "b7aa233a-a4b3-4b63-a0d7-40ef1d306bcc"
+    },
+    {
+      "claim_id": "8515279b-3214-4d2b-b083-66d5f3d29bfa",
+      "result_id": "b7aa233a-a4b3-4b63-a0d7-40ef1d306bcc"
+    },
+    {
+      "claim_id": "46edc581-3342-4a9a-b9e1-6f2b47e06375",
+      "result_id": "b7aa233a-a4b3-4b63-a0d7-40ef1d306bcc"
+    },
+    {
+      "claim_id": "6242fae5-03bc-4e14-bf74-7ffb681ec306",
+      "result_id": "b7aa233a-a4b3-4b63-a0d7-40ef1d306bcc"
+    },
+    {
+      "claim_id": "41c44681-54a8-4c52-9032-99475a4d5083",
+      "result_id": "b7aa233a-a4b3-4b63-a0d7-40ef1d306bcc"
+    },
+    {
+      "claim_id": "284b1b57-eda5-4783-a5c8-40f7ae3cb1bf",
+      "result_id": "b7aa233a-a4b3-4b63-a0d7-40ef1d306bcc"
+    },
+    {
+      "claim_id": "7f8cf1ec-6592-49b5-8713-607e6f6b1cd6",
+      "result_id": "f12dfbe1-9a54-4b46-a90b-0fd1f36f0f44"
+    },
+    {
+      "claim_id": "8c6ba700-e646-418d-8808-3745488764c5",
+      "result_id": "f12dfbe1-9a54-4b46-a90b-0fd1f36f0f44"
+    },
+    {
+      "claim_id": "27c3e676-1531-4c81-9ffc-b5f9bca35a80",
+      "result_id": "51d8b119-cb4e-4438-ba51-f4813feeacd4"
+    },
+    {
+      "claim_id": "027e6e95-5a05-45bb-b2b2-0b37a33d5422",
+      "result_id": "51d8b119-cb4e-4438-ba51-f4813feeacd4"
+    },
+    {
+      "claim_id": "a52dfb79-1fbf-46a6-b13c-80e565ca3459",
+      "result_id": "51d8b119-cb4e-4438-ba51-f4813feeacd4"
+    },
+    {
+      "claim_id": "75a82591-fc2a-4da9-a4d1-13e0c6d753a9",
+      "result_id": "51d8b119-cb4e-4438-ba51-f4813feeacd4"
+    },
+    {
+      "claim_id": "6a6a8f5a-6e6a-4808-8392-a60fd57b2450",
+      "result_id": "51d8b119-cb4e-4438-ba51-f4813feeacd4"
+    },
+    {
+      "claim_id": "a3f4e4b3-74fc-4caa-8028-be2dec82871c",
+      "result_id": "96f6054b-3b15-4585-acfc-1c2231cde901"
+    },
+    {
+      "claim_id": "0a6cdb2d-904c-45af-90e5-d7a97900d949",
+      "result_id": "96f6054b-3b15-4585-acfc-1c2231cde901"
+    },
+    {
+      "claim_id": "fc8cfea4-3214-4dbd-b90f-1d996e91604d",
+      "result_id": "96f6054b-3b15-4585-acfc-1c2231cde901"
+    },
+    {
+      "claim_id": "ec4c3aec-1f81-40b0-9886-4461650de932",
+      "result_id": "96f6054b-3b15-4585-acfc-1c2231cde901"
+    },
+    {
+      "claim_id": "4c6ca925-caf7-4b70-b8a2-b7da583adc40",
+      "result_id": "96f6054b-3b15-4585-acfc-1c2231cde901"
+    },
+    {
+      "claim_id": "7041ad6f-ce83-4caf-803f-61d2a9890c1d",
+      "result_id": "96f6054b-3b15-4585-acfc-1c2231cde901"
+    },
+    {
+      "claim_id": "ae30999c-5475-4edc-a4dd-4c7de31e7ece",
+      "result_id": "96f6054b-3b15-4585-acfc-1c2231cde901"
+    },
+    {
+      "claim_id": "df71e760-1bd6-454a-b4a0-67869ae9bc19",
+      "result_id": "96f6054b-3b15-4585-acfc-1c2231cde901"
+    },
+    {
+      "claim_id": "a3d9bdf0-3603-40ac-8664-c11d75d5c291",
+      "result_id": "96f6054b-3b15-4585-acfc-1c2231cde901"
+    }
+  ],
+  "comparisons": []
+}

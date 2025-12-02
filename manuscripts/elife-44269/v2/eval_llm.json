@@ -1,0 +1,211 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7"
+    ],
+    "result": "Prior work establishes that cooperation among unrelated individuals is puzzling and that cultural forces, particularly moral reputations, are important drivers of prosocial behavior. However, the common assumption that reputations are objective and publicly known is unrealistic, and subjective reputations result in lower cooperation rates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C7 accurately summarize established literature on cooperation, reputation-based reciprocity, and the limitations of objective reputation models. All claims are supported by appropriate citations to prior work, and the characterization of the literature appears accurate and well-documented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15"
+    ],
+    "result": "Empathy, particularly perspective-taking, is a key component of prosocial behavior that develops early in life but is not universal. Despite its importance, the role of empathy in moral evaluation has not been thoroughly studied, and there is no formal framework for analyzing empathetic perspective-taking in game-theoretic models of cooperation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C13 are well-supported by citations to psychological literature. Claims C14-C15 represent the authors' assessment of a gap in the literature, which appears reasonable given the novelty of their approach. The characterization of prior work and identification of the research gap is appropriately justified.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C16",
+      "C20"
+    ],
+    "result": "The authors conclude that empathy fosters cooperation by reducing unjustified defection and that a capacity for empathy is a key component for sustaining cooperation in societies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These overarching conclusions (C16, C20) are supported by the theoretical models, replicator dynamics analysis, Monte Carlo simulations, and adaptive dynamics presented throughout the manuscript. The claims are consistent with the detailed results reported in subsequent claims.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C25",
+      "C26",
+      "C27",
+      "C29",
+      "C30"
+    ],
+    "result": "Under replicator dynamics, all four social norms exhibit bi-stable dynamics. Empathy increases cooperation for Stern Judging, Shunning, and Simple Standing by expanding the basin of attraction toward cooperative equilibria and increasing equilibrium cooperation rates, but has no effect on Scoring.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C30 describe results from replicator dynamics analysis with explicit mathematical derivations provided in the Methods. The findings are illustrated in Figure 2 and supplements, showing phase diagrams and equilibrium frequencies. The mathematical framework appears sound and the results are internally consistent.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C32",
+      "C34",
+      "C36",
+      "C37"
+    ],
+    "result": "Monte Carlo simulations in finite populations confirm that empathy increases cooperation, with Stern Judging being most effective at high empathy but performing poorly at low empathy. The level of empathy fundamentally changes which social norms best promote cooperation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C37 are supported by Monte Carlo simulations (Figure 3) showing cooperation rates across empathy levels for different norms. The reversal in norm rankings between high and low empathy is clearly demonstrated. The simulations appropriately account for stochasticity in finite populations and include multiple exploration rates.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C17",
+      "C18"
+    ],
+    "result": "The norms previously considered most socially beneficial (particularly Stern Judging) depend on high levels of empathy, whereas different norms (particularly Scoring) maximize social welfare in populations incapable of empathy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C18 are directly supported by the simulation results in Figure 3, which show that Stern Judging dominates at high empathy but Scoring dominates at low empathy. This represents a key finding that challenges prior literature assumptions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C42",
+      "C57",
+      "C58"
+    ],
+    "result": "Under Stern Judging and Shunning norms, empathy can evolve to high levels through cultural copying and remain evolutionarily stable, with empathetic individuals outperforming egocentric evaluators once empathy is established.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42, C57-C58 are supported by adaptive dynamics analysis (Figure 4a-b, Figure 5a,c) showing attractive singular points for empathy evolution. The pairwise invasibility plots and Monte Carlo simulations confirm evolutionary stability. The mathematical derivations in Methods provide the analytical foundation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C48",
+      "C49",
+      "C61"
+    ],
+    "result": "Under Simple Standing, empathy initially evolves to an intermediate level but cannot be sustained long-term during strategy-empathy co-evolution, eventually resulting in a population of pure defectors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C49, C61 describe complex dynamics under Simple Standing supported by adaptive dynamics analysis (Figure 4c-d, Figure 5b) and the interaction between empathy evolution and strategic equilibria. The reasoning about instability at the mixed equilibrium (C48) and long-term collapse (C49) follows logically from the model structure, though the exact dynamics depend on timescale assumptions (C66-C67).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C19",
+      "C69"
+    ],
+    "result": "Empathy itself can evolve through social contagion (imitation dynamics), where the degree of empathy can be observed, inferred, or learned.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19 and C69 are supported by the adaptive dynamics framework and Monte Carlo simulations of empathy evolution (Figure 4). The assumption that empathy is observable and can spread through social learning is reasonable and supported by citation to Cushman et al., 2017. The alternative genetic mechanism (C68) is noted but not explored.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C59",
+      "C60"
+    ],
+    "result": "Egocentric and uncooperative societies are possible evolutionary outcomes, representing alternative locally stable states under Stern Judging, Shunning, and Scoring.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C60 are supported by the bi-stability shown in adaptive dynamics analysis (Figure 4, Figure 5). The pairwise invasibility plots clearly show multiple stable states, with the egocentric equilibrium (E=0) being locally but not globally stable for these norms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "Egocentric evaluation leads to unjustified defection because observers and donors may disagree on recipient reputations. Stern Judging performs poorly under egocentric evaluation while Scoring is immune to empathy effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C56 provide mechanistic interpretation of the simulation results. The logic is sound: egocentric evaluation creates misalignment between donor intentions and observer assessments. This is particularly problematic for Stern Judging (which conditions on recipient reputation) but irrelevant for Scoring (which ignores recipient reputation). The explanation is consistent with the mathematical model structure.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "Prior literature has established that simple second-order norms outperform complex norms, that Stern Judging is most likely to evolve in group-structured populations, and that previous studies assumed objective, common-knowledge reputations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C64 accurately characterize prior literature with appropriate citations (Santos et al., 2018; Pacheco et al., 2006; multiple papers on objective reputations). This contextualizes the current work's contribution in relaxing the objective reputation assumption.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "The model assumes each observer evaluates different interactions, that reputation updating is faster than strategy evolution, and that game-playing is faster than imitation and reputation dynamics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C67 describe key modeling assumptions that are explicitly stated and justified as simplifications. The timescale separation assumptions (C66-C67) are standard in evolutionary game theory and allow analytical tractability. These assumptions are clearly documented in the Methods section.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "Existing empathy literature focuses primarily on emotional components like emotional contagion and self-other merging, with evidence that emotional empathy may have evolved in the context of parental care.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C52 accurately characterize the empathy literature with appropriate citations. This contextualizes the current work's focus on cognitive perspective-taking rather than emotional empathy. The characterization appears accurate based on the cited sources.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,349 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C46",
+      "C47",
+      "C50"
+    ],
+    "result": "Loss of Dazl impairs both expansion and differentiation of the spermatogonial progenitor population. In the Dazl conditional knockout (cKO) model at 6 months, FOXC2-positive stem/progenitor spermatogonia were minimally affected, but ZBTB16-positive undifferentiated spermatogonia were reduced by 40-60%, and KIT-positive differentiating spermatogonia were reduced by 70-90%. The rate of spermatogonial differentiation decreased from ~65% in controls to 25-35% in cKO testes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C39-C47, and C50 collectively demonstrate that Dazl loss impairs progenitor expansion and differentiation through quantitative immunohistochemistry with appropriate statistical tests (Mann-Whitney U tests, odds ratios) and proper controls. The data show statistically significant reductions in ZBTB16+ and KIT+ populations with highly significant p-values (p<10^-6 to p<10^-10), while FOXC2+ stem cells remain largely unaffected. The conclusion that progenitors fail to expand and differentiate efficiently is well-supported by the quantitative data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C28",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "DAZL protein is expressed in gonocytes at postnatal days 0 and 4, and in type A, Intermediate, and type B spermatogonia as well as spermatocytes in meiotic prophase I in adult testes, but not in secondary spermatocytes or post-meiotic spermatids. The conditional deletion using Ddx4Cre (active from ~E14.5) was incomplete, with nearly 100% of tubules containing DAZL-positive cells at P10, decreasing to ~40% at 6 months.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28, C31-C38 are supported by immunohistochemistry and reporter expression data (Figures 1\u2014figure supplement 1 and 2). The expression pattern is clearly documented with appropriate controls and staging. The mosaicism of the conditional knockout is quantified and acknowledged as a limitation. The finding that DAZL is not detected in round spermatids contradicts one previous study (C33), which the authors appropriately note may reflect antibody differences.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C48",
+      "C49"
+    ],
+    "result": "RNA-seq analysis of Pou5f1:EGFP-positive spermatogonia from Dazl cKO testes showed increased expression of stem/progenitor spermatogonial genes and reduced abundance of genes expressed in progenitor or broader undifferentiated spermatogonia populations (adjusted p<0.05).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C49 are supported by RNA-seq data with appropriate statistical analysis (adjusted p-values) shown in Figure 1\u2014figure supplement 3D. The data corroborate the immunohistological findings, though the authors appropriately note that bulk RNA-seq lacks single-cell resolution and may not capture all changes observed by immunohistochemistry.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "Chemical synchronization of spermatogenesis provides an enriched population of undifferentiated spermatogonia. Using iCLIP on synchronized testes, DAZL was found to bind the 3' UTRs of 2,633 genes (19.5% of protein-coding genes expressed in undifferentiated spermatogonia), representing 31.8% of all mRNA molecules in these cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C55 are supported by histological verification, RNA-seq comparison to published datasets, and iCLIP data from three biological replicates (Figure 2). The synchronization protocol is validated by absence of STRA8 staining and transcriptome similarity to sorted undifferentiated spermatogonia. The iCLIP analysis shows that \u226589% of peaks are in 3' UTRs across replicates, with replicated peaks defined as present in at least 2 of 3 replicates.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "DAZL targets are enriched for known regulators of spermatogonial proliferation and differentiation. Known spermatogonial regulators comprised 1.1% of DAZL targets versus 0.4% of all expressed genes (p=1.71\u00d710^-8). DAZL-targeted factors include Lin28a and Sox3 (promoting progenitor formation/proliferation) and Foxo1, Kit, Rarg, and Sall4 (promoting differentiation).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C61 are supported by enrichment analysis with appropriate statistical testing (hypergeometric test) and iCLIP data showing DAZL binding to these specific factors (Figure 2D-E). The functional roles of these targets are supported by citations to previous literature. The inference that these targets may contribute to the cKO phenotype (C59) is reasonable but speculative, appropriately qualified with 'may contribute.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "Gene Ontology analysis revealed that DAZL targets are enriched for regulators of general transcription and RNA splicing. DAZL binds transcripts encoding transcriptional regulators (Ep300, Polr2d, Taf4b) and splicing factors (Celf1, Sf1, Snrpb), suggesting DAZL-mediated regulation has the potential to broadly shape the transcriptome of progenitor spermatogonia.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C69 are supported by GO analysis (Figure 3A) and iCLIP data showing DAZL binding to specific transcriptional and splicing regulators (Figure 3B). The GO analysis uses appropriate statistical methods (Fisher's exact test with Bonferroni correction). The inference that DAZL can broadly shape the transcriptome (C69) is reasonable given the identified targets, though the actual downstream effects are not directly demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "DAZL targets are depleted for testis-specific factors (2.7% of targets vs 5.3% of expressed genes, p=1.78\u00d710^-13) and exhibit greater expression breadth across 12 mouse tissues than non-targets (p<2.2\u00d710^-16). While DAZL itself is germ cell-specific, its targets are biased toward broadly expressed genes regulating fundamental cellular processes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C73 are supported by analysis of tissue expression data with appropriate statistical tests (hypergeometric test, Mann-Whitney U test) shown in Figure 3C-D. The data clearly demonstrate that DAZL targets are broadly expressed rather than testis-specific. The inference that broad expression is consistent with regulation of fundamental processes (C73) is reasonable.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "DAZL targets are enriched for genes conserved between mouse and yeast (30.2% vs 23.8%, p=2.09\u00d710^-17) and exhibit reduced dN/dS ratios compared to non-targets (p<2.2\u00d710^-16), indicating strong purifying selection consistent with roles in fundamental cellular processes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C77 are supported by orthology analysis and evolutionary analysis with appropriate statistical tests (hypergeometric test, Mann-Whitney U test) shown in Figure 3E-F. The enrichment for yeast orthologs and reduced dN/dS ratios provide strong evidence for evolutionary conservation and purifying selection, supporting the conclusion about fundamental cellular functions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "Human orthologs of DAZL targets exhibit greater dosage sensitivity than non-targets, including increased CNV intolerance (p=7.51\u00d710^-5), higher haploinsufficiency probability (p<2.2\u00d710^-16), greater deletion intolerance (p=5.6\u00d710^-16), greater duplication intolerance (p=0.045), and higher miRNA conservation scores (p<2.2\u00d710^-16), indicating sensitivity to both increases and decreases in dosage.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C83 are supported by multiple independent analyses of dosage sensitivity using published human genetic data with appropriate statistical tests (Mann-Whitney U tests) shown in Figure 3G-K. The consistent pattern across multiple metrics (CNV, haploinsufficiency, deletions, duplications, miRNA targeting) provides strong convergent evidence for dosage sensitivity. The p-value for duplication intolerance (p=0.045) is the weakest but still statistically significant.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "DAZL binds a UGUU(U/A) motif in 3' UTRs. De novo motif analysis identified GUU, which was refined to UGUU(U/A) by comparing bound to unbound GUU motifs. This motif was more enriched at crosslinked nucleotides than truncated versions or previously reported motifs (GUUG, GUUC, UUU(C/G)UUU), and was enriched in independent DAZL iCLIP data from P6 testes and at non-3' UTR peaks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C96 are supported by comprehensive motif analysis using multiple approaches (HOMER, MEME, kpLogo) and validation in independent datasets (Figure 4A-C, Figure 4\u2014figure supplement 1). The UGUU(U/A) motif shows stronger enrichment than alternative motifs at crosslinked sites, providing strong evidence for its accuracy. The analysis appropriately uses iCLIP's single-nucleotide resolution to refine the motif.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "DAZL-crosslinked nucleotides are significantly more conserved than other 3' UTR nucleotides (phyloP and phastCons, p<2.2\u00d710^-16). The majority of DAZL targets have multiple binding sites, with the top 5% having \u226515 sites including key spermatogonial factors. Binding sites are positioned close together (median 28 nt apart) and are enriched at the start and end of 3' UTRs (p<0.0001), with the end enrichment consistent with DAZL interacting with poly(A)-binding protein.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98-C110 are supported by conservation analysis and positional analysis with appropriate statistical tests (Mann-Whitney U, Kolmogorov-Smirnov tests) shown in Figure 4D-I. The conservation data demonstrate that DAZL binds functionally important sites. The positional enrichment at 3' UTR termini is consistent with known DAZL-PABP interactions. The speculation about start enrichment being unique to undifferentiated spermatogonia (C108) is appropriately qualified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124"
+    ],
+    "result": "DAZL enhances translation of its targets in undifferentiated spermatogonia. Using RiboTag IP-seq, DAZL targets showed higher translational efficiency than non-targets (p<2.2\u00d710^-16). After controlling for confounding variables (transcript abundance, CDS length, 3' UTR length, codon usage) through matched sampling and multiple regression, DAZL binding increased translational efficiency by ~0.4 ribosomes per transcript.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C112-C124 are supported by RiboTag IP-seq data with rigorous statistical analysis including matched sampling and multiple regression (Figure 5). The analysis appropriately controls for confounding variables and uses two independent statistical approaches that yield similar effect sizes. Validation controls (replication-dependent histones, Kit) show expected patterns. The conclusion that DAZL amplifies translation is well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C127",
+      "C128",
+      "C129"
+    ],
+    "result": "DAZL promotes expansion and differentiation of spermatogonial progenitors independent of its embryonic requirement by enhancing translation of thousands of genes, including spermatogonial factors and broadly expressed, dosage-sensitive regulators of transcription and RNA metabolism that secondarily transform the cell's transcriptome.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C127-C129 represent the main conclusions integrating genetic (conditional knockout), biochemical (iCLIP), and translational profiling (RiboTag) data. The genetic data demonstrate DAZL's requirement in progenitors independent of embryonic functions. The biochemical data identify ~2,500 targets enriched for transcriptional/splicing regulators. The translational data show DAZL enhances translation. The inference about secondary transcriptome transformation (C129) is reasonable given the identified targets but not directly demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136"
+    ],
+    "result": "The breadth of DAZL's translational program (~30% of transcripts) suggests a role in regulating global translational levels, analogous to mechanisms in other stem cell systems where increased translation promotes progenitor formation and reduced translation favors self-renewal. The constrained spermatogonial expansion and differentiation in Dazl cKO is analogous to phenotypes where reduced translation limits progenitor formation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C130-C136 connect the current findings to established mechanisms in other stem cell systems through appropriate citations (C132-C134). The analogy between the Dazl cKO phenotype and reduced translation phenotypes in other systems (C135) is reasonable and well-supported by the data. However, this represents an inference based on analogy rather than direct demonstration of global translational changes in the Dazl cKO.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C139",
+      "C140"
+    ],
+    "result": "DAZL-mediated expansion of progenitors likely requires targeting of Lin28a (which enhances proliferation/formation of late progenitor spermatogonia by blocking let-7g biogenesis), while differentiation is likely facilitated by targeting of Rarg (a retinoic acid receptor transducing retinoid signaling).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C139-C140 connect DAZL's targeting of specific factors (Lin28a, Rarg) to the cKO phenotype through their known functions cited from previous literature. The iCLIP data demonstrate DAZL binds these targets, and the genetic data show defects in expansion and differentiation. However, the causal connections are inferred rather than directly demonstrated\u2014the claims are appropriately qualified with 'likely requires' and 'likely facilitated by.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C143",
+      "C144",
+      "C145",
+      "C146",
+      "C147"
+    ],
+    "result": "A previous study (Li et al., 2019) using different conditional alleles more efficiently deleted Dazl in spermatogonial stem cells and reported stem cell depletion, which was not observed in the current cKO model likely due to persistent DAZL expression in stem cells and potential fragmentation of DAZL-positive progenitors into stem cells. The studies are complementary and highlight that DAZL functions at multiple points in spermatogonial development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C143-C147 appropriately reconcile differences between the current study and Li et al., 2019. The explanation for the different phenotypes (incomplete deletion in current model vs. more efficient deletion in Li et al.) is supported by the mosaicism data (Figure 1\u2014figure supplement 2B). The speculation about progenitor fragmentation (C145) is appropriately qualified and supported by citations. The conclusion that the studies are complementary is reasonable.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C148",
+      "C149",
+      "C150",
+      "C151"
+    ],
+    "result": "Some results may represent unique regulation in the first round of spermatogenesis from prospermatogonia or reflect the larger stem cell pool established during synchronization. However, much of the regulation is likely relevant to adult spermatogenesis, as many DAZL-targeted spermatogonial factors contribute to adult spermatogenesis, and DAZL's requirement in adult progenitors was genetically demonstrated.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C148-C151 appropriately acknowledge limitations of the synchronization approach while arguing for relevance to adult spermatogenesis. The caveats about first-round specificity and stem cell pool size (C148-C149) are appropriately qualified with citations. The argument for adult relevance (C150-C151) is supported by citations showing adult functions of DAZL targets and by the genetic data from adult animals.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C152",
+      "C153",
+      "C154",
+      "C155",
+      "C156",
+      "C157"
+    ],
+    "result": "The in vivo findings showing DAZL increases translational efficiency are inconsistent with in vitro conclusions from Zagore et al., 2018 (who proposed DAZL regulates transcript stability in GC-1 cells). The GC-1 cell line is likely not appropriate for modeling in vivo spermatogonia due to low expression of germ cell markers. The current study could not assess translational impact on specific genes due to mosaicism, nor formally rule out mRNA stability regulation, but the in vivo translational profiling more accurately captures DAZL's molecular activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C152-C157 appropriately critique previous in vitro work and acknowledge limitations of the current study. The criticism of GC-1 cells (C153) is supported by RNA-seq data from Zagore et al. showing low germ cell marker expression. The acknowledgment that mosaicism prevents gene-specific analysis (C155) and that mRNA stability regulation cannot be ruled out (C156) demonstrates appropriate scientific caution. The conclusion that in vivo profiling is more accurate (C157) is reasonable.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C158",
+      "C159",
+      "C160",
+      "C161",
+      "C162"
+    ],
+    "result": "The refined UGUU(U/A) motif expands upon previous characterizations and contrasts with the GUUG motif from Zagore et al., 2018, which originated from computational analyses that fail to fully capture binding preferences. The current analysis using iCLIP's single-nucleotide resolution provides more comprehensive characterization, with UGUU(U/A) showing greater enrichment at crosslinked sites than GUUG in both current and previous datasets.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C158-C162 appropriately compare the current motif to previous work and explain methodological advantages. The reanalysis of Zagore et al. data showing UGUU(U/A) enrichment over GUUG (C162, Figure 4\u2014figure supplement 1C) provides strong validation. The critique of previous computational methods (C160) is supported by citation. The conclusion that iCLIP provides more comprehensive characterization is well-justified.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C163",
+      "C164",
+      "C165",
+      "C166",
+      "C167",
+      "C168",
+      "C170"
+    ],
+    "result": "The mechanistic characterization of DAZL in mouse likely captures human DAZ activity. Human DAZ is expressed in spermatogonia, recognizes similar motifs (U(G/U)UUU vs UGUU(U/A)), and mouse DAZL binding sites are conserved among vertebrates, suggesting human DAZ elicits similar broad translational regulation. Men with AZFc deletions show reduced spermatogenesis consistent with the mouse cKO phenotype, pointing to a spermatogonial function for human DAZ. Human DAZ likely promotes spermatogonial progenitor expansion and differentiation in vivo.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C163-C168, C170 connect the mouse findings to human biology through multiple lines of evidence: expression patterns (C164), motif similarity (C165), conservation of binding sites (C166), and clinical phenotypes (C167-C168). The inferences are appropriately qualified with 'likely' and are well-supported by the conservation data and clinical literature. However, C170 includes speculation about human DAZ function that, while reasonable, is not directly demonstrated.",
+    "result_type": "MAJOR"
+  }
+]

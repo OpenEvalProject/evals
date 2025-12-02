@@ -1,0 +1,263 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "The authors developed an experimental system using E. coli strain GW296 grown in M9 minimal media with different carbon sources (glycerol, glucose, or glucose + amino acids) in a Mother Machine microfluidic device, with replication initiation monitored via FROS-tagged oriC loci and time-lapse microscopy, yielding doubling times of 89, 53, and 41 minutes respectively.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C31-C34 collectively describe a well-documented experimental setup with specific strain construction, growth conditions, and imaging methodology. The measured doubling times are consistent with expected values for these growth conditions, and the methodology follows established protocols.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C39"
+    ],
+    "result": "E. coli cells exhibit adder behavior for cell size control across all growth conditions tested, including slow growth, with mother-daughter birth length correlation of r\u22480.5.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C4 and C39 are supported by the authors' experimental data showing adder behavior across conditions and are consistent with recent literature (Si et al. 2019). The correlation coefficient is directly measured from their dataset.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7"
+    ],
+    "result": "The initiation mass model is rejected based on observed positive correlation between initiation length Li and birth length Lb across all growth conditions, consistent with prior studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C7 present clear experimental evidence (Figure 2A) showing correlation between Li and Lb, which directly contradicts the initiation mass model's prediction of independence. This finding is corroborated by cited prior work (Adiciptaningrum et al. 2016; Micali et al. 2018a).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C14",
+      "C16"
+    ],
+    "result": "The double-adder model, which assumes three independently fluctuating fundamental variables (growth rate, d\u039bif, and d\u039bid), accurately reproduces experimental distributions and correlations at all growth rates, including the global adder behavior for cell size regulation and the distribution of origins at birth.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C12, C14, and C16 are supported by simulation results (Figure 5) showing quantitative agreement between model predictions and experimental data across multiple observables. The model's ability to reproduce non-trivial features like origin number distributions strengthens the validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C20",
+      "C21"
+    ],
+    "result": "Statistical decomposition analysis demonstrates that the double-adder model (with variables \u039bi, \u03b1, d\u039bif, d\u039bib) achieves the highest independence (I=0.882) among all tested models for experimental data, outperforming division-centric models, and this result is validated on both simulated data and an independent dataset from Si et al. (2019).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C18, C20-C21 present a systematic statistical framework that objectively ranks models. The method is validated on simulated data with known ground truth (C20) and shows consistent results on independent experimental data (C21), providing strong support for the double-adder model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C22",
+      "C69"
+    ],
+    "result": "Origins occupy future division sites (mid-cell, 1/4, 3/4 positions) at replication initiation, suggesting a local molecular event at initiation triggers division at the same site.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C22 is supported by the authors' own observations (Figure 4\u2014figure supplement 1) and is consistent with well-established prior literature (Lau et al. 2004; Nielsen et al. 2006). Claim C69 represents a reasonable inference from this spatial-temporal pattern, though the specific molecular mechanism remains speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "A double-adder mechanism similar to that proposed for E. coli has been demonstrated in mycobacteria, suggesting the mechanism connecting replication and division is fundamental and independent of specific genes and their expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C25 accurately cite published work (Logsdon et al. 2017) showing similar double-adder behavior in mycobacteria. The inference about fundamental mechanisms (C25) is reasonable given the observation of similar control strategies in phylogenetically distant bacteria with very different cell cycle characteristics.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "The double-adder model implicitly captures known biological constraints (SeqA-mediated over-initiation control and nucleoid occlusion) without explicitly enforcing them: the initiation-to-initiation adder creates a refractory period mimicking SeqA activity, while the initiation-to-division adder ensures minimal time for replication completion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C61 are supported by the simulation results showing that the model reproduces realistic cell cycle behavior without explicit constraint enforcement. The mechanistic interpretation of how the adders implicitly capture these constraints is logically sound and consistent with known biology.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C26",
+      "C27"
+    ],
+    "result": "An adder mechanism for replication initiation can be implemented by a sensor protein that accumulates at each origin and triggers initiation at a critical mass; if homeostatically controlled, this maintains constant average volume per origin across conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C26-C27 present plausible molecular mechanisms cited from prior theoretical work (Ho and Amir 2015), but these remain speculative proposals without direct experimental validation. While conceptually sound, the specific molecular identity and regulation of such a sensor protein are not demonstrated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "Acidic phospholipids that accumulate at future division sites and promote DnaA-ATP rejuvenation might serve as a molecular hub coordinating replication and division cycles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C28-C29 cite established observations about phospholipid localization and DnaA activation (Renner and Weibel 2011; Saxena et al. 2013), but C30's proposal of phospholipids as a coordinating hub is speculative. While the hypothesis is plausible given the known functions, direct evidence for this coordinating role is lacking.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C35",
+      "C36"
+    ],
+    "result": "The experimental approach has inherent limitations: origin splitting timing is affected by cohesion time and thus provides only a proxy for initiation timing, and cell length is used as a proxy for volume assuming constant cell radius.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C36 appropriately acknowledge methodological limitations. The cohesion time issue (C35) is well-documented (Reyes-Lamothe et al. 2008), and the constant radius assumption (C36) is standard in the field (Adiciptaningrum et al. 2016; Taheri-Araghi et al. 2017), though it introduces some measurement uncertainty.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C46",
+      "C47"
+    ],
+    "result": "Growth rate shows mother-daughter correlation (r\u22480.3), but accounting for this correlation was found not critical for capturing E. coli cell cycle features, though it was included in simulations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C47 are supported by the authors' measurements and simulation analysis. The observation of mother-daughter growth rate correlation is consistent with prior work (Campos et al. 2014), and the finding that it's not critical for model performance is demonstrated through their simulations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C49",
+      "C50"
+    ],
+    "result": "Alternative models exist in the literature: purely geometric division models (Harris and Theriot 2016) have been challenged by findings that surface expansion couples to dry-mass rather than volume increase, and Micali et al. (2018b) proposed models with concurrent replication and division processes coupled through checkpoints.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C50 accurately summarize relevant published models and their limitations. The challenge to geometric models is appropriately cited (Oldewurtel et al. 2019), and the description of Micali et al.'s checkpoint-coupled model is accurate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C55"
+    ],
+    "result": "The statistical framework is based on the principle that independent control processes should have independently fluctuating variables, with independence measured by the determinant of the correlation matrix ranging from 0 to 1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C52, C55 present a sound theoretical basis for the decomposition analysis. The use of correlation matrix determinant as an independence measure is mathematically valid and appropriate for identifying the most parsimonious model consistent with the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C56"
+    ],
+    "result": "The residual dependence observed in the double-adder model (I=0.88 vs 0.98 in simulations) might result from correlated measurement errors or small biological dependencies not captured by the model.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C56 acknowledges unexplained variance between model and data but can only speculate about causes. While the proposed explanations (measurement error or unmodeled biology) are plausible, the claim cannot definitively determine which factor(s) contribute to the discrepancy.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C57",
+      "C58"
+    ],
+    "result": "The double-adder model differs from timer models in the nature of single-cell correlations within conditions rather than in average behavior across conditions, and does not require an exponential relationship between average cell size and growth rate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C58 correctly distinguish the double-adder from timer models based on correlation structure rather than bulk averages. The explanation is conceptually sound and consistent with the statistical framework presented in the paper.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "Recent perturbation studies (Si et al. 2019; Wehrens et al. 2018) suggest potential uncoupling of division and replication cycles, but interpretation is complicated because division inhibition also affects replication-related processes like chromosome segregation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C64 accurately summarize recent perturbation studies and appropriately note the interpretational challenges. The caveat about pleiotropic effects of division inhibition (C64, citing S\u00e1nchez-Gorostiaga et al. 2016) is important for contextualizing these findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "FtsZ ring polymerization and constriction drive division, with FtsZ and associated proteins heavily regulated at multiple levels, though there are conflicting reports about whether FtsZ concentration varies (M\u00e4nnik et al. 2018) or remains constant (Si et al. 2019) during the cell cycle.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C68 accurately summarize established knowledge about FtsZ-mediated division and appropriately note conflicting evidence about FtsZ concentration dynamics. The authors correctly present both perspectives from the literature without overstating the consensus.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C70"
+    ],
+    "result": "A long-standing hypothesis proposes that replication initiation triggers FtsZ ring formation, with initiation-to-division timing controlled by FtsZ ring polymerization dynamics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C70 accurately cites a speculative molecular mechanism from the literature (Weart and Levin 2003). The authors appropriately present this as a hypothesis consistent with their observations rather than as established fact.",
+    "result_type": "MINOR"
+  }
+]

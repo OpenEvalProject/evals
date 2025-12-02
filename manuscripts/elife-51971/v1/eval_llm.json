@@ -1,0 +1,295 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C20",
+      "C21",
+      "C23",
+      "C26",
+      "C109"
+    ],
+    "result": "The study identified and annotated 2514 novel complete circular DNA virus genomes using the Cenote-Taker pipeline, including 1844 ssDNA virus-related sequences, 55 dsDNA virus-related sequences, 868 CRESS viruses, and 670 Microviridae genomes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C20, C21, C23, C26, and C109 collectively describe the main quantitative findings of viral genome discovery. These numbers are directly derived from the study's data analysis pipeline and are consistently reported throughout the manuscript with supporting figures (Figure 1A, 1B). The Cenote-Taker pipeline methodology is described in detail in the Methods section.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C22",
+      "C27",
+      "C25"
+    ],
+    "result": "The discovered viral genomes are highly divergent from existing RefSeq database entries, representing a substantial expansion of known viral diversity, particularly for Microviridae (670 new vs. 459 previously known) and unclassified CRESS viruses (868 new vs. 199 previously deposited).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22, C27, and C25 are supported by BLASTX analysis shown in Figure 1\u2014figure supplement 1 and direct database comparisons. The quantitative comparisons to existing databases are clearly stated and provide context for the novelty of the findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C58",
+      "C59",
+      "C60",
+      "C110",
+      "C111",
+      "C112",
+      "C113"
+    ],
+    "result": "Sequence similarity network analysis of viral hallmark genes (Rep and capsid proteins) revealed that sequences from this study expand existing clusters, identify previously unknown clusters, and establish family-level groupings within CRESS viruses that mirror ICTV taxonomy, with contributions to 40 family-level groupings and establishment of 7 new groups.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C60 and C110-C113 describe the network analysis results shown in Figures 2 and 3. The E-value cutoff of 1\u00d710\u207b\u2076\u2070 for family-level clustering is methodologically justified and validated against ICTV taxonomy (C59). The quantitative results about cluster contributions are directly derived from the network analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C73",
+      "C76",
+      "C121"
+    ],
+    "result": "Eight large CRESS virus genomes exceeding 6 kb were discovered, some encoding multiple divergent capsid genes, representing the first report of this phenomenon in ssDNA viruses and suggesting capsid gene duplication events as a mechanism for genome size expansion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C73, C76, and C121 are supported by genomic analysis shown in Figure 4\u2014figure supplement 1. The structural predictions (HHpred scores 97-99% for C70) and sequence divergence data (28-30% amino acid similarity for C71) provide strong evidence. The claim of novelty (C76) is appropriately qualified with 'we believe' and supported by literature citations showing this has been observed in RNA and dsDNA viruses but not ssDNA viruses.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C5",
+      "C80",
+      "C81",
+      "C83",
+      "C125",
+      "C127"
+    ],
+    "result": "Multiple independent recombination events between CRESS viruses and ssRNA viruses or ssDNA bacteriophages were identified, including CRESS viruses with capsid genes similar to tombus-like viruses, noroviruses, and inovirus-like genes, suggesting CRESS viruses are central to viral evolutionary history involving large-scale recombination.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C80, C81, C83, C125, and C127 describe hybrid virus discoveries supported by sequence similarity data (Figures 4, 4\u2014figure supplement 1, 4\u2014figure supplement 2) and structural predictions. The validation by read alignment (C89, C90) rules out assembly artifacts. The methodological note (C126) that only DNA was sequenced strengthens the conclusion by eliminating in silico DNA/RNA recombination artifacts.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C6",
+      "C30",
+      "C91",
+      "C92",
+      "C93",
+      "C95",
+      "C96"
+    ],
+    "result": "609 circular DNA elements representing viral 'dark matter' with no discernible similarity to known viruses were identified and categorized into dark matter protein clusters (DMPCs) and genome groups (DMGGs), with HHpred predictions identifying 10 DMPCs as likely capsid proteins and 11 as rolling circle replicases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C30, C91-C93, C95-C96 describe the dark matter analysis methodology and results shown in Figure 5A. The definition of dark matter (E-value < 1\u00d710\u207b\u2075 in BLASTX searches, C91) is clearly stated. The clustering approach and structural predictions are methodologically sound and supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "An artificial neural network (iVireons) was used to predict capsid proteins in dark matter sequences, and several predicted capsid proteins formed virus-like particles when expressed in cell culture, experimentally validating the computational predictions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C8 and C100-C104 describe the iVireons analysis and experimental validation shown in Figure 6. The electron microscopy images provide direct visual evidence of particle formation for predicted capsids, while the negative control (C102) did not form particles, supporting specificity. The experimental validation strengthens the computational predictions, though the particles were noted as 'highly irregular' (C103).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C28",
+      "C4"
+    ],
+    "result": "Viral families were found in association with 23 different animal species, belonging to dozens of established and emerging viral families.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28 and C4 are supported by the heatmap in Figure 1C showing the distribution of viral families across animal species. The taxonomic classification is based on BLASTX analysis with E-values < 1\u00d710\u207b\u2075.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "Analysis of brain tissue samples from individuals with Alzheimer's disease and other dementias found some known viral sequences (papillomaviruses, Merkel cell polyomavirus, anelloviruses) but no novel complete viral genomes were recovered from DNA or RNA sequencing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C39 report negative results from brain tissue analysis. The methodology included both DNA (Optiprep-RCA) and confirmatory RNA sequencing. While negative results are inherently difficult to interpret (as the authors acknowledge), the methods were appropriate and the findings are clearly reported.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "Control experiments with reagent-only samples found no evidence of viral sequences reported in the study, and cross-sample comparison showed minimal sequence sharing (only 6 genomes, 0.24% of total, found in multiple unrelated samples), ruling out reagent contamination as a major source of the reported viral sequences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C44 describe important control experiments addressing potential contamination. The reagent-only controls (C41) and cross-sample comparisons (C42-C44) provide strong evidence against systematic contamination. The small number of shared sequences (0.24%) is appropriately noted as potentially representing contamination, actual presence, or other factors.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "The vast majority of assembled circular genomes were <10 kb in length due to technical challenges in assembling large genomes from short reads, though 46 genomes >10 kb were detected, including a 419 kb tailed bacteriophage.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C34 describe the size distribution of discovered genomes shown in Figure 1\u2014figure supplement 2. The explanation for the size bias (C32) is reasonable and well-established in bioinformatics. The detection of large genomes demonstrates the method's capability despite the technical challenges.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C45"
+    ],
+    "result": "In most samples, most reads did not align to the genomes reported in this study or RefSeq virus genomes, which is unsurprising given stringent genome completion requirements and the largely unexplored nucleotide space of the virome.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C45 is supported by read mapping analysis shown in Figure 1\u2014figure supplement 3. The authors appropriately contextualize this finding as expected given the stringent requirements for complete genome assembly and the vast unexplored viral sequence space.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "Two related large CRESS viruses (ctdb796 and ctce741) encode bacilladnavirus-like capsid proteins but have Rep genes dissimilar to known bacilladnavirus Reps, suggesting they represent a new hybrid CRESS virus family.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C79 describe specific hybrid viruses shown in Figure 4\u2014figure supplement 1K,M. The combination of bacilladnavirus-like capsids with non-bacilladnavirus Rep genes supports the inference of a new hybrid family (C79), though this remains a hypothesis requiring further validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C83",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "Two CRESS genomes (ctbe30 and ctbc27) combine CRESS-specific Rep genes with inovirus-specific genes including capsid, ZOT, and RstB genes, with TBLASTX matches to bacterial chromosomes suggesting they represent a previously undescribed bacteria-tropic branch of CRESS viruses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83, C86-C88 describe hybrid CRESS-inovirus genomes shown in Figure 4\u2014figure supplement 1F,N. The TBLASTX results (C87) support the inference of bacterial tropism (C88). The validation by read alignment (C89-C90) rules out assembly artifacts.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C118",
+      "C119",
+      "C120"
+    ],
+    "result": "Over 100 distinct human anellovirus sequences were found in human blood, and while anelloviruses have not been causally associated with disease, this study indicates we are likely still scratching the surface of their sequence diversity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C118-C120 report anellovirus findings from human blood samples. The quantitative result (C118) is data-derived. The statement about lack of disease association (C119) is established knowledge. The inference about unexplored diversity (C120) is reasonable given the large number of new sequences discovered.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C89",
+      "C90"
+    ],
+    "result": "Viral genomes were validated by aligning individual reads back to contigs with visual inspection, with no disjunctions detected, indicating illegitimate recombinations are not evident.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C90 describe validation methodology with an example shown in Figure 4\u2014figure supplement 2C. This validation is important for ruling out assembly artifacts, particularly for the hybrid virus genomes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C94"
+    ],
+    "result": "DMPC7 and DMPC17 ORFs are always observed in genomes with a DMPC1 ORF (DMGG1), demonstrating conserved gene co-occurrence patterns in dark matter genome groups.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C94 describes gene co-occurrence patterns shown in Figure 5B. This demonstrates the utility of the DMGG classification system for organizing dark matter sequences.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C105",
+      "C106",
+      "C107",
+      "C108"
+    ],
+    "result": "The study contextualizes its findings against existing viral databases: millions of virus species likely exist, but only ~9000 are in RefSeq (most in 131 ICTV families), and IMG/VR contains >14,000 circular virus genomes though some are redundant and not comprehensively annotated.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2 and C105-C108 provide context from prior knowledge and database statistics. C1 is appropriately qualified as speculative ('likely exist'). The database statistics (C2, C105-C108) are factual and supported by citations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C72",
+      "C122",
+      "C128",
+      "C129",
+      "C130"
+    ],
+    "result": "The authors propose several speculative explanations for observed genomic features: capsid gene arrays may result from gene duplication events, larger CRESS genomes may be enabled by such duplications, and dark matter sequences may represent divergent known viruses, multipartite genome segments, or entirely new viral lineages.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C72, C122, C128-C130 are explicitly speculative explanations for observed phenomena. While these are reasonable hypotheses consistent with the data, they remain unproven and would require additional experiments to validate. The authors appropriately present these as possibilities rather than conclusions.",
+    "result_type": "MINOR"
+  }
+]

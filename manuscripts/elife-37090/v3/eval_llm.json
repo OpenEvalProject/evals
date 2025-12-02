@@ -1,0 +1,480 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "A synthetic three-species gut community was established consisting of Roseburia intestinalis L1-82, Faecalibacterium prausnitzii A2-165, and Blautia hydrogenotrophica S5a33, which exhibit both competitive and cross-feeding interactions. All three strains compete for fructose, while B. hydrogenotrophica S5a33 can utilize formate, hydrogen gas, and carbon dioxide produced by the other two strains, and in turn provides acetate beneficial to both butyrate producers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C47 describe the composition and interaction network of the synthetic community, supported by prior literature (C36-C42) and illustrated in Figure 1. The competitive and mutualistic interactions are well-documented through citations and represent established metabolic capabilities of these strains.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "The three strains were grown in mono-, bi-, and tri-cultures in 2L fermentors with comprehensive monitoring including optical density, flow cytometry, qPCR, metabolite profiling, and RNA sequencing at selected time points.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C51 describe the experimental design and methods, which are clearly documented in the Materials and Methods section and supported by the data presented in multiple figures (Figures 3-6). The multi-modal approach is well-justified and executed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "B. hydrogenotrophica S5a33 exhibits metabolic versatility, growing heterotrophically on formate (which was entirely consumed) and autotrophically on CO2/H2, as well as on fructose, oligofructose, and glucose. Growth on formate produced acetate, H2, and CO2 but not lactate, while growth on fructose produced lactate in addition to acetate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C64 describe screening experiments characterizing B. hydrogenotrophica S5a33's substrate utilization. The observations are consistent with prior work (C54, C56, C59 cite Bernalier et al. 1996 and Rey et al. 2010) and genomic predictions (C55 cites AGORA database). The differential lactate production depending on substrate is a novel observation well-supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "R. intestinalis L1-82 in monoculture consumed fructose and produced butyrate, CO2, H2, and small amounts of lactate and formate. Net acetate consumption depended on the fructose:acetate ratio, with no net consumption when fructose exceeded acetate, but partial consumption when provided in equal concentrations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C69 describe R. intestinalis L1-82 monoculture behavior, supported by Figure 3A and consistent with prior work (C65, C67 cite Falony et al. 2009c). The novel finding about acetate consumption dependence on substrate ratio (C68) is well-documented experimentally.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "F. prausnitzii A2-165 in monoculture did not entirely consume fructose, likely due to growth limitation by heat-labile co-factors in yeast extract. Doubling yeast extract concentration lowered residual fructose. The strain requires multiple amino acids and co-factors according to flux balance analysis and can grow in the presence of oxygen.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C77 describe F. prausnitzii A2-165's unusual growth limitation, supported by Figure 3B and systematic exclusion of alternative explanations (C71-C72). The inference about co-factor limitation (C73) is supported by flux balance analysis (C74 cites Heinken et al. 2014) and oxygen tolerance is confirmed experimentally (C76) and by literature (C75, C77).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "B. hydrogenotrophica S5a33 in monoculture on formate and fructose produced acetate, H2, CO2, and small amounts of lactate while consuming formate almost entirely but not depleting fructose. Carbon recovery was only 60% compared to close to 100% for the other two strains.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C81 describe B. hydrogenotrophica S5a33 monoculture behavior, supported by Figure 3C and Table 1. The low carbon recovery (C81) is a significant observation that suggests incomplete substrate utilization or unmeasured products.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "A mechanistic model was developed using ordinary differential equations with combined additive and multiplicative Monod functions to describe strain and metabolite dynamics. The model differentiates between required substrates and facultative co-substrates, accounts for strain-specific lag phases, and includes an 'unknown compound' to represent F. prausnitzii A2-165's co-factor limitation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C86 describe the model structure, which is detailed in Materials and Methods and Source Code 1. The model design appropriately addresses the observed non-standard kinetics (C82) and incorporates biological realism through lag phases (C85) and the unknown compound for F. prausnitzii (C86).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "When parameterized on monocultures, the model achieved high prediction accuracy for F. prausnitzii A2-165 and R. intestinalis L1-82 but poorly described B. hydrogenotrophica S5a33 behavior. B. hydrogenotrophica S5a33 consumed formate and fructose more slowly than expected from Monod kinetics, possibly due to initial growth on undefined medium components followed by a switch to the provided substrates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C95 describe model performance on monocultures, supported by Figure 4, Table 1, and Figure 4\u2014figure supplement 1. The poor fit for B. hydrogenotrophica S5a33 (C88) is acknowledged and explained by deviations from Monod kinetics (C89). Alternative explanations including contamination were systematically excluded (C90-C93), and the biphasic growth hypothesis (C94) is reasonable though limited by temporal resolution (C95).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C96",
+      "C97"
+    ],
+    "result": "Hydrogen gas product inhibition was tested for R. intestinalis L1-82 but did not improve model performance, so the inhibition term was removed from the model.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C97 describe a model refinement based on empirical testing. This is a reasonable modeling decision supported by the lack of improvement in fit, suggesting H2 inhibition is not significant at the concentrations reached in these experiments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "Bi-culture experiments demonstrated formate cross-feeding from both butyrate producers to B. hydrogenotrophica S5a33. In F. prausnitzii A2-165/B. hydrogenotrophica S5a33 co-culture, formate was initially produced then consumed, and fructose was entirely depleted. In R. intestinalis L1-82/B. hydrogenotrophica S5a33 co-culture, no formate was detected, suggesting complete cross-feeding. Lower formate concentrations in R. intestinalis L1-82/F. prausnitzii A2-165 co-culture suggested negative effects of R. intestinalis on F. prausnitzii.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98-C106 describe bi-culture dynamics supported by Figure 3D-H. The formate cross-feeding is directly demonstrated by temporal dynamics (C99, C103), and the competitive effects are inferred from metabolite concentrations (C106). The uncertainty about H2/CO2 cross-feeding (C104) is appropriately acknowledged.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113"
+    ],
+    "result": "Comparison of maximal bacterial counts between mono- and co-cultures revealed ecological interactions. F. prausnitzii A2-165 and B. hydrogenotrophica S5a33 showed mutualism with significantly higher counts in co-culture (p=0.03 and p=0.017 respectively). R. intestinalis L1-82 and F. prausnitzii A2-165 exhibited amensalism, with F. prausnitzii counts tending to be lower in co-culture (p=0.11) while R. intestinalis was unaffected (p=0.69). B. hydrogenotrophica S5a33 benefited more from F. prausnitzii than from R. intestinalis (p=0.008).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C107-C113 describe ecological interactions inferred from growth comparisons, supported by Figure 3 and statistical tests. The mutualism between F. prausnitzii and B. hydrogenotrophica is statistically significant (C109), while the amensalism interpretation (C112) is reasonable given the asymmetric effects (C110-C111). The differential benefit to B. hydrogenotrophica (C113) is statistically significant.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119"
+    ],
+    "result": "In tri-culture, B. hydrogenotrophica S5a33 was always dominant with either R. intestinalis L1-82 or F. prausnitzii A2-165 as co-dominant partner across six replicates with varying inoculum proportions. R. intestinalis was co-dominant in 2/6 cases (average 37.5 mM butyrate) while F. prausnitzii was co-dominant in 4/6 cases (average 23.5 mM butyrate). Formate was produced initially, peaked at 10-15 hours, and was below detection after 18 hours.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C114-C119 describe tri-culture outcomes supported by Figure 3I-J and experimental replication (n=6). The consistent B. hydrogenotrophica dominance (C117) and variable co-dominance (C118) are well-documented, with important implications for butyrate production (C119). The formate dynamics (C115) confirm cross-feeding in the complex community.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124"
+    ],
+    "result": "The model parameterized only on monocultures failed to accurately predict tri-culture dynamics. After testing, bi-culture data was incorporated into parameterization (using two F. prausnitzii monocultures and R. intestinalis/B. hydrogenotrophica and F. prausnitzii/B. hydrogenotrophica bi-cultures with acetate). This improved model successfully predicted bi-culture dynamics without initial acetate and fitted tri-culture data better than the monoculture-only parameterization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C120-C124 describe the key modeling result, supported by Table 1, Figures 4-5, and associated supplements. The failure of monoculture-only parameterization (C120) and necessity of bi-culture data (C121) demonstrate emergent behavior. The validation on held-out bi-cultures (C123) and improved tri-culture fit (C124) support the modeling approach.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131"
+    ],
+    "result": "The monoculture-parameterized model predicted lower abundances in co-cultures than observed, while the mono+bi-culture-parameterized model predicted higher monoculture abundances than observed. B. hydrogenotrophica S5a33 performed significantly better in tri-culture than expected from monoculture (p=0.002). Parameter analysis showed lower substrate consumption rates but maintained or increased growth rates in co-culture, suggesting less energy source is needed with interaction partners.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C125-C131 describe emergent behavior revealed by comparing parameterizations, supported by Figures 4-5 and Supplementary file 2. The significant improvement of B. hydrogenotrophica in tri-culture (C127) is statistically supported. The parameter changes (C128-C130) and interpretation (C131) provide mechanistic insight into the emergent behavior.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C137"
+    ],
+    "result": "Model simulations revealed that tri-culture dominance depends non-linearly on initial conditions (lag phase and initial abundance), with experimental observations agreeing well with predictions. The non-linear relationship between initial F. prausnitzii abundance and R. intestinalis dominance, along with dependencies on other parameters (B. hydrogenotrophica growth rate, fructose consumption rate, half-saturation constant), demonstrates that predicting outcomes requires modeling even when parameters are known.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C132-C137 describe model predictions about initial condition sensitivity, supported by Figure 6 and Figure 6\u2014figure supplement 1. The agreement between predictions and observations (C133) validates the model, while the non-linear dependencies (C134, C136) highlight the complexity of the system and justify the modeling approach (C135, C137).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C138",
+      "C139",
+      "C140",
+      "C141",
+      "C142",
+      "C143",
+      "C144",
+      "C145"
+    ],
+    "result": "RNA-seq analysis of mono- versus tri-cultures (3 time points, 2 replicates) revealed 7.0-10.9% of genes were differentially expressed across the three strains. F. prausnitzii A2-165 downregulated vitamin B12 biosynthesis enzymes in tri-culture, potentially indicating greater co-factor availability, though added B12 did not increase cell numbers in test tubes. This suggests F. prausnitzii responds to co-factor availability but this doesn't fully explain growth changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C138-C145 describe transcriptomic evidence for emergent behavior, supported by Supplementary file 3 and the B12 supplementation experiment (Supplementary file 4). The differential expression (C140) confirms altered metabolism in co-culture. The B12 pathway downregulation (C141) is interesting but the negative supplementation result (C144) appropriately tempers the interpretation (C145).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C146",
+      "C147",
+      "C148",
+      "C149",
+      "C150"
+    ],
+    "result": "In tri-culture, F. prausnitzii A2-165 and B. hydrogenotrophica S5a33 upregulated amino acid/oligopeptide transport and biosynthesis. R. intestinalis L1-82 showed mixed responses with some amino acid biosynthesis enzymes up- and others downregulated, and lower ribosomal protein expression consistent with its longer lag phase. These metabolic changes support the altered behavior detected through modeling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C146-C150 describe additional transcriptomic findings supported by Supplementary file 3. The upregulation of biosynthesis in the two strains that benefit from co-culture (C146-C147) and mixed response in the disadvantaged strain (C148-C149) are consistent with the growth and modeling observations, providing molecular evidence for emergent behavior (C150).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C151",
+      "C152",
+      "C153",
+      "C154",
+      "C155",
+      "C156"
+    ],
+    "result": "B. hydrogenotrophica S5a33 is metabolically versatile, growing as fast as primary fermenters. Formate cross-feeding and mutualistic/competitive interactions were experimentally demonstrated. Notably, B. hydrogenotrophica was identified as a net producer of H2 and CO2 when growing on formate, contrasting with its traditional role as a consumer. Given that formate is produced by Bifidobacterium and Lactobacillus species, this invites re-evaluation of B. hydrogenotrophica's ecological niche.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C151-C156 summarize key findings about B. hydrogenotrophica's role. The metabolic versatility (C151) and interaction demonstrations (C152-C153) are well-supported by the experimental data. The identification as a net H2/CO2 producer on formate (C154) is a novel finding that challenges assumptions. The connection to formate-producing species (C155) and call for re-evaluation (C156) are reasonable given the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C157",
+      "C158",
+      "C159",
+      "C160",
+      "C161",
+      "C162"
+    ],
+    "result": "The relationships described likely generalize to species level, as other strains within these species are reported to produce/consume the same key metabolites, additional F. prausnitzii strains are predicted to produce formate, additional R. intestinalis strains contain key enzymes for H2 production, and B. hydrogenotrophica S5a36 grows better with a primary fermenter in gnotobiotic mice. However, further experiments are needed to test cross-feeding in other strain combinations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C157-C162 discuss generalizability, supported by literature (C158-C161 cite relevant studies). While the metabolic capabilities appear conserved (C158-C160) and in vivo evidence exists (C161), the authors appropriately acknowledge that only one strain per species was tested and call for additional experiments (C162). The generalization is plausible but not definitively established.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C163",
+      "C164",
+      "C165",
+      "C166",
+      "C167",
+      "C168",
+      "C169"
+    ],
+    "result": "The mechanistic model served as both a predictive tool and reference for understanding the system. Insights were gained from both agreements and disagreements with observations. For example, testing hydrogen gas inhibition revealed it didn't affect R. intestinalis growth at experimental concentrations. The model was essential for distinguishing true dynamic changes from variations in inoculum or lag phase. RNA-seq confirmed emergent behavior, particularly for F. prausnitzii and B. hydrogenotrophica, with the B12 pathway downregulation suggesting co-factor dependency changes with interaction partners.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C163-C169 discuss the value of the modeling approach, supported by the experimental design and results. The dual role of the model (C163-C164) is well-demonstrated. The H2 inhibition example (C165-C166) shows how modeling guides mechanistic understanding. The necessity of modeling to detect emergent behavior (C167) is validated by the parameterization comparisons. The RNA-seq confirmation (C168) and B12 pathway interpretation (C169) provide molecular support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C170",
+      "C171"
+    ],
+    "result": "It has been proposed that most gut microorganisms needing B12 precursors cannot synthesize them, suggesting a target for selective manipulation. However, if B12 needs change with interaction partners, this strategy may be less effective than suggested.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C170-C171 discuss implications for manipulation strategies, with C170 citing Degnan et al. 2014. The inference that context-dependent B12 requirements complicate manipulation (C171) is reasonable given the observed B12 pathway downregulation in tri-culture, though this is somewhat speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C172",
+      "C173",
+      "C174",
+      "C175",
+      "C176",
+      "C177"
+    ],
+    "result": "While monoculture-parameterized models may sometimes describe bi-culture dynamics correctly, this study demonstrates this is not a general property. Models of microbial communities must account for internal metabolism and responses to interaction partners. Gut bacteria like B. hydrogenotrophica have flexible metabolic strategies employed according to circumstances. Emergent metabolism has been described theoretically but rarely investigated experimentally.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C172-C177 discuss broader implications for microbial modeling. The limitation of monoculture parameterization (C172-C173) is demonstrated by this study. The need for metabolic flexibility in models (C174-C175) follows from the results. The rarity of experimental investigation (C176-C177, citing Chiu et al. 2014 and Aharonovich and Sher 2016) contextualizes the contribution.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C178",
+      "C179",
+      "C180"
+    ],
+    "result": "Constraint-based modeling approaches can account for emergent metabolism but require high-quality metabolic reconstructions for each community member, taking months of curation effort. Thus, scaling strain-level quantitative models to larger communities will be a formidable challenge.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C178-C180 discuss alternative modeling approaches, citing Orth et al. 2010 and Thiele and Palsson 2010. The assessment of constraint-based modeling capabilities (C178) and requirements (C179) is accurate based on the literature. The conclusion about scaling challenges (C180) is reasonable given the effort required.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C181",
+      "C182",
+      "C183",
+      "C184",
+      "C185",
+      "C186",
+      "C187"
+    ],
+    "result": "High-throughput mono- and bi-culture experiments are increasingly used to quantify ecological interactions, which is important progress. However, this study shows dominance in batch cultures can depend non-linearly on initial conditions (lag phase, initial abundance) that are hard to control experimentally. Thus, biological replicates with the same inoculum might identify different winners, while replicates with slightly different inocula could support opposite conclusions. Similar initial condition dependencies have been reported for Streptomyces and may be common.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C181-C187 discuss implications for high-throughput approaches, with C181 citing de Vos et al. 2017 and Sher et al. 2011. The non-linear initial condition dependence (C183) is demonstrated by the modeling results (Figure 6). The potential for contradictory results (C184-C185) is a logical consequence. The Streptomyces example (C186, citing Wright and Vetsigian 2016) and speculation about commonality (C187) are reasonable.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C188",
+      "C189",
+      "C190"
+    ],
+    "result": "RNA-seq on mono- and bi-cultures is used to detect behavioral changes in response to interaction partners. This study shows models can also reveal emergent behavior through failure to describe co-culture dynamics when parameterized on monocultures alone. How to scale such approaches for high-throughput systematic measurements remains an open question.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C188-C189 discuss methods for detecting emergent behavior, with C188 citing relevant studies. The demonstration that modeling can reveal emergent behavior (C189) is a key contribution of this work. The acknowledgment of scaling challenges (C190) is appropriate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C191",
+      "C192",
+      "C193",
+      "C194",
+      "C195",
+      "C196",
+      "C197"
+    ],
+    "result": "While mutualism and competition have been explored in vitro previously, this is the first investigation of a defined bacterial community where two strain pairs simultaneously mutually cross-feed and compete. For F. prausnitzii/B. hydrogenotrophica, mutualism supersedes competition with increased cell numbers and upregulated biosynthesis. For R. intestinalis/B. hydrogenotrophica, evidence of mutual benefit was less clear. The model described R. intestinalis/B. hydrogenotrophica dynamics well without H2/CO2 cross-feeding, suggesting gases were less efficiently cross-fed than formate due to low partial pressure. Thus, similar interactions can play out differently depending on environment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C191-C197 discuss the novelty and complexity of the interactions. The novelty claim (C192) is supported by the literature review (C191 cites Rivi\u00e8re et al. 2015). The differential outcomes for the two pairs (C193-C194) are supported by the growth and transcriptomic data. The modeling-based inference about gas cross-feeding efficiency (C195-C196) is reasonable. The conclusion about environmental context (C197) is well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C198",
+      "C199",
+      "C200",
+      "C201",
+      "C202",
+      "C203"
+    ],
+    "result": "In R. intestinalis/F. prausnitzii bi-culture, both strains survived despite competing for the same substrate, presumably because nutrient depletion occurred too quickly for competitive exclusion. Tri-culture experiments demonstrated that initial conditions (abundance and lag phase) determine butyrate concentrations. Since these parameters are relevant but difficult to control in the gut, therapeutic cocktail communities must function across a wide range of initial conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C198-C203 discuss coexistence and therapeutic implications. The coexistence observation (C198) and explanation (C199) are reasonable for batch culture. The demonstration of initial condition effects on butyrate (C200-C201) is supported by the experimental and modeling results. The inference about gut relevance (C202) and design implications (C203) are logical extensions, though somewhat speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C204"
+    ],
+    "result": "Despite highlighting challenges to microbial community modeling, the model's ability to predict tri-culture dynamics from bi-cultures provides hope that with sufficient knowledge, more complex microbial communities can ultimately be modeled.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C204 provides a balanced conclusion, acknowledging both challenges and successes. The successful prediction of tri-culture from bi-culture data (demonstrated in the results) supports the optimistic outlook while the acknowledged challenges (discussed throughout) provide appropriate caution.",
+    "result_type": "MAJOR"
+  }
+]

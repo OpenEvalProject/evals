@@ -1,0 +1,1057 @@
+{
+  "submission": {
+    "id": "717ec028-d8c9-41db-91ad-8d98c941191f",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T12:36:10.618382Z",
+    "updated_at": "2025-12-02T12:36:10.618382Z"
+  },
+  "content": [
+    {
+      "id": "fdb65d5e-42c3-4c46-acdf-1dd12ce655b7",
+      "submission_id": "717ec028-d8c9-41db-91ad-8d98c941191f",
+      "content_type": "manuscript",
+      "content_text": "# Epistasis and entrenchment of drug resistance in HIV-1 subtype B\n\n## Authors\n\n- Avik Biswas<sup>1</sup> ([ORCID: 0000-0002-3519-3944](https://orcid.org/0000-0002-3519-3944))\n- Allan Haldane<sup>1</sup> ([ORCID: 0000-0002-8343-1994](https://orcid.org/0000-0002-8343-1994))\n- Eddy Arnold<sup>3</sup>\n- Ronald M Levy<sup>1</sup> ([ORCID: 0000-0001-8696-5177](https://orcid.org/0000-0001-8696-5177)) \u2020\n\n### Affiliations\n\n1. Center for Biophysics and Computational Biology Temple University Philadelphia United States\n2. Department of Physics Temple University Philadelphia United States\n3. Center for Advanced Biotechnology and Medicine Rutgers University Piscataway United States\n4. Department of Chemistry and Chemical Biology Rutgers University Piscataway United States\n5. Department of Chemistry Temple University Philadelphia United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nThe development of drug resistance in HIV is the result of primary mutations whose effects on viral fitness depend on the entire genetic background, a phenomenon called \u2018epistasis\u2019. Based on protein sequences derived from drug-experienced patients in the Stanford HIV database, we use a co-evolutionary (Potts) Hamiltonian model to provide direct confirmation of epistasis involving many simultaneous mutations. Building on earlier work, we show that primary mutations leading to drug resistance can become highly favored (or entrenched) by the complex mutation patterns arising in response to drug therapy despite being disfavored in the wild-type background, and provide the first confirmation of entrenchment for all three drug-target proteins: protease, reverse transcriptase, and integrase; a comparative analysis reveals that NNRTI-induced mutations behave differently from the others. We further show that the likelihood of resistance mutations can vary widely in patient populations, and from the population average compared to specific molecular clones.\n\n## Introduction\n\nHIV mutates rapidly as it jumps from host to host, acquiring resistance to each host\u2019s distinct immune response and applied drug regimen. Drug-resistance mutations (DRMs) arise when the virus evolves under selective pressure due to antiretroviral therapy (ART). Primary DRMs often incur a fitness penalty which is then compensated for by accompanying associated mutations (Heeney et al., 2006; Shafer and Schapiro, 2008). With the use of current robust inhibitors in drug therapy, the drug-resistance mutation patterns in HIV have become increasingly more complex (Richman et al., 2004a; Iyidogan and Anderson, 2014) often leading to ART failure in patients. Resistance is estimated to develop in up to 50% of patients undergoing monotherapy (Richman et al., 2004b) and up to 30% of patients receiving current combination antiretroviral therapy (c-ART) (Gupta et al., 2008). The primary drug targets in treatment of HIV are the enzymes coded by the pol gene, reverse transcriptase (RT), protease (PR), and integrase (IN). A large number of sequences of HIV are available for RT, PR, and IN for patients who have been treated during the past nearly 30 years, and this information permits critical sequence-based informatic analysis of drug resistance.\n\nThe selective pressure of drug therapy modulates patterns of correlated mutations at residue positions which are both near and distal from the active site (Chang and Torbett, 2011; Haq et al., 2012; Flynn et al., 2015; Yilmaz and Schiffer, 2017). A mutation\u2019s impact on the stability or fitness of a protein however is dependent on the entire genetic background in which it occurs: a phenomenon known as \u2019epistasis\u2019. Drug resistance develops as these mutations accumulate, providing the virus a fitness benefit in the presence of drug pressure, with a complex interplay in the roles of primary and secondary mutations (Yilmaz and Schiffer, 2017; Ragland et al., 2017). When a primary resistance mutation is incurred in the context of a wild-type background, there is usually a fitness penalty associated with it. In backgrounds with more (accessory) mutations however, the fitness penalty decreases and on average, the primary mutation can become more likely than the wild-type residue. Because the beneficial effects of the associated mutations depend on the primary mutation, with the accumulation of (accessory) mutations, the reversion of the primary mutation can become increasingly deleterious, leading to a type of evolutionary \u2018entrenchment\u2019 of the primary mutation (Pollock et al., 2012; Shah et al., 2015; McCandlish et al., 2016). The entrenchment effect on a primary mutation can be very strong on average, and is in fact, modulated by the collective effect of the entire sequence background.\n\nThe effective modeling of epistasis is then critical to the identification and understanding of the drug and immune pressure mediated mutational combinations that give rise to drug-resistant, stable viruses. Experimental techniques to assess the effect of multiple mutations on phenotype have proven effective (Troyer et al., 2009; da Silva et al., 2010; Liu et al., 2013), but functional assays to test all possible combinations are impossible because of the vast size of the mutational space. Co-evolutionary information derived from multiple sequence alignments (MSAs) of related protein sequences have also served as a basis for building models for protein structure and fitness (G\u00f6bel et al., 1994; Lockless and Ranganathan, 1999; Morcos et al., 2011; Hinkley et al., 2011; Haq et al., 2012; Ferguson et al., 2013; Mann et al., 2014; Jacquin et al., 2016; Hopf et al., 2017; Tubiana et al., 2019). A subset of such models, called Potts statistical models (Levy et al., 2017) (a generalization of Ising spin glass models), have been used successfully to predict the tertiary and quaternary structure of proteins (Morcos et al., 2011; Marks et al., 2012; Su\u0142kowska et al., 2012; Sutto et al., 2015; Haldane et al., 2016; Levy et al., 2017; Sjodt et al., 2018) as well as viral protein stability and fitness (Shekhar et al., 2013; Barton et al., 2016a; Hopf et al., 2017; Flynn et al., 2017; Levy et al., 2017; Louie et al., 2018).\n\nRecent studies using Potts models inferred the epistatic interactions involved in the evolution of drug resistance in HIV-1 protease (Flynn et al., 2017). The authors identified sequence backgrounds with differing patterns of associated mutations which were predicted to either strongly entrench or strongly disfavor particular primary mutations in HIV-1 protease. Of crucial importance is the observation that whether a mutation favors or disfavors a primary resistance mutation with which it is associated, depends on the entire sequence background. Here we confirm the predictions in Flynn et al. (2017) providing the first direct confirmations of \u2018entrenchment\u2019 by the entire sequence background and show how such models capture the epistatic interactions that lead to drug resistance in each of the three predominant target enzymes in HIV subjected to selective pressure of ART: protease, reverse transcriptase, and integrase. We show that it is possible to predict which mutations a particular background will support in the drug-experienced population and how conducive that background is towards that mutation. Understanding the relationship between the likelihood of a drug-resistance mutation and the specific sequence background is important for the interpretation of mutagenesis experiments, which are carried out in the background of specific reference sequences such as subtype B molecular clones NL4-3, HXB2, and others (Martinez-Picado et al., 1999; An et al., 1999). Our results demonstrate that the background-dependent likelihood of a primary mutation and the strength of compensatory behavior can vary widely in patient populations, and from population averages to predominant subtype B molecular clones such as NL4-3 or HXB2.\n\nIt is useful to review some basic properties of Potts models in this context. A Potts model is a maximum-entropy model of the likelihood of a dataset multiple sequence alignment (MSA), constrained to predict the bivariate (pairwise) residue frequencies between all pairs of positions in the alignment, in other words it is designed to capture the observed pairwise mutational correlations caused by epistasis. A central quantity known as the \u2018statistical\u2019 energy of a sequence $S$ (see Equation 1, Materials\u00a0and\u00a0methods) is commonly interpreted to be proportional to fitness; the model predicts that sequences will appear in the dataset with probability $P\u2062(S)\u221de^{-E\u2062(S)}$, such that sequences with favorable statistical energies are more prevalent in the MSA. A key feature of the Potts model is that the effect of a mutation on fitness and $E\u2062(S)$ is \u2018background-dependent\u2019, as a single change at one position causes a difference in $L-1$ of the coupling values in the sum for $E\u2062(S)$, and a mutation at one position will affect mutations at all other positions both directly and indirectly through chains of interactions involving one or many intermediate residues. Because of this, the Potts model predicts complex patterns of mutational correlations, even though the effective energy model includes only pairwise terms.\n\n## Results\n\n### Epistasis: the effect of the background on primary resistance mutations in HIV\n\nWe begin by demonstrating the importance of the genetic background in determining the frequencies of primary mutations in HIV and verifying this by comparison to the empirical background dependence of primary mutations observed in the Stanford HIV database. We do this using a background-dependent computation of residue biases. If we mutate a sequence $S$ at position $i$ to a residue $\\alpha$, calling the mutated sequence $S_{\\alpha}^{i}$, we can also calculate the mutant sequence\u2019s probability $P\u2062(S_{\\alpha}^{i})$ according to the Potts model. Further, we can calculate the relative probability of any mutation at position $i$ of sequence $S$, as $\u2119\u2062(S,i,\\alpha)=P\u2062(S_{\\alpha}^{i})/\\sum_{\\beta}P\u2062(S_{\\beta}^{i})$. Notably, $\u2119\u2062(S,i,\\alpha)$ depends on the background comprised of all positions except $i$. We will call this background $S\u2216i$ representing the sequence $S$ with an unspecified residue at position $i$. Given a very large sample of sequences such that the background $S\u2216i$ is sampled multiple times, a residue $\\alpha$ will appear at position $i$ in that background with frequency $\u2119\u2062(S,i,\\alpha)$. In practice, obtaining such large samples is difficult. But equivalently, if a background $S\u2216i$ is sampled from nature without knowledge of the residue at position $i$, the Potts model can be used to predict that the residue $\\alpha$ will be at the missing position with a likelihood $\u2119\u2062(S,i,\\alpha)$. We emphasize that the model was not fit using this information. While the Potts Hamiltonian model only contains fields and pairwise coupling terms; $\u2119\u2062(S,i,\\alpha)$ involves combinations of couplings of residues at $i$ with all other positions and cannot be expressed as a simple function of the correlations between mutations at pairs of positions.\n\nUsing $\u2119\u2062(S,i,\\alpha)$ we can classify sequences by how likely a residue $\\alpha$ is to appear at a position $i$ (Figure 1A). We divide the dataset MSA into 10 groups of sequences ordered by $\u2119\u2062(S,i,\\alpha)$, and compare the Potts predicted frequency of the residue in each group to its observed frequency. Figure 1B shows good agreement for the likelihood of M at position 90 in HIV-1 protease, an important drug-resistance mutation. Figure 1D shows that the average absolute error between Potts predicted and observed frequencies is very small for all major drug-resistance mutations in HIV PR, RT and IN, establishing that the Potts model is a good predictor of epistasis in viral sequence backgrounds. These results provide one of the most direct verifications of the complex patterns (involving the effect of many mutations) of epistatic interactions involving drug-resistance mutations in HIV. This result also shows that the background dependence can be very strong, as many sequences can have likelihoods of $\u2119\u2062(S,i,\\alpha)>0.9$ while others have $\u2119\u2062(S,i,\\alpha)<0.1$ as is seen for the DRM L90M in HIV PR (Figure 1B).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/50524/elife-50524-fig1-v1.jpg)\n\n**Figure 1.:** (A) Schematic showing that the Potts model can be used to classify sequences by how likely a residue $\\alpha$ is to appear at a position $i$ in a sequence $S$ using the background-dependent probability, $\u2119\u2062(S,i,\\alpha)$.\u00a0(B) The observed frequency of the resistance mutation L90M in HIV-1 drug-experienced proteases matches the Potts model predicted frequencies in sequence clusters binned according to the Potts-predicted frequencies in steps of 0.1 (blue circles) with statistical error (green). Diameters of the circles represent the number of sequences. Inset shows the significant overlap in Hamming distance for sequences with low predicted mutant frequencies between 0.2 and 0.3 (blue) and high, 0.7 and 0.8 (pink) depicting the difficulty of such a classification based on Hamming distance. (C) The receiver operator characteristic (ROC) curve comparing the Potts model and Hamming distances as classifiers of mutational probabilities for L90M in HIV protease. (D) The average absolute error between the observed mutational frequencies and the Potts-predicted frequencies for the major drug-resistance mutations in HIV-1 in three drug targets. The average absolute error is calculated by binning the sequences in ascending order of their predicted frequencies such that there are roughly equal number of sequences in each bin as shown in Figure 1\u2014figure supplement 1, and averaging over the absolute error in each bin.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/50524/elife-50524-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** The average absolute error in Figure 1D is calculated by binning the sequences in ascending order of their predicted frequencies such that there are roughly equal number of sequences in each bin, and averaging the absolute error of the bins. This binning procedure avoids finite sampling errors encountered when following a more restrictive method of binning by Potts frequencies from 0 to 1 in steps of 0.1 as shown in Figure 1B especially when the mutation frequency is small. The observed vs predicted frequencies are shown for primary drug-resistance mutations V82A occurring in response to PIs in HIV-1 protease (A); N155H occurring in response to INSTIs in HIV-1 IN (B); M184V occurring in response to NRTIs in HIV-1 reverse transcriptase (C); and Y181C/G occurring in response to NNRTIs in HIV-1 reverse transcriptase (D). Diameters of the blue circles represent data sizes in each bin, and error bars are shown as green cross-hairs.\n\nThe epistatic predictions of the Potts model cannot be simply explained by the number of background mutations (or Hamming distance) relative to the wild-type (consensus wild-type subtype B amino acid sequence). It is not simply the number of mutations that bias residues, but particular patterns of mutations. The inset figure of Figure 1B shows that there is significant overlap in the distributions of the number of mutations between two groups of sequences in which the probability of observing the mutation L90M is ~3x smaller in one than the other (\u2018blue\u2019 compared to \u2018red\u2019) illustrating that a prediction of residue frequencies based on Hamming distance alone is insufficient. We compare the residue-prediction ability of the Potts model using $\u2119\u2062(S,i,\\alpha)$ to that of a \u2018Hamming\u2019 model which predicts residue frequencies purely based on the number of mutations. This is plotted in Figure 1C for the L90M mutation in HIV protease. There is a significant performance gain for the Potts model with a true positive rate (TPR) of 0.81 at a false positive rate (FPR) of 0.1, compared to a TPR of 0.46 at an FPR of 0.1 for the Hamming distance model, again showing that the latter model is much less predictive.\n\n### \u2018Entrenchment\u2019 of a primary resistance mutation and its verification\n\nThe log likelihood of a mutation occurring at a position $i$ in a given sequence background relative to the wild-type residue (consensus) at that position can be calculated from the change in the Potts statistical energy on acquiring that mutation from the wild-type residue at that site as $\u0394\u2062E^{i}=E_{w\u2062i\u2062l\u2062d-t\u2062y\u2062p\u2062e}^{i}-E_{m\u2062u\u2062t\u2062a\u2062t\u2062i\u2062o\u2062n}^{i}$. If $\u0394\u2062E^{i}>0$, this implies that the mutation is more favorable in the given sequence background and that there is a fitness penalty associated for reversion back to the wild-type residue; while $\u0394\u2062E^{i}<0$ implies that the wild-type residue is more favorable and the mutation is likely to revert to the wild-type residue. A single resistance mutation in the wild-type background is almost always disfavored relative to the wild-type residue, and is generally disfavored ($\u0394\u2062E<0$) in backgrounds which are close to the wild-type (i.e carry a few accessory mutations). However, as the number of mutations in the background increases, the preference for the wild-type residue at position $i$ decreases on average, until eventually the mutant is preferred at that position. We describe a drug-resistance mutation at position $i$ as being \u2018entrenched\u2019 in a particular sequence S if $\u0394\u2062E^{i}>0$ at that position. When a drug-resistance mutation is entrenched at $i$ in sequence S, this means that the drug-resistance mutation is more probable than the wild-type residue at $i$ in sequence S.\n\nFigure 2A illustrates entrenchment for the drug-resistance mutation L90M in HIV-1 proteases. The preference to revert as a function of the number of mutations at PI-associated sites is shown as box plots. Each box plot shows the median and mean values of the preference to revert for sequences, conditional on the indicated number of mutations\u00a0at\u00a0PI-associated sites in the corresponding column, as well as the region containing half of the sequences (shown in gray bounded by blue/red boxes); the whiskers of the box plot indicate the range of $\u0394\u2062E$ values for sequences in the tails of the distributions conditional on the number of mutations at PI-associated sites. For drug-experienced viral PR sequence backgrounds that contain eight or fewer PI-associated mutations, (Figure 2A left area in blue), the L90M mutation is disfavored on average and likely to revert, with more than a 10\u00a0fold preference to revert in backgrounds with no inhibitor-associated mutations. However, the box plots show that the sequences, conditional on a fixed number of PI-associated mutations, typically span a large range of $\u0394\u2062E$s. For example, the mean and median values of $\u0394\u2062E$ for L90M in those sequences which contain exactly eight PI-associated mutations is slightly smaller than zero (meaning a probability of reverting slightly greater than one), the range of $\u0394\u2062E$ values spans from about\u00a0\u22126 to +5.4 (the preference to revert spans the range \u223c217x to 0.003x). Figure 2A shows that for each box plot corresponding to nine or more PI-associated mutations, the mean and median value of $\u0394\u2062E>0$, again for each box plot $\u0394\u2062E$ or equivalently, the preference to revert, assumes a large range. It is noteworthy that in the consensus background (one of the sequences containing no PI-associated mutations), the predicted probability of observing the consensus residue L90 is ~40x greater than observing the drug-resistance mutation 90M in the Stanford database of drug-experienced sequences. This prediction for the relative likelihood of L90M in the consensus background is qualitatively consistent with what is actually observed in the drug-experienced Stanford dataset (40 sequences are observed to contain L90 and 2 sequences are observed to contain 90M). Figure 2 does not however, represent a time ordering for the acquisition of the primary DRM, instead it follows the general favorability and likelihood of the mutation in sequence backgrounds conditional on the number of inhibitor-associated mutations; and the mutation L90M on average, is favored over the wild-type residue and is entrenched (unlikely to revert) only in sequence backgrounds with\u00a09 or more PI-associated mutations (seen in Figure 2A for sequences in red).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/50524/elife-50524-fig2-v1.jpg)\n\n**Figure 2.:** (A) $\u0394\u2062E^{90}=E_{w\u2062i\u2062l\u2062d-t\u2062y\u2062p\u2062e}^{90}-E_{m\u2062u\u2062t\u2062a\u2062t\u2062i\u2062o\u2062n}^{90}$ change for sequences, conditional on the number of PI-associated mutations is shown as boxplots annotating the first, second and third interquartile range. Whiskers extend to 1.5 times the interquartile range with outliers marked as \u2019x\u2019s and the mean values are marked as squares. The left ordinate scale shows the relative probability of reversion $(e^{-\u0394\u2062E})$, and the right shows $\u0394\u2062E$. Sequences whose energy difference fall above $\u0394\u2062E=0$ (dashed line) are entrenching backgrounds favoring the mutation. Sequence backgrounds where the mutation is favored on average are shown in red, the others in blue. The mutation L90M becomes favorable on average when there are about 9 PI-associated mutations, but there is a wide range of favorability and \u2018which\u2019 PI-associated mutations are present play an important role in determining if the primary mutation is favored/disfavored. The highlighted regions (white with dark border) show there are many sequence backgrounds with between 7 and 14 mutations in which L90M is either \u2018highly entrenched or favored\u2019 (top) or \u2018highly disfavored\u2019 (bottom). (B) Distributions of number of PI-associated mutations in sequences in the \u2018highly entrenching\u2019 and \u2018highly disfavoring\u2019 regions from panel A have a large overlap, again showing that entrenchment is not primarily determined by number of associated mutations. Prediction of the likelihood of M based on the number of PI-associated mutations alone for these sequence backgrounds where M is highly entrenched (red) or highly disfavored (blue) would be especially difficult due to the large overlap between them.\n\nFor a quantitative comparison of the Potts model predictions of \u2018entrenchment\u2019 with the observed statistics concerning the relative likelihood of L90M in the Stanford drug-experienced dataset, it is necessary to aggregate the sequence statistics since the dataset size is too small to compare predictions with observations on a sequence by sequence basis. We compare the observed and predicted residue frequencies for different subsets of sequences as shown in Table 1 for L90M in HIV protease. The agreement between the predictions of the Potts model and the observed sequence statistics is very good. For the set of highly entrenching sequences ($\u0394\u2062E^{i}>1\u2062\\sigma$ with $\\sigma$ being the standard deviation in $\u0394\u2062E$) the L90M mutation is predicted to be present in this set with frequency 97.6% whereas it is observed to be present with frequency 97.3% (see Table 1 second row). In the backgrounds classified by the Potts model as \u2018highly disfavoring\u2019, the mutation is predicted to occur with frequency 3.5% whereas the observed frequency is 1.9%. The L90M mutation is observed to be enriched in the sequences classified by the Potts model as \u2018highly entrenching\u2019 over those classified as \u2018highly disfavoring\u2019 the mutation by a factor of ~1907.\n\n**Table 1.**\n Confirmation of the Potts model entrenchment predictions for the mutation L90M in HIV-1 protease.Analytical predictions of likelihoods of the mutation (using the Potts model) are shown along with the corresponding observed frequencies in different subsets of our dataset classified as entrenching ($\u0394\u2062E>0$) or disfavoring ($\u0394\u2062E<0$) for the mutation. The agreement between the predicted and observed frequencies is remarkable and serves as a confirmation for the Potts model entrenchment predictions.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Sequences</th>\n      <th>Classification</th>\n      <th>Number of sequences</th>\n      <th>Predicted frequency</th>\n      <th>Observed frequency</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td rowspan=\"2\">All</td>\n      <td>Entrenched</td>\n      <td>1475</td>\n      <td>82.7%</td>\n      <td>83.9%</td>\n    </tr>\n    <tr>\n      <td>Disfavored</td>\n      <td>3283</td>\n      <td>12.7%</td>\n      <td>11.9%</td>\n    </tr>\n    <tr>\n      <td rowspan=\"2\">All with |\u0394\u2062E|\u22651\u2062\u03c3 of \u0394\u2062E=0</td>\n      <td>Entrenched</td>\n      <td>560</td>\n      <td>97.6%</td>\n      <td>97.3%</td>\n    </tr>\n    <tr>\n      <td>Disfavored</td>\n      <td>1444</td>\n      <td>3.5%</td>\n      <td>1.9%</td>\n    </tr>\n    <tr>\n      <td rowspan=\"2\">With between 7 and 14 mutations and |\u0394\u2062E|\u22651\u2062\u03c3 of \u0394\u2062E=0</td>\n      <td>Entrenched</td>\n      <td>470</td>\n      <td>97.5%</td>\n      <td>97.0%</td>\n    </tr>\n    <tr>\n      <td>Disfavored</td>\n      <td>239</td>\n      <td>2.8%</td>\n      <td>2.1%</td>\n    </tr>\n  </tbody>\n</table>\n\nEntrenchment cannot be predicted based simply on the number of mutations, particularly for sequences with an intermediate number of associated mutations in the background. To illustrate this we consider sequences for L90M in HIV-1 PR, with between 7 and 14 inhibitor-associated mutations which correspond to the two highlighted regions (white with dark border) in the center of Figure 2A which contain roughly equal numbers of sequences (see Table 1 third row agreement between predictions and observations is excellent). There is significant overlap of the number of PI-associated mutations in the two distributions as seen in Figure 2B, which makes clear why it is difficult to classify them based on the number of associated mutations alone. This also serves to emphasize that the probability of observing a drug-resistance mutation depends on the specific pattern of mutations that appears in the background and not just the total number of associated mutations in the background; this is also implied from the variance of the Potts $\u0394\u2062E$ (lengths of the box and whiskers in Figure 2A) for sequences, for instance, with 13 to 17 PI-associated mutations, where some sequence backgrounds with even such high numbers of associated mutations disfavor the primary DRM while others entrench it.\n\n### Comparative entrenchment of resistance mutations in protease, reverse transcriptase, and integrase\n\nEntrenchment of a resistance mutation depends crucially on the specific background in which it is acquired. In this section, we compare the effect of \u2018background dependence\u2019 of primary DRMs in each of the three major HIV drug target proteins, reverse transcriptase, protease and integrase for the four drug classes: nucleoside analog reverse transcriptase inhibitors (NRTIs), non-nucleoside analog reverse transcriptase inhibitors (NNRTIs), protease inhibitors (PIs) and integrase strand transfer inhibitors (INSTIs) (Table 2). Due to the large number of primary resistance mutations, we restrict our analysis to only those occurring at ~1% mutation frequencies or more. A mutation is defined to be \u2018entrenched in the population\u2019 if at least 50% of the sequences which contain that mutation have a change in Potts statistical energy score $\u0394\u2062E>0$.\n\n**Table 2.**\n Entrenchment in the population (of sequences carrying the mutation) for four major classes of resistance mutations in HIV-1 subtype B: A DRM is entrenched in the population if at least ~50% or more of the sequences containing the mutation entrench it (i.e $\u0394\u2062E=E_{w\u2062i\u2062l\u2062d}-E\u2062m\u2062u\u2062t>0$).We catalog entrenchment in the population (of sequences carrying the mutation) for all primary DRMs appearing at ~1% frequency or more, and our study reveals mutations in response to NNRTIs are much less entrenched in the population (of sequences carrying the mutation) than others.Table 2\u2014source data 1.Table showing entrenchment in the population (of sequences carrying the mutation) for primary resistance mutations against NRTIs.Table 2\u2014source data 2.Table showing entrenchment in the population (of sequences carrying the mutation) for primary resistance mutations against NNRTIs.Table 2\u2014source data 3.Table showing entrenchment in the population (of sequences carrying the mutation) for primary resistance mutations against PIs.Table 2\u2014source data 4.Table showing entrenchment in the population (of sequences carrying the mutation) for primary resistance mutations against INSTIs.\n\n\n<table>\n  <thead>\n    <tr>\n      <th></th>\n      <th>NRTIs</th>\n      <th>NNRTIs</th>\n      <th>PIs</th>\n      <th>INSTIs</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Years in therapy</td>\n      <td>32</td>\n      <td>23</td>\n      <td>24</td>\n      <td>12</td>\n    </tr>\n    <tr>\n      <td>Number of primary DRMs</td>\n      <td>18</td>\n      <td>15</td>\n      <td>13</td>\n      <td>15</td>\n    </tr>\n    <tr>\n      <td>DRMs entrenched in the population (of sequences carrying the mutation)</td>\n      <td>11 (61.1%)</td>\n      <td>1 ( 6.7%)</td>\n      <td>10 (76.9%)</td>\n      <td>13 (86.7 %)</td>\n    </tr>\n    <tr>\n      <td>Number of DRMs conferring high-level resistance</td>\n      <td>7</td>\n      <td>11</td>\n      <td>7</td>\n      <td>6</td>\n    </tr>\n    <tr>\n      <td>High-level resistance DRMs entrenched in the population (of sequences carrying the mutation)</td>\n      <td>3 (42.8%)</td>\n      <td>1 (9.1 %)</td>\n      <td>5 (71.4%)</td>\n      <td>5 (83.3 %)</td>\n    </tr>\n  </tbody>\n</table>\n\n_Source: Results shown in this table are based on calculations for \u2018entrenchment in the population\u2019 (of sequences carrying the mutation) for each primary DRM occurring at ~1% frequency or more in HIV-1 RT, PR, and IN, respectively as shown in Table 2\u2014source data 1, Table 2\u2014source data 2, Table 2\u2014source data 3 and Table 2\u2014source data 4. Resistance levels are determined according to Stanford HIVDB (Rhee et al., 2003; Shafer, 2006) mutation scores for PIs, NRTIs, NNRTIs, and INSTIs._\n\nIf a resistance mutation is \u2018entrenched in the population\u2019, it means that the majority of sequences containing that mutation are unlikely to revert. These sequences would then support the development of drug resistance in the population as it evolves under drug selection pressure. Most drug-resistance mutations against all four classes of drugs are usually present only at low frequencies (much lower than\u00a050% with the one exception of M184V in RT) in the drug-experienced dataset (Table 2\u2014source datas 1, 2, 3, 4); but many of these mutations (with the exception of those conferring resistance to the NNRTIs) are highly \u2018entrenched in the population\u2019 of sequences where they do occur (Table 2), meaning that the mutation is more likely than the wild-type residue in these particular backgrounds, with low probability of reversion. The INSTI-selected resistance mutation Q148R in integrase, for example, is present in only about 5% of the patient population (in our dataset), but the mutation is entrenched in more than 85% of these sequences which have the mutation. These entrenching sequences, even though they are only a small fraction (~4.3%) of the total population, can then support the persistence of drug resistance associated with that mutation as the population evolves under drug selection pressure.\n\nOver the last decade, viral IN has emerged as the major new focus of antiretroviral therapy. IN has been subjected to drug pressure for a considerably shorter period of time than other HIV target proteins, yet IN drug-resistance mutations are strongly \u2018entrenched in the population\u2019 of sequences containing the mutation (Table 2) similar to DRMs against PIs, and NRTIs which have been used in therapy for much longer. Figure 3 illustrates the degree (strength or value of $\u0394\u2062E$, and frequency or number of times $\u0394\u2062E>0$) of entrenchment for some key resistance mutations occurring in the catalytic core domain (CCD) of IN. The mutations Q148R and Q148H for example, reduce susceptibilities to the IN strand transfer inhibitors (INSTIs) raltegravir (RAL) and elvitegravir (EVG) by 40\u2013100 fold and 5\u201310 fold, respectively (Goethals et al., 2010; Fransen et al., 2009; Abram et al., 2013; Goethals et al., 2008). Together, they are present in ~20% of the treated population, but they are strongly entrenched in the sequences in which they occur, with the probability of reversion being much smaller than 1%. Figure 3 shows that the strength of entrenchment can be high for many of these mutations. For example, mutations at site 148 are entrenched in almost all sequences with this mutation, ensuring the persistence of drug resistance associated with these mutations. Comparatively, resistance mutations in RT associated with the non-nucleoside analog reverse transcriptase inhibitors (NNRTIs) are much less \u2018entrenched in the population\u2019 of sequences containing the mutation (Table 2). Only 1 (K103N/T) of the 15 mutations rendering resistance to NNRTIs shows any significant \u2018entrenchment\u2019 by the background.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/50524/elife-50524-fig3-v1.jpg)\n\n**Figure 3.:** The change in Potts statistical energy $\u0394\u2062E$ for some of the key resistance mutations occurring in the catalytic core domain (CCD) of IN, is plotted as a function of the rank of mutation-carrying sequences, ranked in descending order of their favorability towards the mutant. Plot shows the degree of entrenchment for these mutations. For example, Q148R is highly entrenched in almost all sequences carrying it, whereas, G163K is entrenched ($\u0394\u2062E>0$) in only about half of the sequences carrying G163K.\n\nThe striking observation that NNRTI-resistance mutations are less entrenched than those for NRTIs, PIs, and INSTIs is noteworthy (Table 2). One clear difference is that NNRTIs are the only allosteric inhibitors among the four target classes being examined here. NRTIs, PIs, and INSTIs exert their action by binding to the catalytic active sites of the target enzymes. One characteristic of active sites is that they contain invariant (or at least highly conserved) residues, and it is possible that nearby mutations interact strongly with those and their potential entrenchment may be influenced by the presence of the conserved residues. Another shared characteristic of the PI, RT, and IN active site is their catalytic residues are all acidic (PR: 2 Asp; RT 3 Asp; IN 1 Glu, 2 Asp). The NNRTI-binding site has considerably more sequence variation, with only Trp229 being invariant. Perhaps the overall variability of sequence in this region makes it more difficult for residues to become entrenched. Another key difference is that the variety of conformational states of the NNRTI-binding region is broader than for the active sites. The pocket can be closed, open, hyperextended open, and open with a shift of the primer grip, with varying degrees of solvent exposure of numerous internal hydrophobic residues (Sarafianos et al., 2009).\n\nEntrenchment of a DRM makes it hard to escape drug resistance once the mutation is highly favored in its background. Table 2 shows the \u2018entrenchment in the population\u2019 of individual DRMs in sequences that carry the DRM. On aggregating over all possible DRMS, the fraction of sequences containing at least one primary DRM is greater than 60% for all four classes of DRMS (see Table 3 second row). When considering the fraction of sequences carrying at least one entrenched DRM, again the fraction is close to 50% or greater for three of the four DRM classes; the prominent exception is NNRTIs for which only 28.1% carry at least one entrenched primary DRM. This implies that the persistence of drug resistance against NNRTIs as a class (compared to the others) is less likely in the population than the other three classes of HIV drugs.\n\n**Table 3.**\n Entrenchment of at least one primary DRM for each of the four drug classes in HIV-1: Table shows the percentage of drug-experienced sequences which contain at least one primary DRM, and the percentage of drug-experienced sequences which contain at least one primary DRM such that the DRM is entrenched by its respective background.This is shown separately for resistance mutations occurring in response to each of the four HIV drug classes. A significantly lower percentage (~28%) of the patient sequences carry at least one entrenched resistance mutation conferring resistance to the NNRTIs when compared to other drugs (~50%\u201365%).\n\n\n<table>\n  <thead>\n    <tr>\n      <th></th>\n      <th>NRTIs</th>\n      <th>NNRTIs</th>\n      <th>PI</th>\n      <th>Insti</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Number of sequences in MSA</td>\n      <td>19194</td>\n      <td>19194</td>\n      <td>4758</td>\n      <td>1220</td>\n    </tr>\n    <tr>\n      <td>% of total sequences containing at least one primary DRM</td>\n      <td>78.5%</td>\n      <td>62.4%</td>\n      <td>64.8%</td>\n      <td>61.7%</td>\n    </tr>\n    <tr>\n      <td>% of total sequences with at least one entrenched primary DRM</td>\n      <td>64.7%</td>\n      <td>28.1%</td>\n      <td>50.8%</td>\n      <td>47.2 %</td>\n    </tr>\n  </tbody>\n</table>\n\n### Fitness and degree of entrenchment of observed resistance mutations: why some mutations are seen and others are not\n\nThe evolutionary trajectory of a resistance mutation depends on the balance between the fitness cost of evolving that mutation in its particular background, and the advantage it provides in evading drug pressure. It has been shown for HIV protease that a majority of the possible amino acid substitutions are observed rarely or not at all in isolates, indicating that the protein function is under strong purifying selection (Boucher et al., 2019). Observed resistance mutations arising with lower fitness costs which allow the virus to escape drug pressure with the least effect on its ability to propagate infection are therefore expected to become evolutionarily \u2018entrenched\u2019 by their respective sequence-backgrounds. Figure 4 shows the distribution of likelihoods as measured by the Potts $\u0394\u2062E=E_{w\u2062i\u2062l\u2062d}-E_{m\u2062u\u2062t}$ scores at drug-resistance sites in sequences where the corresponding drug-resistance mutations are present in HIV integrase. The distribution of likelihoods for observed DRMs in sequences where they are present is seen in \u2018green\u2019, while the \u2018blue\u2019 distribution shows the distribution of likelihoods of mutations to other possible residue types in these sequences (containing the DRMs) at the sites where the DRM is observed. The distribution of the likelihoods of observed IN DRMs (green in Figure 4) shows that these drug-resistance mutations are generally more favorable than the wild-type residue as they have a $\u0394\u2062E>0$ in their respective backgrounds where the mutations are present. The relative displacement of the green from the blue distribution shows that in sequences which contain the drug-resistance mutation, the observed mutations are predicted on average to be more likely than the consensus residue type and that mutations to other residue types at those sites in the same sequence backgrounds are even less likely than the consensus residue type, on average. Hence, the observed resistance mutations arise in these drug-experienced backgrounds and help enable the virus to evade drug pressure. The more prohibitive fitness costs associated with the appearance of rare/unobserved mutations (blue distribution in Figure 4) at the same sites support the suggestion that drug-resistance mutations generally confer resistance at the least fitness cost. Each distribution also has a wide range of $\u0394\u2062E$ scores illustrating the wide variation in the favorabilities of different mutations in different sequence backgrounds.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/50524/elife-50524-fig4-v1.jpg)\n\n**Figure 4.:** Distribution of Potts $\u0394\u2062E$ scores for key residues associated with drug resistance in HIV-1 IN.The distribution of the Potts $\u0394\u2062E\u2062(E_{w\u2062i\u2062l\u2062d}-E_{m\u2062u\u2062t})$ scores for sequences carrying the particular resistance mutation are shown in \u2019green\u2019 for the most frequently observed INSTI selected resistance mutations in HIV IN, and in \u2019blue\u2019 for all other possible mutations at the same sites. Other possible mutations include rarely observed or unobserved mutations. The histograms show the differential distribution of $\u0394\u2062E$ scores for observed vs. unobserved/rare mutations at 15 primary mutation sites associated with evolving drug resistance in HIV-1 IN. The green (observed) and blue (unobserved/rare) distributions are normalized to the total number of primary DRMs in IN in the Stanford HIVDB and the total number of other possible mutations at the same sites, respectively. The mean $\u0394\u2062E$ scores for observed vs. unobserved mutations are +2.11 and \u22125.58, respectively ($p<0.001$). The wide distribution of $\u0394\u2062E$ scores also illustrates the role of the background in which the resistance mutation occurs.\n\n### Molecular clones and the effects of specific backgrounds\n\nIn vitro fitness and drug susceptibility assays for viral proteins of HIV are often based on mutagenesis experiments, which are performed with specific molecular clones of the virus such as NL4-3, HXB2, LAI IIIB, etc (Hu and Kuritzkes, 2010; Abram et al., 2013). Mutagenesis experiments performed with specific clones, however, can only explore a limited region of the fitness and mutational landscapes available to the viral proteins accessible through the particular clones. These measurements are not necessarily representative of the fitness effects and the favorabilities of primary resistance mutations in the presence of in vivo selective pressures and entrenchment in viral background(s) of diverse patient populations as contained in the Stanford HIV drug resistance database (HIVDB, https://hivdb.stanford.edu/).\n\nFigure 5 compares the predicted log likelihoods (Potts $\u0394\u2062E$s also associated with the degree of entrenchment) of primary drug-resistance mutations in integrase and reverse transcriptase averaged over the drug-experienced patient sequences in the Stanford HIVDB (denoted as $<\u0394\u2062E_{p\u2062a\u2062t\u2062i\u2062e\u2062n\u2062t}>$) with the corresponding values in the specific backgrounds of molecular clones NL4-3 (panels A and D), HXB2 (panels B and E) and the subtype B consensus sequence (panels C and F), respectively. The likelihood and degree of entrenchment of a primary resistance mutation depends strongly on the specific background in which it is accrued and as observed in Figure 5, these effects studied in the genetic background of a specific molecular clone does not accurately (correlates only moderately) represent the effects averaged over drug-experienced patient populations. Among the three specific sequences analyzed, NL4-3 seems to be somewhat more representative of drug-experienced patient populations than the other two. That the consensus B sequence is not the most representative serves to highlight that epistatic effects can vary significantly from the average to patient populations. In fact, the molecular clones likely represent patient backgrounds where the mutation is disfavored and likely absent, rather than where the mutation is entrenched.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/50524/elife-50524-fig5-v1.jpg)\n\n**Figure 5.:** The $\u0394\u2062E$ change in Potts energy of a sequence is used as the measure of \u2018entrenchment\u2019 and favorability of key resistance mutations in HIV-1 NL4-3, HXB2, and the subtype-B consensus sequences, respectively, shown as a function of the average $\u0394\u2062E$ in drug-experienced HIV-1 subtype B patient populations ($<\u0394\u2062E_{p\u2062a\u2062t\u2062i\u2062e\u2062n\u2062t}>$) in the Stanford HIVDB for viral integrase (A,B,C) and reverse transcriptase (D,E,F). In each case, the Pearson correlation coefficients are indicated. The protein sequences for the molecular clones NL4-3 and HXB2 are obtained from GenBank with accession number AF324493.2 and K03455.1, respectively with protein ids for the pol polyprotein as AAK08484.2 and AAB50259.1, respectively. The subtype B consensus sequence is obtained from the Stanford HIVDB. The degree of \u2018entrenchment\u2019 in these subtype B strains is often not representative of the average entrenchment effects in a patient population or even the most representative background from a patient population.\n\nFigure 6 shows the distribution of the change in Potts energy, $\u0394\u2062E$ (log likelihood) values for the DRMS N155H (panel A) and G140S (panel B) in HIV IN in different drug-experienced sequence backgrounds in the Stanford HIVDB along with the $\u0394\u2062E$ change in the specific backgrounds of NL4-3, HXB-2 and the subtype B consensus sequences. In terms of the change in Potts energy, which represents the degree of entrenchment of a mutation and its overall favorability in a given background, there is a clear distinction between sequence backgrounds where the mutation is present and mostly favored (or \u2018entrenched\u2019) from those where the mutation is absent. Key resistance mutations are typically disfavored in molecular clones in line with the fitness effects reported in Hu and Kuritzkes (2010) and in line with sequence backgrounds that do not carry the mutation (Figure 6). An exception to the general rule is observed for the IN mutation N155H in NL4-3 (Figure 6A), where the virus, despite not carrying the mutation, is favorable towards it.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/50524/elife-50524-fig6-v1.jpg)\n\n**Figure 6.:** The degree of entrenchment for subtype B consensus, NL4-3 and HXB2 are shown as \u2019black dashed\u2019, \u2019red\u2019 and \u2019magenta\u2019 lines, respectively. The Potts entrenchment score manifests as a clear distinction between backgrounds where a particular mutation is observed from ones where the mutation is absent, with the former more likely to present a distinct fitness advantage towards the mutation.\n\n### Effective epistasis in the presence of drug selection pressure\n\nHIV evolves rapidly with studies indicating that in the absence of drug pressure, the virus in a single patient explores the majority of all point mutations many times daily (Coffin, 1995; Perelson et al., 1996). The presence of drug selection pressure can however bias the virus to explore regions of the mutational landscape that allow the virus to evade the drug, which are not accessible otherwise. In this section, we discuss how drug treatment leads to a mutational landscape that reflects both intrinsic epistatic effects and the effects of drug selection pressure; we use the term \u2018effective epistasis\u2019 to refer to the combined effects of both.\n\nAs HIV jumps from host to host, it adapts to the applied selection pressure from each host\u2019s immune response and drug regimen if the host is currently undergoing retroviral treatment. In the case of immune response selection pressure, (Shekhar et al., 2013; Ferguson et al., 2013) suggest that due to the diversity of host immune responses among the HIV population, selective effects of immune pressure are averaged so that a Potts model fit to sequences from many different hosts can effectively capture the \u2018intrinsic\u2019 fitness landscape of the virus. In the case of drug selection pressure, the correlated mutation patterns which are contained in MSAs built on drug-experienced datasets reflect a combination of intrinsic epistatic effects and possibly correlations induced by drug selection pressure. To distinguish between intrinsic epistasis and correlated drug selection pressure, we have built a second Potts statistical energy model on an MSA constructed from the Stanford HIV drug-naive dataset and compared the two models.\n\nFigure 7 shows that the effects of point mutations captured by the changes in Potts statistical energies, $\u0394\u2062E=E_{w\u2062i\u2062l\u2062d-t\u2062y\u2062p\u2062e}-E_{m\u2062u\u2062t\u2062a\u2062t\u2062i\u2062o\u2062n}$ when scored using the two models (the drug-naive model fit to an MSA constructed using HIV sequences in the Stanford database without prior drug exposure and the drug-experienced model fit to an MSA constructed with drug-experienced sequences) are highly correlated. The changes in the \u2018field\u2019 terms are responsible for the shift in $\u0394\u2062E$s, whereas the changes in the \u2018couplings\u2019 determine the correlation coefficient. Overall, the high correlation (Pearson correlation coefficient > 0.8) between the probabilities of observing the drug-resistance mutation relative to the wild-type in a given background (measured as a function of $\u0394\u2062E$), when the Potts model is parameterized on the drug-naive dataset as compared with the drug-experienced dataset shows that \u2018intrinsic\u2019 epistatic effects have a large influence on the virus evolving under drug selection pressure. A detailed comparison of the two models will be presented elsewhere.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/50524/elife-50524-fig7-v1.jpg)\n\n**Figure 7.:** The comparison of the effects of point mutations is shown in terms of Potts $\u0394\u2062E$ scores (which forms the basis of our study) using two different Potts models, parameterized on drug-naive vs drug-experienced sequences for PR drug-resistance mutations M46I (A), I54V (B), V82A (C), and L90M (D), all of which appear with at least a frequency of 0.25% in both datasets.\u00a0Bin shading for the 2D histogram scatter plots shown here scales logarithmically with the number of sequences whose scores fall into each bin. To obtain $\u0394\u2062E$ scores, the sequences are scored using a drug-naive model vs. a drug-experienced model. The $\u0394\u2062E$ scores are highly correlated with a Pearson correlation coefficient of 0.82 ($p<0.001$), 0.93 ($p<0.001$), 0.85 ($p<0.001$), and 0.82 ($p<0.001$), respectively.\n\nAs a consequence of fitting a Potts model on drug-experienced sequences, there may be apparent mutational correlations induced due to the varying selective pressures of different drug regimens. However, the large overlap in resistance mutation sites among different drugs of the same class (Wensing et al., 2017) as seen in Figure 8 as well as the large number of possible resistance mutations that can arise in response to any one drug, and the multi-drug resistance mutation patterns induced by many drugs (Condra et al., 1995; Hertogs et al., 2000; Delaugerre et al., 2001), all tend to minimize the effects of such \u2018spurious\u2019 correlations in the drug-experienced dataset. Furthermore, if such \u2018spurious\u2019 correlations picked up from a drug-experienced dataset strongly affected the drug-experienced Potts model, we would not expect to see the \u2018effective\u2019 epistatic effects on $\u0394\u2062E$ inferred by the drug-experienced model to be highly correlated with the \u2018intrinsic\u2019 epistatic effects of the drug-naive model as observed in Figure 7.\n\n![Figure 8.](https://cdn.elifesciences.org/articles/50524/elife-50524-fig8-v1.jpg)\n\n**Figure 8.:** The mutations (both primary and associated) arising in drug-treated HIV proteases in response to inhibitor treatment are shown corresponding to each protease drug.\u00a0The diameters of the circles represent the number of mutations at that site that occurred in sequences treated with the particular drug. Most mutations that occur in response to one drug are seen to have occurred when treated with another drug of the same class, showing that the \u2018spurious correlations\u2019 (that could be picked up by a Potts model built on a mixture of patient sequences treated with different drugs of the same class, if the mutations occurring in response to one drug are not at all observed in response to another), are minimal.\n\n## Discussion\n\nThe evolution of viruses like HIV under drug and immune selective pressures induces correlated mutations due to constraints on the structural stability and fitness (ability to assemble, replicate, and propagate infection) of the virus (Theys et al., 2018). This is a manifestation of the epistatic interactions in the viral genome. In fact, it has been shown that long-range epistasis can shift a protein\u2019s mutational tolerance during HIV evolution (Haddox et al., 2018). Epistasis has recently become a major focus in structural biology and genomics, and co-evolutionary information encoded in collections of protein sequences have been used to infer epistatic couplings between them (Hinkley et al., 2011; Ferguson et al., 2013; Mann et al., 2014; Hopf et al., 2017; Figliuzzi et al., 2016; Butler et al., 2016; Haldane et al., 2018). In the current study, we have used the correlated mutations encoded in an MSA of drug-experienced HIV-1 sequences to parameterize a Potts Hamiltonian model of sequence statistical energies, and used it to infer the epistatic interactions leading to drug resistance in HIV-1 Subtype B. We first confirmed the Potts model\u2019s ability to accurately predict the likelihood of a mutation based on a Potts statistical energy analysis. The predictive power of the model is established by verifying predictions of mutation prevalence based on its background using aggregate sequence statistics from the MSA, illustrating the crucial role of the background in giving rise to a mutation. This also provides the most direct verification of the complex patterns of epistasis which lead to drug resistance in HIV.\n\nEntrenchment of functionally important mutations has been shown to be a general feature in systems exhibiting epistasis (Pollock et al., 2012). The entrenchment of primary resistance mutations described in this work suggests that epistasis plays a major role in the evolution of HIV under drug selection pressure. Both primary and accessory drug-resistance mutations exhibit strong epistatic interactions and therefore, entrenchment is a likely mechanism by which drug-resistance mutations accumulate within the population and in the persistence of drug resistance. Building on previous work by Flynn et al. (2017) identifying sequence backgrounds which were predicted to strongly entrench or strongly disfavor particular primary resistance mutations in HIV-1 PR, we first confirmed the Potts model entrenchment predictions using aggregate statistics from the MSA, and then extended it to the two other major HIV drug target enzymes, RT and IN.\n\nIt has been shown by Barton et al. (2016b)\u00a0and Chen and Kardar (2019) that large differences in escape times for HIV patients targeting the same epitope can be explained by differences in the background mutations contained in the sequence of the virus strains that infected these patients. A similar result can also be expected for the virus subjected to antiretroviral therapy. If the background mutations have strong disfavorable couplings with the primary escape mutation, the escape mutation will likely take much longer to establish itself in the population. Due to the nature of entrenchment, we expect this to be reflected in the entrenchment score of a primary mutation in a given background. Resistance mutations, particularly ones associated with high levels of drug resistance, can be expected to occur with a significant degree of entrenchment in most drug-experienced backgrounds containing the mutation. Therefore, in the context of patient populations, a study of the entrenchment of primary resistance mutations is very relevant. The most entrenched mutations are the ones which are at some local maxima in the fitness landscape. Accumulating correlated mutations as observed in Figure 2A, can unlock pathways to these local fitness maxima (Gupta and Adami, 2016). But of crucial importance is the background in which these mutations occur. The local maxima can be 100 times more favorable in particular backgrounds, and these highly resistant sequences pose a significant risk for transmission of drug resistance to new hosts. Entrenchment of resistance mutations can thus play a central role in the persistence of drug-resistant viruses, and many of the most strongly entrenched mutations have been shown to revert slowly in drug-naive patients with transmitted resistance or in drug-experienced patients after withdrawal of ART (Izopet et al., 2000; Yang et al., 2015; Gandhi et al., 2003; Borman et al., 1996).\n\nIn vitro studies of the acquisition of drug resistance are based on mutagenesis experiments usually performed on molecular clones such as NL4-3, HXB2, IIIB, etc. We show that the epistatic effects on major drug-resistance mutations in molecular clones can be very different from what is observed in patient populations. Thus, fitness studies in particular clones may not be representative of fitness in drug-experienced patient populations or even the consensus background of a patient population.\n\nOur comparison of the statistical energy differences $\u0394\u2062E$ obtained from two Potts models of HIV protease sequence co-variation, one constructed from an MSA of drug-naive sequences in the Stanford HIV database, and the other constructed from an MSA of drug-experienced sequences, shows that the effect of the sequence background on the likelihood of observing a drug-resistance mutation compared with a consensus residue is highly correlated between the drug-experienced and drug-naive datasets (Figure 7). This supports our conclusion that \u2018intrinsic\u2019 epistatic effects have a strong influence on the virus evolving under drug selection pressure. While beyond the scope of the present work, this observation invites further analysis and opens up new avenues of research designed to interrogate in a quantitative way how the application of drug selection pressure changes the intrinsic mutational landscape. In order to identify HIV sequences which are most responsible for conferring drug resistance, we need to know the probabilities of observing highly entrenching sequences in the drug-naive population as well as in the drug-experienced population. Multi-canonical reweighting techniques have been developed for this purpose (Tan et al., 2016). While the present work does not deal with the time development of drug resistance or identify evolutionary paths, our construction of Potts models from both the drug-naive and drug-experienced populations, sets the stage for kinetic Monte-Carlo studies of pathways by which drug resistance is acquired.\n\nOverall, the analysis presented here provides a framework for further studies of the fitness of HIV proteins evolving under drug selection pressure. The Potts model parameterized on the drug-experienced dataset is a powerful classifier that can identify complex sequence patterns that highly favor (entrench) or disfavor each drug-resistance mutation. Elucidating the epistatic effects of key resistance mutations has the potential to impact future HIV therapies and their entrenchment may be an important factor reinforcing the emergence of drug-resistant strains. The degree of entrenchment of key resistance mutations can provide insights about the fitness of these mutations in the context of a patient HIV reservoir; and their differential degree of entrenchment in different viral sequence backgrounds has the potential to impact future drug design strategies for the next generation of c-ART based on the patient viral reservoir, and suggests that the future of these strategies may very well involve personalized medicine based on an analysis of each patient\u2019s individual viral genomic background.\n\n## Materials and methods\n\nIn this section, we give a brief introduction to the Potts Hamiltonian model and the motivation behind the model. The Potts model is a probabilistic model of sequence co-variation built on the single and pairwise site amino-acid frequencies of a protein MSA, and aimed to describe the observation probabilities of the various states of the system (sequences in the MSA).\n\nTo build the inference model, the goal is to approximate the unknown empirical probability distribution $P\u2062(S)$ which best describes HIV-1 sequences $S$ of length $L$, where each residue is encoded in an alphabet $Q$, by a model probability distribution $P^{m}\u2062(S)$ as in Mora and Bialek (2011). We choose the \u2018least biased\u2019 or maximum entropy distribution as the model distribution. Such distributions maximizing the entropy have been previously derived in M\u00e9zard and Mora (2009); Weigt et al. (2009); Morcos et al. (2011); Ferguson et al. (2013); Barton et al. (2016a) with the constraint that the empirical univariate and bivariate marginal distributions are effectively preserved. We follow a derivation of the maximum entropy model using Lagrange multipliers as in Mora and Bialek (2011) and Ferguson et al. (2013). Our maximum entropy model takes the form of an exponential distribution given by:\n\n$$\nE\u2062(S)=\\sumiLh_{S_{i}}^{i}+\\sumi<jL\u2062(L-1)/2J_{S_{i}\u2062S_{j}}^{i\u2062j}\n$$\n\n\n\n$$\nP^{m}\u2062(S)\u221de\u2062x\u2062p\u2062(-E\u2062(S))\n$$\n\nwhere the quantity $E\u2062(S)$ is the Potts Hamiltonian determining the statistical energy of a sequence $S$ of length $L$, the model parameters $h_{S_{i}}^{i}$ called \u2018fields\u2019 represent the statistical energy of residue $S_{i}$ at position i in sequence $S$, and $J_{S_{i}\u2062S_{j}}^{i\u2062j}$ are \u2018couplings\u2019 representing the energy contribution of a position pair $i,j$. In this form, the Potts Hamiltonian consists of $L\u2062Q$ field parameters $h_{S_{i}}^{i}$ and $(L2)Q^{2}$ coupling parameters $J_{S_{i}\u2062S_{j}}^{i\u2062j}$, and for the exponential distribution $P^{m}\u221de\u2062x\u2062p\u2062(-E)$, negative fields and couplings signify favored amino acids. The change in Potts energy due to mutating a residue $\\alpha$ at position $i$ in $S$ to $\\beta$ is then given by:\n\n$$\n\u0394\u2062E\u2062(S_{\\alpha\u2192\\beta}^{i})=E\u2062(S_{\\alpha}^{i})-E\u2062(S_{\\beta}^{i})=h_{\\alpha}^{i}-h_{\\beta}^{i}+\\sumj\\neqiLJ_{\\alpha\u2062S_{j}}^{i\u2062j}-J_{\\beta\u2062S_{j}}^{i\u2062j}\n$$\n\nIn this form, a $\u0394\u2062E\u2062(S_{\\alpha\u2192\\beta}^{i})>0$ implies that the residue $\\beta$ is more favorable than residue $\\alpha$ at position $i$ for the given sequence $S$. If $\\alpha$ represents the wild-type residue at $i$ and $\\beta$ the mutant, then the mutant is favorable over the wild-type if $\u0394\u2062E>0$ for the change, and vice versa.\n\nThe methodology followed in this analysis is similar to the one followed in Flynn et al. (2017) for HIV-1 PR (for further details on derivation and description of the model parameters see their Materials and methods section as well as the SI). The sample size of the MSA plays a critical role in determining the quality and effectiveness of the model (Haldane and Levy, 2019) and we confirm that the models are fit using sufficient data with minimal overfitting.\n\n### Data processing and mutation classification\n\nThe method begins with the collection of sequence and patient as well as reference information from the Stanford University HIV Drug resistance database (HIVDB, https://hivdb.stanford.edu) (Rhee et al., 2003; Shafer, 2006). In this work, we have used the Stanford HIVDB genotype-rx (https: //hivdb.stanford.edu/pages/genotype-rx.html) to obtain protein sequences for HIV target proteins. Alternatively, downloadable sequence datasets are also available on the Stanford HIVDB ( https://hivdb.stanford.edu/pages/geno-rx-datasets.html). The filtering criteria we used are: HIV-1, subtype B and nonCRF, and drug-experienced (# of PI\u00a0=\u00a01\u20139 for PR, # of NRTI\u00a0=\u00a01\u20139 and # of NNRTI\u00a0=\u00a01\u20134 for RT, and # of INST\u00a0=\u00a01\u20133 for IN), removal of mixtures, and unambiguous amino acid sequences (amino acids are \u2018-ACDEFGHIKLMNPQRSTVWY\u2019). For RT, sequences with exposure to both NRTIs and NNRTIs were selected. An alternate search for RT sequences exposed to only NRTIs or NNRTIs would return a vastly smaller number of isolates (5398 and 80 isolates, respectively for sequences exposed to only NRTIs or only NNRTIs as compared to 22446 isolates for sequences exposed to both). Sequences with insertions (\u2018#\u2019) and deletions (\u2018~\u2019) are removed. MSA columns and rows with more than 1% gaps (\u2018.\u2019) are removed. This resulted in a final MSA size of $N=4758$ sequences of length $L=93$ for PR, $N=19194$ sequences of length $L=188$ for RT, and $N=1220$ sequences of length $L=263$ for IN. (Sequence datasets now available in the Stanford HIVDB are further updated, last on February, 2019). To retain enough sequence coverage in the MSA, we removed residues: residues 1\u201338 and residue 227 onwards for RT (see Appendix 1\u2014figure 1 of Appendix), and 264 onwards for IN. For this reason, some interesting DRMs like F227I/L/V/C, L234I, P236L or N348I (NNRTI affected) for RT are not amenable for our analysis. For drug-naive PR model, sequences are obtained from the Stanford HIVDB using the criterion # of PI\u00a0=\u00a00, and after filtering of inserts, deletes, rows or columns with too many \u2018gap\u2019 characters, etc results in an MSA of $N=14969$ sequences of length $L=93$. The protein sequences for the molecular clones NL4-3 and HXB2 are obtained from GenBank (Clark et al., 2016) with accession number AF324493.2 and K03455.1, respectively. The protein ids for the pol polyprotein are AAK08484.2 and AAB50259.1, respectively. The subtype B consensus sequence is obtained from the Los Alamos HIV sequence database (Foley et al., 2018) consensus and ancestral sequence alignments (https://www.hiv.lanl.gov/content/sequence/HIV/CONSENSUS/Consensus.html, last updated August 2004), and is also available in Appendix 1 of the Stanford HIVDB release notes page (https://hivdb.stanford.edu/page/release-notes/). Sequences are given weights reciprocal to the number of sequences contributed by each patient such that if multiple sequences are obtained from a single patient, the effective number of sequences obtained from any single patient is still 1. Sequences from different patients are assumed to be independent. It has been shown that phylogenetic trees of drug-naive and drug-experienced HIV-1 patients exhibit star-like phylogenies (Keele et al., 2008; Gupta and Adami, 2016), and thus, phylogenetic corrections are not required. Potts models of different HIV-1 protein sequences under immune pressure have also previously been parameterized without phylogenetic corrections (Ferguson et al., 2013; Mann et al., 2014; Butler et al., 2016).\n\nIn this work, mutations in the HIV genome have been classified into three main classes: primary or signature drug-resistance mutations, accessory or secondary mutations, and polymorphic mutations. The subtype B consensus sequence, which is derived from an alignment of subtype B sequences maintained at the Los Alamos HIV Sequence Database (https://www.hiv.lanl.gov), and is a commonly used reference sequence to which new sequences are compared, is used as our reference sequence and is referred to as the \u2018consensus wild-type\u2019 throughout the text. In accordance with current literature Wensing et al. (2017) and the Stanford HIV Drug Resistance Database (Rhee et al., 2003; Shafer, 2006), any mutation that (i) affects in vitro drug-susceptibility, (ii) occurs commonly in persons experiencing virological failure, and (iii) occurs with fairly low extent of polymorphism (mutations occurring commonly as natural variants) among untreated individuals, is classified as a major or primary drug-resistance mutation. In contrast, mutations with little or no effect on drug susceptibility are classified as accessory or secondary. Such mutations may reduce drug susceptibility or increase replication fitness only in combination with a primary mutation. Polymorphic mutations are mutations occurring as natural variants typically in antiretroviral drug (ARV) naive patients. Polymorphic mutations may occur in the absence of drug pressure and usually have little effect on ARV susceptibility when they occur without other DRMs. In this regard, polymorphic mutations affecting ARV susceptibility in combination with other DRMs can be classified as accessory.\n\n### Alphabet reduction\n\nIt has been shown that a reduced grouping of alphabets based on statistical properties can still capture most of the information in the full 20 letter alphabet while decreasing the number of degrees of freedom and thereby, leading to a more efficient model inference (Barton et al., 2016a; Haldane et al., 2016). All the possible alphabet reductions from 21 amino acid characters (20+1 gap) to 20 amino acid characters at any site $i$ are enumerated for all pair of positions $ij(j\\neqi)$, by summing the bivariate marginals for each of the $(212)$ possible combinations of amino acid characters, and choosing the alphabet grouping which minimizes the root mean square difference (RMSD) in mutual information (MI):\n\n$$\nM\u2062I_{R\u2062M\u2062S\u2062D}=\\sqrt{\\frac{1}{N}\u2062\\sumi\u2062j(M\u2062I_{Q=21}^{i\u2062j}-M\u2062I_{Q=20}^{i\u2062j})^{2}}\n$$\n\nbetween all pairs of positions $ij(j\\neqi)$. The process is then iteratively carried out from 20 amino acid characters to 19, and so on until the desired reduction in amino acid characters is reached. Due to residue conservation at many sites in HIV-1, several previous studies have used a binary alphabet to extract meaningful information from HIV sequences (Wu et al., 2003; Ferguson et al., 2013; Flynn et al., 2015). A binary alphabet however, marginalizes the information at a site to only the wild-type and mutant residues, with the loss of some informative distinctions between residues particularly at sites acquiring multiple mutations. To strike a balance between loss of information due alphabet reduction and reduction of the number of degrees of freedom for effective model inference, we use a reduced alphabet of 4 letters in line with Flynn et al. (2017). Our four letter alphabet reduction gives a Pearson\u2019s $R^{2}$\u00a0coefficient of 0.995, 0.984, and 0.980 for protease, reverse transcriptase, and integrase, respectively between the $M\u2062I$ of bivariate marginal distributions with the full 21 letter alphabet and the reduced four letter alphabet, representing a minimal loss of information due to the reduction.\n\nUsing the reduced alphabet, the original MSA is then re-encoded and the bivariate marginals are recalculated. Small pseudocounts are then added to the bivariate marginals, as described by Haldane et al. (2016) to make up for sampling bias or limit divergence in the following inference procedure.\n\n### Model inference\n\nThe goal of the model inference is to find a suitable set of Potts parameters ${h,J}$ that fully determines the Potts Hamiltonian $E\u2062(S)$ and the total probability distribution $P^{m}\u2062(S)$ given in Equation 1 and Equation 2, respectively. This is done by obtaining the set of fields and couplings ${h,J}$, which yield bivariate marginal estimates that best reproduce the empirical bivariate marginals.\n\nA number of techniques to this effect have been developed previously (M\u00e9zard and Mora, 2009; Weigt et al., 2009; Balakrishnan et al., 2011; Cocco and Monasson, 2011; Morcos et al., 2011; Haq et al., 2012; Jones et al., 2012; Ekeberg et al., 2013; Ferguson et al., 2013; Barton et al., 2016a). We follow the methodology given in Ferguson et al. (2013). Given a set of fields and couplings, the bivariate marginals are estimated by generating sequences through a Markov Chain Monte Carlo (MCMC) sampling with the Metropolis criterion for a generated sequence proportional to the exponentiated Potts Hamiltonian. A multidimensional Newton search algorithm is then used to find the optimal set of Potts parameters ${h,J}$. The descent step in the Newton search is determined after comparing the bivariate marginal estimates generated from the MCMC sample with the empirical bivariate marginal distribution. Although approximations are made in the computation of the Newton steps, the advantage of this method is that it avoids making explicit approximations to the model probability distribution. The method is limited by the sampling error of the input empirical marginal distributions and can also be computationally quite intensive. Our GPU implementation of the MCMC method makes it computationally tractable without resorting to more approximate inverse inference methods. The MCMC algorithm implemented on GPUs has been used to infer Potts models of sequence covariation which are sufficiently accurate to infer higher order marginals as shown by Flynn et al. (2017); Haldane et al. (2018). For a full description of the inference technique, we refer the reader to the supplemental information of Haldane et al. (2016).\n\nThe scheme for choosing the Newton update step is important. Ferguson et al. (2013) developed a quasi-Newton parameter update approach which determines the updates to $J^{i\u2062j}$ and $h^{i}$ by inverting the system\u2019s Jacobian. In order to simplify and speed up the computation, we take advantage of the gauge invariance of the Potts Hamiltonian. We use a fieldless gauge in which $h^{i}=0$ for all $i$, and we compute the expected change in the model bivariate marginals $\u0394\u2062f_{m}^{i\u2062j}$ (hereafter dropping the m subscript) due to a change in $J^{i\u2062j}$ to the first order by:\n\n$$\n\u0394\u2062f_{S_{i}\u2062S_{j}}^{i\u2062j}=\\sumk\u2062l,S_{k}\u2062S_{l}\\frac{\\partial\u2061f_{S_{i}\u2062S_{j}}^{i\u2062j}}{\\partial\u2061J_{S_{k}\u2062S_{l}}^{k\u2062l}}\u2062\u0394\u2062J_{S_{k}\u2062S_{l}}^{k\u2062l}+\\sumk,S_{k}\\frac{\\partial\u2061f_{S_{i},S_{j}}^{i\u2062j}}{\\partial\u2061h_{S_{k}}^{k}}\u2062\u0394\u2062h_{S_{k}}^{k}\n$$\n\nComputing the Jacobian $\\frac{\\partial\u2061f_{S_{i}\u2062S_{j}}^{i\u2062j}}{\\partial\u2061J_{S_{k}\u2062S_{l}}^{k\u2062l}}$ and inverting the linear system in Equation 5 to solve for the changes in $\u0394\u2062J^{i\u2062j}$ and $\u0394\u2062h^{i}$ given the $\u0394\u2062f^{i\u2062j}$, is the challenging part of the computation. We choose the $\u0394\u2062f^{i\u2062j}$ as:\n\n$$\n\u0394\u2062f^{i\u2062j}=\\gamma\u2062(f_{e\u2062m\u2062p\u2062i\u2062r\u2062i\u2062c\u2062a\u2062l}^{i\u2062j}-f^{i\u2062j})\n$$\n\nwith a small enough damping parameter $\\gamma$ such that the linear (and other) approximations are valid.\n\nThe computational cost of fitting $(L2)\\times(4\u22121)^{2}+93\\times(4\u22121)=372,816$ model parameters for the smallest protein in our analysis, PR, on 2 NVIDIA K80 or 4 NVIDIA TitanX GPUs is $\u224820\u2062\u00e2\u2062\u20ac\u2062\u2030\u2062h$. The methodology followed in this analysis is almost the same as done in Flynn et al. (2017) (see Materials and methods) for HIV-1 PR. For a more detailed description of data preprocessing, model inference, and comparison with other methods, we refer the reader to the SI and text of Flynn et al. (2017); Haldane et al. (2016); Haldane et al. (2018); Haldane and Levy (2019).\n\nA repository containing the inference methodology code is available at https://github.com/ComputationalBiophysicsCollaborative/IvoGPU and the final MSAs are available at https://github.com/ComputationalBiophysicsCollaborative/elife_data (copy archived at https://github.com/elifesciences-publications/elife_data). Appendix 1 contains a figure showing the sequence coverage for RT and tables of most entrenched and least entrenched sequences with same Hamming distances, for some important DRMs in PR, RT and IN.\n\n### Statistical robustness of HIV potts models\n\nFinite sampling error and overfitting can play an important role in all inference problems, and inverse Ising inference is no exception. Overfitting of the Potts model cannot be simply estimated by comparing the number of model parameters to the number of sequences being fit. Our Potts model is not directly fit to the sequences but to the bivariate marginals (pairwise residue frequencies) of the MSA, and there are equal numbers of model parameters as there are bivariate marginals. The inference problem is neither over nor under constrained. The major source of error that affects our model inference is the fact that the inference relies on pair statistics (bivariate marginals) found in a finite collection of sequences. Overfitting comes from this finite-sampling error in the bivariate marginals estimated from a finite-sized multiple sequence alignment (MSA) which then serves as the input for model inference. It has been shown by Haldane and Levy (2019) that it is possible to fit accurate Potts models to MSAs when the number of sequences in the MSA is much smaller than the number of parameters of the Potts model.\n\nThe degree of Potts model overfitting can be quantified using the \u2018signal to noise ratio\u2019, or SNR, which is a function of the sequence length $L$, alphabet size $q$, number of sequences in the MSA $N$, and a measure of the degree of conservation of the MSA, $\u03c7^{2}$. Using an SNR analysis of the kind described in Haldane and Levy (2019), we conclude that the Potts models for HIV-1 PR and RT are clearly not overfit (SNR values are 21.6 for PR, and 43.7 for RT). Since the number of sequences in the IN MSA is considerably smaller than the others, the IN model can be more affected by overfitting and may be less reliable than others (SNR is 0.14). However, the different types of predictions based on Potts models are differently affected by finite sampling error; predictions of the effect of point mutations to a sequence, $\u0394\u2062E$, which forms the basis of this study are the most robust and least affected by finite sampling. Using the in silico tests suggested in Haldane and Levy (2019), we find that the effects of point mutations are accurately captured even in the IN model, which is the most susceptible to finite sampling errors among our three models (for a more detailed analysis of the effects of finite sampling on the predictions of the Potts model, we refer the reader to Haldane and Levy, 2019). Thus, we conclude that the MSA sample sizes for PR, RT, and IN used in this study are sufficiently large to construct Potts models for these HIV proteins that adequately reflect the effects of the sequence background on point mutations which are the central focus of this work.\n",
+      "created_at": "2025-12-02T12:36:10.618382Z"
+    },
+    {
+      "id": "95167e75-d7bb-4649-b234-22a7415e532c",
+      "submission_id": "717ec028-d8c9-41db-91ad-8d98c941191f",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Patricia J Wittkopp, University of Michigan United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.50524.029](https://doi.org/10.7554/eLife.50524.029)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\n[Editors\u2019 note: a previous version of this study was rejected after peer review, but the authors submitted for reconsideration. The first decision letter after peer review is shown below.]\n\nThank you for submitting your work entitled \"Epistasis and entrenchment of drug resistance in HIV-1 subtype B\" for consideration by eLife. Your article has been reviewed by a Senior Editor, a Reviewing Editor, and two reviewers. The reviewers have opted to remain anonymous.\n\nOur decision has been reached after consultation between the reviewers. Based on these discussions and the individual reviews below, we regret to inform you that your work will not be considered further for publication in eLife.\n\nThe topic of your paper is very important, and indeed epistasis and the effects of coupled mutations in HIV proteins on the fitness of HIV is documented. However, as the reviews below note, because your study is based on individuals undergoing treatment, it is impossible to separate correlated selection pressures from epistatic effects.\n\nReviewer #1:\n\nHere Biswas and collaborators apply coevolutionary analysis methods to study the entrenchment of HIV drug resistance mutations in the protease, integrase, and reverse transcriptase proteins. Entrenchment refers to an increasing preference for the mutant (i.e., resistant) residue as epistatic accessory mutations are accumulated. The authors demonstrate an impressive ability to predict the frequency of resistance mutations in different genetic backgrounds. They then characterize how entrenchment depends on the number of accumulated resistance-associated mutations, and which specific mutations are most strongly associated with entrenchment.\n\nSpecific comments:\n\n1) One might reasonably hypothesize that the reason that drug resistance mutations are more likely to appear together in the Potts model is because the model is capturing correlated selection pressures rather than true epistasis. In other words, in patients who are treated by one drug, there is selection for the accumulation of resistance mutations for that drug. No such selection is present in patients not treated by that drug. Thus, whether the resistance/accessory mutations are truly epistatic or not, they will tend to appear either clustered together in sequences or not at all. This could then be reflected as a network of positive epistatic couplings in the Potts model. Butler et al., cited by the authors, used sequence data obtained before the widespread use of protease inhibitors to infer an Ising model that contained positive epistatic couplings between resistance sites. In principle, this approach should limit the effect of correlated selection pressures due to differences in drug treatment among different individuals. Butler and collaborators further found some external evidence for true epistasis between a resistance mutation at site 84 in protease and other accessory mutations. In the present work, given that the MSA contains sequences from individuals who are drug-experienced, are there independent lines of evidence that support the hypothesis of true epistatic interactions between associated resistance mutations? And more broadly, how would one deal with the confounding influence of correlated selection pressures?\n\n2) As a possible suggestion, one might expect that inferring Potts parameters using the pseudolikelihood method would provide an even better fit of the probability of different mutations at a given site as a function of the sequence background, since this is precisely what the pseudolikelihood algorithm is optimizing. In contrast, the canonical maximum entropy approach must simultaneously fit all low-order correlations.\n\n3) Some of the figures and tables are challenging to interpret. For example, in Supplementary file 1 both the most (ME) and least (LE) residues at position 17 for the L74M mutation are N. This result also appears for other mutations and positions in other tables. This needs further explanation. The plot in the inset of Figure 1B is also a bit challenging to interpret at first, and the small size of the numbers/labels in the inset plot makes it difficult to read at standard resolution. The ordering of resistance mutations in Figure 1D is confusing. The linear order would suggest order along the sequence, but mutations within each sequence are presented in reverse order along the protein sequence. Integrase is also placed before reverse transcriptase. This figure would likely be more clear if the same color scheme was maintained, but the mutations were reordered according to their positions in Pol.\n\nReviewer #2:\n\nThe study analyzes molecular co-evolution in sequences of HIV from drug-exposed patients, applying a Potts model to infer fitness effects of mutations and their dependence on the genetic background. The authors use the inferred model to analyze the notion of entrenchment - that a mutation tends to become more difficult to revert, over time, due the epistatic interactions with subsequent substitutions in the genetic background on which it first arose. The authors report this trend in three different HIV proteins that are targets of various drug treatments.\n\nThe intellectual basis of this study is sound and interesting - that epistasis can shape and channel molecular evolution - and it builds on a broader theoretical literature that has demonstrated such phenomenon for protein evolution in general (e.g. Pollack et al., 2012; Shah et al., 2015). Demonstrating this effect for real-world sampled protein sequences, in the setting of HIV protein evolution in response to drugs, is an especially nice project - as it would provide real-world relevance, in a clinical setting, for a broad body of theoretical work.\n\nDespite the enthusiasm for the topics, I am disappointed by a large number of inconsistencies in the reported results - which do not, in the end, seem to demonstrate the type of entrenchment the authors start out to explore. And I'm also disappointed by the presentation of the model and analysis, which is ambiguous or unclear in both main text and Materials and methods section. I am left without a clear understanding of what the authors claim to have demonstrated, or what specific model inferences they are reporting in most of their figures.\n\nThese two problems - whether their analysis actually addresses the established concept of entrenchment, and whether the writing/notation is clear enough to explain what analyses they actually performed \u2013 occur throughout the manuscript, and so I will address instances of these two problems in a linear fashion throughout the work:\n\n1) The Potts model appears to be massively overfit. Even after artificially reducing the alphabet size from 20 acids to 4, the authors seem to be fitting roughly 380,000 parameters to account for all pairwise interactions between sites. And yet, as far as a I can tell, the authors have only ~20,000 sequences. So, they are fitting an order of magnitude more parameters than they have data. Even so, they make a big deal of the fact the model makes good \"predictions\" for the frequency of sequences observed (Figure 1B)- but it is not clear if these prediction were made with cross-validation (e.g. fitting on one part of the data, and prediction for another part), and little discussion of overfitting is provided, if any. In any case, the notion that pairwise maxent Potts-like models can do a decent job of explaining sequence variability is not a new result and has been shown in dozens of papers.\n\n1b) The authors discuss their Potts model as providing a general probability for the observing a mutation alpha at site i in a genetic background of sequence S. But, in fact, the model depends only on pairwise interactions, the full sequence S. The authors should clarify this in the main text.\n\n1c) It is not clear what reference sequence is used as the \"wildtype\" S throughout the analysis. Is this a consensus sequence from the database? This should be explained in the main text.\n\n2) The main results on entrenchment (Figure 2) are not described precisely and seem to contradict the notion of entrenchment to which the authors refer in their introduction. Entrenchment according to Pollack et al., occurs when a substitution is initially neutral or slightly beneficial (so that its reversion is neutral or only slightly deleterious), but when subsequent substitutions in the protein render the focal mutation highly deleterious to revert. And yet the mutations discussed here are drug resistance mutations arising in the presence of drugs - and so the primary mutation must be net highly beneficial, even if it partly disrupts HIV protein function. (Indeed Figure 4 shows that the primary DRMS are favored.) And so, prima facie, this situation is quite different to Pollack at all - because the reversion is immediately disfavored, even without changes to the genetic background. Presumably the authors intend to show that the DRMs become *even more deleterious* to revert as subsequent substitutions accrue, although they do not say this in the main text and repeatedly refer to the DRMs as carrying fitness costs as the time of their emergence.\n\n2b) Figure 2A, showing the main entrenchment results according to the Potts model, seems to contradict the notion the primary mutation is a resistance site that is beneficial at the time of its substitution (as in Figure 4). The figure reports a nearly 100-fold preference to revert the primary DRM L90M substitution in the background in which it arose - i.e. the mutation is inferred to carry a huge fitness cost (and its reversion a benefit) at the time of its origin. This does not make sense to me, as a reader, as the DRM (even if it contains some costs for protein function) must be net adaptive at the time of its substitution in a patient. Why does Figure 2A show that the drug resistance site is strongly disfavored in the genetic background in which it initially arose?\n\n2c) The authors should define in terms of the \u0394E notation when, precisely, is being plotted on the y-axis of Figure 4A.\n\n2d) The authors state \"entrenchment of key resistance mutations is likely to play an important role in emergence of drug-resistance viral strains\". I cannot understand what the authors mean by this. Certainly, the initial *emergence* of a drug resistance strain depends on the adaptive benefit of DRM on the background in which it arises - and has nothing to do with future changes to the genetic background. Perhaps the authors mean that the \"persistence\" of the DRM over subsequent evolution depends on entrenchment?\n\n3) [Presentation issue] The authors discuss the stabilization or destabilization of mutations in their Introduction and throughout (Table 1). I believe by \"stabilization\" they mean epistasis with subsequent substitutions that render the primary mutation costly to revert. But this is a terrible choice of words, because the large literature on entrenchment (Pollack, Shah etc.) has been developed for models of thermostability - and, indeed, entrenchment has been observed to arise from interactions between sites for protein stability. The authors do not seem to be using the word \"stability\" here to mean thermostability, which is tremendously confusing when referring to a literature that is all about the effects of mutations, and their interactions, on thermostability.\n\n4) The authors make a big deal of their analysis of \"entrenchment of DRMs\" in the population - meaning that drug resistance mutations are beneficial in over 50% of the sequences sampled/fit. I do not find this surprising or even attributable to entrenchment at all - because, after all, the sequences being used to fit the model are sequences from drug-experienced HIV populations, where the drug resistance mutation will be net beneficial *at the time of its original occurrence* and even without any further substitutions. This is shown directly in Figure 4, for example.\n\n5) When the authors report that they have \"verification\" of entrenchment I assumed they meant they had direct data on fitness measurements for a mutation in one genetic background, and in a subsequent background. But in fact, the \"verification\" is simply relative to the fitted Potts model. By contrast, when the authors do compare the model to actual measurements of fitness effects (subsection \u201cMolecular clones and the effects of specific backgrounds\u201d), the authors seem to be saying that the predictions of the Potts model do not match the empirical measurements, and they attribute this to limitation of the mutagenesis experiments, as opposed to a deficiency of the Potts model. Comparison to data would have been the only thing that really convinces me that any statistical effects of their model are \"verified\".\n\n5b) Also, I had a hard time understanding what conclusions the authors draw from Figure 5, or even what the axes really denote in Figure 5. The notation \u0394 E_patient does not seem to be defined in the main text. The authors seem to be showing effects of mutations predicted by the Potts model fitted to patient data versus their predicted effects in the specific genetic backgrounds used for mutagenesis experiments - but it's not clear if that's what they're plotting, in fact, or what we are supposed to conclude from Figure 5.\n",
+      "created_at": "2025-12-02T12:36:10.618382Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T12:36:10.618382Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T12:36:10.618382Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "35f0c37a-6029-4e66-b687-f693d7313e60",
+      "content_id": "fdb65d5e-42c3-4c46-acdf-1dd12ce655b7",
+      "claim_id": "C1",
+      "claim": "Drug resistance in HIV develops in up to 50% of patients undergoing monotherapy.",
+      "claim_type": "EXPLICIT",
+      "source": "Resistance is estimated to develop in up to 50% of patients undergoing monotherapy (Richman et al., 2004b)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Richman et al., 2004b",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:36:10.618382Z"
+    },
+    {
+      "id": "e5e6ba69-a8ce-4b2c-b013-b693fba8d355",
+      "content_id": "fdb65d5e-42c3-4c46-acdf-1dd12ce655b7",
+      "claim_id": "C2",
+      "claim": "Drug resistance in HIV develops in up to 30% of patients receiving current combination antiretroviral therapy (c-ART).",
+      "claim_type": "EXPLICIT",
+      "source": "up to 30% of patients receiving current combination antiretroviral therapy (c-ART) (Gupta et al., 2008)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Gupta et al., 2008",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:36:10.618382Z"
+    },
+    {
+      "id": "1f87fad2-119a-42f3-9511-76912b896f1c",
+      "content_id": "fdb65d5e-42c3-4c46-acdf-1dd12ce655b7",
+      "claim_id": "C3",
+      "claim": "The primary drug targets in treatment of HIV are the enzymes coded by the pol gene: reverse transcriptase (RT), protease (PR), and integrase (IN).",
+      "claim_type": "EXPLICIT",
+      "source": "The primary drug targets in treatment of HIV are the enzymes coded by the pol gene, reverse transcriptase (RT), protease (PR), and integrase (IN).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Established scientific knowledge about HIV drug targets",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:36:10.618382Z"
+    },
+    {
+      "id": "982f8d4a-f3ee-4f8b-8322-65e0d8becc12",
+      "content_id": "fdb65d5e-42c3-4c46-acdf-1dd12ce655b7",
+      "claim_id": "C4",
+      "claim": "The Potts model accurately predicts the likelihood of drug-resistance mutations based on sequence background in HIV-1.",
+      "claim_type": "EXPLICIT",
+      "source": "Figure 1B shows good agreement for the likelihood of M at position 90 in HIV-1 protease, an important drug-resistance mutation. Figure 1D shows that the average absolute error between Potts predicted and observed frequencies is very small for all major drug-resistance mutations in HIV PR, RT and IN",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by comparison of predicted vs observed frequencies in Figure 1B and 1D, showing good agreement",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:36:10.618382Z"
+    },
+    {
+      "id": "f3b7009d-fa27-4302-bdbe-c5f8822a9291",
+      "content_id": "fdb65d5e-42c3-4c46-acdf-1dd12ce655b7",
+      "claim_id": "C6",
+      "claim": "The Potts model provides direct confirmation of epistasis involving many simultaneous mutations in HIV drug resistance.",
+      "claim_type": "EXPLICIT",
+      "source": "These results provide one of the most direct verifications of the complex patterns (involving the effect of many mutations) of epistatic interactions involving drug-resistance mutations in HIV.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on the demonstrated agreement between Potts predictions and observed frequencies across multiple mutations",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:36:10.618382Z"
+    },
+    {
+      "id": "f6ae5baa-384f-4916-9bdc-b6cf7b0310b9",
+      "content_id": "fdb65d5e-42c3-4c46-acdf-1dd12ce655b7",
+      "claim_id": "C7",
+      "claim": "Entrenchment cannot be predicted based simply on the number of mutations in the background.",
+      "claim_type": "EXPLICIT",
+      "source": "The inset figure of Figure 1B shows that there is significant overlap in the distributions of the number of mutations between two groups of sequences in which the probability of observing the mutation L90M is ~3x smaller in one than the other ('blue' compared to 'red') illustrating that a prediction of residue frequencies based on Hamming distance alone is insufficient.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by overlap in Hamming distance distributions for sequences with different mutation probabilities in Figure 1B inset",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:36:10.618382Z"
+    },
+    {
+      "id": "63a8a555-7e0f-4d3f-9263-d490eeaef0c6",
+      "content_id": "fdb65d5e-42c3-4c46-acdf-1dd12ce655b7",
+      "claim_id": "C8",
+      "claim": "The Potts model has significantly better performance than a Hamming distance model for predicting residue frequencies.",
+      "claim_type": "EXPLICIT",
+      "source": "There is a significant performance gain for the Potts model with a true positive rate (TPR) of 0.81 at a false positive rate (FPR) of 0.1, compared to a TPR of 0.46 at an FPR of 0.1 for the Hamming distance model",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Quantitative comparison of ROC curves shown in Figure 1C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:36:10.618382Z"
+    },
+    {
+      "id": "d630c52d-a718-453d-bf27-e8e73d638836",
+      "content_id": "fdb65d5e-42c3-4c46-acdf-1dd12ce655b7",
+      "claim_id": "C10",
+      "claim": "The L90M mutation in HIV-1 protease is disfavored on average in sequence backgrounds with eight or fewer PI-associated mutations.",
+      "claim_type": "EXPLICIT",
+      "source": "For drug-experienced viral PR sequence backgrounds that contain eight or fewer PI-associated mutations, (Figure 2A left area in blue), the L90M mutation is disfavored on average and likely to revert, with more than a 10 fold preference to revert in backgrounds with no inhibitor-associated mutations.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Shown in Figure 2A box plots for sequences with \u22648 PI-associated mutations",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:36:10.618382Z"
+    },
+    {
+      "id": "31664d15-a192-47cf-9d59-9cfeead604b1",
+      "content_id": "fdb65d5e-42c3-4c46-acdf-1dd12ce655b7",
+      "claim_id": "C12",
+      "claim": "In the consensus background, the predicted probability of observing L90 is ~40x greater than observing the drug-resistance mutation 90M.",
+      "claim_type": "EXPLICIT",
+      "source": "It is noteworthy that in the consensus background (one of the sequences containing no PI-associated mutations), the predicted probability of observing the consensus residue L90 is ~40x greater than observing the drug-resistance mutation 90M in the Stanford database of drug-experienced sequences.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Prediction from Potts model for consensus background",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:36:10.618382Z"
+    },
+    {
+      "id": "23bd8d3e-d2dd-45c6-9e0f-8697d1c8d5be",
+      "content_id": "fdb65d5e-42c3-4c46-acdf-1dd12ce655b7",
+      "claim_id": "C13",
+      "claim": "The Potts model prediction for L90M in the consensus background is qualitatively consistent with observations in the Stanford drug-experienced dataset.",
+      "claim_type": "EXPLICIT",
+      "source": "This prediction for the relative likelihood of L90M in the consensus background is qualitatively consistent with what is actually observed in the drug-experienced Stanford dataset (40 sequences are observed to contain L90 and 2 sequences are observed to contain 90M).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Comparison of model prediction with observed sequence counts",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:36:10.618382Z"
+    },
+    {
+      "id": "98678fcf-a972-4f90-a3e8-7ec829e8a29b",
+      "content_id": "fdb65d5e-42c3-4c46-acdf-1dd12ce655b7",
+      "claim_id": "C15",
+      "claim": "In backgrounds classified as 'highly disfavoring', the L90M mutation is predicted to occur with frequency 3.5% and observed with frequency 1.9%.",
+      "claim_type": "EXPLICIT",
+      "source": "In the backgrounds classified by the Potts model as 'highly disfavoring', the mutation is predicted to occur with frequency 3.5% whereas the observed frequency is 1.9%.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Quantitative comparison shown in Table 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:36:10.618382Z"
+    },
+    {
+      "id": "ce114149-53a2-4bb2-81f9-11c5f3dff1b8",
+      "content_id": "fdb65d5e-42c3-4c46-acdf-1dd12ce655b7",
+      "claim_id": "C16",
+      "claim": "The L90M mutation is enriched in sequences classified as 'highly entrenching' over those classified as 'highly disfavoring' by a factor of ~1907.",
+      "claim_type": "EXPLICIT",
+      "source": "The L90M mutation is observed to be enriched in the sequences classified by the Potts model as 'highly entrenching' over those classified as 'highly disfavoring' the mutation by a factor of ~1907.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Calculated from the frequency ratios in Table 1",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:36:10.618382Z"
+    },
+    {
+      "id": "2cd5b3de-ab28-4936-a492-6e27f53c6dae",
+      "content_id": "fdb65d5e-42c3-4c46-acdf-1dd12ce655b7",
+      "claim_id": "C22",
+      "claim": "NNRTI-resistance mutations are much less entrenched in the population than resistance mutations against NRTIs, PIs, and INSTIs.",
+      "claim_type": "EXPLICIT",
+      "source": "Comparatively, resistance mutations in RT associated with the non-nucleoside analog reverse transcriptase inhibitors (NNRTIs) are much less 'entrenched in the population' of sequences containing the mutation (Table 2). Only 1 (K103N/T) of the 15 mutations rendering resistance to NNRTIs shows any significant 'entrenchment' by the background.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Comparative analysis shown in Table 2",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:36:10.618382Z"
+    },
+    {
+      "id": "192c0885-e70e-4b97-80e6-0d60bbe73fba",
+      "content_id": "fdb65d5e-42c3-4c46-acdf-1dd12ce655b7",
+      "claim_id": "C23",
+      "claim": "The INSTI-selected resistance mutation Q148R in integrase is present in only about 5% of the patient population but is entrenched in more than 85% of sequences that have the mutation.",
+      "claim_type": "EXPLICIT",
+      "source": "The INSTI-selected resistance mutation Q148R in integrase, for example, is present in only about 5% of the patient population (in our dataset), but the mutation is entrenched in more than 85% of these sequences which have the mutation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Analysis of Q148R mutation frequency and entrenchment from the dataset",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:36:10.618382Z"
+    },
+    {
+      "id": "4aa22241-3956-4128-9e6d-44d482792e35",
+      "content_id": "fdb65d5e-42c3-4c46-acdf-1dd12ce655b7",
+      "claim_id": "C24",
+      "claim": "IN drug-resistance mutations are strongly entrenched in the population despite IN being subjected to drug pressure for a considerably shorter period than other HIV target proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "IN has been subjected to drug pressure for a considerably shorter period of time than other HIV target proteins, yet IN drug-resistance mutations are strongly 'entrenched in the population' of sequences containing the mutation (Table 2) similar to DRMs against PIs, and NRTIs which have been used in therapy for much longer.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Comparative analysis shown in Table 2 considering years in therapy",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:36:10.618382Z"
+    },
+    {
+      "id": "e94a05da-038d-4735-869d-806fa46a2fd9",
+      "content_id": "fdb65d5e-42c3-4c46-acdf-1dd12ce655b7",
+      "claim_id": "C25",
+      "claim": "Q148R and Q148H mutations reduce susceptibilities to raltegravir by 40-100 fold and 5-10 fold, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "The mutations Q148R and Q148H for example, reduce susceptibilities to the IN strand transfer inhibitors (INSTIs) raltegravir (RAL) and elvitegravir (EVG) by 40\u2013100 fold and 5\u201310 fold, respectively (Goethals et al., 2010; Fransen et al., 2009; Abram et al., 2013; Goethals et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to multiple studies",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:36:10.618382Z"
+    },
+    {
+      "id": "39a987af-014c-4fbc-a0e9-0ad6bbe867f2",
+      "content_id": "fdb65d5e-42c3-4c46-acdf-1dd12ce655b7",
+      "claim_id": "C27",
+      "claim": "NNRTIs are the only allosteric inhibitors among the four target classes examined (NRTIs, NNRTIs, PIs, and INSTIs).",
+      "claim_type": "EXPLICIT",
+      "source": "One clear difference is that NNRTIs are the only allosteric inhibitors among the four target classes being examined here. NRTIs, PIs, and INSTIs exert their action by binding to the catalytic active sites of the target enzymes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Established knowledge about HIV drug mechanisms of action",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:36:10.618382Z"
+    },
+    {
+      "id": "0012fd17-2011-4059-a6c8-2f245c02d020",
+      "content_id": "fdb65d5e-42c3-4c46-acdf-1dd12ce655b7",
+      "claim_id": "C28",
+      "claim": "Only 28.1% of drug-experienced sequences carry at least one entrenched primary DRM against NNRTIs, compared to ~50-65% for other drug classes.",
+      "claim_type": "EXPLICIT",
+      "source": "When considering the fraction of sequences carrying at least one entrenched DRM, again the fraction is close to 50% or greater for three of the four DRM classes; the prominent exception is NNRTIs for which only 28.1% carry at least one entrenched primary DRM.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Data shown in Table 3",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:36:10.618382Z"
+    },
+    {
+      "id": "847605ee-764d-4345-9ca4-f4c3a1960af0",
+      "content_id": "fdb65d5e-42c3-4c46-acdf-1dd12ce655b7",
+      "claim_id": "C29",
+      "claim": "The persistence of drug resistance against NNRTIs as a class is less likely in the population than the other three classes of HIV drugs.",
+      "claim_type": "EXPLICIT",
+      "source": "This implies that the persistence of drug resistance against NNRTIs as a class (compared to the others) is less likely in the population than the other three classes of HIV drugs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the lower entrenchment rates for NNRTIs shown in Table 3",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:36:10.618382Z"
+    },
+    {
+      "id": "2758f70d-e101-4546-8750-a29ddd577efe",
+      "content_id": "fdb65d5e-42c3-4c46-acdf-1dd12ce655b7",
+      "claim_id": "C31",
+      "claim": "Observed drug-resistance mutations arise with lower fitness costs than mutations to other residue types at the same sites.",
+      "claim_type": "EXPLICIT",
+      "source": "The relative displacement of the green from the blue distribution shows that in sequences which contain the drug-resistance mutation, the observed mutations are predicted on average to be more likely than the consensus residue type and that mutations to other residue types at those sites in the same sequence backgrounds are even less likely than the consensus residue type, on average.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Comparative distribution analysis in Figure 4",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:36:10.618382Z"
+    },
+    {
+      "id": "e76e310c-3a53-4186-a498-0af31b3dec50",
+      "content_id": "fdb65d5e-42c3-4c46-acdf-1dd12ce655b7",
+      "claim_id": "C33",
+      "claim": "Mutagenesis experiments performed with specific molecular clones can only explore a limited region of the fitness and mutational landscapes available to viral proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "Mutagenesis experiments performed with specific clones, however, can only explore a limited region of the fitness and mutational landscapes available to the viral proteins accessible through the particular clones.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Logical inference about the limitations of clone-based experiments",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:36:10.618382Z"
+    },
+    {
+      "id": "e25dda77-7dba-4bcf-a428-04ed484537f6",
+      "content_id": "fdb65d5e-42c3-4c46-acdf-1dd12ce655b7",
+      "claim_id": "C34",
+      "claim": "The likelihood and degree of entrenchment of a primary resistance mutation in molecular clones does not accurately represent the effects averaged over drug-experienced patient populations.",
+      "claim_type": "EXPLICIT",
+      "source": "The likelihood and degree of entrenchment of a primary resistance mutation depends strongly on the specific background in which it is accrued and as observed in Figure 5, these effects studied in the genetic background of a specific molecular clone does not accurately (correlates only moderately) represent the effects averaged over drug-experienced patient populations.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Correlation analysis shown in Figure 5 comparing clones to patient populations",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:36:10.618382Z"
+    },
+    {
+      "id": "27bd8951-1f55-448a-ab1d-d38933091cb3",
+      "content_id": "fdb65d5e-42c3-4c46-acdf-1dd12ce655b7",
+      "claim_id": "C35",
+      "claim": "Among NL4-3, HXB2, and consensus B sequences, NL4-3 is somewhat more representative of drug-experienced patient populations than the other two.",
+      "claim_type": "EXPLICIT",
+      "source": "Among the three specific sequences analyzed, NL4-3 seems to be somewhat more representative of drug-experienced patient populations than the other two.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from correlation coefficients shown in Figure 5",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:36:10.618382Z"
+    },
+    {
+      "id": "4a91fa55-a4cd-4b17-9c73-ede8ba1669da",
+      "content_id": "fdb65d5e-42c3-4c46-acdf-1dd12ce655b7",
+      "claim_id": "C36",
+      "claim": "Key resistance mutations are typically disfavored in molecular clones, in line with sequence backgrounds that do not carry the mutation.",
+      "claim_type": "EXPLICIT",
+      "source": "Key resistance mutations are typically disfavored in molecular clones in line with the fitness effects reported in Hu and Kuritzkes (2010) and in line with sequence backgrounds that do not carry the mutation (Figure 6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Analysis shown in Figure 6 with citation to supporting literature",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:36:10.618382Z"
+    },
+    {
+      "id": "f85ddb91-6c6a-45d3-a246-521c8c850468",
+      "content_id": "fdb65d5e-42c3-4c46-acdf-1dd12ce655b7",
+      "claim_id": "C39",
+      "claim": "There is large overlap in resistance mutation sites among different drugs of the same class.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the large overlap in resistance mutation sites among different drugs of the same class (Wensing et al., 2017) as seen in Figure 8",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Shown in Figure 8 with citation to Wensing et al., 2017",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:36:10.618382Z"
+    },
+    {
+      "id": "7561674d-98b7-49a4-b55a-3a4e8419d703",
+      "content_id": "fdb65d5e-42c3-4c46-acdf-1dd12ce655b7",
+      "claim_id": "C40",
+      "claim": "The Potts model is a maximum-entropy model of the likelihood of a dataset multiple sequence alignment, constrained to predict the bivariate (pairwise) residue frequencies between all pairs of positions in the alignment.",
+      "claim_type": "EXPLICIT",
+      "source": "A Potts model is a maximum-entropy model of the likelihood of a dataset multiple sequence alignment (MSA), constrained to predict the bivariate (pairwise) residue frequencies between all pairs of positions in the alignment, in other words it is designed to capture the observed pairwise mutational correlations caused by epistasis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Definition and description of the Potts model methodology",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:36:10.618382Z"
+    },
+    {
+      "id": "8ff273b2-20bc-4166-bf5b-f148cf566e1b",
+      "content_id": "fdb65d5e-42c3-4c46-acdf-1dd12ce655b7",
+      "claim_id": "C42",
+      "claim": "Primary DRMs often incur a fitness penalty which is then compensated for by accompanying associated mutations.",
+      "claim_type": "EXPLICIT",
+      "source": "Primary DRMs often incur a fitness penalty which is then compensated for by accompanying associated mutations (Heeney et al., 2006; Shafer and Schapiro, 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Heeney et al., 2006 and Shafer and Schapiro, 2008",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:36:10.618382Z"
+    },
+    {
+      "id": "97e8e1cb-bfec-4809-8aa2-02699fefde6b",
+      "content_id": "fdb65d5e-42c3-4c46-acdf-1dd12ce655b7",
+      "claim_id": "C43",
+      "claim": "Drug-resistance mutation patterns in HIV have become increasingly more complex with the use of current robust inhibitors in drug therapy.",
+      "claim_type": "EXPLICIT",
+      "source": "With the use of current robust inhibitors in drug therapy, the drug-resistance mutation patterns in HIV have become increasingly more complex (Richman et al., 2004a; Iyidogan and Anderson, 2014) often leading to ART failure in patients.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Richman et al., 2004a and Iyidogan and Anderson, 2014",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:36:10.618382Z"
+    },
+    {
+      "id": "71f76a6c-71d6-4ea4-83b6-5f20a2edbb96",
+      "content_id": "fdb65d5e-42c3-4c46-acdf-1dd12ce655b7",
+      "claim_id": "C44",
+      "claim": "The selective pressure of drug therapy modulates patterns of correlated mutations at residue positions both near and distal from the active site.",
+      "claim_type": "EXPLICIT",
+      "source": "The selective pressure of drug therapy modulates patterns of correlated mutations at residue positions which are both near and distal from the active site (Chang and Torbett, 2011; Haq et al., 2012; Flynn et al., 2015; Yilmaz and Schiffer, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by multiple citations",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:36:10.618382Z"
+    },
+    {
+      "id": "eff0a12e-d580-4f50-b393-cc5350f9bab5",
+      "content_id": "fdb65d5e-42c3-4c46-acdf-1dd12ce655b7",
+      "claim_id": "C45",
+      "claim": "When a primary resistance mutation is incurred in the context of a wild-type background, there is usually a fitness penalty associated with it.",
+      "claim_type": "EXPLICIT",
+      "source": "When a primary resistance mutation is incurred in the context of a wild-type background, there is usually a fitness penalty associated with it.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "General principle stated based on established knowledge",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:36:10.618382Z"
+    },
+    {
+      "id": "bea60e81-f4be-4643-ae94-6796b4260919",
+      "content_id": "fdb65d5e-42c3-4c46-acdf-1dd12ce655b7",
+      "claim_id": "C46",
+      "claim": "With the accumulation of accessory mutations, the reversion of the primary mutation can become increasingly deleterious, leading to evolutionary 'entrenchment'.",
+      "claim_type": "EXPLICIT",
+      "source": "Because the beneficial effects of the associated mutations depend on the primary mutation, with the accumulation of (accessory) mutations, the reversion of the primary mutation can become increasingly deleterious, leading to a type of evolutionary 'entrenchment' of the primary mutation (Pollock et al., 2012; Shah et al., 2015; McCandlish et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Pollock et al., 2012; Shah et al., 2015; McCandlish et al., 2016",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:36:10.618382Z"
+    },
+    {
+      "id": "399e689c-8cd8-44ce-a12d-04d90c1ef06d",
+      "content_id": "fdb65d5e-42c3-4c46-acdf-1dd12ce655b7",
+      "claim_id": "C47",
+      "claim": "Potts statistical models have been used successfully to predict the tertiary and quaternary structure of proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "A subset of such models, called Potts statistical models (Levy et al., 2017) (a generalization of Ising spin glass models), have been used successfully to predict the tertiary and quaternary structure of proteins (Morcos et al., 2011; Marks et al., 2012; Su\u0142kowska et al., 2012; Sutto et al., 2015; Haldane et al., 2016; Levy et al., 2017; Sjodt et al., 2018)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by multiple citations",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:36:10.618382Z"
+    },
+    {
+      "id": "0606ea78-c898-4ccd-bb64-55525ceb8c20",
+      "content_id": "fdb65d5e-42c3-4c46-acdf-1dd12ce655b7",
+      "claim_id": "C48",
+      "claim": "Potts models have been used to predict viral protein stability and fitness.",
+      "claim_type": "EXPLICIT",
+      "source": "as well as viral protein stability and fitness (Shekhar et al., 2013; Barton et al., 2016a; Hopf et al., 2017; Flynn et al., 2017; Levy et al., 2017; Louie et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by multiple citations",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:36:10.618382Z"
+    },
+    {
+      "id": "b334f995-ee7c-43a4-933a-8b0f234fa369",
+      "content_id": "fdb65d5e-42c3-4c46-acdf-1dd12ce655b7",
+      "claim_id": "C49",
+      "claim": "Flynn et al. (2017) identified sequence backgrounds with differing patterns of associated mutations predicted to either strongly entrench or strongly disfavor particular primary mutations in HIV-1 protease.",
+      "claim_type": "EXPLICIT",
+      "source": "Recent studies using Potts models inferred the epistatic interactions involved in the evolution of drug resistance in HIV-1 protease (Flynn et al., 2017). The authors identified sequence backgrounds with differing patterns of associated mutations which were predicted to either strongly entrench or strongly disfavor particular primary mutations in HIV-1 protease.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Flynn et al., 2017",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:36:10.618382Z"
+    },
+    {
+      "id": "7df039f4-04c1-4541-9872-42c5862af86f",
+      "content_id": "fdb65d5e-42c3-4c46-acdf-1dd12ce655b7",
+      "claim_id": "C50",
+      "claim": "Whether a mutation favors or disfavors a primary resistance mutation depends on the entire sequence background.",
+      "claim_type": "EXPLICIT",
+      "source": "Of crucial importance is the observation that whether a mutation favors or disfavors a primary resistance mutation with which it is associated, depends on the entire sequence background.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Key observation from the study, supported by data throughout the manuscript",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:36:10.618382Z"
+    },
+    {
+      "id": "7f0f943e-ba25-45ad-a128-d066f8c27c1c",
+      "content_id": "fdb65d5e-42c3-4c46-acdf-1dd12ce655b7",
+      "claim_id": "C51",
+      "claim": "This work provides the first direct confirmations of 'entrenchment' by the entire sequence background for all three drug-target proteins: protease, reverse transcriptase, and integrase.",
+      "claim_type": "EXPLICIT",
+      "source": "Here we confirm the predictions in Flynn et al. (2017) providing the first direct confirmations of 'entrenchment' by the entire sequence background and show how such models capture the epistatic interactions that lead to drug resistance in each of the three predominant target enzymes in HIV subjected to selective pressure of ART: protease, reverse transcriptase, and integrase.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a primary contribution of this work, supported by data in Tables 1-3 and Figures 2-6",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:36:10.618382Z"
+    },
+    {
+      "id": "6b2ac724-a191-491c-ab1e-6f68385d965f",
+      "content_id": "fdb65d5e-42c3-4c46-acdf-1dd12ce655b7",
+      "claim_id": "C52",
+      "claim": "The background-dependent likelihood of a primary mutation can vary widely in patient populations and from population averages to specific molecular clones.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results demonstrate that the background-dependent likelihood of a primary mutation and the strength of compensatory behavior can vary widely in patient populations, and from population averages to predominant subtype B molecular clones such as NL4-3 or HXB2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Demonstrated by data in Figures 5 and 6",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:36:10.618382Z"
+    },
+    {
+      "id": "348c3da3-294c-49f2-90b6-6a0c6c55f6ca",
+      "content_id": "fdb65d5e-42c3-4c46-acdf-1dd12ce655b7",
+      "claim_id": "C53",
+      "claim": "Large differences in escape times for HIV patients targeting the same epitope can be explained by differences in background mutations.",
+      "claim_type": "EXPLICIT",
+      "source": "It has been shown by Barton et al. (2016b) and Chen and Kardar (2019) that large differences in escape times for HIV patients targeting the same epitope can be explained by differences in the background mutations contained in the sequence of the virus strains that infected these patients.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Barton et al. (2016b) and Chen and Kardar (2019)",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:36:10.618382Z"
+    },
+    {
+      "id": "5c0a7eca-ed47-4a20-804a-a783dfe0d9d7",
+      "content_id": "fdb65d5e-42c3-4c46-acdf-1dd12ce655b7",
+      "claim_id": "C54",
+      "claim": "Many of the most strongly entrenched mutations have been shown to revert slowly in drug-naive patients with transmitted resistance or in drug-experienced patients after withdrawal of ART.",
+      "claim_type": "EXPLICIT",
+      "source": "Entrenchment of resistance mutations can thus play a central role in the persistence of drug-resistant viruses, and many of the most strongly entrenched mutations have been shown to revert slowly in drug-naive patients with transmitted resistance or in drug-experienced patients after withdrawal of ART (Izopet et al., 2000; Yang et al., 2015; Gandhi et al., 2003; Borman et al., 1996).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to multiple studies",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:36:10.618382Z"
+    },
+    {
+      "id": "813d3e86-9a10-4cc9-b4c8-d2b0674c0920",
+      "content_id": "fdb65d5e-42c3-4c46-acdf-1dd12ce655b7",
+      "claim_id": "C58",
+      "claim": "The Potts models for HIV-1 PR and RT are clearly not overfit based on SNR analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "Using an SNR analysis of the kind described in Haldane and Levy (2019), we conclude that the Potts models for HIV-1 PR and RT are clearly not overfit (SNR values are 21.6 for PR, and 43.7 for RT).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "SNR analysis described in Materials and methods",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:36:10.618382Z"
+    },
+    {
+      "id": "3fd7e402-5804-499d-ad82-c6ce1f5181f2",
+      "content_id": "fdb65d5e-42c3-4c46-acdf-1dd12ce655b7",
+      "claim_id": "C59",
+      "claim": "The IN model can be more affected by overfitting and may be less reliable than the PR and RT models due to smaller sample size.",
+      "claim_type": "EXPLICIT",
+      "source": "Since the number of sequences in the IN MSA is considerably smaller than the others, the IN model can be more affected by overfitting and may be less reliable than others (SNR is 0.14).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "SNR analysis described in Materials and methods",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:36:10.618382Z"
+    },
+    {
+      "id": "9e639d58-e8fc-47c3-b3ab-be6abb49cde7",
+      "content_id": "fdb65d5e-42c3-4c46-acdf-1dd12ce655b7",
+      "claim_id": "C60",
+      "claim": "The effects of point mutations are accurately captured even in the IN model despite it being most susceptible to finite sampling errors.",
+      "claim_type": "EXPLICIT",
+      "source": "Using the in silico tests suggested in Haldane and Levy (2019), we find that the effects of point mutations are accurately captured even in the IN model, which is the most susceptible to finite sampling errors among our three models",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Validation testing described in Materials and methods",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:36:10.618382Z"
+    },
+    {
+      "id": "294435f5-b986-4ec9-a616-773694dc9b3a",
+      "content_id": "fdb65d5e-42c3-4c46-acdf-1dd12ce655b7",
+      "claim_id": "C62",
+      "claim": "HIV mutates rapidly as it jumps from host to host, acquiring resistance to each host's distinct immune response and applied drug regimen.",
+      "claim_type": "EXPLICIT",
+      "source": "HIV mutates rapidly as it jumps from host to host, acquiring resistance to each host's distinct immune response and applied drug regimen.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Established knowledge about HIV evolution",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:36:10.618382Z"
+    },
+    {
+      "id": "037313da-4be6-469f-8447-ea732692e1d7",
+      "content_id": "fdb65d5e-42c3-4c46-acdf-1dd12ce655b7",
+      "claim_id": "C63",
+      "claim": "In the absence of drug pressure, the virus in a single patient explores the majority of all point mutations many times daily.",
+      "claim_type": "EXPLICIT",
+      "source": "HIV evolves rapidly with studies indicating that in the absence of drug pressure, the virus in a single patient explores the majority of all point mutations many times daily (Coffin, 1995; Perelson et al., 1996).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Coffin, 1995 and Perelson et al., 1996",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:36:10.618382Z"
+    },
+    {
+      "id": "8caa0322-9b9c-4aee-928a-a53648eb8ccc",
+      "content_id": "fdb65d5e-42c3-4c46-acdf-1dd12ce655b7",
+      "claim_id": "C64",
+      "claim": "Long-range epistasis can shift a protein's mutational tolerance during HIV evolution.",
+      "claim_type": "EXPLICIT",
+      "source": "In fact, it has been shown that long-range epistasis can shift a protein's mutational tolerance during HIV evolution (Haddox et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Haddox et al., 2018",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:36:10.618382Z"
+    },
+    {
+      "id": "05c5cd52-5346-4fd6-9ed6-8929fce80fa3",
+      "content_id": "fdb65d5e-42c3-4c46-acdf-1dd12ce655b7",
+      "claim_id": "C65",
+      "claim": "Entrenchment of functionally important mutations is a general feature in systems exhibiting epistasis.",
+      "claim_type": "EXPLICIT",
+      "source": "Entrenchment of functionally important mutations has been shown to be a general feature in systems exhibiting epistasis (Pollock et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Pollock et al., 2012",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:36:10.618382Z"
+    },
+    {
+      "id": "9a0f3558-2af0-4cd0-a0a8-f8ddd544c1b9",
+      "content_id": "fdb65d5e-42c3-4c46-acdf-1dd12ce655b7",
+      "claim_id": "C66",
+      "claim": "Epistasis plays a major role in the evolution of HIV under drug selection pressure.",
+      "claim_type": "EXPLICIT",
+      "source": "The entrenchment of primary resistance mutations described in this work suggests that epistasis plays a major role in the evolution of HIV under drug selection pressure.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the entrenchment results presented throughout the manuscript",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:36:10.618382Z"
+    },
+    {
+      "id": "a3580a4e-60da-4a89-9999-c0d56380698b",
+      "content_id": "fdb65d5e-42c3-4c46-acdf-1dd12ce655b7",
+      "claim_id": "C67",
+      "claim": "Entrenchment is a likely mechanism by which drug-resistance mutations accumulate within the population and persist.",
+      "claim_type": "EXPLICIT",
+      "source": "Both primary and accessory drug-resistance mutations exhibit strong epistatic interactions and therefore, entrenchment is a likely mechanism by which drug-resistance mutations accumulate within the population and in the persistence of drug resistance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the entrenchment analysis and data presented",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:36:10.618382Z"
+    },
+    {
+      "id": "44cdbe64-49e6-4c75-b5be-38d8dc212f55",
+      "content_id": "fdb65d5e-42c3-4c46-acdf-1dd12ce655b7",
+      "claim_id": "C68",
+      "claim": "Understanding the relationship between the likelihood of a drug-resistance mutation and the specific sequence background is important for the interpretation of mutagenesis experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "Understanding the relationship between the likelihood of a drug-resistance mutation and the specific sequence background is important for the interpretation of mutagenesis experiments, which are carried out in the background of specific reference sequences such as subtype B molecular clones NL4-3, HXB2, and others (Martinez-Picado et al., 1999; An et al., 1999).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Logical inference supported by citations",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:36:10.618382Z"
+    },
+    {
+      "id": "c1881241-f2bc-49a3-8efd-b6b60cadd75c",
+      "content_id": "fdb65d5e-42c3-4c46-acdf-1dd12ce655b7",
+      "claim_id": "C69",
+      "claim": "The degree of entrenchment of key resistance mutations can provide insights about the fitness of these mutations in the context of a patient HIV reservoir.",
+      "claim_type": "EXPLICIT",
+      "source": "The degree of entrenchment of key resistance mutations can provide insights about the fitness of these mutations in the context of a patient HIV reservoir",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from the study's findings",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:36:10.618382Z"
+    },
+    {
+      "id": "7d12846a-3b80-492c-abb6-e7bb33a695eb",
+      "content_id": "fdb65d5e-42c3-4c46-acdf-1dd12ce655b7",
+      "claim_id": "C70",
+      "claim": "The differential degree of entrenchment in different viral sequence backgrounds has the potential to impact future drug design strategies for c-ART based on the patient viral reservoir.",
+      "claim_type": "EXPLICIT",
+      "source": "and their differential degree of entrenchment in different viral sequence backgrounds has the potential to impact future drug design strategies for the next generation of c-ART based on the patient viral reservoir, and suggests that the future of these strategies may very well involve personalized medicine based on an analysis of each patient's individual viral genomic background.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculative inference about future applications",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:36:10.618382Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "272d7ffa-e026-4659-b518-8873d8096990",
+      "content_id": "fdb65d5e-42c3-4c46-acdf-1dd12ce655b7",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The Potts model accurately predicts drug-resistance mutation frequencies based on complex sequence backgrounds in HIV-1, demonstrating epistatic interactions involving many simultaneous mutations. The model significantly outperforms simple Hamming distance-based predictions, showing that entrenchment depends on specific mutation patterns rather than just the number of mutations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4, C6, C7, and C8 are well-supported by quantitative data in Figures 1B-D showing excellent agreement between predicted and observed frequencies (average absolute error is very small), ROC analysis demonstrating superior performance over Hamming distance models (TPR 0.81 vs 0.46 at FPR 0.1), and overlap analysis showing that mutation number alone is insufficient for prediction. The validation across multiple drug-resistance mutations in PR, RT, and IN strengthens these findings.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:36:10.618382Z"
+    },
+    {
+      "id": "e5b5c76c-cc4b-4354-b868-8c3a478353da",
+      "content_id": "fdb65d5e-42c3-4c46-acdf-1dd12ce655b7",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The L90M mutation in HIV-1 protease exhibits background-dependent entrenchment, being disfavored in backgrounds with \u22648 PI-associated mutations but favored in backgrounds with \u22659 mutations. Quantitative validation shows excellent agreement between Potts model predictions and observed frequencies across different sequence backgrounds.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C10, C12, C13, C15, and C16 are strongly supported by data in Figure 2A and Table 1. The box plot analysis clearly shows the transition from disfavored to entrenched states, and Table 1 provides quantitative validation with predicted vs observed frequencies showing remarkable agreement (e.g., 97.6% predicted vs 97.3% observed for highly entrenching backgrounds). The ~1907-fold enrichment calculation is directly derived from the frequency data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:36:10.618382Z"
+    },
+    {
+      "id": "24b202cc-10ff-4186-b6c1-721fb5d6a93f",
+      "content_id": "fdb65d5e-42c3-4c46-acdf-1dd12ce655b7",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "NNRTI-resistance mutations show significantly less entrenchment in the population compared to resistance mutations against NRTIs, PIs, and INSTIs. Only 6.7% of NNRTI DRMs are entrenched versus 61-87% for other drug classes, with only 28.1% of sequences carrying at least one entrenched NNRTI DRM compared to ~50-65% for other classes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C22-C24 and C27-C29 are well-supported by comprehensive comparative analysis in Tables 2 and 3. The data clearly show differential entrenchment patterns across drug classes, with NNRTI mutations being exceptional. The mechanistic hypothesis linking this to allosteric vs active site binding (C27) is reasonable but remains speculative. The IN findings (C23-C24) showing high entrenchment despite shorter drug exposure time are particularly striking and well-documented.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:36:10.618382Z"
+    },
+    {
+      "id": "175464f6-0eb9-47e4-9fd2-d3ae9dcc8bf5",
+      "content_id": "fdb65d5e-42c3-4c46-acdf-1dd12ce655b7",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Observed drug-resistance mutations arise with lower fitness costs than mutations to other residue types at the same sites, as demonstrated by differential distribution of Potts \u0394E scores.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C31 is supported by Figure 4 showing clear separation between distributions of observed DRMs (mean \u0394E = +2.11) versus unobserved/rare mutations (mean \u0394E = -5.58) at the same sites (p<0.001). The statistical significance and visual separation in the distributions provide strong evidence that observed DRMs are generally more favorable than alternative mutations at the same positions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:36:10.618382Z"
+    },
+    {
+      "id": "4bec3be5-0894-4179-a842-8d4f2996f508",
+      "content_id": "fdb65d5e-42c3-4c46-acdf-1dd12ce655b7",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The likelihood and degree of entrenchment of primary resistance mutations in molecular clones (NL4-3, HXB2, consensus B) correlates only moderately with effects in drug-experienced patient populations, with NL4-3 being somewhat more representative than the others. Key resistance mutations are typically disfavored in molecular clones.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C33-C36 are supported by correlation analysis in Figures 5 and 6. The moderate correlation coefficients (\u03c1 = 0.56-0.75 for different clones) quantitatively demonstrate that clone-based studies may not accurately represent patient populations. Figure 6 shows clear separation between sequences with and without mutations, with clones typically falling in the disfavored region. However, the claim that NL4-3 is 'somewhat more representative' (C35) is weakly supported given the modest differences in correlation coefficients.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:36:10.618382Z"
+    },
+    {
+      "id": "25797dc2-a28c-4ba9-8e47-2bf05da5ca1f",
+      "content_id": "fdb65d5e-42c3-4c46-acdf-1dd12ce655b7",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "This work provides the first direct confirmations of entrenchment by the entire sequence background for all three HIV drug-target proteins (protease, reverse transcriptase, and integrase), demonstrating that mutation favorability depends on the entire genetic context and varies widely across patient populations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C50-C52 represent the core contribution of the manuscript and are well-supported by comprehensive data across Tables 1-3 and Figures 2-6. The validation of entrenchment predictions through comparison of predicted vs observed frequencies, the demonstration of background-dependence across all three proteins, and the quantification of variability in patient populations versus molecular clones provide strong evidence for these claims.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:36:10.618382Z"
+    },
+    {
+      "id": "fcf78396-6c6d-44b2-ac21-593d74dbabe0",
+      "content_id": "fdb65d5e-42c3-4c46-acdf-1dd12ce655b7",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The Potts models for HIV-1 PR and RT are not overfit based on SNR analysis (SNR = 21.6 and 43.7, respectively), while the IN model may be less reliable due to smaller sample size (SNR = 0.14) but still accurately captures point mutation effects.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C58-C60 are supported by SNR analysis described in Materials and methods, with specific quantitative values provided. The acknowledgment of potential limitations for the IN model (C59) while demonstrating that it still captures point mutation effects accurately (C60) through in silico validation tests shows appropriate statistical rigor. However, the manuscript would benefit from more detailed presentation of these validation results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:36:10.618382Z"
+    },
+    {
+      "id": "7782ca0e-f1f1-4d23-a29e-87bfc54b5de2",
+      "content_id": "fdb65d5e-42c3-4c46-acdf-1dd12ce655b7",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The Potts model is a maximum-entropy model constrained to predict bivariate residue frequencies, and there is large overlap in resistance mutation sites among different drugs of the same class.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C40 is a methodological description that is well-established and correctly stated. Claim C39 is supported by Figure 8 and citation to Wensing et al., 2017. The overlap in mutation sites across drugs of the same class helps justify why the Potts model trained on mixed drug-experienced sequences can minimize spurious correlations from different drug regimens.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:36:10.618382Z"
+    },
+    {
+      "id": "39cd6d6f-c163-4428-aacb-786346ea4328",
+      "content_id": "fdb65d5e-42c3-4c46-acdf-1dd12ce655b7",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Epistasis plays a major role in HIV evolution under drug selection pressure, with entrenchment being a likely mechanism for accumulation and persistence of drug-resistance mutations. Understanding background-dependent mutation likelihood is important for interpreting mutagenesis experiments and may impact future personalized drug design strategies.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C66-C69 are reasonable inferences from the entrenchment data presented, but they represent interpretations rather than direct experimental findings. Claim C70 is explicitly speculative about future applications. While the entrenchment data strongly suggest epistasis is important (C66-C67), the causal claims about mechanisms (C67) and the translational implications (C68-C70) require additional validation beyond the correlative analyses presented. These are appropriate discussion points but not definitively established results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:36:10.618382Z"
+    },
+    {
+      "id": "5f321329-7bd9-451e-be18-84f1b003e141",
+      "content_id": "fdb65d5e-42c3-4c46-acdf-1dd12ce655b7",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Background claims establishing the context of HIV drug resistance, including resistance rates in patients, drug targets, mutation fitness costs, epistasis concepts, and prior work on Potts models and entrenchment.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These claims (C1-C3, C25, C42-C49, C53-C54, C62-C65) are primarily citations to prior work or established knowledge about HIV biology and drug resistance. They are appropriately cited and represent accurate summaries of the literature. These provide necessary context but are not novel findings of this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:36:10.618382Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "982f8d4a-f3ee-4f8b-8322-65e0d8becc12",
+      "result_id": "272d7ffa-e026-4659-b518-8873d8096990"
+    },
+    {
+      "claim_id": "f3b7009d-fa27-4302-bdbe-c5f8822a9291",
+      "result_id": "272d7ffa-e026-4659-b518-8873d8096990"
+    },
+    {
+      "claim_id": "f6ae5baa-384f-4916-9bdc-b6cf7b0310b9",
+      "result_id": "272d7ffa-e026-4659-b518-8873d8096990"
+    },
+    {
+      "claim_id": "63a8a555-7e0f-4d3f-9263-d490eeaef0c6",
+      "result_id": "272d7ffa-e026-4659-b518-8873d8096990"
+    },
+    {
+      "claim_id": "d630c52d-a718-453d-bf27-e8e73d638836",
+      "result_id": "e5b5c76c-cc4b-4354-b868-8c3a478353da"
+    },
+    {
+      "claim_id": "31664d15-a192-47cf-9d59-9cfeead604b1",
+      "result_id": "e5b5c76c-cc4b-4354-b868-8c3a478353da"
+    },
+    {
+      "claim_id": "23bd8d3e-d2dd-45c6-9e0f-8697d1c8d5be",
+      "result_id": "e5b5c76c-cc4b-4354-b868-8c3a478353da"
+    },
+    {
+      "claim_id": "98678fcf-a972-4f90-a3e8-7ec829e8a29b",
+      "result_id": "e5b5c76c-cc4b-4354-b868-8c3a478353da"
+    },
+    {
+      "claim_id": "ce114149-53a2-4bb2-81f9-11c5f3dff1b8",
+      "result_id": "e5b5c76c-cc4b-4354-b868-8c3a478353da"
+    },
+    {
+      "claim_id": "2cd5b3de-ab28-4936-a492-6e27f53c6dae",
+      "result_id": "24b202cc-10ff-4186-b6c1-721fb5d6a93f"
+    },
+    {
+      "claim_id": "192c0885-e70e-4b97-80e6-0d60bbe73fba",
+      "result_id": "24b202cc-10ff-4186-b6c1-721fb5d6a93f"
+    },
+    {
+      "claim_id": "4aa22241-3956-4128-9e6d-44d482792e35",
+      "result_id": "24b202cc-10ff-4186-b6c1-721fb5d6a93f"
+    },
+    {
+      "claim_id": "39a987af-014c-4fbc-a0e9-0ad6bbe867f2",
+      "result_id": "24b202cc-10ff-4186-b6c1-721fb5d6a93f"
+    },
+    {
+      "claim_id": "0012fd17-2011-4059-a6c8-2f245c02d020",
+      "result_id": "24b202cc-10ff-4186-b6c1-721fb5d6a93f"
+    },
+    {
+      "claim_id": "847605ee-764d-4345-9ca4-f4c3a1960af0",
+      "result_id": "24b202cc-10ff-4186-b6c1-721fb5d6a93f"
+    },
+    {
+      "claim_id": "2758f70d-e101-4546-8750-a29ddd577efe",
+      "result_id": "175464f6-0eb9-47e4-9fd2-d3ae9dcc8bf5"
+    },
+    {
+      "claim_id": "e76e310c-3a53-4186-a498-0af31b3dec50",
+      "result_id": "4bec3be5-0894-4179-a842-8d4f2996f508"
+    },
+    {
+      "claim_id": "e25dda77-7dba-4bcf-a428-04ed484537f6",
+      "result_id": "4bec3be5-0894-4179-a842-8d4f2996f508"
+    },
+    {
+      "claim_id": "27bd8951-1f55-448a-ab1d-d38933091cb3",
+      "result_id": "4bec3be5-0894-4179-a842-8d4f2996f508"
+    },
+    {
+      "claim_id": "4a91fa55-a4cd-4b17-9c73-ede8ba1669da",
+      "result_id": "4bec3be5-0894-4179-a842-8d4f2996f508"
+    },
+    {
+      "claim_id": "7df039f4-04c1-4541-9872-42c5862af86f",
+      "result_id": "25797dc2-a28c-4ba9-8e47-2bf05da5ca1f"
+    },
+    {
+      "claim_id": "7f0f943e-ba25-45ad-a128-d066f8c27c1c",
+      "result_id": "25797dc2-a28c-4ba9-8e47-2bf05da5ca1f"
+    },
+    {
+      "claim_id": "6b2ac724-a191-491c-ab1e-6f68385d965f",
+      "result_id": "25797dc2-a28c-4ba9-8e47-2bf05da5ca1f"
+    },
+    {
+      "claim_id": "813d3e86-9a10-4cc9-b4c8-d2b0674c0920",
+      "result_id": "fcf78396-6c6d-44b2-ac21-593d74dbabe0"
+    },
+    {
+      "claim_id": "3fd7e402-5804-499d-ad82-c6ce1f5181f2",
+      "result_id": "fcf78396-6c6d-44b2-ac21-593d74dbabe0"
+    },
+    {
+      "claim_id": "9e639d58-e8fc-47c3-b3ab-be6abb49cde7",
+      "result_id": "fcf78396-6c6d-44b2-ac21-593d74dbabe0"
+    },
+    {
+      "claim_id": "f85ddb91-6c6a-45d3-a246-521c8c850468",
+      "result_id": "7782ca0e-f1f1-4d23-a29e-87bfc54b5de2"
+    },
+    {
+      "claim_id": "7561674d-98b7-49a4-b55a-3a4e8419d703",
+      "result_id": "7782ca0e-f1f1-4d23-a29e-87bfc54b5de2"
+    },
+    {
+      "claim_id": "9a0f3558-2af0-4cd0-a0a8-f8ddd544c1b9",
+      "result_id": "39cd6d6f-c163-4428-aacb-786346ea4328"
+    },
+    {
+      "claim_id": "a3580a4e-60da-4a89-9999-c0d56380698b",
+      "result_id": "39cd6d6f-c163-4428-aacb-786346ea4328"
+    },
+    {
+      "claim_id": "44cdbe64-49e6-4c75-b5be-38d8dc212f55",
+      "result_id": "39cd6d6f-c163-4428-aacb-786346ea4328"
+    },
+    {
+      "claim_id": "c1881241-f2bc-49a3-8efd-b6b60cadd75c",
+      "result_id": "39cd6d6f-c163-4428-aacb-786346ea4328"
+    },
+    {
+      "claim_id": "7d12846a-3b80-492c-abb6-e7bb33a695eb",
+      "result_id": "39cd6d6f-c163-4428-aacb-786346ea4328"
+    },
+    {
+      "claim_id": "35f0c37a-6029-4e66-b687-f693d7313e60",
+      "result_id": "5f321329-7bd9-451e-be18-84f1b003e141"
+    },
+    {
+      "claim_id": "e5e6ba69-a8ce-4b2c-b013-b693fba8d355",
+      "result_id": "5f321329-7bd9-451e-be18-84f1b003e141"
+    },
+    {
+      "claim_id": "1f87fad2-119a-42f3-9511-76912b896f1c",
+      "result_id": "5f321329-7bd9-451e-be18-84f1b003e141"
+    },
+    {
+      "claim_id": "e94a05da-038d-4735-869d-806fa46a2fd9",
+      "result_id": "5f321329-7bd9-451e-be18-84f1b003e141"
+    },
+    {
+      "claim_id": "8ff273b2-20bc-4166-bf5b-f148cf566e1b",
+      "result_id": "5f321329-7bd9-451e-be18-84f1b003e141"
+    },
+    {
+      "claim_id": "97e8e1cb-bfec-4809-8aa2-02699fefde6b",
+      "result_id": "5f321329-7bd9-451e-be18-84f1b003e141"
+    },
+    {
+      "claim_id": "71f76a6c-71d6-4ea4-83b6-5f20a2edbb96",
+      "result_id": "5f321329-7bd9-451e-be18-84f1b003e141"
+    },
+    {
+      "claim_id": "eff0a12e-d580-4f50-b393-cc5350f9bab5",
+      "result_id": "5f321329-7bd9-451e-be18-84f1b003e141"
+    },
+    {
+      "claim_id": "bea60e81-f4be-4643-ae94-6796b4260919",
+      "result_id": "5f321329-7bd9-451e-be18-84f1b003e141"
+    },
+    {
+      "claim_id": "399e689c-8cd8-44ce-a12d-04d90c1ef06d",
+      "result_id": "5f321329-7bd9-451e-be18-84f1b003e141"
+    },
+    {
+      "claim_id": "0606ea78-c898-4ccd-bb64-55525ceb8c20",
+      "result_id": "5f321329-7bd9-451e-be18-84f1b003e141"
+    },
+    {
+      "claim_id": "b334f995-ee7c-43a4-933a-8b0f234fa369",
+      "result_id": "5f321329-7bd9-451e-be18-84f1b003e141"
+    },
+    {
+      "claim_id": "348c3da3-294c-49f2-90b6-6a0c6c55f6ca",
+      "result_id": "5f321329-7bd9-451e-be18-84f1b003e141"
+    },
+    {
+      "claim_id": "5c0a7eca-ed47-4a20-804a-a783dfe0d9d7",
+      "result_id": "5f321329-7bd9-451e-be18-84f1b003e141"
+    },
+    {
+      "claim_id": "294435f5-b986-4ec9-a616-773694dc9b3a",
+      "result_id": "5f321329-7bd9-451e-be18-84f1b003e141"
+    },
+    {
+      "claim_id": "037313da-4be6-469f-8447-ea732692e1d7",
+      "result_id": "5f321329-7bd9-451e-be18-84f1b003e141"
+    },
+    {
+      "claim_id": "8caa0322-9b9c-4aee-928a-a53648eb8ccc",
+      "result_id": "5f321329-7bd9-451e-be18-84f1b003e141"
+    },
+    {
+      "claim_id": "05c5cd52-5346-4fd6-9ed6-8929fce80fa3",
+      "result_id": "5f321329-7bd9-451e-be18-84f1b003e141"
+    }
+  ],
+  "comparisons": []
+}

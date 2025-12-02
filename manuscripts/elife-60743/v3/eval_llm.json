@@ -1,0 +1,284 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "TGIRT-seq with improved methodology was used to profile RNA biotypes in apheresis-prepared human plasma from healthy individuals, yielding high mapping rates (82-96%) and ~10 ng nucleic acid per 4 mL plasma preparation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C24-C30 describe the methodological approach and basic quality metrics. The improved TGIRT-seq method with UMI, modified adapters, and lower salt concentration is well-documented with supporting citations (C27-C29). Mapping rates and yield data (C26, C30) are quantitative results directly from the experiments. The methodology is clearly described and reproducible.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C35",
+      "C36",
+      "C55"
+    ],
+    "result": "Human plasma contains fragmented mRNAs from 15,000-19,000 protein-coding genes, representing 0.6-4.1% of mapped reads, with the highest detection after 3'-phosphate removal.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C35, C36, and C55 consistently report detection of mRNAs from 15,000-19,000 protein-coding genes with quantitative read proportions shown in Figure 1C and Figure 3A-B. The data are internally consistent across multiple sample preparations (n=12-15) and the effect of 3'-phosphate removal is documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C4",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "Human plasma contains abundant full-length mature tRNAs (most abundant sncRNA class at 36,766 CPM for Val-CAC) and other structured sncRNAs, with lower concentrations of tRNA fragments, demonstrating TGIRT-seq's ability to fully sequence structured RNAs that retroviral RTs cannot.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C39-C43 are supported by quantitative data in Figure 1C-D and Figure 1\u2014figure supplements 3-5. The abundance values are specific (e.g., 36,766 CPM for Val-CAC), and the advantage over retroviral RTs is demonstrated by full-length reads and identification of 5' ends beyond m1A modification sites (C42). The data are consistent across replicates.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "The improved TGIRT-seq method detected 263 high-confidence miRNAs as a mixture of pre- and mature forms, with miR-223 as the most abundant (2.89 CPM), considerably lower than the most abundant 3'-tRFs, and virtually no piRNAs detected.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C47 provide quantitative results with specific CPM values shown in Figure 1\u2014figure supplement 6 and Supplementary file 1. The comparison between miRNA and tRF abundance is quantitative and clear. The low piRNA detection (<0.001%) is noted with appropriate technical context about TGIRT-III capability (C47).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "Metagenomic analysis identified 2.83 million bacterial RNA reads and ~52,000 viral RNA reads in plasma RNA, while plasma DNA contained only 12,000 non-human reads, with no reads for pre-screened pathogens detected.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C54 present results from Kraken2 metagenomic analysis shown in Figure 2. The quantitative read counts are specific and the comparison to other studies (C50) provides context. The interpretation about apheresis-prepared plasma having low leukocyte/platelet contamination (C54) is reasonable given the data and supported by citation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "TGIRT-seq and SMART-Seq detected similar mRNA profiles (r=0.61-0.80) originating largely from hematopoietic tissues, but TGIRT-seq provided more uniform 5'-to-3' coverage while SMART-Seq detected 3'-enriched fragments, and 3'-phosphate removal had minimal effect on most transcript abundances.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C64 describe comparative results shown in Figure 3. Correlation coefficients are provided (C56, C59), tissue-of-origin analysis is shown in Figure 3\u2014figure supplement 2C-D (C60), and coverage plots demonstrate the uniform vs 3'-biased coverage (C61). The effect of 3'-phosphate removal is quantified with correlation values and DESeq2 analysis (C62-C63). The interpretation about 3' OH termini (C64) is supported by the data and citations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C5",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "Peak calling identified 950 high-confidence peaks, with 467 (50.7%) containing or overlapping ENCODE eCLIP-annotated RBP-binding sites for 90 different RBPs (including 75 in plasma proteome), with enrichment statistically significant (p<0.001) and stress granule proteins prominently represented.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C65-C71 describe the peak calling results shown in Figure 4. The methodology is clearly described (C65-C66), quantitative results are provided (C67-C68), statistical significance is demonstrated by simulation (C69, Figure 4\u2014figure supplement 2C), and the top RBPs are identified (C70, Figure 4C, Figure 5). The stress granule protein enrichment (C71) is supported by data and citations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C6",
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "Many mRNA fragments identified by peak calling have stable predicted secondary structures (213 of 221 peaks with \u0394G \u2264 \u221212 kcal/mol), with enrichment statistically significant (p\u22640.019), including 25 peaks classified as known RNA structures (histone stem-loops, IRE, SECIS, pre-miRNA-like).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C6, C77-C80 describe RNA secondary structure predictions using RNAfold. While the statistical significance is demonstrated by simulation (C80, Figure 4\u2014figure supplement 2D), the authors explicitly state that 'predicted structures remain to be validated and could differ under physiological conditions or due to interactions with proteins.' The computational predictions are not experimentally validated, making the biological significance uncertain.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "Transcriptome-based peak calling identified 806 additional peaks (79% overlapping genome-based peaks), revealing 135 new RBP-binding sites for 57 RBPs, with plasma RNAs particularly enriched in stress granule protein binding sites compared to cellular RNAs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C76 describe transcriptome mapping results. The overlap between genome and transcriptome mapping is quantified (C73), new RBPs are identified (C74), and the differential abundance is shown in Figure 6 and Figure 6\u2014figure supplement 1 (C75). The stress granule protein enrichment (C76) is supported by data and consistent with previous findings (citations provided).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C7",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "Peak calling identified 213 repeat RNA peaks (23.1% of total), including 154 short tandem repeats with narrow length distribution (~80 nt peak) and 59 transposable elements, with strand-specific enrichment for centromeric/telomeric repeats and differential expression showing enrichment of endogenous retroviral, LINE-1, and Alu RNAs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C81-C85 describe repeat RNA results shown in Figure 4B, D-E and Figure 8. The quantitative proportions are clear (C81), size distributions are shown (C82, Figure 8A-B), top repeat types are identified (C83, Figure 4D), strand specificity is analyzed by Empirical Bayes method (C84, Figure 8C-D), and differential expression is shown (C85, Figure 8E). The methodology and results are well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C8",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "Peak calling identified 44 different full-length excised intron RNAs (73-210 nt) with stable predicted secondary structures (\u0394G \u2264 \u221218.7 kcal/mol), including 13 agotrons, 10 mirtrons (7 also agotrons), and 21 novel structured introns, with reads showing precise 5' GU and 3' AG termini consistent with linear molecules.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C86-C95 describe full-length excised intron RNA results shown in Figure 4F and Figure 9. The quantitative data are specific (C86-C88), the linear nature is inferred from read characteristics (C89), 3' tails are observed (C90), and annotation as agotrons/mirtrons is documented (C91-C93). The claim of first sequencing of mirtron pre-miRNAs (C94) is notable. The identification of 21 novel introns (C95) is a significant finding. All claims are supported by data in figures and supplementary files.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "PKD1 intron 29 reads mapped to the PKD1 gene and six pseudogenes, with the intron more conserved than flanking exons (single SNP difference vs 6-8 and 1-3 mismatches in exons), but only one full-length excised intron (PKD1 intron 45/miR-1225) was conserved across vertebrates and only six across primates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C98 describe sequence conservation analysis. The mapping to PKD1 and pseudogenes is documented (C96), conservation comparison is quantitative (C97), and phastCons analysis is shown in Figure 10 (C98). The interpretation about sequence-dependent function (C97) is appropriately qualified as 'possibly reflecting.' The low overall conservation is an important finding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "Peak calling identified 31 intron RNA fragment peaks, with 25 (81%) having stable predicted secondary structures (\u0394G \u2264 \u221214.6 kcal/mol), including 9 peaks corresponding to structured segments of retrotransposed mRNAs (from 6 highly expressed genes) that inserted into long introns via LINE-1 RT-mediated retrotransposition, with both the retrotransposed sequence and peak region more conserved than flanking intron sequences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C99-C106 describe intron fragment results shown in Figure 11 and Figure 12. The proportion with stable structures is quantified (C100), the retrotransposed mRNA sequences are identified (C101-C102), LINE-1 hallmarks are documented (C103), stable structures are predicted (C104), evolutionary timing is determined (C105), and conservation is analyzed (C106, Figure 12B). The data are comprehensive and well-presented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "Only 3 peaks mapped to unannotated loci and 25 to antisense transcripts (12 to hemoglobin genes), with some antisense peaks containing reads extending across spliced exons and/or mirrored by DNA peaks, suggesting RNA/DNA duplexes from R-loops or endogenous RT activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C107-C109 are supported by data in Figure 4A and Figure 13. However, C110-C111 involve speculative interpretation. While the observation of antisense reads across splice junctions and overlapping DNA peaks is documented (C110), the interpretation as R-loops or cDNAs from endogenous RT (C111) is explicitly speculative ('could be') and lacks direct experimental validation. The authors note they checked for R2 adapter sequences but this doesn't definitively establish the mechanism.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "Read-span distributions showed plasma DNA had two peaks (130-180 nt for nucleosome-protected DNA, 50-100 nt for protein-protected DNA) while plasma RNA showed a broad 40-80 nt peak, with all dsDNA sensitive to DNase I.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C34 describe basic characterization results shown in Figure 1B and Figure 1\u2014figure supplement 1. The read-span distributions are clearly shown, the interpretation is consistent with previous studies (citations provided in C31), and the DNase I sensitivity is experimentally demonstrated (C32). These are straightforward quality control and characterization results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C37",
+      "C38"
+    ],
+    "result": "3'-phosphate removal increased reads mapping to rRNAs (to 33%), repeats (to 9%), and protein-coding genes (to 4.1%), with higher proportions of antisense (17-36%) and intron (63-73%) reads in plasma compared to cellular RNA (10% and 24%), suggesting selective export or stability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C38 present quantitative results from Figure 1C, E-F. The effect of 3'-phosphate removal is clearly shown (C37), and the comparison to cellular RNA datasets is made with specific values and citations (C38). The interpretation about selective export or stability is appropriately qualified as 'suggesting' and is consistent with previous findings (Qin et al., 2016 cited).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C1"
+    ],
+    "result": "Human plasma contains >40,000 different coding and non-coding RNAs that are potential biomarkers for human diseases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C1 states >40,000 different RNAs but the supporting data shows detection of 26,000-43,000 different genes (C35) and >19,000 protein-coding genes (C3). The claim appears to aggregate different RNA biotypes but the specific count of >40,000 is not clearly documented in the results. The claim about 'potential biomarkers' is speculative and not directly tested in this study.",
+    "result_type": "MAJOR"
+  }
+]
